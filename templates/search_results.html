@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>{{ search_term }} | Search Results</title>
+  <link rel="stylesheet" href="https://sefaria.org/static/css/common.css" />
+  <link rel="stylesheet" href="/static/main.css" />
+</head>
+<body>
+    </br><h1>Results</h1>
+    <div id="results" />  
+</body>
+<script>
+var thisHash = document.location.pathname.substring("/search/".length);
+var searches = localStorage.searches === undefined ? [] : JSON.parse(localStorage.searches);
+searches = searches.filter(x => x !== thisHash);
+searches = [thisHash].concat(searches);  
+localStorage.searches = JSON.stringify(searches);
+  
+var results = {{ results|safe }}
+var results_html = []
+for (var x in results) {
+  var result = results[x];
+  results_html.push([
+    `<h2><a href="${result.link}">${result.title}</a></h2>`,
+    `<p dir=rtl>${result.hebrew}</p>`,
+    `<p>${result.english}</p>`,
+    "</br></br>"
+  ].join("\n"));
+}
+document.getElementById("results").innerHTML = results_html.join("\n");
+</script>
+</html>
