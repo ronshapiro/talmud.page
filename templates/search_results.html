@@ -22,11 +22,14 @@ for (var x in results) {
   var result = results[x];
   if (!result.visible) continue;
   results_html.push([
-    `<div id="ui-result-${result.result_id}">`,
-    `<h2><a href="${result.link}">${result.title}</a></h2>`,
-    `<p dir=rtl>${result.hebrew}</p>`,
-    `<p>${result.english}</p>`,
-    "</br></br>",
+    `<div id="ui-result-${result.result_id}" class="ui-result">`,
+    `  <img class="ui-result-delete" src="/static/delete.svg" />`,
+    '  <div class="ui-result-main">',
+    `    <h2><a href="${result.link}">${result.title}</a></h2>`,
+    `    <p dir=rtl>${result.hebrew}</p>`,
+    `    <p>${result.english}</p>`,
+    "    </br>",
+    "  </div>",
     "</div>"
   ].join("\n"));
 }
@@ -47,7 +50,7 @@ function hideClickListener(result) {
 for (var x in results) {
   var result = results[x];
   if (!result.visible) continue;
-  $(resultDivId(result)).click(hideClickListener(result));
+  $(`${resultDivId(result)} .ui-result-delete`).click(hideClickListener(result));
 }
 </script>
 </html>

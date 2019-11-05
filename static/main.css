@@ -11,3 +11,15 @@ p {
 h1, h2 {
     text-align: center;
 }
+.ui-result-main {
+    z-index: 0;
+    position: relative;
+    top: -1.2em;
+}
+.ui-result-delete {
+    height: 2em;
+    position: relative;
+    top: 2em;
+    z-index: 1;
+    clickable: true;
+}
