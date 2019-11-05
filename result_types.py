@@ -22,14 +22,18 @@ class SearchResult(object):
         return "%s %s:%s" % (result.book, result.chapter, reult.verse)
 
 class UiResult(object):
-    def __init__(self, title, hebrew, english, link):
+    def __init__(self, title, hebrew, english, link, result_id, visible=True):
         self.title = title
         self.hebrew = hebrew
         self.english = english
         self.link = link
+        self.result_id = result_id
+        self.visible = visible
 
     def to_dict(self):
         return {"title": self.title,
                 "hebrew": self.hebrew,
                 "english": self.english,
-                "link": self.link}
+                "link": self.link,
+                "result_id": self.result_id,
+                "visible": self.visible}

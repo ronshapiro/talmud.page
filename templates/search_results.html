@@ -1,6 +1,7 @@
 <html>
 <head>
   <title>{{ search_term }} | Search Results</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://sefaria.org/static/css/common.css" />
   <link rel="stylesheet" href="/static/main.css" />
 </head>
@@ -19,13 +20,34 @@ var results = {{ results|safe }}
 var results_html = []
 for (var x in results) {
   var result = results[x];
+  if (!result.visible) continue;
   results_html.push([
+    `<div id="ui-result-${result.result_id}">`,
     `<h2><a href="${result.link}">${result.title}</a></h2>`,
     `<p dir=rtl>${result.hebrew}</p>`,
     `<p>${result.english}</p>`,
-    "</br></br>"
+    "</br></br>",
+    "</div>"
   ].join("\n"));
 }
 document.getElementById("results").innerHTML = results_html.join("\n");
+
+function resultDivId(result) {
+  return `#ui-result-${result.result_id}`;
+}
+
+function hideClickListener(result) {
+  var hideUrl = `${location.origin}/hide_result/${thisHash}/${result.result_id}`
+  return function() {
+    $.ajax({url: hideUrl, type: "GET"})
+    $(resultDivId(result)).fadeOut();
+  }
+}
+
+for (var x in results) {
+  var result = results[x];
+  if (!result.visible) continue;
+  $(resultDivId(result)).click(hideClickListener(result));
+}
 </script>
 </html>

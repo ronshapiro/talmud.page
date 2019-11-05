@@ -35,5 +35,11 @@ def show_search(search_id):
                            search_term = search_result["search_term"],
                            results = json.dumps(search_result["ui_results"]))
 
+@app.route("/hide_result/<search_id>/<result_id>")
+def hide_result(search_id, result_id):
+    mongo_collection.update_one({"search_id": search_id},
+                                {"$set": {"ui_results.%s.visible" %(result_id): False}})
+    return "Editted"
+
 if __name__ == '__main__':
     app.run(threaded=True, port=5000)

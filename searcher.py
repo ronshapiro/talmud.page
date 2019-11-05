@@ -54,6 +54,7 @@ class Searcher(object):
     def bolded_search_results(self, search_word):
         vocalized_regex = re.compile(ALL_VOWELS_RE.join(list(search_word)))
         ui_results = []
+        i = 0
         for book in ALL_BOOKS:
             for search_result in self._search_book(book, vocalized_regex):
                 ui_results.append(UiResult(
@@ -63,7 +64,9 @@ class Searcher(object):
                     english = self.books.english_verse(search_result),
                     link = "https://www.sefaria.org/%s.%s.%s?lang=bi" % (
                         search_result.book, search_result.chapter, search_result.verse),
+                    result_id = i,
                 ))
+                i += 1
         return ui_results
     
     def _boldify(self, text):
