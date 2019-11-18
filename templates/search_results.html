@@ -2,6 +2,9 @@
 <head>
   <title>{{ search_term }} | Search Results</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>var results = {{ results|safe }}</script>
+  <script src="/static/search_results.js"></script>
+
   <link rel="stylesheet" href="https://sefaria.org/static/css/common.css" />
   <link rel="stylesheet" href="/static/main.css" />
 </head>
@@ -11,59 +14,4 @@
     <h2>Search Results <span id="results_count"/></h2>
     <div id="results" />  
 </body>
-<script>
-var thisHash = document.location.pathname.substring("/search/".length);
-var searches = localStorage.searches === undefined ? [] : JSON.parse(localStorage.searches);
-searches = searches.filter(x => x !== thisHash);
-searches = [thisHash].concat(searches);  
-localStorage.searches = JSON.stringify(searches);
-  
-var results = {{ results|safe }}
-var results_html = []
-for (var x in results) {
-  var result = results[x];
-  if (!result.visible) continue;
-  results_html.push([
-    `<div id="ui-result-${result.result_id}" class="ui-result">`,
-    `  <img class="ui-result-delete" src="/static/delete.svg" />`,
-    '  <div class="ui-result-main">',
-    `    <h2><a href="${result.link}">${result.title}</a></h2>`,
-    `    <p dir=rtl>${result.hebrew}</p>`,
-    `    <p>${result.english}</p>`,
-    "    </br>",
-    "  </div>",
-    "</div>"
-  ].join("\n"));
-}
-document.getElementById("results").innerHTML = results_html.join("\n");
-
-function updateResultsCount() {
-  var count = 0;
-  for (x in results) {
-    if (results[x].visible) count++;
-  }
-  $("#results_count").text(`(${count})`);
-}
-updateResultsCount()
-
-function resultDivId(result) {
-  return `#ui-result-${result.result_id}`;
-}
-
-function hideClickListener(result) {
-  var hideUrl = `${location.origin}/hide_result/${thisHash}/${result.result_id}`
-  return function() {
-    $.ajax({url: hideUrl, type: "GET"})
-    $(resultDivId(result)).fadeOut();
-    result.visible = false;
-    updateResultsCount();
-  }
-}
-
-for (var x in results) {
-  var result = results[x];
-  if (!result.visible) continue;
-  $(`${resultDivId(result)} .ui-result-delete`).click(hideClickListener(result));
-}
-</script>
 </html>
