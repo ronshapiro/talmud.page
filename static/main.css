@@ -1,4 +1,4 @@
-body {
+#main-contents {
     margin: auto;
     max-width: 720px;
 }
@@ -22,4 +22,18 @@ h1, h2 {
     top: 2em;
     z-index: 1;
     clickable: true;
+}
+
+#freeze-button, #copy-button {
+    z-index: 2;
+    position: absolute;
+    left: 1em;
+}
+
+#freeze-button {
+    top: 1em;
+}
+
+#copy-button {
+    top: 4.25em;
 }

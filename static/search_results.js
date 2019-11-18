@@ -38,6 +38,36 @@ var initResultsHtml = function() {
   }
 }
 
+var setFrozenState = function() {
+  $("#freeze-button").text(frozen ? "Frozen" : "Freeze");
+  if (frozen) {
+    $('.ui-result-delete').css("opacity", 0);
+    $("#freeze-button").removeClass("mdl-button--accent");
+    var hideRipple = setInterval(function() {
+      var rippleView = $("#freeze-button .mdl-button__ripple-container");
+      if (rippleView.length > 0) {
+        clearInterval(hideRipple);
+        rippleView.remove();
+      }
+    }, 100);
+  } else {
+    $("#freeze-button").click(function() {
+      if (frozen) return;
+      $.ajax({url: `${location.origin}/search/freeze/${thisHash}`, type: "GET"});
+      frozen = true;
+      setFrozenState();
+      console.log("frozen");
+    });
+  }
+}
+
+var setCopyButtonListener = function() {
+  $("#copy-button").click(function() {
+    location = `${location.origin}/search/copy/${thisHash}`;
+  });
+}
+
+
 var updateResultsCount = function() {
   var count = 0;
   for (x in results) {
@@ -51,9 +81,9 @@ var resultDivId = function(result) {
 }
 
 var hideClickListener = function(result) {
-  var hideUrl = `${location.origin}/hide_result/${thisHash}/${result.result_id}`
+  var hideUrl = `${location.origin}/hide_result/${thisHash}/${result.result_id}`;
   return function() {
-    $.ajax({url: hideUrl, type: "GET"})
+    $.ajax({url: hideUrl, type: "GET"});
     $(resultDivId(result)).fadeOut();
     result.visible = false;
     updateResultsCount();
@@ -62,6 +92,8 @@ var hideClickListener = function(result) {
 
 $(function() {
   initResultsHtml();
+  setFrozenState();
+  setCopyButtonListener();
   updateResultsCount();
   
   storeSearchHistory();
