@@ -5,19 +5,14 @@ import json
 
 class Books(object):
     def __init__(self):
-        # TODO: remove unvocalized?
-        self.unvocalized_cache = {}
         self.vocalized_cache = {}
         self.english_cache = {}
 
-        self.unvocalized = lambda book: \
-                           self._load_if_necessary(self.unvocalized_cache, "unvocalized", book)
         self.vocalized = lambda book: \
                          self._load_if_necessary(self.vocalized_cache, "vocalized", book)
         self.english = lambda book: \
                        self._load_if_necessary(self.english_cache, "english", book)
 
-        self.unvocalized_verse = lambda result: self._verse(self.unvocalized, result)
         self.vocalized_verse = lambda result: self._verse(self.vocalized, result)
         self.english_verse = lambda result: self._verse(self.english, result)
 

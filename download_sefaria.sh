@@ -12,7 +12,7 @@ function mkdir_cd() {
 }
 
 mkdir_cd sefaria-data
-mkdir {unvocalized,vocalized,english}
+mkdir {vocalized,english}
 
 ########################
 ########################
@@ -23,7 +23,6 @@ function download_section() {
     shift 1
     for book in "$@"; do
         local book_prefix="${PREFIX}/json/Tanakh/${section}/${book// /%20}"
-        wget -q -O "unvocalized/${book}.json" "${book_prefix}/Hebrew/Tanach%20with%20Text%20Only.json"
         wget -q -O "vocalized/${book}.json" "${book_prefix}/Hebrew/Tanach%20with%20Ta'amei%20Hamikra.json"
         wget -q -O "english/${book}.json" "${book_prefix}/English/The%20Koren%20Jerusalem%20Bible.json"
     done
