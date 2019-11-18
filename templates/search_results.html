@@ -6,7 +6,9 @@
   <link rel="stylesheet" href="/static/main.css" />
 </head>
 <body>
-    </br><h1>Results</h1>
+    </br>
+    <h1>{{ search_term }}</h1>
+    <h2>Search Results <span id="results_count"/></h2>
     <div id="results" />  
 </body>
 <script>
@@ -35,6 +37,15 @@ for (var x in results) {
 }
 document.getElementById("results").innerHTML = results_html.join("\n");
 
+function updateResultsCount() {
+  var count = 0;
+  for (x in results) {
+    if (results[x].visible) count++;
+  }
+  $("#results_count").text(`(${count})`);
+}
+updateResultsCount()
+
 function resultDivId(result) {
   return `#ui-result-${result.result_id}`;
 }
@@ -44,6 +55,8 @@ function hideClickListener(result) {
   return function() {
     $.ajax({url: hideUrl, type: "GET"})
     $(resultDivId(result)).fadeOut();
+    result.visible = false;
+    updateResultsCount();
   }
 }
 
