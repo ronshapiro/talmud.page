@@ -7,11 +7,11 @@ import re
 
 ALL_BOOKS = (
     "Genesis", "Exodus", "Leviticus", "Numbers", "Deuteronomy",
-    
+
     "Amos", "Ezekiel", "Habakkuk", "Haggai", "Hosea", "I Kings", "I Samuel",
     "II Kings", "II Samuel", "Isaiah", "Jeremiah", "Joel", "Jonah", "Joshua",
     "Judges", "Malachi", "Micah", "Nahum", "Obadiah", "Zechariah", "Zephaniah",
-    
+
     "Daniel", "Ecclesiastes", "Esther", "Ezra", "I Chronicles", "II Chronicles",
     "Job", "Lamentations", "Nehemiah", "Proverbs", "Psalms", "Ruth",
     "Song of Songs"
@@ -22,7 +22,7 @@ ALL_VOWELS_RE = u"[֑-ׇ]*"
 def _matching_indices(source, regex):
     start_index = 0
     result = []
-    
+
     while True:
         match = regex.search(source, start_index)
         if match:
@@ -68,10 +68,10 @@ class Searcher(object):
                 ))
                 i += 1
         return ui_results
-    
+
     def _boldify(self, text):
         return "<b>%s</b>" % (text)
-    
+
     def _boldify_vocalized_text(self, search_result):
         vocalized = self.books.vocalized_verse(search_result)
         formatted_verse_parts = []
