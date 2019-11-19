@@ -17,7 +17,7 @@ var initResultsHtml = function() {
       `  <img class="ui-result-delete" src="/static/delete.svg" />`,
       '  <div class="ui-result-main">',
       `    <h2><a href="${result.link}">${result.title}</a></h2>`,
-      `    <p dir=rtl>${result.hebrew}</p>`,
+      `    <p dir=rtl class="hebrew">${result.hebrew}</p>`,
       `    <p>${result.english}</p>`,
       "    </br>",
       "  </div>",
@@ -38,18 +38,24 @@ var initResultsHtml = function() {
   }
 }
 
+var removeMaterialClickableState = function(viewSelector) {
+  // remove both classes - only one should be used, but it could be either
+  $(viewSelector).removeClass("mdl-button--accent");
+  $(viewSelector).removeClass("mdl-button--colored");
+  var hideRipple = setInterval(function() {
+    var rippleView = $(`${viewSelector} .mdl-button__ripple-container`);
+    if (rippleView.length > 0) {
+      clearInterval(hideRipple);
+      rippleView.remove();
+    }
+  }, 100);
+}
+
 var setFrozenState = function() {
   $("#freeze-button").text(frozen ? "Frozen" : "Freeze");
   if (frozen) {
     $('.ui-result-delete').css("opacity", 0);
-    $("#freeze-button").removeClass("mdl-button--accent");
-    var hideRipple = setInterval(function() {
-      var rippleView = $("#freeze-button .mdl-button__ripple-container");
-      if (rippleView.length > 0) {
-        clearInterval(hideRipple);
-        rippleView.remove();
-      }
-    }, 100);
+    removeMaterialClickableState("#freeze-button");
   } else {
     $("#freeze-button").click(function() {
       if (frozen) return;

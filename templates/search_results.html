@@ -11,19 +11,20 @@
     var frozen = {{ frozen }};
   </script>
   <script src="/static/search_results.js"></script>
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik|David+Libre&display=swap">
 
   <!-- Material Design -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-green.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">  
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.amber-deep_orange.min.css" />
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   <!-- End Material Design -->
 
-  <link rel="stylesheet" href="https://sefaria.org/static/css/common.css" />
   <link rel="stylesheet" href="/static/main.css" />
 </head>
 <body>
-  <span id="copy-button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Copy</span>
-  <span id="freeze-button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"></span>
+  <span id="freeze-button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"></span>
+  <span id="copy-button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Copy</span>
   <div id="main-contents">
     <br/>
     <h1>{{ search_term }}</h1>

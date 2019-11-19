@@ -1,13 +1,33 @@
+@font-face{
+    font-family:rashi script;
+    src:url(https://sefaria.org/static/fonts/Mekorot-Rashi.ttf)
+}
+@font-face{
+    font-family:taamey frank;
+    src:url(https://sefaria.org/static/fonts/Taamey-Frank/TaameyFrankCLM-Medium.ttf)
+}
+@font-face{
+    font-family:taamey frank;
+    src:url(https://sefaria.org/static/fonts/Taamey-Frank/TaameyFrankCLM-Bold.ttf);
+    font-weight:700
+}
+@font-face{
+    font-family:taamey frank;
+    src:url(https://sefaria.org/static/fonts/Taamey-Frank/TaameyFrankCLM-MediumOblique.ttf);
+    font-style:italic
+}
+@font-face{
+    font-family:taamey frank;
+    src:url(https://sefaria.org/static/fonts/Taamey-Frank/TaameyFrankCLM-BoldOblique.ttf);
+    font-style:italic;
+    font-weight:700
+}
+
 #main-contents {
     margin: auto;
     max-width: 720px;
 }
-* {
-    font-family: "Frank Ruehl Libre", "Taamey Frank", "Times New Roman", serif;
-}
-p {
-    font-size: 24;
-}
+
 h1, h2 {
     text-align: center;
 }
@@ -16,10 +36,21 @@ h1, h2 {
     position: relative;
     top: -1.2em;
 }
+.ui-result-main p {
+    font-family: "Rubik", serif;
+    font-size: 20;
+}
+.ui-result-main .hebrew {
+    font-size: 28;
+}
+.hebrew {
+    font-family: "Taamey Frank", "Times New Roman", serif !important;
+    line-height: 1.7em;
+}
 .ui-result-delete {
     height: 2em;
     position: relative;
-    top: 2em;
+    top: 3.25em;
     z-index: 1;
     clickable: true;
 }
@@ -35,5 +66,14 @@ h1, h2 {
 }
 
 #copy-button {
-    top: 4.25em;
+    top: 4.5em;
+}
+
+h1 {
+    font-family: "David Libre";
+    font-size:  4em;
+}
+h2 {
+    font-family: "Rubik";
+    font-size: 2.5em;
 }
