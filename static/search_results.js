@@ -38,31 +38,17 @@ var initResultsHtml = function() {
   }
 }
 
-var removeMaterialClickableState = function(viewSelector) {
-  // remove both classes - only one should be used, but it could be either
-  $(viewSelector).removeClass("mdl-button--accent");
-  $(viewSelector).removeClass("mdl-button--colored");
-  var hideRipple = setInterval(function() {
-    var rippleView = $(`${viewSelector} .mdl-button__ripple-container`);
-    if (rippleView.length > 0) {
-      clearInterval(hideRipple);
-      rippleView.remove();
-    }
-  }, 100);
-}
-
 var setFrozenState = function() {
   $("#freeze-button").text(frozen ? "Frozen" : "Freeze");
   if (frozen) {
     $('.ui-result-delete').css("opacity", 0);
-    removeMaterialClickableState("#freeze-button");
+    $("#freeze-button").attr("disabled", 1);
   } else {
     $("#freeze-button").click(function() {
       if (frozen) return;
       $.ajax({url: `${location.origin}/search/freeze/${thisHash}`, type: "GET"});
       frozen = true;
       setFrozenState();
-      console.log("frozen");
     });
   }
 }
