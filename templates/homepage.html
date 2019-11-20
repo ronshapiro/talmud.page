@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title>Search</title>
+  {% include "header_common.html" %}
+</head>
+<body>
+  <div id="main-contents">
+    <br/>
+    <h1>Search</h1>
+    <form action="/search/new" method="post">
+      <div class="mdl-textfield
+                  mdl-js-textfield
+                  mdl-textfield--expandable
+                  mdl-textfield--floating-label" style="width:90%; margin: 0 5%;">
+        <input class="mdl-textfield__input" type="text" id="search_term" name="search_term">
+        <label class="mdl-textfield__label" for="search_term">Search for</label>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

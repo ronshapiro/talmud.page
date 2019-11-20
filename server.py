@@ -4,6 +4,7 @@
 from flask import Flask
 from flask import jsonify
 from flask import redirect
+from flask import request
 from flask import render_template
 from flask import url_for
 from mongo_impl import init_mongo_collection
@@ -29,8 +30,13 @@ def _json_success():
 def create_uuid():
     return str(uuid.uuid4())
 
-@app.route('/create_search/<term>')
-def create_search(term):
+@app.route("/")
+def homepage():
+    return render_template("homepage.html")
+
+@app.route('/search/new', methods=["POST"])
+def create_search():
+    term = request.form["search_term"]
     ui_results = [ui_result.to_dict()
                   for ui_result in searcher.bolded_search_results(term)]
     search_id = create_uuid()

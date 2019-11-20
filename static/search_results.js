@@ -103,4 +103,6 @@ $(function() {
   updateResultsCount();
 
   storeSearchHistory();
+
+  $(".search-match").addClass("mdl-color-text--accent")
 });

@@ -57,8 +57,10 @@ h1, h2 {
 
 #freeze-button, #copy-button {
     z-index: 2;
-    position: absolute;
+
     left: 1em;
+    position: fixed;
+    display: block;
 }
 
 #freeze-button {

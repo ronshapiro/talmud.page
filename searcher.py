@@ -70,7 +70,7 @@ class Searcher(object):
         return ui_results
 
     def _boldify(self, text):
-        return "<b>%s</b>" % (text)
+        return '<b class="search-match">%s</b>' % (text)
 
     def _boldify_vocalized_text(self, search_result):
         vocalized = self.books.vocalized_verse(search_result)
