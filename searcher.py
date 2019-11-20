@@ -17,7 +17,15 @@ ALL_BOOKS = (
     "Song of Songs"
 )
 
-ALL_VOWELS_RE = u"[֑-ׇ]*"
+VOWELS_AND_TROPE = u"\u0591-\u05bd\u05bf\u05c1\u05c2\u05c4\u05c5\u05c7"
+VOWELS_AND_TROPE_EXTRA_LETTERS_RE = u"[%sהוי]*" % VOWELS_AND_TROPE
+
+FINAL_LETTERS = (
+    (u"מ", u"ם"),
+    (u"נ", u"ן"),
+    (u"פ", u"ף"),
+    (u"צ", u"ץ")
+)
 
 def _matching_indices(source, regex):
     start_index = 0
@@ -51,8 +59,19 @@ class Searcher(object):
                     search_results.append(result)
         return search_results
 
+    def _replace_final_letters(self, word):
+        chars = list(word)
+        for i in range(len(chars)):
+            for pair in FINAL_LETTERS:
+                if chars[i] == pair[0]:
+                    chars[i] = u"[%s|%s]" % pair
+                elif chars[i] == pair[1]:
+                    chars[i] = u"[%s|%s]" % pair
+        return u"".join(chars)
+
     def bolded_search_results(self, search_word):
-        vocalized_regex = re.compile(ALL_VOWELS_RE.join(list(search_word)))
+        vocalized_regex = re.compile(
+            self._replace_final_letters(VOWELS_AND_TROPE_EXTRA_LETTERS_RE.join(list(search_word))))
         ui_results = []
         i = 0
         for book in ALL_BOOKS:
@@ -78,6 +97,7 @@ class Searcher(object):
         last_copied_index = 0
         finished = False
         for match_index in search_result.vocalized_indices:
+            # TODO: also include \u05be (makaf) and sof pasuk in the search here.
             bolded_index_start = vocalized.rfind(u" ", 0, match_index[0])
             bolded_index_end = vocalized.find(u" ", match_index[1])
             if bolded_index_start is -1:
