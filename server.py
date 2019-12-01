@@ -65,15 +65,26 @@ def show_search(search_id):
                            results = json.dumps(search_result["ui_results"]),
                            frozen = _js_boolean(search_result.get("frozen", False)))
 
-@app.route("/hide_result/<search_id>/<result_id>")
+@app.route("/<search_id>/<result_id>/hide")
 def hide_result(search_id, result_id):
+    return change_result_boolean_attribute(search_id, result_id, "visible", False)
+
+@app.route("/<search_id>/<result_id>/star")
+def star_result(search_id, result_id):
+    return change_result_boolean_attribute(search_id, result_id, "starred", True)
+
+@app.route("/<search_id>/<result_id>/unstar")
+def unstar_result(search_id, result_id):
+    return change_result_boolean_attribute(search_id, result_id, "starred", False)
+
+def change_result_boolean_attribute(search_id, result_id, attribute, new_value):
     search_result = _find_search(search_id);
     if not search_result:
         return _json_error("result not found")
     if search_result.get("frozen", False):
         return _json_error("already frozen")
     mongo_collection.update_one({"search_id": search_id},
-                                {"$set": {"ui_results.%s.visible" %(result_id): False}})
+                                {"$set": {"ui_results.%s.%s" %(result_id, attribute): new_value}})
     return _json_success()
 
 @app.route('/search/freeze/<search_id>')

@@ -48,12 +48,18 @@ h1, h2 {
     font-family: "Taamey Frank", "Times New Roman", serif !important;
     line-height: 1.7em;
 }
-.ui-result-delete {
+.ui-result .action-button {
     height: 2em;
     position: relative;
     top: 3.25em;
     z-index: 1;
-    clickable: true;
+}
+.ui-result .star {
+    padding-left: .5em;
+}
+
+.star-preload {
+    opacity: 0;
 }
 
 #freeze-button, #copy-button {
