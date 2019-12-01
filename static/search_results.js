@@ -16,7 +16,8 @@ var initResultsHtml = function() {
     results_html.push([
       `<div id="ui-result-${result.result_id}" class="ui-result">`,
       '  <img class="action-button delete" src="/static/delete.svg" />',
-      `  <img class="action-button star star-preload"/>`,
+      '  <img class="action-button star star-preload"/>',
+      // If adding another action-button, make sure to update setFrozenState
       '  <div class="ui-result-main">',
       `    <h2><a href="${result.link}">${result.title}</a></h2>`,
       `    <p dir=rtl class="hebrew">${result.hebrew}</p>`,
@@ -40,7 +41,8 @@ var initResultsHtml = function() {
 var setFrozenState = function() {
   $("#freeze-button").text(frozen ? "Frozen" : "Freeze");
   if (frozen) {
-    $('.ui-result .action-button').css("opacity", 0);
+    $('.ui-result .delete').remove();
+    $('.ui-result .star-empty').remove();
     $("#freeze-button").attr("disabled", 1);
   } else {
     $("#freeze-button").click(function() {
@@ -87,6 +89,7 @@ var hideClickListener = function(result) {
 
 var starClickListener = function(result) {
   return function() {
+    if (frozen) return;
     var action = result.starred ? "unstar" : "star";
     $.ajax({url: result.actionUrl(action), type: "GET"});
     result.starred = !result.starred;
@@ -96,9 +99,10 @@ var starClickListener = function(result) {
 
 var setStarImageState = function(result) {
   var starState = result.starred ? "full" : "empty";
-  var star = $(`${result.divId} .star`);
-  star.attr("src", `/static/star-${starState}.svg`);
-  star.removeClass("star-preload");
+  $(`${result.divId} .star`)
+      .attr("src", `/static/star-${starState}.svg`)
+      .removeClass("star-preload star-full star-empty")
+      .addClass(`star-${starState}`);
 }
 
 var starredResultsBeforeUnstarred = function(first, second) {
