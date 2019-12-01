@@ -31,8 +31,8 @@ var initResultsHtml = function() {
   for (var x in results) {
     var result = results[x];
     if (!result.visible) continue;
-    $(`${resultDivId(result)} .delete`).click(hideClickListener(result));
-    $(`${resultDivId(result)} .star`).click(starClickListener(result));
+    $(`${result.divId} .delete`).click(hideClickListener(result));
+    $(`${result.divId} .star`).click(starClickListener(result));
     setStarImageState(result);
   }
 }
@@ -66,15 +66,20 @@ var updateResultsCount = function() {
   $("#results_count").text(`(${count})`);
 }
 
-var resultDivId = function(result) {
-  return `#ui-result-${result.result_id}`;
+var setResultExtensions = function() {
+  for (x in results) {
+    var result = results[x]
+    result.divId = `#ui-result-${result.result_id}`
+    result.actionUrl = function(result) {
+      return action => `${location.origin}/${thisHash}/${result.result_id}/${action}`;
+    }(result);
+  }
 }
 
 var hideClickListener = function(result) {
-  var hideUrl = `${location.origin}/${thisHash}/${result.result_id}/hide`;
   return function() {
-    $.ajax({url: hideUrl, type: "GET"});
-    $(resultDivId(result)).fadeOut();
+    $.ajax({url: result.actionUrl("hide"), type: "GET"});
+    $(result.divId).fadeOut();
     result.visible = false;
     updateResultsCount();
   }
@@ -83,8 +88,7 @@ var hideClickListener = function(result) {
 var starClickListener = function(result) {
   return function() {
     var action = result.starred ? "unstar" : "star";
-    var url = `${location.origin}/${thisHash}/${result.result_id}/${action}`;
-    $.ajax({url: url, type: "GET"});
+    $.ajax({url: result.actionUrl(action), type: "GET"});
     result.starred = !result.starred;
     setStarImageState(result);
   }
@@ -92,7 +96,7 @@ var starClickListener = function(result) {
 
 var setStarImageState = function(result) {
   var starState = result.starred ? "full" : "empty";
-  var star = $(`${resultDivId(result)} .star`);
+  var star = $(`${result.divId} .star`);
   star.attr("src", `/static/star-${starState}.svg`);
   star.removeClass("star-preload");
 }
@@ -108,6 +112,7 @@ var starredResultsBeforeUnstarred = function(first, second) {
 }
 
 $(function() {
+  setResultExtensions();
   results.sort(starredResultsBeforeUnstarred);
 
   initResultsHtml();
