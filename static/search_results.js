@@ -11,7 +11,6 @@ var initResultsHtml = function() {
   var results_html = []
   for (var x in results) {
     var result = results[x];
-    if (!result.visible) continue;
     var starState = result.starred ? "full" : "empty";
     results_html.push([
       `<div id="ui-result-${result.result_id}" class="ui-result">`,
@@ -31,10 +30,12 @@ var initResultsHtml = function() {
 
   for (var x in results) {
     var result = results[x];
-    if (!result.visible) continue;
     $(`${result.divId} .delete`).click(hideClickListener(result));
     $(`${result.divId} .star`).click(starClickListener(result));
     setStarImageState(result);
+    if (!result.visible) {
+      $(result.divId).addClass("demoted");
+    }
   }
 }
 
@@ -81,9 +82,18 @@ var setResultExtensions = function() {
 var hideClickListener = function(result) {
   return function() {
     $.ajax({url: result.actionUrl("hide"), type: "GET"});
-    $(result.divId).fadeOut();
-    result.visible = false;
-    updateResultsCount();
+    $(result.divId).fadeOut(undefined, function() {
+      $(result.divId).show().addClass("demoted");
+
+      result.visible = false;
+      sortResults();
+      updateResultsCount();
+
+      var previousIndex = results.indexOf(result) - 1;
+      if (previousIndex >= 0)  {
+        $(result.divId).detach().insertAfter(results[previousIndex].divId);
+      }
+    });
   }
 }
 
@@ -105,19 +115,28 @@ var setStarImageState = function(result) {
       .addClass(`star-${starState}`);
 }
 
-var starredResultsBeforeUnstarred = function(first, second) {
+var resultComparator = function(first, second) {
+  if (first.visible && !second.visible) {
+    return -1;
+  } else if (second.visible && !first.visible) {
+    return 1;
+  }
+
   if (first.starred && !second.starred) {
     return -1;
-  }
-  if (second.starred && !first.starred) {
+  } else if (second.starred && !first.starred) {
     return 1;
   }
   return first.result_id - second.result_id;
 }
 
+var sortResults = function() {
+  results.sort(resultComparator);
+}
+
 $(function() {
   setResultExtensions();
-  results.sort(starredResultsBeforeUnstarred);
+  sortResults();
 
   initResultsHtml();
   setFrozenState();

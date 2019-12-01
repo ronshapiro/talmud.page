@@ -58,6 +58,10 @@ h1, h2 {
     padding-left: .5em;
 }
 
+.demoted {
+    opacity: .3;
+}
+
 .star-preload {
     opacity: 0;
 }
