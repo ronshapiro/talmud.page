@@ -97,7 +97,19 @@ var setStarImageState = function(result) {
   star.removeClass("star-preload");
 }
 
+var starredResultsBeforeUnstarred = function(first, second) {
+  if (first.starred && !second.starred) {
+    return -1;
+  }
+  if (second.starred && !first.starred) {
+    return 1;
+  }
+  return first.result_id - second.result_id;
+}
+
 $(function() {
+  results.sort(starredResultsBeforeUnstarred);
+
   initResultsHtml();
   setFrozenState();
   setCopyButtonListener();
