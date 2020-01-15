@@ -53,6 +53,19 @@ var commentaryClickListener = function(section, targetViewSelector) {
   }
 }
 
+var setEnglishClickListeners = function() {
+  var sections = $(".english-div");
+  for (var i = 0; i < sections.length; i++) {
+    var section = $(sections[i]);
+    section.click(englishClickListener(section));
+  }
+};
+
+var englishClickListener = function(element) {
+  return function() {
+    element.toggleClass("line-clampable");
+  };
+}
 
 var renderResults = function(amud) {
   var output = [];
@@ -71,8 +84,9 @@ var renderResults = function(amud) {
     output.push("</tr>");
   }
   $("#results").html(output.join(""));
-  setCommentaryButtons();
   setCommentaryState();
+  setCommentaryButtons();
+  setEnglishClickListeners();
 
   var rows = $("tr");
   for (var j = 0; j < rows.length; j++) {
