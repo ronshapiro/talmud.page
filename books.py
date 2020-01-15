@@ -1,6 +1,18 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+"""
+Missing Rashis:
+- Avodah Zarah
+- Chullin
+- Meilah
+- Menachot
+- Rosh Hashanah
+- Sanhedrin
+- Tamid
+- Temurah
+"""
+
 import json
 
 def _index_sefaria_labels(text):
@@ -14,7 +26,7 @@ def _index_sefaria_labels(text):
 class Books(object):
     def __init__(self):
         self._define_text("gemara", "{masechet}/Hebrew/William Davidson Edition - Aramaic.json")
-        self._define_text("gemara_english", "{masechet}/English/William Davidson Edition - Aramaic.json")
+        self._define_text("gemara_english", "{masechet}/English/William Davidson Edition - English.json")
         self._define_text("rashi", "{masechet}/Rashi/Hebrew/Vilna Edition.json")
         self._define_text("tosafot", "{masechet}/Tosafot/Hebrew/Vilna Edition.json")
 

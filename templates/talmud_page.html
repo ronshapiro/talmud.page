@@ -1,0 +1,32 @@
+<html>
+<head>
+  <title>Talmud Page TODO</title>
+    <style>
+    .gemara {
+      font-size: 1.5em;
+    }
+    table .hebrew {
+      width: 55%;
+    }
+    table .english {
+      width: 45%;
+    }
+    td {
+      vertical-align: top;
+      padding: 0px 8px;
+    }
+    .commentary_header {
+      text-decoration: underline;
+    }
+  </style>
+
+    {% include "header_common.html" %}
+
+  <script src="/static/talmud_page.js"></script>
+</head>
+<body>
+  <div id="main-contents">
+    <table id="results" />
+  </div>
+</body>
+</html>
