@@ -48,6 +48,14 @@ h1, h2 {
     font-family: "Taamey Frank", "Times New Roman", serif !important;
     line-height: 1.7em;
 }
+.gemara {
+    line-height: 1.5em;
+}
+.english-div {
+    /* TODO: don't apply this to the first line */
+    margin-top: 6px;
+    color: #555;
+}
 .ui-result .action-button {
     height: 2em;
     position: relative;

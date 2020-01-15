@@ -105,4 +105,14 @@ var renderResults = function(amud) {
   }
 };
 
-$.ajax({url: location.href + "/json", type: "GET", success: renderResults});
+var main = function() {
+  $.ajax({url: location.href + "/json", type: "GET", success: renderResults});
+
+  var masechet = location.pathname.split("/")[1];
+  var amud = location.pathname.split("/")[2];
+  document.title = masechet + " " + amud;
+  console.log($("#title"))
+  $("#title").html(masechet + " " + amud);
+}
+
+$(document).ready(main);
