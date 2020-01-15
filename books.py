@@ -3,28 +3,29 @@
 
 import json
 
+def _index_sefaria_labels(text):
+    index = {}
+    for amud_number in range(2, len(text)):
+        daf_number = int(amud_number / 2) + 1
+        daf_letter = ("a", "b")[amud_number % 2]
+        index["%s%s" %(daf_number, daf_letter)] = text[amud_number]
+    return index
+
 class Books(object):
     def __init__(self):
-        self.vocalized_cache = {}
-        self.english_cache = {}
+        self._define_text("gemara", "{masechet}/Hebrew/William Davidson Edition - Aramaic.json")
+        self._define_text("gemara_english", "{masechet}/English/William Davidson Edition - Aramaic.json")
+        self._define_text("rashi", "{masechet}/Rashi/Hebrew/Vilna Edition.json")
+        self._define_text("tosafot", "{masechet}/Tosafot/Hebrew/Vilna Edition.json")
 
-        self.vocalized = lambda book: \
-                         self._load_if_necessary(self.vocalized_cache, "vocalized", book)
-        self.english = lambda book: \
-                       self._load_if_necessary(self.english_cache, "english", book)
+    def _define_text(self, name, path):
+        cache_name = "%s_cache" % name
+        setattr(self, cache_name, {})
+        setattr(self, name, \
+                lambda masechet: self._load_if_necessary(getattr(self, cache_name), masechet, path))
 
-        self.vocalized_verse = lambda result: self._verse(self.vocalized, result)
-        self.english_verse = lambda result: self._verse(self.english, result)
-
-    def _load_text(self, folder, name):
-        file_name = "sefaria-data/%s/%s.json" % (folder, name)
-        return json.load(open(file_name))["text"]
-
-    def _load_if_necessary(self, cache, folder, book):
-        if book not in cache:
-            cache[book] = self._load_text(folder, book)
-        return cache[book]
-
-    # type(result) == SearchResult
-    def _verse(self, _get_book, result):
-        return _get_book(result.book)[result.chapter - 1][result.verse - 1]
+    def _load_if_necessary(self, cache, masechet, path):
+        if masechet not in cache:
+            file_name = "sefaria-data/Talmud/Bavli/%s" % path.format(masechet=masechet)
+            cache[masechet] = _index_sefaria_labels(json.load(open(file_name))["text"])
+        return cache[masechet]
