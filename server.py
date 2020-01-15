@@ -17,13 +17,17 @@ books = Books()
 
 @app.route("/")
 def homepage():
-    return render_template("homepage.html")
+    return redirect(url_for("amud", masechet="Berakhot", amud="2a"))
 
 # https://www.sefaria.org.il/download/version/Berakhot%20-%20he%20-%20William%20Davidson%20Edition%20-%20Vocalized%20Aramaic.json
 
 @app.route("/<masechet>/<amud>")
 def amud(masechet, amud):
     return render_template("talmud_page.html")
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404_amud_not_found.html'), 404
 
 @app.route("/<masechet>/<amud>/json")
 def amud_json(masechet, amud):
