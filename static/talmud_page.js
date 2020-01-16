@@ -111,8 +111,7 @@ var main = function() {
   var masechet = location.pathname.split("/")[1];
   var amud = location.pathname.split("/")[2];
   document.title = masechet + " " + amud;
-  console.log($("#title"))
-  $("#title").html(masechet + " " + amud);
+  $("#title").html(masechet + " " + amud).show();
 }
 
 $(document).ready(main);

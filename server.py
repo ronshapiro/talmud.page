@@ -23,7 +23,7 @@ def homepage():
 
 @app.route("/<masechet>/<amud>")
 def amud(masechet, amud):
-    return render_template("talmud_page.html")
+    return render_template("talmud_page.html", masechet=masechet, amud=amud)
 
 @app.errorhandler(404)
 def page_not_found(e):
