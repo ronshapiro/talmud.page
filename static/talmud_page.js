@@ -36,12 +36,12 @@ var setCommentaryButtons = function(amudim) {
   var commentarySections = amudim.find(".commentary");
   for (var i = 0; i < commentarySections.length; i++) {
     var section = $(commentarySections[i]);
-    $(section.find(".rashi-header")).click(commentaryClickListener(section, ".rashi"));
-    $(section.find(".tosafot-header")).click(commentaryClickListener(section, ".tosafot"));
+    $(section.find(".rashi-header")).click(commentaryClickListener(section, ".rashi", amudim));
+    $(section.find(".tosafot-header")).click(commentaryClickListener(section, ".tosafot", amudim));
   }
 };
 
-var commentaryClickListener = function(section, targetViewSelector) {
+var commentaryClickListener = function(section, targetViewSelector, amudim) {
   return function() {
     var targetView = $(section.find(targetViewSelector)[0]);
     if (targetView.attr("commentary-enabled")) {
@@ -49,7 +49,9 @@ var commentaryClickListener = function(section, targetViewSelector) {
     } else {
       targetView.attr("commentary-enabled", "true");
     }
-    setCommentaryState();
+    // TODO: find a less-hacky way to pipe this information through (or derive it so that the scope
+    // is smaller
+    setCommentaryState(amudim);
   }
 }
 
