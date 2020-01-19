@@ -1,38 +1,20 @@
 <html>
 <head>
   <title>{{title}}</title>
-    <style>
-    .gemara {
-      font-size: 1.5em;
-    }
-    table .hebrew {
-      width: 55%;
-    }
-    table .english {
-      width: 45%;
-    }
-    .line-clampable {
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-    td {
-      vertical-align: top;
-      padding: 0px 8px;
-    }
-    .commentary_header {
-      text-decoration: underline;
-      padding-inline-end: 8px;
-    }
-    </style>
-
-    {% include "header_common.html" %}
-
+  {% include "header_common.html" %}
   <script src="/static/talmud_page.js"></script>
 </head>
 <body>
   <div id="main-contents">
-    <div id="results" />
+    <div id="previous-amud-container" style="display: none">
+      <span id="previous-amud-button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Previous Amud</span>
+    </div>
+
+    <div id="results"></div>
+
+    <div id="next-amud-container" style="display: none">
+      <span id="next-amud-button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Next Amud</span>
+    </div>
   </div>
 </body>
 </html>

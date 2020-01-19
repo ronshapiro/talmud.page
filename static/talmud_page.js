@@ -90,11 +90,11 @@ var createAmudTable = function(amud) {
   return output.join("");
 }
 
-var renderResults = function(amudim) {
+var renderNewResults = function(amudim, directionFunction) {
   var amudimIds = [];
   for (var i = 0; i < amudim.length; i++) {
     var amud = amudim[i];
-    $("#results").append(createAmudTable(amud));
+    $("#results")[directionFunction](createAmudTable(amud));
     amudimIds.push(`#amud-${amud.amud}`);
   }
 
@@ -120,25 +120,78 @@ var renderResults = function(amudim) {
   }
 };
 
-var setHtmlTitle = function() {
+var amudMetadata = function() {
   var pathParts = location.pathname.split("/");
-  var masechet = pathParts[1];
-  var amud = pathParts[2];
-  var amud2 = pathParts[4];
-  var title = masechet + " " + amud;
-  if (amud2) {
-    title += "-" + amud2;
+  return {
+    masechet: pathParts[1],
+    amudStart: pathParts[2],
+    amudEnd: pathParts[4] || pathParts[2],
+  }
+}
+
+var refreshPageState = function() {
+  setHtmlTitle();
+
+  var metadata = amudMetadata();
+  setVisibility($("#previous-amud-container"), metadata.amudStart !== "2a");
+  setVisibility($("#next-amud-container"), true);
+}
+
+var setHtmlTitle = function() {
+  var metadata = amudMetadata();
+  var title = metadata.masechet + " " + metadata.amudStart;
+  if (metadata.amudStart != metadata.amudEnd) {
+    title += "-" + metadata.amudEnd;
   }
   document.title = title;
 }
 
 var main = function() {
-  $.ajax({url: location.href.replace(location.hash, "") + "/json",
+  $.ajax({url: `${location.origin}${location.pathname}/json`,
           type: "GET",
-          success: renderResults});
-  setHtmlTitle();
+          success: function(results) {
+            renderNewResults(results, "append");
+            setTimeout(() => setWindowTop(location.hash), 10);
+          }});
+  refreshPageState();
+
+  $("#previous-amud-container").click(addPreviousAmud);
+  $("#next-amud-container").click(addNextAmud);
 }
 
-// history.pushState(state, pageTitle, url);
+var addNextAmud = function() {
+  var metadata = amudMetadata();
+  // TODO: hardcode final amudim
+  var end = metadata.amudEnd;
+  var number = parseInt(end);
+  var nextAmud = end.endsWith("a") ? number + "b" : (number + 1) + "a";
+  $.ajax({url: `${location.origin}/${metadata.masechet}/${nextAmud}/json`,
+          type: "GET",
+          success: results => renderNewResults(results, "append")});
+  history.pushState(
+    {}, "", `${location.origin}/${metadata.masechet}/${metadata.amudStart}/to/${nextAmud}`);
+  refreshPageState();
+}
+
+var addPreviousAmud = function() {
+  var metadata = amudMetadata();
+  if (metadata.amudStart === "2a") return;
+  var start = metadata.amudStart;
+  var number = parseInt(start);
+  var previousAmud = start.endsWith("b") ? number + "a" : (number - 1) + "b";
+  $.ajax({url: `${location.origin}/${metadata.masechet}/${previousAmud}/json`,
+          type: "GET",
+          success: function(results) {
+            renderNewResults(results, "prepend");
+            setTimeout(() => setWindowTop("#amud-" + start), 10);
+          }});
+  history.pushState(
+    {}, "", `${location.origin}/${metadata.masechet}/${previousAmud}/to/${metadata.amudEnd}`);
+  refreshPageState();
+}
+
+var setWindowTop = function(selector) {
+  $(document.body).animate({scrollTop: $(selector).offset().top}, 0);
+}
 
 $(document).ready(main);

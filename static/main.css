@@ -23,6 +23,29 @@
     font-weight:700
 }
 
+.gemara {
+    font-size: 1.5em;
+}
+table .hebrew {
+    width: 55%;
+}
+table .english {
+    width: 45%;
+}
+.line-clampable {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+td {
+    vertical-align: top;
+    padding: 0px 8px;
+}
+.commentary_header {
+    text-decoration: underline;
+    padding-inline-end: 8px;
+}
+
 #main-contents {
     margin: auto;
     max-width: 720px;
@@ -31,18 +54,6 @@
 
 h1, h2 {
     text-align: center;
-}
-.ui-result-main {
-    z-index: 0;
-    position: relative;
-    top: -1.2em;
-}
-.ui-result-main p {
-    font-family: "Rubik", serif;
-    font-size: 20;
-}
-.ui-result-main .hebrew {
-    font-size: 28;
 }
 .hebrew {
     font-family: "Taamey Frank", "Times New Roman", serif !important;
@@ -56,40 +67,11 @@ h1, h2 {
     margin-top: 6px;
     color: #555;
 }
-.ui-result .action-button {
-    height: 2em;
-    position: relative;
-    top: 3.25em;
-    z-index: 1;
+#previous-amud-container, #next-amud-container {
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
-.ui-result .star {
-    padding-left: .5em;
-}
-
-.demoted {
-    opacity: .3;
-}
-
-.star-preload {
-    opacity: 0;
-}
-
-#freeze-button, #copy-button {
-    z-index: 2;
-
-    left: 1em;
-    position: fixed;
-    display: block;
-}
-
-#freeze-button {
-    top: 1em;
-}
-
-#copy-button {
-    top: 4.5em;
-}
-
 h1 {
     font-family: "David Libre";
     font-size:  4em;
