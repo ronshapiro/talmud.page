@@ -18,8 +18,8 @@ var setVisibility = function(element, toShow) {
   }
 }
 
-var setCommentaryState = function() {
-  var commentarySections = $(".commentary");
+var setCommentaryState = function(amudim) {
+  var commentarySections = amudim.find(".commentary");
   for (var i = 0; i < commentarySections.length; i++) {
     var section = $(commentarySections[i]);
     var rashi = $(section.find(".rashi")[0]);
@@ -32,8 +32,8 @@ var setCommentaryState = function() {
   }
 };
 
-var setCommentaryButtons = function() {
-  var commentarySections = $(".commentary");
+var setCommentaryButtons = function(amudim) {
+  var commentarySections = amudim.find(".commentary");
   for (var i = 0; i < commentarySections.length; i++) {
     var section = $(commentarySections[i]);
     $(section.find(".rashi-header")).click(commentaryClickListener(section, ".rashi"));
@@ -53,8 +53,8 @@ var commentaryClickListener = function(section, targetViewSelector) {
   }
 }
 
-var setEnglishClickListeners = function() {
-  var sections = $(".english-div");
+var setEnglishClickListeners = function(amudim) {
+  var sections = amudim.find(".english-div");
   for (var i = 0; i < sections.length; i++) {
     var section = $(sections[i]);
     section.click(englishClickListener(section));
@@ -91,22 +91,28 @@ var createAmudTable = function(amud) {
 }
 
 var renderResults = function(amudim) {
+  var amudimIds = [];
   for (var i = 0; i < amudim.length; i++) {
-    $("#results").append(createAmudTable(amudim[i]));
+    var amud = amudim[i];
+    $("#results").append(createAmudTable(amud));
+    amudimIds.push(`#amud-${amud.amud}`);
   }
-  setCommentaryState();
-  setCommentaryButtons();
-  setEnglishClickListeners();
 
-  var rows = $("tr");
+  var amudimDivs = $(amudimIds.join(","));
+  setCommentaryState(amudimDivs);
+  setCommentaryButtons(amudimDivs);
+  setEnglishClickListeners(amudimDivs);
+
+  var rows = amudimDivs.find("tr");
   for (var j = 0; j < rows.length; j++) {
     var row = $(rows[j])[0];
     var hebrewHeight = $(row).find(".gemara").height();
     $(row).find(".english-div").attr("hebrewHeight", hebrewHeight);
   }
-  var englishLineHeight = $($(".english-div")[0]).height();
 
-  var englishTexts = $(".english-div");
+  var englishTexts = amudimDivs.find(".english-div");
+  var englishLineHeight = $(englishTexts[0]).height();
+
   for (var j = 0; j < englishTexts.length; j++) {
     var item = $(englishTexts[j]);
     var maxLines = Math.floor(parseFloat(item.attr("hebrewHeight")) / englishLineHeight);
