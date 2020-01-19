@@ -67,8 +67,8 @@ var englishClickListener = function(element) {
   };
 }
 
-var renderResults = function(amud) {
-  var output = [];
+var createAmudTable = function(amud) {
+  var output = ["<table>"];
   for (var i in amud) {
     var hebrew = [];
     var section = amud[i];
@@ -83,7 +83,12 @@ var renderResults = function(amud) {
     output.push(`<td dir="ltr" class="english"><div class="english-div line-clampable" style="-webkit-line-clamp: 1;">${section.english}</div></td>`);
     output.push("</tr>");
   }
-  $("#results").html(output.join(""));
+  output.push("</table>");
+  return output.join("");
+}
+
+var renderResults = function(amud) {
+  $("#results").html(createAmudTable(amud));
   setCommentaryState();
   setCommentaryButtons();
   setEnglishClickListeners();
@@ -95,7 +100,6 @@ var renderResults = function(amud) {
     $(row).find(".english-div").attr("hebrewHeight", hebrewHeight);
   }
   var englishLineHeight = $($(".english-div")[0]).height();
-  console.log(englishLineHeight);
 
   var englishTexts = $(".english-div");
   for (var j = 0; j < englishTexts.length; j++) {
