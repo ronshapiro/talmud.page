@@ -43,7 +43,17 @@ def amud(masechet, amud):
         pass # TODO: handle
     elif canonical_masechet != masechet:
         return redirect(url_for("amud", masechet = canonical_masechet, amud = amud))
-    return render_template("talmud_page.html", masechet=masechet, amud=amud)
+    return render_template("talmud_page.html", title = "%s %s" %(masechet, amud))
+
+@app.route("/<masechet>/<start>/to/<end>")
+def amud_range(masechet, start, end):
+    canonical_masechet = books.canonical_masechet_name(masechet)
+    if canonical_masechet is None:
+        pass # TODO: handle
+    elif canonical_masechet != masechet:
+        return redirect(url_for(
+            "amud_range", masechet = canonical_masechet, start = start, end = end))
+    return render_template("talmud_page.html", title = "%s %s-%s" %(masechet, start, end))
 
 @app.errorhandler(404)
 def page_not_found(e):
@@ -51,6 +61,38 @@ def page_not_found(e):
 
 @app.route("/<masechet>/<amud>/json")
 def amud_json(masechet, amud):
+    return jsonify(_amud_json(masechet, amud))
+
+@app.route("/<masechet>/<start>/to/<end>/json")
+def start_range_json(masechet, start, end):
+    results = []
+    for amud in _amudim_in_range(start, end):
+        results += _amud_json(masechet, amud)
+    return jsonify(results)
+
+def _amudim_in_range(start, end):
+    start_number = int(start[:-1])
+    end_number = int(end[:-1])
+    if start == end or start_number > end_number:
+        # TODO: return error?
+        return [start]
+
+    results = []
+    next_amud = start
+    while next_amud != end:
+        results.append(next_amud)
+        next_amud = _next_amud(next_amud)
+
+    results.append(end)
+    return results
+
+def _next_amud(amud):
+    number = amud[:-1]
+    if amud[-1] == "a":
+        return "%sb" % number
+    return "%sa" % (int(number) + 1)
+
+def _amud_json(masechet, amud):
     gemara = books.gemara(masechet)[amud]
     english = books.gemara_english(masechet)[amud]
     rashi = books.rashi(masechet)[amud]
@@ -62,11 +104,11 @@ def amud_json(masechet, amud):
             "gemara": gemara[i],
             "rashi": rashi[i] if i < len(rashi) else [],
             "tosafot": tosafot[i] if i < len(tosafot) else [],
-            "english": english[i],
+            # English is missing when the Hadran is at the end of the Amud, e.g. Brachot 34b
+            "english": english[i] if i < len(english) else [],
         })
         
-    return jsonify(sections) 
-
+    return sections
 
 if __name__ == '__main__':
     app.run(threaded=True, port=5000)

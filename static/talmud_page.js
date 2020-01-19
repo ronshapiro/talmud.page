@@ -112,10 +112,18 @@ var renderResults = function(amud) {
 var main = function() {
   $.ajax({url: location.href + "/json", type: "GET", success: renderResults});
 
-  var masechet = location.pathname.split("/")[1];
-  var amud = location.pathname.split("/")[2];
-  document.title = masechet + " " + amud;
-  $("#title").html(masechet + " " + amud).show();
+  var pathParts = location.pathname.split("/");
+  var masechet = pathParts[1];
+  var amud = pathParts[2];
+  var amud2 = pathParts[4];
+  var title = masechet + " " + amud;
+  if (amud2) {
+    title += "-" + amud2;
+  }
+  document.title = title;
+  $("#title").html(title).show();
 }
+
+// history.pushState(state, pageTitle, url);
 
 $(document).ready(main);
