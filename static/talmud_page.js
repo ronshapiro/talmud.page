@@ -151,7 +151,9 @@ var main = function() {
           type: "GET",
           success: function(results) {
             renderNewResults(results, "append");
-            setTimeout(() => setWindowTop(location.hash), 10);
+            if (location.hash.length > 0) {
+              setTimeout(() => setWindowTop(location.hash), 10);
+            }
           }});
   refreshPageState();
 
