@@ -3,7 +3,7 @@ var commentarySection = function(lines, header, cssClass) {
     return "";
   }
   return [
-    `<span class="commentary_header ${cssClass}-header">${header}</span>`,
+    `<a class="commentary_header ${cssClass}-header">${header}</a>`,
     `<div class="${cssClass}">`,
     lines.join("<br>"),
     '</div>',
