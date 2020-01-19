@@ -109,4 +109,4 @@ class Books(object):
             file_name = "sefaria-data/Talmud/Bavli/%s/Hebrew/William Davidson Edition - Aramaic.json" % masechet
             hebrew_names[json.load(open(file_name))["heTitle"]] = masechet
         return hebrew_names
-        
+

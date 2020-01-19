@@ -107,7 +107,7 @@ def _amud_json(masechet, amud):
             # English is missing when the Hadran is at the end of the Amud, e.g. Brachot 34b
             "english": english[i] if i < len(english) else [],
         })
-        
+
     return sections
 
 if __name__ == '__main__':

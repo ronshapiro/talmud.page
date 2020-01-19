@@ -77,7 +77,7 @@ var createAmudTable = function(amud) {
     hebrew.push(commentarySection(section.rashi, "רש״י", "rashi"));
     hebrew.push(commentarySection(section.tosafot, "תוספות", "tosafot"));
     hebrew.push("</div>"); // .commentary
-    
+
     output.push("<tr>");
     output.push(`<td dir="rtl" class="hebrew">${hebrew.join("")}</td>`);
     output.push(`<td dir="ltr" class="english"><div class="english-div line-clampable" style="-webkit-line-clamp: 1;">${section.english}</div></td>`);
