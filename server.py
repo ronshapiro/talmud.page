@@ -17,6 +17,8 @@ app = Flask(__name__)
 books = Books()
 
 MULTIPLE_SPACES = re.compile("  +")
+AMUD_ALEPH_PERIOD = re.compile("(\d)\\.")
+AMUD_BET_COLON = re.compile("(\d):")
 
 @app.route("/")
 def homepage():
@@ -26,12 +28,22 @@ def homepage():
 def search_handler():
     term = request.form["search_term"].strip()
     term = MULTIPLE_SPACES.sub(" ", term)
+    term = AMUD_ALEPH_PERIOD.sub("\\1a", term)
+    term = AMUD_BET_COLON.sub("\\1b", term)
     words = term.split(" ")
     masechet = books.canonical_masechet_name(words[0])
     if masechet is None:
         # TODO: proper error page
         raise KeyError(masechet)
     # TODO: verify daf exists
+
+    if words[1].count("-") is 1:
+        start,end = words[1].split("-")
+        return redirect(url_for("amud_range", masechet = masechet, start = start, end = end))
+    elif len(words) is 4 and words[2] == "to":
+        start = words[1]
+        end = words[3]
+        return redirect(url_for("amud_range", masechet = masechet, start = start, end = end))
     return redirect(url_for("amud", masechet = masechet, amud = words[1]))
 
 # https://www.sefaria.org.il/download/version/Berakhot%20-%20he%20-%20William%20Davidson%20Edition%20-%20Vocalized%20Aramaic.json
