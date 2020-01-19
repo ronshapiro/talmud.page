@@ -10,19 +10,39 @@ from flask import request
 from flask import url_for
 import datetime
 import json
+import re
 import uuid
 
 app = Flask(__name__)
 books = Books()
 
+MULTIPLE_SPACES = re.compile("  +")
+
 @app.route("/")
 def homepage():
-    return redirect(url_for("amud", masechet="Berakhot", amud="2a"))
+    return render_template("homepage.html")
+
+@app.route("/view_daf", methods = ["POST"])
+def search_handler():
+    term = request.form["search_term"].strip()
+    term = MULTIPLE_SPACES.sub(" ", term)
+    words = term.split(" ")
+    masechet = books.canonical_masechet_name(words[0])
+    if masechet is None:
+        # TODO: proper error page
+        raise KeyError(masechet)
+    # TODO: verify daf exists
+    return redirect(url_for("amud", masechet = masechet, amud = words[1]))
 
 # https://www.sefaria.org.il/download/version/Berakhot%20-%20he%20-%20William%20Davidson%20Edition%20-%20Vocalized%20Aramaic.json
 
 @app.route("/<masechet>/<amud>")
 def amud(masechet, amud):
+    canonical_masechet = books.canonical_masechet_name(masechet)
+    if canonical_masechet is None:
+        pass # TODO: handle
+    elif canonical_masechet != masechet:
+        return redirect(url_for("amud", masechet = canonical_masechet, amud = amud))
     return render_template("talmud_page.html", masechet=masechet, amud=amud)
 
 @app.errorhandler(404)
