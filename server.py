@@ -61,13 +61,13 @@ def page_not_found(e):
 
 @app.route("/<masechet>/<amud>/json")
 def amud_json(masechet, amud):
-    return jsonify(_amud_json(masechet, amud))
+    return amud_range_json(masechet, amud, amud)
 
 @app.route("/<masechet>/<start>/to/<end>/json")
-def start_range_json(masechet, start, end):
+def amud_range_json(masechet, start, end):
     results = []
     for amud in _amudim_in_range(start, end):
-        results += _amud_json(masechet, amud)
+        results.append(_amud_json(masechet, amud))
     return jsonify(results)
 
 def _amudim_in_range(start, end):
@@ -108,7 +108,9 @@ def _amud_json(masechet, amud):
             "english": english[i] if i < len(english) else [],
         })
 
-    return sections
+    return dict(masechet=masechet,
+                amud=amud,
+                sections=sections)
 
 if __name__ == '__main__':
     app.run(threaded=True, port=5000)

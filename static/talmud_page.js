@@ -68,10 +68,13 @@ var englishClickListener = function(element) {
 }
 
 var createAmudTable = function(amud) {
-  var output = ["<table>"];
-  for (var i in amud) {
+  var output = [
+    `<div id="amud-${amud.amud}">`,
+    "<table>",
+    `<h2>${amud.masechet} ${amud.amud}</h2>`];
+  for (var i in amud.sections) {
     var hebrew = [];
-    var section = amud[i];
+    var section = amud.sections[i];
     hebrew.push(`<div class="gemara">${section.gemara}</div>`);
     hebrew.push('<div class="commentary">');
     hebrew.push(commentarySection(section.rashi, "רש״י", "rashi"));
@@ -83,12 +86,14 @@ var createAmudTable = function(amud) {
     output.push(`<td dir="ltr" class="english"><div class="english-div line-clampable" style="-webkit-line-clamp: 1;">${section.english}</div></td>`);
     output.push("</tr>");
   }
-  output.push("</table>");
+  output.push("</table></div>");
   return output.join("");
 }
 
-var renderResults = function(amud) {
-  $("#results").html(createAmudTable(amud));
+var renderResults = function(amudim) {
+  for (var i = 0; i < amudim.length; i++) {
+    $("#results").append(createAmudTable(amudim[i]));
+  }
   setCommentaryState();
   setCommentaryButtons();
   setEnglishClickListeners();
@@ -109,9 +114,7 @@ var renderResults = function(amud) {
   }
 };
 
-var main = function() {
-  $.ajax({url: location.href + "/json", type: "GET", success: renderResults});
-
+var setHtmlTitle = function() {
   var pathParts = location.pathname.split("/");
   var masechet = pathParts[1];
   var amud = pathParts[2];
@@ -121,7 +124,13 @@ var main = function() {
     title += "-" + amud2;
   }
   document.title = title;
-  $("#title").html(title).show();
+}
+
+var main = function() {
+  $.ajax({url: location.href.replace(location.hash, "") + "/json",
+          type: "GET",
+          success: renderResults});
+  setHtmlTitle();
 }
 
 // history.pushState(state, pageTitle, url);
