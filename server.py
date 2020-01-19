@@ -31,6 +31,7 @@ def search_handler():
     term = AMUD_ALEPH_PERIOD.sub("\\1a", term)
     term = AMUD_BET_COLON.sub("\\1b", term)
     words = term.split(" ")
+    # TODO: this doesn't work since masechtot can be multiple words
     masechet = books.canonical_masechet_name(words[0])
     if masechet is None:
         # TODO: proper error page
