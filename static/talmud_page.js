@@ -1,11 +1,19 @@
-var commentarySection = function(lines, header, cssClass) {
+var COMMENTARIES = ["rashi", "tosafot", "rashba"];
+
+var COMMENTARY_DISPLAY_NAMES = {
+  "rashi": "רש״י",
+  "tosafot": "תוספות",
+  "rashba": "רשב״א",
+};
+
+var commentarySection = function(lines, commentary) {
   if (!lines.length) {
     return "";
   }
   return [
-    `<a class="commentary_header ${cssClass}-header">${header}</a>`,
-    `<div class="${cssClass}">`,
-    lines.join("<br>"),
+    `<a class="commentary_header ${commentary}-header">${COMMENTARY_DISPLAY_NAMES[commentary]}</a>`,
+    `<div class="${commentary}">`,
+    typeof lines === "string" ? lines : lines.join("<br>"),
     '</div>',
   ].join("");
 };
@@ -22,13 +30,15 @@ var setCommentaryState = function(amudim) {
   var commentarySections = amudim.find(".commentary");
   for (var i = 0; i < commentarySections.length; i++) {
     var section = $(commentarySections[i]);
-    var rashi = $(section.find(".rashi")[0]);
-    var tosafot = $(section.find(".tosafot")[0]);
-    var rashiEnabled = rashi.attr("commentary-enabled") !== undefined;
-    var tosafotEnabled = tosafot.attr("commentary-enabled") !== undefined;
-    section.css("display", rashiEnabled || tosafotEnabled ? "block" : "flex");
-    setVisibility(rashi, rashiEnabled);
-    setVisibility(tosafot, tosafotEnabled);
+    var anyEnabled = false;
+    for (var j in COMMENTARIES) {
+      var commentary = COMMENTARIES[j];
+      var commentarySection = $(section.find(`.${commentary}`)[0]);
+      var enabled = commentarySection.attr("commentary-enabled") !== undefined;
+      setVisibility(commentarySection, enabled);
+      anyEnabled = anyEnabled || enabled;
+    }
+    section.css("display", anyEnabled ? "block" : "flex");
   }
 };
 
@@ -36,8 +46,10 @@ var setCommentaryButtons = function(amudim) {
   var commentarySections = amudim.find(".commentary");
   for (var i = 0; i < commentarySections.length; i++) {
     var section = $(commentarySections[i]);
-    $(section.find(".rashi-header")).click(commentaryClickListener(section, ".rashi", amudim));
-    $(section.find(".tosafot-header")).click(commentaryClickListener(section, ".tosafot", amudim));
+    for (var j in COMMENTARIES) {
+      var commentary = COMMENTARIES[j];
+      $(section.find(`.${commentary}-header`)).click(commentaryClickListener(section, `.${commentary}`, amudim));
+    }
   }
 };
 
@@ -79,8 +91,10 @@ var createAmudTable = function(amud) {
     var section = amud.sections[i];
     hebrew.push(`<div class="gemara">${section.gemara}</div>`);
     hebrew.push('<div class="commentary">');
-    hebrew.push(commentarySection(section.rashi, "רש״י", "rashi"));
-    hebrew.push(commentarySection(section.tosafot, "תוספות", "tosafot"));
+    for (var j in COMMENTARIES) {
+      var commentary = COMMENTARIES[j];
+      hebrew.push(commentarySection(section[commentary], commentary));
+    }
     hebrew.push("</div>"); // .commentary
 
     output.push("<tr>");

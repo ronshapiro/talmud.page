@@ -58,11 +58,12 @@ class _EmptyMasechet(object):
         return ()
 
 class _Source(object):
-    def __init__(self, json_file_paths, known_missing_masechtot = ()):
+    def __init__(self, json_file_paths, known_missing_masechtot = (), allow_missing = False):
         self.json_file_paths = json_file_paths
         self.cache = {}
         for missing_masechet in known_missing_masechtot:
             self.cache[missing_masechet] = _EmptyMasechet()
+        self.allow_missing = allow_missing
 
     def __call__(self, masechet):
         if masechet not in self.cache:
@@ -74,7 +75,9 @@ class _Source(object):
                         self.cache[masechet] = _index_sefaria_labels(json.load(json_file)["text"])
                 except FileNotFoundError:
                     continue
-        
+
+        if self.allow_missing:
+            return self.cache.get(masechet, _EmptyMasechet())
         return self.cache[masechet]
 
 class Books(object):
@@ -87,9 +90,10 @@ class Books(object):
                              known_missing_masechtot = ["Tamid"])
         self.tosafot = _Source(("{masechet}/Tosafot/Hebrew/Vilna Edition.json",
                                 "{masechet}/Tosafot/Hebrew/Vilna edition.json",
-                                "{masechet}/Rashi/Hebrew/WikiSource Tosafot.json",
-                                "{masechet}/Rashi/Hebrew/Wikisource Tosafot.json"),
+                                "{masechet}/Tosafot/Hebrew/WikiSource Tosafot.json",
+                                "{masechet}/Tosafot/Hebrew/Wikisource Tosafot.json"),
                                known_missing_masechtot = ["Tamid"])
+        self.rashba = _Source(["{masechet}/Rashba.json"], allow_missing=True)
 
         self._masechet_name_index = {}
         for canonical_name, aliases in MASECHTOT.items():

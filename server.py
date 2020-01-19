@@ -110,15 +110,17 @@ def _amud_json(masechet, amud):
     english = books.gemara_english(masechet)[amud]
     rashi = books.rashi(masechet)[amud]
     tosafot = books.tosafot(masechet)[amud]
+    rashba = books.rashba(masechet)[amud]
 
     sections = []
     for i in range(len(gemara)):
         sections.append({
             "gemara": gemara[i],
-            "rashi": rashi[i] if i < len(rashi) else [],
-            "tosafot": tosafot[i] if i < len(tosafot) else [],
             # English is missing when the Hadran is at the end of the Amud, e.g. Brachot 34b
             "english": english[i] if i < len(english) else [],
+            "rashi": rashi[i] if i < len(rashi) else [],
+            "tosafot": tosafot[i] if i < len(tosafot) else [],
+            "rashba": rashba[i] if i < len(rashba) else [],
         })
 
     return dict(masechet=masechet,
