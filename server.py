@@ -16,6 +16,12 @@ import uuid
 app = Flask(__name__)
 books = Books()
 
+def _read_commentary_index():
+    with open("sefaria-data/parsed-links.json", "r") as f:
+        return json.load(f)
+
+COMMENTARY_INDEX = _read_commentary_index()
+
 MULTIPLE_SPACES = re.compile("  +")
 AMUD_ALEPH_PERIOD = re.compile("(\d)\\.")
 AMUD_BET_COLON = re.compile("(\d):")
@@ -105,6 +111,13 @@ def _next_amud(amud):
         return "%sb" % number
     return "%sa" % (int(number) + 1)
 
+def _get_comments_at_label_indices(source, label_indices):
+    result = []
+    for i, comment in enumerate(source):
+        if i + 1 in label_indices:
+            result.append(comment)
+    return result
+
 def _amud_json(masechet, amud):
     gemara = books.gemara(masechet)[amud]
     english = books.gemara_english(masechet)[amud]
@@ -115,14 +128,16 @@ def _amud_json(masechet, amud):
 
     sections = []
     for i in range(len(gemara)):
+        label = "%s:%s" %(amud, i + 1)
+        commentary_index = COMMENTARY_INDEX[masechet].get(label, {})
         sections.append({
             "gemara": gemara[i],
             # English is missing when the Hadran is at the end of the Amud, e.g. Brachot 34b
             "english": english[i] if i < len(english) else [],
             "rashi": rashi[i] if i < len(rashi) else [],
             "tosafot": tosafot[i] if i < len(tosafot) else [],
-            "rashba": rashba[i] if i < len(rashba) else [],
-            "ramban": ramban[i] if i < len(ramban) else [],
+            "rashba": _get_comments_at_label_indices(rashba, commentary_index.get("rashba", [])),
+            "ramban": _get_comments_at_label_indices(ramban, commentary_index.get("ramban", [])),
         })
 
     return dict(masechet=masechet,
