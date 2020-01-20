@@ -111,6 +111,7 @@ def _amud_json(masechet, amud):
     rashi = books.rashi(masechet)[amud]
     tosafot = books.tosafot(masechet)[amud]
     rashba = books.rashba(masechet)[amud]
+    ramban = books.ramban(masechet)[amud]
 
     sections = []
     for i in range(len(gemara)):
@@ -121,6 +122,7 @@ def _amud_json(masechet, amud):
             "rashi": rashi[i] if i < len(rashi) else [],
             "tosafot": tosafot[i] if i < len(tosafot) else [],
             "rashba": rashba[i] if i < len(rashba) else [],
+            "ramban": ramban[i] if i < len(ramban) else [],
         })
 
     return dict(masechet=masechet,

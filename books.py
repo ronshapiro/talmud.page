@@ -94,6 +94,7 @@ class Books(object):
                                 "{masechet}/Tosafot/Hebrew/Wikisource Tosafot.json"),
                                known_missing_masechtot = ["Tamid"])
         self.rashba = _Source(["{masechet}/Rashba.json"], allow_missing=True)
+        self.ramban = _Source(["{masechet}/Ramban.json"], allow_missing=True)
 
         self._masechet_name_index = {}
         for canonical_name, aliases in MASECHTOT.items():

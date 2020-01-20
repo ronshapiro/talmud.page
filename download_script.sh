@@ -42,16 +42,24 @@ MASECHTOT=(
     "Zevachim"
 )
 
-function url_encode() {
-    echo "${1// /%20}"
-}
+function download() {
+    local target_file="sefaria-data/Talmud/Bavli/$1/$2.json"
+    local url="$3"
+    wget -q -O "$target_file" "$url"
 
-for masechet in "${MASECHTOT[@]}"; do
-    target_file="sefaria-data/Talmud/Bavli/${masechet}/Rashba.json"
-    wget -q -O "$target_file" \
-         "https://www.sefaria.org/download/version/Rashba%20on%20$(url_encode "$masechet")%20-%20he%20-%20merged.json"
     if [[ ! -s "$target_file" ]]; then
        rm "$target_file"
     fi
+}
+
+
+
+for masechet in "${MASECHTOT[@]}"; do
+    url_masechet="${masechet// /%20}"
+    download "$masechet" "Rashba" \
+             "https://www.sefaria.org/download/version/Rashba%20on%20${url_masechet}%20-%20he%20-%20merged.json"
+
+    download "$masechet" "Ramban" \
+             "https://www.sefaria.org/download/version/Chiddushei%20Ramban%20on%20${url_masechet}%20-%20he%20-%20Chiddushei%20HaRamban,%20Jerusalem%201928-29.json"
 done
 

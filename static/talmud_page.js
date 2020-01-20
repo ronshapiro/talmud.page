@@ -1,8 +1,9 @@
-var COMMENTARIES = ["rashi", "tosafot", "rashba"];
+var COMMENTARIES = ["rashi", "tosafot", "ramban", "rashba"];
 
 var COMMENTARY_DISPLAY_NAMES = {
   "rashi": "רש״י",
   "tosafot": "תוספות",
+  "ramban": "רמב״ן",
   "rashba": "רשב״א",
 };
 
