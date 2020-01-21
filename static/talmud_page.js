@@ -163,7 +163,30 @@ var setHtmlTitle = function() {
   document.title = title;
 }
 
+var moveSnackbarOffscreen = () => $("#snackbar").css("bottom", -400);
+var hideSnackbar = () => $("#snackbar").animate({"bottom": -400});
+
+var displaySnackbar = function(labelHtml, buttons) {
+  $("#snackbar-text").html(labelHtml);
+  var buttonsDiv = $("#snackbar-buttons").html("");
+  for (var i in buttons) {
+    var button = buttons[i]
+    buttonsDiv.append(
+      `<button class="mdl-button mdl-js-button mdl-button--primary">${button.text}</button>`);
+  }
+
+  var buttonElements = $("#snackbar-buttons button");
+  for (var i = 0; i < buttonElements.length; i++) {
+    $(buttonElements[i]).click(buttons[i].onClick);
+  }
+
+  moveSnackbarOffscreen();
+  $("#snackbar").animate({"bottom": 0});
+}
+
 var main = function() {
+  moveSnackbarOffscreen();
+
   $.ajax({url: `${location.origin}${location.pathname}/json`,
           type: "GET",
           success: function(results) {
