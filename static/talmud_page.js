@@ -169,6 +169,7 @@ var hideSnackbar = () => $("#snackbar").animate({"bottom": -400});
 var displaySnackbar = function(labelHtml, buttons) {
   $("#snackbar-text").html(labelHtml);
   var buttonsDiv = $("#snackbar-buttons").html("");
+  buttons = buttons || [];
   for (var i in buttons) {
     var button = buttons[i]
     buttonsDiv.append(
@@ -184,8 +185,39 @@ var displaySnackbar = function(labelHtml, buttons) {
   $("#snackbar").animate({"bottom": 0});
 }
 
+var getAncestorClasses = function(node) {
+  var classes = [];
+  while (node !== document) {
+    for (var i = 0; i < node.classList.length; i++) {
+      classes.push(node.classList[i]);
+    }
+    node = node.parentNode;
+  }
+  return classes;
+}
+
+var SELECTABLE_CLASSES = ["gemara"];
+var containsSelectableClass = function(set, matches) {
+  for (var i in SELECTABLE_CLASSES) {
+    for (var j in set) {
+      if (SELECTABLE_CLASSES[i] === set[j]) return true;
+    }
+  }
+  return false;
+}
+
 var main = function() {
   moveSnackbarOffscreen();
+  document.addEventListener("selectionchange", () => {
+    var selection = document.getSelection();
+    var text = selection.toString();
+    if (text !== ""
+        && containsSelectableClass(getAncestorClasses(selection.extentNode.parentNode))) {
+      // TODO: displaySnackbar(text);
+    } else {
+      hideSnackbar();
+    }
+  });
 
   $.ajax({url: `${location.origin}${location.pathname}/json`,
           type: "GET",
