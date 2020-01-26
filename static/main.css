@@ -98,13 +98,21 @@ h2 {
 
     position: fixed;
     bottom: -400px;
-    width: var(--max-width);
+    width: calc(var(--max-width) - 2 * var(--snackbar-padding));
     padding: var(--snackbar-padding);
 
     color: #323232;
     background-color: var(--background-color);
     border-radius: 2px 2px 0 0;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, .5);
+}
+
+@media only screen and (max-width: 720px) {
+    /* For mobile phones: */
+    #snackbar {
+        width: calc(100% - 2 * var(--snackbar-padding));
+        margin-left: -1em;
+    }
 }
 
 #snackbar p:last-of-type {
