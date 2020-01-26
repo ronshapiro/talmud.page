@@ -1,6 +1,11 @@
 :root {
     --max-width: 720px;
     --snackbar-padding: 10px;
+    --background-color: white;
+}
+
+html {
+    background-color: var(--background-color);
 }
 
 @font-face{
@@ -28,9 +33,11 @@
     font-weight:700
 }
 
-.gemara {
+.gemara, #snackbar .hebrew {
     font-size: 1.5em;
+    line-height: 1.5em;
 }
+
 table .hebrew {
     width: 55%;
 }
@@ -64,9 +71,6 @@ h1, h2 {
     font-family: "Taamey Frank", "Times New Roman", serif !important;
     line-height: 1.7em;
 }
-.gemara {
-    line-height: 1.5em;
-}
 .english-div {
     /* TODO: don't apply this to the first line */
     margin-top: 6px;
@@ -97,9 +101,14 @@ h2 {
     width: var(--max-width);
     padding: var(--snackbar-padding);
 
-    background-color: #323232;
+    color: #323232;
+    background-color: var(--background-color);
     border-radius: 2px 2px 0 0;
-    color: white;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, .5);
+}
+
+#snackbar p:last-of-type {
+    margin-bottom: 0px;
 }
 
 #snackbar-buttons {

@@ -42,24 +42,40 @@ MASECHTOT=(
     "Zevachim"
 )
 
+TANAKH_SEFARIM=(
+    "Genesis" "Exodus" "Leviticus" "Numbers" "Deuteronomy"
+    \
+    "Amos" "Ezekiel" "Habakkuk" "Haggai" "Hosea" "I Kings" "I Samuel"
+    "II Kings" "II Samuel" "Isaiah" "Jeremiah" "Joel" "Jonah" "Joshua"
+    "Judges" "Malachi" "Micah" "Nahum" "Obadiah" "Zechariah" "Zephaniah"
+    \
+    "Daniel" "Ecclesiastes" "Esther" "Ezra" "I Chronicles" "II Chronicles"
+    "Job" "Lamentations" "Nehemiah" "Proverbs" "Psalms" "Ruth"
+    "Song of Songs"
+)
+
 function download() {
-    local target_file="sefaria-data/Talmud/Bavli/$1/$2.json"
-    local url="$3"
-    wget -q -O "$target_file" "$url"
+    local target_file="sefaria-data/$1.json"
+    local url="$2"
+    wget -q -O "${target_file}" "${url}"
 
     if [[ ! -s "$target_file" ]]; then
        rm "$target_file"
     fi
 }
 
-
+for book in "${TANAKH_SEFARIM[@]}"; do
+    url_book="${book// /%20}"
+    download "bible/hebrew/${book}" \
+             "https://www.sefaria.org/download/version/${url_book}%20-%20he%20-%20Tanach%20with%20Nikkud.json"
+done
 
 for masechet in "${MASECHTOT[@]}"; do
     url_masechet="${masechet// /%20}"
-    download "$masechet" "Rashba" \
+    download "Talmud/Bavli/$masechet/Rashba" \
              "https://www.sefaria.org/download/version/Rashba%20on%20${url_masechet}%20-%20he%20-%20merged.json"
 
-    download "$masechet" "Ramban" \
+    download "Talmud/Bavli/$masechet/Ramban" \
              "https://www.sefaria.org/download/version/Chiddushei%20Ramban%20on%20${url_masechet}%20-%20he%20-%20Chiddushei%20HaRamban,%20Jerusalem%201928-29.json"
 done
 

@@ -8,6 +8,7 @@ from flask import redirect
 from flask import render_template
 from flask import request
 from flask import url_for
+from tanach import Tanach
 import datetime
 import json
 import re
@@ -15,12 +16,14 @@ import uuid
 
 app = Flask(__name__)
 books = Books()
+tanach = Tanach()
 
-def _read_commentary_index():
-    with open("sefaria-data/parsed-links.json", "r") as f:
+def _read_json_file(path):
+    with open(path, "r") as f:
         return json.load(f)
 
-COMMENTARY_INDEX = _read_commentary_index()
+BIBLICAL_INDEX = _read_json_file("sefaria-data/gemara-biblical-links.json")
+COMMENTARY_INDEX = _read_json_file("sefaria-data/gemara-commentary-links.json")
 
 MULTIPLE_SPACES = re.compile("  +")
 AMUD_ALEPH_PERIOD = re.compile("(\d)\\.")
@@ -130,6 +133,7 @@ def _amud_json(masechet, amud):
     for i in range(len(gemara)):
         label = "%s:%s" %(amud, i + 1)
         commentary_index = COMMENTARY_INDEX[masechet].get(label, {})
+        biblical_index = BIBLICAL_INDEX[masechet].get(label, {})
         sections.append({
             "gemara": gemara[i],
             # English is missing when the Hadran is at the end of the Amud, e.g. Brachot 34b
@@ -138,11 +142,24 @@ def _amud_json(masechet, amud):
             "tosafot": tosafot[i] if i < len(tosafot) else [],
             "rashba": _get_comments_at_label_indices(rashba, commentary_index.get("rashba", [])),
             "ramban": _get_comments_at_label_indices(ramban, commentary_index.get("ramban", [])),
+            "quoted_verses": _get_verse_texts(biblical_index)
         })
 
     return dict(masechet=masechet,
                 amud=amud,
                 sections=sections)
+
+def _get_verse_texts(verses):
+    return [
+        {"hebrew": tanach.hebrew(verse["book"])[verse["chapter"]][verse["verse"]],
+         "english": tanach.english(verse["book"])[verse["chapter"]][verse["verse"]],
+         "label": {
+             "hebrew": "%s %s:%s" %(verse["book"], verse["chapter"] + 1, verse["verse"]),
+             "english": "%s %s:%s" %(verse["book"], verse["chapter"] + 1, verse["verse"]),
+         }
+        }
+        for verse in verses
+    ]
 
 if __name__ == '__main__':
     app.run(threaded=True, port=5000)

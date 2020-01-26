@@ -87,10 +87,11 @@ var createAmudTable = function(amud) {
     `<div id="amud-${amud.amud}">`,
     "<table>",
     `<h2>${amud.masechet} ${amud.amud}</h2>`];
-  for (var i in amud.sections) {
+  for (var i = 0; i < amud.sections.length; i++) {
     var hebrew = [];
     var section = amud.sections[i];
-    hebrew.push(`<div class="gemara">${section.gemara}</div>`);
+    var sectionLabel = `${amud.amud}.${i+1}`;
+    hebrew.push(`<div class="gemara" id="${sectionLabel}">${section.gemara}</div>`);
     hebrew.push('<div class="commentary">');
     for (var j in COMMENTARIES) {
       var commentary = COMMENTARIES[j];
@@ -107,10 +108,19 @@ var createAmudTable = function(amud) {
   return output.join("");
 }
 
+var amudSectionMap = {}
+
 var renderNewResults = function(amudim, directionFunction) {
   var amudimIds = [];
   for (var i = 0; i < amudim.length; i++) {
     var amud = amudim[i];
+    amudSectionMap[amud.amud] = amud;
+    for (var j = 0; j < amud.sections.length; j++) {
+      var section = amud.sections[j];
+      var sectionLabel = `${amud.amud}.${j+1}`;
+      amudSectionMap[sectionLabel] = section;
+    }
+
     $("#results")[directionFunction](createAmudTable(amud));
     amudimIds.push(`#amud-${amud.amud}`);
   }
@@ -166,58 +176,108 @@ var setHtmlTitle = function() {
 var moveSnackbarOffscreen = () => $("#snackbar").css("bottom", -400);
 var hideSnackbar = () => $("#snackbar").animate({"bottom": -400});
 
-var displaySnackbar = function(labelHtml, buttons) {
+var updateSnackbar = function(labelHtml, buttons) {
   $("#snackbar-text").html(labelHtml);
   var buttonsDiv = $("#snackbar-buttons").html("");
-  buttons = buttons || [];
+  if (!buttons) {
+    buttons = [];
+  } else if (!buttons.length) {
+    buttons = [buttons];
+  }
   for (var i in buttons) {
     var button = buttons[i]
     buttonsDiv.append(
-      `<button class="mdl-button mdl-js-button mdl-button--primary">${button.text}</button>`);
+      `<button class="mdl-button mdl-js-button mdl-button--accent">${button.text}</button>`);
   }
 
   var buttonElements = $("#snackbar-buttons button");
   for (var i = 0; i < buttonElements.length; i++) {
     $(buttonElements[i]).click(buttons[i].onClick);
   }
+}
+
+var displaySnackbar = function(labelHtml, buttons) {
+  updateSnackbar(labelHtml, buttons);
 
   moveSnackbarOffscreen();
   $("#snackbar").animate({"bottom": 0});
 }
 
 var getAncestorClasses = function(node) {
+  var nodes = getAncestorNodes(node);
   var classes = [];
-  while (node !== document) {
-    for (var i = 0; i < node.classList.length; i++) {
-      classes.push(node.classList[i]);
+  for (var i in nodes) {
+    for (var j = 0; j < nodes[i].classList.length; j++) {
+      classes.push(nodes[i].classList[j]);
     }
-    node = node.parentNode;
   }
   return classes;
 }
 
-var SELECTABLE_CLASSES = ["gemara"];
-var containsSelectableClass = function(set, matches) {
-  for (var i in SELECTABLE_CLASSES) {
-    for (var j in set) {
-      if (SELECTABLE_CLASSES[i] === set[j]) return true;
+var getAncestorNodes = function(node) {
+  var nodes = [];
+  while (node !== document) {
+    nodes.push(node);
+    node = node.parentNode;
+  }
+  return nodes;
+}
+
+var hasClass = function(node, clazz) {
+  for (var i = 0; i < node.classList.length; i++) {
+    if (node.classList[i] === clazz) {
+      return true;
     }
   }
   return false;
 }
 
+var ancestorWithClass = function(node, clazz) {
+  var ancestors = getAncestorNodes(node);
+  for (var i in ancestors) {
+    var ancestor = ancestors[i];
+    if (hasClass(ancestor, clazz)) {
+      return ancestor;
+    }
+  }
+}
+
+var onSelectionChange = function() {
+  var selection = document.getSelection();
+  if (!selection.extentNode) {
+    return;
+  }
+  var node = selection.extentNode.parentNode;
+  if (ancestorWithClass(node, "snackbar")) {
+    return;
+  }
+
+  var text = selection.toString();
+  var gemaraSection = ancestorWithClass(node, "gemara");
+  if (text !== ""
+      && gemaraSection
+      && amudSectionMap[gemaraSection.id].quoted_verses.length > 0) {
+    displaySnackbar("", {
+      text: "Verses",
+      onClick: () => {
+        var snackbarText = [];
+        var verses = amudSectionMap[gemaraSection.id].quoted_verses;
+
+        for (var i in verses) {
+          var verse = verses[i];
+          snackbarText.push(`<p class="hebrew" dir="rtl">${verse.hebrew} <small>(${verse.label.hebrew})</small></p>`);
+        }
+        updateSnackbar(snackbarText.join(""), {text: "Hide", onClick: hideSnackbar});
+      },
+    });
+  } else {
+    hideSnackbar();
+  }
+}
+
 var main = function() {
   moveSnackbarOffscreen();
-  document.addEventListener("selectionchange", () => {
-    var selection = document.getSelection();
-    var text = selection.toString();
-    if (text !== ""
-        && containsSelectableClass(getAncestorClasses(selection.extentNode.parentNode))) {
-      // TODO: displaySnackbar(text);
-    } else {
-      hideSnackbar();
-    }
-  });
+  document.addEventListener("selectionchange", onSelectionChange);
 
   $.ajax({url: `${location.origin}${location.pathname}/json`,
           type: "GET",
@@ -226,10 +286,11 @@ var main = function() {
             if (location.hash.length > 0) {
               setTimeout(() => setWindowTop(location.hash), 10);
             }
+            refreshPageState();
           }});
   refreshPageState();
 
-  $("#previous-amud-container").click(addPreviousAmud);
+  $("#previous-amud-con tainer").click(addPreviousAmud);
   $("#next-amud-container").click(addNextAmud);
 }
 
