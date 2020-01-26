@@ -142,7 +142,7 @@ def _amud_json(masechet, amud):
             "tosafot": tosafot[i] if i < len(tosafot) else [],
             "rashba": _get_comments_at_label_indices(rashba, commentary_index.get("rashba", [])),
             "ramban": _get_comments_at_label_indices(ramban, commentary_index.get("ramban", [])),
-            "quoted_verses": _get_verse_texts(biblical_index)
+            "quotedVerses": _get_verse_texts(biblical_index)
         })
 
     return dict(masechet=masechet,

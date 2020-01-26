@@ -1,6 +1,7 @@
-var COMMENTARIES = ["rashi", "tosafot", "ramban", "rashba"];
+var COMMENTARIES = ["verses", "rashi", "tosafot", "ramban", "rashba"];
 
 var COMMENTARY_DISPLAY_NAMES = {
+  "verses": "פסוקים",
   "rashi": "רש״י",
   "tosafot": "תוספות",
   "ramban": "רמב״ן",
@@ -8,7 +9,7 @@ var COMMENTARY_DISPLAY_NAMES = {
 };
 
 var commentarySection = function(lines, commentary) {
-  if (!lines.length) {
+  if (!lines || !lines.length) {
     return "";
   }
   return [
@@ -82,6 +83,10 @@ var englishClickListener = function(element) {
   };
 }
 
+var referencedVersesAsLines = function(section) {
+  return section.quotedVerses.map(verse => `${verse.hebrew} <small>(${verse.label.hebrew})</small>`);
+}
+
 var createAmudTable = function(amud) {
   var output = [
     `<div id="amud-${amud.amud}">`,
@@ -91,8 +96,9 @@ var createAmudTable = function(amud) {
     var hebrew = [];
     var section = amud.sections[i];
     var sectionLabel = `${amud.amud}.${i+1}`;
-    hebrew.push(`<div class="gemara" aria-role="main" id="${sectionLabel}">{section.gemara}</div>`);
+    hebrew.push(`<div class="gemara" id="${sectionLabel}">${section.gemara}</div>`);
     hebrew.push('<div class="commentary">');
+    hebrew.push(commentarySection(referencedVersesAsLines(section), "verses"));
     for (var j in COMMENTARIES) {
       var commentary = COMMENTARIES[j];
       hebrew.push(commentarySection(section[commentary], commentary));
@@ -256,12 +262,12 @@ var onSelectionChange = function() {
   var gemaraSection = ancestorWithClass(node, "gemara");
   if (text !== ""
       && gemaraSection
-      && amudSectionMap[gemaraSection.id].quoted_verses.length > 0) {
+      && amudSectionMap[gemaraSection.id].quotedVerses.length > 0) {
     displaySnackbar("", {
       text: "Verses",
       onClick: () => {
         var snackbarText = [];
-        var verses = amudSectionMap[gemaraSection.id].quoted_verses;
+        var verses = amudSectionMap[gemaraSection.id].quotedVerses;
 
         for (var i in verses) {
           var verse = verses[i];
@@ -277,7 +283,8 @@ var onSelectionChange = function() {
 
 var main = function() {
   moveSnackbarOffscreen();
-  document.addEventListener("selectionchange", onSelectionChange);
+  // TODO: revisit how to implement the selection+snackbar on Android without triggering contextual search
+  // document.addEventListener("selectionchange", onSelectionChange);
 
   $.ajax({url: `${location.origin}${location.pathname}/json`,
           type: "GET",
