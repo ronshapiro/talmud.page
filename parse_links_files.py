@@ -56,6 +56,14 @@ def _scan_for_gemara_commentary_links(source, target):
             (source, source_label, COMMENTARY_TARGETS[target]),
             target_label_index)
 
+def _add_ein_mishpat(source, target):
+    source, source_label = _extract_book_and_index(source)
+    target, target_label = _extract_book_and_index(target)
+    _append_to_list_in_nested_dict(
+        gemara_commentary_links,
+        (source, source_label, target),
+        target_label_index)
+
 biblical_links = {}
 def _scan_for_biblical_links(source_with_label, target_with_label, source_book, target_book):
     if source_book not in MASECHTOT or target_book not in tanach.BOOKS:
@@ -87,6 +95,8 @@ for i in range(8):
             parts = line.split(",")
             _scan_for_gemara_commentary_links(*parts[:2])
             _scan_for_biblical_links(*parts[:2], *parts[3:5])
+            if parts[2] == "ein mishpat / ner mitsvah":
+                _add_ein_mishpat(*parts[:2])
 
 with open("sefaria-data/gemara-commentary-links.json", "w") as output:
     json.dump(gemara_commentary_links, output)
