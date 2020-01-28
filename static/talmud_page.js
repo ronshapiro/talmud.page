@@ -192,15 +192,12 @@ var renderNewResults = function(amud, directionFunction) {
       amud.commentaryIndex[id] = {};
     }
     var sectionCommentary = amud.commentaryIndex[id];
-    /*
-    var oldCommentaryName = commentary["collectiveTitle"]["en"];
-    if (!sectionCommentary[oldCommentaryName]) {
-      sectionCommentary[oldCommentaryName] = [];
-    }
-    sectionCommentary[oldCommentaryName].push(commentary);
-    */
     var commentaryKind = matchingCommentaryKind(commentary["collectiveTitle"]["en"]);
-    if (!commentaryKind) continue;
+    if (!commentaryKind) {
+      // type = mesorat hashas and category = Tanakh should be aggregating commentary types
+      console.log(commentary["collectiveTitle"]["en"], commentary["category"], commentary["type"]);
+      continue;
+    }
     var commentaryName = commentaryKind.englishName;
     if (!sectionCommentary[commentaryName]) {
       sectionCommentary[commentaryName] = [];

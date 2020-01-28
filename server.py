@@ -56,8 +56,6 @@ def search_handler():
         return redirect(url_for("amud_range", masechet = masechet, start = start, end = end))
     return redirect(url_for("amud", masechet = masechet, amud = words[1]))
 
-# https://www.sefaria.org.il/download/version/Berakhot%20-%20he%20-%20William%20Davidson%20Edition%20-%20Vocalized%20Aramaic.json
-
 @app.route("/<masechet>/<amud>")
 def amud(masechet, amud):
     canonical_masechet = books.canonical_masechet_name(masechet)
