@@ -1,13 +1,47 @@
 var COMMENTARIES = [
   // "verses",
-  {englishName: "Rashi", className: "rashi"},
-  {englishName: "Tosafot", className: "tosafot"},
-  {englishName: "Ramban", className: "ramban"},
-  {englishName: "Rashba", className: "rashba"},
-  {englishName: "Ritva", className: "ritva"},
-  {englishNamePrefix: "Shulchan Arukh, ", className: "shulchan-arukh"},
-  {englishNamePrefix: "Mishneh Torah, ", className: "mishneh-torah"},
-  {englishName: "Sefer Mitzvot Gadol", className: "smag", hebrewNameOverride: "סמ\"ג"}
+  {
+    englishName: "Rashi",
+    hebrewName: 'רש"י',
+    className: "rashi"
+  },
+  {
+    englishName: "Tosafot",
+    hebrewName: "תוספות",
+    className: "tosafot"
+  },
+  {
+    englishName: "Ramban",
+    hebrewName: 'רמב״ן',
+    className: "ramban"
+  },
+  {
+    englishName: "Rashba",
+    hebrewName: 'רשב״א',
+    className: "rashba"
+  },
+  {
+    englishName: "Ritva",
+    hebrewName: 'ריטב"א',
+    className: "ritva",
+  },
+  {
+    englishName: "Shulchan Arukh",
+    englishNamePrefix: "Shulchan Arukh, ",
+    hebrewName: "שולחן ערוך",
+    className: "shulchan-arukh"
+  },
+  {
+    englishName: "Mishneh Torah",
+    englishNamePrefix: "Mishneh Torah, ",
+    hebrewName: "משנה תורה",
+    className: "mishneh-torah",
+  },
+  {
+    englishName: "Sefer Mitzvot Gadol",
+    hebrewName: "סמ\"ג",
+    className: "smag",
+  }
 ];
 
 var matchingCommentaryKind = function(name) {
@@ -19,25 +53,36 @@ var matchingCommentaryKind = function(name) {
   }
 }
 
-var commentarySection = function(commentary) {
-  var lines = [];
-  var name;
-  for (var i = 0; i < commentary.length; i++) {
-    lines.push(commentary[i]["he"]);
-    name = commentary[i]["collectiveTitle"];
+var commentRow = function(sectionLabel, comment, commentaryKind) {
+  var english = typeof comment.text === "string" ? comment.text : comment.text.join("<br>");
+  return `<tr class="${sectionLabel}-${commentaryKind.className} commentaryRow">`
+    + `<td dir="rtl" class="hebrew">${comment.he}</td>`
+    + `<td class="english"><div class="english-div line-clampable" style="-webkit-line-clamp: 1;">${english}</div></td>`
+    + `</tr>`;
+}
+
+var commentaryRowOutput = function(sectionLabel, commentaries) {
+  var output = [`<tr><td dir="rtl" class="hebrew">`];
+  var commentaryRows = [];
+
+  for (var i in COMMENTARIES) {
+    var commentaryKind = COMMENTARIES[i];
+    var commentary = commentaries[commentaryKind.englishName];
+    if (commentary) {
+      output.push(`<a id="${sectionLabel}-${commentaryKind.className}-show-button" class="commentary_header show-button">${commentaryKind.hebrewName}</a>`);
+      commentaryRows.push(
+        `<tr>`
+          + `<td dir="rtl" class="hebrew">`
+          + `  <a id="${sectionLabel}-${commentaryKind.className}-hide-button" class="commentary_header">${commentaryKind.hebrewName}</a></td>`
+          + "</tr>");
+
+      commentary.forEach(comment => commentaryRows.push(commentRow(sectionLabel, comment, commentaryKind)));
+    }
   }
-  console.log("foo");
-  var commentaryKind = matchingCommentaryKind(name.en);
-  if (!commentaryKind) {
-    return "";
-  }
-  return [
-    `<a class="commentary_header ${commentaryKind.className}-header">${name.he}</a>`,
-    `<div class="${commentaryKind.className}">`,
-    lines.join("<br>"),
-    '</div>',
-  ].join("");
-};
+  output.push("</td></tr>");
+  output.push(commentaryRows.join(""));
+  return output.join("");
+}
 
 var setVisibility = function(element, toShow) {
   if (toShow) {
@@ -47,46 +92,51 @@ var setVisibility = function(element, toShow) {
   }
 }
 
-var setCommentaryState = function(amudim) {
-  var commentarySections = amudim.find(".commentary");
-  for (var i = 0; i < commentarySections.length; i++) {
-    var section = $(commentarySections[i]);
-    var anyEnabled = false;
-    for (var j in COMMENTARIES) {
-      var commentary = COMMENTARIES[j].className;
-      var commentarySection = $(section.find(`.${commentary}`)[0]);
-      var enabled = commentarySection.attr("commentary-enabled") !== undefined;
-      setVisibility(commentarySection, enabled);
-      anyEnabled = anyEnabled || enabled;
-    }
-    section.css("display", anyEnabled ? "block" : "flex");
-  }
-};
-
 var setCommentaryButtons = function(amudim) {
-  var commentarySections = amudim.find(".commentary");
-  for (var i = 0; i < commentarySections.length; i++) {
-    var section = $(commentarySections[i]);
-    for (var j in COMMENTARIES) {
-      var className = COMMENTARIES[j].className;
-      $(section.find(`.${className}-header`)).click(commentaryClickListener(section, `.${className}`, amudim));
+  var showButtons = amudim.find(".show-button");
+  for (var i = 0; i < showButtons.length; i++) {
+    var showButton = showButtons[i];
+    var label = showButton.id.replace("-show-button", "");
+    showButton = $(showButton); // after using .id to get the label, convert to a jQuery object
+    var hideButton = amudim.find(`#${label}-hide-button`);
+    var commentaryRows = amudim.find(`.commentaryRow.${label}`);
+
+    // create a function that captures the loop variables
+    var createShowHide = function(show, showButton, hideButton, commentaryRows) {
+      return function() {
+        setVisibility(showButton, show);
+        setVisibility(hideButton, !show);
+        setVisibility(commentaryRows, !show);
+
+        var sectionShowButtons = showButton.parent().children();
+        for (var j = 0; j < sectionShowButtons.length; j++) {
+          if ($(sectionShowButtons[j]).css("display") !== "none") {
+            showButton.parent().parent().show();
+            return;
+          }
+        }
+        showButton.parent().parent().hide();
+      }
     }
+    
+    showButton.click(createShowHide(false, showButton, hideButton, commentaryRows));
+    hideButton.click(createShowHide(true, showButton, hideButton, commentaryRows));
+
+    hideButton.click();
+
+    var evaluateEnglishHeights = function(commentaryRows) {
+      return function() {
+        if (this.shown) {
+          return;
+        }
+        for (var j = 0; j < commentaryRows.length; j++) {
+          setMaxLines($(commentaryRows[j]));
+        }
+      }
+    }
+    showButton.click(evaluateEnglishHeights(commentaryRows));
   }
 };
-
-var commentaryClickListener = function(section, targetViewSelector, amudim) {
-  return function() {
-    var targetView = $(section.find(targetViewSelector)[0]);
-    if (targetView.attr("commentary-enabled")) {
-      targetView.removeAttr("commentary-enabled");
-    } else {
-      targetView.attr("commentary-enabled", "true");
-    }
-    // TODO: find a less-hacky way to pipe this information through (or derive it so that the scope
-    // is smaller
-    setCommentaryState(amudim);
-  }
-}
 
 var setEnglishClickListeners = function(amudim) {
   var sections = amudim.find(".english-div");
@@ -111,26 +161,19 @@ var createAmudTable = function(amud) {
     `<div id="amud-${amud.id}">`,
     "<table>",
     `<h2>${amud.title}</h2>`];
-  console.log(amud);
   for (var i = 0; i < amud.he.length; i++) {
-    var hebrew = [];
-    var sectionLabel = `${amud.id}.${i+1}`;
-    hebrew.push(`<div class="gemara" id="${sectionLabel}">${amud.he[i]}</div>`);
-    hebrew.push('<div class="commentary">');
+    var sectionLabel = `${amud.id}_section_${i+1}`;
+
+    output.push("<tr>");
+    output.push(`<td dir="rtl" class="hebrew"><div class="gemara" id="${sectionLabel}">${amud.he[i]}</div></td>`);    
+    output.push(`<td dir="ltr" class="english"><div class="english-div line-clampable" style="-webkit-line-clamp: 1;">${amud.text[i]}</div></td>`);
+    output.push("</tr>");
+
     // TODO: hebrew.push(commentarySection(referencedVersesAsLines(section), "verses"));
     var commentaries = amud.commentaryIndex[`${amud.book} ${amud.id}:${i+1}`];
     if (commentaries) {
-      for (var j in commentaries) {
-        var commentary = commentaries[j];
-        hebrew.push(commentarySection(commentary));
-      }
+      output.push(commentaryRowOutput(sectionLabel, commentaries));
     }
-    hebrew.push("</div>"); // .commentary
-
-    output.push("<tr>");
-    output.push(`<td dir="rtl" class="hebrew">${hebrew.join("")}</td>`);
-    output.push(`<td dir="ltr" class="english"><div class="english-div line-clampable" style="-webkit-line-clamp: 1;">${amud.text[i]}</div></td>`);
-    output.push("</tr>");
   }
   output.push("</table></div>");
   return output.join("");
@@ -149,7 +192,16 @@ var renderNewResults = function(amud, directionFunction) {
       amud.commentaryIndex[id] = {};
     }
     var sectionCommentary = amud.commentaryIndex[id];
-    var commentaryName = commentary["collectiveTitle"]["en"];
+    /*
+    var oldCommentaryName = commentary["collectiveTitle"]["en"];
+    if (!sectionCommentary[oldCommentaryName]) {
+      sectionCommentary[oldCommentaryName] = [];
+    }
+    sectionCommentary[oldCommentaryName].push(commentary);
+    */
+    var commentaryKind = matchingCommentaryKind(commentary["collectiveTitle"]["en"]);
+    if (!commentaryKind) continue;
+    var commentaryName = commentaryKind.englishName;
     if (!sectionCommentary[commentaryName]) {
       sectionCommentary[commentaryName] = [];
     }
@@ -157,32 +209,33 @@ var renderNewResults = function(amud, directionFunction) {
   }
   
   amudSectionMap[amud.id] = amud;
-  console.log(amud);
   
   $("#results")[directionFunction](createAmudTable(amud));
   amudimIds.push(`#amud-${amud.id}`);
 
   var amudimDivs = $(amudimIds.join(","));
-  setCommentaryState(amudimDivs);
   setCommentaryButtons(amudimDivs);
   setEnglishClickListeners(amudimDivs);
 
+  var englishTexts = amudimDivs.find(".english-div");
+  // this works because we set everything to be line-clamp=1 to default, so there will only be == 1
+  globalEnglishLineHeight = $(englishTexts[0]).height();
   var rows = amudimDivs.find("tr");
   for (var j = 0; j < rows.length; j++) {
     var row = $(rows[j])[0];
-    var hebrewHeight = $(row).find(".gemara").height();
-    $(row).find(".english-div").attr("hebrewHeight", hebrewHeight);
-  }
-
-  var englishTexts = amudimDivs.find(".english-div");
-  var englishLineHeight = $(englishTexts[0]).height();
-
-  for (var j = 0; j < englishTexts.length; j++) {
-    var item = $(englishTexts[j]);
-    var maxLines = Math.floor(parseFloat(item.attr("hebrewHeight")) / englishLineHeight);
-    item.css("-webkit-line-clamp", maxLines.toString());
+    var hebrewHeight = $(row).find(".hebrew").height();
+    setMaxLines($(row));
   }
 };
+
+var globalEnglishLineHeight = -1;
+
+var setMaxLines = function(row) {
+  var hebrew = $(row.children()[0])
+  var english = $(row.find(".english-div")[0])
+  var maxLines = Math.floor(hebrew.height() / globalEnglishLineHeight);
+  english.css("-webkit-line-clamp", maxLines.toString());
+}
 
 var amudMetadata = function() {
   var pathParts = location.pathname.split("/");
