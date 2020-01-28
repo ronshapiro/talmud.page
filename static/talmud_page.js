@@ -1,21 +1,40 @@
-var COMMENTARIES = ["verses", "rashi", "tosafot", "ramban", "rashba"];
+var COMMENTARIES = [
+  // "verses",
+  {englishName: "Rashi", className: "rashi"},
+  {englishName: "Tosafot", className: "tosafot"},
+  {englishName: "Ramban", className: "ramban"},
+  {englishName: "Rashba", className: "rashba"},
+  {englishName: "Ritva", className: "ritva"},
+  {englishNamePrefix: "Shulchan Arukh, ", className: "shulchan-arukh"},
+  {englishNamePrefix: "Mishneh Torah, ", className: "mishneh-torah"},
+  {englishName: "Sefer Mitzvot Gadol", className: "smag", hebrewNameOverride: "סמ\"ג"}
+];
 
-var COMMENTARY_DISPLAY_NAMES = {
-  "verses": "פסוקים",
-  "rashi": "רש״י",
-  "tosafot": "תוספות",
-  "ramban": "רמב״ן",
-  "rashba": "רשב״א",
-};
+var matchingCommentaryKind = function(name) {
+  for (var i in COMMENTARIES) {
+    var kind = COMMENTARIES[i];
+    if (name === kind.englishName || name.startsWith(kind.englishNamePrefix)) {
+      return kind;
+    }
+  }
+}
 
-var commentarySection = function(lines, commentary) {
-  if (!lines || !lines.length) {
+var commentarySection = function(commentary) {
+  var lines = [];
+  var name;
+  for (var i = 0; i < commentary.length; i++) {
+    lines.push(commentary[i]["he"]);
+    name = commentary[i]["collectiveTitle"];
+  }
+  console.log("foo");
+  var commentaryKind = matchingCommentaryKind(name.en);
+  if (!commentaryKind) {
     return "";
   }
   return [
-    `<a class="commentary_header ${commentary}-header">${COMMENTARY_DISPLAY_NAMES[commentary]}</a>`,
-    `<div class="${commentary}">`,
-    typeof lines === "string" ? lines : lines.join("<br>"),
+    `<a class="commentary_header ${commentaryKind.className}-header">${name.he}</a>`,
+    `<div class="${commentaryKind.className}">`,
+    lines.join("<br>"),
     '</div>',
   ].join("");
 };
@@ -34,7 +53,7 @@ var setCommentaryState = function(amudim) {
     var section = $(commentarySections[i]);
     var anyEnabled = false;
     for (var j in COMMENTARIES) {
-      var commentary = COMMENTARIES[j];
+      var commentary = COMMENTARIES[j].className;
       var commentarySection = $(section.find(`.${commentary}`)[0]);
       var enabled = commentarySection.attr("commentary-enabled") !== undefined;
       setVisibility(commentarySection, enabled);
@@ -49,8 +68,8 @@ var setCommentaryButtons = function(amudim) {
   for (var i = 0; i < commentarySections.length; i++) {
     var section = $(commentarySections[i]);
     for (var j in COMMENTARIES) {
-      var commentary = COMMENTARIES[j];
-      $(section.find(`.${commentary}-header`)).click(commentaryClickListener(section, `.${commentary}`, amudim));
+      var className = COMMENTARIES[j].className;
+      $(section.find(`.${className}-header`)).click(commentaryClickListener(section, `.${className}`, amudim));
     }
   }
 };
@@ -89,25 +108,28 @@ var referencedVersesAsLines = function(section) {
 
 var createAmudTable = function(amud) {
   var output = [
-    `<div id="amud-${amud.amud}">`,
+    `<div id="amud-${amud.id}">`,
     "<table>",
-    `<h2>${amud.masechet} ${amud.amud}</h2>`];
-  for (var i = 0; i < amud.sections.length; i++) {
+    `<h2>${amud.title}</h2>`];
+  console.log(amud);
+  for (var i = 0; i < amud.he.length; i++) {
     var hebrew = [];
-    var section = amud.sections[i];
-    var sectionLabel = `${amud.amud}.${i+1}`;
-    hebrew.push(`<div class="gemara" id="${sectionLabel}">${section.gemara}</div>`);
+    var sectionLabel = `${amud.id}.${i+1}`;
+    hebrew.push(`<div class="gemara" id="${sectionLabel}">${amud.he[i]}</div>`);
     hebrew.push('<div class="commentary">');
-    hebrew.push(commentarySection(referencedVersesAsLines(section), "verses"));
-    for (var j in COMMENTARIES) {
-      var commentary = COMMENTARIES[j];
-      hebrew.push(commentarySection(section[commentary], commentary));
+    // TODO: hebrew.push(commentarySection(referencedVersesAsLines(section), "verses"));
+    var commentaries = amud.commentaryIndex[`${amud.book} ${amud.id}:${i+1}`];
+    if (commentaries) {
+      for (var j in commentaries) {
+        var commentary = commentaries[j];
+        hebrew.push(commentarySection(commentary));
+      }
     }
     hebrew.push("</div>"); // .commentary
 
     output.push("<tr>");
     output.push(`<td dir="rtl" class="hebrew">${hebrew.join("")}</td>`);
-    output.push(`<td dir="ltr" class="english"><div class="english-div line-clampable" style="-webkit-line-clamp: 1;">${section.english}</div></td>`);
+    output.push(`<td dir="ltr" class="english"><div class="english-div line-clampable" style="-webkit-line-clamp: 1;">${amud.text[i]}</div></td>`);
     output.push("</tr>");
   }
   output.push("</table></div>");
@@ -116,20 +138,29 @@ var createAmudTable = function(amud) {
 
 var amudSectionMap = {}
 
-var renderNewResults = function(amudim, directionFunction) {
+var renderNewResults = function(amud, directionFunction) {
   var amudimIds = [];
-  for (var i = 0; i < amudim.length; i++) {
-    var amud = amudim[i];
-    amudSectionMap[amud.amud] = amud;
-    for (var j = 0; j < amud.sections.length; j++) {
-      var section = amud.sections[j];
-      var sectionLabel = `${amud.amud}.${j+1}`;
-      amudSectionMap[sectionLabel] = section;
+  amud.id = amud["toSections"][0]; // "2a"
+  amud.commentaryIndex = {}
+  for (var i = 0; i < amud.commentary.length; i++) {
+    var commentary = amud.commentary[i];
+    var id = commentary["anchorRefExpanded"][0];
+    if (!amud.commentaryIndex[id]) {
+      amud.commentaryIndex[id] = {};
     }
-
-    $("#results")[directionFunction](createAmudTable(amud));
-    amudimIds.push(`#amud-${amud.amud}`);
+    var sectionCommentary = amud.commentaryIndex[id];
+    var commentaryName = commentary["collectiveTitle"]["en"];
+    if (!sectionCommentary[commentaryName]) {
+      sectionCommentary[commentaryName] = [];
+    }
+    sectionCommentary[commentaryName].push(commentary);
   }
+  
+  amudSectionMap[amud.id] = amud;
+  console.log(amud);
+  
+  $("#results")[directionFunction](createAmudTable(amud));
+  amudimIds.push(`#amud-${amud.id}`);
 
   var amudimDivs = $(amudimIds.join(","));
   setCommentaryState(amudimDivs);
@@ -286,7 +317,9 @@ var main = function() {
   // TODO: revisit how to implement the selection+snackbar on Android without triggering contextual search
   // document.addEventListener("selectionchange", onSelectionChange);
 
-  $.ajax({url: `${location.origin}${location.pathname}/json`,
+  var metadata = amudMetadata();
+  var url = `https://www.sefaria.org/api/texts/${metadata.masechet}.${metadata.amudStart}?commentary=1&context=1&pad=0&wrapLinks=1&multiple=0`;
+  $.ajax({url: url,
           type: "GET",
           success: function(results) {
             renderNewResults(results, "append");
