@@ -62,25 +62,25 @@ var commentRow = function(sectionLabel, comment, commentaryKind) {
 }
 
 var commentaryRowOutput = function(sectionLabel, commentaries) {
-  var output = [`<tr><td dir="rtl" class="hebrew">`];
-  var commentaryRows = [];
+  var output = []
 
+  var showButtons = [`<tr><td dir="rtl" class="hebrew">`];
   for (var i in COMMENTARIES) {
     var commentaryKind = COMMENTARIES[i];
     var commentary = commentaries[commentaryKind.englishName];
     if (commentary) {
-      output.push(`<a id="${sectionLabel}-${commentaryKind.className}-show-button" class="commentary_header show-button">${commentaryKind.hebrewName}</a>`);
-      commentaryRows.push(
+      showButtons.push(`<a id="${sectionLabel}-${commentaryKind.className}-show-button" class="commentary_header show-button">${commentaryKind.hebrewName}</a>`);
+      output.push(
         `<tr>`
           + `<td dir="rtl" class="hebrew">`
           + `  <a id="${sectionLabel}-${commentaryKind.className}-hide-button" class="commentary_header">${commentaryKind.hebrewName}</a></td>`
           + "</tr>");
 
-      commentary.forEach(comment => commentaryRows.push(commentRow(sectionLabel, comment, commentaryKind)));
+      commentary.forEach(comment => output.push(commentRow(sectionLabel, comment, commentaryKind)));
     }
   }
-  output.push("</td></tr>");
-  output.push(commentaryRows.join(""));
+  showButtons.push("</td></tr>");
+  output.push(showButtons.join(""));
   return output.join("");
 }
 
@@ -105,7 +105,7 @@ var setCommentaryButtons = function(amudim) {
     var createShowHide = function(show, showButton, hideButton, commentaryRows) {
       return function() {
         setVisibility(showButton, show);
-        setVisibility(hideButton, !show);
+        setVisibility(hideButton.parents("tr"), !show);
         setVisibility(commentaryRows, !show);
 
         var sectionShowButtons = showButton.parent().children();
