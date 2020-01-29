@@ -158,7 +158,6 @@ var referencedVersesAsLines = function(section) {
 
 var createAmudTable = function(amud) {
   var output = [
-    `<div id="amud-${amud.id}">`,
     "<table>",
     `<h2>${amud.title}</h2>`];
   for (var i = 0; i < amud.he.length; i++) {
@@ -175,13 +174,28 @@ var createAmudTable = function(amud) {
       output.push(commentaryRowOutput(sectionLabel, commentaries));
     }
   }
-  output.push("</table></div>");
+  output.push("</table>");
   return output.join("");
 }
 
 var amudSectionMap = {}
 
-var renderNewResults = function(amud, directionFunction) {
+var requestAmud = function(amud, directionFunction, options) {
+  var divId = `amud-${amud}`;
+  $("#results")[directionFunction](`<div id="${divId}">`);
+  var metadata = amudMetadata();
+  $.ajax({url: `https://www.sefaria.org/api/texts/${metadata.masechet}.${amud}?commentary=1&context=1&pad=0&wrapLinks=1&multiple=0`,
+          type: "GET",
+          success: function(results) {
+            renderNewResults(results, "#" + divId);
+            refreshPageState();
+            if (options.callback) options.callback();
+          }});
+  if (options.newUrl) history.pushState({}, "", options.newUrl);
+  refreshPageState();
+}
+
+var renderNewResults = function(amud, divId) {
   var amudimIds = [];
   amud.id = amud["toSections"][0]; // "2a"
   amud.commentaryIndex = {}
@@ -207,7 +221,7 @@ var renderNewResults = function(amud, directionFunction) {
   
   amudSectionMap[amud.id] = amud;
   
-  $("#results")[directionFunction](createAmudTable(amud));
+  $(divId).html(createAmudTable(amud));
   amudimIds.push(`#amud-${amud.id}`);
 
   var amudimDivs = $(amudimIds.join(","));
@@ -234,12 +248,31 @@ var setMaxLines = function(row) {
   english.css("-webkit-line-clamp", maxLines.toString());
 }
 
+var computePreviousAmud = function(current) {
+  var number = parseInt(current);
+  return current.endsWith("b") ? number + "a" : (number - 1) + "b";
+}
+
+var computeNextAmud = function(current) {
+  var number = parseInt(current);
+  return current.endsWith("a") ? number + "b" : (number + 1) + "a";
+}
+
 var amudMetadata = function() {
   var pathParts = location.pathname.split("/");
   return {
     masechet: pathParts[1],
     amudStart: pathParts[2],
     amudEnd: pathParts[4] || pathParts[2],
+    range: function() {
+      var current = this.amudStart;
+      var results = [current];
+      while (current !== this.amudEnd) {
+        current = computeNextAmud(current);
+        results.push(current);
+      }
+      return results;
+    }
   }
 }
 
@@ -367,52 +400,38 @@ var main = function() {
   // TODO: revisit how to implement the selection+snackbar on Android without triggering contextual search
   // document.addEventListener("selectionchange", onSelectionChange);
 
-  var metadata = amudMetadata();
-  var url = `https://www.sefaria.org/api/texts/${metadata.masechet}.${metadata.amudStart}?commentary=1&context=1&pad=0&wrapLinks=1&multiple=0`;
-  $.ajax({url: url,
-          type: "GET",
-          success: function(results) {
-            renderNewResults(results, "append");
-            if (location.hash.length > 0) {
-              setTimeout(() => setWindowTop(location.hash), 10);
-            }
-            refreshPageState();
-          }});
-  refreshPageState();
+  var amudRange = amudMetadata().range();
+  for (var i in amudRange) {
+    requestAmud(amudRange[i], "append", {
+      callback: function() {
+        if (location.hash.length > 0) {
+          setTimeout(() => setWindowTop(location.hash), 10);
+        }
+      }
+    });
+  }
 
-  $("#previous-amud-con tainer").click(addPreviousAmud);
+  $("#previous-amud-container").click(addPreviousAmud);
   $("#next-amud-container").click(addNextAmud);
 }
 
 var addNextAmud = function() {
   var metadata = amudMetadata();
   // TODO: hardcode final amudim
-  var end = metadata.amudEnd;
-  var number = parseInt(end);
-  var nextAmud = end.endsWith("a") ? number + "b" : (number + 1) + "a";
-  $.ajax({url: `${location.origin}/${metadata.masechet}/${nextAmud}/json`,
-          type: "GET",
-          success: results => renderNewResults(results, "append")});
-  history.pushState(
-    {}, "", `${location.origin}/${metadata.masechet}/${metadata.amudStart}/to/${nextAmud}`);
-  refreshPageState();
+  var nextAmud = computeNextAmud(metadata.amudEnd);
+  requestAmud(nextAmud, "append", {
+    newUrl: `${location.origin}/${metadata.masechet}/${metadata.amudStart}/to/${nextAmud}`
+  });
 }
 
 var addPreviousAmud = function() {
   var metadata = amudMetadata();
   if (metadata.amudStart === "2a") return;
-  var start = metadata.amudStart;
-  var number = parseInt(start);
-  var previousAmud = start.endsWith("b") ? number + "a" : (number - 1) + "b";
-  $.ajax({url: `${location.origin}/${metadata.masechet}/${previousAmud}/json`,
-          type: "GET",
-          success: function(results) {
-            renderNewResults(results, "prepend");
-            setTimeout(() => setWindowTop("#amud-" + start), 10);
-          }});
-  history.pushState(
-    {}, "", `${location.origin}/${metadata.masechet}/${previousAmud}/to/${metadata.amudEnd}`);
-  refreshPageState();
+  var previousAmud = computePreviousAmud(metadata.amudStart);
+  requestAmud(previousAmud, "prepend", {
+    newUrl: `${location.origin}/${metadata.masechet}/${previousAmud}/to/${metadata.amudEnd}`,
+    callback: () => setTimeout(() => setWindowTop("#amud-" + metadata.amudStart), 10)
+  });
 }
 
 var setWindowTop = function(selector) {
