@@ -7,6 +7,7 @@ from flask import jsonify
 from flask import redirect
 from flask import render_template
 from flask import request
+from flask import send_file
 from flask import url_for
 from tanach import Tanach
 import datetime
@@ -74,6 +75,10 @@ def amud_range(masechet, start, end):
         return redirect(url_for(
             "amud_range", masechet = canonical_masechet, start = start, end = end))
     return render_template("talmud_page.html", title = "%s %s-%s" %(masechet, start, end))
+
+@app.route("/js/<ignored>/talmud_page.js")
+def talmud_page_js(ignored):
+    return send_file("static/talmud_page.js")
 
 @app.errorhandler(404)
 def page_not_found(e):
