@@ -37,11 +37,11 @@ var COMMENTARIES = [
     hebrewName: "משנה תורה",
     className: "mishneh-torah",
   },
-  {
+  /*{
     englishName: "Sefer Mitzvot Gadol",
     hebrewName: "סמ\"ג",
     className: "smag",
-  }
+  },*/
 ];
 
 var matchingCommentaryKind = function(name) {
