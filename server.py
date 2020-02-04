@@ -80,6 +80,10 @@ def amud_range(masechet, start, end):
 def talmud_page_js(ignored):
     return send_file("static/talmud_page.js")
 
+@app.route("/css/<ignored>/main.css")
+def main_css(ignored):
+    return send_file("static/main.css")
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404_amud_not_found.html'), 404
