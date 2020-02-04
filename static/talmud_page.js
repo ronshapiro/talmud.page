@@ -1,5 +1,10 @@
 var COMMENTARIES = [
-  // "verses",
+  {
+    englishName: "Verses",
+    hebrewName: 'תנ״ך',
+    className: "psukim",
+    category: "Tanakh",
+  },
   {
     englishName: "Rashi",
     hebrewName: 'רש"י',
@@ -44,21 +49,50 @@ var COMMENTARIES = [
   },*/
 ];
 
-var matchingCommentaryKind = function(name) {
+var matchingCommentaryKind = function(commentary) {
+  var name = commentary.collectiveTitle.en;
   for (var i in COMMENTARIES) {
     var kind = COMMENTARIES[i];
-    if (name === kind.englishName || name.startsWith(kind.englishNamePrefix)) {
+    if (name === kind.englishName
+        || name.startsWith(kind.englishNamePrefix)
+        || commentary.category === kind.category) {
       return kind;
     }
   }
 }
 
+var hebrewCell = function(text) {
+  return `<td dir="rtl" class="hebrew">${text}</td>`;
+}
+
+var englishCell = function(text) {
+  return `<td dir="ltr" class="english">`
+    + `<div class="english-div line-clampable" style="-webkit-line-clamp: 1;">`
+    + text
+    + `</div>`
+    + `</td>`;
+}
+
 var commentRow = function(sectionLabel, comment, commentaryKind) {
-  var english = typeof comment.text === "string" ? comment.text : comment.text.join("<br>");
-  return `<tr class="${sectionLabel}-${commentaryKind.className} commentaryRow">`
-    + `<td dir="rtl" class="hebrew">${comment.he}</td>`
-    + `<td class="english"><div class="english-div line-clampable" style="-webkit-line-clamp: 1;">${english}</div></td>`
-    + `</tr>`;
+  var output = [];
+  var makeRow = function(hebrew, english) {
+    return `<tr class="${sectionLabel}-${commentaryKind.className} commentaryRow">`
+      + hebrewCell(hebrew)
+      + englishCell(english)
+      + `</tr>`;
+  }
+  if (comment.category === "Tanakh") {
+    output.push(
+      makeRow(
+        `<strong>${comment.sourceHeRef}</strong>`,
+        `<strong>${comment.ref}</strong>`));
+  }
+  output.push(
+    makeRow(
+      comment.he,
+      typeof comment.text === "string" ? comment.text : comment.text.join("<br>")));
+
+  return output.join("");
 }
 
 var commentaryRowOutput = function(sectionLabel, commentaries) {
@@ -163,12 +197,12 @@ var createAmudTable = function(amud) {
   for (var i = 0; i < amud.he.length; i++) {
     var sectionLabel = `${amud.id}_section_${i+1}`;
 
-    output.push("<tr>");
-    output.push(`<td dir="rtl" class="hebrew"><div class="gemara" id="${sectionLabel}">${amud.he[i]}</div></td>`);    
-    output.push(`<td dir="ltr" class="english"><div class="english-div line-clampable" style="-webkit-line-clamp: 1;">${amud.text[i]}</div></td>`);
-    output.push("</tr>");
+    output.push(
+      "<tr>",
+      hebrewCell(`<div class="gemara" id="${sectionLabel}">${amud.he[i]}</div>`),
+      englishCell(amud.text[i]),
+      "</tr>");
 
-    // TODO: hebrew.push(commentarySection(referencedVersesAsLines(section), "verses"));
     var commentaries = amud.commentaryIndex[`${amud.book} ${amud.id}:${i+1}`];
     if (commentaries) {
       output.push(commentaryRowOutput(sectionLabel, commentaries));
@@ -206,7 +240,7 @@ var renderNewResults = function(amud, divId) {
       amud.commentaryIndex[id] = {};
     }
     var sectionCommentary = amud.commentaryIndex[id];
-    var commentaryKind = matchingCommentaryKind(commentary["collectiveTitle"]["en"]);
+    var commentaryKind = matchingCommentaryKind(commentary);
     if (!commentaryKind) {
       // type = mesorat hashas and category = Tanakh should be aggregating commentary types
       console.log(commentary["collectiveTitle"]["en"], commentary["category"], commentary["type"]);
