@@ -8,7 +8,7 @@ var COMMENTARIES = [
   {
     englishName: "Rashi",
     hebrewName: 'רש"י',
-    className: "rashi"
+    className: "rashi",
   },
   {
     englishName: "Tosafot",
@@ -58,18 +58,21 @@ var COMMENTARIES = [
     englishName: "Shulchan Arukh",
     englishNamePrefix: "Shulchan Arukh, ",
     hebrewName: "שולחן ערוך",
-    className: "shulchan-arukh"
+    className: "shulchan-arukh",
+    cssCategory: "ein-mishpat",
   },
   {
     englishName: "Mishneh Torah",
     englishNamePrefix: "Mishneh Torah, ",
     hebrewName: "משנה תורה",
     className: "mishneh-torah",
+    cssCategory: "ein-mishpat",
   },
   /*{
     englishName: "Sefer Mitzvot Gadol",
     hebrewName: "סמ\"ג",
     className: "smag",
+    cssCategory: "ein-mishpat",
   },*/
   {
     englishName: "Mesorat Hashas",
@@ -139,12 +142,15 @@ var commentaryRowOutput = function(sectionLabel, commentaries) {
   for (var i in COMMENTARIES) {
     var commentaryKind = COMMENTARIES[i];
     var commentary = commentaries[commentaryKind.englishName];
+
     if (commentary) {
-      showButtons.push(`<a id="${sectionLabel}-${commentaryKind.className}-show-button" class="commentary_header show-button">${commentaryKind.hebrewName}</a>`);
+      var classes = ["commentary_header", commentaryKind.className, commentaryKind.cssCategory].join(" ");
+      var idPrefix = `${sectionLabel}-${commentaryKind.className}`;
+      showButtons.push(`<a id="${idPrefix}-show-button" class="${classes} show-button">${commentaryKind.hebrewName}</a>`);
       output.push(
         `<tr>`
           + `<td dir="rtl" class="hebrew">`
-          + `  <a id="${sectionLabel}-${commentaryKind.className}-hide-button" class="commentary_header">${commentaryKind.hebrewName}</a></td>`
+          + `  <a id="${idPrefix}-hide-button" class="${classes}">${commentaryKind.hebrewName}</a></td>`
           + "</tr>");
 
       commentary.forEach(comment => output.push(commentRow(sectionLabel, comment, commentaryKind)));

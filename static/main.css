@@ -124,3 +124,13 @@ h2 {
     display: flex;
     justify-content: space-between;
 }
+
+.commentary_header.psukim, .commentary_header.jastrow {
+    color: gray;
+}
+.commentary_header.ein-mishpat {
+    color: rgb(68,138,255);
+}
+.commentary_header.mesorat-hashas {
+    color: rgb(124,77,255);
+}
