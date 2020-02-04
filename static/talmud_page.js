@@ -146,11 +146,11 @@ var commentaryRowOutput = function(sectionLabel, commentaries) {
     if (commentary) {
       var classes = ["commentary_header", commentaryKind.className, commentaryKind.cssCategory].join(" ");
       var idPrefix = `${sectionLabel}-${commentaryKind.className}`;
-      showButtons.push(`<a id="${idPrefix}-show-button" class="${classes} show-button">${commentaryKind.hebrewName}</a>`);
+      showButtons.push(`<a id="${idPrefix}-show-button" class="${classes} show-button" tabindex="0">${commentaryKind.hebrewName}</a>`);
       output.push(
         `<tr>`
           + `<td dir="rtl" class="hebrew">`
-          + `  <a id="${idPrefix}-hide-button" class="${classes}">${commentaryKind.hebrewName}</a></td>`
+          + `  <a id="${idPrefix}-hide-button" class="${classes}" tabindex="0">${commentaryKind.hebrewName}</a></td>`
           + "</tr>");
 
       commentary.forEach(comment => output.push(commentRow(sectionLabel, comment, commentaryKind)));
@@ -166,6 +166,14 @@ var setVisibility = function(element, toShow) {
     element.show();
   } else {
     element.hide();
+  }
+}
+
+var clickIfEnter = function(alternateButton) {
+  return function(event) {
+    if (!event || event.originalEvent.code !== "Enter") return;
+    event.target.click();
+    alternateButton.focus();
   }
 }
 
@@ -198,6 +206,8 @@ var setCommentaryButtons = function(amudim) {
     
     showButton.click(createShowHide(false, showButton, hideButton, commentaryRows));
     hideButton.click(createShowHide(true, showButton, hideButton, commentaryRows));
+    showButton.on('keypress', clickIfEnter(hideButton));
+    hideButton.on('keypress', clickIfEnter(showButton));
 
     hideButton.click();
 
