@@ -26,9 +26,33 @@ var COMMENTARIES = [
     className: "rashba"
   },
   {
+    englishName: "Maharsha",
+    englishNamePattern: /(Chidushei Halachot|Chidushei Agadot)/,
+    hebrewName: 'מהרש"א',
+    className: "maharsha",
+  },
+  {
+    englishName: "Maharshal",
+    englishNamePattern: /(Chokhmat Shlomo on .*|Chokhmat Shlomo)/,
+    hebrewName: 'מהרש"ל',
+    className: "maharshal",
+  },
+  {
+    englishName: "Rosh",
+    englishNamePrefix: "Rosh on ",
+    hebrewName: 'רא"ש',
+    className: "rosh",
+  },
+  {
     englishName: "Ritva",
     hebrewName: 'ריטב"א',
     className: "ritva",
+  },
+  {
+    englishName: "Rav Nissim Gaon",
+    englishNamePrefix: "Rav Nissim Gaon on ",
+    hebrewName: "רבנו נסים",
+    className: "rav-nissim-gaon",
   },
   {
     englishName: "Shulchan Arukh",
@@ -47,6 +71,17 @@ var COMMENTARIES = [
     hebrewName: "סמ\"ג",
     className: "smag",
   },*/
+  {
+    englishName: "Mesorat Hashas",
+    type: "mesorat hashas",
+    hebrewName: 'מסורת הש״ס',
+    className: "mesorat-hashas",
+  },
+  {
+    englishName: "Jastrow",
+    hebrewName: "Jastrow",
+    className: "jastrow",
+  },
 ];
 
 var matchingCommentaryKind = function(commentary) {
@@ -55,7 +90,9 @@ var matchingCommentaryKind = function(commentary) {
     var kind = COMMENTARIES[i];
     if (name === kind.englishName
         || name.startsWith(kind.englishNamePrefix)
-        || commentary.category === kind.category) {
+        || commentary.category === kind.category
+        || commentary.type === kind.type
+        || (kind.englishNamePattern && name.match(kind.englishNamePattern))) {
       return kind;
     }
   }
@@ -81,7 +118,7 @@ var commentRow = function(sectionLabel, comment, commentaryKind) {
       + englishCell(english)
       + `</tr>`;
   }
-  if (comment.category === "Tanakh") {
+  if (comment.category === "Tanakh" || comment.type === "mesorat hashas") {
     output.push(
       makeRow(
         `<strong>${comment.sourceHeRef}</strong>`,
@@ -229,6 +266,8 @@ var requestAmud = function(amud, directionFunction, options) {
   refreshPageState();
 }
 
+var IGNORED_COMMENTARY_KINDS = new Set(["Responsa", "Philosophy", "Musar", "Chasidut"]);
+
 var renderNewResults = function(amud, divId) {
   var amudimIds = [];
   amud.id = amud["toSections"][0]; // "2a"
@@ -241,9 +280,13 @@ var renderNewResults = function(amud, divId) {
     }
     var sectionCommentary = amud.commentaryIndex[id];
     var commentaryKind = matchingCommentaryKind(commentary);
+    // TODO: quotation
+    // TODO: Steinsaltz
     if (!commentaryKind) {
-      // type = mesorat hashas and category = Tanakh should be aggregating commentary types
-      console.log(commentary["collectiveTitle"]["en"], commentary["category"], commentary["type"]);
+      if (!IGNORED_COMMENTARY_KINDS.has(commentary.category)) {
+        // type = mesorat hashas and category = Tanakh should be aggregating commentary types
+        console.log(commentary["collectiveTitle"]["en"], commentary["category"], commentary["type"]);
+      }
       continue;
     }
     var commentaryName = commentaryKind.englishName;
