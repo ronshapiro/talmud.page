@@ -4470,7 +4470,7 @@ ALWAYS_IGNORED_VERSIONS = [
     "Der Pentateuch, übersetzt und er läutert von Samson Raphael Hirsch. Frankfurt am Main, 1867-1878 [de]",
     "La Malnova Testamento",
     "Torah Yesharah, translated and edited by Chas. Kahane. New York, 1963"]
-    
+
 db.texts.remove({"versionTitle": {"$in": ALWAYS_IGNORED_VERSIONS}})
 
 ALLOWED_TANACH_VERSIONS = [

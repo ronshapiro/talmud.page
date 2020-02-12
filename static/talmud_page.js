@@ -146,7 +146,7 @@ var tableRow = function(hebrew, english, options) {
 };
 
 var isEmptyText = function(stringOrList) {
-  return !stringOrList || stringOrList === "" || stringOrList.length == 0; 
+  return !stringOrList || stringOrList === "" || stringOrList.length == 0;
 }
 
 var commentRow = function(sectionLabel, comment, commentaryKind) {
@@ -155,7 +155,7 @@ var commentRow = function(sectionLabel, comment, commentaryKind) {
   var commentRowOptions = {
     classes: [`${sectionLabel}-${commentaryKind.className}`, "commentaryRow"],
   };
-  
+
   if (comment.category === "Tanakh" || comment.type === "mesorat hashas") {
     output.push(
       tableRow(
@@ -239,7 +239,7 @@ var setCommentaryButtons = function(amudim) {
         showButton.parent().parent().hide();
       }
     }
-    
+
     showButton.click(createShowHide(false, showButton, hideButton, commentaryRows));
     hideButton.click(createShowHide(true, showButton, hideButton, commentaryRows));
     showButton.on('keypress', clickIfEnter(hideButton));
@@ -342,9 +342,9 @@ var renderNewResults = function(amud, divId) {
     }
     sectionCommentary[commentaryName].push(commentary);
   }
-  
+
   amudSectionMap[amud.id] = amud;
-  
+
   $(divId).html(createAmudTable(amud));
   amudimIds.push(`#amud-${amud.id}`);
 
