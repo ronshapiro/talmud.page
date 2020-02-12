@@ -265,7 +265,7 @@ var setEnglishClickListeners = function(amudim) {
   var sections = amudim.find(".english-div");
   for (var i = 0; i < sections.length; i++) {
     var section = $(sections[i]);
-    section.click(englishClickListener(section));
+    section.dblclick(englishClickListener(section));
   }
 };
 
