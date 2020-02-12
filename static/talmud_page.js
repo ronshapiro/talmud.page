@@ -138,7 +138,7 @@ var commentRow = function(sectionLabel, comment, commentaryKind) {
 var commentaryRowOutput = function(sectionLabel, commentaries) {
   var output = []
 
-  var showButtons = [`<tr><td dir="rtl" class="hebrew">`];
+  var showButtons = [];
   for (var i in COMMENTARIES) {
     var commentaryKind = COMMENTARIES[i];
     var commentary = commentaries[commentaryKind.englishName];
@@ -149,15 +149,14 @@ var commentaryRowOutput = function(sectionLabel, commentaries) {
       showButtons.push(`<a id="${idPrefix}-show-button" class="${classes} show-button" tabindex="0">${commentaryKind.hebrewName}</a>`);
       output.push(
         `<tr>`
-          + `<td dir="rtl" class="hebrew">`
-          + `  <a id="${idPrefix}-hide-button" class="${classes}" tabindex="0">${commentaryKind.hebrewName}</a></td>`
+          + hebrewCell(
+            `<a id="${idPrefix}-hide-button" class="${classes}" tabindex="0">${commentaryKind.hebrewName}</a>`)
           + "</tr>");
 
       commentary.forEach(comment => output.push(commentRow(sectionLabel, comment, commentaryKind)));
     }
   }
-  showButtons.push("</td></tr>");
-  output.push(showButtons.join(""));
+  output.push(`<tr>${hebrewCell(showButtons.join(""))}</tr>`);
   return output.join("");
 }
 
@@ -386,113 +385,7 @@ var setHtmlTitle = function() {
   document.title = title;
 }
 
-var moveSnackbarOffscreen = () => $("#snackbar").css("bottom", -400);
-var hideSnackbar = () => $("#snackbar").animate({"bottom": -400});
-
-var updateSnackbar = function(labelHtml, buttons) {
-  $("#snackbar-text").html(labelHtml);
-  var buttonsDiv = $("#snackbar-buttons").html("");
-  if (!buttons) {
-    buttons = [];
-  } else if (!buttons.length) {
-    buttons = [buttons];
-  }
-  for (var i in buttons) {
-    var button = buttons[i]
-    buttonsDiv.append(
-      `<button class="mdl-button mdl-js-button mdl-button--accent">${button.text}</button>`);
-  }
-
-  var buttonElements = $("#snackbar-buttons button");
-  for (var i = 0; i < buttonElements.length; i++) {
-    $(buttonElements[i]).click(buttons[i].onClick);
-  }
-}
-
-var displaySnackbar = function(labelHtml, buttons) {
-  updateSnackbar(labelHtml, buttons);
-
-  moveSnackbarOffscreen();
-  $("#snackbar").animate({"bottom": 0});
-}
-
-var getAncestorClasses = function(node) {
-  var nodes = getAncestorNodes(node);
-  var classes = [];
-  for (var i in nodes) {
-    for (var j = 0; j < nodes[i].classList.length; j++) {
-      classes.push(nodes[i].classList[j]);
-    }
-  }
-  return classes;
-}
-
-var getAncestorNodes = function(node) {
-  var nodes = [];
-  while (node !== document) {
-    nodes.push(node);
-    node = node.parentNode;
-  }
-  return nodes;
-}
-
-var hasClass = function(node, clazz) {
-  for (var i = 0; i < node.classList.length; i++) {
-    if (node.classList[i] === clazz) {
-      return true;
-    }
-  }
-  return false;
-}
-
-var ancestorWithClass = function(node, clazz) {
-  var ancestors = getAncestorNodes(node);
-  for (var i in ancestors) {
-    var ancestor = ancestors[i];
-    if (hasClass(ancestor, clazz)) {
-      return ancestor;
-    }
-  }
-}
-
-var onSelectionChange = function() {
-  var selection = document.getSelection();
-  if (!selection.extentNode) {
-    return;
-  }
-  var node = selection.extentNode.parentNode;
-  if (ancestorWithClass(node, "snackbar")) {
-    return;
-  }
-
-  var text = selection.toString();
-  var gemaraSection = ancestorWithClass(node, "gemara");
-  if (text !== ""
-      && gemaraSection
-      && amudSectionMap[gemaraSection.id].quotedVerses.length > 0) {
-    displaySnackbar("", {
-      text: "Verses",
-      onClick: () => {
-        var snackbarText = [];
-        var verses = amudSectionMap[gemaraSection.id].quotedVerses;
-
-        for (var i in verses) {
-          var verse = verses[i];
-          snackbarText.push(`<p class="hebrew" dir="rtl">${verse.hebrew} <small>(${verse.label.hebrew})</small></p>`);
-        }
-        updateSnackbar(snackbarText.join(""), {text: "Hide", onClick: hideSnackbar});
-      },
-    });
-  } else {
-    hideSnackbar();
-  }
-}
-
 var main = function() {
-  moveSnackbarOffscreen();
-  // TODO: revisit how to implement the selection+snackbar on Android without triggering contextual search
-  // document.addEventListener("selectionchange", onSelectionChange);
-
   var amudRange = amudMetadata().range();
   for (var i in amudRange) {
     requestAmud(amudRange[i], "append", {
