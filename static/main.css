@@ -38,10 +38,10 @@ html {
     line-height: 1.5em;
 }
 
-table .hebrew {
+.amudContainer .hebrew {
     width: 55%;
 }
-table .english {
+.amudContainer .english {
     width: 45%;
 }
 .line-clampable {
@@ -74,7 +74,7 @@ h1, h2 {
 }
 .english-div {
     /* TODO: don't apply this to the first line */
-    margin-top: 6px;
+    margin-top: 3.25px;
     color: #555;
 }
 #previous-amud-container, #next-amud-container {

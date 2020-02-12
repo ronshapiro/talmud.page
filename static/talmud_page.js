@@ -113,24 +113,35 @@ var englishCell = function(text) {
     + `</td>`;
 }
 
+var tableRow = function(hebrew, english, options) {
+  return [
+    (options && options.classes) ? `<tr class="${options.classes.join(" ")}">` : "<tr>",
+    hebrewCell(hebrew || ""),
+    englishCell(english || ""),
+    "</tr>"
+  ].join("");
+};
+
+
 var commentRow = function(sectionLabel, comment, commentaryKind) {
   var output = [];
-  var makeRow = function(hebrew, english) {
-    return `<tr class="${sectionLabel}-${commentaryKind.className} commentaryRow">`
-      + hebrewCell(hebrew)
-      + englishCell(english)
-      + `</tr>`;
-  }
+
+  var commentRowOptions = {
+    classes: [`${sectionLabel}-${commentaryKind.className}`, "commentaryRow"],
+  };
+  
   if (comment.category === "Tanakh" || comment.type === "mesorat hashas") {
     output.push(
-      makeRow(
+      tableRow(
         `<strong>${comment.sourceHeRef}</strong>`,
-        `<strong>${comment.ref}</strong>`));
+        `<strong>${comment.ref}</strong>`,
+        commentRowOptions));
   }
   output.push(
-    makeRow(
+    tableRow(
       comment.he,
-      typeof comment.text === "string" ? comment.text : comment.text.join("<br>")));
+      typeof comment.text === "string" ? comment.text : comment.text.join("<br>"),
+      commentRowOptions));
 
   return output.join("");
 }
@@ -148,15 +159,13 @@ var commentaryRowOutput = function(sectionLabel, commentaries) {
       var idPrefix = `${sectionLabel}-${commentaryKind.className}`;
       showButtons.push(`<a id="${idPrefix}-show-button" class="${classes} show-button" tabindex="0">${commentaryKind.hebrewName}</a>`);
       output.push(
-        `<tr>`
-          + hebrewCell(
-            `<a id="${idPrefix}-hide-button" class="${classes}" tabindex="0">${commentaryKind.hebrewName}</a>`)
-          + "</tr>");
+        tableRow(
+          `<a id="${idPrefix}-hide-button" class="${classes}" tabindex="0">${commentaryKind.hebrewName}</a>`));
 
       commentary.forEach(comment => output.push(commentRow(sectionLabel, comment, commentaryKind)));
     }
   }
-  output.push(`<tr>${hebrewCell(showButtons.join(""))}</tr>`);
+  output.push(tableRow(showButtons.join("")));
   return output.join("");
 }
 
@@ -250,10 +259,8 @@ var createAmudTable = function(amud) {
     var sectionLabel = `${amud.id}_section_${i+1}`;
 
     output.push(
-      "<tr>",
-      hebrewCell(`<div class="gemara" id="${sectionLabel}">${amud.he[i]}</div>`),
-      englishCell(amud.text[i]),
-      "</tr>");
+      tableRow(
+        `<div class="gemara" id="${sectionLabel}">${amud.he[i]}</div>`, amud.text[i]));
 
     var commentaries = amud.commentaryIndex[`${amud.book} ${amud.id}:${i+1}`];
     if (commentaries) {
@@ -268,7 +275,7 @@ var amudSectionMap = {}
 
 var requestAmud = function(amud, directionFunction, options) {
   var divId = `amud-${amud}`;
-  $("#results")[directionFunction](`<div id="${divId}">`);
+  $("#results")[directionFunction](`<div id="${divId}" class="amudContainer">`);
   var metadata = amudMetadata();
   $.ajax({url: `https://www.sefaria.org/api/texts/${metadata.masechet}.${amud}?commentary=1&context=1&pad=0&wrapLinks=1&multiple=0`,
           type: "GET",
