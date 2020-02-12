@@ -102,23 +102,25 @@ var matchingCommentaryKind = function(commentary) {
 }
 
 var hebrewCell = function(text) {
-  return `<td dir="rtl" class="hebrew">${text}</td>`;
+  return `<div dir="rtl" class="hebrew table-cell">${text}</div>`;
 }
 
 var englishCell = function(text) {
-  return `<td dir="ltr" class="english">`
+  return `<div dir="ltr" class="english table-cell">`
     + `<div class="english-div line-clampable" style="-webkit-line-clamp: 1;">`
     + text
     + `</div>`
-    + `</td>`;
+    + `</div>`;
 }
 
 var tableRow = function(hebrew, english, options) {
+  var classes = ["table-row"];
+  if (options && options.classes) classes.push(...options.classes);
   return [
-    (options && options.classes) ? `<tr class="${options.classes.join(" ")}">` : "<tr>",
+    `<div class="${classes.join(" ")}">`,
     hebrewCell(hebrew || ""),
     englishCell(english || ""),
-    "</tr>"
+    "</div>"
   ].join("");
 };
 
@@ -198,7 +200,7 @@ var setCommentaryButtons = function(amudim) {
     var createShowHide = function(show, showButton, hideButton, commentaryRows) {
       return function() {
         setVisibility(showButton, show);
-        setVisibility(hideButton.parents("tr"), !show);
+        setVisibility(hideButton.parents(".table-row"), !show);
         setVisibility(commentaryRows, !show);
 
         var sectionShowButtons = showButton.parent().children();
@@ -252,9 +254,7 @@ var referencedVersesAsLines = function(section) {
 }
 
 var createAmudTable = function(amud) {
-  var output = [
-    "<table>",
-    `<h2>${amud.title}</h2>`];
+  var output = [`<h2>${amud.title}</h2>`];
   for (var i = 0; i < amud.he.length; i++) {
     var sectionLabel = `${amud.id}_section_${i+1}`;
 
@@ -267,7 +267,6 @@ var createAmudTable = function(amud) {
       output.push(commentaryRowOutput(sectionLabel, commentaries));
     }
   }
-  output.push("</table>");
   return output.join("");
 }
 
@@ -330,7 +329,7 @@ var renderNewResults = function(amud, divId) {
   var englishTexts = amudimDivs.find(".english-div");
   // this works because we set everything to be line-clamp=1 to default, so there will only be == 1
   globalEnglishLineHeight = $(englishTexts[0]).height();
-  var rows = amudimDivs.find("tr");
+  var rows = amudimDivs.find(".table-row");
   for (var j = 0; j < rows.length; j++) {
     var row = $(rows[j])[0];
     var hebrewHeight = $(row).find(".hebrew").height();

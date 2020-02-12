@@ -2,6 +2,7 @@
     --max-width: 720px;
     --snackbar-padding: 10px;
     --background-color: white;
+    --table-cell-padding: 8px;
 }
 
 html {
@@ -38,11 +39,28 @@ html {
     line-height: 1.5em;
 }
 
+.table-row {
+    clear: both;
+}
+
+.table-cell {
+    float: left;
+    padding: 0px var(--table-cell-padding);
+}
+.amudContainer:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
 .amudContainer .hebrew {
-    width: 55%;
+    width: calc(55% - 2 * var(--table-cell-padding));
 }
 .amudContainer .english {
-    width: 45%;
+    width: calc(45% - 2 * var(--table-cell-padding));
 }
 .line-clampable {
     display: -webkit-box;
