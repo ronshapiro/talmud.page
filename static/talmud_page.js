@@ -87,6 +87,13 @@ var COMMENTARIES = [
   },
 ];
 
+var _concat = function(list1, list2) {
+  var result = [];
+  if (list1) result.push(...list1);
+  if (list2) result.push(...list2);
+  return result;
+}
+
 var matchingCommentaryKind = function(commentary) {
   var name = commentary.collectiveTitle.en;
   for (var i in COMMENTARIES) {
@@ -101,29 +108,46 @@ var matchingCommentaryKind = function(commentary) {
   }
 }
 
-var hebrewCell = function(text) {
-  return `<div dir="rtl" class="hebrew table-cell">${text}</div>`;
+var makeCell = function(text, dir, classes) {
+  classes = classes || [];
+  classes.push("table-cell");
+  var classAttribute = classes ? `class="${classes.join(" ")}"` : "";
+  return `<div dir="${dir}" ${classAttribute}>${text}</div>`;
 }
 
-var englishCell = function(text) {
-  return `<div dir="ltr" class="english table-cell">`
-    + `<div class="english-div line-clampable" style="-webkit-line-clamp: 1;">`
-    + text
-    + `</div>`
-    + `</div>`;
+var hebrewCell = function(text, classes) {
+  return makeCell(text, "rtl", _concat(["hebrew"], classes));
+}
+
+var englishCell = function(text, classes) {
+  return makeCell(
+    `<div class="english-div line-clampable" style="-webkit-line-clamp: 1;">`
+      + text
+      + `</div>`,
+    "ltr",
+    _concat(["english"], classes));
 }
 
 var tableRow = function(hebrew, english, options) {
-  var classes = ["table-row"];
-  if (options && options.classes) classes.push(...options.classes);
+  options = options || {};
+  var classes = _concat(["table-row"], options.classes);
+
+  var cellClasses = [];
+  if ((isEmptyText(hebrew) || isEmptyText(english)) &&
+     !options.overrideFullRow) {
+    cellClasses.push("fullRow");
+  }
   return [
     `<div class="${classes.join(" ")}">`,
-    hebrewCell(hebrew || ""),
-    englishCell(english || ""),
+    hebrewCell(hebrew || "", cellClasses),
+    englishCell(english || "", cellClasses),
     "</div>"
   ].join("");
 };
 
+var isEmptyText = function(stringOrList) {
+  return !stringOrList || stringOrList === "" || stringOrList.length == 0; 
+}
 
 var commentRow = function(sectionLabel, comment, commentaryKind) {
   var output = [];
@@ -162,12 +186,14 @@ var commentaryRowOutput = function(sectionLabel, commentaries) {
       showButtons.push(`<a id="${idPrefix}-show-button" class="${classes} show-button" tabindex="0">${commentaryKind.hebrewName}</a>`);
       output.push(
         tableRow(
-          `<a id="${idPrefix}-hide-button" class="${classes}" tabindex="0">${commentaryKind.hebrewName}</a>`));
+          `<a id="${idPrefix}-hide-button" class="${classes}" tabindex="0">${commentaryKind.hebrewName}</a>`,
+          "",
+          {overrideFullRow: true}));
 
       commentary.forEach(comment => output.push(commentRow(sectionLabel, comment, commentaryKind)));
     }
   }
-  output.push(tableRow(showButtons.join("")));
+  output.push(tableRow(showButtons.join(""), "", {overrideFullRow: true}));
   return output.join("");
 }
 

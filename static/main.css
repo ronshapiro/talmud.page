@@ -62,6 +62,10 @@ html {
 .amudContainer .english {
     width: calc(45% - 2 * var(--table-cell-padding));
 }
+.fullRow {
+    width: calc(100% - 2 * var(--table-cell-padding)) !important;
+}
+
 .line-clampable {
     display: -webkit-box;
     -webkit-box-orient: vertical;
