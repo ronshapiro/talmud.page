@@ -296,10 +296,29 @@ var createAmudTable = function(amud) {
   return output.join("");
 }
 
+/*
+for (var i = 0; i < gemaras.length; i++) {
+  var viewTop = $(gemaras[i]).offset().top;
+  // console.log(viewTop, window.visualViewport.pageTop, window.visualViewport.height);
+  if (viewTop >= window.visualViewport.pageTop && viewTop <= window.visualViewport.pageTop + window.visualViewport.height) {
+    console.log($(gemaras[i]).text());
+  }
+}
+*/
+
 var amudSectionMap = {}
 
 var requestAmud = function(amud, directionFunction, options) {
   var divId = `amud-${amud}`;
+  var spinner = undefined;
+  if (directionFunction === "prepend") {
+    spinner = $("#previous-spinner");
+  } else if (directionFunction === "append") {
+    spinner = $("#next-spinner");
+  } else {
+    throw "Invalid directionFunction: " + directionFunction;
+  }
+  spinner = spinner.show();
   $("#results")[directionFunction](`<div id="${divId}" class="amudContainer">`);
   var metadata = amudMetadata();
   $.ajax({url: `https://www.sefaria.org/api/texts/${metadata.masechet}.${amud}?commentary=1&context=1&pad=0&wrapLinks=1&multiple=0`,
@@ -307,6 +326,7 @@ var requestAmud = function(amud, directionFunction, options) {
           success: function(results) {
             renderNewResults(results, "#" + divId);
             refreshPageState();
+            spinner.hide();
             if (options.callback) options.callback();
           }});
   if (options.newUrl) history.pushState({}, "", options.newUrl);
@@ -314,6 +334,25 @@ var requestAmud = function(amud, directionFunction, options) {
 }
 
 var IGNORED_COMMENTARY_KINDS = new Set(["Responsa", "Philosophy", "Musar", "Chasidut"]);
+
+var onceDocumentReady = {
+  ready: false,
+  queue: [],
+  execute: function(fn) {
+    if (this.ready) {
+      fn();
+      return;
+    }
+    this.queue.push(fn);
+  },
+  declareReady: function() {
+    if (this.ready) {
+      throw "Already ready!";
+    }
+    this.ready = true;
+    this.queue.forEach(fn => fn());
+  },
+}
 
 var renderNewResults = function(amud, divId) {
   var amudimIds = [];
@@ -352,15 +391,17 @@ var renderNewResults = function(amud, divId) {
   setCommentaryButtons(amudimDivs);
   setEnglishClickListeners(amudimDivs);
 
-  var englishTexts = amudimDivs.find(".english-div");
-  // this works because we set everything to be line-clamp=1 to default, so there will only be == 1
-  globalEnglishLineHeight = $(englishTexts[0]).height();
-  var rows = amudimDivs.find(".table-row");
-  for (var j = 0; j < rows.length; j++) {
-    var row = $(rows[j])[0];
-    var hebrewHeight = $(row).find(".hebrew").height();
-    setMaxLines($(row));
-  }
+  onceDocumentReady.execute(function() {
+    var englishTexts = amudimDivs.find(".english-div");
+    // this works because we set everything to be line-clamp=1 to default, so there will only be == 1
+    globalEnglishLineHeight = $(englishTexts[0]).height();
+    var rows = amudimDivs.find(".table-row");
+    for (var j = 0; j < rows.length; j++) {
+      var row = $(rows[j])[0];
+      var hebrewHeight = $(row).find(".hebrew").height();
+      setMaxLines($(row));
+    }
+  });
 };
 
 var globalEnglishLineHeight = -1;
@@ -403,9 +444,12 @@ var amudMetadata = function() {
 var refreshPageState = function() {
   setHtmlTitle();
 
-  var metadata = amudMetadata();
-  setVisibility($("#previous-amud-container"), metadata.amudStart !== "2a");
-  setVisibility($("#next-amud-container"), true);
+  onceDocumentReady.execute(function() {
+    var metadata = amudMetadata();
+    // Note that these may still be hidden by their container if the full page hasn't loaded yet.
+    setVisibility($("#previous-amud-container"), metadata.amudStart !== "2a");
+    setVisibility($("#next-amud-container"), true);
+  });
 }
 
 var setHtmlTitle = function() {
@@ -419,14 +463,27 @@ var setHtmlTitle = function() {
 
 var main = function() {
   var amudRange = amudMetadata().range();
-  for (var i in amudRange) {
-    requestAmud(amudRange[i], "append", {
-      callback: function() {
+  var $results = $("#results");
+  $results.hide();
+  $("#previous-spinner").hide();
+
+  var requestOptions = {
+    counter: 0,
+    pageCount: amudRange.length,
+    callback: function() {
+      this.counter++;
+      if (this.counter === this.pageCount) {
+        $results.show();
+        $("#next-spinner").hide();
         if (location.hash.length > 0) {
           setTimeout(() => setWindowTop(location.hash), 10);
         }
+        onceDocumentReady.declareReady();
       }
-    });
+    }
+  }
+  for (var i in amudRange) {
+    requestAmud(amudRange[i], "append", requestOptions);
   }
 
   $("#previous-amud-container").click(addPreviousAmud);
@@ -453,7 +510,7 @@ var addPreviousAmud = function() {
 }
 
 var setWindowTop = function(selector) {
-  $(document.body).animate({scrollTop: $(selector).offset().top}, 0);
+  $("html, body").animate({scrollTop: $(selector).offset().top}, 0);
 }
 
 $(document).ready(main);

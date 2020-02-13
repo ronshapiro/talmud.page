@@ -156,3 +156,13 @@ h2 {
 .commentary_header.mesorat-hashas {
     color: rgb(124,77,255);
 }
+.text-loading-spinner {
+    display: block;
+    margin: auto;
+}
+#previous-spinner {
+    padding-top: 20px;
+}
+#next-spinner {
+    padding: 10px 0px 20px 0px;
+}
