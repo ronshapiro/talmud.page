@@ -175,8 +175,6 @@ var commentRow = function(sectionLabel, comment, commentaryKind) {
         commentRowOptions));
   }
 
-  console.log(comment);
-
   if (comment.he.length && comment.text.length
       && comment.he.length === comment.text.length) {
     for (var i = 0; i < comment.he.length; i++) {
@@ -316,16 +314,6 @@ var createAmudTable = function(amud) {
   }
   return output.join("");
 }
-
-/*
-for (var i = 0; i < gemaras.length; i++) {
-  var viewTop = $(gemaras[i]).offset().top;
-  // console.log(viewTop, window.visualViewport.pageTop, window.visualViewport.height);
-  if (viewTop >= window.visualViewport.pageTop && viewTop <= window.visualViewport.pageTop + window.visualViewport.height) {
-    console.log($(gemaras[i]).text());
-  }
-}
-*/
 
 var amudSectionMap = {}
 
@@ -502,9 +490,25 @@ var main = function() {
       if (this.counter === this.pageCount) {
         $results.show();
         $("#next-spinner").hide();
-        if (location.hash.length > 0) {
-          setTimeout(() => setWindowTop(location.hash), 10);
+
+        var scrollToSection = location.hash;
+        if (scrollToSection.length === 0) {
+          var savedSection = "#" + localStorage.restoreSectionOnRefresh;
+          if ($(savedSection).length) {
+            scrollToSection = savedSection;
+          }
         }
+        if (scrollToSection.length > 0) {
+          setTimeout(() => setWindowTop(scrollToSection), 10);
+        }
+
+        setInterval(function() {
+          var section = firstFullyOnScreenSection();
+          if (section) {
+            localStorage.setItem("restoreSectionOnRefresh", section.id);
+          }
+        }, 1000);
+
         onceDocumentReady.declareReady();
       }
     }
@@ -538,6 +542,22 @@ var addPreviousAmud = function() {
 
 var setWindowTop = function(selector) {
   $("html, body").animate({scrollTop: $(selector).offset().top}, 0);
+}
+
+var firstFullyOnScreenSection = function() {
+  var sections =
+      _concat(
+        $(".gemara"),
+        $(".amudContainer"),
+        $("#previous-amud-container"));
+  for (var i = 0; i < sections.length; i++) {
+    var viewTop = $(sections[i]).offset().top;
+    var pageTop = window.visualViewport.pageTop;
+    var pageHeight = window.visualViewport.height;
+    if (viewTop >= pageTop && viewTop <= pageTop + pageHeight) {
+      return sections[i];
+    }
+  }
 }
 
 $(document).ready(main);
