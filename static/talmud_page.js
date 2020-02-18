@@ -4,6 +4,7 @@ var COMMENTARIES = [
     hebrewName: 'תנ״ך',
     className: "psukim",
     category: "Tanakh",
+    showTitle: true,
   },
   {
     englishName: "Rashi",
@@ -60,6 +61,7 @@ var COMMENTARIES = [
     hebrewName: "שולחן ערוך",
     className: "shulchan-arukh",
     cssCategory: "ein-mishpat",
+    showTitle: true,
   },
   {
     englishName: "Mishneh Torah",
@@ -67,6 +69,7 @@ var COMMENTARIES = [
     hebrewName: "משנה תורה",
     className: "mishneh-torah",
     cssCategory: "ein-mishpat",
+    showTitle: true,
   },
   /*{
     englishName: "Sefer Mitzvot Gadol",
@@ -79,6 +82,7 @@ var COMMENTARIES = [
     type: "mesorat hashas",
     hebrewName: 'מסורת הש״ס',
     className: "mesorat-hashas",
+    showTitle: true,
   },
   {
     englishName: "Jastrow",
@@ -149,6 +153,12 @@ var isEmptyText = function(stringOrList) {
   return !stringOrList || stringOrList === "" || stringOrList.length == 0;
 }
 
+var stringOrListToString = function(stringOrList) {
+  return typeof stringOrList === "string"
+    ? stringOrList
+    : stringOrList.join("<br>");
+}
+
 var commentRow = function(sectionLabel, comment, commentaryKind) {
   var output = [];
 
@@ -156,18 +166,29 @@ var commentRow = function(sectionLabel, comment, commentaryKind) {
     classes: [`${sectionLabel}-${commentaryKind.className}`, "commentaryRow"],
   };
 
-  if (comment.category === "Tanakh" || comment.type === "mesorat hashas") {
+  if (commentaryKind.showTitle) {
     output.push(
       tableRow(
         `<strong>${comment.sourceHeRef}</strong>`,
-        `<strong>${comment.ref}</strong>`,
+        // TODO: make this non line-clampable
+        isEmptyText(comment.text) ? "" : `<strong>${comment.sourceRef}</strong>`,
         commentRowOptions));
   }
-  output.push(
-    tableRow(
-      comment.he,
-      typeof comment.text === "string" ? comment.text : comment.text.join("<br>"),
-      commentRowOptions));
+
+  console.log(comment);
+
+  if (comment.he.length && comment.text.length
+      && comment.he.length === comment.text.length) {
+    for (var i = 0; i < comment.he.length; i++) {
+      output.push(tableRow(comment.he[i], comment.text[i], commentRowOptions));
+    }
+  } else {
+    output.push(
+      tableRow(
+        stringOrListToString(comment.he),
+        stringOrListToString(comment.text),
+        commentRowOptions));
+  }
 
   return output.join("");
 }
