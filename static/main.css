@@ -39,6 +39,10 @@ html {
     line-height: 1.5em;
 }
 
+.commentaryRow .hebrew, .hebrew .commentary_header {
+    font-size: 1.1em;
+}
+
 .table-row {
     clear: both;
 }

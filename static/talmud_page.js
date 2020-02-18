@@ -381,6 +381,9 @@ var renderNewResults = function(amud, divId) {
   amud.commentaryIndex = {}
   for (var i = 0; i < amud.commentary.length; i++) {
     var commentary = amud.commentary[i];
+    if (isEmptyText(commentary.he) && isEmptyText(commentary.text)) {
+      continue;
+    }
     var id = commentary["anchorRefExpanded"][0];
     if (!amud.commentaryIndex[id]) {
       amud.commentaryIndex[id] = {};
