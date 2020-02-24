@@ -57,14 +57,16 @@ class Books(object):
 
         self._masechet_name_index = {}
         for canonical_name, aliases in MASECHTOT.items():
-            # TODO: -os
             # TODO: Remove apostrophes
-            self._masechet_name_index[canonical_name] = canonical_name
+            self._masechet_name_index[canonical_name.lower()] = canonical_name
             for alias in aliases:
-                self._masechet_name_index[alias] = canonical_name
+                self._masechet_name_index[alias.lower()] = canonical_name
+
         self._has_loaded_hebrew_masechet_names = False
 
     def canonical_masechet_name(self, name):
+        original_name = name
+        name = name.lower()
         if name in self._masechet_name_index:
             return self._masechet_name_index[name]
         if not self._has_loaded_hebrew_masechet_names:
@@ -74,7 +76,7 @@ class Books(object):
             if name in self._masechet_name_index:
                 return self._masechet_name_index[name]
 
-        return None
+        raise KeyError(original_name)
 
     def _load_hebrew_masechet_names(self):
         hebrew_names = {}

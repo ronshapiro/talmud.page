@@ -30,48 +30,59 @@ MULTIPLE_SPACES = re.compile("  +")
 AMUD_ALEPH_PERIOD = re.compile("(\d)\\.")
 AMUD_BET_COLON = re.compile("(\d):")
 
+AMUD_PATTERN = "\d{1,3}[ab\.:]"
+# TODO: check arbitrary whitespace
+MASECHET_WITH_AMUD = re.compile("(.*?) (%s)" % (AMUD_PATTERN))
+MASECHET_WITH_AMUD_RANGE = re.compile("(.*?) (%s)( to |-| - )" % (AMUD_PATTERN))
+
 @app.route("/")
 def homepage():
     return render_template("homepage.html")
+
+def _canonical_amud_format(amud):
+    return AMUD_ALEPH_PERIOD.sub(
+        "\\1a",
+        AMUD_BET_COLON.sub("\\1b", amud))
 
 @app.route("/view_daf", methods = ["POST"])
 def search_handler():
     term = request.form["search_term"].strip()
     term = MULTIPLE_SPACES.sub(" ", term)
-    term = AMUD_ALEPH_PERIOD.sub("\\1a", term)
-    term = AMUD_BET_COLON.sub("\\1b", term)
-    words = term.split(" ")
-    # TODO: this doesn't work since masechtot can be multiple words
-    masechet = books.canonical_masechet_name(words[0])
-    if masechet is None:
-        # TODO: proper error page
-        raise KeyError(masechet)
-    # TODO: verify daf exists
 
-    if words[1].count("-") is 1:
-        start,end = words[1].split("-")
-        return redirect(url_for("amud_range", masechet = masechet, start = start, end = end))
-    elif len(words) is 4 and words[2] == "to":
-        start = words[1]
-        end = words[3]
-        return redirect(url_for("amud_range", masechet = masechet, start = start, end = end))
-    return redirect(url_for("amud", masechet = masechet, amud = words[1]))
+    masechet_with_amud_range = MASECHET_WITH_AMUD_RANGE.match(term)
+    if masechet_with_amud_range:
+        masechet = masechet_with_amud_range.group(1)
+        start = masechet_with_amud_range.group(2)
+        end = masechet_with_amud_range(4)
+        return redirect(url_for("amud_range",
+                                masechet = books.canonical_masechet_name(masechet),
+                                start = _canonical_amud_format(start),
+                                end = _canonical_amud_format(end)))
+
+    masechet_with_amud = MASECHET_WITH_AMUD.match(term)
+    if masechet_with_amud:
+        masechet = masechet_with_amud.group(1)
+        amud = masechet_with_amud.group(2)
+        # TODO: should canonicalizations happen in the request handlers themselves?
+        return redirect(url_for("amud",
+                                masechet = books.canonical_masechet_name(masechet),
+                                amud = _canonical_amud_format(amud)))
+
+    # TODO: proper error page
+    # TODO: verify daf exists
+    raise KeyError(term)
 
 @app.route("/<masechet>/<amud>")
 def amud(masechet, amud):
     canonical_masechet = books.canonical_masechet_name(masechet)
-    if canonical_masechet is None:
-        pass # TODO: handle
-    elif canonical_masechet != masechet:
+    if canonical_masechet != masechet:
         return redirect(url_for("amud", masechet = canonical_masechet, amud = amud))
     return render_template("talmud_page.html", title = "%s %s" %(masechet, amud))
 
 @app.route("/<masechet>/<start>/to/<end>")
 def amud_range(masechet, start, end):
     canonical_masechet = books.canonical_masechet_name(masechet)
-    if canonical_masechet is None:
-        pass # TODO: handle
-    elif canonical_masechet != masechet:
+    if canonical_masechet != masechet:
         return redirect(url_for(
             "amud_range", masechet = canonical_masechet, start = start, end = end))
     return render_template("talmud_page.html", title = "%s %s-%s" %(masechet, start, end))
