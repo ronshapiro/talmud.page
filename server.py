@@ -91,6 +91,10 @@ def amud_range(masechet, start, end):
 def talmud_page_js(ignored):
     return send_file("static/talmud_page.js")
 
+@app.route("/js/<ignored>/preferences_page.js")
+def preferences_page_js(ignored):
+    return send_file("static/preferences_page.js")
+
 @app.route("/css/<ignored>/main.css")
 def main_css(ignored):
     return send_file("static/main.css")
@@ -178,6 +182,10 @@ def _get_verse_texts(verses):
         }
         for verse in verses
     ]
+
+@app.route("/preferences")
+def preferences():
+    return render_template("preferences.html")
 
 if __name__ == '__main__':
     app.run(threaded=True, port=5000)
