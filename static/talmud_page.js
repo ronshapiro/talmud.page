@@ -1,4 +1,10 @@
+var translationOption = localStorage.translationOption || "both";
 var COMMENTARIES = [
+  {
+    englishName: "Translation",
+    hebrewName: "Translation",
+    className: "translation",
+  },
   {
     englishName: "Verses",
     hebrewName: 'תנ״ך',
@@ -89,6 +95,11 @@ var COMMENTARIES = [
     hebrewName: "Jastrow",
     className: "jastrow",
   },
+  {
+    englishName: "Steinsaltz",
+    hebrewName: "שטיינזלץ",
+    className: "translation",
+  }
 ];
 
 var _concat = function(list1, list2) {
@@ -136,17 +147,25 @@ var tableRow = function(hebrew, english, options) {
   options = options || {};
   var classes = _concat(["table-row"], options.classes);
 
+  var output = [`<div class="${classes.join(" ")}">`];
+
   var cellClasses = [];
+
   if ((isEmptyText(hebrew) || isEmptyText(english)) &&
      !options.overrideFullRow) {
     cellClasses.push("fullRow");
   }
-  return [
-    `<div class="${classes.join(" ")}">`,
-    hebrewCell(hebrew || "", cellClasses),
-    englishCell(english || "", cellClasses),
-    "</div>"
-  ].join("");
+
+  if (!isEmptyText(hebrew)) {
+    output.push(hebrewCell(hebrew, cellClasses));
+  }
+
+  if (!isEmptyText(english)) {
+    output.push(englishCell(english, cellClasses));
+  }
+
+  output.push("</div>");
+  return output.join("");
 };
 
 var isEmptyText = function(stringOrList) {
@@ -194,6 +213,7 @@ var commentRow = function(sectionLabel, comment, commentaryKind) {
 var commentaryRowOutput = function(sectionLabel, commentaries) {
   var output = []
 
+  var tableRowOptions = translationOption !== "english-side-by-side" ? {} : {overrideFullRow: true};
   var showButtons = [];
   for (var i in COMMENTARIES) {
     var commentaryKind = COMMENTARIES[i];
@@ -207,12 +227,12 @@ var commentaryRowOutput = function(sectionLabel, commentaries) {
         tableRow(
           `<a id="${idPrefix}-hide-button" class="${classes}" tabindex="0">${commentaryKind.hebrewName}</a>`,
           "",
-          {overrideFullRow: true}));
+          tableRowOptions));
 
       commentary.forEach(comment => output.push(commentRow(sectionLabel, comment, commentaryKind)));
     }
   }
-  output.push(tableRow(showButtons.join(""), "", {overrideFullRow: true}));
+  output.push(tableRow(showButtons.join(""), "", tableRowOptions));
   return output.join("");
 }
 
@@ -302,15 +322,24 @@ var createAmudTable = function(amud) {
   var output = [`<h2>${amud.title}</h2>`];
   for (var i = 0; i < amud.he.length; i++) {
     var sectionLabel = `${amud.id}_section_${i+1}`;
+    output.push(`<div id="${sectionLabel}" class="section-container">`);
 
     output.push(
       tableRow(
-        `<div class="gemara" id="${sectionLabel}">${amud.he[i]}</div>`, amud.text[i]));
+        `<div class="gemara" id="${sectionLabel}-gemara">${amud.he[i]}</div>`,
+        translationOption === "english-side-by-side" ? amud.text[i] : undefined));
 
     var commentaries = amud.commentaryIndex[`${amud.book} ${amud.id}:${i+1}`];
+
     if (commentaries) {
+      if (translationOption === "both") {
+        commentaries.Translation = commentaries.Steinsaltz;
+        commentaries.Translation[0].text = amud.text[i];
+        delete commentaries.Steinsaltz;
+      }
       output.push(commentaryRowOutput(sectionLabel, commentaries));
     }
+    output.push("</div>");
   }
   return output.join("");
 }
@@ -379,7 +408,6 @@ var renderNewResults = function(amud, divId) {
     var sectionCommentary = amud.commentaryIndex[id];
     var commentaryKind = matchingCommentaryKind(commentary);
     // TODO: quotation
-    // TODO: Steinsaltz
     if (!commentaryKind) {
       if (!IGNORED_COMMENTARY_KINDS.has(commentary.category)) {
         // type = mesorat hashas and category = Tanakh should be aggregating commentary types
@@ -393,7 +421,7 @@ var renderNewResults = function(amud, divId) {
     }
     sectionCommentary[commentaryName].push(commentary);
   }
-
+  
   amudSectionMap[amud.id] = amud;
 
   $(divId).html(createAmudTable(amud));
@@ -405,8 +433,7 @@ var renderNewResults = function(amud, divId) {
 
   onceDocumentReady.execute(function() {
     var englishTexts = amudimDivs.find(".english-div");
-    // this works because we set everything to be line-clamp=1 to default, so there will only be == 1
-    globalEnglishLineHeight = $(englishTexts[0]).height();
+    // this works because the view has 1 character, so the height should be == 1 line.
     var rows = amudimDivs.find(".table-row");
     for (var j = 0; j < rows.length; j++) {
       var row = $(rows[j])[0];
@@ -416,12 +443,10 @@ var renderNewResults = function(amud, divId) {
   });
 };
 
-var globalEnglishLineHeight = -1;
-
 var setMaxLines = function(row) {
   var hebrew = $(row.children()[0])
   var english = $(row.find(".english-div")[0])
-  var maxLines = Math.floor(hebrew.height() / globalEnglishLineHeight);
+  var maxLines = Math.floor(hebrew.height() / english.height());
   english.css("-webkit-line-clamp", maxLines.toString());
 }
 
