@@ -25,11 +25,13 @@ var radioSection = function(title, section, items, isCheckedFunction, newValueFu
 
     var checkedAttribute = isCheckedFunction(item) ? "checked" : "";
     output.push(
+      `<div>`,
       `<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="${id}">`,
       `  <input ${checkedAttribute} class="mdl-radio__button" id="${id}" name="${section}" type="radio"`,
       `         value="${item.value}">`,
       `  <span class="mdl-radio__label">${item.displayText}</span>`,
-      `</label>`);
+      `</label>`,
+      `</div>`);
   }
 
   output.push("</div>");
@@ -37,7 +39,7 @@ var radioSection = function(title, section, items, isCheckedFunction, newValueFu
   $("#main-contents").append(output.join(""));
 
   $(`#${section} input`).click(function() {
-    newValueFunction($("#translation :checked").attr("value"));
+    newValueFunction($(`#${section} :checked`).attr("value"));
   });
 }
 
@@ -49,6 +51,22 @@ var main = function() {
                function(newValue) {
                  localStorage.translationOption = newValue;
                });
+  var showTranslationHeaderText =
+      "Show Translation Button <br><small>(translation is always available by double-clicking the "
+      + "Hebrew)</small>"
+  radioSection(showTranslationHeaderText, "show-translation", [
+    {
+      value: "yes",
+      displayText: "Yes",
+    },
+    {
+      value: "no",
+      displayText: "No",
+    }], function(item) {
+      return localStorage.showTranslationButton === item.value;
+    }, function(newValue) {
+      localStorage.showTranslationButton = newValue;
+    });
 };
 
 $(document).ready(main);

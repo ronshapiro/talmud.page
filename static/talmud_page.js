@@ -261,43 +261,45 @@ var setCommentaryButtons = function(amudim) {
     var hideButton = amudim.find(`#${label}-hide-button`);
     var commentaryRows = amudim.find(`.commentaryRow.${label}`);
 
-    // create a function that captures the loop variables
-    var createShowHide = function(show, showButton, hideButton, commentaryRows) {
-      return function() {
-        setVisibility(showButton, show);
-        setVisibility(hideButton.parents(".table-row"), !show);
-        setVisibility(commentaryRows, !show);
+    // these functions need to capture the loop variables
+    var setShownState = function(showButton, hideButton, commentaryRows) {
+      return function(show) {
+        setVisibility(showButton, !show);
+        setVisibility(hideButton.parents(".table-row"), show);
+        setVisibility(commentaryRows, show);
+      }
+    }(showButton, hideButton, commentaryRows);
 
-        var sectionShowButtons = showButton.parent().children();
-        for (var j = 0; j < sectionShowButtons.length; j++) {
-          if ($(sectionShowButtons[j]).css("display") !== "none") {
-            showButton.parent().parent().show();
-            return;
+    setShownState(false);
+
+    var clickListener = function(setShownState, commentaryRows) {
+      var show = false;
+      var maxLinesEvaluated = false;
+      return function() {
+        show = !show;
+        setShownState(show);
+
+        if (show && !maxLinesEvaluated) {
+          maxLinesEvaluated = true;
+          for (var j = 0; j < commentaryRows.length; j++) {
+            setMaxLines($(commentaryRows[j]));
           }
         }
-        showButton.parent().parent().hide();
       }
-    }
+    }(setShownState, commentaryRows);
 
-    showButton.click(createShowHide(false, showButton, hideButton, commentaryRows));
-    hideButton.click(createShowHide(true, showButton, hideButton, commentaryRows));
+    showButton.click(clickListener);
+    hideButton.click(clickListener);
     showButton.on('keypress', clickIfEnter(hideButton));
     hideButton.on('keypress', clickIfEnter(showButton));
 
-    hideButton.click();
-
-    var evaluateEnglishHeights = function(commentaryRows) {
-      return function() {
-        if (this.shown) {
-          return;
-        }
-        this.shown = true;
-        for (var j = 0; j < commentaryRows.length; j++) {
-          setMaxLines($(commentaryRows[j]));
-        }
+    if (showButton.hasClass("translation")) {
+      showButton.closest(".section-container").find(".gemara").dblclick(clickListener);
+      if (localStorage.showTranslationButton !== "yes") {
+        showButton.remove();
+        hideButton.remove();
       }
     }
-    showButton.click(evaluateEnglishHeights(commentaryRows));
   }
 };
 
@@ -422,7 +424,7 @@ var renderNewResults = function(amud, divId) {
     }
     sectionCommentary[commentaryName].push(commentary);
   }
-  
+
   amudSectionMap[amud.id] = amud;
 
   $(divId).html(createAmudTable(amud));
