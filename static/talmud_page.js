@@ -291,6 +291,7 @@ var setCommentaryButtons = function(amudim) {
         if (this.shown) {
           return;
         }
+        this.shown = true;
         for (var j = 0; j < commentaryRows.length; j++) {
           setMaxLines($(commentaryRows[j]));
         }
