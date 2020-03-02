@@ -185,6 +185,12 @@ var commentRow = function(sectionLabel, comment, commentaryKind) {
     classes: [`${sectionLabel}-${commentaryKind.className}`, "commentaryRow"],
   };
 
+  if (comment.he === comment.text) {
+    // Fix an issue where sometimes Sefaria returns the exact same text. For now, safe to assume
+    // that the equivalent text is Hebrew
+    comment.text = "";
+  }
+
   if (commentaryKind.showTitle) {
     output.push(
       tableRow(
