@@ -194,7 +194,7 @@ var commentRow = function(sectionLabel, comment, commentaryKind) {
         commentRowOptions));
   }
 
-  if (comment.he.length && comment.text.length
+  if (Array.isArray(comment.he) && Array.isArray(comment.text)
       && comment.he.length === comment.text.length) {
     for (var i = 0; i < comment.he.length; i++) {
       output.push(tableRow(comment.he[i], comment.text[i], commentRowOptions));
