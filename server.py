@@ -13,6 +13,7 @@ from tanach import Tanach
 import datetime
 import json
 import re
+import requests
 import uuid
 
 app = Flask(__name__)
@@ -103,38 +104,28 @@ def main_css(ignored):
 def page_not_found(e):
     return render_template('404_amud_not_found.html'), 404
 
-@app.route("/<masechet>/<amud>/json")
+_SEFARIA_API_FORMAT = "https://www.sefaria.org/api/texts/{masechet}.{amud}?commentary=1&context=1&pad=0&wrapLinks=1&multiple=0"
+
+# TODO: cache this
+@app.route("/api/<masechet>/<amud>")
 def amud_json(masechet, amud):
-    return amud_range_json(masechet, amud, amud)
+    sefaria_result = requests.get(_SEFARIA_API_FORMAT.format(masechet=masechet, amud=amud))
+    if sefaria_result.status_code is not 200:
+        return sefaria_result.text, 500
+    try:
+        sefaria_json = sefaria_result.json()
+    except:
+        return sefaria_result.text, 500
 
-@app.route("/<masechet>/<start>/to/<end>/json")
-def amud_range_json(masechet, start, end):
-    results = []
-    for amud in _amudim_in_range(start, end):
-        results.append(_amud_json(masechet, amud))
-    return jsonify(results)
+    result = {}
+    for i in ("he", "text", "commentary", "title", "book", "toSections"):
+        result[i] = sefaria_json[i]
 
-def _amudim_in_range(start, end):
-    start_number = int(start[:-1])
-    end_number = int(end[:-1])
-    if start == end or start_number > end_number:
-        # TODO: return error?
-        return [start]
+    return jsonify(result)
 
-    results = []
-    next_amud = start
-    while next_amud != end:
-        results.append(next_amud)
-        next_amud = _next_amud(next_amud)
-
-    results.append(end)
-    return results
-
-def _next_amud(amud):
-    number = amud[:-1]
-    if amud[-1] == "a":
-        return "%sb" % number
-    return "%sa" % (int(number) + 1)
+@app.route("/old/<masechet>/<amud>/json")
+def amud_json_old(masechet, amud):
+    return jsonify(_amud_json(masechet, amud))
 
 def _get_comments_at_label_indices(source, label_indices):
     result = []

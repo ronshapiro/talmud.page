@@ -368,7 +368,7 @@ var requestAmud = function(amud, directionFunction, options) {
   spinner = spinner.show();
   $("#results")[directionFunction](`<div id="${divId}" class="amudContainer">`);
   var metadata = amudMetadata();
-  $.ajax({url: `https://www.sefaria.org/api/texts/${metadata.masechet}.${amud}?commentary=1&context=1&pad=0&wrapLinks=1&multiple=0`,
+  $.ajax({url: `${location.origin}/api/${metadata.masechet}/${amud}`,
           type: "GET",
           success: function(results) {
             renderNewResults(results, "#" + divId);
