@@ -37,6 +37,9 @@ AMUD_PATTERN = "\d{1,3}[ab\.:]"
 MASECHET_WITH_AMUD = re.compile("(.*?) (%s)" % (AMUD_PATTERN))
 MASECHET_WITH_AMUD_RANGE = re.compile("(.*?) (%s)( to |-| - )" % (AMUD_PATTERN))
 
+HADRAN_PATTERN = re.compile("^(<br>)+<big><strong>הדרן עלך .* מסכת .*")
+BR_PREFIX = re.compile("^(<br>)+")
+
 @app.route("/")
 def homepage():
     return render_template("homepage.html")
@@ -169,12 +172,20 @@ def amud_json(masechet, amud):
             # Fix an issue where sometimes Sefaria returns the exact same text. For now, safe to
             # assume that the equivalent text is Hebrew
             comment_english = ""
+
         commentary_dict[matching_commentary_kind["englishName"]].append({
             "he": comment["he"],
-            "en": sanitize_sefaria_links(comment["text"]),
+            "en": comment_english,
             "sourceRef": comment["sourceRef"],
             "sourceHeRef": comment["sourceHeRef"],
             })
+
+    last_section = result["sections"][len(result["sections"]) - 1]
+    if HADRAN_PATTERN.findall(last_section["he"]):
+        last_section["he"] = BR_PREFIX.sub("<br>", last_section["he"])
+        last_section["en"] = ""
+        last_section["commentary"] = {}
+        last_section["hadran"] = True
 
     return jsonify(result)
 
