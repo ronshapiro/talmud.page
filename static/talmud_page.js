@@ -9,7 +9,6 @@ var COMMENTARIES = [
     englishName: "Verses",
     hebrewName: 'תנ״ך',
     className: "psukim",
-    category: "Tanakh",
     showTitle: true,
   },
   {
@@ -34,19 +33,16 @@ var COMMENTARIES = [
   },
   {
     englishName: "Maharsha",
-    englishNamePattern: /(Chidushei Halachot|Chidushei Agadot)/,
     hebrewName: 'מהרש"א',
     className: "maharsha",
   },
   {
     englishName: "Maharshal",
-    englishNamePattern: /(Chokhmat Shlomo on .*|Chokhmat Shlomo)/,
     hebrewName: 'מהרש"ל',
     className: "maharshal",
   },
   {
     englishName: "Rosh",
-    englishNamePrefix: "Rosh on ",
     hebrewName: 'רא"ש',
     className: "rosh",
   },
@@ -57,13 +53,11 @@ var COMMENTARIES = [
   },
   {
     englishName: "Rav Nissim Gaon",
-    englishNamePrefix: "Rav Nissim Gaon on ",
     hebrewName: "רבנו נסים",
     className: "rav-nissim-gaon",
   },
   {
     englishName: "Shulchan Arukh",
-    englishNamePrefix: "Shulchan Arukh, ",
     hebrewName: "שולחן ערוך",
     className: "shulchan-arukh",
     cssCategory: "ein-mishpat",
@@ -71,18 +65,11 @@ var COMMENTARIES = [
   },
   {
     englishName: "Mishneh Torah",
-    englishNamePrefix: "Mishneh Torah, ",
     hebrewName: "משנה תורה",
     className: "mishneh-torah",
     cssCategory: "ein-mishpat",
     showTitle: true,
   },
-  /*{
-    englishName: "Sefer Mitzvot Gadol",
-    hebrewName: "סמ\"ג",
-    className: "smag",
-    cssCategory: "ein-mishpat",
-  },*/
   {
     englishName: "Mesorat Hashas",
     type: "mesorat hashas",
@@ -107,20 +94,6 @@ var _concat = function(list1, list2) {
   if (list1) result.push(...list1);
   if (list2) result.push(...list2);
   return result;
-}
-
-var matchingCommentaryKind = function(commentary) {
-  var name = commentary.collectiveTitle.en;
-  for (var i in COMMENTARIES) {
-    var kind = COMMENTARIES[i];
-    if (name === kind.englishName
-        || name.startsWith(kind.englishNamePrefix)
-        || commentary.category === kind.category
-        || commentary.type === kind.type
-        || (kind.englishNamePattern && name.match(kind.englishNamePattern))) {
-      return kind;
-    }
-  }
 }
 
 var makeCell = function(text, dir, classes) {
@@ -185,10 +158,11 @@ var commentRow = function(sectionLabel, comment, commentaryKind) {
     classes: [`${sectionLabel}-${commentaryKind.className}`, "commentaryRow"],
   };
 
-  if (comment.he === comment.text) {
+  if (comment.he === comment.en) {
+    // TODO: move to server
     // Fix an issue where sometimes Sefaria returns the exact same text. For now, safe to assume
     // that the equivalent text is Hebrew
-    comment.text = "";
+    comment.en = "";
   }
 
   if (commentaryKind.showTitle) {
@@ -196,20 +170,20 @@ var commentRow = function(sectionLabel, comment, commentaryKind) {
       tableRow(
         `<strong>${comment.sourceHeRef}</strong>`,
         // TODO: make this non line-clampable
-        isEmptyText(comment.text) ? "" : `<strong>${comment.sourceRef}</strong>`,
+        isEmptyText(comment.en) ? "" : `<strong>${comment.sourceRef}</strong>`,
         commentRowOptions));
   }
 
-  if (Array.isArray(comment.he) && Array.isArray(comment.text)
-      && comment.he.length === comment.text.length) {
+  if (Array.isArray(comment.he) && Array.isArray(comment.en)
+      && comment.he.length === comment.en.length) {
     for (var i = 0; i < comment.he.length; i++) {
-      output.push(tableRow(comment.he[i], comment.text[i], commentRowOptions));
+      output.push(tableRow(comment.he[i], comment.en[i], commentRowOptions));
     }
   } else {
     output.push(
       tableRow(
         stringOrListToString(comment.he),
-        stringOrListToString(comment.text),
+        stringOrListToString(comment.en),
         commentRowOptions));
   }
 
@@ -329,21 +303,22 @@ var referencedVersesAsLines = function(section) {
 
 var createAmudTable = function(amud) {
   var output = [`<h2>${amud.title}</h2>`];
-  for (var i = 0; i < amud.he.length; i++) {
+  for (var i = 0; i < amud.sections.length; i++) {
+    var section = amud.sections[i];
     var sectionLabel = `${amud.id}_section_${i+1}`;
     output.push(`<div id="${sectionLabel}" class="section-container">`);
 
     output.push(
       tableRow(
-        `<div class="gemara" id="${sectionLabel}-gemara">${amud.he[i]}</div>`,
-        translationOption === "english-side-by-side" ? amud.text[i] : undefined));
+        `<div class="gemara" id="${sectionLabel}-gemara">${section.he}</div>`,
+        translationOption === "english-side-by-side" ? section.en : undefined));
 
-    var commentaries = amud.commentaryIndex[`${amud.book} ${amud.id}:${i+1}`];
+    var commentaries = section.commentary;
 
     if (commentaries) {
       if (translationOption === "both") {
         commentaries.Translation = commentaries.Steinsaltz;
-        commentaries.Translation[0].text = amud.text[i];
+        commentaries.Translation[0].en = section.en;
         delete commentaries.Steinsaltz;
       }
       output.push(commentaryRowOutput(sectionLabel, commentaries));
@@ -380,8 +355,6 @@ var requestAmud = function(amud, directionFunction, options) {
   refreshPageState();
 }
 
-var IGNORED_COMMENTARY_KINDS = new Set(["Responsa", "Philosophy", "Musar", "Chasidut"]);
-
 var onceDocumentReady = {
   ready: false,
   queue: [],
@@ -402,48 +375,18 @@ var onceDocumentReady = {
 }
 
 var renderNewResults = function(amud, divId) {
-  var amudimIds = [];
-  amud.id = amud["toSections"][0]; // "2a"
-  amud.commentaryIndex = {}
-  for (var i = 0; i < amud.commentary.length; i++) {
-    var commentary = amud.commentary[i];
-    if (isEmptyText(commentary.he) && isEmptyText(commentary.text)) {
-      continue;
-    }
-    var id = commentary["anchorRefExpanded"][0];
-    if (!amud.commentaryIndex[id]) {
-      amud.commentaryIndex[id] = {};
-    }
-    var sectionCommentary = amud.commentaryIndex[id];
-    var commentaryKind = matchingCommentaryKind(commentary);
-    // TODO: quotation
-    if (!commentaryKind) {
-      if (!IGNORED_COMMENTARY_KINDS.has(commentary.category)) {
-        // type = mesorat hashas and category = Tanakh should be aggregating commentary types
-        console.log(commentary["collectiveTitle"]["en"], commentary["category"], commentary["type"]);
-      }
-      continue;
-    }
-    var commentaryName = commentaryKind.englishName;
-    if (!sectionCommentary[commentaryName]) {
-      sectionCommentary[commentaryName] = [];
-    }
-    sectionCommentary[commentaryName].push(commentary);
-  }
-
   amudSectionMap[amud.id] = amud;
 
   $(divId).html(createAmudTable(amud));
-  amudimIds.push(`#amud-${amud.id}`);
 
-  var amudimDivs = $(amudimIds.join(","));
-  setCommentaryButtons(amudimDivs);
-  setEnglishClickListeners(amudimDivs);
+  var amudDiv = $(`#amud-${amud.id}`);
+  setCommentaryButtons(amudDiv);
+  setEnglishClickListeners(amudDiv);
 
   onceDocumentReady.execute(function() {
-    var englishTexts = amudimDivs.find(".english-div");
+    var englishTexts = amudDiv.find(".english-div");
     // this works because the view has 1 character, so the height should be == 1 line.
-    var rows = amudimDivs.find(".table-row");
+    var rows = amudDiv.find(".table-row");
     for (var j = 0; j < rows.length; j++) {
       var row = $(rows[j])[0];
       var hebrewHeight = $(row).find(".hebrew").height();

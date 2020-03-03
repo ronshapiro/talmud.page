@@ -104,7 +104,7 @@ def main_css(ignored):
 def page_not_found(e):
     return render_template('404_amud_not_found.html'), 404
 
-_SEFARIA_API_FORMAT = "https://www.sefaria.org/api/texts/{masechet}.{amud}?commentary=1&context=1&pad=0&wrapLinks=1&multiple=0"
+_SEFARIA_API_FORMAT = "https://sefaria.org/api/texts/{masechet}.{amud}?commentary=1&context=1&pad=0&wrapLinks=1&multiple=0"
 
 # TODO: cache this
 @app.route("/api/<masechet>/<amud>")
@@ -117,11 +117,131 @@ def amud_json(masechet, amud):
     except:
         return sefaria_result.text, 500
 
-    result = {}
-    for i in ("he", "text", "commentary", "title", "book", "toSections"):
+    result = {"id": amud}
+    # TODO: review what's in this list:
+    for i in (# "he", "text", "commentary",
+              "title", "book", "toSections"):
         result[i] = sefaria_json[i]
 
+    hebrew = sefaria_json["he"]
+    english = sefaria_json["text"]
+
+    if len(hebrew) != len(english):
+        return "Hebrew length != English length: %s" %(sefaria_result.text), 500
+
+    result["sections"] = []
+    for i in range(len(hebrew)):
+        result["sections"].append({
+            "he": hebrew[i],
+            "en": english[i],
+            "commentary": {},
+            })
+
+    section_prefix = "%s %s:" %(sefaria_json["book"], amud)
+    for comment in sefaria_json["commentary"]:
+        if len(comment["he"]) is 0 and \
+           len(comment["text"]) is 0:
+            continue
+
+        # TODO: question: if this spans multiple sections, is placing it in the first always correct?
+        section = int(comment["anchorRefExpanded"][0][len(section_prefix):]) - 1
+
+        if section >= len(result["sections"]):
+            print("Unplaceable comment:", comment["sourceRef"], comment["anchorRefExpanded"])
+            continue
+
+        commentary_dict = result["sections"][section]["commentary"]
+        matching_commentary_kind = _matching_commentary_kind(comment)
+        if not matching_commentary_kind:
+            continue
+
+        if matching_commentary_kind["englishName"] not in commentary_dict:
+            commentary_dict[matching_commentary_kind["englishName"]] = []
+
+        commentary_dict[matching_commentary_kind["englishName"]].append({
+            "he": comment["he"],
+            "en": comment["text"],
+            "sourceRef": comment["sourceRef"],
+            "sourceHeRef": comment["sourceHeRef"],
+            })
+
     return jsonify(result)
+
+def has_matching_property(first, second, property_name):
+    return property_name in first and \
+        property_name in second and \
+        first[property_name] == second[property_name]
+
+_COMMENTARIES = [
+  {
+    "englishName": "Translation",
+  },
+  {
+    "englishName": "Verses",
+    "category": "Tanakh",
+  },
+  {
+    "englishName": "Rashi",
+  },
+  {
+    "englishName": "Tosafot",
+  },
+  {
+    "englishName": "Ramban",
+  },
+  {
+    "englishName": "Rashba",
+  },
+  {
+    "englishName": "Maharsha",
+    "englishNamePattern": re.compile("(Chidushei Halachot|Chidushei Agadot)"),
+  },
+  {
+    "englishName": "Maharshal",
+    "englishNamePattern": re.compile("(Chokhmat Shlomo on .*|Chokhmat Shlomo)"),
+  },
+  {
+    "englishName": "Rosh",
+    "englishNamePattern": re.compile("^Rosh on "),
+  },
+  {
+    "englishName": "Ritva",
+  },
+  {
+    "englishName": "Rav Nissim Gaon",
+    "englishNamePattern": re.compile("^Rav Nissim Gaon on "),
+  },
+  {
+    "englishName": "Shulchan Arukh",
+    "englishNamePattern": re.compile("^Shulchan Arukh, "),
+  },
+  {
+    "englishName": "Mishneh Torah",
+    "englishNamePattern": re.compile("^Mishneh Torah, "),
+  },
+#  {
+#    "englishName": "Sefer Mitzvot Gadol",
+#  },
+  {
+    "englishName": "Mesorat Hashas",
+    "type": "mesorat hashas",
+  },
+  {
+    "englishName": "Jastrow",
+  },
+  {
+    "englishName": "Steinsaltz",
+  }
+];
+
+def _matching_commentary_kind(comment):
+    name = comment["collectiveTitle"]["en"]
+    for kind in _COMMENTARIES:
+        if name == kind["englishName"] or \
+           has_matching_property(comment, kind, "category") or \
+           has_matching_property(comment, kind, "type") or \
+           "englishNamePattern" in kind and kind["englishNamePattern"].findall(name):
+            return kind
 
 @app.route("/old/<masechet>/<amud>/json")
 def amud_json_old(masechet, amud):
