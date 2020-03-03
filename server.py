@@ -104,12 +104,18 @@ def main_css(ignored):
 def page_not_found(e):
     return render_template('404_amud_not_found.html'), 404
 
-_SEFARIA_API_FORMAT = "https://sefaria.org/api/texts/{masechet}.{amud}?commentary=1&context=1&pad=0&wrapLinks=1&multiple=0"
-
 # TODO: cache this
 @app.route("/api/<masechet>/<amud>")
 def amud_json(masechet, amud):
-    sefaria_result = requests.get(_SEFARIA_API_FORMAT.format(masechet=masechet, amud=amud))
+    sefaria_result = requests.get(
+        "https://sefaria.org/api/texts/{masechet}.{amud}".format(masechet=masechet, amud=amud),
+        # "context", "pad", and "multiple" are specified by Sefaria, but it's unclear what they do
+        params = {
+            "commentary": "1",
+            # Even with wrapLinks=0, Jastrow is still wrapped. It's probably best to just rewrite
+            # these all to Sefaria until there's a better option
+            "wrapLinks": "1",
+        })
     if sefaria_result.status_code is not 200:
         return sefaria_result.text, 500
     try:
