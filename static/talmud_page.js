@@ -18,6 +18,12 @@ var COMMENTARIES = [
     showTitle: true,
   },
   {
+    englishName: "Tosefta",
+    hebrewName: "תוספתא",
+    className: "tosefta",
+    showTitle: true,
+  },
+  {
     englishName: "Rashi",
     hebrewName: 'רש"י',
     className: "rashi",

@@ -159,6 +159,7 @@ def amud_json(masechet, amud):
         commentary_dict = result["sections"][section]["commentary"]
         matching_commentary_kind = _matching_commentary_kind(comment)
         if not matching_commentary_kind:
+            print(comment["sourceRef"])
             continue
 
         if matching_commentary_kind["englishName"] not in commentary_dict:
@@ -189,6 +190,10 @@ _COMMENTARIES = [
     {
         "englishName": "Mishnah",
         "category": "Mishnah",
+    },
+    {
+        "englishName": "Tosefta",
+        "englishNamePattern": re.compile("^Tosefta "),
     },
     {
         "englishName": "Rashi",

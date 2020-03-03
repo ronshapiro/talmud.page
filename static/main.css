@@ -151,7 +151,10 @@ h2 {
     justify-content: space-between;
 }
 
-.commentary_header.psukim, .commentary_header.mishna, .commentary_header.jastrow {
+.commentary_header.psukim,
+.commentary_header.mishna,
+.commentary_header.tosefta,
+.commentary_header.jastrow {
     color: gray;
 }
 .commentary_header.ein-mishpat {
