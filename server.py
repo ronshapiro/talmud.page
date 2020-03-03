@@ -9,6 +9,7 @@ from flask import render_template
 from flask import request
 from flask import send_file
 from flask import url_for
+from link_sanitizer import sanitize_sefaria_links
 from tanach import Tanach
 import datetime
 import json
@@ -112,9 +113,9 @@ def amud_json(masechet, amud):
         # "context", "pad", and "multiple" are specified by Sefaria, but it's unclear what they do
         params = {
             "commentary": "1",
-            # Even with wrapLinks=0, Jastrow is still wrapped. It's probably best to just rewrite
-            # these all to Sefaria until there's a better option
-            "wrapLinks": "1",
+            # Even with wrapLinks=1, Jastrow (and perhaps more) is still wrapped. Instead, an active
+            # filtering is performed just in case.
+            "wrapLinks": "0",
         })
     if sefaria_result.status_code is not 200:
         return sefaria_result.text, 500
@@ -124,9 +125,8 @@ def amud_json(masechet, amud):
         return sefaria_result.text, 500
 
     result = {"id": amud}
-    # TODO: review what's in this list:
-    for i in (# "he", "text", "commentary",
-              "title", "book", "toSections"):
+
+    for i in ["title"]:
         result[i] = sefaria_json[i]
 
     hebrew = sefaria_json["he"]
@@ -139,7 +139,7 @@ def amud_json(masechet, amud):
     for i in range(len(hebrew)):
         result["sections"].append({
             "he": hebrew[i],
-            "en": english[i],
+            "en": sanitize_sefaria_links(english[i]),
             "commentary": {},
             })
 
@@ -166,7 +166,7 @@ def amud_json(masechet, amud):
 
         commentary_dict[matching_commentary_kind["englishName"]].append({
             "he": comment["he"],
-            "en": comment["text"],
+            "en": sanitize_sefaria_links(comment["text"]),
             "sourceRef": comment["sourceRef"],
             "sourceHeRef": comment["sourceHeRef"],
             })
