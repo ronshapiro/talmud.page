@@ -159,12 +159,16 @@ def amud_json(masechet, amud):
         commentary_dict = result["sections"][section]["commentary"]
         matching_commentary_kind = _matching_commentary_kind(comment)
         if not matching_commentary_kind:
-            print(comment["sourceRef"])
             continue
 
         if matching_commentary_kind["englishName"] not in commentary_dict:
             commentary_dict[matching_commentary_kind["englishName"]] = []
 
+        comment_english = sanitize_sefaria_links(comment["text"])
+        if comment["he"] == comment_english:
+            # Fix an issue where sometimes Sefaria returns the exact same text. For now, safe to
+            # assume that the equivalent text is Hebrew
+            comment_english = ""
         commentary_dict[matching_commentary_kind["englishName"]].append({
             "he": comment["he"],
             "en": sanitize_sefaria_links(comment["text"]),

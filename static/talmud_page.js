@@ -1,3 +1,43 @@
+var LAST_AMUD_PER_MASECHET = {
+  "Arakhin": "34a",
+  "Avodah Zarah": "76b",
+  "Bava Batra": "176b",
+  "Bava Kamma": "119b",
+  "Bava Metzia": "119a",
+  "Beitzah": "40b",
+  "Bekhorot": "61a",
+  "Berakhot": "64a",
+  "Chagigah": "27a",
+  "Chullin": "142a",
+  "Eruvin": "105a",
+  "Gittin": "90b",
+  "Horayot": "14a",
+  "Keritot": "28b",
+  "Ketubot": "112b",
+  "Kiddushin": "82b",
+  "Makkot": "24b",
+  "Megillah": "32a",
+  "Meilah": "22a",
+  "Menachot": "110a",
+  "Moed Katan": "29a",
+  "Nazir": "66b",
+  "Nedarim": "91b",
+  "Niddah": "73a",
+  "Pesachim": "121b",
+  "Rosh Hashanah": "35a",
+  "Sanhedrin": "113b",
+  "Shabbat": "157b",
+  "Shevuot": "49b",
+  "Sotah": "49b",
+  "Sukkah": "56b",
+  "Taanit": "31a",
+  "Tamid": "33b",
+  "Temurah": "34a",
+  "Yevamot": "122b",
+  "Yoma": "88a",
+  "Zevachim": "120b",
+}
+
 var translationOption = localStorage.translationOption || "both";
 var COMMENTARIES = [
   {
@@ -170,18 +210,10 @@ var commentRow = function(sectionLabel, comment, commentaryKind) {
     classes: [`${sectionLabel}-${commentaryKind.className}`, "commentaryRow"],
   };
 
-  if (comment.he === comment.en) {
-    // TODO: move to server
-    // Fix an issue where sometimes Sefaria returns the exact same text. For now, safe to assume
-    // that the equivalent text is Hebrew
-    comment.en = "";
-  }
-
   if (commentaryKind.showTitle) {
     output.push(
       tableRow(
         `<strong>${comment.sourceHeRef}</strong>`,
-        // TODO: make this non line-clampable
         isEmptyText(comment.en) ? "" : `<strong>${comment.sourceRef}</strong>`,
         commentRowOptions));
   }
@@ -458,7 +490,7 @@ var refreshPageState = function() {
     var metadata = amudMetadata();
     // Note that these may still be hidden by their container if the full page hasn't loaded yet.
     setVisibility($("#previous-amud-container"), metadata.amudStart !== "2a");
-    setVisibility($("#next-amud-container"), true);
+    setVisibility($("#next-amud-container"), metadata.amudEnd !== LAST_AMUD_PER_MASECHET[metdata.masechet]);
 
     $("#previous-amud-button").text(`Load ${computePreviousAmud(metadata.amudStart)}`);
     $("#next-amud-button").text(`Load ${computeNextAmud(metadata.amudEnd)}`);
@@ -526,7 +558,6 @@ var main = function() {
 
 var addNextAmud = function() {
   var metadata = amudMetadata();
-  // TODO: hardcode final amudim
   var nextAmud = computeNextAmud(metadata.amudEnd);
   requestAmud(nextAmud, "append", {
     newUrl: `${location.origin}/${metadata.masechet}/${metadata.amudStart}/to/${nextAmud}`
@@ -540,7 +571,6 @@ var addNextAmud = function() {
 
 var addPreviousAmud = function() {
   var metadata = amudMetadata();
-  if (metadata.amudStart === "2a") return;
   var previousAmud = computePreviousAmud(metadata.amudStart);
   requestAmud(previousAmud, "prepend", {
     newUrl: `${location.origin}/${metadata.masechet}/${previousAmud}/to/${metadata.amudEnd}`,
