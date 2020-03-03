@@ -207,11 +207,12 @@ var commentaryRowOutput = function(sectionLabel, commentaries) {
 
     if (commentary) {
       var classes = ["commentary_header", commentaryKind.className, commentaryKind.cssCategory].join(" ");
+      var extraAttrs = `tabindex="0" data-commentary="${commentaryKind.englishName}" data-section-label="${sectionLabel}"`
       var idPrefix = `${sectionLabel}-${commentaryKind.className}`;
-      showButtons.push(`<a id="${idPrefix}-show-button" class="${classes} show-button" tabindex="0">${commentaryKind.hebrewName}</a>`);
+      showButtons.push(`<a id="${idPrefix}-show-button" class="${classes} show-button" ${extraAttrs}>${commentaryKind.hebrewName}</a>`);
       output.push(
         tableRow(
-          `<a id="${idPrefix}-hide-button" class="${classes}" tabindex="0">${commentaryKind.hebrewName}</a>`,
+          `<a id="${idPrefix}-hide-button" class="${classes}" ${extraAttrs}>${commentaryKind.hebrewName}</a>`,
           "",
           tableRowOptions));
 
@@ -238,14 +239,14 @@ var clickIfEnter = function(alternateButton) {
   }
 }
 
-var setCommentaryButtons = function(amudim) {
-  var showButtons = amudim.find(".show-button");
+var setCommentaryButtons = function(amud) {
+  var showButtons = amud.find(".show-button");
   for (var i = 0; i < showButtons.length; i++) {
     var showButton = showButtons[i];
     var label = showButton.id.replace("-show-button", "");
     showButton = $(showButton); // after using .id to get the label, convert to a jQuery object
-    var hideButton = amudim.find(`#${label}-hide-button`);
-    var commentaryRows = amudim.find(`.commentaryRow.${label}`);
+    var hideButton = amud.find(`#${label}-hide-button`);
+    var commentaryRows = amud.find(`.commentaryRow.${label}`);
 
     // these functions need to capture the loop variables
     var setShownState = function(showButton, hideButton, commentaryRows) {
@@ -261,7 +262,7 @@ var setCommentaryButtons = function(amudim) {
     var clickListener = function(setShownState, commentaryRows) {
       var show = false;
       var maxLinesEvaluated = false;
-      return function() {
+      return function(event) {
         show = !show;
         setShownState(show);
 
@@ -271,6 +272,11 @@ var setCommentaryButtons = function(amudim) {
             setMaxLines($(commentaryRows[j]));
           }
         }
+        var element = $(event.toElement);
+        gtag("event", "commentary_viewed", {
+          commentary: element.data("commentary"),
+          section: element.data("section-label"),
+        });
       }
     }(setShownState, commentaryRows);
 
@@ -356,6 +362,9 @@ var requestAmud = function(amud, directionFunction, options) {
             refreshPageState();
             spinner.hide();
             if (options.callback) options.callback();
+            gtag("event", "amud_loaded", {
+              amud: amud,
+            });
           }});
   if (options.newUrl) history.pushState({}, "", options.newUrl);
   refreshPageState();
@@ -460,7 +469,12 @@ var setHtmlTitle = function() {
 }
 
 var main = function() {
-  var amudRange = amudMetadata().range();
+  var metadata = amudMetadata();
+  gtag("set", {
+    "masechet": metadata.masechet,
+  });
+
+  var amudRange = metadata.range();
   var $results = $("#results");
   $results.hide();
   $("#previous-spinner").hide();
@@ -511,6 +525,11 @@ var addNextAmud = function() {
   requestAmud(nextAmud, "append", {
     newUrl: `${location.origin}/${metadata.masechet}/${metadata.amudStart}/to/${nextAmud}`
   });
+
+  gtag("event", "load_amud", {
+    direction: "next",
+    amud: nextAmud,
+  });
 }
 
 var addPreviousAmud = function() {
@@ -520,6 +539,11 @@ var addPreviousAmud = function() {
   requestAmud(previousAmud, "prepend", {
     newUrl: `${location.origin}/${metadata.masechet}/${previousAmud}/to/${metadata.amudEnd}`,
     callback: () => setTimeout(() => setWindowTop("#amud-" + metadata.amudStart), 10)
+  });
+
+  gtag("event", "load_amud", {
+    direction: "previous",
+    amud: previousAmud,
   });
 }
 
