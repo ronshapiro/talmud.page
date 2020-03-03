@@ -179,65 +179,69 @@ def has_matching_property(first, second, property_name):
         first[property_name] == second[property_name]
 
 _COMMENTARIES = [
-  {
-    "englishName": "Translation",
-  },
-  {
-    "englishName": "Verses",
-    "category": "Tanakh",
-  },
-  {
-    "englishName": "Rashi",
-  },
-  {
-    "englishName": "Tosafot",
-  },
-  {
-    "englishName": "Ramban",
-  },
-  {
-    "englishName": "Rashba",
-  },
-  {
-    "englishName": "Maharsha",
-    "englishNamePattern": re.compile("(Chidushei Halachot|Chidushei Agadot)"),
-  },
-  {
-    "englishName": "Maharshal",
-    "englishNamePattern": re.compile("(Chokhmat Shlomo on .*|Chokhmat Shlomo)"),
-  },
-  {
-    "englishName": "Rosh",
-    "englishNamePattern": re.compile("^Rosh on "),
-  },
-  {
-    "englishName": "Ritva",
-  },
-  {
-    "englishName": "Rav Nissim Gaon",
-    "englishNamePattern": re.compile("^Rav Nissim Gaon on "),
-  },
-  {
-    "englishName": "Shulchan Arukh",
-    "englishNamePattern": re.compile("^Shulchan Arukh, "),
-  },
-  {
-    "englishName": "Mishneh Torah",
-    "englishNamePattern": re.compile("^Mishneh Torah, "),
-  },
-#  {
-#    "englishName": "Sefer Mitzvot Gadol",
-#  },
-  {
-    "englishName": "Mesorat Hashas",
-    "type": "mesorat hashas",
-  },
-  {
-    "englishName": "Jastrow",
-  },
-  {
-    "englishName": "Steinsaltz",
-  }
+    {
+        "englishName": "Translation",
+    },
+    {
+        "englishName": "Verses",
+        "category": "Tanakh",
+    },
+    {
+        "englishName": "Mishnah",
+        "category": "Mishnah",
+    },
+    {
+        "englishName": "Rashi",
+    },
+    {
+        "englishName": "Tosafot",
+    },
+    {
+        "englishName": "Ramban",
+    },
+    {
+        "englishName": "Rashba",
+    },
+    {
+        "englishName": "Maharsha",
+        "englishNamePattern": re.compile("(Chidushei Halachot|Chidushei Agadot)"),
+    },
+    {
+        "englishName": "Maharshal",
+        "englishNamePattern": re.compile("(Chokhmat Shlomo on .*|Chokhmat Shlomo)"),
+    },
+    {
+        "englishName": "Rosh",
+        "englishNamePattern": re.compile("^Rosh on "),
+    },
+    {
+        "englishName": "Ritva",
+    },
+    {
+        "englishName": "Rav Nissim Gaon",
+        "englishNamePattern": re.compile("^Rav Nissim Gaon on "),
+    },
+    {
+        "englishName": "Shulchan Arukh",
+        "englishNamePattern": re.compile("^Shulchan Arukh, "),
+    },
+    {
+        "englishName": "Mishneh Torah",
+        "englishNamePattern": re.compile("^Mishneh Torah, "),
+    },
+    #  {
+    #    "englishName": "Sefer Mitzvot Gadol",
+    #  },
+    {
+        "englishName": "Mesorat Hashas",
+        "type": "mesorat hashas",
+    },
+    {
+        "englishName": "Jastrow",
+    },
+    {
+        "englishName": "Steinsaltz",
+    }
 ];
 
 def _matching_commentary_kind(comment):
