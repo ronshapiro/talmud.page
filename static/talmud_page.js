@@ -497,7 +497,7 @@ var refreshPageState = function() {
     var metadata = amudMetadata();
     // Note that these may still be hidden by their container if the full page hasn't loaded yet.
     setVisibility($("#previous-amud-container"), metadata.amudStart !== "2a");
-    setVisibility($("#next-amud-container"), metadata.amudEnd !== LAST_AMUD_PER_MASECHET[metdata.masechet]);
+    setVisibility($("#next-amud-container"), metadata.amudEnd !== LAST_AMUD_PER_MASECHET[metadata.masechet]);
 
     $("#previous-amud-button").text(`Load ${computePreviousAmud(metadata.amudStart)}`);
     $("#next-amud-button").text(`Load ${computeNextAmud(metadata.amudEnd)}`);
