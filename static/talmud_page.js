@@ -134,12 +134,19 @@ var COMMENTARIES = [
     hebrewName: "Jastrow",
     className: "jastrow",
   },
-  {
-    englishName: "Steinsaltz",
-    hebrewName: "שטיינזלץ",
-    className: "translation",
-  }
 ];
+
+var STEINSALTZ = {
+  englishName: "Steinsaltz",
+  hebrewName: "שטיינזלץ",
+  className: "translation",
+};
+
+if (localStorage.showTranslationButton === "yes") {
+  COMMENTARIES.push(STEINSALTZ);
+} else {
+  COMMENTARIES.unshift(STEINSALTZ);
+}
 
 var _concat = function(list1, list2) {
   var result = [];
