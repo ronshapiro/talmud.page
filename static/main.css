@@ -177,3 +177,10 @@ h2 {
 .mdl-button {
     text-transform: none;
 }
+
+.section-container::after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 10px;
+}
