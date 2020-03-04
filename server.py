@@ -37,7 +37,7 @@ AMUD_PATTERN = "\d{1,3}[ab\.:]"
 MASECHET_WITH_AMUD = re.compile("(.*?) (%s)" % (AMUD_PATTERN))
 MASECHET_WITH_AMUD_RANGE = re.compile("(.*?) (%s)( to |-| - )" % (AMUD_PATTERN))
 
-HADRAN_PATTERN = re.compile("^(<br>)+<big><strong>הדרן עלך .* מסכת .*")
+HADRAN_PATTERN = re.compile("^(<br>)+<big><strong>הדרן עלך .*")
 BR_PREFIX = re.compile("^(<br>)+")
 
 @app.route("/")

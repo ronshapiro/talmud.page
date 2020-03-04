@@ -375,7 +375,10 @@ var createAmudTable = function(amud) {
     if (commentaries) {
       if (translationOption === "both") {
         commentaries.Translation = commentaries.Steinsaltz;
-        commentaries.Translation[0].en = section.en;
+        if (commentaries.Translation) {
+          // e.g. Hadran sections have no steinsaltz
+          commentaries.Translation[0].en = section.en;
+        }
         delete commentaries.Steinsaltz;
       }
       output.push(commentaryRowOutput(sectionLabel, commentaries));
