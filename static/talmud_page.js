@@ -331,7 +331,7 @@ var setCommentaryButtons = function(amud) {
     hideButton.on('keypress', clickIfEnter(showButton));
 
     if (showButton.hasClass("translation")) {
-      showButton.closest(".section-container").find(".gemara").dblclick(clickListener);
+      showButton.closest(".section-container").find(".gemara").betterDoubleClick(clickListener);
       if (localStorage.showTranslationButton !== "yes") {
         showButton.remove();
         hideButton.remove();
@@ -344,7 +344,7 @@ var setEnglishClickListeners = function(amudim) {
   var sections = amudim.find(".english-div");
   for (var i = 0; i < sections.length; i++) {
     var section = $(sections[i]);
-    section.dblclick(englishClickListener(section));
+    section.betterDoubleClick(englishClickListener(section));
   }
 };
 
@@ -618,5 +618,25 @@ var firstFullyOnScreenSection = function() {
     }
   }
 }
+
+jQuery.fn.extend({
+  betterDoubleClick: function(fn) {
+    if (!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)) {
+      this.click(function(event) {
+        var lastTime = this.lastTime || 0;
+        var now = new Date().getTime();
+        if (now - lastTime <= 1000) {
+          fn(event);
+          this.lastTime = 0;
+        } else {
+          this.lastTime = now;
+        }
+      });
+    } else {
+      this.dblclick(fn);
+    }
+    return this;
+  }
+});
 
 $(document).ready(main);
