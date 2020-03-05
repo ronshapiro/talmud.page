@@ -391,6 +391,7 @@ var createAmudTable = function(amud) {
 var amudSectionMap = {}
 
 var requestAmud = function(amud, directionFunction, options) {
+  options = options || {}
   var divId = `amud-${amud}`;
   var spinner = undefined;
   if (directionFunction === "prepend") {
@@ -413,6 +414,11 @@ var requestAmud = function(amud, directionFunction, options) {
             gtag("event", "amud_loaded", {
               amud: amud,
             });
+          },
+          error: function() {
+            options.retryCount = options.retryCount || 0;
+            options.retryCount++;
+            setTimeout(() => requestAmud(amud, directionFunction, options), options.retryCount;
           }});
   if (options.newUrl) history.pushState({}, "", options.newUrl);
   refreshPageState();
