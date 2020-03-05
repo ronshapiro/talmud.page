@@ -418,7 +418,7 @@ var requestAmud = function(amud, directionFunction, options) {
           error: function() {
             options.retryCount = options.retryCount || 0;
             options.retryCount++;
-            setTimeout(() => requestAmud(amud, directionFunction, options), options.retryCount;
+            setTimeout(() => requestAmud(amud, directionFunction, options), options.retryCount);
           }});
   if (options.newUrl) history.pushState({}, "", options.newUrl);
   refreshPageState();

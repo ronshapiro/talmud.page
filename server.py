@@ -36,7 +36,7 @@ AMUD_BET_COLON = re.compile("(\d):")
 AMUD_PATTERN = "\d{1,3}[ab\.:]"
 # TODO: check arbitrary whitespace
 MASECHET_WITH_AMUD = re.compile("(.*?) (%s)" % (AMUD_PATTERN))
-MASECHET_WITH_AMUD_RANGE = re.compile("(.*?) (%s)( to |-| - )" % (AMUD_PATTERN))
+MASECHET_WITH_AMUD_RANGE = re.compile("(.*?) (%s)( to |-| - )(%s)" % (AMUD_PATTERN, AMUD_PATTERN))
 
 HADRAN_PATTERN = re.compile("^(<br>)+<big><strong>הדרן עלך .*")
 BR_PREFIX = re.compile("^(<br>)+")
@@ -59,7 +59,7 @@ def search_handler():
     if masechet_with_amud_range:
         masechet = masechet_with_amud_range.group(1)
         start = masechet_with_amud_range.group(2)
-        end = masechet_with_amud_range(4)
+        end = masechet_with_amud_range.group(4)
         return redirect(url_for("amud_range",
                                 masechet = books.canonical_masechet_name(masechet),
                                 start = _canonical_amud_format(start),
