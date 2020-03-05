@@ -13,6 +13,7 @@ from link_sanitizer import sanitize_sefaria_links
 from tanach import Tanach
 import datetime
 import json
+import os
 import re
 import requests
 import uuid
@@ -25,8 +26,8 @@ def _read_json_file(path):
     with open(path, "r") as f:
         return json.load(f)
 
-BIBLICAL_INDEX = _read_json_file("sefaria-data/gemara-biblical-links.json")
-COMMENTARY_INDEX = _read_json_file("sefaria-data/gemara-commentary-links.json")
+BIBLICAL_INDEX = None
+COMMENTARY_INDEX = None
 
 MULTIPLE_SPACES = re.compile("  +")
 AMUD_ALEPH_PERIOD = re.compile("(\d)\\.")
@@ -285,6 +286,9 @@ def _get_comments_at_label_indices(source, label_indices):
     return result
 
 def _amud_json(masechet, amud):
+    if BIBLICAL_INDEX is None:
+        BIBLICAL_INDEX = _read_json_file("sefaria-data/gemara-biblical-links.json")
+        COMMENTARY_INDEX = _read_json_file("sefaria-data/gemara-commentary-links.json")
     gemara = books.gemara(masechet)[amud]
     english = books.gemara_english(masechet)[amud]
     rashi = books.rashi(masechet)[amud]
@@ -329,4 +333,4 @@ def preferences():
     return render_template("preferences.html")
 
 if __name__ == '__main__':
-    app.run(threaded=True, port=5000)
+    app.run(threaded=True, port=os.environ.get("PORT", 5000))
