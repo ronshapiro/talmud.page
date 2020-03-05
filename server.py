@@ -14,10 +14,13 @@ from tanach import Tanach
 import datetime
 import json
 import os
+import random
 import re
 import requests
+import string
 import uuid
 
+random_hash = ''.join(random.choice(string.ascii_letters) for i in range(7))
 app = Flask(__name__)
 books = Books()
 tanach = Tanach()
@@ -83,7 +86,8 @@ def amud(masechet, amud):
     canonical_masechet = books.canonical_masechet_name(masechet)
     if canonical_masechet != masechet:
         return redirect(url_for("amud", masechet = canonical_masechet, amud = amud))
-    return render_template("talmud_page.html", title = "%s %s" %(masechet, amud))
+    return render_template(
+        "talmud_page.html", title = "%s %s" %(masechet, amud), random_hash=random_hash)
 
 @app.route("/<masechet>/<start>/to/<end>")
 def amud_range(masechet, start, end):
@@ -91,7 +95,8 @@ def amud_range(masechet, start, end):
     if canonical_masechet != masechet:
         return redirect(url_for(
             "amud_range", masechet = canonical_masechet, start = start, end = end))
-    return render_template("talmud_page.html", title = "%s %s-%s" %(masechet, start, end))
+    return render_template(
+        "talmud_page.html", title = "%s %s-%s" %(masechet, start, end), random_hash=random_hash)
 
 @app.route("/js/<ignored>/talmud_page.js")
 def talmud_page_js(ignored):
@@ -104,6 +109,9 @@ def preferences_page_js(ignored):
 @app.route("/css/<ignored>/main.css")
 def main_css(ignored):
     return send_file("static/main.css")
+
+# response = make_response(render_template('index.html', foo=42))
+# response.headers['X-Parachutes'] = 'parachutes are cool'
 
 @app.errorhandler(404)
 def page_not_found(e):
@@ -330,7 +338,7 @@ def _get_verse_texts(verses):
 
 @app.route("/preferences")
 def preferences():
-    return render_template("preferences.html")
+    return render_template("preferences.html", random_hash=random_hash)
 
 if __name__ == '__main__':
     app.run(threaded=True, port=os.environ.get("PORT", 5000))
