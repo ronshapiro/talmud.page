@@ -3,24 +3,35 @@
 <head>
   <title>Search</title>
   {% include "header_common.html" %}
+  <style>
+#main-contents {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: calc(100% - 40px);
+    margin-top: -100px;
+}
+  </style>
 </head>
 <body>
   <div id="main-contents">
     <br/>
-    <h1>View a Daf</h1>
+    <h1>Read the Talmud</h1>
     <form action="/view_daf" method="post">
       <div class="mdl-textfield
                   mdl-js-textfield
                   mdl-textfield--expandable
-                  mdl-textfield--floating-label" style="width:90%; margin: 0 5%;">
+                  mdl-textfield--floating-label" style="width:100%;">
         <input class="mdl-textfield__input" type="text" id="search_term" name="search_term">
         <label class="mdl-textfield__label" for="search_term">Search</label>
       </div>
     </form>
 
-    <div style="margin-top:10em"/>
-    <p style="text-align: center;"><a href="https://github.com/ronshapiro/gemara-viewer">Open-sourced on GitHub</a></p>
-    <p style="text-align: center;">Texts from <a href="https://sefaria.org">Sefaria</a></p>
+    <p>e.g. Brachot 2a, Sukka 20a-21b, <span dir="rtl">פסחים 30:</span>, Shabbos 67b, Bava Metzia 13b to 14a</p>
+
   </div>
 </body>
 </html>
