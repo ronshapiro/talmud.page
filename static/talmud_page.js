@@ -304,7 +304,7 @@ var setCommentaryButtons = function(amud) {
 
     setShownState(false);
 
-    var clickListener = function(setShownState, commentaryRows) {
+    var clickListener = function(setShownState, commentaryRows, label) {
       var show = false;
       var maxLinesEvaluated = false;
       return function(event) {
@@ -319,11 +319,12 @@ var setCommentaryButtons = function(amud) {
         }
         var element = $(event.toElement);
         gtag("event", show ? "commentary_viewed" : "commentary_hidden", {
-          commentary: element.data("commentary"),
-          section: element.data("section-label"),
+          // these two || alternatives are kinda hacks, but they do the job for now
+          commentary: element.data("commentary") || "<translation>",
+          section: element.data("section-label") || label.replace("-translation", ""),
         });
       }
-    }(setShownState, commentaryRows);
+    }(setShownState, commentaryRows, label);
 
     showButton.click(clickListener);
     hideButton.click(clickListener);
