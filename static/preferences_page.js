@@ -1,3 +1,6 @@
+// TODO: maybe this should live in snackbar?
+var PREFERENCES_PAGE_VERSION = 1;
+
 var TRANSLATION_OPTIONS = [
   {
     value: "english-side-by-side",
@@ -44,6 +47,7 @@ var radioSection = function(title, section, items, isCheckedFunction, newValueFu
 }
 
 var main = function() {
+  localStorage.lastViewedVersionOfPreferencesPage = PREFERENCES_PAGE_VERSION;
   radioSection("Translation", "translation", TRANSLATION_OPTIONS,
                function(item) {
                  return localStorage.translationOption === item.value;

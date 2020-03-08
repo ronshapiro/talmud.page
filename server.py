@@ -46,7 +46,7 @@ BR_PREFIX = re.compile("^(<br>)+")
 
 @app.route("/")
 def homepage():
-    return render_template("homepage.html")
+    return render_template("homepage.html", random_hash=random_hash)
 
 def _canonical_amud_format(amud):
     return AMUD_ALEPH_PERIOD.sub(
@@ -98,17 +98,22 @@ def amud_range(masechet, start, end):
     return render_template(
         "talmud_page.html", title = "%s %s-%s" %(masechet, start, end), random_hash=random_hash)
 
-@app.route("/js/<ignored>/talmud_page.js")
-def talmud_page_js(ignored):
-    return send_file("static/talmud_page.js")
+# Creates a capturing lambda
+def send_file_fn(name):
+    return lambda ignored: send_file("static/%s" % name)
 
-@app.route("/js/<ignored>/preferences_page.js")
-def preferences_page_js(ignored):
-    return send_file("static/preferences_page.js")
-
-@app.route("/css/<ignored>/main.css")
-def main_css(ignored):
-    return send_file("static/main.css")
+STATIC_FILES = (
+    "main.css",
+    "snackbar.js",
+    "talmud_page.js",
+    "preferences_page.js",
+)
+for name in STATIC_FILES:
+    extension = name[name.rindex(".") + 1:]
+    app.add_url_rule(
+        "/%s/<ignored>/%s" % (extension, name),
+        name,
+        send_file_fn(name))
 
 # response = make_response(render_template('index.html', foo=42))
 # response.headers['X-Parachutes'] = 'parachutes are cool'

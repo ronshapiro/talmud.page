@@ -3,8 +3,8 @@
 <head>
   <title>{{title}}</title>
   {% include "header_common.html" %}
+  <script src="/js/{{random_hash}}/snackbar.js"></script>
   <script src="/js/{{random_hash}}/talmud_page.js"></script>
-
 </head>
 <body>
   <div id="main-contents">
@@ -25,14 +25,7 @@
     <div id="next-amud-container" style="display: none">
       <span id="next-amud-button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Next Amud</span>
     </div>
-
-    <div id="snackbar" class="snackbar">
-      <div id="snackbar-text"></div>
-      <div id="snackbar-buttons">
-        <button class="mdl-button mdl-js-button mdl-button--primary">Hello</button>
-        <button class="mdl-button mdl-js-button mdl-button--primary">World</button>
-      </div>
-    </div>
+    {% include "snackbar.html" %}
   </div>
 </body>
 </html>
