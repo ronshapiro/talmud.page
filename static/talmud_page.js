@@ -355,10 +355,6 @@ var englishClickListener = function(element) {
   };
 }
 
-var referencedVersesAsLines = function(section) {
-  return section.quotedVerses.map(verse => `${verse.hebrew} <small>(${verse.label.hebrew})</small>`);
-}
-
 var createAmudTable = function(amud) {
   var output = [`<h2>${amud.title}</h2>`];
   for (var i = 0; i < amud.sections.length; i++) {
