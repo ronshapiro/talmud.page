@@ -111,6 +111,7 @@ def send_file_fn(name):
 
 STATIC_FILES = (
     "main.css",
+    "rendering.js",
     "snackbar.js",
     "talmud_page.js",
     "preferences_page.js",
