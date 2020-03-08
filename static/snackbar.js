@@ -12,7 +12,7 @@ var updateSnackbar = function(labelHtml, buttons) {
   for (var i in buttons) {
     var button = buttons[i]
     buttonsDiv.append(
-      `<button class="mdl-button mdl-js-button mdl-button--accent">${button.text}</button>`);
+      `<button class="mdl-button mdl-js-button mdl-button--colored">${button.text}</button>`);
   }
 
   var buttonElements = $("#snackbar-buttons button");
@@ -39,6 +39,8 @@ var hasSeenPreferencesSnackbarEnough = function() {
   return parseInt(localStorage.preferencePageCounter) < 3;
 }
 
+PREFERENCES_PAGE_SNACKBAR_COUNT_MAX = 3;
+
 $(document).ready(function() {
   moveSnackbarOffscreen();
 
@@ -47,13 +49,24 @@ $(document).ready(function() {
   
   if (window.location.pathname !== "/preferences"
       && !hasSeenLatestPreferences()
-      && preferencePageSnackbarShownCount <= 3) {
+      && preferencePageSnackbarShownCount <= PREFERENCES_PAGE_SNACKBAR_COUNT_MAX) {
     localStorage.preferencePageSnackbarShownCount = preferencePageSnackbarShownCount;
     displaySnackbar("Check out the available options available!", [
       {
         text: "Preferences",
-        onClick: () => window.location.pathname = "/preferences",
-      }
+        onClick: function() {
+          gtag("event", "snackbar.preferences_page.clicked");
+          window.location.pathname = "/preferences"
+        },
+      },
+      {
+        text: "Dismiss",
+        onClick: function() {
+          gtag("event", "snackbar.preferences_page.dismissed");
+          localStorage.preferencePageSnackbarShownCount = PREFERENCES_PAGE_SNACKBAR_COUNT_MAX;
+          hideSnackbar();
+        },
+      },
     ]);
   }
 });

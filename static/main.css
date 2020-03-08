@@ -128,8 +128,8 @@ h2 {
     width: calc(var(--max-width) - 2 * var(--snackbar-padding));
     padding: var(--snackbar-padding);
 
-    color: #323232;
-    background-color: var(--background-color);
+    background-color: #323232;
+    color: var(--background-color);
     border-radius: 2px 2px 0 0;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, .5);
 }
