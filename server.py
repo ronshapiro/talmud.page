@@ -5,7 +5,7 @@ from books import Books
 from flask import Flask
 from flask import jsonify
 from flask import redirect
-from flask import render_template
+from flask import render_template as flask_render_template
 from flask import request
 from flask import send_file
 from flask import url_for
@@ -44,9 +44,16 @@ MASECHET_WITH_AMUD_RANGE = re.compile("(.*?) (%s)( to |-| - )(%s)" % (AMUD_PATTE
 HADRAN_PATTERN = re.compile("^(<br>)+<big><strong>הדרן עלך .*")
 BR_PREFIX = re.compile("^(<br>)+")
 
+def render_template(template_name, **extra_template_variables):
+    return flask_render_template(
+        template_name,
+        random_hash=random_hash,
+        debug=app.debug,
+        **extra_template_variables)
+
 @app.route("/")
 def homepage():
-    return render_template("homepage.html", random_hash=random_hash)
+    return render_template("homepage.html")
 
 def _canonical_amud_format(amud):
     return AMUD_ALEPH_PERIOD.sub(
@@ -87,7 +94,7 @@ def amud(masechet, amud):
     if canonical_masechet != masechet:
         return redirect(url_for("amud", masechet = canonical_masechet, amud = amud))
     return render_template(
-        "talmud_page.html", title = "%s %s" %(masechet, amud), random_hash=random_hash)
+        "talmud_page.html", title = "%s %s" %(masechet, amud))
 
 @app.route("/<masechet>/<start>/to/<end>")
 def amud_range(masechet, start, end):
@@ -96,7 +103,7 @@ def amud_range(masechet, start, end):
         return redirect(url_for(
             "amud_range", masechet = canonical_masechet, start = start, end = end))
     return render_template(
-        "talmud_page.html", title = "%s %s-%s" %(masechet, start, end), random_hash=random_hash)
+        "talmud_page.html", title = "%s %s-%s" %(masechet, start, end))
 
 # Creates a capturing lambda
 def send_file_fn(name):
@@ -343,7 +350,7 @@ def _get_verse_texts(verses):
 
 @app.route("/preferences")
 def preferences():
-    return render_template("preferences.html", random_hash=random_hash)
+    return render_template("preferences.html")
 
 if __name__ == '__main__':
     app.run(threaded=True, port=os.environ.get("PORT", 5000))
