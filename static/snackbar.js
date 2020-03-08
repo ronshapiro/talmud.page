@@ -46,7 +46,7 @@ $(document).ready(function() {
 
   var preferencePageSnackbarShownCount = localStorage.preferencePageSnackbarShownCount || 0;
   preferencePageSnackbarShownCount++;
-  
+
   if (window.location.pathname !== "/preferences"
       && !hasSeenLatestPreferences()
       && preferencePageSnackbarShownCount <= PREFERENCES_PAGE_SNACKBAR_COUNT_MAX) {
