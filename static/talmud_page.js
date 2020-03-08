@@ -318,7 +318,7 @@ var setCommentaryButtons = function(amud) {
           }
         }
         var element = $(event.toElement);
-        gtag("event", "commentary_viewed", {
+        gtag("event", show ? "commentary_viewed" : "commentary_hidden", {
           commentary: element.data("commentary"),
           section: element.data("section-label"),
         });
