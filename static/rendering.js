@@ -403,6 +403,9 @@ var renderNewResults = function(amud, divId) {
       var hebrewHeight = $(row).find(".hebrew").height();
       setMaxLines($(row));
     }
+
+    // Make sure mdl always registers new views correctly
+    componentHandler.upgradeAllRegistered();
   });
 };
 
