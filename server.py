@@ -1,7 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-from books import Books
 from flask import Flask
 from flask import jsonify
 from flask import redirect
@@ -10,6 +9,7 @@ from flask import request
 from flask import send_file
 from flask import url_for
 from link_sanitizer import sanitize_sefaria_links
+from masechtot import Masechtot
 import datetime
 import json
 import os
@@ -21,20 +21,18 @@ import uuid
 
 random_hash = ''.join(random.choice(string.ascii_letters) for i in range(7))
 app = Flask(__name__)
-books = Books()
+masechtot = Masechtot()
 
 def _read_json_file(path):
     with open(path, "r") as f:
         return json.load(f)
 
-BIBLICAL_INDEX = None
-COMMENTARY_INDEX = None
-
 MULTIPLE_SPACES = re.compile("  +")
-AMUD_ALEPH_PERIOD = re.compile("(\d)\\.")
-AMUD_BET_COLON = re.compile("(\d):")
 
-AMUD_PATTERN = "\d{1,3}[ab\.:]"
+AMUD_ALEPH_OPTIONS = ("a", ".", "א")
+AMUD_BET_OPTIONS = ("b", ":", "ב")
+
+AMUD_PATTERN = "\d{1,3}[ab\.:אב]"
 # TODO: check arbitrary whitespace
 MASECHET_WITH_AMUD = re.compile("(.*?) (%s)" % (AMUD_PATTERN))
 MASECHET_WITH_AMUD_RANGE = re.compile("(.*?) (%s)( to |-| - )(%s)" % (AMUD_PATTERN, AMUD_PATTERN))
@@ -54,41 +52,35 @@ def homepage():
     return render_template("homepage.html")
 
 def _canonical_amud_format(amud):
-    return AMUD_ALEPH_PERIOD.sub(
-        "\\1a",
-        AMUD_BET_COLON.sub("\\1b", amud))
+    if amud.endswith("a") or amud.endswith("b"):
+        return amud
+    if amud[-1] in AMUD_ALEPH_OPTIONS:
+        return "%sa" % amud[:-1]
+    if amud[-1] in AMUD_BET_OPTIONS:
+        return "%sb" % amud[:-1]
+    return amud
 
 @app.route("/view_daf", methods = ["POST"])
 def search_handler():
-    term = request.form["search_term"].strip()
-    term = MULTIPLE_SPACES.sub(" ", term)
-
-    masechet_with_amud_range = MASECHET_WITH_AMUD_RANGE.match(term)
-    if masechet_with_amud_range:
-        masechet = masechet_with_amud_range.group(1)
-        start = masechet_with_amud_range.group(2)
-        end = masechet_with_amud_range.group(4)
+    query = request.form["search_term"]
+    parsed = masechtot.parse(query)
+    if parsed.end:
         return redirect(url_for("amud_range",
-                                masechet = books.canonical_masechet_name(masechet),
-                                start = _canonical_amud_format(start),
-                                end = _canonical_amud_format(end)))
-
-    masechet_with_amud = MASECHET_WITH_AMUD.match(term)
-    if masechet_with_amud:
-        masechet = masechet_with_amud.group(1)
-        amud = masechet_with_amud.group(2)
-        # TODO: should canonicalizations happen in the request handlers themselves?
+                                masechet = parsed.masechet,
+                                start = parsed.start,
+                                end = parsed.end))
+    else:
         return redirect(url_for("amud",
-                                masechet = books.canonical_masechet_name(masechet),
-                                amud = _canonical_amud_format(amud)))
+                                masechet = parsed.masechet,
+                                amud = parsed.start))
 
     # TODO: proper error page
     # TODO: verify daf exists
-    raise KeyError(term)
+    raise ValueError(query)
 
 @app.route("/<masechet>/<amud>")
 def amud(masechet, amud):
-    canonical_masechet = books.canonical_masechet_name(masechet)
+    canonical_masechet = masechtot.canonical_masechet_name(masechet)
     if canonical_masechet != masechet:
         return redirect(url_for("amud", masechet = canonical_masechet, amud = amud))
     return render_template(
@@ -96,7 +88,7 @@ def amud(masechet, amud):
 
 @app.route("/<masechet>/<start>/to/<end>")
 def amud_range(masechet, start, end):
-    canonical_masechet = books.canonical_masechet_name(masechet)
+    canonical_masechet = masechtot.canonical_masechet_name(masechet)
     if canonical_masechet != masechet:
         return redirect(url_for(
             "amud_range", masechet = canonical_masechet, start = start, end = end))
