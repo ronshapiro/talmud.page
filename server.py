@@ -10,6 +10,7 @@ from flask import request
 from flask import send_file
 from flask import url_for
 from link_sanitizer import sanitize_sefaria_links
+from masechtot import LAST_AMUD_PER_MASECHET
 import datetime
 import json
 import os
@@ -307,6 +308,32 @@ def _get_comments_at_label_indices(source, label_indices):
 @app.route("/preferences")
 def preferences():
     return render_template("preferences.html")
+
+def amud_is_last(masechet,amud):
+    return LAST_AMUD_PER_MASECHET[masechet] == amud 
+
+@app.route("/yomi")
+def yomi():
+    sefaria_result = requests.get("https://sefaria.org/api/calendars/")
+    sefaria_json = sefaria_result.json()
+    calendar_items = sefaria_json['calendar_items']
+
+    masechet = None
+    start = None
+    for item in calendar_items:
+        if item["category"] == "Talmud":
+            masechet, start = item["ref"].split() #ex: ["Berakhot", "2a"]
+            break
+
+    if amud_is_last(masechet,start):
+        return redirect(url_for("amud", masechet = masechet, amud = start))
+    else:
+        end = start.replace('a','b')          
+        return redirect(url_for(
+        "amud_range", masechet = masechet, start = start, end = end))      
+
+
+
 
 if __name__ == '__main__':
     app.run(threaded=True, port=os.environ.get("PORT", 5000))
