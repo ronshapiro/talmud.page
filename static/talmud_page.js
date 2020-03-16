@@ -38,8 +38,6 @@ var LAST_AMUD_PER_MASECHET = {
   "Zevachim": "120b",
 }
 
-var translationOption = localStorage.translationOption || "both";
-
 var requestAmud = function(amud, directionFunction, options) {
   options = options || {}
   var divId = `amud-${amud}`;
@@ -57,7 +55,8 @@ var requestAmud = function(amud, directionFunction, options) {
   $.ajax({url: `${location.origin}/api/${metadata.masechet}/${amud}`,
           type: "GET",
           success: function(results) {
-            renderNewResults(results, "#" + divId);
+            new TalmudRenderer(localStorage.translationOption || "both")
+              .renderNewResults(results, "#" + divId);
             refreshPageState();
             spinner.hide();
             if (options.callback) options.callback();

@@ -66,8 +66,7 @@ var main = function() {
     var divId = `amud-${option.value}`;
     $("#translation").append(`<div id="${divId}" class="amudContainer" />`);
 
-    window.translationOption = option.value;
-    renderNewResults(
+    new TalmudRenderer(option.value).renderNewResults(
       {
         sections: createTestData(),
         id: option.value,
