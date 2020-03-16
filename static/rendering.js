@@ -202,7 +202,8 @@ class Renderer {
       }(showButton, hideButton, commentaryRows);
       
       setShownState(false);
-      
+
+      var setMaxLines = this._setMaxLines;
       var clickListener = function(setShownState, commentaryRows, label) {
         var show = false;
         var maxLinesEvaluated = false;
@@ -213,7 +214,7 @@ class Renderer {
           if (show && !maxLinesEvaluated) {
             maxLinesEvaluated = true;
             for (var j = 0; j < commentaryRows.length; j++) {
-              this._setMaxLines($(commentaryRows[j]));
+              setMaxLines($(commentaryRows[j]));
             }
           }
           var element = $(event.toElement);
