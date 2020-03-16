@@ -59,18 +59,18 @@ class Renderer {
     this._commentaryTypes = commentaryTypes;
     this._translationOption = translationOption;
   }
-  
+
   _makeCell(text, dir, classes) {
     classes = classes || [];
     classes.push("table-cell");
     var classAttribute = classes ? `class="${classes.join(" ")}"` : "";
     return `<div dir="${dir}" ${classAttribute}>${text}</div>`;
   }
-  
+
   _hebrewCell(text, classes) {
     return this._makeCell(text, "rtl", _concat(["hebrew"], classes));
   }
-  
+
   _englishCell(text, classes) {
     return this._makeCell(
       `<div class="english-div line-clampable" style="-webkit-line-clamp: 1;">`
@@ -79,49 +79,49 @@ class Renderer {
       "ltr",
       _concat(["english"], classes));
   }
-  
+
   _tableRow(hebrew, english, options) {
     options = options || {};
     var classes = _concat(["table-row"], options.classes);
-    
+
     var output = [`<div class="${classes.join(" ")}">`];
-    
+
     var cellClasses = [];
-    
+
     if ((this._isEmptyText(hebrew) || this._isEmptyText(english)) &&
         !options.overrideFullRow) {
       cellClasses.push("fullRow");
     }
-    
+
     if (!this._isEmptyText(hebrew)) {
       output.push(this._hebrewCell(hebrew, cellClasses));
     }
-    
+
     if (!this._isEmptyText(english)) {
       output.push(this._englishCell(english, cellClasses));
     }
-    
+
     output.push("</div>");
     return output.join("");
   };
-  
+
   _isEmptyText(stringOrList) {
     return !stringOrList || stringOrList === "" || stringOrList.length == 0;
   }
-  
+
   _stringOrListToString(stringOrList) {
     return typeof stringOrList === "string"
       ? stringOrList
       : stringOrList.join("<br>");
   }
-  
+
   _commentRow(sectionLabel, comment, commentaryKind) {
     var output = [];
-    
+
     var commentRowOptions = {
       classes: [`${sectionLabel}-${commentaryKind.className}`, "commentaryRow"],
     };
-    
+
     if (commentaryKind.showTitle) {
       output.push(
         this._tableRow(
@@ -129,7 +129,7 @@ class Renderer {
           this._isEmptyText(comment.en) ? "" : `<strong>${comment.sourceRef}</strong>`,
           commentRowOptions));
     }
-    
+
     if (Array.isArray(comment.he) && Array.isArray(comment.en)
         && comment.he.length === comment.en.length) {
       for (var i = 0; i < comment.he.length; i++) {
@@ -142,20 +142,20 @@ class Renderer {
           this._stringOrListToString(comment.en),
           commentRowOptions));
     }
-    
+
     return output.join("");
   }
-  
+
   _commentaryRowOutput(sectionLabel, commentaries) {
     var output = []
-    
+
     var tableRowOptions =
         this._translationOption !== "english-side-by-side" ? {} : {overrideFullRow: true};
     var showButtons = [];
     for (var i in this._commentaryTypes) {
       var commentaryKind = this._commentaryTypes[i];
       var commentary = commentaries[commentaryKind.englishName];
-      
+
       if (commentary) {
         var classes = ["commentary_header", commentaryKind.className, commentaryKind.cssCategory].join(" ");
         var extraAttrs = `tabindex="0" data-commentary="${commentaryKind.englishName}" data-section-label="${sectionLabel}"`
@@ -166,7 +166,7 @@ class Renderer {
             `<a id="${idPrefix}-hide-button" class="${classes}" ${extraAttrs}>${commentaryKind.hebrewName}</a>`,
             "",
             tableRowOptions));
-        
+
         commentary.forEach(
           comment => output.push(this._commentRow(sectionLabel, comment, commentaryKind)));
       }
@@ -174,7 +174,7 @@ class Renderer {
     output.push(this._tableRow(showButtons.join(""), "", tableRowOptions));
     return output.join("");
   }
-  
+
   _clickIfEnter(alternateButton) {
     return function(event) {
       if (!event || event.originalEvent.code !== "Enter") return;
@@ -182,7 +182,7 @@ class Renderer {
       alternateButton.focus();
     }
   }
-  
+
   _setCommentaryButtons($container) {
     var showButtons = $container.find(".show-button");
     for (var i = 0; i < showButtons.length; i++) {
@@ -200,7 +200,7 @@ class Renderer {
           setVisibility(commentaryRows, show);
         }
       }(showButton, hideButton, commentaryRows);
-      
+
       setShownState(false);
 
       var setMaxLines = this._setMaxLines;
@@ -210,7 +210,7 @@ class Renderer {
         return function(event) {
           show = !show;
           setShownState(show);
-          
+
           if (show && !maxLinesEvaluated) {
             maxLinesEvaluated = true;
             for (var j = 0; j < commentaryRows.length; j++) {
@@ -225,12 +225,12 @@ class Renderer {
           });
         }
       }(setShownState, commentaryRows, label);
-      
+
       showButton.click(clickListener);
       hideButton.click(clickListener);
       showButton.on('keypress', this._clickIfEnter(hideButton));
       hideButton.on('keypress', this._clickIfEnter(showButton));
-      
+
       if (showButton.hasClass("translation")) {
         showButton.closest(".section-container").find(".gemara").betterDoubleClick(clickListener);
         if (localStorage.showTranslationButton !== "yes") {
@@ -240,7 +240,7 @@ class Renderer {
       }
     }
   };
-  
+
   _setEnglishClickListeners($container) {
     var sections = $container.find(".english-div");
     for (var i = 0; i < sections.length; i++) {
@@ -248,27 +248,27 @@ class Renderer {
       section.betterDoubleClick(this._englishClickListener(section));
     }
   };
-  
+
   _englishClickListener(element) {
     return function() {
       element.toggleClass("line-clampable");
     };
   }
-  
+
   _createContainerHtml(containerData) {
     var output = [`<h2>${containerData.title}</h2>`];
     for (var i = 0; i < containerData.sections.length; i++) {
       var section = containerData.sections[i];
       var sectionLabel = `${containerData.id}_section_${i+1}`;
       output.push(`<div id="${sectionLabel}" class="section-container">`);
-      
+
       output.push(
          this._tableRow(
           `<div class="gemara" id="${sectionLabel}-gemara">${section.he}</div>`,
           this._translationOption === "english-side-by-side" ? section.en : undefined));
-      
+
       var commentaries = section.commentary;
-      
+
       if (commentaries) {
         if (this._translationOption === "both") {
           commentaries.Translation = commentaries.Steinsaltz;
@@ -305,12 +305,12 @@ class Renderer {
         var hebrewHeight = $(row).find(".hebrew").height();
         setMaxLines($(row));
       }
-      
+
       // Make sure mdl always registers new views correctly
       componentHandler.upgradeAllRegistered();
     });
   };
-  
+
   _setMaxLines(row) {
     var hebrew = $(row.children()[0])
     var english = $(row.find(".english-div")[0])
@@ -323,7 +323,7 @@ class TalmudRenderer extends Renderer {
   constructor(translationOption) {
     super(TalmudRenderer._defaultCommentaryTypes(), translationOption);
   }
-  
+
   static _defaultCommentaryTypes() {
     var commentaryTypes = [
       {
@@ -421,13 +421,13 @@ class TalmudRenderer extends Renderer {
         className: "jastrow",
       },
     ];
-    
+
     var steinsaltz = {
       englishName: "Steinsaltz",
       hebrewName: "שטיינזלץ",
       className: "translation",
     };
-    
+
     if (localStorage.showTranslationButton === "yes") {
       commentaryTypes.push(steinsaltz);
     } else {
@@ -437,4 +437,3 @@ class TalmudRenderer extends Renderer {
     return commentaryTypes;
   }
 }
-
