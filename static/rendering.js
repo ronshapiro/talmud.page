@@ -1,3 +1,4 @@
+// TODO: rewrite all loops to use .forEach
 jQuery.fn.extend({
   betterDoubleClick: function(fn) {
     if (!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)) {
@@ -115,11 +116,11 @@ class Renderer {
       : stringOrList.join("<br>");
   }
 
-  _commentRow(sectionLabel, comment, commentaryKind) {
+  _commentRow(commentId, comment, commentaryKind) {
     var output = [];
 
     var commentRowOptions = {
-      classes: [`${sectionLabel}-${commentaryKind.className}`, "commentaryRow"],
+      classes: [commentId, "commentaryRow"],
     };
 
     if (commentaryKind.showTitle) {
@@ -157,18 +158,28 @@ class Renderer {
       var commentary = commentaries[commentaryKind.englishName];
 
       if (commentary) {
-        var classes = ["commentary_header", commentaryKind.className, commentaryKind.cssCategory].join(" ");
-        var extraAttrs = `tabindex="0" data-commentary="${commentaryKind.englishName}" data-section-label="${sectionLabel}"`
-        var idPrefix = `${sectionLabel}-${commentaryKind.className}`;
-        showButtons.push(`<a id="${idPrefix}-show-button" class="${classes} show-button" ${extraAttrs}>${commentaryKind.hebrewName}</a>`);
+        var classes = [
+          "commentary_header",
+          commentaryKind.className,
+          commentaryKind.cssCategory
+        ].join(" ");
+        var commentId = `${sectionLabel}-${commentaryKind.className}`;
+        var extraAttrs = [
+          `tabindex="0"`,
+          `data-commentary="${commentaryKind.englishName}"`,
+          `data-section-label="${sectionLabel}"`,
+          `data-comment-id="${commentId}"`,
+        ].join(" ");
+        showButtons.push(
+          `<a class="${classes} show-button" ${extraAttrs}>${commentaryKind.hebrewName}</a>`);
         output.push(
           this._tableRow(
-            `<a id="${idPrefix}-hide-button" class="${classes}" ${extraAttrs}>${commentaryKind.hebrewName}</a>`,
+            `<a class="${classes} hide-button" ${extraAttrs}>${commentaryKind.hebrewName}</a>`,
             "",
             tableRowOptions));
 
         commentary.forEach(
-          comment => output.push(this._commentRow(sectionLabel, comment, commentaryKind)));
+          comment => output.push(this._commentRow(commentId, comment, commentaryKind)));
       }
     }
     output.push(this._tableRow(showButtons.join(""), "", tableRowOptions));
@@ -186,10 +197,9 @@ class Renderer {
   _setCommentaryButtons($container) {
     var showButtons = $container.find(".show-button");
     for (var i = 0; i < showButtons.length; i++) {
-      var showButton = showButtons[i];
-      var label = showButton.id.replace("-show-button", "");
-      showButton = $(showButton); // after using .id to get the label, convert to a jQuery object
-      var hideButton = $container.find(`#${label}-hide-button`);
+      var showButton = $(showButtons[i]);
+      var label = showButton.data("comment-id")
+      var hideButton = $container.find(`.hide-button[data-comment-id=${label}]`);
       var commentaryRows = $container.find(`.commentaryRow.${label}`);
 
       // these functions need to capture the loop variables
