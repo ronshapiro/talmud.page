@@ -56,7 +56,7 @@ var requestAmud = function(amud, directionFunction, options) {
           type: "GET",
           success: function(results) {
             new TalmudRenderer(localStorage.translationOption || "both")
-              .renderNewResults(results, "#" + divId);
+              .renderContainer(results, divId);
             refreshPageState();
             spinner.hide();
             if (options.callback) options.callback();

@@ -63,16 +63,16 @@ var main = function() {
                });
 
   TRANSLATION_OPTIONS.forEach(option => {
-    var divId = `amud-${option.value}`;
+    var divId = `translationOptionExample-${option.value}`;
     $("#translation").append(`<div id="${divId}" class="amudContainer" />`);
 
-    new TalmudRenderer(option.value).renderNewResults(
+    new TalmudRenderer(option.value).renderContainer(
       {
         sections: createTestData(),
         id: option.value,
         title: `Sample: ${option.displayText}`
       },
-      $(`#${divId}`));
+      divId);
   });
 
   var showTranslationHeaderText =

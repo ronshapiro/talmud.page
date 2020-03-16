@@ -18,7 +18,7 @@ jQuery.fn.extend({
   }
 });
 
-var amudSectionMap = {}
+var debugResultsData = {}
 
 var onceDocumentReady = {
   ready: false,
@@ -183,14 +183,14 @@ class Renderer {
     }
   }
   
-  _setCommentaryButtons(amud) {
-    var showButtons = amud.find(".show-button");
+  _setCommentaryButtons($container) {
+    var showButtons = $container.find(".show-button");
     for (var i = 0; i < showButtons.length; i++) {
       var showButton = showButtons[i];
       var label = showButton.id.replace("-show-button", "");
       showButton = $(showButton); // after using .id to get the label, convert to a jQuery object
-      var hideButton = amud.find(`#${label}-hide-button`);
-      var commentaryRows = amud.find(`.commentaryRow.${label}`);
+      var hideButton = $container.find(`#${label}-hide-button`);
+      var commentaryRows = $container.find(`.commentaryRow.${label}`);
 
       // these functions need to capture the loop variables
       var setShownState = function(showButton, hideButton, commentaryRows) {
@@ -241,8 +241,8 @@ class Renderer {
     }
   };
   
-  _setEnglishClickListeners(amudim) {
-    var sections = amudim.find(".english-div");
+  _setEnglishClickListeners($container) {
+    var sections = $container.find(".english-div");
     for (var i = 0; i < sections.length; i++) {
       var section = $(sections[i]);
       section.betterDoubleClick(this._englishClickListener(section));
@@ -255,11 +255,11 @@ class Renderer {
     };
   }
   
-  _createAmudTable(amud) {
-    var output = [`<h2>${amud.title}</h2>`];
-    for (var i = 0; i < amud.sections.length; i++) {
-      var section = amud.sections[i];
-      var sectionLabel = `${amud.id}_section_${i+1}`;
+  _createContainerHtml(containerData) {
+    var output = [`<h2>${containerData.title}</h2>`];
+    for (var i = 0; i < containerData.sections.length; i++) {
+      var section = containerData.sections[i];
+      var sectionLabel = `${containerData.id}_section_${i+1}`;
       output.push(`<div id="${sectionLabel}" class="section-container">`);
       
       output.push(
@@ -284,21 +284,22 @@ class Renderer {
     }
     return output.join("");
   }
-  
-  renderNewResults(amud, divId) {
-    amudSectionMap[amud.id] = amud;
-    
-    $(divId).html(this._createAmudTable(amud));
-    
-    var amudDiv = $(`#amud-${amud.id}`);
-    this._setCommentaryButtons(amudDiv);
-    this._setEnglishClickListeners(amudDiv);
+
+  // containerData is an awkward name, but "section" was already taken. Perhaps that can be changed
+  // and then we can switch this over?
+  renderContainer(containerData, divId) {
+    debugResultsData[containerData.id] = containerData;
+
+    var $container = $(`#${divId}`);
+    $container.html(this._createContainerHtml(containerData));
+    this._setCommentaryButtons($container);
+    this._setEnglishClickListeners($container);
 
     var setMaxLines = this._setMaxLines;
     onceDocumentReady.execute(function() {
-      var englishTexts = amudDiv.find(".english-div");
+      var englishTexts = $container.find(".english-div");
       // this works because the view has 1 character, so the height should be == 1 line.
-      var rows = amudDiv.find(".table-row");
+      var rows = $container.find(".table-row");
       for (var j = 0; j < rows.length; j++) {
         var row = $(rows[j])[0];
         var hebrewHeight = $(row).find(".hebrew").height();
