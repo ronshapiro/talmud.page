@@ -68,5 +68,31 @@ $(document).ready(function() {
         },
       },
     ]);
+  } else if (window.driveClient && !localStorage.hasSignedInWithGoogle) {
+    displaySnackbar("", [
+      {
+        text: "Save your favorites: Sign in with Google",
+        onClick: () => {
+          driveClient.addListener(function() {
+            if (this.stopListening) {
+              return;
+            }
+            if (driveClient.isSignedIn) {
+              hideSnackbar();
+              this.stopListening = true;
+            }
+          });
+          driveClient.signIn();
+        },
+      },
+      {
+        text: "Dismiss",
+        onClick: () => {
+          localStorage.hasSignedInWithGoogle = "ignored";
+          hideSnackbar();
+        }
+      },
+    ]);
   }
+
 });

@@ -97,12 +97,17 @@ def amud_range(masechet, start, end):
 
 # Creates a capturing lambda
 def send_file_fn(name):
+    return lambda: send_file(name)
+
+# Creates a capturing lambda
+def send_file_fn_with_ignored_pattern(name):
     return lambda ignored: send_file(name)
 
 STATIC_FILES = (
     "main.css",
     "rendering.js",
     "snackbar.js",
+    "google_drive.js",
     "talmud_page.js",
     "preferences_page.js",
 )
@@ -111,7 +116,7 @@ for name in STATIC_FILES:
     app.add_url_rule(
         "/%s/<ignored>/%s" % (extension, name),
         name,
-        send_file_fn("static/%s" % name))
+        send_file_fn_with_ignored_pattern("static/%s" % name))
 
 # response = make_response(render_template('index.html', foo=42))
 # response.headers['X-Parachutes'] = 'parachutes are cool'
@@ -301,27 +306,24 @@ def preferences():
     return render_template("preferences.html")
 
 FAVICON_FILES = (
-    "/apple-icon-57x57.png",
-    "/apple-icon-60x60.png",
-    "/apple-icon-72x72.png",
-    "/apple-icon-76x76.png",
-    "/apple-icon-114x114.png",
-    "/apple-icon-120x120.png",
-    "/apple-icon-144x144.png",
-    "/apple-icon-152x152.png",
-    "/apple-icon-180x180.png",
-    "/android-icon-192x192.png",
-    "/favicon-32x32.png",
-    "/favicon-96x96.png",
-    "/favicon-16x16.png",
-    "/ms-icon-144x144.png",
+    "apple-icon-57x57.png",
+    "apple-icon-60x60.png",
+    "apple-icon-72x72.png",
+    "apple-icon-76x76.png",
+    "apple-icon-114x114.png",
+    "apple-icon-120x120.png",
+    "apple-icon-144x144.png",
+    "apple-icon-152x152.png",
+    "apple-icon-180x180.png",
+    "android-icon-192x192.png",
+    "favicon.ico",
+    "favicon-32x32.png",
+    "favicon-96x96.png",
+    "favicon-16x16.png",
+    "ms-icon-144x144.png",
 )
 for name in FAVICON_FILES:
-    app.add_url_rule("/favicon/%s" % name, name, send_file_fn("favicon/%s" % name))
-
-@app.route("/favicon.ico")
-def favicon():
-    return send_file("favicon/favicon.ico")
+    app.add_url_rule("/%s" % name, name, send_file_fn("favicon/%s" % name))
 
 @app.route("/manifest.json")
 def manifest_json():
