@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from api_request_handler import ApiRequestHandler
+from api_request_handler import RealRequestMaker
 from flask import Flask
 from flask import jsonify
 from flask import redirect
@@ -17,6 +18,7 @@ import string
 random_hash = ''.join(random.choice(string.ascii_letters) for i in range(7))
 app = Flask(__name__)
 masechtot = Masechtot()
+api_request_handler = ApiRequestHandler(RealRequestMaker())
 
 def render_template(template_name, **extra_template_variables):
     return flask_render_template(
@@ -97,7 +99,7 @@ def page_not_found(e):
 # TODO: cache this
 @app.route("/api/<masechet>/<amud>")
 def amud_json(masechet, amud):
-    return ApiRequestHandler(None).amud_api_request(masechet, amud)
+    return jsonify(api_request_handler.amud_api_request(masechet, amud))
 
 @app.route("/preferences")
 def preferences():

@@ -1,7 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-from flask import jsonify
 from link_sanitizer import sanitize_sefaria_links
 import re
 import requests
@@ -9,12 +8,9 @@ import requests
 HADRAN_PATTERN = re.compile("^(<br>)+<big><strong>הדרן עלך .*")
 BR_PREFIX = re.compile("^(<br>)+")
 
-class ApiRequestHandler(object):
-    def __init__(self, request_maker):
-        self._request_maker = request_maker
-
-    def amud_api_request(self, masechet, amud):
-        sefaria_result = requests.get(
+class RealRequestMaker(object):
+    def request_amud(self, masechet, amud):
+        return requests.get(
             # https://github.com/Sefaria/Sefaria-Project/wiki/API-Documentation
             "https://sefaria.org/api/texts/{masechet}.{amud}".format(masechet=masechet, amud=amud),
             # "context", "pad", and "multiple" are specified by Sefaria, but it's unclear what they do
@@ -24,6 +20,13 @@ class ApiRequestHandler(object):
                 # filtering is performed just in case.
                 "wrapLinks": "0",
             })
+
+class ApiRequestHandler(object):
+    def __init__(self, request_maker):
+        self._request_maker = request_maker
+
+    def amud_api_request(self, masechet, amud):
+        sefaria_result = self._request_maker.request_amud(masechet, amud)
         if sefaria_result.status_code is not 200:
             return sefaria_result.text, 500
         try:
@@ -91,7 +94,7 @@ class ApiRequestHandler(object):
             last_section["commentary"] = {}
             last_section["hadran"] = True
 
-        return jsonify(result)
+        return result
 
 _COMMENTARIES = [
     {
