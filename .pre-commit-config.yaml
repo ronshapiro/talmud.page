@@ -10,3 +10,7 @@
         name: "Check DO NOT SUBMIT"
         entry: pre-commit/check_do_not_submit.py
         language: python
+    -   id: check-python-tests
+        name: "Check Python tests"
+        entry: pre-commit/check_python_tests.sh
+        language: script
