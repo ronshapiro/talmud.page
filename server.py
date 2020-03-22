@@ -23,20 +23,6 @@ random_hash = ''.join(random.choice(string.ascii_letters) for i in range(7))
 app = Flask(__name__)
 masechtot = Masechtot()
 
-def _read_json_file(path):
-    with open(path, "r") as f:
-        return json.load(f)
-
-MULTIPLE_SPACES = re.compile("  +")
-
-AMUD_ALEPH_OPTIONS = ("a", ".", "א")
-AMUD_BET_OPTIONS = ("b", ":", "ב")
-
-AMUD_PATTERN = "\d{1,3}[ab\.:אב]"
-# TODO: check arbitrary whitespace
-MASECHET_WITH_AMUD = re.compile("(.*?) (%s)" % (AMUD_PATTERN))
-MASECHET_WITH_AMUD_RANGE = re.compile("(.*?) (%s)( to |-| - )(%s)" % (AMUD_PATTERN, AMUD_PATTERN))
-
 HADRAN_PATTERN = re.compile("^(<br>)+<big><strong>הדרן עלך .*")
 BR_PREFIX = re.compile("^(<br>)+")
 
@@ -50,15 +36,6 @@ def render_template(template_name, **extra_template_variables):
 @app.route("/")
 def homepage():
     return render_template("homepage.html")
-
-def _canonical_amud_format(amud):
-    if amud.endswith("a") or amud.endswith("b"):
-        return amud
-    if amud[-1] in AMUD_ALEPH_OPTIONS:
-        return "%sa" % amud[:-1]
-    if amud[-1] in AMUD_BET_OPTIONS:
-        return "%sb" % amud[:-1]
-    return amud
 
 @app.route("/view_daf", methods = ["POST"])
 def search_handler():
@@ -289,17 +266,6 @@ def _matching_commentary_kind(comment):
            has_matching_property(comment, kind, "type") or \
            "englishNamePattern" in kind and kind["englishNamePattern"].findall(name):
             return kind
-
-@app.route("/old/<masechet>/<amud>/json")
-def amud_json_old(masechet, amud):
-    return jsonify(_amud_json(masechet, amud))
-
-def _get_comments_at_label_indices(source, label_indices):
-    result = []
-    for i, comment in enumerate(source):
-        if i + 1 in label_indices:
-            result.append(comment)
-    return result
 
 @app.route("/preferences")
 def preferences():
