@@ -75,6 +75,9 @@ html {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+.jastrow .english-div {
+    -webkit-line-clamp: 3 !important;
+}
 td {
     vertical-align: top;
     padding: 0px 8px;

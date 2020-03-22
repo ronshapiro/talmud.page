@@ -120,7 +120,7 @@ class Renderer {
     var output = [];
 
     var commentRowOptions = {
-      classes: [commentId, "commentaryRow"],
+      classes: [commentId, "commentaryRow", commentaryKind.className],
     };
 
     if (commentaryKind.showTitle) {
