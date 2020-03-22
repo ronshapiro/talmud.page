@@ -4,3 +4,9 @@
     -   id: check-yaml
     -   id: end-of-file-fixer
     -   id: trailing-whitespace
+-   repo: local
+    hooks:
+    -   id: check-do-not-submit
+        name: "Check DO NOT SUBMIT"
+        entry: pre-commit/check_do_not_submit.py
+        language: python
