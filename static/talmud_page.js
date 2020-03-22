@@ -65,9 +65,10 @@ var requestAmud = function(amud, directionFunction, options) {
             });
           },
           error: function() {
-            options.retryCount = options.retryCount || 0;
-            options.retryCount++;
-            setTimeout(() => requestAmud(amud, directionFunction, options), options.retryCount);
+            options.backoff = options.backoff || 200;
+            options.backoff *= 1.5;
+            console.log(options.backoff);
+            setTimeout(() => requestAmud(amud, directionFunction, options), options.backoff);
           }});
   if (options.newUrl) history.pushState({}, "", options.newUrl);
   refreshPageState();
