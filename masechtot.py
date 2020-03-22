@@ -15,7 +15,7 @@ MASECHTOT = {
                  "Berachos", "Brachos", "Brakhos", "Berakhos",
                  "ברכות",),
     "Chagigah": ("Chagiga", "Khagigah", "Khagiga", "חגיגה",),
-    "Chullin": ("Chulin", "חולין",),
+    "Chullin": ("Chulin", "Hulin", "Hullin", "חולין",),
     "Eruvin": ("עירובין",),
     "Gittin": ("Gitin", "גיטין",),
     "Horayot": ("Horayos", "הוריות",),

@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+from jastrow_deabbreviator import deabbreviate_jastrow
 from link_sanitizer import sanitize_sefaria_links
 import re
 import requests
@@ -71,16 +72,19 @@ class ApiRequestHandler(object):
             if not matching_commentary_kind:
                 continue
 
-            if matching_commentary_kind["englishName"] not in commentary_dict:
-                commentary_dict[matching_commentary_kind["englishName"]] = []
+            english_name = matching_commentary_kind["englishName"]
+            if english_name not in commentary_dict:
+                commentary_dict[english_name] = []
 
             comment_english = sanitize_sefaria_links(comment["text"])
+            if english_name == "Jastrow":
+                comment_english = deabbreviate_jastrow(comment_english)
             if comment["he"] == comment_english:
                 # Fix an issue where sometimes Sefaria returns the exact same text. For now, safe to
                 # assume that the equivalent text is Hebrew
                 comment_english = ""
 
-            commentary_dict[matching_commentary_kind["englishName"]].append({
+            commentary_dict[english_name].append({
                 "he": comment["he"],
                 "en": comment_english,
                 "sourceRef": comment["sourceRef"],
