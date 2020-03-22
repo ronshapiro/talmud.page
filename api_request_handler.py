@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-from jastrow_deabbreviator import deabbreviate_jastrow
+from jastrow_reformat import reformat_jastrow
 from link_sanitizer import sanitize_sefaria_links
 import re
 import requests
@@ -78,7 +78,7 @@ class ApiRequestHandler(object):
 
             comment_english = sanitize_sefaria_links(comment["text"])
             if english_name == "Jastrow":
-                comment_english = deabbreviate_jastrow(comment_english)
+                comment_english = reformat_jastrow(comment_english)
             if comment["he"] == comment_english:
                 # Fix an issue where sometimes Sefaria returns the exact same text. For now, safe to
                 # assume that the equivalent text is Hebrew

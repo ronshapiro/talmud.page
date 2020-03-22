@@ -1,3 +1,5 @@
+import html
+import html.parser
 import re
 
 _ABBREVIATIONS = [
@@ -198,7 +200,6 @@ _ABBREVIATIONS = [
         "abbreviation": "contr.",
         "expanded": "contracted or contraction",
         "exceptions": ["ambiguous"],
-
     },
     {
         "abbreviation": "contrad.",
@@ -1168,9 +1169,6 @@ for abbreviation in _ABBREVIATIONS:
     if "exceptions" in abbreviation and "low priority" in abbreviation["exceptions"]:
         _ORDERED_ABBREVIATIONS.append(abbreviation)
 
-def deabbreviate_jastrow(list_of_text):
-    return tuple(map(_deabbreviate_jastrow, list_of_text))
-
 def _deabbreviate_jastrow(text):
     for abbreviation in _ORDERED_ABBREVIATIONS:
         text = _apply_regex(text, abbreviation)
@@ -1189,3 +1187,39 @@ def _apply_regex(text, abbreviation):
         last_start = match.end()
     pieces.append(text[last_start:])
     return "".join(pieces)
+
+def reformat_jastrow(text_or_list):
+    if type(text_or_list) == str:
+        return _reformat(text_or_list)
+    return tuple(map(_reformat, text_or_list))
+
+def _reformat(text):
+    sanitizer = _JastrowReformatter()
+    sanitizer.feed(text)
+    return "".join(sanitizer._out)
+
+_ADDITIONAL_TRANSLATION = re.compile("—\\d*\\)")
+
+# TODO: replace Book XXIV, 14 with Book 24:14
+
+class _JastrowReformatter(html.parser.HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self._out = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "b":
+            self._out.append("<br>")
+        self._out.append("<%s" % tag)
+        for attr in attrs:
+            self._out.append(' %s="%s"' %(attr[0], attr[1]))
+        self._out.append(">")
+
+    def handle_endtag(self, tag):
+        self._out.append("</%s>" % tag)
+
+    def handle_data(self, data):
+        if _ADDITIONAL_TRANSLATION.match(data):
+            self._out.append("<br>")
+            data = data.replace("—", "")
+        self._out.append(_deabbreviate_jastrow(data))
