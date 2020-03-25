@@ -53,7 +53,7 @@ def doTest():
             request_handler.amud_api_request(test_amud.masechet, test_amud.amud)))
         expected = json.loads(open(test_amud.output_file(), "r").read())
         if actual != expected:
-            raise AssertionError("Not equal for %s %s" % request)
+            raise AssertionError("Not equal for %s %s" % test_amud)
 
 def write_json(file_name, data):
     with open(file_name, "w") as output_file:

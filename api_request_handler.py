@@ -3,6 +3,7 @@
 
 from jastrow_reformat import reformat_jastrow
 from link_sanitizer import sanitize_sefaria_links
+from source_formatting.hebrew_small_to_emphasis import reformat_hebrew_small_text
 import re
 import requests
 
@@ -88,17 +89,21 @@ class ApiRequestHandler(object):
         if english_name not in commentary_dict:
             commentary_dict[english_name] = []
 
-        comment_english = sanitize_sefaria_links(comment["text"])
-        if english_name == "Jastrow":
-            comment_english = reformat_jastrow(comment_english)
-        if comment["he"] == comment_english:
+        hebrew = comment["he"]
+        english = comment["text"]
+        if hebrew == english:
             # Fix an issue where sometimes Sefaria returns the exact same text. For now, safe to
             # assume that the equivalent text is Hebrew
-            comment_english = ""
+            english = ""
+
+        hebrew = reformat_hebrew_small_text(hebrew)
+        english = sanitize_sefaria_links(english)
+        if english_name == "Jastrow":
+            english = reformat_jastrow(english)
 
         commentary_dict[english_name].append({
-            "he": comment["he"],
-            "en": comment_english,
+            "he": hebrew,
+            "en": english,
             "sourceRef": comment["sourceRef"],
             "sourceHeRef": comment["sourceHeRef"],
             })
