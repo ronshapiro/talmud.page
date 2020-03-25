@@ -56,40 +56,7 @@ class ApiRequestHandler(object):
 
         section_prefix = "%s %s:" %(sefaria_json["book"], amud)
         for comment in sefaria_json["commentary"]:
-            if len(comment["he"]) is 0 and \
-               len(comment["text"]) is 0:
-                continue
-
-            # TODO: question: if this spans multiple sections, is placing it in the first always correct?
-            section = int(comment["anchorRefExpanded"][0][len(section_prefix):]) - 1
-
-            if section >= len(result["sections"]):
-                print("Unplaceable comment:", comment["sourceRef"], comment["anchorRefExpanded"])
-                continue
-
-            commentary_dict = result["sections"][section]["commentary"]
-            matching_commentary_kind = _matching_commentary_kind(comment)
-            if not matching_commentary_kind:
-                continue
-
-            english_name = matching_commentary_kind["englishName"]
-            if english_name not in commentary_dict:
-                commentary_dict[english_name] = []
-
-            comment_english = sanitize_sefaria_links(comment["text"])
-            if english_name == "Jastrow":
-                comment_english = reformat_jastrow(comment_english)
-            if comment["he"] == comment_english:
-                # Fix an issue where sometimes Sefaria returns the exact same text. For now, safe to
-                # assume that the equivalent text is Hebrew
-                comment_english = ""
-
-            commentary_dict[english_name].append({
-                "he": comment["he"],
-                "en": comment_english,
-                "sourceRef": comment["sourceRef"],
-                "sourceHeRef": comment["sourceHeRef"],
-                })
+            self._add_comment_to_result(comment, result["sections"], section_prefix)
 
         last_section = result["sections"][len(result["sections"]) - 1]
         if HADRAN_PATTERN.findall(last_section["he"]):
@@ -99,6 +66,42 @@ class ApiRequestHandler(object):
             last_section["hadran"] = True
 
         return result
+
+    def _add_comment_to_result(self, comment, sections, section_prefix):
+        if len(comment["he"]) is 0 and \
+           len(comment["text"]) is 0:
+            return
+
+        # TODO: question: if this spans multiple sections, is placing it in the first always correct?
+        section = int(comment["anchorRefExpanded"][0][len(section_prefix):]) - 1
+
+        if section >= len(sections):
+            print("Unplaceable comment:", comment["sourceRef"], comment["anchorRefExpanded"])
+            return
+
+        commentary_dict = sections[section]["commentary"]
+        matching_commentary_kind = _matching_commentary_kind(comment)
+        if not matching_commentary_kind:
+            return
+
+        english_name = matching_commentary_kind["englishName"]
+        if english_name not in commentary_dict:
+            commentary_dict[english_name] = []
+
+        comment_english = sanitize_sefaria_links(comment["text"])
+        if english_name == "Jastrow":
+            comment_english = reformat_jastrow(comment_english)
+        if comment["he"] == comment_english:
+            # Fix an issue where sometimes Sefaria returns the exact same text. For now, safe to
+            # assume that the equivalent text is Hebrew
+            comment_english = ""
+
+        commentary_dict[english_name].append({
+            "he": comment["he"],
+            "en": comment_english,
+            "sourceRef": comment["sourceRef"],
+            "sourceHeRef": comment["sourceHeRef"],
+            })
 
 _COMMENTARIES = [
     {
