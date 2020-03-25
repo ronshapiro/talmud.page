@@ -178,8 +178,10 @@ class Renderer {
             "",
             tableRowOptions));
 
+        output.push(`<div class="single-commentator-container ${commentaryKind.className}">`);
         commentary.forEach(
           comment => output.push(this._commentRow(commentId, comment, commentaryKind)));
+        output.push(`</div>`);
       }
     }
     output.push(this._tableRow(showButtons.join(""), "", tableRowOptions));
