@@ -52,6 +52,7 @@ class ApiRequestHandler(object):
             result["sections"].append({
                 "he": hebrew[i],
                 "en": sanitize_sefaria_links(english[i]),
+                "ref": "%s.%s" %(sefaria_json["ref"], i + 1),
                 "commentary": {},
                 })
 
@@ -104,6 +105,7 @@ class ApiRequestHandler(object):
         commentary_dict[english_name].append({
             "he": hebrew,
             "en": english,
+            "ref": comment["ref"],
             "sourceRef": comment["sourceRef"],
             "sourceHeRef": comment["sourceHeRef"],
             })

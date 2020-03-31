@@ -85,7 +85,8 @@ class Renderer {
     options = options || {};
     var classes = _concat(["table-row"], options.classes);
 
-    var output = [`<div class="${classes.join(" ")}">`];
+    var attrs = (options.attrs || []).map(attr => `${attr[0]}="${attr[1]}"`).join(" ");
+    var output = [`<div class="${classes.join(" ")}" ${attrs}>`];
 
     var cellClasses = [];
 
@@ -121,6 +122,7 @@ class Renderer {
 
     var commentRowOptions = {
       classes: [commentId, "commentaryRow", commentaryKind.className],
+      attrs: [["sefaria-ref", comment.ref]],
     };
 
     if (commentaryKind.showTitle) {
@@ -272,10 +274,11 @@ class Renderer {
     for (var i = 0; i < containerData.sections.length; i++) {
       var section = containerData.sections[i];
       var sectionLabel = `${containerData.id}_section_${i+1}`;
-      output.push(`<div id="${sectionLabel}" class="section-container">`);
+      output.push(
+        `<div id="${sectionLabel}" class="section-container" sefaria-ref="${section["ref"]}" main-source="true">`);
 
       output.push(
-         this._tableRow(
+        this._tableRow(
           `<div class="gemara" id="${sectionLabel}-gemara">${section.he}</div>`,
           this._translationOption === "english-side-by-side" ? section.en : undefined));
 
@@ -330,6 +333,60 @@ class Renderer {
     english.css("-webkit-line-clamp", maxLines.toString());
   }
 }
+
+var findSefariaRefAndCorrespondingElement = function(node) {
+  while (node.parentElement) {
+    var ref = node.parentElement.getAttribute("sefaria-ref");
+    if (ref) {
+      return [ref, node.parentElement];
+    }
+    node = node.parentNode;
+  }
+  return [undefined, undefined];
+}
+
+document.addEventListener('selectionchange', () => {
+  var selection = document.getSelection();
+  if (selection.type !== "Range") {
+    hideSnackbar();
+    return;
+  }
+  var [ref,element] = findSefariaRefAndCorrespondingElement(selection.anchorNode);
+  if (!ref || ref !== findSefariaRefAndCorrespondingElement(selection.focusNode)[0]) {
+    hideSnackbar();
+    return;
+  }
+  var sefariaUrl = `https://www.sefaria.org/${ref.replace(/ /g, "_")}`;
+  displaySnackbar(ref, [
+    {
+      text: "View on Sefaria",
+      onClick: () => window.location = sefariaUrl,
+    },
+    {
+      text: "Report correction",
+      onClick: () => {
+        var subject = "Sefaria Text Correction from talmud.page";
+        var $element = $(element);
+        var text = $($(element).find(".hebrew")[0]).text();
+        var translation = $($(element).find(".english")[0]).text();
+        var body = [
+          `${ref} (${sefariaUrl})`,
+          text,
+        ];
+        if (translation && translation !== "") {
+          body.push(translation);
+        }
+        // trailing newline so that the description starts on its own line
+        body.push("Describe the error:<br>");
+
+        // replace() is necessary in case there are newlines in the text
+        body = body.join("<br><br>").replace(/\n/g, "<br><br>");
+        window.open(
+          `mailto:corrections@sefaria.org?subject=${subject}&body=${encodeURIComponent(body)}`)
+      },
+    },
+  ]);
+});
 
 class TalmudRenderer extends Renderer {
   constructor(translationOption) {

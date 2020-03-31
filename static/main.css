@@ -181,6 +181,12 @@ h2 {
     text-transform: none;
 }
 
+#snackbar .mdl-button {
+    min-height: 36px;
+    line-height: unset;
+    height: unset;
+}
+
 .section-container::after {
     content: "";
     clear: both;
