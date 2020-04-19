@@ -5,20 +5,28 @@
   {% include "header_common.html" %}
   <script src="/js/{{random_hash}}/snackbar.js"></script>
   <style>
-#center-content {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    margin-top: -100px;
+body, #main-contents, #center-content-container {
+  height: 100%;
+}
+@media only screen and (min-width: 600px) {
+  #center-content-container {
+      height: 80%;
+  }
+}
+#center-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.search-example {
+  display: inline-block;
 }
   </style>
 </head>
 <body>
   <div id="main-contents">
-    <div id="center-content">
+    <div id="center-content-container"><div id="center-contents">
       <br/>
       <h1>Read the Talmud</h1>
       <form action="/view_daf" method="post">
@@ -32,12 +40,12 @@
       </form>
 
       <p style="text-align: center">
-        e.g. Brachot 2a, Sukka 20a-21b, <span dir="rtl">פסחים 30:</span>, Shabbos 67b, Bava Metzia 13b to 14a</p>
+        e.g. <span class="search-example">Brachot 2a,</span> <span class="search-example">Sukka 20a-21b,</span> <span class="search-example"><span dir="rtl">פסחים 30:</span>,</span> <span class="search-example">Shabbos 67b,</span> <span class="search-example">Bava Metzia 13b to 14a</span></p>
 
       <p style="text-align: center; margin-top: 40px">
         <a href="/preferences">Preferences</a> &bull; <a href="mailto:feedback@talmud.page">Feedback</a></p>
 
-    </div>
+    </div></div> {# end center-contents-container #}
     {% include "snackbar.html" %}
   </div>
 </body>
