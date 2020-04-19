@@ -62,6 +62,7 @@ def write_json(file_name, data):
                   ensure_ascii = False,
                   indent = 2,
                   sort_keys = True)
+        output_file.write("\n")
 
 def setup():
     request_maker = api_request_handler.RealRequestMaker()
