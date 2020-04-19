@@ -4,6 +4,7 @@
 from jastrow_reformat import reformat_jastrow
 from link_sanitizer import sanitize_sefaria_links
 from source_formatting.hebrew_small_to_emphasis import reformat_hebrew_small_text
+from source_formatting.dibur_hamatchil import bold_diburei_hamatchil
 import re
 import requests
 
@@ -99,6 +100,7 @@ class ApiRequestHandler(object):
             english = ""
 
         hebrew = reformat_hebrew_small_text(hebrew)
+        hebrew = bold_diburei_hamatchil(hebrew, english_name)
         english = sanitize_sefaria_links(english)
         if english_name == "Jastrow":
             english = reformat_jastrow(english)
