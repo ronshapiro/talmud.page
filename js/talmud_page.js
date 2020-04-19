@@ -209,9 +209,9 @@ var setWindowTop = function(selector) {
 var firstFullyOnScreenSection = function() {
   var sections =
       _concat(
-        $(".gemara"),
+        $("#previous-amud-container"),
         $(".amudContainer"),
-        $("#previous-amud-container"));
+        $(".gemara"));
   for (var i = 0; i < sections.length; i++) {
     var viewTop = $(sections[i]).offset().top;
     var pageTop = window.visualViewport.pageTop;

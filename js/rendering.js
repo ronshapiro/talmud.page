@@ -40,10 +40,11 @@ var onceDocumentReady = {
   },
 }
 
-var _concat = function(list1, list2) {
+var _concat = function() {
   var result = [];
-  if (list1) result.push(...list1);
-  if (list2) result.push(...list2);
+  for (var i in arguments) {
+    if (arguments[i]) result.push(...arguments[i]);
+  }
   return result;
 }
 
