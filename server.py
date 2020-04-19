@@ -93,6 +93,7 @@ def page_not_found(e):
 # TODO: cache this
 @app.route("/api/<masechet>/<amud>")
 def amud_json(masechet, amud):
+    print(masechet, amud)
     return jsonify(api_request_handler.amud_api_request(masechet, amud))
 
 @app.route("/preferences")

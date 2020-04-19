@@ -275,8 +275,12 @@ class Renderer {
 
   _createContainerHtml(containerData) {
     var output = [`<h2>${containerData.title}</h2>`];
-    for (var i = 0; i < containerData.sections.length; i++) {
-      var section = containerData.sections[i];
+    var sections = containerData.sections || [];
+    if (containerData.loading) {
+      output.push('<div class="text-loading-spinner mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>');
+    }
+    for (var i = 0; i < sections.length; i++) {
+      var section = sections[i];
       var sectionLabel = `${containerData.id}_section_${i+1}`;
       output.push(
         `<div id="${sectionLabel}" class="section-container" sefaria-ref="${section["ref"]}" main-source="true">`);
@@ -324,10 +328,9 @@ class Renderer {
         var hebrewHeight = $(row).find(".hebrew").height();
         setMaxLines($(row));
       }
-
-      // Make sure mdl always registers new views correctly
-      componentHandler.upgradeAllRegistered();
     });
+    // Make sure mdl always registers new views correctly
+    componentHandler.upgradeAllRegistered();
   };
 
   _setMaxLines(row) {

@@ -52,11 +52,15 @@ var requestAmud = function(amud, directionFunction, options) {
   spinner = spinner.show();
   $("#results")[directionFunction](`<div id="${divId}" class="amudContainer">`);
   var metadata = amudMetadata();
+  var renderer = new TalmudRenderer(localStorage.translationOption || "both");
+  renderer.renderContainer({
+    title: `${metadata.masechet} ${amud}`,
+    loading: true
+  }, divId)
   $.ajax({url: `${location.origin}/api/${metadata.masechet}/${amud}`,
           type: "GET",
           success: function(results) {
-            new TalmudRenderer(localStorage.translationOption || "both")
-              .renderContainer(results, divId);
+            renderer.renderContainer(results, divId);
             refreshPageState();
             spinner.hide();
             if (options.callback) options.callback();
@@ -133,7 +137,6 @@ var main = function() {
 
   var amudRange = metadata.range();
   var $results = $("#results");
-  $results.hide();
   $("#previous-spinner").hide();
 
   var requestOptions = {
@@ -142,7 +145,6 @@ var main = function() {
     callback: function() {
       this.counter++;
       if (this.counter === this.pageCount) {
-        $results.show();
         $("#next-spinner").hide();
 
         var scrollToSection = location.hash;
