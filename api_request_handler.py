@@ -94,7 +94,8 @@ class ApiRequestHandler(object):
         english = comment["text"]
         if hebrew == english:
             # Fix an issue where sometimes Sefaria returns the exact same text. For now, safe to
-            # assume that the equivalent text is Hebrew
+            # assume that the equivalent text is Hebrew.
+            # TODO: this may no longer happen anymore
             english = ""
 
         hebrew = reformat_hebrew_small_text(hebrew)
