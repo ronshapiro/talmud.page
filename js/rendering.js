@@ -122,7 +122,10 @@ class Renderer {
 
     var commentRowOptions = {
       classes: [commentId, "commentaryRow", commentaryKind.className],
-      attrs: [["sefaria-ref", comment.ref]],
+      attrs: [
+        ["sefaria-ref", comment.ref],
+        ["commentary-kind", commentaryKind.englishName],
+      ],
     };
 
     if (commentaryKind.showTitle) {
@@ -334,15 +337,30 @@ class Renderer {
   }
 }
 
-var findSefariaRefAndCorrespondingElement = function(node) {
+var findSefariaRef = function(node) {
+  var isEnglish = false;
   while (node.parentElement) {
-    var ref = node.parentElement.getAttribute("sefaria-ref");
+    var $parentElement = $(node.parentElement);
+    isEnglish = isEnglish || $parentElement.hasClass("english");
+    var isTranslationOfSourceText = $parentElement.attr("commentary-kind") === "Translation";
+    var ref = $parentElement.attr("sefaria-ref");
     if (ref) {
-      return [ref, node.parentElement];
+      if (isEnglish && isTranslationOfSourceText) {
+        // Go up one layer to the main text
+        isEnglish = false;
+      } else {
+        return {
+          ref: ref,
+          text: $($parentElement.find(".hebrew")[0]).text(),
+          translation: isTranslationOfSourceText
+            ? undefined
+            : $($parentElement.find(".english")[0]).text(),
+        };
+      }
     }
     node = node.parentNode;
   }
-  return [undefined, undefined];
+  return {};
 }
 
 document.addEventListener('selectionchange', () => {
@@ -351,11 +369,14 @@ document.addEventListener('selectionchange', () => {
     hideSnackbar();
     return;
   }
-  var [ref,element] = findSefariaRefAndCorrespondingElement(selection.anchorNode);
-  if (!ref || ref !== findSefariaRefAndCorrespondingElement(selection.focusNode)[0]) {
+  var sefariaRef = findSefariaRef(selection.anchorNode);
+  if (!sefariaRef.ref
+      // If the selection spans multiple refs, ignore them all
+      || sefariaRef.ref !== findSefariaRef(selection.focusNode).ref) {
     hideSnackbar();
     return;
   }
+  var ref = sefariaRef.ref;
   var sefariaUrl = `https://www.sefaria.org/${ref.replace(/ /g, "_")}`;
   displaySnackbar(ref, [
     {
@@ -366,15 +387,12 @@ document.addEventListener('selectionchange', () => {
       text: "Report correction",
       onClick: () => {
         var subject = "Sefaria Text Correction from talmud.page";
-        var $element = $(element);
-        var text = $($(element).find(".hebrew")[0]).text();
-        var translation = $($(element).find(".english")[0]).text();
         var body = [
           `${ref} (${sefariaUrl})`,
-          text,
+          sefariaRef.text,
         ];
-        if (translation && translation !== "") {
-          body.push(translation);
+        if (sefariaRef.translation && sefariaRef.translation !== "") {
+          body.push(sefariaRef.translation);
         }
         // trailing newline so that the description starts on its own line
         body.push("Describe the error:<br>");
