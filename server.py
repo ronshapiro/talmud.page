@@ -74,21 +74,15 @@ def send_file_fn(name):
 def send_file_fn_with_ignored_pattern(name):
     return lambda ignored: send_file(name)
 
-STATIC_FILES = (
-    "main.css",
-    "rendering.js",
-    "snackbar.js",
-    "google_drive.js",
-    "talmud_page.js",
-    "preferences_page.js",
-)
-for name in STATIC_FILES:
-    extension = name[name.rindex(".") + 1:]
-    app.add_url_rule(
-        "/%s/<ignored>/%s" % (extension, name),
-        name,
-        send_file_fn_with_ignored_pattern("static/%s" % name))
+def serve_static_files(directory):
+    for name in os.listdir(directory):
+        app.add_url_rule(
+            "/%s/<ignored>/%s" % (directory, name),
+            name,
+            send_file_fn_with_ignored_pattern("%s/%s" % (directory, name)))
 
+serve_static_files("js")
+serve_static_files("css")
 # response = make_response(render_template('index.html', foo=42))
 # response.headers['X-Parachutes'] = 'parachutes are cool'
 
