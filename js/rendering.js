@@ -275,12 +275,11 @@ class Renderer {
 
   _createContainerHtml(containerData) {
     var output = [`<h2>${containerData.title}</h2>`];
-    var sections = containerData.sections || [];
     if (containerData.loading) {
       output.push('<div class="text-loading-spinner mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>');
     }
-    for (var i = 0; i < sections.length; i++) {
-      var section = sections[i];
+    for (var i = 0; i < containerData.sections.length; i++) {
+      var section = containerData.sections[i];
       var sectionLabel = `${containerData.id}_section_${i+1}`;
       output.push(
         `<div id="${sectionLabel}" class="section-container" sefaria-ref="${section["ref"]}" main-source="true">`);
@@ -289,7 +288,21 @@ class Renderer {
         this._tableRow(
           `<div class="gemara" id="${sectionLabel}-gemara">${section.he}</div>`,
           this._translationOption === "english-side-by-side" ? section.en : undefined));
+      if (section.commentary) {
+        output.push(this._commentaryRowOutput(sectionLabel, section.commentary));
+      }
 
+      output.push("</div>");
+    }
+    return output.join("");
+  }
+
+  _applyClientSideDataTransformations(containerData) {
+    if (!containerData.sections) {
+      containerData.sections = [];
+    }
+    for (var i = 0; i < containerData.sections.length; i++) {
+      var section = containerData.sections[i];
       var commentaries = section.commentary;
 
       if (commentaries) {
@@ -301,17 +314,15 @@ class Renderer {
           }
           delete commentaries.Steinsaltz;
         }
-        output.push(this._commentaryRowOutput(sectionLabel, commentaries));
       }
-      output.push("</div>");
     }
-    return output.join("");
   }
 
   // containerData is an awkward name, but "section" was already taken. Perhaps that can be changed
   // and then we can switch this over?
   renderContainer(containerData, divId) {
     debugResultsData[containerData.id] = containerData;
+    this._applyClientSideDataTransformations(containerData);
 
     var $container = $(`#${divId}`);
     $container.html(this._createContainerHtml(containerData));
