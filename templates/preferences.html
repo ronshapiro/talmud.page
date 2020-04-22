@@ -3,6 +3,7 @@
 <head>
   <title>{{title}}</title>
   {% include "header_common.html" %}
+  <script src="/js/{{random_hash}}/snackbar.js"></script>
   <script src="/js/{{random_hash}}/preferences_sample_data.js"></script>
   <script src="/js/{{random_hash}}/preferences_page.js"></script>
   <script src="/js/{{random_hash}}/rendering.js"></script>
@@ -15,6 +16,8 @@
 <body>
   <div id="main-contents">
     <h1>Preferences</h1>
+
+    {% include "snackbar.html" %}
   </div>
 </body>
 </html>

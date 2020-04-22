@@ -196,3 +196,7 @@ h2 {
 .single-commentator-container > *:first-child {
     padding-top: 0px;
 }
+#main-contents {
+    /* Provide space for the snacbkar. */
+    padding-bottom: 80px;
+}

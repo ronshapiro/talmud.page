@@ -398,6 +398,7 @@ var findSefariaRef = function(node) {
   return {};
 }
 
+// TODO: should this be in talmud_page.js?
 document.addEventListener('selectionchange', () => {
   var selection = document.getSelection();
   if (selection.type !== "Range") {

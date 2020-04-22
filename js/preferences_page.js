@@ -16,7 +16,7 @@ var TRANSLATION_OPTIONS = [
   },
 ];
 
-var radioSection = function(title, section, items, isCheckedFunction, newValueFunction) {
+var radioSection = function(title, section, items, currentValueFunction, newValueFunction) {
   var output = [
     `<div id="${section}">`,
     `<h3>${title}</h3>`,
@@ -26,7 +26,7 @@ var radioSection = function(title, section, items, isCheckedFunction, newValueFu
     var item = items[i];
     var id = `${section}-${item.value}`;
 
-    var checkedAttribute = isCheckedFunction(item) ? "checked" : "";
+    var checkedAttribute = item.value === currentValueFunction() ? "checked" : "";
     output.push(
       `<div>`,
       `<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="${id}">`,
@@ -42,7 +42,14 @@ var radioSection = function(title, section, items, isCheckedFunction, newValueFu
   $("#main-contents").append(output.join(""));
 
   $(`#${section} input`).click(function() {
-    newValueFunction($(`#${section} :checked`).attr("value"));
+    const maybeNewValue = $(`#${section} :checked`).attr("value");
+    if (maybeNewValue !== currentValueFunction()) {
+      newValueFunction(maybeNewValue);
+      displaySnackbar("Preferences saved!", [{
+        text: "Dismiss",
+        onClick: hideSnackbar,
+      }]);
+    }
   });
 }
 
@@ -55,12 +62,8 @@ var main = function() {
 
   localStorage.lastViewedVersionOfPreferencesPage = PREFERENCES_PAGE_VERSION;
   radioSection("Translation", "translation", TRANSLATION_OPTIONS,
-               function(item) {
-                 return localStorage.translationOption === item.value;
-               },
-               function(newValue) {
-                 localStorage.translationOption = newValue;
-               });
+               () => localStorage.translationOption,
+               newValue => localStorage.translationOption = newValue);
 
   TRANSLATION_OPTIONS.forEach(option => {
     var divId = `translationOptionExample-${option.value}`;
@@ -78,19 +81,22 @@ var main = function() {
   var showTranslationHeaderText =
       "Show Translation Button <br><small>(translation is always available by double-clicking the "
       + "Hebrew)</small>"
-  radioSection(showTranslationHeaderText, "show-translation", [
-    {
-      value: "yes",
-      displayText: "Yes",
-    },
-    {
-      value: "no",
-      displayText: "No",
-    }], function(item) {
-      return localStorage.showTranslationButton === item.value;
-    }, function(newValue) {
-      localStorage.showTranslationButton = newValue;
-    });
+  radioSection(
+    showTranslationHeaderText, "show-translation", [
+      {
+        value: "yes",
+        displayText: "Yes",
+      },
+      {
+        value: "no",
+        displayText: "No",
+      }
+    ],
+    () => localStorage.showTranslationButton,
+    newValue =>  localStorage.showTranslationButton = newValue);
+
+  // Make sure mdl always registers new views correctly
+  componentHandler.upgradeAllRegistered();
 };
 
 $(document).ready(main);
