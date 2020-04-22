@@ -41,15 +41,6 @@ var LAST_AMUD_PER_MASECHET = {
 var requestAmud = function(amud, directionFunction, options) {
   options = options || {}
   var divId = `amud-${amud}`;
-  var spinner = undefined;
-  if (directionFunction === "prepend") {
-    spinner = $("#previous-spinner");
-  } else if (directionFunction === "append") {
-    spinner = $("#next-spinner");
-  } else {
-    throw "Invalid directionFunction: " + directionFunction;
-  }
-  spinner = spinner.show();
   $("#results")[directionFunction](`<div id="${divId}" class="amudContainer">`);
   var metadata = amudMetadata();
   var renderer = new TalmudRenderer(localStorage.translationOption || "both");
@@ -62,7 +53,6 @@ var requestAmud = function(amud, directionFunction, options) {
           success: function(results) {
             renderer.renderContainer(results, divId);
             refreshPageState();
-            spinner.hide();
             if (options.callback) options.callback();
             gtag("event", "amud_loaded", {
               amud: amud,
@@ -137,7 +127,6 @@ var main = function() {
 
   var amudRange = metadata.range();
   var $results = $("#results");
-  $("#previous-spinner").hide();
 
   var requestOptions = {
     counter: 0,
@@ -145,8 +134,6 @@ var main = function() {
     callback: function() {
       this.counter++;
       if (this.counter === this.pageCount) {
-        $("#next-spinner").hide();
-
         var scrollToSection = location.hash;
         if (scrollToSection.length === 0) {
           var savedSection = "#" + localStorage.restoreSectionOnRefresh;
