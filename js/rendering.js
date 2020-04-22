@@ -194,7 +194,7 @@ class Renderer {
       output.push(this._tableRow(makeButton(commentaryKind, "hide-button"), "", tableRowOptions));
 
       output.push(`<div class="single-commentator-container ${commentaryKind.className}">`);
-      commentary.forEach(comment => {
+      commentary.comments.forEach(comment => {
         output.push(this._commentRow(commentId(commentaryKind), comment, commentaryKind));
       });
 
@@ -330,7 +330,7 @@ class Renderer {
           commentaries.Translation = commentaries.Steinsaltz;
           if (commentaries.Translation) {
             // e.g. Hadran sections have no steinsaltz
-            commentaries.Translation[0].en = section.en;
+            commentaries.Translation.comments[0].en = section.en;
           }
           delete commentaries.Steinsaltz;
         }

@@ -3,6 +3,9 @@ import argparse
 import json
 import sys
 
+def input_file_path(ref):
+    return f"test_data/api_request_handler/{ref}.input.json"
+
 class TestAmud(object):
     def __init__(self, masechet, amud):
         self.masechet = masechet
@@ -11,11 +14,7 @@ class TestAmud(object):
     def __str__(self):
         return "TestAmud(masechet = %s, amud = %s)" % (self.masechet, self.amud)
 
-    def input_file(self):
-        return "test_data/api_request_handler/%s.%s.input.json" % (
-            self.masechet, self.amud)
-
-    def output_file(self):
+    def output_file_path(self):
         return "test_data/api_request_handler/%s.%s.expected-output.json" % (
             self.masechet, self.amud)
 
@@ -31,8 +30,8 @@ parser.add_argument("--setup", action="store_const", const=True)
 args = parser.parse_args()
 
 class FakeRequestMaker(object):
-    def request_amud(self, masechet, amud):
-        with open(TestAmud(masechet, amud).input_file(), "r") as input_file:
+    def request_amud(self, ref):
+        with open(input_file_path(ref), "r") as input_file:
             return FakeResponse(input_file.read())
 
 
@@ -44,14 +43,13 @@ class FakeResponse(object):
     def json(self):
         return json.loads(self.text)
 
-request_handler = api_request_handler.ApiRequestHandler(FakeRequestMaker())
-
 def doTest():
+    request_handler = api_request_handler.ApiRequestHandler(FakeRequestMaker())
     for test_amud in test_amudim:
         # translating to, and then from, json normalizes things like python tuples -> json lists
         actual = json.loads(json.dumps(
             request_handler.amud_api_request(test_amud.masechet, test_amud.amud)))
-        expected = json.loads(open(test_amud.output_file(), "r").read())
+        expected = json.loads(open(test_amud.output_file_path(), "r").read())
         if actual != expected:
             raise AssertionError("Not equal for %s" % test_amud)
 
@@ -64,12 +62,19 @@ def write_json(file_name, data):
                   sort_keys = True)
         output_file.write("\n")
 
+class RecordingRequestMaker(object):
+    def __init__(self):
+        self._real_request_maker = api_request_handler.RealRequestMaker()
+
+    def request_amud(self, ref):
+        results = self._real_request_maker.request_amud(ref)
+        write_json(input_file_path(ref), results.json())
+        return results
+
 def setup():
-    request_maker = api_request_handler.RealRequestMaker()
+    request_handler = api_request_handler.ApiRequestHandler(RecordingRequestMaker())
     for test_amud in test_amudim:
-        write_json(test_amud.input_file(),
-                   request_maker.request_amud(test_amud.masechet, test_amud.amud).json())
-        write_json(test_amud.output_file(),
+        write_json(test_amud.output_file_path(),
                    request_handler.amud_api_request(test_amud.masechet, test_amud.amud))
 
 if args.setup:
