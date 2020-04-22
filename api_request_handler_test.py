@@ -30,7 +30,7 @@ parser.add_argument("--setup", action="store_const", const=True)
 args = parser.parse_args()
 
 class FakeRequestMaker(object):
-    def request_amud(self, ref):
+    async def request_amud(self, ref):
         with open(input_file_path(ref), "r") as input_file:
             return FakeResponse(input_file.read())
 
@@ -66,8 +66,8 @@ class RecordingRequestMaker(object):
     def __init__(self):
         self._real_request_maker = api_request_handler.RealRequestMaker()
 
-    def request_amud(self, ref):
-        results = self._real_request_maker.request_amud(ref)
+    async def request_amud(self, ref):
+        results = await self._real_request_maker.request_amud(ref)
         write_json(input_file_path(ref), results.json())
         return results
 

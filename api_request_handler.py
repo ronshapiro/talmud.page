@@ -5,37 +5,45 @@ from jastrow_reformat import reformat_jastrow
 from link_sanitizer import sanitize_sefaria_links
 from source_formatting.hebrew_small_to_emphasis import reformat_hebrew_small_text
 from source_formatting.dibur_hamatchil import bold_diburei_hamatchil
+import asyncio
+import httpx
 import re
-import requests
 
 HADRAN_PATTERN = re.compile("^(<br>)+<big><strong>הדרן עלך .*")
 BR_PREFIX = re.compile("^(<br>)+")
 
 class RealRequestMaker(object):
-    def request_amud(self, ref):
-        return requests.get(
-            # https://github.com/Sefaria/Sefaria-Project/wiki/API-Documentation
-            f"https://sefaria.org/api/texts/{ref}",
-            params = {
-                "commentary": "1",
-                # Even with wrapLinks=1, Jastrow (and perhaps more) is still wrapped. Instead, an active
-                # filtering is performed just in case.
-                "wrapLinks": "0",
-                # This shouldn't have a difference for the Gemara reqeusts, but it does expand the
-                # Rashi/Tosafot requests to have the entire amud's worth of commentary
-                "pad": "0",
-            })
+    async def request_amud(self, ref):
+        # TODO: it seems like the http client should be cached, but that causes errors with the
+        # event loop. httpx documents that the main benefits here are connection pooling, which
+        # would be nice since we connect to the same host repeatedly.
+        async with httpx.AsyncClient() as client:
+            return await client.get(
+                # https://github.com/Sefaria/Sefaria-Project/wiki/API-Documentation
+                f"https://sefaria.org/api/texts/{ref}",
+                params = {
+                    "commentary": "1",
+                    # Even with wrapLinks=1, Jastrow (and perhaps more) is still wrapped. Instead,
+                    # an active filtering is performed just in case.
+                    "wrapLinks": "0",
+                    # This shouldn't have a difference for the Gemara reqeusts, but it does expand
+                    # the Rashi/Tosafot requests to have the entire amud's worth of commentary
+                    "pad": "0",
+                })
 
 class ApiRequestHandler(object):
     def __init__(self, request_maker):
         self._request_maker = request_maker
 
-    def amud_api_request(self, masechet, amud):
-        sefaria_results = [
+    async def _make_requests(self, masechet, amud):
+        return await asyncio.gather(
             self._request_maker.request_amud(f"{masechet}.{amud}"),
             self._request_maker.request_amud(f"Rashi_on_{masechet}.{amud}"),
             self._request_maker.request_amud(f"Tosafot_on_{masechet}.{amud}"),
-        ]
+        )
+
+    def amud_api_request(self, masechet, amud):
+        sefaria_results = asyncio.run(self._make_requests(masechet, amud))
 
         bad_results = list(filter(lambda x: x.status_code is not 200, sefaria_results))
         def _create_error():
@@ -118,7 +126,9 @@ class ApiRequestHandler(object):
         if section >= len(sections):
             print("Unplaceable second level comment:",
                   comment["sourceRef"],
-                  comment["anchorRefExpanded"])
+                  comment["anchorRefExpanded"],
+                  comment["type"],
+                  comment["category"])
             return
 
         matching_commentary_kind = _matching_commentary_kind(comment)
