@@ -153,44 +153,55 @@ class Renderer {
     return output.join("");
   }
 
-  _commentaryRowOutput(sectionLabel, commentaries) {
-    var output = []
-
-    var tableRowOptions =
-        this._translationOption !== "english-side-by-side" ? {} : {overrideFullRow: true};
-    var showButtons = [];
+  _forEachCommentary(commentaries, action) {
     for (var i in this._commentaryTypes) {
       var commentaryKind = this._commentaryTypes[i];
       var commentary = commentaries[commentaryKind.englishName];
 
       if (commentary) {
-        var classes = [
-          "commentary_header",
-          commentaryKind.className,
-          commentaryKind.cssCategory
-        ].join(" ");
-        var commentId = `${sectionLabel}-${commentaryKind.className}`;
-        var extraAttrs = [
-          `tabindex="0"`,
-          `data-commentary="${commentaryKind.englishName}"`,
-          `data-section-label="${sectionLabel}"`,
-          `data-comment-id="${commentId}"`,
-        ].join(" ");
-        showButtons.push(
-          `<a class="${classes} show-button" ${extraAttrs}>${commentaryKind.hebrewName}</a>`);
-        output.push(
-          this._tableRow(
-            `<a class="${classes} hide-button" ${extraAttrs}>${commentaryKind.hebrewName}</a>`,
-            "",
-            tableRowOptions));
-
-        output.push(`<div class="single-commentator-container ${commentaryKind.className}">`);
-        commentary.forEach(
-          comment => output.push(this._commentRow(commentId, comment, commentaryKind)));
-        output.push(`</div>`);
+        action(commentary, commentaryKind);
       }
     }
+  }
+
+  _commentaryRowOutput(sectionLabel, commentaries) {
+    var commentId = commentaryKind => `${sectionLabel}-${commentaryKind.className}`;
+    var makeButton = (commentaryKind, clazz) => {
+      var classes = [
+        "commentary_header",
+        commentaryKind.className,
+        commentaryKind.cssCategory,
+        clazz,
+      ].join(" ");
+      var extraAttrs = [
+        `tabindex="0"`,
+        `data-commentary="${commentaryKind.englishName}"`,
+        `data-section-label="${sectionLabel}"`,
+        `data-comment-id="${commentId(commentaryKind)}"`,
+      ].join(" ");
+      return `<a class="${classes}" ${extraAttrs}>${commentaryKind.hebrewName}</a>`;
+    };
+
+    var output = []
+    var tableRowOptions =
+        this._translationOption !== "english-side-by-side" ? {} : {overrideFullRow: true};
+
+    this._forEachCommentary(commentaries, (commentary, commentaryKind) => {
+      output.push(this._tableRow(makeButton(commentaryKind, "hide-button"), "", tableRowOptions));
+
+      output.push(`<div class="single-commentator-container ${commentaryKind.className}">`);
+      commentary.forEach(comment => {
+        output.push(this._commentRow(commentId(commentaryKind), comment, commentaryKind));
+      });
+      output.push(`</div>`);
+    });
+
+    var showButtons = [];
+    this._forEachCommentary(commentaries, (commentary, commentaryKind) => {
+      showButtons.push(makeButton(commentaryKind, "show-button"));
+    });
     output.push(this._tableRow(showButtons.join(""), "", tableRowOptions));
+
     return output.join("");
   }
 
