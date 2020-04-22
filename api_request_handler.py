@@ -100,6 +100,10 @@ class ApiRequestHandler(object):
            len(comment["text"]) is 0:
             return
 
+        matching_commentary_kind = _matching_commentary_kind(comment)
+        if not matching_commentary_kind:
+            return
+
         # TODO: question: if this spans multiple sections, is placing it in the first always correct?
         section = int(comment["anchorRefExpanded"][0][len(section_prefix):]) - 1
 
@@ -108,9 +112,6 @@ class ApiRequestHandler(object):
             return
 
         commentary_dict = sections[section]["commentary"]
-        matching_commentary_kind = _matching_commentary_kind(comment)
-        if not matching_commentary_kind:
-            return
 
         english_name = matching_commentary_kind["englishName"]
         if english_name not in commentary_dict:
@@ -133,6 +134,14 @@ class ApiRequestHandler(object):
 
         matching_commentary_kind = _matching_commentary_kind(comment)
         if not matching_commentary_kind:
+            return
+
+        if first_level_commentary_name not in sections[section]["commentary"]:
+            print("Unplaceable second level comment:",
+                  comment["sourceRef"],
+                  comment["anchorRefExpanded"],
+                  comment["type"],
+                  comment["category"])
             return
 
         first_level_commentary = sections[section]["commentary"][first_level_commentary_name]
