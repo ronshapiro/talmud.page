@@ -165,6 +165,10 @@ class Renderer {
   }
 
   _commentaryRowOutput(sectionLabel, commentaries) {
+    if (!commentaries || commentaries.length === 0) {
+      return "";
+    }
+
     var commentId = commentaryKind => `${sectionLabel}-${commentaryKind.className}`;
     var makeButton = (commentaryKind, clazz) => {
       var classes = [
@@ -193,6 +197,10 @@ class Renderer {
       commentary.forEach(comment => {
         output.push(this._commentRow(commentId(commentaryKind), comment, commentaryKind));
       });
+
+      // Add nested commentaries, if any exist
+      output.push(this._commentaryRowOutput(commentId(commentaryKind), commentary.commentary));
+
       output.push(`</div>`);
     });
 
@@ -220,15 +228,16 @@ class Renderer {
       var label = showButton.data("comment-id")
       var hideButton = $container.find(`.hide-button[data-comment-id=${label}]`);
       var commentaryRows = $container.find(`.commentaryRow.${label}`);
+      var commentaryContainer = commentaryRows.parent(".single-commentator-container");
 
       // these functions need to capture the loop variables
-      var setShownState = function(showButton, hideButton, commentaryRows) {
+      var setShownState = function(showButton, hideButton, commentaryContainer) {
         return function(show) {
           setVisibility(showButton, !show);
           setVisibility(hideButton.parents(".table-row"), show);
-          setVisibility(commentaryRows, show);
+          setVisibility(commentaryContainer, show);
         }
-      }(showButton, hideButton, commentaryRows);
+      }(showButton, hideButton, commentaryContainer);
 
       setShownState(false);
 
