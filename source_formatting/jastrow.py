@@ -1,5 +1,4 @@
-import html
-import html.parser
+from source_formatting.html_parser import BaseHtmlTranslator
 import re
 
 _ABBREVIATIONS = [
@@ -1188,25 +1187,11 @@ def _apply_regex(text, abbreviation):
     pieces.append(text[last_start:])
     return "".join(pieces)
 
-def reformat_jastrow(text_or_list):
-    if type(text_or_list) == str:
-        return _reformat(text_or_list)
-    return tuple(map(_reformat, text_or_list))
-
-def _reformat(text):
-    sanitizer = _JastrowReformatter()
-    sanitizer.feed(text)
-    return "".join(sanitizer._out)
-
 _ADDITIONAL_TRANSLATION = re.compile("—\\d*\\)")
 
 # TODO: replace Book XXIV, 14 with Book 24:14
 
-class _JastrowReformatter(html.parser.HTMLParser):
-    def __init__(self):
-        super().__init__()
-        self._out = []
-
+class JastrowReformatter(BaseHtmlTranslator):
     def handle_starttag(self, tag, attrs):
         if tag == "b":
             self._out.append("<br>")

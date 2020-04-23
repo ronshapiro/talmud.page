@@ -1,21 +1,11 @@
+from source_formatting.html_parser import BaseHtmlTranslator
 import html
-import html.parser
 
-def sanitize_sefaria_links(text_or_list):
-    if type(text_or_list) == type([]):
-        return tuple(map(_sanitize, text_or_list))
-    return _sanitize(text_or_list)
-
-def _sanitize(text):
-    text = text.replace("&nbsp;", "__nbsp__")
-    sanitizer = _SefariaLinkSanitizer()
-    sanitizer.feed(text)
-    return "".join(sanitizer._out).replace("__nbsp__", "&nbsp;")
-
-class _SefariaLinkSanitizer(html.parser.HTMLParser):
-    def __init__(self):
-        super().__init__()
-        self._out = []
+class SefariaLinkSanitizer(BaseHtmlTranslator):
+    def _process_string(self, text):
+        text = text.replace("&nbsp;", "__nbsp__")
+        text = super()._process_string(text)
+        return text.replace("__nbsp__", "&nbsp;")
 
     def handle_starttag(self, tag, attrs):
         if tag == "a":

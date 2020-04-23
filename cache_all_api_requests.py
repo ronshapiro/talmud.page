@@ -1,6 +1,7 @@
 import api_request_handler
 import json
 import os
+import traceback
 
 def write_json(file_name, data):
     with open(file_name, "w") as output_file:
@@ -65,8 +66,11 @@ for masechet, last_amud in LAST_AMUD_PER_MASECHET.items():
                 write_json(file_path,
                            request_handler.amud_api_request(masechet, amud))
             except Exception as e:
-                print(f"{type(e)} raised: {e}")
+                print(f"Exception in {masechet} {amud}")
+                traceback.print_exc()
                 continue
         if amud == last_amud:
             break
         amud = next_amud(amud)
+    print(f"Finished {masechet}")
+print("Finished!")

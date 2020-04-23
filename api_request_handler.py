@@ -1,10 +1,10 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-from jastrow_reformat import reformat_jastrow
-from link_sanitizer import sanitize_sefaria_links
-from source_formatting.hebrew_small_to_emphasis import reformat_hebrew_small_text
+from source_formatting.jastrow import JastrowReformatter
+from source_formatting.hebrew_small_to_emphasis import HebrewSmallToEmphasisTagTranslator
 from source_formatting.dibur_hamatchil import bold_diburei_hamatchil
+from source_formatting.sefaria_link_sanitizer import SefariaLinkSanitizer
 import asyncio
 import httpx
 import re
@@ -69,11 +69,11 @@ class ApiRequestHandler(object):
             gemara_result = sefaria_results[0]
             return "Hebrew length != English length: %s" %(gemara_result.text), 500
 
-        sections = result["sections"] = []
+        sections = []
         for i in range(len(hebrew)):
             sections.append({
                 "he": hebrew[i],
-                "en": sanitize_sefaria_links(english[i]),
+                "en": SefariaLinkSanitizer.process(english[i]),
                 "ref": "%s.%s" %(gemara_json["ref"], i + 1),
                 "commentary": {},
                 })
@@ -86,13 +86,20 @@ class ApiRequestHandler(object):
         for comment in tosafot_json["commentary"]:
             self._add_second_level_comment_to_result(comment, sections, "Tosafot")
 
-        last_section = result["sections"][len(result["sections"]) - 1]
-        if HADRAN_PATTERN.findall(last_section["he"]):
-            last_section["he"] = BR_PREFIX.sub("<br>", last_section["he"])
-            last_section["en"] = ""
-            last_section["commentary"] = {}
-            last_section["hadran"] = True
+        if len(sections):
+            last_section = sections[len(sections) - 1]
+            if HADRAN_PATTERN.findall(last_section["he"]):
+                last_section["he"] = BR_PREFIX.sub("<br>", last_section["he"])
+                last_section["en"] = ""
+                last_section["commentary"] = {}
+                last_section["hadran"] = True
+        elif masechet == "Nazir" and amud == "33b":
+            # TODO: return some useful text, potentially an Easter egg?
+            pass # Nazir 33b has no Gemara, just Tosafot
+        else:
+            print(f"No sections for {masechet} {amud}")
 
+        result["sections"] = sections
         return result
 
     def _add_comment_to_result(self, comment, sections, section_prefix):
@@ -167,11 +174,11 @@ class ApiRequestHandler(object):
             # TODO: this may no longer happen anymore
             english = ""
 
-        hebrew = reformat_hebrew_small_text(hebrew)
+        hebrew = HebrewSmallToEmphasisTagTranslator.process(hebrew)
         hebrew = bold_diburei_hamatchil(hebrew, english_name)
-        english = sanitize_sefaria_links(english)
+        english = SefariaLinkSanitizer.process(english)
         if english_name == "Jastrow":
-            english = reformat_jastrow(english)
+            english = JastrowReformatter.process(english)
 
         return {
             "he": hebrew,
