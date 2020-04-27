@@ -11,9 +11,13 @@ from flask import request
 from flask import send_file
 from flask import url_for
 from masechtot import Masechtot
+import cachetools
+import datetime
+import math
 import os
 import random
 import string
+import sys
 
 random_hash = ''.join(random.choice(string.ascii_letters) for i in range(7))
 app = Flask(__name__)
@@ -90,11 +94,37 @@ serve_static_files("css")
 def page_not_found(e):
     return render_template('404_amud_not_found.html'), 404
 
-# TODO: cache this
+# This does not factor in cached strings, but that should not make much of a difference
+def json_size_in_memory(json_object):
+    if type(json_object) in (list, tuple):
+        return sys.getsizeof(json_object) + \
+            sum(map(json_size_in_memory, json_object))
+    elif type(json_object) is dict:
+        return sys.getsizeof(json_object) + \
+            sum(map(json_size_in_memory, json_object.keys())) + \
+            sum(map(json_size_in_memory, json_object.values()))
+    return sys.getsizeof(json_object)
+
+def next_smallest_power_of_2(ideal_value):
+    return 2 ** math.floor(math.log(ideal_value, 2))
+
+amud_cache = cachetools.LRUCache(
+    # cachetools documentation states that maxsize performs best if it is a power of 2
+    maxsize = next_smallest_power_of_2(
+        # 150MB, which gets translated into something closer to 134mb by next_smallest_power_of_2
+        150 * 1e6),
+    getsizeof = json_size_in_memory)
+
 @app.route("/api/<masechet>/<amud>")
 def amud_json(masechet, amud):
-    print(masechet, amud)
-    return jsonify(api_request_handler.amud_api_request(masechet, amud))
+    cache_key = (masechet, amud)
+    response = amud_cache.get(cache_key)
+    if not response:
+        print(f"Requesting {masechet} {amud}")
+        response = api_request_handler.amud_api_request(masechet, amud)
+    # no matter what, always update the LRU status
+    amud_cache[cache_key] = response
+    return jsonify(response)
 
 @app.route("/preferences")
 def preferences():
