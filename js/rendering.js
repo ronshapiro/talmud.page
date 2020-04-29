@@ -142,6 +142,8 @@ class Renderer {
       for (var i = 0; i < comment.he.length; i++) {
         output.push(this._tableRow(comment.he[i], comment.en[i], commentRowOptions));
       }
+    } else if (this._isSefariaReturningLongListsOfSingleCharacters(comment)) {
+      output.push(this._tableRow(comment.he.join(""), comment.en.join(""), commentRowOptions));
     } else {
       output.push(
         this._tableRow(
@@ -151,6 +153,17 @@ class Renderer {
     }
 
     return output.join("");
+  }
+
+  // https://github.com/Sefaria/Sefaria-Project/issues/541
+  _isSefariaReturningLongListsOfSingleCharacters(comment) {
+    if (!Array.isArray(comment.he) || !Array.isArray(comment.en)) {
+      return false;
+    }
+    const reducer = (numberOfSingleCharacters, x) =>
+          numberOfSingleCharacters + ((x.length === 1) ? 1 : 0);
+    // 3 is a guess of a reasonable minimum for detecting that this is a bug
+    return comment.he.reduce(reducer, 0) > 3 && comment.en.reduce(reducer, 0) > 3;
   }
 
   _forEachCommentary(commentaries, action) {
