@@ -412,29 +412,44 @@ var findSefariaRef = function(node) {
 }
 
 // TODO: should this be in talmud_page.js?
+var selectionChangeSnackbarShowing = false;
+const hideSelectionChangeSnackbar = (ref) => {
+  if (selectionChangeSnackbarShowing) {
+    gtag("event", "selection_change_snackbar.hidden", {ref: ref});
+    selectionChangeSnackbarShowing = false;
+    hideSnackbar();
+  }
+};
+
 document.addEventListener('selectionchange', () => {
   var selection = document.getSelection();
   if (selection.type !== "Range") {
-    hideSnackbar();
+    hideSelectionChangeSnackbar();
     return;
   }
   var sefariaRef = findSefariaRef(selection.anchorNode);
   if (!sefariaRef.ref
       // If the selection spans multiple refs, ignore them all
       || sefariaRef.ref !== findSefariaRef(selection.focusNode).ref) {
-    hideSnackbar();
+    hideSelectionChangeSnackbar(sefariaRef.ref);
     return;
   }
   var ref = sefariaRef.ref;
   var sefariaUrl = `https://www.sefaria.org/${ref.replace(/ /g, "_")}`;
+  gtag("event", "selection_change_snackbar.shown", {ref: ref});
+  selectionChangeSnackbarShowing = true;
   displaySnackbar(ref, [
     {
       text: "View on Sefaria",
-      onClick: () => window.location = sefariaUrl,
+      onClick: () => {
+        window.location = sefariaUrl;
+        gtag("event", "view_on_sefaria", {ref: ref});
+      },
     },
     {
       text: "Report correction",
       onClick: () => {
+        gtag("event", "report_correction", {ref: ref});
         var subject = "Sefaria Text Correction from talmud.page";
         var body = [
           `${ref} (${sefariaUrl})`,
