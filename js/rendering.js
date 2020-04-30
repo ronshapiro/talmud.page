@@ -459,12 +459,15 @@ document.addEventListener('selectionchange', () => {
           body.push(sefariaRef.translation);
         }
         // trailing newline so that the description starts on its own line
-        body.push("Describe the error:<br>");
+        body.push("Describe the error:\n");
 
-        // replace() is necessary in case there are newlines in the text
-        body = body.join("<br><br>").replace(/\n/g, "<br><br>");
-        window.open(
-          `mailto:corrections@sefaria.org?subject=${subject}&body=${encodeURIComponent(body)}`)
+        body = body.join("\n\n");
+        // TODO: verify the iOS versions. Also verify what non-Gmail clients do
+        if (/(Android|iPhone|iPad|iOS)/.test(navigator.userAgent)) {
+          body = body.replace(/\n/g, "<br><br>");
+        }
+        body = encodeURIComponent(body);
+        window.open(`mailto:corrections@sefaria.org?subject=${subject}&body=${body}`);
       },
     },
   ]);
