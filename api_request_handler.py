@@ -32,8 +32,9 @@ class RealRequestMaker(object):
                 })
 
 class ApiRequestHandler(object):
-    def __init__(self, request_maker):
+    def __init__(self, request_maker, print_function=print):
         self._request_maker = request_maker
+        self._print = print_function
 
     async def _make_requests(self, masechet, amud):
         return await asyncio.gather(
@@ -46,15 +47,15 @@ class ApiRequestHandler(object):
         sefaria_results = asyncio.run(self._make_requests(masechet, amud))
 
         bad_results = list(filter(lambda x: x.status_code is not 200, sefaria_results))
-        def _create_error():
-            return "\n".join(map(lambda x: x.text, bad_results)), 500
+        def _raise_bad_results_exception():
+            raise ApiException("\n".join(map(lambda x: x.text, bad_results)), 500, 1)
         if bad_results:
-            return _create_error()
+            _raise_bad_results_exception()
 
         try:
             results_as_json = list(map(lambda x: x.json(), sefaria_results))
         except:
-            return _create_error()
+            _raise_bad_results_exception()
 
         result = {"id": amud}
 
@@ -65,9 +66,9 @@ class ApiRequestHandler(object):
         hebrew = gemara_json["he"]
         english = gemara_json["text"]
 
+        # https://github.com/Sefaria/Sefaria-Project/issues/543
         if len(hebrew) != len(english):
-            gemara_result = sefaria_results[0]
-            return "Hebrew length != English length: %s" %(gemara_result.text), 500
+            raise ApiException("Hebrew length != English length", 500, 2)
 
         sections = []
         for i in range(len(hebrew)):
@@ -97,7 +98,7 @@ class ApiRequestHandler(object):
             # TODO: return some useful text, potentially an Easter egg?
             pass # Nazir 33b has no Gemara, just Tosafot
         else:
-            print(f"No sections for {masechet} {amud}")
+            self._print(f"No sections for {masechet} {amud}")
 
         result["sections"] = sections
         return result
@@ -115,7 +116,7 @@ class ApiRequestHandler(object):
         section = int(comment["anchorRefExpanded"][0][len(section_prefix):]) - 1
 
         if section >= len(sections):
-            print("Unplaceable comment:", comment["sourceRef"], comment["anchorRefExpanded"])
+            self._print("Unplaceable comment:", comment["sourceRef"], comment["anchorRefExpanded"])
             return
 
         commentary_dict = sections[section]["commentary"]
@@ -132,7 +133,7 @@ class ApiRequestHandler(object):
         section = int(ref_split[1]) - 1
 
         if section >= len(sections):
-            print("Unplaceable second level comment:",
+            self._print("Unplaceable second level comment:",
                   comment["sourceRef"],
                   comment["anchorRefExpanded"],
                   comment["type"],
@@ -144,7 +145,7 @@ class ApiRequestHandler(object):
             return
 
         if first_level_commentary_name not in sections[section]["commentary"]:
-            print("Unplaceable second level comment:",
+            self._print("Unplaceable second level comment:",
                   comment["sourceRef"],
                   comment["anchorRefExpanded"],
                   comment["type"],
@@ -187,6 +188,15 @@ class ApiRequestHandler(object):
             "sourceRef": comment["sourceRef"],
             "sourceHeRef": comment["sourceHeRef"],
         }
+
+
+class ApiException(Exception):
+    # TODO make constants for internal code
+    def __init__(self, message, http_status, internal_code):
+        super().__init__(message)
+        self.message = message
+        self.http_status = http_status
+        self.internal_code = internal_code
 
 
 _COMMENTARIES = [

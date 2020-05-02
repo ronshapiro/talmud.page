@@ -56,7 +56,9 @@ def next_amud(amud):
         return "%sb" % amud[:-1]
     return "%sa" % (int(amud[:-1]) + 1)
 
-request_handler = api_request_handler.ApiRequestHandler(api_request_handler.RealRequestMaker())
+request_handler = api_request_handler.ApiRequestHandler(
+    api_request_handler.RealRequestMaker(),
+    print_function = lambda *args: None)
 for masechet, last_amud in LAST_AMUD_PER_MASECHET.items():
     amud = "2a"
     while True:
@@ -65,6 +67,10 @@ for masechet, last_amud in LAST_AMUD_PER_MASECHET.items():
             try:
                 write_json(file_path,
                            request_handler.amud_api_request(masechet, amud))
+            except api_request_handler.ApiException as e:
+                print(f"ApiException in {masechet} {amud}: %s" %(e.message))
+                if e.internal_code == 1:
+                    continue
             except Exception as e:
                 print(f"Exception in {masechet} {amud}")
                 traceback.print_exc()

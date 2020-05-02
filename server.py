@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from api_request_handler import ApiRequestHandler
+from api_request_handler import ApiException
 from api_request_handler import RealRequestMaker
 from flask import Flask
 from flask import jsonify
@@ -18,6 +19,8 @@ import os
 import random
 import string
 import sys
+import traceback
+import uuid
 
 random_hash = ''.join(random.choice(string.ascii_letters) for i in range(7))
 app = Flask(__name__)
@@ -121,7 +124,15 @@ def amud_json(masechet, amud):
     response = amud_cache.get(cache_key)
     if not response:
         print(f"Requesting {masechet} {amud}")
-        response = api_request_handler.amud_api_request(masechet, amud)
+        try:
+            response = api_request_handler.amud_api_request(masechet, amud)
+        except ApiException as e:
+            return jsonify({"error": e.message, "code": e.internal_code}), e.http_status
+        except:
+            _uuid = str(uuid.uuid4())
+            print(f"Error with uuid: {_uuid}")
+            traceback.print_exc()
+            return jsonify({"error": "An unknown exception occurred", "id": _uuid})
     # no matter what, always update the LRU status
     amud_cache[cache_key] = response
     return jsonify(response)
