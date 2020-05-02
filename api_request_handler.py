@@ -82,10 +82,14 @@ class ApiRequestHandler(object):
         section_prefix = "%s %s:" %(gemara_json["book"], amud)
         for comment in gemara_json["commentary"]:
             self._add_comment_to_result(comment, sections, section_prefix)
+        rashi_section_prefix = f"Rashi on {section_prefix}"
         for comment in rashi_json["commentary"]:
-            self._add_second_level_comment_to_result(comment, sections, "Rashi")
+            self._add_second_level_comment_to_result(
+                comment, sections, rashi_section_prefix, "Rashi")
+        tosafot_section_prefix = f"Tosafot on {section_prefix}"
         for comment in tosafot_json["commentary"]:
-            self._add_second_level_comment_to_result(comment, sections, "Tosafot")
+            self._add_second_level_comment_to_result(
+                comment, sections, tosafot_section_prefix, "Tosafot")
 
         if len(sections):
             last_section = sections[len(sections) - 1]
@@ -112,10 +116,8 @@ class ApiRequestHandler(object):
         if not matching_commentary_kind:
             return
 
-        # TODO: question: if this spans multiple sections, is placing it in the first always correct?
-        section = int(comment["anchorRefExpanded"][0][len(section_prefix):]) - 1
-
-        if section >= len(sections):
+        section = self._find_matching_section_index(comment, section_prefix)
+        if section is None or section >= len(sections):
             self._print("Unplaceable comment:", comment["sourceRef"], comment["anchorRefExpanded"])
             return
 
@@ -128,11 +130,19 @@ class ApiRequestHandler(object):
         commentary_dict[english_name]["comments"].append(
             self._make_comment_json(comment, english_name))
 
-    def _add_second_level_comment_to_result(self, comment, sections, first_level_commentary_name):
-        ref_split = comment["anchorRefExpanded"][0].split(":")
-        section = int(ref_split[1]) - 1
+    def _find_matching_section_index(self, comment, section_prefix):
+        if "anchorRefExpanded" not in comment:
+            return
+        # TODO: question: if this spans multiple sections, is placing it in the first always correct?
+        for anchor in comment["anchorRefExpanded"]:
+            if anchor.startswith(section_prefix):
+                return int(anchor.split(":")[1]) - 1
 
-        if section >= len(sections):
+    def _add_second_level_comment_to_result(
+            self, comment, sections, section_prefix, first_level_commentary_name):
+        section = self._find_matching_section_index(comment, section_prefix)
+
+        if section is None or section >= len(sections):
             self._print("Unplaceable second level comment:",
                   comment["sourceRef"],
                   comment["anchorRefExpanded"],
