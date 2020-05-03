@@ -239,6 +239,7 @@ var main = function() {
 
   var amudRange = metadata.range();
   var $results = $("#results");
+  $results.hide();
 
   var requestOptions = {
     counter: 0,
@@ -246,6 +247,9 @@ var main = function() {
     callback: function() {
       this.counter++;
       if (this.counter === this.pageCount) {
+        $results.show();
+        $("#initial-load-spinner").hide();
+
         var scrollToSection = location.hash;
         if (scrollToSection.length === 0) {
           var savedSection = "#" + localStorage.restoreSectionOnRefresh;

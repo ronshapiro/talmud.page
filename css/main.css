@@ -111,6 +111,9 @@ h1, h2 {
     align-items: center;
     justify-content: center
 }
+#next-amud-container {
+    margin-top: 32px;
+}
 h1 {
     font-family: "David Libre";
     font-size:  4em;
@@ -170,7 +173,9 @@ h2 {
     display: block;
     margin: auto;
 }
-
+#initial-load-spinner {
+    padding-top: 20px;
+}
 .mdl-button {
     text-transform: none;
 }
