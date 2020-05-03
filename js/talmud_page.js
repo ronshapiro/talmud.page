@@ -1,41 +1,152 @@
-var LAST_AMUD_PER_MASECHET = {
-  "Arakhin": "34a",
-  "Avodah Zarah": "76b",
-  "Bava Batra": "176b",
-  "Bava Kamma": "119b",
-  "Bava Metzia": "119a",
-  "Beitzah": "40b",
-  "Bekhorot": "61a",
-  "Berakhot": "64a",
-  "Chagigah": "27a",
-  "Chullin": "142a",
-  "Eruvin": "105a",
-  "Gittin": "90b",
-  "Horayot": "14a",
-  "Keritot": "28b",
-  "Ketubot": "112b",
-  "Kiddushin": "82b",
-  "Makkot": "24b",
-  "Megillah": "32a",
-  "Meilah": "22a",
-  "Menachot": "110a",
-  "Moed Katan": "29a",
-  "Nazir": "66b",
-  "Nedarim": "91b",
-  "Niddah": "73a",
-  "Pesachim": "121b",
-  "Rosh Hashanah": "35a",
-  "Sanhedrin": "113b",
-  "Shabbat": "157b",
-  "Shevuot": "49b",
-  "Sotah": "49b",
-  "Sukkah": "56b",
-  "Taanit": "31a",
-  "Tamid": "33b",
-  "Temurah": "34a",
-  "Yevamot": "122b",
-  "Yoma": "88a",
-  "Zevachim": "120b",
+const MASECHET_AMUD_BOUNDS = {
+  "Arakhin": {
+    start: "2a",
+    end: "34a",
+  },
+  "Avodah Zarah": {
+    start: "2a",
+    end: "76b",
+  },
+  "Bava Batra": {
+    start: "2a",
+    end: "176b",
+  },
+  "Bava Kamma": {
+    start: "2a",
+    end: "119b",
+  },
+  "Bava Metzia": {
+    start: "2a",
+    end: "119a",
+  },
+  "Beitzah": {
+    start: "2a",
+    end: "40b",
+  },
+  "Bekhorot": {
+    start: "2a",
+    end: "61a",
+  },
+  "Berakhot": {
+    start: "2a",
+    end: "64a",
+  },
+  "Chagigah": {
+    start: "2a",
+    end: "27a",
+  },
+  "Chullin": {
+    start: "2a",
+    end: "142a",
+  },
+  "Eruvin": {
+    start: "2a",
+    end: "105a",
+  },
+  "Gittin": {
+    start: "2a",
+    end: "90b",
+  },
+  "Horayot": {
+    start: "2a",
+    end: "14a",
+  },
+  "Keritot": {
+    start: "2a",
+    end: "28b",
+  },
+  "Ketubot": {
+    start: "2a",
+    end: "112b",
+  },
+  "Kiddushin": {
+    start: "2a",
+    end: "82b",
+  },
+  "Makkot": {
+    start: "2a",
+    end: "24b",
+  },
+  "Megillah": {
+    start: "2a",
+    end: "32a",
+  },
+  "Meilah": {
+    start: "2a",
+    end: "22a",
+  },
+  "Menachot": {
+    start: "2a",
+    end: "110a",
+  },
+  "Moed Katan": {
+    start: "2a",
+    end: "29a",
+  },
+  "Nazir": {
+    start: "2a",
+    end: "66b",
+  },
+  "Nedarim": {
+    start: "2a",
+    end: "91b",
+  },
+  "Niddah": {
+    start: "2a",
+    end: "73a",
+  },
+  "Pesachim": {
+    start: "2a",
+    end: "121b",
+  },
+  "Rosh Hashanah": {
+    start: "2a",
+    end: "35a",
+  },
+  "Sanhedrin": {
+    start: "2a",
+    end: "113b",
+  },
+  "Shabbat": {
+    start: "2a",
+    end: "157b",
+  },
+  "Shevuot": {
+    start: "2a",
+    end: "49b",
+  },
+  "Sotah": {
+    start: "2a",
+    end: "49b",
+  },
+  "Sukkah": {
+    start: "2a",
+    end: "56b",
+  },
+  "Taanit": {
+    start: "2a",
+    end: "31a",
+  },
+  "Tamid": {
+    start: "25b", // note that this is NOT 2a
+    end: "33b",
+  },
+  "Temurah": {
+    start: "2a",
+    end: "34a",
+  },
+  "Yevamot": {
+    start: "2a",
+    end: "122b",
+  },
+  "Yoma": {
+    start: "2a",
+    end: "88a",
+  },
+  "Zevachim": {
+    start: "2a",
+    end: "120b",
+  },
 }
 
 var requestAmud = function(amud, directionFunction, options) {
@@ -102,8 +213,9 @@ var refreshPageState = function() {
   onceDocumentReady.execute(function() {
     var metadata = amudMetadata();
     // Note that these may still be hidden by their container if the full page hasn't loaded yet.
-    setVisibility($("#previous-amud-container"), metadata.amudStart !== "2a");
-    setVisibility($("#next-amud-container"), metadata.amudEnd !== LAST_AMUD_PER_MASECHET[metadata.masechet]);
+    const bounds = MASECHET_AMUD_BOUNDS[metadata.masechet];
+    setVisibility($("#previous-amud-container"), metadata.amudStart !== bounds.start);
+    setVisibility($("#next-amud-container"), metadata.amudEnd !== bounds.end);
 
     $("#previous-amud-button").text(`Load ${computePreviousAmud(metadata.amudStart)}`);
     $("#next-amud-button").text(`Load ${computeNextAmud(metadata.amudEnd)}`);

@@ -83,11 +83,13 @@ class ApiRequestHandler(object):
         for comment in gemara_json["commentary"]:
             self._add_comment_to_result(comment, sections, section_prefix)
         rashi_section_prefix = f"Rashi on {section_prefix}"
-        for comment in rashi_json["commentary"]:
+        # TODO: figure our what pages don't have Rashi so we can make an assertion if Rashi
+        # is _unexpectedly_ empty
+        for comment in rashi_json.get("commentary", []):
             self._add_second_level_comment_to_result(
                 comment, sections, rashi_section_prefix, "Rashi")
         tosafot_section_prefix = f"Tosafot on {section_prefix}"
-        for comment in tosafot_json["commentary"]:
+        for comment in tosafot_json.get("commentary", []):
             self._add_second_level_comment_to_result(
                 comment, sections, tosafot_section_prefix, "Tosafot")
 

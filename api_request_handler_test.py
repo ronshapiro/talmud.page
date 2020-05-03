@@ -25,7 +25,8 @@ test_amudim = (
     TestAmud("Niddah", "48b"),
     TestAmud("Nazir", "33b"), # Has no gemara, just Tosafot
     # TODO: make sure that the client side handles this correctly
-    TestAmud("Shabbat", "74b") # Has weird API response with nested comment text from Rosh
+    TestAmud("Shabbat", "74b"), # Has weird API response with nested comment text from Rosh
+    TestAmud("Tamid", "25b"), # No Rashi
 )
 
 parser = argparse.ArgumentParser(description='Test')
