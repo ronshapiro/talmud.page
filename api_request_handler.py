@@ -67,6 +67,12 @@ class ApiRequestHandler(object):
         english = gemara_json["text"]
 
         # https://github.com/Sefaria/Sefaria-Project/issues/543
+        if len(hebrew) - 1 == len(english) and "הדרן עלך" in hebrew[-1]:
+            english.append("")
+        # https://github.com/Sefaria/Sefaria-Project/issues/543#issuecomment-623061313
+        elif len(hebrew) + 1 == len(english) and masechet == "Kiddushin" and amud == "22b":
+            english = english[:-1]
+
         if len(hebrew) != len(english):
             raise ApiException("Hebrew length != English length", 500, 2)
 
