@@ -61,6 +61,7 @@ def amud(masechet, amud):
     canonical_masechet = masechtot.canonical_masechet_name(masechet)
     if canonical_masechet != masechet:
         return redirect(url_for("amud", masechet = canonical_masechet, amud = amud))
+    # TODO: verify daf exists
     return render_template(
         "talmud_page.html", title = "%s %s" %(masechet, amud))
 
@@ -70,6 +71,7 @@ def amud_range(masechet, start, end):
     if canonical_masechet != masechet:
         return redirect(url_for(
             "amud_range", masechet = canonical_masechet, start = start, end = end))
+    # TODO: verify daf exists
     return render_template(
         "talmud_page.html", title = "%s %s-%s" %(masechet, start, end))
 
@@ -90,8 +92,6 @@ def serve_static_files(directory):
 
 serve_static_files("js")
 serve_static_files("css")
-# response = make_response(render_template('index.html', foo=42))
-# response.headers['X-Parachutes'] = 'parachutes are cool'
 
 @app.errorhandler(404)
 def page_not_found(e):
@@ -120,6 +120,11 @@ amud_cache = cachetools.LRUCache(
 
 @app.route("/api/<masechet>/<amud>")
 def amud_json(masechet, amud):
+    canonical_masechet = masechtot.canonical_masechet_name(masechet)
+    if canonical_masechet != masechet:
+        return redirect(url_for("amud_json", masechet = canonical_masechet, amud = amud))
+    # TODO: verify daf exists
+
     cache_key = (masechet, amud)
     response = amud_cache.get(cache_key)
     if not response:
@@ -141,24 +146,7 @@ def amud_json(masechet, amud):
 def preferences():
     return render_template("preferences.html")
 
-FAVICON_FILES = (
-    "apple-icon-57x57.png",
-    "apple-icon-60x60.png",
-    "apple-icon-72x72.png",
-    "apple-icon-76x76.png",
-    "apple-icon-114x114.png",
-    "apple-icon-120x120.png",
-    "apple-icon-144x144.png",
-    "apple-icon-152x152.png",
-    "apple-icon-180x180.png",
-    "android-icon-192x192.png",
-    "favicon.ico",
-    "favicon-32x32.png",
-    "favicon-96x96.png",
-    "favicon-16x16.png",
-    "ms-icon-144x144.png",
-)
-for name in FAVICON_FILES:
+for name in os.listdir("favicon"):
     app.add_url_rule("/%s" % name, name, send_file_fn("favicon/%s" % name))
 
 @app.route("/manifest.json")
