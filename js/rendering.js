@@ -254,18 +254,17 @@ class Renderer {
 
       setShownState(false);
 
-      var setMaxLines = this._setMaxLines;
-      var clickListener = function(setShownState, commentaryRows, label) {
+      var clickListener = (setShownState, commentaryRows, label) => {
         var show = false;
         var maxLinesEvaluated = false;
-        return function(event) {
+        return (event) => {
           show = !show;
           setShownState(show);
 
           if (show && !maxLinesEvaluated) {
             maxLinesEvaluated = true;
             for (var j = 0; j < commentaryRows.length; j++) {
-              setMaxLines($(commentaryRows[j]));
+              this._setMaxLines($(commentaryRows[j]));
             }
           }
           var element = $(event.toElement);
@@ -274,8 +273,9 @@ class Renderer {
             commentary: element.data("commentary") || "<translation>",
             section: element.data("section-label") || label.replace("-translation", ""),
           });
-        }
-      }(setShownState, commentaryRows, label);
+        };
+      };
+      clickListener = clickListener(setShownState, commentaryRows, label);
 
       showButton.click(clickListener);
       hideButton.click(clickListener);
@@ -362,15 +362,11 @@ class Renderer {
     this._setCommentaryButtons($container);
     this._setEnglishClickListeners($container);
 
-    var setMaxLines = this._setMaxLines;
-    onceDocumentReady.execute(function() {
-      var englishTexts = $container.find(".english-div");
-      // this works because the view has 1 character, so the height should be == 1 line.
+    onceDocumentReady.execute(() => {
       var rows = $container.find(".table-row");
       for (var j = 0; j < rows.length; j++) {
         var row = $(rows[j])[0];
-        var hebrewHeight = $(row).find(".hebrew").height();
-        setMaxLines($(row));
+        this._setMaxLines($(row));
       }
     });
     // Make sure mdl always registers new views correctly
@@ -378,8 +374,8 @@ class Renderer {
   };
 
   _setMaxLines(row) {
-    var hebrew = $(row.children()[0])
-    var english = $(row.find(".english-div")[0])
+    var hebrew = $(row.children()[0]);
+    var english = $(row.find(".english-div")[0]);
     var maxLines = Math.floor(hebrew.height() / english.height());
     english.css("-webkit-line-clamp", maxLines.toString());
   }
