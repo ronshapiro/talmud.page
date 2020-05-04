@@ -1,59 +1,6 @@
 import hebrew
 import re
 
-MASECHTOT = {
-    "Arakhin": ("Arachin", "ערכין",),
-    "Avodah Zarah": ("Avoda Zarah", "Avoda Zara", "Avodah Zara", "עבודה זרה",),
-    "Bava Batra": ("Bava Basra", "בבא בתרא",),
-    "Bava Kamma": ("Bava Kama", "בבא קמא",),
-    "Bava Metzia": ("Bava Metziah", "Bava Metsia", "Bava Metsiah",
-                    "Bava Metsiah", "Bava Metsia", "Bava Metsiah",
-                    "בבא מציעא",),
-    "Beitzah": ("Beitza", "Beitsah", "Beitsa", "ביצה",),
-    "Bekhorot": ("Bechorot", "Bechoros", "Bekhoros", "בכורות",),
-    "Berakhot": ("Berachot", "Brachot", "Brakhot",
-                 "Berachos", "Brachos", "Brakhos", "Berakhos",
-                 "ברכות",),
-    "Chagigah": ("Chagiga", "Khagigah", "Khagiga", "חגיגה",),
-    "Chullin": ("Chulin", "Hulin", "Hullin", "חולין",),
-    "Eruvin": ("עירובין",),
-    "Gittin": ("Gitin", "גיטין",),
-    "Horayot": ("Horayos", "הוריות",),
-    "Keritot": ("Ceritot", "Kritot", "Critot"
-                "Kerisos", "Cerisos", "Krisos", "Crisos",
-                "כריתות",),
-    "Ketubot": ("Ktubot",
-                "Kesubos", "Ksubos", "כתובות",),
-    "Kiddushin": ("Kidushin", "קידושין",),
-    "Makkot": ("Makot", "Macot", "Maccot",
-               "Makos", "Macos", "Maccos", "Makkos",
-               "מכות",),
-    "Megillah": ("Megilla", "Megila", "Megilah", "מגילה",),
-    "Meilah": ("Meila", "מעילה",),
-    "Menachot": ("Menakhot", "Menachos", "Menakhos", "מנחות",),
-    "Moed Katan": ("Moed Catan", "מועד קטן",),
-    "Nazir": ("נזיר",),
-    "Nedarim": ("נדרים",),
-    "Niddah": ("Nidda", "Nidah", "Nida", "נדה",),
-    "Pesachim": ("פסחים",),
-    "Rosh Hashanah": ("Rosh Hashana", "Rosh Hoshona", "Rosh Hoshonah",
-                      "ראש השנה",),
-    "Sanhedrin": ("סנהדרין",),
-    "Shabbat": ("Shabat", "Chabbat", "Chabat",
-                "Shabos", "Chabbos", "Chabos",
-                "Shabbas", "Shabbos",
-                "שבת",),
-    "Shevuot": ("Shevuos", "שבועות",),
-    "Sotah": ("Sota", "Sottah", "Sotta", "סוטה",),
-    "Sukkah": ("Sukka", "Suka", "Succah", "Succa", "סוכה",),
-    "Taanit": ("Taanit", "Taanis", "Tanit", "Tanis", "תענית",),
-    "Tamid": ("תמיד",),
-    "Temurah": ("Temura", "תמורה",),
-    "Yevamot": ("Yevamos", "יבמות",),
-    "Yoma": ("Yuma", "Yomah", "Yumah", "יומא",),
-    "Zevachim": ("Zvachim", "Zevakhim", "זבחים",),
-}
-
 _MULTIPLE_SPACES = re.compile("  +")
 
 _AMUD_ALEPH_OPTIONS = ("a", ".")
@@ -76,13 +23,224 @@ def _daf_without_aleph_or_bet(amud):
     elif _ALL_HEBREW_LETTERS.match(amud):
         return hebrew.numeric_literal_as_int(amud)
 
+class Masechet(object):
+    def __init__(self, canonical_name, aliases = (), start = "2a", end = None):
+        self.canonical_name = canonical_name
+        if type(aliases) is str:
+            aliases = tuple([aliases])
+        self.aliases = aliases
+        self.start = start
+        self.end = end
+
+MASECHTOT = [
+    Masechet(
+        canonical_name = "Arakhin",
+        aliases = ("Arachin", "ערכין"),
+        end = "34a",
+    ),
+    Masechet(
+        canonical_name = "Avodah Zarah",
+        aliases = ("Avoda Zarah", "Avoda Zara", "Avodah Zara", "עבודה זרה"),
+        end = "76b",
+    ),
+    Masechet(
+        canonical_name = "Bava Batra",
+        aliases = ("Bava Basra", "בבא בתרא"),
+        end = "176b",
+    ),
+    Masechet(
+        canonical_name = "Bava Kamma",
+        aliases = ("Bava Kama", "בבא קמא"),
+        end = "119b",
+    ),
+    Masechet(
+        canonical_name = "Bava Metzia",
+        aliases = ("Bava Metziah", "Bava Metsia", "Bava Metsiah",
+                   "Bava Metsiah", "Bava Metsia", "Bava Metsiah",
+                   "בבא מציעא"),
+        end = "119a",
+    ),
+    Masechet(
+        canonical_name = "Beitzah",
+        aliases = ("Beitza", "Beitsah", "Beitsa", "ביצה"),
+        end = "40b",
+    ),
+    Masechet(
+        canonical_name = "Bekhorot",
+        aliases = ("Bechorot", "Bechoros", "Bekhoros", "בכורות"),
+        end = "61a",
+    ),
+    Masechet(
+        canonical_name = "Berakhot",
+        aliases = ("Berachot", "Brachot", "Brakhot",
+                   "Berachos", "Brachos", "Brakhos", "Berakhos",
+                   "ברכות"),
+        end = "64a",
+    ),
+    Masechet(
+        canonical_name = "Chagigah",
+        aliases = ("Chagiga", "Khagigah", "Khagiga", "חגיגה"),
+        end = "27a",
+    ),
+    Masechet(
+        canonical_name = "Chullin",
+        aliases = ("Chulin", "Hulin", "Hullin", "חולין"),
+        end = "142a",
+    ),
+    Masechet(
+        canonical_name = "Eruvin",
+        aliases = ("עירובין"),
+        end = "105a",
+    ),
+    Masechet(
+        canonical_name = "Gittin",
+        aliases = ("Gitin", "גיטין"),
+        end = "90b",
+    ),
+    Masechet(
+        canonical_name = "Horayot",
+        aliases = ("Horayos", "הוריות"),
+        end = "14a",
+    ),
+    Masechet(
+        canonical_name = "Keritot",
+        aliases = ("Ceritot", "Kritot", "Critot"
+                   "Kerisos", "Cerisos", "Krisos", "Crisos",
+                   "כריתות"),
+        end = "28b",
+    ),
+    Masechet(
+        canonical_name = "Ketubot",
+        aliases = ("Ktubot",
+                   "Kesubos", "Ksubos",
+                   "כתובות"),
+        end = "112b",
+    ),
+    Masechet(
+        canonical_name = "Kiddushin",
+        aliases = ("Kidushin", "קידושין"),
+        end = "82b",
+    ),
+    Masechet(
+        canonical_name = "Makkot",
+        aliases = ("Makot", "Macot", "Maccot",
+                   "Makos", "Macos", "Maccos", "Makkos",
+                   "מכות"),
+        end = "24b",
+    ),
+    Masechet(
+        canonical_name = "Megillah",
+        aliases = ("Megilla", "Megila", "Megilah", "מגילה"),
+        end = "32a",
+    ),
+    Masechet(
+        canonical_name = "Meilah",
+        aliases = ("Meila", "מעילה"),
+        end = "22a",
+    ),
+    Masechet(
+        canonical_name = "Menachot",
+        aliases = ("Menakhot", "Menachos", "Menakhos", "מנחות"),
+        end = "110a",
+    ),
+    Masechet(
+        canonical_name = "Moed Katan",
+        aliases = ("Moed Catan", "מועד קטן"),
+        end = "29a",
+    ),
+    Masechet(
+        canonical_name = "Nazir",
+        aliases = ("נזיר"),
+        end = "66b",
+    ),
+    Masechet(
+        canonical_name = "Nedarim",
+        aliases = ("נדרים"),
+        end = "91b",
+    ),
+    Masechet(
+        canonical_name = "Niddah",
+        aliases = ("Nidda", "Nidah", "Nida", "נדה"),
+        end = "73a",
+    ),
+    Masechet(
+        canonical_name = "Pesachim",
+        aliases = ("פסחים"),
+        end = "121b",
+    ),
+    Masechet(
+        canonical_name = "Rosh Hashanah",
+        aliases = ("Rosh Hashana", "Rosh Hoshona", "Rosh Hoshonah",
+                   "ראש השנה"),
+        end = "35a",
+    ),
+    Masechet(
+        canonical_name = "Sanhedrin",
+        aliases = ("סנהדרין"),
+        end = "113b",
+    ),
+    Masechet(
+        canonical_name = "Shabbat",
+        aliases = ("Shabat", "Chabbat", "Chabat",
+                   "Shabos", "Chabbos", "Chabos",
+                   "Shabbas", "Shabbos",
+                   "שבת"),
+        end = "157b",
+    ),
+    Masechet(
+        canonical_name = "Shevuot",
+        aliases = ("Shevuos", "שבועות"),
+        end = "49b",
+    ),
+    Masechet(
+        canonical_name = "Sotah",
+        aliases = ("Sota", "Sottah", "Sotta", "סוטה"),
+        end = "49b",
+    ),
+    Masechet(
+        canonical_name = "Sukkah",
+        aliases = ("Sukka", "Suka", "Succah", "Succa", "סוכה"),
+        end = "56b",
+    ),
+    Masechet(
+        canonical_name = "Taanit",
+        aliases = ("Taanit", "Taanis", "Tanit", "Tanis", "תענית"),
+        end = "31a",
+    ),
+    Masechet(
+        canonical_name = "Tamid",
+        aliases = ("Tammid", "תמיד"),
+        start = "25b",
+        end = "33b",
+    ),
+    Masechet(
+        canonical_name = "Temurah",
+        aliases = ("Temura", "תמורה"),
+        end = "34a",
+    ),
+    Masechet(
+        canonical_name = "Yevamot",
+        aliases = ("Yevamos", "יבמות"),
+        end = "122b",
+    ),
+    Masechet(
+        canonical_name = "Yoma",
+        aliases = ("Yuma", "Yomah", "Yumah", "יומא"),
+        end = "88a",
+    ),
+    Masechet(
+        canonical_name = "Zevachim",
+        aliases = ("Zvachim", "Zevakhim", "זבחים"),
+        end = "120b"),
+]
+
 class Masechtot(object):
     def __init__(self):
         self._masechet_name_index = {}
-        for canonical_name, aliases in MASECHTOT.items():
-            self._masechet_name_index[canonical_name.lower()] = canonical_name
-            for alias in aliases:
-                self._masechet_name_index[alias.lower()] = canonical_name
+        for masechet in MASECHTOT:
+            self._masechet_name_index[masechet.canonical_name.lower()] = masechet.canonical_name
+            for alias in masechet.aliases:
+                self._masechet_name_index[alias.lower()] = masechet.canonical_name
 
     def _canonical_masechet_name_or_none(self, name):
         name = name.lower().replace("'", "").replace("-", "")
