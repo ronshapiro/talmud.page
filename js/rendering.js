@@ -359,6 +359,7 @@ class Renderer {
 
     var $container = $(`#${divId}`);
     $container.html(this._createContainerHtml(containerData));
+
     this._setCommentaryButtons($container);
     this._setEnglishClickListeners($container);
 
@@ -377,7 +378,9 @@ class Renderer {
     var hebrew = $(row.children()[0]);
     var english = $(row.find(".english-div")[0]);
     var maxLines = Math.floor(hebrew.height() / english.height());
-    english.css("-webkit-line-clamp", maxLines.toString());
+    if (maxLines > 1) { // Also checks that maxLines is not NaN
+      english.css("-webkit-line-clamp", maxLines.toString());
+    }
   }
 }
 
