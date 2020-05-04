@@ -463,7 +463,7 @@ document.addEventListener('selectionchange', () => {
         body = body.join("\n\n");
         // TODO: verify the iOS versions. Also verify what non-Gmail clients do
         if (/(Android|iPhone|iPad|iOS)/.test(navigator.userAgent)) {
-          body = body.replace(/\n/g, "<br><br>");
+          body = body.replace(/\n/g, "<br>");
         }
         body = encodeURIComponent(body);
         window.open(`mailto:corrections@sefaria.org?subject=${subject}&body=${body}`);
