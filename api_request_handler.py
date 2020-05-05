@@ -141,7 +141,11 @@ class ApiRequestHandler(object):
     def _find_matching_section_index(self, comment, section_prefix):
         if "anchorRefExpanded" not in comment:
             return
-        # TODO: question: if this spans multiple sections, is placing it in the first always correct?
+        # TODO: question: if this spans multiple sections, is placing it in the first always
+        # correct?
+        # TODO: if the comment spans multiple pages, this could place it at the first mentioned
+        # section in the first page, and then duplicate it at the first section in the following
+        # page
         for anchor in comment["anchorRefExpanded"]:
             if anchor.startswith(section_prefix):
                 return int(anchor.split(":")[1]) - 1
