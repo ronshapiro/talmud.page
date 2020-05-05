@@ -4,7 +4,7 @@ jQuery.fn.extend({
     if (!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)) {
       this.click(function(event) {
         var lastTime = this.lastTime || 0;
-        var now = new Date().getTime();
+        const now = new Date().getTime();
         if (now - lastTime <= 1000) {
           fn(event);
           this.lastTime = 0;
@@ -19,9 +19,9 @@ jQuery.fn.extend({
   }
 });
 
-var debugResultsData = {}
+const debugResultsData = {}
 
-var onceDocumentReady = {
+const onceDocumentReady = {
   ready: false,
   queue: [],
   execute: function(fn) {
@@ -40,15 +40,15 @@ var onceDocumentReady = {
   },
 }
 
-var _concat = function() {
-  var result = [];
+const _concat = function() {
+  const result = [];
   for (var i in arguments) {
     if (arguments[i]) result.push(...arguments[i]);
   }
   return result;
 }
 
-var setVisibility = function(element, toShow) {
+const setVisibility = function(element, toShow) {
   if (toShow) {
     element.show();
   } else {
@@ -65,7 +65,7 @@ class Renderer {
   _makeCell(text, dir, classes) {
     classes = classes || [];
     classes.push("table-cell");
-    var classAttribute = classes ? `class="${classes.join(" ")}"` : "";
+    const classAttribute = classes ? `class="${classes.join(" ")}"` : "";
     return `<div dir="${dir}" ${classAttribute}>${text}</div>`;
   }
 
@@ -84,12 +84,12 @@ class Renderer {
 
   _tableRow(hebrew, english, options) {
     options = options || {};
-    var classes = _concat(["table-row"], options.classes);
+    const classes = _concat(["table-row"], options.classes);
 
-    var attrs = (options.attrs || []).map(attr => `${attr[0]}="${attr[1]}"`).join(" ");
-    var output = [`<div class="${classes.join(" ")}" ${attrs}>`];
+    const attrs = (options.attrs || []).map(attr => `${attr[0]}="${attr[1]}"`).join(" ");
+    const output = [`<div class="${classes.join(" ")}" ${attrs}>`];
 
-    var cellClasses = [];
+    const cellClasses = [];
 
     if ((this._isEmptyText(hebrew) || this._isEmptyText(english)) &&
         !options.overrideFullRow) {
@@ -119,9 +119,9 @@ class Renderer {
   }
 
   _commentRow(commentId, comment, commentaryKind) {
-    var output = [];
+    const output = [];
 
-    var commentRowOptions = {
+    const commentRowOptions = {
       classes: [commentId, "commentaryRow", commentaryKind.className],
       attrs: [
         ["sefaria-ref", comment.ref],
@@ -168,8 +168,8 @@ class Renderer {
 
   _forEachCommentary(commentaries, action) {
     for (var i in this._commentaryTypes) {
-      var commentaryKind = this._commentaryTypes[i];
-      var commentary = commentaries[commentaryKind.englishName];
+      const commentaryKind = this._commentaryTypes[i];
+      const commentary = commentaries[commentaryKind.englishName];
 
       if (commentary) {
         action(commentary, commentaryKind);
@@ -182,15 +182,15 @@ class Renderer {
       return "";
     }
 
-    var commentId = commentaryKind => `${sectionLabel}-${commentaryKind.className}`;
-    var makeButton = (commentaryKind, clazz) => {
-      var classes = [
+    const commentId = commentaryKind => `${sectionLabel}-${commentaryKind.className}`;
+    const makeButton = (commentaryKind, clazz) => {
+      const classes = [
         "commentary_header",
         commentaryKind.className,
         commentaryKind.cssCategory,
         clazz,
       ].join(" ");
-      var extraAttrs = [
+      const extraAttrs = [
         `tabindex="0"`,
         `data-commentary="${commentaryKind.englishName}"`,
         `data-section-label="${sectionLabel}"`,
@@ -199,8 +199,8 @@ class Renderer {
       return `<a class="${classes}" ${extraAttrs}>${commentaryKind.hebrewName}</a>`;
     };
 
-    var output = []
-    var tableRowOptions =
+    const output = []
+    const tableRowOptions =
         this._translationOption !== "english-side-by-side" ? {} : {overrideFullRow: true};
 
     this._forEachCommentary(commentaries, (commentary, commentaryKind) => {
@@ -217,7 +217,7 @@ class Renderer {
       output.push(`</div>`);
     });
 
-    var showButtons = [];
+    const showButtons = [];
     this._forEachCommentary(commentaries, (commentary, commentaryKind) => {
       showButtons.push(makeButton(commentaryKind, "show-button"));
     });
@@ -235,16 +235,16 @@ class Renderer {
   }
 
   _setCommentaryButtons($container) {
-    var showButtons = $container.find(".show-button");
+    const showButtons = $container.find(".show-button");
     for (var i = 0; i < showButtons.length; i++) {
-      var showButton = $(showButtons[i]);
-      var label = showButton.data("comment-id")
-      var hideButton = $container.find(`.hide-button[data-comment-id=${label}]`);
-      var commentaryRows = $container.find(`.commentaryRow.${label}`);
-      var commentaryContainer = commentaryRows.parent(".single-commentator-container");
+      const showButton = $(showButtons[i]);
+      const label = showButton.data("comment-id")
+      const hideButton = $container.find(`.hide-button[data-comment-id=${label}]`);
+      const commentaryRows = $container.find(`.commentaryRow.${label}`);
+      const commentaryContainer = commentaryRows.parent(".single-commentator-container");
 
       // these functions need to capture the loop variables
-      var setShownState = function(showButton, hideButton, commentaryContainer) {
+      const setShownState = function(showButton, hideButton, commentaryContainer) {
         return function(show) {
           setVisibility(showButton, !show);
           setVisibility(hideButton.parents(".table-row"), show);
@@ -267,7 +267,7 @@ class Renderer {
               this._setMaxLines($(commentaryRows[j]));
             }
           }
-          var element = $(event.toElement);
+          const element = $(event.toElement);
           gtag("event", show ? "commentary_viewed" : "commentary_hidden", {
             // these two || alternatives are kinda hacks, but they do the job for now
             commentary: element.data("commentary") || "<translation>",
@@ -293,9 +293,9 @@ class Renderer {
   };
 
   _setEnglishClickListeners($container) {
-    var sections = $container.find(".english-div");
+    const sections = $container.find(".english-div");
     for (var i = 0; i < sections.length; i++) {
-      var section = $(sections[i]);
+      const section = $(sections[i]);
       section.betterDoubleClick(this._englishClickListener(section));
     }
   };
@@ -307,13 +307,13 @@ class Renderer {
   }
 
   _createContainerHtml(containerData) {
-    var output = [`<h2>${containerData.title}</h2>`];
+    const output = [`<h2>${containerData.title}</h2>`];
     if (containerData.loading) {
       output.push('<div class="text-loading-spinner mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>');
     }
     for (var i = 0; i < containerData.sections.length; i++) {
-      var section = containerData.sections[i];
-      var sectionLabel = `${containerData.id}_section_${i+1}`;
+      const section = containerData.sections[i];
+      const sectionLabel = `${containerData.id}_section_${i+1}`;
       output.push(
         `<div id="${sectionLabel}" class="section-container" sefaria-ref="${section["ref"]}" main-source="true">`);
 
@@ -335,8 +335,8 @@ class Renderer {
       containerData.sections = [];
     }
     for (var i = 0; i < containerData.sections.length; i++) {
-      var section = containerData.sections[i];
-      var commentaries = section.commentary;
+      const section = containerData.sections[i];
+      const commentaries = section.commentary;
 
       if (commentaries) {
         if (this._translationOption === "both") {
@@ -357,16 +357,16 @@ class Renderer {
     debugResultsData[containerData.id] = containerData;
     this._applyClientSideDataTransformations(containerData);
 
-    var $container = $(`#${divId}`);
+    const $container = $(`#${divId}`);
     $container.html(this._createContainerHtml(containerData));
 
     this._setCommentaryButtons($container);
     this._setEnglishClickListeners($container);
 
     onceDocumentReady.execute(() => {
-      var rows = $container.find(".table-row");
-      for (var j = 0; j < rows.length; j++) {
-        var row = $(rows[j])[0];
+      const rows = $container.find(".table-row");
+      for (var i = 0; i < rows.length; i++) {
+        const row = $(rows[i])[0];
         this._setMaxLines($(row));
       }
     });
@@ -375,22 +375,22 @@ class Renderer {
   };
 
   _setMaxLines(row) {
-    var hebrew = $(row.children()[0]);
-    var english = $(row.find(".english-div")[0]);
-    var maxLines = Math.floor(hebrew.height() / english.height());
+    const hebrew = $(row.children()[0]);
+    const english = $(row.find(".english-div")[0]);
+    const maxLines = Math.floor(hebrew.height() / english.height());
     if (maxLines > 1) { // Also checks that maxLines is not NaN
       english.css("-webkit-line-clamp", maxLines.toString());
     }
   }
 }
 
-var findSefariaRef = function(node) {
+const findSefariaRef = function(node) {
   var isEnglish = false;
   while (node.parentElement) {
-    var $parentElement = $(node.parentElement);
+    const $parentElement = $(node.parentElement);
     isEnglish = isEnglish || $parentElement.hasClass("english");
-    var isTranslationOfSourceText = $parentElement.attr("commentary-kind") === "Translation";
-    var ref = $parentElement.attr("sefaria-ref");
+    const isTranslationOfSourceText = $parentElement.attr("commentary-kind") === "Translation";
+    const ref = $parentElement.attr("sefaria-ref");
     if (ref) {
       if (isEnglish && isTranslationOfSourceText) {
         // Go up one layer to the main text
@@ -421,20 +421,20 @@ const hideSelectionChangeSnackbar = (ref) => {
 };
 
 document.addEventListener('selectionchange', () => {
-  var selection = document.getSelection();
+  const selection = document.getSelection();
   if (selection.type !== "Range") {
     hideSelectionChangeSnackbar();
     return;
   }
-  var sefariaRef = findSefariaRef(selection.anchorNode);
+  const sefariaRef = findSefariaRef(selection.anchorNode);
   if (!sefariaRef.ref
       // If the selection spans multiple refs, ignore them all
       || sefariaRef.ref !== findSefariaRef(selection.focusNode).ref) {
     hideSelectionChangeSnackbar(sefariaRef.ref);
     return;
   }
-  var ref = sefariaRef.ref;
-  var sefariaUrl = `https://www.sefaria.org/${ref.replace(/ /g, "_")}`;
+  const ref = sefariaRef.ref;
+  const sefariaUrl = `https://www.sefaria.org/${ref.replace(/ /g, "_")}`;
   gtag("event", "selection_change_snackbar.shown", {ref: ref});
   selectionChangeSnackbarShowing = true;
   displaySnackbar(ref, [
@@ -449,7 +449,7 @@ document.addEventListener('selectionchange', () => {
       text: "Report correction",
       onClick: () => {
         gtag("event", "report_correction", {ref: ref});
-        var subject = "Sefaria Text Correction from talmud.page";
+        const subject = "Sefaria Text Correction from talmud.page";
         var body = [
           `${ref} (${sefariaUrl})`,
           sefariaRef.text,
@@ -478,7 +478,7 @@ class TalmudRenderer extends Renderer {
   }
 
   static _defaultCommentaryTypes() {
-    var commentaryTypes = [
+    const commentaryTypes = [
       {
         englishName: "Translation",
         hebrewName: "Translation",
@@ -575,7 +575,7 @@ class TalmudRenderer extends Renderer {
       },
     ];
 
-    var steinsaltz = {
+    const steinsaltz = {
       englishName: "Steinsaltz",
       hebrewName: "שטיינזלץ",
       className: "translation",

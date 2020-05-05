@@ -1,7 +1,7 @@
 // TODO: maybe this should live in snackbar?
-var PREFERENCES_PAGE_VERSION = 1;
+const PREFERENCES_PAGE_VERSION = 1;
 
-var TRANSLATION_OPTIONS = [
+const TRANSLATION_OPTIONS = [
   {
     value: "english-side-by-side",
     displayText: "English (side-by-side)",
@@ -16,17 +16,17 @@ var TRANSLATION_OPTIONS = [
   },
 ];
 
-var radioSection = function(title, section, items, currentValueFunction, newValueFunction) {
-  var output = [
+const radioSection = function(title, section, items, currentValueFunction, newValueFunction) {
+  const output = [
     `<div id="${section}">`,
     `<h3>${title}</h3>`,
   ];
 
-  for (var i in items) {
-    var item = items[i];
-    var id = `${section}-${item.value}`;
+  for (const i in items) {
+    const item = items[i];
+    const id = `${section}-${item.value}`;
 
-    var checkedAttribute = item.value === currentValueFunction() ? "checked" : "";
+    const checkedAttribute = item.value === currentValueFunction() ? "checked" : "";
     output.push(
       `<div>`,
       `<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="${id}">`,
@@ -53,7 +53,7 @@ var radioSection = function(title, section, items, currentValueFunction, newValu
   });
 }
 
-var main = function() {
+const main = function() {
   gtag("set", {
     "preferences_page": true,
   });
@@ -66,7 +66,7 @@ var main = function() {
                newValue => localStorage.translationOption = newValue);
 
   TRANSLATION_OPTIONS.forEach(option => {
-    var divId = `translationOptionExample-${option.value}`;
+    const divId = `translationOptionExample-${option.value}`;
     $("#translation").append(`<div id="${divId}" class="amudContainer" />`);
 
     new TalmudRenderer(option.value).renderContainer(
@@ -78,7 +78,7 @@ var main = function() {
       divId);
   });
 
-  var showTranslationHeaderText =
+  const showTranslationHeaderText =
       "Show Translation Button <br><small>(translation is always available by double-clicking the "
       + "Hebrew)</small>"
   radioSection(

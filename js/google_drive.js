@@ -1,5 +1,5 @@
 // The discoveryDoc is seemingly "loaded into" the gapi.client JS object
-var _APIS = [
+const _APIS = [
   {
     discoveryDoc: "https://docs.googleapis.com/$discovery/rest?version=v1",
     apiScope: "https://www.googleapis.com/auth/documents",
@@ -15,7 +15,7 @@ var _APIS = [
 ];
 
 
-var checkNotUndefined = function(value, string) {
+const checkNotUndefined = function(value, string) {
   if (value === undefined) {
     throw "undefined " + value;
   }
@@ -83,7 +83,7 @@ class DriveClient {
       q: "appProperties has { key='talmud.page' and value='database' }",
     }).then(response => {
       if (response.status === 200) {
-        var files = response.result.files;
+        const files = response.result.files;
         if (files.length === 0) {
           this.createSpreadsheetDatabase();
         } else if (files.length === 1) {
@@ -142,7 +142,7 @@ class DriveClient {
 
 // do not submit: make sure to check all response codes
 
-var driveClient = new DriveClient(
+const driveClient = new DriveClient(
   '709056533343-uei1uvpotrhfqg2nttbckhbcjunms8uu.apps.googleusercontent.com', // client id
   'AIzaSyCVV8_I0SrTxXrOeCR51GYtb8cJSX62I_Q', // api key
 );
