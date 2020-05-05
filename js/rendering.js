@@ -313,6 +313,9 @@ class Renderer {
     }
     for (var i = 0; i < containerData.sections.length; i++) {
       const section = containerData.sections[i];
+      if (i !== 0 && section.steinsaltz_start_of_sugya) {
+        output.push('<br class="sugya-separator">');
+      }
       const sectionLabel = `${containerData.id}_section_${i+1}`;
       output.push(
         `<div id="${sectionLabel}" class="section-container" sefaria-ref="${section["ref"]}" main-source="true">`);

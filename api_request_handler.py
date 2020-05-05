@@ -9,8 +9,12 @@ import asyncio
 import httpx
 import re
 
-HADRAN_PATTERN = re.compile("^(<br>)+<big><strong>הדרן עלך .*")
-BR_PREFIX = re.compile("^(<br>)+")
+_HADRAN_PATTERN = re.compile("^(<br>)+<big><strong>הדרן עלך .*")
+_BR_PREFIX = re.compile("^(<br>)+")
+
+_ALEPH = "א"
+_TAV = "ת"
+_STEINSALTZ_SUGYA_START = re.compile("^<big>[%s-%s]" %(_ALEPH, _TAV))
 
 class RealRequestMaker(object):
     async def request_amud(self, ref):
@@ -99,10 +103,18 @@ class ApiRequestHandler(object):
             self._add_second_level_comment_to_result(
                 comment, sections, tosafot_section_prefix, "Tosafot")
 
+        for section in sections:
+            commentary = section["commentary"]
+            if "Steinsaltz" not in commentary:
+                continue # i.e. Hadran
+            steinsaltz = commentary["Steinsaltz"]["comments"][0]["he"]
+            if _STEINSALTZ_SUGYA_START.findall(steinsaltz):
+                section["steinsaltz_start_of_sugya"] = True
+
         if len(sections):
             last_section = sections[len(sections) - 1]
-            if HADRAN_PATTERN.findall(last_section["he"]):
-                last_section["he"] = BR_PREFIX.sub("<br>", last_section["he"])
+            if _HADRAN_PATTERN.findall(last_section["he"]):
+                last_section["he"] = _BR_PREFIX.sub("<br>", last_section["he"])
                 last_section["en"] = ""
                 last_section["commentary"] = {}
                 last_section["hadran"] = True
