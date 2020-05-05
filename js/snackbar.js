@@ -9,8 +9,7 @@ const updateSnackbar = function(labelHtml, buttons) {
   } else if (!buttons.length) {
     buttons = [buttons];
   }
-  for (var i in buttons) {
-    const button = buttons[i]
+  for (const button of buttons) {
     buttonsDiv.append(
       `<button class="mdl-button mdl-js-button mdl-button--colored">${button.text}</button>`);
   }

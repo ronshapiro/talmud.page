@@ -119,8 +119,8 @@ const main = function() {
       }
     }
   }
-  for (var i in amudRange) {
-    requestAmud(amudRange[i], "append", requestOptions);
+  for (const amud of amudRange) {
+    requestAmud(amud, "append", requestOptions);
   }
 
   $("#previous-amud-container").click(addPreviousAmud);
@@ -164,12 +164,12 @@ const firstFullyOnScreenSection = function() {
         $("#previous-amud-container"),
         $(".amudContainer"),
         $(".gemara"));
-  for (var i = 0; i < sections.length; i++) {
-    const viewTop = $(sections[i]).offset().top;
+  for (const section of sections) {
+    const viewTop = $(section).offset().top;
     const pageTop = window.visualViewport.pageTop;
     const pageHeight = window.visualViewport.height;
     if (viewTop >= pageTop && viewTop <= pageTop + pageHeight) {
-      return sections[i];
+      return section;
     }
   }
 }

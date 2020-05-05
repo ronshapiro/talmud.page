@@ -1,4 +1,3 @@
-// TODO: rewrite all loops to use .forEach
 jQuery.fn.extend({
   betterDoubleClick: function(fn) {
     if (!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)) {
@@ -42,8 +41,8 @@ const onceDocumentReady = {
 
 const _concat = function() {
   const result = [];
-  for (var i in arguments) {
-    if (arguments[i]) result.push(...arguments[i]);
+  for (const arg of arguments) {
+    if (arg) result.push(...arg);
   }
   return result;
 }
@@ -167,10 +166,8 @@ class Renderer {
   }
 
   _forEachCommentary(commentaries, action) {
-    for (var i in this._commentaryTypes) {
-      const commentaryKind = this._commentaryTypes[i];
+    for (const commentaryKind of this._commentaryTypes) {
       const commentary = commentaries[commentaryKind.englishName];
-
       if (commentary) {
         action(commentary, commentaryKind);
       }
@@ -263,8 +260,8 @@ class Renderer {
 
           if (show && !maxLinesEvaluated) {
             maxLinesEvaluated = true;
-            for (var j = 0; j < commentaryRows.length; j++) {
-              this._setMaxLines($(commentaryRows[j]));
+            for (const row of commentaryRows) {
+              this._setMaxLines($(row));
             }
           }
           const element = $(event.toElement);
@@ -335,8 +332,7 @@ class Renderer {
     if (!containerData.sections) {
       containerData.sections = [];
     }
-    for (var i = 0; i < containerData.sections.length; i++) {
-      const section = containerData.sections[i];
+    for (const section of containerData.sections) {
       const commentaries = section.commentary;
 
       if (commentaries) {

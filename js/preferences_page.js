@@ -22,8 +22,7 @@ const radioSection = function(title, section, items, currentValueFunction, newVa
     `<h3>${title}</h3>`,
   ];
 
-  for (const i in items) {
-    const item = items[i];
+  for (const item of items) {
     const id = `${section}-${item.value}`;
 
     const checkedAttribute = item.value === currentValueFunction() ? "checked" : "";
