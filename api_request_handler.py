@@ -168,10 +168,10 @@ class ApiRequestHandler(object):
 
         if section is None or section >= len(sections):
             self._print("Unplaceable second level comment:",
-                  comment["sourceRef"],
-                  comment["anchorRefExpanded"],
-                  comment["type"],
-                  comment["category"])
+                        comment["sourceRef"],
+                        comment["anchorRefExpanded"],
+                        comment["type"],
+                        comment["category"])
             return
 
         matching_commentary_kind = _matching_commentary_kind(comment)
@@ -180,10 +180,10 @@ class ApiRequestHandler(object):
 
         if first_level_commentary_name not in sections[section]["commentary"]:
             self._print("Unplaceable second level comment:",
-                  comment["sourceRef"],
-                  comment["anchorRefExpanded"],
-                  comment["type"],
-                  comment["category"])
+                        comment["sourceRef"],
+                        comment["anchorRefExpanded"],
+                        comment["type"],
+                        comment["category"])
             return
 
         first_level_commentary = sections[section]["commentary"][first_level_commentary_name]

@@ -301,9 +301,7 @@ class Renderer {
   };
 
   _englishClickListener(element) {
-    return function() {
-      element.toggleClass("line-clampable");
-    };
+    return () => element.toggleClass("line-clampable");
   }
 
   _createContainerHtml(containerData) {
