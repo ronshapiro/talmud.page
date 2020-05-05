@@ -232,7 +232,7 @@ class ApiException(Exception):
         self.http_status = http_status
         self.internal_code = internal_code
 
-
+# TODO: Sync commentaries data and expose it as a route as a JS file
 _COMMENTARIES = [
     {
         "englishName": "Translation",
@@ -256,6 +256,10 @@ _COMMENTARIES = [
         "englishName": "Tosafot",
     },
     {
+        "englishName": "Rabbeinu Chananel",
+        "englishNamePattern": re.compile("^Rabbeinu Chananel on .*"),
+    },
+    {
         "englishName": "Ramban",
     },
     {
@@ -268,6 +272,10 @@ _COMMENTARIES = [
     {
         "englishName": "Maharshal",
         "englishNamePattern": re.compile("(Chokhmat Shlomo on .*|Chokhmat Shlomo)"),
+    },
+    {
+        "englishName": "Meir Lublin",
+        "englishNamePattern": re.compile("^Maharam$"),
     },
     {
         "englishName": "Rosh",

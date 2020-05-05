@@ -516,6 +516,11 @@ class TalmudRenderer extends Renderer {
         className: "tosafot"
       },
       {
+        englishName: "Rabbeinu Chananel",
+        hebrewName: 'ר"ח',
+        className: "rabbeinu-chananel",
+      },
+      {
         englishName: "Ramban",
         hebrewName: 'רמב״ן',
         className: "ramban"
@@ -534,6 +539,11 @@ class TalmudRenderer extends Renderer {
         englishName: "Maharshal",
         hebrewName: 'מהרש"ל',
         className: "maharshal",
+      },
+      {
+        englishName: "Meir Lublin",
+        hebrewName: 'מהר"ם לובלין',
+        className: "meir-lublin",
       },
       {
         englishName: "Rosh",
