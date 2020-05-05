@@ -14,3 +14,7 @@
         name: "Check Python tests"
         entry: pre-commit/check_python_tests.sh
         language: script
+    -   id: check-use-strict
+        name: "Check use strict in JS"
+        entry: pre-commit/check_use_strict.sh
+        language: script

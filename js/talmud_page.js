@@ -1,3 +1,5 @@
+"use strict";
+
 const requestAmud = function(amud, directionFunction, options) {
   options = options || {}
   const divId = `amud-${amud}`;

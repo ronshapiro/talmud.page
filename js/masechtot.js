@@ -1,3 +1,5 @@
+"use strict";
+
 const MASECHTOT = {
   "Arakhin": {
     "end": "34a",

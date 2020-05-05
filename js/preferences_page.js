@@ -1,3 +1,5 @@
+"use strict";
+
 // TODO: maybe this should live in snackbar?
 const PREFERENCES_PAGE_VERSION = 1;
 

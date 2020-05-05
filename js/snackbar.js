@@ -1,3 +1,5 @@
+"use strict";
+
 const moveSnackbarOffscreen = () => $("#snackbar").css("bottom", -400);
 const hideSnackbar = () => $("#snackbar").animate({"bottom": -400});
 
@@ -38,7 +40,7 @@ const hasSeenPreferencesSnackbarEnough = function() {
   return parseInt(localStorage.preferencePageCounter) < 3;
 }
 
-PREFERENCES_PAGE_SNACKBAR_COUNT_MAX = 3;
+const PREFERENCES_PAGE_SNACKBAR_COUNT_MAX = 3;
 
 $(document).ready(function() {
   moveSnackbarOffscreen();
