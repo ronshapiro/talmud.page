@@ -50,13 +50,9 @@ def search_handler():
                                 masechet = parsed.masechet,
                                 start = parsed.start,
                                 end = parsed.end))
-    else:
-        return redirect(url_for("amud",
-                                masechet = parsed.masechet,
-                                amud = parsed.start))
-
-    # TODO: proper error page
-    raise ValueError(query)
+    return redirect(url_for("amud",
+                            masechet = parsed.masechet,
+                            amud = parsed.start))
 
 def _validate_amudim(masechet, *amudim):
     print(amudim)

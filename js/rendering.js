@@ -391,7 +391,7 @@ const findSefariaRef = function(node) {
     isEnglish = isEnglish || $parentElement.hasClass("english");
     const isTranslationOfSourceText = $parentElement.attr("commentary-kind") === "Translation";
     const ref = $parentElement.attr("sefaria-ref");
-    if (ref) {
+    if (ref && ref !== "synthetic") {
       if (isEnglish && isTranslationOfSourceText) {
         // Go up one layer to the main text
         isEnglish = false;

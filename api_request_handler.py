@@ -18,9 +18,10 @@ _STEINSALTZ_SUGYA_START = re.compile("^<big>[%s-%s]" %(_ALEPH, _TAV))
 
 class RealRequestMaker(object):
     async def request_amud(self, ref):
-        # TODO: it seems like the http client should be cached, but that causes errors with the
-        # event loop. httpx documents that the main benefits here are connection pooling, which
-        # would be nice since we connect to the same host repeatedly.
+        # It seems like the http client should be cached, but that causes errors with the event
+        # loop. The httpx documentation mentions that the main benefits here are connection pooling,
+        # which would be nice since we connect to the same host repeatedly. But because there's a
+        # response cache in server.py, it's not an urgent peformance issue.
         async with httpx.AsyncClient() as client:
             return await client.get(
                 # https://github.com/Sefaria/Sefaria-Project/wiki/API-Documentation
@@ -52,7 +53,10 @@ class ApiRequestHandler(object):
 
         bad_results = list(filter(lambda x: x.status_code is not 200, sefaria_results))
         def _raise_bad_results_exception():
-            raise ApiException("\n".join(map(lambda x: x.text, bad_results)), 500, 1)
+            raise ApiException(
+                "\n".join(map(lambda x: x.text, bad_results)),
+                500,
+                ApiException.SEFARIA_HTTP_ERROR)
         if bad_results:
             _raise_bad_results_exception()
 
@@ -78,7 +82,10 @@ class ApiRequestHandler(object):
             english = english[:-1]
 
         if len(hebrew) != len(english):
-            raise ApiException("Hebrew length != English length", 500, 2)
+            raise ApiException(
+                "Hebrew length != English length",
+                500,
+                ApiException.UNEQAUL_HEBREW_ENGLISH_LENGTH)
 
         sections = []
         for i in range(len(hebrew)):
@@ -92,16 +99,10 @@ class ApiRequestHandler(object):
         section_prefix = "%s %s:" %(gemara_json["book"], amud)
         for comment in gemara_json["commentary"]:
             self._add_comment_to_result(comment, sections, section_prefix)
-        rashi_section_prefix = f"Rashi on {section_prefix}"
-        # TODO: figure our what pages don't have Rashi so we can make an assertion if Rashi
-        # is _unexpectedly_ empty
-        for comment in rashi_json.get("commentary", []):
-            self._add_second_level_comment_to_result(
-                comment, sections, rashi_section_prefix, "Rashi")
-        tosafot_section_prefix = f"Tosafot on {section_prefix}"
-        for comment in tosafot_json.get("commentary", []):
-            self._add_second_level_comment_to_result(
-                comment, sections, tosafot_section_prefix, "Tosafot")
+        self._add_second_level_comments_to_result(
+            rashi_json, sections, f"Rashi on {section_prefix}", "Rashi")
+        self._add_second_level_comments_to_result(
+            tosafot_json, sections, f"Tosafot on {section_prefix}", "Tosafot")
 
         for section in sections:
             commentary = section["commentary"]
@@ -119,8 +120,12 @@ class ApiRequestHandler(object):
                 last_section["commentary"] = {}
                 last_section["hadran"] = True
         elif masechet == "Nazir" and amud == "33b":
-            # TODO: return some useful text, potentially an Easter egg?
-            pass # Nazir 33b has no Gemara, just Tosafot
+            sections.append({
+                "he": "אין גמרא לנזיר ל״ג ע״א, רק תוספות (שהם קשורים לדפים אחרים)",
+                "en": "Nazir 33b has no Gemara, just Tosafot (which are linked to other pages).",
+                "commentary": {},
+                "ref": "synthetic",
+            })
         else:
             self._print(f"No sections for {masechet} {amud}")
 
@@ -161,6 +166,13 @@ class ApiRequestHandler(object):
         for anchor in comment["anchorRefExpanded"]:
             if anchor.startswith(section_prefix):
                 return int(anchor.split(":")[1]) - 1
+
+    def _add_second_level_comments_to_result(
+            self, secondary_api_response, sections, section_prefix, first_level_commentary_name):
+        for comment in secondary_api_response.get("commentary", []):
+            self._add_second_level_comment_to_result(
+                comment, sections, section_prefix, first_level_commentary_name)
+
 
     def _add_second_level_comment_to_result(
             self, comment, sections, section_prefix, first_level_commentary_name):
@@ -225,7 +237,9 @@ class ApiRequestHandler(object):
 
 
 class ApiException(Exception):
-    # TODO make constants for internal code
+    SEFARIA_HTTP_ERROR = 1,
+    UNEQAUL_HEBREW_ENGLISH_LENGTH = 2
+
     def __init__(self, message, http_status, internal_code):
         super().__init__(message)
         self.message = message

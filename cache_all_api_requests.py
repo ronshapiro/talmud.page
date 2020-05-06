@@ -26,7 +26,7 @@ for masechet in MASECHTOT:
                            request_handler.amud_api_request(masechet.canonical_name, amud))
             except api_request_handler.ApiException as e:
                 print(f"ApiException in {masechet.canonical_name} {amud}: %s" %(e.message))
-                if e.internal_code == 1:
+                if e.internal_code == ApiException.SEFARIA_HTTP_ERROR:
                     continue
             except Exception as e:
                 print(f"Exception in {masechet.canonical_name} {amud}")
