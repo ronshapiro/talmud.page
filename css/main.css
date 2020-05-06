@@ -102,9 +102,13 @@ h1, h2 {
     line-height: 1.7em;
 }
 .english-div {
-    /* TODO: don't apply this to the first line */
-    margin-top: 3.25px;
     color: #555;
+}
+.english-div {
+    margin-top: 1.25px;
+}
+.gemara-container .english-div {
+    margin-top: 2.75px;
 }
 #previous-amud-container, #next-amud-container {
     display: flex;

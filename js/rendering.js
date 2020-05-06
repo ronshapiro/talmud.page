@@ -320,7 +320,8 @@ class Renderer {
       output.push(
         this._tableRow(
           `<div class="gemara" id="${sectionLabel}-gemara">${section.he}</div>`,
-          this._translationOption === "english-side-by-side" ? section.en : undefined));
+          this._translationOption === "english-side-by-side" ? section.en : undefined,
+          {classes: ["gemara-container"]}));
       if (section.commentary) {
         output.push(this._commentaryRowOutput(sectionLabel, section.commentary));
       }
