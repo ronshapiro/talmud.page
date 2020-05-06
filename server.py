@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+from amud_doesnt_exist import AmudDoesntExistException
 from api_request_handler import ApiRequestHandler
 from api_request_handler import ApiException
 from api_request_handler import RealRequestMaker
@@ -11,7 +12,9 @@ from flask import render_template as flask_render_template
 from flask import request
 from flask import send_file
 from flask import url_for
+from masechtot import InvalidQueryException
 from masechtot import Masechtot
+from masechtot import UnknownMasechetNameException
 import cachetools
 import datetime
 import math
@@ -53,15 +56,20 @@ def search_handler():
                                 amud = parsed.start))
 
     # TODO: proper error page
-    # TODO: verify daf exists
     raise ValueError(query)
+
+def _validate_amudim(masechet, *amudim):
+    print(amudim)
+    non_existent_amudim = list(filter(lambda x: not masechtot.does_amud_exist(masechet, x), amudim))
+    if non_existent_amudim:
+        raise AmudDoesntExistException(masechet, non_existent_amudim)
 
 @app.route("/<masechet>/<amud>")
 def amud(masechet, amud):
     canonical_masechet = masechtot.canonical_masechet_name(masechet)
     if canonical_masechet != masechet:
         return redirect(url_for("amud", masechet = canonical_masechet, amud = amud))
-    # TODO: verify daf exists
+    _validate_amudim(masechet, amud)
     return render_template(
         "talmud_page.html", title = "%s %s" %(masechet, amud))
 
@@ -71,7 +79,7 @@ def amud_range(masechet, start, end):
     if canonical_masechet != masechet:
         return redirect(url_for(
             "amud_range", masechet = canonical_masechet, start = start, end = end))
-    # TODO: verify daf exists
+    _validate_amudim(masechet, start, end)
     return render_template(
         "talmud_page.html", title = "%s %s-%s" %(masechet, start, end))
 
@@ -93,9 +101,19 @@ def serve_static_files(directory):
 serve_static_files("js")
 serve_static_files("css")
 
+@app.errorhandler(AmudDoesntExistException)
+def amud_doesnt_exist_404(e):
+    return render_template("error_page.html", message=e.message(), title="Error"), 404
+
+@app.errorhandler(InvalidQueryException)
+def amud_doesnt_exist_404(e):
+    return render_template("error_page.html", message=e.message, title="Invalid Query"), 404
+
 @app.errorhandler(404)
 def page_not_found(e):
-    return render_template('404_amud_not_found.html'), 404
+    return render_template("error_page.html",
+                           message="We don't know what happened!",
+                           title="Unknown Error")
 
 # This does not factor in cached strings, but that should not make much of a difference
 def json_size_in_memory(json_object):
@@ -123,7 +141,10 @@ def amud_json(masechet, amud):
     canonical_masechet = masechtot.canonical_masechet_name(masechet)
     if canonical_masechet != masechet:
         return redirect(url_for("amud_json", masechet = canonical_masechet, amud = amud))
-    # TODO: verify daf exists
+    try:
+        _validate_amudim(masechet, amud)
+    except AmudDoesntExistException as e:
+        return jsonify({"error": e.message()}), 404
 
     cache_key = (masechet, amud)
     response = amud_cache.get(cache_key)

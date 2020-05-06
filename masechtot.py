@@ -23,6 +23,11 @@ def _daf_without_aleph_or_bet(amud):
     elif _ALL_HEBREW_LETTERS.match(amud):
         return hebrew.numeric_literal_as_int(amud)
 
+def next_amud(amud):
+    if amud[-1:] == "a":
+        return "%sb" % amud[:-1]
+    return "%sa" % (int(amud[:-1]) + 1)
+
 class Masechet(object):
     def __init__(self, canonical_name, aliases = (), start = "2a", end = None):
         self.canonical_name = canonical_name
@@ -31,6 +36,15 @@ class Masechet(object):
         self.aliases = aliases
         self.start = start
         self.end = end
+        amud = start
+        self._amudim = []
+        while amud != end:
+            self._amudim.append(amud)
+            amud = next_amud(amud)
+        self._amudim.append(end)
+
+    def does_amud_exist(self, amud):
+        return amud in self._amudim
 
 MASECHTOT = [
     Masechet(
@@ -234,6 +248,8 @@ MASECHTOT = [
         end = "120b"),
 ]
 
+MASECHTOT_BY_CANONICAL_NAME = {m.canonical_name: m for m in MASECHTOT}
+
 class Masechtot(object):
     def __init__(self):
         self._masechet_name_index = {}
@@ -251,7 +267,14 @@ class Masechtot(object):
         result = self._canonical_masechet_name_or_none(name)
         if result:
             return result
-        raise KeyError(original_name)
+        raise UnknownMasechetNameException(name)
+
+    def does_amud_exist(self, masechet_name, amud):
+        canonical_masechet = self._canonical_masechet_name_or_none(masechet_name)
+        if not canonical_masechet:
+            return False
+        masechet = MASECHTOT_BY_CANONICAL_NAME[canonical_masechet]
+        return masechet.does_amud_exist(amud)
 
     def parse(self, query):
         query = query.strip()
@@ -262,20 +285,25 @@ class Masechtot(object):
         if masechet:
             words = words[1:]
         elif len(words) > 1:
-            masechet = self.canonical_masechet_name("%s %s" %(words[0], words[1]))
+            masechet = self._canonical_masechet_name_or_none("%s %s" %(words[0], words[1]))
+            if not masechet:
+                raise InvalidQueryException(f"Could not find Masechet: {query}")
             words = words[2:]
         else:
-            raise ValueError(query)
+            raise InvalidQueryException(f"Could not find Masechet: {query}")
+
+        if not len(words):
+            raise InvalidQueryException(f'No amud specified in query: "{query}"')
 
         if len(words) is 1 and "-" in words[0]:
             amudim = words[0].split("-")
             if len(amudim) is not 2:
-                raise ValueError(query)
+                raise InvalidQueryException(f"Could not understand: {query}")
             words = [amudim[0], "-", amudim[1]]
 
         start = CanonicalizedAmud.create(words[0])
         if not start:
-            raise ValueError(query)
+            raise InvalidQueryException(f"{words[0]} is not a valid amud")
         if len(words) is 1:
             if start.full_daf:
                 return QueryResult.full_daf(masechet, start.full_daf)
@@ -295,11 +323,11 @@ class Masechtot(object):
             elif end.single_amud:
                 end_amud = end.single_amud
             else:
-                raise ValueError(query)
+                raise InvalidQueryException(f"Could not understand: {query}")
 
             return QueryResult(masechet, start_amud, end_amud)
 
-        raise ValueError(query)
+        raise InvalidQueryException(f"Could not understand: {query}")
 
 
 class CanonicalizedAmud(object):
@@ -343,3 +371,12 @@ class QueryResult(object):
 
     def __str__(self):
         return "{masechet: %s, start: %s, end: %s}" % (self.masechet, self.start, self.end)
+
+
+class InvalidQueryException(Exception):
+    def __init__(self, message):
+        self.message = message
+
+class UnknownMasechetNameException(Exception):
+    def __init__(self, name):
+        self.name = name

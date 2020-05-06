@@ -3,6 +3,7 @@ import json
 import os
 import traceback
 from masechtot import MASECHTOT
+from masechtot import next_amud
 
 def write_json(file_name, data):
     with open(file_name, "w") as output_file:
@@ -11,11 +12,6 @@ def write_json(file_name, data):
                   ensure_ascii = False,
                   sort_keys = True)
         output_file.write("\n")
-
-def next_amud(amud):
-    if amud[-1:] == "a":
-        return "%sb" % amud[:-1]
-    return "%sa" % (int(amud[:-1]) + 1)
 
 request_handler = api_request_handler.ApiRequestHandler(
     api_request_handler.RealRequestMaker(),
