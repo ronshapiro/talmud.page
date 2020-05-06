@@ -410,68 +410,6 @@ const findSefariaRef = function(node) {
   return {};
 }
 
-// TODO: should this be in talmud_page.js?
-var selectionChangeSnackbarShowing = false;
-const hideSelectionChangeSnackbar = (ref) => {
-  if (selectionChangeSnackbarShowing) {
-    gtag("event", "selection_change_snackbar.hidden", {ref: ref});
-    selectionChangeSnackbarShowing = false;
-    hideSnackbar();
-  }
-};
-
-document.addEventListener('selectionchange', () => {
-  const selection = document.getSelection();
-  if (selection.type !== "Range") {
-    hideSelectionChangeSnackbar();
-    return;
-  }
-  const sefariaRef = findSefariaRef(selection.anchorNode);
-  if (!sefariaRef.ref
-      // If the selection spans multiple refs, ignore them all
-      || sefariaRef.ref !== findSefariaRef(selection.focusNode).ref) {
-    hideSelectionChangeSnackbar(sefariaRef.ref);
-    return;
-  }
-  const ref = sefariaRef.ref;
-  const sefariaUrl = `https://www.sefaria.org/${ref.replace(/ /g, "_")}`;
-  gtag("event", "selection_change_snackbar.shown", {ref: ref});
-  selectionChangeSnackbarShowing = true;
-  displaySnackbar(ref, [
-    {
-      text: "View on Sefaria",
-      onClick: () => {
-        window.location = sefariaUrl;
-        gtag("event", "view_on_sefaria", {ref: ref});
-      },
-    },
-    {
-      text: "Report correction",
-      onClick: () => {
-        gtag("event", "report_correction", {ref: ref});
-        const subject = "Sefaria Text Correction from talmud.page";
-        var body = [
-          `${ref} (${sefariaUrl})`,
-          sefariaRef.text,
-        ];
-        if (sefariaRef.translation && sefariaRef.translation !== "") {
-          body.push(sefariaRef.translation);
-        }
-        // trailing newline so that the description starts on its own line
-        body.push("Describe the error:\n");
-
-        body = body.join("\n\n");
-        // TODO: verify the iOS versions. Also verify what non-Gmail clients do
-        if (/(Android|iPhone|iPad|iOS)/.test(navigator.userAgent)) {
-          body = body.replace(/\n/g, "<br>");
-        }
-        body = encodeURIComponent(body);
-        window.open(`mailto:corrections@sefaria.org?subject=${subject}&body=${body}`);
-      },
-    },
-  ]);
-});
-
 class TalmudRenderer extends Renderer {
   constructor(translationOption) {
     super(TalmudRenderer._defaultCommentaryTypes(), translationOption);
