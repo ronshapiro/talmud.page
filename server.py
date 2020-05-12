@@ -62,6 +62,7 @@ def _validate_amudim(masechet, *amudim):
 
 @app.route("/<masechet>/<amud>")
 def amud(masechet, amud):
+    # TODO: replace %20 with an underscore in masechet names
     canonical_masechet = masechtot.canonical_masechet_name(masechet)
     if canonical_masechet != masechet:
         return redirect(url_for("amud", masechet = canonical_masechet, amud = amud))
