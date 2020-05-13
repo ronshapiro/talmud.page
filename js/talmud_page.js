@@ -43,7 +43,7 @@ const amudMetadata = function() {
   const pathParts = location.pathname.split("/");
   return {
     // TODO: Add tests for this for two-word amudim
-    masechet: decodeURIComponent(pathParts[1]),
+    masechet: pathParts[1].replace("_", " "),
     amudStart: pathParts[2],
     amudEnd: pathParts[4] || pathParts[2],
     range: function() {

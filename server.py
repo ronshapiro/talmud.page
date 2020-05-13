@@ -62,8 +62,7 @@ def _validate_amudim(masechet, *amudim):
 
 @app.route("/<masechet>/<amud>")
 def amud(masechet, amud):
-    # TODO: replace %20 with an underscore in masechet names
-    canonical_masechet = masechtot.canonical_masechet_name(masechet)
+    canonical_masechet = masechtot.canonical_url_masechet_name(masechet)
     if canonical_masechet != masechet:
         return redirect(url_for("amud", masechet = canonical_masechet, amud = amud))
     _validate_amudim(masechet, amud)
@@ -72,7 +71,7 @@ def amud(masechet, amud):
 
 @app.route("/<masechet>/<start>/to/<end>")
 def amud_range(masechet, start, end):
-    canonical_masechet = masechtot.canonical_masechet_name(masechet)
+    canonical_masechet = masechtot.canonical_url_masechet_name(masechet)
     if canonical_masechet != masechet:
         return redirect(url_for(
             "amud_range", masechet = canonical_masechet, start = start, end = end))
@@ -135,7 +134,7 @@ amud_cache = cachetools.LRUCache(
 
 @app.route("/api/<masechet>/<amud>")
 def amud_json(masechet, amud):
-    canonical_masechet = masechtot.canonical_masechet_name(masechet)
+    canonical_masechet = masechtot.canonical_url_masechet_name(masechet)
     if canonical_masechet != masechet:
         return redirect(url_for("amud_json", masechet = canonical_masechet, amud = amud))
     try:

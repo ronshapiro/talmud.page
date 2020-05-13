@@ -254,9 +254,13 @@ class Masechtot(object):
     def __init__(self):
         self._masechet_name_index = {}
         for masechet in MASECHTOT:
-            self._masechet_name_index[masechet.canonical_name.lower()] = masechet.canonical_name
+            self._add_index_value(masechet.canonical_name.lower(), masechet.canonical_name)
             for alias in masechet.aliases:
-                self._masechet_name_index[alias.lower()] = masechet.canonical_name
+                self._add_index_value(alias.lower(), masechet.canonical_name)
+
+    def _add_index_value(self, index, value):
+        self._masechet_name_index[index] = value
+        self._masechet_name_index[index.replace(" ", "_")] = value
 
     def _canonical_masechet_name_or_none(self, name):
         name = name.lower().replace("'", "").replace("-", "")
@@ -268,6 +272,12 @@ class Masechtot(object):
         if result:
             return result
         raise UnknownMasechetNameException(name)
+
+    def canonical_url_masechet_name(self, name):
+        """
+        Returns the `canonical_masechet_name`, normalized for use in URLs.
+        """
+        return self.canonical_masechet_name(name).replace(" ", "_")
 
     def does_amud_exist(self, masechet_name, amud):
         canonical_masechet = self._canonical_masechet_name_or_none(masechet_name)
