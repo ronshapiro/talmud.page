@@ -4,7 +4,7 @@ jQuery.fn.extend({
   betterDoubleClick: function(fn) {
     if (!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)) {
       this.click(function(event) {
-        var lastTime = this.lastTime || 0;
+        let lastTime = this.lastTime || 0;
         const now = new Date().getTime();
         if (now - lastTime <= 1000) {
           fn(event);
@@ -140,7 +140,7 @@ class Renderer {
 
     if (Array.isArray(comment.he) && Array.isArray(comment.en)
         && comment.he.length === comment.en.length) {
-      for (var i = 0; i < comment.he.length; i++) {
+      for (let i = 0; i < comment.he.length; i++) {
         output.push(this._tableRow(comment.he[i], comment.en[i], commentRowOptions));
       }
     } else if (this._isSefariaReturningLongListsOfSingleCharacters(comment)) {
@@ -235,7 +235,7 @@ class Renderer {
 
   _setCommentaryButtons($container) {
     const showButtons = $container.find(".show-button");
-    for (var i = 0; i < showButtons.length; i++) {
+    for (let i = 0; i < showButtons.length; i++) {
       const showButton = $(showButtons[i]);
       const label = showButton.data("comment-id")
       const hideButton = $container.find(`.hide-button[data-comment-id=${label}]`);
@@ -243,38 +243,33 @@ class Renderer {
       const commentaryContainer = commentaryRows.parent(".single-commentator-container");
 
       // these functions need to capture the loop variables
-      const setShownState = function(showButton, hideButton, commentaryContainer) {
-        return function(show) {
-          setVisibility(showButton, !show);
-          setVisibility(hideButton.parents(".table-row"), show);
-          setVisibility(commentaryContainer, show);
-        }
-      }(showButton, hideButton, commentaryContainer);
+      const setShownState = (show) => {
+        setVisibility(showButton, !show);
+        setVisibility(hideButton.parents(".table-row"), show);
+        setVisibility(commentaryContainer, show);
+      };
 
       setShownState(false);
 
-      var clickListener = (setShownState, commentaryRows, label) => {
-        var show = false;
-        var maxLinesEvaluated = false;
-        return (event) => {
-          show = !show;
-          setShownState(show);
+      let show = false; // will be inverted immediately in first call
+      let maxLinesEvaluated = false;
+      const clickListener = (event) => {
+        show = !show;
+        setShownState(show);
 
-          if (show && !maxLinesEvaluated) {
-            maxLinesEvaluated = true;
-            for (const row of commentaryRows) {
-              this._setMaxLines($(row));
-            }
+        if (show && !maxLinesEvaluated) {
+          maxLinesEvaluated = true;
+          for (const row of commentaryRows) {
+            this._setMaxLines($(row));
           }
-          const element = $(event.toElement);
-          gtag("event", show ? "commentary_viewed" : "commentary_hidden", {
-            // these two || alternatives are kinda hacks, but they do the job for now
-            commentary: element.data("commentary") || "<translation>",
-            section: element.data("section-label") || label.replace("-translation", ""),
-          });
-        };
+        }
+        const element = $(event.toElement);
+        gtag("event", show ? "commentary_viewed" : "commentary_hidden", {
+          // these two || alternatives are kinda hacks, but they do the job for now
+          commentary: element.data("commentary") || "<translation>",
+          section: element.data("section-label") || label.replace("-translation", ""),
+        });
       };
-      clickListener = clickListener(setShownState, commentaryRows, label);
 
       showButton.click(clickListener);
       hideButton.click(clickListener);
@@ -293,7 +288,7 @@ class Renderer {
 
   _setEnglishClickListeners($container) {
     const sections = $container.find(".english-div");
-    for (var i = 0; i < sections.length; i++) {
+    for (let i = 0; i < sections.length; i++) {
       const section = $(sections[i]);
       section.betterDoubleClick(this._englishClickListener(section));
     }
@@ -308,7 +303,7 @@ class Renderer {
     if (containerData.loading) {
       output.push('<div class="text-loading-spinner mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>');
     }
-    for (var i = 0; i < containerData.sections.length; i++) {
+    for (let i = 0; i < containerData.sections.length; i++) {
       const section = containerData.sections[i];
       if (i !== 0 && section.steinsaltz_start_of_sugya) {
         output.push('<br class="sugya-separator">');
@@ -365,7 +360,7 @@ class Renderer {
 
     onceDocumentReady.execute(() => {
       const rows = $container.find(".table-row");
-      for (var i = 0; i < rows.length; i++) {
+      for (let i = 0; i < rows.length; i++) {
         const row = $(rows[i])[0];
         this._setMaxLines($(row));
       }
@@ -385,7 +380,7 @@ class Renderer {
 }
 
 const findSefariaRef = function(node) {
-  var isEnglish = false;
+  let isEnglish = false;
   while (node.parentElement) {
     const $parentElement = $(node.parentElement);
     isEnglish = isEnglish || $parentElement.hasClass("english");

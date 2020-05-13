@@ -47,7 +47,7 @@ const amudMetadata = function() {
     amudStart: pathParts[2],
     amudEnd: pathParts[4] || pathParts[2],
     range: function() {
-      var current = this.amudStart;
+      let current = this.amudStart;
       const results = [current];
       while (current !== this.amudEnd) {
         current = computeNextAmud(current);
@@ -100,7 +100,7 @@ const main = function() {
         $results.show();
         $("#initial-load-spinner").hide();
 
-        var scrollToSection = location.hash;
+        let scrollToSection = location.hash;
         if (scrollToSection.length === 0) {
           const savedSection = "#" + localStorage.restoreSectionOnRefresh;
           if ($(savedSection).length) {
@@ -177,7 +177,7 @@ const firstFullyOnScreenSection = function() {
   }
 }
 
-var selectionChangeSnackbarShowing = false;
+let selectionChangeSnackbarShowing = false;
 const hideSelectionChangeSnackbar = (ref) => {
   if (selectionChangeSnackbarShowing) {
     gtag("event", "selection_change_snackbar.hidden", {ref: ref});
@@ -216,7 +216,7 @@ document.addEventListener('selectionchange', () => {
       onClick: () => {
         gtag("event", "report_correction", {ref: ref});
         const subject = "Sefaria Text Correction from talmud.page";
-        var body = [
+        let body = [
           `${ref} (${sefariaUrl})`,
           sefariaRef.text,
         ];

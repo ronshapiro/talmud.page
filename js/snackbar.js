@@ -17,7 +17,7 @@ const updateSnackbar = function(labelHtml, buttons) {
   }
 
   const buttonElements = $("#snackbar-buttons button");
-  for (var i = 0; i < buttonElements.length; i++) {
+  for (let i = 0; i < buttonElements.length; i++) {
     $(buttonElements[i]).click(buttons[i].onClick);
   }
 }
@@ -45,7 +45,7 @@ const PREFERENCES_PAGE_SNACKBAR_COUNT_MAX = 3;
 $(document).ready(function() {
   moveSnackbarOffscreen();
 
-  var preferencePageSnackbarShownCount = localStorage.preferencePageSnackbarShownCount || 0;
+  let preferencePageSnackbarShownCount = localStorage.preferencePageSnackbarShownCount || 0;
   preferencePageSnackbarShownCount++;
 
   if (window.location.pathname !== "/preferences"
