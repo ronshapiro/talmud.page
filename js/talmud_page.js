@@ -1,6 +1,7 @@
 import {displaySnackbar, hideSnackbar} from "./snackbar.js";
 import {TalmudRenderer, _concat, setVisibility, onceDocumentReady} from "./rendering.js";
 import MASECHTOT from "./masechtot.js";
+import {amudMetadata, computePreviousAmud, computeNextAmud} from "./amud.js";
 
 const requestAmud = function(amud, directionFunction, options) {
   options = options || {}
@@ -29,35 +30,6 @@ const requestAmud = function(amud, directionFunction, options) {
           }});
   if (options.newUrl) history.pushState({}, "", options.newUrl);
   refreshPageState();
-}
-
-const computePreviousAmud = function(current) {
-  const number = parseInt(current);
-  return current.endsWith("b") ? number + "a" : (number - 1) + "b";
-}
-
-const computeNextAmud = function(current) {
-  const number = parseInt(current);
-  return current.endsWith("a") ? number + "b" : (number + 1) + "a";
-}
-
-const amudMetadata = function() {
-  const pathParts = location.pathname.split("/");
-  return {
-    // TODO: Add tests for this for two-word amudim
-    masechet: pathParts[1].replace("_", " "),
-    amudStart: pathParts[2],
-    amudEnd: pathParts[4] || pathParts[2],
-    range: function() {
-      let current = this.amudStart;
-      const results = [current];
-      while (current !== this.amudEnd) {
-        current = computeNextAmud(current);
-        results.push(current);
-      }
-      return results;
-    }
-  }
 }
 
 const refreshPageState = function() {

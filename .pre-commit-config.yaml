@@ -14,3 +14,7 @@
         name: "Check Python tests"
         entry: pre-commit/check_python_tests.sh
         language: script
+    -   id: check-js-tests
+        name: "Check JavaScript tests"
+        entry: pre-commit/check_js_tests.sh
+        language: script
