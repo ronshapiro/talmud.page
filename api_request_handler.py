@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+from enum import Enum
 from source_formatting.jastrow import JastrowReformatter
 from source_formatting.hebrew_small_to_emphasis import HebrewSmallToEmphasisTagTranslator
 from source_formatting.dibur_hamatchil import bold_diburei_hamatchil
@@ -105,6 +106,8 @@ class ApiRequestHandler(object):
             tosafot_json, sections, f"Tosafot on {section_prefix}", "Tosafot")
 
         for section in sections:
+            self._resolve_duplicated_out_and_nested_comments(section)
+
             for comment in section["commentary"].comments:
                 if comment.english_name == "Steinsaltz" and \
                    _STEINSALTZ_SUGYA_START.findall(comment.hebrew):
@@ -195,6 +198,38 @@ class ApiRequestHandler(object):
                         comment["type"],
                         comment["category"])
 
+    def _resolve_duplicated_out_and_nested_comments(self, section):
+        commentary = section["commentary"]
+        top_level_comments_by_ref = {comment.ref: comment for comment in commentary.comments}
+        for nested_commentary_name, nested_commentary in commentary.nested_commentaries.items():
+            for nested_comment in nested_commentary.comments:
+                top_level_comment = top_level_comments_by_ref.get(nested_comment.ref)
+                if not top_level_comment:
+                    continue
+                removal_strategy = self._removal_strategy(top_level_comment, nested_comment)
+                if removal_strategy is RemovalStrategy.REMOVE_TOP_LEVEL:
+                    commentary.remove_comment_with_ref(top_level_comment.ref)
+                elif removal_strategy is RemovalStrategy.REMOVE_NESTED:
+                    nested_commentary.remove_comment_with_ref(nested_comment.ref)
+
+    def _removal_strategy(self, top_level_comment, nested_comment):
+        if top_level_comment.english_name == "Verses":
+            # TODO: consider not removing these, as verses are typically shorter, and duplicates
+            # can be useful
+            return RemovalStrategy.REMOVE_NESTED
+        # TODO: it would be great to define this in _COMMENTARIES if possible so that all metadata
+        # for commentaries is defined in one location.
+        elif nested_comment.english_name in ("Maharsha", "Maharshal", "Meir Lublin"):
+            return RemovalStrategy.REMOVE_TOP_LEVEL
+
+        self._print("Duplicated comment (Ref: %s) on %s and %s" %(
+            top_level_comment.ref, top_level_comment.source_ref and nested_comment.ref))
+
+
+class RemovalStrategy(Enum):
+    REMOVE_TOP_LEVEL = 1
+    REMOVE_NESTED = 2
+
 
 class Comment(object):
     """Represents a single comment on a text.
@@ -258,6 +293,9 @@ class Commentary(object):
         self.nested_commentaries[parent_commentary_name].add_comment(comment)
         return True
 
+    def remove_comment_with_ref(self, ref):
+        self.comments = list(filter(lambda x: x.ref != ref, self.comments))
+
     def to_dict(self):
         result = {}
         for comment in self.comments:
@@ -266,7 +304,9 @@ class Commentary(object):
                 result[comment.english_name]["comments"] = []
             result[comment.english_name]["comments"].append(comment.to_dict())
         for english_name, nested_commentary in self.nested_commentaries.items():
-            result[english_name]["commentary"] = nested_commentary.to_dict()
+            nested_commentary_value = nested_commentary.to_dict()
+            if nested_commentary_value:
+                result[english_name]["commentary"] = nested_commentary_value
         return result
 
 
