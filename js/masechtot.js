@@ -1,6 +1,4 @@
-"use strict";
-
-const MASECHTOT = {
+export default {
   "Arakhin": {
     "end": "34a",
     "start": "2a"

@@ -19,3 +19,7 @@ A simpler way to read the Talmud.
 Feel free to send commits or open issues for bugs/feature requests.
 
 For suggestions/questions, email feedback@talmud.page.
+
+## Development
+
+To deploy, run `npm run deploy`. Don't run `gcloud app deploy` directly, as that does not build the parceljs compiled files.

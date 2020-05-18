@@ -1,5 +1,3 @@
-"use strict";
-
 // The discoveryDoc is seemingly "loaded into" the gapi.client JS object
 const _APIS = [
   {

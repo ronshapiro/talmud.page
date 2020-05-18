@@ -1,5 +1,3 @@
-"use strict";
-
 const moveSnackbarOffscreen = () => $("#snackbar").css("bottom", -400);
 const hideSnackbar = () => $("#snackbar").animate({"bottom": -400});
 
@@ -95,5 +93,9 @@ $(document).ready(function() {
       },
     ]);
   }
-
 });
+
+module.exports = {
+  hideSnackbar: hideSnackbar,
+  displaySnackbar: displaySnackbar,
+}

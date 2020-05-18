@@ -9,6 +9,7 @@ from flask import Flask
 from flask import jsonify
 from flask import redirect
 from flask import render_template as flask_render_template
+from flask import render_template_string
 from flask import request
 from flask import send_file
 from flask import url_for
@@ -37,6 +38,14 @@ def render_template(template_name, **extra_template_variables):
         debug=app.debug,
         **extra_template_variables)
 
+def render_compiled_template(file_name, **extra_template_variables):
+    with open("dist/%s" % file_name, "r") as f:
+        return render_template_string(
+            f.read(),
+            random_hash=random_hash,
+            debug=app.debug,
+            **extra_template_variables)
+
 @app.route("/")
 def homepage():
     return render_template("homepage.html")
@@ -55,7 +64,6 @@ def search_handler():
                             amud = parsed.start))
 
 def _validate_amudim(masechet, *amudim):
-    print(amudim)
     non_existent_amudim = list(filter(lambda x: not masechtot.does_amud_exist(masechet, x), amudim))
     if non_existent_amudim:
         raise AmudDoesntExistException(masechet, non_existent_amudim)
@@ -66,8 +74,7 @@ def amud(masechet, amud):
     if canonical_masechet != masechet:
         return redirect(url_for("amud", masechet = canonical_masechet, amud = amud))
     _validate_amudim(masechet, amud)
-    return render_template(
-        "talmud_page.html", title = "%s %s" %(masechet, amud))
+    return render_compiled_template("talmud_page.html", title = "%s %s" %(masechet, amud))
 
 @app.route("/<masechet>/<start>/to/<end>")
 def amud_range(masechet, start, end):
@@ -76,7 +83,7 @@ def amud_range(masechet, start, end):
         return redirect(url_for(
             "amud_range", masechet = canonical_masechet, start = start, end = end))
     _validate_amudim(masechet, start, end)
-    return render_template(
+    return render_compiled_template(
         "talmud_page.html", title = "%s %s-%s" %(masechet, start, end))
 
 # Creates a capturing lambda
@@ -94,8 +101,12 @@ def serve_static_files(directory):
             name,
             send_file_fn_with_ignored_pattern("%s/%s" % (directory, name)))
 
-serve_static_files("js")
 serve_static_files("css")
+
+# TODO: disable autoreload in development if it's annoying
+for name in os.listdir("dist"):
+    if name.endswith(".js"):
+        app.add_url_rule("/%s" % name, name, send_file_fn("dist/%s" % name))
 
 @app.errorhandler(AmudDoesntExistException)
 def amud_doesnt_exist_404(e):
@@ -161,7 +172,7 @@ def amud_json(masechet, amud):
 
 @app.route("/preferences")
 def preferences():
-    return render_template("preferences.html")
+    return render_compiled_template("preferences.html")
 
 for name in os.listdir("favicon"):
     app.add_url_rule("/%s" % name, name, send_file_fn("favicon/%s" % name))

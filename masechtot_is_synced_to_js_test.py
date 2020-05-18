@@ -8,7 +8,7 @@ def file_contents():
     for m in masechtot.MASECHTOT:
         json_dict[m.canonical_name] = dict(start = m.start, end = m.end)
     as_json = json.dumps(json_dict, indent = 2, sort_keys = True)
-    return f'"use strict";\n\nconst MASECHTOT = {as_json};\n'
+    return f"export default {as_json};\n"
 
 parser = argparse.ArgumentParser(description='Test')
 parser.add_argument("--setup", action="store_const", const=True)

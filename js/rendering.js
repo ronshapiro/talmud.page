@@ -1,5 +1,3 @@
-"use strict";
-
 jQuery.fn.extend({
   betterDoubleClick: function(fn) {
     if (!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)) {
@@ -379,32 +377,6 @@ class Renderer {
   }
 }
 
-const findSefariaRef = function(node) {
-  let isEnglish = false;
-  while (node.parentElement) {
-    const $parentElement = $(node.parentElement);
-    isEnglish = isEnglish || $parentElement.hasClass("english");
-    const isTranslationOfSourceText = $parentElement.attr("commentary-kind") === "Translation";
-    const ref = $parentElement.attr("sefaria-ref");
-    if (ref && ref !== "synthetic") {
-      if (isEnglish && isTranslationOfSourceText) {
-        // Go up one layer to the main text
-        isEnglish = false;
-      } else {
-        return {
-          ref: ref,
-          text: $($parentElement.find(".hebrew")[0]).text(),
-          translation: isTranslationOfSourceText
-            ? undefined
-            : $($parentElement.find(".english")[0]).text(),
-        };
-      }
-    }
-    node = node.parentNode;
-  }
-  return {};
-}
-
 class TalmudRenderer extends Renderer {
   constructor(translationOption) {
     super(TalmudRenderer._defaultCommentaryTypes(), translationOption);
@@ -533,3 +505,11 @@ class TalmudRenderer extends Renderer {
     return commentaryTypes;
   }
 }
+
+module.exports = {
+  onceDocumentReady: onceDocumentReady,
+  _concat: _concat,
+  setVisibility: setVisibility,
+  Renderer: Renderer,
+  TalmudRenderer: TalmudRenderer,
+};

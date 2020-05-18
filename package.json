@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "  rm -rf dist && parcel watch templates/talmud_page.html templates/preferences.html --no-source-maps",
+    "build": "rm -rf dist && parcel build templates/talmud_page.html templates/preferences.html --no-source-maps",
+    "deploy": "npm run build && gcloud app deploy"
+  },
+  "ignore trailing commas": "hello, world"
+}

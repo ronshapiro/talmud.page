@@ -1,4 +1,6 @@
-"use strict";
+import {displaySnackbar, hideSnackbar} from "./snackbar.js";
+import {TalmudRenderer, _concat, setVisibility, onceDocumentReady} from "./rendering.js";
+import MASECHTOT from "./masechtot.js";
 
 const requestAmud = function(amud, directionFunction, options) {
   options = options || {}
@@ -185,6 +187,32 @@ const hideSelectionChangeSnackbar = (ref) => {
     hideSnackbar();
   }
 };
+
+const findSefariaRef = function(node) {
+  let isEnglish = false;
+  while (node.parentElement) {
+    const $parentElement = $(node.parentElement);
+    isEnglish = isEnglish || $parentElement.hasClass("english");
+    const isTranslationOfSourceText = $parentElement.attr("commentary-kind") === "Translation";
+    const ref = $parentElement.attr("sefaria-ref");
+    if (ref && ref !== "synthetic") {
+      if (isEnglish && isTranslationOfSourceText) {
+        // Go up one layer to the main text
+        isEnglish = false;
+      } else {
+        return {
+          ref: ref,
+          text: $($parentElement.find(".hebrew")[0]).text(),
+          translation: isTranslationOfSourceText
+            ? undefined
+            : $($parentElement.find(".english")[0]).text(),
+        };
+      }
+    }
+    node = node.parentNode;
+  }
+  return {};
+}
 
 document.addEventListener('selectionchange', () => {
   const selection = document.getSelection();

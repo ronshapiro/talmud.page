@@ -1,3 +1,7 @@
 *.pyc
 venv/
 cached_outputs
+node_modules
+.cache/
+# These files don't need to be saved in a commit since they can be generated. This line is omitted in .gcloudignore, because there we do actually want the compiled files to be included with the server
+dist/
