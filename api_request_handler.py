@@ -93,7 +93,7 @@ class ApiRequestHandler(object):
                 "he": hebrew[i],
                 "en": SefariaLinkSanitizer.process(english[i]),
                 "ref": "%s.%s" %(gemara_json["ref"], i + 1),
-                "commentary": {},
+                "commentary": Commentary.create(),
                 })
 
         section_prefix = "%s %s:" %(gemara_json["book"], amud)
@@ -105,29 +105,31 @@ class ApiRequestHandler(object):
             tosafot_json, sections, f"Tosafot on {section_prefix}", "Tosafot")
 
         for section in sections:
-            commentary = section["commentary"]
-            if "Steinsaltz" not in commentary:
-                continue # i.e. Hadran
-            steinsaltz = commentary["Steinsaltz"]["comments"][0]["he"]
-            if _STEINSALTZ_SUGYA_START.findall(steinsaltz):
-                section["steinsaltz_start_of_sugya"] = True
+            for comment in section["commentary"].comments:
+                if comment.english_name == "Steinsaltz" and \
+                   _STEINSALTZ_SUGYA_START.findall(comment.hebrew):
+                    section["steinsaltz_start_of_sugya"] = True
 
         if len(sections):
             last_section = sections[len(sections) - 1]
             if _HADRAN_PATTERN.findall(last_section["he"]):
                 last_section["he"] = _BR_PREFIX.sub("<br>", last_section["he"])
                 last_section["en"] = ""
-                last_section["commentary"] = {}
+                last_section["commentary"] = Commentary.create()
                 last_section["hadran"] = True
         elif masechet == "Nazir" and amud == "33b":
             sections.append({
                 "he": "אין גמרא לנזיר ל״ג ע״א, רק תוספות (שהם קשורים לדפים אחרים)",
                 "en": "Nazir 33b has no Gemara, just Tosafot (which are linked to other pages).",
-                "commentary": {},
+                "commentary": Commentary.create(),
                 "ref": "synthetic",
             })
         else:
             self._print(f"No sections for {masechet} {amud}")
+
+        for section in sections:
+            if "commentary" in section:
+                section["commentary"] = section["commentary"].to_dict()
 
         result["sections"] = sections
         return result
@@ -146,14 +148,8 @@ class ApiRequestHandler(object):
             self._print("Unplaceable comment:", comment["sourceRef"], comment["anchorRefExpanded"])
             return
 
-        commentary_dict = sections[section]["commentary"]
-
-        english_name = matching_commentary_kind["englishName"]
-        if english_name not in commentary_dict:
-            commentary_dict[english_name] = {"comments": []}
-
-        commentary_dict[english_name]["comments"].append(
-            self._make_comment_json(comment, english_name))
+        sections[section]["commentary"].add_comment(
+            Comment.create(comment, matching_commentary_kind["englishName"]))
 
     def _find_matching_section_index(self, comment, section_prefix):
         if "anchorRefExpanded" not in comment:
@@ -173,7 +169,6 @@ class ApiRequestHandler(object):
             self._add_second_level_comment_to_result(
                 comment, sections, section_prefix, first_level_commentary_name)
 
-
     def _add_second_level_comment_to_result(
             self, comment, sections, section_prefix, first_level_commentary_name):
         section = self._find_matching_section_index(comment, section_prefix)
@@ -190,31 +185,25 @@ class ApiRequestHandler(object):
         if not matching_commentary_kind:
             return
 
-        if first_level_commentary_name not in sections[section]["commentary"]:
+        result = sections[section]["commentary"].add_nested_comment(
+            first_level_commentary_name,
+            Comment.create(comment, matching_commentary_kind["englishName"]))
+        if not result:
             self._print("Unplaceable second level comment:",
                         comment["sourceRef"],
                         comment["anchorRefExpanded"],
                         comment["type"],
                         comment["category"])
-            return
-
-        first_level_commentary = sections[section]["commentary"][first_level_commentary_name]
-
-        if "commentary" not in first_level_commentary:
-            first_level_commentary["commentary"] = {}
-        second_level_commentaries = first_level_commentary["commentary"]
-
-        english_name = matching_commentary_kind["englishName"]
-        if english_name not in second_level_commentaries:
-            second_level_commentaries[english_name] = {"comments": []}
-
-        second_level_commentaries[english_name]["comments"].append(
-            self._make_comment_json(comment, english_name))
 
 
-    def _make_comment_json(self, comment, english_name):
-        hebrew = comment["he"]
-        english = comment["text"]
+class Comment(object):
+    """Represents a single comment on a text.
+    """
+
+    @staticmethod
+    def create(sefaria_comment, english_name):
+        hebrew = sefaria_comment["he"]
+        english = sefaria_comment["text"]
         if hebrew == english:
             # Fix an issue where sometimes Sefaria returns the exact same text. For now, safe to
             # assume that the equivalent text is Hebrew.
@@ -227,13 +216,58 @@ class ApiRequestHandler(object):
         if english_name == "Jastrow":
             english = JastrowReformatter.process(english)
 
-        return {
-            "he": hebrew,
-            "en": english,
-            "ref": comment["ref"],
-            "sourceRef": comment["sourceRef"],
-            "sourceHeRef": comment["sourceHeRef"],
+        comment = Comment()
+
+        comment.hebrew = hebrew
+        comment.english = english
+        comment.ref = sefaria_comment["ref"]
+        comment.source_ref = sefaria_comment["sourceRef"]
+        comment.source_he_ref = sefaria_comment["sourceHeRef"]
+        comment.english_name = english_name
+
+        return comment
+
+    def to_dict(self):
+        as_dict = {
+            "he": self.hebrew,
+            "en": self.english,
+            "ref": self.ref,
+            "sourceRef": self.source_ref,
+            "sourceHeRef": self.source_he_ref,
         }
+        return as_dict
+
+class Commentary(object):
+    """Maintains the state of all comments on a particular section.
+    """
+
+    def create():
+        commentary = Commentary()
+        commentary.comments = []
+        commentary.nested_commentaries = {}
+        return commentary
+
+    def add_comment(self, comment):
+        self.comments.append(comment)
+
+    def add_nested_comment(self, parent_commentary_name, comment):
+        if not any(map(lambda x: x.english_name == parent_commentary_name, self.comments)):
+            return False
+        if parent_commentary_name not in self.nested_commentaries:
+            self.nested_commentaries[parent_commentary_name] = Commentary.create()
+        self.nested_commentaries[parent_commentary_name].add_comment(comment)
+        return True
+
+    def to_dict(self):
+        result = {}
+        for comment in self.comments:
+            if comment.english_name not in result:
+                result[comment.english_name] = {}
+                result[comment.english_name]["comments"] = []
+            result[comment.english_name]["comments"].append(comment.to_dict())
+        for english_name, nested_commentary in self.nested_commentaries.items():
+            result[english_name]["commentary"] = nested_commentary.to_dict()
+        return result
 
 
 class ApiException(Exception):
