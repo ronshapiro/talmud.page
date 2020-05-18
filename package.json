@@ -4,7 +4,7 @@
   },
   "scripts": {
     "test": "jest",
-    "dev": "  rm -rf dist && parcel watch templates/talmud_page.html templates/preferences.html --no-source-maps",
+    "dev": "  rm -rf dist && parcel watch templates/talmud_page.html templates/preferences.html --no-source-maps --no-hmr",
     "build": "rm -rf dist && parcel build templates/talmud_page.html templates/preferences.html --no-source-maps",
     "deploy": "npm run build && gcloud app deploy"
   },
