@@ -1,8 +1,10 @@
 const Bundler = require('parcel-bundler');
 const fs = require('fs');
 
-for (const file of fs.readdirSync("./dist")) {
-  fs.unlinkSync(`./dist/${file}`);
+if (fs.existsSync("./dist")) {
+  for (const file of fs.readdirSync("./dist")) {
+    fs.unlinkSync(`./dist/${file}`);
+  }
 }
 
 const entryFiles = [
