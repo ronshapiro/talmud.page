@@ -1,3 +1,5 @@
+import {onceDocumentReady} from "./once_document_ready.js";
+
 jQuery.fn.extend({
   betterDoubleClick: function(fn) {
     if (!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)) {
@@ -19,25 +21,6 @@ jQuery.fn.extend({
 });
 
 const debugResultsData = {}
-
-const onceDocumentReady = {
-  ready: false,
-  queue: [],
-  execute: function(fn) {
-    if (this.ready) {
-      fn();
-      return;
-    }
-    this.queue.push(fn);
-  },
-  declareReady: function() {
-    if (this.ready) {
-      throw "Already ready!";
-    }
-    this.ready = true;
-    this.queue.forEach(fn => fn());
-  },
-}
 
 const _concat = function() {
   const result = [];
@@ -507,7 +490,6 @@ class TalmudRenderer extends Renderer {
 }
 
 module.exports = {
-  onceDocumentReady: onceDocumentReady,
   _concat: _concat,
   setVisibility: setVisibility,
   Renderer: Renderer,

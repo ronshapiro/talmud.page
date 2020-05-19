@@ -1,5 +1,6 @@
 import {displaySnackbar, hideSnackbar} from "./snackbar.js";
-import {TalmudRenderer, _concat, setVisibility, onceDocumentReady} from "./rendering.js";
+import {TalmudRenderer, _concat, setVisibility} from "./rendering.js";
+import {onceDocumentReady} from "./once_document_ready.js";
 import MASECHTOT from "./masechtot.js";
 import {amudMetadata, computePreviousAmud, computeNextAmud} from "./amud.js";
 

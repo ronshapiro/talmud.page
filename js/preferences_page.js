@@ -1,5 +1,6 @@
 import {displaySnackbar, hideSnackbar} from "./snackbar.js";
-import {TalmudRenderer, onceDocumentReady} from "./rendering.js";
+import {TalmudRenderer} from "./rendering.js";
+import {onceDocumentReady} from "./once_document_ready.js";
 import createTestData from "./preferences_sample_data.js";
 
 // TODO: maybe this should live in snackbar?
