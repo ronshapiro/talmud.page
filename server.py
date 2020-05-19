@@ -76,11 +76,22 @@ def amud(masechet, amud):
 
 @app.route("/<masechet>/<start>/to/<end>")
 def amud_range(masechet, start, end):
+    if start == end:
+        return redirect(url_for("amud", masechet = masechet, amud = start))
+
     canonical_masechet = masechtot.canonical_url_masechet_name(masechet)
     if canonical_masechet != masechet:
         return redirect(url_for(
             "amud_range", masechet = canonical_masechet, start = start, end = end))
     _validate_amudim(masechet, start, end)
+    start_number = int(start[:-1])
+    end_number = int(end[:-1])
+
+    if start_number > end_number or (
+            start_number == end_number and start[-1] == "b" and end[-1] == "a"):
+        return redirect(url_for(
+            "amud_range", masechet = canonical_masechet, start = end, end = start))
+
     return render_compiled_template(
         "talmud_page.html", title = "%s %s-%s" %(masechet, start, end))
 
