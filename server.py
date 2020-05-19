@@ -38,13 +38,21 @@ def render_template(template_name, **extra_template_variables):
         debug=app.debug,
         **extra_template_variables)
 
+compiled_templates = {}
+
 def render_compiled_template(file_name, **extra_template_variables):
-    with open("dist/%s" % file_name, "r") as f:
-        return render_template_string(
-            f.read(),
-            random_hash=random_hash,
-            debug=app.debug,
-            **extra_template_variables)
+    template_string = compiled_templates.get(file_name)
+    if not template_string:
+        with app.open_resource("dist/%s" % file_name, "r") as template_file:
+            template_string = template_file.read()
+        if not app.debug:
+            compiled_templates[file_name] = template_string
+
+    return render_template_string(
+        template_string,
+        random_hash=random_hash,
+        debug=app.debug,
+        **extra_template_variables)
 
 @app.route("/")
 def homepage():
