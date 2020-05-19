@@ -22,4 +22,16 @@ For suggestions/questions, email feedback@talmud.page.
 
 ## Development
 
+### Dependencies
+
+- Python 3.7
+    - To install Python dependencies, run
+      `virtualenv venv && chmod +x venv/bin/activate && source venv/bin/activate && pip install -r requirements.txt`
+- NodeJS v14.2.0 and npm 6.14.4
+    - To install JavaScript dependencies, run `npm install`
+
+### Building
+
+To build a local server, run `npm run dev`.
+
 To deploy, run `npm run deploy`. Don't run `gcloud app deploy` directly, as that does not build the parceljs compiled files.
