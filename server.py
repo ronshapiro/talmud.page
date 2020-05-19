@@ -8,7 +8,7 @@ from api_request_handler import RealRequestMaker
 from flask import Flask
 from flask import jsonify
 from flask import redirect
-from flask import render_template as flask_render_template
+from flask import render_template
 from flask import render_template_string
 from flask import request
 from flask import send_file
@@ -31,28 +31,18 @@ app = Flask(__name__)
 masechtot = Masechtot()
 api_request_handler = ApiRequestHandler(RealRequestMaker())
 
-def render_template(template_name, **extra_template_variables):
-    return flask_render_template(
-        template_name,
+@app.context_processor
+def template_constants():
+    return dict(
         random_hash=random_hash,
         debug=app.debug,
-        **extra_template_variables)
-
-compiled_templates = {}
+    )
 
 def render_compiled_template(file_name, **extra_template_variables):
-    template_string = compiled_templates.get(file_name)
-    if not template_string:
-        with app.open_resource("dist/%s" % file_name, "r") as template_file:
-            template_string = template_file.read()
-        if not app.debug:
-            compiled_templates[file_name] = template_string
-
-    return render_template_string(
-        template_string,
-        random_hash=random_hash,
-        debug=app.debug,
-        **extra_template_variables)
+    with app.open_resource("dist/%s" % file_name, "r") as template_file:
+        return render_template_string(
+            template_file.read(),
+            **extra_template_variables)
 
 @app.route("/")
 def homepage():
