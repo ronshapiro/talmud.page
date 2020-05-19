@@ -1,5 +1,6 @@
 const Bundler = require('parcel-bundler');
 const fs = require('fs');
+const { spawn } = require("child_process");
 
 if (fs.existsSync("./dist")) {
   for (const file of fs.readdirSync("./dist")) {
@@ -32,20 +33,29 @@ const bundler = new Bundler(entryFiles, {
   autoInstall: false,
 });
 
+let flaskSubprocess = undefined;
+let flaskDied = false;
+const startFlask = () => {
+  flaskDied = false;
+  if (flaskSubprocess) {
+    flaskSubprocess.kill();
+  }
+  flaskSubprocess = spawn("./venv/bin/python3", ["server.py"], {
+    env: {
+      "FLASK_ENV": "development",
+    },
+  });
+  flaskSubprocess.stdout.on("data", (data) => process.stdout.write(data));
+  flaskSubprocess.stderr.on("data", (data) => process.stderr.write(data));
+  flaskSubprocess.on("exit", () => flaskDied = true);
+};
+
 if (!isProd) {
-  let flask_subprocess = undefined;
-  const { spawn } = require('child_process');
-  bundler.on('bundled', (bundle) => {
-    if (flask_subprocess) {
-      flask_subprocess.kill();
+  bundler.on('bundled', (bundle) => startFlask());
+  fs.watch(".", {recursive: true}, (eventType, fileName) => {
+    if (flaskDied && fileName.endsWith(".py")) {
+      startFlask();
     }
-    flask_subprocess = spawn('./venv/bin/python3', ["server.py"], {
-      env: {
-        "FLASK_ENV": "development",
-      },
-    });
-    flask_subprocess.stdout.on('data', (data) => process.stdout.write(data));
-    flask_subprocess.stderr.on('data', (data) => process.stderr.write(data));
   });
 }
 
