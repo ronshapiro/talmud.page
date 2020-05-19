@@ -8,8 +8,9 @@ if (fs.existsSync("./dist")) {
 }
 
 const entryFiles = [
-  './templates/preferences_page.html',
-  './templates/talmud_page.html'
+  './templates/homepage.html',
+  './templates/preferences.html',
+  './templates/talmud_page.html',
 ];
 
 const isProd = function() {

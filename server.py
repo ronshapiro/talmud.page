@@ -46,7 +46,7 @@ def render_compiled_template(file_name, **extra_template_variables):
 
 @app.route("/")
 def homepage():
-    return render_template("homepage.html")
+    return render_compiled_template("homepage.html")
 
 @app.route("/view_daf", methods = ["POST"])
 def search_handler():
@@ -101,9 +101,8 @@ def serve_static_files(directory):
 
 serve_static_files("css")
 
-# TODO: disable autoreload in development if it's annoying
 for name in os.listdir("dist"):
-    if name.endswith(".js"):
+    if name.endswith(".js") or (app.debug and name.endswith(".js.map")):
         app.add_url_rule("/%s" % name, name, send_file_fn("dist/%s" % name))
 
 @app.errorhandler(AmudDoesntExistException)
