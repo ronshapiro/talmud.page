@@ -102,7 +102,7 @@ def serve_static_files(directory):
 serve_static_files("css")
 
 for name in os.listdir("dist"):
-    if name.endswith(".js") or (app.debug and name.endswith(".js.map")):
+    if name.endswith(".js") or name.endswith(".css") or (app.debug and name.endswith(".map")):
         app.add_url_rule("/%s" % name, name, send_file_fn("dist/%s" % name))
 
 @app.errorhandler(AmudDoesntExistException)
