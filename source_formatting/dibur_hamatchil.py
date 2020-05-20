@@ -14,4 +14,4 @@ def bold_diburei_hamatchil(text, commentary_name):
         return text
 
     dibur_hamatchil, comment = text.split(" - ", 1)
-    return '<strong class="dibur-hamatchil">%s</strong> - %s' %(dibur_hamatchil, comment)
+    return f'<strong class="dibur-hamatchil">{dibur_hamatchil}</strong> - {comment}'

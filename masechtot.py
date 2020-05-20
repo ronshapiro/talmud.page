@@ -1,21 +1,21 @@
 import hebrew
 import re
 
-_MULTIPLE_SPACES = re.compile("  +")
+_MULTIPLE_SPACES = re.compile(r"  +")
 
 _AMUD_ALEPH_OPTIONS = ("a", ".")
 _AMUD_BET_OPTIONS = ("b", ":")
 
 _AMUD_RANGE_SEPARATORS = ("to", "-")
 
-_ALL_NUMBERS = re.compile("^\d+$")
-_ALL_HEBREW_LETTERS = re.compile("^(?=.+)%s?%s?%s?$" % (
+_ALL_NUMBERS = re.compile(r"^\d+$")
+_ALL_HEBREW_LETTERS = re.compile(r"^(?=.+)%s?%s?%s?$" % (
     "ק", # there are no masechtot with more than 200 dapim
     "[יכלמנסעפצ]",
     "[א-ט]",
 ))
 
-_AB_PATTERN = re.compile("^(\d{1,3})ab$")
+_AB_PATTERN = re.compile(r"^(\d{1,3})ab$")
 
 def _daf_without_aleph_or_bet(amud):
     if _ALL_NUMBERS.match(amud):
@@ -295,7 +295,7 @@ class Masechtot(object):
         if masechet:
             words = words[1:]
         elif len(words) > 1:
-            masechet = self._canonical_masechet_name_or_none("%s %s" %(words[0], words[1]))
+            masechet = self._canonical_masechet_name_or_none(f"{words[0]} {words[1]}")
             if not masechet:
                 raise InvalidQueryException(f"Could not find Masechet: {query}")
             words = words[2:]
@@ -305,22 +305,22 @@ class Masechtot(object):
         if not len(words):
             raise InvalidQueryException(f'No amud specified in query: "{query}"')
 
-        if len(words) is 1 and "-" in words[0]:
+        if len(words) == 1 and "-" in words[0]:
             amudim = words[0].split("-")
-            if len(amudim) is not 2:
+            if len(amudim) != 2:
                 raise InvalidQueryException(f"Could not understand: {query}")
             words = [amudim[0], "-", amudim[1]]
 
         start = CanonicalizedAmud.create(words[0])
         if not start:
             raise InvalidQueryException(f"{words[0]} is not a valid amud")
-        if len(words) is 1:
+        if len(words) == 1:
             if start.full_daf:
                 return QueryResult.full_daf(masechet, start.full_daf)
             else:
                 return QueryResult(masechet, start.single_amud)
 
-        if len(words) is 3 and words[1] in _AMUD_RANGE_SEPARATORS:
+        if len(words) == 3 and words[1] in _AMUD_RANGE_SEPARATORS:
             if start.full_daf:
                 start_amud = "%sa" % start.full_daf
             else:
@@ -386,6 +386,7 @@ class QueryResult(object):
 class InvalidQueryException(Exception):
     def __init__(self, message):
         self.message = message
+
 
 class UnknownMasechetNameException(Exception):
     def __init__(self, name):

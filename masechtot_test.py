@@ -11,21 +11,21 @@ class Subject(object):
         errors = []
         if query_result.masechet != masechet:
             errors.append(
-                "expected masechet to be %s, but was %s" %(masechet, query_result.masechet))
+                "expected masechet to be %s, but was %s" % (masechet, query_result.masechet))
         if query_result.start != start:
-            errors.append("expected start to be %s, but was %s" %(start, query_result.start))
+            errors.append("expected start to be %s, but was %s" % (start, query_result.start))
         if query_result.end != end:
-            errors.append("expected end to be %s, but was %s" %(end, query_result.end))
+            errors.append("expected end to be %s, but was %s" % (end, query_result.end))
 
         if len(errors):
             raise AssertionError("\n".join(errors))
 
     def doesnt_parse(self):
         try:
-            parsed = _masechtot.parse(self.query)
-            raise AssertionError("%s successfully parsed (%s), but was expected not to")
-        except:
-            pass
+            _masechtot.parse(self.query)
+        except Exception:
+            return
+        raise AssertionError("%s successfully parsed (%s), but was expected not to")
 
 def assert_that(query):
     return Subject(query)

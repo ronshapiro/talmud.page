@@ -2,6 +2,7 @@ import api_request_handler
 import json
 import os
 import traceback
+from api_request_handler import ApiException
 from masechtot import MASECHTOT
 from masechtot import next_amud
 
@@ -24,11 +25,11 @@ for masechet in MASECHTOT:
             try:
                 write_json(file_path,
                            request_handler.amud_api_request(masechet.canonical_name, amud))
-            except api_request_handler.ApiException as e:
-                print(f"ApiException in {masechet.canonical_name} {amud}: %s" %(e.message))
+            except ApiException as e:
+                print(f"ApiException in {masechet.canonical_name} {amud}: {e.message}")
                 if e.internal_code == ApiException.SEFARIA_HTTP_ERROR:
                     continue
-            except Exception as e:
+            except Exception:
                 print(f"Exception in {masechet.canonical_name} {amud}")
                 traceback.print_exc()
                 continue

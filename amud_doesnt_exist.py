@@ -4,7 +4,7 @@ class AmudDoesntExistException(Exception):
         self._amudim = amudim
 
     def message(self):
-        if len(self._amudim) is 1:
+        if len(self._amudim) == 1:
             return f"{self._masechet} {self._amudim[0]} doesn't exist"
         else:
             parts = [f"{self._masechet} {self._amudim[0]}"]

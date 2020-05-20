@@ -18,7 +18,7 @@ path = "js/masechtot.js"
 
 if args.setup:
     with open(path, "w") as f:
-        f.write(file_contents());
+        f.write(file_contents())
 else:
     with open(path, "r") as f:
         desired = file_contents()

@@ -4,6 +4,17 @@
     -   id: check-yaml
     -   id: end-of-file-fixer
     -   id: trailing-whitespace
+-   repo: https://gitlab.com/pycqa/flake8
+    rev: 'c8494e7ac0d017d032edc0a402c569b2fddb8a7f'
+    hooks:
+    -   id: flake8
+        args: [
+            '--ignore=E251,E261,E302,E305,E306',
+            --show-source,
+            --statistics,
+            --exclude=venv,
+            --max-line-length=100
+        ]
 -   repo: local
     hooks:
     -   id: check-do-not-submit

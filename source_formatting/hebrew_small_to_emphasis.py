@@ -10,7 +10,7 @@ class HebrewSmallToEmphasisTagTranslator(BaseHtmlTranslator):
             return
         self._out.append("<%s" % tag)
         for attr in attrs:
-            self._out.append(' %s="%s"' %(attr[0], attr[1]))
+            self._out.append(f' {attr[0]}="{attr[1]}"')
         self._out.append(">")
 
     def handle_endtag(self, tag):

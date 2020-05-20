@@ -1,7 +1,6 @@
 import api_request_handler
 import argparse
 import json
-import sys
 
 def input_file_path(ref):
     return f"test_data/api_request_handler/{ref}.input.json"

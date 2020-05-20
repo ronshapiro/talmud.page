@@ -15,7 +15,7 @@ _BR_PREFIX = re.compile("^(<br>)+")
 
 _ALEPH = "א"
 _TAV = "ת"
-_STEINSALTZ_SUGYA_START = re.compile("^<big>[%s-%s]" %(_ALEPH, _TAV))
+_STEINSALTZ_SUGYA_START = re.compile("^<big>[%s-%s]" % (_ALEPH, _TAV))
 
 class RealRequestMaker(object):
     async def request_amud(self, ref):
@@ -52,7 +52,7 @@ class ApiRequestHandler(object):
     def amud_api_request(self, masechet, amud):
         sefaria_results = asyncio.run(self._make_requests(masechet, amud))
 
-        bad_results = list(filter(lambda x: x.status_code is not 200, sefaria_results))
+        bad_results = list(filter(lambda x: x.status_code != 200, sefaria_results))
         def _raise_bad_results_exception():
             raise ApiException(
                 "\n".join(map(lambda x: x.text, bad_results)),
@@ -63,7 +63,7 @@ class ApiRequestHandler(object):
 
         try:
             results_as_json = list(map(lambda x: x.json(), sefaria_results))
-        except:
+        except Exception:
             _raise_bad_results_exception()
 
         result = {"id": amud}
@@ -93,11 +93,11 @@ class ApiRequestHandler(object):
             sections.append({
                 "he": hebrew[i],
                 "en": SefariaLinkSanitizer.process(english[i]),
-                "ref": "%s.%s" %(gemara_json["ref"], i + 1),
+                "ref": "%s.%s" % (gemara_json["ref"], i + 1),
                 "commentary": Commentary.create(),
-                })
+            })
 
-        section_prefix = "%s %s:" %(gemara_json["book"], amud)
+        section_prefix = "%s %s:" % (gemara_json["book"], amud)
         for comment in gemara_json["commentary"]:
             self._add_comment_to_result(comment, sections, section_prefix)
         self._add_second_level_comments_to_result(
@@ -138,8 +138,8 @@ class ApiRequestHandler(object):
         return result
 
     def _add_comment_to_result(self, comment, sections, section_prefix):
-        if len(comment["he"]) is 0 and \
-           len(comment["text"]) is 0:
+        if len(comment["he"]) == 0 and \
+           len(comment["text"]) == 0:
             return
 
         matching_commentary_kind = _matching_commentary_kind(comment)
@@ -222,8 +222,8 @@ class ApiRequestHandler(object):
         elif nested_comment.english_name in ("Maharsha", "Maharshal", "Meir Lublin"):
             return RemovalStrategy.REMOVE_TOP_LEVEL
 
-        self._print("Duplicated comment (Ref: %s) on %s and %s" %(
-            top_level_comment.ref, top_level_comment.source_ref and nested_comment.ref))
+        self._print("Duplicated comment (Ref: %s) on %s and %s" % (
+            top_level_comment.ref, top_level_comment.source_ref, nested_comment.ref))
 
 
 class RemovalStrategy(Enum):
@@ -397,7 +397,7 @@ _COMMENTARIES = [
     {
         "englishName": "Steinsaltz",
     }
-];
+]
 
 def _has_matching_property(first, second, property_name):
     return property_name in first and \

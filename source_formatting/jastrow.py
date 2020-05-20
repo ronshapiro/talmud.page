@@ -114,7 +114,7 @@ _ABBREVIATIONS = [
     },
     {
         "abbreviation": "Beitr.",
-        "expanded": "Beiträge zur Sprach- und Alterthumsforschung, by Michael Sachs, Berlin 1852—54, 2 vols, v. Berl. a. Hildesh",
+        "expanded": "Beiträge zur Sprach- und Alterthumsforschung, by Michael Sachs, Berlin 1852—54, 2 vols, v. Berl. a. Hildesh", # noqa: E501
     },
     {
         "abbreviation": "Bekh.",
@@ -256,7 +256,7 @@ _ABBREVIATIONS = [
     },
     {
         "abbreviation": "Der. Er.",
-        "expanded": "Derekh Eretz (Ethics, a late Talmudic treatise, Rabbah [the great], Zuṭa [the small])",
+        "expanded": "Derekh Eretz (Ethics, a late Talmudic treatise, Rabbah [the great], Zuṭa [the small])", # noqa: E501
         "exceptions": ["review"],
     },
     {
@@ -286,7 +286,7 @@ _ABBREVIATIONS = [
     },
     {
         "abbreviation": "ed.",
-        "expanded": "edition or editions (current editions, opposed to manuscripts or especially quoted editions).",
+        "expanded": "edition or editions (current editions, opposed to manuscripts or especially quoted editions).", # noqa: E501
         "exceptions": ["ambiguous"],
     },
     {
@@ -482,11 +482,11 @@ _ABBREVIATIONS = [
     },
     {
         "abbreviation": "K.A.T.",
-        "expanded": "Keilinschriften und das Alte Testament by Schrader (second edition), Giessen 1883.",
+        "expanded": "Keilinschriften und das Alte Testament by Schrader (second edition), Giessen 1883.", # noqa: E501
     },
     {
         "abbreviation": "KAT",
-        "expanded": "Keilinschriften und das Alte Testament by Schrader (second edition), Giessen 1883.",
+        "expanded": "Keilinschriften und das Alte Testament by Schrader (second edition), Giessen 1883.", # noqa: E501
     },
     {
         "abbreviation": "Kel.",
@@ -956,7 +956,7 @@ _ABBREVIATIONS = [
     },
     {
         "abbreviation": "Sm. Ant.",
-        "expanded": "Smith, Dictionary of Greek and Roman Antiquities, Third American Edition, New-York 1858",
+        "expanded": "Smith, Dictionary of Greek and Roman Antiquities, Third American Edition, New-York 1858", # noqa: E501
     },
     {
         "abbreviation": "S’maḥ.",
@@ -1197,7 +1197,7 @@ class JastrowReformatter(BaseHtmlTranslator):
             self._out.append("<br>")
         self._out.append("<%s" % tag)
         for attr in attrs:
-            self._out.append(' %s="%s"' %(attr[0], attr[1]))
+            self._out.append(f' {attr[0]}="{attr[1]}"')
         self._out.append(">")
 
     def handle_endtag(self, tag):

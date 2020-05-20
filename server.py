@@ -17,7 +17,6 @@ from masechtot import InvalidQueryException
 from masechtot import Masechtot
 from masechtot import UnknownMasechetNameException
 import cachetools
-import datetime
 import math
 import os
 import random
@@ -72,7 +71,7 @@ def amud(masechet, amud):
     if canonical_masechet != masechet:
         return redirect(url_for("amud", masechet = canonical_masechet, amud = amud))
     _validate_amudim(masechet, amud)
-    return render_compiled_template("talmud_page.html", title = "%s %s" %(masechet, amud))
+    return render_compiled_template("talmud_page.html", title = f"{masechet} {amud}")
 
 @app.route("/<masechet>/<start>/to/<end>")
 def amud_range(masechet, start, end):
@@ -92,8 +91,7 @@ def amud_range(masechet, start, end):
         return redirect(url_for(
             "amud_range", masechet = canonical_masechet, start = end, end = start))
 
-    return render_compiled_template(
-        "talmud_page.html", title = "%s %s-%s" %(masechet, start, end))
+    return render_compiled_template("talmud_page.html", title = f"{masechet} {start} {end}")
 
 # Creates a capturing lambda
 def send_file_fn(name):
@@ -121,8 +119,13 @@ def amud_doesnt_exist_404(e):
     return render_template("error_page.html", message=e.message(), title="Error"), 404
 
 @app.errorhandler(InvalidQueryException)
-def amud_doesnt_exist_404(e):
+def invalid_query_404(e):
     return render_template("error_page.html", message=e.message, title="Invalid Query"), 404
+
+@app.errorhandler(UnknownMasechetNameException)
+def unknown_masechet_404(e):
+    message = f'Could not find masechet "{e.name}"'
+    return render_template("error_page.html", message=message, title="Invalid Query"), 404
 
 @app.errorhandler(404)
 def page_not_found(e):
@@ -169,7 +172,7 @@ def amud_json(masechet, amud):
             response = api_request_handler.amud_api_request(masechet, amud)
         except ApiException as e:
             return jsonify({"error": e.message, "code": e.internal_code}), e.http_status
-        except:
+        except Exception:
             _uuid = str(uuid.uuid4())
             print(f"Error with uuid: {_uuid}")
             traceback.print_exc()
