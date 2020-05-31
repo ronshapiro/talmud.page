@@ -30,7 +30,7 @@ const requestAmud = function(amud, directionFunction, options) {
             options.backoff *= 1.5;
             setTimeout(() => requestAmud(amud, directionFunction, options), options.backoff);
           }});
-  if (options.newUrl) history.pushState({}, "", options.newUrl);
+  if (options.newUrl) history.replaceState({}, "", options.newUrl);
   refreshPageState();
 }
 
