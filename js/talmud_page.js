@@ -1,8 +1,9 @@
-import {displaySnackbar, hideSnackbar} from "./snackbar.js";
+import {snackbars} from "./snackbar.js";
 import {TalmudRenderer, _concat, setVisibility} from "./rendering.js";
 import {onceDocumentReady} from "./once_document_ready.js";
 import MASECHTOT from "./masechtot.js";
 import {amudMetadata, computePreviousAmud, computeNextAmud} from "./amud.js";
+import {handleGoogleClientLoad, driveClient} from "./google_drive.js";
 
 const requestAmud = function(amud, directionFunction, options) {
   options = options || {}
@@ -157,7 +158,7 @@ const hideSelectionChangeSnackbar = (ref) => {
   if (selectionChangeSnackbarShowing) {
     gtag("event", "selection_change_snackbar.hidden", {ref: ref});
     selectionChangeSnackbarShowing = false;
-    hideSnackbar();
+    snackbars.textSelection.hide();
   }
 };
 
@@ -195,6 +196,7 @@ document.addEventListener('selectionchange', () => {
   }
   const sefariaRef = findSefariaRef(selection.anchorNode);
   if (!sefariaRef.ref
+      // TODO: perhaps support multiple refs, and just grab everything in between?
       // If the selection spans multiple refs, ignore them all
       || sefariaRef.ref !== findSefariaRef(selection.focusNode).ref) {
     hideSelectionChangeSnackbar(sefariaRef.ref);
@@ -204,7 +206,7 @@ document.addEventListener('selectionchange', () => {
   const sefariaUrl = `https://www.sefaria.org/${ref.replace(/ /g, "_")}`;
   gtag("event", "selection_change_snackbar.shown", {ref: ref});
   selectionChangeSnackbarShowing = true;
-  displaySnackbar(ref, [
+  const buttons = [
     {
       text: "View on Sefaria",
       onClick: () => {
@@ -236,7 +238,50 @@ document.addEventListener('selectionchange', () => {
         window.open(`mailto:corrections@sefaria.org?subject=${subject}&body=${body}`);
       },
     },
-  ]);
+  ];
+  if (driveClient.isSignedIn && !driveClient.errors.length) {
+    buttons.push({
+      text: "Add Note",
+      onClick: () => {
+        // TODO(drive): Implmement proper note handling
+        $("#modal-container").show();
+        $("#modal-content").text(sefariaRef.text);
+      },
+    });
+  }
+
+  snackbars.textSelection.show(ref, buttons);
 });
 
 $(document).ready(main);
+
+onceDocumentReady.execute(() => {
+  const modalContainer = $("#modal-container");
+  modalContainer.click((event) => {
+    if (event.target === modalContainer[0]) {
+      modalContainer.hide();
+    }
+  });
+});
+
+driveClient.signInStatusListener = () => {
+  if (driveClient.isSignedIn) {
+    return;
+  }
+
+  snackbars.googleSignIn.show("Save notes to Google Drive?", [
+    {
+      text: "No thanks",
+      onClick: () => snackbars.googleSignIn.dismissButtonImpl(),
+    },
+    {
+      text: "Sign in",
+      onClick: () => {
+        snackbars.googleSignIn.hide();
+        driveClient.signIn();
+      },
+    }
+  ]);
+};
+
+onceDocumentReady.execute(() => handleGoogleClientLoad());

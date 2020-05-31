@@ -1,5 +1,7 @@
+import gapi from "./google_apis.js";
+
 // The discoveryDoc is seemingly "loaded into" the gapi.client JS object
-const _APIS = [
+const APIS = [
   {
     discoveryDoc: "https://docs.googleapis.com/$discovery/rest?version=v1",
     apiScope: "https://www.googleapis.com/auth/documents",
@@ -17,9 +19,11 @@ const _APIS = [
 
 const checkNotUndefined = function(value, string) {
   if (value === undefined) {
-    throw "undefined " + value;
+    throw "undefined " + string;
   }
 }
+
+const exponentialBackoff = (retryDelay) => retryDelay ? retryDelay * 1.5 : 200;
 
 class DriveClient {
   constructor(clientId, apiKey) {
@@ -30,20 +34,7 @@ class DriveClient {
 
   resetState() {
     this.errors = [];
-    this.stateListeners = [];
     this.spreadsheetDatabaseId = undefined;
-  }
-
-  addListener(fn) {
-    this.stateListeners.push(fn);
-  }
-
-  removeListener(fn) {
-    this.stateListeners = this.stateListeners.filter(x => x != fn);
-  }
-
-  invokeListeners() {
-    this.stateListeners.forEach(fn => fn());
   }
 
   /**
@@ -54,13 +45,11 @@ class DriveClient {
     gapi.client.init({
       apiKey: this.apiKey,
       clientId: this.clientId,
-      discoveryDocs: _APIS.map(api => api.discoveryDoc),
-      scope: _APIS.map(api => api.apiScope).join(" "),
+      discoveryDocs: APIS.map(api => api.discoveryDoc),
+      scope: APIS.map(api => api.apiScope).join(" "),
     }).then(() => {
-      // Handle the initial sign-in state.
-      if (gapi.auth2.getAuthInstance().isSignedIn.get()) {
-        this.updateSigninStatus(true);
-      }
+      // Set the initial sign-in state.
+      this.updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
 
       gapi.auth2.getAuthInstance().isSignedIn.listen(isSignedIn => {
         this.updateSigninStatus(isSignedIn);
@@ -75,10 +64,10 @@ class DriveClient {
     } else {
       this.resetState();
     }
-    this.invokeListeners();
+    if (this.signInStatusListener) this.signInStatusListener();
   }
 
-  findOrCreateSpreadsheetDatabase() {
+  findOrCreateSpreadsheetDatabase(retryDelay) {
     gapi.client.drive.files.list({
       q: "appProperties has { key='talmud.page' and value='database' }",
     }).then(response => {
@@ -89,23 +78,30 @@ class DriveClient {
         } else if (files.length === 1) {
           this.saveSpreadsheetDatabaseId(files[0].id);
         } else {
-          this.errors.push("Too many spreadsheets");
+          this.errors.push("Too many spreadsheets"); // TODO(drive): handle in the UI
         }
+      } else {
+        retryDelay = exponentialBackoff(retryDelay);
+        setTimeout(() => this.findOrCreateSpreadsheetDatabase(retryDelay), retryDelay);
       }
     });
   }
 
-  createSpreadsheetDatabase() {
+  createSpreadsheetDatabase(retryDelay) {
     gapi.client.sheets.spreadsheets.create({
       properties: {
         title: "talmud.page database"
       }
     }).then(response => {
-      this.setSpreadsheetDatabaseProperties(response.result.spreadsheetId);
+      if (response.status === 200) {
+        this.setSpreadsheetDatabaseProperties(response.result.spreadsheetId);
+      } else {
+        setTimeout(() => this.createSpreadsheetDatabase(retryDelay), retryDelay);
+      }
     });
   }
 
-  setSpreadsheetDatabaseProperties(spreadsheetId) {
+  setSpreadsheetDatabaseProperties(spreadsheetId, retryDelay) {
     checkNotUndefined(spreadsheetId, "spreadsheetId");
     gapi.client.drive.files.update({
       fileId: spreadsheetId,
@@ -116,8 +112,10 @@ class DriveClient {
       if (response.status === 200) {
         this.saveSpreadsheetDatabaseId(spreadsheetId);
       } else {
-        console.log(response);
-        // do not submit: exponential retry
+        retryDelay = exponentialBackoff(retryDelay);
+        setTimeout(() => {
+          this.setSpreadsheetDatabaseProperties(spreadsheetId, retryDelay);
+        }, retryDelay);
       }
     });
   }
@@ -125,8 +123,6 @@ class DriveClient {
   saveSpreadsheetDatabaseId(id) {
     checkNotUndefined(id, "id");
     this.spreadsheetDatabaseId = id;
-    this.invokeListeners();
-    console.log(id);
   }
 
   signIn() {
@@ -139,9 +135,6 @@ class DriveClient {
   }
 }
 
-
-// do not submit: make sure to check all response codes
-
 const driveClient = new DriveClient(
   '709056533343-uei1uvpotrhfqg2nttbckhbcjunms8uu.apps.googleusercontent.com', // client id
   'AIzaSyCVV8_I0SrTxXrOeCR51GYtb8cJSX62I_Q', // api key
@@ -150,3 +143,11 @@ const driveClient = new DriveClient(
 function handleGoogleClientLoad() {
   gapi.load('client:auth2', () => driveClient.init());
 }
+
+module.exports = {
+  handleGoogleClientLoad: handleGoogleClientLoad,
+  driveClient: driveClient,
+}
+
+// TODO(drive): remove
+window.driveClient = driveClient;

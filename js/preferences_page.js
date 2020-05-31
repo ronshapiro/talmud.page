@@ -1,4 +1,4 @@
-import {displaySnackbar, hideSnackbar} from "./snackbar.js";
+import {snackbars} from "./snackbar.js";
 import {TalmudRenderer} from "./rendering.js";
 import {onceDocumentReady} from "./once_document_ready.js";
 import createTestData from "./preferences_sample_data.js";
@@ -49,9 +49,9 @@ const radioSection = function(title, section, items, currentValueFunction, newVa
     const maybeNewValue = $(`#${section} :checked`).attr("value");
     if (maybeNewValue !== currentValueFunction()) {
       newValueFunction(maybeNewValue);
-      displaySnackbar("Preferences saved!", [{
+      snackbars.preferencesSaved.show("Preferences saved!", [{
         text: "Dismiss",
-        onClick: hideSnackbar,
+        onClick: () => snackbars.preferencesSaved.hide(),
       }]);
     }
   });

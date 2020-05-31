@@ -4,11 +4,6 @@
   <title>{{title}}</title>
   {% include "header_common.html" %}
   <script src="../js/talmud_page.js"></script>
-  {#
-  <script async="" defer=""
-          onload="this.onload=function(){};handleGoogleClientLoad()"
-          onreadystatechange="if (this.readyState === 'complete') this.onload()"
-          src="https://apis.google.com/js/api.js"></script> #}
 </head>
 <body>
   <div id="main-contents">
@@ -27,5 +22,6 @@
     </div>
     {% include "snackbar.html" %}
   </div>
+  {% include "modal.html" %}
 </body>
 </html>
