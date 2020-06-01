@@ -27,6 +27,18 @@ const checkNotUndefined = function(value, string) {
 
 const exponentialBackoff = (retryDelay) => retryDelay ? retryDelay * 1.5 : 200;
 
+const rgbColor = (red, green, blue) => {
+  return {
+    color: {
+      rgbColor: {
+        red: red/256,
+        green: green/256,
+        blue: blue/256,
+      },
+    }
+  };
+}
+
 class DriveClient {
   constructor(clientId, apiKey) {
     this.clientId = clientId;
@@ -91,6 +103,7 @@ class DriveClient {
   }
 
   findOrCreateDocsDatabase(retryDelay) {
+    // TODO(drive:must): parameterize these files by masechet
     gapi.client.drive.files.list({
       q: `appProperties has { key='talmud.page' and value='${DRIVE_FILE_DATABASE_TYPE}' }`
         + ` and trashed = false`,
@@ -117,7 +130,7 @@ class DriveClient {
     }).then(response => {
       if (response.status === 200) {
         this.setDatabaseFileProperties(response.result.documentId);
-        this.getDatabaseDocument(response.result.documentId);
+        this.getDatabaseDocument(response.result.documentId, () => this.addInstructionsTable());
       } else {
         retryDelay = exponentialBackoff(retryDelay);
         setTimeout(() => this.createDocsDatabase(retryDelay), retryDelay);
@@ -125,7 +138,108 @@ class DriveClient {
     });
   }
 
-  // TODO(drive): when this is synced, redraw UI in case comments have changed
+  instructionsTableRequests() {
+    const caveatsUrl = "https://talmud.page/caveats/googledocs"; // TODO(drive:must): implement this
+    const caveatsText = "click here";
+    const text = "This document was created with talmud.page and is used as a database for"
+          + " personalized comments that you create.\n\nIf you edit any comments here, the changes"
+          + " will be reflected when accessing talmud.page. If you'd like to add more comments, it"
+          + " is recommended to do so via talmud.page directly so that they get labeled"
+          + " appropriately.\n\nThe caveats/instructions here may change over time. To view the"
+          + ` current instructions, ${caveatsText}.`;
+    const TABLE_START = 2;
+    const TABLE_TEXT_START = 5;
+    const borderStyle = {
+      color: rgbColor(184, 145, 48),
+      width: {
+        magnitude: 1,
+        unit: "PT",
+      },
+      dashStyle: "SOLID",
+    };
+    const requests = [
+      {
+        insertTable: {
+          rows: 1,
+          columns: 1,
+          endOfSegmentLocation: {},
+        },
+      }, {
+        updateTableCellStyle: {
+          tableStartLocation: {index: TABLE_START},
+          fields: "*",
+          tableCellStyle: {
+            backgroundColor: rgbColor(251, 229, 163),
+            borderLeft: borderStyle,
+            borderRight: borderStyle,
+            borderTop: borderStyle,
+            borderBottom: borderStyle,
+          },
+        },
+      }, {
+        insertText: {
+          text: text,
+          location: {index: TABLE_TEXT_START}
+        }
+      },
+    ];
+
+    const addLink = (url, start, end) => {
+      return {
+        updateTextStyle: {
+          textStyle: {
+            link: {url: url},
+            underline: true,
+            foregroundColor: rgbColor(44, 91, 198),
+          },
+          fields: "*",
+          range: {
+            startIndex: TABLE_TEXT_START + start,
+            endIndex: TABLE_TEXT_START + end,
+          },
+        },
+      };
+    };
+
+    let talmudPageIndex = -1;
+    while (true) {
+      // leading space helps to ignore caveatsUrl
+      talmudPageIndex = text.indexOf(" talmud.page", talmudPageIndex);
+      if (talmudPageIndex === -1) {
+        break;
+      }
+      talmudPageIndex++;
+
+      requests.push(
+        addLink("https://talmud.page", talmudPageIndex, talmudPageIndex + "talmud.page".length));
+    }
+
+    requests.push(
+      addLink(caveatsUrl,
+              text.lastIndexOf(caveatsText),
+              text.lastIndexOf(caveatsText) + caveatsText.length));
+
+    return requests;
+  }
+
+  addInstructionsTable(retryDelay) {
+    gapi.client.docs.documents.batchUpdate({
+      documentId: this.databaseDocument.documentId,
+      requests: this.instructionsTableRequests(),
+      writeControl: {requiredRevisionId: this.databaseDocument.revisionId},
+    }).then(response => {
+      this.getDatabaseDocument(this.databaseDocument.documentId);
+    }).catch(response => {
+      retryDelay = exponentialBackoff(retryDelay);
+      setTimeout(() => {
+        this.getDatabaseDocument(this.databaseDocument.documentId, () => {
+          this.addInstructionsTable();
+        })
+      }, retryDelay);
+    });
+  }
+
+  // TODO(drive:must): when this is synced, redraw UI in case comments have changed
   getDatabaseDocument(documentId, andThen) {
     gapi.client.docs.documents.get({documentId: documentId})
       .then(response => {
@@ -222,7 +336,7 @@ class DriveClient {
           this.appendNamedRange(text, amud, ref, parentRef, retryDelay);
         })
       }, retryDelay);
-      // TODO(drive): update all other promises to use .catch()
+      // TODO(drive:must): update all other promises to use .catch()
     });
   }
 
@@ -252,14 +366,9 @@ class DriveClient {
     parentRefs.sort(refSorter);
     const index = parentRefs.indexOf(ref);
     if (index === 0) {
-      return this.startOfNotes();
+      return 1;
     }
     return this.findInsertLocation(parentRefs[index -1]);
-  }
-
-  startOfNotes() {
-    // TODO(drive): add a header with instructions, and then return the next line after that
-    return 1;
   }
 
   documentEnd() {
@@ -317,7 +426,7 @@ const driveClient = new DriveClient(
 );
 
 window.handleGoogleClientLoad = () => {
-  if (location.hostname !== "localhost") return; // TODO(drive): remove
+  if (location.hostname !== "localhost") return; // TODO(drive:must): remove
   gapi.load('client:auth2', () => driveClient.init());
 }
 
@@ -325,4 +434,4 @@ module.exports = {
   driveClient: driveClient,
 }
 
-window.driveClient = driveClient; // TODO(drive): remove
+window.driveClient = driveClient; // TODO(drive:must): remove

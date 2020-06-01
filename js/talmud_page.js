@@ -243,7 +243,7 @@ document.addEventListener('selectionchange', () => {
     buttons.push({
       text: "Add Note",
       onClick: () => {
-        // TODO(drive): Implmement proper note handling
+        // TODO(drive:must): Implmement proper note handling
         $("#modal-container").show();
         $("#modal-content").text(sefariaRef.text);
       },
