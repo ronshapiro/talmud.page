@@ -3,7 +3,7 @@ import {TalmudRenderer, _concat, setVisibility} from "./rendering.js";
 import {onceDocumentReady} from "./once_document_ready.js";
 import MASECHTOT from "./masechtot.js";
 import {amudMetadata, computePreviousAmud, computeNextAmud} from "./amud.js";
-import {handleGoogleClientLoad, driveClient} from "./google_drive.js";
+import {driveClient} from "./google_drive.js";
 
 const requestAmud = function(amud, directionFunction, options) {
   options = options || {}
@@ -283,5 +283,3 @@ driveClient.signInStatusListener = () => {
     }
   ]);
 };
-
-onceDocumentReady.execute(() => handleGoogleClientLoad());

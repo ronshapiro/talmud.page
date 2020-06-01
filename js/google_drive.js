@@ -1,4 +1,5 @@
-import gapi from "./google_apis.js";
+import {refSorter} from "./ref_sorter.js";
+import {filterDocumentRange} from "./filter_document_range.js";
 
 // The discoveryDoc is seemingly "loaded into" the gapi.client JS object
 const APIS = [
@@ -6,16 +7,17 @@ const APIS = [
     discoveryDoc: "https://docs.googleapis.com/$discovery/rest?version=v1",
     apiScope: "https://www.googleapis.com/auth/documents",
   },
-  {
+  /*{
     discoveryDoc: "https://sheets.googleapis.com/$discovery/rest?version=v4",
     apiScope: "https://www.googleapis.com/auth/spreadsheets",
-  },
+  },*/
   {
     discoveryDoc: "https://www.googleapis.com/discovery/v1/apis/drive/v3/rest",
     apiScope: "https://www.googleapis.com/auth/drive.readonly",
   },
 ];
 
+const DRIVE_FILE_DATABASE_TYPE = location.hostname === "localhost" ? "debug database" : "database";
 
 const checkNotUndefined = function(value, string) {
   if (value === undefined) {
@@ -34,7 +36,6 @@ class DriveClient {
 
   resetState() {
     this.errors = [];
-    this.spreadsheetDatabaseId = undefined;
   }
 
   /**
@@ -42,6 +43,11 @@ class DriveClient {
    *  listeners.
    */
   init() {
+    if (!gapi) {
+      setTimeout(() => this.init(), 100);
+      return;
+    }
+
     gapi.client.init({
       apiKey: this.apiKey,
       clientId: this.clientId,
@@ -60,69 +66,188 @@ class DriveClient {
   updateSigninStatus(isSignedIn) {
     this.isSignedIn = isSignedIn;
     if (isSignedIn) {
-      this.findOrCreateSpreadsheetDatabase();
+      this.findOrCreateDocsDatabase();
     } else {
       this.resetState();
     }
     if (this.signInStatusListener) this.signInStatusListener();
   }
 
-  findOrCreateSpreadsheetDatabase(retryDelay) {
-    gapi.client.drive.files.list({
-      q: "appProperties has { key='talmud.page' and value='database' }",
-    }).then(response => {
-      if (response.status === 200) {
-        const files = response.result.files;
-        if (files.length === 0) {
-          this.createSpreadsheetDatabase();
-        } else if (files.length === 1) {
-          this.saveSpreadsheetDatabaseId(files[0].id);
-        } else {
-          this.errors.push("Too many spreadsheets"); // TODO(drive): handle in the UI
-        }
-      } else {
-        retryDelay = exponentialBackoff(retryDelay);
-        setTimeout(() => this.findOrCreateSpreadsheetDatabase(retryDelay), retryDelay);
-      }
-    });
-  }
-
-  createSpreadsheetDatabase(retryDelay) {
-    gapi.client.sheets.spreadsheets.create({
-      properties: {
-        title: "talmud.page database"
-      }
-    }).then(response => {
-      if (response.status === 200) {
-        this.setSpreadsheetDatabaseProperties(response.result.spreadsheetId);
-      } else {
-        setTimeout(() => this.createSpreadsheetDatabase(retryDelay), retryDelay);
-      }
-    });
-  }
-
-  setSpreadsheetDatabaseProperties(spreadsheetId, retryDelay) {
-    checkNotUndefined(spreadsheetId, "spreadsheetId");
+  setDatabaseFileProperties(fileId, retryDelay) {
+    checkNotUndefined(fileId, "fileId");
     gapi.client.drive.files.update({
-      fileId: spreadsheetId,
+      fileId: fileId,
       appProperties: {
-        "talmud.page": "database",
+        "talmud.page": DRIVE_FILE_DATABASE_TYPE,
       },
     }).then(response => {
-      if (response.status === 200) {
-        this.saveSpreadsheetDatabaseId(spreadsheetId);
-      } else {
+      if (response.status !== 200) {
         retryDelay = exponentialBackoff(retryDelay);
         setTimeout(() => {
-          this.setSpreadsheetDatabaseProperties(spreadsheetId, retryDelay);
+          this.setDatabaseFileProperties(fileId, onSuccess, retryDelay);
         }, retryDelay);
       }
     });
   }
 
-  saveSpreadsheetDatabaseId(id) {
-    checkNotUndefined(id, "id");
-    this.spreadsheetDatabaseId = id;
+  findOrCreateDocsDatabase(retryDelay) {
+    gapi.client.drive.files.list({
+      q: `appProperties has { key='talmud.page' and value='${DRIVE_FILE_DATABASE_TYPE}' }`
+        + ` and trashed = false`,
+    }).then(response => {
+      if (response.status === 200) {
+        const files = response.result.files;
+        if (files.length === 0) {
+          this.createDocsDatabase();
+        } else if (files.length === 1) {
+          this.getDatabaseDocument(files[0].id, () => console.log("Database document ready!"));
+        } else {
+          this.errors.push("Too many docs"); // TODO(drive): handle in the UI
+        }
+      } else {
+        retryDelay = exponentialBackoff(retryDelay);
+        setTimeout(() => this.findOrCreateDocsDatabase(retryDelay), retryDelay);
+      }
+    });
+  }
+
+  createDocsDatabase(retryDelay) {
+    gapi.client.docs.documents.create({
+      title: `talmud.page ${DRIVE_FILE_DATABASE_TYPE}`
+    }).then(response => {
+      if (response.status === 200) {
+        this.setDatabaseFileProperties(response.result.documentId);
+        this.getDatabaseDocument(response.result.documentId);
+      } else {
+        retryDelay = exponentialBackoff(retryDelay);
+        setTimeout(() => this.createDocsDatabase(retryDelay), retryDelay);
+      }
+    });
+  }
+
+  // TODO(drive): when this is synced, redraw UI in case comments have changed
+  getDatabaseDocument(documentId, andThen) {
+    gapi.client.docs.documents.get({documentId: documentId})
+      .then(response => {
+        this.databaseDocument = response.result;
+        if (andThen) andThen();
+      });
+  }
+
+  appendNamedRange(text, ref, parentRef, retryDelay) {
+    const insertLocation = this.findInsertLocation(ref, parentRef);
+    // TODO(drive): format text. Rewrite the variable so that namedRangeRequest() acts properly
+    const requests = [];
+    requests.push({
+      insertText: {
+        text: text,
+        location: {index: insertLocation},
+      }
+    });
+    const namedRangeRequest = name => {
+      return {
+        createNamedRange: {
+          name: name,
+          range: {
+            startIndex: insertLocation,
+            // TODO(drive): check UTF-16 length here
+            endIndex: insertLocation + text.length,
+          }
+        },
+      };
+    };
+    requests.push(
+      // Two equivalent named ranges are added. The "ref:"-prefixed range allows for indexing of
+      // comments/notes by ref, so that when a text is linked from multiple locations (e.g. for
+      // pesukim referenced throughout a masechet), the notes can be easily accessed from all
+      // locations. The "parentRef:"-prefixed range helps maintain a readable ordering within the
+      // Google Doc. For example, if a comment is added on Pasuk P1 that is referenced in Daf 2a,
+      // a note will be added at the end of the Daf 2a section in the Google Doc, since that is
+      // where the text was viewed when the note was recorded.
+      // Note that if we create multiple docs, one for each titled text, then comments won't be
+      // maintained across those titles.
+      namedRangeRequest(`ref:${ref}`),
+      namedRangeRequest(`parentRef:${parentRef}`));
+
+    gapi.client.docs.documents.batchUpdate({
+      documentId: this.databaseDocument.documentId,
+      requests: requests,
+      writeControl: {requiredRevisionId: this.databaseDocument.revisionId},
+    }).then(response => {
+      this.getDatabaseDocument(this.databaseDocument.documentId);
+    }).catch(response => {
+      retryDelay = exponentialBackoff(retryDelay);
+      setTimeout(() => {
+        this.getDatabaseDocument(this.databaseDocument.documentId, () => {
+          this.appendNamedRange(text, ref, parentRef, retryDelay);
+        })
+      }, retryDelay);
+      // TODO(drive): update all other promises to use .catch()
+    });
+  }
+
+  // TODO(drive): tests, and dependency injection?
+  findInsertLocation(ref) {
+    if (!this.databaseDocument.namedRanges) {
+      return this.documentEnd();
+    }
+
+    if (ref in this.databaseDocument.namedRanges) {
+      let lastRange;
+      for (const namedRange of this.databaseDocument.namedRanges[ref].namedRanges) {
+        for (const range of namedRange.ranges) {
+          if (!lastRange || range.endIndex > lastRange.endIndex) {
+            lastRange = range;
+          }
+        }
+      }
+      return lastRange.endIndex;
+    }
+
+    const parentRefs = Object.keys(this.databaseDocument.namedRanges)
+          .filter(ref => ref.startsWith("parentRef:"))
+          .map(ref => ref.substring("parentRef:".length));
+    parentRefs.push(ref);
+    parentRefs.sort(refSorter);
+    const index = parentRefs.indexOf(ref);
+    if (index === 0) {
+      return this.startOfNotes();
+    }
+    return this.findInsertLocation(parentRefs[index -1]);
+  }
+
+  startOfNotes() {
+    // TODO(drive): add a header with instructions, and then return the next line after that
+    return 1;
+  }
+
+  documentEnd() {
+    const content = this.databaseDocument.body.content;
+    return content[content.length - 1].endIndex - 1;
+  }
+
+  commentsForRef(ref) {
+    const prefixedRef = `ref:${ref}`;
+    if (!(prefixedRef in this.databaseDocument.namedRanges)) {
+      return [];
+    }
+    return this.databaseDocument.namedRanges[prefixedRef].namedRanges
+      .flatMap(x => x.ranges)
+      .map(range => this.documentText(range.startIndex, range.endIndex));
+  }
+
+  documentText(start, end) {
+    return filterDocumentRange(
+      start, end,
+      this.databaseDocument.body.content
+        .filter(x => x.paragraph)
+        .flatMap(x => x.paragraph.elements));
+  }
+
+  documentBodyElements() {
+    return this.databaseDocument.body.content
+      .filter(x => x.paragraph)
+      .flatMap(x => x.paragraph.elements);
   }
 
   signIn() {
@@ -140,14 +265,13 @@ const driveClient = new DriveClient(
   'AIzaSyCVV8_I0SrTxXrOeCR51GYtb8cJSX62I_Q', // api key
 );
 
-function handleGoogleClientLoad() {
+window.handleGoogleClientLoad = () => {
+  if (location.hostname !== "localhost") return; // TODO(drive): remove
   gapi.load('client:auth2', () => driveClient.init());
 }
 
 module.exports = {
-  handleGoogleClientLoad: handleGoogleClientLoad,
   driveClient: driveClient,
 }
 
-// TODO(drive): remove
-window.driveClient = driveClient;
+window.driveClient = driveClient; // TODO(drive): remove
