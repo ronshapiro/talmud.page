@@ -149,7 +149,6 @@ class DriveClient {
       const headerText = amud + "\n";
       const headerRange = {
         startIndex: insertLocation,
-        // TODO(drive): check UTF-16 length here
         endIndex: insertLocation + headerText.length,
       }
       requests.push(
@@ -192,7 +191,6 @@ class DriveClient {
           name: name,
           range: {
             startIndex: insertLocation,
-            // TODO(drive): check UTF-16 length here
             endIndex: insertLocation + text.length,
           }
         },
