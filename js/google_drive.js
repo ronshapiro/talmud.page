@@ -197,9 +197,10 @@ class DriveClient {
       return this.documentEnd();
     }
 
-    if (ref in this.databaseDocument.namedRanges) {
+    const prefixedRef = `ref:${ref}`;
+    if (prefixedRef in this.databaseDocument.namedRanges) {
       let lastRange;
-      for (const namedRange of this.databaseDocument.namedRanges[ref].namedRanges) {
+      for (const namedRange of this.databaseDocument.namedRanges[prefixedRef].namedRanges) {
         for (const range of namedRange.ranges) {
           if (!lastRange || range.endIndex > lastRange.endIndex) {
             lastRange = range;
