@@ -139,7 +139,6 @@ class DriveClient {
 
   // TODO(drive): break up this method, possibly by extracting a state object. Also consider
   // extracting a method just for the requests
-  // TODO(drive): when creating the document, add an instructions table
   appendNamedRange(text, amud, ref, parentRef, retryDelay) {
     let insertLocation = this.findInsertLocation(ref, parentRef);
     const requests = [];
@@ -275,9 +274,19 @@ class DriveClient {
     if (!(prefixedRef in this.databaseDocument.namedRanges)) {
       return [];
     }
-    return this.databaseDocument.namedRanges[prefixedRef].namedRanges
-      .flatMap(x => x.ranges)
-      .map(range => this.documentText(range.startIndex, range.endIndex));
+    const ranges = this.databaseDocument.namedRanges[prefixedRef].namedRanges
+          .flatMap(x => x.ranges);
+    ranges.sort((first, second) => {
+      if (first.startIndex < second.startIndex) {
+        return -1;
+      } else if (first.startIndex == second.startIndex) {
+        return first.endIndex - second.endIndex;
+      } else {
+        return 1;
+      }
+    });
+
+    return ranges.map(range => this.documentText(range.startIndex, range.endIndex));
   }
 
   documentText(start, end) {
