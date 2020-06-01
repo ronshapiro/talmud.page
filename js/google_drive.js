@@ -130,19 +130,55 @@ class DriveClient {
     gapi.client.docs.documents.get({documentId: documentId})
       .then(response => {
         this.databaseDocument = response.result;
+        if (!this.databaseDocument.namedRanges) {
+          this.databaseDocument.namedRanges = {};
+        }
         if (andThen) andThen();
       });
   }
 
-  appendNamedRange(text, ref, parentRef, retryDelay) {
-    const insertLocation = this.findInsertLocation(ref, parentRef);
-    if (!text.startsWith("\n")) {
+  // TODO(drive): break up this method, possibly by extracting a state object
+  appendNamedRange(text, amud, ref, parentRef, retryDelay) {
+    let insertLocation = this.findInsertLocation(ref, parentRef);
+    const requests = [];
+
+    const headerRangeLabel = `header:${amud}`;
+    const headerExists = headerRangeLabel in this.databaseDocument.namedRanges;
+    if (!headerExists) {
+      const headerText = amud + "\n";
+      const headerRange = {
+        startIndex: insertLocation,
+        // TODO(drive): check UTF-16 length here
+        endIndex: insertLocation + headerText.length,
+      }
+      requests.push(
+        {
+          insertText: {
+            text: headerText,
+            location: {index: insertLocation},
+          }
+        }, {
+          updateParagraphStyle: {
+            paragraphStyle: {namedStyleType: "HEADING_2"},
+            fields: "*",
+            range: headerRange,
+          },
+        }, {
+          createNamedRange: {
+            name: headerRangeLabel,
+            range: headerRange,
+          },
+        });
+      insertLocation += headerText.length;
+    }
+
+    if (headerExists && !text.startsWith("\n")) {
       text = "\n" + text;
     }
     if (!text.endsWith("\n")) {
       text = text + "\n";
     }
-    const requests = [];
+
     requests.push({
       insertText: {
         text: text,
@@ -184,7 +220,7 @@ class DriveClient {
       retryDelay = exponentialBackoff(retryDelay);
       setTimeout(() => {
         this.getDatabaseDocument(this.databaseDocument.documentId, () => {
-          this.appendNamedRange(text, ref, parentRef, retryDelay);
+          this.appendNamedRange(text, amud, ref, parentRef, retryDelay);
         })
       }, retryDelay);
       // TODO(drive): update all other promises to use .catch()
@@ -193,7 +229,7 @@ class DriveClient {
 
   // TODO(drive): tests, and dependency injection?
   findInsertLocation(ref) {
-    if (!this.databaseDocument.namedRanges) {
+    if (Object.keys(this.databaseDocument.namedRanges).length === 0) {
       return this.documentEnd();
     }
 
