@@ -136,7 +136,12 @@ class DriveClient {
 
   appendNamedRange(text, ref, parentRef, retryDelay) {
     const insertLocation = this.findInsertLocation(ref, parentRef);
-    // TODO(drive): format text. Rewrite the variable so that namedRangeRequest() acts properly
+    if (!text.startsWith("\n")) {
+      text = "\n" + text;
+    }
+    if (!text.endsWith("\n")) {
+      text = text + "\n";
+    }
     const requests = [];
     requests.push({
       insertText: {
