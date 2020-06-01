@@ -102,7 +102,6 @@ class DriveClient {
   }
 
   findOrCreateDocsDatabase(retryDelay) {
-    // TODO(drive:must): parameterize these files by masechet
     gapi.client.drive.files.list({
       q: `appProperties has { key='talmud.page' and value='${this.databaseProperty}' }`
         + ` and trashed = false`,
