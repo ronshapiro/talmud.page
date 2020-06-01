@@ -137,7 +137,9 @@ class DriveClient {
       });
   }
 
-  // TODO(drive): break up this method, possibly by extracting a state object
+  // TODO(drive): break up this method, possibly by extracting a state object. Also consider
+  // extracting a method just for the requests
+  // TODO(drive): when creating the document, add an instructions table
   appendNamedRange(text, amud, ref, parentRef, retryDelay) {
     let insertLocation = this.findInsertLocation(ref, parentRef);
     const requests = [];
@@ -185,7 +187,7 @@ class DriveClient {
         location: {index: insertLocation},
       }
     });
-    const namedRangeRequest = name => {
+    const namedRangeForComment = name => {
       return {
         createNamedRange: {
           name: name,
@@ -207,8 +209,8 @@ class DriveClient {
       // where the text was viewed when the note was recorded.
       // Note that if we create multiple docs, one for each titled text, then comments won't be
       // maintained across those titles.
-      namedRangeRequest(`ref:${ref}`),
-      namedRangeRequest(`parentRef:${parentRef}`));
+      namedRangeForComment(`ref:${ref}`),
+      namedRangeForComment(`parentRef:${parentRef}`));
 
     gapi.client.docs.documents.batchUpdate({
       documentId: this.databaseDocument.documentId,
