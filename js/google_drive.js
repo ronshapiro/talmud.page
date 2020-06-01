@@ -1,3 +1,4 @@
+import {amudMetadata} from "./amud.js";
 import {refSorter} from "./ref_sorter.js";
 import {filterDocumentRange} from "./filter_document_range.js";
 
@@ -16,8 +17,6 @@ const APIS = [
     apiScope: "https://www.googleapis.com/auth/drive.readonly",
   },
 ];
-
-const DRIVE_FILE_DATABASE_TYPE = location.hostname === "localhost" ? "debug database" : "database";
 
 const checkNotUndefined = function(value, string) {
   if (value === undefined) {
@@ -44,6 +43,8 @@ class DriveClient {
     this.clientId = clientId;
     this.apiKey = apiKey;
     this.resetState();
+    const databaseType = location.hostname === "localhost" ? "debug database" : "database";
+    this.databaseProperty = `${amudMetadata().masechet} ${databaseType}`;
   }
 
   resetState() {
@@ -89,9 +90,7 @@ class DriveClient {
     checkNotUndefined(fileId, "fileId");
     gapi.client.drive.files.update({
       fileId: fileId,
-      appProperties: {
-        "talmud.page": DRIVE_FILE_DATABASE_TYPE,
-      },
+      appProperties: {"talmud.page": this.databaseProperty},
     }).then(response => {
       if (response.status !== 200) {
         retryDelay = exponentialBackoff(retryDelay);
@@ -105,7 +104,7 @@ class DriveClient {
   findOrCreateDocsDatabase(retryDelay) {
     // TODO(drive:must): parameterize these files by masechet
     gapi.client.drive.files.list({
-      q: `appProperties has { key='talmud.page' and value='${DRIVE_FILE_DATABASE_TYPE}' }`
+      q: `appProperties has { key='talmud.page' and value='${this.databaseProperty}' }`
         + ` and trashed = false`,
     }).then(response => {
       if (response.status === 200) {
@@ -126,7 +125,8 @@ class DriveClient {
 
   createDocsDatabase(retryDelay) {
     gapi.client.docs.documents.create({
-      title: `talmud.page ${DRIVE_FILE_DATABASE_TYPE}`
+      // TODO: localize this
+      title: `talmud.page ${this.databaseProperty}`
     }).then(response => {
       if (response.status === 200) {
         this.setDatabaseFileProperties(response.result.documentId);
