@@ -1,6 +1,7 @@
 import {amudMetadata} from "./amud.js";
 import {refSorter} from "./ref_sorter.js";
 import {filterDocumentRange} from "./filter_document_range.js";
+import {newOnReady} from "./once_document_ready.js";
 
 // The discoveryDoc is seemingly "loaded into" the gapi.client JS object
 const APIS = [
@@ -42,16 +43,21 @@ class DriveClient {
   constructor(clientId, apiKey) {
     this.clientId = clientId;
     this.apiKey = apiKey;
+    this.whenDatabaseReady = newOnReady();
     this.resetState();
+
     this.isDebug = location.hostname === "localhost";
     const databaseType = this.isDebug ? "debug database" : "database";
     this.masechet = amudMetadata().masechet;
     this.databaseProperty = `${this.masechet} ${databaseType}`;
-    console.log(this.databaseProperty);
+    if (this.isDebug) {
+      this.whenDatabaseReady.execute(() => console.log("Debug database document ready!"));
+    }
   }
 
   resetState() {
     this.errors = [];
+    this.whenDatabaseReady.reset();
   }
 
   /**
@@ -82,9 +88,7 @@ class DriveClient {
   updateSigninStatus(isSignedIn) {
     this.isSignedIn = isSignedIn;
     if (isSignedIn) {
-      // TODO(drive:must): don't create the document if it doesn't exist until the first note is
-      // added, that way browsing doesn't create lots of empty documents
-      this.findOrCreateDocsDatabase();
+      this.findDocsDatabase();
     } else {
       this.resetState();
     }
@@ -110,7 +114,7 @@ class DriveClient {
     });
   }
 
-  findOrCreateDocsDatabase(retryDelay) {
+  findDocsDatabase(retryDelay) {
     gapi.client.drive.files.list({
       q: `appProperties has { key='talmud.page.database.id' and value='${this.databaseProperty}' }`
         + ` and trashed = false`,
@@ -118,9 +122,9 @@ class DriveClient {
       if (response.status === 200) {
         const files = response.result.files;
         if (files.length === 0) {
-          this.createDocsDatabase();
+          this.databaseDocumentShouldBeCreated = true;
         } else if (files.length === 1) {
-          this.getDatabaseDocument(files[0].id, () => console.log("Database document ready!"));
+          this.getDatabaseDocument(files[0].id, () => this.whenDatabaseReady.declareReady());
         } else {
           this.errors.push("Too many docs"); // TODO(drive): handle in the UI
         }
@@ -134,14 +138,16 @@ class DriveClient {
   createDocsDatabase(retryDelay) {
     // TODO: localize this
     const title = this.isDebug
-          ? `talmud.page ${this.masechet} notes`
-          : `talmud.page ${this.masechet} debug notes`;
+          ? `talmud.page ${this.masechet} debug notes`
+          : `talmud.page ${this.masechet} notes`;
     gapi.client.docs.documents.create({
       title: title,
     }).then(response => {
       if (response.status === 200) {
         this.setDatabaseFileProperties(response.result.documentId);
-        this.getDatabaseDocument(response.result.documentId, () => this.addInstructionsTable());
+        this.getDatabaseDocument(response.result.documentId, () => {
+          this.addInstructionsTable(() => this.whenDatabaseReady.declareReady());
+        });
       } else {
         retryDelay = exponentialBackoff(retryDelay);
         setTimeout(() => this.createDocsDatabase(retryDelay), retryDelay);
@@ -151,13 +157,12 @@ class DriveClient {
 
   instructionsTableRequests() {
     const caveatsUrl = "https://talmud.page/caveats/google-docs";
-    const caveatsText = "click here";
+    const caveatsText = "these instructions";
     const text = "This document was created with talmud.page and is used as a database for"
-          + " personalized comments that you create.\n\nIf you edit any comments here, the changes"
-          + " will be reflected when accessing talmud.page. If you'd like to add more comments, it"
-          + " is recommended to do so via talmud.page directly so that they get labeled"
-          + " appropriately.\n\nThe caveats/instructions here may change over time. To view the"
-          + ` current instructions and for more information, ${caveatsText}.`;
+          + " personalized comments that you create.\n\nBefore making any edits, it's recommended"
+          + ` to read ${caveatsText}.`;
+    // TODO: consider computing these values. That may require making multiple batch edits. For now,
+    // it seems safe, but it would be good to be more resilient
     const TABLE_START = 2;
     const TABLE_TEXT_START = 5;
     const borderStyle = {
@@ -233,18 +238,18 @@ class DriveClient {
     return requests;
   }
 
-  addInstructionsTable(retryDelay) {
+  addInstructionsTable(andThen, retryDelay) {
     gapi.client.docs.documents.batchUpdate({
       documentId: this.databaseDocument.documentId,
       requests: this.instructionsTableRequests(),
       writeControl: {requiredRevisionId: this.databaseDocument.revisionId},
     }).then(response => {
-      this.getDatabaseDocument(this.databaseDocument.documentId);
+      this.getDatabaseDocument(this.databaseDocument.documentId, () => andThen());
     }).catch(response => {
       retryDelay = exponentialBackoff(retryDelay);
       setTimeout(() => {
         this.getDatabaseDocument(this.databaseDocument.documentId, () => {
-          this.addInstructionsTable();
+          this.addInstructionsTable(andThen, retryDelay);
         })
       }, retryDelay);
     });
@@ -262,9 +267,16 @@ class DriveClient {
       });
   }
 
+  appendNamedRange() {
+    if (this.databaseDocumentShouldBeCreated) {
+      this.createDocsDatabase();
+    }
+    this.whenDatabaseReady.execute(() => this._appendNamedRange(...arguments));
+  }
+
   // TODO(drive): break up this method, possibly by extracting a state object. Also consider
   // extracting a method just for the requests
-  appendNamedRange(text, amud, ref, parentRef, retryDelay) {
+  _appendNamedRange(text, amud, ref, parentRef, retryDelay) {
     let insertLocation = this.findInsertLocation(ref, parentRef);
     const requests = [];
 
@@ -344,7 +356,7 @@ class DriveClient {
       retryDelay = exponentialBackoff(retryDelay);
       setTimeout(() => {
         this.getDatabaseDocument(this.databaseDocument.documentId, () => {
-          this.appendNamedRange(text, amud, ref, parentRef, retryDelay);
+          this._appendNamedRange(text, amud, ref, parentRef, retryDelay);
         })
       }, retryDelay);
       // TODO(drive:must): update all other promises to use .catch()

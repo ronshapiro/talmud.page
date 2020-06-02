@@ -1,5 +1,5 @@
-const {createForTesting} = require("./once_document_ready.js");
-const newInstance = createForTesting;
+const {newOnReady} = require("./once_document_ready.js");
+const newInstance = newOnReady;
 
 test("Nothing executed before declareReady() is called", () => {
   const onceDocumentReady = newInstance();

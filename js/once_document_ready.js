@@ -1,7 +1,5 @@
 const create = () => {
-  return {
-    ready: false,
-    queue: [],
+  const result = {
     execute: function(fn) {
       if (this.ready) {
         fn();
@@ -15,11 +13,19 @@ const create = () => {
       }
       this.ready = true;
       this.queue.forEach(fn => fn());
+      this.queue = [];
     },
-  }
+    reset: function() {
+      this.ready = false;
+      this.queue = [];
+    },
+  };
+  result.reset();
+  return result;
 };
 
+// TODO: improve the names here
 module.exports = {
   onceDocumentReady: create(),
-  createForTesting: create,
+  newOnReady: create,
 };
