@@ -90,7 +90,11 @@ class DriveClient {
     checkNotUndefined(fileId, "fileId");
     gapi.client.drive.files.update({
       fileId: fileId,
-      appProperties: {"talmud.page": this.databaseProperty},
+      appProperties: {
+        "talmud.page database ID": this.databaseProperty,
+        "talmud.page database": "true",
+        "talmud.page database version": "1",
+      },
     }).then(response => {
       if (response.status !== 200) {
         retryDelay = exponentialBackoff(retryDelay);
@@ -103,7 +107,7 @@ class DriveClient {
 
   findOrCreateDocsDatabase(retryDelay) {
     gapi.client.drive.files.list({
-      q: `appProperties has { key='talmud.page' and value='${this.databaseProperty}' }`
+      q: `appProperties has { key='talmud.page database ID' and value='${this.databaseProperty}' }`
         + ` and trashed = false`,
     }).then(response => {
       if (response.status === 200) {
