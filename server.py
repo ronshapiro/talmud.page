@@ -192,5 +192,9 @@ for name in os.listdir("favicon"):
 def manifest_json():
     return send_file("static/progressive_webapp_manifest.json")
 
+@app.route("/caveats/google-docs")
+def google_docs_caveats():
+    return redirect("https://github.com/ronshapiro/talmud.page/blob/master/GoogleDriveCaveats.md")
+
 if __name__ == '__main__':
     app.run(threaded=True, port=os.environ.get("PORT", 5000))

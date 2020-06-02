@@ -43,8 +43,11 @@ class DriveClient {
     this.clientId = clientId;
     this.apiKey = apiKey;
     this.resetState();
-    const databaseType = location.hostname === "localhost" ? "debug database" : "database";
-    this.databaseProperty = `${amudMetadata().masechet} ${databaseType}`;
+    this.isDebug = location.hostname === "localhost";
+    const databaseType = this.isDebug ? "debug database" : "database";
+    this.masechet = amudMetadata().masechet;
+    this.databaseProperty = `${this.masechet} ${databaseType}`;
+    console.log(this.databaseProperty);
   }
 
   resetState() {
@@ -79,6 +82,8 @@ class DriveClient {
   updateSigninStatus(isSignedIn) {
     this.isSignedIn = isSignedIn;
     if (isSignedIn) {
+      // TODO(drive:must): don't create the document if it doesn't exist until the first note is
+      // added, that way browsing doesn't create lots of empty documents
       this.findOrCreateDocsDatabase();
     } else {
       this.resetState();
@@ -91,9 +96,9 @@ class DriveClient {
     gapi.client.drive.files.update({
       fileId: fileId,
       appProperties: {
-        "talmud.page database ID": this.databaseProperty,
-        "talmud.page database": "true",
-        "talmud.page database version": "1",
+        "talmud.page.database": "true",
+        "talmud.page.database.id": this.databaseProperty,
+        "talmud.page.database.version": "1",
       },
     }).then(response => {
       if (response.status !== 200) {
@@ -107,7 +112,7 @@ class DriveClient {
 
   findOrCreateDocsDatabase(retryDelay) {
     gapi.client.drive.files.list({
-      q: `appProperties has { key='talmud.page database ID' and value='${this.databaseProperty}' }`
+      q: `appProperties has { key='talmud.page.database.id' and value='${this.databaseProperty}' }`
         + ` and trashed = false`,
     }).then(response => {
       if (response.status === 200) {
@@ -127,9 +132,12 @@ class DriveClient {
   }
 
   createDocsDatabase(retryDelay) {
+    // TODO: localize this
+    const title = this.isDebug
+          ? `talmud.page ${this.masechet} notes`
+          : `talmud.page ${this.masechet} debug notes`;
     gapi.client.docs.documents.create({
-      // TODO: localize this
-      title: `talmud.page ${this.databaseProperty}`
+      title: title,
     }).then(response => {
       if (response.status === 200) {
         this.setDatabaseFileProperties(response.result.documentId);
@@ -142,14 +150,14 @@ class DriveClient {
   }
 
   instructionsTableRequests() {
-    const caveatsUrl = "https://talmud.page/caveats/googledocs"; // TODO(drive:must): implement this
+    const caveatsUrl = "https://talmud.page/caveats/google-docs";
     const caveatsText = "click here";
     const text = "This document was created with talmud.page and is used as a database for"
           + " personalized comments that you create.\n\nIf you edit any comments here, the changes"
           + " will be reflected when accessing talmud.page. If you'd like to add more comments, it"
           + " is recommended to do so via talmud.page directly so that they get labeled"
           + " appropriately.\n\nThe caveats/instructions here may change over time. To view the"
-          + ` current instructions, ${caveatsText}.`;
+          + ` current instructions and for more information, ${caveatsText}.`;
     const TABLE_START = 2;
     const TABLE_TEXT_START = 5;
     const borderStyle = {
