@@ -1,5 +1,5 @@
 import {snackbars} from "./snackbar.js";
-import {TalmudRenderer} from "./rendering.js";
+import {TalmudRenderer} from "./rendering.jsx";
 import {onceDocumentReady} from "./once_document_ready.js";
 import createTestData from "./preferences_sample_data.js";
 

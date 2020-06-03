@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "parcel-bundler": "^1.12.4"
+    "preact": "^10.4.4"
   },
   "scripts": {
     "test": "jest",
@@ -10,7 +10,8 @@
     "ignore trailing commas": "exit 1"
   },
   "devDependencies": {
-    "jest": "^26.0.1"
+    "jest": "^26.0.1",
+    "parcel-bundler": "^1.12.4"
   },
   "ignore trailing commas": "hello, world"
 }
