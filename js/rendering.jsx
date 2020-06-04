@@ -29,8 +29,11 @@ const applyDoubleClick = (element, fn) => {
 };
 
 const ConfigurationContext = createContext();
-const useTranslationOption = () => useContext(ConfigurationContext).translationOption;
-const useCommentaryTypes = () => useContext(ConfigurationContext).commentaryTypes;
+const context = {
+  translationOption: () => useContext(ConfigurationContext).translationOption,
+  commentaryTypes: () => useContext(ConfigurationContext).commentaryTypes,
+  commentaryTypesByClassName: () => useContext(ConfigurationContext).commentaryTypesByClassName,
+}
 
 const debugResultsData = {}
 
@@ -128,11 +131,11 @@ class EnglishCell extends Cell {
 class TableRow extends Component{
   state = {hebrewLineCount: 1}
   englishRef = createRef();
-  
+
   render() {
     const classes = _concat(["table-row"], this.props.classes).join(" ");
     const {hebrew, english, hebrewDoubleClickListener} = this.props;
-    
+
     const cells = [];
     if (!isEmptyText(hebrew)) {
       cells.push(
@@ -153,7 +156,7 @@ class TableRow extends Component{
           lineClampLines={this.state.hebrewLineCount}
           />);
     }
-    
+
     const output = <div classes={classes}>{cells}</div>;
     output.props["sefaria-ref"] = this.props["sefaria-ref"];
     return output;
@@ -221,7 +224,7 @@ const isSefariaReturningLongListsOfSingleCharacters = (comment) => {
 }
 
 const forEachCommentary = (commentaries, action) => {
-  for (const commentaryKind of useCommentaryTypes()) {
+  for (const commentaryKind of context.commentaryTypes()) {
     const commentary = commentaries[commentaryKind.englishName];
     if (commentary) {
       action(commentary, commentaryKind);
@@ -231,39 +234,39 @@ const forEachCommentary = (commentaries, action) => {
 
 class CommentarySection extends Component {
   render() {
-    const {commentaries, showing, toggleShowing} = this.props;
+    const {commentaries, showing, toggleShowing, sectionLabel} = this.props;
     if (!commentaries || commentaries.length === 0) {
       return;
     }
 
     const output = [];
-    forEachCommentary(commentaries, (commentary, commentaryKind) => {
-      if (showing[commentaryKind.className]) {
-        output.push(this.renderTableRow(this.renderButton(commentaryKind), ""));
-        commentary.comments.forEach(comment => {
-          output.push(
-            <CommentRow comment={comment} commentaryKind={commentaryKind} />);
-        });
+    for (const commentaryClassName of showing.ordering) {
+      const commentaryKind = context.commentaryTypesByClassName()[commentaryClassName];
+      const commentary = commentaries[commentaryKind.englishName];
+      output.push(this.renderTableRow(this.renderButton(commentaryKind), ""));
+      commentary.comments.forEach(comment => {
+        output.push(<CommentRow comment={comment} commentaryKind={commentaryKind} />);
+      });
 
-        if (commentary.commentary) {
-          const nestedToggleShowing =
-                (...args) => toggleShowing("nested", commentaryKind.className, ...args);
-          output.push(
-            <CommentarySection
-              commentaries={commentary.commentary}
-              showing={showing.nested[commentaryKind.className]}
-              toggleShowing={nestedToggleShowing}
-              />);
-        }
+      if (commentary.commentary) {
+        const nestedToggleShowing =
+              (...args) => toggleShowing("nested", commentaryKind.className, ...args);
+        output.push(
+          <CommentarySection
+            commentaries={commentary.commentary}
+            showing={showing.nested[commentaryKind.className]}
+            toggleShowing={nestedToggleShowing}
+            sectionLabel={`${sectionLabel}.<nested>.${commentaryKind.className}`}
+            />);
       }
-    });
+    }
 
     output.push(this.renderShowButtons());
     return output;
   }
 
   renderTableRow(hebrew, english) {
-    const overrideFullRow = useTranslationOption() === "english-side-by-side";
+    const overrideFullRow = context.translationOption() === "english-side-by-side";
     return <TableRow hebrew={hebrew} english={english} overrideFullRow={overrideFullRow} />;
   }
 
@@ -271,47 +274,73 @@ class CommentarySection extends Component {
     const {commentaries, showing} = this.props;
     const buttons = [];
     forEachCommentary(commentaries, (commentary, commentaryKind) => {
-      if (!showing[commentaryKind.className]) {
+      if (!showing.ordering.includes(commentaryKind.className)) {
         buttons.push(this.renderButton(commentaryKind));
       }
     });
     return this.renderTableRow(buttons, "");
   }
 
+  buttonToFocusAfterEnter = createRef();
+
   renderButton(commentaryKind) {
-    const {toggleShowing} = this.props;
+    const {toggleShowing, sectionLabel} = this.props;
 
     if (localStorage.showTranslationButton !== "yes"
         && commentaryKind.className === "translation") {
       return;
     }
 
-    const classes = [
-      "commentary_header",
-      commentaryKind.className,
-      commentaryKind.cssCategory,
-    ].join(" ");
     const onClick = () => {
-      // DO NOT SUBMIT gtag
-      toggleShowing(commentaryKind.className);
+      const newValue = toggleShowing(commentaryKind.className);
+      gtag("event", newValue ? "commentary_viewed" : "commentary_hidden", {
+        commentary: commentaryKind.englishName,
+        section: sectionLabel,
+      });
     };
     const onKeyUp = event => {
       if (event && event.code === "Enter") {
         onClick();
-        // DO NOT SUBMIT: maintain focus on the same button after rerendering
+        this.setState({...this.state, buttonToFocus: commentaryKind});
       }
     }
-    return (
-      <a class={classes} tabindex="0" onclick={onClick} onkeyup={onKeyUp}>
+    const applyButtonToFocusRef = (element) => {
+      if (this.state.buttonToFocus === commentaryKind) {
+        element.ref = this.buttonToFocusAfterEnter;
+      }
+      return element;
+    };
+
+    return applyButtonToFocusRef(
+      <a class={this.buttonClasses(commentaryKind)}
+         tabindex="0"
+         onclick={onClick}
+         onkeyup={onKeyUp}>
         {commentaryKind.hebrewName}
       </a>);
+  }
+
+  buttonClasses(commentaryKind) {
+    return [
+      "commentary_header",
+      commentaryKind.className,
+      commentaryKind.cssCategory,
+    ].filter(x => x).join(" ");
+  }
+
+  applyButtonToFocusRef
+
+  componentDidUpdate() {
+    if (this.state.buttonToFocus) {
+      this.buttonToFocusAfterEnter.current.focus();
+      this.setState({...this.state, buttonToFocus: undefined});
+    }
   }
 }
 
 const initShowingState = (commentaries, showing) => {
   showing.ordering = [];
   forEachCommentary(commentaries, (commentary, commentaryKind) => {
-    showing[commentaryKind.className] = false;
     if (commentary.commentary) {
       if (!showing.nested) {
         showing.nested = {};
@@ -325,34 +354,40 @@ const initShowingState = (commentaries, showing) => {
 class Section extends Component {
   constructor(props) {
     super(props);
-      // DO NOT SUBMIT: Add a showing.order state property so that Tosafot can appear before Rashi
     this.state = {showing: {}};
     initShowingState(props.section.commentary, this.state.showing);
+  }
+
+  toggleShowing(...commentaryNames) {
+    // TODO: reducer?
+    const newState = {...this.state};
+    let nestedState = newState.showing;
+    for (const commentaryName of commentaryNames.slice(0, -1)) {
+      if (!(commentaryName in nestedState)) {
+        nestedState[commentaryName] = {};
+      }
+      nestedState = nestedState[commentaryName];
+    }
+    const commentaryName = commentaryNames.slice(-1)[0];
+    const alreadyIncludes = nestedState.ordering.includes(commentaryName);
+    if (alreadyIncludes) {
+      nestedState.ordering = nestedState.ordering.filter(x => x !== commentaryName);
+    } else {
+      nestedState.ordering.push(commentaryName);
+    }
+    this.setState(newState);
+    return !alreadyIncludes;
   }
 
   render() {
     const {section, sectionLabel} = this.props;
     const sectionContents = [];
-    const toggleShowing = (...commentaryNames) => {
-      // TODO: reducer?
-      const newState = {...this.state};
-      let nestedState = newState.showing;
-      for (const commentaryName of commentaryNames.slice(0, -1)) {
-        if (!(commentaryName in nestedState)) {
-          nestedState[commentaryName] = {};
-        }
-        nestedState = nestedState[commentaryName];
-      }
-      const propertyName = commentaryNames.slice(-1);
-      nestedState[propertyName] = !nestedState[propertyName];
-      this.setState(newState);
-    };
     sectionContents.push(
       // TODO: can this id be removed with a `#${sectionLabel} .gemara` selector?
       <TableRow
         hebrew={`<div class="gemara" id="${sectionLabel}-gemara">${section.he}</div>`}
-        hebrewDoubleClickListener={() => toggleShowing("translation")}
-        english={useTranslationOption() === "english-side-by-side" ? section.en : undefined}
+        hebrewDoubleClickListener={() => this.toggleShowing("translation")}
+        english={context.translationOption() === "english-side-by-side" ? section.en : undefined}
         classes={["gemara-container"]} />);
 
     if (section.commentary) {
@@ -360,7 +395,8 @@ class Section extends Component {
         <CommentarySection
           commentaries={section.commentary}
           showing={this.state.showing}
-          toggleShowing={toggleShowing} />);
+          toggleShowing={(...args) => this.toggleShowing(...args)}
+          sectionLabel={sectionLabel} />);
     }
 
     return (
@@ -428,6 +464,7 @@ class Renderer {
     const context = {
       translationOption: this._translationOption,
       commentaryTypes: this._commentaryTypes,
+      commentaryTypesByClassName: indexCommentaryTypesByClassName(this._commentaryTypes),
     };
     render(
       <ConfigurationContext.Provider value={context}>
@@ -438,6 +475,14 @@ class Renderer {
     // Make sure mdl always registers new views correctly
     componentHandler.upgradeAllRegistered();
   };
+}
+
+const indexCommentaryTypesByClassName = (commentaryTypes) => {
+  const result = {};
+  for (const type of commentaryTypes) {
+    result[type.className] = type;
+  }
+  return result;
 }
 
 class TalmudRenderer extends Renderer {
