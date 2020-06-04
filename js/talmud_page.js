@@ -1,9 +1,11 @@
 import {snackbars} from "./snackbar.js";
-import {TalmudRenderer, _concat, setVisibility} from "./rendering.jsx";
+import {TalmudRenderer, _concat} from "./rendering.jsx";
 import {onceDocumentReady} from "./once_document_ready.js";
 import MASECHTOT from "./masechtot.js";
 import {amudMetadata, computePreviousAmud, computeNextAmud} from "./amud.js";
 import {driveClient} from "./google_drive.js";
+
+// TODO: reactify?
 
 const requestAmud = function(amud, directionFunction, options) {
   options = options || {}
@@ -32,6 +34,14 @@ const requestAmud = function(amud, directionFunction, options) {
           }});
   if (options.newUrl) history.replaceState({}, "", options.newUrl);
   refreshPageState();
+}
+
+const setVisibility = function(element, toShow) {
+  if (toShow) {
+    element.show();
+  } else {
+    element.hide();
+  }
 }
 
 const refreshPageState = function() {

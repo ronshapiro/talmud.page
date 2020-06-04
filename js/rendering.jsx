@@ -2,12 +2,8 @@ import {onceDocumentReady} from "./once_document_ready.js";
 import {Component, render, h, div, createContext, createRef} from "preact";
 import {useState, useContext} from 'preact/hooks';
 
-// do not submit: add keys wherever seems necesary
+// TODO(react): add keys wherever seems necesary
 
-const applyDoubleClick = (element, fn) => {
-  // DO NOT SUBMIT: remove jquery
-  $(element).betterDoubleClick(fn);
-};
 jQuery.fn.extend({
   betterDoubleClick: function(fn) {
     if (!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)) {
@@ -27,8 +23,14 @@ jQuery.fn.extend({
     return this;
   }
 });
+const applyDoubleClick = (element, fn) => {
+  // TODO(react): remove jQuery
+  $(element).betterDoubleClick(fn);
+};
 
-const TranslationContext = createContext();
+const ConfigurationContext = createContext();
+const useTranslationOption = () => useContext(ConfigurationContext).translationOption;
+const useCommentaryTypes = () => useContext(ConfigurationContext).commentaryTypes;
 
 const debugResultsData = {}
 
@@ -38,15 +40,6 @@ const _concat = function() {
     if (arg) result.push(...arg);
   }
   return result;
-}
-
-// do not submit
-const setVisibility = function(element, toShow) {
-  if (toShow) {
-    element.show();
-  } else {
-    element.hide();
-  }
 }
 
 const isEmptyText = (stringOrList)  => {
@@ -65,6 +58,16 @@ class Cell extends Component {
   classes() {
     return _concat(this.props.classes, ["table-cell"], this.defaultClasses).join(" ");
   }
+
+  // TODO: props.text is an awkward name.
+  applyChildrenUnsafely(element) {
+    if (typeof this.props.text === "string") {
+      element.props.dangerouslySetInnerHTML = {__html: this.props.text};
+    } else {
+      element.props.children = this.props.text;
+    }
+    return element;
+  }
 }
 
 class HebrewCell extends Cell {
@@ -72,14 +75,13 @@ class HebrewCell extends Cell {
   ref = createRef();
 
   render() {
-    // DO NOT SUBMIT
-    return (typeof this.props.text === "string")
-      ? <div dir="rtl" class={this.classes()} ref={this.ref}
-          dangerouslySetInnerHTML={{__html: this.props.text}} />
-      : <div dir="rtl" class={this.classes()} ref={this.ref}>{this.props.text}</div>
+    return this.applyChildrenUnsafely(
+      <div dir="rtl" class={this.classes()} ref={this.ref} />
+    );
   }
 
   componentDidMount() {
+    applyDoubleClick(this.ref.current, this.props.hebrewDoubleClickListener);
     this.forceUpdate(); // to trigger componentDidUpdate();
   }
 
@@ -103,18 +105,17 @@ class EnglishCell extends Cell {
   };
 
   render() {
-    // DO NOT SUBMIT: line-clampable and -webkit-line-clamp value should be state
-    // do not submit: examine if english-div is necessary
+    // TODO: attempt to remove english-div
     const innerClasses = ["english-div"];
     if (this.state.lineClamped) {
       innerClasses.push("line-clampable");
     }
     return (
-        <div dir="ltr" class={this.classes()} ref={this.props.englishRef}>
+      <div dir="ltr" class={this.classes()} ref={this.props.englishRef}>
+        {this.applyChildrenUnsafely(
           <div class={innerClasses.join(" ")}
-               style={`-webkit-line-clamp: ${this.props.lineClampLines};`}
-               dangerouslySetInnerHTML={{__html: this.props.text}} />
-        </div>);
+               style={`-webkit-line-clamp: ${this.props.lineClampLines};`} />)}
+      </div>);
   }
 
   componentDidMount() {
@@ -124,79 +125,84 @@ class EnglishCell extends Cell {
   }
 }
 
-function TableRow(props) {
-  const [state, setState] = useState({hebrewLineCount: 1});
-  const classes = _concat(["table-row"], props.classes).join(" ");
-  const {hebrew, english, overrideFullRow} = props;
-  const englishRef = createRef();
-
-  const cellClasses = [];
-  if ((isEmptyText(hebrew) || isEmptyText(english)) && !overrideFullRow) {
-    cellClasses.push("fullRow");
+class TableRow extends Component{
+  state = {hebrewLineCount: 1}
+  englishRef = createRef();
+  
+  render() {
+    const classes = _concat(["table-row"], this.props.classes).join(" ");
+    const {hebrew, english, hebrewDoubleClickListener} = this.props;
+    
+    const cells = [];
+    if (!isEmptyText(hebrew)) {
+      cells.push(
+        <HebrewCell
+          text={hebrew}
+          classes={this.cellClasses()}
+          updateHebrewLineCount={newCount => this.setState({hebrewLineCount: newCount})}
+          hebrewDoubleClickListener={hebrewDoubleClickListener}
+          englishRef={this.englishRef}
+          />);
+    }
+    if (!isEmptyText(english)) {
+      cells.push(
+        <EnglishCell
+          text={english}
+          classes={this.cellClasses()}
+          englishRef={this.englishRef}
+          lineClampLines={this.state.hebrewLineCount}
+          />);
+    }
+    
+    const output = <div classes={classes}>{cells}</div>;
+    output.props["sefaria-ref"] = this.props["sefaria-ref"];
+    return output;
   }
 
-  const cells = [];
-  if (!isEmptyText(hebrew)) {
-    cells.push(
-      <HebrewCell
-        text={hebrew}
-        classes={cellClasses}
-        updateHebrewLineCount={newCount => setState({hebrewLineCount: newCount})}
-        englishRef={englishRef} />);
+  cellClasses() {
+    const {hebrew, english, overrideFullRow} = this.props;
+    if ((isEmptyText(hebrew) || isEmptyText(english)) && !overrideFullRow) {
+      return ["fullRow"];
+    }
+    return [];
   }
-  if (!isEmptyText(english)) {
-    cells.push(
-      <EnglishCell
-        text={english}
-        classes={cellClasses}
-        englishRef={englishRef}
-        lineClampLines={state.hebrewLineCount}
+}
+
+class CommentRow extends Component {
+  renderTableRow(hebrew, english) {
+    const {comment, commentaryKind} = this.props;
+    return (
+      <TableRow
+        hebrew={hebrew}
+        english={english}
+        sefaria-ref={comment.ref}
+        commentary-kind={commentaryKind.englishName}
         />);
   }
 
-  const output = <div classes={classes}>{cells}</div>;
-  output.props["sefaria-ref"] = props["sefaria-ref"];
-  return output;
-}
-// DO NOT SUBMIT: break up render methods in into renderFoo() methods
-
-class CommentRow extends Component {
   render() {
-    const {commentId, comment, commentaryKind} = this.props;
-
-    const CommentTableRow = (props) => {
-      const {hebrew, english} = props;
-      return (
-        <TableRow
-          hebrew={hebrew}
-          english={english}
-          sefaria-ref={comment.ref}
-          commentary-kind={commentaryKind.englishName}
-          />);
-    };
+    const {comment, commentaryKind} = this.props;
 
     const output = [];
     if (commentaryKind.showTitle) {
       output.push(
-        <CommentTableRow
-          // DO NOT SUBMIT: this should be jsx
-          hebrew={`<strong>${comment.sourceHeRef}</strong>`}
-          english={isEmptyText(comment.en) ? "" : `<strong>${comment.sourceRef}</strong>`}
-          />);
+        this.renderTableRow(
+          <strong>{comment.sourceHeRef}</strong>,
+          isEmptyText(comment.en) ? "" : <strong>{comment.sourceRef}</strong>));
     }
 
     if (Array.isArray(comment.he) && Array.isArray(comment.en)
         && comment.he.length === comment.en.length) {
       for (let i = 0; i < comment.he.length; i++) {
-        output.push(<CommentTableRow hebrew={comment.he[i]} english={comment.en[i]} />);
+        output.push(this.renderTableRow(comment.he[i], comment.en[i]));
       }
     } else if (isSefariaReturningLongListsOfSingleCharacters(comment)) {
-      output.push(<CommentTableRow hebrew={comment.he.join("")} english={comment.en.join("")} />);
+      output.push(this.renderTableRow(comment.he.join(""), comment.en.join("")));
     } else {
       output.push(
-        <CommentTableRow
-            hebrew={stringOrListToString(comment.he)}
-            english={stringOrListToString(comment.en)} />);
+        this.renderTableRow(
+          stringOrListToString(comment.he),
+          stringOrListToString(comment.en)));;
     }
 
     return output;
@@ -215,8 +221,7 @@ const isSefariaReturningLongListsOfSingleCharacters = (comment) => {
 }
 
 const forEachCommentary = (commentaries, action) => {
-  // do not submit: this._commentaryTypes
-  for (const commentaryKind of TalmudRenderer._defaultCommentaryTypes()) {
+  for (const commentaryKind of useCommentaryTypes()) {
     const commentary = commentaries[commentaryKind.englishName];
     if (commentary) {
       action(commentary, commentaryKind);
@@ -224,37 +229,71 @@ const forEachCommentary = (commentaries, action) => {
   }
 }
 
-function CommentarySection(props) {
-  const {sectionLabel, commentaries} = this.props;
-  const [state, setState] = useState(() => {
-    const initialState = {showing: {}};
-    forEachCommentary(commentaries, (commentary, commentaryKind) => {
-      initialState.showing[commentaryKind.className] = false;
-    });
-    return initialState;
-  });
+class CommentarySection extends Component {
+  render() {
+    const {commentaries, showing, toggleShowing} = this.props;
+    if (!commentaries || commentaries.length === 0) {
+      return;
+    }
 
-  if (!commentaries || commentaries.length === 0) {
-    return;
+    const output = [];
+    forEachCommentary(commentaries, (commentary, commentaryKind) => {
+      if (showing[commentaryKind.className]) {
+        output.push(this.renderTableRow(this.renderButton(commentaryKind), ""));
+        commentary.comments.forEach(comment => {
+          output.push(
+            <CommentRow comment={comment} commentaryKind={commentaryKind} />);
+        });
+
+        if (commentary.commentary) {
+          const nestedToggleShowing =
+                (...args) => toggleShowing("nested", commentaryKind.className, ...args);
+          output.push(
+            <CommentarySection
+              commentaries={commentary.commentary}
+              showing={showing.nested[commentaryKind.className]}
+              toggleShowing={nestedToggleShowing}
+              />);
+        }
+      }
+    });
+
+    output.push(this.renderShowButtons());
+    return output;
   }
 
-  // DO NOT SUBMIT: review what's no longer necessary in a preact world, and move whatever is
-  // necessary into instance methods
-  const commentId = commentaryKind => `${sectionLabel}-${commentaryKind.className}`;
-  const makeButton = (commentaryKind, clazz, newValue) => {
+  renderTableRow(hebrew, english) {
+    const overrideFullRow = useTranslationOption() === "english-side-by-side";
+    return <TableRow hebrew={hebrew} english={english} overrideFullRow={overrideFullRow} />;
+  }
+
+  renderShowButtons() {
+    const {commentaries, showing} = this.props;
+    const buttons = [];
+    forEachCommentary(commentaries, (commentary, commentaryKind) => {
+      if (!showing[commentaryKind.className]) {
+        buttons.push(this.renderButton(commentaryKind));
+      }
+    });
+    return this.renderTableRow(buttons, "");
+  }
+
+  renderButton(commentaryKind) {
+    const {toggleShowing} = this.props;
+
+    if (localStorage.showTranslationButton !== "yes"
+        && commentaryKind.className === "translation") {
+      return;
+    }
+
     const classes = [
       "commentary_header",
       commentaryKind.className,
       commentaryKind.cssCategory,
-      clazz,
     ].join(" ");
     const onClick = () => {
       // DO NOT SUBMIT gtag
-      const stateUpdate = {
-        showing: {...state.showing},
-      };
-      stateUpdate.showing[commentaryKind.className] = newValue;
-      setState(stateUpdate);
+      toggleShowing(commentaryKind.className);
     };
     const onKeyUp = event => {
       if (event && event.code === "Enter") {
@@ -263,55 +302,76 @@ function CommentarySection(props) {
       }
     }
     return (
-      <a class={classes}
-         tabindex="0"
-         data-commentary={commentaryKind.englishName}
-         data-section-label={sectionLabel}
-         data-comment-id={commentId(commentaryKind)}
-         onclick={onClick}
-         onkeyup={onKeyUp}
-         >{commentaryKind.hebrewName}</a>);
-  };
+      <a class={classes} tabindex="0" onclick={onClick} onkeyup={onKeyUp}>
+        {commentaryKind.hebrewName}
+      </a>);
+  }
+}
 
-  const output = [];
-
-  const overrideFullRow = useContext(TranslationContext) === "english-side-by-side";
-  const makeTableRow = (hebrew, english) => {
-    return <TableRow hebrew={hebrew} english={english} overrideFullRow={overrideFullRow} />;
-  };
-
+const initShowingState = (commentaries, showing) => {
+  showing.ordering = [];
   forEachCommentary(commentaries, (commentary, commentaryKind) => {
-    if (state.showing[commentaryKind.className]) {
-      output.push(makeTableRow(makeButton(commentaryKind, "hide-button", false), ""));
-      commentary.comments.forEach(comment => {
-        output.push(
-          <CommentRow
-            commentId={commentId(commentaryKind)}
-            comment={comment}
-            commentaryKind={commentaryKind} />);
-      });
-      if (commentary.commentary) {
-        // do not submit: nested commentaries should stay open if their parent commentary is closed and then reopenedn
-        output.push(
-          <CommentarySection
-            sectionLabel={commentId(commentaryKind)}
-            commentaries={commentary.commentary} />);
+    showing[commentaryKind.className] = false;
+    if (commentary.commentary) {
+      if (!showing.nested) {
+        showing.nested = {};
       }
+      showing.nested[commentaryKind.className] = {};
+      initShowingState(commentary.commentary, showing.nested[commentaryKind.className]);
     }
   });
-  const showButtons = [];
-  forEachCommentary(commentaries, (commentary, commentaryKind) => {
-    if (!state.showing[commentaryKind.className]) {
-      showButtons.push(makeButton(commentaryKind, "show-button", true));
+};
+
+class Section extends Component {
+  constructor(props) {
+    super(props);
+      // DO NOT SUBMIT: Add a showing.order state property so that Tosafot can appear before Rashi
+    this.state = {showing: {}};
+    initShowingState(props.section.commentary, this.state.showing);
+  }
+
+  render() {
+    const {section, sectionLabel} = this.props;
+    const sectionContents = [];
+    const toggleShowing = (...commentaryNames) => {
+      // TODO: reducer?
+      const newState = {...this.state};
+      let nestedState = newState.showing;
+      for (const commentaryName of commentaryNames.slice(0, -1)) {
+        if (!(commentaryName in nestedState)) {
+          nestedState[commentaryName] = {};
+        }
+        nestedState = nestedState[commentaryName];
+      }
+      const propertyName = commentaryNames.slice(-1);
+      nestedState[propertyName] = !nestedState[propertyName];
+      this.setState(newState);
+    };
+    sectionContents.push(
+      // TODO: can this id be removed with a `#${sectionLabel} .gemara` selector?
+      <TableRow
+        hebrew={`<div class="gemara" id="${sectionLabel}-gemara">${section.he}</div>`}
+        hebrewDoubleClickListener={() => toggleShowing("translation")}
+        english={useTranslationOption() === "english-side-by-side" ? section.en : undefined}
+        classes={["gemara-container"]} />);
+
+    if (section.commentary) {
+      sectionContents.push(
+        <CommentarySection
+          commentaries={section.commentary}
+          showing={this.state.showing}
+          toggleShowing={toggleShowing} />);
     }
-  });
-  output.push(makeTableRow(showButtons), "");
-  return output;
+
+    return (
+      <div id={sectionLabel} class="section-container" sefaria-ref={section["ref"]}>
+        {sectionContents}
+      </div>
+    );
+  }
 }
 
 class Amud extends Component {
-  static contextType = TranslationContext;
-
   render() {
     const {containerData} = this.props;
     const output = [<h2>{containerData.title}</h2>];
@@ -327,22 +387,7 @@ class Amud extends Component {
       }
 
       const sectionLabel = `${containerData.id}_section_${i+1}`;
-      const sectionContents = []
-      sectionContents.push(
-        <TableRow
-          hebrew={`<div class="gemara" id="${sectionLabel}-gemara">${section.he}</div>`}
-          english={this.context === "english-side-by-side" ? section.en : undefined}
-          classes={["gemara-container"]} />);
-
-      if (section.commentary) {
-        sectionContents.push(
-          <CommentarySection sectionLabel={sectionLabel} commentaries={section.commentary} />);
-      }
-
-      output.push(
-        <div id={sectionLabel} class="section-container" sefaria-ref={section["ref"]}>
-          {sectionContents}
-        </div>);
+      output.push(<Section section={section} sectionLabel={sectionLabel} />);
     }
     return output;
   }
@@ -380,11 +425,15 @@ class Renderer {
     debugResultsData[containerData.id] = containerData;
     this._applyClientSideDataTransformations(containerData);
 
+    const context = {
+      translationOption: this._translationOption,
+      commentaryTypes: this._commentaryTypes,
+    };
     render(
-        <TranslationContext.Provider value={this._translationOption}>
+      <ConfigurationContext.Provider value={context}>
           <Amud containerData={containerData} />
-        </TranslationContext.Provider>,
-        document.getElementById(divId));
+      </ConfigurationContext.Provider>,
+      document.getElementById(divId));
 
     // Make sure mdl always registers new views correctly
     componentHandler.upgradeAllRegistered();
@@ -504,7 +553,6 @@ class TalmudRenderer extends Renderer {
       },
     ];
 
-    /*
     const steinsaltz = {
       englishName: "Steinsaltz",
       hebrewName: "שטיינזלץ",
@@ -516,8 +564,6 @@ class TalmudRenderer extends Renderer {
     } else {
       commentaryTypes.unshift(steinsaltz);
     }
-    // DO NOT SUBMIT
-    */
 
     return commentaryTypes;
   }
@@ -525,7 +571,6 @@ class TalmudRenderer extends Renderer {
 
 module.exports = {
   _concat: _concat,
-  setVisibility: setVisibility,
   Renderer: Renderer,
   TalmudRenderer: TalmudRenderer,
 };
