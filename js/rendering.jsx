@@ -33,7 +33,6 @@ const context = {
   translationOption: () => useContext(ConfigurationContext).translationOption,
   commentaryTypes: () => useContext(ConfigurationContext).commentaryTypes,
   commentaryTypesByClassName: () => useContext(ConfigurationContext).commentaryTypesByClassName,
-  getPersonalComments: ref => useContext(ConfigurationContext).getPersonalComments(ref),
 }
 
 const _concat = function() {
@@ -222,10 +221,9 @@ const isSefariaReturningLongListsOfSingleCharacters = (comment) => {
   return comment.he.reduce(reducer, 0) > 3 && comment.en.reduce(reducer, 0) > 3;
 }
 
-const forEachCommentary = (commentaries, ref, action) => {
+const forEachCommentary = (commentaries, action) => {
   for (const commentaryKind of context.commentaryTypes()) {
-    const commentary = commentaries[commentaryKind.englishName] || (
-      commentaryKind.englishName === "Personal Notes" && context.getPersonalComments(ref));
+    const commentary = commentaries[commentaryKind.englishName];
     if (commentary) {
       action(commentary, commentaryKind);
     }
@@ -234,13 +232,13 @@ const forEachCommentary = (commentaries, ref, action) => {
 
 class CommentarySection extends Component {
   render() {
-    const {commentaries, showing, toggleShowing, sectionLabel, refForPersonalNotes} = this.props;
+    const {commentaries, getOrdering, toggleShowing, sectionLabel} = this.props;
     if (!commentaries || commentaries.length === 0) {
       return;
     }
 
     const output = [];
-    for (const commentaryClassName of showing.ordering) {
+    for (const commentaryClassName of getOrdering(sectionLabel)) {
       const commentaryKind = context.commentaryTypesByClassName()[commentaryClassName];
       let commentary = commentaries[commentaryKind.englishName];
       if (!commentary) {
@@ -248,8 +246,9 @@ class CommentarySection extends Component {
         // and Steinsaltz (it appears when side-by-side is used)
         if (commentaryClassName === "translation") {
           commentary = commentaries["Steinsaltz"];
-        } else if (commentaryClassName === "personal-notes") {
-          commentary = context.getPersonalComments(refForPersonalNotes);
+        }
+        if (!commentary) {
+          throw `Could not find ${commentaryClassName} commentary in${sectionLabel}`;
         }
       }
       output.push(this.renderTableRow(this.renderButton(commentaryKind), ""));
@@ -258,14 +257,11 @@ class CommentarySection extends Component {
       });
 
       if (commentary.commentary) {
-        const nestedToggleShowing =
-              (...args) => toggleShowing("nested", commentaryKind.className, ...args);
         output.push(
-          // TODO(drive:must): nested commentaries can also have personal notes! Need to pass the prop here
           <CommentarySection
             commentaries={commentary.commentary}
-            showing={showing.nested[commentaryKind.className]}
-            toggleShowing={nestedToggleShowing}
+            getOrdering={getOrdering}
+            toggleShowing={toggleShowing}
             sectionLabel={`${sectionLabel}.<nested>.${commentaryKind.className}`}
             />);
       }
@@ -281,10 +277,10 @@ class CommentarySection extends Component {
   }
 
   renderShowButtons() {
-    const {commentaries, showing, refForPersonalNotes} = this.props;
+    const {commentaries, getOrdering, sectionLabel} = this.props;
     const buttons = [];
-    forEachCommentary(commentaries, refForPersonalNotes, (commentary, commentaryKind) => {
-      if (!showing.ordering.includes(commentaryKind.className)) {
+    forEachCommentary(commentaries, (commentary, commentaryKind) => {
+      if (!getOrdering(sectionLabel).includes(commentaryKind.className)) {
         buttons.push(this.renderButton(commentaryKind));
       }
     });
@@ -302,7 +298,7 @@ class CommentarySection extends Component {
     }
 
     const onClick = () => {
-      const newValue = toggleShowing(commentaryKind.className);
+      const newValue = toggleShowing(sectionLabel, commentaryKind.className);
       gtag("event", newValue ? "commentary_viewed" : "commentary_hidden", {
         commentary: commentaryKind.englishName,
         section: sectionLabel,
@@ -348,44 +344,27 @@ class CommentarySection extends Component {
   }
 }
 
-const initShowingState = (commentaries, showing) => {
-  showing.ordering = [];
-  forEachCommentary(commentaries, /* TODO(drive:must): implement */ undefined, (commentary, commentaryKind) => {
-    if (commentary.commentary) {
-      if (!showing.nested) {
-        showing.nested = {};
-      }
-      showing.nested[commentaryKind.className] = {};
-      initShowingState(commentary.commentary, showing.nested[commentaryKind.className]);
-    }
-  });
-};
 
 class Section extends Component {
   constructor(props) {
     super(props);
-    this.state = {showing: {}};
-    initShowingState(props.section.commentary, this.state.showing);
+    this.state = {};
   }
 
-  toggleShowing(prependNew, ...commentaryNames) {
+  toggleShowing(prependNew, sectionLabel, commentaryName) {
     // TODO: reducer?
     const newState = {...this.state};
-    let nestedState = newState.showing;
-    for (const commentaryName of commentaryNames.slice(0, -1)) {
-      if (!(commentaryName in nestedState)) {
-        nestedState[commentaryName] = {};
-      }
-      nestedState = nestedState[commentaryName];
+    if (!(sectionLabel in newState)) {
+      newState[sectionLabel] = [];
     }
-    const commentaryName = commentaryNames.slice(-1)[0];
-    const alreadyIncludes = nestedState.ordering.includes(commentaryName);
+    const sectionOrdering = newState[sectionLabel];
+    const alreadyIncludes = sectionOrdering.includes(commentaryName);
     if (alreadyIncludes) {
-      nestedState.ordering = nestedState.ordering.filter(x => x !== commentaryName);
+      newState[sectionLabel] = sectionOrdering.filter(x => x !== commentaryName);
     } else if (prependNew) {
-      nestedState.ordering.unshift(commentaryName);
+      sectionOrdering.unshift(commentaryName);
     } else {
-      nestedState.ordering.push(commentaryName);
+      sectionOrdering.push(commentaryName);
     }
     this.setState(newState);
     return !alreadyIncludes;
@@ -398,7 +377,7 @@ class Section extends Component {
       // TODO: can this id be removed with a `#${sectionLabel} .gemara` selector?
       <TableRow
         hebrew={`<div class="gemara" id="${sectionLabel}-gemara">${section.he}</div>`}
-        hebrewDoubleClickListener={() => this.toggleShowing(true, "translation")}
+        hebrewDoubleClickListener={() => this.toggleShowing(true, sectionLabel, "translation")}
         english={context.translationOption() === "english-side-by-side" ? section.en : undefined}
         classes={["gemara-container"]} />);
 
@@ -406,10 +385,9 @@ class Section extends Component {
       sectionContents.push(
         <CommentarySection
           commentaries={section.commentary}
-          showing={this.state.showing}
+          getOrdering={sectionLabel => this.state[sectionLabel] || []}
           toggleShowing={(...args) => this.toggleShowing(false, ...args)}
-          sectionLabel={sectionLabel}
-          refForPersonalNotes={section["ref"]} />);
+          sectionLabel={sectionLabel} />);
     }
 
     return (
@@ -503,12 +481,11 @@ class Renderer {
       translationOption: this._translationOption,
       commentaryTypes: this._commentaryTypes,
       commentaryTypesByClassName: indexCommentaryTypesByClassName(this._commentaryTypes),
-      getPersonalComments: ref => this.driveClient ? this.driveClient.commentsForRef(ref) : undefined,
     };
 
     render(
       <ConfigurationContext.Provider value={context}>
-        <Amudim ref={this.rootComponent} allAmudim={() => this.sortedAmudim()} />
+        <Amudim ref={this.rootComponent} allAmudim={() => this.getAmudim()} />
       </ConfigurationContext.Provider>,
       document.getElementById(divId));
   }
@@ -525,6 +502,51 @@ class Renderer {
 
   forceUpdate() {
     this.rootComponent.current.forceUpdate();
+  }
+
+  getAmudim() {
+    const amudim = this.sortedAmudim();
+    if (!this.driveClient) {
+      return amudim;
+    }
+
+    const setPersonalComments = (object, personalNotes) => {
+      if (personalNotes) {
+        if (!object.commentary) object.commentary = {}
+        object.commentary["Personal Notes"] = personalNotes;
+      } else if (object.commentary) {
+        delete object.commentary["Personal Notes"];
+      }
+    };
+
+    for (const section of amudim.flatMap(amud => amud.sections)) {
+      for (const commentaryType of Object.keys(section.commentary || {})) {
+        const commentary = section.commentary[commentaryType];
+        for (const nestedCommentaryType of Object.keys(commentary.commentary || {})) {
+          const nestedCommentary = commentary.commentary[nestedCommentaryType];
+          setPersonalComments(
+            nestedCommentary,
+            this.personalCommentsForRefs(nestedCommentary.comments.map(comment => comment.ref)));
+        }
+        setPersonalComments(
+          commentary,
+          this.personalCommentsForRefs(commentary.comments.map(comment => comment.ref)));
+      }
+      setPersonalComments(section, this.driveClient.commentsForRef(section.ref));
+    }
+
+    return amudim;
+  }
+
+  personalCommentsForRefs(refs) {
+    const unflattened = refs.map(ref => this.driveClient.commentsForRef(ref)).filter(x => x);
+    const flattened = [];
+    for (const comment of unflattened) {
+      flattened.push(...comment.comments);
+    }
+    if (flattened.length > 0) {
+      return {comments: flattened};
+    }
   }
 
   sortedAmudim() {
