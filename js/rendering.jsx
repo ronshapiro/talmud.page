@@ -176,7 +176,7 @@ class CommentRow extends Component {
       <TableRow
         hebrew={hebrew}
         english={english}
-        sefaria-ref={comment.ref}
+        sefaria-ref={commentaryKind.englishName === "Personal Notes" ? "ignore" : comment.ref}
         commentary-kind={commentaryKind.englishName}
         />);
   }
@@ -418,7 +418,7 @@ class Amud extends Component {
       const sectionLabel = `${amudData.id}_section_${i+1}`;
       output.push(<Section section={section} sectionLabel={sectionLabel} />);
     }
-    return <div id={`amud-${amudData.id}`} class="amudContainer">
+    return <div id={`amud-${amudData.id}`} class="amudContainer" amud={amudData.id}>
       {output}
     </div>;
   }

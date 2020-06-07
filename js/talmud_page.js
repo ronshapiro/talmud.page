@@ -179,6 +179,9 @@ const findSefariaRef = function(node) {
     isEnglish = isEnglish || $parentElement.hasClass("english");
     const isTranslationOfSourceText = $parentElement.attr("commentary-kind") === "Translation";
     const ref = $parentElement.attr("sefaria-ref");
+    if (ref === "ignore") {
+      break;
+    }
     if (ref && ref !== "synthetic") {
       if (isEnglish && isTranslationOfSourceText) {
         // Go up one layer to the main text
@@ -186,10 +189,12 @@ const findSefariaRef = function(node) {
       } else {
         return {
           ref: ref,
+          parentRef: $parentElement.parent().closest("[sefaria-ref]").attr("sefaria-ref"),
           text: $($parentElement.find(".hebrew")[0]).text(),
           translation: isTranslationOfSourceText
             ? undefined
             : $($parentElement.find(".english")[0]).text(),
+          amud: $parentElement.closest(".amudContainer").attr("amud"),
         };
       }
     }
@@ -253,9 +258,20 @@ document.addEventListener('selectionchange', () => {
     buttons.push({
       text: "Add Note",
       onClick: () => {
-        // TODO(drive:must): Implmement proper note handling
-        $("#modal-container").show();
-        $("#modal-content").text(sefariaRef.text);
+        const modalContainer = $("#modal-container");
+        const noteTextArea = $("#personal-note-entry");
+        modalContainer.show();
+        $("#modal-label").text(`Add a note on ${sefariaRef.ref}`);
+        noteTextArea.val(selection.toString());
+        $("#modal-cancel").off("click").on("click", () => modalContainer.hide());
+        $("#modal-save").off("click").on("click", () => {
+          driveClient.appendNamedRange(
+            noteTextArea.val(),
+            sefariaRef.amud,
+            sefariaRef.ref,
+            sefariaRef.parentRef || sefariaRef.ref);
+          modalContainer.hide();
+        });
       },
     });
   }

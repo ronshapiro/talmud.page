@@ -1,7 +1,23 @@
 <div id="modal-container">
   <div id="modal">
     <div id="modal-content">
-      Hello, world
+      <span id="modal-label"></span>
+      <div class="mdl-textfield mdl-js-textfield" style="width: 100%;">
+        {# TODO(drive): detect RTL/LTR #}
+        <textarea class="mdl-textfield__input" type="text" rows="5" id="personal-note-entry">
+        </textarea>
+      </div>
+      <div style="display: flex;">
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect"
+                style="margin-left: auto;"
+                id="modal-cancel">
+          Cancel
+        </button>
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary"
+                id="modal-save">
+          Save
+        </button>
+      </div>
     </div>
   </div>
 </div>

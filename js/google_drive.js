@@ -395,7 +395,7 @@ class DriveClient {
     parentRefs.sort(refSorter);
     const index = parentRefs.indexOf(ref);
     if (index === 0) {
-      return 1; // TODO(drive:must): this should be after the table
+      return 1; // TODO(drive:must): this should be after the table, and verify it's not in header form
     }
     return this.findInsertLocation(parentRefs[index -1]);
   }
