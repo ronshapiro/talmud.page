@@ -368,7 +368,7 @@ class Section extends Component {
     initShowingState(props.section.commentary, this.state.showing);
   }
 
-  toggleShowing(...commentaryNames) {
+  toggleShowing(prependNew, ...commentaryNames) {
     // TODO: reducer?
     const newState = {...this.state};
     let nestedState = newState.showing;
@@ -382,6 +382,8 @@ class Section extends Component {
     const alreadyIncludes = nestedState.ordering.includes(commentaryName);
     if (alreadyIncludes) {
       nestedState.ordering = nestedState.ordering.filter(x => x !== commentaryName);
+    } else if (prependNew) {
+      nestedState.ordering.unshift(commentaryName);
     } else {
       nestedState.ordering.push(commentaryName);
     }
@@ -396,7 +398,7 @@ class Section extends Component {
       // TODO: can this id be removed with a `#${sectionLabel} .gemara` selector?
       <TableRow
         hebrew={`<div class="gemara" id="${sectionLabel}-gemara">${section.he}</div>`}
-        hebrewDoubleClickListener={() => this.toggleShowing("translation")}
+        hebrewDoubleClickListener={() => this.toggleShowing(true, "translation")}
         english={context.translationOption() === "english-side-by-side" ? section.en : undefined}
         classes={["gemara-container"]} />);
 
@@ -405,7 +407,7 @@ class Section extends Component {
         <CommentarySection
           commentaries={section.commentary}
           showing={this.state.showing}
-          toggleShowing={(...args) => this.toggleShowing(...args)}
+          toggleShowing={(...args) => this.toggleShowing(false, ...args)}
           sectionLabel={sectionLabel}
           refForPersonalNotes={section["ref"]} />);
     }
