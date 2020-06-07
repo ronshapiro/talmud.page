@@ -3,6 +3,9 @@ import {refSorter} from "./ref_sorter.js";
 import {filterDocumentRange} from "./filter_document_range.js";
 import {newOnReady} from "./once_document_ready.js";
 
+const HEBREW_LETTERS = /[א-ת]/g;
+const LATIN_LETTERS = /[a-zA-Z]/g;
+
 // The discoveryDoc is seemingly "loaded into" the gapi.client JS object
 const APIS = [
   {
@@ -257,7 +260,6 @@ class DriveClient {
     });
   }
 
-  // TODO(drive:must): when this is synced, redraw UI in case comments have changed
   getDatabaseDocument(documentId, andThen) {
     this.commentsByRef = {};
     gapi.client.docs.documents.get({documentId: documentId})
@@ -435,10 +437,13 @@ class DriveClient {
     });
 
     return {comments: ranges.map(range => {
+      const text = this.documentText(range.startIndex, range.endIndex);
+      const allText = text.join("");
+      const hebrew = allText.match(HEBREW_LETTERS) || [];
+      const english = allText.match(LATIN_LETTERS) || [];
       return {
-        // TODO(drive:must): detect language
-        en: this.documentText(range.startIndex, range.endIndex),
-        he: "",
+        en: english.length > hebrew.length ? text : "",
+        he: hebrew.length >= english.length ? text : "",
       };
     })};
   }
