@@ -1,5 +1,5 @@
 import {onceDocumentReady} from "./once_document_ready.js";
-import {Component, render, h, div, createContext, createRef} from "preact";
+import {Component, render, h, createContext, createRef} from "preact";
 import {useState, useContext} from 'preact/hooks';
 
 // TODO(react): add keys wherever seems necesary
@@ -34,8 +34,6 @@ const context = {
   commentaryTypes: () => useContext(ConfigurationContext).commentaryTypes,
   commentaryTypesByClassName: () => useContext(ConfigurationContext).commentaryTypesByClassName,
 }
-
-const debugResultsData = {}
 
 const _concat = function() {
   const result = [];
@@ -242,7 +240,11 @@ class CommentarySection extends Component {
     const output = [];
     for (const commentaryClassName of showing.ordering) {
       const commentaryKind = context.commentaryTypesByClassName()[commentaryClassName];
-      const commentary = commentaries[commentaryKind.englishName];
+      const commentary = (
+        commentaries[commentaryKind.englishName]
+        // TODO: investigate a better solution for the indexByClassName overlapping for Translation
+        // and Steinsaltz (it appears when side-by-side is used)
+          || commentaries["Steinsaltz"]);
       output.push(this.renderTableRow(this.renderButton(commentaryKind), ""));
       commentary.comments.forEach(comment => {
         output.push(<CommentRow comment={comment} commentaryKind={commentaryKind} />);
@@ -409,23 +411,51 @@ class Section extends Component {
 
 class Amud extends Component {
   render() {
-    const {containerData} = this.props;
-    const output = [<h2>{containerData.title}</h2>];
-    if (containerData.loading) {
+
+    const {amudData} = this.props;
+    const output = [<h2>{amudData.title}</h2>];
+    if (amudData.loading) {
       output.push(
-        <div key={`${containerData.id}-loading-spinner`}
+        <div key={`${amudData.id}-loading-spinner`}
              class="text-loading-spinner mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active" />);
     }
-    for (let i = 0; i < containerData.sections.length; i++) {
-      const section = containerData.sections[i];
+
+    for (let i = 0; i < amudData.sections.length; i++) {
+      const section = amudData.sections[i];
       if (i !== 0 && section.steinsaltz_start_of_sugya) {
         output.push(<br class="sugya-separator" />);
       }
 
-      const sectionLabel = `${containerData.id}_section_${i+1}`;
+      const sectionLabel = `${amudData.id}_section_${i+1}`;
       output.push(<Section section={section} sectionLabel={sectionLabel} />);
     }
-    return output;
+    return <div id={`amud-${amudData.id}`} class="amudContainer">
+      {output}
+    </div>;
+  }
+}
+
+class Amudim extends Component {
+  state = {}
+
+  render() {
+    if (!this.state.isReady) {
+      return [];
+    }
+    return this.props.allAmudim().map(amud => <Amud amudData={amud} />);
+  }
+
+  componentDidMount() {
+    this.registerMdl();
+  }
+
+  componentDidUpdate() {
+    this.registerMdl();
+  }
+
+  registerMdl() {
+    // Make sure mdl always registers new views correctly
+    componentHandler.upgradeAllRegistered();
   }
 }
 
@@ -433,13 +463,15 @@ class Renderer {
   constructor(commentaryTypes, translationOption) {
     this._commentaryTypes = commentaryTypes;
     this._translationOption = translationOption;
+    this.rootComponent = createRef();
+    this.allAmudim = {};
   }
 
-  _applyClientSideDataTransformations(containerData) {
-    if (!containerData.sections) {
-      containerData.sections = [];
+  _applyClientSideDataTransformations(amudData) {
+    if (!amudData.sections) {
+      amudData.sections = [];
     }
-    for (const section of containerData.sections) {
+    for (const section of amudData.sections) {
       const commentaries = section.commentary;
 
       if (commentaries) {
@@ -455,26 +487,33 @@ class Renderer {
     }
   }
 
-  // containerData is an awkward name, but "section" was already taken. Perhaps that can be changed
-  // and then we can switch this over?
-  renderContainer(containerData, divId) {
-    debugResultsData[containerData.id] = containerData;
-    this._applyClientSideDataTransformations(containerData);
-
+  register(divId) {
     const context = {
       translationOption: this._translationOption,
       commentaryTypes: this._commentaryTypes,
       commentaryTypesByClassName: indexCommentaryTypesByClassName(this._commentaryTypes),
     };
+
     render(
       <ConfigurationContext.Provider value={context}>
-          <Amud containerData={containerData} />
+        <Amudim ref={this.rootComponent} allAmudim={() => this.sortedAmudim()} />
       </ConfigurationContext.Provider>,
       document.getElementById(divId));
+  }
 
-    // Make sure mdl always registers new views correctly
-    componentHandler.upgradeAllRegistered();
-  };
+  setAmud(amudData) {
+    this._applyClientSideDataTransformations(amudData);
+    this.allAmudim[amudData.id] = amudData;
+    this.rootComponent.current.forceUpdate();
+  }
+
+  declareReady() {
+    this.rootComponent.current.setState({isReady: true});
+  }
+
+  sortedAmudim() {
+    throw "Not implemented!";
+  }
 }
 
 const indexCommentaryTypesByClassName = (commentaryTypes) => {
@@ -611,6 +650,19 @@ class TalmudRenderer extends Renderer {
     }
 
     return commentaryTypes;
+  }
+
+  sortedAmudim() {
+    const keys = Object.keys(this.allAmudim);
+    keys.sort((first, second) => {
+      const difference = parseInt(first) - parseInt(second);
+      if (difference !== 0) {
+        return difference;
+      }
+      return first < second ? -1 : 1;
+    });
+
+    return keys.map(key => this.allAmudim[key]);
   }
 }
 

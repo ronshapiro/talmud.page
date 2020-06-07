@@ -73,13 +73,15 @@ const main = function() {
     const divId = `translationOptionExample-${option.value}`;
     $("#translation").append(`<div id="${divId}" class="amudContainer" />`);
 
-    new TalmudRenderer(option.value).renderContainer(
-      {
-        sections: createTestData(),
-        id: option.value,
-        title: `Sample: ${option.displayText}`
-      },
-      divId);
+    // Different renderers are used since they each have different rendering options
+    const renderer = new TalmudRenderer(option.value);
+    renderer.register(divId);
+    renderer.setAmud({
+      sections: createTestData(),
+      id: option.value,
+      title: `Sample: ${option.displayText}`
+    });
+    renderer.declareReady();
   });
 
   const showTranslationHeaderText =

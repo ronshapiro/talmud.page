@@ -7,20 +7,21 @@ import {driveClient} from "./google_drive.js";
 
 // TODO: reactify?
 
-const requestAmud = function(amud, directionFunction, options) {
+const renderer = new TalmudRenderer(localStorage.translationOption || "both");
+
+const requestAmud = function(amud, options) {
   options = options || {}
-  const divId = `amud-${amud}`;
-  $("#results")[directionFunction](`<div id="${divId}" class="amudContainer">`);
   const metadata = amudMetadata();
-  const renderer = new TalmudRenderer(localStorage.translationOption || "both");
-  renderer.renderContainer({
+  renderer.register("results");
+  renderer.setAmud({
+    id: amud,
     title: `${metadata.masechet} ${amud}`,
     loading: true
-  }, divId)
+  });
   $.ajax({url: `${location.origin}/api/${metadata.masechet}/${amud}`,
           type: "GET",
           success: function(results) {
-            renderer.renderContainer(results, divId);
+            renderer.setAmud(results);
             refreshPageState();
             if (options.callback) options.callback();
             gtag("event", "amud_loaded", {
@@ -30,7 +31,7 @@ const requestAmud = function(amud, directionFunction, options) {
           error: function() {
             options.backoff = options.backoff || 200;
             options.backoff *= 1.5;
-            setTimeout(() => requestAmud(amud, directionFunction, options), options.backoff);
+            setTimeout(() => requestAmud(amud, options), options.backoff);
           }});
   if (options.newUrl) history.replaceState({}, "", options.newUrl);
   refreshPageState();
@@ -74,8 +75,6 @@ const main = function() {
   });
 
   const amudRange = metadata.range();
-  const $results = $("#results");
-  $results.hide();
 
   const requestOptions = {
     counter: 0,
@@ -83,7 +82,7 @@ const main = function() {
     callback: function() {
       this.counter++;
       if (this.counter === this.pageCount) {
-        $results.show();
+        renderer.declareReady();
         $("#initial-load-spinner").hide();
 
         let scrollToSection = location.hash;
@@ -109,7 +108,7 @@ const main = function() {
     }
   }
   for (const amud of amudRange) {
-    requestAmud(amud, "append", requestOptions);
+    requestAmud(amud, requestOptions);
   }
 
   $("#previous-amud-container").click(addPreviousAmud);
@@ -119,7 +118,7 @@ const main = function() {
 const addNextAmud = function() {
   const metadata = amudMetadata();
   const nextAmud = computeNextAmud(metadata.amudEnd);
-  requestAmud(nextAmud, "append", {
+  requestAmud(nextAmud, {
     newUrl: `${location.origin}/${metadata.masechet}/${metadata.amudStart}/to/${nextAmud}`
   });
 
@@ -132,9 +131,9 @@ const addNextAmud = function() {
 const addPreviousAmud = function() {
   const metadata = amudMetadata();
   const previousAmud = computePreviousAmud(metadata.amudStart);
-  requestAmud(previousAmud, "prepend", {
+  requestAmud(previousAmud, {
     newUrl: `${location.origin}/${metadata.masechet}/${previousAmud}/to/${metadata.amudEnd}`,
-    callback: () => setTimeout(() => setWindowTop("#amud-" + metadata.amudStart), 10)
+    callback: () => setTimeout(() => setWindowTop("#amud-" + metadata.amudStart), 10),
   });
 
   gtag("event", "load_amud", {
