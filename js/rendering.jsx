@@ -33,6 +33,7 @@ const context = {
   translationOption: () => useContext(ConfigurationContext).translationOption,
   commentaryTypes: () => useContext(ConfigurationContext).commentaryTypes,
   commentaryTypesByClassName: () => useContext(ConfigurationContext).commentaryTypesByClassName,
+  getPersonalComments: ref => useContext(ConfigurationContext).getPersonalComments(ref),
 }
 
 const _concat = function() {
@@ -221,9 +222,10 @@ const isSefariaReturningLongListsOfSingleCharacters = (comment) => {
   return comment.he.reduce(reducer, 0) > 3 && comment.en.reduce(reducer, 0) > 3;
 }
 
-const forEachCommentary = (commentaries, action) => {
+const forEachCommentary = (commentaries, ref, action) => {
   for (const commentaryKind of context.commentaryTypes()) {
-    const commentary = commentaries[commentaryKind.englishName];
+    const commentary = commentaries[commentaryKind.englishName] || (
+      commentaryKind.englishName === "Personal Notes" && context.getPersonalComments(ref));
     if (commentary) {
       action(commentary, commentaryKind);
     }
@@ -232,7 +234,7 @@ const forEachCommentary = (commentaries, action) => {
 
 class CommentarySection extends Component {
   render() {
-    const {commentaries, showing, toggleShowing, sectionLabel} = this.props;
+    const {commentaries, showing, toggleShowing, sectionLabel, refForPersonalNotes} = this.props;
     if (!commentaries || commentaries.length === 0) {
       return;
     }
@@ -240,11 +242,16 @@ class CommentarySection extends Component {
     const output = [];
     for (const commentaryClassName of showing.ordering) {
       const commentaryKind = context.commentaryTypesByClassName()[commentaryClassName];
-      const commentary = (
-        commentaries[commentaryKind.englishName]
+      let commentary = commentaries[commentaryKind.englishName];
+      if (!commentary) {
         // TODO: investigate a better solution for the indexByClassName overlapping for Translation
         // and Steinsaltz (it appears when side-by-side is used)
-          || commentaries["Steinsaltz"]);
+        if (commentaryClassName === "translation") {
+          commentary = commentaries["Steinsaltz"];
+        } else if (commentaryClassName === "personal-notes") {
+          commentary = context.getPersonalComments(refForPersonalNotes);
+        }
+      }
       output.push(this.renderTableRow(this.renderButton(commentaryKind), ""));
       commentary.comments.forEach(comment => {
         output.push(<CommentRow comment={comment} commentaryKind={commentaryKind} />);
@@ -254,6 +261,7 @@ class CommentarySection extends Component {
         const nestedToggleShowing =
               (...args) => toggleShowing("nested", commentaryKind.className, ...args);
         output.push(
+          // TODO(drive:must): nested commentaries can also have personal notes! Need to pass the prop here
           <CommentarySection
             commentaries={commentary.commentary}
             showing={showing.nested[commentaryKind.className]}
@@ -273,9 +281,9 @@ class CommentarySection extends Component {
   }
 
   renderShowButtons() {
-    const {commentaries, showing} = this.props;
+    const {commentaries, showing, refForPersonalNotes} = this.props;
     const buttons = [];
-    forEachCommentary(commentaries, (commentary, commentaryKind) => {
+    forEachCommentary(commentaries, refForPersonalNotes, (commentary, commentaryKind) => {
       if (!showing.ordering.includes(commentaryKind.className)) {
         buttons.push(this.renderButton(commentaryKind));
       }
@@ -342,7 +350,7 @@ class CommentarySection extends Component {
 
 const initShowingState = (commentaries, showing) => {
   showing.ordering = [];
-  forEachCommentary(commentaries, (commentary, commentaryKind) => {
+  forEachCommentary(commentaries, /* TODO(drive:must): implement */ undefined, (commentary, commentaryKind) => {
     if (commentary.commentary) {
       if (!showing.nested) {
         showing.nested = {};
@@ -398,7 +406,8 @@ class Section extends Component {
           commentaries={section.commentary}
           showing={this.state.showing}
           toggleShowing={(...args) => this.toggleShowing(...args)}
-          sectionLabel={sectionLabel} />);
+          sectionLabel={sectionLabel}
+          refForPersonalNotes={section["ref"]} />);
     }
 
     return (
@@ -492,6 +501,7 @@ class Renderer {
       translationOption: this._translationOption,
       commentaryTypes: this._commentaryTypes,
       commentaryTypesByClassName: indexCommentaryTypesByClassName(this._commentaryTypes),
+      getPersonalComments: ref => this.driveClient ? this.driveClient.commentsForRef(ref) : undefined,
     };
 
     render(
@@ -504,11 +514,15 @@ class Renderer {
   setAmud(amudData) {
     this._applyClientSideDataTransformations(amudData);
     this.allAmudim[amudData.id] = amudData;
-    this.rootComponent.current.forceUpdate();
+    this.forceUpdate();
   }
 
   declareReady() {
     this.rootComponent.current.setState({isReady: true});
+  }
+
+  forceUpdate() {
+    this.rootComponent.current.forceUpdate();
   }
 
   sortedAmudim() {
@@ -648,6 +662,12 @@ class TalmudRenderer extends Renderer {
     } else {
       commentaryTypes.unshift(steinsaltz);
     }
+
+    commentaryTypes.push({
+      englishName: "Personal Notes",
+      hebrewName: "Personal Notes",
+      className: "personal-notes",
+    });
 
     return commentaryTypes;
   }

@@ -8,6 +8,7 @@ import {driveClient} from "./google_drive.js";
 // TODO: reactify?
 
 const renderer = new TalmudRenderer(localStorage.translationOption || "both");
+renderer.driveClient = driveClient;
 
 const requestAmud = function(amud, options) {
   options = options || {}
@@ -292,3 +293,5 @@ driveClient.signInStatusListener = () => {
     }
   ]);
 };
+
+driveClient.databaseUpdatedListener = () => renderer.forceUpdate();

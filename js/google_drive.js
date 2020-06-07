@@ -58,6 +58,7 @@ class DriveClient {
   resetState() {
     this.errors = [];
     this.whenDatabaseReady.reset();
+    this.commentsByRef = undefined;
   }
 
   /**
@@ -257,6 +258,7 @@ class DriveClient {
 
   // TODO(drive:must): when this is synced, redraw UI in case comments have changed
   getDatabaseDocument(documentId, andThen) {
+    this.commentsByRef = {};
     gapi.client.docs.documents.get({documentId: documentId})
       .then(response => {
         this.databaseDocument = response.result;
@@ -264,6 +266,7 @@ class DriveClient {
           this.databaseDocument.namedRanges = {};
         }
         if (andThen) andThen();
+        if (this.databaseUpdatedListener) this.databaseUpdatedListener();
       });
   }
 
@@ -400,12 +403,26 @@ class DriveClient {
   }
 
   commentsForRef(ref) {
+    if (!this.databaseDocument) {
+      return;
+    }
+    if (ref in this.commentsByRef) {
+      return this.commentsByRef[ref];
+    } else {
+      const comments = this.computeCommentsForRef(ref);
+      this.commentsByRef[ref] = comments;
+      return comments;
+    }
+  }
+
+  computeCommentsForRef(ref) {
     const prefixedRef = `ref:${ref}`;
     if (!(prefixedRef in this.databaseDocument.namedRanges)) {
-      return [];
+      return;
     }
     const ranges = this.databaseDocument.namedRanges[prefixedRef].namedRanges
           .flatMap(x => x.ranges);
+    // TODO(drive:must): join connected ranges, i.e. if some text is bolded
     ranges.sort((first, second) => {
       if (first.startIndex < second.startIndex) {
         return -1;
@@ -416,7 +433,13 @@ class DriveClient {
       }
     });
 
-    return ranges.map(range => this.documentText(range.startIndex, range.endIndex));
+    return {comments: ranges.map(range => {
+      return {
+        // TODO(drive:must): detect language
+        en: this.documentText(range.startIndex, range.endIndex),
+        he: "",
+      };
+    })};
   }
 
   documentText(start, end) {
