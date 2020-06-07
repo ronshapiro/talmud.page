@@ -27,3 +27,25 @@ test("tanach style", () => {
     "Book Foo 1:11",
   ]);
 });
+
+test("Rashi style", () => {
+  const refs = [
+    "Rashi on Shabbat 100b:1:10",
+    "Rashi on Shabbat 99b:10:10",
+    "Rashi on Shabbat 99b:1:10",
+    "Rashi on Shabbat 99b:10:2",
+    "Rashi on Shabbat 99b:1:2",
+    "Rashi on Shabbat 99b:10:1",
+    "Rashi on Shabbat 99b:1:1",
+  ];
+  refs.sort(refSorter);
+  expect(refs).toEqual([
+    "Rashi on Shabbat 99b:1:1",
+    "Rashi on Shabbat 99b:1:2",
+    "Rashi on Shabbat 99b:1:10",
+    "Rashi on Shabbat 99b:10:1",
+    "Rashi on Shabbat 99b:10:2",
+    "Rashi on Shabbat 99b:10:10",
+    "Rashi on Shabbat 100b:1:10",
+  ]);
+});
