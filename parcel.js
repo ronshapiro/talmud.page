@@ -52,6 +52,11 @@ const startFlask = () => {
 
 if (!isProd) {
   bundler.on('bundled', (bundle) => startFlask());
+  bundler.on("buildError", error => {
+    if (flaskSubprocess) {
+      flaskSubprocess.kill();
+    }
+  });
   fs.watch(".", {recursive: true}, (eventType, fileName) => {
     if (flaskDied && fileName.endsWith(".py")) {
       startFlask();
