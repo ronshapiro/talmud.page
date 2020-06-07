@@ -1,4 +1,4 @@
-const REF_PIECE_SPLITTER = /(.*)( )(\d+)(.*)([\\.:])(.*)/g;
+const REF_PIECE_SPLITTER = /(.* )(\d+)(.*)([\\.:])(.*)/g;
 const refPieces = ref => {
   const basicPieces = ref.split(REF_PIECE_SPLITTER);
   const result = [];
