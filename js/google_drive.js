@@ -131,12 +131,13 @@ class DriveClient {
         }
       } else {
         retryDelay = exponentialBackoff(retryDelay);
-        setTimeout(() => this.findOrCreateDocsDatabase(retryDelay), retryDelay);
+        setTimeout(() => this.findDocsDatabase(retryDelay), retryDelay);
       }
     });
   }
 
   createDocsDatabase(retryDelay) {
+    this.databaseDocumentShouldBeCreated = false;
     // TODO: localize this
     const title = this.isDebug
           ? `talmud.page ${this.masechet} debug notes`
@@ -392,7 +393,7 @@ class DriveClient {
     parentRefs.sort(refSorter);
     const index = parentRefs.indexOf(ref);
     if (index === 0) {
-      return 1;
+      return 1; // TODO(drive:must): this should be after the table
     }
     return this.findInsertLocation(parentRefs[index -1]);
   }
