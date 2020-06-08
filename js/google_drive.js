@@ -92,6 +92,9 @@ class DriveClient {
   updateSigninStatus(isSignedIn) {
     this.isSignedIn = isSignedIn;
     if (isSignedIn) {
+      gtag("config", "GA_MEASUREMENT_ID", {
+        "user_id": gapi.auth2.getAuthInstance().currentUser.get().getBasicProfile().getEmail(),
+      });
       this.findDocsDatabase();
     } else {
       this.resetState();
@@ -273,11 +276,16 @@ class DriveClient {
       });
   }
 
-  appendNamedRange() {
+  appendNamedRange(text, amud, ref, parentRef) {
     if (this.databaseDocumentShouldBeCreated) {
       this.createDocsDatabase();
     }
-    this.whenDatabaseReady.execute(() => this._appendNamedRange(...arguments));
+    gtag("event", "add_personal_note", {
+      amud: amud,
+      ref: ref,
+      parentRef: parentRef,
+    });
+    this.whenDatabaseReady.execute(() => this._appendNamedRange(text, amud, ref, parentRef));
   }
 
   // TODO(drive): break up this method, possibly by extracting a state object. Also consider
