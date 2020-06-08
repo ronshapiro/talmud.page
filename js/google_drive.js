@@ -483,7 +483,6 @@ class DriveClient {
     }
     const ranges = this.databaseDocument.namedRanges[prefixedRef].namedRanges
           .flatMap(x => x.ranges);
-    // TODO(drive:must): join connected ranges, i.e. if some text is bolded
     ranges.sort((first, second) => {
       if (first.startIndex < second.startIndex) {
         return -1;
@@ -508,7 +507,11 @@ class DriveClient {
 
   documentText(start, end) {
     return filterDocumentRange(
-      start, end,
+      start,
+      end,
+      // TODO: to be more resilient, this should do a complete traversal and get all textRuns that
+      // could be nested inside other structures. See
+      // https://developers.google.com/docs/api/samples/extract-text
       this.databaseDocument.body.content
         .filter(x => x.paragraph)
         .flatMap(x => x.paragraph.elements));

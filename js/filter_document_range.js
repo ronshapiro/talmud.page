@@ -9,20 +9,66 @@ const inRange = (start, end) => {
   };
 }
 
+// TODO: this does a lot more than filtering now - rename it to something like getDocumentText
 const filterDocumentRange = (start, end, inputs) => {
-  return inputs
-    .filter(inRange(start, end))
+  const contents =
+        trimContents(joinAdjacentElements(inputs.filter(inRange(start, end))));
+  return contents
     .map(x => {
       const text = x.textRun.content;
       return text.substring(
         start - x.startIndex,
         end > x.endIndex ? text.length : text.length - (x.endIndex - end));
     })
-    .filter((x, index) => !(index === 0 && x === "\n"))
-    .map(x => x.endsWith("\n") ? x.substring(0, x.length - 1) : x);
+    .map(x => x.replace(/\n/g, "<br>"));
+}
+
+// TODO: add simple styles. But doing so would mangle indices, so perhaps collect styles and apply
+// them at the end?
+const joinAdjacentElements = (elements) => {
+  if (elements.length <= 1) {
+    return elements;
+  }
+  const joinedElements = elements.slice(0, 1);
+  for (const current of elements.slice(1)) {
+    const previous = joinedElements.slice(-1)[0];
+    if (previous.endIndex === current.startIndex) {
+      const joined = {
+        startIndex: previous.startIndex,
+        endIndex: current.endIndex,
+        textRun: {
+          content: previous.textRun.content + current.textRun.content,
+        },
+      };
+      joinedElements.pop();
+      joinedElements.push(joined);
+    } else {
+      joinedElements.push(current);
+    }
+  }
+
+  return joinedElements;
+}
+
+const trimContents = (elements) => {
+  return elements.map(element => {
+    const original = element.textRun.content;
+    const trimmed = original.trim();
+    if (trimmed === original) {
+      return element;
+    }
+    return {
+      ...element,
+      textRun: {
+        ...element.textRun,
+        content: trimmed,
+      }
+    }
+  });
 }
 
 module.exports = {
   filterDocumentRange: filterDocumentRange,
   inRange: inRange,
+  joinAdjacentElements: joinAdjacentElements,
 };

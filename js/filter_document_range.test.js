@@ -1,4 +1,4 @@
-const {inRange, filterDocumentRange} = require("./filter_document_range.js");
+const {inRange, joinAdjacentElements, filterDocumentRange} = require("./filter_document_range.js");
 
 describe("inRange()", () => {
   test("before", () => {
@@ -59,19 +59,48 @@ describe("filterDocumentRange()", () => {
   test("partial matches", () => {
     const actual =
           filterDocumentRange(
-            7, 21,
+            7, 23,
             createDocument(
-              "before", ">start", "middle", "end<", "after"));
-    expect(actual).toEqual(["start", "middle", "end"]);
+              "before", ">start", " middle ", "end<", "after"));
+    expect(actual).toEqual(["start middle end"]);
   });
 
-  test("remove first match if it's a newline", () => {
-    expect(filterDocumentRange(5, 200, createDocument("first\n", "end")))
-      .toEqual(["end"]);
+  test("trim newlines", () => {
+    expect(filterDocumentRange(0, 200, createDocument("\nfirst\n", "second\n")))
+      .toEqual(["first<br>second"]);
   });
+});
 
-  test("remove trailing newlines", () => {
-    expect(filterDocumentRange(0, 200, createDocument("first\n", "second\n")))
-      .toEqual(["first", "second"]);
+describe("joinAdjacentElements", () => {
+  test("joining doesn't modify original elements", () => {
+    const input = [{
+      startIndex: 1,
+      endIndex: 2,
+      textRun: {
+        content: "A",
+      }
+    },{
+      startIndex: 2,
+      endIndex: 3,
+      textRun: {
+        content: "B",
+      },
+    }];
+
+    joinAdjacentElements(input);
+
+    expect(input).toEqual([{
+      startIndex: 1,
+      endIndex: 2,
+      textRun: {
+        content: "A",
+      }
+    },{
+      startIndex: 2,
+      endIndex: 3,
+      textRun: {
+        content: "B",
+      },
+    }]);
   });
 });
