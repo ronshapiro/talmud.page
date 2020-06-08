@@ -196,5 +196,9 @@ def manifest_json():
 def google_docs_caveats():
     return redirect("https://github.com/ronshapiro/talmud.page/blob/master/GoogleDriveCaveats.md")
 
+@app.route("/notes")
+def notes():
+    return redirect("https://drive.google.com/drive/search?q=talmud.page notes")
+
 if __name__ == '__main__':
     app.run(threaded=True, port=os.environ.get("PORT", 5000))
