@@ -5,6 +5,7 @@ import {newOnReady} from "./once_document_ready.js";
 
 const HEBREW_LETTERS = /[א-ת]/g;
 const LATIN_LETTERS = /[a-zA-Z]/g;
+const INSTRUCTIONS_TABLE_RANGE_NAME = "Instructions Table";
 
 // The discoveryDoc is seemingly "loaded into" the gapi.client JS object
 const APIS = [
@@ -40,6 +41,21 @@ const rgbColor = (red, green, blue) => {
       },
     }
   };
+}
+
+const insertFormattedTextRequests = (text, range, style) => {
+  return [{
+    insertText: {
+      text: text,
+      location: {index: range.startIndex}
+    },
+  },{
+    updateParagraphStyle: {
+      paragraphStyle: {namedStyleType: style},
+      fields: "*",
+      range: range,
+    },
+  }];
 }
 
 class DriveClient {
@@ -252,13 +268,47 @@ class DriveClient {
       requests: this.instructionsTableRequests(),
       writeControl: {requiredRevisionId: this.databaseDocument.revisionId},
     }).then(response => {
-      this.getDatabaseDocument(this.databaseDocument.documentId, () => andThen());
+      this.getDatabaseDocument(this.databaseDocument.documentId, () => {
+        this.setInstructionsTableRange(andThen);
+      });
     }).catch(response => {
       retryDelay = exponentialBackoff(retryDelay);
       setTimeout(() => {
         this.getDatabaseDocument(this.databaseDocument.documentId, () => {
           this.addInstructionsTable(andThen, retryDelay);
         })
+      }, retryDelay);
+    });
+  }
+
+  setInstructionsTableRange(andThen, retryDelay) {
+    let range;
+    for (const section of this.databaseDocument.body.content) {
+      if (section.table) {
+        range = {startIndex: section.startIndex, endIndex: section.endIndex};
+        break;
+      }
+    }
+    if (!range) {
+      throw "Couldn't find instructions table!";
+    }
+    gapi.client.docs.documents.batchUpdate({
+      documentId: this.databaseDocument.documentId,
+      requests: [{
+        createNamedRange: {
+          name: INSTRUCTIONS_TABLE_RANGE_NAME,
+          range: range,
+        },
+      }],
+      writeControl: {requiredRevisionId: this.databaseDocument.revisionId},
+    }).then(response => {
+      this.getDatabaseDocument(this.databaseDocument.documentId, andThen);
+    }).catch(response => {
+      retryDelay = exponentialBackoff(retryDelay);
+      setTimeout(() => {
+        this.getDatabaseDocument(this.databaseDocument.documentId, () => {
+          this.setInstructionsTableRange(andThen, retryDelay);
+        });
       }, retryDelay);
     });
   }
@@ -301,20 +351,10 @@ class DriveClient {
       const headerRange = {
         startIndex: insertLocation,
         endIndex: insertLocation + headerText.length,
-      }
+      };
       requests.push(
+        ...insertFormattedTextRequests(headerText, headerRange, "HEADING_2"),
         {
-          insertText: {
-            text: headerText,
-            location: {index: insertLocation},
-          }
-        }, {
-          updateParagraphStyle: {
-            paragraphStyle: {namedStyleType: "HEADING_2"},
-            fields: "*",
-            range: headerRange,
-          },
-        }, {
           createNamedRange: {
             name: headerRangeLabel,
             range: headerRange,
@@ -330,24 +370,12 @@ class DriveClient {
       text = text + "\n";
     }
 
-    requests.push({
-      insertText: {
-        text: text,
-        location: {index: insertLocation},
-      }
-    });
-    const namedRangeForComment = name => {
-      return {
-        createNamedRange: {
-          name: name,
-          range: {
-            startIndex: insertLocation,
-            endIndex: insertLocation + text.length,
-          }
-        },
-      };
+    const commentRange = {
+      startIndex: insertLocation,
+      endIndex: insertLocation + text.length,
     };
     requests.push(
+      ...insertFormattedTextRequests(text, commentRange, "NORMAL_TEXT"),
       // Two equivalent named ranges are added. The "ref:"-prefixed range allows for indexing of
       // comments/notes by ref, so that when a text is linked from multiple locations (e.g. for
       // pesukim referenced throughout a masechet), the notes can be easily accessed from all
@@ -357,8 +385,19 @@ class DriveClient {
       // where the text was viewed when the note was recorded.
       // Note that if we create multiple docs, one for each titled text, then comments won't be
       // maintained across those titles.
-      namedRangeForComment(`ref:${ref}`),
-      namedRangeForComment(`parentRef:${parentRef}`));
+      {
+        createNamedRange: {
+          name: `ref:${ref}`,
+          range: commentRange,
+        }
+      },
+      {
+        createNamedRange: {
+          name: `parentRef:${parentRef}`,
+          range: commentRange,
+        }
+      }
+    );
 
     gapi.client.docs.documents.batchUpdate({
       documentId: this.databaseDocument.documentId,
@@ -379,14 +418,15 @@ class DriveClient {
 
   // TODO(drive): tests, and dependency injection?
   findInsertLocation(ref) {
-    if (Object.keys(this.databaseDocument.namedRanges).length === 0) {
+    const {namedRanges} = this.databaseDocument;
+    if (Object.keys(namedRanges).length === 0) {
       return this.documentEnd();
     }
 
     const prefixedRef = `ref:${ref}`;
-    if (prefixedRef in this.databaseDocument.namedRanges) {
+    if (prefixedRef in namedRanges) {
       let lastRange;
-      for (const namedRange of this.databaseDocument.namedRanges[prefixedRef].namedRanges) {
+      for (const namedRange of namedRanges[prefixedRef].namedRanges) {
         for (const range of namedRange.ranges) {
           if (!lastRange || range.endIndex > lastRange.endIndex) {
             lastRange = range;
@@ -396,16 +436,26 @@ class DriveClient {
       return lastRange.endIndex;
     }
 
-    const parentRefs = Object.keys(this.databaseDocument.namedRanges)
+    const parentRefs = Object.keys(namedRanges)
           .filter(ref => ref.startsWith("parentRef:"))
           .map(ref => ref.substring("parentRef:".length));
     parentRefs.push(ref);
     parentRefs.sort(refSorter);
     const index = parentRefs.indexOf(ref);
-    if (index === 0) {
-      return 1; // TODO(drive:must): this should be after the table, and verify it's not in header form
+    if (index !== 0) {
+      return this.findInsertLocation(parentRefs[index -1]);
     }
-    return this.findInsertLocation(parentRefs[index -1]);
+
+    if (INSTRUCTIONS_TABLE_RANGE_NAME in namedRanges) {
+        return (
+          namedRanges[INSTRUCTIONS_TABLE_RANGE_NAME]
+            .namedRanges[0]
+            .ranges[0]
+            .endIndex);
+    }
+
+    // As a last resort, insert at the beginning of the document
+    return 1;
   }
 
   documentEnd() {
