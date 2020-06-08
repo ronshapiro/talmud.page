@@ -51,7 +51,16 @@ const startFlask = () => {
 };
 
 if (!isProd) {
-  bundler.on('bundled', (bundle) => startFlask());
+  let distFiles = new Set();
+  bundler.on('bundled', (bundle) => {
+    const newDistFiles = fs.readdirSync("./dist");
+    if (distFiles.size !== newDistFiles.length || !newDistFiles.every(x => distFiles.has(x))) {
+      distFiles = new Set(newDistFiles);
+      startFlask();
+    } else if (flaskDied) {
+      startFlask();
+    }
+  });
   bundler.on("buildError", error => {
     if (flaskSubprocess) {
       flaskSubprocess.kill();
