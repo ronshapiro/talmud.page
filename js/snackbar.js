@@ -70,7 +70,6 @@ const Kind = {
   PREFERENCES_SAVED: {},
 };
 
-
 const shownCountString = kind => `${kind.prefix}SnackbarShownCount`;
 const shownCount = kind => parseInt(localStorage[shownCountString(kind)]) || 0;
 const incrementShownCount = kind => localStorage[shownCountString(kind)] = shownCount(kind) + 1;
