@@ -536,9 +536,7 @@ const driveClient = new DriveClient(
 );
 
 window.handleGoogleClientLoad = () => {
-  if (window.location.hostname === "localhost" || localStorage.allowDrive) {
-    gapi.load("client:auth2", () => driveClient.init());
-  }
+  gapi.load("client:auth2", () => driveClient.init());
 };
 
 module.exports = {driveClient};
