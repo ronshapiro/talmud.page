@@ -163,11 +163,11 @@ const firstFullyOnScreenSection = function() {
   }
 }
 
-let selectionChangeSnackbarShowing = false;
+let selectionSnackbarRef;
 const hideSelectionChangeSnackbar = (ref) => {
-  if (selectionChangeSnackbarShowing) {
+  if (selectionSnackbarRef) {
     gtag("event", "selection_change_snackbar.hidden", {ref: ref});
-    selectionChangeSnackbarShowing = false;
+    selectionSnackbarRef = undefined;
     snackbars.textSelection.hide();
   }
 };
@@ -204,7 +204,7 @@ const findSefariaRef = function(node) {
 }
 
 document.addEventListener('selectionchange', () => {
-  const selection = document.getSelection();
+  let selection = document.getSelection();
   if (selection.type !== "Range") {
     hideSelectionChangeSnackbar();
     return;
@@ -217,10 +217,18 @@ document.addEventListener('selectionchange', () => {
     hideSelectionChangeSnackbar(sefariaRef.ref);
     return;
   }
+  if (sefariaRef.ref === selectionSnackbarRef) {
+    // do nothing, since the snackbar is already showing the right information
+    return;
+  }
+
   const ref = sefariaRef.ref;
   const sefariaUrl = `https://www.sefaria.org/${ref.replace(/ /g, "_")}`;
   gtag("event", "selection_change_snackbar.shown", {ref: ref});
-  selectionChangeSnackbarShowing = true;
+  selectionSnackbarRef = ref;
+  // don't allow buttons to refer to the selection that triggered the snackbar, since the selection
+  // may have changed
+  selection = undefined;
   const buttons = [
     {
       text: "View on Sefaria",
@@ -262,7 +270,8 @@ document.addEventListener('selectionchange', () => {
         const noteTextArea = $("#personal-note-entry");
         modalContainer.show();
         $("#modal-label").text(`Add a note on ${sefariaRef.ref}`);
-        noteTextArea.val(selection.toString());
+        // Get the possibly-updated selection
+        noteTextArea.val(document.getSelection().toString());
         $("#modal-cancel").off("click").on("click", () => modalContainer.hide());
         $("#modal-save").off("click").on("click", () => {
           driveClient.appendNamedRange(
