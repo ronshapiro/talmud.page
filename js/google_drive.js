@@ -13,13 +13,9 @@ const APIS = [
     discoveryDoc: "https://docs.googleapis.com/$discovery/rest?version=v1",
     apiScope: "https://www.googleapis.com/auth/documents",
   },
-  /*{
-    discoveryDoc: "https://sheets.googleapis.com/$discovery/rest?version=v4",
-    apiScope: "https://www.googleapis.com/auth/spreadsheets",
-  },*/
   {
     discoveryDoc: "https://www.googleapis.com/discovery/v1/apis/drive/v3/rest",
-    apiScope: "https://www.googleapis.com/auth/drive.readonly",
+    apiScope: "https://www.googleapis.com/auth/drive",
   },
 ];
 
