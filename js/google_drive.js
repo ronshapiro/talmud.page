@@ -69,6 +69,16 @@ const createNamedRange = (name, range) => {
   };
 };
 
+const rangeSorter = (first, second) => {
+  if (first.startIndex < second.startIndex) {
+    return -1;
+  } else if (first.startIndex == second.startIndex) {
+    return first.endIndex - second.endIndex;
+  } else {
+    return 1;
+  }
+}
+
 class RetryState {
   constructor(delay) {
     this.delay = delay || 200;
@@ -359,7 +369,7 @@ class DriveClient {
 
   // TODO(drive): break up this method, possibly by extracting a state object.
   appendNamedRangeRequests(text, amud, ref, parentRef) {
-    let insertLocation = this.findInsertLocation(ref, parentRef);
+    let insertLocation = this.findInsertLocation(parentRef);
     const requests = [];
 
     const headerRangeLabel = `header:${amud}`;
@@ -428,31 +438,25 @@ class DriveClient {
   });
 
   // TODO(drive): tests, and dependency injection?
-  findInsertLocation(ref) {
+  findInsertLocation(parentRef) {
     const {namedRanges} = this.databaseDocument;
     if (Object.keys(namedRanges).length === 0) {
       return this.documentEnd();
     }
 
-    const prefixedRef = `ref:${ref}`;
+    const prefixedRef = `parentRef:${parentRef}`;
     if (prefixedRef in namedRanges) {
-      let lastRange;
-      for (const namedRange of namedRanges[prefixedRef].namedRanges) {
-        for (const range of namedRange.ranges) {
-          if (!lastRange || range.endIndex > lastRange.endIndex) {
-            lastRange = range;
-          }
-        }
-      }
-      return lastRange.endIndex;
+      const existingRanges = [...namedRanges[prefixedRef].namedRanges].flatMap(x => x.ranges);
+      existingRanges.sort(rangeSorter);
+      return existingRanges.slice(-1)[0].endIndex;
     }
 
     const parentRefs = Object.keys(namedRanges)
           .filter(ref => ref.startsWith("parentRef:"))
           .map(ref => ref.substring("parentRef:".length));
-    parentRefs.push(ref);
+    parentRefs.push(parentRef);
     parentRefs.sort(refSorter);
-    const index = parentRefs.indexOf(ref);
+    const index = parentRefs.indexOf(parentRef);
     if (index !== 0) {
       return this.findInsertLocation(parentRefs[index -1]);
     }
@@ -494,15 +498,7 @@ class DriveClient {
     }
     const ranges = this.databaseDocument.namedRanges[prefixedRef].namedRanges
           .flatMap(x => x.ranges);
-    ranges.sort((first, second) => {
-      if (first.startIndex < second.startIndex) {
-        return -1;
-      } else if (first.startIndex == second.startIndex) {
-        return first.endIndex - second.endIndex;
-      } else {
-        return 1;
-      }
-    });
+    ranges.sort(rangeSorter);
 
     return {comments: ranges.map(range => {
       const text = this.documentText(range.startIndex, range.endIndex);
