@@ -25,7 +25,13 @@ const APIS = [
 
 const checkNotUndefined = function(value, string) {
   if (value === undefined) {
-    throw "undefined " + string;
+    throw `${string} is undefined`;
+  }
+}
+
+const checkIsUndefined = function(value, string) {
+  if (value !== undefined) {
+    throw `${string} has a value: ${value}`;
   }
 }
 
@@ -56,6 +62,54 @@ const insertFormattedTextRequests = (text, range, style) => {
       range: range,
     },
   }];
+};
+
+const createNamedRange = (name, range) => {
+  return {
+    createNamedRange: {
+      name: name,
+      range: range,
+    }
+  };
+};
+
+class RetryState {
+  constructor(delay) {
+    this.delay = delay || 200;
+  }
+
+  increment() {
+    this.delay *= 1.5;
+  }
+}
+
+const retryingMethod = (options) => {
+  checkNotUndefined(options.retryingCall, "retryingCall");
+  checkNotUndefined(options.then, "then");
+  checkIsUndefined(options.doCall, "doCall");
+
+  options.doCall = (...args) => {
+    let retryState;
+    if (args.length > 0) {
+      const lastArg = args.slice(-1)[0];
+      if (lastArg instanceof RetryState) {
+        retryState = lastArg;
+        args = args.slice(0, -1);
+      }
+    }
+    if (!retryState) {
+      retryState = new RetryState();
+    }
+    return options.retryingCall(...args)
+      .then(options.then, response => {
+        console.error(response);
+        setTimeout(() => {
+          retryState.increment();
+          options.doCall(...args, retryState);
+        }, retryState.delay);
+      });
+  };
+  return options.doCall;
 }
 
 class DriveClient {
@@ -84,26 +138,29 @@ class DriveClient {
    *  Initializes the API client library and sets up sign-in state
    *  listeners.
    */
-  init() {
-    if (!gapi) {
-      setTimeout(() => this.init(), 100);
-      return;
-    }
+  init = retryingMethod({
+    retryingCall: () => {
+      if (!gapi) {
+        setTimeout(() => this.init(), 100);
+        return;
+      }
 
-    gapi.client.init({
-      apiKey: this.apiKey,
-      clientId: this.clientId,
-      discoveryDocs: APIS.map(api => api.discoveryDoc),
-      scope: APIS.map(api => api.apiScope).join(" "),
-    }).then(() => {
+      return gapi.client.init({
+        apiKey: this.apiKey,
+        clientId: this.clientId,
+        discoveryDocs: APIS.map(api => api.discoveryDoc),
+        scope: APIS.map(api => api.apiScope).join(" "),
+      });
+    },
+    then: () => {
       // Set the initial sign-in state.
       this.updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
 
       gapi.auth2.getAuthInstance().isSignedIn.listen(isSignedIn => {
         this.updateSigninStatus(isSignedIn);
       });
-    });
-  }
+    },
+  });
 
   updateSigninStatus(isSignedIn) {
     this.isSignedIn = isSignedIn;
@@ -118,66 +175,58 @@ class DriveClient {
     if (this.signInStatusListener) this.signInStatusListener();
   }
 
-  setDatabaseFileProperties(fileId, retryDelay) {
-    checkNotUndefined(fileId, "fileId");
-    gapi.client.drive.files.update({
-      fileId: fileId,
-      appProperties: {
-        "talmud.page.database": "true",
-        "talmud.page.database.id": this.databaseProperty,
-        "talmud.page.database.version": "1",
-      },
-    }).then(response => {
-      if (response.status !== 200) {
-        retryDelay = exponentialBackoff(retryDelay);
-        setTimeout(() => {
-          this.setDatabaseFileProperties(fileId, onSuccess, retryDelay);
-        }, retryDelay);
-      }
-    });
-  }
+  setDatabaseFileProperties = retryingMethod({
+    retryingCall: (fileId) => {
+      checkNotUndefined(fileId, "fileId");
+      return gapi.client.drive.files.update({
+        fileId: fileId,
+        appProperties: {
+          "talmud.page.database": "true",
+          "talmud.page.database.id": this.databaseProperty,
+          "talmud.page.database.version": "1",
+        },
+      });
+    },
+    then: () => {},
+  });
 
-  findDocsDatabase(retryDelay) {
-    gapi.client.drive.files.list({
-      q: `appProperties has { key='talmud.page.database.id' and value='${this.databaseProperty}' }`
-        + ` and trashed = false`,
-    }).then(response => {
-      if (response.status === 200) {
-        const files = response.result.files;
-        if (files.length === 0) {
-          this.databaseDocumentShouldBeCreated = true;
-        } else if (files.length === 1) {
-          this.getDatabaseDocument(files[0].id, () => this.whenDatabaseReady.declareReady());
-        } else {
-          this.errors.push("Too many docs"); // TODO(drive): handle in the UI
-        }
+  findDocsDatabase = retryingMethod({
+    retryingCall: () => {
+      return gapi.client.drive.files.list({
+        q: `appProperties has { key='talmud.page.database.id' and value='${this.databaseProperty}' }`
+          + ` and trashed = false`,
+      });
+    },
+    then: response => {
+      const files = response.result.files;
+      if (files.length === 0) {
+        this.databaseDocumentShouldBeCreated = true;
+      } else if (files.length === 1) {
+        this.getDatabaseDocument(files[0].id).then(() => this.whenDatabaseReady.declareReady());
       } else {
-        retryDelay = exponentialBackoff(retryDelay);
-        setTimeout(() => this.findDocsDatabase(retryDelay), retryDelay);
+        this.errors.push("Too many docs"); // TODO(drive): handle in the UI
       }
-    });
-  }
+    },
+  });
 
-  createDocsDatabase(retryDelay) {
-    this.databaseDocumentShouldBeCreated = false;
-    // TODO: localize this
-    const title = this.isDebug
-          ? `talmud.page ${this.masechet} debug notes`
-          : `talmud.page ${this.masechet} notes`;
-    gapi.client.docs.documents.create({
-      title: title,
-    }).then(response => {
-      if (response.status === 200) {
-        this.setDatabaseFileProperties(response.result.documentId);
-        this.getDatabaseDocument(response.result.documentId, () => {
-          this.addInstructionsTable(() => this.whenDatabaseReady.declareReady());
-        });
-      } else {
-        retryDelay = exponentialBackoff(retryDelay);
-        setTimeout(() => this.createDocsDatabase(retryDelay), retryDelay);
-      }
-    });
-  }
+  createDocsDatabase = retryingMethod({
+    retryingCall: () => {
+      this.databaseDocumentShouldBeCreated = false;
+      // TODO: localize this
+      const title = this.isDebug
+            ? `talmud.page ${this.masechet} debug notes`
+            : `talmud.page ${this.masechet} notes`;
+      return gapi.client.docs.documents.create({
+        title: title,
+      });
+    },
+    then: response => {
+      this.setDatabaseFileProperties(response.result.documentId);
+      return this.getDatabaseDocument(response.result.documentId)
+        .then(() => this.addInstructionsTable())
+        .then(() => this.whenDatabaseReady.declareReady());
+    },
+  });
 
   instructionsTableRequests() {
     const caveatsUrl = "https://talmud.page/caveats/google-docs";
@@ -262,85 +311,58 @@ class DriveClient {
     return requests;
   }
 
-  addInstructionsTable(andThen, retryDelay) {
-    gapi.client.docs.documents.batchUpdate({
-      documentId: this.databaseDocument.documentId,
-      requests: this.instructionsTableRequests(),
-      writeControl: {requiredRevisionId: this.databaseDocument.revisionId},
-    }).then(response => {
-      this.getDatabaseDocument(this.databaseDocument.documentId, () => {
-        this.setInstructionsTableRange(andThen);
+  addInstructionsTable = retryingMethod({
+    retryingCall: () => {
+      return gapi.client.docs.documents.batchUpdate({
+        documentId: this.databaseDocument.documentId,
+        requests: this.instructionsTableRequests(),
+        writeControl: {requiredRevisionId: this.databaseDocument.revisionId},
       });
-    }).catch(response => {
-      retryDelay = exponentialBackoff(retryDelay);
-      setTimeout(() => {
-        this.getDatabaseDocument(this.databaseDocument.documentId, () => {
-          this.addInstructionsTable(andThen, retryDelay);
-        })
-      }, retryDelay);
-    });
-  }
+    },
+    then: () => {
+      return this.getDatabaseDocument(this.databaseDocument.documentId)
+        .then(() => this.setInstructionsTableRange());
+    },
+  });
 
-  setInstructionsTableRange(andThen, retryDelay) {
-    let range;
-    for (const section of this.databaseDocument.body.content) {
-      if (section.table) {
-        range = {startIndex: section.startIndex, endIndex: section.endIndex};
-        break;
-      }
-    }
-    if (!range) {
-      throw "Couldn't find instructions table!";
-    }
-    gapi.client.docs.documents.batchUpdate({
-      documentId: this.databaseDocument.documentId,
-      requests: [{
-        createNamedRange: {
-          name: INSTRUCTIONS_TABLE_RANGE_NAME,
-          range: range,
-        },
-      }],
-      writeControl: {requiredRevisionId: this.databaseDocument.revisionId},
-    }).then(response => {
-      this.getDatabaseDocument(this.databaseDocument.documentId, andThen);
-    }).catch(response => {
-      retryDelay = exponentialBackoff(retryDelay);
-      setTimeout(() => {
-        this.getDatabaseDocument(this.databaseDocument.documentId, () => {
-          this.setInstructionsTableRange(andThen, retryDelay);
-        });
-      }, retryDelay);
-    });
-  }
-
-  getDatabaseDocument(documentId, andThen) {
-    this.commentsByRef = {};
-    gapi.client.docs.documents.get({documentId: documentId})
-      .then(response => {
-        this.databaseDocument = response.result;
-        if (!this.databaseDocument.namedRanges) {
-          this.databaseDocument.namedRanges = {};
+  setInstructionsTableRange = retryingMethod({
+    retryingCall: () => {
+      let range;
+      for (const section of this.databaseDocument.body.content) {
+        if (section.table) {
+          range = {startIndex: section.startIndex, endIndex: section.endIndex};
+          break;
         }
-        if (andThen) andThen();
-        if (this.databaseUpdatedListener) this.databaseUpdatedListener();
+      }
+      if (!range) {
+        throw "Couldn't find instructions table!";
+      }
+
+      return gapi.client.docs.documents.batchUpdate({
+        documentId: this.databaseDocument.documentId,
+        requests: [createNamedRange(INSTRUCTIONS_TABLE_RANGE_NAME, range)],
+        writeControl: {requiredRevisionId: this.databaseDocument.revisionId},
       });
-  }
+    },
+    then: () => this.getDatabaseDocument(this.databaseDocument.documentId),
+  });
 
-  appendNamedRange(text, amud, ref, parentRef) {
-    if (this.databaseDocumentShouldBeCreated) {
-      this.createDocsDatabase();
-    }
-    gtag("event", "add_personal_note", {
-      amud: amud,
-      ref: ref,
-      parentRef: parentRef,
-    });
-    this.whenDatabaseReady.execute(() => this._appendNamedRange(text, amud, ref, parentRef));
-  }
+  getDatabaseDocument = retryingMethod({
+    retryingCall: (documentId) => {
+      this.commentsByRef = {};
+      return gapi.client.docs.documents.get({documentId: documentId});
+    },
+    then: response => {
+      this.databaseDocument = response.result;
+      if (!this.databaseDocument.namedRanges) {
+        this.databaseDocument.namedRanges = {};
+      }
+      if (this.databaseUpdatedListener) this.databaseUpdatedListener();
+    },
+  });
 
-  // TODO(drive): break up this method, possibly by extracting a state object. Also consider
-  // extracting a method just for the requests
-  _appendNamedRange(text, amud, ref, parentRef, retryDelay) {
+  // TODO(drive): break up this method, possibly by extracting a state object.
+  appendNamedRangeRequests(text, amud, ref, parentRef) {
     let insertLocation = this.findInsertLocation(ref, parentRef);
     const requests = [];
 
@@ -354,12 +376,7 @@ class DriveClient {
       };
       requests.push(
         ...insertFormattedTextRequests(headerText, headerRange, "HEADING_2"),
-        {
-          createNamedRange: {
-            name: headerRangeLabel,
-            range: headerRange,
-          },
-        });
+        createNamedRange(headerRangeLabel, headerRange));
       insertLocation += headerText.length;
     }
 
@@ -385,36 +402,34 @@ class DriveClient {
       // where the text was viewed when the note was recorded.
       // Note that if we create multiple docs, one for each titled text, then comments won't be
       // maintained across those titles.
-      {
-        createNamedRange: {
-          name: `ref:${ref}`,
-          range: commentRange,
-        }
-      },
-      {
-        createNamedRange: {
-          name: `parentRef:${parentRef}`,
-          range: commentRange,
-        }
-      }
+      createNamedRange(`ref:${ref}`, commentRange),
+      createNamedRange(`parentRef:${parentRef}`, commentRange),
     );
-
-    gapi.client.docs.documents.batchUpdate({
-      documentId: this.databaseDocument.documentId,
-      requests: requests,
-      writeControl: {requiredRevisionId: this.databaseDocument.revisionId},
-    }).then(response => {
-      this.getDatabaseDocument(this.databaseDocument.documentId);
-    }).catch(response => {
-      retryDelay = exponentialBackoff(retryDelay);
-      setTimeout(() => {
-        this.getDatabaseDocument(this.databaseDocument.documentId, () => {
-          this._appendNamedRange(text, amud, ref, parentRef, retryDelay);
-        })
-      }, retryDelay);
-      // TODO(drive:must): update all other promises to use .catch()
-    });
+    return requests;
   }
+
+  appendNamedRange(text, amud, ref, parentRef) {
+    if (this.databaseDocumentShouldBeCreated) {
+      this.createDocsDatabase();
+    }
+    gtag("event", "add_personal_note", {
+      amud: amud,
+      ref: ref,
+      parentRef: parentRef,
+    });
+    this.whenDatabaseReady.execute(() => this._appendNamedRange(text, amud, ref, parentRef));
+  }
+
+  _appendNamedRange = retryingMethod({
+    retryingCall: (text, amud, ref, parentRef) => {
+      return gapi.client.docs.documents.batchUpdate({
+        documentId: this.databaseDocument.documentId,
+        requests: this.appendNamedRangeRequests(text, amud, ref, parentRef),
+        writeControl: {requiredRevisionId: this.databaseDocument.revisionId},
+      });
+    },
+    then: () => this.getDatabaseDocument(this.databaseDocument.documentId),
+  });
 
   // TODO(drive): tests, and dependency injection?
   findInsertLocation(ref) {
