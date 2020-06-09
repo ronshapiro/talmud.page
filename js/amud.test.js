@@ -1,8 +1,9 @@
 const {
   amudMetadataForTesting,
   computePreviousAmud,
-  computeNextAmud
+  computeNextAmud,
 } = require("./amud.js");
+
 const amudMetadata = amudMetadataForTesting;
 
 describe("computeNextAmud", () => {

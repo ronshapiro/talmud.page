@@ -14,7 +14,7 @@ const refPieces = ref => {
 
 const compareTo = (first, second) => {
   if (first === second) return 0;
-  if (Array.isArray(first) && Array.isArray(second) && first.length == second.length) {
+  if (Array.isArray(first) && Array.isArray(second) && first.length === second.length) {
     for (let i = 0; i < first.length; i++) {
       const itemComparison = compareTo(first[i], second[i]);
       if (itemComparison !== 0) return itemComparison;

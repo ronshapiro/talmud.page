@@ -1,3 +1,5 @@
+/* global gtag, $, componentHandler */
+
 import {snackbars} from "./snackbar.js";
 import {TalmudRenderer} from "./rendering.jsx";
 import {onceDocumentReady} from "./once_document_ready.js";
@@ -21,7 +23,7 @@ const TRANSLATION_OPTIONS = [
   },
 ];
 
-const radioSection = function(title, section, items, currentValueFunction, newValueFunction) {
+const radioSection = (title, section, items, currentValueFunction, newValueFunction) => {
   const output = [
     `<div id="${section}">`,
     `<h3>${title}</h3>`,
@@ -45,7 +47,7 @@ const radioSection = function(title, section, items, currentValueFunction, newVa
 
   $("#main-contents").append(output.join(""));
 
-  $(`#${section} input`).click(function() {
+  $(`#${section} input`).click(() => {
     const maybeNewValue = $(`#${section} :checked`).attr("value");
     if (maybeNewValue !== currentValueFunction()) {
       newValueFunction(maybeNewValue);
@@ -55,19 +57,20 @@ const radioSection = function(title, section, items, currentValueFunction, newVa
       }]);
     }
   });
-}
+};
 
-const main = function() {
-  gtag("set", {
-    "preferences_page": true,
-  });
+const main = () => {
+  gtag("set", {preferences_page: true});
 
   onceDocumentReady.declareReady();
 
   localStorage.lastViewedVersionOfPreferencesPage = PREFERENCES_PAGE_VERSION;
-  radioSection("Translation", "translation", TRANSLATION_OPTIONS,
-               () => localStorage.translationOption,
-               newValue => localStorage.translationOption = newValue);
+  radioSection(
+    "Translation", "translation", TRANSLATION_OPTIONS,
+    () => localStorage.translationOption,
+    newValue => {
+      localStorage.translationOption = newValue;
+    });
 
   TRANSLATION_OPTIONS.forEach(option => {
     const divId = `translationOptionExample-${option.value}`;
@@ -79,14 +82,15 @@ const main = function() {
     renderer.setAmud({
       sections: createTestData(),
       id: option.value,
-      title: `Sample: ${option.displayText}`
+      title: `Sample: ${option.displayText}`,
     });
     renderer.declareReady();
   });
 
-  const showTranslationHeaderText =
-      "Show Translation Button <br><small>(translation is always available by double-clicking the "
+  const showTranslationHeaderText = (
+    "Show Translation Button <br><small>(translation is always available by double-clicking the "
       + "Hebrew)</small>"
+  );
   radioSection(
     showTranslationHeaderText, "show-translation", [
       {
@@ -96,10 +100,12 @@ const main = function() {
       {
         value: "no",
         displayText: "No",
-      }
+      },
     ],
     () => localStorage.showTranslationButton,
-    newValue =>  localStorage.showTranslationButton = newValue);
+    newValue => {
+      localStorage.showTranslationButton = newValue;
+    });
 
   // Make sure mdl always registers new views correctly
   componentHandler.upgradeAllRegistered();

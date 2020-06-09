@@ -1,7 +1,8 @@
+/* global $, gtag,  */
 const moveSnackbarOffscreen = () => $("#snackbar").css("bottom", -400);
-const hideSnackbar = () => $("#snackbar").animate({"bottom": -400});
+const hideSnackbar = () => $("#snackbar").animate({bottom: -400});
 
-const updateSnackbar = function(labelHtml, buttons) {
+const updateSnackbar = (labelHtml, buttons) => {
   $("#snackbar-text").html(labelHtml);
   const buttonsDiv = $("#snackbar-buttons").html("");
   if (!buttons) {
@@ -18,40 +19,21 @@ const updateSnackbar = function(labelHtml, buttons) {
   for (let i = 0; i < buttonElements.length; i++) {
     $(buttonElements[i]).click(buttons[i].onClick);
   }
-}
+};
 
-const displaySnackbar = function(labelHtml, buttons) {
+const displaySnackbar = (labelHtml, buttons) => {
   updateSnackbar(labelHtml, buttons);
 
   moveSnackbarOffscreen();
-  $("#snackbar").animate({"bottom": 0});
-}
+  $("#snackbar").animate({bottom: 0});
+};
 
-const hasSeenLatestPreferences = function() {
+const hasSeenLatestPreferences = () => {
   if (localStorage.lastViewedVersionOfPreferencesPage) {
     return parseInt(localStorage.lastViewedVersionOfPreferencesPage) === 1;
   }
   return false;
-}
-
-$(document).ready(function() {
-  moveSnackbarOffscreen();
-
-  snackbars.preferencesNudge.show(
-    "Check out the available options!", [
-      {
-        text: "Preferences",
-        onClick: function() {
-          gtag("event", "snackbar.preferencesPage.clicked");
-          window.location.pathname = "/preferences"
-        },
-      },
-      {
-        text: "Dismiss",
-        onClick: () => snackbars.preferencesNudge.dismissButtonImpl(),
-      },
-    ]);
-});
+};
 
 const Kind = {
   PREFERENCES_NUDGE: {
@@ -72,9 +54,58 @@ const Kind = {
 
 const shownCountString = kind => `${kind.prefix}SnackbarShownCount`;
 const shownCount = kind => parseInt(localStorage[shownCountString(kind)]) || 0;
-const incrementShownCount = kind => localStorage[shownCountString(kind)] = shownCount(kind) + 1;
+const incrementShownCount = kind => {
+  localStorage[shownCountString(kind)] = shownCount(kind) + 1;
+};
 
 const dismissedString = kind => `${kind.prefix}SnackbarShownDismissed`;
+
+class Snackbar {
+  constructor(kind, snackbarManager) {
+    this.kind = kind;
+    this.snackbarManager = snackbarManager;
+  }
+
+  show(...args) {
+    if (this.snackbarManager.currentlyDisplayedKind
+        && this.snackbarManager.currentlyDisplayedKind !== this.kind) {
+      return;
+    }
+    if (this.kind.prefix) {
+      // Delay incrementing the shown count to make sure that the use didn't reload the page quickly
+      // and the snackbar was never actually shown.
+      setTimeout(() => incrementShownCount(this.kind), 5 * 1000);
+    }
+
+    this.snackbarManager.currentlyDisplayedKind = this.kind;
+    displaySnackbar(...args);
+  }
+
+  hide() {
+    if (this.snackbarManager.currentlyDisplayedKind !== this.kind) {
+      return;
+    }
+    hideSnackbar();
+    this.snackbarManager.currentlyDisplayedKind = undefined;
+  }
+
+  dismissButtonImpl() {
+    const {prefix} = this.kind;
+    if (prefix) {
+      gtag("event", `snackbar.${prefix}.dismissed`);
+      localStorage[dismissedString(prefix)] = true;
+    }
+    this.hide();
+  }
+}
+
+class StartupSnackbar extends Snackbar {
+  show(...args) {
+    if (this.snackbarManager.startupKind === this.kind) {
+      super.show(...args);
+    }
+  }
+}
 
 class SnackbarManager {
   constructor() {
@@ -94,59 +125,25 @@ class SnackbarManager {
   }
 }
 
-class Snackbar {
-  constructor(kind, snackbarManager) {
-    this.kind = kind;
-    this.snackbarManager = snackbarManager;
-  }
-
-  show() {
-    if (this.snackbarManager.currentlyDisplayedKind &&
-        this.snackbarManager.currentlyDisplayedKind != this.kind) {
-      return;
-    }
-    if (this.kind.prefix) {
-      // Delay incrementing the shown count to make sure that the use didn't reload the page quickly
-      // and the snackbar was never actually shown.
-      setTimeout(() => incrementShownCount(this.kind), 5 * 1000);
-    }
-
-    this.snackbarManager.currentlyDisplayedKind = this.kind;
-    displaySnackbar(...arguments);
-  }
-
-  hide() {
-    if (this.snackbarManager.currentlyDisplayedKind != this.kind) {
-      return;
-    }
-    hideSnackbar();
-    this.snackbarManager.currentlyDisplayedKind = undefined;
-  }
-
-  dismissButtonImpl() {
-    const prefix = this.kind.prefix;
-    if (prefix) {
-      gtag("event", `snackbar.${prefix}.dismissed`);
-      localStorage[dismissedString(prefix)] = true;
-    }
-    this.hide();
-  }
-}
-
-class StartupSnackbar extends Snackbar {
-  constructor(kind, snackbarManager) {
-    super(kind, snackbarManager);
-  }
-
-  show() {
-    if (this.snackbarManager.startupKind === this.kind) {
-      super.show(...arguments);
-    }
-  }
-}
-
 const snackbars = new SnackbarManager();
 
-module.exports = {
-  snackbars: snackbars,
-}
+$(document).ready(() => {
+  moveSnackbarOffscreen();
+
+  snackbars.preferencesNudge.show(
+    "Check out the available options!", [
+      {
+        text: "Preferences",
+        onClick: () => {
+          gtag("event", "snackbar.preferencesPage.clicked");
+          window.location.pathname = "/preferences";
+        },
+      },
+      {
+        text: "Dismiss",
+        onClick: () => snackbars.preferencesNudge.dismissButtonImpl(),
+      },
+    ]);
+});
+
+module.exports = {snackbars};

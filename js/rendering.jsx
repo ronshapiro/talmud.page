@@ -1,27 +1,33 @@
-import {onceDocumentReady} from "./once_document_ready.js";
-import {Component, render, h, createContext, createRef} from "preact";
-import {useState, useContext} from 'preact/hooks';
+/* global jQuery, $, gtag, componentHandler */
+import {
+  Component,
+  render,
+  h, // eslint-disable-line no-unused-vars -- Preact implicitly uses h
+  createContext,
+  createRef,
+} from "preact";
+import {useContext} from "preact/hooks";
 
 // TODO(react): add keys wherever seems necesary
 
 jQuery.fn.extend({
-  betterDoubleClick: function(fn) {
+  betterDoubleClick(fn) {
     if (!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)) {
-      this.click(function(event) {
-        let lastTime = this.lastTime || 0;
+      let lastTime = 0;
+      this.click((event) => {
         const now = new Date().getTime();
         if (now - lastTime <= 1000) {
           fn(event);
-          this.lastTime = 0;
+          lastTime = 0;
         } else {
-          this.lastTime = now;
+          lastTime = now;
         }
       });
     } else {
       this.dblclick(fn);
     }
     return this;
-  }
+  },
 });
 const applyDoubleClick = (element, fn) => {
   // TODO(react): remove jQuery
@@ -33,25 +39,25 @@ const context = {
   translationOption: () => useContext(ConfigurationContext).translationOption,
   commentaryTypes: () => useContext(ConfigurationContext).commentaryTypes,
   commentaryTypesByClassName: () => useContext(ConfigurationContext).commentaryTypesByClassName,
-}
+};
 
-const _concat = function() {
+const _concat = (...args) => {
   const result = [];
-  for (const arg of arguments) {
+  for (const arg of args) {
     if (arg) result.push(...arg);
   }
   return result;
-}
+};
 
-const isEmptyText = (stringOrList)  => {
-  return !stringOrList || stringOrList === "" || stringOrList.length == 0;
-}
+const isEmptyText = (stringOrList) => {
+  return !stringOrList || stringOrList === "" || stringOrList.length === 0;
+};
 
 const stringOrListToString = (stringOrList) => {
   return typeof stringOrList === "string"
     ? stringOrList
     : stringOrList.join("<br>");
-}
+};
 
 class Cell extends Component {
   defaultClasses = [];
@@ -73,12 +79,11 @@ class Cell extends Component {
 
 class HebrewCell extends Cell {
   defaultClasses = ["hebrew"];
+
   ref = createRef();
 
   render() {
-    return this.applyChildrenUnsafely(
-      <div dir="rtl" class={this.classes()} ref={this.ref} />
-    );
+    return this.applyChildrenUnsafely(<div dir="rtl" class={this.classes()} ref={this.ref} />);
   }
 
   componentDidMount() {
@@ -101,6 +106,7 @@ class HebrewCell extends Cell {
 
 class EnglishCell extends Cell {
   defaultClasses = ["english"];
+
   state = {
     lineClamped: true,
   };
@@ -114,21 +120,28 @@ class EnglishCell extends Cell {
     return (
       <div dir="ltr" class={this.classes()} ref={this.props.englishRef}>
         {this.applyChildrenUnsafely(
-          <div class={innerClasses.join(" ")}
-               style={`-webkit-line-clamp: ${this.props.lineClampLines};`} />)}
-      </div>);
+          <div
+            class={innerClasses.join(" ")}
+            style={`-webkit-line-clamp: ${this.props.lineClampLines};`} />)}
+      </div>
+    );
   }
 
   componentDidMount() {
     applyDoubleClick(
       this.props.englishRef.current,
-      () => this.setState({lineClamped: !this.state.lineClamped}));
+      () => this.setState(previousState => {
+        return {lineClamped: !previousState.state.lineClamped};
+      }));
   }
 }
 
-class TableRow extends Component{
-  state = {hebrewLineCount: 1}
-  englishRef = createRef();
+class TableRow extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {hebrewLineCount: 1};
+    this.englishRef = createRef();
+  }
 
   render() {
     const classes = _concat(["table-row"], this.props.classes).join(" ");
@@ -169,6 +182,17 @@ class TableRow extends Component{
   }
 }
 
+// https://github.com/Sefaria/Sefaria-Project/issues/541
+const isSefariaReturningLongListsOfSingleCharacters = (comment) => {
+  if (!Array.isArray(comment.he) || !Array.isArray(comment.en)) {
+    return false;
+  }
+  const reducer = (numberOfSingleCharacters, x) => (
+    numberOfSingleCharacters + ((x.length === 1) ? 1 : 0));
+  // 3 is a guess of a reasonable minimum for detecting that this is a bug
+  return comment.he.reduce(reducer, 0) > 3 && comment.en.reduce(reducer, 0) > 3;
+};
+
 class CommentRow extends Component {
   renderTableRow(hebrew, english) {
     const {comment, commentaryKind} = this.props;
@@ -178,7 +202,8 @@ class CommentRow extends Component {
         english={english}
         sefaria-ref={commentaryKind.englishName === "Personal Notes" ? "ignore" : comment.ref}
         commentary-kind={commentaryKind.englishName}
-        />);
+        />
+    );
   }
 
   render() {
@@ -203,22 +228,11 @@ class CommentRow extends Component {
       output.push(
         this.renderTableRow(
           stringOrListToString(comment.he),
-          stringOrListToString(comment.en)));;
+          stringOrListToString(comment.en)));
     }
 
     return output;
   }
-}
-
-// https://github.com/Sefaria/Sefaria-Project/issues/541
-const isSefariaReturningLongListsOfSingleCharacters = (comment) => {
-  if (!Array.isArray(comment.he) || !Array.isArray(comment.en)) {
-    return false;
-  }
-  const reducer = (numberOfSingleCharacters, x) =>
-        numberOfSingleCharacters + ((x.length === 1) ? 1 : 0);
-  // 3 is a guess of a reasonable minimum for detecting that this is a bug
-  return comment.he.reduce(reducer, 0) > 3 && comment.en.reduce(reducer, 0) > 3;
 }
 
 const forEachCommentary = (commentaries, action) => {
@@ -228,13 +242,13 @@ const forEachCommentary = (commentaries, action) => {
       action(commentary, commentaryKind);
     }
   }
-}
+};
 
 class CommentarySection extends Component {
   render() {
     const {commentaries, getOrdering, toggleShowing, sectionLabel} = this.props;
     if (!commentaries || commentaries.length === 0) {
-      return;
+      return undefined;
     }
 
     const output = [];
@@ -245,10 +259,10 @@ class CommentarySection extends Component {
         // TODO: investigate a better solution for the indexByClassName overlapping for Translation
         // and Steinsaltz (it appears when side-by-side is used)
         if (commentaryClassName === "translation") {
-          commentary = commentaries["Steinsaltz"];
+          commentary = commentaries.Steinsaltz;
         }
         if (!commentary) {
-          throw `Could not find ${commentaryClassName} commentary in${sectionLabel}`;
+          throw new Error(`Could not find ${commentaryClassName} commentary in${sectionLabel}`);
         }
       }
       output.push(this.renderTableRow(this.renderButton(commentaryKind), ""));
@@ -294,7 +308,7 @@ class CommentarySection extends Component {
 
     if (localStorage.showTranslationButton !== "yes"
         && commentaryKind.className === "translation") {
-      return;
+      return undefined;
     }
 
     const onClick = () => {
@@ -307,9 +321,11 @@ class CommentarySection extends Component {
     const onKeyUp = event => {
       if (event && event.code === "Enter") {
         onClick();
-        this.setState({...this.state, buttonToFocus: commentaryKind});
+        this.setState(previousState => {
+          return {...previousState, buttonToFocus: commentaryKind};
+        });
       }
-    }
+    };
     const applyButtonToFocusRef = (element) => {
       if (this.state.buttonToFocus === commentaryKind) {
         element.ref = this.buttonToFocusAfterEnter;
@@ -318,10 +334,11 @@ class CommentarySection extends Component {
     };
 
     return applyButtonToFocusRef(
-      <a class={this.buttonClasses(commentaryKind)}
-         tabindex="0"
-         onclick={onClick}
-         onkeyup={onKeyUp}>
+      <a
+        class={this.buttonClasses(commentaryKind)}
+        tabindex="0"
+        onclick={onClick}
+        onkeyup={onKeyUp}>
         {commentaryKind.hebrewName}
       </a>);
   }
@@ -339,7 +356,10 @@ class CommentarySection extends Component {
   componentDidUpdate() {
     if (this.state.buttonToFocus) {
       this.buttonToFocusAfterEnter.current.focus();
-      this.setState({...this.state, buttonToFocus: undefined});
+      // eslint-disable-next-line react/no-did-update-set-state
+      this.setState(previousState => {
+        return {...previousState, buttonToFocus: undefined};
+      });
     }
   }
 }
@@ -385,13 +405,13 @@ class Section extends Component {
       sectionContents.push(
         <CommentarySection
           commentaries={section.commentary}
-          getOrdering={sectionLabel => this.state[sectionLabel] || []}
+          getOrdering={commentSectionLabel => this.state[commentSectionLabel] || []}
           toggleShowing={(...args) => this.toggleShowing(false, ...args)}
           sectionLabel={sectionLabel} />);
     }
 
     return (
-      <div id={sectionLabel} class="section-container" sefaria-ref={section["ref"]}>
+      <div id={sectionLabel} class="section-container" sefaria-ref={section.ref}>
         {sectionContents}
       </div>
     );
@@ -400,13 +420,13 @@ class Section extends Component {
 
 class Amud extends Component {
   render() {
-
     const {amudData} = this.props;
     const output = [<h2>{amudData.title}</h2>];
     if (amudData.loading) {
       output.push(
-        <div key={`${amudData.id}-loading-spinner`}
-             class="text-loading-spinner mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active" />);
+        <div
+          key={`${amudData.id}-loading-spinner`}
+          class="text-loading-spinner mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active" />);
     }
 
     for (let i = 0; i < amudData.sections.length; i++) {
@@ -415,12 +435,14 @@ class Amud extends Component {
         output.push(<br class="sugya-separator" />);
       }
 
-      const sectionLabel = `${amudData.id}_section_${i+1}`;
+      const sectionLabel = `${amudData.id}_section_${i + 1}`;
       output.push(<Section section={section} sectionLabel={sectionLabel} />);
     }
-    return <div id={`amud-${amudData.id}`} class="amudContainer" amud={amudData.id}>
-      {output}
-    </div>;
+    return (
+      <div id={`amud-${amudData.id}`} class="amudContainer" amud={amudData.id}>
+        {output}
+      </div>
+    );
   }
 }
 
@@ -447,6 +469,14 @@ class Amudim extends Component {
     componentHandler.upgradeAllRegistered();
   }
 }
+
+const indexCommentaryTypesByClassName = (commentaryTypes) => {
+  const result = {};
+  for (const type of commentaryTypes) {
+    result[type.className] = type;
+  }
+  return result;
+};
 
 class Renderer {
   constructor(commentaryTypes, translationOption) {
@@ -477,14 +507,14 @@ class Renderer {
   }
 
   register(divId) {
-    const context = {
+    const actualContext = {
       translationOption: this._translationOption,
       commentaryTypes: this._commentaryTypes,
       commentaryTypesByClassName: indexCommentaryTypesByClassName(this._commentaryTypes),
     };
 
     render(
-      <ConfigurationContext.Provider value={context}>
+      <ConfigurationContext.Provider value={actualContext}>
         <Amudim ref={this.rootComponent} allAmudim={() => this.getAmudim()} />
       </ConfigurationContext.Provider>,
       document.getElementById(divId));
@@ -512,7 +542,7 @@ class Renderer {
 
     const setPersonalComments = (object, personalNotes) => {
       if (personalNotes) {
-        if (!object.commentary) object.commentary = {}
+        if (!object.commentary) object.commentary = {};
         object.commentary["Personal Notes"] = personalNotes;
       } else if (object.commentary) {
         delete object.commentary["Personal Notes"];
@@ -544,22 +574,12 @@ class Renderer {
     for (const comment of unflattened) {
       flattened.push(...comment.comments);
     }
-    if (flattened.length > 0) {
-      return {comments: flattened};
-    }
+    return flattened.length > 0 ? {comments: flattened} : undefined;
   }
 
   sortedAmudim() {
-    throw "Not implemented!";
+    throw new Error("Not implemented!");
   }
-}
-
-const indexCommentaryTypesByClassName = (commentaryTypes) => {
-  const result = {};
-  for (const type of commentaryTypes) {
-    result[type.className] = type;
-  }
-  return result;
 }
 
 class TalmudRenderer extends Renderer {
@@ -600,7 +620,7 @@ class TalmudRenderer extends Renderer {
       {
         englishName: "Tosafot",
         hebrewName: "תוספות",
-        className: "tosafot"
+        className: "tosafot",
       },
       {
         englishName: "Rabbeinu Chananel",
@@ -610,12 +630,12 @@ class TalmudRenderer extends Renderer {
       {
         englishName: "Ramban",
         hebrewName: 'רמב״ן',
-        className: "ramban"
+        className: "ramban",
       },
       {
         englishName: "Rashba",
         hebrewName: 'רשב״א',
-        className: "rashba"
+        className: "rashba",
       },
       {
         englishName: "Maharsha",
@@ -711,7 +731,7 @@ class TalmudRenderer extends Renderer {
 }
 
 module.exports = {
-  _concat: _concat,
-  Renderer: Renderer,
-  TalmudRenderer: TalmudRenderer,
+  _concat,
+  Renderer,
+  TalmudRenderer,
 };

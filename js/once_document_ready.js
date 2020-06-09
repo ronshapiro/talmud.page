@@ -1,21 +1,21 @@
 const create = () => {
   const result = {
-    execute: function(fn) {
+    execute(fn) {
       if (this.ready) {
         fn();
         return;
       }
       this.queue.push(fn);
     },
-    declareReady: function() {
+    declareReady() {
       if (this.ready) {
-        throw "Already ready!";
+        throw new Error("Already ready!");
       }
       this.ready = true;
       this.queue.forEach(fn => fn());
       this.queue = [];
     },
-    reset: function() {
+    reset() {
       this.ready = false;
       this.queue = [];
     },

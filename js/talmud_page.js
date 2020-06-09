@@ -1,3 +1,5 @@
+/* global $, gtag,  */
+
 import {snackbars} from "./snackbar.js";
 import {TalmudRenderer, _concat} from "./rendering.jsx";
 import {onceDocumentReady} from "./once_document_ready.js";
@@ -10,46 +12,27 @@ import {driveClient} from "./google_drive.js";
 const renderer = new TalmudRenderer(localStorage.translationOption || "both");
 renderer.driveClient = driveClient;
 
-const requestAmud = function(amud, options) {
-  options = options || {}
+const setHtmlTitle = () => {
   const metadata = amudMetadata();
-  renderer.register("results");
-  renderer.setAmud({
-    id: amud,
-    title: `${metadata.masechet} ${amud}`,
-    loading: true
-  });
-  $.ajax({url: `${location.origin}/api/${metadata.masechet}/${amud}`,
-          type: "GET",
-          success: function(results) {
-            renderer.setAmud(results);
-            refreshPageState();
-            if (options.callback) options.callback();
-            gtag("event", "amud_loaded", {
-              amud: amud,
-            });
-          },
-          error: function() {
-            options.backoff = options.backoff || 200;
-            options.backoff *= 1.5;
-            setTimeout(() => requestAmud(amud, options), options.backoff);
-          }});
-  if (options.newUrl) history.replaceState({}, "", options.newUrl);
-  refreshPageState();
-}
+  document.title = (
+    metadata.amudStart === metadata.amudEnd
+      ? `${metadata.masechet} ${metadata.amudStart}`
+      : `${metadata.masechet} ${metadata.amudStart} - ${metadata.amudEnd}`
+  );
+};
 
-const setVisibility = function(element, toShow) {
+const setVisibility = (element, toShow) => {
   if (toShow) {
     element.show();
   } else {
     element.hide();
   }
-}
+};
 
-const refreshPageState = function() {
+const refreshPageState = () => {
   setHtmlTitle();
 
-  onceDocumentReady.execute(function() {
+  onceDocumentReady.execute(() => {
     const metadata = amudMetadata();
     // Note that these may still be hidden by their container if the full page hasn't loaded yet.
     const bounds = MASECHTOT[metadata.masechet];
@@ -59,34 +42,99 @@ const refreshPageState = function() {
     $("#previous-amud-button").text(`Load ${computePreviousAmud(metadata.amudStart)}`);
     $("#next-amud-button").text(`Load ${computeNextAmud(metadata.amudEnd)}`);
   });
-}
+};
 
-const setHtmlTitle = function() {
+const requestAmud = (amud, options) => {
+  options = options || {};
   const metadata = amudMetadata();
-  document.title =
-    metadata.amudStart === metadata.amudEnd
-    ? `${metadata.masechet} ${metadata.amudStart}`
-    : `${metadata.masechet} ${metadata.amudStart} - ${metadata.amudEnd}`;
-}
-
-const main = function() {
-  const metadata = amudMetadata();
-  gtag("set", {
-    "masechet": metadata.masechet,
+  renderer.register("results");
+  renderer.setAmud({
+    id: amud,
+    title: `${metadata.masechet} ${amud}`,
+    loading: true,
   });
+  $.ajax({
+    url: `${window.location.origin}/api/${metadata.masechet}/${amud}`,
+    type: "GET",
+    success: (results) => {
+      renderer.setAmud(results);
+      refreshPageState();
+      if (options.callback) options.callback();
+      gtag("event", "amud_loaded", {amud});
+    },
+    error: () => {
+      options.backoff = options.backoff || 200;
+      options.backoff *= 1.5;
+      setTimeout(() => requestAmud(amud, options), options.backoff);
+    },
+  });
+  if (options.newUrl) window.history.replaceState({}, "", options.newUrl);
+  refreshPageState();
+};
+
+const setWindowTop = (selector) => {
+  $("html, body").animate({scrollTop: $(selector).offset().top}, 0);
+};
+
+const addNextAmud = () => {
+  const metadata = amudMetadata();
+  const nextAmud = computeNextAmud(metadata.amudEnd);
+  requestAmud(nextAmud, {
+    newUrl: `${window.location.origin}/${metadata.masechet}/${metadata.amudStart}/to/${nextAmud}`,
+  });
+
+  gtag("event", "load_amud", {
+    direction: "next",
+    amud: nextAmud,
+  });
+};
+
+const addPreviousAmud = () => {
+  const metadata = amudMetadata();
+  const previousAmud = computePreviousAmud(metadata.amudStart);
+  requestAmud(previousAmud, {
+    newUrl: `${window.location.origin}/${metadata.masechet}/${previousAmud}/to/${metadata.amudEnd}`,
+    callback: () => setTimeout(() => setWindowTop("#amud-" + metadata.amudStart), 10),
+  });
+
+  gtag("event", "load_amud", {
+    direction: "previous",
+    amud: previousAmud,
+  });
+};
+
+const firstFullyOnScreenSection = () => {
+  const sections = (
+    _concat(
+      $("#previous-amud-container"),
+      $(".amudContainer"),
+      $(".gemara")));
+  for (const section of sections) {
+    const viewTop = $(section).offset().top;
+    const {pageTop, height: pageHeight} = window.visualViewport;
+    if (viewTop >= pageTop && viewTop <= pageTop + pageHeight) {
+      return section;
+    }
+  }
+  return undefined;
+};
+
+const main = () => {
+  const metadata = amudMetadata();
+  gtag("set", {masechet: metadata.masechet});
 
   const amudRange = metadata.range();
 
   const requestOptions = {
     counter: 0,
     pageCount: amudRange.length,
-    callback: function() {
-      this.counter++;
-      if (this.counter === this.pageCount) {
+    callback: () => {
+      requestOptions.counter++;
+      if (requestOptions.counter === requestOptions.pageCount) {
         renderer.declareReady();
         $("#initial-load-spinner").hide();
 
-        let scrollToSection = location.hash;
+        let scrollToSection = window.location.hash;
         if (scrollToSection.length === 0) {
           const savedSection = "#" + localStorage.restoreSectionOnRefresh;
           if ($(savedSection).length) {
@@ -97,7 +145,7 @@ const main = function() {
           setTimeout(() => setWindowTop(scrollToSection), 10);
         }
 
-        setInterval(function() {
+        setInterval(() => {
           const section = firstFullyOnScreenSection();
           if (section) {
             localStorage.setItem("restoreSectionOnRefresh", section.id);
@@ -106,73 +154,26 @@ const main = function() {
 
         onceDocumentReady.declareReady();
       }
-    }
-  }
+    },
+  };
   for (const amud of amudRange) {
     requestAmud(amud, requestOptions);
   }
 
   $("#previous-amud-container").click(addPreviousAmud);
   $("#next-amud-container").click(addNextAmud);
-}
-
-const addNextAmud = function() {
-  const metadata = amudMetadata();
-  const nextAmud = computeNextAmud(metadata.amudEnd);
-  requestAmud(nextAmud, {
-    newUrl: `${location.origin}/${metadata.masechet}/${metadata.amudStart}/to/${nextAmud}`
-  });
-
-  gtag("event", "load_amud", {
-    direction: "next",
-    amud: nextAmud,
-  });
-}
-
-const addPreviousAmud = function() {
-  const metadata = amudMetadata();
-  const previousAmud = computePreviousAmud(metadata.amudStart);
-  requestAmud(previousAmud, {
-    newUrl: `${location.origin}/${metadata.masechet}/${previousAmud}/to/${metadata.amudEnd}`,
-    callback: () => setTimeout(() => setWindowTop("#amud-" + metadata.amudStart), 10),
-  });
-
-  gtag("event", "load_amud", {
-    direction: "previous",
-    amud: previousAmud,
-  });
-}
-
-const setWindowTop = function(selector) {
-  $("html, body").animate({scrollTop: $(selector).offset().top}, 0);
-}
-
-const firstFullyOnScreenSection = function() {
-  const sections =
-      _concat(
-        $("#previous-amud-container"),
-        $(".amudContainer"),
-        $(".gemara"));
-  for (const section of sections) {
-    const viewTop = $(section).offset().top;
-    const pageTop = window.visualViewport.pageTop;
-    const pageHeight = window.visualViewport.height;
-    if (viewTop >= pageTop && viewTop <= pageTop + pageHeight) {
-      return section;
-    }
-  }
-}
+};
 
 let selectionSnackbarRef;
 const hideSelectionChangeSnackbar = (ref) => {
   if (selectionSnackbarRef) {
-    gtag("event", "selection_change_snackbar.hidden", {ref: ref});
+    gtag("event", "selection_change_snackbar.hidden", {ref});
     selectionSnackbarRef = undefined;
     snackbars.textSelection.hide();
   }
 };
 
-const findSefariaRef = function(node) {
+const findSefariaRef = (node) => {
   let isEnglish = false;
   while (node.parentElement) {
     const $parentElement = $(node.parentElement);
@@ -188,7 +189,7 @@ const findSefariaRef = function(node) {
         isEnglish = false;
       } else {
         return {
-          ref: ref,
+          ref,
           parentRef: $parentElement.parent().closest("[sefaria-ref]").attr("sefaria-ref"),
           text: $($parentElement.find(".hebrew")[0]).text(),
           translation: isTranslationOfSourceText
@@ -201,9 +202,9 @@ const findSefariaRef = function(node) {
     node = node.parentNode;
   }
   return {};
-}
+};
 
-document.addEventListener('selectionchange', () => {
+document.addEventListener("selectionchange", () => {
   let selection = document.getSelection();
   if (selection.type !== "Range") {
     hideSelectionChangeSnackbar();
@@ -222,9 +223,9 @@ document.addEventListener('selectionchange', () => {
     return;
   }
 
-  const ref = sefariaRef.ref;
+  const {ref} = sefariaRef;
   const sefariaUrl = `https://www.sefaria.org/${ref.replace(/ /g, "_")}`;
-  gtag("event", "selection_change_snackbar.shown", {ref: ref});
+  gtag("event", "selection_change_snackbar.shown", {ref});
   selectionSnackbarRef = ref;
   // don't allow buttons to refer to the selection that triggered the snackbar, since the selection
   // may have changed
@@ -234,13 +235,13 @@ document.addEventListener('selectionchange', () => {
       text: "View on Sefaria",
       onClick: () => {
         window.location = sefariaUrl;
-        gtag("event", "view_on_sefaria", {ref: ref});
+        gtag("event", "view_on_sefaria", {ref});
       },
     },
     {
       text: "Report correction",
       onClick: () => {
-        gtag("event", "report_correction", {ref: ref});
+        gtag("event", "report_correction", {ref});
         const subject = "Sefaria Text Correction from talmud.page";
         let body = [
           `${ref} (${sefariaUrl})`,
@@ -315,7 +316,7 @@ driveClient.signInStatusListener = () => {
         snackbars.googleSignIn.hide();
         driveClient.signIn();
       },
-    }
+    },
   ]);
 };
 

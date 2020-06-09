@@ -1,3 +1,4 @@
+/* global gapi, gtag */
 import {amudMetadata} from "./amud.js";
 import {refSorter} from "./ref_sorter.js";
 import {filterDocumentRange} from "./filter_document_range.js";
@@ -19,65 +20,56 @@ const APIS = [
   },
 ];
 
-const checkNotUndefined = function(value, string) {
+const checkNotUndefined = (value, string) => {
   if (value === undefined) {
-    throw `${string} is undefined`;
+    throw new Error(`${string} is undefined`);
   }
-}
+};
 
-const checkIsUndefined = function(value, string) {
+const checkIsUndefined = (value, string) => {
   if (value !== undefined) {
-    throw `${string} has a value: ${value}`;
+    throw new Error(`${string} has a value: ${value}`);
   }
-}
+};
 
-const exponentialBackoff = (retryDelay) => retryDelay ? retryDelay * 1.5 : 200;
-
-const rgbColor = (red, green, blue) => {
-  return {
-    color: {
-      rgbColor: {
-        red: red/256,
-        green: green/256,
-        blue: blue/256,
-      },
-    }
-  };
-}
+const rgbColor = (red, green, blue) => ({
+  color: {
+    rgbColor: {
+      red: red / 256,
+      green: green / 256,
+      blue: blue / 256,
+    },
+  },
+});
 
 const insertFormattedTextRequests = (text, range, style) => {
   return [{
     insertText: {
-      text: text,
-      location: {index: range.startIndex}
+      text,
+      location: {index: range.startIndex},
     },
-  },{
+  }, {
     updateParagraphStyle: {
       paragraphStyle: {namedStyleType: style},
       fields: "*",
-      range: range,
+      range,
     },
   }];
 };
 
 const createNamedRange = (name, range) => {
-  return {
-    createNamedRange: {
-      name: name,
-      range: range,
-    }
-  };
+  return {createNamedRange: {name, range}};
 };
 
 const rangeSorter = (first, second) => {
   if (first.startIndex < second.startIndex) {
     return -1;
-  } else if (first.startIndex == second.startIndex) {
+  } else if (first.startIndex === second.startIndex) {
     return first.endIndex - second.endIndex;
   } else {
     return 1;
   }
-}
+};
 
 class RetryState {
   constructor(delay) {
@@ -116,7 +108,7 @@ const retryingMethod = (options) => {
       });
   };
   return options.doCall;
-}
+};
 
 class DriveClient {
   constructor(clientId, apiKey) {
@@ -125,11 +117,12 @@ class DriveClient {
     this.whenDatabaseReady = newOnReady();
     this.resetState();
 
-    this.isDebug = location.hostname === "localhost";
+    this.isDebug = window.location.hostname === "localhost";
     const databaseType = this.isDebug ? "debug database" : "database";
     this.masechet = amudMetadata().masechet;
     this.databaseProperty = `${this.masechet} ${databaseType}`;
     if (this.isDebug) {
+      // eslint-disable-next-line no-console
       this.whenDatabaseReady.execute(() => console.log("Debug database document ready!"));
     }
   }
@@ -148,7 +141,7 @@ class DriveClient {
     retryingCall: () => {
       if (!gapi) {
         setTimeout(() => this.init(), 100);
-        return;
+        return undefined;
       }
 
       return gapi.client.init({
@@ -172,7 +165,7 @@ class DriveClient {
     this.isSignedIn = isSignedIn;
     if (isSignedIn) {
       gtag("config", "GA_MEASUREMENT_ID", {
-        "user_id": gapi.auth2.getAuthInstance().currentUser.get().getBasicProfile().getEmail(),
+        user_id: gapi.auth2.getAuthInstance().currentUser.get().getBasicProfile().getEmail(),
       });
       this.findDocsDatabase();
     } else {
@@ -185,7 +178,7 @@ class DriveClient {
     retryingCall: (fileId) => {
       checkNotUndefined(fileId, "fileId");
       return gapi.client.drive.files.update({
-        fileId: fileId,
+        fileId,
         appProperties: {
           "talmud.page.database": "true",
           "talmud.page.database.id": this.databaseProperty,
@@ -200,11 +193,11 @@ class DriveClient {
     retryingCall: () => {
       return gapi.client.drive.files.list({
         q: `appProperties has { key='talmud.page.database.id' and value='${this.databaseProperty}' }`
-          + ` and trashed = false`,
+          + " and trashed = false",
       });
     },
     then: response => {
-      const files = response.result.files;
+      const {files} = response.result;
       if (files.length === 0) {
         this.databaseDocumentShouldBeCreated = true;
       } else if (files.length === 1) {
@@ -222,9 +215,7 @@ class DriveClient {
       const title = this.isDebug
             ? `talmud.page ${this.masechet} debug notes`
             : `talmud.page ${this.masechet} notes`;
-      return gapi.client.docs.documents.create({
-        title: title,
-      });
+      return gapi.client.docs.documents.create({title});
     },
     then: response => {
       this.setDatabaseFileProperties(response.result.documentId);
@@ -273,9 +264,9 @@ class DriveClient {
         },
       }, {
         insertText: {
-          text: text,
-          location: {index: TABLE_TEXT_START}
-        }
+          text,
+          location: {index: TABLE_TEXT_START},
+        },
       },
     ];
 
@@ -283,7 +274,7 @@ class DriveClient {
       return {
         updateTextStyle: {
           textStyle: {
-            link: {url: url},
+            link: {url},
             underline: true,
             foregroundColor: rgbColor(44, 91, 198),
           },
@@ -297,7 +288,7 @@ class DriveClient {
     };
 
     let talmudPageIndex = -1;
-    while (true) {
+    while (true) { // eslint-disable-line no-constant-condition
       // leading space helps to ignore caveatsUrl
       talmudPageIndex = text.indexOf(" talmud.page", talmudPageIndex);
       if (talmudPageIndex === -1) {
@@ -310,9 +301,10 @@ class DriveClient {
     }
 
     requests.push(
-      addLink(caveatsUrl,
-              text.lastIndexOf(caveatsText),
-              text.lastIndexOf(caveatsText) + caveatsText.length));
+      addLink(
+        caveatsUrl,
+        text.lastIndexOf(caveatsText),
+        text.lastIndexOf(caveatsText) + caveatsText.length));
 
     return requests;
   }
@@ -341,7 +333,7 @@ class DriveClient {
         }
       }
       if (!range) {
-        throw "Couldn't find instructions table!";
+        throw new Error("Couldn't find instructions table!");
       }
 
       return gapi.client.docs.documents.batchUpdate({
@@ -356,7 +348,7 @@ class DriveClient {
   getDatabaseDocument = retryingMethod({
     retryingCall: (documentId) => {
       this.commentsByRef = {};
-      return gapi.client.docs.documents.get({documentId: documentId});
+      return gapi.client.docs.documents.get({documentId});
     },
     then: response => {
       this.databaseDocument = response.result;
@@ -390,7 +382,7 @@ class DriveClient {
       text = "\n" + text;
     }
     if (!text.endsWith("\n")) {
-      text = text + "\n";
+      text += "\n";
     }
 
     const commentRange = {
@@ -418,11 +410,7 @@ class DriveClient {
     if (this.databaseDocumentShouldBeCreated) {
       this.createDocsDatabase();
     }
-    gtag("event", "add_personal_note", {
-      amud: amud,
-      ref: ref,
-      parentRef: parentRef,
-    });
+    gtag("event", "add_personal_note", {amud, ref, parentRef});
     this.whenDatabaseReady.execute(() => this._appendNamedRange(text, amud, ref, parentRef));
   }
 
@@ -458,7 +446,7 @@ class DriveClient {
     parentRefs.sort(refSorter);
     const index = parentRefs.indexOf(parentRef);
     if (index !== 0) {
-      return this.findInsertLocation(parentRefs[index -1]);
+      return this.findInsertLocation(parentRefs[index - 1]);
     }
 
     if (INSTRUCTIONS_TABLE_RANGE_NAME in namedRanges) {
@@ -474,13 +462,13 @@ class DriveClient {
   }
 
   documentEnd() {
-    const content = this.databaseDocument.body.content;
+    const {content} = this.databaseDocument.body;
     return content[content.length - 1].endIndex - 1;
   }
 
   commentsForRef(ref) {
     if (!this.databaseDocument) {
-      return;
+      return undefined;
     }
     if (ref in this.commentsByRef) {
       return this.commentsByRef[ref];
@@ -494,22 +482,24 @@ class DriveClient {
   computeCommentsForRef(ref) {
     const prefixedRef = `ref:${ref}`;
     if (!(prefixedRef in this.databaseDocument.namedRanges)) {
-      return;
+      return undefined;
     }
     const ranges = this.databaseDocument.namedRanges[prefixedRef].namedRanges
           .flatMap(x => x.ranges);
     ranges.sort(rangeSorter);
 
-    return {comments: ranges.map(range => {
-      const text = this.documentText(range.startIndex, range.endIndex);
-      const allText = text.join("");
-      const hebrew = allText.match(HEBREW_LETTERS) || [];
-      const english = allText.match(LATIN_LETTERS) || [];
-      return {
-        en: english.length > hebrew.length ? text : "",
-        he: hebrew.length >= english.length ? text : "",
-      };
-    })};
+    return {
+      comments: ranges.map(range => {
+        const text = this.documentText(range.startIndex, range.endIndex);
+        const allText = text.join("");
+        const hebrew = allText.match(HEBREW_LETTERS) || [];
+        const english = allText.match(LATIN_LETTERS) || [];
+        return {
+          en: english.length > hebrew.length ? text : "",
+          he: hebrew.length >= english.length ? text : "",
+        };
+      }),
+    };
   }
 
   documentText(start, end) {
@@ -546,13 +536,11 @@ const driveClient = new DriveClient(
 );
 
 window.handleGoogleClientLoad = () => {
-  if (location.hostname === "localhost" || localStorage.allowDrive) {
-    gapi.load('client:auth2', () => driveClient.init());
+  if (window.location.hostname === "localhost" || localStorage.allowDrive) {
+    gapi.load("client:auth2", () => driveClient.init());
   }
-}
+};
 
-module.exports = {
-  driveClient: driveClient,
-}
+module.exports = {driveClient};
 
 window.driveClient = driveClient; // TODO(drive:must): remove

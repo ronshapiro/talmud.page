@@ -43,13 +43,13 @@ describe("filterDocumentRange()", () => {
         startIndex: currentStart,
         endIndex: currentStart + content.length,
         textRun: {
-          content: content,
-        }
+          content,
+        },
       });
       currentStart += content.length;
     }
     return result;
-  }
+  };
 
   test("exact match", () => {
     expect(filterDocumentRange(6, 11, createDocument("before", "match", "after")))
@@ -57,11 +57,11 @@ describe("filterDocumentRange()", () => {
   });
 
   test("partial matches", () => {
-    const actual =
-          filterDocumentRange(
-            7, 23,
-            createDocument(
-              "before", ">start", " middle ", "end<", "after"));
+    const actual = (
+      filterDocumentRange(
+        7, 23,
+        createDocument(
+          "before", ">start", " middle ", "end<", "after")));
     expect(actual).toEqual(["start middle end"]);
   });
 
@@ -78,8 +78,8 @@ describe("joinAdjacentElements", () => {
       endIndex: 2,
       textRun: {
         content: "A",
-      }
-    },{
+      },
+    }, {
       startIndex: 2,
       endIndex: 3,
       textRun: {
@@ -94,8 +94,8 @@ describe("joinAdjacentElements", () => {
       endIndex: 2,
       textRun: {
         content: "A",
-      }
-    },{
+      },
+    }, {
       startIndex: 2,
       endIndex: 3,
       textRun: {
