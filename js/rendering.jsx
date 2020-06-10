@@ -131,7 +131,7 @@ class EnglishCell extends Cell {
     applyDoubleClick(
       this.props.englishRef.current,
       () => this.setState(previousState => {
-        return {lineClamped: !previousState.state.lineClamped};
+        return {lineClamped: !previousState.lineClamped};
       }));
   }
 }
