@@ -40,10 +40,6 @@ html {
     font-size: 1.1em;
 }
 
-.table-row {
-    clear: both;
-}
-
 .table-cell {
     float: left;
     padding: 0px var(--table-cell-padding);

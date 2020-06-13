@@ -144,8 +144,7 @@ class TableRow extends Component {
   }
 
   render() {
-    const classes = _concat(["table-row"], this.props.classes).join(" ");
-    const {hebrew, english, hebrewDoubleClickListener} = this.props;
+    const {hebrew, english, classes, hebrewDoubleClickListener} = this.props;
 
     const cells = [];
     if (!isEmptyText(hebrew)) {
@@ -168,7 +167,8 @@ class TableRow extends Component {
           />);
     }
 
-    const output = <div classes={classes}>{cells}</div>;
+    const output = <div>{cells}</div>;
+    if (classes) output.props.class = classes.join(" ");
     output.props["sefaria-ref"] = this.props["sefaria-ref"];
     return output;
   }
