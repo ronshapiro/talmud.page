@@ -60,10 +60,8 @@ const stringOrListToString = (stringOrList) => {
 };
 
 class Cell extends Component {
-  defaultClasses = [];
-
-  classes() {
-    return _concat(this.props.classes, ["table-cell"], this.defaultClasses).join(" ");
+  classes(...extraClasses) {
+    return _concat(this.props.classes, ["table-cell"], extraClasses).join(" ");
   }
 
   // TODO: props.text is an awkward name.
@@ -78,12 +76,12 @@ class Cell extends Component {
 }
 
 class HebrewCell extends Cell {
-  defaultClasses = ["hebrew"];
-
   ref = createRef();
 
   render() {
-    return this.applyChildrenUnsafely(<div dir="rtl" class={this.classes()} ref={this.ref} />);
+    return this.applyChildrenUnsafely(
+      <div dir="rtl" class={this.classes("hebrew")} ref={this.ref} />,
+    );
   }
 
   componentDidMount() {
@@ -105,25 +103,21 @@ class HebrewCell extends Cell {
 }
 
 class EnglishCell extends Cell {
-  defaultClasses = ["english"];
-
   state = {
     lineClamped: true,
   };
 
   render() {
-    // TODO: attempt to remove english-div
-    const innerClasses = ["english-div"];
+    const classes = ["english"];
     if (this.state.lineClamped) {
-      innerClasses.push("line-clampable");
+      classes.push("line-clampable");
     }
-    return (
-      <div dir="ltr" class={this.classes()} ref={this.props.englishRef}>
-        {this.applyChildrenUnsafely(
-          <div
-            class={innerClasses.join(" ")}
-            style={`-webkit-line-clamp: ${this.props.lineClampLines};`} />)}
-      </div>
+    return this.applyChildrenUnsafely(
+      <div
+        dir="ltr"
+        class={this.classes(...classes)}
+        ref={this.props.englishRef}
+        style={`-webkit-line-clamp: ${this.props.lineClampLines};`} />,
     );
   }
 

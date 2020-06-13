@@ -68,7 +68,7 @@ html {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-.jastrow .english-div {
+.jastrow .english {
     -webkit-line-clamp: 3 !important;
 }
 td {
@@ -94,13 +94,13 @@ h1, h2 {
     font-family: "Taamey Frank", "Times New Roman", serif !important;
     line-height: 1.7em;
 }
-.english-div {
+.english {
     color: #555;
 }
-.english-div {
+.english {
     margin-top: 1.25px;
 }
-.gemara-container .english-div {
+.gemara-container .english {
     margin-top: 2.75px;
 }
 #previous-amud-container, #next-amud-container {
