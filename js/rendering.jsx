@@ -256,7 +256,7 @@ class CommentarySection extends Component {
           commentary = commentaries.Steinsaltz;
         }
         if (!commentary) {
-          throw new Error(`Could not find ${commentaryClassName} commentary in${sectionLabel}`);
+          throw new Error(`Could not find ${commentaryClassName} commentary in ${sectionLabel}`);
         }
       }
       output.push(this.renderTableRow(this.renderButton(commentaryKind), ""));
@@ -387,11 +387,16 @@ class Section extends Component {
   render() {
     const {section, sectionLabel} = this.props;
     const sectionContents = [];
+    const hebrewDoubleClickListener = () => {
+      if (section.commentary.Translation || section.commentary.Steinsaltz) {
+        this.toggleShowing(true, sectionLabel, "translation");
+      }
+    };
     sectionContents.push(
       // TODO: can this id be removed with a `#${sectionLabel} .gemara` selector?
       <TableRow
         hebrew={`<div class="gemara" id="${sectionLabel}-gemara">${section.he}</div>`}
-        hebrewDoubleClickListener={() => this.toggleShowing(true, sectionLabel, "translation")}
+        hebrewDoubleClickListener={hebrewDoubleClickListener}
         english={context.translationOption() === "english-side-by-side" ? section.en : undefined}
         classes={["gemara-container"]} />);
 
@@ -484,16 +489,14 @@ class Renderer {
     if (!amudData.sections) {
       amudData.sections = [];
     }
-    for (const section of amudData.sections) {
-      const commentaries = section.commentary;
 
-      if (commentaries) {
-        if (this._translationOption === "both") {
+    if (this._translationOption === "both") {
+      for (const section of amudData.sections) {
+        const commentaries = section.commentary;
+        // Reminder: Hadran sections have no steinsaltz
+        if (commentaries && commentaries.Steinsaltz) {
           commentaries.Translation = commentaries.Steinsaltz;
-          if (commentaries.Translation) {
-            // e.g. Hadran sections have no steinsaltz
-            commentaries.Translation.comments[0].en = section.en;
-          }
+          commentaries.Translation.comments[0].en = section.en;
           delete commentaries.Steinsaltz;
         }
       }

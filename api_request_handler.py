@@ -113,21 +113,20 @@ class ApiRequestHandler(object):
                    _STEINSALTZ_SUGYA_START.findall(comment.hebrew):
                     section["steinsaltz_start_of_sugya"] = True
 
-        if len(sections):
-            last_section = sections[len(sections) - 1]
-            if _HADRAN_PATTERN.findall(last_section["he"]):
-                last_section["he"] = _BR_PREFIX.sub("<br>", last_section["he"])
-                last_section["en"] = ""
-                last_section["commentary"] = Commentary.create()
-                last_section["hadran"] = True
-        elif masechet == "Nazir" and amud == "33b":
-            sections.append({
+            if _HADRAN_PATTERN.findall(section["he"]):
+                section["he"] = _BR_PREFIX.sub("<br>", section["he"])
+                section["en"] = ""
+                section["commentary"] = Commentary.create()
+                section["hadran"] = True
+
+        if masechet == "Nazir" and amud == "33b":
+            sections = [{
                 "he": "אין גמרא לנזיר ל״ג ע״א, רק תוספות (שהם קשורים לדפים אחרים)",
                 "en": "Nazir 33b has no Gemara, just Tosafot (which are linked to other pages).",
                 "commentary": Commentary.create(),
                 "ref": "synthetic",
-            })
-        else:
+            }]
+        elif len(sections) == 0:
             self._print(f"No sections for {masechet} {amud}")
 
         for section in sections:
