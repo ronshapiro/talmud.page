@@ -6,7 +6,7 @@
     "test": "jest",
     "dev": "node parcel.js dev",
     "build": "node parcel.js prod",
-    "deploy": "npm run build && yes | gcloud app deploy",
+    "deploy": "npm run build && yes | gcloud --configuration talmud-page app deploy",
     "ignore trailing commas": "exit 1"
   },
   "devDependencies": {
