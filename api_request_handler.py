@@ -2,9 +2,10 @@
 # -*- coding: utf-8 -*-
 
 from enum import Enum
-from source_formatting.jastrow import JastrowReformatter
-from source_formatting.hebrew_small_to_emphasis import HebrewSmallToEmphasisTagTranslator
+from source_formatting.commentary_prefixes import CommentaryPrefixStripper
 from source_formatting.dibur_hamatchil import bold_diburei_hamatchil
+from source_formatting.hebrew_small_to_emphasis import HebrewSmallToEmphasisTagTranslator
+from source_formatting.jastrow import JastrowReformatter
 from source_formatting.sefaria_link_sanitizer import SefariaLinkSanitizer
 import asyncio
 import httpx
@@ -247,6 +248,7 @@ class Comment(object):
         hebrew = HebrewSmallToEmphasisTagTranslator.process(hebrew)
         hebrew = bold_diburei_hamatchil(hebrew, english_name)
         english = SefariaLinkSanitizer.process(english)
+        hebrew = CommentaryPrefixStripper.process(hebrew)
         if english_name == "Jastrow":
             english = JastrowReformatter.process(english)
 

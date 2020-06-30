@@ -13,6 +13,7 @@ A simpler way to read the Talmud.
   - Steinsaltz is a first-class translation and not just a regular commentary. View the Steinsaltz Hebrew translation side by side with the Talmud and/or the Steinsaltz English translation
 - Visual spacing for sugyot (as delineated by Steinsaltz)
 - Expands common abbreviations in Jastrow
+- Strips printers' formatting that is less relevant for digital contexts, like גמ' and מתני'
 
 ## Feedback
 
