@@ -92,7 +92,7 @@ class ApiRequestHandler(object):
         for i in range(len(hebrew)):
             sections.append({
                 "he": hebrew[i],
-                "en": SefariaLinkSanitizer.process(english[i]),
+                "en": SefariaLinkSanitizer.process(english[i]).replace("§ ", ""),
                 "ref": "%s.%s" % (gemara_json["ref"], i + 1),
                 "commentary": Commentary.create(),
             })
