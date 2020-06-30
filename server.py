@@ -16,12 +16,16 @@ from flask import url_for
 from masechtot import InvalidQueryException
 from masechtot import Masechtot
 from masechtot import UnknownMasechetNameException
+from masechtot import next_amud
+from masechtot import previous_amud
 import cachetools
 import math
 import os
+import queue
 import random
 import string
 import sys
+import threading
 import traceback
 import uuid
 
@@ -154,6 +158,36 @@ amud_cache = cachetools.LRUCache(
         150 * 1e6),
     getsizeof = json_size_in_memory)
 
+amudim_to_cache_queue = queue.Queue()
+
+def cache_amud_response_in_background():
+    while True:
+        masechet, amud = amudim_to_cache_queue.get()
+        get_and_cache_amud_json(masechet, amud, verb="Precaching")
+        amudim_to_cache_queue.task_done()
+        print(f"Queue size: {amudim_to_cache_queue.qsize()}")
+
+threading.Thread(target=cache_amud_response_in_background, daemon=True).start()
+
+def get_and_cache_amud_json(masechet, amud, verb="Requesting"):
+    cache_key = (masechet, amud)
+    response = amud_cache.get(cache_key)
+    if not response:
+        try:
+            print(f"{verb} {masechet} {amud}")
+            response = api_request_handler.amud_api_request(masechet, amud)
+            print(f"{verb} {masechet} {amud} --- Done")
+        except ApiException as e:
+            return {"error": e.message, "code": e.internal_code}, e.http_status
+        except Exception:
+            _uuid = str(uuid.uuid4())
+            print(f"Error with uuid: {_uuid}")
+            traceback.print_exc()
+            return {"error": "An unknown exception occurred", "id": _uuid}, 500
+    # no matter what, always update the LRU status
+    amud_cache[cache_key] = response
+    return response, 200
+
 @app.route("/api/<masechet>/<amud>")
 def amud_json(masechet, amud):
     canonical_masechet = masechtot.canonical_url_masechet_name(masechet)
@@ -164,22 +198,12 @@ def amud_json(masechet, amud):
     except AmudDoesntExistException as e:
         return jsonify({"error": e.message()}), 404
 
-    cache_key = (masechet, amud)
-    response = amud_cache.get(cache_key)
-    if not response:
-        print(f"Requesting {masechet} {amud}")
-        try:
-            response = api_request_handler.amud_api_request(masechet, amud)
-        except ApiException as e:
-            return jsonify({"error": e.message, "code": e.internal_code}), e.http_status
-        except Exception:
-            _uuid = str(uuid.uuid4())
-            print(f"Error with uuid: {_uuid}")
-            traceback.print_exc()
-            return jsonify({"error": "An unknown exception occurred", "id": _uuid})
-    # no matter what, always update the LRU status
-    amud_cache[cache_key] = response
-    return jsonify(response)
+    response, code = get_and_cache_amud_json(masechet, amud)
+
+    amudim_to_cache_queue.put((masechet, previous_amud(amud)))
+    amudim_to_cache_queue.put((masechet, next_amud(amud)))
+
+    return jsonify(response), code
 
 @app.route("/preferences")
 def preferences():

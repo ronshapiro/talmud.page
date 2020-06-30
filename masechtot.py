@@ -28,6 +28,11 @@ def next_amud(amud):
         return "%sb" % amud[:-1]
     return "%sa" % (int(amud[:-1]) + 1)
 
+def previous_amud(amud):
+    if amud[-1:] == "b":
+        return "%sa" % amud[:-1]
+    return "%sb" % (int(amud[:-1]) - 1)
+
 class Masechet(object):
     def __init__(self, canonical_name, aliases = (), start = "2a", end = None):
         self.canonical_name = canonical_name
