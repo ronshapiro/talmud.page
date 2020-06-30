@@ -12,7 +12,6 @@ import httpx
 import re
 
 _HADRAN_PATTERN = re.compile("^(<br>)+<big><strong>הדרן עלך .*")
-_BR_PREFIX = re.compile("^(<br>)+")
 
 _ALEPH = "א"
 _TAV = "ת"
@@ -115,7 +114,7 @@ class ApiRequestHandler(object):
                     section["steinsaltz_start_of_sugya"] = True
 
             if _HADRAN_PATTERN.findall(section["he"]):
-                section["he"] = _BR_PREFIX.sub("<br>", section["he"])
+                section["he"] = section["he"].replace("<br>", "")
                 section["en"] = ""
                 section["commentary"] = Commentary.create()
                 section["hadran"] = True

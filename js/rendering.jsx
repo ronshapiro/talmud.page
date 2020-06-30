@@ -392,13 +392,19 @@ class Section extends Component {
         this.toggleShowing(true, sectionLabel, "translation");
       }
     };
+
+    const gemaraContainerClasses = ["gemara-container"];
+    if (section.hadran) {
+      gemaraContainerClasses.push("hadran");
+    }
     sectionContents.push(
       // TODO: can this id be removed with a `#${sectionLabel} .gemara` selector?
+      // TODO: jsx?
       <TableRow
         hebrew={`<div class="gemara" id="${sectionLabel}-gemara">${section.he}</div>`}
         hebrewDoubleClickListener={hebrewDoubleClickListener}
         english={context.translationOption() === "english-side-by-side" ? section.en : undefined}
-        classes={["gemara-container"]} />);
+        classes={gemaraContainerClasses} />);
 
     if (section.commentary) {
       sectionContents.push(
