@@ -1,3 +1,4 @@
+/* eslint import/no-extraneous-dependencies: ["error", {"devDependencies": true}] */
 const Bundler = require('parcel-bundler');
 const fs = require('fs');
 const { spawn } = require("child_process");
@@ -14,17 +15,17 @@ const entryFiles = [
   './templates/talmud_page.html',
 ];
 
-const isProd = function() {
+const isProd = (() => {
   switch (process.argv[2]) {
     case "prod":
       return true;
     case "dev":
       return false;
     case undefined:
-      throw `No configuration specified. Usage: \`node ${process.argv[1]} <prod|dev>\``;
+    default:
+      throw new Error(`No configuration specified. Usage: \`node ${process.argv[1]} <prod|dev>\``);
   }
-  throw `Unknown configuration: ${process.argv[2]}`;
-}();
+})();
 
 const bundler = new Bundler(entryFiles, {
   watch: !isProd,
@@ -42,17 +43,19 @@ const startFlask = () => {
   }
   flaskSubprocess = spawn("./venv/bin/python3", ["server.py"], {
     env: {
-      "FLASK_ENV": "development",
+      FLASK_ENV: "development",
     },
   });
   flaskSubprocess.stdout.on("data", (data) => process.stdout.write(data));
   flaskSubprocess.stderr.on("data", (data) => process.stderr.write(data));
-  flaskSubprocess.on("exit", () => flaskDied = true);
+  flaskSubprocess.on("exit", () => {
+    flaskDied = true;
+  });
 };
 
 if (!isProd) {
   let distFiles = new Set();
-  bundler.on('bundled', (bundle) => {
+  bundler.on('bundled', () => {
     const newDistFiles = fs.readdirSync("./dist");
     if (distFiles.size !== newDistFiles.length || !newDistFiles.every(x => distFiles.has(x))) {
       distFiles = new Set(newDistFiles);
@@ -61,7 +64,7 @@ if (!isProd) {
       startFlask();
     }
   });
-  bundler.on("buildError", error => {
+  bundler.on("buildError", () => {
     if (flaskSubprocess) {
       flaskSubprocess.kill();
     }

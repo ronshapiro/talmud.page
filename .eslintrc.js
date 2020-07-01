@@ -53,6 +53,7 @@ module.exports = {
     "object-curly-newline": "off",
     "class-methods-use-this": "off",
     "no-restricted-syntax": "off",
+    "no-undef-init": "off",
     "object-curly-spacing": "off",
     "prefer-template": "off",
     "radix": "off",

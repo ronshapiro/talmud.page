@@ -2,7 +2,7 @@
 
 #set -eu
 
-. venv/bin/activate
+. "${VIRTUAL_ENV:-venv}/bin/activate"
 
 for test_file in $(find * | grep test.py\$ | grep -v ^venv); do
     output=$(python $test_file 2>&1)
