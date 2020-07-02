@@ -218,7 +218,7 @@ def manifest_json():
 
 @app.route("/caveats/google-docs")
 def google_docs_caveats():
-    return redirect("https://github.com/ronshapiro/talmud.page/blob/master/GoogleDriveCaveats.md")
+    return redirect("https://github.com/ronshapiro/talmud.page/blob/base/GoogleDriveCaveats.md")
 
 @app.route("/notes")
 def notes():

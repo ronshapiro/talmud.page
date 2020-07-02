@@ -1,4 +1,4 @@
-# https://talmud.page [![Build Status](https://travis-ci.org/ronshapiro/talmud.page.svg?branch=master)](https://travis-ci.org/ronshapiro/talmud.page)
+# https://talmud.page [![Build Status](https://travis-ci.org/ronshapiro/talmud.page.svg?branch=base)](https://travis-ci.org/ronshapiro/talmud.page)
 
 A simpler way to read the Talmud.
 
