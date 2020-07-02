@@ -196,6 +196,7 @@ class CommentRow extends Component {
         english={english}
         sefaria-ref={commentaryKind.englishName === "Personal Notes" ? "ignore" : comment.ref}
         commentary-kind={commentaryKind.englishName}
+        classes={["commentaryRow"]}
         />
     );
   }
@@ -281,7 +282,14 @@ class CommentarySection extends Component {
 
   renderTableRow(hebrew, english) {
     const overrideFullRow = context.translationOption() === "english-side-by-side";
-    return <TableRow hebrew={hebrew} english={english} overrideFullRow={overrideFullRow} />;
+    return (
+      <TableRow
+        hebrew={hebrew}
+        english={english}
+        overrideFullRow={overrideFullRow}
+        classes={["commentaryRow"]}
+        />
+    );
   }
 
   renderShowButtons() {
