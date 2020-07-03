@@ -1,3 +1,4 @@
+import argparse
 import api_request_handler
 import json
 import os
@@ -5,6 +6,10 @@ import traceback
 from api_request_handler import ApiException
 from masechtot import MASECHTOT
 from masechtot import next_amud
+
+parser = argparse.ArgumentParser(description='Test')
+parser.add_argument("--overwrite", action="store_const", const=True)
+args = parser.parse_args()
 
 def write_json(file_name, data):
     with open(file_name, "w") as output_file:
@@ -21,7 +26,7 @@ for masechet in MASECHTOT:
     amud = masechet.start
     while True:
         file_path = f"cached_outputs/api_request_handler/{masechet.canonical_name}.{amud}.json"
-        if not os.path.exists(file_path):
+        if args.overwrite or not os.path.exists(file_path):
             try:
                 write_json(file_path,
                            request_handler.amud_api_request(masechet.canonical_name, amud))

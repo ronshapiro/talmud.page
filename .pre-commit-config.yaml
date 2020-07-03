@@ -9,7 +9,7 @@
     hooks:
     -   id: flake8
         args: [
-            '--ignore=E251,E261,E302,E305,E306',
+            '--ignore=E251,E261,E302,E305,E306,W503',
             --show-source,
             --statistics,
             --exclude=venv,
