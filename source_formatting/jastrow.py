@@ -1195,13 +1195,10 @@ class JastrowReformatter(BaseHtmlTranslator):
     def handle_starttag(self, tag, attrs):
         if tag == "b":
             self._out.append("<br>")
-        self._out.append("<%s" % tag)
-        for attr in attrs:
-            self._out.append(f' {attr[0]}="{attr[1]}"')
-        self._out.append(">")
+        self.append_start_tag(tag, attrs)
 
     def handle_endtag(self, tag):
-        self._out.append("</%s>" % tag)
+        self.append_end_tag(tag)
 
     def handle_data(self, data):
         if _ADDITIONAL_TRANSLATION.match(data):

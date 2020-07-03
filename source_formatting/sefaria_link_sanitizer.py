@@ -10,16 +10,12 @@ class SefariaLinkSanitizer(BaseHtmlTranslator):
     def handle_starttag(self, tag, attrs):
         if tag == "a":
             return
-        # TODO: remove duplication of this code with other files
-        self._out.append("<%s" % tag)
-        for attr in attrs:
-            self._out.append(f' {attr[0]}="{attr[1]}"')
-        self._out.append(">")
+        self.append_start_tag(tag, attrs)
 
     def handle_endtag(self, tag):
         if tag == "a":
             return
-        self._out.append("</%s>" % tag)
+        self.append_end_tag(tag)
 
     def handle_data(self, data):
         # TODO: perhaps keeping these html encodings is fine.

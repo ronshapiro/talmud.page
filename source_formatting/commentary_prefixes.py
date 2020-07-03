@@ -14,13 +14,10 @@ class CommentaryPrefixStripper(BaseHtmlTranslator):
         self.has_processed_text = False
 
     def handle_starttag(self, tag, attrs):
-        self._out.append("<%s" % tag)
-        for attr in attrs:
-            self._out.append(f' {attr[0]}="{attr[1]}"')
-        self._out.append(">")
+        self.append_start_tag(tag, attrs)
 
     def handle_endtag(self, tag):
-        self._out.append("</%s>" % tag)
+        self.append_end_tag(tag)
 
     def handle_data(self, data):
         if not self.has_processed_text:
