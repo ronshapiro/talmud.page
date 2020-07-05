@@ -10,25 +10,59 @@ html {
     background-color: var(--background-color);
 }
 
+html, body {
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+/*
 @font-face{
-    font-family:taamey frank;
+    font-family: "Taamey Frank";
     src:url(https://sefaria.org/static/fonts/Taamey-Frank/TaameyFrankCLM-Medium.ttf)
 }
 @font-face{
-    font-family:taamey frank;
+    font-family: "Taamey Frank";
     src:url(https://sefaria.org/static/fonts/Taamey-Frank/TaameyFrankCLM-Bold.ttf);
     font-weight:700
 }
 @font-face{
-    font-family:taamey frank;
+    font-family: "Taamey Frank";
     src:url(https://sefaria.org/static/fonts/Taamey-Frank/TaameyFrankCLM-MediumOblique.ttf);
     font-style:italic
 }
 @font-face{
-    font-family:taamey frank;
+    font-family: "Taamey Frank";
     src:url(https://sefaria.org/static/fonts/Taamey-Frank/TaameyFrankCLM-BoldOblique.ttf);
     font-style:italic;
     font-weight:700
+}
+*/
+
+/* https://opensiddur.org/help/fonts/ */
+@font-face{
+    font-family: "Taamey David";
+    src:url(/font/TaameyDavidCLM-Medium.ttf)
+}
+@font-face{
+    font-family: "Taamey David";
+    src:url(/font/TaameyDavidCLM-Bold.ttf);
+    font-weight:700
+}
+@font-face{
+    font-family: "Taamey David";
+    src:url(/font/TaameyDavidCLM-MediumOblique.ttf);
+    font-style:italic
+}
+@font-face{
+    font-family: "Taamey David";
+    src:url(font/TaameyDavidCLM-BoldOblique.ttf);
+    font-style:italic;
+    font-weight:700
+}
+
+/* https://opensiddur.org/help/fonts/ */
+@font-face{
+    font-family: 'Fira Light';
+    src:url(/font/FiraGO-Light.ttf)
 }
 
 .gemara, #snackbar .hebrew {
@@ -91,8 +125,12 @@ h1, h2 {
     text-align: center;
 }
 .hebrew {
-    font-family: "Taamey Frank", "Times New Roman", serif !important;
+    font-family: "Taamey David", "Times New Roman", serif;
     line-height: 1.7em;
+}
+.hebrew-emphasis {
+    font-family: "Fira Light";
+    font-size: 14px;
 }
 .english {
     color: #555;
@@ -112,12 +150,13 @@ h1, h2 {
     margin-top: 32px;
 }
 h1 {
-    font-family: "David Libre";
+    font-family: "Taamey David";
     font-size:  4em;
 }
 h2 {
-    font-family: "Rubik";
+    font-family: "Helvetica Neue";
     font-size: 2.5em;
+    font-weight: 200;
 }
 
 #snackbar {
@@ -188,9 +227,6 @@ h2 {
     clear: both;
     display: block;
     height: 10px;
-}
-.hebrew-emphasis {
-    font-family: "David Libre";
 }
 .single-commentator-container > * {
     padding-top: .4em;

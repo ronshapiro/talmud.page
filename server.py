@@ -118,6 +118,10 @@ for name in os.listdir("dist"):
     if name.endswith(".js") or name.endswith(".css") or (app.debug and name.endswith(".map")):
         app.add_url_rule("/%s" % name, name, send_file_fn("dist/%s" % name))
 
+
+for name in os.listdir("fonts"):
+    app.add_url_rule("/font/%s" % name, name, send_file_fn("fonts/%s" % name))
+
 @app.errorhandler(AmudDoesntExistException)
 def amud_doesnt_exist_404(e):
     return render_template("error_page.html", message=e.message(), title="Error"), 404
