@@ -41,7 +41,10 @@ const startFlask = () => {
   if (flaskSubprocess) {
     flaskSubprocess.kill();
   }
-  flaskSubprocess = spawn("./venv/bin/python3", ["server.py"], {
+  flaskSubprocess = spawn("./venv/bin/python3", [
+    "-u", // Force unbuffered outputs for stdout and stderr so that outputs are visible immediately
+    "server.py",
+  ], {
     env: {
       FLASK_ENV: "development",
     },
