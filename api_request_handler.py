@@ -6,6 +6,7 @@ from source_formatting.commentary_prefixes import CommentaryPrefixStripper
 from source_formatting.dibur_hamatchil import bold_diburei_hamatchil
 from source_formatting.hebrew_small_to_emphasis import HebrewSmallToEmphasisTagTranslator
 from source_formatting.jastrow import JastrowReformatter
+from source_formatting.section_symbol import SectionSymbolRemover
 from source_formatting.sefaria_link_sanitizer import SefariaLinkSanitizer
 import asyncio
 import httpx
@@ -36,6 +37,9 @@ class RealRequestMaker(object):
                     # the Rashi/Tosafot requests to have the entire amud's worth of commentary
                     "pad": "0",
                 })
+
+def standard_english_transformations(english):
+    return SectionSymbolRemover.process(SefariaLinkSanitizer.process(english))
 
 class ApiRequestHandler(object):
     def __init__(self, request_maker, print_function=print):
@@ -89,7 +93,7 @@ class ApiRequestHandler(object):
         for i in range(len(hebrew)):
             sections.append({
                 "he": hebrew[i],
-                "en": SefariaLinkSanitizer.process(english[i]).replace("§ ", ""),
+                "en": standard_english_transformations(english[i]),
                 "ref": "%s.%s" % (gemara_json["ref"], i + 1),
                 "commentary": Commentary.create(),
             })
@@ -243,8 +247,9 @@ class Comment(object):
 
         hebrew = HebrewSmallToEmphasisTagTranslator.process(hebrew)
         hebrew = bold_diburei_hamatchil(hebrew, english_name)
-        english = SefariaLinkSanitizer.process(english)
         hebrew = CommentaryPrefixStripper.process(hebrew)
+
+        english = standard_english_transformations(english)
         if english_name == "Jastrow":
             english = JastrowReformatter.process(english)
 
