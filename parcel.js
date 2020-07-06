@@ -73,7 +73,10 @@ if (!isProd) {
     }
   });
   fs.watch(".", {recursive: true}, (eventType, fileName) => {
-    if (flaskDied && fileName.endsWith(".py")) {
+    if (flaskDied
+        && fileName.endsWith(".py")
+        && !fileName.startsWith(".#")
+        && !fileName.startsWith("#")) {
       startFlask();
     }
   });
