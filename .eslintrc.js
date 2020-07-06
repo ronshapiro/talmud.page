@@ -34,9 +34,7 @@ module.exports = {
     "no-underscore-dangle": "off",
     "quotes": "off", // In general this is awfully noisy; ideally it would be ["error", "double"]
     "react/destructuring-assignment": "off",
-    "react/no-unknown-property": ["error", {
-      ignore: ["class", "onclick", "onkeyup", "tabindex"], // Preact
-    }],
+    "react/static-property-placement": "off",
 
     // TODO: evaluate all of the rules below
     "jsx-a11y/no-static-element-interactions": "off",
@@ -45,11 +43,11 @@ module.exports = {
     "indent": "off", // TODO: cleanup
     "import/named": "off", // unclear why eslint can't find imports
     "no-param-reassign": "off",
-    "react/react-in-jsx-scope": "off",
     "react/jsx-closing-bracket-location": "off",
     "react/sort-comp": "off",
     "react/state-in-constructor": "off",
-    "react/prop-types": "off", // preact doesn't have PropTypes
+    "react/require-default-props": "off",
+    "react/forbid-prop-types": "off",
     "object-curly-newline": "off",
     "class-methods-use-this": "off",
     "no-restricted-syntax": "off",

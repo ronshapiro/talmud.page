@@ -1,12 +1,11 @@
 /* global jQuery, $, gtag, componentHandler */
-import {
+import React, {
   Component,
-  render,
-  h, // eslint-disable-line no-unused-vars -- Preact implicitly uses h
   createContext,
   createRef,
-} from "preact";
-import {useContext} from "preact/hooks";
+} from "react";
+import {render} from 'react-dom';
+import PropTypes from 'prop-types';
 
 // TODO(react): add keys wherever seems necesary
 
@@ -35,11 +34,6 @@ const applyDoubleClick = (element, fn) => {
 };
 
 const ConfigurationContext = createContext();
-const context = {
-  translationOption: () => useContext(ConfigurationContext).translationOption,
-  commentaryTypes: () => useContext(ConfigurationContext).commentaryTypes,
-  commentaryTypesByClassName: () => useContext(ConfigurationContext).commentaryTypesByClassName,
-};
 
 const _concat = (...args) => {
   const result = [];
@@ -60,18 +54,22 @@ const stringOrListToString = (stringOrList) => {
 };
 
 class Cell extends Component {
+  static propTypes = {
+    classes: PropTypes.arrayOf(PropTypes.string).isRequired,
+    text: PropTypes.node.isRequired,
+  };
+
   classes(...extraClasses) {
     return _concat(this.props.classes, ["table-cell"], extraClasses).join(" ");
   }
 
-  // TODO: props.text is an awkward name.
-  applyChildrenUnsafely(element) {
+  childrenProp() {
+    // TODO: props.text is an awkward name.
     if (typeof this.props.text === "string") {
-      element.props.dangerouslySetInnerHTML = {__html: this.props.text};
+      return {dangerouslySetInnerHTML: {__html: this.props.text}};
     } else {
-      element.props.children = this.props.text;
+      return {children: this.props.text};
     }
-    return element;
   }
 }
 
@@ -79,8 +77,13 @@ class HebrewCell extends Cell {
   ref = createRef();
 
   render() {
-    return this.applyChildrenUnsafely(
-      <div dir="rtl" class={this.classes("hebrew")} ref={this.ref} />,
+    return (
+      <div
+        dir="rtl"
+        className={this.classes("hebrew")}
+        ref={this.ref}
+        {...this.childrenProp()} // eslint-disable-line react/jsx-props-no-spreading
+        />
     );
   }
 
@@ -112,12 +115,14 @@ class EnglishCell extends Cell {
     if (this.state.lineClamped) {
       classes.push("line-clampable");
     }
-    return this.applyChildrenUnsafely(
+    return (
       <div
         dir="ltr"
-        class={this.classes(...classes)}
+        className={this.classes(...classes)}
         ref={this.props.englishRef}
-        style={`-webkit-line-clamp: ${this.props.lineClampLines};`} />,
+        style={{WebkitLineClamp: this.props.lineClampLines}}
+        {...this.childrenProp()} // eslint-disable-line react/jsx-props-no-spreading
+        />
     );
   }
 
@@ -131,6 +136,15 @@ class EnglishCell extends Cell {
 }
 
 class TableRow extends Component {
+  static propTypes = {
+    hebrew: PropTypes.node,
+    english: PropTypes.node,
+    classes: PropTypes.arrayOf(PropTypes.string),
+    hebrewDoubleClickListener: PropTypes.func,
+    "sefaria-ref": PropTypes.string,
+    overrideFullRow: PropTypes.bool,
+  };
+
   constructor(props) {
     super(props);
     this.state = {hebrewLineCount: 1};
@@ -144,6 +158,7 @@ class TableRow extends Component {
     if (!isEmptyText(hebrew)) {
       cells.push(
         <HebrewCell
+          key="hebrew"
           text={hebrew}
           classes={this.cellClasses()}
           updateHebrewLineCount={newCount => this.setState({hebrewLineCount: newCount})}
@@ -154,6 +169,7 @@ class TableRow extends Component {
     if (!isEmptyText(english)) {
       cells.push(
         <EnglishCell
+          key="english"
           text={english}
           classes={this.cellClasses()}
           englishRef={this.englishRef}
@@ -161,10 +177,16 @@ class TableRow extends Component {
           />);
     }
 
-    const output = <div>{cells}</div>;
-    if (classes) output.props.class = classes.join(" ");
-    output.props["sefaria-ref"] = this.props["sefaria-ref"];
-    return output;
+    const optionalProps = {};
+    if (classes) optionalProps.className = classes.join(" ");
+    return (
+      <div
+        sefaria-ref={this.props["sefaria-ref"]}
+        {...optionalProps} // eslint-disable-line react/jsx-props-no-spreading
+        >
+        {cells}
+      </div>
+    );
   }
 
   cellClasses() {
@@ -188,10 +210,16 @@ const isSefariaReturningLongListsOfSingleCharacters = (comment) => {
 };
 
 class CommentRow extends Component {
-  renderTableRow(hebrew, english) {
+  static propTypes = {
+    comment: PropTypes.object,
+    commentaryKind: PropTypes.object,
+  };
+
+  renderTableRow(key, hebrew, english) {
     const {comment, commentaryKind} = this.props;
     return (
       <TableRow
+        key={key}
         hebrew={hebrew}
         english={english}
         sefaria-ref={commentaryKind.englishName === "Personal Notes" ? "ignore" : comment.ref}
@@ -208,6 +236,7 @@ class CommentRow extends Component {
     if (commentaryKind.showTitle) {
       output.push(
         this.renderTableRow(
+          "title",
           <strong>{comment.sourceHeRef}</strong>,
           isEmptyText(comment.en) ? "" : <strong>{comment.sourceRef}</strong>));
     }
@@ -215,13 +244,14 @@ class CommentRow extends Component {
     if (Array.isArray(comment.he) && Array.isArray(comment.en)
         && comment.he.length === comment.en.length) {
       for (let i = 0; i < comment.he.length; i++) {
-        output.push(this.renderTableRow(comment.he[i], comment.en[i]));
+        output.push(this.renderTableRow(i, comment.he[i], comment.en[i]));
       }
     } else if (isSefariaReturningLongListsOfSingleCharacters(comment)) {
-      output.push(this.renderTableRow(comment.he.join(""), comment.en.join("")));
+      output.push(this.renderTableRow("joined comments", comment.he.join(""), comment.en.join("")));
     } else {
       output.push(
         this.renderTableRow(
+          "joined comments",
           stringOrListToString(comment.he),
           stringOrListToString(comment.en)));
     }
@@ -230,25 +260,27 @@ class CommentRow extends Component {
   }
 }
 
-const forEachCommentary = (commentaries, action) => {
-  for (const commentaryKind of context.commentaryTypes()) {
-    const commentary = commentaries[commentaryKind.englishName];
-    if (commentary) {
-      action(commentary, commentaryKind);
-    }
-  }
-};
-
 class CommentarySection extends Component {
+  static propTypes = {
+    commentaries: PropTypes.object,
+    getOrdering: PropTypes.func,
+    toggleShowing: PropTypes.func,
+    sectionLabel: PropTypes.string,
+  };
+
+  static contextType = ConfigurationContext;
+
+  state = {};
+
   render() {
     const {commentaries, getOrdering, toggleShowing, sectionLabel} = this.props;
-    if (!commentaries || commentaries.length === 0) {
+    if (!commentaries || Object.keys(commentaries).length === 0) {
       return undefined;
     }
 
     const output = [];
     for (const commentaryClassName of getOrdering(sectionLabel)) {
-      const commentaryKind = context.commentaryTypesByClassName()[commentaryClassName];
+      const commentaryKind = this.context.commentaryTypesByClassName[commentaryClassName];
       let commentary = commentaries[commentaryKind.englishName];
       if (!commentary) {
         // TODO: investigate a better solution for the indexByClassName overlapping for Translation
@@ -260,18 +292,27 @@ class CommentarySection extends Component {
           throw new Error(`Could not find ${commentaryClassName} commentary in ${sectionLabel}`);
         }
       }
-      output.push(this.renderTableRow(this.renderButton(commentaryKind), ""));
+      output.push(this.renderTableRow(
+        commentaryKind.englishName,
+        this.renderButton(commentaryKind), ""));
       commentary.comments.forEach(comment => {
-        output.push(<CommentRow comment={comment} commentaryKind={commentaryKind} />);
+        output.push(
+          <CommentRow
+            key={comment.ref}
+            comment={comment}
+            commentaryKind={commentaryKind}
+            />);
       });
 
       if (commentary.commentary) {
+        const nestedSectionLabel = `${sectionLabel}.<nested>.${commentaryKind.className}`;
         output.push(
           <CommentarySection
             commentaries={commentary.commentary}
             getOrdering={getOrdering}
             toggleShowing={toggleShowing}
-            sectionLabel={`${sectionLabel}.<nested>.${commentaryKind.className}`}
+            sectionLabel={nestedSectionLabel}
+            key={nestedSectionLabel}
             />);
       }
     }
@@ -280,10 +321,11 @@ class CommentarySection extends Component {
     return output;
   }
 
-  renderTableRow(hebrew, english) {
-    const overrideFullRow = context.translationOption() === "english-side-by-side";
+  renderTableRow(key, hebrew, english) {
+    const overrideFullRow = this.context.translationOption === "english-side-by-side";
     return (
       <TableRow
+        key={key}
         hebrew={hebrew}
         english={english}
         overrideFullRow={overrideFullRow}
@@ -292,15 +334,24 @@ class CommentarySection extends Component {
     );
   }
 
+  forEachCommentary(commentaries, action) {
+    for (const commentaryKind of this.context.commentaryTypes) {
+      const commentary = commentaries[commentaryKind.englishName];
+      if (commentary) {
+        action(commentary, commentaryKind);
+      }
+    }
+  }
+
   renderShowButtons() {
     const {commentaries, getOrdering, sectionLabel} = this.props;
     const buttons = [];
-    forEachCommentary(commentaries, (commentary, commentaryKind) => {
+    this.forEachCommentary(commentaries, (commentary, commentaryKind) => {
       if (!getOrdering(sectionLabel).includes(commentaryKind.className)) {
         buttons.push(this.renderButton(commentaryKind));
       }
     });
-    return this.renderTableRow(buttons, "");
+    return this.renderTableRow(`${sectionLabel} show buttons`, buttons, "");
   }
 
   buttonToFocusAfterEnter = createRef();
@@ -337,10 +388,11 @@ class CommentarySection extends Component {
 
     return applyButtonToFocusRef(
       <a
-        class={this.buttonClasses(commentaryKind)}
-        tabindex="0"
-        onclick={onClick}
-        onkeyup={onKeyUp}>
+        key={commentaryKind.englishName}
+        className={this.buttonClasses(commentaryKind)}
+        tabIndex="0"
+        onClick={onClick}
+        onKeyUp={onKeyUp}>
         {commentaryKind.hebrewName}
       </a>);
   }
@@ -368,6 +420,13 @@ class CommentarySection extends Component {
 
 
 class Section extends Component {
+  static propTypes = {
+    section: PropTypes.object,
+    sectionLabel: PropTypes.string,
+  };
+
+  static contextType = ConfigurationContext;
+
   constructor(props) {
     super(props);
     this.state = {};
@@ -405,18 +464,21 @@ class Section extends Component {
     if (section.hadran) {
       gemaraContainerClasses.push("hadran");
     }
+
     sectionContents.push(
       // TODO: can this id be removed with a `#${sectionLabel} .gemara` selector?
       // TODO: jsx?
       <TableRow
+        key="gemara"
         hebrew={`<div class="gemara" id="${sectionLabel}-gemara">${section.he}</div>`}
         hebrewDoubleClickListener={hebrewDoubleClickListener}
-        english={context.translationOption() === "english-side-by-side" ? section.en : undefined}
+        english={this.context.translationOption === "english-side-by-side" ? section.en : undefined}
         classes={gemaraContainerClasses} />);
 
     if (section.commentary) {
       sectionContents.push(
         <CommentarySection
+          key="commentarySection"
           commentaries={section.commentary}
           getOrdering={commentSectionLabel => this.state[commentSectionLabel] || []}
           toggleShowing={(...args) => this.toggleShowing(false, ...args)}
@@ -424,7 +486,7 @@ class Section extends Component {
     }
 
     return (
-      <div id={sectionLabel} class="section-container" sefaria-ref={section.ref}>
+      <div id={sectionLabel} className="section-container" sefaria-ref={section.ref}>
         {sectionContents}
       </div>
     );
@@ -432,27 +494,32 @@ class Section extends Component {
 }
 
 class Amud extends Component {
+  static propTypes = {
+    amudData: PropTypes.object,
+  };
+
+
   render() {
     const {amudData} = this.props;
-    const output = [<h2>{amudData.title}</h2>];
+    const output = [<h2 key="title">{amudData.title}</h2>];
     if (amudData.loading) {
       output.push(
         <div
           key={`${amudData.id}-loading-spinner`}
-          class="text-loading-spinner mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active" />);
+          className="text-loading-spinner mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active" />);
     }
 
     for (let i = 0; i < amudData.sections.length; i++) {
       const section = amudData.sections[i];
       if (i !== 0 && section.steinsaltz_start_of_sugya) {
-        output.push(<br class="sugya-separator" />);
+        output.push(<br key={`sugya-separator-${i}`} className="sugya-separator" />);
       }
 
       const sectionLabel = `${amudData.id}_section_${i + 1}`;
-      output.push(<Section section={section} sectionLabel={sectionLabel} />);
+      output.push(<Section key={i} section={section} sectionLabel={sectionLabel} />);
     }
     return (
-      <div id={`amud-${amudData.id}`} class="amudContainer" amud={amudData.id}>
+      <div id={`amud-${amudData.id}`} className="amudContainer" amud={amudData.id}>
         {output}
       </div>
     );
@@ -460,13 +527,17 @@ class Amud extends Component {
 }
 
 class Amudim extends Component {
+  static propTypes = {
+    allAmudim: PropTypes.func,
+  };
+
   state = {}
 
   render() {
     if (!this.state.isReady) {
       return [];
     }
-    return this.props.allAmudim().map(amud => <Amud amudData={amud} />);
+    return this.props.allAmudim().map(amud => <Amud key={amud.id + "-amud"} amudData={amud} />);
   }
 
   componentDidMount() {
