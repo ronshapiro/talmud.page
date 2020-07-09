@@ -73,10 +73,12 @@ html, body {
 .commentaryRow .hebrew, .hebrew .commentary_header {
     font-size: 1.1em;
 }
-
+.table-row {
+    clear: both;
+}
 .table-cell {
-    float: left;
     padding: 0px var(--table-cell-padding);
+    float: left;
 }
 .amudContainer:after {
     visibility: hidden;
@@ -90,9 +92,10 @@ html, body {
 .amudContainer .hebrew {
     width: calc(55% - 2 * var(--table-cell-padding));
 }
-.amudContainer .english {
-    width: calc(45% - 2 * var(--table-cell-padding));
+.hebrew.siblingExpanded {
+    padding-right: calc(2 * var(--table-cell-padding));
 }
+
 .fullRow {
     width: calc(100% - 2 * var(--table-cell-padding)) !important;
 }
@@ -102,12 +105,17 @@ html, body {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+.english.line-clampable {
+    width: calc(45% - 2 * var(--table-cell-padding));
+}
+.english:not(.line-clampable) {
+    /* subtract for right padding */
+    width: calc(100% - 2 * var(--table-cell-padding));
+
+    float: none;
+}
 .jastrow .english {
     -webkit-line-clamp: 3 !important;
-}
-td {
-    vertical-align: top;
-    padding: 0px 8px;
 }
 .commentary_header {
     text-decoration: underline;
@@ -136,10 +144,10 @@ h1, h2 {
     color: #555;
 }
 .english {
-    margin-top: 1.25px;
+    padding-top: 1.25px;
 }
 .gemara-container .english {
-    margin-top: 2.75px;
+    padding-top: 2.75px;
 }
 #previous-amud-container, #next-amud-container {
     display: flex;

@@ -79,10 +79,13 @@ class HebrewCell extends Cell {
   ref = createRef();
 
   render() {
+    // TODO: if the english cell expanded is only a little bit of extra text (1 line, or 2 short
+    // ones, use the default layout and don't wrap.
+    const siblingExpandedClass = this.props.isEnglishExpanded ? "siblingExpanded" : undefined;
     return (
       <div
         dir="rtl"
-        className={this.classes("hebrew")}
+        className={this.classes("hebrew", siblingExpandedClass)}
         ref={this.ref}
         {...this.childrenProp()} // eslint-disable-line react/jsx-props-no-spreading
         />
@@ -108,13 +111,9 @@ class HebrewCell extends Cell {
 }
 
 class EnglishCell extends Cell {
-  state = {
-    lineClamped: true,
-  };
-
   render() {
     const classes = ["english"];
-    if (this.state.lineClamped) {
+    if (!this.props.isEnglishExpanded) {
       classes.push("line-clampable");
     }
     return (
@@ -129,11 +128,7 @@ class EnglishCell extends Cell {
   }
 
   componentDidMount() {
-    applyDoubleClick(
-      this.props.englishRef.current,
-      () => this.setState(previousState => {
-        return {lineClamped: !previousState.lineClamped};
-      }));
+    applyDoubleClick(this.props.englishRef.current, this.props.toggleEnglishExpanded);
   }
 }
 
@@ -149,7 +144,7 @@ class TableRow extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {hebrewLineCount: 1};
+    this.state = {hebrewLineCount: 1, isEnglishExpanded: false};
     this.englishRef = createRef();
   }
 
@@ -165,26 +160,32 @@ class TableRow extends Component {
           classes={this.cellClasses()}
           updateHebrewLineCount={newCount => this.setState({hebrewLineCount: newCount})}
           hebrewDoubleClickListener={hebrewDoubleClickListener}
+          isEnglishExpanded={this.state.isEnglishExpanded}
           englishRef={this.englishRef}
           />);
     }
     if (!isEmptyText(english)) {
+      const toggleEnglishExpanded = () => {
+        this.setState((previousState) => {
+          return {...previousState, isEnglishExpanded: !previousState.isEnglishExpanded};
+        });
+      };
       cells.push(
         <EnglishCell
           key="english"
           text={english}
           classes={this.cellClasses()}
           englishRef={this.englishRef}
+          toggleEnglishExpanded={toggleEnglishExpanded}
+          isEnglishExpanded={this.state.isEnglishExpanded}
           lineClampLines={this.state.hebrewLineCount}
           />);
     }
 
-    const optionalProps = {};
-    if (classes) optionalProps.className = classes.join(" ");
     return (
       <div
+        className={_concat(["table-row"], classes).join(" ")}
         sefaria-ref={this.props["sefaria-ref"]}
-        {...optionalProps} // eslint-disable-line react/jsx-props-no-spreading
         >
         {cells}
       </div>
