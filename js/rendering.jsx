@@ -9,6 +9,8 @@ import PropTypes from 'prop-types';
 
 // TODO(react): add keys wherever seems necesary
 
+const JSX_NOOP = null;
+
 jQuery.fn.extend({
   betterDoubleClick(fn) {
     if (!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)) {
@@ -275,7 +277,7 @@ class CommentarySection extends Component {
   render() {
     const {commentaries, getOrdering, toggleShowing, sectionLabel} = this.props;
     if (!commentaries || Object.keys(commentaries).length === 0) {
-      return undefined;
+      return JSX_NOOP;
     }
 
     const output = [];
@@ -361,7 +363,7 @@ class CommentarySection extends Component {
 
     if (localStorage.showTranslationButton !== "yes"
         && commentaryKind.className === "translation") {
-      return undefined;
+      return JSX_NOOP;
     }
 
     const onClick = () => {
