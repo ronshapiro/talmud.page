@@ -434,7 +434,7 @@ _ABBREVIATIONS = [
     },
     {
         "abbreviation": "Ḥull.",
-        "expanded": "CHullin",
+        "expanded": "Chullin",
     },
     {
         "abbreviation": "intens.",

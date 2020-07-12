@@ -108,7 +108,7 @@ MASECHTOT = [
     ),
     Masechet(
         canonical_name = "Eruvin",
-        aliases = ("עירובין"),
+        aliases = ("Eiruvin", "עירובין"),
         end = "105a",
     ),
     Masechet(
