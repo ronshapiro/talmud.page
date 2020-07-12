@@ -55,6 +55,21 @@ const stringOrListToString = (stringOrList) => {
     : stringOrList.join("<br>");
 };
 
+const brTagsCache = {};
+const brTags = (count) => {
+  if (count in brTagsCache) {
+    return brTagsCache[count];
+  }
+
+  const tags = [];
+  for (let i = 0; i < count; i++) {
+    tags.push("<br>");
+  }
+  const result = tags.join("");
+  brTagsCache[count] = result;
+  return result;
+};
+
 class Cell extends Component {
   static propTypes = {
     classes: PropTypes.arrayOf(PropTypes.string).isRequired,
@@ -81,7 +96,8 @@ class HebrewCell extends Cell {
   ref = createRef();
 
   render() {
-    const siblingExpandedClass = this.context.wrapTranslations && this.props.isEnglishExpanded
+    const {isEnglishExpanded, shouldWrap} = this.props;
+    const siblingExpandedClass = this.context.wrapTranslations && isEnglishExpanded && shouldWrap
           ? "siblingExpanded"
           : undefined;
     return (
@@ -118,9 +134,13 @@ class EnglishCell extends Cell {
   render() {
     const classes = ["english"];
 
-    if (!this.props.isEnglishExpanded) {
+    const {isEnglishExpanded, englishRef, lineClampLines, shouldWrap} = this.props;
+
+    if (this.context.isFake) {
+      classes.push("neverWrap");
+    } else if (!isEnglishExpanded) {
       classes.push("lineClamped");
-    } else if (this.context.wrapTranslations) {
+    } else if (this.context.wrapTranslations && shouldWrap) {
       // TODO: if the english cell expanded is only a little bit of extra text (1 line, or 2 short
       // ones, use the default layout and don't wrap.
       classes.push("translationWrapped");
@@ -132,8 +152,8 @@ class EnglishCell extends Cell {
       <div
         dir="ltr"
         className={this.classes(...classes)}
-        ref={this.props.englishRef}
-        style={{WebkitLineClamp: this.props.lineClampLines}}
+        ref={englishRef}
+        style={{WebkitLineClamp: lineClampLines}}
         {...this.childrenProp()} // eslint-disable-line react/jsx-props-no-spreading
         />
     );
@@ -152,16 +172,20 @@ class TableRow extends Component {
     hebrewDoubleClickListener: PropTypes.func,
     "sefaria-ref": PropTypes.string,
     overrideFullRow: PropTypes.bool,
+    isHiddenRow: PropTypes.bool,
   };
+
+  static contextType = ConfigurationContext;
 
   constructor(props) {
     super(props);
-    this.state = {hebrewLineCount: 1, isEnglishExpanded: false};
+    this.state = {hebrewLineCount: 1, isEnglishExpanded: this.props.isHiddenRow || false};
     this.englishRef = createRef();
   }
 
   render() {
     const {hebrew, english, classes, hebrewDoubleClickListener} = this.props;
+    const shouldWrap = this.shouldTranslationWrap();
 
     const cells = [];
     if (!isEmptyText(hebrew)) {
@@ -174,6 +198,7 @@ class TableRow extends Component {
           hebrewDoubleClickListener={hebrewDoubleClickListener}
           isEnglishExpanded={this.state.isEnglishExpanded}
           englishRef={this.englishRef}
+          shouldWrap={shouldWrap}
           />);
     }
     if (!isEmptyText(english)) {
@@ -191,6 +216,7 @@ class TableRow extends Component {
           toggleEnglishExpanded={toggleEnglishExpanded}
           isEnglishExpanded={this.state.isEnglishExpanded}
           lineClampLines={this.state.hebrewLineCount}
+          shouldWrap={shouldWrap}
           />);
     }
 
@@ -210,6 +236,43 @@ class TableRow extends Component {
       return ["fullRow"];
     }
     return [];
+  }
+
+  shouldTranslationWrap() {
+    if (this.context.isFake || !this.context.wrapTranslations || !this.state.isEnglishExpanded) {
+      return false;
+    }
+
+    const {hebrew, english} = this.props;
+    const hiddenHebrew = $(this.context.hiddenHost).find(".hebrew");
+    const hiddenEnglish = $(this.context.hiddenHost).find(".english");
+    this.applyHiddenNode(hebrew, hiddenHebrew);
+    this.applyHiddenNode(english, hiddenEnglish);
+    const totalEnglishLines = this.calculateLineCount(hiddenEnglish);
+    this.applyHiddenNode(brTags(totalEnglishLines - 3 /* heuristic */), hiddenEnglish);
+
+    return hiddenHebrew.height() < hiddenEnglish.height();
+  }
+
+  applyHiddenNode(contents, node) {
+    // estimating size is only doable with html as a string, as calling ReactDOM.render() within a
+    // component is unsupported due to its side effects.
+    if (typeof contents === "string") {
+      node.html(contents);
+    } else {
+      node.html("");
+    }
+  }
+
+  calculateLineCount(node) {
+    const height = node.height();
+    for (let i = 1; true; i++) { // eslint-disable-line no-constant-condition
+      node.html(brTags(i));
+      const currentHeight = node.height();
+      if (currentHeight >= height) {
+        return i;
+      }
+    }
   }
 }
 
@@ -238,7 +301,6 @@ class CommentRow extends Component {
         hebrew={hebrew}
         english={english}
         sefaria-ref={commentaryKind.englishName === "Personal Notes" ? "ignore" : comment.ref}
-        commentary-kind={commentaryKind.englishName}
         classes={["commentaryRow"]}
         />
     );
@@ -543,16 +605,18 @@ class Amud extends Component {
 
 class Amudim extends Component {
   static propTypes = {
-    allAmudim: PropTypes.func,
+    allAmudim: PropTypes.func.isRequired,
+    isFake: PropTypes.bool,
   };
 
   state = {}
 
   render() {
-    if (!this.state.isReady) {
+    const {isFake, allAmudim} = this.props;
+    if (!isFake && !this.state.isReady) {
       return [];
     }
-    return this.props.allAmudim().map(amud => <Amud key={amud.id + "-amud"} amudData={amud} />);
+    return allAmudim().map(amud => <Amud key={amud.id + "-amud"} amudData={amud} />);
   }
 
   componentDidMount() {
@@ -605,18 +669,47 @@ class Renderer {
   }
 
   register(divId) {
+    const host = document.getElementById(divId);
+    const hiddenHost = document.createElement("div");
+    hiddenHost.id = `${divId}-hidden`;
+    hiddenHost.className = "hidden-host";
+    host.parentNode.insertBefore(hiddenHost, host);
+
     const context = {
       translationOption: this._translationOption,
       commentaryTypes: this._commentaryTypes,
       commentaryTypesByClassName: indexCommentaryTypesByClassName(this._commentaryTypes),
       wrapTranslations: this.wrapTranslations,
+      hiddenHost,
     };
+
+    const hiddenData = [{
+      id: hiddenHost.id,
+      sections: [{
+        en: "H",
+        he: "H",
+        ref: "hidden",
+        commentary: {},
+      }],
+    }];
+
+    const hiddenContext = {
+      ...context,
+      translationOption: "english-side-by-side",
+      wrapTranslations: false,
+      isFake: true,
+    };
+    render(
+      <ConfigurationContext.Provider value={hiddenContext}>
+        <Amudim allAmudim={() => hiddenData} isFake />
+      </ConfigurationContext.Provider>,
+      hiddenHost);
 
     render(
       <ConfigurationContext.Provider value={context}>
         <Amudim ref={this.rootComponent} allAmudim={() => this.getAmudim()} />
       </ConfigurationContext.Provider>,
-      document.getElementById(divId));
+      host);
   }
 
   setAmud(amudData) {

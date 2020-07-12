@@ -286,3 +286,9 @@ h2 {
 .gemara-container.hadran {
     padding-bottom: 80px;
 }
+
+.hidden-host {
+    position: fixed;
+    bottom: -9999999em;
+    opacity: 0; /* probably not necessary, but let's do it anyway */
+}
