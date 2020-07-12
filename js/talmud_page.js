@@ -9,7 +9,9 @@ import {driveClient} from "./google_drive.js";
 
 // TODO: reactify?
 
-const renderer = new TalmudRenderer(localStorage.translationOption || "both");
+const renderer = new TalmudRenderer(
+  localStorage.translationOption || "both",
+  localStorage.wrapTranslations !== "false");
 renderer.driveClient = driveClient;
 
 const setHtmlTitle = () => {

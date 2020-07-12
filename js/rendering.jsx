@@ -76,12 +76,14 @@ class Cell extends Component {
 }
 
 class HebrewCell extends Cell {
+  static contextType = ConfigurationContext;
+
   ref = createRef();
 
   render() {
-    // TODO: if the english cell expanded is only a little bit of extra text (1 line, or 2 short
-    // ones, use the default layout and don't wrap.
-    const siblingExpandedClass = this.props.isEnglishExpanded ? "siblingExpanded" : undefined;
+    const siblingExpandedClass = this.context.wrapTranslations && this.props.isEnglishExpanded
+          ? "siblingExpanded"
+          : undefined;
     return (
       <div
         dir="rtl"
@@ -111,11 +113,21 @@ class HebrewCell extends Cell {
 }
 
 class EnglishCell extends Cell {
+  static contextType = ConfigurationContext;
+
   render() {
     const classes = ["english"];
+
     if (!this.props.isEnglishExpanded) {
-      classes.push("line-clampable");
+      classes.push("lineClamped");
+    } else if (this.context.wrapTranslations) {
+      // TODO: if the english cell expanded is only a little bit of extra text (1 line, or 2 short
+      // ones, use the default layout and don't wrap.
+      classes.push("translationWrapped");
+    } else {
+      classes.push("neverWrap");
     }
+
     return (
       <div
         dir="ltr"
@@ -566,9 +578,10 @@ const indexCommentaryTypesByClassName = (commentaryTypes) => {
 };
 
 class Renderer {
-  constructor(commentaryTypes, translationOption) {
+  constructor(commentaryTypes, translationOption, wrapTranslations) {
     this._commentaryTypes = commentaryTypes;
     this._translationOption = translationOption;
+    this.wrapTranslations = wrapTranslations;
     this.rootComponent = createRef();
     this.allAmudim = {};
   }
@@ -592,14 +605,15 @@ class Renderer {
   }
 
   register(divId) {
-    const actualContext = {
+    const context = {
       translationOption: this._translationOption,
       commentaryTypes: this._commentaryTypes,
       commentaryTypesByClassName: indexCommentaryTypesByClassName(this._commentaryTypes),
+      wrapTranslations: this.wrapTranslations,
     };
 
     render(
-      <ConfigurationContext.Provider value={actualContext}>
+      <ConfigurationContext.Provider value={context}>
         <Amudim ref={this.rootComponent} allAmudim={() => this.getAmudim()} />
       </ConfigurationContext.Provider>,
       document.getElementById(divId));
@@ -668,8 +682,8 @@ class Renderer {
 }
 
 class TalmudRenderer extends Renderer {
-  constructor(translationOption) {
-    super(TalmudRenderer._defaultCommentaryTypes(), translationOption);
+  constructor(translationOption, wrapTranslations) {
+    super(TalmudRenderer._defaultCommentaryTypes(), translationOption, wrapTranslations);
   }
 
   static _defaultCommentaryTypes() {

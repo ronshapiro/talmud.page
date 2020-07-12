@@ -77,7 +77,10 @@ const main = () => {
     $("#translation").append(`<div id="${divId}" class="amudContainer" />`);
 
     // Different renderers are used since they each have different rendering options
-    const renderer = new TalmudRenderer(option.value);
+    const renderer = new TalmudRenderer(
+      option.value,
+      // TODO: Update the sample views whenever a preference is changed
+      localStorage.wrapTranslations !== "false");
     renderer.register(divId);
     renderer.setAmud({
       sections: createTestData(),
@@ -86,6 +89,23 @@ const main = () => {
     });
     renderer.declareReady();
   });
+
+  radioSection(
+    "Wrap translations around the main text", "wrap-translations", [
+      {
+        value: "true",
+        displayText: "Yes",
+      },
+      {
+        value: "false",
+        displayText: "No",
+      },
+    ],
+    // TODO: accept the property name instead of defining functions that are always identical
+    () => localStorage.wrapTranslations,
+    newValue => {
+      localStorage.wrapTranslations = newValue;
+    });
 
   const showTranslationHeaderText = (
     "Show Translation Button <br><small>(translation is always available by double-clicking the "

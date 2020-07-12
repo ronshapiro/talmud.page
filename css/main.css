@@ -100,15 +100,15 @@ html, body {
     width: calc(100% - 2 * var(--table-cell-padding)) !important;
 }
 
-.line-clampable {
+.lineClamped {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-.english.line-clampable {
+.english.lineClamped, .english.neverWrap {
     width: calc(45% - 2 * var(--table-cell-padding));
 }
-.english:not(.line-clampable) {
+.english.translationWrapped {
     /* subtract for right padding */
     width: calc(100% - 2 * var(--table-cell-padding));
 
