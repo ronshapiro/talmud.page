@@ -7,8 +7,6 @@ import React, {
 import {render} from 'react-dom';
 import PropTypes from 'prop-types';
 
-// TODO(react): add keys wherever seems necesary
-
 const JSX_NOOP = null;
 
 jQuery.fn.extend({
@@ -30,10 +28,6 @@ jQuery.fn.extend({
     return this;
   },
 });
-const applyDoubleClick = (element, fn) => {
-  // TODO(react): remove jQuery
-  $(element).betterDoubleClick(fn);
-};
 
 const ConfigurationContext = createContext();
 
@@ -111,7 +105,7 @@ class HebrewCell extends Cell {
   }
 
   componentDidMount() {
-    applyDoubleClick(this.ref.current, this.props.hebrewDoubleClickListener);
+    $(this.ref.current).betterDoubleClick(this.props.hebrewDoubleClickListener);
     this.forceUpdate(); // to trigger componentDidUpdate();
   }
 
@@ -160,7 +154,7 @@ class EnglishCell extends Cell {
   }
 
   componentDidMount() {
-    applyDoubleClick(this.props.englishRef.current, this.props.toggleEnglishExpanded);
+    $(this.props.englishRef.current).betterDoubleClick(this.props.toggleEnglishExpanded);
   }
 }
 
