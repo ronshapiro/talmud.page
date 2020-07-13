@@ -106,11 +106,12 @@ const addPreviousAmud = () => {
 };
 
 const firstFullyOnScreenSection = () => {
+  // TODO: is this still necessary? Is React providing this?
   const sections = (
     _concat(
       $("#previous-amud-container"),
       $(".amudContainer"),
-      $(".gemara")));
+      $(".gemara-container")));
   for (const section of sections) {
     const viewTop = $(section).offset().top;
     const {pageTop, height: pageHeight} = window.visualViewport;

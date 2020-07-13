@@ -162,6 +162,7 @@ class TableRow extends Component {
   static propTypes = {
     hebrew: PropTypes.node,
     english: PropTypes.node,
+    id: PropTypes.string,
     classes: PropTypes.arrayOf(PropTypes.string),
     hebrewDoubleClickListener: PropTypes.func,
     "sefaria-ref": PropTypes.string,
@@ -178,7 +179,13 @@ class TableRow extends Component {
   }
 
   render() {
-    const {hebrew, english, classes, hebrewDoubleClickListener} = this.props;
+    const {
+      hebrew,
+      english,
+      classes,
+      hebrewDoubleClickListener,
+      id,
+    } = this.props;
     const shouldWrap = this.shouldTranslationWrap();
 
     const cells = [];
@@ -216,6 +223,7 @@ class TableRow extends Component {
 
     return (
       <div
+        id={id}
         className={_concat(["table-row"], classes).join(" ")}
         sefaria-ref={this.props["sefaria-ref"]}
         >
@@ -537,11 +545,10 @@ class Section extends Component {
     }
 
     sectionContents.push(
-      // TODO: can this id be removed with a `#${sectionLabel} .gemara` selector?
-      // TODO: jsx?
       <TableRow
         key="gemara"
-        hebrew={`<div class="gemara" id="${sectionLabel}-gemara">${section.he}</div>`}
+        id={`${sectionLabel}-gemara`}
+        hebrew={section.he}
         hebrewDoubleClickListener={hebrewDoubleClickListener}
         english={this.context.translationOption === "english-side-by-side" ? section.en : undefined}
         classes={gemaraContainerClasses} />);

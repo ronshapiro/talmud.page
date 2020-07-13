@@ -65,7 +65,7 @@ html, body {
     src:url(/font/FiraGO-Light.ttf)
 }
 
-.gemara, #snackbar .hebrew {
+.gemara-container .hebrew, #snackbar .hebrew {
     font-size: 1.5em;
     line-height: 1.5em;
 }
