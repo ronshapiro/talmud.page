@@ -288,7 +288,8 @@ h2 {
 }
 
 .hidden-host {
-    position: fixed;
-    bottom: -9999999em;
-    opacity: 0; /* probably not necessary, but let's do it anyway */
+    position: absolute;
+    opacity: 0;
+    max-width: var(--max-width);
+    width: 100%;
 }

@@ -3,6 +3,7 @@ import React, {
   Component,
   createRef,
   useContext,
+  useMemo,
   useState,
 } from "react";
 import PropTypes from 'prop-types';
@@ -67,29 +68,22 @@ class HebrewCell extends Cell {
 
   componentDidMount() {
     $(this.ref.current).betterDoubleClick(this.props.hebrewDoubleClickListener);
-    this.forceUpdate(); // to trigger componentDidUpdate();
-  }
-
-  componentDidUpdate() {
-    if (this.called) {
-      return;
-    }
-    this.called = true;
-    const maxLines = Math.floor(
-      $(this.ref.current).height() / $(this.props.englishRef.current).height());
-    if (maxLines > 1) { // Also checks that maxLines is not NaN
-      this.props.updateHebrewLineCount(maxLines.toString());
-    }
   }
 }
 
 class EnglishCell extends Cell {
   static contextType = ConfigurationContext;
 
+  ref = createRef();
+
   render() {
     const classes = ["english"];
 
-    const {isEnglishExpanded, englishRef, lineClampLines, shouldWrap} = this.props;
+    const {
+      isEnglishExpanded,
+      lineClampLines,
+      shouldWrap,
+    } = this.props;
 
     if (this.context.isFake) {
       classes.push("neverWrap");
@@ -107,7 +101,7 @@ class EnglishCell extends Cell {
       <div
         dir="ltr"
         className={this.classes(...classes)}
-        ref={englishRef}
+        ref={this.ref}
         style={{WebkitLineClamp: lineClampLines}}
         {...this.childrenProp()} // eslint-disable-line react/jsx-props-no-spreading
         />
@@ -115,7 +109,7 @@ class EnglishCell extends Cell {
   }
 
   componentDidMount() {
-    $(this.props.englishRef.current).betterDoubleClick(this.props.toggleEnglishExpanded);
+    $(this.ref.current).betterDoubleClick(this.props.toggleEnglishExpanded);
   }
 }
 
@@ -141,9 +135,7 @@ function TableRow(props) {
     isHiddenRow,
   } = props;
 
-  const [hebrewLineCount, setHebrewLineCount] = useState(1);
   const [isEnglishExpanded, setIsEnglishExpanded] = useState(isHiddenRow || false);
-  const englishRef = createRef();
   const context = useContext(ConfigurationContext);
 
   const applyHiddenNode = (contents, node) => {
@@ -157,7 +149,7 @@ function TableRow(props) {
   };
 
   const shouldTranslationWrap = () => {
-    if (context.isFake || !context.wrapTranslations || !isEnglishExpanded) {
+    if (context.isFake || !context.wrapTranslations) {
       return false;
     }
 
@@ -165,10 +157,16 @@ function TableRow(props) {
     const hiddenEnglish = $(context.hiddenHost).find(".english");
     applyHiddenNode(hebrew, hiddenHebrew);
     applyHiddenNode(english, hiddenEnglish);
+
     const totalEnglishLines = calculateLineCount(hiddenEnglish);
+    const heightRatio = hiddenHebrew.height() / hiddenEnglish.height();
+
     applyHiddenNode(brTags(totalEnglishLines - 3 /* heuristic */), hiddenEnglish);
 
-    return hiddenHebrew.height() < hiddenEnglish.height();
+    return {
+      shouldWrap: hiddenHebrew.height() < hiddenEnglish.height(),
+      englishLineClampLines: Math.floor(heightRatio * totalEnglishLines).toString(),
+    };
   };
 
   const cellClasses = () => {
@@ -178,8 +176,7 @@ function TableRow(props) {
     return [];
   };
 
-  // TODO: use this to calculate the line clamp lines. Also memoize!
-  const shouldWrap = shouldTranslationWrap();
+  const {shouldWrap, englishLineClampLines} = useMemo(() => shouldTranslationWrap(), []);
 
   const cells = [];
   if (!isEmptyText(hebrew)) {
@@ -188,10 +185,8 @@ function TableRow(props) {
         key="hebrew"
         text={hebrew}
         classes={cellClasses()}
-        updateHebrewLineCount={setHebrewLineCount}
         hebrewDoubleClickListener={hebrewDoubleClickListener}
         isEnglishExpanded={isEnglishExpanded}
-        englishRef={englishRef}
         shouldWrap={shouldWrap}
         />);
   }
@@ -202,10 +197,9 @@ function TableRow(props) {
         key="english"
         text={english}
         classes={cellClasses()}
-        englishRef={englishRef}
         toggleEnglishExpanded={toggleEnglishExpanded}
         isEnglishExpanded={isEnglishExpanded}
-        lineClampLines={hebrewLineCount}
+        lineClampLines={englishLineClampLines}
         shouldWrap={shouldWrap}
         />);
   }
