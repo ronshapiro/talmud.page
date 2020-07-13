@@ -1,7 +1,8 @@
 /* global $, gtag,  */
 
 import {snackbars} from "./snackbar.js";
-import {TalmudRenderer, _concat} from "./rendering.jsx";
+import {TalmudRenderer} from "./rendering.jsx";
+import _concat from "./concat.js";
 import {onceDocumentReady} from "./once_document_ready.js";
 import MASECHTOT from "./masechtot.js";
 import {amudMetadata, computePreviousAmud, computeNextAmud} from "./amud.js";

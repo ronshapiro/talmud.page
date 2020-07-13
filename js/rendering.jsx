@@ -1,15 +1,17 @@
-/* global jQuery, $, gtag, componentHandler */
+/* global $, gtag, componentHandler */
 import React, {
   Component,
-  createContext,
   createRef,
 } from "react";
 import {render} from 'react-dom';
 import PropTypes from 'prop-types';
+import isEmptyText from "./is_empty_text.js";
+import TableRow from "./TableRow.jsx";
+import {ConfigurationContext} from "./context.js";
 
 const JSX_NOOP = null;
 
-jQuery.fn.extend({
+$.fn.extend({
   betterDoubleClick(fn) {
     if (!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)) {
       let lastTime = 0;
@@ -29,254 +31,11 @@ jQuery.fn.extend({
   },
 });
 
-const ConfigurationContext = createContext();
-
-const _concat = (...args) => {
-  const result = [];
-  for (const arg of args) {
-    if (arg) result.push(...arg);
-  }
-  return result;
-};
-
-const isEmptyText = (stringOrList) => {
-  return !stringOrList || stringOrList === "" || stringOrList.length === 0;
-};
-
 const stringOrListToString = (stringOrList) => {
   return typeof stringOrList === "string"
     ? stringOrList
     : stringOrList.join("<br>");
 };
-
-const brTagsCache = {};
-const brTags = (count) => {
-  if (count in brTagsCache) {
-    return brTagsCache[count];
-  }
-
-  const tags = [];
-  for (let i = 0; i < count; i++) {
-    tags.push("<br>");
-  }
-  const result = tags.join("");
-  brTagsCache[count] = result;
-  return result;
-};
-
-class Cell extends Component {
-  static propTypes = {
-    classes: PropTypes.arrayOf(PropTypes.string).isRequired,
-    text: PropTypes.node.isRequired,
-  };
-
-  classes(...extraClasses) {
-    return _concat(this.props.classes, ["table-cell"], extraClasses).join(" ");
-  }
-
-  childrenProp() {
-    // TODO: props.text is an awkward name.
-    if (typeof this.props.text === "string") {
-      return {dangerouslySetInnerHTML: {__html: this.props.text}};
-    } else {
-      return {children: this.props.text};
-    }
-  }
-}
-
-class HebrewCell extends Cell {
-  static contextType = ConfigurationContext;
-
-  ref = createRef();
-
-  render() {
-    const {isEnglishExpanded, shouldWrap} = this.props;
-    const siblingExpandedClass = this.context.wrapTranslations && isEnglishExpanded && shouldWrap
-          ? "siblingExpanded"
-          : undefined;
-    return (
-      <div
-        dir="rtl"
-        className={this.classes("hebrew", siblingExpandedClass)}
-        ref={this.ref}
-        {...this.childrenProp()} // eslint-disable-line react/jsx-props-no-spreading
-        />
-    );
-  }
-
-  componentDidMount() {
-    $(this.ref.current).betterDoubleClick(this.props.hebrewDoubleClickListener);
-    this.forceUpdate(); // to trigger componentDidUpdate();
-  }
-
-  componentDidUpdate() {
-    if (this.called) {
-      return;
-    }
-    this.called = true;
-    const maxLines = Math.floor(
-      $(this.ref.current).height() / $(this.props.englishRef.current).height());
-    if (maxLines > 1) { // Also checks that maxLines is not NaN
-      this.props.updateHebrewLineCount(maxLines.toString());
-    }
-  }
-}
-
-class EnglishCell extends Cell {
-  static contextType = ConfigurationContext;
-
-  render() {
-    const classes = ["english"];
-
-    const {isEnglishExpanded, englishRef, lineClampLines, shouldWrap} = this.props;
-
-    if (this.context.isFake) {
-      classes.push("neverWrap");
-    } else if (!isEnglishExpanded) {
-      classes.push("lineClamped");
-    } else if (this.context.wrapTranslations && shouldWrap) {
-      // TODO: if the english cell expanded is only a little bit of extra text (1 line, or 2 short
-      // ones, use the default layout and don't wrap.
-      classes.push("translationWrapped");
-    } else {
-      classes.push("neverWrap");
-    }
-
-    return (
-      <div
-        dir="ltr"
-        className={this.classes(...classes)}
-        ref={englishRef}
-        style={{WebkitLineClamp: lineClampLines}}
-        {...this.childrenProp()} // eslint-disable-line react/jsx-props-no-spreading
-        />
-    );
-  }
-
-  componentDidMount() {
-    $(this.props.englishRef.current).betterDoubleClick(this.props.toggleEnglishExpanded);
-  }
-}
-
-class TableRow extends Component {
-  static propTypes = {
-    hebrew: PropTypes.node,
-    english: PropTypes.node,
-    id: PropTypes.string,
-    classes: PropTypes.arrayOf(PropTypes.string),
-    hebrewDoubleClickListener: PropTypes.func,
-    "sefaria-ref": PropTypes.string,
-    overrideFullRow: PropTypes.bool,
-    isHiddenRow: PropTypes.bool,
-  };
-
-  static contextType = ConfigurationContext;
-
-  constructor(props) {
-    super(props);
-    this.state = {hebrewLineCount: 1, isEnglishExpanded: this.props.isHiddenRow || false};
-    this.englishRef = createRef();
-  }
-
-  render() {
-    const {
-      hebrew,
-      english,
-      classes,
-      hebrewDoubleClickListener,
-      id,
-    } = this.props;
-    const shouldWrap = this.shouldTranslationWrap();
-
-    const cells = [];
-    if (!isEmptyText(hebrew)) {
-      cells.push(
-        <HebrewCell
-          key="hebrew"
-          text={hebrew}
-          classes={this.cellClasses()}
-          updateHebrewLineCount={newCount => this.setState({hebrewLineCount: newCount})}
-          hebrewDoubleClickListener={hebrewDoubleClickListener}
-          isEnglishExpanded={this.state.isEnglishExpanded}
-          englishRef={this.englishRef}
-          shouldWrap={shouldWrap}
-          />);
-    }
-    if (!isEmptyText(english)) {
-      const toggleEnglishExpanded = () => {
-        this.setState((previousState) => {
-          return {...previousState, isEnglishExpanded: !previousState.isEnglishExpanded};
-        });
-      };
-      cells.push(
-        <EnglishCell
-          key="english"
-          text={english}
-          classes={this.cellClasses()}
-          englishRef={this.englishRef}
-          toggleEnglishExpanded={toggleEnglishExpanded}
-          isEnglishExpanded={this.state.isEnglishExpanded}
-          lineClampLines={this.state.hebrewLineCount}
-          shouldWrap={shouldWrap}
-          />);
-    }
-
-    return (
-      <div
-        id={id}
-        className={_concat(["table-row"], classes).join(" ")}
-        sefaria-ref={this.props["sefaria-ref"]}
-        >
-        {cells}
-      </div>
-    );
-  }
-
-  cellClasses() {
-    const {hebrew, english, overrideFullRow} = this.props;
-    if ((isEmptyText(hebrew) || isEmptyText(english)) && !overrideFullRow) {
-      return ["fullRow"];
-    }
-    return [];
-  }
-
-  shouldTranslationWrap() {
-    if (this.context.isFake || !this.context.wrapTranslations || !this.state.isEnglishExpanded) {
-      return false;
-    }
-
-    const {hebrew, english} = this.props;
-    const hiddenHebrew = $(this.context.hiddenHost).find(".hebrew");
-    const hiddenEnglish = $(this.context.hiddenHost).find(".english");
-    this.applyHiddenNode(hebrew, hiddenHebrew);
-    this.applyHiddenNode(english, hiddenEnglish);
-    const totalEnglishLines = this.calculateLineCount(hiddenEnglish);
-    this.applyHiddenNode(brTags(totalEnglishLines - 3 /* heuristic */), hiddenEnglish);
-
-    return hiddenHebrew.height() < hiddenEnglish.height();
-  }
-
-  applyHiddenNode(contents, node) {
-    // estimating size is only doable with html as a string, as calling ReactDOM.render() within a
-    // component is unsupported due to its side effects.
-    if (typeof contents === "string") {
-      node.html(contents);
-    } else {
-      node.html("");
-    }
-  }
-
-  calculateLineCount(node) {
-    const height = node.height();
-    for (let i = 1; true; i++) { // eslint-disable-line no-constant-condition
-      node.html(brTags(i));
-      const currentHeight = node.height();
-      if (currentHeight >= height) {
-        return i;
-      }
-    }
-  }
-}
 
 // https://github.com/Sefaria/Sefaria-Project/issues/541
 const isSefariaReturningLongListsOfSingleCharacters = (comment) => {
@@ -924,7 +683,6 @@ class TalmudRenderer extends Renderer {
 }
 
 module.exports = {
-  _concat,
   Renderer,
   TalmudRenderer,
 };
