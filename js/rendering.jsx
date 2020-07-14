@@ -5,6 +5,7 @@ import React, {
 } from "react";
 import {render} from 'react-dom';
 import PropTypes from 'prop-types';
+import _ from "underscore";
 import isEmptyText from "./is_empty_text.js";
 import TableRow from "./TableRow.jsx";
 import {ConfigurationContext} from "./context.js";
@@ -470,6 +471,8 @@ class Renderer {
         <Amudim ref={this.rootComponent} allAmudim={() => this.getAmudim()} />
       </ConfigurationContext.Provider>,
       host);
+
+    $(window).resize(_.throttle(() => this.forceUpdate(), 500));
   }
 
   setAmud(amudData) {

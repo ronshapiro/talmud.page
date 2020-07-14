@@ -113,11 +113,24 @@ class EnglishCell extends Cell {
   }
 }
 
+// TODO: the cache would need to be flushed when text size/resolution changes
+const calculateLineCountCache = {};
 const calculateLineCount = (node) => {
+  let nestedCache = calculateLineCountCache[node];
+  if (!nestedCache) {
+    nestedCache = [0];
+    calculateLineCountCache[node] = nestedCache;
+  }
+
+  // TODO: optimize by using a binary search to see if the value is already within nestedCache
   const height = node.height();
   for (let i = 1; true; i++) { // eslint-disable-line no-constant-condition
-    node.html(brTags(i));
-    const currentHeight = node.height();
+    if (i === nestedCache.length) {
+      node.html(brTags(i));
+      nestedCache.push(node.height());
+    }
+
+    const currentHeight = nestedCache[i];
     if (currentHeight >= height) {
       return i;
     }
@@ -163,11 +176,21 @@ function TableRow(props) {
 
     applyHiddenNode(brTags(totalEnglishLines - 3 /* heuristic */), hiddenEnglish);
 
-    return {
+    const result = {
       shouldWrap: hiddenHebrew.height() < hiddenEnglish.height(),
       englishLineClampLines: Math.floor(heightRatio * totalEnglishLines).toString(),
     };
+
+    // TODO: optimize by applying this in an effect
+    applyHiddenNode("", hiddenHebrew);
+    applyHiddenNode("", hiddenEnglish);
+
+    return result;
   };
+
+  const {shouldWrap, englishLineClampLines} = useMemo(shouldTranslationWrap, [
+    $(context.hiddenHost).width(), // recalculate only when there are changes in width
+  ]);
 
   const cellClasses = () => {
     if ((isEmptyText(hebrew) || isEmptyText(english)) && !overrideFullRow) {
@@ -175,8 +198,6 @@ function TableRow(props) {
     }
     return [];
   };
-
-  const {shouldWrap, englishLineClampLines} = useMemo(() => shouldTranslationWrap(), []);
 
   const cells = [];
   if (!isEmptyText(hebrew)) {
