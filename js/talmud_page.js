@@ -50,7 +50,6 @@ const refreshPageState = () => {
 const requestAmud = (amud, options) => {
   options = options || {};
   const metadata = amudMetadata();
-  renderer.register("results");
   renderer.setAmud({
     id: amud,
     title: `${metadata.masechet} ${amud}`,
@@ -128,6 +127,8 @@ const main = () => {
   gtag("set", {masechet: metadata.masechet});
 
   const amudRange = metadata.range();
+
+  renderer.register("results");
 
   const requestOptions = {
     counter: 0,
