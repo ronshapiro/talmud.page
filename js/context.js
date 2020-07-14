@@ -1,5 +1,16 @@
-import {createContext} from "react";
+import {createContext, useContext} from "react";
 
-module.exports = {
-  ConfigurationContext: createContext(),
+const contexts = {};
+
+const declareContext = name => {
+  const context = createContext();
+  contexts[`${name}Context`] = context;
+  contexts[`use${name}`] = function useDeclaredContext() {
+    return useContext(context);
+  };
 };
+
+declareContext("Configuration");
+declareContext("HiddenHost");
+
+module.exports = contexts;

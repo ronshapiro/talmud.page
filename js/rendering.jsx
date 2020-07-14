@@ -2,13 +2,19 @@
 import React, {
   Component,
   createRef,
+  useState,
 } from "react";
 import {render} from 'react-dom';
 import PropTypes from 'prop-types';
 import _ from "underscore";
 import isEmptyText from "./is_empty_text.js";
 import TableRow from "./TableRow.jsx";
-import {ConfigurationContext} from "./context.js";
+import {
+  ConfigurationContext,
+  useConfiguration,
+  HiddenHostContext,
+  useHiddenHost,
+} from "./context.js";
 
 const JSX_NOOP = null;
 
@@ -257,79 +263,97 @@ class CommentarySection extends Component {
   }
 }
 
+function Section(props) {
+  const {section, sectionLabel} = props;
+  const context = useConfiguration();
+  const hiddenHost = useHiddenHost();
+  // if this is the hidden host, populate the comments as open always
+  const [showingState, setShowingState] = useState(() => {
+    if (hiddenHost) {
+      return {};
+    }
+    const fakeState = {};
+    fakeState[sectionLabel] = ["rashi"];
+    return fakeState;
+  });
+  const toggleShowing = (prependNew, toggledSectionLabel, commentaryName) => {
+    // TODO: reducer?
+    let alreadyIncludes;
+    setShowingState(previousState => {
+      const newState = {...previousState};
 
-class Section extends Component {
-  static propTypes = {
-    section: PropTypes.object,
-    sectionLabel: PropTypes.string,
+      if (!(toggledSectionLabel in newState)) {
+        newState[toggledSectionLabel] = [];
+      }
+      const sectionOrdering = newState[toggledSectionLabel];
+      alreadyIncludes = sectionOrdering.includes(commentaryName);
+      if (alreadyIncludes) {
+        newState[toggledSectionLabel] = sectionOrdering.filter(x => x !== commentaryName);
+      } else if (prependNew) {
+        sectionOrdering.unshift(commentaryName);
+      } else {
+        sectionOrdering.push(commentaryName);
+      }
+      return newState;
+    });
+
+    return !alreadyIncludes;
   };
 
-  static contextType = ConfigurationContext;
+  const sectionContents = [];
+  const hebrewDoubleClickListener = () => {
+    if (section.commentary.Translation || section.commentary.Steinsaltz) {
+      toggleShowing(true, sectionLabel, "translation");
+    }
+  };
 
-  constructor(props) {
-    super(props);
-    this.state = {};
+  const gemaraContainerClasses = ["gemara-container"];
+  if (section.hadran) {
+    gemaraContainerClasses.push("hadran");
   }
 
-  toggleShowing(prependNew, sectionLabel, commentaryName) {
-    // TODO: reducer?
-    const newState = {...this.state};
-    if (!(sectionLabel in newState)) {
-      newState[sectionLabel] = [];
-    }
-    const sectionOrdering = newState[sectionLabel];
-    const alreadyIncludes = sectionOrdering.includes(commentaryName);
-    if (alreadyIncludes) {
-      newState[sectionLabel] = sectionOrdering.filter(x => x !== commentaryName);
-    } else if (prependNew) {
-      sectionOrdering.unshift(commentaryName);
-    } else {
-      sectionOrdering.push(commentaryName);
-    }
-    this.setState(newState);
-    return !alreadyIncludes;
-  }
+  sectionContents.push(
+    <TableRow
+      key="gemara"
+      id={`${sectionLabel}-gemara`}
+      hebrew={section.he}
+      hebrewDoubleClickListener={hebrewDoubleClickListener}
+      english={context.translationOption === "english-side-by-side" ? section.en : undefined}
+      classes={gemaraContainerClasses} />);
 
-  render() {
-    const {section, sectionLabel} = this.props;
-    const sectionContents = [];
-    const hebrewDoubleClickListener = () => {
-      if (section.commentary.Translation || section.commentary.Steinsaltz) {
-        this.toggleShowing(true, sectionLabel, "translation");
-      }
-    };
-
-    const gemaraContainerClasses = ["gemara-container"];
-    if (section.hadran) {
-      gemaraContainerClasses.push("hadran");
-    }
-
-    sectionContents.push(
-      <TableRow
-        key="gemara"
-        id={`${sectionLabel}-gemara`}
-        hebrew={section.he}
-        hebrewDoubleClickListener={hebrewDoubleClickListener}
-        english={this.context.translationOption === "english-side-by-side" ? section.en : undefined}
-        classes={gemaraContainerClasses} />);
-
-    if (section.commentary) {
-      sectionContents.push(
-        <CommentarySection
-          key="commentarySection"
-          commentaries={section.commentary}
-          getOrdering={commentSectionLabel => this.state[commentSectionLabel] || []}
-          toggleShowing={(...args) => this.toggleShowing(false, ...args)}
-          sectionLabel={sectionLabel} />);
-    }
-
-    return (
-      <div id={sectionLabel} className="section-container" sefaria-ref={section.ref}>
-        {sectionContents}
-      </div>
+  if (section.commentary) {
+    const commentarySection = (
+      <CommentarySection
+        key="commentarySection"
+        commentaries={section.commentary}
+        getOrdering={commentSectionLabel => showingState[commentSectionLabel] || []}
+        toggleShowing={(...args) => toggleShowing(false, ...args)}
+        sectionLabel={sectionLabel} />
     );
+
+
+    if (hiddenHost) {
+      // hiddenHost will be undefined for the section inside the actual hidden host
+      sectionContents.push(
+        <HiddenHostContext.Provider value={hiddenHost.forComments} key="commentarySection">
+          {[commentarySection]}
+        </HiddenHostContext.Provider>);
+    } else {
+      sectionContents.push(commentarySection);
+    }
   }
+
+  return (
+    <div id={sectionLabel} className="section-container" sefaria-ref={section.ref}>
+      {sectionContents}
+    </div>
+  );
 }
+
+Section.propTypes = {
+  section: PropTypes.object,
+  sectionLabel: PropTypes.string,
+};
 
 class Amud extends Component {
   static propTypes = {
@@ -450,25 +474,48 @@ class Renderer {
         en: "H",
         he: "H",
         ref: "hidden",
-        commentary: {},
+        commentary: {
+          Rashi: {
+            comments: [{
+              en: "R",
+              he: "ר",
+              ref: "rashi-hidden",
+              sourceRef: "rashi-ref",
+              sourceHeRef: "rashi-ref",
+            }],
+          },
+        },
       }],
     }];
 
-    const hiddenContext = {
+    const contextForHiddenHostRendering = {
       ...context,
       translationOption: "english-side-by-side",
       wrapTranslations: false,
       isFake: true,
     };
     render(
-      <ConfigurationContext.Provider value={hiddenContext}>
+      <ConfigurationContext.Provider value={contextForHiddenHostRendering}>
         <Amudim allAmudim={() => hiddenData} isFake />
       </ConfigurationContext.Provider>,
       hiddenHost);
 
+    const $hiddenHost = $(hiddenHost);
+    window.$hiddenHost = $hiddenHost;
+    const hiddenHostContext = {
+      hebrew: $hiddenHost.find(".gemara-container .hebrew"),
+      english: $hiddenHost.find(".gemara-container .english"),
+      forComments: {
+        hebrew: $hiddenHost.find(".commentaryRow[sefaria-ref] .hebrew"),
+        english: $hiddenHost.find(".commentaryRow[sefaria-ref] .english"),
+      },
+    };
+
     render(
       <ConfigurationContext.Provider value={context}>
-        <Amudim ref={this.rootComponent} allAmudim={() => this.getAmudim()} />
+        <HiddenHostContext.Provider value={hiddenHostContext}>
+          <Amudim ref={this.rootComponent} allAmudim={() => this.getAmudim()} />
+        </HiddenHostContext.Provider>
       </ConfigurationContext.Provider>,
       host);
 

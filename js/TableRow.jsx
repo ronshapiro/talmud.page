@@ -2,14 +2,13 @@
 import React, {
   Component,
   createRef,
-  useContext,
   useMemo,
   useState,
 } from "react";
 import PropTypes from 'prop-types';
 import _concat from "./concat.js";
 import isEmptyText from "./is_empty_text.js";
-import {ConfigurationContext} from "./context.js";
+import {ConfigurationContext, useConfiguration, useHiddenHost} from "./context.js";
 
 const brTagsCache = {};
 const brTags = (count) => {
@@ -149,7 +148,8 @@ function TableRow(props) {
   } = props;
 
   const [isEnglishExpanded, setIsEnglishExpanded] = useState(isHiddenRow || false);
-  const context = useContext(ConfigurationContext);
+  const context = useConfiguration();
+  const hiddenHost = useHiddenHost();
 
   const applyHiddenNode = (contents, node) => {
     // estimating size is only doable with html as a string, as calling ReactDOM.render() within a
@@ -162,28 +162,26 @@ function TableRow(props) {
   };
 
   const shouldTranslationWrap = () => {
-    if (context.isFake) {
+    if (!hiddenHost) {
       return false;
     }
 
-    const hiddenHebrew = $(context.hiddenHost).find(".hebrew");
-    const hiddenEnglish = $(context.hiddenHost).find(".english");
-    applyHiddenNode(hebrew, hiddenHebrew);
-    applyHiddenNode(english, hiddenEnglish);
+    applyHiddenNode(hebrew, hiddenHost.hebrew);
+    applyHiddenNode(english, hiddenHost.english);
 
-    const totalEnglishLines = calculateLineCount(hiddenEnglish);
-    const heightRatio = hiddenHebrew.height() / hiddenEnglish.height();
+    const totalEnglishLines = calculateLineCount(hiddenHost.english);
+    const heightRatio = hiddenHost.hebrew.height() / hiddenHost.english.height();
 
-    applyHiddenNode(brTags(totalEnglishLines - 3 /* heuristic */), hiddenEnglish);
+    applyHiddenNode(brTags(totalEnglishLines - 3 /* heuristic */), hiddenHost.english);
 
     const result = {
-      shouldWrap: hiddenHebrew.height() < hiddenEnglish.height(),
+      shouldWrap: hiddenHost.hebrew.height() < hiddenHost.english.height(),
       englishLineClampLines: Math.floor(heightRatio * totalEnglishLines).toString(),
     };
 
     // TODO: optimize by applying this in an effect
-    applyHiddenNode("", hiddenHebrew);
-    applyHiddenNode("", hiddenEnglish);
+    applyHiddenNode("", hiddenHost.hebrew);
+    applyHiddenNode("", hiddenHost.english);
 
     return result;
   };
