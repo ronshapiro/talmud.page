@@ -162,7 +162,7 @@ function TableRow(props) {
   };
 
   const shouldTranslationWrap = () => {
-    if (context.isFake || !context.wrapTranslations) {
+    if (context.isFake) {
       return false;
     }
 
