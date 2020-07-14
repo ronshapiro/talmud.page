@@ -363,7 +363,10 @@ class Amud extends Component {
 
   render() {
     const {amudData} = this.props;
-    const output = [<h2 key="title">{amudData.title}</h2>];
+    const output = [];
+    if (amudData.title) { // only in the case of the hidden host
+      output.push(<h2 key="title">{amudData.title}</h2>);
+    }
     if (amudData.loading) {
       output.push(
         <div
