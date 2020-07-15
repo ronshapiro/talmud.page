@@ -114,7 +114,7 @@ html, body {
 
     float: none;
 }
-.jastrow .english {
+.jastrow .english { /* commentaryKind.className */
     -webkit-line-clamp: 3 !important;
 }
 .commentary_header {
