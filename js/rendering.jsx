@@ -360,12 +360,17 @@ class Amud extends Component {
     amudData: PropTypes.object,
   };
 
+  headerRef = createRef();
+
+  state = {
+    showing: true,
+  };
 
   render() {
     const {amudData} = this.props;
     const output = [];
     if (amudData.title) { // only in the case of the hidden host
-      output.push(<h2 key="title">{amudData.title}</h2>);
+      output.push(<h2 key="title" ref={this.headerRef}>{amudData.title}</h2>);
     }
     if (amudData.loading) {
       output.push(
@@ -374,20 +379,31 @@ class Amud extends Component {
           className="text-loading-spinner mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active" />);
     }
 
-    for (let i = 0; i < amudData.sections.length; i++) {
-      const section = amudData.sections[i];
-      if (i !== 0 && section.steinsaltz_start_of_sugya) {
-        output.push(<br key={`sugya-separator-${i}`} className="sugya-separator" />);
-      }
+    // TODO: if not showing, update the UI so it's clear that it's collapsed
+    if (this.state.showing) {
+      for (let i = 0; i < amudData.sections.length; i++) {
+        const section = amudData.sections[i];
+        if (i !== 0 && section.steinsaltz_start_of_sugya) {
+          output.push(<br key={`sugya-separator-${i}`} className="sugya-separator" />);
+        }
 
-      const sectionLabel = `${amudData.id}_section_${i + 1}`;
-      output.push(<Section key={i} section={section} sectionLabel={sectionLabel} />);
+        const sectionLabel = `${amudData.id}_section_${i + 1}`;
+        output.push(<Section key={i} section={section} sectionLabel={sectionLabel} />);
+      }
     }
     return (
       <div id={`amud-${amudData.id}`} className="amudContainer" amud={amudData.id}>
         {output}
       </div>
     );
+  }
+
+  componentDidMount() {
+    $(this.headerRef.current).betterDoubleClick(() => {
+      this.setState(previousState => {
+        return {...previousState, showing: !previousState.showing};
+      });
+    });
   }
 }
 
