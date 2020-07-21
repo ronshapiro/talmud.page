@@ -41,20 +41,31 @@ class RealRequestMaker(object):
 def standard_english_transformations(english):
     return SectionSymbolRemover.process(SefariaLinkSanitizer.process(english))
 
-class ApiRequestHandler(object):
+class AbstractApiRequestHandler(object):
     def __init__(self, request_maker, print_function=print):
         self._request_maker = request_maker
         self._print = print_function
 
-    async def _make_requests(self, masechet, amud):
-        return await asyncio.gather(
-            self._request_maker.request_amud(f"{masechet}.{amud}"),
-            self._request_maker.request_amud(f"Rashi_on_{masechet}.{amud}"),
-            self._request_maker.request_amud(f"Tosafot_on_{masechet}.{amud}"),
-        )
+    def _make_requests(self, *args):
+        raise NotImplementedError()
 
-    def amud_api_request(self, masechet, amud):
-        sefaria_results = asyncio.run(self._make_requests(masechet, amud))
+    def _make_id(self, *args):
+        raise NotImplementedError()
+
+    def _translate_hebrew_text(self, text):
+        return text
+
+    def _translate_english_text(self, text):
+        return standard_english_transformations(text)
+
+    def _post_process_section(self, section):
+        return section
+
+    def _post_process_all_sections(self, sections, *args):
+        return sections
+
+    def handle_request(self, *args):
+        sefaria_results = asyncio.run(self._make_requests(*args))
 
         bad_results = list(filter(lambda x: x.status_code != 200, sefaria_results))
         def _raise_bad_results_exception():
@@ -70,14 +81,16 @@ class ApiRequestHandler(object):
         except Exception:
             _raise_bad_results_exception()
 
-        result = {"id": amud}
+        result = {"id": self._make_id(*args)}
 
-        gemara_json, rashi_json, tosafot_json = results_as_json
+        main_json = results_as_json[0]
         for i in ["title"]:
-            result[i] = gemara_json[i]
+            result[i] = main_json[i]
 
-        hebrew = gemara_json["he"]
-        english = gemara_json["text"]
+        main_ref = main_json["ref"]
+
+        hebrew = main_json["he"]
+        english = main_json["text"]
 
         # https://github.com/Sefaria/Sefaria-Project/issues/543
         if len(hebrew) - 1 == len(english) and "הדרן עלך" in hebrew[-1]:
@@ -92,43 +105,25 @@ class ApiRequestHandler(object):
         sections = []
         for i in range(len(hebrew)):
             sections.append({
-                "he": hebrew[i],
-                "en": standard_english_transformations(english[i]),
-                "ref": "%s.%s" % (gemara_json["ref"], i + 1),
+                "he": self._translate_hebrew_text(hebrew[i]),
+                "en": self._translate_english_text(english[i]),
+                "ref": f"{main_ref}.{i + 1}",
                 "commentary": Commentary.create(),
             })
 
-        section_prefix = "%s %s:" % (gemara_json["book"], amud)
-        for comment in gemara_json["commentary"]:
+        section_prefix = f"{main_ref}:"
+        for comment in main_json["commentary"]:
             self._add_comment_to_result(comment, sections, section_prefix)
-        self._add_second_level_comments_to_result(
-            rashi_json, sections, f"Rashi on {section_prefix}", "Rashi")
-        self._add_second_level_comments_to_result(
-            tosafot_json, sections, f"Tosafot on {section_prefix}", "Tosafot")
+
+        for secondary_json in results_as_json[1:]:
+            self._add_second_level_comments_to_result(secondary_json, sections)
 
         for section in sections:
-            self._resolve_duplicated_out_and_nested_comments(section)
+            self._post_process_section(section)
 
-            for comment in section["commentary"].comments:
-                if comment.english_name == "Steinsaltz" and \
-                   _STEINSALTZ_SUGYA_START.findall(comment.hebrew):
-                    section["steinsaltz_start_of_sugya"] = True
-
-            if _HADRAN_PATTERN.findall(section["he"]):
-                section["he"] = section["he"].replace("<br>", "")
-                section["en"] = ""
-                section["commentary"] = Commentary.create()
-                section["hadran"] = True
-
-        if masechet == "Nazir" and amud == "33b":
-            sections = [{
-                "he": "אין גמרא לנזיר ל״ג ע״א, רק תוספות (שהם קשורים לדפים אחרים)",
-                "en": "Nazir 33b has no Gemara, just Tosafot (which are linked to other pages).",
-                "commentary": Commentary.create(),
-                "ref": "synthetic",
-            }]
-        elif len(sections) == 0:
-            self._print(f"No sections for {masechet} {amud}")
+        sections = self._post_process_all_sections(sections, *args)
+        if len(sections) == 0:
+            self._print(f"No sections for {', '.join(args)}")
 
         for section in sections:
             if "commentary" in section:
@@ -166,8 +161,12 @@ class ApiRequestHandler(object):
             if anchor.startswith(section_prefix):
                 return int(anchor.split(":")[1]) - 1
 
-    def _add_second_level_comments_to_result(
-            self, secondary_api_response, sections, section_prefix, first_level_commentary_name):
+    def _add_second_level_comments_to_result(self, secondary_api_response, sections):
+        if "commentary" not in secondary_api_response:
+            return
+
+        section_prefix = f"{secondary_api_response['ref']}:",
+        first_level_commentary_name = f"{secondary_api_response['commentator']}"
         for comment in secondary_api_response.get("commentary", []):
             self._add_second_level_comment_to_result(
                 comment, sections, section_prefix, first_level_commentary_name)
@@ -197,6 +196,47 @@ class ApiRequestHandler(object):
                         comment["anchorRefExpanded"],
                         comment["type"],
                         comment["category"])
+
+
+# TODO: rename this to be Gemara related
+class ApiRequestHandler(AbstractApiRequestHandler):
+    async def _make_requests(self, masechet, amud):
+        return await asyncio.gather(
+            self._request_maker.request_amud(f"{masechet}.{amud}"),
+            self._request_maker.request_amud(f"Rashi_on_{masechet}.{amud}"),
+            self._request_maker.request_amud(f"Tosafot_on_{masechet}.{amud}"),
+        )
+
+    # TODO: remove name alias
+    def amud_api_request(self, masechet, amud):
+        return self.handle_request(masechet, amud)
+
+    def _make_id(self, masechet, amud):
+        return amud
+
+    def _post_process_section(self, section):
+        self._resolve_duplicated_out_and_nested_comments(section)
+
+        for comment in section["commentary"].comments:
+            if comment.english_name == "Steinsaltz" and \
+               _STEINSALTZ_SUGYA_START.findall(comment.hebrew):
+                section["steinsaltz_start_of_sugya"] = True
+
+        if _HADRAN_PATTERN.findall(section["he"]):
+            section["he"] = section["he"].replace("<br>", "")
+            section["en"] = ""
+            section["commentary"] = Commentary.create()
+            section["hadran"] = True
+
+    def _post_process_all_sections(self, sections, masechet, amud):
+        if masechet == "Nazir" and amud == "33b":
+            return [{
+                "he": "אין גמרא לנזיר ל״ג ע״א, רק תוספות (שהם קשורים לדפים אחרים)",
+                "en": "Nazir 33b has no Gemara, just Tosafot (which are linked to other pages).",
+                "commentary": Commentary.create(),
+                "ref": "synthetic",
+            }]
+        return sections
 
     def _resolve_duplicated_out_and_nested_comments(self, section):
         commentary = section["commentary"]
