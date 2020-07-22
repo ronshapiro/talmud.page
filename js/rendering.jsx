@@ -250,8 +250,6 @@ class CommentarySection extends Component {
     ].filter(x => x).join(" ");
   }
 
-  applyButtonToFocusRef
-
   componentDidUpdate() {
     if (this.state.buttonToFocus) {
       this.buttonToFocusAfterEnter.current.focus();
