@@ -289,6 +289,12 @@ h2 {
 
 .hidden-host {
     position: absolute;
+    /* Setting left to 0 makes sure that the hidden host doesn't take the margin/padding of its
+    parents and therefore push the width of the body beyond 100%. For consistency & clarify, top is
+    also set though it doesn't have a practical effect. */
+    top: 0;
+    left: 0;
+
     opacity: 0;
     max-width: var(--max-width);
     width: 100%;
