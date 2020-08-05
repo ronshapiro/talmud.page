@@ -11,6 +11,7 @@ from source_formatting.sefaria_link_sanitizer import SefariaLinkSanitizer
 import asyncio
 import httpx
 import re
+import masechtot
 
 _HADRAN_PATTERN = re.compile("^(<br>)+<big><strong>הדרן עלך .*")
 
@@ -270,6 +271,18 @@ class RemovalStrategy(Enum):
     REMOVE_TOP_LEVEL = 1
     REMOVE_NESTED = 2
 
+def is_masechet_ref(ref):
+    for masechet in masechtot.MASECHTOT_BY_CANONICAL_NAME.keys():
+        if ref.startswith(masechet):
+            return True
+    return False
+
+def strip_ref_segment_number(ref):
+    if ":" not in ref:
+        return ref
+
+    return ref[0:ref.index(":")]
+
 
 class Comment(object):
     """Represents a single comment on a text.
@@ -300,6 +313,9 @@ class Comment(object):
         comment.ref = sefaria_comment["ref"]
         comment.source_ref = sefaria_comment["sourceRef"]
         comment.source_he_ref = sefaria_comment["sourceHeRef"]
+        if english_name == "Mesorat Hashas" and is_masechet_ref(comment.source_ref):
+            comment.source_ref = strip_ref_segment_number(comment.source_ref)
+            comment.source_he_ref = strip_ref_segment_number(comment.source_he_ref)
         comment.english_name = english_name
 
         return comment
