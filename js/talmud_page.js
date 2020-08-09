@@ -12,7 +12,7 @@ import {registerRefSelectionSnackbarListener} from "./ref_selection_snackbar.js"
 // TODO: reactify?
 
 const renderer = new TalmudRenderer(
-  localStorage.translationOption || "both",
+  localStorage.translationOption || "english-side-by-side",
   localStorage.wrapTranslations !== "false");
 renderer.driveClient = driveClient;
 
