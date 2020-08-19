@@ -141,7 +141,9 @@ const main = () => {
         $("#initial-load-spinner").hide();
 
         let scrollToSection = window.location.hash;
-        if (scrollToSection.length === 0) {
+        if (scrollToSection.length === 0
+            && localStorage.restoreSectionOnRefresh
+            && localStorage.restoreSectionOnRefresh.length > 0) {
           const savedSection = "#" + localStorage.restoreSectionOnRefresh;
           if ($(savedSection).length) {
             scrollToSection = savedSection;
