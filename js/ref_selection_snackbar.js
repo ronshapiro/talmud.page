@@ -90,13 +90,9 @@ const onSelectionChange = () => {
           body.push(sefariaRef.translation);
         }
         // trailing newline so that the description starts on its own line
-        body.push("Describe the error:\n");
+        body.push("Describe the error:");
 
         body = body.join("\n\n");
-        // TODO: verify the iOS versions. Also verify what non-Gmail clients do
-        if (/(Android|iPhone|iPad|iOS)/.test(navigator.userAgent)) {
-          body = body.replace(/\n/g, "<br>");
-        }
         body = encodeURIComponent(body);
         window.open(`mailto:corrections@sefaria.org?subject=${subject}&body=${body}`);
       },
