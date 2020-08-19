@@ -17,7 +17,7 @@ const findSefariaRef = (node) => {
   while (node.parentElement) {
     const $parentElement = $(node.parentElement);
     isEnglish = isEnglish || $parentElement.hasClass("english");
-    const isTranslationOfSourceText = $parentElement.attr("commentary-kind") === "Translation";
+    const isTranslationOfSourceText = $parentElement.hasClass("translation");
     const ref = $parentElement.attr("sefaria-ref");
     if (ref === "ignore") {
       break;
