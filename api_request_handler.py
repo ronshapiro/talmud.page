@@ -5,6 +5,7 @@ from enum import Enum
 from source_formatting.commentary_prefixes import CommentaryPrefixStripper
 from source_formatting.dibur_hamatchil import bold_diburei_hamatchil
 from source_formatting.hebrew_small_to_emphasis import HebrewSmallToEmphasisTagTranslator
+from source_formatting.image_numbering import ImageNumberingFormatter
 from source_formatting.jastrow import JastrowReformatter
 from source_formatting.section_symbol import SectionSymbolRemover
 from source_formatting.sefaria_link_sanitizer import SefariaLinkSanitizer
@@ -301,6 +302,7 @@ class Comment(object):
         hebrew = HebrewSmallToEmphasisTagTranslator.process(hebrew)
         hebrew = bold_diburei_hamatchil(hebrew, english_name)
         hebrew = CommentaryPrefixStripper.process(hebrew)
+        hebrew = ImageNumberingFormatter.process(hebrew)
 
         english = standard_english_transformations(english)
         if english_name == "Jastrow":

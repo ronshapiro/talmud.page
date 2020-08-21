@@ -299,3 +299,26 @@ h2 {
     max-width: var(--max-width);
     width: 100%;
 }
+
+.image-pointer {
+    vertical-align: super;
+    font-size: smaller;
+    line-height: 0px; /* Makes sure that the line height is not modified */c
+}
+
+.image-ref-container {
+    float: right;
+    clear: right;
+    --padding: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.image-ref-text {
+    float: right;
+    padding-left: 10px;
+}
+.image-ref {
+    float: left;
+}

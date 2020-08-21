@@ -14,13 +14,20 @@ class BaseHtmlTranslator(html.parser.HTMLParser):
 
     def _process_string(self, text):
         self.feed(text)
+        self.before_join()
         return "".join(self._out)
 
-    def append_start_tag(self, tag, attrs):
-        self._out.append("<%s" % tag)
-        for attr in attrs:
-            self._out.append(f' {attr[0]}="{attr[1]}"')
-        self._out.append(">")
+    def before_join(self):
+        pass
 
-    def append_end_tag(self, tag):
-        self._out.append("</%s>" % tag)
+    def append_start_tag(self, tag, attrs, to=None):
+        if to is None:
+            to = self._out
+        to.append("<%s" % tag)
+        for attr in attrs:
+            to.append(f' {attr[0]}="{attr[1]}"')
+        to.append(">")
+
+    def append_end_tag(self, tag, to=None):
+        to = to or self._out
+        to.append("</%s>" % tag)

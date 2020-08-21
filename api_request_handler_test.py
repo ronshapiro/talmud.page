@@ -21,7 +21,8 @@ test_amudim = (
     TestAmud("Berakhot", "2a"),
     TestAmud("Berakhot", "34b"),
     TestAmud("Shabbat", "100a"),
-    TestAmud("Eruvin", "11a"), # Has an image
+    TestAmud("Eruvin", "11a"), # Has images
+    TestAmud("Eruvin", "6b"), # Has images, including a comment with multiple images
     TestAmud("Niddah", "48b"),
     TestAmud("Nazir", "33b"), # Has no gemara, just Tosafot
     TestAmud("Shabbat", "74b"), # Has weird API response with nested comment text from Rosh
