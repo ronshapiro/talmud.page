@@ -298,6 +298,9 @@ h2 {
     opacity: 0;
     max-width: var(--max-width);
     width: 100%;
+
+    /* Disable touch events so that the hidden host appears totally invisible to the user. */
+    pointer-events: none;
 }
 
 .image-pointer {
