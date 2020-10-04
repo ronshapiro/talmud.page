@@ -168,11 +168,6 @@ h2 {
 }
 
 #snackbar {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    align-items: center;
-
     position: fixed;
     bottom: -400px;
     width: calc(var(--max-width) - 2 * var(--snackbar-padding));
@@ -190,6 +185,13 @@ h2 {
         width: calc(100% - 2 * var(--snackbar-padding));
         margin-left: -1em;
     }
+}
+
+#snackbar > * {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 #snackbar p:last-of-type {

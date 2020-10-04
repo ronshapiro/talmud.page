@@ -2,29 +2,53 @@
 const moveSnackbarOffscreen = () => $("#snackbar").css("bottom", -400);
 const hideSnackbar = () => $("#snackbar").animate({bottom: -400});
 
-const updateSnackbar = (labelHtml, buttons) => {
-  $("#snackbar-text").html(labelHtml);
-  const buttonsDiv = $("#snackbar-buttons").html("");
+const BUTTON_CLASSES = 'class="mdl-button mdl-js-button mdl-button--colored"';
+
+const addContainer = kind => {
+  const classes = [kind.cssClass, ...(kind.extraCssClasses || [])].join(" ");
+  $(`#snackbar`).append(
+    `<div class="${classes}">
+       <div class="snackbar-text"></div>
+       <div class="snackbar-buttons"></div>
+     </div>`);
+};
+
+const updateSnackbar = (kind, labelHtml, buttons) => {
+  let $container = $(`#snackbar .${kind.cssClass}`);
+  const addingContainer = !$container.length;
+  if (addingContainer) {
+    addContainer(kind);
+    $container = $(`#snackbar .${kind.cssClass}`);
+  }
+  $container.find(".snackbar-text").html(labelHtml);
+
+  const buttonsDiv = $container.find(".snackbar-buttons").html("");
+  let style = "";
   if (!buttons) {
-    buttons = [];
+    buttons = ["hidden"];
+    style = 'style="visibility:hidden"';
   } else if (!buttons.length) {
     buttons = [buttons];
   }
+
+  // TODO: replace with map and then remove the initial setting of html("")
   for (const button of buttons) {
-    buttonsDiv.append(
-      `<button class="mdl-button mdl-js-button mdl-button--colored">${button.text}</button>`);
+    buttonsDiv.append(`<button ${BUTTON_CLASSES} ${style}>${button.text}</button>`);
   }
 
-  const buttonElements = $("#snackbar-buttons button");
+  const buttonElements = $container.find("button");
   for (let i = 0; i < buttonElements.length; i++) {
     $(buttonElements[i]).click(buttons[i].onClick);
   }
+
+  if (addingContainer) {
+    $container.hide().slideToggle();
+  }
 };
 
-const displaySnackbar = (labelHtml, buttons) => {
-  updateSnackbar(labelHtml, buttons);
+const displaySnackbar = (kind, labelHtml, buttons) => {
+  updateSnackbar(kind, labelHtml, buttons);
 
-  moveSnackbarOffscreen();
   $("#snackbar").animate({bottom: 0});
 };
 
@@ -42,14 +66,24 @@ const Kind = {
       return window.location.pathname !== "/preferences" && !hasSeenLatestPreferences();
     },
     maxShowCount: 3,
+    cssClass: "preferencesNudge",
   },
   GOOGLE_SIGN_IN: {
     prefix: "googleSignIn",
     customShowLogic: () => !localStorage.hasSignedInWithGoogle,
     maxShowCount: 3,
+    cssClass: "googleSignIn",
   },
-  TEXT_SELECTION: {},
-  PREFERENCES_SAVED: {},
+  TEXT_SELECTION: {
+    cssClass: "textSelection",
+  },
+  PREFERENCES_SAVED: {
+    cssClass: "preferencesSaved",
+  },
+  ERRORS: {
+    cssClass: "errors",
+    extraCssClasses: ["mdl-color-text--accent"],
+  },
 };
 
 const shownCountString = kind => `${kind.prefix}SnackbarShownCount`;
@@ -67,26 +101,23 @@ class Snackbar {
   }
 
   show(...args) {
-    if (this.snackbarManager.currentlyDisplayedKind
-        && this.snackbarManager.currentlyDisplayedKind !== this.kind) {
-      return;
-    }
     if (this.kind.prefix) {
       // Delay incrementing the shown count to make sure that the use didn't reload the page quickly
       // and the snackbar was never actually shown.
       setTimeout(() => incrementShownCount(this.kind), 5 * 1000);
     }
 
-    this.snackbarManager.currentlyDisplayedKind = this.kind;
-    displaySnackbar(...args);
+    displaySnackbar(this.kind, ...args);
   }
 
   hide() {
-    if (this.snackbarManager.currentlyDisplayedKind !== this.kind) {
-      return;
-    }
-    hideSnackbar();
-    this.snackbarManager.currentlyDisplayedKind = undefined;
+    const $section = $(`#snackbar .${this.kind.cssClass}`);
+    $section.slideToggle(200, () => {
+      $section.remove();
+      if ($("#snackbar").children().length === 0) {
+        hideSnackbar();
+      }
+    });
   }
 
   dismissButtonImpl() {
@@ -122,6 +153,8 @@ class SnackbarManager {
     this.googleSignIn = new StartupSnackbar(Kind.GOOGLE_SIGN_IN, this);
     this.textSelection = new Snackbar(Kind.TEXT_SELECTION, this);
     this.preferencesSaved = new Snackbar(Kind.PREFERENCES_SAVED, this);
+    // TODO: make each error it's own snackbar? That way each can animate on its own
+    this.errors = new Snackbar(Kind.ERRORS, this);
   }
 }
 

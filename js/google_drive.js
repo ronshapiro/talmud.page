@@ -1,4 +1,6 @@
+
 /* global gapi, gtag */
+import {v4 as uuid} from "uuid";
 import {amudMetadata} from "./amud.js";
 import {refSorter} from "./ref_sorter.js";
 import {filterDocumentRange} from "./filter_document_range.js";
@@ -74,41 +76,13 @@ const rangeSorter = (first, second) => {
 class RetryState {
   constructor(delay) {
     this.delay = delay || 200;
+    this.id = uuid();
   }
 
   increment() {
     this.delay *= 1.5;
   }
 }
-
-const retryingMethod = (options) => {
-  checkNotUndefined(options.retryingCall, "retryingCall");
-  checkNotUndefined(options.then, "then");
-  checkIsUndefined(options.doCall, "doCall");
-
-  options.doCall = (...args) => {
-    let retryState;
-    if (args.length > 0) {
-      const lastArg = args.slice(-1)[0];
-      if (lastArg instanceof RetryState) {
-        retryState = lastArg;
-        args = args.slice(0, -1);
-      }
-    }
-    if (!retryState) {
-      retryState = new RetryState();
-    }
-    return options.retryingCall(...args)
-      .then(options.then, response => {
-        console.error(response);
-        setTimeout(() => {
-          retryState.increment();
-          options.doCall(...args, retryState);
-        }, retryState.delay);
-      });
-  };
-  return options.doCall;
-};
 
 class DriveClient {
   constructor(clientId, apiKey) {
@@ -128,16 +102,58 @@ class DriveClient {
   }
 
   resetState() {
-    this.errors = [];
+    this.errors = {};
+    this.triggerErrorListener();
     this.whenDatabaseReady.reset();
     this.commentsByRef = undefined;
   }
+
+  retryingMethod = (options) => {
+    checkNotUndefined(options.retryingCall, "retryingCall");
+    checkNotUndefined(options.then, "then");
+    checkIsUndefined(options.doCall, "doCall");
+
+    options.doCall = (...args) => {
+      let retryState;
+      if (args.length > 0) {
+        const lastArg = args.slice(-1)[0];
+        if (lastArg instanceof RetryState) {
+          retryState = lastArg;
+          args = args.slice(0, -1);
+        }
+      }
+      if (!retryState) {
+        retryState = new RetryState();
+      }
+      return options.retryingCall(...args)
+        .then(
+          (...thenArgs) => {
+            options.then(...thenArgs);
+            delete this.errors[retryState.id];
+            this.triggerErrorListener();
+          },
+          errorResponse => {
+            console.error(errorResponse);
+            console.error(options);
+            if (options.createError) {
+              this.errors[retryState.id] = options.createError(...args);
+              this.triggerErrorListener();
+            }
+            setTimeout(() => {
+              retryState.increment();
+              options.doCall(...args, retryState);
+            }, retryState.delay);
+          });
+    };
+    return options.doCall;
+  };
+
 
   /**
    *  Initializes the API client library and sets up sign-in state
    *  listeners.
    */
-  init = retryingMethod({
+  init = this.retryingMethod({
     retryingCall: () => {
       if (!gapi) {
         setTimeout(() => this.init(), 100);
@@ -159,6 +175,7 @@ class DriveClient {
         this.updateSigninStatus(isSignedIn);
       });
     },
+    createError: () => "Error initializing drive database",
   });
 
   updateSigninStatus(isSignedIn) {
@@ -174,7 +191,7 @@ class DriveClient {
     if (this.signInStatusListener) this.signInStatusListener();
   }
 
-  setDatabaseFileProperties = retryingMethod({
+  setDatabaseFileProperties = this.retryingMethod({
     retryingCall: (fileId) => {
       checkNotUndefined(fileId, "fileId");
       return gapi.client.drive.files.update({
@@ -187,9 +204,10 @@ class DriveClient {
       });
     },
     then: () => {},
+    createError: () => "Error configuring database file (1y94r)",
   });
 
-  findDocsDatabase = retryingMethod({
+  findDocsDatabase = this.retryingMethod({
     retryingCall: () => {
       return gapi.client.drive.files.list({
         q: `appProperties has { key='talmud.page.database.id' and value='${this.databaseProperty}' }`
@@ -203,12 +221,14 @@ class DriveClient {
       } else if (files.length === 1) {
         this.getDatabaseDocument(files[0].id).then(() => this.whenDatabaseReady.declareReady());
       } else {
-        this.errors.push("Too many docs"); // TODO(drive): handle in the UI
+        this.errors["too many docs"] = "Too many docs";
+        this.triggerErrorListener();
       }
     },
+    createError: () => "Can't find the notes document",
   });
 
-  createDocsDatabase = retryingMethod({
+  createDocsDatabase = this.retryingMethod({
     retryingCall: () => {
       this.databaseDocumentShouldBeCreated = false;
       // TODO: localize this
@@ -223,6 +243,7 @@ class DriveClient {
         .then(() => this.addInstructionsTable())
         .then(() => this.whenDatabaseReady.declareReady());
     },
+    createError: () => "Error creating database file",
   });
 
   instructionsTableRequests() {
@@ -309,7 +330,7 @@ class DriveClient {
     return requests;
   }
 
-  addInstructionsTable = retryingMethod({
+  addInstructionsTable = this.retryingMethod({
     retryingCall: () => {
       return gapi.client.docs.documents.batchUpdate({
         documentId: this.databaseDocument.documentId,
@@ -321,9 +342,10 @@ class DriveClient {
       return this.getDatabaseDocument(this.databaseDocument.documentId)
         .then(() => this.setInstructionsTableRange());
     },
+    createError: () => "Error configuring database file (28zd3)",
   });
 
-  setInstructionsTableRange = retryingMethod({
+  setInstructionsTableRange = this.retryingMethod({
     retryingCall: () => {
       let range;
       for (const section of this.databaseDocument.body.content) {
@@ -343,9 +365,10 @@ class DriveClient {
       });
     },
     then: () => this.getDatabaseDocument(this.databaseDocument.documentId),
+    createError: () => "Error configuring database file (0h7f1)",
   });
 
-  getDatabaseDocument = retryingMethod({
+  getDatabaseDocument = this.retryingMethod({
     retryingCall: (documentId) => {
       this.commentsByRef = {};
       return gapi.client.docs.documents.get({documentId});
@@ -357,6 +380,7 @@ class DriveClient {
       }
       if (this.databaseUpdatedListener) this.databaseUpdatedListener();
     },
+    createError: () => "Could not find database file",
   });
 
   // TODO(drive): break up this method, possibly by extracting a state object.
@@ -414,7 +438,7 @@ class DriveClient {
     this.whenDatabaseReady.execute(() => this._appendNamedRange(text, amud, ref, parentRef));
   }
 
-  _appendNamedRange = retryingMethod({
+  _appendNamedRange = this.retryingMethod({
     retryingCall: (text, amud, ref, parentRef) => {
       return gapi.client.docs.documents.batchUpdate({
         documentId: this.databaseDocument.documentId,
@@ -423,6 +447,10 @@ class DriveClient {
       });
     },
     then: () => this.getDatabaseDocument(this.databaseDocument.documentId),
+    createError: (_, __, ref) => {
+      // TODO: save to a database and then retry on next load
+      return `Could not save comment on ${ref}`;
+    },
   });
 
   // TODO(drive): tests, and dependency injection?
@@ -527,6 +555,27 @@ class DriveClient {
 
   signOut() {
     gapi.auth2.getAuthInstance().signOut();
+  }
+
+  triggerErrorListener() {
+    if (!this.previousErrors) {
+      this.previousErrors = {};
+      return;
+    }
+    if (!this.onErrorListener) {
+      return;
+    }
+
+    const previousKeys = Object.keys(this.previousErrors);
+    const currentKeys = Object.keys(this.errors);
+    const trigger = () => this.onErrorListener && this.onErrorListener();
+
+    if (previousKeys.length !== currentKeys.length
+        || currentKeys.filter(k => this.errors[k] !== this.previousErrors[k]).length) {
+      trigger();
+    }
+
+    this.previousErrors = {...this.errors};
   }
 }
 

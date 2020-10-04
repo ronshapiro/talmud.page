@@ -207,3 +207,11 @@ driveClient.signInStatusListener = () => {
 };
 
 driveClient.databaseUpdatedListener = () => renderer.forceUpdate();
+
+driveClient.onErrorListener = () => {
+  if (Object.keys(driveClient.errors).length) {
+    snackbars.errors.show(Object.values(driveClient.errors).join("<br><br>"));
+  } else {
+    snackbars.errors.hide();
+  }
+};
