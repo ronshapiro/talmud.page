@@ -16,6 +16,7 @@ pre-commit
 
 *_test.py
 test_data
+*.test.js
 
 .pre-commit-config.yaml
 
@@ -34,3 +35,9 @@ package-lock.json
 .eslintignore
 
 .travis.yml
+
+.\#*
+\#*\#
+
+parcel.js
+.eslintrc.js
