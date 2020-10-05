@@ -1,4 +1,3 @@
-
 /* global gapi, gtag */
 import {v4 as uuid} from "uuid";
 import {amudMetadata} from "./amud.js";
@@ -9,6 +8,8 @@ import {newOnReady} from "./once_document_ready.js";
 const HEBREW_LETTERS = /[א-ת]/g;
 const LATIN_LETTERS = /[a-zA-Z]/g;
 const INSTRUCTIONS_TABLE_RANGE_NAME = "Instructions Table";
+
+const NOTES_OBJECT_STORE = "notes";
 
 // The discoveryDoc is seemingly "loaded into" the gapi.client JS object
 const APIS = [
@@ -99,6 +100,8 @@ class DriveClient {
       // eslint-disable-next-line no-console
       this.whenDatabaseReady.execute(() => console.log("Debug database document ready!"));
     }
+
+    this.initLocalDb();
   }
 
   resetState() {
@@ -136,8 +139,11 @@ class DriveClient {
             console.error(errorResponse);
             console.error(options);
             if (options.createError) {
-              this.errors[retryState.id] = options.createError(...args);
-              this.triggerErrorListener();
+              const userVisibleMessage = options.createError(...args);
+              if (userVisibleMessage) {
+                this.errors[retryState.id] = userVisibleMessage;
+                this.triggerErrorListener();
+              }
             }
             setTimeout(() => {
               retryState.increment();
@@ -384,7 +390,7 @@ class DriveClient {
   });
 
   // TODO(drive): break up this method, possibly by extracting a state object.
-  appendNamedRangeRequests(text, amud, ref, parentRef) {
+  postCommentRequests(text, amud, ref, parentRef) {
     let insertLocation = this.findInsertLocation(parentRef);
     const requests = [];
 
@@ -430,27 +436,35 @@ class DriveClient {
     return requests;
   }
 
-  appendNamedRange(text, amud, ref, parentRef) {
+  // These parameters should be kept in sync with addUnsavedComment() with the exception of `id`.
+  postComment(text, amud, ref, parentRef, id) {
     if (this.databaseDocumentShouldBeCreated) {
       this.createDocsDatabase();
     }
-    gtag("event", "add_personal_note", {amud, ref, parentRef});
-    this.whenDatabaseReady.execute(() => this._appendNamedRange(text, amud, ref, parentRef));
+
+    const isRetry = id !== undefined;
+    if (!isRetry) {
+      id = this.addUnsavedComment(text, amud, ref, parentRef);
+      gtag("event", "add_personal_note", {amud, ref, parentRef});
+    }
+
+    this.whenDatabaseReady.execute(
+      () => this._postComment({text, amud, ref, parentRef, id, isRetry}));
   }
 
-  _appendNamedRange = this.retryingMethod({
-    retryingCall: (text, amud, ref, parentRef) => {
+  _postComment = this.retryingMethod({
+    retryingCall: ({text, amud, ref, parentRef, id}) => {
       return gapi.client.docs.documents.batchUpdate({
         documentId: this.databaseDocument.documentId,
-        requests: this.appendNamedRangeRequests(text, amud, ref, parentRef),
+        requests: this.postCommentRequests(text, amud, ref, parentRef),
         writeControl: {requiredRevisionId: this.databaseDocument.revisionId},
+      }).then(response => {
+        this.markCommentSaved(id);
+        return Promise.resolve(response);
       });
     },
     then: () => this.getDatabaseDocument(this.databaseDocument.documentId),
-    createError: (_, __, ref) => {
-      // TODO: save to a database and then retry on next load
-      return `Could not save comment on ${ref}`;
-    },
+    createError: ({ref, isRetry}) => (isRetry ? undefined : `Could not save comment on ${ref}`),
   });
 
   // TODO(drive): tests, and dependency injection?
@@ -576,6 +590,54 @@ class DriveClient {
     }
 
     this.previousErrors = {...this.errors};
+  }
+
+  initLocalDb() {
+    const openRequest = indexedDB.open("UnsavedNotes", 1);
+    openRequest.onerror = event => console.error("db open error", event);
+    openRequest.onupgradeneeded = event => {
+      const db = event.target.result;
+      db.onerror = dbError => console.error("db error", dbError);
+      db.createObjectStore(NOTES_OBJECT_STORE, {keyPath: "id"});
+    };
+    openRequest.onsuccess = onSuccessEvent => {
+      this.localDb = onSuccessEvent.target.result;
+
+      this.newTransaction().getAll().onsuccess = getAllEvent => {
+        getAllEvent.target.result
+          .filter(unsavedComment => unsavedComment.masechet === this.masechet)
+          .forEach(unsavedComment => {
+            const {text, amud, ref, parentRef, id} = unsavedComment;
+            // TODO: do these in a promise chain, since all but the first are guaranteed to fail.
+            this.postComment(text, amud, ref, parentRef, id);
+          });
+      };
+    };
+  }
+
+  addUnsavedComment(text, amud, ref, parentRef) {
+    if (!this.localDb) {
+      console.warn("No local db present");
+    }
+    const id = uuid();
+    this.newTransaction("readwrite").add({
+      id,
+      text,
+      amud,
+      ref,
+      parentRef,
+      masechet: this.masechet,
+    });
+    return id;
+  }
+
+  markCommentSaved(id) {
+    this.newTransaction("readwrite").delete(id)
+      .onerror = event => console.error(event);
+  }
+
+  newTransaction(mode) {
+    return this.localDb.transaction(NOTES_OBJECT_STORE, mode).objectStore(NOTES_OBJECT_STORE);
   }
 }
 

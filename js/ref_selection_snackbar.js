@@ -110,7 +110,7 @@ const onSelectionChange = () => {
         noteTextArea.val(document.getSelection().toString());
         $("#modal-cancel").off("click").on("click", () => modalContainer.hide());
         $("#modal-save").off("click").on("click", () => {
-          driveClient.appendNamedRange(
+          driveClient.postComment(
             noteTextArea.val(),
             sefariaRef.amud,
             sefariaRef.ref,
