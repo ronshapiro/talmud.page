@@ -1,11 +1,28 @@
 const create = () => {
   const result = {
     execute(fn) {
+      let resolve;
+      let reject;
+      const promise = new Promise((captureResolve, captureReject) => {
+        resolve = captureResolve;
+        reject = captureReject;
+      });
+
+      const wrapped = () => {
+        try {
+          fn();
+          resolve();
+        } catch (e) {
+          reject(e);
+        }
+      };
+
       if (this.ready) {
-        fn();
-        return;
+        wrapped();
+      } else {
+        this.queue.push(wrapped);
       }
-      this.queue.push(fn);
+      return promise;
     },
     declareReady() {
       if (this.ready) {

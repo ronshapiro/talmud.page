@@ -42,3 +42,46 @@ test("Calling declareReady() twice throws", () => {
   onceDocumentReady.declareReady();
   expect(() => onceDocumentReady.declareReady()).toThrow();
 });
+
+
+describe("execute() returns a Promise", () => {
+  describe("already ready", () => {
+    const instance = newInstance();
+    instance.declareReady();
+
+
+    test("onSuccess", () => {
+      expect.assertions(1);
+      return instance.execute(() => {})
+        .then(() => expect(true).toBe(true));
+    });
+    test("onFailure", () => {
+      expect.assertions(1);
+      return instance.execute(
+        () => {
+          throw new Error();
+        },
+      ).catch(() => expect(true).toBe(true));
+    });
+  });
+
+  describe("not yet ready", () => {
+    const instance = newInstance();
+
+    test("onSuccess", () => {
+      expect.assertions(1);
+      return instance.execute(() => {})
+        .then(() => expect(true).toBe(true));
+    });
+    test("onFailure", () => {
+      expect.assertions(1);
+      return instance.execute(
+        () => {
+          throw new Error();
+        },
+      ).catch(() => expect(true).toBe(true));
+    });
+
+    instance.declareReady();
+  });
+});
