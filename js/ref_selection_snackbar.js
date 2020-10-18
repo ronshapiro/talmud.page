@@ -73,8 +73,8 @@ const onSelectionChange = () => {
     {
       text: "View on Sefaria",
       onClick: () => {
-        window.location = sefariaUrl;
         gtag("event", "view_on_sefaria", {ref});
+        window.open(sefariaUrl);
       },
     },
     {
