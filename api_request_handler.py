@@ -284,6 +284,15 @@ def strip_ref_segment_number(ref):
 
     return ref[0:ref.index(":")]
 
+def strip_ref_quotation_marks(ref):
+    parts = ref.split(" ")
+    last_part = parts.pop()
+    if ":" not in last_part:
+        return ref
+
+    parts.append(last_part.replace("׳", "").replace("״", ""))
+    return " ".join(parts)
+
 
 class Comment(object):
     """Represents a single comment on a text.
@@ -318,6 +327,8 @@ class Comment(object):
         if english_name == "Mesorat Hashas" and is_masechet_ref(comment.source_ref):
             comment.source_ref = strip_ref_segment_number(comment.source_ref)
             comment.source_he_ref = strip_ref_segment_number(comment.source_he_ref)
+        else:
+            comment.source_he_ref = strip_ref_quotation_marks(comment.source_he_ref)
         comment.english_name = english_name
 
         return comment
