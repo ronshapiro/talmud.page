@@ -8,6 +8,10 @@ import {render} from 'react-dom';
 import PropTypes from 'prop-types';
 import _ from "underscore";
 import isEmptyText from "./is_empty_text.js";
+import {
+  NextButton,
+  PreviousButton,
+} from "./NavigationButtons.jsx";
 import TableRow from "./TableRow.jsx";
 import {
   ConfigurationContext,
@@ -405,20 +409,33 @@ class Amud extends Component {
   }
 }
 
-class Amudim extends Component {
+class Root extends Component {
   static propTypes = {
     allAmudim: PropTypes.func.isRequired,
     isFake: PropTypes.bool,
+    navigationExtension: PropTypes.object.isRequired,
   };
 
   state = {}
 
   render() {
-    const {isFake, allAmudim} = this.props;
+    const {
+      isFake,
+      allAmudim,
+      navigationExtension,
+    } = this.props;
     if (!isFake && !this.state.isReady) {
       return [];
     }
-    return allAmudim().map(amud => <Amud key={amud.id + "-amud"} amudData={amud} />);
+
+    const amudim = allAmudim().map(amud => <Amud key={amud.id + "-amud"} amudData={amud} />);
+    return (
+      <>
+        <PreviousButton navigationExtension={navigationExtension} />
+        {amudim}
+        <NextButton navigationExtension={navigationExtension} />
+      </>
+    );
   }
 
   componentDidMount() {
@@ -444,12 +461,21 @@ const indexCommentaryTypesByClassName = (commentaryTypes) => {
 };
 
 class Renderer {
-  constructor(commentaryTypes, translationOption, wrapTranslations) {
+  constructor(
+    commentaryTypes,
+    translationOption,
+    wrapTranslations,
+    navigationExtension) {
     this._commentaryTypes = commentaryTypes;
     this._translationOption = translationOption;
     this.wrapTranslations = wrapTranslations;
     this.rootComponent = createRef();
+    this.amudimRef = createRef();
     this.allAmudim = {};
+    this.navigationExtension = navigationExtension || {
+      hasPrevious: () => false,
+      hasNext: () => false,
+    };
   }
 
   _applyClientSideDataTransformations(amudData) {
@@ -513,7 +539,10 @@ class Renderer {
     };
     render(
       <ConfigurationContext.Provider value={contextForHiddenHostRendering}>
-        <Amudim allAmudim={() => hiddenData} isFake />
+        <Root
+          allAmudim={() => hiddenData}
+          navigationExtension={this.navigationExtension}
+          isFake />
       </ConfigurationContext.Provider>,
       hiddenHost);
 
@@ -531,7 +560,10 @@ class Renderer {
     render(
       <ConfigurationContext.Provider value={context}>
         <HiddenHostContext.Provider value={hiddenHostContext}>
-          <Amudim ref={this.rootComponent} allAmudim={() => this.getAmudim()} />
+          <Root
+            ref={this.rootComponent}
+            allAmudim={() => this.getAmudim()}
+            navigationExtension={this.navigationExtension} />
         </HiddenHostContext.Provider>
       </ConfigurationContext.Provider>,
       host);
@@ -602,8 +634,12 @@ class Renderer {
 }
 
 class TalmudRenderer extends Renderer {
-  constructor(translationOption, wrapTranslations) {
-    super(TalmudRenderer._defaultCommentaryTypes(), translationOption, wrapTranslations);
+  constructor(translationOption, wrapTranslations, navigationExtension) {
+    super(
+      TalmudRenderer._defaultCommentaryTypes(),
+      translationOption,
+      wrapTranslations,
+      navigationExtension);
   }
 
   static _defaultCommentaryTypes() {

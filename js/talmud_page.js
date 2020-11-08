@@ -13,39 +13,36 @@ import {registerRefSelectionSnackbarListener} from "./ref_selection_snackbar.js"
 
 const renderer = new TalmudRenderer(
   localStorage.translationOption || "english-side-by-side",
-  localStorage.wrapTranslations !== "false");
+  localStorage.wrapTranslations !== "false",
+  {
+    previous: () => computePreviousAmud(amudMetadata().amudStart),
+    next: () => computeNextAmud(amudMetadata().amudEnd),
+
+    hasPrevious: () => {
+      const metadata = amudMetadata();
+      const bounds = MASECHTOT[metadata.masechet];
+      return metadata.amudStart !== bounds.start;
+    },
+    hasNext: () => {
+      const metadata = amudMetadata();
+      const bounds = MASECHTOT[metadata.masechet];
+      return metadata.amudEnd !== bounds.end;
+    },
+    // eslint-disable-next-line no-use-before-define
+    loadPrevious: () => addPreviousAmud(),
+    // eslint-disable-next-line no-use-before-define
+    loadNext: () => addNextAmud(),
+  },
+);
 renderer.driveClient = driveClient;
 
-const setHtmlTitle = () => {
+const refreshPageState = () => {
   const metadata = amudMetadata();
   document.title = (
     metadata.amudStart === metadata.amudEnd
       ? `${metadata.masechet} ${metadata.amudStart}`
       : `${metadata.masechet} ${metadata.amudStart} - ${metadata.amudEnd}`
   );
-};
-
-const setVisibility = (element, toShow) => {
-  if (toShow) {
-    element.show();
-  } else {
-    element.hide();
-  }
-};
-
-const refreshPageState = () => {
-  setHtmlTitle();
-
-  onceDocumentReady.execute(() => {
-    const metadata = amudMetadata();
-    // Note that these may still be hidden by their container if the full page hasn't loaded yet.
-    const bounds = MASECHTOT[metadata.masechet];
-    setVisibility($("#previous-amud-container"), metadata.amudStart !== bounds.start);
-    setVisibility($("#next-amud-container"), metadata.amudEnd !== bounds.end);
-
-    $("#previous-amud-button").text(`Load ${computePreviousAmud(metadata.amudStart)}`);
-    $("#next-amud-button").text(`Load ${computeNextAmud(metadata.amudEnd)}`);
-  });
 };
 
 const requestAmud = (amud, options) => {

@@ -149,13 +149,26 @@ h1, h2 {
 .gemara-container .english {
     padding-top: 2.75px;
 }
-#previous-amud-container, #next-amud-container {
+.navigation-button-container {
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    position: relative;
 }
-#next-amud-container {
+.navigation-button-container.next {
     margin-top: 32px;
+}
+.navigation-button:not(.edit-button) {
+    position: relative;
+    left: 16px;
+}
+
+*:focus {
+    outline: none;
+}
+.edit-button {
+    position: relative;
+    left: 24px;
 }
 h1 {
     font-family: "Taamey David";
@@ -251,6 +264,9 @@ h2 {
 
 #modal-container {
     display: none;
+}
+
+#modal-container, .modal-container {
     position: fixed;
     left: 0;
     top: 0;
@@ -260,7 +276,7 @@ h2 {
     background-color: rgb(0, 0, 0, 0.3);
 }
 
-#modal {
+#modal, .modal {
     --margin: 10px;
     position: absolute;
     top: 50%;
@@ -275,13 +291,13 @@ h2 {
 }
 
 @media only screen and (min-width: 720px) {
-    #modal {
+    #modal, .modal {
         min-width:  400px;
         width: initial;
     }
 }
 
-#modal-content {
+#modal-content, .modal-content {
     padding: 10px
 }
 

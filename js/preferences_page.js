@@ -80,7 +80,8 @@ const main = () => {
     const renderer = new TalmudRenderer(
       option.value,
       // TODO: Update the sample views whenever a preference is changed
-      localStorage.wrapTranslations !== "false");
+      localStorage.wrapTranslations !== "false",
+      /* navigationExtension= */ undefined);
     renderer.register(divId);
     renderer.setAmud({
       sections: createTestData(),
