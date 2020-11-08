@@ -32,12 +32,12 @@ class RealRequestMaker(object):
                 f"https://sefaria.org/api/texts/{ref}",
                 params = {
                     "commentary": "1",
-                    # Even with wrapLinks=1, Jastrow (and perhaps more) is still wrapped. Instead,
-                    # an active filtering is performed just in case.
-                    "wrapLinks": "0",
                     # This shouldn't have a difference for the Gemara reqeusts, but it does expand
                     # the Rashi/Tosafot requests to have the entire amud's worth of commentary
                     "pad": "0",
+                    # Even with wrapLinks=1, Jastrow (and perhaps more) is still wrapped. Instead,
+                    # an active filtering is performed just in case.
+                    "wrapLinks": "0",
                 })
 
 def standard_english_transformations(english):
