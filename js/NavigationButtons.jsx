@@ -1,4 +1,6 @@
+/* global $ */
 import React, {
+  useEffect,
   useRef,
   useState,
 } from "react";
@@ -35,10 +37,15 @@ const NavigationButtonRow = (props) => {
     isNext,
     text,
     doLoad,
+    defaultEditText,
   } = props;
   const [showModal, setShowModal] = useState(false);
   const classes = ["navigation-button-container"];
   const modalSearchBarRef = useRef();
+
+  useEffect(() => {
+    $(modalSearchBarRef.current).val(defaultEditText());
+  });
 
   if (isNext) classes.push("next");
   return (
@@ -79,6 +86,7 @@ NavigationButtonRow.propTypes = {
   isNext: PropTypes.bool.isRequired,
   text: PropTypes.string.isRequired,
   doLoad: PropTypes.func.isRequired,
+  defaultEditText: PropTypes.func.isRequired,
 };
 
 
@@ -92,6 +100,7 @@ const PreviousButton = (props) => {
       isNext={false}
       text={`Load ${navigationExtension.previous()}`}
       doLoad={() => navigationExtension.loadPrevious()}
+      defaultEditText={() => navigationExtension.defaultEditText()}
     />
   );
 };
@@ -109,6 +118,7 @@ const NextButton = (props) => {
       isNext
       text={`Load ${navigationExtension.next()}`}
       doLoad={() => navigationExtension.loadNext()}
+      defaultEditText={() => navigationExtension.defaultEditText()}
     />
   );
 };

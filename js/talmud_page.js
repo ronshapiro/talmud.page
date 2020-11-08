@@ -11,6 +11,13 @@ import {registerRefSelectionSnackbarListener} from "./ref_selection_snackbar.js"
 
 // TODO: reactify?
 
+const masechetNameAndRange = () => {
+  const metadata = amudMetadata();
+  return metadata.amudStart === metadata.amudEnd
+      ? `${metadata.masechet} ${metadata.amudStart}`
+      : `${metadata.masechet} ${metadata.amudStart} - ${metadata.amudEnd}`;
+};
+
 const renderer = new TalmudRenderer(
   localStorage.translationOption || "english-side-by-side",
   localStorage.wrapTranslations !== "false",
@@ -32,17 +39,14 @@ const renderer = new TalmudRenderer(
     loadPrevious: () => addPreviousAmud(),
     // eslint-disable-next-line no-use-before-define
     loadNext: () => addNextAmud(),
+
+    defaultEditText: () => masechetNameAndRange(),
   },
 );
 renderer.driveClient = driveClient;
 
 const refreshPageState = () => {
-  const metadata = amudMetadata();
-  document.title = (
-    metadata.amudStart === metadata.amudEnd
-      ? `${metadata.masechet} ${metadata.amudStart}`
-      : `${metadata.masechet} ${metadata.amudStart} - ${metadata.amudEnd}`
-  );
+  document.title = masechetNameAndRange();
 };
 
 const requestAmud = (amud, options) => {
