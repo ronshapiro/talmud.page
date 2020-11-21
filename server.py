@@ -34,6 +34,11 @@ app = Flask(__name__)
 masechtot = Masechtot()
 api_request_handler = ApiRequestHandler(RealRequestMaker())
 
+@app.before_request
+def strip_www():
+    if request.url.startswith("https://www."):
+        return redirect(request.url.replace("https://www.", "https://"))
+
 @app.context_processor
 def template_constants():
     return dict(
