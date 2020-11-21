@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from enum import Enum
+from hebrew import strip_hebrew_nonletters
 from source_formatting.commentary_prefixes import CommentaryPrefixStripper
 from source_formatting.dibur_hamatchil import bold_diburei_hamatchil
 from source_formatting.hebrew_small_to_emphasis import HebrewSmallToEmphasisTagTranslator
@@ -13,8 +14,6 @@ import asyncio
 import httpx
 import re
 import masechtot
-
-_HADRAN_PATTERN = re.compile("^(<br>)+<big><strong>הדרן עלך .*")
 
 _ALEPH = "א"
 _TAV = "ת"
@@ -42,6 +41,13 @@ class RealRequestMaker(object):
 
 def standard_english_transformations(english):
     return SectionSymbolRemover.process(SefariaLinkSanitizer.process(english))
+
+
+_HADRAN_PATTERN = re.compile("^(<br>)+<big><strong>הדרן עלך .*")
+
+def is_hadran(text):
+    return len(_HADRAN_PATTERN.findall(strip_hebrew_nonletters(text))) > 0
+
 
 class AbstractApiRequestHandler(object):
     def __init__(self, request_maker, print_function=print):
@@ -95,10 +101,12 @@ class AbstractApiRequestHandler(object):
         english = main_json["text"]
 
         # https://github.com/Sefaria/Sefaria-Project/issues/543
-        if len(hebrew) - 1 == len(english) and "הדרן עלך" in hebrew[-1]:
+        if len(hebrew) - 1 == len(english) and is_hadran(hebrew[-1]):
             english.append("")
 
         if len(hebrew) != len(english):
+            extra = hebrew[len(english):] + english[len(hebrew):]
+            self._print("Unmatched text/translation: ", extra)
             raise ApiException(
                 "Hebrew length != English length",
                 500,
@@ -224,7 +232,7 @@ class ApiRequestHandler(AbstractApiRequestHandler):
                _STEINSALTZ_SUGYA_START.findall(comment.hebrew):
                 section["steinsaltz_start_of_sugya"] = True
 
-        if _HADRAN_PATTERN.findall(section["he"]):
+        if is_hadran(section["he"]):
             section["he"] = section["he"].replace("<br>", "")
             section["en"] = ""
             section["commentary"] = Commentary.create()

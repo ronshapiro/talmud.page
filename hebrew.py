@@ -1,3 +1,5 @@
+import re
+
 _LETTER_NUMERIC_VALUES = {
     "א": 1,
     "ב": 2,
@@ -26,3 +28,9 @@ _LETTER_NUMERIC_VALUES = {
 def numeric_literal_as_int(hebrew):
     return sum([_LETTER_NUMERIC_VALUES[x]
                 for x in hebrew])
+
+_HEBREW_NONLETTERS = re.compile("[֑-ׇ]")
+
+def strip_hebrew_nonletters(text):
+    """Removes all Hebrew-specific unicode characters that are not letters, i.e. vowels, trope"""
+    return _HEBREW_NONLETTERS.sub("", text)

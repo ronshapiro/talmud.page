@@ -23,7 +23,7 @@ test_amudim = (
     TestAmud("Shabbat", "100a"),
     TestAmud("Eruvin", "11a"), # Has images
     TestAmud("Eruvin", "6b"), # Has images, including a comment with multiple images
-    TestAmud("Niddah", "48b"),
+    TestAmud("Eruvin", "105a"), # Ends with Hadran that has vocalization
     TestAmud("Nazir", "33b"), # Has no gemara, just Tosafot
     TestAmud("Shabbat", "74b"), # Has weird API response with nested comment text from Rosh
     TestAmud("Tamid", "25b"), # No Rashi
