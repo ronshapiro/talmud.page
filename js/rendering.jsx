@@ -693,6 +693,11 @@ class TalmudRenderer extends Renderer {
         className: "rashba",
       },
       {
+        englishName: "Rashbam",
+        hebrewName: 'רשב״ם',
+        className: "rashbam",
+      },
+      {
         englishName: "Maharsha",
         hebrewName: 'מהרש"א',
         className: "maharsha",

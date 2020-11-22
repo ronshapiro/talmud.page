@@ -433,6 +433,9 @@ _COMMENTARIES = [
         "englishName": "Rashba",
     },
     {
+        "englishName": "Rashbam",
+    },
+    {
         "englishName": "Maharsha",
         "englishNamePattern": re.compile("(Chidushei Halachot|Chidushei Agadot)"),
     },

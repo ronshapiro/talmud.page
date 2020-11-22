@@ -3,6 +3,7 @@
 
 _TITLES_TO_BOLDIFY = (
     "Rashi",
+    "Rashbam",
     "Tosafot",
 )
 
