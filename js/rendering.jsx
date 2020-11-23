@@ -491,6 +491,14 @@ class Renderer {
           commentaries.Translation = commentaries.Steinsaltz;
           commentaries.Translation.comments[0].en = section.en;
           delete commentaries.Steinsaltz;
+        } else if (section.ref.indexOf("Hadran ") === 0) {
+          commentaries.Translation = {
+            comments: [{
+              ref: section.ref,
+              en: section.en,
+              he: "",
+            }],
+          };
         }
       }
     }

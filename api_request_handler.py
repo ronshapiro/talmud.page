@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from enum import Enum
+from hadran import hadran_sections
 from hebrew import strip_hebrew_nonletters
 from source_formatting.commentary_prefixes import CommentaryPrefixStripper
 from source_formatting.dibur_hamatchil import bold_diburei_hamatchil
@@ -60,6 +61,12 @@ class AbstractApiRequestHandler(object):
     def _make_id(self, *args):
         raise NotImplementedError()
 
+    def _make_sub_ref(self, main_ref, index):
+        return f"{main_ref}.{index + 1}"
+
+    def _section_splitter(self):
+        return ":"
+
     def _translate_hebrew_text(self, text):
         return text
 
@@ -89,14 +96,14 @@ class AbstractApiRequestHandler(object):
         except Exception:
             _raise_bad_results_exception()
 
-        result = {"id": self._make_id(*args)}
-
         main_json = results_as_json[0]
-        for i in ["title"]:
-            result[i] = main_json[i]
+
+        result = {
+            "id": self._make_id(*args),
+            "title": main_json.get("title", main_json["indexTitle"])
+        }
 
         main_ref = main_json["ref"]
-
         hebrew = main_json["he"]
         english = main_json["text"]
 
@@ -117,26 +124,25 @@ class AbstractApiRequestHandler(object):
             sections.append({
                 "he": self._translate_hebrew_text(hebrew[i]),
                 "en": self._translate_english_text(english[i]),
-                "ref": f"{main_ref}.{i + 1}",
+                "ref": self._make_sub_ref(main_ref, i),
                 "commentary": Commentary.create(),
             })
 
-        section_prefix = f"{main_ref}:"
+        section_prefix = f"{main_ref}{self._section_splitter()}"
         for comment in main_json["commentary"]:
             self._add_comment_to_result(comment, sections, section_prefix)
 
         for secondary_json in results_as_json[1:]:
             self._add_second_level_comments_to_result(secondary_json, sections)
 
-        for section in sections:
-            self._post_process_section(section)
+        sections = list(map(self._post_process_section, sections))
 
         sections = self._post_process_all_sections(sections, *args)
         if len(sections) == 0:
             self._print(f"No sections for {', '.join(args)}")
 
         for section in sections:
-            if "commentary" in section:
+            if "commentary" in section and type(section["commentary"]) == Commentary:
                 section["commentary"] = section["commentary"].to_dict()
 
         result["sections"] = sections
@@ -169,7 +175,7 @@ class AbstractApiRequestHandler(object):
         # page
         for anchor in comment["anchorRefExpanded"]:
             if anchor.startswith(section_prefix):
-                return int(anchor.split(":")[1]) - 1
+                return int(anchor.split(self._section_splitter())[1]) - 1
 
     def _add_second_level_comments_to_result(self, secondary_api_response, sections):
         if "commentary" not in secondary_api_response:
@@ -238,6 +244,8 @@ class ApiRequestHandler(AbstractApiRequestHandler):
             section["commentary"] = Commentary.create()
             section["hadran"] = True
 
+        return section
+
     def _post_process_all_sections(self, sections, masechet, amud):
         if masechet == "Nazir" and amud == "33b":
             return [{
@@ -246,6 +254,9 @@ class ApiRequestHandler(AbstractApiRequestHandler):
                 "commentary": Commentary.create(),
                 "ref": "synthetic",
             }]
+
+        if masechtot.MASECHTOT_BY_CANONICAL_NAME[masechet].end == amud:
+            sections += hadran_sections(masechet)
         return sections
 
     def _resolve_duplicated_out_and_nested_comments(self, section):
