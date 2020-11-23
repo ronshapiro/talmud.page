@@ -141,9 +141,11 @@ class CommentarySection extends Component {
           throw new Error(`Could not find ${commentaryClassName} commentary in ${sectionLabel}`);
         }
       }
-      output.push(this.renderTableRow(
-        commentaryKind.englishName,
-        this.renderButton(commentaryKind), ""));
+      output.push(
+        this.renderTableRow(
+          commentaryKind.englishName,
+          this.renderButton(commentaryKind, true, commentary),
+          ""));
       commentary.comments.forEach(comment => {
         output.push(
           <CommentRow
@@ -197,7 +199,7 @@ class CommentarySection extends Component {
     const buttons = [];
     this.forEachCommentary(commentaries, (commentary, commentaryKind) => {
       if (!getOrdering(sectionLabel).includes(commentaryKind.className)) {
-        buttons.push(this.renderButton(commentaryKind));
+        buttons.push(this.renderButton(commentaryKind, false, commentary));
       }
     });
     return this.renderTableRow(`${sectionLabel} show buttons`, buttons, "");
@@ -205,7 +207,7 @@ class CommentarySection extends Component {
 
   buttonToFocusAfterEnter = createRef();
 
-  renderButton(commentaryKind) {
+  renderButton(commentaryKind, isShowing, commentary) {
     const {toggleShowing, sectionLabel} = this.props;
 
     if (localStorage.showTranslationButton !== "yes"
@@ -238,7 +240,7 @@ class CommentarySection extends Component {
     return applyButtonToFocusRef(
       <a
         key={commentaryKind.englishName}
-        className={this.buttonClasses(commentaryKind)}
+        className={this.buttonClasses(commentaryKind, isShowing, commentary)}
         tabIndex="0"
         onClick={onClick}
         onKeyUp={onKeyUp}>
@@ -246,11 +248,14 @@ class CommentarySection extends Component {
       </a>);
   }
 
-  buttonClasses(commentaryKind) {
+  buttonClasses(commentaryKind, isShowing, commentary) {
     return [
       "commentary_header",
       commentaryKind.className,
       commentaryKind.cssCategory,
+      !isShowing && commentary.commentary && commentary.commentary["Personal Notes"]
+        ? "has-nested-commentaries"
+        : undefined,
     ].filter(x => x).join(" ");
   }
 

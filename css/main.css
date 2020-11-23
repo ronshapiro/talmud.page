@@ -123,6 +123,16 @@ html, body {
     display: inline-block;
 }
 
+.commentary_header.has-nested-commentaries::after {
+    /* Draw over the parent's underline and effectively erase it */
+    text-decoration: underline;
+    text-decoration-color: var(--background-color);
+
+    padding-inline-start: 2px;
+    content: "+";
+    font-size: smaller;
+}
+
 #main-contents {
     margin: auto;
     max-width: var(--max-width);
