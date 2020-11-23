@@ -531,7 +531,7 @@ class DriveClient {
     ranges.sort(rangeSorter);
 
     return {
-      comments: ranges.map(range => {
+      comments: ranges.map((range, index) => {
         const text = this.documentText(range.startIndex, range.endIndex);
         const allText = text.join("");
         const hebrew = allText.match(HEBREW_LETTERS) || [];
@@ -539,6 +539,7 @@ class DriveClient {
         return {
           en: english.length > hebrew.length ? text : "",
           he: hebrew.length >= english.length ? text : "",
+          ref: `${ref}-personal${index}`,
         };
       }),
     };
