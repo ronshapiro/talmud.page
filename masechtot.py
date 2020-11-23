@@ -184,7 +184,7 @@ MASECHTOT = [
     ),
     Masechet(
         canonical_name = "Pesachim",
-        aliases = ("פסחים"),
+        aliases = ("Pesahim", "פסחים"),
         end = "121b",
     ),
     Masechet(
