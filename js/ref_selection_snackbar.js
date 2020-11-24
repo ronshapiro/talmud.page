@@ -30,6 +30,7 @@ const findSefariaRef = (node) => {
         return {
           ref,
           parentRef: $parentElement.parent().closest("[sefaria-ref]").attr("sefaria-ref"),
+          link: $parentElement.attr("tp-link"),
           text: $($parentElement.find(".hebrew")[0]).text(),
           translation: isTranslationOfSourceText
             ? undefined
@@ -62,14 +63,24 @@ const onSelectionChange = () => {
     return;
   }
 
-  const {ref} = sefariaRef;
+  const {ref, link} = sefariaRef;
   const sefariaUrl = `https://www.sefaria.org/${ref.replace(/ /g, "_")}`;
   gtag("event", "selection_change_snackbar.shown", {ref});
   selectionSnackbarRef = ref;
   // don't allow buttons to refer to the selection that triggered the snackbar, since the selection
   // may have changed
   selection = undefined;
-  const buttons = [
+  const buttons = [];
+  if (link) {
+    buttons.push({
+      text: "View on talmud.page",
+      onClick: () => {
+        gtag("event", "view_on_talmud_page", {ref});
+        window.open(link + `?ref_link=${ref}`);
+      },
+    });
+  }
+  buttons.push(
     {
       text: "View on Sefaria",
       onClick: () => {
@@ -97,7 +108,7 @@ const onSelectionChange = () => {
         window.open(`mailto:corrections@sefaria.org?subject=${subject}&body=${body}`);
       },
     },
-  ];
+  );
   if (driveClient.isSignedIn && !driveClient.errors.length) {
     buttons.push({
       text: "Add Note",

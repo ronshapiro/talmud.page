@@ -73,6 +73,7 @@ class CommentRow extends Component {
         hebrew={hebrew}
         english={english}
         sefaria-ref={commentaryKind.englishName === "Personal Notes" ? "ignore" : comment.ref}
+        link={comment.link}
         classes={["commentaryRow", /* used in CSS */ commentaryKind.className]}
         />
     );

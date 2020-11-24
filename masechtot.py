@@ -469,6 +469,12 @@ class QueryResult(object):
     def __str__(self):
         return "{masechet: %s, start: %s, end: %s}" % (self.masechet, self.start, self.end)
 
+    def to_url_pathname(self):
+        pathname = f"/{self.masechet}/{self.start}"
+        if self.end:
+            pathname += f"/to/{self.end}"
+        return pathname
+
 
 class InvalidQueryException(Exception):
     def __init__(self, message):

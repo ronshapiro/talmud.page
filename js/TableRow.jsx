@@ -145,6 +145,7 @@ function TableRow(props) {
     id,
     overrideFullRow,
     isHiddenRow,
+    link,
   } = props;
 
   const [isEnglishExpanded, setIsEnglishExpanded] = useState(isHiddenRow || false);
@@ -228,6 +229,7 @@ function TableRow(props) {
       id={id}
       className={_concat(["table-row"], classes).join(" ")}
       sefaria-ref={props["sefaria-ref"]}
+      tp-link={link}
       >
       {cells}
     </div>
@@ -240,6 +242,7 @@ TableRow.propTypes = {
   classes: PropTypes.arrayOf(PropTypes.string),
   hebrewDoubleClickListener: PropTypes.func,
   "sefaria-ref": PropTypes.string,
+  link: PropTypes.string,
   overrideFullRow: PropTypes.bool,
   isHiddenRow: PropTypes.bool,
 };

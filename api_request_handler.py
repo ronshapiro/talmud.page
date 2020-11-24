@@ -291,11 +291,13 @@ class RemovalStrategy(Enum):
     REMOVE_TOP_LEVEL = 1
     REMOVE_NESTED = 2
 
-def is_masechet_ref(ref):
+
+parse_masechtot = masechtot.Masechtot().parse
+
+def _masechet_ref(ref):
     for masechet in masechtot.MASECHTOT_BY_CANONICAL_NAME.keys():
         if ref.startswith(masechet):
-            return True
-    return False
+            return parse_masechtot(ref.split(":")[0])
 
 def strip_ref_segment_number(ref):
     if ":" not in ref:
@@ -343,11 +345,15 @@ class Comment(object):
         comment.ref = sefaria_comment["ref"]
         comment.source_ref = sefaria_comment["sourceRef"]
         comment.source_he_ref = sefaria_comment["sourceHeRef"]
-        if english_name == "Mesorat Hashas" and is_masechet_ref(comment.source_ref):
+
+        masechet_ref = _masechet_ref(comment.source_ref)
+        if english_name == "Mesorat Hashas" and masechet_ref:
             comment.source_ref = strip_ref_segment_number(comment.source_ref)
             comment.source_he_ref = strip_ref_segment_number(comment.source_he_ref)
+            comment.talmud_page_link = masechet_ref.to_url_pathname()
         else:
             comment.source_he_ref = strip_ref_quotation_marks(comment.source_he_ref)
+            comment.talmud_page_link = None
         comment.english_name = english_name
 
         return comment
@@ -360,6 +366,8 @@ class Comment(object):
             "sourceRef": self.source_ref,
             "sourceHeRef": self.source_he_ref,
         }
+        if self.talmud_page_link:
+            as_dict["link"] = self.talmud_page_link
         return as_dict
 
 class Commentary(object):

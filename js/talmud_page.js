@@ -124,6 +124,37 @@ const firstFullyOnScreenSection = () => {
   return undefined;
 };
 
+const maybeSetInitialScrollPosition = () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const refLink = urlParams.get("ref_link");
+  if (refLink) {
+    const urlRefLink = refLink.replace(/:/g, ".");
+    const linkedSection = $(`[sefaria-ref="${urlRefLink}"]`);
+    setTimeout(() => {
+      setWindowTop(linkedSection);
+      urlParams.delete("ref_link");
+      const {origin, pathname} = window.location;
+      const paramsString = urlParams.keys().next().value ? `?${urlParams}` : "";
+      window.history.replaceState({}, "", `${origin}${pathname}${paramsString}`);
+    }, 10);
+    return;
+  }
+
+  let scrollToSection = window.location.hash;
+  if (scrollToSection.length === 0
+      && localStorage.restoreSectionOnRefresh
+      && localStorage.restoreSectionOnRefresh.length > 0) {
+    const savedSection = "#" + localStorage.restoreSectionOnRefresh;
+    if ($(savedSection).length) {
+      scrollToSection = savedSection;
+    }
+  }
+
+  if (scrollToSection.length > 0) {
+    setTimeout(() => setWindowTop(scrollToSection), 10);
+  }
+};
+
 const main = () => {
   const metadata = amudMetadata();
   gtag("set", {masechet: metadata.masechet});
@@ -141,18 +172,7 @@ const main = () => {
         renderer.declareReady();
         $("#initial-load-spinner").hide();
 
-        let scrollToSection = window.location.hash;
-        if (scrollToSection.length === 0
-            && localStorage.restoreSectionOnRefresh
-            && localStorage.restoreSectionOnRefresh.length > 0) {
-          const savedSection = "#" + localStorage.restoreSectionOnRefresh;
-          if ($(savedSection).length) {
-            scrollToSection = savedSection;
-          }
-        }
-        if (scrollToSection.length > 0) {
-          setTimeout(() => setWindowTop(scrollToSection), 10);
-        }
+        maybeSetInitialScrollPosition();
 
         setInterval(() => {
           const section = firstFullyOnScreenSection();
