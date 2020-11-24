@@ -11,6 +11,7 @@ from source_formatting.image_numbering import ImageNumberingFormatter
 from source_formatting.jastrow import JastrowReformatter
 from source_formatting.section_symbol import SectionSymbolRemover
 from source_formatting.sefaria_link_sanitizer import SefariaLinkSanitizer
+from source_formatting.shulchan_arukh_remove_header import ShulchanArukhHeaderRemover
 import asyncio
 import httpx
 import re
@@ -315,6 +316,11 @@ def strip_ref_quotation_marks(ref):
     return " ".join(parts)
 
 
+SHULCHAN_ARUKH_HEADERS = {}
+with open("precomputed_texts/shulchan_arukh_headings.json", "r") as f:
+    import json
+    SHULCHAN_ARUKH_HEADERS = json.load(f)
+
 class Comment(object):
     """Represents a single comment on a text.
     """
@@ -356,6 +362,15 @@ class Comment(object):
             comment.talmud_page_link = None
         comment.english_name = english_name
 
+        comment.subtitle = None
+        if english_name == "Shulchan Arukh":
+            book, chapter = comment.ref.split("Shulchan Arukh, ")[1].split(":")[0].rsplit(" ", 1)
+            subtitle = SHULCHAN_ARUKH_HEADERS[book][chapter]
+            if subtitle:
+                comment.subtitle = {"he": SHULCHAN_ARUKH_HEADERS[book][chapter], "en": ""}
+                if comment.ref.endswith(":1"):
+                    comment.hebrew = ShulchanArukhHeaderRemover.process(comment.hebrew)
+
         return comment
 
     def to_dict(self):
@@ -368,6 +383,8 @@ class Comment(object):
         }
         if self.talmud_page_link:
             as_dict["link"] = self.talmud_page_link
+        if self.subtitle:
+            as_dict["subtitle"] = self.subtitle
         return as_dict
 
 class Commentary(object):

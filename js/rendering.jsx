@@ -65,6 +65,8 @@ class CommentRow extends Component {
     commentaryKind: PropTypes.object,
   };
 
+  static contextType = ConfigurationContext;
+
   renderTableRow(key, hebrew, english) {
     const {comment, commentaryKind} = this.props;
     return (
@@ -89,6 +91,15 @@ class CommentRow extends Component {
           "title",
           <strong>{comment.sourceHeRef}</strong>,
           isEmptyText(comment.en) ? "" : <strong>{comment.sourceRef}</strong>));
+      if (comment.subtitle) {
+        output.push(
+          this.renderTableRow(
+            "subtitle",
+            <strong>{comment.subtitle.he}</strong>,
+            this.context.translationOption === "just-hebrew" || stringOrListToString(comment.en).length === 0
+              ? undefined
+              : <strong>{comment.subtitle.en}</strong>));
+      }
     }
 
     if (Array.isArray(comment.he) && Array.isArray(comment.en)
