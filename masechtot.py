@@ -335,6 +335,7 @@ MASECHTOT = [
 ]
 
 MASECHTOT_BY_CANONICAL_NAME = {m.canonical_name: m for m in MASECHTOT}
+MASECHTOT_BY_CANONICAL_NAME.update({m.canonical_name.replace(" ", "_"): m for m in MASECHTOT})
 
 class Masechtot(object):
     def __init__(self):
