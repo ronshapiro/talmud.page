@@ -6,6 +6,7 @@ from api_request_handler import ApiRequestHandler
 from api_request_handler import ApiException
 from api_request_handler import RealRequestMaker
 from flask import Flask
+from flask import has_request_context
 from flask import jsonify
 from flask import redirect
 from flask import render_template
@@ -19,6 +20,8 @@ from masechtot import UnknownMasechetNameException
 from masechtot import next_amud
 from masechtot import previous_amud
 import cachetools
+import flask.logging
+import logging
 import math
 import os
 import queue
@@ -29,10 +32,38 @@ import threading
 import traceback
 import uuid
 
+def print(*args):
+    raise AssertionError(f"Use app.logger instead of print(). Called with: {' '.join(args)}")
+
 random_hash = ''.join(random.choice(string.ascii_letters) for i in range(7))
 app = Flask(__name__)
 masechtot = Masechtot()
-api_request_handler = ApiRequestHandler(RealRequestMaker())
+api_request_handler = ApiRequestHandler(RealRequestMaker(), print_function=app.logger.debug)
+
+class RequestFormatter(logging.Formatter):
+    width = 1
+
+    def format(self, record):
+        header = f"{record.levelname}({record.module}.py)"
+        self.width = max(self.width, len(header))
+        header = header.ljust(self.width)
+        if has_request_context():
+            if app.debug:
+                path = request.full_path
+                if path.endswith("?"):
+                    path = path[:-1]
+            else:
+                path = request.url
+            if not app.debug:
+                path += f" by {request.remote_addr}"
+            header = f"{header} | {path}"
+        record.header = header
+
+        return super().format(record)
+
+flask.logging.default_handler.setFormatter(RequestFormatter(
+    "%(header)s | %(message)s"
+))
 
 @app.before_request
 def strip_www():
@@ -174,7 +205,7 @@ def cache_amud_response_in_background():
         masechet, amud = amudim_to_cache_queue.get()
         get_and_cache_amud_json(masechet, amud, verb="Precaching")
         amudim_to_cache_queue.task_done()
-        print(f"Queue size: {amudim_to_cache_queue.qsize()}")
+        app.logger.debug(f"Queue size: {amudim_to_cache_queue.qsize()}")
 
 threading.Thread(target=cache_amud_response_in_background, daemon=True).start()
 
@@ -183,14 +214,14 @@ def get_and_cache_amud_json(masechet, amud, verb="Requesting"):
     response = amud_cache.get(cache_key)
     if not response:
         try:
-            print(f"{verb} {masechet} {amud}")
+            app.logger.debug(f"{verb} {masechet} {amud}")
             response = api_request_handler.amud_api_request(masechet, amud)
-            print(f"{verb} {masechet} {amud} --- Done")
+            app.logger.debug(f"{verb} {masechet} {amud} --- Done")
         except ApiException as e:
             return {"error": e.message, "code": e.internal_code}, e.http_status
         except Exception:
             _uuid = str(uuid.uuid4())
-            print(f"Error with uuid: {_uuid}")
+            app.logger.error(f"Error with uuid: {_uuid}")
             traceback.print_exc()
             return {"error": "An unknown exception occurred", "id": _uuid}, 500
     # no matter what, always update the LRU status

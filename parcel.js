@@ -1,4 +1,5 @@
 /* eslint import/no-extraneous-dependencies: ["error", {"devDependencies": true}] */
+const chalk = require('chalk');
 const Bundler = require('parcel-bundler');
 const fs = require('fs');
 const { spawn } = require("child_process");
@@ -49,8 +50,8 @@ const startFlask = () => {
       FLASK_ENV: "development",
     },
   });
-  flaskSubprocess.stdout.on("data", (data) => process.stdout.write(data));
-  flaskSubprocess.stderr.on("data", (data) => process.stderr.write(data));
+  flaskSubprocess.stdout.pipe(process.stdout);
+  flaskSubprocess.stderr.pipe(process.stderr);
   flaskSubprocess.on("exit", () => {
     flaskDied = true;
   });
@@ -66,6 +67,20 @@ if (!isProd) {
     } else if (flaskDied) {
       startFlask();
     }
+
+    const jsFiles = fs.readdirSync("js").map(x => `js/${x}`);
+    const eslintProc = spawn("pre-commit/check_eslint.sh", jsFiles);
+    eslintProc.stdout.on("data", (data) => {
+      String(data).split("\n").forEach(line => {
+        if (/ +[0-9]+:[0-9]+ +warning/.test(line)) {
+          line = chalk.yellow(line);
+        } else if (/ +[0-9]+:[0-9]+ +error/.test(line)) {
+          line = chalk.red(line);
+        }
+        process.stdout.write(line + "\n");
+      });
+    });
+    eslintProc.stderr.on("data", (data) => process.stderr.write(chalk.red(data)));
   });
   bundler.on("buildError", () => {
     if (flaskSubprocess) {
