@@ -4,6 +4,7 @@
 from enum import Enum
 from hadran import hadran_sections
 from hebrew import strip_hebrew_nonletters
+from source_formatting.commentary_parentheses import CommentaryParenthesesTransformer
 from source_formatting.commentary_prefixes import CommentaryPrefixStripper
 from source_formatting.dibur_hamatchil import bold_diburei_hamatchil
 from source_formatting.hebrew_small_to_emphasis import HebrewSmallToEmphasisTagTranslator
@@ -335,10 +336,13 @@ class Comment(object):
             # TODO: this may no longer happen anymore
             english = ""
 
-        hebrew = HebrewSmallToEmphasisTagTranslator.process(hebrew)
         hebrew = bold_diburei_hamatchil(hebrew, english_name)
-        hebrew = CommentaryPrefixStripper.process(hebrew)
-        hebrew = ImageNumberingFormatter.process(hebrew)
+        for processor in [
+                HebrewSmallToEmphasisTagTranslator,
+                CommentaryPrefixStripper,
+                CommentaryParenthesesTransformer,
+                ImageNumberingFormatter]:
+            hebrew = processor.process(hebrew, english_name=english_name)
 
         english = standard_english_transformations(english)
         if english_name == "Jastrow":
