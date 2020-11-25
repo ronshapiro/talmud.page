@@ -105,11 +105,41 @@ def _validate_amudim(masechet, *amudim):
     if non_existent_amudim:
         raise AmudDoesntExistException(masechet, non_existent_amudim)
 
+def are_amudim_in_reverse_order(start, end):
+    start_number = int(start[:-1])
+    end_number = int(end[:-1])
+
+    return (
+        start_number > end_number
+        or (start_number == end_number and start[-1] == "b" and end[-1] == "a"))
+
+def redirect_for_full_daf(masechet, start, end):
+    original_start = start
+    original_end = end
+
+    if start.isdigit():
+        start = f"{start}a"
+    if end.isdigit():
+        end = f"{end}b"
+    if (not masechtot.does_amud_exist(masechet, end) and (
+            masechtot.does_amud_exist(masechet, previous_amud(end)))):
+        end = previous_amud(end)
+    if (not masechtot.does_amud_exist(masechet, start) and (
+            masechtot.does_amud_exist(masechet, next_amud(start)))):
+        start = next_amud(start)
+
+    if are_amudim_in_reverse_order(start, end):
+        return redirect_for_full_daf(masechet, original_end, original_start)
+
+    return redirect(url_for("amud_range", masechet = masechet, start = start, end = end))
+
 @app.route("/<masechet>/<amud>")
 def amud(masechet, amud):
     canonical_masechet = masechtot.canonical_url_masechet_name(masechet)
     if canonical_masechet != masechet:
         return redirect(url_for("amud", masechet = canonical_masechet, amud = amud))
+    if amud.isdigit():
+        return redirect_for_full_daf(masechet, amud, amud)
     _validate_amudim(masechet, amud)
     return render_compiled_template("talmud_page.html", title = f"{masechet} {amud}")
 
@@ -122,12 +152,11 @@ def amud_range(masechet, start, end):
     if canonical_masechet != masechet:
         return redirect(url_for(
             "amud_range", masechet = canonical_masechet, start = start, end = end))
+    if start.isdigit() or end.isdigit():
+        return redirect_for_full_daf(masechet, start, end)
     _validate_amudim(masechet, start, end)
-    start_number = int(start[:-1])
-    end_number = int(end[:-1])
 
-    if start_number > end_number or (
-            start_number == end_number and start[-1] == "b" and end[-1] == "a"):
+    if are_amudim_in_reverse_order(start, end):
         return redirect(url_for(
             "amud_range", masechet = canonical_masechet, start = end, end = start))
 
