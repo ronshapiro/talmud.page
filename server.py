@@ -240,8 +240,11 @@ def amud_json(masechet, amud):
 
     response, code = get_and_cache_amud_json(masechet, amud)
 
-    amudim_to_cache_queue.put((masechet, previous_amud(amud)))
-    amudim_to_cache_queue.put((masechet, next_amud(amud)))
+    for possible_amud in [previous_amud(amud), next_amud(amud)]:
+        if masechtot.does_amud_exist(masechet, possible_amud):
+            amudim_to_cache_queue.put((masechet, possible_amud))
+        else:
+            app.logger.error(f"Ignoring {possible_amud}")
 
     return jsonify(response), code
 
