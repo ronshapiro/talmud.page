@@ -1,5 +1,5 @@
 from source_formatting.html_parser import BaseHtmlTranslator
-import json
+from util.json_files import write_json
 import re
 import requests
 
@@ -99,15 +99,7 @@ all_results = {
     "Even HaEzer": get_titles("Even HaEzer", EH_SIMANIM),
 }
 
-with open("precomputed_texts/shulchan_arukh_headings.json", "w+") as f:
-    f.write(
-        json.dumps(
-            all_results,
-            ensure_ascii = False,
-            indent = 2,
-            sort_keys = True))
-    f.write("\n")
-
+write_json("precomputed_texts/shulchan_arukh_headings.json", all_results)
 
 # for i in [22, 29, 417, 419, 430, 486, 530, 596, 598, 599, 603, 625, 642, 655, 657, 661, 679, 683]:
 #     get_title("Orach Chayim", i)

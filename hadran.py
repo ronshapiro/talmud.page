@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+from util.json_files import write_json
 import json
 import masechtot
 
@@ -45,11 +46,4 @@ if __name__ == '__main__':
                              )
             return section
 
-    with open(_PATH, "w") as f:
-        f.write(
-            json.dumps(
-                HadranRequestHandler(RealRequestMaker()).handle_request(),
-                ensure_ascii = False,
-                indent = 2,
-                sort_keys = True))
-        f.write("\n")
+    write_json(_PATH, HadranRequestHandler(RealRequestMaker()).handle_request())

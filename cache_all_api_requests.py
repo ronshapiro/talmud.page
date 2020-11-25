@@ -1,23 +1,15 @@
 import argparse
 import api_request_handler
-import json
 import os
 import traceback
 from api_request_handler import ApiException
 from masechtot import MASECHTOT
 from masechtot import next_amud
+from util.json_files import write_json
 
 parser = argparse.ArgumentParser(description='Test')
 parser.add_argument("--overwrite", action="store_const", const=True)
 args = parser.parse_args()
-
-def write_json(file_name, data):
-    with open(file_name, "w") as output_file:
-        json.dump(data,
-                  output_file,
-                  ensure_ascii = False,
-                  sort_keys = True)
-        output_file.write("\n")
 
 request_handler = api_request_handler.ApiRequestHandler(
     api_request_handler.RealRequestMaker(),

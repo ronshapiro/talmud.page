@@ -1,3 +1,4 @@
+from util.json_files import write_json
 import api_request_handler
 import argparse
 import json
@@ -56,15 +57,6 @@ def doTest():
         expected = json.loads(open(test_amud.output_file_path(), "r").read())
         if actual != expected:
             raise AssertionError("Not equal for %s" % test_amud)
-
-def write_json(file_name, data):
-    with open(file_name, "w") as output_file:
-        json.dump(data,
-                  output_file,
-                  ensure_ascii = False,
-                  indent = 2,
-                  sort_keys = True)
-        output_file.write("\n")
 
 class RecordingRequestMaker(object):
     def __init__(self):
