@@ -10,6 +10,7 @@ from source_formatting.dibur_hamatchil import bold_diburei_hamatchil
 from source_formatting.hebrew_small_to_emphasis import HebrewSmallToEmphasisTagTranslator
 from source_formatting.image_numbering import ImageNumberingFormatter
 from source_formatting.jastrow import JastrowReformatter
+from source_formatting.otzar_laazei_rashi import format_otzar_laazei_rashi
 from source_formatting.section_symbol import SectionSymbolRemover
 from source_formatting.sefaria_link_sanitizer import SefariaLinkSanitizer
 from source_formatting.shulchan_arukh_remove_header import ShulchanArukhHeaderRemover
@@ -282,7 +283,8 @@ class ApiRequestHandler(AbstractApiRequestHandler):
             return RemovalStrategy.REMOVE_NESTED
         # TODO: it would be great to define this in _COMMENTARIES if possible so that all metadata
         # for commentaries is defined in one location.
-        elif nested_comment.english_name in ("Maharsha", "Maharshal", "Meir Lublin"):
+        elif nested_comment.english_name in (
+                "Maharsha", "Maharshal", "Meir Lublin", "Otzar Laazei Rashi"):
             return RemovalStrategy.REMOVE_TOP_LEVEL
 
         self._print("Duplicated comment (Ref: %s) on %s and %s" % (
@@ -335,6 +337,9 @@ class Comment(object):
             # assume that the equivalent text is Hebrew.
             # TODO: this may no longer happen anymore
             english = ""
+
+        if english_name == "Otzar Laazei Rashi":
+            hebrew = format_otzar_laazei_rashi(hebrew)
 
         hebrew = bold_diburei_hamatchil(hebrew, english_name)
         for processor in [
@@ -397,11 +402,16 @@ class Commentary(object):
 
     def create():
         commentary = Commentary()
+        commentary.comments_by_ref = {}
         commentary.comments = []
         commentary.nested_commentaries = {}
         return commentary
 
     def add_comment(self, comment):
+        if comment.ref in self.comments_by_ref:
+            return
+        self.comments_by_ref[comment.ref] = True
+
         self.comments.append(comment)
 
     def add_nested_comment(self, parent_commentary_name, comment):
@@ -458,6 +468,9 @@ _COMMENTARIES = [
     },
     {
         "englishName": "Rashi",
+    },
+    {
+        "englishName": "Otzar Laazei Rashi",
     },
     {
         "englishName": "Tosafot",

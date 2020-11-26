@@ -698,6 +698,11 @@ class TalmudRenderer extends Renderer {
         className: "rashi",
       },
       {
+        englishName: "Otzar Laazei Rashi",
+        hebrewName: 'אוצר לעזי רש"י',
+        className: "otzar-laazei-rashi",
+      },
+      {
         englishName: "Tosafot",
         hebrewName: "תוספות",
         className: "tosafot",
