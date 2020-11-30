@@ -376,7 +376,7 @@ class Comment(object):
             book, chapter = comment.ref.split("Shulchan Arukh, ")[1].split(":")[0].rsplit(" ", 1)
             subtitle = SHULCHAN_ARUKH_HEADERS[book][chapter]
             if subtitle:
-                comment.subtitle = {"he": SHULCHAN_ARUKH_HEADERS[book][chapter], "en": ""}
+                comment.source_he_ref = f"{comment.source_he_ref} - {subtitle}"
                 if comment.ref.endswith(":1"):
                     comment.hebrew = ShulchanArukhHeaderRemover.process(comment.hebrew)
 
@@ -392,8 +392,6 @@ class Comment(object):
         }
         if self.talmud_page_link:
             as_dict["link"] = self.talmud_page_link
-        if self.subtitle:
-            as_dict["subtitle"] = self.subtitle
         return as_dict
 
 class Commentary(object):
