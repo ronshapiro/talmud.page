@@ -73,7 +73,7 @@ const onSelectionChange = () => {
   const buttons = [];
   if (link) {
     buttons.push({
-      text: "View on talmud.page",
+      text: '<i class="material-icons">open_in_browser</i>',
       onClick: () => {
         gtag("event", "view_on_talmud_page", {ref});
         window.open(link + `?ref_link=${ref}`);
@@ -82,14 +82,14 @@ const onSelectionChange = () => {
   }
   buttons.push(
     {
-      text: "View on Sefaria",
+      text: '<i class="material-icons">open_in_new</i>',
       onClick: () => {
         gtag("event", "view_on_sefaria", {ref});
         window.open(sefariaUrl);
       },
     },
     {
-      text: "Report correction",
+      text: '<i class="material-icons">build</i>',
       onClick: () => {
         gtag("event", "report_correction", {ref});
         const subject = "Sefaria Text Correction from talmud.page";
@@ -111,7 +111,7 @@ const onSelectionChange = () => {
   );
   if (driveClient.isSignedIn && !driveClient.errors.length) {
     buttons.push({
-      text: "Add Note",
+      text: '<i class="material-icons">add_comment</i>',
       onClick: () => {
         const modalContainer = $("#modal-container");
         const noteTextArea = $("#personal-note-entry");
