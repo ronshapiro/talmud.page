@@ -4,9 +4,7 @@ import {snackbars} from "./snackbar.js";
 import {TalmudRenderer} from "./rendering.jsx";
 import {onceDocumentReady} from "./once_document_ready.js";
 import createTestData from "./preferences_sample_data.js";
-
-// TODO: maybe this should live in snackbar?
-const PREFERENCES_PAGE_VERSION = 1;
+import PREFERENCES_PAGE_VERSION from "./preferences_version.js";
 
 const TRANSLATION_OPTIONS = [
   {
@@ -81,6 +79,7 @@ const main = () => {
       option.value,
       // TODO: Update the sample views whenever a preference is changed
       localStorage.wrapTranslations !== "false",
+      localStorage.expandEnglishByDefault === "true",
       /* navigationExtension= */ undefined);
     renderer.register(divId);
     renderer.setAmud({
@@ -126,6 +125,26 @@ const main = () => {
     () => localStorage.showTranslationButton,
     newValue => {
       localStorage.showTranslationButton = newValue;
+    });
+
+  const expandEnglishByDefaultHeaderText = (
+    "Expand English translations by default <br><small>(instead of double clicking to expand the "
+      + "translation when it is longer than the Hebrew)</small>"
+  );
+  radioSection(
+    expandEnglishByDefaultHeaderText, "expand-english-by-default", [
+      {
+        value: "true",
+        displayText: "Yes",
+      },
+      {
+        value: "false",
+        displayText: "No",
+      },
+    ],
+    () => localStorage.expandEnglishByDefault,
+    newValue => {
+      localStorage.expandEnglishByDefault = newValue;
     });
 
   // Make sure mdl always registers new views correctly

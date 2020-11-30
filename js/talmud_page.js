@@ -21,6 +21,7 @@ const masechetNameAndRange = () => {
 const renderer = new TalmudRenderer(
   localStorage.translationOption || "english-side-by-side",
   localStorage.wrapTranslations !== "false",
+  localStorage.expandEnglishByDefault === "true",
   {
     previous: () => computePreviousAmud(amudMetadata().amudStart),
     next: () => computeNextAmud(amudMetadata().amudEnd),

@@ -1,4 +1,6 @@
 /* global $, gtag,  */
+import PREFERENCES_PAGE_VERSION from "./preferences_version.js";
+
 const moveSnackbarOffscreen = () => $("#snackbar").css("bottom", -400);
 const hideSnackbar = () => $("#snackbar").animate({bottom: -400});
 
@@ -54,7 +56,7 @@ const displaySnackbar = (kind, labelHtml, buttons) => {
 
 const hasSeenLatestPreferences = () => {
   if (localStorage.lastViewedVersionOfPreferencesPage) {
-    return parseInt(localStorage.lastViewedVersionOfPreferencesPage) === 1;
+    return parseInt(localStorage.lastViewedVersionOfPreferencesPage) === PREFERENCES_PAGE_VERSION;
   }
   return false;
 };
@@ -64,6 +66,13 @@ const Kind = {
     prefix: "preferencePage",
     customShowLogic: () => {
       return window.location.pathname !== "/preferences" && !hasSeenLatestPreferences();
+    },
+    shouldResetShowCount: () => {
+      if (parseInt(localStorage.lastVersionOfPreferencesPageResetTo) !== PREFERENCES_PAGE_VERSION) {
+        localStorage.lastVersionOfPreferencesPageResetTo = PREFERENCES_PAGE_VERSION;
+        return true;
+      }
+      return false;
     },
     maxShowCount: 3,
     cssClass: "preferencesNudge",
@@ -88,8 +97,11 @@ const Kind = {
 
 const shownCountString = kind => `${kind.prefix}SnackbarShownCount`;
 const shownCount = kind => parseInt(localStorage[shownCountString(kind)]) || 0;
+const setShownCount = (kind, newCount) => {
+  localStorage[shownCountString(kind)] = newCount;
+};
 const incrementShownCount = kind => {
-  localStorage[shownCountString(kind)] = shownCount(kind) + 1;
+  setShownCount(kind, shownCount(kind) + 1);
 };
 
 const dismissedString = kind => `${kind.prefix}SnackbarShownDismissed`;
@@ -141,6 +153,10 @@ class StartupSnackbar extends Snackbar {
 class SnackbarManager {
   constructor() {
     for (const kind of [Kind.PREFERENCES_NUDGE, Kind.GOOGLE_SIGN_IN]) {
+      if (kind.shouldResetShowCount && kind.shouldResetShowCount()) {
+        setShownCount(kind, 0);
+        delete localStorage[dismissedString(kind)];
+      }
       if (kind.customShowLogic()
           && shownCount(kind) < kind.maxShowCount
           && !localStorage[dismissedString(kind)]) {
@@ -164,7 +180,10 @@ $(document).ready(() => {
   moveSnackbarOffscreen();
 
   snackbars.preferencesNudge.show(
-    "Check out the available options!", [
+    (localStorage.lastViewedVersionOfPreferencesPage
+     ? "Check out the updated options!"
+     : "Check out the available options!"),
+    [
       {
         text: "Preferences",
         onClick: () => {

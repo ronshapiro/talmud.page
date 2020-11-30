@@ -146,9 +146,12 @@ function TableRow(props) {
     overrideFullRow,
     isHiddenRow,
     link,
+    expandEnglishByDefault,
   } = props;
 
-  const [isEnglishExpanded, setIsEnglishExpanded] = useState(isHiddenRow || false);
+  const [isEnglishExpanded, setIsEnglishExpanded] = (
+    useState(isHiddenRow || expandEnglishByDefault || false)
+  );
   const context = useConfiguration();
   const hiddenHost = useHiddenHost();
 
@@ -245,6 +248,7 @@ TableRow.propTypes = {
   link: PropTypes.string,
   overrideFullRow: PropTypes.bool,
   isHiddenRow: PropTypes.bool,
+  expandEnglishByDefault: PropTypes.bool,
 };
 
 export default TableRow;

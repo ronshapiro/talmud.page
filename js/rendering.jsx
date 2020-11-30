@@ -77,6 +77,9 @@ class CommentRow extends Component {
         sefaria-ref={commentaryKind.englishName === "Personal Notes" ? "ignore" : comment.ref}
         link={comment.link}
         classes={["commentaryRow", /* used in CSS */ commentaryKind.className]}
+        expandEnglishByDefault={
+          commentaryKind.englishName === "Translation" && this.context.expandEnglishByDefault
+        }
         />
     );
   }
@@ -338,6 +341,7 @@ function Section(props) {
       hebrew={section.he}
       hebrewDoubleClickListener={hebrewDoubleClickListener}
       english={context.translationOption === "english-side-by-side" ? section.en : undefined}
+      expandEnglishByDefault={context.expandEnglishByDefault}
       classes={gemaraContainerClasses} />);
 
   if (section.commentary) {
@@ -482,10 +486,12 @@ class Renderer {
     commentaryTypes,
     translationOption,
     wrapTranslations,
+    expandEnglishByDefault,
     navigationExtension) {
     this._commentaryTypes = commentaryTypes;
     this._translationOption = translationOption;
     this.wrapTranslations = wrapTranslations;
+    this.expandEnglishByDefault = expandEnglishByDefault;
     this.rootComponent = createRef();
     this.amudimRef = createRef();
     this.allAmudim = {};
@@ -533,6 +539,7 @@ class Renderer {
       commentaryTypes: this._commentaryTypes,
       commentaryTypesByClassName: indexCommentaryTypesByClassName(this._commentaryTypes),
       wrapTranslations: this.wrapTranslations,
+      expandEnglishByDefault: this.expandEnglishByDefault,
       hiddenHost,
     };
 
@@ -659,11 +666,12 @@ class Renderer {
 }
 
 class TalmudRenderer extends Renderer {
-  constructor(translationOption, wrapTranslations, navigationExtension) {
+  constructor(translationOption, wrapTranslations, expandEnglishByDefault, navigationExtension) {
     super(
       TalmudRenderer._defaultCommentaryTypes(),
       translationOption,
       wrapTranslations,
+      expandEnglishByDefault,
       navigationExtension);
   }
 
