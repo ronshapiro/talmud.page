@@ -4,10 +4,12 @@
       <span id="modal-label"></span>
       <div class="mdl-textfield mdl-js-textfield" style="width: 100%;">
         {# TODO(drive): detect RTL/LTR #}
-        <textarea class="mdl-textfield__input" type="text" rows="5" id="personal-note-entry">
+        <textarea class="mdl-textfield__input" type="text" rows="5" id="personal-note-entry" dir="rtl">
         </textarea>
       </div>
       <div style="display: flex;">
+        <i id="modal-ltr" class="material-icons modal-direction">format_textdirection_l_to_r</i>
+        <i id="modal-rtl" class="material-icons modal-direction">format_textdirection_r_to_l</i>
         <button class="mdl-button mdl-js-button mdl-js-ripple-effect"
                 style="margin-left: auto;"
                 id="modal-cancel">

@@ -4,6 +4,7 @@
     --snackbar-padding: 10px;
     --background-color: white;
     --table-cell-padding: 8px;
+    --major-color: rgb(255,110,64);
 }
 
 html {
@@ -298,6 +299,21 @@ h2 {
     box-shadow: 0px 0px 10px 5px #888888;
     border-radius: 10px;
     min-height: 150px;
+}
+
+.modal-direction-active {
+    color: var(--major-color);
+}
+.modal-direction {
+    line-height: 36px;
+    padding: 0px 4px;
+}
+
+#modal textarea[dir="ltr"] {
+    text-align: left;
+}
+#modal textarea[dir="rtl"] {
+    text-align: right;
 }
 
 @media only screen and (min-width: 720px) {

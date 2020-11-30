@@ -115,6 +115,18 @@ const onSelectionChange = () => {
       onClick: () => {
         const modalContainer = $("#modal-container");
         const noteTextArea = $("#personal-note-entry");
+        const ltrButton = $("#modal-ltr");
+        const rtlButton = $("#modal-rtl");
+
+        noteTextArea.attr("dir", "rtl");
+        ltrButton.removeClass("modal-direction-active");
+        rtlButton.addClass("modal-direction-active");
+        $(".modal-direction").off("click").on("click", () => {
+          noteTextArea.attr("dir", noteTextArea.attr("dir") === "ltr" ? "rtl" : "ltr");
+          ltrButton.toggleClass("modal-direction-active");
+          rtlButton.toggleClass("modal-direction-active");
+        });
+
         modalContainer.show();
         $("#modal-label").text(`Add a note on ${sefariaRef.ref}`);
         // Get the possibly-updated selection
