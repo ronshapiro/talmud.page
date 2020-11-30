@@ -43,9 +43,8 @@ const updateSnackbar = (kind, labelHtml, buttons) => {
     $(buttonElements[i]).click(buttons[i].onClick);
   }
 
-  if (addingContainer) {
-    $container.hide().slideToggle();
-  }
+  // Ensure that any hide animation finishes immediately and restart the showing of the snackbar
+  $container.stop().hide().slideToggle();
 };
 
 const displaySnackbar = (kind, labelHtml, buttons) => {
