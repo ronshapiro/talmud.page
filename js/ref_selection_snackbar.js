@@ -1,5 +1,5 @@
-/* global $, gtag,  */
-
+/* global gtag,  */
+import $ from "jquery";
 import {driveClient} from "./google_drive.js";
 import {snackbars} from "./snackbar.js";
 

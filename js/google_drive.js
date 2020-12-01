@@ -1,4 +1,4 @@
-/* global gapi, gtag, $ */
+/* global gapi, gtag */
 import {v4 as uuid} from "uuid";
 import {amudMetadata} from "./amud.js";
 import {refSorter} from "./ref_sorter.js";
@@ -536,10 +536,9 @@ class DriveClient {
         const allText = text.join("");
         const hebrew = allText.match(HEBREW_LETTERS) || [];
         const english = allText.match(LATIN_LETTERS) || [];
-        const escapedText = text.map(x => $("<p>").text(x).html());
         return {
-          en: english.length > hebrew.length ? escapedText : "",
-          he: hebrew.length >= english.length ? escapedText : "",
+          en: english.length > hebrew.length ? text : "",
+          he: hebrew.length >= english.length ? text : "",
           ref: `${ref}-personal${index}`,
         };
       }),

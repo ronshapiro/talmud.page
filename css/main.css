@@ -369,3 +369,16 @@ h2 {
 .image-ref {
     float: left;
 }
+
+.personal-comment-bold {
+    font-weight: 700;
+}
+.personal-comment-italic {
+    font-style: italic;
+}
+.personal-comment-underline {
+    text-decoration: underline;
+}
+.personal-comment-strikethrough {
+    text-decoration: line-through;
+}

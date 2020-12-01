@@ -1,4 +1,5 @@
-/* global $, gtag, componentHandler */
+/* global gtag, componentHandler */
+import $ from "jquery";
 import React, {
   Component,
   createRef,

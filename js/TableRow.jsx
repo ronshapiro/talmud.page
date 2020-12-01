@@ -1,4 +1,4 @@
-/* global $ */
+import $ from "jquery";
 import React, {
   Component,
   createRef,

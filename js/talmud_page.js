@@ -1,5 +1,5 @@
-/* global $, gtag,  */
-
+/* global gtag,  */
+import $ from "jquery";
 import {snackbars} from "./snackbar.js";
 import {TalmudRenderer} from "./rendering.jsx";
 import _concat from "./concat.js";

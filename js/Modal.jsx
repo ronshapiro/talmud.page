@@ -1,8 +1,9 @@
-/* global $, componentHandler */
+/* global componentHandler */
 import React, {
   useRef,
   useEffect,
 } from "react";
+import $ from "jquery";
 import PropTypes from 'prop-types';
 
 function Modal(props) {

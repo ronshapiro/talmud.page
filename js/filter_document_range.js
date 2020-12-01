@@ -1,3 +1,5 @@
+const $ = require("jquery");
+
 const inRange = (start, end) => (x) => {
   if (x.startIndex === start) {
     return true;
@@ -7,21 +9,22 @@ const inRange = (start, end) => (x) => {
   return x.startIndex < end;
 };
 
+const updateText = (element, updated) => {
+  const original = element.textRun.content;
+  if (updated === original) {
+    return element;
+  }
+  return {
+    ...element,
+    textRun: {
+      ...element.textRun,
+      content: updated,
+    },
+  };
+};
+
 const trimContents = (elements) => (
-  elements.map(element => {
-    const original = element.textRun.content;
-    const trimmed = original.trim();
-    if (trimmed === original) {
-      return element;
-    }
-    return {
-      ...element,
-      textRun: {
-        ...element.textRun,
-        content: trimmed,
-      },
-    };
-  })
+  elements.map(element => updateText(element, element.textRun.content.trim()))
 );
 
 // TODO: add simple styles. But doing so would mangle indices, so perhaps collect styles and apply
@@ -51,19 +54,59 @@ const joinAdjacentElements = (elements) => {
   return joinedElements;
 };
 
+const htmlEscape = elements => (
+  elements.map(x => updateText(x, $("<p>").text(x.textRun.content).html()))
+);
+
+const trimTextsByFilterRange = (start, end) => {
+  return elements => (
+    elements.map(x => {
+      const text = x.textRun.content;
+      return updateText(
+        x,
+        text.substring(
+          start - x.startIndex,
+          end > x.endIndex ? text.length : text.length - (x.endIndex - end)));
+    })
+  );
+};
+
+const applyTextStyle = elements => (
+  elements.map(element => {
+    let text = element.textRun.content;
+    const style = element.textRun.textStyle || {};
+    const classes = (
+      ["bold", "italic", "underline", "strikethrough"]
+        .filter(x => style[x])
+        .map(x => `personal-comment-${x}`)
+        .join(" ")
+    );
+    if (classes.length > 0) {
+      text = `<span class="${classes}">${text}</span>`;
+    }
+    if (style.link && style.link.url) {
+      text = `<a href="${style.link.url}">${text}</a>`;
+    }
+    return updateText(element, text);
+  })
+);
+
 // TODO: this does a lot more than filtering now - rename it to something like getDocumentText
 const filterDocumentRange = (start, end, inputs) => {
-  const contents = (
-    trimContents(joinAdjacentElements(inputs.filter(inRange(start, end))))
-  );
-  return contents
-    .map(x => {
-      const text = x.textRun.content;
-      return text.substring(
-        start - x.startIndex,
-        end > x.endIndex ? text.length : text.length - (x.endIndex - end));
-    })
-    .map(x => x.replace(/\n/g, "<br>"));
+  const transformations = [
+    elements => elements.filter(inRange(start, end)),
+    trimTextsByFilterRange(start, end),
+    htmlEscape,
+    applyTextStyle,
+    joinAdjacentElements,
+    trimContents,
+  ];
+
+  let transformed = inputs;
+  for (const transformation of transformations) {
+    transformed = transformation(transformed);
+  }
+  return transformed.map(x => x.textRun.content).map(x => x.replace(/\n/g, "<br>"));
 };
 
 module.exports = {
