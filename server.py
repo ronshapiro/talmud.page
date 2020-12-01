@@ -38,7 +38,7 @@ def print(*args):
 random_hash = ''.join(random.choice(string.ascii_letters) for i in range(7))
 app = Flask(__name__)
 masechtot = Masechtot()
-api_request_handler = ApiRequestHandler(RealRequestMaker(), print_function=app.logger.debug)
+api_request_handler = ApiRequestHandler(RealRequestMaker(), print_function=app.logger.info)
 
 class RequestFormatter(logging.Formatter):
     width = 1
@@ -234,7 +234,7 @@ def cache_amud_response_in_background():
         masechet, amud = amudim_to_cache_queue.get()
         get_and_cache_amud_json(masechet, amud, verb="Precaching")
         amudim_to_cache_queue.task_done()
-        app.logger.debug(f"Queue size: {amudim_to_cache_queue.qsize()}")
+        app.logger.info(f"Queue size: {amudim_to_cache_queue.qsize()}")
 
 threading.Thread(target=cache_amud_response_in_background, daemon=True).start()
 
@@ -243,9 +243,9 @@ def get_and_cache_amud_json(masechet, amud, verb="Requesting"):
     response = amud_cache.get(cache_key)
     if not response:
         try:
-            app.logger.debug(f"{verb} {masechet} {amud}")
+            app.logger.info(f"{verb} {masechet} {amud}")
             response = api_request_handler.amud_api_request(masechet, amud)
-            app.logger.debug(f"{verb} {masechet} {amud} --- Done")
+            app.logger.info(f"{verb} {masechet} {amud} --- Done")
         except ApiException as e:
             return {"error": e.message, "code": e.internal_code}, e.http_status
         except Exception:
