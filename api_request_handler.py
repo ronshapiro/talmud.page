@@ -319,6 +319,12 @@ def strip_ref_quotation_marks(ref):
     return " ".join(parts)
 
 
+def _strip_possible_prefix(text, prefix):
+    if text.startswith(prefix):
+        return text[len(prefix):]
+    return text
+
+
 SHULCHAN_ARUKH_HEADERS = {}
 with open("precomputed_texts/shulchan_arukh_headings.json", "r") as f:
     import json
@@ -379,6 +385,9 @@ class Comment(object):
                 comment.source_he_ref = f"{comment.source_he_ref} - {subtitle}"
                 if comment.ref.endswith(":1"):
                     comment.hebrew = ShulchanArukhHeaderRemover.process(comment.hebrew)
+        elif english_name == "Mishneh Torah":
+            comment.source_ref = _strip_possible_prefix(comment.source_ref, "Mishneh Torah, ")
+            comment.source_he_ref = _strip_possible_prefix(comment.source_he_ref, "משנה תורה, ")
 
         return comment
 
