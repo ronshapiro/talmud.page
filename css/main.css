@@ -5,6 +5,14 @@
     --background-color: white;
     --table-cell-padding: 8px;
     --major-color: rgb(255,110,64);
+
+    --font-size-multiplier: 1;
+}
+
+@media only screen and (min-width: 720px) {
+    :root {
+        --font-size-multiplier: 1.1;
+    }
 }
 
 html {
@@ -14,29 +22,6 @@ html {
 html, body {
     font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
-
-/*
-@font-face{
-    font-family: "Taamey Frank";
-    src:url(https://sefaria.org/static/fonts/Taamey-Frank/TaameyFrankCLM-Medium.ttf)
-}
-@font-face{
-    font-family: "Taamey Frank";
-    src:url(https://sefaria.org/static/fonts/Taamey-Frank/TaameyFrankCLM-Bold.ttf);
-    font-weight:700
-}
-@font-face{
-    font-family: "Taamey Frank";
-    src:url(https://sefaria.org/static/fonts/Taamey-Frank/TaameyFrankCLM-MediumOblique.ttf);
-    font-style:italic
-}
-@font-face{
-    font-family: "Taamey Frank";
-    src:url(https://sefaria.org/static/fonts/Taamey-Frank/TaameyFrankCLM-BoldOblique.ttf);
-    font-style:italic;
-    font-weight:700
-}
-*/
 
 /* https://opensiddur.org/help/fonts/ */
 @font-face{
@@ -67,12 +52,12 @@ html, body {
 }
 
 .gemara-container .hebrew, #snackbar .hebrew {
-    font-size: 1.5em;
-    line-height: 1.5em;
+    font-size: calc(1.5em * var(--font-size-multiplier));
+    line-height: calc(1.5em * var(--font-size-multiplier));
 }
 
 .commentaryRow .hebrew, .hebrew .commentary_header {
-    font-size: 1.1em;
+    font-size: calc(1.1em * var(--font-size-multiplier));
 }
 .table-row {
     clear: both;
@@ -140,12 +125,9 @@ html, body {
     padding: 1em;
 }
 
-h1, h2 {
-    text-align: center;
-}
 .hebrew {
     font-family: "Taamey David", "Times New Roman", serif;
-    line-height: 1.7em;
+    line-height: calc(1.7em * var(--font-size-multiplier));
 }
 .hebrew-emphasis, .commentaryRow .parenthesized {
     font-family: "Fira Light";
@@ -155,10 +137,10 @@ h1, h2 {
     color: #555;
 }
 .english {
-    padding-top: 1.25px;
+    padding-top: calc(1.25px * var(--font-size-multiplier));
 }
 .gemara-container .english {
-    padding-top: 2.75px;
+    padding-top: calc(2.75px * var(--font-size-multiplier));
 }
 .navigation-button-container {
     display: flex;
@@ -181,6 +163,11 @@ h1, h2 {
     position: relative;
     left: 24px;
 }
+
+h1, h2 {
+    text-align: center;
+}
+
 h1 {
     font-family: "Taamey David";
     font-size:  4em;
@@ -261,12 +248,6 @@ h2 {
     clear: both;
     display: block;
     height: 10px;
-}
-.single-commentator-container > * {
-    padding-top: .4em;
-}
-.single-commentator-container > *:first-child {
-    padding-top: 0px;
 }
 #main-contents {
     /* Provide space for the snacbkar. */
