@@ -59,7 +59,13 @@ const startFlask = () => {
 
 if (!isProd) {
   let distFiles = new Set();
+  let eslintProc;
+  let lastEslintHadOutput = false;
   bundler.on('bundled', () => {
+    if (eslintProc) {
+      eslintProc.kill();
+      eslintProc = undefined;
+    }
     const newDistFiles = fs.readdirSync("./dist");
     if (distFiles.size !== newDistFiles.length || !newDistFiles.every(x => distFiles.has(x))) {
       distFiles = new Set(newDistFiles);
@@ -68,19 +74,34 @@ if (!isProd) {
       startFlask();
     }
 
-    const jsFiles = fs.readdirSync("js").map(x => `js/${x}`);
-    const eslintProc = spawn("pre-commit/check_eslint.sh", jsFiles);
+    const allJsFiles = fs.readdirSync("js");
+    const needToSave = allJsFiles.filter(x => x.startsWith(".#")).map(x => `js/${x}`);
+    if (needToSave.length > 0) {
+      console.log(chalk.bgMagenta.bold(`Unsaved: ${needToSave}`));
+    }
+    const filesToLint = allJsFiles.filter(x => !x.startsWith(".#")).map(x => `js/${x}`);
+
+    let eslintHadOutput = false;
+    eslintProc = spawn("pre-commit/check_eslint.sh", filesToLint);
     eslintProc.stdout.on("data", (data) => {
+      eslintHadOutput = true;
       String(data).split("\n").forEach(line => {
         if (/ +[0-9]+:[0-9]+ +warning/.test(line)) {
           line = chalk.yellow(line);
         } else if (/ +[0-9]+:[0-9]+ +error/.test(line)) {
           line = chalk.red(line);
         }
-        process.stdout.write(line + "\n");
+        console.log(line);
       });
     });
     eslintProc.stderr.on("data", (data) => process.stderr.write(chalk.red(data)));
+    eslintProc.on("close", () => {
+      if (!eslintHadOutput && lastEslintHadOutput) {
+        console.log(chalk.green.bold("   eslint is green again"));
+      }
+      lastEslintHadOutput = eslintHadOutput;
+      eslintProc = undefined;
+    });
   });
   bundler.on("buildError", () => {
     if (flaskSubprocess) {
