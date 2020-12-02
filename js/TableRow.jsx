@@ -6,7 +6,6 @@ import React, {
   useState,
 } from "react";
 import PropTypes from 'prop-types';
-import _concat from "./concat.js";
 import isEmptyText from "./is_empty_text.js";
 import {ConfigurationContext, useConfiguration, useHiddenHost} from "./context.js";
 
@@ -32,7 +31,7 @@ class Cell extends Component {
   };
 
   classes(...extraClasses) {
-    return _concat(this.props.classes, ["table-cell"], extraClasses).join(" ");
+    return this.props.classes.concat(["table-cell"]).concat(extraClasses).join(" ");
   }
 
   childrenProp() {
@@ -230,7 +229,7 @@ function TableRow(props) {
   return (
     <div
       id={id}
-      className={_concat(["table-row"], classes).join(" ")}
+      className={["table-row"].concat(classes).join(" ")}
       sefaria-ref={props["sefaria-ref"]}
       tp-link={link}
       >
@@ -242,7 +241,7 @@ TableRow.propTypes = {
   hebrew: PropTypes.node,
   english: PropTypes.node,
   id: PropTypes.string,
-  classes: PropTypes.arrayOf(PropTypes.string),
+  classes: PropTypes.arrayOf(PropTypes.string).isRequired,
   hebrewDoubleClickListener: PropTypes.func,
   "sefaria-ref": PropTypes.string,
   link: PropTypes.string,

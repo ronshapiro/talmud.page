@@ -2,7 +2,6 @@
 import $ from "jquery";
 import {snackbars} from "./snackbar.js";
 import {TalmudRenderer} from "./rendering.jsx";
-import _concat from "./concat.js";
 import {onceDocumentReady} from "./once_document_ready.js";
 import MASECHTOT from "./masechtot.js";
 import {amudMetadata, computePreviousAmud, computeNextAmud} from "./amud.ts";
@@ -111,10 +110,10 @@ const addPreviousAmud = () => {
 const firstFullyOnScreenSection = () => {
   // TODO: is this still necessary? Is React providing this?
   const sections = (
-    _concat(
-      $("#previous-amud-container"),
-      $(".amudContainer"),
-      $(".gemara-container")));
+    []
+      .concat($("#previous-amud-container"))
+      .concat($(".amudContainer"))
+      .concat($(".gemara-container")));
   for (const section of sections) {
     const viewTop = $(section).offset().top;
     const {pageTop, height: pageHeight} = window.visualViewport;
