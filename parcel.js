@@ -56,16 +56,17 @@ const startFlask = () => {
     flaskDied = true;
   });
 };
+const killFlask = () => {
+  if (flaskSubprocess) {
+    flaskSubprocess.kill();
+  }
+};
 
 if (!isProd) {
   let distFiles = new Set();
-  let eslintProc;
-  let lastEslintHadOutput = false;
+  const compilerSubprocesses = [];
+  let lastSubprocessOutputs = [];
   bundler.on('bundled', () => {
-    if (eslintProc) {
-      eslintProc.kill();
-      eslintProc = undefined;
-    }
     const newDistFiles = fs.readdirSync("./dist");
     if (distFiles.size !== newDistFiles.length || !newDistFiles.every(x => distFiles.has(x))) {
       distFiles = new Set(newDistFiles);
@@ -74,40 +75,80 @@ if (!isProd) {
       startFlask();
     }
 
-    const allJsFiles = fs.readdirSync("js");
+    const capturedLastSubprocessOutputs = lastSubprocessOutputs;
+    lastSubprocessOutputs = [];
+    while (compilerSubprocesses.length > 0) {
+      compilerSubprocesses.pop().kill();
+    }
+    const subprocessOutputs = [];
+    const processOutput = (process, transformLine) => {
+      const index = compilerSubprocesses.length;
+      compilerSubprocesses[index] = process;
+      const lines = [];
+      process.stdout.on("data", data => {
+        String(data).split("\n").forEach(line => {
+          line = transformLine(line);
+          if (line || line === "") {
+            lines.push(line);
+          }
+        });
+      });
+      process.stderr.on("data", data => {
+        lines.push(chalk.bgRed(data));
+      });
+      process.on("close", () => {
+        if (lines.length > 0) {
+          console.log(lines.join("\n"));
+          subprocessOutputs.push(true);
+          lastSubprocessOutputs.push(true);
+        } else {
+          subprocessOutputs.push(false);
+          lastSubprocessOutputs.push(false);
+        }
+
+        if (subprocessOutputs.length === compilerSubprocesses.length
+            && subprocessOutputs.every(x => !x)
+            && capturedLastSubprocessOutputs.some(x => x)) {
+          console.log(chalk.green.bold("    js/ts is green again!"));
+        }
+      });
+    };
+
+    const allJsFiles = (
+      fs.readdirSync("js").filter(x => !x.endsWith(".test.ts") && !x.endsWith(".test.js")));
     const needToSave = allJsFiles.filter(x => x.startsWith(".#")).map(x => `js/${x}`);
     if (needToSave.length > 0) {
       console.log(chalk.bgMagenta.bold(`Unsaved: ${needToSave}`));
     }
     const filesToLint = allJsFiles.filter(x => !x.startsWith(".#")).map(x => `js/${x}`);
+    const tsFiles = filesToLint.filter(x => x.endsWith(".ts") || x.endsWith(".tsx"));
 
-    let eslintHadOutput = false;
-    eslintProc = spawn("pre-commit/check_eslint.sh", filesToLint);
-    eslintProc.stdout.on("data", (data) => {
-      eslintHadOutput = true;
-      String(data).split("\n").forEach(line => {
-        if (/ +[0-9]+:[0-9]+ +warning/.test(line)) {
-          line = chalk.yellow(line);
-        } else if (/ +[0-9]+:[0-9]+ +error/.test(line)) {
-          line = chalk.red(line);
-        }
-        console.log(line);
-      });
-    });
-    eslintProc.stderr.on("data", (data) => process.stderr.write(chalk.red(data)));
-    eslintProc.on("close", () => {
-      if (!eslintHadOutput && lastEslintHadOutput) {
-        console.log(chalk.green.bold("   eslint is green again"));
-      }
-      lastEslintHadOutput = eslintHadOutput;
-      eslintProc = undefined;
-    });
-  });
-  bundler.on("buildError", () => {
-    if (flaskSubprocess) {
-      flaskSubprocess.kill();
+    if (tsFiles.length > 0) {
+      processOutput(
+        spawn("npx", ["tsc", "--noEmit"].concat(tsFiles)),
+        line => {
+          if (line.indexOf(": error TS")) {
+            return chalk.red(line);
+          }
+          return line;
+        });
     }
+
+    processOutput(
+      spawn("pre-commit/check_eslint.sh", filesToLint),
+      line => {
+        if (/ +[0-9]+:[0-9]+ +warning/.test(line)) {
+          return chalk.yellow(line);
+        } else if (/ +[0-9]+:[0-9]+ +error/.test(line)) {
+          return chalk.red(line);
+        }
+        return line;
+      });
   });
+
+  bundler.on("buildError", () => killFlask());
+  process.on("exit", () => killFlask());
+
   fs.watch(".", {recursive: true}, (eventType, fileName) => {
     if (flaskDied
         && fileName.endsWith(".py")

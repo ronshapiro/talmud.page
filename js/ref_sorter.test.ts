@@ -1,4 +1,4 @@
-const {refSorter} = require("./ref_sorter.js");
+const {refSorter} = require("./ref_sorter.ts");
 
 test("same parent ref", () => {
   const refs = [

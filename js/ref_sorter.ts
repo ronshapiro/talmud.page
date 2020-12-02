@@ -1,5 +1,5 @@
 const REF_PIECE_SPLITTER = /(.* )(\d+)(.*)([\\.:])(.*)/g;
-const refPieces = ref => {
+const refPieces = (ref: string): string[] => {
   const basicPieces = ref.split(REF_PIECE_SPLITTER);
   const result = [];
   for (const piece of basicPieces) {
@@ -12,7 +12,9 @@ const refPieces = ref => {
   return result;
 };
 
-const compareTo = (first, second) => {
+type ComparisonType = string | string[];
+
+const compareTo = (first: ComparisonType, second: ComparisonType): number => {
   if (first === second) return 0;
   if (Array.isArray(first) && Array.isArray(second) && first.length === second.length) {
     for (let i = 0; i < first.length; i++) {
@@ -24,5 +26,7 @@ const compareTo = (first, second) => {
 };
 
 module.exports = {
-  refSorter: (first, second) => compareTo(refPieces(first), refPieces(second)),
+  refSorter: (first: string, second: string): number => {
+    return compareTo(refPieces(first), refPieces(second));
+  },
 };

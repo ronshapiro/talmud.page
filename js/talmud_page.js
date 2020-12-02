@@ -5,7 +5,7 @@ import {TalmudRenderer} from "./rendering.jsx";
 import _concat from "./concat.js";
 import {onceDocumentReady} from "./once_document_ready.js";
 import MASECHTOT from "./masechtot.js";
-import {amudMetadata, computePreviousAmud, computeNextAmud} from "./amud.js";
+import {amudMetadata, computePreviousAmud, computeNextAmud} from "./amud.ts";
 import {driveClient} from "./google_drive.js";
 import {registerRefSelectionSnackbarListener} from "./ref_selection_snackbar.js";
 

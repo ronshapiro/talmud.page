@@ -2,7 +2,7 @@ const {
   amudMetadataForTesting,
   computePreviousAmud,
   computeNextAmud,
-} = require("./amud.js");
+} = require("./amud.ts");
 
 const amudMetadata = amudMetadataForTesting;
 

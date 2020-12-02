@@ -1,7 +1,7 @@
 /* global gapi, gtag */
 import {v4 as uuid} from "uuid";
-import {amudMetadata} from "./amud.js";
-import {refSorter} from "./ref_sorter.js";
+import {amudMetadata} from "./amud.ts";
+import {refSorter} from "./ref_sorter.ts";
 import {filterDocumentRange} from "./filter_document_range.js";
 import {newOnReady} from "./once_document_ready.js";
 

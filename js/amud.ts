@@ -1,16 +1,23 @@
-const computePreviousAmud = (current) => {
+export const computePreviousAmud = (current: string): string => {
   const number = parseInt(current);
   return current.endsWith("b") ? number + "a" : (number - 1) + "b";
 };
 
-const computeNextAmud = (current) => {
+export const computeNextAmud = (current: string): string => {
   const number = parseInt(current);
   return current.endsWith("a") ? number + "b" : (number + 1) + "a";
 };
 
 const SPACE_REGEX = /(%20|_)/g;
 
-const amudMetadata = (pathname) => {
+interface AmudMetadata {
+  masechet: string;
+  amudStart: string;
+  amudEnd: string;
+  range: () => string[];
+}
+
+const _amudMetadata = (pathname: string): AmudMetadata => {
   const pathParts = pathname.split("/");
   return {
     masechet: pathParts[1].replace(SPACE_REGEX, " "),
@@ -28,9 +35,5 @@ const amudMetadata = (pathname) => {
   };
 };
 
-module.exports = {
-  computeNextAmud,
-  computePreviousAmud,
-  amudMetadata: () => amudMetadata(window.location.pathname),
-  amudMetadataForTesting: amudMetadata,
-};
+export const amudMetadata: () => AmudMetadata = _amudMetadata.bind(window.location.pathname);
+export const amudMetadataForTesting = _amudMetadata;
