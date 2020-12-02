@@ -1,5 +1,5 @@
 const REF_PIECE_SPLITTER = /(.* )(\d+)(.*)([\\.:])(.*)/g;
-const refPieces = (ref: string): string[] => {
+const refPieces = (ref: string): (string| number)[] => {
   const basicPieces = ref.split(REF_PIECE_SPLITTER);
   const result = [];
   for (const piece of basicPieces) {
@@ -12,7 +12,7 @@ const refPieces = (ref: string): string[] => {
   return result;
 };
 
-type ComparisonType = string | string[];
+type ComparisonType = string | number | (number | string)[];
 
 const compareTo = (first: ComparisonType, second: ComparisonType): number => {
   if (first === second) return 0;

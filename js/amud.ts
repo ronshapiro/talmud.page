@@ -35,5 +35,9 @@ const _amudMetadata = (pathname: string): AmudMetadata => {
   };
 };
 
-export const amudMetadata: () => AmudMetadata = _amudMetadata.bind(window.location.pathname);
+interface AmudMetadataFunction {
+  (): AmudMetadata;
+}
+
+export const amudMetadata: AmudMetadataFunction = () => _amudMetadata(window.location.pathname);
 export const amudMetadataForTesting = _amudMetadata;

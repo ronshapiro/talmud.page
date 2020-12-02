@@ -2,7 +2,7 @@
 import {v4 as uuid} from "uuid";
 import {amudMetadata} from "./amud.ts";
 import {refSorter} from "./ref_sorter.ts";
-import {filterDocumentRange} from "./filter_document_range.js";
+import {filterDocumentRange} from "./filter_document_range.ts";
 import {newOnReady} from "./once_document_ready.js";
 
 const HEBREW_LETTERS = /[א-ת]/g;

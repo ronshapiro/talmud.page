@@ -1,4 +1,10 @@
-const {inRange, joinAdjacentElements, filterDocumentRange} = require("./filter_document_range.js");
+import {
+  inRange,
+  joinAdjacentElements,
+  filterDocumentRange,
+  ParagraphElement,
+  // @ts-ignore
+} from "./filter_document_range.ts";
 
 describe("inRange()", () => {
   test("before", () => {
@@ -35,7 +41,7 @@ describe("inRange()", () => {
 });
 
 describe("filterDocumentRange()", () => {
-  const createDocument = (...contents) => {
+  const createDocument = (...contents: string[]): ParagraphElement[] => {
     const result = [];
     let currentStart = 0;
     for (const content of contents) {

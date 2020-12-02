@@ -1,6 +1,24 @@
+/* global Pick */
 const $ = require("jquery");
 
-const inRange = (start, end) => (x) => {
+interface Predicate<T> {
+  (t: T): boolean;
+}
+
+interface TextRun {
+  content: string;
+  textStyle?: any;
+}
+
+export interface ParagraphElement {
+  startIndex: number;
+  endIndex: number;
+  textRun: TextRun;
+}
+
+type Indexable = Pick<ParagraphElement, "startIndex" | "endIndex">;
+
+export const inRange = (start: number, end: number): Predicate<Indexable> => (x) => {
   if (x.startIndex === start) {
     return true;
   } else if (x.startIndex < start) {
@@ -9,7 +27,7 @@ const inRange = (start, end) => (x) => {
   return x.startIndex < end;
 };
 
-const updateText = (element, updated) => {
+const updateText = (element: ParagraphElement, updated: string): ParagraphElement => {
   const original = element.textRun.content;
   if (updated === original) {
     return element;
@@ -23,13 +41,17 @@ const updateText = (element, updated) => {
   };
 };
 
-const trimContents = (elements) => (
+interface ElementsProcessor {
+  (elements: ParagraphElement[]): ParagraphElement[];
+}
+
+const trimContents: ElementsProcessor = (elements) => (
   elements.map(element => updateText(element, element.textRun.content.trim()))
 );
 
 // TODO: add simple styles. But doing so would mangle indices, so perhaps collect styles and apply
 // them at the end?
-const joinAdjacentElements = (elements) => {
+export const joinAdjacentElements: ElementsProcessor = (elements) => {
   if (elements.length <= 1) {
     return elements;
   }
@@ -54,11 +76,11 @@ const joinAdjacentElements = (elements) => {
   return joinedElements;
 };
 
-const htmlEscape = elements => (
+const htmlEscape: ElementsProcessor = elements => (
   elements.map(x => updateText(x, $("<p>").text(x.textRun.content).html()))
 );
 
-const trimTextsByFilterRange = (start, end) => {
+const trimTextsByFilterRange = (start: number, end: number): ElementsProcessor => {
   return elements => (
     elements.map(x => {
       const text = x.textRun.content;
@@ -71,7 +93,7 @@ const trimTextsByFilterRange = (start, end) => {
   );
 };
 
-const applyTextStyle = elements => (
+const applyTextStyle: ElementsProcessor = elements => (
   elements.map(element => {
     let text = element.textRun.content;
     const style = element.textRun.textStyle || {};
@@ -92,8 +114,10 @@ const applyTextStyle = elements => (
 );
 
 // TODO: this does a lot more than filtering now - rename it to something like getDocumentText
-const filterDocumentRange = (start, end, inputs) => {
-  const transformations = [
+export const filterDocumentRange = (
+  start: number, end: number, inputs: ParagraphElement[],
+): string[] => {
+  const transformations: ElementsProcessor[] = [
     elements => elements.filter(inRange(start, end)),
     trimTextsByFilterRange(start, end),
     htmlEscape,
@@ -107,10 +131,4 @@ const filterDocumentRange = (start, end, inputs) => {
     transformed = transformation(transformed);
   }
   return transformed.map(x => x.textRun.content).map(x => x.replace(/\n/g, "<br>"));
-};
-
-module.exports = {
-  filterDocumentRange,
-  inRange,
-  joinAdjacentElements,
 };
