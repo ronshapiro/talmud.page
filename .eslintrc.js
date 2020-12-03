@@ -26,6 +26,8 @@ module.exports = {
     "arrow-parens": "off",
     "function-paren-newline": "off",
     "import/extensions": "off",
+    "import/prefer-default-export": "off",
+    "lines-between-class-members": ["error", "always", {exceptAfterSingleLine: true}],
     "max-classes-per-file": "off",
     "no-console": ["warn", { allow: ["warn", "error"] }],
     "no-else-return": "off",
