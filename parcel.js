@@ -65,7 +65,6 @@ const killFlask = () => {
 if (!isProd) {
   let distFiles = new Set();
   const compilerSubprocesses = [];
-  let lastSubprocessOutputs = [];
   bundler.on('bundled', () => {
     const newDistFiles = fs.readdirSync("./dist");
     if (distFiles.size !== newDistFiles.length || !newDistFiles.every(x => distFiles.has(x))) {
@@ -75,8 +74,6 @@ if (!isProd) {
       startFlask();
     }
 
-    const capturedLastSubprocessOutputs = lastSubprocessOutputs;
-    lastSubprocessOutputs = [];
     while (compilerSubprocesses.length > 0) {
       compilerSubprocesses.pop().kill();
     }
@@ -100,16 +97,13 @@ if (!isProd) {
         if (lines.length > 0) {
           console.log(lines.join("\n"));
           subprocessOutputs.push(true);
-          lastSubprocessOutputs.push(true);
         } else {
           subprocessOutputs.push(false);
-          lastSubprocessOutputs.push(false);
         }
 
         if (subprocessOutputs.length === compilerSubprocesses.length
-            && subprocessOutputs.every(x => !x)
-            && capturedLastSubprocessOutputs.some(x => x)) {
-          console.log(chalk.green.bold("    js/ts is green again!"));
+            && subprocessOutputs.every(x => !x)) {
+          console.log(chalk.green.bold("    js/ts is clean!"));
         }
       });
     };
