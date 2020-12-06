@@ -4,6 +4,7 @@ import {amudMetadata} from "./amud.ts";
 import {refSorter} from "./ref_sorter.ts";
 import {filterDocumentRange} from "./filter_document_range.ts";
 import {newOnReady} from "./once_document_ready.js";
+import {asPromise} from "./promises.ts";
 import {RetryMethodFactory} from "./retry.ts";
 import {checkNotUndefined} from "./undefined.ts";
 
@@ -397,16 +398,17 @@ class DriveClient {
 
   _postComment = this.retryMethodFactory.retryingMethod({
     retryingCall: ({text, amud, ref, parentRef, id}) => {
-      return gapi.client.docs.documents.batchUpdate({
+      return asPromise(gapi.client.docs.documents.batchUpdate({
         documentId: this.databaseDocument.documentId,
         requests: this.postCommentRequests(text, amud, ref, parentRef),
         writeControl: {requiredRevisionId: this.databaseDocument.revisionId},
-      }).then(response => {
-        this.markCommentSaved(id);
-        return Promise.resolve(response);
-      });
+      }))
+        .finally(() => this.getDatabaseDocument(this.databaseDocument.documentId))
+        .then(response => {
+          this.markCommentSaved(id);
+          return Promise.resolve(response);
+        });
     },
-    then: () => this.getDatabaseDocument(this.databaseDocument.documentId),
     createError: ({ref, isRetry}) => (isRetry ? undefined : `Could not save comment on ${ref}`),
   });
 

@@ -7,3 +7,7 @@ export function promiseParts<T>(): [Promise<T>, (t: T) => void, (t: T) => void] 
   });
   return [promise, onSuccess, onError];
 }
+
+export function asPromise(thenable: any) {
+  return Promise.all([thenable]).then(x => x[0]);
+}
