@@ -13,7 +13,7 @@
   },
   "scripts": {
     "test": "jest",
-    "dev": "node parcel.js dev",
+    "dev": "nodemon -w parcel.js parcel.js dev",
     "build": "node parcel.js prod",
     "deploy": "npm run build && yes | gcloud --configuration talmud-page app deploy",
     "ignore trailing commas": "exit 1"
@@ -28,6 +28,7 @@
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^2.5.1",
     "jest": "^26.0.1",
+    "nodemon": "^2.0.6",
     "parcel-bundler": "^1.12.4"
   },
   "ignore trailing commas": "hello, world"
