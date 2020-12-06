@@ -20,22 +20,22 @@ class RetryState {
 }
 
 interface AnyFunction {
-  (...params: any[]): any;
+  (..._params: any[]): any;
 }
 
 interface RetryingMethodOptions {
-  retryingCall: (...params: any[]) => Promise<any>;
-  then?: (successValue?: any) => void;
-  createError?: (...params: any[]) => string;
+  retryingCall: (..._params: any[]) => Promise<any>;
+  then?: (_successValue?: any) => void;
+  createError?: (..._params: any[]) => string;
 }
 
 interface ErrorsDelegate {
-  add: (id: string, errorMessage: string) => void;
-  remove: (id: string) => void;
+  add: (_id: string, _errorMessage: string) => void;
+  remove: (_id: string) => void;
 }
 
 interface GeneratedRetryingMethodSignature {
-  (...params: any[]): Promise<any>;
+  (..._params: any[]): Promise<any>;
 }
 
 export class RetryMethodFactory {

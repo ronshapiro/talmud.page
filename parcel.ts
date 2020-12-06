@@ -1,8 +1,8 @@
 /* eslint import/no-extraneous-dependencies: ["error", {"devDependencies": true}] */
-const chalk = require('chalk');
-const Bundler = require('parcel-bundler');
-const fs = require('fs');
-const { spawn } = require("child_process");
+import * as chalk from 'chalk';
+import * as Bundler from 'parcel-bundler';
+import * as fs from 'fs';
+import {spawn, ChildProcess} from "child_process";
 
 if (fs.existsSync("./dist")) {
   for (const file of fs.readdirSync("./dist")) {
@@ -32,10 +32,11 @@ const bundler = new Bundler(entryFiles, {
   watch: !isProd,
   minify: isProd,
   hmr: false,
+  // @ts-ignore
   autoInstall: false,
 });
 
-let flaskSubprocess = undefined;
+let flaskSubprocess: ChildProcess | undefined = undefined;
 let flaskDied = false;
 const startFlask = () => {
   flaskDied = false;
@@ -50,8 +51,8 @@ const startFlask = () => {
       FLASK_ENV: "development",
     },
   });
-  flaskSubprocess.stdout.pipe(process.stdout);
-  flaskSubprocess.stderr.pipe(process.stderr);
+  flaskSubprocess.stdout!.pipe(process.stdout);
+  flaskSubprocess.stderr!.pipe(process.stderr);
   flaskSubprocess.on("exit", () => {
     flaskDied = true;
   });
@@ -62,9 +63,13 @@ const killFlask = () => {
   }
 };
 
+interface Mapper<T1, T2> {
+  (input: T1): T2;
+}
+
 if (!isProd) {
   let distFiles = new Set();
-  const compilerSubprocesses = [];
+  const compilerSubprocesses: ChildProcess[] = [];
   bundler.on('bundled', () => {
     const newDistFiles = fs.readdirSync("./dist");
     if (distFiles.size !== newDistFiles.length || !newDistFiles.every(x => distFiles.has(x))) {
@@ -75,22 +80,22 @@ if (!isProd) {
     }
 
     while (compilerSubprocesses.length > 0) {
-      compilerSubprocesses.pop().kill();
+      compilerSubprocesses.pop()!.kill();
     }
-    const subprocessOutputs = [];
-    const processOutput = (process, transformLine) => {
+    const subprocessOutputs: boolean[] = [];
+    const processOutput = (process: ChildProcess, transformLine: Mapper<string, string>) => {
       const index = compilerSubprocesses.length;
       compilerSubprocesses[index] = process;
-      const lines = [];
-      process.stdout.on("data", data => {
-        String(data).split("\n").forEach(line => {
+      const lines: string[] = [];
+      process.stdout!.on("data", data => {
+        String(data).split("\n").forEach((line: string) => {
           line = transformLine(line);
           if (line || line === "") {
             lines.push(line);
           }
         });
       });
-      process.stderr.on("data", data => {
+      process.stderr!.on("data", data => {
         lines.push(chalk.bgRed(data));
       });
       process.on("close", () => {
