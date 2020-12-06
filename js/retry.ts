@@ -56,10 +56,14 @@ export class RetryMethodFactory {
    * Returns a function that will call `options.retryingCall` repeatedly until it succeeds,
    * implementing a backoff policy upon failed calls.
    *
-   * The returned `Promise` _never_ fails; it will succeed once the `opitons.retryingCall`
+   * The returned `Promise` _never_ fails; it will succeed once the `options.retryingCall`
    * eventually has a successful promise.
    *
-   * If a function is provided as `options.then`, the returned `Promise` will have it chained.
+   * If a function is provided as `options.then`, the returned `Promise` will have it chained. Note
+   * that this is not identical to chaining `then()` calls on the returned promise in `retryingCall`
+   * - a failure in `options.then` will *not* cause `options.retryingCall` to be retried, but a
+   * failure in a `then()` chained to the `retryingCall` result will cause the entire call to be
+   * retried.
    *
    * If a function is provided as `options.createError`, it will be called to create an error
    * if `options.retryingCall` fails.
