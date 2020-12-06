@@ -9,4 +9,7 @@ for x in "$@"; do
         *.@(ts|tsx) ) files+=($x);;
     esac
 done
-npx tsc --noEmit --strict ${files[@]:-}
+
+if [[ -n "${files[@]:-}" ]]; then
+    npx tsc --noEmit --strict ${files[@]:-}
+fi
