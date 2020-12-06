@@ -34,6 +34,7 @@ module.exports = {
     "no-plusplus": "off",
     "no-trailing-spaces": "off", // pre-commit will enforce this
     "no-underscore-dangle": "off",
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
     "quotes": "off", // In general this is awfully noisy; ideally it would be ["error", "double"]
     "react/destructuring-assignment": "off",
     "react/static-property-placement": "off",

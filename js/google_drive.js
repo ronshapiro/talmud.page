@@ -106,8 +106,7 @@ class DriveClient {
   init = this.retryMethodFactory.retryingMethod({
     retryingCall: () => {
       if (!gapi) {
-        setTimeout(() => this.init(), 100);
-        return undefined;
+        return Promise.reject();
       }
 
       return gapi.client.init({

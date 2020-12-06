@@ -1,12 +1,17 @@
 import {v4 as uuid} from "uuid";
+// @ts-ignore
+import {promiseParts} from "./promises.ts";
 
 class RetryState {
   delay: number
   id: string
+  promise: Promise<any>
+  proceed: (_t: any) => void
 
   constructor(delay = 200) {
     this.delay = delay;
     this.id = uuid();
+    [this.promise, this.proceed] = promiseParts<any>().slice(0, 2);
   }
 
   increment() {
@@ -20,7 +25,7 @@ interface AnyFunction {
 
 interface RetryingMethodOptions {
   retryingCall: (...params: any[]) => Promise<any>;
-  then: (successValue?: any) => void;
+  then?: (successValue?: any) => void;
   createError?: (...params: any[]) => string;
 }
 
@@ -48,11 +53,17 @@ export class RetryMethodFactory {
   }
 
   /**
-   * Retries the method specified in `options.retryingCall` until it succeeds, and then calls
-   * `options.then`.
+   * Returns a function that will call `options.retryingCall` repeatedly until it succeeds,
+   * implementing a backoff policy upon failed calls.
+   *
+   * The returned `Promise` _never_ fails; it will succeed once the `opitons.retryingCall`
+   * eventually has a successful promise.
+   *
+   * If a function is provided as `options.then`, the returned `Promise` will have it chained.
+   *
+   * If a function is provided as `options.createError`, it will be called to create an error
+   * if `options.retryingCall` fails.
    */
-  // TODO: make this return a proper promise that only succeeds after everything is finally
-  // successful.
   retryingMethod(options: RetryingMethodOptions): GeneratedRetryingMethodSignature {
     const doCall: GeneratedRetryingMethodSignature = (...args) => {
       let retryState: RetryState;
@@ -62,13 +73,18 @@ export class RetryMethodFactory {
         args = args.slice(0, -1);
       } else {
         retryState = new RetryState();
+        const _then = options.then; // tsc seems to get confused if `const then = {options}` is used
+        if (_then) {
+          retryState.promise = retryState.promise.then((thenArg) => _then(thenArg));
+        }
       }
-      return options.retryingCall(...args)
+
+      options.retryingCall(...args)
         .then(
-          (...thenArgs: any[]) => {
+          (thenArg: any) => {
             this.errorsDelegate.remove(retryState.id);
             this.onErrorStateChange();
-            options.then(...thenArgs);
+            retryState.proceed(thenArg);
           },
           (errorResponse: any) => {
             this.errorLogger(errorResponse);
@@ -85,6 +101,7 @@ export class RetryMethodFactory {
               doCall(...args, retryState);
             }, retryState.delay);
           });
+      return retryState.promise;
     };
     return doCall;
   }
