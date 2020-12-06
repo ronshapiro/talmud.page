@@ -281,13 +281,7 @@ class DriveClient {
   }
 
   addInstructionsTable = this.retryMethodFactory.retryingMethod({
-    retryingCall: () => {
-      return gapi.client.docs.documents.batchUpdate({
-        documentId: this.databaseDocument.documentId,
-        requests: this.instructionsTableRequests(),
-        writeControl: {requiredRevisionId: this.databaseDocument.revisionId},
-      });
-    },
+    retryingCall: () => this.updateDocument(this.instructionsTableRequests()),
     then: () => {
       return this.getDatabaseDocument(this.databaseDocument.documentId)
         .then(() => this.setInstructionsTableRange());
@@ -308,11 +302,7 @@ class DriveClient {
         throw new Error("Couldn't find instructions table!");
       }
 
-      return gapi.client.docs.documents.batchUpdate({
-        documentId: this.databaseDocument.documentId,
-        requests: [createNamedRange(INSTRUCTIONS_TABLE_RANGE_NAME, range)],
-        writeControl: {requiredRevisionId: this.databaseDocument.revisionId},
-      });
+      return this.updateDocument(createNamedRange(INSTRUCTIONS_TABLE_RANGE_NAME, range));
     },
     then: () => this.getDatabaseDocument(this.databaseDocument.documentId),
     createError: () => "Error configuring database file (0h7f1)",
@@ -398,11 +388,7 @@ class DriveClient {
 
   _postComment = this.retryMethodFactory.retryingMethod({
     retryingCall: ({text, amud, ref, parentRef, id}) => {
-      return asPromise(gapi.client.docs.documents.batchUpdate({
-        documentId: this.databaseDocument.documentId,
-        requests: this.postCommentRequests(text, amud, ref, parentRef),
-        writeControl: {requiredRevisionId: this.databaseDocument.revisionId},
-      }))
+      return this.updateDocument(this.postCommentRequests(text, amud, ref, parentRef))
         .finally(() => this.getDatabaseDocument(this.databaseDocument.documentId))
         .then(response => {
           this.markCommentSaved(id);
@@ -515,6 +501,18 @@ class DriveClient {
 
   signOut() {
     gapi.auth2.getAuthInstance().signOut();
+  }
+
+  updateDocument(requests) {
+    if (!Array.isArray(requests)) {
+      requests = [requests];
+    }
+    return asPromise(
+      gapi.client.docs.documents.batchUpdate({
+        requests,
+        documentId: this.databaseDocument.documentId,
+        writeControl: {requiredRevisionId: this.databaseDocument.revisionId},
+      }));
   }
 
   triggerErrorListener() {
