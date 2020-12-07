@@ -1,8 +1,9 @@
-const {
+import {
   amudMetadataForTesting,
   computePreviousAmud,
   computeNextAmud,
-} = require("./amud.ts");
+  // @ts-ignore
+} from "./amud.ts";
 
 const amudMetadata = amudMetadataForTesting;
 

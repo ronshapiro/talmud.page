@@ -2,8 +2,8 @@
 import {RetryMethodFactory} from "./retry.ts";
 
 const noOpErrorsDelegate = {
-  add: (id: string, message: string) => {}, // eslint-disable-line no-unused-vars
-  remove: (id: string) => {}, // eslint-disable-line no-unused-vars
+  add: (_id: string, _message: string) => {},
+  remove: (_id: string) => {},
 };
 
 const factory = new RetryMethodFactory(noOpErrorsDelegate, () => {}, () => {});

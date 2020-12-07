@@ -1,4 +1,4 @@
-const {newOnReady: newInstance} = require("./once_document_ready.js");
+import {newOnReady as newInstance} from "./once_document_ready.js";
 
 test("Nothing executed before declareReady() is called", () => {
   const onceDocumentReady = newInstance();
