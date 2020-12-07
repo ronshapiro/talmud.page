@@ -1,8 +1,13 @@
-/* global Pick */
-const $ = require("jquery");
+// @ts-ignore
+import $ from "jquery";
 
 interface Predicate<T> {
   (t: T): boolean;
+}
+
+interface LanguageStats {
+  hebrew: number;
+  english: number;
 }
 
 interface TextRun {
@@ -14,6 +19,7 @@ export interface ParagraphElement {
   startIndex: number;
   endIndex: number;
   textRun: TextRun;
+  languageStats?: LanguageStats;
 }
 
 type Indexable = Pick<ParagraphElement, "startIndex" | "endIndex">;
@@ -65,6 +71,10 @@ export const joinAdjacentElements: ElementsProcessor = (elements) => {
         textRun: {
           content: previous.textRun.content + current.textRun.content,
         },
+        languageStats: {
+          hebrew: previous.languageStats!.hebrew + current.languageStats!.hebrew,
+          english: previous.languageStats!.english + current.languageStats!.english,
+        },
       };
       joinedElements.pop();
       joinedElements.push(joined);
@@ -80,6 +90,10 @@ const htmlEscape: ElementsProcessor = elements => (
   elements.map(x => updateText(x, $("<p>").text(x.textRun.content).html()))
 );
 
+const newlineToBr: ElementsProcessor = elements => (
+  elements.map(x => updateText(x, x.textRun.content.replace(/\n/g, "<br>")))
+);
+
 const trimTextsByFilterRange = (start: number, end: number): ElementsProcessor => {
   return elements => (
     elements.map(x => {
@@ -92,6 +106,25 @@ const trimTextsByFilterRange = (start: number, end: number): ElementsProcessor =
     })
   );
 };
+
+const HEBREW_LETTERS = /[א-ת]/g;
+const LATIN_LETTERS = /[a-zA-Z]/g;
+
+const numMatches = (regex: RegExp, input: string): number => {
+  return (input.match(regex) || []).length;
+};
+
+const computeLanguageStats: ElementsProcessor = elements => (
+  elements.map(x => {
+    return {
+      ...x,
+      languageStats: {
+        hebrew: numMatches(HEBREW_LETTERS, x.textRun.content),
+        english: numMatches(LATIN_LETTERS, x.textRun.content),
+      },
+    };
+  })
+);
 
 const applyTextStyle: ElementsProcessor = elements => (
   elements.map(element => {
@@ -113,22 +146,35 @@ const applyTextStyle: ElementsProcessor = elements => (
   })
 );
 
+export interface DocumentText {
+  text: string;
+  languageStats: LanguageStats;
+}
+
 // TODO: this does a lot more than filtering now - rename it to something like getDocumentText
 export const filterDocumentRange = (
   start: number, end: number, inputs: ParagraphElement[],
-): string[] => {
+): DocumentText[] => {
   const transformations: ElementsProcessor[] = [
     elements => elements.filter(inRange(start, end)),
     trimTextsByFilterRange(start, end),
+    computeLanguageStats,
     htmlEscape,
     applyTextStyle,
     joinAdjacentElements,
     trimContents,
+    // don't run as part of htmlEscape, because then trimContents() won't detect the <br> tgas
+    newlineToBr,
   ];
 
   let transformed = inputs;
   for (const transformation of transformations) {
     transformed = transformation(transformed);
   }
-  return transformed.map(x => x.textRun.content).map(x => x.replace(/\n/g, "<br>"));
+  return transformed.map(x => {
+    return {
+      text: x.textRun.content,
+      languageStats: x.languageStats!,
+    };
+  });
 };

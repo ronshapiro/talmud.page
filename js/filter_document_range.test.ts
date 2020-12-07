@@ -2,6 +2,7 @@ import {
   inRange,
   joinAdjacentElements,
   filterDocumentRange,
+  DocumentText,
   ParagraphElement,
   // @ts-ignore
 } from "./filter_document_range.ts";
@@ -57,14 +58,20 @@ describe("filterDocumentRange()", () => {
     return result;
   };
 
+  const filterDocumentRangeText = (
+    (start: number, end: number, inputs: ParagraphElement[]): string[] => {
+      return filterDocumentRange(start, end, inputs).map((x: DocumentText) => x.text);
+    }
+  );
+
   test("exact match", () => {
-    expect(filterDocumentRange(6, 11, createDocument("before", "match", "after")))
+    expect(filterDocumentRangeText(6, 11, createDocument("before", "match", "after")))
       .toEqual(["match"]);
   });
 
   test("partial matches", () => {
     const actual = (
-      filterDocumentRange(
+      filterDocumentRangeText(
         7, 23,
         createDocument(
           "before", ">start", " middle ", "end<", "after")));
@@ -72,7 +79,7 @@ describe("filterDocumentRange()", () => {
   });
 
   test("trim newlines", () => {
-    expect(filterDocumentRange(0, 200, createDocument("\nfirst\n", "second\n")))
+    expect(filterDocumentRangeText(0, 200, createDocument("\nfirst\n", "second\n")))
       .toEqual(["first<br>second"]);
   });
 
@@ -87,13 +94,13 @@ describe("filterDocumentRange()", () => {
       "hello&lt;script&gt;console.log('hack me');&lt;/script",
       "&gt;&lt;script&gt;broken&lt;/script&gt;",
     ].join("");
-    expect(filterDocumentRange(0, 200, document)).toEqual([expected]);
+    expect(filterDocumentRangeText(0, 200, document)).toEqual([expected]);
   });
 
   test("styling", () => {
     const document = createDocument("bold me");
     document[0].textRun.textStyle = {bold: true};
-    expect(filterDocumentRange(0, 200, document)).toEqual([
+    expect(filterDocumentRangeText(0, 200, document)).toEqual([
       '<span class="personal-comment-bold">bold me</span>']);
   });
 
@@ -108,7 +115,7 @@ describe("filterDocumentRange()", () => {
         url: "the-url",
       },
     };
-    expect(filterDocumentRange(0, 200, document)).toEqual([
+    expect(filterDocumentRangeText(0, 200, document)).toEqual([
       '<a href="the-url"><span class="personal-comment-bold personal-comment-italic '
         + 'personal-comment-underline personal-comment-strikethrough">combo</span></a>']);
   });
@@ -116,7 +123,7 @@ describe("filterDocumentRange()", () => {
   test("non URL link is ignored", () => {
     const document = createDocument("unmodified");
     document[0].textRun.textStyle = {link: {notUrl: "notUrl"}};
-    expect(filterDocumentRange(0, 200, document)).toEqual(["unmodified"]);
+    expect(filterDocumentRangeText(0, 200, document)).toEqual(["unmodified"]);
   });
 });
 
@@ -128,11 +135,19 @@ describe("joinAdjacentElements", () => {
       textRun: {
         content: "A",
       },
+      languageStats: {
+        hebrew: 1,
+        english: 2,
+      },
     }, {
       startIndex: 2,
       endIndex: 3,
       textRun: {
         content: "B",
+      },
+      languageStats: {
+        hebrew: 3,
+        english: 4,
       },
     }];
 
@@ -144,11 +159,19 @@ describe("joinAdjacentElements", () => {
       textRun: {
         content: "A",
       },
+      languageStats: {
+        hebrew: 1,
+        english: 2,
+      },
     }, {
       startIndex: 2,
       endIndex: 3,
       textRun: {
         content: "B",
+      },
+      languageStats: {
+        hebrew: 3,
+        english: 4,
       },
     }]);
   });

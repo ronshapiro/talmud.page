@@ -8,8 +8,6 @@ import {asPromise} from "./promises.ts";
 import {RetryMethodFactory} from "./retry.ts";
 import {checkNotUndefined} from "./undefined.ts";
 
-const HEBREW_LETTERS = /[א-ת]/g;
-const LATIN_LETTERS = /[a-zA-Z]/g;
 const INSTRUCTIONS_TABLE_RANGE_NAME = "Instructions Table";
 
 const NOTES_OBJECT_STORE = "notes";
@@ -463,13 +461,13 @@ class DriveClient {
 
     return {
       comments: ranges.map((range, index) => {
-        const text = this.documentText(range.startIndex, range.endIndex);
-        const allText = text.join("");
-        const hebrew = allText.match(HEBREW_LETTERS) || [];
-        const english = allText.match(LATIN_LETTERS) || [];
+        const documentText = this.documentText(range.startIndex, range.endIndex);
+        const text = documentText.map(x => x.text);
+        const hebrew = documentText.map(x => x.languageStats.hebrew).reduce((x, y) => x + y);
+        const english = documentText.map(x => x.languageStats.english).reduce((x, y) => x + y);
         return {
-          en: english.length > hebrew.length ? text : "",
-          he: hebrew.length >= english.length ? text : "",
+          en: english > hebrew ? text : "",
+          he: hebrew >= english ? text : "",
           ref: `${ref}-personal${index}`,
         };
       }),

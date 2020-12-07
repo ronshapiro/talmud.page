@@ -21,6 +21,7 @@
     "ignore trailing commas": "exit 1"
   },
   "devDependencies": {
+    "@types/jquery": "^3.5.4",
     "@types/node": "^14.14.10",
     "@types/uuid": "^8.3.0",
     "@typescript-eslint/eslint-plugin": "^4.9.0",
