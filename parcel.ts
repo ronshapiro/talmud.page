@@ -34,6 +34,7 @@ const bundler = new Bundler(entryFiles, {
   hmr: false,
   // @ts-ignore
   autoInstall: false,
+  contentHash: true,
 });
 
 let flaskSubprocess: ChildProcess | undefined = undefined;
