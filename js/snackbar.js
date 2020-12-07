@@ -1,6 +1,6 @@
 /* global gtag */
 import $ from "jquery";
-import PREFERENCES_PAGE_VERSION from "./preferences_version.js";
+import PREFERENCES_PAGE_VERSION from "./preferences_version.ts";
 
 const moveSnackbarOffscreen = () => $("#snackbar").css("bottom", -400);
 const hideSnackbar = () => $("#snackbar").animate({bottom: -400});

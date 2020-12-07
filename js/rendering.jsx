@@ -8,7 +8,7 @@ import React, {
 import {render} from 'react-dom';
 import PropTypes from 'prop-types';
 import _ from "underscore";
-import isEmptyText from "./is_empty_text.js";
+import isEmptyText from "./is_empty_text.ts";
 import {
   NextButton,
   PreviousButton,

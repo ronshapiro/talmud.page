@@ -6,7 +6,7 @@ import React, {
   useState,
 } from "react";
 import PropTypes from 'prop-types';
-import isEmptyText from "./is_empty_text.js";
+import isEmptyText from "./is_empty_text.ts";
 import {ConfigurationContext, useConfiguration, useHiddenHost} from "./context.js";
 
 const brTagsCache = {};
