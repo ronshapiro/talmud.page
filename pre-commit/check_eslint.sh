@@ -9,4 +9,4 @@ for x in "$@"; do
         *.@(js|jsx|ts|tsx) ) files+=($x);;
     esac
 done
-eslint ${files[@]:-}
+eslint --color ${files[@]:-}

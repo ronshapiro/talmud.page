@@ -18,23 +18,7 @@ repos:
         ]
 -   repo: local
     hooks:
-    -   id: check-do-not-submit
-        name: "Check DO NOT SUBMIT"
-        entry: pre-commit/check_do_not_submit.py
-        language: python
-    -   id: check-python-tests
-        name: "Check Python tests"
-        entry: pre-commit/check_python_tests.sh
-        language: script
-    -   id: check-js-tests
-        name: "Check JavaScript tests"
-        entry: pre-commit/check_js_tests.sh
-        language: script
-    -   id: check-tsc
-        name: "Typescript compilation"
-        entry: pre-commit/tsc.sh
-        language: script
-    -   id: check-eslint
-        name: "Check eslint"
-        entry: pre-commit/check_eslint.sh
+    -   id: check-custom
+        name: "Custom checks"
+        entry: pre-commit/custom.sh
         language: script

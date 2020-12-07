@@ -11,5 +11,5 @@ for x in "$@"; do
 done
 
 if [[ -n "${files[@]:-}" ]]; then
-    npx tsc --noEmit --strict ${files[@]:-}
+    npx tsc --noEmit --strict --pretty ${files[@]:-}
 fi

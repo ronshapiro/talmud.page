@@ -14,7 +14,7 @@
     "uuid": "^8.3.0"
   },
   "scripts": {
-    "test": "jest",
+    "test": "jest --colors",
     "dev": "nodemon -w parcel.ts parcel.ts dev",
     "build": "ts-node parcel.ts prod",
     "deploy": "npm run build && yes | gcloud --configuration talmud-page app deploy",
