@@ -1,16 +1,13 @@
 /* global gapi, gtag */
-import {v4 as uuid} from "uuid";
-import {amudMetadata} from "./amud.ts";
+import {amudMetadata} from "../amud.ts";
 import {refSorter} from "./ref_sorter.ts";
-import {filterDocumentRange} from "./filter_document_range.ts";
-import {GatedExecutor} from "./gated_executor.ts";
-import {asPromise} from "./promises.ts";
-import {RetryMethodFactory} from "./retry.ts";
-import {checkNotUndefined} from "./undefined.ts";
+import {extractDocumentText} from "./document_text.ts";
+import {GatedExecutor} from "../gated_executor.ts";
+import {asPromise} from "../promises.ts";
+import {RetryMethodFactory} from "../retry.ts";
+import {checkNotUndefined} from "../undefined.ts";
 
 const INSTRUCTIONS_TABLE_RANGE_NAME = "Instructions Table";
-
-const NOTES_OBJECT_STORE = "notes";
 
 // The discoveryDoc is seemingly "loaded into" the gapi.client JS object
 const APIS = [
@@ -63,8 +60,8 @@ const rangeSorter = (first, second) => {
   }
 };
 
-class DriveClient {
-  constructor(clientId, apiKey) {
+export class DriveClient {
+  constructor(clientId, apiKey, unsavedCommentStore) {
     this.clientId = clientId;
     this.apiKey = apiKey;
     this.whenDatabaseReady = new GatedExecutor();
@@ -79,7 +76,8 @@ class DriveClient {
       this.whenDatabaseReady.execute(() => console.log("Debug database document ready!"));
     }
 
-    this.initLocalDb();
+    this.unsavedCommentStore = unsavedCommentStore;
+    this.unsavedCommentStore.init(this);
   }
 
   resetState() {
@@ -369,14 +367,14 @@ class DriveClient {
   }
 
   // These parameters should be kept in sync with addUnsavedComment() with the exception of `id`.
-  postComment(text, amud, ref, parentRef, id) {
+  postComment({text, amud, ref, parentRef, id}) {
     if (this.databaseDocumentShouldBeCreated) {
       this.createDocsDatabase();
     }
 
     const isRetry = id !== undefined;
     if (!isRetry) {
-      id = this.addUnsavedComment(text, amud, ref, parentRef);
+      id = this.unsavedCommentStore.addUnsavedComment({text, amud, ref, parentRef});
       gtag("event", "add_personal_note", {amud, ref, parentRef});
     }
 
@@ -389,7 +387,7 @@ class DriveClient {
       return this.updateDocument(this.postCommentRequests(text, amud, ref, parentRef))
         .finally(() => this.getDatabaseDocument(this.databaseDocument.documentId))
         .then(response => {
-          this.markCommentSaved(id);
+          this.unsavedCommentStore.markCommentSaved(id);
           return Promise.resolve(response);
         });
     },
@@ -459,9 +457,11 @@ class DriveClient {
           .flatMap(x => x.ranges);
     ranges.sort(rangeSorter);
 
+    const documentBodyElements = this.documentBodyElements();
     return {
       comments: ranges.map((range, index) => {
-        const documentText = this.documentText(range.startIndex, range.endIndex);
+        const documentText = extractDocumentText(
+          range.startIndex, range.endIndex, documentBodyElements);
         const text = documentText.map(x => x.text);
         const hebrew = documentText.map(x => x.languageStats.hebrew).reduce((x, y) => x + y);
         const english = documentText.map(x => x.languageStats.english).reduce((x, y) => x + y);
@@ -474,19 +474,10 @@ class DriveClient {
     };
   }
 
-  documentText(start, end) {
-    return filterDocumentRange(
-      start,
-      end,
-      // TODO: to be more resilient, this should do a complete traversal and get all textRuns that
-      // could be nested inside other structures. See
-      // https://developers.google.com/docs/api/samples/extract-text
-      this.databaseDocument.body.content
-        .filter(x => x.paragraph)
-        .flatMap(x => x.paragraph.elements));
-  }
-
   documentBodyElements() {
+    // TODO: to be more resilient, this should do a complete traversal and get all textRuns that
+    // could be nested inside other structures. See
+    // https://developers.google.com/docs/api/samples/extract-text
     return this.databaseDocument.body.content
       .filter(x => x.paragraph)
       .flatMap(x => x.paragraph.elements);
@@ -533,65 +524,4 @@ class DriveClient {
 
     this.previousErrors = {...this.errors};
   }
-
-  initLocalDb() {
-    const openRequest = indexedDB.open("UnsavedNotes", 1);
-    openRequest.onerror = event => console.error("db open error", event);
-    openRequest.onupgradeneeded = event => {
-      const db = event.target.result;
-      db.onerror = dbError => console.error("db error", dbError);
-      db.createObjectStore(NOTES_OBJECT_STORE, {keyPath: "id"});
-    };
-    openRequest.onsuccess = onSuccessEvent => {
-      this.localDb = onSuccessEvent.target.result;
-
-      this.newTransaction().getAll().onsuccess = getAllEvent => {
-        getAllEvent.target.result
-          .filter(unsavedComment => unsavedComment.masechet === this.masechet)
-          .forEach(unsavedComment => {
-            const {text, amud, ref, parentRef, id} = unsavedComment;
-            // TODO: do these in a promise chain, since all but the first are guaranteed to fail.
-            this.postComment(text, amud, ref, parentRef, id);
-          });
-      };
-    };
-  }
-
-  addUnsavedComment(text, amud, ref, parentRef) {
-    if (!this.localDb) {
-      console.warn("No local db present");
-    }
-    const id = uuid();
-    this.newTransaction("readwrite").add({
-      id,
-      text,
-      amud,
-      ref,
-      parentRef,
-      masechet: this.masechet,
-    });
-    return id;
-  }
-
-  markCommentSaved(id) {
-    this.newTransaction("readwrite").delete(id)
-      .onerror = event => console.error(event);
-  }
-
-  newTransaction(mode) {
-    return this.localDb.transaction(NOTES_OBJECT_STORE, mode).objectStore(NOTES_OBJECT_STORE);
-  }
 }
-
-const driveClient = new DriveClient(
-  "766008139306-6n51cbgv7gns88mulhk0jjkjsceo4ve5.apps.googleusercontent.com", // client id
-  "AIzaSyB2aZB3L8tZ7lf3F0IFIbb4OJTT1wqyDfA", // api key
-);
-
-window.handleGoogleClientLoad = () => {
-  gapi.load("client:auth2", () => driveClient.init());
-};
-
-module.exports = {driveClient};
-
-window.driveClient = driveClient; // TODO(drive:must): remove

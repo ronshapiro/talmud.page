@@ -151,8 +151,7 @@ export interface DocumentText {
   languageStats: LanguageStats;
 }
 
-// TODO: this does a lot more than filtering now - rename it to something like getDocumentText
-export const filterDocumentRange = (
+export const extractDocumentText = (
   start: number, end: number, inputs: ParagraphElement[],
 ): DocumentText[] => {
   const transformations: ElementsProcessor[] = [

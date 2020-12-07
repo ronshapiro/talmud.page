@@ -5,9 +5,13 @@ import * as Bundler from 'parcel-bundler';
 import * as fs from 'fs';
 import {spawn, ChildProcess} from "child_process";
 
+const ls = (dir: string): string[] => {
+  return fs.readdirSync(dir).map(x => `${dir}/${x}`);
+};
+
 if (fs.existsSync("./dist")) {
-  for (const file of fs.readdirSync("./dist")) {
-    fs.unlinkSync(`./dist/${file}`);
+  for (const file of ls("./dist")) {
+    fs.unlinkSync(file);
   }
 }
 
@@ -35,7 +39,7 @@ const bundler = new Bundler(entryFiles, {
   hmr: false,
   // @ts-ignore
   autoInstall: false,
-  contentHash: true,
+  contentHash: isProd,
 });
 
 let flaskSubprocess: ChildProcess | undefined = undefined;
@@ -115,12 +119,12 @@ if (!isProd) {
       });
     };
 
-    const allJsFiles = fs.readdirSync("js");
-    const needToSave = allJsFiles.filter(x => x.startsWith(".#")).map(x => `js/${x}`);
+    const allJsFiles = ls("js").concat(ls("js/google_drive"));
+    const needToSave = allJsFiles.filter(x => x.indexOf(".#") !== -1);
     if (needToSave.length > 0) {
       console.log(chalk.bgMagenta.bold(`Unsaved: ${needToSave}`));
     }
-    const filesToLint = allJsFiles.filter(x => !x.startsWith(".#")).map(x => `js/${x}`);
+    const filesToLint = allJsFiles.filter(x => x.indexOf(".#") === -1);
     const tsFiles = filesToLint.filter(x => x.endsWith(".ts") || x.endsWith(".tsx"));
 
     if (tsFiles.length > 0) {

@@ -1,6 +1,6 @@
 /* global gtag,  */
 import $ from "jquery";
-import {driveClient} from "./google_drive.js";
+import {driveClient} from "./google_drive/singleton.js";
 import {snackbars} from "./snackbar.js";
 
 let selectionSnackbarRef;
@@ -138,11 +138,12 @@ const onSelectionChange = () => {
         noteTextArea.val(document.getSelection().toString());
         $("#modal-cancel").off("click").on("click", () => modalContainer.hide());
         $("#modal-save").off("click").on("click", () => {
-          driveClient.postComment(
-            noteTextArea.val(),
-            sefariaRef.amud,
-            sefariaRef.ref,
-            sefariaRef.parentRef || sefariaRef.ref);
+          driveClient.postComment({
+            text: noteTextArea.val(),
+            amud: sefariaRef.amud,
+            ref: sefariaRef.ref,
+            parentRef: sefariaRef.parentRef || sefariaRef.ref,
+          });
           modalContainer.hide();
         });
       },

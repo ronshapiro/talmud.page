@@ -1,11 +1,11 @@
 import {
   inRange,
   joinAdjacentElements,
-  filterDocumentRange,
+  extractDocumentText,
   DocumentText,
   ParagraphElement,
   // @ts-ignore
-} from "../filter_document_range.ts";
+} from "../document_text.ts";
 
 describe("inRange()", () => {
   test("before", () => {
@@ -41,7 +41,7 @@ describe("inRange()", () => {
   });
 });
 
-describe("filterDocumentRange()", () => {
+describe("extractDocumentText()", () => {
   const createDocument = (...contents: string[]): ParagraphElement[] => {
     const result = [];
     let currentStart = 0;
@@ -58,20 +58,20 @@ describe("filterDocumentRange()", () => {
     return result;
   };
 
-  const filterDocumentRangeText = (
+  const extractJustText = (
     (start: number, end: number, inputs: ParagraphElement[]): string[] => {
-      return filterDocumentRange(start, end, inputs).map((x: DocumentText) => x.text);
+      return extractDocumentText(start, end, inputs).map((x: DocumentText) => x.text);
     }
   );
 
   test("exact match", () => {
-    expect(filterDocumentRangeText(6, 11, createDocument("before", "match", "after")))
+    expect(extractJustText(6, 11, createDocument("before", "match", "after")))
       .toEqual(["match"]);
   });
 
   test("partial matches", () => {
     const actual = (
-      filterDocumentRangeText(
+      extractJustText(
         7, 23,
         createDocument(
           "before", ">start", " middle ", "end<", "after")));
@@ -79,7 +79,7 @@ describe("filterDocumentRange()", () => {
   });
 
   test("trim newlines", () => {
-    expect(filterDocumentRangeText(0, 200, createDocument("\nfirst\n", "second\n")))
+    expect(extractJustText(0, 200, createDocument("\nfirst\n", "second\n")))
       .toEqual(["first<br>second"]);
   });
 
@@ -94,13 +94,13 @@ describe("filterDocumentRange()", () => {
       "hello&lt;script&gt;console.log('hack me');&lt;/script",
       "&gt;&lt;script&gt;broken&lt;/script&gt;",
     ].join("");
-    expect(filterDocumentRangeText(0, 200, document)).toEqual([expected]);
+    expect(extractJustText(0, 200, document)).toEqual([expected]);
   });
 
   test("styling", () => {
     const document = createDocument("bold me");
     document[0].textRun.textStyle = {bold: true};
-    expect(filterDocumentRangeText(0, 200, document)).toEqual([
+    expect(extractJustText(0, 200, document)).toEqual([
       '<span class="personal-comment-bold">bold me</span>']);
   });
 
@@ -115,7 +115,7 @@ describe("filterDocumentRange()", () => {
         url: "the-url",
       },
     };
-    expect(filterDocumentRangeText(0, 200, document)).toEqual([
+    expect(extractJustText(0, 200, document)).toEqual([
       '<a href="the-url"><span class="personal-comment-bold personal-comment-italic '
         + 'personal-comment-underline personal-comment-strikethrough">combo</span></a>']);
   });
@@ -123,7 +123,7 @@ describe("filterDocumentRange()", () => {
   test("non URL link is ignored", () => {
     const document = createDocument("unmodified");
     document[0].textRun.textStyle = {link: {notUrl: "notUrl"}};
-    expect(filterDocumentRangeText(0, 200, document)).toEqual(["unmodified"]);
+    expect(extractJustText(0, 200, document)).toEqual(["unmodified"]);
   });
 });
 
