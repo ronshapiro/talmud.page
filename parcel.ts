@@ -124,13 +124,8 @@ if (!isProd) {
 
     if (tsFiles.length > 0) {
       processOutput(
-        spawn("npx", ["tsc", "--noEmit", "--strict"].concat(tsFiles)),
-        line => {
-          if (line.indexOf(": error TS")) {
-            return chalk.red(line);
-          }
-          return line;
-        });
+        spawn("npx", ["tsc", "--noEmit", "--strict", "--pretty"].concat(tsFiles)),
+        line => line);
     }
 
     processOutput(
