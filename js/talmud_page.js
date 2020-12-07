@@ -2,7 +2,7 @@
 import $ from "jquery";
 import {snackbars} from "./snackbar.js";
 import {TalmudRenderer} from "./rendering.jsx";
-import {onceDocumentReady} from "./once_document_ready.js";
+import {onceDocumentReady} from "./once_document_ready.ts";
 import MASECHTOT from "./masechtot.js";
 import {amudMetadata, computePreviousAmud, computeNextAmud} from "./amud.ts";
 import {driveClient} from "./google_drive.js";

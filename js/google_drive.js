@@ -3,7 +3,7 @@ import {v4 as uuid} from "uuid";
 import {amudMetadata} from "./amud.ts";
 import {refSorter} from "./ref_sorter.ts";
 import {filterDocumentRange} from "./filter_document_range.ts";
-import {newOnReady} from "./once_document_ready.js";
+import {GatedExecutor} from "./gated_executor.ts";
 import {asPromise} from "./promises.ts";
 import {RetryMethodFactory} from "./retry.ts";
 import {checkNotUndefined} from "./undefined.ts";
@@ -67,7 +67,7 @@ class DriveClient {
   constructor(clientId, apiKey) {
     this.clientId = clientId;
     this.apiKey = apiKey;
-    this.whenDatabaseReady = newOnReady();
+    this.whenDatabaseReady = new GatedExecutor();
     this.resetState();
 
     this.isDebug = window.location.hostname === "localhost";

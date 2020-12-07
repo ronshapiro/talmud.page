@@ -1,4 +1,5 @@
 /* eslint import/no-extraneous-dependencies: ["error", {"devDependencies": true}] */
+/* eslint no-console: "off" */
 import * as chalk from 'chalk';
 import * as Bundler from 'parcel-bundler';
 import * as fs from 'fs';
@@ -114,8 +115,7 @@ if (!isProd) {
       });
     };
 
-    const allJsFiles = (
-      fs.readdirSync("js").filter(x => !x.endsWith(".test.ts") && !x.endsWith(".test.js")));
+    const allJsFiles = fs.readdirSync("js");
     const needToSave = allJsFiles.filter(x => x.startsWith(".#")).map(x => `js/${x}`);
     if (needToSave.length > 0) {
       console.log(chalk.bgMagenta.bold(`Unsaved: ${needToSave}`));

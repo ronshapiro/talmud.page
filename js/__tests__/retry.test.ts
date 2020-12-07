@@ -1,5 +1,5 @@
 // @ts-ignore
-import {RetryMethodFactory} from "./retry.ts";
+import {RetryMethodFactory} from "../retry.ts";
 
 const noOpErrorsDelegate = {
   add: (_id: string, _message: string) => {},

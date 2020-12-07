@@ -3,7 +3,7 @@
 import $ from "jquery";
 import {snackbars} from "./snackbar.js";
 import {TalmudRenderer} from "./rendering.jsx";
-import {onceDocumentReady} from "./once_document_ready.js";
+import {onceDocumentReady} from "./once_document_ready.ts";
 import createTestData from "./preferences_sample_data.js";
 import PREFERENCES_PAGE_VERSION from "./preferences_version.js";
 

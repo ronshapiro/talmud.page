@@ -3,7 +3,7 @@ import {
   computePreviousAmud,
   computeNextAmud,
   // @ts-ignore
-} from "./amud.ts";
+} from "../amud.ts";
 
 const amudMetadata = amudMetadataForTesting;
 

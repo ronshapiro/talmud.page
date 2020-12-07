@@ -5,7 +5,7 @@ import {
   DocumentText,
   ParagraphElement,
   // @ts-ignore
-} from "./filter_document_range.ts";
+} from "../filter_document_range.ts";
 
 describe("inRange()", () => {
   test("before", () => {

@@ -1,8 +1,9 @@
-import {newOnReady as newInstance} from "./once_document_ready.js";
+// @ts-ignore
+import {GatedExecutor} from "../gated_executor.ts";
 
 test("Nothing executed before declareReady() is called", () => {
-  const onceDocumentReady = newInstance();
-  const called = [];
+  const onceDocumentReady = new GatedExecutor();
+  const called: number[] = [];
 
   onceDocumentReady.execute(() => called.push(1));
   expect(called).toEqual([]);
@@ -13,8 +14,8 @@ test("Nothing executed before declareReady() is called", () => {
 
 
 test("Functions are called in order", () => {
-  const onceDocumentReady = newInstance();
-  const called = [];
+  const onceDocumentReady = new GatedExecutor();
+  const called: number[] = [];
 
   onceDocumentReady.execute(() => called.push(1));
   onceDocumentReady.execute(() => called.push(2));
@@ -25,8 +26,8 @@ test("Functions are called in order", () => {
 
 
 test("Functions are executed immediately after declareReady() is called", () => {
-  const onceDocumentReady = newInstance();
-  const called = [];
+  const onceDocumentReady = new GatedExecutor();
+  const called: number[] = [];
 
   onceDocumentReady.declareReady();
 
@@ -38,7 +39,7 @@ test("Functions are executed immediately after declareReady() is called", () => 
 });
 
 test("Calling declareReady() twice throws", () => {
-  const onceDocumentReady = newInstance();
+  const onceDocumentReady = new GatedExecutor();
   onceDocumentReady.declareReady();
   expect(() => onceDocumentReady.declareReady()).toThrow();
 });
@@ -46,7 +47,7 @@ test("Calling declareReady() twice throws", () => {
 
 describe("execute() returns a Promise", () => {
   describe("already ready", () => {
-    const instance = newInstance();
+    const instance = new GatedExecutor();
     instance.declareReady();
 
 
@@ -66,7 +67,7 @@ describe("execute() returns a Promise", () => {
   });
 
   describe("not yet ready", () => {
-    const instance = newInstance();
+    const instance = new GatedExecutor();
 
     test("onSuccess", () => {
       expect.assertions(1);
