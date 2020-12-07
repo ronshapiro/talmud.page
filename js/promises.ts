@@ -8,6 +8,6 @@ export function promiseParts<T>(): [Promise<T>, (t: T) => void, (t: T) => void] 
   return [promise, onSuccess, onError];
 }
 
-export function asPromise(thenable: any): Promise<any> {
+export function asPromise<T>(thenable: PromiseLike<T>): Promise<T> {
   return Promise.all([thenable]).then(x => x[0]);
 }

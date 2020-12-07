@@ -40,11 +40,13 @@ module.exports = {
     "react/destructuring-assignment": "off",
     "react/static-property-placement": "off",
     "no-unused-vars": "off", // Let the typescript-eslint version rule
+    "no-use-before-define": "off", // Let the typescript-eslint version rule
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/no-empty-function": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "@typescript-eslint/no-use-before-define": ["error"],
 
     // TODO: evaluate all of the rules below
     "jsx-a11y/no-static-element-interactions": "off",
@@ -81,6 +83,12 @@ module.exports = {
       rules: {
         "quote-props": "off",
         "comma-dangle": "off",
+      },
+    },
+    {
+      files: ["*.js", "*.jsx"],
+      rules: {
+        "@typescript-eslint/explicit-module-boundary-types": "off",
       },
     },
   ],

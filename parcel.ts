@@ -124,7 +124,13 @@ if (!isProd) {
 
     if (tsFiles.length > 0) {
       processOutput(
-        spawn("npx", ["tsc", "--noEmit", "--strict", "--pretty"].concat(tsFiles)),
+        spawn("npx", [
+          "tsc",
+          "--noEmit",
+          "--strict",
+          "--pretty",
+          "--esModuleInterop",
+        ].concat(tsFiles)),
         line => line);
     }
 

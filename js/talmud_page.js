@@ -35,9 +35,9 @@ const renderer = new TalmudRenderer(
       const bounds = MASECHTOT[metadata.masechet];
       return metadata.amudEnd !== bounds.end;
     },
-    // eslint-disable-next-line no-use-before-define
+    // eslint-disable-next-line @typescript-eslint/no-use-before-define
     loadPrevious: () => addPreviousAmud(),
-    // eslint-disable-next-line no-use-before-define
+    // eslint-disable-next-line @typescript-eslint/no-use-before-define
     loadNext: () => addNextAmud(),
 
     defaultEditText: () => masechetNameAndRange(),
