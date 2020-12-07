@@ -46,10 +46,15 @@ const findSefariaRef = (node) => {
 
 const onSelectionChange = () => {
   let selection = document.getSelection();
+  if ($(selection.anchorNode).closest("#snackbar").length > 0) {
+    return;
+  }
+
   if (selection.type !== "Range") {
     hideSelectionChangeSnackbar();
     return;
   }
+
   const sefariaRef = findSefariaRef(selection.anchorNode);
   if (!sefariaRef.ref
       // TODO: perhaps support multiple refs, and just grab everything in between?
