@@ -69,10 +69,6 @@ const killFlask = () => {
   }
 };
 
-interface Mapper<T1, T2> {
-  (input: T1): T2;
-}
-
 if (!isProd) {
   let distFiles = new Set();
   const compilerSubprocesses: ChildProcess[] = [];
@@ -89,21 +85,12 @@ if (!isProd) {
       compilerSubprocesses.pop()!.kill();
     }
     const subprocessOutputs: boolean[] = [];
-    const processOutput = (process: ChildProcess, transformLine: Mapper<string, string>) => {
+    const processOutput = (process: ChildProcess) => {
       const index = compilerSubprocesses.length;
       compilerSubprocesses[index] = process;
       const lines: string[] = [];
-      process.stdout!.on("data", data => {
-        String(data).split("\n").forEach((line: string) => {
-          line = transformLine(line);
-          if (line || line === "") {
-            lines.push(line);
-          }
-        });
-      });
-      process.stderr!.on("data", data => {
-        lines.push(chalk.bgRed(data));
-      });
+      process.stdout!.on("data", data => lines.push(data));
+      process.stderr!.on("data", data => lines.push(chalk.bgRed(data)));
       process.on("close", () => {
         if (lines.length > 0) {
           console.log(lines.join("\n"));
@@ -128,21 +115,10 @@ if (!isProd) {
     const tsFiles = filesToLint.filter(x => x.endsWith(".ts") || x.endsWith(".tsx"));
 
     if (tsFiles.length > 0) {
-      processOutput(
-        spawn("pre-commit/tsc.sh", tsFiles),
-        line => line);
+      processOutput(spawn("pre-commit/tsc.sh", tsFiles));
     }
 
-    processOutput(
-      spawn("pre-commit/check_eslint.sh", filesToLint),
-      line => {
-        if (/ +[0-9]+:[0-9]+ +warning/.test(line)) {
-          return chalk.yellow(line);
-        } else if (/ +[0-9]+:[0-9]+ +error/.test(line)) {
-          return chalk.red(line);
-        }
-        return line;
-      });
+    processOutput(spawn("pre-commit/check_eslint.sh", filesToLint));
   });
 
   bundler.on("buildError", () => killFlask());
