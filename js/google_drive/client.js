@@ -1,10 +1,12 @@
 /* global gapi, gtag */
 import {amudMetadata} from "../amud.ts";
+import {rgbColor} from "./color.ts";
 import {refSorter} from "./ref_sorter.ts";
 import {extractDocumentText} from "./document_text.ts";
 import {GatedExecutor} from "../gated_executor.ts";
 import {asPromise} from "../promises.ts";
 import {RetryMethodFactory} from "../retry.ts";
+import {insertTextWithUrls} from "./textWithUrlsRequests.ts";
 import {checkNotUndefined} from "../undefined.ts";
 
 const INSTRUCTIONS_TABLE_RANGE_NAME = "Instructions Table";
@@ -20,16 +22,6 @@ const APIS = [
     apiScope: "https://www.googleapis.com/auth/drive",
   },
 ];
-
-const rgbColor = (red, green, blue) => ({
-  color: {
-    rgbColor: {
-      red: red / 256,
-      green: green / 256,
-      blue: blue / 256,
-    },
-  },
-});
 
 const insertFormattedTextRequests = (text, range, style) => {
   return [{
@@ -193,11 +185,6 @@ export class DriveClient {
   });
 
   instructionsTableRequests() {
-    const caveatsUrl = "https://talmud.page/caveats/google-docs";
-    const caveatsText = "these instructions";
-    const text = "This document was created with talmud.page and is used as a database for"
-          + " personalized comments that you create.\n\nBefore making any edits, it's recommended"
-          + ` to read ${caveatsText}.`;
     // TODO: consider computing these values. That may require making multiple batch edits. For now,
     // it seems safe, but it would be good to be more resilient
     const TABLE_START = 2;
@@ -229,51 +216,18 @@ export class DriveClient {
             borderBottom: borderStyle,
           },
         },
-      }, {
-        insertText: {
-          text,
-          location: {index: TABLE_TEXT_START},
-        },
       },
     ];
 
-    const addLink = (url, start, end) => {
-      return {
-        updateTextStyle: {
-          textStyle: {
-            link: {url},
-            underline: true,
-            foregroundColor: rgbColor(44, 91, 198),
-          },
-          fields: "*",
-          range: {
-            startIndex: TABLE_TEXT_START + start,
-            endIndex: TABLE_TEXT_START + end,
-          },
-        },
-      };
-    };
-
-    let talmudPageIndex = -1;
-    while (true) { // eslint-disable-line no-constant-condition
-      // leading space helps to ignore caveatsUrl
-      talmudPageIndex = text.indexOf(" talmud.page", talmudPageIndex);
-      if (talmudPageIndex === -1) {
-        break;
-      }
-      talmudPageIndex++;
-
-      requests.push(
-        addLink("https://talmud.page", talmudPageIndex, talmudPageIndex + "talmud.page".length));
-    }
-
-    requests.push(
-      addLink(
-        caveatsUrl,
-        text.lastIndexOf(caveatsText),
-        text.lastIndexOf(caveatsText) + caveatsText.length));
-
-    return requests;
+    return requests.concat(insertTextWithUrls([
+      "This document was created with ",
+      {text: "talmud.page", url: "https://talmud.page"},
+      " and is used as a database for personalized comments that you create.",
+      "\n\n",
+      "Before making any edits, it's recommended to read ",
+      {text: "these instructions", url: "https://talmud.page/caveats/google-docs"},
+      ".",
+    ], TABLE_TEXT_START));
   }
 
   addInstructionsTable = this.retryMethodFactory.retryingMethod({
