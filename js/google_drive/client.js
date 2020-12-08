@@ -232,10 +232,8 @@ export class DriveClient {
 
   addInstructionsTable = this.retryMethodFactory.retryingMethod({
     retryingCall: () => this.updateDocument(this.instructionsTableRequests()),
-    then: () => {
-      return this.getDatabaseDocument(this.databaseDocument.documentId)
-        .then(() => this.setInstructionsTableRange());
-    },
+    then: () => this.refreshDatabaseDocument()
+      .then(() => this.setInstructionsTableRange()),
     createError: () => "Error configuring database file (28zd3)",
   });
 
@@ -254,7 +252,7 @@ export class DriveClient {
 
       return this.updateDocument(createNamedRange(INSTRUCTIONS_TABLE_RANGE_NAME, range));
     },
-    then: () => this.getDatabaseDocument(this.databaseDocument.documentId),
+    then: () => this.refreshDatabaseDocument(),
     createError: () => "Error configuring database file (0h7f1)",
   });
 
@@ -272,6 +270,8 @@ export class DriveClient {
     },
     createError: () => "Could not find database file",
   });
+
+  refreshDatabaseDocument = () => this.getDatabaseDocument(this.databaseDocument.documentId);
 
   // TODO(drive): break up this method, possibly by extracting a state object.
   postCommentRequests(text, amud, ref, parentRef) {
@@ -339,7 +339,7 @@ export class DriveClient {
   _postComment = this.retryMethodFactory.retryingMethod({
     retryingCall: ({text, amud, ref, parentRef, id}) => {
       return this.updateDocument(this.postCommentRequests(text, amud, ref, parentRef))
-        .finally(() => this.getDatabaseDocument(this.databaseDocument.documentId))
+        .finally(() => this.refreshDatabaseDocument())
         .then(response => {
           this.unsavedCommentStore.markCommentSaved(id);
           return Promise.resolve(response);
