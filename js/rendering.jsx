@@ -12,7 +12,7 @@ import isEmptyText from "./is_empty_text.ts";
 import {
   NextButton,
   PreviousButton,
-} from "./NavigationButtons.jsx";
+} from "./NavigationButtons.tsx";
 import TableRow from "./TableRow.jsx";
 import {
   ConfigurationContext,

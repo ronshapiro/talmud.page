@@ -1,12 +1,25 @@
-/* global componentHandler */
-import React, {
-  useRef,
-  useEffect,
-} from "react";
+import * as React from "react";
 import $ from "jquery";
-import PropTypes from 'prop-types';
+import * as PropTypes from 'prop-types';
+// @ts-ignore
+import {NullaryFunction} from "./types.ts";
+// @ts-ignore
+import componentHandler from "./componentHandler.ts";
+// @ts-ignore
+import {useHtmlRef} from "./hooks.ts";
 
-function Modal(props) {
+const {useEffect} = React;
+
+interface ModalProps {
+  label: string;
+  content: React.ReactNode;
+  cancelText: string;
+  onCancel: NullaryFunction<void>;
+  acceptText: string;
+  onAccept: NullaryFunction<void>;
+}
+
+export default function Modal(props: ModalProps): React.ReactNode {
   const {
     label,
     content,
@@ -15,7 +28,7 @@ function Modal(props) {
     acceptText,
     onAccept,
   } = props;
-  const modalContainerRef = useRef();
+  const modalContainerRef = useHtmlRef();
   useEffect(() => {
     componentHandler.upgradeElement(modalContainerRef.current);
     const modalContainer = $(modalContainerRef.current);
@@ -58,5 +71,3 @@ Modal.propTypes = {
   acceptText: PropTypes.string,
   onAccept: PropTypes.func,
 };
-
-export default Modal;

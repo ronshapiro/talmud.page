@@ -91,5 +91,11 @@ module.exports = {
         "@typescript-eslint/explicit-module-boundary-types": "off",
       },
     },
+    {
+      files: ["*.tsx"],
+      rules: {
+        "react/jsx-filename-extension": "off",
+      },
+    },
   ],
 };

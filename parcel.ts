@@ -129,13 +129,7 @@ if (!isProd) {
 
     if (tsFiles.length > 0) {
       processOutput(
-        spawn("npx", [
-          "tsc",
-          "--noEmit",
-          "--strict",
-          "--pretty",
-          "--esModuleInterop",
-        ].concat(tsFiles)),
+        spawn("pre-commit/tsc.sh", tsFiles),
         line => line);
     }
 

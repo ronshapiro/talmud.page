@@ -1,13 +1,20 @@
 import $ from "jquery";
-import React, {
+import * as React from "react";
+import * as PropTypes from 'prop-types';
+// @ts-ignore
+import {NavigationExtension} from "./NavigationExtension.ts";
+// @ts-ignore
+import Modal from "./Modal.tsx";
+// @ts-ignore
+import {UnaryFunction, NullaryFunction} from "./types.ts";
+
+const {
   useEffect,
   useRef,
   useState,
-} from "react";
-import PropTypes from 'prop-types';
-import Modal from "./Modal.jsx";
+} = React;
 
-const buttonClasses = (...extra) => {
+const buttonClasses: UnaryFunction<string[], string> = (...extra: string[]) => {
   return [
     "navigation-button",
     "mdl-button",
@@ -19,7 +26,7 @@ const buttonClasses = (...extra) => {
   ].join(" ");
 };
 
-const newSearch = searchTerm => {
+const newSearch = (searchTerm: string): void => {
   const form = document.createElement("form");
   document.body.appendChild(form);
   form.method = "post";
@@ -32,7 +39,14 @@ const newSearch = searchTerm => {
   form.submit();
 };
 
-const NavigationButtonRow = (props) => {
+interface NavigationButtonRowProps {
+  isNext: boolean,
+  text: string;
+  doLoad: NullaryFunction<void>;
+  defaultEditText: NullaryFunction<string>,
+}
+
+const NavigationButtonRow = (props: NavigationButtonRowProps) => {
   const {
     isNext,
     text,
@@ -41,7 +55,7 @@ const NavigationButtonRow = (props) => {
   } = props;
   const [showModal, setShowModal] = useState(false);
   const classes = ["navigation-button-container"];
-  const modalSearchBarRef = useRef();
+  const modalSearchBarRef = useRef<HTMLInputElement>(undefined as any);
 
   useEffect(() => {
     $(modalSearchBarRef.current).val(defaultEditText());
@@ -89,8 +103,11 @@ NavigationButtonRow.propTypes = {
   defaultEditText: PropTypes.func.isRequired,
 };
 
+interface ButtonProps {
+  navigationExtension: NavigationExtension;
+}
 
-const PreviousButton = (props) => {
+export const PreviousButton = (props: ButtonProps): React.ReactNode => {
   const {navigationExtension} = props;
   if (!navigationExtension.hasPrevious()) {
     return null;
@@ -108,7 +125,7 @@ PreviousButton.propTypes = {
   navigationExtension: PropTypes.object.isRequired,
 };
 
-const NextButton = (props) => {
+export const NextButton = (props: ButtonProps): React.ReactNode => {
   const {navigationExtension} = props;
   if (!navigationExtension.hasNext()) {
     return null;
@@ -123,8 +140,3 @@ const NextButton = (props) => {
   );
 };
 NextButton.propTypes = PreviousButton.propTypes;
-
-module.exports = {
-  NextButton,
-  PreviousButton,
-};
