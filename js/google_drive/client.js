@@ -142,6 +142,7 @@ export class DriveClient {
       const {files} = response.result;
       if (files.length === 0) {
         this.databaseDocumentShouldBeCreated = true;
+        if (this.databaseUpdatedListener) this.databaseUpdatedListener();
       } else if (files.length === 1) {
         this.getDatabaseDocument(files[0].id).then(() => this.whenDatabaseReady.declareReady());
       } else {

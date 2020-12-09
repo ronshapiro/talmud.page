@@ -293,8 +293,16 @@ def google_docs_caveats():
     return redirect("https://github.com/ronshapiro/talmud.page/blob/base/GoogleDriveCaveats.md")
 
 @app.route("/notes")
-def notes():
+def all_notes():
     return redirect("https://drive.google.com/drive/search?q=talmud.page notes")
+
+@app.route("/<masechet>/notes")
+def notes(masechet):
+    canonical_masechet = masechtot.canonical_url_masechet_name(masechet)
+    if canonical_masechet != masechet:
+        return redirect(url_for("notes", masechet = canonical_masechet))
+
+    return render_compiled_template("notes_redirecter.html")
 
 if __name__ == '__main__':
     app.run(threaded=True, port=os.environ.get("PORT", 5000))

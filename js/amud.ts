@@ -9,21 +9,37 @@ export const computeNextAmud = (current: string): string => {
 };
 
 const SPACE_REGEX = /(%20|_)/g;
+const AMUD_REGEX = /^[0-9]{1,3}[ab]$/;
 
 interface AmudMetadata {
   masechet: string;
-  amudStart: string;
-  amudEnd: string;
+  amudStart?: string;
+  amudEnd?: string;
   range: () => string[];
 }
 
+function validAmudOrUndefined(amud: string | undefined): string | undefined {
+  if (!amud) {
+    return undefined;
+  }
+  return AMUD_REGEX.test(amud) ? amud : undefined;
+}
+
+// TODO: have a registry of dependencies like this that can be swapped out by different pages, such
+// as the notes redirector which has no concept of amud
 const _amudMetadata = (pathname: string): AmudMetadata => {
   const pathParts = pathname.split("/");
   return {
     masechet: pathParts[1].replace(SPACE_REGEX, " "),
-    amudStart: pathParts[2],
-    amudEnd: pathParts[4] || pathParts[2],
+    amudStart: validAmudOrUndefined(pathParts[2]),
+    amudEnd: validAmudOrUndefined(pathParts[4] || pathParts[2]),
     range() {
+      if (!this.amudStart) {
+        return [];
+      }
+      if (!this.amudEnd) {
+        return [this.amudStart];
+      }
       let current = this.amudStart;
       const results = [current];
       while (current !== this.amudEnd) {

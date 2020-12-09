@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{title}}</title>
+  {% include "header_common.html" %}
+  <link rel="stylesheet" href="../css/homepage.css" />
+  <script src="../js/notes_redirector.ts"></script>
+  <script async="" defer=""
+          onload="this.onload=function(){};handleGoogleClientLoad()"
+          onreadystatechange="if (this.readyState === 'complete') this.onload()"
+          src="https://apis.google.com/js/api.js"></script>
+</head>
+<body>
+  <div id="main-contents">
+    <div id="center-content-container">
+      <div id="center-contents">
+        <h1>Finding Google doc...</h1>
+        <div id="progress-bar" class="mdl-progress mdl-js-progress mdl-progress__indeterminate">
+        </div>
+        <br />
+        <ul id="errors"></ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

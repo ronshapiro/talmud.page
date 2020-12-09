@@ -17,6 +17,7 @@ if (fs.existsSync("./dist")) {
 
 const entryFiles = [
   './templates/homepage.html',
+  './templates/notes_redirecter.html',
   './templates/preferences.html',
   './templates/talmud_page.html',
 ];

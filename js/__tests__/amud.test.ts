@@ -81,4 +81,12 @@ describe("amudMetadata", () => {
       expect(actual.range()).toEqual(["2a", "2b", "3a", "3b"]);
     });
   });
+
+  test("no amud", () => {
+    const actual = amudMetadata("/Shabbat/notes");
+    expect(actual.masechet).toBe("Shabbat");
+    expect(actual.amudStart).toBeUndefined();
+    expect(actual.amudEnd).toBeUndefined();
+    expect(actual.range()).toEqual([]);
+  });
 });
