@@ -6,7 +6,21 @@
 /* eslint no-console: "off" */
 import * as chalk from 'chalk';
 import * as fs from 'fs';
-import {spawn, ChildProcess} from "child_process";
+import {ChildProcess, execSync, spawn} from "child_process";
+
+const filesWithUntrackedChanges = (
+  execSync("git status --porcelain=v1").toString("utf8")
+    .split("\n")
+    .filter(x => x[1] === "M")
+    .map(x => x.slice(3)));
+if (filesWithUntrackedChanges.length !== 0) {
+  console.log([
+    chalk.bgRed.bold("Previous pre-commit checks modified files. Not checking slower tests."),
+    "",
+    "Modified files:",
+  ].concat(filesWithUntrackedChanges.map(x => chalk.magenta(`  ${x}`))).join("\n"));
+  process.exit(1);
+}
 
 const precommits: ChildProcess[] = [];
 const exitCodes: number[] = [];
