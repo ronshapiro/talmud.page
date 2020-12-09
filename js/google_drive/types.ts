@@ -24,5 +24,6 @@ export interface DriveClient {
   masechet: string;
 }
 
+export interface Color extends gapi.client.docs.OptionalColor {}
 export interface Request extends gapi.client.docs.Request {}
 export interface Range extends gapi.client.docs.Range {}

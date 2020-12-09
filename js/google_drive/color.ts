@@ -1,4 +1,7 @@
-export function rgbColor(red: number, green: number, blue: number): gapi.client.docs.OptionalColor {
+// @ts-ignore
+import {Color} from "./types.ts";
+
+export function rgbColor(red: number, green: number, blue: number): Color {
   return {
     color: {
       rgbColor: {
