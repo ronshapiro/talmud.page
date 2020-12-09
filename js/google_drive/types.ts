@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-interface */
 // @ts-ignore
 import {UnaryFunction} from "../types.ts";
 
@@ -22,3 +23,6 @@ export interface DriveClient {
   postComment: UnaryFunction<UnsavedComment, void>;
   masechet: string;
 }
+
+export interface Request extends gapi.client.docs.Request {}
+export interface Range extends gapi.client.docs.Range {}

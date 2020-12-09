@@ -6,7 +6,7 @@ import {extractDocumentText} from "./document_text.ts";
 import {GatedExecutor} from "../gated_executor.ts";
 import {asPromise} from "../promises.ts";
 import {RetryMethodFactory} from "../retry.ts";
-import {insertTextWithUrls} from "./textWithUrlsRequests.ts";
+import {insertFormattedTextRequests, insertTextWithUrls} from "./insertTextRequests.ts";
 import {checkNotUndefined} from "../undefined.ts";
 
 const INSTRUCTIONS_TABLE_RANGE_NAME = "Instructions Table";
@@ -22,21 +22,6 @@ const APIS = [
     apiScope: "https://www.googleapis.com/auth/drive",
   },
 ];
-
-const insertFormattedTextRequests = (text, range, style) => {
-  return [{
-    insertText: {
-      text,
-      location: {index: range.startIndex},
-    },
-  }, {
-    updateParagraphStyle: {
-      paragraphStyle: {namedStyleType: style},
-      fields: "*",
-      range,
-    },
-  }];
-};
 
 const createNamedRange = (name, range) => {
   return {createNamedRange: {name, range}};

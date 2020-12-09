@@ -1,13 +1,38 @@
 // @ts-ignore
 import {rgbColor} from "./color.ts";
-
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-interface Request extends gapi.client.docs.Request {}
+// @ts-ignore
+import {Range, Request} from "./types.ts";
 
 interface LinkedText {
   text: string,
   url: string,
 }
+
+function insertTextRequest(text: string, startIndex: number): Request {
+  return {
+    insertText: {
+      text,
+      location: {index: startIndex},
+    },
+  };
+}
+
+type ParagraphStyle = "HEADING_1" | "HEADING_2" | "HEADING_3" | "HEADING_4" | "NORMAL_TEXT";
+
+export function insertFormattedTextRequests(
+  text: string,
+  range: Range,
+  style: ParagraphStyle,
+): Request[] {
+  return [insertTextRequest(text, range.startIndex), {
+    updateParagraphStyle: {
+      paragraphStyle: {namedStyleType: style},
+      fields: "*",
+      range,
+    },
+  }];
+}
+
 
 function addLink(url: string, start: number, length: number): Request {
   return {
@@ -45,10 +70,5 @@ export function insertTextWithUrls(
       addText(part.text);
     }
   }
-  return [{
-    insertText: {
-      text: textParts.join(""),
-      location: {index: startIndex},
-    },
-  } as Request].concat(links);
+  return [insertTextRequest(textParts.join(""), startIndex)].concat(links);
 }
