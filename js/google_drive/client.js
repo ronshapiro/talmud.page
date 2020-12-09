@@ -162,9 +162,9 @@ export class DriveClient {
       return gapi.client.docs.documents.create({title});
     },
     then: response => {
-      this.setDatabaseFileProperties(response.result.documentId);
       return this.getDatabaseDocument(response.result.documentId)
         .then(() => this.addInstructionsTable())
+        .then(() => this.setDatabaseFileProperties(response.result.documentId))
         .then(() => this.whenDatabaseReady.declareReady());
     },
     createError: () => "Error creating database file",
