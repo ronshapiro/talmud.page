@@ -86,12 +86,12 @@ describe("extractDocumentText()", () => {
   test("escaping", () => {
     const document = (
       createDocument(
-        "hello<script>console.log('hack me');</script>",
+        "hello<script>console.log('hack & \" me');</script>",
         "<scr", "ipt>", "broken", "<", "/", "script>",
       )
     );
     const expected = [
-      "hello&lt;script&gt;console.log('hack me');&lt;/script",
+      "hello&lt;script&gt;console.log(&#039;hack &amp; &quot; me&#039;);&lt;/script",
       "&gt;&lt;script&gt;broken&lt;/script&gt;",
     ].join("");
     expect(extractJustText(0, 200, document)).toEqual([expected]);

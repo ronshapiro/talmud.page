@@ -1,6 +1,3 @@
-// @ts-ignore
-import $ from "jquery";
-
 interface Predicate<T> {
   (t: T): boolean;
 }
@@ -87,7 +84,12 @@ export const joinAdjacentElements: ElementsProcessor = (elements) => {
 };
 
 const htmlEscape: ElementsProcessor = elements => (
-  elements.map(x => updateText(x, $("<p>").text(x.textRun.content).html()))
+  elements.map(x => updateText(x, x.textRun.content
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/'/g, "&#039;")
+    .replace(/"/g, "&quot;")))
 );
 
 const newlineToBr: ElementsProcessor = elements => (
