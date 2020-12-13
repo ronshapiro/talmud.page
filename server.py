@@ -304,5 +304,10 @@ def notes(masechet):
 
     return render_compiled_template("notes_redirecter.html")
 
+@app.route("/yomi")
+@app.route("/daf-yomi")
+def yomi():
+    return render_compiled_template("daf_yomi_redirector.html")
+
 if __name__ == '__main__':
     app.run(threaded=True, port=os.environ.get("PORT", 5000))
