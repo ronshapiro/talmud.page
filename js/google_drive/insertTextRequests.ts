@@ -3,7 +3,7 @@ import {rgbColor} from "./color.ts";
 // @ts-ignore
 import {Range, Request} from "./types.ts";
 
-interface LinkedText {
+interface StyledText {
   text: string,
   url: string,
 }
@@ -33,7 +33,6 @@ export function insertFormattedTextRequests(
   }];
 }
 
-
 function addLink(url: string, start: number, length: number): Request {
   return {
     updateTextStyle: {
@@ -51,8 +50,8 @@ function addLink(url: string, start: number, length: number): Request {
   };
 }
 
-export function insertTextWithUrls(
-  parts: (string | LinkedText)[],
+export function insertStyledText(
+  parts: (string | StyledText)[],
   startIndex: number,
 ): Request[] {
   const textParts: string[] = [];

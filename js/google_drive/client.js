@@ -4,10 +4,10 @@ import {rgbColor} from "./color.ts";
 import {refSorter} from "./ref_sorter.ts";
 import {extractDocumentText} from "./document_text.ts";
 import {GatedExecutor} from "../gated_executor.ts";
-import {insertFormattedTextRequests, insertTextWithUrls} from "./insertTextRequests.ts";
+import {insertFormattedTextRequests} from "./insertTextRequests.ts";
 import {asPromise} from "../promises.ts";
 import {RetryMethodFactory} from "../retry.ts";
-import {insertSingleCellTableRequests} from "./tableRequests.ts";
+import {insertTableRequests} from "./tableRequests.ts";
 import {checkNotUndefined} from "../undefined.ts";
 
 const INSTRUCTIONS_TABLE_RANGE_NAME = "Instructions Table";
@@ -172,24 +172,22 @@ export class DriveClient {
   });
 
   instructionsTableRequests() {
-    // TODO: consider computing these values. That may require making multiple batch edits. For now,
-    // it seems safe, but it would be good to be more resilient
-    const TABLE_START = 1;
-    const TABLE_TEXT_START = 5;
-
-    return insertSingleCellTableRequests({
-      tableStart: TABLE_START,
+    return insertTableRequests({
+      tableStart: 1,
       borderColor: rgbColor(184, 145, 48),
       backgroundColor: rgbColor(251, 229, 163),
-    }).concat(insertTextWithUrls([
-      "This document was created with ",
-      {text: "talmud.page", url: "https://talmud.page"},
-      " and is used as a database for personalized comments that you create.",
-      "\n\n",
-      "Before making any edits, it's recommended to read ",
-      {text: "these instructions", url: "https://talmud.page/caveats/google-docs"},
-      ".",
-    ], TABLE_TEXT_START));
+      cells: [{
+        cellText: [
+          "This document was created with ",
+          {text: "talmud.page", url: "https://talmud.page"},
+          " and is used as a database for personalized comments that you create.",
+          "\n\n",
+          "Before making any edits, it's recommended to read ",
+          {text: "these instructions", url: "https://talmud.page/caveats/google-docs"},
+          ".",
+        ],
+      }],
+    });
   }
 
   addInstructionsTable = this.retryMethodFactory.retryingMethod({
