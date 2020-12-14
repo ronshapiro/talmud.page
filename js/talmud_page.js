@@ -45,6 +45,18 @@ const renderer = new TalmudRenderer(
 );
 renderer.driveClient = driveClient;
 
+if (window.location.hostname === "localhost") {
+  window.dumpDocument = () => {
+    $.ajax({
+      type: "POST",
+      url: `${window.location.origin}/google-docs-record`,
+      data: JSON.stringify(driveClient.databaseDocument),
+      dataType: "json",
+      contentType: "application/json",
+    });
+  };
+}
+
 const refreshPageState = () => {
   document.title = masechetNameAndRange();
 };

@@ -19,6 +19,7 @@ from masechtot import Masechtot
 from masechtot import UnknownMasechetNameException
 from masechtot import next_amud
 from masechtot import previous_amud
+from util.json_files import write_json
 import cachetools
 import flask.logging
 import logging
@@ -308,6 +309,12 @@ def notes(masechet):
 @app.route("/daf-yomi")
 def yomi():
     return render_compiled_template("daf_yomi_redirector.html")
+
+if app.debug:
+    @app.route("/google-docs-record", methods=["POST"])
+    def google_docs_output():
+        write_json("js/google_drive/test_data/do_not_submit_rename_me.json", request.get_json())
+        return ""
 
 if __name__ == '__main__':
     app.run(threaded=True, port=os.environ.get("PORT", 5000))
