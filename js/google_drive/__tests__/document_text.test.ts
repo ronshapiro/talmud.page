@@ -9,35 +9,35 @@ import {
 
 describe("inRange()", () => {
   test("before", () => {
-    expect(inRange(10, 20)({startIndex: 5, endIndex: 9})).toBe(false);
+    expect(inRange({startIndex: 10, endIndex: 20})({startIndex: 5, endIndex: 9})).toBe(false);
   });
 
   test("end == start", () => {
-    expect(inRange(10, 20)({startIndex: 5, endIndex: 10})).toBe(false);
+    expect(inRange({startIndex: 10, end: 20})({startIndex: 5, endIndex: 10})).toBe(false);
   });
 
   test("before and during", () => {
-    expect(inRange(10, 20)({startIndex: 5, endIndex: 11})).toBe(true);
+    expect(inRange({startIndex: 10, endIndex: 20})({startIndex: 5, endIndex: 11})).toBe(true);
   });
 
   test("start and before end", () => {
-    expect(inRange(10, 20)({startIndex: 10, endIndex: 11})).toBe(true);
+    expect(inRange({startIndex: 10, end: 20})({startIndex: 10, endIndex: 11})).toBe(true);
   });
 
   test("start and end", () => {
-    expect(inRange(10, 20)({startIndex: 10, endIndex: 20})).toBe(true);
+    expect(inRange({startIndex: 10, end: 20})({startIndex: 10, endIndex: 20})).toBe(true);
   });
 
   test("start and after end", () => {
-    expect(inRange(10, 20)({startIndex: 10, endIndex: 21})).toBe(true);
+    expect(inRange({startIndex: 10, end: 20})({startIndex: 10, endIndex: 21})).toBe(true);
   });
 
   test("start == end", () => {
-    expect(inRange(10, 20)({startIndex: 20, endIndex: 21})).toBe(false);
+    expect(inRange({startIndex: 10, end: 20})({startIndex: 20, endIndex: 21})).toBe(false);
   });
 
   test("after start and end", () => {
-    expect(inRange(10, 20)({startIndex: 21, endIndex: 22})).toBe(false);
+    expect(inRange({startIndex: 10, end: 20})({startIndex: 21, endIndex: 22})).toBe(false);
   });
 });
 
@@ -60,7 +60,8 @@ describe("extractDocumentText()", () => {
 
   const extractJustText = (
     (start: number, end: number, inputs: ParagraphElement[]): string[] => {
-      return extractDocumentText(start, end, inputs).map((x: DocumentText) => x.text);
+      return extractDocumentText({startIndex: start, endIndex: end}, inputs)
+        .map((x: DocumentText) => x.text);
     }
   );
 

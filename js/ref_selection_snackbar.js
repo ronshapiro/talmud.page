@@ -135,11 +135,13 @@ const onSelectionChange = () => {
         modalContainer.show();
         $("#modal-label").text(`Add a note on ${sefariaRef.ref}`);
         // Get the possibly-updated selection
-        noteTextArea.val(document.getSelection().toString());
+        const selectedText = document.getSelection().toString();
+        noteTextArea.val("");
         $("#modal-cancel").off("click").on("click", () => modalContainer.hide());
         $("#modal-save").off("click").on("click", () => {
           driveClient.postComment({
-            text: noteTextArea.val(),
+            text: noteTextArea.val() || "",
+            selectedText,
             amud: sefariaRef.amud,
             ref: sefariaRef.ref,
             parentRef: sefariaRef.parentRef || sefariaRef.ref,

@@ -1,3 +1,6 @@
+// @ts-ignore
+import {Range} from "./types.ts";
+
 interface Predicate<T> {
   (t: T): boolean;
 }
@@ -21,13 +24,13 @@ export interface ParagraphElement {
 
 type Indexable = Pick<ParagraphElement, "startIndex" | "endIndex">;
 
-export const inRange = (start: number, end: number): Predicate<Indexable> => (x) => {
-  if (x.startIndex === start) {
+export const inRange = (range: Range): Predicate<Indexable> => (x) => {
+  if (x.startIndex === range.startIndex) {
     return true;
-  } else if (x.startIndex < start) {
-    return x.endIndex > start;
+  } else if (x.startIndex < range.startIndex) {
+    return x.endIndex > range.startIndex;
   }
-  return x.startIndex < end;
+  return x.startIndex < range.endIndex;
 };
 
 const updateText = (element: ParagraphElement, updated: string): ParagraphElement => {
@@ -96,15 +99,15 @@ const newlineToBr: ElementsProcessor = elements => (
   elements.map(x => updateText(x, x.textRun.content.replace(/\n/g, "<br>")))
 );
 
-const trimTextsByFilterRange = (start: number, end: number): ElementsProcessor => {
+const trimTextsByFilterRange = (range: Range): ElementsProcessor => {
   return elements => (
     elements.map(x => {
       const text = x.textRun.content;
       return updateText(
         x,
         text.substring(
-          start - x.startIndex,
-          end > x.endIndex ? text.length : text.length - (x.endIndex - end)));
+          range.startIndex - x.startIndex,
+          range.endIndex > x.endIndex ? text.length : text.length - (x.endIndex - range.endIndex)));
     })
   );
 };
@@ -154,11 +157,11 @@ export interface DocumentText {
 }
 
 export const extractDocumentText = (
-  start: number, end: number, inputs: ParagraphElement[],
+  range: Range, inputs: ParagraphElement[],
 ): DocumentText[] => {
   const transformations: ElementsProcessor[] = [
-    elements => elements.filter(inRange(start, end)),
-    trimTextsByFilterRange(start, end),
+    elements => elements.filter(inRange(range)),
+    trimTextsByFilterRange(range),
     computeLanguageStats,
     htmlEscape,
     applyTextStyle,

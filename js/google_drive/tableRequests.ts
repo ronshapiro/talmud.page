@@ -1,18 +1,23 @@
 // @ts-ignore
+import {rgbColor} from "./color.ts";
+// @ts-ignore
 import {insertStyledText, StyledText} from "./insertTextRequests.ts";
 // @ts-ignore
 import {Color, Request} from "./types.ts";
 
 interface Cell {
   cellText: (string | StyledText)[];
+  rangeNames: string[] | undefined;
+  rtl: boolean | undefined;
 }
 
 interface InsertTableParams {
   tableStart: number;
-  backgroundColor: Color;
-  borderColor: Color;
+  backgroundColor: Color | undefined;
+  borderColor: Color | undefined;
   borderWeight: number | undefined;
   cells: Cell[];
+  rangeNames: string[] | undefined;
 }
 
 function insertTableStructureRequests(
@@ -21,7 +26,7 @@ function insertTableStructureRequests(
   const {tableStart, backgroundColor, borderColor} = params;
   const borderWeight = params.borderWeight || 1;
   const borderStyle = {
-    color: borderColor,
+    color: borderColor || rgbColor(256, 256, 256),
     width: {
       magnitude: borderWeight,
       unit: "PT",
@@ -64,6 +69,16 @@ function cellTextLength(cell: Cell): number {
   return length;
 }
 
+function createNamedRanges(
+  names: string[] | undefined,
+  startIndex: number,
+  endIndex: number,
+): Request {
+  return (names || []).map(name => {
+    return {createNamedRange: {name, range: {startIndex, endIndex}}};
+  });
+}
+
 export function insertTableRequests(
   params: InsertTableParams,
 ): Request[] {
@@ -76,8 +91,19 @@ export function insertTableRequests(
     // - Into the row's column (+ 1)
     // - Into the cell for the column (+ 1)
     cellTextIndex += 3;
-    requests.push(...insertStyledText(cell.cellText, cellTextIndex));
-    cellTextIndex += cellTextLength(cell);
+    requests.push(...insertStyledText(cell.cellText, cellTextIndex, cell.rtl));
+
+    const textEnd = cellTextIndex + cellTextLength(cell);
+    requests.push(...createNamedRanges(cell.rangeNames, cellTextIndex, textEnd));
+    cellTextIndex = textEnd;
   }
+
+  requests.push(
+    ...createNamedRanges(
+      params.rangeNames,
+      params.tableStart,
+      // + 2 accounts for the end of the last column, and then the end of the last row
+      cellTextIndex + 2));
+
   return requests;
 }

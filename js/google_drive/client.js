@@ -1,4 +1,5 @@
 /* global gapi, gtag */
+import {v4 as uuid} from "uuid";
 import {amudMetadata} from "../amud.ts";
 import {rgbColor} from "./color.ts";
 import {refSorter} from "./ref_sorter.ts";
@@ -11,6 +12,7 @@ import {insertTableRequests} from "./tableRequests.ts";
 import {checkNotUndefined} from "../undefined.ts";
 
 const INSTRUCTIONS_TABLE_RANGE_NAME = "Instructions Table";
+const NAMED_RANGE_SEPARATOR = "<<||>>";
 
 // The discoveryDoc is seemingly "loaded into" the gapi.client JS object
 const APIS = [
@@ -187,33 +189,14 @@ export class DriveClient {
           ".",
         ],
       }],
+      rangeNames: [INSTRUCTIONS_TABLE_RANGE_NAME],
     });
   }
 
   addInstructionsTable = this.retryMethodFactory.retryingMethod({
     retryingCall: () => this.updateDocument(this.instructionsTableRequests()),
-    then: () => this.refreshDatabaseDocument()
-      .then(() => this.setInstructionsTableRange()),
-    createError: () => "Error configuring database file (28zd3)",
-  });
-
-  setInstructionsTableRange = this.retryMethodFactory.retryingMethod({
-    retryingCall: () => {
-      let range;
-      for (const section of this.databaseDocument.body.content) {
-        if (section.table) {
-          range = {startIndex: section.startIndex, endIndex: section.endIndex};
-          break;
-        }
-      }
-      if (!range) {
-        throw new Error("Couldn't find instructions table!");
-      }
-
-      return this.updateDocument(createNamedRange(INSTRUCTIONS_TABLE_RANGE_NAME, range));
-    },
     then: () => this.refreshDatabaseDocument(),
-    createError: () => "Error configuring database file (0h7f1)",
+    createError: () => "Error configuring database file (28zd3)",
   });
 
   getDatabaseDocument = this.retryMethodFactory.retryingMethod({
@@ -226,22 +209,62 @@ export class DriveClient {
       if (!this.databaseDocument.namedRanges) {
         this.databaseDocument.namedRanges = {};
       }
+
+      this.setRangesByRef();
+
       if (this.databaseUpdatedListener) this.databaseUpdatedListener();
     },
     createError: () => "Could not find database file",
   });
 
+  setRangesByRef() {
+    const {namedRanges} = this.databaseDocument;
+    this.rangesByRef = {};
+    const addNamedRanges = (ref, rangesToAdd) => {
+      if (!(ref in this.rangesByRef)) {
+        this.rangesByRef[ref] = [];
+      }
+      this.rangesByRef[ref].push(...rangesToAdd);
+    };
+    const v2Suffix = NAMED_RANGE_SEPARATOR + "comment";
+    for (const rangeName of Object.keys(namedRanges)) {
+      if (rangeName.startsWith("ref:")) {
+        addNamedRanges(
+          rangeName.slice("ref:".length),
+          namedRanges[rangeName].namedRanges.flatMap(x => x.ranges));
+      } else if (rangeName.endsWith(v2Suffix)) {
+        const commentRange = namedRanges[rangeName].namedRanges[0].ranges[0];
+        const [id, ref] = rangeName.split(NAMED_RANGE_SEPARATOR).slice(0, 2);
+        const selectedTextRangeName = [id, ref, "selected text"].join(NAMED_RANGE_SEPARATOR);
+        if (selectedTextRangeName in namedRanges) {
+          const selectedTextRange = namedRanges[selectedTextRangeName].namedRanges[0].ranges[0];
+          addNamedRanges(ref, [{
+            startIndex: selectedTextRange.startIndex,
+            endIndex: commentRange.endIndex,
+            joined: true,
+          }]);
+        } else {
+          addNamedRanges(ref, [commentRange]);
+        }
+      }
+    }
+
+    for (const ranges of Object.values(this.rangesByRef)) {
+      ranges.sort(rangeSorter);
+    }
+  }
+
   refreshDatabaseDocument = () => this.getDatabaseDocument(this.databaseDocument.documentId);
 
   // TODO(drive): break up this method, possibly by extracting a state object.
-  postCommentRequests(text, amud, ref, parentRef) {
+  postCommentRequests(text, selectedText, amud, ref, parentRef) {
     let insertLocation = this.findInsertLocation(parentRef);
     const requests = [];
 
     const headerRangeLabel = `header:${amud}`;
     const headerExists = headerRangeLabel in this.databaseDocument.namedRanges;
     if (!headerExists) {
-      const headerText = amud + "\n";
+      const headerText = amud;
       const headerRange = {
         startIndex: insertLocation,
         endIndex: insertLocation + headerText.length,
@@ -252,53 +275,60 @@ export class DriveClient {
       insertLocation += headerText.length;
     }
 
-    if (headerExists && !text.startsWith("\n")) {
-      text = "\n" + text;
-    }
-    if (!text.endsWith("\n")) {
-      text += "\n";
-    }
+    // don't use the unsaved comment id in case there are mistaken duplicate retries
+    const uniqueId = uuid();
+    const rangeNameWithSuffix = (suffix) => [uniqueId, ref, suffix].join(NAMED_RANGE_SEPARATOR);
 
-    const commentRange = {
-      startIndex: insertLocation,
-      endIndex: insertLocation + text.length,
-    };
     requests.push(
-      ...insertFormattedTextRequests(text, commentRange, "NORMAL_TEXT"),
-      // Two equivalent named ranges are added. The "ref:"-prefixed range allows for indexing of
-      // comments/notes by ref, so that when a text is linked from multiple locations (e.g. for
-      // pesukim referenced throughout a masechet), the notes can be easily accessed from all
-      // locations. The "parentRef:"-prefixed range helps maintain a readable ordering within the
-      // Google Doc. For example, if a comment is added on Pasuk P1 that is referenced in Daf 2a,
-      // a note will be added at the end of the Daf 2a section in the Google Doc, since that is
-      // where the text was viewed when the note was recorded.
-      // Note that if we create multiple docs, one for each titled text, then comments won't be
-      // maintained across those titles.
-      createNamedRange(`ref:${ref}`, commentRange),
-      createNamedRange(`parentRef:${parentRef}`, commentRange),
+      ...insertTableRequests({
+        cells: [
+          ref !== parentRef ? {cellText: [ref]} : undefined,
+          {
+            cellText: [{text: selectedText, bold: true}],
+            rtl: true,
+            rangeNames: [rangeNameWithSuffix("selected text")],
+          },
+          {cellText: [text], rangeNames: [rangeNameWithSuffix("comment")]},
+        ].filter(x => x),
+        tableStart: insertLocation,
+        rangeNames: [
+          // The "parentRef:"-prefixed range helps maintain a readable ordering within the
+          // Google Doc. For example, if a comment is added on Pasuk P1 that is referenced in Daf
+          // 2a, a note will be added at the end of the Daf 2a section in the Google Doc, since that
+          // is where the text was viewed when the note was recorded.
+          // Note that because one doc is created per each titled text, comments aren't maintained
+          // across titles.
+          // "orderingRef:" is probably a better name than parentRef, but parentRef is kept for
+          // compatability reasons.
+          // "fullComment:" is not used yet, but seems like a good future-proof tag to have.
+          `parentRef:${parentRef}`,
+          `orderingRef:${parentRef}`,
+          `fullComment:${uniqueId}`,
+        ],
+      }),
     );
     return requests;
   }
 
   // These parameters should be kept in sync with addUnsavedComment() with the exception of `id`.
-  postComment({text, amud, ref, parentRef, id}) {
+  postComment({text, selectedText, amud, ref, parentRef, id}) {
     if (this.databaseDocumentShouldBeCreated) {
       this.createDocsDatabase();
     }
 
     const isRetry = id !== undefined;
     if (!isRetry) {
-      id = this.unsavedCommentStore.addUnsavedComment({text, amud, ref, parentRef});
+      id = this.unsavedCommentStore.addUnsavedComment({text, selectedText, amud, ref, parentRef});
       gtag("event", "add_personal_note", {amud, ref, parentRef});
     }
 
     this.whenDatabaseReady.execute(
-      () => this._postComment({text, amud, ref, parentRef, id, isRetry}));
+      () => this._postComment({text, selectedText, amud, ref, parentRef, id, isRetry}));
   }
 
   _postComment = this.retryMethodFactory.retryingMethod({
-    retryingCall: ({text, amud, ref, parentRef, id}) => {
-      return this.updateDocument(this.postCommentRequests(text, amud, ref, parentRef))
+    retryingCall: ({text, selectedText, amud, ref, parentRef, id}) => {
+      return this.updateDocument(this.postCommentRequests(text, selectedText, amud, ref, parentRef))
         .finally(() => this.refreshDatabaseDocument())
         .then(response => {
           this.unsavedCommentStore.markCommentSaved(id);
@@ -363,20 +393,20 @@ export class DriveClient {
   }
 
   computeCommentsForRef(ref) {
-    const prefixedRef = `ref:${ref}`;
-    if (!(prefixedRef in this.databaseDocument.namedRanges)) {
+    if (!(ref in this.rangesByRef)) {
       return undefined;
     }
-    const ranges = this.databaseDocument.namedRanges[prefixedRef].namedRanges
-          .flatMap(x => x.ranges);
-    ranges.sort(rangeSorter);
-
+    const ranges = this.rangesByRef[ref];
     const documentBodyElements = this.documentBodyElements();
     return {
       comments: ranges.map((range, index) => {
-        const documentText = extractDocumentText(
-          range.startIndex, range.endIndex, documentBodyElements);
+        const documentText = extractDocumentText(range, documentBodyElements);
         const text = documentText.map(x => x.text);
+        if (range.joined && text.length > 1) {
+          const first = text.shift();
+          const second = text.shift();
+          text.unshift([first, second].join(" - "));
+        }
         const hebrew = documentText.map(x => x.languageStats.hebrew).reduce((x, y) => x + y);
         const english = documentText.map(x => x.languageStats.english).reduce((x, y) => x + y);
         return {
@@ -388,13 +418,32 @@ export class DriveClient {
     };
   }
 
+  _documentBodyElements(contents, elements) {
+    contents.content.forEach((content, index) => {
+      if (content.paragraph) {
+        if (index === 0) {
+          const firstElement = content.paragraph.elements[0];
+          const initialLength = firstElement.textRun.content.length;
+          firstElement.textRun.content = firstElement.textRun.content.trimStart();
+          firstElement.startIndex += initialLength - firstElement.textRun.content.length;
+        }
+        if ((index + 1) === contents.content.length) {
+          const lastElement = content.paragraph.elements.slice(-1)[0];
+          const initialLength = lastElement.textRun.content.length;
+          lastElement.textRun.content = lastElement.textRun.content.trimEnd();
+          lastElement.endIndex -= initialLength - lastElement.textRun.content.length;
+        }
+        elements.push(...content.paragraph.elements);
+      } else if (content.table) {
+        const cells = content.table.tableRows.flatMap(x => x.tableCells);
+        cells.forEach(x => this._documentBodyElements(x, elements));
+      }
+    });
+    return elements;
+  }
+
   documentBodyElements() {
-    // TODO: to be more resilient, this should do a complete traversal and get all textRuns that
-    // could be nested inside other structures. See
-    // https://developers.google.com/docs/api/samples/extract-text
-    return this.databaseDocument.body.content
-      .filter(x => x.paragraph)
-      .flatMap(x => x.paragraph.elements);
+    return this._documentBodyElements(this.databaseDocument.body, []);
   }
 
   signIn() {
