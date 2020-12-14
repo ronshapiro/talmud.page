@@ -1,4 +1,4 @@
-/* global gapi, gtag */
+/* global gtag */
 import {v4 as uuid} from "uuid";
 import {amudMetadata} from "../amud.ts";
 import {rgbColor} from "./color.ts";
@@ -6,25 +6,12 @@ import {refSorter} from "./ref_sorter.ts";
 import {extractDocumentText} from "./document_text.ts";
 import {GatedExecutor} from "../gated_executor.ts";
 import {insertFormattedTextRequests} from "./insertTextRequests.ts";
-import {asPromise} from "../promises.ts";
 import {RetryMethodFactory} from "../retry.ts";
 import {insertTableRequests} from "./tableRequests.ts";
 import {checkNotUndefined} from "../undefined.ts";
 
 const INSTRUCTIONS_TABLE_RANGE_NAME = "Instructions Table";
 const NAMED_RANGE_SEPARATOR = "<<||>>";
-
-// The discoveryDoc is seemingly "loaded into" the gapi.client JS object
-const APIS = [
-  {
-    discoveryDoc: "https://docs.googleapis.com/$discovery/rest?version=v1",
-    apiScope: "https://www.googleapis.com/auth/documents",
-  },
-  {
-    discoveryDoc: "https://www.googleapis.com/discovery/v1/apis/drive/v3/rest",
-    apiScope: "https://www.googleapis.com/auth/drive",
-  },
-];
 
 const createNamedRange = (name, range) => {
   return {createNamedRange: {name, range}};
@@ -41,9 +28,8 @@ const rangeSorter = (first, second) => {
 };
 
 export class DriveClient {
-  constructor(clientId, apiKey, unsavedCommentStore) {
-    this.clientId = clientId;
-    this.apiKey = apiKey;
+  constructor(gapi, unsavedCommentStore) {
+    this.gapi = gapi;
     this.whenDatabaseReady = new GatedExecutor();
     this.resetState();
 
@@ -81,23 +67,12 @@ export class DriveClient {
    *  listeners.
    */
   init = this.retryMethodFactory.retryingMethod({
-    retryingCall: () => {
-      if (!gapi) {
-        return Promise.reject();
-      }
-
-      return gapi.client.init({
-        apiKey: this.apiKey,
-        clientId: this.clientId,
-        discoveryDocs: APIS.map(api => api.discoveryDoc),
-        scope: APIS.map(api => api.apiScope).join(" "),
-      });
-    },
+    retryingCall: () => this.gapi.init(),
     then: () => {
       // Set the initial sign-in state.
-      this.updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
+      this.updateSigninStatus(this.gapi.isSignedIn());
 
-      gapi.auth2.getAuthInstance().isSignedIn.listen(isSignedIn => {
+      this.gapi.registerSignInListener(isSignedIn => {
         this.updateSigninStatus(isSignedIn);
       });
     },
@@ -108,7 +83,7 @@ export class DriveClient {
     this.isSignedIn = isSignedIn;
     if (isSignedIn) {
       gtag("config", "GA_MEASUREMENT_ID", {
-        user_id: gapi.auth2.getAuthInstance().currentUser.get().getBasicProfile().getEmail(),
+        user_id: this.gapi.getSignedInUserEmail(),
       });
       this.findDocsDatabase();
     } else {
@@ -120,26 +95,13 @@ export class DriveClient {
   setDatabaseFileProperties = this.retryMethodFactory.retryingMethod({
     retryingCall: (fileId) => {
       checkNotUndefined(fileId, "fileId");
-      return gapi.client.drive.files.update({
-        fileId,
-        appProperties: {
-          "talmud.page.database": "true",
-          "talmud.page.database.id": this.databaseProperty,
-          "talmud.page.database.version": "1",
-        },
-      });
+      return this.gapi.setDatabaseFileProperties(fileId, this.databaseProperty);
     },
-    then: () => {},
     createError: () => "Error configuring database file (1y94r)",
   });
 
   findDocsDatabase = this.retryMethodFactory.retryingMethod({
-    retryingCall: () => {
-      return gapi.client.drive.files.list({
-        q: `appProperties has { key='talmud.page.database.id' and value='${this.databaseProperty}' }`
-          + " and trashed = false",
-      });
-    },
+    retryingCall: () => this.gapi.searchFiles(this.databaseProperty),
     then: response => {
       const {files} = response.result;
       if (files.length === 0) {
@@ -162,7 +124,7 @@ export class DriveClient {
       const title = this.isDebug
             ? `talmud.page ${this.masechet} debug notes`
             : `talmud.page ${this.masechet} notes`;
-      return gapi.client.docs.documents.create({title});
+      return this.gapi.createDocument(title);
     },
     then: response => {
       return this.getDatabaseDocument(response.result.documentId)
@@ -202,7 +164,7 @@ export class DriveClient {
   getDatabaseDocument = this.retryMethodFactory.retryingMethod({
     retryingCall: (documentId) => {
       this.commentsByRef = {};
-      return gapi.client.docs.documents.get({documentId});
+      return this.gapi.getDatabaseDocument(documentId);
     },
     then: response => {
       this.databaseDocument = response.result;
@@ -448,23 +410,22 @@ export class DriveClient {
 
   signIn() {
     localStorage.hasSignedInWithGoogle = "true";
-    gapi.auth2.getAuthInstance().signIn();
+    this.gapi.signIn();
   }
 
   signOut() {
-    gapi.auth2.getAuthInstance().signOut();
+    this.gapi.signOut();
   }
 
   updateDocument(requests) {
     if (!Array.isArray(requests)) {
       requests = [requests];
     }
-    return asPromise(
-      gapi.client.docs.documents.batchUpdate({
-        requests,
-        documentId: this.databaseDocument.documentId,
-        writeControl: {requiredRevisionId: this.databaseDocument.revisionId},
-      }));
+    return this.gapi.batchUpdate({
+      requests,
+      documentId: this.databaseDocument.documentId,
+      writeControl: {requiredRevisionId: this.databaseDocument.revisionId},
+    });
   }
 
   triggerErrorListener() {
