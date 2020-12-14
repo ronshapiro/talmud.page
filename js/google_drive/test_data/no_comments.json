@@ -1,0 +1,3570 @@
+{
+  "body": {
+    "content": [
+      {
+        "endIndex": 1,
+        "sectionBreak": {
+          "sectionStyle": {
+            "columnSeparatorStyle": "NONE",
+            "contentDirection": "LEFT_TO_RIGHT",
+            "sectionType": "CONTINUOUS"
+          }
+        }
+      },
+      {
+        "endIndex": 2,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 2,
+              "startIndex": 1,
+              "textRun": {
+                "content": "\n",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "namedStyleType": "NORMAL_TEXT"
+          }
+        },
+        "startIndex": 1
+      },
+      {
+        "endIndex": 189,
+        "startIndex": 2,
+        "table": {
+          "columns": 1,
+          "rows": 1,
+          "tableRows": [
+            {
+              "endIndex": 188,
+              "startIndex": 3,
+              "tableCells": [
+                {
+                  "content": [
+                    {
+                      "endIndex": 117,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 36,
+                            "startIndex": 5,
+                            "textRun": {
+                              "content": "This document was created with ",
+                              "textStyle": {}
+                            }
+                          },
+                          {
+                            "endIndex": 47,
+                            "startIndex": 36,
+                            "textRun": {
+                              "content": "talmud.page",
+                              "textStyle": {
+                                "foregroundColor": {
+                                  "color": {
+                                    "rgbColor": {
+                                      "blue": 0.77254903,
+                                      "green": 0.35686275,
+                                      "red": 0.17254902
+                                    }
+                                  }
+                                },
+                                "link": {
+                                  "url": "https://talmud.page"
+                                },
+                                "underline": true
+                              }
+                            }
+                          },
+                          {
+                            "endIndex": 117,
+                            "startIndex": 47,
+                            "textRun": {
+                              "content": " and is used as a database for personalized comments that you create.\n",
+                              "textStyle": {}
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "LEFT_TO_RIGHT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 5
+                    },
+                    {
+                      "endIndex": 118,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 118,
+                            "startIndex": 117,
+                            "textRun": {
+                              "content": "\n",
+                              "textStyle": {}
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "LEFT_TO_RIGHT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 117
+                    },
+                    {
+                      "endIndex": 188,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 168,
+                            "startIndex": 118,
+                            "textRun": {
+                              "content": "Before making any edits, it's recommended to read ",
+                              "textStyle": {}
+                            }
+                          },
+                          {
+                            "endIndex": 186,
+                            "startIndex": 168,
+                            "textRun": {
+                              "content": "these instructions",
+                              "textStyle": {
+                                "foregroundColor": {
+                                  "color": {
+                                    "rgbColor": {
+                                      "blue": 0.77254903,
+                                      "green": 0.35686275,
+                                      "red": 0.17254902
+                                    }
+                                  }
+                                },
+                                "link": {
+                                  "url": "https://talmud.page/caveats/google-docs"
+                                },
+                                "underline": true
+                              }
+                            }
+                          },
+                          {
+                            "endIndex": 187,
+                            "startIndex": 186,
+                            "textRun": {
+                              "content": ".",
+                              "textStyle": {}
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "LEFT_TO_RIGHT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 118
+                    }
+                  ],
+                  "endIndex": 188,
+                  "startIndex": 4,
+                  "tableCellStyle": {
+                    "backgroundColor": {
+                      "color": {
+                        "rgbColor": {
+                          "blue": 0.63529414,
+                          "green": 0.89411765,
+                          "red": 0.98039216
+                        }
+                      }
+                    },
+                    "borderBottom": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 0.1882353,
+                            "green": 0.5647059,
+                            "red": 0.7176471
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderLeft": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 0.1882353,
+                            "green": 0.5647059,
+                            "red": 0.7176471
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderRight": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 0.1882353,
+                            "green": 0.5647059,
+                            "red": 0.7176471
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderTop": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 0.1882353,
+                            "green": 0.5647059,
+                            "red": 0.7176471
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "columnSpan": 1,
+                    "rowSpan": 1
+                  }
+                }
+              ],
+              "tableRowStyle": {
+                "minRowHeight": {
+                  "unit": "PT"
+                }
+              }
+            }
+          ],
+          "tableStyle": {
+            "tableColumnProperties": [
+              {
+                "widthType": "EVENLY_DISTRIBUTED"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "endIndex": 193,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 193,
+              "startIndex": 189,
+              "textRun": {
+                "content": "22a\n",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "headingId": "h.4ck4o7ewzrnn",
+            "namedStyleType": "HEADING_2"
+          }
+        },
+        "startIndex": 189
+      },
+      {
+        "endIndex": 339,
+        "startIndex": 193,
+        "table": {
+          "columns": 1,
+          "rows": 2,
+          "tableRows": [
+            {
+              "endIndex": 319,
+              "startIndex": 194,
+              "tableCells": [
+                {
+                  "content": [
+                    {
+                      "endIndex": 319,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 318,
+                            "startIndex": 196,
+                            "textRun": {
+                              "content": "וֹ אַתָּה מַשְׁלִיךְ לַכֶּלֶב, וְאִי אַתָּה מַשְׁלִיךְ לַכֶּלֶב כׇּל אִיסּוּרִין שֶׁבַּתּוֹרָה. וְרַבִּי מֵאִיר? אוֹתוֹ אַ",
+                              "textStyle": {
+                                "bold": true
+                              }
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "RIGHT_TO_LEFT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 196
+                    }
+                  ],
+                  "endIndex": 319,
+                  "startIndex": 195,
+                  "tableCellStyle": {
+                    "borderBottom": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderLeft": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderRight": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderTop": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "columnSpan": 1,
+                    "rowSpan": 1
+                  }
+                }
+              ],
+              "tableRowStyle": {
+                "minRowHeight": {
+                  "unit": "PT"
+                }
+              }
+            },
+            {
+              "endIndex": 338,
+              "startIndex": 319,
+              "tableCells": [
+                {
+                  "content": [
+                    {
+                      "endIndex": 338,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 337,
+                            "startIndex": 321,
+                            "textRun": {
+                              "content": "Standard comment",
+                              "textStyle": {}
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "LEFT_TO_RIGHT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 321
+                    }
+                  ],
+                  "endIndex": 338,
+                  "startIndex": 320,
+                  "tableCellStyle": {
+                    "borderBottom": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderLeft": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderRight": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderTop": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "columnSpan": 1,
+                    "rowSpan": 1
+                  }
+                }
+              ],
+              "tableRowStyle": {
+                "minRowHeight": {
+                  "unit": "PT"
+                }
+              }
+            }
+          ],
+          "tableStyle": {
+            "tableColumnProperties": [
+              {
+                "widthType": "EVENLY_DISTRIBUTED"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "endIndex": 340,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 340,
+              "startIndex": 339,
+              "textRun": {
+                "content": "\n",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "headingId": "h.ftfa1gen1hku",
+            "namedStyleType": "HEADING_2"
+          }
+        },
+        "startIndex": 339
+      },
+      {
+        "endIndex": 483,
+        "startIndex": 340,
+        "table": {
+          "columns": 1,
+          "rows": 2,
+          "tableRows": [
+            {
+              "endIndex": 461,
+              "startIndex": 341,
+              "tableCells": [
+                {
+                  "content": [
+                    {
+                      "endIndex": 461,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 459,
+                            "startIndex": 343,
+                            "textRun": {
+                              "content": "אַתָּה מַשְׁלִיךְ לַכֶּלֶב, וְאִי אַתָּה מַשְׁלִיךְ לַכֶּלֶב כׇּל אִיסּוּרִין שֶׁבַּתּוֹרָה. וְרַבִּי מֵאִיר? אוֹתוֹ",
+                              "textStyle": {
+                                "bold": true
+                              }
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "RIGHT_TO_LEFT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 343
+                    }
+                  ],
+                  "endIndex": 461,
+                  "startIndex": 342,
+                  "tableCellStyle": {
+                    "borderBottom": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderLeft": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderRight": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderTop": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "columnSpan": 1,
+                    "rowSpan": 1
+                  }
+                }
+              ],
+              "tableRowStyle": {
+                "minRowHeight": {
+                  "unit": "PT"
+                }
+              }
+            },
+            {
+              "endIndex": 482,
+              "startIndex": 461,
+              "tableCells": [
+                {
+                  "content": [
+                    {
+                      "endIndex": 482,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 481,
+                            "startIndex": 463,
+                            "textRun": {
+                              "content": "Standard comment 2",
+                              "textStyle": {}
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "LEFT_TO_RIGHT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 463
+                    }
+                  ],
+                  "endIndex": 482,
+                  "startIndex": 462,
+                  "tableCellStyle": {
+                    "borderBottom": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderLeft": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderRight": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderTop": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "columnSpan": 1,
+                    "rowSpan": 1
+                  }
+                }
+              ],
+              "tableRowStyle": {
+                "minRowHeight": {
+                  "unit": "PT"
+                }
+              }
+            }
+          ],
+          "tableStyle": {
+            "tableColumnProperties": [
+              {
+                "widthType": "EVENLY_DISTRIBUTED"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "endIndex": 484,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 484,
+              "startIndex": 483,
+              "textRun": {
+                "content": "\n",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "headingId": "h.yeujqmlw8tzm",
+            "namedStyleType": "HEADING_2"
+          }
+        },
+        "startIndex": 483
+      },
+      {
+        "endIndex": 524,
+        "startIndex": 484,
+        "table": {
+          "columns": 1,
+          "rows": 2,
+          "tableRows": [
+            {
+              "endIndex": 499,
+              "startIndex": 485,
+              "tableCells": [
+                {
+                  "content": [
+                    {
+                      "endIndex": 499,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 497,
+                            "startIndex": 487,
+                            "textRun": {
+                              "content": "יר? אוֹתוֹ",
+                              "textStyle": {
+                                "bold": true
+                              }
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "RIGHT_TO_LEFT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 487
+                    }
+                  ],
+                  "endIndex": 499,
+                  "startIndex": 486,
+                  "tableCellStyle": {
+                    "borderBottom": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderLeft": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderRight": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderTop": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "columnSpan": 1,
+                    "rowSpan": 1
+                  }
+                }
+              ],
+              "tableRowStyle": {
+                "minRowHeight": {
+                  "unit": "PT"
+                }
+              }
+            },
+            {
+              "endIndex": 523,
+              "startIndex": 499,
+              "tableCells": [
+                {
+                  "content": [
+                    {
+                      "endIndex": 523,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 522,
+                            "startIndex": 501,
+                            "textRun": {
+                              "content": "Return to earlier ref",
+                              "textStyle": {}
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "LEFT_TO_RIGHT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 501
+                    }
+                  ],
+                  "endIndex": 523,
+                  "startIndex": 500,
+                  "tableCellStyle": {
+                    "borderBottom": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderLeft": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderRight": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderTop": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "columnSpan": 1,
+                    "rowSpan": 1
+                  }
+                }
+              ],
+              "tableRowStyle": {
+                "minRowHeight": {
+                  "unit": "PT"
+                }
+              }
+            }
+          ],
+          "tableStyle": {
+            "tableColumnProperties": [
+              {
+                "widthType": "EVENLY_DISTRIBUTED"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "endIndex": 525,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 525,
+              "startIndex": 524,
+              "textRun": {
+                "content": "\n",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "headingId": "h.6zuya2x8g873",
+            "namedStyleType": "HEADING_2"
+          }
+        },
+        "startIndex": 524
+      },
+      {
+        "endIndex": 745,
+        "startIndex": 525,
+        "table": {
+          "columns": 1,
+          "rows": 3,
+          "tableRows": [
+            {
+              "endIndex": 554,
+              "startIndex": 526,
+              "tableCells": [
+                {
+                  "content": [
+                    {
+                      "endIndex": 554,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 553,
+                            "startIndex": 528,
+                            "textRun": {
+                              "content": "Rashi on Pesachim 22a:1:1",
+                              "textStyle": {}
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "LEFT_TO_RIGHT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 528
+                    }
+                  ],
+                  "endIndex": 554,
+                  "startIndex": 527,
+                  "tableCellStyle": {
+                    "borderBottom": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderLeft": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderRight": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderTop": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "columnSpan": 1,
+                    "rowSpan": 1
+                  }
+                }
+              ],
+              "tableRowStyle": {
+                "minRowHeight": {
+                  "unit": "PT"
+                }
+              }
+            },
+            {
+              "endIndex": 725,
+              "startIndex": 554,
+              "tableCells": [
+                {
+                  "content": [
+                    {
+                      "endIndex": 725,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 724,
+                            "startIndex": 556,
+                            "textRun": {
+                              "content": "ו הוה אמינא קרא למצותיה איצטריך שאין הקב\"ה מקפח שכר כל בריה ונאמר במצרים לא יחרץ כלב לשונו (שמות י״א:ז׳) לפיכך הקפידה תורה ליתן שכרו ונכבד [שכר] הכלב מן העובד כוכבים שה",
+                              "textStyle": {
+                                "bold": true
+                              }
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "RIGHT_TO_LEFT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 556
+                    }
+                  ],
+                  "endIndex": 725,
+                  "startIndex": 555,
+                  "tableCellStyle": {
+                    "borderBottom": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderLeft": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderRight": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderTop": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "columnSpan": 1,
+                    "rowSpan": 1
+                  }
+                }
+              ],
+              "tableRowStyle": {
+                "minRowHeight": {
+                  "unit": "PT"
+                }
+              }
+            },
+            {
+              "endIndex": 744,
+              "startIndex": 725,
+              "tableCells": [
+                {
+                  "content": [
+                    {
+                      "endIndex": 744,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 743,
+                            "startIndex": 727,
+                            "textRun": {
+                              "content": "Comment on Rashi",
+                              "textStyle": {}
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "LEFT_TO_RIGHT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 727
+                    }
+                  ],
+                  "endIndex": 744,
+                  "startIndex": 726,
+                  "tableCellStyle": {
+                    "borderBottom": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderLeft": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderRight": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderTop": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "columnSpan": 1,
+                    "rowSpan": 1
+                  }
+                }
+              ],
+              "tableRowStyle": {
+                "minRowHeight": {
+                  "unit": "PT"
+                }
+              }
+            }
+          ],
+          "tableStyle": {
+            "tableColumnProperties": [
+              {
+                "widthType": "EVENLY_DISTRIBUTED"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "endIndex": 746,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 746,
+              "startIndex": 745,
+              "textRun": {
+                "content": "\n",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "headingId": "h.eg0rdta0z74k",
+            "namedStyleType": "HEADING_2"
+          }
+        },
+        "startIndex": 745
+      },
+      {
+        "endIndex": 806,
+        "startIndex": 746,
+        "table": {
+          "columns": 1,
+          "rows": 3,
+          "tableRows": [
+            {
+              "endIndex": 761,
+              "startIndex": 747,
+              "tableCells": [
+                {
+                  "content": [
+                    {
+                      "endIndex": 761,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 760,
+                            "startIndex": 749,
+                            "textRun": {
+                              "content": "Exodus 11:7",
+                              "textStyle": {}
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "LEFT_TO_RIGHT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 749
+                    }
+                  ],
+                  "endIndex": 761,
+                  "startIndex": 748,
+                  "tableCellStyle": {
+                    "borderBottom": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderLeft": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderRight": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderTop": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "columnSpan": 1,
+                    "rowSpan": 1
+                  }
+                }
+              ],
+              "tableRowStyle": {
+                "minRowHeight": {
+                  "unit": "PT"
+                }
+              }
+            },
+            {
+              "endIndex": 777,
+              "startIndex": 761,
+              "tableCells": [
+                {
+                  "content": [
+                    {
+                      "endIndex": 777,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 775,
+                            "startIndex": 763,
+                            "textRun": {
+                              "content": "that you may",
+                              "textStyle": {
+                                "bold": true
+                              }
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "RIGHT_TO_LEFT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 763
+                    }
+                  ],
+                  "endIndex": 777,
+                  "startIndex": 762,
+                  "tableCellStyle": {
+                    "borderBottom": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderLeft": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderRight": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderTop": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "columnSpan": 1,
+                    "rowSpan": 1
+                  }
+                }
+              ],
+              "tableRowStyle": {
+                "minRowHeight": {
+                  "unit": "PT"
+                }
+              }
+            },
+            {
+              "endIndex": 805,
+              "startIndex": 777,
+              "tableCells": [
+                {
+                  "content": [
+                    {
+                      "endIndex": 805,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 804,
+                            "startIndex": 779,
+                            "textRun": {
+                              "content": "Comment on Pasuk on Rashi",
+                              "textStyle": {}
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "LEFT_TO_RIGHT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 779
+                    }
+                  ],
+                  "endIndex": 805,
+                  "startIndex": 778,
+                  "tableCellStyle": {
+                    "borderBottom": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderLeft": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderRight": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderTop": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "columnSpan": 1,
+                    "rowSpan": 1
+                  }
+                }
+              ],
+              "tableRowStyle": {
+                "minRowHeight": {
+                  "unit": "PT"
+                }
+              }
+            }
+          ],
+          "tableStyle": {
+            "tableColumnProperties": [
+              {
+                "widthType": "EVENLY_DISTRIBUTED"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "endIndex": 807,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 807,
+              "startIndex": 806,
+              "textRun": {
+                "content": "\n",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "namedStyleType": "NORMAL_TEXT"
+          }
+        },
+        "startIndex": 806
+      },
+      {
+        "endIndex": 818,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 818,
+              "startIndex": 807,
+              "textRun": {
+                "content": "v1 - rashi\n",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "namedStyleType": "NORMAL_TEXT"
+          }
+        },
+        "startIndex": 807
+      },
+      {
+        "endIndex": 819,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 819,
+              "startIndex": 818,
+              "textRun": {
+                "content": "\n",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "namedStyleType": "NORMAL_TEXT"
+          }
+        },
+        "startIndex": 818
+      },
+      {
+        "endIndex": 839,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 839,
+              "startIndex": 819,
+              "textRun": {
+                "content": "v1 - a second rashi\n",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "namedStyleType": "NORMAL_TEXT"
+          }
+        },
+        "startIndex": 819
+      },
+      {
+        "endIndex": 840,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 840,
+              "startIndex": 839,
+              "textRun": {
+                "content": "\n",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "namedStyleType": "NORMAL_TEXT"
+          }
+        },
+        "startIndex": 839
+      },
+      {
+        "endIndex": 858,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 858,
+              "startIndex": 840,
+              "textRun": {
+                "content": "v1 - nested rashi\n",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "namedStyleType": "NORMAL_TEXT"
+          }
+        },
+        "startIndex": 840
+      },
+      {
+        "endIndex": 859,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 859,
+              "startIndex": 858,
+              "textRun": {
+                "content": "\n",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "headingId": "h.psyq1j7s8su1",
+            "namedStyleType": "HEADING_2"
+          }
+        },
+        "startIndex": 858
+      },
+      {
+        "endIndex": 893,
+        "startIndex": 859,
+        "table": {
+          "columns": 1,
+          "rows": 2,
+          "tableRows": [
+            {
+              "endIndex": 878,
+              "startIndex": 860,
+              "tableCells": [
+                {
+                  "content": [
+                    {
+                      "endIndex": 878,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 877,
+                            "startIndex": 863,
+                            "textRun": {
+                              "content": "גִּיד הַנָּשֶׁ",
+                              "textStyle": {
+                                "bold": true
+                              }
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "RIGHT_TO_LEFT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 862
+                    }
+                  ],
+                  "endIndex": 878,
+                  "startIndex": 861,
+                  "tableCellStyle": {
+                    "borderBottom": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderLeft": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderRight": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderTop": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "columnSpan": 1,
+                    "rowSpan": 1
+                  }
+                }
+              ],
+              "tableRowStyle": {
+                "minRowHeight": {
+                  "unit": "PT"
+                }
+              }
+            },
+            {
+              "endIndex": 892,
+              "startIndex": 878,
+              "tableCells": [
+                {
+                  "content": [
+                    {
+                      "endIndex": 892,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 891,
+                            "startIndex": 880,
+                            "textRun": {
+                              "content": "הערה בערבית",
+                              "textStyle": {}
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "LEFT_TO_RIGHT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 880
+                    }
+                  ],
+                  "endIndex": 892,
+                  "startIndex": 879,
+                  "tableCellStyle": {
+                    "borderBottom": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderLeft": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderRight": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderTop": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "columnSpan": 1,
+                    "rowSpan": 1
+                  }
+                }
+              ],
+              "tableRowStyle": {
+                "minRowHeight": {
+                  "unit": "PT"
+                }
+              }
+            }
+          ],
+          "tableStyle": {
+            "tableColumnProperties": [
+              {
+                "widthType": "EVENLY_DISTRIBUTED"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "endIndex": 894,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 894,
+              "startIndex": 893,
+              "textRun": {
+                "content": "\n",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "namedStyleType": "NORMAL_TEXT"
+          }
+        },
+        "startIndex": 893
+      },
+      {
+        "endIndex": 905,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 905,
+              "startIndex": 894,
+              "textRun": {
+                "content": "V1 comment\n",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "namedStyleType": "NORMAL_TEXT"
+          }
+        },
+        "startIndex": 894
+      },
+      {
+        "endIndex": 906,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 906,
+              "startIndex": 905,
+              "textRun": {
+                "content": "\n",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "namedStyleType": "NORMAL_TEXT"
+          }
+        },
+        "startIndex": 905
+      },
+      {
+        "endIndex": 1054,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 1054,
+              "startIndex": 906,
+              "textRun": {
+                "content": "בַר רַבִּי אֲבָהוּ: כְּשֶׁהוּתְּרָה נְבֵילָה — הִיא וְחֶלְבָּהּ וְגִידָהּ הוּתְּרָה. הָנִיחָא לְמַאן דְּאָמַר ״יֵשׁ בְּגִידִין - v1, second comment\n",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "namedStyleType": "NORMAL_TEXT"
+          }
+        },
+        "startIndex": 906
+      },
+      {
+        "endIndex": 1055,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 1055,
+              "startIndex": 1054,
+              "textRun": {
+                "content": "\n",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "namedStyleType": "NORMAL_TEXT"
+          }
+        },
+        "startIndex": 1054
+      },
+      {
+        "endIndex": 1070,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 1070,
+              "startIndex": 1055,
+              "textRun": {
+                "content": "v1 - a new ref\n",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "namedStyleType": "NORMAL_TEXT"
+          }
+        },
+        "startIndex": 1055
+      },
+      {
+        "endIndex": 1074,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 1074,
+              "startIndex": 1070,
+              "textRun": {
+                "content": "23a\n",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "headingId": "h.eipvumki2u6c",
+            "namedStyleType": "HEADING_2"
+          }
+        },
+        "startIndex": 1070
+      },
+      {
+        "endIndex": 1209,
+        "startIndex": 1074,
+        "table": {
+          "columns": 1,
+          "rows": 2,
+          "tableRows": [
+            {
+              "endIndex": 1193,
+              "startIndex": 1075,
+              "tableCells": [
+                {
+                  "content": [
+                    {
+                      "endIndex": 1193,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 1192,
+                            "startIndex": 1077,
+                            "textRun": {
+                              "content": "דְּרַחֲמָנָא אָמַר: ״לֶחֶם וְקָלִי וְכַרְמֶל לֹא תֹאכְלוּ עַד עֶצֶם הַיּוֹם הַזֶּה״, וּתְנַן: קוֹצֵר לְשַׁחַת, וּמַ",
+                              "textStyle": {
+                                "bold": true
+                              }
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "RIGHT_TO_LEFT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 1077
+                    }
+                  ],
+                  "endIndex": 1193,
+                  "startIndex": 1076,
+                  "tableCellStyle": {
+                    "borderBottom": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderLeft": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderRight": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderTop": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "columnSpan": 1,
+                    "rowSpan": 1
+                  }
+                }
+              ],
+              "tableRowStyle": {
+                "minRowHeight": {
+                  "unit": "PT"
+                }
+              }
+            },
+            {
+              "endIndex": 1208,
+              "startIndex": 1193,
+              "tableCells": [
+                {
+                  "content": [
+                    {
+                      "endIndex": 1208,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 1207,
+                            "startIndex": 1195,
+                            "textRun": {
+                              "content": "Another amud",
+                              "textStyle": {}
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "LEFT_TO_RIGHT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 1195
+                    }
+                  ],
+                  "endIndex": 1208,
+                  "startIndex": 1194,
+                  "tableCellStyle": {
+                    "borderBottom": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderLeft": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderRight": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderTop": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "columnSpan": 1,
+                    "rowSpan": 1
+                  }
+                }
+              ],
+              "tableRowStyle": {
+                "minRowHeight": {
+                  "unit": "PT"
+                }
+              }
+            }
+          ],
+          "tableStyle": {
+            "tableColumnProperties": [
+              {
+                "widthType": "EVENLY_DISTRIBUTED"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "endIndex": 1210,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 1209,
+              "startIndex": 1209,
+              "textRun": {
+                "content": "",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "headingId": "h.5s8vm925sos5",
+            "namedStyleType": "HEADING_2"
+          }
+        },
+        "startIndex": 1209
+      }
+    ]
+  },
+  "documentId": "1S1BHQtHOHBTWq4wNJxf50Vtgpcl2Nb4-McWcSz8Ba64",
+  "documentStyle": {
+    "background": {
+      "color": {
+        "color": {
+          "rgbColor": {
+            "blue": 1,
+            "green": 1,
+            "red": 1
+          }
+        }
+      }
+    },
+    "marginBottom": {
+      "magnitude": 72,
+      "unit": "PT"
+    },
+    "marginFooter": {
+      "magnitude": 36,
+      "unit": "PT"
+    },
+    "marginHeader": {
+      "magnitude": 36,
+      "unit": "PT"
+    },
+    "marginLeft": {
+      "magnitude": 72,
+      "unit": "PT"
+    },
+    "marginRight": {
+      "magnitude": 72,
+      "unit": "PT"
+    },
+    "marginTop": {
+      "magnitude": 72,
+      "unit": "PT"
+    },
+    "pageNumberStart": 1,
+    "pageSize": {
+      "height": {
+        "magnitude": 792,
+        "unit": "PT"
+      },
+      "width": {
+        "magnitude": 612,
+        "unit": "PT"
+      }
+    },
+    "useCustomHeaderFooterMargins": true
+  },
+  "namedRanges": {
+    "0513ae37-3fc6-4ef3-8254-5ce834805b40<<||>>Exodus 11:7<<||>>comment": {
+      "name": "0513ae37-3fc6-4ef3-8254-5ce834805b40<<||>>Exodus 11:7<<||>>comment",
+      "namedRanges": [
+        {
+          "name": "0513ae37-3fc6-4ef3-8254-5ce834805b40<<||>>Exodus 11:7<<||>>comment",
+          "namedRangeId": "kix.5eayoxtfttol",
+          "ranges": [
+            {
+              "endIndex": 804,
+              "startIndex": 779
+            }
+          ]
+        }
+      ]
+    },
+    "0513ae37-3fc6-4ef3-8254-5ce834805b40<<||>>Exodus 11:7<<||>>selected text": {
+      "name": "0513ae37-3fc6-4ef3-8254-5ce834805b40<<||>>Exodus 11:7<<||>>selected text",
+      "namedRanges": [
+        {
+          "name": "0513ae37-3fc6-4ef3-8254-5ce834805b40<<||>>Exodus 11:7<<||>>selected text",
+          "namedRangeId": "kix.60y4c345xle3",
+          "ranges": [
+            {
+              "endIndex": 776,
+              "startIndex": 763
+            }
+          ]
+        }
+      ]
+    },
+    "16cf66aa-cab4-4e6b-95c6-1354ceac18bb<<||>>Pesachim 23a.7<<||>>comment": {
+      "name": "16cf66aa-cab4-4e6b-95c6-1354ceac18bb<<||>>Pesachim 23a.7<<||>>comment",
+      "namedRanges": [
+        {
+          "name": "16cf66aa-cab4-4e6b-95c6-1354ceac18bb<<||>>Pesachim 23a.7<<||>>comment",
+          "namedRangeId": "kix.dxco83ti67og",
+          "ranges": [
+            {
+              "endIndex": 1207,
+              "startIndex": 1195
+            }
+          ]
+        }
+      ]
+    },
+    "16cf66aa-cab4-4e6b-95c6-1354ceac18bb<<||>>Pesachim 23a.7<<||>>selected text": {
+      "name": "16cf66aa-cab4-4e6b-95c6-1354ceac18bb<<||>>Pesachim 23a.7<<||>>selected text",
+      "namedRanges": [
+        {
+          "name": "16cf66aa-cab4-4e6b-95c6-1354ceac18bb<<||>>Pesachim 23a.7<<||>>selected text",
+          "namedRangeId": "kix.e7hi00uejrfy",
+          "ranges": [
+            {
+              "endIndex": 1192,
+              "startIndex": 1077
+            }
+          ]
+        }
+      ]
+    },
+    "3054875a-af39-4cd6-a193-de0d9e9d8a4b<<||>>Pesachim 22a.1<<||>>comment": {
+      "name": "3054875a-af39-4cd6-a193-de0d9e9d8a4b<<||>>Pesachim 22a.1<<||>>comment",
+      "namedRanges": [
+        {
+          "name": "3054875a-af39-4cd6-a193-de0d9e9d8a4b<<||>>Pesachim 22a.1<<||>>comment",
+          "namedRangeId": "kix.hc8fb76c390c",
+          "ranges": [
+            {
+              "endIndex": 481,
+              "startIndex": 463
+            }
+          ]
+        }
+      ]
+    },
+    "3054875a-af39-4cd6-a193-de0d9e9d8a4b<<||>>Pesachim 22a.1<<||>>selected text": {
+      "name": "3054875a-af39-4cd6-a193-de0d9e9d8a4b<<||>>Pesachim 22a.1<<||>>selected text",
+      "namedRanges": [
+        {
+          "name": "3054875a-af39-4cd6-a193-de0d9e9d8a4b<<||>>Pesachim 22a.1<<||>>selected text",
+          "namedRangeId": "kix.18a99wewxlwj",
+          "ranges": [
+            {
+              "endIndex": 460,
+              "startIndex": 343
+            }
+          ]
+        }
+      ]
+    },
+    "723ff4af-6b40-4b3f-9594-b8a8203f6ff4<<||>>Pesachim 22a.1<<||>>comment": {
+      "name": "723ff4af-6b40-4b3f-9594-b8a8203f6ff4<<||>>Pesachim 22a.1<<||>>comment",
+      "namedRanges": [
+        {
+          "name": "723ff4af-6b40-4b3f-9594-b8a8203f6ff4<<||>>Pesachim 22a.1<<||>>comment",
+          "namedRangeId": "kix.3f7ltwcp5s7",
+          "ranges": [
+            {
+              "endIndex": 337,
+              "startIndex": 321
+            }
+          ]
+        }
+      ]
+    },
+    "723ff4af-6b40-4b3f-9594-b8a8203f6ff4<<||>>Pesachim 22a.1<<||>>selected text": {
+      "name": "723ff4af-6b40-4b3f-9594-b8a8203f6ff4<<||>>Pesachim 22a.1<<||>>selected text",
+      "namedRanges": [
+        {
+          "name": "723ff4af-6b40-4b3f-9594-b8a8203f6ff4<<||>>Pesachim 22a.1<<||>>selected text",
+          "namedRangeId": "kix.3015iczhy09t",
+          "ranges": [
+            {
+              "endIndex": 318,
+              "startIndex": 196
+            }
+          ]
+        }
+      ]
+    },
+    "Instructions Table": {
+      "name": "Instructions Table",
+      "namedRanges": [
+        {
+          "name": "Instructions Table",
+          "namedRangeId": "kix.5j3c243uico6",
+          "ranges": [
+            {
+              "endIndex": 189,
+              "startIndex": 1
+            }
+          ]
+        }
+      ]
+    },
+    "c74336ab-90f9-4178-bb2e-36ddf8f8bf18<<||>>Pesachim 22a.1<<||>>comment": {
+      "name": "c74336ab-90f9-4178-bb2e-36ddf8f8bf18<<||>>Pesachim 22a.1<<||>>comment",
+      "namedRanges": [
+        {
+          "name": "c74336ab-90f9-4178-bb2e-36ddf8f8bf18<<||>>Pesachim 22a.1<<||>>comment",
+          "namedRangeId": "kix.q2fo91tj1yg4",
+          "ranges": [
+            {
+              "endIndex": 522,
+              "startIndex": 501
+            }
+          ]
+        }
+      ]
+    },
+    "c74336ab-90f9-4178-bb2e-36ddf8f8bf18<<||>>Pesachim 22a.1<<||>>selected text": {
+      "name": "c74336ab-90f9-4178-bb2e-36ddf8f8bf18<<||>>Pesachim 22a.1<<||>>selected text",
+      "namedRanges": [
+        {
+          "name": "c74336ab-90f9-4178-bb2e-36ddf8f8bf18<<||>>Pesachim 22a.1<<||>>selected text",
+          "namedRangeId": "kix.8x9zto8igenf",
+          "ranges": [
+            {
+              "endIndex": 498,
+              "startIndex": 487
+            }
+          ]
+        }
+      ]
+    },
+    "cebe9e65-d83a-44f9-99f3-359cd7a590b8<<||>>Pesachim 22a.3<<||>>comment": {
+      "name": "cebe9e65-d83a-44f9-99f3-359cd7a590b8<<||>>Pesachim 22a.3<<||>>comment",
+      "namedRanges": [
+        {
+          "name": "cebe9e65-d83a-44f9-99f3-359cd7a590b8<<||>>Pesachim 22a.3<<||>>comment",
+          "namedRangeId": "kix.z07rkkyk5l2z",
+          "ranges": [
+            {
+              "endIndex": 891,
+              "startIndex": 880
+            }
+          ]
+        }
+      ]
+    },
+    "cebe9e65-d83a-44f9-99f3-359cd7a590b8<<||>>Pesachim 22a.3<<||>>selected text": {
+      "name": "cebe9e65-d83a-44f9-99f3-359cd7a590b8<<||>>Pesachim 22a.3<<||>>selected text",
+      "namedRanges": [
+        {
+          "name": "cebe9e65-d83a-44f9-99f3-359cd7a590b8<<||>>Pesachim 22a.3<<||>>selected text",
+          "namedRangeId": "kix.nbworsc4sutm",
+          "ranges": [
+            {
+              "endIndex": 877,
+              "startIndex": 862
+            }
+          ]
+        }
+      ]
+    },
+    "d7d29ce4-ffbe-4621-99b7-ed8916694799<<||>>Rashi on Pesachim 22a:1:1<<||>>comment": {
+      "name": "d7d29ce4-ffbe-4621-99b7-ed8916694799<<||>>Rashi on Pesachim 22a:1:1<<||>>comment",
+      "namedRanges": [
+        {
+          "name": "d7d29ce4-ffbe-4621-99b7-ed8916694799<<||>>Rashi on Pesachim 22a:1:1<<||>>comment",
+          "namedRangeId": "kix.7w1mk2s356",
+          "ranges": [
+            {
+              "endIndex": 743,
+              "startIndex": 727
+            }
+          ]
+        }
+      ]
+    },
+    "d7d29ce4-ffbe-4621-99b7-ed8916694799<<||>>Rashi on Pesachim 22a:1:1<<||>>selected text": {
+      "name": "d7d29ce4-ffbe-4621-99b7-ed8916694799<<||>>Rashi on Pesachim 22a:1:1<<||>>selected text",
+      "namedRanges": [
+        {
+          "name": "d7d29ce4-ffbe-4621-99b7-ed8916694799<<||>>Rashi on Pesachim 22a:1:1<<||>>selected text",
+          "namedRangeId": "kix.whpzccbz0e3",
+          "ranges": [
+            {
+              "endIndex": 724,
+              "startIndex": 556
+            }
+          ]
+        }
+      ]
+    },
+    "fullComment:0513ae37-3fc6-4ef3-8254-5ce834805b40": {
+      "name": "fullComment:0513ae37-3fc6-4ef3-8254-5ce834805b40",
+      "namedRanges": [
+        {
+          "name": "fullComment:0513ae37-3fc6-4ef3-8254-5ce834805b40",
+          "namedRangeId": "kix.hsew9f7sthd5",
+          "ranges": [
+            {
+              "endIndex": 806,
+              "startIndex": 745
+            }
+          ]
+        }
+      ]
+    },
+    "fullComment:16cf66aa-cab4-4e6b-95c6-1354ceac18bb": {
+      "name": "fullComment:16cf66aa-cab4-4e6b-95c6-1354ceac18bb",
+      "namedRanges": [
+        {
+          "name": "fullComment:16cf66aa-cab4-4e6b-95c6-1354ceac18bb",
+          "namedRangeId": "kix.fdu3jz8gmk04",
+          "ranges": [
+            {
+              "endIndex": 1209,
+              "startIndex": 1073
+            }
+          ]
+        }
+      ]
+    },
+    "fullComment:3054875a-af39-4cd6-a193-de0d9e9d8a4b": {
+      "name": "fullComment:3054875a-af39-4cd6-a193-de0d9e9d8a4b",
+      "namedRanges": [
+        {
+          "name": "fullComment:3054875a-af39-4cd6-a193-de0d9e9d8a4b",
+          "namedRangeId": "kix.im2i986mnjht",
+          "ranges": [
+            {
+              "endIndex": 483,
+              "startIndex": 339
+            }
+          ]
+        }
+      ]
+    },
+    "fullComment:723ff4af-6b40-4b3f-9594-b8a8203f6ff4": {
+      "name": "fullComment:723ff4af-6b40-4b3f-9594-b8a8203f6ff4",
+      "namedRanges": [
+        {
+          "name": "fullComment:723ff4af-6b40-4b3f-9594-b8a8203f6ff4",
+          "namedRangeId": "kix.viaov9o3t33p",
+          "ranges": [
+            {
+              "endIndex": 339,
+              "startIndex": 192
+            }
+          ]
+        }
+      ]
+    },
+    "fullComment:c74336ab-90f9-4178-bb2e-36ddf8f8bf18": {
+      "name": "fullComment:c74336ab-90f9-4178-bb2e-36ddf8f8bf18",
+      "namedRanges": [
+        {
+          "name": "fullComment:c74336ab-90f9-4178-bb2e-36ddf8f8bf18",
+          "namedRangeId": "kix.y9mumqlpbg97",
+          "ranges": [
+            {
+              "endIndex": 524,
+              "startIndex": 483
+            }
+          ]
+        }
+      ]
+    },
+    "fullComment:cebe9e65-d83a-44f9-99f3-359cd7a590b8": {
+      "name": "fullComment:cebe9e65-d83a-44f9-99f3-359cd7a590b8",
+      "namedRanges": [
+        {
+          "name": "fullComment:cebe9e65-d83a-44f9-99f3-359cd7a590b8",
+          "namedRangeId": "kix.fh26v7f03d24",
+          "ranges": [
+            {
+              "endIndex": 893,
+              "startIndex": 858
+            }
+          ]
+        }
+      ]
+    },
+    "fullComment:d7d29ce4-ffbe-4621-99b7-ed8916694799": {
+      "name": "fullComment:d7d29ce4-ffbe-4621-99b7-ed8916694799",
+      "namedRanges": [
+        {
+          "name": "fullComment:d7d29ce4-ffbe-4621-99b7-ed8916694799",
+          "namedRangeId": "kix.3yek19gbqfu4",
+          "ranges": [
+            {
+              "endIndex": 745,
+              "startIndex": 524
+            }
+          ]
+        }
+      ]
+    },
+    "header:22a": {
+      "name": "header:22a",
+      "namedRanges": [
+        {
+          "name": "header:22a",
+          "namedRangeId": "kix.fcasl2n6bx10",
+          "ranges": [
+            {
+              "endIndex": 192,
+              "startIndex": 189
+            }
+          ]
+        }
+      ]
+    },
+    "header:23a": {
+      "name": "header:23a",
+      "namedRanges": [
+        {
+          "name": "header:23a",
+          "namedRangeId": "kix.se2kgxufifkr",
+          "ranges": [
+            {
+              "endIndex": 1073,
+              "startIndex": 1070
+            }
+          ]
+        }
+      ]
+    },
+    "orderingRef:Pesachim 22a.1": {
+      "name": "orderingRef:Pesachim 22a.1",
+      "namedRanges": [
+        {
+          "name": "orderingRef:Pesachim 22a.1",
+          "namedRangeId": "kix.4fo2dfvlcolr",
+          "ranges": [
+            {
+              "endIndex": 483,
+              "startIndex": 339
+            }
+          ]
+        },
+        {
+          "name": "orderingRef:Pesachim 22a.1",
+          "namedRangeId": "kix.ce4uui65ydjd",
+          "ranges": [
+            {
+              "endIndex": 524,
+              "startIndex": 483
+            }
+          ]
+        },
+        {
+          "name": "orderingRef:Pesachim 22a.1",
+          "namedRangeId": "kix.2rivjmux4wea",
+          "ranges": [
+            {
+              "endIndex": 745,
+              "startIndex": 524
+            }
+          ]
+        },
+        {
+          "name": "orderingRef:Pesachim 22a.1",
+          "namedRangeId": "kix.3o5t7azxshg",
+          "ranges": [
+            {
+              "endIndex": 339,
+              "startIndex": 192
+            }
+          ]
+        },
+        {
+          "name": "orderingRef:Pesachim 22a.1",
+          "namedRangeId": "kix.60v8v3l1j9cp",
+          "ranges": [
+            {
+              "endIndex": 806,
+              "startIndex": 745
+            }
+          ]
+        }
+      ]
+    },
+    "orderingRef:Pesachim 22a.3": {
+      "name": "orderingRef:Pesachim 22a.3",
+      "namedRanges": [
+        {
+          "name": "orderingRef:Pesachim 22a.3",
+          "namedRangeId": "kix.mmcf3z5gdzlg",
+          "ranges": [
+            {
+              "endIndex": 893,
+              "startIndex": 858
+            }
+          ]
+        }
+      ]
+    },
+    "orderingRef:Pesachim 23a.7": {
+      "name": "orderingRef:Pesachim 23a.7",
+      "namedRanges": [
+        {
+          "name": "orderingRef:Pesachim 23a.7",
+          "namedRangeId": "kix.9walola4acs0",
+          "ranges": [
+            {
+              "endIndex": 1209,
+              "startIndex": 1073
+            }
+          ]
+        }
+      ]
+    },
+    "parentRef:Pesachim 22a.1": {
+      "name": "parentRef:Pesachim 22a.1",
+      "namedRanges": [
+        {
+          "name": "parentRef:Pesachim 22a.1",
+          "namedRangeId": "kix.f66gvo7ywyru",
+          "ranges": [
+            {
+              "endIndex": 806,
+              "startIndex": 745
+            }
+          ]
+        },
+        {
+          "name": "parentRef:Pesachim 22a.1",
+          "namedRangeId": "kix.smug0xye12ki",
+          "ranges": [
+            {
+              "endIndex": 524,
+              "startIndex": 483
+            }
+          ]
+        },
+        {
+          "name": "parentRef:Pesachim 22a.1",
+          "namedRangeId": "kix.oxdhifqzotnd",
+          "ranges": [
+            {
+              "endIndex": 839,
+              "startIndex": 818
+            }
+          ]
+        },
+        {
+          "name": "parentRef:Pesachim 22a.1",
+          "namedRangeId": "kix.gqhiulj7e6l0",
+          "ranges": [
+            {
+              "endIndex": 339,
+              "startIndex": 192
+            }
+          ]
+        },
+        {
+          "name": "parentRef:Pesachim 22a.1",
+          "namedRangeId": "kix.ydzgt8chv5x1",
+          "ranges": [
+            {
+              "endIndex": 483,
+              "startIndex": 339
+            }
+          ]
+        },
+        {
+          "name": "parentRef:Pesachim 22a.1",
+          "namedRangeId": "kix.21ecp8wdf5h",
+          "ranges": [
+            {
+              "endIndex": 858,
+              "startIndex": 839
+            }
+          ]
+        },
+        {
+          "name": "parentRef:Pesachim 22a.1",
+          "namedRangeId": "kix.zf6jxd84qbi7",
+          "ranges": [
+            {
+              "endIndex": 818,
+              "startIndex": 806
+            }
+          ]
+        },
+        {
+          "name": "parentRef:Pesachim 22a.1",
+          "namedRangeId": "kix.9ydf7d8udsqo",
+          "ranges": [
+            {
+              "endIndex": 745,
+              "startIndex": 524
+            }
+          ]
+        }
+      ]
+    },
+    "parentRef:Pesachim 22a.3": {
+      "name": "parentRef:Pesachim 22a.3",
+      "namedRanges": [
+        {
+          "name": "parentRef:Pesachim 22a.3",
+          "namedRangeId": "kix.ll1p83eowftw",
+          "ranges": [
+            {
+              "endIndex": 893,
+              "startIndex": 858
+            }
+          ]
+        }
+      ]
+    },
+    "parentRef:Pesachim 22a.4": {
+      "name": "parentRef:Pesachim 22a.4",
+      "namedRanges": [
+        {
+          "name": "parentRef:Pesachim 22a.4",
+          "namedRangeId": "kix.mapn4owwohxq",
+          "ranges": [
+            {
+              "endIndex": 1054,
+              "startIndex": 905
+            }
+          ]
+        },
+        {
+          "name": "parentRef:Pesachim 22a.4",
+          "namedRangeId": "kix.lcvwkouqa7x6",
+          "ranges": [
+            {
+              "endIndex": 905,
+              "startIndex": 893
+            }
+          ]
+        }
+      ]
+    },
+    "parentRef:Pesachim 22a.5": {
+      "name": "parentRef:Pesachim 22a.5",
+      "namedRanges": [
+        {
+          "name": "parentRef:Pesachim 22a.5",
+          "namedRangeId": "kix.dlh3f7wjz1l1",
+          "ranges": [
+            {
+              "endIndex": 1070,
+              "startIndex": 1054
+            }
+          ]
+        }
+      ]
+    },
+    "parentRef:Pesachim 23a.7": {
+      "name": "parentRef:Pesachim 23a.7",
+      "namedRanges": [
+        {
+          "name": "parentRef:Pesachim 23a.7",
+          "namedRangeId": "kix.v4e7du9u02ae",
+          "ranges": [
+            {
+              "endIndex": 1209,
+              "startIndex": 1073
+            }
+          ]
+        }
+      ]
+    },
+    "ref:Exodus 11:7": {
+      "name": "ref:Exodus 11:7",
+      "namedRanges": [
+        {
+          "name": "ref:Exodus 11:7",
+          "namedRangeId": "kix.d72scstigk9d",
+          "ranges": [
+            {
+              "endIndex": 858,
+              "startIndex": 839
+            }
+          ]
+        }
+      ]
+    },
+    "ref:Pesachim 22a.4": {
+      "name": "ref:Pesachim 22a.4",
+      "namedRanges": [
+        {
+          "name": "ref:Pesachim 22a.4",
+          "namedRangeId": "kix.l9fqkgcxbq76",
+          "ranges": [
+            {
+              "endIndex": 1054,
+              "startIndex": 905
+            }
+          ]
+        },
+        {
+          "name": "ref:Pesachim 22a.4",
+          "namedRangeId": "kix.h9cptmmslx7f",
+          "ranges": [
+            {
+              "endIndex": 905,
+              "startIndex": 893
+            }
+          ]
+        }
+      ]
+    },
+    "ref:Pesachim 22a.5": {
+      "name": "ref:Pesachim 22a.5",
+      "namedRanges": [
+        {
+          "name": "ref:Pesachim 22a.5",
+          "namedRangeId": "kix.1jxp5m9l0vk1",
+          "ranges": [
+            {
+              "endIndex": 1070,
+              "startIndex": 1054
+            }
+          ]
+        }
+      ]
+    },
+    "ref:Rashi on Pesachim 22a:1:1": {
+      "name": "ref:Rashi on Pesachim 22a:1:1",
+      "namedRanges": [
+        {
+          "name": "ref:Rashi on Pesachim 22a:1:1",
+          "namedRangeId": "kix.2jwgf0371wb7",
+          "ranges": [
+            {
+              "endIndex": 818,
+              "startIndex": 806
+            }
+          ]
+        }
+      ]
+    },
+    "ref:Rashi on Pesachim 22a:1:2": {
+      "name": "ref:Rashi on Pesachim 22a:1:2",
+      "namedRanges": [
+        {
+          "name": "ref:Rashi on Pesachim 22a:1:2",
+          "namedRangeId": "kix.twfaiw6gkru2",
+          "ranges": [
+            {
+              "endIndex": 839,
+              "startIndex": 818
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "namedStyles": {
+    "styles": [
+      {
+        "namedStyleType": "NORMAL_TEXT",
+        "paragraphStyle": {
+          "alignment": "START",
+          "avoidWidowAndOrphan": true,
+          "borderBetween": {
+            "color": {},
+            "dashStyle": "SOLID",
+            "padding": {
+              "unit": "PT"
+            },
+            "width": {
+              "unit": "PT"
+            }
+          },
+          "borderBottom": {
+            "color": {},
+            "dashStyle": "SOLID",
+            "padding": {
+              "unit": "PT"
+            },
+            "width": {
+              "unit": "PT"
+            }
+          },
+          "borderLeft": {
+            "color": {},
+            "dashStyle": "SOLID",
+            "padding": {
+              "unit": "PT"
+            },
+            "width": {
+              "unit": "PT"
+            }
+          },
+          "borderRight": {
+            "color": {},
+            "dashStyle": "SOLID",
+            "padding": {
+              "unit": "PT"
+            },
+            "width": {
+              "unit": "PT"
+            }
+          },
+          "borderTop": {
+            "color": {},
+            "dashStyle": "SOLID",
+            "padding": {
+              "unit": "PT"
+            },
+            "width": {
+              "unit": "PT"
+            }
+          },
+          "direction": "LEFT_TO_RIGHT",
+          "indentEnd": {
+            "unit": "PT"
+          },
+          "indentFirstLine": {
+            "unit": "PT"
+          },
+          "indentStart": {
+            "unit": "PT"
+          },
+          "keepLinesTogether": false,
+          "keepWithNext": false,
+          "lineSpacing": 115,
+          "namedStyleType": "NORMAL_TEXT",
+          "shading": {
+            "backgroundColor": {}
+          },
+          "spaceAbove": {
+            "unit": "PT"
+          },
+          "spaceBelow": {
+            "unit": "PT"
+          },
+          "spacingMode": "COLLAPSE_LISTS"
+        },
+        "textStyle": {
+          "backgroundColor": {},
+          "baselineOffset": "NONE",
+          "bold": false,
+          "fontSize": {
+            "magnitude": 11,
+            "unit": "PT"
+          },
+          "foregroundColor": {
+            "color": {
+              "rgbColor": {}
+            }
+          },
+          "italic": false,
+          "smallCaps": false,
+          "strikethrough": false,
+          "underline": false,
+          "weightedFontFamily": {
+            "fontFamily": "Arial",
+            "weight": 400
+          }
+        }
+      },
+      {
+        "namedStyleType": "HEADING_1",
+        "paragraphStyle": {
+          "direction": "LEFT_TO_RIGHT",
+          "keepLinesTogether": true,
+          "keepWithNext": true,
+          "namedStyleType": "NORMAL_TEXT",
+          "spaceAbove": {
+            "magnitude": 20,
+            "unit": "PT"
+          },
+          "spaceBelow": {
+            "magnitude": 6,
+            "unit": "PT"
+          }
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 20,
+            "unit": "PT"
+          }
+        }
+      },
+      {
+        "namedStyleType": "HEADING_2",
+        "paragraphStyle": {
+          "direction": "LEFT_TO_RIGHT",
+          "keepLinesTogether": true,
+          "keepWithNext": true,
+          "namedStyleType": "NORMAL_TEXT",
+          "spaceAbove": {
+            "magnitude": 18,
+            "unit": "PT"
+          },
+          "spaceBelow": {
+            "magnitude": 6,
+            "unit": "PT"
+          }
+        },
+        "textStyle": {
+          "bold": false,
+          "fontSize": {
+            "magnitude": 16,
+            "unit": "PT"
+          }
+        }
+      },
+      {
+        "namedStyleType": "HEADING_3",
+        "paragraphStyle": {
+          "direction": "LEFT_TO_RIGHT",
+          "keepLinesTogether": true,
+          "keepWithNext": true,
+          "namedStyleType": "NORMAL_TEXT",
+          "spaceAbove": {
+            "magnitude": 16,
+            "unit": "PT"
+          },
+          "spaceBelow": {
+            "magnitude": 4,
+            "unit": "PT"
+          }
+        },
+        "textStyle": {
+          "bold": false,
+          "fontSize": {
+            "magnitude": 14,
+            "unit": "PT"
+          },
+          "foregroundColor": {
+            "color": {
+              "rgbColor": {
+                "blue": 0.2627451,
+                "green": 0.2627451,
+                "red": 0.2627451
+              }
+            }
+          }
+        }
+      },
+      {
+        "namedStyleType": "HEADING_4",
+        "paragraphStyle": {
+          "direction": "LEFT_TO_RIGHT",
+          "keepLinesTogether": true,
+          "keepWithNext": true,
+          "namedStyleType": "NORMAL_TEXT",
+          "spaceAbove": {
+            "magnitude": 14,
+            "unit": "PT"
+          },
+          "spaceBelow": {
+            "magnitude": 4,
+            "unit": "PT"
+          }
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 12,
+            "unit": "PT"
+          },
+          "foregroundColor": {
+            "color": {
+              "rgbColor": {
+                "blue": 0.4,
+                "green": 0.4,
+                "red": 0.4
+              }
+            }
+          }
+        }
+      },
+      {
+        "namedStyleType": "HEADING_5",
+        "paragraphStyle": {
+          "direction": "LEFT_TO_RIGHT",
+          "keepLinesTogether": true,
+          "keepWithNext": true,
+          "namedStyleType": "NORMAL_TEXT",
+          "spaceAbove": {
+            "magnitude": 12,
+            "unit": "PT"
+          },
+          "spaceBelow": {
+            "magnitude": 4,
+            "unit": "PT"
+          }
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 11,
+            "unit": "PT"
+          },
+          "foregroundColor": {
+            "color": {
+              "rgbColor": {
+                "blue": 0.4,
+                "green": 0.4,
+                "red": 0.4
+              }
+            }
+          }
+        }
+      },
+      {
+        "namedStyleType": "HEADING_6",
+        "paragraphStyle": {
+          "direction": "LEFT_TO_RIGHT",
+          "keepLinesTogether": true,
+          "keepWithNext": true,
+          "namedStyleType": "NORMAL_TEXT",
+          "spaceAbove": {
+            "magnitude": 12,
+            "unit": "PT"
+          },
+          "spaceBelow": {
+            "magnitude": 4,
+            "unit": "PT"
+          }
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 11,
+            "unit": "PT"
+          },
+          "foregroundColor": {
+            "color": {
+              "rgbColor": {
+                "blue": 0.4,
+                "green": 0.4,
+                "red": 0.4
+              }
+            }
+          },
+          "italic": true
+        }
+      },
+      {
+        "namedStyleType": "TITLE",
+        "paragraphStyle": {
+          "direction": "LEFT_TO_RIGHT",
+          "keepLinesTogether": true,
+          "keepWithNext": true,
+          "namedStyleType": "NORMAL_TEXT",
+          "spaceAbove": {
+            "unit": "PT"
+          },
+          "spaceBelow": {
+            "magnitude": 3,
+            "unit": "PT"
+          }
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 26,
+            "unit": "PT"
+          }
+        }
+      },
+      {
+        "namedStyleType": "SUBTITLE",
+        "paragraphStyle": {
+          "direction": "LEFT_TO_RIGHT",
+          "keepLinesTogether": true,
+          "keepWithNext": true,
+          "namedStyleType": "NORMAL_TEXT",
+          "spaceAbove": {
+            "unit": "PT"
+          },
+          "spaceBelow": {
+            "magnitude": 16,
+            "unit": "PT"
+          }
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 15,
+            "unit": "PT"
+          },
+          "foregroundColor": {
+            "color": {
+              "rgbColor": {
+                "blue": 0.4,
+                "green": 0.4,
+                "red": 0.4
+              }
+            }
+          },
+          "italic": false,
+          "weightedFontFamily": {
+            "fontFamily": "Arial",
+            "weight": 400
+          }
+        }
+      }
+    ]
+  },
+  "revisionId": "ALm37BVT_UcfT6-fiH27HYclRiLNSp_SNMOHJ-5_CX1-dPWX7PgqD7TU-2G4xpNAD1_O24AnRajVz4x77EPRFmM",
+  "suggestionsViewMode": "SUGGESTIONS_INLINE",
+  "title": "talmud.page Pesachim debug notes"
+}
