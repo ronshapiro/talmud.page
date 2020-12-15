@@ -6,7 +6,14 @@ const noOpErrorsDelegate = {
   remove: (_id: string) => {},
 };
 
-const factory = new RetryMethodFactory(noOpErrorsDelegate, () => {}, () => {});
+const fastSetTimeout = (callback: () => void) => {
+  setTimeout(callback, 1);
+};
+
+const factory = new RetryMethodFactory(
+  noOpErrorsDelegate, () => {},
+  () => {},
+  fastSetTimeout);
 
 const retryUnless = (condition: boolean, passAlongArg?: any): Promise<any> => {
   return new Promise((success, error) => {
@@ -33,25 +40,34 @@ test("Retries until success", () => {
 
 test("exponential backoff", () => {
   const timestamps: number[] = [];
+  const recordingFactory = new RetryMethodFactory(
+    noOpErrorsDelegate,
+    () => {},
+    () => {},
+    (callback: () => void, ms: number) => {
+      timestamps.push(ms);
+      setTimeout(callback, 1);
+    });
+
   let counter = 0;
-  return factory.retryingMethod({
+
+  return recordingFactory.retryingMethod({
     retryingCall: () => {
-      timestamps.push(new Date().getTime());
       counter++;
-      return retryUnless(counter === 6);
+      return retryUnless(counter === 10);
     },
   })().then(() => {
-    expect(timestamps.length).toBe(6);
-    const MAX_DIFF = 10;
-    const expectRange = (index: number, expectedAmount: number) => {
-      expect(timestamps[index + 1] - timestamps[index]).toBeGreaterThanOrEqual(expectedAmount);
-      expect(timestamps[index + 1] - timestamps[index]).toBeLessThan(expectedAmount + MAX_DIFF);
-    };
-    expectRange(0, 200);
-    expectRange(1, 300);
-    expectRange(2, 450);
-    expectRange(3, 675);
-    expectRange(4, 1012);
+    expect(timestamps).toEqual([
+      200,
+      300,
+      450,
+      675,
+      1012.5,
+      1518.75,
+      2278.125,
+      3417.1875,
+      5125.78125,
+    ]);
   });
 });
 
@@ -82,7 +98,7 @@ test("error message ids and creation", () => {
     remove: (id: string) => {
       errors.push({id, remove: true});
     },
-  }, () => {}, () => {});
+  }, () => {}, () => {}, fastSetTimeout);
 
   return errorFactory.retryingMethod({
     retryingCall: () => {
