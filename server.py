@@ -303,7 +303,7 @@ def notes(masechet):
     if canonical_masechet != masechet:
         return redirect(url_for("notes", masechet = canonical_masechet))
 
-    return render_compiled_template("notes_redirecter.html")
+    return render_compiled_template("notes_redirecter.html", masechet=masechet)
 
 @app.route("/yomi")
 @app.route("/daf-yomi")
