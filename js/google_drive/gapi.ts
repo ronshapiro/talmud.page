@@ -42,7 +42,6 @@ export class RealGoogleApiClient extends GoogleApiClient {
 
   constructor(apiKey: string, clientId: string) {
     super();
-    console.error("hello, world");
     this.apiKey = apiKey;
     this.clientId = clientId;
   }
