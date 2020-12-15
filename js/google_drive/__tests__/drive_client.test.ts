@@ -1,11 +1,8 @@
 /* eslint-disable quote-props */
 import * as fs from "fs";
-// @ts-ignore
-import {DriveClient} from "../client.js";
-// @ts-ignore
-import {GoogleApiClient} from "../gapi.ts";
-// @ts-ignore
-import {UnsavedComment, UnsavedCommentStore} from "../types.ts";
+import {DriveClient} from "../client";
+import {GoogleApiClient} from "../gapi";
+import {UnsavedComment, UnsavedCommentStore} from "../types";
 
 class RecordedApiClient extends GoogleApiClient {
   getDatabaseDocument(documentId: string): Promise<gapi.client.docs.Document> {
@@ -44,6 +41,10 @@ class RecordedApiClient extends GoogleApiClient {
     throw new Error("Unimplemented");
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  searchFiles(databaseProperty: string): gapi.client.Request<gapi.client.drive.FileList> {
+    throw new Error("Unimplemented");
+  }
 
   setDatabaseFileProperties(
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -51,6 +52,11 @@ class RecordedApiClient extends GoogleApiClient {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     databaseProperty: string,
   ): gapi.client.Request<gapi.client.drive.File> {
+    throw new Error("Unimplemented");
+  }
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  batchUpdate(params: any): Promise<any> {
     throw new Error("Unimplemented");
   }
 }
@@ -77,10 +83,9 @@ const client = new DriveClient(
   true);
 
 const expectCommentsToEqual = (expectedComments: any): void => {
-  expect(new Set(Object.keys(client.rangesByRef as string[])))
-    .toEqual(new Set(Object.keys(expectedComments)));
-  for (const ref of Object.keys(expectedComments)) {
-    expect(client.commentsForRef(ref).comments).toEqual(expectedComments[ref]);
+  expect(new Set(Object.keys(client.rangesByRef))).toEqual(new Set(Object.keys(expectedComments)));
+  for (const [ref, comments] of Object.entries(expectedComments)) {
+    expect(comments).toEqual(expectedComments[ref]);
   }
 };
 

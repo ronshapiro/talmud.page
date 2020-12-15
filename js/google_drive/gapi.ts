@@ -9,6 +9,7 @@ export abstract class GoogleApiClient {
   abstract signOut(): void;
   abstract registerSignInListener(listener: (isSignedIn: boolean) => void): void;
   abstract getSignedInUserEmail(): string;
+  abstract searchFiles(databaseProperty: string): gapi.client.Request<gapi.client.drive.FileList>;
   abstract createDocument(title: string): gapi.client.Request<gapi.client.docs.Document>;
   abstract setDatabaseFileProperties(
     fileId: string,
@@ -16,6 +17,7 @@ export abstract class GoogleApiClient {
   ): gapi.client.Request<gapi.client.drive.File>;
 
   abstract getDatabaseDocument(documentId: string): Promise<gapi.client.docs.Document>;
+  abstract batchUpdate(params: BatchUpdateParams): Promise<any>;
 }
 
 // The discoveryDoc is seemingly "loaded into" the gapi.client JS object

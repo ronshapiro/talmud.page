@@ -1,25 +1,8 @@
 // @ts-ignore
-import {Range} from "./types.ts";
+import {LanguageStats, ParagraphElement, Range} from "./types.ts";
 
 interface Predicate<T> {
   (t: T): boolean;
-}
-
-interface LanguageStats {
-  hebrew: number;
-  english: number;
-}
-
-interface TextRun {
-  content: string;
-  textStyle?: any;
-}
-
-export interface ParagraphElement {
-  startIndex: number;
-  endIndex: number;
-  textRun: TextRun;
-  languageStats?: LanguageStats;
 }
 
 type Indexable = Pick<ParagraphElement, "startIndex" | "endIndex">;

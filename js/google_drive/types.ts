@@ -24,6 +24,27 @@ export interface DriveClient {
   masechet: string;
 }
 
+// TODO: make some of the properties requried
 export interface Color extends gapi.client.docs.OptionalColor {}
 export interface Request extends gapi.client.docs.Request {}
-export interface Range extends gapi.client.docs.Range {}
+export interface Range {
+  startIndex: number;
+  endIndex: number;
+}
+
+export interface LanguageStats {
+  hebrew: number;
+  english: number;
+}
+
+export interface TextRun {
+  content: string;
+  textStyle?: any;
+}
+
+export interface ParagraphElement {
+  startIndex: number;
+  endIndex: number;
+  textRun: TextRun;
+  languageStats?: LanguageStats;
+}

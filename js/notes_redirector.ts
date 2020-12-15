@@ -1,5 +1,5 @@
 // @ts-ignore
-import {driveClient} from "./google_drive/singleton.js";
+import {driveClient} from "./google_drive/singleton.ts";
 // @ts-ignore
 import {amudMetadata} from "./amud.ts";
 

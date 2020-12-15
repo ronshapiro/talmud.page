@@ -1,8 +1,8 @@
 /* global gapi */
-import {amudMetadata} from "../amud.ts";
-import {RealGoogleApiClient} from "./gapi.ts";
-import {DriveClient} from "./client.js";
-import {IndexedDbUnsavedCommentStore} from "./IndexedDbUnsavedCommentStore.ts";
+import {amudMetadata} from "../amud";
+import {RealGoogleApiClient} from "./gapi";
+import {DriveClient} from "./client";
+import {IndexedDbUnsavedCommentStore} from "./IndexedDbUnsavedCommentStore";
 
 export const driveClient = new DriveClient(
   new RealGoogleApiClient(
@@ -14,4 +14,4 @@ export const driveClient = new DriveClient(
   window.location.hostname === "localhost",
 );
 
-window.handleGoogleClientLoad = () => gapi.load("client:auth2", () => driveClient.init());
+(window as any).handleGoogleClientLoad = () => gapi.load("client:auth2", () => driveClient.init());

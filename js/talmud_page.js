@@ -5,7 +5,7 @@ import {TalmudRenderer} from "./rendering.jsx";
 import {onceDocumentReady} from "./once_document_ready.ts";
 import MASECHTOT from "./masechtot.js";
 import {amudMetadata, computePreviousAmud, computeNextAmud} from "./amud.ts";
-import {driveClient} from "./google_drive/singleton.js";
+import {driveClient} from "./google_drive/singleton.ts";
 import {registerRefSelectionSnackbarListener} from "./ref_selection_snackbar.js";
 
 // TODO: reactify?

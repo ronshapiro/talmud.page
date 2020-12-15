@@ -1,6 +1,6 @@
 /* global gtag,  */
 import $ from "jquery";
-import {driveClient} from "./google_drive/singleton.js";
+import {driveClient} from "./google_drive/singleton.ts";
 import {snackbars} from "./snackbar.js";
 
 let selectionSnackbarRef;

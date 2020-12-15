@@ -25,8 +25,6 @@ const compareTo = (first: ComparisonType, second: ComparisonType): number => {
   return (first < second) ? -1 : 1;
 };
 
-module.exports = {
-  refSorter: (first: string, second: string): number => {
-    return compareTo(refPieces(first), refPieces(second));
-  },
+export const refSorter = (first: string, second: string): number => {
+  return compareTo(refPieces(first), refPieces(second));
 };

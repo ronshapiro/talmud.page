@@ -1,22 +1,32 @@
 /* global gtag */
 import {v4 as uuid} from "uuid";
-import {rgbColor} from "./color.ts";
-import {refSorter} from "./ref_sorter.ts";
-import {extractDocumentText} from "./document_text.ts";
-import {GatedExecutor} from "../gated_executor.ts";
-import {insertFormattedTextRequests} from "./insertTextRequests.ts";
+import {rgbColor} from "./color";
+import {refSorter} from "./ref_sorter";
+import {extractDocumentText} from "./document_text";
+import {GatedExecutor} from "../gated_executor";
+import {GoogleApiClient} from "./gapi";
+import {insertFormattedTextRequests} from "./insertTextRequests";
+// @ts-ignore
 import {RetryMethodFactory} from "../retry.ts";
+// @ts-ignore
 import {insertTableRequests} from "./tableRequests.ts";
-import {checkNotUndefined} from "../undefined.ts";
+import {
+  ParagraphElement,
+  Range,
+  Request,
+  UnsavedCommentStore,
+} from "./types";
+import {NullaryFunction} from "../types";
+import {checkNotUndefined} from "../undefined";
 
 const INSTRUCTIONS_TABLE_RANGE_NAME = "Instructions Table";
 const NAMED_RANGE_SEPARATOR = "<<||>>";
 
-const createNamedRange = (name, range) => {
+const createNamedRange = (name: string, range: Range) => {
   return {createNamedRange: {name, range}};
 };
 
-const rangeSorter = (first, second) => {
+const rangeSorter = (first: Range, second: Range) => {
   if (first.startIndex < second.startIndex) {
     return -1;
   } else if (first.startIndex === second.startIndex) {
@@ -26,10 +36,58 @@ const rangeSorter = (first, second) => {
   }
 };
 
+// TODO
+type TypescriptCleanupType = any;
+type Comments = {
+  comments: TypescriptCleanupType[];
+} | undefined;
+
+interface HasContents {
+  content: gapi.client.docs.StructuralElement[];
+}
+
+interface PostCommentParams {
+  text: string;
+  selectedText: string;
+  amud: string;
+  ref: string;
+  parentRef: string;
+  id: string;
+  isRetry: boolean | undefined;
+}
+
+interface InternalNamedRange {
+  startIndex: number;
+  endIndex: number;
+  joined: boolean | undefined;
+}
+
 export class DriveClient {
-  constructor(gapi, unsavedCommentStore, masechet, isDebug) {
+  errors: Record<string, string> = {}
+  previousErrors: Record<string, string> = {}
+  onErrorListener: NullaryFunction<void> | undefined;
+  gapi: GoogleApiClient;
+  databaseDocument: gapi.client.docs.Document = {};
+  databaseDocumentShouldBeCreated = false;
+  whenDatabaseReady = new GatedExecutor();
+  commentsByRef: Record<string, Comments> = {};
+  rangesByRef: Record<string, InternalNamedRange[]> = {};
+  unsavedCommentStore: UnsavedCommentStore;
+  masechet: string;
+  isDebug: boolean;
+  databaseProperty: string;
+  signInStatusListener: NullaryFunction<void> | undefined;
+  databaseUpdatedListener: NullaryFunction<void> | undefined;
+  isSignedIn = false;
+
+  constructor(
+    gapi: GoogleApiClient,
+    unsavedCommentStore: UnsavedCommentStore,
+    masechet: string,
+    isDebug: boolean,
+  ) {
     this.gapi = gapi;
-    this.whenDatabaseReady = new GatedExecutor();
+
     this.resetState();
 
     this.isDebug = isDebug;
@@ -45,18 +103,18 @@ export class DriveClient {
     this.unsavedCommentStore.init(this);
   }
 
-  resetState() {
+  resetState(): void {
     this.errors = {};
     this.triggerErrorListener();
     this.whenDatabaseReady.reset();
-    this.commentsByRef = undefined;
+    this.commentsByRef = {};
   }
 
   retryMethodFactory = new RetryMethodFactory({
-    add: (id, userVisibleMessage) => {
+    add: (id: string, userVisibleMessage: string) => {
       this.errors[id] = userVisibleMessage;
     },
-    remove: (id) => {
+    remove: (id: string) => {
       delete this.errors[id];
     },
   }, () => this.triggerErrorListener());
@@ -71,14 +129,14 @@ export class DriveClient {
       // Set the initial sign-in state.
       this.updateSigninStatus(this.gapi.isSignedIn());
 
-      this.gapi.registerSignInListener(isSignedIn => {
+      this.gapi.registerSignInListener((isSignedIn: boolean) => {
         this.updateSigninStatus(isSignedIn);
       });
     },
     createError: () => "Error initializing drive database",
   });
 
-  updateSigninStatus(isSignedIn) {
+  updateSigninStatus(isSignedIn: boolean): void {
     this.isSignedIn = isSignedIn;
     if (isSignedIn) {
       gtag("config", "GA_MEASUREMENT_ID", {
@@ -92,7 +150,7 @@ export class DriveClient {
   }
 
   setDatabaseFileProperties = this.retryMethodFactory.retryingMethod({
-    retryingCall: (fileId) => {
+    retryingCall: (fileId: string) => {
       checkNotUndefined(fileId, "fileId");
       return this.gapi.setDatabaseFileProperties(fileId, this.databaseProperty);
     },
@@ -101,7 +159,7 @@ export class DriveClient {
 
   findDocsDatabase = this.retryMethodFactory.retryingMethod({
     retryingCall: () => this.gapi.searchFiles(this.databaseProperty),
-    then: response => {
+    then: (response: TypescriptCleanupType) => {
       const {files} = response.result;
       if (files.length === 0) {
         this.databaseDocumentShouldBeCreated = true;
@@ -125,7 +183,7 @@ export class DriveClient {
             : `talmud.page ${this.masechet} notes`;
       return this.gapi.createDocument(title);
     },
-    then: response => {
+    then: (response: TypescriptCleanupType) => {
       return this.getDatabaseDocument(response.result.documentId)
         .then(() => this.addInstructionsTable())
         .then(() => this.setDatabaseFileProperties(response.result.documentId))
@@ -134,7 +192,7 @@ export class DriveClient {
     createError: () => "Error creating database file",
   });
 
-  instructionsTableRequests() {
+  instructionsTableRequests(): Request[] {
     return insertTableRequests({
       tableStart: 1,
       borderColor: rgbColor(184, 145, 48),
@@ -161,12 +219,12 @@ export class DriveClient {
   });
 
   getDatabaseDocument = this.retryMethodFactory.retryingMethod({
-    retryingCall: (documentId) => {
+    retryingCall: (documentId: string) => {
       this.commentsByRef = {};
       return this.gapi.getDatabaseDocument(documentId);
     },
-    then: document => {
-      this.databaseDocument = document;
+    then: (document: TypescriptCleanupType) => {
+      this.databaseDocument = document!;
       if (!this.databaseDocument.namedRanges) {
         this.databaseDocument.namedRanges = {};
       }
@@ -178,10 +236,10 @@ export class DriveClient {
     createError: () => "Could not find database file",
   });
 
-  setRangesByRef() {
-    const {namedRanges} = this.databaseDocument;
+  setRangesByRef(): void {
+    const namedRanges = this.databaseDocument.namedRanges as TypescriptCleanupType;
     this.rangesByRef = {};
-    const addNamedRanges = (ref, rangesToAdd) => {
+    const addNamedRanges = (ref: string, rangesToAdd: InternalNamedRange[]) => {
       if (!(ref in this.rangesByRef)) {
         this.rangesByRef[ref] = [];
       }
@@ -192,7 +250,7 @@ export class DriveClient {
       if (rangeName.startsWith("ref:")) {
         addNamedRanges(
           rangeName.slice("ref:".length),
-          namedRanges[rangeName].namedRanges.flatMap(x => x.ranges));
+          namedRanges[rangeName].namedRanges.flatMap((x: any) => x.ranges));
       } else if (rangeName.endsWith(v2Suffix)) {
         const commentRange = namedRanges[rangeName].namedRanges[0].ranges[0];
         const [id, ref] = rangeName.split(NAMED_RANGE_SEPARATOR).slice(0, 2);
@@ -215,15 +273,17 @@ export class DriveClient {
     }
   }
 
-  refreshDatabaseDocument = () => this.getDatabaseDocument(this.databaseDocument.documentId);
+  refreshDatabaseDocument(): Promise<any> {
+    return this.getDatabaseDocument(this.databaseDocument.documentId);
+  }
 
   // TODO(drive): break up this method, possibly by extracting a state object.
-  postCommentRequests(text, selectedText, amud, ref, parentRef) {
+  postCommentRequests({text, selectedText, amud, ref, parentRef}: PostCommentParams): Request[] {
     let insertLocation = this.findInsertLocation(parentRef);
     const requests = [];
 
     const headerRangeLabel = `header:${amud}`;
-    const headerExists = headerRangeLabel in this.databaseDocument.namedRanges;
+    const headerExists = headerRangeLabel in this.databaseDocument.namedRanges!;
     if (!headerExists) {
       const headerText = amud;
       const headerRange = {
@@ -238,7 +298,8 @@ export class DriveClient {
 
     // don't use the unsaved comment id in case there are mistaken duplicate retries
     const uniqueId = uuid();
-    const rangeNameWithSuffix = (suffix) => [uniqueId, ref, suffix].join(NAMED_RANGE_SEPARATOR);
+    const rangeNameWithSuffix = (suffix: string): string => (
+      [uniqueId, ref, suffix].join(NAMED_RANGE_SEPARATOR));
 
     requests.push(
       ...insertTableRequests({
@@ -272,7 +333,7 @@ export class DriveClient {
   }
 
   // These parameters should be kept in sync with addUnsavedComment() with the exception of `id`.
-  postComment({text, selectedText, amud, ref, parentRef, id}) {
+  postComment({text, selectedText, amud, ref, parentRef, id}: PostCommentParams): void {
     if (this.databaseDocumentShouldBeCreated) {
       this.createDocsDatabase();
     }
@@ -288,20 +349,21 @@ export class DriveClient {
   }
 
   _postComment = this.retryMethodFactory.retryingMethod({
-    retryingCall: ({text, selectedText, amud, ref, parentRef, id}) => {
-      return this.updateDocument(this.postCommentRequests(text, selectedText, amud, ref, parentRef))
+    retryingCall: (params: PostCommentParams) => {
+      return this.updateDocument(this.postCommentRequests(params))
         .finally(() => this.refreshDatabaseDocument())
         .then(response => {
-          this.unsavedCommentStore.markCommentSaved(id);
+          this.unsavedCommentStore.markCommentSaved(params.id);
           return Promise.resolve(response);
         });
     },
-    createError: ({ref, isRetry}) => (isRetry ? undefined : `Could not save comment on ${ref}`),
+    createError: ({ref, isRetry}: PostCommentParams) => (
+      isRetry ? undefined : `Could not save comment on ${ref}`),
   });
 
   // TODO(drive): tests, and dependency injection?
-  findInsertLocation(parentRef) {
-    const {namedRanges} = this.databaseDocument;
+  findInsertLocation(parentRef: string): number {
+    const namedRanges = this.databaseDocument.namedRanges as TypescriptCleanupType;
     if (Object.keys(namedRanges).length === 0) {
       return this.documentEnd();
     }
@@ -335,12 +397,12 @@ export class DriveClient {
     return 1;
   }
 
-  documentEnd() {
-    const {content} = this.databaseDocument.body;
-    return content[content.length - 1].endIndex - 1;
+  documentEnd(): number {
+    const content = this.databaseDocument.body!.content as gapi.client.docs.StructuralElement[];
+    return content[content.length - 1]!.endIndex! - 1;
   }
 
-  commentsForRef(ref) {
+  commentsForRef(ref: string): Comments {
     if (!this.databaseDocument) {
       return undefined;
     }
@@ -353,11 +415,11 @@ export class DriveClient {
     }
   }
 
-  computeCommentsForRef(ref) {
+  computeCommentsForRef(ref: string): Comments {
     if (!(ref in this.rangesByRef)) {
       return undefined;
     }
-    const ranges = this.rangesByRef[ref];
+    const ranges = this.rangesByRef[ref] || [];
     const documentBodyElements = this.documentBodyElements();
     return {
       comments: ranges.map((range, index) => {
@@ -368,8 +430,9 @@ export class DriveClient {
           const second = text.shift();
           text.unshift([first, second].join(" - "));
         }
-        const hebrew = documentText.map(x => x.languageStats.hebrew).reduce((x, y) => x + y);
-        const english = documentText.map(x => x.languageStats.english).reduce((x, y) => x + y);
+        const reducer = (x: number, y: number): number => x + y;
+        const hebrew = documentText.map(x => x.languageStats.hebrew).reduce(reducer);
+        const english = documentText.map(x => x.languageStats.english).reduce(reducer);
         return {
           en: english > hebrew ? text : "",
           he: hebrew >= english ? text : "",
@@ -379,55 +442,55 @@ export class DriveClient {
     };
   }
 
-  _documentBodyElements(contents, elements) {
+  _documentBodyElements(contents: HasContents, elements: ParagraphElement[]): ParagraphElement[] {
     contents.content.forEach((content, index) => {
       if (content.paragraph) {
         if (index === 0) {
-          const firstElement = content.paragraph.elements[0];
-          const initialLength = firstElement.textRun.content.length;
+          const firstElement = content.paragraph.elements![0] as ParagraphElement;
+          const initialLength = firstElement.textRun!.content.length;
           firstElement.textRun.content = firstElement.textRun.content.trimStart();
           firstElement.startIndex += initialLength - firstElement.textRun.content.length;
         }
         if ((index + 1) === contents.content.length) {
-          const lastElement = content.paragraph.elements.slice(-1)[0];
+          const lastElement = content.paragraph.elements!.slice(-1)[0] as ParagraphElement;
           const initialLength = lastElement.textRun.content.length;
-          lastElement.textRun.content = lastElement.textRun.content.trimEnd();
-          lastElement.endIndex -= initialLength - lastElement.textRun.content.length;
+          lastElement.textRun.content = lastElement.textRun.content!.trimEnd();
+          lastElement.endIndex -= initialLength - lastElement.textRun.content!.length;
         }
-        elements.push(...content.paragraph.elements);
+        elements.push(...(content.paragraph.elements! as ParagraphElement[]));
       } else if (content.table) {
-        const cells = content.table.tableRows.flatMap(x => x.tableCells);
-        cells.forEach(x => this._documentBodyElements(x, elements));
+        const cells = content.table.tableRows!.flatMap(x => x.tableCells);
+        cells.forEach(x => this._documentBodyElements(x as HasContents, elements));
       }
     });
     return elements;
   }
 
-  documentBodyElements() {
-    return this._documentBodyElements(this.databaseDocument.body, []);
+  documentBodyElements(): ParagraphElement[] {
+    return this._documentBodyElements(this.databaseDocument.body as HasContents, []);
   }
 
-  signIn() {
+  signIn(): void {
     localStorage.hasSignedInWithGoogle = "true";
     this.gapi.signIn();
   }
 
-  signOut() {
+  signOut(): void {
     this.gapi.signOut();
   }
 
-  updateDocument(requests) {
+  updateDocument(requests: Request[]): Promise<any> {
     if (!Array.isArray(requests)) {
       requests = [requests];
     }
     return this.gapi.batchUpdate({
       requests,
-      documentId: this.databaseDocument.documentId,
+      documentId: this.databaseDocument.documentId!,
       writeControl: {requiredRevisionId: this.databaseDocument.revisionId},
     });
   }
 
-  triggerErrorListener() {
+  triggerErrorListener(): void {
     if (!this.previousErrors) {
       this.previousErrors = {};
       return;

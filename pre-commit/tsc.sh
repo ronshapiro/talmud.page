@@ -20,7 +20,7 @@ args() {
 }
 
 if [[ -n "${files[@]:-}" ]]; then
-    npx tsc $(args) --esModuleInterop ${files[@]:-}
+    npx tsc $(args) --lib es2019,dom --esModuleInterop ${files[@]:-}
 fi
 
 if [[ -n "${parcel}" ]]; then
