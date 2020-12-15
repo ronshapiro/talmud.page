@@ -1,6 +1,5 @@
 /* global gtag */
 import {v4 as uuid} from "uuid";
-import {amudMetadata} from "../amud.ts";
 import {rgbColor} from "./color.ts";
 import {refSorter} from "./ref_sorter.ts";
 import {extractDocumentText} from "./document_text.ts";
@@ -28,14 +27,14 @@ const rangeSorter = (first, second) => {
 };
 
 export class DriveClient {
-  constructor(gapi, unsavedCommentStore) {
+  constructor(gapi, unsavedCommentStore, masechet, isDebug) {
     this.gapi = gapi;
     this.whenDatabaseReady = new GatedExecutor();
     this.resetState();
 
-    this.isDebug = window.location.hostname === "localhost";
+    this.isDebug = isDebug;
     const databaseType = this.isDebug ? "debug database" : "database";
-    this.masechet = amudMetadata().masechet;
+    this.masechet = masechet;
     this.databaseProperty = `${this.masechet} ${databaseType}`;
     if (this.isDebug) {
       // eslint-disable-next-line no-console
