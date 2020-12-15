@@ -165,8 +165,8 @@ export class DriveClient {
       this.commentsByRef = {};
       return this.gapi.getDatabaseDocument(documentId);
     },
-    then: response => {
-      this.databaseDocument = response.result;
+    then: document => {
+      this.databaseDocument = document;
       if (!this.databaseDocument.namedRanges) {
         this.databaseDocument.namedRanges = {};
       }

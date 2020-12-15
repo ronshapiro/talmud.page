@@ -15,7 +15,7 @@ export abstract class GoogleApiClient {
     databaseProperty: string,
   ): gapi.client.Request<gapi.client.drive.File>;
 
-  abstract getDatabaseDocument(documentId: string): gapi.client.Request<gapi.client.docs.Document>;
+  abstract getDatabaseDocument(documentId: string): Promise<gapi.client.docs.Document>;
 }
 
 // The discoveryDoc is seemingly "loaded into" the gapi.client JS object
@@ -107,8 +107,10 @@ export class RealGoogleApiClient extends GoogleApiClient {
     });
   }
 
-  getDatabaseDocument(documentId: string): gapi.client.Request<gapi.client.docs.Document> {
-    return gapi.client.docs.documents.get({documentId});
+  getDatabaseDocument(documentId: string): Promise<gapi.client.docs.Document> {
+    return asPromise(gapi.client.docs.documents.get({documentId}))
+      // @ts-ignore
+      .then(x => x.result);
   }
 
   batchUpdate(params: BatchUpdateParams): Promise<any> {

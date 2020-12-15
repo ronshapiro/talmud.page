@@ -1,0 +1,715 @@
+{
+  "body": {
+    "content": [
+      {
+        "endIndex": 1,
+        "sectionBreak": {
+          "sectionStyle": {
+            "columnSeparatorStyle": "NONE",
+            "contentDirection": "LEFT_TO_RIGHT",
+            "sectionType": "CONTINUOUS"
+          }
+        }
+      },
+      {
+        "endIndex": 2,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 2,
+              "startIndex": 1,
+              "textRun": {
+                "content": "\n",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "namedStyleType": "NORMAL_TEXT"
+          }
+        },
+        "startIndex": 1
+      },
+      {
+        "endIndex": 189,
+        "startIndex": 2,
+        "table": {
+          "columns": 1,
+          "rows": 1,
+          "tableRows": [
+            {
+              "endIndex": 188,
+              "startIndex": 3,
+              "tableCells": [
+                {
+                  "content": [
+                    {
+                      "endIndex": 117,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 36,
+                            "startIndex": 5,
+                            "textRun": {
+                              "content": "This document was created with ",
+                              "textStyle": {}
+                            }
+                          },
+                          {
+                            "endIndex": 47,
+                            "startIndex": 36,
+                            "textRun": {
+                              "content": "talmud.page",
+                              "textStyle": {
+                                "foregroundColor": {
+                                  "color": {
+                                    "rgbColor": {
+                                      "blue": 0.77254903,
+                                      "green": 0.35686275,
+                                      "red": 0.17254902
+                                    }
+                                  }
+                                },
+                                "link": {
+                                  "url": "https://talmud.page"
+                                },
+                                "underline": true
+                              }
+                            }
+                          },
+                          {
+                            "endIndex": 117,
+                            "startIndex": 47,
+                            "textRun": {
+                              "content": " and is used as a database for personalized comments that you create.\n",
+                              "textStyle": {}
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "LEFT_TO_RIGHT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 5
+                    },
+                    {
+                      "endIndex": 118,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 118,
+                            "startIndex": 117,
+                            "textRun": {
+                              "content": "\n",
+                              "textStyle": {}
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "LEFT_TO_RIGHT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 117
+                    },
+                    {
+                      "endIndex": 188,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 168,
+                            "startIndex": 118,
+                            "textRun": {
+                              "content": "Before making any edits, it's recommended to read ",
+                              "textStyle": {}
+                            }
+                          },
+                          {
+                            "endIndex": 186,
+                            "startIndex": 168,
+                            "textRun": {
+                              "content": "these instructions",
+                              "textStyle": {
+                                "foregroundColor": {
+                                  "color": {
+                                    "rgbColor": {
+                                      "blue": 0.77254903,
+                                      "green": 0.35686275,
+                                      "red": 0.17254902
+                                    }
+                                  }
+                                },
+                                "link": {
+                                  "url": "https://talmud.page/caveats/google-docs"
+                                },
+                                "underline": true
+                              }
+                            }
+                          },
+                          {
+                            "endIndex": 188,
+                            "startIndex": 186,
+                            "textRun": {
+                              "content": ".\n",
+                              "textStyle": {}
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "LEFT_TO_RIGHT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 118
+                    }
+                  ],
+                  "endIndex": 188,
+                  "startIndex": 4,
+                  "tableCellStyle": {
+                    "backgroundColor": {
+                      "color": {
+                        "rgbColor": {
+                          "blue": 0.63529414,
+                          "green": 0.89411765,
+                          "red": 0.98039216
+                        }
+                      }
+                    },
+                    "borderBottom": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 0.1882353,
+                            "green": 0.5647059,
+                            "red": 0.7176471
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderLeft": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 0.1882353,
+                            "green": 0.5647059,
+                            "red": 0.7176471
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderRight": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 0.1882353,
+                            "green": 0.5647059,
+                            "red": 0.7176471
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderTop": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 0.1882353,
+                            "green": 0.5647059,
+                            "red": 0.7176471
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "columnSpan": 1,
+                    "rowSpan": 1
+                  }
+                }
+              ],
+              "tableRowStyle": {
+                "minRowHeight": {
+                  "unit": "PT"
+                }
+              }
+            }
+          ],
+          "tableStyle": {
+            "tableColumnProperties": [
+              {
+                "widthType": "EVENLY_DISTRIBUTED"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "endIndex": 192,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 192,
+              "startIndex": 189,
+              "textRun": {
+                "content": "2a\n",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "headingId": "h.trboanlhft8i",
+            "namedStyleType": "HEADING_2"
+          }
+        },
+        "startIndex": 189
+      }
+    ]
+  },
+  "documentId": "18ZQooNIPQfBpxMQfa5g12X5i--7Z3Vd2fIwrhVvuzQw",
+  "documentStyle": {
+    "background": {
+      "color": {
+        "color": {
+          "rgbColor": {
+            "blue": 1,
+            "green": 1,
+            "red": 1
+          }
+        }
+      }
+    },
+    "marginBottom": {
+      "magnitude": 72,
+      "unit": "PT"
+    },
+    "marginFooter": {
+      "magnitude": 36,
+      "unit": "PT"
+    },
+    "marginHeader": {
+      "magnitude": 36,
+      "unit": "PT"
+    },
+    "marginLeft": {
+      "magnitude": 72,
+      "unit": "PT"
+    },
+    "marginRight": {
+      "magnitude": 72,
+      "unit": "PT"
+    },
+    "marginTop": {
+      "magnitude": 72,
+      "unit": "PT"
+    },
+    "pageNumberStart": 1,
+    "pageSize": {
+      "height": {
+        "magnitude": 792,
+        "unit": "PT"
+      },
+      "width": {
+        "magnitude": 612,
+        "unit": "PT"
+      }
+    },
+    "useCustomHeaderFooterMargins": true
+  },
+  "namedRanges": {
+    "Instructions Table": {
+      "name": "Instructions Table",
+      "namedRanges": [
+        {
+          "name": "Instructions Table",
+          "namedRangeId": "kix.lcioehp5amba",
+          "ranges": [
+            {
+              "endIndex": 189,
+              "startIndex": 1
+            }
+          ]
+        }
+      ]
+    },
+    "header:2a": {
+      "name": "header:2a",
+      "namedRanges": [
+        {
+          "name": "header:2a",
+          "namedRangeId": "kix.kffky3m62opl",
+          "ranges": [
+            {
+              "endIndex": 191,
+              "startIndex": 189
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "namedStyles": {
+    "styles": [
+      {
+        "namedStyleType": "NORMAL_TEXT",
+        "paragraphStyle": {
+          "alignment": "START",
+          "avoidWidowAndOrphan": true,
+          "borderBetween": {
+            "color": {},
+            "dashStyle": "SOLID",
+            "padding": {
+              "unit": "PT"
+            },
+            "width": {
+              "unit": "PT"
+            }
+          },
+          "borderBottom": {
+            "color": {},
+            "dashStyle": "SOLID",
+            "padding": {
+              "unit": "PT"
+            },
+            "width": {
+              "unit": "PT"
+            }
+          },
+          "borderLeft": {
+            "color": {},
+            "dashStyle": "SOLID",
+            "padding": {
+              "unit": "PT"
+            },
+            "width": {
+              "unit": "PT"
+            }
+          },
+          "borderRight": {
+            "color": {},
+            "dashStyle": "SOLID",
+            "padding": {
+              "unit": "PT"
+            },
+            "width": {
+              "unit": "PT"
+            }
+          },
+          "borderTop": {
+            "color": {},
+            "dashStyle": "SOLID",
+            "padding": {
+              "unit": "PT"
+            },
+            "width": {
+              "unit": "PT"
+            }
+          },
+          "direction": "LEFT_TO_RIGHT",
+          "indentEnd": {
+            "unit": "PT"
+          },
+          "indentFirstLine": {
+            "unit": "PT"
+          },
+          "indentStart": {
+            "unit": "PT"
+          },
+          "keepLinesTogether": false,
+          "keepWithNext": false,
+          "lineSpacing": 115,
+          "namedStyleType": "NORMAL_TEXT",
+          "shading": {
+            "backgroundColor": {}
+          },
+          "spaceAbove": {
+            "unit": "PT"
+          },
+          "spaceBelow": {
+            "unit": "PT"
+          },
+          "spacingMode": "COLLAPSE_LISTS"
+        },
+        "textStyle": {
+          "backgroundColor": {},
+          "baselineOffset": "NONE",
+          "bold": false,
+          "fontSize": {
+            "magnitude": 11,
+            "unit": "PT"
+          },
+          "foregroundColor": {
+            "color": {
+              "rgbColor": {}
+            }
+          },
+          "italic": false,
+          "smallCaps": false,
+          "strikethrough": false,
+          "underline": false,
+          "weightedFontFamily": {
+            "fontFamily": "Arial",
+            "weight": 400
+          }
+        }
+      },
+      {
+        "namedStyleType": "HEADING_1",
+        "paragraphStyle": {
+          "direction": "LEFT_TO_RIGHT",
+          "keepLinesTogether": true,
+          "keepWithNext": true,
+          "namedStyleType": "NORMAL_TEXT",
+          "spaceAbove": {
+            "magnitude": 20,
+            "unit": "PT"
+          },
+          "spaceBelow": {
+            "magnitude": 6,
+            "unit": "PT"
+          }
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 20,
+            "unit": "PT"
+          }
+        }
+      },
+      {
+        "namedStyleType": "HEADING_2",
+        "paragraphStyle": {
+          "direction": "LEFT_TO_RIGHT",
+          "keepLinesTogether": true,
+          "keepWithNext": true,
+          "namedStyleType": "NORMAL_TEXT",
+          "spaceAbove": {
+            "magnitude": 18,
+            "unit": "PT"
+          },
+          "spaceBelow": {
+            "magnitude": 6,
+            "unit": "PT"
+          }
+        },
+        "textStyle": {
+          "bold": false,
+          "fontSize": {
+            "magnitude": 16,
+            "unit": "PT"
+          }
+        }
+      },
+      {
+        "namedStyleType": "HEADING_3",
+        "paragraphStyle": {
+          "direction": "LEFT_TO_RIGHT",
+          "keepLinesTogether": true,
+          "keepWithNext": true,
+          "namedStyleType": "NORMAL_TEXT",
+          "spaceAbove": {
+            "magnitude": 16,
+            "unit": "PT"
+          },
+          "spaceBelow": {
+            "magnitude": 4,
+            "unit": "PT"
+          }
+        },
+        "textStyle": {
+          "bold": false,
+          "fontSize": {
+            "magnitude": 14,
+            "unit": "PT"
+          },
+          "foregroundColor": {
+            "color": {
+              "rgbColor": {
+                "blue": 0.2627451,
+                "green": 0.2627451,
+                "red": 0.2627451
+              }
+            }
+          }
+        }
+      },
+      {
+        "namedStyleType": "HEADING_4",
+        "paragraphStyle": {
+          "direction": "LEFT_TO_RIGHT",
+          "keepLinesTogether": true,
+          "keepWithNext": true,
+          "namedStyleType": "NORMAL_TEXT",
+          "spaceAbove": {
+            "magnitude": 14,
+            "unit": "PT"
+          },
+          "spaceBelow": {
+            "magnitude": 4,
+            "unit": "PT"
+          }
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 12,
+            "unit": "PT"
+          },
+          "foregroundColor": {
+            "color": {
+              "rgbColor": {
+                "blue": 0.4,
+                "green": 0.4,
+                "red": 0.4
+              }
+            }
+          }
+        }
+      },
+      {
+        "namedStyleType": "HEADING_5",
+        "paragraphStyle": {
+          "direction": "LEFT_TO_RIGHT",
+          "keepLinesTogether": true,
+          "keepWithNext": true,
+          "namedStyleType": "NORMAL_TEXT",
+          "spaceAbove": {
+            "magnitude": 12,
+            "unit": "PT"
+          },
+          "spaceBelow": {
+            "magnitude": 4,
+            "unit": "PT"
+          }
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 11,
+            "unit": "PT"
+          },
+          "foregroundColor": {
+            "color": {
+              "rgbColor": {
+                "blue": 0.4,
+                "green": 0.4,
+                "red": 0.4
+              }
+            }
+          }
+        }
+      },
+      {
+        "namedStyleType": "HEADING_6",
+        "paragraphStyle": {
+          "direction": "LEFT_TO_RIGHT",
+          "keepLinesTogether": true,
+          "keepWithNext": true,
+          "namedStyleType": "NORMAL_TEXT",
+          "spaceAbove": {
+            "magnitude": 12,
+            "unit": "PT"
+          },
+          "spaceBelow": {
+            "magnitude": 4,
+            "unit": "PT"
+          }
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 11,
+            "unit": "PT"
+          },
+          "foregroundColor": {
+            "color": {
+              "rgbColor": {
+                "blue": 0.4,
+                "green": 0.4,
+                "red": 0.4
+              }
+            }
+          },
+          "italic": true
+        }
+      },
+      {
+        "namedStyleType": "TITLE",
+        "paragraphStyle": {
+          "direction": "LEFT_TO_RIGHT",
+          "keepLinesTogether": true,
+          "keepWithNext": true,
+          "namedStyleType": "NORMAL_TEXT",
+          "spaceAbove": {
+            "unit": "PT"
+          },
+          "spaceBelow": {
+            "magnitude": 3,
+            "unit": "PT"
+          }
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 26,
+            "unit": "PT"
+          }
+        }
+      },
+      {
+        "namedStyleType": "SUBTITLE",
+        "paragraphStyle": {
+          "direction": "LEFT_TO_RIGHT",
+          "keepLinesTogether": true,
+          "keepWithNext": true,
+          "namedStyleType": "NORMAL_TEXT",
+          "spaceAbove": {
+            "unit": "PT"
+          },
+          "spaceBelow": {
+            "magnitude": 16,
+            "unit": "PT"
+          }
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 15,
+            "unit": "PT"
+          },
+          "foregroundColor": {
+            "color": {
+              "rgbColor": {
+                "blue": 0.4,
+                "green": 0.4,
+                "red": 0.4
+              }
+            }
+          },
+          "italic": false,
+          "weightedFontFamily": {
+            "fontFamily": "Arial",
+            "weight": 400
+          }
+        }
+      }
+    ]
+  },
+  "revisionId": "ALm37BWGElb76Qc1fvWeKUAYI0TEUNpfCNaCLAWSLHFABs-gfBhRwMhv10222yQF0__ljmcCHcm-8R0bwEAiXzU",
+  "suggestionsViewMode": "SUGGESTIONS_INLINE",
+  "title": "talmud.page Sotah debug notes"
+}
