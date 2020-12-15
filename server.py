@@ -313,7 +313,12 @@ def yomi():
 if app.debug:
     @app.route("/google-docs-record", methods=["POST"])
     def google_docs_output():
-        write_json("js/google_drive/__tests__/do_not_submit_rename_me.json", request.get_json())
+        data_dump = request.get_json()
+        data_dump["revisionId"] = "revisionId"
+        del data_dump["documentStyle"]
+        del data_dump["namedStyles"]
+        del data_dump["suggestionsViewMode"]
+        write_json("js/google_drive/__tests__/do_not_submit_rename_me.json", data_dump)
         return ""
 
 if __name__ == '__main__':
