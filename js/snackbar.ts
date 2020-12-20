@@ -1,22 +1,28 @@
 /* global gtag */
 import $ from "jquery";
-import PREFERENCES_PAGE_VERSION from "./preferences_version.ts";
+import PREFERENCES_PAGE_VERSION from "./preferences_version";
 
 const moveSnackbarOffscreen = () => $("#snackbar").css("bottom", -400);
 const hideSnackbar = () => $("#snackbar").animate({bottom: -400});
 
 const BUTTON_CLASSES = 'class="mdl-button mdl-js-button mdl-button--colored"';
 
-const addContainer = kind => {
+function addContainer(kind: Kind): void {
   const classes = [kind.cssClass, ...(kind.extraCssClasses || [])].join(" ");
   $(`#snackbar`).append(
     `<div class="${classes}">
        <div class="snackbar-text"></div>
        <div class="snackbar-buttons"></div>
      </div>`);
-};
+}
 
-const updateSnackbar = (kind, labelHtml, buttons) => {
+interface Button {
+  text: string;
+  onClick: () => void;
+}
+type MaybeButtons = Button | Button[];
+
+function updateSnackbar(kind: Kind, labelHtml: string, maybeButtons: MaybeButtons): void {
   let $container = $(`#snackbar .${kind.cssClass}`);
   const addingContainer = !$container.length;
   if (addingContainer) {
@@ -27,12 +33,16 @@ const updateSnackbar = (kind, labelHtml, buttons) => {
 
   const buttonsDiv = $container.find(".snackbar-buttons").html("");
   let style = "";
-  if (!buttons) {
-    buttons = ["hidden"];
+  let buttons: Button[];
+  if (!maybeButtons) {
+    buttons = [{} as Button];
     style = 'style="visibility:hidden"';
-  } else if (!buttons.length) {
-    buttons = [buttons];
+  } else if (Array.isArray(maybeButtons)) {
+    buttons = maybeButtons;
+  } else {
+    buttons = [maybeButtons];
   }
+
 
   // TODO: replace with map and then remove the initial setting of html("")
   for (const button of buttons) {
@@ -46,13 +56,13 @@ const updateSnackbar = (kind, labelHtml, buttons) => {
 
   // Ensure that any hide animation finishes immediately and restart the showing of the snackbar
   $container.stop().hide().slideToggle();
-};
+}
 
-const displaySnackbar = (kind, labelHtml, buttons) => {
+function displaySnackbar(kind: Kind, labelHtml: string, buttons: MaybeButtons): void {
   updateSnackbar(kind, labelHtml, buttons);
 
   $("#snackbar").animate({bottom: 0});
-};
+}
 
 const hasSeenLatestPreferences = () => {
   if (localStorage.lastViewedVersionOfPreferencesPage) {
@@ -61,8 +71,55 @@ const hasSeenLatestPreferences = () => {
   return false;
 };
 
-const Kind = {
-  PREFERENCES_NUDGE: {
+interface AbstractKind {
+  prefix?: string;
+  customShowLogic?: () => boolean;
+  shouldResetShowCount?: () => boolean;
+  maxShowCount?: number;
+  cssClass: string;
+  extraCssClasses?: string[];
+}
+
+class Kind implements AbstractKind {
+  prefix: string | undefined;
+  customShowLogic: (() => boolean) | undefined;
+  shouldResetShowCount: (() => boolean) | undefined;
+  maxShowCount: number | undefined;
+  cssClass: string;
+  extraCssClasses: string[] | undefined;
+
+  constructor(kind: AbstractKind) {
+    this.prefix = kind.prefix;
+    this.customShowLogic = kind.customShowLogic;
+    this.shouldResetShowCount = kind.shouldResetShowCount;
+    this.maxShowCount = kind.maxShowCount;
+    this.cssClass = kind.cssClass;
+    this.extraCssClasses = kind.extraCssClasses;
+  }
+
+  shownCountString(): string {
+    return `${this.prefix}SnackbarShownCount`;
+  }
+
+  shownCount(): number {
+    return parseInt(localStorage[this.shownCountString()]) || 0;
+  }
+
+  setShownCount(newCount: number): void {
+    localStorage[this.shownCountString()] = newCount;
+  }
+
+  incrementShownCount(): void {
+    this.setShownCount(this.shownCount() + 1);
+  }
+
+  dismissedString(): string {
+    return `${this.prefix}SnackbarShownDismissed`;
+  }
+}
+
+const Kinds = {
+  PREFERENCES_NUDGE: new Kind({
     prefix: "preferencePage",
     customShowLogic: () => {
       return window.location.pathname !== "/preferences" && !hasSeenLatestPreferences();
@@ -76,50 +133,45 @@ const Kind = {
     },
     maxShowCount: 3,
     cssClass: "preferencesNudge",
-  },
-  GOOGLE_SIGN_IN: {
+  }),
+
+  GOOGLE_SIGN_IN: new Kind({
     prefix: "googleSignIn",
     customShowLogic: () => !localStorage.hasSignedInWithGoogle,
     maxShowCount: 3,
     cssClass: "googleSignIn",
-  },
-  TEXT_SELECTION: {
+  }),
+
+  TEXT_SELECTION: new Kind({
     cssClass: "textSelection",
-  },
-  PREFERENCES_SAVED: {
+  }),
+
+  PREFERENCES_SAVED: new Kind({
     cssClass: "preferencesSaved",
-  },
-  ERRORS: {
+  }),
+
+  ERRORS: new Kind({
     cssClass: "errors",
     extraCssClasses: ["mdl-color-text--accent"],
-  },
+  }),
 };
-
-const shownCountString = kind => `${kind.prefix}SnackbarShownCount`;
-const shownCount = kind => parseInt(localStorage[shownCountString(kind)]) || 0;
-const setShownCount = (kind, newCount) => {
-  localStorage[shownCountString(kind)] = newCount;
-};
-const incrementShownCount = kind => {
-  setShownCount(kind, shownCount(kind) + 1);
-};
-
-const dismissedString = kind => `${kind.prefix}SnackbarShownDismissed`;
 
 class Snackbar {
-  constructor(kind, snackbarManager) {
+  kind: Kind;
+  snackbarManager: SnackbarManager;
+  constructor(kind: Kind, snackbarManager: SnackbarManager) {
     this.kind = kind;
     this.snackbarManager = snackbarManager;
   }
 
-  show(...args) {
+  show(labelHtml: string, buttons: MaybeButtons) {
     if (this.kind.prefix) {
       // Delay incrementing the shown count to make sure that the use didn't reload the page quickly
       // and the snackbar was never actually shown.
-      setTimeout(() => incrementShownCount(this.kind), 5 * 1000);
+      setTimeout(() => this.kind.incrementShownCount(), 5 * 1000);
     }
 
-    displaySnackbar(this.kind, ...args);
+    displaySnackbar(this.kind, labelHtml, buttons);
   }
 
   hide() {
@@ -136,45 +188,53 @@ class Snackbar {
     const {prefix} = this.kind;
     if (prefix) {
       gtag("event", `snackbar.${prefix}.dismissed`);
-      localStorage[dismissedString(prefix)] = true;
+      localStorage[this.kind.dismissedString()] = true;
     }
     this.hide();
   }
 }
 
 class StartupSnackbar extends Snackbar {
-  show(...args) {
+  show(labelHtml: string, buttons: MaybeButtons) {
     if (this.snackbarManager.startupKind === this.kind) {
-      super.show(...args);
+      super.show(labelHtml, buttons);
     }
   }
 }
 
 class SnackbarManager {
+  preferencesNudge: Snackbar;
+  googleSignIn: Snackbar;
+  textSelection: Snackbar;
+  preferencesSaved: Snackbar;
+  errors: Snackbar;
+
+  startupKind: Kind | undefined;
+
   constructor() {
-    for (const kind of [Kind.PREFERENCES_NUDGE, Kind.GOOGLE_SIGN_IN]) {
+    for (const kind of [Kinds.PREFERENCES_NUDGE, Kinds.GOOGLE_SIGN_IN]) {
       if (kind.shouldResetShowCount && kind.shouldResetShowCount()) {
-        setShownCount(kind, 0);
-        delete localStorage[dismissedString(kind)];
+        kind.setShownCount(0);
+        delete localStorage[kind.dismissedString()];
       }
-      if (kind.customShowLogic()
-          && shownCount(kind) < kind.maxShowCount
-          && !localStorage[dismissedString(kind)]) {
+      if (kind.customShowLogic!()
+          && kind.shownCount() < kind.maxShowCount!
+          && !localStorage[kind.dismissedString()]) {
         this.startupKind = kind;
         break;
       }
     }
 
-    this.preferencesNudge = new StartupSnackbar(Kind.PREFERENCES_NUDGE, this);
-    this.googleSignIn = new StartupSnackbar(Kind.GOOGLE_SIGN_IN, this);
-    this.textSelection = new Snackbar(Kind.TEXT_SELECTION, this);
-    this.preferencesSaved = new Snackbar(Kind.PREFERENCES_SAVED, this);
+    this.preferencesNudge = new StartupSnackbar(Kinds.PREFERENCES_NUDGE, this);
+    this.googleSignIn = new StartupSnackbar(Kinds.GOOGLE_SIGN_IN, this);
+    this.textSelection = new Snackbar(Kinds.TEXT_SELECTION, this);
+    this.preferencesSaved = new Snackbar(Kinds.PREFERENCES_SAVED, this);
     // TODO: make each error it's own snackbar? That way each can animate on its own
-    this.errors = new Snackbar(Kind.ERRORS, this);
+    this.errors = new Snackbar(Kinds.ERRORS, this);
   }
 }
 
-const snackbars = new SnackbarManager();
+export const snackbars = new SnackbarManager();
 
 $(document).ready(() => {
   moveSnackbarOffscreen();
@@ -197,5 +257,3 @@ $(document).ready(() => {
       },
     ]);
 });
-
-module.exports = {snackbars};

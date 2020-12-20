@@ -1,7 +1,7 @@
 /* global gtag, componentHandler */
 
 import $ from "jquery";
-import {snackbars} from "./snackbar.js";
+import {snackbars} from "./snackbar.ts";
 import {TalmudRenderer} from "./rendering.jsx";
 import {onceDocumentReady} from "./once_document_ready.ts";
 import createTestData from "./preferences_sample_data.js";

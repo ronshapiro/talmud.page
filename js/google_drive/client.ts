@@ -52,8 +52,13 @@ interface PostCommentParams {
   amud: string;
   ref: string;
   parentRef: string;
+  id?: string;
+  isRetry?: boolean;
+}
+
+interface PostCommentInternalParams extends PostCommentParams {
   id: string;
-  isRetry: boolean | undefined;
+  isRetry: boolean;
 }
 
 interface InternalNamedRange {
@@ -278,7 +283,9 @@ export class DriveClient {
   }
 
   // TODO(drive): break up this method, possibly by extracting a state object.
-  postCommentRequests({text, selectedText, amud, ref, parentRef}: PostCommentParams): Request[] {
+  postCommentRequests(
+    {text, selectedText, amud, ref, parentRef}: PostCommentInternalParams,
+  ): Request[] {
     let insertLocation = this.findInsertLocation(parentRef);
     const requests = [];
 
@@ -349,7 +356,7 @@ export class DriveClient {
   }
 
   _postComment = this.retryMethodFactory.retryingMethod({
-    retryingCall: (params: PostCommentParams) => {
+    retryingCall: (params: PostCommentInternalParams) => {
       return this.updateDocument(this.postCommentRequests(params))
         .finally(() => this.refreshDatabaseDocument())
         .then(response => {

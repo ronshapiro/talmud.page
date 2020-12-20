@@ -1,12 +1,12 @@
 /* global gtag,  */
 import $ from "jquery";
-import {snackbars} from "./snackbar.js";
+import {snackbars} from "./snackbar.ts";
 import {TalmudRenderer} from "./rendering.jsx";
 import {onceDocumentReady} from "./once_document_ready.ts";
 import MASECHTOT from "./masechtot.js";
 import {amudMetadata, computePreviousAmud, computeNextAmud} from "./amud.ts";
 import {driveClient} from "./google_drive/singleton.ts";
-import {registerRefSelectionSnackbarListener} from "./ref_selection_snackbar.js";
+import {registerRefSelectionSnackbarListener} from "./ref_selection_snackbar.ts";
 
 // TODO: reactify?
 

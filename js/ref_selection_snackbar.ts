@@ -1,10 +1,10 @@
 /* global gtag,  */
 import $ from "jquery";
-import {driveClient} from "./google_drive/singleton.ts";
-import {snackbars} from "./snackbar.js";
+import {driveClient} from "./google_drive/singleton";
+import {snackbars} from "./snackbar";
 
-let selectionSnackbarRef;
-const hideSelectionChangeSnackbar = (ref) => {
+let selectionSnackbarRef: string | undefined;
+const hideSelectionChangeSnackbar = (ref?: string) => {
   if (selectionSnackbarRef) {
     gtag("event", "selection_change_snackbar.hidden", {ref});
     selectionSnackbarRef = undefined;
@@ -12,9 +12,19 @@ const hideSelectionChangeSnackbar = (ref) => {
   }
 };
 
-const findSefariaRef = (node) => {
+interface Metadata {
+  ref: string,
+  parentRef: string,
+  link: string,
+  text: string,
+  translation: string | undefined,
+  amud: string,
+}
+
+type FindSefariaRefReturnType = Metadata | undefined;
+const findSefariaRef = (node: Node | null): FindSefariaRefReturnType => {
   let isEnglish = false;
-  while (node.parentElement) {
+  while (node?.parentElement) {
     const $parentElement = $(node.parentElement);
     isEnglish = isEnglish || $parentElement.hasClass("english");
     const isTranslationOfSourceText = $parentElement.hasClass("translation");
@@ -29,42 +39,51 @@ const findSefariaRef = (node) => {
       } else {
         return {
           ref,
-          parentRef: $parentElement.parent().closest("[sefaria-ref]").attr("sefaria-ref"),
-          link: $parentElement.attr("tp-link"),
+          parentRef: $parentElement.parent().closest("[sefaria-ref]").attr("sefaria-ref") as string,
+          link: $parentElement.attr("tp-link") as string,
           text: $($parentElement.find(".hebrew")[0]).text(),
           translation: isTranslationOfSourceText
             ? undefined
             : $($parentElement.find(".english")[0]).text(),
-          amud: $parentElement.closest(".amudContainer").attr("amud"),
+          amud: $parentElement.closest(".amudContainer").attr("amud") as string,
         };
       }
     }
     node = node.parentNode;
   }
-  return {};
+  return undefined;
 };
 
 const onSelectionChange = () => {
-  let selection = document.getSelection();
-  if ($(selection.anchorNode).closest("#snackbar").length > 0) {
-    return;
-  }
+  const findSefariaRefOrHideSnackbar = (): FindSefariaRefReturnType => {
+    const selection = document.getSelection() as Selection;
+    const $anchorNode = $(selection.anchorNode as any) as JQuery;
+    if ($anchorNode.closest("#snackbar").length > 0) {
+      return undefined;
+    }
 
-  if (selection.type !== "Range") {
-    hideSelectionChangeSnackbar();
-    return;
-  }
+    if (selection.type !== "Range") {
+      hideSelectionChangeSnackbar();
+      return undefined;
+    }
 
-  const sefariaRef = findSefariaRef(selection.anchorNode);
-  if (!sefariaRef.ref
-      // TODO: perhaps support multiple refs, and just grab everything in between?
-      // If the selection spans multiple refs, ignore them all
-      || sefariaRef.ref !== findSefariaRef(selection.focusNode).ref) {
-    hideSelectionChangeSnackbar(sefariaRef.ref);
-    return;
-  }
-  if (sefariaRef.ref === selectionSnackbarRef) {
-    // do nothing, since the snackbar is already showing the right information
+    const sefariaRef = findSefariaRef(selection.anchorNode);
+    if (sefariaRef === undefined
+        || !sefariaRef.ref
+        // TODO: perhaps support multiple refs, and just grab everything in between?
+        // If the selection spans multiple refs, ignore them all
+        || sefariaRef.ref !== findSefariaRef(selection.focusNode)?.ref) {
+      hideSelectionChangeSnackbar(sefariaRef?.ref);
+      return undefined;
+    }
+    if (sefariaRef.ref === selectionSnackbarRef) {
+      // do nothing, since the snackbar is already showing the right information
+      return undefined;
+    }
+    return sefariaRef;
+  };
+  const sefariaRef = findSefariaRefOrHideSnackbar();
+  if (!sefariaRef) {
     return;
   }
 
@@ -72,9 +91,6 @@ const onSelectionChange = () => {
   const sefariaUrl = `https://www.sefaria.org/${ref.replace(/ /g, "_")}`;
   gtag("event", "selection_change_snackbar.shown", {ref});
   selectionSnackbarRef = ref;
-  // don't allow buttons to refer to the selection that triggered the snackbar, since the selection
-  // may have changed
-  selection = undefined;
   const buttons = [];
   if (link) {
     buttons.push({
@@ -98,18 +114,17 @@ const onSelectionChange = () => {
       onClick: () => {
         gtag("event", "report_correction", {ref});
         const subject = "Sefaria Text Correction from talmud.page";
-        let body = [
+        const bodyParts = [
           `${ref} (${sefariaUrl})`,
           sefariaRef.text,
         ];
         if (sefariaRef.translation && sefariaRef.translation !== "") {
-          body.push(sefariaRef.translation);
+          bodyParts.push(sefariaRef.translation);
         }
         // trailing newline so that the description starts on its own line
-        body.push("Describe the error:");
+        bodyParts.push("Describe the error:");
 
-        body = body.join("\n\n");
-        body = encodeURIComponent(body);
+        const body = encodeURIComponent(bodyParts.join("\n\n"));
         window.open(`mailto:corrections@sefaria.org?subject=${subject}&body=${body}`);
       },
     },
@@ -135,12 +150,12 @@ const onSelectionChange = () => {
         modalContainer.show();
         $("#modal-label").text(`Add a note on ${sefariaRef.ref}`);
         // Get the possibly-updated selection
-        const selectedText = document.getSelection().toString();
+        const selectedText = document.getSelection()?.toString() ?? "";
         noteTextArea.val("");
         $("#modal-cancel").off("click").on("click", () => modalContainer.hide());
         $("#modal-save").off("click").on("click", () => {
           driveClient.postComment({
-            text: noteTextArea.val() || "",
+            text: noteTextArea.val() as string || "",
             selectedText,
             amud: sefariaRef.amud,
             ref: sefariaRef.ref,
