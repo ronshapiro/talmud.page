@@ -161,7 +161,7 @@ def amud_range(masechet, start, end):
         return redirect(url_for(
             "amud_range", masechet = canonical_masechet, start = end, end = start))
 
-    return render_compiled_template("talmud_page.html", title = f"{masechet} {start} {end}")
+    return render_compiled_template("talmud_page.html", title = f"{masechet} {start} - {end}")
 
 # Creates a capturing lambda
 def send_file_fn(name):
