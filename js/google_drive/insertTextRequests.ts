@@ -1,12 +1,13 @@
 // @ts-ignore
 import {rgbColor} from "./color.ts";
 // @ts-ignore
-import {Range, Request} from "./types.ts";
+import {Range, Request, TextStyle} from "./types.ts";
 
 interface StyledText {
   text: string;
   url: string | undefined;
   bold: boolean | undefined;
+  highlight: boolean | undefined;
 }
 
 function insertTextRequest(text: string, startIndex: number): Request {
@@ -38,26 +39,48 @@ export function insertFormattedTextRequests(
   }];
 }
 
-function addLink(url: string, range: Range): Request {
-  return {
-    updateTextStyle: {
-      textStyle: {
-        link: {url},
-        underline: true,
-        foregroundColor: rgbColor(44, 91, 198),
-      },
-      fields: "*",
-      range,
-    },
-  };
+// type-safe Object.assign
+function mergeTextStyle(original: TextStyle, additional: TextStyle): void {
+  Object.assign(original, additional);
 }
 
-function boldText(range: Range): Request {
+function addLink(textStyle: TextStyle, url: string): void {
+  mergeTextStyle(textStyle, {
+    link: {url},
+    underline: true,
+    foregroundColor: rgbColor(44, 91, 198),
+  });
+}
+
+function boldText(textStyle: TextStyle): void {
+  mergeTextStyle(textStyle, {bold: true});
+}
+
+function highlightText(textStyle: TextStyle): void {
+  mergeTextStyle(textStyle, {backgroundColor: rgbColor(250, 217, 120)});
+}
+
+function textStyleRequest(
+  {url, bold, highlight}: StyledText,
+  range: Range,
+): Request | undefined {
+  const textStyle = {};
+  if (url) {
+    addLink(textStyle, url);
+  }
+  if (bold) {
+    boldText(textStyle);
+  }
+  if (highlight) {
+    highlightText(textStyle);
+  }
+
+  if (Object.keys(textStyle).length === 0) {
+    return undefined;
+  }
   return {
     updateTextStyle: {
-      textStyle: {
-        bold: true,
-      },
+      textStyle,
       fields: "*",
       range,
     },
@@ -78,14 +101,15 @@ export function insertStyledText(
   };
   for (const part of parts) {
     const text = typeof part === "string" ? part : part.text;
-    const rangeStart = length + startIndex;
-    const range = {startIndex: rangeStart, endIndex: rangeStart + text.length};
     if (typeof part !== "string") {
-      if (part.url) {
-        styleRequests.push(addLink(part.url, range));
-      }
-      if (part.bold) {
-        styleRequests.push(boldText(range));
+      const rangeStart = length + startIndex;
+      const range = {
+        startIndex: rangeStart,
+        endIndex: rangeStart + text.length,
+      };
+      const styleRequest = textStyleRequest(part, range);
+      if (styleRequest) {
+        styleRequests.push(styleRequest);
       }
     }
     addText(text);

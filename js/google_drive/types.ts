@@ -27,6 +27,9 @@ export interface DriveClient {
 // TODO: make some of the properties requried
 export interface Color extends gapi.client.docs.OptionalColor {}
 export interface Request extends gapi.client.docs.Request {}
+
+export interface TextStyle extends gapi.client.docs.TextStyle {}
+
 export interface Range {
   startIndex: number;
   endIndex: number;
