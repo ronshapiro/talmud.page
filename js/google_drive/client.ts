@@ -292,7 +292,7 @@ export class DriveClient {
     const headerRangeLabel = `header:${amud}`;
     const headerExists = headerRangeLabel in this.databaseDocument.namedRanges!;
     if (!headerExists) {
-      const headerText = amud;
+      const headerText = amud + "\n";
       const headerRange = {
         startIndex: insertLocation,
         endIndex: insertLocation + headerText.length,
