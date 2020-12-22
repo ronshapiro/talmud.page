@@ -66,6 +66,18 @@ html, body {
     padding: 0px var(--table-cell-padding);
     float: left;
 }
+
+.highlighted {
+    background: rgb(250, 217, 120);
+}
+
+.hebrew .highlighted {
+    padding: 5px 0px;
+}
+.english .highlighted {
+    padding: 2px 0px;
+}
+
 .amudContainer:after {
     visibility: hidden;
     display: block;

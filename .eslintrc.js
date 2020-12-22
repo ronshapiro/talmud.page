@@ -32,6 +32,7 @@ module.exports = {
     "import/no-unresolved": "off",
     "lines-between-class-members": ["error", "always", {exceptAfterSingleLine: true}],
     "max-classes-per-file": "off",
+    "no-continue": "off",
     "no-console": ["warn", { allow: ["warn", "error"] }],
     "no-else-return": "off",
     "no-plusplus": "off",
@@ -42,6 +43,11 @@ module.exports = {
     "react/static-property-placement": "off",
     "no-unused-vars": "off", // Let the typescript-eslint version rule
     "no-use-before-define": "off", // Let the typescript-eslint version rule
+    "spaced-comment": ["error", "always", {
+      "block": {
+        "exceptions": ["/"],
+      },
+    }],
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/no-empty-function": "off",
     "@typescript-eslint/no-explicit-any": "off",

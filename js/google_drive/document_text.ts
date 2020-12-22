@@ -34,6 +34,8 @@ interface ElementsProcessor {
   (elements: ParagraphElement[]): ParagraphElement[];
 }
 
+const NULL_ELEMENTS_PROCESSOR: ElementsProcessor = x => x;
+
 const trimContents: ElementsProcessor = (elements) => (
   elements.map(element => updateText(element, element.textRun.content.trim()))
 );
@@ -140,18 +142,20 @@ export interface DocumentText {
 }
 
 export const extractDocumentText = (
-  range: Range, inputs: ParagraphElement[],
+  range: Range,
+  inputs: ParagraphElement[],
+  plaintext = false,
 ): DocumentText[] => {
   const transformations: ElementsProcessor[] = [
     elements => elements.filter(inRange(range)),
     trimTextsByFilterRange(range),
     computeLanguageStats,
-    htmlEscape,
-    applyTextStyle,
+    !plaintext ? htmlEscape : NULL_ELEMENTS_PROCESSOR,
+    !plaintext ? applyTextStyle : NULL_ELEMENTS_PROCESSOR,
     joinAdjacentElements,
     trimContents,
     // don't run as part of htmlEscape, because then trimContents() won't detect the <br> tgas
-    newlineToBr,
+    !plaintext ? newlineToBr : NULL_ELEMENTS_PROCESSOR,
   ];
 
   let transformed = inputs;

@@ -121,9 +121,29 @@ describe("extractDocumentText()", () => {
         + 'personal-comment-underline personal-comment-strikethrough">combo</span></a>']);
   });
 
+  test("plaintext version", () => {
+    const document = createDocument("before", ">start", " <middle> ", "\nend\n<", "after");
+    document.forEach(x => {
+      x.textRun.textStyle = {
+        bold: true,
+        italic: true,
+        strikethrough: true,
+        underline: true,
+        link: {
+          url: "the-url",
+        },
+      };
+    });
+    expect(
+      extractDocumentText({startIndex: 7, endIndex: 27}, document, true)
+        .map((x: DocumentText) => x.text))
+      .toEqual(["start <middle> \nend"]);
+  });
+
   test("non URL link is ignored", () => {
     const document = createDocument("unmodified");
     document[0].textRun.textStyle = {link: {notUrl: "notUrl"}};
+
     expect(extractJustText(0, 200, document)).toEqual(["unmodified"]);
   });
 });

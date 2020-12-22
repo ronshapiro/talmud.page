@@ -63,7 +63,7 @@ class RecordedApiClient extends GoogleApiClient {
 
 class FakeUnsavedCommentStore implements UnsavedCommentStore {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  init(client: DriveClient): void {}
+  init(client: any): void {}
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   addUnsavedComment(comment: UnsavedComment): undefined {
@@ -82,17 +82,29 @@ const client = new DriveClient(
   "masechet",
   true);
 
-const expectCommentsToEqual = (expectedComments: any): void => {
-  expect(new Set(Object.keys(client.rangesByRef))).toEqual(new Set(Object.keys(expectedComments)));
+function expectEqualKeys(first: any, second: any) {
+  expect(new Set(Object.keys(first))).toEqual(new Set(Object.keys(second)));
+}
+
+function expectCommentsToEqual(expectedComments: any) {
+  expectEqualKeys(client.rangesByRef, expectedComments);
   for (const [ref, comments] of Object.entries(expectedComments)) {
-    expect(comments).toEqual(expectedComments[ref]);
+    expect(comments).toEqual(client.commentsForRef(ref)!.comments);
   }
-};
+}
+
+function expectHighlightsToEqual(expectedHighlights: any) {
+  expectEqualKeys(client.highlightsByRef, expectedHighlights);
+  for (const [ref, highlights] of Object.entries(expectedHighlights)) {
+    expect(highlights).toEqual(client.highlightsForRef(ref));
+  }
+}
 
 test("blank document", () => {
   return client.getDatabaseDocument("blank_document.json")
     .then(() => {
       expectCommentsToEqual({});
+      expectHighlightsToEqual({});
       expect(client.databaseDocument.namedRanges).toEqual({});
     });
 });
@@ -101,6 +113,7 @@ test("no comments", () => {
   return client.getDatabaseDocument("no_comments.json")
     .then(() => {
       expectCommentsToEqual({});
+      expectHighlightsToEqual({});
       expect(client.databaseDocument.namedRanges).toHaveProperty("Instructions Table");
     });
 });
@@ -109,6 +122,7 @@ test("just amud header", () => {
   return client.getDatabaseDocument("just_amud_header.json")
     .then(() => {
       expectCommentsToEqual({});
+      expectHighlightsToEqual({});
       expect(client.databaseDocument.namedRanges).toHaveProperty("header:2a");
     });
 });
@@ -116,6 +130,7 @@ test("just amud header", () => {
 test("Simple v2 comments", () => {
   return client.getDatabaseDocument("simple_v2_comments.json")
     .then(() => {
+      expectHighlightsToEqual({});
       expectCommentsToEqual({
         "Exodus 11:7": [{
           "en": [
@@ -169,6 +184,7 @@ test("Simple v2 comments", () => {
 test("v1 and v2 comments", () => {
   return client.getDatabaseDocument("v1_and_v2_comments.json")
     .then(() => {
+      expectHighlightsToEqual({});
       expectCommentsToEqual({
         "Exodus 11:7": [
           {
@@ -250,6 +266,69 @@ test("v1 and v2 comments", () => {
           "en": ["v1 - a second rashi"],
           "he": "",
           "ref": "Rashi on Pesachim 22a:1:2-personal0",
+        }],
+      });
+    });
+});
+
+test("highlights", () => {
+  return client.getDatabaseDocument("highlights.json")
+    .then(() => {
+      expectCommentsToEqual({});
+      expectHighlightsToEqual({
+        "Otzar Laazei Rashi, Talmud, Pesachim 1": [{
+          "startPercentage": 0,
+          "endPercentage": 0.04678362573099415,
+          "highlight": true,
+          "isEnglish": false,
+          "range": {
+            "startIndex": 265,
+            "endIndex": 273,
+          },
+          "text": "ד\"ה יציע",
+          "wordCountStart": 0,
+          "wordCountEnd": 26,
+        }],
+        "Pesachim 8a.1": [
+          {
+            "startPercentage": 0.2215568862275449,
+            "endPercentage": 0.24550898203592814,
+            "highlight": true,
+            "isEnglish": false,
+            "range": {
+              "startIndex": 193,
+              "endIndex": 201,
+            },
+            "text": "לַדָּבָר",
+            "wordCountStart": 10,
+            "wordCountEnd": 30,
+          },
+          {
+            "startPercentage": 0.27245508982035926,
+            "endPercentage": 0.2964071856287425,
+            "highlight": true,
+            "isEnglish": false,
+            "range": {
+              "startIndex": 207,
+              "endIndex": 215,
+            },
+            "text": "לַדָּבָר",
+            "wordCountStart": 13,
+            "wordCountEnd": 27,
+          },
+        ],
+        "Rashi on Pesachim 8a:6:6": [{
+          "startPercentage": 0,
+          "endPercentage": 0.23684210526315788,
+          "highlight": true,
+          "isEnglish": false,
+          "range": {
+            "startIndex": 306,
+            "endIndex": 324,
+          },
+          "text": "גג המגדל - משטיי\"ר",
+          "wordCountStart": 0,
+          "wordCountEnd": 11,
         }],
       });
     });

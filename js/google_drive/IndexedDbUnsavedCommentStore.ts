@@ -3,10 +3,9 @@ import {v4 as uuid} from "uuid";
 import {
   DriveClient,
   PersistedComment,
-  UnsavedComment,
+  PostCommentParams,
   UnsavedCommentStore,
-  // @ts-ignore
-} from "./types.ts";
+} from "./types";
 
 const NOTES_OBJECT_STORE = "notes";
 
@@ -33,7 +32,7 @@ export class IndexedDbUnsavedCommentStore implements UnsavedCommentStore {
 
       this.newTransaction("readonly").getAll().onsuccess = getAllEvent => {
         result<PersistedComment[]>(getAllEvent)
-          .filter(comment => comment.masechet === this.client.masechet)
+          .filter(comment => comment.masechet === this.client!.masechet)
           .forEach(comment => {
             // TODO: do these in a promise chain, since all but the first are guaranteed to fail.
             client.postComment(comment);
@@ -42,7 +41,7 @@ export class IndexedDbUnsavedCommentStore implements UnsavedCommentStore {
     };
   }
 
-  addUnsavedComment(unsavedComment: UnsavedComment): string | undefined {
+  addUnsavedComment(unsavedComment: PostCommentParams): string | undefined {
     if (!this.localDb) {
       console.warn("No local db present");
       return undefined;
@@ -50,7 +49,7 @@ export class IndexedDbUnsavedCommentStore implements UnsavedCommentStore {
     const persisted = {
       ...unsavedComment,
       id: uuid(),
-      masechet: this.client.masechet,
+      masechet: this.client!.masechet,
     };
     this.newTransaction("readwrite").add(persisted);
     return persisted.id;

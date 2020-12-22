@@ -1,5 +1,6 @@
 /* global gtag */
 import {v4 as uuid} from "uuid";
+import {Commentary} from "../apiTypes";
 import {rgbColor} from "./color";
 import {refSorter} from "./ref_sorter";
 import {extractDocumentText} from "./document_text";
@@ -11,13 +12,18 @@ import {RetryMethodFactory} from "../retry.ts";
 // @ts-ignore
 import {insertTableRequests} from "./tableRequests.ts";
 import {
+  AnyComment,
+  HighlightComment,
+  HighlightCommentWithText,
   ParagraphElement,
+  PostCommentParams,
   Range,
   Request,
   UnsavedCommentStore,
 } from "./types";
 import {NullaryFunction} from "../types";
 import {checkNotUndefined} from "../undefined";
+import {getList} from "./util";
 
 const INSTRUCTIONS_TABLE_RANGE_NAME = "Instructions Table";
 const NAMED_RANGE_SEPARATOR = "<<||>>";
@@ -38,22 +44,17 @@ const rangeSorter = (first: Range, second: Range) => {
 
 // TODO
 type TypescriptCleanupType = any;
-type Comments = {
-  comments: TypescriptCleanupType[];
-} | undefined;
 
 interface HasContents {
   content: gapi.client.docs.StructuralElement[];
 }
 
-interface PostCommentParams {
-  text: string;
-  selectedText: string;
-  amud: string;
-  ref: string;
-  parentRef: string;
-  id?: string;
-  isRetry?: boolean;
+interface HighlightCommentWithRange extends HighlightComment {
+  range: Range;
+}
+
+function isHighlightComment(comment: AnyComment): comment is HighlightComment {
+  return (comment as HighlightComment).highlight !== undefined;
 }
 
 interface PostCommentInternalParams extends PostCommentParams {
@@ -67,20 +68,40 @@ interface InternalNamedRange {
   joined: boolean | undefined;
 }
 
+function highlightCommentNamedRanges(comment: HighlightComment): string[] {
+  return [
+    "highlight",
+    "startPercentage=" + comment.startPercentage,
+    "endPercentage=" + comment.endPercentage,
+    "wordCountStart=" + comment.wordCountStart,
+    "wordCountEnd=" + comment.wordCountEnd,
+    "isEnglish=" + comment.isEnglish,
+  ];
+}
+
 export class DriveClient {
   errors: Record<string, string> = {}
   previousErrors: Record<string, string> = {}
   onErrorListener: NullaryFunction<void> | undefined;
+
   gapi: GoogleApiClient;
+
   databaseDocument: gapi.client.docs.Document = {};
   databaseDocumentShouldBeCreated = false;
+  documentBodyElements: ParagraphElement[] = [];
+
   whenDatabaseReady = new GatedExecutor();
-  commentsByRef: Record<string, Comments> = {};
+
+  commentsByRef: Record<string, Commentary | undefined> = {};
   rangesByRef: Record<string, InternalNamedRange[]> = {};
+  highlightsByRef: Record<string, HighlightCommentWithRange[]> = {};
+
   unsavedCommentStore: UnsavedCommentStore;
+
   masechet: string;
   isDebug: boolean;
   databaseProperty: string;
+
   signInStatusListener: NullaryFunction<void> | undefined;
   databaseUpdatedListener: NullaryFunction<void> | undefined;
   isSignedIn = false;
@@ -233,42 +254,67 @@ export class DriveClient {
       if (!this.databaseDocument.namedRanges) {
         this.databaseDocument.namedRanges = {};
       }
+      this.documentBodyElements = (
+        this._documentBodyElements(this.databaseDocument.body as HasContents, []));
 
-      this.setRangesByRef();
+      this.extractRelevantNamedRanges();
 
       if (this.databaseUpdatedListener) this.databaseUpdatedListener();
     },
     createError: () => "Could not find database file",
   });
 
-  setRangesByRef(): void {
+  rangesById(): Record<string, Record<string, Range>> {
+    const namedRanges = this.databaseDocument.namedRanges as TypescriptCleanupType;
+    const rangesById: Record<string, Record<string, Range>> = {};
+    for (const rangeName of Object.keys(namedRanges)) {
+      if (rangeName.indexOf(NAMED_RANGE_SEPARATOR) !== -1) {
+        const parts = rangeName.split(NAMED_RANGE_SEPARATOR);
+        const id = parts[0];
+        if (!(id in rangesById)) {
+          rangesById[id] = {};
+        }
+        // eslint-disable-next-line prefer-destructuring
+        rangesById[id][parts[2]] = namedRanges[rangeName].namedRanges[0].ranges[0];
+      }
+    }
+    return rangesById;
+  }
+
+  extractRelevantNamedRanges(): void {
     const namedRanges = this.databaseDocument.namedRanges as TypescriptCleanupType;
     this.rangesByRef = {};
     const addNamedRanges = (ref: string, rangesToAdd: InternalNamedRange[]) => {
-      if (!(ref in this.rangesByRef)) {
-        this.rangesByRef[ref] = [];
-      }
-      this.rangesByRef[ref].push(...rangesToAdd);
+      getList(this.rangesByRef, ref).push(...rangesToAdd);
     };
-    const v2Suffix = NAMED_RANGE_SEPARATOR + "comment";
+
+    this.highlightsByRef = {};
+    const rangesById = this.rangesById();
+
     for (const rangeName of Object.keys(namedRanges)) {
       if (rangeName.startsWith("ref:")) {
         addNamedRanges(
           rangeName.slice("ref:".length),
           namedRanges[rangeName].namedRanges.flatMap((x: any) => x.ranges));
-      } else if (rangeName.endsWith(v2Suffix)) {
+      } else {
+        const [id, ref, suffix] = rangeName.split(NAMED_RANGE_SEPARATOR);
+        if (!suffix) continue;
         const commentRange = namedRanges[rangeName].namedRanges[0].ranges[0];
-        const [id, ref] = rangeName.split(NAMED_RANGE_SEPARATOR).slice(0, 2);
-        const selectedTextRangeName = [id, ref, "selected text"].join(NAMED_RANGE_SEPARATOR);
-        if (selectedTextRangeName in namedRanges) {
-          const selectedTextRange = namedRanges[selectedTextRangeName].namedRanges[0].ranges[0];
-          addNamedRanges(ref, [{
-            startIndex: selectedTextRange.startIndex,
-            endIndex: commentRange.endIndex,
-            joined: true,
-          }]);
-        } else {
-          addNamedRanges(ref, [commentRange]);
+        const ranges = rangesById[id];
+        if (suffix === "comment") {
+          const selectedTextRange = ranges["selected text"];
+          if (selectedTextRange) {
+            addNamedRanges(ref, [{
+              startIndex: selectedTextRange.startIndex,
+              endIndex: commentRange.endIndex,
+              joined: true,
+            }]);
+          } else {
+            addNamedRanges(ref, [commentRange]);
+          }
+        } else if (suffix === "highlight") {
+          getList(this.highlightsByRef, ref)
+            .push(this.extractedHighlightComment(commentRange, ranges));
         }
       }
     }
@@ -278,13 +324,33 @@ export class DriveClient {
     }
   }
 
+  extractedHighlightComment(
+    range: Range,
+    ranges: Record<string, Range>,
+  ): HighlightCommentWithRange {
+    const suffixes: Record<string, string> = {};
+    for (const otherSuffix of Object.keys(ranges)) {
+      const [key, value] = otherSuffix.split("=");
+      suffixes[key] = value;
+    }
+    return {
+      range,
+      startPercentage: parseFloat(suffixes.startPercentage),
+      endPercentage: parseFloat(suffixes.endPercentage),
+      wordCountStart: parseInt(suffixes.wordCountStart),
+      wordCountEnd: parseInt(suffixes.wordCountEnd),
+      isEnglish: suffixes.isEnglish === "true",
+      highlight: true,
+    };
+  }
+
   refreshDatabaseDocument(): Promise<any> {
     return this.getDatabaseDocument(this.databaseDocument.documentId);
   }
 
   // TODO(drive): break up this method, possibly by extracting a state object.
   postCommentRequests(
-    {text, selectedText, amud, ref, parentRef}: PostCommentInternalParams,
+    {comment, selectedText, amud, ref, parentRef}: PostCommentInternalParams,
   ): Request[] {
     let insertLocation = this.findInsertLocation(parentRef);
     const requests = [];
@@ -308,17 +374,28 @@ export class DriveClient {
     const rangeNameWithSuffix = (suffix: string): string => (
       [uniqueId, ref, suffix].join(NAMED_RANGE_SEPARATOR));
 
+    const cells = [];
+    if (ref !== parentRef) {
+      cells.push({cellText: [ref]});
+    }
+    cells.push({
+      cellText: [{text: selectedText, bold: true, highlight: isHighlightComment(comment)}],
+      rtl: true,
+      rangeNames: (
+        (isHighlightComment(comment) ? highlightCommentNamedRanges(comment) : ["selected text"])
+          .map(x => rangeNameWithSuffix(x))
+      ),
+    });
+    if (!isHighlightComment(comment)) {
+      cells.push({
+        cellText: [comment.text],
+        rangeNames: [rangeNameWithSuffix("comment")],
+      });
+    }
+
     requests.push(
       ...insertTableRequests({
-        cells: [
-          ref !== parentRef ? {cellText: [ref]} : undefined,
-          {
-            cellText: [{text: selectedText, bold: true}],
-            rtl: true,
-            rangeNames: [rangeNameWithSuffix("selected text")],
-          },
-          {cellText: [text], rangeNames: [rangeNameWithSuffix("comment")]},
-        ].filter(x => x),
+        cells,
         tableStart: insertLocation,
         rangeNames: [
           // The "parentRef:"-prefixed range helps maintain a readable ordering within the
@@ -336,23 +413,25 @@ export class DriveClient {
         ],
       }),
     );
+
     return requests;
   }
 
-  // These parameters should be kept in sync with addUnsavedComment() with the exception of `id`.
-  postComment({text, selectedText, amud, ref, parentRef, id}: PostCommentParams): void {
+  postComment(params: PostCommentParams): void {
     if (this.databaseDocumentShouldBeCreated) {
       this.createDocsDatabase();
     }
 
+    let {id} = params;
     const isRetry = id !== undefined;
     if (!isRetry) {
-      id = this.unsavedCommentStore.addUnsavedComment({text, selectedText, amud, ref, parentRef});
+      id = this.unsavedCommentStore.addUnsavedComment(params);
+      const {amud, ref, parentRef} = params;
       gtag("event", "add_personal_note", {amud, ref, parentRef});
     }
 
     this.whenDatabaseReady.execute(
-      () => this._postComment({text, selectedText, amud, ref, parentRef, id, isRetry}));
+      () => this._postComment({...params, id, isRetry}));
   }
 
   _postComment = this.retryMethodFactory.retryingMethod({
@@ -409,7 +488,7 @@ export class DriveClient {
     return content[content.length - 1]!.endIndex! - 1;
   }
 
-  commentsForRef(ref: string): Comments {
+  commentsForRef(ref: string): Commentary | undefined {
     if (!this.databaseDocument) {
       return undefined;
     }
@@ -422,15 +501,14 @@ export class DriveClient {
     }
   }
 
-  computeCommentsForRef(ref: string): Comments {
+  computeCommentsForRef(ref: string): Commentary | undefined {
     if (!(ref in this.rangesByRef)) {
       return undefined;
     }
     const ranges = this.rangesByRef[ref] || [];
-    const documentBodyElements = this.documentBodyElements();
     return {
       comments: ranges.map((range, index) => {
-        const documentText = extractDocumentText(range, documentBodyElements);
+        const documentText = extractDocumentText(range, this.documentBodyElements);
         const text = documentText.map(x => x.text);
         if (range.joined && text.length > 1) {
           const first = text.shift();
@@ -447,6 +525,19 @@ export class DriveClient {
         };
       }),
     };
+  }
+
+  highlightsForRef(ref: string): HighlightCommentWithText[] {
+    if (!(ref in this.highlightsByRef)) {
+      return [];
+    }
+    return this.highlightsByRef[ref].map(highlight => {
+      return {
+        ...highlight,
+        text: extractDocumentText(highlight.range, this.documentBodyElements, true)
+          .map(x => x.text).join(""),
+      };
+    });
   }
 
   _documentBodyElements(contents: HasContents, elements: ParagraphElement[]): ParagraphElement[] {
@@ -471,10 +562,6 @@ export class DriveClient {
       }
     });
     return elements;
-  }
-
-  documentBodyElements(): ParagraphElement[] {
-    return this._documentBodyElements(this.databaseDocument.body as HasContents, []);
   }
 
   signIn(): void {

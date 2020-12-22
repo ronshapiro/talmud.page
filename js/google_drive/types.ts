@@ -1,26 +1,55 @@
 /* eslint-disable @typescript-eslint/no-empty-interface */
-// @ts-ignore
-import {UnaryFunction} from "../types.ts";
+import {UnaryFunction} from "../types";
 
-export interface UnsavedComment {
+export interface TextComment {
   text: string;
+}
+
+export interface HighlightComment {
+  highlight: true;
+  startPercentage: number;
+  endPercentage: number;
+  wordCountStart: number;
+  wordCountEnd: number;
+  isEnglish: boolean;
+}
+
+export interface HighlightCommentWithText extends HighlightComment {
+  text: string;
+}
+
+export type AnyComment = TextComment | HighlightComment;
+
+export interface PostCommentParams {
+  comment: AnyComment;
+  selectedText: string;
   amud: string;
   ref: string;
   parentRef: string;
+  id?: string;
+  isRetry?: boolean;
 }
 
-export interface PersistedComment extends UnsavedComment {
+export interface UnsavedComment {
+  comment: AnyComment;
+  amud: string;
+  ref: string;
+  parentRef: string;
+  [x: string]: any;
+}
+
+export interface PersistedComment extends PostCommentParams {
   masechet: string;
 }
 
 export interface UnsavedCommentStore {
   init: UnaryFunction<DriveClient, void>;
-  addUnsavedComment: UnaryFunction<UnsavedComment, string | undefined>;
+  addUnsavedComment: UnaryFunction<PostCommentParams, string | undefined>;
   markCommentSaved: UnaryFunction<string, any>;
 }
 
 export interface DriveClient {
-  postComment: UnaryFunction<UnsavedComment, void>;
+  postComment: (comment: PostCommentParams) => void;
   masechet: string;
 }
 

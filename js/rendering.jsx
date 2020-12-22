@@ -8,6 +8,7 @@ import React, {
 import {render} from 'react-dom';
 import PropTypes from 'prop-types';
 import _ from "underscore";
+import {addDriveComments} from "./addDriveComments.ts";
 import isEmptyText from "./is_empty_text.ts";
 import {
   NextButton,
@@ -68,14 +69,18 @@ class CommentRow extends Component {
 
   static contextType = ConfigurationContext;
 
-  renderTableRow(key, hebrew, english) {
+  renderTableRow(key, hebrew, english, overrideRef = undefined) {
     const {comment, commentaryKind} = this.props;
+    const ref = (
+      commentaryKind.englishName === "Personal Notes"
+        ? "ignore"
+        : overrideRef || comment.ref);
     return (
       <TableRow
         key={key}
         hebrew={hebrew}
         english={english}
-        sefaria-ref={commentaryKind.englishName === "Personal Notes" ? "ignore" : comment.ref}
+        sefaria-ref={ref}
         link={comment.link}
         classes={["commentaryRow", /* used in CSS */ commentaryKind.className]}
         expandEnglishByDefault={
@@ -109,7 +114,8 @@ class CommentRow extends Component {
     if (Array.isArray(comment.he) && Array.isArray(comment.en)
         && comment.he.length === comment.en.length) {
       for (let i = 0; i < comment.he.length; i++) {
-        output.push(this.renderTableRow(i, comment.he[i], comment.en[i]));
+        // TODO: parse the ref and allow it these to be commentable/highlightable
+        output.push(this.renderTableRow(i, comment.he[i], comment.en[i], "ignore-drive"));
       }
     } else if (isSefariaReturningLongListsOfSingleCharacters(comment)) {
       output.push(this.renderTableRow("joined comments", comment.he.join(""), comment.en.join("")));
@@ -512,8 +518,8 @@ class Renderer {
         const commentaries = section.commentary;
         // Reminder: Hadran sections have no steinsaltz
         if (commentaries && commentaries.Steinsaltz) {
+          section.steinsaltzRetained = true;
           commentaries.Translation = commentaries.Steinsaltz;
-          commentaries.Translation.comments[0].en = section.en;
           delete commentaries.Steinsaltz;
         } else if (section.ref.indexOf("Hadran ") === 0) {
           commentaries.Translation = {
@@ -523,6 +529,13 @@ class Renderer {
               he: "",
             }],
           };
+        }
+
+        // rewriting is deferred here since on successive calls to this method, the
+        // commentaries.Steinsaltz property may be already deleted, but we still want to persist the
+        // rewriting, i.e. for text highlighting
+        if (section.steinsaltzRetained) {
+          commentaries.Translation.comments[0].en = section.en;
         }
       }
     }
@@ -605,7 +618,6 @@ class Renderer {
   }
 
   setAmud(amudData) {
-    this._applyClientSideDataTransformations(amudData);
     this.allAmudim[amudData.id] = amudData;
     this.forceUpdate();
   }
@@ -619,36 +631,8 @@ class Renderer {
   }
 
   getAmudim() {
-    const amudim = this.sortedAmudim();
-    if (!this.driveClient) {
-      return amudim;
-    }
-
-    const setPersonalComments = (object, personalNotes) => {
-      if (personalNotes) {
-        if (!object.commentary) object.commentary = {};
-        object.commentary["Personal Notes"] = personalNotes;
-      } else if (object.commentary) {
-        delete object.commentary["Personal Notes"];
-      }
-    };
-
-    for (const section of amudim.flatMap(amud => amud.sections)) {
-      for (const commentaryType of Object.keys(section.commentary || {})) {
-        const commentary = section.commentary[commentaryType];
-        for (const nestedCommentaryType of Object.keys(commentary.commentary || {})) {
-          const nestedCommentary = commentary.commentary[nestedCommentaryType];
-          setPersonalComments(
-            nestedCommentary,
-            this.personalCommentsForRefs(nestedCommentary.comments.map(comment => comment.ref)));
-        }
-        setPersonalComments(
-          commentary,
-          this.personalCommentsForRefs(commentary.comments.map(comment => comment.ref)));
-      }
-      setPersonalComments(section, this.driveClient.commentsForRef(section.ref));
-    }
-
+    const amudim = addDriveComments(this.sortedAmudim(), this.driveClient);
+    amudim.forEach(amud => this._applyClientSideDataTransformations(amud));
     return amudim;
   }
 

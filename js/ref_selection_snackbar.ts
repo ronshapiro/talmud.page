@@ -1,6 +1,8 @@
 /* global gtag,  */
 import $ from "jquery";
 import {driveClient} from "./google_drive/singleton";
+import {AnyComment} from "./google_drive/types";
+import {findNodeOffset} from "./dom";
 import {snackbars} from "./snackbar";
 
 let selectionSnackbarRef: string | undefined;
@@ -12,18 +14,29 @@ const hideSelectionChangeSnackbar = (ref?: string) => {
   }
 };
 
+interface NodeAndText {
+  node: Node;
+  text: string;
+}
+
+const nodeAndText = (node: Node) => {
+  return {node, text: $(node).text()};
+};
+
 interface Metadata {
   ref: string,
   parentRef: string,
   link: string,
-  text: string,
-  translation: string | undefined,
+  hebrew: NodeAndText,
+  translation: NodeAndText | undefined,
   amud: string,
+  isEnglish: boolean;
 }
 
 type FindSefariaRefReturnType = Metadata | undefined;
 const findSefariaRef = (node: Node | null): FindSefariaRefReturnType => {
   let isEnglish = false;
+  let hasFoundEnglishAndTranslationElement = false;
   while (node?.parentElement) {
     const $parentElement = $(node.parentElement);
     isEnglish = isEnglish || $parentElement.hasClass("english");
@@ -33,19 +46,20 @@ const findSefariaRef = (node: Node | null): FindSefariaRefReturnType => {
       break;
     }
     if (ref && ref !== "synthetic") {
-      if (isEnglish && isTranslationOfSourceText) {
+      if (isEnglish && isTranslationOfSourceText && !hasFoundEnglishAndTranslationElement) {
         // Go up one layer to the main text
-        isEnglish = false;
+        hasFoundEnglishAndTranslationElement = true;
       } else {
         return {
           ref,
           parentRef: $parentElement.parent().closest("[sefaria-ref]").attr("sefaria-ref") as string,
           link: $parentElement.attr("tp-link") as string,
-          text: $($parentElement.find(".hebrew")[0]).text(),
+          hebrew: nodeAndText($parentElement.find(".hebrew")[0]),
           translation: isTranslationOfSourceText
             ? undefined
-            : $($parentElement.find(".english")[0]).text(),
+            : nodeAndText($parentElement.find(".english")[0]),
           amud: $parentElement.closest(".amudContainer").attr("amud") as string,
+          isEnglish,
         };
       }
     }
@@ -116,10 +130,10 @@ const onSelectionChange = () => {
         const subject = "Sefaria Text Correction from talmud.page";
         const bodyParts = [
           `${ref} (${sefariaUrl})`,
-          sefariaRef.text,
+          sefariaRef.hebrew.text,
         ];
-        if (sefariaRef.translation && sefariaRef.translation !== "") {
-          bodyParts.push(sefariaRef.translation);
+        if (sefariaRef.translation && sefariaRef.translation.text !== "") {
+          bodyParts.push(sefariaRef.translation.text);
         }
         // trailing newline so that the description starts on its own line
         bodyParts.push("Describe the error:");
@@ -129,7 +143,54 @@ const onSelectionChange = () => {
       },
     },
   );
-  if (driveClient.isSignedIn && !driveClient.errors.length) {
+
+  if (driveClient.isSignedIn && !driveClient.errors.length && ref !== "ignore-drive") {
+    let selectedText: string;
+    let focusOffset = -1;
+    let focusNode: Node | null;
+    const captureSelectionState = () => {
+      const selection = document.getSelection()!;
+      focusOffset = selection.focusOffset;
+      focusNode = selection.focusNode;
+      selectedText = selection.toString().trim() ?? "";
+    };
+    const postComment = (comment: AnyComment) => {
+      if (selectedText === undefined) {
+        throw new Error("selectedText is undefined");
+      }
+      driveClient.postComment({
+        comment,
+        selectedText,
+        amud: sefariaRef.amud,
+        ref: sefariaRef.ref,
+        parentRef: sefariaRef.parentRef || sefariaRef.ref,
+      });
+    };
+
+    buttons.push({
+      text: '<i class="material-icons">format_bold</i>',
+      onClick: () => {
+        captureSelectionState();
+        const {isEnglish, hebrew, translation} = sefariaRef;
+        const entireNodeAndText = isEnglish ? translation : hebrew;
+        if (entireNodeAndText === undefined) {
+          throw new Error(`Text is undefined: ${JSON.stringify(sefariaRef)}`);
+        }
+        const end = findNodeOffset(focusNode!, entireNodeAndText.node) + focusOffset;
+        const start = end - selectedText.length;
+        const entireText = entireNodeAndText.text;
+        const wordCount = (str: string) => Array.from(str.split(" ")).length - 1;
+        postComment({
+          highlight: true,
+          startPercentage: start / entireText.length,
+          endPercentage: end / entireText.length,
+          wordCountStart: wordCount(entireText.slice(0, start)),
+          wordCountEnd: wordCount(entireText.slice(end)),
+          isEnglish,
+        });
+      },
+    });
+
     buttons.push({
       text: '<i class="material-icons">add_comment</i>',
       onClick: () => {
@@ -149,18 +210,13 @@ const onSelectionChange = () => {
 
         modalContainer.show();
         $("#modal-label").text(`Add a note on ${sefariaRef.ref}`);
-        // Get the possibly-updated selection
-        const selectedText = document.getSelection()?.toString() ?? "";
         noteTextArea.val("");
         $("#modal-cancel").off("click").on("click", () => modalContainer.hide());
+
+        captureSelectionState();
         $("#modal-save").off("click").on("click", () => {
-          driveClient.postComment({
-            text: noteTextArea.val() as string || "",
-            selectedText,
-            amud: sefariaRef.amud,
-            ref: sefariaRef.ref,
-            parentRef: sefariaRef.parentRef || sefariaRef.ref,
-          });
+          const text = noteTextArea.val() as string || "";
+          postComment({text});
           modalContainer.hide();
         });
       },
