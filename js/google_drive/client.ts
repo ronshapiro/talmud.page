@@ -204,9 +204,8 @@ export class DriveClient {
     retryingCall: () => {
       this.databaseDocumentShouldBeCreated = false;
       // TODO: localize this
-      const title = this.isDebug
-            ? `talmud.page ${this.masechet} debug notes`
-            : `talmud.page ${this.masechet} notes`;
+      const suffix = this.isDebug ? "debug notes" : "notes";
+      const title = `talmud.page ${this.masechet} ${suffix}`;
       return this.gapi.createDocument(title);
     },
     then: (response: TypescriptCleanupType) => {
@@ -461,9 +460,10 @@ export class DriveClient {
       return existingRanges.slice(-1)[0].endIndex;
     }
 
-    const parentRefs = Object.keys(namedRanges)
-          .filter(ref => ref.startsWith("parentRef:"))
-          .map(ref => ref.substring("parentRef:".length));
+    const parentRefs = (
+      Object.keys(namedRanges)
+        .filter(ref => ref.startsWith("parentRef:"))
+        .map(ref => ref.substring("parentRef:".length)));
     parentRefs.push(parentRef);
     parentRefs.sort(refSorter);
     const index = parentRefs.indexOf(parentRef);
@@ -472,11 +472,11 @@ export class DriveClient {
     }
 
     if (INSTRUCTIONS_TABLE_RANGE_NAME in namedRanges) {
-        return (
-          namedRanges[INSTRUCTIONS_TABLE_RANGE_NAME]
-            .namedRanges[0]
-            .ranges[0]
-            .endIndex);
+      return (
+        namedRanges[INSTRUCTIONS_TABLE_RANGE_NAME]
+          .namedRanges[0]
+          .ranges[0]
+          .endIndex);
     }
 
     // As a last resort, insert at the beginning of the document

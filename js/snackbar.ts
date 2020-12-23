@@ -241,8 +241,8 @@ $(document).ready(() => {
 
   snackbars.preferencesNudge.show(
     (localStorage.lastViewedVersionOfPreferencesPage
-     ? "Check out the updated options!"
-     : "Check out the available options!"),
+      ? "Check out the updated options!"
+      : "Check out the available options!"),
     [
       {
         text: "Preferences",

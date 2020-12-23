@@ -51,9 +51,10 @@ class HebrewCell extends Cell {
 
   render() {
     const {isEnglishExpanded, shouldWrap} = this.props;
-    const siblingExpandedClass = this.context.wrapTranslations && isEnglishExpanded && shouldWrap
-          ? "siblingExpanded"
-          : undefined;
+    const siblingExpandedClass = (
+      this.context.wrapTranslations && isEnglishExpanded && shouldWrap
+        ? "siblingExpanded"
+        : undefined);
     return (
       <div
         dir="rtl"

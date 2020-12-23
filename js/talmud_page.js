@@ -13,8 +13,8 @@ import {registerRefSelectionSnackbarListener} from "./ref_selection_snackbar.ts"
 const masechetNameAndRange = () => {
   const metadata = amudMetadata();
   return metadata.amudStart === metadata.amudEnd
-      ? `${metadata.masechet} ${metadata.amudStart}`
-      : `${metadata.masechet} ${metadata.amudStart} - ${metadata.amudEnd}`;
+    ? `${metadata.masechet} ${metadata.amudStart}`
+    : `${metadata.masechet} ${metadata.amudStart} - ${metadata.amudEnd}`;
 };
 
 const renderer = new TalmudRenderer(

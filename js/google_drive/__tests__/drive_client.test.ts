@@ -62,7 +62,7 @@ class RecordedApiClient extends GoogleApiClient {
 }
 
 class FakeUnsavedCommentStore implements UnsavedCommentStore {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   init(client: any): void {}
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
