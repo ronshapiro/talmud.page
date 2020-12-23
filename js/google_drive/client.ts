@@ -7,10 +7,8 @@ import {extractDocumentText} from "./document_text";
 import {GatedExecutor} from "../gated_executor";
 import {GoogleApiClient} from "./gapi";
 import {insertFormattedTextRequests} from "./insertTextRequests";
-// @ts-ignore
-import {RetryMethodFactory} from "../retry.ts";
-// @ts-ignore
-import {insertTableRequests} from "./tableRequests.ts";
+import {RetryMethodFactory} from "../retry";
+import {insertTableRequests} from "./tableRequests";
 import {
   AnyComment,
   HighlightComment,

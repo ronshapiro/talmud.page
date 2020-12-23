@@ -1,8 +1,6 @@
 import {v4 as uuid} from "uuid";
-// @ts-ignore
-import {promiseParts} from "./promises.ts";
-// @ts-ignore
-import {BinaryFunction, UnaryFunction} from "./types.ts";
+import {promiseParts} from "./promises";
+import {BinaryFunction} from "./types";
 
 class RetryState {
   delay: number
@@ -13,7 +11,7 @@ class RetryState {
   constructor(delay = 200) {
     this.delay = delay;
     this.id = uuid();
-    [this.promise, this.proceed] = promiseParts<any>().slice(0, 2);
+    [this.promise, this.proceed] = promiseParts<any>();
   }
 
   increment() {
@@ -28,7 +26,7 @@ interface AnyFunction {
 interface RetryingMethodOptions {
   retryingCall: (..._params: any[]) => Promise<any>;
   then?: (_successValue?: any) => void;
-  createError?: (..._params: any[]) => string;
+  createError?: (..._params: any[]) => string | undefined;
 }
 
 interface ErrorsDelegate {
@@ -40,7 +38,7 @@ interface GeneratedRetryingMethodSignature {
   (..._params: any[]): Promise<any>;
 }
 
-type SetTimeout = BinaryFunction<UnaryFunction<any[], void>, number, void>;
+type SetTimeout = BinaryFunction<() => void, number, void>;
 
 export class RetryMethodFactory {
   errorsDelegate: ErrorsDelegate;
@@ -56,8 +54,7 @@ export class RetryMethodFactory {
     this.errorsDelegate = errorsDelegate;
     this.onErrorStateChange = onErrorStateChange;
     this.errorLogger = errorLogger;
-    // @ts-ignore
-    this.setTimeout = (...args) => setTimeoutDelegate(...args);
+    this.setTimeout = (callback: () => void, delay: number) => setTimeoutDelegate(callback, delay);
   }
 
   /**

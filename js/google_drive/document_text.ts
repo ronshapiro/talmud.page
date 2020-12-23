@@ -1,5 +1,4 @@
-// @ts-ignore
-import {LanguageStats, ParagraphElement, Range} from "./types.ts";
+import {LanguageStats, ParagraphElement, Range} from "./types";
 
 interface Predicate<T> {
   (t: T): boolean;

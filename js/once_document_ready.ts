@@ -1,4 +1,3 @@
-// @ts-ignore
-import {GatedExecutor} from "./gated_executor.ts";
+import {GatedExecutor} from "./gated_executor";
 
 export const onceDocumentReady = new GatedExecutor();

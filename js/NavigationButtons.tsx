@@ -2,8 +2,7 @@ import $ from "jquery";
 import * as React from "react";
 import * as PropTypes from 'prop-types';
 import {NavigationExtension} from "./NavigationExtension";
-// @ts-ignore
-import Modal from "./Modal.tsx";
+import Modal from "./Modal";
 import {NullaryFunction} from "./types";
 
 const {
@@ -101,7 +100,7 @@ interface ButtonProps {
   navigationExtension: NavigationExtension;
 }
 
-export const PreviousButton = (props: ButtonProps): React.ReactNode => {
+export const PreviousButton = (props: ButtonProps): React.ReactElement | null => {
   const {navigationExtension} = props;
   if (!navigationExtension.hasPrevious()) {
     return null;
@@ -119,7 +118,7 @@ PreviousButton.propTypes = {
   navigationExtension: PropTypes.object.isRequired,
 };
 
-export const NextButton = (props: ButtonProps): React.ReactNode => {
+export const NextButton = (props: ButtonProps): React.ReactElement | null => {
   const {navigationExtension} = props;
   if (!navigationExtension.hasNext()) {
     return null;

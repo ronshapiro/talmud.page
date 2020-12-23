@@ -1,12 +1,11 @@
-// @ts-ignore
-import {RetryMethodFactory} from "../retry.ts";
+import {RetryMethodFactory} from "../retry";
 
 const noOpErrorsDelegate = {
   add: (_id: string, _message: string) => {},
   remove: (_id: string) => {},
 };
 
-const fastSetTimeout = (callback: () => void) => {
+const fastSetTimeout = (callback: () => void, _ms: number) => {
   setTimeout(callback, 1);
 };
 

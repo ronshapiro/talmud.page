@@ -1,5 +1,4 @@
-// @ts-ignore
-import {refSorter} from "../ref_sorter.ts";
+import {refSorter} from "../ref_sorter";
 
 test("same parent ref", () => {
   const refs = [

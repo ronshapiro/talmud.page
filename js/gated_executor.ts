@@ -1,7 +1,5 @@
-// @ts-ignore
-import {promiseParts} from "./promises.ts";
-// @ts-ignore
-import {NullaryFunction} from "./types.ts";
+import {promiseParts} from "./promises";
+import {NullaryFunction} from "./types";
 
 /**
  * Collects functions that will be run once `declareReady()` has been called.
@@ -19,9 +17,9 @@ export class GatedExecutor {
       try {
         const wrappedReturnValue = fn();
         if (wrappedReturnValue instanceof Promise) {
-          wrappedReturnValue.then(() => resolve(), e => reject(e));
+          wrappedReturnValue.then(x => resolve(x), e => reject(e));
         } else {
-          resolve();
+          resolve(wrappedReturnValue);
         }
       } catch (e) {
         reject(e);

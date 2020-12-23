@@ -1,6 +1,5 @@
 /* global gapi */
-// @ts-ignore
-import {asPromise} from "../promises.ts";
+import {asPromise} from "../promises";
 
 export abstract class GoogleApiClient {
   abstract init(): Promise<any>;

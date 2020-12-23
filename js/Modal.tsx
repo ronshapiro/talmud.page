@@ -8,7 +8,6 @@ import {useHtmlRef} from "./hooks";
 const {useEffect} = React;
 
 interface ModalProps {
-  label: string;
   content: React.ReactNode;
   cancelText: string;
   onCancel: NullaryFunction<void>;
@@ -16,9 +15,8 @@ interface ModalProps {
   onAccept: NullaryFunction<void>;
 }
 
-export default function Modal(props: ModalProps): React.ReactNode {
+export default function Modal(props: ModalProps): React.ReactElement {
   const {
-    label,
     content,
     cancelText,
     onCancel,
@@ -40,7 +38,6 @@ export default function Modal(props: ModalProps): React.ReactNode {
     <div className="modal-container" ref={modalContainerRef}>
       <div className="modal">
         <div className="modal-content">
-          <span>{label}</span>
           {content}
           <div style={{display: "flex"}}>
             <button
@@ -61,7 +58,6 @@ export default function Modal(props: ModalProps): React.ReactNode {
   );
 }
 Modal.propTypes = {
-  label: PropTypes.string,
   content: PropTypes.node,
   cancelText: PropTypes.string,
   onCancel: PropTypes.func,

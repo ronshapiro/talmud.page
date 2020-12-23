@@ -1,8 +1,5 @@
-// @ts-ignore
-import {driveClient} from "./google_drive/singleton.ts";
-// @ts-ignore
-import {amudMetadata} from "./amud.ts";
-
+import {driveClient} from "./google_drive/singleton";
+import {amudMetadata} from "./amud";
 
 let hasReceivedUpdateFromApi = false;
 

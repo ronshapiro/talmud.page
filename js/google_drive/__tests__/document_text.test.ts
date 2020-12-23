@@ -3,9 +3,8 @@ import {
   joinAdjacentElements,
   extractDocumentText,
   DocumentText,
-  ParagraphElement,
-  // @ts-ignore
-} from "../document_text.ts";
+} from "../document_text";
+import {ParagraphElement} from "../types";
 
 describe("inRange()", () => {
   test("before", () => {
@@ -13,7 +12,7 @@ describe("inRange()", () => {
   });
 
   test("end == start", () => {
-    expect(inRange({startIndex: 10, end: 20})({startIndex: 5, endIndex: 10})).toBe(false);
+    expect(inRange({startIndex: 10, endIndex: 20})({startIndex: 5, endIndex: 10})).toBe(false);
   });
 
   test("before and during", () => {
@@ -21,23 +20,23 @@ describe("inRange()", () => {
   });
 
   test("start and before end", () => {
-    expect(inRange({startIndex: 10, end: 20})({startIndex: 10, endIndex: 11})).toBe(true);
+    expect(inRange({startIndex: 10, endIndex: 20})({startIndex: 10, endIndex: 11})).toBe(true);
   });
 
   test("start and end", () => {
-    expect(inRange({startIndex: 10, end: 20})({startIndex: 10, endIndex: 20})).toBe(true);
+    expect(inRange({startIndex: 10, endIndex: 20})({startIndex: 10, endIndex: 20})).toBe(true);
   });
 
   test("start and after end", () => {
-    expect(inRange({startIndex: 10, end: 20})({startIndex: 10, endIndex: 21})).toBe(true);
+    expect(inRange({startIndex: 10, endIndex: 20})({startIndex: 10, endIndex: 21})).toBe(true);
   });
 
   test("start == end", () => {
-    expect(inRange({startIndex: 10, end: 20})({startIndex: 20, endIndex: 21})).toBe(false);
+    expect(inRange({startIndex: 10, endIndex: 20})({startIndex: 20, endIndex: 21})).toBe(false);
   });
 
   test("after start and end", () => {
-    expect(inRange({startIndex: 10, end: 20})({startIndex: 21, endIndex: 22})).toBe(false);
+    expect(inRange({startIndex: 10, endIndex: 20})({startIndex: 21, endIndex: 22})).toBe(false);
   });
 });
 

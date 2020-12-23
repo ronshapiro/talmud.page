@@ -1,23 +1,20 @@
-// @ts-ignore
-import {rgbColor} from "./color.ts";
-// @ts-ignore
-import {insertStyledText, StyledText} from "./insertTextRequests.ts";
-// @ts-ignore
-import {Color, Request} from "./types.ts";
+import {rgbColor} from "./color";
+import {insertStyledText, StyledText} from "./insertTextRequests";
+import {Color, Request} from "./types";
 
 interface Cell {
   cellText: (string | StyledText)[];
-  rangeNames: string[] | undefined;
-  rtl: boolean | undefined;
+  rangeNames?: string[];
+  rtl?: boolean;
 }
 
 interface InsertTableParams {
   tableStart: number;
-  backgroundColor: Color | undefined;
-  borderColor: Color | undefined;
-  borderWeight: number | undefined;
+  backgroundColor?: Color;
+  borderColor?: Color;
+  borderWeight?: number;
   cells: Cell[];
-  rangeNames: string[] | undefined;
+  rangeNames?: string[];
 }
 
 function insertTableStructureRequests(
@@ -73,7 +70,7 @@ function createNamedRanges(
   names: string[] | undefined,
   startIndex: number,
   endIndex: number,
-): Request {
+): Request[] {
   return (names || []).map(name => {
     return {createNamedRange: {name, range: {startIndex, endIndex}}};
   });

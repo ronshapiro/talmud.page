@@ -1,5 +1,4 @@
-// @ts-ignore
-import {Color} from "./types.ts";
+import {Color} from "./types";
 
 export function rgbColor(red: number, green: number, blue: number): Color {
   return {

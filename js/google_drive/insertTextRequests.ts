@@ -1,13 +1,11 @@
-// @ts-ignore
-import {rgbColor} from "./color.ts";
-// @ts-ignore
-import {Range, Request, TextStyle} from "./types.ts";
+import {rgbColor} from "./color";
+import {Range, Request, TextStyle} from "./types";
 
-interface StyledText {
+export interface StyledText {
   text: string;
-  url: string | undefined;
-  bold: boolean | undefined;
-  highlight: boolean | undefined;
+  url?: string;
+  bold?: boolean;
+  highlight?: boolean;
 }
 
 function insertTextRequest(text: string, startIndex: number): Request {
