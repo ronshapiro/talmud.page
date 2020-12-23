@@ -17,8 +17,12 @@ export class GatedExecutor {
 
     const wrapped: NullaryFunction<any> = () => {
       try {
-        fn();
-        resolve();
+        const wrappedReturnValue = fn();
+        if (wrappedReturnValue instanceof Promise) {
+          wrappedReturnValue.then(() => resolve(), e => reject(e));
+        } else {
+          resolve();
+        }
       } catch (e) {
         reject(e);
       }

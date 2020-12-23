@@ -18,6 +18,6 @@ class SefariaLinkSanitizer(BaseHtmlTranslator):
         self.append_end_tag(tag)
 
     def handle_data(self, data):
-        # TODO: perhaps keeping these html encodings is fine.
-        # Jastrow on Sefaria doesn't use them for whatever reason.
+        # The extra encodings may not be necessary, but it can't hurt..
+        # FWIW Jastrow on Sefaria doesn't use them for whatever reason.
         self._out.append(html.escape(data).replace("&apos;", "׳").replace("&quot;", '"'))

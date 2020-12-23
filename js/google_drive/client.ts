@@ -416,7 +416,7 @@ export class DriveClient {
     return requests;
   }
 
-  postComment(params: PostCommentParams): void {
+  postComment(params: PostCommentParams): Promise<any> {
     if (this.databaseDocumentShouldBeCreated) {
       this.createDocsDatabase();
     }
@@ -429,7 +429,7 @@ export class DriveClient {
       gtag("event", "add_personal_note", {amud, ref, parentRef});
     }
 
-    this.whenDatabaseReady.execute(
+    return this.whenDatabaseReady.execute(
       () => this._postComment({...params, id, isRetry}));
   }
 

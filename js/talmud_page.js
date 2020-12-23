@@ -8,8 +8,6 @@ import {amudMetadata, computePreviousAmud, computeNextAmud} from "./amud.ts";
 import {driveClient} from "./google_drive/singleton.ts";
 import {registerRefSelectionSnackbarListener} from "./ref_selection_snackbar.ts";
 
-// TODO: reactify?
-
 const masechetNameAndRange = () => {
   const metadata = amudMetadata();
   return metadata.amudStart === metadata.amudEnd

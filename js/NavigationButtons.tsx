@@ -87,11 +87,7 @@ const NavigationButtonRow = (props: NavigationButtonRowProps) => {
           cancelText="Cancel"
           onCancel={() => setShowModal(false)}
           acceptText="Navigate"
-          onAccept={() => {
-            // TODO: only reload if the masechet is different.
-            // Otherwise stay on the same page. Or even better, just recreate the drive client!
-            newSearch(modalSearchBarRef.current.value);
-          }} />
+          onAccept={() => newSearch(modalSearchBarRef.current.value)} />
       )}
     </div>
   );

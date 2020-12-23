@@ -30,12 +30,14 @@ export class IndexedDbUnsavedCommentStore implements UnsavedCommentStore {
     openRequest.onsuccess = onSuccessEvent => {
       this.localDb = result<IDBDatabase>(onSuccessEvent);
 
+      let promiseChain: Promise<void> = Promise.resolve();
       this.newTransaction("readonly").getAll().onsuccess = getAllEvent => {
         result<PersistedComment[]>(getAllEvent)
           .filter(comment => comment.masechet === this.client!.masechet)
           .forEach(comment => {
-            // TODO: do these in a promise chain, since all but the first are guaranteed to fail.
-            client.postComment(comment);
+            // execute in a promise chain so that the updates of one comment don't cause the
+            // others to fail + require a retry
+            promiseChain = promiseChain.then(() => client.postComment(comment));
           });
       };
     };

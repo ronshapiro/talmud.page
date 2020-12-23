@@ -1189,8 +1189,6 @@ def _apply_regex(text, abbreviation):
 
 _ADDITIONAL_TRANSLATION = re.compile("—\\d*\\)")
 
-# TODO: replace Book XXIV, 14 with Book 24:14
-
 class JastrowReformatter(BaseHtmlTranslator):
     def handle_starttag(self, tag, attrs):
         if tag == "b":

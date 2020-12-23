@@ -31,7 +31,6 @@ function updateSnackbar(kind: Kind, labelHtml: string, maybeButtons: MaybeButton
   }
   $container.find(".snackbar-text").html(labelHtml);
 
-  const buttonsDiv = $container.find(".snackbar-buttons").html("");
   let style = "";
   let buttons: Button[];
   if (!maybeButtons) {
@@ -43,11 +42,10 @@ function updateSnackbar(kind: Kind, labelHtml: string, maybeButtons: MaybeButton
     buttons = [maybeButtons];
   }
 
-
-  // TODO: replace with map and then remove the initial setting of html("")
-  for (const button of buttons) {
-    buttonsDiv.append(`<button ${BUTTON_CLASSES} ${style}>${button.text}</button>`);
-  }
+  $container.find(".snackbar-buttons").html(
+    buttons
+      .map(button => `<button ${BUTTON_CLASSES} ${style}>${button.text}</button>`)
+      .join(""));
 
   const buttonElements = $container.find("button");
   for (let i = 0; i < buttonElements.length; i++) {
