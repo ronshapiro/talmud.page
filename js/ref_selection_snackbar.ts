@@ -176,7 +176,7 @@ const onSelectionChange = () => {
         if (entireNodeAndText === undefined) {
           throw new Error(`Text is undefined: ${JSON.stringify(sefariaRef)}`);
         }
-        const end = findNodeOffset(focusNode!, entireNodeAndText.node) + focusOffset;
+        const end = findNodeOffset(entireNodeAndText.node, focusNode!) + focusOffset;
         const start = end - selectedText.length;
         const entireText = entireNodeAndText.text;
         const wordCount = (str: string) => Array.from(str.split(" ")).length - 1;
