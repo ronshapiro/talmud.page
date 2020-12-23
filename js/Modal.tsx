@@ -1,12 +1,9 @@
 import * as React from "react";
 import $ from "jquery";
 import * as PropTypes from 'prop-types';
-// @ts-ignore
-import {NullaryFunction} from "./types.ts";
-// @ts-ignore
-import componentHandler from "./componentHandler.ts";
-// @ts-ignore
-import {useHtmlRef} from "./hooks.ts";
+import {NullaryFunction} from "./types";
+import componentHandler from "./componentHandler";
+import {useHtmlRef} from "./hooks";
 
 const {useEffect} = React;
 

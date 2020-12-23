@@ -1,12 +1,10 @@
 import $ from "jquery";
 import * as React from "react";
 import * as PropTypes from 'prop-types';
-// @ts-ignore
-import {NavigationExtension} from "./NavigationExtension.ts";
+import {NavigationExtension} from "./NavigationExtension";
 // @ts-ignore
 import Modal from "./Modal.tsx";
-// @ts-ignore
-import {UnaryFunction, NullaryFunction} from "./types.ts";
+import {NullaryFunction} from "./types";
 
 const {
   useEffect,
@@ -14,7 +12,7 @@ const {
   useState,
 } = React;
 
-const buttonClasses: UnaryFunction<string[], string> = (...extra: string[]) => {
+const buttonClasses = (...extra: string[]) => {
   return [
     "navigation-button",
     "mdl-button",

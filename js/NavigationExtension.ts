@@ -1,5 +1,4 @@
-// @ts-ignore
-import {NullaryFunction} from "./types.ts";
+import {NullaryFunction} from "./types";
 
 export interface NavigationExtension {
   previous: NullaryFunction<string>;
