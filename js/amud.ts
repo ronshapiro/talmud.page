@@ -25,8 +25,6 @@ function validAmudOrUndefined(amud: string | undefined): string | undefined {
   return AMUD_REGEX.test(amud) ? amud : undefined;
 }
 
-// TODO: have a registry of dependencies like this that can be swapped out by different pages, such
-// as the notes redirector which has no concept of amud
 const _amudMetadata = (pathname: string): AmudMetadata => {
   const pathParts = pathname.split("/");
   return {

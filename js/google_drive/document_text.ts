@@ -39,8 +39,6 @@ const trimContents: ElementsProcessor = (elements) => (
   elements.map(element => updateText(element, element.textRun.content.trim()))
 );
 
-// TODO: add simple styles. But doing so would mangle indices, so perhaps collect styles and apply
-// them at the end?
 export const joinAdjacentElements: ElementsProcessor = (elements) => {
   if (elements.length <= 1) {
     return elements;

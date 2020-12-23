@@ -26,6 +26,7 @@ module.exports = {
   rules: {
     "arrow-body-style": "off",
     "arrow-parens": "off",
+    "class-methods-use-this": "off",
     "function-paren-newline": "off",
     "import/extensions": "off",
     "import/prefer-default-export": "off",
@@ -38,9 +39,14 @@ module.exports = {
     "no-plusplus": "off",
     "no-trailing-spaces": "off", // pre-commit will enforce this
     "no-underscore-dangle": "off",
+    "object-curly-newline": "off",
+    "object-curly-spacing": "off",
+    "prefer-template": "off",
     "quotes": "off", // In general this is awfully noisy; ideally it would be ["error", "double"]
+    "radix": "off",
     "react/destructuring-assignment": "off",
     "react/static-property-placement": "off",
+    "no-restricted-syntax": "off",
     "no-unused-vars": "off", // Let the typescript-eslint version rule
     "no-use-before-define": "off", // Let the typescript-eslint version rule
     "spaced-comment": ["error", "always", {
@@ -56,11 +62,7 @@ module.exports = {
     "@typescript-eslint/no-use-before-define": ["error"],
 
     // TODO: evaluate all of the rules below
-    "jsx-a11y/no-static-element-interactions": "off",
-    "jsx-a11y/anchor-is-valid": "off",
-    "jsx-a11y/click-events-have-key-events": "off",
-    "jsx-a11y/no-noninteractive-tabindex": "off",
-    "import/named": "off", // unclear why eslint can't find imports
+    "import/named": "off", // context.js can be rewritten to make this more declarative
     "no-param-reassign": "off",
     "react/button-has-type": "off",
     "react/jsx-closing-bracket-location": "off",
@@ -68,14 +70,6 @@ module.exports = {
     "react/state-in-constructor": "off",
     "react/require-default-props": "off",
     "react/forbid-prop-types": "off",
-    "object-curly-newline": "off",
-    "class-methods-use-this": "off",
-    "no-restricted-syntax": "off",
-    "no-undef-init": "off",
-    "object-curly-spacing": "off",
-    "prefer-template": "off",
-    "radix": "off",
-    "react/prefer-stateless-function": "off",
   },
   overrides: [
     {

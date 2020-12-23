@@ -37,11 +37,13 @@ const newSearch = (searchTerm: string): void => {
 };
 
 interface NavigationButtonRowProps {
-  isNext: boolean,
+  isNext: boolean;
   text: string;
   doLoad: NullaryFunction<void>;
-  defaultEditText: NullaryFunction<string>,
+  defaultEditText: NullaryFunction<string>;
 }
+
+const VALID_CLICK_KEY_CODES = new Set(["Enter", " "]);
 
 const NavigationButtonRow = (props: NavigationButtonRowProps) => {
   const {
@@ -61,7 +63,12 @@ const NavigationButtonRow = (props: NavigationButtonRowProps) => {
   if (isNext) classes.push("next");
   return (
     <div className={classes.join(" ")}>
-      <span className={buttonClasses()} onClick={() => doLoad()}>
+      <span
+        className={buttonClasses()}
+        onClick={() => doLoad()}
+        onKeyUp={(e: any) => VALID_CLICK_KEY_CODES.has(e.key) && doLoad()}
+        role="button"
+        tabIndex={0}>
         {text}
       </span>
       <button

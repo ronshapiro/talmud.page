@@ -260,9 +260,11 @@ class CommentarySection extends Component {
     };
 
     return applyButtonToFocusRef(
+      // eslint-disable-next-line jsx-a11y/anchor-is-valid
       <a
         key={commentaryKind.englishName}
         className={this.buttonClasses(commentaryKind, isShowing, commentary)}
+        role="button"
         tabIndex="0"
         onClick={onClick}
         onKeyUp={onKeyUp}>

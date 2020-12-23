@@ -66,6 +66,7 @@ const requestAmud = (amud, options) => {
     id: amud,
     title: `${metadata.masechet} ${amud}`,
     loading: true,
+    sections: [],
   });
   $.ajax({
     url: `${window.location.origin}/api/${metadata.masechet}/${amud}`,
