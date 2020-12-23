@@ -652,7 +652,7 @@ class Renderer {
   }
 }
 
-class TalmudRenderer extends Renderer {
+export class TalmudRenderer extends Renderer {
   constructor(translationOption, wrapTranslations, expandEnglishByDefault, navigationExtension) {
     super(
       TalmudRenderer._defaultCommentaryTypes(),

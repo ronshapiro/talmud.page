@@ -61,8 +61,7 @@ module.exports = {
     "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
     "@typescript-eslint/no-use-before-define": ["error"],
 
-    // TODO: evaluate all of the rules below
-    "import/named": "off", // context.js can be rewritten to make this more declarative
+    // These rules may be removable with some work
     "no-param-reassign": "off",
     "react/button-has-type": "off",
     "react/jsx-closing-bracket-location": "off",
