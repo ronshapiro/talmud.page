@@ -245,7 +245,7 @@ def get_and_cache_amud_json(masechet, amud, verb="Requesting"):
     if not response:
         try:
             app.logger.info(f"{verb} {masechet} {amud}")
-            response = api_request_handler.amud_api_request(masechet, amud)
+            response = api_request_handler.handle_request(masechet, amud)
             app.logger.info(f"{verb} {masechet} {amud} --- Done")
         except ApiException as e:
             return {"error": e.message, "code": e.internal_code}, e.http_status

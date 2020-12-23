@@ -20,6 +20,7 @@ function setHighlights(obj: Section | ApiComment, driveClient: DriveClient) {
     obj.unhighlighted = {he: obj.he, en: obj.en};
     for (const highlight of highlights) {
       const prop = highlight.isEnglish ? "en" : "he";
+      // TODO: if the highlight doesn't apply, display an error or add a synthetic comment
       obj[prop] = applyHighlight(highlight, obj[prop]) || obj[prop];
     }
   }

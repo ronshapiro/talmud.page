@@ -217,7 +217,6 @@ class AbstractApiRequestHandler(object):
                         comment["category"])
 
 
-# TODO: rename this to be Gemara related
 class ApiRequestHandler(AbstractApiRequestHandler):
     async def _make_requests(self, masechet, amud):
         return await asyncio.gather(
@@ -225,10 +224,6 @@ class ApiRequestHandler(AbstractApiRequestHandler):
             self._request_maker.request_amud(f"Rashi_on_{masechet}.{amud}"),
             self._request_maker.request_amud(f"Tosafot_on_{masechet}.{amud}"),
         )
-
-    # TODO: remove name alias
-    def amud_api_request(self, masechet, amud):
-        return self.handle_request(masechet, amud)
 
     def _make_id(self, masechet, amud):
         return amud
@@ -278,11 +273,9 @@ class ApiRequestHandler(AbstractApiRequestHandler):
 
     def _removal_strategy(self, top_level_comment, nested_comment):
         if top_level_comment.english_name == "Verses":
-            # TODO: consider not removing these, as verses are typically shorter, and duplicates
-            # can be useful
+            # Maybe these shouldn't be removed at all, as verses are typically shorter, and
+            # duplicates can be useful
             return RemovalStrategy.REMOVE_NESTED
-        # TODO: it would be great to define this in _COMMENTARIES if possible so that all metadata
-        # for commentaries is defined in one location.
         elif nested_comment.english_name in (
                 "Maharsha", "Maharshal", "Meir Lublin", "Otzar Laazei Rashi"):
             return RemovalStrategy.REMOVE_TOP_LEVEL
@@ -336,12 +329,15 @@ class Comment(object):
 
     @staticmethod
     def create(sefaria_comment, english_name):
+        comment = Comment()
+        comment.ref = sefaria_comment["ref"]
+
         hebrew = sefaria_comment["he"]
         english = sefaria_comment["text"]
         if hebrew == english:
             # Fix an issue where sometimes Sefaria returns the exact same text. For now, safe to
             # assume that the equivalent text is Hebrew.
-            # TODO: this may no longer happen anymore
+            print(f"{comment.ref} has identical hebrew and english")
             english = ""
 
         if english_name == "Otzar Laazei Rashi":
@@ -359,11 +355,8 @@ class Comment(object):
         if english_name == "Jastrow":
             english = JastrowReformatter.process(english)
 
-        comment = Comment()
-
         comment.hebrew = hebrew
         comment.english = english
-        comment.ref = sefaria_comment["ref"]
         comment.source_ref = sefaria_comment["sourceRef"]
         comment.source_he_ref = sefaria_comment["sourceHeRef"]
 
@@ -456,7 +449,6 @@ class ApiException(Exception):
         self.http_status = http_status
         self.internal_code = internal_code
 
-# TODO: Sync commentaries data and expose it as a route as a JS file
 _COMMENTARIES = [
     {
         "englishName": "Translation",
@@ -526,9 +518,6 @@ _COMMENTARIES = [
         "englishName": "Mishneh Torah",
         "englishNamePattern": re.compile("^Mishneh Torah, "),
     },
-    #  {
-    #    "englishName": "Sefer Mitzvot Gadol",
-    #  },
     {
         "englishName": "Mesorat Hashas",
         "type": "mesorat hashas",

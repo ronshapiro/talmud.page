@@ -21,7 +21,7 @@ for masechet in MASECHTOT:
         if args.overwrite or not os.path.exists(file_path):
             try:
                 write_json(file_path,
-                           request_handler.amud_api_request(masechet.canonical_name, amud))
+                           request_handler.handle_request(masechet.canonical_name, amud))
             except ApiException as e:
                 print(f"ApiException in {masechet.canonical_name} {amud}: {e.message}")
                 if e.internal_code == ApiException.SEFARIA_HTTP_ERROR:

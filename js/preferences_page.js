@@ -22,7 +22,7 @@ const TRANSLATION_OPTIONS = [
   },
 ];
 
-const radioSection = (title, section, items, currentValueFunction, newValueFunction) => {
+const radioSection = (title, section, items, localStorageKeyName) => {
   const output = [
     `<div id="${section}">`,
     `<h3>${title}</h3>`,
@@ -31,7 +31,7 @@ const radioSection = (title, section, items, currentValueFunction, newValueFunct
   for (const item of items) {
     const id = `${section}-${item.value}`;
 
-    const checkedAttribute = item.value === currentValueFunction() ? "checked" : "";
+    const checkedAttribute = item.value === localStorage[localStorageKeyName] ? "checked" : "";
     output.push(
       `<div>`,
       `<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="${id}">`,
@@ -48,8 +48,8 @@ const radioSection = (title, section, items, currentValueFunction, newValueFunct
 
   $(`#${section} input`).click(() => {
     const maybeNewValue = $(`#${section} :checked`).attr("value");
-    if (maybeNewValue !== currentValueFunction()) {
-      newValueFunction(maybeNewValue);
+    if (maybeNewValue !== localStorage[localStorageKeyName]) {
+      localStorage[localStorageKeyName] = maybeNewValue;
       snackbars.preferencesSaved.show("Preferences saved!", [{
         text: "Dismiss",
         onClick: () => snackbars.preferencesSaved.hide(),
@@ -64,12 +64,7 @@ const main = () => {
   onceDocumentReady.declareReady();
 
   localStorage.lastViewedVersionOfPreferencesPage = PREFERENCES_PAGE_VERSION;
-  radioSection(
-    "Translation", "translation", TRANSLATION_OPTIONS,
-    () => localStorage.translationOption,
-    newValue => {
-      localStorage.translationOption = newValue;
-    });
+  radioSection("Translation", "translation", TRANSLATION_OPTIONS, "translationOption");
 
   TRANSLATION_OPTIONS.forEach(option => {
     const divId = `translationOptionExample-${option.value}`;
@@ -102,11 +97,7 @@ const main = () => {
         displayText: "No",
       },
     ],
-    // TODO: accept the property name instead of defining functions that are always identical
-    () => localStorage.wrapTranslations,
-    newValue => {
-      localStorage.wrapTranslations = newValue;
-    });
+    "wrapTranslations");
 
   const showTranslationHeaderText = (
     "Show Translation Button <br><small>(translation is always available by double-clicking the "
@@ -123,10 +114,7 @@ const main = () => {
         displayText: "No",
       },
     ],
-    () => localStorage.showTranslationButton,
-    newValue => {
-      localStorage.showTranslationButton = newValue;
-    });
+    "showTranslationButton");
 
   const expandEnglishByDefaultHeaderText = (
     "Expand English translations by default <br><small>(instead of double clicking to expand the "
@@ -143,10 +131,7 @@ const main = () => {
         displayText: "No",
       },
     ],
-    () => localStorage.expandEnglishByDefault,
-    newValue => {
-      localStorage.expandEnglishByDefault = newValue;
-    });
+    "expandEnglishByDefault");
 
   // Make sure mdl always registers new views correctly
   componentHandler.upgradeAllRegistered();

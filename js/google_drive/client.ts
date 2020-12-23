@@ -201,7 +201,7 @@ export class DriveClient {
   createDocsDatabase = this.retryMethodFactory.retryingMethod({
     retryingCall: () => {
       this.databaseDocumentShouldBeCreated = false;
-      // TODO: localize this
+      // i18n: localize this
       const suffix = this.isDebug ? "debug notes" : "notes";
       const title = `talmud.page ${this.masechet} ${suffix}`;
       return this.gapi.createDocument(title);
@@ -345,7 +345,6 @@ export class DriveClient {
     return this.getDatabaseDocument(this.databaseDocument.documentId);
   }
 
-  // TODO(drive): break up this method, possibly by extracting a state object.
   postCommentRequests(
     {comment, selectedText, amud, ref, parentRef}: PostCommentInternalParams,
   ): Request[] {
@@ -444,7 +443,7 @@ export class DriveClient {
       isRetry ? undefined : `Could not save comment on ${ref}`),
   });
 
-  // TODO(drive): tests, and dependency injection?
+  // TODO: tests
   findInsertLocation(parentRef: string): number {
     const namedRanges = this.databaseDocument.namedRanges as TypescriptCleanupType;
     if (Object.keys(namedRanges).length === 0) {

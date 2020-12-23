@@ -53,7 +53,7 @@ def doTest():
     for test_amud in test_amudim:
         # translating to, and then from, json normalizes things like python tuples -> json lists
         actual = json.loads(json.dumps(
-            request_handler.amud_api_request(test_amud.masechet, test_amud.amud)))
+            request_handler.handle_request(test_amud.masechet, test_amud.amud)))
         expected = json.loads(open(test_amud.output_file_path(), "r").read())
         if actual != expected:
             raise AssertionError("Not equal for %s" % test_amud)
@@ -71,7 +71,7 @@ def setup():
     request_handler = api_request_handler.ApiRequestHandler(RecordingRequestMaker())
     for test_amud in test_amudim:
         write_json(test_amud.output_file_path(),
-                   request_handler.amud_api_request(test_amud.masechet, test_amud.amud))
+                   request_handler.handle_request(test_amud.masechet, test_amud.amud))
 
 if args.setup:
     setup()
