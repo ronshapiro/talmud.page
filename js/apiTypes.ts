@@ -15,6 +15,7 @@ export interface Section {
   he: TextType;
   en: TextType;
   unhighlighted?: {he: string, en: string};
+  hasHighlights?: boolean;
 }
 
 export interface ApiComment {
@@ -23,4 +24,5 @@ export interface ApiComment {
   en: TextType;
   commentary?: Record<string, Commentary>;
   unhighlighted?: {he: TextType, en: TextType};
+  hasHighlights?: boolean;
 }

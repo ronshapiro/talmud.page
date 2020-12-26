@@ -6,6 +6,8 @@
     --major-color: rgb(255,110,64);
 
     --font-size-multiplier: 1;
+
+    --highlight-color: rgb(250, 217, 120);
 }
 
 @media only screen and (min-width: 720px) {
@@ -67,7 +69,7 @@ html, body {
 }
 
 .highlighted {
-    background: rgb(250, 217, 120);
+    background: var(--highlight-color);
 }
 
 .hebrew .highlighted {
@@ -75,6 +77,10 @@ html, body {
 }
 .english .highlighted {
     padding: 2px 0px;
+}
+
+.commentary_header.highlighted {
+    padding: 0;
 }
 
 .amudContainer:after {
@@ -116,7 +122,7 @@ html, body {
 }
 .commentary_header {
     text-decoration: underline;
-    padding-inline-end: 8px;
+    margin-inline-end: 8px;
     display: inline-block;
 }
 
@@ -125,9 +131,12 @@ html, body {
     text-decoration: underline;
     text-decoration-color: var(--background-color);
 
-    padding-inline-start: 2px;
+    margin-inline-start: 2px;
     content: "+";
     font-size: smaller;
+}
+.commentary_header.has-nested-commentaries.highlighted::after {
+    text-decoration-color: var(--highlight-color);
 }
 
 #main-contents {

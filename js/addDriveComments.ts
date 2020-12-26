@@ -12,16 +12,23 @@ function setPersonalComments(obj: Section | Commentary, personalNotes: Commentar
 }
 
 function setHighlights(obj: Section | ApiComment, driveClient: DriveClient) {
+  if (obj.unhighlighted) {
+    Object.assign(obj, obj.unhighlighted);
+    delete obj.unhighlighted;
+  }
+  delete obj.hasHighlights;
+
   const highlights = driveClient.highlightsForRef(obj.ref);
-  if (highlights) {
-    if (obj.unhighlighted) {
-      Object.assign(obj, obj.unhighlighted);
-    }
+  if (highlights.length) {
     obj.unhighlighted = {he: obj.he, en: obj.en};
     for (const highlight of highlights) {
       const prop = highlight.isEnglish ? "en" : "he";
+      const highlighted = applyHighlight(highlight, obj[prop]);
+      if (highlighted) {
+        obj[prop] = highlighted;
+        obj.hasHighlights = true;
+      }
       // TODO: if the highlight doesn't apply, display an error or add a synthetic comment
-      obj[prop] = applyHighlight(highlight, obj[prop]) || obj[prop];
     }
   }
 }

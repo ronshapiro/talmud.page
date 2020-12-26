@@ -131,6 +131,11 @@ class CommentRow extends Component {
   }
 }
 
+function commentaryHasHighlights(commentary) {
+  return commentary.comments.some(x => x.hasHighlights)
+    || Object.values(commentary.commentary || {}).some(commentaryHasHighlights);
+}
+
 class CommentarySection extends Component {
   static propTypes = {
     commentaries: PropTypes.object,
@@ -280,6 +285,7 @@ class CommentarySection extends Component {
       !isShowing && commentary.commentary && commentary.commentary["Personal Notes"]
         ? "has-nested-commentaries"
         : undefined,
+      !isShowing && commentaryHasHighlights(commentary) ? "highlighted" : undefined,
     ].filter(x => x).join(" ");
   }
 
