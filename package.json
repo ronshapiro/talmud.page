@@ -19,7 +19,7 @@
     "test": "jest --colors",
     "dev": "nodemon -w parcel.ts parcel.ts dev",
     "build": "ts-node parcel.ts prod",
-    "deploy": "npm run build && yes | gcloud --configuration talmud-page app deploy",
+    "deploy": "./deploy.sh",
     "ignore trailing commas": "exit 1"
   },
   "devDependencies": {

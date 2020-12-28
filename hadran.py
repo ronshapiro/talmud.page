@@ -27,7 +27,11 @@ if __name__ == '__main__':
     class HadranRequestHandler(AbstractApiRequestHandler):
 
         async def _make_requests(self):
-            return [await self._request_maker.request_amud("Hadran")]
+            return [await self._request_maker.make_request(
+                "Hadran",
+                "https://sefaria.org/api/texts",
+                params=dict(commentary="1"),
+            )]
 
         def _make_id(self):
             return "Hadran"

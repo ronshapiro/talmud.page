@@ -11,7 +11,7 @@ parser = argparse.ArgumentParser(description='Test')
 parser.add_argument("--overwrite", action="store_const", const=True)
 args = parser.parse_args()
 
-request_handler = api_request_handler.ApiRequestHandler(
+request_handler = api_request_handler.TalmudApiRequestHandler(
     api_request_handler.RealRequestMaker(),
     print_function = lambda *args: None)
 for masechet in MASECHTOT:

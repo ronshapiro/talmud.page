@@ -2,9 +2,10 @@
 # -*- coding: utf-8 -*-
 
 from amud_doesnt_exist import AmudDoesntExistException
-from api_request_handler import ApiRequestHandler
 from api_request_handler import ApiException
 from api_request_handler import RealRequestMaker
+from api_request_handler import TalmudApiRequestHandler
+from api_request_handler import TanakhApiRequestHandler
 from flask import Flask
 from flask import has_request_context
 from flask import jsonify
@@ -39,7 +40,9 @@ def print(*args):
 random_hash = ''.join(random.choice(string.ascii_letters) for i in range(7))
 app = Flask(__name__)
 masechtot = Masechtot()
-api_request_handler = ApiRequestHandler(RealRequestMaker(), print_function=app.logger.info)
+request_maker = RealRequestMaker()
+api_request_handler = TalmudApiRequestHandler(request_maker, print_function=app.logger.info)
+tanakh_api_request_handler = TanakhApiRequestHandler(request_maker, print_function=app.logger.info)
 
 class RequestFormatter(logging.Formatter):
     width = 1
@@ -277,6 +280,10 @@ def amud_json(masechet, amud):
             app.logger.error(f"Ignoring {possible_amud}")
 
     return jsonify(response), code
+
+@app.route("/api/tanakh/<book>/<int:chapter>")
+def tanach_json(book, chapter):
+    return jsonify(tanakh_api_request_handler.handle_request(book, chapter))
 
 @app.route("/preferences")
 def preferences():

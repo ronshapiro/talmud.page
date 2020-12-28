@@ -16,6 +16,7 @@ from source_formatting.sefaria_link_sanitizer import SefariaLinkSanitizer
 from source_formatting.shulchan_arukh_remove_header import ShulchanArukhHeaderRemover
 import asyncio
 import httpx
+import os
 import re
 import masechtot
 
@@ -23,25 +24,16 @@ _ALEPH = "א"
 _TAV = "ת"
 _STEINSALTZ_SUGYA_START = re.compile("^<big>[%s-%s]" % (_ALEPH, _TAV))
 
+TANAKH_BASE_URL = os.environ.get("TANAKH_BASE_URL")
+
 class RealRequestMaker(object):
-    async def request_amud(self, ref):
+    async def make_request(self, ref, base_url, **kwargs):
         # It seems like the http client should be cached, but that causes errors with the event
         # loop. The httpx documentation mentions that the main benefits here are connection pooling,
         # which would be nice since we connect to the same host repeatedly. But because there's a
         # response cache in server.py, it's not an urgent peformance issue.
         async with httpx.AsyncClient() as client:
-            return await client.get(
-                # https://github.com/Sefaria/Sefaria-Project/wiki/API-Documentation
-                f"https://sefaria.org/api/texts/{ref}",
-                params = {
-                    "commentary": "1",
-                    # This shouldn't have a difference for the Gemara reqeusts, but it does expand
-                    # the Rashi/Tosafot requests to have the entire amud's worth of commentary
-                    "pad": "0",
-                    # Even with wrapLinks=1, Jastrow (and perhaps more) is still wrapped. Instead,
-                    # an active filtering is performed just in case.
-                    "wrapLinks": "0",
-                })
+            return await client.get(f"{base_url}/{ref}", **kwargs)
 
 def standard_english_transformations(english):
     return SectionSymbolRemover.process(SefariaLinkSanitizer.process(english))
@@ -84,6 +76,8 @@ class AbstractApiRequestHandler(object):
 
     def handle_request(self, *args):
         sefaria_results = asyncio.run(self._make_requests(*args))
+        if type(sefaria_results) not in [list, tuple]:
+            sefaria_results = tuple([sefaria_results])
 
         bad_results = list(filter(lambda x: x.status_code != 200, sefaria_results))
         def _raise_bad_results_exception():
@@ -217,12 +211,28 @@ class AbstractApiRequestHandler(object):
                         comment["category"])
 
 
-class ApiRequestHandler(AbstractApiRequestHandler):
+class TalmudApiRequestHandler(AbstractApiRequestHandler):
     async def _make_requests(self, masechet, amud):
         return await asyncio.gather(
-            self._request_maker.request_amud(f"{masechet}.{amud}"),
-            self._request_maker.request_amud(f"Rashi_on_{masechet}.{amud}"),
-            self._request_maker.request_amud(f"Tosafot_on_{masechet}.{amud}"),
+            self._request(f"{masechet}.{amud}"),
+            self._request(f"Rashi_on_{masechet}.{amud}"),
+            self._request(f"Tosafot_on_{masechet}.{amud}"),
+        )
+
+    async def _request(self, ref):
+        return await self._request_maker.make_request(
+            ref,
+            "https://sefaria.org/api/texts",
+            # https://github.com/Sefaria/Sefaria-Project/wiki/API-Documentation
+            params = {
+                "commentary": "1",
+                # This shouldn't have a difference for the Gemara reqeusts, but it does expand
+                # the Rashi/Tosafot requests to have the entire amud's worth of commentary
+                "pad": "0",
+                # Even with wrapLinks=1, Jastrow (and perhaps more) is still wrapped. Instead,
+                # an active filtering is performed just in case.
+                "wrapLinks": "0",
+            }
         )
 
     def _make_id(self, masechet, amud):
@@ -282,6 +292,18 @@ class ApiRequestHandler(AbstractApiRequestHandler):
 
         self._print("Duplicated comment (Ref: %s) on %s and %s" % (
             top_level_comment.ref, top_level_comment.source_ref, nested_comment.ref))
+
+
+class TanakhApiRequestHandler(AbstractApiRequestHandler):
+    async def _make_requests(self, book, chapter):
+        return await self._request_maker.make_request(
+            f"{book}.{chapter}",
+            TANAKH_BASE_URL,
+            # This seems to take a little bit longer, so bump up the default timeout
+            timeout=20)
+
+    def _make_id(self, book, chapter):
+        return chapter
 
 
 class RemovalStrategy(Enum):

@@ -4,6 +4,8 @@ import * as chalk from 'chalk';
 import * as Bundler from 'parcel-bundler';
 import * as fs from 'fs';
 import {spawn, ChildProcess} from "child_process";
+// @ts-ignore
+import * as multiplexerApp from "./sefaria-multiplexer/core";
 
 const ls = (dir: string): string[] => {
   return fs.readdirSync(dir).map(x => `${dir}/${x}`);
@@ -44,7 +46,7 @@ const bundler = new Bundler(entryFiles, {
   contentHash: isProd,
 });
 
-let flaskSubprocess: ChildProcess | undefined = undefined;
+let flaskSubprocess: ChildProcess | undefined;
 let flaskDied = false;
 const startFlask = () => {
   flaskDied = false;
@@ -57,6 +59,7 @@ const startFlask = () => {
   ], {
     env: {
       FLASK_ENV: "development",
+      TANAKH_BASE_URL: process.env.TANAKH_BASE_URL || "http://localhost:3000",
     },
   });
   flaskSubprocess.stdout!.pipe(process.stdout);
@@ -72,6 +75,10 @@ const killFlask = () => {
 };
 
 if (!isProd) {
+  if (!process.env.TANAKH_BASE_URL) {
+    multiplexerApp.listen();
+  }
+
   let distFiles = new Set();
   const compilerSubprocesses: ChildProcess[] = [];
   bundler.on('bundled', () => {

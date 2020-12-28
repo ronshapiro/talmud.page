@@ -35,7 +35,7 @@ parser.add_argument("--setup", action="store_const", const=True)
 args = parser.parse_args()
 
 class FakeRequestMaker(object):
-    async def request_amud(self, ref):
+    async def make_request(self, ref, *args, **kwargs):
         with open(input_file_path(ref), "r") as input_file:
             return FakeResponse(input_file.read())
 
@@ -49,7 +49,7 @@ class FakeResponse(object):
         return json.loads(self.text)
 
 def doTest():
-    request_handler = api_request_handler.ApiRequestHandler(FakeRequestMaker())
+    request_handler = api_request_handler.TalmudApiRequestHandler(FakeRequestMaker())
     for test_amud in test_amudim:
         # translating to, and then from, json normalizes things like python tuples -> json lists
         actual = json.loads(json.dumps(
@@ -62,13 +62,13 @@ class RecordingRequestMaker(object):
     def __init__(self):
         self._real_request_maker = api_request_handler.RealRequestMaker()
 
-    async def request_amud(self, ref):
-        results = await self._real_request_maker.request_amud(ref)
+    async def make_request(self, ref, *args, **kwargs):
+        results = await self._real_request_maker.make_request(ref, *args, **kwargs)
         write_json(input_file_path(ref), results.json())
         return results
 
 def setup():
-    request_handler = api_request_handler.ApiRequestHandler(RecordingRequestMaker())
+    request_handler = api_request_handler.TalmudApiRequestHandler(RecordingRequestMaker())
     for test_amud in test_amudim:
         write_json(test_amud.output_file_path(),
                    request_handler.handle_request(test_amud.masechet, test_amud.amud))
