@@ -22,7 +22,7 @@ function setHighlights(obj: Section | ApiComment, driveClient: DriveClient) {
   if (highlights.length) {
     obj.unhighlighted = {he: obj.he, en: obj.en};
     for (const highlight of highlights) {
-      const prop = highlight.isEnglish ? "en" : "he";
+      const prop = highlight.commentSourceMetadata.isEnglish ? "en" : "he";
       const highlighted = applyHighlight(highlight, obj[prop]);
       if (highlighted) {
         obj[prop] = highlighted;

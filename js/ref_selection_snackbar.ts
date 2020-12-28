@@ -1,9 +1,10 @@
 /* global gtag,  */
 import $ from "jquery";
 import {driveClient} from "./google_drive/singleton";
-import {AnyComment} from "./google_drive/types";
+import {AnyComment, CommentSourceMetadata} from "./google_drive/types";
 import {findNodeOffset} from "./dom";
 import {snackbars} from "./snackbar";
+import {checkNotUndefined} from "./undefined";
 
 let selectionSnackbarRef: string | undefined;
 const hideSelectionChangeSnackbar = (ref?: string) => {
@@ -146,21 +147,32 @@ const onSelectionChange = () => {
 
   if (driveClient.isSignedIn && !driveClient.errors.length && ref !== "ignore-drive") {
     let selectedText: string;
-    let focusOffset = -1;
-    let focusNode: Node | null;
+    let commentSourceMetadata: CommentSourceMetadata | undefined;
     const captureSelectionState = () => {
       const selection = document.getSelection()!;
-      focusOffset = selection.focusOffset;
-      focusNode = selection.focusNode;
       selectedText = selection.toString().trim() ?? "";
+      const {isEnglish, hebrew, translation} = sefariaRef;
+      const entireNodeAndText = isEnglish ? translation : hebrew;
+      if (entireNodeAndText === undefined) {
+        throw new Error(`Text is undefined: ${JSON.stringify(sefariaRef)}`);
+      }
+      const end = (
+        findNodeOffset(entireNodeAndText.node, selection.focusNode!) + selection.focusOffset);
+      const start = end - selectedText.length;
+      const entireText = entireNodeAndText.text;
+      const wordCount = (str: string) => Array.from(str.split(" ")).length - 1;
+      commentSourceMetadata = {
+        startPercentage: start / entireText.length,
+        endPercentage: end / entireText.length,
+        wordCountStart: wordCount(entireText.slice(0, start)),
+        wordCountEnd: wordCount(entireText.slice(end)),
+        isEnglish,
+      };
     };
     const postComment = (comment: AnyComment) => {
-      if (selectedText === undefined) {
-        throw new Error("selectedText is undefined");
-      }
       driveClient.postComment({
         comment,
-        selectedText,
+        selectedText: checkNotUndefined(selectedText, "selectedText"),
         amud: sefariaRef.amud,
         ref: sefariaRef.ref,
         parentRef: sefariaRef.parentRef || sefariaRef.ref,
@@ -171,22 +183,9 @@ const onSelectionChange = () => {
       text: '<i class="material-icons">format_bold</i>',
       onClick: () => {
         captureSelectionState();
-        const {isEnglish, hebrew, translation} = sefariaRef;
-        const entireNodeAndText = isEnglish ? translation : hebrew;
-        if (entireNodeAndText === undefined) {
-          throw new Error(`Text is undefined: ${JSON.stringify(sefariaRef)}`);
-        }
-        const end = findNodeOffset(entireNodeAndText.node, focusNode!) + focusOffset;
-        const start = end - selectedText.length;
-        const entireText = entireNodeAndText.text;
-        const wordCount = (str: string) => Array.from(str.split(" ")).length - 1;
         postComment({
           highlight: true,
-          startPercentage: start / entireText.length,
-          endPercentage: end / entireText.length,
-          wordCountStart: wordCount(entireText.slice(0, start)),
-          wordCountEnd: wordCount(entireText.slice(end)),
-          isEnglish,
+          commentSourceMetadata: checkNotUndefined(commentSourceMetadata, "commentSourceMetadata"),
         });
       },
     });
@@ -216,7 +215,11 @@ const onSelectionChange = () => {
         captureSelectionState();
         $("#modal-save").off("click").on("click", () => {
           const text = noteTextArea.val() as string || "";
-          postComment({text});
+          postComment({
+            text,
+            commentSourceMetadata: checkNotUndefined(
+              commentSourceMetadata, "commentSourceMetadata"),
+          });
           modalContainer.hide();
         });
       },

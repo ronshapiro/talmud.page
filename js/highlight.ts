@@ -64,9 +64,10 @@ function percentageStrategy(
   highlight: HighlightCommentWithText,
   input: string,
 ): [number, number] {
+  const {startPercentage, endPercentage} = highlight.commentSourceMetadata;
   return [
-    Math.floor(highlight.startPercentage * input.length),
-    Math.ceil(highlight.endPercentage * input.length),
+    Math.floor(startPercentage * input.length),
+    Math.ceil(endPercentage * input.length),
   ];
 }
 
@@ -74,11 +75,12 @@ function wordCountStrategy(
   highlight: HighlightCommentWithText,
   input: string,
 ): [number, number] {
+  const {wordCountStart, wordCountEnd} = highlight.commentSourceMetadata;
   const parts = input.split(" ");
   let startCount = 0;
   for (let i = 0; i < parts.length; i++) {
     const part = parts[i];
-    if (i < highlight.wordCountStart) {
+    if (i < wordCountStart) {
       startCount += part.length;
       startCount += 1; // length of the space
     }
@@ -86,7 +88,7 @@ function wordCountStrategy(
   let endCount = input.length;
   for (let i = parts.length - 1; i >= 0; i--) {
     const part = parts[i];
-    if (i > highlight.wordCountEnd) {
+    if (i > wordCountEnd) {
       endCount -= part.length;
       endCount -= 1; // length of the space
     }

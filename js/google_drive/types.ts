@@ -1,17 +1,22 @@
 /* eslint-disable @typescript-eslint/no-empty-interface */
 import {UnaryFunction} from "../types";
 
-export interface TextComment {
-  text: string;
-}
-
-export interface HighlightComment {
-  highlight: true;
+export interface CommentSourceMetadata {
   startPercentage: number;
   endPercentage: number;
   wordCountStart: number;
   wordCountEnd: number;
   isEnglish: boolean;
+}
+
+export interface TextComment {
+  text: string;
+  commentSourceMetadata: CommentSourceMetadata;
+}
+
+export interface HighlightComment {
+  highlight: true;
+  commentSourceMetadata: CommentSourceMetadata;
 }
 
 export interface HighlightCommentWithText extends HighlightComment {

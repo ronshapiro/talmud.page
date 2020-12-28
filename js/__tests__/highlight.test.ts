@@ -1,18 +1,16 @@
 import {applyHighlight} from "../highlight";
 import {HighlightCommentWithText} from "../google_drive/types";
 
-const basicParams = {
-  startPercentage: 0,
-  endPercentage: 1,
-  wordCountStart: NaN,
-  wordCountEnd: NaN,
-  isEnglish: true,
-};
-
 function basicComment(text: string) {
   return {
-    ...basicParams,
     highlight: true,
+    commentSourceMetadata: {
+      startPercentage: 0,
+      endPercentage: 1,
+      wordCountStart: NaN,
+      wordCountEnd: NaN,
+      isEnglish: true,
+    },
     text,
   } as HighlightCommentWithText;
 }
@@ -54,13 +52,15 @@ test("wordCount", () => {
   const highlight = (
     applyHighlight(
       {
-        ...basicParams,
         highlight: true,
         text: "highlight",
-        startPercentage: 1,
-        endPercentage: 1,
-        wordCountStart: 1,
-        wordCountEnd: 2,
+        commentSourceMetadata: {
+          startPercentage: 1,
+          endPercentage: 1,
+          wordCountStart: 1,
+          wordCountEnd: 2,
+          isEnglish: true,
+        },
       },
       "highlight highlight highlight",
     ));
@@ -75,13 +75,15 @@ test("full text fallback", () => {
   const highlight = (
     applyHighlight(
       {
-        ...basicParams,
         highlight: true,
         text: "highlight",
-        startPercentage: 1,
-        endPercentage: 1,
-        wordCountStart: 3,
-        wordCountEnd: 2,
+        commentSourceMetadata: {
+          startPercentage: 1,
+          endPercentage: 1,
+          wordCountStart: 3,
+          wordCountEnd: 2,
+          isEnglish: true,
+        },
       },
       "highlight highlight highlight",
     ));

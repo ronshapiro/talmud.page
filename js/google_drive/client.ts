@@ -11,6 +11,7 @@ import {RetryMethodFactory} from "../retry";
 import {insertTableRequests} from "./tableRequests";
 import {
   AnyComment,
+  CommentSourceMetadata,
   HighlightComment,
   HighlightCommentWithText,
   ParagraphElement,
@@ -66,14 +67,13 @@ interface InternalNamedRange {
   joined: boolean | undefined;
 }
 
-function highlightCommentNamedRanges(comment: HighlightComment): string[] {
+function commentSourceMetadataNamedRanges(metadata: CommentSourceMetadata): string[] {
   return [
-    "highlight",
-    "startPercentage=" + comment.startPercentage,
-    "endPercentage=" + comment.endPercentage,
-    "wordCountStart=" + comment.wordCountStart,
-    "wordCountEnd=" + comment.wordCountEnd,
-    "isEnglish=" + comment.isEnglish,
+    "startPercentage=" + metadata.startPercentage,
+    "endPercentage=" + metadata.endPercentage,
+    "wordCountStart=" + metadata.wordCountStart,
+    "wordCountEnd=" + metadata.wordCountEnd,
+    "isEnglish=" + metadata.isEnglish,
   ];
 }
 
@@ -332,12 +332,14 @@ export class DriveClient {
     }
     return {
       range,
-      startPercentage: parseFloat(suffixes.startPercentage),
-      endPercentage: parseFloat(suffixes.endPercentage),
-      wordCountStart: parseInt(suffixes.wordCountStart),
-      wordCountEnd: parseInt(suffixes.wordCountEnd),
-      isEnglish: suffixes.isEnglish === "true",
       highlight: true,
+      commentSourceMetadata: {
+        startPercentage: parseFloat(suffixes.startPercentage),
+        endPercentage: parseFloat(suffixes.endPercentage),
+        wordCountStart: parseInt(suffixes.wordCountStart),
+        wordCountEnd: parseInt(suffixes.wordCountEnd),
+        isEnglish: suffixes.isEnglish === "true",
+      },
     };
   }
 
@@ -378,7 +380,8 @@ export class DriveClient {
       cellText: [{text: selectedText, bold: true, highlight: isHighlightComment(comment)}],
       rtl: true,
       rangeNames: (
-        (isHighlightComment(comment) ? highlightCommentNamedRanges(comment) : ["selected text"])
+        [isHighlightComment(comment) ? "highlight" : "selected text"]
+          .concat(commentSourceMetadataNamedRanges(comment.commentSourceMetadata))
           .map(x => rangeNameWithSuffix(x))
       ),
     });
