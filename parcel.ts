@@ -45,6 +45,7 @@ const bundler = new Bundler(entryFiles, {
   // @ts-ignore
   autoInstall: false,
   contentHash: isProd,
+  scopeHoist: isProd,
 });
 
 let flaskSubprocess: ChildProcess | undefined;
