@@ -10,7 +10,7 @@ def file_contents():
             start = book.start,
             end = book.end,
             isMasechet = book.is_masechet())
-    as_json = json.dumps(json_dict, indent = 2, sort_keys = True)
+    as_json = json.dumps(json_dict, indent = 2, sort_keys = True, ensure_ascii = False)
     return f"""interface Book {{
   start: string;
   end: string;

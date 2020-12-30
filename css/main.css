@@ -240,10 +240,10 @@ h2 {
 .commentary_header.jastrow {
     color: gray;
 }
-.commentary_header.ein-mishpat {
+.commentary_header.ein-mishpat, .commentary_header.sefer-hachinukh {
     color: rgb(68,138,255);
 }
-.commentary_header.mesorat-hashas {
+.commentary_header.mesorat-hashas, .commentary_header.torah-temima {
     color: rgb(124,77,255);
 }
 .text-loading-spinner {

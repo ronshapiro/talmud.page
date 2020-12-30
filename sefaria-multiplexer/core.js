@@ -54,9 +54,36 @@ function extractCommentaryData(link, sefariaResult) {
 
 function isDesiredCommentary(commentary) {
   return [
+    "Guide for the Perplexed",
+    "Haamek Davar",
+    "Ibn Ezra on ",
+    "JPS 1985 Footnotes",
+    "Kli Yakar on ",
+    "Malbim on ",
+    "Mei HaShiloach",
+    "Meshech Hochma",
+    "Radak on ",
+    "Rosh on ",
+    "Sefer HaChinukh",
+    "Sforno on ",
+    // TODO: reverse mesorat hashas/ein mishpat
+    /*
+      TODO: consider the following. But that'll probably have to chunk things up - in which case,
+      maybe have a chunking strategy that is predictable by the frontend server?
+      "Alshich on ",
+      "Abarbanel on",
+      "Kedushat Levi",
+      "Shulkhan Arukh, ",
+      "Onkelos",
+      "Rabbeinu Chananel",
+      "Ralbag Beur HaMilot",
+      "Ralbag on ",
+    */
+
     "Rashi on ",
     "Ramban on ",
     "Rashbam on ",
+    "Torah Temimah on ",
   ].some(x => commentary.index_title.indexOf(x) === 0)
     && commentary.category !== "Quoting Commentary";
 }

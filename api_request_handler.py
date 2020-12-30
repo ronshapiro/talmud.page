@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from books import BOOKS
+from commentaries import COMMENTARIES
 from enum import Enum
 from hadran import hadran_sections
 from hebrew import strip_hebrew_nonletters
@@ -300,7 +301,7 @@ class TanakhApiRequestHandler(AbstractApiRequestHandler):
             f"{book}.{chapter}",
             TANAKH_BASE_URL,
             # This seems to take a little bit longer, so bump up the default timeout
-            timeout=20)
+            timeout=40)
 
     def _make_id(self, book, chapter):
         return chapter
@@ -486,86 +487,6 @@ class ApiException(Exception):
         self.http_status = http_status
         self.internal_code = internal_code
 
-_COMMENTARIES = [
-    {
-        "englishName": "Translation",
-    },
-    {
-        "englishName": "Verses",
-        "category": "Tanakh",
-    },
-    {
-        "englishName": "Mishnah",
-        "category": "Mishnah",
-    },
-    {
-        "englishName": "Tosefta",
-        "englishNamePattern": re.compile("^Tosefta "),
-    },
-    {
-        "englishName": "Rashi",
-    },
-    {
-        "englishName": "Otzar Laazei Rashi",
-    },
-    {
-        "englishName": "Tosafot",
-    },
-    {
-        "englishName": "Rabbeinu Chananel",
-        "englishNamePattern": re.compile("^Rabbeinu Chananel on .*"),
-    },
-    {
-        "englishName": "Ramban",
-    },
-    {
-        "englishName": "Rashba",
-    },
-    {
-        "englishName": "Rashbam",
-    },
-    {
-        "englishName": "Maharsha",
-        "englishNamePattern": re.compile("(Chidushei Halachot|Chidushei Agadot)"),
-    },
-    {
-        "englishName": "Maharshal",
-        "englishNamePattern": re.compile("(Chokhmat Shlomo on .*|Chokhmat Shlomo)"),
-    },
-    {
-        "englishName": "Meir Lublin",
-        "englishNamePattern": re.compile("^Maharam$"),
-    },
-    {
-        "englishName": "Rosh",
-        "englishNamePattern": re.compile("^Rosh on "),
-    },
-    {
-        "englishName": "Ritva",
-    },
-    {
-        "englishName": "Rav Nissim Gaon",
-        "englishNamePattern": re.compile("^Rav Nissim Gaon on "),
-    },
-    {
-        "englishName": "Shulchan Arukh",
-        "englishNamePattern": re.compile("^Shulchan Arukh, "),
-    },
-    {
-        "englishName": "Mishneh Torah",
-        "englishNamePattern": re.compile("^Mishneh Torah, "),
-    },
-    {
-        "englishName": "Mesorat Hashas",
-        "type": "mesorat hashas",
-    },
-    {
-        "englishName": "Jastrow",
-    },
-    {
-        "englishName": "Steinsaltz",
-    }
-]
 
 def _has_matching_property(first, second, property_name):
     return property_name in first and \
@@ -574,7 +495,7 @@ def _has_matching_property(first, second, property_name):
 
 def _matching_commentary_kind(comment):
     name = comment["collectiveTitle"]["en"]
-    for kind in _COMMENTARIES:
+    for kind in COMMENTARIES:
         if name == kind["englishName"] or \
            _has_matching_property(comment, kind, "category") or \
            _has_matching_property(comment, kind, "type") or \
