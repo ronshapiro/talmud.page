@@ -4,30 +4,35 @@ import argparse
 import json
 
 def input_file_path(ref):
-    return f"test_data/api_request_handler/{ref}.input.json"
+    return f"test_data/api_request_handler/{ref.replace(' ', '_')}.input.json"
 
-class TestAmud(object):
-    def __init__(self, masechet, amud):
+class TestSection(object):
+    def __init__(self, masechet, section):
         self.masechet = masechet
-        self.amud = amud
+        self.section = section
 
     def __str__(self):
-        return "TestAmud(masechet = %s, amud = %s)" % (self.masechet, self.amud)
+        return "TestSection(masechet = %s, section = %s)" % (self.masechet, self.section)
 
     def output_file_path(self):
         return "test_data/api_request_handler/%s.%s.expected-output.json" % (
-            self.masechet, self.amud)
+            self.masechet.replace(" ", "_"), self.section)
 
-test_amudim = (
-    TestAmud("Berakhot", "2a"),
-    TestAmud("Berakhot", "34b"),
-    TestAmud("Shabbat", "100a"),
-    TestAmud("Eruvin", "11a"), # Has images
-    TestAmud("Eruvin", "6b"), # Has images, including a comment with multiple images
-    TestAmud("Eruvin", "105a"), # Ends with Hadran that has vocalization
-    TestAmud("Nazir", "33b"), # Has no gemara, just Tosafot
-    TestAmud("Shabbat", "74b"), # Has weird API response with nested comment text from Rosh
-    TestAmud("Tamid", "25b"), # No Rashi
+test_sections = (
+    TestSection("Berakhot", "2a"),
+    TestSection("Berakhot", "34b"),
+    TestSection("Shabbat", "100a"),
+    TestSection("Eruvin", "11a"), # Has images
+    TestSection("Eruvin", "6b"), # Has images, including a comment with multiple images
+    TestSection("Eruvin", "105a"), # Ends with Hadran that has vocalization
+    TestSection("Nazir", "33b"), # Has no gemara, just Tosafot
+    TestSection("Shabbat", "74b"), # Has weird API response with nested comment text from Rosh
+    TestSection("Tamid", "25b"), # No Rashi
+
+    TestSection("Genesis", "43"),
+    TestSection("Deuteronomy", "34"),
+    TestSection("I Samuel", "18"),
+    TestSection("Obadiah", "1"),
 )
 
 parser = argparse.ArgumentParser(description='Test')
@@ -49,14 +54,14 @@ class FakeResponse(object):
         return json.loads(self.text)
 
 def doTest():
-    request_handler = api_request_handler.TalmudApiRequestHandler(FakeRequestMaker())
-    for test_amud in test_amudim:
+    request_handler = api_request_handler.CompoundRequestHandler(FakeRequestMaker())
+    for test_section in test_sections:
         # translating to, and then from, json normalizes things like python tuples -> json lists
         actual = json.loads(json.dumps(
-            request_handler.handle_request(test_amud.masechet, test_amud.amud)))
-        expected = json.loads(open(test_amud.output_file_path(), "r").read())
+            request_handler.handle_request(test_section.masechet, test_section.section)))
+        expected = json.loads(open(test_section.output_file_path(), "r").read())
         if actual != expected:
-            raise AssertionError("Not equal for %s" % test_amud)
+            raise AssertionError("Not equal for %s" % test_section)
 
 class RecordingRequestMaker(object):
     def __init__(self):
@@ -68,10 +73,10 @@ class RecordingRequestMaker(object):
         return results
 
 def setup():
-    request_handler = api_request_handler.TalmudApiRequestHandler(RecordingRequestMaker())
-    for test_amud in test_amudim:
-        write_json(test_amud.output_file_path(),
-                   request_handler.handle_request(test_amud.masechet, test_amud.amud))
+    request_handler = api_request_handler.CompoundRequestHandler(RecordingRequestMaker())
+    for test_section in test_sections:
+        write_json(test_section.output_file_path(),
+                   request_handler.handle_request(test_section.masechet, test_section.section))
 
 if args.setup:
     setup()

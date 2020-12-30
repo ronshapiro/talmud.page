@@ -78,7 +78,7 @@ module.exports = {
       },
     },
     {
-      files: ["js/masechtot.js", "js/preferences_sample_data.js"],
+      files: ["js/books.ts", "js/preferences_sample_data.js"],
       rules: {
         "quote-props": "off",
         "comma-dangle": "off",

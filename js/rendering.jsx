@@ -9,6 +9,7 @@ import {render} from 'react-dom';
 import PropTypes from 'prop-types';
 import _ from "underscore";
 import {addDriveComments} from "./addDriveComments.ts";
+import {getCommentaryTypes} from "./commentaryTypes.ts";
 import isEmptyText from "./is_empty_text.ts";
 import {
   NextButton,
@@ -496,14 +497,16 @@ const indexCommentaryTypesByClassName = (commentaryTypes) => {
   return result;
 };
 
-class Renderer {
+export class Renderer {
   constructor(
     commentaryTypes,
+    isTalmud,
     translationOption,
     wrapTranslations,
     expandEnglishByDefault,
     navigationExtension) {
     this._commentaryTypes = commentaryTypes;
+    this._isTalmud = isTalmud;
     this._translationOption = translationOption;
     this.wrapTranslations = wrapTranslations;
     this.expandEnglishByDefault = expandEnglishByDefault;
@@ -529,7 +532,7 @@ class Renderer {
           section.steinsaltzRetained = true;
           commentaries.Translation = commentaries.Steinsaltz;
           delete commentaries.Steinsaltz;
-        } else if (section.ref.indexOf("Hadran ") === 0) {
+        } else if (section.ref.indexOf("Hadran ") === 0 || !this._isTalmud) {
           commentaries.Translation = {
             comments: [{
               ref: section.ref,
@@ -661,150 +664,12 @@ class Renderer {
 export class TalmudRenderer extends Renderer {
   constructor(translationOption, wrapTranslations, expandEnglishByDefault, navigationExtension) {
     super(
-      TalmudRenderer._defaultCommentaryTypes(),
+      getCommentaryTypes("talmud"),
+      true,
       translationOption,
       wrapTranslations,
       expandEnglishByDefault,
       navigationExtension);
-  }
-
-  static _defaultCommentaryTypes() {
-    const commentaryTypes = [
-      {
-        englishName: "Translation",
-        hebrewName: "Translation",
-        className: "translation",
-      },
-      {
-        englishName: "Verses",
-        hebrewName: 'תנ״ך',
-        className: "psukim",
-        showTitle: true,
-      },
-      {
-        englishName: "Mishnah",
-        hebrewName: "משנה",
-        className: "mishna",
-        showTitle: true,
-      },
-      {
-        englishName: "Tosefta",
-        hebrewName: "תוספתא",
-        className: "tosefta",
-        showTitle: true,
-      },
-      {
-        englishName: "Rashi",
-        hebrewName: 'רש"י',
-        className: "rashi",
-      },
-      {
-        englishName: "Otzar Laazei Rashi",
-        hebrewName: 'אוצר לעזי רש"י',
-        className: "otzar-laazei-rashi",
-      },
-      {
-        englishName: "Tosafot",
-        hebrewName: "תוספות",
-        className: "tosafot",
-      },
-      {
-        englishName: "Rabbeinu Chananel",
-        hebrewName: 'ר"ח',
-        className: "rabbeinu-chananel",
-      },
-      {
-        englishName: "Ramban",
-        hebrewName: 'רמב״ן',
-        className: "ramban",
-      },
-      {
-        englishName: "Rashba",
-        hebrewName: 'רשב״א',
-        className: "rashba",
-      },
-      {
-        englishName: "Rashbam",
-        hebrewName: 'רשב״ם',
-        className: "rashbam",
-      },
-      {
-        englishName: "Maharsha",
-        hebrewName: 'מהרש"א',
-        className: "maharsha",
-      },
-      {
-        englishName: "Maharshal",
-        hebrewName: 'מהרש"ל',
-        className: "maharshal",
-      },
-      {
-        englishName: "Meir Lublin",
-        hebrewName: 'מהר"ם לובלין',
-        className: "meir-lublin",
-      },
-      {
-        englishName: "Rosh",
-        hebrewName: 'רא"ש',
-        className: "rosh",
-      },
-      {
-        englishName: "Ritva",
-        hebrewName: 'ריטב"א',
-        className: "ritva",
-      },
-      {
-        englishName: "Rav Nissim Gaon",
-        hebrewName: "רבנו נסים",
-        className: "rav-nissim-gaon",
-      },
-      {
-        englishName: "Shulchan Arukh",
-        hebrewName: "שולחן ערוך",
-        className: "shulchan-arukh",
-        cssCategory: "ein-mishpat",
-        showTitle: true,
-      },
-      {
-        englishName: "Mishneh Torah",
-        hebrewName: "משנה תורה",
-        className: "mishneh-torah",
-        cssCategory: "ein-mishpat",
-        showTitle: true,
-      },
-      {
-        englishName: "Mesorat Hashas",
-        type: "mesorat hashas",
-        hebrewName: 'מסורת הש״ס',
-        className: "mesorat-hashas",
-        showTitle: true,
-      },
-      {
-        englishName: "Jastrow",
-        hebrewName: "Jastrow",
-        className: "jastrow",
-      },
-    ];
-
-    const steinsaltz = {
-      englishName: "Steinsaltz",
-      hebrewName: "שטיינזלץ",
-      className: "translation",
-    };
-
-    if (localStorage.showTranslationButton === "yes") {
-      commentaryTypes.push(steinsaltz);
-    } else {
-      commentaryTypes.unshift(steinsaltz);
-    }
-
-    commentaryTypes.push({
-      englishName: "Personal Notes",
-      hebrewName: "Personal Notes",
-      className: "personal-notes",
-    });
-
-    return commentaryTypes;
   }
 
   sortedAmudim() {
@@ -820,8 +685,3 @@ export class TalmudRenderer extends Renderer {
     return keys.map(key => this.allAmudim[key]);
   }
 }
-
-module.exports = {
-  Renderer,
-  TalmudRenderer,
-};

@@ -1,13 +1,13 @@
 #!/usr/bin/python
 
+from books import BOOKS
 from util.json_files import write_json
 import json
-import masechtot
 
 _PATH = "precomputed_texts/hadran.json"
 
 def hadran_sections(masechet):
-    masechet = masechtot.MASECHTOT_BY_CANONICAL_NAME[masechet]
+    masechet = BOOKS.by_canonical_name[masechet]
     with open(_PATH, "r") as f:
         return _process_sections(masechet, json.load(f)["sections"])
 

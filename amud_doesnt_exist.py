@@ -1,4 +1,4 @@
-class AmudDoesntExistException(Exception):
+class SectionDoesntExistException(Exception):
     def __init__(self, masechet, amudim):
         self._masechet = masechet
         self._amudim = amudim

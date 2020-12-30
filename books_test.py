@@ -1,17 +1,15 @@
-import masechtot
-
-_masechtot = masechtot.Masechtot()
+from books import BOOKS
 
 class Subject(object):
     def __init__(self, query):
         self.query = query
 
-    def is_extracted_to(self, masechet, start, end=None):
-        query_result = _masechtot.parse(self.query)
+    def is_extracted_to(self, title, start, end=None):
+        query_result = BOOKS.parse(self.query)
         errors = []
-        if query_result.masechet != masechet:
+        if query_result.book_name != title:
             errors.append(
-                "expected masechet to be %s, but was %s" % (masechet, query_result.masechet))
+                "expected title to be %s, but was %s" % (title, query_result.book_name))
         if query_result.start != start:
             errors.append("expected start to be %s, but was %s" % (start, query_result.start))
         if query_result.end != end:
@@ -22,7 +20,7 @@ class Subject(object):
 
     def doesnt_parse(self):
         try:
-            _masechtot.parse(self.query)
+            BOOKS.parse(self.query)
         except Exception:
             return
         raise AssertionError("%s successfully parsed (%s), but was expected not to")

@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+from books import BOOKS
 from enum import Enum
 from hadran import hadran_sections
 from hebrew import strip_hebrew_nonletters
@@ -18,13 +19,12 @@ import asyncio
 import httpx
 import os
 import re
-import masechtot
 
 _ALEPH = "א"
 _TAV = "ת"
 _STEINSALTZ_SUGYA_START = re.compile("^<big>[%s-%s]" % (_ALEPH, _TAV))
 
-TANAKH_BASE_URL = os.environ.get("TANAKH_BASE_URL")
+TANAKH_BASE_URL = os.environ.get("TANAKH_BASE_URL", "http://localhost:3000")
 
 class RealRequestMaker(object):
     async def make_request(self, ref, base_url, **kwargs):
@@ -263,7 +263,7 @@ class TalmudApiRequestHandler(AbstractApiRequestHandler):
                 "ref": "synthetic",
             }]
 
-        if masechtot.MASECHTOT_BY_CANONICAL_NAME[masechet].end == amud:
+        if BOOKS.by_canonical_name[masechet].end == amud:
             sections += hadran_sections(masechet)
         return sections
 
@@ -306,17 +306,28 @@ class TanakhApiRequestHandler(AbstractApiRequestHandler):
         return chapter
 
 
+class CompoundRequestHandler(object):
+    def __init__(self, request_maker, print_function=print):
+        self.talmud = TalmudApiRequestHandler(request_maker, print_function)
+        self.tanakh = TanakhApiRequestHandler(request_maker, print_function)
+
+    def handle_request(self, *args):
+        if BOOKS.by_canonical_name[args[0]].is_masechet():
+            handler = self.talmud
+        else:
+            handler = self.tanakh
+        return handler.handle_request(*args)
+
+
 class RemovalStrategy(Enum):
     REMOVE_TOP_LEVEL = 1
     REMOVE_NESTED = 2
 
 
-parse_masechtot = masechtot.Masechtot().parse
-
-def _masechet_ref(ref):
-    for masechet in masechtot.MASECHTOT_BY_CANONICAL_NAME.keys():
-        if ref.startswith(masechet):
-            return parse_masechtot(ref.split(":")[0])
+def _internal_linkable_ref(ref):
+    for title in BOOKS.by_canonical_name.keys():
+        if ref.startswith(title):
+            return BOOKS.parse(ref.split(":")[0])
 
 def strip_ref_segment_number(ref):
     if ":" not in ref:
@@ -382,15 +393,19 @@ class Comment(object):
         comment.source_ref = sefaria_comment["sourceRef"]
         comment.source_he_ref = sefaria_comment["sourceHeRef"]
 
-        masechet_ref = _masechet_ref(comment.source_ref)
-        if english_name == "Mesorat Hashas" and masechet_ref:
+        internal_linkable_ref = _internal_linkable_ref(comment.source_ref)
+        if english_name == "Mesorat Hashas" and internal_linkable_ref:
             comment.source_ref = strip_ref_segment_number(comment.source_ref)
             comment.source_he_ref = strip_ref_segment_number(comment.source_he_ref)
-            comment.talmud_page_link = masechet_ref.to_url_pathname()
         else:
             comment.source_he_ref = strip_ref_quotation_marks(comment.source_he_ref)
-            comment.talmud_page_link = None
+
         comment.english_name = english_name
+
+        if internal_linkable_ref:
+            comment.talmud_page_link = internal_linkable_ref.to_url_pathname()
+        else:
+            comment.talmud_page_link = None
 
         comment.subtitle = None
         if english_name == "Shulchan Arukh":

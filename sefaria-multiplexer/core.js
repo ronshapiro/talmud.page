@@ -35,6 +35,9 @@ function retainValues(json, ...keys) {
 
 function extractSourceTextData(sefariaResult) {
   const retained = retainValues(sefariaResult, "he", "text", "ref", "title", "indexTitle");
+  if (!retained.title) {
+    retained.title = sefariaResult.sectionRef;
+  }
   retained.commentary = [];
   return retained;
 }
@@ -43,12 +46,9 @@ function extractCommentaryData(link, sefariaResult) {
   const retained = retainValues(sefariaResult, "he", "text", "ref");
   Object.assign(
     retained,
-    retainValues(link, "sourceRef", "sourceHeRef", "anchorRefExpanded", "category", "type"),
+    retainValues(
+      link, "collectiveTitle", "sourceRef", "sourceHeRef", "anchorRefExpanded", "category", "type"),
   );
-  retained.collectiveTitle = {
-    en: sefariaResult.collectiveTitle,
-    he: sefariaResult.heCollectiveTitle,
-  };
   return retained;
 }
 
@@ -77,7 +77,7 @@ app.get("/:ref", async (req, res) => {
 
   // don't worry about checking the results - this is best effort
   await Promise.allSettled(linksResult.map(link => {
-    return textRequest(ref)
+    return textRequest(link.ref)
       .then(linkResult => {
         textResult.commentary.push(extractCommentaryData(link, linkResult));
       });

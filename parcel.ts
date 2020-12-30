@@ -23,6 +23,7 @@ const entryFiles = [
   './templates/notes_redirecter.html',
   './templates/preferences.html',
   './templates/talmud_page.html',
+  './templates/tanakh.html',
 ];
 
 const isProd = (() => {

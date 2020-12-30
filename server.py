@@ -1,11 +1,15 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-from amud_doesnt_exist import AmudDoesntExistException
+from amud_doesnt_exist import SectionDoesntExistException
 from api_request_handler import ApiException
+from api_request_handler import CompoundRequestHandler
 from api_request_handler import RealRequestMaker
-from api_request_handler import TalmudApiRequestHandler
-from api_request_handler import TanakhApiRequestHandler
+from books import BOOKS
+from books import InvalidQueryException
+from books import next_amud
+from books import previous_amud
+from books import UnknownBookNameException
 from flask import Flask
 from flask import has_request_context
 from flask import jsonify
@@ -15,11 +19,6 @@ from flask import render_template_string
 from flask import request
 from flask import send_file
 from flask import url_for
-from masechtot import InvalidQueryException
-from masechtot import Masechtot
-from masechtot import UnknownMasechetNameException
-from masechtot import next_amud
-from masechtot import previous_amud
 from util.json_files import write_json
 import cachetools
 import flask.logging
@@ -39,10 +38,8 @@ def print(*args):
 
 random_hash = ''.join(random.choice(string.ascii_letters) for i in range(7))
 app = Flask(__name__)
-masechtot = Masechtot()
 request_maker = RealRequestMaker()
-api_request_handler = TalmudApiRequestHandler(request_maker, print_function=app.logger.info)
-tanakh_api_request_handler = TanakhApiRequestHandler(request_maker, print_function=app.logger.info)
+api_request_handler = CompoundRequestHandler(request_maker, print_function=app.logger.info)
 
 class RequestFormatter(logging.Formatter):
     width = 1
@@ -94,20 +91,20 @@ def homepage():
 @app.route("/view_daf", methods = ["POST"])
 def search_handler():
     query = request.form["search_term"]
-    parsed = masechtot.parse(query)
+    parsed = BOOKS.parse(query)
     if parsed.end:
-        return redirect(url_for("amud_range",
-                                masechet = parsed.masechet,
+        return redirect(url_for("section_range",
+                                title = parsed.book_name,
                                 start = parsed.start,
                                 end = parsed.end))
-    return redirect(url_for("amud",
-                            masechet = parsed.masechet,
-                            amud = parsed.start))
+    return redirect(url_for("section",
+                            title = parsed.book_name,
+                            section = parsed.start))
 
-def _validate_amudim(masechet, *amudim):
-    non_existent_amudim = list(filter(lambda x: not masechtot.does_amud_exist(masechet, x), amudim))
-    if non_existent_amudim:
-        raise AmudDoesntExistException(masechet, non_existent_amudim)
+def _validate_sections(book, *sections):
+    non_existent_sections = list(filter(lambda x: not book.does_section_exist(x), sections))
+    if non_existent_sections:
+        raise SectionDoesntExistException(book.canonical_name, non_existent_sections)
 
 def are_amudim_in_reverse_order(start, end):
     start_number = int(start[:-1])
@@ -125,46 +122,54 @@ def redirect_for_full_daf(masechet, start, end):
         start = f"{start}a"
     if end.isdigit():
         end = f"{end}b"
-    if (not masechtot.does_amud_exist(masechet, end) and (
-            masechtot.does_amud_exist(masechet, previous_amud(end)))):
+    if (not BOOKS.does_section_exist(masechet, end) and (
+            BOOKS.does_section_exist(masechet, previous_amud(end)))):
         end = previous_amud(end)
-    if (not masechtot.does_amud_exist(masechet, start) and (
-            masechtot.does_amud_exist(masechet, next_amud(start)))):
+    if (not BOOKS.does_section_exist(masechet, start) and (
+            BOOKS.does_section_exist(masechet, next_amud(start)))):
         start = next_amud(start)
 
     if are_amudim_in_reverse_order(start, end):
         return redirect_for_full_daf(masechet, original_end, original_start)
 
-    return redirect(url_for("amud_range", masechet = masechet, start = start, end = end))
+    return redirect(url_for("section_range", title = masechet, start = start, end = end))
 
-@app.route("/<masechet>/<amud>")
-def amud(masechet, amud):
-    canonical_masechet = masechtot.canonical_url_masechet_name(masechet)
-    if canonical_masechet != masechet:
-        return redirect(url_for("amud", masechet = canonical_masechet, amud = amud))
-    if amud.isdigit():
-        return redirect_for_full_daf(masechet, amud, amud)
-    _validate_amudim(masechet, amud)
-    return render_compiled_template("talmud_page.html", title = f"{masechet} {amud}")
+def template(book):
+    if book.is_masechet():
+        return "talmud_page.html"
+    return "tanakh.html"
 
-@app.route("/<masechet>/<start>/to/<end>")
-def amud_range(masechet, start, end):
+@app.route("/<title>/<section>")
+def section(title, section):
+    canonical_name = BOOKS.canonical_url_name(title)
+    if canonical_name != title:
+        return redirect(url_for("section", title = canonical_name, section = section))
+    book = BOOKS.by_canonical_name[canonical_name]
+    if book.is_masechet() and section.isdigit():
+        return redirect_for_full_daf(title, section, section)
+    _validate_sections(book, section)
+    return render_compiled_template(template(book), title = f"{title} {section}")
+
+@app.route("/<title>/<start>/to/<end>")
+def section_range(title, start, end):
     if start == end:
-        return redirect(url_for("amud", masechet = masechet, amud = start))
+        return redirect(url_for("section", title = title, section = start))
 
-    canonical_masechet = masechtot.canonical_url_masechet_name(masechet)
-    if canonical_masechet != masechet:
+    canonical_name = BOOKS.canonical_url_name(title)
+    if canonical_name != title:
         return redirect(url_for(
-            "amud_range", masechet = canonical_masechet, start = start, end = end))
-    if start.isdigit() or end.isdigit():
-        return redirect_for_full_daf(masechet, start, end)
-    _validate_amudim(masechet, start, end)
+            "section_range", title = canonical_name, start = start, end = end))
+    book = BOOKS.by_canonical_name[canonical_name]
+    if book.is_masechet() and (start.isdigit() or end.isdigit()):
+        return redirect_for_full_daf(title, start, end)
+    _validate_sections(book, start, end)
 
-    if are_amudim_in_reverse_order(start, end):
+    if (book.is_masechet() and are_amudim_in_reverse_order(start, end)) or \
+       (not book.is_masechet() and int(start) > int(end)):
         return redirect(url_for(
-            "amud_range", masechet = canonical_masechet, start = end, end = start))
+            "section_range", title = canonical_name, start = end, end = start))
 
-    return render_compiled_template("talmud_page.html", title = f"{masechet} {start} - {end}")
+    return render_compiled_template(template(book), title = f"{title} {start} - {end}")
 
 # Creates a capturing lambda
 def send_file_fn(name):
@@ -191,17 +196,17 @@ for name in os.listdir("dist"):
 for name in os.listdir("fonts"):
     app.add_url_rule("/font/%s" % name, name, send_file_fn("fonts/%s" % name))
 
-@app.errorhandler(AmudDoesntExistException)
-def amud_doesnt_exist_404(e):
+@app.errorhandler(SectionDoesntExistException)
+def section_doesnt_exist_404(e):
     return render_template("error_page.html", message=e.message(), title="Error"), 404
 
 @app.errorhandler(InvalidQueryException)
 def invalid_query_404(e):
     return render_template("error_page.html", message=e.message, title="Invalid Query"), 404
 
-@app.errorhandler(UnknownMasechetNameException)
-def unknown_masechet_404(e):
-    message = f'Could not find masechet "{e.name}"'
+@app.errorhandler(UnknownBookNameException)
+def unknown_book_404(e):
+    message = f'Could not find title "{e.name}"'
     return render_template("error_page.html", message=message, title="Invalid Query"), 404
 
 @app.errorhandler(404)
@@ -224,32 +229,32 @@ def json_size_in_memory(json_object):
 def next_smallest_power_of_2(ideal_value):
     return 2 ** math.floor(math.log(ideal_value, 2))
 
-amud_cache = cachetools.LRUCache(
+section_cache = cachetools.LRUCache(
     # cachetools documentation states that maxsize performs best if it is a power of 2
     maxsize = next_smallest_power_of_2(
         # 150MB, which gets translated into something closer to 134mb by next_smallest_power_of_2
         150 * 1e6),
     getsizeof = json_size_in_memory)
 
-amudim_to_cache_queue = queue.Queue()
+sections_to_cache_queue = queue.Queue()
 
-def cache_amud_response_in_background():
+def cache_section_response_in_background():
     while True:
-        masechet, amud = amudim_to_cache_queue.get()
-        get_and_cache_amud_json(masechet, amud, verb="Precaching")
-        amudim_to_cache_queue.task_done()
-        app.logger.info(f"Queue size: {amudim_to_cache_queue.qsize()}")
+        title, section = sections_to_cache_queue.get()
+        get_and_cache_section_json(title, section, verb="Precaching")
+        sections_to_cache_queue.task_done()
+        app.logger.info(f"Queue size: {sections_to_cache_queue.qsize()}")
 
-threading.Thread(target=cache_amud_response_in_background, daemon=True).start()
+threading.Thread(target=cache_section_response_in_background, daemon=True).start()
 
-def get_and_cache_amud_json(masechet, amud, verb="Requesting"):
-    cache_key = (masechet, amud)
-    response = amud_cache.get(cache_key)
+def get_and_cache_section_json(title, section, verb="Requesting"):
+    cache_key = (title, section)
+    response = section_cache.get(cache_key)
     if not response:
         try:
-            app.logger.info(f"{verb} {masechet} {amud}")
-            response = api_request_handler.handle_request(masechet, amud)
-            app.logger.info(f"{verb} {masechet} {amud} --- Done")
+            app.logger.info(f"{verb} {title} {section}")
+            response = api_request_handler.handle_request(title, section)
+            app.logger.info(f"{verb} {title} {section} --- Done")
         except ApiException as e:
             return {"error": e.message, "code": e.internal_code}, e.http_status
         except Exception:
@@ -258,32 +263,33 @@ def get_and_cache_amud_json(masechet, amud, verb="Requesting"):
             traceback.print_exc()
             return {"error": "An unknown exception occurred", "id": _uuid}, 500
     # no matter what, always update the LRU status
-    amud_cache[cache_key] = response
+    section_cache[cache_key] = response
     return response, 200
 
-@app.route("/api/<masechet>/<amud>")
-def amud_json(masechet, amud):
-    canonical_masechet = masechtot.canonical_url_masechet_name(masechet)
-    if canonical_masechet != masechet:
-        return redirect(url_for("amud_json", masechet = canonical_masechet, amud = amud))
+@app.route("/api/<title>/<section>")
+def section_json(title, section):
+    canonical_name = BOOKS.canonical_url_name(title)
+    if canonical_name != title:
+        return redirect(url_for("section_json", title = canonical_name, section = section))
+    book = BOOKS.by_canonical_name[canonical_name]
     try:
-        _validate_amudim(masechet, amud)
-    except AmudDoesntExistException as e:
+        _validate_sections(book, section)
+    except SectionDoesntExistException as e:
         return jsonify({"error": e.message()}), 404
 
-    response, code = get_and_cache_amud_json(masechet, amud)
+    response, code = get_and_cache_section_json(title, section)
 
-    for possible_amud in [previous_amud(amud), next_amud(amud)]:
-        if masechtot.does_amud_exist(masechet, possible_amud):
-            amudim_to_cache_queue.put((masechet, possible_amud))
+    if book.is_masechet():
+        possible_sections = [previous_amud(section), next_amud(section)]
+    else:
+        possible_sections = [str(int(section) - 1), str(int(section) + 1)]
+    for possible_section in possible_sections:
+        if BOOKS.does_section_exist(title, possible_section):
+            sections_to_cache_queue.put((title, possible_section))
         else:
-            app.logger.error(f"Ignoring {possible_amud}")
+            app.logger.error(f"Ignoring {possible_section}")
 
     return jsonify(response), code
-
-@app.route("/api/tanakh/<book>/<int:chapter>")
-def tanach_json(book, chapter):
-    return jsonify(tanakh_api_request_handler.handle_request(book, chapter))
 
 @app.route("/preferences")
 def preferences():
@@ -304,13 +310,13 @@ def google_docs_caveats():
 def all_notes():
     return redirect("https://drive.google.com/drive/search?q=talmud.page notes")
 
-@app.route("/<masechet>/notes")
-def notes(masechet):
-    canonical_masechet = masechtot.canonical_url_masechet_name(masechet)
-    if canonical_masechet != masechet:
-        return redirect(url_for("notes", masechet = canonical_masechet))
+@app.route("/<title>/notes")
+def notes(title):
+    canonical_name = BOOKS.canonical_url_name(title)
+    if canonical_name != title:
+        return redirect(url_for("notes", title = canonical_name))
 
-    return render_compiled_template("notes_redirecter.html", masechet=masechet)
+    return render_compiled_template("notes_redirecter.html", title=title)
 
 @app.route("/yomi")
 @app.route("/daf-yomi")
