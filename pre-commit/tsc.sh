@@ -3,26 +3,27 @@
 set -eu
 shopt -s extglob
 
-parcel=""
-files=()
+webFiles=()
+nodeFiles=()
 for x in "$@"; do
     case $x in
-        parcel.ts ) parcel="parcel.ts";;
-        *.@(ts|tsx) ) files+=($x);;
+        js/*.@(ts|tsx))
+            webFiles+=($x);;
+        *.@(ts|tsx))
+            nodeFiles+=($x);;
     esac
 done
 
 args() {
     echo --noEmit \
          --strict \
-         --pretty \
-         --jsx react
+         --pretty
 }
 
-if [[ -n "${files[@]:-}" ]]; then
-    npx tsc $(args) --lib es2019,dom --esModuleInterop ${files[@]:-}
+if [[ -n "${webFiles[@]:-}" ]]; then
+    npx tsc $(args) --lib es2019,dom --esModuleInterop --jsx react ${webFiles[@]:-}
 fi
 
-if [[ -n "${parcel}" ]]; then
-    npx tsc $(args) "${parcel}"
+if [[ -n "${nodeFiles[@]:-}" ]]; then
+    npx tsc $(args) --lib es2020,dom ${nodeFiles[@]:-}
 fi

@@ -5,7 +5,9 @@ repos:
     hooks:
     -   id: check-yaml
     -   id: end-of-file-fixer
+        require_serial: true
     -   id: trailing-whitespace
+        require_serial: true
 -   repo: https://gitlab.com/pycqa/flake8
     rev: 'c8494e7ac0d017d032edc0a402c569b2fddb8a7f'
     hooks:
@@ -17,6 +19,7 @@ repos:
             --exclude=venv,
             --max-line-length=100
         ]
+        require_serial: true
 -   repo: local
     hooks:
     -   id: check-custom
