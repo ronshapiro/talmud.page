@@ -39,6 +39,8 @@ module.exports = {
     "no-plusplus": "off",
     "no-trailing-spaces": "off", // pre-commit will enforce this
     "no-underscore-dangle": "off",
+    "no-useless-constructor": "off",
+    "@typescript-eslint/no-useless-constructor": ["error"],
     "object-curly-newline": "off",
     "object-curly-spacing": "off",
     "prefer-template": "off",
@@ -47,8 +49,10 @@ module.exports = {
     "react/destructuring-assignment": "off",
     "react/static-property-placement": "off",
     "no-restricted-syntax": "off",
-    "no-unused-vars": "off", // Let the typescript-eslint version rule
-    "no-use-before-define": "off", // Let the typescript-eslint version rule
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
     "spaced-comment": ["error", "always", {
       "block": {
         "exceptions": ["/"],
@@ -58,8 +62,7 @@ module.exports = {
     "@typescript-eslint/no-empty-function": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
-    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
-    "@typescript-eslint/no-use-before-define": ["error"],
+
 
     // These rules may be removable with some work
     "no-param-reassign": "off",
