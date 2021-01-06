@@ -58,7 +58,7 @@ class AbstractApiRequestHandler(object):
         raise NotImplementedError()
 
     def _make_sub_ref(self, main_ref, index):
-        return f"{main_ref}.{index + 1}"
+        return f"{main_ref}:{index + 1}"
 
     def _section_splitter(self):
         return ":"
