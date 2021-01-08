@@ -58,6 +58,7 @@ export interface DriveClient {
   masechet: string;
 }
 
+// https://www.typescriptlang.org/docs/handbook/namespaces.html#aliases
 // TODO: make some of the properties requried
 export interface Color extends gapi.client.docs.OptionalColor {}
 export interface Request extends gapi.client.docs.Request {}

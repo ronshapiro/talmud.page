@@ -138,11 +138,15 @@ test("Simple v2 comments", () => {
           ],
           "he": "",
           "ref": "Exodus 11:7-personal0",
+          "sourceRef": "<synthetic>",
+          "sourceHeRef": "<synthetic>",
         }],
         "Pesachim 23a.7": [{
           "en": "",
           "he": ['<span class="personal-comment-bold">עוווווד עמוד</span> - Another amud'],
           "ref": "Pesachim 23a.7-personal0",
+          "sourceRef": "<synthetic>",
+          "sourceHeRef": "<synthetic>",
         }],
         "Pesachim 22a.1": [
           {
@@ -151,6 +155,8 @@ test("Simple v2 comments", () => {
               '<span class="personal-comment-bold">תגובההה סטנדריטת</span> - Standard comment',
             ],
             "ref": "Pesachim 22a.1-personal0",
+            "sourceRef": "<synthetic>",
+            "sourceHeRef": "<synthetic>",
           },
           {
             "en": "",
@@ -158,17 +164,23 @@ test("Simple v2 comments", () => {
               '<span class="personal-comment-bold">תגובההה סטנדרתית 2</span> - Standard comment 2',
             ],
             "ref": "Pesachim 22a.1-personal1",
+            "sourceRef": "<synthetic>",
+            "sourceHeRef": "<synthetic>",
           },
           {
             "en": ['<span class="personal-comment-bold">יר? אוֹתוֹ</span> - Return to earlier ref'],
             "he": "",
             "ref": "Pesachim 22a.1-personal2",
+            "sourceRef": "<synthetic>",
+            "sourceHeRef": "<synthetic>",
           },
         ],
         "Pesachim 22a.3": [{
           "en": "",
           "he": ['<span class="personal-comment-bold">גִּיד הַנָּשֶׁ</span> - הערה בערבית'],
           "ref": "Pesachim 22a.3-personal0",
+          "sourceRef": "<synthetic>",
+          "sourceHeRef": "<synthetic>",
         }],
         "Rashi on Pesachim 22a:1:1": [{
           "en": "",
@@ -176,6 +188,8 @@ test("Simple v2 comments", () => {
             '<span class="personal-comment-bold">תגובה ברש״ייייייי</span> - Comment on Rashi',
           ],
           "ref": "Rashi on Pesachim 22a:1:1-personal0",
+          "sourceRef": "<synthetic>",
+          "sourceHeRef": "<synthetic>",
         }],
       });
     });
@@ -193,17 +207,23 @@ test("v1 and v2 comments", () => {
             ],
             "he": "",
             "ref": "Exodus 11:7-personal0",
+            "sourceRef": "<synthetic>",
+            "sourceHeRef": "<synthetic>",
           },
           {
             "en": ["v1 - nested rashi"],
             "he": "",
             "ref": "Exodus 11:7-personal1",
+            "sourceRef": "<synthetic>",
+            "sourceHeRef": "<synthetic>",
           },
         ],
         "Pesachim 23a.7": [{
           "en": "",
           "he": ['<span class="personal-comment-bold">עוווווד עמוד</span> - Another amud'],
           "ref": "Pesachim 23a.7-personal0",
+          "sourceRef": "<synthetic>",
+          "sourceHeRef": "<synthetic>",
         }],
         "Pesachim 22a.1": [
           {
@@ -212,6 +232,8 @@ test("v1 and v2 comments", () => {
               '<span class="personal-comment-bold">תגובההה סטנדריטת</span> - Standard comment',
             ],
             "ref": "Pesachim 22a.1-personal0",
+            "sourceRef": "<synthetic>",
+            "sourceHeRef": "<synthetic>",
           },
           {
             "en": "",
@@ -219,17 +241,23 @@ test("v1 and v2 comments", () => {
               '<span class="personal-comment-bold">תגובההה סטנדרתית 2</span> - Standard comment 2',
             ],
             "ref": "Pesachim 22a.1-personal1",
+            "sourceRef": "<synthetic>",
+            "sourceHeRef": "<synthetic>",
           },
           {
             "en": ['<span class="personal-comment-bold">יר? אוֹתוֹ</span> - Return to earlier ref'],
             "he": "",
             "ref": "Pesachim 22a.1-personal2",
+            "sourceRef": "<synthetic>",
+            "sourceHeRef": "<synthetic>",
           },
         ],
         "Pesachim 22a.3": [{
           "en": "",
           "he": ['<span class="personal-comment-bold">גִּיד הַנָּשֶׁ</span> - הערה בערבית'],
           "ref": "Pesachim 22a.3-personal0",
+          "sourceRef": "<synthetic>",
+          "sourceHeRef": "<synthetic>",
         }],
         "Rashi on Pesachim 22a:1:1": [
           {
@@ -238,11 +266,15 @@ test("v1 and v2 comments", () => {
               '<span class="personal-comment-bold">תגובה ברש״ייייייי</span> - Comment on Rashi',
             ],
             "ref": "Rashi on Pesachim 22a:1:1-personal0",
+            "sourceRef": "<synthetic>",
+            "sourceHeRef": "<synthetic>",
           },
           {
             "en": ["v1 - rashi"],
             "he": "",
             "ref": "Rashi on Pesachim 22a:1:1-personal1",
+            "sourceRef": "<synthetic>",
+            "sourceHeRef": "<synthetic>",
           },
         ],
         "Pesachim 22a.4": [
@@ -250,22 +282,30 @@ test("v1 and v2 comments", () => {
             "en": ["V1 comment"],
             "he": "",
             "ref": "Pesachim 22a.4-personal0",
+            "sourceRef": "<synthetic>",
+            "sourceHeRef": "<synthetic>",
           },
           {
             "en": "",
             "he": ["לללללללללללללללללללללל - v1, second comment"],
             "ref": "Pesachim 22a.4-personal1",
+            "sourceRef": "<synthetic>",
+            "sourceHeRef": "<synthetic>",
           },
         ],
         "Pesachim 22a.5": [{
           "en": ["v1 - a new ref"],
           "he": "",
           "ref": "Pesachim 22a.5-personal0",
+          "sourceRef": "<synthetic>",
+          "sourceHeRef": "<synthetic>",
         }],
         "Rashi on Pesachim 22a:1:2": [{
           "en": ["v1 - a second rashi"],
           "he": "",
           "ref": "Rashi on Pesachim 22a:1:2-personal0",
+          "sourceRef": "<synthetic>",
+          "sourceHeRef": "<synthetic>",
         }],
       });
     });

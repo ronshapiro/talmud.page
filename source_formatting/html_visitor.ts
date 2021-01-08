@@ -1,5 +1,7 @@
 import {JSDOM} from "jsdom";
 
+const {Node} = new JSDOM().window;
+
 function isElement(node: Node): node is Element {
   return node.nodeType === Node.ELEMENT_NODE;
 }
@@ -12,21 +14,30 @@ export type Attributes = [string, string][];
 
 const NO_END_TAGS = new Set(["br", "img"]);
 
-type NDimensionalString = string | NDimensionalString[];
+type MultiDimensionalString = string[] | MultiDimensionalString[];
 
 export class HtmlVisitor {
   englishNameIgnore: Set<string | undefined> = new Set([]);
+  englishNamesToProcess: Set<string | undefined> | undefined;
   _out: string[] = []
 
-  static process(inputs: NDimensionalString, englishName?: string): NDimensionalString {
+  static process<T extends string | MultiDimensionalString>(inputs: T, englishName?: string): T {
     if (Array.isArray(inputs)) {
-      return inputs.map(x => this.process(x));
+      // @ts-ignore
+      return inputs.map(x => this.process(x)) as T;
     }
     const visitor = new this();
-    if (visitor.englishNameIgnore.has(englishName)) {
+    if (visitor.englishNamesToProcess) {
+      if (!visitor.englishNamesToProcess.has(englishName)) {
+        // @ts-ignore
+        return inputs;
+      }
+    } else if (visitor.englishNameIgnore.has(englishName)) {
+      // @ts-ignore
       return inputs;
     }
 
+    // @ts-ignore
     return visitor.processSingle(inputs);
   }
 

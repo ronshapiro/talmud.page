@@ -1,6 +1,6 @@
 /* global gtag */
 import {v4 as uuid} from "uuid";
-import {Commentary} from "../apiTypes";
+import {Commentary} from "../../apiTypes";
 import {rgbColor} from "./color";
 import {refSorter} from "./ref_sorter";
 import {extractDocumentText} from "./document_text";
@@ -522,6 +522,8 @@ export class DriveClient {
           en: english > hebrew ? text : "",
           he: hebrew >= english ? text : "",
           ref: `${ref}-personal${index}`,
+          sourceRef: "<synthetic>",
+          sourceHeRef: "<synthetic>",
         };
       }),
     };

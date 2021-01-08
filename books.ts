@@ -98,7 +98,7 @@ interface MasechetConstructorParams extends Omit<BookConstructorParams, "section
   start?: string;
 }
 
-class Masechet extends Book {
+export class Masechet extends Book {
   vocalizedHebrewName: string;
 
   constructor(params: MasechetConstructorParams) {

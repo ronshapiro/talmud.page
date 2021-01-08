@@ -49,6 +49,8 @@ module.exports = {
     "react/destructuring-assignment": "off",
     "react/static-property-placement": "off",
     "no-restricted-syntax": "off",
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
     "no-use-before-define": "off",
@@ -97,6 +99,12 @@ module.exports = {
       files: ["*.tsx"],
       rules: {
         "react/jsx-filename-extension": "off",
+      },
+    },
+    {
+      files: ["api_request_handler.ts"],
+      rules: {
+        "no-console": "off",
       },
     },
   ],

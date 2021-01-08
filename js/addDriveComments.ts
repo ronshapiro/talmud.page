@@ -1,4 +1,4 @@
-import {Amud, Commentary, Section, ApiComment} from "./apiTypes";
+import {Amud, Commentary, Section, ApiComment} from "../apiTypes";
 import {applyHighlight} from "./highlight";
 import {DriveClient} from "./google_drive/client";
 

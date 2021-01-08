@@ -1182,7 +1182,8 @@ function applyRegex(text: string, abbreviation: Abbreviation): string {
   const pieces: string[] = [];
   let lastStart = 0;
   for (const match of matches) {
-    pieces.push(text.substring(lastStart, match.index));
+    const index: number = match.index!;
+    pieces.push(text.substring(lastStart, index));
     if (match[1]) {
       pieces.push(match[1]);
     }
@@ -1190,7 +1191,7 @@ function applyRegex(text: string, abbreviation: Abbreviation): string {
       pieces.push(match[2]);
     }
     pieces.push(abbreviation.expanded);
-    lastStart = match.index! + match[0].length;
+    lastStart = index + match[0].length;
   }
   pieces.push(text.substring(lastStart));
 
@@ -1204,9 +1205,11 @@ function deabbreviate(text: string): string {
   return text;
 }
 
-const ADDITIONAL_TRANSLATION = /—\\d*\\)/g;
+const ADDITIONAL_TRANSLATION = /—\d*\)/g;
 
 export class JastrowReformatter extends HtmlVisitor {
+  englishNamesToProcess = new Set(["Jastrow"]);
+
   visitStartTag(tag: string, attributes: Attributes): void {
     if (tag === "b") {
       this.appendText("<br>");

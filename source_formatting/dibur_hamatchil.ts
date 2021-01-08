@@ -9,9 +9,16 @@ const SPLITTERS = [
   "–",
 ].map(x => ` ${x} `);
 
-export function boldDibureiHamatchil(text: string, commentaryName: string): string {
+export function boldDibureiHamatchil(
+  text: sefaria.TextType,
+  commentaryName: string,
+): sefaria.TextType {
   if (!TITLES_TO_BOLDIFY.has(commentaryName)) {
     return text;
+  }
+
+  if (Array.isArray(text)) {
+    return text.map(x => boldDibureiHamatchil(x, commentaryName)) as sefaria.TextType;
   }
 
   for (const splitter of SPLITTERS) {
