@@ -1215,6 +1215,9 @@ export class JastrowReformatter extends HtmlVisitor {
       this.appendText("<br>");
     }
     this.appendStartTag(tag, attributes);
+    if (tag === "br") {
+      this.appendEndTag(tag);
+    }
   }
 
   visitEndTag(tag: string): void {

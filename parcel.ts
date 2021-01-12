@@ -1,14 +1,34 @@
 /* eslint import/no-extraneous-dependencies: ["error", {"devDependencies": true}] */
 /* eslint no-console: "off" */
 import * as chalk from 'chalk';
+import * as http from "http";
 import * as Bundler from 'parcel-bundler';
 import * as fs from 'fs';
 import {spawn, ChildProcess} from "child_process";
-// @ts-ignore
-import * as multiplexerApp from "./sefaria-multiplexer/core";
+import {expressMain} from "./express";
 
 const ls = (dir: string): string[] => {
   return fs.readdirSync(dir).map(x => `${dir}/${x}`);
+};
+
+const IGNORE_FILES = new Set(["node_modules", "venv", "__pycache__", "dist", ".eslintrc.js"]);
+
+const jsFiles = (dir: string): string[] => {
+  const files: string[] = [];
+  for (const x of fs.readdirSync(dir, {withFileTypes: true})) {
+    if (IGNORE_FILES.has(x.name)) continue;
+
+    const name = dir === "." ? x.name : `${dir}/${x.name}`;
+    if (x.isDirectory()) {
+      files.push(...jsFiles(name));
+    } else if (name.endsWith(".js")
+      || name.endsWith(".ts")
+      || name.endsWith(".jsx")
+      || name.endsWith(".tsx")) {
+      files.push(name);
+    }
+  }
+  return files;
 };
 
 if (fs.existsSync("./dist")) {
@@ -48,48 +68,27 @@ const bundler = new Bundler(entryFiles, {
   scopeHoist: isProd,
 });
 
-let flaskSubprocess: ChildProcess | undefined;
-let flaskDied = false;
-const startFlask = () => {
-  flaskDied = false;
-  if (flaskSubprocess) {
-    flaskSubprocess.kill();
-  }
-  flaskSubprocess = spawn("./venv/bin/python3", [
-    "-u", // Force unbuffered outputs for stdout and stderr so that outputs are visible immediately
-    "server.py",
-  ], {
-    env: {
-      FLASK_ENV: "development",
-      TANAKH_BASE_URL: process.env.TANAKH_BASE_URL || "http://localhost:3000",
-    },
-  });
-  flaskSubprocess.stdout!.pipe(process.stdout);
-  flaskSubprocess.stderr!.pipe(process.stderr);
-  flaskSubprocess.on("exit", () => {
-    flaskDied = true;
-  });
-};
-const killFlask = () => {
-  if (flaskSubprocess) {
-    flaskSubprocess.kill();
-  }
+let server: http.Server | undefined;
+
+const killServer = () => server?.close();
+const startServer = () => {
+  killServer();
+  server = expressMain(5000);
 };
 
 if (!isProd) {
-  if (!process.env.TANAKH_BASE_URL) {
-    multiplexerApp.listen();
-  }
-
   let distFiles = new Set();
   const compilerSubprocesses: ChildProcess[] = [];
   bundler.on('bundled', () => {
     const newDistFiles = fs.readdirSync("./dist");
     if (distFiles.size !== newDistFiles.length || !newDistFiles.every(x => distFiles.has(x))) {
       distFiles = new Set(newDistFiles);
-      startFlask();
-    } else if (flaskDied) {
-      startFlask();
+      startServer();
+    }
+    for (const template of fs.readdirSync("./templates")) {
+      if (!distFiles.has(template)) {
+        fs.copyFileSync(`./templates/${template}`, `./dist/${template}`);
+      }
     }
 
     while (compilerSubprocesses.length > 0) {
@@ -117,7 +116,7 @@ if (!isProd) {
       });
     };
 
-    const allJsFiles = ls("js").concat(ls("js/google_drive"));
+    const allJsFiles = jsFiles(".");
     const needToSave = allJsFiles.filter(x => x.indexOf(".#") !== -1);
     if (needToSave.length > 0) {
       console.log(chalk.bgMagenta.bold(`Unsaved: ${needToSave}`));
@@ -132,17 +131,8 @@ if (!isProd) {
     processOutput(spawn("pre-commit/check_eslint.sh", filesToLint));
   });
 
-  bundler.on("buildError", () => killFlask());
-  process.on("exit", () => killFlask());
-
-  fs.watch(".", {recursive: true}, (eventType, fileName) => {
-    if (flaskDied
-        && fileName.endsWith(".py")
-        && !fileName.startsWith(".#")
-        && !fileName.startsWith("#")) {
-      startFlask();
-    }
-  });
+  bundler.on("buildError", () => killServer());
+  process.on("exit", () => killServer());
 }
 
 bundler.bundle();

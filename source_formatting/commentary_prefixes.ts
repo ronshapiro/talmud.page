@@ -8,6 +8,10 @@ const _PREFIXES_TO_STRIP = [
 export class CommentaryPrefixStripper extends HtmlVisitor {
   hasProcessedText = false
 
+  shouldRun(input: string): boolean {
+    return _PREFIXES_TO_STRIP.some(x => input.indexOf(x) !== -1);
+  }
+
   visitStartTag(tag: string, attributes: Attributes): void {
     this.appendStartTag(tag, attributes);
   }

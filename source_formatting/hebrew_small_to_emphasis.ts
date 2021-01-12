@@ -1,6 +1,10 @@
 import {Attributes, HtmlVisitor} from "./html_visitor";
 
 export class HebrewSmallToEmphasisTagTranslator extends HtmlVisitor {
+  shouldRun(input: string): boolean {
+    return input.indexOf("<small") !== -1;
+  }
+
   visitStartTag(tag: string, attributes: Attributes): void {
     if (tag === "small") {
       this.appendStartTag("span", [["class", "hebrew-emphasis"]]);

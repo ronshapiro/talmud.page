@@ -11,6 +11,7 @@ declare namespace sefaria {
     sourceHeRef: string;
     ref: string;
     anchorRef: string;
+    anchorRefExpanded: string[];
   }
 
   // When this becomes a more jagged-type, remove the ts-ignores in sefariaTextType.test.ts

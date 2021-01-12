@@ -8,18 +8,6 @@ repos:
         require_serial: true
     -   id: trailing-whitespace
         require_serial: true
--   repo: https://gitlab.com/pycqa/flake8
-    rev: 'c8494e7ac0d017d032edc0a402c569b2fddb8a7f'
-    hooks:
-    -   id: flake8
-        args: [
-            '--ignore=E251,E261,E302,E305,E306,W503',
-            --show-source,
-            --statistics,
-            --exclude=venv,
-            --max-line-length=100
-        ]
-        require_serial: true
 -   repo: local
     hooks:
     -   id: check-custom

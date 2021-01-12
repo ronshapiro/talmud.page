@@ -42,7 +42,7 @@ interface BookConstructorParams {
   sections: string[];
 }
 
-abstract class Book {
+export abstract class Book {
   canonicalName: string;
   hebrewName: string;
   aliases: string[];
@@ -70,11 +70,15 @@ abstract class Book {
     return this.sections.has(section);
   }
 
+  abstract nextPage(page: string): string;
+  abstract previousPage(page: string): string;
+  abstract arePagesInReverseOrder(start: string, end: string): boolean;
+
   isMasechet(): boolean {
     return false;
   }
 
-  toString() {
+  toString(): string {
     return `${this.bookType()}[${this.canonicalName}]`;
   }
 
@@ -111,6 +115,23 @@ export class Masechet extends Book {
     this.vocalizedHebrewName = params.vocalizedHebrewName;
   }
 
+  nextPage(page: string): string {
+    return nextAmud(page);
+  }
+
+  previousPage(page: string): string {
+    return previousAmud(page);
+  }
+
+  arePagesInReverseOrder(start: string, end: string): boolean {
+    const startNumber = parseInt(start.slice(0, -1));
+    const endNumber = parseInt(end.slice(0, -1));
+
+    return startNumber > endNumber
+      || (startNumber === endNumber && start.slice(-1) === "b" && end.slice(-1) === "a");
+  }
+
+
   bookType(): string {
     return "Masechet";
   }
@@ -137,6 +158,18 @@ class BibleBook extends Book {
       start: "1",
       sections: chapterSections(parseInt(params.end)),
     });
+  }
+
+  nextPage(page: string): string {
+    return (parseInt(page) + 1).toString();
+  }
+
+  previousPage(page: string): string {
+    return (parseInt(page) - 1).toString();
+  }
+
+  arePagesInReverseOrder(start: string, end: string): boolean {
+    return parseInt(start) > parseInt(end);
   }
 
   bookType(): string {
@@ -216,8 +249,19 @@ export class QueryResult {
   }
 }
 
-export class InvalidQueryException extends Error {}
-export class UnknownBookNameException extends Error {}
+export class InvalidQueryException extends Error {
+  constructor(message: string) {
+    super(message);
+    Object.setPrototypeOf(this, InvalidQueryException.prototype);
+  }
+}
+
+export class UnknownBookNameException extends Error {
+  constructor(message: string) {
+    super(message);
+    Object.setPrototypeOf(this, UnknownBookNameException.prototype);
+  }
+}
 
 abstract class RangeParser {
   abstract validate(pages: string[]): void;
@@ -326,8 +370,8 @@ export class BookIndex {
     throw new UnknownBookNameException(name);
   }
 
-  /** Returns the `canonical_name`, normalized for use in URLs. */
-  canonincalUrlName(name: string): string {
+  /** Returns the `canonicalName(name)`, normalized for use in URLs. */
+  canonicalUrlName(name: string): string {
     return this.canonicalName(name).replace(/ /g, "_");
   }
 

@@ -214,5 +214,17 @@ export class Runner {
         snackbars.errors.hide();
       }
     };
+
+    if (window.location.hostname === "localhost") {
+      window.dumpDocument = () => {
+        $.ajax({
+          type: "POST",
+          url: `${window.location.origin}/google-docs-record`,
+          data: JSON.stringify(this.driveClient.databaseDocument),
+          dataType: "json",
+          contentType: "application/json",
+        });
+      };
+    }
   }
 }

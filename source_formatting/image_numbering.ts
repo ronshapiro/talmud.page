@@ -9,6 +9,10 @@ export class ImageNumberingFormatter extends HtmlVisitor {
   hasProcessedText = false;
   isInImage = false;
 
+  shouldRun(input: string): boolean {
+    return input.indexOf("<img") !== -1;
+  }
+
   visitStartTag(tag: string, attributes: Attributes): void {
     if (tag === "img") {
       const newTag: string[] = [];

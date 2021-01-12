@@ -30,6 +30,7 @@ module.exports = {
     "function-paren-newline": "off",
     "import/extensions": "off",
     "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
     "import/no-unresolved": "off",
     "lines-between-class-members": ["error", "always", {exceptAfterSingleLine: true}],
     "max-classes-per-file": "off",
@@ -55,6 +56,7 @@ module.exports = {
     "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": ["error"],
+    "space-before-function-paren": "off",
     "spaced-comment": ["error", "always", {
       "block": {
         "exceptions": ["/"],

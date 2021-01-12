@@ -3,6 +3,10 @@ import {Attributes, HtmlVisitor} from "./html_visitor";
 export class SectionSymbolRemover extends HtmlVisitor {
   isAtStart = true;
 
+  shouldRun(input: string): boolean {
+    return input.indexOf("§") !== -1;
+  }
+
   visitStartTag(tag: string, attributes: Attributes): void {
     this.appendStartTag(tag, attributes);
   }

@@ -3,6 +3,11 @@ import {Attributes, HtmlVisitor} from "./html_visitor";
 export class CommentaryParenthesesTransformer extends HtmlVisitor {
   englishNameIgnore = new Set(["Steinsaltz", "Shulchan Arukh", "Mishneh Torah"])
 
+  shouldRun(input: string): boolean {
+    // TODO: this isn't perfect since it doesn't checked for balancedness
+    return input.indexOf("(") !== -1 || input.indexOf(")") !== -1;
+  }
+
   visitStartTag(tag: string, attributes: Attributes): void {
     this.appendStartTag(tag, attributes);
   }

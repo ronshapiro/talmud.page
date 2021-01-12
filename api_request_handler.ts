@@ -11,7 +11,6 @@ import {hadranSegments} from "./hadran";
 import {stripHebrewNonletters} from "./hebrew";
 import {fetch} from "./fetch";
 import {promiseParts} from "./js/promises";
-import {checkNotUndefined} from "./js/undefined";
 import {
   firstOrOnlyElement,
   sefariaTextTypeTransformation,
@@ -20,6 +19,7 @@ import {CommentaryParenthesesTransformer} from "./source_formatting/commentary_p
 import {CommentaryPrefixStripper} from "./source_formatting/commentary_prefixes";
 import {boldDibureiHamatchil} from "./source_formatting/dibur_hamatchil";
 import {HebrewSmallToEmphasisTagTranslator} from "./source_formatting/hebrew_small_to_emphasis";
+import {HtmlNormalizer} from "./source_formatting/html_normalizer";
 import {ImageNumberingFormatter} from "./source_formatting/image_numbering";
 import {JastrowReformatter} from "./source_formatting/jastrow";
 import {formatOtzarLaazeiRashi} from "./source_formatting/otzar_laazei_rashi";
@@ -27,7 +27,7 @@ import {SectionSymbolRemover} from "./source_formatting/section_symbol";
 import {SefariaLinkSanitizer} from "./source_formatting/sefaria_link_sanitizer";
 import {ShulchanArukhHeaderRemover} from "./source_formatting/shulchan_arukh_remove_header";
 
-abstract class RequestMaker {
+export abstract class RequestMaker {
   abstract makeRequest<T>(endpoint: string): Promise<T>;
 }
 
@@ -45,7 +45,11 @@ export class RealRequestMaker extends RequestMaker {
 }
 
 const standardEnglishTransformations = sefariaTextTypeTransformation(
-  english => SectionSymbolRemover.process(SefariaLinkSanitizer.process(english)));
+  english => (
+    HtmlNormalizer.process(
+      SectionSymbolRemover.process(
+        SefariaLinkSanitizer.process(english)))
+  ));
 
 function internalLinkableRef(ref: string): QueryResult | undefined {
   for (const title of Object.keys(books.byCanonicalName)) {
@@ -67,7 +71,7 @@ function stripRefQuotationMarks(ref: string): string {
   if (!lastPart.includes(":")) {
     return ref;
   }
-  parts.push(lastPart.replace(/`/g, "").replace(/״/g, ""));
+  parts.push(lastPart.replace(/׳/g, "").replace(/״/g, ""));
   return parts.join(" ");
 }
 
@@ -135,12 +139,13 @@ class Comment {
         HebrewSmallToEmphasisTagTranslator,
         CommentaryPrefixStripper,
         CommentaryParenthesesTransformer,
-        ImageNumberingFormatter])) {
+        ImageNumberingFormatter,
+        HtmlNormalizer])) {
       hebrew = processor.process(hebrew, englishName);
     }
 
     english = standardEnglishTransformations(english);
-    english = JastrowReformatter.process(english);
+    english = JastrowReformatter.process(english, englishName);
 
     const _internalLinkableRef = internalLinkableRef(sourceRef);
     if (englishName === "Mesorat Hashas" && _internalLinkableRef) {
@@ -157,7 +162,7 @@ class Comment {
       if (subtitle) {
         sourceHeRef = `${sourceHeRef} - ${subtitle}`;
         if (ref.endsWith(":1")) {
-          hebrew = ShulchanArukhHeaderRemover.process(hebrew);
+          hebrew = ShulchanArukhHeaderRemover.process(hebrew, englishName);
         }
       }
     } else if (englishName === "Mishneh Torah") {
@@ -329,7 +334,7 @@ function textRequestEndpoint(ref: string): string {
   return `/texts/${ref}?wrapLinks=0&commentary=0&context=0`;
 }
 
-class ApiException extends Error {
+export class ApiException extends Error {
   static SEFARIA_HTTP_ERROR = 1;
   static UNEQAUL_HEBREW_ENGLISH_LENGTH = 2;
 
@@ -430,7 +435,12 @@ abstract class AbstractApiRequestHandler {
           if (refHierarchy.includes(targetRef) || refHierarchy.some(x => targetRef.startsWith(x))) {
             continue;
           }
-          const sourceRef = link.anchorRef;
+
+          let sourceRefIndex = link.anchorRefExpanded.indexOf(ref);
+          if (sourceRefIndex === -1) {
+            sourceRefIndex = 0;
+          }
+          const sourceRef = link.anchorRefExpanded[sourceRefIndex];
           if (!(sourceRef in linkGraph.graph)) {
             linkGraph.graph[sourceRef] = new Set();
             linkGraph.links[sourceRef] = {};
@@ -525,7 +535,7 @@ abstract class AbstractApiRequestHandler {
 
     return {
       id: this.makeId(bookName, page),
-      title: checkNotUndefined(textResponse.title ?? textResponse.indexTitle),
+      title: `${bookName} ${page}`,
       sections: segments.map(x => x.toJson()).concat(this.extraSegments(bookName, page)),
     };
   }
@@ -539,9 +549,7 @@ abstract class AbstractApiRequestHandler {
     for (const linkRef of Array.from(linkGraph.graph[ref] ?? [])) {
       const linkResponse = linkResponses[linkRef];
       if (!linkResponse || isSefariaError(linkResponse)) continue; // Don't process failed requests
-      if (linkResponse.he.length === 0 && linkResponse.text.length === 0) {
-        return;
-      }
+      if (linkResponse.he.length === 0 && linkResponse.text.length === 0) continue;
 
       const link = linkGraph.links[ref][linkRef];
       const commentaryType = matchingCommentaryType(link)!;
@@ -563,7 +571,7 @@ enum RemovalStrategy {
 
 const ALEPH = "א";
 const TAV = "ת";
-const STEINSALTZ_SUGYA_START = new RegExp(`^<big>[${ALEPH}-${TAV}]`, "g");
+const STEINSALTZ_SUGYA_START = new RegExp(`^<big>[${ALEPH}-${TAV}].*`);
 
 class TalmudApiRequestHandler extends AbstractApiRequestHandler {
   protected makeId(bookName: string, page: string): string {
@@ -639,7 +647,7 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
     if (masechet === "Nazir" && amud === "33b") {
       return [new InternalSegment({
         hebrew: "אין גמרא לנזיר ל״ג ע״א, רק תוספות (שהם קשורים לדפים אחרים)",
-        english: "Nazir 33b has no Gemara, just Tosafot (which are linked to other amuds).",
+        english: "Nazir 33b has no Gemara, just Tosafot (which are linked to other pages).",
         ref: "synthetic",
       })];
     }

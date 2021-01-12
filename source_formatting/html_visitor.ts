@@ -1,6 +1,7 @@
 import {JSDOM} from "jsdom";
 
-const {Node} = new JSDOM().window;
+const {Node, DOMParser} = new JSDOM().window;
+const domParser = new DOMParser();
 
 function isElement(node: Node): node is Element {
   return node.nodeType === Node.ELEMENT_NODE;
@@ -24,7 +25,7 @@ export class HtmlVisitor {
   static process<T extends string | MultiDimensionalString>(inputs: T, englishName?: string): T {
     if (Array.isArray(inputs)) {
       // @ts-ignore
-      return inputs.map(x => this.process(x)) as T;
+      return inputs.map(x => this.process(x, englishName)) as T;
     }
     const visitor = new this();
     if (visitor.englishNamesToProcess) {
@@ -42,9 +43,23 @@ export class HtmlVisitor {
   }
 
   processSingle(input: string): string {
-    new JSDOM(input).window.document.body.childNodes.forEach(x => this.visit(x));
+    // This may seem insignificant, but this optimization can shave 100s of ms per request
+    // By saving on unnecessary DOM parsing
+    // TODO: consider using https://www.npmjs.com/package/fast-html-parser
+    if (!this.shouldRun(input)) {
+      return input;
+    }
+
+    domParser.parseFromString(input, "text/html").body.childNodes
+      .forEach(x => this.visit(x));
+
     this.beforeJoin();
     return this._out.join("");
+  }
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  shouldRun(input: string): boolean {
+    return true;
   }
 
   visit(node: Node): void {

@@ -5,6 +5,10 @@ export class SefariaLinkSanitizer extends HtmlVisitor {
     return super.processSingle(input.replace("&nbsp;", "__nbsp__")).replace("__nbsp__", "&nbsp;");
   }
 
+  shouldRun(input: string): boolean {
+    return input.indexOf("href") !== -1;
+  }
+
   visitStartTag(tag: string, attributes: Attributes): void {
     if (tag !== "a") {
       this.appendStartTag(tag, attributes);

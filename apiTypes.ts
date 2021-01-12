@@ -41,3 +41,9 @@ export interface ApiResponse {
   id: string;
   sections: Section[];
 }
+
+export interface ApiErrorResponse {
+  error: string;
+  code?: number;
+  id?: string;
+}
