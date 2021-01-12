@@ -269,7 +269,7 @@ async function getAndCacheApiResponse(
 
   try {
     logger.log(`${verb} ${title} ${page}`);
-    const response = await apiRequestHandler.handleRequest(title, page);
+    const response = await apiRequestHandler.handleRequest(title, page, logger);
     apiResponseCache.put(cacheKey, response);
     logger.log(`${verb} ${title} ${page} --- Done`);
     return Promise.resolve([response, 200]);

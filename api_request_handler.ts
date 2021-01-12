@@ -112,12 +112,19 @@ function deepEquals(hebrew: sefaria.TextType, english: sefaria.TextType): boolea
   return hebrew === english;
 }
 
+interface Logger {
+  error: (...args: any[]) => void;
+  log: (...args: any[]) => void;
+  debug: (...args: any[]) => void;
+}
+
 /** A single comment on a text. */
 class Comment {
   static create(
     link: sefaria.TextLink,
     sefariaComment: sefaria.TextResponse,
     englishName: string,
+    logger: Logger,
   ): Comment {
     const {ref} = sefariaComment;
     let {he: hebrew, text: english} = sefariaComment;
@@ -125,7 +132,7 @@ class Comment {
     if (deepEquals(hebrew, english)) {
       // Fix an issue where sometimes Sefaria returns the exact same text. For now, safe to
       // assume that the equivalent text is Hebrew.
-      console.log(`${ref} has identical hebrew and english`);
+      logger.log(`${ref} has identical hebrew and english`);
       english = "";
     }
 
@@ -306,23 +313,6 @@ function hasMatchingProperty(first: any, second: any, propertyName: string): boo
     && first[propertyName] === second[propertyName];
 }
 
-function matchingCommentaryType(link: sefaria.TextLink): CommentaryType | undefined {
-  if (!link.collectiveTitle) {
-    console.error("No comment title for", link);
-    return undefined;
-  }
-  const name = link.collectiveTitle.en;
-  for (const kind of ALL_COMMENTARIES) {
-    if (name === kind.englishName
-      || hasMatchingProperty(link, kind, "category")
-      || hasMatchingProperty(link, kind, "type")
-      || (kind.englishNamePattern && name.match(kind.englishNamePattern))) {
-      return kind;
-    }
-  }
-  return undefined;
-}
-
 interface LinkGraph {
   graph: Record<string, Set<string>>;
   links: Record<string, Record<string, sefaria.TextLink>>;
@@ -352,7 +342,9 @@ function isSefariaError(response: any): response is sefaria.ErrorResponse {
 }
 
 abstract class AbstractApiRequestHandler {
-  constructor(private requestMaker: RequestMaker) {}
+  constructor(protected requestMaker: RequestMaker, protected readonly logger: Logger = console) {}
+
+  protected abstract recreateWithLogger(logger: Logger): AbstractApiRequestHandler;
 
   protected abstract makeId(bookName: string, page: string): string;
 
@@ -390,7 +382,11 @@ abstract class AbstractApiRequestHandler {
     return 2;
   }
 
-  handleRequest(bookName: string, page: string): Promise<ApiResponse> {
+  handleRequest(bookName: string, page: string, logger?: Logger): Promise<ApiResponse> {
+    if (logger) {
+      // @ts-ignore
+      return this.recreateWithLogger(logger).handleRequest(bookName, page);
+    }
     const ref = `${bookName} ${page}`;
     const textRequest = (
       this.requestMaker.makeRequest<sefaria.TextResponse>(textRequestEndpoint(ref)));
@@ -447,7 +443,7 @@ abstract class AbstractApiRequestHandler {
           }
 
           const targetRefs = linkGraph.graph[sourceRef]!;
-          const commentaryType = matchingCommentaryType(link);
+          const commentaryType = this.matchingCommentaryType(link);
           if (targetRefs.has(targetRef) || !commentaryType) {
             continue;
           }
@@ -463,7 +459,7 @@ abstract class AbstractApiRequestHandler {
         Promise.allSettled(nestedPromises).then(() => finish(linkGraph));
       })
       .catch(error => {
-        console.error(`Links request error: ${url}`, error);
+        this.logger.error(`Links request error: ${url}`, error);
         linkGraph.complete = false;
         if (refHierarchy.length === 1) {
           // If there will be zero links, it's probably a good reason to fail the request altogether
@@ -507,7 +503,7 @@ abstract class AbstractApiRequestHandler {
 
     if (hebrew.length !== english.length) {
       const extra = hebrew.slice(english.length).concat(english.slice(hebrew.length));
-      console.error("Unmatched text/translation: ", extra);
+      this.logger.error("Unmatched text/translation: ", extra);
       throw new ApiException(
         "Hebrew length != English length",
         500,
@@ -530,7 +526,7 @@ abstract class AbstractApiRequestHandler {
     segments = this.postProcessAllSegments(segments, bookName, page);
 
     if (segments.length === 0) {
-      console.log(`No segments for ${mainRef}`);
+      this.logger.log(`No segments for ${mainRef}`);
     }
 
     return {
@@ -552,8 +548,9 @@ abstract class AbstractApiRequestHandler {
       if (linkResponse.he.length === 0 && linkResponse.text.length === 0) continue;
 
       const link = linkGraph.links[ref][linkRef];
-      const commentaryType = matchingCommentaryType(link)!;
-      commentary.addComment(Comment.create(link, linkResponse, commentaryType.englishName));
+      const commentaryType = this.matchingCommentaryType(link)!;
+      commentary.addComment(
+        Comment.create(link, linkResponse, commentaryType.englishName, this.logger));
 
       this.addComments(
         linkRef,
@@ -561,6 +558,23 @@ abstract class AbstractApiRequestHandler {
         linkGraph,
         linkResponses);
     }
+  }
+
+  private matchingCommentaryType(link: sefaria.TextLink): CommentaryType | undefined {
+    if (!link.collectiveTitle) {
+      this.logger.error("No comment title for", link);
+      return undefined;
+    }
+    const name = link.collectiveTitle.en;
+    for (const kind of ALL_COMMENTARIES) {
+      if (name === kind.englishName
+        || hasMatchingProperty(link, kind, "category")
+        || hasMatchingProperty(link, kind, "type")
+        || (kind.englishNamePattern && name.match(kind.englishNamePattern))) {
+        return kind;
+      }
+    }
+    return undefined;
   }
 }
 
@@ -574,6 +588,10 @@ const TAV = "ת";
 const STEINSALTZ_SUGYA_START = new RegExp(`^<big>[${ALEPH}-${TAV}].*`);
 
 class TalmudApiRequestHandler extends AbstractApiRequestHandler {
+  protected recreateWithLogger(logger: Logger): AbstractApiRequestHandler {
+    return new TalmudApiRequestHandler(this.requestMaker, logger);
+  }
+
   protected makeId(bookName: string, page: string): string {
     return page;
   }
@@ -633,7 +651,7 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
       return RemovalStrategy.REMOVE_TOP_LEVEL;
     }
 
-    console.log(
+    this.logger.log(
       `Duplicated comment`,
       `Ref: ${topLevelComment.ref}) on ${topLevelComment.sourceRef} and ${nestedComment.ref}`);
     return undefined;
@@ -664,6 +682,10 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
 
 
 class TanakhApiRequestHandler extends AbstractApiRequestHandler {
+  protected recreateWithLogger(logger: Logger): AbstractApiRequestHandler {
+    return new TanakhApiRequestHandler(this.requestMaker, logger);
+  }
+
   protected makeId(bookName: string, page: string): string {
     return page;
   }
@@ -678,12 +700,12 @@ export class ApiRequestHandler {
     this.tanakhHandler = new TanakhApiRequestHandler(requestMaker);
   }
 
-  handleRequest(bookName: string, page: string): Promise<ApiResponse> {
+  handleRequest(bookName: string, page: string, logger?: Logger): Promise<ApiResponse> {
     const handler = (
       books.byCanonicalName[bookName].isMasechet()
         ? this.talmudHandler
         : this.tanakhHandler);
 
-    return handler.handleRequest(bookName, page);
+    return handler.handleRequest(bookName, page, logger);
   }
 }
