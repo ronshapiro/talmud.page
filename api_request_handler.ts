@@ -11,6 +11,7 @@ import {hadranSegments} from "./hadran";
 import {stripHebrewNonletters} from "./hebrew";
 import {fetch} from "./fetch";
 import {promiseParts} from "./js/promises";
+import {Logger, consoleLogger} from "./logger";
 import {
   firstOrOnlyElement,
   sefariaTextTypeTransformation,
@@ -110,12 +111,6 @@ function deepEquals(hebrew: sefaria.TextType, english: sefaria.TextType): boolea
   }
 
   return hebrew === english;
-}
-
-interface Logger {
-  error: (...args: any[]) => void;
-  log: (...args: any[]) => void;
-  debug: (...args: any[]) => void;
 }
 
 /** A single comment on a text. */
@@ -342,7 +337,10 @@ function isSefariaError(response: any): response is sefaria.ErrorResponse {
 }
 
 abstract class AbstractApiRequestHandler {
-  constructor(protected requestMaker: RequestMaker, protected readonly logger: Logger = console) {}
+  constructor(
+    protected requestMaker: RequestMaker,
+    protected readonly logger: Logger = consoleLogger,
+  ) {}
 
   protected abstract recreateWithLogger(logger: Logger): AbstractApiRequestHandler;
 
@@ -387,11 +385,14 @@ abstract class AbstractApiRequestHandler {
       // @ts-ignore
       return this.recreateWithLogger(logger).handleRequest(bookName, page);
     }
+
     const ref = `${bookName} ${page}`;
     const textRequest = (
       this.requestMaker.makeRequest<sefaria.TextResponse>(textRequestEndpoint(ref)));
+    const linksTraversalTimer = this.logger.newTimer();
     const linkGraphRequest = this.linksTraversal(
-      {graph: {}, links: {}, complete: true}, ref, this.linkDepth(bookName, page), [ref]);
+      {graph: {}, links: {}, complete: true}, ref, this.linkDepth(bookName, page), [ref])
+      .finally(() => linksTraversalTimer.finish("links traversal"));
     return Promise.all([
       textRequest,
       linkGraphRequest,
@@ -475,6 +476,7 @@ abstract class AbstractApiRequestHandler {
   private fetchData(refs: string[]): Promise<Record<string, sefaria.TextResponse>> {
     const fetched: Record<string, sefaria.TextResponse> = {};
     const nestedPromises: Promise<unknown>[] = [];
+    const timer = this.logger.newTimer();
     for (const ref of refs) {
       nestedPromises.push(
         this.requestMaker.makeRequest<sefaria.TextResponse>(textRequestEndpoint(ref))
@@ -482,7 +484,9 @@ abstract class AbstractApiRequestHandler {
             fetched[ref] = response;
           }));
     }
-    return Promise.allSettled(nestedPromises).then(() => fetched);
+    return Promise.allSettled(nestedPromises)
+      .then(() => fetched)
+      .finally(() => timer.finish("fetching secondary texts"));
   }
 
   private transformData(
@@ -492,6 +496,7 @@ abstract class AbstractApiRequestHandler {
     linkGraph: LinkGraph,
     linkResponses: Record<string, sefaria.TextResponse>,
   ): ApiResponse {
+    const timer = this.logger.newTimer();
     const mainRef = textResponse.ref;
     const hebrew = textResponse.he as string[];
     const english = textResponse.text as string[];
@@ -528,6 +533,8 @@ abstract class AbstractApiRequestHandler {
     if (segments.length === 0) {
       this.logger.log(`No segments for ${mainRef}`);
     }
+
+    timer.finish("transformData");
 
     return {
       id: this.makeId(bookName, page),

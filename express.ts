@@ -17,6 +17,7 @@ import {
   ApiResponse,
 } from "./apiTypes";
 import {WeightBasedLruCache} from "./cache";
+import {Logger as BaseLogger, Timer} from "./logger";
 import {jsonSize} from "./util/json_size";
 import {writeJson} from "./util/json_files";
 
@@ -35,7 +36,7 @@ const randomHash = (() => {
   return [...Array(8)].map(_ => alphabet[Math.floor(Math.random() * alphabet.length)]).join("");
 })();
 
-class Logger {
+class Logger implements BaseLogger {
   constructor(private readonly endpoint: string) {}
 
   error(...args: any[]) {
@@ -52,11 +53,16 @@ class Logger {
     // eslint-disable-next-line no-console
     console.log("DEBUG", "|", this.endpoint, "|", ...args);
   }
+
+  newTimer(): Timer {
+    return new Timer(this);
+  }
 }
 
 declare module "express-serve-static-core/index" {
   interface Request {
     logger: Logger;
+    timer: Timer;
   }
 
   interface Response {
@@ -75,6 +81,7 @@ function createLogger(req: express.Request): Logger {
 app.use((req, res, next) => {
   req.logger = createLogger(req);
   req.logger.debug("<incoming>");
+  req.timer = req.logger.newTimer();
 
   const superRender = res.render;
   res.render = function render(...args: Parameters<typeof superRender>) {
@@ -268,10 +275,10 @@ async function getAndCacheApiResponse(
   }
 
   try {
-    logger.log(`${verb} ${title} ${page}`);
+    logger.log(verb);
     const response = await apiRequestHandler.handleRequest(title, page, logger);
     apiResponseCache.put(cacheKey, response);
-    logger.log(`${verb} ${title} ${page} --- Done`);
+    logger.log(`${verb} --- Done`);
     return Promise.resolve([response, 200]);
   } catch (e) {
     if (e instanceof ApiException) {
@@ -315,15 +322,20 @@ app.get("/api/:title/:page", (req, res) => {
     return res.status(404).send({error: e.message});
   }
 
-  getAndCacheApiResponse(title, page, req.logger)
+  let promise: Promise<unknown> = getAndCacheApiResponse(title, page, req.logger)
     .then(result => {
       const [response, code] = result;
       return res.status(code).json(response);
+    })
+    .finally(() => {
+      req.timer.finish("complete after");
     });
 
-  for (const possiblePage of [book.previousPage(page), book.nextPage(page)]) {
+
+  for (const possiblePage of [book.nextPage(page), book.previousPage(page)]) {
     if (book.doesSectionExist(possiblePage)) {
-      precache(title, possiblePage, req.logger);
+      const logger = new Logger(`${req.originalUrl} [Precaching ${possiblePage}]`);
+      promise = promise.then(() => precache(title, possiblePage, logger));
     }
   }
 
