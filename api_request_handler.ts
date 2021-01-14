@@ -392,7 +392,7 @@ abstract class AbstractApiRequestHandler {
       this.requestMaker.makeRequest<sefaria.TextResponse>(textRequestEndpoint(ref)));
     const linksTraversalTimer = this.logger.newTimer();
     const linkGraphRequest = this.linksTraversal(
-      {graph: {}, links: {}, complete: true}, ref, this.linkDepth(bookName, page), [ref])
+      {graph: {}, links: {}, complete: true}, ref, [ref], this.linkDepth(bookName, page), [ref])
       .finally(() => linksTraversalTimer.finish("links traversal"));
     return Promise.all([
       textRequest,
@@ -416,26 +416,29 @@ abstract class AbstractApiRequestHandler {
 
   private linksTraversal(
     linkGraph: LinkGraph,
-    ref: string,
+    refToRequest: string,
+    refs: string[],
     remainingDepth: number,
     refHierarchy: string[],
   ): Promise<LinkGraph> {
     const [promise, finish, onError] = promiseParts<LinkGraph>();
-    const url = `/links/${ref}?with_text=0`;
+    const url = `/links/${refToRequest}?with_text=0`;
     this.requestMaker.makeRequest<sefaria.TextLink[] | sefaria.ErrorResponse>(url)
       .then(linksResponse => {
         if (isSefariaError(linksResponse)) {
           throw new Error(linksResponse.error);
         }
-        const nestedPromises: Promise<unknown>[] = [];
+
+        const nextRefs: string[] = [];
         for (const link of linksResponse) {
           const targetRef = link.ref;
           if (refHierarchy.includes(targetRef) || refHierarchy.some(x => targetRef.startsWith(x))) {
             continue;
           }
 
-          let sourceRefIndex = link.anchorRefExpanded.indexOf(ref);
-          if (sourceRefIndex === -1) {
+          let sourceRefIndex = Math.min(
+            ...refs.map(x => link.anchorRefExpanded.indexOf(x)).filter(x => x !== -1));
+          if (sourceRefIndex === Infinity) {
             sourceRefIndex = 0;
           }
           const sourceRef = link.anchorRefExpanded[sourceRefIndex];
@@ -453,11 +456,18 @@ abstract class AbstractApiRequestHandler {
           linkGraph.links[sourceRef][targetRef] = link;
 
           if (remainingDepth !== 0 && commentaryType.allowNestedTraversals) {
-            nestedPromises.push(
-              this.linksTraversal(
-                linkGraph, targetRef, remainingDepth - 1, [...refHierarchy, targetRef]));
+            nextRefs.push(targetRef);
           }
         }
+
+        const nestedPromises: Promise<unknown>[] = [];
+        const merged = mergeRefs(nextRefs).asMap();
+        for (const [ref, subrefs] of Array.from(merged.entries())) {
+          nestedPromises.push(
+            this.linksTraversal(
+              linkGraph, ref, subrefs, remainingDepth - 1, [...refHierarchy, ...subrefs]));
+        }
+
         Promise.allSettled(nestedPromises).then(() => finish(linkGraph));
       })
       .catch(error => {
