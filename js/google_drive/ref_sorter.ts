@@ -1,13 +1,17 @@
-const REF_PIECE_SPLITTER = /(.* )(\d+)(.*)([\\.:])(.*)/g;
-const refPieces = (ref: string): (string| number)[] => {
-  const basicPieces = ref.split(REF_PIECE_SPLITTER);
-  const result = [];
+const refPieces = (ref: string): (string | number)[] => {
+  const splitPoint = ref.lastIndexOf(" ", ref.indexOf(":"));
+  const title = ref.substring(0, splitPoint);
+  const basicPieces = ref.substring(splitPoint + 1).split(":");
+  const result: (string | number)[] = [title];
   for (const piece of basicPieces) {
     const asInt = parseInt(piece);
     if (asInt) {
       result.push(asInt);
     }
-    result.push(piece);
+
+    if (!asInt || asInt.toString() !== piece) {
+      result.push(piece);
+    }
   }
   return result;
 };

@@ -12,6 +12,7 @@ import {stripHebrewNonletters} from "./hebrew";
 import {fetch} from "./fetch";
 import {promiseParts} from "./js/promises";
 import {Logger, consoleLogger} from "./logger";
+import {mergeRefs} from "./ref_merging";
 import {
   firstOrOnlyElement,
   sefariaTextTypeTransformation,
@@ -474,13 +475,33 @@ abstract class AbstractApiRequestHandler {
   }
 
   private fetchData(refs: string[]): Promise<Record<string, sefaria.TextResponse>> {
+    const timer = this.logger.newTimer();
     const fetched: Record<string, sefaria.TextResponse> = {};
     const nestedPromises: Promise<unknown>[] = [];
-    const timer = this.logger.newTimer();
-    for (const ref of refs) {
+
+    const merged = mergeRefs(refs).asMap();
+    this.logger.debug("reduction", (refs.length - merged.size) / refs.length);
+
+    for (const [ref, subrefs] of Array.from(merged.entries())) {
       nestedPromises.push(
         this.requestMaker.makeRequest<sefaria.TextResponse>(textRequestEndpoint(ref))
           .then(response => {
+            if (subrefs.length === 1) {
+              fetched[subrefs[0]] = response;
+              return;
+            }
+
+            const refIndex = (someRef: string) => (
+              parseInt(someRef.substring(someRef.lastIndexOf(":") + 1)));
+            const offset = refIndex(subrefs[0]);
+            for (const subref of subrefs) {
+              const index = refIndex(subref) - offset;
+              fetched[subref] = {
+                he: response.he[index] ?? (typeof response.text[index] === "string" ? "" : []),
+                text: response.text[index] ?? (typeof response.he[index] === "string" ? "" : []),
+                ref: subref,
+              };
+            }
             fetched[ref] = response;
           }));
     }

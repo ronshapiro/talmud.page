@@ -2,15 +2,15 @@ import {refSorter} from "../ref_sorter";
 
 test("same parent ref", () => {
   const refs = [
-    "Book Foo 1b.1",
-    "Book Foo 10a.1",
-    "Book Foo 1a.1",
+    "Book Foo 1b:1",
+    "Book Foo 10a:1",
+    "Book Foo 1a:1",
   ];
   refs.sort(refSorter);
   expect(refs).toEqual([
-    "Book Foo 1a.1",
-    "Book Foo 1b.1",
-    "Book Foo 10a.1",
+    "Book Foo 1a:1",
+    "Book Foo 1b:1",
+    "Book Foo 10a:1",
   ]);
 });
 
@@ -33,16 +33,20 @@ test("Rashi style", () => {
     "Rashi on Shabbat 100b:1:10",
     "Rashi on Shabbat 99b:10:10",
     "Rashi on Shabbat 99b:1:10",
+    "Rashi on Shabbat 99b:2:10",
     "Rashi on Shabbat 99b:10:2",
     "Rashi on Shabbat 99b:1:2",
     "Rashi on Shabbat 99b:10:1",
     "Rashi on Shabbat 99b:1:1",
+    "Rashi on Shabbat 99a:2:10",
   ];
   refs.sort(refSorter);
   expect(refs).toEqual([
+    "Rashi on Shabbat 99a:2:10",
     "Rashi on Shabbat 99b:1:1",
     "Rashi on Shabbat 99b:1:2",
     "Rashi on Shabbat 99b:1:10",
+    "Rashi on Shabbat 99b:2:10",
     "Rashi on Shabbat 99b:10:1",
     "Rashi on Shabbat 99b:10:2",
     "Rashi on Shabbat 99b:10:10",
