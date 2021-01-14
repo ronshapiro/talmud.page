@@ -57,7 +57,12 @@ export class RecordingRequestMaker extends RequestMaker {
 
 export class FakeRequestMaker extends RequestMaker {
   makeRequest<T>(endpoint: string): Promise<T> {
-    return fs.promises.readFile(inputFilePath(parseEndpoint(endpoint)), {encoding: "utf-8"})
+    return fs.promises.open(inputFilePath(parseEndpoint(endpoint)), "r")
+      .catch(e => {
+        throw new Error(
+          `Error opening ${e.path}. This likely means that the test data needs to be updated.`);
+      })
+      .then(x => x.readFile({encoding: "utf-8"}))
       .then(content => JSON.parse(content) as T);
   }
 }
