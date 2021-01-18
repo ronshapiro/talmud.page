@@ -57,7 +57,11 @@ const standardEnglishTransformations = sefariaTextTypeTransformation(
 function internalLinkableRef(ref: string): QueryResult | undefined {
   for (const title of Object.keys(books.byCanonicalName)) {
     if (ref.startsWith(title)) {
-      return books.parse(ref.split(":")[0]);
+      try {
+        return books.parse(ref.split(":")[0]);
+      } catch {
+        continue;
+      }
     }
   }
   return undefined;
@@ -364,7 +368,6 @@ export abstract class AbstractApiRequestHandler {
     return standardEnglishTransformations(text);
   }
 
-  // @typescript-eslint/no-unused-vars
   protected postProcessSegment(segment: InternalSegment): InternalSegment {
     return segment;
   }

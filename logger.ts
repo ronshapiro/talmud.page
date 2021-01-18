@@ -35,3 +35,18 @@ class ConsoleLogger implements Logger {
 }
 
 export const consoleLogger = new ConsoleLogger();
+
+export class NoopLogger implements Logger {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  error(...args: any[]): void {}
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  log(...args: any[]): void {}
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  debug(...args: any[]): void {}
+
+  newTimer(): Timer {
+    return new Timer(this);
+  }
+}
