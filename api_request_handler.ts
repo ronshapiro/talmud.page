@@ -263,7 +263,7 @@ interface InternalSegmentConstructorParams {
   ref: string,
 }
 
-class InternalSegment {
+export class InternalSegment {
   hebrew: sefaria.TextType;
   english: sefaria.TextType;
   readonly ref: string;
@@ -338,7 +338,7 @@ function isSefariaError(response: any): response is sefaria.ErrorResponse {
   return "error" in response;
 }
 
-abstract class AbstractApiRequestHandler {
+export abstract class AbstractApiRequestHandler {
   constructor(
     protected requestMaker: RequestMaker,
     protected readonly logger: Logger = consoleLogger,
@@ -350,6 +350,10 @@ abstract class AbstractApiRequestHandler {
 
   protected makeSubRef(mainRef: string, index: number): string {
     return `${mainRef}:${index + 1}`;
+  }
+
+  protected makeTitle(bookName: string, page: string): string {
+    return `${bookName} ${page}`;
   }
 
   protected translateHebrewText(text: sefaria.TextType): sefaria.TextType {
@@ -378,7 +382,7 @@ abstract class AbstractApiRequestHandler {
   }
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  protected linkDepth(bookName: string, page: string) {
+  protected linkDepth(bookName: string, page: string): number {
     return 2;
   }
 
@@ -570,7 +574,7 @@ abstract class AbstractApiRequestHandler {
 
     return {
       id: this.makeId(bookName, page),
-      title: `${bookName} ${page}`,
+      title: this.makeTitle(bookName, page),
       sections: segments.map(x => x.toJson()).concat(this.extraSegments(bookName, page)),
     };
   }
