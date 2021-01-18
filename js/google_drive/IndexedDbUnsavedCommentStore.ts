@@ -1,4 +1,5 @@
 import {v4 as uuid} from "uuid";
+import {PromiseChain} from "../promises";
 import {
   DriveClient,
   PersistedComment,
@@ -29,14 +30,14 @@ export class IndexedDbUnsavedCommentStore implements UnsavedCommentStore {
     openRequest.onsuccess = onSuccessEvent => {
       this.localDb = result<IDBDatabase>(onSuccessEvent);
 
-      let promiseChain: Promise<void> = Promise.resolve();
+      const promiseChain = new PromiseChain();
       this.newTransaction("readonly").getAll().onsuccess = getAllEvent => {
         result<PersistedComment[]>(getAllEvent)
           .filter(comment => comment.masechet === this.client!.masechet)
           .forEach(comment => {
             // execute in a promise chain so that the updates of one comment don't cause the
             // others to fail + require a retry
-            promiseChain = promiseChain.then(() => client.postComment(comment));
+            promiseChain.add(() => client.postComment(comment));
           });
       };
     };

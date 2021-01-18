@@ -11,3 +11,12 @@ export function promiseParts<T>(): [Promise<T>, (t: T) => void, (t: T) => void] 
 export function asPromise<T>(thenable: PromiseLike<T>): Promise<T> {
   return Promise.all([thenable]).then(x => x[0]);
 }
+
+export class PromiseChain {
+  constructor(private serializer: Promise<unknown> = Promise.resolve(null)) {}
+
+  add(serializedFunction: () => any): this {
+    this.serializer = this.serializer.then(() => serializedFunction()).catch(() => {});
+    return this;
+  }
+}

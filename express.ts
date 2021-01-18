@@ -18,6 +18,7 @@ import {
 } from "./apiTypes";
 import {WeightBasedLruCache} from "./cache";
 import {Logger as BaseLogger, Timer} from "./logger";
+import {PromiseChain} from "./js/promises";
 import {jsonSize} from "./util/json_size";
 import {writeJson} from "./util/json_files";
 
@@ -301,11 +302,11 @@ async function getAndCacheApiResponse(
 const preCachedPageStack: [string, string, Logger][] = [];
 // This ensures that at most 1 request is being precached at a time, so that hopefully they don't
 // take too much precedence over actual requests
-let preCachingPromiseChain: Promise<unknown> = Promise.resolve(null);
+const preCachingPromiseChain = new PromiseChain();
 
 function precache(title: string, page: string, logger: Logger) {
   preCachedPageStack.push([title, page, logger]);
-  preCachingPromiseChain = preCachingPromiseChain.then(() => {
+  preCachingPromiseChain.add(() => {
     return getAndCacheApiResponse(...preCachedPageStack.pop()!, "Precaching");
   });
 }
@@ -324,20 +325,21 @@ app.get("/api/:title/:page", (req, res) => {
     return res.status(404).send({error: e.message});
   }
 
-  let promise: Promise<unknown> = getAndCacheApiResponse(title, page, req.logger)
-    .then(result => {
-      const [response, code] = result;
-      return res.status(code).json(response);
-    })
-    .finally(() => {
-      req.timer.finish("complete after");
-    });
+  const promiseChain = new PromiseChain(
+    getAndCacheApiResponse(title, page, req.logger)
+      .then(result => {
+        const [response, code] = result;
+        return res.status(code).json(response);
+      })
+      .finally(() => {
+        req.timer.finish("complete after");
+      }));
 
 
   for (const possiblePage of [book.nextPage(page), book.previousPage(page)]) {
     if (book.doesSectionExist(possiblePage)) {
       const logger = new Logger(`${req.originalUrl} [Precaching ${possiblePage}]`);
-      promise = promise.then(() => precache(title, possiblePage, logger));
+      promiseChain.add(() => precache(title, possiblePage, logger));
     }
   }
 
