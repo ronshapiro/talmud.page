@@ -13,7 +13,7 @@ function isText(node: Node): node is Text {
 
 export type Attributes = [string, string][];
 
-const NO_END_TAGS = new Set(["br", "img"]);
+export const NO_END_TAGS = new Set(["br", "img"]);
 
 type MultiDimensionalString = string[] | MultiDimensionalString[];
 
@@ -22,12 +22,16 @@ export class HtmlVisitor {
   englishNamesToProcess: Set<string | undefined> | undefined;
   _out: string[] = []
 
-  static process<T extends string | MultiDimensionalString>(inputs: T, englishName?: string): T {
+  static process<T extends string | MultiDimensionalString>(
+    inputs: T,
+    englishName?: string,
+    createVisitor = () => new this(),
+  ): T {
     if (Array.isArray(inputs)) {
       // @ts-ignore
-      return inputs.map(x => this.process(x, englishName)) as T;
+      return inputs.map(x => this.process(x, englishName, createVisitor)) as T;
     }
-    const visitor = new this();
+    const visitor = createVisitor();
     if (visitor.englishNamesToProcess) {
       if (!visitor.englishNamesToProcess.has(englishName)) {
         // @ts-ignore

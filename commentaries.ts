@@ -17,6 +17,11 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     className: "translation",
   },
   {
+    englishName: "Footnotes",
+    hebrewName: "הערות",
+    className: "tp-footnote",
+  },
+  {
     englishName: "Verses",
     category: "Tanakh",
     hebrewName: 'תנ"ך',

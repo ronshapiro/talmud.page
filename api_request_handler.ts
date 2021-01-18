@@ -20,6 +20,7 @@ import {
 import {CommentaryParenthesesTransformer} from "./source_formatting/commentary_parentheses";
 import {CommentaryPrefixStripper} from "./source_formatting/commentary_prefixes";
 import {boldDibureiHamatchil} from "./source_formatting/dibur_hamatchil";
+import {FootnotesExtractor} from "./source_formatting/footnotes";
 import {HebrewSmallToEmphasisTagTranslator} from "./source_formatting/hebrew_small_to_emphasis";
 import {HtmlNormalizer} from "./source_formatting/html_normalizer";
 import {ImageNumberingFormatter} from "./source_formatting/image_numbering";
@@ -587,8 +588,14 @@ abstract class AbstractApiRequestHandler {
 
       const link = linkGraph.links[ref][linkRef];
       const commentaryType = this.matchingCommentaryType(link)!;
-      commentary.addComment(
-        Comment.create(link, linkResponse, commentaryType.englishName, this.logger));
+
+      const {comment, footnotes} = FootnotesExtractor.extract(linkResponse);
+      commentary.addComment(Comment.create(link, comment, commentaryType.englishName, this.logger));
+
+      for (const footnote of footnotes) {
+        commentary.nestedCommentary(commentaryType.englishName).addComment(
+          Comment.create(link, footnote, "Footnotes", this.logger));
+      }
 
       this.addComments(
         linkRef,
