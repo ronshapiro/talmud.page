@@ -80,7 +80,9 @@ function createLogger(req: express.Request): Logger {
 
 app.use((req, res, next) => {
   req.logger = createLogger(req);
-  req.logger.debug("<incoming>");
+  if (debug) {
+    req.logger.debug("<incoming>");
+  }
   req.timer = req.logger.newTimer();
 
   const superRender = res.render;

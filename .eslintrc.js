@@ -30,7 +30,6 @@ module.exports = {
     "function-paren-newline": "off",
     "import/extensions": "off",
     "import/prefer-default-export": "off",
-    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
     "import/no-unresolved": "off",
     "lines-between-class-members": ["error", "always", {exceptAfterSingleLine: true}],
     "max-classes-per-file": "off",

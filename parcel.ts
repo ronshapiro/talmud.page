@@ -76,6 +76,15 @@ const startServer = () => {
   server = expressMain(5000);
 };
 
+bundler.on("bundled", () => {
+  const distFiles = new Set(fs.readdirSync("./dist"));
+  for (const template of fs.readdirSync("./templates")) {
+    if (!distFiles.has(template)) {
+      fs.copyFileSync(`./templates/${template}`, `./dist/${template}`);
+    }
+  }
+});
+
 if (!isProd) {
   let distFiles = new Set();
   const compilerSubprocesses: ChildProcess[] = [];
@@ -84,11 +93,6 @@ if (!isProd) {
     if (distFiles.size !== newDistFiles.length || !newDistFiles.every(x => distFiles.has(x))) {
       distFiles = new Set(newDistFiles);
       startServer();
-    }
-    for (const template of fs.readdirSync("./templates")) {
-      if (!distFiles.has(template)) {
-        fs.copyFileSync(`./templates/${template}`, `./dist/${template}`);
-      }
     }
 
     while (compilerSubprocesses.length > 0) {
