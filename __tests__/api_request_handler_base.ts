@@ -35,6 +35,8 @@ export const testPages = [
   new TestPage("Eruvin", "11a"), // Has images
   new TestPage("Eruvin", "6b"), // Has images, including a comment with multiple images
   new TestPage("Eruvin", "105a"), // Ends with Hadran that has vocalization
+  new TestPage("Gittin", "85b"), // Has a link to Even HaEzer, Seder HaGet
+  new TestPage("Moed Katan", "21a"), // Has a link to Even HaEzer, Seder Halitzah
   new TestPage("Nazir", "33b"), // Has no gemara, just Tosafot
   new TestPage("Shabbat", "74b"), // Has weird API response with nested comment text from Rosh
   new TestPage("Tamid", "25b"), // No Rashi

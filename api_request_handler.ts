@@ -100,6 +100,10 @@ function shulchanArukhChapterTitle(ref: string): string | undefined {
   const separatorIndex = bookAndChapter.lastIndexOf(" ");
   const book = bookAndChapter.slice(0, separatorIndex);
   const chapter = bookAndChapter.slice(separatorIndex + 1);
+
+  if (book.includes(", Seder ")) {
+    return undefined;
+  }
   return SHULCHAN_ARUKH_HEADERS[book][chapter];
 }
 
