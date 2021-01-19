@@ -1,5 +1,5 @@
 /* global gtag */
-import $ from "jquery";
+import {$} from "./jquery";
 import PREFERENCES_PAGE_VERSION from "./preferences_version";
 
 const moveSnackbarOffscreen = () => $("#snackbar").css("bottom", -400);

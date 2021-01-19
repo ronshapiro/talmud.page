@@ -1,5 +1,4 @@
 /* global gtag, componentHandler */
-import $ from "jquery";
 import React, {
   Component,
   createRef,
@@ -11,6 +10,7 @@ import _ from "underscore";
 import {addDriveComments} from "./addDriveComments.ts";
 import {getCommentaryTypes} from "./commentaryTypes.ts";
 import isEmptyText from "./is_empty_text.ts";
+import {$} from "./jquery";
 import {
   NextButton,
   PreviousButton,

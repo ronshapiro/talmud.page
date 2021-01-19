@@ -1,6 +1,6 @@
-import $ from "jquery";
 import * as React from "react";
 import * as PropTypes from 'prop-types';
+import {$} from "./jquery";
 import {NavigationExtension} from "./NavigationExtension";
 import Modal from "./Modal";
 import {NullaryFunction} from "./types";

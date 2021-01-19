@@ -1,5 +1,5 @@
 /* global gtag,  */
-import $ from "jquery";
+import {$} from "./jquery";
 import {snackbars} from "./snackbar.ts";
 import {onceDocumentReady} from "./once_document_ready.ts";
 import {amudMetadata} from "./amud.ts";

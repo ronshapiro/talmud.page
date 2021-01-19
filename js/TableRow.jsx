@@ -1,4 +1,3 @@
-import $ from "jquery";
 import React, {
   Component,
   createRef,
@@ -7,6 +6,7 @@ import React, {
 } from "react";
 import PropTypes from 'prop-types';
 import isEmptyText from "./is_empty_text.ts";
+import {$} from "./jquery";
 import {ConfigurationContext, useConfiguration, useHiddenHost} from "./context.js";
 
 const brTagsCache = {};

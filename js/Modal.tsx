@@ -1,6 +1,6 @@
 import * as React from "react";
-import $ from "jquery";
 import * as PropTypes from 'prop-types';
+import {$} from "./jquery";
 import {NullaryFunction} from "./types";
 import componentHandler from "./componentHandler";
 import {useHtmlRef} from "./hooks";

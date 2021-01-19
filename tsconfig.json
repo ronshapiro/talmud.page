@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "strict": true,
+    "pretty": true,
+    "lib": ["es2020", "dom"],
+    "jsx": "react",
+  },
+}

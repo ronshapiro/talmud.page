@@ -1,4 +1,4 @@
-import $ from "jquery";
+import {$} from "./jquery";
 
 $.ajax({
   url: "https://sefaria.org/api/calendars",

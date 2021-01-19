@@ -1,34 +1,11 @@
-/* eslint import/no-extraneous-dependencies: ["error", {"devDependencies": true}] */
 /* eslint no-console: "off" */
 import * as chalk from 'chalk';
-import * as http from "http";
 import * as Bundler from 'parcel-bundler';
 import * as fs from 'fs';
-import {spawn, ChildProcess} from "child_process";
-import {expressMain} from "./express";
+import {spawn, execSync, ChildProcess} from "child_process";
 
 const ls = (dir: string): string[] => {
   return fs.readdirSync(dir).map(x => `${dir}/${x}`);
-};
-
-const IGNORE_FILES = new Set(["node_modules", "venv", "__pycache__", "dist", ".eslintrc.js"]);
-
-const jsFiles = (dir: string): string[] => {
-  const files: string[] = [];
-  for (const x of fs.readdirSync(dir, {withFileTypes: true})) {
-    if (IGNORE_FILES.has(x.name)) continue;
-
-    const name = dir === "." ? x.name : `${dir}/${x.name}`;
-    if (x.isDirectory()) {
-      files.push(...jsFiles(name));
-    } else if (name.endsWith(".js")
-      || name.endsWith(".ts")
-      || name.endsWith(".jsx")
-      || name.endsWith(".tsx")) {
-      files.push(name);
-    }
-  }
-  return files;
 };
 
 if (fs.existsSync("./dist")) {
@@ -68,14 +45,6 @@ const bundler = new Bundler(entryFiles, {
   scopeHoist: isProd,
 });
 
-let server: http.Server | undefined;
-
-const killServer = () => server?.close();
-const startServer = () => {
-  killServer();
-  server = expressMain(5000);
-};
-
 bundler.on("bundled", () => {
   const distFiles = new Set(fs.readdirSync("./dist"));
   for (const template of fs.readdirSync("./templates")) {
@@ -85,58 +54,134 @@ bundler.on("bundled", () => {
   }
 });
 
+bundler.bundle();
+
+const IGNORED_PREFIXES = [
+  ".#",
+  ".eslintrc.js",
+  ".git/",
+  "cached_outputs/",
+  "dist/",
+  "test_data/",
+  "venv/",
+];
+const ignoreFile = (file: string) => (
+  IGNORED_PREFIXES.some(x => file.startsWith(x)) || file.includes("#")
+);
+
+const jsFiles = (dir = "."): string[] => {
+  const files: string[] = [];
+  for (const x of fs.readdirSync(dir, {withFileTypes: true})) {
+    const name = dir === "." ? x.name : `${dir}/${x.name}`;
+    if (ignoreFile(name) || name === "node_modules") {
+      continue;
+    }
+
+    if (x.isDirectory()) {
+      files.push(...jsFiles(name));
+    } else if (name.endsWith(".js")
+      || name.endsWith(".ts")
+      || name.endsWith(".jsx")
+      || name.endsWith(".tsx")) {
+      files.push(name);
+    }
+  }
+  return files;
+};
+
+const FOUND_ERRORS_RE = (
+  /\[.*\d?\d:\d{2}:\d{2} [AP]M.*] (Found (\d+) errors?. Watching for file changes.)$/
+);
+function processTscOutput(output: string) {
+  if (output.includes("File change detected")
+    || output.includes("Starting compilation in watch mode")
+    // File not found
+    || output.includes("TS6053")) {
+    return;
+  }
+
+  const match = output.match(FOUND_ERRORS_RE);
+  if (match) {
+    if (match[2] === "0") {
+      console.log(chalk.blue("[ clean ] tsc"));
+    }
+  } else {
+    console.log(output);
+  }
+}
+
 if (!isProd) {
-  let distFiles = new Set();
-  const compilerSubprocesses: ChildProcess[] = [];
-  bundler.on('bundled', () => {
-    const newDistFiles = fs.readdirSync("./dist");
-    if (distFiles.size !== newDistFiles.length || !newDistFiles.every(x => distFiles.has(x))) {
-      distFiles = new Set(newDistFiles);
-      startServer();
-    }
+  const tscProcess = spawn("npx", ["tsc", "--watch", "--preserveWatchOutput"]);
+  tscProcess.stdout!.on("data", data => processTscOutput(data.toString().trim()));
+  tscProcess.stderr!.on("data", data => processTscOutput(data.toString().trim()));
 
-    while (compilerSubprocesses.length > 0) {
-      compilerSubprocesses.pop()!.kill();
-    }
-    const subprocessOutputs: boolean[] = [];
-    const processOutput = (process: ChildProcess) => {
-      const index = compilerSubprocesses.length;
-      compilerSubprocesses[index] = process;
-      const lines: string[] = [];
-      process.stdout!.on("data", data => lines.push(data));
-      process.stderr!.on("data", data => lines.push(chalk.bgRed(data)));
-      process.on("close", () => {
-        if (lines.length > 0) {
-          console.log(lines.join("\n"));
-          subprocessOutputs.push(true);
-        } else {
-          subprocessOutputs.push(false);
-        }
-
-        if (subprocessOutputs.length === compilerSubprocesses.length
-            && subprocessOutputs.every(x => !x)) {
-          console.log(chalk.green.bold("    js/ts is clean!"));
-        }
-      });
-    };
-
+  let eslint: ChildProcess | undefined;
+  const startEslint = () => {
     const allJsFiles = jsFiles(".");
     const needToSave = allJsFiles.filter(x => x.includes(".#"));
     if (needToSave.length > 0) {
       console.log(chalk.bgMagenta.bold(`Unsaved: ${needToSave}`));
     }
     const filesToLint = allJsFiles.filter(x => !x.includes(".#"));
-    const tsFiles = filesToLint.filter(x => x.endsWith(".ts") || x.endsWith(".tsx"));
 
-    if (tsFiles.length > 0) {
-      processOutput(spawn("pre-commit/tsc.sh", tsFiles));
+    eslint?.kill();
+    eslint = spawn("pre-commit/check_eslint.sh", filesToLint);
+    eslint.stdout!.on("data", data => console.log(data.toString()));
+    eslint.stderr!.on("data", data => console.error(chalk.bgRed(data.toString())));
+    eslint.on("close", code => {
+      if (code === 0) {
+        console.log(chalk.blue("[ clean ] eslint"));
+      }
+    });
+  };
+
+  startEslint();
+  fs.watch(".", {recursive: true}, (changeType, file) => {
+    if (!ignoreFile(file) && /.*\.[jt]sx?$/.test(file)) {
+      startEslint();
+    }
+  });
+
+  let serverProcess: ChildProcess | undefined;
+
+  const killServer = () => serverProcess?.kill();
+  const startServer = () => {
+    killServer();
+    const otherProcesses = execSync(
+      "ps ax | grep 'ts-node express_main.ts'").toString().split("\n");
+    for (const toKill of otherProcesses) {
+      if (toKill.includes("node_modules/.bin/ts-node")) {
+        const process = toKill.match(/^(\d+) .*/)![1];
+        execSync(`kill ${process}`);
+      }
     }
 
-    processOutput(spawn("pre-commit/check_eslint.sh", filesToLint));
+    serverProcess = spawn("npx", [
+      "nodemon express_main.ts",
+      "--config nodemon-express.json",
+      "--ignore parcel.ts",
+      "--ignore cached_outputs",
+      "--ignore test_data",
+    ].flatMap(x => x.split(" ")), {
+      env: {
+        ...process.env,
+        PORT: "5000",
+      },
+    });
+    serverProcess.stdout!.on("data", data => console.log(data.toString().trim()));
+    serverProcess.stderr!.on("data", data => console.log(data.toString().trim()));
+    process.stdin.pipe(serverProcess.stdin!);
+  };
+
+  let distFiles = new Set();
+  bundler.on('bundled', () => {
+    const newDistFiles = fs.readdirSync("./dist");
+    if (distFiles.size !== newDistFiles.length || !newDistFiles.every(x => distFiles.has(x))) {
+      distFiles = new Set(newDistFiles);
+      startServer();
+    }
   });
 
   bundler.on("buildError", () => killServer());
   process.on("exit", () => killServer());
 }
-
-bundler.bundle();

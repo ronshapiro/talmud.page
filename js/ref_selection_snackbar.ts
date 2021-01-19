@@ -1,8 +1,8 @@
 /* global gtag,  */
-import $ from "jquery";
+import {findNodeOffset} from "./dom";
 import {driveClient} from "./google_drive/singleton";
 import {AnyComment, CommentSourceMetadata} from "./google_drive/types";
-import {findNodeOffset} from "./dom";
+import {$} from "./jquery";
 import {snackbars} from "./snackbar";
 import {checkNotUndefined} from "./undefined";
 
