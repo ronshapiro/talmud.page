@@ -426,7 +426,6 @@ export class BookIndex {
   }
 }
 
-
 export const books = new BookIndex([
   new Masechet({
     canonicalName: "Arakhin",
@@ -969,3 +968,18 @@ export const books = new BookIndex([
     end: "36",
   }),
 ]);
+
+let bibleRefRegex: RegExp;
+
+export function isLikelyBibleRef(ref: string): boolean {
+  if (!bibleRefRegex) {
+    const bibleBookNames = (
+      Array.from(new Set(Object.values(books.byCanonicalName)))
+        .filter(x => x instanceof BibleBook)
+        .map(x => x.canonicalName)
+    );
+    bibleRefRegex = new RegExp(`^(${bibleBookNames.join("|")}) .*`);
+  }
+
+  return bibleRefRegex.test(ref);
+}

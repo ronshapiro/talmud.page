@@ -5,7 +5,7 @@ import {
   Section,
   ApiComment,
 } from "./apiTypes";
-import {books, QueryResult} from "./books";
+import {books, isLikelyBibleRef, QueryResult} from "./books";
 import {ALL_COMMENTARIES, CommentaryType} from "./commentaries";
 import {hadranSegments} from "./hadran";
 import {stripHebrewNonletters} from "./hebrew";
@@ -314,11 +314,12 @@ function hasMatchingProperty(first: any, second: any, propertyName: string): boo
     && first[propertyName] === second[propertyName];
 }
 
-interface LinkGraph {
-  graph: Record<string, Set<string>>;
-  links: Record<string, Record<string, sefaria.TextLink>>;
+class LinkGraph {
+  graph: Record<string, Set<string>> = {};
+  links: Record<string, Record<string, sefaria.TextLink>> = {}
+  textResponses: Record<string, sefaria.TextResponse> = {};
   // TODO(typescript): don't cache the result if the link graph is incomlete
-  complete: boolean;
+  complete = true;
 }
 
 function textRequestEndpoint(ref: string): string {
@@ -340,6 +341,10 @@ export class ApiException extends Error {
 
 function isSefariaError(response: any): response is sefaria.ErrorResponse {
   return "error" in response;
+}
+
+function hasText(textLink: sefaria.TextLink): textLink is sefaria.TextLinkWithText {
+  return "he" in textLink && "text" in textLink;
 }
 
 export abstract class AbstractApiRequestHandler {
@@ -400,15 +405,14 @@ export abstract class AbstractApiRequestHandler {
       this.requestMaker.makeRequest<sefaria.TextResponse>(textRequestEndpoint(ref)));
     const linksTraversalTimer = this.logger.newTimer();
     const linkGraphRequest = this.linksTraversal(
-      {graph: {}, links: {}, complete: true}, ref, [ref], this.linkDepth(bookName, page), [ref])
+      new LinkGraph(), ref, [ref], this.linkDepth(bookName, page), [ref])
       .finally(() => linksTraversalTimer.finish("links traversal"));
     return Promise.all([
       textRequest,
-      linkGraphRequest,
       linkGraphRequest.then(linkGraph => {
         const textRequestRefs = new Set<string>();
         const addTextRequestRef = (requestRef: string) => {
-          if (!requestRef.startsWith(ref)) {
+          if (!(requestRef in linkGraph.textResponses) && !requestRef.startsWith(ref)) {
             textRequestRefs.add(requestRef);
           }
         };
@@ -417,9 +421,19 @@ export abstract class AbstractApiRequestHandler {
           linkGraph.graph[key].forEach(addTextRequestRef);
         }
 
-        return this.fetchData(Array.from(textRequestRefs));
+        return this.fetchData(Array.from(textRequestRefs))
+          .then(fetched => {
+            for (const [fetchedRef, textResponse] of Object.entries(fetched)) {
+              linkGraph.textResponses[fetchedRef] = textResponse;
+            }
+          })
+          .then(() => linkGraph);
       }),
     ]).then(args => this.transformData(bookName, page, ...args));
+  }
+
+  private linksRequestUrl(ref: string) {
+    return `/links/${ref}?with_text=${isLikelyBibleRef(ref) ? 0 : 1}`;
   }
 
   private linksTraversal(
@@ -430,7 +444,7 @@ export abstract class AbstractApiRequestHandler {
     refHierarchy: string[],
   ): Promise<LinkGraph> {
     const [promise, finish, onError] = promiseParts<LinkGraph>();
-    const url = `/links/${refToRequest}?with_text=0`;
+    const url = this.linksRequestUrl(refToRequest);
     this.requestMaker.makeRequest<sefaria.TextLink[] | sefaria.ErrorResponse>(url)
       .then(linksResponse => {
         if (isSefariaError(linksResponse)) {
@@ -463,6 +477,17 @@ export abstract class AbstractApiRequestHandler {
           targetRefs.add(targetRef);
           linkGraph.links[sourceRef][targetRef] = link;
 
+
+          // If after link traversal https://github.com/Sefaria/Sefaria-Project/issues/616 is
+          // implemented, with_text can always be set to 0 and then all fetching deferred to
+          if (hasText(link)) {
+            linkGraph.textResponses[targetRef] = {
+              ref: link.ref,
+              text: link.text,
+              he: link.he,
+            };
+          }
+
           if (remainingDepth !== 0 && commentaryType.allowNestedTraversals) {
             nextRefs.push(targetRef);
           }
@@ -493,6 +518,10 @@ export abstract class AbstractApiRequestHandler {
   }
 
   private fetchData(refs: string[]): Promise<Record<string, sefaria.TextResponse>> {
+    if (refs.length === 0) {
+      return Promise.resolve({});
+    }
+
     const timer = this.logger.newTimer();
     const fetched: Record<string, sefaria.TextResponse> = {};
     const nestedPromises: Promise<unknown>[] = [];
@@ -533,7 +562,6 @@ export abstract class AbstractApiRequestHandler {
     page: string,
     textResponse: sefaria.TextResponse,
     linkGraph: LinkGraph,
-    linkResponses: Record<string, sefaria.TextResponse>,
   ): ApiResponse {
     const timer = this.logger.newTimer();
     const mainRef = textResponse.ref;
@@ -562,7 +590,7 @@ export abstract class AbstractApiRequestHandler {
         hebrew: this.translateHebrewText(hebrew[i]),
         english: this.translateEnglishText(english[i]),
       });
-      this.addComments(ref, segment.commentary, linkGraph, linkResponses);
+      this.addComments(ref, segment.commentary, linkGraph);
       segments.push(segment);
     }
 
@@ -586,10 +614,9 @@ export abstract class AbstractApiRequestHandler {
     ref: string,
     commentary: InternalCommentary,
     linkGraph: LinkGraph,
-    linkResponses: Record<string, sefaria.TextResponse>,
   ) {
     for (const linkRef of Array.from(linkGraph.graph[ref] ?? [])) {
-      const linkResponse = linkResponses[linkRef];
+      const linkResponse = linkGraph.textResponses[linkRef];
       if (!linkResponse || isSefariaError(linkResponse)) continue; // Don't process failed requests
       if (linkResponse.he.length === 0 && linkResponse.text.length === 0) continue;
 
@@ -607,8 +634,7 @@ export abstract class AbstractApiRequestHandler {
       this.addComments(
         linkRef,
         commentary.nestedCommentary(commentaryType.englishName),
-        linkGraph,
-        linkResponses);
+        linkGraph);
     }
   }
 

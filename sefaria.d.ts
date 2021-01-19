@@ -3,6 +3,9 @@ declare namespace sefaria {
     error?: string;
   }
 
+  // When this becomes a more jagged-type, remove the ts-ignores in sefariaTextType.test.ts
+  export type TextType = string | string[];
+
   export interface TextLink extends ErrorResponse {
     collectiveTitle?: {en: string, he: string};
     category?: string;
@@ -14,8 +17,10 @@ declare namespace sefaria {
     anchorRefExpanded: string[];
   }
 
-  // When this becomes a more jagged-type, remove the ts-ignores in sefariaTextType.test.ts
-  export type TextType = string | string[];
+  export interface TextLinkWithText extends TextLink {
+    he: TextType;
+    text: TextType;
+  }
 
   export interface TextResponse {
     he: TextType;
