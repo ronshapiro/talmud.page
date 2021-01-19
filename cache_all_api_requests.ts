@@ -26,7 +26,7 @@ for (const book of Array.from(new Set(Object.values(books.byCanonicalName)))) {
     const filePath = `cached_outputs/api_request_handler/${book.canonicalName}.${section}.json`;
     promiseChain.add(
       () => makeRequest(book.canonicalName, section).then(result => writeJson(filePath, result)));
+    promiseChain.add(() => console.log(`Finished ${book.canonicalName} ${section}`));
   }
-  promiseChain.add(() => console.log(`Finished ${book.canonicalName}`));
 }
 promiseChain.add(() => console.log("Finished!"));
