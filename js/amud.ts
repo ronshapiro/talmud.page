@@ -11,7 +11,7 @@ export const computeNextAmud = (current: string): string => {
 };
 
 const SPACE_REGEX = /(%20|_)/g;
-const AMUD_REGEX = /^[0-9]{1,3}[ab]$/;
+const AMUD_REGEX = /^\d{1,3}[ab]$/;
 
 interface AmudMetadata {
   masechet: string;

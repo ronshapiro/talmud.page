@@ -145,7 +145,7 @@ const onSelectionChange = () => {
     },
   );
 
-  if (driveClient.isSignedIn && !driveClient.errors.length && ref !== "ignore-drive") {
+  if (driveClient.isSignedIn && !driveClient.hasErrors() && ref !== "ignore-drive") {
     let selectedText: string;
     let commentSourceMetadata: CommentSourceMetadata | undefined;
     const captureSelectionState = () => {

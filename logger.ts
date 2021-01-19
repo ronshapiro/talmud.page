@@ -8,10 +8,10 @@ export interface Logger {
 }
 
 export class Timer {
-  constructor(private readonly logger: Logger, private readonly startTime = new Date().getTime()) {}
+  constructor(private readonly logger: Logger, private readonly startTime = Date.now()) {}
 
   finish(description: string): void {
-    const deltaInSeconds = (new Date().getTime() - this.startTime) / 1000;
+    const deltaInSeconds = (Date.now() - this.startTime) / 1000;
     this.logger.debug(description, "took", deltaInSeconds, "seconds");
   }
 }

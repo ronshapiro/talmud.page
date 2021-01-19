@@ -98,10 +98,10 @@ export class HtmlVisitor {
 
   beforeJoin(): void {}
 
-  appendStartTag(tag: string, attrs: Attributes, to: string[] = this._out): void {
+  appendStartTag(tag: string, attributes: Attributes, to: string[] = this._out): void {
     to.push(`<${tag}`);
-    for (const attr of attrs) {
-      to.push(` ${attr[0]}="${attr[1]}"`);
+    for (const [key, value] of attributes) {
+      to.push(` ${key}="${value}"`);
     }
     to.push(">");
   }

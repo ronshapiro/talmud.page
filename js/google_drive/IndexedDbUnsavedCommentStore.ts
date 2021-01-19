@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/prefer-add-event-listener */
 import {v4 as uuid} from "uuid";
 import {PromiseChain} from "../promises";
 import {

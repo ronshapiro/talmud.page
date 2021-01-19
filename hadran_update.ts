@@ -4,7 +4,7 @@ import {sefariaTextTypeTransformation} from "./sefariaTextType";
 import {writeJson} from "./util/json_files";
 
 const englishTransform = sefariaTextTypeTransformation(
-  text => text.replace(/ \[fill in the name of the tractate\]/g, ""));
+  text => text.replace(/ \[fill in the name of the tractate]/g, ""));
 
 const hebrewTransform = sefariaTextTypeTransformation(
   text => text

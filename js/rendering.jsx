@@ -30,7 +30,7 @@ $.fn.extend({
     if (!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)) {
       let lastTime = 0;
       this.click((event) => {
-        const now = new Date().getTime();
+        const now = Date.now();
         if (now - lastTime <= 1000) {
           fn(event);
           lastTime = 0;

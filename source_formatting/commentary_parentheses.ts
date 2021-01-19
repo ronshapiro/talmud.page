@@ -5,7 +5,7 @@ export class CommentaryParenthesesTransformer extends HtmlVisitor {
 
   shouldRun(input: string): boolean {
     // TODO: this isn't perfect since it doesn't checked for balancedness
-    return input.indexOf("(") !== -1 || input.indexOf(")") !== -1;
+    return input.includes("(") || input.includes(")");
   }
 
   visitStartTag(tag: string, attributes: Attributes): void {

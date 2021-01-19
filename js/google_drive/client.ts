@@ -265,7 +265,7 @@ export class DriveClient {
     const namedRanges = this.databaseDocument.namedRanges as TypescriptCleanupType;
     const rangesById: Record<string, Record<string, Range>> = {};
     for (const rangeName of Object.keys(namedRanges)) {
-      if (rangeName.indexOf(NAMED_RANGE_SEPARATOR) !== -1) {
+      if (rangeName.includes(NAMED_RANGE_SEPARATOR)) {
         const parts = rangeName.split(NAMED_RANGE_SEPARATOR);
         const id = parts[0];
         if (!(id in rangesById)) {
@@ -600,10 +600,14 @@ export class DriveClient {
     const trigger = () => this.onErrorListener && this.onErrorListener();
 
     if (previousKeys.length !== currentKeys.length
-        || currentKeys.filter(k => this.errors[k] !== this.previousErrors[k]).length) {
+        || currentKeys.filter(k => this.errors[k] !== this.previousErrors[k]).length > 0) {
       trigger();
     }
 
     this.previousErrors = {...this.errors};
+  }
+
+  hasErrors(): boolean {
+    return Object.keys(this.errors).length > 0;
   }
 }

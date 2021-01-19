@@ -41,7 +41,7 @@ const maybeSetInitialScrollPosition = () => {
       && localStorage.restoreSectionOnRefresh
       && localStorage.restoreSectionOnRefresh.length > 0) {
     const savedSection = "#" + localStorage.restoreSectionOnRefresh;
-    if ($(savedSection).length) {
+    if ($(savedSection).length > 0) {
       scrollToSection = savedSection;
     }
   }
@@ -208,7 +208,7 @@ export class Runner {
     this.driveClient.databaseUpdatedListener = () => this.renderer.forceUpdate();
 
     this.driveClient.onErrorListener = () => {
-      if (Object.keys(this.driveClient.errors).length) {
+      if (Object.keys(this.driveClient.errors).length > 0) {
         snackbars.errors.show(Object.values(this.driveClient.errors).join("<br><br>"));
       } else {
         snackbars.errors.hide();

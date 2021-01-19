@@ -401,7 +401,7 @@ export class BookIndex {
       throw new InvalidQueryException(`No ${sectionWord} specified in query: "${query}"`);
     }
 
-    if (words.length === 1 && words[0].indexOf("-") !== -1) {
+    if (words.length === 1 && words[0].includes("-")) {
       const sections = words[0].split("-");
       if (sections.length !== 2) {
         throw new InvalidQueryException(`Could not understand: ${query}`);

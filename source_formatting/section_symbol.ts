@@ -4,7 +4,7 @@ export class SectionSymbolRemover extends HtmlVisitor {
   isAtStart = true;
 
   shouldRun(input: string): boolean {
-    return input.indexOf("§") !== -1;
+    return input.includes("§");
   }
 
   visitStartTag(tag: string, attributes: Attributes): void {

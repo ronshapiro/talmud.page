@@ -6,7 +6,7 @@ export class SefariaLinkSanitizer extends HtmlVisitor {
   }
 
   shouldRun(input: string): boolean {
-    return input.indexOf("href") !== -1;
+    return input.includes("href");
   }
 
   visitStartTag(tag: string, attributes: Attributes): void {

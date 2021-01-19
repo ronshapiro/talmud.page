@@ -35,7 +35,7 @@ function injectHighlighting(
   });
 }
 
-// eslint-disable-next-line no-misleading-character-class
+// eslint-disable-next-line no-misleading-character-class,unicorn/better-regex
 const NON_SIGNIFICANT_CHARACTERS = /[,"'.?!:;\-–—=[\]()/ ֑-ׇ]*/.source;
 const NON_SIGNIFICANT_CHARACTER = new RegExp(NON_SIGNIFICANT_CHARACTERS.replace("*", ""));
 
@@ -53,7 +53,7 @@ function createRegex(input: string): RegExp | undefined {
       .join(NON_SIGNIFICANT_CHARACTERS)
   );
   try {
-    return RegExp(asString);
+    return new RegExp(asString);
   } catch {
     console.error(`${asString} is not a valid regex`);
     return undefined;

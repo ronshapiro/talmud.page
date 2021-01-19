@@ -121,11 +121,11 @@ if (!isProd) {
     };
 
     const allJsFiles = jsFiles(".");
-    const needToSave = allJsFiles.filter(x => x.indexOf(".#") !== -1);
+    const needToSave = allJsFiles.filter(x => x.includes(".#"));
     if (needToSave.length > 0) {
       console.log(chalk.bgMagenta.bold(`Unsaved: ${needToSave}`));
     }
-    const filesToLint = allJsFiles.filter(x => x.indexOf(".#") === -1);
+    const filesToLint = allJsFiles.filter(x => !x.includes(".#"));
     const tsFiles = filesToLint.filter(x => x.endsWith(".ts") || x.endsWith(".tsx"));
 
     if (tsFiles.length > 0) {

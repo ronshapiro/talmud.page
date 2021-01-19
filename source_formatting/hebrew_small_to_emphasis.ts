@@ -2,7 +2,7 @@ import {Attributes, HtmlVisitor} from "./html_visitor";
 
 export class HebrewSmallToEmphasisTagTranslator extends HtmlVisitor {
   shouldRun(input: string): boolean {
-    return input.indexOf("<small") !== -1;
+    return input.includes("<small");
   }
 
   visitStartTag(tag: string, attributes: Attributes): void {

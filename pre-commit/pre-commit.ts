@@ -2,7 +2,6 @@
 // default runs precommits sequentially to avoid inter-precommit dependencies since pre-commits can
 // modify files. For most pre-commits, that's a bad idea anyway.
 
-/* eslint import/no-extraneous-dependencies: ["error", {"devDependencies": true}] */
 /* eslint no-console: "off" */
 import * as chalk from 'chalk';
 import * as fs from 'fs';
@@ -31,6 +30,7 @@ const precommit = (command: string) => {
       }
     }
     if (precommits.length === exitCodes.length) {
+      // eslint-disable-next-line unicorn/no-process-exit
       process.exit(exitCodes.reduce((x, y) => x + y));
     }
   });

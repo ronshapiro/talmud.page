@@ -25,14 +25,14 @@ const buttonClasses = (...extra: string[]) => {
 
 const newSearch = (searchTerm: string): void => {
   const form = document.createElement("form");
-  document.body.appendChild(form);
+  document.body.append(form);
   form.method = "post";
   form.action = `${window.location.origin}/view_daf`;
   const input = document.createElement("input");
   input.type = "hidden";
   input.name = "search_term";
   input.value = searchTerm;
-  form.appendChild(input);
+  form.append(input);
   form.submit();
 };
 

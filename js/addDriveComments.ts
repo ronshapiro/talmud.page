@@ -19,7 +19,7 @@ function setHighlights(obj: Section | ApiComment, driveClient: DriveClient) {
   delete obj.hasHighlights;
 
   const highlights = driveClient.highlightsForRef(obj.ref);
-  if (highlights.length) {
+  if (highlights.length > 0) {
     obj.unhighlighted = {he: obj.he, en: obj.en};
     for (const highlight of highlights) {
       const prop = highlight.commentSourceMetadata.isEnglish ? "en" : "he";

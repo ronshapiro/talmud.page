@@ -9,9 +9,6 @@ class FootnotesVisitor extends HtmlVisitor {
 
   constructor(readonly footnotes: string[]) {
     super();
-    if (footnotes === undefined) {
-      throw new Error("");
-    }
   }
 
   shouldRun(input: string): boolean {

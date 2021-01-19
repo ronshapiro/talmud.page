@@ -24,7 +24,7 @@ export class WeightBasedLruCache<T> {
   constructor(
     private readonly maxSize: number,
     private readonly weighingFunction: (t: T) => number,
-    private readonly getTime = () => new Date().getTime(),
+    private readonly getTime = () => Date.now(),
   ) {
     if (this.maxSize <= 0) {
       throw new Error(`maxSize must be positive: ${this.maxSize}`);

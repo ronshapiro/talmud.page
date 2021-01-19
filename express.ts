@@ -34,6 +34,7 @@ nunjucks.configure("dist", {
 
 const randomHash = (() => {
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  // eslint-disable-next-line unicorn/new-for-builtins
   return [...Array(8)].map(_ => alphabet[Math.floor(Math.random() * alphabet.length)]).join("");
 })();
 

@@ -9,7 +9,8 @@ module.exports = {
   extends: [
     "plugin:react/recommended",
     "airbnb",
-    'plugin:@typescript-eslint/recommended',
+    "plugin:@typescript-eslint/recommended",
+    "plugin:unicorn/recommended",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -66,6 +67,22 @@ module.exports = {
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
 
+    "unicorn/catch-error-name": "off",
+    "unicorn/consistent-destructuring": "off",
+    "unicorn/consistent-function-scoping": "off",
+    "unicorn/filename-case": "off",
+    "unicorn/import-style": "off",
+    "unicorn/no-array-callback-reference": "off",
+    "unicorn/no-array-reduce": "off",
+    "unicorn/no-for-loop": "off",
+    "unicorn/no-useless-undefined": "off",
+    "unicorn/prefer-modern-dom-apis": "off",
+    "unicorn/prefer-number-properties": "off",
+    "unicorn/prefer-query-selector": "off",
+    "unicorn/prefer-spread": "off",
+    "unicorn/prefer-string-slice": "off",
+    "unicorn/prefer-ternary": "off",
+    "unicorn/prevent-abbreviations": "off",
 
     // These rules may be removable with some work
     "no-param-reassign": "off",
@@ -88,6 +105,7 @@ module.exports = {
       rules: {
         "quote-props": "off",
         "comma-dangle": "off",
+        "unicorn/escape-case": "off",
       },
     },
     {
@@ -100,6 +118,12 @@ module.exports = {
       files: ["*.tsx"],
       rules: {
         "react/jsx-filename-extension": "off",
+      },
+    },
+    {
+      files: ["*.[jt]sx"],
+      rules: {
+        "unicorn/no-null": "off",
       },
     },
     {

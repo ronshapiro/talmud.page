@@ -95,7 +95,7 @@ const trimTextsByFilterRange = (range: Range): ElementsProcessor => {
 };
 
 const HEBREW_LETTERS = /[א-ת]/g;
-const LATIN_LETTERS = /[a-zA-Z]/g;
+const LATIN_LETTERS = /[A-Za-z]/g;
 
 const numMatches = (regex: RegExp, input: string): number => {
   return (input.match(regex) || []).length;

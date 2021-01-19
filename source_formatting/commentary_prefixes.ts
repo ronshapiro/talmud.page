@@ -9,7 +9,7 @@ export class CommentaryPrefixStripper extends HtmlVisitor {
   hasProcessedText = false
 
   shouldRun(input: string): boolean {
-    return _PREFIXES_TO_STRIP.some(x => input.indexOf(x) !== -1);
+    return _PREFIXES_TO_STRIP.some(x => input.includes(x));
   }
 
   visitStartTag(tag: string, attributes: Attributes): void {

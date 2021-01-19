@@ -652,7 +652,7 @@ export abstract class AbstractApiRequestHandler {
       if (name === kind.englishName
         || hasMatchingProperty(link, kind, "category")
         || hasMatchingProperty(link, kind, "type")
-        || (kind.englishNamePattern && name.match(kind.englishNamePattern))) {
+        || (kind.englishNamePattern && kind.englishNamePattern.test(name))) {
         return kind;
       }
     }

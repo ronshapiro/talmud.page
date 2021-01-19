@@ -23,7 +23,7 @@ class Subject {
     let result: QueryResult;
     try {
       result = books.parse(this.query);
-    } catch (e) {
+    } catch {
       return;
     }
     throw new Error(`${this.query} successfully parsed as ${result}, but was expected to fail.`);

@@ -1172,7 +1172,7 @@ const ABBREVIATIONS: Abbreviation[] = _ABBREVIATIONS.map(x => {
 
 const ORDERED_ABBREVIATIONS: Abbreviation[] = (
   ABBREVIATIONS.filter(x => !x.exceptions).concat(
-    ABBREVIATIONS.filter(x => x.exceptions && x.exceptions.indexOf("low priority") !== -1)));
+    ABBREVIATIONS.filter(x => x.exceptions && x.exceptions.includes("low priority"))));
 
 function applyRegex(text: string, abbreviation: Abbreviation): string {
   const matches = Array.from(text.matchAll(abbreviation.regex));
@@ -1225,7 +1225,7 @@ export class JastrowReformatter extends HtmlVisitor {
   }
 
   visitText(text: string): void {
-    if (text.match(ADDITIONAL_TRANSLATION)) {
+    if (ADDITIONAL_TRANSLATION.test(text)) {
       this.appendText("<br>");
       text = text.replace(/-/g, "");
     }

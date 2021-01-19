@@ -24,8 +24,7 @@ type MaybeButtons = Button | Button[];
 
 function updateSnackbar(kind: Kind, labelHtml: string, maybeButtons: MaybeButtons): void {
   let $container = $(`#snackbar .${kind.cssClass}`);
-  const addingContainer = !$container.length;
-  if (addingContainer) {
+  if ($container.length === 0) {
     addContainer(kind);
     $container = $(`#snackbar .${kind.cssClass}`);
   }

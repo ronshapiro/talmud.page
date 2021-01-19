@@ -13,7 +13,7 @@ export function asPromise<T>(thenable: PromiseLike<T>): Promise<T> {
 }
 
 export class PromiseChain {
-  constructor(private serializer: Promise<unknown> = Promise.resolve(null)) {}
+  constructor(private serializer: Promise<unknown> = Promise.resolve(undefined)) {}
 
   add(serializedFunction: () => any): this {
     this.serializer = this.serializer.then(() => serializedFunction()).catch(() => {});

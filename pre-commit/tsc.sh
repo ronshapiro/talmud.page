@@ -20,10 +20,14 @@ args() {
          --pretty
 }
 
+tsc() {
+    npx --loglevel=silent tsc "$@"
+}
+
 if [[ -n "${webFiles[@]:-}" ]]; then
-    npx tsc $(args) --lib es2019,dom --esModuleInterop --jsx react ${webFiles[@]:-}
+    tsc $(args) --lib es2019,dom --esModuleInterop --jsx react ${webFiles[@]:-}
 fi
 
 if [[ -n "${nodeFiles[@]:-}" ]]; then
-    npx tsc $(args) --lib es2020,dom ${nodeFiles[@]:-}
+    tsc $(args) --lib es2020,dom ${nodeFiles[@]:-}
 fi

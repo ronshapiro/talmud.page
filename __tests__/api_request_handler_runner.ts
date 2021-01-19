@@ -11,6 +11,6 @@ for (const testPage of testPages) {
     .then(results => writeJson(testPage.outputFilePath(), results))
     .catch(e => {
       console.error(e);
-      process.exit(1);
+      process.exit(1); // eslint-disable-line unicorn/no-process-exit
     });
 }

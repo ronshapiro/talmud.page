@@ -1,7 +1,7 @@
 import {Attributes, HtmlVisitor} from "./html_visitor";
 
 // This is intentional - we want a value that is not identical to any other value
-// eslint-disable-next-line no-new-wrappers
+// eslint-disable-next-line no-new-wrappers,unicorn/new-for-builtins
 const placeholder = new String() as string;
 
 export class ImageNumberingFormatter extends HtmlVisitor {
@@ -10,7 +10,7 @@ export class ImageNumberingFormatter extends HtmlVisitor {
   isInImage = false;
 
   shouldRun(input: string): boolean {
-    return input.indexOf("<img") !== -1;
+    return input.includes("<img");
   }
 
   visitStartTag(tag: string, attributes: Attributes): void {
@@ -32,12 +32,10 @@ export class ImageNumberingFormatter extends HtmlVisitor {
     this.appendText(text);
   }
 
-  formatImageRef(counter: number): string {
-    if (counter === 1 && this.imageTags.length === 1) {
-      return "(*)";
-    } else {
-      return `(${counter})`;
-    }
+  formatImageReference(counter: number): string {
+    return (counter === 1 && this.imageTags.length === 1)
+      ? "(*)"
+      : `(${counter})`;
   }
 
   beforeJoin(): void {
@@ -52,15 +50,15 @@ export class ImageNumberingFormatter extends HtmlVisitor {
       if (piece !== placeholder) {
         newOut.push(piece);
       } else {
-        const imageRef = this.formatImageRef(imageCounter + 1);
+        const imageReference = this.formatImageReference(imageCounter + 1);
         newOut.push(
           '<span class="image-ref-container">',
-          `<span class="image-ref-text">${imageRef}:</span>`,
+          `<span class="image-ref-text">${imageReference}:</span>`,
           '<span class="image-ref">',
           this.imageTags[imageCounter],
           "</span>",
           "</span>",
-          `<span class="image-pointer">${imageRef}</span>`,
+          `<span class="image-pointer">${imageReference}</span>`,
         );
         imageCounter += 1;
       }

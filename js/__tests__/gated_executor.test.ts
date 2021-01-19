@@ -59,7 +59,7 @@ describe("execute() returns a Promise", () => {
       expect.assertions(1);
       return instance.execute(
         () => {
-          throw new Error();
+          throw new Error("Expected to fail");
         },
       ).catch(() => expect(true).toBe(true));
     });
@@ -77,7 +77,7 @@ describe("execute() returns a Promise", () => {
       expect.assertions(1);
       return instance.execute(
         () => {
-          throw new Error();
+          throw new Error("Expected to fail");
         },
       ).catch(() => expect(true).toBe(true));
     });
