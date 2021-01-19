@@ -618,8 +618,10 @@ export abstract class AbstractApiRequestHandler {
     ref: string,
     commentary: InternalCommentary,
     linkGraph: LinkGraph,
+    cycleChecker: Set<string> = new Set(),
   ) {
     for (const linkRef of Array.from(linkGraph.graph[ref] ?? [])) {
+      if (cycleChecker.has(linkRef)) continue;
       const linkResponse = linkGraph.textResponses[linkRef];
       if (!linkResponse || isSefariaError(linkResponse)) continue; // Don't process failed requests
       if (linkResponse.he.length === 0 && linkResponse.text.length === 0) continue;
@@ -635,10 +637,13 @@ export abstract class AbstractApiRequestHandler {
           Comment.create(link, footnote, "Footnotes", this.logger));
       }
 
+      cycleChecker.add(ref);
       this.addComments(
         linkRef,
         commentary.nestedCommentary(commentaryType.englishName),
-        linkGraph);
+        linkGraph,
+        cycleChecker);
+      cycleChecker.delete(ref);
     }
   }
 
