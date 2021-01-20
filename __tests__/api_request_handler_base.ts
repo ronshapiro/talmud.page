@@ -1,4 +1,5 @@
 import * as fs from "fs";
+import {parse as urlParse} from "url";
 import {writeJson} from "../util/json_files";
 import {RealRequestMaker, RequestMaker} from "../api_request_handler";
 
@@ -8,8 +9,14 @@ interface Endpoint {
 }
 
 function parseEndpoint(endpoint: string): Endpoint {
-  const match = endpoint.match(/\/(texts|links)\/(.*)\?.*/)!;
-  return {requestBase: match[1], ref: match[2]};
+  const match = endpoint.match(/\/([a-z]+)\/(.*)\?.*/)!;
+  const requestBase = match[1];
+
+  if (requestBase === "bulktext") {
+    const id = new URLSearchParams(urlParse(endpoint).query!).get("tp")!;
+    return {requestBase, ref: id};
+  }
+  return {requestBase, ref: match[2]};
 }
 
 function testDataPath(path: string): string {

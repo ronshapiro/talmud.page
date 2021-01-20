@@ -13,6 +13,7 @@ import {fetch} from "./fetch";
 import {promiseParts} from "./js/promises";
 import {Logger, consoleLogger} from "./logger";
 import {mergeRefs} from "./ref_merging";
+import {refSorter} from "./js/google_drive/ref_sorter";
 import {
   firstOrOnlyElement,
   sefariaTextTypeTransformation,
@@ -425,7 +426,7 @@ export abstract class AbstractApiRequestHandler {
           linkGraph.graph[key].forEach(addTextRequestRef);
         }
 
-        return this.fetchData(Array.from(textRequestRefs))
+        return this.fetchData(Array.from(textRequestRefs), ref)
           .then(fetched => {
             for (const [fetchedRef, textResponse] of Object.entries(fetched)) {
               linkGraph.textResponses[fetchedRef] = textResponse;
@@ -521,7 +522,10 @@ export abstract class AbstractApiRequestHandler {
     return promise;
   }
 
-  private fetchData(refs: string[]): Promise<Record<string, sefaria.TextResponse>> {
+  private fetchData(
+    refs: string[],
+    requestedRef: string,
+  ): Promise<Record<string, sefaria.TextResponse>> {
     if (refs.length === 0) {
       return Promise.resolve({});
     }
@@ -530,32 +534,33 @@ export abstract class AbstractApiRequestHandler {
     const fetched: Record<string, sefaria.TextResponse> = {};
     const nestedPromises: Promise<unknown>[] = [];
 
-    const merged = mergeRefs(refs).asMap();
-    this.logger.debug("reduction", (refs.length - merged.size) / refs.length);
+    // 40 seems to be a sweet spot for speed. Perhaps it's because it limits the number of requests
+    // without making any of those requests heavyweight.
+    const shardSize = 40;
 
-    for (const [ref, subrefs] of Array.from(merged.entries())) {
+    // Sorting helps maintain expected outputs for tests, and also for debugging queries that may go
+    // awry. There isn't much need to use mergeRefs(), and in fact it may cause problems with the
+    // maintaining a stable shard size.
+    refs = Array.from(refs);
+    refs.sort(refSorter);
+
+    for (let i = 0; i < refs.length; i += shardSize) {
+      const delimitedRefs = refs.slice(i, i + shardSize).join("|");
+      // The tp parameter is helpful for debugging and maintaining stability of recorded test data
+      const url = `/bulktext/${delimitedRefs}?useTextFamily=1&tp=${requestedRef}@${i}`;
       nestedPromises.push(
-        this.requestMaker.makeRequest<sefaria.TextResponse>(textRequestEndpoint(ref))
-          .then(response => {
-            if (subrefs.length === 1) {
-              fetched[subrefs[0]] = response;
-              return;
-            }
-
-            const refIndex = (someRef: string) => (
-              parseInt(someRef.substring(someRef.lastIndexOf(":") + 1)));
-            const offset = refIndex(subrefs[0]);
-            for (const subref of subrefs) {
-              const index = refIndex(subref) - offset;
-              fetched[subref] = {
-                he: response.he[index] ?? (typeof response.text[index] === "string" ? "" : []),
-                text: response.text[index] ?? (typeof response.he[index] === "string" ? "" : []),
-                ref: subref,
-              };
-            }
-            fetched[ref] = response;
-          }));
+        this.requestMaker.makeRequest<sefaria.BulkTextResponse>(url).then(allTexts => {
+          for (const ref of Object.keys(allTexts)) {
+            const response = allTexts[ref];
+            fetched[ref] = {
+              he: response.he,
+              text: response.en,
+              ref,
+            };
+          }
+        }));
     }
+
     return Promise.allSettled(nestedPromises)
       .then(() => fetched)
       .finally(() => timer.finish("fetching secondary texts"));

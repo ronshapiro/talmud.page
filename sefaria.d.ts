@@ -29,4 +29,12 @@ declare namespace sefaria {
     title?: string;
     indexTitle?: string;
   }
+
+  interface BulkTextValue {
+    he: TextType;
+    en: TextType;
+    ref: string;
+  }
+
+  export type BulkTextResponse = Record<string, BulkTextValue>;
 }
