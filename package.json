@@ -21,7 +21,7 @@
     "test": "jest --colors",
     "dev": "nodemon --watch parcel.ts parcel.ts dev",
     "parcel-prod": "ts-node parcel.ts prod",
-    "deploy": "parcel-prod && yes | gcloud --configuration talmud-page app deploy",
+    "deploy": "npm run parcel-prod && yes | gcloud --configuration talmud-page app deploy",
     "start": "node ./express_main.js",
     "gcp-build": "tsc --lib es2020,dom express_main.ts",
     "ignore trailing commas": "exit 1"
