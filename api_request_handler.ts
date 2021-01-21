@@ -26,7 +26,7 @@ import {HebrewSmallToEmphasisTagTranslator} from "./source_formatting/hebrew_sma
 import {HtmlNormalizer} from "./source_formatting/html_normalizer";
 import {ImageNumberingFormatter} from "./source_formatting/image_numbering";
 import {JastrowReformatter} from "./source_formatting/jastrow";
-import {formatOtzarLaazeiRashi} from "./source_formatting/otzar_laazei_rashi";
+import {parseOtzarLaazeiRashi} from "./source_formatting/otzar_laazei_rashi";
 import {SectionSymbolRemover} from "./source_formatting/section_symbol";
 import {SefariaLinkSanitizer} from "./source_formatting/sefaria_link_sanitizer";
 import {ShulchanArukhHeaderRemover} from "./source_formatting/shulchan_arukh_remove_header";
@@ -143,7 +143,7 @@ class Comment {
     }
 
     if (englishName === "Otzar Laazei Rashi") {
-      hebrew = formatOtzarLaazeiRashi(hebrew);
+      [hebrew, english] = parseOtzarLaazeiRashi(hebrew as string);
     }
 
     hebrew = boldDibureiHamatchil(hebrew, englishName);
