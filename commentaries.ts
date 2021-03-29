@@ -60,6 +60,18 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     allowNestedTraversals: true,
   },
   {
+    englishName: "Korban HaEdah",
+    hebrewName: "קרבן העדה",
+    className: "korban-haedah",
+    allowNestedTraversals: true,
+  },
+  {
+    englishName: "Penei Moshe",
+    hebrewName: "פני משה",
+    className: "penei-moshe",
+    allowNestedTraversals: true,
+  },
+  {
     englishName: "Rabbeinu Chananel",
     englishNamePattern: /^Rabbeinu Chananel on .*/,
     hebrewName: 'ר"ח',

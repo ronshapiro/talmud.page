@@ -49,6 +49,9 @@ export const testPages = [
   new TestPage("Shabbat", "74b"), // Has weird API response with nested comment text from Rosh
   new TestPage("Tamid", "25b"), // No Rashi
 
+  new TestPage("Shekalim", "2a"),
+  new TestPage("Shekalim", "3a"), // Has spanningRefs
+
   new TestPage("Genesis", "43"),
   new TestPage("Deuteronomy", "34"),
   new TestPage("I Samuel", "18"),

@@ -78,6 +78,14 @@ export abstract class Book {
     return false;
   }
 
+  bookNameForRef(): string {
+    return this.canonicalName;
+  }
+
+  rewriteSectionRef(section: string): string {
+    return section;
+  }
+
   toString(): string {
     return `${this.bookType()}[${this.canonicalName}]`;
   }
@@ -138,6 +146,27 @@ export class Masechet extends Book {
 
   isMasechet(): boolean {
     return true;
+  }
+}
+
+interface YerushalmiMasechetConstructorParams extends MasechetConstructorParams {
+  refRewriting: Record<string, string>;
+}
+
+export class YerushalmiMasechet extends Masechet {
+  refRewriting: Record<string, string>;
+
+  constructor(params: YerushalmiMasechetConstructorParams) {
+    super(params);
+    this.refRewriting = params.refRewriting;
+  }
+
+  bookNameForRef(): string {
+    return `Jerusalem Talmud ${this.canonicalName}`;
+  }
+
+  rewriteSectionRef(section: string): string {
+    return this.refRewriting[section];
   }
 }
 
@@ -641,6 +670,59 @@ export const books = new BookIndex([
       "Shabbas", "Shabbos",
     ],
     end: "157b",
+  }),
+  new YerushalmiMasechet({
+    canonicalName: "Shekalim",
+    hebrewName: "שקלים",
+    vocalizedHebrewName: "שְׁקָלִים",
+    aliases: [
+      "Yerushalmi Shekalim",
+    ],
+    end: "22b",
+    refRewriting: {
+      "2a": "1.1.1-16",
+      "2b": "1.1.16-35",
+      "3a": "1.1.35-2.13",
+      "3b": "1.2.13-4.3",
+      "4a": "1.4.3-22",
+      "4b": "1.4.22-35",
+      "5a": "1.4.35-2.1.13",
+      "5b": "2.1.13-3.1",
+      "6a": "2.3.1-4.1",
+      "6b": "2.4.1-23",
+      "7a": "2.4.23-5.10",
+      "7b": "2.5.10-3.1.11",
+      "8a": "3.1.11-2.5",
+      "8b": "3.2.5-21",
+      "9a": "3.2.21-3.5",
+      "9b": "3.3.5-4.1.2",
+      "10a": "4.1.2-2.1",
+      "10b": "4.2.1-15",
+      "11a": "4.2.15-3.4",
+      "11b": "4.3.4-4.1",
+      "12a": "4.4.1-22",
+      "12b": "4.4.22-42",
+      "13a": "4.4.42-5.1.10",
+      "13b": "5.1.10-30",
+      "14a": "5.1.30-58",
+      "14b": "5.1.58-3.8",
+      "15a": "5.3.8-4.18",
+      "15b": "5.4.18-6.1.14",
+      "16a": "6.1.14-34",
+      "16b": "6.1.34-2.1",
+      "17a": "6.2.1-32",
+      "17b": "6.2.32-3.14",
+      "18a": "6.3.14-4.11",
+      "18b": "6.4.11-31",
+      "19a": "6.4.31-7.2.5",
+      "19b": "7.2.5-18",
+      "20a": "7.2.18-3.13",
+      "20b": "7.3.13-39",
+      "21a": "7.3.39-8.1.6",
+      "21b": "8.1.6-3.2",
+      "22a": "8.3.2-4.12",
+      "22b": "8.4.12-15",
+    },
   }),
   new Masechet({
     canonicalName: "Shevuot",

@@ -170,6 +170,11 @@ export const books: Record<string, Book> = {
     "isMasechet": false,
     "start": "1"
   },
+  "Shekalim": {
+    "end": "22b",
+    "isMasechet": true,
+    "start": "2a"
+  },
   "Job": {
     "end": "42",
     "isMasechet": false,

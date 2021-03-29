@@ -28,6 +28,8 @@ declare namespace sefaria {
     ref: string;
     title?: string;
     indexTitle?: string;
+    isSpanning?: boolean;
+    spanningRefs?: string[];
   }
 
   interface BulkTextValue {

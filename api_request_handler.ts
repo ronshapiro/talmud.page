@@ -363,7 +363,14 @@ export abstract class AbstractApiRequestHandler {
   protected abstract makeId(bookName: string, page: string): string;
 
   protected makeSubRef(mainRef: string, index: number): string {
-    return `${mainRef}:${index + 1}`;
+    if (mainRef.includes("-")) {
+      const lastColon = mainRef.lastIndexOf(":");
+      const range = mainRef.substring(lastColon + 1);
+      const start = parseInt(range.split("-")[0]);
+      return `${mainRef.substring(0, lastColon)}:${start + index}`;
+    } else {
+      return `${mainRef}:${index + 1}`;
+    }
   }
 
   protected makeTitle(bookName: string, page: string): string {
@@ -405,7 +412,10 @@ export abstract class AbstractApiRequestHandler {
       return this.recreateWithLogger(logger).handleRequest(bookName, page);
     }
 
-    const ref = `${bookName} ${page}`;
+    const book = books.byCanonicalName[bookName];
+    const userFacingRef = `${bookName} ${page}`;
+    const ref = `${book.bookNameForRef()} ${book.rewriteSectionRef(page)}`;
+
     const textRequest = (
       this.requestMaker.makeRequest<sefaria.TextResponse>(textRequestEndpoint(ref)));
     const linksTraversalTimer = this.logger.newTimer();
@@ -434,7 +444,7 @@ export abstract class AbstractApiRequestHandler {
           })
           .then(() => linkGraph);
       }),
-    ]).then(args => this.transformData(bookName, page, ...args));
+    ]).then(args => this.transformData(bookName, page, userFacingRef, ...args));
   }
 
   private linksRequestUrl(ref: string) {
@@ -569,13 +579,16 @@ export abstract class AbstractApiRequestHandler {
   private transformData(
     bookName: string,
     page: string,
+    userFacingRef: string,
     textResponse: sefaria.TextResponse,
     linkGraph: LinkGraph,
   ): ApiResponse {
     const timer = this.logger.newTimer();
     const mainRef = textResponse.ref;
-    const hebrew = textResponse.he as string[];
-    const english = textResponse.text as string[];
+    // This is relevant for refs which are rewritten (like Yerushalmi pages) that span multiple
+    // sections (i.e. multiple halachot/chapters).
+    const hebrew = (textResponse.he as string[]).flat();
+    const english = (textResponse.text as string[]).flat();
 
     // https://github.com/Sefaria/Sefaria-Project/issues/543
     if (hebrew.length - 1 === english.length && isHadran(hebrew.slice(-1))) {
@@ -593,7 +606,9 @@ export abstract class AbstractApiRequestHandler {
 
     let segments: InternalSegment[] = [];
     for (let i = 0; i < hebrew.length; i++) {
-      const ref = this.makeSubRef(mainRef, i);
+      const ref = (textResponse.isSpanning
+        ? this.getSpanningRef(textResponse, i)
+        : this.makeSubRef(mainRef, i));
       const segment = new InternalSegment({
         ref,
         hebrew: this.translateHebrewText(hebrew[i]),
@@ -667,6 +682,21 @@ export abstract class AbstractApiRequestHandler {
       }
     }
     return undefined;
+  }
+
+  private getSpanningRef(textResponse: sefaria.TextResponse, i: number): string {
+    let count = 0;
+    let spanningRefIndex = 0;
+    for (const innerList of textResponse.he as any as string[][]) {
+      for (let currentCount = 0; currentCount < innerList.length; (currentCount++, count++)) {
+        if (count === i) {
+          const spanningRef = textResponse.spanningRefs![spanningRefIndex];
+          return this.makeSubRef(spanningRef, currentCount);
+        }
+      }
+      spanningRefIndex++;
+    }
+    throw new Error(`Can't find index ${i} in ${textResponse.spanningRefs}`);
   }
 }
 

@@ -27,7 +27,7 @@ export default function Modal(props: ModalProps): React.ReactElement {
   useEffect(() => {
     componentHandler.upgradeElement(modalContainerRef.current);
     const modalContainer = $(modalContainerRef.current);
-    modalContainer.click((event) => {
+    modalContainer.click((event: any) => {
       if (event.target === modalContainer[0]) {
         onCancel();
       }

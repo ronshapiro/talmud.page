@@ -1,3 +1,4 @@
-import jQuery = require("jquery");
+// @ts-ignore
+import jQuery from "jquery";
 
 export const $ = jQuery;
