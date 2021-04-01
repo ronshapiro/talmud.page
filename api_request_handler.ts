@@ -304,7 +304,7 @@ export class InternalSegment {
   }
 }
 
-const HADRAN_PATTERN = /^(<br>)+<big><strong>הדרן עלך .*/;
+const HADRAN_PATTERN = /^((<br>)+<big><strong>)?הדרן עלך .*/;
 
 function isHadran(text: sefaria.TextType): boolean {
   if (Array.isArray(text)) {
@@ -413,7 +413,6 @@ export abstract class AbstractApiRequestHandler {
     }
 
     const book = books.byCanonicalName[bookName];
-    const userFacingRef = `${bookName} ${page}`;
     const ref = `${book.bookNameForRef()} ${book.rewriteSectionRef(page)}`;
 
     const textRequest = (
@@ -444,7 +443,7 @@ export abstract class AbstractApiRequestHandler {
           })
           .then(() => linkGraph);
       }),
-    ]).then(args => this.transformData(bookName, page, userFacingRef, ...args));
+    ]).then(args => this.transformData(bookName, page, ...args));
   }
 
   private linksRequestUrl(ref: string) {
@@ -576,19 +575,20 @@ export abstract class AbstractApiRequestHandler {
       .finally(() => timer.finish("fetching secondary texts"));
   }
 
-  private transformData(
-    bookName: string,
-    page: string,
-    userFacingRef: string,
-    textResponse: sefaria.TextResponse,
-    linkGraph: LinkGraph,
-  ): ApiResponse {
-    const timer = this.logger.newTimer();
-    const mainRef = textResponse.ref;
-    // This is relevant for refs which are rewritten (like Yerushalmi pages) that span multiple
-    // sections (i.e. multiple halachot/chapters).
-    const hebrew = (textResponse.he as string[]).flat();
-    const english = (textResponse.text as string[]).flat();
+  private preformatSegments(hebrew: string[], english: string[]): [string[], string[]] {
+    if (Array.isArray(hebrew.concat(english)[0])) {
+      const newHebrew: string[][] = [];
+      const newEnglish: string[][] = [];
+      for (let i = 0; i < hebrew.length; i++) {
+        // @ts-ignore
+        const [currentHebrew, currentEnglish] = this.preformatSegments(hebrew[i], english[i]);
+        // Flattening is relevant for refs which are rewritten (like Yerushalmi pages) that span
+        // multiple sections (i.e. multiple halachot/chapters).
+        newHebrew.push(currentHebrew);
+        newEnglish.push(currentEnglish);
+      }
+      return [newHebrew.flat(), newEnglish.flat()];
+    }
 
     // https://github.com/Sefaria/Sefaria-Project/issues/543
     if (hebrew.length - 1 === english.length && isHadran(hebrew.slice(-1))) {
@@ -603,6 +603,22 @@ export abstract class AbstractApiRequestHandler {
         500,
         ApiException.UNEQAUL_HEBREW_ENGLISH_LENGTH);
     }
+
+    return [hebrew, english];
+  }
+
+  private transformData(
+    bookName: string,
+    page: string,
+    textResponse: sefaria.TextResponse,
+    linkGraph: LinkGraph,
+  ): ApiResponse {
+    const timer = this.logger.newTimer();
+    const mainRef = textResponse.ref;
+
+    const [hebrew, english] = this.preformatSegments(
+      textResponse.he as string[],
+      textResponse.text as string[]);
 
     let segments: InternalSegment[] = [];
     for (let i = 0; i < hebrew.length; i++) {
@@ -687,7 +703,12 @@ export abstract class AbstractApiRequestHandler {
   private getSpanningRef(textResponse: sefaria.TextResponse, i: number): string {
     let count = 0;
     let spanningRefIndex = 0;
-    for (const innerList of textResponse.he as any as string[][]) {
+    for (let innerList of textResponse.he as any as string[][]) {
+      // Sometimes the shape of the texts are [N, 1, M]. It's possible that they could be even more
+      // complex, but it's not very clear how to manage that. So for the time being, just flatten
+      // the singleton dimension so that this is effectively of shape [N, M] so that the data is
+      // predictable and maps well to spanningRefs.
+      innerList = innerList.flat();
       for (let currentCount = 0; currentCount < innerList.length; (currentCount++, count++)) {
         if (count === i) {
           const spanningRef = textResponse.spanningRefs![spanningRefIndex];

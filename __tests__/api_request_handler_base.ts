@@ -51,6 +51,7 @@ export const testPages = [
 
   new TestPage("Shekalim", "2a"),
   new TestPage("Shekalim", "3a"), // Has spanningRefs
+  new TestPage("Shekalim", "7b"), // Has strange text shape in the API response
 
   new TestPage("Genesis", "43"),
   new TestPage("Deuteronomy", "34"),
