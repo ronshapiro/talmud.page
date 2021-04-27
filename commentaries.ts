@@ -128,6 +128,11 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     className: "rav-nissim-gaon",
   },
   {
+    englishName: "Gilyon HaShas",
+    hebrewName: 'גליון הש"ס',
+    className: "gilyon-hashas",
+  },
+  {
     englishName: "Shulchan Arukh",
     englishNamePattern: /^Shulchan Arukh, /,
     hebrewName: "שולחן ערוך",
