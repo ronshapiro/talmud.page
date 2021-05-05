@@ -780,7 +780,12 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
   }
 
   static REMOVE_TOP_LEVEL_KINDS = new Set([
-    "Maharsha", "Maharshal", "Meir Lublin", "Otzar Laazei Rashi"]);
+    "Gilyon HaShas",
+    "Maharsha",
+    "Maharshal",
+    "Meir Lublin",
+    "Otzar Laazei Rashi",
+  ]);
 
   private removalStrategy(
     topLevelComment: Comment,
