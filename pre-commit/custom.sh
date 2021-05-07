@@ -3,5 +3,5 @@
 set -eu
 shopt -s extglob
 
-. venv/bin/activate
+[[ -e venv/bin/activate ]] && . venv/bin/activate
 npx ts-node pre-commit/pre-commit.ts -- $@
