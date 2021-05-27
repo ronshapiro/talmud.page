@@ -5,8 +5,6 @@ import PREFERENCES_PAGE_VERSION from "./preferences_version";
 const moveSnackbarOffscreen = () => $("#snackbar").css("bottom", -400);
 const hideSnackbar = () => $("#snackbar").animate({bottom: -400});
 
-const BUTTON_CLASSES = 'class="mdl-button mdl-js-button mdl-button--colored"';
-
 function addContainer(kind: Kind): void {
   const classes = [kind.cssClass, ...(kind.extraCssClasses || [])].join(" ");
   $(`#snackbar`).append(
@@ -41,9 +39,14 @@ function updateSnackbar(kind: Kind, labelHtml: string, maybeButtons: MaybeButton
     buttons = [maybeButtons];
   }
 
+  const buttonClasses = [
+    "mdl-button",
+    "mdl-js-button",
+    (localStorage.darkMode !== "true") ? "mdl-button--colored" : "mdl-button--normal-text-color",
+  ].join(" ");
   $container.find(".snackbar-buttons").html(
     buttons
-      .map(button => `<button ${BUTTON_CLASSES} ${style}>${button.text}</button>`)
+      .map(button => `<button class="${buttonClasses}" ${style}>${button.text}</button>`)
       .join(""));
 
   const buttonElements = $container.find("button");

@@ -28,6 +28,12 @@
 {# End Material Design #}
 
 <link rel="stylesheet" href="/css/{{random_hash}}/main.css" />
+<link rel="stylesheet" href="/css/{{random_hash}}/darkMode.css" id="darkModeCss" />
+<script>
+  if (localStorage.darkMode !== "true") {
+    document.getElementById("darkModeCss").remove();
+  }
+</script>
 
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">

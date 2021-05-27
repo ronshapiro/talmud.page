@@ -1,0 +1,19 @@
+:root {
+    --background-color: var(--dark-background);
+    --text-color: #cbcbcb;
+    --english-text-color: #ababab;
+    --snackbar-button-color: var(--dark-background);
+    --highlight-color: rgb(80, 80, 40);
+    --modal-box-shadow-color: #111;
+    --modal-button-color: var(--mdl-accent-color);
+
+    --selection-background-color: #212121cc;
+}
+
+::selection {
+    background: var(--selection-background-color);
+}
+
+::moz-selection {
+    background: var(--selection-background-color);
+}

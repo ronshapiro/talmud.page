@@ -22,6 +22,17 @@ const TRANSLATION_OPTIONS = [
   },
 ];
 
+const DARK_MODE_OPTIONS = [
+  {
+    value: "true",
+    displayText: "On",
+  },
+  {
+    value: "false",
+    displayText: "Off",
+  },
+];
+
 const radioSection = (title, section, items, localStorageKeyName) => {
   const output = [
     `<div id="${section}">`,
@@ -64,6 +75,7 @@ const main = () => {
   onceDocumentReady.declareReady();
 
   localStorage.lastViewedVersionOfPreferencesPage = PREFERENCES_PAGE_VERSION;
+  radioSection("Dark Mode", "darkMode", DARK_MODE_OPTIONS, "darkMode");
   radioSection("Translation", "translation", TRANSLATION_OPTIONS, "translationOption");
 
   TRANSLATION_OPTIONS.forEach(option => {

@@ -41,7 +41,7 @@ export default function Modal(props: ModalProps): React.ReactElement {
           {content}
           <div style={{display: "flex"}}>
             <button
-              className="mdl-button mdl-js-button mdl-js-ripple-effect"
+              className="mdl-button mdl-js-button mdl-js-ripple-effect modal-cancel"
               style={{marginLeft: "auto"}}
               onClick={() => onCancel()}>
               {cancelText}
