@@ -61,6 +61,12 @@ const NavigationButtonRow = (props: NavigationButtonRowProps) => {
   });
 
   if (isNext) classes.push("next");
+
+  const onSubmit = (event?: any) => {
+    if (event) event.preventDefault();
+    newSearch(modalSearchBarRef.current.value);
+  };
+
   return (
     <div className={classes.join(" ")}>
       <span
@@ -79,7 +85,7 @@ const NavigationButtonRow = (props: NavigationButtonRowProps) => {
       {showModal && (
         <Modal
           content={(
-            <form>
+            <form onSubmit={event => onSubmit(event)}>
               <div
                 className="mdl-textfieldmdl-js-textfield
                            mdl-textfield--expandable
@@ -91,7 +97,7 @@ const NavigationButtonRow = (props: NavigationButtonRowProps) => {
           cancelText="Cancel"
           onCancel={() => setShowModal(false)}
           acceptText="Navigate"
-          onAccept={() => newSearch(modalSearchBarRef.current.value)} />
+          onAccept={() => onSubmit()} />
       )}
     </div>
   );

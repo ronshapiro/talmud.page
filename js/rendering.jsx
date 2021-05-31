@@ -9,6 +9,7 @@ import PropTypes from 'prop-types';
 import _ from "underscore";
 import {addDriveComments} from "./addDriveComments.ts";
 import {getCommentaryTypes} from "./commentaryTypes.ts";
+import {CorrectionModal} from "./CorrectionModal.tsx";
 import isEmptyText from "./is_empty_text.ts";
 import {$} from "./jquery";
 import {
@@ -621,6 +622,7 @@ export class Renderer {
             ref={this.rootComponent}
             allAmudim={() => this.getAmudim()}
             navigationExtension={this.navigationExtension} />
+          <CorrectionModal />
         </HiddenHostContext.Provider>
       </ConfigurationContext.Provider>,
       host);

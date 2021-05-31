@@ -1,6 +1,8 @@
 import * as express from "express";
+import * as fs from "fs";
 import * as http from "http";
 import * as nunjucks from "nunjucks";
+import * as sendgrid from "@sendgrid/mail";
 import {parse as urlParse} from "url";
 import {v4 as uuid} from "uuid";
 import {ApiException, ApiRequestHandler, RealRequestMaker} from "./api_request_handler";
@@ -17,6 +19,7 @@ import {
   ApiResponse,
 } from "./apiTypes";
 import {WeightBasedLruCache} from "./cache";
+import {CorrectionPostData} from "./correctionTypes";
 import {Logger as BaseLogger, Timer} from "./logger";
 import {PromiseChain} from "./js/promises";
 import {jsonSize} from "./util/json_size";
@@ -346,6 +349,46 @@ app.get("/api/:title/:page", (req, res) => {
 
   return undefined;
 });
+
+if (fs.existsSync("sendgrid_api_key")) {
+  sendgrid.setApiKey(fs.readFileSync("sendgrid_api_key", {encoding: "utf-8"}));
+  app.post("/corrections", (req, res) => {
+    if (debug) res.status(200).send({});
+    const params: CorrectionPostData = req.body;
+    const {
+      ref,
+      url,
+      hebrew,
+      hebrewHighlighted,
+      translation,
+      translationHighlighted,
+      userText,
+      user,
+    } = params;
+    sendgrid.send({
+      to: "corrections@sefaria.org",
+      from: "corrections@talmud.page",
+      cc: ["corrections@talmud.page", user],
+      subject: "Sefaria Text Correction from talmud.page",
+      text: [
+        `${ref} (${url})`,
+        hebrew,
+        translation,
+        `Describe the error: ${userText}`,
+      ].filter(x => x !== "").join("\n\n"),
+      html: [
+        `<a href="${url}">${ref}</a>`,
+        hebrewHighlighted || hebrew,
+        translationHighlighted || translation,
+        `<b>Describe the error:</b> ${userText}`,
+      ].filter(x => x && x !== "").join("<br><br>"),
+    }).then(() => res.status(200).send({}))
+      .catch(e => {
+        console.error(e, e?.response?.body || {});
+        res.sendStatus(500);
+      });
+  });
+}
 
 if (debug) {
   app.post("/google-docs-record", (req, res) => {

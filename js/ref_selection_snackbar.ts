@@ -1,7 +1,9 @@
 /* global gtag,  */
+import {showCorrectionModal} from "./CorrectionModal";
 import {findNodeOffset} from "./dom";
 import {driveClient} from "./google_drive/singleton";
 import {AnyComment, CommentSourceMetadata} from "./google_drive/types";
+import {applyHighlight} from "./highlight";
 import {$} from "./jquery";
 import {snackbars} from "./snackbar";
 import {checkNotUndefined} from "./undefined";
@@ -116,34 +118,13 @@ const onSelectionChange = () => {
       },
     });
   }
-  buttons.push(
-    {
-      text: '<i class="material-icons">open_in_new</i>',
-      onClick: () => {
-        gtag("event", "view_on_sefaria", {ref});
-        window.open(sefariaUrl);
-      },
+  buttons.push({
+    text: '<i class="material-icons">open_in_new</i>',
+    onClick: () => {
+      gtag("event", "view_on_sefaria", {ref});
+      window.open(sefariaUrl);
     },
-    {
-      text: '<i class="material-icons">build</i>',
-      onClick: () => {
-        gtag("event", "report_correction", {ref});
-        const subject = "Sefaria Text Correction from talmud.page";
-        const bodyParts = [
-          `${ref} (${sefariaUrl})`,
-          sefariaRef.hebrew.text,
-        ];
-        if (sefariaRef.translation && sefariaRef.translation.text !== "") {
-          bodyParts.push(sefariaRef.translation.text);
-        }
-        // trailing newline so that the description starts on its own line
-        bodyParts.push("Describe the error:");
-
-        const body = encodeURIComponent(bodyParts.join("\n\n"));
-        window.open(`mailto:corrections@sefaria.org?subject=${subject}&body=${body}`);
-      },
-    },
-  );
+  });
 
   if (driveClient.isSignedIn && !driveClient.hasErrors() && ref !== "ignore-drive") {
     let selectedText: string;
@@ -178,6 +159,34 @@ const onSelectionChange = () => {
         parentRef: sefariaRef.parentRef || sefariaRef.ref,
       });
     };
+
+    buttons.push({
+      text: '<i class="material-icons">build</i>',
+      onClick: () => {
+        captureSelectionState();
+        const maybeHighlight = (text: string, isEnglish: boolean): string | undefined => {
+          if (sefariaRef.isEnglish !== isEnglish) {
+            return text;
+          }
+          return applyHighlight({
+            highlight: true,
+            commentSourceMetadata: checkNotUndefined(
+              commentSourceMetadata, "commentSourceMetadata"),
+            text: checkNotUndefined(selectedText, "selectedText"),
+          }, text, "email");
+        };
+        const hebrew = sefariaRef.hebrew!.text;
+        const translation = sefariaRef.translation!.text;
+        showCorrectionModal({
+          ref,
+          url: sefariaUrl,
+          hebrew,
+          hebrewHighlighted: maybeHighlight(hebrew, false),
+          translation,
+          translationHighlighted: maybeHighlight(translation, true),
+        });
+      },
+    });
 
     buttons.push({
       text: '<i class="material-icons">format_bold</i>',
@@ -222,6 +231,26 @@ const onSelectionChange = () => {
           });
           modalContainer.hide();
         });
+      },
+    });
+  } else {
+    buttons.push({
+      text: '<i class="material-icons">build</i>',
+      onClick: () => {
+        gtag("event", "report_correction", {ref});
+        const subject = "Sefaria Text Correction from talmud.page";
+        const bodyParts = [
+          `${ref} (${sefariaUrl})`,
+          sefariaRef.hebrew.text,
+        ];
+        if (sefariaRef.translation && sefariaRef.translation.text !== "") {
+          bodyParts.push(sefariaRef.translation.text);
+        }
+        // trailing newline so that the description starts on its own line
+        bodyParts.push("Describe the error:");
+
+        const body = encodeURIComponent(bodyParts.join("\n\n"));
+        window.open(`mailto:corrections@sefaria.org?subject=${subject}&body=${body}`);
       },
     });
   }

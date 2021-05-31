@@ -1,10 +1,13 @@
 import {preOrderTraversal, isTextNode} from "./dom";
 import {HighlightCommentWithText} from "./google_drive/types";
 
+type HighlightingStyle = "email" | undefined;
+
 function injectHighlighting(
   root: Node,
   start: number,
   end: number,
+  highlightingStyle: HighlightingStyle,
 ): void {
   let currentIndex = 0;
   preOrderTraversal(root).slice(1).forEach(child => {
@@ -22,7 +25,12 @@ function injectHighlighting(
         const after = document.createTextNode(child.data.substring(highlightedEnd));
         const highlighted = document.createElement("span");
         // TODO: extract color from highlight range and set that here
-        highlighted.className = "highlighted";
+        if (highlightingStyle === "email") {
+          // @ts-ignore
+          highlighted.style = "background: rgb(255, 201, 135)";
+        } else {
+          highlighted.className = "highlighted";
+        }
         highlighted.textContent = child.data.substring(highlightedStart, highlightedEnd);
 
         const parent = child.parentNode!;
@@ -115,6 +123,7 @@ const STRATEGIES: ((
 export function applyHighlight(
   highlight: HighlightCommentWithText,
   inputText: string | string[],
+  highlightingStyle: HighlightingStyle = undefined,
 ): string | undefined {
   if (Array.isArray(inputText)) {
     // TODO: devise a strategy for multiline highlights
@@ -137,7 +146,7 @@ export function applyHighlight(
     const match = justText.substring(start, end).match(searchRegex);
     if (match && match.index !== undefined) {
       const matchStart = start + match.index;
-      injectHighlighting(el, matchStart, matchStart + match[0].length);
+      injectHighlighting(el, matchStart, matchStart + match[0].length, highlightingStyle);
       return el.innerHTML;
     }
   }
