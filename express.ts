@@ -353,7 +353,10 @@ app.get("/api/:title/:page", (req, res) => {
 if (fs.existsSync("sendgrid_api_key")) {
   sendgrid.setApiKey(fs.readFileSync("sendgrid_api_key", {encoding: "utf-8"}));
   app.post("/corrections", (req, res) => {
-    if (debug) res.status(200).send({});
+    if (debug) {
+      res.status(200).send({});
+      return;
+    }
     const params: CorrectionPostData = req.body;
     const {
       ref,
