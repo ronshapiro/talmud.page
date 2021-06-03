@@ -162,6 +162,7 @@ if (!isProd) {
       "--ignore parcel.ts",
       "--ignore cached_outputs",
       "--ignore test_data",
+      "--ignore js",
     ].flatMap(x => x.split(" ")), {
       env: {
         ...process.env,
