@@ -354,6 +354,8 @@ if (fs.existsSync("sendgrid_api_key")) {
   sendgrid.setApiKey(fs.readFileSync("sendgrid_api_key", {encoding: "utf-8"}));
   app.post("/corrections", (req, res) => {
     if (debug) {
+      // eslint-disable-next-line no-console
+      console.log("Not sending correction in debug mode", req.body);
       res.status(200).send({});
       return;
     }
