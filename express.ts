@@ -370,6 +370,7 @@ if (fs.existsSync("sendgrid_api_key")) {
       userText,
       user,
     } = params;
+    const rtl = (text: string | undefined) => text && `<div dir="rtl">${text}</div>`;
     sendgrid.send({
       to: "corrections@sefaria.org",
       from: "corrections@talmud.page",
@@ -383,7 +384,7 @@ if (fs.existsSync("sendgrid_api_key")) {
       ].filter(x => x !== "").join("\n\n"),
       html: [
         `<a href="${url}">${ref}</a>`,
-        hebrewHighlighted || hebrew,
+        rtl(hebrewHighlighted || hebrew),
         translationHighlighted || translation,
         `<b>Describe the error:</b> ${userText}`,
       ].filter(x => x && x !== "").join("<br><br>"),
