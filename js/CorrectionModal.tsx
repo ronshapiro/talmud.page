@@ -1,7 +1,6 @@
 /* global gtag */
 import * as React from "react";
 import {CorrectionUiInfo} from "../correctionTypes";
-import {driveClient} from "./google_drive/singleton";
 import {$} from "./jquery";
 import Modal from "./Modal";
 import {RetryMethodFactory} from "./retry";
@@ -53,10 +52,15 @@ export function CorrectionModal(): React.ReactElement | null {
 
   const onSubmit = (event?: any) => {
     if (event) event.preventDefault();
-    makeRequest({
-      ...refData,
-      userText: ref.current.value,
-      user: driveClient.gapi.getSignedInUserEmail(),
+    const userText = ref.current.value;
+    // Lazily load the drive client so that it's not loaded in /preferences, where it doesn't make
+    // sense. In actuality, it will already be loaded by another page whenver this is triggered.
+    import("./google_drive/singleton").then(({driveClient}) => {
+      makeRequest({
+        ...refData,
+        userText,
+        user: driveClient.gapi.getSignedInUserEmail(),
+      });
     });
     setShowing(false);
     gtag("event", "report_correction", {ref});
