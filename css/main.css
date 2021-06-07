@@ -132,6 +132,7 @@ html, body {
     text-decoration: underline;
     margin-inline-end: 8px;
     display: inline-block;
+    user-select: none;
 }
 
 .commentary_header.has-nested-commentaries::after {
