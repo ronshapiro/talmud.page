@@ -164,7 +164,13 @@ const onSelectionChange = () => {
       text: '<i class="material-icons">build</i>',
       onClick: () => {
         captureSelectionState();
-        const maybeHighlight = (text: string, isEnglish: boolean): string | undefined => {
+        const maybeHighlight = (
+          text: string | undefined,
+          isEnglish: boolean,
+        ): string | undefined => {
+          if (!text) {
+            return undefined;
+          }
           if (sefariaRef.isEnglish !== isEnglish) {
             return text;
           }
@@ -176,8 +182,8 @@ const onSelectionChange = () => {
             text: checkNotUndefined(selectedText, "selectedText"),
           }, text, "email");
         };
-        const hebrew = sefariaRef.hebrew!.text;
-        const translation = sefariaRef.translation!.text;
+        const hebrew = sefariaRef.hebrew?.text;
+        const translation = sefariaRef.translation?.text;
         showCorrectionModal({
           ref,
           url: sefariaUrl,
