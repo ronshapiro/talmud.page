@@ -1,11 +1,11 @@
 import {rgbColor} from "./color";
-import {Range, Request, TextStyle} from "./types";
+import {HighlightColor, Range, Request, TextStyle} from "./types";
 
 export interface StyledText {
   text: string;
   url?: string;
   bold?: boolean;
-  highlight?: boolean;
+  highlight?: HighlightColor;
 }
 
 function insertTextRequest(text: string, startIndex: number): Request {
@@ -54,8 +54,18 @@ function boldText(textStyle: TextStyle): void {
   mergeTextStyle(textStyle, {bold: true});
 }
 
-function highlightText(textStyle: TextStyle): void {
-  mergeTextStyle(textStyle, {backgroundColor: rgbColor(250, 217, 120)});
+function highlightText(textStyle: TextStyle, color: HighlightColor): void {
+  const backgroundColor = (() => {
+    switch (color) {
+      case "yellow":
+        return rgbColor(250, 217, 120);
+      case "blue":
+        return rgbColor(141, 188, 252);
+      default:
+        throw new Error(color);
+    }
+  })();
+  mergeTextStyle(textStyle, {backgroundColor});
 }
 
 function textStyleRequest(
@@ -70,7 +80,7 @@ function textStyleRequest(
     boldText(textStyle);
   }
   if (highlight) {
-    highlightText(textStyle);
+    highlightText(textStyle, highlight);
   }
 
   if (Object.keys(textStyle).length === 0) {

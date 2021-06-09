@@ -14,8 +14,10 @@ export interface TextComment {
   commentSourceMetadata: CommentSourceMetadata;
 }
 
+export type HighlightColor = "yellow" | "blue";
+
 export interface HighlightComment {
-  highlight: true;
+  highlight: HighlightColor;
   commentSourceMetadata: CommentSourceMetadata;
 }
 

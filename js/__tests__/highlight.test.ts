@@ -1,9 +1,9 @@
 import {applyHighlight} from "../highlight";
 import {HighlightCommentWithText} from "../google_drive/types";
 
-function basicComment(text: string) {
+function basicComment(text: string, color = "yellow") {
   return {
-    highlight: true,
+    highlight: color,
     commentSourceMetadata: {
       startPercentage: 0,
       endPercentage: 1,
@@ -15,8 +15,8 @@ function basicComment(text: string) {
   } as HighlightCommentWithText;
 }
 
-function matchedSection(text: string) {
-  return `<span class="highlighted">${text}</span>`;
+function matchedSection(text: string, color = "yellow") {
+  return `<span class="highlighted highlighted-${color}">${text}</span>`;
 }
 
 test("accesses across tags", () => {
@@ -52,7 +52,7 @@ test("wordCount", () => {
   const highlight = (
     applyHighlight(
       {
-        highlight: true,
+        highlight: "yellow",
         text: "highlight",
         commentSourceMetadata: {
           startPercentage: 1,
@@ -75,7 +75,7 @@ test("full text fallback", () => {
   const highlight = (
     applyHighlight(
       {
-        highlight: true,
+        highlight: "yellow",
         text: "highlight",
         commentSourceMetadata: {
           startPercentage: 1,
@@ -138,4 +138,22 @@ test("multiple rounds", () => {
     " ",
     matchedSection("3"),
   ].join(""));
+});
+
+test("colors", () => {
+  const highlight = (
+    applyHighlight(
+      basicComment("yellow", "yellow"),
+      applyHighlight(
+        basicComment("blue", "blue"),
+        "aaa yellow bbb blue ccc",
+      )!));
+  expect(highlight).toEqual(
+    [
+      "aaa ",
+      matchedSection("yellow", "yellow"),
+      " bbb ",
+      matchedSection("blue", "blue"),
+      " ccc",
+    ].join(""));
 });

@@ -12,6 +12,7 @@ import {insertTableRequests} from "./tableRequests";
 import {
   AnyComment,
   CommentSourceMetadata,
+  HighlightColor,
   HighlightComment,
   HighlightCommentWithText,
   ParagraphElement,
@@ -54,6 +55,10 @@ interface HighlightCommentWithRange extends HighlightComment {
 
 function isHighlightComment(comment: AnyComment): comment is HighlightComment {
   return (comment as HighlightComment).highlight !== undefined;
+}
+
+function highlightColor(comment: AnyComment): HighlightColor | undefined {
+  return (comment as HighlightComment).highlight;
 }
 
 interface PostCommentInternalParams extends PostCommentParams {
@@ -309,7 +314,7 @@ export class DriveClient {
           } else {
             addNamedRanges(ref, [commentRange]);
           }
-        } else if (suffix === "highlight") {
+        } else if (suffix.startsWith("highlight")) {
           getList(this.highlightsByRef, ref)
             .push(this.extractedHighlightComment(commentRange, ranges));
         }
@@ -332,7 +337,7 @@ export class DriveClient {
     }
     return {
       range,
-      highlight: true,
+      highlight: (suffixes.highlight as HighlightColor) ?? "yellow",
       commentSourceMetadata: {
         startPercentage: parseFloat(suffixes.startPercentage),
         endPercentage: parseFloat(suffixes.endPercentage),
@@ -377,10 +382,10 @@ export class DriveClient {
       cells.push({cellText: [ref]});
     }
     cells.push({
-      cellText: [{text: selectedText, bold: true, highlight: isHighlightComment(comment)}],
+      cellText: [{text: selectedText, bold: true, highlight: highlightColor(comment)}],
       rtl: true,
       rangeNames: (
-        [isHighlightComment(comment) ? "highlight" : "selected text"]
+        [isHighlightComment(comment) ? "highlight=" + highlightColor(comment) : "selected text"]
           .concat(commentSourceMetadataNamedRanges(comment.commentSourceMetadata))
           .map(x => rangeNameWithSuffix(x))
       ),

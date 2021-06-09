@@ -2,8 +2,8 @@
 import {$} from "./jquery";
 import PREFERENCES_PAGE_VERSION from "./preferences_version";
 
-const moveSnackbarOffscreen = () => $("#snackbar").css("bottom", -400);
-const hideSnackbar = () => $("#snackbar").animate({bottom: -400});
+const moveSnackbarOffscreen = () => $("#snackbar").css("bottom", -400).promise();
+const hideSnackbar = () => $("#snackbar").animate({bottom: -400}).promise();
 
 function addContainer(kind: Kind): void {
   const classes = [kind.cssClass, ...(kind.extraCssClasses || [])].join(" ");
@@ -53,15 +53,15 @@ function updateSnackbar(kind: Kind, labelHtml: string, maybeButtons: MaybeButton
   for (let i = 0; i < buttonElements.length; i++) {
     $(buttonElements[i]).click(buttons[i].onClick);
   }
-
-  // Ensure that any hide animation finishes immediately and restart the showing of the snackbar
-  $container.stop().hide().slideToggle();
 }
 
-function displaySnackbar(kind: Kind, labelHtml: string, buttons: MaybeButtons): void {
+function displaySnackbar(kind: Kind, labelHtml: string, buttons: MaybeButtons): Promise<unknown> {
   updateSnackbar(kind, labelHtml, buttons);
 
-  $("#snackbar").animate({bottom: 0});
+  // Ensure that any hide animation finishes immediately and restart the showing of the snackbar
+  $(`#snackbar .${kind.cssClass}`).stop().hide().slideToggle();
+
+  return $("#snackbar").animate({bottom: 0}, 200).promise();
 }
 
 const hasSeenLatestPreferences = () => {
@@ -164,23 +164,28 @@ class Snackbar {
     this.snackbarManager = snackbarManager;
   }
 
-  show(labelHtml: string, buttons: MaybeButtons) {
+  show(labelHtml: string, buttons: MaybeButtons): Promise<unknown> {
     if (this.kind.prefix) {
       // Delay incrementing the shown count to make sure that the use didn't reload the page quickly
       // and the snackbar was never actually shown.
       setTimeout(() => this.kind.incrementShownCount(), 5 * 1000);
     }
 
-    displaySnackbar(this.kind, labelHtml, buttons);
+    return displaySnackbar(this.kind, labelHtml, buttons);
+  }
+
+  update(labelHtml: string, buttons: MaybeButtons) {
+    updateSnackbar(this.kind, labelHtml, buttons);
   }
 
   hide() {
     const $section = $(`#snackbar .${this.kind.cssClass}`);
-    $section.slideToggle(200, () => {
+    return $section.slideToggle(200).promise().then(() => {
       $section.remove();
       if ($("#snackbar").children().length === 0) {
-        hideSnackbar();
+        return hideSnackbar();
       }
+      return undefined;
     });
   }
 
@@ -195,10 +200,11 @@ class Snackbar {
 }
 
 class StartupSnackbar extends Snackbar {
-  show(labelHtml: string, buttons: MaybeButtons) {
+  show(labelHtml: string, buttons: MaybeButtons): Promise<unknown> {
     if (this.snackbarManager.startupKind === this.kind) {
-      super.show(labelHtml, buttons);
+      return super.show(labelHtml, buttons);
     }
+    return Promise.resolve();
   }
 }
 

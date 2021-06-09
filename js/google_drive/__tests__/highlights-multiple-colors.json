@@ -1,0 +1,1672 @@
+{
+  "body": {
+    "content": [
+      {
+        "endIndex": 1,
+        "sectionBreak": {
+          "sectionStyle": {
+            "columnSeparatorStyle": "NONE",
+            "contentDirection": "LEFT_TO_RIGHT",
+            "sectionType": "CONTINUOUS"
+          }
+        }
+      },
+      {
+        "endIndex": 2,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 2,
+              "startIndex": 1,
+              "textRun": {
+                "content": "\n",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "namedStyleType": "NORMAL_TEXT"
+          }
+        },
+        "startIndex": 1
+      },
+      {
+        "endIndex": 189,
+        "startIndex": 2,
+        "table": {
+          "columns": 1,
+          "rows": 1,
+          "tableRows": [
+            {
+              "endIndex": 188,
+              "startIndex": 3,
+              "tableCells": [
+                {
+                  "content": [
+                    {
+                      "endIndex": 117,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 36,
+                            "startIndex": 5,
+                            "textRun": {
+                              "content": "This document was created with ",
+                              "textStyle": {}
+                            }
+                          },
+                          {
+                            "endIndex": 47,
+                            "startIndex": 36,
+                            "textRun": {
+                              "content": "talmud.page",
+                              "textStyle": {
+                                "foregroundColor": {
+                                  "color": {
+                                    "rgbColor": {
+                                      "blue": 0.77254903,
+                                      "green": 0.35686275,
+                                      "red": 0.17254902
+                                    }
+                                  }
+                                },
+                                "link": {
+                                  "url": "https://talmud.page"
+                                },
+                                "underline": true
+                              }
+                            }
+                          },
+                          {
+                            "endIndex": 117,
+                            "startIndex": 47,
+                            "textRun": {
+                              "content": " and is used as a database for personalized comments that you create.\n",
+                              "textStyle": {}
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "LEFT_TO_RIGHT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 5
+                    },
+                    {
+                      "endIndex": 118,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 118,
+                            "startIndex": 117,
+                            "textRun": {
+                              "content": "\n",
+                              "textStyle": {}
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "LEFT_TO_RIGHT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 117
+                    },
+                    {
+                      "endIndex": 188,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 168,
+                            "startIndex": 118,
+                            "textRun": {
+                              "content": "Before making any edits, it's recommended to read ",
+                              "textStyle": {}
+                            }
+                          },
+                          {
+                            "endIndex": 186,
+                            "startIndex": 168,
+                            "textRun": {
+                              "content": "these instructions",
+                              "textStyle": {
+                                "foregroundColor": {
+                                  "color": {
+                                    "rgbColor": {
+                                      "blue": 0.77254903,
+                                      "green": 0.35686275,
+                                      "red": 0.17254902
+                                    }
+                                  }
+                                },
+                                "link": {
+                                  "url": "https://talmud.page/caveats/google-docs"
+                                },
+                                "underline": true
+                              }
+                            }
+                          },
+                          {
+                            "endIndex": 187,
+                            "startIndex": 186,
+                            "textRun": {
+                              "content": ".",
+                              "textStyle": {}
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "LEFT_TO_RIGHT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 118
+                    }
+                  ],
+                  "endIndex": 188,
+                  "startIndex": 4,
+                  "tableCellStyle": {
+                    "backgroundColor": {
+                      "color": {
+                        "rgbColor": {
+                          "blue": 0.63529414,
+                          "green": 0.89411765,
+                          "red": 0.98039216
+                        }
+                      }
+                    },
+                    "borderBottom": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 0.1882353,
+                            "green": 0.5647059,
+                            "red": 0.7176471
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderLeft": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 0.1882353,
+                            "green": 0.5647059,
+                            "red": 0.7176471
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderRight": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 0.1882353,
+                            "green": 0.5647059,
+                            "red": 0.7176471
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderTop": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 0.1882353,
+                            "green": 0.5647059,
+                            "red": 0.7176471
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "columnSpan": 1,
+                    "rowSpan": 1
+                  }
+                }
+              ],
+              "tableRowStyle": {
+                "minRowHeight": {
+                  "unit": "PT"
+                }
+              }
+            }
+          ],
+          "tableStyle": {
+            "tableColumnProperties": [
+              {
+                "widthType": "EVENLY_DISTRIBUTED"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "endIndex": 190,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 190,
+              "startIndex": 189,
+              "textRun": {
+                "content": "\n",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "headingId": "h.a1oh7w7dkk7e",
+            "namedStyleType": "HEADING_2"
+          }
+        },
+        "startIndex": 189
+      },
+      {
+        "endIndex": 203,
+        "startIndex": 190,
+        "table": {
+          "columns": 1,
+          "rows": 1,
+          "tableRows": [
+            {
+              "endIndex": 202,
+              "startIndex": 191,
+              "tableCells": [
+                {
+                  "content": [
+                    {
+                      "endIndex": 202,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 201,
+                            "startIndex": 193,
+                            "textRun": {
+                              "content": "לַדָּבָר",
+                              "textStyle": {
+                                "backgroundColor": {
+                                  "color": {
+                                    "rgbColor": {
+                                      "blue": 0.47058824,
+                                      "green": 0.84705883,
+                                      "red": 0.9764706
+                                    }
+                                  }
+                                },
+                                "bold": true
+                              }
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "RIGHT_TO_LEFT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 193
+                    }
+                  ],
+                  "endIndex": 202,
+                  "startIndex": 192,
+                  "tableCellStyle": {
+                    "borderBottom": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderLeft": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderRight": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderTop": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "columnSpan": 1,
+                    "rowSpan": 1
+                  }
+                }
+              ],
+              "tableRowStyle": {
+                "minRowHeight": {
+                  "unit": "PT"
+                }
+              }
+            }
+          ],
+          "tableStyle": {
+            "tableColumnProperties": [
+              {
+                "widthType": "EVENLY_DISTRIBUTED"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "endIndex": 204,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 204,
+              "startIndex": 203,
+              "textRun": {
+                "content": "\n",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "headingId": "h.fj0fmhrfzls2",
+            "namedStyleType": "HEADING_2"
+          }
+        },
+        "startIndex": 203
+      },
+      {
+        "endIndex": 217,
+        "startIndex": 204,
+        "table": {
+          "columns": 1,
+          "rows": 1,
+          "tableRows": [
+            {
+              "endIndex": 216,
+              "startIndex": 205,
+              "tableCells": [
+                {
+                  "content": [
+                    {
+                      "endIndex": 216,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 215,
+                            "startIndex": 207,
+                            "textRun": {
+                              "content": "לַדָּבָר",
+                              "textStyle": {
+                                "backgroundColor": {
+                                  "color": {
+                                    "rgbColor": {
+                                      "blue": 0.47058824,
+                                      "green": 0.84705883,
+                                      "red": 0.9764706
+                                    }
+                                  }
+                                },
+                                "bold": true
+                              }
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "RIGHT_TO_LEFT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 207
+                    }
+                  ],
+                  "endIndex": 216,
+                  "startIndex": 206,
+                  "tableCellStyle": {
+                    "borderBottom": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderLeft": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderRight": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderTop": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "columnSpan": 1,
+                    "rowSpan": 1
+                  }
+                }
+              ],
+              "tableRowStyle": {
+                "minRowHeight": {
+                  "unit": "PT"
+                }
+              }
+            }
+          ],
+          "tableStyle": {
+            "tableColumnProperties": [
+              {
+                "widthType": "EVENLY_DISTRIBUTED"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "endIndex": 220,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 220,
+              "startIndex": 217,
+              "textRun": {
+                "content": "8a\n",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "headingId": "h.yz8k9z4tuofr",
+            "namedStyleType": "HEADING_2"
+          }
+        },
+        "startIndex": 217
+      },
+      {
+        "endIndex": 221,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 221,
+              "startIndex": 220,
+              "textRun": {
+                "content": "\n",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "namedStyleType": "NORMAL_TEXT"
+          }
+        },
+        "startIndex": 220
+      },
+      {
+        "endIndex": 275,
+        "startIndex": 221,
+        "table": {
+          "columns": 1,
+          "rows": 2,
+          "tableRows": [
+            {
+              "endIndex": 263,
+              "startIndex": 222,
+              "tableCells": [
+                {
+                  "content": [
+                    {
+                      "endIndex": 263,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 262,
+                            "startIndex": 224,
+                            "textRun": {
+                              "content": "Otzar Laazei Rashi, Talmud, Pesachim 1",
+                              "textStyle": {}
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "LEFT_TO_RIGHT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 224
+                    }
+                  ],
+                  "endIndex": 263,
+                  "startIndex": 223,
+                  "tableCellStyle": {
+                    "borderBottom": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderLeft": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderRight": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderTop": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "columnSpan": 1,
+                    "rowSpan": 1
+                  }
+                }
+              ],
+              "tableRowStyle": {
+                "minRowHeight": {
+                  "unit": "PT"
+                }
+              }
+            },
+            {
+              "endIndex": 274,
+              "startIndex": 263,
+              "tableCells": [
+                {
+                  "content": [
+                    {
+                      "endIndex": 274,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 273,
+                            "startIndex": 265,
+                            "textRun": {
+                              "content": "ד\"ה יציע",
+                              "textStyle": {
+                                "backgroundColor": {
+                                  "color": {
+                                    "rgbColor": {
+                                      "blue": 0.47058824,
+                                      "green": 0.84705883,
+                                      "red": 0.9764706
+                                    }
+                                  }
+                                },
+                                "bold": true
+                              }
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "RIGHT_TO_LEFT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 265
+                    }
+                  ],
+                  "endIndex": 274,
+                  "startIndex": 264,
+                  "tableCellStyle": {
+                    "borderBottom": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderLeft": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderRight": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderTop": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "columnSpan": 1,
+                    "rowSpan": 1
+                  }
+                }
+              ],
+              "tableRowStyle": {
+                "minRowHeight": {
+                  "unit": "PT"
+                }
+              }
+            }
+          ],
+          "tableStyle": {
+            "tableColumnProperties": [
+              {
+                "widthType": "EVENLY_DISTRIBUTED"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "endIndex": 276,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 276,
+              "startIndex": 275,
+              "textRun": {
+                "content": "\n",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "namedStyleType": "NORMAL_TEXT"
+          }
+        },
+        "startIndex": 275
+      },
+      {
+        "endIndex": 326,
+        "startIndex": 276,
+        "table": {
+          "columns": 1,
+          "rows": 2,
+          "tableRows": [
+            {
+              "endIndex": 304,
+              "startIndex": 277,
+              "tableCells": [
+                {
+                  "content": [
+                    {
+                      "endIndex": 304,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 303,
+                            "startIndex": 279,
+                            "textRun": {
+                              "content": "Rashi on Pesachim 8a:6:6",
+                              "textStyle": {}
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "LEFT_TO_RIGHT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 279
+                    }
+                  ],
+                  "endIndex": 304,
+                  "startIndex": 278,
+                  "tableCellStyle": {
+                    "borderBottom": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderLeft": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderRight": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderTop": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "columnSpan": 1,
+                    "rowSpan": 1
+                  }
+                }
+              ],
+              "tableRowStyle": {
+                "minRowHeight": {
+                  "unit": "PT"
+                }
+              }
+            },
+            {
+              "endIndex": 325,
+              "startIndex": 304,
+              "tableCells": [
+                {
+                  "content": [
+                    {
+                      "endIndex": 325,
+                      "paragraph": {
+                        "elements": [
+                          {
+                            "endIndex": 324,
+                            "startIndex": 306,
+                            "textRun": {
+                              "content": "גג המגדל - משטיי\"ר",
+                              "textStyle": {
+                                "backgroundColor": {
+                                  "color": {
+                                    "rgbColor": {
+                                      "blue": 0.47058824,
+                                      "green": 0.84705883,
+                                      "red": 0.9764706
+                                    }
+                                  }
+                                },
+                                "bold": true
+                              }
+                            }
+                          }
+                        ],
+                        "paragraphStyle": {
+                          "direction": "RIGHT_TO_LEFT",
+                          "namedStyleType": "NORMAL_TEXT"
+                        }
+                      },
+                      "startIndex": 306
+                    }
+                  ],
+                  "endIndex": 325,
+                  "startIndex": 305,
+                  "tableCellStyle": {
+                    "borderBottom": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderLeft": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderRight": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "borderTop": {
+                      "color": {
+                        "color": {
+                          "rgbColor": {
+                            "blue": 1,
+                            "green": 1,
+                            "red": 1
+                          }
+                        }
+                      },
+                      "dashStyle": "SOLID",
+                      "width": {
+                        "magnitude": 1,
+                        "unit": "PT"
+                      }
+                    },
+                    "columnSpan": 1,
+                    "rowSpan": 1
+                  }
+                }
+              ],
+              "tableRowStyle": {
+                "minRowHeight": {
+                  "unit": "PT"
+                }
+              }
+            }
+          ],
+          "tableStyle": {
+            "tableColumnProperties": [
+              {
+                "widthType": "EVENLY_DISTRIBUTED"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "endIndex": 327,
+        "paragraph": {
+          "elements": [
+            {
+              "endIndex": 326,
+              "startIndex": 326,
+              "textRun": {
+                "content": "",
+                "textStyle": {}
+              }
+            }
+          ],
+          "paragraphStyle": {
+            "direction": "LEFT_TO_RIGHT",
+            "namedStyleType": "NORMAL_TEXT"
+          }
+        },
+        "startIndex": 326
+      }
+    ]
+  },
+  "documentId": "1nsU_oaBk3jOalbXs-W4fCMLWypxkJfIDgYuliBcZOe4",
+  "namedRanges": {
+    "1bc83b3d-baf8-4905-b46b-c9890800c464<<||>>Rashi on Pesachim 8a:6:6<<||>>endPercentage=0.23684210526315788": {
+      "name": "1bc83b3d-baf8-4905-b46b-c9890800c464<<||>>Rashi on Pesachim 8a:6:6<<||>>endPercentage=0.23684210526315788",
+      "namedRanges": [
+        {
+          "name": "1bc83b3d-baf8-4905-b46b-c9890800c464<<||>>Rashi on Pesachim 8a:6:6<<||>>endPercentage=0.23684210526315788",
+          "namedRangeId": "kix.y3zmmr6bfwth",
+          "ranges": [
+            {
+              "endIndex": 324,
+              "startIndex": 306
+            }
+          ]
+        }
+      ]
+    },
+    "1bc83b3d-baf8-4905-b46b-c9890800c464<<||>>Rashi on Pesachim 8a:6:6<<||>>highlight": {
+      "name": "1bc83b3d-baf8-4905-b46b-c9890800c464<<||>>Rashi on Pesachim 8a:6:6<<||>>highlight",
+      "namedRanges": [
+        {
+          "name": "1bc83b3d-baf8-4905-b46b-c9890800c464<<||>>Rashi on Pesachim 8a:6:6<<||>>highlight",
+          "namedRangeId": "kix.vwd817jjfwyk",
+          "ranges": [
+            {
+              "endIndex": 324,
+              "startIndex": 306
+            }
+          ]
+        }
+      ]
+    },
+    "1bc83b3d-baf8-4905-b46b-c9890800c464<<||>>Rashi on Pesachim 8a:6:6<<||>>isEnglish=false": {
+      "name": "1bc83b3d-baf8-4905-b46b-c9890800c464<<||>>Rashi on Pesachim 8a:6:6<<||>>isEnglish=false",
+      "namedRanges": [
+        {
+          "name": "1bc83b3d-baf8-4905-b46b-c9890800c464<<||>>Rashi on Pesachim 8a:6:6<<||>>isEnglish=false",
+          "namedRangeId": "kix.fdeq3ikbxfj5",
+          "ranges": [
+            {
+              "endIndex": 324,
+              "startIndex": 306
+            }
+          ]
+        }
+      ]
+    },
+    "1bc83b3d-baf8-4905-b46b-c9890800c464<<||>>Rashi on Pesachim 8a:6:6<<||>>startPercentage=0": {
+      "name": "1bc83b3d-baf8-4905-b46b-c9890800c464<<||>>Rashi on Pesachim 8a:6:6<<||>>startPercentage=0",
+      "namedRanges": [
+        {
+          "name": "1bc83b3d-baf8-4905-b46b-c9890800c464<<||>>Rashi on Pesachim 8a:6:6<<||>>startPercentage=0",
+          "namedRangeId": "kix.wqn1slctk31x",
+          "ranges": [
+            {
+              "endIndex": 324,
+              "startIndex": 306
+            }
+          ]
+        }
+      ]
+    },
+    "1bc83b3d-baf8-4905-b46b-c9890800c464<<||>>Rashi on Pesachim 8a:6:6<<||>>wordCountEnd=11": {
+      "name": "1bc83b3d-baf8-4905-b46b-c9890800c464<<||>>Rashi on Pesachim 8a:6:6<<||>>wordCountEnd=11",
+      "namedRanges": [
+        {
+          "name": "1bc83b3d-baf8-4905-b46b-c9890800c464<<||>>Rashi on Pesachim 8a:6:6<<||>>wordCountEnd=11",
+          "namedRangeId": "kix.i13u6ogk4zox",
+          "ranges": [
+            {
+              "endIndex": 324,
+              "startIndex": 306
+            }
+          ]
+        }
+      ]
+    },
+    "1bc83b3d-baf8-4905-b46b-c9890800c464<<||>>Rashi on Pesachim 8a:6:6<<||>>wordCountStart=0": {
+      "name": "1bc83b3d-baf8-4905-b46b-c9890800c464<<||>>Rashi on Pesachim 8a:6:6<<||>>wordCountStart=0",
+      "namedRanges": [
+        {
+          "name": "1bc83b3d-baf8-4905-b46b-c9890800c464<<||>>Rashi on Pesachim 8a:6:6<<||>>wordCountStart=0",
+          "namedRangeId": "kix.dewiexmda3b3",
+          "ranges": [
+            {
+              "endIndex": 324,
+              "startIndex": 306
+            }
+          ]
+        }
+      ]
+    },
+    "3ba9140b-bc04-4991-a93c-4035a203560d<<||>>Pesachim 8a.1<<||>>endPercentage=0.24550898203592814": {
+      "name": "3ba9140b-bc04-4991-a93c-4035a203560d<<||>>Pesachim 8a.1<<||>>endPercentage=0.24550898203592814",
+      "namedRanges": [
+        {
+          "name": "3ba9140b-bc04-4991-a93c-4035a203560d<<||>>Pesachim 8a.1<<||>>endPercentage=0.24550898203592814",
+          "namedRangeId": "kix.88v8a8r1vgcn",
+          "ranges": [
+            {
+              "endIndex": 201,
+              "startIndex": 193
+            }
+          ]
+        }
+      ]
+    },
+    "3ba9140b-bc04-4991-a93c-4035a203560d<<||>>Pesachim 8a.1<<||>>highlight=blue": {
+      "name": "3ba9140b-bc04-4991-a93c-4035a203560d<<||>>Pesachim 8a.1<<||>>highlight=blue",
+      "namedRanges": [
+        {
+          "name": "3ba9140b-bc04-4991-a93c-4035a203560d<<||>>Pesachim 8a.1<<||>>highlight=blue",
+          "namedRangeId": "kix.tbpl8tea6v9d",
+          "ranges": [
+            {
+              "endIndex": 201,
+              "startIndex": 193
+            }
+          ]
+        }
+      ]
+    },
+    "3ba9140b-bc04-4991-a93c-4035a203560d<<||>>Pesachim 8a.1<<||>>isEnglish=false": {
+      "name": "3ba9140b-bc04-4991-a93c-4035a203560d<<||>>Pesachim 8a.1<<||>>isEnglish=false",
+      "namedRanges": [
+        {
+          "name": "3ba9140b-bc04-4991-a93c-4035a203560d<<||>>Pesachim 8a.1<<||>>isEnglish=false",
+          "namedRangeId": "kix.il7plwf1r1se",
+          "ranges": [
+            {
+              "endIndex": 201,
+              "startIndex": 193
+            }
+          ]
+        }
+      ]
+    },
+    "3ba9140b-bc04-4991-a93c-4035a203560d<<||>>Pesachim 8a.1<<||>>startPercentage=0.2215568862275449": {
+      "name": "3ba9140b-bc04-4991-a93c-4035a203560d<<||>>Pesachim 8a.1<<||>>startPercentage=0.2215568862275449",
+      "namedRanges": [
+        {
+          "name": "3ba9140b-bc04-4991-a93c-4035a203560d<<||>>Pesachim 8a.1<<||>>startPercentage=0.2215568862275449",
+          "namedRangeId": "kix.tjq4qic7pxk",
+          "ranges": [
+            {
+              "endIndex": 201,
+              "startIndex": 193
+            }
+          ]
+        }
+      ]
+    },
+    "3ba9140b-bc04-4991-a93c-4035a203560d<<||>>Pesachim 8a.1<<||>>wordCountEnd=30": {
+      "name": "3ba9140b-bc04-4991-a93c-4035a203560d<<||>>Pesachim 8a.1<<||>>wordCountEnd=30",
+      "namedRanges": [
+        {
+          "name": "3ba9140b-bc04-4991-a93c-4035a203560d<<||>>Pesachim 8a.1<<||>>wordCountEnd=30",
+          "namedRangeId": "kix.v918vcb9yws1",
+          "ranges": [
+            {
+              "endIndex": 201,
+              "startIndex": 193
+            }
+          ]
+        }
+      ]
+    },
+    "3ba9140b-bc04-4991-a93c-4035a203560d<<||>>Pesachim 8a.1<<||>>wordCountStart=10": {
+      "name": "3ba9140b-bc04-4991-a93c-4035a203560d<<||>>Pesachim 8a.1<<||>>wordCountStart=10",
+      "namedRanges": [
+        {
+          "name": "3ba9140b-bc04-4991-a93c-4035a203560d<<||>>Pesachim 8a.1<<||>>wordCountStart=10",
+          "namedRangeId": "kix.fzrxm9aztooj",
+          "ranges": [
+            {
+              "endIndex": 201,
+              "startIndex": 193
+            }
+          ]
+        }
+      ]
+    },
+    "447150e2-a113-49bc-867e-9bdf7458dab4<<||>>Pesachim 8a.1<<||>>endPercentage=0.2964071856287425": {
+      "name": "447150e2-a113-49bc-867e-9bdf7458dab4<<||>>Pesachim 8a.1<<||>>endPercentage=0.2964071856287425",
+      "namedRanges": [
+        {
+          "name": "447150e2-a113-49bc-867e-9bdf7458dab4<<||>>Pesachim 8a.1<<||>>endPercentage=0.2964071856287425",
+          "namedRangeId": "kix.ppbtdksdxf3k",
+          "ranges": [
+            {
+              "endIndex": 215,
+              "startIndex": 207
+            }
+          ]
+        }
+      ]
+    },
+    "447150e2-a113-49bc-867e-9bdf7458dab4<<||>>Pesachim 8a.1<<||>>highlight=yellow": {
+      "name": "447150e2-a113-49bc-867e-9bdf7458dab4<<||>>Pesachim 8a.1<<||>>highlight=yellow",
+      "namedRanges": [
+        {
+          "name": "447150e2-a113-49bc-867e-9bdf7458dab4<<||>>Pesachim 8a.1<<||>>highlight=yellow",
+          "namedRangeId": "kix.ll5rmzduy1eb",
+          "ranges": [
+            {
+              "endIndex": 215,
+              "startIndex": 207
+            }
+          ]
+        }
+      ]
+    },
+    "447150e2-a113-49bc-867e-9bdf7458dab4<<||>>Pesachim 8a.1<<||>>isEnglish=false": {
+      "name": "447150e2-a113-49bc-867e-9bdf7458dab4<<||>>Pesachim 8a.1<<||>>isEnglish=false",
+      "namedRanges": [
+        {
+          "name": "447150e2-a113-49bc-867e-9bdf7458dab4<<||>>Pesachim 8a.1<<||>>isEnglish=false",
+          "namedRangeId": "kix.y2pa66y5j1qd",
+          "ranges": [
+            {
+              "endIndex": 215,
+              "startIndex": 207
+            }
+          ]
+        }
+      ]
+    },
+    "447150e2-a113-49bc-867e-9bdf7458dab4<<||>>Pesachim 8a.1<<||>>startPercentage=0.27245508982035926": {
+      "name": "447150e2-a113-49bc-867e-9bdf7458dab4<<||>>Pesachim 8a.1<<||>>startPercentage=0.27245508982035926",
+      "namedRanges": [
+        {
+          "name": "447150e2-a113-49bc-867e-9bdf7458dab4<<||>>Pesachim 8a.1<<||>>startPercentage=0.27245508982035926",
+          "namedRangeId": "kix.m9pj7otpnw24",
+          "ranges": [
+            {
+              "endIndex": 215,
+              "startIndex": 207
+            }
+          ]
+        }
+      ]
+    },
+    "447150e2-a113-49bc-867e-9bdf7458dab4<<||>>Pesachim 8a.1<<||>>wordCountEnd=27": {
+      "name": "447150e2-a113-49bc-867e-9bdf7458dab4<<||>>Pesachim 8a.1<<||>>wordCountEnd=27",
+      "namedRanges": [
+        {
+          "name": "447150e2-a113-49bc-867e-9bdf7458dab4<<||>>Pesachim 8a.1<<||>>wordCountEnd=27",
+          "namedRangeId": "kix.pgd7zk1irywk",
+          "ranges": [
+            {
+              "endIndex": 215,
+              "startIndex": 207
+            }
+          ]
+        }
+      ]
+    },
+    "447150e2-a113-49bc-867e-9bdf7458dab4<<||>>Pesachim 8a.1<<||>>wordCountStart=13": {
+      "name": "447150e2-a113-49bc-867e-9bdf7458dab4<<||>>Pesachim 8a.1<<||>>wordCountStart=13",
+      "namedRanges": [
+        {
+          "name": "447150e2-a113-49bc-867e-9bdf7458dab4<<||>>Pesachim 8a.1<<||>>wordCountStart=13",
+          "namedRangeId": "kix.3rxofeer14m2",
+          "ranges": [
+            {
+              "endIndex": 215,
+              "startIndex": 207
+            }
+          ]
+        }
+      ]
+    },
+    "Instructions Table": {
+      "name": "Instructions Table",
+      "namedRanges": [
+        {
+          "name": "Instructions Table",
+          "namedRangeId": "kix.x2fv4hah9hyh",
+          "ranges": [
+            {
+              "endIndex": 189,
+              "startIndex": 1
+            }
+          ]
+        }
+      ]
+    },
+    "c8658266-a06b-4c3c-9efb-f650e67060fa<<||>>Otzar Laazei Rashi, Talmud, Pesachim 1<<||>>endPercentage=0.04678362573099415": {
+      "name": "c8658266-a06b-4c3c-9efb-f650e67060fa<<||>>Otzar Laazei Rashi, Talmud, Pesachim 1<<||>>endPercentage=0.04678362573099415",
+      "namedRanges": [
+        {
+          "name": "c8658266-a06b-4c3c-9efb-f650e67060fa<<||>>Otzar Laazei Rashi, Talmud, Pesachim 1<<||>>endPercentage=0.04678362573099415",
+          "namedRangeId": "kix.p9tp065tg3zl",
+          "ranges": [
+            {
+              "endIndex": 273,
+              "startIndex": 265
+            }
+          ]
+        }
+      ]
+    },
+    "c8658266-a06b-4c3c-9efb-f650e67060fa<<||>>Otzar Laazei Rashi, Talmud, Pesachim 1<<||>>isEnglish=false": {
+      "name": "c8658266-a06b-4c3c-9efb-f650e67060fa<<||>>Otzar Laazei Rashi, Talmud, Pesachim 1<<||>>isEnglish=false",
+      "namedRanges": [
+        {
+          "name": "c8658266-a06b-4c3c-9efb-f650e67060fa<<||>>Otzar Laazei Rashi, Talmud, Pesachim 1<<||>>isEnglish=false",
+          "namedRangeId": "kix.1ygo05b41yqs",
+          "ranges": [
+            {
+              "endIndex": 273,
+              "startIndex": 265
+            }
+          ]
+        }
+      ]
+    },
+    "c8658266-a06b-4c3c-9efb-f650e67060fa<<||>>Otzar Laazei Rashi, Talmud, Pesachim 1<<||>>startPercentage=0": {
+      "name": "c8658266-a06b-4c3c-9efb-f650e67060fa<<||>>Otzar Laazei Rashi, Talmud, Pesachim 1<<||>>startPercentage=0",
+      "namedRanges": [
+        {
+          "name": "c8658266-a06b-4c3c-9efb-f650e67060fa<<||>>Otzar Laazei Rashi, Talmud, Pesachim 1<<||>>startPercentage=0",
+          "namedRangeId": "kix.y5jrvty7iabw",
+          "ranges": [
+            {
+              "endIndex": 273,
+              "startIndex": 265
+            }
+          ]
+        }
+      ]
+    },
+    "c8658266-a06b-4c3c-9efb-f650e67060fa<<||>>Otzar Laazei Rashi, Talmud, Pesachim 1<<||>>wordCountEnd=26": {
+      "name": "c8658266-a06b-4c3c-9efb-f650e67060fa<<||>>Otzar Laazei Rashi, Talmud, Pesachim 1<<||>>wordCountEnd=26",
+      "namedRanges": [
+        {
+          "name": "c8658266-a06b-4c3c-9efb-f650e67060fa<<||>>Otzar Laazei Rashi, Talmud, Pesachim 1<<||>>wordCountEnd=26",
+          "namedRangeId": "kix.ikr7xy6qswk5",
+          "ranges": [
+            {
+              "endIndex": 273,
+              "startIndex": 265
+            }
+          ]
+        }
+      ]
+    },
+    "c8658266-a06b-4c3c-9efb-f650e67060fa<<||>>Otzar Laazei Rashi, Talmud, Pesachim 1<<||>>wordCountStart=0": {
+      "name": "c8658266-a06b-4c3c-9efb-f650e67060fa<<||>>Otzar Laazei Rashi, Talmud, Pesachim 1<<||>>wordCountStart=0",
+      "namedRanges": [
+        {
+          "name": "c8658266-a06b-4c3c-9efb-f650e67060fa<<||>>Otzar Laazei Rashi, Talmud, Pesachim 1<<||>>wordCountStart=0",
+          "namedRangeId": "kix.6v7l41p6z5gj",
+          "ranges": [
+            {
+              "endIndex": 273,
+              "startIndex": 265
+            }
+          ]
+        }
+      ]
+    },
+    "fullComment:1bc83b3d-baf8-4905-b46b-c9890800c464": {
+      "name": "fullComment:1bc83b3d-baf8-4905-b46b-c9890800c464",
+      "namedRanges": [
+        {
+          "name": "fullComment:1bc83b3d-baf8-4905-b46b-c9890800c464",
+          "namedRangeId": "kix.fvmlfb390oo2",
+          "ranges": [
+            {
+              "endIndex": 326,
+              "startIndex": 275
+            }
+          ]
+        }
+      ]
+    },
+    "fullComment:3ba9140b-bc04-4991-a93c-4035a203560d": {
+      "name": "fullComment:3ba9140b-bc04-4991-a93c-4035a203560d",
+      "namedRanges": [
+        {
+          "name": "fullComment:3ba9140b-bc04-4991-a93c-4035a203560d",
+          "namedRangeId": "kix.rrd01nlv65vo",
+          "ranges": [
+            {
+              "endIndex": 203,
+              "startIndex": 189
+            }
+          ]
+        }
+      ]
+    },
+    "fullComment:447150e2-a113-49bc-867e-9bdf7458dab4": {
+      "name": "fullComment:447150e2-a113-49bc-867e-9bdf7458dab4",
+      "namedRanges": [
+        {
+          "name": "fullComment:447150e2-a113-49bc-867e-9bdf7458dab4",
+          "namedRangeId": "kix.8twf76yew3a",
+          "ranges": [
+            {
+              "endIndex": 217,
+              "startIndex": 203
+            }
+          ]
+        }
+      ]
+    },
+    "fullComment:c8658266-a06b-4c3c-9efb-f650e67060fa": {
+      "name": "fullComment:c8658266-a06b-4c3c-9efb-f650e67060fa",
+      "namedRanges": [
+        {
+          "name": "fullComment:c8658266-a06b-4c3c-9efb-f650e67060fa",
+          "namedRangeId": "kix.mf69k3foluoo",
+          "ranges": [
+            {
+              "endIndex": 275,
+              "startIndex": 220
+            }
+          ]
+        }
+      ]
+    },
+    "header:8a": {
+      "name": "header:8a",
+      "namedRanges": [
+        {
+          "name": "header:8a",
+          "namedRangeId": "kix.2c2j1rxxkh0",
+          "ranges": [
+            {
+              "endIndex": 220,
+              "startIndex": 217
+            }
+          ]
+        }
+      ]
+    },
+    "orderingRef:Pesachim 8a.1": {
+      "name": "orderingRef:Pesachim 8a.1",
+      "namedRanges": [
+        {
+          "name": "orderingRef:Pesachim 8a.1",
+          "namedRangeId": "kix.60rmubduc85e",
+          "ranges": [
+            {
+              "endIndex": 203,
+              "startIndex": 189
+            }
+          ]
+        },
+        {
+          "name": "orderingRef:Pesachim 8a.1",
+          "namedRangeId": "kix.qxkkh18gknal",
+          "ranges": [
+            {
+              "endIndex": 217,
+              "startIndex": 203
+            }
+          ]
+        }
+      ]
+    },
+    "orderingRef:Pesachim 8a.6": {
+      "name": "orderingRef:Pesachim 8a.6",
+      "namedRanges": [
+        {
+          "name": "orderingRef:Pesachim 8a.6",
+          "namedRangeId": "kix.89ynv3phaiby",
+          "ranges": [
+            {
+              "endIndex": 326,
+              "startIndex": 275
+            }
+          ]
+        },
+        {
+          "name": "orderingRef:Pesachim 8a.6",
+          "namedRangeId": "kix.bl1t71z5yzol",
+          "ranges": [
+            {
+              "endIndex": 275,
+              "startIndex": 220
+            }
+          ]
+        }
+      ]
+    },
+    "parentRef:Pesachim 8a.1": {
+      "name": "parentRef:Pesachim 8a.1",
+      "namedRanges": [
+        {
+          "name": "parentRef:Pesachim 8a.1",
+          "namedRangeId": "kix.cwsfm3l1m841",
+          "ranges": [
+            {
+              "endIndex": 217,
+              "startIndex": 203
+            }
+          ]
+        },
+        {
+          "name": "parentRef:Pesachim 8a.1",
+          "namedRangeId": "kix.6828hohoj639",
+          "ranges": [
+            {
+              "endIndex": 203,
+              "startIndex": 189
+            }
+          ]
+        }
+      ]
+    },
+    "parentRef:Pesachim 8a.6": {
+      "name": "parentRef:Pesachim 8a.6",
+      "namedRanges": [
+        {
+          "name": "parentRef:Pesachim 8a.6",
+          "namedRangeId": "kix.qtj4mnk184pl",
+          "ranges": [
+            {
+              "endIndex": 275,
+              "startIndex": 220
+            }
+          ]
+        },
+        {
+          "name": "parentRef:Pesachim 8a.6",
+          "namedRangeId": "kix.6g49ooxex5zk",
+          "ranges": [
+            {
+              "endIndex": 326,
+              "startIndex": 275
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "revisionId": "revisionId",
+  "title": "talmud.page Pesachim debug notes"
+}

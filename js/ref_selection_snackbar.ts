@@ -2,7 +2,7 @@
 import {showCorrectionModal} from "./CorrectionModal";
 import {findNodeOffset} from "./dom";
 import {driveClient} from "./google_drive/singleton";
-import {AnyComment, CommentSourceMetadata} from "./google_drive/types";
+import {AnyComment, CommentSourceMetadata, HighlightColor} from "./google_drive/types";
 import {applyHighlight} from "./highlight";
 import {$} from "./jquery";
 import {snackbars} from "./snackbar";
@@ -169,7 +169,8 @@ const onSelectionChange = () => {
             return text;
           }
           return applyHighlight({
-            highlight: true,
+            // This is a workaround - email is selected down below and this is ignored.
+            highlight: "yellow",
             commentSourceMetadata: checkNotUndefined(
               commentSourceMetadata, "commentSourceMetadata"),
             text: checkNotUndefined(selectedText, "selectedText"),
@@ -192,10 +193,20 @@ const onSelectionChange = () => {
       text: '<i class="material-icons">format_bold</i>',
       onClick: () => {
         captureSelectionState();
-        postComment({
-          highlight: true,
-          commentSourceMetadata: checkNotUndefined(commentSourceMetadata, "commentSourceMetadata"),
-        });
+        const newButton = (color: HighlightColor) => {
+          return {
+            text: `<i class="material-icons icon-highlight-${color}">palette</i>`,
+            onClick: () => {
+              postComment({
+                highlight: color,
+                commentSourceMetadata: checkNotUndefined(
+                  commentSourceMetadata, "commentSourceMetadata"),
+              });
+              snackbars.textSelection.hide();
+            },
+          };
+        };
+        snackbars.textSelection.update("", [newButton("yellow"), newButton("blue")]);
       },
     });
 

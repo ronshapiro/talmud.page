@@ -133,9 +133,16 @@ class CommentRow extends Component {
   }
 }
 
-function commentaryHasHighlights(commentary) {
-  return commentary.comments.some(x => x.hasHighlights)
-    || Object.values(commentary.commentary || {}).some(commentaryHasHighlights);
+function commentaryHighlightColors(commentary, colors) {
+  if (!colors) colors = new Set();
+  for (const comment of commentary.comments) {
+    for (const color of comment.highlightColors || []) {
+      colors.add(color);
+    }
+  }
+  Object.values(commentary.commentary || {}).forEach(
+    nested => commentaryHighlightColors(nested, colors));
+  return colors;
 }
 
 class CommentarySection extends Component {
@@ -266,10 +273,10 @@ class CommentarySection extends Component {
       return element;
     };
 
-    return applyButtonToFocusRef(
+    const button = applyButtonToFocusRef(
       // eslint-disable-next-line jsx-a11y/anchor-is-valid
       <a
-        key={commentaryKind.englishName}
+        key="button"
         className={this.buttonClasses(commentaryKind, isShowing, commentary)}
         role="button"
         tabIndex="0"
@@ -277,6 +284,20 @@ class CommentarySection extends Component {
         onKeyUp={onKeyUp}>
         {commentaryKind.hebrewName}
       </a>);
+    return (
+      <React.Fragment key={commentaryKind.englishName}>
+        {button}
+        {!isShowing && Array.from(commentaryHighlightColors(commentary)).map(
+          color => (
+            <span
+              key={commentaryKind.englishName + color}
+              className={`highlighted-commentary-indicator-${color}`}>
+              ●
+            </span>
+          ),
+        )}
+      </React.Fragment>
+    );
   }
 
   buttonClasses(commentaryKind, isShowing, commentary) {
@@ -287,7 +308,6 @@ class CommentarySection extends Component {
       !isShowing && commentary.commentary && commentary.commentary["Personal Notes"]
         ? "has-nested-commentaries"
         : undefined,
-      !isShowing && commentaryHasHighlights(commentary) ? "highlighted" : undefined,
     ].filter(x => x).join(" ");
   }
 

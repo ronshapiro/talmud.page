@@ -317,7 +317,7 @@ test("highlights", () => {
       expectCommentsToEqual({});
       expectHighlightsToEqual({
         "Otzar Laazei Rashi, Talmud, Pesachim 1": [{
-          "highlight": true,
+          "highlight": "yellow",
           "range": {
             "startIndex": 265,
             "endIndex": 273,
@@ -333,7 +333,7 @@ test("highlights", () => {
         }],
         "Pesachim 8a.1": [
           {
-            "highlight": true,
+            "highlight": "yellow",
             "range": {
               "startIndex": 193,
               "endIndex": 201,
@@ -348,7 +348,7 @@ test("highlights", () => {
             },
           },
           {
-            "highlight": true,
+            "highlight": "yellow",
             "range": {
               "startIndex": 207,
               "endIndex": 215,
@@ -364,7 +364,63 @@ test("highlights", () => {
           },
         ],
         "Rashi on Pesachim 8a:6:6": [{
-          "highlight": true,
+          "highlight": "yellow",
+          "range": {
+            "startIndex": 306,
+            "endIndex": 324,
+          },
+          "text": "גג המגדל - משטיי\"ר",
+          "commentSourceMetadata": {
+            "startPercentage": 0,
+            "endPercentage": 0.23684210526315788,
+            "wordCountStart": 0,
+            "wordCountEnd": 11,
+            "isEnglish": false,
+          },
+        }],
+      });
+    });
+});
+
+test("highlights in multiple colors", () => {
+  return client.getDatabaseDocument("highlights-multiple-colors.json")
+    .then(() => {
+      expectCommentsToEqual({});
+      expectHighlightsToEqual({
+        "Pesachim 8a.1": [
+          {
+            "highlight": "blue",
+            "range": {
+              "startIndex": 193,
+              "endIndex": 201,
+            },
+            "text": "לַדָּבָר",
+            "commentSourceMetadata": {
+              "startPercentage": 0.2215568862275449,
+              "endPercentage": 0.24550898203592814,
+              "wordCountStart": 10,
+              "wordCountEnd": 30,
+              "isEnglish": false,
+            },
+          },
+          {
+            "highlight": "yellow",
+            "range": {
+              "startIndex": 207,
+              "endIndex": 215,
+            },
+            "text": "לַדָּבָר",
+            "commentSourceMetadata": {
+              "startPercentage": 0.27245508982035926,
+              "endPercentage": 0.2964071856287425,
+              "wordCountStart": 13,
+              "wordCountEnd": 27,
+              "isEnglish": false,
+            },
+          },
+        ],
+        "Rashi on Pesachim 8a:6:6": [{
+          "highlight": "yellow",
           "range": {
             "startIndex": 306,
             "endIndex": 324,

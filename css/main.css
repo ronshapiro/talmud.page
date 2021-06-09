@@ -9,10 +9,15 @@
 
     /* Colors overridden in dark mode. */
     --background-color: white;
-    --highlight-color: rgb(250, 217, 120);
+    --highlight-yellow: rgb(250, 217, 120);
+    --highlight-blue: rgb(141, 188, 252);
+    --highlighted-commentary-indicator-yellow: var(--highlight-yellow);
+    --highlighted-commentary-indicator-blue: var(--highlight-blue);
     --text-color: var(--dark-background);
     --english-text-color: #555;
     --snackbar-button-color: var(--mdl-accent-color);
+    --snackbar-background-color: var(--text-color);
+    --snackbar-text-color: var(--background-color);
     --modal-box-shadow-color: #888;
     --modal-button-color: var(--mdl-major-color);
 }
@@ -76,8 +81,12 @@ html, body {
     float: left;
 }
 
-.highlighted {
-    background: var(--highlight-color);
+.highlighted-yellow {
+    background: var(--highlight-yellow);
+}
+
+.highlighted-blue {
+    background: var(--highlight-blue);
 }
 
 .hebrew .highlighted {
@@ -85,10 +94,6 @@ html, body {
 }
 .english .highlighted {
     padding: 2px 0px;
-}
-
-.commentary_header.highlighted {
-    padding: 0;
 }
 
 .amudContainer:after {
@@ -130,9 +135,21 @@ html, body {
 }
 .commentary_header {
     text-decoration: underline;
-    margin-inline-end: 8px;
     display: inline-block;
     user-select: none;
+}
+
+.commentary_header:not(:first-of-type) {
+    margin-inline-start: 8px;
+}
+
+.highlighted-commentary-indicator-yellow {
+    color: var(--highlighted-commentary-indicator-yellow);
+    margin-inline-start: 4px;
+}
+.highlighted-commentary-indicator-blue {
+    color: var(--highlighted-commentary-indicator-blue);
+    margin-inline-start: 4px;
 }
 
 .commentary_header.has-nested-commentaries::after {
@@ -143,9 +160,6 @@ html, body {
     margin-inline-start: 2px;
     content: "+";
     font-size: smaller;
-}
-.commentary_header.has-nested-commentaries.highlighted::after {
-    text-decoration-color: var(--highlight-color);
 }
 
 #main-contents {
@@ -213,8 +227,8 @@ h2 {
     width: calc(var(--max-width) - 2 * var(--snackbar-padding));
     padding: var(--snackbar-padding);
 
-    background-color: var(--text-color);
-    color: var(--background-color);
+    background-color: var(--snackbar-background-color);
+    color: var(--snackbar-text-color);
     border-radius: 2px 2px 0 0;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, .5);
 
@@ -401,4 +415,12 @@ h2 {
 }
 .personal-comment-strikethrough {
     text-decoration: line-through;
+}
+
+.icon-highlight-yellow {
+    color: var(--highlight-yellow);
+}
+
+.icon-highlight-blue {
+    color: var(--highlight-blue);
 }

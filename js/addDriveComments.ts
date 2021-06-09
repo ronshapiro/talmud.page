@@ -16,17 +16,18 @@ function setHighlights(obj: Section | ApiComment, driveClient: DriveClient) {
     Object.assign(obj, obj.unhighlighted);
     delete obj.unhighlighted;
   }
-  delete obj.hasHighlights;
+  delete obj.highlightColors;
 
   const highlights = driveClient.highlightsForRef(obj.ref);
   if (highlights.length > 0) {
     obj.unhighlighted = {he: obj.he, en: obj.en};
+    obj.highlightColors = new Set();
     for (const highlight of highlights) {
       const prop = highlight.commentSourceMetadata.isEnglish ? "en" : "he";
       const highlighted = applyHighlight(highlight, obj[prop]);
       if (highlighted) {
         obj[prop] = highlighted;
-        obj.hasHighlights = true;
+        obj.highlightColors.add(highlight.highlight);
       }
       // TODO: if the highlight doesn't apply, display an error or add a synthetic comment
     }

@@ -1,6 +1,8 @@
 // eslint-disable-next-line @typescript-eslint/triple-slash-reference,spaced-comment
 /// <reference path="sefaria.d.ts" />
 
+import {HighlightColor} from "./js/google_drive/types";
+
 export interface Amud {
   sections: Section[];
 }
@@ -14,7 +16,7 @@ export interface Commentary {
 
 interface Highlightable {
   unhighlighted?: {he: sefaria.TextType, en: sefaria.TextType};
-  hasHighlights?: boolean;
+  highlightColors?: Set<HighlightColor>;
 }
 
 export interface Section extends Highlightable {

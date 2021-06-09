@@ -2,8 +2,12 @@
     --background-color: var(--dark-background);
     --text-color: #aaa;
     --english-text-color: #aaa;
-    --snackbar-button-color: var(--dark-background);
-    --highlight-color: rgb(80, 80, 40);
+    --snackbar-button-color: var(--text-color);
+    --snackbar-background-color: #111;
+    --snackbar-text-color: var(--text-color);
+    --highlight-yellow: rgb(120, 115, 59);
+    --highlighted-commentary-indicator-yellow: rgb(133, 128, 66);
+    --highlight-blue: rgb(66, 112, 133);
     --modal-box-shadow-color: #111;
     --modal-button-color: var(--mdl-accent-color);
 

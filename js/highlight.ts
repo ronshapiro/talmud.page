@@ -7,6 +7,7 @@ function injectHighlighting(
   root: Node,
   start: number,
   end: number,
+  highlight: HighlightCommentWithText,
   highlightingStyle: HighlightingStyle,
 ): void {
   let currentIndex = 0;
@@ -29,7 +30,7 @@ function injectHighlighting(
           // @ts-ignore
           highlighted.style = "background: rgb(255, 201, 135)";
         } else {
-          highlighted.className = "highlighted";
+          highlighted.className = `highlighted highlighted-${highlight.highlight}`;
         }
         highlighted.textContent = child.data.substring(highlightedStart, highlightedEnd);
 
@@ -146,7 +147,8 @@ export function applyHighlight(
     const match = justText.substring(start, end).match(searchRegex);
     if (match && match.index !== undefined) {
       const matchStart = start + match.index;
-      injectHighlighting(el, matchStart, matchStart + match[0].length, highlightingStyle);
+      injectHighlighting(
+        el, matchStart, matchStart + match[0].length, highlight, highlightingStyle);
       return el.innerHTML;
     }
   }
