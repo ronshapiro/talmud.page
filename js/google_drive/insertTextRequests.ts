@@ -57,10 +57,16 @@ function boldText(textStyle: TextStyle): void {
 function highlightText(textStyle: TextStyle, color: HighlightColor): void {
   const backgroundColor = (() => {
     switch (color) {
+      case "red":
+        return rgbColor(245, 150, 147);
       case "yellow":
         return rgbColor(250, 217, 120);
+      case "green":
+        return rgbColor(136, 227, 140);
       case "blue":
         return rgbColor(141, 188, 252);
+      case "gray":
+        return rgbColor(201, 201, 201);
       default:
         throw new Error(color);
     }

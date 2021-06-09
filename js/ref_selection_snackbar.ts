@@ -206,7 +206,14 @@ const onSelectionChange = () => {
             },
           };
         };
-        snackbars.textSelection.update("", [newButton("yellow"), newButton("blue")]);
+        snackbars.textSelection.update(
+          "", [
+            newButton("red"),
+            newButton("yellow"),
+            newButton("green"),
+            newButton("blue"),
+            newButton("gray"),
+          ]);
       },
     });
 

@@ -9,10 +9,16 @@
 
     /* Colors overridden in dark mode. */
     --background-color: white;
+    --highlight-red: rgb(245, 150, 147);
     --highlight-yellow: rgb(250, 217, 120);
+    --highlight-green: rgb(136, 227, 140);
     --highlight-blue: rgb(141, 188, 252);
+    --highlight-gray: rgb(201, 201, 201);
+    --highlighted-commentary-indicator-red: var(--highlight-red);
     --highlighted-commentary-indicator-yellow: var(--highlight-yellow);
+    --highlighted-commentary-indicator-green: var(--highlight-green);
     --highlighted-commentary-indicator-blue: var(--highlight-blue);
+    --highlighted-commentary-indicator-gray: var(--highlight-gray);
     --text-color: var(--dark-background);
     --english-text-color: #555;
     --snackbar-button-color: var(--mdl-accent-color);
@@ -81,12 +87,20 @@ html, body {
     float: left;
 }
 
+.highlighted-red {
+    background: var(--highlight-red);
+}
 .highlighted-yellow {
     background: var(--highlight-yellow);
 }
-
+.highlighted-green {
+    background: var(--highlight-green);
+}
 .highlighted-blue {
     background: var(--highlight-blue);
+}
+.highlighted-gray {
+    background: var(--highlight-gray);
 }
 
 .hebrew .highlighted {
@@ -143,12 +157,24 @@ html, body {
     margin-inline-start: 8px;
 }
 
+.highlighted-commentary-indicator-red {
+    color: var(--highlighted-commentary-indicator-red);
+    margin-inline-start: 4px;
+}
 .highlighted-commentary-indicator-yellow {
     color: var(--highlighted-commentary-indicator-yellow);
     margin-inline-start: 4px;
 }
+.highlighted-commentary-indicator-green {
+    color: var(--highlighted-commentary-indicator-green);
+    margin-inline-start: 4px;
+}
 .highlighted-commentary-indicator-blue {
     color: var(--highlighted-commentary-indicator-blue);
+    margin-inline-start: 4px;
+}
+.highlighted-commentary-indicator-gray {
+    color: var(--highlighted-commentary-indicator-gray);
     margin-inline-start: 4px;
 }
 
@@ -417,10 +443,18 @@ h2 {
     text-decoration: line-through;
 }
 
+.icon-highlight-red {
+    color: var(--highlight-red);
+}
 .icon-highlight-yellow {
     color: var(--highlight-yellow);
 }
-
+.icon-highlight-green {
+    color: var(--highlight-green);
+}
 .icon-highlight-blue {
     color: var(--highlight-blue);
+}
+.icon-highlight-gray {
+    color: var(--highlight-gray);
 }
