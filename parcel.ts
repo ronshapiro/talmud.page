@@ -15,12 +15,13 @@ if (fs.existsSync("./dist")) {
 }
 
 const entryFiles = [
-  './templates/daf_yomi_redirector.html',
-  './templates/homepage.html',
-  './templates/notes_redirecter.html',
-  './templates/preferences.html',
-  './templates/talmud_page.html',
-  './templates/tanakh.html',
+  "./templates/daf_yomi_redirector.html",
+  "./templates/homepage.html",
+  "./templates/notes_redirecter.html",
+  "./templates/preferences.html",
+  "./templates/talmud_page.html",
+  "./templates/tanakh.html",
+  "./templates/service_worker.html",
 ];
 
 const isProd = (() => {
