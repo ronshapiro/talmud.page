@@ -167,6 +167,7 @@ export class DriveClient {
 
   updateSigninStatus(isSignedIn: boolean): void {
     this.isSignedIn = isSignedIn;
+    localStorage.hasSignedInWithGoogle = isSignedIn;
     if (isSignedIn) {
       gtag("config", "GA_MEASUREMENT_ID", {
         user_id: this.gapi.getSignedInUserEmail(),
@@ -589,6 +590,10 @@ export class DriveClient {
       documentId: this.databaseDocument.documentId!,
       writeControl: {requiredRevisionId: this.databaseDocument.revisionId},
     });
+  }
+
+  allowCommenting(): boolean {
+    return localStorage.hasSignedInWithGoogle === "true" || (this.isSignedIn && !this.hasErrors());
   }
 
   triggerErrorListener(): void {

@@ -14,4 +14,21 @@ export const driveClient = new DriveClient(
   window.location.hostname === "localhost",
 );
 
-(window as any).handleGoogleClientLoad = () => gapi.load("client:auth2", () => driveClient.init());
+let initCalled = false;
+
+function init() {
+  if (initCalled) {
+    return;
+  }
+  initCalled = true;
+  gapi.load("client:auth2", () => driveClient.init());
+}
+
+(window as any).handleGoogleClientLoad = () => {
+  // @ts-ignore
+  if ("connection" in navigator && navigator.connection.downlink !== 0) {
+    init();
+  } else {
+    window.addEventListener("online", init);
+  }
+};

@@ -1,9 +1,11 @@
 /* global gtag,  */
+import {mainCache} from "./caches.ts";
 import {$} from "./jquery";
 import {snackbars} from "./snackbar.ts";
 import {onceDocumentReady} from "./once_document_ready.ts";
 import {amudMetadata} from "./amud.ts";
 import {registerRefSelectionSnackbarListener} from "./ref_selection_snackbar.ts";
+import {registerServiceWorker} from "./service_worker_registration.ts";
 
 const bookTitleAndRange = () => {
   const metadata = amudMetadata();
@@ -103,7 +105,16 @@ export class Runner {
         setTimeout(() => this.requestSection(section, options), options.backoff);
       },
     });
-    if (options.newUrl) window.history.replaceState({}, "", options.newUrl);
+    if (options.newUrl) {
+      const oldUrl = window.location.href;
+      const {newUrl} = options;
+      mainCache().then(cache => {
+        cache.match(oldUrl).then(cachedResponse => {
+          cache.put(newUrl, cachedResponse.clone());
+        });
+      });
+      window.history.replaceState({}, "", newUrl);
+    }
     refreshPageState();
   }
 
@@ -140,6 +151,8 @@ export class Runner {
 
   main() {
     $(document).ready(() => {
+      registerServiceWorker();
+
       const metadata = amudMetadata();
       gtag("set", {section: metadata.masechet});
 
