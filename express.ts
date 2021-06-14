@@ -127,7 +127,11 @@ app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => res.render("homepage.html"));
 app.get("/css/:ignored/:path", (req, res) => res.sendFile(`css/${req.params.path}`));
-app.use(express.static("dist"));
+
+for (const file of fs.readdirSync("dist").filter(x => !x.endsWith(".html"))) {
+  app.get(`/${file}`, (req, res) => res.sendFile(`dist/${file}`));
+}
+
 app.use(express.static("favicon"));
 app.use("/font", express.static("fonts"));
 
