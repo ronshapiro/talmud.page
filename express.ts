@@ -20,6 +20,8 @@ import {
 } from "./apiTypes";
 import {WeightBasedLruCache} from "./cache";
 import {CorrectionPostData} from "./correctionTypes";
+import {EscapeHtmlHighlightCorrections} from "./source_formatting/escape_html_corrections";
+import {htmlEscape} from "./html_escape";
 import {Logger as BaseLogger, Timer} from "./logger";
 import {PromiseChain} from "./js/promises";
 import {jsonSize} from "./util/json_size";
@@ -374,6 +376,9 @@ if (fs.existsSync("sendgrid_api_key")) {
       userText,
       user,
     } = params;
+    const maybeExcapeHighlightedSection = (text: string | undefined) => {
+      return text && EscapeHtmlHighlightCorrections.process(text);
+    };
     const rtl = (text: string | undefined) => text && `<div dir="rtl">${text}</div>`;
     sendgrid.send({
       to: "corrections@sefaria.org",
@@ -387,10 +392,10 @@ if (fs.existsSync("sendgrid_api_key")) {
         `Describe the error: ${userText}`,
       ].filter(x => x !== "").join("\n\n"),
       html: [
-        `<a href="${url}">${ref}</a>`,
-        rtl(hebrewHighlighted || hebrew),
-        translationHighlighted || translation,
-        `<b>Describe the error:</b> ${userText}`,
+        `<a href="${htmlEscape(url)}">${htmlEscape(ref)}</a>`,
+        rtl(maybeExcapeHighlightedSection(hebrewHighlighted || hebrew)),
+        maybeExcapeHighlightedSection(translationHighlighted || translation),
+        `<b>Describe the error:</b> ${htmlEscape(userText)}`,
       ].filter(x => x && x !== "").join("<br><br>"),
     }).then(() => res.status(200).send({}))
       .catch(e => {

@@ -1,4 +1,5 @@
 import {LanguageStats, ParagraphElement, Range} from "./types";
+import {htmlEscape as htmlEscapeText} from "../../html_escape";
 
 interface Predicate<T> {
   (t: T): boolean;
@@ -69,12 +70,7 @@ export const joinAdjacentElements: ElementsProcessor = (elements) => {
 };
 
 const htmlEscape: ElementsProcessor = elements => (
-  elements.map(x => updateText(x, x.textRun.content
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/'/g, "&#039;")
-    .replace(/"/g, "&quot;")))
+  elements.map(x => updateText(x, htmlEscapeText(x.textRun.content)))
 );
 
 const newlineToBr: ElementsProcessor = elements => (
