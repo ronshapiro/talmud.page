@@ -5,12 +5,12 @@ const handler = (event: BeforeUnloadEvent) => {
   return message;
 };
 
-export function enableBackButtonProtection() {
+export function enableBackButtonProtection(): void {
   if (window.location.hostname !== "localhost") {
     window.addEventListener("beforeunload", handler);
   }
 }
 
-export function disableBackButtonProtection() {
+export function disableBackButtonProtection(): void {
   window.removeEventListener("beforeunload", handler);
 }
