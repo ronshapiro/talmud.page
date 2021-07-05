@@ -44,7 +44,7 @@ export function CorrectionModal(): React.ReactElement | null {
     setShowing(true);
     setRefData(data);
   };
-  const ref = useRef<HTMLInputElement>(undefined as any);
+  const ref = useRef<HTMLTextAreaElement>(undefined as any);
 
   if (!isShowing) {
     return null;
@@ -76,14 +76,14 @@ export function CorrectionModal(): React.ReactElement | null {
               className="mdl-textfieldmdl-js-textfield
                          mdl-textfield--expandable
                          mdl-textfield--floating-label">
-              <input ref={ref} className="mdl-textfield__input" type="text" />
+              <textarea ref={ref} className="mdl-textfield__input" rows={5} />
             </div>
           </form>
         </div>
       )}
       cancelText="Cancel"
       onCancel={() => setShowing(false)}
-      acceptText="Submit"
+      acceptText="Submit Correction"
       onAccept={() => onSubmit()} />
   );
 }

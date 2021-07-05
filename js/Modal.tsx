@@ -32,6 +32,7 @@ export default function Modal(props: ModalProps): React.ReactElement {
         onCancel();
       }
     });
+    modalContainer.find("input, textarea").first().focus();
   });
 
   return (
