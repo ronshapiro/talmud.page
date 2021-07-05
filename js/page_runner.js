@@ -4,6 +4,7 @@ import {$} from "./jquery";
 import {snackbars} from "./snackbar.ts";
 import {onceDocumentReady} from "./once_document_ready.ts";
 import {amudMetadata} from "./amud.ts";
+import {enableBackButtonProtection} from "./block_back_button.ts";
 import {registerRefSelectionSnackbarListener} from "./ref_selection_snackbar.ts";
 import {registerServiceWorker} from "./service_worker_registration.ts";
 
@@ -241,3 +242,5 @@ export class Runner {
     }
   }
 }
+
+enableBackButtonProtection();

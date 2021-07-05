@@ -1,5 +1,6 @@
 import * as React from "react";
 import * as PropTypes from 'prop-types';
+import {disableBackButtonProtection} from "./block_back_button";
 import {$} from "./jquery";
 import {NavigationExtension} from "./NavigationExtension";
 import Modal from "./Modal";
@@ -64,6 +65,7 @@ const NavigationButtonRow = (props: NavigationButtonRowProps) => {
 
   const onSubmit = (event?: any) => {
     if (event) event.preventDefault();
+    disableBackButtonProtection();
     newSearch(modalSearchBarRef.current.value);
   };
 
