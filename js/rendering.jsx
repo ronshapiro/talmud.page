@@ -208,7 +208,7 @@ class CommentarySection extends Component {
     return output;
   }
 
-  renderTableRow(key, hebrew, english) {
+  renderTableRow(key, hebrew, english, extraClasses = []) {
     const overrideFullRow = this.context.translationOption === "english-side-by-side";
     return (
       <TableRow
@@ -216,7 +216,7 @@ class CommentarySection extends Component {
         hebrew={hebrew}
         english={english}
         overrideFullRow={overrideFullRow}
-        classes={["commentaryRow"]}
+        classes={["commentaryRow"].concat(extraClasses)}
         />
     );
   }
@@ -238,7 +238,7 @@ class CommentarySection extends Component {
         buttons.push(this.renderButton(commentaryKind, false, commentary));
       }
     });
-    return this.renderTableRow(`${sectionLabel} show buttons`, buttons, "");
+    return this.renderTableRow(`${sectionLabel} show buttons`, buttons, "", ["show-buttons"]);
   }
 
   buttonToFocusAfterEnter = createRef();
@@ -285,7 +285,9 @@ class CommentarySection extends Component {
         {commentaryKind.hebrewName}
       </a>);
     return (
-      <React.Fragment key={commentaryKind.englishName}>
+      // Wrap in a span so that the commentary colors don't get their own flex spacing separate from
+      // the button.
+      <span key={commentaryKind.englishName}>
         {button}
         {!isShowing && Array.from(commentaryHighlightColors(commentary)).map(
           color => (
@@ -296,7 +298,7 @@ class CommentarySection extends Component {
             </span>
           ),
         )}
-      </React.Fragment>
+      </span>
     );
   }
 

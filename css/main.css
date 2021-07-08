@@ -153,8 +153,12 @@ html, body {
     user-select: none;
 }
 
-.commentary_header:not(:first-of-type) {
-    margin-inline-start: 8px;
+/* Unfortuantely there isn't a more direct way of referencing the parents of .commentary_header
+items. */
+.show-buttons > .table-cell {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 8px;
 }
 
 .highlighted-commentary-indicator-red {
