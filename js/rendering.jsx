@@ -145,6 +145,8 @@ function commentaryHighlightColors(commentary, colors) {
   return colors;
 }
 
+const MAX_BUTTONS_TO_SHOW_BEFORE_SHOWING_MORE = 7;
+
 class CommentarySection extends Component {
   static propTypes = {
     commentaries: PropTypes.object,
@@ -232,12 +234,30 @@ class CommentarySection extends Component {
 
   renderShowButtons() {
     const {commentaries, getOrdering, sectionLabel} = this.props;
-    const buttons = [];
+    const commentariesToShow = [];
     this.forEachCommentary(commentaries, (commentary, commentaryKind) => {
       if (!getOrdering(sectionLabel).includes(commentaryKind.className)) {
-        buttons.push(this.renderButton(commentaryKind, false, commentary));
+        commentariesToShow.push([commentary, commentaryKind]);
       }
     });
+
+    const buttons = [];
+    let wouldAnyButtonBeHidden = false;
+    for (const [commentary, commentaryKind] of commentariesToShow) {
+      const wouldThisButtonBeHidden = (
+        buttons.length > MAX_BUTTONS_TO_SHOW_BEFORE_SHOWING_MORE
+          && commentariesToShow.length > (MAX_BUTTONS_TO_SHOW_BEFORE_SHOWING_MORE + 2)
+          && commentaryKind.className !== "personal-notes");
+      wouldAnyButtonBeHidden = wouldAnyButtonBeHidden || wouldThisButtonBeHidden;
+      if (this.state.showAll || !wouldThisButtonBeHidden) {
+        buttons.push(this.renderButton(commentaryKind, false, commentary));
+      }
+    }
+
+    if (wouldAnyButtonBeHidden) {
+      buttons.push(this.renderButton(this.showMoreCommentaryKind(), false, {comments: []}));
+    }
+
     return this.renderTableRow(`${sectionLabel} show buttons`, buttons, "", ["show-buttons"]);
   }
 
@@ -252,6 +272,12 @@ class CommentarySection extends Component {
     }
 
     const onClick = () => {
+      if (commentaryKind.className === "show-more") {
+        this.setState(previousState => {
+          return {...previousState, showAll: !previousState.showAll};
+        });
+        return;
+      }
       const newValue = toggleShowing(sectionLabel, commentaryKind.className);
       gtag("event", newValue ? "commentary_viewed" : "commentary_hidden", {
         commentary: commentaryKind.englishName,
@@ -321,6 +347,12 @@ class CommentarySection extends Component {
         return {...previousState, buttonToFocus: undefined};
       });
     }
+  }
+
+  showMoreCommentaryKind() {
+    return this.state.showAll
+      ? {englishName: "Hide", hebrewName: "פחות", className: "show-more"}
+      : {englishName: "More", hebrewName: "עוד", className: "show-more"};
   }
 }
 
