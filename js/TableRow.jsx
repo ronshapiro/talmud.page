@@ -213,6 +213,7 @@ function TableRow(props) {
         shouldWrap={shouldWrap}
         />);
   }
+  cells.push(<div className="text-selection-divider" key="text-selection-divider" />);
   if (!isEmptyText(english)) {
     const toggleEnglishExpanded = () => setIsEnglishExpanded(previousState => !previousState);
     cells.push(
