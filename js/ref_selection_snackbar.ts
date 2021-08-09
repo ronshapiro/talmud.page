@@ -238,9 +238,9 @@ const onSelectionChange = () => {
           noteTextArea.attr("dir", noteTextArea.attr("dir") === "ltr" ? "rtl" : "ltr");
           ltrButton.toggleClass("modal-direction-active");
           rtlButton.toggleClass("modal-direction-active");
+          noteTextArea.focus();
         });
 
-        modalContainer.show();
         $("#modal-label").text(`Add a note on ${sefariaRef.ref}`);
         noteTextArea.val("");
         $("#modal-cancel").off("click").on("click", () => modalContainer.hide());
@@ -255,6 +255,8 @@ const onSelectionChange = () => {
           });
           modalContainer.hide();
         });
+        modalContainer.show();
+        noteTextArea.focus();
       },
     });
   } else {
