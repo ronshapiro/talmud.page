@@ -2,6 +2,7 @@ const TITLES_TO_BOLDIFY = new Set([
   "Rashi",
   "Rashbam",
   "Tosafot",
+  "Mishnah Berurah",
 ]);
 
 const SPLITTERS = [

@@ -139,6 +139,13 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     className: "shulchan-arukh",
     cssCategory: "ein-mishpat",
     showTitle: true,
+    allowNestedTraversals: true,
+  },
+  {
+    englishName: "Mishnah Berurah",
+    hebrewName: "משנה ברורה",
+    className: "mishnah-berura",
+    cssCategory: "ein-mishpat",
   },
   {
     englishName: "Mishneh Torah",
