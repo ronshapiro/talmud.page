@@ -27,8 +27,7 @@ const maybeSetInitialScrollPosition = () => {
   const urlParams = new URLSearchParams(window.location.search);
   const refLink = urlParams.get("ref_link");
   if (refLink) {
-    const urlRefLink = refLink.replace(/:/g, ".");
-    const linkedSection = $(`[sefaria-ref="${urlRefLink}"]`);
+    const linkedSection = $(`[sefaria-ref="${refLink}"]`);
     setTimeout(() => {
       setWindowTop(linkedSection);
       urlParams.delete("ref_link");
