@@ -23,6 +23,7 @@ import {CommentaryPrefixStripper} from "./source_formatting/commentary_prefixes"
 import {boldDibureiHamatchil} from "./source_formatting/dibur_hamatchil";
 import {FootnotesExtractor} from "./source_formatting/footnotes";
 import {HebrewSmallToEmphasisTagTranslator} from "./source_formatting/hebrew_small_to_emphasis";
+import {highlightRashiQuotations} from "./source_formatting/rashi_quoting";
 import {HtmlNormalizer} from "./source_formatting/html_normalizer";
 import {ImageNumberingFormatter} from "./source_formatting/image_numbering";
 import {JastrowReformatter} from "./source_formatting/jastrow";
@@ -147,6 +148,7 @@ class Comment {
     }
 
     hebrew = boldDibureiHamatchil(hebrew, englishName);
+    hebrew = highlightRashiQuotations(hebrew);
     for (const processor of (
       [
         HebrewSmallToEmphasisTagTranslator,

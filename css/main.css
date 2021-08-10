@@ -21,6 +21,7 @@
     --highlighted-commentary-indicator-gray: var(--highlight-gray);
     --text-color: var(--dark-background);
     --english-text-color: #555;
+    --rashi-quotation-text-color: #aa3232;
     --snackbar-button-color: var(--mdl-accent-color);
     --snackbar-background-color: var(--text-color);
     --snackbar-text-color: var(--background-color);
@@ -206,6 +207,11 @@ items. */
     font-family: "Fira Light";
     font-size: 14px;
 }
+
+.rashi-quotation {
+    color: var(--rashi-quotation-text-color);
+}
+
 .english {
     color: var(--english-text-color);
 }

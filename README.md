@@ -12,8 +12,11 @@ A simpler way to read the Talmud.
   - English translations are truncated by default so that reading of the source text is not impaired
   - Steinsaltz is a first-class translation and not just a regular commentary. View the Steinsaltz Hebrew translation side by side with the Talmud and/or the Steinsaltz English translation
 - Visual spacing for sugyot (as delineated by Steinsaltz)
-- Expands common abbreviations in Jastrow
+- Ability to take notes and highlight the text. All personalizations are saved in Google Docs for your flexibility.
+- Highlights references to Rashi from other commentaries.
 - Strips printers' formatting that is less relevant for digital contexts, like גמ' and מתני'
+- Expands common abbreviations in Jastrow
+
 
 ## Feedback
 
