@@ -39,8 +39,8 @@ export function boldDibureiHamatchil(
     const firstPeriod = text.indexOf(". ");
     const diburHamatchil = text.substring(0, firstPeriod);
     // Only match a period it's in the beginning of the text. As a simple heuristic, use the first
-    // 15 words of the comment.
-    if (diburHamatchil.split(" ").length <= 15) {
+    // 20 words of the comment.
+    if (diburHamatchil.split(" ").length <= 20) {
       return format(diburHamatchil, " - ", text.substring(firstPeriod + 2));
     }
   }
