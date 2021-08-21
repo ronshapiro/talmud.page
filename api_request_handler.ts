@@ -260,6 +260,12 @@ class InternalCommentary {
     for (const [englishName, nestedCommentary] of Object.entries(this.nestedCommentaries)) {
       const nestedCommentaryValue = nestedCommentary.toJson();
       if (Object.keys(nestedCommentaryValue).length > 0) {
+        if (!result[englishName]) {
+          // This case can arise when a duplicated nested commentary is removed. The parent still
+          // has a reference to the nested commentary, but there is no parent comment to attach it
+          // to.
+          continue;
+        }
         result[englishName].commentary = nestedCommentaryValue;
       }
     }
@@ -491,8 +497,8 @@ export abstract class AbstractApiRequestHandler {
             continue;
           }
           targetRefs.add(targetRef);
+          // do not submit: could these links sometimes be different? Is that the problem?
           linkGraph.links[sourceRef][targetRef] = link;
-
 
           // If after link traversal https://github.com/Sefaria/Sefaria-Project/issues/616 is
           // implemented, with_text can always be set to 0 and then all fetching deferred to
@@ -504,17 +510,23 @@ export abstract class AbstractApiRequestHandler {
             };
           }
 
-          if (remainingDepth !== 0 && commentaryType.allowNestedTraversals) {
+          if (remainingDepth !== 0 && this.shouldTraverseNestedRef(commentaryType, link)) {
             nextRefs.push(targetRef);
           }
         }
 
         const nestedPromises: Promise<unknown>[] = [];
         const merged = mergeRefs(nextRefs).asMap();
+        let last: Promise<unknown> = Promise.resolve(); // do not submit
         for (const [ref, subrefs] of Array.from(merged.entries())) {
+          last = last.then(() => this.linksTraversal(
+            linkGraph, ref, subrefs, remainingDepth - 1, [...refHierarchy, ...subrefs]));
+          nestedPromises.push(last);
+            /* do not submit
           nestedPromises.push(
             this.linksTraversal(
               linkGraph, ref, subrefs, remainingDepth - 1, [...refHierarchy, ...subrefs]));
+              */
         }
 
         Promise.allSettled(nestedPromises).then(() => finish(linkGraph));
@@ -531,6 +543,13 @@ export abstract class AbstractApiRequestHandler {
       });
 
     return promise;
+  }
+
+  private shouldTraverseNestedRef(commentaryType: CommentaryType, link: sefaria.TextLink): boolean {
+    if (commentaryType.allowNestedTraversals) {
+      return true;
+    }
+    return commentaryType.englishName === "Mesorat Hashas" && link.category === "Talmud";
   }
 
   private fetchData(
@@ -793,18 +812,10 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
     topLevelComment: Comment,
     nestedComment: Comment,
   ): RemovalStrategy | undefined {
-    if (topLevelComment.englishName === "Verses") {
-      // Maybe these shouldn't be removed at all, as verses are typically shorter, and
-      // duplicates can be useful
-      return RemovalStrategy.REMOVE_NESTED;
-    } else if (TalmudApiRequestHandler.REMOVE_TOP_LEVEL_KINDS.has(nestedComment.englishName)) {
+    if (TalmudApiRequestHandler.REMOVE_TOP_LEVEL_KINDS.has(nestedComment.englishName)) {
       return RemovalStrategy.REMOVE_TOP_LEVEL;
     }
-
-    this.logger.log(
-      `Duplicated comment`,
-      `Ref: ${topLevelComment.ref}) on ${topLevelComment.sourceRef} and ${nestedComment.ref}`);
-    return undefined;
+    return RemovalStrategy.REMOVE_NESTED;
   }
 
   protected postProcessAllSegments(
