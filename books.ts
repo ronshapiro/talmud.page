@@ -206,6 +206,40 @@ class BibleBook extends Book {
   }
 }
 
+class SiddurAshkenaz extends Book {
+  constructor() {
+    super({
+      canonicalName: "SiddurAshkenaz",
+      hebrewName: "סידור אשכנז",
+      aliases: [],
+      start: "1",
+      end: "100",
+      // do not submit
+      sections: chapterSections(100),
+    });
+  }
+
+  nextPage(page: string): string {
+    return (parseInt(page) + 1).toString();
+  }
+
+  previousPage(page: string): string {
+    return (parseInt(page) - 1).toString();
+  }
+
+  arePagesInReverseOrder(start: string, end: string): boolean {
+    return parseInt(start) > parseInt(end);
+  }
+
+  bookType(): string {
+    return "Siddur";
+  }
+
+  bookNameForRef(): string {
+    return "Siddur Ashkenaz, Weekday, Shacharit,";
+  }
+}
+
 function formatListEnglish(items: string[]): string {
   const notLast = items.slice(0, -1).join(", ");
   return `${notLast} and ${items.slice(-1)}`;
@@ -1049,6 +1083,7 @@ export const books = new BookIndex([
     ],
     end: "36",
   }),
+  new SiddurAshkenaz(),
 ]);
 
 let bibleRefRegex: RegExp;

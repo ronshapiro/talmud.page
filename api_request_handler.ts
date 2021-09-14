@@ -31,6 +31,7 @@ import {parseOtzarLaazeiRashi} from "./source_formatting/otzar_laazei_rashi";
 import {SectionSymbolRemover} from "./source_formatting/section_symbol";
 import {SefariaLinkSanitizer} from "./source_formatting/sefaria_link_sanitizer";
 import {ShulchanArukhHeaderRemover} from "./source_formatting/shulchan_arukh_remove_header";
+import {checkNotUndefined} from "./js/undefined";
 
 export abstract class RequestMaker {
   abstract makeRequest<T>(endpoint: string): Promise<T>;
@@ -416,6 +417,8 @@ export abstract class AbstractApiRequestHandler {
 
     const book = books.byCanonicalName[bookName];
     const ref = `${book.bookNameForRef()} ${book.rewriteSectionRef(page)}`;
+    // do not submit
+    // const ref = "Siddur Ashkenaz, Weekday, Shacharit, Preparatory Prayers, Torah Study";
 
     const textRequest = (
       this.requestMaker.makeRequest<sefaria.TextResponse>(textRequestEndpoint(ref)));
@@ -578,6 +581,12 @@ export abstract class AbstractApiRequestHandler {
   }
 
   private preformatSegments(hebrew: string[], english: string[]): [string[], string[]] {
+    if (typeof hebrew === "string") {
+      hebrew = [hebrew];
+    }
+    if (typeof english === "string") {
+      english = [english];
+    }
     if (Array.isArray(hebrew.concat(english)[0])) {
       const newHebrew: string[][] = [];
       const newEnglish: string[][] = [];
@@ -601,7 +610,7 @@ export abstract class AbstractApiRequestHandler {
       const extra = hebrew.slice(english.length).concat(english.slice(hebrew.length));
       this.logger.error("Unmatched text/translation: ", extra);
       throw new ApiException(
-        "Hebrew length != English length",
+        `Hebrew length (${hebrew.length} != English length (${english.length})`,
         500,
         ApiException.UNEQAUL_HEBREW_ENGLISH_LENGTH);
     }
@@ -646,8 +655,8 @@ export abstract class AbstractApiRequestHandler {
     timer.finish("transformData");
 
     return {
-      id: this.makeId(bookName, page),
-      title: this.makeTitle(bookName, page),
+      id: checkNotUndefined(this.makeId(bookName, page), "makeId"),
+      title: checkNotUndefined(this.makeTitle(bookName, page), "title"),
       sections: segments.map(x => x.toJson()).concat(this.extraSegments(bookName, page)),
     };
   }
@@ -841,20 +850,147 @@ class TanakhApiRequestHandler extends AbstractApiRequestHandler {
   }
 }
 
+const SIDDUR_PAGES = [
+  "Preparatory Prayers, Morning Blessings",
+  "Preparatory Prayers, Akedah",
+  "Preparatory Prayers, Sovereignty of Heaven",
+  "Preparatory Prayers, Korbanot, Korban HaTamid",
+  "Preparatory Prayers, Korbanot, Ketoret",
+  "Preparatory Prayers, Korbanot, Baraita of Rabbi Yishmael",
+
+  "Pesukei Dezimra, Introductory Psalm",
+  // "Pesukei Dezimra, Mourner's Kaddish",
+  "Pesukei Dezimra, Barukh She'amar",
+  "Pesukei Dezimra, Hodu",
+  "Pesukei Dezimra, Mizmor Letoda",
+  "Pesukei Dezimra, Yehi Chevod",
+  "Pesukei Dezimra, Ashrei", // do not submit: Ashrei should be line-by-line, as should the following Psalms
+  "Pesukei Dezimra, Psalm 146",
+  "Pesukei Dezimra, Psalm 147",
+  "Pesukei Dezimra, Psalm 148",
+  "Pesukei Dezimra, Psalm 149",
+  "Pesukei Dezimra, Psalm 150",
+  "Pesukei Dezimra, Closing Verses",
+  "Pesukei Dezimra, Vayevarech David",
+  "Pesukei Dezimra, Ata Hu",
+  "Pesukei Dezimra, Az Yashir",
+  "Pesukei Dezimra, Yishtabach",
+  "Pesukei Dezimra, Psalm 130",
+  // "Pesukei Dezimra, Half Kaddish", // do not submit: include kaddishes?? Are any missing?
+
+  "Blessings of the Shema, Barchu",
+  "Blessings of the Shema, First Blessing before Shema",
+  "Blessings of the Shema, Second Blessing before Shema",
+  "Blessings of the Shema, Shema",
+  "Blessings of the Shema, Blessing after Shema",
+
+  "Amidah, Patriarchs",
+  "Amidah, Divine Might",
+  "Amidah, Holiness of God",
+  "Amidah, Keduasha", // do not submit: typo
+  "Amidah, Knowledge",
+  "Amidah, Repentance",
+  "Amidah, Forgiveness",
+  "Amidah, Redemption",
+  "Amidah, Healing",
+  "Amidah, Prosperity", // do not submit: merge the instructions
+  "Amidah, Gathering the Exiles",
+  "Amidah, Justice",
+  "Amidah, Against Enemies",
+  "Amidah, The Righteous",
+  "Amidah, Rebuilding Jerusalem",
+  "Amidah, Kingdom of David",
+  "Amidah, Response to Prayer",
+  "Amidah, Temple Service",
+  "Amidah, Thanksgiving",
+  "Amidah, Birkat Kohanim",
+  "Amidah, Peace",
+  "Amidah, Concluding Passage", // do not submit: remove יִהְיוּ לְרָצוֹן at start
+
+  "Post Amidah, Vidui and 13 Middot",
+  "Post Amidah, Avinu Malkenu",
+  "Post Amidah, Tachanun, For Monday and Thursday",
+  "Post Amidah, Tachanun, Nefilat Apayim",
+  "Post Amidah, Tachanun, God of Israel",
+  "Post Amidah, Tachanun, Shomer Yisrael",
+
+  // Torah Reading // do not submit
+
+  "Concluding Prayers, Ashrei",
+  "Concluding Prayers, Lamenatze'ach",
+  "Concluding Prayers, Uva Letzion",
+  "Concluding Prayers, Kaddish Shalem",
+  "Concluding Prayers, Alenu",
+  "Concluding Prayers, Mourner's Kaddish",
+  "Concluding Prayers, Song of the Day", // do not submit
+  "Concluding Prayers, Barchi Nafshi",
+  "Concluding Prayers, LeDavid",
+];
+
+const SIDDUR_PAGES_INDEX: Record<string, string> = {};
+for (let i = 0; i < SIDDUR_PAGES.length; i++) {
+  SIDDUR_PAGES_INDEX[SIDDUR_PAGES[i]] = (i + 1).toString();
+}
+
+class SiddurApiRequestHandler extends AbstractApiRequestHandler {
+  // do not submit: need a merger strategy
+  protected recreateWithLogger(logger: Logger): AbstractApiRequestHandler {
+    return new SiddurApiRequestHandler(this.requestMaker, logger);
+  }
+
+  private computePage(page: string): string {
+    this.logger.error("_----------------", page);
+    const pageInt = parseInt(page);
+    if (pageInt + "" !== page) {
+      return page;
+    }
+    return SIDDUR_PAGES[pageInt - 1];
+  }
+
+  handleRequest(bookName: string, page: string, logger?: Logger): Promise<ApiResponse> {
+    return super.handleRequest(
+      "SiddurAshkenaz",
+      this.computePage(page),
+      logger);
+  }
+
+  protected makeId(bookName: string, page: string): string {
+    if (!(page in SIDDUR_PAGES)) {
+      this.logger.error(page);
+    }
+    return SIDDUR_PAGES_INDEX[page];
+  }
+
+  protected makeSubRef(mainRef: string, index: number): string {
+    return `${mainRef} ${index + 1}`;
+  }
+
+  protected makeTitle(bookName: string, page: string): string {
+    // do not submit: a lot of these titles probably shouldn't be here
+    return page.slice(page.lastIndexOf(", ") + 2);
+  }
+}
+
 export class ApiRequestHandler {
   private talmudHandler: TalmudApiRequestHandler;
   private tanakhHandler: TanakhApiRequestHandler;
+  private siddurHandler: SiddurApiRequestHandler;
 
   constructor(requestMaker: RequestMaker) {
     this.talmudHandler = new TalmudApiRequestHandler(requestMaker);
     this.tanakhHandler = new TanakhApiRequestHandler(requestMaker);
+    this.siddurHandler = new SiddurApiRequestHandler(requestMaker);
   }
 
   handleRequest(bookName: string, page: string, logger?: Logger): Promise<ApiResponse> {
-    const handler = (
-      books.byCanonicalName[bookName].isMasechet()
+    const handler = (() => {
+      return this.siddurHandler;
+      /*
+      return books.byCanonicalName[bookName].isMasechet()
         ? this.talmudHandler
-        : this.tanakhHandler);
+        : this.tanakhHandler;
+        */
+    })();
 
     return handler.handleRequest(bookName, page, logger);
   }
