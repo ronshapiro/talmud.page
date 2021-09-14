@@ -36,8 +36,9 @@ class TestPage {
 }
 
 export const testPages = [
-  new TestPage("Berakhot", "2a"),
+  //new TestPage("Berakhot", "2a"),
   new TestPage("Berakhot", "34b"),
+  /*
   new TestPage("Shabbat", "100a"),
   new TestPage("Eruvin", "11a"), // Has images
   new TestPage("Eruvin", "6b"), // Has images, including a comment with multiple images
@@ -57,6 +58,8 @@ export const testPages = [
   new TestPage("Deuteronomy", "34"),
   new TestPage("I Samuel", "18"),
   new TestPage("Obadiah", "1"),
+  do not submit
+  */
 ];
 
 export class RecordingRequestMaker extends RequestMaker {

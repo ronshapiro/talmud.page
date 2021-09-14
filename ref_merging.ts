@@ -36,5 +36,5 @@ export function mergeRefs(refs: string[]): ListMultimap<string, string> {
     }
   }
   unmerged.forEach(x => mergedRefs.put(x, x));
-  return mergedRefs;
+  return mergedRefs.sortedCopy(); // do not submit
 }
