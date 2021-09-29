@@ -1,6 +1,10 @@
 export class ListMultimap<K, V> {
   private map = new Map<K, V[]>();
 
+  keys(): Iterable<K> {
+    return this.map.keys();
+  }
+
   put(key: K, value: V): void {
     this.get(key).push(value);
   }

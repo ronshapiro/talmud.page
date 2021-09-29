@@ -14,6 +14,7 @@ import {promiseParts} from "./js/promises";
 import {Logger, consoleLogger} from "./logger";
 import {mergeRefs} from "./ref_merging";
 import {refSorter} from "./js/google_drive/ref_sorter";
+import {ListMultimap} from "./multimap";
 import {
   firstOrOnlyElement,
   sefariaTextTypeTransformation,
@@ -426,8 +427,10 @@ export abstract class AbstractApiRequestHandler {
     const textRequest = (
       this.requestMaker.makeRequest<sefaria.TextResponse>(textRequestEndpoint(ref)));
     const linksTraversalTimer = this.logger.newTimer();
+    const firstRoundLinks = new ListMultimap<string, string>();
+    firstRoundLinks.put(ref, ref);
     const linkGraphRequest = this.linksTraversal(
-      new LinkGraph(), ref, [ref], this.linkDepth(bookName, page), [ref])
+      new LinkGraph(), firstRoundLinks, this.linkDepth(bookName, page))
       .finally(() => linksTraversalTimer.finish("links traversal"));
     return Promise.all([
       textRequest,
@@ -460,28 +463,38 @@ export abstract class AbstractApiRequestHandler {
 
   private linksTraversal(
     linkGraph: LinkGraph,
-    refToRequest: string,
-    refs: string[],
+    refsInRound: ListMultimap<string, string>,
     remainingDepth: number,
-    refHierarchy: string[],
   ): Promise<LinkGraph> {
-    const [promise, finish, onError] = promiseParts<LinkGraph>();
-    const url = this.linksRequestUrl(refToRequest);
-    this.requestMaker.makeRequest<sefaria.TextLink[] | sefaria.ErrorResponse>(url)
-      .then(linksResponse => {
-        if (isSefariaError(linksResponse)) {
-          throw new Error(linksResponse.error);
+    if (remainingDepth === 0) {
+      return Promise.resolve(linkGraph);
+    }
+
+    const allLinksRequests = Promise.allSettled(
+      Array.from(refsInRound.keys()).map(ref => {
+        const url = this.linksRequestUrl(ref);
+        return this.requestMaker.makeRequest<sefaria.TextLink[] | sefaria.ErrorResponse>(url);
+      }));
+
+    return allLinksRequests.then(allLinksResponses => {
+      const refsInRoundKeys = Array.from(refsInRound.keys());
+      const nextRefs = [];
+      for (let i = 0; i < allLinksResponses.length; i++) {
+        const linksResponse = allLinksResponses[i];
+        if (linksResponse.status === "rejected" || isSefariaError(linksResponse.value)) {
+          // do not submit: test this, and check the reason
+          throw new Error(); // do not submit: we don't want to halt right away!
         }
 
-        const nextRefs: string[] = [];
-        for (const link of linksResponse) {
+        const ref = refsInRoundKeys[i];
+        const mergedRefs = refsInRound.get(ref);
+        for (const link of linksResponse.value) {
           const targetRef = link.ref;
-          if (refHierarchy.includes(targetRef) || refHierarchy.some(x => targetRef.startsWith(x))) {
+          if (targetRef in linkGraph.graph) {
             continue;
           }
-
           let sourceRefIndex = Math.min(
-            ...refs.map(x => link.anchorRefExpanded.indexOf(x)).filter(x => x !== -1));
+            ...mergedRefs.map(x => link.anchorRefExpanded.indexOf(x)).filter(x => x !== -1));
           if (sourceRefIndex === Infinity) {
             sourceRefIndex = 0;
           }
@@ -497,7 +510,6 @@ export abstract class AbstractApiRequestHandler {
             continue;
           }
           targetRefs.add(targetRef);
-          // do not submit: could these links sometimes be different? Is that the problem?
           linkGraph.links[sourceRef][targetRef] = link;
 
           // If after link traversal https://github.com/Sefaria/Sefaria-Project/issues/616 is
@@ -514,35 +526,23 @@ export abstract class AbstractApiRequestHandler {
             nextRefs.push(targetRef);
           }
         }
-
-        const nestedPromises: Promise<unknown>[] = [];
-        const merged = mergeRefs(nextRefs).asMap();
-        let last: Promise<unknown> = Promise.resolve(); // do not submit
-        for (const [ref, subrefs] of Array.from(merged.entries())) {
-          last = last.then(() => this.linksTraversal(
-            linkGraph, ref, subrefs, remainingDepth - 1, [...refHierarchy, ...subrefs]));
-          nestedPromises.push(last);
-            /* do not submit
-          nestedPromises.push(
-            this.linksTraversal(
-              linkGraph, ref, subrefs, remainingDepth - 1, [...refHierarchy, ...subrefs]));
-              */
-        }
-
-        Promise.allSettled(nestedPromises).then(() => finish(linkGraph));
-      })
+      }
+      return this.linksTraversal(linkGraph, mergeRefs(nextRefs), remainingDepth - 1);
+    })
       .catch(error => {
-        this.logger.error(`Links request error: ${url}`, error);
+        this.logger.error("Links request error", error);
         linkGraph.complete = false;
+        /*
+          do not submit
         if (refHierarchy.length === 1) {
           // If there will be zero links, it's probably a good reason to fail the request altogether
           onError(error);
         } else {
           finish(linkGraph);
         }
+        */
+        return Promise.resolve(linkGraph); // do not submit: compiler error ^^
       });
-
-    return promise;
   }
 
   private shouldTraverseNestedRef(commentaryType: CommentaryType, link: sefaria.TextLink): boolean {
