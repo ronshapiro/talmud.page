@@ -10,10 +10,10 @@ import {ALL_COMMENTARIES, CommentaryType} from "./commentaries";
 import {hadranSegments} from "./hadran";
 import {stripHebrewNonletters} from "./hebrew";
 import {fetch} from "./fetch";
-import {promiseParts} from "./js/promises";
 import {Logger, consoleLogger} from "./logger";
 import {mergeRefs} from "./ref_merging";
 import {refSorter} from "./js/google_drive/ref_sorter";
+import {ListMultimap} from "./multimap";
 import {
   firstOrOnlyElement,
   sefariaTextTypeTransformation,
@@ -260,6 +260,12 @@ class InternalCommentary {
     for (const [englishName, nestedCommentary] of Object.entries(this.nestedCommentaries)) {
       const nestedCommentaryValue = nestedCommentary.toJson();
       if (Object.keys(nestedCommentaryValue).length > 0) {
+        if (!result[englishName]) {
+          // This case can arise when a duplicated nested commentary is removed. The parent still
+          // has a reference to the nested commentary, but there is no parent comment to attach it
+          // to.
+          continue;
+        }
         result[englishName].commentary = nestedCommentaryValue;
       }
     }
@@ -420,8 +426,10 @@ export abstract class AbstractApiRequestHandler {
     const textRequest = (
       this.requestMaker.makeRequest<sefaria.TextResponse>(textRequestEndpoint(ref)));
     const linksTraversalTimer = this.logger.newTimer();
+    const firstRoundLinks = new ListMultimap<string, string>();
+    firstRoundLinks.put(ref, ref);
     const linkGraphRequest = this.linksTraversal(
-      new LinkGraph(), ref, [ref], this.linkDepth(bookName, page), [ref])
+      new LinkGraph(), firstRoundLinks, this.linkDepth(bookName, page))
       .finally(() => linksTraversalTimer.finish("links traversal"));
     return Promise.all([
       textRequest,
@@ -454,28 +462,39 @@ export abstract class AbstractApiRequestHandler {
 
   private linksTraversal(
     linkGraph: LinkGraph,
-    refToRequest: string,
-    refs: string[],
+    refsInRound: ListMultimap<string, string>,
     remainingDepth: number,
-    refHierarchy: string[],
   ): Promise<LinkGraph> {
-    const [promise, finish, onError] = promiseParts<LinkGraph>();
-    const url = this.linksRequestUrl(refToRequest);
-    this.requestMaker.makeRequest<sefaria.TextLink[] | sefaria.ErrorResponse>(url)
-      .then(linksResponse => {
-        if (isSefariaError(linksResponse)) {
-          throw new Error(linksResponse.error);
+    if (remainingDepth === 0) {
+      return Promise.resolve(linkGraph);
+    }
+
+    const allLinksRequests = Promise.allSettled(
+      Array.from(refsInRound.keys()).map(ref => {
+        const url = this.linksRequestUrl(ref);
+        return this.requestMaker.makeRequest<sefaria.TextLink[] | sefaria.ErrorResponse>(url);
+      }));
+
+    return allLinksRequests.then(allLinksResponses => {
+      const refsInRoundKeys = Array.from(refsInRound.keys());
+      const nextRefs = [];
+      for (let i = 0; i < allLinksResponses.length; i++) {
+        const linksResponse = allLinksResponses[i];
+        if (linksResponse.status === "rejected" || isSefariaError(linksResponse.value)) {
+          this.logger.error("Links request error", linksResponse);
+          linkGraph.complete = false;
+          continue;
         }
 
-        const nextRefs: string[] = [];
-        for (const link of linksResponse) {
+        const ref = refsInRoundKeys[i];
+        const mergedRefs = refsInRound.get(ref);
+        for (const link of linksResponse.value) {
           const targetRef = link.ref;
-          if (refHierarchy.includes(targetRef) || refHierarchy.some(x => targetRef.startsWith(x))) {
+          if (targetRef in linkGraph.graph) {
             continue;
           }
-
           let sourceRefIndex = Math.min(
-            ...refs.map(x => link.anchorRefExpanded.indexOf(x)).filter(x => x !== -1));
+            ...mergedRefs.map(x => link.anchorRefExpanded.indexOf(x)).filter(x => x !== -1));
           if (sourceRefIndex === Infinity) {
             sourceRefIndex = 0;
           }
@@ -493,7 +512,6 @@ export abstract class AbstractApiRequestHandler {
           targetRefs.add(targetRef);
           linkGraph.links[sourceRef][targetRef] = link;
 
-
           // If after link traversal https://github.com/Sefaria/Sefaria-Project/issues/616 is
           // implemented, with_text can always be set to 0 and then all fetching deferred to
           if (hasText(link)) {
@@ -504,33 +522,20 @@ export abstract class AbstractApiRequestHandler {
             };
           }
 
-          if (remainingDepth !== 0 && commentaryType.allowNestedTraversals) {
+          if (remainingDepth !== 0 && this.shouldTraverseNestedRef(commentaryType, link)) {
             nextRefs.push(targetRef);
           }
         }
+      }
+      return this.linksTraversal(linkGraph, mergeRefs(nextRefs), remainingDepth - 1);
+    });
+  }
 
-        const nestedPromises: Promise<unknown>[] = [];
-        const merged = mergeRefs(nextRefs).asMap();
-        for (const [ref, subrefs] of Array.from(merged.entries())) {
-          nestedPromises.push(
-            this.linksTraversal(
-              linkGraph, ref, subrefs, remainingDepth - 1, [...refHierarchy, ...subrefs]));
-        }
-
-        Promise.allSettled(nestedPromises).then(() => finish(linkGraph));
-      })
-      .catch(error => {
-        this.logger.error(`Links request error: ${url}`, error);
-        linkGraph.complete = false;
-        if (refHierarchy.length === 1) {
-          // If there will be zero links, it's probably a good reason to fail the request altogether
-          onError(error);
-        } else {
-          finish(linkGraph);
-        }
-      });
-
-    return promise;
+  private shouldTraverseNestedRef(commentaryType: CommentaryType, link: sefaria.TextLink): boolean {
+    if (commentaryType.allowNestedTraversals) {
+      return true;
+    }
+    return commentaryType.englishName === "Mesorat Hashas" && link.category === "Talmud";
   }
 
   private fetchData(
@@ -793,18 +798,10 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
     topLevelComment: Comment,
     nestedComment: Comment,
   ): RemovalStrategy | undefined {
-    if (topLevelComment.englishName === "Verses") {
-      // Maybe these shouldn't be removed at all, as verses are typically shorter, and
-      // duplicates can be useful
-      return RemovalStrategy.REMOVE_NESTED;
-    } else if (TalmudApiRequestHandler.REMOVE_TOP_LEVEL_KINDS.has(nestedComment.englishName)) {
+    if (TalmudApiRequestHandler.REMOVE_TOP_LEVEL_KINDS.has(nestedComment.englishName)) {
       return RemovalStrategy.REMOVE_TOP_LEVEL;
     }
-
-    this.logger.log(
-      `Duplicated comment`,
-      `Ref: ${topLevelComment.ref}) on ${topLevelComment.sourceRef} and ${nestedComment.ref}`);
-    return undefined;
+    return RemovalStrategy.REMOVE_NESTED;
   }
 
   protected postProcessAllSegments(
