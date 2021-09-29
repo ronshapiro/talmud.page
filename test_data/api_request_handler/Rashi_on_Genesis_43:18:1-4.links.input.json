@@ -374,7 +374,7 @@
     "sourceHasEn": true,
     "sourceHeRef": "נחום ב׳:ח׳",
     "sourceRef": "Nahum 2:8",
-    "text": "<i></i>And Huzzab is exiled and carried away,  While her handmaidens <i></i>escort [her]  As with the voices of doves,  Beating their breasts.",
+    "text": "<sup>i</sup><i class=\"footnote\">Meaning of Heb. uncertain. Emendation yields “And its mistress is led out and exiled.”</i>And Huzzab is exiled and carried away,<sup>-i</sup><br>While her handmaidens <sup>j</sup><i class=\"footnote\">Emendation yields “moan.”</i>escort [her]<sup>-j</sup><br>As with the voices of doves,<br>Beating their breasts.",
     "type": "",
     "versionTitle": "Tanakh: The Holy Scriptures, published by JPS",
     "versionTitleInHebrew": ""
@@ -411,37 +411,6 @@
     "versionTitleInHebrew": ""
   },
   {
-    "_id": "56d4c475d6e4a96832561456",
-    "anchorRef": "Rashi on Genesis 43:18:4",
-    "anchorRefExpanded": [
-      "Rashi on Genesis 43:18:4"
-    ],
-    "anchorVerse": 4,
-    "category": "Tanakh",
-    "collectiveTitle": {
-      "en": "Ecclesiastes",
-      "he": "קהלת"
-    },
-    "commentaryNum": 12.0006,
-    "compDate": -500,
-    "errorMargin": 400,
-    "he": "עַ֣ד אֲשֶׁ֤ר לֹֽא־<span class=\"mam-kq\"><span class=\"mam-kq-q\">[יֵרָתֵק֙]</span> <span class=\"mam-kq-k\">(ירחק)</span></span> חֶ֣בֶל הַכֶּ֔סֶף וְתָר֖וּץ גֻּלַּ֣ת הַזָּהָ֑ב וְתִשָּׁ֤בֶר כַּד֙ עַל־הַמַּבּ֔וּעַ וְנָרֹ֥ץ הַגַּלְגַּ֖ל אֶל־הַבּֽוֹר׃",
-    "heLicense": "CC-BY-SA",
-    "heTitle": "קהלת",
-    "heVersionTitle": "Miqra according to the Masorah",
-    "heVersionTitleInHebrew": "מקרא על פי המסורה",
-    "index_title": "Ecclesiastes",
-    "license": "Copyright: JPS, 1985",
-    "ref": "Ecclesiastes 12:6",
-    "sourceHasEn": true,
-    "sourceHeRef": "קהלת י״ב:ו׳",
-    "sourceRef": "Ecclesiastes 12:6",
-    "text": "Before the silver cord snaps  And the golden bowl crashes,  The jar is shattered at the spring,  And the jug<i></i> is smashed at the cistern.<i></i>",
-    "type": "",
-    "versionTitle": "Tanakh: The Holy Scriptures, published by JPS",
-    "versionTitleInHebrew": ""
-  },
-  {
     "_id": "57b194f0d6e4a97382dd4543",
     "anchorRef": "Rashi on Genesis 43:18:4",
     "anchorRefExpanded": [
@@ -467,7 +436,7 @@
     "sourceHasEn": true,
     "sourceHeRef": "דברים י״ב:י״ז",
     "sourceRef": "Deuteronomy 12:17",
-    "text": "You may not partake in your settlements of the tithes of your new grain or wine or oil, or of the firstlings of your herds and flocks, or of any of the votive offerings that you vow, or of your freewill offerings, or of your contributions.<i></i>",
+    "text": "You may not partake in your settlements of the tithes of your new grain or wine or oil, or of the firstlings of your herds and flocks, or of any of the votive offerings that you vow, or of your freewill offerings, or of your contributions.<sup>a</sup><i class=\"footnote\">Lit. “the contribution(s) of your hands.”</i>",
     "type": "",
     "versionTitle": "Tanakh: The Holy Scriptures, published by JPS",
     "versionTitleInHebrew": ""
@@ -564,5 +533,36 @@
     "type": "commentary",
     "versionTitle": null,
     "versionTitleInHebrew": null
+  },
+  {
+    "_id": "613bc7a834b5a29d122b75b8",
+    "anchorRef": "Rashi on Genesis 43:18:4",
+    "anchorRefExpanded": [
+      "Rashi on Genesis 43:18:4"
+    ],
+    "anchorVerse": 4,
+    "category": "Tanakh",
+    "collectiveTitle": {
+      "en": "Ecclesiastes",
+      "he": "קהלת"
+    },
+    "commentaryNum": 12.0006,
+    "compDate": -500,
+    "errorMargin": 400,
+    "he": "עַ֣ד אֲשֶׁ֤ר לֹֽא־<span class=\"mam-kq\"><span class=\"mam-kq-q\">[יֵרָתֵק֙]</span> <span class=\"mam-kq-k\">(ירחק)</span></span> חֶ֣בֶל הַכֶּ֔סֶף וְתָר֖וּץ גֻּלַּ֣ת הַזָּהָ֑ב וְתִשָּׁ֤בֶר כַּד֙ עַל־הַמַּבּ֔וּעַ וְנָרֹ֥ץ הַגַּלְגַּ֖ל אֶל־הַבּֽוֹר׃",
+    "heLicense": "CC-BY-SA",
+    "heTitle": "קהלת",
+    "heVersionTitle": "Miqra according to the Masorah",
+    "heVersionTitleInHebrew": "מקרא על פי המסורה",
+    "index_title": "Ecclesiastes",
+    "license": "Copyright: JPS, 1985",
+    "ref": "Ecclesiastes 12:6",
+    "sourceHasEn": false,
+    "sourceHeRef": "קהלת י״ב:ו׳",
+    "sourceRef": "Ecclesiastes 12:6",
+    "text": "Before the silver cord snaps<br>And the golden bowl crashes,<br>The jar is shattered at the spring,<br>And the jug<sup>k</sup><i class=\"footnote\">So in Punic; others “wheel.”</i> is smashed at the cistern.<sup>l</sup><i class=\"footnote\">Poetic figure for the end of life.</i>",
+    "type": "",
+    "versionTitle": "Tanakh: The Holy Scriptures, published by JPS",
+    "versionTitleInHebrew": ""
   }
 ]

@@ -257,6 +257,36 @@
           ]
         },
         "Verses": {
+          "commentary": {
+            "Footnotes": {
+              "comments": [
+                {
+                  "en": "<sup>a</sup> Others “In the beginning God created.”",
+                  "he": "",
+                  "link": "/Genesis/1",
+                  "ref": "Footnote 1 on Genesis 1:1",
+                  "sourceHeRef": "בראשית א:א",
+                  "sourceRef": "Genesis 1:1"
+                },
+                {
+                  "en": "<sup>b</sup> See note at Lev. 7.35.",
+                  "he": "",
+                  "link": "/Numbers/18",
+                  "ref": "Footnote 1 on Numbers 18:8",
+                  "sourceHeRef": "במדבר יח:ח",
+                  "sourceRef": "Numbers 18:8"
+                },
+                {
+                  "en": "<sup>a</sup> See chapters 13 and 15.",
+                  "he": "",
+                  "link": "/Leviticus/22",
+                  "ref": "Footnote 1 on Leviticus 22:4-7",
+                  "sourceHeRef": "ויקרא כב:ד-ז",
+                  "sourceRef": "Leviticus 22:4-7"
+                }
+              ]
+            }
+          },
           "comments": [
             {
               "en": "Impress them upon your children. Recite them when you stay at home and when you are away, when you lie down and when you get up.",
@@ -267,12 +297,58 @@
               "sourceRef": "Deuteronomy 6:7"
             },
             {
-              "en": "When God began to create<i></i> heaven and earth—",
+              "en": "<big><strong>W</strong></big>hen God began to create<sup>a</sup> heaven and earth—",
               "he": "<big>בְּ</big>רֵאשִׁ֖ית בָּרָ֣א אֱלֹהִ֑ים אֵ֥ת הַשָּׁמַ֖יִם וְאֵ֥ת הָאָֽרֶץ׃",
               "link": "/Genesis/1",
               "ref": "Genesis 1:1",
               "sourceHeRef": "בראשית א:א",
               "sourceRef": "Genesis 1:1"
+            },
+            {
+              "en": [
+                "The L<small>ORD</small> said to Moses as follows:",
+                "Speak to the Israelite people and instruct them to make for themselves fringes on the corners of their garments throughout the ages; let them attach a cord of blue to the fringe at each corner.",
+                "That shall be your fringe; look at it and recall all the commandments of the L<small>ORD</small> and observe them, so that you do not follow your heart and eyes in your lustful urge.",
+                "Thus you shall be reminded to observe all My commandments and to be holy to your God.",
+                "I the L<small>ORD</small> am your God, who brought you out of the land of Egypt to be your God: I, the L<small>ORD</small> your God."
+              ],
+              "he": [
+                "וַיֹּ֥אמֶר יְהֹוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃",
+                "דַּבֵּ֞ר אֶל־בְּנֵ֤י יִשְׂרָאֵל֙ וְאָמַרְתָּ֣ אֲלֵהֶ֔ם וְעָשׂ֨וּ לָהֶ֥ם צִיצִ֛ת עַל־כַּנְפֵ֥י בִגְדֵיהֶ֖ם לְדֹרֹתָ֑ם וְנָ֥תְנ֛וּ עַל־צִיצִ֥ת הַכָּנָ֖ף פְּתִ֥יל תְּכֵֽלֶת׃",
+                "וְהָיָ֣ה לָכֶם֮ לְצִיצִת֒ וּרְאִיתֶ֣ם אֹת֗וֹ וּזְכַרְתֶּם֙ אֶת־כׇּל־מִצְוֺ֣ת יְהֹוָ֔ה וַעֲשִׂיתֶ֖ם אֹתָ֑ם וְלֹֽא־תָת֜וּרוּ אַחֲרֵ֤י לְבַבְכֶם֙ וְאַחֲרֵ֣י עֵֽינֵיכֶ֔ם אֲשֶׁר־אַתֶּ֥ם זֹנִ֖ים אַחֲרֵיהֶֽם׃",
+                "לְמַ֣עַן תִּזְכְּר֔וּ וַעֲשִׂיתֶ֖ם אֶת־כׇּל־מִצְוֺתָ֑י וִהְיִיתֶ֥ם קְדֹשִׁ֖ים לֵאלֹֽהֵיכֶֽם׃",
+                "אֲנִ֞י יְהֹוָ֣ה אֱלֹֽהֵיכֶ֗ם אֲשֶׁ֨ר הוֹצֵ֤אתִי אֶתְכֶם֙ מֵאֶ֣רֶץ מִצְרַ֔יִם לִהְי֥וֹת לָכֶ֖ם לֵאלֹהִ֑ים אֲנִ֖י יְהֹוָ֥ה אֱלֹהֵיכֶֽם׃ <span>{פ}</span><br>"
+              ],
+              "link": "/Numbers/15",
+              "ref": "Numbers 15:37-41",
+              "sourceHeRef": "במדבר טו:לז-מא",
+              "sourceRef": "Numbers 15:37-41"
+            },
+            {
+              "en": "The L<small>ORD</small> spoke further to Aaron: I hereby give you charge of My gifts, all the sacred donations of the Israelites; I grant them to you and to your sons as a perquisite,<sup>b</sup> a due for all time.",
+              "he": "וַיְדַבֵּ֣ר יְהֹוָה֮ אֶֽל־אַהֲרֹן֒ וַאֲנִי֙ הִנֵּ֣ה נָתַ֣תִּֽי לְךָ֔ אֶת־מִשְׁמֶ֖רֶת תְּרוּמֹתָ֑י לְכׇל־קׇדְשֵׁ֣י בְנֵֽי־יִ֠שְׂרָאֵ֠ל לְךָ֨ נְתַתִּ֧ים לְמׇשְׁחָ֛ה וּלְבָנֶ֖יךָ לְחׇק־עוֹלָֽם׃",
+              "link": "/Numbers/18",
+              "ref": "Numbers 18:8",
+              "sourceHeRef": "במדבר יח:ח",
+              "sourceRef": "Numbers 18:8"
+            },
+            {
+              "en": [
+                "No man of Aaron’s offspring who has an eruption or a discharge<sup>a</sup> shall eat of the sacred donations until he is clean. If one touches anything made unclean by a corpse, or if a man has an emission of semen,",
+                "or if a man touches any swarming thing by which he is made unclean or any human being by whom he is made unclean—whatever his uncleanness—",
+                "the person who touches such shall be unclean until evening and shall not eat of the sacred donations unless he has washed his body in water.",
+                "As soon as the sun sets, he shall be clean; and afterward he may eat of the sacred donations, for they are his food."
+              ],
+              "he": [
+                "אִ֣ישׁ אִ֞ישׁ מִזֶּ֣רַע אַהֲרֹ֗ן וְה֤וּא צָר֙וּעַ֙ א֣וֹ זָ֔ב בַּקֳּדָשִׁים֙ לֹ֣א יֹאכַ֔ל עַ֖ד אֲשֶׁ֣ר יִטְהָ֑ר וְהַנֹּגֵ֙עַ֙ בְּכׇל־טְמֵא־נֶ֔פֶשׁ א֣וֹ אִ֔ישׁ אֲשֶׁר־תֵּצֵ֥א מִמֶּ֖נּוּ שִׁכְבַת־זָֽרַע׃",
+                "אוֹ־אִישׁ֙ אֲשֶׁ֣ר יִגַּ֔ע בְּכׇל־שֶׁ֖רֶץ אֲשֶׁ֣ר יִטְמָא־ל֑וֹ א֤וֹ בְאָדָם֙ אֲשֶׁ֣ר יִטְמָא־ל֔וֹ לְכֹ֖ל טֻמְאָתֽוֹ׃",
+                "נֶ֚פֶשׁ אֲשֶׁ֣ר תִּגַּע־בּ֔וֹ וְטָמְאָ֖ה עַד־הָעָ֑רֶב וְלֹ֤א יֹאכַל֙ מִן־הַקֳּדָשִׁ֔ים כִּ֛י אִם־רָחַ֥ץ בְּשָׂר֖וֹ בַּמָּֽיִם׃",
+                "וּבָ֥א הַשֶּׁ֖מֶשׁ וְטָהֵ֑ר וְאַחַר֙ יֹאכַ֣ל מִן־הַקֳּדָשִׁ֔ים כִּ֥י לַחְמ֖וֹ הֽוּא׃"
+              ],
+              "link": "/Leviticus/22",
+              "ref": "Leviticus 22:4-7",
+              "sourceHeRef": "ויקרא כב:ד-ז",
+              "sourceRef": "Leviticus 22:4-7"
             }
           ]
         }
@@ -677,7 +753,7 @@
           },
           "comments": [
             {
-              "en": "Command Aaron and his sons thus:  This is the ritual of the burnt offering: The burnt offering itself shall remain where it is burned upon the altar all night until morning, while the fire on the altar is kept going on it.",
+              "en": "Command Aaron and his sons thus:<br>This is the ritual of the burnt offering: The burnt offering itself shall remain where it is burned upon the altar all night until morning, while the fire on the altar is kept going on it.",
               "he": "צַ֤ו אֶֽת־אַהֲרֹן֙ וְאֶת־בָּנָ֣יו לֵאמֹ֔ר זֹ֥את תּוֹרַ֖ת הָעֹלָ֑ה הִ֣וא הָעֹלָ֡ה עַל֩ <span class=\"hebrew-emphasis\">מ</span>וֹקְדָ֨ה<sup>*</sup> עַל־הַמִּזְבֵּ֤חַ כׇּל־הַלַּ֙יְלָה֙ עַד־הַבֹּ֔קֶר וְאֵ֥שׁ הַמִּזְבֵּ֖חַ תּ֥וּקַד בּֽוֹ׃",
               "link": "/Leviticus/6",
               "ref": "Leviticus 6:2",
@@ -691,6 +767,14 @@
               "ref": "Leviticus 7:15",
               "sourceHeRef": "ויקרא ז:טו",
               "sourceRef": "Leviticus 7:15"
+            },
+            {
+              "en": "The fire on the altar shall be kept burning, not to go out: every morning the priest shall feed wood to it, lay out the burnt offering on it, and turn into smoke the fat parts of the offerings of well-being.",
+              "he": "וְהָאֵ֨שׁ עַל־הַמִּזְבֵּ֤חַ תּֽוּקַד־בּוֹ֙ לֹ֣א תִכְבֶּ֔ה וּבִעֵ֨ר עָלֶ֧יהָ הַכֹּהֵ֛ן עֵצִ֖ים בַּבֹּ֣קֶר בַּבֹּ֑קֶר וְעָרַ֤ךְ עָלֶ֙יהָ֙ הָֽעֹלָ֔ה וְהִקְטִ֥יר עָלֶ֖יהָ חֶלְבֵ֥י הַשְּׁלָמִֽים׃",
+              "link": "/Leviticus/6",
+              "ref": "Leviticus 6:5",
+              "sourceHeRef": "ויקרא ו:ה",
+              "sourceRef": "Leviticus 6:5"
             }
           ]
         }
@@ -932,9 +1016,23 @@
           ]
         },
         "Verses": {
+          "commentary": {
+            "Footnotes": {
+              "comments": [
+                {
+                  "en": "<sup>c</sup> Others “one day.”",
+                  "he": "",
+                  "link": "/Genesis/1",
+                  "ref": "Footnote 1 on Genesis 1:5",
+                  "sourceHeRef": "בראשית א:ה",
+                  "sourceRef": "Genesis 1:5"
+                }
+              ]
+            }
+          },
           "comments": [
             {
-              "en": "God called the light Day, and the darkness He called Night. And there was evening and there was morning, a first day.<i></i>",
+              "en": "God called the light Day, and the darkness He called Night. And there was evening and there was morning, a first day.<sup>c</sup>",
               "he": "וַיִּקְרָ֨א אֱלֹהִ֤ים <span class=\"hebrew-emphasis\">׀</span> לָאוֹר֙ י֔וֹם וְלַחֹ֖שֶׁךְ קָ֣רָא לָ֑יְלָה וַֽיְהִי־עֶ֥רֶב וַֽיְהִי־בֹ֖קֶר י֥וֹם אֶחָֽד׃ <span>{פ}</span><br>",
               "link": "/Genesis/1",
               "ref": "Genesis 1:5",
@@ -1128,7 +1226,7 @@
             "Verses": {
               "comments": [
                 {
-                  "en": "I praise You seven times each day  for Your just rules.",
+                  "en": "I praise You seven times each day<br>for Your just rules.",
                   "he": "שֶׁ֣בַע בַּ֭יּוֹם הִלַּלְתִּ֑יךָ עַ֝֗ל מִשְׁפְּטֵ֥י צִדְקֶֽךָ׃",
                   "link": "/Psalms/119",
                   "ref": "Psalms 119:164",
