@@ -10,7 +10,6 @@ import {ALL_COMMENTARIES, CommentaryType} from "./commentaries";
 import {hadranSegments} from "./hadran";
 import {stripHebrewNonletters} from "./hebrew";
 import {fetch} from "./fetch";
-import {promiseParts} from "./js/promises";
 import {Logger, consoleLogger} from "./logger";
 import {mergeRefs} from "./ref_merging";
 import {refSorter} from "./js/google_drive/ref_sorter";
@@ -482,8 +481,9 @@ export abstract class AbstractApiRequestHandler {
       for (let i = 0; i < allLinksResponses.length; i++) {
         const linksResponse = allLinksResponses[i];
         if (linksResponse.status === "rejected" || isSefariaError(linksResponse.value)) {
-          // do not submit: test this, and check the reason
-          throw new Error(); // do not submit: we don't want to halt right away!
+          this.logger.error("Links request error", linksResponse);
+          linkGraph.complete = false;
+          continue;
         }
 
         const ref = refsInRoundKeys[i];
@@ -528,21 +528,7 @@ export abstract class AbstractApiRequestHandler {
         }
       }
       return this.linksTraversal(linkGraph, mergeRefs(nextRefs), remainingDepth - 1);
-    })
-      .catch(error => {
-        this.logger.error("Links request error", error);
-        linkGraph.complete = false;
-        /*
-          do not submit
-        if (refHierarchy.length === 1) {
-          // If there will be zero links, it's probably a good reason to fail the request altogether
-          onError(error);
-        } else {
-          finish(linkGraph);
-        }
-        */
-        return Promise.resolve(linkGraph); // do not submit: compiler error ^^
-      });
+    });
   }
 
   private shouldTraverseNestedRef(commentaryType: CommentaryType, link: sefaria.TextLink): boolean {
