@@ -37,6 +37,8 @@ module.exports = {
     "no-continue": "off",
     "no-console": ["warn", { allow: ["warn", "error"] }],
     "no-else-return": "off",
+    "no-loop-func": "off",
+    "@typescript-eslint/no-loop-func": ["error"],
     "no-plusplus": "off",
     "no-trailing-spaces": "off", // pre-commit will enforce this
     "no-underscore-dangle": "off",
@@ -75,6 +77,7 @@ module.exports = {
     "unicorn/no-array-callback-reference": "off",
     "unicorn/no-array-reduce": "off",
     "unicorn/no-for-loop": "off",
+    "unicorn/no-new-array": "off",
     "unicorn/no-useless-undefined": "off",
     "unicorn/prefer-modern-dom-apis": "off",
     "unicorn/prefer-number-properties": "off",

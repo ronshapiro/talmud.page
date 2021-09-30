@@ -125,6 +125,12 @@ function deepEquals(hebrew: sefaria.TextType, english: sefaria.TextType): boolea
   return hebrew === english;
 }
 
+function identityMultimap<E>(elements: E[]): ListMultimap<E, E> {
+  const multimap = new ListMultimap<E, E>();
+  for (const e of elements) multimap.put(e, e);
+  return multimap;
+}
+
 /** A single comment on a text. */
 class Comment {
   static create(
@@ -422,21 +428,20 @@ export abstract class AbstractApiRequestHandler {
 
     const book = books.byCanonicalName[bookName];
     const ref = `${book.bookNameForRef()} ${book.rewriteSectionRef(page)}`;
+    const underlyingRefs = this.expandRef(ref);
 
-    const textRequest = (
-      this.requestMaker.makeRequest<sefaria.TextResponse>(textRequestEndpoint(ref)));
+    const textRequest = this.makeTextRequest(ref, underlyingRefs);
     const linksTraversalTimer = this.logger.newTimer();
-    const firstRoundLinks = new ListMultimap<string, string>();
-    firstRoundLinks.put(ref, ref);
     const linkGraphRequest = this.linksTraversal(
-      new LinkGraph(), firstRoundLinks, this.linkDepth(bookName, page))
+      new LinkGraph(), identityMultimap(underlyingRefs), this.linkDepth(bookName, page))
       .finally(() => linksTraversalTimer.finish("links traversal"));
     return Promise.all([
       textRequest,
       linkGraphRequest.then(linkGraph => {
         const textRequestRefs = new Set<string>();
         const addTextRequestRef = (requestRef: string) => {
-          if (!(requestRef in linkGraph.textResponses) && !requestRef.startsWith(ref)) {
+          if (!(requestRef in linkGraph.textResponses)
+            && !underlyingRefs.some(underlyingRef => requestRef.startsWith(underlyingRef))) {
             textRequestRefs.add(requestRef);
           }
         };
@@ -454,6 +459,52 @@ export abstract class AbstractApiRequestHandler {
           .then(() => linkGraph);
       }),
     ]).then(args => this.transformData(bookName, page, ...args));
+  }
+
+  private expandRef(ref: string): string[] {
+    return [ref];
+  }
+
+  private makeTextRequest(ref: string, underlyingRefs: string[]): Promise<sefaria.TextResponse> {
+    if (underlyingRefs.length === 1) {
+      return this.requestMaker.makeRequest<sefaria.TextResponse>(textRequestEndpoint(ref));
+    }
+    return this.fetchData(underlyingRefs, ref)
+      .then(fetchedData => {
+        const response: sefaria.TextResponse = {
+          he: [],
+          text: [],
+          ref,
+          refsPerSubText: [],
+        };
+        for (const underlyingRef of underlyingRefs) {
+          const underlyingRefData = fetchedData[underlyingRef];
+          const {he, text} = underlyingRefData;
+          const addSegment = (
+            hebrew: sefaria.TextType,
+            english: sefaria.TextType,
+            segmentRef: string,
+          ) => {
+            (response.he as string[]).push(hebrew as string);
+            (response.text as string[]).push(english as string);
+            response.refsPerSubText!.push(segmentRef);
+          };
+          if (typeof he === "string") {
+            addSegment(he, text, underlyingRefData.ref);
+          } else {
+            const responseForSpanningRef = {
+              he: ([he] as any) as sefaria.TextType,
+              text: ([text] as any) as sefaria.TextType,
+              spanningRefs: new Array(he.length).fill(underlyingRefData.ref),
+              ref: "not-needed",
+            };
+            for (let i = 0; i < he.length; i++) {
+              addSegment(he[i], text[i], this.getSpanningRef(responseForSpanningRef, i));
+            }
+          }
+        }
+        return response;
+      });
   }
 
   private linksRequestUrl(ref: string) {
@@ -629,9 +680,14 @@ export abstract class AbstractApiRequestHandler {
 
     let segments: InternalSegment[] = [];
     for (let i = 0; i < hebrew.length; i++) {
-      const ref = (textResponse.isSpanning
-        ? this.getSpanningRef(textResponse, i)
-        : this.makeSubRef(mainRef, i));
+      const ref = (() => {
+        if (textResponse.refsPerSubText) {
+          return textResponse.refsPerSubText[i];
+        } else if (textResponse.isSpanning) {
+          return this.getSpanningRef(textResponse, i);
+        }
+        return this.makeSubRef(mainRef, i);
+      })();
       const segment = new InternalSegment({
         ref,
         hebrew: this.translateHebrewText(hebrew[i]),
