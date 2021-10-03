@@ -389,5 +389,10 @@ export const books: Record<string, Book> = {
     "end": "120b",
     "isMasechet": true,
     "start": "2a"
-  }
+  },
+  "SiddurAshkenaz": {
+    "end": "not used",
+    "isMasechet": false,
+    "start": "not used",
+  },
 };

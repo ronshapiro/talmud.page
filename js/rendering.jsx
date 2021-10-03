@@ -8,6 +8,7 @@ import {render} from 'react-dom';
 import PropTypes from 'prop-types';
 import _ from "underscore";
 import {addDriveComments} from "./addDriveComments.ts";
+import {amudMetadata} from "./amud.ts";
 import {getCommentaryTypes} from "./commentaryTypes.ts";
 import {CorrectionModal} from "./CorrectionModal.tsx";
 import isEmptyText from "./is_empty_text.ts";
@@ -454,6 +455,8 @@ class Amud extends Component {
     amudData: PropTypes.object,
   };
 
+  static contextType = ConfigurationContext;
+
   headerRef = createRef();
 
   state = {
@@ -477,6 +480,10 @@ class Amud extends Component {
     if (this.state.showing) {
       for (let i = 0; i < amudData.sections.length; i++) {
         const section = amudData.sections[i];
+        if (this.context.ignoredSectionRefs().includes(section.ref)) {
+          continue;
+        }
+
         if (i !== 0 && section.steinsaltz_start_of_sugya) {
           output.push(<br key={`sugya-separator-${i}`} className="sugya-separator" />);
         }
@@ -607,6 +614,10 @@ export class Renderer {
     }
   }
 
+  ignoredSectionRefs() {
+    return [];
+  }
+
   register(divId) {
     const host = document.getElementById(divId);
     const hiddenHost = document.createElement("div");
@@ -621,6 +632,7 @@ export class Renderer {
       wrapTranslations: this.wrapTranslations,
       expandEnglishByDefault: this.expandEnglishByDefault,
       hiddenHost,
+      ignoredSectionRefs: () => this.ignoredSectionRefs(),
     };
 
     const hiddenData = [{
@@ -714,6 +726,11 @@ export class Renderer {
 
   sortedAmudim() {
     throw new Error("Not implemented!");
+  }
+
+  newPageTitle(section) {
+    const metadata = amudMetadata();
+    return `${metadata.masechet} ${section}`;
   }
 }
 

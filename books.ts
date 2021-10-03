@@ -1,4 +1,5 @@
 import {numericLiteralAsInt} from "./hebrew";
+import {SIDDUR_REF_REWRITING} from "./siddur";
 
 const ALL_HEBREW_LETTERS = ((): RegExp => {
   const hundreds = "ק"; // there are no masechtot with more than 200 dapim
@@ -203,6 +204,39 @@ class BibleBook extends Book {
 
   bookType(): string {
     return "Book";
+  }
+}
+
+class SiddurAshkenaz extends Book {
+  constructor() {
+    super({
+      canonicalName: "SiddurAshkenaz",
+      hebrewName: "סידור אשכנז",
+      aliases: [],
+      start: Object.keys(SIDDUR_REF_REWRITING)[0],
+      end: Object.keys(SIDDUR_REF_REWRITING).slice(-1)[0],
+      sections: Object.keys(SIDDUR_REF_REWRITING),
+    });
+  }
+
+  nextPage(page: string): string {
+    return (parseInt(page) + 1).toString();
+  }
+
+  previousPage(page: string): string {
+    return (parseInt(page) - 1).toString();
+  }
+
+  arePagesInReverseOrder(start: string, end: string): boolean {
+    return parseInt(start) > parseInt(end);
+  }
+
+  bookType(): string {
+    return "Siddur";
+  }
+
+  bookNameForRef(): string {
+    return "Siddur Ashkenaz, Weekday, Shacharit,";
   }
 }
 
@@ -1049,6 +1083,7 @@ export const books = new BookIndex([
     ],
     end: "36",
   }),
+  new SiddurAshkenaz(),
 ]);
 
 let bibleRefRegex: RegExp;

@@ -222,6 +222,7 @@ class PagesDontExistError extends Error {
 }
 
 function validatePages(book: Book, ...pages: string[]) {
+  pages = pages.map(page => page.replace(/_/g, " "));
   const nonExistentPages = pages.filter(x => !book.doesSectionExist(x));
   if (nonExistentPages.length > 0) {
     throw new PagesDontExistError(book, nonExistentPages);
@@ -229,6 +230,9 @@ function validatePages(book: Book, ...pages: string[]) {
 }
 
 function template(book: Book): string {
+  if (book === books.byCanonicalName.SiddurAshkenaz) {
+    return "siddur_page.html";
+  }
   return book.isMasechet() ? "talmud_page.html" : "tanakh.html";
 }
 
@@ -375,13 +379,15 @@ if (fs.existsSync("sendgrid_api_key")) {
       translationHighlighted,
       userText,
       user,
+      pathname,
     } = params;
     const maybeExcapeHighlightedSection = (text: string | undefined) => {
       return text && EscapeHtmlHighlightCorrections.process(text);
     };
+    const to = pathname.startsWith("/Siddur") ? "siddur@talmud.page" : "corrections@sefaria.org";
     const rtl = (text: string | undefined) => text && `<div dir="rtl">${text}</div>`;
     sendgrid.send({
-      to: "corrections@sefaria.org",
+      to,
       from: "corrections@talmud.page",
       cc: ["corrections@talmud.page", user],
       subject: "Sefaria Text Correction from talmud.page",

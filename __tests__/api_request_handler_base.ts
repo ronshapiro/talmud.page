@@ -57,6 +57,9 @@ export const testPages = [
   new TestPage("Deuteronomy", "34"),
   new TestPage("I Samuel", "18"),
   new TestPage("Obadiah", "1"),
+
+  new TestPage("SiddurAshkenaz", "Hodu"),
+  new TestPage("SiddurAshkenaz", "Amidah_-_Opening"),
 ];
 
 export class RecordingRequestMaker extends RequestMaker {

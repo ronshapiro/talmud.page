@@ -1,4 +1,5 @@
 import {books} from "./books";
+import {SIDDUR_SECTIONS} from "./siddur";
 
 export const computePreviousAmud = (current: string): string => {
   const number = parseInt(current);
@@ -65,6 +66,13 @@ const _amudMetadata = (pathname: string): AmudMetadata => {
       }
       if (!this.amudEnd) {
         return [this.amudStart];
+      }
+
+      if (book === "SiddurAshkenaz") {
+        const siddurSectionsUrl = SIDDUR_SECTIONS.map(x => x.replace(/ /g, "_"));
+        return siddurSectionsUrl.slice(
+          siddurSectionsUrl.indexOf(this.amudStart),
+          siddurSectionsUrl.indexOf(this.amudEnd) + 1);
       }
 
       const start = parseInt(this.amudStart);

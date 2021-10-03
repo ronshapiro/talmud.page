@@ -83,15 +83,14 @@ export class Runner {
 
   requestSection(section, options) {
     options = options || {};
-    const metadata = amudMetadata();
     this.renderer.setAmud({
       id: section,
-      title: `${metadata.masechet} ${section}`,
+      title: this.renderer.newPageTitle(section),
       loading: true,
       sections: [],
     });
     $.ajax({
-      url: `${window.location.origin}/api/${metadata.masechet}/${section}`,
+      url: `${window.location.origin}/api/${amudMetadata().masechet}/${section}`,
       type: "GET",
       success: (results) => {
         this.renderer.setAmud(results);

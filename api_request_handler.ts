@@ -8,7 +8,7 @@ import {
 import {books, isLikelyBibleRef, QueryResult} from "./books";
 import {ALL_COMMENTARIES, CommentaryType} from "./commentaries";
 import {hadranSegments} from "./hadran";
-import {stripHebrewNonletters} from "./hebrew";
+import {stripHebrewNonletters, stripHebrewNonlettersOrVowels} from "./hebrew";
 import {fetch} from "./fetch";
 import {Logger, consoleLogger} from "./logger";
 import {mergeRefs} from "./ref_merging";
@@ -18,6 +18,16 @@ import {
   firstOrOnlyElement,
   sefariaTextTypeTransformation,
 } from "./sefariaTextType";
+import {
+  SEGMENT_SEPERATOR_REF,
+  SIDDUR_IGNORED_FOOTNOTES,
+  SIDDUR_IGNORED_REFS,
+  SIDDUR_IGNORED_SOURCE_REFS,
+  SIDDUR_IGNORED_TARGET_REFS,
+  SIDDUR_MERGE_PAIRS,
+  SIDDUR_REF_REWRITING,
+  SYNTHETIC_REFS,
+} from "./siddur";
 import {CommentaryParenthesesTransformer} from "./source_formatting/commentary_parentheses";
 import {CommentaryPrefixStripper} from "./source_formatting/commentary_prefixes";
 import {boldDibureiHamatchil} from "./source_formatting/dibur_hamatchil";
@@ -31,6 +41,8 @@ import {parseOtzarLaazeiRashi} from "./source_formatting/otzar_laazei_rashi";
 import {SectionSymbolRemover} from "./source_formatting/section_symbol";
 import {SefariaLinkSanitizer} from "./source_formatting/sefaria_link_sanitizer";
 import {ShulchanArukhHeaderRemover} from "./source_formatting/shulchan_arukh_remove_header";
+import {checkNotUndefined} from "./js/undefined";
+import {getLast} from "./util/last";
 
 export abstract class RequestMaker {
   abstract makeRequest<T>(endpoint: string): Promise<T>;
@@ -225,6 +237,14 @@ class Comment {
     }
     return result;
   }
+
+  static fakeTextLink = {
+    sourceRef: "fake",
+    sourceHeRef: "fake",
+    ref: "fake",
+    anchorRef: "fake",
+    anchorRefExpanded: ["fake"],
+  };
 }
 
 /** Maintains the state of all comments on a particular segment or (nested) commentary. */
@@ -278,6 +298,19 @@ class InternalCommentary {
 
     return result;
   }
+
+  addAll(other: InternalCommentary) {
+    for (const ref of Array.from(other.refs)) {
+      this.refs.add(ref);
+    }
+    this.comments.push(...other.comments);
+    for (const [key, nested] of Object.entries(other.nestedCommentaries)) {
+      if (!(key in this.nestedCommentaries)) {
+        this.nestedCommentaries[key] = new InternalCommentary();
+      }
+      this.nestedCommentaries[key].addAll(nested);
+    }
+  }
 }
 
 interface InternalSegmentConstructorParams {
@@ -299,6 +332,41 @@ export class InternalSegment {
     this.hebrew = hebrew;
     this.english = english;
     this.ref = ref;
+  }
+
+  static merge(segments: InternalSegment[]): InternalSegment {
+    const hebrews = [];
+    const englishes = [];
+    const refs = [];
+    for (const segment of segments) {
+      if (typeof segment.hebrew !== "string") {
+        throw new TypeError("segment.hebrew is not a string! " + segment.hebrew);
+      } else if (typeof segment.english !== "string") {
+        throw new TypeError("segment.english is not a string! " + segment.english);
+      }
+      hebrews.push(segment.hebrew);
+      englishes.push(segment.english);
+      refs.push(segment.ref);
+    }
+    const mergedRefs = Array.from(mergeRefs(refs).keys());
+    if (mergedRefs.length !== 1) {
+      throw new Error(mergedRefs.join(" :: "));
+    }
+    const newSegment = new InternalSegment({
+      hebrew: hebrews.join(" "),
+      english: englishes.join(" "),
+      ref: mergedRefs[0],
+    });
+    for (const segment of segments) {
+      newSegment.commentary.addAll(segment.commentary);
+      if (segment.hadran) {
+        newSegment.hadran = true;
+      }
+      if (segment.steinsaltz_start_of_sugya) {
+        newSegment.steinsaltz_start_of_sugya = true;
+      }
+    }
+    return newSegment;
   }
 
   toJson(): Section {
@@ -367,10 +435,14 @@ function hasText(textLink: sefaria.TextLink): textLink is sefaria.TextLinkWithTe
 }
 
 export abstract class AbstractApiRequestHandler {
+  private applicableCommentaries: CommentaryType[];
+
   constructor(
     protected requestMaker: RequestMaker,
     protected readonly logger: Logger = consoleLogger,
-  ) {}
+  ) {
+    this.applicableCommentaries = this.getApplicableCommentaries();
+  }
 
   protected abstract recreateWithLogger(logger: Logger): AbstractApiRequestHandler;
 
@@ -408,6 +480,19 @@ export abstract class AbstractApiRequestHandler {
     segments: InternalSegment[], bookName: string, page: string,
   ): InternalSegment[] {
     return segments;
+  }
+
+  protected injectSegmentSeperators(segments: InternalSegment[]): InternalSegment[] {
+    const newSegments = [];
+    for (let i = 0; i < segments.length; i++) {
+      const segment = segments[i];
+      if (segment.ref === SEGMENT_SEPERATOR_REF) {
+        segments[i + 1].steinsaltz_start_of_sugya = true;
+      } else {
+        newSegments.push(segment);
+      }
+    }
+    return newSegments;
   }
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -461,15 +546,15 @@ export abstract class AbstractApiRequestHandler {
     ]).then(args => this.transformData(bookName, page, ...args));
   }
 
-  private expandRef(ref: string): string[] {
+  protected expandRef(ref: string): string[] {
     return [ref];
   }
 
   private makeTextRequest(ref: string, underlyingRefs: string[]): Promise<sefaria.TextResponse> {
-    if (underlyingRefs.length === 1) {
+    if (underlyingRefs.length === 1 && ref === underlyingRefs[0]) {
       return this.requestMaker.makeRequest<sefaria.TextResponse>(textRequestEndpoint(ref));
     }
-    return this.fetchData(underlyingRefs, ref)
+    return this.fetchData(underlyingRefs, ref + "_bulk_root")
       .then(fetchedData => {
         const response: sefaria.TextResponse = {
           he: [],
@@ -490,16 +575,17 @@ export abstract class AbstractApiRequestHandler {
             response.refsPerSubText!.push(segmentRef);
           };
           if (typeof he === "string") {
-            addSegment(he, text, underlyingRefData.ref);
+            addSegment(he, text, underlyingRef);
           } else {
-            const responseForSpanningRef = {
-              he: ([he] as any) as sefaria.TextType,
-              text: ([text] as any) as sefaria.TextType,
-              spanningRefs: new Array(he.length).fill(underlyingRefData.ref),
-              ref: "not-needed",
-            };
+            let baseRef = underlyingRef;
+            let first = 1;
+            if (getLast(underlyingRef.split(":")).includes("-")) {
+              first = parseInt(getLast(underlyingRef.split(":")).split("-")[0]);
+              baseRef = underlyingRef.substring(0, underlyingRef.lastIndexOf(":"));
+            }
             for (let i = 0; i < he.length; i++) {
-              addSegment(he[i], text[i], this.getSpanningRef(responseForSpanningRef, i));
+              // The -1 here is a hack, since makeSubRef typically expects zero-indexed offsets.
+              addSegment(he[i], text[i], this.makeSubRef(baseRef, first + i - 1));
             }
           }
         }
@@ -522,6 +608,9 @@ export abstract class AbstractApiRequestHandler {
 
     const allLinksRequests = Promise.allSettled(
       Array.from(refsInRound.keys()).map(ref => {
+        if (SYNTHETIC_REFS.has(ref)) {
+          return Promise.resolve<sefaria.TextLink[]>([]);
+        }
         const url = this.linksRequestUrl(ref);
         return this.requestMaker.makeRequest<sefaria.TextLink[] | sefaria.ErrorResponse>(url);
       }));
@@ -541,6 +630,9 @@ export abstract class AbstractApiRequestHandler {
         const mergedRefs = refsInRound.get(ref);
         for (const link of linksResponse.value) {
           const targetRef = link.ref;
+          if (this.ignoreLink(mergedRefs, targetRef)) {
+            continue;
+          }
           if (targetRef in linkGraph.graph) {
             continue;
           }
@@ -582,6 +674,11 @@ export abstract class AbstractApiRequestHandler {
     });
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  protected ignoreLink(mergedSourceRefs: string[], targetRef: string): boolean {
+    return false;
+  }
+
   private shouldTraverseNestedRef(commentaryType: CommentaryType, link: sefaria.TextLink): boolean {
     if (commentaryType.allowNestedTraversals) {
       return true;
@@ -591,7 +688,7 @@ export abstract class AbstractApiRequestHandler {
 
   private fetchData(
     refs: string[],
-    requestedRef: string,
+    requestId: string,
   ): Promise<Record<string, sefaria.TextResponse>> {
     if (refs.length === 0) {
       return Promise.resolve({});
@@ -610,11 +707,19 @@ export abstract class AbstractApiRequestHandler {
     // maintaining a stable shard size.
     refs = Array.from(refs);
     refs.sort(refSorter);
+    for (const syntheticRef of Array.from(SYNTHETIC_REFS)) {
+      if (refs.includes(syntheticRef)) {
+        fetched[syntheticRef] = {ref: syntheticRef, he: "", text: ""};
+        const [first, last] = [
+          refs.indexOf(syntheticRef), refs.lastIndexOf(syntheticRef)];
+        refs.splice(first, last - first + 1);
+      }
+    }
 
     for (let i = 0; i < refs.length; i += shardSize) {
       const delimitedRefs = refs.slice(i, i + shardSize).join("|");
       // The tp parameter is helpful for debugging and maintaining stability of recorded test data
-      const url = `/bulktext/${delimitedRefs}?useTextFamily=1&tp=${requestedRef}@${i}`;
+      const url = `/bulktext/${delimitedRefs}?useTextFamily=1&tp=${requestId}@${i}`;
       nestedPromises.push(
         this.requestMaker.makeRequest<sefaria.BulkTextResponse>(url).then(allTexts => {
           for (const ref of Object.keys(allTexts)) {
@@ -634,6 +739,12 @@ export abstract class AbstractApiRequestHandler {
   }
 
   private preformatSegments(hebrew: string[], english: string[]): [string[], string[]] {
+    if (typeof hebrew === "string") {
+      hebrew = [hebrew];
+    }
+    if (typeof english === "string") {
+      english = [english];
+    }
     if (Array.isArray(hebrew.concat(english)[0])) {
       const newHebrew: string[][] = [];
       const newEnglish: string[][] = [];
@@ -657,7 +768,7 @@ export abstract class AbstractApiRequestHandler {
       const extra = hebrew.slice(english.length).concat(english.slice(hebrew.length));
       this.logger.error("Unmatched text/translation: ", extra);
       throw new ApiException(
-        "Hebrew length != English length",
+        `Hebrew length (${hebrew.length} != English length (${english.length})`,
         500,
         ApiException.UNEQAUL_HEBREW_ENGLISH_LENGTH);
     }
@@ -688,15 +799,22 @@ export abstract class AbstractApiRequestHandler {
         }
         return this.makeSubRef(mainRef, i);
       })();
+      const footnotesResult = FootnotesExtractor.extract(
+        {he: hebrew[i], text: english[i], ref});
       const segment = new InternalSegment({
         ref,
-        hebrew: this.translateHebrewText(hebrew[i]),
-        english: this.translateEnglishText(english[i]),
+        hebrew: this.translateHebrewText(footnotesResult.comment.he),
+        english: this.translateEnglishText(footnotesResult.comment.text),
       });
       this.addComments(ref, segment.commentary, linkGraph);
+      for (const footnote of footnotesResult.footnotes) {
+        segment.commentary.addComment(
+          Comment.create(Comment.fakeTextLink, footnote, "Footnotes", this.logger));
+      }
       segments.push(segment);
     }
 
+    segments = this.injectSegmentSeperators(segments);
     segments = segments.map(x => this.postProcessSegment(x));
     segments = this.postProcessAllSegments(segments, bookName, page);
 
@@ -707,8 +825,8 @@ export abstract class AbstractApiRequestHandler {
     timer.finish("transformData");
 
     return {
-      id: this.makeId(bookName, page),
-      title: this.makeTitle(bookName, page),
+      id: checkNotUndefined(this.makeId(bookName, page), "makeId"),
+      title: checkNotUndefined(this.makeTitle(bookName, page), "title"),
       sections: segments.map(x => x.toJson()).concat(this.extraSegments(bookName, page)),
     };
   }
@@ -746,13 +864,28 @@ export abstract class AbstractApiRequestHandler {
     }
   }
 
+  private getApplicableCommentaries(): CommentaryType[] {
+    const applicableCommentaryNames = new Set(this.applicableCommentaryNames());
+    if (applicableCommentaryNames.size === 0) {
+      return ALL_COMMENTARIES;
+    }
+    for (const defaultName of ["Translation", "Footnotes"]) {
+      applicableCommentaryNames.add(defaultName);
+    }
+    return ALL_COMMENTARIES.filter(x => applicableCommentaryNames.has(x.englishName));
+  }
+
+  protected applicableCommentaryNames(): string[] {
+    return [];
+  }
+
   private matchingCommentaryType(link: sefaria.TextLink): CommentaryType | undefined {
     if (!link.collectiveTitle) {
       this.logger.error("No comment title for", link);
       return undefined;
     }
     const name = link.collectiveTitle.en;
-    for (const kind of ALL_COMMENTARIES) {
+    for (const kind of this.applicableCommentaries) {
       if (name === kind.englishName
         || hasMatchingProperty(link, kind, "category")
         || hasMatchingProperty(link, kind, "type")
@@ -883,7 +1016,6 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
   }
 }
 
-
 class TanakhApiRequestHandler extends AbstractApiRequestHandler {
   protected recreateWithLogger(logger: Logger): AbstractApiRequestHandler {
     return new TanakhApiRequestHandler(this.requestMaker, logger);
@@ -894,20 +1026,152 @@ class TanakhApiRequestHandler extends AbstractApiRequestHandler {
   }
 }
 
+class SiddurApiRequestHandler extends AbstractApiRequestHandler {
+  protected recreateWithLogger(logger: Logger): AbstractApiRequestHandler {
+    return new SiddurApiRequestHandler(this.requestMaker, logger);
+  }
+
+  handleRequest(bookName: string, page: string, logger?: Logger): Promise<ApiResponse> {
+    return super.handleRequest(bookName, page.replace(/_/g, " "), logger);
+  }
+
+  protected expandRef(ref: string): string[] {
+    const book = books.byCanonicalName.SiddurAshkenaz;
+    const suffix = ref.replace(book.bookNameForRef() + " ", "");
+    if (suffix in SIDDUR_REF_REWRITING) {
+      return SIDDUR_REF_REWRITING[suffix];
+    }
+    return super.expandRef(ref);
+  }
+
+  protected makeId(bookName: string, page: string): string {
+    return page.replace(/ /g, "_");
+  }
+
+  protected makeSubRef(mainRef: string, index: number): string {
+    return (mainRef.includes("Ashkenaz")
+      ? `${mainRef} ${index + 1}`
+      : `${mainRef}:${index + 1}`);
+  }
+
+  protected makeTitle(bookName: string, page: string): string {
+    return page;
+  }
+
+  stripWeirdHebrew(hebrew: string): string {
+    return stripHebrewNonlettersOrVowels(
+      hebrew
+        .replace(/\s?<span>{פ}<\/span>(<br>)?/g, "")
+        .replace(/<span>{ס}<\/span>\s+/g, ""));
+  }
+
+  protected translateHebrewText(text: sefaria.TextType): sefaria.TextType {
+    return sefariaTextTypeTransformation(this.stripWeirdHebrew)(super.translateHebrewText(text));
+  }
+
+  protected applicableCommentaryNames(): string[] {
+    return [
+      "Rashi",
+      "Shulchan Arukh",
+      "Verses",
+    ];
+  }
+
+  protected postProcessSegment(segment: InternalSegment): InternalSegment {
+    if (!(segment.ref in SIDDUR_IGNORED_FOOTNOTES)) {
+      return segment;
+    }
+    const footnotesValue = SIDDUR_IGNORED_FOOTNOTES[segment.ref];
+    const footnotes = Array.isArray(footnotesValue) ? footnotesValue : [footnotesValue];
+    for (const footnote of footnotes) {
+      const footnoteTag = `<sup>${footnote}</sup>`;
+      segment.english = (segment.english as string).replace(footnoteTag, "");
+      segment.english = (segment.english as string).replace(`<sup>-${footnote}</sup>`, "");
+      for (const comment of segment.commentary.comments) {
+        if (typeof comment.hebrew === "string" && typeof comment.english === "string"
+          && (comment.hebrew.startsWith(footnoteTag) || comment.english.startsWith(footnoteTag))) {
+          segment.commentary.removeComment(comment);
+        }
+      }
+    }
+    return segment;
+  }
+
+  protected postProcessAllSegments(
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    segments: InternalSegment[], bookName: string, page: string,
+  ): InternalSegment[] {
+    const newSegments = [];
+    for (let i = 0; i < segments.length; i++) {
+      if (SIDDUR_IGNORED_REFS.has(segments[i].ref)) {
+        continue;
+      }
+      if (segments[i].ref in SIDDUR_MERGE_PAIRS) {
+        const mergedSegments = [];
+        const endRef = SIDDUR_MERGE_PAIRS[segments[i].ref];
+        while (true) { // eslint-disable-line no-constant-condition
+          mergedSegments.push(segments[i]);
+          if (segments[i].ref === endRef) {
+            break;
+          }
+          i++;
+        }
+        newSegments.push(InternalSegment.merge(mergedSegments));
+      } else {
+        newSegments.push(segments[i]);
+      }
+    }
+    return newSegments;
+  }
+
+  protected ignoreLink(mergedSourceRefs: string[], targetRef: string): boolean {
+    if (SIDDUR_IGNORED_TARGET_REFS.has(targetRef)) {
+      return true;
+    }
+
+    if (mergedSourceRefs.includes(
+      "Siddur Ashkenaz, Weekday, Shacharit, Pesukei Dezimra, Introductory Psalm 1")) {
+      return targetRef.startsWith("Psalms 30:");
+    } else if (mergedSourceRefs.includes(
+      "Siddur Ashkenaz, Weekday, Shacharit, Pesukei Dezimra, Barukh She'amar 1")) {
+      return targetRef === "Shulchan Arukh, Orach Chayim 51:1";
+    } else if (targetRef.startsWith("Psalms 105:")
+      && mergedSourceRefs.includes("I Chronicles 16:8-26")) {
+      return true;
+    } else if (targetRef.startsWith("Psalms 100")
+      && mergedSourceRefs.filter(x => x.includes("Mizmor Letoda")).length > 0) {
+      return true;
+    }
+
+    if (mergedSourceRefs
+      .filter(sourceRef => SIDDUR_IGNORED_SOURCE_REFS.has(sourceRef))
+      .length > 0) {
+      return true;
+    }
+    return super.ignoreLink(mergedSourceRefs, targetRef);
+  }
+}
+
 export class ApiRequestHandler {
   private talmudHandler: TalmudApiRequestHandler;
   private tanakhHandler: TanakhApiRequestHandler;
+  private siddurHandler: SiddurApiRequestHandler;
 
   constructor(requestMaker: RequestMaker) {
     this.talmudHandler = new TalmudApiRequestHandler(requestMaker);
     this.tanakhHandler = new TanakhApiRequestHandler(requestMaker);
+    this.siddurHandler = new SiddurApiRequestHandler(requestMaker);
   }
 
   handleRequest(bookName: string, page: string, logger?: Logger): Promise<ApiResponse> {
-    const handler = (
-      books.byCanonicalName[bookName].isMasechet()
+    const handler = (() => {
+      if (bookName === "SiddurAshkenaz") {
+        return this.siddurHandler;
+      }
+      return books.byCanonicalName[bookName].isMasechet()
         ? this.talmudHandler
-        : this.tanakhHandler);
+        : this.tanakhHandler;
+    })();
 
     return handler.handleRequest(bookName, page, logger);
   }

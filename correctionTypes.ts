@@ -5,6 +5,7 @@ export interface CorrectionUiInfo {
   hebrewHighlighted: string | undefined;
   translation: string | undefined;
   translationHighlighted: string | undefined;
+  pathname: string,
 }
 
 export interface CorrectionPostData extends CorrectionUiInfo {

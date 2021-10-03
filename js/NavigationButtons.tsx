@@ -123,7 +123,7 @@ export const PreviousButton = (props: ButtonProps): React.ReactElement | null =>
   return (
     <NavigationButtonRow
       isNext={false}
-      text={`Load ${navigationExtension.previous()}`}
+      text={`Load ${navigationExtension.previous().replace(/_/g, " ")}`}
       doLoad={() => navigationExtension.loadPrevious()}
       defaultEditText={() => navigationExtension.defaultEditText()}
     />
@@ -141,7 +141,7 @@ export const NextButton = (props: ButtonProps): React.ReactElement | null => {
   return (
     <NavigationButtonRow
       isNext
-      text={`Load ${navigationExtension.next()}`}
+      text={`Load ${navigationExtension.next().replace(/_/g, " ")}`}
       doLoad={() => navigationExtension.loadNext()}
       defaultEditText={() => navigationExtension.defaultEditText()}
     />

@@ -191,6 +191,7 @@ const onSelectionChange = () => {
           hebrewHighlighted: maybeHighlight(hebrew, false),
           translation,
           translationHighlighted: maybeHighlight(translation, true),
+          pathname: window.location.pathname,
         });
       },
     });
@@ -281,7 +282,9 @@ const onSelectionChange = () => {
     });
   }
 
-  snackbars.textSelection.show(ref, buttons);
+  const hideRef = (
+    window.location.hostname !== "localhost" && window.location.pathname.startsWith("/Siddur"));
+  snackbars.textSelection.show(hideRef ? "" : ref, buttons);
 };
 
 module.exports = {

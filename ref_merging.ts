@@ -1,11 +1,15 @@
 import {refSorter} from "./js/google_drive/ref_sorter";
 import {ListMultimap} from "./multimap";
 
-function splitOnRefSuffix(ref: string): string[] {
+function refSuffixIndex(ref: string): number {
   if (ref.includes("-")) {
-    return [ref];
+    return -1;
   }
-  const splitPoint = ref.lastIndexOf(":");
+  return Math.max(ref.lastIndexOf(":"), ref.lastIndexOf(" "));
+}
+
+function splitOnRefSuffix(ref: string): string[] {
+  const splitPoint = refSuffixIndex(ref);
   if (splitPoint === -1) {
     return [ref];
   }
@@ -32,7 +36,8 @@ export function mergeRefs(refs: string[]): ListMultimap<string, string> {
       mergeableValues.sort(refSorter);
       const [prefix, firstSuffix] = splitOnRefSuffix(mergeableValues[0]);
       const [, lastSuffix] = splitOnRefSuffix(mergeableValues.slice(-1)[0]);
-      mergedRefs.putAll(`${prefix}:${firstSuffix}-${lastSuffix}`, mergeableValues);
+      const splitChar = mergeableValues[0].charAt(refSuffixIndex(mergeableValues[0]));
+      mergedRefs.putAll(`${prefix}${splitChar}${firstSuffix}-${lastSuffix}`, mergeableValues);
     }
   }
   unmerged.forEach(x => mergedRefs.put(x, x));
