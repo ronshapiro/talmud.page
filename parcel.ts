@@ -44,7 +44,8 @@ const bundler = new Bundler(entryFiles, {
   // @ts-ignore
   autoInstall: false,
   contentHash: isProd,
-  scopeHoist: isProd,
+  // TODO: examine how to re-enable this safely.
+  scopeHoist: false,
 });
 
 bundler.on("bundled", () => {
