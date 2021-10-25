@@ -684,7 +684,7 @@ export const books = new BookIndex([
     canonicalName: "Rosh Hashanah",
     hebrewName: "ראש השנה",
     vocalizedHebrewName: "רֹאשׁ הַשָּׁנָה",
-    aliases: ["Rosh Hashana", "Rosh Hoshona", "Rosh Hoshonah"],
+    aliases: ["Rosh Hashana", "Rosh Hoshona", "Rosh Hoshonah", "RH"],
     end: "35a",
   }),
   new Masechet({

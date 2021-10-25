@@ -247,7 +247,7 @@ app.get("/:title/:section", (req, res) => {
     return res.redirectWithQueryParameters(fullDafUrl(book, section, section));
   }
   validatePages(book, section);
-  return res.render(template(book), {title: `${title} ${section}`});
+  return res.render(template(book), {title: `${title} ${section}`, bookTitle: book.canonicalName});
 });
 
 app.get("/:title/:start/to/:end", (req, res) => {
@@ -271,7 +271,7 @@ app.get("/:title/:start/to/:end", (req, res) => {
     return res.redirectWithQueryParameters(`/${title}/${end}/to/${start}`);
   }
 
-  return res.render(template(book), {title: `${title} ${start} - ${end}`});
+  return res.render(template(book), {title: `${title} ${start} - ${end}`, bookTitle: book.canonicalName});
 });
 
 const apiResponseCache = new WeightBasedLruCache<ApiResponse>(

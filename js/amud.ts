@@ -11,7 +11,6 @@ export const computeNextAmud = (current: string): string => {
   return current.endsWith("a") ? number + "b" : (number + 1) + "a";
 };
 
-const SPACE_REGEX = /(%20|_)/g;
 const AMUD_REGEX = /^\d{1,3}[ab]$/;
 
 interface AmudMetadata {
@@ -32,7 +31,7 @@ const _amudMetadata = (pathname: string): AmudMetadata => {
   const pathParts = pathname.split("/");
   pathParts.shift();
 
-  const book = pathParts[0].replace(SPACE_REGEX, " ");
+  const book = document.getElementById("book-title")?.content;
   if (books[book].isMasechet) {
     return {
       masechet: book,

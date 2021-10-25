@@ -460,7 +460,7 @@ export abstract class AbstractApiRequestHandler {
   }
 
   protected makeTitle(bookName: string, page: string): string {
-    return `${bookName} ${page}`;
+    return `${books.byCanonicalName[bookName].canonicalName} ${page}`;
   }
 
   protected translateHebrewText(text: sefaria.TextType): sefaria.TextType {
