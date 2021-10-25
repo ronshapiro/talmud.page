@@ -6,7 +6,10 @@ $.ajax({
   success: (results: any): void => {
     for (const result of results.calendar_items) {
       if (result.title.en === "Daf Yomi") {
-        const [masechet, daf] = result.displayValue.en.split(" ");
+        const ref = result.displayValue.en;
+        const lastSpace = ref.lastIndexOf(" ");
+        const masechet = ref.slice(0, lastSpace);
+        const daf = ref.slice(lastSpace + 1);
         window.location.replace(`${window.location.origin}/${masechet}/${daf}`);
       }
     }
