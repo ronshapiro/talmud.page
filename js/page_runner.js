@@ -8,7 +8,6 @@ import {amudMetadata} from "./amud.ts";
 import {enableBackButtonProtection} from "./block_back_button.ts";
 import {timeoutPromise} from "./promises";
 import {registerRefSelectionSnackbarListener} from "./ref_selection_snackbar.ts";
-import {registerServiceWorker} from "./service_worker_registration.ts";
 
 const bookTitleAndRange = () => {
   const metadata = amudMetadata();
@@ -167,8 +166,6 @@ export class Runner {
 
   main() {
     $(document).ready(() => {
-      registerServiceWorker();
-
       const metadata = amudMetadata();
       gtag("set", {section: metadata.masechet});
 
