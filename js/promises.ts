@@ -20,3 +20,9 @@ export class PromiseChain {
     return this;
   }
 }
+
+export function timeoutPromise(delay: number): Promise<unknown> {
+  const [promise, onSuccess] = promiseParts();
+  setTimeout(onSuccess, delay);
+  return promise;
+}

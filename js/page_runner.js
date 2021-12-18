@@ -1,10 +1,12 @@
 /* global gtag,  */
+import {ApiCache} from "./ApiCache.ts";
 import {mainCache} from "./caches.ts";
 import {$} from "./jquery";
 import {snackbars} from "./snackbar.ts";
 import {onceDocumentReady} from "./once_document_ready.ts";
 import {amudMetadata} from "./amud.ts";
 import {enableBackButtonProtection} from "./block_back_button.ts";
+import {timeoutPromise} from "./promises";
 import {registerRefSelectionSnackbarListener} from "./ref_selection_snackbar.ts";
 import {registerServiceWorker} from "./service_worker_registration.ts";
 
@@ -79,6 +81,25 @@ export class Runner {
         loadNext: () => this.addNextSection(),
         defaultEditText: () => bookTitleAndRange(),
       });
+    this.apiCache = new ApiCache();
+    timeoutPromise(5000).then(() => this.apiCache.purge());
+  }
+
+  ajaxRequest(endpoint, options) {
+    return $.ajax({
+      url: `${window.location.origin}/${endpoint}`,
+      type: "GET",
+    }).catch(() => {
+      if (options.finished) {
+        throw new Error("Finished!");
+      }
+      options.backoff = options.backoff || 200;
+      options.backoff *= 1.5;
+      return timeoutPromise(options.backoff).then(() => this.ajaxRequest(endpoint, options));
+    }).then(result => {
+      this.apiCache.save(endpoint, result);
+      return result;
+    });
   }
 
   requestSection(section, options) {
@@ -89,20 +110,16 @@ export class Runner {
       loading: true,
       sections: [],
     });
-    $.ajax({
-      url: `${window.location.origin}/api/${amudMetadata().masechet}/${section}`,
-      type: "GET",
-      success: (results) => {
-        this.renderer.setAmud(results);
-        refreshPageState();
-        if (options.callback) options.callback();
-        gtag("event", "section_loaded", {section});
-      },
-      error: () => {
-        options.backoff = options.backoff || 200;
-        options.backoff *= 1.5;
-        setTimeout(() => this.requestSection(section, options), options.backoff);
-      },
+    const endpoint = `api/${amudMetadata().masechet}/${section}`;
+    Promise.any([
+      this.ajaxRequest(endpoint, options),
+      this.apiCache.get(endpoint),
+    ]).then((results) => {
+      options.finished = true;
+      this.renderer.setAmud(results);
+      refreshPageState();
+      if (options.callback) options.callback();
+      gtag("event", "section_loaded", {section});
     });
     if (options.newUrl) {
       const oldUrl = window.location.href;

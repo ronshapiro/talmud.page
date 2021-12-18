@@ -2,6 +2,8 @@
 import {AbstractIndexedDb, result} from "./AbstractIndexedDb";
 import {promiseParts} from "./promises";
 
+const TTL = 14 * 24 * 60 * 60 * 1000;
+
 export class ApiCache extends AbstractIndexedDb {
   private whenDbReady: Promise<unknown>;
 
@@ -10,10 +12,12 @@ export class ApiCache extends AbstractIndexedDb {
     this.whenDbReady = this.open();
   }
 
+  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   save(ref: string, value: any): void {
     this.whenDbReady.then(() => {
-      this.newTransaction("readwrite").add({
-        "id": ref,
+      this.newTransaction("readwrite").put({
+        id: ref,
+        insertTimeMillis: Date.now(),
         wrapped: value,
       });
     });
@@ -23,10 +27,25 @@ export class ApiCache extends AbstractIndexedDb {
     const [promise, onSuccess] = promiseParts<any>().slice(0, 2);
     return this.whenDbReady.then(() => {
       this.newTransaction("readonly").get(ref).onsuccess = event => {
-        onSuccess(result(event).wrapped);
+        const resultValue = result(event);
+        if (resultValue !== undefined) {
+          onSuccess(resultValue.wrapped);
+        }
       };
       return promise;
-    }
+    });
+  }
+
+  private purge() {
+    const objectStore = this.newTransaction("readwrite");
+    objectStore.getAll().onsuccess = getAllEvent => {
+      const now = Date.now();
+      for (const row of result<any>(getAllEvent)) {
+        if ((now - row.insertTimeMillis) > TTL) {
+          objectStore.delete(row.id);
+        }
+      }
+    };
   }
 
   protected databaseName(): string {
