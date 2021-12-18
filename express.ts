@@ -116,6 +116,14 @@ app.use((req, res, next) => {
   next();
 });
 
+function sendLazyStaticFile(res: express.Response, file: string) {
+  res.sendFile(file, {
+    headers: {
+      'Cache-Control': 'max-age=86400, stale-while-revalidate=7776000',
+    },
+  });
+}
+
 app.use((req, res, next) => {
   if (req.hostname.startsWith("www.")) {
     res.redirectWithQueryParameters(req.hostname.slice(4) + req.originalUrl);
@@ -128,14 +136,20 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => res.render("homepage.html"));
-app.get("/css/:ignored/:path", (req, res) => res.sendFile(`css/${req.params.path}`));
+app.get("/css/:ignored/:path", (req, res) => sendLazyStaticFile(res, `css/${req.params.path}`));
 
 for (const file of fs.readdirSync("dist").filter(x => !x.endsWith(".html"))) {
-  app.get(`/${file}`, (req, res) => res.sendFile(`dist/${file}`));
+  app.get(`/${file}`, (req, res) => res.sendFile(`dist/${file}`, {maxAge: 31536000}));
 }
 
-app.use(express.static("favicon"));
-app.use("/font", express.static("fonts"));
+const STATIC_FILES_LAZY_CACHE_OPTIONS = {
+  setHeaders: (res: express.Response) => {
+    res.setHeader('Cache-Control', 'max-age=86400, stale-while-revalidate=7776000');
+  },
+};
+
+app.use(express.static("favicon", STATIC_FILES_LAZY_CACHE_OPTIONS));
+app.use("/font", express.static("fonts", STATIC_FILES_LAZY_CACHE_OPTIONS));
 
 function segmentUrl(bookName: string, start: string, end?: string): string {
   return (end
@@ -180,7 +194,9 @@ app.post("/view_daf", (req, res) => {
 });
 
 app.get("/preferences", (req, res) => res.render("preferences.html"));
-app.get("/manifest.json", (req, res) => res.sendFile("static/progressive_webapp_manifest.json"));
+app.get(
+  "/manifest.json",
+  (req, res) => sendLazyStaticFile(res, "static/progressive_webapp_manifest.json"));
 
 for (const [endpoint, url] of [
   [
