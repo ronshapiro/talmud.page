@@ -806,7 +806,7 @@ export abstract class AbstractApiRequestHandler {
         hebrew: this.translateHebrewText(footnotesResult.comment.he),
         english: this.translateEnglishText(footnotesResult.comment.text),
       });
-      this.addComments(ref, segment.commentary, linkGraph);
+      this.addComments(ref, ref, segment.commentary, linkGraph, {count: 0});
       for (const footnote of footnotesResult.footnotes) {
         segment.commentary.addComment(
           Comment.create(Comment.fakeTextLink, footnote, "Footnotes", this.logger));
@@ -832,12 +832,24 @@ export abstract class AbstractApiRequestHandler {
   }
 
   private addComments(
+    rootRef: string,
     ref: string,
     commentary: InternalCommentary,
     linkGraph: LinkGraph,
+    countObject: {count: number},
     cycleChecker: Set<string> = new Set(),
   ) {
     for (const linkRef of Array.from(linkGraph.graph[ref] ?? [])) {
+      // This is heuristic to attempt to short-circuit comment traversals that never seem to end.
+      // Unfortunately we don't want a simple "visited" set since we do want to revisit nodes,
+      // but perhaps something that checks to not revisit them unless they reoccur at lower depths
+      // would be useful.
+      countObject.count++;
+      if (countObject.count > 2000) {
+        this.logger.log(`Halting comment traversal for ${rootRef} at ${countObject.count}`);
+        return;
+      }
+
       if (cycleChecker.has(linkRef)) continue;
       const linkResponse = linkGraph.textResponses[linkRef];
       if (!linkResponse || isSefariaError(linkResponse)) continue; // Don't process failed requests
@@ -856,9 +868,11 @@ export abstract class AbstractApiRequestHandler {
 
       cycleChecker.add(ref);
       this.addComments(
+        rootRef,
         linkRef,
         commentary.nestedCommentary(commentaryType.englishName),
         linkGraph,
+        countObject,
         cycleChecker);
       cycleChecker.delete(ref);
     }
