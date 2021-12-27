@@ -1,32 +1,30 @@
 {
   "addressTypes": [
-    "Integer",
-    "Integer",
+    "Perek",
+    "Halakhah",
     "Integer"
   ],
   "alts": [
     {
       "en": [
+        "Chapter 1",
         "Jerusalem Talmud Shekalim"
       ],
       "he": [
+        "פרק א",
         "תלמוד ירושלמי שקלים"
       ],
       "whole": true
     },
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
+    {
+      "en": [
+        "Chapter 1"
+      ],
+      "he": [
+        "פרק א"
+      ],
+      "whole": true
+    },
     null,
     {
       "en": [
@@ -34,6 +32,58 @@
       ],
       "he": [
         "א׳ ב"
+      ]
+    },
+    {
+      "en": [
+        "1b"
+      ],
+      "he": [
+        "א׳ ב"
+      ]
+    },
+    {
+      "en": [
+        "2a"
+      ],
+      "he": [
+        "ב׳ א"
+      ]
+    },
+    {
+      "en": [
+        "1b"
+      ],
+      "he": [
+        "א׳ א"
+      ]
+    },
+    {
+      "en": [
+        "2b"
+      ],
+      "he": [
+        "ב׳ ב"
+      ]
+    },
+    null,
+    {
+      "en": [
+        "2a"
+      ],
+      "he": [
+        "ב׳ א"
+      ]
+    },
+    null,
+    null,
+    null,
+    {
+      "en": [
+        "3a"
+      ],
+      "he": [
+        "ג׳ א"
       ]
     }
   ],
@@ -49,159 +99,46 @@
   "extendedNotesHebrew": "",
   "firstAvailableSectionRef": "Jerusalem Talmud Shekalim 1:1:1-16",
   "he": [
-    "<sup><b>[דף ב.]</b></sup> <strong><big>משנה</big></strong> בְּאֶחָד בַּאֲדָר מַשְׁמִעִין עַל הַשְּׁקָלִים וְעַל הַכִּלְאַיִם. וּבַחֲמִשָּׁה עָשָׂר בּוֹ קוֹרִין אֶת הַמְּגִלָּה בַּכְּרַכִּים",
-    "וּמְתַקְּנִין אֶת הַדְּרָכִים וְאֶת הָרְחוֹבוֹת וְאֶת מִקְווֹת הַמַּיִם, וְעוֹשִׂין כָּל־צוֹרְכֵי הָרַבִּים וּמְצַייְּנִין עַל הַקְּבָרוֹת",
-    "וְיוֹצְאִין אַף עַל הַכִּלְאָיִם׃",
-    "<strong><big>הלכה</big></strong> בְּאֶחָד בַּאֲדָר מַשְׁמִעִִין כול׳. וְלָמָּה בְאֶחָד בַּאֲדָר. כְּדֵי שֶׁיָּבִיאוּ יִשְׂרָאֵל אֶת שִׁקְלֵיהֶן בְּעוֹנָתָן וְתִיתָּרֵם תְּרוּמַת הַלִּשְׁכָּה מִן הַחֲדָשָׁה בִזְמַנָּהּ בְּאֵחָד בְּנִיסָן.",
-    "וָמַר רִבִּי שְׁמוּאֵל בַּר רַב יִצְחָק. [תְּרוּמַת הַלִּשְׁכָּה] כַּתְּחִילָּתָהּ. [דִּ]כְתִב וַיְהִ֞י בַּחוֹדֶשׁ הָֽרִאשׁ֛וֹן בַּשָּׁנָ֥ה הַשֵּׁינִית בְּאֶחָ֣ד לַחוֹדֶשׁ הוּקַ֖ם הַמִּשְׁכָּֽן: וְתַנֵּי עֲלָהּ. בַּיּוֹם שֶׁהוּקַם הַמִּשְׁכָּן בּוֹ בַיּוֹם נִתְרְמָה הַתְּרוּמָה.",
-    "רִבִּי טָבִי רִבִּי יֹאשַׁיָה בְשֵׁם כַּהֲנָא. נֶאֱמַר כָּאן חָדְשֵׁי וְנֶאֱמַר לְהַלָּן חָדְשֵׁי. מַה חָדְשֵׁי שֶׁנֶּאֱמַר לְהַלָּן אֵין מוֹנִין אֶלְּא מִנִּיסָן אַף חָדְשֵׁי שֶׁנֶּאֱמַר כָּאן אֵין מוֹנִין אֶלְּא מִנִּיסָן",
-    "אָמַר רִבִּי יוֹנָה. שְׁבַק רִבִּי טָבִי רֹאשָׁהּ וְאָמַר סוֹפָא. דִּלֹ כֵן כַּהָדָא דְתַנֵּי. זֹ֣את עוֹלַת חוֹדֶשׁ בְּחָדְשׁ֔וֹ. יָכוֹל תְּהֵא תוֹרֵם בְּכָל־חוֹדֶשׁ וָחוֹדֶשׁ. תַּלְמוּד לוֹמַר בְּחוֹדְשׁוֹ לְחָדְשֵׁי֭. בְּחוֹדֶשׁ אֶחָד הוּא תוֹרֵם לְכָל־חָדְשֵׁי הַשָּׁנָה.",
-    "יָכוֹל בְּאֵיזֶה חוֹדֶשׁ שֶׁיִּרְצֶה. נֶאֶמַר כָּאן חָדְשֵׁי וְנֶאֱמַר לְהַלָּן חָדְשֵׁי. מַה חָדְשֵׁי שֶׁנֶּאֱמַר לְהַלָּן אֵין מוֹנִין אֶלְּא מִנִּיסָן אַף מַה חָדְשֵׁי שֶׁנֶּאֱמַר כָּאן אֵין מוֹנִין אֶלֶּא מִנִּיסָן.",
+    "<strong><big>משנה:</big></strong> <i data-overlay=\"Vilna Pages\" data-value=\"1a\"></i>בְּאֶחָד בַּאֲדָר מַשְׁמִעִין עַל הַשְּׁקָלִים וְעַל הַכִּלְאַיִם. וּבַחֲמִשָּׁה עָשָׂר בּוֹ קוֹרִין אֶת הַמְּגִלָּה בַּכְּרַכִּים וּמְתַקְּנִין אֶת הַדְּרָכִים וְאֶת הָרְחוֹבוֹת וְאֶת מִקְווֹת הַמַּיִם, וְעוֹשִׂין כָּל־ צוֹרְכֵי הָרַבִּים וּמְצַייְּנִין עַל הַקְּבָרוֹת וְיוֹצְאִין אַף עַל הַכִּלְאָיִם׃ ",
+    "<strong><big>הלכה:</big></strong> <i data-overlay=\"Venice Columns\" data-value=\"45d\"></i>בְּאֶחָד בַּאֲדָר מַשְׁמִעִִין כול׳. וְלָמָּה בְאֶחָד בַּאֲדָר. כְּדֵי שֶׁיָּבִיאוּ יִשְׂרָאֵל אֶת שִׁקְלֵיהֶן בְּעוֹנָתָן וְתִיתָּרֵם תְּרוּמַת הַלִּשְׁכָּה מִן הַחֲדָשָׁה בִזְמַנָּהּ בְּאֵחָד בְּנִיסָן. וָמַר רִבִּי שְׁמוּאֵל בַּר רַב יִצְחָק. [תְּרוּמַת הַלִּשְׁכָּה] כַּתְּחִילָּתָהּ. [דִּ]כְתִב וַיְהִ֞י בַּחוֹדֶשׁ הָֽרִאשׁ֛וֹן בַּשָּׁנָ֥ה הַשֵּׁינִית בְּאֶחָ֣ד לַחוֹדֶשׁ הוּקַ֖ם הַמִּשְׁכָּֽן: וְתַנֵּי עֲלָהּ. בַּיּוֹם שֶׁהוּקַם הַמִּשְׁכָּן בּוֹ בַיּוֹם נִתְרְמָה הַתְּרוּמָה. רִבִּי טָבִי רִבִּי יֹאשַׁיָה בְשֵׁם כַּהֲנָא. נֶאֱמַר כָּאן חָדְשֵׁי וְנֶאֱמַר לְהַלָּן חָדְשֵׁי. מַה חָדְשֵׁי שֶׁנֶּאֱמַר לְהַלָּן אֵין מוֹנִין אֶלְּא מִנִּיסָן אַף חָדְשֵׁי שֶׁנֶּאֱמַר כָּאן אֵין מוֹנִין אֶלְּא מִנִּיסָן אָמַר רִבִּי יוֹנָה. שְׁבַק רִבִּי טָבִי רֹאשָׁהּ וְאָמַר סוֹפָא. דִּלֹ כֵן כַּהָדָא דְתַנֵּי. זֹ֣את עוֹלַת חוֹדֶשׁ בְּחָדְשׁ֔וֹ. יָכוֹל תְּהֵא תוֹרֵם בְּכָל־חוֹדֶשׁ וָחוֹדֶשׁ. תַּלְמוּד לוֹמַר בְּחוֹדְשׁוֹ לְחָדְשֵׁי֭. בְּחוֹדֶשׁ אֶחָד הוּא תוֹרֵם לְכָל־חָדְשֵׁי הַשָּׁנָה. יָכוֹל בְּאֵיזֶה חוּדֶשׁ שֶׁיִּרְצֶה. נֶאֶמַר כָּאן חָדְשֵׁי וְנֶאֱמַר לְהַלָּן חָדְשֵׁי. מַה חָדְשֵׁי שֶׁנֶּאֱמַר לְהַלָּן אֵין מוֹנִין אֶלְּא מִנִּיסָן אַף מַה חָדְשֵׁי שֶׁנֶּאֱמַר כָּאן אֵין מוֹנִין אֶלֶּא מִנִּיסָן.",
     "מָהוּ מַשְׁמִעִין. רב הוּנָא אָמַר. מַכְרִיזִין. הֵיךְ מַה דְאַתְּ אָמַר. וַיִּתְּנוּ־ק֞וֹל בִּֽיהוּדָ֣ה וּבִירֽוּשָׁלַ֗ם.",
-    "תַּמָּן תַּנִּינָן. אֵין בֵּין אֲדָר הָרִאשׁוֹן לַאֲדָר הַשֵּׁינִי אֶלָּא מִקְרָא מְגִלָּה וּמַתָּנוֹת לָאֶבְיוֹנִים: רִבִּי סִימוֹן בְּשֵׁם רִבִּי יְהוֹשֻׁעַ בֶּן לֵוִי. אַף שִׁימּוּעַ שְׁקָלִים וְכִלְאַיִם בֵּינֵיהֶן. רִבִּי חֶלְבּוֹ וְרַב חוּנָה רַב בְּשֵׁם רִבִּי חִייָה רַבָּה. הַכֹּל יוֹצְאֵין בְּאַרְבָּעָה עָשָׂר שֶׁהוּא זְמַן קְרִייָתָהּ.",
-    "אָמַר רִבִּי יוֹסֵה. וְיֵאוּת. כְּלוּם אָֽמְרוּ מַשְׁמִעִין עַל הַשְּׁקָלִים לֹא כְּדֵי שֶׁיָּבִיאוּ יִשְׂרָאֵל שִׁקְלֵיהֶן בְּעוֹנָתָן. אְִם אוֹמֵר אַתְּ בַּאֲדָר הָרִאשׁוֹן. עַד כְדוֹן אִית בּשַּׁתָּא שִׁיתִין יוֹמִין.",
-    "כְּלוּם אָֽמְרוּ יוֹצְאִין אַף עַל הַכִּלְאָיִם לֹא כְּדֵי שֶׁיְּהוּ הַצְּמָחִין נִיכָּרִין. אְִם אוֹמֵר אַתְּ בַּאֲדָר הָרִאשׁוֹן. עַד כְדוֹן אִינּוּן דַּקִּיקִין.",
-    "רִבִּי חִזְקִיָּה שָׁאַל. מֵעַתָּה בְּנֵי בָבֵל מַשְׁמִעִין עַל שִׁיקְלֵיהֶן מֵרֹאשׁוֹ שֶׁלְחוֹדֶשׁ. לֹא כְּדֵי שֶׁיָּבִיאוּ יִשְׂרָאֵל שִׁקְלֵיהֶן בְּעוֹנָתָן וְתִיתָּרֵם תְּרוּמַת הַלִּשְׁכָּה מִן הַחֲדָשָׁה בִזְמַנָּהּ בְּאֵחָד בְּנִיסָן.",
-    "הָתִיב רִבִּי עוּלָּא קוֹמֵי רִבִּי מָנָא. וְהָא תַנִּינָן. בִּשְׁלשָׁה פְּרָקִים בַּשָּׁנָה תּוֹרְמִין אֶת הַלִּשְׁכָּה בְּפַרְסְ הַפֶּסַח בְּפַרְסְ הָעֲצֶרֶת בְּפַרְסְ הַחַג.",
-    "אָמַר לֵיהּ. נֵימַר. אִילֵּין דִּקְרֵיבִין בִּפְרֹס הַפֶּסַח. אִילֵּין דִּרְחִיקִין בִּפְרֹס הָעֲצֶרֶת. וְאֵילִּין דִּרְחִיקִין מִינְּהוֹן בִּפְרֹס הַחַג.",
-    "<sup><b>[דף ב:]</b></sup> אָמַר לֵיהּ. כּוּלָּהּ כְּאַחַת הָיְתָה בָעָה. וְלָמָּה אָֽמְרוּ בִּשְׁלשָׁה פְּרָקִים. כְּדֵי לַעֲשׂוֹת פּוֹמְפֵּי לַדָּבָר."
+    "תַּמָּן תַּנִּינָן. אֵין בֵּין אֲדָר הָרִאשׁוֹן לַאֲדָר הַשֵּׁינִי אֶלָּא מִקְרָא מְגִלָּה וּמַתָּנוֹת לָאֶבְיוֹנִים: רִבִּי סִימוֹן בְּשֵׁם רִבִּי יְהוֹשֻׁעַ בֶּן לֵוִי. אַף שִׁימּוּעַ שְׁקָלִים וְכִלְאַיִם בֵּינֵיהֶן. <i data-overlay=\"Vilna Pages\" data-value=\"1b\"></i>רִבִּי חֶלְבּוֹ וְרַב חוּנָה רַב בְּשֵׁם רִבִּי חִייָה רַבָּה. הַכֹּל יוֹצְאֵין בְּאַרְבָּעָה עָשָׂר שֶׁהוּא זְמַן קְרִייָתָהּ. אָמַר רִבִּי יוֹסֵה. וְיֵאוּת. כְּלוּם אָֽמְרוּ מַשְׁמִעִין עַל הַשְּׁקָלִים לֹא כְּדֵי שֶׁיָּבִיאוּ יִשְׂרָאֵל שִׁקְלֵיהֶן בְּעוֹנָתָן. אְִם אוֹמֵר אַתְּ בַּאֲדָר הָרִאשׁוֹן. עַד כְדוֹן אִית בּשַּׁתָּא שִׁיתִין יוֹמִין. כְּלוּם אָֽמְרוּ יוֹצְאִין אַף עַל הַכִּלְאָיִם לֹא כְּדֵי שֶׁיְּהוּ הַצְּמָחִין נִיכָּרִין. אְִם אוֹמֵר אַתְּ בַּאֲדָר הָרִאשׁוֹן. עַד כְדוֹן אִינּוּן דַּקִּיקִין.",
+    "רִבִּי חִזְקִיָּה שָׁאַל. מֵעַתָּה בְּנֵי בָבֵל מַשְׁמִעִין עַל שִׁיקְלֵיהֶן מֵרֹאשׁוֹ שֶׁלְחוֹדֶשׁ. לֹא כְּדֵי שֶׁיָּבִיאוּ יִשְׂרָאֵל שִׁקְלֵיהֶן בְּעוֹנָתָן וְתִיתָּרֵם תְּרוּמַת הַלִּשְׁכָּה מִן הַחֲדָשָׁה בִזְמַנָּהּ בְּאֵחָד בְּנִיסָן. הָתִיב רִבִּי עוּלָּא קוֹמֵי רִבִּי מָנָא. וְהָא תַנִּינָן. בִּשְׁלשָׁה פְּרָקִים בַּשָּׁנָה תּוֹרְמִין אֶת הַלִּשְׁכָּה בְּפַרְסְ הַפֶּסַח בְּפַרְסְ הָעֲצֶרֶת בְּפַרְסְ הַחַג. אָמַר לֵיהּ. נֵימַר. אִילֵּין דִּקְרֵיבִין בִּפְרֹס הַפֶּסַח. אִילֵּין דִּרְחִיקִין בִּפְרֹס הָעֲצֶרֶת. וְאֵילִּין דִּרְחִיקִין מִינְּהוֹן בִּפְרֹס הַחַג. אָמַר לֵיהּ. כּוּלָּהּ כְּאַחַת הָיְתָה בָעָה. וְלָמָּה אָֽמְרוּ בִּשְׁלשָׁה פְּרָקִים. כְּדֵי לַעֲשׂוֹת פּוֹמְפֵּי לַדָּבָר.",
+    "רִבִּי יְהוּדָה בַּר פָּזִי בְשֵׁם רִבִּי. הֵן נִקְרָא <i data-overlay=\"Vilna Pages\" data-value=\"2a\"></i>וְלֹא נִבְהַת. לְטוֹבָה כֹּ֚ל נְדִ֣יב לֵב. לְרָעָה וַיִּֽתְפָּֽרְקוּ֙ כָּל־הָעָ֔ם אֶת־נִזְמֵ֥י הַזָּהָב֭ אֲשֶׁ֣ר בְּאָזְנֵיהֶ֑ם. לטוֹבָה וַיּוֹצֵ֨א מֹשֶׁ֧ה אֶת־הָעָ֛ם. לְרָעָה וַתִּקְרְב֣וּן אֵלַי֮ כּוּלְּכֶם. לְטוֹבָה אָ֣ז יָֽשִׁיר־מֹשֶׁה֩ וּבְנֵ֙י יִשְׂרָאֵ֜ל. לְרָעָה וַיִּשָּׂא כָּל־הָ֣עֵדָ֔ה וַֽיִּתְּנ֖וּ אֶת־קוֹלָם֑. אָמַר רִבִּי חִייָא בַּר בָּא. אָכֵן֙ הִשְׁכִּ֣ימוּ הִשְׁחִ֔יתוּ. כָּל־הַשְׁחָתָה שֶׁהָיוּ עוֹשִׂין בְּהַשְׁכָּמָה הָיוּ עוֹשִׂין אוֹתָהּ. אָמַר רִבִּי בָּא בַּר אָחָא. אֵין אַתְּ יָכוֹל לַעֲמוֹד עַל אוֹפִי שֶׁלְּאוּמָּה הַזֹּאת. נִתְבָּעִין לָעֶגֶל וְנוֹתְנִין. נִתְבָּעִין לַמִּשְׁכָּן וְנוֹתְנִין. תַּנָּה רִבִּי יוֹסֵה בֶּן חֲנִינָה הָדָא מַתְנִיתָא. וְעָשִׂ֥יתָ כַפּוֹרֶת זָהָ֣ב טָה֑וֹר. יָבוֹא זָהָב שֶׁלְכַּפֹּרֶת וִיכַפֵּר עַל זְהָבוֹ שֶׁלְעֶגֶל.",
+    "רִבִּי חַגַּי בְשֵׁם רִבִּי שְׁמוּאֵל בַּר נַחְמָן. שָׁלֹשׁ תְּרוּמת נֶאֶמְרוּ בַפָּרָשָׁה הַזֹּאת. תְּרוּמַת אֲדָנִים וּתְרוּמַת שְׁקָלִים וּתְרוּמַת הַמִּשְׁכָּן. דַּבֵּר֙ אֶל־בְּנֵ֣י יִשְׂרָאֵ֔ל וְיִקְחוּ־לִי֭ תְּרוּמָ֑ה זוֹ תְרוּמַת אֲדָנִים. מֵאֵ֤ת כָּל־אִישׁ֙ אֲשֶׁ֣ר יִדְּבֶ֣נּוּ לִבּ֔וֹ תִּקְח֖וּ אֶת־תְּרֽוּמָתִֽי׃ זוֹ תְרוּמַת שְׁקָלִים. וְזֹאת֙ הַתְּרוּמָ֔ה אֲשֶׁ֥ר תִּקְח֖וּ מֵֽאִתָּ֑ם זוֹ תְרוּמַת הַמִּשְׁכָּן. תְּרוּמַת הַמִּשְׁכָּן לַמִּשְׁכָּן. מַה שֶׁיִּרְצוּ יַעֲשׂוּ. תְּרוּמַת שְׁקָלִים לְקָרְבָּן. מַה שֶׁיִּרְצוּ יַעֲשׂוּ. כְּדֵי שֶׁתְּהֵא יַד כּוּלָּן שָׁווָה. תְּרוּמַת אֲדָנִים [לָאֲדָנִים]. הֶֽעָשִׁ֣יר <i data-overlay=\"Venice Columns\" data-value=\"46a\"></i>לֹֽא־יַרְבֶּ֗ה וְהַדַּל֙ לֹ֣א יַמְעִ֔יט. אָמַר רִבִּי אָבוּן. אַף בַּפָּרָשָׁה הַזֹּאת נֶאֶמְרוּ בָהּ שָׁלֹשׁ תְּרוּמת.",
+    "בַּחֲמִשָּׁה עָשָׂר בּוֹ קוֹרִין אֶת הַמְּגִלָּה בַּכְּרַכִּים. לֹא כֵן אָמַר רִבִּי חֶלְבּוֹ וְרַב חוּנָה רַב בְּשֵׁם רִבִּי חִייָה רַבָּה. הַכֹּל יוֹצְאֵין בְּאַרְבָּעָה עָשָׂר שֶׁהוּא זְמַן קְרִיאָתָהּ. לֹא בָא אֶלָּא לְלַמְּדָךְ [שֶׁכָל־] (שֶׁ)הַמִּצוֹת נוֹהֲגוֹת בַּאֲדָר הַשֵּׁינִי [נוֹהֲגוֹת בַּאֲדָר הָרִאשׁוֹן]. רִבִּי יוֹסֵה וְרִבִּי אָחָא הֲווֹן יְתִיבִין. אָמַר רִבִּי יוֹסֵה לְרִבִּי אָחָא. לֹא מִסְתַּבְּרָא לַשֶּׁעָבַר אֶלָּא לָבֹא. וְהָא תַנֵּי. מְקוֹם שֶׁנָּהֲגוּ לִקְרוֹתָהּ שְׁנֵי יָמִים קוֹרִין אוֹתָהּ שְׁנֵי יָמִים. אָמַר לֵיהּ. אוֹף אֲנָא סְבַר כֵּן. אָמַר רִבִּי מָנָא. <i data-overlay=\"Vilna Pages\" data-value=\"2b\"></i>וְיֵאוּת. אִילּוּ מִשֶּׁקְּרָייָהּ בָּאַרְבָּעָה עָשָׂר חוֹזֵר וּקְרָייָא בַּחֲמִשָּׁה עָשָׂר שֶׁמָּא אֵין שׁוֹמְעִין לוֹ. אִם אוֹמֵר אַתְּ כֵּן נִמְצֶאתָ עוֹקֵר זְמַן כַּרַכִין בְּיָדֶיךָ.",
+    "תַּנֵּי. רַבָּן שִׁמְעוֹן בֶּן גַּמְלִיאֵל אוֹמֵר. מִצוֹת נוֹהֲגוֹת בָּאֲדַר שֵׁינִי אֵינָן נוֹהֲגוֹת בָּאֲדַר הָרִאשׁוֹן חוּץ מִן הֶסְפֵּד וּמִן הַתַּעֲנִית שֶׁהֵן שָׁןִין בָזֶה וּבָזֶה. רִבִּי בָּא רִבִּי יִרְמְיָה בְשֵׁם רַב רִבִּי סִימוֹן בְּשֵׁם רִבִּי יְהוֹשֻׁעַ בֶּן לֵוִי. הֲלָכָה כְרַבָּן שִׁמְעוֹן בֶּן גַּמְלִיאֵל. רִבִּי חוּנָה רַבָּהּ דְּצִיפּרִין אָמַר. הִנְהִיג רִבִּי חֲנִינָה בְצִיפּוֹרִין כְּהָדָא דְרַבָּן שִׁמְעוֹן בֶּן גַּמְלִיאֵל. לֹא אָמַר אֶלָּא הִנְהִיג. הָא לַהֲלָכָה לֹא.",
+    "אֲבָל לְעִנְייָן שְׁטָרוֹת כּוֹתְבִין אֲדָר הָרִאשׁוֹן וַאֲדָר הַשֵּׁינִי. אֶלָּא שֶׁכּוֹתְבִין אֲדָר הַשֵּׁינִי תִינְייָן. רִבִּי יוּדָה אוֹמֵר. אֲדָר הַשֵּׁינִי כוֹתֵב וְדַיּוֹ.",
+    "מְתַקְּנִין אֶת הַדְּרָכִים וְאֶת הָרְחוֹבוֹת וְאֶת מִקְווֹת הַמַּיִם וְעוֹשִׂין כָּל־צוֹרְכֵי הָרַבִּים. אֵילּוּ הֵן צוֹרְכֵי הָרַבִּים. דָּנִין דִּינֵי מָמוֹנוֹת וְדִינֵי נְפָשׁוֹת דִּינֵי מַכּוֹת וּפוֹדִין עֲרָכִין וַתֲרָמִין וְהֶקְדֵּישׁוֹת וּמַשְׁקִין אֵת הַסּוֹטָה וְשׂוֹרְפִין אֶת הַפָּרָה וְעוֹרְפִין עֶגְלָה עֲרוּפָה וְרוֹצְעִין עֶבֶד עִבְרִי וּמְטָהֲרִין אֵת הַמְּצוֹרָע וּמְפָֽרְקִין אֶת הַמִּנְעָל מֵעַל גַּבֵּי הָאֵימוּם וְאֵין מַחֲזִירִין אוֹתוֹ.",
+    "וּמְצַייְּנִין עַל הַקְּבָרוֹת. וְלֹא כְבָר צִייְנוּ מֵאֲדָר. תִּפְתָּר שֶׁיָּרַד שֶׁטֶף שֶׁלְגְּשָׁמִים וּשְׁטָפוֹ.",
+    "וְיוֹצְאִין אַף עַל הַכִּלְאָיִם: לֹא כְבָר יָֽצְאוּ מֵאֲדָר. תִּפְתָּר שֶׁהָֽיְתָה הַשָּׁנָה אֲפֵילָה וְאֵין הַצְּמָחִין נִיכָּרִין.",
+    "מְנַיִין לְצִיּוּן. רִבִּי בֶּרֶכְיָה רִבִּי יַעֲקֹב בַּר בַּת יַעֲקֹב בְשֵׁם רִבִּי חוּנְייָא דִבְרַת חַווְרָן רִבִּי יוֹסֵה אָֽמְרֵי לָהּ רִבִּי יָעֲקֹב בַּר אָחָא בְשֵׁם רִבִּי חוּנְייָא דִבְרַת חַווְרָן רִבִּי חִזְקִיָּה רִבִּי עוּזִּיאֵל בְּרֵיהּ דְּרִבִּי חוּנְייָה דִבְרַת חַווְרָן בְּשֵׁם רִבִּי חוּנְייָא דִבְרַת חַווְרָן. טָמֵא טָמֵא֭ יִקְרָֽא׃. כְּדֵי שֶׁתְּהֵא הַטּוּמְאָה קוֹרְאָה לָךְ בְּפִיהָ וְאוֹמֶרֶת לָךְ. פְּרוֹשׁ. רִבִּי אִילָא בְשֵׁם רִבִּי שְׁמוּאֵל בַּר נַחְמָן. וְעָֽבְר֤וּ <i data-overlay=\"Vilna Pages\" data-value=\"3a\"></i>הָעוֹבְרִים בָּאָ֔רֶץ וְרָאָה֙ עֶ֣צֶם אָדָ֔ם וּבָנָ֥ה אֶצְל֖וֹ צִיּ֑וּן. מִיכָן שֶׁמְצַייְנִין עַל הָעֲצָמוֹת. אָדָ֔ם. מִיכָן שֶׁמְצַייְנִין עַל הַשִּׁזְרָה וְעַל הַגּולְגּוֹלֶת. וּבָנָ֥ה. מִיכָן שֶׁמְצַייְנִין עַל גַּבֵּי אֶבֶן קְבוּעָה. אִם אוֹמֵר אַתְּ עַל גַּבֵּי אֶבֶן תְּלוּשָׁה. אַף הִיא הוֹלֶכֶת וּמְטַמֵּא בְמָקוֹם אַחֵר. אֶצְל֖וֹ. בִּמְקוֹם טַהֲרָה. צִיּ֑וּן. מִיכָן לְצִיּוּן.",
+    "וּמָצָא אֶבֶן אַחַת מְצוייֶנֶת. אַף עַל פִּי שֶׁאֵין מְקַייְמִין כֵּן הַמַּאֲהִיל עָלֶיהָ טָמֵא. אֲנִי אוֹמֵר. מֵת מְצוּייָן הָיָה נָתוּן תַּחְתֶּיהָ. הָיוּ שְׁתַיִם. הַמַּאֲהִיל עָלֶיהֶן טהוֹר וּבֵינֵיהֶן טָמֵא. אִם הָיָה חוֹרֶשׁ בֵּיְנְתַּייִם הֲרֵי הֵן כִּיחִידִיּוֹת. בֵּינֵיהֶן טָהוֹר וּסְבִיבוֹתֵיהֶן טָמֵא.",
+    "תַּנֵּי אֵין מְצַייְנִין עַל הַבָּשָׂר שֶׁמָּא נִתְאַכֵּל הַבָּשָׂר. רִבִּי יוּסְטָא בַּר שׁוּנֵם בְּעָא קוֹמֵי רִבִּי מָנָא. וְלֹא נִמְצָא מְטַמֵּא טַהֲרוֹת לְמַפְרֵעַ. אָמַר לֵיהּ. מוטָּב שֶׁיִּתְקַלְקְלוּ בוֹ לְשָׁעָה וְאַל יִתְקַלְקְלוּ בוֹ לְעוֹלָם."
   ],
+  "heDigitizedBySefaria": false,
+  "heExtendedNotes": "",
+  "heExtendedNotesHebrew": "",
   "heIndexTitle": "תלמוד ירושלמי שקלים",
+  "heLicense": "CC-BY",
   "heRef": "תלמוד ירושלמי שקלים א׳:א׳:א׳-ט״ז",
   "heSectionRef": "תלמוד ירושלמי שקלים א׳:א׳",
-  "heSources": [
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "Vocalized Aramaic",
-    "William Davidson Edition - Hebrew"
-  ],
   "heTitle": "תלמוד ירושלמי שקלים",
   "heTitleVariants": [
     "תלמוד ירושלמי שקלים"
   ],
+  "heVersionNotes": "",
+  "heVersionNotesInHebrew": "",
+  "heVersionSource": "https://www.nli.org.il/he/books/NNL_ALEPH001901012/NLI",
+  "heVersionStatus": "locked",
+  "heVersionTitle": "The Jerusalem Talmud, edition by Heinrich W. Guggenheimer. Berlin, De Gruyter, 1999-2015",
+  "heVersionTitleInHebrew": "",
   "indexTitle": "Jerusalem Talmud Shekalim",
   "isComplex": false,
   "isDependant": false,
   "isSpanning": false,
   "layer": [],
-  "license": "CC-BY-NC",
+  "license": "CC-BY",
   "next": "Jerusalem Talmud Shekalim 1:2",
   "order": [
     16
@@ -211,8 +148,8 @@
   "ref": "Jerusalem Talmud Shekalim 1:1:1-16",
   "sectionNames": [
     "Chapter",
-    "Halakha",
-    "Paragraph"
+    "Halakhah",
+    "Segment"
   ],
   "sectionRef": "Jerusalem Talmud Shekalim 1:1",
   "sections": [
@@ -222,22 +159,22 @@
   ],
   "sheets": [],
   "text": [
-    "<sup><b>[2a]</b></sup> <strong>Halakha 1 · MISHNA</strong>  <b>On the first of Adar</b> the court <b>proclaims concerning</b> the collection of <b>shekels,</b> i.e., the yearly half-shekel contribution to the Temple treasury made by each adult male for the purpose of buying communal offerings. <b>And</b> they also proclaim <b>with regard to</b> the obligation to uproot forbidden mixtures of <b>diverse kinds</b> of food crops in gardens and fields. <b>And on the fifteenth</b> day <b>of the</b> month of Adar, <b>the Scroll [<i>Megilla</i>]</b> of Esther <b>is read in the cities [<i>kerakim</i>]</b> surrounded by walls from the time of Joshua.",
-    "<b>And they</b> also <b>repair the roads</b> that were damaged in the winter, <b>and the streets, and the cisterns. And</b> at that time <b>they perform all that is necessary for public welfare. And they</b> also <b>mark the</b> Jewish <b>gravesites</b> anew, so that people would know their location and avoid ritual impurity, as the previous markers may have eroded during the rainy season.",
-    "<b>And</b> agents of the court <b>also go out</b> to inspect the fields <b>for diverse kinds</b> of food crops, to determine whether or not the farmers had in fact uprooted these seeds after the proclamation on the first of the month. If the agents of the court found that these diverse kinds had not been uprooted, they themselves would uproot them.",
-    "<strong>GEMARA:</strong> The mishna taught that the court would issue a proclamation concerning the new shekels on the first of Adar. The Gemara asks: <b>And why</b> specifically <b>on the first of Adar?</b> The Gemara answers: This was done <b>in order that Jews would bring their shekels</b> to the designated Temple chamber <b>in the proper time,</b> as the shekels had to be collected before the beginning of Nisan each year. <b>And</b> this would ensure that the <b>collection</b> of <b>the</b> Temple treasury <b>chamber</b> would be <b>collected from the new</b> shekels <b>at its proper time,</b> which is <b>on the first of</b> the month of <b>Nisan,</b> i.e., the beginning of the Temple year. After that date all communal offerings must be purchased from the new shekels.",
-    "<b>And Rabbi Shmuel bar Rav Yitzḥak said:</b> The <b>collection of the</b> Temple treasury <b>chamber</b> was performed each year on the same date as <b>its first time, as it is written: “And it came to pass in the first month in the second year, on the first day of the month, that the Tabernacle was reared up”</b> (Exodus 40:17). <b>And</b> a <i>baraita</i> <b>was taught about</b> this verse: <b>On the day that the Tabernacle was erected, on that</b> very <b>day the funds were collected.</b> The first of Nisan was thereafter permanently established as the date for the collection of the chamber.",
-    "<b>Rabbi Tavi</b> said that <b>Rabbi Yoshiya</b> said <b>in the name of</b> Rabbi <b>Kahana: It is stated here,</b> with regard to the additional offerings of the New Moon: “This is the burnt-offering of every New Moon throughout <b>the months of</b> the year” (Numbers 28:14), <b>and it is stated there,</b> concerning the months of the year: “This month shall be to you the beginning of months; it shall be the first of <b>the months of</b> the year to you” (Exodus 12:2). <b>Just as “the months of” stated there are counted only from Nisan,</b> the first month of the year, <b>so</b> too, <b>“the months of” that is stated here,</b> with regard to the new shekels, <b>are counted only from Nisan.</b>",
-    "<b>Rabbi Yona said: Rabbi Tavi left</b> aside <b>the first</b> clause <b>of</b> this <b><i>baraita</i>, and read</b> only <b>its latter</b> clause, in which it is stated that the months of the year are counted from Nisan. However, this does not prove that the first of Nisan is the date after which communal offerings must be purchased with the new shekels. <b>This is not as it was taught,</b> as this is the full text of the <i>baraita</i>: The verse states: <b>“This is the burnt-offering of a new month on its month,</b> throughout the months of the year” (Numbers 28:14). One <b>might</b> have thought that a person <b>should contribute</b> a half-shekel <b>each and every month.</b> Therefore <b>the verse states: “of a new month on its month, throughout the months,”</b> from which it is inferred: <b>In one</b> particular <b>month</b> a person <b>contributes</b> his half-shekel <b>for all the months of the year.</b>",
-    "The <i>baraita</i> continues: One <b>might</b> have thought that a person can contribute his half-shekel <b>in any month he wants.</b> Therefore, <b>it is stated here,</b> with regard to the additional offerings of the New Moon: <b>“The months of”</b> (Numbers 28:14), <b>and it is stated there,</b> with regard to the months of the year: <b>“The months of”</b> (Exodus 12:2). <b>Just as</b> the phrase <b>“the months of,” which is stated there, is counted only from Nisan,</b> the first month of the year, <b>so</b> too, the phrase <b>“the months of,” which is stated here,</b> with regard to the offerings, <b>is counted only from Nisan.</b>",
-    "§ The mishna taught that on the first of Adar the court would issue a proclamation concerning the new shekels. The Gemara asks: <b>What does it</b> mean that <b>they proclaim? Rav Huna said: They announce</b> publicly that everyone is obligated to donate the half-shekel. <b>As you say</b> in quoting the verse: <b>“And they made a proclamation throughout Judea and Jerusalem,</b> to bring in for the Lord the tax that Moses, the servant of God, laid upon Israel in the wilderness” (II Chronicles 24:9). The tax of Moses is the half-shekel that the Israelites were commanded to donate.",
-    "<b>We learned</b> in a mishna <b>there</b> (<i>Megilla</i> 1:4): <b>The only</b> halakhic difference <b>between First Adar and Second Adar</b> is <b>the recitation of the Megilla and the gifts to the poor,</b> which are mitzvot of Purim, which is celebrated only in Second Adar. The Gemara comments: <b>Rabbi Simon</b> says <b>in the name of Rabbi Yehoshua ben Levi: The proclamations about the new shekels and</b> about <b>diverse kinds</b> are <b>also between them,</b> i.e., are performed in Second Adar and not First Adar. The Gemara comments further: <b>Rabbi Ḥelbo and Rav Huna</b> said that <b>Rav</b> said <b>in the name of Rabbi Ḥiyya the Great</b> as follows: <b>All fulfill</b> the obligation to read the Megilla <b>on the fourteenth</b> of Adar, <b>which is</b> the fixed <b>time of its reading</b> for most people, although there are other times in which particular groups can read the Megilla.",
-    "<b>Rabbi Yosei said: And that is so;</b> the proclamations about the shekels and about diverse kinds were certainly issued in Second Adar. Rabbi Yosei explains: <b>Didn’t they say</b> that the court would <b>proclaim about</b> the new <b>shekels</b> on the first of Adar <b>in order that Jews would bring their shekels in the proper time,</b> by the first of Nisan? <b>And if you say</b> that in a leap year the court issues this declaration <b>in First Adar, until then there are</b> still <b>sixty days of the year</b> before the first of Nisan. With so much time remaining, people might be lax and neglect to donate their half-shekels.",
-    "Rabbi Yosei continues: Furthermore, <b>didn’t they say</b> that on the fifteenth of Adar the agents of the court <b>would also go out</b> to examine the fields <b>for diverse kinds</b> of food crops, to determine whether the farmers had in fact uprooted these plants, and to do so themselves if those farmers had neglected their duty. Was this <b>not</b> performed on this date <b>in order that the plants would be perceptible</b> at that time? The court agents must have gone out near springtime, as otherwise they would have been unable to detect the presence of diverse kinds. And <b>if you say</b> that this task is performed <b>in First Adar, until then</b> the new crops <b>are</b> too <b>small</b> to be seen. Consequently, they must have waited until Second Adar, when the crops were visible.",
-    "The Gemara comments: In light of the statement that the proclamation concerning the new shekels was to ensure that the coins would arrive in the Temple at the proper time, <b>Rabbi Ḥizkiya asked</b> the following rhetorical question: <b>If that is so,</b> then with regard to <b>the residents of Babylonia,</b> who live at a distance of several months’ travel from Jerusalem, the court should <b>proclaim about the</b> new <b>shekels at the beginning of winter. Didn’t the court</b> make the proclamation <b>in order that the Jews would bring their shekels in the proper time, and</b> thus the <b>collection of the</b> Temple <b>treasury chamber</b> will <b>be collected from the new shekels at its appropriate time, on the first of Nisan?</b> It therefore would be necessary to issue the proclamation earlier for distant locations.",
-    "<b>Rabbi Ulla raised a difficulty in the presence of Rabbi Mana:</b> Rabbi Ḥizkiya’s statement indicates that in each place the proclamation should be issued in accordance with the time it takes for the shekels to reach Jerusalem from there. <b>But we learned</b> in a mishna (<i>Shekalim</i> 3:1): <b>On three occasions in the year</b> the shekels were <b>collected from the chamber,</b> for the purchase of offerings: <b>Half</b> a month before <b>[<i>biferos</i>]</b> the festival of <b>Passover, half</b> a month before the festival of <b><i>Shavuot</i>, and half</b> a month before the festival of <b><i>Sukkot</i>.</b>",
-    "Rabbi Ulla continued and <b>said to</b> Rabbi Mana in explanation: In light of this mishna, <b>shouldn’t we say</b> that the proclamation for shekels was issued in all places on the same date, the first of Adar, whereas the ceremony of the collection of the Temple treasury chamber was performed at three different times, in accordance with the arrival of the shekels to the Temple from different locations: With regard to <b>those who are near</b> Jerusalem, whose shekels arrived before the first of Nisan, the collection ceremony for their coins is <b>half</b> a month before <b>Passover,</b> while the ceremony for <b>those who are farther</b> away is <b>half</b> a month before <b><i>Shavuot</i></b>; <b>and</b> the ceremony for <b>those who are</b> even <b>farther</b> away <b>than they are</b> is <b>half</b> a month before <b><i>Sukkot</i>.</b>",
-    "<sup><b>[2b]</b></sup> Rabbi Mana <b>said to</b> Rabbi Ulla: The different collections of the chamber do not reflect the different times of the shekels’ arrival, but rather <b>the entire</b> collection of shekels <b>arrives at one</b> time, by the first of Nisan, and in accordance with the opinion of Rabbi Ḥizkiya. <b>And why</b> then did the Sages <b>say</b> that the money is collected from the chamber <b>on three occasions</b> in the year? <b>In order to publicize [<i>pumbei</i>] the matter,</b> that everyone is obligated to donate half-shekels for the purchase of communal offerings."
+    "<strong>MISHNAH:</strong> On the first of Adar one proclaims about <i>sheqalim</i><sup>1</sup><i class=\"footnote\">The yearly Temple tax of half a <i>sheqel</i>(<a class=\"refLink\" data-ref=\"Exodus 30:11-16\" href=\"/Exodus.30.11-16\"><i>Ex.</i> 30:11–16</a>). The expenses of the Temple service had to be paid from the tax collected for the year starting on Nisan 1. Since the tax could be enforced in the Land of Israel, it was sufficient to remind people of their duty and set up collection points one month in advance.<br>In talmudic times, and already in the LXX, the profane <i>sheqel</i> was identified with the Greek and Roman <i>didrachma</i>, or 2 denar piece, approximately equal to the Achemaenean <i>sheqel</i> (<i>siglos</i>). However, it is clear from the talmudic sources as well as the coinage of the first war against the Romans that as sacrificial <i>sheqel</i> the old Canaanite and Israelite <i>sheqel</i> was used, approximately a Roman tetradrachma (cf. <a class=\"refLink\" data-ref=\"Jerusalem Talmud Kiddushin 1:3:4\" href=\"/Jerusalem_Talmud_Kiddushin.1.3.4\"><i>Qiddušin</i> 1:1, Note 122</a>.), and therefore the biblical half-<i>sheqel</i> was a full profane <i>sheqel</i>.</i> and about <i>kilaim</i><sup>2</sup><i class=\"footnote\">Since it is the end of the rainy season, farmers are reminded to remove spontaneous <i>kilaim</i> growth from their fields, so they should not run the risk that their harvest be forbidden for all use.</i>, and on the fifteenth of that month one reads the Esther scroll in fortified places<sup>3</sup><i class=\"footnote\">Greek χάραξ, “palisades”. The expression is used to describe walled cities reputed to have been walled at Joshua’s time, cf. <a class=\"refLink\" data-ref=\"Jerusalem Talmud Megillah 1:1:1-12\" href=\"/Jerusalem_Talmud_Megillah.1.1.1-12\">Mishnah <i>Megillah</i>1:1</a>.</i>, and one repairs the roads,<sup>4</sup><i class=\"footnote\">Rural roads which might have been damaged during the rainy season, to prepare them for the pilgrims going to Jerusalem in the following month.</i> and the streets<sup>5</sup><i class=\"footnote\">Municipal roads.</i>, and water pools<sup>6</sup><i class=\"footnote\">Since the term is not discussed in the Halakhah, it is difficult to know whether one refers to religious <i>miqwaot</i> or to water supply for the pilgrims. Both kinds of pools may contain dust deposited there by the rains of the winter months.</i>, and one looks after all public needs<sup>7</sup><i class=\"footnote\">Described in the Halakhah.</i>, and marks the graves<sup>8</sup><i class=\"footnote\">Graves not in a cemetery, which must be clearly marked so ritually pure pilgrims will not be contaminated accidentally and then prevented from completing their pilgrimage. The whitewash characterizing these graves may have been damaged during the rainy season.</i>, and also goes to inspect for <i>kilaim</i><sup>9</sup><i class=\"footnote\">As described in <a class=\"refLink\" data-ref=\"Jerusalem Talmud Shekalim 1:2:1\" href=\"/Jerusalem_Talmud_Shekalim.1.2.1\">Mishnah 2</a>.</i>.",
+    "<strong>HALAKHAH:</strong> “On the first of Adar one proclaims,” etc. Why on the first of Adar? So that Israel should bring their <i>sheqalim</i> in time and it should be disbursed from the new contributions to the treasury<sup>10</sup><i class=\"footnote\">The technical term for the Temple tax.</i> on time on the First of Nisan. And Rebbi Samuel ben Rav Isaac said, [the heave of the treasury]<sup>11</sup><i class=\"footnote\">Corrector’s addition from the Babli. From here to the end of the paragraph there is a parallel in <i>Roš Haššanah</i>1:1 (56d line 4, <b>ר</b>).</i> as at its start, as it is written<sup>12</sup><i class=\"footnote\"><a class=\"refLink\" data-ref=\"Exodus 40:17\" href=\"/Exodus.40.17\"><i>Ex.</i> 40:17</a>.</i>, <i>it was in the First month of the Second year, on the first of the month, that the Sanctuary was erected.</i> It was stated hereto, on the day the Sanctuary was erected, on the same day the contribution<sup>13</sup><i class=\"footnote\">The Temple tax required in <a class=\"refLink\" data-ref=\"Exodus 30:11-16\" href=\"/Exodus.30.11-16\"><i>Ex.</i> 30:11–16</a>.</i> was collected. Rebbi Tabi, Rebbi Yoshia in the name of Cahana. It is said here <i>months</i>, and it is said there, <i>months</i><sup>14</sup><i class=\"footnote\">As shown later, the reference is to <a class=\"refLink\" data-ref=\"Numbers 28:14\" href=\"/Numbers.28.14\"><i>Num</i>. 28:14</a>: <i>this is the monthly elevation offering on its day of the New Moon, for the months of the year</i>. This is compared to <a class=\"refLink\" data-ref=\"Exodus 12:2\" href=\"/Exodus.12.2\"><i>Ex.</i> 12:2</a>, <i>this month shall be for you the start of months; it is the first of the months of the year</i>. The latter verse designates the month of the spring equinox as start of the year in all matters of sacrificial ritual.</i>. Since <i>months</i> mentioned there are only counted from Nisan, so also <i>months</i> mentioned here are only counted from Nisan. Rebbi Jonah said, Rebbi Tabi left out the start and only quoted the end; this is not done since it was stated<sup>15</sup><i class=\"footnote\">In the way the <i>baraita</i> was stated by R. Tabi, it is impossible to see what it refers to. One has to state the <i>baraita</i> in its entirety for it to make sense. <a class=\"refLink\" data-ref=\"Rosh Hashanah 7a\" href=\"/Rosh_Hashanah.7a\">Babli <i>Roš Haššanah</i>7a</a>.</i>: <i>This is the elevation sacrifice for a month at its New Moon</i><sup>16</sup><i class=\"footnote\"><a class=\"refLink\" data-ref=\"Numbers 28:14\" href=\"/Numbers.28.14\"><i>Num</i>. 28:14</a>.</i>. I could think that one should collect every month, the verse says <i>at its New Moon for the months</i>; at one New Moon one collects for all months of the year. I could think on any month of his choosing, it is said here <i>months</i>, and it is said there, <i>months</i>. Since <i>months</i> mentioned there are only counted from Nisan, so also <i>months</i> mentioned here are only counted from Nisan.",
+    "What means “one lets hear”? Rav Huna said, one proclaims<sup>17</sup><i class=\"footnote\">Since the Hebrew expression was no longer understood, it is substituted by the Semitic <i>hif`il</i> of the Greek verb κηρύσσω.</i>, as you are saying<sup>18</sup><i class=\"footnote\"><a class=\"refLink\" data-ref=\"II Chronicles 24:9\" href=\"/II_Chronicles.24.9\"><i>2Chr.</i> 24:9</a>.</i>, <i>they made a proclamation in Jehudah and Jerusalem</i>.",
+    "<sup>19</sup><i class=\"footnote\">An almost exact parallel is in <a class=\"refLink\" data-ref=\"Jerusalem Talmud Megillah 1:4:15-5:9\" href=\"/Jerusalem_Talmud_Megillah.1.4.15-5.9\"><i>Megillah</i> 1:7</a>, 71a line 21, <b>מ</b>.</i> There, we have stated<sup>20</sup><i class=\"footnote\"><a class=\"refLink\" data-ref=\"Jerusalem Talmud Megillah 1:5:1\" href=\"/Jerusalem_Talmud_Megillah.1.5.1\">Mishnah <i>Megillah</i>1:7</a>.</i>: “The only difference between a First Adar and a Second Adar<sup>21</sup><i class=\"footnote\">In an intercalary year, where a thirteenth month is added preceding the next Nisan, this “Second Adar” is the month where dates scheduled for Adar should be observed.</i> is the reading of the Esther scroll and gifts to the poor<sup>22</sup><i class=\"footnote\">Both in observance of the Purim festivities.</i>”. Rebbi Simon in the name of Rebbi Joshua ben Levi, also proclamations regarding <i>sheqalim</i> and <i>kilaim</i> are between them<sup>23</sup><i class=\"footnote\">Mishnah <i>Sheqalim</i>1:1 in an intercalary year refers to the first day of Second Adar.</i>. Rebbi Ḥelbo and Rav Ḥuna, Rav in the name of the Great Rabbi Ḥiyya: Everybody may fulfill his obligation on the Fourteenth, which is the time of its reading<sup>24</sup><i class=\"footnote\">This has nothing to do with the topic under discussion. <a class=\"refLink\" data-ref=\"Jerusalem Talmud Megillah 1:1:1-12\" href=\"/Jerusalem_Talmud_Megillah.1.1.1-12\">Mishnah Megillah 1:1</a> gives different dates for the reading of the <i>megillah</i> for different places. It is stated that the dates other than the 14<sup>th</sup> of Adar are not absolute; the 14<sup>th</sup> is valid at all places.</i>. Rebbi Yose said, this<sup>25</sup><i class=\"footnote\">This refers to the statement of R. Simon.</i> is correct. Did they not say,. one proclaims about <i>sheqalim</i>, so that Israel should bring their <i>sheqalim</i> in time? If you would say on the First Adar, there still would be sixty days {left} in the year. Did they not say, also one goes to inspect for <i>kilaim</i>, not that the plants should be recognizable? If you would say in the First Adar, they still would be small.",
+    "Rebbi Ḥisqiah asked: But then the people in Babylonia proclaim about <i>sheqalim</i> on the start of the month<sup>26</sup><i class=\"footnote\">In the version of the ms., Ḥizqiah points out that the Mishnah applied to countries outside the Holy Land leads to nonsensical results. In the version printed in the Babli, his is a declarative sentence, that in Babylonia one proclaims at the start of winter (about November), so the money may be delivered to Jerusalem in time.</i>. Was it not so that Israel should bring their <i>sheqalim</i> in time and it should be disbursed from the new contributions to the treasury on time on the First of Nisan? Rebbi Ulla asked before Rebbi Mana: Did we not state<sup>27</sup><i class=\"footnote\"><a class=\"refLink\" data-ref=\"Jerusalem Talmud Shekalim 3:1:1-4\" href=\"/Jerusalem_Talmud_Shekalim.3.1.1-4\">Mishnah 3:1</a>.</i>, “three times a year one disburses from the treasury, half a month before<sup>28</sup><i class=\"footnote\">In contrast to the Babli and the text of B, one reads פרס as (Latin) <i>pars</i>, “one half”, meaning half a month before the holiday indicated (Halakhah 3:1, <a class=\"refLink\" data-ref=\"Tosefta Shekalim (Lieberman) 2:1\" href=\"/Tosefta_Shekalim_(Lieberman).2.1\">Tosephta 2:1</a>).</i> Passover, before Pentecost, before Tabernacles.” He told him, we may say, before Passover, from those near; before Pentecost, from those farther away, before Tabernacles, from those still farther away. He answered him, it was collected all at one time. And why did they say, “three times a year”? To make a procession<sup>29</sup><i class=\"footnote\">Greek πομπή, Latin <i>pompa</i>.</i> of the occasion.",
+    "Rebbi Jehudah bar Pazi in the name of Rebbi: May one read this and not be ashamed<sup>30</sup><i class=\"footnote\">In B: afraid. In the biblical narrative, all good actions are ascribed to individuals, the bad to the entire people.</i>? In a good sense, <i>every one of goodwill</i><sup>31</sup><i class=\"footnote\"><a class=\"refLink\" data-ref=\"Exodus 35:5\" href=\"/Exodus.35.5\"><i>Ex.</i> 35:5</a>.</i>; in a bad sense, <i>all the people took off the gold rings in their ears</i><sup>32</sup><i class=\"footnote\"><a class=\"refLink\" data-ref=\"Exodus 32:3\" href=\"/Exodus.32.3\"><i>Ex.</i> 32:3</a>.</i>. In a good sense, <i>Moses led the people out</i><sup>33</sup><i class=\"footnote\"><a class=\"refLink\" data-ref=\"Exodus 19:1\" href=\"/Exodus.19.1\"><i>Ex.</i> 19:1</a>.</i>; in a bad sense, <i>all of you ganged up against me</i><sup>34</sup><i class=\"footnote\"><a class=\"refLink\" data-ref=\"Deuteronomy 1:22\" href=\"/Deuteronomy.1.22\"><i>Deut</i>. 1:22</a>.</i>. In a good sense, <i>then Moses and the Children of Israel sang</i><sup>35</sup><i class=\"footnote\"><a class=\"refLink\" data-ref=\"Exodus 15:1\" href=\"/Exodus.15.1\"><i>Ex.</i> 15:1</a>.</i>; in a bad sense, <i>the entire congregation started wailing</i><sup>36</sup><i class=\"footnote\"><a class=\"refLink\" data-ref=\"Numbers 14:1\" href=\"/Numbers.14.1\"><i>Num</i>. 14:1</a>.</i>. Rebbi Ḥiyya bar Abba said, <i>indeed they got up early to destroy</i><sup>37</sup><i class=\"footnote\"><a class=\"refLink\" data-ref=\"Zephaniah 3:7\" href=\"/Zephaniah.3.7\"><i>Zeph</i>. 3:7</a>.</i>. Any destructive action they made early in the morning. Rebbi Abba bar Aḥa said, one cannot understand the character of this people; they are asked for the {golden} calf and are giving, for the Sanctuary and are giving. Rebbi Yose ben Ḥanina stated this <i>baraita</i>:<sup>38</sup><i class=\"footnote\">To answer R. Ḥiyya bar Abba’s question.</i> <i>You shall make a cover of pure gold</i><sup>39</sup><i class=\"footnote\"><a class=\"refLink\" data-ref=\"Exodus 25:17\" href=\"/Exodus.25.17\"><i>Ex.</i> 25:17</a>.</i>, may the gold of the cover come and atone for the gold of the calf.",
+    "Rebbi Ḥaggai in the name of Rebbi Samuel bar Naḥman. Three contributions are mentioned in the paragraph<sup>40</sup><i class=\"footnote\"><a class=\"refLink\" data-ref=\"Exodus 25:2-3\" href=\"/Exodus.25.2-3\"><i>Ex.</i> 25:2–3</a>, as explained in the text.</i>, the contribution for the bases<sup>41</sup><i class=\"footnote\">As noted in <a class=\"refLink\" data-ref=\"Exodus 38:27-28\" href=\"/Exodus.38.27-28\"><i>Ex.</i> 38:27–28</a>, the silver contributed by half-<i>sheqalim</i> contributed by a head tax according to <a class=\"refLink\" data-ref=\"Exodus 30:11-16\" href=\"/Exodus.30.11-16\"><i>Ex.</i> 30:11–16</a> was used to cast the bases, hooks, and covers, for the poles for the posts securing the sanctuary and its gobelins.</i>, the contribution for <i>sheqalim</i><sup>42</sup><i class=\"footnote\">Since the receipt of the first tax was used for construction purposes, there must have been a second tax (in the amount of the first but collected only in the following years, not the year of construction) to provide for the communal sacrifices.</i>, and the contribution for the Sanctuary<sup>432</sup>. <i>Speak to the Children of Israel, they shall take for me a contribution</i>, that is the contribution for the bases. <i>From any man of goodwill take my contribution</i>, this refers to the contribution for <i>sheqalim</i>. <i>This is the contribution which you shall take from them</i>, that is the contribution for the Sanctuary. The contribution for the Sanctuary is for the Sanctuary, they may use it in any way they want. The contribution for <i>sheqalim</i> is for sacrifices, they may use it in any way they want, so that everybody’s part of it be the same. The contribution for the bases [is for the bases]<sup>44</sup><i class=\"footnote\">Addition by the corrector following B but probably incorrect; the fact that it is equal for everybody distinguishes it from the contributions to the Sanctuary.</i>, <i>the rich may not increase and the poor may not decrease</i><sup>45</sup><i class=\"footnote\"><a class=\"refLink\" data-ref=\"Exodus 30:15\" href=\"/Exodus.30.15\"><i>Ex.</i> 30:15</a>.</i>. Rebbi Abun said, also in this paragraph<sup>46</sup><i class=\"footnote\">In <a class=\"refLink\" data-ref=\"Exodus 30:11-16\" href=\"/Exodus.30.11-16\"><i>Ex.</i> 30:11–16</a>. The expression תְּרוּמָה לַיי or תְּרומַת יי appears in vv.. 13,14,15 <a class=\"refLink\" data-ref=\"Megillah 29b\" href=\"/Megillah.29b\">Babli <i>Megillah</i>29b</a>.</i> are three contributions mentioned.",
+    "“On the fifteenth of this month one reads the Esther scroll in fortified places.” But did not Rebbi Ḥelbo, Rav Ḥuna, Rav in the name of the Elder Rabbi Ḥiyya, say<sup>246</sup>: Everybody may fulfill his obligation on the Fourteenth, which is the time of its reading? It only comes to teach you that (the obligations apply to the Second Adar) [all obligations which apply to the Second Adar apply to the First Adar.]<sup>47</sup><i class=\"footnote\">The text in parentheses is the scribe’s, the one in brackets the corrector’s adapted to the text of B. The scribe’s text is clear; since only one 14<sup>th</sup> and one 15<sup>th</sup> are mentioned, the reading of the scroll happens only once and this is the Second Adar of an intercalary year. In this version, in such a year Purim is not noticed at all in the First Adar. The corrector’s text and B take the opposite opinion, difficult to understand at this moment.</i> Rebbi Yose and Rebbi Aḥa were sitting together. Rebbi Yose said to Rebbi Aḥa, it only is reasonable for the past, not for the future<sup>48</sup><i class=\"footnote\">The rule of R. Ḥiyya may only be applied to unforeseen circumstances. If people read on the 14<sup>th</sup> when according to the rules they should have read on the 15th, one does not tell them to read a second time. But if people from such a place come to ask before the 14<sup>th</sup> whether they may read on the 14t<sup>h</sup>, one tells them no, they have to read on the 15<sup>th</sup>.</i>; as it was stated, at a place where one is used to read it both days<sup>49</sup><i class=\"footnote\">In a city where there is a doubt whether one should read on the 14<sup>th</sup> or the 15th.</i> one reads it both days. He said to him, I also am of this opinion. Rebbi Mana said, this is correct. If one read it on the Fourteenth and then wants to read it<sup>49</sup><i class=\"footnote\">In a city where there is a doubt whether one should read on the 14<sup>th</sup> or the 15th.</i> on the Fifteenth, would one not listen to him? If you are saying otherwise, you would eliminate the time of the fortified places with your hands<sup>50</sup><i class=\"footnote\">Which is practice to be followed, being stated in two Mishnaiot.</i>.",
+    "<sup>51</sup><i class=\"footnote\">A parallel (original) text for this and the following paragraph is in <a class=\"refLink\" data-ref=\"Jerusalem Talmud Megillah 1:4:15-5:9\" href=\"/Jerusalem_Talmud_Megillah.1.4.15-5.9\"><i>Megillah</i>1:7</a>, 71a line 14 (<b>מ</b>).</i> It was stated: Rabban Simeon ben Gamliel says, Obligations which apply to the Second Adar do not apply to the First Adar except for eulogy and for fasting which are equal for both<sup>52</sup><i class=\"footnote\"><a class=\"refLink\" data-ref=\"Tosefta Megillah (Lieberman) 1:6\" href=\"/Tosefta_Megillah_(Lieberman).1.6\">Tosephta <i>Megillah</i>1:6</a>, <a class=\"refLink\" data-ref=\"Megillah 6b\" href=\"/Megillah.6b\">Babli <i>Megillah</i> 6b</a>.</i>. Rebbi Abba, Rebbi Jeremiah in the name of Rav, Rebbi Simeon in the name of Rebbi Joshua ben Levi: Practice follows Rabban Simeon ben Gamliel. Rebbi Ḥuna, the rabbi of Sepphoris said, Rebbi Ḥanina made it a custom in Sepphoris following Rabban Simeon ben Gamliel. He only said custom, therefore not as practice<sup>53</sup><i class=\"footnote\">It is obligatory only in places which adopted the ruling.</i>.",
+    "But in matters of documents one writes the First Adar, the Second Adar. only that for the Second Adar one writes תִינייָן. Rebbi Jehudah says, the Second Adar one writes, and it is enough<sup>54</sup><i class=\"footnote\">This paragraph is thoroughly garbled, and the text of B is worse. The intelligible text is the original in <i>Megillah</i>(and <a class=\"refLink\" data-ref=\"Tosefta Megillah (Lieberman) 1:6\" href=\"/Tosefta_Megillah_(Lieberman).1.6\">Tosephta <i>Megillah</i>1:6</a>). In the anonymous opinion (ascribed in B to R. Meïr), for both months one writes Adar, but the second one is qualified by “second” (in Aramaic, the language of contracts in both Talmudim.) R. Jehudah agrees that “Adar” alone means the First Adar in an intercalary year, but the Second may be indicated by a single letter ת֗, first letter of the Aramaic word “second”.</i>.",
+    "“One repairs the roads,<sup>4</sup><i class=\"footnote\">Rural roads which might have been damaged during the rainy season, to prepare them for the pilgrims going to Jerusalem in the following month.</i> and the streets<sup>5</sup><i class=\"footnote\">Municipal roads.</i>, and water pools<sup>6</sup><i class=\"footnote\">Since the term is not discussed in the Halakhah, it is difficult to know whether one refers to religious <i>miqwaot</i> or to water supply for the pilgrims. Both kinds of pools may contain dust deposited there by the rains of the winter months.</i>, and one looks after all public needs<sup>7</sup><i class=\"footnote\">Described in the Halakhah.</i>.” “<sup>55</sup><i class=\"footnote\">Tosephta <i>Mo`ed Qaṭan</i>2:11. From here to the end of the Halakhah the text is from <i>Mo`ed Qaṭan</i>1:1 (80b 66), with no or little relevance here. The <i>Mo`ed Qaṭan</i> text of the ms. is indicated by <b>ק</b>; in addition there exist an Ashkenazic text of the Yerushalmi (A) edited by J. Sussman in <i>Kobez al Yad</i>12 (1994), pp. 62–63.<br>Most of the activities permitted in the <i>baraita</i> are for the benefit of individuals, not the public, most clearly delivering a new pair of shoes on the semi-holiday, mentioned last in the <i>baraita</i>. The only reason for its inclusion here is the identity of the expression “public needs”, applied both to public works in preparation for the holiday and permitted activities during the intermediate days of an extended holiday.</i> The following are the public needs: One judges civil suits, and capital crimes, and cases of flogging, and one redeems valuations<sup>56</sup><i class=\"footnote\">Fixed amounts dedicated to the Temple, <a class=\"refLink\" data-ref=\"Leviticus 27:2-6\" href=\"/Leviticus.27.2-6\"><i>Lev.</i> 27:2–6</a>.</i>, and bans<sup>57</sup><i class=\"footnote\">Dedications reserved for the Cohanim, <a class=\"refLink\" data-ref=\"Numbers 18:14\" href=\"/Numbers.18.14\"><i>Num</i>. 18:14</a>.</i>, and dedications<sup>58</sup><i class=\"footnote\">Dedications for the upkeep of the Temple, other than currency.</i>, one lets the suspected adulteress drink<sup>59</sup><i class=\"footnote\"><a class=\"refLink\" data-ref=\"Numbers 5:11-31\" href=\"/Numbers.5.11-31\"><i>Num</i>. 5:11–31</a>.</i>, and burns the Cow<sup>60</sup><i class=\"footnote\"><a class=\"refLink\" data-ref=\"Numbers 19\" href=\"/Numbers.19\"><i>Num</i>. 19</a>.</i>, and one breaks the neck of the calf whose neck was to be broken<sup>61</sup><i class=\"footnote\">For an unsolved murder case, <a class=\"refLink\" data-ref=\"Deuteronomy 21:1-9\" href=\"/Deuteronomy.21.1-9\"><i>Deut</i>. 21:1–9</a>.</i>, and one pierces the ear of a Hebrew slave<sup>62</sup>, and one purifies the sufferer from skin disease<sup>63</sup>, and removes the shoe from the block but one may not return it.”",
+    "“One marks the graves.” Were they not already marked in Adar? Explain it if there was a flood caused by rain which rinsed it off<sup>64</sup><i class=\"footnote\">This also is copied from <i>Mo`ed Qaṭan</i>. The question is why one should hire people to mark graves (or in the next paragraph to check for <i>kilaim</i>) on the semi-holidays approximately on the spring and fall equinoxes (Mishnah <i>Mo`ed Qaṭan</i>1:2) when they already had been checked in late winter. The reason that one tries to have all public works done on semi-holidays is that at that time most journeymen are without work and ready to work for lower wages. One provides work for the poor and saves taxpayer’s money at the same time. Cf. Babli <i>Mo`ed Qaṭan</i>6a.</i>.",
+    "“And also one goes to inspect for <i>kilaim</i><sup>8</sup><i class=\"footnote\">Graves not in a cemetery, which must be clearly marked so ritually pure pilgrims will not be contaminated accidentally and then prevented from completing their pilgrimage. The whitewash characterizing these graves may have been damaged during the rainy season.</i>.” Did they not already go in Adar? Explain it if the year was late and the plants not recognizable.",
+    "<sup>65</sup><i class=\"footnote\">This text in addition is in <i>Ma`aser Šeni</i>5:1, :Notes 17–25, <b>ש</b>) and <a class=\"refLink\" data-ref=\"Jerusalem Talmud Sotah 9:1:5-8\" href=\"/Jerusalem_Talmud_Sotah.9.1.5-8\"><i>Sotah</i>9:1 (Notes 29–31</a>, <b>ס</b>). Babli <i>Mo`ed Qatan</i>6a. The biblical roots for the duty of the authorities to mark the places of graves with taxpayers’ money.</i> From where about marks? Rebbi Berekhiah, Rebbi Jacob the son of the daughter of Jacob, in the name of Rebbi Onias from Hauran. Rebbi Yose said it, Rebbi Jacob bar Aḥa in the name of Rebbi Onias from Hauran. Rebbi Ḥizqiah, Rebbi Uziel the son of Rebbi Onias from Hauran in the name of Rebbi Onias from Hauran: <i>impure, impure, he shall call out</i><sup>67</sup><i class=\"footnote\"><a class=\"refLink\" data-ref=\"Leviticus 13:46\" href=\"/Leviticus.13.46\"><i>Lev.</i> 13:46</a>. An inappropriate reference since the verse refers to the impurity of the sufferers from skin disease, not of corpses.</i>; the impurity itself has to call out and say to you: go away! Rebbi Hila in the name of Rebbi Samuel bar Naḥman: <i>The emissaries shall crisscross the land; if one sees a bone of a human he builds a sign near it</i>.<sup>68</sup><i class=\"footnote\"><a class=\"refLink\" data-ref=\"Ezekiel 39:15\" href=\"/Ezekiel.39.15\"><i>Ez</i>. 39:15</a>.</i> {<i>A bone</i>}<sup>69</sup><i class=\"footnote\">Quoted from the parallels; in parallel to the following statements the source in the verse should be stated, except for the version of B which quotes the verse only up to <i>a bone</i>.</i>, from here that one makes signs for bones. <i>A human</i>, from here that one makes signs for spine and skull. <i>He builds</i>, from here that one makes signs on fixed stones. If you say on loose ones, it would move and make other places impure. <i>Near it</i>, on a place of purity. <i>A sign</i>, from here the marks.",
+    "<sup>70</sup><i class=\"footnote\"><a class=\"refLink\" data-ref=\"Tosefta Shekalim (Lieberman) 1:5\" href=\"/Tosefta_Shekalim_(Lieberman).1.5\">Tosephta <i>Šeqalim</i>1:5</a>.</i> If one found a single marked stone, even though one should not keep it so, if somebody forms a tent over it he is impure; I say a marked corpse<sup>71</sup><i class=\"footnote\">This expression has no explanation; B simply has “a corpse”, probably since the printer did not understand the word to be inserted. . Most parallels have קמצוץ “compressed”, a corpse buried with its head between the legs, so it fitted under the stone. This is not a Jewish burial custom. Since the majority of sources reads “impure”, they imply that Gentile corpses cause “tent impurity” (<a class=\"refLink\" data-ref=\"Numbers 19\" href=\"/Numbers.19\"><i>Num</i>. 19</a>, <a class=\"refLink\" data-ref=\"Yevamot 61a\" href=\"/Yevamot.61a\">Babli <i>Yebamot</i>61a</a>); only the texts in <i>Ma`aser Šeni</i> and the Tosephta follow R. Simeon who restricts tent (and any kind of biblical) impurity to Jewish bodies.</i> was under it. If there were two, he who forms a tent over any one of them is pure; between them he is impure. If between them was a ploughed strip they are single stones, between them the area is pure and around them<sup>62</sup> impure.",
+    "It was stated<sup>73</sup><i class=\"footnote\"><a class=\"refLink\" data-ref=\"Tosefta Shekalim (Lieberman) 1:5\" href=\"/Tosefta_Shekalim_(Lieberman).1.5\">Tosephta <i>Šeqalim</i>1:5</a>.</i>: One does not mark flesh, for perhaps it will decompose<sup>74</sup><i class=\"footnote\">Then it is no longer impure.</i>. Rebbi Justus bar Shunem asked before Rebbi Mana: Will that not cause pure food to be retroactively made impure<sup>75</sup><i class=\"footnote\">If the carrier of pure food learns that he has crossed a place where human flesh (without enough bone to cause tent impurity) was buried.</i>? He said to him, it is better that these should become unusable for a limited time than that {the earth} become unusable forever."
   ],
   "textDepth": 3,
   "titleVariants": [
@@ -251,17 +188,85 @@
   "type": "Talmud",
   "versionNotes": "",
   "versionNotesInHebrew": "",
-  "versionSource": "https://korenpub.co.il/products/vol-8-shekalim",
+  "versionSource": "https://www.nli.org.il/he/books/NNL_ALEPH001901012/NLI",
   "versionStatus": "locked",
-  "versionTitle": "William Davidson Edition - English",
+  "versionTitle": "The Jerusalem Talmud, translation and commentary by Heinrich W. Guggenheimer. Berlin, De Gruyter, 1999-2015",
   "versionTitleInHebrew": "",
   "versions": [
     {
-      "digitizedBySefaria": false,
+      "digitizedBySefaria": "",
       "extendedNotes": "",
       "extendedNotesHebrew": "",
       "language": "en",
-      "license": "CC-BY-NC",
+      "license": "CC-BY",
+      "priority": "",
+      "purchaseInformationImage": "",
+      "purchaseInformationURL": "",
+      "status": "locked",
+      "title": "Jerusalem Talmud Shekalim",
+      "versionNotes": "",
+      "versionNotesInHebrew": "",
+      "versionSource": "https://www.nli.org.il/he/books/NNL_ALEPH001901012/NLI",
+      "versionTitle": "The Jerusalem Talmud, translation and commentary by Heinrich W. Guggenheimer. Berlin, De Gruyter, 1999-2015",
+      "versionTitleInHebrew": ""
+    },
+    {
+      "digitizedBySefaria": "",
+      "extendedNotes": "",
+      "extendedNotesHebrew": "",
+      "language": "he",
+      "license": "CC-BY",
+      "priority": "",
+      "purchaseInformationImage": "",
+      "purchaseInformationURL": "",
+      "status": "locked",
+      "title": "Jerusalem Talmud Shekalim",
+      "versionNotes": "",
+      "versionNotesInHebrew": "",
+      "versionSource": "https://www.nli.org.il/he/books/NNL_ALEPH001901012/NLI",
+      "versionTitle": "The Jerusalem Talmud, edition by Heinrich W. Guggenheimer. Berlin, De Gruyter, 1999-2015",
+      "versionTitleInHebrew": ""
+    },
+    {
+      "digitizedBySefaria": "",
+      "extendedNotes": "",
+      "extendedNotesHebrew": "",
+      "language": "he",
+      "license": "",
+      "priority": "",
+      "purchaseInformationImage": "",
+      "purchaseInformationURL": "",
+      "status": "locked",
+      "title": "Jerusalem Talmud Shekalim",
+      "versionNotes": "",
+      "versionNotesInHebrew": "",
+      "versionSource": "https://www.mechon-mamre.org/b/r/r0.htm",
+      "versionTitle": "Mechon-Mamre",
+      "versionTitleInHebrew": ""
+    },
+    {
+      "digitizedBySefaria": "",
+      "extendedNotes": "",
+      "extendedNotesHebrew": "",
+      "language": "he",
+      "license": "",
+      "priority": "",
+      "purchaseInformationImage": "",
+      "purchaseInformationURL": "",
+      "status": "locked",
+      "title": "Jerusalem Talmud Shekalim",
+      "versionNotes": "",
+      "versionNotesInHebrew": "",
+      "versionSource": "https://www.nli.org.il/en/books/NNL_ALEPH001936038/NLI",
+      "versionTitle": "Venice Edition",
+      "versionTitleInHebrew": ""
+    },
+    {
+      "digitizedBySefaria": "",
+      "extendedNotes": "",
+      "extendedNotesHebrew": "",
+      "language": "en",
+      "license": "",
       "priority": "",
       "purchaseInformationImage": "",
       "purchaseInformationURL": "",
@@ -282,29 +287,29 @@
       "priority": "",
       "purchaseInformationImage": "",
       "purchaseInformationURL": "",
-      "status": "",
-      "title": "Jerusalem Talmud Shekalim",
-      "versionNotes": "",
-      "versionNotesInHebrew": "",
-      "versionSource": "https://www.nli.org.il/he/books/NNL_ALEPH001901012/NLI",
-      "versionTitle": "Vocalized Aramaic",
-      "versionTitleInHebrew": ""
-    },
-    {
-      "digitizedBySefaria": "",
-      "extendedNotes": "",
-      "extendedNotesHebrew": "",
-      "language": "he",
-      "license": "CC-BY-NC",
-      "priority": "",
-      "purchaseInformationImage": "",
-      "purchaseInformationURL": "",
       "status": "locked",
       "title": "Jerusalem Talmud Shekalim",
       "versionNotes": "",
       "versionNotesInHebrew": "",
       "versionSource": "https://korenpub.co.il/products/vol-8-shekalim",
       "versionTitle": "William Davidson Edition - Hebrew",
+      "versionTitleInHebrew": ""
+    },
+    {
+      "digitizedBySefaria": "",
+      "extendedNotes": "",
+      "extendedNotesHebrew": "",
+      "language": "en",
+      "license": "",
+      "priority": "",
+      "purchaseInformationImage": "",
+      "purchaseInformationURL": "",
+      "status": "",
+      "title": "Jerusalem Talmud Shekalim",
+      "versionNotes": "",
+      "versionNotesInHebrew": "",
+      "versionSource": "https://www.nli.org.il/he/books/NNL_ALEPH002182155/NLI",
+      "versionTitle": "Le Talmud de Jérusalem, traduit par Moise Schwab, 1878-1890 [fr]",
       "versionTitleInHebrew": ""
     }
   ]

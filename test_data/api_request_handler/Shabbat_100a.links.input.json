@@ -862,15 +862,15 @@
     "heVersionTitle": "Maginei Eretz: Shulchan Aruch Orach Chaim, Lemberg, 1893",
     "heVersionTitleInHebrew": "ספר מגיני ארץ: שלחן ערוך. למברג, תרנ\"ג",
     "index_title": "Shulchan Arukh, Orach Chayim",
-    "license": null,
+    "license": "CC0",
     "ref": "Shulchan Arukh, Orach Chayim 363:36",
     "sourceHasEn": false,
     "sourceHeRef": "אורח חיים שס״ג:ל״ו",
     "sourceRef": "Shulchan Arukh, Orach Chayim 363:36",
     "text": [],
     "type": "ein mishpat / ner mitsvah",
-    "versionTitle": null,
-    "versionTitleInHebrew": null
+    "versionTitle": "Sefaria Community Translation",
+    "versionTitleInHebrew": "תרגום קהילת ספריא"
   },
   {
     "_id": "59ef3064d6e4a90d4d5cd93a",
@@ -1427,6 +1427,37 @@
     "type": "commentary",
     "versionTitle": null,
     "versionTitleInHebrew": null
+  },
+  {
+    "_id": "619e8f78ad9c4d6ad7417e49",
+    "anchorRef": "Shabbat 100a:10",
+    "anchorRefExpanded": [
+      "Shabbat 100a:10"
+    ],
+    "anchorVerse": 10,
+    "category": "Talmud",
+    "collectiveTitle": {
+      "en": "Jerusalem Talmud Shabbat",
+      "he": "תלמוד ירושלמי שבת"
+    },
+    "commentaryNum": 3.0003,
+    "compDate": 400,
+    "errorMargin": 25,
+    "he": "רִבִּי יוֹסֵה רִבִּי אַבָּהוּ בְשֵׁם רִבִּי יוֹחָנָן. בְּשֶׁהָיָה הַמָּקוֹם מוֹנְדְּרָן. כְּהָדָא דְתַנִּינָן. זָרַק חוּץ לְאַרְבַּע אַמּוֹת וְנִתְגַּלְגֵּל חוּץ לְאַרְבַּע אַמּוֹת חַייָב: אָתָא רִבִּי חִזְקִיָּה רִבִּי אַבָּהוּ בְשֵׁם רִבִּי יוֹחָנָן. וְהִיא שֶׁנָּחָה.",
+    "heLicense": "CC-BY",
+    "heTitle": "תלמוד ירושלמי שבת",
+    "heVersionTitle": "The Jerusalem Talmud, edition by Heinrich W. Guggenheimer. Berlin, De Gruyter, 1999-2015",
+    "heVersionTitleInHebrew": "",
+    "index_title": "Jerusalem Talmud Shabbat",
+    "license": "CC-BY",
+    "ref": "Jerusalem Talmud Shabbat 11:3:3",
+    "sourceHasEn": true,
+    "sourceHeRef": "תלמוד ירושלמי שבת י״א:ג׳:ג׳",
+    "sourceRef": "Jerusalem Talmud Shabbat 11:3:3",
+    "text": "Rebbi Yose, Rebbi Abbahu in the name of Rebbi Joḥanan: If the place was inclined, as we have stated, “one who threw more than four cubits and it rolled beyond<sup>83</sup><i class=\"footnote\">This obviously is a misquote.</i> four cubits is liable.” There came Rebbi Ḥizqiah, Rebbi Abbahu in the name of Rebbi Joḥanan, only if it came to rest<sup>84</sup><i class=\"footnote\">There is no liability unless the object came to rest since it might either roll back into 4 cubits from its starting point or end up in <i>karmelit</i>. <a class=\"refLink\" data-ref=\"Shabbat 100a\" href=\"/Shabbat.100a\">Babli 100a</a>.</i>.",
+    "type": "related passage",
+    "versionTitle": "The Jerusalem Talmud, translation and commentary by Heinrich W. Guggenheimer. Berlin, De Gruyter, 1999-2015",
+    "versionTitleInHebrew": ""
   },
   {
     "_id": "58962026d6e4a91d7625e5e9",
@@ -3333,9 +3364,9 @@
     "compDate": 2013,
     "errorMargin": 7,
     "he": "(19) רומז כאן שקומת משה רבינו לא היתה בפועל עשר אמות, אלא כך היה ראוי שתהיה קומתו. וכן כתב להדיא בח\"א לב\"מ פד. [ג, לג:], וז\"ל: \"משה רבינו כמה הוי, עשר אמות. ואין דבר זה מצד שהגוף כל כך במעלה, רק מפני כי לפי מדריגת ומעלת הנפש אשר יש לבריאה... כי היה ראוי לשלימות ומעלת נפשו עשר אמות. ואם לא היה נמצא זה השעור, הוא לחסרון הגוף, ומכל מקום מה שאפשר שיהיה לו היה לו בגדלות\" [הובא למעלה פי\"ב הערה 132]. וכן משמעות דבריו בגו\"א במדבר פכ\"א אות לג [שנח.]. <b>ויש להעיר</b> על כך, כי הגמרא [שבת צב.] למדה מקומתו של משה הלכה למעשה בדיני הוצאה בשבת, שאמרו שם: \"המוציא משאוי למעלה מעשרה טפחים חייב, שכן משא בני קהת [\"מעבירו באויר בידו, ואינו על כתפו, וגבוה מן הארץ עשרה קאמר... והא דתנן (שבת ק.) הזורק ארבע אמות בכותל למעלה מעשרה כזורק באויר, אלמא אין למעלה מעשרה רשות הרבים, דווקא זורק, אבל מעביר חייב, דיליף מבני קהת במשכן\" (רש\"י שם)]. ומשא בני קהת מנלן, דכתיב [במדבר ג, כו] 'על המשכן ועל המזבח סביב', מקיש מזבח למשכן; מה משכן עשר אמות, אף מזבח עשר אמות. ומשכן גופיה מנלן, דכתיב [שמות כו, טז] 'עשר אמות אורך הקרש'. וכתיב [שמות מ, יט] 'ויפרוש את האהל על המשכן', ואמר רב, משה רבינו פרשו. מכאן אתה למד גובהן של לויים עשר אמות [\"דקא סלקא דעתך שאר הלוים נמי גביהי כמשה\" (רש\"י שם)]. וגמירי דכל טונא דמידלי במוטות, תילתא מלעיל, ותרי תילתי מלתחת, אישתכח דהוה מידלי טובא [\"וכיון דמזבח עשר אמות, והוא נושא בכתף... והלוים עשר אמות, כי מדלו ליה תילתא למעלה מראשיהן או מכתיפו, נמצא גבוה מן הארץ קרוב לשליש של עשר אמות, דהוו טובא טפי יותר מעשרה טפחים\" (רש\"י שם)]\". אך אם קומתו של משה רבינו היתה פחותה מעשר אמות [כגון שהיתה שבע אמות או פחות], שוב אין המזבח מתרומם מעל הארץ יותר מעשרה טפחים [כי המזבח היה שש אמות ושני שליש האמה למטה מראשיהן, כאשר גובהן היה שליש האמה יותר מכך]. הרי נמצא שמשה רבינו היה בפועל גובה עשר אמות, ולא רק במהות. ואולי יש לומר, שדיניה של תורה נקבעים על פי הראוי, ולא על פי המצוי. והואיל והיה ראוי שקומת משה תהיה עשר אמות, לכך ההלכה נקבעה בהתאם לכך. ואע\"פ שבפועל המזבח לא התרומם מעל לארץ יותר מעשרה טפחים, אך הואיל והיה ראוי שכך יתנשא, שפיר ילפינן מכך ד\"המוציא משאוי למעלה מעשרה טפחים חייב\". אך כמובן לומר יסוד כזה בעי ראיות מוצקות. <b>אך עדיין קשה</b>, שאם קומת משה רבינו לא היתה עשר אמות בפועל, יתמה כיצד הצליח לפרוש את יריעות העזים על המשכן. דהריטב\"א [שבת צב.] כתב: \"משה רבינו פרשו - ולא היה יכול לפרשו אלמלא שהוא גבוה עשר אמות, כגובה המשכן... והא דלא גמרינן מדכתיב [במדבר ד, יד] 'ופירשו עליו כסוי עור תחש'. יש לומר, דמשום שאינו סימן לגודל הגוף אלא בפורש אוהל על המשכן, שהיה ארכו שלשים אמה [רש\"י שמות כו, ה], אבל במזבח שהוא קצר, אפשר לפרשו עליו על ידי זריקה\". הרי שפרישת היריעות התאפשרה רק מחמת שבפועל קומת משה רבינו אכן היתה עשר אמות. אך אם קומתו היתה פחותה מעשר אמות, יתמה כיצד משה הצליח לפרוש את היריעות על המשכן. ויל\"ע בזה.  ",
-    "heLicense": "",
+    "heLicense": "CC-BY-NC",
     "heVersionTitle": "Gevurot Hashem, with footnotes and annotations by Rabbi Yehoshua D. Hartman, Machon Yerushalyim, 2015-2020",
-    "heVersionTitleInHebrew": "",
+    "heVersionTitleInHebrew": "ספר גבורות השם, נלקט ונערך על ידי יהושע דוד בן הרב יחזקאל הרטמן. מכון ירושלים, תשע\"ה-תש\"פ",
     "index_title": "Notes by Rabbi Yehoshua Hartman on Gevurot Hashem",
     "license": null,
     "ref": "Notes by Rabbi Yehoshua Hartman on Gevurot Hashem 18:19",
