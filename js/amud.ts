@@ -27,11 +27,10 @@ function validAmudOrUndefined(amud: string | undefined): string | undefined {
   return AMUD_REGEX.test(amud) ? amud : undefined;
 }
 
-const _amudMetadata = (pathname: string): AmudMetadata => {
+const _amudMetadata = (book: string, pathname: string): AmudMetadata => {
   const pathParts = pathname.split("/");
   pathParts.shift();
 
-  const book = document.getElementById("book-title")?.content;
   if (books[book].isMasechet) {
     return {
       masechet: book,
@@ -93,5 +92,11 @@ interface AmudMetadataFunction {
   (): AmudMetadata;
 }
 
-export const amudMetadata: AmudMetadataFunction = () => _amudMetadata(window.location.pathname);
-export const amudMetadataForTesting = _amudMetadata;
+export const amudMetadata: AmudMetadataFunction = () => {
+  return _amudMetadata(
+    (document.getElementById("book-title") as HTMLMetaElement)?.content,
+    window.location.pathname);
+};
+export function amudMetadataForTesting(path: string): AmudMetadata {
+  return _amudMetadata(path.split("/")[1], path);
+}

@@ -47,7 +47,7 @@ describe("amudMetadata", () => {
 
   describe("multiple word masechet", () => {
     test("single amud", () => {
-      const actual = amudMetadata("/Bava_Batra/2a");
+      const actual = amudMetadata("/Bava Batra/2a");
       expect(actual.masechet).toBe("Bava Batra");
       expect(actual.amudStart).toBe("2a");
       expect(actual.amudEnd).toBe("2a");
@@ -55,25 +55,7 @@ describe("amudMetadata", () => {
     });
 
     test("amud range", () => {
-      const actual = amudMetadata("/Bava_Batra/2a/to/3b");
-      expect(actual.masechet).toBe("Bava Batra");
-      expect(actual.amudStart).toBe("2a");
-      expect(actual.amudEnd).toBe("3b");
-      expect(actual.range()).toEqual(["2a", "2b", "3a", "3b"]);
-    });
-  });
-
-  describe("multiple word with url-escaped spacesmasechet", () => {
-    test("single amud", () => {
-      const actual = amudMetadata("/Bava%20Batra/2a");
-      expect(actual.masechet).toBe("Bava Batra");
-      expect(actual.amudStart).toBe("2a");
-      expect(actual.amudEnd).toBe("2a");
-      expect(actual.range()).toEqual(["2a"]);
-    });
-
-    test("amud range", () => {
-      const actual = amudMetadata("/Bava%20Batra/2a/to/3b");
+      const actual = amudMetadata("/Bava Batra/2a/to/3b");
       expect(actual.masechet).toBe("Bava Batra");
       expect(actual.amudStart).toBe("2a");
       expect(actual.amudEnd).toBe("3b");

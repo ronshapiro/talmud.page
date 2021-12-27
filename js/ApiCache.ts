@@ -24,12 +24,13 @@ export class ApiCache extends AbstractIndexedDb {
   }
 
   get(ref: string): Promise<any> {
-    const [promise, onSuccess] = promiseParts<any>().slice(0, 2);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const [promise, onSuccess, onFailure] = promiseParts();
     return this.whenDbReady.then(() => {
       this.newTransaction("readonly").get(ref).onsuccess = event => {
         const resultValue = result(event);
         if (resultValue !== undefined) {
-          onSuccess(resultValue.wrapped);
+          onSuccess((resultValue as any).wrapped);
         }
       };
       return promise;
