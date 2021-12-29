@@ -1,3 +1,5 @@
+import * as _ from "underscore";
+import {JewishCalendar} from "kosher-zmanim";
 import {amudMetadata} from "./amud.ts";
 import {getCommentaryTypes} from "./commentaryTypes.ts";
 import {driveClient} from "./google_drive/singleton.ts";
@@ -15,6 +17,10 @@ function siddurSectionDiff(name, diff) {
 
 const FIRST_PAGE = SIDDUR_SECTIONS[0].replace(/ /g, "_");
 const LAST_PAGE = SIDDUR_SECTIONS.slice(-1)[0].replace(/ /g, "_");
+
+function refRanges(prefix, startIndex, endIndex) {
+  return _.range(startIndex, endIndex + 1).map(x => prefix + x);
+}
 
 class SiddurRenderer extends Renderer {
   constructor() {
@@ -54,17 +60,21 @@ class SiddurRenderer extends Renderer {
       }
     }
     if (day !== 1 && day !== 4) {
-      const prefixA = (
-        "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Tachanun, For Monday and Thursday ");
-      for (let refIndex = 1; refIndex <= 8; refIndex++) {
-        ignored.push(prefixA + refIndex);
-      }
+      ignored.push(...refRanges(
+        "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Tachanun, For Monday and Thursday ",
+        1, 8));
+      ignored.push(...refRanges(
+        "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Tachanun, God of Israel ", 1, 11));
+    }
 
-      const prefixB = (
-        "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Tachanun, God of Israel ");
-      for (let refIndex = 1; refIndex <= 11; refIndex++) {
-        ignored.push(prefixB + refIndex);
-      }
+    const hebrewDay = new JewishCalendar();
+    if (!hebrewDay.isRoshChodesh()) {
+      ignored.push(...refRanges(
+        "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Barchi Nafshi ", 1, 8));
+    }
+
+    if (!hebrewDay.jewishMonth !== 6) {
+      ignored.push(...refRanges("Psalms 27:", 1, 14));
     }
     return ignored;
   }

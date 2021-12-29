@@ -309,7 +309,6 @@ export const SIDDUR_IGNORED_TARGET_REFS = new Set([
 
 
 // TO ADD:
-// - Special design for explanations
 // - Finish Calendarizing
 // - Torah Reading
 // - Shir Hamaalot of Aseret Yimei Teshuva

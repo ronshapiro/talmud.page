@@ -1135,6 +1135,12 @@ class SiddurApiRequestHandler extends AbstractApiRequestHandler {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     segments: InternalSegment[], bookName: string, page: string,
   ): InternalSegment[] {
+    segments = this.removeIgnoredRefsAndMergeMergedRefs(segments);
+    segments = this.makeExplanationsIntoComments(segments);
+    return segments;
+  }
+
+  private removeIgnoredRefsAndMergeMergedRefs(segments: InternalSegment[]): InternalSegment[] {
     const newSegments = [];
     for (let i = 0; i < segments.length; i++) {
       if (SIDDUR_IGNORED_REFS.has(segments[i].ref)) {
@@ -1155,6 +1161,35 @@ class SiddurApiRequestHandler extends AbstractApiRequestHandler {
         newSegments.push(segments[i]);
       }
     }
+    return newSegments;
+  }
+
+  private makeExplanationsIntoComments(segments: InternalSegment[]): InternalSegment[] {
+    const newSegments = [];
+    for (let i = 0; i < segments.length - 1; i++) {
+      const firstSegment = segments[i];
+      const firstSegmentHebrew = firstSegment.hebrew as string;
+      if (!firstSegmentHebrew.startsWith("<small>") || !firstSegmentHebrew.endsWith("</small>")) {
+        newSegments.push(firstSegment);
+        continue;
+      }
+
+      const secondSegment = segments[i + 1];
+      const {ref} = secondSegment;
+      secondSegment.commentary.addComment(
+        Comment.create({
+          sourceRef: ref,
+          sourceHeRef: ref,
+          ref,
+          anchorRef: ref,
+          anchorRefExpanded: [ref],
+        }, {
+          he: firstSegmentHebrew.replace(/^<small>/, "").replace(/<\/small>$/, ""),
+          text: firstSegment.english,
+          ref,
+        }, "Explanation", this.logger));
+    }
+    newSegments.push(segments[segments.length - 1]);
     return newSegments;
   }
 
