@@ -49,7 +49,6 @@ export const SIDDUR_REF_REWRITING: Record<string, string[]> = {
     "Psalms 30",
   ],
   "Barukh She'amar": [
-    // TODO: split this in half.
     "Siddur Ashkenaz, Weekday, Shacharit, Pesukei Dezimra, Barukh She'amar",
   ],
   "Hodu": [

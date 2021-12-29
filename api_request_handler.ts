@@ -1,4 +1,5 @@
 import * as fs from "fs";
+import * as _ from "underscore";
 import {
   ApiResponse,
   CommentaryMap,
@@ -471,6 +472,10 @@ export abstract class AbstractApiRequestHandler {
     return standardEnglishTransformations(text);
   }
 
+  protected maybeSplit(ref: string, hebrew: string, english: string): [string, string][] {
+    return [[hebrew, english]];
+  }
+
   protected postProcessSegment(segment: InternalSegment): InternalSegment {
     return segment;
   }
@@ -799,19 +804,21 @@ export abstract class AbstractApiRequestHandler {
         }
         return this.makeSubRef(mainRef, i);
       })();
-      const footnotesResult = FootnotesExtractor.extract(
-        {he: hebrew[i], text: english[i], ref});
-      const segment = new InternalSegment({
-        ref,
-        hebrew: this.translateHebrewText(footnotesResult.comment.he),
-        english: this.translateEnglishText(footnotesResult.comment.text),
-      });
-      this.addComments(ref, ref, segment.commentary, linkGraph, {count: 0});
-      for (const footnote of footnotesResult.footnotes) {
-        segment.commentary.addComment(
-          Comment.create(Comment.fakeTextLink, footnote, "Footnotes", this.logger));
+      for (const [currentHebrew, currentEnglish] of this.maybeSplit(ref, hebrew[i], english[i])) {
+        const footnotesResult = FootnotesExtractor.extract(
+          {he: currentHebrew, text: currentEnglish, ref});
+        const segment = new InternalSegment({
+          ref,
+          hebrew: this.translateHebrewText(footnotesResult.comment.he),
+          english: this.translateEnglishText(footnotesResult.comment.text),
+        });
+        this.addComments(ref, ref, segment.commentary, linkGraph, {count: 0});
+        for (const footnote of footnotesResult.footnotes) {
+          segment.commentary.addComment(
+            Comment.create(Comment.fakeTextLink, footnote, "Footnotes", this.logger));
+        }
+        segments.push(segment);
       }
-      segments.push(segment);
     }
 
     segments = this.injectSegmentSeperators(segments);
@@ -1089,6 +1096,19 @@ class SiddurApiRequestHandler extends AbstractApiRequestHandler {
       "Shulchan Arukh",
       "Verses",
     ];
+  }
+
+  protected maybeSplit(ref: string, hebrew: string, english: string): [string, string][] {
+    function splitAfter(text: string, endText: string) {
+      const index = text.indexOf(endText) + endText.length;
+      return [text.slice(0, index), text.slice(index)];
+    }
+    if (ref === "Siddur Ashkenaz, Weekday, Shacharit, Pesukei Dezimra, Barukh She'amar 2") {
+      const hebrewBreaks = splitAfter(hebrew, "בָּרוּךְ שְׁמוֹ. ");
+      const englishBreaks = splitAfter(english, "blessed is His Name. ");
+      return _.zip(hebrewBreaks, englishBreaks) as [string, string][];
+    }
+    return super.maybeSplit(ref, hebrew, english);
   }
 
   protected postProcessSegment(segment: InternalSegment): InternalSegment {
