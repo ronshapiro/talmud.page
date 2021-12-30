@@ -3,7 +3,7 @@
     "noEmit": true,
     "strict": true,
     "pretty": true,
-    "lib": ["es2020", "dom"],
+    "lib": ["esnext", "dom"],
     "jsx": "react",
   },
 }

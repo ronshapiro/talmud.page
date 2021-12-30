@@ -94,6 +94,53 @@ export abstract class Book {
   abstract bookType(): string;
 }
 
+class SyntheticBook extends Book {
+  constructor(name: string) {
+    super({
+      canonicalName: name,
+      hebrewName: name,
+      aliases: [],
+      start: "n/a",
+      end: "n/a",
+      sections: [],
+    });
+  }
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  doesSectionExist(section: string): boolean {
+    return true;
+  }
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  nextPage(page: string): string {
+    throw new Error("Not implemented");
+  }
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  previousPage(page: string): string {
+    throw new Error("Not implemented");
+  }
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  arePagesInReverseOrder(start: string, end: string): boolean {
+    throw new Error("Not implemented");
+  }
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  rewriteSectionRef(section: string): string {
+    return section;
+  }
+
+  toString(): string {
+    return `${this.bookType()}[${this.canonicalName}]`;
+  }
+
+  bookType(): string {
+    return this.canonicalName;
+  }
+}
+
+
 function amudim(start: string, end: string): string[] {
   const result = [];
   let current = start;
@@ -1084,6 +1131,7 @@ export const books = new BookIndex([
     end: "36",
   }),
   new SiddurAshkenaz(),
+  new SyntheticBook("WeekdayTorah"),
 ]);
 
 let bibleRefRegex: RegExp;

@@ -84,23 +84,6 @@ export class Runner {
     timeoutPromise(5000).then(() => this.apiCache.purge());
   }
 
-  ajaxRequest(endpoint, options) {
-    return $.ajax({
-      url: `${window.location.origin}/${endpoint}`,
-      type: "GET",
-    }).catch(() => {
-      if (options.finished) {
-        throw new Error("Finished!");
-      }
-      options.backoff = options.backoff || 200;
-      options.backoff *= 1.5;
-      return timeoutPromise(options.backoff).then(() => this.ajaxRequest(endpoint, options));
-    }).then(result => {
-      this.apiCache.save(endpoint, result);
-      return result;
-    });
-  }
-
   requestSection(section, options) {
     options = options || {};
     this.renderer.setAmud({
@@ -110,10 +93,7 @@ export class Runner {
       sections: [],
     });
     const endpoint = `api/${amudMetadata().masechet}/${section}`;
-    Promise.any([
-      this.ajaxRequest(endpoint, options),
-      this.apiCache.get(endpoint),
-    ]).then((results) => {
+    this.apiCache.getAndUpdate(endpoint).then((results) => {
       options.finished = true;
       this.renderer.setAmud(results);
       refreshPageState();

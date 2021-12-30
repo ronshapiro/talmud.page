@@ -1,4 +1,5 @@
 import * as fs from "fs";
+import {JewishCalendar} from "kosher-zmanim";
 import * as _ from "underscore";
 import {
   ApiResponse,
@@ -43,7 +44,7 @@ import {SectionSymbolRemover} from "./source_formatting/section_symbol";
 import {SefariaLinkSanitizer} from "./source_formatting/sefaria_link_sanitizer";
 import {ShulchanArukhHeaderRemover} from "./source_formatting/shulchan_arukh_remove_header";
 import {checkNotUndefined} from "./js/undefined";
-import {getLast} from "./util/last";
+import {getWeekdayReading} from "./weekday_parshiot";
 
 export abstract class RequestMaker {
   abstract makeRequest<T>(endpoint: string): Promise<T>;
@@ -582,21 +583,55 @@ export abstract class AbstractApiRequestHandler {
           if (typeof he === "string") {
             addSegment(he, text, underlyingRef);
           } else {
-            let baseRef = underlyingRef;
-            let first = 1;
-            if (underlyingRef.includes(":")) {
-              if (getLast(underlyingRef.split(":")).includes("-")) {
-                first = parseInt(getLast(underlyingRef.split(":")).split("-")[0]);
-                baseRef = underlyingRef.substring(0, underlyingRef.lastIndexOf(":"));
+            const addSegmentRange = (
+              prefixRef: string, segmentIndices: number[], suffixIndices: number[]) => {
+              for (let i = 0; i < segmentIndices.length; i++) {
+                addSegment(
+                  he[segmentIndices[i]],
+                  text[segmentIndices[i]],
+                  // The -1 here is a hack, since makeSubRef typically expects zero-indexed offsets.
+                  this.makeSubRef(prefixRef, suffixIndices[i] - 1));
               }
-            } else if (underlyingRef.includes("-")) {
-              const lastSpace = underlyingRef.lastIndexOf(" ");
-              baseRef = underlyingRef.slice(0, lastSpace);
-              first = parseInt(underlyingRef.slice(lastSpace + 1).split("-")[0]);
+            };
+
+            if (Number.isNaN(parseInt(underlyingRef.slice(-1))) || !underlyingRef.includes("-")) {
+              addSegmentRange(underlyingRef, _.range(he.length), _.range(1, he.length + 1));
+              continue;
             }
-            for (let i = 0; i < he.length; i++) {
-              // The -1 here is a hack, since makeSubRef typically expects zero-indexed offsets.
-              addSegment(he[i], text[i], this.makeSubRef(baseRef, first + i - 1));
+            const lastSpace = underlyingRef.lastIndexOf(" ");
+            const baseRef = underlyingRef.slice(0, lastSpace);
+            const [start, end] = underlyingRef.slice(lastSpace + 1).split("-");
+
+            const chapterAndVerse = (combined: string): [string, number] => {
+              const [chapter, verse] = combined.split(":");
+              return [chapter, parseInt(verse)];
+            };
+
+            if (start.includes(":") && end.includes(":")) {
+              const [startChapter, startVerse] = chapterAndVerse(start);
+              const [endChapter, endVerse] = chapterAndVerse(end);
+              addSegmentRange(
+                `${baseRef} ${startChapter}`,
+                _.range(he.length - endVerse),
+                _.range(startVerse, startVerse + he.length - endVerse));
+              addSegmentRange(
+                `${baseRef} ${endChapter}`,
+                _.range(he.length - endVerse, he.length),
+                _.range(endVerse));
+              continue;
+            }
+
+            if (start.includes(":")) {
+              const [startChapter, startVerse] = chapterAndVerse(start);
+              addSegmentRange(
+                `${baseRef} ${startChapter}`,
+                _.range(he.length),
+                _.range(startVerse, startVerse + he.length));
+            } else {
+              addSegmentRange(
+                baseRef,
+                _.range(he.length),
+                _.range(parseInt(start), parseInt(start) + he.length));
             }
           }
         }
@@ -1053,6 +1088,23 @@ class TanakhApiRequestHandler extends AbstractApiRequestHandler {
   }
 }
 
+class WeekdayTorahPortionHandler extends AbstractApiRequestHandler {
+  protected recreateWithLogger(logger: Logger): AbstractApiRequestHandler {
+    return new WeekdayTorahPortionHandler(this.requestMaker, logger);
+  }
+
+  protected makeId(bookName: string, page: string): string {
+    return page.replace(/\//g, "_");
+  }
+
+  protected expandRef(ref: string): string[] {
+    const [year, month, day, inIsrael, aliyahNumber] = ref.replace("WeekdayTorah ", "").split("/");
+    const date = new JewishCalendar(
+      parseInt(year), parseInt(month), parseInt(day), inIsrael === "true");
+    return [getWeekdayReading(date)![parseInt(aliyahNumber)]];
+  }
+}
+
 class SiddurApiRequestHandler extends AbstractApiRequestHandler {
   protected recreateWithLogger(logger: Logger): AbstractApiRequestHandler {
     return new SiddurApiRequestHandler(this.requestMaker, logger);
@@ -1234,17 +1286,21 @@ export class ApiRequestHandler {
   private talmudHandler: TalmudApiRequestHandler;
   private tanakhHandler: TanakhApiRequestHandler;
   private siddurHandler: SiddurApiRequestHandler;
+  private weekdayTorahHandler: WeekdayTorahPortionHandler;
 
   constructor(requestMaker: RequestMaker) {
     this.talmudHandler = new TalmudApiRequestHandler(requestMaker);
     this.tanakhHandler = new TanakhApiRequestHandler(requestMaker);
     this.siddurHandler = new SiddurApiRequestHandler(requestMaker);
+    this.weekdayTorahHandler = new WeekdayTorahPortionHandler(requestMaker);
   }
 
   handleRequest(bookName: string, page: string, logger?: Logger): Promise<ApiResponse> {
     const handler = (() => {
       if (bookName === "SiddurAshkenaz") {
         return this.siddurHandler;
+      } else if (bookName === "WeekdayTorah") {
+        return this.weekdayTorahHandler;
       }
       return books.byCanonicalName[bookName].isMasechet()
         ? this.talmudHandler

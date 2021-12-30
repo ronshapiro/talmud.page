@@ -1,11 +1,16 @@
 import * as _ from "underscore";
 import {JewishCalendar} from "kosher-zmanim";
 import {amudMetadata} from "./amud.ts";
+import {ApiCache} from "./ApiCache.ts";
 import {getCommentaryTypes} from "./commentaryTypes.ts";
 import {driveClient} from "./google_drive/singleton.ts";
+import {onceDocumentReady} from "./once_document_ready.ts";
 import {Runner} from "./page_runner.js";
 import {Renderer} from "./rendering.jsx";
 import {SIDDUR_SECTIONS} from "./siddur.ts";
+
+const INJECT_WEEKDAY_TORAH_PORTION_AFTER_REF = (
+  "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Reading from Sefer, Birkat Hatorah 6");
 
 function pageIndex(name) {
   return SIDDUR_SECTIONS.indexOf(name.replace(/_/g, " "));
@@ -42,7 +47,37 @@ class SiddurRenderer extends Renderer {
   sortedAmudim() {
     const keys = Object.keys(this.allAmudim);
     keys.sort((first, second) => pageIndex(first) - pageIndex(second));
+
+    if ("Torah" in this.allAmudim && this.injectedTorahPortions) {
+      const torahSection = this.allAmudim.Torah;
+      const splitPoint = torahSection.sections.findIndex(
+        section => section.ref === INJECT_WEEKDAY_TORAH_PORTION_AFTER_REF) + 1;
+      if (splitPoint !== 0) {
+        let newSections = torahSection.sections.slice(0, splitPoint);
+        for (let i = 0; i < this.injectedTorahPortions.aliyot.length; i++) {
+          const aliya = this.injectedTorahPortions.aliyot[i];
+          const hebrewIndex = ["א", "ב", "ג", "ד"][i];
+          newSections.push({
+            commentary: {},
+            he: `<strong>עליה ${hebrewIndex}'</strong>`,
+            en: "",
+            ref: `synthetic-aliyah-${i + 1}`,
+            steinsaltz_start_of_sugya: true,
+          });
+          newSections = newSections.concat(aliya.sections);
+        }
+        newSections = newSections.concat(torahSection.sections.slice(splitPoint));
+        torahSection.sections = newSections;
+        this.injectedTorahPortions = undefined;
+      }
+    }
+
     return keys.map(key => this.allAmudim[key]);
+  }
+
+  injectTorahPortion(portionRespones) {
+    this.injectedTorahPortions = portionRespones;
+    this.forceUpdate();
   }
 
   newPageTitle(section) {
@@ -82,5 +117,18 @@ class SiddurRenderer extends Renderer {
 
 const renderer = new SiddurRenderer();
 window.renderer = renderer;
+
+onceDocumentReady.execute(() => {
+  const today = new JewishCalendar();
+  const endpoint = [
+    today.getJewishYear(),
+    today.getJewishMonth(),
+    today.getJewishDayOfMonth(),
+    Intl.DateTimeFormat().resolvedOptions().timeZone === "Asia/Jerusalem",
+  ].join("/");
+  new ApiCache().getAndUpdate(`api/WeekdayTorah/${endpoint}`).then(response => {
+    renderer.injectTorahPortion(response);
+  });
+});
 
 new Runner(renderer, driveClient, "siddur").main();

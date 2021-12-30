@@ -1,8 +1,14 @@
 /* eslint-disable unicorn/prefer-add-event-listener */
 import {AbstractIndexedDb, result} from "./AbstractIndexedDb";
-import {promiseParts} from "./promises";
+import {$} from "./jquery";
+import {promiseParts, timeoutPromise} from "./promises";
 
 const TTL = 14 * 24 * 60 * 60 * 1000;
+
+interface AjaxRetryState {
+  backoff: number;
+  finished: boolean;
+}
 
 export class ApiCache extends AbstractIndexedDb {
   private whenDbReady: Promise<unknown>;
@@ -35,6 +41,27 @@ export class ApiCache extends AbstractIndexedDb {
       };
       return promise;
     });
+  }
+
+  private ajaxRequest(endpoint: string, maybeState?: AjaxRetryState): Promise<any> {
+    const state = maybeState || {backoff: 200, finished: false};
+    return $.ajax({
+      url: `${window.location.origin}/${endpoint}`,
+      type: "GET",
+    }).catch(() => {
+      if (state.finished) {
+        throw new Error("Finished!"); // Lazy cancellation
+      }
+      state.backoff *= 1.5;
+      return timeoutPromise(state.backoff).then(() => this.ajaxRequest(endpoint, state));
+    }).then((response: any) => {
+      this.save(endpoint, response);
+      return response;
+    });
+  }
+
+  getAndUpdate(endpoint: string): Promise<any> {
+    return Promise.any([this.ajaxRequest(endpoint), this.get(endpoint)]);
   }
 
   private purge() {

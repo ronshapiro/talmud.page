@@ -1,8 +1,10 @@
 import * as express from "express";
 import * as fs from "fs";
 import * as http from "http";
+import {JewishCalendar} from "kosher-zmanim";
 import * as nunjucks from "nunjucks";
 import * as sendgrid from "@sendgrid/mail";
+import {range} from "underscore";
 import {parse as urlParse} from "url";
 import {v4 as uuid} from "uuid";
 import {ApiException, ApiRequestHandler, RealRequestMaker} from "./api_request_handler";
@@ -26,6 +28,7 @@ import {Logger as BaseLogger, Timer} from "./logger";
 import {PromiseChain} from "./js/promises";
 import {jsonSize} from "./util/json_size";
 import {writeJson} from "./util/json_files";
+import {getWeekdayReading} from "./weekday_parshiot";
 
 const apiRequestHandler = new ApiRequestHandler(new RealRequestMaker());
 
@@ -374,6 +377,31 @@ app.get("/api/:title/:page", (req, res) => {
   }
 
   return undefined;
+});
+
+app.get("/api/WeekdayTorah/:year/:month/:day/:inIsrael", (req, res) => {
+  const {year, month, day, inIsrael} = req.params;
+  const date = new JewishCalendar(
+    parseInt(year), parseInt(month), parseInt(day), inIsrael === "true");
+
+  Promise.all(
+    range(getWeekdayReading(date)!.length).map(
+      x => getAndCacheApiResponse(
+        "WeekdayTorah", [year, month, day, inIsrael, x].join("/"), req.logger)),
+  ).then(responses => {
+    const codes = [];
+    const allResponses = [];
+    for (const [response, code] of responses) {
+      codes.push(code);
+      allResponses.push(response);
+    }
+    for (const code of codes) {
+      if (code !== 200) {
+        throw new Error(codes.join(", "));
+      }
+    }
+    res.status(200).send({aliyot: allResponses});
+  });
 });
 
 if (fs.existsSync("sendgrid_api_key")) {
