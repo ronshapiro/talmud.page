@@ -184,6 +184,32 @@ export const SIDDUR_REF_REWRITING: Record<string, string[]> = {
     "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Tachanun, Shomer Yisrael",
   ]),
 
+  "Torah": [
+    "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Removing the Torah from Ark, Vayehi Binsoa",
+    "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Removing the Torah from Ark, Berich Shmei",
+    "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Removing the Torah from Ark, Lekha Hashem",
+    "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Removing the Torah from Ark, Av Harachamim",
+    SEGMENT_SEPERATOR_REF,
+    "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Removing the Torah from Ark, Vetigaleh Veteraeh",
+    SEGMENT_SEPERATOR_REF,
+    "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Reading from Sefer, Birkat Hatorah 2-6",
+    SEGMENT_SEPERATOR_REF,
+    "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Reading from Sefer, Birkat Hatorah 8",
+    SEGMENT_SEPERATOR_REF,
+    "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Reading from Sefer, Raising the Torah 4",
+    "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Reading from Sefer, Raising the Torah 5",
+    "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Reading from Sefer, Raising the Torah 6",
+    "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Reading from Sefer, Raising the Torah 7",
+    "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Reading from Sefer, Raising the Torah 8",
+    "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Reading from Sefer, Raising the Torah 9",
+    SEGMENT_SEPERATOR_REF,
+    // TODO: prefix this with "Chazan"
+    "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Returning Sefer to Aron, Yehalelu 2-3",
+    "Psalms 24",
+    SEGMENT_SEPERATOR_REF,
+    "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Returning Sefer to Aron, Uvenucho Yomar",
+  ],
+
   "Ashrei (Conclusion)": ASHREI_REFS.concat([
     SEGMENT_SEPERATOR_REF,
     "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Lamenatze'ach",
@@ -286,6 +312,12 @@ export const SIDDUR_IGNORED_FOOTNOTES: Record<string, string | string[] | number
 
 export const SIDDUR_IGNORED_REFS = new Set([
   "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Divine Might 11",
+  "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Removing the Torah from Ark, Vayehi Binsoa 2",
+  "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Removing the Torah from Ark, Lekha Hashem 1",
+  "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Removing the Torah from Ark, Vetigaleh Veteraeh 1", // TODO: prefix this with "Chazan"
+  "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Removing the Torah from Ark, Vetigaleh Veteraeh 3", // TODO prefix this with Kahal
+  "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Reading from Sefer, Birkat Hatorah 3",
+  "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Reading from Sefer, Birkat Hatorah 5",
   "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Song of the Day 1",
   "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Song of the Day 2",
   "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Song of the Day 5",
@@ -310,7 +342,6 @@ export const SIDDUR_IGNORED_TARGET_REFS = new Set([
 
 // TO ADD:
 // - Finish Calendarizing
-// - Torah Reading
 // - Shir Hamaalot of Aseret Yimei Teshuva
 // - Fast Day Annenu
 // - Modim formatting

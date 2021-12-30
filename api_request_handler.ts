@@ -584,9 +584,15 @@ export abstract class AbstractApiRequestHandler {
           } else {
             let baseRef = underlyingRef;
             let first = 1;
-            if (getLast(underlyingRef.split(":")).includes("-")) {
-              first = parseInt(getLast(underlyingRef.split(":")).split("-")[0]);
-              baseRef = underlyingRef.substring(0, underlyingRef.lastIndexOf(":"));
+            if (underlyingRef.includes(":")) {
+              if (getLast(underlyingRef.split(":")).includes("-")) {
+                first = parseInt(getLast(underlyingRef.split(":")).split("-")[0]);
+                baseRef = underlyingRef.substring(0, underlyingRef.lastIndexOf(":"));
+              }
+            } else if (underlyingRef.includes("-")) {
+              const lastSpace = underlyingRef.lastIndexOf(" ");
+              baseRef = underlyingRef.slice(0, lastSpace);
+              first = parseInt(underlyingRef.slice(lastSpace + 1).split("-")[0]);
             }
             for (let i = 0; i < he.length; i++) {
               // The -1 here is a hack, since makeSubRef typically expects zero-indexed offsets.
@@ -1175,18 +1181,21 @@ class SiddurApiRequestHandler extends AbstractApiRequestHandler {
       }
 
       const secondSegment = segments[i + 1];
-      const {ref} = secondSegment;
+      secondSegment.steinsaltz_start_of_sugya = firstSegment.steinsaltz_start_of_sugya;
+      for (const comment of firstSegment.commentary.comments) {
+        secondSegment.commentary.addComment(comment);
+      }
       secondSegment.commentary.addComment(
         Comment.create({
-          sourceRef: ref,
-          sourceHeRef: ref,
-          ref,
-          anchorRef: ref,
-          anchorRefExpanded: [ref],
+          sourceRef: firstSegment.ref,
+          sourceHeRef: firstSegment.ref,
+          ref: firstSegment.ref,
+          anchorRef: secondSegment.ref,
+          anchorRefExpanded: [secondSegment.ref],
         }, {
           he: firstSegmentHebrew.replace(/^<small>/, "").replace(/<\/small>$/, ""),
           text: firstSegment.english,
-          ref,
+          ref: firstSegment.ref,
         }, "Explanation", this.logger));
     }
     newSegments.push(segments[segments.length - 1]);
