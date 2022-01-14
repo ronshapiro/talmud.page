@@ -7,6 +7,7 @@ export interface CommentaryType {
   cssCategory?: string;
   category?: string;
   type?: string;
+  refPattern?: RegExp;
   allowNestedTraversals?: true;
 }
 
@@ -250,6 +251,24 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     englishNamePattern: /^Torah Temimah on /,
     hebrewName: "תורה תמימה",
     className: "torah-temima",
+  },
+  {
+    englishName: "Steinsaltz Masechet Intro",
+    refPattern: /^Introductions to the Babylonian Talmud, (.*), Introduction to \1 .*/,
+    hebrewName: "הקדמה למסכת",
+    className: "steinsaltz-masechet-intro",
+  },
+  {
+    englishName: "Steinsaltz Perek Intro",
+    refPattern: /^Introductions to the Babylonian Talmud, .*, Introduction to Perek .*/,
+    hebrewName: "הקדמה לפרק",
+    className: "steinsaltz-perek-intro",
+  },
+  {
+    englishName: "Steinsaltz Perek Summary",
+    refPattern: /^Introductions to the Babylonian Talmud, .*, Summary of Perek .*/,
+    hebrewName: "סיכום לפרק",
+    className: "steinsaltz-perek-summary",
   },
   {
     englishName: "Steinsaltz",
