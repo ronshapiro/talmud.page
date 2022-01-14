@@ -168,7 +168,7 @@ if (!isProd) {
     ].flatMap(x => x.split(" ")), {
       env: {
         ...process.env,
-        PORT: "5000",
+        PORT: "5001",
       },
     });
     serverProcess.stdout!.on("data", data => console.log(data.toString().trim()));
