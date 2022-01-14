@@ -169,6 +169,11 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     showTitle: true,
   },
   {
+    englishName: "Sefer HeArukh",
+    hebrewName: "הערוך",
+    className: "arukh-dictionary",
+  },
+  {
     englishName: "Jastrow",
     hebrewName: "Jastrow",
     className: "jastrow",
