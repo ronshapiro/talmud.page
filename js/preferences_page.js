@@ -99,6 +99,22 @@ const main = () => {
   });
 
   radioSection(
+    `Hide Gemara translation by default
+    <em>(only relevant if Translation is set to English & Hebrew (expandable)</em>`,
+    "hideGemaraTranslationByDefault", [
+      {
+        value: "false",
+        displayText: "No",
+      },
+      {
+        value: "true",
+        displayText: "Yes (double click the Hebrew Steinsaltz to show)",
+      },
+    ],
+    "hideGemaraTranslationByDefault");
+
+
+  radioSection(
     "Wrap translations around the main text", "wrap-translations", [
       {
         value: "true",

@@ -72,24 +72,52 @@ class CommentRow extends Component {
 
   static contextType = ConfigurationContext;
 
+  state = {};
+
+  toggleDisplayEnglishSteinsaltzWithHebrew() {
+    this.setState(previousState => {
+      return {
+        ...previousState,
+        displayEnglishSteinsaltzWithHebrew: !previousState.displayEnglishSteinsaltzWithHebrew,
+      };
+    });
+  }
+
   renderTableRow(key, hebrew, english, overrideRef = undefined) {
     const {comment, commentaryKind} = this.props;
     const ref = (
       commentaryKind.englishName === "Personal Notes"
         ? "ignore"
         : overrideRef || comment.ref);
-    return (
+    const expandableTranslations = (
+      this.context.translationOption === "both"
+        && localStorage.hideGemaraTranslationByDefault === "true"
+        && commentaryKind.englishName === "Translation");
+
+    const createRow = (_key, _hebrew, _english) => (
       <TableRow
-        key={key}
-        hebrew={hebrew}
-        english={english}
+        key={_key}
+        hebrew={_hebrew}
+        english={_english}
         sefaria-ref={ref}
         link={comment.link}
         classes={["commentaryRow", /* used in CSS */ commentaryKind.className]}
         expandEnglishByDefault={
           commentaryKind.englishName === "Translation" && this.context.expandEnglishByDefault
         }
-        />
+        hebrewDoubleClickListener={
+          expandableTranslations
+            ? () => this.toggleDisplayEnglishSteinsaltzWithHebrew()
+            : undefined
+        }
+      />
+    );
+    return (
+      <React.Fragment key={key}>
+        {createRow("main", hebrew, expandableTranslations ? "" : english)}
+        {expandableTranslations && this.state.displayEnglishSteinsaltzWithHebrew
+         && createRow("main-translation", "", english)}
+      </React.Fragment>
     );
   }
 
