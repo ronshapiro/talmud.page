@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{title}}</title>
+  {% include "header_common.html" %}
+  <script src="../js/draw.ts"></script>
+  <style>
+    #daf, #dafCanvas {
+        position: absolute;
+    }
+
+    #dafCanvas {
+        z-index: 2;
+    }
+
+    #sidebar {
+        position: fixed;
+        left: 1000px;
+        margin-right: 60px;
+    }
+  </style>
+</head>
+<body>
+  <div id="sidebar">
+    <h1 id="labelType">(label type)</h1>
+    <div>
+      <button id="nextLabel">
+        Next (d/j)
+      </button> • <button id="previousLabel">
+        Previous (s/k)
+      </button>
+      <div id="colorCode">
+      </div>
+    </div>
+    <h2>Instructions</h2>
+    <ul>
+      <li>Label each visible section. Do your best to not to include any text that is unrelated -
+        most commonly this comes up as the word at the end of the daf that gives a sneak peak at
+        the next daf.
+      </li>
+      <li>Undo using 'z', or '⌘+Z' (on Mac) or 'Ctrl-Z' on Windows/Linux</li>
+    </ul>
+  </div>
+  <img id="daf"
+       src="http://localhost:5001/draw/image/daf.jpg" width="1000px" />
+  <canvas id="dafCanvas" width="1000px" />
+
+</body>
+</html>
