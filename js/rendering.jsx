@@ -614,30 +614,32 @@ export class Renderer {
       amudData.sections = [];
     }
 
-    if (this._translationOption === "both") {
-      for (const section of amudData.sections) {
-        const commentaries = section.commentary;
-        // Reminder: Hadran sections have no steinsaltz
-        if (commentaries && commentaries.Steinsaltz) {
-          section.steinsaltzRetained = true;
-          commentaries.Translation = commentaries.Steinsaltz;
-          delete commentaries.Steinsaltz;
-        } else if (section.ref.indexOf("Hadran ") === 0 || !this._isTalmud) {
-          commentaries.Translation = {
-            comments: [{
-              ref: section.ref,
-              en: section.en,
-              he: "",
-            }],
-          };
-        }
+    if (this._translationOption !== "both") {
+      return;
+    }
 
-        // rewriting is deferred here since on successive calls to this method, the
-        // commentaries.Steinsaltz property may be already deleted, but we still want to persist the
-        // rewriting, i.e. for text highlighting
-        if (section.steinsaltzRetained) {
-          commentaries.Translation.comments[0].en = section.en;
-        }
+    for (const section of amudData.sections) {
+      const commentaries = section.commentary;
+      // Reminder: Hadran sections have no steinsaltz
+      if (commentaries && commentaries.Steinsaltz) {
+        section.steinsaltzRetained = true;
+        commentaries.Translation = commentaries.Steinsaltz;
+        delete commentaries.Steinsaltz;
+      } else if (section.ref.indexOf("Hadran ") === 0 || !this._isTalmud) {
+        commentaries.Translation = {
+          comments: [{
+            ref: section.ref,
+            en: section.en,
+            he: "",
+          }],
+        };
+      }
+
+      // rewriting is deferred here since on successive calls to this method, the
+      // commentaries.Steinsaltz property may be already deleted, but we still want to persist the
+      // rewriting, i.e. for text highlighting
+      if (section.steinsaltzRetained) {
+        commentaries.Translation.comments[0].en = section.en;
       }
     }
   }
