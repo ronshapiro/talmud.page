@@ -217,7 +217,7 @@ app.get("/:title/notes", (req, res) => {
   if (canonicalName !== title) {
     return res.redirectWithQueryParameters(`/${canonicalName}/notes`);
   }
-  return res.render("notes_redirecter.html", {title});
+  return res.render("notes_redirecter.html", {title, bookTitle: title});
 });
 
 app.get("/daf-yomi", (req, res) => res.render("daf_yomi_redirector.html"));
