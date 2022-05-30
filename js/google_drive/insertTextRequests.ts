@@ -30,8 +30,11 @@ export function insertFormattedTextRequests(
       paragraphStyle: {
         namedStyleType: style,
         direction: rtl ? "RIGHT_TO_LEFT" : undefined,
+        // Reminder to modify the field mask if fields are added!
       },
-      fields: "*",
+      // The FieldMask is required here due to a weird page_break_before bug in Google docs.
+      // Without it, it seems like an irrelevant field is being silently detected.
+      fields: "namedStyleType,",
       range,
     },
   }];
