@@ -168,9 +168,9 @@ function commentaryHighlightColors(commentary, colors) {
     for (const color of comment.highlightColors || []) {
       colors.add(color);
     }
+    Object.values(comment.commentary || {}).forEach(
+      nested => commentaryHighlightColors(nested, colors));
   }
-  Object.values(commentary.commentary || {}).forEach(
-    nested => commentaryHighlightColors(nested, colors));
   return colors;
 }
 
@@ -205,7 +205,9 @@ class CommentarySection extends Component {
           commentary = commentaries.Steinsaltz;
         }
         if (!commentary) {
-          throw new Error(`Could not find ${commentaryClassName} commentary in ${sectionLabel}`);
+          throw new Error(
+            `Could not find ${commentaryClassName} commentary in ${sectionLabel}
+            ${Object.keys(commentaries).join(", ")}`);
         }
       }
       output.push(
@@ -220,19 +222,18 @@ class CommentarySection extends Component {
             comment={comment}
             commentaryKind={commentaryKind}
             />);
-      });
-
-      if (commentary.commentary) {
-        const nestedSectionLabel = `${sectionLabel}.<nested>.${commentaryKind.className}`;
-        output.push(
-          <CommentarySection
-            commentaries={commentary.commentary}
-            getOrdering={getOrdering}
-            toggleShowing={toggleShowing}
-            sectionLabel={nestedSectionLabel}
-            key={nestedSectionLabel}
+        if (comment.commentary) {
+          const nestedSectionLabel = `${sectionLabel}.<nested>.${comment.ref}`;
+          output.push(
+            <CommentarySection
+              commentaries={comment.commentary}
+              getOrdering={getOrdering}
+              toggleShowing={toggleShowing}
+              sectionLabel={nestedSectionLabel}
+              key={nestedSectionLabel}
             />);
-      }
+        }
+      });
     }
 
     output.push(this.renderShowButtons());
@@ -357,12 +358,25 @@ class CommentarySection extends Component {
     );
   }
 
+  hasNestedPersonalComments(commentary) {
+    for (const comment of commentary.comments || []) {
+      if (!comment.commentary) continue;
+      if (comment.commentary["Personal Notes"]) return true;
+      for (const nestedCommentary of Object.values(comment.commentary)) {
+        if (this.hasNestedPersonalComments(nestedCommentary)) {
+          return true;
+        }
+      }
+    }
+    return false;
+  }
+
   buttonClasses(commentaryKind, isShowing, commentary) {
     return [
       "commentary_header",
       commentaryKind.className,
       commentaryKind.cssCategory,
-      !isShowing && commentary.commentary && commentary.commentary["Personal Notes"]
+      !isShowing && this.hasNestedPersonalComments(commentary)
         ? "has-nested-commentaries"
         : undefined,
     ].filter(x => x).join(" ");

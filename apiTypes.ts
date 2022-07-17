@@ -11,7 +11,6 @@ export type CommentaryMap = Record<string, Commentary>;
 
 export interface Commentary {
   comments: ApiComment[];
-  commentary?: CommentaryMap;
 }
 
 interface Highlightable {
@@ -36,6 +35,7 @@ export interface ApiComment extends Highlightable {
   sourceRef: string;
   sourceHeRef: string;
   link?: string;
+  commentary?: CommentaryMap;
 }
 
 export interface ApiResponse {

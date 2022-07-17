@@ -264,11 +264,11 @@ class InternalCommentary {
     this.comments.push(comment);
   }
 
-  nestedCommentary(parentCommentaryName: string) {
-    if (!(parentCommentaryName in this.nestedCommentaries)) {
-      this.nestedCommentaries[parentCommentaryName] = new InternalCommentary();
+  nestedCommentary(parentRef: string) {
+    if (!(parentRef in this.nestedCommentaries)) {
+      this.nestedCommentaries[parentRef] = new InternalCommentary();
     }
-    return this.nestedCommentaries[parentCommentaryName];
+    return this.nestedCommentaries[parentRef];
   }
 
   removeComment(comment: Comment) {
@@ -283,9 +283,21 @@ class InternalCommentary {
       if (!(comment.englishName in result)) {
         result[comment.englishName] = {comments: []};
       }
-      result[comment.englishName].comments.push(comment.toJson());
+      const apiComment = comment.toJson();
+      for (const [ref, nestedCommentary] of Object.entries(this.nestedCommentaries)) {
+        if (comment.ref !== ref) continue;
+        const nestedCommentaryValue = nestedCommentary.toJson();
+        if (Object.keys(nestedCommentaryValue).length === 0) continue;
+        if (apiComment.commentary === undefined) {
+          apiComment.commentary = {};
+        }
+        Object.assign(apiComment.commentary, nestedCommentaryValue);
+      }
+
+      result[comment.englishName].comments.push(apiComment);
     }
 
+    /*
     for (const [englishName, nestedCommentary] of Object.entries(this.nestedCommentaries)) {
       const nestedCommentaryValue = nestedCommentary.toJson();
       if (Object.keys(nestedCommentaryValue).length > 0) {
@@ -298,6 +310,7 @@ class InternalCommentary {
         result[englishName].commentary = nestedCommentaryValue;
       }
     }
+    */
 
     return result;
   }
@@ -932,7 +945,7 @@ export abstract class AbstractApiRequestHandler {
       commentary.addComment(Comment.create(link, comment, commentaryType.englishName, this.logger));
 
       for (const footnote of footnotes) {
-        commentary.nestedCommentary(commentaryType.englishName).addComment(
+        commentary.nestedCommentary(linkRef).addComment(
           Comment.create(link, footnote, "Footnotes", this.logger));
       }
 
@@ -940,7 +953,7 @@ export abstract class AbstractApiRequestHandler {
       this.addComments(
         rootRef,
         linkRef,
-        commentary.nestedCommentary(commentaryType.englishName),
+        commentary.nestedCommentary(linkRef),
         linkGraph,
         countObject,
         cycleChecker);
@@ -949,12 +962,8 @@ export abstract class AbstractApiRequestHandler {
   }
 
   private isCommunityTranslation(link: sefaria.TextLink): boolean {
-    const {sourceRef} = link;
-    return sourceRef.startsWith("Tosafot") || sourceRef.startsWith("Rashi");
-    /* TODO: enable this for all commentaries when commentaries are un-flattened, as this is awkward
     return link.versionTitle === "Sefaria Community Translation"
       || link.versionTitle === "Tosafot, Translated by Jan Buckler";
-    */
   }
 
   private getApplicableCommentaries(): CommentaryType[] {
