@@ -246,6 +246,7 @@ class Comment {
     ref: "fake",
     anchorRef: "fake",
     anchorRefExpanded: ["fake"],
+    versionTitle: "fake",
   };
 }
 
@@ -409,6 +410,21 @@ class LinkGraph {
   textResponses: Record<string, sefaria.TextResponse> = {};
   // TODO(typescript): don't cache the result if the link graph is incomlete
   complete = true;
+
+  getGraph(sourceRef: string): Set<string> {
+    if (!(sourceRef in this.graph)) {
+      this.graph[sourceRef] = new Set<string>();
+    }
+    return this.graph[sourceRef];
+  }
+
+  addLink(sourceRef: string, link: sefaria.TextLink): void {
+    this.getGraph(sourceRef).add(link.ref);
+    if (this.links[sourceRef] === undefined) {
+      this.links[sourceRef] = {};
+    }
+    this.links[sourceRef][link.ref] = link;
+  }
 }
 
 function textRequestEndpoint(ref: string): string {
@@ -536,9 +552,9 @@ export abstract class AbstractApiRequestHandler {
             textRequestRefs.add(requestRef);
           }
         };
-        for (const key of Object.keys(linkGraph.graph)) {
+        for (const [key, graph] of Object.entries(linkGraph.graph)) {
           addTextRequestRef(key);
-          linkGraph.graph[key].forEach(addTextRequestRef);
+          graph.forEach(addTextRequestRef);
         }
 
         return this.fetchData(Array.from(textRequestRefs), ref)
@@ -688,18 +704,12 @@ export abstract class AbstractApiRequestHandler {
             sourceRefIndex = 0;
           }
           const sourceRef = link.anchorRefExpanded[sourceRefIndex];
-          if (!(sourceRef in linkGraph.graph)) {
-            linkGraph.graph[sourceRef] = new Set();
-            linkGraph.links[sourceRef] = {};
-          }
-
-          const targetRefs = linkGraph.graph[sourceRef]!;
+          const targetRefs = linkGraph.getGraph(sourceRef);
           const commentaryType = this.matchingCommentaryType(link);
           if (targetRefs.has(targetRef) || !commentaryType) {
             continue;
           }
-          targetRefs.add(targetRef);
-          linkGraph.links[sourceRef][targetRef] = link;
+          linkGraph.addLink(sourceRef, link);
 
           // If after link traversal https://github.com/Sefaria/Sefaria-Project/issues/616 is
           // implemented, with_text can always be set to 0 and then all fetching deferred to
@@ -906,6 +916,18 @@ export abstract class AbstractApiRequestHandler {
       const link = linkGraph.links[ref][linkRef];
       const commentaryType = this.matchingCommentaryType(link)!;
 
+      if (this.isCommunityTranslation(link)) {
+        const translationRef = "Translation on " + linkResponse.ref;
+        linkGraph.textResponses[translationRef] = {
+          he: "", text: linkResponse.text, ref: translationRef};
+        linkResponse.text = "";
+        linkGraph.addLink(linkRef, {
+          ...Comment.fakeTextLink,
+          collectiveTitle: {en: "Community Translation", he: ""},
+          ref: translationRef,
+        });
+      }
+
       const {comment, footnotes} = FootnotesExtractor.extract(linkResponse);
       commentary.addComment(Comment.create(link, comment, commentaryType.englishName, this.logger));
 
@@ -926,12 +948,21 @@ export abstract class AbstractApiRequestHandler {
     }
   }
 
+  private isCommunityTranslation(link: sefaria.TextLink): boolean {
+    const {sourceRef} = link;
+    return sourceRef.startsWith("Tosafot") || sourceRef.startsWith("Rashi");
+    /* TODO: enable this for all commentaries when commentaries are un-flattened, as this is awkward
+    return link.versionTitle === "Sefaria Community Translation"
+      || link.versionTitle === "Tosafot, Translated by Jan Buckler";
+    */
+  }
+
   private getApplicableCommentaries(): CommentaryType[] {
     const applicableCommentaryNames = new Set(this.applicableCommentaryNames());
     if (applicableCommentaryNames.size === 0) {
       return ALL_COMMENTARIES;
     }
-    for (const defaultName of ["Translation", "Footnotes"]) {
+    for (const defaultName of ["Translation", "Community Translation", "Footnotes"]) {
       applicableCommentaryNames.add(defaultName);
     }
     return ALL_COMMENTARIES.filter(x => applicableCommentaryNames.has(x.englishName));
@@ -1245,6 +1276,7 @@ class SiddurApiRequestHandler extends AbstractApiRequestHandler {
           ref: firstSegment.ref,
           anchorRef: secondSegment.ref,
           anchorRefExpanded: [secondSegment.ref],
+          versionTitle: "",
         }, {
           he: firstSegmentHebrew.replace(/^<small>/, "").replace(/<\/small>$/, ""),
           text: firstSegment.english,

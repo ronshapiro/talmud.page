@@ -15,6 +15,7 @@ declare namespace sefaria {
     ref: string;
     anchorRef: string;
     anchorRefExpanded: string[];
+    versionTitle: string;
   }
 
   export interface TextLinkWithText extends TextLink {

@@ -18,6 +18,11 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     className: "translation",
   },
   {
+    englishName: "Community Translation",
+    hebrewName: "תרגום קהילתי",
+    className: "community-translation",
+  },
+  {
     englishName: "Explanation",
     hebrewName: "הכנות",
     className: "explanation",
