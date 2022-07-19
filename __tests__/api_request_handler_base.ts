@@ -1,5 +1,5 @@
-import * as fs from "fs";
 import {parse as urlParse} from "url";
+import {readUtf8} from "../files";
 import {writeJson} from "../util/json_files";
 import {RealRequestMaker, RequestMaker} from "../api_request_handler";
 
@@ -74,12 +74,11 @@ export class RecordingRequestMaker extends RequestMaker {
 
 export class FakeRequestMaker extends RequestMaker {
   makeRequest<T>(endpoint: string): Promise<T> {
-    return fs.promises.open(inputFilePath(parseEndpoint(endpoint)), "r")
+    return readUtf8(inputFilePath(parseEndpoint(endpoint)))
       .catch(e => {
         throw new Error(
           `Error opening ${e.path}. This likely means that the test data needs to be updated.`);
       })
-      .then(x => x.readFile({encoding: "utf-8"}))
       .then(content => JSON.parse(content) as T);
   }
 }
