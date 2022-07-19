@@ -2,18 +2,20 @@ import {exec} from "child_process";
 import {ArgumentParser} from "argparse";
 import {writeJson} from "../util/json_files";
 import {ApiRequestHandler} from "../api_request_handler";
-import {RecordingRequestMaker, testPages} from "./api_request_handler_base";
+import {FakeRequestMaker, RecordingRequestMaker, testPages} from "./api_request_handler_base";
 
 const argParser = new ArgumentParser({description: "Update api_request_handler test files"});
-argParser.add_argument('--title');
-argParser.add_argument('--page');
+argParser.add_argument("--title");
+argParser.add_argument("--page");
+argParser.add_argument("--use_cached_inputs");
 const flags = argParser.parse_args();
 
-if (!flags.title && !flags.page) {
+if (!flags.title && !flags.page && !flags.use_cached_inputs) {
   exec("rm test_data/api_request_handler/*");
 }
 
-const requestHandler = new ApiRequestHandler(new RecordingRequestMaker());
+const requestMaker = flags.use_cached_inputs ? new FakeRequestMaker() : new RecordingRequestMaker();
+const requestHandler = new ApiRequestHandler(requestMaker);
 for (const testPage of testPages) {
   if (flags.title && flags.title !== testPage.title) continue;
   if (flags.page && flags.page !== testPage.page) continue;

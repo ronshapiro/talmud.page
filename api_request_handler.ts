@@ -465,6 +465,8 @@ function hasText(textLink: sefaria.TextLink): textLink is sefaria.TextLinkWithTe
   return "he" in textLink && "text" in textLink;
 }
 
+const LOTS_OF_NON_BREAKING_SPACES = new RegExp(String.fromCharCode(160) + "{4,}", 'g');
+
 export abstract class AbstractApiRequestHandler {
   private applicableCommentaries: CommentaryType[];
 
@@ -494,8 +496,12 @@ export abstract class AbstractApiRequestHandler {
     return `${books.byCanonicalName[bookName].canonicalName} ${page}`;
   }
 
+  private replaceLotsOfNonBreakingSpacesWithNewlines(text: string): string {
+    return text.replace(LOTS_OF_NON_BREAKING_SPACES, "<br>");
+  }
+
   protected translateHebrewText(text: sefaria.TextType): sefaria.TextType {
-    return text;
+    return sefariaTextTypeTransformation(this.replaceLotsOfNonBreakingSpacesWithNewlines)(text);
   }
 
   protected translateEnglishText(text: sefaria.TextType): sefaria.TextType {
@@ -962,6 +968,8 @@ export abstract class AbstractApiRequestHandler {
   }
 
   private isCommunityTranslation(link: sefaria.TextLink): boolean {
+    const {sourceRef} = link;
+    return sourceRef.startsWith("Tosafot") || sourceRef.startsWith("Rashi");
     return link.versionTitle === "Sefaria Community Translation"
       || link.versionTitle === "Tosafot, Translated by Jan Buckler";
   }
