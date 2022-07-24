@@ -340,12 +340,11 @@ export const SIDDUR_IGNORED_TARGET_REFS = new Set([
 ]);
 
 
-// TO ADD:
-// - Finish Calendarizing
+// TODO:
+// - Load all, async
 // - Shir Hamaalot of Aseret Yimei Teshuva
 // - Fast Day Annenu
 // - Modim formatting
 // - Hallel
 // - Permanent skip
 // - Leader marks
-// - Load all, async

@@ -1219,6 +1219,11 @@ class SiddurApiRequestHandler extends AbstractApiRequestHandler {
   }
 
   protected postProcessSegment(segment: InternalSegment): InternalSegment {
+    if (segment.ref === "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Keduasha 14") {
+      segment.hebrew = (segment.hebrew as string).replace(
+        "<small>",
+        '<small class="aseret-yimei-teshuva">');
+    }
     if (!(segment.ref in SIDDUR_IGNORED_FOOTNOTES)) {
       return segment;
     }
@@ -1276,7 +1281,9 @@ class SiddurApiRequestHandler extends AbstractApiRequestHandler {
     for (let i = 0; i < segments.length - 1; i++) {
       const firstSegment = segments[i];
       const firstSegmentHebrew = firstSegment.hebrew as string;
-      if (!firstSegmentHebrew.startsWith("<small>") || !firstSegmentHebrew.endsWith("</small>")) {
+      if (!firstSegmentHebrew.startsWith("<small>")
+        || !firstSegmentHebrew.endsWith("</small>")
+        || firstSegment.ref === "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Thanksgiving 4") {
         newSegments.push(firstSegment);
         continue;
       }

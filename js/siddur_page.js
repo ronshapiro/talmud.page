@@ -1,5 +1,5 @@
 import * as _ from "underscore";
-import {JewishCalendar} from "kosher-zmanim";
+import {JewishCalendar, HebrewDateFormatter, ZmanimCalendar} from "kosher-zmanim";
 import {amudMetadata} from "./amud.ts";
 import {ApiCache} from "./ApiCache.ts";
 import {getCommentaryTypes} from "./commentaryTypes.ts";
@@ -25,6 +25,44 @@ const LAST_PAGE = SIDDUR_SECTIONS.slice(-1)[0].replace(/ /g, "_");
 
 function refRanges(prefix, startIndex, endIndex) {
   return _.range(startIndex, endIndex + 1).map(x => prefix + x);
+}
+
+function getJewishDate() {
+  const date = new JewishCalendar();
+  date.setInIsrael(Intl.DateTimeFormat().resolvedOptions().timeZone === "Asia/Jerusalem");
+  return date;
+}
+
+function mashivHaruach() {
+  const today = getJewishDate();
+  return (today.getJewishMonth() === 1 && today.getJewishDayOfMonth() < 15)
+    || (today.getJewishMonth() === 7 && today.getJewishDayOfMonth() > 15)
+    || today.getJewishMonth() > 7;
+}
+
+function isAfterTzais() {
+  return new ZmanimCalendar().getTzais().diffNow().milliseconds > 0;
+}
+
+function vtenTalUmatar() {
+  const today = getJewishDate();
+  if (today.getJewishMonth() === 1 && today.getJewishDayOfMonth() < 15) {
+    return true;
+  }
+  if (today.getInIsrael()) {
+    return (today.getJewishMonth() === 8 && today.getJewishDayOfMonth() >= 7)
+      || today.getJewishMonth() > 8;
+  }
+
+  const luxonDate = today.getDate();
+  if (luxonDate.month === 12) {
+    const isNextYearLeapYear = luxonDate.plus({months: 1}).isInLeapYear;
+    return luxonDate.day >= (isNextYearLeapYear ? 5 : 4)
+      || (luxonDate.day >= (isNextYearLeapYear ? 5 : 4) && isAfterTzais());
+  }
+  return luxonDate.month === 1
+    || luxonDate.month === 2
+    || today.getJewishMonth() >= 11;
 }
 
 class SiddurRenderer extends Renderer {
@@ -102,7 +140,7 @@ class SiddurRenderer extends Renderer {
         "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Tachanun, God of Israel ", 1, 11));
     }
 
-    const hebrewDay = new JewishCalendar();
+    const hebrewDay = getJewishDate();
     if (!hebrewDay.isRoshChodesh()) {
       ignored.push(...refRanges(
         "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Barchi Nafshi ", 1, 8));
@@ -111,6 +149,48 @@ class SiddurRenderer extends Renderer {
     if (!hebrewDay.jewishMonth !== 6) {
       ignored.push(...refRanges("Psalms 27:", 1, 14));
     }
+
+    if (mashivHaruach()) {
+      ignored.push("Siddur Ashkenaz, Weekday, Shacharit, Amidah, Divine Might 4-5");
+    } else {
+      ignored.push("Siddur Ashkenaz, Weekday, Shacharit, Amidah, Divine Might 2-3");
+    }
+
+    // TODO(siddur): highlight this in the first 30 days
+    if (vtenTalUmatar()) {
+      ignored.push("Siddur Ashkenaz, Weekday, Shacharit, Amidah, Prosperity 2-3");
+    } else {
+      ignored.push("Siddur Ashkenaz, Weekday, Shacharit, Amidah, Prosperity 4-5");
+    }
+
+    if (!hebrewDay.isAseresYemeiTeshuva()) {
+      ignored.push(...[
+        "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Patriarchs 4",
+        "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Divine Might 8",
+        "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Holiness of God 3",
+        "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Justice 3",
+        "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Thanksgiving 10",
+        "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Peace 2",
+      ]);
+    }
+
+    if (!hebrewDay.isTaanis() && !hebrewDay.isAseresYemeiTeshuva()) {
+      ignored.push(...refRanges(
+        "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Avinu Malkenu ", 1, 53));
+    }
+
+    const isMaybePurim = ["Purim", "Shushan Purim"].includes(
+      new HebrewDateFormatter().formatYomTov(hebrewDay));
+    if (!hebrewDay.isChanukah() && !isMaybePurim) {
+      ignored.push("Siddur Ashkenaz, Weekday, Shacharit, Amidah, Thanksgiving 6");
+    }
+    if (!hebrewDay.isChanukah()) {
+      ignored.push("Siddur Ashkenaz, Weekday, Shacharit, Amidah, Thanksgiving 7");
+    }
+    if (!isMaybePurim) {
+      ignored.push("Siddur Ashkenaz, Weekday, Shacharit, Amidah, Thanksgiving 8");
+    }
+
     return ignored;
   }
 }
@@ -119,12 +199,12 @@ const renderer = new SiddurRenderer();
 window.renderer = renderer;
 
 onceDocumentReady.execute(() => {
-  const today = new JewishCalendar();
+  const today = getJewishDate();
   const endpoint = [
     today.getJewishYear(),
     today.getJewishMonth(),
     today.getJewishDayOfMonth(),
-    Intl.DateTimeFormat().resolvedOptions().timeZone === "Asia/Jerusalem",
+    today.getInIsrael(),
   ].join("/");
   new ApiCache().getAndUpdate(`api/WeekdayTorah/${endpoint}`).then(response => {
     renderer.injectTorahPortion(response);

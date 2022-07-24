@@ -34,6 +34,7 @@ interface Metadata {
   translation: NodeAndText | undefined,
   amud: string,
   isEnglish: boolean;
+  isPersonalNote: boolean;
 }
 
 type FindSefariaRefReturnType = Metadata | undefined;
@@ -63,6 +64,7 @@ const findSefariaRef = (node: Node | null): FindSefariaRefReturnType => {
             : nodeAndText($parentElement.find(".english")[0]),
           amud: $parentElement.closest(".amudContainer").attr("amud") as string,
           isEnglish,
+          isPersonalNote: $parentElement.hasClass('personal-notes'),
         };
       }
     }
@@ -160,69 +162,85 @@ const onSelectionChange = () => {
       });
     };
 
-    buttons.push({
-      text: '<i class="material-icons">build</i>',
-      onClick: () => {
-        captureSelectionState();
-        const maybeHighlight = (
-          text: string | undefined,
-          isEnglish: boolean,
-        ): string | undefined => {
-          if (!text) {
-            return undefined;
-          }
-          if (sefariaRef.isEnglish !== isEnglish) {
-            return text;
-          }
-          return applyHighlight({
-            // This is a workaround - email is selected down below and this is ignored.
-            highlight: "yellow",
-            commentSourceMetadata: checkNotUndefined(
-              commentSourceMetadata, "commentSourceMetadata"),
-            text: checkNotUndefined(selectedText, "selectedText"),
-          }, text, "email");
-        };
-        const hebrew = sefariaRef.hebrew?.text;
-        const translation = sefariaRef.translation?.text;
-        showCorrectionModal({
-          ref,
-          url: sefariaUrl,
-          hebrew,
-          hebrewHighlighted: maybeHighlight(hebrew, false),
-          translation,
-          translationHighlighted: maybeHighlight(translation, true),
-          pathname: window.location.pathname,
-        });
-      },
-    });
+    if (sefariaRef.isPersonalNote) {
+      buttons.push({
+        text: '<i class="material-icons">edit</i>',
+        onClick: () => {
+          driveClient.updateComment(sefariaRef.ref, "new text");
+        },
+      });
 
-    buttons.push({
-      text: '<i class="material-icons">format_bold</i>',
-      onClick: () => {
-        captureSelectionState();
-        const newButton = (color: HighlightColor) => {
-          return {
-            text: `<i class="material-icons icon-highlight-${color}">palette</i>`,
-            onClick: () => {
-              postComment({
-                highlight: color,
-                commentSourceMetadata: checkNotUndefined(
-                  commentSourceMetadata, "commentSourceMetadata"),
-              });
-              snackbars.textSelection.hide();
-            },
+      buttons.push({
+        text: '<i class="material-icons">delete</i>',
+        onClick: () => {
+          driveClient.deleteComment(sefariaRef.ref);
+        },
+      });
+    } else {
+      buttons.push({
+        text: '<i class="material-icons">build</i>',
+        onClick: () => {
+          captureSelectionState();
+          const maybeHighlight = (
+            text: string | undefined,
+            isEnglish: boolean,
+          ): string | undefined => {
+            if (!text) {
+              return undefined;
+            }
+            if (sefariaRef.isEnglish !== isEnglish) {
+              return text;
+            }
+            return applyHighlight({
+              // This is a workaround - email is selected down below and this is ignored.
+              highlight: "yellow",
+              commentSourceMetadata: checkNotUndefined(
+                commentSourceMetadata, "commentSourceMetadata"),
+              text: checkNotUndefined(selectedText, "selectedText"),
+            }, text, "email");
           };
-        };
-        snackbars.textSelection.update(
-          "", [
-            newButton("red"),
-            newButton("yellow"),
-            newButton("green"),
-            newButton("blue"),
-            newButton("gray"),
-          ]);
-      },
-    });
+          const hebrew = sefariaRef.hebrew?.text;
+          const translation = sefariaRef.translation?.text;
+          showCorrectionModal({
+            ref,
+            url: sefariaUrl,
+            hebrew,
+            hebrewHighlighted: maybeHighlight(hebrew, false),
+            translation,
+            translationHighlighted: maybeHighlight(translation, true),
+            pathname: window.location.pathname,
+          });
+        },
+      });
+
+      buttons.push({
+        text: '<i class="material-icons">format_bold</i>',
+        onClick: () => {
+          captureSelectionState();
+          const newButton = (color: HighlightColor) => {
+            return {
+              text: `<i class="material-icons icon-highlight-${color}">palette</i>`,
+              onClick: () => {
+                postComment({
+                  highlight: color,
+                  commentSourceMetadata: checkNotUndefined(
+                    commentSourceMetadata, "commentSourceMetadata"),
+                });
+                snackbars.textSelection.hide();
+              },
+            };
+          };
+          snackbars.textSelection.update(
+            "", [
+              newButton("red"),
+              newButton("yellow"),
+              newButton("green"),
+              newButton("blue"),
+              newButton("gray"),
+            ]);
+        },
+      });
+    }
 
     buttons.push({
       text: '<i class="material-icons">add_comment</i>',

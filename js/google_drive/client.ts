@@ -1,6 +1,6 @@
 /* global gtag */
 import {v4 as uuid} from "uuid";
-import {Commentary} from "../../apiTypes";
+import {ApiComment, Commentary} from "../../apiTypes";
 import {rgbColor} from "./color";
 import {refSorter} from "./ref_sorter";
 import {extractDocumentText} from "./document_text";
@@ -49,7 +49,14 @@ interface HasContents {
   content: gapi.client.docs.StructuralElement[];
 }
 
-interface HighlightCommentWithRange extends HighlightComment {
+interface HasId {
+  id: string;
+}
+
+interface InternalApiComment extends ApiComment, HasId {}
+
+interface InternalHighlightComment extends HighlightComment, HasId {
+  id: string,
   range: Range;
 }
 
@@ -66,7 +73,7 @@ interface PostCommentInternalParams extends PostCommentParams {
   isRetry: boolean;
 }
 
-interface InternalNamedRange {
+interface InternalNamedRange extends HasId {
   startIndex: number;
   endIndex: number;
   joined: boolean | undefined;
@@ -96,8 +103,9 @@ export class DriveClient {
   whenDatabaseReady = new GatedExecutor();
 
   commentsByRef: Record<string, Commentary | undefined> = {};
+  commentsBySyntheticRef: Record<string, InternalApiComment> = {};
   rangesByRef: Record<string, InternalNamedRange[]> = {};
-  highlightsByRef: Record<string, HighlightCommentWithRange[]> = {};
+  highlightsByRef: Record<string, InternalHighlightComment[]> = {};
 
   unsavedCommentStore: UnsavedCommentStore;
 
@@ -137,6 +145,7 @@ export class DriveClient {
     this.triggerErrorListener();
     this.whenDatabaseReady.reset();
     this.commentsByRef = {};
+    this.commentsBySyntheticRef = {};
   }
 
   retryMethodFactory = new RetryMethodFactory({
@@ -250,6 +259,7 @@ export class DriveClient {
   getDatabaseDocument = this.retryMethodFactory.retryingMethod({
     retryingCall: (documentId: string) => {
       this.commentsByRef = {};
+      this.commentsBySyntheticRef = {};
       return this.gapi.getDatabaseDocument(documentId);
     },
     then: (document: TypescriptCleanupType) => {
@@ -308,16 +318,17 @@ export class DriveClient {
           const selectedTextRange = ranges["selected text"];
           if (selectedTextRange) {
             addNamedRanges(ref, [{
+              id,
               startIndex: selectedTextRange.startIndex,
               endIndex: commentRange.endIndex,
               joined: true,
             }]);
           } else {
-            addNamedRanges(ref, [commentRange]);
+            addNamedRanges(ref, [{...commentRange, id}]);
           }
         } else if (suffix.startsWith("highlight")) {
           getList(this.highlightsByRef, ref)
-            .push(this.extractedHighlightComment(commentRange, ranges));
+            .push(this.extractedHighlightComment(id, commentRange, ranges));
         }
       }
     }
@@ -328,9 +339,10 @@ export class DriveClient {
   }
 
   extractedHighlightComment(
+    id: string,
     range: Range,
     ranges: Record<string, Range>,
-  ): HighlightCommentWithRange {
+  ): InternalHighlightComment {
     const suffixes: Record<string, string> = {};
     for (const otherSuffix of Object.keys(ranges)) {
       const [key, value] = otherSuffix.split("=");
@@ -338,6 +350,7 @@ export class DriveClient {
     }
     return {
       range,
+      id,
       highlight: (suffixes.highlight as HighlightColor) ?? "yellow",
       commentSourceMetadata: {
         startPercentage: parseFloat(suffixes.startPercentage),
@@ -411,7 +424,6 @@ export class DriveClient {
           // across titles.
           // "orderingRef:" is probably a better name than parentRef, but parentRef is kept for
           // compatability reasons.
-          // "fullComment:" is not used yet, but seems like a good future-proof tag to have.
           `parentRef:${parentRef}`,
           `orderingRef:${parentRef}`,
           `fullComment:${uniqueId}`,
@@ -503,6 +515,9 @@ export class DriveClient {
     } else {
       const comments = this.computeCommentsForRef(ref);
       this.commentsByRef[ref] = comments;
+      for (const comment of (comments?.comments || [])) {
+        this.commentsBySyntheticRef[comment.ref] = (comment as InternalApiComment);
+      }
       return comments;
     }
   }
@@ -525,11 +540,12 @@ export class DriveClient {
         const hebrew = documentText.map(x => x.languageStats.hebrew).reduce(reducer);
         const english = documentText.map(x => x.languageStats.english).reduce(reducer);
         return {
+          id: range.id,
           en: english > hebrew ? text : "",
           he: hebrew >= english ? text : "",
           ref: `${ref}-personal${index}`,
-          sourceRef: "<synthetic>",
-          sourceHeRef: "<synthetic>",
+          sourceRef: ref,
+          sourceHeRef: ref,
         };
       }),
     };
@@ -571,6 +587,36 @@ export class DriveClient {
     });
     return elements;
   }
+
+  deleteComment = this.retryMethodFactory.retryingMethod({
+    retryingCall: (ref: string) => {
+      const namedRanges = this.databaseDocument.namedRanges as TypescriptCleanupType;
+      const range = (
+        namedRanges[`fullComment:${this.commentsBySyntheticRef[ref].id}`].namedRanges[0].ranges[0]);
+      return this.updateDocument([{deleteContentRange: {range}}])
+        .finally(() => this.refreshDatabaseDocument());
+    },
+    createError: () => "Error deleting personal comment",
+  });
+
+  updateComment = this.retryMethodFactory.retryingMethod({
+    retryingCall: (ref: string, newText: string) => {
+      const namedRanges = this.databaseDocument.namedRanges as TypescriptCleanupType;
+      const comment = this.commentsBySyntheticRef[ref];
+      const commentRangeName = [
+        comment.id, comment.sourceRef, "comment"].join(NAMED_RANGE_SEPARATOR);
+      const namedRange = (
+        namedRanges[commentRangeName].namedRanges[0]);
+      const request = {replaceNamedRangeContent: {
+        namedRangeId: namedRange.id,
+        namedRangeName: namedRange.name,
+        text: newText,
+      }};
+      return this.updateDocument([request])
+        .finally(() => this.refreshDatabaseDocument());
+    },
+    createError: () => "Error editting personal comment",
+  });
 
   signIn(): void {
     localStorage.hasSignedInWithGoogle = "true";

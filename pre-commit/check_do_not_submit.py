@@ -13,7 +13,6 @@ for file_name in sys.argv:
     if file_name in EXEMPTIONS:
         continue
     with open(file_name, "r") as file_to_check:
-        print(file_to_check)
         if VIOLATION_REGEX.findall(file_to_check.read()):
             bad_files.append(file_name)
 

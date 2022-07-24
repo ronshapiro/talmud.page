@@ -85,10 +85,7 @@ class CommentRow extends Component {
 
   renderTableRow(key, hebrew, english, overrideRef = undefined) {
     const {comment, commentaryKind} = this.props;
-    const ref = (
-      commentaryKind.englishName === "Personal Notes"
-        ? "ignore"
-        : overrideRef || comment.ref);
+    const ref = overrideRef || comment.ref;
     const expandableTranslations = (
       this.context.translationOption === "both"
         && localStorage.hideGemaraTranslationByDefault === "true"
@@ -205,6 +202,10 @@ class CommentarySection extends Component {
           commentary = commentaries.Steinsaltz;
         }
         if (!commentary) {
+          // This can happen when deleting the last personal note in a segment, as the delete
+          // happens outside of the normal JS flow.
+          if (commentaryClassName === "personal-notes") continue;
+
           throw new Error(
             `Could not find ${commentaryClassName} commentary in ${sectionLabel}
             ${Object.keys(commentaries).join(", ")}`);
