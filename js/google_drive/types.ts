@@ -19,6 +19,7 @@ export type HighlightColor = "red" | "yellow" | "green" | "blue" | "gray";
 export interface HighlightComment {
   highlight: HighlightColor;
   commentSourceMetadata: CommentSourceMetadata;
+  id?: string | undefined;
 }
 
 export interface HighlightCommentWithText extends HighlightComment {

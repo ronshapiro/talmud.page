@@ -106,6 +106,7 @@ export class DriveClient {
   commentsBySyntheticRef: Record<string, InternalApiComment> = {};
   rangesByRef: Record<string, InternalNamedRange[]> = {};
   highlightsByRef: Record<string, InternalHighlightComment[]> = {};
+  highlightsById: Record<string, InternalHighlightComment> = {};
 
   unsavedCommentStore: UnsavedCommentStore;
 
@@ -302,6 +303,7 @@ export class DriveClient {
     };
 
     this.highlightsByRef = {};
+    this.highlightsById = {};
     const rangesById = this.rangesById();
 
     for (const rangeName of Object.keys(namedRanges)) {
@@ -327,8 +329,9 @@ export class DriveClient {
             addNamedRanges(ref, [{...commentRange, id}]);
           }
         } else if (suffix.startsWith("highlight")) {
-          getList(this.highlightsByRef, ref)
-            .push(this.extractedHighlightComment(id, commentRange, ranges));
+          const highlightComment = this.extractedHighlightComment(id, commentRange, ranges);
+          getList(this.highlightsByRef, ref).push(highlightComment);
+          this.highlightsById[id] = highlightComment;
         }
       }
     }
@@ -569,6 +572,15 @@ export class DriveClient {
     });
   }
 
+  // TODO: comment/highlight deletes and updates should also be saved to localStorage for retries
+  deleteHighlight = this.retryMethodFactory.retryingMethod({
+    retryingCall: (id: string) => {
+      const {range} = this.highlightsById[id];
+      return this.deleteRange(range).finally(() => this.refreshDatabaseDocument());
+    },
+    createError: () => "Error deleting highlight",
+  });
+
   _documentBodyElements(contents: HasContents, elements: ParagraphElement[]): ParagraphElement[] {
     contents.content.forEach((content, index) => {
       if (content.paragraph) {
@@ -598,8 +610,7 @@ export class DriveClient {
       const namedRanges = this.databaseDocument.namedRanges as TypescriptCleanupType;
       const range = (
         namedRanges[`fullComment:${this.commentsBySyntheticRef[ref].id}`].namedRanges[0].ranges[0]);
-      return this.updateDocument([{deleteContentRange: {range}}])
-        .finally(() => this.refreshDatabaseDocument());
+      return this.deleteRange(range).finally(() => this.refreshDatabaseDocument());
     },
     createError: () => "Error deleting personal comment",
   });
@@ -651,6 +662,10 @@ export class DriveClient {
       documentId: this.databaseDocument.documentId!,
       writeControl: {requiredRevisionId: this.databaseDocument.revisionId},
     });
+  }
+
+  private deleteRange(range: Range): Promise<undefined> {
+    return this.updateDocument([{deleteContentRange: {range}}]);
   }
 
   allowCommenting(): boolean {

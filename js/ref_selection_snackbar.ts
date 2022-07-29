@@ -34,17 +34,20 @@ interface Metadata {
   amud: string,
   isEnglish: boolean;
   isPersonalNote: boolean;
+  highlightId: string | undefined;
 }
 
 type FindSefariaRefReturnType = Metadata | undefined;
 const findSefariaRef = (node: Node | null): FindSefariaRefReturnType => {
   let isEnglish = false;
   let hasFoundEnglishAndTranslationElement = false;
+  let highlightId;
   while (node?.parentElement) {
     const $parentElement = $(node.parentElement);
     isEnglish = isEnglish || $parentElement.hasClass("english");
     const isTranslationOfSourceText = $parentElement.hasClass("translation");
     const ref = $parentElement.attr("sefaria-ref");
+    highlightId ||= $parentElement.attr("highlight-id");
     if (ref === "ignore") {
       break;
     }
@@ -64,6 +67,7 @@ const findSefariaRef = (node: Node | null): FindSefariaRefReturnType => {
           amud: $parentElement.closest(".amudContainer").attr("amud") as string,
           isEnglish,
           isPersonalNote: $parentElement.hasClass('personal-notes'),
+          highlightId,
         };
       }
     }
@@ -273,6 +277,16 @@ class Buttons {
     };
   }
 
+  deleteBoldButton(): Button {
+    return {
+      text: `<span class="stacked_mdl_icons">
+        <i class="material-icons">format_bold</i>
+        <i class="material-icons" style="color: var(--snackbar-disabled-button-color); font-size: 32px">hide_source</i>
+      </span>`,
+      onClick: () => driveClient.deleteHighlight(this.sefariaRef.highlightId),
+    };
+  }
+
   addCommentButton(): Button {
     const {ref} = this.sefariaRef;
     return {
@@ -370,6 +384,9 @@ const onSelectionChange = () => {
     } else {
       buttons.push(buttonsImpl.reportLoggedInCorrection());
       buttons.push(buttonsImpl.boldTextButton());
+      if (sefariaRef.highlightId) {
+        buttons.push(buttonsImpl.deleteBoldButton());
+      }
     }
 
     buttons.push(buttonsImpl.addCommentButton());

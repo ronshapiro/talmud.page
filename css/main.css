@@ -23,6 +23,7 @@
     --english-text-color: #555;
     --rashi-quotation-text-color: #aa3232;
     --snackbar-button-color: var(--mdl-accent-color);
+    --snackbar-disabled-button-color: rgb(176, 133, 4) ;
     --snackbar-background-color: var(--text-color);
     --snackbar-text-color: var(--background-color);
     --modal-box-shadow-color: #888;
@@ -333,7 +334,7 @@ h2 {
     height: 10px;
 }
 #main-contents {
-    /* Provide space for the snacbkar. */
+    /* Provide space for the snackbar. */
     padding-bottom: 80px;
 }
 
@@ -472,4 +473,14 @@ h2 {
 
 .text-selection-divider {
     user-select: none;
+}
+.stacked_mdl_icons {
+    position: relative;
+    text-align: center;
+}
+.stacked_mdl_icons > * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

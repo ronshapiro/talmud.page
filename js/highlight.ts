@@ -34,6 +34,10 @@ function injectHighlighting(
         }
         highlighted.textContent = child.data.substring(highlightedStart, highlightedEnd);
 
+        if (highlight.id) {
+          highlighted.setAttribute("highlight-id", highlight.id);
+        }
+
         const parent = child.parentNode!;
         parent.replaceChild(after, child);
         parent.insertBefore(highlighted, after);
