@@ -14,7 +14,7 @@ function addContainer(kind: Kind): void {
      </div>`);
 }
 
-interface Button {
+export interface Button {
   text: string;
   onClick: () => void;
 }

@@ -5,13 +5,12 @@ import {driveClient} from "./google_drive/singleton";
 import {AnyComment, CommentSourceMetadata, HighlightColor} from "./google_drive/types";
 import {applyHighlight} from "./highlight";
 import {$} from "./jquery";
-import {snackbars} from "./snackbar";
+import {Button, snackbars} from "./snackbar";
 import {checkNotUndefined} from "./undefined";
 
 let selectionSnackbarRef: string | undefined;
-const hideSelectionChangeSnackbar = (ref?: string) => {
+const hideSelectionChangeSnackbar = () => {
   if (selectionSnackbarRef) {
-    gtag("event", "selection_change_snackbar.hidden", {ref});
     selectionSnackbarRef = undefined;
     snackbars.textSelection.hide();
   }
@@ -73,176 +72,214 @@ const findSefariaRef = (node: Node | null): FindSefariaRefReturnType => {
   return undefined;
 };
 
-const onSelectionChange = () => {
-  const findSefariaRefOrHideSnackbar = (): FindSefariaRefReturnType => {
-    const selection = document.getSelection() as Selection;
-    const $anchorNode = $(selection.anchorNode as any) as JQuery;
-    if ($anchorNode.closest("#snackbar").length > 0) {
-      return undefined;
-    }
+const findSefariaRefOrHideSnackbar = (): FindSefariaRefReturnType => {
+  const selection = document.getSelection() as Selection;
+  const $anchorNode = $(selection.anchorNode as any) as JQuery;
+  if ($anchorNode.closest("#snackbar").length > 0) {
+    return undefined;
+  }
 
-    if (selection.type !== "Range") {
-      hideSelectionChangeSnackbar();
-      return undefined;
-    }
+  if (selection.type !== "Range") {
+    hideSelectionChangeSnackbar();
+    return undefined;
+  }
 
-    const sefariaRef = findSefariaRef(selection.anchorNode);
-    if (sefariaRef === undefined
-        || !sefariaRef.ref
-        // TODO: perhaps support multiple refs, and just grab everything in between?
-        // If the selection spans multiple refs, ignore them all
-        || sefariaRef.ref !== findSefariaRef(selection.focusNode)?.ref) {
-      hideSelectionChangeSnackbar(sefariaRef?.ref);
-      return undefined;
-    }
-    if (sefariaRef.ref === selectionSnackbarRef) {
-      // do nothing, since the snackbar is already showing the right information
-      return undefined;
-    }
-    return sefariaRef;
+  const sefariaRef = findSefariaRef(selection.anchorNode);
+  if (sefariaRef === undefined
+      || !sefariaRef.ref
+      // TODO: perhaps support multiple refs, and just grab everything in between?
+      // If the selection spans multiple refs, ignore them all
+      || sefariaRef.ref !== findSefariaRef(selection.focusNode)?.ref) {
+    hideSelectionChangeSnackbar();
+    return undefined;
+  }
+  if (sefariaRef.ref === selectionSnackbarRef) {
+    // do nothing, since the snackbar is already showing the right information
+    return undefined;
+  }
+  return sefariaRef;
+};
+
+function talmudPageLinkButton({ref, link}: Metadata): Button {
+  return {
+    text: '<i class="material-icons">open_in_browser</i>',
+    onClick: () => {
+      gtag("event", "view_on_talmud_page", {ref});
+      window.open(link + `?ref_link=${ref}`);
+    },
   };
-  const sefariaRef = findSefariaRefOrHideSnackbar();
-  if (!sefariaRef) {
-    return;
-  }
+}
 
-  const {ref, link} = sefariaRef;
-  const sefariaUrl = `https://www.sefaria.org/${ref.replace(/ /g, "_")}`;
-  gtag("event", "selection_change_snackbar.shown", {ref});
-  selectionSnackbarRef = ref;
-  const buttons = [];
-  if (link) {
-    buttons.push({
-      text: '<i class="material-icons">open_in_browser</i>',
-      onClick: () => {
-        gtag("event", "view_on_talmud_page", {ref});
-        window.open(link + `?ref_link=${ref}`);
-      },
-    });
-  }
-  buttons.push({
+function viewOnSefariaButton(ref: string, sefariaUrl: string): Button {
+  return {
     text: '<i class="material-icons">open_in_new</i>',
     onClick: () => {
       gtag("event", "view_on_sefaria", {ref});
       window.open(sefariaUrl);
     },
-  });
+  };
+}
 
-  if (driveClient.allowCommenting() && ref !== "ignore-drive") {
-    let selectedText: string;
-    let commentSourceMetadata: CommentSourceMetadata | undefined;
-    const captureSelectionState = () => {
-      const selection = document.getSelection()!;
-      selectedText = selection.toString().trim() ?? "";
-      const {isEnglish, hebrew, translation} = sefariaRef;
-      const entireNodeAndText = isEnglish ? translation : hebrew;
-      if (entireNodeAndText === undefined) {
-        throw new Error(`Text is undefined: ${JSON.stringify(sefariaRef)}`);
-      }
-      const end = (
-        findNodeOffset(entireNodeAndText.node, selection.focusNode!) + selection.focusOffset);
-      const start = end - selectedText.length;
-      const entireText = entireNodeAndText.text;
-      const wordCount = (str: string) => Array.from(str.split(" ")).length - 1;
-      commentSourceMetadata = {
-        startPercentage: start / entireText.length,
-        endPercentage: end / entireText.length,
-        wordCountStart: wordCount(entireText.slice(0, start)),
-        wordCountEnd: wordCount(entireText.slice(end)),
-        isEnglish,
-      };
-    };
-    const postComment = (comment: AnyComment) => {
-      driveClient.postComment({
-        comment,
-        selectedText: checkNotUndefined(selectedText, "selectedText"),
-        amud: sefariaRef.amud,
-        ref: sefariaRef.ref,
-        parentRef: sefariaRef.parentRef || sefariaRef.ref,
-      });
-    };
+class SelectionState {
+  private selectedText: string | undefined;
+  private commentSourceMetadata: CommentSourceMetadata | undefined;
 
-    if (sefariaRef.isPersonalNote) {
-      buttons.push({
-        text: '<i class="material-icons">edit</i>',
-        onClick: () => {
-          driveClient.updateComment(sefariaRef.ref, "new text");
-        },
-      });
+  constructor(private sefariaRef: Metadata) {}
 
-      buttons.push({
-        text: '<i class="material-icons">delete</i>',
-        onClick: () => {
-          driveClient.deleteComment(sefariaRef.ref);
-        },
-      });
-    } else {
-      buttons.push({
-        text: '<i class="material-icons">build</i>',
-        onClick: () => {
-          captureSelectionState();
-          const maybeHighlight = (
-            text: string | undefined,
-            isEnglish: boolean,
-          ): string | undefined => {
-            if (!text) {
-              return undefined;
-            }
-            if (sefariaRef.isEnglish !== isEnglish) {
-              return text;
-            }
-            return applyHighlight({
-              // This is a workaround - email is selected down below and this is ignored.
-              highlight: "yellow",
-              commentSourceMetadata: checkNotUndefined(
-                commentSourceMetadata, "commentSourceMetadata"),
-              text: checkNotUndefined(selectedText, "selectedText"),
-            }, text, "email");
-          };
-          const hebrew = sefariaRef.hebrew?.text;
-          const translation = sefariaRef.translation?.text;
-          showCorrectionModal({
-            ref,
-            url: sefariaUrl,
-            hebrew,
-            hebrewHighlighted: maybeHighlight(hebrew, false),
-            translation,
-            translationHighlighted: maybeHighlight(translation, true),
-            pathname: window.location.pathname,
-          });
-        },
-      });
+  getSelectedText(): string {
+    return checkNotUndefined(this.selectedText, "selectedText");
+  }
 
-      buttons.push({
-        text: '<i class="material-icons">format_bold</i>',
-        onClick: () => {
-          captureSelectionState();
-          const newButton = (color: HighlightColor) => {
-            return {
-              text: `<i class="material-icons icon-highlight-${color}">palette</i>`,
-              onClick: () => {
-                postComment({
-                  highlight: color,
-                  commentSourceMetadata: checkNotUndefined(
-                    commentSourceMetadata, "commentSourceMetadata"),
-                });
-                snackbars.textSelection.hide();
-              },
-            };
-          };
-          snackbars.textSelection.update(
-            "", [
-              newButton("red"),
-              newButton("yellow"),
-              newButton("green"),
-              newButton("blue"),
-              newButton("gray"),
-            ]);
-        },
-      });
+  getCommentSourceMetadata(): CommentSourceMetadata {
+    return checkNotUndefined(this.commentSourceMetadata, "commentSourceMetadata");
+  }
+
+  capture() {
+    const selection = document.getSelection()!;
+    this.selectedText = selection.toString().trim() ?? "";
+    const {isEnglish, hebrew, translation} = this.sefariaRef;
+    const entireNodeAndText = isEnglish ? translation : hebrew;
+    if (entireNodeAndText === undefined) {
+      throw new Error(`Text is undefined: ${JSON.stringify(this.sefariaRef)}`);
     }
+    const end = (
+      findNodeOffset(entireNodeAndText.node, selection.focusNode!) + selection.focusOffset);
+    const start = end - this.selectedText.length;
+    const entireText = entireNodeAndText.text;
+    const wordCount = (str: string) => Array.from(str.split(" ")).length - 1;
+    this.commentSourceMetadata = {
+      startPercentage: start / entireText.length,
+      endPercentage: end / entireText.length,
+      wordCountStart: wordCount(entireText.slice(0, start)),
+      wordCountEnd: wordCount(entireText.slice(end)),
+      isEnglish,
+    };
+  }
+}
 
-    buttons.push({
+function personalNoteButtons({ref}: Metadata): Button[] {
+  return [{
+    text: '<i class="material-icons">edit</i>',
+    onClick: () => {
+      driveClient.updateComment(ref, "new text");
+    },
+  }, {
+    text: '<i class="material-icons">delete</i>',
+    onClick: () => driveClient.deleteComment(ref),
+  }];
+}
+
+const REPORT_CORRECTION_HTML = '<i class="material-icons">build</i>';
+
+function reportLoggedOutCorrection(
+  {ref, hebrew, translation}: Metadata, sefariaUrl: string): Button {
+  return {
+    text: REPORT_CORRECTION_HTML,
+    onClick: () => {
+      gtag("event", "report_correction", {ref});
+      const subject = "Sefaria Text Correction from talmud.page";
+      const bodyParts = [
+        `${ref} (${sefariaUrl})`,
+        hebrew.text,
+      ];
+      if (translation && translation.text !== "") {
+        bodyParts.push(translation.text);
+      }
+      // trailing newline so that the description starts on its own line
+      bodyParts.push("Describe the error:");
+
+      const body = encodeURIComponent(bodyParts.join("\n\n"));
+      window.open(`mailto:corrections@sefaria.org?subject=${subject}&body=${body}`);
+    },
+  };
+}
+
+class Buttons {
+  constructor(
+    private sefariaRef: Metadata,
+    private sefariaUrl: string,
+    private selectionState: SelectionState,
+  ) {}
+
+
+  reportLoggedInCorrection(): Button {
+    return {
+      text: REPORT_CORRECTION_HTML,
+      onClick: () => {
+        this.selectionState.capture();
+        const maybeHighlight = (
+          text: string | undefined,
+          isEnglish: boolean,
+        ): string | undefined => {
+          if (!text) {
+            return undefined;
+          }
+          if (this.sefariaRef.isEnglish !== isEnglish) {
+            return text;
+          }
+          return applyHighlight({
+            // This is a workaround - email is selected down below and this is ignored.
+            highlight: "yellow",
+            commentSourceMetadata: this.selectionState.getCommentSourceMetadata(),
+            text: this.selectionState.getSelectedText(),
+          }, text, "email");
+        };
+        const hebrew = this.sefariaRef.hebrew?.text;
+        const translation = this.sefariaRef.translation?.text;
+        showCorrectionModal({
+          ref: this.sefariaRef.ref,
+          url: this.sefariaUrl,
+          hebrew,
+          hebrewHighlighted: maybeHighlight(hebrew, false),
+          translation,
+          translationHighlighted: maybeHighlight(translation, true),
+          pathname: window.location.pathname,
+        });
+      },
+    };
+  }
+
+  private postComment(comment: AnyComment) {
+    driveClient.postComment({
+      comment,
+      selectedText: this.selectionState.getSelectedText(),
+      amud: this.sefariaRef.amud,
+      ref: this.sefariaRef.ref,
+      parentRef: this.sefariaRef.parentRef || this.sefariaRef.ref,
+    });
+  }
+
+  boldTextButton(): Button {
+    return {
+      text: '<i class="material-icons">format_bold</i>',
+      onClick: () => {
+        this.selectionState.capture();
+        const newButton = (color: HighlightColor) => {
+          return {
+            text: `<i class="material-icons icon-highlight-${color}">palette</i>`,
+            onClick: () => {
+              this.postComment({
+                highlight: color,
+                commentSourceMetadata: this.selectionState.getCommentSourceMetadata(),
+              });
+              snackbars.textSelection.hide();
+            },
+          };
+        };
+        snackbars.textSelection.update(
+          "", [
+            newButton("red"),
+            newButton("yellow"),
+            newButton("green"),
+            newButton("blue"),
+            newButton("gray"),
+          ]);
+      },
+    };
+  }
+
+  addCommentButton(): Button {
+    return {
       text: '<i class="material-icons">add_comment</i>',
       onClick: () => {
         const modalContainer = $("#modal-container");
@@ -260,44 +297,53 @@ const onSelectionChange = () => {
           noteTextArea.focus();
         });
 
-        $("#modal-label").text(`Add a note on ${sefariaRef.ref}`);
+        $("#modal-label").text(`Add a note on ${this.sefariaRef.ref}`);
         noteTextArea.val("");
         $("#modal-cancel").off("click").on("click", () => modalContainer.hide());
 
-        captureSelectionState();
+        this.selectionState.capture();
         $("#modal-save").off("click").on("click", () => {
           const text = noteTextArea.val() as string || "";
-          postComment({
+          this.postComment({
             text,
-            commentSourceMetadata: checkNotUndefined(
-              commentSourceMetadata, "commentSourceMetadata"),
+            commentSourceMetadata: this.selectionState.getCommentSourceMetadata(),
           });
           modalContainer.hide();
         });
         modalContainer.show();
         noteTextArea.focus();
       },
-    });
-  } else {
-    buttons.push({
-      text: '<i class="material-icons">build</i>',
-      onClick: () => {
-        gtag("event", "report_correction", {ref});
-        const subject = "Sefaria Text Correction from talmud.page";
-        const bodyParts = [
-          `${ref} (${sefariaUrl})`,
-          sefariaRef.hebrew.text,
-        ];
-        if (sefariaRef.translation && sefariaRef.translation.text !== "") {
-          bodyParts.push(sefariaRef.translation.text);
-        }
-        // trailing newline so that the description starts on its own line
-        bodyParts.push("Describe the error:");
+    };
+  }
+}
 
-        const body = encodeURIComponent(bodyParts.join("\n\n"));
-        window.open(`mailto:corrections@sefaria.org?subject=${subject}&body=${body}`);
-      },
-    });
+const onSelectionChange = () => {
+  const sefariaRef = findSefariaRefOrHideSnackbar();
+  if (!sefariaRef) {
+    return;
+  }
+
+  const {ref} = sefariaRef;
+  const sefariaUrl = `https://www.sefaria.org/${ref.replace(/ /g, "_")}`;
+  selectionSnackbarRef = ref;
+  const buttons = [];
+  if (sefariaRef.link) {
+    buttons.push(talmudPageLinkButton(sefariaRef));
+  }
+  buttons.push(viewOnSefariaButton(ref, sefariaUrl));
+
+  if (driveClient.allowCommenting() && ref !== "ignore-drive") {
+    const buttonsImpl = new Buttons(sefariaRef, sefariaUrl, new SelectionState(sefariaRef));
+    if (sefariaRef.isPersonalNote) {
+      buttons.push(...personalNoteButtons(sefariaRef));
+    } else {
+      buttons.push(buttonsImpl.reportLoggedInCorrection());
+      buttons.push(buttonsImpl.boldTextButton());
+    }
+
+    buttons.push(buttonsImpl.addCommentButton());
+  } else {
+    buttons.push(reportLoggedOutCorrection(sefariaRef, sefariaUrl));
   }
 
   const hideRef = (
