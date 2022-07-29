@@ -3,7 +3,7 @@ import {v4 as uuid} from "uuid";
 import {ApiComment, Commentary} from "../../apiTypes";
 import {rgbColor} from "./color";
 import {refSorter} from "./ref_sorter";
-import {extractDocumentText} from "./document_text";
+import {DocumentText, extractDocumentText} from "./document_text";
 import {GatedExecutor} from "../gated_executor";
 import {GoogleApiClient} from "./gapi";
 import {insertFormattedTextRequests} from "./insertTextRequests";
@@ -522,6 +522,13 @@ export class DriveClient {
     }
   }
 
+  private totalLanguageStats(documentText: DocumentText[]): [number, number] {
+    const reducer = (x: number, y: number): number => x + y;
+    const hebrew = documentText.map(x => x.languageStats.hebrew).reduce(reducer);
+    const english = documentText.map(x => x.languageStats.english).reduce(reducer);
+    return [hebrew, english];
+  }
+
   computeCommentsForRef(ref: string): Commentary | undefined {
     if (!(ref in this.rangesByRef)) {
       return undefined;
@@ -536,9 +543,7 @@ export class DriveClient {
           const second = text.shift();
           text.unshift([first, second].join(" - "));
         }
-        const reducer = (x: number, y: number): number => x + y;
-        const hebrew = documentText.map(x => x.languageStats.hebrew).reduce(reducer);
-        const english = documentText.map(x => x.languageStats.english).reduce(reducer);
+        const [hebrew, english] = this.totalLanguageStats(documentText);
         return {
           id: range.id,
           en: english > hebrew ? text : "",
@@ -599,14 +604,24 @@ export class DriveClient {
     createError: () => "Error deleting personal comment",
   });
 
+  private namedRangeForSyntheticRef(ref: string) {
+    const namedRanges = this.databaseDocument.namedRanges as TypescriptCleanupType;
+    const comment = this.commentsBySyntheticRef[ref];
+    const commentRangeName = [
+      comment.id, comment.sourceRef, "comment"].join(NAMED_RANGE_SEPARATOR);
+    return namedRanges[commentRangeName].namedRanges[0];
+  }
+
+  currentCommentText(ref: string): [string, boolean] {
+    const namedRange = this.namedRangeForSyntheticRef(ref);
+    const documentText = extractDocumentText(namedRange.ranges[0], this.documentBodyElements, true);
+    const [hebrew, english] = this.totalLanguageStats(documentText);
+    return [documentText.map(x => x.text).join("\n"), hebrew >= english];
+  }
+
   updateComment = this.retryMethodFactory.retryingMethod({
     retryingCall: (ref: string, newText: string) => {
-      const namedRanges = this.databaseDocument.namedRanges as TypescriptCleanupType;
-      const comment = this.commentsBySyntheticRef[ref];
-      const commentRangeName = [
-        comment.id, comment.sourceRef, "comment"].join(NAMED_RANGE_SEPARATOR);
-      const namedRange = (
-        namedRanges[commentRangeName].namedRanges[0]);
+      const namedRange = this.namedRangeForSyntheticRef(ref);
       const request = {replaceNamedRangeContent: {
         namedRangeId: namedRange.id,
         namedRangeName: namedRange.name,

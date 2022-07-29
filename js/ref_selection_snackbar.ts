@@ -157,16 +157,11 @@ class SelectionState {
   }
 }
 
-function personalNoteButtons({ref}: Metadata): Button[] {
-  return [{
-    text: '<i class="material-icons">edit</i>',
-    onClick: () => {
-      driveClient.updateComment(ref, "new text");
-    },
-  }, {
+function deleteCommentButton({ref}: Metadata): Button {
+  return {
     text: '<i class="material-icons">delete</i>',
     onClick: () => driveClient.deleteComment(ref),
-  }];
+  };
 }
 
 const REPORT_CORRECTION_HTML = '<i class="material-icons">build</i>';
@@ -279,41 +274,76 @@ class Buttons {
   }
 
   addCommentButton(): Button {
+    const {ref} = this.sefariaRef;
     return {
       text: '<i class="material-icons">add_comment</i>',
       onClick: () => {
-        const modalContainer = $("#modal-container");
-        const noteTextArea = $("#personal-note-entry");
-        const ltrButton = $("#modal-ltr");
-        const rtlButton = $("#modal-rtl");
-
-        noteTextArea.attr("dir", "rtl");
-        ltrButton.removeClass("modal-direction-active");
-        rtlButton.addClass("modal-direction-active");
-        $(".modal-direction").off("click").on("click", () => {
-          noteTextArea.attr("dir", noteTextArea.attr("dir") === "ltr" ? "rtl" : "ltr");
-          ltrButton.toggleClass("modal-direction-active");
-          rtlButton.toggleClass("modal-direction-active");
-          noteTextArea.focus();
-        });
-
-        $("#modal-label").text(`Add a note on ${this.sefariaRef.ref}`);
-        noteTextArea.val("");
-        $("#modal-cancel").off("click").on("click", () => modalContainer.hide());
-
-        this.selectionState.capture();
-        $("#modal-save").off("click").on("click", () => {
-          const text = noteTextArea.val() as string || "";
-          this.postComment({
+        this.showCommentEditorModal({
+          initialText: "",
+          title: `Add a note on ${ref}`,
+          onSave: (text: string) => this.postComment({
             text,
             commentSourceMetadata: this.selectionState.getCommentSourceMetadata(),
-          });
-          modalContainer.hide();
+          }),
+          direction: "rtl",
         });
-        modalContainer.show();
-        noteTextArea.focus();
       },
     };
+  }
+
+  editPersonalCommentButton(): Button {
+    const {ref} = this.sefariaRef;
+    return {
+      text: '<i class="material-icons">edit</i>',
+      onClick: () => {
+        const [initialText, isRtl] = driveClient.currentCommentText(ref);
+        this.showCommentEditorModal({
+          initialText,
+          title: `Edit note`,
+          onSave: (text: string) => driveClient.updateComment(ref, text),
+          direction: isRtl ? "rtl" : "ltr",
+        });
+      },
+    };
+  }
+
+  private showCommentEditorModal({
+    initialText,
+    title,
+    onSave,
+    direction,
+  }: {
+    initialText: string,
+    title: string,
+    onSave: (newText: string) => void,
+    direction: "ltr" | "rtl",
+  }) {
+    const modalContainer = $("#modal-container");
+    const noteTextArea = $("#personal-note-entry");
+    const ltrButton = $("#modal-ltr");
+    const rtlButton = $("#modal-rtl");
+
+    noteTextArea.attr("dir", direction);
+    (direction === "ltr" ? rtlButton : ltrButton).removeClass("modal-direction-active");
+    (direction === "ltr" ? ltrButton : rtlButton).addClass("modal-direction-active");
+    $(".modal-direction").off("click").on("click", () => {
+      noteTextArea.attr("dir", noteTextArea.attr("dir") === "ltr" ? "rtl" : "ltr");
+      ltrButton.toggleClass("modal-direction-active");
+      rtlButton.toggleClass("modal-direction-active");
+      noteTextArea.focus();
+    });
+
+    $("#modal-label").text(title);
+    noteTextArea.val(initialText);
+    $("#modal-cancel").off("click").on("click", () => modalContainer.hide());
+
+    this.selectionState.capture();
+    $("#modal-save").off("click").on("click", () => {
+      onSave(noteTextArea.val() as string || "");
+      modalContainer.hide();
+    });
+    modalContainer.show();
+    noteTextArea.focus();
   }
 }
 
@@ -335,7 +365,8 @@ const onSelectionChange = () => {
   if (driveClient.allowCommenting() && ref !== "ignore-drive") {
     const buttonsImpl = new Buttons(sefariaRef, sefariaUrl, new SelectionState(sefariaRef));
     if (sefariaRef.isPersonalNote) {
-      buttons.push(...personalNoteButtons(sefariaRef));
+      buttons.push(buttonsImpl.editPersonalCommentButton());
+      buttons.push(deleteCommentButton(sefariaRef));
     } else {
       buttons.push(buttonsImpl.reportLoggedInCorrection());
       buttons.push(buttonsImpl.boldTextButton());
