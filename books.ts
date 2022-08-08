@@ -1,3 +1,4 @@
+import * as fs from "fs";
 import {numericLiteralAsInt} from "./hebrew";
 import {SIDDUR_REF_REWRITING} from "./siddur";
 
@@ -290,6 +291,52 @@ class SiddurAshkenaz extends Book {
 function formatListEnglish(items: string[]): string {
   const notLast = items.slice(0, -1).join(", ");
   return `${notLast} and ${items.slice(-1)}`;
+}
+
+export const PENINEI_HALACHA_INDEX = JSON.parse(fs.readFileSync("peninei_halacha_index.json", {encoding: "utf-8"}));
+export const PENINEI_HALACHA_SECTIONS = Object.keys(PENINEI_HALACHA_INDEX);
+PENINEI_HALACHA_SECTIONS.sort(
+  (a, b) => PENINEI_HALACHA_INDEX[a].index - PENINEI_HALACHA_INDEX[b].index);
+
+export class PenineiHalacha extends Book {
+  constructor() {
+    super({
+      canonicalName: "Peninei Halacha",
+      hebrewName: "פניני הלכה",
+      aliases: ["Peninei Halacha"],
+      start: "",
+      end: "",
+      sections: PENINEI_HALACHA_SECTIONS,
+    });
+  }
+
+  private pageDiff(page: string, diff: number): string {
+    return PENINEI_HALACHA_SECTIONS[PENINEI_HALACHA_INDEX[page].index + diff];
+  }
+
+  nextPage(page: string): string {
+    return this.pageDiff(page, 1);
+  }
+
+  previousPage(page: string): string {
+    return this.pageDiff(page, -1);
+  }
+
+  arePagesInReverseOrder(start: string, end: string): boolean {
+    return PENINEI_HALACHA_INDEX[start].index < PENINEI_HALACHA_INDEX[end].index;
+  }
+
+  rewriteSectionRef(section: string): string {
+    return PENINEI_HALACHA_INDEX[section].ref.replace("Peninei Halakhah, ", "");
+  }
+
+  bookType(): string {
+    return "PH";
+  }
+
+  bookNameForRef(): string {
+    return "Peninei_Halakhah,";
+  }
 }
 
 const AMUD_ALEPH_OPTIONS = new Set(["a", "."]);
@@ -1132,6 +1179,7 @@ export const books = new BookIndex([
   }),
   new SiddurAshkenaz(),
   new SyntheticBook("WeekdayTorah"),
+  new PenineiHalacha(),
 ]);
 
 let bibleRefRegex: RegExp;

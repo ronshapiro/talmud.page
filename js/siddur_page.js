@@ -79,6 +79,21 @@ class SiddurRenderer extends Renderer {
 
         hasPrevious: () => amudMetadata().amudStart !== FIRST_PAGE,
         hasNext: () => amudMetadata().amudEnd !== LAST_PAGE,
+
+        range: () => {
+          const metadata = amudMetadata();
+          if (!metadata.amudStart) {
+            return [];
+          }
+          if (!metadata.amudEnd) {
+            return [metadata.amudStart];
+          }
+
+          const siddurSectionsUrl = SIDDUR_SECTIONS.map(x => x.replace(/ /g, "_"));
+          return siddurSectionsUrl.slice(
+            siddurSectionsUrl.indexOf(metadata.amudStart),
+            siddurSectionsUrl.indexOf(metadata.amudEnd) + 1);
+        },
       });
   }
 
@@ -165,12 +180,17 @@ class SiddurRenderer extends Renderer {
 
     if (!hebrewDay.isAseresYemeiTeshuva()) {
       ignored.push(...[
+        // do not submit: highlight all of these when they *are* relevant!
         "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Patriarchs 4",
         "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Divine Might 8",
         "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Holiness of God 3",
+        // do not submit: hamelech hakadosh of kedusha?
+        // do not submit: and remove hakel hakadosh in bracha #3 during aseret yimei teshuva
+        // do not submit: inject when relevant
         "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Justice 3",
         "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Thanksgiving 10",
         "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Peace 2",
+        // do not submit: Siddur Ashkenaz, Weekday, Shacharit, Amidah, Concluding Passage 3 AYT
       ]);
     }
 
@@ -211,4 +231,4 @@ onceDocumentReady.execute(() => {
   });
 });
 
-new Runner(renderer, driveClient, "siddur").main();
+new Runner(renderer, driveClient).main();

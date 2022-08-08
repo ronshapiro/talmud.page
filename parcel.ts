@@ -23,6 +23,8 @@ const entryFiles = [
   "./templates/talmud_page.html",
   "./templates/tanakh.html",
   "./templates/draw.html",
+  "./templates/peninei_halacha.html",
+  "./templates/peninei_halacha_index.html",
 ];
 
 const isProd = (() => {

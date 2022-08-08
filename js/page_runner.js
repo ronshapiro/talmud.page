@@ -68,10 +68,9 @@ const firstFullyOnScreenSection = () => {
 };
 
 export class Runner {
-  constructor(renderer, driveClient, resourceType) {
+  constructor(renderer, driveClient) {
     this.renderer = renderer;
     this.driveClient = driveClient;
-    this.resourceType = resourceType;
     renderer.driveClient = driveClient;
     Object.assign(
       renderer.navigationExtension,
@@ -149,8 +148,7 @@ export class Runner {
       const metadata = amudMetadata();
       gtag("set", {section: metadata.masechet});
 
-      const amudRange = metadata.range();
-
+      const amudRange = this.navigationExtension.range();
       this.renderer.register("results");
 
       const requestOptions = {

@@ -22,7 +22,25 @@ const renderer = new TalmudRenderer(
       const bounds = books[metadata.masechet];
       return metadata.amudEnd !== bounds.end;
     },
+
+    range: () => {
+      const metadata = amudMetadata();
+      if (!metadata.amudStart) {
+        return [];
+      }
+      if (!metadata.amudEnd) {
+        return [metadata.amudStart];
+      }
+
+      let current = metadata.amudStart;
+      const results = [current];
+      while (current !== metadata.amudEnd) {
+        current = computeNextAmud(current);
+        results.push(current);
+      }
+      return results;
+    },
   },
 );
 
-new Runner(renderer, driveClient, "talmud").main();
+new Runner(renderer, driveClient).main();

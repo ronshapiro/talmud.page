@@ -839,6 +839,10 @@ export abstract class AbstractApiRequestHandler {
       english.push("");
     }
 
+    while (hebrew.length > english.length && this.sometimesIsMissingEnglish()) {
+      english.push("");
+    }
+
     if (hebrew.length !== english.length) {
       const extra = hebrew.slice(english.length).concat(english.slice(hebrew.length));
       this.logger.error("Unmatched text/translation: ", extra);
@@ -849,6 +853,10 @@ export abstract class AbstractApiRequestHandler {
     }
 
     return [hebrew, english];
+  }
+
+  protected sometimesIsMissingEnglish(): boolean {
+    return false;
   }
 
   private transformData(
@@ -1339,17 +1347,33 @@ class SiddurApiRequestHandler extends AbstractApiRequestHandler {
   }
 }
 
+export class PenineiHalachaHandler extends AbstractApiRequestHandler {
+  protected recreateWithLogger(logger: Logger): AbstractApiRequestHandler {
+    return new PenineiHalachaHandler(this.requestMaker, logger);
+  }
+
+  protected makeId(bookName: string, page: string): string {
+    return page.replace(/\//g, "_");
+  }
+
+  protected sometimesIsMissingEnglish(): boolean {
+    return true;
+  }
+}
+
 export class ApiRequestHandler {
   private talmudHandler: TalmudApiRequestHandler;
   private tanakhHandler: TanakhApiRequestHandler;
   private siddurHandler: SiddurApiRequestHandler;
   private weekdayTorahHandler: WeekdayTorahPortionHandler;
+  private penineiHalachaHandler: PenineiHalachaHandler;
 
   constructor(requestMaker: RequestMaker) {
     this.talmudHandler = new TalmudApiRequestHandler(requestMaker);
     this.tanakhHandler = new TanakhApiRequestHandler(requestMaker);
     this.siddurHandler = new SiddurApiRequestHandler(requestMaker);
     this.weekdayTorahHandler = new WeekdayTorahPortionHandler(requestMaker);
+    this.penineiHalachaHandler = new PenineiHalachaHandler(requestMaker);
   }
 
   handleRequest(bookName: string, page: string, logger?: Logger): Promise<ApiResponse> {
@@ -1358,6 +1382,8 @@ export class ApiRequestHandler {
         return this.siddurHandler;
       } else if (bookName === "WeekdayTorah") {
         return this.weekdayTorahHandler;
+      } else if (bookName.startsWith("Peninei")) {
+        return this.penineiHalachaHandler;
       }
       return books.byCanonicalName[bookName].isMasechet()
         ? this.talmudHandler

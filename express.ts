@@ -407,6 +407,8 @@ app.get("/api/WeekdayTorah/:year/:month/:day/:inIsrael", (req, res) => {
 app.get("/draw", (req, res) => res.render("draw.html"));
 app.get("/draw/image/*", (req, res) => res.sendFile("draw_images/1495_300ppi.jpg"));
 
+app.get("/ph", (req, res) => res.render("peninei_halacha_index.html"));
+
 if (fs.existsSync("sendgrid_api_key")) {
   sendgrid.setApiKey(fs.readFileSync("sendgrid_api_key", {encoding: "utf-8"}));
   app.post("/corrections", (req, res) => {

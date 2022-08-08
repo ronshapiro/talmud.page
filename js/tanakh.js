@@ -22,6 +22,28 @@ class TanakhRenderer extends Renderer {
           const metadata = amudMetadata();
           return metadata.amudEnd !== books[metadata.masechet].end;
         },
+
+        range: () => {
+          const metadata = amudMetadata();
+          if (!metadata.amudStart) {
+            return [];
+          }
+          if (!metadata.amudEnd) {
+            return [metadata.amudStart];
+          }
+
+          const start = parseInt(metadata.amudStart);
+          const end = parseInt(metadata.amudEnd);
+
+          if (start >= end) {
+            return [metadata.amudStart];
+          }
+          const results = [];
+          for (let i = start; i <= end; i++) {
+            results.push(i.toString());
+          }
+          return results;
+        },
       });
   }
 
@@ -32,4 +54,4 @@ class TanakhRenderer extends Renderer {
   }
 }
 
-new Runner(new TanakhRenderer(), driveClient, "tanakh").main();
+new Runner(new TanakhRenderer(), driveClient).main();

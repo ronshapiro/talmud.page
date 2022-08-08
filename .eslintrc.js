@@ -50,7 +50,9 @@ module.exports = {
     "quotes": "off", // In general this is awfully noisy; ideally it would be ["error", "double"]
     "radix": "off",
     "react/destructuring-assignment": "off",
+    "react/jsx-wrap-multilines": "off",
     "react/static-property-placement": "off",
+    "react/jsx-one-expression-per-line": "off",
     "no-restricted-syntax": "off",
     "no-shadow": "off",
     "@typescript-eslint/no-shadow": ["error"],
