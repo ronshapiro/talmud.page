@@ -23,6 +23,7 @@ const entryFiles = [
   "./templates/talmud_page.html",
   "./templates/tanakh.html",
   "./templates/draw.html",
+  "./templates/service_worker.html",
 ];
 
 const isProd = (() => {
