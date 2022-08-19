@@ -50,12 +50,6 @@ class PenineiHalachaRenderer extends Renderer {
         },
       });
   }
-
-  sortedAmudim() {
-    const keys = Object.keys(this.allAmudim);
-    keys.sort(PENINEI_HALACHA_SORTER);
-    return keys.map(key => this.allAmudim[key]);
-  }
 }
 
 new Runner(new PenineiHalachaRenderer(), driveClient).main();
