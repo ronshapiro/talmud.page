@@ -185,21 +185,22 @@ export class Runner {
         pageCount: amudRange.length,
         callback: () => {
           requestOptions.counter++;
-          if (requestOptions.counter === requestOptions.pageCount) {
-            this.renderer.declareReady();
-            $("#initial-load-spinner").hide();
-
-            maybeSetInitialScrollPosition();
-
-            setInterval(() => {
-              const section = firstFullyOnScreenSection();
-              if (section) {
-                localStorage.setItem("restoreSectionOnRefresh", section.id);
-              }
-            }, 1000);
-
-            onceDocumentReady.declareReady();
+          if (requestOptions.counter !== requestOptions.pageCount) {
+            return;
           }
+          this.renderer.declareReady();
+          $("#initial-load-spinner").hide();
+
+          maybeSetInitialScrollPosition();
+
+          setInterval(() => {
+            const section = firstFullyOnScreenSection();
+            if (section) {
+              localStorage.setItem("restoreSectionOnRefresh", section.id);
+            }
+          }, 1000);
+
+          onceDocumentReady.declareReady();
         },
       };
       for (const amud of amudRange) {
