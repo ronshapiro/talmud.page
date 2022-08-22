@@ -496,6 +496,9 @@ Section.propTypes = {
 class Amud extends Component {
   static propTypes = {
     amudData: PropTypes.object,
+    navigationExtension: PropTypes.object,
+    firstRemovable: PropTypes.bool,
+    lastRemovable: PropTypes.bool,
   };
 
   static contextType = ConfigurationContext;
@@ -506,11 +509,30 @@ class Amud extends Component {
     showing: true,
   };
 
+  _renderTitle() {
+    const {amudData, navigationExtension, firstRemovable, lastRemovable} = this.props;
+    const removableStyle = firstRemovable || lastRemovable ? {} : {visibility: "hidden"};
+    const onClick = () => {
+      if (firstRemovable) navigationExtension.removeFirst();
+      else if (lastRemovable) navigationExtension.removeLast();
+    };
+    return (
+      <div className="titleContainer">
+        <span className="title" key="title" ref={this.headerRef}>{amudData.title}</span>
+        <button
+          className="mdl-button mdl-js-button mdl-button--icon mdl-button remove-section-button"
+          style={removableStyle}
+          onClick={() => onClick()}>
+          <i className="material-icons">do_not_disturb_on</i>
+        </button>
+      </div>);
+  }
+
   render() {
     const {amudData} = this.props;
     const output = [];
     if (amudData.title) { // only in the case of the hidden host
-      output.push(<h2 key="title" ref={this.headerRef}>{amudData.title}</h2>);
+      output.push(this._renderTitle());
     }
     if (amudData.loading) {
       output.push(
@@ -570,7 +592,14 @@ class Root extends Component {
       return [];
     }
 
-    const amudim = allAmudim().map(amud => <Amud key={amud.id + "-amud"} amudData={amud} />);
+    const baseAmudim = allAmudim();
+    const amudim = baseAmudim.map((amud, i) => (
+      <Amud
+        key={amud.id + "-amud"}
+        amudData={amud}
+        navigationExtension={navigationExtension}
+        firstRemovable={i === 0 && baseAmudim.length > 1}
+        lastRemovable={i !== 0 && i === baseAmudim.length - 1} />));
     return (
       <>
         <PreviousButton navigationExtension={navigationExtension} />
@@ -746,6 +775,11 @@ export class Renderer {
     this.forceUpdate();
   }
 
+  deleteAmud(id) {
+    delete this.allAmudim[id];
+    this.forceUpdate();
+  }
+
   declareReady() {
     this.rootComponent.current.setState({isReady: true});
   }
@@ -770,7 +804,7 @@ export class Renderer {
   }
 
   sortedAmudim() {
-    throw new Error("Not implemented!");
+    return amudMetadata().range().map(key => this.allAmudim[key]);
   }
 
   newPageTitle(section) {
@@ -788,18 +822,5 @@ export class TalmudRenderer extends Renderer {
       wrapTranslations,
       expandEnglishByDefault,
       navigationExtension);
-  }
-
-  sortedAmudim() {
-    const keys = Object.keys(this.allAmudim);
-    keys.sort((first, second) => {
-      const difference = parseInt(first) - parseInt(second);
-      if (difference !== 0) {
-        return difference;
-      }
-      return first < second ? -1 : 1;
-    });
-
-    return keys.map(key => this.allAmudim[key]);
   }
 }

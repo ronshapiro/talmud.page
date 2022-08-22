@@ -79,6 +79,8 @@ export class Runner {
       {
         loadPrevious: () => this.addPreviousSection(),
         loadNext: () => this.addNextSection(),
+        removeFirst: () => this.removeFirstSection(),
+        removeLast: () => this.removeLastSection(),
         defaultEditText: () => bookTitleAndRange(),
       });
     this.apiCache = new ApiCache();
@@ -102,20 +104,27 @@ export class Runner {
       gtag("event", "section_loaded", {section});
     });
     if (options.newUrl) {
-      const oldUrl = window.location.href;
-      const {newUrl} = options;
-      mainCache().then(cache => {
-        cache.match(oldUrl).then(cachedResponse => {
-          cache.put(newUrl, cachedResponse.clone());
-        });
-      });
-      window.history.replaceState({}, "", newUrl);
+      this.updateUrl(options.newUrl);
     }
     refreshPageState();
   }
 
+  updateUrl(newUrl) {
+    const oldUrl = window.location.href;
+    mainCache().then(cache => {
+      cache.match(oldUrl).then(cachedResponse => {
+        cache.put(newUrl, cachedResponse.clone());
+      });
+    });
+    window.history.replaceState({}, "", newUrl);
+  }
+
   newUrlRange(start, end) {
-    return `${window.location.origin}/${amudMetadata().masechet}/${start}/to/${end}`;
+    const newUrl = `${window.location.origin}/${amudMetadata().masechet}/${start}`;
+    if (start === end) {
+      return newUrl;
+    }
+    return `${newUrl}/to/${end}`;
   }
 
   addNextSection() {
@@ -143,6 +152,21 @@ export class Runner {
       direction: "previous",
       section: previousSection,
     });
+  }
+
+  removeFirstSection() {
+    this._removeSection(1, -1);
+  }
+
+  removeLastSection() {
+    this._removeSection(0, -2);
+  }
+
+  _removeSection(newStart, newEnd) {
+    const range = amudMetadata().range();
+    this.updateUrl(this.newUrlRange(range.slice(newStart)[0], range.slice(newEnd)[0]));
+    this.renderer.forceUpdate();
+    refreshPageState();
   }
 
   main() {

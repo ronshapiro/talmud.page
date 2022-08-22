@@ -24,12 +24,6 @@ class TanakhRenderer extends Renderer {
         },
       });
   }
-
-  sortedAmudim() {
-    const keys = Object.keys(this.allAmudim);
-    keys.sort((first, second) => parseInt(first) - parseInt(second));
-    return keys.map(key => this.allAmudim[key]);
-  }
 }
 
 new Runner(new TanakhRenderer(), driveClient, "tanakh").main();
