@@ -57,8 +57,12 @@ const maybeSetInitialScrollPosition = () => {
 
 const firstFullyOnScreenSection = () => {
   // TODO: is this still necessary? Is React providing this?
-  const sections = [].concat($(".amudContainer")).concat($(".gemara-container"));
+  const sections = [
+    ...Array.from($(".amudContainer")),
+    ...Array.from($(".gemara-container")),
+  ];
   for (const section of sections) {
+    if (section.id && section.id.includes("hidden")) continue;
     const viewTop = $(section).offset().top;
     const {pageTop, height: pageHeight} = window.visualViewport;
     if (viewTop >= pageTop && viewTop <= pageTop + pageHeight) {
