@@ -196,7 +196,7 @@ app.post("/view_daf", (req, res) => {
   res.redirect(segmentUrl(parsed.bookName, parsed.start, parsed.end));
 });
 
-app.get("/preferences", (req, res) => res.render("preferences.html"));
+app.get("/preferences", (req, res) => res.render("preferences.html", {bookTitle: "Berakhot"}));
 app.get(
   "/manifest.json",
   (req, res) => sendLazyStaticFile(res, "static/progressive_webapp_manifest.json"));

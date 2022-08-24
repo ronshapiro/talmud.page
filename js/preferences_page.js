@@ -95,6 +95,10 @@ const main = () => {
       id: option.value,
       title: `Sample: ${option.displayText}`,
     });
+    renderer.sortedAmudim = () => {
+      return [renderer.allAmudim[option.value]];
+    };
+
     renderer.declareReady();
   });
 
