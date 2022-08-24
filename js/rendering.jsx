@@ -565,7 +565,7 @@ class Amud extends Component {
       else if (lastRemovable) navigationExtension.removeLast();
     };
     return (
-      <div className="titleContainer">
+      <div className="titleContainer" key="titleContainer">
         <span className="title" key="title" ref={this.headerRef}>{amudData.title}</span>
         <button
           className="mdl-button mdl-js-button mdl-button--icon mdl-button remove-section-button"
