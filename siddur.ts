@@ -1,3 +1,5 @@
+import * as _ from "underscore";
+
 export const SEGMENT_SEPERATOR_REF = "SEGMENT_SEPERATOR_REF_VALUE";
 
 export const SYNTHETIC_REFS = new Set([
@@ -226,6 +228,10 @@ export const SIDDUR_REF_REWRITING: Record<string, string[]> = {
   ]),
 };
 /* eslint-enable quote-props */
+
+export const SIDDUR_DEFAULT_MERGE_WITH_NEXT = new Set<string>([
+  ..._.range(1, 18).map(x => `Genesis 22:${x}`),
+]);
 
 function mergePairs(
   base: string,

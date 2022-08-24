@@ -490,7 +490,7 @@ function nextShabbat(date: JewishCalendar): JewishCalendar {
   return new JewishCalendar(date.getDate().plus({days: 7 - date.getDayOfWeek()}));
 }
 
-export function getWeekdayReading(date: JewishCalendar): string[] | undefined {
+export function getWeekdayReading(date: JewishCalendar): string[] {
   if (date.isChanukah()) {
     return chanuka(date);
   } else if (date.isCholHamoedPesach()) {
@@ -509,7 +509,7 @@ export function getWeekdayReading(date: JewishCalendar): string[] | undefined {
   }
 
   if (date.getDayOfWeek() !== 2 && date.getDayOfWeek() !== 5) {
-    return undefined;
+    return [];
   }
   for (let i = 0; i < 3; i++) {
     const parsha = formatter.formatParsha(nextShabbat(date));

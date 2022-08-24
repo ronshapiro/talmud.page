@@ -17,13 +17,14 @@ import {
   NextButton,
   PreviousButton,
 } from "./NavigationButtons.tsx";
-import TableRow from "./TableRow.jsx";
+import TableRow, {CellText} from "./TableRow.jsx";
 import {
   ConfigurationContext,
   useConfiguration,
   HiddenHostContext,
   useHiddenHost,
 } from "./context.js";
+import {mergeCommentaries} from "./mergeCommentaries.ts";
 
 const JSX_NOOP = null;
 
@@ -31,6 +32,7 @@ $.fn.extend({
   betterDoubleClick(fn) {
     if (!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)) {
       let lastTime = 0;
+      this.off("click");
       this.click((event) => {
         const now = Date.now();
         if (now - lastTime <= 1000) {
@@ -41,6 +43,7 @@ $.fn.extend({
         }
       });
     } else {
+      this.off("dblclick");
       this.dblclick(fn);
     }
     return this;
@@ -400,8 +403,7 @@ class CommentarySection extends Component {
   }
 }
 
-function Section(props) {
-  const {section, sectionLabel} = props;
+function Section({sections, sectionLabel, toggleMerging}) {
   const context = useConfiguration();
   const hiddenHost = useHiddenHost();
   // if this is the hidden host, populate the comments as open always
@@ -439,31 +441,69 @@ function Section(props) {
 
   const sectionContents = [];
   const hebrewDoubleClickListener = () => {
-    if (section.commentary.Translation || section.commentary.Steinsaltz) {
-      toggleShowing(true, sectionLabel, "translation");
+    for (const section of sections) {
+      if (section.commentary.Translation || section.commentary.Steinsaltz) {
+        toggleShowing(true, sectionLabel, "translation");
+        break;
+      }
     }
   };
 
   const gemaraContainerClasses = ["gemara-container"];
-  if (section.hadran) {
-    gemaraContainerClasses.push("hadran");
+  for (const section of sections) {
+    if (section.hadran) {
+      gemaraContainerClasses.push("hadran");
+      break;
+    }
   }
+
+  const hebrews = [];
+  const englishes = [];
+  for (const section of sections) {
+    hebrews.push(section.he);
+    if (context.translationOption === "english-side-by-side") {
+      englishes.push(section.en);
+    }
+  }
+
+  const createText = (texts, languageClass) => {
+    if (texts.length === 0) {
+      return "";
+    }
+    const elements = [];
+    for (let i = 0; i < texts.length; i++) {
+      const {ref} = sections[i];
+      elements.push(
+        // TODO: consider another gesture so that the double clicking is not overloaded.
+        <CellText
+          text={texts[i]}
+          languageClass={languageClass}
+          key={`section-part-${i}`}
+          onDoubleClick={() => toggleMerging(ref)}
+          sefariaRef={ref} />);
+      if (i + 1 < texts.length) {
+        elements.push(<span key={`section-part-${i}-space`}> </span>);
+      }
+    }
+    return <span>{elements}</span>;
+  };
 
   sectionContents.push(
     <TableRow
       key="gemara"
       id={`${sectionLabel}-gemara`}
-      hebrew={section.he}
+      hebrew={createText(hebrews, "hebrew-ref-text")}
       hebrewDoubleClickListener={hebrewDoubleClickListener}
-      english={context.translationOption === "english-side-by-side" ? section.en : undefined}
+      english={createText(englishes, "english-ref-text")}
       expandEnglishByDefault={context.expandEnglishByDefault}
       classes={gemaraContainerClasses} />);
 
-  if (section.commentary) {
+  const commentary = mergeCommentaries(sections);
+  if (commentary) {
     const commentarySection = (
       <CommentarySection
         key="commentarySection"
-        commentaries={section.commentary}
+        commentaries={commentary}
         getOrdering={commentSectionLabel => showingState[commentSectionLabel] || []}
         toggleShowing={(...args) => toggleShowing(false, ...args)}
         sectionLabel={sectionLabel} />
@@ -482,15 +522,22 @@ function Section(props) {
   }
 
   return (
-    <div id={sectionLabel} className="section-container" sefaria-ref={section.ref}>
+    // The sefaria-ref here is used for determining what the "parent" of the selected ref is, so for
+    // the case of a commentary, the comment can be placed accordingly in the Google doc. If
+    // `sections` has more than 1 element, the ref that is used could be the first ref or the last
+    // ref. The last seems more logical, since the ordering of comments from merged sections should
+    // be placed after every containing ref. But this isn't absolute and could result in some
+    // weirdness.
+    <div id={sectionLabel} className="section-container" sefaria-ref={sections.slice(-1)[0].ref}>
       {sectionContents}
     </div>
   );
 }
 
 Section.propTypes = {
-  section: PropTypes.object,
+  sections: PropTypes.arrayOf(PropTypes.object),
   sectionLabel: PropTypes.string,
+  toggleMerging: PropTypes.func,
 };
 
 class Amud extends Component {
@@ -507,6 +554,7 @@ class Amud extends Component {
 
   state = {
     showing: true,
+    expandMergedRef: {},
   };
 
   _renderTitle() {
@@ -554,7 +602,31 @@ class Amud extends Component {
         }
 
         const sectionLabel = `${amudData.id}_section_${i + 1}`;
-        output.push(<Section key={i} section={section} sectionLabel={sectionLabel} />);
+        const sections = [section];
+        while (i < amudData.sections.length) {
+          if (!amudData.sections[i].defaultMergeWithNext) break;
+          if (this.state.expandMergedRef[amudData.sections[i].ref]) break;
+          if (i + 1 < amudData.sections.length
+              && this.state.expandMergedRef[amudData.sections[i + 1].ref]) break;
+          i++;
+          sections.push(amudData.sections[i]);
+        }
+        const toggleMerging = (ref) => {
+          this.setState(previousState => {
+            const newState = {
+              ...previousState,
+              expandMergedRef: {...previousState.expandMergedRef},
+            };
+            newState.expandMergedRef[ref] = !newState.expandMergedRef[ref];
+            return newState;
+          });
+        };
+        output.push(
+          <Section
+            key={i}
+            sections={sections}
+            sectionLabel={sectionLabel}
+            toggleMerging={toggleMerging} />);
       }
     }
     return (
@@ -781,11 +853,19 @@ export class Renderer {
   }
 
   declareReady() {
-    this.rootComponent.current.setState({isReady: true});
+    if (this.rootComponent.current === null) {
+      setInterval(200, () => this.declareReady());
+    } else {
+      this.rootComponent.current.setState({isReady: true});
+    }
   }
 
   forceUpdate() {
-    this.rootComponent.current.forceUpdate();
+    if (this.rootComponent.current === null) {
+      setInterval(200, () => this.forceUpdate());
+    } else {
+      this.rootComponent.current.forceUpdate();
+    }
   }
 
   getAmudim() {

@@ -22,6 +22,7 @@ import {
 } from "./sefariaTextType";
 import {
   SEGMENT_SEPERATOR_REF,
+  SIDDUR_DEFAULT_MERGE_WITH_NEXT,
   SIDDUR_IGNORED_FOOTNOTES,
   SIDDUR_IGNORED_REFS,
   SIDDUR_IGNORED_SOURCE_REFS,
@@ -343,6 +344,7 @@ export class InternalSegment {
   hadran?: true;
   // eslint-disable-next-line camelcase
   steinsaltz_start_of_sugya?: true;
+  defaultMergeWithNext?: true;
 
   constructor({hebrew, english, ref}: InternalSegmentConstructorParams) {
     this.hebrew = hebrew;
@@ -397,6 +399,9 @@ export class InternalSegment {
     }
     if (this.steinsaltz_start_of_sugya) {
       json.steinsaltz_start_of_sugya = this.steinsaltz_start_of_sugya;
+    }
+    if (this.defaultMergeWithNext) {
+      json.defaultMergeWithNext = this.defaultMergeWithNext;
     }
     return json;
   }
@@ -1219,6 +1224,9 @@ class SiddurApiRequestHandler extends AbstractApiRequestHandler {
   }
 
   protected postProcessSegment(segment: InternalSegment): InternalSegment {
+    if (SIDDUR_DEFAULT_MERGE_WITH_NEXT.has(segment.ref)) {
+      segment.defaultMergeWithNext = true;
+    }
     if (segment.ref === "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Keduasha 14") {
       segment.hebrew = (segment.hebrew as string).replace(
         "<small>",

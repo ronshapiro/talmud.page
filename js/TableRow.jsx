@@ -1,7 +1,9 @@
 import React, {
   Component,
   createRef,
+  useEffect,
   useMemo,
+  useRef,
   useState,
 } from "react";
 import PropTypes from 'prop-types';
@@ -22,6 +24,34 @@ const brTags = (count) => {
   const result = tags.join("");
   brTagsCache[count] = result;
   return result;
+};
+
+/**
+ * This element defines the basic attributes of what is inserted in cell text. Specifically, it
+ * translates html text into React nodes and applies an optional double-click listener.
+ */
+export function CellText({text, onDoubleClick, sefariaRef, languageClass}) {
+  const ref = useRef();
+  useEffect(() => {
+    $(ref.current).betterDoubleClick(onDoubleClick);
+  });
+  /* eslint-disable react/no-danger */
+  return (
+    // These elements are split for a technicality in ref_selection_snackbar for how texts are look
+    // up. That's a hack anyway and rely's on the DOM, but refactoring it requires a good deal of
+    // work. Splitting the elements was the easiest patch on top of that hack.
+    <span sefaria-ref={sefariaRef}>
+      <span dangerouslySetInnerHTML={{__html: text}} ref={ref} className={languageClass} />
+    </span>
+  );
+  /* eslint-enable react/no-danger */
+}
+
+CellText.propTypes = {
+  text: PropTypes.string.isRequired,
+  onDoubleClick: PropTypes.func,
+  sefariaRef: PropTypes.string,
+  languageClass: PropTypes.string,
 };
 
 class Cell extends Component {
@@ -156,10 +186,16 @@ function TableRow(props) {
   const hiddenHost = useHiddenHost();
 
   const applyHiddenNode = (contents, node) => {
-    // estimating size is only doable with html as a string, as calling ReactDOM.render() within a
-    // component is unsupported due to its side effects.
     if (typeof contents === "string") {
       node.html(contents);
+    } else if (contents && contents.props && Array.isArray(contents.props.children)) {
+      const htmlText = [];
+      for (const child of contents.props.children) {
+        if (child.props && child.props.text) {
+          htmlText.push(child.props.text);
+        }
+      }
+      node.html(htmlText.join(""));
     } else {
       node.html("");
     }
