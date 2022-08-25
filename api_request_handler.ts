@@ -610,7 +610,7 @@ export abstract class AbstractApiRequestHandler {
         };
         for (const underlyingRef of underlyingRefs) {
           const underlyingRefData = fetchedData[underlyingRef];
-          const {he, text} = underlyingRefData;
+          let {he, text} = underlyingRefData;
           const addSegment = (
             hebrew: sefaria.TextType,
             english: sefaria.TextType,
@@ -623,6 +623,8 @@ export abstract class AbstractApiRequestHandler {
           if (typeof he === "string") {
             addSegment(he, text, underlyingRef);
           } else {
+            he = he.flat();
+            text = (text as any).flat();
             const addSegmentRange = (
               prefixRef: string, segmentIndices: number[], suffixIndices: number[]) => {
               for (let i = 0; i < segmentIndices.length; i++) {
