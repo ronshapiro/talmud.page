@@ -591,25 +591,29 @@ class Amud extends Component {
 
     // TODO: if not showing, update the UI so it's clear that it's collapsed
     if (this.state.showing) {
-      for (let i = 0; i < amudData.sections.length; i++) {
-        const section = amudData.sections[i];
-        if (this.context.ignoredSectionRefs().includes(section.ref)) {
-          continue;
-        }
+      const ignoredRefs = new Set(this.context.ignoredSectionRefs());
+      const sections = amudData.sections.filter(x => !ignoredRefs.has(x.ref));
+      for (let i = 0; i < sections.length; i++) {
+        const section = sections[i];
 
         if (i !== 0 && section.steinsaltz_start_of_sugya) {
           output.push(<br key={`sugya-separator-${i}`} className="sugya-separator" />);
         }
 
         const sectionLabel = `${amudData.id}_section_${i + 1}`;
-        const sections = [section];
-        while (i < amudData.sections.length) {
-          if (!amudData.sections[i].defaultMergeWithNext) break;
-          if (this.state.expandMergedRef[amudData.sections[i].ref]) break;
-          if (i + 1 < amudData.sections.length
-              && this.state.expandMergedRef[amudData.sections[i + 1].ref]) break;
+        const mergedSections = [section];
+        while (i < sections.length) {
+          const currentSection = sections[i];
+          const nextSection = sections[i + 1];
+          if (!currentSection.defaultMergeWithNext) break;
+          if (this.state.expandMergedRef[currentSection.ref]) break;
+          if (nextSection && this.state.expandMergedRef[nextSection.ref]) break;
+          if (nextSection && nextSection.steinsaltz_start_of_sugya) break;
           i++;
-          sections.push(amudData.sections[i]);
+          if (i === sections.length) {
+            break;
+          }
+          mergedSections.push(nextSection);
         }
         const toggleMerging = (ref) => {
           this.setState(previousState => {
@@ -624,7 +628,7 @@ class Amud extends Component {
         output.push(
           <Section
             key={i}
-            sections={sections}
+            sections={mergedSections}
             sectionLabel={sectionLabel}
             toggleMerging={toggleMerging} />);
       }

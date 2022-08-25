@@ -163,20 +163,37 @@ class SiddurRenderer extends Renderer {
       ignored.push("Siddur Ashkenaz, Weekday, Shacharit, Amidah, Prosperity 4-5");
     }
 
-    if (!hebrewDay.isAseresYemeiTeshuva()) {
+    // TODO: Highlight all of these!
+    if (hebrewDay.isAseresYemeiTeshuva()) {
       ignored.push(...[
-        "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Patriarchs 4",
-        "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Divine Might 8",
-        "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Holiness of God 3",
-        "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Justice 3",
-        "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Thanksgiving 10",
-        "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Peace 2",
+        "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Holiness of God 2",
+        "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Justice 2",
       ]);
+    } else {
+      ignored.push(
+        ...[
+          "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Patriarchs 4",
+          "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Patriarchs 5",
+          "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Divine Might 8",
+          "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Holiness of God 3",
+          "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Justice 3",
+          "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Thanksgiving 10",
+          "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Peace 2",
+        ].concat(
+          _.range(1, 9).map(x => `Psalms 130:${x}`),
+        ));
     }
 
     if (!hebrewDay.isTaanis() && !hebrewDay.isAseresYemeiTeshuva()) {
       ignored.push(...refRanges(
         "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Avinu Malkenu ", 1, 53));
+    }
+
+    if (!hebrewDay.isRoshChodesh()
+        && !hebrewDay.isCholHamoedPesach()
+        && !hebrewDay.isCholHamoedSuccos()) {
+      // TODO(low): ideally, add a line break also after Ya'ale v'yavo when it's present.
+      ignored.push("Siddur Ashkenaz, Weekday, Shacharit, Amidah, Temple Service 3");
     }
 
     const isMaybePurim = ["Purim", "Shushan Purim"].includes(

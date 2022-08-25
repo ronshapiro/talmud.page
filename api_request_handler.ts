@@ -383,6 +383,9 @@ export class InternalSegment {
       if (segment.steinsaltz_start_of_sugya) {
         newSegment.steinsaltz_start_of_sugya = true;
       }
+      if (segment.defaultMergeWithNext) {
+        newSegment.defaultMergeWithNext = true;
+      }
     }
     return newSegment;
   }
@@ -1159,6 +1162,16 @@ class WeekdayTorahPortionHandler extends AbstractApiRequestHandler {
       parseInt(year), parseInt(month), parseInt(day), inIsrael === "true");
     return [getWeekdayReading(date)![parseInt(aliyahNumber)]];
   }
+
+  protected postProcessAllSegments(
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    segments: InternalSegment[], bookName: string, page: string,
+  ): InternalSegment[] {
+    for (const segment of segments.slice(0, -1)) {
+      segment.defaultMergeWithNext = true;
+    }
+    return segments;
+  }
 }
 
 class SiddurApiRequestHandler extends AbstractApiRequestHandler {
@@ -1293,7 +1306,8 @@ class SiddurApiRequestHandler extends AbstractApiRequestHandler {
       const firstSegmentHebrew = firstSegment.hebrew as string;
       if (!firstSegmentHebrew.startsWith("<small>")
         || !firstSegmentHebrew.endsWith("</small>")
-        || firstSegment.ref === "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Thanksgiving 4") {
+        || firstSegment.ref === "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Thanksgiving 4"
+        || firstSegment.ref === "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Shema 5") {
         newSegments.push(firstSegment);
         continue;
       }

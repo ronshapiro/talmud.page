@@ -17,6 +17,31 @@ function seperateEverySection(sections: string[]) {
   return sections.flatMap(section => [SEGMENT_SEPERATOR_REF, section]).slice(1);
 }
 
+export const SIDDUR_DEFAULT_MERGE_WITH_NEXT = new Set<string>([
+  "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Holiness of God 1",
+  "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Prosperity 1",
+  "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Prosperity 2",
+  "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Prosperity 3",
+  "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Prosperity 4",
+  "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Prosperity 5",
+  "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Justice 1",
+]);
+
+function mergeRefsByDefault(range: string, withLast?: true): string {
+  const [prefix, suffix] = range.split(":");
+  const [start, end] = suffix.split("-");
+  const delta = withLast ? 1 : 0;
+  _.range(parseInt(start), parseInt(end) + delta)
+    .map(x => `${prefix}:${x}`)
+    .forEach(x => SIDDUR_DEFAULT_MERGE_WITH_NEXT.add(x));
+  return range;
+}
+
+function mergeWithNext(ref: string): string {
+  SIDDUR_DEFAULT_MERGE_WITH_NEXT.add(ref);
+  return ref;
+}
+
 /* eslint-disable quote-props */
 export const SIDDUR_REF_REWRITING: Record<string, string[]> = {
   "Morning Blessings": [
@@ -24,22 +49,22 @@ export const SIDDUR_REF_REWRITING: Record<string, string[]> = {
   ],
   "Akedah": [
     "Siddur Ashkenaz, Weekday, Shacharit, Preparatory Prayers, Akedah 1",
-    "Genesis 22:1-18",
+    mergeRefsByDefault("Genesis 22:1-18"),
     "Siddur Ashkenaz, Weekday, Shacharit, Preparatory Prayers, Akedah 3",
   ],
   "Sovereignty of Heaven": [
     "Siddur Ashkenaz, Weekday, Shacharit, Preparatory Prayers, Sovereignty of Heaven",
   ],
   "Korbanot": [
-    "Numbers 28:1-8",
+    mergeRefsByDefault("Numbers 28:1-8"),
     SEGMENT_SEPERATOR_REF,
     "Leviticus 1:11",
     SEGMENT_SEPERATOR_REF,
     "Siddur Ashkenaz, Weekday, Shacharit, Preparatory Prayers, Korbanot, Korban HaTamid 5",
     SEGMENT_SEPERATOR_REF,
     "Siddur Ashkenaz, Weekday, Shacharit, Preparatory Prayers, Korbanot, Ketoret 1",
-    "Exodus 30:34-36",
-    "Exodus 30:7-8",
+    mergeRefsByDefault("Exodus 30:34-36"),
+    mergeRefsByDefault("Exodus 30:7-8"),
     SEGMENT_SEPERATOR_REF,
     // "Siddur Ashkenaz, Weekday, Shacharit, Preparatory Prayers, Korbanot, Ketoret 4-9",
     "Siddur Ashkenaz, Weekday, Shacharit, Preparatory Prayers, Korbanot, Baraita of Rabbi Yishmael",
@@ -48,102 +73,113 @@ export const SIDDUR_REF_REWRITING: Record<string, string[]> = {
   "Pesukei Dezimra - Introductory Psalm": [
     // nice intro!
     "Siddur Ashkenaz, Weekday, Shacharit, Pesukei Dezimra, Introductory Psalm 1",
-    "Psalms 30",
+    mergeRefsByDefault("Psalms 30:1-13"),
   ],
   "Barukh She'amar": [
     "Siddur Ashkenaz, Weekday, Shacharit, Pesukei Dezimra, Barukh She'amar",
   ],
   "Hodu": [
-    "I Chronicles 16:8-26",
+    mergeRefsByDefault("I Chronicles 16:8-26"),
     SEGMENT_SEPERATOR_REF,
-    "I Chronicles 16:27-36",
-    "Psalms 99:5", // Rommemus:
+    mergeRefsByDefault("I Chronicles 16:27-36", true),
+    mergeWithNext("Psalms 99:5"), // Rommemus:
     "Psalms 99:9",
     SEGMENT_SEPERATOR_REF,
-    "Psalms 78:38", //  vehu rachum
-    "Psalms 40:12",
-    "Psalms 25:6",
-    "Psalms 68:35-36",
-    "Psalms 94:1-2",
-    "Psalms 3:9",
-    "Psalms 46:8",
-    "Psalms 84:13",
-    "Psalms 20:10",
+    mergeWithNext("Psalms 78:38"), //  vehu rachum
+    mergeWithNext("Psalms 40:12"),
+    mergeWithNext("Psalms 25:6"),
+    mergeRefsByDefault("Psalms 68:35-36", true),
+    mergeRefsByDefault("Psalms 94:1-2", true),
+    mergeWithNext("Psalms 3:9"),
+    mergeWithNext("Psalms 46:8"),
+    mergeWithNext("Psalms 84:13"),
+    mergeWithNext("Psalms 20:10"),
     SEGMENT_SEPERATOR_REF,
-    "Psalms 28:9", // Hoshia et amecha
-    "Psalms 33:20-22",
-    "Psalms 85:8",
-    "Psalms 44:27",
-    "Psalms 81:11",
-    "Psalms 144:15",
+    mergeWithNext("Psalms 28:9"), // Hoshia et amecha
+    mergeRefsByDefault("Psalms 33:20-22", true),
+    mergeWithNext("Psalms 85:8"),
+    mergeWithNext("Psalms 44:27"),
+    mergeWithNext("Psalms 81:11"),
+    mergeWithNext("Psalms 144:15"),
     "Psalms 13:6",
   ],
   "Mizmor Letoda": [
     "Siddur Ashkenaz, Weekday, Shacharit, Pesukei Dezimra, Mizmor Letoda 1",
-    "Psalms 100",
+    mergeRefsByDefault("Psalms 100:1-5"),
   ],
   "Yehi Chevod": [
     "Siddur Ashkenaz, Weekday, Shacharit, Pesukei Dezimra, Yehi Chevod 1",
-    "Psalms 104:31",
-    "Psalms 113:2-4",
-    "Psalms 135:13",
-    "Psalms 103:19",
-    "I Chronicles 16:31",
-    "Machzor Rosh Hashanah Ashkenaz, The Morning Prayers, First Day of Rosh Hashana, Reader's Repetition.70", // Awkward!!!
-    "Psalms 10:16",
-    "Psalms 33:10",
-    "Proverbs 19:21",
-    "Psalms 33:11",
-    "Psalms 33:9",
-    "Psalms 132:13",
-    "Psalms 135:4",
-    "Psalms 94:14",
-    "Psalms 78:38",
+    mergeWithNext("Psalms 104:31"),
+    mergeRefsByDefault("Psalms 113:2-4"),
+    mergeWithNext("Psalms 135:13"),
+    mergeWithNext("Psalms 103:19"),
+    mergeWithNext("I Chronicles 16:31"),
+    mergeWithNext("Machzor Rosh Hashanah Ashkenaz, The Morning Prayers, First Day of Rosh Hashana, Reader's Repetition.70"), // Awkward!!!
+    mergeWithNext("Psalms 10:16"),
+    mergeWithNext("Psalms 33:10"),
+    mergeWithNext("Proverbs 19:21"),
+    mergeWithNext("Psalms 33:11"),
+    mergeWithNext("Psalms 33:9"),
+    mergeWithNext("Psalms 132:13"),
+    mergeWithNext("Psalms 135:4"),
+    mergeWithNext("Psalms 94:14"),
+    mergeWithNext("Psalms 78:38"),
     "Psalms 20:10",
   ],
   "Ashrei": ASHREI_REFS,
-  "Psalm 146": ["Psalms 146"],
-  "Psalm 147": ["Psalms 147"],
-  "Psalm 148": ["Psalms 148"],
-  "Psalm 149": ["Psalms 149"],
-  "Psalm 150": ["Psalms 150"],
+  "Psalm 146": [mergeRefsByDefault("Psalms 146:1-10")],
+  "Psalm 147": [mergeRefsByDefault("Psalms 147:1-20")],
+  "Psalm 148": [mergeRefsByDefault("Psalms 148:1-14")],
+  "Psalm 149": [mergeRefsByDefault("Psalms 149:1-9")],
+  "Psalm 150": [mergeRefsByDefault("Psalms 150:1-6")],
   "Psalms - Closing Verses": [
     "Siddur Ashkenaz, Weekday, Shacharit, Pesukei Dezimra, Closing Verses 1",
-    "Psalms 89:53",
-    "Psalms 135:21",
-    "Psalms 72:18-19",
+    mergeWithNext("Psalms 89:53"),
+    mergeWithNext("Psalms 135:21"),
+    mergeRefsByDefault("Psalms 72:18-19"),
   ],
   "Vayevarech David": [
-    "I Chronicles 29:10-13",
+    mergeRefsByDefault("I Chronicles 29:10-13"),
     SEGMENT_SEPERATOR_REF,
-    "Nehemiah 9:6-11",
+    mergeRefsByDefault("Nehemiah 9:6-11"),
   ],
   "Az Yashir": [
-    "Exodus 14:30-31",
-    "Exodus 15:1-18",
-    // repeat the duplicated pasuk
+    mergeRefsByDefault("Exodus 14:30-31"),
+    mergeRefsByDefault("Exodus 15:1-17"),
     "Exodus 15:18",
+    "Exodus 15:18", // repeat the duplicated pasuk
     "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Uva Letzion 8",
     "Exodus 15:19",
     SEGMENT_SEPERATOR_REF,
-    "Psalms 22:29",
-    "Obadiah 1:21",
+    mergeWithNext("Psalms 22:29"),
+    mergeWithNext("Obadiah 1:21"),
     "Zechariah 14:9",
   ],
 
   "Yishtabach": [
     "Siddur Ashkenaz, Weekday, Shacharit, Pesukei Dezimra, Yishtabach",
+    mergeRefsByDefault("Psalms 130:1-8"),
   ],
-
-  // "Psalm 130": ["Psalms 130"],
 
   "Birchot Kriat Shema": seperateEverySection([
     "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Barchu",
     "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, First Blessing before Shema",
     "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Second Blessing before Shema",
-    "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Shema",
+  ]).concat([
+    "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Shema 1-2",
+    // This explanation should really be between 3 (the pasuk of Shema) and Baruch Shem (5). So
+    // it's moved up so that it will be treated like a hachana.
+    "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Shema 4",
+    "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Shema 3",
+    "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Shema 5",
+
+  ]).concat(seperateEverySection([
+    mergeRefsByDefault("Deuteronomy 6:5-9"),
+    mergeRefsByDefault("Deuteronomy 11:13-21"),
+    mergeRefsByDefault("Numbers 15:37-41"),
+    "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Shema 9-12",
     "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Blessing after Shema",
-  ]),
+  ])),
 
   "Amidah - Opening": seperateEverySection([
     "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Patriarchs",
@@ -168,14 +204,22 @@ export const SIDDUR_REF_REWRITING: Record<string, string[]> = {
     "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Kingdom of David",
     "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Response to Prayer",
   ]),
-  "Amidah - Closing": seperateEverySection([
-    "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Temple Service",
+  "Amidah - Closing": [
+    // The merging is only applied when Ya'ale v'yavo is not said. If it is, the segment
+    // seperator breaks the merging.
+    mergeWithNext("Siddur Ashkenaz, Weekday, Shacharit, Amidah, Temple Service 1"),
+    SEGMENT_SEPERATOR_REF,
+    "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Temple Service 4",
+    "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Temple Service 3",
+    "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Temple Service 5",
+    SEGMENT_SEPERATOR_REF,
+  ].concat(seperateEverySection([
     "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Thanksgiving",
     "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Birkat Kohanim",
     "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Peace",
     // TODO: remove יִהְיוּ לְרָצוֹן at start
     "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Concluding Passage",
-  ]),
+  ])),
 
   "Tachanun": seperateEverySection([
     "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Vidui and 13 Middot",
@@ -207,14 +251,23 @@ export const SIDDUR_REF_REWRITING: Record<string, string[]> = {
     SEGMENT_SEPERATOR_REF,
     // TODO: prefix this with "Chazan"
     "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Returning Sefer to Aron, Yehalelu 2-3",
-    "Psalms 24",
+    mergeRefsByDefault("Psalms 24:1-10"),
     SEGMENT_SEPERATOR_REF,
-    "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Returning Sefer to Aron, Uvenucho Yomar",
+    // TODO: bold first word
+    mergeWithNext("Numbers 10:36"),
+    mergeWithNext("Psalms 132:8"),
+    mergeWithNext("Psalms 132:9"),
+    mergeWithNext("Psalms 132:10"),
+    mergeWithNext("Proverbs 4:2"),
+    mergeWithNext("Proverbs 3:17"),
+    mergeWithNext("Lamentations 5:21"),
+    mergeWithNext("Proverbs 3:17"),
+    "Proverbs 3:18",
   ],
 
-  "Ashrei (Conclusion)": ASHREI_REFS.concat([
+  "Ashrei - Conclusion": ASHREI_REFS.concat([
     SEGMENT_SEPERATOR_REF,
-    "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Lamenatze'ach",
+    mergeRefsByDefault("Psalms 20:1-10"),
     SEGMENT_SEPERATOR_REF,
     "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Uva Letzion",
   ]),
@@ -229,10 +282,6 @@ export const SIDDUR_REF_REWRITING: Record<string, string[]> = {
 };
 /* eslint-enable quote-props */
 
-export const SIDDUR_DEFAULT_MERGE_WITH_NEXT = new Set<string>([
-  ..._.range(1, 18).map(x => `Genesis 22:${x}`),
-]);
-
 function mergePairs(
   base: string,
   ...extensionPairs: [number | string, number | string][]
@@ -244,11 +293,11 @@ function mergePairs(
   return result;
 }
 
+// These merges, as opposed to SIDDUR_DEFAULT_MERGE_WITH_NEXT are undeniably linked, and should
+// always be considered one section.
 export const SIDDUR_MERGE_PAIRS: Record<string, string> = {
   ...mergePairs(
     "Siddur Ashkenaz, Weekday, Shacharit, Preparatory Prayers, Sovereignty of Heaven", [6, 7]),
-
-  "Exodus 30:34": "Exodus 30:36",
 
   ...mergePairs(
     "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Barchu", [2, 3], [4, 5]),
@@ -354,3 +403,8 @@ export const SIDDUR_IGNORED_TARGET_REFS = new Set([
 // - Hallel
 // - Permanent skip
 // - Leader marks
+// - Rabbi Yishmael bolding
+// - Morid hatal. And Mashiv Haruach Hachana is incorrectly placed.
+// parse-out Kri-ketiv?
+// Hodus: remove {פ}<br>
+// - sugya break after ata chonen, goel yisrael

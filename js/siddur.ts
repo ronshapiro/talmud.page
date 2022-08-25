@@ -25,6 +25,6 @@ export const SIDDUR_SECTIONS = [
   "Amidah - Closing",
   "Tachanun",
   "Torah",
-  "Ashrei (Conclusion)",
+  "Ashrei - Conclusion",
   "Aleinu",
 ];
