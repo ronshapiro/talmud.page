@@ -17,7 +17,7 @@ const precommit = (command: string) => {
   precommits.push(proc);
   const output: string[] = [];
   const collectOutput = (data: any) => {
-    output.push(String(data).trim());
+    output.push(String(data));
   };
   proc.stdout.on("data", collectOutput);
   proc.stderr.on("data", collectOutput);
@@ -26,7 +26,7 @@ const precommit = (command: string) => {
     if (exitCode !== 0) {
       console.log(chalk.red.inverse(`${command} failed`));
       if (output.length > 0) {
-        console.log(output.join("\n"));
+        console.log(output.join(""));
       }
     }
     if (precommits.length === exitCodes.length) {
