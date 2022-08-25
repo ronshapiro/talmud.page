@@ -1,4 +1,5 @@
 /* eslint-disable no-console */
+import * as chalk from 'chalk';
 
 export interface Logger {
   error: (...args: any[]) => void;
@@ -16,9 +17,16 @@ export class Timer {
   }
 }
 
-class ConsoleLogger implements Logger {
+function replaceWithColor(color: (x: any) => string, args: any[]): any[] {
+  if (!color) color = (x: any) => x; // for jest
+  return args.map(x => {
+    return ["string", "number"].includes(typeof x) ? color(x) : x;
+  });
+}
+
+export class ConsoleLogger implements Logger {
   error(...args: any[]): void {
-    console.error(...args);
+    console.error(...replaceWithColor(chalk.red, args));
   }
 
   log(...args: any[]): void {
@@ -26,7 +34,7 @@ class ConsoleLogger implements Logger {
   }
 
   debug(...args: any[]): void {
-    console.debug(...args);
+    console.debug(...replaceWithColor(chalk.cyan, args));
   }
 
   newTimer(): Timer {

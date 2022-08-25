@@ -171,6 +171,7 @@ if (!isProd) {
       env: {
         ...process.env,
         PORT: "5001",
+        FORCE_COLOR: "true",
       },
     });
     serverProcess.stdout!.on("data", data => console.log(data.toString().trim()));

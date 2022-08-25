@@ -24,7 +24,7 @@ import {WeightBasedLruCache} from "./cache";
 import {CorrectionPostData} from "./correctionTypes";
 import {EscapeHtmlHighlightCorrections} from "./source_formatting/escape_html_corrections";
 import {htmlEscape} from "./html_escape";
-import {Logger as BaseLogger, Timer} from "./logger";
+import {ConsoleLogger, Timer} from "./logger";
 import {PromiseChain} from "./js/promises";
 import {jsonSize} from "./util/json_size";
 import {writeJson} from "./util/json_files";
@@ -46,22 +46,24 @@ const randomHash = (() => {
   return [...Array(8)].map(_ => alphabet[Math.floor(Math.random() * alphabet.length)]).join("");
 })();
 
-class Logger implements BaseLogger {
-  constructor(private readonly endpoint: string) {}
+class Logger extends ConsoleLogger {
+  constructor(private readonly endpoint: string) {
+    super();
+  }
 
   error(...args: any[]) {
-    console.error("ERROR", "|", this.endpoint, "|", ...args);
+    super.error("ERROR", "|", this.endpoint, "|", ...args);
   }
 
   log(...args: any[]) {
     // eslint-disable-next-line no-console
-    console.log("LOG  ", "|", this.endpoint, "|", ...args);
+    super.log("LOG  ", "|", this.endpoint, "|", ...args);
   }
 
   debug(...args: any[]) {
     // don't use console.debug, as that will get dropped by App Engine
     // eslint-disable-next-line no-console
-    console.log("DEBUG", "|", this.endpoint, "|", ...args);
+    super.debug("DEBUG", "|", this.endpoint, "|", ...args);
   }
 
   newTimer(): Timer {
