@@ -1,10 +1,6 @@
 import {clearNonMainCaches, mainCache} from "./caches";
 
-export function registerServiceWorker(): void {
-  const serviceWorkerUrl = (
-    document.getElementById("service-worker-ref") as HTMLScriptElement)!.src;
-  const scriptUrl = serviceWorkerUrl.slice(serviceWorkerUrl.lastIndexOf("/"));
-
+function registerServiceWorker(scriptUrl: string): void {
   clearNonMainCaches().then(() => mainCache()).then(cache => {
     // Cache all assets on the page so that we can reload offline.
     cache.add(window.location.href);
@@ -23,4 +19,20 @@ export function registerServiceWorker(): void {
       });
     }
   });
+}
+
+export function serviceWorkerMain(): void {
+  const serviceWorkerUrl = (
+    document.getElementById("service-worker-ref") as HTMLScriptElement)!.src;
+  const scriptUrl = serviceWorkerUrl.slice(serviceWorkerUrl.lastIndexOf("/"));
+
+  if (localStorage.offlineMode === "true") {
+    registerServiceWorker(scriptUrl);
+  } else {
+    navigator.serviceWorker.getRegistration(scriptUrl).then(registration => {
+      if (registration) {
+        registration.unregister();
+      }
+    });
+  }
 }

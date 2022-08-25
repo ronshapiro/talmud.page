@@ -165,6 +165,16 @@ const main = () => {
     ],
     "expandEnglishByDefault");
 
+  radioSection(
+    "Enable offline mode (beta, recommended only when needed)",
+    "offlineMode",
+    [
+      {value: "true", displayText: "Yes"},
+      {value: "false", displayText: "No"},
+    ],
+    "offlineMode");
+
+
   // Make sure mdl always registers new views correctly
   componentHandler.upgradeAllRegistered();
 };

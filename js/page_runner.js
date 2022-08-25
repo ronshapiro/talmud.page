@@ -8,7 +8,7 @@ import {amudMetadata} from "./amud.ts";
 import {enableBackButtonProtection} from "./block_back_button.ts";
 import {timeoutPromise} from "./promises";
 import {registerRefSelectionSnackbarListener} from "./ref_selection_snackbar.ts";
-import {registerServiceWorker} from "./service_worker_registration.ts";
+import {serviceWorkerMain} from "./service_worker_registration.ts";
 
 const bookTitleAndRange = () => {
   const metadata = amudMetadata();
@@ -117,7 +117,9 @@ export class Runner {
     const oldUrl = window.location.href;
     mainCache().then(cache => {
       cache.match(oldUrl).then(cachedResponse => {
-        cache.put(newUrl, cachedResponse.clone());
+        if (cachedResponse) {
+          cache.put(newUrl, cachedResponse.clone());
+        }
       });
     });
     window.history.replaceState({}, "", newUrl);
@@ -175,7 +177,7 @@ export class Runner {
 
   main() {
     $(document).ready(() => {
-      registerServiceWorker();
+      serviceWorkerMain();
 
       const metadata = amudMetadata();
       gtag("set", {section: metadata.masechet});
