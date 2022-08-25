@@ -403,7 +403,7 @@ class CommentarySection extends Component {
   }
 }
 
-function Section({sections, sectionLabel, toggleMerging}) {
+function Section({sections, sectionLabel, toggleMerging, isExpanded}) {
   const context = useConfiguration();
   const hiddenHost = useHiddenHost();
   // if this is the hidden host, populate the comments as open always
@@ -496,7 +496,8 @@ function Section({sections, sectionLabel, toggleMerging}) {
       hebrewDoubleClickListener={hebrewDoubleClickListener}
       english={createText(englishes, "english-ref-text")}
       expandEnglishByDefault={context.expandEnglishByDefault}
-      classes={gemaraContainerClasses} />);
+      classes={gemaraContainerClasses}
+      indicator={isExpanded} />);
 
   const commentary = mergeCommentaries(sections);
   if (commentary) {
@@ -538,6 +539,7 @@ Section.propTypes = {
   sections: PropTypes.arrayOf(PropTypes.object),
   sectionLabel: PropTypes.string,
   toggleMerging: PropTypes.func,
+  isExpanded: PropTypes.bool,
 };
 
 class Amud extends Component {
@@ -605,6 +607,7 @@ class Amud extends Component {
         while (i < sections.length) {
           const currentSection = sections[i];
           const nextSection = sections[i + 1];
+          // Comment out the next line to have sugya-wide merging!
           if (!currentSection.defaultMergeWithNext) break;
           if (this.state.expandMergedRef[currentSection.ref]) break;
           if (nextSection && this.state.expandMergedRef[nextSection.ref]) break;
@@ -630,7 +633,9 @@ class Amud extends Component {
             key={i}
             sections={mergedSections}
             sectionLabel={sectionLabel}
-            toggleMerging={toggleMerging} />);
+            toggleMerging={toggleMerging}
+            isExpanded={this.state.expandMergedRef[mergedSections[0].ref]}
+            />);
       }
     }
     return (

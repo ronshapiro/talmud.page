@@ -177,6 +177,7 @@ function TableRow(props) {
     isHiddenRow,
     link,
     expandEnglishByDefault,
+    indicator,
   } = props;
 
   const [isEnglishExpanded, setIsEnglishExpanded] = (
@@ -238,6 +239,12 @@ function TableRow(props) {
   };
 
   const cells = [];
+  if (indicator) {
+    cells.push(
+      <span className="indicator-parent">
+        <span className="indicator">●</span>
+      </span>);
+  }
   if (!isEmptyText(hebrew)) {
     cells.push(
       <HebrewCell
@@ -286,6 +293,7 @@ TableRow.propTypes = {
   overrideFullRow: PropTypes.bool,
   isHiddenRow: PropTypes.bool,
   expandEnglishByDefault: PropTypes.bool,
+  indicator: PropTypes.bool,
 };
 
 export default TableRow;
