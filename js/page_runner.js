@@ -22,7 +22,11 @@ const refreshPageState = () => {
 };
 
 const setWindowTop = (selector) => {
-  $("html, body").animate({scrollTop: $(selector).offset().top}, 0);
+  try {
+    $("html, body").animate({scrollTop: $(selector).offset().top}, 0);
+  } catch (e) {
+    console.error(e); // eslint-disable-line no-console
+  }
 };
 
 const maybeSetInitialScrollPosition = () => {
