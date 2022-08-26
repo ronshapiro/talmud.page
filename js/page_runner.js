@@ -6,7 +6,7 @@ import {snackbars} from "./snackbar.ts";
 import {onceDocumentReady} from "./once_document_ready.ts";
 import {amudMetadata} from "./amud.ts";
 import {enableBackButtonProtection} from "./block_back_button.ts";
-import {timeoutPromise} from "./promises";
+import {PromiseQueue, timeoutPromise} from "./promises";
 import {registerRefSelectionSnackbarListener} from "./ref_selection_snackbar.ts";
 import {serviceWorkerMain} from "./service_worker_registration.ts";
 
@@ -92,6 +92,7 @@ export class Runner {
         defaultEditText: () => bookTitleAndRange(),
       });
     this.apiCache = new ApiCache();
+    this.requestQueue = new PromiseQueue(5);
     timeoutPromise(5000).then(() => this.apiCache.purge());
   }
 
@@ -104,12 +105,14 @@ export class Runner {
       sections: [],
     });
     const endpoint = `api/${amudMetadata().masechet}/${section}`;
-    this.apiCache.getAndUpdate(endpoint).then((results) => {
-      options.finished = true;
-      this.renderer.setAmud(results);
-      refreshPageState();
-      if (options.callback) options.callback();
-      gtag("event", "section_loaded", {section});
+    this.requestQueue.add(() => {
+      return this.apiCache.getAndUpdate(endpoint).then((results) => {
+        options.finished = true;
+        this.renderer.setAmud(results);
+        refreshPageState();
+        if (options.callback) options.callback();
+        gtag("event", "section_loaded", {section});
+      });
     });
     if (options.newUrl) {
       this.updateUrl(options.newUrl);
