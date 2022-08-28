@@ -28,6 +28,16 @@ function validAmudOrUndefined(amud: string | undefined): string | undefined {
 }
 
 const _amudMetadata = (book: string, pathname: string): AmudMetadata => {
+  if (book === "SiddurAshkenaz") {
+    const sections = SIDDUR_SECTIONS.map(x => x.replace(/ /g, "_"));
+    return {
+      masechet: book,
+      amudStart: sections[0],
+      amudEnd: sections.slice(-1)[0],
+      range: () => sections,
+    };
+  }
+
   const pathParts = pathname.split("/");
   pathParts.shift();
 
@@ -64,13 +74,6 @@ const _amudMetadata = (book: string, pathname: string): AmudMetadata => {
       }
       if (!this.amudEnd) {
         return [this.amudStart];
-      }
-
-      if (book === "SiddurAshkenaz") {
-        const siddurSectionsUrl = SIDDUR_SECTIONS.map(x => x.replace(/ /g, "_"));
-        return siddurSectionsUrl.slice(
-          siddurSectionsUrl.indexOf(this.amudStart),
-          siddurSectionsUrl.indexOf(this.amudEnd) + 1);
       }
 
       const start = parseInt(this.amudStart);

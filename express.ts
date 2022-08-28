@@ -257,6 +257,10 @@ function template(book: Book): string {
   return book.isMasechet() ? "talmud_page.html" : "tanakh.html";
 }
 
+app.get("/SiddurAshkenaz", (req, res) => {
+  return res.render("siddur_page.html", {title: "Siddur Ashkenaz", bookTitle: "SiddurAshkenaz"});
+});
+
 app.get("/:title/:section", (req, res) => {
   const {title, section} = req.params;
   const canonicalName = books.canonicalUrlName(title);
