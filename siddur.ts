@@ -181,10 +181,14 @@ export const SIDDUR_REF_REWRITING: Record<string, string[]> = {
     "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Blessing after Shema",
   ])),
 
-  "Amidah - Opening": seperateEverySection([
+  "Amidah - Opening": [
     "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Patriarchs",
-    "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Divine Might",
-  ]),
+    SEGMENT_SEPERATOR_REF,
+    "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Divine Might 1-3",
+    "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Divine Might 6",
+    "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Divine Might 4-5",
+    "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Divine Might 7",
+  ],
   "Amidah - Kedusha": [
     "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Keduasha",
   ],
@@ -215,10 +219,10 @@ export const SIDDUR_REF_REWRITING: Record<string, string[]> = {
     SEGMENT_SEPERATOR_REF,
   ].concat(seperateEverySection([
     "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Thanksgiving",
-    "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Birkat Kohanim",
+    // TODO: add Birkat kohanim, but improve formatting and add Israel version too.
+    // "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Birkat Kohanim",
     "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Peace",
-    // TODO: remove יִהְיוּ לְרָצוֹן at start
-    "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Concluding Passage",
+    "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Concluding Passage 2-4",
   ])),
 
   "Tachanun": seperateEverySection([
@@ -396,15 +400,17 @@ export const SIDDUR_IGNORED_TARGET_REFS = new Set([
 
 
 // TODO:
-// - Load all, async
-// - Shir Hamaalot of Aseret Yimei Teshuva
-// - Fast Day Annenu
-// - Modim formatting
+// - Review section labels
+// - Hebrew section labels in UI
 // - Hallel
+// - Birkat Hamazon
+
+// TODO(lower):
+// - Modim formatting
+// - Removal of Lamnatzeach after ashrei. But this needs more sophisticated removal logic as the
+//   verses are sometimes included elsewhere.
+// parse-out Kri-ketiv?
+// - sugya break after ata chonen, goel yisrael
 // - Permanent skip
 // - Leader marks
 // - Rabbi Yishmael bolding
-// - Morid hatal. And Mashiv Haruach Hachana is incorrectly placed.
-// parse-out Kri-ketiv?
-// Hodus: remove {פ}<br>
-// - sugya break after ata chonen, goel yisrael

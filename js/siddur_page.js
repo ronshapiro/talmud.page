@@ -1,5 +1,5 @@
 import * as _ from "underscore";
-import {JewishCalendar, HebrewDateFormatter, ZmanimCalendar} from "kosher-zmanim";
+import {JewishCalendar, ZmanimCalendar} from "kosher-zmanim";
 import {amudMetadata} from "./amud.ts";
 import {ApiCache} from "./ApiCache.ts";
 import {getCommentaryTypes} from "./commentaryTypes.ts";
@@ -65,6 +65,35 @@ function vtenTalUmatar() {
     || today.getJewishMonth() >= 11;
 }
 
+const NO_TACHANUN_DAYS = new Set([
+  JewishCalendar.PESACH_SHENI,
+  JewishCalendar.PURIM,
+  JewishCalendar.SHUSHAN_PURIM,
+  JewishCalendar.YOM_HAATZMAUT,
+  JewishCalendar.YOM_YERUSHALAYIM,
+  JewishCalendar.LAG_BAOMER,
+  JewishCalendar.TISHA_BEAV,
+  JewishCalendar.TU_BEAV,
+  JewishCalendar.TU_BESHVAT,
+  JewishCalendar.EREV_ROSH_HASHANA,
+]);
+
+if (NO_TACHANUN_DAYS.has(undefined)) {
+  throw new Error(NO_TACHANUN_DAYS);
+}
+
+function omitTachanun() {
+  const today = getJewishDate();
+  return today.isRoshChodesh()
+    || today.getJewishMonth() === 1
+    || (today.getJewishMonth() === 3 && today.getJewishDayOfMonth() <= 12)
+    || (today.getJewishMonth() === 7 && today.getJewishDayOfMonth() >= 9)
+    || today.isChanukah()
+    || (today.getJewishMonth() === JewishCalendar.ADAR && ( // Adar Aleph
+      today.getJewishDayOfMonth() === 14 || today.getJewishDayOfMonth() === 15))
+    || NO_TACHANUN_DAYS.has(today.getYomTovIndex());
+}
+
 class SiddurRenderer extends Renderer {
   constructor() {
     super(
@@ -83,7 +112,7 @@ class SiddurRenderer extends Renderer {
   }
 
   sortedAmudim() {
-    const keys = Object.keys(this.allAmudim);
+    let keys = Object.keys(this.allAmudim);
     keys.sort((first, second) => pageIndex(first) - pageIndex(second));
 
     if ("Torah" in this.allAmudim && this.injectedTorahPortions) {
@@ -108,6 +137,10 @@ class SiddurRenderer extends Renderer {
         torahSection.sections = newSections;
         this.injectedTorahPortions = undefined;
       }
+    }
+
+    if (omitTachanun()) {
+      keys = keys.filter(key => key !== "Tachanun");
     }
 
     return keys.map(key => this.allAmudim[key]);
@@ -139,6 +172,10 @@ class SiddurRenderer extends Renderer {
       ignored.push(...refRanges(
         "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Tachanun, God of Israel ", 1, 11));
     }
+    if (omitTachanun()) {
+      ignored.push(...refRanges(
+        "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Reading from Sefer, Raising the Torah ", 5, 9));
+    }
 
     const hebrewDay = getJewishDate();
     if (!hebrewDay.isRoshChodesh()) {
@@ -151,9 +188,9 @@ class SiddurRenderer extends Renderer {
     }
 
     if (mashivHaruach()) {
-      ignored.push("Siddur Ashkenaz, Weekday, Shacharit, Amidah, Divine Might 4-5");
-    } else {
       ignored.push("Siddur Ashkenaz, Weekday, Shacharit, Amidah, Divine Might 2-3");
+    } else {
+      ignored.push("Siddur Ashkenaz, Weekday, Shacharit, Amidah, Divine Might 4-5");
     }
 
     // TODO(siddur): highlight this in the first 30 days
@@ -184,6 +221,10 @@ class SiddurRenderer extends Renderer {
         ));
     }
 
+    if (!hebrewDay.isTaanis()) {
+      ignored.push("tp::Annenu");
+    }
+
     if (!hebrewDay.isTaanis() && !hebrewDay.isAseresYemeiTeshuva()) {
       ignored.push(...refRanges(
         "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Avinu Malkenu ", 1, 53));
@@ -196,8 +237,8 @@ class SiddurRenderer extends Renderer {
       ignored.push("Siddur Ashkenaz, Weekday, Shacharit, Amidah, Temple Service 3");
     }
 
-    const isMaybePurim = ["Purim", "Shushan Purim"].includes(
-      new HebrewDateFormatter().formatYomTov(hebrewDay));
+    const isMaybePurim = [
+      JewishCalendar.PURIM, JewishCalendar.SHUSHAN_PURIM].includes(hebrewDay.getYomTovIndex());
     if (!hebrewDay.isChanukah() && !isMaybePurim) {
       ignored.push("Siddur Ashkenaz, Weekday, Shacharit, Amidah, Thanksgiving 6");
     }

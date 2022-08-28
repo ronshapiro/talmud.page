@@ -1209,8 +1209,8 @@ class SiddurApiRequestHandler extends AbstractApiRequestHandler {
   stripWeirdHebrew(hebrew: string): string {
     return stripHebrewNonlettersOrVowels(
       hebrew
-        .replace(/\s?<span>{פ}<\/span>(<br>)?/g, "")
-        .replace(/<span>{ס}<\/span>\s+/g, ""));
+        .replace(/\s?<span class="mam-spi-pe">{פ}<\/span>(<br ?\/?>)?/g, "")
+        .replace(/\s?<span class="mam-spi-samekh">{ס}<\/span>\s*/g, ""));
   }
 
   protected translateHebrewText(text: sefaria.TextType): sefaria.TextType {
@@ -1272,6 +1272,19 @@ class SiddurApiRequestHandler extends AbstractApiRequestHandler {
   ): InternalSegment[] {
     segments = this.removeIgnoredRefsAndMergeMergedRefs(segments);
     segments = this.makeExplanationsIntoComments(segments);
+    segments = segments.flatMap(segment => {
+      const result = [segment];
+      if (segment.ref === "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Redemption 1") {
+        const annenu = new InternalSegment({
+          hebrew: fs.readFileSync("annenu.txt", {encoding: "utf-8"}),
+          english: "",
+          ref: "tp::Annenu",
+        });
+        annenu.steinsaltz_start_of_sugya = true;
+        result.push(annenu);
+      }
+      return result;
+    });
     return segments;
   }
 
