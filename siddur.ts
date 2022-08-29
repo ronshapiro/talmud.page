@@ -42,6 +42,34 @@ function mergeWithNext(ref: string): string {
   return ref;
 }
 
+const HODU = [
+  mergeRefsByDefault("I Chronicles 16:8-26"),
+  SEGMENT_SEPERATOR_REF,
+  mergeRefsByDefault("I Chronicles 16:27-36", true),
+  mergeWithNext("Psalms 99:5"), // Rommemus:
+  "Psalms 99:9",
+  SEGMENT_SEPERATOR_REF,
+  mergeWithNext("Psalms 78:38"), //  vehu rachum
+  mergeWithNext("Psalms 40:12"),
+  mergeWithNext("Psalms 25:6"),
+  mergeRefsByDefault("Psalms 68:35-36", true),
+  mergeRefsByDefault("Psalms 94:1-2", true),
+  mergeWithNext("Psalms 3:9"),
+  mergeWithNext("Psalms 46:8"),
+  mergeWithNext("Psalms 84:13"),
+  mergeWithNext("Psalms 20:10"),
+];
+
+const HOSHIA_ET_AMECHA = [
+  mergeWithNext("Psalms 28:9"), // Hoshia et amecha
+  mergeRefsByDefault("Psalms 33:20-22", true),
+  mergeWithNext("Psalms 85:8"),
+  mergeWithNext("Psalms 44:27"),
+  mergeWithNext("Psalms 81:11"),
+  mergeWithNext("Psalms 144:15"),
+  "Psalms 13:6",
+];
+
 /* eslint-disable quote-props */
 export const SIDDUR_REF_REWRITING: Record<string, string[]> = {
   "Morning Blessings": [
@@ -78,31 +106,7 @@ export const SIDDUR_REF_REWRITING: Record<string, string[]> = {
   "Barukh She'amar": [
     "Siddur Ashkenaz, Weekday, Shacharit, Pesukei Dezimra, Barukh She'amar",
   ],
-  "Hodu": [
-    mergeRefsByDefault("I Chronicles 16:8-26"),
-    SEGMENT_SEPERATOR_REF,
-    mergeRefsByDefault("I Chronicles 16:27-36", true),
-    mergeWithNext("Psalms 99:5"), // Rommemus:
-    "Psalms 99:9",
-    SEGMENT_SEPERATOR_REF,
-    mergeWithNext("Psalms 78:38"), //  vehu rachum
-    mergeWithNext("Psalms 40:12"),
-    mergeWithNext("Psalms 25:6"),
-    mergeRefsByDefault("Psalms 68:35-36", true),
-    mergeRefsByDefault("Psalms 94:1-2", true),
-    mergeWithNext("Psalms 3:9"),
-    mergeWithNext("Psalms 46:8"),
-    mergeWithNext("Psalms 84:13"),
-    mergeWithNext("Psalms 20:10"),
-    SEGMENT_SEPERATOR_REF,
-    mergeWithNext("Psalms 28:9"), // Hoshia et amecha
-    mergeRefsByDefault("Psalms 33:20-22", true),
-    mergeWithNext("Psalms 85:8"),
-    mergeWithNext("Psalms 44:27"),
-    mergeWithNext("Psalms 81:11"),
-    mergeWithNext("Psalms 144:15"),
-    "Psalms 13:6",
-  ],
+  "Hodu": HODU.concat(SEGMENT_SEPERATOR_REF, HOSHIA_ET_AMECHA),
   "Mizmor Letoda": [
     "Siddur Ashkenaz, Weekday, Shacharit, Pesukei Dezimra, Mizmor Letoda 1",
     mergeRefsByDefault("Psalms 100:1-5"),
@@ -400,10 +404,11 @@ export const SIDDUR_IGNORED_TARGET_REFS = new Set([
 
 
 // TODO:
+// - Birkat Hamazon. Allow Mishnah links
 // - Review section labels
 // - Hebrew section labels in UI
 // - Hallel
-// - Birkat Hamazon
+// - Musaf on RC and Chol Hamoed
 
 // TODO(lower):
 // - Modim formatting

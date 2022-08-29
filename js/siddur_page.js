@@ -1,27 +1,14 @@
 import * as _ from "underscore";
 import {JewishCalendar, ZmanimCalendar} from "kosher-zmanim";
-import {amudMetadata} from "./amud.ts";
 import {ApiCache} from "./ApiCache.ts";
 import {getCommentaryTypes} from "./commentaryTypes.ts";
 import {driveClient} from "./google_drive/singleton.ts";
 import {onceDocumentReady} from "./once_document_ready.ts";
 import {Runner} from "./page_runner.js";
 import {Renderer} from "./rendering.jsx";
-import {SIDDUR_SECTIONS} from "./siddur.ts";
 
 const INJECT_WEEKDAY_TORAH_PORTION_AFTER_REF = (
   "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Reading from Sefer, Birkat Hatorah 6");
-
-function pageIndex(name) {
-  return SIDDUR_SECTIONS.indexOf(name.replace(/_/g, " "));
-}
-
-function siddurSectionDiff(name, diff) {
-  return SIDDUR_SECTIONS[pageIndex(name) + diff].replace(/ /g, "_");
-}
-
-const FIRST_PAGE = SIDDUR_SECTIONS[0].replace(/ /g, "_");
-const LAST_PAGE = SIDDUR_SECTIONS.slice(-1)[0].replace(/ /g, "_");
 
 function refRanges(prefix, startIndex, endIndex) {
   return _.range(startIndex, endIndex + 1).map(x => prefix + x);
@@ -103,17 +90,15 @@ class SiddurRenderer extends Renderer {
       localStorage.wrapTranslations !== "false",
       localStorage.expandEnglishByDefault === "true",
       {
-        previous: () => siddurSectionDiff(amudMetadata().amudStart, -1),
-        next: () => siddurSectionDiff(amudMetadata().amudEnd, 1),
-
-        hasPrevious: () => amudMetadata().amudStart !== FIRST_PAGE,
-        hasNext: () => amudMetadata().amudEnd !== LAST_PAGE,
+        previous: () => undefined,
+        next: () => undefined,
+        hasPrevious: () => false,
+        hasNext: () => false,
       });
   }
 
   sortedAmudim() {
     let keys = Object.keys(this.allAmudim);
-    keys.sort((first, second) => pageIndex(first) - pageIndex(second));
 
     if ("Torah" in this.allAmudim && this.injectedTorahPortions) {
       const torahSection = this.allAmudim.Torah;
