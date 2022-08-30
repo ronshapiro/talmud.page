@@ -28,3 +28,5 @@ export const SIDDUR_SECTIONS = [
   "Ashrei - Conclusion",
   "Aleinu",
 ];
+
+export const BIRKAT_HAMAZON_SECTIONS = ["Shir Hama'alot", "Zimun", "Birkat Hamazon"];

@@ -1,5 +1,5 @@
 import {numericLiteralAsInt} from "./hebrew";
-import {SIDDUR_REF_REWRITING} from "./siddur";
+import {SIDDUR_REF_REWRITING, BIRKAT_HAMAZON_REFS} from "./siddur";
 
 const ALL_HEBREW_LETTERS = ((): RegExp => {
   const hundreds = "ק"; // there are no masechtot with more than 200 dapim
@@ -254,37 +254,60 @@ class BibleBook extends Book {
   }
 }
 
-class SiddurAshkenaz extends Book {
-  constructor() {
+interface LiturgicalBookConstructorParameters {
+  canonicalName: string;
+  hebrewName: string;
+  aliases: string[];
+  sections: Record<string, string[]>;
+  bookType: string;
+  bookNameForRef: string;
+}
+
+class LiturgicalBook extends Book {
+  private _sections: string[];
+  private _bookType: string;
+  private _bookNameForRef: string;
+
+  constructor({
+    canonicalName,
+    hebrewName,
+    aliases,
+    sections,
+    bookType,
+    bookNameForRef,
+  }: LiturgicalBookConstructorParameters) {
     super({
-      canonicalName: "SiddurAshkenaz",
-      hebrewName: "סידור אשכנז",
-      aliases: [],
-      start: Object.keys(SIDDUR_REF_REWRITING)[0],
-      end: Object.keys(SIDDUR_REF_REWRITING).slice(-1)[0],
-      sections: Object.keys(SIDDUR_REF_REWRITING),
+      canonicalName,
+      hebrewName,
+      aliases,
+      sections: Object.keys(sections),
+      start: Object.keys(sections)[0],
+      end: Object.keys(sections).slice(-1)[0],
     });
+    this._sections = Object.keys(sections);
+    this._bookType = bookType;
+    this._bookNameForRef = bookNameForRef;
+  }
+
+  private index(page: string): number {
+    return this._sections.indexOf(page);
   }
 
   nextPage(page: string): string {
-    return (parseInt(page) + 1).toString();
+    return this._sections[this.index(page) + 1];
   }
 
   previousPage(page: string): string {
-    return (parseInt(page) - 1).toString();
+    return this._sections[this.index(page) - 1];
   }
 
   arePagesInReverseOrder(start: string, end: string): boolean {
-    return parseInt(start) > parseInt(end);
+    return this.index(start) > this.index(end);
   }
 
-  bookType(): string {
-    return "Siddur";
-  }
+  bookType(): string { return this._bookType; }
 
-  bookNameForRef(): string {
-    return "Siddur Ashkenaz, Weekday, Shacharit,";
-  }
+  bookNameForRef(): string { return this._bookNameForRef; }
 }
 
 function formatListEnglish(items: string[]): string {
@@ -1130,8 +1153,23 @@ export const books = new BookIndex([
     ],
     end: "36",
   }),
-  new SiddurAshkenaz(),
+  new LiturgicalBook({
+    canonicalName: "SiddurAshkenaz",
+    hebrewName: "סידור אשכנז",
+    aliases: [],
+    sections: SIDDUR_REF_REWRITING,
+    bookType: "Siddur",
+    bookNameForRef: "Siddur Ashkenaz, Weekday, Shacharit,",
+  }),
   new SyntheticBook("WeekdayTorah"),
+  new LiturgicalBook({
+    canonicalName: "BirkatHamazon",
+    hebrewName: "ברכת המזון",
+    aliases: [],
+    sections: BIRKAT_HAMAZON_REFS,
+    bookType: "Siddur",
+    bookNameForRef: "Siddur Ashkenaz, Berachot, Birkat HaMazon,",
+  }),
 ]);
 
 let bibleRefRegex: RegExp;

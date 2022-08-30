@@ -1,23 +1,18 @@
 import * as _ from "underscore";
-import {JewishCalendar, ZmanimCalendar} from "kosher-zmanim";
+import {ZmanimCalendar} from "kosher-zmanim";
 import {ApiCache} from "./ApiCache.ts";
 import {getCommentaryTypes} from "./commentaryTypes.ts";
 import {driveClient} from "./google_drive/singleton.ts";
 import {onceDocumentReady} from "./once_document_ready.ts";
 import {Runner} from "./page_runner.js";
 import {Renderer} from "./rendering.jsx";
+import {getHebrewDate as getJewishDate, isMaybePurim, omitTachanun} from "./hebrew_calendar";
 
 const INJECT_WEEKDAY_TORAH_PORTION_AFTER_REF = (
   "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Reading from Sefer, Birkat Hatorah 6");
 
 function refRanges(prefix, startIndex, endIndex) {
   return _.range(startIndex, endIndex + 1).map(x => prefix + x);
-}
-
-function getJewishDate() {
-  const date = new JewishCalendar();
-  date.setInIsrael(Intl.DateTimeFormat().resolvedOptions().timeZone === "Asia/Jerusalem");
-  return date;
 }
 
 function mashivHaruach() {
@@ -50,35 +45,6 @@ function vtenTalUmatar() {
   return luxonDate.month === 1
     || luxonDate.month === 2
     || today.getJewishMonth() >= 11;
-}
-
-const NO_TACHANUN_DAYS = new Set([
-  JewishCalendar.PESACH_SHENI,
-  JewishCalendar.PURIM,
-  JewishCalendar.SHUSHAN_PURIM,
-  JewishCalendar.YOM_HAATZMAUT,
-  JewishCalendar.YOM_YERUSHALAYIM,
-  JewishCalendar.LAG_BAOMER,
-  JewishCalendar.TISHA_BEAV,
-  JewishCalendar.TU_BEAV,
-  JewishCalendar.TU_BESHVAT,
-  JewishCalendar.EREV_ROSH_HASHANA,
-]);
-
-if (NO_TACHANUN_DAYS.has(undefined)) {
-  throw new Error(NO_TACHANUN_DAYS);
-}
-
-function omitTachanun() {
-  const today = getJewishDate();
-  return today.isRoshChodesh()
-    || today.getJewishMonth() === 1
-    || (today.getJewishMonth() === 3 && today.getJewishDayOfMonth() <= 12)
-    || (today.getJewishMonth() === 7 && today.getJewishDayOfMonth() >= 9)
-    || today.isChanukah()
-    || (today.getJewishMonth() === JewishCalendar.ADAR && ( // Adar Aleph
-      today.getJewishDayOfMonth() === 14 || today.getJewishDayOfMonth() === 15))
-    || NO_TACHANUN_DAYS.has(today.getYomTovIndex());
 }
 
 class SiddurRenderer extends Renderer {
@@ -222,15 +188,13 @@ class SiddurRenderer extends Renderer {
       ignored.push("Siddur Ashkenaz, Weekday, Shacharit, Amidah, Temple Service 3");
     }
 
-    const isMaybePurim = [
-      JewishCalendar.PURIM, JewishCalendar.SHUSHAN_PURIM].includes(hebrewDay.getYomTovIndex());
-    if (!hebrewDay.isChanukah() && !isMaybePurim) {
+    if (!hebrewDay.isChanukah() && !isMaybePurim()) {
       ignored.push("Siddur Ashkenaz, Weekday, Shacharit, Amidah, Thanksgiving 6");
     }
     if (!hebrewDay.isChanukah()) {
       ignored.push("Siddur Ashkenaz, Weekday, Shacharit, Amidah, Thanksgiving 7");
     }
-    if (!isMaybePurim) {
+    if (!isMaybePurim()) {
       ignored.push("Siddur Ashkenaz, Weekday, Shacharit, Amidah, Thanksgiving 8");
     }
 

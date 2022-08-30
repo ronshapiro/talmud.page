@@ -15,6 +15,7 @@ if (fs.existsSync("./dist")) {
 }
 
 const entryFiles = [
+  "./templates/birkat_hamazon_page.html",
   "./templates/daf_yomi_redirector.html",
   "./templates/homepage.html",
   "./templates/notes_redirecter.html",

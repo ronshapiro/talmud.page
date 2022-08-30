@@ -250,16 +250,18 @@ function validatePages(book: Book, ...pages: string[]) {
   }
 }
 
-function template(book: Book): string {
-  if (book === books.byCanonicalName.SiddurAshkenaz) {
-    return "siddur_page.html";
-  }
-  return book.isMasechet() ? "talmud_page.html" : "tanakh.html";
-}
-
 app.get("/SiddurAshkenaz", (req, res) => {
   return res.render("siddur_page.html", {title: "Siddur Ashkenaz", bookTitle: "SiddurAshkenaz"});
 });
+
+app.get("/BirkatHamazon", (req, res) => {
+  return res.render(
+    "birkat_hamazon_page.html", {title: "Birkat Hamazon", bookTitle: "BirkatHamazon"});
+});
+
+function template(book: Book): string {
+  return book.isMasechet() ? "talmud_page.html" : "tanakh.html";
+}
 
 app.get("/:title/:section", (req, res) => {
   const {title, section} = req.params;
@@ -437,7 +439,8 @@ if (fs.existsSync("sendgrid_api_key")) {
     const maybeExcapeHighlightedSection = (text: string | undefined) => {
       return text && EscapeHtmlHighlightCorrections.process(text);
     };
-    const to = pathname.startsWith("/Siddur") ? "siddur@talmud.page" : "corrections@sefaria.org";
+    const isSiddur = pathname.startsWith("/Siddur") || pathname.startsWith("/BirkatHamazon");
+    const to = isSiddur ? "siddur@talmud.page" : "corrections@sefaria.org";
     const rtl = (text: string | undefined) => text && `<div dir="rtl">${text}</div>`;
     sendgrid.send({
       to,

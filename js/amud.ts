@@ -1,5 +1,5 @@
 import {books} from "./books";
-import {SIDDUR_SECTIONS} from "./siddur";
+import {BIRKAT_HAMAZON_SECTIONS, SIDDUR_SECTIONS} from "./siddur";
 
 export const computePreviousAmud = (current: string): string => {
   const number = parseInt(current);
@@ -27,9 +27,14 @@ function validAmudOrUndefined(amud: string | undefined): string | undefined {
   return AMUD_REGEX.test(amud) ? amud : undefined;
 }
 
+const HARD_CODED_SECTIONS: Record<string, string[]> = {
+  SiddurAshkenaz: SIDDUR_SECTIONS,
+  BirkatHamazon: BIRKAT_HAMAZON_SECTIONS,
+};
+
 const _amudMetadata = (book: string, pathname: string): AmudMetadata => {
-  if (book === "SiddurAshkenaz") {
-    const sections = SIDDUR_SECTIONS.map(x => x.replace(/ /g, "_"));
+  if (book in HARD_CODED_SECTIONS) {
+    const sections = HARD_CODED_SECTIONS[book].map(x => x.replace(/ /g, "_"));
     return {
       masechet: book,
       amudStart: sections[0],

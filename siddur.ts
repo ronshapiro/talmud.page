@@ -25,6 +25,12 @@ export const SIDDUR_DEFAULT_MERGE_WITH_NEXT = new Set<string>([
   "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Prosperity 4",
   "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Prosperity 5",
   "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Justice 1",
+  "Siddur Ashkenaz, Berachot, Birkat HaMazon 10",
+  "Siddur Ashkenaz, Berachot, Birkat HaMazon 10-11",
+  "Siddur Ashkenaz, Berachot, Birkat HaMazon 37",
+  "Siddur Ashkenaz, Berachot, Birkat HaMazon 38",
+  "Siddur Ashkenaz, Berachot, Birkat HaMazon 39",
+  "Siddur Ashkenaz, Berachot, Birkat HaMazon 41",
 ]);
 
 function mergeRefsByDefault(range: string, withLast?: true): string {
@@ -70,7 +76,7 @@ const HOSHIA_ET_AMECHA = [
   "Psalms 13:6",
 ];
 
-/* eslint-disable quote-props */
+/* eslint-disable quote-props, dot-notation */
 export const SIDDUR_REF_REWRITING: Record<string, string[]> = {
   "Morning Blessings": [
     "Siddur Ashkenaz, Weekday, Shacharit, Preparatory Prayers, Morning Blessings",
@@ -288,7 +294,24 @@ export const SIDDUR_REF_REWRITING: Record<string, string[]> = {
     "Psalms 27",
   ]),
 };
-/* eslint-enable quote-props */
+
+export const SIDDUR_REFS_SFARD: Record<string, string[]> = {
+  "Morning Blessings": SIDDUR_REF_REWRITING["Morning Blessings"],
+  "Akedah": SIDDUR_REF_REWRITING["Akedah"],
+};
+
+export const BIRKAT_HAMAZON_REFS: Record<string, string[]> = {
+  "Shir Hama'alot": [
+    mergeRefsByDefault("Psalms 126:1-6"),
+  ],
+  "Zimun": [
+    "Siddur Ashkenaz, Berachot, Birkat HaMazon 6-20",
+  ],
+  "Birkat Hamazon": [
+    "Siddur Ashkenaz, Berachot, Birkat HaMazon 21-81",
+  ],
+};
+/* eslint-enable quote-props, dot-notation */
 
 function mergePairs(
   base: string,
@@ -324,6 +347,10 @@ export const SIDDUR_MERGE_PAIRS: Record<string, string> = {
   ...mergePairs("Siddur Ashkenaz, Weekday, Shacharit, Amidah, Healing", [1, 4]),
 
   ...mergePairs("Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Vidui and 13 Middot", [6, 7]),
+
+  ...mergePairs(
+    "Siddur Ashkenaz, Berachot, Birkat HaMazon",
+    [6, 7], [8, 9], [10, 11], [14, 15], [16, 17], [18, 19]),
 };
 
 export const SIDDUR_IGNORED_FOOTNOTES: Record<string, string | string[] | number | number[]> = {
@@ -388,6 +415,22 @@ export const SIDDUR_IGNORED_REFS = new Set([
   "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Song of the Day 11",
   "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Song of the Day 14",
   "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Song of the Day 17",
+  "Siddur Ashkenaz, Berachot, Birkat HaMazon 12",
+  "Siddur Ashkenaz, Berachot, Birkat HaMazon 27",
+  "Siddur Ashkenaz, Berachot, Birkat HaMazon 29",
+  "Siddur Ashkenaz, Berachot, Birkat HaMazon 35",
+  "Siddur Ashkenaz, Berachot, Birkat HaMazon 40",
+  "Siddur Ashkenaz, Berachot, Birkat HaMazon 42",
+  "Siddur Ashkenaz, Berachot, Birkat HaMazon 43",
+  "Siddur Ashkenaz, Berachot, Birkat HaMazon 44",
+  "Siddur Ashkenaz, Berachot, Birkat HaMazon 65",
+  "Siddur Ashkenaz, Berachot, Birkat HaMazon 66",
+  "Siddur Ashkenaz, Berachot, Birkat HaMazon 69",
+  "Siddur Ashkenaz, Berachot, Birkat HaMazon 70",
+  "Siddur Ashkenaz, Berachot, Birkat HaMazon 71",
+  "Siddur Ashkenaz, Berachot, Birkat HaMazon 72",
+  "Siddur Ashkenaz, Berachot, Birkat HaMazon 78",
+  "Siddur Ashkenaz, Berachot, Birkat HaMazon 79",
 ]);
 
 export const SIDDUR_IGNORED_SOURCE_REFS = new Set([
@@ -404,11 +447,13 @@ export const SIDDUR_IGNORED_TARGET_REFS = new Set([
 
 
 // TODO:
-// - Birkat Hamazon. Allow Mishnah links
 // - Review section labels
 // - Hebrew section labels in UI
 // - Hallel
 // - Musaf on RC and Chol Hamoed
+
+// TODO (Sfard):
+// - Annenu
 
 // TODO(lower):
 // - Modim formatting

@@ -7,7 +7,7 @@ import {
   Section,
   ApiComment,
 } from "./apiTypes";
-import {books, isLikelyBibleRef, QueryResult} from "./books";
+import {Book, books, isLikelyBibleRef, QueryResult} from "./books";
 import {ALL_COMMENTARIES, CommentaryType} from "./commentaries";
 import {hadranSegments} from "./hadran";
 import {stripHebrewNonletters, stripHebrewNonlettersOrVowels} from "./hebrew";
@@ -21,6 +21,7 @@ import {
   sefariaTextTypeTransformation,
 } from "./sefariaTextType";
 import {
+  BIRKAT_HAMAZON_REFS,
   SEGMENT_SEPERATOR_REF,
   SIDDUR_DEFAULT_MERGE_WITH_NEXT,
   SIDDUR_IGNORED_FOOTNOTES,
@@ -1174,22 +1175,20 @@ class WeekdayTorahPortionHandler extends AbstractApiRequestHandler {
   }
 }
 
-class SiddurApiRequestHandler extends AbstractApiRequestHandler {
-  protected recreateWithLogger(logger: Logger): AbstractApiRequestHandler {
-    return new SiddurApiRequestHandler(this.requestMaker, logger);
+abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
+  abstract refRewritingMap(): Record<string, string[]>;
+  abstract book(): Book;
+
+  protected expandRef(ref: string): string[] {
+    const suffix = ref.replace(this.book().bookNameForRef() + " ", "");
+    if (suffix in this.refRewritingMap()) {
+      return this.refRewritingMap()[suffix];
+    }
+    return super.expandRef(ref);
   }
 
   handleRequest(bookName: string, page: string, logger?: Logger): Promise<ApiResponse> {
     return super.handleRequest(bookName, page.replace(/_/g, " "), logger);
-  }
-
-  protected expandRef(ref: string): string[] {
-    const book = books.byCanonicalName.SiddurAshkenaz;
-    const suffix = ref.replace(book.bookNameForRef() + " ", "");
-    if (suffix in SIDDUR_REF_REWRITING) {
-      return SIDDUR_REF_REWRITING[suffix];
-    }
-    return super.expandRef(ref);
   }
 
   protected makeId(bookName: string, page: string): string {
@@ -1225,27 +1224,9 @@ class SiddurApiRequestHandler extends AbstractApiRequestHandler {
     ];
   }
 
-  protected maybeSplit(ref: string, hebrew: string, english: string): [string, string][] {
-    function splitAfter(text: string, endText: string) {
-      const index = text.indexOf(endText) + endText.length;
-      return [text.slice(0, index), text.slice(index)];
-    }
-    if (ref === "Siddur Ashkenaz, Weekday, Shacharit, Pesukei Dezimra, Barukh She'amar 2") {
-      const hebrewBreaks = splitAfter(hebrew, "בָּרוּךְ שְׁמוֹ. ");
-      const englishBreaks = splitAfter(english, "blessed is His Name. ");
-      return _.zip(hebrewBreaks, englishBreaks) as [string, string][];
-    }
-    return super.maybeSplit(ref, hebrew, english);
-  }
-
   protected postProcessSegment(segment: InternalSegment): InternalSegment {
     if (SIDDUR_DEFAULT_MERGE_WITH_NEXT.has(segment.ref)) {
       segment.defaultMergeWithNext = true;
-    }
-    if (segment.ref === "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Keduasha 14") {
-      segment.hebrew = (segment.hebrew as string).replace(
-        "<small>",
-        '<small class="aseret-yimei-teshuva">');
     }
     if (!(segment.ref in SIDDUR_IGNORED_FOOTNOTES)) {
       return segment;
@@ -1320,7 +1301,10 @@ class SiddurApiRequestHandler extends AbstractApiRequestHandler {
       if (!firstSegmentHebrew.startsWith("<small>")
         || !firstSegmentHebrew.endsWith("</small>")
         || firstSegment.ref === "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Thanksgiving 4"
-        || firstSegment.ref === "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Shema 5") {
+        || firstSegment.ref === "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Shema 5"
+        || firstSegment.ref === "Siddur Ashkenaz, Berachot, Birkat HaMazon 57"
+        || firstSegment.ref === "Siddur Ashkenaz, Berachot, Birkat HaMazon 59"
+        || firstSegment.ref === "Siddur Ashkenaz, Berachot, Birkat HaMazon 62") {
         newSegments.push(firstSegment);
         continue;
       }
@@ -1376,17 +1360,70 @@ class SiddurApiRequestHandler extends AbstractApiRequestHandler {
   }
 }
 
+class SiddurApiRequestHandler extends LiturgicalApiRequestHandler {
+  protected recreateWithLogger(logger: Logger): AbstractApiRequestHandler {
+    return new SiddurApiRequestHandler(this.requestMaker, logger);
+  }
+
+  refRewritingMap(): Record<string, string[]> {
+    return SIDDUR_REF_REWRITING;
+  }
+
+  book(): Book {
+    return books.byCanonicalName.SiddurAshkenaz;
+  }
+
+  protected maybeSplit(ref: string, hebrew: string, english: string): [string, string][] {
+    function splitAfter(text: string, endText: string) {
+      const index = text.indexOf(endText) + endText.length;
+      return [text.slice(0, index), text.slice(index)];
+    }
+    if (ref === "Siddur Ashkenaz, Weekday, Shacharit, Pesukei Dezimra, Barukh She'amar 2") {
+      const hebrewBreaks = splitAfter(hebrew, "בָּרוּךְ שְׁמוֹ. ");
+      const englishBreaks = splitAfter(english, "blessed is His Name. ");
+      return _.zip(hebrewBreaks, englishBreaks) as [string, string][];
+    }
+    return super.maybeSplit(ref, hebrew, english);
+  }
+
+  protected postProcessSegment(segment: InternalSegment): InternalSegment {
+    segment = super.postProcessSegment(segment);
+    if (segment.ref === "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Keduasha 14") {
+      segment.hebrew = (segment.hebrew as string).replace(
+        "<small>",
+        '<small class="aseret-yimei-teshuva">');
+    }
+    return segment;
+  }
+}
+
+class BirkatHamazonApiRequestHandler extends LiturgicalApiRequestHandler {
+  protected recreateWithLogger(logger: Logger): AbstractApiRequestHandler {
+    return new BirkatHamazonApiRequestHandler(this.requestMaker, logger);
+  }
+
+  refRewritingMap(): Record<string, string[]> {
+    return BIRKAT_HAMAZON_REFS;
+  }
+
+  book(): Book {
+    return books.byCanonicalName.BirkatHamazon;
+  }
+}
+
 export class ApiRequestHandler {
   private talmudHandler: TalmudApiRequestHandler;
   private tanakhHandler: TanakhApiRequestHandler;
   private siddurHandler: SiddurApiRequestHandler;
   private weekdayTorahHandler: WeekdayTorahPortionHandler;
+  private birkatHamazonApiRequestHandler: BirkatHamazonApiRequestHandler;
 
   constructor(requestMaker: RequestMaker) {
     this.talmudHandler = new TalmudApiRequestHandler(requestMaker);
     this.tanakhHandler = new TanakhApiRequestHandler(requestMaker);
     this.siddurHandler = new SiddurApiRequestHandler(requestMaker);
     this.weekdayTorahHandler = new WeekdayTorahPortionHandler(requestMaker);
+    this.birkatHamazonApiRequestHandler = new BirkatHamazonApiRequestHandler(requestMaker);
   }
 
   handleRequest(bookName: string, page: string, logger?: Logger): Promise<ApiResponse> {
@@ -1395,6 +1432,8 @@ export class ApiRequestHandler {
         return this.siddurHandler;
       } else if (bookName === "WeekdayTorah") {
         return this.weekdayTorahHandler;
+      } else if (bookName === "BirkatHamazon") {
+        return this.birkatHamazonApiRequestHandler;
       }
       return books.byCanonicalName[bookName].isMasechet()
         ? this.talmudHandler
