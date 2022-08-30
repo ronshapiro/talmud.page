@@ -1,5 +1,5 @@
 import {numericLiteralAsInt} from "./hebrew";
-import {SIDDUR_REF_REWRITING, BIRKAT_HAMAZON_REFS} from "./siddur";
+import {SIDDUR_REF_REWRITING, SIDDUR_REFS_SEFARD, BIRKAT_HAMAZON_REFS} from "./siddur";
 
 const ALL_HEBREW_LETTERS = ((): RegExp => {
   const hundreds = "ק"; // there are no masechtot with more than 200 dapim
@@ -1160,6 +1160,14 @@ export const books = new BookIndex([
     sections: SIDDUR_REF_REWRITING,
     bookType: "Siddur",
     bookNameForRef: "Siddur Ashkenaz, Weekday, Shacharit,",
+  }),
+  new LiturgicalBook({
+    canonicalName: "SiddurSefard",
+    hebrewName: "סידור ספרד",
+    aliases: [],
+    sections: SIDDUR_REFS_SEFARD,
+    bookType: "Siddur",
+    bookNameForRef: "Siddur Sefard, Weekday, Shacharit,",
   }),
   new SyntheticBook("WeekdayTorah"),
   new LiturgicalBook({

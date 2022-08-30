@@ -1,4 +1,4 @@
-export const SIDDUR_SECTIONS = [
+export const SIDDUR_ASHKENAZ_SECTIONS = [
   "Morning Blessings",
   "Akedah",
   "Sovereignty of Heaven",
@@ -27,6 +27,37 @@ export const SIDDUR_SECTIONS = [
   "Torah",
   "Ashrei - Conclusion",
   "Aleinu",
+];
+
+export const SIDDUR_SEFARD_SECTIONS = [
+  "Morning Blessings",
+  "Akedah",
+  "Sovereignty of Heaven",
+  "Korbanot",
+  "Hodu",
+  "Barukh She'amar",
+  "Mizmor Letoda",
+  "Yehi Chevod",
+  "Ashrei",
+  "Psalm 146",
+  "Psalm 147",
+  "Psalm 148",
+  "Psalm 149",
+  "Psalm 150",
+  "Psalms - Closing Verses",
+  "Vayevarech David",
+  "Az Yashir",
+  "Yishtabach",
+  "Birchot Kriat Shema",
+  "Amidah - Opening",
+  "Amidah - Kedusha",
+  "Amidah - Middle",
+  "Amidah - Closing",
+  "Tachanun",
+  "Torah",
+  "Ashrei - Conclusion",
+  "Yehalelu",
+  "Conclusion",
 ];
 
 export const BIRKAT_HAMAZON_SECTIONS = ["Shir Hama'alot", "Zimun", "Birkat Hamazon"];

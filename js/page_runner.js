@@ -49,8 +49,12 @@ const maybeSetInitialScrollPosition = () => {
       && localStorage.restoreSectionOnRefresh
       && localStorage.restoreSectionOnRefresh.length > 0) {
     const savedSection = "#" + localStorage.restoreSectionOnRefresh;
-    if ($(savedSection).length > 0) {
-      scrollToSection = savedSection;
+    try {
+      if ($(savedSection).length > 0) {
+        scrollToSection = savedSection;
+      }
+    } catch (e) {
+      console.log("Invalid savedSection", savedSection, e); // eslint-disable-line no-console
     }
   }
 

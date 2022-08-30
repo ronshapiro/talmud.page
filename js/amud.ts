@@ -1,5 +1,5 @@
 import {books} from "./books";
-import {BIRKAT_HAMAZON_SECTIONS, SIDDUR_SECTIONS} from "./siddur";
+import {BIRKAT_HAMAZON_SECTIONS, SIDDUR_ASHKENAZ_SECTIONS, SIDDUR_SEFARD_SECTIONS} from "./siddur";
 
 export const computePreviousAmud = (current: string): string => {
   const number = parseInt(current);
@@ -28,7 +28,8 @@ function validAmudOrUndefined(amud: string | undefined): string | undefined {
 }
 
 const HARD_CODED_SECTIONS: Record<string, string[]> = {
-  SiddurAshkenaz: SIDDUR_SECTIONS,
+  SiddurAshkenaz: SIDDUR_ASHKENAZ_SECTIONS,
+  SiddurSefard: SIDDUR_SEFARD_SECTIONS,
   BirkatHamazon: BIRKAT_HAMAZON_SECTIONS,
 };
 

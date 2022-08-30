@@ -30,6 +30,7 @@ import {
   SIDDUR_IGNORED_TARGET_REFS,
   SIDDUR_MERGE_PAIRS,
   SIDDUR_REF_REWRITING,
+  SIDDUR_REFS_SEFARD,
   SYNTHETIC_REFS,
 } from "./siddur";
 import {CommentaryParenthesesTransformer} from "./source_formatting/commentary_parentheses";
@@ -107,10 +108,12 @@ function stripPossiblePrefix(text: string, prefix: string): string {
   return text;
 }
 
+function readUtf8(path: string): string {
+  return fs.readFileSync(path, {encoding: "utf-8"});
+}
+
 const SHULCHAN_ARUKH_HEADERS: any = (
-  JSON.parse(
-    fs.readFileSync("precomputed_texts/shulchan_arukh_headings.json", {encoding: "utf-8"}),
-  )
+  JSON.parse(readUtf8("precomputed_texts/shulchan_arukh_headings.json"))
 );
 
 function shulchanArukhChapterTitle(ref: string): string | undefined {
@@ -521,6 +524,7 @@ export abstract class AbstractApiRequestHandler {
     return [[hebrew, english]];
   }
 
+  /** Called before postProcessAllSegments(). */
   protected postProcessSegment(segment: InternalSegment): InternalSegment {
     return segment;
   }
@@ -1175,6 +1179,11 @@ class WeekdayTorahPortionHandler extends AbstractApiRequestHandler {
   }
 }
 
+const ANNENU_PARENT_REFS = new Set([
+  "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Redemption 1",
+  "Siddur Sefard, Weekday Shacharit, Amidah 47",
+]);
+
 abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
   abstract refRewritingMap(): Record<string, string[]>;
   abstract book(): Book;
@@ -1196,9 +1205,10 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
   }
 
   protected makeSubRef(mainRef: string, index: number): string {
-    return (mainRef.includes("Ashkenaz")
-      ? `${mainRef} ${index + 1}`
-      : `${mainRef}:${index + 1}`);
+    if (mainRef.includes("Ashkenaz") || mainRef.includes("Sefard") || mainRef.includes("Birkat")) {
+      return `${mainRef} ${index + 1}`;
+    }
+    return `${mainRef}:${index + 1}`;
   }
 
   protected makeTitle(bookName: string, page: string): string {
@@ -1255,9 +1265,9 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
     segments = this.makeExplanationsIntoComments(segments);
     segments = segments.flatMap(segment => {
       const result = [segment];
-      if (segment.ref === "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Redemption 1") {
+      if (ANNENU_PARENT_REFS.has(segment.ref)) {
         const annenu = new InternalSegment({
-          hebrew: fs.readFileSync("annenu.txt", {encoding: "utf-8"}),
+          hebrew: readUtf8("siddur/annenu.txt"),
           english: "",
           ref: "tp::Annenu",
         });
@@ -1360,9 +1370,21 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
   }
 }
 
-class SiddurApiRequestHandler extends LiturgicalApiRequestHandler {
+function splitAfter(text: string, endText: string): string[] {
+  const index = text.indexOf(endText) + endText.length;
+  return [text.slice(0, index), text.slice(index)];
+}
+
+function splitSegmentAfter(
+  hebrew: string, english: string, hebrewSplit: string, englishSplit: string): [string, string][] {
+  const hebrewBreaks = splitAfter(hebrew, hebrewSplit);
+  const englishBreaks = splitAfter(english, englishSplit);
+  return _.zip(hebrewBreaks, englishBreaks) as [string, string][];
+}
+
+class SiddurAshkenazApiRequestHandler extends LiturgicalApiRequestHandler {
   protected recreateWithLogger(logger: Logger): AbstractApiRequestHandler {
-    return new SiddurApiRequestHandler(this.requestMaker, logger);
+    return new SiddurAshkenazApiRequestHandler(this.requestMaker, logger);
   }
 
   refRewritingMap(): Record<string, string[]> {
@@ -1374,15 +1396,10 @@ class SiddurApiRequestHandler extends LiturgicalApiRequestHandler {
   }
 
   protected maybeSplit(ref: string, hebrew: string, english: string): [string, string][] {
-    function splitAfter(text: string, endText: string) {
-      const index = text.indexOf(endText) + endText.length;
-      return [text.slice(0, index), text.slice(index)];
-    }
     if (ref === "Siddur Ashkenaz, Weekday, Shacharit, Pesukei Dezimra, Barukh She'amar 2") {
-      const hebrewBreaks = splitAfter(hebrew, "בָּרוּךְ שְׁמוֹ. ");
-      const englishBreaks = splitAfter(english, "blessed is His Name. ");
-      return _.zip(hebrewBreaks, englishBreaks) as [string, string][];
+      return splitSegmentAfter(hebrew, english, "בָּרוּךְ שְׁמוֹ. ", "blessed is His Name. ");
     }
+
     return super.maybeSplit(ref, hebrew, english);
   }
 
@@ -1392,6 +1409,57 @@ class SiddurApiRequestHandler extends LiturgicalApiRequestHandler {
       segment.hebrew = (segment.hebrew as string).replace(
         "<small>",
         '<small class="aseret-yimei-teshuva">');
+    }
+    return segment;
+  }
+}
+
+function unsmall(text: string): string {
+  return text.replace(/<small>/g, "").replace(/<\/small>/g, "");
+}
+
+const UNSMALL_REFS = new Set([
+  "Siddur Sefard, Weekday Shacharit, Amidah 17",
+  "Siddur Sefard, Weekday Shacharit, Amidah 68",
+  "Siddur Sefard, Weekday Shacharit, Amidah 119",
+]);
+
+const HARDCODED_TEXT: Record<string, string> = {
+  "Siddur Sefard, Weekday Shacharit, Amidah 71": "siddur/sefard/velamalshinim_{lang}.txt",
+  "Siddur Sefard, Weekday Shacharit, Amidah 79": "siddur/sefard/shomea_tefilla_{lang}.txt",
+  "Siddur Sefard, Weekday Shacharit, The Shema 38": "siddur/sefard/tzur_yisrael_{lang}.txt",
+};
+
+class SiddurSefardApiRequestHandler extends LiturgicalApiRequestHandler {
+  protected recreateWithLogger(logger: Logger): AbstractApiRequestHandler {
+    return new SiddurSefardApiRequestHandler(this.requestMaker, logger);
+  }
+
+  refRewritingMap(): Record<string, string[]> {
+    return SIDDUR_REFS_SEFARD;
+  }
+
+  book(): Book {
+    return books.byCanonicalName.SiddurSefard;
+  }
+
+  protected maybeSplit(ref: string, hebrew: string, english: string): [string, string][] {
+    if (ref === "Siddur Sefard, Weekday Shacharit, Hodu 13") {
+      return splitSegmentAfter(hebrew, english, "בָּרוּךְ שְׁמוֹ: ", "blessed is His Name. ");
+    }
+    return super.maybeSplit(ref, hebrew, english);
+  }
+
+  protected postProcessSegment(segment: InternalSegment): InternalSegment {
+    segment = super.postProcessSegment(segment);
+    if (UNSMALL_REFS.has(segment.ref)) {
+      segment.hebrew = unsmall(segment.hebrew as string);
+      segment.english = unsmall(segment.english as string);
+    }
+    if (segment.ref in HARDCODED_TEXT) {
+      const path = HARDCODED_TEXT[segment.ref];
+      segment.hebrew = readUtf8(path.replace("{lang}", "hebrew"));
+      segment.english = readUtf8(path.replace("{lang}", "english"));
     }
     return segment;
   }
@@ -1414,26 +1482,30 @@ class BirkatHamazonApiRequestHandler extends LiturgicalApiRequestHandler {
 export class ApiRequestHandler {
   private talmudHandler: TalmudApiRequestHandler;
   private tanakhHandler: TanakhApiRequestHandler;
-  private siddurHandler: SiddurApiRequestHandler;
+  private siddurAshkenazHandler: SiddurAshkenazApiRequestHandler;
+  private siddurSefardHandler: SiddurSefardApiRequestHandler;
   private weekdayTorahHandler: WeekdayTorahPortionHandler;
-  private birkatHamazonApiRequestHandler: BirkatHamazonApiRequestHandler;
+  private birkatHamazonHandler: BirkatHamazonApiRequestHandler;
 
   constructor(requestMaker: RequestMaker) {
     this.talmudHandler = new TalmudApiRequestHandler(requestMaker);
     this.tanakhHandler = new TanakhApiRequestHandler(requestMaker);
-    this.siddurHandler = new SiddurApiRequestHandler(requestMaker);
+    this.siddurAshkenazHandler = new SiddurAshkenazApiRequestHandler(requestMaker);
+    this.siddurSefardHandler = new SiddurSefardApiRequestHandler(requestMaker);
     this.weekdayTorahHandler = new WeekdayTorahPortionHandler(requestMaker);
-    this.birkatHamazonApiRequestHandler = new BirkatHamazonApiRequestHandler(requestMaker);
+    this.birkatHamazonHandler = new BirkatHamazonApiRequestHandler(requestMaker);
   }
 
   handleRequest(bookName: string, page: string, logger?: Logger): Promise<ApiResponse> {
     const handler = (() => {
       if (bookName === "SiddurAshkenaz") {
-        return this.siddurHandler;
+        return this.siddurAshkenazHandler;
+      } else if (bookName === "SiddurSefard") {
+        return this.siddurSefardHandler;
       } else if (bookName === "WeekdayTorah") {
         return this.weekdayTorahHandler;
       } else if (bookName === "BirkatHamazon") {
-        return this.birkatHamazonApiRequestHandler;
+        return this.birkatHamazonHandler;
       }
       return books.byCanonicalName[bookName].isMasechet()
         ? this.talmudHandler

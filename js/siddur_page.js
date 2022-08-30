@@ -1,5 +1,5 @@
 import * as _ from "underscore";
-import {ZmanimCalendar} from "kosher-zmanim";
+import {JewishCalendar, ZmanimCalendar} from "kosher-zmanim";
 import {ApiCache} from "./ApiCache.ts";
 import {getCommentaryTypes} from "./commentaryTypes.ts";
 import {driveClient} from "./google_drive/singleton.ts";
@@ -88,18 +88,27 @@ class SiddurRenderer extends Renderer {
         torahSection.sections = newSections;
         this.injectedTorahPortions = undefined;
       }
+    } else {
+      keys = _.without(keys, "Torah", "Yehalelu");
     }
 
     if (omitTachanun()) {
-      keys = keys.filter(key => key !== "Tachanun");
+      keys = _.without(keys, "Tachanun");
+    }
+
+    const today = getJewishDate();
+    if (today.getYomTovIndex() === JewishCalendar.EREV_PESACH || today.isCholHamoedPesach()) {
+      keys = _.without(keys, "Mizmor Letoda");
     }
 
     return keys.map(key => this.allAmudim[key]);
   }
 
   injectTorahPortion(portionRespones) {
-    this.injectedTorahPortions = portionRespones;
-    this.forceUpdate();
+    if (portionRespones.length > 0) {
+      this.injectedTorahPortions = portionRespones;
+      this.forceUpdate();
+    }
   }
 
   newPageTitle(section) {
@@ -124,8 +133,13 @@ class SiddurRenderer extends Renderer {
         "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Tachanun, God of Israel ", 1, 11));
     }
     if (omitTachanun()) {
-      ignored.push(...refRanges(
-        "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Reading from Sefer, Raising the Torah ", 5, 9));
+      ignored.push(
+        ...refRanges(
+          "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Reading from Sefer, Raising the Torah ", 5, 9),
+        "Siddur Ashkenaz, Weekday, Shacharit, Preparatory Prayers, Akedah 3",
+        "Siddur Sefard, Weekday Shacharit, Morning Prayer 3",
+        "Siddur Sefard, Weekday Shacharit, Morning Prayer 4",
+      );
     }
 
     const hebrewDay = getJewishDate();
@@ -156,6 +170,7 @@ class SiddurRenderer extends Renderer {
       ignored.push(...[
         "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Holiness of God 2",
         "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Justice 2",
+        "Siddur Sefard, Weekday Shacharit, Amidah 66",
       ]);
     } else {
       ignored.push(
@@ -167,6 +182,9 @@ class SiddurRenderer extends Renderer {
           "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Justice 3",
           "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Thanksgiving 10",
           "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Peace 2",
+          "Siddur Sefard, Weekday Shacharit, Amidah 17",
+          "Siddur Sefard, Weekday Shacharit, Amidah 68",
+          "Siddur Sefard, Weekday Shacharit, Amidah 119",
         ].concat(
           _.range(1, 9).map(x => `Psalms 130:${x}`),
         ));
@@ -189,13 +207,19 @@ class SiddurRenderer extends Renderer {
     }
 
     if (!hebrewDay.isChanukah() && !isMaybePurim()) {
-      ignored.push("Siddur Ashkenaz, Weekday, Shacharit, Amidah, Thanksgiving 6");
+      ignored.push(
+        "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Thanksgiving 6",
+        "Siddur Sefard, Weekday Shacharit, Amidah 98");
     }
     if (!hebrewDay.isChanukah()) {
-      ignored.push("Siddur Ashkenaz, Weekday, Shacharit, Amidah, Thanksgiving 7");
+      ignored.push(
+        "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Thanksgiving 7",
+        "Siddur Sefard, Weekday Shacharit, Amidah 100");
     }
     if (!isMaybePurim()) {
-      ignored.push("Siddur Ashkenaz, Weekday, Shacharit, Amidah, Thanksgiving 8");
+      ignored.push(
+        "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Thanksgiving 8",
+        "Siddur Sefard, Weekday Shacharit, Amidah 102");
     }
 
     return ignored;

@@ -254,6 +254,10 @@ app.get("/SiddurAshkenaz", (req, res) => {
   return res.render("siddur_page.html", {title: "Siddur Ashkenaz", bookTitle: "SiddurAshkenaz"});
 });
 
+app.get("/SiddurSefard", (req, res) => {
+  return res.render("siddur_page.html", {title: "Siddur Sefard", bookTitle: "SiddurSefard"});
+});
+
 app.get("/BirkatHamazon", (req, res) => {
   return res.render(
     "birkat_hamazon_page.html", {title: "Birkat Hamazon", bookTitle: "BirkatHamazon"});
