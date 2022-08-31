@@ -241,7 +241,7 @@ function TableRow(props) {
   const cells = [];
   if (indicator) {
     cells.push(
-      <span className="indicator-parent">
+      <span className="indicator-parent" key="indicator-parent">
         <span className="indicator">●</span>
       </span>);
   }
