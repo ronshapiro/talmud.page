@@ -22,6 +22,7 @@ import {
 } from "./sefariaTextType";
 import {
   BIRKAT_HAMAZON_REFS,
+  DONT_MAKE_INTO_EXPLANATIONS,
   SEGMENT_SEPERATOR_REF,
   SIDDUR_DEFAULT_MERGE_WITH_NEXT,
   SIDDUR_IGNORED_FOOTNOTES,
@@ -149,6 +150,8 @@ function identityMultimap<E>(elements: E[]): ListMultimap<E, E> {
   for (const e of elements) multimap.put(e, e);
   return multimap;
 }
+
+type SplitType = [string, string][];
 
 /** A single comment on a text. */
 class Comment {
@@ -520,7 +523,7 @@ export abstract class AbstractApiRequestHandler {
     return standardEnglishTransformations(text);
   }
 
-  protected maybeSplit(ref: string, hebrew: string, english: string): [string, string][] {
+  protected maybeSplit(ref: string, hebrew: string, english: string): SplitType {
     return [[hebrew, english]];
   }
 
@@ -1238,6 +1241,15 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
     if (SIDDUR_DEFAULT_MERGE_WITH_NEXT.has(segment.ref)) {
       segment.defaultMergeWithNext = true;
     }
+
+    if (segment.ref === "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Vidui and 13 Middot 8") {
+      segment.hebrew = `<b>${segment.hebrew}</b>`;
+    }
+    if (segment.ref === "Siddur Sefard, Weekday Shacharit, Amidah 60") {
+      // TODO: check is this fix has been applied
+      segment.hebrew = (segment.hebrew as string).replace("הַשָׁנִים בָּרוּךְ", "הַשָׁנִים. בָּרוּךְ");
+    }
+
     if (!(segment.ref in SIDDUR_IGNORED_FOOTNOTES)) {
       return segment;
     }
@@ -1276,6 +1288,19 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
       }
       return result;
     });
+    if (page === "Tachanun") {
+      for (let i = 0; i < segments.length - 1; i++) {
+        const [first, next] = segments.slice(i, i + 2);
+        if (first.ref === "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Vidui and 13 Middot 3"
+          && first.ref === next.ref) {
+          first.defaultMergeWithNext = true;
+        }
+        if (first.ref === "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Vidui and 13 Middot 9"
+          && first.ref === next.ref) {
+          next.commentary = new InternalCommentary();
+        }
+      }
+    }
     return segments;
   }
 
@@ -1310,11 +1335,7 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
       const firstSegmentHebrew = firstSegment.hebrew as string;
       if (!firstSegmentHebrew.startsWith("<small>")
         || !firstSegmentHebrew.endsWith("</small>")
-        || firstSegment.ref === "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Thanksgiving 4"
-        || firstSegment.ref === "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Shema 5"
-        || firstSegment.ref === "Siddur Ashkenaz, Berachot, Birkat HaMazon 57"
-        || firstSegment.ref === "Siddur Ashkenaz, Berachot, Birkat HaMazon 59"
-        || firstSegment.ref === "Siddur Ashkenaz, Berachot, Birkat HaMazon 62") {
+        || DONT_MAKE_INTO_EXPLANATIONS.has(firstSegment.ref)) {
         newSegments.push(firstSegment);
         continue;
       }
@@ -1376,10 +1397,47 @@ function splitAfter(text: string, endText: string): string[] {
 }
 
 function splitSegmentAfter(
-  hebrew: string, english: string, hebrewSplit: string, englishSplit: string): [string, string][] {
+  hebrew: string, english: string, hebrewSplit: string, englishSplit: string): SplitType {
   const hebrewBreaks = splitAfter(hebrew, hebrewSplit);
   const englishBreaks = splitAfter(english, englishSplit);
-  return _.zip(hebrewBreaks, englishBreaks) as [string, string][];
+  return _.zip(hebrewBreaks, englishBreaks) as SplitType;
+}
+
+function splitRetain(text: string, splitter: RegExp): string[] {
+  const pieces = [];
+  while (text.length > 0) {
+    const match = text.match(splitter);
+    if (!match) {
+      pieces.push(text);
+      return pieces;
+    }
+    const splitIndex = match.index! + match[0]!.length;
+    pieces.push(text.slice(0, splitIndex));
+    text = text.slice(splitIndex);
+  }
+  return pieces;
+}
+
+function splitAshamnu(hebrew: string, english: string): SplitType {
+  english = english.replace(
+    "; we have joined with evil individuals or groups",
+    ", we have joined with evil individuals or groups");
+  const [firstHebrew, restHebrew] = splitRetain(hebrew, /<\/b> /);
+  const hebrewBreaks = [firstHebrew].concat(splitRetain(restHebrew, /\./));
+  return _.zip(hebrewBreaks, splitRetain(english, /[.;] /)) as SplitType;
+}
+
+function siddurSplit(ref: string, hebrew: string, english: string): SplitType {
+  if (ref === "Siddur Ashkenaz, Weekday, Shacharit, Pesukei Dezimra, Barukh She'amar 2"
+      || ref === "Siddur Sefard, Weekday Shacharit, Hodu 13") {
+    return splitSegmentAfter(hebrew, english, "בָּרוּךְ שְׁמוֹ: ", "blessed is His Name. ");
+  } else if (ref === "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Vidui and 13 Middot 3") {
+    return splitAshamnu(hebrew, english);
+  } else if (ref === "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Vidui and 13 Middot 9") {
+    return _.zip(splitRetain(hebrew, /[.:]/), splitRetain(english, /(sinned,|\.)/)) as SplitType;
+  }
+
+  return [[hebrew, english]];
 }
 
 class SiddurAshkenazApiRequestHandler extends LiturgicalApiRequestHandler {
@@ -1395,12 +1453,8 @@ class SiddurAshkenazApiRequestHandler extends LiturgicalApiRequestHandler {
     return books.byCanonicalName.SiddurAshkenaz;
   }
 
-  protected maybeSplit(ref: string, hebrew: string, english: string): [string, string][] {
-    if (ref === "Siddur Ashkenaz, Weekday, Shacharit, Pesukei Dezimra, Barukh She'amar 2") {
-      return splitSegmentAfter(hebrew, english, "בָּרוּךְ שְׁמוֹ. ", "blessed is His Name. ");
-    }
-
-    return super.maybeSplit(ref, hebrew, english);
+  protected maybeSplit(ref: string, hebrew: string, english: string): SplitType {
+    return siddurSplit(ref, hebrew, english);
   }
 
   protected postProcessSegment(segment: InternalSegment): InternalSegment {
@@ -1424,10 +1478,18 @@ const UNSMALL_REFS = new Set([
   "Siddur Sefard, Weekday Shacharit, Amidah 119",
 ]);
 
+
+// These still maintain links, even though they entirely replace text.
 const HARDCODED_TEXT: Record<string, string> = {
+  "Siddur Sefard, Weekday Shacharit, Amidah 65": "siddur/sefard/hashiva_shoftenu_hebrew.txt",
   "Siddur Sefard, Weekday Shacharit, Amidah 71": "siddur/sefard/velamalshinim_{lang}.txt",
+  "Siddur Sefard, Weekday Shacharit, Amidah 73": "siddur/sefard/al_hatzadikim_english.txt",
   "Siddur Sefard, Weekday Shacharit, Amidah 79": "siddur/sefard/shomea_tefilla_{lang}.txt",
   "Siddur Sefard, Weekday Shacharit, The Shema 38": "siddur/sefard/tzur_yisrael_{lang}.txt",
+};
+
+const HEBREW_TEXT_REPLACEMENTS: Record<string, SplitType> = {
+  "Siddur Sefard, Weekday Shacharit, Amidah 103": [["וְיִתְרוֹמַם", "וְיִתְרוֹמֵם"]],
 };
 
 class SiddurSefardApiRequestHandler extends LiturgicalApiRequestHandler {
@@ -1443,11 +1505,8 @@ class SiddurSefardApiRequestHandler extends LiturgicalApiRequestHandler {
     return books.byCanonicalName.SiddurSefard;
   }
 
-  protected maybeSplit(ref: string, hebrew: string, english: string): [string, string][] {
-    if (ref === "Siddur Sefard, Weekday Shacharit, Hodu 13") {
-      return splitSegmentAfter(hebrew, english, "בָּרוּךְ שְׁמוֹ: ", "blessed is His Name. ");
-    }
-    return super.maybeSplit(ref, hebrew, english);
+  protected maybeSplit(ref: string, hebrew: string, english: string): SplitType {
+    return siddurSplit(ref, hebrew, english);
   }
 
   protected postProcessSegment(segment: InternalSegment): InternalSegment {
@@ -1460,6 +1519,11 @@ class SiddurSefardApiRequestHandler extends LiturgicalApiRequestHandler {
       const path = HARDCODED_TEXT[segment.ref];
       segment.hebrew = readUtf8(path.replace("{lang}", "hebrew"));
       segment.english = readUtf8(path.replace("{lang}", "english"));
+    }
+    if (segment.ref in HEBREW_TEXT_REPLACEMENTS) {
+      for (const [before, after] of HEBREW_TEXT_REPLACEMENTS[segment.ref]) {
+        segment.hebrew = (segment.hebrew as string).replace(before, after);
+      }
     }
     return segment;
   }

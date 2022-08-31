@@ -7,6 +7,7 @@ import React, {
 import {render} from 'react-dom';
 import PropTypes from 'prop-types';
 import _ from "underscore";
+import {v4 as newUuid} from "uuid";
 import {addDriveComments} from "./addDriveComments.ts";
 import {amudMetadata} from "./amud.ts";
 import {getCommentaryTypes} from "./commentaryTypes.ts";
@@ -219,13 +220,18 @@ class CommentarySection extends Component {
           commentaryKind.englishName,
           this.renderButton(commentaryKind, true, commentary),
           ""));
+      // This set is particulary useful for merged segments, where duplicates are more common.
+      const seen = new Set();
       commentary.comments.forEach(comment => {
-        output.push(
-          <CommentRow
-            key={comment.ref}
-            comment={comment}
-            commentaryKind={commentaryKind}
-            />);
+        if (!seen.has(comment.ref)) {
+          seen.add(comment.ref);
+          output.push(
+            <CommentRow
+              key={comment.ref}
+              comment={comment}
+              commentaryKind={commentaryKind}
+              />);
+        }
         if (comment.commentary) {
           const nestedSectionLabel = `${sectionLabel}.<nested>.${comment.ref}`;
           output.push(
@@ -472,14 +478,14 @@ function Section({sections, sectionLabel, toggleMerging, isExpanded}) {
     }
     const elements = [];
     for (let i = 0; i < texts.length; i++) {
-      const {ref} = sections[i];
+      const {ref, uuid} = sections[i];
       elements.push(
         // TODO: consider another gesture so that the double clicking is not overloaded.
         <CellText
           text={texts[i]}
           languageClass={languageClass}
           key={`section-part-${i}`}
-          onDoubleClick={() => toggleMerging(ref)}
+          onDoubleClick={() => toggleMerging(uuid)}
           sefariaRef={ref} />);
       if (i + 1 < texts.length) {
         elements.push(<span key={`section-part-${i}-space`}> </span>);
@@ -609,8 +615,8 @@ class Amud extends Component {
           const nextSection = sections[i + 1];
           // Comment out the next line to have sugya-wide merging!
           if (!currentSection.defaultMergeWithNext) break;
-          if (this.state.expandMergedRef[currentSection.ref]) break;
-          if (nextSection && this.state.expandMergedRef[nextSection.ref]) break;
+          if (this.state.expandMergedRef[currentSection.uuid]) break;
+          if (nextSection && this.state.expandMergedRef[nextSection.uuid]) break;
           if (nextSection && nextSection.steinsaltz_start_of_sugya) break;
           i++;
           if (i === sections.length) {
@@ -618,13 +624,13 @@ class Amud extends Component {
           }
           mergedSections.push(nextSection);
         }
-        const toggleMerging = (ref) => {
+        const toggleMerging = (uuid) => {
           this.setState(previousState => {
             const newState = {
               ...previousState,
               expandMergedRef: {...previousState.expandMergedRef},
             };
-            newState.expandMergedRef[ref] = !newState.expandMergedRef[ref];
+            newState.expandMergedRef[uuid] = !newState.expandMergedRef[uuid];
             return newState;
           });
         };
@@ -634,7 +640,7 @@ class Amud extends Component {
             sections={mergedSections}
             sectionLabel={sectionLabel}
             toggleMerging={toggleMerging}
-            isExpanded={this.state.expandMergedRef[mergedSections[0].ref]}
+            isExpanded={this.state.expandMergedRef[mergedSections[0].uuid]}
             />);
       }
     }
@@ -737,6 +743,12 @@ export class Renderer {
   _applyClientSideDataTransformations(amudData) {
     if (!amudData.sections) {
       amudData.sections = [];
+    }
+
+    for (const section of amudData.sections) {
+      if (!section.uuid) {
+        section.uuid = newUuid();
+      }
     }
 
     if (this._translationOption !== "both") {

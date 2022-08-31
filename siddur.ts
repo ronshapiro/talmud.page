@@ -37,6 +37,14 @@ export const SIDDUR_DEFAULT_MERGE_WITH_NEXT = new Set<string>([
   "Siddur Sefard, Weekday Shacharit, Amidah 53",
 ]);
 
+export const DONT_MAKE_INTO_EXPLANATIONS = new Set([
+  "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Thanksgiving 4",
+  "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Shema 5",
+  "Siddur Ashkenaz, Berachot, Birkat HaMazon 57",
+  "Siddur Ashkenaz, Berachot, Birkat HaMazon 59",
+  "Siddur Ashkenaz, Berachot, Birkat HaMazon 62",
+].concat(Array.from(SIDDUR_DEFAULT_MERGE_WITH_NEXT)));
+
 function mergeRefsByDefault(range: string, withLast?: true): string {
   const [prefix, suffix] = range.split(":");
   const [start, end] = suffix.split("-");
@@ -387,7 +395,7 @@ export const SIDDUR_REF_REWRITING: Record<string, string[]> = {
     "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Barchi Nafshi",
     SEGMENT_SEPERATOR_REF,
     "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, LeDavid 1",
-    "Psalms 27",
+    mergeRefsByDefault("Psalms 27:1-14"),
   ],
 };
 
@@ -505,6 +513,7 @@ export const SIDDUR_REFS_SEFARD: Record<string, string[]> = {
     "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Tachanun, God of Israel",
     SEGMENT_SEPERATOR_REF,
     "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Tachanun, Shomer Yisrael 1-4",
+    SEGMENT_SEPERATOR_REF,
     "Siddur Sefard, Weekday Shacharit, For Monday & Thursday 25",
   ],
 
@@ -520,8 +529,8 @@ export const SIDDUR_REFS_SEFARD: Record<string, string[]> = {
     "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Barchi Nafshi",
     SEGMENT_SEPERATOR_REF,
     "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, LeDavid 1",
+    mergeRefsByDefault("Psalms 27:1-14"),
     SEGMENT_SEPERATOR_REF,
-    "Psalms 27",
     "Siddur Sefard, Weekday Shacharit, Kaveh 1-11",
     SEGMENT_SEPERATOR_REF,
     "Siddur Sefard, Weekday Shacharit, Aleinu 1-4",

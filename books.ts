@@ -289,21 +289,19 @@ class LiturgicalBook extends Book {
     this._bookNameForRef = bookNameForRef;
   }
 
-  private index(page: string): number {
-    return this._sections.indexOf(page);
-  }
-
+  /* eslint-disable @typescript-eslint/no-unused-vars */
   nextPage(page: string): string {
-    return this._sections[this.index(page) + 1];
+    return "<disable feature>";
   }
 
   previousPage(page: string): string {
-    return this._sections[this.index(page) - 1];
+    return "<disable feature>";
   }
 
   arePagesInReverseOrder(start: string, end: string): boolean {
-    return this.index(start) > this.index(end);
+    throw new Error("Unused");
   }
+  /* eslint-enable @typescript-eslint/no-unused-vars */
 
   bookType(): string { return this._bookType; }
 

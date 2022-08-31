@@ -131,6 +131,8 @@ class SiddurRenderer extends Renderer {
         1, 8));
       ignored.push(...refRanges(
         "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Tachanun, God of Israel ", 1, 11));
+      ignored.push(...refRanges(
+        "Siddur Sefard, Weekday Shacharit, For Monday & Thursday ", 3, 9));
     }
     if (omitTachanun()) {
       ignored.push(
@@ -148,8 +150,11 @@ class SiddurRenderer extends Renderer {
         "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Barchi Nafshi ", 1, 8));
     }
 
-    if (!hebrewDay.jewishMonth !== 6) {
-      ignored.push(...refRanges("Psalms 27:", 1, 14));
+    if (!hebrewDay.getJewishMonth() !== 6
+        && !(hebrewDay.getJewishMonth() !== 7 && hebrewDay.getJewishDayOfMonth() <= 22)) {
+      ignored.push(
+        "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, LeDavid 1",
+        ...refRanges("Psalms 27:", 1, 14));
     }
 
     if (mashivHaruach()) {
