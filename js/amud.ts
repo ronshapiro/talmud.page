@@ -102,9 +102,13 @@ interface AmudMetadataFunction {
 }
 
 export const amudMetadata: AmudMetadataFunction = () => {
-  return _amudMetadata(
+  const metadata = _amudMetadata(
     (document.getElementById("book-title") as HTMLMetaElement)?.content,
     window.location.pathname);
+  if (localStorage.restrictRange) {
+    metadata.range = () => localStorage.restrictRange.split(",");
+  }
+  return metadata;
 };
 export function amudMetadataForTesting(path: string): AmudMetadata {
   return _amudMetadata(path.split("/")[1], path);
