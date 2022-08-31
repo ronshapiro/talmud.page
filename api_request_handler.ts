@@ -1481,9 +1481,9 @@ const UNSMALL_REFS = new Set([
 
 // These still maintain links, even though they entirely replace text.
 const HARDCODED_TEXT: Record<string, string> = {
-  "Siddur Sefard, Weekday Shacharit, Amidah 65": "siddur/sefard/hashiva_shoftenu_hebrew.txt",
+  "Siddur Sefard, Weekday Shacharit, Amidah 65": "siddur/sefard/hashiva_shoftenu_{lang}.txt",
   "Siddur Sefard, Weekday Shacharit, Amidah 71": "siddur/sefard/velamalshinim_{lang}.txt",
-  "Siddur Sefard, Weekday Shacharit, Amidah 73": "siddur/sefard/al_hatzadikim_english.txt",
+  "Siddur Sefard, Weekday Shacharit, Amidah 73": "siddur/sefard/al_hatzadikim_{lang}.txt",
   "Siddur Sefard, Weekday Shacharit, Amidah 79": "siddur/sefard/shomea_tefilla_{lang}.txt",
   "Siddur Sefard, Weekday Shacharit, The Shema 38": "siddur/sefard/tzur_yisrael_{lang}.txt",
 };
@@ -1517,6 +1517,9 @@ class SiddurSefardApiRequestHandler extends LiturgicalApiRequestHandler {
     }
     if (segment.ref in HARDCODED_TEXT) {
       const path = HARDCODED_TEXT[segment.ref];
+      if (!path.includes("{lang}")) {
+        throw new Error(`${path} does not include "{lang}"`);
+      }
       segment.hebrew = readUtf8(path.replace("{lang}", "hebrew"));
       segment.english = readUtf8(path.replace("{lang}", "english"));
     }
