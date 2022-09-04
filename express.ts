@@ -445,12 +445,14 @@ if (fs.existsSync("sendgrid_api_key")) {
     };
     const isSiddur = pathname.startsWith("/Siddur") || pathname.startsWith("/BirkatHamazon");
     const to = isSiddur ? "siddur@talmud.page" : "corrections@sefaria.org";
+    const subject = (
+      isSiddur ? "Siddur Feedback - talmud.page" : "Sefaria Text Correction from talmud.page");
     const rtl = (text: string | undefined) => text && `<div dir="rtl">${text}</div>`;
     sendgrid.send({
       to,
       from: "corrections@talmud.page",
       cc: ["corrections@talmud.page", user],
-      subject: "Sefaria Text Correction from talmud.page",
+      subject,
       text: [
         `${ref} (${url})`,
         hebrew,
