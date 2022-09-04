@@ -447,11 +447,15 @@ if (fs.existsSync("sendgrid_api_key")) {
     const to = isSiddur ? "siddur@talmud.page" : "corrections@sefaria.org";
     const subject = (
       isSiddur ? "Siddur Feedback - talmud.page" : "Sefaria Text Correction from talmud.page");
+    const cc = [user];
+    if (!isSiddur) {
+      cc.push("corrections@talmud.page");
+    }
     const rtl = (text: string | undefined) => text && `<div dir="rtl">${text}</div>`;
     sendgrid.send({
       to,
       from: "corrections@talmud.page",
-      cc: ["corrections@talmud.page", user],
+      cc,
       subject,
       text: [
         `${ref} (${url})`,
