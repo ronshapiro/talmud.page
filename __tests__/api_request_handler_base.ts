@@ -59,6 +59,7 @@ export const testPages = [
   new TestPage("Obadiah", "1"),
 
   new TestPage("SiddurAshkenaz", "Hodu"),
+  new TestPage("SiddurAshkenaz", "Ashrei"),
   new TestPage("SiddurAshkenaz", "Amidah_-_Opening"),
   new TestPage("SiddurSefard", "Hodu"),
   new TestPage("SiddurSefard", "Amidah_-_Opening"),
