@@ -1,5 +1,5 @@
 import {numericLiteralAsInt} from "./hebrew";
-import {SIDDUR_REF_REWRITING, SIDDUR_REFS_SEFARD, BIRKAT_HAMAZON_REFS} from "./siddur";
+import {SIDDUR_REFS_ASHKENAZ, SIDDUR_REFS_SEFARD, BIRKAT_HAMAZON_REFS, RefPiece} from "./siddur";
 
 const ALL_HEBREW_LETTERS = ((): RegExp => {
   const hundreds = "ק"; // there are no masechtot with more than 200 dapim
@@ -258,13 +258,13 @@ interface LiturgicalBookConstructorParameters {
   canonicalName: string;
   hebrewName: string;
   aliases: string[];
-  sections: Record<string, string[]>;
+  sections: Record<string, RefPiece[]>;
   bookType: string;
   bookNameForRef: string;
 }
 
 class LiturgicalBook extends Book {
-  private _sections: string[];
+  private _sections: RefPiece[];
   private _bookType: string;
   private _bookNameForRef: string;
 
@@ -1155,7 +1155,7 @@ export const books = new BookIndex([
     canonicalName: "SiddurAshkenaz",
     hebrewName: "סידור אשכנז",
     aliases: [],
-    sections: SIDDUR_REF_REWRITING,
+    sections: SIDDUR_REFS_ASHKENAZ,
     bookType: "Siddur",
     bookNameForRef: "Siddur Ashkenaz, Weekday, Shacharit,",
   }),

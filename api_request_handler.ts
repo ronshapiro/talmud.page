@@ -30,9 +30,13 @@ import {
   SIDDUR_IGNORED_SOURCE_REFS,
   SIDDUR_IGNORED_TARGET_REFS,
   SIDDUR_MERGE_PAIRS,
-  SIDDUR_REF_REWRITING,
+  SIDDUR_REFS_ASHKENAZ,
   SIDDUR_REFS_SEFARD,
   SYNTHETIC_REFS,
+  MergeWithNext,
+  MergeRefsByDefault,
+  RefPiece,
+  getRef,
 } from "./siddur";
 import {CommentaryParenthesesTransformer} from "./source_formatting/commentary_parentheses";
 import {CommentaryPrefixStripper} from "./source_formatting/commentary_prefixes";
@@ -1188,13 +1192,13 @@ const ANNENU_PARENT_REFS = new Set([
 ]);
 
 abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
-  abstract refRewritingMap(): Record<string, string[]>;
+  abstract refRewritingMap(): Record<string, RefPiece[]>;
   abstract book(): Book;
 
   protected expandRef(ref: string): string[] {
     const suffix = ref.replace(this.book().bookNameForRef() + " ", "");
     if (suffix in this.refRewritingMap()) {
-      return this.refRewritingMap()[suffix];
+      return this.refRewritingMap()[suffix].map(getRef);
     }
     return super.expandRef(ref);
   }
@@ -1238,10 +1242,6 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
   }
 
   protected postProcessSegment(segment: InternalSegment): InternalSegment {
-    if (SIDDUR_DEFAULT_MERGE_WITH_NEXT.has(segment.ref)) {
-      segment.defaultMergeWithNext = true;
-    }
-
     if (segment.ref === "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Vidui and 13 Middot 8") {
       segment.hebrew = `<b>${segment.hebrew}</b>`;
     }
@@ -1273,6 +1273,23 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     segments: InternalSegment[], bookName: string, page: string,
   ): InternalSegment[] {
+    const mergeWithNext = new Set(SIDDUR_DEFAULT_MERGE_WITH_NEXT);
+    for (const refPiece of this.refRewritingMap()[page]) {
+      if (refPiece instanceof MergeWithNext) {
+        mergeWithNext.add(refPiece.ref);
+      } else if (refPiece instanceof MergeRefsByDefault) {
+        for (const mergedRef of Array.from(refPiece.mergedRefs)) {
+          mergeWithNext.add(mergedRef);
+        }
+      }
+    }
+
+    for (const segment of segments) {
+      if (mergeWithNext.has(segment.ref)) {
+        segment.defaultMergeWithNext = true;
+      }
+    }
+
     segments = this.removeIgnoredRefsAndMergeMergedRefs(segments);
     segments = this.makeExplanationsIntoComments(segments);
     segments = segments.flatMap(segment => {
@@ -1445,8 +1462,8 @@ class SiddurAshkenazApiRequestHandler extends LiturgicalApiRequestHandler {
     return new SiddurAshkenazApiRequestHandler(this.requestMaker, logger);
   }
 
-  refRewritingMap(): Record<string, string[]> {
-    return SIDDUR_REF_REWRITING;
+  refRewritingMap(): Record<string, RefPiece[]> {
+    return SIDDUR_REFS_ASHKENAZ;
   }
 
   book(): Book {
@@ -1497,7 +1514,7 @@ class SiddurSefardApiRequestHandler extends LiturgicalApiRequestHandler {
     return new SiddurSefardApiRequestHandler(this.requestMaker, logger);
   }
 
-  refRewritingMap(): Record<string, string[]> {
+  refRewritingMap(): Record<string, RefPiece[]> {
     return SIDDUR_REFS_SEFARD;
   }
 
@@ -1537,7 +1554,7 @@ class BirkatHamazonApiRequestHandler extends LiturgicalApiRequestHandler {
     return new BirkatHamazonApiRequestHandler(this.requestMaker, logger);
   }
 
-  refRewritingMap(): Record<string, string[]> {
+  refRewritingMap(): Record<string, RefPiece[]> {
     return BIRKAT_HAMAZON_REFS;
   }
 

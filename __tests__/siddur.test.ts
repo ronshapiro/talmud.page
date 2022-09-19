@@ -1,6 +1,6 @@
 import {
   BIRKAT_HAMAZON_REFS,
-  SIDDUR_REF_REWRITING,
+  SIDDUR_REFS_ASHKENAZ,
   SIDDUR_REFS_SEFARD,
 } from "../siddur";
 import {
@@ -10,7 +10,7 @@ import {
 } from "../js/siddur";
 
 test("[Ashkenaz] Section names in sync", () => {
-  expect(SIDDUR_ASHKENAZ_SECTIONS).toEqual(Object.keys(SIDDUR_REF_REWRITING));
+  expect(SIDDUR_ASHKENAZ_SECTIONS).toEqual(Object.keys(SIDDUR_REFS_ASHKENAZ));
 });
 
 test("[Sefard] Section names in sync", () => {
