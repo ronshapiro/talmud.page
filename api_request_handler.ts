@@ -1237,6 +1237,7 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
     return [
       "Rashi",
       "Shulchan Arukh",
+      "Torah Temima",
       "Verses",
     ];
   }
