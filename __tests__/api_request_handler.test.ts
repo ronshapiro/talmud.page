@@ -8,10 +8,11 @@ jest.mock("../fetch.ts", () => {
 import * as fs from "fs";
 import {jsonStringify} from "../util/json_stringify";
 import {ApiRequestHandler} from "../api_request_handler";
-import {FakeRequestMaker, testPages} from "./api_request_handler_base";
+import {testPages} from "./api_request_handler_base";
+import {FakeRequestMaker, TEST_DATA_ROOT} from "../request_makers";
 import {NoopLogger} from "../logger";
 
-const handler = new ApiRequestHandler(new FakeRequestMaker());
+const handler = new ApiRequestHandler(new FakeRequestMaker(TEST_DATA_ROOT));
 test.each(testPages)("%s", testPage => {
   return handler.handleRequest(testPage.title, testPage.page, new NoopLogger())
     .then(results => {

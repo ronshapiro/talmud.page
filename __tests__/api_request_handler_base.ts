@@ -1,37 +1,10 @@
-import {parse as urlParse} from "url";
-import {readUtf8} from "../files";
-import {writeJson} from "../util/json_files";
-import {RealRequestMaker, RequestMaker} from "../api_request_handler";
-
-interface Endpoint {
-  ref: string;
-  requestBase: string;
-}
-
-function parseEndpoint(endpoint: string): Endpoint {
-  const match = endpoint.match(/\/([a-z]+)\/(.*)\?.*/)!;
-  const requestBase = match[1];
-
-  if (requestBase === "bulktext") {
-    const id = new URLSearchParams(urlParse(endpoint).query!).get("tp")!;
-    return {requestBase, ref: id};
-  }
-  return {requestBase, ref: match[2]};
-}
-
-function testDataPath(path: string): string {
-  return `${__dirname}/../test_data/api_request_handler/${path}`;
-}
-
-function inputFilePath(endpoint: Endpoint): string {
-  return testDataPath(`${endpoint.ref.replace(/ /g, "_")}.${endpoint.requestBase}.input.json`);
-}
+import {TEST_DATA_ROOT} from "../request_makers";
 
 class TestPage {
   constructor(readonly title: string, readonly page: string) {}
 
   outputFilePath(): string {
-    return testDataPath(`${this.title.replace(/ /g, "_")}.${this.page}.expected-output.json`);
+    return `${TEST_DATA_ROOT}/${this.title.replace(/ /g, "_")}.${this.page}.expected-output.json`;
   }
 }
 
@@ -67,24 +40,3 @@ export const testPages = [
   new TestPage("BirkatHamazon", "Zimun"),
   new TestPage("BirkatHamazon", "Birkat_Hamazon"),
 ];
-
-export class RecordingRequestMaker extends RequestMaker {
-  private realRequestMaker = new RealRequestMaker();
-
-  makeRequest<T>(endpoint: string): Promise<T> {
-    const promise = this.realRequestMaker.makeRequest<T>(endpoint);
-    promise.then(results => writeJson(inputFilePath(parseEndpoint(endpoint)), results));
-    return promise;
-  }
-}
-
-export class FakeRequestMaker extends RequestMaker {
-  makeRequest<T>(endpoint: string): Promise<T> {
-    return readUtf8(inputFilePath(parseEndpoint(endpoint)))
-      .catch(e => {
-        throw new Error(
-          `Error opening ${e.path}. This likely means that the test data needs to be updated.`);
-      })
-      .then(content => JSON.parse(content) as T);
-  }
-}
