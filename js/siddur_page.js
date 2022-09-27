@@ -7,6 +7,7 @@ import {onceDocumentReady} from "./once_document_ready.ts";
 import {Runner} from "./page_runner.js";
 import {Renderer} from "./rendering.jsx";
 import {getHebrewDate as getJewishDate, isMaybePurim, omitTachanun} from "./hebrew_calendar";
+import {ASERET_YIMEI_TESHUVA_REFS} from "./aseret_yimei_teshuva.ts";
 
 const INJECT_WEEKDAY_TORAH_PORTION_AFTER_REF = (
   "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Reading from Sefer, Birkat Hatorah 6");
@@ -178,21 +179,7 @@ class SiddurRenderer extends Renderer {
         "Siddur Sefard, Weekday Shacharit, Amidah 66",
       ]);
     } else {
-      ignored.push(
-        ...[
-          "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Patriarchs 4",
-          "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Patriarchs 5",
-          "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Divine Might 8",
-          "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Holiness of God 3",
-          "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Justice 3",
-          "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Thanksgiving 10",
-          "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Peace 2",
-          "Siddur Sefard, Weekday Shacharit, Amidah 17",
-          "Siddur Sefard, Weekday Shacharit, Amidah 68",
-          "Siddur Sefard, Weekday Shacharit, Amidah 119",
-        ].concat(
-          _.range(1, 9).map(x => `Psalms 130:${x}`),
-        ));
+      ignored.push(...Array.from(ASERET_YIMEI_TESHUVA_REFS));
     }
 
     if (!hebrewDay.isTaanis()) {

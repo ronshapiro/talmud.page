@@ -53,6 +53,7 @@ import {SefariaLinkSanitizer} from "./source_formatting/sefaria_link_sanitizer";
 import {ShulchanArukhHeaderRemover} from "./source_formatting/shulchan_arukh_remove_header";
 import {checkNotUndefined} from "./js/undefined";
 import {getWeekdayReading} from "./weekday_parshiot";
+import {ASERET_YIMEI_TESHUVA_REFS} from "./js/aseret_yimei_teshuva";
 
 export abstract class RequestMaker {
   abstract makeRequest<T>(endpoint: string): Promise<T>;
@@ -1191,6 +1192,10 @@ const ANNENU_PARENT_REFS = new Set([
   "Siddur Sefard, Weekday Shacharit, Amidah 47",
 ]);
 
+function aseretYimeiTeshuvaStyle(text: string): string {
+  return `<span class="aseret-yimei-teshuva">${text}</span>`;
+}
+
 abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
   abstract refRewritingMap(): Record<string, RefPiece[]>;
   abstract book(): Book;
@@ -1249,6 +1254,13 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
     if (segment.ref === "Siddur Sefard, Weekday Shacharit, Amidah 60") {
       // TODO: check is this fix has been applied
       segment.hebrew = (segment.hebrew as string).replace("הַשָׁנִים בָּרוּךְ", "הַשָׁנִים. בָּרוּךְ");
+    }
+
+    if (ASERET_YIMEI_TESHUVA_REFS.has(segment.ref)
+      // Explanation
+      && segment.ref !== "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Patriarchs 5") {
+      segment.hebrew = aseretYimeiTeshuvaStyle(segment.hebrew as string);
+      segment.english = aseretYimeiTeshuvaStyle(segment.english as string);
     }
 
     if (!(segment.ref in SIDDUR_IGNORED_FOOTNOTES)) {

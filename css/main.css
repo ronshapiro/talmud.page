@@ -28,6 +28,7 @@
     --snackbar-text-color: var(--background-color);
     --modal-box-shadow-color: #888;
     --modal-button-color: var(--mdl-major-color);
+    --mesorat-hashas-purple: rgb(136, 95, 250)
 }
 
 @media only screen and (min-width: 720px) {
@@ -327,7 +328,7 @@ h2, .title {
     color: rgb(68,138,255);
 }
 .commentary_header.mesorat-hashas, .commentary_header.torah-temima {
-    color: rgb(136, 95, 250);
+    color: var(--mesorat-hashas-purple);
 }
 .text-loading-spinner {
     display: block;
@@ -503,4 +504,10 @@ h2, .title {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.aseret-yimei-teshuva {
+    color: var(--highlight-gray);
+    background: var(--mesorat-hashas-purple);
+    display: inline-block; /* Creates better cross-line text bolding */
 }
