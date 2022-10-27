@@ -104,6 +104,11 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     className: "rashbam",
   },
   {
+    englishName: "Ran",
+    hebrewName: 'ר"ן',
+    className: "ran",
+  },
+  {
     englishName: "Maharsha",
     englishNamePattern: /(Chidushei Halachot|Chidushei Agadot)/,
     hebrewName: 'מהרש"א',

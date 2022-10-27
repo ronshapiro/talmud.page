@@ -1,4 +1,5 @@
 const TITLES_TO_BOLDIFY = new Set([
+  "Ran",
   "Rashi",
   "Rashbam",
   "Tosafot",
