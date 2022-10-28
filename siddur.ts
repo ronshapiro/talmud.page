@@ -40,6 +40,7 @@ function seperateEverySection(sections: string[]) {
 
 export const SIDDUR_DEFAULT_MERGE_WITH_NEXT = new Set<string>([
   "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Holiness of God 1",
+  "Siddur Sefard, Weekday Shacharit, Amidah 35",
   "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Prosperity 1",
   "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Prosperity 2",
   "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Prosperity 3",
@@ -164,11 +165,16 @@ function amidahOpening(ashkenaz: boolean): RefPiece[] {
   ];
 }
 
-const HAKEL_HAKADOSH: RefPiece[] = [
-  "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Holiness of God 1-2",
-  "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Holiness of God 4",
-  "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Holiness of God 3",
-];
+function hakelHakadosh(ashkenaz: boolean): RefPiece[] {
+  return [
+    ashkenaz
+      ? "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Holiness of God 1"
+      : "Siddur Sefard, Weekday Shacharit, Amidah 35",
+    "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Holiness of God 2",
+    "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Holiness of God 4",
+    "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Holiness of God 3",
+  ];
+}
 
 function barechAleinu(ashkenaz: boolean): RefPiece[] {
   return [
@@ -196,6 +202,9 @@ const YEHALELU: RefPiece[] = [
   new MergeWithNext("Proverbs 3:17"),
   "Proverbs 3:18",
 ];
+
+// Has a nice intro!
+const ALEINU = "Siddur Sefard, Weekday Shacharit, Aleinu 1-4";
 
 /* eslint-disable quote-props, dot-notation */
 export const SIDDUR_REFS_ASHKENAZ: Record<string, RefPiece[]> = {
@@ -313,7 +322,7 @@ export const SIDDUR_REFS_ASHKENAZ: Record<string, RefPiece[]> = {
 
   "Amidah - Opening": amidahOpening(true),
   "Amidah - Kedusha": ["Siddur Ashkenaz, Weekday, Shacharit, Amidah, Keduasha"],
-  "Amidah - Middle": HAKEL_HAKADOSH.concat(
+  "Amidah - Middle": hakelHakadosh(true).concat(
     SEGMENT_SEPERATOR_REF,
     seperateEverySection([
       "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Knowledge",
@@ -393,7 +402,8 @@ export const SIDDUR_REFS_ASHKENAZ: Record<string, RefPiece[]> = {
   ]),
 
   "Aleinu": [
-    "Siddur Sefard, Weekday Shacharit, Aleinu 1", // nice intro!
+    ALEINU,
+    SEGMENT_SEPERATOR_REF,
     "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Alenu",
     SEGMENT_SEPERATOR_REF,
     "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Song of the Day",
@@ -439,7 +449,7 @@ export const SIDDUR_REFS_SEFARD: Record<string, RefPiece[]> = {
   "Birchot Kriat Shema": birchotKriatShema(false),
   "Amidah - Opening": amidahOpening(false),
   "Amidah - Kedusha": ["Siddur Sefard, Weekday Shacharit, Amidah 22-33"],
-  "Amidah - Middle": HAKEL_HAKADOSH.concat([
+  "Amidah - Middle": hakelHakadosh(false).concat([
     SEGMENT_SEPERATOR_REF,
     "Siddur Sefard, Weekday Shacharit, Amidah 41",
     SEGMENT_SEPERATOR_REF,
@@ -539,7 +549,7 @@ export const SIDDUR_REFS_SEFARD: Record<string, RefPiece[]> = {
     SEGMENT_SEPERATOR_REF,
     "Siddur Sefard, Weekday Shacharit, Kaveh 1-11",
     SEGMENT_SEPERATOR_REF,
-    "Siddur Sefard, Weekday Shacharit, Aleinu 1-4",
+    ALEINU,
   ],
 };
 
