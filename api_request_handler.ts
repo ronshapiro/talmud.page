@@ -290,6 +290,15 @@ class InternalCommentary {
     this.comments = this.comments.filter(x => x.ref !== ref);
   }
 
+  removeCommentWithRef(ref: string) {
+    for (const comment of this.comments) {
+      if (ref === comment.ref) {
+        this.removeComment(comment);
+        break;
+      }
+    }
+  }
+
   toJson(): CommentaryMap {
     const result: CommentaryMap = {};
     for (const comment of this.comments) {
@@ -1255,6 +1264,19 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
       // TODO: check is this fix has been applied
       segment.hebrew = (segment.hebrew as string).replace("הַשָׁנִים בָּרוּךְ", "הַשָׁנִים. בָּרוּךְ");
     }
+    if (segment.ref === "Siddur Sefard, Weekday Shacharit, The Shema 16") {
+      const start = "רַחֵם עָלֵֽינוּ";
+      const pieces = start.split(" ");
+      const replacement = [pieces[0], "נָא", pieces[1]].join(" ");
+      segment.hebrew = (segment.hebrew as string).replace(start, replacement);
+    }
+    if (segment.ref === "Siddur Sefard, Weekday Shacharit, Aleinu 2") {
+      // eslint-disable-next-line @typescript-eslint/no-use-before-define
+      segment.hebrew = boldPrefix(segment.hebrew as string, "עָלֵֽינוּ לְשַׁבֵּֽחַ");
+    } else if (segment.ref === "Siddur Sefard, Weekday Shacharit, Aleinu 3") {
+      // eslint-disable-next-line @typescript-eslint/no-use-before-define
+      segment.hebrew = boldPrefix(segment.hebrew as string, "עַל כֵּן");
+    }
 
     if (ASERET_YIMEI_TESHUVA_REFS.has(segment.ref)
       // Explanation
@@ -1330,6 +1352,9 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
           next.commentary = new InternalCommentary();
         }
       }
+    }
+    if (page === "Psalm 150") {
+      segments.slice(-2)[0].commentary.removeCommentWithRef("Shulchan Arukh, Orach Chayim 51:7");
     }
     return segments;
   }
@@ -1431,6 +1456,11 @@ function splitSegmentAfter(
   const hebrewBreaks = splitAfter(hebrew, hebrewSplit);
   const englishBreaks = splitAfter(english, englishSplit);
   return _.zip(hebrewBreaks, englishBreaks) as SplitType;
+}
+
+function boldPrefix(text: string, endText: string): string {
+  const [prefix, rest] = splitAfter(text, endText);
+  return `<b>${prefix}</b>${rest}`;
 }
 
 function splitRetain(text: string, splitter: RegExp): string[] {
