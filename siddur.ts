@@ -741,6 +741,43 @@ export const SIDDUR_IGNORED_TARGET_REFS = new Set([
   "Rashi on Psalms 150:5:1",
 ]);
 
+export const SIDDUR_IGNORED_COMMENTARIES: Record<string, string[]> = {
+  "Siddur Ashkenaz, Weekday, Shacharit, Preparatory Prayers, Sovereignty of Heaven 8": [
+    "Deuteronomy 6:4-9",
+    "Deuteronomy 6:5-9",
+  ],
+};
+
+export const UNSMALL_REFS = new Set([
+  "Siddur Sefard, Weekday Shacharit, Amidah 17",
+  "Siddur Sefard, Weekday Shacharit, Amidah 68",
+  "Siddur Sefard, Weekday Shacharit, Amidah 119",
+]);
+
+
+// These still maintain links, even though they entirely replace text.
+export const HARDCODED_TEXT: Record<string, string> = {
+  "Siddur Sefard, Weekday Shacharit, Hodu 13": "siddur/sefard/barukh_sheamar_{lang}.txt",
+  "Siddur Sefard, Weekday Shacharit, Amidah 50": "siddur/sefard/refaeinu_{lang}.txt",
+  "Siddur Sefard, Weekday Shacharit, Amidah 65": "siddur/sefard/hashiva_shoftenu_{lang}.txt",
+  "Siddur Sefard, Weekday Shacharit, Amidah 71": "siddur/sefard/velamalshinim_{lang}.txt",
+  "Siddur Sefard, Weekday Shacharit, Amidah 73": "siddur/sefard/al_hatzadikim_{lang}.txt",
+  "Siddur Sefard, Weekday Shacharit, Amidah 79": "siddur/sefard/shomea_tefilla_{lang}.txt",
+  "Siddur Sefard, Weekday Shacharit, The Shema 38": "siddur/sefard/tzur_yisrael_{lang}.txt",
+};
+
+export const HEBREW_TEXT_REPLACEMENTS: Record<string, [string, string][]> = {
+  "Siddur Sefard, Weekday Shacharit, Amidah 103": [["וְיִתְרוֹמַם", "וְיִתְרוֹמֵם"]],
+  "Siddur Sefard, Weekday Shacharit, The Shema 16": [
+    ["מַהֵר וְהָבֵא", '<span class="tzizit-start">◰</span> מַהֵר וְהָבֵא'],
+  ],
+  "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Second Blessing before Shema 1": [
+    ["וַהֲבִיאֵֽנוּ לְשָׁלוֹם", '<span class="tzizit-start">◰</span> וַהֲבִיאֵֽנוּ לְשָׁלוֹם'],
+  ],
+  "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Blessing after Shema 9": [
+    ["צוּר יִשְׂרָאֵל", "<big>צוּר יִשְׂרָאֵל</big>"],
+  ],
+};
 
 // TODO:
 // - Review section labels

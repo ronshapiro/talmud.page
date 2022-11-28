@@ -21,10 +21,12 @@ import {
   sefariaTextTypeTransformation,
 } from "./sefariaTextType";
 import {
-  BIRKAT_HAMAZON_REFS,
   DONT_MAKE_INTO_EXPLANATIONS,
+  HARDCODED_TEXT,
+  HEBREW_TEXT_REPLACEMENTS,
   SEGMENT_SEPERATOR_REF,
   SIDDUR_DEFAULT_MERGE_WITH_NEXT,
+  SIDDUR_IGNORED_COMMENTARIES,
   SIDDUR_IGNORED_FOOTNOTES,
   SIDDUR_IGNORED_REFS,
   SIDDUR_IGNORED_SOURCE_REFS,
@@ -33,6 +35,8 @@ import {
   SIDDUR_REFS_ASHKENAZ,
   SIDDUR_REFS_SEFARD,
   SYNTHETIC_REFS,
+  UNSMALL_REFS,
+  BIRKAT_HAMAZON_REFS,
   MergeWithNext,
   MergeRefsByDefault,
   RefPiece,
@@ -1276,6 +1280,9 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
     } else if (segment.ref === "Siddur Sefard, Weekday Shacharit, Aleinu 3") {
       // eslint-disable-next-line @typescript-eslint/no-use-before-define
       segment.hebrew = boldPrefix(segment.hebrew as string, "עַל כֵּן");
+    } else if (
+      segment.ref === "Siddur Ashkenaz, Weekday, Shacharit, Preparatory Prayers, Sovereignty of Heaven 8") {
+      segment.hebrew = `<small no-hachana>${segment.hebrew}</small>`;
     }
 
     if (ASERET_YIMEI_TESHUVA_REFS.has(segment.ref)
@@ -1285,22 +1292,33 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
       segment.english = aseretYimeiTeshuvaStyle(segment.english as string);
     }
 
-    if (!(segment.ref in SIDDUR_IGNORED_FOOTNOTES)) {
-      return segment;
-    }
-    const footnotesValue = SIDDUR_IGNORED_FOOTNOTES[segment.ref];
-    const footnotes = Array.isArray(footnotesValue) ? footnotesValue : [footnotesValue];
-    for (const footnote of footnotes) {
-      const footnoteTag = `<sup>${footnote}</sup>`;
-      segment.english = (segment.english as string).replace(footnoteTag, "");
-      segment.english = (segment.english as string).replace(`<sup>-${footnote}</sup>`, "");
-      for (const comment of segment.commentary.comments) {
-        if (typeof comment.hebrew === "string" && typeof comment.english === "string"
-          && (comment.hebrew.startsWith(footnoteTag) || comment.english.startsWith(footnoteTag))) {
-          segment.commentary.removeComment(comment);
+    if (segment.ref in SIDDUR_IGNORED_FOOTNOTES) {
+      const footnotesValue = SIDDUR_IGNORED_FOOTNOTES[segment.ref];
+      const footnotes = Array.isArray(footnotesValue) ? footnotesValue : [footnotesValue];
+      for (const footnote of footnotes) {
+        const footnoteTag = `<sup>${footnote}</sup>`;
+        segment.english = (segment.english as string).replace(footnoteTag, "");
+        segment.english = (segment.english as string).replace(`<sup>-${footnote}</sup>`, "");
+        for (const comment of segment.commentary.comments) {
+          if (typeof comment.hebrew === "string" && typeof comment.english === "string"
+            && (comment.hebrew.startsWith(footnoteTag)
+              || comment.english.startsWith(footnoteTag))) {
+            segment.commentary.removeComment(comment);
+          }
         }
       }
     }
+
+    for (const ref of SIDDUR_IGNORED_COMMENTARIES[segment.ref] ?? []) {
+      segment.commentary.removeCommentWithRef(ref);
+    }
+
+    if (segment.ref in HEBREW_TEXT_REPLACEMENTS) {
+      for (const [before, after] of HEBREW_TEXT_REPLACEMENTS[segment.ref]) {
+        segment.hebrew = (segment.hebrew as string).replace(before, after);
+      }
+    }
+
     return segment;
   }
 
@@ -1355,6 +1373,14 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
     }
     if (page === "Psalm 150") {
       segments.slice(-2)[0].commentary.removeCommentWithRef("Shulchan Arukh, Orach Chayim 51:7");
+    }
+    if (page === "Korbanot") {
+      for (const segment of segments) {
+        if (segment.ref === "Exodus 30:7") {
+          segment.hebrew = `וְנֶאֱמַר: ${segment.hebrew}`;
+          segment.english = `As it is said: ${segment.english}`;
+        }
+      }
     }
     return segments;
   }
@@ -1447,6 +1473,15 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
 }
 
 function splitAfter(text: string, endText: string): string[] {
+  if (!text.includes(endText)) {
+    // TODO: this is surely the wrong place to do this. Normalization should probably happen on
+    // all inputs..., but that requires some thought.
+    text = text.normalize("NFD");
+    endText = endText.normalize("NFD");
+  }
+  if (!text.includes(endText)) {
+    throw new Error(`Missing split text: ${text} on ${endText}`);
+  }
   const index = text.indexOf(endText) + endText.length;
   return [text.slice(0, index), text.slice(index)];
 }
@@ -1488,6 +1523,15 @@ function splitAshamnu(hebrew: string, english: string): SplitType {
 }
 
 function siddurSplit(ref: string, hebrew: string, english: string): SplitType {
+  if (ref in HARDCODED_TEXT) {
+    const path = HARDCODED_TEXT[ref];
+    if (!path.includes("{lang}")) {
+      throw new Error(`${path} does not include "{lang}"`);
+    }
+    hebrew = readUtf8(path.replace("{lang}", "hebrew"));
+    english = readUtf8(path.replace("{lang}", "english"));
+  }
+
   if (ref === "Siddur Ashkenaz, Weekday, Shacharit, Pesukei Dezimra, Barukh She'amar 2"
       || ref === "Siddur Sefard, Weekday Shacharit, Hodu 13") {
     return splitSegmentAfter(hebrew, english, "בָּרוּךְ שְׁמוֹ: ", "blessed is His Name. ");
@@ -1495,6 +1539,11 @@ function siddurSplit(ref: string, hebrew: string, english: string): SplitType {
     return splitAshamnu(hebrew, english);
   } else if (ref === "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Vidui and 13 Middot 9") {
     return _.zip(splitRetain(hebrew, /[.:]/), splitRetain(english, /(sinned,|\.)/)) as SplitType;
+  } else if (ref === "Siddur Sefard, Weekday Shacharit, Amidah 123") {
+    const [first, second] = splitSegmentAfter(
+      hebrew, english, "וְקַלְקֵל מַחֲשַׁבְתָּם:", "frustrate their intention.");
+    const [newSecond, third] = splitSegmentAfter(second[0], second[1], ")", ")");
+    return [first, newSecond, third];
   }
 
   return [[hebrew, english]];
@@ -1532,26 +1581,6 @@ function unsmall(text: string): string {
   return text.replace(/<small>/g, "").replace(/<\/small>/g, "");
 }
 
-const UNSMALL_REFS = new Set([
-  "Siddur Sefard, Weekday Shacharit, Amidah 17",
-  "Siddur Sefard, Weekday Shacharit, Amidah 68",
-  "Siddur Sefard, Weekday Shacharit, Amidah 119",
-]);
-
-
-// These still maintain links, even though they entirely replace text.
-const HARDCODED_TEXT: Record<string, string> = {
-  "Siddur Sefard, Weekday Shacharit, Amidah 65": "siddur/sefard/hashiva_shoftenu_{lang}.txt",
-  "Siddur Sefard, Weekday Shacharit, Amidah 71": "siddur/sefard/velamalshinim_{lang}.txt",
-  "Siddur Sefard, Weekday Shacharit, Amidah 73": "siddur/sefard/al_hatzadikim_{lang}.txt",
-  "Siddur Sefard, Weekday Shacharit, Amidah 79": "siddur/sefard/shomea_tefilla_{lang}.txt",
-  "Siddur Sefard, Weekday Shacharit, The Shema 38": "siddur/sefard/tzur_yisrael_{lang}.txt",
-};
-
-const HEBREW_TEXT_REPLACEMENTS: Record<string, SplitType> = {
-  "Siddur Sefard, Weekday Shacharit, Amidah 103": [["וְיִתְרוֹמַם", "וְיִתְרוֹמֵם"]],
-};
-
 class SiddurSefardApiRequestHandler extends LiturgicalApiRequestHandler {
   protected recreateWithLogger(logger: Logger): AbstractApiRequestHandler {
     return new SiddurSefardApiRequestHandler(this.requestMaker, logger);
@@ -1574,19 +1603,6 @@ class SiddurSefardApiRequestHandler extends LiturgicalApiRequestHandler {
     if (UNSMALL_REFS.has(segment.ref)) {
       segment.hebrew = unsmall(segment.hebrew as string);
       segment.english = unsmall(segment.english as string);
-    }
-    if (segment.ref in HARDCODED_TEXT) {
-      const path = HARDCODED_TEXT[segment.ref];
-      if (!path.includes("{lang}")) {
-        throw new Error(`${path} does not include "{lang}"`);
-      }
-      segment.hebrew = readUtf8(path.replace("{lang}", "hebrew"));
-      segment.english = readUtf8(path.replace("{lang}", "english"));
-    }
-    if (segment.ref in HEBREW_TEXT_REPLACEMENTS) {
-      for (const [before, after] of HEBREW_TEXT_REPLACEMENTS[segment.ref]) {
-        segment.hebrew = (segment.hebrew as string).replace(before, after);
-      }
     }
     return segment;
   }

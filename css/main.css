@@ -511,3 +511,7 @@ h2, .title {
     background: var(--mesorat-hashas-purple);
     display: inline-block; /* Creates better cross-line text bolding */
 }
+
+.tzizit-start {
+    color: var(--highlight-blue);
+}

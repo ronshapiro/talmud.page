@@ -18,6 +18,7 @@ interface AmudMetadata {
   amudStart?: string;
   amudEnd?: string;
   range: () => string[];
+  documentTitleOverride?: string;
 }
 
 function validAmudOrUndefined(amud: string | undefined): string | undefined {
@@ -27,20 +28,22 @@ function validAmudOrUndefined(amud: string | undefined): string | undefined {
   return AMUD_REGEX.test(amud) ? amud : undefined;
 }
 
-const HARD_CODED_SECTIONS: Record<string, string[]> = {
-  SiddurAshkenaz: SIDDUR_ASHKENAZ_SECTIONS,
-  SiddurSefard: SIDDUR_SEFARD_SECTIONS,
-  BirkatHamazon: BIRKAT_HAMAZON_SECTIONS,
+const HARD_CODED_SECTIONS: Record<string, [string[], string]> = {
+  SiddurAshkenaz: [SIDDUR_ASHKENAZ_SECTIONS, "Siddur - Ashkenaz"],
+  SiddurSefard: [SIDDUR_SEFARD_SECTIONS, "Siddur - Sefard"],
+  BirkatHamazon: [BIRKAT_HAMAZON_SECTIONS, "Birkat Hamazon"],
 };
 
 const _amudMetadata = (book: string, pathname: string): AmudMetadata => {
   if (book in HARD_CODED_SECTIONS) {
-    const sections = HARD_CODED_SECTIONS[book].map(x => x.replace(/ /g, "_"));
+    const [sectionNames, title] = HARD_CODED_SECTIONS[book];
+    const sections = sectionNames.map(x => x.replace(/ /g, "_"));
     return {
       masechet: book,
       amudStart: sections[0],
       amudEnd: sections.slice(-1)[0],
       range: () => sections,
+      documentTitleOverride: title,
     };
   }
 

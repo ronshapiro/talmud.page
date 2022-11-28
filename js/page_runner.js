@@ -12,6 +12,9 @@ import {serviceWorkerMain} from "./service_worker_registration.ts";
 
 const bookTitleAndRange = () => {
   const metadata = amudMetadata();
+  if (metadata.documentTitleOverride) {
+    return metadata.documentTitleOverride;
+  }
   return metadata.amudStart === metadata.amudEnd
     ? `${metadata.masechet} ${metadata.amudStart}`
     : `${metadata.masechet} ${metadata.amudStart} - ${metadata.amudEnd}`;
