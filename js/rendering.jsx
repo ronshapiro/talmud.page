@@ -636,7 +636,7 @@ class Amud extends Component {
         };
         output.push(
           <Section
-            key={i}
+            key={mergedSections[0].uuid + "+" + (mergedSections.length - 1)}
             sections={mergedSections}
             sectionLabel={sectionLabel}
             toggleMerging={toggleMerging}
