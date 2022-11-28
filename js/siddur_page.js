@@ -61,6 +61,8 @@ class SiddurRenderer extends Renderer {
         next: () => undefined,
         hasPrevious: () => false,
         hasNext: () => false,
+      }, {
+        expandTranslationOnMergedSectionExpansion: true,
       });
   }
 

@@ -414,12 +414,15 @@ function Section({sections, sectionLabel, toggleMerging, isExpanded}) {
   const hiddenHost = useHiddenHost();
   // if this is the hidden host, populate the comments as open always
   const [showingState, setShowingState] = useState(() => {
-    if (hiddenHost) {
-      return {};
+    const state = {};
+    if (isExpanded && context.expandTranslationOnMergedSectionExpansion) {
+      state[sectionLabel] = ["translation"];
     }
-    const fakeState = {};
-    fakeState[sectionLabel] = ["rashi"];
-    return fakeState;
+    if (hiddenHost) {
+      return state;
+    }
+    state[sectionLabel] = ["rashi"];
+    return state;
   });
   const toggleShowing = (prependNew, toggledSectionLabel, commentaryName) => {
     // TODO: reducer?
@@ -499,7 +502,7 @@ function Section({sections, sectionLabel, toggleMerging, isExpanded}) {
       key="gemara"
       id={`${sectionLabel}-gemara`}
       hebrew={createText(hebrews, "hebrew-ref-text")}
-      hebrewDoubleClickListener={hebrewDoubleClickListener}
+      hebrewDoubleClickListener={hebrews.length === 1 ? hebrewDoubleClickListener : undefined}
       english={createText(englishes, "english-ref-text")}
       expandEnglishByDefault={context.expandEnglishByDefault}
       classes={gemaraContainerClasses}
@@ -725,7 +728,8 @@ export class Renderer {
     translationOption,
     wrapTranslations,
     expandEnglishByDefault,
-    navigationExtension) {
+    navigationExtension,
+    options) {
     this._commentaryTypes = commentaryTypes;
     this._isTalmud = isTalmud;
     this._translationOption = translationOption;
@@ -738,6 +742,9 @@ export class Renderer {
       hasPrevious: () => false,
       hasNext: () => false,
     };
+    options = options || {};
+    this.expandTranslationOnMergedSectionExpansion = (
+      options.expandTranslationOnMergedSectionExpansion);
   }
 
   _applyClientSideDataTransformations(amudData) {
@@ -800,6 +807,7 @@ export class Renderer {
       expandEnglishByDefault: this.expandEnglishByDefault,
       hiddenHost,
       ignoredSectionRefs: () => this.ignoredSectionRefs(),
+      expandTranslationOnMergedSectionExpansion: this.expandTranslationOnMergedSectionExpansion,
     };
 
     const hiddenData = [{
