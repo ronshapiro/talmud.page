@@ -7,6 +7,8 @@ import React, {
   useState,
 } from "react";
 import PropTypes from 'prop-types';
+import {animated, useSpring} from "@react-spring/web";
+import {useDrag} from "@use-gesture/react";
 import isEmptyText from "./is_empty_text.ts";
 import {$} from "./jquery";
 import {onClickKeyListener} from "./key_clicks";
@@ -190,6 +192,34 @@ const calculateLineCount = (node) => {
   }
 };
 
+function Swipeable({children, onSwiped}) {
+  const [{x}, api] = useSpring(() => ({x: 0}));
+  const bind = useDrag(({offset: [newX], cancel, last, canceled}) => {
+    api.start({x: newX});
+    if (Math.abs(newX) > 300 && last && !canceled) {
+      onSwiped();
+      cancel();
+    } else if (last) {
+      api.start({x: 0});
+    }
+  }, {
+    // This effectively disables the feature on Desktop, which is probably fine as the X icon still
+    // exists. We could get fancy by trying to detect the type of browser and set this value
+    // accordingly... though not sure it's worth the complexity.
+    pointer: {touch: true},
+  });
+  return (
+    // eslint-disable-next-line react/jsx-props-no-spreading
+    <animated.div {...bind()} style={{x}}>
+      {children}
+    </animated.div>
+  );
+}
+Swipeable.propTypes = {
+  children: PropTypes.object.isRequired,
+  onSwiped: PropTypes.func.isRequired,
+};
+
 function TableRow(props) {
   const {
     hebrew,
@@ -301,7 +331,7 @@ function TableRow(props) {
         />);
   }
 
-  return (
+  const row = (
     <div
       id={id}
       className={["table-row"].concat(classes).join(" ")}
@@ -311,6 +341,11 @@ function TableRow(props) {
       {cells}
     </div>
   );
+
+  if (onUnexpand) {
+    return <Swipeable onSwiped={onUnexpand}>{row}</Swipeable>;
+  }
+  return row;
 }
 TableRow.propTypes = {
   hebrew: PropTypes.node,
