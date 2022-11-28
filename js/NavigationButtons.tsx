@@ -2,6 +2,7 @@ import * as React from "react";
 import * as PropTypes from 'prop-types';
 import {disableBackButtonProtection} from "./block_back_button";
 import {$} from "./jquery";
+import {onClickKeyListener} from "./key_clicks";
 import {NavigationExtension} from "./NavigationExtension";
 import Modal from "./Modal";
 import {NullaryFunction} from "./types";
@@ -44,8 +45,6 @@ interface NavigationButtonRowProps {
   defaultEditText: NullaryFunction<string>;
 }
 
-const VALID_CLICK_KEY_CODES = new Set(["Enter", " "]);
-
 const NavigationButtonRow = (props: NavigationButtonRowProps) => {
   const {
     isNext,
@@ -74,7 +73,7 @@ const NavigationButtonRow = (props: NavigationButtonRowProps) => {
       <span
         className={buttonClasses()}
         onClick={() => doLoad()}
-        onKeyUp={(e: any) => VALID_CLICK_KEY_CODES.has(e.key) && doLoad()}
+        onKeyUp={onClickKeyListener(doLoad)}
         role="button"
         tabIndex={0}>
         {text}

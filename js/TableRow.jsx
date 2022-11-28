@@ -9,6 +9,7 @@ import React, {
 import PropTypes from 'prop-types';
 import isEmptyText from "./is_empty_text.ts";
 import {$} from "./jquery";
+import {onClickKeyListener} from "./key_clicks";
 import {ConfigurationContext, useConfiguration, useHiddenHost} from "./context.js";
 
 const brTagsCache = {};
@@ -52,6 +53,29 @@ CellText.propTypes = {
   onDoubleClick: PropTypes.func,
   sefariaRef: PropTypes.string,
   languageClass: PropTypes.string,
+};
+
+function CloseButton({onClose}) {
+  return (
+    <i
+      style={{
+        position: "relative",
+        top: "6px",
+        paddingInlineEnd: "15px",
+      }}
+      className="material-icons"
+      onClick={() => onClose()}
+      onKeyUp={onClickKeyListener(onClose)}
+      tabIndex={0}
+      role="button"
+    >
+      cancel
+    </i>
+  );
+}
+
+CloseButton.propTypes = {
+  onClose: PropTypes.func.isRequired,
 };
 
 class Cell extends Component {
@@ -178,6 +202,7 @@ function TableRow(props) {
     link,
     expandEnglishByDefault,
     indicator,
+    onUnexpand,
   } = props;
 
   const [isEnglishExpanded, setIsEnglishExpanded] = (
@@ -246,10 +271,15 @@ function TableRow(props) {
       </span>);
   }
   if (!isEmptyText(hebrew)) {
+    const contents = (
+      onUnexpand
+        // eslint-disable-next-line react/jsx-one-expression-per-line
+        ? <>{hebrew}<CloseButton onClose={() => onUnexpand()} /></>
+        : hebrew);
     cells.push(
       <HebrewCell
         key="hebrew"
-        text={hebrew}
+        text={contents}
         classes={cellClasses()}
         hebrewDoubleClickListener={hebrewDoubleClickListener}
         isEnglishExpanded={isEnglishExpanded}
@@ -294,6 +324,7 @@ TableRow.propTypes = {
   isHiddenRow: PropTypes.bool,
   expandEnglishByDefault: PropTypes.bool,
   indicator: PropTypes.bool,
+  onUnexpand: PropTypes.func,
 };
 
 export default TableRow;

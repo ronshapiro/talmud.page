@@ -482,13 +482,14 @@ function Section({sections, sectionLabel, toggleMerging, isExpanded}) {
     const elements = [];
     for (let i = 0; i < texts.length; i++) {
       const {ref, uuid} = sections[i];
+      const onDoubleClick = texts.length !== 1 ? () => toggleMerging(uuid) : undefined;
       elements.push(
         // TODO: consider another gesture so that the double clicking is not overloaded.
         <CellText
           text={texts[i]}
           languageClass={languageClass}
           key={`section-part-${i}`}
-          onDoubleClick={() => toggleMerging(uuid)}
+          onDoubleClick={onDoubleClick}
           sefariaRef={ref} />);
       if (i + 1 < texts.length) {
         elements.push(<span key={`section-part-${i}-space`}> </span>);
@@ -506,7 +507,10 @@ function Section({sections, sectionLabel, toggleMerging, isExpanded}) {
       english={createText(englishes, "english-ref-text")}
       expandEnglishByDefault={context.expandEnglishByDefault}
       classes={gemaraContainerClasses}
-      indicator={isExpanded} />);
+      indicator={isExpanded}
+      onUnexpand={isExpanded ? () => toggleMerging(sections[0].uuid) : undefined}
+    />,
+  );
 
   const commentary = mergeCommentaries(sections);
   if (commentary) {
