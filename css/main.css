@@ -512,6 +512,11 @@ h2, .title {
     display: inline-block; /* Creates better cross-line text bolding */
 }
 
+.aseret-yimei-teshuva-word {
+    color: var(--highlight-gray);
+    background: var(--mesorat-hashas-purple);
+}
+
 .tzizit-start {
     color: var(--highlight-blue);
 }

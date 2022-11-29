@@ -234,6 +234,13 @@ onceDocumentReady.execute(() => {
   new ApiCache().getAndUpdate(`api/WeekdayTorah/${endpoint}`).then(response => {
     renderer.injectTorahPortion(response);
   });
+
+  const classToHide = (
+    today.isAseresYemeiTeshuva() ? "non-aseret-yimei-teshuva" : "aseret-yimei-teshuva-word");
+  const style = document.createElement("style");
+  style.type = "text/css";
+  style.innerHTML = `.${classToHide} { display: none; }`;
+  document.head.append(style);
 });
 
 new Runner(renderer, driveClient, "siddur").main();

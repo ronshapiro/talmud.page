@@ -777,6 +777,11 @@ export const HEBREW_TEXT_REPLACEMENTS: Record<string, [string, string][]> = {
   "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Blessing after Shema 9": [
     ["צוּר יִשְׂרָאֵל", "<big>צוּר יִשְׂרָאֵל</big>"],
   ],
+  "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Concluding Passage 3": [
+    [
+      "עֹשֶׂה (<small>בעשי\"ת</small> הַשָּׁלוֹם) שָׁלוֹם",
+      `עֹשֶׂה <span class="aseret-yimei-teshuva-word">הַשָּׁלוֹם</span> <span class="non-aseret-yimei-teshuva">שָׁלוֹם</span>`],
+  ],
 };
 
 // TODO:
