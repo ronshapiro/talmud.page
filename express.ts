@@ -26,6 +26,7 @@ import {EscapeHtmlHighlightCorrections} from "./source_formatting/escape_html_co
 import {htmlEscape} from "./html_escape";
 import {ConsoleLogger, Timer} from "./logger";
 import {PromiseChain} from "./js/promises";
+import {Sitemap} from "./robots";
 import {jsonSize} from "./util/json_size";
 import {writeJson} from "./util/json_files";
 import {getWeekdayReading} from "./weekday_parshiot";
@@ -199,6 +200,7 @@ app.post("/view_daf", (req, res) => {
 });
 
 app.get("/preferences", (req, res) => res.render("preferences.html", {bookTitle: "Berakhot"}));
+app.get("/prefs", (req, res) => res.render("preferences.html", {bookTitle: "Berakhot"}));
 app.get(
   "/manifest.json",
   (req, res) => sendLazyStaticFile(res, "static/progressive_webapp_manifest.json"));
@@ -418,6 +420,19 @@ app.get("/api/WeekdayTorah/:year/:month/:day/:inIsrael", (req, res) => {
 
 app.get("/draw", (req, res) => res.render("draw.html"));
 app.get("/draw/image/*", (req, res) => res.sendFile("draw_images/1495_300ppi.jpg"));
+
+app.get("/robots.txt", (req, res) => {
+  res.status(200).type("txt").send(`User-agent: *
+Allow: /
+
+Sitemap: https://${req.hostname}/sitemap.xml`);
+});
+
+app.get('/sitemap.xml', (req, res) => {
+  res.status(200)
+    .header('Content-Type', 'application/xml')
+    .send(new Sitemap(`https://${req.hostname}`).generate());
+});
 
 if (fs.existsSync("sendgrid_api_key")) {
   sendgrid.setApiKey(fs.readFileSync("sendgrid_api_key", {encoding: "utf-8"}));

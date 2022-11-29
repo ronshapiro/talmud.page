@@ -1152,6 +1152,7 @@ export const books = new BookIndex([
     end: "36",
   }),
   new LiturgicalBook({
+    // If this is changed to add Mincha/other things, make sure to update sitemap logic
     canonicalName: "SiddurAshkenaz",
     hebrewName: "סידור אשכנז",
     aliases: [],
