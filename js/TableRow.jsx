@@ -196,7 +196,7 @@ function Swipeable({children, onSwiped}) {
   const [{x}, api] = useSpring(() => ({x: 0}));
   const bind = useDrag(({offset: [newX], cancel, last, canceled}) => {
     api.start({x: newX});
-    if (Math.abs(newX) > 300 && last && !canceled) {
+    if (Math.abs(newX) > 150 && last && !canceled) {
       onSwiped();
       cancel();
     } else if (last) {
