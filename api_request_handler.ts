@@ -24,6 +24,7 @@ import {
   DONT_MAKE_INTO_EXPLANATIONS,
   HARDCODED_TEXT,
   HEBREW_TEXT_REPLACEMENTS,
+  REALLY_BIG_TEXT_REFS,
   SEGMENT_SEPERATOR_REF,
   SIDDUR_DEFAULT_MERGE_WITH_NEXT,
   SIDDUR_IGNORED_COMMENTARIES,
@@ -1603,6 +1604,9 @@ class SiddurSefardApiRequestHandler extends LiturgicalApiRequestHandler {
     if (UNSMALL_REFS.has(segment.ref)) {
       segment.hebrew = unsmall(segment.hebrew as string);
       segment.english = unsmall(segment.english as string);
+    }
+    if (REALLY_BIG_TEXT_REFS.has(segment.ref)) {
+      segment.hebrew = `<span class="really-big-text">${segment.hebrew}</span>`;
     }
     return segment;
   }

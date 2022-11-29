@@ -754,6 +754,10 @@ export const UNSMALL_REFS = new Set([
   "Siddur Sefard, Weekday Shacharit, Amidah 119",
 ]);
 
+export const REALLY_BIG_TEXT_REFS = new Set([
+  "Siddur Ashkenaz, Weekday, Shacharit, Preparatory Prayers, Sovereignty of Heaven 5",
+]);
+
 
 // These still maintain links, even though they entirely replace text.
 export const HARDCODED_TEXT: Record<string, string> = {
@@ -781,6 +785,12 @@ export const HEBREW_TEXT_REPLACEMENTS: Record<string, [string, string][]> = {
     [
       "עֹשֶׂה (<small>בעשי\"ת</small> הַשָּׁלוֹם) שָׁלוֹם",
       `עֹשֶׂה <span class="aseret-yimei-teshuva-word">הַשָּׁלוֹם</span> <span class="non-aseret-yimei-teshuva">שָׁלוֹם</span>`],
+  ],
+  "Siddur Sefard, Weekday Shacharit, Morning Prayer 8": [
+    ["אַשְׁרֵֽינוּ כְּשֶׁאָֽנוּ מַשְׁכִּימִים", "אַשְׁרֵֽינוּ שֶׁאָֽנוּ מַשְׁכִּימִים"],
+  ],
+  "Siddur Sefard, Weekday Shacharit, Amidah 60": [
+    ["וְשַׂבְּעֵֽנוּ מִטּוּבֶֽךָ", "וְשַׂבְּעֵֽנוּ מִטּוּבָהּ"],
   ],
 };
 
