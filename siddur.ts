@@ -755,6 +755,7 @@ export const UNSMALL_REFS = new Set([
 ]);
 
 export const REALLY_BIG_TEXT_REFS = new Set([
+  "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Shema 3",
   "Siddur Ashkenaz, Weekday, Shacharit, Preparatory Prayers, Sovereignty of Heaven 5",
 ]);
 
@@ -792,7 +793,34 @@ export const HEBREW_TEXT_REPLACEMENTS: Record<string, [string, string][]> = {
   "Siddur Sefard, Weekday Shacharit, Amidah 60": [
     ["וְשַׂבְּעֵֽנוּ מִטּוּבֶֽךָ", "וְשַׂבְּעֵֽנוּ מִטּוּבָהּ"],
   ],
+  "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Vidui and 13 Middot 8": [
+    [
+      "<b>יְהֺוָה יְהֺוָה אֵל רַחוּם וְחַנּוּן אֶֽרֶךְ אַפַּֽיִם וְרַב־חֶֽסֶד וֶאֱמֶת: נֹצֵר חֶֽסֶד לָאֲלָפִים נֹשֵׂא עָוֹן וָפֶֽשַׁע וְחַטָּאָה וְנַקֵּה:</b>",
+      `<span class="really-big-text">יְהֹוָ֣ה ׀ יְהֹוָ֔ה אֵ֥ל רַח֖וּם וְחַנּ֑וּן אֶ֥רֶךְ אַפַּ֖יִם וְרַב־חֶ֥סֶד וֶאֱמֶֽת׃ נֹצֵ֥ר חֶ֙סֶד֙ לָאֲלָפִ֔ים נֹשֵׂ֥א עָוֺ֛ן וָפֶ֖שַׁע וְחַטָּאָ֑ה וְנַקֵּה֙׃</span>`,
+    ],
+  ],
+  "Siddur Sefard, Weekday Shacharit, Amidah 41": [
+    ["בִּינָה: חָנֵּֽנוּ", "בִּינָה, חָנֵּֽנוּ"],
+  ],
+  "Siddur Sefard, Weekday Shacharit, The Shema 10": [
+    ["וְאוֹמְרִים בְּיִרְאָה", "וְאוֹמְרִים בְּיִרְאָה:"],
+  ],
 };
+
+export const KEEP_TROPE_REFS = new Set([
+  ..._.range(5, 10).map(x => `Deuteronomy 6:${x}`),
+  ..._.range(13, 22).map(x => `Deuteronomy 11:${x}`),
+  ..._.range(37, 42).map(x => `Numbers 15:${x}`),
+  "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Vidui and 13 Middot 8",
+]);
+
+export const SMALLIFY_REFS = new Set([
+  "Siddur Ashkenaz, Weekday, Shacharit, Preparatory Prayers, Sovereignty of Heaven 8",
+  "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Patriarchs 2",
+  "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Uva Letzion 4",
+  "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Uva Letzion 6",
+  "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Uva Letzion 8",
+]);
 
 // TODO:
 // - Review section labels

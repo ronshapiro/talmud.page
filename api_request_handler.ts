@@ -24,6 +24,7 @@ import {
   DONT_MAKE_INTO_EXPLANATIONS,
   HARDCODED_TEXT,
   HEBREW_TEXT_REPLACEMENTS,
+  KEEP_TROPE_REFS,
   REALLY_BIG_TEXT_REFS,
   SEGMENT_SEPERATOR_REF,
   SIDDUR_DEFAULT_MERGE_WITH_NEXT,
@@ -35,6 +36,7 @@ import {
   SIDDUR_MERGE_PAIRS,
   SIDDUR_REFS_ASHKENAZ,
   SIDDUR_REFS_SEFARD,
+  SMALLIFY_REFS,
   SYNTHETIC_REFS,
   UNSMALL_REFS,
   BIRKAT_HAMAZON_REFS,
@@ -534,11 +536,13 @@ export abstract class AbstractApiRequestHandler {
     return text.replace(LOTS_OF_NON_BREAKING_SPACES, "<br>");
   }
 
-  protected translateHebrewText(text: sefaria.TextType): sefaria.TextType {
+  // eslint-disable-next-line  @typescript-eslint/no-unused-vars
+  protected translateHebrewText(text: sefaria.TextType, ref: string): sefaria.TextType {
     return sefariaTextTypeTransformation(this.replaceLotsOfNonBreakingSpacesWithNewlines)(text);
   }
 
-  protected translateEnglishText(text: sefaria.TextType): sefaria.TextType {
+  // eslint-disable-next-line  @typescript-eslint/no-unused-vars
+  protected translateEnglishText(text: sefaria.TextType, ref: string): sefaria.TextType {
     return standardEnglishTransformations(text);
   }
 
@@ -916,8 +920,8 @@ export abstract class AbstractApiRequestHandler {
           {he: currentHebrew, text: currentEnglish, ref});
         const segment = new InternalSegment({
           ref,
-          hebrew: this.translateHebrewText(footnotesResult.comment.he),
-          english: this.translateEnglishText(footnotesResult.comment.text),
+          hebrew: this.translateHebrewText(footnotesResult.comment.he, ref),
+          english: this.translateEnglishText(footnotesResult.comment.text, ref),
         });
         this.addComments(ref, ref, segment.commentary, linkGraph, {count: 0});
         for (const footnote of footnotesResult.footnotes) {
@@ -1242,14 +1246,24 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
   }
 
   stripWeirdHebrew(hebrew: string): string {
-    return stripHebrewNonlettersOrVowels(
-      hebrew
-        .replace(/\s?<span class="mam-spi-pe">{פ}<\/span>(<br ?\/?>)?/g, "")
-        .replace(/\s?<span class="mam-spi-samekh">{ס}<\/span>\s*/g, ""));
+    return hebrew
+      .replace(/\s?<span class="mam-spi-pe">{פ}<\/span>(<br ?\/?>)?/g, "")
+      .replace(/\s?<span class="mam-spi-samekh">{ס}<\/span>\s*/g, "");
   }
 
-  protected translateHebrewText(text: sefaria.TextType): sefaria.TextType {
-    return sefariaTextTypeTransformation(this.stripWeirdHebrew)(super.translateHebrewText(text));
+  protected translateHebrewText(text: sefaria.TextType, ref: string): sefaria.TextType {
+    const transformations = [
+      (t: sefaria.TextType) => super.translateHebrewText(t, ref),
+      sefariaTextTypeTransformation(this.stripWeirdHebrew),
+    ];
+    if (!KEEP_TROPE_REFS.has(ref)) {
+      transformations.push(sefariaTextTypeTransformation(stripHebrewNonlettersOrVowels));
+    }
+
+    for (const transformation of transformations) {
+      text = transformation(text);
+    }
+    return text;
   }
 
   protected applicableCommentaryNames(): string[] {
@@ -1281,8 +1295,7 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
     } else if (segment.ref === "Siddur Sefard, Weekday Shacharit, Aleinu 3") {
       // eslint-disable-next-line @typescript-eslint/no-use-before-define
       segment.hebrew = boldPrefix(segment.hebrew as string, "עַל כֵּן");
-    } else if (
-      segment.ref === "Siddur Ashkenaz, Weekday, Shacharit, Preparatory Prayers, Sovereignty of Heaven 8") {
+    } else if (SMALLIFY_REFS.has(segment.ref)) {
       segment.hebrew = `<small no-hachana>${segment.hebrew}</small>`;
     }
 
@@ -1533,8 +1546,9 @@ function siddurSplit(ref: string, hebrew: string, english: string): SplitType {
     english = readUtf8(path.replace("{lang}", "english"));
   }
 
-  if (ref === "Siddur Ashkenaz, Weekday, Shacharit, Pesukei Dezimra, Barukh She'amar 2"
-      || ref === "Siddur Sefard, Weekday Shacharit, Hodu 13") {
+  if (ref === "Siddur Ashkenaz, Weekday, Shacharit, Pesukei Dezimra, Barukh She'amar 2") {
+    return splitSegmentAfter(hebrew, english, "בָּרוּךְ שְׁמוֹ. ", "blessed is His Name. ");
+  } else if (ref === "Siddur Sefard, Weekday Shacharit, Hodu 13") {
     return splitSegmentAfter(hebrew, english, "בָּרוּךְ שְׁמוֹ: ", "blessed is His Name. ");
   } else if (ref === "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Vidui and 13 Middot 3") {
     return splitAshamnu(hebrew, english);

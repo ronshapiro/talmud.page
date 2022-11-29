@@ -154,7 +154,7 @@ class SiddurRenderer extends Renderer {
     }
 
     if (!hebrewDay.getJewishMonth() !== 6
-        && !(hebrewDay.getJewishMonth() !== 7 && hebrewDay.getJewishDayOfMonth() <= 22)) {
+        && !(hebrewDay.getJewishMonth() === 7 && hebrewDay.getJewishDayOfMonth() <= 22)) {
       ignored.push(
         "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, LeDavid 1",
         ...refRanges("Psalms 27:", 1, 14));
