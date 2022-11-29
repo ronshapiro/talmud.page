@@ -75,8 +75,8 @@ class SiddurRenderer extends Renderer {
         section => section.ref === INJECT_WEEKDAY_TORAH_PORTION_AFTER_REF) + 1;
       if (splitPoint !== 0) {
         let newSections = torahSection.sections.slice(0, splitPoint);
-        for (let i = 0; i < this.injectedTorahPortions.aliyot.length; i++) {
-          const aliya = this.injectedTorahPortions.aliyot[i];
+        for (let i = 0; i < this.injectedTorahPortions.length; i++) {
+          const aliya = this.injectedTorahPortions[i];
           const hebrewIndex = ["א", "ב", "ג", "ד"][i];
           newSections.push({
             commentary: {},
@@ -232,7 +232,7 @@ onceDocumentReady.execute(() => {
     today.getInIsrael(),
   ].join("/");
   new ApiCache().getAndUpdate(`api/WeekdayTorah/${endpoint}`).then(response => {
-    renderer.injectTorahPortion(response);
+    renderer.injectTorahPortion(response.aliyot);
   });
 
   const classToHide = (
