@@ -395,7 +395,11 @@ const onSelectionChange = () => {
   }
 
   const hideRef = (
-    window.location.hostname !== "localhost" && window.location.pathname.startsWith("/Siddur"));
+    window.location.hostname !== "localhost" && (
+      window.location.pathname.startsWith("/Siddur")
+        || window.location.pathname.startsWith("/BirkatHamazon")
+    )
+  );
   snackbars.textSelection.show(hideRef ? "" : ref, buttons);
 };
 
