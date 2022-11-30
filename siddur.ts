@@ -746,6 +746,9 @@ export const SIDDUR_IGNORED_COMMENTARIES: Record<string, string[]> = {
     "Deuteronomy 6:4-9",
     "Deuteronomy 6:5-9",
   ],
+  "Siddur Sefard, Weekday Shacharit, Morning Prayer 14": [
+    "Deuteronomy 10:17",
+  ],
 };
 
 export const UNSMALL_REFS = new Set([
@@ -804,6 +807,24 @@ export const HEBREW_TEXT_REPLACEMENTS: Record<string, [string, string][]> = {
   ],
   "Siddur Sefard, Weekday Shacharit, The Shema 10": [
     ["וְאוֹמְרִים בְּיִרְאָה", "וְאוֹמְרִים בְּיִרְאָה:"],
+  ],
+  "Siddur Sefard, Weekday Shacharit, Yishtabach 2": [
+    ["(לְעוֹלָם וָעֶד) ", ""],
+  ],
+  "Siddur Sefard, Weekday Shacharit, Morning Prayer 14": [
+    ["מַה־שֶּׁכָּתוּב, ", ""],
+    ["כָּאָמוּר,", "כָּאָמוּר:"],
+    ["ומַה תִּפְעָל", "וּמַה תִּפְעָל"],
+  ],
+};
+
+export const ENGLISH_TEXT_REPLACEMENTS: Record<string, [string, string][]> = {
+  "Siddur Sefard, Weekday Shacharit, Yishtabach 2": [
+    ["(forever,) ", ""],
+  ],
+  "Siddur Sefard, Weekday Shacharit, Morning Prayer 14": [
+    ["that which is written: ", ""],
+    ["Zephaniah, your prophet", "Zephaniah your prophet,"],
   ],
 };
 

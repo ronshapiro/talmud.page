@@ -22,6 +22,7 @@ import {
 } from "./sefariaTextType";
 import {
   DONT_MAKE_INTO_EXPLANATIONS,
+  ENGLISH_TEXT_REPLACEMENTS,
   HARDCODED_TEXT,
   HEBREW_TEXT_REPLACEMENTS,
   KEEP_TROPE_REFS,
@@ -1214,6 +1215,10 @@ function aseretYimeiTeshuvaStyle(text: string): string {
   return `<span class="aseret-yimei-teshuva">${text}</span>`;
 }
 
+function unsmall(text: string): string {
+  return text.replace(/<small>/g, "").replace(/<\/small>/g, "");
+}
+
 abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
   abstract refRewritingMap(): Record<string, RefPiece[]>;
   abstract book(): Book;
@@ -1278,24 +1283,23 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
   protected postProcessSegment(segment: InternalSegment): InternalSegment {
     if (segment.ref === "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Vidui and 13 Middot 8") {
       segment.hebrew = `<b>${segment.hebrew}</b>`;
-    }
-    if (segment.ref === "Siddur Sefard, Weekday Shacharit, Amidah 60") {
+    } else if (segment.ref === "Siddur Sefard, Weekday Shacharit, Amidah 60") {
       // TODO: check is this fix has been applied
       segment.hebrew = (segment.hebrew as string).replace("הַשָׁנִים בָּרוּךְ", "הַשָׁנִים. בָּרוּךְ");
-    }
-    if (segment.ref === "Siddur Sefard, Weekday Shacharit, The Shema 16") {
+    } else if (segment.ref === "Siddur Sefard, Weekday Shacharit, The Shema 16") {
       const start = "רַחֵם עָלֵֽינוּ";
       const pieces = start.split(" ");
       const replacement = [pieces[0], "נָא", pieces[1]].join(" ");
       segment.hebrew = (segment.hebrew as string).replace(start, replacement);
-    }
-    if (segment.ref === "Siddur Sefard, Weekday Shacharit, Aleinu 2") {
+    } else if (segment.ref === "Siddur Sefard, Weekday Shacharit, Aleinu 2") {
       // eslint-disable-next-line @typescript-eslint/no-use-before-define
       segment.hebrew = boldPrefix(segment.hebrew as string, "עָלֵֽינוּ לְשַׁבֵּֽחַ");
     } else if (segment.ref === "Siddur Sefard, Weekday Shacharit, Aleinu 3") {
       // eslint-disable-next-line @typescript-eslint/no-use-before-define
       segment.hebrew = boldPrefix(segment.hebrew as string, "עַל כֵּן");
-    } else if (SMALLIFY_REFS.has(segment.ref)) {
+    }
+
+    if (SMALLIFY_REFS.has(segment.ref)) {
       segment.hebrew = `<small no-hachana>${segment.hebrew}</small>`;
     }
 
@@ -1327,10 +1331,23 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
       segment.commentary.removeCommentWithRef(ref);
     }
 
+    if (segment.ref in ENGLISH_TEXT_REPLACEMENTS) {
+      for (const [before, after] of ENGLISH_TEXT_REPLACEMENTS[segment.ref]) {
+        segment.english = (segment.english as string).replace(before, after);
+      }
+    }
     if (segment.ref in HEBREW_TEXT_REPLACEMENTS) {
       for (const [before, after] of HEBREW_TEXT_REPLACEMENTS[segment.ref]) {
         segment.hebrew = (segment.hebrew as string).replace(before, after);
       }
+    }
+
+    if (UNSMALL_REFS.has(segment.ref)) {
+      segment.hebrew = unsmall(segment.hebrew as string);
+      segment.english = unsmall(segment.english as string);
+    }
+    if (REALLY_BIG_TEXT_REFS.has(segment.ref)) {
+      segment.hebrew = `<span class="really-big-text">${segment.hebrew}</span>`;
     }
 
     return segment;
@@ -1393,6 +1410,44 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
         if (segment.ref === "Exodus 30:7") {
           segment.hebrew = `וְנֶאֱמַר: ${segment.hebrew}`;
           segment.english = `As it is said: ${segment.english}`;
+        }
+      }
+    }
+    if (page === "Hodu") {
+      let i = 0;
+      for (const segment of segments) {
+        if (segment.ref === "Siddur Sefard, Weekday Shacharit, Hodu 9") {
+          if (i !== 1) {
+            segment.commentary.removeCommentWithRef("Exodus 15:18");
+          }
+          if (i !== 2) {
+            segment.commentary.removeCommentWithRef("Zechariah 14:9");
+          }
+          i += 1;
+        }
+      }
+    }
+    if (page === "Sovereignty of Heaven") {
+      let i = 0;
+      for (const segment of segments) {
+        if ([
+          "Siddur Ashkenaz, Weekday, Shacharit, Preparatory Prayers, Sovereignty of Heaven 10",
+          "Siddur Sefard, Weekday Shacharit, Morning Prayer 14",
+        ].includes(segment.ref)) {
+          if (i === 0) {
+            if (segment.ref.includes("Sefard")) {
+              segment.hebrew = (segment.hebrew as string) + ":";
+              segment.english = (segment.english as string) + ".";
+            }
+            segment.commentary.removeCommentWithRef("Zephaniah 3:20");
+          } else {
+            segment.commentary.removeCommentWithRef("Isaiah 44:6");
+            segment.commentary.removeCommentWithRef("Isaiah 11:12");
+            segment.commentary.removeCommentWithRef("Isaiah 37:16");
+            segment.commentary.removeCommentWithRef("II Kings 19:15");
+          }
+          segment.commentary.removeCommentWithRef("II Samuel 9:7");
+          i += 1;
         }
       }
     }
@@ -1559,6 +1614,17 @@ function siddurSplit(ref: string, hebrew: string, english: string): SplitType {
       hebrew, english, "וְקַלְקֵל מַחֲשַׁבְתָּם:", "frustrate their intention.");
     const [newSecond, third] = splitSegmentAfter(second[0], second[1], ")", ")");
     return [first, newSecond, third];
+  } else if (ref === "Siddur Sefard, Weekday Shacharit, Hodu 9") {
+    const [first, second] = splitSegmentAfter(hebrew, english, ":", ".");
+    first[0] += "</b>";
+    const [newSecond, third] = splitSegmentAfter(second[0], second[1], ":</b>", ".");
+    newSecond[0] = "<b>" + newSecond[0];
+    return [first, newSecond, third];
+  } else if (ref === "Siddur Sefard, Weekday Shacharit, Morning Prayer 14") {
+    return splitSegmentAfter(hebrew, english, "ומַה תִּפְעָל", "and what are you making");
+  } else if (
+    ref === "Siddur Ashkenaz, Weekday, Shacharit, Preparatory Prayers, Sovereignty of Heaven 10") {
+    return splitSegmentAfter(hebrew, english, "מַה תַּעֲשֶׂה.", "“What are You doing?”");
   }
 
   return [[hebrew, english]];
@@ -1592,10 +1658,6 @@ class SiddurAshkenazApiRequestHandler extends LiturgicalApiRequestHandler {
   }
 }
 
-function unsmall(text: string): string {
-  return text.replace(/<small>/g, "").replace(/<\/small>/g, "");
-}
-
 class SiddurSefardApiRequestHandler extends LiturgicalApiRequestHandler {
   protected recreateWithLogger(logger: Logger): AbstractApiRequestHandler {
     return new SiddurSefardApiRequestHandler(this.requestMaker, logger);
@@ -1611,18 +1673,6 @@ class SiddurSefardApiRequestHandler extends LiturgicalApiRequestHandler {
 
   protected maybeSplit(ref: string, hebrew: string, english: string): SplitType {
     return siddurSplit(ref, hebrew, english);
-  }
-
-  protected postProcessSegment(segment: InternalSegment): InternalSegment {
-    segment = super.postProcessSegment(segment);
-    if (UNSMALL_REFS.has(segment.ref)) {
-      segment.hebrew = unsmall(segment.hebrew as string);
-      segment.english = unsmall(segment.english as string);
-    }
-    if (REALLY_BIG_TEXT_REFS.has(segment.ref)) {
-      segment.hebrew = `<span class="really-big-text">${segment.hebrew}</span>`;
-    }
-    return segment;
   }
 }
 
