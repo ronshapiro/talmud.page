@@ -1220,6 +1220,31 @@ function unsmall(text: string): string {
   return text.replace(/<small>/g, "").replace(/<\/small>/g, "");
 }
 
+function createAnnenuSegment() {
+  const segment = new InternalSegment({
+    hebrew: readUtf8("siddur/annenu.txt"),
+    english: "",
+    ref: "tp::Annenu",
+  });
+  segment.commentary.addComment(Comment.create(
+    {
+      sourceRef: "Isaiah 65:24",
+      sourceHeRef: "ישעיהו סה:כב",
+      ref: "Isaiah 65:24",
+      anchorRef: "Isaiah 65:24",
+      anchorRefExpanded: ["Isaiah 65:24"],
+      versionTitle: "::injected::",
+    }, {
+      ref: "Isaiah 65:24",
+      he: "וְהָיָ֥ה טֶֽרֶם־יִקְרָ֖אוּ וַאֲנִ֣י אֶעֱנֶ֑ה ע֛וֹד הֵ֥ם מְדַבְּרִ֖ים וַאֲנִ֥י אֶשְׁמָֽע׃",
+      text: "Before they pray, I will answer; While they are still speaking, I will respond.",
+    },
+    "Verses",
+    consoleLogger));
+  segment.steinsaltz_start_of_sugya = true;
+  return segment;
+}
+
 abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
   abstract refRewritingMap(): Record<string, RefPiece[]>;
   abstract book(): Book;
@@ -1380,13 +1405,7 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
     segments = segments.flatMap(segment => {
       const result = [segment];
       if (ANNENU_PARENT_REFS.has(segment.ref)) {
-        const annenu = new InternalSegment({
-          hebrew: readUtf8("siddur/annenu.txt"),
-          english: "",
-          ref: "tp::Annenu",
-        });
-        annenu.steinsaltz_start_of_sugya = true;
-        result.push(annenu);
+        result.push(createAnnenuSegment());
       }
       return result;
     });

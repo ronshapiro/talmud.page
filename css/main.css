@@ -506,7 +506,7 @@ h2, .title {
     transform: translate(-50%, -50%);
 }
 
-.aseret-yimei-teshuva {
+.aseret-yimei-teshuva, .annenu {
     color: var(--highlight-gray);
     background: var(--mesorat-hashas-purple);
     display: inline-block; /* Creates better cross-line text bolding */

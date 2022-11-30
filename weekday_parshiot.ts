@@ -327,7 +327,7 @@ const FAST_DAYS = [
   "Exodus 32:11-14",
   "Exodus 34:1-3",
   "Exodus 34:4-10",
-  "Isaiah 55:6-56-8",
+  "Isaiah 55:6-56:8",
 ];
 
 const TISHA_BAV = [

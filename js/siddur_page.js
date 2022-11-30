@@ -78,9 +78,13 @@ class SiddurRenderer extends Renderer {
         for (let i = 0; i < this.injectedTorahPortions.length; i++) {
           const aliya = this.injectedTorahPortions[i];
           const hebrewIndex = ["א", "ב", "ג", "ד"][i];
+          const title = (
+            getJewishDate().isTaanis() && i === 3
+              ? "הפטרה"
+              : `עליה ${hebrewIndex}'`);
           newSections.push({
             commentary: {},
-            he: `<strong>עליה ${hebrewIndex}'</strong>`,
+            he: `<strong>${title}</strong>`,
             en: "",
             ref: `synthetic-aliyah-${i + 1}`,
             steinsaltz_start_of_sugya: true,
