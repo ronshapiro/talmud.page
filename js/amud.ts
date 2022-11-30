@@ -19,6 +19,7 @@ interface AmudMetadata {
   amudEnd?: string;
   range: () => string[];
   documentTitleOverride?: string;
+  databaseTitleOverride?: string;
 }
 
 function validAmudOrUndefined(amud: string | undefined): string | undefined {
@@ -44,6 +45,7 @@ const _amudMetadata = (book: string, pathname: string): AmudMetadata => {
       amudEnd: sections.slice(-1)[0],
       range: () => sections,
       documentTitleOverride: title,
+      databaseTitleOverride: "Siddur",
     };
   }
 

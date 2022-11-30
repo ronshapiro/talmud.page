@@ -110,7 +110,7 @@ export class DriveClient {
 
   unsavedCommentStore: UnsavedCommentStore;
 
-  masechet: string;
+  title: string;
   isDebug: boolean;
   databaseProperty: string;
 
@@ -121,7 +121,7 @@ export class DriveClient {
   constructor(
     gapi: GoogleApiClient,
     unsavedCommentStore: UnsavedCommentStore,
-    masechet: string,
+    title: string,
     isDebug: boolean,
   ) {
     this.gapi = gapi;
@@ -130,8 +130,8 @@ export class DriveClient {
 
     this.isDebug = isDebug;
     const databaseType = this.isDebug ? "debug database" : "database";
-    this.masechet = masechet;
-    this.databaseProperty = `${this.masechet} ${databaseType}`;
+    this.title = title;
+    this.databaseProperty = `${this.title} ${databaseType}`;
     if (this.isDebug) {
       // eslint-disable-next-line no-console
       this.whenDatabaseReady.execute(() => console.log("Debug database document ready!"));
@@ -219,7 +219,7 @@ export class DriveClient {
       this.databaseDocumentShouldBeCreated = false;
       // i18n: localize this
       const suffix = this.isDebug ? "debug notes" : "notes";
-      const title = `talmud.page ${this.masechet} ${suffix}`;
+      const title = `talmud.page ${this.title} ${suffix}`;
       return this.gapi.createDocument(title);
     },
     then: (response: TypescriptCleanupType) => {

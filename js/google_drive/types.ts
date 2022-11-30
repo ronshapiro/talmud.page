@@ -47,7 +47,7 @@ export interface UnsavedComment {
 }
 
 export interface PersistedComment extends PostCommentParams {
-  masechet: string;
+  title: string;
 }
 
 export interface UnsavedCommentStore {
@@ -58,7 +58,7 @@ export interface UnsavedCommentStore {
 
 export interface DriveClient {
   postComment: (comment: PostCommentParams) => void;
-  masechet: string;
+  title: string;
 }
 
 // https://www.typescriptlang.org/docs/handbook/namespaces.html#aliases

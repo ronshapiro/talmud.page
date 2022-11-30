@@ -18,7 +18,7 @@ export class IndexedDbUnsavedCommentStore extends AbstractIndexedDb implements U
       const promiseChain = new PromiseChain();
       this.newTransaction("readonly").getAll().onsuccess = getAllEvent => {
         result<PersistedComment[]>(getAllEvent)
-          .filter(comment => comment.masechet === this.client!.masechet)
+          .filter(comment => comment.title === this.client!.title)
           .forEach(comment => {
             // execute in a promise chain so that the updates of one comment don't cause the
             // others to fail + require a retry
@@ -36,7 +36,7 @@ export class IndexedDbUnsavedCommentStore extends AbstractIndexedDb implements U
     const persisted = {
       ...unsavedComment,
       id: uuid(),
-      masechet: this.client!.masechet,
+      title: this.client!.title,
     };
     this.newTransaction("readwrite").add(persisted);
     return persisted.id;

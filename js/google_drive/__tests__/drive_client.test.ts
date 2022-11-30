@@ -77,7 +77,7 @@ class FakeUnsavedCommentStore implements UnsavedCommentStore {
 const client = new DriveClient(
   new RecordedApiClient(),
   new FakeUnsavedCommentStore(),
-  "masechet",
+  "masechet name",
   true);
 
 function expectEqualKeys(first: any, second: any) {
