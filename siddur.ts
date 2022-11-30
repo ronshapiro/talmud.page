@@ -751,6 +751,15 @@ export const SIDDUR_IGNORED_COMMENTARIES: Record<string, string[]> = {
   "Siddur Sefard, Weekday Shacharit, Morning Prayer 14": [
     "Deuteronomy 10:17",
   ],
+  "Exodus 15:1": [
+    "Peninei Halakhah, Prayer 14:2:7",
+  ],
+  "Exodus 15:18": [
+    "Peninei Halakhah, Prayer 14:2:7",
+  ],
+  "Nehemiah 9:6": [
+    "Peninei Halakhah, Prayer 14:2:7",
+  ],
 };
 
 export const UNSMALL_REFS = new Set([

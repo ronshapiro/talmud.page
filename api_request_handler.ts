@@ -1301,6 +1301,7 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
     return [
       "Rashi",
       "Shulchan Arukh",
+      "Peninei Halakhah",
       "Torah Temima",
       "Verses",
     ];
@@ -1376,6 +1377,13 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
       segment.hebrew = `<span class="really-big-text">${segment.hebrew}</span>`;
     }
 
+    for (const comment of segment.commentary.comments) {
+      if (comment.englishName === "Peninei Halakhah"
+        && !comment.sourceRef.startsWith("Peninei Halakhah, Prayer")) {
+        segment.commentary.removeComment(comment);
+      }
+    }
+
     return segment;
   }
 
@@ -1409,6 +1417,13 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
       }
       return result;
     });
+
+    for (const [first, second] of _.zip(segments.slice(0, -1), segments.slice(1))) {
+      if (first.ref === second.ref && first.hebrew === second.hebrew) {
+        first.commentary = new InternalCommentary();
+      }
+    }
+
     if (page === "Tachanun") {
       for (let i = 0; i < segments.length - 1; i++) {
         const [first, next] = segments.slice(i, i + 2);
@@ -1437,10 +1452,9 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
       let i = 0;
       for (const segment of segments) {
         if (segment.ref === "Siddur Sefard, Weekday Shacharit, Hodu 9") {
-          if (i !== 1) {
+          if (i === 2) {
             segment.commentary.removeCommentWithRef("Exodus 15:18");
-          }
-          if (i !== 2) {
+          } else {
             segment.commentary.removeCommentWithRef("Zechariah 14:9");
           }
           i += 1;
@@ -1635,7 +1649,9 @@ function siddurSplit(ref: string, hebrew: string, english: string): SplitType {
     const [newSecond, third] = splitSegmentAfter(second[0], second[1], ")", ")");
     return [first, newSecond, third];
   } else if (ref === "Siddur Sefard, Weekday Shacharit, Hodu 9") {
-    const [first, second] = splitSegmentAfter(hebrew, english, ":", ".");
+    const [first, second] = splitSegmentAfter(hebrew, english, ": ", ". ");
+    first[0] = first[0].trim();
+    first[1] = first[1].trim();
     first[0] += "</b>";
     const [newSecond, third] = splitSegmentAfter(second[0], second[1], ":</b>", ".");
     newSecond[0] = "<b>" + newSecond[0];

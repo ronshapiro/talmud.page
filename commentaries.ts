@@ -172,6 +172,14 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     showTitle: true,
   },
   {
+    englishName: "Peninei Halakhah",
+    englishNamePattern: /^Peninei Halakhah, .*/,
+    hebrewName: "פניני הלכה",
+    className: "peninei-halacha",
+    cssCategory: "ein-mishpat",
+    showTitle: true,
+  },
+  {
     englishName: "Mesorat Hashas",
     type: "mesorat hashas",
     hebrewName: 'מסורת הש"ס',

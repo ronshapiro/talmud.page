@@ -17,7 +17,11 @@ class BirkatHamazonRenderer extends Renderer {
         next: () => undefined,
         hasPrevious: () => false,
         hasNext: () => false,
-      });
+      },
+      {
+        expandTranslationOnMergedSectionExpansion: true,
+      },
+    );
   }
 
   newPageTitle(section) {
@@ -52,6 +56,7 @@ class BirkatHamazonRenderer extends Renderer {
         && !today.isCholHamoedPesach()
         && !today.isCholHamoedSuccos()) {
       ignored.push("Siddur Ashkenaz, Berachot, Birkat HaMazon 37");
+      ignored.push("Siddur Ashkenaz, Berachot, Birkat HaMazon 45");
     }
     if (!today.isRoshChodesh()) {
       ignored.push("Siddur Ashkenaz, Berachot, Birkat HaMazon 38");
