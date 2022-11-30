@@ -698,6 +698,8 @@ export const SIDDUR_IGNORED_FOOTNOTES: Record<string, string | string[] | number
 
 export const SIDDUR_IGNORED_REFS = new Set([
   "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Divine Might 11",
+  "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Avinu Malkenu 21",
+  "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Avinu Malkenu 27",
   "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Removing the Torah from Ark, Vayehi Binsoa 2",
   "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Removing the Torah from Ark, Lekha Hashem 1",
   "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Removing the Torah from Ark, Vetigaleh Veteraeh 1", // TODO: prefix this with "Chazan"
@@ -774,6 +776,8 @@ export const HARDCODED_TEXT: Record<string, string> = {
   "Siddur Sefard, Weekday Shacharit, The Shema 38": "siddur/sefard/tzur_yisrael_{lang}.txt",
 };
 
+const ZIKARON_TOV_TO_ZICHRON_TOV: [string, string] = ["זִכָּרוֹן טוֹב", "זִכְרוֹן טוֹב"];
+
 export const HEBREW_TEXT_REPLACEMENTS: Record<string, [string, string][]> = {
   "Siddur Sefard, Weekday Shacharit, Amidah 103": [["וְיִתְרוֹמַם", "וְיִתְרוֹמֵם"]],
   "Siddur Sefard, Weekday Shacharit, The Shema 16": [
@@ -816,6 +820,12 @@ export const HEBREW_TEXT_REPLACEMENTS: Record<string, [string, string][]> = {
     ["כָּאָמוּר,", "כָּאָמוּר:"],
     ["ומַה תִּפְעָל", "וּמַה תִּפְעָל"],
   ],
+  "Siddur Ashkenaz, Weekday, Shacharit, Preparatory Prayers, Akedah 1": [
+    ZIKARON_TOV_TO_ZICHRON_TOV,
+  ],
+  "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Avinu Malkenu 20": [
+    ZIKARON_TOV_TO_ZICHRON_TOV,
+  ],
 };
 
 export const ENGLISH_TEXT_REPLACEMENTS: Record<string, [string, string][]> = {
@@ -841,6 +851,11 @@ export const SMALLIFY_REFS = new Set([
   "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Uva Letzion 4",
   "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Uva Letzion 6",
   "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Uva Letzion 8",
+]);
+
+export const BOLDIFY_REFS = new Set([
+  "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Vidui and 13 Middot 8",
+  ..._.range(17, 27).map(x => `Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Avinu Malkenu ${x}`),
 ]);
 
 // TODO:

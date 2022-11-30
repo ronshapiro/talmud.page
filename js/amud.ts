@@ -111,7 +111,7 @@ export const amudMetadata: AmudMetadataFunction = () => {
     (document.getElementById("book-title") as HTMLMetaElement)?.content,
     window.location.pathname);
   if (localStorage.restrictRange) {
-    metadata.range = () => localStorage.restrictRange.split(",").replace(/ /g, '_');
+    metadata.range = () => localStorage.restrictRange.replace(/ /g, '_').split(",");
   }
   return metadata;
 };

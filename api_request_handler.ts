@@ -21,6 +21,7 @@ import {
   sefariaTextTypeTransformation,
 } from "./sefariaTextType";
 import {
+  BOLDIFY_REFS,
   DONT_MAKE_INTO_EXPLANATIONS,
   ENGLISH_TEXT_REPLACEMENTS,
   HARDCODED_TEXT,
@@ -1281,7 +1282,7 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
   }
 
   protected postProcessSegment(segment: InternalSegment): InternalSegment {
-    if (segment.ref === "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Vidui and 13 Middot 8") {
+    if (BOLDIFY_REFS.has(segment.ref)) {
       segment.hebrew = `<b>${segment.hebrew}</b>`;
     } else if (segment.ref === "Siddur Sefard, Weekday Shacharit, Amidah 60") {
       // TODO: check is this fix has been applied
