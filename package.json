@@ -74,9 +74,11 @@
   },
   "jest": {
     "testPathIgnorePatterns": [
-      "<rootDir>/node_modules/",
       "<rootDir>/__tests__/api_request_handler_base.ts",
-      "<rootDir>/__tests__/api_request_handler_runner.ts"
+      "<rootDir>/__tests__/api_request_handler_runner.ts",
+      "<rootDir>/__tests__/api_request_handler_tester.ts",
+      "<rootDir>/__tests__/api_request_handler_tests_generator.ts",
+      "<rootDir>/node_modules/"
     ],
     "watchPathIgnorePatterns": [
       "<rootDir>/dist/"
