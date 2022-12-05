@@ -621,8 +621,7 @@ class Amud extends Component {
         while (i < sections.length) {
           const currentSection = sections[i];
           const nextSection = sections[i + 1];
-          // Comment out the next line to have sugya-wide merging!
-          if (!currentSection.defaultMergeWithNext) break;
+          if (!currentSection.defaultMergeWithNext && !this.context.compactLayout()) break;
           if (this.state.expandMergedRef[currentSection.uuid]) break;
           if (nextSection && this.state.expandMergedRef[nextSection.uuid]) break;
           if (nextSection && nextSection.steinsaltz_start_of_sugya) break;
@@ -756,6 +755,7 @@ export class Renderer {
       hasNext: () => false,
     };
     options = options || {};
+    this.allowCompactLayout = options.allowCompactLayout;
     this.expandTranslationOnMergedSectionExpansion = (
       options.expandTranslationOnMergedSectionExpansion);
   }
@@ -824,6 +824,7 @@ export class Renderer {
       hiddenHost,
       ignoredSectionRefs: () => this.ignoredSectionRefs(),
       expandTranslationOnMergedSectionExpansion: this.expandTranslationOnMergedSectionExpansion,
+      compactLayout: () => this.allowCompactLayout && localStorage.layoutOption === "compact",
     };
 
     const hiddenData = [{

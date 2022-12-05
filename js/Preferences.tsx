@@ -101,6 +101,17 @@ export function Preferences({rerender}: PreferencesViewParams): React.ReactEleme
       rerender={rerender}
       localStorageKeyName="translationOption" />,
     <PreferenceSection
+      title="Layout"
+      items={[
+        {value: "by-segment", displayText: "Default"},
+        {
+          value: "compact",
+          displayText: "Compact (segments of Sugyot are combined until double-tap)",
+        },
+      ]}
+      rerender={rerender}
+      localStorageKeyName="layoutOption" />,
+    <PreferenceSection
       title={
         <span>
           Hide Gemara translation by default<br />

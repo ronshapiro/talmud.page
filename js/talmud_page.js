@@ -26,6 +26,7 @@ class TalmudRenderer extends Renderer {
       },
       {
         isTalmud: true,
+        allowCompactLayout: true,
       });
   }
 }

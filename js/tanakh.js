@@ -1,4 +1,3 @@
-
 import {amudMetadata} from "./amud.ts";
 import {books} from "./books.ts";
 import {getCommentaryTypes} from "./commentaryTypes.ts";
@@ -19,6 +18,8 @@ class TanakhRenderer extends Renderer {
           const metadata = amudMetadata();
           return metadata.amudEnd !== books[metadata.masechet].end;
         },
+      }, {
+        allowCompactLayout: true,
       });
   }
 }
