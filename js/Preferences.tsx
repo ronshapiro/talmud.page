@@ -174,7 +174,13 @@ export function Preferences({rerender}: PreferencesViewParams): React.ReactEleme
       rerender={rerender}
       localStorageKeyName="offlineMode" />,
   ];
-  const [currentIndex, setIndex] = useState(0);
+  const [currentIndex, setIndexPrivate] = useState(
+    (localStorage.preferencesIndex && parseInt(localStorage.preferencesIndex))
+      || 0);
+  const setIndex = (newIndex: number) => {
+    setIndexPrivate(newIndex);
+    localStorage.preferencesIndex = newIndex;
+  };
   function slideRenderer({index, key}: SlideRendererParams) {
     const component = options[index % options.length];
     return <div key={key} style={{display: "flex"}}>
