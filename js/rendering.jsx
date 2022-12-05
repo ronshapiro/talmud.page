@@ -625,6 +625,7 @@ class Amud extends Component {
           if (this.state.expandMergedRef[currentSection.uuid]) break;
           if (nextSection && this.state.expandMergedRef[nextSection.uuid]) break;
           if (nextSection && nextSection.steinsaltz_start_of_sugya) break;
+          if (nextSection && nextSection.hadran) break;
           i++;
           if (i === sections.length) {
             break;
