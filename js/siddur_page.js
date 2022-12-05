@@ -1,11 +1,10 @@
 import * as _ from "underscore";
 import {JewishCalendar, ZmanimCalendar} from "kosher-zmanim";
 import {ApiCache} from "./ApiCache.ts";
-import {getCommentaryTypes} from "./commentaryTypes.ts";
 import {driveClient} from "./google_drive/singleton.ts";
+import {LiturgyRenderer} from "./liturgy_renderer.js";
 import {onceDocumentReady} from "./once_document_ready.ts";
 import {Runner} from "./page_runner.js";
-import {Renderer} from "./rendering.jsx";
 import {getHebrewDate as getJewishDate, isMaybePurim, omitTachanun} from "./hebrew_calendar";
 import {ASERET_YIMEI_TESHUVA_REFS} from "./aseret_yimei_teshuva.ts";
 
@@ -48,24 +47,7 @@ function vtenTalUmatar() {
     || today.getJewishMonth() >= 11;
 }
 
-class SiddurRenderer extends Renderer {
-  constructor() {
-    super(
-      getCommentaryTypes("siddur"),
-      false,
-      () => "both",
-      () => localStorage.wrapTranslations !== "false",
-      () => localStorage.expandEnglishByDefault === "true",
-      {
-        previous: () => undefined,
-        next: () => undefined,
-        hasPrevious: () => false,
-        hasNext: () => false,
-      }, {
-        expandTranslationOnMergedSectionExpansion: true,
-      });
-  }
-
+class SiddurRenderer extends LiturgyRenderer {
   sortedAmudim() {
     let keys = Object.keys(this.allAmudim);
 
@@ -116,10 +98,6 @@ class SiddurRenderer extends Renderer {
       this.injectedTorahPortions = portionRespones;
       this.forceUpdate();
     }
-  }
-
-  newPageTitle(section) {
-    return section.replace(/_/g, " ");
   }
 
   ignoredSectionRefs() {

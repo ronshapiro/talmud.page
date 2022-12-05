@@ -1,3 +1,4 @@
+
 import {amudMetadata} from "./amud.ts";
 import {books} from "./books.ts";
 import {getCommentaryTypes} from "./commentaryTypes.ts";
@@ -9,10 +10,6 @@ class TanakhRenderer extends Renderer {
   constructor() {
     super(
       getCommentaryTypes("tanakh"),
-      false,
-      () => localStorage.translationOption || "english-side-by-side",
-      () => localStorage.wrapTranslations !== "false",
-      () => localStorage.expandEnglishByDefault === "true",
       {
         previous: () => (parseInt(amudMetadata().amudStart) - 1).toString(),
         next: () => (parseInt(amudMetadata().amudEnd) + 1).toString(),

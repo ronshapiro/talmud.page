@@ -11,7 +11,6 @@ import _ from "underscore";
 import {v4 as newUuid} from "uuid";
 import {addDriveComments} from "./addDriveComments.ts";
 import {amudMetadata} from "./amud.ts";
-import {getCommentaryTypes} from "./commentaryTypes.ts";
 import {CorrectionModal} from "./CorrectionModal.tsx";
 import isEmptyText from "./is_empty_text.ts";
 import {$} from "./jquery";
@@ -737,19 +736,18 @@ const indexCommentaryTypesByClassName = (commentaryTypes) => {
 };
 
 export class Renderer {
-  constructor(
-    commentaryTypes,
-    isTalmud,
-    translationOption,
-    wrapTranslations,
-    expandEnglishByDefault,
-    navigationExtension,
-    options) {
+  constructor(commentaryTypes, navigationExtension, options) {
+    options = options || {};
     this._commentaryTypes = commentaryTypes;
-    this._isTalmud = isTalmud;
-    this._translationOption = translationOption;
-    this.wrapTranslations = wrapTranslations;
-    this.expandEnglishByDefault = expandEnglishByDefault;
+    this._isTalmud = options.isTalmud;
+    this._translationOption = () => {
+      return (
+        options.translationOverride
+          || localStorage.translationOption
+          || "english-side-by-side");
+    };
+    this.wrapTranslations = () => localStorage.wrapTranslations !== "false";
+    this.expandEnglishByDefault = () => localStorage.expandEnglishByDefault === "true";
     this.rootComponent = createRef();
     this.amudimRef = createRef();
     this.allAmudim = {};
@@ -937,17 +935,5 @@ export class Renderer {
   newPageTitle(section) {
     const metadata = amudMetadata();
     return `${metadata.masechet} ${section}`;
-  }
-}
-
-export class TalmudRenderer extends Renderer {
-  constructor(translationOption, wrapTranslations, expandEnglishByDefault, navigationExtension) {
-    super(
-      getCommentaryTypes("talmud"),
-      true,
-      translationOption,
-      wrapTranslations,
-      expandEnglishByDefault,
-      navigationExtension);
   }
 }

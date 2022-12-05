@@ -1,33 +1,9 @@
-import {getCommentaryTypes} from "./commentaryTypes.ts";
 import {driveClient} from "./google_drive/singleton.ts";
+import {LiturgyRenderer} from "./liturgy_renderer.js";
 import {Runner} from "./page_runner.js";
-import {Renderer} from "./rendering.jsx";
 import {getHebrewDate, isMaybePurim, omitTachanun} from "./hebrew_calendar.ts";
 
-class BirkatHamazonRenderer extends Renderer {
-  constructor() {
-    super(
-      getCommentaryTypes("siddur"),
-      false,
-      () => "both",
-      () => localStorage.wrapTranslations !== "false",
-      () => localStorage.expandEnglishByDefault === "true",
-      {
-        previous: () => undefined,
-        next: () => undefined,
-        hasPrevious: () => false,
-        hasNext: () => false,
-      },
-      {
-        expandTranslationOnMergedSectionExpansion: true,
-      },
-    );
-  }
-
-  newPageTitle(section) {
-    return section.replace(/_/g, " ");
-  }
-
+class BirkatHamazonRenderer extends LiturgyRenderer {
   sortedAmudim() {
     let keys = Object.keys(this.allAmudim);
     if (!omitTachanun()) {
