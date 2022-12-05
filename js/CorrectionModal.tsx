@@ -1,12 +1,13 @@
 /* global gtag */
 import * as React from "react";
 import {CorrectionUiInfo} from "../correctionTypes";
+import {useHtmlRef} from "./hooks";
 import {$} from "./jquery";
 import Modal from "./Modal";
 import {RetryMethodFactory} from "./retry";
+import {driveClient} from "./google_drive/singleton";
 
 const {
-  useRef,
   useState,
 } = React;
 
@@ -44,7 +45,7 @@ export function CorrectionModal(): React.ReactElement | null {
     setShowing(true);
     setRefData(data);
   };
-  const ref = useRef<HTMLTextAreaElement>(undefined as any);
+  const ref = useHtmlRef<HTMLTextAreaElement>();
 
   if (!isShowing) {
     return null;
@@ -53,14 +54,10 @@ export function CorrectionModal(): React.ReactElement | null {
   const onSubmit = (event?: any) => {
     if (event) event.preventDefault();
     const userText = ref.current.value;
-    // Lazily load the drive client so that it's not loaded in /preferences, where it doesn't make
-    // sense. In actuality, it will already be loaded by another page whenver this is triggered.
-    import("./google_drive/singleton").then(({driveClient}) => {
-      makeRequest({
-        ...refData,
-        userText,
-        user: driveClient.gapi.getSignedInUserEmail(),
-      });
+    makeRequest({
+      ...refData,
+      userText,
+      user: driveClient.gapi.getSignedInUserEmail(),
     });
     setShowing(false);
     gtag("event", "report_correction", {ref});

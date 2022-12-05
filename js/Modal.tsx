@@ -23,7 +23,7 @@ export default function Modal(props: ModalProps): React.ReactElement {
     acceptText,
     onAccept,
   } = props;
-  const modalContainerRef = useHtmlRef();
+  const modalContainerRef = useHtmlRef<HTMLInputElement>();
   useEffect(() => {
     componentHandler.upgradeElement(modalContainerRef.current);
     const modalContainer = $(modalContainerRef.current);

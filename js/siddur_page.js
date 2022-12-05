@@ -53,9 +53,9 @@ class SiddurRenderer extends Renderer {
     super(
       getCommentaryTypes("siddur"),
       false,
-      "both",
-      localStorage.wrapTranslations !== "false",
-      localStorage.expandEnglishByDefault === "true",
+      () => "both",
+      () => localStorage.wrapTranslations !== "false",
+      () => localStorage.expandEnglishByDefault === "true",
       {
         previous: () => undefined,
         next: () => undefined,

@@ -108,7 +108,7 @@ class HebrewCell extends Cell {
   render() {
     const {isEnglishExpanded, shouldWrap} = this.props;
     const siblingExpandedClass = (
-      this.context.wrapTranslations && isEnglishExpanded && shouldWrap
+      this.context.wrapTranslations() && isEnglishExpanded && shouldWrap
         ? "siblingExpanded"
         : undefined);
     return (
@@ -144,7 +144,7 @@ class EnglishCell extends Cell {
       classes.push("neverWrap");
     } else if (!isEnglishExpanded) {
       classes.push("lineClamped");
-    } else if (this.context.wrapTranslations && shouldWrap) {
+    } else if (this.context.wrapTranslations() && shouldWrap) {
       // TODO: if the english cell expanded is only a little bit of extra text (1 line, or 2 short
       // ones, use the default layout and don't wrap.
       classes.push("translationWrapped");
@@ -228,16 +228,13 @@ function TableRow(props) {
     hebrewDoubleClickListener,
     id,
     overrideFullRow,
-    isHiddenRow,
     link,
     expandEnglishByDefault,
     indicator,
     onUnexpand,
   } = props;
 
-  const [isEnglishExpanded, setIsEnglishExpanded] = (
-    useState(isHiddenRow || expandEnglishByDefault || false)
-  );
+  const [isEnglishExpanded, setIsEnglishExpanded] = useState(expandEnglishByDefault);
   const context = useConfiguration();
   const hiddenHost = useHiddenHost();
 
@@ -356,7 +353,6 @@ TableRow.propTypes = {
   "sefaria-ref": PropTypes.string,
   link: PropTypes.string,
   overrideFullRow: PropTypes.bool,
-  isHiddenRow: PropTypes.bool,
   expandEnglishByDefault: PropTypes.bool,
   indicator: PropTypes.bool,
   onUnexpand: PropTypes.func,

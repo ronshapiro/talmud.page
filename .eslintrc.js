@@ -105,7 +105,7 @@ module.exports = {
       },
     },
     {
-      files: ["js/books.ts", "js/preferences_sample_data.js"],
+      files: ["js/books.ts"],
       rules: {
         "quote-props": "off",
         "comma-dangle": "off",

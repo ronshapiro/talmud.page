@@ -10,9 +10,9 @@ class TanakhRenderer extends Renderer {
     super(
       getCommentaryTypes("tanakh"),
       false,
-      localStorage.translationOption || "english-side-by-side",
-      localStorage.wrapTranslations !== "false",
-      localStorage.expandEnglishByDefault === "true",
+      () => localStorage.translationOption || "english-side-by-side",
+      () => localStorage.wrapTranslations !== "false",
+      () => localStorage.expandEnglishByDefault === "true",
       {
         previous: () => (parseInt(amudMetadata().amudStart) - 1).toString(),
         next: () => (parseInt(amudMetadata().amudEnd) + 1).toString(),

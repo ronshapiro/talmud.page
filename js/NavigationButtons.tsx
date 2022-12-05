@@ -3,13 +3,13 @@ import * as PropTypes from 'prop-types';
 import {disableBackButtonProtection} from "./block_back_button";
 import {$} from "./jquery";
 import {onClickKeyListener} from "./key_clicks";
+import {useHtmlRef} from "./hooks";
 import {NavigationExtension} from "./NavigationExtension";
 import Modal from "./Modal";
 import {NullaryFunction} from "./types";
 
 const {
   useEffect,
-  useRef,
   useState,
 } = React;
 
@@ -54,7 +54,7 @@ const NavigationButtonRow = (props: NavigationButtonRowProps) => {
   } = props;
   const [showModal, setShowModal] = useState(false);
   const classes = ["navigation-button-container"];
-  const modalSearchBarRef = useRef<HTMLInputElement>(undefined as any);
+  const modalSearchBarRef = useHtmlRef<HTMLInputElement>();
 
   useEffect(() => {
     $(modalSearchBarRef.current).val(defaultEditText());

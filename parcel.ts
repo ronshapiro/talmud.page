@@ -19,7 +19,6 @@ const entryFiles = [
   "./templates/daf_yomi_redirector.html",
   "./templates/homepage.html",
   "./templates/notes_redirecter.html",
-  "./templates/preferences.html",
   "./templates/siddur_page.html",
   "./templates/talmud_page.html",
   "./templates/tanakh.html",

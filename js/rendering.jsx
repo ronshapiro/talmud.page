@@ -2,6 +2,7 @@
 import React, {
   Component,
   createRef,
+  useEffect,
   useState,
 } from "react";
 import {render} from 'react-dom';
@@ -26,6 +27,7 @@ import {
   useHiddenHost,
 } from "./context.js";
 import {mergeCommentaries} from "./mergeCommentaries.ts";
+import {Preferences} from "./Preferences.tsx";
 
 const JSX_NOOP = null;
 
@@ -91,7 +93,7 @@ class CommentRow extends Component {
     const {comment, commentaryKind} = this.props;
     const ref = overrideRef || comment.ref;
     const expandableTranslations = (
-      this.context.translationOption === "both"
+      this.context.translationOption() === "both"
         && localStorage.hideGemaraTranslationByDefault === "true"
         && commentaryKind.englishName === "Translation");
 
@@ -104,7 +106,7 @@ class CommentRow extends Component {
         link={comment.link}
         classes={["commentaryRow", /* used in CSS */ commentaryKind.className]}
         expandEnglishByDefault={
-          commentaryKind.englishName === "Translation" && this.context.expandEnglishByDefault
+          commentaryKind.englishName === "Translation" && this.context.expandEnglishByDefault()
         }
         hebrewDoubleClickListener={
           expandableTranslations
@@ -137,7 +139,7 @@ class CommentRow extends Component {
           this.renderTableRow(
             "subtitle",
             <strong>{comment.subtitle.he}</strong>,
-            this.context.translationOption === "just-hebrew" || stringOrListToString(comment.en).length === 0
+            this.context.translationOption() === "just-hebrew" || stringOrListToString(comment.en).length === 0
               ? undefined
               : <strong>{comment.subtitle.en}</strong>));
       }
@@ -251,7 +253,7 @@ class CommentarySection extends Component {
   }
 
   renderTableRow(key, hebrew, english, extraClasses = []) {
-    const overrideFullRow = this.context.translationOption === "english-side-by-side";
+    const overrideFullRow = this.context.translationOption() === "english-side-by-side";
     return (
       <TableRow
         key={key}
@@ -470,7 +472,7 @@ function Section({sections, sectionLabel, toggleMerging, isExpanded}) {
   const englishes = [];
   for (const section of sections) {
     hebrews.push(section.he);
-    if (context.translationOption === "english-side-by-side") {
+    if (context.translationOption() === "english-side-by-side") {
       englishes.push(section.en);
     }
   }
@@ -505,7 +507,7 @@ function Section({sections, sectionLabel, toggleMerging, isExpanded}) {
       hebrew={createText(hebrews, "hebrew-ref-text")}
       hebrewDoubleClickListener={hebrews.length === 1 ? hebrewDoubleClickListener : undefined}
       english={createText(englishes, "english-ref-text")}
-      expandEnglishByDefault={context.expandEnglishByDefault}
+      expandEnglishByDefault={context.expandEnglishByDefault()}
       classes={gemaraContainerClasses}
       indicator={isExpanded}
       onUnexpand={isExpanded ? () => toggleMerging(sections[0].uuid) : undefined}
@@ -667,6 +669,13 @@ class Amud extends Component {
   }
 }
 
+function RootHooks() {
+  useEffect(() => {
+    document.getElementById("darkModeCss").disabled = localStorage.darkMode !== "true";
+  });
+  return null;
+}
+
 class Root extends Component {
   static propTypes = {
     allAmudim: PropTypes.func.isRequired,
@@ -699,6 +708,8 @@ class Root extends Component {
         <PreviousButton navigationExtension={navigationExtension} />
         {amudim}
         <NextButton navigationExtension={navigationExtension} />
+        <Preferences rerender={() => this.forceUpdate()} />
+        <RootHooks />
       </>
     );
   }
@@ -762,7 +773,10 @@ export class Renderer {
       }
     }
 
-    if (this._translationOption !== "both") {
+    // TODO: this logic is not dynamic, and therefore can result in some weird states when settings
+    // are changed for already-viewed translations. It may be best to just inline this logic to the
+    // UI code instead of modifying the data.
+    if (this._translationOption() !== "both") {
       return;
     }
 
@@ -836,8 +850,8 @@ export class Renderer {
 
     const contextForHiddenHostRendering = {
       ...context,
-      translationOption: "english-side-by-side",
-      wrapTranslations: false,
+      translationOption: () => "english-side-by-side",
+      wrapTranslations: () => false,
       isFake: true,
     };
     render(

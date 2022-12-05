@@ -526,3 +526,33 @@ h2, .title {
     font-size: 32px;
     line-height: 48px;
 }
+
+#preferences-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--background-color);
+    box-shadow: 5px 10px 30px #888888;
+}
+
+#preferences-container button {
+    margin: auto;
+    padding: 20px;
+}
+
+#showSettings {
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    padding: 25px;
+}
+
+#showSettings .material-icons {
+    color: var(--highlight-gray);
+}
+
+/* Important for multi-line preferences text */
+.mdl-radio {
+    vertical-align: baseline;
+}

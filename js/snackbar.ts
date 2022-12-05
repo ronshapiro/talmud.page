@@ -121,9 +121,7 @@ class Kind implements AbstractKind {
 const Kinds = {
   PREFERENCES_NUDGE: new Kind({
     prefix: "preferencePage",
-    customShowLogic: () => {
-      return window.location.pathname !== "/preferences" && !hasSeenLatestPreferences();
-    },
+    customShowLogic: () => !hasSeenLatestPreferences() || true,
     shouldResetShowCount: () => {
       if (parseInt(localStorage.lastVersionOfPreferencesPageResetTo) !== PREFERENCES_PAGE_VERSION) {
         localStorage.lastVersionOfPreferencesPageResetTo = PREFERENCES_PAGE_VERSION;
@@ -144,10 +142,6 @@ const Kinds = {
 
   TEXT_SELECTION: new Kind({
     cssClass: "textSelection",
-  }),
-
-  PREFERENCES_SAVED: new Kind({
-    cssClass: "preferencesSaved",
   }),
 
   ERRORS: new Kind({
@@ -212,7 +206,6 @@ class SnackbarManager {
   preferencesNudge: Snackbar;
   googleSignIn: Snackbar;
   textSelection: Snackbar;
-  preferencesSaved: Snackbar;
   errors: Snackbar;
 
   startupKind: Kind | undefined;
@@ -234,7 +227,6 @@ class SnackbarManager {
     this.preferencesNudge = new StartupSnackbar(Kinds.PREFERENCES_NUDGE, this);
     this.googleSignIn = new StartupSnackbar(Kinds.GOOGLE_SIGN_IN, this);
     this.textSelection = new Snackbar(Kinds.TEXT_SELECTION, this);
-    this.preferencesSaved = new Snackbar(Kinds.PREFERENCES_SAVED, this);
     // TODO: make each error it's own snackbar? That way each can animate on its own
     this.errors = new Snackbar(Kinds.ERRORS, this);
   }
@@ -254,7 +246,7 @@ $(document).ready(() => {
         text: "Preferences",
         onClick: () => {
           gtag("event", "snackbar.preferencesPage.clicked");
-          window.location.pathname = "/preferences";
+          (window as any).showPreferences();
         },
       },
       {
