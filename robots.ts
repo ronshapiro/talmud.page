@@ -29,7 +29,6 @@ export class Sitemap {
       }
     }
     sections.push(this.pageXml("daf-yomi"));
-    sections.push(this.pageXml("preferences"));
     if (sections.length > 50_000) {
       throw new Error("Only 50k entries are allowed per sitemap");
     }
