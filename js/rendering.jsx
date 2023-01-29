@@ -288,7 +288,8 @@ class CommentarySection extends Component {
       const wouldThisButtonBeHidden = (
         buttons.length > MAX_BUTTONS_TO_SHOW_BEFORE_SHOWING_MORE
           && commentariesToShow.length > (MAX_BUTTONS_TO_SHOW_BEFORE_SHOWING_MORE + 2)
-          && commentaryKind.className !== "personal-notes");
+          && commentaryKind.className !== "personal-notes"
+          && commentaryHighlightColors(commentary).size === 0);
       wouldAnyButtonBeHidden = wouldAnyButtonBeHidden || wouldThisButtonBeHidden;
       if (this.state.showAll || !wouldThisButtonBeHidden) {
         buttons.push(this.renderButton(commentaryKind, false, commentary));
