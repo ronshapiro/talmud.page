@@ -11,16 +11,9 @@
     <div id="center-content-container"><div id="center-contents">
       <br/>
       <h1>Read the Talmud</h1>
-      <form action="/view_daf" method="post">
-        <div class="mdl-textfield
-                    mdl-js-textfield
-                    mdl-textfield--expandable
-                    mdl-textfield--floating-label" style="width:100%;">
-          <input class="mdl-textfield__input" type="text" id="search_term" name="search_term">
-          <label class="mdl-textfield__label" for="search_term">Search</label>
-        </div>
-      </form>
+      <div id="form"></div>
 
+      <br>
       <p style="text-align: center">
         e.g. <span class="search-example">Brachot 2a,</span> <span class="search-example">Sukka 20a-21b,</span> <span class="search-example"><span dir="rtl">פסחים 30:</span>,</span> <span class="search-example">Shabbos 67b,</span> <span class="search-example">Bava Metzia 13b to 14a</span></p>
 
@@ -32,5 +25,6 @@
     </div></div> {# end center-contents-container #}
     {% include "snackbar.html" %}
   </div>
+  <script src="../js/homepage.tsx"></script>
 </body>
 </html>

@@ -37,6 +37,7 @@ module.exports = {
     "no-continue": "off",
     "no-console": ["warn", { allow: ["warn", "error"] }],
     "no-else-return": "off",
+    "no-floating-decimal": "off",
     "no-loop-func": "off",
     "@typescript-eslint/no-loop-func": ["error"],
     "no-plusplus": "off",

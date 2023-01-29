@@ -51,3 +51,12 @@ export interface ApiErrorResponse {
   code?: number;
   id?: string;
 }
+
+export interface QueryGuess {
+  text: string;
+  url: string;
+}
+
+export interface QueryGuesses {
+  guesses: QueryGuess[];
+}

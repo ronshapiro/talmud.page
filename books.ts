@@ -1,5 +1,9 @@
+import {QueryGuesses} from "./apiTypes";
 import {numericLiteralAsInt} from "./hebrew";
 import {SIDDUR_REFS_ASHKENAZ, SIDDUR_REFS_SEFARD, BIRKAT_HAMAZON_REFS, RefPiece} from "./siddur";
+
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const levenshteinEditDistance = require("levenshtein-edit-distance");
 
 const ALL_HEBREW_LETTERS = ((): RegExp => {
   const hundreds = "ק"; // there are no masechtot with more than 200 dapim
@@ -511,7 +515,34 @@ export class BookIndex {
     return canonical !== undefined && this.byCanonicalName[canonical].doesSectionExist(section);
   }
 
+  private bookGuesses(query: string): string[] {
+    const results: [number, string][] = [];
+    const candidates = new Set<string>();
+    // const maybeBook = query.slice(0, query.lastIndexOf(" "));
+    for (const book of Object.values(this.byCanonicalName)) {
+      let distance = 99999;
+      for (const option of [book.canonicalName].concat(book.aliases)) {
+        const editDistance = levenshteinEditDistance(option, query, true);
+        distance = Math.min(editDistance / option.length, distance);
+      }
+      if (distance <= .5 && !candidates.has(book.canonicalName)) {
+        results.push([distance, book.canonicalName]);
+        candidates.add(book.canonicalName);
+      }
+    }
+    results.sort((a, b) => a[0] - b[0]);
+    return results.map(x => x[1]);
+  }
+
   parse(query: string): QueryResult {
+    const result = this.parseWithGuesses(query);
+    if (!(result instanceof QueryResult)) {
+      throw new InvalidQueryException(`Could not find title: ${query}`);
+    }
+    return result;
+  }
+
+  parseWithGuesses(query: string): QueryResult | QueryGuesses {
     query = query.trim().replace(/  +/g, " ");
     let words = query.split(" ");
     let title: string | undefined;
@@ -523,7 +554,20 @@ export class BookIndex {
       }
     }
     if (!title) {
-      throw new InvalidQueryException(`Coult not find title: ${query}`);
+      if (query.includes(" ")) {
+        const possibleBook = query.slice(0, query.lastIndexOf(" "));
+        const possiblePage = query.slice(query.lastIndexOf(" ") + 1);
+        const bookGuesses = this.bookGuesses(possibleBook);
+        if (bookGuesses.length > 0) {
+          const guesses = [];
+          for (const bookGuess of bookGuesses) {
+            const guess = `${bookGuess} ${possiblePage}`;
+            guesses.push({text: guess, url: this.parse(guess).toUrlPathname()});
+          }
+          return {guesses};
+        }
+      }
+      throw new InvalidQueryException(`Could not find title: ${query}`);
     }
 
     const book = this.byCanonicalName[title];
@@ -893,31 +937,31 @@ export const books = new BookIndex([
   new BibleBook({
     canonicalName: "Genesis",
     hebrewName: "בראשית",
-    aliases: ["Bereshit", "Breishit", "Bereishit", "Beresheet", "Bereshith", "Bereishis"],
+    aliases: ["Bereshit", "Breishit", "Bereishit", "Beresheet", "Bereshith", "Bereishis", "Gen"],
     end: "50",
   }),
   new BibleBook({
     canonicalName: "Exodus",
     hebrewName: "שמות",
-    aliases: ["Shmot", "Shemot", "Shemoth", "Shemos"],
+    aliases: ["Shmot", "Shemot", "Shemoth", "Shemos", "Ex"],
     end: "40",
   }),
   new BibleBook({
     canonicalName: "Leviticus",
     hebrewName: "ויקרא",
-    aliases: ["Vayikra", "Vayikrah"],
+    aliases: ["Vayikra", "Vayikrah", "Vay"],
     end: "27",
   }),
   new BibleBook({
     canonicalName: "Numbers",
     hebrewName: "במדבר",
-    aliases: ["Bamidbar", "Bemidbar"],
+    aliases: ["Bamidbar", "Bemidbar", "Num"],
     end: "36",
   }),
   new BibleBook({
     canonicalName: "Deuteronomy",
     hebrewName: "דברים",
-    aliases: ["Devarim", "Dvarim", "Devorim"],
+    aliases: ["Devarim", "Dvarim", "Devorim", "Duet"],
     end: "34",
   }),
   new BibleBook({
@@ -975,7 +1019,7 @@ export const books = new BookIndex([
   new BibleBook({
     canonicalName: "Jeremiah",
     hebrewName: "ירמיהו",
-    aliases: ["Yirmiyahu", "Yirmiyohu", "Yermiyahu", "Yirmeyahu"],
+    aliases: ["Yirmiyahu", "Yirmiyohu", "Yermiyahu", "Yirmeyahu", "Jer"],
     end: "52",
   }),
   new BibleBook({
@@ -1109,7 +1153,7 @@ export const books = new BookIndex([
   new BibleBook({
     canonicalName: "Daniel",
     hebrewName: "דניאל",
-    aliases: [],
+    aliases: ["Dan"],
     end: "12",
   }),
   new BibleBook({
@@ -1123,7 +1167,7 @@ export const books = new BookIndex([
     hebrewName: "נחמיה",
     aliases: [
       "Nehemia", "Nechemia", "Nechemiah", "Nehemya", "Nechemya", "Nechemyah",
-      "Nehemiya", "Nechemiya", "Nechemiyah",
+      "Nehemiya", "Nechemiya", "Nechemiyah", "Neh",
     ],
     end: "13",
   }),

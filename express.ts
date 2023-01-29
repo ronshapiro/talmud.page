@@ -14,6 +14,7 @@ import {
   InvalidQueryException,
   nextAmud,
   previousAmud,
+  QueryResult,
   UnknownBookNameException,
 } from "./books";
 import {
@@ -193,10 +194,33 @@ function fullDafUrl(masechet: Book, start: string, end: string): string {
   return segmentUrl(masechet.canonicalName, start, end);
 }
 
+app.get("/api/search/:query", (req, res) => {
+  const {query} = req.params;
+  let parsed: any;
+  try {
+    parsed = books.parseWithGuesses(query);
+  } catch (e) {
+    if (e instanceof InvalidQueryException) {
+      return res.send({error: e.message});
+    } else {
+      throw e;
+    }
+  }
+
+  if (parsed instanceof QueryResult) {
+    return res.send({path: parsed.toUrlPathname()});
+  } else if (parsed.guesses) {
+    return res.send(parsed);
+  }
+  throw new Error(`Don't know what to do with: ${query} and ${parsed}`);
+});
+
 app.post("/view_daf", (req, res) => {
   const query = req.body.search_term;
-  const parsed = books.parse(query);
-  res.redirect(segmentUrl(parsed.bookName, parsed.start, parsed.end));
+  const parsed = books.parseWithGuesses(query);
+  if (parsed instanceof QueryResult) {
+    res.redirect(segmentUrl(parsed.bookName, parsed.start, parsed.end));
+  }
 });
 
 app.get(
@@ -366,7 +390,7 @@ app.get("/api/:title/:page", (req, res) => {
   const book = books.byCanonicalName[title];
   try {
     validatePages(book, page);
-  } catch (e) {
+  } catch (e: any) {
     return res.status(404).send({error: e.message});
   }
 
