@@ -84,7 +84,9 @@
       "<rootDir>/__tests__/api_request_handler_tests_generator.ts",
       "<rootDir>/node_modules/"
     ],
-    "setupFiles": ["./jest_start.js"],
+    "setupFiles": [
+      "./jest_start.js"
+    ],
     "watchPathIgnorePatterns": [
       "<rootDir>/dist/"
     ]
