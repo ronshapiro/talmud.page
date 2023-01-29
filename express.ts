@@ -215,14 +215,6 @@ app.get("/api/search/:query", (req, res) => {
   throw new Error(`Don't know what to do with: ${query} and ${parsed}`);
 });
 
-app.post("/view_daf", (req, res) => {
-  const query = req.body.search_term;
-  const parsed = books.parseWithGuesses(query);
-  if (parsed instanceof QueryResult) {
-    res.redirect(segmentUrl(parsed.bookName, parsed.start, parsed.end));
-  }
-});
-
 app.get(
   "/manifest.json",
   (req, res) => sendLazyStaticFile(res, "static/progressive_webapp_manifest.json"));
