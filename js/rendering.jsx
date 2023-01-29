@@ -612,8 +612,9 @@ class Amud extends Component {
       for (let i = 0; i < sections.length; i++) {
         const section = sections[i];
 
+        const makeSeparator = () => <br key={`separator-${i}`} className="section-separator" />;
         if (i !== 0 && section.steinsaltz_start_of_sugya) {
-          output.push(<br key={`sugya-separator-${i}`} className="sugya-separator" />);
+          output.push(makeSeparator());
         }
 
         const sectionLabel = `${amudData.id}_section_${i + 1}`;
@@ -621,6 +622,7 @@ class Amud extends Component {
         while (i < sections.length) {
           const currentSection = sections[i];
           const nextSection = sections[i + 1];
+          if (currentSection.lastSegmentOfSection) break;
           if (!currentSection.defaultMergeWithNext && !this.context.compactLayout()) break;
           if (this.state.expandMergedRef[currentSection.uuid]) break;
           if (nextSection && this.state.expandMergedRef[nextSection.uuid]) break;
@@ -650,6 +652,9 @@ class Amud extends Component {
             toggleMerging={toggleMerging}
             isExpanded={this.state.expandMergedRef[mergedSections[0].uuid]}
             />);
+        if (i < sections.length - 1 && mergedSections.slice(-1)[0].lastSegmentOfSection) {
+          output.push(makeSeparator());
+        }
       }
     }
     return (

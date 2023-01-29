@@ -26,6 +26,7 @@ export interface Section extends Highlightable {
 
   hadran?: true;
   steinsaltz_start_of_sugya?: true; // eslint-disable-line camelcase
+  lastSegmentOfSection?: true;
   defaultMergeWithNext?: true;
 }
 

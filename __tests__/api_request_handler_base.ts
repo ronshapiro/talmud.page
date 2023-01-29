@@ -27,6 +27,7 @@ export const testPages = [
   new TestPage("Shekalim", "7b"), // Has strange text shape in the API response
 
   new TestPage("Genesis", "43"),
+  new TestPage("Exodus", "20"), // 10 commandments, covers all mam-spi-pe and mam-spi-samekhs
   new TestPage("Deuteronomy", "34"),
   new TestPage("I Samuel", "18"),
   new TestPage("Obadiah", "1"),

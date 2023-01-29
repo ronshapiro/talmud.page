@@ -60,6 +60,7 @@ import {parseOtzarLaazeiRashi} from "./source_formatting/otzar_laazei_rashi";
 import {SectionSymbolRemover} from "./source_formatting/section_symbol";
 import {SefariaLinkSanitizer} from "./source_formatting/sefaria_link_sanitizer";
 import {ShulchanArukhHeaderRemover} from "./source_formatting/shulchan_arukh_remove_header";
+import {isPehSectionEnding, transformTanakhSpacing} from "./source_formatting/tanakh_spacing";
 import {checkNotUndefined} from "./js/undefined";
 import {getWeekdayReading} from "./weekday_parshiot";
 import {ASERET_YIMEI_TESHUVA_REFS} from "./js/aseret_yimei_teshuva";
@@ -374,6 +375,7 @@ export class InternalSegment {
   hadran?: true;
   // eslint-disable-next-line camelcase
   steinsaltz_start_of_sugya?: true;
+  lastSegmentOfSection?: true;
   defaultMergeWithNext?: true;
 
   constructor({hebrew, english, ref}: InternalSegmentConstructorParams) {
@@ -432,6 +434,9 @@ export class InternalSegment {
     }
     if (this.steinsaltz_start_of_sugya) {
       json.steinsaltz_start_of_sugya = this.steinsaltz_start_of_sugya;
+    }
+    if (this.lastSegmentOfSection) {
+      json.lastSegmentOfSection = true;
     }
     if (this.defaultMergeWithNext) {
       json.defaultMergeWithNext = this.defaultMergeWithNext;
@@ -1177,6 +1182,19 @@ class TanakhApiRequestHandler extends AbstractApiRequestHandler {
 
   protected makeId(bookName: string, page: string): string {
     return page;
+  }
+
+  protected translateHebrewText(
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    text: sefaria.TextType, ref: string): sefaria.TextType {
+    return sefariaTextTypeTransformation(transformTanakhSpacing)(text);
+  }
+
+  protected postProcessSegment(segment: InternalSegment): InternalSegment {
+    if (typeof segment.hebrew === "string" && isPehSectionEnding(segment.hebrew)) {
+      segment.lastSegmentOfSection = true;
+    }
+    return segment;
   }
 }
 
