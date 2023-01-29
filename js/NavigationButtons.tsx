@@ -1,15 +1,13 @@
 import * as React from "react";
 import * as PropTypes from 'prop-types';
-import {disableBackButtonProtection} from "./block_back_button";
-import {$} from "./jquery";
 import {onClickKeyListener} from "./key_clicks";
-import {useHtmlRef} from "./hooks";
 import {NavigationExtension} from "./NavigationExtension";
 import Modal from "./Modal";
 import {NullaryFunction} from "./types";
+import {SearchBar} from "./SearchBar";
 
 const {
-  useEffect,
+  useRef,
   useState,
 } = React;
 
@@ -23,19 +21,6 @@ const buttonClasses = (...extra: string[]) => {
     "mdl-button--colored",
     ...extra,
   ].join(" ");
-};
-
-const newSearch = (searchTerm: string): void => {
-  const form = document.createElement("form");
-  document.body.append(form);
-  form.method = "post";
-  form.action = `${window.location.origin}/view_daf`;
-  const input = document.createElement("input");
-  input.type = "hidden";
-  input.name = "search_term";
-  input.value = searchTerm;
-  form.append(input);
-  form.submit();
 };
 
 interface NavigationButtonRowProps {
@@ -54,19 +39,9 @@ const NavigationButtonRow = (props: NavigationButtonRowProps) => {
   } = props;
   const [showModal, setShowModal] = useState(false);
   const classes = ["navigation-button-container"];
-  const modalSearchBarRef = useHtmlRef<HTMLInputElement>();
-
-  useEffect(() => {
-    $(modalSearchBarRef.current).val(defaultEditText());
-  });
+  const submitRef = useRef<NullaryFunction<unknown>>();
 
   if (isNext) classes.push("next");
-
-  const onSubmit = (event?: any) => {
-    if (event) event.preventDefault();
-    disableBackButtonProtection();
-    newSearch(modalSearchBarRef.current.value);
-  };
 
   return (
     <div className={classes.join(" ")}>
@@ -85,20 +60,11 @@ const NavigationButtonRow = (props: NavigationButtonRowProps) => {
       </button>
       {showModal && (
         <Modal
-          content={(
-            <form onSubmit={event => onSubmit(event)}>
-              <div
-                className="mdl-textfieldmdl-js-textfield
-                           mdl-textfield--expandable
-                           mdl-textfield--floating-label">
-                <input ref={modalSearchBarRef} className="mdl-textfield__input" type="text" />
-              </div>
-            </form>
-          )}
+          content={<SearchBar defaultValue={defaultEditText()} submitRef={submitRef} />}
           cancelText="Cancel"
           onCancel={() => setShowModal(false)}
           acceptText="Navigate"
-          onAccept={() => onSubmit()} />
+          onAccept={() => submitRef.current!()} />
       )}
     </div>
   );

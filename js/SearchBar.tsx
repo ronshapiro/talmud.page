@@ -1,17 +1,30 @@
 import * as React from "react";
+import {QueryGuess} from "../apiTypes";
 import {disableBackButtonProtection} from "./block_back_button";
 import {useHtmlRef} from "./hooks";
 import {$} from "./jquery";
-import {QueryGuess} from "../apiTypes";
+import {NullaryFunction} from "./types";
 
-const {useState} = React;
+const {
+  useEffect,
+  useState,
+} = React;
 
-export function SearchBar(): React.ReactElement {
+interface SearchBarPropTypes {
+  defaultValue?: string;
+  submitRef?: React.MutableRefObject<NullaryFunction<unknown> | undefined>;
+}
+
+export function SearchBar({
+  defaultValue,
+  submitRef,
+}: SearchBarPropTypes): React.ReactElement {
   const ref = useHtmlRef<HTMLInputElement>();
   const [searchError, setSearchError] = useState("");
   const [guesses, setGuesses] = useState<QueryGuess[]>([]);
   const [isLoading, setLoading] = useState(false);
   const [hasError, setError] = useState(false);
+  const [hasSetDefaultValue, setDefaultValueSet] = useState(false);
 
   const onSubmit = (event?: any) => {
     if (event) event.preventDefault();
@@ -44,6 +57,9 @@ export function SearchBar(): React.ReactElement {
         .then(handler);
     }
   };
+  if (submitRef) {
+    submitRef.current = onSubmit;
+  }
 
   const suffixHtml = [];
   if (guesses.length > 0) {
@@ -59,6 +75,13 @@ export function SearchBar(): React.ReactElement {
   } else if (hasError) {
     suffixHtml.push("Error while running");
   }
+
+  useEffect(() => {
+    if (!hasSetDefaultValue && defaultValue) {
+      ref.current.value = defaultValue;
+      setDefaultValueSet(true);
+    }
+  });
 
   return (
     <>
