@@ -1,4 +1,7 @@
 import {JSDOM} from "jsdom";
+import {checkImportsAreAllowed} from "./import_blocker";
+
+checkImportsAreAllowed();
 
 const {Node, DOMParser} = new JSDOM().window;
 const domParser = new DOMParser();

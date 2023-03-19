@@ -7,7 +7,6 @@ import * as sendgrid from "@sendgrid/mail";
 import {range} from "underscore";
 import {parse as urlParse} from "url";
 import {v4 as uuid} from "uuid";
-import {ApiException, ApiRequestHandler, RealRequestMaker} from "./api_request_handler";
 import {
   Book,
   books,
@@ -23,7 +22,6 @@ import {
 } from "./apiTypes";
 import {WeightBasedLruCache} from "./cache";
 import {CorrectionPostData} from "./correctionTypes";
-import {EscapeHtmlHighlightCorrections} from "./source_formatting/escape_html_corrections";
 import {htmlEscape} from "./html_escape";
 import {ConsoleLogger, Timer} from "./logger";
 import {PromiseChain} from "./js/promises";
@@ -31,8 +29,6 @@ import {Sitemap} from "./robots";
 import {jsonSize} from "./util/json_size";
 import {writeJson} from "./util/json_files";
 import {getWeekdayReading} from "./weekday_parshiot";
-
-const apiRequestHandler = new ApiRequestHandler(new RealRequestMaker());
 
 const app = express();
 const debug = app.settings.env === "development";
@@ -332,6 +328,10 @@ async function getAndCacheApiResponse(
   logger: Logger,
   verb = "Requesting",
 ): Promise<[ApiResponse | ApiErrorResponse, number]> {
+  // Load these types lazily to defer slow JSDOM import from source_formatting/html_visitor.ts
+  const {ApiException, ApiRequestHandler, RealRequestMaker} = await import("./api_request_handler");
+  const apiRequestHandler = new ApiRequestHandler(new RealRequestMaker());
+
   const cacheKey = `${title} % ${page}`;
   const cached = apiResponseCache.get(cacheKey);
   if (cached) {
@@ -436,6 +436,7 @@ app.get("/draw", (req, res) => res.render("draw.html"));
 app.get("/draw/image/*", (req, res) => res.sendFile("draw_images/1495_300ppi.jpg"));
 
 app.get("/robots.txt", (req, res) => {
+  res.set("Cache-control", `public, max-age=${60 * 60 * 24 * 90}`);
   res.status(200).type("txt").send(`User-agent: *
 Allow: /
 
@@ -450,7 +451,7 @@ app.get('/sitemap.xml', (req, res) => {
 
 if (fs.existsSync("sendgrid_api_key")) {
   sendgrid.setApiKey(fs.readFileSync("sendgrid_api_key", {encoding: "utf-8"}));
-  app.post("/corrections", (req, res) => {
+  app.post("/corrections", async (req, res) => {
     if (debug) {
       // eslint-disable-next-line no-console
       console.log("Not sending correction in debug mode", req.body);
@@ -469,6 +470,8 @@ if (fs.existsSync("sendgrid_api_key")) {
       user,
       pathname,
     } = params;
+    const {EscapeHtmlHighlightCorrections} = await import(
+      "./source_formatting/escape_html_corrections");
     const maybeExcapeHighlightedSection = (text: string | undefined) => {
       return text && EscapeHtmlHighlightCorrections.process(text);
     };
