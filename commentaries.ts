@@ -277,7 +277,7 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
   },
   {
     englishName: "Steinsaltz Masechet Intro",
-    refPattern: /^Introductions to the Babylonian Talmud, (.*), Introduction to \1 .*/,
+    refPattern: /^Introductions to the Babylonian Talmud, (.*), Introduction to \1( .*)?/,
     hebrewName: "הקדמה למסכת",
     className: "steinsaltz-masechet-intro",
   },

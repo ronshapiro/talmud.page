@@ -420,7 +420,7 @@ h2, .title {
     color: var(--text-color) !important;
 }
 
-.gemara-container.hadran {
+.section-container:has(> .hadran) {
     padding-bottom: 80px;
 }
 

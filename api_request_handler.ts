@@ -445,7 +445,7 @@ export class InternalSegment {
   }
 }
 
-const HADRAN_PATTERN = /^((<br>)+<big><strong>)?הדרן עלך .*/;
+const HADRAN_PATTERN = /^((<br>)+<big><strong>)?הדרן עלי?ך .*/;
 
 function isHadran(text: sefaria.TextType): boolean {
   if (Array.isArray(text)) {
@@ -769,6 +769,10 @@ export abstract class AbstractApiRequestHandler {
             ...mergedRefs.map(x => link.anchorRefExpanded.indexOf(x)).filter(x => x !== -1));
           if (sourceRefIndex === Infinity) {
             sourceRefIndex = 0;
+          }
+          if (targetRef.startsWith("Introductions to the Babylonian Talmud")
+            && targetRef.includes("Summary of Perek")) {
+            sourceRefIndex = link.anchorRefExpanded.length - 1;
           }
           const sourceRef = link.anchorRefExpanded[sourceRefIndex];
           const targetRefs = linkGraph.getGraph(sourceRef);
@@ -1107,7 +1111,13 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
     if (typeof segment.hebrew === "string" && isHadran(segment.hebrew)) {
       segment.hebrew = segment.hebrew.replace(/<br>/g, "");
       segment.english = "";
+      const oldCommentary = segment.commentary;
       segment.commentary = new InternalCommentary();
+      for (const comment of oldCommentary.comments) {
+        if (comment.ref.includes("Summary of Perek")) {
+          segment.commentary.addComment(comment);
+        }
+      }
       segment.hadran = true;
     }
 
