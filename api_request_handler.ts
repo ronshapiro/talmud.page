@@ -62,21 +62,39 @@ import {SefariaLinkSanitizer} from "./source_formatting/sefaria_link_sanitizer";
 import {ShulchanArukhHeaderRemover} from "./source_formatting/shulchan_arukh_remove_header";
 import {isPehSectionEnding, transformTanakhSpacing} from "./source_formatting/tanakh_spacing";
 import {checkNotUndefined} from "./js/undefined";
+import {steinsaltzApiUrl} from "./steinsaltz";
 import {getWeekdayReading} from "./weekday_parshiot";
 import {ASERET_YIMEI_TESHUVA_REFS} from "./js/aseret_yimei_teshuva";
 
 export abstract class RequestMaker {
   abstract makeRequest<T>(endpoint: string): Promise<T>;
+  abstract makeSteinsaltzRequest(masechet: string, daf: string): Promise<any>;
 }
+
+const RETRY_OPTIONS = {
+  retry: {
+    retries: 4,
+    minTimeout: 200,
+  },
+};
+
+const STEINSALTZ_OPTIONS = {
+  headers: {
+    "api-key": "Qt23AFSTt9AAXhct",
+  },
+  ...RETRY_OPTIONS,
+};
+const IGNORE_STEINSALTZ = "<ignore steinsaltz>";
 
 export class RealRequestMaker extends RequestMaker {
   makeRequest<T>(endpoint: string): Promise<T> {
-    return fetch(`https://sefaria.org/api${encodeURI(endpoint)}`, {
-      retry: {
-        retries: 4,
-        minTimeout: 200,
-      },
-    })
+    return fetch(`https://sefaria.org/api${encodeURI(endpoint)}`, RETRY_OPTIONS)
+      .then(x => x.json())
+      .then(json => (json.error ? Promise.reject(json) : Promise.resolve(json)));
+  }
+
+  makeSteinsaltzRequest(masechet: string, daf: string): Promise<any> {
+    return fetch(steinsaltzApiUrl(masechet, daf), STEINSALTZ_OPTIONS)
       .then(x => x.json())
       .then(json => (json.error ? Promise.reject(json) : Promise.resolve(json)));
   }
@@ -564,7 +582,7 @@ export abstract class AbstractApiRequestHandler {
 
   protected postProcessAllSegments(
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    segments: InternalSegment[], bookName: string, page: string,
+    segments: InternalSegment[], bookName: string, page: string, ...extraValues: any[]
   ): InternalSegment[] {
     return segments;
   }
@@ -630,7 +648,13 @@ export abstract class AbstractApiRequestHandler {
           })
           .then(() => linkGraph);
       }),
+      ...this.extraPromises(bookName, page),
     ]).then(args => this.transformData(bookName, page, ...args));
+  }
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  protected extraPromises(bookName: string, page: string): Promise<any>[] {
+    return [];
   }
 
   protected expandRef(ref: string): string[] {
@@ -908,6 +932,7 @@ export abstract class AbstractApiRequestHandler {
     page: string,
     textResponse: sefaria.TextResponse,
     linkGraph: LinkGraph,
+    ...extraValues: any[]
   ): ApiResponse {
     const timer = this.logger.newTimer();
     const mainRef = textResponse.ref;
@@ -945,7 +970,7 @@ export abstract class AbstractApiRequestHandler {
 
     segments = this.injectSegmentSeperators(segments);
     segments = segments.map(x => this.postProcessSegment(x));
-    segments = this.postProcessAllSegments(segments, bookName, page);
+    segments = this.postProcessAllSegments(segments, bookName, page, ...extraValues);
 
     if (segments.length === 0) {
       this.logger.log(`No segments for ${mainRef}`);
@@ -1098,6 +1123,13 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
     return page;
   }
 
+  protected extraPromises(masechet: string, daf: string): Promise<any>[] {
+    return [
+      this.requestMaker.makeSteinsaltzRequest(masechet, daf.slice(0, -1))
+        .catch(() => IGNORE_STEINSALTZ),
+    ];
+  }
+
   protected postProcessSegment(segment: InternalSegment): InternalSegment {
     this.resolveDuplicatedNestedCommentaries(segment.commentary);
 
@@ -1166,6 +1198,7 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
     segments: InternalSegment[],
     masechet: string,
     amud: string,
+    steinsaltzResult: any,
   ): InternalSegment[] {
     if (masechet === "Nazir" && amud === "33b") {
       return [new InternalSegment({
@@ -1174,7 +1207,48 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
         ref: "synthetic",
       })];
     }
+    if (steinsaltzResult !== IGNORE_STEINSALTZ) {
+      try {
+        this.addSteinsaltzData(steinsaltzResult, amud, segments);
+      } catch (e) {
+        this.logger.error(e);
+      }
+    }
+
     return segments;
+  }
+
+  private addSteinsaltzData(steinsaltzResult: any, amud: string, segments: InternalSegment[]) {
+    const steinsaltzAmud = amud.endsWith("a") ? 0 : 1;
+    const steinsaltzSegments = steinsaltzResult.contents[0].content.filter(
+      (s: any) => s.amud === steinsaltzAmud);
+    if (steinsaltzSegments.length !== segments.length) {
+      this.logger.error("Unequal segment length", segments.length, steinsaltzSegments.length);
+      return;
+    }
+
+    for (const [segment, steinsaltz] of _.zip(segments, steinsaltzSegments)) {
+      let i = 0;
+      for (const [hebrew, english] of _.zip(steinsaltz.notesHeb, steinsaltz.notesEng)) {
+        i += 1;
+        segment.commentary.addComment(new Comment(
+          "Steinsaltz In-Depth",
+          hebrew ? hebrew.text : "",
+          english ? english.text : "",
+          `Steinsaltz comment #${i} on ` + segment.ref,
+          english ? english.titleEng : "",
+          // the hebrew note only supplies the "title" field, and it's not vocalized.
+          english ? english.titleHeb : hebrew.title,
+        ));
+        if (hebrew && hebrew.files.length > 0) {
+          this.logger.error(segment.ref, "heb", hebrew.files);
+        }
+        if (english && english.files.length > 0) {
+          this.logger.error(segment.ref, "eng", english.files);
+        }
+        // TODO: figure out how files are stored
+      }
+    }
   }
 
   protected extraSegments(masechet: string, amud: string): Section[] {

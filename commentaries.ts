@@ -294,6 +294,12 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     className: "steinsaltz-perek-summary",
   },
   {
+    englishName: "Steinsaltz In-Depth",
+    hebrewName: "הערות שטיינזלץ",
+    className: "steinsaltz-comments",
+    showTitle: true,
+  },
+  {
     englishName: "Steinsaltz",
     hebrewName: "שטיינזלץ",
     className: "translation",

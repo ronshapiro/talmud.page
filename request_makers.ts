@@ -33,6 +33,10 @@ abstract class FileRequestMaker extends RequestMaker {
   inputFile(endpoint: string): string {
     return `${this.rootDirectory}/${inputFileName(parseEndpoint(endpoint))}`;
   }
+
+  steinsaltzInputFile(masechet: string, daf: string): string {
+    return `${this.rootDirectory}/steinsaltz/${masechet}_${daf}.json`;
+  }
 }
 
 export class RecordingRequestMaker extends FileRequestMaker {
@@ -42,11 +46,25 @@ export class RecordingRequestMaker extends FileRequestMaker {
     promise.then(results => writeJson(this.inputFile(endpoint), results));
     return promise;
   }
+
+  makeSteinsaltzRequest(masechet: string, daf: string): Promise<any> {
+    const promise = this.realRequestMaker.makeSteinsaltzRequest(masechet, daf);
+    promise.then(results => writeJson(this.steinsaltzInputFile(masechet, daf), results));
+    return promise;
+  }
 }
 
 export class FakeRequestMaker extends FileRequestMaker {
   makeRequest<T>(endpoint: string): Promise<T> {
-    return readUtf8(this.inputFile(endpoint))
+    return this.readJson<T>(this.inputFile(endpoint));
+  }
+
+  makeSteinsaltzRequest(masechet: string, daf: string): Promise<any> {
+    return this.readJson<any>(this.steinsaltzInputFile(masechet, daf));
+  }
+
+  private readJson<T>(fileName: string): Promise<T> {
+    return readUtf8(fileName)
       .catch(e => {
         throw new Error(
           `Error opening ${e.path}. This likely means that the test data needs to be updated.`);
