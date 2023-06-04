@@ -135,8 +135,8 @@ const Kinds = {
 
   GOOGLE_SIGN_IN: new Kind({
     prefix: "googleSignIn",
-    customShowLogic: () => !localStorage.hasSignedInWithGoogle,
-    maxShowCount: 3,
+    customShowLogic: () => localStorage.hasSignedInWithGoogle !== "true",
+    maxShowCount: 10,
     cssClass: "googleSignIn",
   }),
 
