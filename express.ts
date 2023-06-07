@@ -507,6 +507,40 @@ if (fs.existsSync("sendgrid_api_key")) {
         res.sendStatus(500);
       });
   });
+
+  app.post("/feedback", async (req, res) => {
+    if (debug) {
+      req.logger.error("Not sending emails in debug mode", req.body);
+      res.status(200).send({});
+      return;
+    }
+    const userId = req.body.localStorage.userUuid ?? "<somehow missing>";
+    const text: string[] = [];
+    const html: string[] = [];
+    const addLog = (map: any, heading: string) => {
+      text.push(heading);
+      html.push(`<h3>${heading}</h3><ul>`);
+      for (const [key, value] of Object.entries(map)) {
+        text.push(`- ${key}: ${value}`);
+        html.push(`<li>${key}: <b>${value}</b></li>`);
+      }
+      html.push("</ul>");
+    };
+    addLog(req.body.form, "Feedback data");
+    addLog(req.body.localStorage, "localStorage");
+
+    sendgrid.send({
+      to: "feedback-form@talmud.page",
+      from: "corrections@talmud.page",
+      subject: `Feedback Form: ${userId}`,
+      text: text.join("\n"),
+      html: html.join(""),
+    }).then(() => res.status(200).send({}))
+      .catch(e => {
+        console.error(e, e?.response?.body || {});
+        res.sendStatus(500);
+      });
+  });
 }
 
 if (debug) {

@@ -1,4 +1,5 @@
 /* global gtag,  */
+import {v4 as uuid} from "uuid";
 import {ApiCache} from "./ApiCache.ts";
 import {mainCache} from "./caches.ts";
 import {$} from "./jquery";
@@ -9,6 +10,10 @@ import {enableBackButtonProtection} from "./block_back_button.ts";
 import {PromiseQueue, timeoutPromise} from "./promises";
 import {registerRefSelectionSnackbarListener} from "./ref_selection_snackbar.ts";
 import {serviceWorkerMain} from "./service_worker_registration.ts";
+
+if (!localStorage.userUuid) {
+  localStorage.userUuid = uuid();
+}
 
 const bookTitleAndRange = () => {
   const metadata = amudMetadata();

@@ -12,6 +12,7 @@ import {v4 as newUuid} from "uuid";
 import {addDriveComments} from "./addDriveComments.ts";
 import {amudMetadata} from "./amud.ts";
 import {CorrectionModal} from "./CorrectionModal.tsx";
+import {FeedbackView} from "./Feedback.tsx";
 import isEmptyText from "./is_empty_text.ts";
 import {$} from "./jquery";
 import {
@@ -700,6 +701,13 @@ class Root extends Component {
       return [];
     }
 
+    if (!isFake && localStorage.showFeedbackForm === "true") {
+      const hideState = () => this.setState(oldState => {
+        return {...oldState, feedbackTrigger: !oldState.feedbackTrigger};
+      });
+      return <FeedbackView hide={() => hideState()} />;
+    }
+
     const baseAmudim = allAmudim();
     const amudim = baseAmudim.map((amud, i) => (
       <Amud
@@ -893,6 +901,15 @@ export class Renderer {
       host);
 
     $(window).resize(_.throttle(() => this.forceUpdate(), 500));
+
+    const parsedPageViews = parseInt(localStorage.pageViews);
+    const pageViews = Number.isNaN(parsedPageViews) ? 0 : parsedPageViews;
+    localStorage.pageViews = pageViews + 1;
+    if (pageViews === 10
+        || pageViews === 100
+        || (pageViews > 0 && pageViews % 248 === 0)) {
+      localStorage.showFeedbackForm = "true";
+    }
   }
 
   setAmud(amudData) {
