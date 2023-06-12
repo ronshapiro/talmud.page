@@ -317,10 +317,17 @@ app.get("/:title/:start/to/:end", (req, res) => {
   return res.render(template(book), {title: `${title} ${start} - ${end}`, bookTitle: book.canonicalName});
 });
 
-const apiResponseCache = new WeightBasedLruCache<ApiResponse>(
-  150 * 1e6, // 150MB,
-  jsonSize,
-);
+class CacheValue<T> {
+  constructor(
+    readonly promise: Promise<T>,
+    readonly actualValue?: T | undefined) {}
+}
+
+const apiResponseCache = new WeightBasedLruCache<
+    CacheValue<[ApiResponse | ApiErrorResponse, number]>>(
+      150 * 1e6, // 150MB,
+      v => (v.actualValue ? jsonSize(v.actualValue[0]) : 0),
+    );
 
 async function getAndCacheApiResponse(
   title: string,
@@ -335,29 +342,37 @@ async function getAndCacheApiResponse(
   const cacheKey = `${title} % ${page}`;
   const cached = apiResponseCache.get(cacheKey);
   if (cached) {
-    return Promise.resolve([cached, 200]);
+    logger.debug("cache hit");
+    return cached.promise;
   }
 
-  try {
-    logger.log(verb);
-    const response = await apiRequestHandler.handleRequest(title, page, logger);
-    apiResponseCache.put(cacheKey, response);
-    logger.log(`${verb} --- Done`);
-    return Promise.resolve([response, 200]);
-  } catch (e) {
-    if (e instanceof ApiException) {
-      return Promise.resolve([{
-        error: e.message,
-        code: e.internalCode,
-      }, e.httpStatus]);
-    }
-    const _uuid = uuid();
-    logger.error(_uuid, e);
-    return Promise.resolve([{
-      error: "An unknown error occurred.",
-      id: _uuid,
-    }, 500]);
-  }
+  logger.log(verb);
+  const originalPromise = apiRequestHandler.handleRequest(title, page, logger)
+    .then(response => {
+      logger.log(`${verb} --- Done`);
+      const newValue: [ApiResponse, number] = [response, 200];
+      const newPromise = Promise.resolve(newValue);
+      apiResponseCache.put(cacheKey, new CacheValue(newPromise, newValue));
+      return newPromise;
+    })
+    .catch((e: Error) => {
+      apiResponseCache.remove(cacheKey);
+      if (e instanceof ApiException) {
+        return Promise.resolve<[ApiErrorResponse, number]>([{
+          error: e.message,
+          code: e.internalCode,
+        }, e.httpStatus]);
+      }
+      const _uuid = uuid();
+      logger.error(_uuid, e);
+      return Promise.resolve<[ApiErrorResponse, number]>([{
+        error: "An unknown error occurred.",
+        id: _uuid,
+      }, 500]);
+    });
+  apiResponseCache.put(cacheKey, new CacheValue(originalPromise));
+
+  return originalPromise;
 }
 
 const preCachedPageStack: [string, string, Logger][] = [];

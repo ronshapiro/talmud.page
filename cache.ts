@@ -71,4 +71,13 @@ export class WeightBasedLruCache<T> {
     delete this.ttls[oldest.key];
     this.currentSize -= oldest.weight;
   }
+
+  remove(key: string): void {
+    const value = this.ttls[key];
+    if (value) {
+      delete this.ttls[key];
+      this.currentSize -= value.weight;
+      this.lruHeap.remove(value);
+    }
+  }
 }
