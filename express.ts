@@ -541,13 +541,18 @@ if (fs.existsSync("sendgrid_api_key")) {
       }
       html.push("</ul>");
     };
-    addLog(req.body.form, "Feedback data");
+    if (req.body.ignored) {
+      text.push("Form Ignored");
+      html.push("<h1>Form Ignored</h1>");
+    } else {
+      addLog(req.body.form, "Feedback data");
+    }
     addLog(req.body.localStorage, "localStorage");
 
     sendgrid.send({
       to: "feedback-form@talmud.page",
       from: "corrections@talmud.page",
-      subject: `Feedback Form: ${userId}`,
+      subject: `Feedback Form: ${userId} ${req.body.ignored ? "IGNORED" : ""}`.trim(),
       text: text.join("\n"),
       html: html.join(""),
     }).then(() => res.status(200).send({}))

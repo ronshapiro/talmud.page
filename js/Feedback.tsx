@@ -143,6 +143,7 @@ export function FeedbackView({hide}: FeedbackViewProps): React.ReactElement {
         <button
           className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
           onClick={() => {
+            sendFeedbackRequest({ignored: true, localStorage: {...localStorage}});
             localStorage.showFeedbackForm = "ignored";
             hide();
           }}
