@@ -561,6 +561,35 @@ if (fs.existsSync("sendgrid_api_key")) {
         res.sendStatus(500);
       });
   });
+
+  app.post("/event", async (req, res) => {
+    if (debug) {
+      req.logger.error("Not sending emails in debug mode", req.body);
+      res.status(200).send({});
+      return;
+    }
+    const userId = req.body.localStorage.userUuid ?? "<somehow missing>";
+    const text: string[] = [];
+    const html: string[] = ["<ul>"];
+    for (const [key, value] of Object.entries(req.body)) {
+      if (key === "subject") continue;
+      text.push(`- ${key}: ${value}`);
+      html.push(`<li>${key}: ${value}</li>`);
+    }
+    html.push("</ul>");
+
+    sendgrid.send({
+      to: "event@talmud.page",
+      from: "corrections@talmud.page",
+      subject: `Event: ${userId} ${req.body.subject ?? ""}`.trim(),
+      text: text.join("\n"),
+      html: html.join(""),
+    }).then(() => res.status(200).send({}))
+      .catch(e => {
+        console.error(e, e?.response?.body || {});
+        res.sendStatus(500);
+      });
+  });
 }
 
 if (debug) {

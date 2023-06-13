@@ -1,4 +1,5 @@
 /* global gtag */
+import {sendEvent} from "./event";
 import {$} from "./jquery";
 import PREFERENCES_PAGE_VERSION from "./preferences_version";
 
@@ -148,6 +149,21 @@ const Kinds = {
     cssClass: "errors",
     extraCssClasses: ["mdl-color-text--accent"],
   }),
+
+  SHARE: new Kind({
+    prefix: "shareSnackbar",
+    cssClass: "share-talmud-page",
+    customShowLogic: () => {
+      const showCount = parseInt(localStorage.shareSnackbarShowCounter) || 0;
+      localStorage.shareSnackbarShowCounter = showCount + 1;
+      if (showCount === 0) return false;
+      if (showCount < 400) {
+        return showCount % 50 === 0;
+      }
+      return showCount % 100 === 0;
+    },
+    maxShowCount: 9999999,
+  }),
 };
 
 class Snackbar {
@@ -207,18 +223,19 @@ class SnackbarManager {
   googleSignIn: Snackbar;
   textSelection: Snackbar;
   errors: Snackbar;
+  share: Snackbar;
 
   startupKind: Kind | undefined;
 
   constructor() {
-    for (const kind of [Kinds.PREFERENCES_NUDGE, Kinds.GOOGLE_SIGN_IN]) {
+    for (const kind of [Kinds.PREFERENCES_NUDGE, Kinds.GOOGLE_SIGN_IN, Kinds.SHARE]) {
       if (kind.shouldResetShowCount && kind.shouldResetShowCount()) {
         kind.setShownCount(0);
         delete localStorage[kind.dismissedString()];
       }
-      if (kind.customShowLogic!()
-          && kind.shownCount() < kind.maxShowCount!
-          && !localStorage[kind.dismissedString()]) {
+      if (!localStorage[kind.dismissedString()]
+          && kind.customShowLogic!()
+          && kind.shownCount() < kind.maxShowCount!) {
         this.startupKind = kind;
         break;
       }
@@ -226,6 +243,7 @@ class SnackbarManager {
 
     this.preferencesNudge = new StartupSnackbar(Kinds.PREFERENCES_NUDGE, this);
     this.googleSignIn = new StartupSnackbar(Kinds.GOOGLE_SIGN_IN, this);
+    this.share = new StartupSnackbar(Kinds.SHARE, this);
     this.textSelection = new Snackbar(Kinds.TEXT_SELECTION, this);
     // TODO: make each error it's own snackbar? That way each can animate on its own
     this.errors = new Snackbar(Kinds.ERRORS, this);
@@ -254,4 +272,31 @@ $(document).ready(() => {
         onClick: () => snackbars.preferencesNudge.dismissButtonImpl(),
       },
     ]);
+
+  const shareData = {url: "https://talmud.page"};
+  if (navigator.canShare && navigator.canShare(shareData)) {
+    const text = [
+      "Share talmud.page with a friend?",
+      "Know someone who would enjoy learning here?",
+      "Spread the talmud.page love!",
+      "talmud.page isn't well known. Help change that?",
+    ].sort(() => Math.random() - .5)[0];
+    snackbars.share.show(text, [
+      {
+        text: "Dismiss",
+        onClick: () => {
+          sendEvent({share: false, text, subject: "Share dismissed"});
+          snackbars.share.dismissButtonImpl();
+        },
+      },
+      {
+        text: `<i class="material-icons">share</i>`,
+        onClick: () => {
+          snackbars.share.dismissButtonImpl();
+          navigator.share(shareData);
+          sendEvent({share: true, text, subject: "Share"});
+        },
+      },
+    ]);
+  }
 });
