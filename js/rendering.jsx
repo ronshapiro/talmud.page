@@ -15,6 +15,7 @@ import {CorrectionModal} from "./CorrectionModal.tsx";
 import {FeedbackView} from "./Feedback.tsx";
 import isEmptyText from "./is_empty_text.ts";
 import {$} from "./jquery";
+import {LocalStorageInt} from "./localStorage";
 import {
   NextButton,
   PreviousButton,
@@ -902,9 +903,7 @@ export class Renderer {
 
     $(window).resize(_.throttle(() => this.forceUpdate(), 500));
 
-    const parsedPageViews = parseInt(localStorage.pageViews);
-    const pageViews = Number.isNaN(parsedPageViews) ? 0 : parsedPageViews;
-    localStorage.pageViews = pageViews + 1;
+    const pageViews = new LocalStorageInt("pageViews").getAndIncrement();
     if (pageViews === 10
         || pageViews === 100
         || (pageViews > 0 && pageViews % 248 === 0)) {

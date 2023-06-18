@@ -1,6 +1,7 @@
 /* global gtag */
 import {sendEvent} from "./event";
 import {$} from "./jquery";
+import {LocalStorageInt} from "./localStorage";
 import PREFERENCES_PAGE_VERSION from "./preferences_version";
 
 const moveSnackbarOffscreen = () => $("#snackbar").css("bottom", -400).promise();
@@ -103,7 +104,7 @@ class Kind implements AbstractKind {
   }
 
   shownCount(): number {
-    return parseInt(localStorage[this.shownCountString()]) || 0;
+    return new LocalStorageInt(this.shownCountString()).get() || 0;
   }
 
   setShownCount(newCount: number): void {
@@ -124,8 +125,9 @@ const Kinds = {
     prefix: "preferencePage",
     customShowLogic: () => !hasSeenLatestPreferences() || true,
     shouldResetShowCount: () => {
-      if (parseInt(localStorage.lastVersionOfPreferencesPageResetTo) !== PREFERENCES_PAGE_VERSION) {
-        localStorage.lastVersionOfPreferencesPageResetTo = PREFERENCES_PAGE_VERSION;
+      const lastVersion = new LocalStorageInt("lastVersionOfPreferencesPageResetTo");
+      if (lastVersion.get() !== PREFERENCES_PAGE_VERSION) {
+        lastVersion.set(PREFERENCES_PAGE_VERSION);
         return true;
       }
       return false;
@@ -154,8 +156,7 @@ const Kinds = {
     prefix: "shareSnackbar",
     cssClass: "share-talmud-page",
     customShowLogic: () => {
-      const showCount = parseInt(localStorage.shareSnackbarShowCounter) || 0;
-      localStorage.shareSnackbarShowCounter = showCount + 1;
+      const showCount = new LocalStorageInt("shareSnackbarShowCounter").getAndIncrement();
       if (showCount === 0) return false;
       if (showCount < 400) {
         return showCount % 50 === 0;

@@ -5,6 +5,7 @@ import SwipeableViews from "react-swipeable-views";
 import { virtualize } from "react-swipeable-views-utils";
 import componentHandler from "./componentHandler";
 import {useHtmlRef} from "./hooks";
+import {LocalStorageInt} from "./localStorage";
 import {snackbars} from "./snackbar";
 
 const VirtualizeSwipeableViews = virtualize(SwipeableViews);
@@ -174,12 +175,11 @@ export function Preferences({rerender}: PreferencesViewParams): React.ReactEleme
       rerender={rerender}
       localStorageKeyName="offlineMode" />,
   ];
-  const [currentIndex, setIndexPrivate] = useState(
-    (localStorage.preferencesIndex && parseInt(localStorage.preferencesIndex))
-      || 0);
+  const preferencesIndex = new LocalStorageInt("preferencesIndex");
+  const [currentIndex, setIndexPrivate] = useState(preferencesIndex.get() || 0);
   const setIndex = (newIndex: number) => {
     setIndexPrivate(newIndex);
-    localStorage.preferencesIndex = newIndex;
+    preferencesIndex.set(newIndex);
   };
   function slideRenderer({index, key}: SlideRendererParams) {
     const component = options[index % options.length];
