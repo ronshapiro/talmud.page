@@ -3,7 +3,7 @@ import * as React from "react";
 import {useHtmlRef} from "./hooks";
 import {$} from "./jquery";
 import {driveClient} from "./google_drive/singleton";
-import {RetryMethodFactory} from "./retry";
+import {postWithRetry} from "./post";
 
 const {
   useEffect,
@@ -59,23 +59,6 @@ function PrimaryButton({text, onClick}: PrimaryButtonProps): React.ReactElement 
   );
 }
 
-const retry = new RetryMethodFactory({
-  add: (...args) => console.error(args),
-  remove: (..._args) => {},
-}, () => {});
-
-const sendFeedbackRequest = retry.retryingMethod({
-  retryingCall: (data: any) => {
-    return $.ajax({
-      type: "POST",
-      url: `${window.location.origin}/feedback`,
-      data: JSON.stringify(data),
-      dataType: "json",
-      contentType: "application/json",
-    });
-  },
-});
-
 interface FeedbackViewProps {
   hide: () => void;
 }
@@ -95,7 +78,7 @@ export function FeedbackView({hide}: FeedbackViewProps): React.ReactElement {
       data.form.googleSignedInEmail = driveClient.gapi.getSignedInUserEmail();
     }
     data.form.url = window.location.href;
-    sendFeedbackRequest(data);
+    postWithRetry("/feedback", data);
   };
 
   const [showMore, setShowMore] = useState(false);
@@ -143,7 +126,7 @@ export function FeedbackView({hide}: FeedbackViewProps): React.ReactElement {
         <button
           className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
           onClick={() => {
-            sendFeedbackRequest({ignored: true, localStorage: {...localStorage}});
+            postWithRetry("/feedback", {ignored: true, localStorage: {...localStorage}});
             localStorage.showFeedbackForm = "ignored";
             hide();
           }}

@@ -1,19 +1,6 @@
-import {$} from "./jquery";
-import {RetryMethodFactory} from "./retry";
+import {postWithRetry} from "./post";
 
-const retry = new RetryMethodFactory({
-  add: (...args) => console.error(args),
-  remove: (..._args) => {},
-}, () => {});
-
-export const sendEvent = retry.retryingMethod({
-  retryingCall: (data: any) => {
-    return $.ajax({
-      type: "POST",
-      url: `${window.location.origin}/event`,
-      data: JSON.stringify(data),
-      dataType: "json",
-      contentType: "application/json",
-    });
-  },
-});
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+export function sendEvent(data: any): void {
+  postWithRetry("/event", data);
+}

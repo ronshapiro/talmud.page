@@ -24,7 +24,7 @@ interface AnyFunction {
 }
 
 interface RetryingMethodOptions {
-  retryingCall: (..._params: any[]) => Promise<any>;
+  retryingCall: (..._params: any[]) => PromiseLike<any>;
   then?: (_successValue?: any) => void;
   createError?: (..._params: any[]) => string | undefined;
 }

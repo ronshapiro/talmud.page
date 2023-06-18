@@ -2,9 +2,8 @@
 import * as React from "react";
 import {CorrectionUiInfo} from "../correctionTypes";
 import {useHtmlRef} from "./hooks";
-import {$} from "./jquery";
 import Modal from "./Modal";
-import {RetryMethodFactory} from "./retry";
+import {postWithRetry} from "./post";
 import {driveClient} from "./google_drive/singleton";
 
 const {
@@ -20,23 +19,6 @@ declare global {
 export function showCorrectionModal(data: CorrectionUiInfo): void {
   window.showCorrectionModal(data);
 }
-
-const retry = new RetryMethodFactory({
-  add: (...args) => console.error(args),
-  remove: (..._args) => {},
-}, () => {});
-
-const makeRequest = retry.retryingMethod({
-  retryingCall: (data: any) => {
-    return $.ajax({
-      type: "POST",
-      url: `${window.location.origin}/corrections`,
-      data: JSON.stringify(data),
-      dataType: "json",
-      contentType: "application/json",
-    });
-  },
-});
 
 export function CorrectionModal(): React.ReactElement | null {
   const [isShowing, setShowing] = useState(false);
@@ -54,7 +36,7 @@ export function CorrectionModal(): React.ReactElement | null {
   const onSubmit = (event?: any) => {
     if (event) event.preventDefault();
     const userText = ref.current.value;
-    makeRequest({
+    postWithRetry("/corrections", {
       ...refData,
       userText,
       user: driveClient.gapi.getSignedInUserEmail(),
