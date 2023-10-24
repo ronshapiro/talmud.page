@@ -8,6 +8,7 @@ import {Runner} from "./page_runner.js";
 import {getHebrewDate as getJewishDate, isMaybePurim, omitTachanun} from "./hebrew_calendar";
 import {ASERET_YIMEI_TESHUVA_REFS} from "./aseret_yimei_teshuva.ts";
 
+const IS_NATIONAL_TRAGEDY = true;
 const INJECT_WEEKDAY_TORAH_PORTION_AFTER_REF = (
   "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Reading from Sefer, Birkat Hatorah 6");
 
@@ -170,12 +171,14 @@ class SiddurRenderer extends LiturgyRenderer {
       ignored.push("tp::Annenu");
     }
 
-    if (hebrewDay.isTaanis()) {
-      ignored.push(...refRanges(
-        "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Avinu Malkenu ", 22, 27));
-    } else if (hebrewDay.isAseresYemeiTeshuva()) {
+    // Always prefer Aseret Yimei Teshuva, because if it's Tzom Gedalia, Aseret Yimei Teshuva
+    // version is still said
+    if (hebrewDay.isAseresYemeiTeshuva()) {
       ignored.push(...refRanges(
         "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Avinu Malkenu ", 28, 33));
+    } else if (hebrewDay.isTaanis() || IS_NATIONAL_TRAGEDY) {
+      ignored.push(...refRanges(
+        "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Avinu Malkenu ", 22, 27));
     } else {
       ignored.push(...refRanges(
         "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Avinu Malkenu ", 1, 53));
