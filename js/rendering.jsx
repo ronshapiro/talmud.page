@@ -15,7 +15,7 @@ import {CorrectionModal} from "./CorrectionModal.tsx";
 import {FeedbackView} from "./Feedback.tsx";
 import isEmptyText from "./is_empty_text.ts";
 import {$} from "./jquery";
-import {LocalStorageInt} from "./localStorage";
+import {LocalStorageInt, LocalStorageLru} from "./localStorage";
 import {
   NextButton,
   PreviousButton,
@@ -513,6 +513,7 @@ function Section({sections, sectionLabel, toggleMerging, isExpanded}) {
       classes={gemaraContainerClasses}
       indicator={isExpanded}
       onUnexpand={isExpanded ? () => toggleMerging(sections[0].uuid) : undefined}
+      sectionIdForHighlighting={sections[0].ref}
     />,
   );
 
@@ -841,6 +842,13 @@ export class Renderer {
       ignoredSectionRefs: () => this.ignoredSectionRefs(),
       expandTranslationOnMergedSectionExpansion: this.expandTranslationOnMergedSectionExpansion,
       compactLayout: () => this.allowCompactLayout && localStorage.layoutOption === "compact",
+      highlightedIds: new LocalStorageLru(
+        "highlightedIds",
+        // 100 seems like enough to make sure that we don't save too much data, but also don't have
+        // to worry about needing to re-render. This isn't "state", so theoretically when something
+        // gets booted from the cache, it won't be actually removed here, but if there is a full
+        // re-render or refresh, the state could change. That seems probably safe.
+        100),
     };
 
     const hiddenData = [{

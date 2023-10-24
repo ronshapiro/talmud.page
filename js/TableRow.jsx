@@ -13,6 +13,7 @@ import isEmptyText from "./is_empty_text.ts";
 import {$} from "./jquery";
 import {onClickKeyListener} from "./key_clicks";
 import {ConfigurationContext, useConfiguration, useHiddenHost} from "./context.js";
+import {SwipeableBackground} from "./SwipeableBackground.tsx";
 
 const brTagsCache = {};
 const brTags = (count) => {
@@ -232,6 +233,7 @@ function TableRow(props) {
     expandEnglishByDefault,
     indicator,
     onUnexpand,
+    sectionIdForHighlighting,
   } = props;
 
   const [isEnglishExpanded, setIsEnglishExpanded] = useState(expandEnglishByDefault);
@@ -339,8 +341,26 @@ function TableRow(props) {
     </div>
   );
 
-  if (onUnexpand) {
-    return <Swipeable onSwiped={onUnexpand}>{row}</Swipeable>;
+  // The swiping gesture doesn't play nicely with selecting text. Disable for now.
+  // if (onUnexpand) {
+  //   return <Swipeable onSwiped={onUnexpand}>{row}</Swipeable>;
+  // }
+
+  if (hiddenHost && sectionIdForHighlighting) {
+    return (
+      <SwipeableBackground
+        initiallyOn={context.highlightedIds.has(sectionIdForHighlighting)}
+        onChange={(newState) => {
+          if (newState) {
+            context.highlightedIds.add(sectionIdForHighlighting);
+          } else {
+            context.highlightedIds.remove(sectionIdForHighlighting);
+          }
+        }}
+      >
+        {row}
+      </SwipeableBackground>
+    );
   }
   return row;
 }
@@ -356,6 +376,7 @@ TableRow.propTypes = {
   expandEnglishByDefault: PropTypes.bool,
   indicator: PropTypes.bool,
   onUnexpand: PropTypes.func,
+  sectionIdForHighlighting: PropTypes.string,
 };
 
 export default TableRow;

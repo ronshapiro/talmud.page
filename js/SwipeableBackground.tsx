@@ -1,0 +1,68 @@
+import * as React from "react";
+import * as PropTypes from 'prop-types';
+import {animated, useSpring} from "@react-spring/web";
+import {useDrag} from "@use-gesture/react";
+
+const {
+  useState,
+} = React;
+
+interface SwipeableBackgroundParams {
+  initiallyOn: boolean;
+  onChange: (x: boolean) => void;
+  children: any;
+}
+
+const MAX_OPACITY = .4;
+const MAX_DISTANCE_PIXELS = 150;
+
+export function SwipeableBackground({
+  initiallyOn,
+  onChange,
+  children,
+}: SwipeableBackgroundParams): React.ReactElement {
+  const color = (ratio: number) => {
+    return {backgroundColor: `rgba(87, 175, 235, ${ratio})`};
+  };
+  const [styles, api] = useSpring(() => color(initiallyOn ? MAX_OPACITY : 0));
+  const [isOn, setIsOn] = useState(initiallyOn);
+  const setBackground = (ratio: number) => { api.start(color(ratio)); };
+
+  const bind = useDrag(({offset, lastOffset, last}) => {
+    let offsetX = lastOffset[0] - offset[0];
+    if (isOn) {
+      // If we're already highlighted, "recenter" as if we were starting the current swipe after
+      // already performing a swipe in the "on" direction.
+      offsetX += MAX_DISTANCE_PIXELS;
+    }
+    const ratio = Math.min((offsetX / MAX_DISTANCE_PIXELS) * MAX_OPACITY, MAX_OPACITY);
+    const opacity = Math.max(ratio, 0);
+    if (last) {
+      const didChange = (isOn && ratio < 0) || (!isOn && ratio === MAX_OPACITY);
+      const newState = didChange ? !isOn : isOn;
+      setBackground(newState ? MAX_OPACITY : 0);
+      setIsOn(newState);
+      if (didChange) {
+        onChange(newState);
+      }
+    } else {
+      setBackground(opacity);
+    }
+  }, {
+    // This effectively disables the feature on Desktop, which is probably fine as the X icon still
+    // exists. We could get fancy by trying to detect the type of browser and set this value
+    // accordingly... though not sure it's worth the complexity.
+    pointer: {touch: true},
+  });
+  return (
+    // eslint-disable-next-line react/jsx-props-no-spreading
+    <animated.div {...bind()} style={styles}>
+      {children}
+    </animated.div>
+  );
+}
+SwipeableBackground.propTypes = {
+  children: PropTypes.object.isRequired,
+  initiallyOn: PropTypes.bool.isRequired,
+  onChange: PropTypes.func.isRequired,
+};

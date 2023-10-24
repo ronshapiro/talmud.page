@@ -348,6 +348,12 @@ h2, .title {
     color: var(--snackbar-button-color);
 }
 
+.gemara-container, .table-row {
+    /* Without this, the background color for swipeable posts doesn't work correctly.
+     Explanation: https://stackoverflow.com/questions/944663/why-does-background-color-have-no-effect-on-this-div
+   */
+    overflow: hidden;
+}
 .section-container::after {
     content: "";
     clear: both;
