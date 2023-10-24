@@ -1,3 +1,4 @@
+import {$} from "./jquery";
 import {RetryMethodFactory} from "./retry";
 
 const retry = new RetryMethodFactory({
