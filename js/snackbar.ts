@@ -80,6 +80,7 @@ interface AbstractKind {
   maxShowCount?: number;
   cssClass: string;
   extraCssClasses?: string[];
+  ignoreDismissesBecauseExponentialBackoff?: boolean;
 }
 
 class Kind implements AbstractKind {
@@ -89,6 +90,7 @@ class Kind implements AbstractKind {
   maxShowCount: number | undefined;
   cssClass: string;
   extraCssClasses: string[] | undefined;
+  ignoreDismissesBecauseExponentialBackoff: boolean | undefined;
 
   constructor(kind: AbstractKind) {
     this.prefix = kind.prefix;
@@ -97,6 +99,7 @@ class Kind implements AbstractKind {
     this.maxShowCount = kind.maxShowCount;
     this.cssClass = kind.cssClass;
     this.extraCssClasses = kind.extraCssClasses;
+    this.ignoreDismissesBecauseExponentialBackoff = kind.ignoreDismissesBecauseExponentialBackoff;
   }
 
   shownCountString(): string {
@@ -138,9 +141,17 @@ const Kinds = {
 
   GOOGLE_SIGN_IN: new Kind({
     prefix: "googleSignIn",
-    customShowLogic: () => localStorage.hasSignedInWithGoogle !== "true",
-    maxShowCount: 10,
     cssClass: "googleSignIn",
+    customShowLogic: () => {
+      const showCount = new LocalStorageInt("googleSignInShowCounter").getAndIncrement();
+      let modulo = 50;
+      if (showCount < 5) modulo = 1;
+      else if (showCount < 20) modulo = 2;
+      else if (showCount < 50) modulo = 4;
+      else if (showCount < 100) modulo = 10;
+      return showCount % modulo === 0;
+    },
+    maxShowCount: 9999999,
   }),
 
   TEXT_SELECTION: new Kind({
@@ -155,6 +166,7 @@ const Kinds = {
   SHARE: new Kind({
     prefix: "shareSnackbar",
     cssClass: "share-talmud-page",
+    ignoreDismissesBecauseExponentialBackoff: true,
     customShowLogic: () => {
       const showCount = new LocalStorageInt("shareSnackbarShowCounter").getAndIncrement();
       if (showCount === 0) return false;
@@ -234,7 +246,7 @@ class SnackbarManager {
         kind.setShownCount(0);
         delete localStorage[kind.dismissedString()];
       }
-      if (!localStorage[kind.dismissedString()]
+      if ((!localStorage[kind.dismissedString()] || kind.ignoreDismissesBecauseExponentialBackoff)
           && kind.customShowLogic!()
           && kind.shownCount() < kind.maxShowCount!) {
         this.startupKind = kind;

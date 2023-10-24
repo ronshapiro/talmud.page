@@ -26,7 +26,8 @@ function init() {
 
 (window as any).handleGoogleClientLoad = () => {
   // @ts-ignore
-  if ("connection" in navigator && navigator.connection.downlink !== 0) {
+  if (("connection" in navigator && navigator.connection.downlink !== 0)
+    || navigator.onLine) {
     init();
   } else {
     window.addEventListener("online", init);
