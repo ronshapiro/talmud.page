@@ -60,17 +60,6 @@ const stringOrListToString = (stringOrList) => {
     : stringOrList.join("<br>");
 };
 
-// https://github.com/Sefaria/Sefaria-Project/issues/541
-const isSefariaReturningLongListsOfSingleCharacters = (comment) => {
-  if (!Array.isArray(comment.he) || !Array.isArray(comment.en)) {
-    return false;
-  }
-  const reducer = (numberOfSingleCharacters, x) => (
-    numberOfSingleCharacters + ((x.length === 1) ? 1 : 0));
-  // 3 is a guess of a reasonable minimum for detecting that this is a bug
-  return comment.he.reduce(reducer, 0) > 3 && comment.en.reduce(reducer, 0) > 3;
-};
-
 class CommentRow extends Component {
   static propTypes = {
     comment: PropTypes.object,
@@ -152,8 +141,6 @@ class CommentRow extends Component {
         // TODO: parse the ref and allow it these to be commentable/highlightable
         output.push(this.renderTableRow(i, comment.he[i], comment.en[i], "ignore-drive"));
       }
-    } else if (isSefariaReturningLongListsOfSingleCharacters(comment)) {
-      output.push(this.renderTableRow("joined comments", comment.he.join(""), comment.en.join("")));
     } else {
       output.push(
         this.renderTableRow(
@@ -179,6 +166,7 @@ function commentaryHighlightColors(commentary, colors) {
 }
 
 const MAX_BUTTONS_TO_SHOW_BEFORE_SHOWING_MORE = 7;
+const DEBUG_EXPAND_ALL_COMMENTARIES_BY_DEFAULT = false;
 
 class CommentarySection extends Component {
   static propTypes = {
@@ -410,6 +398,19 @@ class CommentarySection extends Component {
     return this.state.showAll
       ? {englishName: "Hide", hebrewName: "פחות", className: "show-more"}
       : {englishName: "More", hebrewName: "עוד", className: "show-more"};
+  }
+
+  componentDidMount() {
+    if (DEBUG_EXPAND_ALL_COMMENTARIES_BY_DEFAULT) {
+      setTimeout(() => {
+        const {commentaries, toggleShowing, sectionLabel} = this.props;
+        for (const commentaryKind of this.context.commentaryTypes) {
+          if (commentaryKind.englishName in commentaries) {
+            toggleShowing(sectionLabel, commentaryKind.className);
+          }
+        }
+      }, 100);
+    }
   }
 }
 
