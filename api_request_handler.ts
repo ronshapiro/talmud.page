@@ -623,7 +623,7 @@ export abstract class AbstractApiRequestHandler {
     const textRequest = this.makeTextRequest(ref, underlyingRefs);
     const linksTraversalTimer = this.logger.newTimer();
     const linkGraphRequest = this.linksTraversal(
-      new LinkGraph(), identityMultimap(underlyingRefs), this.linkDepth(bookName, page))
+      new LinkGraph(), identityMultimap(underlyingRefs), this.linkDepth(bookName, page), true)
       .finally(() => linksTraversalTimer.finish("links traversal"));
     return Promise.all([
       textRequest,
@@ -754,6 +754,7 @@ export abstract class AbstractApiRequestHandler {
     linkGraph: LinkGraph,
     refsInRound: ListMultimap<string, string>,
     remainingDepth: number,
+    isRoot: boolean,
   ): Promise<LinkGraph> {
     if (remainingDepth === 0) {
       return Promise.resolve(linkGraph);
@@ -801,7 +802,9 @@ export abstract class AbstractApiRequestHandler {
           const sourceRef = link.anchorRefExpanded[sourceRefIndex];
           const targetRefs = linkGraph.getGraph(sourceRef);
           const commentaryType = this.matchingCommentaryType(link);
-          if (targetRefs.has(targetRef) || !commentaryType) {
+          if (targetRefs.has(targetRef)
+            || !commentaryType
+            || (!isRoot && commentaryType.ignoreIfNotTypeLevel)) {
             continue;
           }
           linkGraph.addLink(sourceRef, link);
@@ -821,7 +824,7 @@ export abstract class AbstractApiRequestHandler {
           }
         }
       }
-      return this.linksTraversal(linkGraph, mergeRefs(nextRefs), remainingDepth - 1);
+      return this.linksTraversal(linkGraph, mergeRefs(nextRefs), remainingDepth - 1, false);
     });
   }
 

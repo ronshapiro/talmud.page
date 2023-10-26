@@ -9,6 +9,7 @@ export interface CommentaryType {
   type?: string;
   refPattern?: RegExp;
   allowNestedTraversals?: true;
+  ignoreIfNotTypeLevel?: true;
 }
 
 export const ALL_COMMENTARIES: CommentaryType[] = [
@@ -280,18 +281,21 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     refPattern: /^Introductions to the Babylonian Talmud, (.*), Introduction to \1( .*)?/,
     hebrewName: "הקדמה למסכת",
     className: "steinsaltz-masechet-intro",
+    ignoreIfNotTypeLevel: true,
   },
   {
     englishName: "Steinsaltz Perek Intro",
     refPattern: /^Introductions to the Babylonian Talmud, .*, Introduction to Perek .*/,
     hebrewName: "הקדמה לפרק",
     className: "steinsaltz-perek-intro",
+    ignoreIfNotTypeLevel: true,
   },
   {
     englishName: "Steinsaltz Perek Summary",
     refPattern: /^Introductions to the Babylonian Talmud, .*, Summary of Perek .*/,
     hebrewName: "סיכום לפרק",
     className: "steinsaltz-perek-summary",
+    ignoreIfNotTypeLevel: true,
   },
   {
     englishName: "Steinsaltz In-Depth",
