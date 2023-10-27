@@ -136,10 +136,19 @@ class CommentRow extends Component {
     }
 
     if (Array.isArray(comment.he) && Array.isArray(comment.en)
-        && comment.he.length === comment.en.length) {
-      for (let i = 0; i < comment.he.length; i++) {
+        && comment.he.length === comment.en.length
+        // Make sure that if there are nested arrays, the flattened length also matches. This is a
+        // lazy-person JaggedArray size check.
+        && comment.he.flat(Infinity).length === comment.en.flat(Infinity).length) {
+      const hebrew = comment.he.flat(Infinity);
+      const english = comment.en.flat(Infinity);
+      for (let i = 0; i < hebrew.length; i++) {
+        const lineRef = (
+          comment.expandedRefsAfterRewriting
+            ? comment.expandedRefsAfterRewriting[i]
+            : "ignore-drive");
         // TODO: parse the ref and allow it these to be commentable/highlightable
-        output.push(this.renderTableRow(i, comment.he[i], comment.en[i], "ignore-drive"));
+        output.push(this.renderTableRow(i, hebrew[i], english[i], lineRef));
       }
     } else {
       output.push(

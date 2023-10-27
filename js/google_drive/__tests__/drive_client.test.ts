@@ -1,12 +1,12 @@
 /* eslint-disable quote-props */
 import {DriveClient} from "../client";
-import {readUtf8} from "../../../files";
+import {readUtf8Async} from "../../../files";
 import {GoogleApiClient} from "../gapi";
 import {UnsavedComment, UnsavedCommentStore} from "../types";
 
 class RecordedApiClient extends GoogleApiClient {
   getDatabaseDocument(documentId: string): Promise<gapi.client.docs.Document> {
-    return readUtf8(`js/google_drive/__tests__/${documentId}`).then(x => JSON.parse(x));
+    return readUtf8Async(`js/google_drive/__tests__/${documentId}`).then(x => JSON.parse(x));
   }
 
   init(): Promise<any> {

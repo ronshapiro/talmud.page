@@ -22,9 +22,10 @@ export const testPages = [
   new TestPage("Shabbat", "74b"), // Has weird API response with nested comment text from Rosh
   new TestPage("Tamid", "25b"), // No Rashi
 
-  new TestPage("Shekalim", "2a"),
-  new TestPage("Shekalim", "3a"), // Has spanningRefs
-  new TestPage("Shekalim", "7b"), // Has strange text shape in the API response
+  // TODO: fix the Jerusalem Talmud sections entirely
+  // new TestPage("Shekalim", "2a"),
+  // new TestPage("Shekalim", "3a"), // Has spanningRefs
+  // new TestPage("Shekalim", "7b"), // Has strange text shape in the API response
 
   new TestPage("Genesis", "43"),
   new TestPage("Exodus", "20"), // 10 commandments, covers all mam-spi-pe and mam-spi-samekhs

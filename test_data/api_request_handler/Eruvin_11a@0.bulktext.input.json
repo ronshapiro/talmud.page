@@ -1,56 +1,502 @@
 {
-  "Eruvin 16b:4": {
-    "en": "The Gemara returns to the dispute with regard to a breach equal to the standing segments of a partition and cites another proof. <b>Come</b> and <b>hear</b> that which was taught in the following <i>baraita</i>: With regard to an area enclosed by <b>these walls,</b> in a case <b>where most of them</b> consist of <b>entrance and windows,</b> it is <b>permitted</b> to carry on Shabbat within the area, <b>provided that the standing</b> segments <b>are greater than the breached</b> segments.",
-    "he": "תָּא שְׁמַע: דְּפָנוֹת הַלָּלוּ שֶׁרוּבָּן פְּתָחִים וְחַלּוֹנוֹת מוּתָּר, וּבִלְבַד שֶׁיְּהֵא עוֹמֵד מְרוּבֶּה עַל הַפָּרוּץ.",
-    "heRef": "עירובין ט״ז ב:ד׳",
+  "Avodah Zarah 11a:2-7": {
+    "en": [
+      "§ The Gemara mentions other Romans who converted to Judaism. It relates: <b>Onkelos bar Kelonimos converted</b> to Judaism. The Roman <b>emperor sent a troop [<i>gunda</i>] of Roman</b> soldiers <b>after him</b> to seize Onkelos and bring him to the emperor. Onkelos <b>drew them</b> toward him <b>with verses</b> that he cited and learned with them, and <b>they converted.</b> The emperor <b>then sent another troop of Roman</b> soldiers <b>after him,</b> and <b>said to them: Do not say anything to him,</b> so that he cannot convince you with his arguments. The troops followed this instruction, and took Onkelos with them.",
+      "<b>When they were walking,</b> Onkelos <b>said to</b> the troop of soldiers: <b>I will say a mere statement to you: A minor official [<i>nifyora</i>] holds a torch before a high official [<i>apifyora</i>], the high official</b> holds a torch <b>for a duke [<i>dukasa</i>], a duke for the governor,</b> and <b>the governor for the ruler [<i>koma</i>]. Does the ruler hold a torch before</b> the common <b>people?</b> The soldiers <b>said to</b> Onkelos: <b>No.</b> Onkelos <b>said to them:</b> Yet <b>the Holy One, Blessed be He, holds a torch before the Jewish people, as it is written: “And the Lord went before them by day</b> in a pillar of cloud, to lead them the way, and by night in a pillar of fire, to give them light” (Exodus 13:21). <b>They all converted.</b>",
+      "The emperor <b>then sent another troop</b> of soldiers <b>after him,</b> to bring Onkelos, and <b>said to them: Do not converse with him at all.</b> The troops followed this instruction, and took Onkelos with them. <b>While they grabbed him and were walking,</b> Onkelos <b>saw a <i>mezuza</i> that was placed on the doorway. He placed his hand upon it and said to</b> the soldiers: <b>What is this? They said to him: You tell us.</b>",
+      "Onkelos <b>said to them: The</b> standard <b>practice</b> throughout the <b>world</b> is that <b>a king</b> of <b>flesh and blood sits inside</b> his palace, <b>and his servants</b> stand <b>guard,</b> protecting <b>him outside; but</b> with regard to <b>the Holy One, Blessed be He, His servants,</b> the Jewish people, sit <b>inside</b> their homes <b>and He guards over them outside. As it is stated: “The Lord shall guard your going out and your coming in, from now and forever”</b> (Psalms 121:8). Upon hearing this, those soldiers also <b>converted</b> to Judaism. After that, the emperor <b>sent no more</b> soldiers <b>after him.</b>",
+      "§ The Gemara returns to its discussion of Antoninus: When the matriarch Rebecca was pregnant with Jacob and Esau, <b>“the Lord said to her: Two nations [<i>goyim</i>] are in your womb”</b> (Genesis 25:23). <b>Rav Yehuda says</b> that <b>Rav says: Do not read</b> it as <b><i>goyim</i>,</b> meaning nations; <b>rather</b> read it as <b><i>geyim</i>,</b> meaning proud ones. <b>This</b> verse was fulfilled in two prominent individuals who descended from Rebecca, <b>Antoninus and Rabbi</b> Yehuda HaNasi, <b>whose tables,</b> due to their wealth, <b>never lacked for lettuce, nor cucumbers, nor radish, neither in the summer nor in the rainy season,</b> despite the fact that these foods do not grow year round. The reason they ensured that these items were always present at their tables is <b>that the Master said: A radish breaks up food, lettuce stirs up food,</b> and <b>cucumbers expand the intestines.</b>",
+      "The Gemara asks: <b>But isn’t it taught</b> in the <b>school of Rabbi Yishmael: Why are they called cucumbers [<i>kishuin</i>]?</b> It is <b>because they are as harmful [<i>kashim</i>] to a person’s body as swords.</b> The Gemara answers: This is <b>not difficult. This</b> statement, that they are harmful to the body, is referring <b>to large</b> cucumbers, whereas <b>that</b> statement, explaining why they were always present on the tables of Rabbi Yehuda HaNasi and Antoninus, is referring <b>to small ones.</b>"
+    ],
+    "he": [
+      "אונקלוס בר קלונימוס איגייר שדר קיסר גונדא דרומאי אבתריה משכינהו בקראי איגיור הדר שדר גונדא דרומאי [אחרינא] אבתריה אמר להו לא תימרו ליה ולא מידי",
+      "כי הוו שקלו ואזלו אמר להו אימא לכו מילתא בעלמא ניפיורא נקט נורא קמי פיפיורא פיפיורא לדוכסא דוכסא להגמונא הגמונא לקומא קומא מי נקט נורא מקמי אינשי אמרי ליה לא אמר להו הקב\"ה נקט נורא קמי ישראל דכתיב (שמות יג, כא) וה' הולך לפניהם יומם וגו' איגיור [כולהו]",
+      "הדר שדר גונדא אחרינא אבתריה אמר להו לא תשתעו מידי בהדיה כי נקטי ליה ואזלי חזא מזוזתא [דמנחא אפתחא] אותיב ידיה עלה ואמר להו מאי האי אמרו ליה אימא לן את",
+      "אמר להו מנהגו של עולם מלך בשר ודם יושב מבפנים ועבדיו משמרים אותו מבחוץ ואילו הקב\"ה עבדיו מבפנים והוא משמרן מבחוץ שנאמר (תהלים קכא, ח) ה' ישמר צאתך ובואך מעתה ועד עולם איגיור תו לא שדר בתריה",
+      "(בראשית כה, כג) ויאמר ה' לה שני גוים בבטנך אמר רב יהודה אמר רב אל תקרי גוים אלא גיים זה אנטונינוס ורבי שלא פסקו מעל שולחנם לא חזרת ולא קישות ולא צנון לא בימות החמה ולא בימות הגשמים דאמר מר צנון מחתך אוכל חזרת מהפך מאכל קישות מרחיב מעיים",
+      "והא תנא דבי רבי ישמעאל למה נקרא שמן קישואין מפני שקשין לגופו של אדם כחרבות לא קשיא הא ברברבי הא בזוטרי:"
+    ],
+    "heRef": "עבודה זרה י״א א:ב׳-ז׳",
     "lang": "en",
     "primary_category": "Talmud",
-    "ref": "Eruvin 16b:4",
-    "url": "Eruvin.16b.4"
+    "ref": "Avodah Zarah 11a:2-7",
+    "url": "Avodah_Zarah.11a.2-7"
   },
-  "Eruvin 16b:5": {
-    "en": "The Gemara analyzes the formulation of the <i>baraita</i>: <b>Can it enter your mind that</b> the <i>baraita</i> is referring to a case where <b>most of</b> the walls are entrances and windows? If so, the standing segments are certainly not greater than the breached segments. <b>Rather,</b> emend the <i>baraita</i> as follows: Carrying in the area enclosed by these walls, <b>to which one added</b> many <b>entrances and windows, is permitted, provided that the standing</b> segments <b>are greater than the breached</b> segments.",
-    "he": "״שֶׁרוּבָּן״, סָלְקָא דַּעְתָּךְ?! אֶלָּא: שֶׁרִיבָּה בָּהֶן פְּתָחִים וְחַלּוֹנוֹת מוּתָּר, וּבִלְבַד שֶׁיְּהֵא עוֹמֵד מְרוּבֶּה עַל הַפָּרוּץ.",
-    "heRef": "עירובין ט״ז ב:ה׳",
+  "Berakhot 10a:21-25": {
+    "en": [
+      "Other interpretations of this verse exist. The Gemara relates how <b>Rav Shimi bar Ukva, and some say Mar Ukva, would regularly</b> study <b>before Rabbi Shimon ben Pazi,</b> who was well versed in <i>aggada</i> and <b>would arrange the <i>aggada</i> before Rabbi Yehoshua ben Levi.</b> <br/>Once, Rabbi Shimon ben Pazi <b>said to him: What is</b> the meaning of <b>that which is written: “Bless the Lord, my soul, and all that is within me bless His Holy name”?</b> <br/>Rav Shimi bar Ukva <b>said to</b> Rabbi Shimon ben Pazi: <b>Come and see that the attribute of the Holy One, Blessed be He, is not like the attribute of flesh and blood,</b> as this verse praises the formation of man in his mother’s womb. <b>The attribute of flesh and blood is</b> such that he <b>shapes a form on the wall</b> for all to see, yet <b>he cannot instill it with a spirit and soul, bowels and intestines.</b> While <b>the Holy One, Blessed be He, is not so,</b> as God <b>shapes one form within another form,</b> a child in its mother’s womb, <b>and instills it with spirit and soul, bowels and intestines. And this is</b> the explanation of <b>what Hannah said</b> with regard to the birth of Samuel: <b>“There is none holy like the Lord, for there is none like You, and there is no Rock like our God”</b> (I Samuel 2:2).",
+      "<b>What is</b> the meaning of <b>there is no rock [<i>tzur</i>] like our God? There is no artist [<i>tzayyar</i>] like our God.</b>",
+      "The Gemara continues to interpret the rest of that verse homiletically: <b>What is</b> the meaning of <b>“there is none like You”? Rabbi Yehuda ben Menasya said: Do not read</b> the verse to mean <b>“there is none like You [<i>biltekha</i>]”; rather, read</b> it to mean <b>“none can outlast You [<i>levalotkha</i>],” as the attribute of the Holy One, Blessed be He, is not like the attribute of flesh and blood: The attribute of flesh and blood is</b> such <b>that his creations outlast him,</b> but <b>the Holy One, Blessed be He, outlasts His actions.</b>",
+      "This did not satisfy Rav Shimi bar Ukva, who <b>said to</b> Rabbi Shimon ben Pazi: <b>I</b> meant to <b>say to you as follows: Corresponding to whom did David say these five</b> instance of <b>“Bless</b> the Lord, <b>O my soul”?</b> He answered him: <b>He said them about none other than the Holy One, Blessed be He, and corresponding to the soul,</b> as the verse refers to the relationship between man’s soul and God. The five instances of “Bless the Lord, O my soul” correspond to the five parallels between the soul in man’s body and God’s power in His world.",
+      "<b>Just as the Holy One, Blessed be He, fills the entire world, so too the soul fills the entire body.</b> <br/><b>Just as the Holy One, Blessed be He, sees but is not seen, so too does the soul see, but is not seen.</b> <br/><b>Just as the Holy One, Blessed be He, sustains the entire world, so too the soul sustains the entire body.</b> <br/><b>Just as the Holy One, Blessed be He, is pure, so too is the soul pure.</b> <br/><b>Just as the Holy One, Blessed be He, resides in a chamber within a chamber,</b> in His inner sanctum, <b>so too the soul resides in a chamber within a chamber,</b> in the innermost recesses of the body. <br/>Therefore, <b>that which has these five characteristics,</b> the soul, <b>should come and praise He Who has these five characteristics.</b>"
+    ],
+    "he": [
+      "רַב שִׁימִי בַּר עוּקְבָא וְאָמְרִי לַהּ מָר עוּקְבָא, הֲוָה שְׁכִיחַ קַמֵּיהּ דְּרַבִּי שִׁמְעוֹן בֶּן פַּזִּי, וַהֲוָה מְסַדַּר אַגָּדָתָא קַמֵּיהּ דְּרַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי. אֲמַר לֵיהּ: מַאי דִּכְתִיב, ״בָּרְכִי נַפְשִׁי אֶת ה׳ וְכָל קְרָבַי אֶת שֵׁם קָדְשׁוֹ״? אֲמַר לֵיהּ: בֹּא וּרְאֵה שֶׁלֹּא כְּמִדַּת הַקָּדוֹשׁ בָּרוּךְ הוּא מִדַּת בָּשָׂר וָדָם. מִדַּת בָּשָׂר וָדָם צָר צוּרָה עַל גַּבֵּי הַכּוֹתֶל, וְאֵינוֹ יָכוֹל לְהָטִיל בָּהּ רוּחַ וּנְשָׁמָה קְרָבַיִם וּבְנֵי מֵעַיִם. וְהַקָּדוֹשׁ בָּרוּךְ הוּא אֵינוֹ כֵּן, צָר צוּרָה בְּתוֹךְ צוּרָה וּמֵטִיל בָּהּ רוּחַ וּנְשָׁמָה קְרָבַיִם וּבְנֵי מֵעַיִם. וְהַיְינוּ דְּאָמְרָה חַנָּה: ״אֵין קָדוֹשׁ כַּה׳ כִּי אֵין בִּלְתֶּךָ וְאֵין צוּר כֵּאלֹהֵינוּ״.",
+      "מַאי ״אֵין צוּר כֵּאלֹהֵינוּ״ — אֵין צַיָּיר כֵּאלֹהֵינוּ.",
+      "מַאי ״כִּי אֵין בִּלְתֶּךָ״? אָמַר רַבִּי יְהוּדָה בַּר מְנַסְיָא: אַל תִּקְרֵי ״כִּי אֵין בִּלְתֶּךָ״, אֶלָּא ״אֵין לְבַלּוֹתֶךָ״. שֶׁלֹּא כְּמִדַּת הַקָּדוֹשׁ בָּרוּךְ הוּא מִדַּת בָּשָׂר וָדָם: מִדַּת בָּשָׂר וָדָם — מַעֲשֵׂה יָדָיו מְבַלִּין אוֹתוֹ, וְהַקָּדוֹשׁ בָּרוּךְ הוּא מְבַלֶּה מַעֲשָׂיו.",
+      "אֲמַר לֵיהּ, אֲנָא הָכִי קָא אָמֵינָא לָךְ: הָנֵי חֲמִשָּׁה ״בָּרְכִי נַפְשִׁי״ כְּנֶגֶד מִי אֲמָרָן דָּוִד? לֹא אֲמָרָן אֶלָּא כְּנֶגֶד הַקָּדוֹשׁ בָּרוּךְ הוּא וּכְנֶגֶד נְשָׁמָה.",
+      "מָה הַקָּדוֹשׁ בָּרוּךְ הוּא מָלֵא כָּל הָעוֹלָם — אַף נְשָׁמָה מְלֵאָה אֶת כָּל הַגּוּף. מָה הַקָּדוֹשׁ בָּרוּךְ הוּא רוֹאֶה וְאֵינוֹ נִרְאֶה — אַף נְשָׁמָה רוֹאָה וְאֵינָהּ נִרְאֵית. מָה הַקָּדוֹשׁ בָּרוּךְ הוּא זָן אֶת כָּל הָעוֹלָם כֻּלּוֹ — אַף נְשָׁמָה זָנָה אֶת כָּל הַגּוּף. מָה הַקָּדוֹשׁ בָּרוּךְ הוּא טָהוֹר — אַף נְשָׁמָה טְהוֹרָה. מָה הַקָּדוֹשׁ בָּרוּךְ הוּא יוֹשֵׁב בְּחַדְרֵי חֲדָרִים — אַף נְשָׁמָה יוֹשֶׁבֶת בְּחַדְרֵי חֲדָרִים. יָבֹא מִי שֶׁיֵּשׁ בּוֹ חֲמִשָּׁה דְבָרִים הַלָּלוּ וִישַׁבֵּחַ לְמִי שֶׁיֵּשׁ בּוֹ חֲמִשָּׁה דְבָרִים הַלָּלוּ."
+    ],
+    "heRef": "ברכות י׳ א:כ״א-כ״ה",
     "lang": "en",
     "primary_category": "Talmud",
-    "ref": "Eruvin 16b:5",
-    "url": "Eruvin.16b.5"
+    "ref": "Berakhot 10a:21-25",
+    "url": "Berakhot.10a.21-25"
   },
-  "Eruvin 17b:14": {
+  "Berakhot 40a:10-11": {
+    "en": [
+      "We learned in the mishna that <b>Rabbi Yehuda says</b> that one recites over herbs and leafy greens: <b>Who creates various kinds of herbs. Rabbi Zeira, and some say Rabbi Ḥinnana bar Pappa, said: The <i>halakha</i> is not in accordance with</b> the opinion of <b>Rabbi Yehuda. And Rabbi Zeira, and some say Rabbi Ḥinnana bar Pappa, said: What is the reason for Rabbi Yehuda’s</b> opinion? <b>The verse says: “Blessed is the Lord, day by day”</b> (Psalms 68:20). The question arises: <b>Is it so that one blesses Him by day and does not bless Him at night? Rather,</b> the verse comes <b>to tell you: Each and every day, give the Lord</b> the appropriate <b>blessings</b> for that day. <b>Here too,</b> with regard to the blessings recited over food, for <b>each and every type</b> of food, <b>give the</b> Lord the appropriate blessings for that food.",
+      "<b>And Rabbi Zeira, and some say Rabbi Ḥinnana bar Pappa, said: Come and see that the attribute of flesh and blood is unlike the attribute of the Holy One, Blessed be He. The attribute of flesh and blood is</b> that <b>an empty vessel holds</b> that which is placed within it, while <b>a full</b> vessel <b>does not hold</b> it. <b>The attribute of the Holy One, Blessed be He,</b> however, <b>is not so,</b> as if God adds to a person who is <b>a full vessel</b> in terms of knowledge or good attributes, he will <b>hold</b> it; a person who is <b>an empty</b> vessel <b>will not hold</b> it. This is alluded to by the verse where <b>it is said: “And He said, if you will surely listen [<i>shamo’a tishma</i>]</b> to the voice of the Lord your God and do what is right in His eyes” (Exodus 15:26). This verse is interpreted homiletically: <b>If you listen [<i>shamo’a</i>]</b> in the present, <b>you will listen [<i>tishma</i>]</b> in the future as well; <b>and if not, you will not listen. Alternatively: If you listened [<i>shamo’a</i>] to the old,</b> you review what you already learned, then <b>you will listen [<i>tishma</i>] to the new</b> as well. But <b>if you turn your heart away, you will no longer be able to hear.</b>"
+    ],
+    "he": [
+      "רַבִּי יְהוּדָה אוֹמֵר ״בּוֹרֵא מִינֵי דְשָׁאִים״. אָמַר רַבִּי זֵירָא, וְאִיתֵּימָא רַבִּי חִינָּנָא בַּר פָּפָּא: אֵין הֲלָכָה כְּרַבִּי יְהוּדָה. וְאָמַר רַבִּי זֵירָא וְאִיתֵּימָא רַבִּי חִינָּנָא בַּר פָּפָּא: מַאי טַעְמָא דְּרַבִּי יְהוּדָה — אָמַר קְרָא ״בָּרוּךְ ה׳ יוֹם יוֹם״. וְכִי בַּיּוֹם מְבָרְכִין אוֹתוֹ, וּבַלַּיְלָה אֵין מְבָרְכִין אוֹתוֹ? אֶלָּא לוֹמַר לָךְ: כׇּל יוֹם וָיוֹם תֵּן לוֹ מֵעֵין בִּרְכוֹתָיו, הָכָא נָמֵי כׇּל מִין וּמִין תֵּן לוֹ מֵעֵין בִּרְכוֹתָיו.",
+      "וְאָמַר רַבִּי זֵירָא וְאִיתֵּימָא רַבִּי חִינָּנָא בַּר פָּפָּא: בּוֹא וּרְאֵה שֶׁלֹּא כְּמִדַּת הַקָּדוֹשׁ בָּרוּךְ הוּא מִדַּת בָּשָׂר וָדָם. מִדַּת בָּשָׂר וָדָם — כְּלִי רֵיקָן מַחֲזִיק, מָלֵא אֵינוֹ מַחֲזִיק. אֲבָל הַקָּדוֹשׁ בָּרוּךְ הוּא אֵינוֹ כֵן, מָלֵא מַחֲזִיק, רֵיקָן אֵינוֹ מַחֲזִיק. שֶׁנֶּאֱמַר: ״וַיֹּאמֶר אִם שָׁמוֹעַ תִּשְׁמַע״, אִם שָׁמוֹעַ — תִּשְׁמַע, וְאִם לָאו — לֹא תִשְׁמָע. דָּבָר אַחֵר: אִם שָׁמוֹעַ — בַּיָּשָׁן, תִּשְׁמַע — בֶּחָדָשׁ. וְאִם יִפְנֶה לְבָבְךָ — שׁוּב לֹא תִשְׁמָע."
+    ],
+    "heRef": "ברכות מ׳ א:י׳-י״א",
+    "lang": "en",
+    "primary_category": "Talmud",
+    "ref": "Berakhot 40a:10-11",
+    "url": "Berakhot.40a.10-11"
+  },
+  "Berakhot 5a:6-8": {
+    "en": [
+      "Regarding this unclear verse, <b>Rabbi Shimon ben Lakish said: If one engages in Torah</b> study, <b>suffering stays away from him, as it is stated: “And the sparks fly upward.”</b> And <b>fly</b> means <b>nothing other than Torah, <b>as it is stated: “Will you set your eyes upon it? It is gone;</b> and sparks</b> means <b>nothing other than suffering, as it is stated: “Wasting of hunger, and the devouring of the sparks,”</b> equating devouring sparks with wasting hunger, as both are types of suffering. From here, we derive that through Torah, fly, one is able to distance himself, upward, from suffering, sparks.",
+      "<b>Rabbi Yoḥanan said to him: Even schoolchildren,</b> who learn only the Written Torah, <b>know this</b> concept <b>as it is stated: “And He said you shall surely hear the voice of the Lord your God, and what is upright in His eyes you shall do and you shall listen to His mitzvot and guard His statutes; any disease that I have placed upon Egypt I will not place upon you for I am the Lord your healer”</b> (Exodus 15:26). <b>Rather,</b> one must interpret the verse: <b>Anyone who is able to engage in Torah</b> study <b>yet does not engage</b> in that study, not only does <b>the Holy One, Blessed be He,</b> fail to protect him, but He <b>brings upon him hideous afflictions,</b> that embarrass him <b>and trouble him, as it is stated: “I was mute with silence; I was silent from good, and my pain was strong”</b> (Psalms 39:3). The word <b>good</b> means <b>nothing other than Torah, as it is stated: “For I have given you a good portion, My Torah, do not abandon it”</b> (Proverbs 4:2). The verse should be understood: “I have been silent from the study of Torah, and my pain was strong.”",
+      "With regard to the verse: “For I have given you a good portion,” <b>Rabbi Zeira, and some say Rabbi Ḥanina bar Pappa, said: Come and see how the characteristics of the Holy One, Blessed be He, are unlike the characteristics of flesh and blood. It is characteristic of flesh and blood that when one sells an object to another</b> person, <b>the seller grieves</b> the loss of his possession <b>and the buyer rejoices. With regard to the Holy One, Blessed be He,</b> however, <b>this is not so. He gave the Torah to Israel and rejoiced, as it is stated: “For I have given you a good portion, My Torah, do not abandon it.”</b> A good portion is understood as a good purchase; although God sold Torah to Israel, He rejoices in the sale and praises the object before its new owner (Rabbi Yoshiyahu Pinto)."
+    ],
+    "he": [
+      "אָמַר רַבִּי שִׁמְעוֹן בֶּן לָקִישׁ: כׇּל הָעוֹסֵק בַּתּוֹרָה — יִסּוּרִין בְּדֵילִין הֵימֶנּוּ, שֶׁנֶּאֱמַר: ״וּבְנֵי רֶשֶׁף יַגְבִּיהוּ עוּף״. וְאֵין ״עוּף״ אֶלָּא תּוֹרָה, שֶׁנֶּאֱמַר ״הֲתָעִיף עֵינֶיךָ בּוֹ וְאֵינֶנּוּ״, וְאֵין ״רֶשֶׁף״ אֶלָּא יִסּוּרִין, שֶׁנֶּאֱמַר: ״מְזֵי רָעָב וּלְחֻמֵי רֶשֶׁף״.",
+      "אָמַר לֵיהּ רַבִּי יוֹחָנָן: הָא אֲפִילּוּ תִּינוֹקוֹת שֶׁל בֵּית רַבָּן, יוֹדְעִין אוֹתוֹ, שֶׁנֶּאֱמַר ״וַיֹּאמֶר אִם שָׁמוֹעַ תִּשְׁמַע לְקוֹל ה׳ אֱלֹהֶיךָ וְהַיָּשָׁר בְּעֵינָיו תַּעֲשֶׂה וְהַאֲזַנְתָּ לְמִצְוֹתָיו וְשָׁמַרְתָּ כׇּל חֻקָּיו כׇּל הַמַּחֲלָה אֲשֶׁר שַׂמְתִּי בְמִצְרַיִם לֹא אָשִׂים עָלֶיךָ כִּי אֲנִי ה׳ רוֹפְאֶךָ״. אֶלָּא: כׇּל שֶׁאֶפְשָׁר לוֹ לַעֲסוֹק בַּתּוֹרָה וְאֵינוֹ עוֹסֵק — הַקָּדוֹשׁ בָּרוּךְ הוּא מֵבִיא עָלָיו יִסּוּרִין מְכוֹעָרִין וְעוֹכְרִין אוֹתוֹ, שֶׁנֶּאֱמַר: ״נֶאֱלַמְתִּי דוּמִיָּה הֶחֱשֵׁיתִי מִטּוֹב וּכְאֵבִי נֶעְכָּר״, וְאֵין ״טוֹב״ אֶלָּא תּוֹרָה, שֶׁנֶּאֱמַר: ״כִּי לֶקַח טוֹב נָתַתִּי לָכֶם תּוֹרָתִי אַל תַּעֲזֹבוּ״.",
+      "אָמַר רַבִּי זֵירָא וְאִיתֵּימָא רַבִּי חֲנִינָא בַּר פָּפָּא: בֹּא וּרְאֵה שֶׁלֹּא כְּמִדַּת הַקָּדוֹשׁ בָּרוּךְ הוּא מִדַּת בָּשָׂר וָדָם. מִדַּת בָּשָׂר וָדָם, אָדָם מוֹכֵר חֵפֶץ לַחֲבֵירוֹ, מוֹכֵר עָצֵב, וְלוֹקֵחַ שָׂמֵחַ, אֲבָל הַקָּדוֹשׁ בָּרוּךְ הוּא אֵינוֹ כֵּן, נָתַן לָהֶם תּוֹרָה לְיִשְׂרָאֵל — וְשָׂמַח, שֶׁנֶּאֱמַר: ״כִּי לֶקַח טוֹב נָתַתִּי לָכֶם תּוֹרָתִי אַל תַּעֲזֹבוּ״."
+    ],
+    "heRef": "ברכות ה׳ א:ו׳-ח׳",
+    "lang": "en",
+    "primary_category": "Talmud",
+    "ref": "Berakhot 5a:6-8",
+    "url": "Berakhot.5a.6-8"
+  },
+  "Chidushei Agadot on Menachot 33b:1": {
     "en": "",
-    "he": "<br/><br/><big><strong>הֲדַרַן עֲלָךְ מָבוֹי</strong></big><br/><br/>",
-    "heRef": "עירובין י״ז ב:י״ד",
+    "he": "<b>מדת</b> ב\"ו כו' והוא משמרן מבחוץ שנאמר ה' ישמרך וגו'. כפרש\"י יד ימינך שהמזוזה היא מימין ביאה. ואמר יומם השמש וגו' לפי שכל המאורעות רעות הבאות בעולם נתנו ביד מזלות השמים שעיקרם חמה ולבנה וכוכביהם והם המתנגדים לאומה הישראלית כמו שאמרו אין מזל לישראל על כן אמר שבמצות המזוזה השמש והירח לא יככה כי ה' ישמרך מכל רע שיתעורר מהם לבא עליך ולפי שאמר בענין שבהיותך בפנים ישמרך הקב\"ה מבחוץ דהיינו יד ימינך ימין ביאתך לבית ושמא תאמר בצאתך לא יהיה שומרך ע\"כ אמר ה' ישמר צאתך ובואך וגו' שישמור במצות מזוזה צאתך דהיינו מבחוץ כמו בבואך מבפנים ודו\"ק:",
+    "heRef": "חידושי אגדות על מנחות ל״ג ב:א׳",
     "lang": "en",
-    "primary_category": "Talmud",
-    "ref": "Eruvin 17b:14",
-    "url": "Eruvin.17b.14"
+    "primary_category": "Commentary",
+    "ref": "Chidushei Agadot on Menachot 33b:1",
+    "url": "Chidushei_Agadot_on_Menachot.33b.1"
   },
-  "Eruvin 2a:1": {
-    "en": "<strong>MISHNA:</strong> If an alleyway is enclosed on three sides with courtyards opening into it from three sides, and the fourth side opens into a public domain, it is prohibited by rabbinic law to carry objects in it on Shabbat. However, carrying in an alleyway under those circumstances is permitted if a cross beam is placed horizontally over the entrance to the alleyway. The mishna teaches that if the cross beam spans the entrance to <b>an alleyway</b> at a <b>height above twenty cubits, one must diminish</b> the height of the cross beam so that it is less than twenty cubits. <b>Rabbi Yehuda says: He need not</b> diminish it, since the cross beam enables one to carry in the alleyway even at that height.",
-    "he": "<big><strong>מָבוֹי</strong></big> שֶׁהוּא גָּבוֹהַּ לְמַעְלָה מֵעֶשְׂרִים אַמָּה — יְמַעֵט. רַבִּי יְהוּדָה אוֹמֵר: אֵינוֹ צָרִיךְ.",
-    "heRef": "עירובין ב׳ א:א׳",
-    "lang": "en",
-    "primary_category": "Talmud",
-    "ref": "Eruvin 2a:1",
-    "url": "Eruvin.2a.1"
-  },
-  "Eruvin 2a:2": {
-    "en": "If the entrance to the alleyway is <b>wider than ten cubits, one must diminish</b> its width. <b>However, if</b> the entrance to the alleyway <b>has the form of a doorway,</b> i.e., two vertical posts on the two sides, and a horizontal beam spanning the space between them, <b>even if it is wider than ten cubits, he need not diminish</b> it, as it is then regarded as an entrance, rather than a breach, even if it is very wide.",
-    "he": "וְהָרָחָב מֵעֶשֶׂר אַמּוֹת יְמַעֵט. וְאִם יֵשׁ לוֹ צוּרַת הַפֶּתַח, אַף עַל פִּי שֶׁהוּא רָחָב מֵעֶשֶׂר אַמּוֹת אֵין צָרִיךְ לְמַעֵט.",
-    "heRef": "עירובין ב׳ א:ב׳",
-    "lang": "en",
-    "primary_category": "Talmud",
-    "ref": "Eruvin 2a:2",
-    "url": "Eruvin.2a.2"
-  },
-  "Menachot 38a:3": {
+  "Chidushei Halachot on Eruvin 11a:1": {
     "en": "",
-    "he": "<br/><br/><big><strong>הדרן עלך הקומץ</strong></big><br/><br/>",
-    "heRef": "מנחות ל״ח א:ג׳",
+    "he": "<b>בד\"ה</b> חצר שרובה כו' וי\"ל דאין ללמוד אלא על ד' מחיצות כו' הוי כמו פרוץ מרובה בד' כו' עכ\"ל וליכא לאקשויי דאכתי מחיצה א' יוכיח דמהני צורת הפתח בפרוץ מרובה ולא מהני ביתר מי' די\"ל כיון דאין יכול ללמדו בבנין אב ליכא למימר ביה נמי יוכיח וכה\"ג כתבו התוס' לעיל גבי ק\"ו בד\"ה אינו דין שיהא כו' ודו\"ק:",
+    "heRef": "חידושי הלכות על עירובין י״א א:א׳",
     "lang": "en",
-    "primary_category": "Talmud",
-    "ref": "Menachot 38a:3",
-    "url": "Menachot.38a.3"
+    "primary_category": "Commentary",
+    "ref": "Chidushei Halachot on Eruvin 11a:1",
+    "url": "Chidushei_Halachot_on_Eruvin.11a.1"
+  },
+  "Chidushei Halachot on Eruvin 11a:2": {
+    "en": "",
+    "he": "<b>בד\"ה</b> אילימא בעשר כו' דביתר מי' שמואל נמי מודה דהוי כמפולש כו' עכ\"ל היינו ממאי דפריך לעיל אילימא ביותר מי' בהא לימא שמואל תורתו כסתום כו' מיהו ק\"ק דאמאי לא קשיא להו הכי בפשיטות משמואל גופיה דפסק כחנניה ומצריך דלתות והיינו אפי' בעשר דהא שמואל אדרב פליג דאמר הלכה כת\"ק דסגי בצורת הפתח דהיינו בי' דביתר מי' לא מהני לרב צורת הפתח ויש ליישב ודו\"ק:",
+    "heRef": "חידושי הלכות על עירובין י״א א:ב׳",
+    "lang": "en",
+    "primary_category": "Commentary",
+    "ref": "Chidushei Halachot on Eruvin 11a:2",
+    "url": "Chidushei_Halachot_on_Eruvin.11a.2"
+  },
+  "Chidushei Halachot on Eruvin 11a:3": {
+    "en": "",
+    "he": "<b>בא\"ד</b> וא\"ת הואיל ומהני צורת הפתח מכל ד' רוחות א\"כ גבי פסי כו' עכ\"ל נראה דקשיא להו הכי לפי פי' זה לדברי המקשה הכא דנדחו דברי רב יוסף ומהני צורת הפתח בכל ד' רוחות כו' אבל לפי' ריצב\"א ולפי' השר מקוצי לא קשיא להו מידי דלא נדחו דברי רב יוסף אבל ברא\"ש איכא הך קושיא בפשיטות [א] לפי המסקנא לכל הפירושים דבין לר\"ל ובין לר' יוחנן בעל גבן מהני צורת הפתח וא\"ת ולמה הוצרכו לעשות פסין לביראות כו' ע\"ש ודו\"ק:",
+    "heRef": "חידושי הלכות על עירובין י״א א:ג׳",
+    "lang": "en",
+    "primary_category": "Commentary",
+    "ref": "Chidushei Halachot on Eruvin 11a:3",
+    "url": "Chidushei_Halachot_on_Eruvin.11a.3"
+  },
+  "Chidushei Halachot on Menachot 33b:1": {
+    "en": "",
+    "he": "<b>פרש\"י</b> בד\"ה בפתח שאחורי הדלת כגון שיש במקצוע כו' והבדיל את הבדלתו פי' אחר שדרך עשירים כו' עכ\"ל כצ\"ל ובת\"י קשה היכא משכחת לה שיהא לימין לזה ולזה וי\"ל שהוא פתוח לרה\"ר והשני לצד הדלת פתוח לחצר הוי ביאה לזה ולזה עכ\"ל אבל לפי' שני לא יתיישב בזה ועיין במרדכי וק\"ל:",
+    "heRef": "חדושי הלכות על מנחות ל״ג ב:א׳",
+    "lang": "en",
+    "primary_category": "Commentary",
+    "ref": "Chidushei Halachot on Menachot 33b:1",
+    "url": "Chidushei_Halachot_on_Menachot.33b.1"
+  },
+  "Chidushei Halachot on Menachot 33b:2": {
+    "en": "",
+    "he": "<b>בד\"ה</b> כיצד קתני כו' טפח כו' כגון פתח שאחורי הדלת הס\"ד:",
+    "heRef": "חדושי הלכות על מנחות ל״ג ב:ב׳",
+    "lang": "en",
+    "primary_category": "Commentary",
+    "ref": "Chidushei Halachot on Menachot 33b:2",
+    "url": "Chidushei_Halachot_on_Menachot.33b.2"
+  },
+  "Chidushei Halachot on Menachot 33b:3": {
+    "en": "",
+    "he": "<b>בד\"ה</b> אבל חתך כו' העמיד המלבן בצידה לא משום כו' ובד\"ה ההיא דקתני כו' שיש לה ד' דפנות כו' כצ\"ל ובד\"ה מגינה לבית באותו פתח שבין הגינה לבית כו' כל הדברים בפירושו מגומגמים ובפרש\"י שבאלפסי כתב ול\"נ איפכא מגינה לבית היינו פתח הקיטונית שהבאים מן הגינה כו' ע\"ש באורך וק\"ל:",
+    "heRef": "חדושי הלכות על מנחות ל״ג ב:ג׳",
+    "lang": "en",
+    "primary_category": "Commentary",
+    "ref": "Chidushei Halachot on Menachot 33b:3",
+    "url": "Chidushei_Halachot_on_Menachot.33b.3"
+  },
+  "Chidushei Halachot on Menachot 33b:4": {
+    "en": "",
+    "he": "<b>בד\"ה</b> ל\"א ועיקר כו' ה\"מ דבין תרי בתי דתרווייהו עיקר אבל הכא עיקר קיטונית ולשמה נעשה וחייב גינה עיקר ולשמה נעשה לשומר ופטור הס\"ד ואח\"כ מ\"ה והלכתא כרב ושמואל לחומרא ומצריך מזוזה לתרוייהו דס\"ל כר\"י עכ\"ל:",
+    "heRef": "חדושי הלכות על מנחות ל״ג ב:ד׳",
+    "lang": "en",
+    "primary_category": "Commentary",
+    "ref": "Chidushei Halachot on Menachot 33b:4",
+    "url": "Chidushei_Halachot_on_Menachot.33b.4"
+  },
+  "Chidushei Halachot on Menachot 33b:6": {
+    "en": "",
+    "he": "<b>בד\"ה</b> אכסדרה ומרפסת חייבין כו' עכ\"ל כצ\"ל:",
+    "heRef": "חדושי הלכות על מנחות ל״ג ב:ו׳",
+    "lang": "en",
+    "primary_category": "Commentary",
+    "ref": "Chidushei Halachot on Menachot 33b:6",
+    "url": "Chidushei_Halachot_on_Menachot.33b.6"
+  },
+  "Chokhmat Shlomo on Eruvin 11a:1": {
+    "en": "",
+    "he": "<b>גמרא</b> פתחים וחלונות מותר ובלבד שיהא כו' כצ\"ל:",
+    "heRef": "חכמת שלמה על עירובין י״א א:א׳",
+    "lang": "en",
+    "primary_category": "Commentary",
+    "ref": "Chokhmat Shlomo on Eruvin 11a:1",
+    "url": "Chokhmat_Shlomo_on_Eruvin.11a.1"
+  },
+  "Chokhmat Shlomo on Eruvin 2a:1": {
+    "en": "",
+    "he": "<b>רש\"י</b> בד\"ה צורת הפתח כו'. נ\"ב צורה זו <img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGMAAABbAQAAAABPaQb4AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAz0lEQVQ4jbXUwRGCMBAFUBwLoATGSrQsbynBA4eUYAkcGSvgaAuelGGQSRBZsxgSlyEMEs2JN3+zCxw2gM8T/EYyMOeoFN5kBi1TSaK0zuRpc91fQsBs1xeuMGOmh4eEv/gwq4keC0W7OCfw2frq+2qX5s/zUEEkJrIa3CqsEpIls+/9Twd8zLXasBND5RNSlZFVRbJqmHVS/y6294TOgKgdV9xN73s6RSsFoEoi82ZUzK2xLiVAqsVRzxw3QZTCGSXei2GLlXcigKbX8i31AuvBGURCEEn6AAAAAElFTkSuQmCC\"/> קנה מכאן וקנה מכאן וקנה על גביהם:",
+    "heRef": "חכמת שלמה על עירובין ב׳ א:א׳",
+    "lang": "en",
+    "primary_category": "Commentary",
+    "ref": "Chokhmat Shlomo on Eruvin 2a:1",
+    "url": "Chokhmat_Shlomo_on_Eruvin.2a.1"
+  },
+  "Introductions to the Babylonian Talmud, Eruvin, Introduction to Eruvin": {
+    "en": [
+      "See that God has given you the Shabbat, therefore He has given you on the sixth day the bread of two days; remain every man in his place, let no man go out of his place on the seventh day. (Exodus 16:29)",
+      "If you turn away your foot because of the Shabbat, from pursuing your business on My holy day; and call the Shabbat a delight, and the holy of God honorable; and shall honor it by not doing your usual ways, nor pursuing your business, nor speaking of it; then you shall delight yourself in God, and I will make you ride upon the high places of the earth, and I will feed you with the heritage of Jacob your father; for the mouth of God has spoken it. (Isaiah 58:13–14)",
+      "Neither carry forth a burden out of your houses on the Shabbat day, nor do any work; but make the Shabbat day holy, as I commanded your fathers. (Jeremiah 17:22)",
+      "Tractate <span class=\"it-text\">Eiruvin</span>, in its entirety, is an elaboration and conclusion of the subject matter discussed in tractate <span class=\"it-text\">Shabbat</span>, as it focuses on one aspect of the <span class=\"it-text\">halakhot</span> of Shabbat that was not comprehensively elucidated. Tractate <span class=\"it-text\">Shabbat</span> opened with a discussion of the prohibited labor of carrying out on Shabbat. Tractate <span class=\"it-text\">Eiruvin</span> analyzes the details of the rabbinic laws that apply to this act. This prohibited labor is unique in that it is not an inherently creative act; rather, it is merely the act of transferring an object from one domain to another.",
+      "In essence, the labor of carrying out highlights the significance of Shabbat as a day of rest, not only a day during which specific activities are prohibited, but also a day on which a premium is placed on quiet, rest, and a sense of relaxation. Shabbat demands that one take a break from the everyday hustle and bustle of moving and carrying from the public to the private domain and vice versa. Similarly, the public thoroughfare calms down from its weekday business and trade. This is accomplished by the creation of domains that are unique to Shabbat. That is, they do not correspond to the domains in force with regard to the rules of commerce, nor those of ritual purity. Transference between different domains is forbidden, as is carrying in the public domain.",
+      "The laws of Shabbat recognize four basic domains: 1. A private domain. 2. A public domain. 3. A <span class=\"it-text\">karmelit</span>, which is an intermediate domain, neither public nor private. 4. An exempt domain, which is not really a domain at all.<br/>In effect, there are only three domains on Shabbat: the private and the public, both of which are domains by Torah law, and the <span class=\"it-text\">karmelit</span>, which is a domain by rabbinic law. All other areas fall into the category of exempt domain.",
+      "The private domain is an area of four handbreadths by four handbreadths; a handbreadth is the distance from the tip of the thumb to the tip of the little finger, or slightly more. A private domain is separated from the area around it by walls that are at least ten handbreadths high. In terms of the <span class=\"it-text\">halakhot</span> of Shabbat, an area is a private domain even if it is open to the public and available for use.",
+      "The public domain is a thoroughfare at least sixteen cubits wide; a cubit is the distance from the elbow to the end of the index finger. According to some opinions, for an area to be defined as a public domain it must also be frequented by more than 600,000 people daily. The <span class=\"it-text\">halakhot</span> of the public domain apply only up to a height of ten handbreadths.",
+      "According to Torah law, these are the two primary domains. The Sages added a third, the <span class=\"it-text\">karmelit,</span> whose legal status by rabbinic law is that of a public domain. The <span class=\"it-text\">karmelit</span> is at least four handbreadths by four handbreadths and not surrounded by walls. Examples of this domain are fields, lakes, etc.",
+      "An exempt domain is an area of less than four handbreadths by four handbreadths. In addition, the airspace above ten handbreadths in a public domain or a <span class=\"it-text\">karmelit</span> is an exempt domain, where the <span class=\"it-text\">halakhot</span> of carrying do not apply.",
+      "For many years, these domains constituted the only restrictions with regard to carrying out and movement on Shabbat. After the Jewish people settled and began to develop their land, the rabbinic leadership grew concerned that in the course of mundane living in towns and villages, Shabbat was not accorded its due. In particular, the distinctions between the domains of Shabbat were obfuscated; their theoretical parameters did not correspond to the actual utilization of those areas, and the domains and their <span class=\"it-text\">halakhot </span>were interchanged. After all, a private domain full of people and activity could appear, at least superficially, indistinguishable from a public domain. Moreover, people were able to engage in most of their typical weekday activities without actually violating any of the Torah prohibitions. Consequently, the idea of Shabbat as a day of rest was not realized.",
+      "Already in the First Temple era, the rabbinic Sages began to issue decrees intended to raise the general level of consciousness concerning Shabbat observance. These decrees fall into the category of <span class=\"it-text\">shevut</span>, prohibitions by rabbinic law designed to enhance the character of Shabbat as a day of rest. Such decrees severely limited the permitted uses of the private domains and placed renewed emphasis on the plain meaning of the passage in Exodus that is the source for all of the Shabbat domains: “Let no man go out of his place on the seventh day.” The Sages' decrees limited the designation of private domains to those places that actually belong to an individual and his family. Private domains utilized by more than one individual, e.g., a courtyard shared by several households, as well as the alleyways and paths into which courtyards open, were rendered public domains by rabbinic law.",
+      "The decrees issued by the Sages are the starting point for tractate<span class=\"it-text\"> Eiruvin</span>. The tractate attempts to arrive at practical solutions for the problems created by these restrictions. The objective is not to abrogate the decrees, but rather to discover alternative methods to underscore the differences between the public and private domains. Similarly, the tractate attempts to discover how one could go beyond the Shabbat limits while maintaining the framework that requires limiting travel on Shabbat. The myriad ordinances that constitute the bulk of tractate <span class=\"it-text\">Eiruvin</span> work within the framework of the established principles of the <span class=\"it-text\">halakhot </span>of Shabbat.",
+      "Within the halakhic framework, there is extensive use of a series of abstract concepts, e.g., domain, limit, partition, and space. Although these principles are often the basis for stringencies and restrictions, they can also serve as the basis for far-reaching leniencies. The two primary concepts analyzed in the framework of tractate <span class=\"it-text\">Eiruvin </span>are the essence of a partition and the essence of a residence.",
+      "The partition is a fundamental component of domains, alleyways, courtyards, houses, and more. Clearly a solid wall with no openings is a partition; however, in most cases the demarcation is less clear-cut. At times, the wall is not sturdy enough to serve as a partition. At times, there are windows, doorways, and other spaces in the wall. At times, the wall does not cover the entire opening. It was therefore necessary to create broader criteria that apply to all forms of partitions, despite their quantitative and qualitative differences: Concepts like <span class=\"it-text\">lavud</span>, which determines that objects less than three handbreadths apart are considered joined; <span class=\"it-text\">gode</span>, through which an incomplete partition can be extended upward or downward; <span class=\"it-text\">havot</span>, through which a cross beam is lowered; and others that broaden the parameters of the concept of partition to include incomplete partitions, e.g., cross beam, side post, form of a doorway, and upright boards.",
+      "In a similar vein, it must be established what is considered one's fixed residence. Here too, there are clear-cut examples with regard to which there is no uncertainty. One who eats and sleeps and remains in a house that is his alone, certainly has a residence that is exclusively his. However, since reality is a bit more complex, as in practice most people do not live alone and do not spend all their lives in one place. Therefore, it was necessary to create a broader abstract definition of the concept of fixed residence and establish when it is that several people have the legal status of one person, where family relations and dependence unify them, and to what degree one must be tied to or be present at a certain place in order to be considered a resident. Once these definitions are determined, the simplistic distinction between resident and guest is no longer necessarily significant. The concept of one's residence can, on the one hand, be restricted to the individual alone, while on the other hand it can be expanded to include others. Based on the expansive interpretation of the concept of residence, the possibility of establishing the joining of courtyards, the merging of alleyways, and the joining of Shabbat boundaries becomes feasible.",
+      "While some of these solutions might appear to be a disingenuous attempt to circumvent the fundamental<span class=\"it-text\"> halakha</span>, in fact, life in accordance with halakhic principles requires their formulation and definition in an abstract and expansive manner. Especially in the case of <span class=\"it-text\">eiruv</span>, where the original prohibitions are rabbinic in nature, there is room for far-reaching leniency in implementing these halakhic principles.",
+      "Tractate <span class=\"it-text\">Eiruvin</span> is divided into ten chapters:",
+      "Chapter One of <span class=\"it-text\">Eiruvin</span> deals with an alleyway that is open to the public domain on one side, and into which several courtyards open. In order for all residents of the houses in those courtyards to carry in the alleyway, there are two requirements:<br/>1. Every household must contribute to a jointly owned food item. All the residents of the courtyard assume the legal status of one extended household. This is in fact the <span class=\"it-text\">eiruv</span> for which this tractate is named.<br/>2. A physical change must be made in the alleyway to symbolically demarcate it from the public domain. This may be accomplished with the addition of a side post positioned near the entrance or a cross beam over the entranceway, which will facilitate awareness that one is leaving a private domain and entering a public domain.",
+      "Chapter Two discusses the special ordinances of upright boards and the <span class=\"it-text\">halakhot </span>of those parts of the private domain that are not used as residences.",
+      "Chapter Three discusses the food items which may be used in establishing an <span class=\"it-text\">eiruv</span>. The chapter continues with a discussion of the <span class=\"it-text\">halakhot </span>of the joining of Shabbat boundaries and the uncertainties that arise with regard to the effectiveness of joining boundaries in different cases.",
+      "Chapter Four continues the discussion of the joining of Shabbat boundaries. It treats the establishment of limits for one who goes beyond his designated limit, or for one who has no residence and seeks to acquire one for the purposes of joining the boundaries.",
+      "Chapter Five deals with the methods used to measure the Shabbat limits for the city's residents, what are the borders of the city for that purpose, and how the two thousand cubits of the joining of Shabbat boundaries are measured.",
+      "Chapter Six, in which the Gemara returns to the original discussion with regard to the <span class=\"it-text\">halakhot</span> of the joining of courtyards, asks: How and when can residents of a courtyard become as one, enabling them to move objects in their courtyard, and in what cases are they unable to do so?",
+      "Chapter Seven continues the discussion of the joining of courtyards from a different perspective: Under what circumstances can two adjacent courtyards be considered as one, and when do the partitions between them render them two separate courtyards? Another topic addressed in this chapter is: How does one conduct oneself in practice when merging alleyways?",
+      "Chapter Eight continues addressing this topic. In addition, it discusses the subject of an <span class=\"it-text\">eiruv</span> established for inhabitants of two residences located on different floors of a single structure. In what manner can these be transformed into a single courtyard in every sense? In addition, the <span class=\"it-text\">halakhot</span> of the joining of courtyards when there is a pool of water in the courtyard and the special provisions instituted in that case are discussed.",
+      "Chapter Nine deals with clarification of the relationship between the various domains instituted by rabbinic ordinance with regard to Shabbat. It addresses houses, roofs, courtyards, and enclosures, and adjacent courtyards surrounded by fences and those not surrounded by fences. How and when is it permitted to move objects between them and beyond their borders?",
+      "Chapter Ten begins with a discussion of the <span class=\"it-text\">halakhot</span> of <span class=\"it-text\">eiruv</span> and the special cases where the Sages were lenient. The bulk of the chapter, however, deals with several <span class=\"it-text\">halakhot</span> whose sole connection to tractate <span class=\"it-text\">Eiruvin</span> lies in the fact that they fall into the category of <span class=\"it-text\">shevut</span>, decrees and preventive measures issued by the Sages to enhance the character of Shabbat as a day of rest. The discussion centers on what is permitted and what is prohibited on Shabbat in those areas where the Sages issued decrees and instituted ordinances. In addition, the degree to which those rabbinic laws are in effect inside and outside the Holy Temple is discussed.<br/>The <span class=\"it-text\">halakhot</span> in this tractate are not merely theoretical. Hundreds of <span class=\"it-text\">eiruvin </span>have been established in cities and towns throughout the United States and around the world based on real-world application of the principles found in this tractate."
+    ],
+    "he": [
+      "<b>רְאוּ כִּי ה׳ נָתַן לָכֶם הַשַּׁבָּת עַל־כֵּן הוּא נֹתֵן לָכֶם בַּיּוֹם הַשִּׁשִּׁי לֶחֶם יוֹמָיִם שְׁבוּ אִישׁ תַּחְתָּיו אַל יֵצֵא אִישׁ מִמְּקֹמוֹ בַּיּוֹם הַשְּׁבִיעִי.</b> (שמות טז, כט)",
+      "<b>אִם תָּשִׁיב מִשַּׁבָּת רַגְלֶךָ עֲשׂוֹת חֲפָצֶךָ בְּיוֹם קָדְשִׁי וְקָרָאתָ לַשַּׁבָּת עֹנֶג לִקְדוֹשׁ ה׳ מְכֻבָּד וְכִבַּדְתּוֹ מֵעֲשׂוֹת דְּרָכֶיךָ מִמְּצוֹא חֶפְצְךָ וְדַבֵּר דָּבָר.</b> (ישעיה נח, יג)",
+      "<b>וְלֹא תוֹצִיאוּ מַשָּׂא מִבָּתֵּיכֶם בְּיוֹם הַשַּׁבָּת וְכָל מְלָאכָה לֹא תַעֲשׂוּ וְקִדַּשְׁתֶּם אֶת יוֹם הַשַּׁבָּת כַּאֲשֶׁר צִוִּיתִי אֶת אֲבוֹתֵיכֶם.</b> (ירמיה יז, כב)",
+      "מסכת עירובין כולה היא המשך והשלמה למסכת שבת. מסכת שבת, שעיקרה ורובה עוסקת בכל דיני שבת, דנה גם בדברים רבים שהם כללים ופרטים בעניני עירובין. ואילו מסכת עירובין עיקר עניינה בעניינים אלה. מסכת עירובין היא איפוא חלק מורחב מאד של מסכת שבת. אותו צד מיוחד בדיני שבת שהוא עיקרה של מסכת עירובין הריהו תקנות חכמים שונות הקשורות במלאכת ההוצאה בשבת. מלאכה זו אינה מלאכת יצירה ממש, כשאר המלאכות שאסור לעשותן בשבת. שכן אין בעשייתה יצירתו של שינוי מהותי, של דבר חדש שלא היה קודם לכן. מלאכה זו מוגדרת באיסור שאסרה התורה להעביר בשבת כל חפץ שהוא מן הרשות (התחום המוגדר) בה הוא נמצא אל רשות אחרת.",
+      "״מלאכה״ זו היא לאמיתו של דבר יחודית, הלכה מיוחדת של התורה, המוסיפה ומדגישה את מהות השבתון שבשבת. שכן לשבתון יש כמה וכמה פנים: יש בו צד של שביתה ממלאכה — הפסקת מלאכת היצירה של ימי המעשה, אף גם שקט ומנוחה; הפסקת התנועה והזיע של ימות החול, הפסקת ההעברה, ההבאה וההוצאה של דברים שונים בין תחומו של היחיד לתחום הרבים, והקפאתה של רשות הרבים עצמה למצב של דמימה ושבתון. כדי שיהא השבתון שלם, קבעה התורה תחומים מיוחדים, ״רשויות״ בעלות הגדרה מיוחדת לענין שבת בלבד (שכן הן אינן מזדהות עם כל חלוקה אחרת של רשויות, לא בדיני ממונות ולא בדיני טומאה), והיא אסרה להעביר חפצים מרשות לרשות או אף לטלטל בתחום רשות הרבים.",
+      "ארבע רשויות יסודיות הן בדיני שבת: רשות היחיד, רשות הרבים, כרמלית, ו״מקום פטור״.",
+      "וכך מוגדרת רשות היחיד לדיני שבת: כל מקום שיש בו שטח של ארבעה טפחים על ארבעה טפחים, והוא מובדל מסביבתו בהבדל גובה של עשרה טפחים. בין שהבדל זה נוצר על ידי מחיצה, או על ידי תעלה גובלת, או שהיה המקום כולו מוגבה או נמוך מסביבתו, הרי זה רשות היחיד, ואפילו היה מקום זה שייך לרבים ועומד לשימושם. וכרשות היחיד נדון גם כל חללה (ה״אויר״) של רשות זו.",
+      "לעומת זאת, מקום שרוחבו לפחות שש עשרה אמה, והרבים משתמשים בו (ויש אומרים: ששים ריבוא איש ליום) הרי הוא רשות הרבים. אף חלל רשות הרבים דינו כרשות הרבים, אבל רק עד לגובה עשרה טפחים מקרקעה. שתי רשויות אלה הן רשויות עיקריות מדברי תורה.",
+      "עליהן הוסיפו חכמים רשות שלישית: כרמלית, והגדרתה: כל מקום ששטחו לפחות ארבעה טפחים על ארבעה טפחים, אך אין לו מחיצה, העושה אותו לרשות היחיד ואף אין הרבים משתמשים בו תדיר, כגון שדות או ימים, גזרו חכמים שיהא דין המקום הזה כדין רשות הרבים.",
+      "ואולם מקום מסוים ומובדל מסביבתו שאין שטחו ארבעה טפחים על ארבעה טפחים, וכן החלל שמעל לרשות הרבים והכרמלית, הם מקום פטור, לאמור: שאיסורי הוצאה וטלטול אינם חלים בו כלל. ואסרה תורה להעביר כל חפץ מרשות לרשות בין רשויות אלה וכן אמרה לטלטל כל חפץ ארבע אמות בתחום רשות הרבים. וכאמור, דין כרמלית הוא כדין רשות הרבים, מדברי חכמים.",
+      "רשויות ותחומים אלה שיסודם בתורה היו במשך שנים רבות כל ההגבלות שבדיני הילוך וטלטול בשבת. ואולם לאחר שעם ישראל התבסס היטב בארצו והגיעה תקופה של שלום והתפתחות הישוב בכל מקום, מצאו חכמים כי במהלך החיים הרגיל, בערים ובכפרים ובשאר מקומות מיושבים, עדיין אין השבת ניכרת כל צרכה. רשויות השבת, בשל הגדרותיהן המופשטות שאינן קשורות כלל בשימוש בכל רשות, מתערבות זו בזו ומיטשטש ההבדל ביניהן. שכן רשות היחיד המרובה בדיירים ובעוברים ושבים נעשית למראית העין כרשות הרבים, ואין הבדל ניכר לבריות בין רשות הרבים לפי הגדרתה ההלכתית השלמה ובין רשות היחיד. וכיוצא בכך, אין שביתה ומנוחה במקום ישוב כאשר אנשיו הולכים ושבים בעצם יום השבת ואינם שובתים ונחים — אם כי אינם עושים בכך כל איסור. וכדי להגביר את שמירת השבת, דאגו חכמי הדורות עוד בימי הבית הראשון בגזירותיהם וסייגיהם לאסור דברים שונים המותרים מן התורה.",
+      "רוב סייגים אלה כלולים במונח ״שבות״, שמשמעו: איסור שמדברי חכמים (״מדרבנן״), ומטרתו להוסיף לצד השבתון שבשבת. בין סייגי השבות הללו מצויות גם אותן הגבלות שהן הנושא לדיון במסכת עירובין. עיקרם של סייגים אלה הוא בהגבלה מרובה של תחום היתר השימוש ברשות היחיד וכן בהדגשה יתרה של ההלכה המקורית שממנה נובעות רשויות השבת: ״אל יצא איש ממקומו״ כפשוטה. על פי גזרות חכמים רשות היחיד לכל דבר היא רק מקום אשר בו מצויים ומשתמשים בפועל אדם אחד ובני משפחתו. ואילו ״רשות היחיד״ המשמשת למעשה לרבים, כגון חצר שדרות בה משפחות אחדות, וכולן משתמשות באותה חצר, במבואות ובסימטאות שחצירות פתוחות אליהם, אף שכל אלה הם אף לדעת חכמים רשות היחיד, מכל מקום כיון שהרבים מהלכים בסימטאות אלה ומשתמשים בהן, עשאון חכמים כרשות הרבים לענין איסור טלטול. הגבלות אלה שהוטלו על רשות היחיד נועדו לצמצם את ההיתר לטלטל בתוך רשות זו. הגבלה אחרת היתה הגבלת היתר התנועה בכל מקום, ותקנו חכמים תחום שבת שאין להלך יותר משיעור זה. תחום זה שיעורו אלפיים אמה לכל צד, ממקום השביתה.",
+      "סייגים אלה שתקנו חכמים הם נקודת המוצא של מסכת עירובין. כי עיקרי הדיון במסכת עצמה הם במציאת דרכים מעשיות שונות המאפשרות לפתור את הבעיות הנוצרות בגלל הגבלות אלה. כדי להגיע למטרה זו אין מבטלים את עצם סייגי חכמים וגזרותיהם אלא דנים כיצד ניתן להדגיש בצורות אחרות את רשות היחיד והפרדתה מרשות הרבים, או באיזה אופנים מותר להלך מחוץ לתחום ועם זאת לשמור על המסגרות המחייבות צמצום ומיעוט הילוך כזה בשבת. התקנות המרובות, המהוות רוב בנינה של מסכת עירובין, עומדות בעיקרן על שימוש בכל העקרונות המצויים בהלכה.",
+      "בכל המתייחס לדיני שבת יש מקום נרחב בהלכה לשורה של מושגים שיש בהם מידה רבה של הפשטה. מושגי ה״רשות״ וה״תחום״, המחיצה והחלל, לעתים אינם זהים למראית העין החיצונית. פעמים רבות גם הרשויות וגם המחיצות אינן ניכרות בחיי המציאות ואינן אלא הגדרות משפטיות של מצבים ועקרונות. ואולם, ראיית הדברים מתוך השקפה הלכתית עקרונית ומופשטת אינה בהכרח מקור של החמרה וצמצום. תוך שימוש באותם עקרונות מופשטים ובהרכבתם יחד אפשר להגיע גם להקלות מפליגות המעוגנות בתפיסה היסודית של מושגי ההלכה.",
+      "ואכן תוכנה הפנימי של מסכת עירובין כולה הוא — בירור היסודות העקרוניים של מושגים רבים. ובעיקר בשתי בעיות יסודיות: מהותה של מחיצה ומהותה של דירה. המחיצה היא מרכיב יסודי הגובל ויוצר את ה״רשות״ והמבוי, החצר והבית ועוד. ודאי שמחיצה איתנה ואטומה כולה החוסמת כל מעבר שהוא בכל מלואו — מחיצה היא. ואולם מחיצה מעין זו היא מקרה קיצוני. בדרך כלל אין במחיצה קיומם של כל התנאים הללו, ופעמים שאין היא חזקה עד כדי להוות חסימה של ממש, פעמים שיש בה דלתות וחלונות או חללים אחרים, ופעמים אינה חוסמת פתח בכל מלואו. ומשום כך יש למצוא הגדרות נרחבות יותר שיהא בהן כדי להקיף את כל המחיצות, לסוגי הכמות והאיכות שלהן. ואכן, המושגים ״לבוד״ ״גוד אחית״, ״גוד אסיק״, ״חבוט״ ואחרים, המרחיבים ומפשיטים את מושג המחיצה שכולם הרחיבו את היקפו של המושג גם למחיצות שאינן מושלמות. ומתוך צירוף הכללים הללו ושימוש עקבי בהם נתונה האפשרות לעשיית אמצעי־חייץ למיניהם כגון ״קורה״ ו״לחי״, ״צורת הפתח״ ו״פסי ביראות״, אשר כולם מהווים מחיצות על פי הגדרות עקרוניות אלה, גם אם אין בהם משום חציצה וחסימה שלמה.",
+      "ובדומה לכך, בירורה של השאלה מה הוא הנחשב למקום דירתו הקבועה של אדם, ומהו מקום משכנו המיוחד. אף כאן אפשר למצוא דוגמות קיצוניות אחדות שאין בהן ספק כלל; מי שאוכל וישן ושוהה כל יומו בבית המיוחד אך לו לבדו — ודאי שיש לו מקום דירה מוגדר. אולם מכיון שהמציאות אינה בנויה רק על מקרים בודדים, שכן למעשה אין רוב בני אדם חיים במבודד ואינם חיים כל חייהם במקום אחד בלבד, משום כך מתגלה הצורך למצוא הגדרות מופשטות וכוללות יותר של המושג ״לדור במקום״, ולקבוע מתי נחשבים אנשים אחדים כאילו היו אדם אחד בלבד — שקשרי משפחה ותלות יוצרים שיתוף וצירוף כגון זה וכמה יש להיות קשור ושרוי במקום מסויים כדי להיחשב כדר בו. ועם קביעת גבולות והגדרות לדברים אין בהם כבר אותה חלוקה פשטנית הנראית לעין בין דייר ואורח, תושב המקום או עובר אורח. דירתו של אדם ומקום שהותו ניתנים לעתים לצמצום רב ולעתים אפשר להרחיבם ולשתף עימם אחרים. ואכן על סמך הגדרות יסוד אלה של ״מקום דירה״ נוצרו אפשרויות הנותנות מקום ל״עירובי חצרות״, ״שיתופי מבואות״ ו״עירובי תחומין״, שבכולם מצוי אותו גרעין יסודי של הרחבת מושג הדירה וקביעת גבולות מופשטים לו.",
+      "כל הפרטים הללו שבמסכת עירובין עלולים להיראות כאילו היו הערמות ועקיפות של החוק היסודי. ואולם לאמיתו של דבר, דרך חיים לפי עקרונות ההלכה מחייבת ניסוחם והגדרתם בצורות מופשטות ומורחבות. וכל הגדרה הכוללת בתוכה גם מקרי ביניים שונים מחוייבת מעצם מהותה לוותר על מראית העין הפשטנית. אותם דברים אשר עלולים להיראות בהשקפה ראשונה כהערמה וכעקיפה בלבד מתגלים עם התבוננות הנכוחה בהם כחלקים מחוייבים של מערכת הגדרות עמוקות וברורות בעניני רשויות, מחיצות ודירות. אכן, הפירוט המרובה של תקנות העירובין והשימוש המרובה בהיתרים הנובעים מתפיסתו העקרונית של הדין מיוחדים למסכת עירובין. מאחר שאף ההגבלות היסודיות מקורן הראשוני רק בדברי חכמים, יש מקום לגלות את האפשרויות המרובות הטמונות בעצם מסקנותיה של ההלכה. ואף על פי כן, העקרונות הנתונים לנו במסכת עירובין הם אותם העקרונות הקיימים בכל תחומי ההלכה, בין להחמיר ובין להקל, ולא נתייחדה מסכת עירובין אלא בשילובם במערכת בעיות אחת, ועם זאת אינה חורגת מהתחום שתחמו להם חכמים בכל מקום.",
+      "מסכת עירובין מתחלקת לעשרה פרקים.",
+      "<b>בפרק הראשון, ״מבוי״</b> דנים בעיקר בהיתר הטלטול, ההוצאה וההכנסה במבוי הסתום, על ידי התקנת ה״לחי״ וה״קורה״.",
+      "<b>בפרק השני, ״עושין פסין״</b>, דנים בתקנה המיוחדת של פסי ביראות ובדיני אותם חלקי רשות היחיד שאינם משמשים לגמרי לדירה.",
+      "<b>הפרק השלישי, ״בכל מערבין״,</b> עוסק בהרכב המזון הנדרש לצורך העירובין, ומכאן ממשיך לדון בהלכות עירובי התחומין ובספקות המתעוררים לגבי תחולתו של העירוב במקרים שונים.",
+      "המשך הענין הוא <b>בפרק רביעי, ״מי שהוציאוהו״,</b> הדן בקביעת התחום ליוצא מחוץ לתחומו המיוחד לו, או במי שאין לו תחום ישיבה מיוחד וצריך לקנות לעצמו תחום.",
+      "<b>הפרק החמישי, ״כיצד מעברין״,</b> עוסק בדרכים בהם מודדים את התחומים ליושביה של עיר, מה הם גבולות העיר לענין זה, כיצד קובעים את תחומיה, וכיצד ממשיכים למדוד משם אלפיים אמה לתחום.",
+      "<b>בפרק ששי, ״הדר״,</b> חוזרים לדיון הראשון שבהלכות עירובי חצרות: מתי וכיצד יכולים בני החצר על ידי עירוב להיעשות כאיש אחד ולהתיר טלטול בחצרם, ובאלו מקרים אינם יכולים לעשות כן.",
+      "<b>פרק שביעי, ״חלון״,</b> ממשיך את הדיון בעירובי החצרות מצד אחר: באיזו תנאים אפשר להחשיב שתי חצרות סמוכות כחצר אחת, ומתי גורמות המחיצות שביניהן להחשיבן כשתי חצרות נפרדות. נושא אחר בפרק זה הוא: כיצד נוהגים הלכה למעשה בשעת שיתופי מבואות.",
+      "ונושא זה ממשיך אף <b>בפרק שמיני, ״כיצד משתתפין״.</b> בפרק זה אף דנים בעירוב הנעשה בשביל דיירים של שתי דירות שכל אחת נמצאת בקומה אחרת של הבית. אף דנים באיזה אופן יכולות הן להיעשות כחצר אחת בכל. וכן בהלכות עירובי חצרות כשיש גם מקוה מים באותה חצר ובתקנות המיוחדות לדבר.",
+      "<b>פרק תשיעי, ״כל גגות״,</b> עוסק בבירור היחס בין הרשויות השונות שתקנו חכמים לענין שבת; בתים וגגות, חצרות וקרפיפות, חצרות סמוכות גדורות או פרוצות, באלו תנאים, מתי וכיצד מותר לטלטל ביניהן ומחוצה להן.",
+      "<b>פרק עשירי, ״המוצא תפילין״,</b> אמנם מתחיל בדיון במקצת דיני עירובין ובמקרים מיוחדים של היתרי חכמים, אבל מרחיב הוא בדיונו בכמה וכמה דינים הקשורים למסכת עירובין רק משום היותם נכללים בגדר ה״שבות״ שהם סייגים וגדרים שאסרו חכמים לעשותם בשבת, מה מותר ומה אסור לעשות ביום השבת בתחומים אלה שתקנו חכמים לענין שבת ובבירור כללי של תוקף תקנות אלה במדינה ובבית המקדש."
+    ],
+    "heRef": "הקדמות לתלמוד הבבלי, עירובין, הקדמה למסכת עירובין",
+    "lang": "en",
+    "primary_category": "Guides",
+    "ref": "Introductions to the Babylonian Talmud, Eruvin, Introduction to Eruvin",
+    "url": "Introductions_to_the_Babylonian_Talmud,_Eruvin,_Introduction_to_Eruvin"
+  },
+  "Introductions to the Babylonian Talmud, Eruvin, Introduction to Perek I": {
+    "en": [
+      "This chapter deals primarily with the modifications undertaken in order to render alleyways fit for one to carry within them on Shabbat. More specifically, it discusses the <span class=\"it-text\">halakhot</span> governing alleyways that open into the public domain on one side and are closed on the other three sides by virtue of the partitions of the courtyards and houses located there. Consequently, the public cannot pass through this closed alleyway. An open alleyway, on the other hand, is a small and narrow passageway that is so seldom used that it cannot be considered a public domain, yet, being that it is open on opposite ends, it serves as a passageway from one public domain to another.",
+      "In order to establish an <span class=\"it-text\">eiruv</span> in an alleyway enabling the residents of the alleyway to carry objects there on Shabbat, two actions must be taken: First, every household must contribute to a jointly owned food item. All the residents of the courtyard then assume the legal status of one extended household and it is permitted for them to carry there on Shabbat. This action, the merging of alleyways, is elucidated in later chapters of this tractate. The second action involves modification of the alleyway itself. The purpose of this modification is to clearly demarcate the alleyway as distinct from the public domain. Accordingly, a symbolic fourth partition is placed at the point where the alleyway and the public domain intersect. There are three types of symbolic partitions; they are a cross beam, a side post, and the form of a doorway. A crossbeam is placed over the entrance to the alleyway. A side post is placed adjacent to the wall on the side of the entrance to the alleyway. The form of a doorway consisting of two doorposts and a lintel is considered an effective symbolic partition even in open-ended alleyways. These partitions accentuate the fact that the alleyway is closed to the public.",
+      "These methods were universally accepted by the Sages. However, the details of these <span class=\"it-text\">halakhot</span> require elaboration. The focus of this chapter is, then, to elucidate in detail the <span class=\"it-text\">halakhot</span> of side posts, cross beams, and forms of doorways, how they are created, their dimensions, and the extent of their legal effect. These clarifications are tied to a more fundamental analysis of the essence of all these partitions: Are they merely symbolic partitions serving as conspicuous markers, or are they actual partitions that meet the minimal requirements of the <span class=\"it-text\">halakha</span>? This leads to another question: What is the legal status of the alleyway in terms of <span class=\"it-text\">halakha</span> in general, and in terms of the <span class=\"it-text\">halakhot</span> of Shabbat in particular? Clarification of these issues from several perspectives constitutes the primary focus this chapter."
+    ],
+    "he": [
+      "פרק זה דן בעיקר בתיקונו של המבוי: הדרך להכשירו כדי שמותר יהיה לטלטל בו בשבת. ביתר פירוט עוסק הפרק בבירור דיני מבוי שאינו מפולש. המבוי שדיברו בו חכמים בכל מקום הוא סימטה פתוחה לרשות הרבים, ומשני צדיה מחיצותיהם של חצרות או של בתים הפתוחים אליה. מבוי סתום הוא מבוי הפתוח לרשות הרבים בצידו האחד, וצידו השני סתום במחיצה, כך שאין הרבים יכולים לעבור דרכו. ואילו מבוי מפולש הוא אמנם סימטה קטנה — שהיא צרה ומעוטת שימוש מכדי להיות רשות הרבים ממש ואולם בהיותה פתוחה משני צדדיה לרחובות, הרי היא מקשרת בין רחוב אחד למשנהו, ורבים עוברים דרכה מרחוב זה לרחוב זה.",
+      "כדי לערב את המבוי שיוכלו הדרים בו (״בני מבוי״) לטלטל בו בשבת יש לעשות שני מיני תיקון: האחד, שישתתפו כל יושבי המבוי במאכל מסויים, ועל ידי כך ייחשבו כולם כדרים בבית אחד, ואשר בו מותר להם לטלטל, כבכל רשותם, ביום השבת. דרכי תיקון זה (״שיתוף מבואות״) מבוארות בפרקים אחרים במסכת זו. התיקון השני הוא בגוף המבוי עצמו, ומטרת התיקון היא להבליט את היות המבוי נפרד לעצמו ומובדל מרשות הרבים. לשם כך, עושים במבוי, בצד הפונה אל רשות הרבים, חציצה מסויימת המשמשת בדרך סמלית של נעילתו כעין חייץ רביעי למבוי. חציצה זו יכולה להיות עשויה באחת משלוש צורות: האחת, על ידי קורה ששמים על גביו של המבוי בפתחו. תיקון אחר הוא על ידי ״לחי״, דהיינו: שמצמידים לפתח המבוי הפונה לרשות הרבים פס צר, כדי שישמש ויסמל מחיצה לסגור בה את פתח המבוי. תיקון שלישי, הנחשב למועיל אף במבואות מפולשים, הוא על ידי בניית צורת פתח, כלומר: שמעמידים בפתח המבוי שלש קורות היוצרות יחד צורה של מזוזות ומשקוף הראויים להעמיד בהם דלת, ועל ידי כך להדגיש את היות המבוי סגור בפני הרבים.",
+      "דרכים אלה של תיקון המבוי מקובלות היו על רוב חכמי ישראל. אלא שעדיין יש מקום לברר את פרטי ההלכה הללו. ענינו של פרק זה הוא, איפוא, במיצוי דיני הלחי והקורה וצורת הפתח ובביאור פרטיהם, כיצד הם נעשים, מה שיעוריהם, ובאלו מקרים יפה כוחם. בירורים אלה קשורים בחקירה יסודית יותר בדבר מהותם של סוגי מחיצה אלה: האם יש לראותם כסמל וכהיכר בלבד, או שמא מהווים הם מחיצה של ממש המקיימת את הנדרש לפי ההלכה. ומבעיה זו מסתעף הדיון לשאלה אחרת: מהו מעמדו של המבוי מבחינה הלכתית ולדיני שבת. בירורן של בעיות אלה מצדדים רבים הוא עיקר ענינו של פרק זה."
+    ],
+    "heRef": "הקדמות לתלמוד הבבלי, עירובין, הקדמה לפרק א׳",
+    "lang": "en",
+    "primary_category": "Guides",
+    "ref": "Introductions to the Babylonian Talmud, Eruvin, Introduction to Perek I",
+    "url": "Introductions_to_the_Babylonian_Talmud,_Eruvin,_Introduction_to_Perek_I"
+  },
+  "Introductions to the Babylonian Talmud, Eruvin, Summary of Perek I": {
+    "en": [
+      "Most of the <span class=\"it-text\">halakhot</span> related to rendering an alleyway fit for one to carry within it on Shabbat were summarized in this chapter. It is apparent that the accepted halakhic opinion is that an area surrounded by partitions on three of its four sides is a private domain, and therefore an alleyway that is not open-ended is in fact a private domain. However, the Sages instituted a rabbinic ordinance to prevent violation of the <span class=\"it-text\">halakhot</span> of Shabbat, mandating creation of a divider at the point where the alleyway and the public domain intersect, in order to demarcate between them and prevent one from unintentionally carrying objects out from the alleyway into the public domain.",
+      "This can be accomplished by means of a cross beam, which, based on the halakhic determination in this chapter, serves merely as a conspicuous marker. A cross beam renders the alleyway fit for one to carry within it only when placed no higher than twenty cubits and no lower than ten handbreadths. Alternatively, this can be accomplished by means of a side post, whose legal status is that of a fourth partition. The result is that an alleyway with a side post is considered closed on four sides. In practice, it was determined that the side post must be attached to the wall of the alleyway and adjacent to the opening of the alleyway <span class=\"it-text\">ab initio</span>. It must be ten handbreadths high and can be of any width, and it must be clear that it is indeed serving as a side post. The Sages deliberated over the question: What form must a side post take in order to make it clear that it is serving that purpose?",
+      "An even more efficacious method of rendering the fourth side of the alleyway closed from a halakhic perspective is the creation of the form of a doorway. The form of a doorway is effective even in cases where cross beams and side posts are ineffective due to the fact that the openings are higher or wider than the dimensions dictated by <span class=\"it-text\">halakha</span>. The form of a doorway serves as an actual partition in every sense, and effectively renders even open alleyways permitted for one to carry within them. Although most Sages did not accept the opinion that two parallel partitions alone are sufficient to create a private domain, an open-ended alleyway is not considered a full-fledged public domain either. It is therefore sufficient to close the side where an open-ended alleyway and the public domain intersect with the form of a doorway. Indeed, it was mentioned incidentally in this chapter that it is possible to transform the public domain into a private domain by erecting doors on both open sides and partially close them.",
+      "This chapter also included a discussion with regard to the <span class=\"it-text\">halakhot</span> of establishing an <span class=\"it-text\">eiruv</span> for those in transit in a caravan. Here, the Sages allowed them to erect partitions that would not be considered actual partitions in other circumstances. Similarly, the Sages said that a military encampment at a time of war is exempt from all the <span class=\"it-text\">halakhot</span> of <span class=\"it-text\">eiruv</span>, as these <span class=\"it-text\">halakhot</span> were instituted only for those living at home in peace."
+    ],
+    "he": [
+      "בפרק זה סוכמו רוב ההלכות הקשורות בתיקונו ובהכשרתו של המבוי שיהא מותר לטלטל בו בשבת. נראה כי נתקבלה הדעה כי אף שלוש מחיצות מתוך ארבע יוצרות רשות היחיד. ומשום כך מבוי שאינו מפולש הריהו מעיקר הדין רשות היחיד, אלא שמשום גזירה והרחקה תיקנו חכמים לעשות חציצה בקצה מבוי זה, כדי להבחין בינו ובין רשות הרבים, על מנת למנוע מאנשים מלהיכשל בטלטול מן המבוי לרשות הרבים.",
+      "תיקון זה יכול להיעשות על ידי קורה, שסוכם בהלכה שהיא משמשת כהיכר בלבד, ואין כוחה יפה אלא כשמניחים אותה בגובה של לא יותר מעשרים אמה ולא פחות מעשרה טפחים, או על ידי לחי. שאנו אומרים שהלחי מהווה להלכה כמחיצה רביעית, ולכך על ידי הוספת לחי נחשב המבוי כסגור מארבעה צדדים. למעשה נקבע כי לחי זה צריך להיות צמוד לכותל המבוי (ולכתחילה סמוך לפתח), גובהו לפחות עשרה טפחים ורוחבו כלשהו, וצריך שיהא ניכר שעשוי לשם לחי. ודנו חכמים בבעיה מהי צורתו של הלחי שיהא בו היכר מספיק שלשם כך נעשה.",
+      "תיקון בעל תוקף מרובה מהקורה, ואף מן הלחי, הוא צורת הפתח; שכן צורת הפתח מועילה גם במבואות שאין הקורה והלחי מתירים בהם משום שגובהם או רוחבם גדולים מן השיעור הקבוע בהלכה. צורת הפתח משמשת כמחיצה של ממש לכל דבר, ויפה כוחה להתיר אפילו במבוי המפולש. כי אף שרוב החכמים לא קיבלו את השיטה ששתי מחיצות בלבד יוצרות רשות היחיד, מכל מקום הרי המבוי המפולש אינו רשות הרבים גמורה, ולכן כדי לתקנו יש במחיצה זו של צורת הפתח כדי להועיל. אכן, דרך אגב דובר גם בתיקון רשות הרבים ממש על ידי דלתות שמעמידים בשני צדיה העושות אותה לכעין חצי סגורה.",
+      "בפרק זה נידונו גם הלכות עירוב הנוהגות בשיירה החונה בבקעה שהתירו חכמים לאנשי השיירה במחיצות שאינן נחשבות מחיצות גמורות לכל דבר. כמו כן אמרו חכמים כי מחנה צבא היוצא להילחם אין כל דיני עירובין חלים בו, שלא תוקנו הלכות אלה אלא לאנשים היושבים במקומם בתנאי שלום."
+    ],
+    "heRef": "הקדמות לתלמוד הבבלי, עירובין, סיכום לפרק א׳",
+    "lang": "en",
+    "primary_category": "Guides",
+    "ref": "Introductions to the Babylonian Talmud, Eruvin, Summary of Perek I",
+    "url": "Introductions_to_the_Babylonian_Talmud,_Eruvin,_Summary_of_Perek_I"
+  },
+  "Jastrow, אִסְפְּלִידָא 1": {
+    "en": [
+      "<strong dir=\"rtl\">אִסְפְּלִידָא</strong>, <strong dir=\"rtl\">אִיסְ׳</strong> m. (Ispe. noun of <span dir=\"rtl\">פלד</span>; Arab. <span dir=\"rtl\">פלדֹ</span>, <i>to cut</i>, v. Ges. H. Dict. s. v.; cmp. <a class=\"refLink\" data-ref=\"Jastrow, פֶּרֶד I 1\" dir=\"rtl\" href=\"/Jastrow,_פֶּרֶד I.1\">פרד</a>); <i>a cut-off place, recess</i>, whence <b>1)</b> <i>cave, cleft</i>. <a class=\"refLink\" data-ref=\"Targum Jonathan on Exodus 33:22\" href=\"/Targum_Jonathan_on_Exodus.33.22\">Targ. Y. Ex. XXXIII, 22</a> (h. text <span dir=\"rtl\">נקרה</span>). <a class=\"refLink\" data-ref=\"Aramaic Targum to Psalms 57:1\" href=\"/Aramaic_Targum_to_Psalms.57.1\">Targ. Ps. LVII, 1</a> (ed. <span dir=\"rtl\">אוס׳</span>). <b>—2)</b> = <i>exedra</i> (v. <a class=\"refLink\" data-ref=\"Jastrow, אַכְסַדְרָא 1\" dir=\"rtl\" href=\"/Jastrow,_אַכְסַדְרָא.1\">אַכְסַדְרָא</a>), <i>recess in the house, sitting room in the shape of an open hall</i>, generally supported by columns. <a class=\"refLink\" data-ref=\"Bava Batra 7a:8\" href=\"/Bava_Batra.7a.8\">B. Bath. 7ᵃ</a> <span dir=\"rtl\">חד מטייה א׳</span> one of the heirs received a hall as his share. <a class=\"refLink\" data-ref=\"Bava Batra 7a:8\" href=\"/Bava_Batra.7a.8\">Ib.</a> <span dir=\"rtl\">קא בני … דא׳</span> the other built a wall in front of the hall (debarring light and air). <a class=\"refLink\" data-ref=\"Esther Rabbah 3:2\" href=\"/Esther_Rabbah.3.2\">Esth. R. to I, 9</a> בית א׳ <i>reception rooms.—</i> Pl. <a class=\"refLink\" data-ref=\"Jastrow, אִסְפְּלִידָא 1\" dir=\"rtl\" href=\"/Jastrow,_אִסְפְּלִידָא.1\">אִסְפְּלִידֵי</a>. <a class=\"refLink\" data-ref=\"Menachot 33b:10\" href=\"/Menachot.33b.10\">Men. 33ᵇ</a> <span dir=\"rtl\">א׳ דאית להו וכ׳</span> halls supported by columns."
+    ],
+    "he": [],
+    "heRef": "מילון יסטרוב, אִסְפְּלִידָא א׳",
+    "lang": "he",
+    "primary_category": "Reference",
+    "ref": "Jastrow, אִסְפְּלִידָא 1",
+    "url": "Jastrow,_אִסְפְּלִידָא.1"
+  },
+  "Jastrow, הַרְזִיקֵי 1": {
+    "en": [
+      "<strong dir=\"rtl\">הַרְזִיקֵי</strong> m. pl. (<a class=\"refLink\" data-ref=\"Jastrow, הַרְזֵיק 1\" href=\"/Jastrow,_הַרְזֵיק.1\">preced.</a>) <a class=\"refLink\" data-ref=\"Jastrow, *אֶבְיוֹנֵי 1\" dir=\"rtl\" href=\"/Jastrow,_*אֶבְיוֹנֵי.1\">בֵּי ה׳</a> <i>guard-house, a gate house</i> with one door opening to the court and another leading to the entrance to the inner rooms or buildings; cmp. <a class=\"refLink\" data-ref=\"Jastrow, כְּלָאֵי 1\" dir=\"rtl\" href=\"/Jastrow,_כְּלָאֵי.1\">כְּלָאֵי</a>. <a class=\"refLink\" data-ref=\"Menachot 33b:12\" href=\"/Menachot.33b.12\">Men. 33ᵇ</a>"
+    ],
+    "he": [],
+    "heRef": "מילון יסטרוב, הַרְזִיקֵי א׳",
+    "lang": "he",
+    "primary_category": "Reference",
+    "ref": "Jastrow, הַרְזִיקֵי 1",
+    "url": "Jastrow,_הַרְזִיקֵי.1"
+  },
+  "Jastrow, חַוְורָן 1": {
+    "en": [
+      "<strong dir=\"rtl\">חַוְורָן</strong> pr. n. pl. (b. h. <a class=\"refLink\" data-ref=\"Jastrow, חַוְרָן 1\" dir=\"rtl\" href=\"/Jastrow,_חַוְרָן.1\">חַוְרָן</a>, v. Wetzst. to Delitzsch Job p. 597, cmp. <a class=\"refLink\" data-ref=\"Jastrow, חָרַר IV 1\" dir=\"rtl\" href=\"/Jastrow,_חָרַר IV.1\">חָרַר</a>) <i>Havran, Auran</i>, a signal station, for proclaiming the New-Moon, in the country east of the Jordan named Auranitis. <a class=\"refLink\" data-ref=\"Mishnah Rosh Hashanah 2:4\" href=\"/Mishnah_Rosh_Hashanah.2.4\">R. Hash. II, 4</a> (<a class=\"refLink\" data-ref=\"Rosh Hashanah 22b\" href=\"/Rosh_Hashanah.22b\">22ᵇ</a>) (Mish. Pes. <a class=\"refLink\" data-ref=\"Jastrow, חוֹרוֹן 1\" dir=\"rtl\" href=\"/Jastrow,_חוֹרוֹן.1\">חורון</a>, Mish. Nap. <a class=\"refLink\" data-ref=\"Jastrow, חֶבְרוֹן 1\" dir=\"rtl\" href=\"/Jastrow,_חֶבְרוֹן.1\">חברון</a>; Ms. O. <a class=\"refLink\" data-ref=\"Jastrow, חוֹרוֹן 1\" dir=\"rtl\" href=\"/Jastrow,_חוֹרוֹן.1\">חורון</a>); Tosef. ib. II (I), 2 (Var. <a class=\"refLink\" data-ref=\"Jastrow, חַוְרָן 1\" dir=\"rtl\" href=\"/Jastrow,_חַוְרָן.1\">חַוְרָן</a>).—(<a class=\"refLink\" data-ref=\"Jastrow, בַּר II 1\" dir=\"rtl\" href=\"/Jastrow,_בַּר II.1\">בְּרַת</a>) <a class=\"refLink\" data-ref=\"Jastrow, חוֹרוֹן 1\" dir=\"rtl\" href=\"/Jastrow,_חוֹרוֹן.1\">בֵּית ח׳</a> <i>Beth-</i>(<i>Brath-</i>) <i>Havran</i>, prob. the same place. <a class=\"refLink\" data-ref=\"Jerusalem Talmud Shekalim 1:1:14\" href=\"Jerusalem_Talmud_Shekalim.1.1.14\">Y. Shek. I, 46ᵃ</a>; <a class=\"refLink\" data-ref=\"Jerusalem Talmud Moed Katan 1:2:8\" href=\"Jerusalem_Talmud_Moed_Katan.1.2.8\">Y. M. Kat. I, 80ᵇ</a> bot., a. e. <span dir=\"rtl\">ר׳ חונייה דב׳ ח׳</span>; Bab. <a class=\"refLink\" data-ref=\"Moed Katan 3b:11\" href=\"/Moed_Katan.3b.11\">M. Kat. 3ᵇ</a> <span dir=\"rtl\">ר׳ נחוניא איש בקעת בית חֲוַרְתָּן</span> (Ms. M. <span dir=\"rtl\">בקעת חוו׳</span>); <a class=\"refLink\" data-ref=\"Sukkah 34a\" href=\"/Sukkah.34a\">Succ. 34ᵃ</a> Ms. M. (missing in ed.). <a class=\"refLink\" data-ref=\"Eruvin 11a:13\" href=\"/Eruvin.11a.13\">Erub. 11ᵃ</a> בקעת בית חורתן Ms. M. (ed. <span dir=\"rtl\">חרוותן</span>)."
+    ],
+    "he": [],
+    "heRef": "מילון יסטרוב, חַוְורָן א׳",
+    "lang": "he",
+    "primary_category": "Reference",
+    "ref": "Jastrow, חַוְורָן 1",
+    "url": "Jastrow,_חַוְורָן.1"
+  },
+  "Jastrow, כְּלוּם 1": {
+    "en": [
+      "<strong dir=\"rtl\">כְּלוּם</strong> m. (= <span dir=\"rtl\">כל מ</span>, cmp. <a class=\"refLink\" data-ref=\"Jastrow, מאום 1\" dir=\"rtl\" href=\"/Jastrow,_מאום.1\">מְאוּם</a>) <b>1)</b> <i>anything, something, somebody</i> (Lat. ullus). <a class=\"refLink\" data-ref=\"Aramaic Targum to Ecclesiastes 1:9\" href=\"/Aramaic_Targum_to_Ecclesiastes.1.9\">Targ. Koh. I, 9</a> <span dir=\"rtl\">לית כ׳</span> (h. text <span dir=\"rtl\">אין כל</span>).—<a class=\"refLink\" data-ref=\"Yalkut Shimoni on Torah 730:1\" href=\"/Yalkut_Shimoni_on_Torah.730.1\">Yalk. Num. 730</a> (ref. to <a class=\"refLink\" data-ref=\"Numbers 10:35\" href=\"/Numbers.10.35\">Num. X, 35</a>) <span dir=\"rtl\">מפניך … ואין אנו כ׳ לפניהם</span> before thee they flee, and are we nothing before them? <span dir=\"rtl\">אלא כשפניך אתנו אנו כ׳ לפניהם וכשאין פניך אתנו אין אנו כ׳ לפניהם</span> but (it means) when thy countenance is with us we are <i>something</i> before them &amp;c.; <a class=\"refLink\" data-ref=\"Sifrei Bamidbar 84\" href=\"/Sifrei_Bamidbar.84\">Sifré Num. 84</a> (corr. acc.).—<a class=\"refLink\" data-ref=\"Mishnah Kelim 24:1\" href=\"/Mishnah_Kelim.24.1\">Kel. XXIV, 1</a> <span dir=\"rtl\">טהורה מכ׳</span> is clean from any (of the aforementioned impurities). <a class=\"refLink\" data-ref=\"Berakhot 22b\" href=\"/Berakhot.22b\">Ber. 22ᵇ</a>, a. fr. <span dir=\"rtl\">פטור מכ׳</span> is entirely exempt. <a class=\"refLink\" data-ref=\"Mishnah Nedarim 1:1\" href=\"/Mishnah_Nedarim.1.1\">Ned. I, 1</a>, a. fr. <span dir=\"rtl\">לא אמר כ׳</span> he has said nothing, i.e. what he said is void.—לא כ׳ <i>not the least, nothing at all</i>. <a class=\"refLink\" data-ref=\"Eruvin 11a:15\" href=\"/Eruvin.11a.15\">Erub. 11ᵃ</a> <span dir=\"rtl\">לא עשה ולא כ׳</span> (Rashi <span dir=\"rtl\">לא עשה כ׳</span>) he has done nothing at all, i.e. what he has done has no legal consequences. <a class=\"refLink\" data-ref=\"Eruvin 11b:15\" href=\"/Eruvin.11b.15\">Ib.ᵇ</a> הכל מודין … לא כ׳ היא Ms. M. all agree that if …, there is nothing at all (to consider; ed. <span dir=\"rtl\">ולא כ׳</span> = <span dir=\"rtl\">פטורה ולא כ׳</span> it is exempt, and there is nothing &amp;c.); <a class=\"refLink\" data-ref=\"Yoma 11b:5\" href=\"/Yoma.11b.5\">Yoma 11ᵇ</a> <span dir=\"rtl\"><span dir=\"rtl\">ולא כ׳</span> (<span dir=\"rtl\">ולאו</span>) <span dir=\"rtl\">היא</span></span> (v. Rabb. D. S. a. l. Ms. M. and note).—<a class=\"refLink\" data-ref=\"Kohelet Rabbah 9:10:1\" href=\"/Kohelet_Rabbah.9.10.1\">Koh. R. to IX, 10</a> <span dir=\"rtl\">מאן הוא דכ׳ ודבר בגרמיה כ׳ וכ׳</span> if a person is somebody and comports himself as somebody (is proud of his value), it were better he had not been born; a. fr. <b>—2)</b> (interrog.) introducing a question to which a negative answer is expected, <i>is there any? has any?</i> &amp;c. <a class=\"refLink\" data-ref=\"Sanhedrin 105a:3\" href=\"/Sanhedrin.105a.3\">Snh. 105ᵃ</a> <span dir=\"rtl\">כ׳ יש לזה על זה כ׳</span> has the one still any claim on the other? <a class=\"refLink\" data-ref=\"Shabbat 31a:9\" href=\"/Shabbat.31a.9\">Sabb. 31ᵃ</a> <span dir=\"rtl\">כ׳ מעמידין וכ׳</span> is there ever a king appointed except &amp;c.? <a class=\"refLink\" data-ref=\"Mishnah Nedarim 8:7\" href=\"/Mishnah_Nedarim.8.7\">Ned. VIII, 7</a> <span dir=\"rtl\">כ׳ אמרת וכ׳</span> wouldst thou have said it, but for thy wish to honor me?; a. fr.—[<a class=\"refLink\" data-ref=\"Tosefta Menahot 13:19\" href=\"/Tosefta_Menahot.13.19\">Tosef. Men. XIII, 19</a>; <a class=\"refLink\" data-ref=\"Tosefta Bava Kamma 7:8\" href=\"/Tosefta_Bava_Kamma.7.8\">Tosef. B. Kam. VII, 8</a>, v. <a class=\"refLink\" data-ref=\"Jastrow, דֶּלֶם 1\" dir=\"rtl\" href=\"/Jastrow,_דֶּלֶם.1\">דֶּלֶם</a>.]"
+    ],
+    "he": [],
+    "heRef": "מילון יסטרוב, כְּלוּם א׳",
+    "lang": "he",
+    "primary_category": "Reference",
+    "ref": "Jastrow, כְּלוּם 1",
+    "url": "Jastrow,_כְּלוּם.1"
+  },
+  "Jastrow, פִּינָּה 1": {
+    "en": [
+      "<strong dir=\"rtl\">פִּינָּה</strong>, <strong dir=\"rtl\">פִּנָּה</strong> f. (b. h.; <a class=\"refLink\" data-ref=\"Jastrow, פָּנָה 1\" dir=\"rtl\" href=\"/Jastrow,_פָּנָה.1\"></a><a class=\"refLink\" data-ref=\"Jastrow, פָּנָה 1\" dir=\"rtl\" href=\"/Jastrow,_פָּנָה.1\">פָּנָה</a>) <b>1)</b> <i>turn, movement</i>.—Pl. <span dir=\"rtl\"><a class=\"refLink\" data-ref=\"Jastrow, פִּיּוֹת 1\" dir=\"rtl\" href=\"/Jastrow,_פִּיּוֹת.1\">פִּינּוֹת</a> (פּוֹנוֹת</span>). <a class=\"refLink\" data-ref=\"Yoma 58b:12\" href=\"/Yoma.58b.12\">Yoma 58ᵇ</a> <span dir=\"rtl\">כל פי׳ שאתה פונה וכ׳</span> (Ms. M. 2 <span dir=\"rtl\">פנות</span>; Ms. O. <a class=\"refLink\" data-ref=\"Jastrow, פֶּתֶן ² 1\" dir=\"rtl\" href=\"/Jastrow,_פֶּתֶן ².1\">פו׳</a>) all the turns you make (in the Temple) must be towards the right; <a class=\"refLink\" data-ref=\"Yoma 15b:4\" href=\"/Yoma.15b.4\">ib. 15ᵇ</a> (Ms. M. <a class=\"refLink\" data-ref=\"Jastrow, פֶּתֶן ² 1\" dir=\"rtl\" href=\"/Jastrow,_פֶּתֶן ².1\">פו׳</a>); <a class=\"refLink\" data-ref=\"Zevachim 62b:8\" href=\"/Zevachim.62b.8\">Zeb. 62ᵇ</a> (Ms. M. <a class=\"refLink\" data-ref=\"Jastrow, פֶּתֶן ² 1\" dir=\"rtl\" href=\"/Jastrow,_פֶּתֶן ².1\">פו׳</a>); <a class=\"refLink\" data-ref=\"Sotah 15b:14\" href=\"/Sotah.15b.14\">Sot. 15ᵇ</a> <a class=\"refLink\" data-ref=\"Jastrow, פֶּתֶן ² 1\" dir=\"rtl\" href=\"/Jastrow,_פֶּתֶן ².1\">פו׳</a>; <a class=\"refLink\" data-ref=\"Yalkut Shimoni on Torah 446:3\" href=\"/Yalkut_Shimoni_on_Torah.446.3\">Yalk. Lev. 446</a> <span dir=\"rtl\">פְּנִיּוֹת</span>; a. e.—[With the exception of Sot. l. c. our editions read <span dir=\"rtl\">פינות</span>]. <b>—2)</b> <i>corner</i>. <a class=\"refLink\" data-ref=\"Shemot Rabbah 37:1\" href=\"/Shemot_Rabbah.37.1\">Ex. R. s. 37</a>, beg. (ref. to <a class=\"refLink\" data-ref=\"Zechariah 10:4\" href=\"/Zechariah.10.4\">Zech. X, 4</a>) <span dir=\"rtl\">ממנו פ׳ זה וכ׳</span> ‘from him (Israel) the cornerstone is taken’, this refers to King David (with ref. to <a class=\"refLink\" data-ref=\"Psalms 18:22\" href=\"/Psalms.18.22\">Ps. XVIII, 22</a>). <a class=\"refLink\" data-ref=\"Avot D'Rabbi Natan 28:9\" href=\"/Avot_D'Rabbi_Natan.28.9\">Ab. d’R. N. ch. XXVIII</a> <span dir=\"rtl\">שלש מידות … אבן פ׳ וכ׳</span> there are three qualities of scholars, a hewn stone (seated in the wall), a corner stone &amp;c.; <span dir=\"rtl\">אבן פ׳ שיש לו שתי פיות וכ׳</span> (one versed in Midrash and Halakhah) is a corner stone which has two faces only.—Pl. as ab. <a class=\"refLink\" data-ref=\"Mishnah Middot 1:1\" href=\"/Mishnah_Middot.1.1\">Midd. I, 1</a> <span dir=\"rtl\"><span dir=\"rtl\">על ארבע</span> (<span dir=\"rtl\">פִּינּוֹתֶיהָ</span>) <span dir=\"rtl\">פִּינּוֹתָיו</span></span> in its four corners. <a class=\"refLink\" data-ref=\"Eruvin 11a:13\" href=\"/Eruvin.11a.13\">Erub. 11ᵃ</a>, v. <a class=\"refLink\" data-ref=\"Jastrow, פֵּאָה 1\" dir=\"rtl\" href=\"/Jastrow,_פֵּאָה.1\">פֵּאָה</a>."
+    ],
+    "he": [],
+    "heRef": "מילון יסטרוב, פִּינָּה א׳",
+    "lang": "he",
+    "primary_category": "Reference",
+    "ref": "Jastrow, פִּינָּה 1",
+    "url": "Jastrow,_פִּינָּה.1"
+  },
+  "Jastrow, פַּס II 1": {
+    "en": [
+      "<strong dir=\"rtl\">פַּס II</strong> m. (b. h.; <a class=\"refLink\" data-ref=\"Jastrow, פָּסַס 1\" dir=\"rtl\" href=\"/Jastrow,_פָּסַס.1\"></a><a class=\"refLink\" data-ref=\"Jastrow, פָּסַס 1\" dir=\"rtl\" href=\"/Jastrow,_פָּסַס.1\">פָּסַס</a>) <b>1)</b> <i>strip, stripe</i>.—Pl. <a class=\"refLink\" data-ref=\"Jastrow, פַּסִּים 1\" dir=\"rtl\" href=\"/Jastrow,_פַּסִּים.1\">פַּסִּים</a>, <a class=\"refLink\" data-ref=\"Jastrow, פַּסִּים ² 1\" dir=\"rtl\" href=\"/Jastrow,_פַּסִּים ².1\">פַּסִּין</a>. <a class=\"refLink\" data-ref=\"Bereishit Rabbah 84:8\" href=\"/Bereishit_Rabbah.84.8\">Gen. R. s. 84</a> (ref. to <a class=\"refLink\" data-ref=\"Genesis 37:3\" href=\"/Genesis.37.3\">Gen. XXXVII, 3</a> sq., a. <a class=\"refLink\" data-ref=\"Psalms 66:5\" href=\"/Psalms.66.5\">Ps. LXVI, 5</a> sq.; v. <a class=\"refLink\" data-ref=\"Jastrow, עֲלִילָה 1\" dir=\"rtl\" href=\"/Jastrow,_עֲלִילָה.1\">עֲלִּילָה</a>) why ‘did they hate him’? That (in the course of events it should come about that) <span dir=\"rtl\">שיקרע הים לפניהם פ׳ פ׳</span> the sea be rent before them in strips (ed. Wil. <span dir=\"rtl\">פ̇ס̇י̇ם̇ פס ים</span> <i>passim</i> alludes to ‘strip of the sea’).—Esp. (cmp. <a class=\"refLink\" data-ref=\"Jastrow, פֶּרֶק 1\" dir=\"rtl\" href=\"/Jastrow,_פֶּרֶק.1\">פֶּרֶק</a>) <span dir=\"rtl\">פס יד</span>, <i>palm, the hand from the wrist to the tip of the finger</i>; <span dir=\"rtl\">פס רגל</span> <i>the foot to the ankle</i>, interch. with <span dir=\"rtl\">פִּסַּת</span>, <a class=\"refLink\" data-ref=\"Jastrow, פִּיסָּא 1\" dir=\"rtl\" href=\"/Jastrow,_פִּיסָּא.1\">פִּיסַּת</a> (constr. of <a class=\"refLink\" data-ref=\"Jastrow, פִּסָּה 1\" dir=\"rtl\" href=\"/Jastrow,_פִּסָּה.1\">פִּסָּה</a>). Ib. (expl. <span dir=\"rtl\">פסים</span>, Gen. l. c.) <span dir=\"rtl\">שהיתה מגעת עד פס ידו</span> the coat reached with its sleeves to his wrist; <span dir=\"rtl\">שהיתה … בפס ידו</span> it was very fine and light, and could be (compressed and) hidden in his hand (cmp. <a class=\"refLink\" data-ref=\"Jastrow, מַלְמֵלָה 1\" dir=\"rtl\" href=\"/Jastrow,_מַלְמֵלָה.1\">מַלְמֵלָה</a>). <a class=\"refLink\" data-ref=\"Mishnah Megillah 4:8\" href=\"/Mishnah_Megillah.4.8\">Meg. IV, 8</a> (<a class=\"refLink\" data-ref=\"Megillah 24b:16\" href=\"/Megillah.24b.16\">24ᵇ</a>) <span dir=\"rtl\">נתנה … על פס ידו וכ׳</span> if he placed the T’fillin on his forehead or on his palm. <a class=\"refLink\" data-ref=\"Yoma 87a:11\" href=\"/Yoma.87a.11\">Yoma 87ᵃ</a> (play on <span dir=\"rtl\">ה̇ת̇ר̇פ̇ס̇</span>, <a class=\"refLink\" data-ref=\"Proverbs 6:3\" href=\"/Proverbs.6.3\">Prov. VI, 3</a>) [read:] <span dir=\"rtl\">אם ממון יש לו בידך ה̇ת̇ר לו פ̇ס̇ת יד וכ׳</span> if thou owest him (whom thou hast wronged) money, untie thy hand to him (pay him), if not (if thou hast otherwise wronged him), get several friends around him (to ask his pardon in their presence); <a class=\"refLink\" data-ref=\"Bava Metzia 115a\" href=\"/Bava_Metzia.115a\">B. Mets. 115ᵃ</a>; <a class=\"refLink\" data-ref=\"Bava Batra 173b\" href=\"/Bava_Batra.173b\">B. Bath. 173ᵇ</a>; <a class=\"refLink\" data-ref=\"Yalkut Shimoni on Nach 938:3\" href=\"/Yalkut_Shimoni_on_Nach.938.3\">Yalk. Prov. 938</a>. <a class=\"refLink\" data-ref=\"Bereishit Rabbah 78:12\" href=\"/Bereishit_Rabbah.78.12\">Gen. R. s. 78</a> (play on <span dir=\"rtl\">מ̇ת̇ר̇פ̇ס בר̇צ̇י</span>, <a class=\"refLink\" data-ref=\"Psalms 64:31\" href=\"/Psalms.64.31\">Ps. LXIV, 31</a>) <span dir=\"rtl\">מ̇ת̇יר̇ את הפ̇ס̇ ומ̇ת̇ר̇צ̇ה בכסף</span> he (Edom-Rome) opens his hand (for bribery), and is appeased with silver; <a class=\"refLink\" data-ref=\"Shemot Rabbah 35:5\" href=\"/Shemot_Rabbah.35.5\">Ex. R. s. 35</a> <span dir=\"rtl\">מתרת את הפס וכ׳</span> she (Rome) opens &amp;c.; <a class=\"refLink\" data-ref=\"Yalkut Shimoni on Nach 800:1\" href=\"/Yalkut_Shimoni_on_Nach.800.1\">Yalk. Ps. 800</a> <span dir=\"rtl\">שפושטין פסת יד … ואין עושין ר̇צ̇ון וכ׳</span> they stretch forth their hand to accept silver, and then do not what the givers desire; <a class=\"refLink\" data-ref=\"Pesachim 118b:17\" href=\"/Pesachim.118b.17\">Pes. 118ᵇ</a> שפושטין פסת יד וכ׳ Ms. M. (ed. <span dir=\"rtl\">שפושטין יד</span>). <a class=\"refLink\" data-ref=\"Yoma 47a\" href=\"/Yoma.47a\">Yoma 47ᵃ</a> <span dir=\"rtl\">על פ׳ ידו</span> up to his wrist, v. <a class=\"refLink\" data-ref=\"Jastrow, חָפָה 1\" dir=\"rtl\" href=\"/Jastrow,_חָפָה.1\">חָפָה</a>; Sifra Vayikra, N’dab., ch. X, Par. 9 <span dir=\"rtl\">חופה את פס ידו וכ׳</span> he bends his hand (grabbing) in the pan &amp;c. Ohol. I, 8 <span dir=\"rtl\">שלשים בפס הרגל</span> thirty joints in the foot. <a class=\"refLink\" data-ref=\"Yalkut Shimoni on Nach 143:3\" href=\"/Yalkut_Shimoni_on_Nach.143.3\">Yalk. Sam. 143</a> <span dir=\"rtl\">חלילה … פ׳ יד ופ׳ רגל ועקב מגולין</span> never were their wrists or their feet or their heels seen uncovered; Midr. Sam. ch. XXV (corr. acc.); a. fr. <b>—2)</b> <i>partition, board, barrier</i>. <a class=\"refLink\" data-ref=\"Eruvin 5a:6\" href=\"/Eruvin.5a.6\">Erub. 5ᵃ</a> <span dir=\"rtl\">אם יש שם פם ארבעה</span> if a bar of four handbreadths is left or placed above the breach. <a class=\"refLink\" data-ref=\"Eruvin 10b:1\" href=\"/Eruvin.10b.1\">Ib. 10ᵇ</a> <span dir=\"rtl\">עושה פם גבוה עשרה וכ׳</span> he cuts a board ten handbreadths high and four cubits long &amp;c.; a. fr.—Pl. as ab. <a class=\"refLink\" data-ref=\"Mishnah Eruvin 2:1\" href=\"/Mishnah_Eruvin.2.1\">Ib. II, 1</a> <span dir=\"rtl\">עושין פ׳ לביראות וכ׳</span> you must place partitions around watering stations in the shape of four cornerpieces &amp;c., v. <a class=\"refLink\" data-ref=\"Jastrow, דְּיוֹמַד 1\" dir=\"rtl\" href=\"/Jastrow,_דְּיוֹמַד.1\">דְּיוֹמַד</a>. <a class=\"refLink\" data-ref=\"Eruvin 11a:8\" href=\"/Eruvin.11a.8\">Ib. 11ᵃ</a> <span dir=\"rtl\">פַּסֵּי ביראות</span> the partitions of watering stations; a. fr.—[<a class=\"refLink\" data-ref=\"Mishnah Maasrot 1:7\" href=\"/Mishnah_Maasrot.1.7\">Maasr. I, 7</a>, v. <a class=\"refLink\" data-ref=\"Jastrow, פַּץ 1\" dir=\"rtl\" href=\"/Jastrow,_פַּץ.1\">פַּץ</a>.] <b>—3)</b> pl. (v. ) <i>tax</i>; <span dir=\"rtl\">פַּסֵּי העיר</span> town tax (used for maintaining the safety of the town). <a class=\"refLink\" data-ref=\"Tosefta Peah 4:9\" href=\"/Tosefta_Peah.4.9\">Tosef. Peah IV, 9</a> <span dir=\"rtl\">לפ׳ העיר לשנים וכ׳</span> ed. Zuck. (ed. <span dir=\"rtl\">לעניי</span>, corr. acc.) in order to be assessed for the town tax one must have been a resident for twelve months; <a class=\"refLink\" data-ref=\"Bava Batra 8a:10\" href=\"/Bava_Batra.8a.10\">B. Bath. 8ᵃ</a>; <a class=\"refLink\" data-ref=\"Jerusalem Talmud Peah 8:6:8\" href=\"Jerusalem_Talmud_Peah.8.6.8\">Y. Peah VIII, 21ᵃ</a> bot. <span dir=\"rtl\">לפסין ולצדקות</span> for the town tax and for the charities, expl. for the salaries of public school teachers; <a class=\"refLink\" data-ref=\"Jerusalem Talmud Bava Batra 1:4:2\" href=\"Jerusalem_Talmud_Bava_Batra.1.4.2\">Y. B. Bath. I, beg. 12ᵈ</a> <span dir=\"rtl\">לפסים ולזימיות</span> for town tax and town fines."
+    ],
+    "he": [],
+    "heRef": "מילון יסטרוב, פַּס II א׳",
+    "lang": "he",
+    "primary_category": "Reference",
+    "ref": "Jastrow, פַּס II 1",
+    "url": "Jastrow,_פַּס_II.1"
+  },
+  "Jastrow, פַּץ 1": {
+    "en": [
+      "<strong dir=\"rtl\">פַּץ</strong> m. (<a class=\"refLink\" data-ref=\"Jastrow, *פְּצַץ 1\" dir=\"rtl\" href=\"/Jastrow,_*פְּצַץ.1\">פצץ</a>, <i>to split</i>) <i>board.</i>—Pl. <a class=\"refLink\" data-ref=\"Jastrow, פַּצִּים 1\" dir=\"rtl\" href=\"/Jastrow,_פַּצִּים.1\">פַּצִּים</a>, <a class=\"refLink\" data-ref=\"Jastrow, פַּצִּים 1\" dir=\"rtl\" href=\"/Jastrow,_פַּצִּים.1\">פַּצִּין</a>. <a class=\"refLink\" data-ref=\"Mishnah Maasrot 1:7\" href=\"/Mishnah_Maasrot.1.7\">Maasr. I, 7</a> מבין הפ׳ Mish. a. Y. ed. (Bab. ed. <span dir=\"rtl\">הפַּסִּים</span>; Ms. M. <span dir=\"rtl\">הפצ׳</span>) oil from between boards of the press. <a class=\"refLink\" data-ref=\"Menachot 33b:4\" href=\"/Menachot.33b.4\">Men. 33ᵇ</a> <span dir=\"rtl\">הניחה בפצין</span> (Rashi <span dir=\"rtl\">בפצים</span>) if he placed the inscription in the boards of the door frame; v. <a class=\"refLink\" data-ref=\"Jastrow, פַּצִּים 1\" dir=\"rtl\" href=\"/Jastrow,_פַּצִּים.1\">פַּצִּים</a>."
+    ],
+    "he": [],
+    "heRef": "מילון יסטרוב, פַּץ א׳",
+    "lang": "he",
+    "primary_category": "Reference",
+    "ref": "Jastrow, פַּץ 1",
+    "url": "Jastrow,_פַּץ.1"
+  },
+  "Jastrow, פַּצִּים 1": {
+    "en": [
+      "<strong dir=\"rtl\">פַּצִּים</strong> m. (<a class=\"refLink\" data-ref=\"Jastrow, פְּצַם 1\" dir=\"rtl\" href=\"/Jastrow,_פְּצַם.1\">פצם</a>) <i>board</i>. <a class=\"refLink\" data-ref=\"Mishnah Shabbat 8:7\" href=\"/Mishnah_Shabbat.8.7\">Sabb. VIII, 7</a> <span dir=\"rtl\">כדי ליתן בין פ׳ לחבירו</span> as much as is required between one board and another (when they are piled up).—[<a class=\"refLink\" data-ref=\"Mishnah Maasrot 1:7\" href=\"/Mishnah_Maasrot.1.7\">Maasr. I, 7</a> <span dir=\"rtl\">הפצים</span>, v. <a class=\"refLink\" data-ref=\"Jastrow, פַּץ 1\" dir=\"rtl\" href=\"/Jastrow,_פַּץ.1\">פַּץ</a>.]—Esp. <i>the board nailed against the wall to form a door-frame, door-post</i>. <a class=\"refLink\" data-ref=\"Menachot 34a:4\" href=\"/Menachot.34a.4\">Men. 34ᵃ</a> <span dir=\"rtl\">בית שאין לו אלא פ׳ אחד</span> a room which has only one door-post (the corner wall serving for the other post). <a class=\"refLink\" data-ref=\"Menachot 33b:4\" href=\"/Menachot.33b.4\">Ib. 33ᵇ</a> הניחה בפצים Rashi, v. <a class=\"refLink\" data-ref=\"Jastrow, פַּץ 1\" dir=\"rtl\" href=\"/Jastrow,_פַּץ.1\">פַּץ</a>.—Pl. <span dir=\"rtl\">פַּצִּימִין</span>. <a class=\"refLink\" data-ref=\"Menachot 33b:10\" href=\"/Menachot.33b.10\">Ib.</a> <span dir=\"rtl\">לפי שאין לה פ׳</span> because it (the exedra) has no door-frame. <a class=\"refLink\" data-ref=\"Menachot 33b:10\" href=\"/Menachot.33b.10\">Ib.</a> <span dir=\"rtl\">עדי פצימו</span> ed. (Ms. M. <span dir=\"rtl\">פצימין</span>, read: <a class=\"refLink\" data-ref=\"Jastrow, פַּצִּים ² 1\" dir=\"rtl\" href=\"/Jastrow,_פַּצִּים ².1\">פַּצִּימָיו</a>), v. <a class=\"refLink\" data-ref=\"Jastrow, עָדֵי I 1\" href=\"/Jastrow,_עָדֵי I.1\"><span dir=\"rtl\">עָדֵי</span> I</a>. <a class=\"refLink\" data-ref=\"Eruvin 93a:1\" href=\"/Eruvin.93a.1\">Erub. 93ᵃ</a> <span dir=\"rtl\">פַּצִּימֶיהָ</span>, v. <a class=\"refLink\" data-ref=\"Jastrow, שָׁוָה 1\" dir=\"rtl\" href=\"/Jastrow,_שָׁוָה.1\">שָׁוָה</a>. <a class=\"refLink\" data-ref=\"Bava Batra 12a:2\" href=\"/Bava_Batra.12a.2\">B. Bath. 12ᵃ</a> <span dir=\"rtl\">פרץ את פַּצִימָיו</span> if he broke open its door-frame (opened again a walled up entrance). <a class=\"refLink\" data-ref=\"Jerusalem Talmud Avodah Zarah 3:7:2\" href=\"Jerusalem_Talmud_Avodah_Zarah.3.7.2\">Y. Ab. Zar. III, 43ᵇ</a> <span dir=\"rtl\">מפרק את פצימיו</span> he takes out its door-posts; a. e."
+    ],
+    "he": [],
+    "heRef": "מילון יסטרוב, פַּצִּים א׳",
+    "lang": "he",
+    "primary_category": "Reference",
+    "ref": "Jastrow, פַּצִּים 1",
+    "url": "Jastrow,_פַּצִּים.1"
+  },
+  "Jastrow, פַּצִּים ² 1": {
+    "en": [
+      "<strong dir=\"rtl\">פַּצִּים</strong>, <strong dir=\"rtl\">פַּצִּימָא</strong> ch. <a class=\"refLink\" data-ref=\"Jastrow, פַּצִּים 1\" href=\"/Jastrow,_פַּצִּים.1\">same</a>. [<a class=\"refLink\" data-ref=\"Targum Jonathan on Jeremiah 36:23\" href=\"/Targum_Jonathan_on_Jeremiah.36.23\">Targ. Jer. XXXVI, 23</a> <span dir=\"rtl\">פצים</span> some ed., v. <a class=\"refLink\" data-ref=\"Jastrow, פַּצָּא 1\" dir=\"rtl\" href=\"/Jastrow,_פַּצָּא.1\">פַּצָּא</a>.]—Pl. <span dir=\"rtl\">פַּצִּימִין</span>, <span dir=\"rtl\">פַּצִּימַיָּא</span>, <span dir=\"rtl\">פַּצִּימֵי</span>. <a class=\"refLink\" data-ref=\"Menachot 33b:10\" href=\"/Menachot.33b.10\">Men. 33ᵇ</a> <span dir=\"rtl\">דאית להי פ׳ ולית להו מזוזתא</span> that have door-posts, and yet have no inscriptions; a. e.—Trnsf. <i>column, page</i> (of writing). Pl. as ab. Targ. II Esth. VI, 1. Targ. Jer. l. c., v. <a class=\"refLink\" data-ref=\"Jastrow, פַּצָּא 1\" dir=\"rtl\" href=\"/Jastrow,_פַּצָּא.1\">פַּצָּא</a>"
+    ],
+    "he": [],
+    "heRef": "מילון יסטרוב, פַּצִּים ² א׳",
+    "lang": "he",
+    "primary_category": "Reference",
+    "ref": "Jastrow, פַּצִּים ² 1",
+    "url": "Jastrow,_פַּצִּים_².1"
+  },
+  "Jastrow, פָּנוּי 1": {
+    "en": [
+      "<strong dir=\"rtl\">פָּנוּי</strong>, <strong dir=\"rtl\">פְּנוּיָה</strong> f. (<a class=\"refLink\" data-ref=\"Jastrow, פָּנָה 1\" dir=\"rtl\" href=\"/Jastrow,_פָּנָה.1\">פָּנָה</a>) <b>1)</b> <i>vacant, empty; free; superfluous</i>. <a class=\"refLink\" data-ref=\"Eruvin 16b:4-24\" href=\"/Eruvin.16b.4-24\">Erub. 16ᵇ</a> <span dir=\"rtl\">ובלבד … בית סאתים פ׳</span> provided there is not an area of two S’ah unoccupied; expl. <a class=\"refLink\" data-ref=\"Eruvin 17a:5\" href=\"/Eruvin.17a.5\">ib. 17ᵃ</a> <span dir=\"rtl\">פ׳ מכלים</span> unoccupied by travelling implements, contrad. to <span dir=\"rtl\">פ׳ מאדם</span> superfluous as regards the number of travellers (to each of whom an area of two S’ah is assigned). <a class=\"refLink\" data-ref=\"Shemot Rabbah 5:16\" href=\"/Shemot_Rabbah.5.16\">Ex. R. s. 5</a>; Tanḥ. Vaëra 6 <span dir=\"rtl\">שבטו … פ׳ היה מעבודת פרך</span> the tribe of Levi was exempt from hard labor; ed. Bub. ib. 4; <a class=\"refLink\" data-ref=\"Yalkut Shimoni on Torah 176:2\" href=\"/Yalkut_Shimoni_on_Torah.176.2\">Yalk. Ex. 176</a> <span dir=\"rtl\">פְּנוּי וכ׳</span>, v. <a class=\"refLink\" data-ref=\"Jastrow, לטרגיה 1\" dir=\"rtl\" href=\"/Jastrow,_לטרגיה.1\">לטרגיה</a>. <a class=\"refLink\" data-ref=\"Shabbat 23a:11\" href=\"/Shabbat.23a.11\">Sabb. 23ᵃ</a> <span dir=\"rtl\">שלא יראה בעל הבית שעה פ׳ וכ׳</span> that the owner may not look out for a free moment (when there are no poor about), and say to his poor relative, here is the corner <a class=\"refLink\" data-ref=\"Jastrow, פֵּאָה 1\" dir=\"rtl\" href=\"/Jastrow,_פֵּאָה.1\">(פֵּאָה</a>); Y. Peah IV, 18ᵇ <span dir=\"rtl\">קנויה</span> (corr. acc.); a. e.—Pl. <span dir=\"rtl\">פְּנוּיִים</span>, <span dir=\"rtl\">פְּנוּיִין</span>; <span dir=\"rtl\">פְּנוּיוֹת</span>. Tanḥ. l. c. <span dir=\"rtl\">בשביל שאתם פ׳ וכ׳</span> because you are idle, you say &amp;c.; Ex. R. l. c. <span dir=\"rtl\">פְּנוּיִם</span>; a. e. <b>—2)</b> <i>síngle, unmarríed</i>. Sifra Emor, Par. 1, ch. I <span dir=\"rtl\">הפ׳ הבא על הפ׳ שלא וכ׳</span> if an unmarried man has connection with an unmarried woman without the intention of thereby making her his wife; <a class=\"refLink\" data-ref=\"Yevamot 61b:6\" href=\"/Yevamot.61b.6\">Yeb. 61ᵇ</a>; a. fr.—Pl. as ab. <a class=\"refLink\" data-ref=\"Bamidbar Rabbah 3:14\" href=\"/Bamidbar_Rabbah.3.14\">Num. R. s. 3</a> (ref. to <span dir=\"rtl\">מעין חתום</span>, <a class=\"refLink\" data-ref=\"Song of Songs 4:12\" href=\"/Song_of_Songs.4.12\">Cant. IV, 12</a>) <span dir=\"rtl\">אלו הפנויות</span> this refers to the unmarried (men and women in Egypt). Tanḥ. Vayesheb 8 <span dir=\"rtl\">השתא הפ׳ שלכם אסורות לנו וכ׳</span> even the unmarried of your people are forbidden to us, how much more thou who art a man’s wife; a. fr."
+    ],
+    "he": [],
+    "heRef": "מילון יסטרוב, פָּנוּי א׳",
+    "lang": "he",
+    "primary_category": "Reference",
+    "ref": "Jastrow, פָּנוּי 1",
+    "url": "Jastrow,_פָּנוּי.1"
+  },
+  "Jastrow, שְׁקוֹפָא 1": {
+    "en": [
+      "<strong dir=\"rtl\">שְׁקוֹפָא</strong> ch. <a class=\"refLink\" data-ref=\"Jastrow, שְׁקוֹף 1\" href=\"/Jastrow,_שְׁקוֹף.1\">same</a> <b>1)</b> <i>door posts with arch.</i> <i>—</i> Pl. <span dir=\"rtl\">שְׁקוֹפֵי</span>. <a class=\"refLink\" data-ref=\"Menachot 33b:8\" href=\"/Menachot.33b.8\">Men. 33ᵇ</a> (Ms. R. 1, a. Rashi <span dir=\"rtl\">שקפי</span>; Ms. R. 2 <span dir=\"rtl\">שיקמי</span>, v. Rabb. D. S. a. l. note 9); <a class=\"refLink\" data-ref=\"Eruvin 11a:12\" href=\"/Eruvin.11a.12\">Erub. 11ᵃ</a> <span dir=\"rtl\">שקפי</span> (Rashi <span dir=\"rtl\">שיקפי</span>), v. <a class=\"refLink\" data-ref=\"Jastrow, שִׁימָּאָה 1\" dir=\"rtl\" href=\"/Jastrow,_שִׁימָּאָה.1\">שִׁימָּאָה</a>. <b>—2)</b> <i>lintel</i>, v. <a class=\"refLink\" data-ref=\"Jastrow, שַׁקְפָא 1\" dir=\"rtl\" href=\"/Jastrow,_שַׁקְפָא.1\">שַׁקְפָא</a>."
+    ],
+    "he": [],
+    "heRef": "מילון יסטרוב, שְׁקוֹפָא א׳",
+    "lang": "he",
+    "primary_category": "Reference",
+    "ref": "Jastrow, שְׁקוֹפָא 1",
+    "url": "Jastrow,_שְׁקוֹפָא.1"
+  },
+  "Jastrow, שִׁימָּאָה 1": {
+    "en": [
+      "<strong dir=\"rtl\">שִׁימָּאָה</strong>, <strong dir=\"rtl\">שִׁמָּ׳</strong> m. (<span dir=\"rtl\">שמם</span>; cmp. <a class=\"refLink\" data-ref=\"Jastrow, אַשְׁמַאי 1\" dir=\"rtl\" href=\"/Jastrow,_אַשְׁמַאי.1\">אַשְׁמַאי</a>) <i>waste, ruined.</i> <i>—</i> Pl. <span dir=\"rtl\">שִׁימָּאֵי</span>, <a class=\"refLink\" data-ref=\"Jastrow, שִׁימָּאָה 1\" dir=\"rtl\" href=\"/Jastrow,_שִׁימָּאָה.1\">שִׁמָּ׳</a>. <a class=\"refLink\" data-ref=\"Menachot 33b:8\" href=\"/Menachot.33b.8\">Men. 33ᵇ</a> פיתחי ש׳ ‘waste doors’, expl. <a class=\"refLink\" data-ref=\"Menachot 33b:8\" href=\"/Menachot.33b.8\">ib.</a> <span dir=\"rtl\">דלית להו תקרה</span> over which there is no ceiling (upper beam); (oth. opin.) <span dir=\"rtl\">דלית להו שקופי</span> which have no posts; <a class=\"refLink\" data-ref=\"Eruvin 11a:12\" href=\"/Eruvin.11a.12\">Erub. 11ᵃ</a> (ed. Sonc. <span dir=\"rtl\">שמ׳</span>; Tosaf. to <a class=\"refLink\" data-ref=\"Kiddushin 32b\" href=\"/Kiddushin.32b\">Kidd. 32ᵇ</a> <span dir=\"rtl\">שמ׳</span>)."
+    ],
+    "he": [],
+    "heRef": "מילון יסטרוב, שִׁימָּאָה א׳",
+    "lang": "he",
+    "primary_category": "Reference",
+    "ref": "Jastrow, שִׁימָּאָה 1",
+    "url": "Jastrow,_שִׁימָּאָה.1"
+  },
+  "Kedushat Levi, Kedushot for Purim, Kedusha Shniya 16": {
+    "en": "",
+    "he": "ונראה וכו'. כי אין בכל מצות התורה שיהיה אותיות שמירה ומועילין לדברים הגשמיים כמו מזוזה שהיא שמירה לבית שלא ישלוט בבית חיצונים ותנצל משאיה יוכת שעד ותנצל הבית ממזיקין ושדים כמו שאמר אונקלוס הגר לגונדי דרומאי. וזה לשון הרמב\"ם בפ\"ה מהלכות ספר תורה ומזוזה הלכה ד' מנהג פשוט שכותבין כו' וז\"ל הכסף משנה כתב הרמ\"ק דבמסכת עכו\"ם משמע דהא דאמר אונקלוס לגונדא דרומאי, כי הקדוש ברוך הוא עושה מזוזה לשמור ישראל מבחוץ כו', ובפרק הקומץ (מנחות דף ל\"ג ע\"ב) מזוזה צריך להניח בטפח ..י וכו'. הסמוך לר\"ה אמר דב הונא מאי טעמא כי היכי דלינטריה כו', וגם אין כוונה בעשייתה לשמור הבית אלא צריך שיכוון לקיים מצות הקדוש ברוך הוא וממילא נמשך שתשמר הבית עד כאן לשונו. נמצא ממילא נמשך שתשמור הבית ונמצא האותיות התורה עושין שמירה לבית. והנה נמשך השמירה מעולם העליון עד חבית שהוא מחובר לקרקע ונמשך שמירתה עד הקרקע שהוא דומם ונמשך מאותיות שפע. והאותיות התורה הוא לעילא מן הכל, כי התורה היא לעילא מכל עד דומם שהוא הבית המחובר לקרקע ודומם הוא המדריגה התחתונה שבכל המדריגות. ולכן נקראת מזוזה אמתה של תורה, כי ידוע שחותמו של הקדוש ברוך הוא אמת עבור שהאותיות אמת המה ראש תוך סוף. אל\"ף, בראש. מ\"ם, באמצע. תי\"ו, בסוף. לכן חותמו של הקדוש ברוך הוא אמת כנודע להורות על אני ראשון ואני אחרון כנודע. ונמצא אמת שמאיר האל הבורא יתברך שמו מראש המדדיגה עד סוף המדריגות לכן נקראת מזוזה אמתה של תורה שמאיר במצות מזוזה שמירה המחובר לקרקע אשר הוא דומם סוף המדריגות ומאיר האל מראש עד סוף כמו אמת:",
+    "heRef": "קדושת לוי, קדושות לפורים, קדושה שניה ט״ז",
+    "lang": "en",
+    "primary_category": "Chasidut",
+    "ref": "Kedushat Levi, Kedushot for Purim, Kedusha Shniya 16",
+    "url": "Kedushat_Levi,_Kedushot_for_Purim,_Kedusha_Shniya.16"
+  },
+  "Otzar Laazei Rashi, Talmud, Menachot 13": {
+    "en": "",
+    "he": "1978 / (מנחות לג:) / <b>טלה</b><br/>פלשטר\"א / palastre / <b>טלאי</b><br/><span dir=\"ltr\">✭ patch</span>",
+    "heRef": "אוצר לעזי רש\"י, תלמוד, מנחות י״ג",
+    "lang": "en",
+    "primary_category": "Reference",
+    "ref": "Otzar Laazei Rashi, Talmud, Menachot 13",
+    "url": "Otzar_Laazei_Rashi,_Talmud,_Menachot.13"
+  },
+  "Otzar Laazei Rashi, Talmud, Menachot 14": {
+    "en": "",
+    "he": "1979 / (מנחות לג:) / <b>פצימין</b><br/>אוישיריא\"ש / [uisseries] uiseries / <b>מזוזות פתח, עמוד או קורה המהווים צורת פתח, מסגרת לדלת</b><br/><small>מעניין, שהשימוש באותיות עבריות פתר בעיה של הכתיב הצרפתי: אוישיריא\"ש=uisseries כנגד וירי\"ש=vires* למשל: האל\"ף מוכיחה, שהאות הראשונה תנועה, ולא עיצור. בימי הביניים הייתה בצרפתית רק אות אחת ל – u ול – v ביחד, כדי למנוע קריאה ב – v במקום u בתחילת המלה, נאלץ הכתיב הצרפתי להקדים h ולכתוב huisseries וכדומה.</small><br/><span dir=\"ltr\">✭ <i>doorposts,</i> beams or pillars forming the door's frame</span>",
+    "heRef": "אוצר לעזי רש\"י, תלמוד, מנחות י״ד",
+    "lang": "en",
+    "primary_category": "Reference",
+    "ref": "Otzar Laazei Rashi, Talmud, Menachot 14",
+    "url": "Otzar_Laazei_Rashi,_Talmud,_Menachot.14"
+  },
+  "Otzar Laazei Rashi, Talmud, Menachot 15": {
+    "en": "",
+    "he": "1980 / (מנחות לג:) / <b>מרפסת</b><br/>אלידוי\"ר / aledoir / <b>מעבר, טיילת, מרפסת</b><br/><span dir=\"ltr\">✭ passage, balcony</span>",
+    "heRef": "אוצר לעזי רש\"י, תלמוד, מנחות ט״ו",
+    "lang": "en",
+    "primary_category": "Reference",
+    "ref": "Otzar Laazei Rashi, Talmud, Menachot 15",
+    "url": "Otzar_Laazei_Rashi,_Talmud,_Menachot.15"
+  },
+  "Otzar Laazei Rashi, Talmud, Menachot 16": {
+    "en": "",
+    "he": "1981 / (מנחות לג:) / <b>אינדרונא</b><br/>קמבר\"א / chambre / <b>חדר</b><br/><span dir=\"ltr\">✭ room, chamber</span>",
+    "heRef": "אוצר לעזי רש\"י, תלמוד, מנחות ט״ז",
+    "lang": "en",
+    "primary_category": "Reference",
+    "ref": "Otzar Laazei Rashi, Talmud, Menachot 16",
+    "url": "Otzar_Laazei_Rashi,_Talmud,_Menachot.16"
+  },
+  "Otzar Laazei Rashi, Talmud, Menachot 17": {
+    "en": "",
+    "he": "1982 / (מנחות לג:) / <b>אכסדרא רומיתא</b><br/>לוי\"א / [loge] loje / <b>סוכה</b><br/><small>כלומר מבנה פתוח מכל הצדדים, בניגוד לחדר (לעיל מס' 1981), שהוא סגור.</small><br/><span dir=\"ltr\">✭ hut, open hut</span>",
+    "heRef": "אוצר לעזי רש\"י, תלמוד, מנחות י״ז",
+    "lang": "en",
+    "primary_category": "Reference",
+    "ref": "Otzar Laazei Rashi, Talmud, Menachot 17",
+    "url": "Otzar_Laazei_Rashi,_Talmud,_Menachot.17"
+  },
+  "Otzar Laazei Rashi, Talmud, Menachot 18": {
+    "en": "",
+    "he": "1983 / (מנחות לג:) / <b>אכסדרא רומיתא</b><br/>קלוישטר\"א / cloistre / <b>חצר סגורה באכסדרה מרובעת</b><br/><small>חסר בדפוסים. באחד מכתבי-היד, אחרי הלעז לוי\"א (לעיל מס' 1982) קוראים: \"כעין קלושטר\"ו (clostro) של גלחים\". מדובר כמובן באותו מבנה השכיח במנזרים, שבו היו מתהלכים הנזירים לשם התאווררות, לשם התרכזות או לשם שיחה. הצורה קלושטר\"ו היא איטלקית.</small><br/><span dir=\"ltr\">✭ a yard surrounded by four corridors</span>",
+    "heRef": "אוצר לעזי רש\"י, תלמוד, מנחות י״ח",
+    "lang": "en",
+    "primary_category": "Reference",
+    "ref": "Otzar Laazei Rashi, Talmud, Menachot 18",
+    "url": "Otzar_Laazei_Rashi,_Talmud,_Menachot.18"
+  },
+  "Sefer HeArukh, Letter Alef 171": {
+    "en": "",
+    "he": "<b><big>אדרון</big></b> [קאמר] תרגום ויבא החדרה לאדרון בית משכביה בחדר המקרה באדרון בית קייטא ובלשון יוני קורים לחדר אנדרון וכן (מנחות לג) אכסדרה דבי רב כאנדרונא מעלייתא היא:",
+    "heRef": "ספר הערוך, אות האל\"ף קע״א",
+    "lang": "en",
+    "primary_category": "Reference",
+    "ref": "Sefer HeArukh, Letter Alef 171",
+    "url": "Sefer_HeArukh,_Letter_Alef.171"
+  },
+  "Sefer HeArukh, Letter Heh 171": {
+    "en": "",
+    "he": "<b><big>הרזק</big></b> [טיהר] (מנחות לג) אמר רחבא אמר רב יהודה בי הרזיקי חייב בשתי מזוזות מאי בי הרזיקי אמר רב פפא סבא משמיה דרב בית שער הפתוח לחצר ובתים פתוחים לבית שער:",
+    "heRef": "ספר הערוך, אות הה\"א קע״א",
+    "lang": "en",
+    "primary_category": "Reference",
+    "ref": "Sefer HeArukh, Letter Heh 171",
+    "url": "Sefer_HeArukh,_Letter_Heh.171"
+  },
+  "Sefer HeArukh, Letter Peh 3": {
+    "en": "",
+    "he": "<b><big>פאה</big></b> [עקעע, קאנטע] (ערובין יא) מעשה באדם אחד שנעץ ד' קונדסון בד' פאות השדה ומתח זמורה על גביהן והתירו לו לענין כלאים אבל לא לשבת בתוספת דכלאים בפ' ר\"ג ובסוף הפרה כגון שיירא היו שם קנים המדוקרין ועשה להן פאה מלמעל' אפי' ביותר מי' מותר פי' כל מידי דמקיף ולא מגין ומכסיא כולה קרו לה פאה דדמיא לפאה שהשדה כולה קרחת ומגולה אלא נשתייר בה כמעט והיא נקרית פא' וכן פא' נכרית דמקפת הראש ולא מכסיא:",
+    "heRef": "ספר הערוך, אות הפ\"א ג׳",
+    "lang": "en",
+    "primary_category": "Reference",
+    "ref": "Sefer HeArukh, Letter Peh 3",
+    "url": "Sefer_HeArukh,_Letter_Peh.3"
   }
 }

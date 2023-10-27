@@ -38,6 +38,8 @@ export interface ApiComment extends Highlightable {
   sourceHeRef: string;
   link?: string;
   commentary?: CommentaryMap;
+  originalRefBeforeRewriting?: string;
+  expandedRefsAfterRewriting?: string[];
 }
 
 export interface ApiResponse {

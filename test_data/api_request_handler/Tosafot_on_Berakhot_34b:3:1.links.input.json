@@ -12,23 +12,17 @@
       "he": "ברכות"
     },
     "commentaryNum": 68.0003,
-    "compDate": 500,
-    "errorMargin": 50,
-    "he": "תָּנוּ רַבָּנַן: קִידָּה — עַל אַפַּיִם, שֶׁנֶּאֱמַר: ״וַתִּקֹּד בַּת שֶׁבַע אַפַּיִם אֶרֶץ״. כְּרִיעָה — עַל בִּרְכַּיִם, שֶׁנֶּאֱמַר ״מִכְּרֹעַ עַל בִּרְכָּיו״. הִשְׁתַּחֲוָאָה — זוֹ פִּשּׁוּט יָדַיִם וְרַגְלַיִם, שֶׁנֶּאֱמַר: ״הֲבוֹא נָבוֹא אֲנִי וְאִמְּךָ וְאַחֶיךָ לְהִשְׁתַּחֲוֹת לְךָ אָרְצָה״.",
-    "heLicense": "CC-BY-NC",
+    "compDate": [
+      450,
+      550
+    ],
     "heTitle": "ברכות",
-    "heVersionTitle": "William Davidson Edition - Vocalized Aramaic",
-    "heVersionTitleInHebrew": "מהדורת וויליאם דייוידסון - ארמית המנוקד",
     "index_title": "Berakhot",
-    "license": "CC-BY-NC",
     "ref": "Berakhot 34b:3",
     "sourceHasEn": true,
     "sourceHeRef": "ברכות ל״ד ב:ג׳",
     "sourceRef": "Berakhot 34b:3",
-    "text": "Having mentioned Solomon bowing, the Gemara distinguishes between various types of bowing. <b>The Sages taught</b> in a <i>baraita</i>: The term <b><i>kidda</i></b> means bowing <b>upon</b> one’s <b>face,</b> with his face toward the ground, <b>as it is stated: “Then Bathsheba bowed [<i>vatikod</i>] with her face to the ground”</b> (I Kings 1:31). <b><i>Keria</i></b> means bowing <b>upon one’s knees, as</b> regarding Solomon <b>it is stated:</b> He finished praying and <b>“he rose from before the altar of the Lord, from kneeling [<i>mikkeroa</i>] upon his knees.”</b> Finally, <b><i>hishtaḥava’a</i>, that is</b> bowing with <b>one’s hands and legs spread</b> in total submission, <b>as it is stated</b> in Jacob’s question to Joseph in response to his dream: <b>“Shall we, I and your mother and your brothers, come and bow down [<i>lehishtaḥavot</i>] to you to the ground?”</b> (Genesis 37:10).",
-    "type": "commentary",
-    "versionTitle": "William Davidson Edition - English",
-    "versionTitleInHebrew": "מהדורת וויליאם דייוידסון - אנגלית"
+    "type": "commentary"
   },
   {
     "_id": "6098ed1d51691def8ccc0106",
@@ -43,22 +37,41 @@
       "he": "חידושי הלכות"
     },
     "commentaryNum": 68.0001,
-    "compDate": 1605,
-    "errorMargin": 25,
-    "he": "<b>בד\"ה</b> קידה על אפים ומייתי קרא אע\"ג דאשכחן נמי בענין אחר כו' עכ\"ל ר\"ל דאשכחן קידה בלי אפים שנאמר ויקוד ארצה וגו' דמשמע כולו שטוח ארצה כמו להשתחות לך ארצה דמייתי הכא ובתוס' פ\"ב דשבועות כתבו תימא השתחואה נמי אשכחן על אפים דכתיב וישתחו לאפיו וגו' אפים ארץ ישתחוו וגו' כו' ע\"ש:",
-    "heLicense": "Public Domain",
-    "heTitle": " חידושי הלכות על מסכת ברכות",
-    "heVersionTitle": "Vilna Edition",
-    "heVersionTitleInHebrew": "מהדורת וילנא",
+    "compDate": [
+      1580,
+      1630
+    ],
+    "heTitle": "חידושי הלכות על ברכות",
     "index_title": "Chidushei Halachot on Berakhot",
-    "license": null,
     "ref": "Chidushei Halachot on Berakhot 34b:1",
     "sourceHasEn": false,
-    "sourceHeRef": " חידושי הלכות על מסכת ברכות ל״ד ב:א׳",
+    "sourceHeRef": "חידושי הלכות על ברכות ל״ד ב:א׳",
     "sourceRef": "Chidushei Halachot on Berakhot 34b:1",
-    "text": [],
-    "type": "commentary",
-    "versionTitle": null,
-    "versionTitleInHebrew": null
+    "type": "commentary"
+  },
+  {
+    "_id": "6494215d8f76b69b60deba52",
+    "anchorRef": "Tosafot on Berakhot 34b:3:1",
+    "anchorRefExpanded": [
+      "Tosafot on Berakhot 34b:3:1"
+    ],
+    "anchorVerse": 1,
+    "category": "Commentary",
+    "collectiveTitle": {
+      "en": "Haggahot Ya'avetz",
+      "he": "הגהות יעב\"ץ"
+    },
+    "commentaryNum": 68.0002,
+    "compDate": [
+      1725,
+      1775
+    ],
+    "heTitle": "הגהות יעב\"ץ על ברכות",
+    "index_title": "Haggahot Ya'avetz on Berakhot",
+    "ref": "Haggahot Ya'avetz on Berakhot 34b:2",
+    "sourceHasEn": false,
+    "sourceHeRef": "הגהות יעב\"ץ על ברכות ל״ד ב:ב׳",
+    "sourceRef": "Haggahot Ya'avetz on Berakhot 34b:2",
+    "type": "commentary"
   }
 ]

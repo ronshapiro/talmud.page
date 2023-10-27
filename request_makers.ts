@@ -1,5 +1,5 @@
 import {parse as urlParse} from "url";
-import {readUtf8} from "./files";
+import {readUtf8Async} from "./files";
 import {writeJson} from "./util/json_files";
 import {RealRequestMaker, RequestMaker} from "./api_request_handler";
 
@@ -64,7 +64,7 @@ export class FakeRequestMaker extends FileRequestMaker {
   }
 
   private readJson<T>(fileName: string): Promise<T> {
-    return readUtf8(fileName)
+    return readUtf8Async(fileName)
       .catch(e => {
         throw new Error(
           `Error opening ${e.path}. This likely means that the test data needs to be updated.`);

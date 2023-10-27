@@ -1,4 +1,3 @@
-import * as fs from "fs";
 import {JewishCalendar} from "kosher-zmanim";
 import * as _ from "underscore";
 import {
@@ -7,8 +6,9 @@ import {
   Section,
   ApiComment,
 } from "./apiTypes";
-import {Book, books, isLikelyBibleRef, QueryResult} from "./books";
+import {Book, books, QueryResult} from "./books";
 import {ALL_COMMENTARIES, CommentaryType} from "./commentaries";
+import {readUtf8} from "./files";
 import {hadranSegments} from "./hadran";
 import {stripHebrewNonletters, stripHebrewNonlettersOrVowels} from "./hebrew";
 import {fetch} from "./fetch";
@@ -16,6 +16,7 @@ import {Logger, consoleLogger} from "./logger";
 import {mergeRefs} from "./ref_merging";
 import {refSorter} from "./js/google_drive/ref_sorter";
 import {ListMultimap} from "./multimap";
+import {getSugyaSpanningRef, shulchanArukhChapterTitle, verseCount} from "./precomputed";
 import {
   firstOrOnlyElement,
   sefariaTextTypeTransformation,
@@ -142,26 +143,6 @@ function stripPossiblePrefix(text: string, prefix: string): string {
   return text;
 }
 
-function readUtf8(path: string): string {
-  return fs.readFileSync(path, {encoding: "utf-8"});
-}
-
-const SHULCHAN_ARUKH_HEADERS: any = (
-  JSON.parse(readUtf8("precomputed_texts/shulchan_arukh_headings.json"))
-);
-
-function shulchanArukhChapterTitle(ref: string): string | undefined {
-  const bookAndChapter = ref.split("Shulchan Arukh, ")[1].split(":")[0];
-  const separatorIndex = bookAndChapter.lastIndexOf(" ");
-  const book = bookAndChapter.slice(0, separatorIndex);
-  const chapter = bookAndChapter.slice(separatorIndex + 1);
-
-  if (book.includes(", Seder ")) {
-    return undefined;
-  }
-  return SHULCHAN_ARUKH_HEADERS[book][chapter];
-}
-
 function deepEquals(hebrew: sefaria.TextType, english: sefaria.TextType): boolean {
   if (Array.isArray(hebrew) && Array.isArray(english)) {
     if (hebrew.length !== english.length) {
@@ -254,6 +235,8 @@ class Comment {
       sourceRef,
       sourceHeRef,
       talmudPageLink,
+      link.originalRefBeforeRewriting,
+      link.expandedRefsAfterRewriting,
     );
   }
 
@@ -265,6 +248,8 @@ class Comment {
     readonly sourceRef: string,
     private sourceHeRef: string,
     private talmudPageLink?: string,
+    private readonly originalRefBeforeRewriting?: string,
+    private readonly expandedRefsAfterRewriting?: string[],
   ) {}
 
   toJson(): ApiComment {
@@ -277,6 +262,12 @@ class Comment {
     };
     if (this.talmudPageLink) {
       result.link = this.talmudPageLink;
+    }
+    if (this.originalRefBeforeRewriting) {
+      result.originalRefBeforeRewriting = this.originalRefBeforeRewriting;
+    }
+    if (this.expandedRefsAfterRewriting) {
+      result.expandedRefsAfterRewriting = this.expandedRefsAfterRewriting;
     }
     return result;
   }
@@ -522,10 +513,6 @@ function isSefariaError(response: any): response is sefaria.ErrorResponse {
   return "error" in response;
 }
 
-function hasText(textLink: sefaria.TextLink): textLink is sefaria.TextLinkWithText {
-  return "he" in textLink && "text" in textLink;
-}
-
 const LOTS_OF_NON_BREAKING_SPACES = new RegExp(String.fromCharCode(160) + "{4,}", 'g');
 
 export abstract class AbstractApiRequestHandler {
@@ -747,7 +734,7 @@ export abstract class AbstractApiRequestHandler {
   }
 
   private linksRequestUrl(ref: string) {
-    return `/links/${ref}?with_text=${isLikelyBibleRef(ref) ? 0 : 1}`;
+    return `/links/${ref}?with_text=0`;
   }
 
   private linksTraversal(
@@ -783,6 +770,11 @@ export abstract class AbstractApiRequestHandler {
         const ref = refsInRoundKeys[i];
         const mergedRefs = refsInRound.get(ref);
         for (const link of linksResponse.value) {
+          const commentaryType = this.matchingCommentaryType(link);
+          if (!commentaryType) continue;
+
+          this.maybeRewriteLinkRef(commentaryType, link);
+
           const targetRef = link.ref;
           if (this.ignoreLink(mergedRefs, targetRef)) {
             continue;
@@ -801,23 +793,11 @@ export abstract class AbstractApiRequestHandler {
           }
           const sourceRef = link.anchorRefExpanded[sourceRefIndex];
           const targetRefs = linkGraph.getGraph(sourceRef);
-          const commentaryType = this.matchingCommentaryType(link);
           if (targetRefs.has(targetRef)
-            || !commentaryType
             || (!isRoot && commentaryType.ignoreIfNotTypeLevel)) {
             continue;
           }
           linkGraph.addLink(sourceRef, link);
-
-          // If after link traversal https://github.com/Sefaria/Sefaria-Project/issues/616 is
-          // implemented, with_text can always be set to 0 and then all fetching deferred to
-          if (hasText(link)) {
-            linkGraph.textResponses[targetRef] = {
-              ref: link.ref,
-              text: link.text,
-              he: link.he,
-            };
-          }
 
           if (remainingDepth !== 0 && this.shouldTraverseNestedRef(commentaryType, link)) {
             nextRefs.push(targetRef);
@@ -833,11 +813,31 @@ export abstract class AbstractApiRequestHandler {
     return false;
   }
 
-  private shouldTraverseNestedRef(commentaryType: CommentaryType, link: sefaria.TextLink): boolean {
-    if (commentaryType.allowNestedTraversals) {
-      return true;
+  protected maybeRewriteLinkRef(commentaryType: CommentaryType, link: sefaria.TextLink): void {
+    if (!link.ref.includes(":")
+      && books.byCanonicalName[link.collectiveTitle?.en ?? ""]?.isBibleBook()) {
+      link.expandedRefsAfterRewriting = (
+        _.range(1, verseCount(link.ref)).map(x => `${link.ref}:${x}`));
     }
+    if (this.isMesoratHashasTalmudRef(commentaryType, link)) {
+      const result = getSugyaSpanningRef(link.collectiveTitle?.en ?? "", link.ref);
+      if (!result) return;
+      const [newRef, allSugyaRefs] = result as any;
+      link.originalRefBeforeRewriting = link.ref;
+      link.ref = newRef;
+      link.expandedRefsAfterRewriting = allSugyaRefs;
+    }
+  }
+
+  private isMesoratHashasTalmudRef(
+    commentaryType: CommentaryType, link: sefaria.TextLink,
+  ): boolean {
     return commentaryType.englishName === "Mesorat Hashas" && link.category === "Talmud";
+  }
+
+  private shouldTraverseNestedRef(commentaryType: CommentaryType, link: sefaria.TextLink): boolean {
+    return (commentaryType.allowNestedTraversals
+      || this.isMesoratHashasTalmudRef(commentaryType, link));
   }
 
   private fetchData(
@@ -939,6 +939,12 @@ export abstract class AbstractApiRequestHandler {
   ): ApiResponse {
     const timer = this.logger.newTimer();
     const mainRef = textResponse.ref;
+
+    // TODO: There is dangling English text here. It's been reported to Sefaria but there's a war
+    // right now..., so let's keep this fix here for now.
+    if (bookName === "Numbers" && page === "25" && textResponse.text.length === 19) {
+      (textResponse.text as string[]).pop();
+    }
 
     const [hebrew, english] = this.preformatSegments(
       textResponse.he as string[],
@@ -1099,6 +1105,9 @@ export abstract class AbstractApiRequestHandler {
       for (let currentCount = 0; currentCount < innerList.length; (currentCount++, count++)) {
         if (count === i) {
           const spanningRef = textResponse.spanningRefs![spanningRefIndex];
+          if (spanningRef === undefined) {
+            this.logger.error(textResponse, i, count, spanningRefIndex);
+          }
           return this.makeSubRef(spanningRef, currentCount);
         }
       }

@@ -17,6 +17,7 @@ function splitOnRefSuffix(ref: string): string[] {
 }
 
 export function mergeRefs(refs: string[]): ListMultimap<string, string> {
+  refs = Array.from(new Set(refs));
   const unmerged: string[] = [];
   const bySharedPrefix = new ListMultimap<string, string>();
   for (const ref of refs) {

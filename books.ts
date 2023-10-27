@@ -83,6 +83,10 @@ export abstract class Book {
     return false;
   }
 
+  isBibleBook(): boolean {
+    return false;
+  }
+
   bookNameForRef(): string {
     return this.canonicalName;
   }
@@ -239,6 +243,10 @@ class BibleBook extends Book {
       start: "1",
       sections: chapterSections(parseInt(params.end)),
     });
+  }
+
+  isBibleBook(): boolean {
+    return true;
   }
 
   nextPage(page: string): string {
@@ -1222,18 +1230,3 @@ export const books = new BookIndex([
     bookNameForRef: "Siddur Ashkenaz, Berachot, Birkat HaMazon,",
   }),
 ]);
-
-let bibleRefRegex: RegExp;
-
-export function isLikelyBibleRef(ref: string): boolean {
-  if (!bibleRefRegex) {
-    const bibleBookNames = (
-      Array.from(new Set(Object.values(books.byCanonicalName)))
-        .filter(x => x instanceof BibleBook)
-        .map(x => x.canonicalName)
-    );
-    bibleRefRegex = new RegExp(`^(${bibleBookNames.join("|")}) .*`);
-  }
-
-  return bibleRefRegex.test(ref);
-}

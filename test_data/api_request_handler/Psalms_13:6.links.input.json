@@ -12,8 +12,10 @@
       "he": "תקוני הזהר"
     },
     "commentaryNum": 228.0005,
-    "compDate": 1250,
-    "errorMargin": 150,
+    "compDate": [
+      1100,
+      1400
+    ],
     "heTitle": "תקוני הזהר",
     "index_title": "Tikkunei Zohar",
     "ref": "Tikkunei Zohar 114b:5",
@@ -35,8 +37,10 @@
       "he": "שני לוחות הברית"
     },
     "commentaryNum": 19,
-    "compDate": 1621,
-    "errorMargin": 10,
+    "compDate": [
+      1611,
+      1631
+    ],
     "heTitle": "תורה אור",
     "index_title": "Shenei Luchot HaBerit",
     "ref": "Shenei Luchot HaBerit, Torah Shebikhtav, Toldot, Torah Ohr 19",
@@ -58,8 +62,10 @@
       "he": "סידור אשכנז"
     },
     "commentaryNum": 1,
-    "compDate": 1080,
-    "errorMargin": 25,
+    "compDate": [
+      1055,
+      1105
+    ],
     "heTitle": "הודו",
     "index_title": "Siddur Ashkenaz",
     "ref": "Siddur Ashkenaz, Shabbat, Shacharit, Pesukei Dezimra, Hodu 1",
@@ -81,8 +87,10 @@
       "he": "אלשיך"
     },
     "commentaryNum": 6.0001,
-    "compDate": 1567,
-    "errorMargin": 25,
+    "compDate": [
+      1542,
+      1592
+    ],
     "index_title": "Romemot El on Psalms",
     "ref": "Romemot El on Psalms 13:6:1",
     "sourceHasEn": false,
@@ -103,8 +111,10 @@
       "he": "סידור ספרד"
     },
     "commentaryNum": 100,
-    "compDate": 1760,
-    "errorMargin": 50,
+    "compDate": [
+      1710,
+      1810
+    ],
     "heTitle": "הקפות לשמחת תורה",
     "index_title": "Siddur Sefard",
     "ref": "Siddur Sefard, Simchat Torah, Hakafot 100",
@@ -126,8 +136,10 @@
       "he": "ספר השרשים"
     },
     "commentaryNum": 1,
-    "compDate": 1210,
-    "errorMargin": 25,
+    "compDate": [
+      1185,
+      1235
+    ],
     "heTitle": "גמל",
     "index_title": "Sefer HaShorashim",
     "ref": "Sefer HaShorashim, גמל 1",
@@ -149,8 +161,10 @@
       "he": "סידור ספרד"
     },
     "commentaryNum": 5,
-    "compDate": 1760,
-    "errorMargin": 50,
+    "compDate": [
+      1710,
+      1810
+    ],
     "heTitle": "פסוקי דזמרה",
     "index_title": "Siddur Sefard",
     "ref": "Siddur Sefard, Shabbat Morning Services, Pesukei D'Zimrah 5",
@@ -172,8 +186,10 @@
       "he": "סידור אשכנז"
     },
     "commentaryNum": 4,
-    "compDate": 1080,
-    "errorMargin": 25,
+    "compDate": [
+      1055,
+      1105
+    ],
     "heTitle": "הודו",
     "index_title": "Siddur Ashkenaz",
     "ref": "Siddur Ashkenaz, Weekday, Shacharit, Pesukei Dezimra, Hodu 4",
@@ -216,8 +232,10 @@
       "he": "סידור ספרד"
     },
     "commentaryNum": 6,
-    "compDate": 1760,
-    "errorMargin": 50,
+    "compDate": [
+      1710,
+      1810
+    ],
     "heTitle": "הודו",
     "index_title": "Siddur Sefard",
     "ref": "Siddur Sefard, Weekday Shacharit, Hodu 6",
@@ -225,6 +243,31 @@
     "sourceHeRef": "סידור ספרד, שחרית לימות החול, הודו ו׳",
     "sourceRef": "Siddur Sefard, Weekday Shacharit, Hodu 6",
     "type": "quotation_auto_tanakh"
+  },
+  {
+    "_id": "64c0e321fd21d28d50da9dd7",
+    "anchorRef": "Psalms 13:6",
+    "anchorRefExpanded": [
+      "Psalms 13:6"
+    ],
+    "anchorVerse": 6,
+    "category": "Halakhah",
+    "collectiveTitle": {
+      "en": "Shomer Yisrael",
+      "he": "שומר ישראל"
+    },
+    "commentaryNum": 13.0007,
+    "compDate": [
+      1768,
+      1792
+    ],
+    "heTitle": "שומר ישראל",
+    "index_title": "Shomer Yisrael",
+    "ref": "Shomer Yisrael 13:7",
+    "sourceHasEn": false,
+    "sourceHeRef": "שומר ישראל י״ג:ז׳",
+    "sourceRef": "Shomer Yisrael 13:7",
+    "type": ""
   },
   {
     "_id": "53f18f48fbfba21e30182499",
@@ -239,8 +282,10 @@
       "he": "מלבי\"ם באור המילות"
     },
     "commentaryNum": 6.0001,
-    "compDate": 1859,
-    "errorMargin": 15,
+    "compDate": [
+      1844,
+      1874
+    ],
     "heTitle": "מלבי\"ם באור המילות על תהילים",
     "index_title": "Malbim Beur Hamilot on Psalms",
     "ref": "Malbim Beur Hamilot on Psalms 13:6:1",
@@ -262,8 +307,9 @@
       "he": "אבן עזרא"
     },
     "commentaryNum": 6.0001,
-    "compDate": 1156,
-    "errorMargin": 0,
+    "compDate": [
+      1156
+    ],
     "index_title": "Ibn Ezra on Psalms",
     "ref": "Ibn Ezra on Psalms 13:6:1",
     "sourceHasEn": false,
@@ -284,8 +330,10 @@
       "he": "מצודת דוד"
     },
     "commentaryNum": 6.0001,
-    "compDate": 1760,
-    "errorMargin": 20,
+    "compDate": [
+      1740,
+      1780
+    ],
     "heTitle": "מצודת דוד על תהילים",
     "index_title": "Metzudat David on Psalms",
     "ref": "Metzudat David on Psalms 13:6:1",
@@ -307,8 +355,10 @@
       "he": "מצודת דוד"
     },
     "commentaryNum": 6.0002,
-    "compDate": 1760,
-    "errorMargin": 20,
+    "compDate": [
+      1740,
+      1780
+    ],
     "heTitle": "מצודת דוד על תהילים",
     "index_title": "Metzudat David on Psalms",
     "ref": "Metzudat David on Psalms 13:6:2",
@@ -330,12 +380,14 @@
       "he": "מדרש תהילים"
     },
     "commentaryNum": 13.0007,
-    "compDate": 1250,
-    "errorMargin": 200,
+    "compDate": [
+      1050,
+      1450
+    ],
     "heTitle": "מדרש תהילים",
     "index_title": "Midrash Tehillim",
     "ref": "Midrash Tehillim 13:7",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "מדרש תהילים י״ג:ז׳",
     "sourceRef": "Midrash Tehillim 13:7",
     "type": ""
@@ -353,8 +405,10 @@
       "he": "תרגום תהלים"
     },
     "commentaryNum": 13.0006,
-    "compDate": 300,
-    "errorMargin": 300,
+    "compDate": [
+      0,
+      600
+    ],
     "heTitle": "תרגום תהלים",
     "index_title": "Aramaic Targum to Psalms",
     "ref": "Aramaic Targum to Psalms 13:6",
@@ -376,8 +430,9 @@
       "he": "מנחת שי"
     },
     "commentaryNum": 6.0001,
-    "compDate": 1526,
-    "errorMargin": 0,
+    "compDate": [
+      1526
+    ],
     "heTitle": "מנחת שי על תהלים",
     "index_title": "Minchat Shai on Psalms",
     "ref": "Minchat Shai on Psalms 13:6:1",
@@ -399,8 +454,10 @@
       "he": "מדרש תנחומא"
     },
     "commentaryNum": 5.0003,
-    "compDate": 650,
-    "errorMargin": 150,
+    "compDate": [
+      500,
+      800
+    ],
     "heTitle": "תרומה",
     "index_title": "Midrash Tanchuma",
     "ref": "Midrash Tanchuma, Terumah 5:3",
@@ -422,8 +479,10 @@
       "he": "קוהלת רבה"
     },
     "commentaryNum": 1.0004,
-    "compDate": 825,
-    "errorMargin": 125,
+    "compDate": [
+      700,
+      950
+    ],
     "heTitle": "קוהלת רבה",
     "index_title": "Kohelet Rabbah",
     "ref": "Kohelet Rabbah 7:1:4",
@@ -445,8 +504,10 @@
       "he": "כד הקמח"
     },
     "commentaryNum": 3.0004,
-    "compDate": 1315,
-    "errorMargin": 25,
+    "compDate": [
+      1290,
+      1340
+    ],
     "heTitle": "אֵבֶל",
     "index_title": "Kad HaKemach",
     "ref": "Kad HaKemach, Mourning 3:4",
@@ -468,8 +529,10 @@
       "he": "בניהו על יומא"
     },
     "commentaryNum": 73.0001,
-    "compDate": 1875,
-    "errorMargin": 20,
+    "compDate": [
+      1855,
+      1895
+    ],
     "heTitle": "בניהו על יומא",
     "index_title": "Benayahu on Yoma",
     "ref": "Benayahu on Yoma 37a:1",
@@ -491,8 +554,10 @@
       "he": "מלבי\"ם"
     },
     "commentaryNum": 6.0001,
-    "compDate": 1859,
-    "errorMargin": 15,
+    "compDate": [
+      1844,
+      1874
+    ],
     "heTitle": "מלבי\"ם על תהילים",
     "index_title": "Malbim on Psalms",
     "ref": "Malbim on Psalms 13:6:1",
@@ -514,8 +579,10 @@
       "he": "הגיוני עוזיאל"
     },
     "commentaryNum": 15.0007,
-    "compDate": 1930,
-    "errorMargin": 20,
+    "compDate": [
+      1910,
+      1950
+    ],
     "heTitle": "שער א; גמול השם",
     "index_title": "Hegyonei Uziel",
     "ref": "Hegyonei Uziel, Gate I 15:7",
@@ -537,8 +604,10 @@
       "he": "מראה יחזקאל על התורה"
     },
     "commentaryNum": 40,
-    "compDate": 1820,
-    "errorMargin": 20,
+    "compDate": [
+      1800,
+      1840
+    ],
     "heTitle": "סוכות",
     "index_title": "Mareh Yechezkel on Torah",
     "ref": "Mareh Yechezkel on Torah, Sukkot 40",
@@ -580,8 +649,10 @@
       "he": "בראון-דרייבר-בריגס"
     },
     "commentaryNum": 1,
-    "compDate": 3000,
-    "errorMargin": 0,
+    "compDate": [
+      1891,
+      1905
+    ],
     "heTitle": "בָּטַח",
     "index_title": "BDB",
     "ref": "BDB, בָּטַח 1",
@@ -603,8 +674,10 @@
       "he": "בראון-דרייבר-בריגס"
     },
     "commentaryNum": 1,
-    "compDate": 3000,
-    "errorMargin": 0,
+    "compDate": [
+      1891,
+      1905
+    ],
     "heTitle": "גִּיל",
     "index_title": "BDB",
     "ref": "BDB, גִּיל 1",
@@ -626,8 +699,10 @@
       "he": "בראון-דרייבר-בריגס"
     },
     "commentaryNum": 1,
-    "compDate": 3000,
-    "errorMargin": 0,
+    "compDate": [
+      1891,
+      1905
+    ],
     "heTitle": "גָּמַל",
     "index_title": "BDB",
     "ref": "BDB, גָּמַל 1",
@@ -649,8 +724,10 @@
       "he": "בראון-דרייבר-בריגס"
     },
     "commentaryNum": 1,
-    "compDate": 3000,
-    "errorMargin": 0,
+    "compDate": [
+      1891,
+      1905
+    ],
     "heTitle": "חֶ֫סֶד",
     "index_title": "BDB",
     "ref": "BDB, חֶ֫סֶד 1",
@@ -672,8 +749,10 @@
       "he": "בראון-דרייבר-בריגס"
     },
     "commentaryNum": 1,
-    "compDate": 3000,
-    "errorMargin": 0,
+    "compDate": [
+      1891,
+      1905
+    ],
     "heTitle": "יְשׁוּעָה",
     "index_title": "BDB",
     "ref": "BDB, יְשׁוּעָה 1",
@@ -695,8 +774,10 @@
       "he": "בראון-דרייבר-בריגס"
     },
     "commentaryNum": 1,
-    "compDate": 3000,
-    "errorMargin": 0,
+    "compDate": [
+      1891,
+      1905
+    ],
     "heTitle": "לֵב²",
     "index_title": "BDB",
     "ref": "BDB, לֵב² 1",
@@ -718,8 +799,10 @@
       "he": "בראון-דרייבר-בריגס"
     },
     "commentaryNum": 1,
-    "compDate": 3000,
-    "errorMargin": 0,
+    "compDate": [
+      1891,
+      1905
+    ],
     "heTitle": "שִׁיר²",
     "index_title": "BDB",
     "ref": "BDB, שִׁיר² 1",
@@ -727,5 +810,50 @@
     "sourceHeRef": "בראון-דרייבר-בריגס, שִׁיר² א׳",
     "sourceRef": "BDB, שִׁיר² 1",
     "type": "reference"
+  },
+  {
+    "_id": "63df5891f768716d1b7d6e8a",
+    "anchorRef": "Psalms 13:6",
+    "anchorRefExpanded": [
+      "Psalms 13:6"
+    ],
+    "anchorVerse": 6,
+    "category": "Midrash",
+    "collectiveTitle": {
+      "en": "Midrash Shmuel",
+      "he": "מדרש שמואל"
+    },
+    "commentaryNum": 23.0008,
+    "compDate": [
+      400,
+      1000
+    ],
+    "index_title": "Midrash Shmuel",
+    "ref": "Midrash Shmuel 23:8",
+    "sourceHasEn": false,
+    "sourceHeRef": "מדרש שמואל כ״ג:ח׳",
+    "sourceRef": "Midrash Shmuel 23:8",
+    "type": ""
+  },
+  {
+    "_id": "6419512ad7a3c7f3eca9e1e3",
+    "anchorRef": "Psalms 13:6",
+    "anchorRefExpanded": [
+      "Psalms 13:6"
+    ],
+    "anchorVerse": 6,
+    "category": "Quoting Commentary",
+    "collectiveTitle": {
+      "en": "Netinah LaGer",
+      "he": "נתינה לגר"
+    },
+    "commentaryNum": 8.0001,
+    "heTitle": "בראשית",
+    "index_title": "Netinah LaGer",
+    "ref": "Netinah LaGer, Genesis 49:8:1",
+    "sourceHasEn": false,
+    "sourceHeRef": "נתינה לגר, בראשית מ״ט:ח׳:א׳",
+    "sourceRef": "Netinah LaGer, Genesis 49:8:1",
+    "type": ""
   }
 ]

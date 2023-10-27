@@ -37,6 +37,6 @@ for (const book of Array.from(new Set(Object.values(books.byCanonicalName)))) {
   }
 }
 
-for (let j = 0; j < promiseChains.length; i++) {
+for (let j = 0; j < promiseChains.length; j++) {
   promiseChains[j].add(() => console.log(`Finished chain #${j}!`));
 }

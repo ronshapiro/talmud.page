@@ -12,8 +12,10 @@
       "he": "הכוזרי"
     },
     "commentaryNum": 2.0022,
-    "compDate": 1130,
-    "errorMargin": 10,
+    "compDate": [
+      1120,
+      1140
+    ],
     "heTitle": "הכוזרי",
     "index_title": "Kuzari",
     "ref": "Kuzari 2:22",
@@ -35,8 +37,10 @@
       "he": "הכוזרי"
     },
     "commentaryNum": 2.002,
-    "compDate": 1130,
-    "errorMargin": 10,
+    "compDate": [
+      1120,
+      1140
+    ],
     "heTitle": "הכוזרי",
     "index_title": "Kuzari",
     "ref": "Kuzari 2:20",
@@ -58,8 +62,10 @@
       "he": "רש\"י על איכה"
     },
     "commentaryNum": 1.0003,
-    "compDate": 1090,
-    "errorMargin": 15,
+    "compDate": [
+      1075,
+      1105
+    ],
     "heTitle": "רש\"י על איכה",
     "index_title": "Rashi on Lamentations",
     "ref": "Rashi on Lamentations 2:1:3",
@@ -81,8 +87,10 @@
       "he": "שני לוחות הברית"
     },
     "commentaryNum": 27.0001,
-    "compDate": 1621,
-    "errorMargin": 10,
+    "compDate": [
+      1611,
+      1631
+    ],
     "index_title": "Shenei Luchot HaBerit",
     "ref": "Shenei Luchot HaBerit, Vavei HaAmudim 27:1",
     "sourceHasEn": false,
@@ -103,8 +111,10 @@
       "he": "רד\"ק"
     },
     "commentaryNum": 5.0001,
-    "compDate": 1210,
-    "errorMargin": 25,
+    "compDate": [
+      1185,
+      1235
+    ],
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 99:5:1",
@@ -126,8 +136,10 @@
       "he": "רד\"ק"
     },
     "commentaryNum": 5.0002,
-    "compDate": 1210,
-    "errorMargin": 25,
+    "compDate": [
+      1185,
+      1235
+    ],
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 99:5:2",
@@ -135,30 +147,6 @@
     "sourceHeRef": "רד\"ק על תהילים צ״ט:ה׳:ב׳",
     "sourceRef": "Radak on Psalms 99:5:2",
     "type": "commentary"
-  },
-  {
-    "_id": "5c17a6e8bb386c011be9e084",
-    "anchorRef": "Psalms 99:5-6",
-    "anchorRefExpanded": [
-      "Psalms 99:5",
-      "Psalms 99:6"
-    ],
-    "anchorVerse": 5,
-    "category": "Kabbalah",
-    "collectiveTitle": {
-      "en": "Zohar",
-      "he": "ספר הזהר"
-    },
-    "commentaryNum": 295.0042,
-    "compDate": 1250,
-    "errorMargin": 150,
-    "heTitle": "ספר הזהר",
-    "index_title": "Zohar",
-    "ref": "Zohar 2:148a:42",
-    "sourceHasEn": false,
-    "sourceHeRef": "ספר הזהר ב׳:קמ״ח א:מ״ב",
-    "sourceRef": "Zohar 2:148a:42",
-    "type": ""
   },
   {
     "_id": "5c17b9b2b071e100bf4ed239",
@@ -173,8 +161,10 @@
       "he": "תורה תמימה על איכה"
     },
     "commentaryNum": 1.0008,
-    "compDate": 1900,
-    "errorMargin": 2,
+    "compDate": [
+      1898,
+      1902
+    ],
     "heTitle": "תורה תמימה על איכה",
     "index_title": "Torah Temimah on Lamentations",
     "ref": "Torah Temimah on Lamentations 2:1:8",
@@ -204,8 +194,10 @@
       "he": "סידור אשכנז"
     },
     "commentaryNum": 1,
-    "compDate": 1080,
-    "errorMargin": 25,
+    "compDate": [
+      1055,
+      1105
+    ],
     "heTitle": "תהילים צט",
     "index_title": "Siddur Ashkenaz",
     "ref": "Siddur Ashkenaz, Shabbat, Kabbalat Shabbat, Psalm 99 1",
@@ -227,8 +219,10 @@
       "he": "סידור אשכנז"
     },
     "commentaryNum": 1,
-    "compDate": 1080,
-    "errorMargin": 25,
+    "compDate": [
+      1055,
+      1105
+    ],
     "heTitle": "הודו",
     "index_title": "Siddur Ashkenaz",
     "ref": "Siddur Ashkenaz, Shabbat, Shacharit, Pesukei Dezimra, Hodu 1",
@@ -250,8 +244,10 @@
       "he": "אלשיך"
     },
     "commentaryNum": 5.0001,
-    "compDate": 1567,
-    "errorMargin": 25,
+    "compDate": [
+      1542,
+      1592
+    ],
     "index_title": "Romemot El on Psalms",
     "ref": "Romemot El on Psalms 99:5:1",
     "sourceHasEn": false,
@@ -272,8 +268,10 @@
       "he": "סידור ספרד"
     },
     "commentaryNum": 6,
-    "compDate": 1760,
-    "errorMargin": 50,
+    "compDate": [
+      1710,
+      1810
+    ],
     "heTitle": "קריאת התורה לראש חדש",
     "index_title": "Siddur Sefard",
     "ref": "Siddur Sefard, Rosh Chodesh, Torah Reading 6",
@@ -295,12 +293,14 @@
       "he": "סידור ספרד"
     },
     "commentaryNum": 33,
-    "compDate": 1760,
-    "errorMargin": 50,
+    "compDate": [
+      1710,
+      1810
+    ],
     "heTitle": "קרבנות",
     "index_title": "Siddur Sefard",
     "ref": "Siddur Sefard, Shabbat Mincha, Korbanot 33",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "סידור ספרד, מנחה לשבת קודש, קרבנות ל״ג",
     "sourceRef": "Siddur Sefard, Shabbat Mincha, Korbanot 33",
     "type": "quotation_auto_tanakh"
@@ -318,8 +318,10 @@
       "he": "סידור ספרד"
     },
     "commentaryNum": 21,
-    "compDate": 1760,
-    "errorMargin": 50,
+    "compDate": [
+      1710,
+      1810
+    ],
     "heTitle": "סדר קריאת התורה בשבת",
     "index_title": "Siddur Sefard",
     "ref": "Siddur Sefard, Shabbat Morning Services, Shabbat Torah Reading 21",
@@ -341,8 +343,10 @@
       "he": "סידור ספרד"
     },
     "commentaryNum": 2,
-    "compDate": 1760,
-    "errorMargin": 50,
+    "compDate": [
+      1710,
+      1810
+    ],
     "heTitle": "פסוקי דזמרה",
     "index_title": "Siddur Sefard",
     "ref": "Siddur Sefard, Shabbat Morning Services, Pesukei D'Zimrah 2",
@@ -364,8 +368,10 @@
       "he": "סידור אשכנז"
     },
     "commentaryNum": 75,
-    "compDate": 1080,
-    "errorMargin": 25,
+    "compDate": [
+      1055,
+      1105
+    ],
     "heTitle": "צום גדליה",
     "index_title": "Siddur Ashkenaz",
     "ref": "Siddur Ashkenaz, Festivals, Selichot, Fast of Gedalia 75",
@@ -387,8 +393,10 @@
       "he": "סידור אשכנז"
     },
     "commentaryNum": 2,
-    "compDate": 1080,
-    "errorMargin": 25,
+    "compDate": [
+      1055,
+      1105
+    ],
     "heTitle": "לך ה׳",
     "index_title": "Siddur Ashkenaz",
     "ref": "Siddur Ashkenaz, Shabbat, Minchah, Torah Reading, Removing the Torah from Ark, Lekha Hashem 2",
@@ -410,8 +418,10 @@
       "he": "סידור אשכנז"
     },
     "commentaryNum": 1,
-    "compDate": 1080,
-    "errorMargin": 25,
+    "compDate": [
+      1055,
+      1105
+    ],
     "heTitle": "לך השם",
     "index_title": "Siddur Ashkenaz",
     "ref": "Siddur Ashkenaz, Shabbat, Shacharit, Torah Reading, Removing the Torah from the Ark, Lecha Hashem 1",
@@ -433,8 +443,10 @@
       "he": "סידור אשכנז"
     },
     "commentaryNum": 2,
-    "compDate": 1080,
-    "errorMargin": 25,
+    "compDate": [
+      1055,
+      1105
+    ],
     "heTitle": "הודו",
     "index_title": "Siddur Ashkenaz",
     "ref": "Siddur Ashkenaz, Weekday, Shacharit, Pesukei Dezimra, Hodu 2",
@@ -456,8 +468,10 @@
       "he": "סידור אשכנז"
     },
     "commentaryNum": 3,
-    "compDate": 1080,
-    "errorMargin": 25,
+    "compDate": [
+      1055,
+      1105
+    ],
     "heTitle": "לך השם",
     "index_title": "Siddur Ashkenaz",
     "ref": "Siddur Ashkenaz, Weekday, Shacharit, Torah Reading, Removing the Torah from Ark, Lekha Hashem 3",
@@ -621,8 +635,10 @@
       "he": "סידור ספרד"
     },
     "commentaryNum": 5,
-    "compDate": 1760,
-    "errorMargin": 50,
+    "compDate": [
+      1710,
+      1810
+    ],
     "heTitle": "קבלת שבת",
     "index_title": "Siddur Sefard",
     "ref": "Siddur Sefard, Kabbalat Shabbat 5",
@@ -644,8 +660,10 @@
       "he": "סידור ספרד"
     },
     "commentaryNum": 4,
-    "compDate": 1760,
-    "errorMargin": 50,
+    "compDate": [
+      1710,
+      1810
+    ],
     "heTitle": "הודו",
     "index_title": "Siddur Sefard",
     "ref": "Siddur Sefard, Weekday Shacharit, Hodu 4",
@@ -667,8 +685,10 @@
       "he": "סידור ספרד"
     },
     "commentaryNum": 11,
-    "compDate": 1760,
-    "errorMargin": 50,
+    "compDate": [
+      1710,
+      1810
+    ],
     "heTitle": "קריאת התורה",
     "index_title": "Siddur Sefard",
     "ref": "Siddur Sefard, Weekday Shacharit, Torah Reading 11",
@@ -690,8 +710,10 @@
       "he": "מצודת ציון"
     },
     "commentaryNum": 5.0001,
-    "compDate": 1760,
-    "errorMargin": 20,
+    "compDate": [
+      1740,
+      1780
+    ],
     "heTitle": "מצודת ציון על תהילים",
     "index_title": "Metzudat Zion on Psalms",
     "ref": "Metzudat Zion on Psalms 99:5:1",
@@ -713,8 +735,10 @@
       "he": "מצודת דוד"
     },
     "commentaryNum": 5.0001,
-    "compDate": 1760,
-    "errorMargin": 20,
+    "compDate": [
+      1740,
+      1780
+    ],
     "heTitle": "מצודת דוד על תהילים",
     "index_title": "Metzudat David on Psalms",
     "ref": "Metzudat David on Psalms 99:5:1",
@@ -736,8 +760,10 @@
       "he": "מצודת דוד"
     },
     "commentaryNum": 5.0002,
-    "compDate": 1760,
-    "errorMargin": 20,
+    "compDate": [
+      1740,
+      1780
+    ],
     "heTitle": "מצודת דוד על תהילים",
     "index_title": "Metzudat David on Psalms",
     "ref": "Metzudat David on Psalms 99:5:2",
@@ -759,12 +785,14 @@
       "he": "מדרש תהילים"
     },
     "commentaryNum": 145.0001,
-    "compDate": 1250,
-    "errorMargin": 200,
+    "compDate": [
+      1050,
+      1450
+    ],
     "heTitle": "מדרש תהילים",
     "index_title": "Midrash Tehillim",
     "ref": "Midrash Tehillim 145:1",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "מדרש תהילים קמ״ה:א׳",
     "sourceRef": "Midrash Tehillim 145:1",
     "type": ""
@@ -782,8 +810,10 @@
       "he": "האמונות והדעות"
     },
     "commentaryNum": 10.0001,
-    "compDate": 932,
-    "errorMargin": 10,
+    "compDate": [
+      922,
+      942
+    ],
     "index_title": "HaEmunot veHaDeot",
     "ref": "HaEmunot veHaDeot, [Treatise II] The Unity of the Creator 10:1",
     "sourceHasEn": false,
@@ -804,8 +834,10 @@
       "he": "תרגום תהלים"
     },
     "commentaryNum": 99.0005,
-    "compDate": 300,
-    "errorMargin": 300,
+    "compDate": [
+      0,
+      600
+    ],
     "heTitle": "תרגום תהלים",
     "index_title": "Aramaic Targum to Psalms",
     "ref": "Aramaic Targum to Psalms 99:5",
@@ -827,8 +859,10 @@
       "he": "מחברת מנחם"
     },
     "commentaryNum": 6.0002,
-    "compDate": 955,
-    "errorMargin": 5,
+    "compDate": [
+      950,
+      960
+    ],
     "index_title": "Machberet Menachem",
     "ref": "Machberet Menachem, Letter Heh 6:2",
     "sourceHasEn": false,
@@ -849,8 +883,10 @@
       "he": "אבן עזרא על דברים"
     },
     "commentaryNum": 3.0009,
-    "compDate": 1160,
-    "errorMargin": 5,
+    "compDate": [
+      1155,
+      1165
+    ],
     "heTitle": "אבן עזרא על דברים",
     "index_title": "Ibn Ezra on Deuteronomy",
     "ref": "Ibn Ezra on Deuteronomy 33:3:9",
@@ -872,8 +908,10 @@
       "he": "שו\"ת במראה הבזק חלק שביעי"
     },
     "commentaryNum": 114.0025,
-    "compDate": 2002,
-    "errorMargin": 5,
+    "compDate": [
+      1997,
+      2007
+    ],
     "heTitle": "שו\"ת במראה הבזק חלק שביעי",
     "index_title": "B'Mareh HaBazak Volume VII",
     "ref": "B'Mareh HaBazak Volume VII 114:25",
@@ -895,8 +933,10 @@
       "he": "אברבנאל על תורה"
     },
     "commentaryNum": 15.0003,
-    "compDate": 1498,
-    "errorMargin": 15,
+    "compDate": [
+      1483,
+      1513
+    ],
     "index_title": "Abarbanel on Torah",
     "ref": "Abarbanel on Torah, Deuteronomy 4:15:3",
     "sourceHasEn": false,
@@ -917,8 +957,10 @@
       "he": "מצודת דוד על ישעיהו"
     },
     "commentaryNum": 13.0003,
-    "compDate": 1760,
-    "errorMargin": 20,
+    "compDate": [
+      1740,
+      1780
+    ],
     "heTitle": "מצודת דוד על ישעיהו",
     "index_title": "Metzudat David on Isaiah",
     "ref": "Metzudat David on Isaiah 60:13:3",
@@ -940,8 +982,10 @@
       "he": "מצודת ציון על ישעיהו"
     },
     "commentaryNum": 1.0001,
-    "compDate": 1760,
-    "errorMargin": 20,
+    "compDate": [
+      1740,
+      1780
+    ],
     "heTitle": "מצודת ציון על ישעיהו",
     "index_title": "Metzudat Zion on Isaiah",
     "ref": "Metzudat Zion on Isaiah 66:1:1",
@@ -963,8 +1007,10 @@
       "he": "פרקי דרבי אליעזר"
     },
     "commentaryNum": 31.0014,
-    "compDate": 830,
-    "errorMargin": 200,
+    "compDate": [
+      630,
+      1030
+    ],
     "heTitle": "פרקי דרבי אליעזר",
     "index_title": "Pirkei DeRabbi Eliezer",
     "ref": "Pirkei DeRabbi Eliezer 31:14",
@@ -986,8 +1032,9 @@
       "he": "איכה רבה"
     },
     "commentaryNum": 2.0003,
-    "compDate": 500,
-    "errorMargin": 0,
+    "compDate": [
+      500
+    ],
     "index_title": "Eikhah Rabbah",
     "ref": "Eikhah Rabbah 2:3",
     "sourceHasEn": true,
@@ -1008,8 +1055,10 @@
       "he": "פניני הלכה, ימים נוראים"
     },
     "commentaryNum": 15.0006,
-    "compDate": 2012,
-    "errorMargin": 2,
+    "compDate": [
+      2010,
+      2014
+    ],
     "index_title": "Peninei Halakhah, Days of Awe",
     "ref": "Peninei Halakhah, Days of Awe 7:15:6",
     "sourceHasEn": true,
@@ -1050,8 +1099,10 @@
       "he": "בעלי ברית אברם"
     },
     "commentaryNum": 8,
-    "compDate": 1620,
-    "errorMargin": 2,
+    "compDate": [
+      1618,
+      1622
+    ],
     "heTitle": "בא",
     "index_title": "Ba'alei Brit Avram",
     "ref": "Ba'alei Brit Avram, Bo 8",
@@ -1073,8 +1124,10 @@
       "he": "מראה יחזקאל על התורה"
     },
     "commentaryNum": 13,
-    "compDate": 1820,
-    "errorMargin": 20,
+    "compDate": [
+      1800,
+      1840
+    ],
     "heTitle": "בחוקתי",
     "index_title": "Mareh Yechezkel on Torah",
     "ref": "Mareh Yechezkel on Torah, Bechukotai 13",
@@ -1096,8 +1149,10 @@
       "he": "בראון-דרייבר-בריגס"
     },
     "commentaryNum": 1,
-    "compDate": 3000,
-    "errorMargin": 0,
+    "compDate": [
+      1891,
+      1905
+    ],
     "heTitle": "הֲדֹם",
     "index_title": "BDB",
     "ref": "BDB, הֲדֹם 1",
@@ -1119,8 +1174,10 @@
       "he": "בראון-דרייבר-בריגס"
     },
     "commentaryNum": 1,
-    "compDate": 3000,
-    "errorMargin": 0,
+    "compDate": [
+      1891,
+      1905
+    ],
     "heTitle": "יהוה",
     "index_title": "BDB",
     "ref": "BDB, יהוה 1",
@@ -1142,8 +1199,10 @@
       "he": "בראון-דרייבר-בריגס"
     },
     "commentaryNum": 1,
-    "compDate": 3000,
-    "errorMargin": 0,
+    "compDate": [
+      1891,
+      1905
+    ],
     "heTitle": "לְ",
     "index_title": "BDB",
     "ref": "BDB, לְ 1",
@@ -1165,8 +1224,10 @@
       "he": "בראון-דרייבר-בריגס"
     },
     "commentaryNum": 1,
-    "compDate": 3000,
-    "errorMargin": 0,
+    "compDate": [
+      1891,
+      1905
+    ],
     "heTitle": "קָדוֹשׁ",
     "index_title": "BDB",
     "ref": "BDB, קָדוֹשׁ 1",
@@ -1188,8 +1249,10 @@
       "he": "בראון-דרייבר-בריגס"
     },
     "commentaryNum": 1,
-    "compDate": 3000,
-    "errorMargin": 0,
+    "compDate": [
+      1891,
+      1905
+    ],
     "heTitle": "רֶ֫גֶל",
     "index_title": "BDB",
     "ref": "BDB, רֶ֫גֶל 1",
@@ -1211,8 +1274,10 @@
       "he": "בראון-דרייבר-בריגס"
     },
     "commentaryNum": 1,
-    "compDate": 3000,
-    "errorMargin": 0,
+    "compDate": [
+      1891,
+      1905
+    ],
     "heTitle": "רוּם",
     "index_title": "BDB",
     "ref": "BDB, רוּם 1",
@@ -1234,8 +1299,10 @@
       "he": "בראון-דרייבר-בריגס"
     },
     "commentaryNum": 1,
-    "compDate": 3000,
-    "errorMargin": 0,
+    "compDate": [
+      1891,
+      1905
+    ],
     "heTitle": "שָׁחָה",
     "index_title": "BDB",
     "ref": "BDB, שָׁחָה 1",
@@ -1243,5 +1310,29 @@
     "sourceHeRef": "בראון-דרייבר-בריגס, שָׁחָה א׳",
     "sourceRef": "BDB, שָׁחָה 1",
     "type": "reference"
+  },
+  {
+    "_id": "63df57a7f768716d1b7d6b04",
+    "anchorRef": "Psalms 99:5",
+    "anchorRefExpanded": [
+      "Psalms 99:5"
+    ],
+    "anchorVerse": 5,
+    "category": "Midrash",
+    "collectiveTitle": {
+      "en": "Midrash Shmuel",
+      "he": "מדרש שמואל"
+    },
+    "commentaryNum": 3.0007,
+    "compDate": [
+      400,
+      1000
+    ],
+    "index_title": "Midrash Shmuel",
+    "ref": "Midrash Shmuel 3:7",
+    "sourceHasEn": false,
+    "sourceHeRef": "מדרש שמואל ג׳:ז׳",
+    "sourceRef": "Midrash Shmuel 3:7",
+    "type": ""
   }
 ]
