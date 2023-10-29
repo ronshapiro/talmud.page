@@ -9,8 +9,8 @@ import {
 import {Book, books, internalLinkableRef} from "./books";
 import {ALL_COMMENTARIES, CommentaryType} from "./commentaries";
 import {readUtf8} from "./files";
-import {hadranSegments} from "./hadran";
-import {stripHebrewNonletters, stripHebrewNonlettersOrVowels} from "./hebrew";
+import {hadranSegments, isHadran} from "./hadran";
+import {stripHebrewNonlettersOrVowels} from "./hebrew";
 import {Logger, consoleLogger} from "./logger";
 import {mergeRefs} from "./ref_merging";
 import {refSorter} from "./js/google_drive/ref_sorter";
@@ -63,11 +63,10 @@ import {SectionSymbolRemover} from "./source_formatting/section_symbol";
 import {SefariaLinkSanitizer} from "./source_formatting/sefaria_link_sanitizer";
 import {ShulchanArukhHeaderRemover} from "./source_formatting/shulchan_arukh_remove_header";
 import {isPehSectionEnding, transformTanakhSpacing} from "./source_formatting/tanakh_spacing";
+import {hasMatchingProperty} from "./util/objects";
 import {checkNotUndefined} from "./js/undefined";
 import {getWeekdayReading} from "./weekday_parshiot";
 import {ASERET_YIMEI_TESHUVA_REFS} from "./js/aseret_yimei_teshuva";
-
-const IGNORE_STEINSALTZ = "<ignore steinsaltz>";
 
 const standardEnglishTransformations = sefariaTextTypeTransformation(
   english => (
@@ -385,21 +384,6 @@ export class InternalSegment {
     }
     return json;
   }
-}
-
-const HADRAN_PATTERN = /^((<br>)+<big><strong>)?הדרן עלי?ך .*/;
-
-function isHadran(text: sefaria.TextType): boolean {
-  if (Array.isArray(text)) {
-    return isHadran(text[0]);
-  }
-  return HADRAN_PATTERN.test(stripHebrewNonletters(text));
-}
-
-function hasMatchingProperty(first: any, second: any, propertyName: string): boolean {
-  return propertyName in first
-    && propertyName in second
-    && first[propertyName] === second[propertyName];
 }
 
 class LinkGraph {
@@ -1061,6 +1045,7 @@ enum RemovalStrategy {
 const ALEPH = "א";
 const TAV = "ת";
 const STEINSALTZ_SUGYA_START = new RegExp(`^<big>[${ALEPH}-${TAV}].*`);
+const IGNORE_STEINSALTZ = "<ignore steinsaltz>";
 
 class TalmudApiRequestHandler extends AbstractApiRequestHandler {
   protected recreateWithLogger(logger: Logger): AbstractApiRequestHandler {
