@@ -408,9 +408,11 @@ app.get("/api/:title/:page", (req, res) => {
         const [response, code] = result;
         return res.status(code).json(response);
       })
-      .finally(() => {
-        req.timer.finish("complete after");
-      }));
+      .catch(e => {
+        req.logger.error(e);
+        res.status(500).json({error: "Internal Server Error"});
+      })
+      .finally(() => req.timer.finish("complete after")));
 
 
   for (const possiblePage of [book.nextPage(page), book.previousPage(page)]) {
