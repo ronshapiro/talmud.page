@@ -34,7 +34,7 @@ For suggestions/questions, email feedback@talmud.page.
 - `pre-commit`
     - [Pre-Commit](https://pre-commit.com) simplifies configuring Git pre-commit hooks. This is optional but recommended - otherwise you may see errors when trying to push/merge on Github.
     - To install, run `pip install -g pre-commit && pre-commit install`
-- NodeJS v14.2.0 and npm 6.14.4
+- NodeJS v20.8.0 and npm 10.1.0
     - To install JavaScript dependencies, run `npm install`
 - eslint
     - `npm install -g eslint`
