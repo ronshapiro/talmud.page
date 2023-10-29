@@ -440,15 +440,15 @@ export abstract class AbstractApiRequestHandler {
   private applicableCommentaries: CommentaryType[];
 
   constructor(
-    protected requestMaker: RequestMaker,
-    protected readonly logger: Logger = consoleLogger,
+    protected readonly bookName: string,
+    protected readonly page: string,
+    protected readonly requestMaker: RequestMaker,
+    protected readonly logger: Logger,
   ) {
     this.applicableCommentaries = this.getApplicableCommentaries();
   }
 
-  protected abstract recreateWithLogger(logger: Logger): AbstractApiRequestHandler;
-
-  protected abstract makeId(bookName: string, page: string): string;
+  protected abstract makeId(): string;
 
   protected makeSubRef(mainRef: string, index: number): string {
     if (mainRef.includes("-")) {
@@ -461,8 +461,8 @@ export abstract class AbstractApiRequestHandler {
     }
   }
 
-  protected makeTitle(bookName: string, page: string): string {
-    return `${books.byCanonicalName[bookName].canonicalName} ${page}`;
+  protected makeTitle(): string {
+    return `${books.byCanonicalName[this.bookName].canonicalName} ${this.page}`;
   }
 
   private replaceLotsOfNonBreakingSpacesWithNewlines(text: string): string {
@@ -490,7 +490,7 @@ export abstract class AbstractApiRequestHandler {
 
   protected postProcessAllSegments(
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    segments: InternalSegment[], bookName: string, page: string, ...extraValues: any[]
+    segments: InternalSegment[], ...extraValues: any[]
   ): InternalSegment[] {
     return segments;
   }
@@ -508,30 +508,23 @@ export abstract class AbstractApiRequestHandler {
     return newSegments;
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  protected extraSegments(bookName: string, page: string): Section[] {
+  protected extraSegments(): Section[] {
     return [];
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  protected linkDepth(bookName: string, page: string): number {
+  protected linkDepth(): number {
     return 2;
   }
 
-  handleRequest(bookName: string, page: string, logger?: Logger): Promise<ApiResponse> {
-    if (logger) {
-      // @ts-ignore
-      return this.recreateWithLogger(logger).handleRequest(bookName, page);
-    }
-
-    const book = books.byCanonicalName[bookName];
-    const ref = `${book.bookNameForRef()} ${book.rewriteSectionRef(page)}`;
+  handleRequest(): Promise<ApiResponse> {
+    const book = books.byCanonicalName[this.bookName];
+    const ref = `${book.bookNameForRef()} ${book.rewriteSectionRef(this.page)}`;
     const underlyingRefs = this.expandRef(ref);
 
     const textRequest = this.makeTextRequest(ref, underlyingRefs);
     const linksTraversalTimer = this.logger.newTimer();
     const linkGraphRequest = this.linksTraversal(
-      new LinkGraph(), ListMultimap.identity(underlyingRefs), this.linkDepth(bookName, page), true)
+      new LinkGraph(), ListMultimap.identity(underlyingRefs), this.linkDepth(), true)
       .finally(() => linksTraversalTimer.finish("links traversal"));
     return Promise.all([
       textRequest,
@@ -556,12 +549,11 @@ export abstract class AbstractApiRequestHandler {
           })
           .then(() => linkGraph);
       }),
-      ...this.extraPromises(bookName, page),
-    ]).then(args => this.transformData(bookName, page, ...args));
+      ...this.extraPromises(),
+    ]).then(args => this.transformData(...args));
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  protected extraPromises(bookName: string, page: string): Promise<any>[] {
+  protected extraPromises(): Promise<any>[] {
     return [];
   }
 
@@ -851,8 +843,6 @@ export abstract class AbstractApiRequestHandler {
   }
 
   private transformData(
-    bookName: string,
-    page: string,
     textResponse: sefaria.TextResponse,
     linkGraph: LinkGraph,
     ...extraValues: any[]
@@ -862,7 +852,7 @@ export abstract class AbstractApiRequestHandler {
 
     // TODO: There is dangling English text here. It's been reported to Sefaria but there's a war
     // right now..., so let's keep this fix here for now.
-    if (bookName === "Numbers" && page === "25" && textResponse.text.length === 19) {
+    if (this.bookName === "Numbers" && this.page === "25" && textResponse.text.length === 19) {
       (textResponse.text as string[]).pop();
     }
 
@@ -899,7 +889,7 @@ export abstract class AbstractApiRequestHandler {
 
     segments = this.injectSegmentSeperators(segments);
     segments = segments.map(x => this.postProcessSegment(x));
-    segments = this.postProcessAllSegments(segments, bookName, page, ...extraValues);
+    segments = this.postProcessAllSegments(segments, ...extraValues);
 
     if (segments.length === 0) {
       this.logger.log(`No segments for ${mainRef}`);
@@ -908,9 +898,9 @@ export abstract class AbstractApiRequestHandler {
     timer.finish("transformData");
 
     return {
-      id: checkNotUndefined(this.makeId(bookName, page), "makeId"),
-      title: checkNotUndefined(this.makeTitle(bookName, page), "title"),
-      sections: segments.map(x => x.toJson()).concat(this.extraSegments(bookName, page)),
+      id: checkNotUndefined(this.makeId(), "makeId"),
+      title: checkNotUndefined(this.makeTitle(), "title"),
+      sections: segments.map(x => x.toJson()).concat(this.extraSegments()),
     };
   }
 
@@ -1048,17 +1038,13 @@ const STEINSALTZ_SUGYA_START = new RegExp(`^<big>[${ALEPH}-${TAV}].*`);
 const IGNORE_STEINSALTZ = "<ignore steinsaltz>";
 
 class TalmudApiRequestHandler extends AbstractApiRequestHandler {
-  protected recreateWithLogger(logger: Logger): AbstractApiRequestHandler {
-    return new TalmudApiRequestHandler(this.requestMaker, logger);
+  protected makeId(): string {
+    return this.page;
   }
 
-  protected makeId(bookName: string, page: string): string {
-    return page;
-  }
-
-  protected extraPromises(masechet: string, daf: string): Promise<any>[] {
+  protected extraPromises(): Promise<any>[] {
     return [
-      this.requestMaker.makeSteinsaltzRequest(masechet, daf.slice(0, -1))
+      this.requestMaker.makeSteinsaltzRequest(this.bookName, this.page.slice(0, -1))
         .catch(() => IGNORE_STEINSALTZ),
     ];
   }
@@ -1129,11 +1115,9 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
 
   protected postProcessAllSegments(
     segments: InternalSegment[],
-    masechet: string,
-    amud: string,
     steinsaltzResult: any,
   ): InternalSegment[] {
-    if (masechet === "Nazir" && amud === "33b") {
+    if (this.bookName === "Nazir" && this.page === "33b") {
       return [new InternalSegment({
         hebrew: "אין גמרא לנזיר ל״ג ע״א, רק תוספות (שהם קשורים לדפים אחרים)",
         english: "Nazir 33b has no Gemara, just Tosafot (which are linked to other pages).",
@@ -1142,7 +1126,7 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
     }
     if (steinsaltzResult !== IGNORE_STEINSALTZ) {
       try {
-        this.addSteinsaltzData(steinsaltzResult, amud, segments);
+        this.addSteinsaltzData(steinsaltzResult, this.page, segments);
       } catch (e) {
         this.logger.error(e);
       }
@@ -1184,21 +1168,17 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
     }
   }
 
-  protected extraSegments(masechet: string, amud: string): Section[] {
-    if (books.byCanonicalName[masechet].end === amud) {
-      return hadranSegments(masechet);
+  protected extraSegments(): Section[] {
+    if (books.byCanonicalName[this.bookName].end === this.page) {
+      return hadranSegments(this.bookName);
     }
     return [];
   }
 }
 
 class TanakhApiRequestHandler extends AbstractApiRequestHandler {
-  protected recreateWithLogger(logger: Logger): AbstractApiRequestHandler {
-    return new TanakhApiRequestHandler(this.requestMaker, logger);
-  }
-
-  protected makeId(bookName: string, page: string): string {
-    return page;
+  protected makeId(): string {
+    return this.page;
   }
 
   protected translateHebrewText(
@@ -1216,12 +1196,8 @@ class TanakhApiRequestHandler extends AbstractApiRequestHandler {
 }
 
 class WeekdayTorahPortionHandler extends AbstractApiRequestHandler {
-  protected recreateWithLogger(logger: Logger): AbstractApiRequestHandler {
-    return new WeekdayTorahPortionHandler(this.requestMaker, logger);
-  }
-
-  protected makeId(bookName: string, page: string): string {
-    return page.replace(/\//g, "_");
+  protected makeId(): string {
+    return this.page.replace(/\//g, "_");
   }
 
   protected expandRef(ref: string): string[] {
@@ -1231,10 +1207,7 @@ class WeekdayTorahPortionHandler extends AbstractApiRequestHandler {
     return [getWeekdayReading(date)![parseInt(aliyahNumber)]];
   }
 
-  protected postProcessAllSegments(
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    segments: InternalSegment[], bookName: string, page: string,
-  ): InternalSegment[] {
+  protected postProcessAllSegments(segments: InternalSegment[]): InternalSegment[] {
     for (const segment of segments.slice(0, -1)) {
       segment.defaultMergeWithNext = true;
     }
@@ -1292,12 +1265,8 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
     return super.expandRef(ref);
   }
 
-  handleRequest(bookName: string, page: string, logger?: Logger): Promise<ApiResponse> {
-    return super.handleRequest(bookName, page.replace(/_/g, " "), logger);
-  }
-
-  protected makeId(bookName: string, page: string): string {
-    return page.replace(/ /g, "_");
+  protected makeId(): string {
+    return this.page.replace(/ /g, "_");
   }
 
   protected makeSubRef(mainRef: string, index: number): string {
@@ -1307,8 +1276,8 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
     return `${mainRef}:${index + 1}`;
   }
 
-  protected makeTitle(bookName: string, page: string): string {
-    return page;
+  protected makeTitle(): string {
+    return this.page;
   }
 
   stripWeirdHebrew(hebrew: string): string {
@@ -1422,12 +1391,12 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
     return segment;
   }
 
-  protected postProcessAllSegments(
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    segments: InternalSegment[], bookName: string, page: string,
-  ): InternalSegment[] {
+  protected postProcessAllSegments(segments: InternalSegment[]): InternalSegment[] {
     const mergeWithNext = new Set(SIDDUR_DEFAULT_MERGE_WITH_NEXT);
-    for (const refPiece of this.refRewritingMap()[page]) {
+    if (this.refRewritingMap()[this.page] === undefined) {
+      throw new Error(this.page);
+    }
+    for (const refPiece of this.refRewritingMap()[this.page]) {
       if (refPiece instanceof MergeWithNext) {
         mergeWithNext.add(refPiece.ref);
       } else if (refPiece instanceof MergeRefsByDefault) {
@@ -1459,7 +1428,7 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
       }
     }
 
-    if (page === "Tachanun") {
+    if (this.page === "Tachanun") {
       for (let i = 0; i < segments.length - 1; i++) {
         const [first, next] = segments.slice(i, i + 2);
         if (first.ref === "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Vidui and 13 Middot 3"
@@ -1472,10 +1441,10 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
         }
       }
     }
-    if (page === "Psalm 150") {
+    if (this.page === "Psalm 150") {
       segments.slice(-2)[0].commentary.removeCommentWithRef("Shulchan Arukh, Orach Chayim 51:7");
     }
-    if (page === "Korbanot") {
+    if (this.page === "Korbanot") {
       for (const segment of segments) {
         if (segment.ref === "Exodus 30:7") {
           segment.hebrew = `וְנֶאֱמַר: ${segment.hebrew}`;
@@ -1483,7 +1452,7 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
         }
       }
     }
-    if (page === "Hodu") {
+    if (this.page === "Hodu") {
       let i = 0;
       for (const segment of segments) {
         if (segment.ref === "Siddur Sefard, Weekday Shacharit, Hodu 9") {
@@ -1496,7 +1465,7 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
         }
       }
     }
-    if (page === "Sovereignty of Heaven") {
+    if (this.page === "Sovereignty of Heaven") {
       let i = 0;
       for (const segment of segments) {
         if ([
@@ -1702,10 +1671,6 @@ function siddurSplit(ref: string, hebrew: string, english: string): SplitType {
 }
 
 class SiddurAshkenazApiRequestHandler extends LiturgicalApiRequestHandler {
-  protected recreateWithLogger(logger: Logger): AbstractApiRequestHandler {
-    return new SiddurAshkenazApiRequestHandler(this.requestMaker, logger);
-  }
-
   refRewritingMap(): Record<string, RefPiece[]> {
     return SIDDUR_REFS_ASHKENAZ;
   }
@@ -1730,10 +1695,6 @@ class SiddurAshkenazApiRequestHandler extends LiturgicalApiRequestHandler {
 }
 
 class SiddurSefardApiRequestHandler extends LiturgicalApiRequestHandler {
-  protected recreateWithLogger(logger: Logger): AbstractApiRequestHandler {
-    return new SiddurSefardApiRequestHandler(this.requestMaker, logger);
-  }
-
   refRewritingMap(): Record<string, RefPiece[]> {
     return SIDDUR_REFS_SEFARD;
   }
@@ -1748,10 +1709,6 @@ class SiddurSefardApiRequestHandler extends LiturgicalApiRequestHandler {
 }
 
 class BirkatHamazonApiRequestHandler extends LiturgicalApiRequestHandler {
-  protected recreateWithLogger(logger: Logger): AbstractApiRequestHandler {
-    return new BirkatHamazonApiRequestHandler(this.requestMaker, logger);
-  }
-
   refRewritingMap(): Record<string, RefPiece[]> {
     return BIRKAT_HAMAZON_REFS;
   }
@@ -1762,38 +1719,42 @@ class BirkatHamazonApiRequestHandler extends LiturgicalApiRequestHandler {
 }
 
 export class ApiRequestHandler {
-  private talmudHandler: TalmudApiRequestHandler;
-  private tanakhHandler: TanakhApiRequestHandler;
-  private siddurAshkenazHandler: SiddurAshkenazApiRequestHandler;
-  private siddurSefardHandler: SiddurSefardApiRequestHandler;
-  private weekdayTorahHandler: WeekdayTorahPortionHandler;
-  private birkatHamazonHandler: BirkatHamazonApiRequestHandler;
+  private talmudHandlerClass = TalmudApiRequestHandler;
+  private tanakhHandlerClass = TanakhApiRequestHandler;
+  private siddurAshkenazHandlerClass = SiddurAshkenazApiRequestHandler;
+  private siddurSefardHandlerClass = SiddurSefardApiRequestHandler;
+  private weekdayTorahHandlerClass = WeekdayTorahPortionHandler;
+  private birkatHamazonHandlerClass = BirkatHamazonApiRequestHandler;
 
-  constructor(requestMaker: RequestMaker) {
-    this.talmudHandler = new TalmudApiRequestHandler(requestMaker);
-    this.tanakhHandler = new TanakhApiRequestHandler(requestMaker);
-    this.siddurAshkenazHandler = new SiddurAshkenazApiRequestHandler(requestMaker);
-    this.siddurSefardHandler = new SiddurSefardApiRequestHandler(requestMaker);
-    this.weekdayTorahHandler = new WeekdayTorahPortionHandler(requestMaker);
-    this.birkatHamazonHandler = new BirkatHamazonApiRequestHandler(requestMaker);
-  }
+  constructor(
+    private requestMaker: RequestMaker,
+    private logger: Logger = consoleLogger,
+  ) {}
 
-  handleRequest(bookName: string, page: string, logger?: Logger): Promise<ApiResponse> {
-    const handler = (() => {
+  handleRequest(bookName: string, page: string): Promise<ApiResponse> {
+    const [handlerClass, isLiturgical] = (() => {
       if (bookName === "SiddurAshkenaz") {
-        return this.siddurAshkenazHandler;
+        return [this.siddurAshkenazHandlerClass, true];
       } else if (bookName === "SiddurSefard") {
-        return this.siddurSefardHandler;
+        return [this.siddurSefardHandlerClass, true];
       } else if (bookName === "WeekdayTorah") {
-        return this.weekdayTorahHandler;
+        return [this.weekdayTorahHandlerClass, false];
       } else if (bookName === "BirkatHamazon") {
-        return this.birkatHamazonHandler;
+        return [this.birkatHamazonHandlerClass, true];
       }
-      return books.byCanonicalName[bookName].isMasechet()
-        ? this.talmudHandler
-        : this.tanakhHandler;
+      const clazz = books.byCanonicalName[bookName].isMasechet()
+        ? this.talmudHandlerClass
+        : this.tanakhHandlerClass;
+      return [clazz, false];
     })();
 
-    return handler.handleRequest(bookName, page, logger);
+    // This is a small hack around old behavior with the abstract Liturgical base class that rewrote
+    // the page value. This doesn't play nicely in Typescript:
+    // https://gist.github.com/ronshapiro/c8bb0a34517fbb90f6dddc8972677d65
+    if (isLiturgical) {
+      page = page.replace(/_/g, " ");
+    }
+
+    return new handlerClass(bookName, page, this.requestMaker, this.logger).handleRequest();
   }
 }

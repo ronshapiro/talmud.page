@@ -13,10 +13,10 @@ import {FakeRequestMaker, TEST_DATA_ROOT} from "../request_makers";
 import {NoopLogger} from "../logger";
 
 export function testTitle(title: string): void {
-  const handler = new ApiRequestHandler(new FakeRequestMaker(TEST_DATA_ROOT));
+  const handler = new ApiRequestHandler(new FakeRequestMaker(TEST_DATA_ROOT), new NoopLogger());
   const pages = testPages.filter(page => page.title === title);
   test.each(pages)("%s", testPage => {
-    return handler.handleRequest(testPage.title, testPage.page, new NoopLogger())
+    return handler.handleRequest(testPage.title, testPage.page)
       .then(results => {
         const expected = fs.readFileSync(testPage.outputFilePath(), {encoding: "utf-8"});
         expect(jsonStringify(results)).toBe(expected);

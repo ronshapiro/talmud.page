@@ -9,10 +9,10 @@ import {PromiseChain} from "./js/promises";
 import {cachedOutputFilePath} from "./cached_outputs";
 import {RealRequestMaker} from "./request_makers";
 
-const requestHandler = new ApiRequestHandler(new RealRequestMaker());
+const requestHandler = new ApiRequestHandler(new RealRequestMaker(), new NoopLogger());
 
 function makeRequest(bookName: string, section: string): Promise<ApiResponse> {
-  return requestHandler.handleRequest(bookName, section, new NoopLogger())
+  return requestHandler.handleRequest(bookName, section)
     .catch(e => {
       console.error(`Error processing ${bookName} ${section}`);
       console.error(e);

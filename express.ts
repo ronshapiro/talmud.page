@@ -338,7 +338,7 @@ async function getAndCacheApiResponse(
 ): Promise<[ApiResponse | ApiErrorResponse, number]> {
   // Load these types lazily to defer slow JSDOM import from source_formatting/html_visitor.ts
   const {ApiException, ApiRequestHandler} = await import("./api_request_handler");
-  const apiRequestHandler = new ApiRequestHandler(new RealRequestMaker());
+  const apiRequestHandler = new ApiRequestHandler(new RealRequestMaker(), logger);
 
   const cacheKey = `${title} % ${page}`;
   const cached = apiResponseCache.get(cacheKey);
@@ -348,7 +348,7 @@ async function getAndCacheApiResponse(
   }
 
   logger.log(verb);
-  const originalPromise = apiRequestHandler.handleRequest(title, page, logger)
+  const originalPromise = apiRequestHandler.handleRequest(title, page)
     .then(response => {
       logger.log(`${verb} --- Done`);
       const newValue: [ApiResponse, number] = [response, 200];

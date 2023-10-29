@@ -53,6 +53,7 @@ module.exports = {
     "react/destructuring-assignment": "off",
     "react/jsx-wrap-multilines": "off",
     "react/static-property-placement": "off",
+    "new-cap": "off",
     "no-restricted-syntax": "off",
     "no-shadow": "off",
     "@typescript-eslint/no-shadow": ["error"],
