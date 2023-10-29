@@ -63,6 +63,7 @@ bundler.bundle();
 const IGNORED_PREFIXES = [
   ".#",
   ".eslintrc.js",
+  ".eslintrc.dev.js",
   ".git/",
   "cached_outputs/",
   "dist/",
@@ -129,7 +130,7 @@ if (!isProd) {
     const filesToLint = allJsFiles.filter(x => !x.includes(".#"));
 
     eslint?.kill();
-    eslint = spawn("pre-commit/check_eslint.sh", filesToLint);
+    eslint = spawn("pre-commit/check_eslint.sh", filesToLint.concat(["--dev"]));
     eslint.stdout!.on("data", data => console.log(data.toString()));
     eslint.stderr!.on("data", data => console.error(chalk.bgRed(data.toString())));
     eslint.on("close", code => {
