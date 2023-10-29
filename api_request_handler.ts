@@ -18,6 +18,7 @@ import {ListMultimap} from "./multimap";
 import {getSugyaSpanningRef, shulchanArukhChapterTitle, verseCount} from "./precomputed";
 import {RequestMaker} from "./request_makers";
 import {
+  equalJaggedArrays,
   firstOrOnlyElement,
   sefariaTextTypeTransformation,
 } from "./sefariaTextType";
@@ -97,28 +98,6 @@ function stripPossiblePrefix(text: string, prefix: string): string {
   return text;
 }
 
-function deepEquals(hebrew: sefaria.TextType, english: sefaria.TextType): boolean {
-  if (Array.isArray(hebrew) && Array.isArray(english)) {
-    if (hebrew.length !== english.length) {
-      return false;
-    }
-    for (let i = 0; i <= hebrew.length; i++) {
-      if (!deepEquals(hebrew[i], english[i])) {
-        return false;
-      }
-    }
-    return true;
-  }
-
-  return hebrew === english;
-}
-
-function identityMultimap<E>(elements: E[]): ListMultimap<E, E> {
-  const multimap = new ListMultimap<E, E>();
-  for (const e of elements) multimap.put(e, e);
-  return multimap;
-}
-
 type SplitType = [string, string][];
 
 /** A single comment on a text. */
@@ -132,7 +111,7 @@ class Comment {
     const {ref} = sefariaComment;
     let {he: hebrew, text: english} = sefariaComment;
     let {sourceRef, sourceHeRef} = link;
-    if (deepEquals(hebrew, english)) {
+    if (equalJaggedArrays(hebrew, english)) {
       // Fix an issue where sometimes Sefaria returns the exact same text. For now, safe to
       // assume that the equivalent text is Hebrew.
       logger.log(`${ref} has identical hebrew and english`);
@@ -564,7 +543,7 @@ export abstract class AbstractApiRequestHandler {
     const textRequest = this.makeTextRequest(ref, underlyingRefs);
     const linksTraversalTimer = this.logger.newTimer();
     const linkGraphRequest = this.linksTraversal(
-      new LinkGraph(), identityMultimap(underlyingRefs), this.linkDepth(bookName, page), true)
+      new LinkGraph(), ListMultimap.identity(underlyingRefs), this.linkDepth(bookName, page), true)
       .finally(() => linksTraversalTimer.finish("links traversal"));
     return Promise.all([
       textRequest,

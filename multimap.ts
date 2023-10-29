@@ -34,4 +34,10 @@ export class ListMultimap<K, V> {
     }
     return copy;
   }
+
+  static identity<E>(elements: E[]): ListMultimap<E, E> {
+    const multimap = new ListMultimap<E, E>();
+    for (const e of elements) multimap.put(e, e);
+    return multimap;
+  }
 }

@@ -19,3 +19,19 @@ export function firstOrOnlyElement(text: sefaria.TextType): string {
   }
   return firstOrOnlyElement(text[0]);
 }
+
+export function equalJaggedArrays(hebrew: sefaria.TextType, english: sefaria.TextType): boolean {
+  if (Array.isArray(hebrew) && Array.isArray(english)) {
+    if (hebrew.length !== english.length) {
+      return false;
+    }
+    for (let i = 0; i <= hebrew.length; i++) {
+      if (!equalJaggedArrays(hebrew[i], english[i])) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  return hebrew === english;
+}
