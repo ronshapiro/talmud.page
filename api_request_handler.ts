@@ -409,6 +409,10 @@ class LinkGraph {
   // TODO(typescript): don't cache the result if the link graph is incomlete
   complete = true;
 
+  hasLink(sourceRef: string, targetRef: string): boolean {
+    return this.getGraph(sourceRef).has(targetRef);
+  }
+
   getGraph(sourceRef: string): Set<string> {
     if (!(sourceRef in this.graph)) {
       this.graph[sourceRef] = new Set<string>();
@@ -725,8 +729,7 @@ export abstract class AbstractApiRequestHandler {
             sourceRefIndex = link.anchorRefExpanded.length - 1;
           }
           const sourceRef = link.anchorRefExpanded[sourceRefIndex];
-          const targetRefs = linkGraph.getGraph(sourceRef);
-          if (targetRefs.has(targetRef)
+          if (linkGraph.hasLink(sourceRef, targetRef)
             || (!isRoot && commentaryType.ignoreIfNotTypeLevel)) {
             continue;
           }
