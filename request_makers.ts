@@ -1,7 +1,41 @@
 import {parse as urlParse} from "url";
+import {fetch} from "./fetch";
 import {readUtf8Async} from "./files";
+import {steinsaltzApiUrl} from "./steinsaltz";
 import {writeJson} from "./util/json_files";
-import {RealRequestMaker, RequestMaker} from "./api_request_handler";
+
+export abstract class RequestMaker {
+  abstract makeRequest<T>(endpoint: string): Promise<T>;
+  abstract makeSteinsaltzRequest(masechet: string, daf: string): Promise<any>;
+}
+
+const RETRY_OPTIONS = {
+  retry: {
+    retries: 4,
+    minTimeout: 200,
+  },
+};
+
+const STEINSALTZ_OPTIONS = {
+  headers: {
+    "api-key": "Qt23AFSTt9AAXhct",
+  },
+  ...RETRY_OPTIONS,
+};
+
+export class RealRequestMaker extends RequestMaker {
+  makeRequest<T>(endpoint: string): Promise<T> {
+    return fetch(`https://sefaria.org/api${encodeURI(endpoint)}`, RETRY_OPTIONS)
+      .then(x => x.json())
+      .then(json => (json.error ? Promise.reject(json) : Promise.resolve(json)));
+  }
+
+  makeSteinsaltzRequest(masechet: string, daf: string): Promise<any> {
+    return fetch(steinsaltzApiUrl(masechet, daf), STEINSALTZ_OPTIONS)
+      .then(x => x.json())
+      .then(json => (json.error ? Promise.reject(json) : Promise.resolve(json)));
+  }
+}
 
 export const TEST_DATA_ROOT = `${__dirname}/test_data/api_request_handler`;
 

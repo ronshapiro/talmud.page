@@ -11,12 +11,12 @@ import {ALL_COMMENTARIES, CommentaryType} from "./commentaries";
 import {readUtf8} from "./files";
 import {hadranSegments} from "./hadran";
 import {stripHebrewNonletters, stripHebrewNonlettersOrVowels} from "./hebrew";
-import {fetch} from "./fetch";
 import {Logger, consoleLogger} from "./logger";
 import {mergeRefs} from "./ref_merging";
 import {refSorter} from "./js/google_drive/ref_sorter";
 import {ListMultimap} from "./multimap";
 import {getSugyaSpanningRef, shulchanArukhChapterTitle, verseCount} from "./precomputed";
+import {RequestMaker} from "./request_makers";
 import {
   firstOrOnlyElement,
   sefariaTextTypeTransformation,
@@ -63,43 +63,10 @@ import {SefariaLinkSanitizer} from "./source_formatting/sefaria_link_sanitizer";
 import {ShulchanArukhHeaderRemover} from "./source_formatting/shulchan_arukh_remove_header";
 import {isPehSectionEnding, transformTanakhSpacing} from "./source_formatting/tanakh_spacing";
 import {checkNotUndefined} from "./js/undefined";
-import {steinsaltzApiUrl} from "./steinsaltz";
 import {getWeekdayReading} from "./weekday_parshiot";
 import {ASERET_YIMEI_TESHUVA_REFS} from "./js/aseret_yimei_teshuva";
 
-export abstract class RequestMaker {
-  abstract makeRequest<T>(endpoint: string): Promise<T>;
-  abstract makeSteinsaltzRequest(masechet: string, daf: string): Promise<any>;
-}
-
-const RETRY_OPTIONS = {
-  retry: {
-    retries: 4,
-    minTimeout: 200,
-  },
-};
-
-const STEINSALTZ_OPTIONS = {
-  headers: {
-    "api-key": "Qt23AFSTt9AAXhct",
-  },
-  ...RETRY_OPTIONS,
-};
 const IGNORE_STEINSALTZ = "<ignore steinsaltz>";
-
-export class RealRequestMaker extends RequestMaker {
-  makeRequest<T>(endpoint: string): Promise<T> {
-    return fetch(`https://sefaria.org/api${encodeURI(endpoint)}`, RETRY_OPTIONS)
-      .then(x => x.json())
-      .then(json => (json.error ? Promise.reject(json) : Promise.resolve(json)));
-  }
-
-  makeSteinsaltzRequest(masechet: string, daf: string): Promise<any> {
-    return fetch(steinsaltzApiUrl(masechet, daf), STEINSALTZ_OPTIONS)
-      .then(x => x.json())
-      .then(json => (json.error ? Promise.reject(json) : Promise.resolve(json)));
-  }
-}
 
 const standardEnglishTransformations = sefariaTextTypeTransformation(
   english => (

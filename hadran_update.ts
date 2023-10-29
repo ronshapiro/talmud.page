@@ -1,5 +1,6 @@
-import {AbstractApiRequestHandler, InternalSegment, RealRequestMaker} from "./api_request_handler";
+import {AbstractApiRequestHandler, InternalSegment} from "./api_request_handler";
 import {Logger} from "./logger";
+import {RealRequestMaker} from "./request_makers";
 import {sefariaTextTypeTransformation} from "./sefariaTextType";
 import {writeJson} from "./util/json_files";
 

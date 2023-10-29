@@ -25,6 +25,7 @@ import {CorrectionPostData} from "./correctionTypes";
 import {htmlEscape} from "./html_escape";
 import {ConsoleLogger, Timer} from "./logger";
 import {PromiseChain} from "./js/promises";
+import {RealRequestMaker} from "./request_makers";
 import {Sitemap} from "./robots";
 import {jsonSize} from "./util/json_size";
 import {writeJson} from "./util/json_files";
@@ -336,7 +337,7 @@ async function getAndCacheApiResponse(
   verb = "Requesting",
 ): Promise<[ApiResponse | ApiErrorResponse, number]> {
   // Load these types lazily to defer slow JSDOM import from source_formatting/html_visitor.ts
-  const {ApiException, ApiRequestHandler, RealRequestMaker} = await import("./api_request_handler");
+  const {ApiException, ApiRequestHandler} = await import("./api_request_handler");
   const apiRequestHandler = new ApiRequestHandler(new RealRequestMaker());
 
   const cacheKey = `${title} % ${page}`;

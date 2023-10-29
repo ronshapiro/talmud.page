@@ -1,12 +1,13 @@
 /* eslint-disable no-console */
 import * as fs from "fs";
-import {ApiRequestHandler, RealRequestMaker} from "./api_request_handler";
+import {ApiRequestHandler} from "./api_request_handler";
 import {ApiResponse} from "./apiTypes";
 import {NoopLogger} from "./logger";
 import {books} from "./books";
 import {writeJson} from "./util/json_files";
 import {PromiseChain} from "./js/promises";
 import {cachedOutputFilePath} from "./cached_outputs";
+import {RealRequestMaker} from "./request_makers";
 
 const requestHandler = new ApiRequestHandler(new RealRequestMaker());
 
