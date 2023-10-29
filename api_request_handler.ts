@@ -6,7 +6,7 @@ import {
   Section,
   ApiComment,
 } from "./apiTypes";
-import {Book, books, QueryResult} from "./books";
+import {Book, books, internalLinkableRef} from "./books";
 import {ALL_COMMENTARIES, CommentaryType} from "./commentaries";
 import {readUtf8} from "./files";
 import {hadranSegments} from "./hadran";
@@ -74,19 +74,6 @@ const standardEnglishTransformations = sefariaTextTypeTransformation(
       SectionSymbolRemover.process(
         SefariaLinkSanitizer.process(english)))
   ));
-
-function internalLinkableRef(ref: string): QueryResult | undefined {
-  for (const title of Object.keys(books.byCanonicalName)) {
-    if (ref.startsWith(title)) {
-      try {
-        return books.parse(ref.split(":")[0]);
-      } catch {
-        continue;
-      }
-    }
-  }
-  return undefined;
-}
 
 function stripRefSegmentNumber(ref: string): string {
   const index = ref.indexOf(":");

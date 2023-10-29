@@ -1230,3 +1230,16 @@ export const books = new BookIndex([
     bookNameForRef: "Siddur Ashkenaz, Berachot, Birkat HaMazon,",
   }),
 ]);
+
+export function internalLinkableRef(ref: string): QueryResult | undefined {
+  for (const title of Object.keys(books.byCanonicalName)) {
+    if (ref.startsWith(title)) {
+      try {
+        return books.parse(ref.split(":")[0]);
+      } catch {
+        continue;
+      }
+    }
+  }
+  return undefined;
+}
