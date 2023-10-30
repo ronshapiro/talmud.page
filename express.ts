@@ -247,7 +247,7 @@ class PagesDontExistError extends Error {
       for (const page of nonExistentPages.slice(1, -1)) {
         parts.push(`, ${page}`);
       }
-      parts.push(` and ${nonExistentPages.slice(-1)[0]} don't exist`);
+      parts.push(` and ${nonExistentPages.at(-1)} don't exist`);
       super(parts.join(""));
     }
 

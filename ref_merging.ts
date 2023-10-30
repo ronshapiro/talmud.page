@@ -36,7 +36,7 @@ export function mergeRefs(refs: string[]): ListMultimap<string, string> {
     } else {
       mergeableValues.sort(refSorter);
       const [prefix, firstSuffix] = splitOnRefSuffix(mergeableValues[0]);
-      const [, lastSuffix] = splitOnRefSuffix(mergeableValues.slice(-1)[0]);
+      const [, lastSuffix] = splitOnRefSuffix(mergeableValues.at(-1)!);
       const splitChar = mergeableValues[0].charAt(refSuffixIndex(mergeableValues[0]));
       mergedRefs.putAll(`${prefix}${splitChar}${firstSuffix}-${lastSuffix}`, mergeableValues);
     }

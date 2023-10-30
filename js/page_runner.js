@@ -189,7 +189,7 @@ export class Runner {
 
   _removeSection(newStart, newEnd) {
     const range = amudMetadata().range();
-    this.updateUrl(this.newUrlRange(range.slice(newStart)[0], range.slice(newEnd)[0]));
+    this.updateUrl(this.newUrlRange(range.at(newStart), range.at(newEnd)));
     this.renderer.forceUpdate();
     refreshPageState();
   }

@@ -557,7 +557,7 @@ function Section({sections, sectionLabel, toggleMerging, isExpanded}) {
     // ref. The last seems more logical, since the ordering of comments from merged sections should
     // be placed after every containing ref. But this isn't absolute and could result in some
     // weirdness.
-    <div id={sectionLabel} className="section-container" sefaria-ref={sections.slice(-1)[0].ref}>
+    <div id={sectionLabel} className="section-container" sefaria-ref={sections.at(-1).ref}>
       {sectionContents}
     </div>
   );
@@ -674,7 +674,7 @@ class Amud extends Component {
             toggleMerging={toggleMerging}
             isExpanded={this.state.expandMergedRef[mergedSections[0].uuid]}
             />);
-        if (i < sections.length - 1 && mergedSections.slice(-1)[0].lastSegmentOfSection) {
+        if (i < sections.length - 1 && mergedSections.at(-1).lastSegmentOfSection) {
           output.push(makeSeparator());
         }
       }

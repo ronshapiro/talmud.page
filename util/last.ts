@@ -1,3 +1,4 @@
 export function getLast<T>(items: T[]): T {
-  return items.slice(-1)[0];
+  if (items.length === 0) throw new Error("empty");
+  return items.at(-1)!;
 }

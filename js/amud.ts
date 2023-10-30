@@ -42,7 +42,7 @@ const _amudMetadata = (book: string, pathname: string): AmudMetadata => {
     return {
       masechet: book,
       amudStart: sections[0],
-      amudEnd: sections.slice(-1)[0],
+      amudEnd: sections.at(-1),
       range: () => sections,
       documentTitleOverride: title,
       databaseTitleOverride: "Siddur",

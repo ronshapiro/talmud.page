@@ -76,7 +76,7 @@ export class RetryMethodFactory {
   retryingMethod(options: RetryingMethodOptions): GeneratedRetryingMethodSignature {
     const doCall: GeneratedRetryingMethodSignature = (...args) => {
       let retryState: RetryState;
-      const lastArg = args.slice(-1)[0];
+      const lastArg = args.at(-1);
       if (args.length > 0 && lastArg instanceof RetryState) {
         retryState = lastArg;
         args = args.slice(0, -1);

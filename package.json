@@ -34,7 +34,7 @@
     "parcel-prod": "ts-node parcel.ts prod",
     "deploy": "npm run parcel-prod && yes | gcloud --configuration talmud-page app deploy",
     "start": "node ./express_main.js",
-    "gcp-build": "tsc --lib es2020,dom express_main.ts",
+    "gcp-build": "tsc --lib es2022,dom express_main.ts",
     "ignore trailing commas": "exit 1"
   },
   "devDependencies": {

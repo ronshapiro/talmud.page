@@ -28,7 +28,7 @@ for (const book of Array.from(new Set(Object.values(books.byCanonicalName)))) {
   const saveSugya = () => {
     if (refsInSugya.length > 0) {
       const start = refsInSugya[0];
-      const end = refsInSugya.slice(-1)[0];
+      const end = refsInSugya.at(-1)!;
       sugyaEndpoints.push({start, end, length: refsInSugya.length});
 
       for (const ref of refsInSugya) {

@@ -3,7 +3,7 @@
 module.exports = {
   env: {
     browser: true,
-    es2020: true,
+    es2021: true,
     jest: true,
   },
   extends: [
@@ -17,7 +17,7 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 11,
+    ecmaVersion: 2022,
     sourceType: "module",
   },
   plugins: [

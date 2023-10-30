@@ -12,6 +12,6 @@ for (const book of Array.from(new Set(Object.values(books.byCanonicalName)))) {
     }
   }
   if (missing.length > 0) {
-    console.log(book.canonicalName + ": " + missing[0] + " - " + missing.slice(-1)[0]);
+    console.log(book.canonicalName + ": " + missing[0] + " - " + missing.at(-1));
   }
 }

@@ -478,7 +478,7 @@ export class DriveClient {
     if (prefixedRef in namedRanges) {
       const existingRanges = [...namedRanges[prefixedRef].namedRanges].flatMap(x => x.ranges);
       existingRanges.sort(rangeSorter);
-      return existingRanges.slice(-1)[0].endIndex;
+      return existingRanges.at(-1).endIndex;
     }
 
     const parentRefs = (
@@ -591,7 +591,7 @@ export class DriveClient {
           firstElement.startIndex += initialLength - firstElement.textRun.content.length;
         }
         if ((index + 1) === contents.content.length) {
-          const lastElement = content.paragraph.elements!.slice(-1)[0] as ParagraphElement;
+          const lastElement = content.paragraph.elements!.at(-1) as ParagraphElement;
           const initialLength = lastElement.textRun.content.length;
           lastElement.textRun.content = lastElement.textRun.content!.trimEnd();
           lastElement.endIndex -= initialLength - lastElement.textRun.content!.length;

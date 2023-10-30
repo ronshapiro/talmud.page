@@ -90,7 +90,7 @@ const main = () => {
   });
 
   const setLastEnd = (event: JQuery.Event, temp: boolean) => {
-    Object.assign(boxes.slice(-1)[0], {
+    Object.assign(boxes.at(-1)!, {
       endX: event.offsetX!,
       endY: event.offsetY!,
       temp,
@@ -98,7 +98,7 @@ const main = () => {
   };
 
   $("#dafCanvas").on("mousemove", (event: JQuery.Event) => {
-    if (boxes.length > 0 && boxes.slice(-1)[0].temp) {
+    if (boxes.length > 0 && boxes.at(-1)!.temp) {
       setLastEnd(event, true);
       redraw();
     }
@@ -119,7 +119,7 @@ const main = () => {
   */
 
   $("#dafCanvas").on("click", (event: JQuery.Event) => {
-    const newBox = boxes.length === 0 || !boxes.slice(-1)[0].temp;
+    const newBox = boxes.length === 0 || !boxes.at(-1)!.temp;
     if (newBox) {
       boxes.push({
         startX: event.offsetX!,

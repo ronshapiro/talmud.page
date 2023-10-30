@@ -46,7 +46,7 @@ export const joinAdjacentElements: ElementsProcessor = (elements) => {
   }
   const joinedElements = elements.slice(0, 1);
   for (const current of elements.slice(1)) {
-    const previous = joinedElements.slice(-1)[0];
+    const previous = joinedElements.at(-1)!;
     if (previous.endIndex === current.startIndex) {
       const joined = {
         startIndex: previous.startIndex,

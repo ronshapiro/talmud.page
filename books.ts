@@ -294,7 +294,7 @@ class LiturgicalBook extends Book {
       aliases,
       sections: Object.keys(sections),
       start: Object.keys(sections)[0],
-      end: Object.keys(sections).slice(-1)[0],
+      end: Object.keys(sections).at(-1)!,
     });
     this._sections = Object.keys(sections);
     this._bookType = bookType;
@@ -322,7 +322,7 @@ class LiturgicalBook extends Book {
 
 function formatListEnglish(items: string[]): string {
   const notLast = items.slice(0, -1).join(", ");
-  return `${notLast} and ${items.slice(-1)}`;
+  return `${notLast} and ${items.at(-1)}`;
 }
 
 const AMUD_ALEPH_OPTIONS = new Set(["a", "."]);

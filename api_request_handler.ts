@@ -1466,7 +1466,7 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
       }
     }
     if (this.page === "Psalm 150") {
-      segments.slice(-2)[0].commentary.removeCommentWithRef("Shulchan Arukh, Orach Chayim 51:7");
+      segments.at(-2)!.commentary.removeCommentWithRef("Shulchan Arukh, Orach Chayim 51:7");
     }
     if (this.page === "Korbanot") {
       for (const segment of segments) {
