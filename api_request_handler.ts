@@ -1149,7 +1149,12 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
     const steinsaltzAmud = amud.endsWith("a") ? 0 : 1;
     const steinsaltzSegments = steinsaltzResult.contents[0].content.filter(
       (s: any) => s.amud === steinsaltzAmud);
-    if (steinsaltzSegments.length !== segments.length) {
+
+    const lengthDifferential = segments.length - steinsaltzSegments.length;
+    const hadranSegment = segments.findIndex(segment => segment.hadran);
+    if (lengthDifferential === 1 && hadranSegment !== -1) {
+      steinsaltzSegments.splice(hadranSegment, 0, {notesHeb: [], notesEng: []});
+    } else if (lengthDifferential !== 0) {
       this.logger.error("Unequal segment length", segments.length, steinsaltzSegments.length);
       return;
     }
