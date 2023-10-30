@@ -6,6 +6,7 @@ export class LiturgyRenderer extends Renderer {
     super(
       getCommentaryTypes("siddur"),
       {
+        disableNavigation: true,
         previous: () => undefined,
         next: () => undefined,
         hasPrevious: () => false,

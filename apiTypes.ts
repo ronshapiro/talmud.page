@@ -44,6 +44,7 @@ export interface ApiComment extends Highlightable {
 
 export interface ApiResponse {
   title: string;
+  titleHebrew: string;
   id: string;
   sections: Section[];
 }

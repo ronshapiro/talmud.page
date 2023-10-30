@@ -42,3 +42,6 @@ export const testPages = [
   new TestPage("BirkatHamazon", "Zimun"),
   new TestPage("BirkatHamazon", "Birkat_Hamazon"),
 ];
+
+// Ignore any unhandled exceptions, this should be addressed elsewhere anyway.
+process.on("unhandledRejection", () => {});

@@ -22,6 +22,10 @@ class HadranRequestHandler extends AbstractApiRequestHandler {
     return "Hadran";
   }
 
+  protected makeTitleHebrew(): string {
+    return "הדרן";
+  }
+
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   protected makeSubRef(mainRef: string, index: number): string {
     return `Hadran ${index + 1}`;

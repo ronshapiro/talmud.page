@@ -264,16 +264,21 @@ h1 {
     font-family: "Taamey David";
     font-size:  4em;
 }
-h2, .title {
+h2, .title, .titleHebrew {
     font-family: "Helvetica Neue";
     font-size: 2.5em;
     font-weight: 200;
+}
+.titleHebrew {
+    font-family: "Taamey David";
+    text-align: right;
+    width: 100%;
 }
 .titleContainer {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 20px 0px;
 }
 .removeSectionButton {
     margin-inline-start: 20px;

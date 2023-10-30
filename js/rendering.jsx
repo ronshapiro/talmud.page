@@ -594,15 +594,23 @@ class Amud extends Component {
       if (firstRemovable) navigationExtension.removeFirst();
       else if (lastRemovable) navigationExtension.removeLast();
     };
+    // TODO: load buttons should also display hebrew text. This may be easier if the API returns
+    // the texts instead of computing them on the client.
+    const isEnglishTitle = this.context.translationOption() === "english-side-by-side";
+    const title = isEnglishTitle ? amudData.title : amudData.titleHebrew;
+    const className = isEnglishTitle ? "title" : "titleHebrew";
+    const removeSectionButton = navigationExtension.disableNavigation ? undefined : (
+      <button
+        className="mdl-button mdl-js-button mdl-button--icon mdl-button remove-section-button"
+        style={removableStyle}
+        onClick={() => onClick()}>
+        <i className="material-icons">do_not_disturb_on</i>
+      </button>
+    );
     return (
       <div className="titleContainer" key="titleContainer">
-        <span className="title" key="title" ref={this.headerRef}>{amudData.title}</span>
-        <button
-          className="mdl-button mdl-js-button mdl-button--icon mdl-button remove-section-button"
-          style={removableStyle}
-          onClick={() => onClick()}>
-          <i className="material-icons">do_not_disturb_on</i>
-        </button>
+        <span className={className} key="title" ref={this.headerRef}>{title}</span>
+        {removeSectionButton}
       </div>);
   }
 

@@ -867,9 +867,53 @@ export const BOLDIFY_REFS = new Set([
   ..._.range(17, 27).map(x => `Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Avinu Malkenu ${x}`),
 ]);
 
+/* eslint-disable quote-props */
+export const HEBREW_SECTION_NAMES: Record<string, string> = {
+  "Morning Blessings": "ברכות השחר",
+  "Akedah": "עקידה",
+  "Sovereignty of Heaven": "עול מלכות שמים",
+  "Korbanot": "קורבנות",
+  "Pesukei Dezimra - Introductory Psalm": "מזמור שיר",
+  "Hodu": "הודו",
+  "Barukh She'amar": "ברוך שאמר",
+  "Mizmor Letoda": "מזמור לתודה",
+  "Yehi Chevod": "יהי כבוד",
+  "Ashrei": "אשרי",
+  "Psalm 146": "תהילים קמו",
+  "Psalm 147": "תהילים קמז",
+  "Psalm 148": "תהילים קמח",
+  "Psalm 149": "תהילים קמט",
+  "Psalm 150": "תהילים קנ",
+  "Psalms - Closing Verses": "סיום תהילים",
+  "Vayevarech David": "ויברך דוד",
+  "Az Yashir": "אז ישיר",
+  "Yishtabach": "ישתבח",
+  "Birchot Kriat Shema": "קריאת שמע",
+  "Amidah - Opening": "עמידה",
+  "Amidah - Kedusha": "קדושה",
+  "Amidah - Middle": "עמידה - אמצא",
+  "Amidah - Closing": "עמידה - סיום",
+  "Tachanun": "תחנון",
+  "Torah": "קריאת התורה",
+  "Ashrei - Conclusion": "אשרי",
+  "Yehalelu": "החזרת ספר התורה",
+  "Conclusion": "סיום התפילה",
+  "Aleinu": "עלינו",
+  "Shir Hama'alot": "שיר המעלות",
+  "Zimun": "זימון",
+  "Birkat Hamazon": "ברכת המזון",
+};
+
+for (const page of [SIDDUR_REFS_ASHKENAZ, SIDDUR_REFS_SEFARD, BIRKAT_HAMAZON_REFS]) {
+  for (const section of Object.keys(page)) {
+    if (!(section in HEBREW_SECTION_NAMES)) {
+      throw new Error(section);
+    }
+  }
+}
+/* eslint-enable quote-props */
+
 // TODO:
-// - Review section labels
-// - Hebrew section labels in UI (and also "invisible" section labels)
 // - Hallel
 // - Musaf on RC and Chol Hamoed
 // - breakup verses in Tachanun

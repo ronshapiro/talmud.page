@@ -10,7 +10,7 @@ import {Book, books, internalLinkableRef} from "./books";
 import {ALL_COMMENTARIES, CommentaryType} from "./commentaries";
 import {readUtf8} from "./files";
 import {hadranSegments, isHadran} from "./hadran";
-import {stripHebrewNonlettersOrVowels} from "./hebrew";
+import {stripHebrewNonlettersOrVowels, intToHebrewNumeral, ALEPH, BET, TAV} from "./hebrew";
 import {Logger, consoleLogger} from "./logger";
 import {mergeRefs} from "./ref_merging";
 import {refSorter} from "./js/google_drive/ref_sorter";
@@ -27,6 +27,7 @@ import {
   DONT_MAKE_INTO_EXPLANATIONS,
   ENGLISH_TEXT_REPLACEMENTS,
   HARDCODED_TEXT,
+  HEBREW_SECTION_NAMES,
   HEBREW_TEXT_REPLACEMENTS,
   KEEP_TROPE_REFS,
   REALLY_BIG_TEXT_REFS,
@@ -465,6 +466,8 @@ export abstract class AbstractApiRequestHandler {
     return `${books.byCanonicalName[this.bookName].canonicalName} ${this.page}`;
   }
 
+  protected abstract makeTitleHebrew(): string;
+
   private replaceLotsOfNonBreakingSpacesWithNewlines(text: string): string {
     return text.replace(LOTS_OF_NON_BREAKING_SPACES, "<br>");
   }
@@ -900,6 +903,7 @@ export abstract class AbstractApiRequestHandler {
     return {
       id: checkNotUndefined(this.makeId(), "makeId"),
       title: checkNotUndefined(this.makeTitle(), "title"),
+      titleHebrew: checkNotUndefined(this.makeTitleHebrew(), "titleHebrew"),
       sections: segments.map(x => x.toJson()).concat(this.extraSegments()),
     };
   }
@@ -926,6 +930,7 @@ export abstract class AbstractApiRequestHandler {
       if (cycleChecker.has(linkRef)) continue;
       const linkResponse = linkGraph.textResponses[linkRef];
       if (!linkResponse || isSefariaError(linkResponse)) continue; // Don't process failed requests
+      if (!linkResponse.he && !linkResponse.text) continue;
       if (linkResponse.he.length === 0 && linkResponse.text.length === 0) continue;
 
       const link = linkGraph.links[ref][linkRef];
@@ -1032,14 +1037,19 @@ enum RemovalStrategy {
   REMOVE_NESTED,
 }
 
-const ALEPH = "א";
-const TAV = "ת";
 const STEINSALTZ_SUGYA_START = new RegExp(`^<big>[${ALEPH}-${TAV}].*`);
 const IGNORE_STEINSALTZ = "<ignore steinsaltz>";
 
 class TalmudApiRequestHandler extends AbstractApiRequestHandler {
   protected makeId(): string {
     return this.page;
+  }
+
+  protected makeTitleHebrew(): string {
+    const {hebrewName} = books.byCanonicalName[this.bookName];
+    const dafNumber = intToHebrewNumeral(parseInt(this.page));
+    const suffix = this.page.endsWith("a") ? ALEPH : BET;
+    return `${hebrewName} ${dafNumber},${suffix}`;
   }
 
   protected extraPromises(): Promise<any>[] {
@@ -1181,6 +1191,12 @@ class TanakhApiRequestHandler extends AbstractApiRequestHandler {
     return this.page;
   }
 
+  protected makeTitleHebrew(): string {
+    const {hebrewName} = books.byCanonicalName[this.bookName];
+    const chapter = intToHebrewNumeral(parseInt(this.page));
+    return `${hebrewName} ${chapter}`;
+  }
+
   protected translateHebrewText(
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     text: sefaria.TextType, ref: string): sefaria.TextType {
@@ -1198,6 +1214,10 @@ class TanakhApiRequestHandler extends AbstractApiRequestHandler {
 class WeekdayTorahPortionHandler extends AbstractApiRequestHandler {
   protected makeId(): string {
     return this.page.replace(/\//g, "_");
+  }
+
+  protected makeTitleHebrew(): string {
+    return "unused";
   }
 
   protected expandRef(ref: string): string[] {
@@ -1278,6 +1298,10 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
 
   protected makeTitle(): string {
     return this.page;
+  }
+
+  protected makeTitleHebrew(): string {
+    return HEBREW_SECTION_NAMES[this.page];
   }
 
   stripWeirdHebrew(hebrew: string): string {

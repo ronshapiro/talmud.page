@@ -23,8 +23,24 @@ const LETTER_NUMERIC_VALUES: Record<string, number> = {
   ת: 400,
 };
 
+const NUMERIC_VALUES_TO_LETTER = Object.entries(LETTER_NUMERIC_VALUES).sort((a, b) => b[1] - a[1]);
+
 export function numericLiteralAsInt(hebrew: string): number {
   return hebrew.split("").map(x => LETTER_NUMERIC_VALUES[x]!).reduce((x, y) => x + y);
+}
+
+export function intToHebrewNumeral(value: number): string {
+  const chars: string[] = [];
+  while (value > 0) {
+    for (const [numeral, numeralValue] of NUMERIC_VALUES_TO_LETTER) {
+      if (value >= numeralValue) {
+        value -= numeralValue;
+        chars.push(numeral);
+        break;
+      }
+    }
+  }
+  return chars.join("");
 }
 
 // https://en.wikipedia.org/wiki/Hebrew_(Unicode_block)
@@ -49,3 +65,8 @@ export function stripHebrewNonlettersOrVowels(text: string): string {
       .replace(/<small><\/small>/g, "") // sometimes the after-effect of replacing a paseq
   );
 }
+
+
+export const ALEPH = "א";
+export const BET = "ב";
+export const TAV = "ת";
