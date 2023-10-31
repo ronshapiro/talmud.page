@@ -57,7 +57,7 @@ export function verseCount(ref: string): number {
   if (Object.keys(VERSE_COUNT_CACHE).length === 0) {
     Object.assign(
       VERSE_COUNT_CACHE,
-      JSON.parse(readUtf8("bibleVersesPerChapter.json")));
+      JSON.parse(readUtf8("precomputed/segmentsPerPage.json")));
   }
   return VERSE_COUNT_CACHE[ref];
 }
