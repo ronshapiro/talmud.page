@@ -15,7 +15,9 @@ import {Logger, consoleLogger} from "./logger";
 import {mergeRefs} from "./ref_merging";
 import {refSorter} from "./js/google_drive/ref_sorter";
 import {ListMultimap} from "./multimap";
-import {getSugyaSpanningRef, shulchanArukhChapterTitle, verseCount} from "./precomputed";
+import {getSugyaSpanningRef, shulchanArukhChapterTitle, segmentCount} from "./precomputed";
+import {expandRef} from "./ref_expander";
+import {splitOnBookName} from "./refs";
 import {RequestMaker} from "./request_makers";
 import {
   equalJaggedArrays,
@@ -168,7 +170,7 @@ class Comment {
       sourceRef,
       sourceHeRef,
       talmudPageLink,
-      link.originalRefBeforeRewriting,
+      link.originalRefsBeforeRewriting,
       link.expandedRefsAfterRewriting,
     );
   }
@@ -181,7 +183,7 @@ class Comment {
     readonly sourceRef: string,
     private sourceHeRef: string,
     private talmudPageLink?: string,
-    private readonly originalRefBeforeRewriting?: string,
+    private readonly originalRefsBeforeRewriting?: string[],
     private readonly expandedRefsAfterRewriting?: string[],
   ) {}
 
@@ -196,8 +198,8 @@ class Comment {
     if (this.talmudPageLink) {
       result.link = this.talmudPageLink;
     }
-    if (this.originalRefBeforeRewriting) {
-      result.originalRefBeforeRewriting = this.originalRefBeforeRewriting;
+    if (this.originalRefsBeforeRewriting) {
+      result.originalRefsBeforeRewriting = this.originalRefsBeforeRewriting;
     }
     if (this.expandedRefsAfterRewriting) {
       result.expandedRefsAfterRewriting = this.expandedRefsAfterRewriting;
@@ -608,9 +610,9 @@ export abstract class AbstractApiRequestHandler {
               addSegmentRange(underlyingRef, _.range(he.length), _.range(1, he.length + 1));
               continue;
             }
-            const lastSpace = underlyingRef.lastIndexOf(" ");
-            const baseRef = underlyingRef.slice(0, lastSpace);
-            const [start, end] = underlyingRef.slice(lastSpace + 1).split("-");
+
+            const [baseRef, refRange] = splitOnBookName(underlyingRef);
+            const [start, end] = refRange.split("-");
 
             const chapterAndVerse = (combined: string): [string, number] => {
               const [chapter, verse] = combined.split(":");
@@ -732,15 +734,14 @@ export abstract class AbstractApiRequestHandler {
     if (!link.ref.includes(":")
       && books.byCanonicalName[link.collectiveTitle?.en ?? ""]?.isBibleBook()) {
       link.expandedRefsAfterRewriting = (
-        _.range(1, verseCount(link.ref)).map(x => `${link.ref}:${x}`));
+        _.range(1, segmentCount(link.ref)!).map(x => `${link.ref}:${x}`));
     }
     if (this.isMesoratHashasTalmudRef(commentaryType, link)) {
-      const result = getSugyaSpanningRef(link.collectiveTitle?.en ?? "", link.ref);
-      if (!result) return;
-      const [newRef, allSugyaRefs] = result as any;
-      link.originalRefBeforeRewriting = link.ref;
+      const newRef = getSugyaSpanningRef(link.collectiveTitle?.en ?? "", link.ref);
+      if (!newRef) return;
+      link.originalRefsBeforeRewriting = expandRef(link.ref);
       link.ref = newRef;
-      link.expandedRefsAfterRewriting = allSugyaRefs;
+      link.expandedRefsAfterRewriting = expandRef(newRef);
     }
   }
 

@@ -38,7 +38,7 @@ export interface ApiComment extends Highlightable {
   sourceHeRef: string;
   link?: string;
   commentary?: CommentaryMap;
-  originalRefBeforeRewriting?: string;
+  originalRefsBeforeRewriting?: string[];
   expandedRefsAfterRewriting?: string[];
 }
 

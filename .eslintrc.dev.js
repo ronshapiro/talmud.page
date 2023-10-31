@@ -6,6 +6,7 @@ for (const key of [
   "comma-spacing",
   "key-spacing",
   "space-infix-ops",
+  "max-len",
   "no-console",
   "semi",
   "semi-spacing",

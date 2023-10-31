@@ -1,4 +1,5 @@
 import {$} from "./jquery";
+import {splitOnBookName} from "../refs";
 
 $.ajax({
   url: "https://sefaria.org/api/calendars",
@@ -7,9 +8,7 @@ $.ajax({
     for (const result of results.calendar_items) {
       if (result.title.en === "Daf Yomi") {
         const ref = result.displayValue.en;
-        const lastSpace = ref.lastIndexOf(" ");
-        const masechet = ref.slice(0, lastSpace);
-        const daf = ref.slice(lastSpace + 1);
+        const [masechet, daf] = splitOnBookName(ref);
         window.location.replace(`${window.location.origin}/${masechet}/${daf}`);
       }
     }

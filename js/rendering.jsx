@@ -79,7 +79,7 @@ class CommentRow extends Component {
     });
   }
 
-  renderTableRow(key, hebrew, english, overrideRef = undefined) {
+  renderTableRow(key, hebrew, english, overrideRef = undefined, extraClasses = []) {
     const {comment, commentaryKind} = this.props;
     const ref = overrideRef || comment.ref;
     const expandableTranslations = (
@@ -94,7 +94,7 @@ class CommentRow extends Component {
         english={_english}
         sefaria-ref={ref}
         link={comment.link}
-        classes={["commentaryRow", /* used in CSS */ commentaryKind.className]}
+        classes={["commentaryRow", /* used in CSS */ commentaryKind.className].concat(extraClasses)}
         expandEnglishByDefault={
           commentaryKind.englishName === "Translation" && this.context.expandEnglishByDefault()
         }
@@ -147,8 +147,10 @@ class CommentRow extends Component {
           comment.expandedRefsAfterRewriting
             ? comment.expandedRefsAfterRewriting[i]
             : "ignore-drive");
-        // TODO: parse the ref and allow it these to be commentable/highlightable
-        output.push(this.renderTableRow(i, hebrew[i], english[i], lineRef));
+        const extraClasses = (
+          comment.originalRefsBeforeRewriting.includes(lineRef)
+            ? ["directlyReferencedLine"] : []);
+        output.push(this.renderTableRow(i, hebrew[i], english[i], lineRef, extraClasses));
       }
     } else {
       output.push(
@@ -595,7 +597,8 @@ class Amud extends Component {
       else if (lastRemovable) navigationExtension.removeLast();
     };
     // TODO: load buttons should also display hebrew text. This may be easier if the API returns
-    // the texts instead of computing them on the client.
+    // the texts instead of computing them on the client. This will also solve the problem of
+    // missing Hebrew title text when loading the next page.
     const isEnglishTitle = this.context.translationOption() === "english-side-by-side";
     const title = isEnglishTitle ? amudData.title : amudData.titleHebrew;
     const className = isEnglishTitle ? "title" : "titleHebrew";

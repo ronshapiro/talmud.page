@@ -16,7 +16,7 @@ declare namespace sefaria {
     anchorRef: string;
     anchorRefExpanded: string[];
     versionTitle: string;
-    originalRefBeforeRewriting?: string;
+    originalRefsBeforeRewriting?: string[];
     expandedRefsAfterRewriting?: string[];
   }
 

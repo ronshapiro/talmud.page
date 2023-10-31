@@ -20,7 +20,7 @@ for (const book of Array.from(new Set(Object.values(books.byCanonicalName)))) {
 
   const sugyaEndpoints: any[] = [];
   const perekEndpoints = [];
-  const refPointers: any = {reverse: {}};
+  const refPointers: any = {};
 
   let perekStart: string | undefined;
   let refsInSugya: string[] = [];
@@ -35,7 +35,6 @@ for (const book of Array.from(new Set(Object.values(books.byCanonicalName)))) {
         const sugyaRef = mergeRefs(book, start, end);
         if (refsInSugya.length > 1) {
           refPointers[ref] = sugyaRef;
-          refPointers.reverse[sugyaRef] = refsInSugya;
         }
       }
     }

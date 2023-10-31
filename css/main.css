@@ -11,6 +11,7 @@
     --background-color: white;
     --highlight-red: rgb(245, 150, 147);
     --highlight-yellow: rgb(250, 217, 120);
+    --highlight-yellow-50: rgb(250, 217, 120, .5);
     --highlight-green: rgb(136, 227, 140);
     --highlight-blue: rgb(141, 188, 252);
     --highlight-gray: rgb(201, 201, 201);
@@ -566,4 +567,7 @@ h2, .title, .titleHebrew {
 /* Important for multi-line preferences text */
 .mdl-radio {
     vertical-align: baseline;
+}
+.directlyReferencedLine {
+    background: var(--highlight-yellow-50);
 }
