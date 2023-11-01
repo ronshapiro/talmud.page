@@ -637,7 +637,7 @@ class Amud extends Component {
 
     // TODO: if not showing, update the UI so it's clear that it's collapsed
     if (this.state.showing) {
-      const ignoredRefs = new Set(this.context.ignoredSectionRefs());
+      const ignoredRefs = new Set(this.context.ignoredSectionRefs(amudData.id));
       const sections = amudData.sections.filter(x => !ignoredRefs.has(x.ref));
       for (let i = 0; i < sections.length; i++) {
         const section = sections[i];
@@ -852,7 +852,7 @@ export class Renderer {
     }
   }
 
-  ignoredSectionRefs() {
+  ignoredSectionRefs(_id) {
     return [];
   }
 
@@ -870,7 +870,7 @@ export class Renderer {
       wrapTranslations: this.wrapTranslations,
       expandEnglishByDefault: this.expandEnglishByDefault,
       hiddenHost,
-      ignoredSectionRefs: () => this.ignoredSectionRefs(),
+      ignoredSectionRefs: (id) => this.ignoredSectionRefs(id),
       expandTranslationOnMergedSectionExpansion: this.expandTranslationOnMergedSectionExpansion,
       compactLayout: () => this.allowCompactLayout && localStorage.layoutOption === "compact",
       highlightedIds: new LocalStorageLru(

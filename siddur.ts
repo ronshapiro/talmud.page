@@ -205,6 +205,22 @@ const YEHALELU: RefPiece[] = [
   "Proverbs 3:18",
 ];
 
+const SHIR_SHEL_YOM: RefPiece[] = [
+  "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Song of the Day 3",
+  new MergeRefsByDefault("Psalms 24:1-10"),
+  "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Song of the Day 6",
+  new MergeRefsByDefault("Psalms 48:1-15"),
+  "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Song of the Day 9",
+  new MergeRefsByDefault("Psalms 82:1-8"),
+  "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Song of the Day 12",
+  new MergeRefsByDefault("Psalms 94:1-23", true),
+  new MergeRefsByDefault("Psalms 95:1-3"),
+  "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Song of the Day 15",
+  new MergeRefsByDefault("Psalms 81:1-17"),
+  "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Song of the Day 18",
+  new MergeRefsByDefault("Psalms 93:1-5"),
+];
+
 // Has a nice intro!
 const ALEINU = "Siddur Sefard, Weekday Shacharit, Aleinu 1-4";
 
@@ -431,7 +447,7 @@ export const SIDDUR_REFS_ASHKENAZ: Record<string, RefPiece[]> = {
     SEGMENT_SEPERATOR_REF,
     "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Alenu",
     SEGMENT_SEPERATOR_REF,
-    "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Song of the Day",
+    ...SHIR_SHEL_YOM,
     SEGMENT_SEPERATOR_REF,
     "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Barchi Nafshi",
     SEGMENT_SEPERATOR_REF,
@@ -568,7 +584,7 @@ export const SIDDUR_REFS_SEFARD: Record<string, RefPiece[]> = {
   "Yehalelu": YEHALELU,
 
   "Conclusion": [
-    "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Song of the Day",
+    ...SHIR_SHEL_YOM,
     "Siddur Sefard, Weekday Shacharit, Song of the Day 25",
     SEGMENT_SEPERATOR_REF,
 

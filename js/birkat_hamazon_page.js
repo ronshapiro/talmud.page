@@ -13,7 +13,7 @@ class BirkatHamazonRenderer extends LiturgyRenderer {
     return keys.map(key => this.allAmudim[key]);
   }
 
-  ignoredSectionRefs() {
+  ignoredSectionRefs(_pageId) {
     const ignored = [];
     const today = getHebrewDate();
 

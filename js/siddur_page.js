@@ -103,14 +103,36 @@ class SiddurRenderer extends LiturgyRenderer {
     }
   }
 
-  ignoredSectionRefs() {
+  ignoredSectionRefs(pageId) {
     const day = new Date().getDay();
     const ignored = [];
     const shirShelYomPrefix = "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Song of the Day ";
-    for (let dayValue = 0; dayValue < 6; dayValue++) {
-      if (day !== dayValue) {
-        const offset = 3 * dayValue;
-        ignored.push(shirShelYomPrefix + (3 + offset), shirShelYomPrefix + (4 + offset));
+    console.log(pageId, day);
+    if (pageId === "Conclusion" || pageId === "Aleinu") {
+      if (day !== 0) {
+        ignored.push(shirShelYomPrefix + 3);
+        ignored.push(...refRanges("Psalms 24:", 1, 10));
+      }
+      if (day !== 1) {
+        ignored.push(shirShelYomPrefix + 6);
+        ignored.push(...refRanges("Psalms 48:", 1, 15));
+      }
+      if (day !== 2) {
+        ignored.push(shirShelYomPrefix + 9);
+        ignored.push(...refRanges("Psalms 82:", 1, 8));
+      }
+      if (day !== 3) {
+        ignored.push(shirShelYomPrefix + 12);
+        ignored.push(...refRanges("Psalms 94:", 1, 23, true));
+        ignored.push(...refRanges("Psalms 95:", 1, 3));
+      }
+      if (day !== 4) {
+        ignored.push(shirShelYomPrefix + 15);
+        ignored.push(...refRanges("Psalms 81:", 1, 17));
+      }
+      if (day !== 5) {
+        ignored.push(shirShelYomPrefix + 18);
+        ignored.push(...refRanges("Psalms 93:", 1, 5));
       }
     }
     if (day !== 1 && day !== 4) {

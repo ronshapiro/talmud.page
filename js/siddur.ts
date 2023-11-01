@@ -54,6 +54,8 @@ export const SIDDUR_SEFARD_SECTIONS = [
   "Amidah - Middle",
   "Amidah - Closing",
   "Tachanun",
+  // If Shir-shel-yom ever gets moved around for chol hamoed/Rosh Chodesh, then we need to add
+  // those keys to siddur_page.js also
   "Torah",
   "Ashrei - Conclusion",
   "Yehalelu",
