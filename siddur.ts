@@ -53,10 +53,6 @@ export const SIDDUR_DEFAULT_MERGE_WITH_NEXT = new Set<string>([
   "Siddur Ashkenaz, Berachot, Birkat HaMazon 38",
   "Siddur Ashkenaz, Berachot, Birkat HaMazon 39",
   "Siddur Ashkenaz, Berachot, Birkat HaMazon 41",
-  "Siddur Sefard, Weekday Shacharit, Amidah 50",
-  "Siddur Sefard, Weekday Shacharit, Amidah 51",
-  "Siddur Sefard, Weekday Shacharit, Amidah 52",
-  "Siddur Sefard, Weekday Shacharit, Amidah 53",
 ]);
 
 export const DONT_MAKE_INTO_EXPLANATIONS = new Set([
@@ -65,6 +61,7 @@ export const DONT_MAKE_INTO_EXPLANATIONS = new Set([
   "Siddur Ashkenaz, Berachot, Birkat HaMazon 57",
   "Siddur Ashkenaz, Berachot, Birkat HaMazon 59",
   "Siddur Ashkenaz, Berachot, Birkat HaMazon 62",
+  "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Healing 3",
 ].concat(Array.from(SIDDUR_DEFAULT_MERGE_WITH_NEXT)));
 
 function akedah(ashkenaz: boolean): RefPiece[] {
@@ -369,8 +366,11 @@ export const SIDDUR_REFS_ASHKENAZ: Record<string, RefPiece[]> = {
       "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Repentance",
       "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Forgiveness",
       "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Redemption 1",
-      "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Healing",
     ]),
+    SEGMENT_SEPERATOR_REF,
+    new MergeWithNext("Siddur Ashkenaz, Weekday, Shacharit, Amidah, Healing 1"),
+    new MergeWithNext("Siddur Ashkenaz, Weekday, Shacharit, Amidah, Healing 3"),
+    "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Healing 4",
     SEGMENT_SEPERATOR_REF,
     ...barechAleinu(true),
     SEGMENT_SEPERATOR_REF,
@@ -500,7 +500,9 @@ export const SIDDUR_REFS_SEFARD: Record<string, RefPiece[]> = {
     SEGMENT_SEPERATOR_REF,
     "Siddur Sefard, Weekday Shacharit, Amidah 47",
     SEGMENT_SEPERATOR_REF,
-    "Siddur Sefard, Weekday Shacharit, Amidah 50-53",
+    new MergeWithNext("Siddur Sefard, Weekday Shacharit, Amidah 50"),
+    new MergeWithNext("Siddur Ashkenaz, Weekday, Shacharit, Amidah, Healing 3"),
+    "Siddur Sefard, Weekday Shacharit, Amidah 53",
     SEGMENT_SEPERATOR_REF,
     ...barechAleinu(false),
     SEGMENT_SEPERATOR_REF,
@@ -667,8 +669,6 @@ export const SIDDUR_MERGE_PAIRS: Record<string, string> = {
     [22, 23], [24, 25], [26, 27], [28, 29], [30, 31], [32, 33]),
 
   ...mergePairs("Siddur Ashkenaz, Weekday, Shacharit, Amidah, Prosperity", [2, 3], [4, 5]),
-
-  ...mergePairs("Siddur Ashkenaz, Weekday, Shacharit, Amidah, Healing", [1, 4]),
 
   ...mergePairs("Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Vidui and 13 Middot", [6, 7]),
 
