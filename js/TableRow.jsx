@@ -234,7 +234,6 @@ function TableRow(props) {
     overrideFullRow,
     link,
     expandEnglishByDefault,
-    indicator,
     onUnexpand,
     sectionIdForHighlighting,
   } = props;
@@ -296,12 +295,6 @@ function TableRow(props) {
   };
 
   const cells = [];
-  if (indicator) {
-    cells.push(
-      <span className="indicator-parent" key="indicator-parent">
-        <span className="indicator">●</span>
-      </span>);
-  }
   if (!isEmptyText(hebrew)) {
     const contents = (
       onUnexpand
@@ -377,7 +370,6 @@ TableRow.propTypes = {
   link: PropTypes.string,
   overrideFullRow: PropTypes.bool,
   expandEnglishByDefault: PropTypes.bool,
-  indicator: PropTypes.bool,
   onUnexpand: PropTypes.func,
   sectionIdForHighlighting: PropTypes.string,
 };

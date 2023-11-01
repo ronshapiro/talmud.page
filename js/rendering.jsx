@@ -527,7 +527,6 @@ function Section({sections, sectionLabel, toggleMerging, isExpanded, lastUnexpan
       english={createText(englishes, "english-ref-text")}
       expandEnglishByDefault={context.expandEnglishByDefault()}
       classes={gemaraContainerClasses}
-      indicator={isExpanded}
       onUnexpand={isExpanded ? () => toggleMerging(sections[0].uuid) : undefined}
       sectionIdForHighlighting={sections[0].ref}
     />,

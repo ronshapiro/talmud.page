@@ -75,17 +75,6 @@ html, body {
     src:url(/font/FiraGO-Light.ttf)
 }
 
-.indicator-parent {
-    /* https://stackoverflow.com/a/10487329 */
-    position: relative;
-}
-.indicator {
-    color: var(--highlight-gray);
-    position: absolute;
-    top: 7px;
-    user-select: none;
-}
-
 .gemara-container .hebrew, #snackbar .hebrew {
     font-size: calc(1.5em * var(--font-size-multiplier));
     line-height: calc(1.5em * var(--font-size-multiplier));
