@@ -147,8 +147,10 @@ class CommentRow extends Component {
           comment.expandedRefsAfterRewriting
             ? comment.expandedRefsAfterRewriting[i]
             : "ignore-drive");
+
         const extraClasses = (
-          comment.originalRefsBeforeRewriting.includes(lineRef)
+          (comment.originalRefsBeforeRewriting
+           && comment.originalRefsBeforeRewriting.includes(lineRef))
             ? ["directlyReferencedLine"] : []);
         output.push(this.renderTableRow(i, hebrew[i], english[i], lineRef, extraClasses));
       }

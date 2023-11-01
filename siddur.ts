@@ -760,6 +760,15 @@ export const SIDDUR_IGNORED_COMMENTARIES: Record<string, string[]> = {
   "Nehemiah 9:6": [
     "Peninei Halakhah, Prayer 14:2:7",
   ],
+  "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Shema 2": [
+    "Deuteronomy 6:5",
+  ],
+  "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Shema 3": [
+    "Deuteronomy 6:4",
+  ],
+  "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Shema 5": [
+    "Numbers 15:35-41",
+  ],
 };
 
 export const UNSMALL_REFS = new Set([
@@ -792,6 +801,12 @@ export const HEBREW_TEXT_REPLACEMENTS: Record<string, [string, string][]> = {
   "Siddur Sefard, Weekday Shacharit, The Shema 16": [
     ["מַהֵר וְהָבֵא", '<span class="tzizit-start">◰</span> מַהֵר וְהָבֵא'],
   ],
+  "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, First Blessing before Shema 5": [
+    [
+      "קָדוֹשׁ קָדוֹשׁ, קָדוֹשׁ יְהֹוָה צְבָאוֹת. מְלֹא כָל־הָאָֽרֶץ כְּבוֹדוֹ:",
+      "קָדוֹשׁ קָדוֹשׁ קָדוֹשׁ יְהֹוָה צְבָאוֹת מְלֹא כָל־הָאָֽרֶץ כְּבוֹדוֹ:",
+    ],
+  ],
   "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Second Blessing before Shema 1": [
     ["וַהֲבִיאֵֽנוּ לְשָׁלוֹם", '<span class="tzizit-start">◰</span> וַהֲבִיאֵֽנוּ לְשָׁלוֹם'],
   ],
@@ -807,7 +822,10 @@ export const HEBREW_TEXT_REPLACEMENTS: Record<string, [string, string][]> = {
     ["אַשְׁרֵֽינוּ כְּשֶׁאָֽנוּ מַשְׁכִּימִים", "אַשְׁרֵֽינוּ שֶׁאָֽנוּ מַשְׁכִּימִים"],
   ],
   "Siddur Sefard, Weekday Shacharit, Amidah 60": [
-    ["וְשַׂבְּעֵֽנוּ מִטּוּבֶֽךָ", "וְשַׂבְּעֵֽנוּ מִטּוּבָהּ"],
+    [
+      "וְשַׂבְּעֵֽנוּ מִטּוּבֶֽךָ",
+      "וְשַׂבְּעֵֽנוּ מִטּוּבָהּ וּבָרֵךְ שְׁנָתֵנוּ כַּשָּׁנִים הַטּוֹבוֹת לִבְרָכָה",
+    ],
   ],
   "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Vidui and 13 Middot 8": [
     [
@@ -835,6 +853,12 @@ export const HEBREW_TEXT_REPLACEMENTS: Record<string, [string, string][]> = {
   "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Avinu Malkenu 20": [
     ZIKARON_TOV_TO_ZICHRON_TOV,
   ],
+  "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Uva Letzion 3": [
+    ["<b>וְאַתָּה קָדוֹשׁ</b>", "וְאַתָּה קָדוֹשׁ"],
+    [": <b>", ": </br><b>"],
+  ],
+  "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Uva Letzion 5": [
+    [": <b>", ": </br><b>"]],
 };
 
 export const ENGLISH_TEXT_REPLACEMENTS: Record<string, [string, string][]> = {
@@ -860,6 +884,10 @@ export const SMALLIFY_REFS = new Set([
   "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Uva Letzion 4",
   "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Uva Letzion 6",
   "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Uva Letzion 8",
+]);
+
+export const BIGIFY_REFS = new Set([
+  "Psalms 145:16",
 ]);
 
 export const BOLDIFY_REFS = new Set([
@@ -912,6 +940,11 @@ for (const page of [SIDDUR_REFS_ASHKENAZ, SIDDUR_REFS_SEFARD, BIRKAT_HAMAZON_REF
   }
 }
 /* eslint-enable quote-props */
+
+export const SIDDUR_START_OF_SUGYA_REFS = new Set([
+  "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, First Blessing before Shema 2",
+  "Siddur Sefard, Weekday Shacharit, The Shema 8",
+]);
 
 // TODO:
 // - Hallel

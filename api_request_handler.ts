@@ -25,6 +25,7 @@ import {
   sefariaTextTypeTransformation,
 } from "./sefariaTextType";
 import {
+  BIGIFY_REFS,
   BOLDIFY_REFS,
   DONT_MAKE_INTO_EXPLANATIONS,
   ENGLISH_TEXT_REPLACEMENTS,
@@ -43,6 +44,7 @@ import {
   SIDDUR_MERGE_PAIRS,
   SIDDUR_REFS_ASHKENAZ,
   SIDDUR_REFS_SEFARD,
+  SIDDUR_START_OF_SUGYA_REFS,
   SMALLIFY_REFS,
   SYNTHETIC_REFS,
   UNSMALL_REFS,
@@ -1342,9 +1344,13 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
   }
 
   protected postProcessSegment(segment: InternalSegment): InternalSegment {
+    if (BIGIFY_REFS.has(segment.ref)) {
+      segment.hebrew = `<big>${segment.hebrew}</big>`;
+    }
     if (BOLDIFY_REFS.has(segment.ref)) {
       segment.hebrew = `<b>${segment.hebrew}</b>`;
-    } else if (segment.ref === "Siddur Sefard, Weekday Shacharit, Amidah 60") {
+    }
+    if (segment.ref === "Siddur Sefard, Weekday Shacharit, Amidah 60") {
       // TODO: check is this fix has been applied
       segment.hebrew = (segment.hebrew as string).replace("הַשָׁנִים בָּרוּךְ", "הַשָׁנִים. בָּרוּךְ");
     } else if (segment.ref === "Siddur Sefard, Weekday Shacharit, The Shema 16") {
@@ -1416,6 +1422,10 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
         && !comment.sourceRef.startsWith("Peninei Halakhah, Prayer")) {
         segment.commentary.removeComment(comment);
       }
+    }
+
+    if (SIDDUR_START_OF_SUGYA_REFS.has(segment.ref)) {
+      segment.steinsaltz_start_of_sugya = true;
     }
 
     return segment;
