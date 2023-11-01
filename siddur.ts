@@ -132,9 +132,10 @@ function birchotKriatShema(ashkenaz: boolean): RefPiece[] {
     SEGMENT_SEPERATOR_REF,
     new MergeRefsByDefault("Deuteronomy 11:13-21"),
     SEGMENT_SEPERATOR_REF,
-    new MergeRefsByDefault("Numbers 15:37-41"),
+    ..._.range(37, 42).map(x => new MergeWithNext(`Numbers 15:${x}`)),
+    "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Shema 9-10",
     SEGMENT_SEPERATOR_REF,
-    "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Shema 9-12",
+    "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Shema 11-12",
     "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Blessing after Shema 1-2",
     ashkenaz
       ? "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Blessing after Shema 3-5"
@@ -795,6 +796,11 @@ export const HARDCODED_TEXT: Record<string, string> = {
 };
 
 const ZIKARON_TOV_TO_ZICHRON_TOV: [string, string] = ["זִכָּרוֹן טוֹב", "זִכְרוֹן טוֹב"];
+const RISE_INDICATOR_TRIANGLE = "&#9653;";
+
+function boldifyReplacement(text: string): [string, string] {
+  return [text, `<b>${text}</b>`];
+}
 
 export const HEBREW_TEXT_REPLACEMENTS: Record<string, [string, string][]> = {
   "Siddur Sefard, Weekday Shacharit, Amidah 103": [["וְיִתְרוֹמַם", "וְיִתְרוֹמֵם"]],
@@ -850,6 +856,9 @@ export const HEBREW_TEXT_REPLACEMENTS: Record<string, [string, string][]> = {
   "Siddur Ashkenaz, Weekday, Shacharit, Preparatory Prayers, Akedah 1": [
     ZIKARON_TOV_TO_ZICHRON_TOV,
   ],
+  "Siddur Sefard, Weekday Shacharit, For Monday & Thursday 25": [
+    ["מַה נַּעֲשֶׂה", `${RISE_INDICATOR_TRIANGLE}מַה נַּעֲשֶׂה`],
+  ],
   "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Avinu Malkenu 20": [
     ZIKARON_TOV_TO_ZICHRON_TOV,
   ],
@@ -859,6 +868,13 @@ export const HEBREW_TEXT_REPLACEMENTS: Record<string, [string, string][]> = {
   ],
   "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Uva Letzion 5": [
     [": <b>", ": </br><b>"]],
+  "Siddur Sefard, Weekday Shacharit, Aleinu 2": [
+    boldifyReplacement("עָלֵֽינוּ לְשַׁבֵּֽחַ"),
+    boldifyReplacement("וַאֲנַֽחְנוּ כּוֹרְעִים וּמִשְׁתַּחֲוִים וּמוֹדִים לִפְנֵי מֶֽלֶךְ מַלְכֵי הַמְּלָכִים הַקָּדוֹשׁ בָּרוּךְ הוּא"),
+  ],
+  "Siddur Sefard, Weekday Shacharit, Aleinu 3": [
+    boldifyReplacement("(וְ)עַל כֵּן"),
+  ],
 };
 
 export const ENGLISH_TEXT_REPLACEMENTS: Record<string, [string, string][]> = {
@@ -891,6 +907,8 @@ export const BIGIFY_REFS = new Set([
 ]);
 
 export const BOLDIFY_REFS = new Set([
+  "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Barchu 5",
+  "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Shema 10",
   "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Vidui and 13 Middot 8",
   ..._.range(17, 27).map(x => `Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Avinu Malkenu ${x}`),
 ]);

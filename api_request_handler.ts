@@ -1358,12 +1358,6 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
       const pieces = start.split(" ");
       const replacement = [pieces[0], "נָא", pieces[1]].join(" ");
       segment.hebrew = (segment.hebrew as string).replace(start, replacement);
-    } else if (segment.ref === "Siddur Sefard, Weekday Shacharit, Aleinu 2") {
-      // eslint-disable-next-line @typescript-eslint/no-use-before-define
-      segment.hebrew = boldPrefix(segment.hebrew as string, "עָלֵֽינוּ לְשַׁבֵּֽחַ");
-    } else if (segment.ref === "Siddur Sefard, Weekday Shacharit, Aleinu 3") {
-      // eslint-disable-next-line @typescript-eslint/no-use-before-define
-      segment.hebrew = boldPrefix(segment.hebrew as string, "עַל כֵּן");
     }
 
     if (SMALLIFY_REFS.has(segment.ref)) {
@@ -1638,11 +1632,6 @@ function splitSegmentAfter(
   const hebrewBreaks = splitAfter(hebrew, hebrewSplit);
   const englishBreaks = splitAfter(english, englishSplit);
   return _.zip(hebrewBreaks, englishBreaks) as SplitType;
-}
-
-function boldPrefix(text: string, endText: string): string {
-  const [prefix, rest] = splitAfter(text, endText);
-  return `<b>${prefix}</b>${rest}`;
 }
 
 function splitRetain(text: string, splitter: RegExp): string[] {
