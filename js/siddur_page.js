@@ -175,15 +175,16 @@ class SiddurRenderer extends LiturgyRenderer {
 
     // Always prefer Aseret Yimei Teshuva, because if it's Tzom Gedalia, Aseret Yimei Teshuva
     // version is still said
+    const AVINU_MALKENU_PREFIX = "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Avinu Malkenu ";
     if (hebrewDay.isAseresYemeiTeshuva()) {
-      ignored.push(...refRanges(
-        "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Avinu Malkenu ", 28, 33));
+      ignored.push(...refRanges(AVINU_MALKENU_PREFIX, 28, 33));
+      ignored.push(AVINU_MALKENU_PREFIX + 6);
     } else if (hebrewDay.isTaanis() || IS_NATIONAL_TRAGEDY) {
-      ignored.push(...refRanges(
-        "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Avinu Malkenu ", 22, 27));
+      ignored.push(...refRanges(AVINU_MALKENU_PREFIX, 22, 27));
+      ignored.push(AVINU_MALKENU_PREFIX + 5);
     } else {
       ignored.push(...refRanges(
-        "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Avinu Malkenu ", 1, 53));
+        AVINU_MALKENU_PREFIX, 1, 53));
     }
 
 

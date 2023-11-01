@@ -44,7 +44,6 @@ import {
   SIDDUR_MERGE_PAIRS,
   SIDDUR_REFS_ASHKENAZ,
   SIDDUR_REFS_SEFARD,
-  SIDDUR_START_OF_SUGYA_REFS,
   SMALLIFY_REFS,
   SYNTHETIC_REFS,
   UNSMALL_REFS,
@@ -1416,10 +1415,6 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
         && !comment.sourceRef.startsWith("Peninei Halakhah, Prayer")) {
         segment.commentary.removeComment(comment);
       }
-    }
-
-    if (SIDDUR_START_OF_SUGYA_REFS.has(segment.ref)) {
-      segment.steinsaltz_start_of_sugya = true;
     }
 
     return segment;

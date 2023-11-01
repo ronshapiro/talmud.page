@@ -108,6 +108,7 @@ function birchotKriatShema(ashkenaz: boolean): RefPiece[] {
     "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Barchu",
     SEGMENT_SEPERATOR_REF,
     "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, First Blessing before Shema 1",
+    SEGMENT_SEPERATOR_REF,
     ashkenaz
       ? "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, First Blessing before Shema 2-4"
       : "Siddur Sefard, Weekday Shacharit, The Shema 8-10",
@@ -270,7 +271,7 @@ export const SIDDUR_REFS_ASHKENAZ: Record<string, RefPiece[]> = {
   "Yehi Chevod": [
     "Siddur Ashkenaz, Weekday, Shacharit, Pesukei Dezimra, Yehi Chevod 1",
     new MergeWithNext("Psalms 104:31"),
-    new MergeRefsByDefault("Psalms 113:2-4"),
+    new MergeRefsByDefault("Psalms 113:2-4", true),
     new MergeWithNext("Psalms 135:13"),
     new MergeWithNext("Psalms 103:19"),
     new MergeWithNext("I Chronicles 16:31"),
@@ -416,7 +417,13 @@ export const SIDDUR_REFS_ASHKENAZ: Record<string, RefPiece[]> = {
     SEGMENT_SEPERATOR_REF,
     new MergeRefsByDefault("Psalms 20:1-10"),
     SEGMENT_SEPERATOR_REF,
-    "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Uva Letzion",
+    "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Uva Letzion 1-4",
+    SEGMENT_SEPERATOR_REF,
+    "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Uva Letzion 5-6",
+    SEGMENT_SEPERATOR_REF,
+    "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Uva Letzion 7-8",
+    SEGMENT_SEPERATOR_REF,
+    "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Uva Letzion 9-11",
   ]),
 
   "Aleinu": [
@@ -537,7 +544,9 @@ export const SIDDUR_REFS_SEFARD: Record<string, RefPiece[]> = {
   "Tachanun": [
     "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Vidui and 13 Middot",
     SEGMENT_SEPERATOR_REF,
-    "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Tachanun, Nefilat Apayim",
+    "II Samuel 24:14",
+    "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Tachanun, Nefilat Apayim 2",
+    new MergeRefsByDefault("Psalms 6:2-11"),
     SEGMENT_SEPERATOR_REF,
     "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Avinu Malkenu",
     SEGMENT_SEPERATOR_REF,
@@ -547,7 +556,9 @@ export const SIDDUR_REFS_SEFARD: Record<string, RefPiece[]> = {
     "Siddur Sefard, Weekday Shacharit, For Monday & Thursday 3-9",
     "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Tachanun, God of Israel",
     SEGMENT_SEPERATOR_REF,
-    "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Tachanun, Shomer Yisrael 1-4",
+    "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Tachanun, Shomer Yisrael 1-3",
+    SEGMENT_SEPERATOR_REF,
+    "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Tachanun, Shomer Yisrael 4",
     SEGMENT_SEPERATOR_REF,
     "Siddur Sefard, Weekday Shacharit, For Monday & Thursday 25",
   ],
@@ -779,6 +790,7 @@ export const UNSMALL_REFS = new Set([
 ]);
 
 export const REALLY_BIG_TEXT_REFS = new Set([
+  "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Barchu 3",
   "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Shema 3",
   "Siddur Ashkenaz, Weekday, Shacharit, Preparatory Prayers, Sovereignty of Heaven 5",
 ]);
@@ -796,14 +808,24 @@ export const HARDCODED_TEXT: Record<string, string> = {
 };
 
 const ZIKARON_TOV_TO_ZICHRON_TOV: [string, string] = ["זִכָּרוֹן טוֹב", "זִכְרוֹן טוֹב"];
-const RISE_INDICATOR_TRIANGLE = "&#9653;";
+const RISE_INDICATOR_TRIANGLE = '<span style="user-select:none">&#9653;</span>';
 
 function boldifyReplacement(text: string): [string, string] {
   return [text, `<b>${text}</b>`];
 }
 
-export const HEBREW_TEXT_REPLACEMENTS: Record<string, [string, string][]> = {
+const YAALE_VYAVO_HAYIM_TOVIM: [string, string] = [
+  "וְהוֹשִׁיעֵֽנוּ בוֹ לְחַיִּים",
+  "וְהוֹשִׁיעֵֽנוּ בוֹ לְחַיִּים (טוֹבִים)",
+];
+
+const REMOVE_SMALL_PREFIX_TEXT: [RegExp, string] = [/.*<\/small>(.*)/, "$1"];
+
+export const HEBREW_TEXT_REPLACEMENTS: Record<string, [string | RegExp, string][]> = {
   "Siddur Sefard, Weekday Shacharit, Amidah 103": [["וְיִתְרוֹמַם", "וְיִתְרוֹמֵם"]],
+  "Siddur Sefard, Weekday Shacharit, The Shema 8": [
+    ["תִּתְבָּרֵךְ", "תִּתְבָּרַךְ"],
+  ],
   "Siddur Sefard, Weekday Shacharit, The Shema 16": [
     ["מַהֵר וְהָבֵא", '<span class="tzizit-start">◰</span> מַהֵר וְהָבֵא'],
   ],
@@ -842,8 +864,19 @@ export const HEBREW_TEXT_REPLACEMENTS: Record<string, [string, string][]> = {
   "Siddur Sefard, Weekday Shacharit, Amidah 41": [
     ["בִּינָה: חָנֵּֽנוּ", "בִּינָה, חָנֵּֽנוּ"],
   ],
+  "Siddur Sefard, Weekday Shacharit, Amidah 83": [
+    [
+      "וְאִשֵּׁי יִשְׂרָאֵל, וּתְפִלָּתָם",
+      "וְאִשֵּׁי יִשְׂרָאֵל וּתְפִלָּתָם, מְהֵרָה",
+    ],
+  ],
+  "Siddur Ashkenaz, Weekday, Shacharit, Amidah, Temple Service 3": [YAALE_VYAVO_HAYIM_TOVIM],
+  "Siddur Ashkenaz, Berachot, Birkat HaMazon 45": [YAALE_VYAVO_HAYIM_TOVIM],
   "Siddur Sefard, Weekday Shacharit, The Shema 10": [
     ["וְאוֹמְרִים בְּיִרְאָה", "וְאוֹמְרִים בְּיִרְאָה:"],
+  ],
+  "Siddur Sefard, Weekday Shacharit, The Shema 14": [
+    [" (וְהִתְקִין מְאוֹרוֹת מְשַׂמֵּֽחַ עוֹלָמוֹ אֲשֶׁר בָּרָא.)", ""],
   ],
   "Siddur Sefard, Weekday Shacharit, Yishtabach 2": [
     ["(לְעוֹלָם וָעֶד) ", ""],
@@ -875,6 +908,14 @@ export const HEBREW_TEXT_REPLACEMENTS: Record<string, [string, string][]> = {
   "Siddur Sefard, Weekday Shacharit, Aleinu 3": [
     boldifyReplacement("(וְ)עַל כֵּן"),
   ],
+  "Psalms 145:1": [
+    ["תְּהִלָּה לְדָוִד", "תְּהִלָּה לְדָוִד<br>"],
+  ],
+  "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Tachanun, Nefilat Apayim 2": [
+    [/(.*וְקַבֵּל תַּחֲנוּנָי:).*/, "$1"],
+  ],
+  "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Avinu Malkenu 5": [REMOVE_SMALL_PREFIX_TEXT],
+  "Siddur Ashkenaz, Weekday, Shacharit, Post Amidah, Avinu Malkenu 6": [REMOVE_SMALL_PREFIX_TEXT],
 };
 
 export const ENGLISH_TEXT_REPLACEMENTS: Record<string, [string, string][]> = {
@@ -958,11 +999,6 @@ for (const page of [SIDDUR_REFS_ASHKENAZ, SIDDUR_REFS_SEFARD, BIRKAT_HAMAZON_REF
   }
 }
 /* eslint-enable quote-props */
-
-export const SIDDUR_START_OF_SUGYA_REFS = new Set([
-  "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, First Blessing before Shema 2",
-  "Siddur Sefard, Weekday Shacharit, The Shema 8",
-]);
 
 // TODO:
 // - Hallel
