@@ -78,7 +78,8 @@ class SiddurRenderer extends LiturgyRenderer {
         torahSection.sections = newSections;
         this.injectedTorahPortions = undefined;
       }
-    } else {
+    }
+    if (!this.hasTorahPortions) {
       keys = _.without(keys, "Torah", "Yehalelu");
     }
 
@@ -97,6 +98,7 @@ class SiddurRenderer extends LiturgyRenderer {
   injectTorahPortion(portionRespones) {
     if (portionRespones.length > 0) {
       this.injectedTorahPortions = portionRespones;
+      this.hasTorahPortions = true;
       this.forceUpdate();
     }
   }
