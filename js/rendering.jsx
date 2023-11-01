@@ -427,7 +427,7 @@ class CommentarySection extends Component {
   }
 }
 
-function Section({sections, sectionLabel, toggleMerging, isExpanded}) {
+function Section({sections, sectionLabel, toggleMerging, isExpanded, lastUnexpandedUuid}) {
   const context = useConfiguration();
   const hiddenHost = useHiddenHost();
   // if this is the hidden host, populate the comments as open always
@@ -501,6 +501,7 @@ function Section({sections, sectionLabel, toggleMerging, isExpanded}) {
     for (let i = 0; i < texts.length; i++) {
       const {ref, uuid} = sections[i];
       const onDoubleClick = texts.length !== 1 ? () => toggleMerging(uuid) : undefined;
+      const classes = lastUnexpandedUuid === uuid ? ["fadeInBackground"] : [];
       elements.push(
         // TODO: consider another gesture so that the double clicking is not overloaded.
         <CellText
@@ -508,6 +509,7 @@ function Section({sections, sectionLabel, toggleMerging, isExpanded}) {
           languageClass={languageClass}
           key={`section-part-${i}`}
           onDoubleClick={onDoubleClick}
+          classes={classes}
           sefariaRef={ref} />);
       if (i + 1 < texts.length) {
         elements.push(<span key={`section-part-${i}-space`}> </span>);
@@ -572,6 +574,7 @@ Section.propTypes = {
   sectionLabel: PropTypes.string,
   toggleMerging: PropTypes.func,
   isExpanded: PropTypes.bool,
+  lastUnexpandedUuid: PropTypes.string,
 };
 
 class Amud extends Component {
@@ -666,8 +669,12 @@ class Amud extends Component {
             const newState = {
               ...previousState,
               expandMergedRef: {...previousState.expandMergedRef},
+              lastUnexpandedUuid: undefined,
             };
             newState.expandMergedRef[uuid] = !newState.expandMergedRef[uuid];
+            if (!newState.expandMergedRef[uuid]) {
+              newState.lastUnexpandedUuid = uuid;
+            }
             return newState;
           });
         };
@@ -678,6 +685,7 @@ class Amud extends Component {
             sectionLabel={sectionLabel}
             toggleMerging={toggleMerging}
             isExpanded={this.state.expandMergedRef[mergedSections[0].uuid]}
+            lastUnexpandedUuid={this.state.lastUnexpandedUuid}
             />);
         if (i < sections.length - 1 && mergedSections.at(-1).lastSegmentOfSection) {
           output.push(makeSeparator());
