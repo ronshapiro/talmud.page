@@ -10,7 +10,14 @@ import {Book, books, internalLinkableRef} from "./books";
 import {ALL_COMMENTARIES, CommentaryType} from "./commentaries";
 import {readUtf8} from "./files";
 import {hadranSegments, isHadran} from "./hadran";
-import {stripHebrewNonlettersOrVowels, intToHebrewNumeral, ALEPH, BET, TAV} from "./hebrew";
+import {
+  stripHebrewNonletters,
+  stripHebrewNonlettersOrVowels,
+  intToHebrewNumeral,
+  ALEPH,
+  BET,
+  TAV,
+} from "./hebrew";
 import {Logger, consoleLogger} from "./logger";
 import {mergeRefs} from "./ref_merging";
 import {refSorter} from "./js/google_drive/ref_sorter";
@@ -1138,7 +1145,7 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
     }
     if (steinsaltzResult !== IGNORE_STEINSALTZ) {
       try {
-        this.addSteinsaltzData(steinsaltzResult, this.page, segments);
+        this.addSteinsaltzData(steinsaltzResult, segments);
       } catch (e) {
         this.logger.error(e);
       }
@@ -1147,10 +1154,11 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
     return segments;
   }
 
-  private addSteinsaltzData(steinsaltzResult: any, amud: string, segments: InternalSegment[]) {
-    const steinsaltzAmud = amud.endsWith("a") ? 0 : 1;
+  private addSteinsaltzData(steinsaltzResult: any, segments: InternalSegment[]) {
+    const steinsaltzAmud = this.page.endsWith("a") ? 0 : 1;
     const steinsaltzSegments = steinsaltzResult.contents[0].content.filter(
       (s: any) => s.amud === steinsaltzAmud);
+
 
     const lengthDifferential = segments.length - steinsaltzSegments.length;
     const hadranSegment = segments.findIndex(segment => segment.hadran);
@@ -1162,7 +1170,30 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
     }
 
     for (const [segment, steinsaltz] of _.zip(segments, steinsaltzSegments)) {
+      if (this.page === "45a") {
+        this.logger.error(_.zip(steinsaltz.notesEng, steinsaltz.notesHeb));
+        this.logger.error("--------------------");
+      }
+
+
+      let j = 0;
+      for (const eng of steinsaltz.notesEng) {
+        const hebTitle = stripHebrewNonletters(eng.titleHeb);
+        const hebIndex = steinsaltz.notesHeb.findIndex((heb: any) => heb.title === hebTitle);
+        if (j !== hebIndex && hebIndex !== -1) {
+          /// this.logger.error(j, eng, hebIndex, steinsaltz.notesHeb[hebIndex]);
+        }
+        j += 1;
+      }
+
       let i = 0;
+      /*
+      if (steinsaltz.notesHeb.length === 1 && steinsaltz.notesEng.length === 1) {
+        this.logger.error("---------------------------------")
+        this.logger.error(steinsaltz.notesHeb[0], "<><><><>", steinsaltz.notesEng[0]);
+        this.logger.error("=================================")
+      }
+      */
       for (const [hebrew, english] of _.zip(steinsaltz.notesHeb, steinsaltz.notesEng)) {
         i += 1;
         segment.commentary.addComment(new Comment(
