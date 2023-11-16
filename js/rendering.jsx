@@ -493,6 +493,7 @@ function Section({sections, sectionLabel, toggleMerging, isExpanded, lastUnexpan
     }
   }
 
+  const isStandaloneSegment = sections.length === 1;
   const createText = (texts, languageClass) => {
     if (texts.length === 0) {
       return "";
@@ -510,7 +511,8 @@ function Section({sections, sectionLabel, toggleMerging, isExpanded, lastUnexpan
           key={`section-part-${i}`}
           onDoubleClick={onDoubleClick}
           classes={classes}
-          sefariaRef={ref} />);
+          sefariaRef={ref}
+          sectionIdForHighlighting={isStandaloneSegment ? undefined : ref} />);
       if (i + 1 < texts.length) {
         elements.push(<span key={`section-part-${i}-space`}> </span>);
       }
@@ -528,7 +530,7 @@ function Section({sections, sectionLabel, toggleMerging, isExpanded, lastUnexpan
       expandEnglishByDefault={context.expandEnglishByDefault()}
       classes={gemaraContainerClasses}
       onUnexpand={isExpanded ? () => toggleMerging(sections[0].uuid) : undefined}
-      sectionIdForHighlighting={sections[0].ref}
+      sectionIdForHighlighting={isStandaloneSegment ? sections[0].ref : undefined}
     />,
   );
 
@@ -879,6 +881,13 @@ export class Renderer {
         // gets booted from the cache, it won't be actually removed here, but if there is a full
         // re-render or refresh, the state could change. That seems probably safe.
         100),
+      toggleHighlightedId: (newState, sectionId) => {
+        if (newState) {
+          context.highlightedIds.add(sectionId);
+        } else {
+          context.highlightedIds.remove(sectionId);
+        }
+      },
     };
 
     const hiddenData = [{

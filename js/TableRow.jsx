@@ -34,7 +34,15 @@ const brTags = (count) => {
  * This element defines the basic attributes of what is inserted in cell text. Specifically, it
  * translates html text into React nodes and applies an optional double-click listener.
  */
-export function CellText({text, onDoubleClick, sefariaRef, languageClass, classes}) {
+export function CellText({
+  text,
+  onDoubleClick,
+  sefariaRef,
+  languageClass,
+  classes,
+  sectionIdForHighlighting,
+}) {
+  const context = useConfiguration();
   const ref = useRef();
   useEffect(() => {
     $(ref.current).betterDoubleClick(onDoubleClick);
@@ -42,7 +50,7 @@ export function CellText({text, onDoubleClick, sefariaRef, languageClass, classe
   classes = classes || [];
 
   /* eslint-disable react/no-danger */
-  return (
+  const cellText = (
     // These elements are split for a technicality in ref_selection_snackbar for how texts are look
     // up. That's a hack anyway and rely's on the DOM, but refactoring it requires a good deal of
     // work. Splitting the elements was the easiest patch on top of that hack.
@@ -50,7 +58,16 @@ export function CellText({text, onDoubleClick, sefariaRef, languageClass, classe
       <span dangerouslySetInnerHTML={{__html: text}} ref={ref} className={languageClass} />
     </span>
   );
-  /* eslint-enable react/no-danger */
+
+  return (
+    <SwipeableBackground
+      inline
+      initiallyOn={context.highlightedIds.has(sectionIdForHighlighting)}
+      onChange={(newState) => context.toggleHighlightedId(newState, sectionIdForHighlighting)}
+    >
+      {cellText}
+    </SwipeableBackground>
+  );
 }
 
 CellText.propTypes = {
@@ -59,6 +76,7 @@ CellText.propTypes = {
   sefariaRef: PropTypes.string,
   languageClass: PropTypes.string,
   classes: PropTypes.arrayOf(PropTypes.string),
+  sectionIdForHighlighting: PropTypes.string,
 };
 
 function CloseButton({onClose}) {
@@ -346,13 +364,7 @@ function TableRow(props) {
     return (
       <SwipeableBackground
         initiallyOn={context.highlightedIds.has(sectionIdForHighlighting)}
-        onChange={(newState) => {
-          if (newState) {
-            context.highlightedIds.add(sectionIdForHighlighting);
-          } else {
-            context.highlightedIds.remove(sectionIdForHighlighting);
-          }
-        }}
+        onChange={(newState) => context.toggleHighlightedId(newState, sectionIdForHighlighting)}
       >
         {row}
       </SwipeableBackground>

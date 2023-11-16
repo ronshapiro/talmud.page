@@ -11,6 +11,7 @@ interface SwipeableBackgroundParams {
   initiallyOn: boolean;
   onChange: (x: boolean) => void;
   children: any;
+  inline: boolean;
 }
 
 const MAX_OPACITY = .4;
@@ -20,6 +21,7 @@ export function SwipeableBackground({
   initiallyOn,
   onChange,
   children,
+  inline,
 }: SwipeableBackgroundParams): React.ReactElement {
   const color = (ratio: number) => {
     return {backgroundColor: `rgba(87, 175, 235, ${ratio})`};
@@ -54,15 +56,18 @@ export function SwipeableBackground({
     // accordingly... though not sure it's worth the complexity.
     pointer: {touch: true},
   });
+
+  const ElementType = inline ? animated.span : animated.div;
   return (
     // eslint-disable-next-line react/jsx-props-no-spreading
-    <animated.div {...bind()} style={styles}>
+    <ElementType {...bind()} style={styles}>
       {children}
-    </animated.div>
+    </ElementType>
   );
 }
 SwipeableBackground.propTypes = {
   children: PropTypes.object.isRequired,
   initiallyOn: PropTypes.bool.isRequired,
   onChange: PropTypes.func.isRequired,
+  inline: PropTypes.bool,
 };
