@@ -563,7 +563,7 @@ h2, .title, .titleHebrew {
 
 @keyframes fadeInBackground {
   0%   {background: var(--highlight-yellow-50);}
-  100% {background: var(--background-color);}
+  100% {background: none;}
 }
 
 .fadeInBackground {
