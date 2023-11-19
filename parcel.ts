@@ -47,6 +47,7 @@ const bundler = new Bundler(entryFiles, {
   contentHash: isProd,
   // TODO: examine how to re-enable this safely.
   scopeHoist: false,
+  throwErrors: false,
 });
 
 bundler.on("bundled", () => {
