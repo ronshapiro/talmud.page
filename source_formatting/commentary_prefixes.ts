@@ -3,7 +3,9 @@ import {Attributes, HtmlVisitor} from "./html_visitor";
 const _PREFIXES_TO_STRIP = [
   "גמ'",
   "מתני'",
-].map(x => `${x} `);
+].flatMap(
+  x => [x, x.replace("'", "׳")],
+).map(x => `${x} `);
 
 export class CommentaryPrefixStripper extends HtmlVisitor {
   hasProcessedText = false

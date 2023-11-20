@@ -83,7 +83,10 @@ export class RecordingRequestMaker extends FileRequestMaker {
 
   makeSteinsaltzRequest(masechet: string, daf: string): Promise<any> {
     const promise = this.realRequestMaker.makeSteinsaltzRequest(masechet, daf);
-    promise.then(results => writeJson(this.steinsaltzInputFile(masechet, daf), results));
+    promise.then(results => {
+      delete results.details.speed;
+      writeJson(this.steinsaltzInputFile(masechet, daf), results);
+    });
     return promise;
   }
 }
