@@ -9,6 +9,7 @@ class TestPage {
 }
 
 export const testPages = [
+  new TestPage("Bava Kamma", "55a"), // Bava Kamma has different Hadran formats
   new TestPage("Berakhot", "2a"),
   new TestPage("Berakhot", "34b"),
   new TestPage("Shabbat", "100a"),

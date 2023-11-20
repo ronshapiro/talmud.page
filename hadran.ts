@@ -15,7 +15,7 @@ export function hadranSegments(masechetName: string): Segment[] {
   return page.sections;
 }
 
-const HADRAN_PATTERN = /^((<br>)+<big><strong>)?הדרן עלי?ך .*/;
+const HADRAN_PATTERN = /^(<br>)*(<big><strong>|<strong><big>)?הדרן עלי?ך .*/;
 
 export function isHadran(text: sefaria.TextType): boolean {
   if (Array.isArray(text)) {
