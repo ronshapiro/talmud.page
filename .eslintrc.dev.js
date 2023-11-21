@@ -3,6 +3,7 @@
 const TURN_OFF = {};
 
 for (const key of [
+  "block-spacing",
   "comma-dangle",
   "comma-spacing",
   "key-spacing",

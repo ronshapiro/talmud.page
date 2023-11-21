@@ -11,7 +11,7 @@ interface SwipeableBackgroundParams {
   initiallyOn: boolean;
   onChange: (x: boolean) => void;
   children: any;
-  inline: boolean;
+  inline?: boolean;
 }
 
 const MAX_OPACITY = .4;
@@ -70,4 +70,38 @@ SwipeableBackground.propTypes = {
   initiallyOn: PropTypes.bool.isRequired,
   onChange: PropTypes.func.isRequired,
   inline: PropTypes.bool,
+};
+
+
+interface SwipeableParams {
+  onSwiped: () => void;
+  children: any;
+}
+
+export function Swipeable({children, onSwiped}: SwipeableParams): React.ReactElement {
+  const [{x}, api] = useSpring(() => ({x: 0}));
+  const bind = useDrag(({offset: [newX], cancel, last, canceled}) => {
+    api.start({x: newX});
+    if (Math.abs(newX) > 150 && last && !canceled) {
+      onSwiped();
+      cancel();
+    } else if (last) {
+      api.start({x: 0});
+    }
+  }, {
+    // This effectively disables the feature on Desktop, which is probably fine as the X icon still
+    // exists. We could get fancy by trying to detect the type of browser and set this value
+    // accordingly... though not sure it's worth the complexity.
+    pointer: {touch: true},
+  });
+  return (
+    // eslint-disable-next-line react/jsx-props-no-spreading
+    <animated.div {...bind()} style={{x}}>
+      {children}
+    </animated.div>
+  );
+}
+Swipeable.propTypes = {
+  children: PropTypes.object.isRequired,
+  onSwiped: PropTypes.func.isRequired,
 };

@@ -20,13 +20,13 @@ import {
   NextButton,
   PreviousButton,
 } from "./NavigationButtons.tsx";
-import TableRow, {CellText} from "./TableRow.jsx";
+import TableRow, {CellText} from "./TableRow.tsx";
 import {
   ConfigurationContext,
   useConfiguration,
   HiddenHostContext,
   useHiddenHost,
-} from "./context.js";
+} from "./context.ts";
 import {mergeCommentaries} from "./mergeCommentaries.ts";
 import {Preferences} from "./Preferences.tsx";
 

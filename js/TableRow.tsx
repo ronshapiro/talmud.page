@@ -1,34 +1,40 @@
-import React, {
-  Component,
-  createRef,
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-} from "react";
-import PropTypes from 'prop-types';
-import {animated, useSpring} from "@react-spring/web";
-import {useDrag} from "@use-gesture/react";
-import isEmptyText from "./is_empty_text.ts";
+import * as React from "react";
+import * as PropTypes from 'prop-types';
+import {useHtmlRef} from "./hooks";
+import isEmptyText from "./is_empty_text";
 import {$} from "./jquery";
 import {onClickKeyListener} from "./key_clicks";
-import {ConfigurationContext, useConfiguration, useHiddenHost} from "./context.js";
-import {SwipeableBackground} from "./SwipeableBackground.tsx";
+import {useConfiguration, useHiddenHost} from "./context";
+import {SwipeableBackground} from "./SwipeableBackground";
 
-const brTagsCache = {};
-const brTags = (count) => {
+const {
+  useEffect,
+  useMemo,
+  useState,
+} = React;
+
+const brTagsCache: Record<number, string> = {};
+function brTags(count: number): string {
   if (count in brTagsCache) {
     return brTagsCache[count];
   }
-
-  const tags = [];
-  for (let i = 0; i < count; i++) {
-    tags.push("<br>");
+  if (count <= 0) {
+    return "";
   }
-  const result = tags.join("");
+
+  const result = new Array(count).fill("<br>").join("");
   brTagsCache[count] = result;
   return result;
-};
+}
+
+interface CellTextProps {
+  text: string;
+  onDoubleClick?: () => void;
+  sefariaRef?: string;
+  languageClass: string;
+  classes?: string[];
+  sectionIdForHighlighting?: string;
+}
 
 /**
  * This element defines the basic attributes of what is inserted in cell text. Specifically, it
@@ -41,9 +47,9 @@ export function CellText({
   languageClass,
   classes,
   sectionIdForHighlighting,
-}) {
+}: CellTextProps): React.ReactElement {
   const context = useConfiguration();
-  const ref = useRef();
+  const ref = useHtmlRef<HTMLSpanElement>();
   useEffect(() => {
     $(ref.current).betterDoubleClick(onDoubleClick);
   });
@@ -79,7 +85,11 @@ CellText.propTypes = {
   sectionIdForHighlighting: PropTypes.string,
 };
 
-function CloseButton({onClose}) {
+interface CloseButtonProps {
+  onClose: () => void;
+}
+
+function CloseButton({onClose}: CloseButtonProps): React.ReactElement {
   return (
     <i
       style={{
@@ -102,97 +112,123 @@ CloseButton.propTypes = {
   onClose: PropTypes.func.isRequired,
 };
 
-class Cell extends Component {
-  static propTypes = {
-    classes: PropTypes.arrayOf(PropTypes.string).isRequired,
-    text: PropTypes.node.isRequired,
-  };
+type StringOrElement = string | React.ReactElement
 
-  classes(...extraClasses) {
-    return this.props.classes.concat(["table-cell"]).concat(extraClasses).join(" ");
-  }
-
-  childrenProp() {
-    // TODO: props.text is an awkward name.
-    if (typeof this.props.text === "string") {
-      return {dangerouslySetInnerHTML: {__html: this.props.text}};
-    } else {
-      return {children: this.props.text};
-    }
-  }
+interface BaseCellProps {
+  direction: "ltr" | "rtl";
+  classes: string[];
+  style?: React.CSSProperties;
+  text: StringOrElement | undefined;
+  doubleClickListener?: () => void;
 }
 
-class HebrewCell extends Cell {
-  static contextType = ConfigurationContext;
+function BaseCell({
+  direction,
+  classes,
+  style,
+  text,
+  doubleClickListener,
+}: BaseCellProps): React.ReactElement | null {
+  const className = ["table-cell"].concat(classes).join(" ");
+  const childrenProp = (typeof text === "string")
+    ? {dangerouslySetInnerHTML: {__html: text}}
+    : {children: text};
+  const ref = useHtmlRef<HTMLDivElement>();
 
-  ref = createRef();
+  useEffect(() => {
+    $(ref.current!).betterDoubleClick(doubleClickListener);
+  });
 
-  render() {
-    const {isEnglishExpanded, shouldWrap} = this.props;
-    const siblingExpandedClass = (
-      this.context.wrapTranslations() && isEnglishExpanded && shouldWrap
-        ? "siblingExpanded"
-        : undefined);
-    return (
-      <div
-        dir="rtl"
-        className={this.classes("hebrew", siblingExpandedClass)}
-        ref={this.ref}
-        {...this.childrenProp()} // eslint-disable-line react/jsx-props-no-spreading
-        />
-    );
-  }
-
-  componentDidMount() {
-    $(this.ref.current).betterDoubleClick(this.props.hebrewDoubleClickListener);
-  }
+  return (
+    <div
+      dir={direction}
+      className={className}
+      ref={ref}
+      style={style}
+      {...childrenProp} // eslint-disable-line react/jsx-props-no-spreading
+      />
+  );
 }
 
-class EnglishCell extends Cell {
-  static contextType = ConfigurationContext;
-
-  ref = createRef();
-
-  render() {
-    const classes = ["english"];
-
-    const {
-      isEnglishExpanded,
-      lineClampLines,
-      shouldWrap,
-    } = this.props;
-
-    if (this.context.isFake) {
-      classes.push("neverWrap");
-    } else if (!isEnglishExpanded) {
-      classes.push("lineClamped");
-    } else if (this.context.wrapTranslations() && shouldWrap) {
-      // TODO: if the english cell expanded is only a little bit of extra text (1 line, or 2 short
-      // ones, use the default layout and don't wrap.
-      classes.push("translationWrapped");
-    } else {
-      classes.push("neverWrap");
-    }
-
-    return (
-      <div
-        dir="ltr"
-        className={this.classes(...classes)}
-        ref={this.ref}
-        style={{WebkitLineClamp: lineClampLines}}
-        {...this.childrenProp()} // eslint-disable-line react/jsx-props-no-spreading
-        />
-    );
-  }
-
-  componentDidMount() {
-    $(this.ref.current).betterDoubleClick(this.props.toggleEnglishExpanded);
-  }
+interface CellProps {
+  classes: string[];
+  text?: StringOrElement;
 }
+
+interface HebrewCellProps extends CellProps {
+  isEnglishExpanded: boolean;
+  shouldWrap: boolean;
+  hebrewDoubleClickListener?: () => void;
+}
+
+function HebrewCell({
+  classes,
+  text,
+  isEnglishExpanded,
+  shouldWrap,
+  hebrewDoubleClickListener,
+}: HebrewCellProps): React.ReactElement | null {
+  const context = useConfiguration();
+  const siblingExpandedClass = (
+    context.wrapTranslations() && isEnglishExpanded && shouldWrap
+      ? "siblingExpanded"
+      : "");
+  return (
+    <BaseCell
+      direction="rtl"
+      classes={["hebrew", siblingExpandedClass].concat(classes)}
+      text={text}
+      doubleClickListener={hebrewDoubleClickListener}
+      />
+  );
+}
+
+interface EnglishCellProps extends CellProps {
+  isEnglishExpanded: boolean;
+  lineClampLines: number;
+  shouldWrap: boolean;
+  toggleEnglishExpanded: () => void;
+}
+
+function EnglishCell({
+  text,
+  classes,
+  isEnglishExpanded,
+  lineClampLines,
+  shouldWrap,
+  toggleEnglishExpanded,
+}: EnglishCellProps): React.ReactElement | null {
+  const context = useConfiguration();
+
+  classes.push("english");
+  if (context.isFake) {
+    classes.push("neverWrap");
+  } else if (!isEnglishExpanded) {
+    classes.push("lineClamped");
+  } else if (context.wrapTranslations() && shouldWrap) {
+    // TODO: if the english cell expanded is only a little bit of extra text (1 line, or 2 short
+    // ones, use the default layout and don't wrap.
+    classes.push("translationWrapped");
+  } else {
+    classes.push("neverWrap");
+  }
+
+  return (
+    <BaseCell
+      direction="ltr"
+      classes={classes}
+      style={{WebkitLineClamp: lineClampLines}}
+      text={text}
+      doubleClickListener={toggleEnglishExpanded}
+      />
+  );
+}
+
+type JqueryNode = any;
 
 // TODO: the cache would need to be flushed when text size/resolution changes
-const calculateLineCountCache = {};
-const calculateLineCount = (node) => {
+const calculateLineCountCache: Record<JqueryNode, number[]> = {};
+function calculateLineCount(node: JqueryNode): number {
   let nestedCache = calculateLineCountCache[node];
   if (!nestedCache) {
     nestedCache = [0];
@@ -212,37 +248,24 @@ const calculateLineCount = (node) => {
       return i;
     }
   }
-};
-
-function Swipeable({children, onSwiped}) {
-  const [{x}, api] = useSpring(() => ({x: 0}));
-  const bind = useDrag(({offset: [newX], cancel, last, canceled}) => {
-    api.start({x: newX});
-    if (Math.abs(newX) > 150 && last && !canceled) {
-      onSwiped();
-      cancel();
-    } else if (last) {
-      api.start({x: 0});
-    }
-  }, {
-    // This effectively disables the feature on Desktop, which is probably fine as the X icon still
-    // exists. We could get fancy by trying to detect the type of browser and set this value
-    // accordingly... though not sure it's worth the complexity.
-    pointer: {touch: true},
-  });
-  return (
-    // eslint-disable-next-line react/jsx-props-no-spreading
-    <animated.div {...bind()} style={{x}}>
-      {children}
-    </animated.div>
-  );
+  throw new Error("Couldn't find height");
 }
-Swipeable.propTypes = {
-  children: PropTypes.object.isRequired,
-  onSwiped: PropTypes.func.isRequired,
-};
 
-function TableRow(props) {
+interface TableRowProps {
+  hebrew?: StringOrElement;
+  english?: StringOrElement;
+  id?: string;
+  classes: string[];
+  hebrewDoubleClickListener?: () => void;
+  "sefaria-ref"?: string;
+  link?: string;
+  overrideFullRow?: boolean;
+  expandEnglishByDefault?: boolean;
+  onUnexpand?: () => void;
+  sectionIdForHighlighting?: string;
+}
+
+function TableRow(props: TableRowProps): React.ReactElement {
   const {
     hebrew,
     english,
@@ -256,11 +279,11 @@ function TableRow(props) {
     sectionIdForHighlighting,
   } = props;
 
-  const [isEnglishExpanded, setIsEnglishExpanded] = useState(expandEnglishByDefault);
+  const [isEnglishExpanded, setIsEnglishExpanded] = useState(expandEnglishByDefault ?? false);
   const context = useConfiguration();
   const hiddenHost = useHiddenHost();
 
-  const applyHiddenNode = (contents, node) => {
+  const applyHiddenNode = (contents: StringOrElement | undefined, node: JqueryNode) => {
     if (typeof contents === "string") {
       node.html(contents);
     } else if (contents && contents.props && Array.isArray(contents.props.children)) {
@@ -278,7 +301,7 @@ function TableRow(props) {
 
   const shouldTranslationWrap = () => {
     if (!hiddenHost) {
-      return false;
+      return {shouldWrap: false, englishLineClampLines: 1000000};
     }
 
     applyHiddenNode(hebrew, hiddenHost.hebrew);
@@ -291,7 +314,7 @@ function TableRow(props) {
 
     const result = {
       shouldWrap: hiddenHost.hebrew.height() < hiddenHost.english.height(),
-      englishLineClampLines: Math.floor(heightRatio * totalEnglishLines).toString(),
+      englishLineClampLines: Math.floor(heightRatio * totalEnglishLines),
     };
 
     // TODO: optimize by applying this in an effect
@@ -354,11 +377,6 @@ function TableRow(props) {
       {cells}
     </div>
   );
-
-  // The swiping gesture doesn't play nicely with selecting text. Disable for now.
-  // if (onUnexpand) {
-  //   return <Swipeable onSwiped={onUnexpand}>{row}</Swipeable>;
-  // }
 
   if (hiddenHost && sectionIdForHighlighting) {
     return (
