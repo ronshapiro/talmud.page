@@ -30,6 +30,11 @@ export function numericLiteralAsInt(hebrew: string): number {
 }
 
 export function intToHebrewNumeral(value: number): string {
+  if (value === 15) {
+    return "טו";
+  } else if (value === 16) {
+    return "טז";
+  }
   const chars: string[] = [];
   while (value > 0) {
     for (const [numeral, numeralValue] of NUMERIC_VALUES_TO_LETTER) {
