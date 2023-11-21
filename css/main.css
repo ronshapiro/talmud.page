@@ -322,7 +322,9 @@ h2, .title, .titleHebrew {
 .commentary_header.ein-mishpat, .commentary_header.sefer-hachinukh {
     color: rgb(68,138,255);
 }
-.commentary_header.mesorat-hashas, .commentary_header.torah-temima {
+.commentary_header.mesorat-hashas,
+.commentary_header.torah-temima,
+.commentary_header.mishna-reference {
     color: var(--mesorat-hashas-purple);
 }
 .text-loading-spinner {

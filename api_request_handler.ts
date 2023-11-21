@@ -15,7 +15,12 @@ import {Logger, consoleLogger} from "./logger";
 import {mergeRefs} from "./ref_merging";
 import {refSorter} from "./js/google_drive/ref_sorter";
 import {ListMultimap} from "./multimap";
-import {getSugyaSpanningRef, shulchanArukhChapterTitle, segmentCount} from "./precomputed";
+import {
+  getSugyaSpanningRef,
+  mishnaReferencesForPage,
+  shulchanArukhChapterTitle,
+  segmentCount,
+} from "./precomputed";
 import {expandRef} from "./ref_expander";
 import {splitOnBookName} from "./refs";
 import {RequestMaker} from "./request_makers";
@@ -466,7 +471,7 @@ export abstract class AbstractApiRequestHandler {
   }
 
   protected makeTitle(): string {
-    return `${books.byCanonicalName[this.bookName].canonicalName} ${this.page}`;
+    return `${this.book().canonicalName} ${this.page}`;
   }
 
   protected abstract makeTitleHebrew(): string;
@@ -523,14 +528,14 @@ export abstract class AbstractApiRequestHandler {
   }
 
   handleRequest(): Promise<ApiResponse> {
-    const book = books.byCanonicalName[this.bookName];
+    const book = this.book();
     const ref = `${book.bookNameForRef()} ${book.rewriteSectionRef(this.page)}`;
     const underlyingRefs = this.expandRef(ref);
 
     const textRequest = this.makeTextRequest(ref, underlyingRefs);
     const linksTraversalTimer = this.logger.newTimer();
     const linkGraphRequest = this.linksTraversal(
-      new LinkGraph(), ListMultimap.identity(underlyingRefs), this.linkDepth(), true)
+      this.startingLinkGraph(), ListMultimap.identity(underlyingRefs), this.linkDepth(), true)
       .finally(() => linksTraversalTimer.finish("links traversal"));
     return Promise.all([
       textRequest,
@@ -666,6 +671,13 @@ export abstract class AbstractApiRequestHandler {
       return Promise.resolve(linkGraph);
     }
 
+    const nextRefs: string[] = [];
+    if (isRoot) {
+      for (const targetRefs of Object.values(linkGraph.graph)) {
+        nextRefs.push(...Array.from(targetRefs));
+      }
+    }
+
     const allLinksRequests = Promise.allSettled(
       Array.from(refsInRound.keys()).map(ref => {
         if (SYNTHETIC_REFS.has(ref)) {
@@ -677,7 +689,7 @@ export abstract class AbstractApiRequestHandler {
 
     return allLinksRequests.then(allLinksResponses => {
       const refsInRoundKeys = Array.from(refsInRound.keys());
-      const nextRefs = [];
+
       for (let i = 0; i < allLinksResponses.length; i++) {
         const linksResponse = allLinksResponses[i];
         if (linksResponse.status === "rejected" || isSefariaError(linksResponse.value)) {
@@ -724,6 +736,11 @@ export abstract class AbstractApiRequestHandler {
       }
       return this.linksTraversal(linkGraph, mergeRefs(nextRefs), remainingDepth - 1, false);
     });
+  }
+
+  // Allows for creating synthetic links from what's known statically.
+  protected startingLinkGraph(): LinkGraph {
+    return new LinkGraph();
   }
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -1032,6 +1049,10 @@ export abstract class AbstractApiRequestHandler {
     }
     throw new Error(`Can't find index ${i} in ${textResponse.spanningRefs}`);
   }
+
+  protected book(): Book {
+    return books.byCanonicalName[this.bookName];
+  }
 }
 
 enum RemovalStrategy {
@@ -1048,7 +1069,7 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
   }
 
   protected makeTitleHebrew(): string {
-    const {hebrewName} = books.byCanonicalName[this.bookName];
+    const {hebrewName} = this.book();
     const dafNumber = intToHebrewNumeral(parseInt(this.page));
     const suffix = this.page.endsWith("a") ? ALEPH : BET;
     return `${hebrewName} ${dafNumber},${suffix}`;
@@ -1186,10 +1207,31 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
   }
 
   protected extraSegments(): Section[] {
-    if (books.byCanonicalName[this.bookName].end === this.page) {
+    if (this.book().end === this.page) {
       return hadranSegments(this.bookName);
     }
     return [];
+  }
+
+  protected startingLinkGraph(): LinkGraph {
+    const linkGraph = new LinkGraph();
+    for (const [sourceRef, targetRef] of Object.entries(
+      mishnaReferencesForPage(this.book(), this.page))) {
+      linkGraph.addLink(sourceRef, {
+        sourceRef,
+        sourceHeRef: "unused",
+        ref: targetRef,
+        anchorRef: sourceRef,
+        anchorRefExpanded: [sourceRef],
+        versionTitle: "unused",
+        collectiveTitle: {
+          en: "Referenced Mishna",
+          he: "unused",
+        },
+        expandedRefsAfterRewriting: expandRef(targetRef),
+      });
+    }
+    return linkGraph;
   }
 }
 
@@ -1199,7 +1241,7 @@ class TanakhApiRequestHandler extends AbstractApiRequestHandler {
   }
 
   protected makeTitleHebrew(): string {
-    const {hebrewName} = books.byCanonicalName[this.bookName];
+    const {hebrewName} = this.book();
     const chapter = intToHebrewNumeral(parseInt(this.page));
     return `${hebrewName} ${chapter}`;
   }

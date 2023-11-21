@@ -1,5 +1,5 @@
+import {Book} from "./books";
 import {readUtf8} from "./files";
-// import {expandRef} from "./ref_expander";
 
 const SHULCHAN_ARUKH_HEADERS: any = (
   JSON.parse(readUtf8("precomputed_texts/shulchan_arukh_headings.json"))
@@ -47,6 +47,20 @@ export function getSugyaSpanningRef(masechet: string, ref: string): string | und
   }
   SUGYA_POINTERS_CACHE[masechet] = JSON.parse(text);
   return getSugyaSpanningRef(masechet, ref);
+}
+
+export function mishnaReferencePath(book: Book): string {
+  return `precomputed/mishna_references/${book.canonicalName}.json`;
+}
+
+const MISHNA_REFERENCES_CACHE: Record<string, Record<string, Record<string, string>>> = {};
+
+export function mishnaReferencesForPage(book: Book, page: string): Record<string, string> {
+  if (book.canonicalName in MISHNA_REFERENCES_CACHE) {
+    return MISHNA_REFERENCES_CACHE[book.canonicalName][page] ?? {};
+  }
+  MISHNA_REFERENCES_CACHE[book.canonicalName] = JSON.parse(readUtf8(mishnaReferencePath(book)));
+  return mishnaReferencesForPage(book, page);
 }
 
 const SEGMENT_COUNT_CACHE: Record<string, number> = {};

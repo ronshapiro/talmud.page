@@ -41,6 +41,12 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     showTitle: true,
   },
   {
+    englishName: "Referenced Mishna",
+    hebrewName: "משנה המלאה",
+    className: "mishna-reference",
+    allowNestedTraversals: true,
+  },
+  {
     englishName: "Mishnah",
     category: "Mishnah",
     hebrewName: "משנה",

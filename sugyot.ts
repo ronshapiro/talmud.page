@@ -1,7 +1,9 @@
 import * as fs from "fs";
-import {Amud} from "./apiTypes";
+import {Amud, Section} from "./apiTypes";
 import {books, Book} from "./books";
 import {cachedOutputFilePath} from "./cached_outputs";
+import {stripHebrewNonletters} from "./hebrew";
+import {mishnaReferencePath} from "./precomputed";
 import {writeJson} from "./util/json_files";
 
 function mergeRefs(book: Book, start: string, end: string): string {
@@ -14,6 +16,31 @@ function mergeRefs(book: Book, start: string, end: string): string {
   return `${start}-${endAmud}`;
 }
 
+function startsWithMatni(text: string): boolean {
+  return stripHebrewNonletters(text).startsWith("מתני׳");
+}
+
+function doesntStartWithGemara(text: string): boolean {
+  return !stripHebrewNonletters(text).startsWith("גמ׳");
+}
+
+const HEBREW_MISHNA_OR_GEMARA_START = /^<big><strong>(.*)<\/strong><\/big>.*$/;
+function referencesMishna(text: string): boolean {
+  return (text.includes("שנינו במשנה")
+    || text.includes("שנינו במשנתנו"));
+}
+
+function isMishna(segment: Section): boolean {
+  if (segment.ref.endsWith(" 2a:1")) return true;
+  if (!segment.steinsaltz_start_of_sugya) return false;
+  if (typeof segment.he !== "string") return false;
+  if (startsWithMatni(segment.he)) return true;
+
+  const match = segment.he.match(HEBREW_MISHNA_OR_GEMARA_START);
+  if (!match) return false;
+  return startsWithMatni(match[1]) || doesntStartWithGemara(match[1]);
+}
+
 for (const book of Array.from(new Set(Object.values(books.byCanonicalName)))) {
   if (!book.isMasechet()) continue;
   if (book.canonicalName === "Shekalim") continue;
@@ -21,9 +48,11 @@ for (const book of Array.from(new Set(Object.values(books.byCanonicalName)))) {
   const sugyaEndpoints: any[] = [];
   const perekEndpoints = [];
   const refPointers: any = {};
+  const mishnaReferences: Record<string, Record<string, string>> = {};
 
   let perekStart: string | undefined;
   let refsInSugya: string[] = [];
+  let lastMishna: string | undefined;
 
   const saveSugya = () => {
     if (refsInSugya.length > 0) {
@@ -62,9 +91,30 @@ for (const book of Array.from(new Set(Object.values(books.byCanonicalName)))) {
         perekStart = undefined;
       }
     }
+
+    for (const segment of result.sections) {
+      if (isMishna(segment)) {
+        lastMishna = segment.ref;
+      } else if (segment.steinsaltz_start_of_sugya
+        && referencesMishna(segment.commentary!.Steinsaltz.comments[0].he as string)) {
+        const pointer = refPointers[lastMishna!] ?? lastMishna;
+        if (pointer === undefined) {
+          throw new Error([segment.ref, lastMishna + ""].join(" "));
+        }
+        // Don't bother adding a reference if we're on the same amud, otherwise we're linking
+        // pretty much to ourselves!
+        if (segment.ref.split(":")[0] !== pointer.split(":")[0]) {
+          if (!mishnaReferences[result.id]) {
+            mishnaReferences[result.id] = {};
+          }
+          mishnaReferences[result.id][segment.ref] = pointer;
+        }
+      }
+    }
   }
 
   writeJson(`sugyot/${book.canonicalName}.json`, sugyaEndpoints);
   writeJson(`sugya_pointers/${book.canonicalName}-pointers.json`, refPointers);
   writeJson(`masechet_prakim/${book.canonicalName}.json`, perekEndpoints);
+  writeJson(mishnaReferencePath(book), mishnaReferences);
 }

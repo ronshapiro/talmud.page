@@ -4,6 +4,7 @@
 import {HighlightColor} from "./js/google_drive/types";
 
 export interface Amud {
+  id: string;
   sections: Section[];
 }
 
