@@ -66,11 +66,9 @@ function displaySnackbar(kind: Kind, labelHtml: string, buttons: MaybeButtons): 
   return $("#snackbar").animate({bottom: 0}, 200).promise();
 }
 
+const LAST_SEEN_PREFERENCES_VERSION = new LocalStorageInt("lastVersionOfPreferencesPageResetTo");
 const hasSeenLatestPreferences = () => {
-  if (localStorage.lastViewedVersionOfPreferencesPage) {
-    return parseInt(localStorage.lastViewedVersionOfPreferencesPage) === PREFERENCES_PAGE_VERSION;
-  }
-  return false;
+  return LAST_SEEN_PREFERENCES_VERSION.get() === PREFERENCES_PAGE_VERSION;
 };
 
 interface AbstractKind {
@@ -128,9 +126,8 @@ const Kinds = {
     prefix: "preferencePage",
     customShowLogic: () => !hasSeenLatestPreferences() || true,
     shouldResetShowCount: () => {
-      const lastVersion = new LocalStorageInt("lastVersionOfPreferencesPageResetTo");
-      if (lastVersion.get() !== PREFERENCES_PAGE_VERSION) {
-        lastVersion.set(PREFERENCES_PAGE_VERSION);
+      if (!hasSeenLatestPreferences()) {
+        LAST_SEEN_PREFERENCES_VERSION.set(PREFERENCES_PAGE_VERSION);
         return true;
       }
       return false;
@@ -269,7 +266,7 @@ $(document).ready(() => {
   moveSnackbarOffscreen();
 
   snackbars.preferencesNudge.show(
-    (localStorage.lastViewedVersionOfPreferencesPage
+    (hasSeenLatestPreferences()
       ? "Check out the updated options!"
       : "Check out the available options!"),
     [
