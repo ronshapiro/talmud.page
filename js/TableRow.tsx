@@ -312,6 +312,10 @@ function TableRow(props: TableRowProps): React.ReactElement {
 
     applyHiddenNode(brTags(totalEnglishLines - 3 /* heuristic */), hiddenHost.english);
 
+    if (Number.isNaN(heightRatio)) {
+      return {shouldWrap: false, englishLineClampLines: 1000000};
+    }
+
     const result = {
       shouldWrap: hiddenHost.hebrew.height() < hiddenHost.english.height(),
       englishLineClampLines: Math.floor(heightRatio * totalEnglishLines),

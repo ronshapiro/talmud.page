@@ -11,6 +11,7 @@ export interface CommentaryType {
   allowNestedTraversals?: true;
   ignoreIfNotTypeLevel?: true;
   nestedRefSpacer?: string;
+  renderCommentsAsNestedCommentaries?: true;
 }
 
 export const ALL_COMMENTARIES: CommentaryType[] = [
@@ -193,6 +194,7 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     hebrewName: 'מסורת הש"ס',
     className: "mesorat-hashas",
     showTitle: true,
+    renderCommentsAsNestedCommentaries: true,
   },
   {
     englishName: "Sefer HeArukh",

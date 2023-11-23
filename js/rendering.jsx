@@ -191,6 +191,8 @@ class CommentarySection extends Component {
     getOrdering: PropTypes.func,
     toggleShowing: PropTypes.func,
     sectionLabel: PropTypes.string,
+    syntheticClassName: PropTypes.string,
+    syntheticCommentaryKinds: PropTypes.object,
   };
 
   static contextType = ConfigurationContext;
@@ -198,14 +200,24 @@ class CommentarySection extends Component {
   state = {};
 
   render() {
-    const {commentaries, getOrdering, toggleShowing, sectionLabel} = this.props;
+    const {
+      commentaries,
+      getOrdering,
+      toggleShowing,
+      sectionLabel,
+      syntheticCommentaryKinds,
+    } = this.props;
+
     if (!commentaries || Object.keys(commentaries).length === 0) {
       return JSX_NOOP;
     }
 
+    const commentaryKindsByClassName = (
+      syntheticCommentaryKinds || this.context.commentaryTypesByClassName);
+
     const output = [];
     for (const commentaryClassName of getOrdering(sectionLabel)) {
-      const commentaryKind = this.context.commentaryTypesByClassName[commentaryClassName];
+      const commentaryKind = commentaryKindsByClassName[commentaryClassName];
       let commentary = commentaries[commentaryKind.englishName];
       if (!commentary) {
         // TODO: investigate a better solution for the indexByClassName overlapping for Translation
@@ -228,6 +240,10 @@ class CommentarySection extends Component {
           commentaryKind.englishName,
           this.renderButton(commentaryKind, true, commentary),
           ""));
+      if (commentaryKind.renderCommentsAsNestedCommentaries && !syntheticCommentaryKinds) {
+        output.push(this.renderCommentsAsNestedCommentaries(commentary, commentaryClassName));
+        continue;
+      }
       // This set is particulary useful for merged segments, where duplicates are more common.
       const seen = new Set();
       commentary.comments.forEach(comment => {
@@ -235,7 +251,7 @@ class CommentarySection extends Component {
           seen.add(comment.ref);
           output.push(
             <CommentRow
-              key={comment.ref}
+              key={"commentRow" + comment.ref}
               comment={comment}
               commentaryKind={commentaryKind}
               />);
@@ -258,6 +274,30 @@ class CommentarySection extends Component {
     return output;
   }
 
+  renderCommentsAsNestedCommentaries(commentary, commentaryClassName) {
+    const {getOrdering, toggleShowing, sectionLabel} = this.props;
+    const commentariesByComment = {};
+    const newSyntheticCommentaryKinds = {};
+    for (const comment of commentary.comments) {
+      const syntheticCommentary = {comments: [comment]};
+      const syntheticCommentaryKind = this.syntheticCommentaryKind(syntheticCommentary);
+      commentariesByComment[syntheticCommentaryKind.englishName] = syntheticCommentary;
+      newSyntheticCommentaryKinds[syntheticCommentaryKind.className] = syntheticCommentaryKind;
+    }
+
+    const nestedSectionLabel = `${sectionLabel}.<inner>.${commentaryClassName}`;
+    return (
+      <CommentarySection
+        commentaries={commentariesByComment}
+        getOrdering={getOrdering}
+        toggleShowing={toggleShowing}
+        sectionLabel={nestedSectionLabel}
+        key={nestedSectionLabel}
+        syntheticClassName={commentaryClassName}
+        syntheticCommentaryKinds={newSyntheticCommentaryKinds}
+      />);
+  }
+
   renderTableRow(key, hebrew, english, extraClasses = []) {
     const overrideFullRow = this.context.translationOption() === "english-side-by-side";
     return (
@@ -271,7 +311,22 @@ class CommentarySection extends Component {
     );
   }
 
+  syntheticCommentaryKind(commentary) {
+    const comment = commentary.comments[0];
+    return {
+      englishName: comment.sourceRef,
+      className: comment.sourceRef,
+      hebrewName: comment.sourceHeRef,
+    };
+  }
+
   forEachCommentary(commentaries, action) {
+    if (this.props.syntheticCommentaryKinds) {
+      Object.values(commentaries).forEach(commentary => {
+        action(commentary, this.syntheticCommentaryKind(commentary));
+      });
+      return;
+    }
     for (const commentaryKind of this.context.commentaryTypes) {
       const commentary = commentaries[commentaryKind.englishName];
       if (commentary) {
@@ -398,6 +453,7 @@ class CommentarySection extends Component {
       !isShowing && this.hasNestedPersonalComments(commentary)
         ? "has-nested-commentaries"
         : undefined,
+      this.props.syntheticClassName,
     ].filter(x => x).join(" ");
   }
 
