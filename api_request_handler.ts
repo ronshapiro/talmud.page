@@ -439,6 +439,14 @@ export class ApiException extends Error {
   }
 }
 
+class BulkTextGroup {
+  constructor(
+    readonly key: string,
+    readonly refs: string[],
+    readonly urlExtension: string,
+  ) {}
+}
+
 function isSefariaError(response: any): response is sefaria.ErrorResponse {
   return "error" in response;
 }
@@ -804,26 +812,53 @@ export abstract class AbstractApiRequestHandler {
       }
     }
 
-    for (let i = 0; i < refs.length; i += shardSize) {
-      const delimitedRefs = refs.slice(i, i + shardSize).join("|");
-      // The tp parameter is helpful for debugging and maintaining stability of recorded test data
-      const url = `/bulktext/${delimitedRefs}?useTextFamily=1&tp=${requestId}@${i}`;
-      nestedPromises.push(
-        this.requestMaker.makeRequest<sefaria.BulkTextResponse>(url).then(allTexts => {
-          for (const ref of Object.keys(allTexts)) {
-            const response = allTexts[ref];
-            fetched[ref] = {
-              he: response.he,
-              text: response.en,
-              ref,
-            };
-          }
-        }));
+    for (const bulkTextGroup of this.groupRefsByCustomParameters(refs)) {
+      for (let i = 0; i < bulkTextGroup.refs.length; i += shardSize) {
+        const delimitedRefs = bulkTextGroup.refs.slice(i, i + shardSize).join("|");
+        let url = `/bulktext/${delimitedRefs}?useTextFamily=1`;
+        // The tp parameter is helpful for debugging and maintaining stability of recorded test data
+        url += `&tp=${requestId}@${bulkTextGroup.key}_${i}`;
+        url += bulkTextGroup.urlExtension;
+        nestedPromises.push(
+          this.requestMaker.makeRequest<sefaria.BulkTextResponse>(url).then(allTexts => {
+            for (const ref of Object.keys(allTexts)) {
+              const response = allTexts[ref];
+              fetched[ref] = {
+                he: response.he,
+                text: response.en,
+                ref,
+              };
+            }
+          }));
+      }
     }
 
     return Promise.allSettled(nestedPromises)
       .then(() => fetched)
       .finally(() => timer.finish("fetching secondary texts"));
+  }
+
+  private groupRefsByCustomParameters(refs: string[]): BulkTextGroup[] {
+    const indexed = new ListMultimap<string, string>();
+    const extensions: Record<string, string> = {
+      /* eslint-disable quote-props */
+      "Tanakh": "",
+      "Standard": "",
+      /* eslint-enable quote-props */
+    };
+    for (const ref of refs) {
+      const title = ref.slice(0, ref.lastIndexOf(" "));
+      if (books.byCanonicalName[title]?.isBibleBook()) {
+        indexed.put("Tanakh", ref);
+      } else {
+        indexed.put("Standard", ref);
+      }
+    }
+    const result = [];
+    for (const [key, groupedRefs] of Array.from(indexed.asMap().entries())) {
+      result.push(new BulkTextGroup(key, groupedRefs, extensions[key] ?? ""));
+    }
+    return result;
   }
 
   private preformatSegments(hebrew: string[], english: string[]): [string[], string[]] {
