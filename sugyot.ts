@@ -24,7 +24,8 @@ function doesntStartWithGemara(text: string): boolean {
   return !stripHebrewNonletters(text).startsWith("גמ׳");
 }
 
-const HEBREW_MISHNA_OR_GEMARA_START = /^<big><strong>(.*)<\/strong><\/big>.*$/;
+const HEBREW_MISHNA_OR_GEMARA_START = (
+  /^(<big><strong>|<strong><big>)(.*)(<\/strong><\/big>|<\/big><\/strong>).*$/);
 function referencesMishna(text: string): boolean {
   return (text.includes("שנינו במשנה")
     || text.includes("שנינו במשנתנו"));
@@ -75,6 +76,13 @@ for (const book of Array.from(new Set(Object.values(books.byCanonicalName)))) {
 
     for (const segment of result.sections) {
       const isHadran = segment.ref === "Hadran 1";
+      if (!segment.commentary
+        || (segment.ref !== "synthetic" && !("Steinsaltz" in segment.commentary))) {
+        throw new Error([
+          `Steinsaltz not found in ${segment.ref}. This is likely a sign of an error during the `,
+          "caching process. Try deleting the cached file and rerunning.",
+        ].join());
+      }
       if (segment.steinsaltz_start_of_sugya || isHadran) {
         saveSugya();
         refsInSugya = [];
