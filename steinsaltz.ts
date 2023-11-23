@@ -1,3 +1,5 @@
+import {books} from "./books";
+
 /* eslint-disable quote-props */
 const STEINSALTZ_MASECHET_NUMBER = {
   "Arachin": 45,
@@ -56,7 +58,11 @@ for (const [steinsaltz, sefaria] of Object.entries({
 }
 
 export function steinsaltzApiUrl(masechet: string, daf: string): string {
-  const masechetIndex = STEINSALTZ_MASECHET_NUMBER[masechet];
+  const book = books.byCanonicalName[masechet];
+  const masechetIndex = STEINSALTZ_MASECHET_NUMBER[book.canonicalName];
+  if (masechetIndex === undefined) {
+    throw new Error(`${masechet} does not have a masechet number!`);
+  }
   return (
     `https://api.steinsaltz.dev/v1/library/talmud?`
     + `book=${masechetIndex}&page=2&masechta=${masechetIndex}&daf=${daf}`
