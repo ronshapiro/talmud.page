@@ -145,7 +145,8 @@ export class Runner {
   }
 
   newUrlRange(start, end) {
-    const newUrl = `${window.location.origin}/${amudMetadata().masechet}/${start}`;
+    const masechet = amudMetadata().masechet.replace(" ", "_");
+    const newUrl = `${window.location.origin}/${masechet}/${start}`;
     if (start === end) {
       return newUrl;
     }
