@@ -842,7 +842,7 @@ export abstract class AbstractApiRequestHandler {
     const indexed = new ListMultimap<string, string>();
     const extensions: Record<string, string> = {
       /* eslint-disable quote-props */
-      "Tanakh": "",
+      "Tanakh": "&ven=Tanakh: The Holy Scriptures, published by JPS",
       "Standard": "",
       /* eslint-enable quote-props */
     };
