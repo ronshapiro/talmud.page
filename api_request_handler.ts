@@ -801,7 +801,7 @@ export abstract class AbstractApiRequestHandler {
         let url = `/bulktext/${delimitedRefs}?useTextFamily=1`;
         // The tp parameter is helpful for debugging and maintaining stability of recorded test data
         url += `&tp=${requestId}@${i}_${bulkTextGroup.key}`;
-        url += encodeURIComponent(bulkTextGroup.urlExtension);
+        url += bulkTextGroup.urlExtension;
         nestedPromises.push(
           this.requestMaker.makeRequest<sefaria.BulkTextResponse>(url).then(allTexts => {
             for (const ref of Object.keys(allTexts)) {
@@ -825,8 +825,8 @@ export abstract class AbstractApiRequestHandler {
     const indexed = new ListMultimap<string, string>();
     const extensions: Record<string, string> = {
       /* eslint-disable quote-props */
-      "Mishna": "",
-      "Tanakh": "",
+      "Mishna": "&ven=Open Mishnah",
+      "Tanakh": "&ven=Tanakh: The Holy Scriptures, published by JPS",
       "Standard": "",
       /* eslint-enable quote-props */
     };
