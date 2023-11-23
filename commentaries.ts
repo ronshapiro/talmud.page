@@ -10,6 +10,7 @@ export interface CommentaryType {
   refPattern?: RegExp;
   allowNestedTraversals?: true;
   ignoreIfNotTypeLevel?: true;
+  nestedRefSpacer?: string;
 }
 
 export const ALL_COMMENTARIES: CommentaryType[] = [
@@ -288,6 +289,7 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     hebrewName: "הקדמה למסכת",
     className: "steinsaltz-masechet-intro",
     ignoreIfNotTypeLevel: true,
+    nestedRefSpacer: " ",
   },
   {
     englishName: "Steinsaltz Perek Intro",
@@ -295,6 +297,7 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     hebrewName: "הקדמה לפרק",
     className: "steinsaltz-perek-intro",
     ignoreIfNotTypeLevel: true,
+    nestedRefSpacer: " ",
   },
   {
     englishName: "Steinsaltz Perek Summary",
@@ -302,6 +305,7 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     hebrewName: "סיכום לפרק",
     className: "steinsaltz-perek-summary",
     ignoreIfNotTypeLevel: true,
+    nestedRefSpacer: " ",
   },
   {
     englishName: "Steinsaltz In-Depth",

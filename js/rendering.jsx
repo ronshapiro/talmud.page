@@ -143,10 +143,14 @@ class CommentRow extends Component {
       const hebrew = comment.he.flat(Infinity);
       const english = comment.en.flat(Infinity);
       for (let i = 0; i < hebrew.length; i++) {
-        const lineRef = (
-          comment.expandedRefsAfterRewriting
-            ? comment.expandedRefsAfterRewriting[i]
-            : "ignore-drive");
+        const lineRef = (() => {
+          if (comment.expandedRefsAfterRewriting) return comment.expandedRefsAfterRewriting[i];
+          if (commentaryKind.nestedRefSpacer) {
+            return `${comment.ref}${commentaryKind.nestedRefSpacer}${i + 1}`;
+          }
+          if (comment.expandedRefPrefix) return `${comment.expandedRefPrefix} ${i + 1}`;
+          return "ignore-drive";
+        })();
 
         const extraClasses = (
           (comment.originalRefsBeforeRewriting
