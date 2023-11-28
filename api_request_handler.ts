@@ -1253,11 +1253,11 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
     for (const [sourceRef, targetRef] of Object.entries(
       mishnaReferencesForPage(this.book(), this.page))) {
       linkGraph.addLink(sourceRef, {
-        sourceRef,
+        sourceRef: targetRef,
         sourceHeRef: "unused",
         ref: targetRef,
-        anchorRef: sourceRef,
-        anchorRefExpanded: [sourceRef],
+        anchorRef: "unused",
+        anchorRefExpanded: ["unused"],
         versionTitle: "unused",
         collectiveTitle: {
           en: "Referenced Mishna",
