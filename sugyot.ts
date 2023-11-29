@@ -28,7 +28,8 @@ const HEBREW_MISHNA_OR_GEMARA_START = (
   /^(<big><strong>|<strong><big>)(.*)(<\/strong><\/big>|<\/big><\/strong>).*$/);
 function referencesMishna(text: string): boolean {
   return (text.includes("שנינו במשנה")
-    || text.includes("שנינו במשנתנו"));
+    || text.includes("שנינו במשנתנו")
+    || text.includes("נאמר במשנה"));
 }
 
 function isMishna(segment: Section): boolean {
