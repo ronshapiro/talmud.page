@@ -39,7 +39,25 @@ function isMishna(segment: Section): boolean {
 
   const match = segment.he.match(HEBREW_MISHNA_OR_GEMARA_START);
   if (!match) return false;
-  return startsWithMatni(match[1]) || doesntStartWithGemara(match[1]);
+  return startsWithMatni(match[2]) || doesntStartWithGemara(match[2]);
+}
+
+const REFS_WITHOUT_STEINSALTZ_BECAUSE_THEYRE_JUST_SIMANIM = new Set([
+  "Shevuot 30b:12",
+  "Zevachim 5b:7",
+  "Zevachim 7b:8",
+  "Zevachim 8b:4",
+  "Zevachim 16b:18",
+  "Zevachim 49b:14",
+]);
+
+function isMissingSteinsaltz(segment: Section) {
+  if (REFS_WITHOUT_STEINSALTZ_BECAUSE_THEYRE_JUST_SIMANIM.has(segment.ref)) return false;
+  if (segment.ref === "synthetic") return false;
+  if (segment.hadran || segment.ref.startsWith("Hadran ")) return false;
+
+  if (!segment.commentary) return true;
+  return !("Steinsaltz" in segment.commentary);
 }
 
 for (const book of Array.from(new Set(Object.values(books.byCanonicalName)))) {
@@ -75,19 +93,18 @@ for (const book of Array.from(new Set(Object.values(books.byCanonicalName)))) {
       fs.readFileSync(cachedOutputFilePath(book, section), {encoding: "utf-8"})) as Amud;
 
     for (const segment of result.sections) {
-      const isHadran = segment.ref === "Hadran 1";
-      if (!segment.commentary
-        || (segment.ref !== "synthetic" && !("Steinsaltz" in segment.commentary))) {
+      const isHadranEndOfMasechet = segment.ref === "Hadran 1";
+      if (isMissingSteinsaltz(segment)) {
         throw new Error([
           `Steinsaltz not found in ${segment.ref}. This is likely a sign of an error during the `,
           "caching process. Try deleting the cached file and rerunning.",
         ].join());
       }
-      if (segment.steinsaltz_start_of_sugya || isHadran) {
+      if (segment.steinsaltz_start_of_sugya || isHadranEndOfMasechet) {
         saveSugya();
         refsInSugya = [];
       }
-      if (isHadran) {
+      if (isHadranEndOfMasechet) {
         break;
       }
       refsInSugya.push(segment.ref);

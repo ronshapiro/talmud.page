@@ -976,8 +976,8 @@ export abstract class AbstractApiRequestHandler {
       // but perhaps something that checks to not revisit them unless they reoccur at lower depths
       // would be useful.
       countObject.count++;
-      if (countObject.count > 2000) {
-        this.logger.log(`Halting comment traversal for ${rootRef} at ${countObject.count}`);
+      if (countObject.count > 4000) {
+        this.logger.error(`Halting comment traversal for ${rootRef} at ${countObject.count}`);
         return;
       }
 
