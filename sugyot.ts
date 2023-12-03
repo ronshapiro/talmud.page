@@ -1,9 +1,11 @@
 import * as fs from "fs";
+import * as chalk from "chalk";
 import {Amud, Section} from "./apiTypes";
 import {books, Book} from "./books";
 import {cachedOutputFilePath} from "./cached_outputs";
 import {stripHebrewNonletters} from "./hebrew";
 import {mishnaReferencePath} from "./precomputed";
+import {splitOnBookName} from "./refs";
 import {writeJson} from "./util/json_files";
 
 function mergeRefs(book: Book, start: string, end: string): string {
@@ -26,10 +28,51 @@ function doesntStartWithGemara(text: string): boolean {
 
 const HEBREW_MISHNA_OR_GEMARA_START = (
   /^(<big><strong>|<strong><big>)(.*)(<\/strong><\/big>|<\/big><\/strong>).*$/);
-function referencesMishna(text: string): boolean {
-  return (text.includes("שנינו במשנה")
+
+function highlightMatch(text: string, splitter: string, ref: string) {
+  if (!text.includes(splitter)) {
+    return;
+  }
+  const index = text.indexOf(splitter);
+  const before = text.slice(0, index);
+  const after = text.slice(index + splitter.length);
+  const [book, amudAndSegment] = splitOnBookName(ref);
+  const [amud, segment] = amudAndSegment.split(":");
+  const url = `talmud.page/${book.replace(" ", "_")}/${amud}?ref_link=${encodeURIComponent(ref)}`;
+  console.log(chalk.bgGreen.black(ref));
+  console.log(url);
+  console.log(before + chalk.bgYellow.black(splitter) + after, "\n");
+}
+
+const COMPLICATED_MISHNA_REFERENCES = new Set([
+  "DO NOT SUBMIT: this change removes some links, need to check what's going on. Could just be bad local caching"
+  "Bava Kamma 53a:10",
+  "Gittin 53a:12",
+  "Gittin 70b:3",
+  "Nazir 32a:9",
+  "Nedarim 81:8",
+]);
+
+function referencesMishna(text: string, ref: string): boolean {
+  if (text.includes("תנן התם")
+    || text.includes("גמרא</big>")) {
+    return false;
+  }
+
+  if (COMPLICATED_MISHNA_REFERENCES.has(ref)) return true;
+  if (text.includes("שנינו במשנה")
     || text.includes("שנינו במשנתנו")
-    || text.includes("נאמר במשנה"));
+    || text.includes("על מה ששנו במשנה:")
+    || text.includes("שוב חוזרים אנו ודנים בהלכה שבמשנה:")
+    || text.includes("נאמר עוד במשנה:")
+    || text.includes("מסופר במשנה:")
+    || text.includes("למדנו במשנה:")
+    || text.includes("נאמר במשנה")) {
+    return true;
+  }
+  // highlightMatch(text, "מסופר במשנה:", ref);
+  highlightMatch(text, "במשנה: remove english to actually check", ref);
+  return false;
 }
 
 function isMishna(segment: Section): boolean {
@@ -122,7 +165,7 @@ for (const book of Array.from(new Set(Object.values(books.byCanonicalName)))) {
       if (isMishna(segment)) {
         lastMishna = segment.ref;
       } else if (segment.steinsaltz_start_of_sugya
-        && referencesMishna(segment.commentary!.Steinsaltz.comments[0].he as string)) {
+        && referencesMishna(segment.commentary!.Steinsaltz.comments[0].he as string, segment.ref)) {
         const pointer = refPointers[lastMishna!] ?? lastMishna;
         if (pointer === undefined) {
           throw new Error([segment.ref, lastMishna + ""].join(" "));
