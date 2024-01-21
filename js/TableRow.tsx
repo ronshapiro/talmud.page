@@ -1,3 +1,4 @@
+import * as DOMPurify from "dompurify";
 import * as React from "react";
 import * as PropTypes from 'prop-types';
 import {useHtmlRef} from "./hooks";
@@ -36,6 +37,10 @@ interface CellTextProps {
   sectionIdForHighlighting?: string;
 }
 
+function useSanitizedText(text: string): string {
+  return useMemo(() => DOMPurify.sanitize(text), [text]);
+}
+
 /**
  * This element defines the basic attributes of what is inserted in cell text. Specifically, it
  * translates html text into React nodes and applies an optional double-click listener.
@@ -55,15 +60,18 @@ export function CellText({
   });
   classes = classes || [];
 
+  const sanitizedText = useSanitizedText(text);
+
   /* eslint-disable react/no-danger */
   const cellText = (
     // These elements are split for a technicality in ref_selection_snackbar for how texts are look
     // up. That's a hack anyway and rely's on the DOM, but refactoring it requires a good deal of
     // work. Splitting the elements was the easiest patch on top of that hack.
     <span sefaria-ref={sefariaRef} className={classes.join(" ")}>
-      <span dangerouslySetInnerHTML={{__html: text}} ref={ref} className={languageClass} />
+      <span dangerouslySetInnerHTML={{__html: sanitizedText}} ref={ref} className={languageClass} />
     </span>
   );
+  /* eslint-enable react/no-danger */
 
   return (
     <SwipeableBackground
@@ -130,8 +138,9 @@ function BaseCell({
   doubleClickListener,
 }: BaseCellProps): React.ReactElement | null {
   const className = ["table-cell"].concat(classes).join(" ");
+  const sanitizedText = useSanitizedText(typeof text === "string" ? text : "");
   const childrenProp = (typeof text === "string")
-    ? {dangerouslySetInnerHTML: {__html: text}}
+    ? {dangerouslySetInnerHTML: {__html: sanitizedText}}
     : {children: text};
   const ref = useHtmlRef<HTMLDivElement>();
 
