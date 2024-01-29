@@ -224,6 +224,7 @@ export class Runner {
             if (section) {
               localStorage.setItem("restoreSectionOnRefresh", section.id);
             }
+            localStorage.lastUrl = window.location.href;
           }, 1000);
 
           onceDocumentReady.declareReady();
