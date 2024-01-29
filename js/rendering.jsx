@@ -79,9 +79,10 @@ class CommentRow extends Component {
     });
   }
 
-  renderTableRow(key, hebrew, english, overrideRef = undefined, extraClasses = []) {
+  renderTableRow(key, hebrew, english, options = {}) {
     const {comment, commentaryKind} = this.props;
-    const ref = overrideRef || comment.ref;
+    const extraClasses = options.extraClasses || [];
+    const ref = options.overrideRef || comment.ref;
     const expandableTranslations = (
       this.context.translationOption() === "both"
         && localStorage.hideGemaraTranslationByDefault === "true"
@@ -119,19 +120,19 @@ class CommentRow extends Component {
 
     const output = [];
     if (commentaryKind.showTitle) {
-      output.push(
-        this.renderTableRow(
-          "title",
-          <strong>{comment.sourceHeRef}</strong>,
-          isEmptyText(comment.en) ? "" : <strong>{comment.sourceRef}</strong>));
+      const titleRow = this.renderTableRow(
+        "title",
+        comment.sourceHeRef,
+        isEmptyText(comment.en) ? "" : comment.sourceRef);
+      output.push(<strong>{titleRow}</strong>);
       if (comment.subtitle) {
-        output.push(
-          this.renderTableRow(
-            "subtitle",
-            <strong>{comment.subtitle.he}</strong>,
-            this.context.translationOption() === "just-hebrew" || stringOrListToString(comment.en).length === 0
-              ? undefined
-              : <strong>{comment.subtitle.en}</strong>));
+        const subtitleRow = this.renderTableRow(
+          "subtitle",
+          comment.subtitle.he,
+          this.context.translationOption() === "just-hebrew" || stringOrListToString(comment.en).length === 0
+            ? undefined
+            : comment.subtitle.en);
+        output.push(<strong>{subtitleRow}</strong>);
       }
     }
 
@@ -156,7 +157,10 @@ class CommentRow extends Component {
           (comment.originalRefsBeforeRewriting
            && comment.originalRefsBeforeRewriting.includes(lineRef))
             ? ["directlyReferencedLine"] : []);
-        output.push(this.renderTableRow(i, hebrew[i], english[i], lineRef, extraClasses));
+        output.push(this.renderTableRow(i, hebrew[i], english[i], {
+          overrideRef: lineRef,
+          extraClasses,
+        }));
       }
     } else {
       output.push(

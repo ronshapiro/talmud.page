@@ -32,7 +32,7 @@ interface CellTextProps {
   text: string;
   onDoubleClick?: () => void;
   sefariaRef?: string;
-  languageClass: string;
+  languageClass?: string;
   classes?: string[];
   sectionIdForHighlighting?: string;
 }
