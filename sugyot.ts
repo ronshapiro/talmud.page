@@ -4,6 +4,7 @@ import {books, Book} from "./books";
 import {cachedOutputFilePath} from "./cached_outputs";
 import {stripHebrewNonletters} from "./hebrew";
 import {mishnaReferencePath} from "./precomputed";
+import {sanitizeHtml} from "./source_formatting/html_sanitization";
 import {writeJson} from "./util/json_files";
 
 function mergeRefs(book: Book, start: string, end: string): string {
@@ -27,6 +28,7 @@ function doesntStartWithGemara(text: string): boolean {
 const HEBREW_MISHNA_OR_GEMARA_START = (
   /^(<big><strong>|<strong><big>)(.*)(<\/strong><\/big>|<\/big><\/strong>).*$/);
 function referencesMishna(text: string): boolean {
+  text = sanitizeHtml(text);
   return (text.includes("שנינו במשנה")
     || text.includes("שנינו במשנתנו")
     || text.includes("נאמר במשנה"));
