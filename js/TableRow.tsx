@@ -3,6 +3,7 @@ import * as React from "react";
 import * as PropTypes from 'prop-types';
 import {useHtmlRef} from "./hooks";
 import isEmptyText from "./is_empty_text";
+import {htmlWrapMatches} from "./html_replacer";
 import {$} from "./jquery";
 import {onClickKeyListener} from "./key_clicks";
 import {useConfiguration, useHiddenHost} from "./context";
@@ -28,17 +29,30 @@ function brTags(count: number): string {
   return result;
 }
 
+function useSanitizedText(text: string): string {
+  return useMemo(() => DOMPurify.sanitize(text, {ADD_TAGS: ["span-highlight"]}), [text]);
+}
+
+const SEARCH_TERM_WRAPPER = {
+  prefix: `<span-search-term class="foundTerm">`,
+  suffix: "</span-search-term>",
+};
+
+function useSearchableText(text: string): string {
+  const context = useConfiguration();
+  return useMemo(() => {
+    if (!context.searchQueryRegex) return text;
+    return htmlWrapMatches(text, context.searchQueryRegex, SEARCH_TERM_WRAPPER);
+  }, [text, context.searchQueryRegex]);
+}
+
 interface CellTextProps {
   text: string;
   onDoubleClick?: () => void;
   sefariaRef?: string;
-  languageClass?: string;
+  languageClass: string;
   classes?: string[];
   sectionIdForHighlighting?: string;
-}
-
-function useSanitizedText(text: string): string {
-  return useMemo(() => DOMPurify.sanitize(text), [text]);
 }
 
 /**
@@ -60,7 +74,7 @@ export function CellText({
   });
   classes = classes || [];
 
-  const sanitizedText = useSanitizedText(text);
+  const sanitizedText = useSearchableText(useSanitizedText(text));
 
   /* eslint-disable react/no-danger */
   const cellText = (
@@ -138,7 +152,8 @@ function BaseCell({
   doubleClickListener,
 }: BaseCellProps): React.ReactElement | null {
   const className = ["table-cell"].concat(classes).join(" ");
-  const sanitizedText = useSanitizedText(typeof text === "string" ? text : "");
+  const sanitizedText = useSearchableText(useSanitizedText(typeof text === "string" ? text : ""));
+
   const childrenProp = (typeof text === "string")
     ? {dangerouslySetInnerHTML: {__html: sanitizedText}}
     : {children: text};
@@ -287,7 +302,6 @@ function TableRow(props: TableRowProps): React.ReactElement {
     onUnexpand,
     sectionIdForHighlighting,
   } = props;
-
   const [isEnglishExpanded, setIsEnglishExpanded] = useState(expandEnglishByDefault ?? false);
   const context = useConfiguration();
   const hiddenHost = useHiddenHost();

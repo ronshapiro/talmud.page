@@ -75,7 +75,7 @@ html, body {
     src:url(/font/FiraGO-Light.ttf)
 }
 
-.gemara-container .hebrew, #snackbar .hebrew {
+.gemara-container .hebrew, .snackbar .hebrew {
     font-size: calc(1.5em * var(--font-size-multiplier));
     line-height: calc(1.5em * var(--font-size-multiplier));
 }
@@ -139,6 +139,12 @@ html, body {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+/*
+.lineClamped:has(.foundTerm) {
+    -webkit-box-orient: inherit;
+    overflow: inherit;
+}
+*/
 .english.lineClamped, .english.neverWrap {
     width: calc(45% - 2 * var(--table-cell-padding));
 }
@@ -148,6 +154,7 @@ html, body {
 
     float: none;
 }
+
 .jastrow .english { /* commentaryKind.className */
     -webkit-line-clamp: 3 !important;
 }
@@ -274,7 +281,7 @@ h2, .title, .titleHebrew {
     margin-inline-start: 20px;
 }
 
-#snackbar {
+.snackbar {
     position: fixed;
     bottom: -400px;
     width: calc(var(--max-width) - 2 * var(--snackbar-padding));
@@ -290,20 +297,20 @@ h2, .title, .titleHebrew {
 
 @media only screen and (max-width: 720px) {
     /* For mobile phones: */
-    #snackbar {
+    .snackbar {
         width: calc(100% - 2 * var(--snackbar-padding));
         margin-left: -1em;
     }
 }
 
-#snackbar > * {
+.snackbar > * {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
 }
 
-#snackbar p:last-of-type {
+.snackbar p:last-of-type {
     margin-bottom: 0px;
 }
 
@@ -338,11 +345,19 @@ h2, .title, .titleHebrew {
     text-transform: none;
 }
 
-#snackbar .mdl-button {
+.snackbar .mdl-button {
     min-height: 36px;
     line-height: unset;
     height: unset;
     color: var(--snackbar-button-color);
+}
+
+.snackbar .mdl-button--raised {
+    background: rgba(158,158,158,.2);
+}
+
+.snackbar .mdl-button--raised:hover {
+    background: rgba(200,200,200,.2);
 }
 
 .gemara-container, .table-row {
@@ -575,4 +590,30 @@ h2, .title, .titleHebrew {
 
 .material-icons {
     user-select: none;
+}
+
+.inPageSearchBar {
+    flex-grow: 1;
+}
+
+.inPageSearchBar:empty::before {
+    content: attr(placeholder);
+    color: #aaa;
+}
+
+.foundTerm {
+    background: var(--highlight-yellow-50);
+    box-shadow: 0px 0px 4px var(--highlight-yellow);
+    padding: 0px 1px;
+    margin: 0px -1px;
+}
+
+.inPageSearch .mdl-button {
+    padding: 0;
+    margin: 0;
+    min-width: 40px;
+}
+
+.searchMatchCounter {
+    padding: 0 10px;
 }

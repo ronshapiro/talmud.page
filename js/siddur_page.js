@@ -107,7 +107,6 @@ class SiddurRenderer extends LiturgyRenderer {
     const day = new Date().getDay();
     const ignored = [];
     const shirShelYomPrefix = "Siddur Ashkenaz, Weekday, Shacharit, Concluding Prayers, Song of the Day ";
-    console.log(pageId, day);
     if (pageId === "Conclusion" || pageId === "Aleinu") {
       if (day !== 0) {
         ignored.push(shirShelYomPrefix + 3);

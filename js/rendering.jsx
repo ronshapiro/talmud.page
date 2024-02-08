@@ -13,6 +13,7 @@ import {addDriveComments} from "./addDriveComments.ts";
 import {amudMetadata} from "./amud.ts";
 import {CorrectionModal} from "./CorrectionModal.tsx";
 import {FeedbackView} from "./Feedback.tsx";
+import {hebrewSearchRegex} from "../hebrew";
 import isEmptyText from "./is_empty_text.ts";
 import {$} from "./jquery";
 import {LocalStorageInt, LocalStorageLru} from "./localStorage";
@@ -29,6 +30,7 @@ import {
 } from "./context.ts";
 import {mergeCommentaries} from "./mergeCommentaries.ts";
 import {Preferences} from "./Preferences.tsx";
+import {InPageSearch} from "./SnackbarReact.tsx";
 
 const JSX_NOOP = null;
 
@@ -366,7 +368,8 @@ class CommentarySection extends Component {
       buttons.push(this.renderButton(this.showMoreCommentaryKind(), false, {comments: []}));
     }
 
-    return this.renderTableRow(`${sectionLabel} show buttons`, buttons, "", ["show-buttons"]);
+    return this.renderTableRow(
+      `${sectionLabel} show buttons`, buttons.filter(x => x), "", ["show-buttons"]);
   }
 
   buttonToFocusAfterEnter = createRef();
@@ -787,7 +790,8 @@ class Root extends Component {
     navigationExtension: PropTypes.object.isRequired,
   };
 
-  state = {}
+  state = {queryCount: 0}
+  static contextType = ConfigurationContext;
 
   render() {
     const {
@@ -814,12 +818,22 @@ class Root extends Component {
         navigationExtension={navigationExtension}
         firstRemovable={i === 0 && baseAmudim.length > 1}
         lastRemovable={i !== 0 && i === baseAmudim.length - 1} />));
+
+    const updateSearchQuery = (query, asRegex) => {
+      this.context.searchQueryRegex = (
+        (query.length < 2) ? undefined : hebrewSearchRegex(query, asRegex));
+      this.setState(previousState => {
+        return {...previousState, query, queryCount: previousState.queryCount + 1};
+      });
+    };
+
     return (
       <>
         <PreviousButton navigationExtension={navigationExtension} />
         {amudim}
         <NextButton navigationExtension={navigationExtension} />
         <Preferences rerender={() => this.forceUpdate()} />
+        <InPageSearch updateSearchQuery={updateSearchQuery} queryCount={this.state.queryCount} />
         <RootHooks />
       </>
     );
@@ -952,6 +966,7 @@ export class Renderer {
           context.highlightedIds.remove(sectionId);
         }
       },
+      searchQueryRegex: undefined,
     };
 
     const hiddenData = [{

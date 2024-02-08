@@ -4,7 +4,7 @@ import {books, Book} from "./books";
 import {cachedOutputFilePath} from "./cached_outputs";
 import {stripHebrewNonletters} from "./hebrew";
 import {mishnaReferencePath} from "./precomputed";
-import {sanitizeHtml} from "./source_formatting/html_sanitization";
+import {sanitizeHtml} from "./source_formatting/html_sanitization_node";
 import {writeJson} from "./util/json_files";
 
 function mergeRefs(book: Book, start: string, end: string): string {

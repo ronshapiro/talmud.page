@@ -16,7 +16,7 @@ function basicComment(text: string, color = "yellow") {
 }
 
 function matchedSection(text: string, color = "yellow") {
-  return `<span class="highlighted highlighted-${color}">${text}</span>`;
+  return `<span-highlight class="highlighted highlighted-${color}">${text}</span-highlight>`;
 }
 
 test("accesses across tags", () => {
