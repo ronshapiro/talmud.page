@@ -29,6 +29,7 @@ import {
 } from "./context.ts";
 import {mergeCommentaries} from "./mergeCommentaries.ts";
 import {Preferences} from "./Preferences.tsx";
+import {Search} from "./SnackbarReact.tsx";
 
 const JSX_NOOP = null;
 
@@ -788,6 +789,7 @@ class Root extends Component {
   };
 
   state = {}
+  static contextType = ConfigurationContext;
 
   render() {
     const {
@@ -814,12 +816,21 @@ class Root extends Component {
         navigationExtension={navigationExtension}
         firstRemovable={i === 0 && baseAmudim.length > 1}
         lastRemovable={i !== 0 && i === baseAmudim.length - 1} />));
+
+    const updateSearchQuery = (query) => {
+      this.setState(previousState => {
+        this.context.searchQuery = query;
+        return {...previousState, query};
+      });
+    };
+
     return (
       <>
         <PreviousButton navigationExtension={navigationExtension} />
         {amudim}
         <NextButton navigationExtension={navigationExtension} />
         <Preferences rerender={() => this.forceUpdate()} />
+        <Search updateSearchQuery={updateSearchQuery} />
         <RootHooks />
       </>
     );
@@ -952,6 +963,7 @@ export class Renderer {
           context.highlightedIds.remove(sectionId);
         }
       },
+      searchQuery: "",
     };
 
     const hiddenData = [{

@@ -32,7 +32,7 @@ interface CellTextProps {
   text: string;
   onDoubleClick?: () => void;
   sefariaRef?: string;
-  languageClass?: string;
+  languageClass: string;
   classes?: string[];
   sectionIdForHighlighting?: string;
 }
@@ -137,10 +137,15 @@ function BaseCell({
   text,
   doubleClickListener,
 }: BaseCellProps): React.ReactElement | null {
+  const context = useConfiguration();
   const className = ["table-cell"].concat(classes).join(" ");
   const sanitizedText = useSanitizedText(typeof text === "string" ? text : "");
+  // do not submit: need to search without nikud, and make sure we don't break HTML. Perhaps need to
+  // do an HTML visit to do so properly
+  // do not submit: make sure more things use text only, perhaps ban all non-text versions here
   const childrenProp = (typeof text === "string")
-    ? {dangerouslySetInnerHTML: {__html: sanitizedText}}
+    ? {dangerouslySetInnerHTML: {__html: sanitizedText.replaceAll(
+      context.searchQuery, `<span style="color: blue">${context.searchQuery}</span>`)}}
     : {children: text};
   const ref = useHtmlRef<HTMLDivElement>();
 
