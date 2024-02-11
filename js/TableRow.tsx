@@ -3,6 +3,7 @@ import * as React from "react";
 import * as PropTypes from 'prop-types';
 import {useHtmlRef} from "./hooks";
 import isEmptyText from "./is_empty_text";
+import {htmlWrapMatches} from "./html_replacer";
 import {$} from "./jquery";
 import {onClickKeyListener} from "./key_clicks";
 import {useConfiguration, useHiddenHost} from "./context";
@@ -60,6 +61,7 @@ export function CellText({
   });
   classes = classes || [];
 
+  // do not submit: need to also put this here!
   const sanitizedText = useSanitizedText(text);
 
   /* eslint-disable react/no-danger */
@@ -130,6 +132,11 @@ interface BaseCellProps {
   doubleClickListener?: () => void;
 }
 
+const FIND_WRAPPER = {
+  prefix: '<span style="color: blue">',
+  suffix: "</span>",
+}
+
 function BaseCell({
   direction,
   classes,
@@ -139,13 +146,19 @@ function BaseCell({
 }: BaseCellProps): React.ReactElement | null {
   const context = useConfiguration();
   const className = ["table-cell"].concat(classes).join(" ");
-  const sanitizedText = useSanitizedText(typeof text === "string" ? text : "");
+  let sanitizedText = useSanitizedText(typeof text === "string" ? text : "");
   // do not submit: need to search without nikud, and make sure we don't break HTML. Perhaps need to
   // do an HTML visit to do so properly
   // do not submit: make sure more things use text only, perhaps ban all non-text versions here
+  if (context.searchQuery.length > 1) {
+    const changed = (sanitizedText !== htmlWrapMatches(sanitizedText, context.searchQuery, FIND_WRAPPER));
+    sanitizedText = htmlWrapMatches(sanitizedText, context.searchQuery, FIND_WRAPPER);
+    if (changed) {
+      console.log(changed, sanitizedText);
+    }
+  }
   const childrenProp = (typeof text === "string")
-    ? {dangerouslySetInnerHTML: {__html: sanitizedText.replaceAll(
-      context.searchQuery, `<span style="color: blue">${context.searchQuery}</span>`)}}
+    ? {dangerouslySetInnerHTML: {__html: sanitizedText}}
     : {children: text};
   const ref = useHtmlRef<HTMLDivElement>();
 

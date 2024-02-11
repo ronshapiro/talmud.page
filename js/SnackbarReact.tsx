@@ -7,7 +7,18 @@ const {
   useState,
 } = React;
 
-const DEFAULT_HINT = "Do not submit";
+const START_TEXT = "DO NOT SUBMIT";
+const DEFAULT_HINT = "-"; // do not submit
+
+function unescape(text: string): string {
+  return (
+    text
+      .replaceAll("&amp;", "&")
+      .replaceAll("&nbsp;", " ")
+      .replaceAll("&lt;", "<")
+      .replaceAll("&gt;", ">")
+  );
+}
 
 interface SearchProps {
   updateSearchQuery: (query: string) => void;
@@ -15,11 +26,12 @@ interface SearchProps {
 
 // do not submit rename search to inpage search
 export function Search({updateSearchQuery}: SearchProps): React.ReactElement {
-  const [content, setContent] = useState(DEFAULT_HINT);
+  const [content, setContent] = useState(START_TEXT);
   const onContentChange = useCallback((event) => {
-    const newText = sanitizeHtml(event.currentTarget.innerHTML).trim();
+    const newText = unescape(sanitizeHtml(event.currentTarget.innerHTML).trim());
     setContent(newText.length > 0 ? newText : DEFAULT_HINT);
     updateSearchQuery(newText);
+    console.log(newText);
   }, []);
   return (
     <ContentEditable
