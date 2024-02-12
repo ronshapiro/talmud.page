@@ -367,7 +367,8 @@ class CommentarySection extends Component {
       buttons.push(this.renderButton(this.showMoreCommentaryKind(), false, {comments: []}));
     }
 
-    return this.renderTableRow(`${sectionLabel} show buttons`, buttons, "", ["show-buttons"]);
+    return this.renderTableRow(
+      `${sectionLabel} show buttons`, buttons.filter(x => x), "", ["show-buttons"]);
   }
 
   buttonToFocusAfterEnter = createRef();
@@ -422,7 +423,7 @@ class CommentarySection extends Component {
     return (
       // Wrap in a span so that the commentary colors don't get their own flex spacing separate from
       // the button.
-      <span key={commentaryKind.englishName}>
+      <Elements key={commentaryKind.englishName}>
         {button}
         {!isShowing && Array.from(commentaryHighlightColors(commentary)).map(
           color => (
@@ -433,8 +434,9 @@ class CommentarySection extends Component {
             </span>
           ),
         )}
-      </span>
+      </Elements>
     );
+    // do not submit: rename Elements
   }
 
   hasNestedPersonalComments(commentary) {
@@ -490,6 +492,10 @@ class CommentarySection extends Component {
       }, 100);
     }
   }
+}
+
+function Elements({children}) {
+  return <span>{children}</span>;
 }
 
 function Section({sections, sectionLabel, toggleMerging, isExpanded, lastUnexpandedUuid}) {
@@ -582,7 +588,7 @@ function Section({sections, sectionLabel, toggleMerging, isExpanded, lastUnexpan
         elements.push(<span key={`section-part-${i}-space`}> </span>);
       }
     }
-    return <span>{elements}</span>;
+    return <Elements>{elements}</Elements>;
   };
 
   sectionContents.push(

@@ -48,13 +48,26 @@ export function intToHebrewNumeral(value: number): string {
   return chars.join("");
 }
 
+export const ALEPH = "א";
+export const BET = "ב";
+export const TAV = "ת";
+
 // https://en.wikipedia.org/wiki/Hebrew_(Unicode_block)
+
+const HEBREW_NON_LETTERS = "[֑-ׇ]";
+const HEBREW_NON_LETTERS_REGEX = new RegExp(HEBREW_NON_LETTERS, "g");
+
+export function hebrewSearchRegex(text: string): RegExp {
+  return new RegExp(stripHebrewNonletters(text).replace(
+    /([א-ת])/g,
+    (_, group) => group + HEBREW_NON_LETTERS + "*"), "g");
+}
 
 /**
  * Removes all Hebrew-specific unicode characters that are not letters, i.e. vowels, trope
  */
 export function stripHebrewNonletters(text: string): string {
-  return text.replace(/[֑-ׇ]/g, "");
+  return text.replace(HEBREW_NON_LETTERS_REGEX, "");
 }
 
 const FIRST_TROPE = String.fromCharCode(0x0591);
@@ -72,6 +85,3 @@ export function stripHebrewNonlettersOrVowels(text: string): string {
 }
 
 
-export const ALEPH = "א";
-export const BET = "ב";
-export const TAV = "ת";

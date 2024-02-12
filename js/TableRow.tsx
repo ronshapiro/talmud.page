@@ -1,6 +1,7 @@
 import * as DOMPurify from "dompurify";
 import * as React from "react";
 import * as PropTypes from 'prop-types';
+import {hebrewSearchRegex} from "../hebrew";
 import {useHtmlRef} from "./hooks";
 import isEmptyText from "./is_empty_text";
 import {htmlWrapMatches} from "./html_replacer";
@@ -42,6 +43,17 @@ function useSanitizedText(text: string): string {
   return useMemo(() => DOMPurify.sanitize(text), [text]);
 }
 
+function useSearchableText(text: string): string {
+  const context = useConfiguration();
+  return useMemo(() => {
+    // do not submit: make sure more things use text only, perhaps ban all non-text versions here
+    if (context.searchQuery.length <= 1) {
+      return text;
+    }
+    return htmlWrapMatches(text, hebrewSearchRegex(context.searchQuery), FIND_WRAPPER);
+  }, [context.searchQuery]);
+}
+
 /**
  * This element defines the basic attributes of what is inserted in cell text. Specifically, it
  * translates html text into React nodes and applies an optional double-click listener.
@@ -61,8 +73,8 @@ export function CellText({
   });
   classes = classes || [];
 
-  // do not submit: need to also put this here!
-  const sanitizedText = useSanitizedText(text);
+  // do not submit: can this somehow share logic with the other case?
+  const sanitizedText = useSearchableText(useSanitizedText(text));
 
   /* eslint-disable react/no-danger */
   const cellText = (
@@ -146,17 +158,9 @@ function BaseCell({
 }: BaseCellProps): React.ReactElement | null {
   const context = useConfiguration();
   const className = ["table-cell"].concat(classes).join(" ");
-  let sanitizedText = useSanitizedText(typeof text === "string" ? text : "");
-  // do not submit: need to search without nikud, and make sure we don't break HTML. Perhaps need to
-  // do an HTML visit to do so properly
-  // do not submit: make sure more things use text only, perhaps ban all non-text versions here
-  if (context.searchQuery.length > 1) {
-    const changed = (sanitizedText !== htmlWrapMatches(sanitizedText, context.searchQuery, FIND_WRAPPER));
-    sanitizedText = htmlWrapMatches(sanitizedText, context.searchQuery, FIND_WRAPPER);
-    if (changed) {
-      console.log(changed, sanitizedText);
-    }
-  }
+  let sanitizedText = useSearchableText(
+    useSanitizedText(typeof text === "string" ? text : ""));
+
   const childrenProp = (typeof text === "string")
     ? {dangerouslySetInnerHTML: {__html: sanitizedText}}
     : {children: text};
@@ -305,6 +309,19 @@ function TableRow(props: TableRowProps): React.ReactElement {
     onUnexpand,
     sectionIdForHighlighting,
   } = props;
+
+  const validate = (x: any) => {
+    if (Array.isArray(x)) {
+      const invalid = x.filter(xi => xi.type.name !== "Elements");
+      if (invalid.length > 0) {
+        console.log("!!!", invalid);
+      }
+    } else if (typeof x !== "string" && hebrew?.type?.name !== "Elements") {
+      console.log("!@$@!$", id, hebrew);
+    }
+  };
+  validate(hebrew);
+  validate(english);
 
   const [isEnglishExpanded, setIsEnglishExpanded] = useState(expandEnglishByDefault ?? false);
   const context = useConfiguration();

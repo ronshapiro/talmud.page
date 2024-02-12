@@ -5,13 +5,17 @@ const {document} = new JSDOM().window;
 options.document = document;
 
 class Subject {
-  pattern?: string;
+  pattern?: RegExp;
   wrapper?: Wrapper;
 
   constructor(readonly sourceText: string) {}
 
-  withMatchesWrapped(pattern: string, wrapper: Wrapper): Subject {
-    this.pattern = pattern;
+  withMatchesWrapped(pattern: string | RegExp, wrapper: Wrapper): Subject {
+    if (typeof pattern === "string") {
+      this.pattern = new RegExp(pattern, "g");
+    } else {
+      this.pattern = pattern;
+    }
     this.wrapper = wrapper;
     return this;
   }
@@ -30,6 +34,10 @@ function assertThatHtml(sourceText: string): Subject {
 
 const SPAN = {prefix: "<span>", suffix: "</span>"};
 const UNDERSCORES = {prefix: "__", suffix: "__"};
+
+assertThatHtml("<x>hello b</x>")
+  .withMatchesWrapped("b", SPAN)
+  .equals("<x>hello <span>b</span></x>");
 
 assertThatHtml("<outerb>hello <b><i>b</i></b></outerb>")
   .withMatchesWrapped("b", SPAN)
@@ -60,3 +68,11 @@ describe("repeats", () => {
     .withMatchesWrapped("hello", SPAN)
     .equals("a<span>hello</span> <span>hello</span>a");
 });
+
+assertThatHtml("hello regex")
+  .withMatchesWrapped("[lr]", {prefix: "<", suffix: ">"})
+  .equals("he<l><l>o <r>egex")
+
+assertThatHtml("no match")
+  .withMatchesWrapped("[A-Z]", {prefix: "<", suffix: ">"})
+  .equals("no match")
