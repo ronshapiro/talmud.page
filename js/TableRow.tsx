@@ -40,26 +40,33 @@ interface CellTextProps {
 }
 
 function useSanitizedText(text: string): string {
-  const val = useMemo(() => DOMPurify.sanitize(text, {ADD_TAGS: ["span-highlight"]}), [text]);
-  if (text.includes("high")) {
-    console.log("!!", val);
-  }
-  return val;
+  return useMemo(() => DOMPurify.sanitize(text, {ADD_TAGS: ["span-highlight"]}), [text]);
 }
 
-const FIND_WRAPPER = {
-  prefix: '<span-search-term class="foundTerm">',
-  suffix: "</span-search-term>",
-}
-
-function useSearchableText(text: string): string {
+function useSearchableText(text: string, ref: React.RefObject<HTMLElement>): string {
   const context = useConfiguration();
+  useEffect(() => {
+    const hits = Array.from($(ref.current).find("[search-term-index]"));
+    for (let i = 0; i < hits.length; i++) {
+      console.log(
+        i !== 0 ? hits[i - 1] : undefined,
+        hits[i],
+        i !== hits.length - 1 ? hits[i + 1] : undefined);
+    }
+  });
   return useMemo(() => {
     // do not submit: make sure more things use text only, perhaps ban all non-text versions here
-    if (context.searchQuery.length <= 1) {
-      return text;
-    }
-    return htmlWrapMatches(text, hebrewSearchRegex(context.searchQuery), FIND_WRAPPER);
+    if (context.searchQuery.length <= 1) return text;
+    const regex = hebrewSearchRegex(context.searchQuery)
+    if (regex === undefined) return text;
+
+    const {searchTermIndex} = context;
+    // do not submit: if there are multiple hits in the same cell, this will jump across them
+    context.searchTermIndex++;
+    return htmlWrapMatches(text, regex, {
+      prefix: `<span-search-term class="foundTerm" search-term-index="${searchTermIndex}">`,
+      suffix: "</span-search-term>",
+    });
   }, [text, context.searchQuery]);
 }
 
@@ -83,7 +90,7 @@ export function CellText({
   classes = classes || [];
 
   // do not submit: can this somehow share logic with the other case?
-  const sanitizedText = useSearchableText(useSanitizedText(text));
+  const sanitizedText = useSearchableText(useSanitizedText(text), ref);
 
   /* eslint-disable react/no-danger */
   const cellText = (
@@ -161,13 +168,14 @@ function BaseCell({
   doubleClickListener,
 }: BaseCellProps): React.ReactElement | null {
   const className = ["table-cell"].concat(classes).join(" ");
+  const ref = useHtmlRef<HTMLDivElement>();
+
   const sanitizedText = useSearchableText(
-    useSanitizedText(typeof text === "string" ? text : ""));
+    useSanitizedText(typeof text === "string" ? text : ""), ref);
 
   const childrenProp = (typeof text === "string")
     ? {dangerouslySetInnerHTML: {__html: sanitizedText}}
     : {children: text};
-  const ref = useHtmlRef<HTMLDivElement>();
 
   useEffect(() => {
     $(ref.current!).betterDoubleClick(doubleClickListener);

@@ -94,6 +94,7 @@ module.exports = {
     "no-param-reassign": "off",
     "react/button-has-type": "off",
     "react/jsx-closing-bracket-location": "off",
+    "react/jsx-one-expression-per-line": "off",
     "react/sort-comp": "off",
     "react/state-in-constructor": "off",
     "react/require-default-props": "off",

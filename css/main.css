@@ -588,3 +588,13 @@ h2, .title, .titleHebrew {
     padding: 0px 1px;
     margin: 0px -1px;
 }
+
+.inPageSearch .mdl-button {
+    padding: 0;
+    margin: 0;
+    min-width: 40px;
+}
+
+.searchMatchCounter {
+    padding: 0 10px;
+}

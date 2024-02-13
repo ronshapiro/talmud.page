@@ -64,10 +64,15 @@ export function stripHebrewNonletters(text: string): string {
   return text.replace(HEBREW_NON_LETTERS_REGEX, "");
 }
 
-export function hebrewSearchRegex(text: string): RegExp {
-  return new RegExp(stripHebrewNonletters(text).replace(
+export function hebrewSearchRegex(text: string): RegExp | undefined {
+  const regexText = stripHebrewNonletters(text).replace(
     /([א-ת])/g,
-    (_, group) => group + HEBREW_NON_LETTERS + "*"), "g");
+    (_, group) => group + HEBREW_NON_LETTERS + "*");
+  try {
+    return new RegExp(regexText, "g");
+  } catch {
+    return undefined;
+  }
 }
 
 const FIRST_TROPE = String.fromCharCode(0x0591);

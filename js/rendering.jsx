@@ -790,7 +790,7 @@ class Root extends Component {
     navigationExtension: PropTypes.object.isRequired,
   };
 
-  state = {}
+  state = {queryCount: 0}
   static contextType = ConfigurationContext;
 
   render() {
@@ -820,9 +820,10 @@ class Root extends Component {
         lastRemovable={i !== 0 && i === baseAmudim.length - 1} />));
 
     const updateSearchQuery = (query) => {
+      this.context.searchQuery = query;
+      this.context.searchTermIndex = 0;
       this.setState(previousState => {
-        this.context.searchQuery = query;
-        return {...previousState, query};
+        return {...previousState, query, queryCount: previousState.queryCount + 1};
       });
     };
 
@@ -832,7 +833,7 @@ class Root extends Component {
         {amudim}
         <NextButton navigationExtension={navigationExtension} />
         <Preferences rerender={() => this.forceUpdate()} />
-        <Search updateSearchQuery={updateSearchQuery} />
+        <Search updateSearchQuery={updateSearchQuery} queryCount={this.state.queryCount} />
         <RootHooks />
       </>
     );
