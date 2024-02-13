@@ -67,6 +67,7 @@ function extract(sourceText: string): [string, Tag[]] {
     } else {
       const asElement: HTMLElement = node as HTMLElement;
       const length = asElement.textContent?.length ?? 0
+      console.error(asElement.localName);
       tags.push(
         new StartTag(asElement.localName, currentText.length, length, asElement.attributes));
     }

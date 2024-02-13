@@ -40,7 +40,16 @@ interface CellTextProps {
 }
 
 function useSanitizedText(text: string): string {
-  return useMemo(() => DOMPurify.sanitize(text), [text]);
+  const val = useMemo(() => DOMPurify.sanitize(text, {ADD_TAGS: ["span-highlight"]}), [text]);
+  if (text.includes("high")) {
+    console.log("!!", val);
+  }
+  return val;
+}
+
+const FIND_WRAPPER = {
+  prefix: '<span-search-term class="foundTerm">',
+  suffix: "</span-search-term>",
 }
 
 function useSearchableText(text: string): string {
@@ -51,7 +60,7 @@ function useSearchableText(text: string): string {
       return text;
     }
     return htmlWrapMatches(text, hebrewSearchRegex(context.searchQuery), FIND_WRAPPER);
-  }, [context.searchQuery]);
+  }, [text, context.searchQuery]);
 }
 
 /**
@@ -144,11 +153,6 @@ interface BaseCellProps {
   doubleClickListener?: () => void;
 }
 
-const FIND_WRAPPER = {
-  prefix: '<span style="color: blue">',
-  suffix: "</span>",
-}
-
 function BaseCell({
   direction,
   classes,
@@ -156,9 +160,8 @@ function BaseCell({
   text,
   doubleClickListener,
 }: BaseCellProps): React.ReactElement | null {
-  const context = useConfiguration();
   const className = ["table-cell"].concat(classes).join(" ");
-  let sanitizedText = useSearchableText(
+  const sanitizedText = useSearchableText(
     useSanitizedText(typeof text === "string" ? text : ""));
 
   const childrenProp = (typeof text === "string")
@@ -309,20 +312,6 @@ function TableRow(props: TableRowProps): React.ReactElement {
     onUnexpand,
     sectionIdForHighlighting,
   } = props;
-
-  const validate = (x: any) => {
-    if (Array.isArray(x)) {
-      const invalid = x.filter(xi => xi.type.name !== "Elements");
-      if (invalid.length > 0) {
-        console.log("!!!", invalid);
-      }
-    } else if (typeof x !== "string" && hebrew?.type?.name !== "Elements") {
-      console.log("!@$@!$", id, hebrew);
-    }
-  };
-  validate(hebrew);
-  validate(english);
-
   const [isEnglishExpanded, setIsEnglishExpanded] = useState(expandEnglishByDefault ?? false);
   const context = useConfiguration();
   const hiddenHost = useHiddenHost();

@@ -57,17 +57,17 @@ export const TAV = "ת";
 const HEBREW_NON_LETTERS = "[֑-ׇ]";
 const HEBREW_NON_LETTERS_REGEX = new RegExp(HEBREW_NON_LETTERS, "g");
 
-export function hebrewSearchRegex(text: string): RegExp {
-  return new RegExp(stripHebrewNonletters(text).replace(
-    /([א-ת])/g,
-    (_, group) => group + HEBREW_NON_LETTERS + "*"), "g");
-}
-
 /**
  * Removes all Hebrew-specific unicode characters that are not letters, i.e. vowels, trope
  */
 export function stripHebrewNonletters(text: string): string {
   return text.replace(HEBREW_NON_LETTERS_REGEX, "");
+}
+
+export function hebrewSearchRegex(text: string): RegExp {
+  return new RegExp(stripHebrewNonletters(text).replace(
+    /([א-ת])/g,
+    (_, group) => group + HEBREW_NON_LETTERS + "*"), "g");
 }
 
 const FIRST_TROPE = String.fromCharCode(0x0591);
@@ -83,5 +83,3 @@ export function stripHebrewNonlettersOrVowels(text: string): string {
       .replace(/<small><\/small>/g, "") // sometimes the after-effect of replacing a paseq
   );
 }
-
-

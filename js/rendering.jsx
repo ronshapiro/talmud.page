@@ -423,7 +423,7 @@ class CommentarySection extends Component {
     return (
       // Wrap in a span so that the commentary colors don't get their own flex spacing separate from
       // the button.
-      <Elements key={commentaryKind.englishName}>
+      <span key={commentaryKind.englishName}>
         {button}
         {!isShowing && Array.from(commentaryHighlightColors(commentary)).map(
           color => (
@@ -434,9 +434,9 @@ class CommentarySection extends Component {
             </span>
           ),
         )}
-      </Elements>
+      </span>
     );
-    // do not submit: rename Elements
+    // do not submit: rename span
   }
 
   hasNestedPersonalComments(commentary) {
@@ -492,10 +492,6 @@ class CommentarySection extends Component {
       }, 100);
     }
   }
-}
-
-function Elements({children}) {
-  return <span>{children}</span>;
 }
 
 function Section({sections, sectionLabel, toggleMerging, isExpanded, lastUnexpandedUuid}) {
@@ -588,7 +584,7 @@ function Section({sections, sectionLabel, toggleMerging, isExpanded, lastUnexpan
         elements.push(<span key={`section-part-${i}-space`}> </span>);
       }
     }
-    return <Elements>{elements}</Elements>;
+    return <span>{elements}</span>;
   };
 
   sectionContents.push(
