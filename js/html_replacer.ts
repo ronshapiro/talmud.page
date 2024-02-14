@@ -23,7 +23,6 @@ class StartTag extends AbstractTag {
     super(tag);
   }
 
-  // do not submit: consider using the html_visitor.ts logic to simplify things
   asText(): string {
     const parts = ["<", this.tag];
     for (const attribute of Array.from(this.attributes)) {
@@ -66,7 +65,7 @@ function extract(sourceText: string): [string, Tag[]] {
       currentText += node.textContent;
     } else {
       const asElement: HTMLElement = node as HTMLElement;
-      const length = asElement.textContent?.length ?? 0
+      const length = asElement.textContent?.length ?? 0;
       tags.push(
         new StartTag(asElement.localName, currentText.length, length, asElement.attributes));
     }
@@ -107,7 +106,6 @@ export interface Wrapper {
 export function htmlWrapMatches(
   sourceText: string, pattern: RegExp, wrapper: Wrapper,
 ): string {
-  // do not submit: assert pattern is sanitized!
   const [plaintext, tags] = extract(sourceText);
   let currentLength = 0;
   let tagsIndex = 0;
@@ -162,7 +160,7 @@ export function htmlWrapMatches(
   const extraTags = tags.slice(tagsIndex);
   if (extraTags.length > 0) {
     console.error(extraTags);
-    // throw new Error("Extra tags!");
+    throw new Error("Extra tags!");
   }
 
   return chunks.join("");

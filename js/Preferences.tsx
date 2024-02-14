@@ -166,6 +166,16 @@ export function Preferences({rerender}: PreferencesViewParams): React.ReactEleme
       localStorageKeyName="expandEnglishByDefault" />,
     <PreferenceSection
       title={
+        <span>Show search bar <small>(beta)</small></span>
+      }
+      items={[
+        {value: "true", displayText: "Yes"},
+        {value: "false", displayText: "No"},
+      ]}
+      rerender={rerender}
+      localStorageKeyName="showSearchBar" />,
+    <PreferenceSection
+      title={
         <span>Enable offline mode<br /><small>(beta, recommended only when needed)</small></span>
       }
       items={[

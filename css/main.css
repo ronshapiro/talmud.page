@@ -577,6 +577,10 @@ h2, .title, .titleHebrew {
     user-select: none;
 }
 
+.inPageSearchBar {
+    flex-grow: 1;
+}
+
 .inPageSearchBar:empty::before {
     content: attr(placeholder);
     color: #aaa;

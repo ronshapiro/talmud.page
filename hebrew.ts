@@ -64,12 +64,17 @@ export function stripHebrewNonletters(text: string): string {
   return text.replace(HEBREW_NON_LETTERS_REGEX, "");
 }
 
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#escaping
+function escapeRegex(text: string): string {
+  return text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); // eslint-disable-line unicorn/better-regex
+}
+
 export function hebrewSearchRegex(text: string): RegExp | undefined {
-  const regexText = stripHebrewNonletters(text).replace(
+  const regexText = stripHebrewNonletters(escapeRegex(text)).replace(
     /([א-ת])/g,
     (_, group) => group + HEBREW_NON_LETTERS + "*");
   try {
-    return new RegExp(regexText, "g");
+    return new RegExp(regexText, "gi");
   } catch {
     return undefined;
   }

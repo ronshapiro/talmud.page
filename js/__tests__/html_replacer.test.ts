@@ -24,7 +24,7 @@ class Subject {
     test("", () => {
       const actual = htmlWrapMatches(this.sourceText, this.pattern!, this.wrapper!);
       expect(actual).toEqual(expected);
-    })
+    });
   }
 }
 
@@ -61,7 +61,7 @@ describe("If starting at a tag, put the wrapper first", () => {
   assertThatHtml("<strong>GEMARA:</strong> stuff")
     .withMatchesWrapped("GEMARA: stu", SPAN)
     .equals("<span><strong>GEMARA:</strong> stu</span>ff");
-})
+});
 
 describe("repeats", () => {
   assertThatHtml("ahello helloa")
@@ -71,8 +71,8 @@ describe("repeats", () => {
 
 assertThatHtml("hello regex")
   .withMatchesWrapped("[lr]", {prefix: "<", suffix: ">"})
-  .equals("he<l><l>o <r>egex")
+  .equals("he<l><l>o <r>egex");
 
 assertThatHtml("no match")
   .withMatchesWrapped("[A-Z]", {prefix: "<", suffix: ">"})
-  .equals("no match")
+  .equals("no match");

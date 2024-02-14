@@ -29,7 +29,7 @@ import {
 } from "./context.ts";
 import {mergeCommentaries} from "./mergeCommentaries.ts";
 import {Preferences} from "./Preferences.tsx";
-import {Search} from "./SnackbarReact.tsx";
+import {InPageSearch} from "./SnackbarReact.tsx";
 
 const JSX_NOOP = null;
 
@@ -436,7 +436,6 @@ class CommentarySection extends Component {
         )}
       </span>
     );
-    // do not submit: rename span
   }
 
   hasNestedPersonalComments(commentary) {
@@ -821,7 +820,6 @@ class Root extends Component {
 
     const updateSearchQuery = (query) => {
       this.context.searchQuery = query;
-      this.context.searchTermIndex = 0;
       this.setState(previousState => {
         return {...previousState, query, queryCount: previousState.queryCount + 1};
       });
@@ -833,7 +831,7 @@ class Root extends Component {
         {amudim}
         <NextButton navigationExtension={navigationExtension} />
         <Preferences rerender={() => this.forceUpdate()} />
-        <Search updateSearchQuery={updateSearchQuery} queryCount={this.state.queryCount} />
+        <InPageSearch updateSearchQuery={updateSearchQuery} queryCount={this.state.queryCount} />
         <RootHooks />
       </>
     );
