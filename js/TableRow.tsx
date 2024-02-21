@@ -29,8 +29,12 @@ function brTags(count: number): string {
   return result;
 }
 
+const SANITIZE_CONFIG = {
+  ADD_TAGS: ["span-highlight"],
+  ADD_ATTR: ["highlight-id"],
+};
 function useSanitizedText(text: string): string {
-  return useMemo(() => DOMPurify.sanitize(text, {ADD_TAGS: ["span-highlight"]}), [text]);
+  return useMemo(() => DOMPurify.sanitize(text, SANITIZE_CONFIG), [text]);
 }
 
 const SEARCH_TERM_WRAPPER = {
