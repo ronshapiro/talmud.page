@@ -91,6 +91,10 @@ export function CellText({
   );
   /* eslint-enable react/no-danger */
 
+  if (sectionIdForHighlighting === undefined) {
+    return cellText;
+  }
+
   return (
     <SwipeableBackground
       inline
