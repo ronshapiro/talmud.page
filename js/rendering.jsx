@@ -711,7 +711,10 @@ class Amud extends Component {
         const section = sections[i];
 
         const makeSeparator = () => <br key={`separator-${i}`} className="section-separator" />;
-        if (i !== 0 && section.steinsaltz_start_of_sugya) {
+        if (i !== 0 && (
+          section.steinsaltz_start_of_sugya
+            || section.hadran
+            || section.ref === "Hadran 1")) {
           output.push(makeSeparator());
         }
 
@@ -723,9 +726,13 @@ class Amud extends Component {
           if (currentSection.lastSegmentOfSection) break;
           if (!currentSection.defaultMergeWithNext && !this.context.compactLayout()) break;
           if (this.state.expandMergedRef[currentSection.uuid]) break;
-          if (nextSection && this.state.expandMergedRef[nextSection.uuid]) break;
-          if (nextSection && nextSection.steinsaltz_start_of_sugya) break;
-          if (nextSection && nextSection.hadran) break;
+          if (nextSection && (
+            this.state.expandMergedRef[nextSection.uuid]
+              || nextSection.steinsaltz_start_of_sugya
+              || nextSection.hadran
+              || nextSection.ref.startsWith("Hadran "))) {
+            break;
+          }
           i++;
           if (i === sections.length) {
             break;
