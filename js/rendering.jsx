@@ -1093,4 +1093,8 @@ export class Renderer {
     const metadata = amudMetadata();
     return `${metadata.masechet} ${section}`;
   }
+
+  newPageTitleHebrew(section) {
+    return this.newPageTitle(section);
+  }
 }

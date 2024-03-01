@@ -4,6 +4,7 @@ import {getCommentaryTypes} from "./commentaryTypes.ts";
 import {driveClient} from "./google_drive/singleton.ts";
 import {Runner} from "./page_runner.js";
 import {Renderer} from "./rendering.jsx";
+import {intToHebrewNumeral} from "../hebrew.ts";
 
 class TanakhRenderer extends Renderer {
   constructor() {
@@ -21,6 +22,11 @@ class TanakhRenderer extends Renderer {
       }, {
         allowCompactLayout: true,
       });
+  }
+
+  newPageTitleHebrew(section) {
+    const {hebrewName} = books[amudMetadata().masechet];
+    return `${hebrewName} ${intToHebrewNumeral(parseInt(section))}`;
   }
 }
 

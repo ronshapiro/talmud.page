@@ -113,6 +113,7 @@ export class Runner {
     this.renderer.setAmud({
       id: section,
       title: this.renderer.newPageTitle(section),
+      titleHebrew: this.renderer.newPageTitleHebrew(section),
       loading: true,
       sections: [],
     });

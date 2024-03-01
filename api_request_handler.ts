@@ -10,7 +10,7 @@ import {Book, books, internalLinkableRef} from "./books";
 import {ALL_COMMENTARIES, CommentaryType} from "./commentaries";
 import {readUtf8} from "./files";
 import {hadranSegments, isHadran} from "./hadran";
-import {stripHebrewNonlettersOrVowels, intToHebrewNumeral, ALEPH, BET, TAV} from "./hebrew";
+import {stripHebrewNonlettersOrVowels, intToHebrewNumeral, ALEPH, TAV} from "./hebrew";
 import {Logger, consoleLogger} from "./logger";
 import {mergeRefs} from "./ref_merging";
 import {refSorter} from "./js/google_drive/ref_sorter";
@@ -72,6 +72,7 @@ import {SectionSymbolRemover} from "./source_formatting/section_symbol";
 import {SefariaLinkSanitizer} from "./source_formatting/sefaria_link_sanitizer";
 import {ShulchanArukhHeaderRemover} from "./source_formatting/shulchan_arukh_remove_header";
 import {isPehSectionEnding, transformTanakhSpacing} from "./source_formatting/tanakh_spacing";
+import {formatDafInHebrew} from "./talmud";
 import {hasMatchingProperty} from "./util/objects";
 import {checkNotUndefined} from "./js/undefined";
 import {getWeekdayReading} from "./weekday_parshiot";
@@ -1104,10 +1105,7 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
   }
 
   protected makeTitleHebrew(): string {
-    const {hebrewName} = this.book();
-    const dafNumber = intToHebrewNumeral(parseInt(this.page));
-    const suffix = this.page.endsWith("a") ? ALEPH : BET;
-    return `${hebrewName} ${dafNumber},${suffix}`;
+    return formatDafInHebrew(this.book().hebrewName, this.page);
   }
 
   protected extraPromises(): Promise<any>[] {

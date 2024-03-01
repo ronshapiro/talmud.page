@@ -4,6 +4,7 @@ import {Renderer} from "./rendering.jsx";
 import {amudMetadata, computePreviousAmud, computeNextAmud} from "./amud.ts";
 import {driveClient} from "./google_drive/singleton.ts";
 import {Runner} from "./page_runner.js";
+import {formatDafInHebrew} from "../talmud.ts";
 
 class TalmudRenderer extends Renderer {
   constructor() {
@@ -28,6 +29,11 @@ class TalmudRenderer extends Renderer {
         isTalmud: true,
         allowCompactLayout: true,
       });
+  }
+
+  newPageTitleHebrew(section) {
+    const {hebrewName} = books[amudMetadata().masechet];
+    return formatDafInHebrew(hebrewName, section);
   }
 }
 
