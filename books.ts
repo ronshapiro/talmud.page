@@ -1143,7 +1143,7 @@ export const books = new BookIndex([
   new BibleBook({
     canonicalName: "Lamentations",
     hebrewName: "איכה",
-    aliases: ["Eichah", "Eicha", "Eikhah"],
+    aliases: ["Eichah", "Eicha", "Eikhah", "Eikha"],
     end: "5",
   }),
   new BibleBook({
