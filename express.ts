@@ -34,6 +34,10 @@ import {getWeekdayReading} from "./weekday_parshiot";
 const app = express();
 const debug = app.settings.env === "development";
 
+// Server AND Client side precaching will lead to double precaching on the server. That seems
+// unnecessary.
+const DO_PRECACHE = false;
+
 nunjucks.configure("dist", {
   autoescape: true,
   express: app,
@@ -382,6 +386,7 @@ const preCachedPageStack: [string, string, Logger][] = [];
 const preCachingPromiseChain = new PromiseChain();
 
 function precache(title: string, page: string, logger: Logger) {
+  if (!DO_PRECACHE) return;
   preCachedPageStack.push([title, page, logger]);
   preCachingPromiseChain.add(() => {
     return getAndCacheApiResponse(...preCachedPageStack.pop()!, "Precaching");

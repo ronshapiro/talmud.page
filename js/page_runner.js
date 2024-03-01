@@ -108,6 +108,10 @@ export class Runner {
     timeoutPromise(5000).then(() => this.apiCache.purge());
   }
 
+  getAndCacheSection(section) {
+    return this.apiCache.getAndUpdate(`api/${amudMetadata().masechet}/${section}`);
+  }
+
   requestSection(section, options) {
     options = options || {};
     this.renderer.setAmud({
@@ -117,9 +121,8 @@ export class Runner {
       loading: true,
       sections: [],
     });
-    const endpoint = `api/${amudMetadata().masechet}/${section}`;
     this.requestQueue.add(() => {
-      return this.apiCache.getAndUpdate(endpoint).then((results) => {
+      return this.getAndCacheSection(section).then((results) => {
         options.finished = true;
         this.renderer.setAmud(results);
         refreshPageState();
@@ -159,6 +162,7 @@ export class Runner {
     const nextSection = this.renderer.navigationExtension.next();
     this.requestSection(nextSection, {
       newUrl: this.newUrlRange(metadata.amudStart, nextSection),
+      callback: () => this.preloadNextSection(),
     });
 
     gtag("event", "load_section", {
@@ -167,18 +171,35 @@ export class Runner {
     });
   }
 
+  preloadNextSection() {
+    if (this.renderer.navigationExtension.hasNext()) {
+      this.requestQueue.add(
+        () => this.getAndCacheSection(this.renderer.navigationExtension.next()));
+    }
+  }
+
   addPreviousSection() {
     const metadata = amudMetadata();
     const previousSection = this.renderer.navigationExtension.previous();
     this.requestSection(previousSection, {
       newUrl: this.newUrlRange(previousSection, metadata.amudEnd),
-      callback: () => setTimeout(() => setWindowTop("#amud-" + metadata.amudStart), 10),
+      callback: () => {
+        setTimeout(() => setWindowTop("#amud-" + metadata.amudStart), 10);
+        this.preloadPreviousSection();
+      },
     });
 
     gtag("event", "load_section", {
       direction: "previous",
       section: previousSection,
     });
+  }
+
+  preloadPreviousSection() {
+    if (this.renderer.navigationExtension.hasPrevious()) {
+      this.requestQueue.add(
+        () => this.getAndCacheSection(this.renderer.navigationExtension.previous()));
+    }
   }
 
   removeFirstSection() {
@@ -249,6 +270,10 @@ export class Runner {
           modalContainer.hide();
         }
       });
+    });
+    onceDocumentReady.execute(() => {
+      this.preloadNextSection();
+      this.preloadPreviousSection();
     });
 
     this.driveClient.signInStatusListener = () => {
