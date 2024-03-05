@@ -127,7 +127,7 @@ app.use((req, res, next) => {
 function sendLazyStaticFile(res: express.Response, file: string) {
   res.sendFile(file, {
     headers: {
-      'Cache-Control': 'max-age=86400, stale-while-revalidate=7776000',
+      'Cache-Control': 'max-age=86400, stale-while-revalidate=7776000, public',
     },
   });
 }
@@ -152,7 +152,7 @@ for (const file of fs.readdirSync("dist").filter(x => !x.endsWith(".html"))) {
 
 const STATIC_FILES_LAZY_CACHE_OPTIONS = {
   setHeaders: (res: express.Response) => {
-    res.setHeader('Cache-Control', 'max-age=86400, stale-while-revalidate=7776000');
+    res.setHeader('Cache-Control', 'max-age=86400, stale-while-revalidate=7776000, public');
   },
 };
 
