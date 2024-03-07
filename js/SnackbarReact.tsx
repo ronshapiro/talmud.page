@@ -141,6 +141,9 @@ export function InPageSearch({
   }, [matches.length]);
 
   const children = [
+    <SnackbarButton key="clear" disabled={content.length === 0} onClick={() => setContent("")}>
+      <i className="material-icons">close</i>
+    </SnackbarButton>,
     <ContentEditable
       key="searchBar"
       tagName="span"
