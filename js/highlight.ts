@@ -24,7 +24,8 @@ function injectHighlighting(
       if (currentIndex + child.data.length >= start && currentIndex <= end) {
         const before = document.createTextNode(child.data.substring(0, highlightedStart));
         const after = document.createTextNode(child.data.substring(highlightedEnd));
-        const highlighted = document.createElement("span-highlight");
+        const highlighted = document.createElement(
+          highlightingStyle === "email" ? "span" : "span-highlight");
         // TODO: extract color from highlight range and set that here
         if (highlightingStyle === "email") {
           // @ts-ignore
