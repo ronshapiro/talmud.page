@@ -1,10 +1,10 @@
 import * as fs from "fs";
 import {Amud, Section as Segment} from "./apiTypes";
-import {books, Masechet} from "./books";
+import {books, TalmudMasechet} from "./books";
 import {stripHebrewNonletters} from "./hebrew";
 
 export function hadranSegments(masechetName: string): Segment[] {
-  const masechet = books.byCanonicalName[masechetName] as Masechet;
+  const masechet = books.byCanonicalName[masechetName] as TalmudMasechet;
   const page = JSON.parse(
     fs.readFileSync("precomputed_texts/hadran.json", {encoding: "utf-8"})) as Amud;
   for (const segment of page.sections) {

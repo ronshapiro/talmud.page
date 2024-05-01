@@ -1841,7 +1841,7 @@ export class ApiRequestHandler {
       } else if (bookName === "BirkatHamazon") {
         return [this.birkatHamazonHandlerClass, true];
       }
-      const clazz = books.byCanonicalName[bookName].isMasechet()
+      const clazz = books.byCanonicalName[bookName].isTalmud()
         ? this.talmudHandlerClass
         : this.tanakhHandlerClass;
       return [clazz, false];

@@ -25,7 +25,7 @@ function skipRef(ref: string): boolean {
 }
 
 for (const book of Array.from(new Set(Object.values(books.byCanonicalName)))) {
-  if (!book.isMasechet() && !book.isBibleBook()) continue;
+  if (!book.isTalmud() && !book.isBibleBook()) continue;
   if (book.canonicalName === "Shekalim") continue;
 
   for (const section of Array.from(book.sections)) {

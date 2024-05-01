@@ -64,7 +64,7 @@ function isMissingSteinsaltz(segment: Section) {
 }
 
 for (const book of Array.from(new Set(Object.values(books.byCanonicalName)))) {
-  if (!book.isMasechet()) continue;
+  if (!book.isTalmud()) continue;
   if (book.canonicalName === "Shekalim") continue;
 
   const sugyaEndpoints: any[] = [];

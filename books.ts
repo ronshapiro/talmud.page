@@ -79,12 +79,16 @@ export abstract class Book {
   abstract previousPage(page: string): string;
   abstract arePagesInReverseOrder(start: string, end: string): boolean;
 
-  isMasechet(): boolean {
+  isTalmud(): boolean {
     return false;
   }
 
   isBibleBook(): boolean {
     return false;
+  }
+
+  sectionWord(): string {
+    return "section";
   }
 
   bookNameForRef(): string {
@@ -160,16 +164,16 @@ function amudim(start: string, end: string): string[] {
   return result;
 }
 
-interface MasechetConstructorParams extends Omit<BookConstructorParams, "sections" | "start"> {
+interface TalmudMasechetConstructorParams extends Omit<BookConstructorParams, "sections" | "start"> {
   // https://bit.ly/vocalized-masechet-names
   vocalizedHebrewName: string;
   start?: string;
 }
 
-export class Masechet extends Book {
+export class TalmudMasechet extends Book {
   vocalizedHebrewName: string;
 
-  constructor(params: MasechetConstructorParams) {
+  constructor(params: TalmudMasechetConstructorParams) {
     const start = params.start ?? "2a";
     super({
       ...params,
@@ -200,16 +204,20 @@ export class Masechet extends Book {
     return "Masechet";
   }
 
-  isMasechet(): boolean {
+  isTalmud(): boolean {
     return true;
+  }
+
+  sectionWord(): string {
+    return "masechet";
   }
 }
 
-interface YerushalmiMasechetConstructorParams extends MasechetConstructorParams {
+interface YerushalmiMasechetConstructorParams extends TalmudMasechetConstructorParams {
   refRewriting: Record<string, string>;
 }
 
-export class YerushalmiMasechet extends Masechet {
+export class YerushalmiMasechet extends TalmudMasechet {
   refRewriting: Record<string, string>;
 
   constructor(params: YerushalmiMasechetConstructorParams) {
@@ -580,8 +588,7 @@ export class BookIndex {
 
     const book = this.byCanonicalName[title];
     if (words.length === 0) {
-      const sectionWord = book.isMasechet() ? "masechet" : "section";
-      throw new InvalidQueryException(`No ${sectionWord} specified in query: "${query}"`);
+      throw new InvalidQueryException(`No ${book.sectionWord()} specified in query: "${query}"`);
     }
 
     if (words.length === 1 && words[0].includes("-")) {
@@ -592,7 +599,7 @@ export class BookIndex {
       words = [sections[0], "-", sections[1]];
     }
 
-    const rangeParser = book.isMasechet() ? new AmudRangeParser() : new ChapterRangeParser();
+    const rangeParser = book.isTalmud() ? new AmudRangeParser() : new ChapterRangeParser();
 
     if (words.length === 1) {
       rangeParser.validate(words);
@@ -610,35 +617,35 @@ export class BookIndex {
 }
 
 export const books = new BookIndex([
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Arakhin",
     hebrewName: "ערכין",
     vocalizedHebrewName: "עֲרָכִין",
     aliases: ["Arachin"],
     end: "34a",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Avodah Zarah",
     hebrewName: "עבודה זרה",
     vocalizedHebrewName: "עֲבוֹדָה זָרָה",
     aliases: ["Avoda Zarah", "Avoda Zara", "Avodah Zara"],
     end: "76b",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Bava Batra",
     hebrewName: "בבא בתרא",
     vocalizedHebrewName: "בָּבָא בָּתְרָא",
     aliases: ["Bava Basra"],
     end: "176b",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Bava Kamma",
     hebrewName: "בבא קמא",
     vocalizedHebrewName: "בָּבָא קַמָּא",
     aliases: ["Bava Kama"],
     end: "119b",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Bava Metzia",
     hebrewName: "בבא מציעא",
     vocalizedHebrewName: "בָּבָא מְצִיעָא",
@@ -648,21 +655,21 @@ export const books = new BookIndex([
     ],
     end: "119a",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Beitzah",
     hebrewName: "ביצה",
     vocalizedHebrewName: "בֵּיצָה",
     aliases: ["Beitza", "Beitsah", "Beitsa"],
     end: "40b",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Bekhorot",
     hebrewName: "בכורות",
     vocalizedHebrewName: "בְּכוֹרוֹת",
     aliases: ["Bechorot", "Bechoros", "Bekhoros"],
     end: "61a",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Berakhot",
     hebrewName: "ברכות",
     vocalizedHebrewName: "בְּרָכוֹת",
@@ -672,42 +679,42 @@ export const books = new BookIndex([
     ],
     end: "64a",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Chagigah",
     hebrewName: "חגיגה",
     vocalizedHebrewName: "חֲגִיגָה",
     aliases: ["Chagiga", "Khagigah", "Khagiga"],
     end: "27a",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Chullin",
     hebrewName: "חולין",
     vocalizedHebrewName: "חֻלִּין",
     aliases: ["Chulin", "Hulin", "Hullin"],
     end: "142a",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Eruvin",
     hebrewName: "עירובין",
     vocalizedHebrewName: "עֵירוּבִין",
     aliases: ["Eiruvin"],
     end: "105a",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Gittin",
     hebrewName: "גיטין",
     vocalizedHebrewName: "גִּיטִּין",
     aliases: ["Gitin"],
     end: "90b",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Horayot",
     hebrewName: "הוריות",
     vocalizedHebrewName: "הוֹרָיוֹת",
     aliases: ["Horayos"],
     end: "14a",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Keritot",
     hebrewName: "כריתות",
     vocalizedHebrewName: "כְּרִיתוֹת",
@@ -717,7 +724,7 @@ export const books = new BookIndex([
     ],
     end: "28b",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Ketubot",
     hebrewName: "כתובות",
     vocalizedHebrewName: "כְּתֻבּוֹת",
@@ -727,14 +734,14 @@ export const books = new BookIndex([
     ],
     end: "112b",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Kiddushin",
     hebrewName: "קידושין",
     vocalizedHebrewName: "קִדּוּשִׁין",
     aliases: ["Kidushin"],
     end: "82b",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Makkot",
     hebrewName: "מכות",
     vocalizedHebrewName: "מַכּוֹת",
@@ -744,77 +751,77 @@ export const books = new BookIndex([
     ],
     end: "24b",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Megillah",
     hebrewName: "מגילה",
     vocalizedHebrewName: "מְגִלָּה",
     aliases: ["Megilla", "Megila", "Megilah"],
     end: "32a",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Meilah",
     vocalizedHebrewName: "מְעִילָה",
     hebrewName: "מעילה",
     aliases: ["Meila"],
     end: "22a",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Menachot",
     hebrewName: "מנחות",
     vocalizedHebrewName: "מְנָחוֹת",
     aliases: ["Menakhot", "Menachos", "Menakhos"],
     end: "110a",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Moed Katan",
     hebrewName: "מועד קטן",
     vocalizedHebrewName: "מוֹעֵד קָטָן",
     aliases: ["Moed Catan"],
     end: "29a",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Nazir",
     hebrewName: "נזיר",
     vocalizedHebrewName: "נָזִיר",
     aliases: [],
     end: "66b",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Nedarim",
     hebrewName: "נדרים",
     vocalizedHebrewName: "נְדָרִים",
     aliases: [],
     end: "91b",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Niddah",
     hebrewName: "נדה",
     vocalizedHebrewName: "נִדָּה",
     aliases: ["Nidda", "Nidah", "Nida"],
     end: "73a",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Pesachim",
     hebrewName: "פסחים",
     vocalizedHebrewName: "פְּסָחִים",
     aliases: ["Pesahim"],
     end: "121b",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Rosh Hashanah",
     hebrewName: "ראש השנה",
     vocalizedHebrewName: "רֹאשׁ הַשָּׁנָה",
     aliases: ["Rosh Hashana", "Rosh Hoshona", "Rosh Hoshonah", "RH"],
     end: "35a",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Sanhedrin",
     hebrewName: "סנהדרין",
     vocalizedHebrewName: "סַנהֶדרִין",
     aliases: [],
     end: "113b",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Shabbat",
     hebrewName: "שבת",
     vocalizedHebrewName: "שַׁבָּת",
@@ -878,35 +885,35 @@ export const books = new BookIndex([
       "22b": "8.4.12-15",
     },
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Shevuot",
     hebrewName: "שבועות",
     vocalizedHebrewName: "שְׁבוּעוֹת",
     aliases: ["Shevuos"],
     end: "49b",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Sotah",
     hebrewName: "סוטה",
     vocalizedHebrewName: "סוֹטָה",
     aliases: ["Sota", "Sottah", "Sotta"],
     end: "49b",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Sukkah",
     hebrewName: "סוכה",
     vocalizedHebrewName: "סֻכָּה",
     aliases: ["Sukka", "Suka", "Succah", "Succa"],
     end: "56b",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Taanit",
     hebrewName: "תענית",
     vocalizedHebrewName: "תַּעֲנִית",
     aliases: ["Taanit", "Taanis", "Tanit", "Tanis"],
     end: "31a",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Tamid",
     hebrewName: "תמיד",
     vocalizedHebrewName: "תָּמִיד",
@@ -914,28 +921,28 @@ export const books = new BookIndex([
     start: "25b",
     end: "33b",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Temurah",
     hebrewName: "תמורה",
     vocalizedHebrewName: "תְּמוּרָה",
     aliases: ["Temura"],
     end: "34a",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Yevamot",
     hebrewName: "יבמות",
     vocalizedHebrewName: "יְבָמוֹת",
     aliases: ["Yevamos"],
     end: "122b",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Yoma",
     hebrewName: "יומא",
     vocalizedHebrewName: "יוֹמָא",
     aliases: ["Yuma", "Yomah", "Yumah"],
     end: "88a",
   }),
-  new Masechet({
+  new TalmudMasechet({
     canonicalName: "Zevachim",
     hebrewName: "זבחים",
     vocalizedHebrewName: "זְבָחִים",

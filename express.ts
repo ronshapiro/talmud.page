@@ -281,7 +281,7 @@ app.get("/BirkatHamazon", (req, res) => {
 });
 
 function template(book: Book): string {
-  return book.isMasechet() ? "talmud_page.html" : "tanakh.html";
+  return book.isTalmud() ? "talmud_page.html" : "tanakh.html";
 }
 
 app.get("/:title/:section", (req, res) => {
@@ -291,7 +291,7 @@ app.get("/:title/:section", (req, res) => {
     return res.redirectWithQueryParameters(`/${canonicalName}/${section}`);
   }
   const book = books.byCanonicalName[title];
-  if (book.isMasechet() && isNumeric(section)) {
+  if (book.isTalmud() && isNumeric(section)) {
     return res.redirectWithQueryParameters(fullDafUrl(book, section, section));
   }
   validatePages(book, section);
@@ -309,7 +309,7 @@ app.get("/:title/:start/to/:end", (req, res) => {
   }
 
   const book = books.byCanonicalName[title];
-  if (book.isMasechet() && (isNumeric(start) || isNumeric(end))) {
+  if (book.isTalmud() && (isNumeric(start) || isNumeric(end))) {
     return res.redirectWithQueryParameters(fullDafUrl(book, start, end));
   }
 
