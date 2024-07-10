@@ -559,15 +559,25 @@ h2, .title, .titleHebrew {
     padding: 20px;
 }
 
-#showSettings {
+#showSettings, #showSearch {
     position: fixed;
-    left: 15px;
-    top: 15px;
+    color: var(--highlight-gray);
     padding: 25px;
+    left: 15px;
 }
 
-#showSettings .material-icons {
-    color: var(--highlight-gray);
+#showSettings {
+    top: 15px;
+}
+
+#showSearch {
+    bottom: 15px;
+}
+
+@media only screen and (max-width: 720px) {
+    #showSearch.lift {
+        bottom: 60px;
+    }
 }
 
 /* Important for multi-line preferences text */

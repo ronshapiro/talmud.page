@@ -105,10 +105,24 @@ export function InPageSearch({
   // This doesn't actually do anything, but it does help ensure that when the query changes
   // this gets rerendered.
   queryCount, // eslint-disable-line @typescript-eslint/no-unused-vars
-}: SearchProps): React.ReactElement | null {
-  if (localStorage.showSearchBar !== "true") {
-    return null;
-  }
+}: SearchProps): React.ReactElement[] {
+  const setRefreshCount = useState(0)[1];
+  const isShowing = () => localStorage.showSearchBar === "true";
+  const toggle = () => {
+    setRefreshCount(previous => previous + 1);
+    localStorage.showSearchBar = !isShowing();
+  };
+  const elements = [
+    <button
+      id="showSearch"
+      key="showSearch"
+      className={`mdl-button mdl-js-button mdl-button--icon ${isShowing() ? "lift" : ""}`}
+      onClick={() => toggle()}
+      >
+      <i className="material-icons">search</i>
+    </button>,
+  ];
+
   const contentEditableRef = useHtmlRef<HTMLElement>();
   const [asRegex, setAsRegexBase] = useState(false);
   const [content, setContent] = useState("");
@@ -139,6 +153,10 @@ export function InPageSearch({
       setCurrentMatch(newIndex === -1 ? CURRENT_MATCH_UNSET : newIndex);
     }
   }, [matches.length]);
+
+  if (!isShowing()) {
+    return elements;
+  }
 
   const children = [
     <SnackbarButton key="clear" disabled={content.length === 0} onClick={() => setContent("")}>
@@ -186,5 +204,6 @@ export function InPageSearch({
       </SnackbarButton>
     </span>);
 
-  return <Snackbar><div>{children}</div></Snackbar>;
+  elements.push(<Snackbar key="snack"><div>{children}</div></Snackbar>);
+  return elements;
 }
