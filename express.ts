@@ -281,7 +281,13 @@ app.get("/BirkatHamazon", (req, res) => {
 });
 
 function template(book: Book): string {
-  return book.isTalmud() ? "talmud_page.html" : "tanakh.html";
+  if (book.isTalmud()) {
+    return "talmud_page.html";
+  }
+  if (book.isMishna()) {
+    return "mishna.html";
+  }
+  return "tanakh.html";
 }
 
 app.get("/:title/:section", (req, res) => {

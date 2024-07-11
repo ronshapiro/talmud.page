@@ -18,6 +18,7 @@ const entryFiles = [
   "./templates/birkat_hamazon_page.html",
   "./templates/daf_yomi_redirector.html",
   "./templates/homepage.html",
+  "./templates/mishna.html",
   "./templates/notes_redirecter.html",
   "./templates/siddur_page.html",
   "./templates/talmud_page.html",

@@ -25,7 +25,7 @@ const STEINSALTZ_OPTIONS = {
 
 export class RealRequestMaker extends RequestMaker {
   makeRequest<T>(endpoint: string): Promise<T> {
-    return fetch(`https://sefaria.org/api${encodeURI(endpoint)}`, RETRY_OPTIONS)
+    return fetch(`https://www.sefaria.org/api${encodeURI(endpoint)}`, RETRY_OPTIONS)
       .then(x => x.json())
       .then(json => (json.error ? Promise.reject(json) : Promise.resolve(json)));
   }

@@ -6,11 +6,10 @@ import {Runner} from "./page_runner.js";
 import {Renderer} from "./rendering.jsx";
 import {intToHebrewNumeral} from "../hebrew.ts";
 
-// Consider merging impl with Mishna?
-class TanakhRenderer extends Renderer {
+class MishnaRenderer extends Renderer {
   constructor() {
     super(
-      getCommentaryTypes("tanakh"),
+      getCommentaryTypes("mishna"),
       {
         previous: () => (parseInt(amudMetadata().amudStart) - 1).toString(),
         next: () => (parseInt(amudMetadata().amudEnd) + 1).toString(),
@@ -21,7 +20,7 @@ class TanakhRenderer extends Renderer {
           return metadata.amudEnd !== books[metadata.masechet].end;
         },
       }, {
-        allowCompactLayout: true,
+        allowCompactLayout: false,
       });
   }
 
@@ -31,4 +30,4 @@ class TanakhRenderer extends Renderer {
   }
 }
 
-new Runner(new TanakhRenderer(), driveClient, "tanakh").main();
+new Runner(new MishnaRenderer(), driveClient, "mishna").main();

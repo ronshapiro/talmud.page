@@ -1293,6 +1293,19 @@ class TanakhApiRequestHandler extends AbstractApiRequestHandler {
   }
 }
 
+export class MishnaApiRequestHandler extends AbstractApiRequestHandler {
+  protected makeId(): string {
+    return this.page;
+  }
+
+  protected makeTitleHebrew(): string {
+    const {hebrewName} = this.book();
+    const chapter = intToHebrewNumeral(parseInt(this.page));
+    return `${hebrewName} ${chapter}`;
+  }
+}
+
+
 class WeekdayTorahPortionHandler extends AbstractApiRequestHandler {
   protected makeId(): string {
     return this.page.replace(/\//g, "_");
@@ -1820,6 +1833,7 @@ class BirkatHamazonApiRequestHandler extends LiturgicalApiRequestHandler {
 export class ApiRequestHandler {
   private talmudHandlerClass = TalmudApiRequestHandler;
   private tanakhHandlerClass = TanakhApiRequestHandler;
+  private mishnaHandlerClass = MishnaApiRequestHandler;
   private siddurAshkenazHandlerClass = SiddurAshkenazApiRequestHandler;
   private siddurSefardHandlerClass = SiddurSefardApiRequestHandler;
   private weekdayTorahHandlerClass = WeekdayTorahPortionHandler;
@@ -1841,7 +1855,10 @@ export class ApiRequestHandler {
       } else if (bookName === "BirkatHamazon") {
         return [this.birkatHamazonHandlerClass, true];
       }
-      const clazz = books.byCanonicalName[bookName].isTalmud()
+      const book = books.byCanonicalName[bookName];
+      if (book.isMishna()) return [this.mishnaHandlerClass, false];
+
+      const clazz = book.isTalmud()
         ? this.talmudHandlerClass
         : this.tanakhHandlerClass;
       return [clazz, false];

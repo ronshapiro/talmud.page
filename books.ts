@@ -87,6 +87,10 @@ export abstract class Book {
     return false;
   }
 
+  isMishna(): boolean {
+    return false;
+  }
+
   sectionWord(): string {
     return "section";
   }
@@ -242,6 +246,46 @@ function chapterSections(end: number): string[] {
     result.push(i.toString());
   }
   return result;
+}
+
+interface MishnaMasechetParams {
+  canonicalName: string;
+  hebrewName: string;
+  aliases?: string[] | undefined;
+  numChapters: number;
+}
+
+class MishnaMasechet extends Book {
+  constructor(params: MishnaMasechetParams) {
+    super({
+      canonicalName: params.canonicalName,
+      hebrewName: params.hebrewName,
+      aliases: params.aliases ?? [],
+      start: "1",
+      end: params.numChapters.toString(),
+      sections: chapterSections(params.numChapters),
+    });
+  }
+
+  nextPage(page: string): string {
+    return (parseInt(page) + 1).toString();
+  }
+
+  previousPage(page: string): string {
+    return (parseInt(page) - 1).toString();
+  }
+
+  arePagesInReverseOrder(start: string, end: string): boolean {
+    return parseInt(start) > parseInt(end);
+  }
+
+  bookType(): string {
+    return "Mishna";
+  }
+
+  isMishna(): boolean {
+    return true;
+  }
 }
 
 class BibleBook extends Book {
@@ -1210,6 +1254,386 @@ export const books = new BookIndex([
     ],
     end: "36",
   }),
+
+  new MishnaMasechet({
+    canonicalName: "Mishnah Berakhot",
+    hebrewName: "משנה ברכות",
+    aliases: ["Mishnah Brachot", "Mishnah Berachot", "Mishnah B’rakhoth"],
+    numChapters: 9,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Peah",
+    hebrewName: "משנה פאה",
+    aliases: ["Mishnah Péah"],
+    numChapters: 8,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Demai",
+    hebrewName: "משנה דמאי",
+    aliases: ["Mishnah D’mai"],
+    numChapters: 7,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Kilayim",
+    hebrewName: "משנה כלאים",
+    aliases: [],
+    numChapters: 9,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Sheviit",
+    hebrewName: "משנה שביעית",
+    aliases: ["Mishnah Sh’biith"],
+    numChapters: 10,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Terumot",
+    hebrewName: "משנה תרומות",
+    aliases: ["Mishnah T’rumoth"],
+    numChapters: 11,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Maasrot",
+    hebrewName: "משנה מעשרות",
+    aliases: ["Mishnah Maʿasroth"],
+    numChapters: 5,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Maaser Sheni",
+    hebrewName: "משנה מעשר שני",
+    aliases: ["Mishnah Maʿǎser Sheni"],
+    numChapters: 5,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Challah",
+    hebrewName: "משנה חלה",
+    aliases: ["Mishnah Ḥallah"],
+    numChapters: 4,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Orlah",
+    hebrewName: "משנה ערלה",
+    aliases: ["Mishnah ʿOrlah"],
+    numChapters: 3,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Bikkurim",
+    hebrewName: "משנה ביכורים",
+    aliases: ["Mishnah Biccurim"],
+    numChapters: 4,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Shabbat",
+    hebrewName: "משנה שבת",
+    aliases: ["Mishnah Sabbath"],
+    numChapters: 24,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Eruvin",
+    hebrewName: "משנה עירובין",
+    aliases: ["Mishnah Erubin"],
+    numChapters: 10,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Pesachim",
+    hebrewName: "משנה פסחים",
+    aliases: ["Mishnah Pesahim", "Mishnah P’saḥim"],
+    numChapters: 10,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Shekalim",
+    hebrewName: "משנה שקלים",
+    aliases: ["Mishnah Sh’ḳalim"],
+    numChapters: 8,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Yoma",
+    hebrewName: "משנה יומא",
+    aliases: [],
+    numChapters: 8,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Sukkah",
+    hebrewName: "משנה סוכה",
+    aliases: ["Mishnah Succah"],
+    numChapters: 5,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Beitzah",
+    hebrewName: "משנה ביצה",
+    aliases: ["Mishnah Betsah"],
+    numChapters: 5,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Rosh Hashanah",
+    hebrewName: "משנה ראש השנה",
+    aliases: ["Mishnah Rosh hash-Shanah"],
+    numChapters: 4,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Ta'anit",
+    hebrewName: "משנה תענית",
+    aliases: ["Mishnah Taʿãnith", "Mishnah Taanit"],
+    numChapters: 4,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Megillah",
+    hebrewName: "משנה מגילה",
+    aliases: ["Mishnah M’gillah"],
+    numChapters: 4,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Moed Katan",
+    hebrewName: "משנה מועד קטן",
+    aliases: ["Mishnah Mo'ed Katan", "Mishnah Moʿed Ḳaṭon"],
+    numChapters: 3,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Chagigah",
+    hebrewName: "משנה חגיגה",
+    aliases: ["Mishnah Ḥãgigah"],
+    numChapters: 3,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Yevamot",
+    hebrewName: "משנה יבמות",
+    aliases: ["Mishnah Y’bamoth"],
+    numChapters: 16,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Ketubot",
+    hebrewName: "משנה כתובות",
+    aliases: ["Mishnah K’thuboth"],
+    numChapters: 13,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Nedarim",
+    hebrewName: "משנה נדרים",
+    aliases: ["Mishnah N’darim"],
+    numChapters: 11,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Nazir",
+    hebrewName: "משנה נזיר",
+    aliases: [],
+    numChapters: 9,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Sotah",
+    hebrewName: "משנה סוטה",
+    aliases: ["Mishnah Soṭah"],
+    numChapters: 9,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Gittin",
+    hebrewName: "משנה גיטין",
+    aliases: ["Mishnah Giṭṭin"],
+    numChapters: 9,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Kiddushin",
+    hebrewName: "משנה קידושין",
+    aliases: ["Mishnah Ḳiddushin"],
+    numChapters: 4,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Bava Kamma",
+    hebrewName: "משנה בבא קמא",
+    aliases: ["Mishnah Baba Ḳamma"],
+    numChapters: 10,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Bava Metzia",
+    hebrewName: "משנה בבא מציעא",
+    aliases: ["Mishnah Baba M’tsiʿa"],
+    numChapters: 10,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Bava Batra",
+    hebrewName: "משנה בבא בתרא",
+    aliases: ["Mishnah Baba Bathra"],
+    numChapters: 10,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Sanhedrin",
+    hebrewName: "משנה סנהדרין",
+    aliases: ["Mishnah Synhedrin"],
+    numChapters: 11,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Makkot",
+    hebrewName: "משנה מכות",
+    aliases: ["Mishnah Maccoth"],
+    numChapters: 3,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Shevuot",
+    hebrewName: "משנה שבועות",
+    aliases: ["Mishnah Shavuos", "Mishnah Shevuos", "Mishnah Shʾbuoth", "Mishnah Shevu’ot"],
+    numChapters: 8,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Eduyot",
+    hebrewName: "משנה עדיות",
+    aliases: ["Mishnah Eduyoth"],
+    numChapters: 8,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Avodah Zarah",
+    hebrewName: "משנה עבודה זרה",
+    aliases: ["Mishnah Abodah Zarah"],
+    numChapters: 5,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Pirkei Avot",
+    hebrewName: "משנה אבות",
+    aliases: ["Mishnah Avot", "Mishnah Aboth"],
+    numChapters: 6,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Horayot",
+    hebrewName: "משנה הוריות",
+    aliases: ["Mishnah Horayoth"],
+    numChapters: 3,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Zevachim",
+    hebrewName: "משנה זבחים",
+    aliases: ["Mishnah Z’baḥim"],
+    numChapters: 14,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Menachot",
+    hebrewName: "משנה מנחות",
+    aliases: ["Mishnah M’naḥoth"],
+    numChapters: 13,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Chullin",
+    hebrewName: "משנה חולין",
+    aliases: ["Mishnah Ḥullin"],
+    numChapters: 12,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Bekhorot",
+    hebrewName: "משנה בכורות",
+    aliases: ["Mishnah B’khoroth"],
+    numChapters: 9,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Arakhin",
+    hebrewName: "משנה ערכין",
+    aliases: [],
+    numChapters: 9,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Temurah",
+    hebrewName: "משנה תמורה",
+    aliases: ["Mishnah T’murah"],
+    numChapters: 7,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Keritot",
+    hebrewName: "משנה כריתות",
+    aliases: ["Mishnah Keritut", "Mishnah K’rithoth"],
+    numChapters: 6,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Meilah",
+    hebrewName: "משנה מעילה",
+    aliases: ["Mishnah M’ʿilah"],
+    numChapters: 6,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Tamid",
+    hebrewName: "משנה תמיד",
+    aliases: [],
+    numChapters: 7,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Middot",
+    hebrewName: "משנה מדות",
+    aliases: ["Mishnah Middoth"],
+    numChapters: 5,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Kinnim",
+    hebrewName: "משנה קינים",
+    aliases: ["Mishnah Ḳinnim"],
+    numChapters: 3,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Kelim",
+    hebrewName: "משנה כלים",
+    aliases: ["Mishnah Keilim"],
+    numChapters: 30,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Oholot",
+    hebrewName: "משנה אהלות",
+    aliases: ["Mishnah Ohalot"],
+    numChapters: 18,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Negaim",
+    hebrewName: "משנה נגעים",
+    aliases: ["Mishnah N’gaʿim"],
+    numChapters: 14,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Parah",
+    hebrewName: "משנה פרה",
+    aliases: [],
+    numChapters: 12,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Tahorot",
+    hebrewName: "משנה טהרות",
+    aliases: ["Mishnah Taharot", "Mishnah Tohãroth"],
+    numChapters: 10,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Mikvaot",
+    hebrewName: "משנה מקואות",
+    aliases: ["Mishnah Miḳvaoth"],
+    numChapters: 10,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Niddah",
+    hebrewName: "משנה נדה",
+    aliases: [],
+    numChapters: 10,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Makhshirin",
+    hebrewName: "משנה מכשירין",
+    aliases: [],
+    numChapters: 6,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Zavim",
+    hebrewName: "משנה זבים",
+    aliases: ["Mishnah Zabim"],
+    numChapters: 5,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Tevul Yom",
+    hebrewName: "משנה טבול יום",
+    aliases: [],
+    numChapters: 4,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Yadayim",
+    hebrewName: "משנה ידים",
+    aliases: [],
+    numChapters: 4,
+  }),
+  new MishnaMasechet({
+    canonicalName: "Mishnah Oktzin",
+    hebrewName: "משנה עוקצים",
+    aliases: ["Mishnah ʿUḳtsin"],
+    numChapters: 3,
+  }),
+
   new LiturgicalBook({
     // If this is changed to add Mincha/other things, make sure to update sitemap logic
     canonicalName: "SiddurAshkenaz",
