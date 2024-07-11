@@ -10,8 +10,10 @@ const {
 interface SwipeableBackgroundParams {
   initiallyOn: boolean;
   onChange: (x: boolean) => void;
+  onDoubleOn?: () => void;
   children: any;
   inline?: boolean;
+  isOnRef: React.MutableRefObject;
 }
 
 const MAX_OPACITY = .4;
@@ -20,15 +22,24 @@ const MAX_DISTANCE_PIXELS = 150;
 export function SwipeableBackground({
   initiallyOn,
   onChange,
+  onDoubleOn,
   children,
   inline,
+  isOnRef,
 }: SwipeableBackgroundParams): React.ReactElement {
   const color = (ratio: number) => {
     return {backgroundColor: `rgba(87, 175, 235, ${ratio})`};
   };
   const [styles, api] = useSpring(() => color(initiallyOn ? MAX_OPACITY : 0));
   const [isOn, setIsOn] = useState(initiallyOn);
+  const retrigger = useState(0)[1];
   const setBackground = (ratio: number) => { api.start(color(ratio)); };
+  isOnRef.current = () => {
+    if (!isOn) console.log(styles);
+    retrigger(Math.random());
+    setIsOn(false)
+    setBackground(0);
+  };
 
   const bind = useDrag(({offset, lastOffset, last}) => {
     let offsetX = lastOffset[0] - offset[0];
@@ -37,7 +48,8 @@ export function SwipeableBackground({
       // already performing a swipe in the "on" direction.
       offsetX += MAX_DISTANCE_PIXELS;
     }
-    const ratio = Math.min((offsetX / MAX_DISTANCE_PIXELS) * MAX_OPACITY, MAX_OPACITY);
+    const multiplier = (isOn && onDoubleOn !== undefined) ? 2 : 1;
+    const ratio = Math.min((offsetX / MAX_DISTANCE_PIXELS) * MAX_OPACITY, MAX_OPACITY * multiplier);
     const opacity = Math.max(ratio, 0);
     if (last) {
       const didChange = (isOn && ratio < 0) || (!isOn && ratio === MAX_OPACITY);
@@ -46,6 +58,8 @@ export function SwipeableBackground({
       setIsOn(newState);
       if (didChange) {
         onChange(newState);
+      } else if (isOn && ratio === MAX_OPACITY * multiplier) {
+        onDoubleOn();
       }
     } else {
       setBackground(opacity);
@@ -69,9 +83,9 @@ SwipeableBackground.propTypes = {
   children: PropTypes.object.isRequired,
   initiallyOn: PropTypes.bool.isRequired,
   onChange: PropTypes.func.isRequired,
+  onDoubleOn: PropTypes.func,
   inline: PropTypes.bool,
 };
-
 
 interface SwipeableParams {
   onSwiped: () => void;

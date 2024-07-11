@@ -59,4 +59,9 @@ export class LocalStorageLru {
       delete localStorage[this.key];
     }
   }
+
+  setTo(items: string[]) {
+    this.items = Array.from(items);
+    this.save();
+  }
 }

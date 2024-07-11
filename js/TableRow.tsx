@@ -12,6 +12,7 @@ import {SwipeableBackground} from "./SwipeableBackground";
 const {
   useEffect,
   useMemo,
+  useRef,
   useState,
 } = React;
 
@@ -28,6 +29,61 @@ function brTags(count: number): string {
   brTagsCache[count] = result;
   return result;
 }
+
+interface SwipeableBackgroundImplProps {
+  children: any;
+  sectionId?: string;
+  inline?: boolean;
+}
+
+export function SwipeableBackgroundImpl(
+  {children, sectionId, inline}: SwipeableBackgroundImplProps,
+): React.ReactElement {
+  const context = useConfiguration();
+  const [x, retrigger] = useState(1);
+  const initiallyOn = context.highlightedIds.has(sectionId);
+  const isOnRef = useRef();
+  useEffect(() => {
+    context.swipeables[sectionId] = () => {
+      if (context.highlightedIds.has(sectionId)) {
+        console.log("isOnRef():", sectionId.slice(8));
+        isOnRef.current();
+        retrigger(Math.random());
+      }
+    };
+    return () => {
+      delete context.swipeables[sectionId];
+    };
+  });
+  const onDoubleOn = () => {
+    for (const [otherSectionId, otherRetrigger] of Object.entries(context.swipeables)) {
+      if (otherSectionId !== sectionId) {
+        otherRetrigger();
+      }
+    }
+    context.highlightedIds.setTo([sectionId]);
+  };
+  const onChange = (newState: boolean) => {
+    retrigger(Math.random());
+    context.toggleHighlightedId(newState, sectionId)
+  };
+  return (
+    <SwipeableBackground
+      inline={inline}
+      initiallyOn={initiallyOn}
+      onChange={(newState) => onChange(newState)}
+      onDoubleOn={() => onDoubleOn()}
+    isOnRef={isOnRef}
+    >
+      {children}
+    </SwipeableBackground>
+  );
+}
+SwipeableBackgroundImpl.propTypes = {
+  children: PropTypes.object.isRequired,
+  sectionId: PropTypes.string,
+  inline: PropTypes.bool,
+};
 
 const SANITIZE_CONFIG = {
   ADD_TAGS: ["span-highlight"],
@@ -96,13 +152,9 @@ export function CellText({
   }
 
   return (
-    <SwipeableBackground
-      inline
-      initiallyOn={context.highlightedIds.has(sectionIdForHighlighting)}
-      onChange={(newState) => context.toggleHighlightedId(newState, sectionIdForHighlighting)}
-    >
+    <SwipeableBackgroundImpl sectionId={sectionIdForHighlighting} inline>
       {cellText}
-    </SwipeableBackground>
+    </SwipeableBackgroundImpl>
   );
 }
 
@@ -415,12 +467,9 @@ function TableRow(props: TableRowProps): React.ReactElement {
 
   if (hiddenHost && sectionIdForHighlighting) {
     return (
-      <SwipeableBackground
-        initiallyOn={context.highlightedIds.has(sectionIdForHighlighting)}
-        onChange={(newState) => context.toggleHighlightedId(newState, sectionIdForHighlighting)}
-      >
+      <SwipeableBackgroundImpl sectionId={sectionIdForHighlighting}>
         {row}
-      </SwipeableBackground>
+      </SwipeableBackgroundImpl>
     );
   }
   return row;

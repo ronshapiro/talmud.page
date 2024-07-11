@@ -974,6 +974,7 @@ export class Renderer {
         }
       },
       searchQueryRegex: undefined,
+      swipeables: {},
     };
 
     const hiddenData = [{
