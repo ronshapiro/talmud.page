@@ -143,7 +143,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:1:1",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:א׳:א׳",
     "sourceRef": "Radak on Psalms 145:1:1",
     "type": "commentary"
@@ -168,7 +168,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:1:2",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:א׳:ב׳",
     "sourceRef": "Radak on Psalms 145:1:2",
     "type": "commentary"
@@ -193,7 +193,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:1:3",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:א׳:ג׳",
     "sourceRef": "Radak on Psalms 145:1:3",
     "type": "commentary"
@@ -207,18 +207,18 @@
     "anchorVerse": 1,
     "category": "Jewish Thought",
     "collectiveTitle": {
-      "en": "Yesod Mora",
+      "en": "Yesod Mora VeSod HaTorah",
       "he": "יסוד מורא וסוד תורה"
     },
     "commentaryNum": 12.0002,
     "compDate": [
       1158
     ],
-    "index_title": "Yesod Mora",
-    "ref": "Yesod Mora 12:2",
+    "index_title": "Yesod Mora VeSod HaTorah",
+    "ref": "Yesod Mora VeSod HaTorah 12:2",
     "sourceHasEn": true,
     "sourceHeRef": "יסוד מורא וסוד תורה י״ב:ב׳",
-    "sourceRef": "Yesod Mora 12:2",
+    "sourceRef": "Yesod Mora VeSod HaTorah 12:2",
     "type": ""
   },
   {
@@ -540,31 +540,6 @@
     "sourceHasEn": true,
     "sourceHeRef": "שולחן ערוך, אורח חיים נ״א:ז׳",
     "sourceRef": "Shulchan Arukh, Orach Chayim 51:7",
-    "type": ""
-  },
-  {
-    "_id": "6126ab6334f4821408c96009",
-    "anchorRef": "Psalms 145:1",
-    "anchorRefExpanded": [
-      "Psalms 145:1"
-    ],
-    "anchorVerse": 1,
-    "category": "Kabbalah",
-    "collectiveTitle": {
-      "en": "Sefer HaBahir",
-      "he": "ספר הבהיר"
-    },
-    "commentaryNum": 5,
-    "compDate": [
-      200,
-      1200
-    ],
-    "heTitle": "ספר הבהיר",
-    "index_title": "Sefer HaBahir",
-    "ref": "Sefer HaBahir 5",
-    "sourceHasEn": true,
-    "sourceHeRef": "ספר הבהיר ה׳",
-    "sourceRef": "Sefer HaBahir 5",
     "type": ""
   },
   {
@@ -1623,6 +1598,133 @@
     "type": ""
   },
   {
+    "_id": "657eb14480c65f62e94becd3",
+    "anchorRef": "Psalms 145:1-21",
+    "anchorRefExpanded": [
+      "Psalms 145:1",
+      "Psalms 145:2",
+      "Psalms 145:3",
+      "Psalms 145:4",
+      "Psalms 145:5",
+      "Psalms 145:6",
+      "Psalms 145:7",
+      "Psalms 145:8",
+      "Psalms 145:9",
+      "Psalms 145:10",
+      "Psalms 145:11",
+      "Psalms 145:12",
+      "Psalms 145:13",
+      "Psalms 145:14",
+      "Psalms 145:15",
+      "Psalms 145:16",
+      "Psalms 145:17",
+      "Psalms 145:18",
+      "Psalms 145:19",
+      "Psalms 145:20",
+      "Psalms 145:21"
+    ],
+    "anchorVerse": 1,
+    "anchorVersion": {
+      "language": "en",
+      "title": "ALL"
+    },
+    "category": "Tanakh",
+    "collectiveTitle": {
+      "en": "Steinsaltz Introductions to Tanakh",
+      "he": "ביאור שטיינזלץ, הקדמות לתנ\"ך"
+    },
+    "commentaryNum": 145,
+    "displayedText": {
+      "en": "Steinsaltz Introductions to Tanakh, Psalms, Section Preface",
+      "he": "ביאור שטיינזלץ, הקדמות לתנ\"ך, תהילים, מבוא לקטע"
+    },
+    "heTitle": "מבוא לקטע",
+    "index_title": "Steinsaltz Introductions to Tanakh",
+    "ref": "Steinsaltz Introductions to Tanakh, Psalms, Section Preface 145",
+    "sourceHasEn": true,
+    "sourceHeRef": "ביאור שטיינזלץ, הקדמות לתנ\"ך, תהילים, מבוא לקטע קמ״ה",
+    "sourceRef": "Steinsaltz Introductions to Tanakh, Psalms, Section Preface 145",
+    "sourceVersion": {
+      "language": "en",
+      "title": "ALL"
+    },
+    "type": "essay"
+  },
+  {
+    "_id": "657eb25e80c65f62e94c336e",
+    "anchorRef": "Psalms 145:1",
+    "anchorRefExpanded": [
+      "Psalms 145:1"
+    ],
+    "anchorVerse": 1,
+    "category": "Commentary",
+    "collectiveTitle": {
+      "en": "Steinsaltz",
+      "he": "ביאור שטיינזלץ"
+    },
+    "commentaryNum": 145.0001,
+    "heTitle": "ביאור שטיינזלץ על תהילים",
+    "index_title": "Steinsaltz on Psalms",
+    "ref": "Steinsaltz on Psalms 145:1",
+    "sourceHasEn": true,
+    "sourceHeRef": "ביאור שטיינזלץ על תהילים קמ״ה:א׳",
+    "sourceRef": "Steinsaltz on Psalms 145:1",
+    "type": "commentary"
+  },
+  {
+    "_id": "657eb26380c65f62e94c344e",
+    "anchorRef": "Psalms 145:1-21",
+    "anchorRefExpanded": [
+      "Psalms 145:1",
+      "Psalms 145:2",
+      "Psalms 145:3",
+      "Psalms 145:4",
+      "Psalms 145:5",
+      "Psalms 145:6",
+      "Psalms 145:7",
+      "Psalms 145:8",
+      "Psalms 145:9",
+      "Psalms 145:10",
+      "Psalms 145:11",
+      "Psalms 145:12",
+      "Psalms 145:13",
+      "Psalms 145:14",
+      "Psalms 145:15",
+      "Psalms 145:16",
+      "Psalms 145:17",
+      "Psalms 145:18",
+      "Psalms 145:19",
+      "Psalms 145:20",
+      "Psalms 145:21"
+    ],
+    "anchorVerse": 1,
+    "anchorVersion": {
+      "language": "en",
+      "title": "ALL"
+    },
+    "category": "Tanakh",
+    "collectiveTitle": {
+      "en": "Steinsaltz Introductions to Tanakh",
+      "he": "ביאור שטיינזלץ, הקדמות לתנ\"ך"
+    },
+    "commentaryNum": 0,
+    "displayedText": {
+      "en": "Steinsaltz Introductions to Tanakh, Psalms, Book Introduction",
+      "he": "ביאור שטיינזלץ, הקדמות לתנ\"ך, תהילים, הקדמה לספר"
+    },
+    "heTitle": "הקדמה לספר",
+    "index_title": "Steinsaltz Introductions to Tanakh",
+    "ref": "Steinsaltz Introductions to Tanakh, Psalms, Book Introduction",
+    "sourceHasEn": true,
+    "sourceHeRef": "ביאור שטיינזלץ, הקדמות לתנ\"ך, תהילים, הקדמה לספר",
+    "sourceRef": "Steinsaltz Introductions to Tanakh, Psalms, Book Introduction",
+    "sourceVersion": {
+      "language": "en",
+      "title": "ALL"
+    },
+    "type": "essay"
+  },
+  {
     "_id": "5654d078d6e4a9028c5f41c1",
     "anchorRef": "Psalms 145:10",
     "anchorRefExpanded": [
@@ -1692,7 +1794,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:10:1",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:י׳:א׳",
     "sourceRef": "Radak on Psalms 145:10:1",
     "type": "commentary"
@@ -1717,7 +1819,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:10:2",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:י׳:ב׳",
     "sourceRef": "Radak on Psalms 145:10:2",
     "type": "commentary"
@@ -2223,7 +2325,7 @@
     "anchorVerse": 10,
     "category": "Kabbalah",
     "collectiveTitle": {
-      "en": "Shaarei Orah",
+      "en": "Sha'arei Orah",
       "he": "שערי אורה"
     },
     "commentaryNum": 127,
@@ -2232,12 +2334,33 @@
       1300
     ],
     "heTitle": "השער הראשון - הספירה העשירית",
-    "index_title": "Shaarei Orah",
-    "ref": "Shaarei Orah, First Gate, Tenth Sefirah 127",
+    "index_title": "Sha'arei Orah",
+    "ref": "Sha'arei Orah, First Gate, Tenth Sefirah 127",
     "sourceHasEn": true,
     "sourceHeRef": "שערי אורה, השער הראשון - הספירה העשירית קכ״ז",
-    "sourceRef": "Shaarei Orah, First Gate, Tenth Sefirah 127",
+    "sourceRef": "Sha'arei Orah, First Gate, Tenth Sefirah 127",
     "type": ""
+  },
+  {
+    "_id": "657eb25e80c65f62e94c3377",
+    "anchorRef": "Psalms 145:10",
+    "anchorRefExpanded": [
+      "Psalms 145:10"
+    ],
+    "anchorVerse": 10,
+    "category": "Commentary",
+    "collectiveTitle": {
+      "en": "Steinsaltz",
+      "he": "ביאור שטיינזלץ"
+    },
+    "commentaryNum": 145.001,
+    "heTitle": "ביאור שטיינזלץ על תהילים",
+    "index_title": "Steinsaltz on Psalms",
+    "ref": "Steinsaltz on Psalms 145:10",
+    "sourceHasEn": true,
+    "sourceHeRef": "ביאור שטיינזלץ על תהילים קמ״ה:י׳",
+    "sourceRef": "Steinsaltz on Psalms 145:10",
+    "type": "commentary"
   },
   {
     "_id": "5b0bc3caf746f30016ee721c",
@@ -2335,7 +2458,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:11:1",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:י״א:א׳",
     "sourceRef": "Radak on Psalms 145:11:1",
     "type": "commentary"
@@ -2464,6 +2587,27 @@
     "type": ""
   },
   {
+    "_id": "657eb25e80c65f62e94c3378",
+    "anchorRef": "Psalms 145:11",
+    "anchorRefExpanded": [
+      "Psalms 145:11"
+    ],
+    "anchorVerse": 11,
+    "category": "Commentary",
+    "collectiveTitle": {
+      "en": "Steinsaltz",
+      "he": "ביאור שטיינזלץ"
+    },
+    "commentaryNum": 145.0011,
+    "heTitle": "ביאור שטיינזלץ על תהילים",
+    "index_title": "Steinsaltz on Psalms",
+    "ref": "Steinsaltz on Psalms 145:11",
+    "sourceHasEn": true,
+    "sourceHeRef": "ביאור שטיינזלץ על תהילים קמ״ה:י״א",
+    "sourceRef": "Steinsaltz on Psalms 145:11",
+    "type": "commentary"
+  },
+  {
     "_id": "5964834dd6e4a92bf45a60e8",
     "anchorRef": "Psalms 145:12",
     "anchorRefExpanded": [
@@ -2558,7 +2702,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:12:1",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:י״ב:א׳",
     "sourceRef": "Radak on Psalms 145:12:1",
     "type": "commentary"
@@ -2638,6 +2782,27 @@
     "type": "quotation_auto_tanakh"
   },
   {
+    "_id": "657eb25e80c65f62e94c3379",
+    "anchorRef": "Psalms 145:12",
+    "anchorRefExpanded": [
+      "Psalms 145:12"
+    ],
+    "anchorVerse": 12,
+    "category": "Commentary",
+    "collectiveTitle": {
+      "en": "Steinsaltz",
+      "he": "ביאור שטיינזלץ"
+    },
+    "commentaryNum": 145.0012,
+    "heTitle": "ביאור שטיינזלץ על תהילים",
+    "index_title": "Steinsaltz on Psalms",
+    "ref": "Steinsaltz on Psalms 145:12",
+    "sourceHasEn": true,
+    "sourceHeRef": "ביאור שטיינזלץ על תהילים קמ״ה:י״ב",
+    "sourceRef": "Steinsaltz on Psalms 145:12",
+    "type": "commentary"
+  },
+  {
     "_id": "54bd482afbfba21733362680",
     "anchorRef": "Psalms 145:13",
     "anchorRefExpanded": [
@@ -2706,7 +2871,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:13:1",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:י״ג:א׳",
     "sourceRef": "Radak on Psalms 145:13:1",
     "type": "commentary"
@@ -3209,6 +3374,127 @@
     "type": ""
   },
   {
+    "_id": "657eb25e80c65f62e94c337a",
+    "anchorRef": "Psalms 145:13",
+    "anchorRefExpanded": [
+      "Psalms 145:13"
+    ],
+    "anchorVerse": 13,
+    "category": "Commentary",
+    "collectiveTitle": {
+      "en": "Steinsaltz",
+      "he": "ביאור שטיינזלץ"
+    },
+    "commentaryNum": 145.0013,
+    "heTitle": "ביאור שטיינזלץ על תהילים",
+    "index_title": "Steinsaltz on Psalms",
+    "ref": "Steinsaltz on Psalms 145:13",
+    "sourceHasEn": true,
+    "sourceHeRef": "ביאור שטיינזלץ על תהילים קמ״ה:י״ג",
+    "sourceRef": "Steinsaltz on Psalms 145:13",
+    "type": "commentary"
+  },
+  {
+    "_id": "6609280ea500bb4d2fbbca81",
+    "anchorRef": "Psalms 145:13",
+    "anchorRefExpanded": [
+      "Psalms 145:13"
+    ],
+    "anchorVerse": 13,
+    "category": "Chasidut",
+    "collectiveTitle": {
+      "en": "The Gate of Unity",
+      "he": "נר מצוה ותורה אור; שער היחוד"
+    },
+    "commentaryNum": 7.0034,
+    "index_title": "The Gate of Unity",
+    "ref": "The Gate of Unity 7:34",
+    "sourceHasEn": true,
+    "sourceHeRef": "נר מצוה ותורה אור; שער היחוד ז׳:ל״ד",
+    "sourceRef": "The Gate of Unity 7:34",
+    "type": ""
+  },
+  {
+    "_id": "66092816a500bb4d2fbbcaa1",
+    "anchorRef": "Psalms 145:13",
+    "anchorRefExpanded": [
+      "Psalms 145:13"
+    ],
+    "anchorVerse": 13,
+    "category": "Chasidut",
+    "collectiveTitle": {
+      "en": "The Gate of Unity",
+      "he": "נר מצוה ותורה אור; שער היחוד"
+    },
+    "commentaryNum": 8.0069,
+    "index_title": "The Gate of Unity",
+    "ref": "The Gate of Unity 8:69",
+    "sourceHasEn": true,
+    "sourceHeRef": "נר מצוה ותורה אור; שער היחוד ח׳:ס״ט",
+    "sourceRef": "The Gate of Unity 8:69",
+    "type": ""
+  },
+  {
+    "_id": "66092818a500bb4d2fbbcaa9",
+    "anchorRef": "Psalms 145:13",
+    "anchorRefExpanded": [
+      "Psalms 145:13"
+    ],
+    "anchorVerse": 13,
+    "category": "Chasidut",
+    "collectiveTitle": {
+      "en": "The Gate of Unity",
+      "he": "נר מצוה ותורה אור; שער היחוד"
+    },
+    "commentaryNum": 9.0005,
+    "index_title": "The Gate of Unity",
+    "ref": "The Gate of Unity 9:5",
+    "sourceHasEn": true,
+    "sourceHeRef": "נר מצוה ותורה אור; שער היחוד ט׳:ה׳",
+    "sourceRef": "The Gate of Unity 9:5",
+    "type": ""
+  },
+  {
+    "_id": "660928fda500bb4d2fbbcd4c",
+    "anchorRef": "Psalms 145:13",
+    "anchorRefExpanded": [
+      "Psalms 145:13"
+    ],
+    "anchorVerse": 13,
+    "category": "Chasidut",
+    "collectiveTitle": {
+      "en": "The Gate of Unity",
+      "he": "נר מצוה ותורה אור; שער היחוד"
+    },
+    "commentaryNum": 48.0008,
+    "index_title": "The Gate of Unity",
+    "ref": "The Gate of Unity 48:8",
+    "sourceHasEn": true,
+    "sourceHeRef": "נר מצוה ותורה אור; שער היחוד מ״ח:ח׳",
+    "sourceRef": "The Gate of Unity 48:8",
+    "type": ""
+  },
+  {
+    "_id": "66092919a500bb4d2fbbcdbe",
+    "anchorRef": "Psalms 145:13",
+    "anchorRefExpanded": [
+      "Psalms 145:13"
+    ],
+    "anchorVerse": 13,
+    "category": "Chasidut",
+    "collectiveTitle": {
+      "en": "The Gate of Unity",
+      "he": "נר מצוה ותורה אור; שער היחוד"
+    },
+    "commentaryNum": 52.0031,
+    "index_title": "The Gate of Unity",
+    "ref": "The Gate of Unity 52:31",
+    "sourceHasEn": true,
+    "sourceHeRef": "נר מצוה ותורה אור; שער היחוד נ״ב:ל״א",
+    "sourceRef": "The Gate of Unity 52:31",
+    "type": ""
+  },
+  {
     "_id": "53f18ef3fbfba21e3018173e",
     "anchorRef": "Psalms 145:14",
     "anchorRefExpanded": [
@@ -3477,7 +3763,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:14:1",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:י״ד:א׳",
     "sourceRef": "Radak on Psalms 145:14:1",
     "type": "commentary"
@@ -4027,7 +4313,7 @@
     "anchorVerse": 14,
     "category": "Kabbalah",
     "collectiveTitle": {
-      "en": "Shaarei Orah",
+      "en": "Sha'arei Orah",
       "he": "שערי אורה"
     },
     "commentaryNum": 63,
@@ -4036,11 +4322,57 @@
       1300
     ],
     "heTitle": "השער השני - הספירה התשיעית",
-    "index_title": "Shaarei Orah",
-    "ref": "Shaarei Orah, Second Gate, Ninth Sefirah 63",
+    "index_title": "Sha'arei Orah",
+    "ref": "Sha'arei Orah, Second Gate, Ninth Sefirah 63",
     "sourceHasEn": true,
     "sourceHeRef": "שערי אורה, השער השני - הספירה התשיעית ס״ג",
-    "sourceRef": "Shaarei Orah, Second Gate, Ninth Sefirah 63",
+    "sourceRef": "Sha'arei Orah, Second Gate, Ninth Sefirah 63",
+    "type": ""
+  },
+  {
+    "_id": "657eb25e80c65f62e94c337b",
+    "anchorRef": "Psalms 145:14",
+    "anchorRefExpanded": [
+      "Psalms 145:14"
+    ],
+    "anchorVerse": 14,
+    "category": "Commentary",
+    "collectiveTitle": {
+      "en": "Steinsaltz",
+      "he": "ביאור שטיינזלץ"
+    },
+    "commentaryNum": 145.0014,
+    "heTitle": "ביאור שטיינזלץ על תהילים",
+    "index_title": "Steinsaltz on Psalms",
+    "ref": "Steinsaltz on Psalms 145:14",
+    "sourceHasEn": true,
+    "sourceHeRef": "ביאור שטיינזלץ על תהילים קמ״ה:י״ד",
+    "sourceRef": "Steinsaltz on Psalms 145:14",
+    "type": "commentary"
+  },
+  {
+    "_id": "65b78e0dc4843a390c9ac339",
+    "anchorRef": "Psalms 145:14",
+    "anchorRefExpanded": [
+      "Psalms 145:14"
+    ],
+    "anchorVerse": 14,
+    "category": "Quoting Commentary",
+    "collectiveTitle": {
+      "en": "Sulam on Zohar",
+      "he": "הסולם על ספר הזהר"
+    },
+    "commentaryNum": 28.0001,
+    "compDate": [
+      1943,
+      1953
+    ],
+    "heTitle": "הקדמה",
+    "index_title": "Sulam on Zohar",
+    "ref": "Sulam on Zohar, Introduction 28:1",
+    "sourceHasEn": true,
+    "sourceHeRef": "הסולם על ספר הזהר, הקדמה כ״ח:א׳",
+    "sourceRef": "Sulam on Zohar, Introduction 28:1",
     "type": ""
   },
   {
@@ -4311,7 +4643,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:15:1",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:ט״ו:א׳",
     "sourceRef": "Radak on Psalms 145:15:1",
     "type": "commentary"
@@ -4711,7 +5043,7 @@
     "anchorVerse": 15,
     "category": "Kabbalah",
     "collectiveTitle": {
-      "en": "Shaarei Orah",
+      "en": "Sha'arei Orah",
       "he": "שערי אורה"
     },
     "commentaryNum": 55,
@@ -4720,11 +5052,11 @@
       1300
     ],
     "heTitle": "השער העשירי - הספירה הראשונה",
-    "index_title": "Shaarei Orah",
-    "ref": "Shaarei Orah, Tenth Gate, First Sefirah 55",
+    "index_title": "Sha'arei Orah",
+    "ref": "Sha'arei Orah, Tenth Gate, First Sefirah 55",
     "sourceHasEn": true,
     "sourceHeRef": "שערי אורה, השער העשירי - הספירה הראשונה נ״ה",
-    "sourceRef": "Shaarei Orah, Tenth Gate, First Sefirah 55",
+    "sourceRef": "Sha'arei Orah, Tenth Gate, First Sefirah 55",
     "type": ""
   },
   {
@@ -4736,7 +5068,7 @@
     "anchorVerse": 15,
     "category": "Kabbalah",
     "collectiveTitle": {
-      "en": "Shaarei Orah",
+      "en": "Sha'arei Orah",
       "he": "שערי אורה"
     },
     "commentaryNum": 147,
@@ -4745,12 +5077,58 @@
       1300
     ],
     "heTitle": "השער השני - הספירה התשיעית",
-    "index_title": "Shaarei Orah",
-    "ref": "Shaarei Orah, Second Gate, Ninth Sefirah 147",
+    "index_title": "Sha'arei Orah",
+    "ref": "Sha'arei Orah, Second Gate, Ninth Sefirah 147",
     "sourceHasEn": true,
     "sourceHeRef": "שערי אורה, השער השני - הספירה התשיעית קמ״ז",
-    "sourceRef": "Shaarei Orah, Second Gate, Ninth Sefirah 147",
+    "sourceRef": "Sha'arei Orah, Second Gate, Ninth Sefirah 147",
     "type": ""
+  },
+  {
+    "_id": "65c4d85c0d4c233e7f1a1960",
+    "anchorRef": "Psalms 145:15",
+    "anchorRefExpanded": [
+      "Psalms 145:15"
+    ],
+    "anchorVerse": 15,
+    "category": "Kabbalah",
+    "collectiveTitle": {
+      "en": "Sha'arei Orah",
+      "he": "שערי אורה"
+    },
+    "commentaryNum": 63,
+    "compDate": [
+      1260,
+      1300
+    ],
+    "heTitle": "השער השני - הספירה התשיעית",
+    "index_title": "Sha'arei Orah",
+    "ref": "Sha'arei Orah, Second Gate, Ninth Sefirah 63",
+    "sourceHasEn": true,
+    "sourceHeRef": "שערי אורה, השער השני - הספירה התשיעית ס״ג",
+    "sourceRef": "Sha'arei Orah, Second Gate, Ninth Sefirah 63",
+    "type": ""
+  },
+  {
+    "_id": "657eb25e80c65f62e94c337c",
+    "anchorRef": "Psalms 145:15",
+    "anchorRefExpanded": [
+      "Psalms 145:15"
+    ],
+    "anchorVerse": 15,
+    "category": "Commentary",
+    "collectiveTitle": {
+      "en": "Steinsaltz",
+      "he": "ביאור שטיינזלץ"
+    },
+    "commentaryNum": 145.0015,
+    "heTitle": "ביאור שטיינזלץ על תהילים",
+    "index_title": "Steinsaltz on Psalms",
+    "ref": "Steinsaltz on Psalms 145:15",
+    "sourceHasEn": true,
+    "sourceHeRef": "ביאור שטיינזלץ על תהילים קמ״ה:ט״ו",
+    "sourceRef": "Steinsaltz on Psalms 145:15",
+    "type": "commentary"
   },
   {
     "_id": "53f18ef3fbfba21e30181742",
@@ -4896,56 +5274,6 @@
     "sourceHasEn": false,
     "sourceHeRef": "תקוני הזהר ז׳ ב:ב׳",
     "sourceRef": "Tikkunei Zohar 7b:2",
-    "type": ""
-  },
-  {
-    "_id": "55b157c1fbfba2552ab2ce74",
-    "anchorRef": "Psalms 145:16",
-    "anchorRefExpanded": [
-      "Psalms 145:16"
-    ],
-    "anchorVerse": 16,
-    "category": "Kabbalah",
-    "collectiveTitle": {
-      "en": "Tikkunei Zohar",
-      "he": "תקוני הזהר"
-    },
-    "commentaryNum": 73.0007,
-    "compDate": [
-      1100,
-      1400
-    ],
-    "heTitle": "תקוני הזהר",
-    "index_title": "Tikkunei Zohar",
-    "ref": "Tikkunei Zohar 37a:7",
-    "sourceHasEn": false,
-    "sourceHeRef": "תקוני הזהר ל״ז א:ז׳",
-    "sourceRef": "Tikkunei Zohar 37a:7",
-    "type": ""
-  },
-  {
-    "_id": "55b157c3fbfba2552ab2cfd2",
-    "anchorRef": "Psalms 145:16",
-    "anchorRefExpanded": [
-      "Psalms 145:16"
-    ],
-    "anchorVerse": 16,
-    "category": "Kabbalah",
-    "collectiveTitle": {
-      "en": "Tikkunei Zohar",
-      "he": "תקוני הזהר"
-    },
-    "commentaryNum": 92.0005,
-    "compDate": [
-      1100,
-      1400
-    ],
-    "heTitle": "תקוני הזהר",
-    "index_title": "Tikkunei Zohar",
-    "ref": "Tikkunei Zohar 46b:5",
-    "sourceHasEn": false,
-    "sourceHeRef": "תקוני הזהר מ״ו ב:ה׳",
-    "sourceRef": "Tikkunei Zohar 46b:5",
     "type": ""
   },
   {
@@ -5214,7 +5542,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:16:1",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:ט״ז:א׳",
     "sourceRef": "Radak on Psalms 145:16:1",
     "type": "commentary"
@@ -6128,11 +6456,11 @@
       1710,
       1810
     ],
-    "heTitle": "תפילת שמונה עשרה",
+    "heTitle": "תפילת עמידה",
     "index_title": "Siddur Sefard",
     "ref": "Siddur Sefard, Shabbat Eve Mincha, Amidah 41",
     "sourceHasEn": false,
-    "sourceHeRef": "סידור ספרד, מנחה לערב שבת, תפילת שמונה עשרה מ״א",
+    "sourceHeRef": "סידור ספרד, מנחה לערב שבת, תפילת עמידה מ״א",
     "sourceRef": "Siddur Sefard, Shabbat Eve Mincha, Amidah 41",
     "type": "quotation_auto_tanakh"
   },
@@ -6336,7 +6664,7 @@
     "anchorVerse": 16,
     "category": "Kabbalah",
     "collectiveTitle": {
-      "en": "Shaarei Orah",
+      "en": "Sha'arei Orah",
       "he": "שערי אורה"
     },
     "commentaryNum": 113,
@@ -6345,11 +6673,11 @@
       1300
     ],
     "heTitle": "השער החמישי - הספירה השישית",
-    "index_title": "Shaarei Orah",
-    "ref": "Shaarei Orah, Fifth Gate, Sixth Sefirah 113",
+    "index_title": "Sha'arei Orah",
+    "ref": "Sha'arei Orah, Fifth Gate, Sixth Sefirah 113",
     "sourceHasEn": true,
     "sourceHeRef": "שערי אורה, השער החמישי - הספירה השישית קי״ג",
-    "sourceRef": "Shaarei Orah, Fifth Gate, Sixth Sefirah 113",
+    "sourceRef": "Sha'arei Orah, Fifth Gate, Sixth Sefirah 113",
     "type": ""
   },
   {
@@ -6361,7 +6689,7 @@
     "anchorVerse": 16,
     "category": "Kabbalah",
     "collectiveTitle": {
-      "en": "Shaarei Orah",
+      "en": "Sha'arei Orah",
       "he": "שערי אורה"
     },
     "commentaryNum": 55,
@@ -6370,11 +6698,11 @@
       1300
     ],
     "heTitle": "השער העשירי - הספירה הראשונה",
-    "index_title": "Shaarei Orah",
-    "ref": "Shaarei Orah, Tenth Gate, First Sefirah 55",
+    "index_title": "Sha'arei Orah",
+    "ref": "Sha'arei Orah, Tenth Gate, First Sefirah 55",
     "sourceHasEn": true,
     "sourceHeRef": "שערי אורה, השער העשירי - הספירה הראשונה נ״ה",
-    "sourceRef": "Shaarei Orah, Tenth Gate, First Sefirah 55",
+    "sourceRef": "Sha'arei Orah, Tenth Gate, First Sefirah 55",
     "type": ""
   },
   {
@@ -6386,7 +6714,7 @@
     "anchorVerse": 16,
     "category": "Kabbalah",
     "collectiveTitle": {
-      "en": "Shaarei Orah",
+      "en": "Sha'arei Orah",
       "he": "שערי אורה"
     },
     "commentaryNum": 79,
@@ -6395,11 +6723,11 @@
       1300
     ],
     "heTitle": "השער התשיעי - הספירה השנייה",
-    "index_title": "Shaarei Orah",
-    "ref": "Shaarei Orah, Ninth Gate, Second Sefirah 79",
+    "index_title": "Sha'arei Orah",
+    "ref": "Sha'arei Orah, Ninth Gate, Second Sefirah 79",
     "sourceHasEn": true,
     "sourceHeRef": "שערי אורה, השער התשיעי - הספירה השנייה ע״ט",
-    "sourceRef": "Shaarei Orah, Ninth Gate, Second Sefirah 79",
+    "sourceRef": "Sha'arei Orah, Ninth Gate, Second Sefirah 79",
     "type": ""
   },
   {
@@ -6411,7 +6739,7 @@
     "anchorVerse": 16,
     "category": "Kabbalah",
     "collectiveTitle": {
-      "en": "Shaarei Orah",
+      "en": "Sha'arei Orah",
       "he": "שערי אורה"
     },
     "commentaryNum": 70,
@@ -6420,11 +6748,107 @@
       1300
     ],
     "heTitle": "השער השלישי והרביעי - הספירה השמינית והשביעית",
-    "index_title": "Shaarei Orah",
-    "ref": "Shaarei Orah, Third and Fourth Gates, Seventh and Eight Sefirah 70",
+    "index_title": "Sha'arei Orah",
+    "ref": "Sha'arei Orah, Third and Fourth Gates, Seventh and Eight Sefirah 70",
     "sourceHasEn": true,
     "sourceHeRef": "שערי אורה, השער השלישי והרביעי - הספירה השמינית והשביעית ע׳",
-    "sourceRef": "Shaarei Orah, Third and Fourth Gates, Seventh and Eight Sefirah 70",
+    "sourceRef": "Sha'arei Orah, Third and Fourth Gates, Seventh and Eight Sefirah 70",
+    "type": ""
+  },
+  {
+    "_id": "65c4d87a0d4c233e7f1a1977",
+    "anchorRef": "Psalms 145:16",
+    "anchorRefExpanded": [
+      "Psalms 145:16"
+    ],
+    "anchorVerse": 16,
+    "category": "Kabbalah",
+    "collectiveTitle": {
+      "en": "Sha'arei Orah",
+      "he": "שערי אורה"
+    },
+    "commentaryNum": 147,
+    "compDate": [
+      1260,
+      1300
+    ],
+    "heTitle": "השער השני - הספירה התשיעית",
+    "index_title": "Sha'arei Orah",
+    "ref": "Sha'arei Orah, Second Gate, Ninth Sefirah 147",
+    "sourceHasEn": true,
+    "sourceHeRef": "שערי אורה, השער השני - הספירה התשיעית קמ״ז",
+    "sourceRef": "Sha'arei Orah, Second Gate, Ninth Sefirah 147",
+    "type": ""
+  },
+  {
+    "_id": "657eb25e80c65f62e94c337d",
+    "anchorRef": "Psalms 145:16",
+    "anchorRefExpanded": [
+      "Psalms 145:16"
+    ],
+    "anchorVerse": 16,
+    "category": "Commentary",
+    "collectiveTitle": {
+      "en": "Steinsaltz",
+      "he": "ביאור שטיינזלץ"
+    },
+    "commentaryNum": 145.0016,
+    "heTitle": "ביאור שטיינזלץ על תהילים",
+    "index_title": "Steinsaltz on Psalms",
+    "ref": "Steinsaltz on Psalms 145:16",
+    "sourceHasEn": true,
+    "sourceHeRef": "ביאור שטיינזלץ על תהילים קמ״ה:ט״ז",
+    "sourceRef": "Steinsaltz on Psalms 145:16",
+    "type": "commentary"
+  },
+  {
+    "_id": "663252ecee74af40da96fa91",
+    "anchorRef": "Psalms 145:16",
+    "anchorRefExpanded": [
+      "Psalms 145:16"
+    ],
+    "anchorVerse": 16,
+    "category": "Kabbalah",
+    "collectiveTitle": {
+      "en": "Tikkunei Zohar",
+      "he": "תקוני הזהר"
+    },
+    "commentaryNum": 74.0004,
+    "compDate": [
+      1100,
+      1400
+    ],
+    "heTitle": "תקוני הזהר",
+    "index_title": "Tikkunei Zohar",
+    "ref": "Tikkunei Zohar 37b:4",
+    "sourceHasEn": true,
+    "sourceHeRef": "תקוני הזהר ל״ז ב:ד׳",
+    "sourceRef": "Tikkunei Zohar 37b:4",
+    "type": ""
+  },
+  {
+    "_id": "663255f5ee74af40da96fd04",
+    "anchorRef": "Psalms 145:16",
+    "anchorRefExpanded": [
+      "Psalms 145:16"
+    ],
+    "anchorVerse": 16,
+    "category": "Kabbalah",
+    "collectiveTitle": {
+      "en": "Tikkunei Zohar",
+      "he": "תקוני הזהר"
+    },
+    "commentaryNum": 92.0012,
+    "compDate": [
+      1100,
+      1400
+    ],
+    "heTitle": "תקוני הזהר",
+    "index_title": "Tikkunei Zohar",
+    "ref": "Tikkunei Zohar 46b:12",
+    "sourceHasEn": true,
+    "sourceHeRef": "תקוני הזהר מ״ו ב:י״ב",
+    "sourceRef": "Tikkunei Zohar 46b:12",
     "type": ""
   },
   {
@@ -6450,31 +6874,6 @@
     "sourceHeRef": "תורה תמימה על תהילים קמ״ה:י״ז:א׳",
     "sourceRef": "Torah Temimah on Psalms 145:17:1",
     "type": "commentary"
-  },
-  {
-    "_id": "55b157c2fbfba2552ab2cef6",
-    "anchorRef": "Psalms 145:17",
-    "anchorRefExpanded": [
-      "Psalms 145:17"
-    ],
-    "anchorVerse": 17,
-    "category": "Kabbalah",
-    "collectiveTitle": {
-      "en": "Tikkunei Zohar",
-      "he": "תקוני הזהר"
-    },
-    "commentaryNum": 80.0001,
-    "compDate": [
-      1100,
-      1400
-    ],
-    "heTitle": "תקוני הזהר",
-    "index_title": "Tikkunei Zohar",
-    "ref": "Tikkunei Zohar 40b:1",
-    "sourceHasEn": false,
-    "sourceHeRef": "תקוני הזהר מ׳ ב:א׳",
-    "sourceRef": "Tikkunei Zohar 40b:1",
-    "type": ""
   },
   {
     "_id": "58a4472bd6e4a97ea8054020",
@@ -6719,7 +7118,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:17:1",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:י״ז:א׳",
     "sourceRef": "Radak on Psalms 145:17:1",
     "type": "commentary"
@@ -6744,7 +7143,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:17:2",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:י״ז:ב׳",
     "sourceRef": "Radak on Psalms 145:17:2",
     "type": "commentary"
@@ -7153,7 +7552,7 @@
     "anchorVerse": 17,
     "category": "Kabbalah",
     "collectiveTitle": {
-      "en": "Shaarei Orah",
+      "en": "Sha'arei Orah",
       "he": "שערי אורה"
     },
     "commentaryNum": 113,
@@ -7162,11 +7561,57 @@
       1300
     ],
     "heTitle": "השער החמישי - הספירה השישית",
-    "index_title": "Shaarei Orah",
-    "ref": "Shaarei Orah, Fifth Gate, Sixth Sefirah 113",
+    "index_title": "Sha'arei Orah",
+    "ref": "Sha'arei Orah, Fifth Gate, Sixth Sefirah 113",
     "sourceHasEn": false,
     "sourceHeRef": "שערי אורה, השער החמישי - הספירה השישית קי״ג",
-    "sourceRef": "Shaarei Orah, Fifth Gate, Sixth Sefirah 113",
+    "sourceRef": "Sha'arei Orah, Fifth Gate, Sixth Sefirah 113",
+    "type": ""
+  },
+  {
+    "_id": "657eb25e80c65f62e94c337e",
+    "anchorRef": "Psalms 145:17",
+    "anchorRefExpanded": [
+      "Psalms 145:17"
+    ],
+    "anchorVerse": 17,
+    "category": "Commentary",
+    "collectiveTitle": {
+      "en": "Steinsaltz",
+      "he": "ביאור שטיינזלץ"
+    },
+    "commentaryNum": 145.0017,
+    "heTitle": "ביאור שטיינזלץ על תהילים",
+    "index_title": "Steinsaltz on Psalms",
+    "ref": "Steinsaltz on Psalms 145:17",
+    "sourceHasEn": true,
+    "sourceHeRef": "ביאור שטיינזלץ על תהילים קמ״ה:י״ז",
+    "sourceRef": "Steinsaltz on Psalms 145:17",
+    "type": "commentary"
+  },
+  {
+    "_id": "663236461dac1eec94075f17",
+    "anchorRef": "Psalms 145:17",
+    "anchorRefExpanded": [
+      "Psalms 145:17"
+    ],
+    "anchorVerse": 17,
+    "category": "Kabbalah",
+    "collectiveTitle": {
+      "en": "Tikkunei Zohar",
+      "he": "תקוני הזהר"
+    },
+    "commentaryNum": 80.0003,
+    "compDate": [
+      1100,
+      1400
+    ],
+    "heTitle": "תקוני הזהר",
+    "index_title": "Tikkunei Zohar",
+    "ref": "Tikkunei Zohar 40b:3",
+    "sourceHasEn": true,
+    "sourceHeRef": "תקוני הזהר מ׳ ב:ג׳",
+    "sourceRef": "Tikkunei Zohar 40b:3",
     "type": ""
   },
   {
@@ -7511,7 +7956,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:18:1",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:י״ח:א׳",
     "sourceRef": "Radak on Psalms 145:18:1",
     "type": "commentary"
@@ -7624,7 +8069,7 @@
     "anchorVerse": 18,
     "category": "Kabbalah",
     "collectiveTitle": {
-      "en": "Shaarei Orah",
+      "en": "Sha'arei Orah",
       "he": "שערי אורה"
     },
     "commentaryNum": 9,
@@ -7633,11 +8078,11 @@
       1300
     ],
     "heTitle": "השער הראשון - הספירה העשירית",
-    "index_title": "Shaarei Orah",
-    "ref": "Shaarei Orah, First Gate, Tenth Sefirah 9",
+    "index_title": "Sha'arei Orah",
+    "ref": "Sha'arei Orah, First Gate, Tenth Sefirah 9",
     "sourceHasEn": true,
     "sourceHeRef": "שערי אורה, השער הראשון - הספירה העשירית ט׳",
-    "sourceRef": "Shaarei Orah, First Gate, Tenth Sefirah 9",
+    "sourceRef": "Sha'arei Orah, First Gate, Tenth Sefirah 9",
     "type": ""
   },
   {
@@ -7961,7 +8406,7 @@
     "anchorVerse": 18,
     "category": "Kabbalah",
     "collectiveTitle": {
-      "en": "Shaarei Orah",
+      "en": "Sha'arei Orah",
       "he": "שערי אורה"
     },
     "commentaryNum": 77,
@@ -7970,12 +8415,33 @@
       1300
     ],
     "heTitle": "השער השלישי והרביעי - הספירה השמינית והשביעית",
-    "index_title": "Shaarei Orah",
-    "ref": "Shaarei Orah, Third and Fourth Gates, Seventh and Eight Sefirah 77",
+    "index_title": "Sha'arei Orah",
+    "ref": "Sha'arei Orah, Third and Fourth Gates, Seventh and Eight Sefirah 77",
     "sourceHasEn": true,
     "sourceHeRef": "שערי אורה, השער השלישי והרביעי - הספירה השמינית והשביעית ע״ז",
-    "sourceRef": "Shaarei Orah, Third and Fourth Gates, Seventh and Eight Sefirah 77",
+    "sourceRef": "Sha'arei Orah, Third and Fourth Gates, Seventh and Eight Sefirah 77",
     "type": ""
+  },
+  {
+    "_id": "657eb25e80c65f62e94c337f",
+    "anchorRef": "Psalms 145:18",
+    "anchorRefExpanded": [
+      "Psalms 145:18"
+    ],
+    "anchorVerse": 18,
+    "category": "Commentary",
+    "collectiveTitle": {
+      "en": "Steinsaltz",
+      "he": "ביאור שטיינזלץ"
+    },
+    "commentaryNum": 145.0018,
+    "heTitle": "ביאור שטיינזלץ על תהילים",
+    "index_title": "Steinsaltz on Psalms",
+    "ref": "Steinsaltz on Psalms 145:18",
+    "sourceHasEn": true,
+    "sourceHeRef": "ביאור שטיינזלץ על תהילים קמ״ה:י״ח",
+    "sourceRef": "Steinsaltz on Psalms 145:18",
+    "type": "commentary"
   },
   {
     "_id": "58a44776d6e4a97ea8054763",
@@ -8121,7 +8587,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:19:1",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:י״ט:א׳",
     "sourceRef": "Radak on Psalms 145:19:1",
     "type": "commentary"
@@ -8448,7 +8914,7 @@
     "anchorVerse": 19,
     "category": "Kabbalah",
     "collectiveTitle": {
-      "en": "Shaarei Orah",
+      "en": "Sha'arei Orah",
       "he": "שערי אורה"
     },
     "commentaryNum": 36,
@@ -8457,11 +8923,11 @@
       1300
     ],
     "heTitle": "השער התשיעי - הספירה השנייה",
-    "index_title": "Shaarei Orah",
-    "ref": "Shaarei Orah, Ninth Gate, Second Sefirah 36",
+    "index_title": "Sha'arei Orah",
+    "ref": "Sha'arei Orah, Ninth Gate, Second Sefirah 36",
     "sourceHasEn": true,
     "sourceHeRef": "שערי אורה, השער התשיעי - הספירה השנייה ל״ו",
-    "sourceRef": "Shaarei Orah, Ninth Gate, Second Sefirah 36",
+    "sourceRef": "Sha'arei Orah, Ninth Gate, Second Sefirah 36",
     "type": ""
   },
   {
@@ -8473,7 +8939,7 @@
     "anchorVerse": 19,
     "category": "Kabbalah",
     "collectiveTitle": {
-      "en": "Shaarei Orah",
+      "en": "Sha'arei Orah",
       "he": "שערי אורה"
     },
     "commentaryNum": 39,
@@ -8482,11 +8948,57 @@
       1300
     ],
     "heTitle": "השער התשיעי - הספירה השנייה",
-    "index_title": "Shaarei Orah",
-    "ref": "Shaarei Orah, Ninth Gate, Second Sefirah 39",
+    "index_title": "Sha'arei Orah",
+    "ref": "Sha'arei Orah, Ninth Gate, Second Sefirah 39",
     "sourceHasEn": true,
     "sourceHeRef": "שערי אורה, השער התשיעי - הספירה השנייה ל״ט",
-    "sourceRef": "Shaarei Orah, Ninth Gate, Second Sefirah 39",
+    "sourceRef": "Sha'arei Orah, Ninth Gate, Second Sefirah 39",
+    "type": ""
+  },
+  {
+    "_id": "657eb25e80c65f62e94c3380",
+    "anchorRef": "Psalms 145:19",
+    "anchorRefExpanded": [
+      "Psalms 145:19"
+    ],
+    "anchorVerse": 19,
+    "category": "Commentary",
+    "collectiveTitle": {
+      "en": "Steinsaltz",
+      "he": "ביאור שטיינזלץ"
+    },
+    "commentaryNum": 145.0019,
+    "heTitle": "ביאור שטיינזלץ על תהילים",
+    "index_title": "Steinsaltz on Psalms",
+    "ref": "Steinsaltz on Psalms 145:19",
+    "sourceHasEn": true,
+    "sourceHeRef": "ביאור שטיינזלץ על תהילים קמ״ה:י״ט",
+    "sourceRef": "Steinsaltz on Psalms 145:19",
+    "type": "commentary"
+  },
+  {
+    "_id": "65e5d1e16aad563290ee47f5",
+    "anchorRef": "Psalms 145:19",
+    "anchorRefExpanded": [
+      "Psalms 145:19"
+    ],
+    "anchorVerse": 19,
+    "category": "Quoting Commentary",
+    "collectiveTitle": {
+      "en": "Tze'enah Ure'enah",
+      "he": "צאינה וראינה"
+    },
+    "commentaryNum": 5,
+    "compDate": [
+      1590,
+      1616
+    ],
+    "heTitle": "וילך",
+    "index_title": "Tze'enah Ure'enah",
+    "ref": "Tze'enah Ure'enah, Vayeilech 5",
+    "sourceHasEn": true,
+    "sourceHeRef": "צאינה וראינה, וילך ה׳",
+    "sourceRef": "Tze'enah Ure'enah, Vayeilech 5",
     "type": ""
   },
   {
@@ -8534,7 +9046,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:2:1",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:ב׳:א׳",
     "sourceRef": "Radak on Psalms 145:2:1",
     "type": "commentary"
@@ -8559,7 +9071,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:2:2",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:ב׳:ב׳",
     "sourceRef": "Radak on Psalms 145:2:2",
     "type": "commentary"
@@ -8614,6 +9126,27 @@
     "type": "quotation_auto_tanakh"
   },
   {
+    "_id": "657eb25e80c65f62e94c336f",
+    "anchorRef": "Psalms 145:2",
+    "anchorRefExpanded": [
+      "Psalms 145:2"
+    ],
+    "anchorVerse": 2,
+    "category": "Commentary",
+    "collectiveTitle": {
+      "en": "Steinsaltz",
+      "he": "ביאור שטיינזלץ"
+    },
+    "commentaryNum": 145.0002,
+    "heTitle": "ביאור שטיינזלץ על תהילים",
+    "index_title": "Steinsaltz on Psalms",
+    "ref": "Steinsaltz on Psalms 145:2",
+    "sourceHasEn": true,
+    "sourceHeRef": "ביאור שטיינזלץ על תהילים קמ״ה:ב׳",
+    "sourceRef": "Steinsaltz on Psalms 145:2",
+    "type": "commentary"
+  },
+  {
     "_id": "59648312d6e4a92bf45a4c18",
     "anchorRef": "Psalms 145:20",
     "anchorRefExpanded": [
@@ -8658,7 +9191,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:20:1",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:כ׳:א׳",
     "sourceRef": "Radak on Psalms 145:20:1",
     "type": "commentary"
@@ -8711,6 +9244,27 @@
     "sourceHeRef": "סידור אשכנז, חגים, סליחות, צום גדליה כ״ו",
     "sourceRef": "Siddur Ashkenaz, Festivals, Selichot, Fast of Gedalia 26",
     "type": "quotation_auto_tanakh"
+  },
+  {
+    "_id": "657eb25e80c65f62e94c3381",
+    "anchorRef": "Psalms 145:20",
+    "anchorRefExpanded": [
+      "Psalms 145:20"
+    ],
+    "anchorVerse": 20,
+    "category": "Commentary",
+    "collectiveTitle": {
+      "en": "Steinsaltz",
+      "he": "ביאור שטיינזלץ"
+    },
+    "commentaryNum": 145.002,
+    "heTitle": "ביאור שטיינזלץ על תהילים",
+    "index_title": "Steinsaltz on Psalms",
+    "ref": "Steinsaltz on Psalms 145:20",
+    "sourceHasEn": true,
+    "sourceHeRef": "ביאור שטיינזלץ על תהילים קמ״ה:כ׳",
+    "sourceRef": "Steinsaltz on Psalms 145:20",
+    "type": "commentary"
   },
   {
     "_id": "53f18ef3fbfba21e3018174a",
@@ -8954,7 +9508,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:21:1",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:כ״א:א׳",
     "sourceRef": "Radak on Psalms 145:21:1",
     "type": "commentary"
@@ -9203,6 +9757,27 @@
     "type": ""
   },
   {
+    "_id": "657eb25e80c65f62e94c3382",
+    "anchorRef": "Psalms 145:21",
+    "anchorRefExpanded": [
+      "Psalms 145:21"
+    ],
+    "anchorVerse": 21,
+    "category": "Commentary",
+    "collectiveTitle": {
+      "en": "Steinsaltz",
+      "he": "ביאור שטיינזלץ"
+    },
+    "commentaryNum": 145.0021,
+    "heTitle": "ביאור שטיינזלץ על תהילים",
+    "index_title": "Steinsaltz on Psalms",
+    "ref": "Steinsaltz on Psalms 145:21",
+    "sourceHasEn": true,
+    "sourceHeRef": "ביאור שטיינזלץ על תהילים קמ״ה:כ״א",
+    "sourceRef": "Steinsaltz on Psalms 145:21",
+    "type": "commentary"
+  },
+  {
     "_id": "5926c96ad6e4a957603a44c9",
     "anchorRef": "Psalms 145:3",
     "anchorRefExpanded": [
@@ -9247,7 +9822,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:3:1",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:ג׳:א׳",
     "sourceRef": "Radak on Psalms 145:3:1",
     "type": "commentary"
@@ -9272,7 +9847,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:3:2",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:ג׳:ב׳",
     "sourceRef": "Radak on Psalms 145:3:2",
     "type": "commentary"
@@ -9735,6 +10310,27 @@
     "type": ""
   },
   {
+    "_id": "657eb25e80c65f62e94c3370",
+    "anchorRef": "Psalms 145:3",
+    "anchorRefExpanded": [
+      "Psalms 145:3"
+    ],
+    "anchorVerse": 3,
+    "category": "Commentary",
+    "collectiveTitle": {
+      "en": "Steinsaltz",
+      "he": "ביאור שטיינזלץ"
+    },
+    "commentaryNum": 145.0003,
+    "heTitle": "ביאור שטיינזלץ על תהילים",
+    "index_title": "Steinsaltz on Psalms",
+    "ref": "Steinsaltz on Psalms 145:3",
+    "sourceHasEn": true,
+    "sourceHeRef": "ביאור שטיינזלץ על תהילים קמ״ה:ג׳",
+    "sourceRef": "Steinsaltz on Psalms 145:3",
+    "type": "commentary"
+  },
+  {
     "_id": "53f1902cfbfba21e30184c70",
     "anchorRef": "Psalms 145:4",
     "anchorRefExpanded": [
@@ -9804,7 +10400,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:4:1",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:ד׳:א׳",
     "sourceRef": "Radak on Psalms 145:4:1",
     "type": "commentary"
@@ -9954,6 +10550,51 @@
     "type": ""
   },
   {
+    "_id": "6593c9297cd0ed0599b6d5fe",
+    "anchorRef": "Psalms 145:4",
+    "anchorRefExpanded": [
+      "Psalms 145:4"
+    ],
+    "anchorVerse": 4,
+    "category": "Quoting Commentary",
+    "collectiveTitle": {
+      "en": "Shadal on Isaiah",
+      "he": "שד\"ל על ישעיהו"
+    },
+    "commentaryNum": 10.0002,
+    "compDate": [
+      1831,
+      1855
+    ],
+    "index_title": "Shadal on Isaiah",
+    "ref": "Shadal on Isaiah 28:10:2",
+    "sourceHasEn": false,
+    "sourceHeRef": "שד\"ל על ישעיהו כ״ח:י׳:ב׳",
+    "sourceRef": "Shadal on Isaiah 28:10:2",
+    "type": ""
+  },
+  {
+    "_id": "657eb25e80c65f62e94c3371",
+    "anchorRef": "Psalms 145:4",
+    "anchorRefExpanded": [
+      "Psalms 145:4"
+    ],
+    "anchorVerse": 4,
+    "category": "Commentary",
+    "collectiveTitle": {
+      "en": "Steinsaltz",
+      "he": "ביאור שטיינזלץ"
+    },
+    "commentaryNum": 145.0004,
+    "heTitle": "ביאור שטיינזלץ על תהילים",
+    "index_title": "Steinsaltz on Psalms",
+    "ref": "Steinsaltz on Psalms 145:4",
+    "sourceHasEn": true,
+    "sourceHeRef": "ביאור שטיינזלץ על תהילים קמ״ה:ד׳",
+    "sourceRef": "Steinsaltz on Psalms 145:4",
+    "type": "commentary"
+  },
+  {
     "_id": "59648369d6e4a92bf45a68ca",
     "anchorRef": "Psalms 145:5",
     "anchorRefExpanded": [
@@ -9998,7 +10639,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:5:1",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:ה׳:א׳",
     "sourceRef": "Radak on Psalms 145:5:1",
     "type": "commentary"
@@ -10023,7 +10664,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:5:2",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:ה׳:ב׳",
     "sourceRef": "Radak on Psalms 145:5:2",
     "type": "commentary"
@@ -10048,7 +10689,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:5:3",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:ה׳:ג׳",
     "sourceRef": "Radak on Psalms 145:5:3",
     "type": "commentary"
@@ -10153,6 +10794,27 @@
     "type": "quotation_auto_tanakh"
   },
   {
+    "_id": "657eb25e80c65f62e94c3372",
+    "anchorRef": "Psalms 145:5",
+    "anchorRefExpanded": [
+      "Psalms 145:5"
+    ],
+    "anchorVerse": 5,
+    "category": "Commentary",
+    "collectiveTitle": {
+      "en": "Steinsaltz",
+      "he": "ביאור שטיינזלץ"
+    },
+    "commentaryNum": 145.0005,
+    "heTitle": "ביאור שטיינזלץ על תהילים",
+    "index_title": "Steinsaltz on Psalms",
+    "ref": "Steinsaltz on Psalms 145:5",
+    "sourceHasEn": true,
+    "sourceHeRef": "ביאור שטיינזלץ על תהילים קמ״ה:ה׳",
+    "sourceRef": "Steinsaltz on Psalms 145:5",
+    "type": "commentary"
+  },
+  {
     "_id": "53f1902cfbfba21e30184c72",
     "anchorRef": "Psalms 145:6",
     "anchorRefExpanded": [
@@ -10197,7 +10859,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:6:1",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:ו׳:א׳",
     "sourceRef": "Radak on Psalms 145:6:1",
     "type": "commentary"
@@ -10277,6 +10939,27 @@
     "type": "quotation_auto_tanakh"
   },
   {
+    "_id": "657eb25e80c65f62e94c3373",
+    "anchorRef": "Psalms 145:6",
+    "anchorRefExpanded": [
+      "Psalms 145:6"
+    ],
+    "anchorVerse": 6,
+    "category": "Commentary",
+    "collectiveTitle": {
+      "en": "Steinsaltz",
+      "he": "ביאור שטיינזלץ"
+    },
+    "commentaryNum": 145.0006,
+    "heTitle": "ביאור שטיינזלץ על תהילים",
+    "index_title": "Steinsaltz on Psalms",
+    "ref": "Steinsaltz on Psalms 145:6",
+    "sourceHasEn": true,
+    "sourceHeRef": "ביאור שטיינזלץ על תהילים קמ״ה:ו׳",
+    "sourceRef": "Steinsaltz on Psalms 145:6",
+    "type": "commentary"
+  },
+  {
     "_id": "53f1902cfbfba21e30184c74",
     "anchorRef": "Psalms 145:7",
     "anchorRefExpanded": [
@@ -10321,7 +11004,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:7:1",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:ז׳:א׳",
     "sourceRef": "Radak on Psalms 145:7:1",
     "type": "commentary"
@@ -10346,7 +11029,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:7:2",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:ז׳:ב׳",
     "sourceRef": "Radak on Psalms 145:7:2",
     "type": "commentary"
@@ -10371,7 +11054,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:7:3",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:ז׳:ג׳",
     "sourceRef": "Radak on Psalms 145:7:3",
     "type": "commentary"
@@ -10451,6 +11134,67 @@
     "type": ""
   },
   {
+    "_id": "657eb25e80c65f62e94c3374",
+    "anchorRef": "Psalms 145:7",
+    "anchorRefExpanded": [
+      "Psalms 145:7"
+    ],
+    "anchorVerse": 7,
+    "category": "Commentary",
+    "collectiveTitle": {
+      "en": "Steinsaltz",
+      "he": "ביאור שטיינזלץ"
+    },
+    "commentaryNum": 145.0007,
+    "heTitle": "ביאור שטיינזלץ על תהילים",
+    "index_title": "Steinsaltz on Psalms",
+    "ref": "Steinsaltz on Psalms 145:7",
+    "sourceHasEn": true,
+    "sourceHeRef": "ביאור שטיינזלץ על תהילים קמ״ה:ז׳",
+    "sourceRef": "Steinsaltz on Psalms 145:7",
+    "type": "commentary"
+  },
+  {
+    "_id": "66092836a500bb4d2fbbcad7",
+    "anchorRef": "Psalms 145:7",
+    "anchorRefExpanded": [
+      "Psalms 145:7"
+    ],
+    "anchorVerse": 7,
+    "category": "Chasidut",
+    "collectiveTitle": {
+      "en": "The Gate of Unity",
+      "he": "נר מצוה ותורה אור; שער היחוד"
+    },
+    "commentaryNum": 13.0038,
+    "index_title": "The Gate of Unity",
+    "ref": "The Gate of Unity 13:38",
+    "sourceHasEn": true,
+    "sourceHeRef": "נר מצוה ותורה אור; שער היחוד י״ג:ל״ח",
+    "sourceRef": "The Gate of Unity 13:38",
+    "type": ""
+  },
+  {
+    "_id": "66092879a500bb4d2fbbcb6e",
+    "anchorRef": "Psalms 145:7",
+    "anchorRefExpanded": [
+      "Psalms 145:7"
+    ],
+    "anchorVerse": 7,
+    "category": "Chasidut",
+    "collectiveTitle": {
+      "en": "The Gate of Unity",
+      "he": "נר מצוה ותורה אור; שער היחוד"
+    },
+    "commentaryNum": 25.0059,
+    "index_title": "The Gate of Unity",
+    "ref": "The Gate of Unity 25:59",
+    "sourceHasEn": true,
+    "sourceHeRef": "נר מצוה ותורה אור; שער היחוד כ״ה:נ״ט",
+    "sourceRef": "The Gate of Unity 25:59",
+    "type": ""
+  },
+  {
     "_id": "550afbb2fbfba20ec31f3f2e",
     "anchorRef": "Psalms 145:8",
     "anchorRefExpanded": [
@@ -10520,7 +11264,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:8:1",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:ח׳:א׳",
     "sourceRef": "Radak on Psalms 145:8:1",
     "type": "commentary"
@@ -10545,7 +11289,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:8:2",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:ח׳:ב׳",
     "sourceRef": "Radak on Psalms 145:8:2",
     "type": "commentary"
@@ -10570,7 +11314,7 @@
     "heTitle": "רד\"ק על תהילים",
     "index_title": "Radak on Psalms",
     "ref": "Radak on Psalms 145:8:3",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "רד\"ק על תהילים קמ״ה:ח׳:ג׳",
     "sourceRef": "Radak on Psalms 145:8:3",
     "type": "commentary"
@@ -10757,7 +11501,7 @@
     "anchorVerse": 8,
     "category": "Kabbalah",
     "collectiveTitle": {
-      "en": "Shaarei Orah",
+      "en": "Sha'arei Orah",
       "he": "שערי אורה"
     },
     "commentaryNum": 18,
@@ -10766,11 +11510,11 @@
       1300
     ],
     "heTitle": "השער השמיני - הספירה השלישית",
-    "index_title": "Shaarei Orah",
-    "ref": "Shaarei Orah, Eight Gate, Third Sefirah 18",
+    "index_title": "Sha'arei Orah",
+    "ref": "Sha'arei Orah, Eight Gate, Third Sefirah 18",
     "sourceHasEn": true,
     "sourceHeRef": "שערי אורה, השער השמיני - הספירה השלישית י״ח",
-    "sourceRef": "Shaarei Orah, Eight Gate, Third Sefirah 18",
+    "sourceRef": "Sha'arei Orah, Eight Gate, Third Sefirah 18",
     "type": ""
   },
   {
@@ -10782,7 +11526,7 @@
     "anchorVerse": 8,
     "category": "Kabbalah",
     "collectiveTitle": {
-      "en": "Shaarei Orah",
+      "en": "Sha'arei Orah",
       "he": "שערי אורה"
     },
     "commentaryNum": 85,
@@ -10791,12 +11535,33 @@
       1300
     ],
     "heTitle": "השער החמישי - הספירה השישית",
-    "index_title": "Shaarei Orah",
-    "ref": "Shaarei Orah, Fifth Gate, Sixth Sefirah 85",
+    "index_title": "Sha'arei Orah",
+    "ref": "Sha'arei Orah, Fifth Gate, Sixth Sefirah 85",
     "sourceHasEn": true,
     "sourceHeRef": "שערי אורה, השער החמישי - הספירה השישית פ״ה",
-    "sourceRef": "Shaarei Orah, Fifth Gate, Sixth Sefirah 85",
+    "sourceRef": "Sha'arei Orah, Fifth Gate, Sixth Sefirah 85",
     "type": ""
+  },
+  {
+    "_id": "657eb25e80c65f62e94c3375",
+    "anchorRef": "Psalms 145:8",
+    "anchorRefExpanded": [
+      "Psalms 145:8"
+    ],
+    "anchorVerse": 8,
+    "category": "Commentary",
+    "collectiveTitle": {
+      "en": "Steinsaltz",
+      "he": "ביאור שטיינזלץ"
+    },
+    "commentaryNum": 145.0008,
+    "heTitle": "ביאור שטיינזלץ על תהילים",
+    "index_title": "Steinsaltz on Psalms",
+    "ref": "Steinsaltz on Psalms 145:8",
+    "sourceHasEn": true,
+    "sourceHeRef": "ביאור שטיינזלץ על תהילים קמ״ה:ח׳",
+    "sourceRef": "Steinsaltz on Psalms 145:8",
+    "type": "commentary"
   },
   {
     "_id": "53f18ef2fbfba21e30181734",
@@ -10941,31 +11706,6 @@
     "sourceHasEn": false,
     "sourceHeRef": "תקוני הזהר ו׳ א:ו׳",
     "sourceRef": "Tikkunei Zohar 6a:6",
-    "type": ""
-  },
-  {
-    "_id": "55b157befbfba2552ab2cc74",
-    "anchorRef": "Psalms 145:9",
-    "anchorRefExpanded": [
-      "Psalms 145:9"
-    ],
-    "anchorVerse": 9,
-    "category": "Kabbalah",
-    "collectiveTitle": {
-      "en": "Tikkunei Zohar",
-      "he": "תקוני הזהר"
-    },
-    "commentaryNum": 45.0006,
-    "compDate": [
-      1100,
-      1400
-    ],
-    "heTitle": "תקוני הזהר",
-    "index_title": "Tikkunei Zohar",
-    "ref": "Tikkunei Zohar 23a:6",
-    "sourceHasEn": false,
-    "sourceHeRef": "תקוני הזהר כ״ג א:ו׳",
-    "sourceRef": "Tikkunei Zohar 23a:6",
     "type": ""
   },
   {
@@ -12565,7 +13305,7 @@
     "anchorVerse": 9,
     "category": "Kabbalah",
     "collectiveTitle": {
-      "en": "Shaarei Orah",
+      "en": "Sha'arei Orah",
       "he": "שערי אורה"
     },
     "commentaryNum": 17,
@@ -12574,11 +13314,102 @@
       1300
     ],
     "heTitle": "השער השישי - הספירה החמישית",
-    "index_title": "Shaarei Orah",
-    "ref": "Shaarei Orah, Sixth Gate, Fifth Sefirah 17",
+    "index_title": "Sha'arei Orah",
+    "ref": "Sha'arei Orah, Sixth Gate, Fifth Sefirah 17",
     "sourceHasEn": false,
     "sourceHeRef": "שערי אורה, השער השישי - הספירה החמישית י״ז",
-    "sourceRef": "Shaarei Orah, Sixth Gate, Fifth Sefirah 17",
+    "sourceRef": "Sha'arei Orah, Sixth Gate, Fifth Sefirah 17",
+    "type": ""
+  },
+  {
+    "_id": "65c4d8560d4c233e7f1a195a",
+    "anchorRef": "Psalms 145:9",
+    "anchorRefExpanded": [
+      "Psalms 145:9"
+    ],
+    "anchorVerse": 9,
+    "category": "Kabbalah",
+    "collectiveTitle": {
+      "en": "Sha'arei Orah",
+      "he": "שערי אורה"
+    },
+    "commentaryNum": 47,
+    "compDate": [
+      1260,
+      1300
+    ],
+    "heTitle": "השער השני - הספירה התשיעית",
+    "index_title": "Sha'arei Orah",
+    "ref": "Sha'arei Orah, Second Gate, Ninth Sefirah 47",
+    "sourceHasEn": true,
+    "sourceHeRef": "שערי אורה, השער השני - הספירה התשיעית מ״ז",
+    "sourceRef": "Sha'arei Orah, Second Gate, Ninth Sefirah 47",
+    "type": ""
+  },
+  {
+    "_id": "657eb25e80c65f62e94c3376",
+    "anchorRef": "Psalms 145:9",
+    "anchorRefExpanded": [
+      "Psalms 145:9"
+    ],
+    "anchorVerse": 9,
+    "category": "Commentary",
+    "collectiveTitle": {
+      "en": "Steinsaltz",
+      "he": "ביאור שטיינזלץ"
+    },
+    "commentaryNum": 145.0009,
+    "heTitle": "ביאור שטיינזלץ על תהילים",
+    "index_title": "Steinsaltz on Psalms",
+    "ref": "Steinsaltz on Psalms 145:9",
+    "sourceHasEn": true,
+    "sourceHeRef": "ביאור שטיינזלץ על תהילים קמ״ה:ט׳",
+    "sourceRef": "Steinsaltz on Psalms 145:9",
+    "type": "commentary"
+  },
+  {
+    "_id": "660928b0a500bb4d2fbbcc2e",
+    "anchorRef": "Psalms 145:9",
+    "anchorRefExpanded": [
+      "Psalms 145:9"
+    ],
+    "anchorVerse": 9,
+    "category": "Chasidut",
+    "collectiveTitle": {
+      "en": "The Gate of Unity",
+      "he": "נר מצוה ותורה אור; שער היחוד"
+    },
+    "commentaryNum": 36.0011,
+    "index_title": "The Gate of Unity",
+    "ref": "The Gate of Unity 36:11",
+    "sourceHasEn": true,
+    "sourceHeRef": "נר מצוה ותורה אור; שער היחוד ל״ו:י״א",
+    "sourceRef": "The Gate of Unity 36:11",
+    "type": ""
+  },
+  {
+    "_id": "6632549aee74af40da96fc25",
+    "anchorRef": "Psalms 145:9",
+    "anchorRefExpanded": [
+      "Psalms 145:9"
+    ],
+    "anchorVerse": 9,
+    "category": "Kabbalah",
+    "collectiveTitle": {
+      "en": "Tikkunei Zohar",
+      "he": "תקוני הזהר"
+    },
+    "commentaryNum": 45.0013,
+    "compDate": [
+      1100,
+      1400
+    ],
+    "heTitle": "תקוני הזהר",
+    "index_title": "Tikkunei Zohar",
+    "ref": "Tikkunei Zohar 23a:13",
+    "sourceHasEn": true,
+    "sourceHeRef": "תקוני הזהר כ״ג א:י״ג",
+    "sourceRef": "Tikkunei Zohar 23a:13",
     "type": ""
   },
   {
@@ -13132,20 +13963,20 @@
     "anchorVerse": 1,
     "category": "Kabbalah",
     "collectiveTitle": {
-      "en": "Megaleh Amukot",
-      "he": "מגלה עמוקות"
+      "en": "Megalleh Amukkot on Parashat VaEtchanan",
+      "he": "מגלה עמוקות על פרשת ואתחנן"
     },
     "commentaryNum": 94.0001,
     "compDate": [
       1607,
       1633
     ],
-    "heTitle": "מגלה עמוקות",
-    "index_title": "Megaleh Amukot",
-    "ref": "Megaleh Amukot 94:1",
+    "heTitle": "מגלה עמוקות על פרשת ואתחנן",
+    "index_title": "Megalleh Amukkot on Parashat VaEtchanan",
+    "ref": "Megalleh Amukkot on Parashat VaEtchanan 94:1",
     "sourceHasEn": false,
-    "sourceHeRef": "מגלה עמוקות צ״ד:א׳",
-    "sourceRef": "Megaleh Amukot 94:1",
+    "sourceHeRef": "מגלה עמוקות על פרשת ואתחנן צ״ד:א׳",
+    "sourceRef": "Megalleh Amukkot on Parashat VaEtchanan 94:1",
     "type": ""
   },
   {
@@ -13313,7 +14144,6 @@
       1844,
       1874
     ],
-    "heTitle": "מלבי\"ם על תהילים",
     "index_title": "Malbim on Psalms",
     "ref": "Malbim on Psalms 145:1:1",
     "sourceHasEn": false,
@@ -13898,7 +14728,7 @@
       "Psalms 145:10"
     ],
     "anchorVerse": 10,
-    "category": "Halakhah",
+    "category": "Quoting Commentary",
     "collectiveTitle": {
       "en": "Machzor Vitry",
       "he": "מחזור ויטרי"
@@ -13983,7 +14813,6 @@
       1844,
       1874
     ],
-    "heTitle": "מלבי\"ם על תהילים",
     "index_title": "Malbim on Psalms",
     "ref": "Malbim on Psalms 145:10:1",
     "sourceHasEn": false,
@@ -14099,16 +14928,40 @@
     "anchorVerse": 10,
     "category": "Quoting Commentary",
     "collectiveTitle": {
-      "en": "Ohel Yaakov on Torah",
+      "en": "Ohel Ya'akov on Torah",
       "he": "אהל יעקב על התורה"
     },
     "commentaryNum": 3.0004,
     "heTitle": "ואתחנן",
-    "index_title": "Ohel Yaakov on Torah",
-    "ref": "Ohel Yaakov on Torah, Vaetchanan 3:4",
+    "index_title": "Ohel Ya'akov on Torah",
+    "ref": "Ohel Ya'akov on Torah, Vaetchanan 3:4",
     "sourceHasEn": false,
     "sourceHeRef": "אהל יעקב על התורה, ואתחנן ג׳:ד׳",
-    "sourceRef": "Ohel Yaakov on Torah, Vaetchanan 3:4",
+    "sourceRef": "Ohel Ya'akov on Torah, Vaetchanan 3:4",
+    "type": ""
+  },
+  {
+    "_id": "6596f917a555ccc6c5c37d9a",
+    "anchorRef": "Psalms 145:10",
+    "anchorRefExpanded": [
+      "Psalms 145:10"
+    ],
+    "anchorVerse": 10,
+    "category": "Midrash",
+    "collectiveTitle": {
+      "en": "Mekhilta DeRabbi Yishmael",
+      "he": "מכילתא דרבי ישמעאל"
+    },
+    "commentaryNum": 1.0019,
+    "compDate": [
+      200
+    ],
+    "heTitle": "מַסֶּכְתָּא דְשִׁירָה",
+    "index_title": "Mekhilta DeRabbi Yishmael",
+    "ref": "Mekhilta DeRabbi Yishmael, Tractate Shirah 1:19",
+    "sourceHasEn": true,
+    "sourceHeRef": "מכילתא דרבי ישמעאל, מַסֶּכְתָּא דְשִׁירָה א׳:י״ט",
+    "sourceRef": "Mekhilta DeRabbi Yishmael, Tractate Shirah 1:19",
     "type": ""
   },
   {
@@ -14521,7 +15374,6 @@
       1844,
       1874
     ],
-    "heTitle": "מלבי\"ם על תהילים",
     "index_title": "Malbim on Psalms",
     "ref": "Malbim on Psalms 145:11:1",
     "sourceHasEn": false,
@@ -14832,20 +15684,20 @@
     "anchorVerse": 12,
     "category": "Kabbalah",
     "collectiveTitle": {
-      "en": "Megaleh Amukot",
-      "he": "מגלה עמוקות"
+      "en": "Megalleh Amukkot on Parashat VaEtchanan",
+      "he": "מגלה עמוקות על פרשת ואתחנן"
     },
     "commentaryNum": 245.0001,
     "compDate": [
       1607,
       1633
     ],
-    "heTitle": "מגלה עמוקות",
-    "index_title": "Megaleh Amukot",
-    "ref": "Megaleh Amukot 245:1",
+    "heTitle": "מגלה עמוקות על פרשת ואתחנן",
+    "index_title": "Megalleh Amukkot on Parashat VaEtchanan",
+    "ref": "Megalleh Amukkot on Parashat VaEtchanan 245:1",
     "sourceHasEn": false,
-    "sourceHeRef": "מגלה עמוקות רמ״ה:א׳",
-    "sourceRef": "Megaleh Amukot 245:1",
+    "sourceHeRef": "מגלה עמוקות על פרשת ואתחנן רמ״ה:א׳",
+    "sourceRef": "Megalleh Amukkot on Parashat VaEtchanan 245:1",
     "type": ""
   },
   {
@@ -14915,7 +15767,6 @@
       1844,
       1874
     ],
-    "heTitle": "מלבי\"ם על תהילים",
     "index_title": "Malbim on Psalms",
     "ref": "Malbim on Psalms 145:12:1",
     "sourceHasEn": false,
@@ -15340,7 +16191,7 @@
     ],
     "index_title": "HaEmunot veHaDeot",
     "ref": "HaEmunot veHaDeot, [Treatise II] The Unity of the Creator 13:1",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "האמונות והדעות, מאמר השני; אחדות י״ג:א׳",
     "sourceRef": "HaEmunot veHaDeot, [Treatise II] The Unity of the Creator 13:1",
     "type": ""
@@ -15453,20 +16304,20 @@
     "anchorVerse": 13,
     "category": "Kabbalah",
     "collectiveTitle": {
-      "en": "Megaleh Amukot",
-      "he": "מגלה עמוקות"
+      "en": "Megalleh Amukkot on Parashat VaEtchanan",
+      "he": "מגלה עמוקות על פרשת ואתחנן"
     },
     "commentaryNum": 65.0001,
     "compDate": [
       1607,
       1633
     ],
-    "heTitle": "מגלה עמוקות",
-    "index_title": "Megaleh Amukot",
-    "ref": "Megaleh Amukot 65:1",
+    "heTitle": "מגלה עמוקות על פרשת ואתחנן",
+    "index_title": "Megalleh Amukkot on Parashat VaEtchanan",
+    "ref": "Megalleh Amukkot on Parashat VaEtchanan 65:1",
     "sourceHasEn": false,
-    "sourceHeRef": "מגלה עמוקות ס״ה:א׳",
-    "sourceRef": "Megaleh Amukot 65:1",
+    "sourceHeRef": "מגלה עמוקות על פרשת ואתחנן ס״ה:א׳",
+    "sourceRef": "Megalleh Amukkot on Parashat VaEtchanan 65:1",
     "type": ""
   },
   {
@@ -15478,20 +16329,20 @@
     "anchorVerse": 13,
     "category": "Kabbalah",
     "collectiveTitle": {
-      "en": "Megaleh Amukot",
-      "he": "מגלה עמוקות"
+      "en": "Megalleh Amukkot on Parashat VaEtchanan",
+      "he": "מגלה עמוקות על פרשת ואתחנן"
     },
     "commentaryNum": 203.0001,
     "compDate": [
       1607,
       1633
     ],
-    "heTitle": "מגלה עמוקות",
-    "index_title": "Megaleh Amukot",
-    "ref": "Megaleh Amukot 203:1",
+    "heTitle": "מגלה עמוקות על פרשת ואתחנן",
+    "index_title": "Megalleh Amukkot on Parashat VaEtchanan",
+    "ref": "Megalleh Amukkot on Parashat VaEtchanan 203:1",
     "sourceHasEn": false,
-    "sourceHeRef": "מגלה עמוקות ר״ג:א׳",
-    "sourceRef": "Megaleh Amukot 203:1",
+    "sourceHeRef": "מגלה עמוקות על פרשת ואתחנן ר״ג:א׳",
+    "sourceRef": "Megalleh Amukkot on Parashat VaEtchanan 203:1",
     "type": ""
   },
   {
@@ -15809,7 +16660,6 @@
       1844,
       1874
     ],
-    "heTitle": "מלבי\"ם על תהילים",
     "index_title": "Malbim on Psalms",
     "ref": "Malbim on Psalms 145:13:1",
     "sourceHasEn": false,
@@ -16522,16 +17372,16 @@
     "anchorVerse": 13,
     "category": "Quoting Commentary",
     "collectiveTitle": {
-      "en": "Ohel Yaakov on Torah",
+      "en": "Ohel Ya'akov on Torah",
       "he": "אהל יעקב על התורה"
     },
     "commentaryNum": 4.0005,
     "heTitle": "וישב",
-    "index_title": "Ohel Yaakov on Torah",
-    "ref": "Ohel Yaakov on Torah, Vayeshev 4:5",
+    "index_title": "Ohel Ya'akov on Torah",
+    "ref": "Ohel Ya'akov on Torah, Vayeshev 4:5",
     "sourceHasEn": false,
     "sourceHeRef": "אהל יעקב על התורה, וישב ד׳:ה׳",
-    "sourceRef": "Ohel Yaakov on Torah, Vayeshev 4:5",
+    "sourceRef": "Ohel Ya'akov on Torah, Vayeshev 4:5",
     "type": ""
   },
   {
@@ -16543,16 +17393,16 @@
     "anchorVerse": 13,
     "category": "Quoting Commentary",
     "collectiveTitle": {
-      "en": "Ohel Yaakov on Torah",
+      "en": "Ohel Ya'akov on Torah",
       "he": "אהל יעקב על התורה"
     },
     "commentaryNum": 9.0002,
     "heTitle": "מקץ",
-    "index_title": "Ohel Yaakov on Torah",
-    "ref": "Ohel Yaakov on Torah, Miketz 9:2",
+    "index_title": "Ohel Ya'akov on Torah",
+    "ref": "Ohel Ya'akov on Torah, Miketz 9:2",
     "sourceHasEn": false,
     "sourceHeRef": "אהל יעקב על התורה, מקץ ט׳:ב׳",
-    "sourceRef": "Ohel Yaakov on Torah, Miketz 9:2",
+    "sourceRef": "Ohel Ya'akov on Torah, Miketz 9:2",
     "type": ""
   },
   {
@@ -16564,16 +17414,16 @@
     "anchorVerse": 13,
     "category": "Quoting Commentary",
     "collectiveTitle": {
-      "en": "Ohel Yaakov on Torah",
+      "en": "Ohel Ya'akov on Torah",
       "he": "אהל יעקב על התורה"
     },
     "commentaryNum": 8.0004,
     "heTitle": "האזינו",
-    "index_title": "Ohel Yaakov on Torah",
-    "ref": "Ohel Yaakov on Torah, Ha'Azinu 8:4",
+    "index_title": "Ohel Ya'akov on Torah",
+    "ref": "Ohel Ya'akov on Torah, Ha'Azinu 8:4",
     "sourceHasEn": false,
     "sourceHeRef": "אהל יעקב על התורה, האזינו ח׳:ד׳",
-    "sourceRef": "Ohel Yaakov on Torah, Ha'Azinu 8:4",
+    "sourceRef": "Ohel Ya'akov on Torah, Ha'Azinu 8:4",
     "type": ""
   },
   {
@@ -16934,7 +17784,7 @@
     },
     "commentaryNum": 71.0002,
     "compDate": [
-      500
+      400
     ],
     "heTitle": "בראשית רבה",
     "index_title": "Bereshit Rabbah",
@@ -17307,7 +18157,6 @@
       1844,
       1874
     ],
-    "heTitle": "מלבי\"ם על תהילים",
     "index_title": "Malbim on Psalms",
     "ref": "Malbim on Psalms 145:14:1",
     "sourceHasEn": false,
@@ -17324,15 +18173,15 @@
     "anchorVerse": 14,
     "category": "Chasidut",
     "collectiveTitle": {
-      "en": "Chayim VaChesed",
+      "en": "Chayyim VaChesed",
       "he": "חיים וחסד"
     },
     "commentaryNum": 587.0003,
-    "index_title": "Chayim VaChesed",
-    "ref": "Chayim VaChesed 587:3",
+    "index_title": "Chayyim VaChesed",
+    "ref": "Chayyim VaChesed 587:3",
     "sourceHasEn": false,
     "sourceHeRef": "חיים וחסד תקפ״ז:ג׳",
-    "sourceRef": "Chayim VaChesed 587:3",
+    "sourceRef": "Chayyim VaChesed 587:3",
     "type": ""
   },
   {
@@ -17617,6 +18466,31 @@
     "sourceHasEn": true,
     "sourceHeRef": "אבודרהם, סדר תפילות החול, תפילת עמידה כ״ט",
     "sourceRef": "Abudarham, Weekday Prayers, Amidah 29",
+    "type": ""
+  },
+  {
+    "_id": "65aec0d4a85e40f060096529",
+    "anchorRef": "Psalms 145:14",
+    "anchorRefExpanded": [
+      "Psalms 145:14"
+    ],
+    "anchorVerse": 14,
+    "category": "Halakhah",
+    "collectiveTitle": {
+      "en": "Abudarham",
+      "he": "אבודרהם"
+    },
+    "commentaryNum": 8,
+    "compDate": [
+      1330,
+      1340
+    ],
+    "heTitle": "סיום התפילה",
+    "index_title": "Abudarham",
+    "ref": "Abudarham, Weekday Prayers, Post Amidah 8",
+    "sourceHasEn": true,
+    "sourceHeRef": "אבודרהם, סדר תפילות החול, סיום התפילה ח׳",
+    "sourceRef": "Abudarham, Weekday Prayers, Post Amidah 8",
     "type": ""
   },
   {
@@ -18474,7 +19348,6 @@
       1844,
       1874
     ],
-    "heTitle": "מלבי\"ם על תהילים",
     "index_title": "Malbim on Psalms",
     "ref": "Malbim on Psalms 145:15:1",
     "sourceHasEn": false,
@@ -18752,6 +19625,31 @@
     "sourceHasEn": true,
     "sourceHeRef": "מדרש תהילים קל״ו:ה׳",
     "sourceRef": "Midrash Tehillim 136:5",
+    "type": ""
+  },
+  {
+    "_id": "6660b1a34ca06c4bea9a6cb1",
+    "anchorRef": "Psalms 145:15",
+    "anchorRefExpanded": [
+      "Psalms 145:15"
+    ],
+    "anchorVerse": 15,
+    "category": "Quoting Commentary",
+    "collectiveTitle": {
+      "en": "Ibn Ezra on Ruth",
+      "he": "אבן עזרא על רות"
+    },
+    "commentaryNum": 13.0001,
+    "compDate": [
+      1155,
+      1165
+    ],
+    "heTitle": "אבן עזרא על רות",
+    "index_title": "Ibn Ezra on Ruth",
+    "ref": "Ibn Ezra on Ruth 1:13:1",
+    "sourceHasEn": true,
+    "sourceHeRef": "אבן עזרא על רות א׳:י״ג:א׳",
+    "sourceRef": "Ibn Ezra on Ruth 1:13:1",
     "type": ""
   },
   {
@@ -19210,7 +20108,7 @@
     },
     "commentaryNum": 13.0006,
     "compDate": [
-      500
+      400
     ],
     "heTitle": "בראשית רבה",
     "index_title": "Bereshit Rabbah",
@@ -19234,7 +20132,7 @@
     },
     "commentaryNum": 20.0009,
     "compDate": [
-      500
+      400
     ],
     "heTitle": "בראשית רבה",
     "index_title": "Bereshit Rabbah",
@@ -19258,7 +20156,7 @@
     },
     "commentaryNum": 73.0004,
     "compDate": [
-      500
+      400
     ],
     "heTitle": "בראשית רבה",
     "index_title": "Bereshit Rabbah",
@@ -19282,7 +20180,7 @@
     },
     "commentaryNum": 97.0003,
     "compDate": [
-      500
+      400
     ],
     "heTitle": "בראשית רבה",
     "index_title": "Bereshit Rabbah",
@@ -19545,20 +20443,20 @@
     "anchorVerse": 16,
     "category": "Kabbalah",
     "collectiveTitle": {
-      "en": "Megaleh Amukot",
-      "he": "מגלה עמוקות"
+      "en": "Megalleh Amukkot on Parashat VaEtchanan",
+      "he": "מגלה עמוקות על פרשת ואתחנן"
     },
     "commentaryNum": 27.0001,
     "compDate": [
       1607,
       1633
     ],
-    "heTitle": "מגלה עמוקות",
-    "index_title": "Megaleh Amukot",
-    "ref": "Megaleh Amukot 27:1",
+    "heTitle": "מגלה עמוקות על פרשת ואתחנן",
+    "index_title": "Megalleh Amukkot on Parashat VaEtchanan",
+    "ref": "Megalleh Amukkot on Parashat VaEtchanan 27:1",
     "sourceHasEn": false,
-    "sourceHeRef": "מגלה עמוקות כ״ז:א׳",
-    "sourceRef": "Megaleh Amukot 27:1",
+    "sourceHeRef": "מגלה עמוקות על פרשת ואתחנן כ״ז:א׳",
+    "sourceRef": "Megalleh Amukkot on Parashat VaEtchanan 27:1",
     "type": ""
   },
   {
@@ -19570,20 +20468,20 @@
     "anchorVerse": 16,
     "category": "Kabbalah",
     "collectiveTitle": {
-      "en": "Megaleh Amukot",
-      "he": "מגלה עמוקות"
+      "en": "Megalleh Amukkot on Parashat VaEtchanan",
+      "he": "מגלה עמוקות על פרשת ואתחנן"
     },
     "commentaryNum": 144.0001,
     "compDate": [
       1607,
       1633
     ],
-    "heTitle": "מגלה עמוקות",
-    "index_title": "Megaleh Amukot",
-    "ref": "Megaleh Amukot 144:1",
+    "heTitle": "מגלה עמוקות על פרשת ואתחנן",
+    "index_title": "Megalleh Amukkot on Parashat VaEtchanan",
+    "ref": "Megalleh Amukkot on Parashat VaEtchanan 144:1",
     "sourceHasEn": false,
-    "sourceHeRef": "מגלה עמוקות קמ״ד:א׳",
-    "sourceRef": "Megaleh Amukot 144:1",
+    "sourceHeRef": "מגלה עמוקות על פרשת ואתחנן קמ״ד:א׳",
+    "sourceRef": "Megalleh Amukkot on Parashat VaEtchanan 144:1",
     "type": ""
   },
   {
@@ -19595,20 +20493,20 @@
     "anchorVerse": 16,
     "category": "Kabbalah",
     "collectiveTitle": {
-      "en": "Megaleh Amukot",
-      "he": "מגלה עמוקות"
+      "en": "Megalleh Amukkot on Parashat VaEtchanan",
+      "he": "מגלה עמוקות על פרשת ואתחנן"
     },
     "commentaryNum": 188.0001,
     "compDate": [
       1607,
       1633
     ],
-    "heTitle": "מגלה עמוקות",
-    "index_title": "Megaleh Amukot",
-    "ref": "Megaleh Amukot 188:1",
+    "heTitle": "מגלה עמוקות על פרשת ואתחנן",
+    "index_title": "Megalleh Amukkot on Parashat VaEtchanan",
+    "ref": "Megalleh Amukkot on Parashat VaEtchanan 188:1",
     "sourceHasEn": false,
-    "sourceHeRef": "מגלה עמוקות קפ״ח:א׳",
-    "sourceRef": "Megaleh Amukot 188:1",
+    "sourceHeRef": "מגלה עמוקות על פרשת ואתחנן קפ״ח:א׳",
+    "sourceRef": "Megalleh Amukkot on Parashat VaEtchanan 188:1",
     "type": ""
   },
   {
@@ -19620,20 +20518,20 @@
     "anchorVerse": 16,
     "category": "Kabbalah",
     "collectiveTitle": {
-      "en": "Megaleh Amukot",
-      "he": "מגלה עמוקות"
+      "en": "Megalleh Amukkot on Parashat VaEtchanan",
+      "he": "מגלה עמוקות על פרשת ואתחנן"
     },
     "commentaryNum": 242.0001,
     "compDate": [
       1607,
       1633
     ],
-    "heTitle": "מגלה עמוקות",
-    "index_title": "Megaleh Amukot",
-    "ref": "Megaleh Amukot 242:1",
+    "heTitle": "מגלה עמוקות על פרשת ואתחנן",
+    "index_title": "Megalleh Amukkot on Parashat VaEtchanan",
+    "ref": "Megalleh Amukkot on Parashat VaEtchanan 242:1",
     "sourceHasEn": false,
-    "sourceHeRef": "מגלה עמוקות רמ״ב:א׳",
-    "sourceRef": "Megaleh Amukot 242:1",
+    "sourceHeRef": "מגלה עמוקות על פרשת ואתחנן רמ״ב:א׳",
+    "sourceRef": "Megalleh Amukkot on Parashat VaEtchanan 242:1",
     "type": ""
   },
   {
@@ -20439,7 +21337,6 @@
       1844,
       1874
     ],
-    "heTitle": "מלבי\"ם על תהילים",
     "index_title": "Malbim on Psalms",
     "ref": "Malbim on Psalms 145:16:1",
     "sourceHasEn": false,
@@ -20456,7 +21353,7 @@
     "anchorVerse": 16,
     "category": "Reference",
     "collectiveTitle": {
-      "en": "Otzar Laazei Rashi",
+      "en": "Otzar La'azei Rashi",
       "he": "אוצר לעזי רש\"י"
     },
     "commentaryNum": 137,
@@ -20465,11 +21362,11 @@
       1987
     ],
     "heTitle": "תהילים",
-    "index_title": "Otzar Laazei Rashi",
-    "ref": "Otzar Laazei Rashi, Tanakh, Psalms 137",
+    "index_title": "Otzar La'azei Rashi",
+    "ref": "Otzar La'azei Rashi, Tanakh, Psalms 137",
     "sourceHasEn": false,
     "sourceHeRef": "אוצר לעזי רש\"י, תנ\"ך, תהילים קל״ז",
-    "sourceRef": "Otzar Laazei Rashi, Tanakh, Psalms 137",
+    "sourceRef": "Otzar La'azei Rashi, Tanakh, Psalms 137",
     "type": "commentary"
   },
   {
@@ -20581,15 +21478,15 @@
     "anchorVerse": 16,
     "category": "Chasidut",
     "collectiveTitle": {
-      "en": "Chayim VaChesed",
+      "en": "Chayyim VaChesed",
       "he": "חיים וחסד"
     },
     "commentaryNum": 200.0001,
-    "index_title": "Chayim VaChesed",
-    "ref": "Chayim VaChesed 200:1",
+    "index_title": "Chayyim VaChesed",
+    "ref": "Chayyim VaChesed 200:1",
     "sourceHasEn": false,
     "sourceHeRef": "חיים וחסד ר׳:א׳",
-    "sourceRef": "Chayim VaChesed 200:1",
+    "sourceRef": "Chayyim VaChesed 200:1",
     "type": ""
   },
   {
@@ -20601,15 +21498,15 @@
     "anchorVerse": 16,
     "category": "Chasidut",
     "collectiveTitle": {
-      "en": "Chayim VaChesed",
+      "en": "Chayyim VaChesed",
       "he": "חיים וחסד"
     },
     "commentaryNum": 317.0001,
-    "index_title": "Chayim VaChesed",
-    "ref": "Chayim VaChesed 317:1",
+    "index_title": "Chayyim VaChesed",
+    "ref": "Chayyim VaChesed 317:1",
     "sourceHasEn": false,
     "sourceHeRef": "חיים וחסד שי״ז:א׳",
-    "sourceRef": "Chayim VaChesed 317:1",
+    "sourceRef": "Chayyim VaChesed 317:1",
     "type": ""
   },
   {
@@ -20641,15 +21538,15 @@
     "anchorVerse": 16,
     "category": "Chasidut",
     "collectiveTitle": {
-      "en": "Chayim VaChesed",
+      "en": "Chayyim VaChesed",
       "he": "חיים וחסד"
     },
     "commentaryNum": 395.0001,
-    "index_title": "Chayim VaChesed",
-    "ref": "Chayim VaChesed 395:1",
+    "index_title": "Chayyim VaChesed",
+    "ref": "Chayyim VaChesed 395:1",
     "sourceHasEn": false,
     "sourceHeRef": "חיים וחסד שצ״ה:א׳",
-    "sourceRef": "Chayim VaChesed 395:1",
+    "sourceRef": "Chayyim VaChesed 395:1",
     "type": ""
   },
   {
@@ -20682,15 +21579,15 @@
     "anchorVerse": 16,
     "category": "Chasidut",
     "collectiveTitle": {
-      "en": "Chayim VaChesed",
+      "en": "Chayyim VaChesed",
       "he": "חיים וחסד"
     },
     "commentaryNum": 638.0001,
-    "index_title": "Chayim VaChesed",
-    "ref": "Chayim VaChesed 638:1",
+    "index_title": "Chayyim VaChesed",
+    "ref": "Chayyim VaChesed 638:1",
     "sourceHasEn": false,
     "sourceHeRef": "חיים וחסד תרל״ח:א׳",
-    "sourceRef": "Chayim VaChesed 638:1",
+    "sourceRef": "Chayyim VaChesed 638:1",
     "type": ""
   },
   {
@@ -21101,7 +21998,6 @@
     "compDate": [
       1190
     ],
-    "heTitle": "חלק ג'",
     "index_title": "Guide for the Perplexed",
     "ref": "Guide for the Perplexed, Part 3 17:12",
     "sourceHasEn": true,
@@ -21143,16 +22039,16 @@
     "anchorVerse": 16,
     "category": "Quoting Commentary",
     "collectiveTitle": {
-      "en": "Ohel Yaakov on Torah",
+      "en": "Ohel Ya'akov on Torah",
       "he": "אהל יעקב על התורה"
     },
     "commentaryNum": 20,
     "heTitle": "הקדמת בן המחבר",
-    "index_title": "Ohel Yaakov on Torah",
-    "ref": "Ohel Yaakov on Torah, An Introduction by the Author's Son 20",
+    "index_title": "Ohel Ya'akov on Torah",
+    "ref": "Ohel Ya'akov on Torah, An Introduction by the Author's Son 20",
     "sourceHasEn": false,
     "sourceHeRef": "אהל יעקב על התורה, הקדמת בן המחבר כ׳",
-    "sourceRef": "Ohel Yaakov on Torah, An Introduction by the Author's Son 20",
+    "sourceRef": "Ohel Ya'akov on Torah, An Introduction by the Author's Son 20",
     "type": ""
   },
   {
@@ -21164,16 +22060,16 @@
     "anchorVerse": 16,
     "category": "Quoting Commentary",
     "collectiveTitle": {
-      "en": "Ohel Yaakov on Torah",
+      "en": "Ohel Ya'akov on Torah",
       "he": "אהל יעקב על התורה"
     },
     "commentaryNum": 13.0002,
     "heTitle": "בראשית",
-    "index_title": "Ohel Yaakov on Torah",
-    "ref": "Ohel Yaakov on Torah, Bereshit 13:2",
+    "index_title": "Ohel Ya'akov on Torah",
+    "ref": "Ohel Ya'akov on Torah, Bereshit 13:2",
     "sourceHasEn": false,
     "sourceHeRef": "אהל יעקב על התורה, בראשית י״ג:ב׳",
-    "sourceRef": "Ohel Yaakov on Torah, Bereshit 13:2",
+    "sourceRef": "Ohel Ya'akov on Torah, Bereshit 13:2",
     "type": ""
   },
   {
@@ -21185,16 +22081,16 @@
     "anchorVerse": 16,
     "category": "Quoting Commentary",
     "collectiveTitle": {
-      "en": "Ohel Yaakov on Torah",
+      "en": "Ohel Ya'akov on Torah",
       "he": "אהל יעקב על התורה"
     },
     "commentaryNum": 1.0007,
     "heTitle": "ויגש",
-    "index_title": "Ohel Yaakov on Torah",
-    "ref": "Ohel Yaakov on Torah, Vayigash 1:7",
+    "index_title": "Ohel Ya'akov on Torah",
+    "ref": "Ohel Ya'akov on Torah, Vayigash 1:7",
     "sourceHasEn": false,
     "sourceHeRef": "אהל יעקב על התורה, ויגש א׳:ז׳",
-    "sourceRef": "Ohel Yaakov on Torah, Vayigash 1:7",
+    "sourceRef": "Ohel Ya'akov on Torah, Vayigash 1:7",
     "type": ""
   },
   {
@@ -21206,16 +22102,16 @@
     "anchorVerse": 16,
     "category": "Quoting Commentary",
     "collectiveTitle": {
-      "en": "Ohel Yaakov on Torah",
+      "en": "Ohel Ya'akov on Torah",
       "he": "אהל יעקב על התורה"
     },
     "commentaryNum": 14.0005,
     "heTitle": "בהעלותך",
-    "index_title": "Ohel Yaakov on Torah",
-    "ref": "Ohel Yaakov on Torah, Beha'alotcha 14:5",
+    "index_title": "Ohel Ya'akov on Torah",
+    "ref": "Ohel Ya'akov on Torah, Beha'alotcha 14:5",
     "sourceHasEn": false,
     "sourceHeRef": "אהל יעקב על התורה, בהעלותך י״ד:ה׳",
-    "sourceRef": "Ohel Yaakov on Torah, Beha'alotcha 14:5",
+    "sourceRef": "Ohel Ya'akov on Torah, Beha'alotcha 14:5",
     "type": ""
   },
   {
@@ -21227,16 +22123,16 @@
     "anchorVerse": 16,
     "category": "Quoting Commentary",
     "collectiveTitle": {
-      "en": "Ohel Yaakov on Torah",
+      "en": "Ohel Ya'akov on Torah",
       "he": "אהל יעקב על התורה"
     },
     "commentaryNum": 8.0003,
     "heTitle": "כי תבוא",
-    "index_title": "Ohel Yaakov on Torah",
-    "ref": "Ohel Yaakov on Torah, Ki Tavo 8:3",
+    "index_title": "Ohel Ya'akov on Torah",
+    "ref": "Ohel Ya'akov on Torah, Ki Tavo 8:3",
     "sourceHasEn": false,
     "sourceHeRef": "אהל יעקב על התורה, כי תבוא ח׳:ג׳",
-    "sourceRef": "Ohel Yaakov on Torah, Ki Tavo 8:3",
+    "sourceRef": "Ohel Ya'akov on Torah, Ki Tavo 8:3",
     "type": ""
   },
   {
@@ -21248,16 +22144,16 @@
     "anchorVerse": 16,
     "category": "Quoting Commentary",
     "collectiveTitle": {
-      "en": "Ohel Yaakov on Torah",
+      "en": "Ohel Ya'akov on Torah",
       "he": "אהל יעקב על התורה"
     },
     "commentaryNum": 4.0013,
     "heTitle": "וילך",
-    "index_title": "Ohel Yaakov on Torah",
-    "ref": "Ohel Yaakov on Torah, Vayeilech 4:13",
+    "index_title": "Ohel Ya'akov on Torah",
+    "ref": "Ohel Ya'akov on Torah, Vayeilech 4:13",
     "sourceHasEn": false,
     "sourceHeRef": "אהל יעקב על התורה, וילך ד׳:י״ג",
-    "sourceRef": "Ohel Yaakov on Torah, Vayeilech 4:13",
+    "sourceRef": "Ohel Ya'akov on Torah, Vayeilech 4:13",
     "type": ""
   },
   {
@@ -21269,16 +22165,16 @@
     "anchorVerse": 16,
     "category": "Quoting Commentary",
     "collectiveTitle": {
-      "en": "Ohel Yaakov on Torah",
+      "en": "Ohel Ya'akov on Torah",
       "he": "אהל יעקב על התורה"
     },
     "commentaryNum": 7.0002,
     "heTitle": "וזאת הברכה",
-    "index_title": "Ohel Yaakov on Torah",
-    "ref": "Ohel Yaakov on Torah, V'Zot HaBerachah 7:2",
+    "index_title": "Ohel Ya'akov on Torah",
+    "ref": "Ohel Ya'akov on Torah, V'Zot HaBerachah 7:2",
     "sourceHasEn": false,
     "sourceHeRef": "אהל יעקב על התורה, וזאת הברכה ז׳:ב׳",
-    "sourceRef": "Ohel Yaakov on Torah, V'Zot HaBerachah 7:2",
+    "sourceRef": "Ohel Ya'akov on Torah, V'Zot HaBerachah 7:2",
     "type": ""
   },
   {
@@ -21304,6 +22200,31 @@
     "sourceHasEn": true,
     "sourceHeRef": "אבודרהם, סדר תפילות החול, תפילת עמידה כ״ח",
     "sourceRef": "Abudarham, Weekday Prayers, Amidah 28",
+    "type": ""
+  },
+  {
+    "_id": "65aec0d2a85e40f06009651d",
+    "anchorRef": "Psalms 145:16",
+    "anchorRefExpanded": [
+      "Psalms 145:16"
+    ],
+    "anchorVerse": 16,
+    "category": "Halakhah",
+    "collectiveTitle": {
+      "en": "Abudarham",
+      "he": "אבודרהם"
+    },
+    "commentaryNum": 6,
+    "compDate": [
+      1330,
+      1340
+    ],
+    "heTitle": "סיום התפילה",
+    "index_title": "Abudarham",
+    "ref": "Abudarham, Weekday Prayers, Post Amidah 6",
+    "sourceHasEn": true,
+    "sourceHeRef": "אבודרהם, סדר תפילות החול, סיום התפילה ו׳",
+    "sourceRef": "Abudarham, Weekday Prayers, Post Amidah 6",
     "type": ""
   },
   {
@@ -21368,7 +22289,7 @@
     },
     "commentaryNum": 1.0011,
     "compDate": [
-      500
+      400
     ],
     "heTitle": "בראשית רבה",
     "index_title": "Bereshit Rabbah",
@@ -21400,30 +22321,6 @@
     "sourceHasEn": false,
     "sourceHeRef": "פלא יועץ ח׳:ב׳",
     "sourceRef": "Pele Yoetz 8:2",
-    "type": ""
-  },
-  {
-    "_id": "559275fcfbfba21d1a63f404",
-    "anchorRef": "Psalms 145:17",
-    "anchorRefExpanded": [
-      "Psalms 145:17"
-    ],
-    "anchorVerse": 17,
-    "category": "Midrash",
-    "collectiveTitle": {
-      "en": "Mekhilta DeRabbi Yishmael",
-      "he": "מכילתא דרבי ישמעאל"
-    },
-    "commentaryNum": 3.0001,
-    "compDate": [
-      135
-    ],
-    "heTitle": "מכילתא דרבי ישמעאל",
-    "index_title": "Mekhilta DeRabbi Yishmael",
-    "ref": "Mekhilta DeRabbi Yishmael 13:3:1",
-    "sourceHasEn": true,
-    "sourceHeRef": "מכילתא דרבי ישמעאל י״ג:ג׳:א׳",
-    "sourceRef": "Mekhilta DeRabbi Yishmael 13:3:1",
     "type": ""
   },
   {
@@ -21703,7 +22600,7 @@
     "anchorVerse": 17,
     "category": "Chasidut",
     "collectiveTitle": {
-      "en": "Baal Shem Tov",
+      "en": "Ba'al Shem Tov",
       "he": "בעל שם טוב"
     },
     "commentaryNum": 12.0001,
@@ -21712,11 +22609,11 @@
       1760
     ],
     "heTitle": "לראש השנה ויום כפור",
-    "index_title": "Baal Shem Tov",
-    "ref": "Baal Shem Tov, Rosh Hashana and Yom Kippur 12:1",
+    "index_title": "Ba'al Shem Tov",
+    "ref": "Ba'al Shem Tov, Rosh Hashana and Yom Kippur 12:1",
     "sourceHasEn": false,
     "sourceHeRef": "בעל שם טוב, לראש השנה ויום כפור י״ב:א׳",
-    "sourceRef": "Baal Shem Tov, Rosh Hashana and Yom Kippur 12:1",
+    "sourceRef": "Ba'al Shem Tov, Rosh Hashana and Yom Kippur 12:1",
     "type": ""
   },
   {
@@ -21959,7 +22856,6 @@
       1844,
       1874
     ],
-    "heTitle": "מלבי\"ם על תהילים",
     "index_title": "Malbim on Psalms",
     "ref": "Malbim on Psalms 145:17:1",
     "sourceHasEn": false,
@@ -21976,15 +22872,15 @@
     "anchorVerse": 17,
     "category": "Chasidut",
     "collectiveTitle": {
-      "en": "Chayim VaChesed",
+      "en": "Chayyim VaChesed",
       "he": "חיים וחסד"
     },
     "commentaryNum": 458.0001,
-    "index_title": "Chayim VaChesed",
-    "ref": "Chayim VaChesed 458:1",
+    "index_title": "Chayyim VaChesed",
+    "ref": "Chayyim VaChesed 458:1",
     "sourceHasEn": false,
     "sourceHeRef": "חיים וחסד תנ״ח:א׳",
-    "sourceRef": "Chayim VaChesed 458:1",
+    "sourceRef": "Chayyim VaChesed 458:1",
     "type": ""
   },
   {
@@ -22021,7 +22917,7 @@
     "anchorVerse": 17,
     "category": "Chasidut",
     "collectiveTitle": {
-      "en": "Noam Elimelech",
+      "en": "Noam Elimelekh",
       "he": "נועם אלימלך"
     },
     "commentaryNum": 3.0001,
@@ -22029,11 +22925,11 @@
       1786
     ],
     "heTitle": "בראשית",
-    "index_title": "Noam Elimelech",
-    "ref": "Noam Elimelech, Sefer Bereshit, Bereshit 3:1",
+    "index_title": "Noam Elimelekh",
+    "ref": "Noam Elimelekh, Sefer Bereshit, Bereshit 3:1",
     "sourceHasEn": true,
     "sourceHeRef": "נועם אלימלך, ספר בראשית, בראשית ג׳:א׳",
-    "sourceRef": "Noam Elimelech, Sefer Bereshit, Bereshit 3:1",
+    "sourceRef": "Noam Elimelekh, Sefer Bereshit, Bereshit 3:1",
     "type": ""
   },
   {
@@ -22112,6 +23008,30 @@
     "type": "reference"
   },
   {
+    "_id": "6596f640bed9ae71ab5adc19",
+    "anchorRef": "Psalms 145:17",
+    "anchorRefExpanded": [
+      "Psalms 145:17"
+    ],
+    "anchorVerse": 17,
+    "category": "Midrash",
+    "collectiveTitle": {
+      "en": "Mekhilta DeRabbi Yishmael",
+      "he": "מכילתא דרבי ישמעאל"
+    },
+    "commentaryNum": 16.0028,
+    "compDate": [
+      200
+    ],
+    "heTitle": "מַסֶּכְתָּא דְפִסְחָא",
+    "index_title": "Mekhilta DeRabbi Yishmael",
+    "ref": "Mekhilta DeRabbi Yishmael, Tractate Pischa 16:28",
+    "sourceHasEn": true,
+    "sourceHeRef": "מכילתא דרבי ישמעאל, מַסֶּכְתָּא דְפִסְחָא ט״ז:כ״ח",
+    "sourceRef": "Mekhilta DeRabbi Yishmael, Tractate Pischa 16:28",
+    "type": ""
+  },
+  {
     "_id": "541fbe53fbfba22014ad132f",
     "anchorRef": "Psalms 145:18",
     "anchorRefExpanded": [
@@ -22185,30 +23105,6 @@
     "type": ""
   },
   {
-    "_id": "559e83c0fbfba2424826202b",
-    "anchorRef": "Psalms 145:18",
-    "anchorRefExpanded": [
-      "Psalms 145:18"
-    ],
-    "anchorVerse": 18,
-    "category": "Midrash",
-    "collectiveTitle": {
-      "en": "Mekhilta DeRabbi Yishmael",
-      "he": "מכילתא דרבי ישמעאל"
-    },
-    "commentaryNum": 10.0004,
-    "compDate": [
-      135
-    ],
-    "heTitle": "מכילתא דרבי ישמעאל",
-    "index_title": "Mekhilta DeRabbi Yishmael",
-    "ref": "Mekhilta DeRabbi Yishmael 14:10:4",
-    "sourceHasEn": true,
-    "sourceHeRef": "מכילתא דרבי ישמעאל י״ד:י׳:ד׳",
-    "sourceRef": "Mekhilta DeRabbi Yishmael 14:10:4",
-    "type": ""
-  },
-  {
     "_id": "55a55789fbfba23b37d0ad7d",
     "anchorRef": "Psalms 145:18",
     "anchorRefExpanded": [
@@ -22224,7 +23120,6 @@
     "compDate": [
       1190
     ],
-    "heTitle": "חלק א'",
     "index_title": "Guide for the Perplexed",
     "ref": "Guide for the Perplexed, Part 1 18:3",
     "sourceHasEn": true,
@@ -22266,7 +23161,7 @@
     "anchorVerse": 18,
     "category": "Midrash",
     "collectiveTitle": {
-      "en": "Pesikta DeRav Kahanna",
+      "en": "Pesikta DeRav Kahana",
       "he": "פסיקתא דרב כהנא"
     },
     "commentaryNum": 28.0001,
@@ -22275,11 +23170,11 @@
       700
     ],
     "heTitle": "פסיקתא דרב כהנא",
-    "index_title": "Pesikta DeRav Kahanna",
-    "ref": "Pesikta DeRav Kahanna 28:1",
+    "index_title": "Pesikta DeRav Kahana",
+    "ref": "Pesikta DeRav Kahana 28:1",
     "sourceHasEn": false,
     "sourceHeRef": "פסיקתא דרב כהנא כ״ח:א׳",
-    "sourceRef": "Pesikta DeRav Kahanna 28:1",
+    "sourceRef": "Pesikta DeRav Kahana 28:1",
     "type": ""
   },
   {
@@ -22683,7 +23578,7 @@
     "anchorVerse": 18,
     "category": "Chasidut",
     "collectiveTitle": {
-      "en": "Baal Shem Tov",
+      "en": "Ba'al Shem Tov",
       "he": "בעל שם טוב"
     },
     "commentaryNum": 8.0001,
@@ -22692,11 +23587,11 @@
       1760
     ],
     "heTitle": "לראש השנה ויום כפור",
-    "index_title": "Baal Shem Tov",
-    "ref": "Baal Shem Tov, Rosh Hashana and Yom Kippur 8:1",
+    "index_title": "Ba'al Shem Tov",
+    "ref": "Ba'al Shem Tov, Rosh Hashana and Yom Kippur 8:1",
     "sourceHasEn": false,
     "sourceHeRef": "בעל שם טוב, לראש השנה ויום כפור ח׳:א׳",
-    "sourceRef": "Baal Shem Tov, Rosh Hashana and Yom Kippur 8:1",
+    "sourceRef": "Ba'al Shem Tov, Rosh Hashana and Yom Kippur 8:1",
     "type": ""
   },
   {
@@ -22788,10 +23683,9 @@
       1844,
       1874
     ],
-    "heTitle": "מלבי\"ם על תהילים",
     "index_title": "Malbim on Psalms",
     "ref": "Malbim on Psalms 145:18:1",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "מלבי\"ם על תהילים קמ״ה:י״ח:א׳",
     "sourceRef": "Malbim on Psalms 145:18:1",
     "type": "commentary"
@@ -22922,15 +23816,15 @@
     "anchorVerse": 18,
     "category": "Chasidut",
     "collectiveTitle": {
-      "en": "Chayim VaChesed",
+      "en": "Chayyim VaChesed",
       "he": "חיים וחסד"
     },
     "commentaryNum": 531.0001,
-    "index_title": "Chayim VaChesed",
-    "ref": "Chayim VaChesed 531:1",
+    "index_title": "Chayyim VaChesed",
+    "ref": "Chayyim VaChesed 531:1",
     "sourceHasEn": false,
     "sourceHeRef": "חיים וחסד תקל״א:א׳",
-    "sourceRef": "Chayim VaChesed 531:1",
+    "sourceRef": "Chayyim VaChesed 531:1",
     "type": ""
   },
   {
@@ -23159,7 +24053,6 @@
     "compDate": [
       1190
     ],
-    "heTitle": "חלק א'",
     "index_title": "Guide for the Perplexed",
     "ref": "Guide for the Perplexed, Part 1 18:4",
     "sourceHasEn": true,
@@ -23225,16 +24118,16 @@
     "anchorVerse": 18,
     "category": "Quoting Commentary",
     "collectiveTitle": {
-      "en": "Ohel Yaakov on Torah",
+      "en": "Ohel Ya'akov on Torah",
       "he": "אהל יעקב על התורה"
     },
     "commentaryNum": 5.0009,
     "heTitle": "קדושים",
-    "index_title": "Ohel Yaakov on Torah",
-    "ref": "Ohel Yaakov on Torah, Kedoshim 5:9",
+    "index_title": "Ohel Ya'akov on Torah",
+    "ref": "Ohel Ya'akov on Torah, Kedoshim 5:9",
     "sourceHasEn": false,
     "sourceHeRef": "אהל יעקב על התורה, קדושים ה׳:ט׳",
-    "sourceRef": "Ohel Yaakov on Torah, Kedoshim 5:9",
+    "sourceRef": "Ohel Ya'akov on Torah, Kedoshim 5:9",
     "type": ""
   },
   {
@@ -23246,16 +24139,86 @@
     "anchorVerse": 18,
     "category": "Quoting Commentary",
     "collectiveTitle": {
-      "en": "Ohel Yaakov on Torah",
+      "en": "Ohel Ya'akov on Torah",
       "he": "אהל יעקב על התורה"
     },
     "commentaryNum": 2.0013,
     "heTitle": "שלח",
-    "index_title": "Ohel Yaakov on Torah",
-    "ref": "Ohel Yaakov on Torah, Sh'lach 2:13",
+    "index_title": "Ohel Ya'akov on Torah",
+    "ref": "Ohel Ya'akov on Torah, Sh'lach 2:13",
     "sourceHasEn": false,
     "sourceHeRef": "אהל יעקב על התורה, שלח ב׳:י״ג",
-    "sourceRef": "Ohel Yaakov on Torah, Sh'lach 2:13",
+    "sourceRef": "Ohel Ya'akov on Torah, Sh'lach 2:13",
+    "type": ""
+  },
+  {
+    "_id": "6596f661bed9ae71ab5adcad",
+    "anchorRef": "Psalms 145:18",
+    "anchorRefExpanded": [
+      "Psalms 145:18"
+    ],
+    "anchorVerse": 18,
+    "category": "Midrash",
+    "collectiveTitle": {
+      "en": "Mekhilta DeRabbi Yishmael",
+      "he": "מכילתא דרבי ישמעאל"
+    },
+    "commentaryNum": 3.0013,
+    "compDate": [
+      200
+    ],
+    "heTitle": "מַסֶּכְתָּא דְוַיְהִי בְּשַׁלַּח",
+    "index_title": "Mekhilta DeRabbi Yishmael",
+    "ref": "Mekhilta DeRabbi Yishmael, Tractate Vayehi Beshalach 3:13",
+    "sourceHasEn": true,
+    "sourceHeRef": "מכילתא דרבי ישמעאל, מַסֶּכְתָּא דְוַיְהִי בְּשַׁלַּח ג׳:י״ג",
+    "sourceRef": "Mekhilta DeRabbi Yishmael, Tractate Vayehi Beshalach 3:13",
+    "type": ""
+  },
+  {
+    "_id": "65aec0d5a85e40f06009652d",
+    "anchorRef": "Psalms 145:18",
+    "anchorRefExpanded": [
+      "Psalms 145:18"
+    ],
+    "anchorVerse": 18,
+    "category": "Halakhah",
+    "collectiveTitle": {
+      "en": "Abudarham",
+      "he": "אבודרהם"
+    },
+    "commentaryNum": 9,
+    "compDate": [
+      1330,
+      1340
+    ],
+    "heTitle": "סיום התפילה",
+    "index_title": "Abudarham",
+    "ref": "Abudarham, Weekday Prayers, Post Amidah 9",
+    "sourceHasEn": true,
+    "sourceHeRef": "אבודרהם, סדר תפילות החול, סיום התפילה ט׳",
+    "sourceRef": "Abudarham, Weekday Prayers, Post Amidah 9",
+    "type": ""
+  },
+  {
+    "_id": "660913cf18e4d4eaeea6b553",
+    "anchorRef": "Psalms 145:18",
+    "anchorRefExpanded": [
+      "Psalms 145:18"
+    ],
+    "anchorVerse": 18,
+    "category": "Quoting Commentary",
+    "collectiveTitle": {
+      "en": "Judaism's Life Changing Ideas; A Weekly Reading of the Jewish Bible",
+      "he": "רעיונות משני חיים; קריאות חדשות בפרשת השבוע"
+    },
+    "commentaryNum": 8,
+    "heTitle": "בהעלותך",
+    "index_title": "Judaism's Life Changing Ideas; A Weekly Reading of the Jewish Bible",
+    "ref": "Judaism's Life Changing Ideas; A Weekly Reading of the Jewish Bible, Behaalotekha; Faith and Friendship 8",
+    "sourceHasEn": true,
+    "sourceHeRef": "רעיונות משני חיים; קריאות חדשות בפרשת השבוע, בהעלותך ח׳",
+    "sourceRef": "Judaism's Life Changing Ideas; A Weekly Reading of the Jewish Bible, Behaalotekha; Faith and Friendship 8",
     "type": ""
   },
   {
@@ -23568,7 +24531,7 @@
     },
     "commentaryNum": 75.0011,
     "compDate": [
-      500
+      400
     ],
     "heTitle": "בראשית רבה",
     "index_title": "Bereshit Rabbah",
@@ -23710,7 +24673,7 @@
     "anchorVerse": 19,
     "category": "Chasidut",
     "collectiveTitle": {
-      "en": "Baal Shem Tov",
+      "en": "Ba'al Shem Tov",
       "he": "בעל שם טוב"
     },
     "commentaryNum": 160.0001,
@@ -23719,11 +24682,11 @@
       1760
     ],
     "heTitle": "נח",
-    "index_title": "Baal Shem Tov",
-    "ref": "Baal Shem Tov, Noach 160:1",
+    "index_title": "Ba'al Shem Tov",
+    "ref": "Ba'al Shem Tov, Noach 160:1",
     "sourceHasEn": false,
     "sourceHeRef": "בעל שם טוב, נח ק״ס:א׳",
-    "sourceRef": "Baal Shem Tov, Noach 160:1",
+    "sourceRef": "Ba'al Shem Tov, Noach 160:1",
     "type": ""
   },
   {
@@ -23735,7 +24698,7 @@
     "anchorVerse": 19,
     "category": "Chasidut",
     "collectiveTitle": {
-      "en": "Baal Shem Tov",
+      "en": "Ba'al Shem Tov",
       "he": "בעל שם טוב"
     },
     "commentaryNum": 7.0001,
@@ -23744,11 +24707,11 @@
       1760
     ],
     "heTitle": "מקץ",
-    "index_title": "Baal Shem Tov",
-    "ref": "Baal Shem Tov, Miketz 7:1",
+    "index_title": "Ba'al Shem Tov",
+    "ref": "Ba'al Shem Tov, Miketz 7:1",
     "sourceHasEn": false,
     "sourceHeRef": "בעל שם טוב, מקץ ז׳:א׳",
-    "sourceRef": "Baal Shem Tov, Miketz 7:1",
+    "sourceRef": "Ba'al Shem Tov, Miketz 7:1",
     "type": ""
   },
   {
@@ -23917,7 +24880,6 @@
       1844,
       1874
     ],
-    "heTitle": "מלבי\"ם על תהילים",
     "index_title": "Malbim on Psalms",
     "ref": "Malbim on Psalms 145:19:1",
     "sourceHasEn": false,
@@ -23959,15 +24921,15 @@
     "anchorVerse": 19,
     "category": "Chasidut",
     "collectiveTitle": {
-      "en": "Chayim VaChesed",
+      "en": "Chayyim VaChesed",
       "he": "חיים וחסד"
     },
     "commentaryNum": 68.0001,
-    "index_title": "Chayim VaChesed",
-    "ref": "Chayim VaChesed 68:1",
+    "index_title": "Chayyim VaChesed",
+    "ref": "Chayyim VaChesed 68:1",
     "sourceHasEn": false,
     "sourceHeRef": "חיים וחסד ס״ח:א׳",
-    "sourceRef": "Chayim VaChesed 68:1",
+    "sourceRef": "Chayyim VaChesed 68:1",
     "type": ""
   },
   {
@@ -23979,15 +24941,15 @@
     "anchorVerse": 19,
     "category": "Chasidut",
     "collectiveTitle": {
-      "en": "Chayim VaChesed",
+      "en": "Chayyim VaChesed",
       "he": "חיים וחסד"
     },
     "commentaryNum": 315.0004,
-    "index_title": "Chayim VaChesed",
-    "ref": "Chayim VaChesed 315:4",
+    "index_title": "Chayyim VaChesed",
+    "ref": "Chayyim VaChesed 315:4",
     "sourceHasEn": false,
     "sourceHeRef": "חיים וחסד שט״ו:ד׳",
-    "sourceRef": "Chayim VaChesed 315:4",
+    "sourceRef": "Chayyim VaChesed 315:4",
     "type": ""
   },
   {
@@ -24204,6 +25166,26 @@
     "type": "reference"
   },
   {
+    "_id": "6677e6a075e8613120873d61",
+    "anchorRef": "Psalms 145:19",
+    "anchorRefExpanded": [
+      "Psalms 145:19"
+    ],
+    "anchorVerse": 19,
+    "category": "Talmud",
+    "collectiveTitle": {
+      "en": "Avot DeRabbi Natan, Recension B",
+      "he": "אבות דרבי נתן נוסח ב"
+    },
+    "commentaryNum": 48.0013,
+    "index_title": "Avot DeRabbi Natan, Recension B",
+    "ref": "Avot DeRabbi Natan, Recension B 48:13",
+    "sourceHasEn": false,
+    "sourceHeRef": "אבות דרבי נתן נוסח ב מ״ח:י״ג",
+    "sourceRef": "Avot DeRabbi Natan, Recension B 48:13",
+    "type": ""
+  },
+  {
     "_id": "541fbc0cfbfba22014ad12b8",
     "anchorRef": "Psalms 145:2",
     "anchorRefExpanded": [
@@ -24343,7 +25325,6 @@
       1844,
       1874
     ],
-    "heTitle": "מלבי\"ם על תהילים",
     "index_title": "Malbim on Psalms",
     "ref": "Malbim on Psalms 145:2:1",
     "sourceHasEn": false,
@@ -25279,7 +26260,6 @@
       1844,
       1874
     ],
-    "heTitle": "מלבי\"ם על תהילים",
     "index_title": "Malbim on Psalms",
     "ref": "Malbim on Psalms 145:21:1",
     "sourceHasEn": false,
@@ -25534,6 +26514,31 @@
     "type": ""
   },
   {
+    "_id": "65a42307a24aa428ac70fb07",
+    "anchorRef": "Psalms 145:21",
+    "anchorRefExpanded": [
+      "Psalms 145:21"
+    ],
+    "anchorVerse": 21,
+    "category": "Liturgy",
+    "collectiveTitle": {
+      "en": "Birkat Hamazon",
+      "he": "ברכת המזון"
+    },
+    "commentaryNum": 2,
+    "compDate": [
+      -400,
+      600
+    ],
+    "heTitle": "לפני ברכת המזון",
+    "index_title": "Birkat Hamazon",
+    "ref": "Birkat Hamazon, Birkat Hamazon, Preliminary Psalms 2",
+    "sourceHasEn": false,
+    "sourceHeRef": "ברכת המזון, ברכת המזון, לפני ברכת המזון ב׳",
+    "sourceRef": "Birkat Hamazon, Birkat Hamazon, Preliminary Psalms 2",
+    "type": ""
+  },
+  {
     "_id": "64b636861ca81b11e2ae836f",
     "anchorRef": "Psalms 145:25",
     "anchorRefExpanded": [
@@ -25547,7 +26552,7 @@
     },
     "commentaryNum": 97.0003,
     "compDate": [
-      500
+      400
     ],
     "heTitle": "בראשית רבה",
     "index_title": "Bereshit Rabbah",
@@ -25649,7 +26654,7 @@
     ],
     "index_title": "HaEmunot veHaDeot",
     "ref": "HaEmunot veHaDeot, [Treatise X] Moral Conduct; Thought and Belief 15:1",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "האמונות והדעות, מאמר העשירי; הנהגת האדם ט״ו:א׳",
     "sourceRef": "HaEmunot veHaDeot, [Treatise X] Moral Conduct; Thought and Belief 15:1",
     "type": ""
@@ -25793,7 +26798,7 @@
     },
     "commentaryNum": 87.0005,
     "compDate": [
-      500
+      400
     ],
     "heTitle": "בראשית רבה",
     "index_title": "Bereshit Rabbah",
@@ -26017,7 +27022,6 @@
       1844,
       1874
     ],
-    "heTitle": "מלבי\"ם על תהילים",
     "index_title": "Malbim on Psalms",
     "ref": "Malbim on Psalms 145:3:1",
     "sourceHasEn": false,
@@ -26273,6 +27277,31 @@
     "sourceHasEn": true,
     "sourceHeRef": "מדרש תהילים ק״ד:א׳",
     "sourceRef": "Midrash Tehillim 104:1",
+    "type": ""
+  },
+  {
+    "_id": "65e9b212c0c28dd17fba013a",
+    "anchorRef": "Psalms 145:3",
+    "anchorRefExpanded": [
+      "Psalms 145:3"
+    ],
+    "anchorVerse": 3,
+    "category": "Quoting Commentary",
+    "collectiveTitle": {
+      "en": "Ibn Ezra on Exodus; Perush HaArokh",
+      "he": "אבן עזרא על שמות; פירוש הארוך"
+    },
+    "commentaryNum": 18.0001,
+    "compDate": [
+      1155,
+      1165
+    ],
+    "heTitle": "אבן עזרא על שמות; פירוש הארוך",
+    "index_title": "Ibn Ezra on Exodus; Perush HaArokh",
+    "ref": "Ibn Ezra on Exodus; Perush HaArokh 31:18:1",
+    "sourceHasEn": true,
+    "sourceHeRef": "אבן עזרא על שמות; פירוש הארוך ל״א:י״ח:א׳",
+    "sourceRef": "Ibn Ezra on Exodus; Perush HaArokh 31:18:1",
     "type": ""
   },
   {
@@ -26627,20 +27656,20 @@
     "anchorVerse": 4,
     "category": "Kabbalah",
     "collectiveTitle": {
-      "en": "Megaleh Amukot",
-      "he": "מגלה עמוקות"
+      "en": "Megalleh Amukkot on Parashat VaEtchanan",
+      "he": "מגלה עמוקות על פרשת ואתחנן"
     },
     "commentaryNum": 239.0001,
     "compDate": [
       1607,
       1633
     ],
-    "heTitle": "מגלה עמוקות",
-    "index_title": "Megaleh Amukot",
-    "ref": "Megaleh Amukot 239:1",
+    "heTitle": "מגלה עמוקות על פרשת ואתחנן",
+    "index_title": "Megalleh Amukkot on Parashat VaEtchanan",
+    "ref": "Megalleh Amukkot on Parashat VaEtchanan 239:1",
     "sourceHasEn": false,
-    "sourceHeRef": "מגלה עמוקות רל״ט:א׳",
-    "sourceRef": "Megaleh Amukot 239:1",
+    "sourceHeRef": "מגלה עמוקות על פרשת ואתחנן רל״ט:א׳",
+    "sourceRef": "Megalleh Amukkot on Parashat VaEtchanan 239:1",
     "type": ""
   },
   {
@@ -26784,7 +27813,6 @@
       1844,
       1874
     ],
-    "heTitle": "מלבי\"ם על תהילים",
     "index_title": "Malbim on Psalms",
     "ref": "Malbim on Psalms 145:4:1",
     "sourceHasEn": false,
@@ -27105,7 +28133,6 @@
       1844,
       1874
     ],
-    "heTitle": "מלבי\"ם על תהילים",
     "index_title": "Malbim on Psalms",
     "ref": "Malbim on Psalms 145:5:1",
     "sourceHasEn": false,
@@ -27122,15 +28149,15 @@
     "anchorVerse": 5,
     "category": "Chasidut",
     "collectiveTitle": {
-      "en": "Chayim VaChesed",
+      "en": "Chayyim VaChesed",
       "he": "חיים וחסד"
     },
     "commentaryNum": 653.0001,
-    "index_title": "Chayim VaChesed",
-    "ref": "Chayim VaChesed 653:1",
+    "index_title": "Chayyim VaChesed",
+    "ref": "Chayyim VaChesed 653:1",
     "sourceHasEn": false,
     "sourceHeRef": "חיים וחסד תרנ״ג:א׳",
-    "sourceRef": "Chayim VaChesed 653:1",
+    "sourceRef": "Chayyim VaChesed 653:1",
     "type": ""
   },
   {
@@ -27445,7 +28472,6 @@
       1844,
       1874
     ],
-    "heTitle": "מלבי\"ם על תהילים",
     "index_title": "Malbim on Psalms",
     "ref": "Malbim on Psalms 145:6:1",
     "sourceHasEn": false,
@@ -27839,7 +28865,6 @@
       1844,
       1874
     ],
-    "heTitle": "מלבי\"ם על תהילים",
     "index_title": "Malbim on Psalms",
     "ref": "Malbim on Psalms 145:7:1",
     "sourceHasEn": false,
@@ -28279,7 +29304,7 @@
     },
     "commentaryNum": 33.0003,
     "compDate": [
-      500
+      400
     ],
     "heTitle": "בראשית רבה",
     "index_title": "Bereshit Rabbah",
@@ -28298,20 +29323,20 @@
     "anchorVerse": 8,
     "category": "Kabbalah",
     "collectiveTitle": {
-      "en": "Megaleh Amukot",
-      "he": "מגלה עמוקות"
+      "en": "Megalleh Amukkot on Parashat VaEtchanan",
+      "he": "מגלה עמוקות על פרשת ואתחנן"
     },
     "commentaryNum": 188.0001,
     "compDate": [
       1607,
       1633
     ],
-    "heTitle": "מגלה עמוקות",
-    "index_title": "Megaleh Amukot",
-    "ref": "Megaleh Amukot 188:1",
+    "heTitle": "מגלה עמוקות על פרשת ואתחנן",
+    "index_title": "Megalleh Amukkot on Parashat VaEtchanan",
+    "ref": "Megalleh Amukkot on Parashat VaEtchanan 188:1",
     "sourceHasEn": false,
-    "sourceHeRef": "מגלה עמוקות קפ״ח:א׳",
-    "sourceRef": "Megaleh Amukot 188:1",
+    "sourceHeRef": "מגלה עמוקות על פרשת ואתחנן קפ״ח:א׳",
+    "sourceRef": "Megalleh Amukkot on Parashat VaEtchanan 188:1",
     "type": ""
   },
   {
@@ -28323,44 +29348,20 @@
     "anchorVerse": 8,
     "category": "Kabbalah",
     "collectiveTitle": {
-      "en": "Megaleh Amukot",
-      "he": "מגלה עמוקות"
+      "en": "Megalleh Amukkot on Parashat VaEtchanan",
+      "he": "מגלה עמוקות על פרשת ואתחנן"
     },
     "commentaryNum": 189.0001,
     "compDate": [
       1607,
       1633
     ],
-    "heTitle": "מגלה עמוקות",
-    "index_title": "Megaleh Amukot",
-    "ref": "Megaleh Amukot 189:1",
+    "heTitle": "מגלה עמוקות על פרשת ואתחנן",
+    "index_title": "Megalleh Amukkot on Parashat VaEtchanan",
+    "ref": "Megalleh Amukkot on Parashat VaEtchanan 189:1",
     "sourceHasEn": false,
-    "sourceHeRef": "מגלה עמוקות קפ״ט:א׳",
-    "sourceRef": "Megaleh Amukot 189:1",
-    "type": ""
-  },
-  {
-    "_id": "5c17ba06b071e100bf4f0770",
-    "anchorRef": "Psalms 145:8",
-    "anchorRefExpanded": [
-      "Psalms 145:8"
-    ],
-    "anchorVerse": 8,
-    "category": "Midrash",
-    "collectiveTitle": {
-      "en": "Mekhilta DeRabbi Yishmael",
-      "he": "מכילתא דרבי ישמעאל"
-    },
-    "commentaryNum": 1.0005,
-    "compDate": [
-      135
-    ],
-    "heTitle": "מכילתא דרבי ישמעאל",
-    "index_title": "Mekhilta DeRabbi Yishmael",
-    "ref": "Mekhilta DeRabbi Yishmael 15:1:5",
-    "sourceHasEn": true,
-    "sourceHeRef": "מכילתא דרבי ישמעאל ט״ו:א׳:ה׳",
-    "sourceRef": "Mekhilta DeRabbi Yishmael 15:1:5",
+    "sourceHeRef": "מגלה עמוקות על פרשת ואתחנן קפ״ט:א׳",
+    "sourceRef": "Megalleh Amukkot on Parashat VaEtchanan 189:1",
     "type": ""
   },
   {
@@ -28455,7 +29456,6 @@
       1844,
       1874
     ],
-    "heTitle": "מלבי\"ם על תהילים",
     "index_title": "Malbim on Psalms",
     "ref": "Malbim on Psalms 145:8:1",
     "sourceHasEn": false,
@@ -28689,6 +29689,31 @@
     "type": ""
   },
   {
+    "_id": "65aec0d5a85e40f06009652b",
+    "anchorRef": "Psalms 145:8",
+    "anchorRefExpanded": [
+      "Psalms 145:8"
+    ],
+    "anchorVerse": 8,
+    "category": "Halakhah",
+    "collectiveTitle": {
+      "en": "Abudarham",
+      "he": "אבודרהם"
+    },
+    "commentaryNum": 9,
+    "compDate": [
+      1330,
+      1340
+    ],
+    "heTitle": "סיום התפילה",
+    "index_title": "Abudarham",
+    "ref": "Abudarham, Weekday Prayers, Post Amidah 9",
+    "sourceHasEn": true,
+    "sourceHeRef": "אבודרהם, סדר תפילות החול, סיום התפילה ט׳",
+    "sourceRef": "Abudarham, Weekday Prayers, Post Amidah 9",
+    "type": ""
+  },
+  {
     "_id": "541fbd18fbfba22014ad12f9",
     "anchorRef": "Psalms 145:9",
     "anchorRefExpanded": [
@@ -28800,7 +29825,7 @@
     },
     "commentaryNum": 33.0003,
     "compDate": [
-      500
+      400
     ],
     "heTitle": "בראשית רבה",
     "index_title": "Bereshit Rabbah",
@@ -28808,30 +29833,6 @@
     "sourceHasEn": false,
     "sourceHeRef": "בראשית רבה ל״ג:ג׳",
     "sourceRef": "Bereshit Rabbah 33:3",
-    "type": ""
-  },
-  {
-    "_id": "55a55785fbfba23b37d0ac03",
-    "anchorRef": "Psalms 145:9",
-    "anchorRefExpanded": [
-      "Psalms 145:9"
-    ],
-    "anchorVerse": 9,
-    "category": "Jewish Thought",
-    "collectiveTitle": {
-      "en": "Guide for the Perplexed",
-      "he": "מורה נבוכים"
-    },
-    "commentaryNum": 199,
-    "compDate": [
-      1190
-    ],
-    "heTitle": "הקדמת מ. פרידלנדר",
-    "index_title": "Guide for the Perplexed",
-    "ref": "Guide for the Perplexed, Translator's Introductions, Introduction of M Friedlander 199",
-    "sourceHasEn": true,
-    "sourceHeRef": "מורה נבוכים, הקדמות המתרגמים, הקדמת מ. פרידלנדר קצ״ט",
-    "sourceRef": "Guide for the Perplexed, Translator's Introductions, Introduction of M Friedlander 199",
     "type": ""
   },
   {
@@ -29052,7 +30053,7 @@
     ],
     "index_title": "HaEmunot veHaDeot",
     "ref": "HaEmunot veHaDeot, [Treatise II] The Unity of the Creator 13:1",
-    "sourceHasEn": false,
+    "sourceHasEn": true,
     "sourceHeRef": "האמונות והדעות, מאמר השני; אחדות י״ג:א׳",
     "sourceRef": "HaEmunot veHaDeot, [Treatise II] The Unity of the Creator 13:1",
     "type": ""
@@ -29585,7 +30586,7 @@
     "anchorVerse": 9,
     "category": "Responsa",
     "collectiveTitle": {
-      "en": "Noda BiYhudah II",
+      "en": "Noda BiYehudah II",
       "he": "נודע ביהודה מהדורא תנינא"
     },
     "commentaryNum": 10.0015,
@@ -29594,11 +30595,11 @@
       1793
     ],
     "heTitle": "יורה דעה",
-    "index_title": "Noda BiYhudah II",
-    "ref": "Noda BiYhudah II, Yoreh Deah 10:15",
+    "index_title": "Noda BiYehudah II",
+    "ref": "Noda BiYehudah II, Yoreh Deah 10:15",
     "sourceHasEn": true,
     "sourceHeRef": "נודע ביהודה מהדורא תנינא, יורה דעה י׳:ט״ו",
-    "sourceRef": "Noda BiYhudah II, Yoreh Deah 10:15",
+    "sourceRef": "Noda BiYehudah II, Yoreh Deah 10:15",
     "type": ""
   },
   {
@@ -30818,7 +31819,6 @@
       1844,
       1874
     ],
-    "heTitle": "מלבי\"ם על תהילים",
     "index_title": "Malbim on Psalms",
     "ref": "Malbim on Psalms 145:9:1",
     "sourceHasEn": false,
@@ -30835,7 +31835,7 @@
     "anchorVerse": 9,
     "category": "Quoting Commentary",
     "collectiveTitle": {
-      "en": "Derekh Chayim",
+      "en": "Derekh Chayyim",
       "he": "דרך חיים"
     },
     "commentaryNum": 6.005,
@@ -30843,11 +31843,11 @@
       1578,
       1588
     ],
-    "index_title": "Derekh Chayim",
-    "ref": "Derekh Chayim 6:6:50",
+    "index_title": "Derekh Chayyim",
+    "ref": "Derekh Chayyim 6:6:50",
     "sourceHasEn": true,
     "sourceHeRef": "דרך חיים ו׳:ו׳:נ׳",
-    "sourceRef": "Derekh Chayim 6:6:50",
+    "sourceRef": "Derekh Chayyim 6:6:50",
     "type": ""
   },
   {
@@ -31444,7 +32444,6 @@
     "compDate": [
       1190
     ],
-    "heTitle": "חלק ג'",
     "index_title": "Guide for the Perplexed",
     "ref": "Guide for the Perplexed, Part 3 12:10",
     "sourceHasEn": true,
@@ -31502,7 +32501,7 @@
     "anchorVerse": 9,
     "category": "Quoting Commentary",
     "collectiveTitle": {
-      "en": "Alshikh on Torah",
+      "en": "Alshekh on Torah",
       "he": "תורת משה - אלשיך"
     },
     "commentaryNum": 26.0002,
@@ -31511,11 +32510,11 @@
       1590
     ],
     "heTitle": "ויקרא",
-    "index_title": "Alshikh on Torah",
-    "ref": "Alshikh on Torah, Leviticus 22:26:2",
+    "index_title": "Alshekh on Torah",
+    "ref": "Alshekh on Torah, Leviticus 22:26:2",
     "sourceHasEn": true,
     "sourceHeRef": "תורת משה - אלשיך, ויקרא כ״ב:כ״ו:ב׳",
-    "sourceRef": "Alshikh on Torah, Leviticus 22:26:2",
+    "sourceRef": "Alshekh on Torah, Leviticus 22:26:2",
     "type": ""
   },
   {
@@ -31547,16 +32546,16 @@
     "anchorVerse": 9,
     "category": "Quoting Commentary",
     "collectiveTitle": {
-      "en": "Ohel Yaakov on Torah",
+      "en": "Ohel Ya'akov on Torah",
       "he": "אהל יעקב על התורה"
     },
     "commentaryNum": 29.0002,
     "heTitle": "בראשית",
-    "index_title": "Ohel Yaakov on Torah",
-    "ref": "Ohel Yaakov on Torah, Bereshit 29:2",
+    "index_title": "Ohel Ya'akov on Torah",
+    "ref": "Ohel Ya'akov on Torah, Bereshit 29:2",
     "sourceHasEn": false,
     "sourceHeRef": "אהל יעקב על התורה, בראשית כ״ט:ב׳",
-    "sourceRef": "Ohel Yaakov on Torah, Bereshit 29:2",
+    "sourceRef": "Ohel Ya'akov on Torah, Bereshit 29:2",
     "type": ""
   },
   {
@@ -31568,16 +32567,16 @@
     "anchorVerse": 9,
     "category": "Quoting Commentary",
     "collectiveTitle": {
-      "en": "Ohel Yaakov on Torah",
+      "en": "Ohel Ya'akov on Torah",
       "he": "אהל יעקב על התורה"
     },
     "commentaryNum": 3.0002,
     "heTitle": "יתרו",
-    "index_title": "Ohel Yaakov on Torah",
-    "ref": "Ohel Yaakov on Torah, Yitro 3:2",
+    "index_title": "Ohel Ya'akov on Torah",
+    "ref": "Ohel Ya'akov on Torah, Yitro 3:2",
     "sourceHasEn": false,
     "sourceHeRef": "אהל יעקב על התורה, יתרו ג׳:ב׳",
-    "sourceRef": "Ohel Yaakov on Torah, Yitro 3:2",
+    "sourceRef": "Ohel Ya'akov on Torah, Yitro 3:2",
     "type": ""
   },
   {
@@ -31589,16 +32588,16 @@
     "anchorVerse": 9,
     "category": "Quoting Commentary",
     "collectiveTitle": {
-      "en": "Ohel Yaakov on Torah",
+      "en": "Ohel Ya'akov on Torah",
       "he": "אהל יעקב על התורה"
     },
     "commentaryNum": 18.0003,
     "heTitle": "נשא",
-    "index_title": "Ohel Yaakov on Torah",
-    "ref": "Ohel Yaakov on Torah, Nasso 18:3",
+    "index_title": "Ohel Ya'akov on Torah",
+    "ref": "Ohel Ya'akov on Torah, Nasso 18:3",
     "sourceHasEn": false,
     "sourceHeRef": "אהל יעקב על התורה, נשא י״ח:ג׳",
-    "sourceRef": "Ohel Yaakov on Torah, Nasso 18:3",
+    "sourceRef": "Ohel Ya'akov on Torah, Nasso 18:3",
     "type": ""
   },
   {
@@ -31624,6 +32623,100 @@
     "sourceHasEn": true,
     "sourceHeRef": "אבודרהם, סדר תפילות החול, תפילת עמידה ט״ז",
     "sourceRef": "Abudarham, Weekday Prayers, Amidah 16",
+    "type": ""
+  },
+  {
+    "_id": "6596f917a555ccc6c5c37d9c",
+    "anchorRef": "Psalms 145:9",
+    "anchorRefExpanded": [
+      "Psalms 145:9"
+    ],
+    "anchorVerse": 9,
+    "category": "Midrash",
+    "collectiveTitle": {
+      "en": "Mekhilta DeRabbi Yishmael",
+      "he": "מכילתא דרבי ישמעאל"
+    },
+    "commentaryNum": 1.0019,
+    "compDate": [
+      200
+    ],
+    "heTitle": "מַסֶּכְתָּא דְשִׁירָה",
+    "index_title": "Mekhilta DeRabbi Yishmael",
+    "ref": "Mekhilta DeRabbi Yishmael, Tractate Shirah 1:19",
+    "sourceHasEn": true,
+    "sourceHeRef": "מכילתא דרבי ישמעאל, מַסֶּכְתָּא דְשִׁירָה א׳:י״ט",
+    "sourceRef": "Mekhilta DeRabbi Yishmael, Tractate Shirah 1:19",
+    "type": ""
+  },
+  {
+    "_id": "66092621404dd9b723f27c47",
+    "anchorRef": "Psalms 145:9",
+    "anchorRefExpanded": [
+      "Psalms 145:9"
+    ],
+    "anchorVerse": 9,
+    "category": "Quoting Commentary",
+    "collectiveTitle": {
+      "en": "Lessons in Leadership; A Weekly Reading of the Jewish Bible",
+      "he": "שיעורים בהנהגה; קריאות חדשות בפרשת השבוע"
+    },
+    "commentaryNum": 4,
+    "compDate": [
+      2015
+    ],
+    "heTitle": "אמור",
+    "index_title": "Lessons in Leadership; A Weekly Reading of the Jewish Bible",
+    "ref": "Lessons in Leadership; A Weekly Reading of the Jewish Bible, Emor; On Not Being Afraid of Greatness 4",
+    "sourceHasEn": true,
+    "sourceHeRef": "שיעורים בהנהגה; קריאות חדשות בפרשת השבוע, אמור ד׳",
+    "sourceRef": "Lessons in Leadership; A Weekly Reading of the Jewish Bible, Emor; On Not Being Afraid of Greatness 4",
+    "type": ""
+  },
+  {
+    "_id": "660976356cabb790974f93b2",
+    "anchorRef": "Psalms 145:9",
+    "anchorRefExpanded": [
+      "Psalms 145:9"
+    ],
+    "anchorVerse": 9,
+    "category": "Halakhah",
+    "collectiveTitle": {
+      "en": "Abudarham",
+      "he": "אבודרהם"
+    },
+    "commentaryNum": 51,
+    "compDate": [
+      1330,
+      1340
+    ],
+    "heTitle": "תפילת עמידה",
+    "index_title": "Abudarham",
+    "ref": "Abudarham, Weekday Prayers, Amidah 51",
+    "sourceHasEn": true,
+    "sourceHeRef": "אבודרהם, סדר תפילות החול, תפילת עמידה נ״א",
+    "sourceRef": "Abudarham, Weekday Prayers, Amidah 51",
+    "type": ""
+  },
+  {
+    "_id": "6596f465b991f6d861c4e494",
+    "anchorRef": "Psalms 145:9",
+    "anchorRefExpanded": [
+      "Psalms 145:9"
+    ],
+    "anchorVerse": 9,
+    "category": "Musar",
+    "collectiveTitle": {
+      "en": "Ma'alot HaMiddot",
+      "he": "מעלות המדות"
+    },
+    "commentaryNum": 16,
+    "heTitle": "ה; מעלת גמילות חסדים",
+    "index_title": "Ma'alot HaMiddot",
+    "ref": "Ma'alot HaMiddot, v; On Kindness 16",
+    "sourceHasEn": false,
+    "sourceHeRef": "מעלות המדות, ה; מעלת גמילות חסדים ט״ז",
+    "sourceRef": "Ma'alot HaMiddot, v; On Kindness 16",
     "type": ""
   }
 ]
