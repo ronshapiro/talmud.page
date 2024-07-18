@@ -8,11 +8,15 @@
     --snackbar-background-color: #111;
     --snackbar-text-color: var(--text-color);
     --highlight-red: rgb(150, 84, 78);
+    --highlight-red-50: rgb(150, 84, 78, .5);
     --highlight-yellow: rgb(120, 115, 59);
     --highlight-yellow-50: rgb(120, 115, 59, .5);
     --highlight-green: rgb(66, 133, 78);
+    --highlight-green-50: rgb(66, 133, 78, .5);
     --highlight-blue: rgb(66, 112, 133);
+    --highlight-blue-50: rgb(66, 112, 133, .5);
     --highlight-gray: rgb(99, 99, 99);
+    --highlight-gray-50: rgb(99, 99, 99, .5);
     --highlighted-commentary-indicator-yellow: rgb(133, 128, 66);
     --modal-box-shadow-color: #111;
     --modal-button-color: var(--mdl-accent-color);

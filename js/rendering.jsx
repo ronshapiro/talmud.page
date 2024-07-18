@@ -826,8 +826,11 @@ class Root extends Component {
         firstRemovable={i === 0 && baseAmudim.length > 1}
         lastRemovable={i !== 0 && i === baseAmudim.length - 1} />));
 
-    const updateSearchQuery = (query, asRegex) => {
-      this.context.searchQueryRegex = (
+    const updateSearchQuery = (color, query, asRegex) => {
+      if (!this.context.searchQueryRegex) {
+        this.context.searchQueryRegex = {};
+      }
+      this.context.searchQueryRegex[color] = (
         (query.length < 2) ? undefined : hebrewSearchRegex(query, asRegex));
       this.setState(previousState => {
         return {...previousState, query, queryCount: previousState.queryCount + 1};

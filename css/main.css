@@ -10,11 +10,17 @@
     /* Colors overridden in dark mode. */
     --background-color: white;
     --highlight-red: rgb(245, 150, 147);
+    --highlight-red-50: rgb(245, 150, 147, .5);
     --highlight-yellow: rgb(250, 217, 120);
     --highlight-yellow-50: rgb(250, 217, 120, .5);
     --highlight-green: rgb(136, 227, 140);
+    --highlight-green-50: rgb(136, 227, 140, .5);
     --highlight-blue: rgb(141, 188, 252);
+    --highlight-blue-50: rgb(141, 188, 252, .5);
     --highlight-gray: rgb(201, 201, 201);
+    --highlight-gray-50: rgb(201, 201, 201, .5);
+    --highlight-purple: rgb(205, 134, 252);
+    --highlight-purple-50: rgb(205, 134, 252, .5);
     --highlighted-commentary-indicator-red: var(--highlight-red);
     --highlighted-commentary-indicator-yellow: var(--highlight-yellow);
     --highlighted-commentary-indicator-green: var(--highlight-green);
@@ -559,19 +565,24 @@ h2, .title, .titleHebrew {
     padding: 20px;
 }
 
+
 #showSettings, #showSearch {
     position: fixed;
     color: var(--highlight-gray);
-    padding: 25px;
     left: 15px;
 }
 
 #showSettings {
+    padding: 25px;
     top: 15px;
 }
 
 #showSearch {
     bottom: 15px;
+}
+
+#showSearch > button {
+    padding: 25px;
 }
 
 @media only screen and (max-width: 720px) {
@@ -612,10 +623,33 @@ h2, .title, .titleHebrew {
 }
 
 .foundTerm {
-    background: var(--highlight-yellow-50);
-    box-shadow: 0px 0px 4px var(--highlight-yellow);
     padding: 0px 1px;
     margin: 0px -1px;
+}
+
+.foundTerm.yellow {
+    background: var(--highlight-yellow-50);
+    box-shadow: 0px 0px 4px var(--highlight-yellow);
+}
+.foundTerm.gray {
+    background: var(--highlight-gray-50);
+    box-shadow: 0px 0px 4px var(--highlight-gray);
+}
+.foundTerm.red {
+    background: var(--highlight-red-50);
+    box-shadow: 0px 0px 4px var(--highlight-red);
+}
+.foundTerm.green {
+    background: var(--highlight-green-50);
+    box-shadow: 0px 0px 4px var(--highlight-green);
+}
+.foundTerm.blue {
+    background: var(--highlight-blue-50);
+    box-shadow: 0px 0px 4px var(--highlight-blue);
+}
+.foundTerm.purple {
+    background: var(--highlight-purple-50);
+    box-shadow: 0px 0px 4px var(--highlight-purple);
 }
 
 .inPageSearch .mdl-button {

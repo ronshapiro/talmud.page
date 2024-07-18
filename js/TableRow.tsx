@@ -3,7 +3,7 @@ import * as React from "react";
 import * as PropTypes from 'prop-types';
 import {useHtmlRef} from "./hooks";
 import isEmptyText from "./is_empty_text";
-import {htmlWrapMatches} from "./html_replacer";
+import {htmlWrapMatches, Wrapper} from "./html_replacer";
 import {$} from "./jquery";
 import {onClickKeyListener} from "./key_clicks";
 import {useConfiguration, useHiddenHost} from "./context";
@@ -37,17 +37,22 @@ function useSanitizedText(text: string): string {
   return useMemo(() => DOMPurify.sanitize(text, SANITIZE_CONFIG), [text]);
 }
 
-const SEARCH_TERM_WRAPPER = {
-  prefix: `<span-search-term class="foundTerm">`,
-  suffix: "</span-search-term>",
-};
+function searchTermWrapper(color: string): Wrapper {
+  return {
+    prefix: `<span-search-term class="foundTerm ${color}">`,
+    suffix: "</span-search-term>",
+  };
+}
 
 function useSearchableText(text: string): string {
   const context = useConfiguration();
+  const regexes = context.searchQueryRegex ? Object.entries(context.searchQueryRegex) : [];
   return useMemo(() => {
-    if (!context.searchQueryRegex) return text;
-    return htmlWrapMatches(text, context.searchQueryRegex, SEARCH_TERM_WRAPPER);
-  }, [text, context.searchQueryRegex]);
+    for (const [color, regex] of regexes) {
+      if (regex) text = htmlWrapMatches(text, regex as RegExp, searchTermWrapper(color));
+    }
+    return text;
+  }, [text, regexes]);
 }
 
 interface CellTextProps {

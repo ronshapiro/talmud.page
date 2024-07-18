@@ -81,9 +81,11 @@ function useArrayStateBackedByLength<T>(array: T[]): [T[], (array: T[]) => void]
   }];
 }
 
+type UpdateSearchQuery = (key: string, query: string, asRegex: boolean | undefined) => void;
+
 interface SearchProps {
   queryCount: number;
-  updateSearchQuery: (query: string, asRegex: boolean) => void;
+  updateSearchQuery: UpdateSearchQuery;
 }
 
 const CURRENT_MATCH_UNSET = -200;
@@ -100,29 +102,79 @@ function computeNextMatchIndex(currentIndex: number, diff: number, maxIndex: num
   return newIndex;
 }
 
+const COLORS = ["yellow", "blue", "purple", "green", "red", "gray"];
+
 export function InPageSearch({
   updateSearchQuery,
   // This doesn't actually do anything, but it does help ensure that when the query changes
   // this gets rerendered.
   queryCount, // eslint-disable-line @typescript-eslint/no-unused-vars
 }: SearchProps): React.ReactElement[] {
-  const setRefreshCount = useState(0)[1];
-  const isShowing = () => localStorage.showSearchBar === "true";
-  const toggle = () => {
-    setRefreshCount(previous => previous + 1);
-    localStorage.showSearchBar = !isShowing();
+  const [isShowing, setShowing] = useState(false);
+  const [colors, setColors] = useState([COLORS[0]]);
+  const showAddButton = isShowing && colors.length !== COLORS.length;
+
+  const button = (kind: string, onClick: () => void) => {
+    return (
+      <button
+        key={kind}
+        className="mdl-button mdl-js-button mdl-button--icon"
+        onClick={onClick}>
+        <i className="material-icons">{kind}</i>
+      </button>
+    );
   };
+  const addNewSearch = () => {
+    for (const color of COLORS) {
+      if (!colors.includes(color)) {
+        setColors([...colors, color]);
+        break;
+      }
+    }
+  };
+  const removeSearch = (color: string) => {
+    setColors(colors.filter(x => x !== color));
+  };
+
   const elements = [
-    <button
-      id="showSearch"
-      key="showSearch"
-      className={`mdl-button mdl-js-button mdl-button--icon ${isShowing() ? "lift" : ""}`}
-      onClick={() => toggle()}
-      >
-      <i className="material-icons">search</i>
-    </button>,
+    <div id="showSearch" className={isShowing ? "lift" : ""}>
+      {button("search", () => setShowing(previous => !previous))}
+      {showAddButton ? button("add", () => addNewSearch()) : null}
+    </div>,
   ];
 
+  if (!isShowing) {
+    return elements;
+  }
+
+  /* eslint-disable @typescript-eslint/no-use-before-define */
+  elements.push(
+    <Snackbar key="snack">
+      {colors.map(color => (
+        <IndividualSearchRow
+          key={color}
+          color={color}
+          updateSearchQuery={updateSearchQuery}
+          removeSearch={() => removeSearch(color)}
+          canRemove={colors.length > 1} />
+      ))}
+    </Snackbar>);
+  /* eslint-enable @typescript-eslint/no-use-before-define */
+  return elements;
+}
+
+interface IndividualSearchRowProps {
+  color: string;
+  updateSearchQuery: UpdateSearchQuery;
+  removeSearch: () => void;
+  canRemove: boolean;
+}
+function IndividualSearchRow({
+  color,
+  updateSearchQuery,
+  removeSearch,
+  canRemove,
+}: IndividualSearchRowProps): React.ReactElement {
   const contentEditableRef = useHtmlRef<HTMLElement>();
   const [asRegex, setAsRegexBase] = useState(false);
   const [content, setContent] = useState("");
@@ -133,7 +185,7 @@ export function InPageSearch({
     const newText = unescapeHtml(sanitizeHtml(contentEditableRef.current.innerHTML).trim());
     setContent(newText);
     const asRegexValue = overrideAsRegexValue !== undefined ? overrideAsRegexValue : asRegex;
-    updateSearchQuery(newText.trim(), asRegexValue);
+    updateSearchQuery(color, newText.trim(), asRegexValue);
     setCurrentMatch(CURRENT_MATCH_UNSET);
     setCurrentMatchedView(undefined);
   }, [asRegex]);
@@ -144,8 +196,17 @@ export function InPageSearch({
   const isEnglish = useIsEnglish();
 
   useEffect(() => {
-    setMatches(Array.from($(".foundTerm")));
+    setMatches(Array.from($(`.foundTerm.${color}`)));
   });
+
+  const onClear = () => {
+    if (content.length === 0) {
+      removeSearch();
+    } else {
+      setContent("");
+      updateSearchQuery(color, "", undefined);
+    }
+  };
 
   useMemo(() => {
     if (currentMatchedView) {
@@ -154,12 +215,10 @@ export function InPageSearch({
     }
   }, [matches.length]);
 
-  if (!isShowing()) {
-    return elements;
-  }
+  const clearDisabled = !canRemove && content.length === 0;
 
   const children = [
-    <SnackbarButton key="clear" disabled={content.length === 0} onClick={() => setContent("")}>
+    <SnackbarButton key="clear" disabled={clearDisabled} onClick={() => onClear()}>
       <i className="material-icons">close</i>
     </SnackbarButton>,
     <ContentEditable
@@ -204,6 +263,5 @@ export function InPageSearch({
       </SnackbarButton>
     </span>);
 
-  elements.push(<Snackbar key="snack"><div>{children}</div></Snackbar>);
-  return elements;
+  return <div>{children}</div>;
 }
