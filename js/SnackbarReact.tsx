@@ -102,7 +102,7 @@ function computeNextMatchIndex(currentIndex: number, diff: number, maxIndex: num
   return newIndex;
 }
 
-const COLORS = ["yellow", "blue", "purple", "green", "red", "gray"];
+const COLORS = ["yellow", "purple", "green", "red", "blue", "gray"];
 
 export function InPageSearch({
   updateSearchQuery,
@@ -112,7 +112,8 @@ export function InPageSearch({
 }: SearchProps): React.ReactElement[] {
   const [isShowing, setShowing] = useState(false);
   const [colors, setColors] = useState([COLORS[0]]);
-  const showAddButton = isShowing && colors.length !== COLORS.length;
+  const [initialRegexes, setInitialRegexes] = useState({} as Record<string, string | undefined>);
+  const canAddMoreColors = colors.length !== COLORS.length;
 
   const button = (kind: string, onClick: () => void) => {
     return (
@@ -124,14 +125,29 @@ export function InPageSearch({
       </button>
     );
   };
-  const addNewSearch = () => {
+  const setInitialRegex = (color: string, initialRegex?: string) => {
+    const newRegexes = {...initialRegexes};
+    newRegexes[color] = initialRegex;
+    setInitialRegexes(newRegexes);
+  };
+  const addNewSearch = (initialRegex?: string) => {
     for (const color of COLORS) {
       if (!colors.includes(color)) {
         setColors([...colors, color]);
+        setInitialRegex(color, initialRegex);
         break;
       }
     }
   };
+  const newSearchWithText = (initialRegex: string) => {
+    if (!isShowing) {
+      setShowing(true);
+      setInitialRegex(colors[0], initialRegex);
+    } else {
+      addNewSearch(initialRegex);
+    }
+  };
+  (window as any).SEARCH = canAddMoreColors && newSearchWithText;
   const removeSearch = (color: string) => {
     setColors(colors.filter(x => x !== color));
   };
@@ -139,7 +155,7 @@ export function InPageSearch({
   const elements = [
     <div id="showSearch" className={isShowing ? "lift" : ""}>
       {button("search", () => setShowing(previous => !previous))}
-      {showAddButton ? button("add", () => addNewSearch()) : null}
+      {isShowing && canAddMoreColors ? button("add", () => addNewSearch()) : null}
     </div>,
   ];
 
@@ -156,7 +172,8 @@ export function InPageSearch({
           color={color}
           updateSearchQuery={updateSearchQuery}
           removeSearch={() => removeSearch(color)}
-          canRemove={colors.length > 1} />
+          canRemove={colors.length > 1}
+          initialRegex={initialRegexes[color]} />
       ))}
     </Snackbar>);
   /* eslint-enable @typescript-eslint/no-use-before-define */
@@ -168,12 +185,14 @@ interface IndividualSearchRowProps {
   updateSearchQuery: UpdateSearchQuery;
   removeSearch: () => void;
   canRemove: boolean;
+  initialRegex?: string;
 }
 function IndividualSearchRow({
   color,
   updateSearchQuery,
   removeSearch,
   canRemove,
+  initialRegex,
 }: IndividualSearchRowProps): React.ReactElement {
   const contentEditableRef = useHtmlRef<HTMLElement>();
   const [asRegex, setAsRegexBase] = useState(false);
@@ -193,6 +212,15 @@ function IndividualSearchRow({
     setAsRegexBase(value);
     updateRegex(value);
   };
+  const [hasSetInitialRegex, markInitialRegexSet] = useState(false);
+  useEffect(() => {
+    if (!hasSetInitialRegex && initialRegex) {
+      const newText = unescapeHtml(sanitizeHtml(initialRegex).trim());
+      setContent(newText);
+      updateSearchQuery(color, newText.trim(), false);
+      markInitialRegexSet(true);
+    }
+  });
   const isEnglish = useIsEnglish();
 
   useEffect(() => {

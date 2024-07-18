@@ -200,7 +200,6 @@ class Buttons {
     private selectionState: SelectionState,
   ) {}
 
-
   reportLoggedInCorrection(): Button {
     return {
       text: REPORT_CORRECTION_HTML,
@@ -359,6 +358,17 @@ class Buttons {
     modalContainer.show();
     noteTextArea.focus();
   }
+
+  searchButton(): Button {
+    return {
+      text: '<i class="material-icons">search</i>',
+      onClick: () => {
+        this.selectionState.capture();
+        (window as any).SEARCH(this.selectionState.getSelectedText());
+        document.getSelection()?.empty();
+      },
+    };
+  }
 }
 
 const onSelectionChange = () => {
@@ -376,8 +386,12 @@ const onSelectionChange = () => {
   }
   buttons.push(viewOnSefariaButton(ref, sefariaUrl));
 
+  const buttonsImpl = new Buttons(sefariaRef, sefariaUrl, new SelectionState(sefariaRef));
+  if ((window as any).SEARCH) {
+    buttons.push(buttonsImpl.searchButton());
+  }
+
   if (driveClient.allowCommenting() && ref !== "ignore-drive") {
-    const buttonsImpl = new Buttons(sefariaRef, sefariaUrl, new SelectionState(sefariaRef));
     if (sefariaRef.isPersonalNote) {
       buttons.push(buttonsImpl.editPersonalCommentButton());
       buttons.push(deleteCommentButton(sefariaRef));
