@@ -104,6 +104,19 @@ function computeNextMatchIndex(currentIndex: number, diff: number, maxIndex: num
 
 const COLORS = ["yellow", "purple", "green", "red", "blue", "gray"];
 
+type RecordFunction<V> = (x: Record<string, V>) => Record<string, V>;
+type RecordSetter<V> = (fn: RecordFunction<V>) => void;
+
+function recordStateSetter<V>(setter: RecordSetter<V>) {
+  return (key: string, value: V) => {
+    setter(oldValue => {
+      const newValue = {...oldValue};
+      newValue[key] = value;
+      return newValue;
+    });
+  };
+}
+
 export function InPageSearch({
   updateSearchQuery,
   // This doesn't actually do anything, but it does help ensure that when the query changes
@@ -112,7 +125,8 @@ export function InPageSearch({
 }: SearchProps): React.ReactElement[] {
   const [isShowing, setShowing] = useState(false);
   const [colors, setColors] = useState([COLORS[0]]);
-  const [initialRegexes, setInitialRegexes] = useState({} as Record<string, string | undefined>);
+  const [contentsByColor, setContentsByColor] = useState({} as Record<string, string | undefined>);
+  const setContentForColor = recordStateSetter(setContentsByColor);
   const canAddMoreColors = colors.length !== COLORS.length;
 
   const button = (kind: string, onClick: () => void) => {
@@ -125,26 +139,26 @@ export function InPageSearch({
       </button>
     );
   };
-  const setInitialRegex = (color: string, initialRegex?: string) => {
-    const newRegexes = {...initialRegexes};
-    newRegexes[color] = initialRegex;
-    setInitialRegexes(newRegexes);
-  };
-  const addNewSearch = (initialRegex?: string) => {
+  const addNewSearch = (initialText?: string) => {
     for (const color of COLORS) {
       if (!colors.includes(color)) {
         setColors([...colors, color]);
-        setInitialRegex(color, initialRegex);
+        setContentForColor(color, initialText);
         break;
       }
     }
   };
-  const newSearchWithText = (initialRegex: string) => {
+  const newSearchWithText = (initialText: string) => {
     if (!isShowing) {
       setShowing(true);
-      setInitialRegex(colors[0], initialRegex);
+    }
+
+    const latestColor = colors.slice(-1)[0];
+    const latestContent = contentsByColor[latestColor];
+    if (latestContent === undefined || latestContent === "") {
+      setContentForColor(latestColor, initialText);
     } else {
-      addNewSearch(initialRegex);
+      addNewSearch(initialText);
     }
   };
   (window as any).SEARCH = canAddMoreColors && newSearchWithText;
@@ -173,7 +187,8 @@ export function InPageSearch({
           updateSearchQuery={updateSearchQuery}
           removeSearch={() => removeSearch(color)}
           canRemove={colors.length > 1}
-          initialRegex={initialRegexes[color]} />
+          content={contentsByColor[color] || ""}
+          setContent={(newContent) => setContentForColor(color, newContent)} />
       ))}
     </Snackbar>);
   /* eslint-enable @typescript-eslint/no-use-before-define */
@@ -185,18 +200,25 @@ interface IndividualSearchRowProps {
   updateSearchQuery: UpdateSearchQuery;
   removeSearch: () => void;
   canRemove: boolean;
-  initialRegex?: string;
+  content: string;
+  setContent: (_: string) => void;
 }
 function IndividualSearchRow({
   color,
   updateSearchQuery,
   removeSearch,
   canRemove,
-  initialRegex,
+  content,
+  setContent,
 }: IndividualSearchRowProps): React.ReactElement {
+  const [localContent, setLocalContent] = useState("");
+  const inheritedSetContent = setContent;
+  setContent = (newContent: string) => {
+    inheritedSetContent(newContent);
+    setLocalContent(newContent);
+  };
   const contentEditableRef = useHtmlRef<HTMLElement>();
   const [asRegex, setAsRegexBase] = useState(false);
-  const [content, setContent] = useState("");
   const [currentMatch, setCurrentMatch] = useState(CURRENT_MATCH_UNSET);
   const [currentMatchedView, setCurrentMatchedView] = useState(undefined);
   const [matches, setMatches] = useArrayStateBackedByLength([]);
@@ -212,15 +234,15 @@ function IndividualSearchRow({
     setAsRegexBase(value);
     updateRegex(value);
   };
-  const [hasSetInitialRegex, markInitialRegexSet] = useState(false);
+
   useEffect(() => {
-    if (!hasSetInitialRegex && initialRegex) {
-      const newText = unescapeHtml(sanitizeHtml(initialRegex).trim());
+    if (content !== localContent) {
+      const newText = unescapeHtml(sanitizeHtml(content).trim());
       setContent(newText);
       updateSearchQuery(color, newText.trim(), false);
-      markInitialRegexSet(true);
     }
   });
+
   const isEnglish = useIsEnglish();
 
   useEffect(() => {
