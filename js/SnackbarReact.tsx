@@ -5,6 +5,7 @@ import {useConfiguration} from "./context";
 import {useHtmlRef} from "./hooks";
 import {$} from "./jquery";
 import {sanitizeHtml} from "../source_formatting/html_sanitization_web";
+import {NullaryFunction} from "./types";
 
 const {
   useCallback,
@@ -39,20 +40,33 @@ function SnackbarButton({children, disabled, onClick, extraClasses}: SnackbarBut
   );
 }
 
+type CloseSnackbarFn = NullaryFunction<Promise<unknown>>;
+
 interface SnackbarProps {
   children: any;
+  close?: React.MutableRefObject<CloseSnackbarFn | undefined>;
 }
 
-function Snackbar({children}: SnackbarProps): React.ReactElement {
-  const [isShowing, setShowing] = useState(false);
-  const style = useSpring({bottom: isShowing ? "0px" : "-400px"});
+function Snackbar({children, close}: SnackbarProps): React.ReactElement {
+  const [style, api] = useSpring(() => { return {height: "0px"}; });
+  const [showingState, setShowingState] = useState("starting");
+
   useEffect(() => {
-    setTimeout(() => setShowing(true), 10);
+    if (showingState === "starting") {
+      setShowingState("showing");
+      api.start({height: "36px"});
+    }
   });
+  if (close) {
+    close.current = () => Promise.all(api.start({height: "0px"})).then(() => {
+      setShowingState("closed");
+    });
+  }
+
   const isEnglish = useIsEnglish();
   const direction = isEnglish ? "ltr" : "rtl";
   return (
-    <animated.div className="snackbar inPageSearch" style={style} dir={direction}>
+    <animated.div className="snackbar inPageSearch" dir={direction} style={style}>
       {children}
     </animated.div>
   );
@@ -117,12 +131,12 @@ function recordStateSetter<V>(setter: RecordSetter<V>) {
   };
 }
 
-export function InPageSearch({
+export function SnackbarHost({
   updateSearchQuery,
   // This doesn't actually do anything, but it does help ensure that when the query changes
   // this gets rerendered.
   queryCount, // eslint-disable-line @typescript-eslint/no-unused-vars
-}: SearchProps): React.ReactElement[] {
+}: SearchProps): React.ReactElement {
   const [isShowing, setShowing] = useState(false);
   const [colors, setColors] = useState([COLORS[0]]);
   const [contentsByColor, setContentsByColor] = useState({} as Record<string, string | undefined>);
@@ -163,43 +177,51 @@ export function InPageSearch({
   };
   (window as any).SEARCH = canAddMoreColors && newSearchWithText;
   const removeSearch = (color: string) => {
-    setColors(colors.filter(x => x !== color));
+    setColors(oldColors => {
+      const newColors = oldColors.filter(x => x !== color);
+      setShowing(newColors.length > 0);
+      return newColors;
+    });
+  };
+
+  const onSearchShowHideClick = () => {
+    setShowing(previous => {
+      if (!previous && colors.length === 0) {
+        setColors([COLORS[0]]);
+      }
+      return !previous;
+    });
   };
 
   const elements = [
-    <div id="showSearch" className={isShowing ? "lift" : ""}>
-      {button("search", () => setShowing(previous => !previous))}
+    <div id="showSearch">
+      {button("search", onSearchShowHideClick)}
       {isShowing && canAddMoreColors ? button("add", () => addNewSearch()) : null}
     </div>,
   ];
 
-  if (!isShowing) {
-    return elements;
+  if (isShowing) {
+    /* eslint-disable @typescript-eslint/no-use-before-define */
+    const actualSnackbars = colors.map(color => (
+      <IndividualSearchRow
+        key={color}
+        color={color}
+        updateSearchQuery={updateSearchQuery}
+        removeSearch={() => removeSearch(color)}
+        content={contentsByColor[color] || ""}
+        setContent={(newContent) => setContentForColor(color, newContent)}
+        />));
+    elements.push(<div id="snackbars">{actualSnackbars}</div>);
+    /* eslint-enable @typescript-eslint/no-use-before-define */
   }
 
-  /* eslint-disable @typescript-eslint/no-use-before-define */
-  elements.push(
-    <Snackbar key="snack">
-      {colors.map(color => (
-        <IndividualSearchRow
-          key={color}
-          color={color}
-          updateSearchQuery={updateSearchQuery}
-          removeSearch={() => removeSearch(color)}
-          canRemove={colors.length > 1}
-          content={contentsByColor[color] || ""}
-          setContent={(newContent) => setContentForColor(color, newContent)} />
-      ))}
-    </Snackbar>);
-  /* eslint-enable @typescript-eslint/no-use-before-define */
-  return elements;
+  return <div id="snackbarHost" className={isShowing ? "showing" : ""}>{elements}</div>;
 }
 
 interface IndividualSearchRowProps {
   color: string;
   updateSearchQuery: UpdateSearchQuery;
   removeSearch: () => void;
-  canRemove: boolean;
   content: string;
   setContent: (_: string) => void;
 }
@@ -207,7 +229,6 @@ function IndividualSearchRow({
   color,
   updateSearchQuery,
   removeSearch,
-  canRemove,
   content,
   setContent,
 }: IndividualSearchRowProps): React.ReactElement {
@@ -249,9 +270,11 @@ function IndividualSearchRow({
     setMatches(Array.from($(`.foundTerm.${color}`)));
   });
 
+  const closeSnackbarRef = useRef<CloseSnackbarFn>();
+
   const onClear = () => {
     if (content.length === 0) {
-      removeSearch();
+      closeSnackbarRef.current!().then(() => removeSearch());
     } else {
       setContent("");
       updateSearchQuery(color, "", undefined);
@@ -265,10 +288,8 @@ function IndividualSearchRow({
     }
   }, [matches.length]);
 
-  const clearDisabled = !canRemove && content.length === 0;
-
   const children = [
-    <SnackbarButton key="clear" disabled={clearDisabled} onClick={() => onClear()}>
+    <SnackbarButton key="clear" onClick={() => onClear()}>
       <i className="material-icons">close</i>
     </SnackbarButton>,
     <ContentEditable
@@ -313,5 +334,5 @@ function IndividualSearchRow({
       </SnackbarButton>
     </span>);
 
-  return <div>{children}</div>;
+  return <Snackbar close={closeSnackbarRef}><div>{children}</div></Snackbar>;
 }

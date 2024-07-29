@@ -212,6 +212,8 @@ items. */
 #main-contents {
     margin: auto;
     max-width: var(--max-width);
+}
+#inner-content {
     padding: 1em;
 }
 
@@ -287,25 +289,38 @@ h2, .title, .titleHebrew {
     margin-inline-start: 20px;
 }
 
-.snackbar {
+#snackbarHost {
+    position: fixed;
+    bottom: 0px;
+    width: var(--max-width);
+    transition: padding-top 200ms, padding-bottom 200ms;
+}
+
+.snackbarSelfPosition {
     position: fixed;
     bottom: -400px;
     width: calc(var(--max-width) - 2 * var(--snackbar-padding));
-    padding: var(--snackbar-padding);
+}
 
-    background-color: var(--snackbar-background-color);
+#snackbarHost, .snackbarSelfPosition {
     color: var(--snackbar-text-color);
+    z-index: 3;
+}
+
+#snackbars, .snackbarSelfPosition {
     border-radius: 2px 2px 0 0;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, .5);
-
-    z-index: 3;
+    background-color: var(--snackbar-background-color);
+    padding: var(--snackbar-padding);
 }
 
 @media only screen and (max-width: 720px) {
     /* For mobile phones: */
-    .snackbar {
+    .snackbarSelfPosition {
         width: calc(100% - 2 * var(--snackbar-padding));
-        margin-left: -1em;
+    }
+    #snackbarHost {
+        width: 100%;
     }
 }
 
@@ -567,28 +582,33 @@ h2, .title, .titleHebrew {
 
 
 #showSettings, #showSearch {
-    position: fixed;
     color: var(--highlight-gray);
-    left: 15px;
 }
 
 #showSettings {
+    position: fixed;
     padding: 25px;
     top: 15px;
+    left: 15px;
 }
 
 #showSearch {
-    bottom: 15px;
+    position: static;
+    padding-bottom: 5px;
+    padding-left: 8px;
+}
+
+@media only screen and (min-width: 720px) {
+    #showSearch {
+        position: fixed;
+        bottom: 15px;
+        left: 15px;
+        padding: 0px;
+    }
 }
 
 #showSearch > button {
     padding: 25px;
-}
-
-@media only screen and (max-width: 720px) {
-    #showSearch.lift {
-        bottom: 60px;
-    }
 }
 
 /* Important for multi-line preferences text */

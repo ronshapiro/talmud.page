@@ -30,7 +30,7 @@ import {
 } from "./context.ts";
 import {mergeCommentaries} from "./mergeCommentaries.ts";
 import {Preferences} from "./Preferences.tsx";
-import {InPageSearch} from "./SnackbarReact.tsx";
+import {SnackbarHost} from "./SnackbarReact.tsx";
 
 const JSX_NOOP = null;
 
@@ -839,11 +839,16 @@ class Root extends Component {
 
     return (
       <>
-        <PreviousButton navigationExtension={navigationExtension} />
-        {amudim}
-        <NextButton navigationExtension={navigationExtension} />
-        <Preferences rerender={() => this.forceUpdate()} />
-        <InPageSearch updateSearchQuery={updateSearchQuery} queryCount={this.state.queryCount} />
+        <div id="inner-content">
+          <PreviousButton navigationExtension={navigationExtension} />
+          {amudim}
+          <NextButton navigationExtension={navigationExtension} />
+          <Preferences rerender={() => this.forceUpdate()} />
+        </div>
+        {!isFake && (
+          <SnackbarHost
+            updateSearchQuery={updateSearchQuery}
+            queryCount={this.state.queryCount} />)}
         <RootHooks />
       </>
     );
