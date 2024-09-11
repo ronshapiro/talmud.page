@@ -241,6 +241,7 @@ app.get("/:title/notes", (req, res) => {
 
 app.get("/daf-yomi", (req, res) => res.render("daf_yomi_redirector.html"));
 app.get("/yomi", (req, res) => res.redirectWithQueryParameters("/daf-yomi"));
+app.get("/last", (req, res) => res.render("last_redirecter.html"));
 
 class PagesDontExistError extends Error {
   constructor(book: Book, nonExistentPages: string[]) {

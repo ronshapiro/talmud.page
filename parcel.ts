@@ -17,14 +17,15 @@ if (fs.existsSync("./dist")) {
 const entryFiles = [
   "./templates/birkat_hamazon_page.html",
   "./templates/daf_yomi_redirector.html",
+  "./templates/draw.html",
   "./templates/homepage.html",
+  "./templates/last_redirecter.html",
   "./templates/mishna.html",
   "./templates/notes_redirecter.html",
+  "./templates/service_worker.html",
   "./templates/siddur_page.html",
   "./templates/talmud_page.html",
   "./templates/tanakh.html",
-  "./templates/draw.html",
-  "./templates/service_worker.html",
 ];
 
 const isProd = (() => {

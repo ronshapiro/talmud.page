@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>talmud.page | redirect to last page</title>
+  {% include "header_common.html" %}
+  <link rel="stylesheet" href="../css/homepage.css" />
+</head>
+<body>
+  <div id="main-contents">
+    <div id="center-content-container">
+      <div id="center-contents">
+        <h1>Loading your last visited page</h1>
+        <div id="progress-bar" class="mdl-progress mdl-js-progress mdl-progress__indeterminate">
+        </div>
+        <br />
+        <ul id="errors" hidden>
+          <li>Have you visited a page before?</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../js/last_redirecter.ts"></script>
+</html>
