@@ -424,7 +424,13 @@ class LinkGraph {
 }
 
 function textRequestEndpoint(ref: string): string {
-  return `/texts/${ref}?wrapLinks=0&commentary=0&context=0`;
+  const params = [
+    ["wrapLinks", "0"],
+    ["commentary", "0"],
+    ["context", "0"],
+    ["wrapNamedEntities", "1"],
+  ].map(pair => pair.join("=")).join("&");
+  return `/texts/${ref}?${params}`;
 }
 
 export class ApiException extends Error {
