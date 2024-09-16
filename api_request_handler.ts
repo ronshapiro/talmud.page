@@ -157,6 +157,8 @@ class Comment {
     const talmudPageLink = _internalLinkableRef?.toUrlPathname();
 
     if (englishName === "Shulchan Arukh") {
+      sourceRef = stripPossiblePrefix(sourceRef, "Shulchan Arukh, ");
+      sourceHeRef = stripPossiblePrefix(sourceHeRef, "שולחן ערוך, ");
       const subtitle = shulchanArukhChapterTitle(ref);
       if (subtitle) {
         sourceHeRef = `${sourceHeRef} - ${subtitle}`;
