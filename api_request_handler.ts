@@ -78,6 +78,11 @@ import {checkNotUndefined} from "./js/undefined";
 import {getWeekdayReading} from "./weekday_parshiot";
 import {ASERET_YIMEI_TESHUVA_REFS} from "./js/aseret_yimei_teshuva";
 
+const standardHebrewTransformations = sefariaTextTypeTransformation(
+  hebrew => (
+    HtmlNormalizer.process(SefariaLinkSanitizer.process(hebrew))
+  ));
+
 const standardEnglishTransformations = sefariaTextTypeTransformation(
   english => (
     HtmlNormalizer.process(
@@ -131,6 +136,7 @@ class Comment {
       [hebrew, english] = parseOtzarLaazeiRashi(hebrew as string);
     }
 
+    hebrew = standardHebrewTransformations(hebrew);
     hebrew = boldDibureiHamatchil(hebrew, englishName);
     hebrew = highlightRashiQuotations(hebrew);
     for (const processor of (
@@ -139,7 +145,7 @@ class Comment {
         CommentaryPrefixStripper,
         CommentaryParenthesesTransformer,
         ImageNumberingFormatter,
-        HtmlNormalizer])) {
+      ])) {
       hebrew = processor.process(hebrew, englishName);
     }
 
@@ -499,7 +505,8 @@ export abstract class AbstractApiRequestHandler {
 
   // eslint-disable-next-line  @typescript-eslint/no-unused-vars
   protected translateHebrewText(text: sefaria.TextType, ref: string): sefaria.TextType {
-    return sefariaTextTypeTransformation(this.replaceLotsOfNonBreakingSpacesWithNewlines)(text);
+    return standardHebrewTransformations(
+      sefariaTextTypeTransformation(this.replaceLotsOfNonBreakingSpacesWithNewlines)(text));
   }
 
   // eslint-disable-next-line  @typescript-eslint/no-unused-vars

@@ -31,7 +31,6 @@ export class SefariaLinkSanitizer extends HtmlVisitor {
       this.anchorStack.push("span");
     } else {
       this.anchorStack.push(false);
-      console.error("!!!!!!!!!!!!!!!!!!!!!!", attributes);
     }
   }
 
