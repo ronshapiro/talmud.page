@@ -162,9 +162,8 @@ class Comment {
 
     const talmudPageLink = _internalLinkableRef?.toUrlPathname();
 
+    [sourceRef, sourceHeRef] = Comment.maybeRewriteRefNames(englishName, sourceRef, sourceHeRef);
     if (englishName === "Shulchan Arukh") {
-      sourceRef = stripPossiblePrefix(sourceRef, "Shulchan Arukh, ");
-      sourceHeRef = stripPossiblePrefix(sourceHeRef, "שולחן ערוך, ");
       const subtitle = shulchanArukhChapterTitle(ref);
       if (subtitle) {
         sourceHeRef = `${sourceHeRef} - ${subtitle}`;
@@ -172,9 +171,6 @@ class Comment {
           hebrew = ShulchanArukhHeaderRemover.process(hebrew, englishName);
         }
       }
-    } else if (englishName === "Mishneh Torah") {
-      sourceRef = stripPossiblePrefix(sourceRef, "Mishneh Torah, ");
-      sourceHeRef = stripPossiblePrefix(sourceHeRef, "משנה תורה, ");
     }
 
     return new Comment(
@@ -188,6 +184,22 @@ class Comment {
       link.originalRefsBeforeRewriting,
       link.expandedRefsAfterRewriting,
     );
+  }
+
+  static maybeRewriteRefNames(
+    englishName: string, sourceRef: string, sourceHeRef: string,
+  ): [string, string] {
+    if (englishName === "Shulchan Arukh") {
+      sourceRef = stripPossiblePrefix(sourceRef, "Shulchan Arukh, ");
+      sourceHeRef = stripPossiblePrefix(sourceHeRef, "שולחן ערוך, ");
+    } else if (englishName === "Mishneh Torah") {
+      sourceRef = stripPossiblePrefix(sourceRef, "Mishneh Torah, ");
+      sourceHeRef = stripPossiblePrefix(sourceHeRef, "משנה תורה, ");
+    } else if (englishName === "Peninei Halakhah") {
+      sourceRef = stripPossiblePrefix(sourceRef, "Peninei Halakhah, ");
+      sourceHeRef = stripPossiblePrefix(sourceHeRef, "פניני הלכה, ");
+    }
+    return [sourceRef, sourceHeRef];
   }
 
   constructor(
