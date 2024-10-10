@@ -44,7 +44,11 @@ const findSefariaRef = (node: Node | null): FindSefariaRefReturnType => {
   let highlightId;
   while (node?.parentElement) {
     const $parentElement = $(node.parentElement);
-    isEnglish = isEnglish || $parentElement.hasClass("english");
+    console.log($parentElement);
+    isEnglish = (
+      isEnglish
+        || $parentElement.hasClass("english")
+        || $parentElement.hasClass("english-ref-text"));
     const isTranslationOfSourceText = $parentElement.hasClass("translation");
     const ref = $parentElement.attr("sefaria-ref");
     highlightId ||= $parentElement.attr("highlight-id");
@@ -142,6 +146,7 @@ class SelectionState {
     const selection = document.getSelection()!;
     this.selectedText = selection.toString().trim() ?? "";
     const {isEnglish, hebrew, translation} = this.sefariaRef;
+    console.log(isEnglish, translation, hebrew);
     const entireNodeAndText = isEnglish ? translation : hebrew;
     if (entireNodeAndText === undefined) {
       throw new Error(`Text is undefined: ${JSON.stringify(this.sefariaRef)}`);
