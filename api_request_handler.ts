@@ -77,6 +77,7 @@ import {hasMatchingProperty} from "./util/objects";
 import {checkNotUndefined} from "./js/undefined";
 import {getWeekdayReading} from "./weekday_parshiot";
 import {ASERET_YIMEI_TESHUVA_REFS} from "./js/aseret_yimei_teshuva";
+import {vagomer} from "./llm";
 
 const standardHebrewTransformations = sefariaTextTypeTransformation(
   hebrew => (
@@ -597,7 +598,7 @@ export abstract class AbstractApiRequestHandler {
           .then(() => linkGraph);
       }),
       ...this.extraPromises(),
-    ]).then(args => this.transformData(...args));
+    ]).then(args => this.transformData(...args)).then(x => vagomer(x));
   }
 
   protected extraPromises(): Promise<any>[] {
