@@ -1,0 +1,50 @@
+name: Deploy to GCP
+run-name: "Deploying to GCP"
+on:
+  push:
+    branches: [base]
+jobs:
+  gcp_deploy:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+
+    steps:
+    - uses: 'actions/checkout@v4'
+
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 20
+        cache: 'npm'
+        cache-dependency-path: package-lock.json
+
+    - run: 'npm install --no-audit'
+
+    - id: configure-sendgrid
+      env:
+        SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+      run: 'echo ${SENDGRID_API_KEY} > sendgrid_api_key'
+
+    - id: 'build'
+      run: 'npm run parcel-prod'
+
+    - id: 'auth'
+      # Note: make sure that the roles are configured in the IAM tab and not under the
+      # Service Accounts > Permissions page. This is confusing!
+      uses: 'google-github-actions/auth@v2'
+      env:
+        GCP_DEPLOY_SERVICE_ACCOUNT: ${{ secrets.GCP_DEPLOY_SERVICE_ACCOUNT }}
+      with:
+        project_id: 'talmud'
+        credentials_json: '${{ secrets.GCP_DEPLOY_SERVICE_ACCOUNT }}'
+
+    - id: 'verify-gcloud'
+      run: 'gcloud --version'
+
+    - id: 'verify-auth'
+      run: 'gcloud auth list'
+
+    - id: 'deploy'
+      uses: 'google-github-actions/deploy-appengine@v2'
