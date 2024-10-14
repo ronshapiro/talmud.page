@@ -28,7 +28,7 @@ For suggestions/questions, email feedback@talmud.page.
 
 ### Dependencies
 
-- Python 3.7
+- Python 3.11
     - To install Python dependencies, run
       `virtualenv venv && chmod +x venv/bin/activate && source venv/bin/activate && pip install -r requirements.txt`
 - `pre-commit`
