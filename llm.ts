@@ -63,10 +63,8 @@ const SAMPLE_VERSES = JSON.stringify([
   {hebrew: "בְּמַחֲשַׁכִּים הוֹשִׁיבַנִי לֹ֥א תִתֵּ֖ן מִכְשֹׁ֑ל", originatesFrom: "Nedarim 45a:5"},
 ]);
 
-async function makeRequest(
-  hebrew: string, ref: string, allVerses: AllVerses,
-): Promise<string | undefined> {
-  const prompt = [
+function makePrompt(hebrew: string, ref: string, allVerses: AllVerses): string {
+  return [
     "Below is a JSON structure representing Hebrew text that contains the phrase וגו׳ or וגו'.",
     "When that word occurs (sometimes within the quotation, sometimes directly after), it means that a biblical verse is quoted partially and that the verse ",
     "should be completed. The authors expected that the reader knows all biblical verses by ",
@@ -107,15 +105,21 @@ async function makeRequest(
     `  hebrew: "${SAMPLE_HEBREW_OUTPUT}"`,
     "}",
     "\n",
+    "Your output should be valid JSON.",
+    "\n",
     "Here is the example I want you to amend:",
     "\n",
     JSON.stringify({ref, hebrew, verses: allVerses}),
-    "\n",
-    "Your output should be valid JSON.",
-  ];
+  ].join("");
+}
 
-
-  let json = (await model.generateContent(prompt.join("")))?.response?.text();
+async function makeRequest(
+  hebrew: string, ref: string, allVerses: AllVerses,
+): Promise<string | undefined> {
+  const prompt = makePrompt(hebrew, ref, allVerses);
+  console.log(prompt);
+  return undefined;
+  let json = (await model.generateContent(prompt))?.response?.text();
   if (json === "") {
     console.log(">>>>>>>", ref, "empty response <<<<<<<<<<");
     return undefined;
@@ -133,6 +137,34 @@ async function makeRequest(
   return undefined;
 }
 
+async function makeRequestJamba(
+  hebrew: string, ref: string, allVerses: AllVerses,) {
+  // do not submit: Jamba doesn't seem to understand to ignore the verses field."םם
+  const prompt = makePrompt(hebrew, ref, allVerses);
+  const [systemPrompt, userPrompt] = prompt.split(/Here is the example/);
+  const response = await fetch("https://api.ai21.com/studio/v1/chat/completions", {
+    method: "POST",
+    headers: {
+      Authorization: "Bearer 41ZdeuFSEg7cc6Dt4a0fJwKAwdnrIJdG", // do not submit api key
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      model: "jamba-1.5-mini",
+      messages: [
+        {role: "system", content: systemPrompt},
+        {role: "user", content: "Here is the example" + userPrompt},
+      ],
+      temperature: 0.4,
+      top_p: .5,
+      response_format: {type: "json_object"},
+    }),
+  });
+  const result = await response?.json();
+  const parsed = JSON.parse(result.choices[0].message.content).hebrew; // do not submit: try parse
+  console.log(parsed);
+  return parsed;
+}
+
 export async function vagomer(response: ApiResponse): Promise<ApiResponse> {
   const allVerses = [];
   for (const section of response.sections) {
@@ -147,7 +179,7 @@ export async function vagomer(response: ApiResponse): Promise<ApiResponse> {
     const hebrew = section.he as string;
     if (hebrew.search(VAGOMER) === -1) continue;
 
-    const modelResponse = await makeRequest(hebrew, section.ref, allVerses);
+    const modelResponse = await makeRequestJamba(hebrew, section.ref, allVerses);
     if (modelResponse) {
       // do not submit: strip trope and also {ס}
       // do not submit: test that if the completions are removed, the text should be unchanged.
