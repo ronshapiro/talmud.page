@@ -870,6 +870,7 @@ export abstract class AbstractApiRequestHandler {
     const indexed = new ListMultimap<string, string>();
     const extensions: Record<string, string> = {
       /* eslint-disable quote-props */
+      "Mishna": "&ven=Open Mishnah",
       "Tanakh": "&ven=Tanakh: The Holy Scriptures, published by JPS",
       "Standard": "",
       /* eslint-enable quote-props */
@@ -878,6 +879,9 @@ export abstract class AbstractApiRequestHandler {
       const title = ref.slice(0, ref.lastIndexOf(" "));
       if (books.byCanonicalName[title]?.isBibleBook()) {
         indexed.put("Tanakh", ref);
+      } else if (title.startsWith("Mishnah ")
+        && title.slice("Mishnah ".length) in books.byCanonicalName) {
+        indexed.put("Mishna", ref);
       } else {
         indexed.put("Standard", ref);
       }
