@@ -31,6 +31,10 @@
 
 <link rel="stylesheet" href="/css/{{random_hash}}/main.css" />
 <link rel="stylesheet" href="/css/{{random_hash}}/darkMode.css" id="darkModeCss"/>
+{% if debug %}
+<link rel="stylesheet" href="/css/{{random_hash}}/debug.css" />
+{% endif %}
+
 <script>
   document.getElementById("darkModeCss").disabled = localStorage.darkMode !== "true";
 </script>

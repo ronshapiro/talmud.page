@@ -175,6 +175,26 @@ export function Preferences({rerender}: PreferencesViewParams): React.ReactEleme
       rerender={rerender}
       localStorageKeyName="offlineMode" />,
   ];
+  if (window.location.host.startsWith("localhost")) {
+    options.push(
+      <PreferenceSection
+        title="Disable client-side API caching"
+        items={[
+          {value: "true", displayText: "Yes"},
+          {value: "false", displayText: "No"},
+        ]}
+        rerender={rerender}
+        localStorageKeyName="ignoreLocalCache" />,
+      <PreferenceSection
+        title="Disable next/previous page precaching"
+        items={[
+          {value: "true", displayText: "Yes"},
+          {value: "false", displayText: "No"},
+        ]}
+        rerender={rerender}
+        localStorageKeyName="disablePrecaching" />,
+    );
+  }
   const preferencesIndex = new LocalStorageInt("preferencesIndex");
   const [currentIndex, setIndexPrivate] = useState(preferencesIndex.get() || 0);
   const setIndex = (newIndex: number) => {

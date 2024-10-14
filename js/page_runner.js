@@ -172,6 +172,7 @@ export class Runner {
   }
 
   preloadNextSection() {
+    if (localStorage.disablePrecaching === "true") return;
     if (this.renderer.navigationExtension.hasNext()) {
       this.requestQueue.add(
         () => this.getAndCacheSection(this.renderer.navigationExtension.next()));
@@ -196,6 +197,7 @@ export class Runner {
   }
 
   preloadPreviousSection() {
+    if (localStorage.disablePrecaching === "true") return;
     if (this.renderer.navigationExtension.hasPrevious()) {
       this.requestQueue.add(
         () => this.getAndCacheSection(this.renderer.navigationExtension.previous()));

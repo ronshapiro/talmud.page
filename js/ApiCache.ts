@@ -30,6 +30,9 @@ export class ApiCache extends AbstractIndexedDb {
   }
 
   get(ref: string): Promise<any> {
+    if (localStorage.ignoreLocalCache === "true") {
+      return Promise.reject();
+    }
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [promise, onSuccess, onFailure] = promiseParts();
     return this.whenDbReady.then(() => {
