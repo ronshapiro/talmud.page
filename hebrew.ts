@@ -96,3 +96,9 @@ export function stripHebrewNonlettersOrVowels(text: string): string {
       .replace(/<small><\/small>/g, "") // sometimes the after-effect of replacing a paseq
   );
 }
+
+export function stripTanakhGapIndicators(text: string): string {
+  return text
+    .replace(/\s?<span class="mam-spi-pe">{פ}<\/span>(<br ?\/?>)?/g, "")
+    .replace(/\s?<span class="mam-spi-samekh">{ס}<\/span>\s*/g, "");
+}

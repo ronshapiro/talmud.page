@@ -10,7 +10,13 @@ import {Book, books, internalLinkableRef} from "./books";
 import {ALL_COMMENTARIES, CommentaryType} from "./commentaries";
 import {readUtf8} from "./files";
 import {hadranSegments, isHadran} from "./hadran";
-import {stripHebrewNonlettersOrVowels, intToHebrewNumeral, ALEPH, TAV} from "./hebrew";
+import {
+  intToHebrewNumeral,
+  stripHebrewNonlettersOrVowels,
+  stripTanakhGapIndicators,
+  ALEPH,
+  TAV,
+} from "./hebrew";
 import {Logger, consoleLogger} from "./logger";
 import {mergeRefs} from "./ref_merging";
 import {refSorter} from "./js/google_drive/ref_sorter";
@@ -598,7 +604,7 @@ export abstract class AbstractApiRequestHandler {
           .then(() => linkGraph);
       }),
       ...this.extraPromises(),
-    ]).then(args => this.transformData(...args)).then(x => vagomer(x));
+    ]).then(args => this.transformData(...args)).then(x => vagomer(x, this.logger));
   }
 
   protected extraPromises(): Promise<any>[] {
@@ -1427,16 +1433,10 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
     return HEBREW_SECTION_NAMES[this.page];
   }
 
-  stripWeirdHebrew(hebrew: string): string {
-    return hebrew
-      .replace(/\s?<span class="mam-spi-pe">{פ}<\/span>(<br ?\/?>)?/g, "")
-      .replace(/\s?<span class="mam-spi-samekh">{ס}<\/span>\s*/g, "");
-  }
-
   protected translateHebrewText(text: sefaria.TextType, ref: string): sefaria.TextType {
     const transformations = [
       (t: sefaria.TextType) => super.translateHebrewText(t, ref),
-      sefariaTextTypeTransformation(this.stripWeirdHebrew),
+      sefariaTextTypeTransformation(stripTanakhGapIndicators),
     ];
     if (!KEEP_TROPE_REFS.has(ref)) {
       transformations.push(sefariaTextTypeTransformation(stripHebrewNonlettersOrVowels));

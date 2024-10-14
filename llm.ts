@@ -1,12 +1,17 @@
-import {GoogleGenerativeAI} from "@google/generative-ai";
+import {
+  GoogleGenerativeAI,
+  GenerativeModel,
+  GenerateContentResult,
+  SchemaType,
+} from "@google/generative-ai";
 import {ApiResponse} from "./apiTypes";
-import {hebrewSearchRegex} from "./hebrew";
+import {hebrewSearchRegex, stripHebrewNonlettersOrVowels, stripTanakhGapIndicators} from "./hebrew";
 import {checkNotUndefined} from "./js/undefined";
+import {sefariaTextTypeTransformation} from "./sefariaTextType";
+import {Logger} from "./logger";
 
 const VAGOMER = checkNotUndefined(hebrewSearchRegex("(וגו[׳'])", true));
-const API_KEY = checkNotUndefined(process.env.GEMINI_API_KEY);
-const genAI = new GoogleGenerativeAI(API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+const GEMINI_API_KEY = checkNotUndefined(process.env.GEMINI_API_KEY, "GEMINI_API_KEY");
 
 type AllVerses = any; // do not submit
 
@@ -92,18 +97,18 @@ function makePrompt(hebrew: string, ref: string, allVerses: AllVerses): string {
     "Whenever you detect a quotation, include the entire rest of the verse right after the ",
     "corresponding instance of וגו.",
     "\n",
-    "Here is an example:\n",
-    "{",
-    '  ref: "Nedarim 45a:4",',
-    `  hebrew: "${SAMPLE_HEBREW_INPUT}",`,
-    `  verses: [${SAMPLE_VERSES}]`,
-    "}",
+    "Here is an example:",
+    "\n{",
+    '\n  ref: "Nedarim 45a:4",',
+    `\n  hebrew: "${SAMPLE_HEBREW_INPUT}",`,
+    `\n  verses: [${SAMPLE_VERSES}]`,
+    "\n}",
     "\n",
     "Should return:\n",
-    "{",
-    '  ref: "Nedarim 45a:4",',
-    `  hebrew: "${SAMPLE_HEBREW_OUTPUT}"`,
-    "}",
+    "\n{",
+    '\n  ref: "Nedarim 45a:4",',
+    `\n  hebrew: "${SAMPLE_HEBREW_OUTPUT}"`,
+    "\n}",
     "\n",
     "Your output should be valid JSON.",
     "\n",
@@ -113,78 +118,143 @@ function makePrompt(hebrew: string, ref: string, allVerses: AllVerses): string {
   ].join("");
 }
 
-async function makeRequest(
-  hebrew: string, ref: string, allVerses: AllVerses,
-): Promise<string | undefined> {
-  const prompt = makePrompt(hebrew, ref, allVerses);
-  console.log(prompt);
-  return undefined;
-  let json = (await model.generateContent(prompt))?.response?.text();
-  if (json === "") {
-    console.log(">>>>>>>", ref, "empty response <<<<<<<<<<");
-    return undefined;
+abstract class LanguageModel {
+  async makeRequest(
+    hebrew: string, ref: string, allVerses: AllVerses, logger: Logger,
+  ): Promise<string | undefined> {
+    const prompt = makePrompt(hebrew, ref, allVerses);
+    const response = await this.executePrompt(prompt, ref, logger);
+    if (response === undefined) return undefined;
+
+    try {
+      return JSON.parse(response).hebrew;
+    } catch (e: any) {
+      logger.error("Invalid json", response);
+      if (e.toString().includes("at position")) {
+        const position = parseInt(e.toString().split("at position")[1]);
+        logger.error(">>", response.slice(position, position + 1));
+      }
+      return undefined;
+    }
   }
-  console.log("^^^^^^^^^^^", ref);
-  if (!json) return undefined;
-  if (json && json.startsWith("```json") && json.endsWith("```")) {
-    json = json.slice(7, -3)
-  }
-  if (json) {
-    const parsed = JSON.parse(json); // do not submit: check parse
-    if (parsed.hebrew === hebrew) console.log("!!!!!!!!! same\n\n");
-    return parsed.hebrew;
-  }
-  return undefined;
+
+  abstract executePrompt(
+    prompt: string, ref: string, logger: Logger,
+  ): Promise<string | undefined>;
 }
 
-async function makeRequestJamba(
-  hebrew: string, ref: string, allVerses: AllVerses,) {
-  // do not submit: Jamba doesn't seem to understand to ignore the verses field."םם
-  const prompt = makePrompt(hebrew, ref, allVerses);
-  const [systemPrompt, userPrompt] = prompt.split(/Here is the example/);
-  const response = await fetch("https://api.ai21.com/studio/v1/chat/completions", {
-    method: "POST",
-    headers: {
-      Authorization: "Bearer 41ZdeuFSEg7cc6Dt4a0fJwKAwdnrIJdG", // do not submit api key
-      "Content-Type": "application/json",
+class Gemini extends LanguageModel {
+  constructor(readonly model: GenerativeModel) { super(); }
+
+  async modelRequest(prompt: string, logger: Logger): Promise<GenerateContentResult | undefined> {
+    try {
+      return this.model.generateContent(prompt);
+    } catch (e) {
+      logger.error(e);
+      return undefined;
+    }
+  }
+
+  async executePrompt(
+    prompt: string, ref: string, logger: Logger,
+  ): Promise<string | undefined> {
+    const result = await this.modelRequest(prompt, logger);
+    const json = result?.response?.text();
+    return json === "" ? undefined : json;
+  }
+}
+
+class Jamba extends LanguageModel {
+  constructor(readonly modelName: string) { super(); }
+
+  async executePrompt(
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    prompt: string, ref: string, logger: Logger,
+  ): Promise<string | undefined> {
+    const [systemPrompt, userPrompt] = prompt.split(/Here is the example/);
+    const response = await fetch("https://api.ai21.com/studio/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        Authorization: "Bearer 41ZdeuFSEg7cc6Dt4a0fJwKAwdnrIJdG", // do not submit api key
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        model: this.modelName,
+        messages: [
+          {role: "system", content: systemPrompt},
+          {role: "user", content: "Here is the example" + userPrompt},
+        ],
+        temperature: 0.4,
+        top_p: .5,
+        response_format: {type: "json_object"},
+      }),
+    });
+    const result = await response?.json();
+    return result.choices[0].message.content;
+  }
+}
+
+function cleanVerseTextBase(hebrew: string): string {
+  hebrew = stripTanakhGapIndicators(hebrew);
+  hebrew = stripHebrewNonlettersOrVowels(hebrew);
+  if (hebrew.endsWith(":") || hebrew.endsWith("׃")) {
+    hebrew = hebrew.slice(0, -1);
+  }
+  return hebrew;
+}
+const cleanVerseText = sefariaTextTypeTransformation(cleanVerseTextBase);
+
+const languageModel = (() => {
+  if (Math.random() === .12345678901234) return new Jamba("jamba-1.5-mini");
+
+  const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
+  const model = genAI.getGenerativeModel({
+    model: "gemini-1.5-flash",
+    generationConfig: {
+      candidateCount: 1, // More than 1 is not available for Flash
+      temperature: .4,
+      responseMimeType: "application/json",
+      responseSchema: {
+        type: SchemaType.OBJECT,
+        properties: {
+          ref: {type: SchemaType.STRING, description: "The ref value provided in the input."},
+          hebrew: {type: SchemaType.STRING, description: "The rewritten text"},
+        },
+      },
     },
-    body: JSON.stringify({
-      model: "jamba-1.5-mini",
-      messages: [
-        {role: "system", content: systemPrompt},
-        {role: "user", content: "Here is the example" + userPrompt},
-      ],
-      temperature: 0.4,
-      top_p: .5,
-      response_format: {type: "json_object"},
-    }),
   });
-  const result = await response?.json();
-  const parsed = JSON.parse(result.choices[0].message.content).hebrew; // do not submit: try parse
-  console.log(parsed);
-  return parsed;
-}
+  return new Gemini(model);
+})();
 
-export async function vagomer(response: ApiResponse): Promise<ApiResponse> {
+export async function vagomer(response: ApiResponse, logger: Logger): Promise<ApiResponse> {
   const allVerses = [];
   for (const section of response.sections) {
     if (section.commentary?.Verses) {
       for (const comment of section.commentary.Verses.comments) {
-        allVerses.push({hebrew: comment.he, originatesFrom: section.ref});
+        // do not submit: need to handle non-single verses
+        allVerses.push({hebrew: cleanVerseText(comment.he), originatesFrom: section.ref});
       }
     }
   }
 
+  const promises: Promise<any>[] = [];
   for (const section of response.sections) {
     const hebrew = section.he as string;
     if (hebrew.search(VAGOMER) === -1) continue;
 
-    const modelResponse = await makeRequestJamba(hebrew, section.ref, allVerses);
-    if (modelResponse) {
-      // do not submit: strip trope and also {ס}
-      // do not submit: test that if the completions are removed, the text should be unchanged.
-      section.he = modelResponse;
-    }
+    const promise = languageModel.makeRequest(hebrew, section.ref, allVerses, logger)
+      .then(modelResponse => {
+        if (modelResponse) {
+          // do not submit: test that if the completions are removed, the text should be unchanged.
+          section.he = modelResponse;
+        }
+        return "done";
+      });
+    promises.push(promise);
+  }
+  const promiseResults = await Promise.allSettled(promises);
+  for (const result of promiseResults) {
+    if (result.status === "rejected") logger.error(result.reason);
   }
   return response;
 }
