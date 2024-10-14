@@ -1,8 +1,11 @@
 name: Deploy to GCP
 run-name: "Deploying to GCP"
 on:
-  push:
+  workflow_run:
     branches: [base]
+    workflows: ["Tests"]
+    types: [completed]
+
 jobs:
   gcp_deploy:
     runs-on: ubuntu-latest
