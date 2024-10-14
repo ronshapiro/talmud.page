@@ -1,5 +1,5 @@
 name: Tests
-run-name: "Tests: ${{ github.event.head_commit.message }}"
+run-name: "[Tests] ${{ github.event.head_commit.message }}"
 
 on:
   pull_request:

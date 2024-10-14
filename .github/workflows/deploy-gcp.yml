@@ -1,5 +1,6 @@
 name: Deploy to GCP
-run-name: "Deploying to GCP"
+run-name: "[Deploy] ${{ github.event.head_commit.message }}"
+
 on:
   workflow_run:
     branches: [base]
