@@ -1,4 +1,5 @@
 import * as express from "express";
+import * as expressWebsocketSetup from "express-ws";
 import * as fs from "fs";
 import * as http from "http";
 import {JewishCalendar} from "kosher-zmanim";
@@ -31,7 +32,8 @@ import {jsonSize} from "./util/json_size";
 import {writeJson} from "./util/json_files";
 import {getWeekdayReading} from "./weekday_parshiot";
 
-const app = express();
+const {app} = expressWebsocketSetup(express());
+
 const debug = app.settings.env === "development";
 
 // Server AND Client side precaching will lead to double precaching on the server. That seems
@@ -123,6 +125,7 @@ app.use((req, res, next) => {
 
   next();
 });
+
 
 function sendLazyStaticFile(res: express.Response, file: string) {
   res.sendFile(file, {
@@ -290,6 +293,12 @@ function template(book: Book): string {
   }
   return "tanakh.html";
 }
+
+app.ws("/websocket", (socket, _) => {
+  socket.on("message", message => {
+    socket.send(message + " >> " + message);
+  });
+});
 
 app.get("/:title/:section", (req, res) => {
   const {title, section} = req.params;
