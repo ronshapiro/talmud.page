@@ -29,10 +29,8 @@ const entryFiles = [
 ];
 
 const isProd = (() => {
-  console.error("argv", process.argv);
   switch (process.argv[2]) {
     case "prod":
-      console.error("sendgrid_api_key existence:", fs.existsSync("sendgrid_api_key"));
       if (!fs.existsSync("sendgrid_api_key")) {
         throw new Error("Could not find sendgrid_api_key file, which is necessary to deploy.");
       }
