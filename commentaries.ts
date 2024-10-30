@@ -320,4 +320,10 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     hebrewName: "שטיינזלץ",
     className: "translation",
   },
+  {
+    englishName: "Topics",
+    hebrewName: "נושאים",
+    className: "topics",
+    showTitle: true,
+  },
 ];

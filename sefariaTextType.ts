@@ -35,3 +35,11 @@ export function equalJaggedArrays(hebrew: sefaria.TextType, english: sefaria.Tex
 
   return hebrew === english;
 }
+
+export function flatten(textType: sefaria.TextType): string | undefined {
+  if (!textType) return undefined;
+  if (typeof textType === "string") {
+    return textType;
+  }
+  return textType.flat(Infinity).join("\n");
+}

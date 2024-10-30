@@ -43,4 +43,22 @@ declare namespace sefaria {
   }
 
   export type BulkTextResponse = Record<string, BulkTextValue>;
+
+  interface TopicTitle {
+    lang: string;
+    text: string;
+    primary: boolean;
+  }
+
+  interface HebrewEnglish {
+    he: string;
+    en: string;
+  }
+
+  interface Topic {
+    titles: TopicTitle[];
+    primaryTitle: HebrewEnglish;
+    description?: HebrewEnglish;
+    slug: string;
+  }
 }

@@ -1,5 +1,7 @@
+/* eslint-disable @typescript-eslint/no-use-before-define */
 import {JewishCalendar} from "kosher-zmanim";
 import * as _ from "underscore";
+import {Converter as MarkdownConverter} from 'showdown';
 import {
   ApiResponse,
   CommentaryMap,
@@ -10,7 +12,12 @@ import {Book, books, internalLinkableRef} from "./books";
 import {ALL_COMMENTARIES, CommentaryType} from "./commentaries";
 import {readUtf8} from "./files";
 import {hadranSegments, isHadran} from "./hadran";
-import {stripHebrewNonlettersOrVowels, intToHebrewNumeral, ALEPH, TAV} from "./hebrew";
+import {
+  stripHebrewNonlettersOrVowels,
+  intToHebrewNumeral,
+  ALEPH,
+  TAV,
+} from "./hebrew";
 import {Logger, consoleLogger} from "./logger";
 import {mergeRefs} from "./ref_merging";
 import {refSorter} from "./js/google_drive/ref_sorter";
@@ -21,12 +28,14 @@ import {
   shulchanArukhChapterTitle,
   segmentCount,
 } from "./precomputed";
+import {dedupeEnglishRabbiNames, dedupeHebrewRabbiNames, topicJson} from "./precomputed/topics";
 import {expandRef} from "./ref_expander";
 import {splitOnBookName} from "./refs";
 import {RequestMaker} from "./request_makers";
 import {
   equalJaggedArrays,
   firstOrOnlyElement,
+  flatten,
   sefariaTextTypeTransformation,
 } from "./sefariaTextType";
 import {
@@ -70,6 +79,7 @@ import {JastrowReformatter} from "./source_formatting/jastrow";
 import {parseOtzarLaazeiRashi} from "./source_formatting/otzar_laazei_rashi";
 import {SectionSymbolRemover} from "./source_formatting/section_symbol";
 import {SefariaLinkSanitizer} from "./source_formatting/sefaria_link_sanitizer";
+import {SefariaTopicCollector} from "./source_formatting/sefaria_topic_collector";
 import {ShulchanArukhHeaderRemover} from "./source_formatting/shulchan_arukh_remove_header";
 import {isPehSectionEnding, transformTanakhSpacing} from "./source_formatting/tanakh_spacing";
 import {formatDafInHebrew} from "./talmud";
@@ -77,6 +87,8 @@ import {hasMatchingProperty} from "./util/objects";
 import {checkNotUndefined} from "./js/undefined";
 import {getWeekdayReading} from "./weekday_parshiot";
 import {ASERET_YIMEI_TESHUVA_REFS} from "./js/aseret_yimei_teshuva";
+
+const markdown = new MarkdownConverter();
 
 const standardHebrewTransformations = sefariaTextTypeTransformation(
   hebrew => (
@@ -256,6 +268,11 @@ class InternalCommentary {
     }
     this.refs.add(comment.ref);
     this.comments.push(comment);
+
+    for (const topicComment of extractTopicComments(
+      flatten(comment.hebrew) ?? "", flatten(comment.english) ?? "")) {
+      this.nestedCommentary(comment.ref).addComment(topicComment);
+    }
   }
 
   nestedCommentary(parentRef: string) {
@@ -968,6 +985,9 @@ export abstract class AbstractApiRequestHandler {
           segment.commentary.addComment(
             Comment.create(Comment.fakeTextLink, footnote, "Footnotes", this.logger));
         }
+        for (const topicComment of extractTopicComments(currentHebrew, currentEnglish)) {
+          segment.commentary.addComment(topicComment);
+        }
         segments.push(segment);
       }
     }
@@ -1116,6 +1136,40 @@ export abstract class AbstractApiRequestHandler {
   protected book(): Book {
     return books.byCanonicalName[this.bookName];
   }
+}
+
+function extractTopicComments(hebrew: string, english: string): Comment[] {
+  const topicCollector = new SefariaTopicCollector();
+  topicCollector.processSingle(hebrew);
+  topicCollector.processSingle(english);
+
+  const result = [];
+  for (const topic of Array.from(topicCollector.entities).map(topicJson)) {
+    const description = (lang: "he" | "en") => {
+      let otherTitles = topic.titles.filter(x => x.lang === lang).map(x => x.text);
+      const deduper = lang === "he" ? dedupeHebrewRabbiNames : dedupeEnglishRabbiNames;
+      otherTitles = deduper(otherTitles);
+      otherTitles = otherTitles.filter(x => deduper([x, topic.primaryTitle[lang]]).length === 2);
+
+      let desc = markdown.makeHtml(
+        topic.description?.[lang] ?? "").replace(/^<p>/, "").replace(/<\/p>$/, "");
+      if (otherTitles.length > 0) {
+        if (desc.length > 0) desc += "<br />";
+        const aka = lang === "en" ? "a.k.a." : "גם נקרא";
+        desc += `${aka}: ${otherTitles.join(", ")}`;
+      }
+      return desc;
+    };
+    result.push(
+      new Comment(
+        "Topics",
+        description("he"),
+        description("en"),
+        `topics/${topic.slug}`,
+        topic.primaryTitle.en,
+        topic.primaryTitle.he));
+  }
+  return result;
 }
 
 enum RemovalStrategy {

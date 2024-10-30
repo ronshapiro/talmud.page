@@ -5,14 +5,7 @@ import {cachedOutputFilePath} from "./cached_outputs";
 import {ListMultimap} from "./multimap";
 import {readUtf8} from "./files";
 import {splitOnBookName} from "./refs";
-
-function flatten(textType: sefaria.TextType): string | undefined {
-  if (!textType) return undefined;
-  if (typeof textType === "string") {
-    return textType;
-  }
-  return textType.flat(Infinity).join("\n");
-}
+import {flatten} from "./sefariaTextType";
 
 function skipRef(ref: string): boolean {
   if (ref.startsWith("Footnote")
