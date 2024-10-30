@@ -479,6 +479,10 @@ app.get('/sitemap.xml', (req, res) => {
     .send(new Sitemap(`https://${req.hostname}`).generate());
 });
 
+console.log("realpath", fs.realpathSync("."))
+console.log("ls .", fs.readdirSync("."))
+console.log("ls ..", fs.readdirSync(".."))
+console.log("Sendgrid api key exists?", fs.existsSync("sendgrid_api_key"));
 if (fs.existsSync("sendgrid_api_key")) {
   sendgrid.setApiKey(fs.readFileSync("sendgrid_api_key", {encoding: "utf-8"}));
   app.post("/corrections", async (req, res) => {
