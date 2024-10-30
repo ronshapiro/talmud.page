@@ -29,6 +29,7 @@ import {
   segmentCount,
 } from "./precomputed";
 import {dedupeEnglishRabbiNames, dedupeHebrewRabbiNames, topicJson} from "./precomputed/topics";
+import {llmGeneratedTopic} from "./precomputed/tanakh_context_cache";
 import {expandRef} from "./ref_expander";
 import {splitOnBookName} from "./refs";
 import {RequestMaker} from "./request_makers";
@@ -182,6 +183,19 @@ class Comment {
         if (ref.endsWith(":1")) {
           hebrew = ShulchanArukhHeaderRemover.process(hebrew, englishName);
         }
+      }
+    }
+
+    if (englishName === "Verses") {
+      const llmResult = llmGeneratedTopic(ref);
+      if (llmResult === undefined) {
+        // TODO: this happens for spanned refs!
+        logger.error("No result for", ref);
+      } else if (typeof llmResult === "string") {
+        logger.error("Error result for", ref, llmResult);
+      } else {
+        sourceRef += " - " + llmResult.english;
+        sourceHeRef += " - " + llmResult.hebrew;
       }
     }
 
