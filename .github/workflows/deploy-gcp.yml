@@ -28,7 +28,7 @@ jobs:
     - id: configure-sendgrid
       env:
         SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
-      run: 'echo ${SENDGRID_API_KEY} > sendgrid_api_key'
+      run: 'echo -n ${SENDGRID_API_KEY} > sendgrid_api_key'
 
     - id: 'build'
       run: 'npm run parcel-prod'
