@@ -194,7 +194,7 @@ export function SnackbarHost({
   };
 
   const elements = [
-    <div id="showSearch">
+    <div id="showSearch" key="showSearch">
       {button("search", onSearchShowHideClick)}
       {isShowing && canAddMoreColors ? button("add", () => addNewSearch()) : null}
     </div>,
@@ -211,7 +211,7 @@ export function SnackbarHost({
         content={contentsByColor[color] || ""}
         setContent={(newContent) => setContentForColor(color, newContent)}
         />));
-    elements.push(<div id="snackbars">{actualSnackbars}</div>);
+    elements.push(<div id="snackbars" key="snackbars">{actualSnackbars}</div>);
     /* eslint-enable @typescript-eslint/no-use-before-define */
   }
 
