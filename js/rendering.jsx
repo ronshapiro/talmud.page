@@ -31,6 +31,7 @@ import {
 import {mergeCommentaries} from "./mergeCommentaries.ts";
 import {Preferences} from "./Preferences.tsx";
 import {SnackbarHost} from "./SnackbarReact.tsx";
+import {Keybindings} from "./Keybindings";
 
 const JSX_NOOP = null;
 
@@ -848,9 +849,13 @@ class Root extends Component {
           <Preferences rerender={() => this.forceUpdate()} />
         </div>
         {!isFake && (
-          <SnackbarHost
-            updateSearchQuery={updateSearchQuery}
-            queryCount={this.state.queryCount} />)}
+          <>
+            <SnackbarHost
+              updateSearchQuery={updateSearchQuery}
+              queryCount={this.state.queryCount} />
+            <Keybindings />
+          </>
+        )}
         <RootHooks />
       </>
     );

@@ -3,14 +3,13 @@ import ContentEditable from "react-contenteditable";
 import {animated, useSpring} from "@react-spring/web";
 import {useConfiguration} from "./context";
 import {useHtmlRef} from "./hooks";
-import {$} from "./jquery";
 import {sanitizeHtml} from "../source_formatting/html_sanitization_web";
 import {NullaryFunction} from "./types";
+import {useScrollTo} from "./useScrollTo";
 
 const {
   useCallback,
   useEffect,
-  useMemo,
   useRef,
   useState,
 } = React;
@@ -82,38 +81,11 @@ function unescapeHtml(text: string): string {
   );
 }
 
-function useArrayStateBackedByLength<T>(array: T[]): [T[], (array: T[]) => void] {
-  // React treats all setState(<array>) as updates, even if the contents have not changed (test with
-  // `setX([1])`: this will loop infinitely). As a workaround, if the order and elements of the
-  // state is stable, the length can be used as the actual state and the contents can be stored in a
-  // Ref.
-  const ref = useRef(array);
-  const setLength = useState(0)[1];
-  return [ref.current, (newArray: T[]) => {
-    ref.current = newArray;
-    setLength(newArray.length);
-  }];
-}
-
 type UpdateSearchQuery = (key: string, query: string, asRegex: boolean | undefined) => void;
 
 interface SearchProps {
   queryCount: number;
   updateSearchQuery: UpdateSearchQuery;
-}
-
-const CURRENT_MATCH_UNSET = -200;
-function computeNextMatchIndex(currentIndex: number, diff: number, maxIndex: number): number {
-  if (currentIndex === CURRENT_MATCH_UNSET) {
-    return diff === 1 ? 0 : maxIndex - 1;
-  }
-  const newIndex = currentIndex + diff;
-  if (newIndex < 0) {
-    return maxIndex - 1;
-  } else if (newIndex === maxIndex) {
-    return 0;
-  }
-  return newIndex;
 }
 
 const COLORS = ["yellow", "purple", "green", "red", "blue", "gray"];
@@ -239,17 +211,16 @@ function IndividualSearchRow({
     setLocalContent(newContent);
   };
   const contentEditableRef = useHtmlRef<HTMLElement>();
+  const scrolling = useScrollTo(`.foundTerm.${color}`);
+  const {matches, currentMatch, scrollToDiffedIndex} = scrolling;
+
   const [asRegex, setAsRegexBase] = useState(false);
-  const [currentMatch, setCurrentMatch] = useState(CURRENT_MATCH_UNSET);
-  const [currentMatchedView, setCurrentMatchedView] = useState(undefined);
-  const [matches, setMatches] = useArrayStateBackedByLength([]);
   const updateRegex = useCallback((overrideAsRegexValue?: boolean) => {
     const newText = unescapeHtml(sanitizeHtml(contentEditableRef.current.innerHTML).trim());
     setContent(newText);
     const asRegexValue = overrideAsRegexValue !== undefined ? overrideAsRegexValue : asRegex;
     updateSearchQuery(color, newText.trim(), asRegexValue);
-    setCurrentMatch(CURRENT_MATCH_UNSET);
-    setCurrentMatchedView(undefined);
+    scrolling.clearState();
   }, [asRegex]);
   const setAsRegex = (value: boolean) => {
     setAsRegexBase(value);
@@ -266,12 +237,7 @@ function IndividualSearchRow({
 
   const isEnglish = useIsEnglish();
 
-  useEffect(() => {
-    setMatches(Array.from($(`.foundTerm.${color}`)));
-  });
-
   const closeSnackbarRef = useRef<CloseSnackbarFn>();
-
   const onClear = () => {
     if (content.length === 0) {
       closeSnackbarRef.current!().then(() => removeSearch());
@@ -280,13 +246,6 @@ function IndividualSearchRow({
       updateSearchQuery(color, "", undefined);
     }
   };
-
-  useMemo(() => {
-    if (currentMatchedView) {
-      const newIndex = matches.indexOf(currentMatchedView);
-      setCurrentMatch(newIndex === -1 ? CURRENT_MATCH_UNSET : newIndex);
-    }
-  }, [matches.length]);
 
   const children = [
     <SnackbarButton key="clear" onClick={() => onClear()}>
@@ -302,20 +261,13 @@ function IndividualSearchRow({
       onChange={() => updateRegex()} />,
   ];
 
-  const currentMatchText = currentMatch === CURRENT_MATCH_UNSET ? "" : (currentMatch + 1).toString();
+  const currentMatchText = currentMatch === undefined ? "" : (currentMatch + 1).toString();
   const matchCounterText = (
-    matches.length > 0
-      ? <span key="c" className="searchMatchCounter">{currentMatchText} / {matches.length}</span>
+    matches > 0
+      ? <span key="c" className="searchMatchCounter">{currentMatchText} / {matches}</span>
       : null
   );
-  const disabled = matches.length <= 1;
-  const scrollToDiffedIndex = (diff: number) => {
-    const newIndex = computeNextMatchIndex(currentMatch, diff, matches.length);
-    setCurrentMatch(newIndex);
-    const newMatchedView = matches[newIndex];
-    setCurrentMatchedView(newMatchedView);
-    $("html, body").animate({scrollTop: $(newMatchedView).offset().top}, 0);
-  };
+  const disabled = matches <= 1;
 
   children.push(
     <span key="buttons">
