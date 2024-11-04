@@ -63,7 +63,7 @@ function isMissingSteinsaltz(segment: Section) {
   return !("Steinsaltz" in segment.commentary);
 }
 
-for (const book of Array.from(new Set(Object.values(books.byCanonicalName)))) {
+for (const book of new Set(Object.values(books.byCanonicalName))) {
   if (!book.isTalmud()) continue;
   if (book.canonicalName === "Shekalim") continue;
 
@@ -91,7 +91,7 @@ for (const book of Array.from(new Set(Object.values(books.byCanonicalName)))) {
     }
   };
 
-  for (const section of Array.from(book.sections)) {
+  for (const section of book.sections) {
     const result = JSON.parse(
       fs.readFileSync(cachedOutputFilePath(book, section), {encoding: "utf-8"})) as Amud;
 

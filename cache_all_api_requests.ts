@@ -52,9 +52,9 @@ for (let i = 0; i < 100; i++) {
 }
 
 let i = 0;
-for (const book of Array.from(new Set(Object.values(books.byCanonicalName)))) {
+for (const book of new Set(Object.values(books.byCanonicalName))) {
   if (book.canonicalName === "Shekalim") continue;
-  for (const section of Array.from(book.sections)) {
+  for (const section of book.sections) {
     const filePath = cachedOutputFilePath(book, section);
     if (fs.existsSync(filePath)) continue;
     const promiseChain = promiseChains[i % promiseChains.length];

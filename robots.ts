@@ -23,7 +23,7 @@ export class Sitemap {
       if (book.bookType() === "Siddur") {
         sections.push(this.pageXml(canonicalName));
       } else {
-        for (const section of Array.from(book.sections)) {
+        for (const section of book.sections) {
           sections.push(this.pageXml(`${canonicalName}/${section}`));
         }
       }

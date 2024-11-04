@@ -273,7 +273,7 @@ export async function llmMain(): Promise<void> {
   const result: Record<string, any> = {errors: []};
   await parallelizeRun(
     async function runLlm(chapter) { // eslint-disable-line prefer-arrow-callback
-      // if (chapter.title !== "Numbers 6") return;
+      if (chapter.title !== "Numbers 6") return;
       console.log(chapter.title); // eslint-disable-line no-console
       const prompt = chapterPrompt(chapter);
 

@@ -350,7 +350,7 @@ class InternalCommentary {
   }
 
   addAll(other: InternalCommentary) {
-    for (const ref of Array.from(other.refs)) {
+    for (const ref of other.refs) {
       this.refs.add(ref);
     }
     this.comments.push(...other.comments);
@@ -741,7 +741,7 @@ export abstract class AbstractApiRequestHandler {
     const nextRefs: string[] = [];
     if (isRoot) {
       for (const targetRefs of Object.values(linkGraph.graph)) {
-        nextRefs.push(...Array.from(targetRefs));
+        nextRefs.push(...targetRefs);
       }
     }
 
@@ -862,7 +862,7 @@ export abstract class AbstractApiRequestHandler {
     // maintaining a stable shard size.
     refs = Array.from(refs);
     refs.sort(refSorter);
-    for (const syntheticRef of Array.from(SYNTHETIC_REFS)) {
+    for (const syntheticRef of SYNTHETIC_REFS) {
       if (refs.includes(syntheticRef)) {
         fetched[syntheticRef] = {ref: syntheticRef, he: "", text: ""};
         const [first, last] = [
@@ -914,7 +914,7 @@ export abstract class AbstractApiRequestHandler {
       }
     }
     const result = [];
-    for (const [key, groupedRefs] of Array.from(indexed.asMap().entries())) {
+    for (const [key, groupedRefs] of indexed.asMap().entries()) {
       result.push(new BulkTextGroup(key, groupedRefs, extensions[key] ?? ""));
     }
     return result;
@@ -1032,7 +1032,7 @@ export abstract class AbstractApiRequestHandler {
     countObject: {count: number},
     cycleChecker: Set<string> = new Set(),
   ) {
-    for (const linkRef of Array.from(linkGraph.graph[ref] ?? [])) {
+    for (const linkRef of linkGraph.graph[ref] ?? []) {
       // This is heuristic to attempt to short-circuit comment traversals that never seem to end.
       // Unfortunately we don't want a simple "visited" set since we do want to revisit nodes,
       // but perhaps something that checks to not revisit them unless they reoccur at lower depths
@@ -1612,7 +1612,7 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
       if (refPiece instanceof MergeWithNext) {
         mergeWithNext.add(refPiece.ref);
       } else if (refPiece instanceof MergeRefsByDefault) {
-        for (const mergedRef of Array.from(refPiece.mergedRefs)) {
+        for (const mergedRef of refPiece.mergedRefs) {
           mergeWithNext.add(mergedRef);
         }
       }

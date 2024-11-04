@@ -17,11 +17,11 @@ function skipRef(ref: string): boolean {
   return book && book.isBibleBook();
 }
 
-for (const book of Array.from(new Set(Object.values(books.byCanonicalName)))) {
+for (const book of new Set(Object.values(books.byCanonicalName))) {
   if (!book.isTalmud() && !book.isBibleBook()) continue;
   if (book.canonicalName === "Shekalim") continue;
 
-  for (const section of Array.from(book.sections)) {
+  for (const section of book.sections) {
     const filePath = cachedOutputFilePath(book, section);
     const amud = JSON.parse(readUtf8(filePath)) as Amud;
     const dupes = new ListMultimap<string, ApiComment>();
