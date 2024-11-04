@@ -326,4 +326,9 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     className: "topics",
     showTitle: true,
   },
+  {
+    englishName: "Context",
+    hebrewName: "הקשר",
+    className: "comment-context",
+  },
 ];

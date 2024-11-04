@@ -1064,19 +1064,31 @@ export abstract class AbstractApiRequestHandler {
         });
       }
 
+      const nestedCommentary = commentary.nestedCommentary(linkRef);
+
       const {comment, footnotes} = FootnotesExtractor.extract(linkResponse);
       commentary.addComment(Comment.create(link, comment, commentaryType.englishName, this.logger));
+      if (commentaryType.englishName === "Verses") {
+        const context = llmGeneratedTopic(linkRef)?.surroundingContext;
+        if (context) {
+          nestedCommentary.addComment(new Comment(
+            "Context",
+            context.hebrew,
+            context.english,
+            `llm-context: ${ref}`,
+            "", ""));
+        }
+      }
 
       for (const footnote of footnotes) {
-        commentary.nestedCommentary(linkRef).addComment(
-          Comment.create(link, footnote, "Footnotes", this.logger));
+        nestedCommentary.addComment(Comment.create(link, footnote, "Footnotes", this.logger));
       }
 
       cycleChecker.add(ref);
       this.addComments(
         rootRef,
         linkRef,
-        commentary.nestedCommentary(linkRef),
+        nestedCommentary,
         linkGraph,
         countObject,
         cycleChecker);

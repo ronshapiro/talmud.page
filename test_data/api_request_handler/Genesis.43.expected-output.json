@@ -243,28 +243,67 @@
                 "Verses": {
                   "comments": [
                     {
+                      "commentary": {
+                        "Context": {
+                          "comments": [
+                            {
+                              "en": "The Lord laments that the Israelites have consistently disobeyed his commands, despite his repeated warnings. ",
+                              "he": "ה' מתאבל על כך שבני ישראל לא צייתו לפקודותיו, למרות אזהרותיו החוזרות ונשנות.",
+                              "ref": "llm-context: Rashi on Genesis 43:3:1",
+                              "sourceHeRef": "",
+                              "sourceRef": ""
+                            }
+                          ]
+                        }
+                      },
                       "en": "For I have repeatedly and persistently warned your fathers from the time I brought them out of Egypt to this day, saying: Obey My commands.",
                       "he": "כִּי֩ הָעֵ֨ד הַעִדֹ֜תִי בַּאֲבֽוֹתֵיכֶ֗ם בְּיוֹם֩ הַעֲלוֹתִ֨י אוֹתָ֜ם מֵאֶ֤רֶץ מִצְרַ֙יִם֙ וְעַד־הַיּ֣וֹם הַזֶּ֔ה הַשְׁכֵּ֥ם וְהָעֵ֖ד לֵאמֹ֑ר שִׁמְע֖וּ בְּקוֹלִֽי׃",
                       "link": "/Jeremiah/11",
                       "ref": "Jeremiah 11:7",
-                      "sourceHeRef": "ירמיהו יא:ז - אזהרות חוזרות ונשנות",
-                      "sourceRef": "Jeremiah 11:7 - Repeated Warnings"
+                      "sourceHeRef": "ירמיהו יא:ז - אי-הקשבת בני ישראל",
+                      "sourceRef": "Jeremiah 11:7 - The Israelites' Disobedience"
                     },
                     {
+                      "commentary": {
+                        "Context": {
+                          "comments": [
+                            {
+                              "en": "God warns Moses to tell the people not to approach him, lest they perish.",
+                              "he": "ה' מזהיר את משה לומר לעם לא להתקרב אליו, שמא ימותו.",
+                              "ref": "llm-context: Rashi on Genesis 43:3:1",
+                              "sourceHeRef": "",
+                              "sourceRef": ""
+                            }
+                          ]
+                        }
+                      },
                       "en": "The L<small>ORD</small> said to Moses, “Go down, warn the people not to break through to the L<small>ORD</small> to gaze, lest many of them perish.",
                       "he": "וַיֹּ֤אמֶר יְהֹוָה֙ אֶל־מֹשֶׁ֔ה רֵ֖ד הָעֵ֣ד בָּעָ֑ם פֶּן־יֶהֶרְס֤וּ אֶל־יְהֹוָה֙ לִרְא֔וֹת וְנָפַ֥ל מִמֶּ֖נּוּ רָֽב׃",
                       "link": "/Exodus/19",
                       "ref": "Exodus 19:21",
-                      "sourceHeRef": "שמות יט:כא - אזהרה מפני התקרבות לאלוהים",
+                      "sourceHeRef": "שמות יט:כא - אזהרה מפני התקרבות אל ה'",
                       "sourceRef": "Exodus 19:21 - Warning Against Approaching God"
                     },
                     {
+                      "commentary": {
+                        "Context": {
+                          "comments": [
+                            {
+                              "en": "This verse calls heaven and earth to witness the Israelites' choice between life and death.",
+                              "he": "פסוק זה קורא לשמיים ולارض להיות עדים לבחירת בני ישראל בין חיים ומוות.",
+                              "ref": "llm-context: Rashi on Genesis 43:3:1",
+                              "sourceHeRef": "",
+                              "sourceRef": ""
+                            }
+                          ]
+                        }
+                      },
                       "en": "I call heaven and earth to witness against you this day: I have put before you life and death, blessing and curse. Choose life—if you and your offspring would live—",
                       "he": "הַעִדֹ֨תִי בָכֶ֣ם הַיּוֹם֮ אֶת־הַשָּׁמַ֣יִם וְאֶת־הָאָ֒רֶץ֒ הַחַיִּ֤ים וְהַמָּ֙וֶת֙ נָתַ֣תִּי לְפָנֶ֔יךָ הַבְּרָכָ֖ה וְהַקְּלָלָ֑ה וּבָֽחַרְתָּ֙ בַּחַיִּ֔ים לְמַ֥עַן תִּֽחְיֶ֖ה אַתָּ֥ה וְזַרְעֶֽךָ׃",
                       "link": "/Deuteronomy/30",
                       "ref": "Deuteronomy 30:19",
-                      "sourceHeRef": "דברים ל:יט - קריאה לבחור חיים",
-                      "sourceRef": "Deuteronomy 30:19 - The Call to Choose Life"
+                      "sourceHeRef": "דברים ל:יט - עדים לבחירה",
+                      "sourceRef": "Deuteronomy 30:19 - Witnesses to the choice"
                     }
                   ]
                 }
@@ -311,12 +350,25 @@
         "Verses": {
           "comments": [
             {
+              "commentary": {
+                "Context": {
+                  "comments": [
+                    {
+                      "en": "Moses agrees to Pharaoh's request and says that he will not see Pharaoh's face again.",
+                      "he": "משה מסכים לבקשת פרעה ואומר שהוא לא יראה את פני פרעה שוב.",
+                      "ref": "llm-context: Genesis 43:3",
+                      "sourceHeRef": "",
+                      "sourceRef": ""
+                    }
+                  ]
+                }
+              },
               "en": "Pharaoh said to him, “Be gone from me! Take care not to see me again, for the moment you look upon my face you shall die.”",
               "he": "וַיֹּֽאמֶר־ל֥וֹ פַרְעֹ֖ה לֵ֣ךְ מֵעָלָ֑י הִשָּׁ֣מֶר לְךָ֗ אַל־תֹּ֙סֶף֙ רְא֣וֹת פָּנַ֔י כִּ֗י בְּי֛וֹם רְאֹתְךָ֥ פָנַ֖י תָּמֽוּת׃",
               "link": "/Exodus/10",
               "ref": "Exodus 10:28",
-              "sourceHeRef": "שמות י:כח - איומו של פרעה",
-              "sourceRef": "Exodus 10:28 - Pharaoh's Threat"
+              "sourceHeRef": "שמות י:כח - תגובת משה",
+              "sourceRef": "Exodus 10:28 - Moses's Response"
             }
           ]
         }
@@ -528,12 +580,25 @@
                 "Verses": {
                   "comments": [
                     {
+                      "commentary": {
+                        "Context": {
+                          "comments": [
+                            {
+                              "en": "The servant refuses to eat until he tells his story.",
+                              "he": "העבד מסרב לאכול עד שיספר את סיפורו.",
+                              "ref": "llm-context: Rashi on Genesis 43:7:4",
+                              "sourceHeRef": "",
+                              "sourceRef": ""
+                            }
+                          ]
+                        }
+                      },
                       "en": "But when food was set before him, he said, “I will not eat until I have told my tale.” He said, “Speak, then.”",
                       "he": "<span class=\"mam-kq\"><span class=\"mam-kq-k\"><span class=\"parenthesized\">(ויישם)</span></span> <span class=\"mam-kq-q\">[וַיּוּשַׂ֤ם]</span></span> לְפָנָיו֙ לֶאֱכֹ֔ל וַיֹּ֙אמֶר֙ לֹ֣א אֹכַ֔ל עַ֥ד אִם־דִּבַּ֖רְתִּי דְּבָרָ֑י וַיֹּ֖אמֶר דַּבֵּֽר׃",
                       "link": "/Genesis/24",
                       "ref": "Genesis 24:33",
-                      "sourceHeRef": "בראשית כד:לג - בקשתו של העבד",
-                      "sourceRef": "Genesis 24:33 - The Servant's Request"
+                      "sourceHeRef": "בראשית כד:לג - סיפור העבד",
+                      "sourceRef": "Genesis 24:33 - The Servant's Story"
                     }
                   ]
                 }
@@ -690,12 +755,25 @@
                 "Verses": {
                   "comments": [
                     {
+                      "commentary": {
+                        "Context": {
+                          "comments": [
+                            {
+                              "en": "Jacob's spirit is revived when he hears the details of Joseph's message and sees the wagons sent to transport him to Egypt.",
+                              "he": "רוחו של יעקב מתעוררת כשהוא שומע את פרטי המסר של יוסף ורואה את העגלות שנשלחו להוביל אותו למצרים.",
+                              "ref": "llm-context: Rashi on Genesis 43:8:1",
+                              "sourceHeRef": "",
+                              "sourceRef": ""
+                            }
+                          ]
+                        }
+                      },
                       "en": "But when they recounted all that Joseph had said to them, and when he saw the wagons that Joseph had sent to transport him, the spirit of their father Jacob revived.",
                       "he": "וַיְדַבְּר֣וּ אֵלָ֗יו אֵ֣ת כׇּל־דִּבְרֵ֤י יוֹסֵף֙ אֲשֶׁ֣ר דִּבֶּ֣ר אֲלֵהֶ֔ם וַיַּרְא֙ אֶת־הָ֣עֲגָל֔וֹת אֲשֶׁר־שָׁלַ֥ח יוֹסֵ֖ף לָשֵׂ֣את אֹת֑וֹ וַתְּחִ֕י ר֖וּחַ יַעֲקֹ֥ב אֲבִיהֶֽם׃",
                       "link": "/Genesis/45",
                       "ref": "Genesis 45:27",
-                      "sourceHeRef": "בראשית מה:כז - רוחו של יעקב מתעוררת לאחר שראה את העגלות שיוסף שלח",
-                      "sourceRef": "Genesis 45:27 - Jacob's spirit is revived upon seeing the wagons Joseph sent"
+                      "sourceHeRef": "בראשית מה:כז - התעוררותו של יעקב",
+                      "sourceRef": "Genesis 45:27 - Jacob's revival"
                     }
                   ]
                 }
@@ -1653,12 +1731,25 @@
                 "Verses": {
                   "comments": [
                     {
+                      "commentary": {
+                        "Context": {
+                          "comments": [
+                            {
+                              "en": "This verse begins a section about the laws regarding injury to a slave.",
+                              "he": "הַפַּסּוּק הַזֶּה פּוֹתֵחַ סְעִיף שֶׁל חֻקִּים שֶׁנּוֹגְעִים לְפְּצִיעַת עַבְדִּים.",
+                              "ref": "llm-context: Rashi on Genesis 43:14:3",
+                              "sourceHeRef": "",
+                              "sourceRef": ""
+                            }
+                          ]
+                        }
+                      },
                       "en": "When a man strikes the eye of his slave, male or female, and destroys it, he shall let him go free on account of his eye.",
                       "he": "וְכִֽי־יַכֶּ֨ה אִ֜ישׁ אֶת־עֵ֥ין עַבְדּ֛וֹ אֽוֹ־אֶת־עֵ֥ין אֲמָת֖וֹ וְשִֽׁחֲתָ֑הּ לַֽחׇפְשִׁ֥י יְשַׁלְּחֶ֖נּוּ תַּ֥חַת עֵינֽוֹ׃",
                       "link": "/Exodus/21",
                       "ref": "Exodus 21:26",
-                      "sourceHeRef": "שמות כא:כו - פגיעה בעבד: עין",
-                      "sourceRef": "Exodus 21:26 - Injury to a Slave: Eye"
+                      "sourceHeRef": "שמות כא:כו - וְכִֽי־יַכֶּ֨ה אִ֜ישׁ אֶת־עֵ֥ין עַבְדּ֛וֹ אֽוֹ־אֶת־עֵ֥ין אֲמָת֖וֹ וְשִֽׁחֲתָ֑הּ לַֽחׇפְשִׁ֥י יְשַׁלְּחֶ֖נּוּ תַּ֥חַת עֵינֽוֹ׃",
+                      "sourceRef": "Exodus 21:26 - Injury to a Slave"
                     }
                   ]
                 }
@@ -1785,12 +1876,25 @@
         "Verses": {
           "comments": [
             {
+              "commentary": {
+                "Context": {
+                  "comments": [
+                    {
+                      "en": "Esther instructs Mordecai to gather the Jews in Shushan and fast for three days, while she and her maids will also fast. She then plans to approach the king, knowing the danger, and is prepared to face the consequences.",
+                      "he": "אסתר מורה למרדכי לאסוף את היהודים בשושן ולצום שלושה ימים, בעוד היא ושפחותיה יצומו גם כן. היא מתכננת לגשת למלך, מודעת לסכנה, והיא מוכנה להתמודד עם ההשלכות.",
+                      "ref": "llm-context: Genesis 43:14",
+                      "sourceHeRef": "",
+                      "sourceRef": ""
+                    }
+                  ]
+                }
+              },
               "en": "“Go, assemble all the Jews who live in Shushan, and fast in my behalf; do not eat or drink for three days, night or day. I and my maidens will observe the same fast. Then I shall go to the king, though it is contrary to the law; and if I am to perish, I shall perish!”",
               "he": "לֵךְ֩ כְּנ֨וֹס אֶת־כׇּל־הַיְּהוּדִ֜ים הַֽנִּמְצְאִ֣ים בְּשׁוּשָׁ֗ן וְצ֣וּמוּ עָ֠לַ֠י וְאַל־תֹּאכְל֨וּ וְאַל־תִּשְׁתּ֜וּ שְׁלֹ֤שֶׁת יָמִים֙ לַ֣יְלָה וָי֔וֹם גַּם־אֲנִ֥י וְנַעֲרֹתַ֖י אָצ֣וּם כֵּ֑ן וּבְכֵ֞ן אָב֤וֹא אֶל־הַמֶּ֙לֶךְ֙ אֲשֶׁ֣ר לֹֽא־כַדָּ֔ת וְכַאֲשֶׁ֥ר אָבַ֖דְתִּי אָבָֽדְתִּי׃",
               "link": "/Esther/4",
               "ref": "Esther 4:16",
-              "sourceHeRef": "אסתר ד:טז",
-              "sourceRef": "Esther 4:16"
+              "sourceHeRef": "אסתר ד:טז - תוכנית אסתר לגשת למלך",
+              "sourceRef": "Esther 4:16 - Esther's Plan to Approach the King"
             }
           ]
         }
@@ -2290,36 +2394,88 @@
                 "Verses": {
                   "comments": [
                     {
+                      "commentary": {
+                        "Context": {
+                          "comments": [
+                            {
+                              "en": "The verse describes the exile of Huzzab, a prominent figure in Nineveh, emphasizing the city's downfall and the humiliation of its leaders.",
+                              "he": "הַפַּסּוּק מתאר אֶת גְּלוּת חוּצָב, דְּמוּת בַּרּוּרָה בְּנִינְוֵה, וּמְדַגֵּשׁ אֶת נִפְלַת הַעִיר וְאֶת הַבְּשִׁׁית שֶׁל מוֹשְׁלֶיהָ.",
+                              "ref": "llm-context: Rashi on Genesis 43:18:4",
+                              "sourceHeRef": "",
+                              "sourceRef": ""
+                            }
+                          ]
+                        }
+                      },
                       "en": "And Huzzab is exiled and carried away,<br>While her handmaidens escort [her]<br>As with the voices of doves,<br>Beating their breasts.",
                       "he": "וְהֻצַּ֖ב גֻּלְּתָ֣ה הֹֽעֲלָ֑תָה וְאַמְהֹתֶ֗יהָ מְנַֽהֲגוֹת֙ כְּק֣וֹל יוֹנִ֔ים מְתֹפְפֹ֖ת עַל־לִבְבֵהֶֽן׃",
                       "link": "/Nahum/2",
                       "ref": "Nahum 2:8",
-                      "sourceHeRef": "נחום ב:ח - גָּלוּתָה שֶׁל חֻצָּב",
+                      "sourceHeRef": "נחום ב:ח - גְּלוּת חוּצָב",
                       "sourceRef": "Nahum 2:8 - The Exile of Huzzab"
                     },
                     {
+                      "commentary": {
+                        "Context": {
+                          "comments": [
+                            {
+                              "en": "This verse is a continuation of the previous verse, describing the false accusation made by the husband.",
+                              "he": "הפסוק הוא המשך לפסוק הקודם, ותיאור האשמה השווא שהוציא הבעל.",
+                              "ref": "llm-context: Rashi on Genesis 43:18:4",
+                              "sourceHeRef": "",
+                              "sourceRef": ""
+                            }
+                          ]
+                        }
+                      },
                       "en": "and makes up charges against her and defames her, saying, “I married this woman; but when I approached her, I found that she was not a virgin.”",
                       "he": "וְשָׂ֥ם לָהּ֙ עֲלִילֹ֣ת דְּבָרִ֔ים וְהוֹצִ֥א עָלֶ֖יהָ שֵׁ֣ם רָ֑ע וְאָמַ֗ר אֶת־הָאִשָּׁ֤ה הַזֹּאת֙ לָקַ֔חְתִּי וָאֶקְרַ֣ב אֵלֶ֔יהָ וְלֹא־מָצָ֥אתִי לָ֖הּ בְּתוּלִֽים׃",
                       "link": "/Deuteronomy/22",
                       "ref": "Deuteronomy 22:14",
-                      "sourceHeRef": "דברים כב:יד - הַאֲשָׁמָה שֶׁלֹא בְּתוּלִית",
+                      "sourceHeRef": "דברים כב:יד - האשמה שווא על חוסר בתולין",
                       "sourceRef": "Deuteronomy 22:14 - False Accusation of Non-Virginity"
                     },
                     {
+                      "commentary": {
+                        "Context": {
+                          "comments": [
+                            {
+                              "en": "The Israelites are commanded to bring their tithes to the place that יהוה will choose.",
+                              "he": "בני ישראל מצווים להביא את מעשרותיהם למקום שיבחר יהוה.",
+                              "ref": "llm-context: Rashi on Genesis 43:18:4",
+                              "sourceHeRef": "",
+                              "sourceRef": ""
+                            }
+                          ]
+                        }
+                      },
                       "en": "You may not partake in your settlements of the tithes of your new grain or wine or oil, or of the firstlings of your herds and flocks, or of any of the votive offerings that you vow, or of your freewill offerings, or of your contributions.",
                       "he": "לֹֽא־תוּכַ֞ל לֶאֱכֹ֣ל בִּשְׁעָרֶ֗יךָ מַעְשַׂ֤ר דְּגָֽנְךָ֙ וְתִירֹֽשְׁךָ֣ וְיִצְהָרֶ֔ךָ וּבְכֹרֹ֥ת בְּקָרְךָ֖ וְצֹאנֶ֑ךָ וְכׇל־נְדָרֶ֙יךָ֙ אֲשֶׁ֣ר תִּדֹּ֔ר וְנִדְבֹתֶ֖יךָ וּתְרוּמַ֥ת יָדֶֽךָ׃",
                       "link": "/Deuteronomy/12",
                       "ref": "Deuteronomy 12:17",
-                      "sourceHeRef": "דברים יב:יז - לא לאכול מעשרות ביישובים",
-                      "sourceRef": "Deuteronomy 12:17 - Not Eating Tithes in Settlements"
+                      "sourceHeRef": "דברים יב:יז - אין מעשרות ביישובים",
+                      "sourceRef": "Deuteronomy 12:17 - No Tithes in Settlements"
                     },
                     {
+                      "commentary": {
+                        "Context": {
+                          "comments": [
+                            {
+                              "en": "This verse continues the description of the physical decline of the body in old age, using imagery of a house and its inhabitants.",
+                              "he": "פסוק זה ממשיך את תיאור הירידה הפיזית של הגוף בזקנה, תוך שימוש במטפורות של בית ויושביו.",
+                              "ref": "llm-context: Rashi on Genesis 43:18:4",
+                              "sourceHeRef": "",
+                              "sourceRef": ""
+                            }
+                          ]
+                        }
+                      },
                       "en": "Before the silver cord snaps<br>And the golden bowl crashes,<br>The jar is shattered at the spring,<br>And the jug is smashed at the cistern.",
                       "he": "עַ֣ד אֲשֶׁ֤ר לֹֽא־<span class=\"mam-kq\"><span class=\"mam-kq-q\">[יֵרָתֵק֙]</span> <span class=\"mam-kq-k\"><span class=\"parenthesized\">(ירחק)</span></span></span> חֶ֣בֶל הַכֶּ֔סֶף וְתָר֖וּץ גֻּלַּ֣ת הַזָּהָ֑ב וְתִשָּׁ֤בֶר כַּד֙ עַל־הַמַּבּ֔וּעַ וְנָרֹ֥ץ הַגַּלְגַּ֖ל אֶל־הַבּֽוֹר׃",
                       "link": "/Ecclesiastes/12",
                       "ref": "Ecclesiastes 12:6",
-                      "sourceHeRef": "קהלת יב:ו - הַשָּׁבָה של הַחַיִּים",
-                      "sourceRef": "Ecclesiastes 12:6 - The Fragility of Life"
+                      "sourceHeRef": "קהלת יב:ו - עַ֣ד אֲשֶׁ֤ר לֹֽא־<span class=\"mam-kq\"><span class=\"mam-kq-q\">[יֵרָתֵק֙]</span> <span class=\"mam-kq-k\">(ירחק)</span></span> חֶ֣בֶל הַכֶּ֔סֶף וְתָר֖וּץ גֻּלַּ֣ת הַזָּהָ֑ב וְתִשָּׁ֤בֶר כַּד֙ עַל־הַמַּבּ֔וּעַ וְנָרֹ֥ץ הַגַּלְגַּ֖ל אֶל־הַבּֽוֹר׃",
+                      "sourceRef": "Ecclesiastes 12:6 - Before the silver cord snaps And the golden bowl crashes, The jar is shattered at the spring, And the jug is smashed at the cistern."
                     }
                   ]
                 }
@@ -3390,16 +3546,29 @@
                       ],
                       "link": "/Genesis/31",
                       "ref": "Genesis 31",
-                      "sourceHeRef": "בראשית ל״א",
-                      "sourceRef": "Genesis 31"
+                      "sourceHeRef": "בראשית ל״א - יעקב עוזב את לבן",
+                      "sourceRef": "Genesis 31 - Jacob Leaves Laban"
                     },
                     {
+                      "commentary": {
+                        "Context": {
+                          "comments": [
+                            {
+                              "en": "Esau and Jacob reconcile, and Esau is curious about Jacob's family.",
+                              "he": "עשו ויעקב מתפייסים, ועשו סקרן לגבי משפחת יעקב.",
+                              "ref": "llm-context: Rashi on Genesis 43:29:1",
+                              "sourceHeRef": "",
+                              "sourceRef": ""
+                            }
+                          ]
+                        }
+                      },
                       "en": "Looking about, he saw the women and the children. “Who,” he asked, “are these with you?” He answered, “The children with whom God has favored your servant.”",
                       "he": "וַיִּשָּׂ֣א אֶת־עֵינָ֗יו וַיַּ֤רְא אֶת־הַנָּשִׁים֙ וְאֶת־הַיְלָדִ֔ים וַיֹּ֖אמֶר מִי־אֵ֣לֶּה לָּ֑ךְ וַיֹּאמַ֕ר הַיְלָדִ֕ים אֲשֶׁר־חָנַ֥ן אֱלֹהִ֖ים אֶת־עַבְדֶּֽךָ׃",
                       "link": "/Genesis/33",
                       "ref": "Genesis 33:5",
-                      "sourceHeRef": "בראשית לג:ה - עֵשָׂו שׁוֹאֵל עַל חֶבְרָתוֹ שֶׁל יַעֲקֹב",
-                      "sourceRef": "Genesis 33:5 - Esau inquires about Jacob's company"
+                      "sourceHeRef": "בראשית לג:ה - עשו שואל על משפחת יעקב",
+                      "sourceRef": "Genesis 33:5 - Esau inquires about Jacob's family"
                     }
                   ]
                 }
@@ -3537,12 +3706,25 @@
                 "Verses": {
                   "comments": [
                     {
+                      "commentary": {
+                        "Context": {
+                          "comments": [
+                            {
+                              "en": "The people are suffering from famine, their skin is pale and their bodies are weak.",
+                              "he": "העם סובל מרעב, עורם חיוור וגופם חלש.",
+                              "ref": "llm-context: Rashi on Genesis 43:30:2",
+                              "sourceHeRef": "",
+                              "sourceRef": ""
+                            }
+                          ]
+                        }
+                      },
                       "en": "Our skin glows like an oven,<br>With the fever of famine.",
                       "he": "עוֹרֵ֙נוּ֙ כְּתַנּ֣וּר נִכְמָ֔רוּ מִפְּנֵ֖י זַלְעֲפ֥וֹת רָעָֽב׃",
                       "link": "/Lamentations/5",
                       "ref": "Lamentations 5:10",
-                      "sourceHeRef": "איכה ה:י - סבל מרעב",
-                      "sourceRef": "Lamentations 5:10 - Suffering from Famine"
+                      "sourceHeRef": "איכה ה:י - קינת העם: סבל ורעב",
+                      "sourceRef": "Lamentations 5:10 - The Lament of the People: Suffering and Famine"
                     }
                   ]
                 }
@@ -3580,12 +3762,25 @@
         "Verses": {
           "comments": [
             {
+              "commentary": {
+                "Context": {
+                  "comments": [
+                    {
+                      "en": "This verse describes God's judgment on the nations that have come against Jerusalem. He will seek to destroy them, emphasizing the consequences of their actions. ",
+                      "he": "פסוק זה מתאר את שיפוטו של אלוהים על העמים שבאו נגד ירושלים. הוא יבקש להשמיד אותם, ומדגיש את תוצאות מעשיהם. ",
+                      "ref": "llm-context: Genesis 43:30",
+                      "sourceHeRef": "",
+                      "sourceRef": ""
+                    }
+                  ]
+                }
+              },
               "en": "In that day I will all but annihilate all the nations that came up against Jerusalem.",
               "he": "וְהָיָ֖ה בַּיּ֣וֹם הַה֑וּא אֲבַקֵּ֗שׁ לְהַשְׁמִיד֙ אֶת־כׇּל־הַגּוֹיִ֔ם הַבָּאִ֖ים עַל־יְרוּשָׁלָֽ͏ִם׃",
               "link": "/Zechariah/12",
               "ref": "Zechariah 12:9",
-              "sourceHeRef": "זכריה יב:ט - וְהָיָ֖ה בַּיּ֣וֹם הַה֑וּא אֲבַקֵּ֗שׁ לְהַשְׁמִיד֙ אֶת־כׇּל־הַגּוֹיִ֔ים הַבָּאִ֖ים עַל־יְרוּשָׁלָֽ͏ִם׃",
-              "sourceRef": "Zechariah 12:9 - God's Judgment on the Nations"
+              "sourceHeRef": "זכריה יב:ט - אֲבַקֵּ֗שׁ לְהַשְׁמִיד֙ אֶת־כׇּל־הַגּוֹיִ֔ים הַבָּאִ֖ים עַל־יְרוּשָׁלָֽ͏ִם׃",
+              "sourceRef": "Zechariah 12:9 - God's judgment on the nations"
             }
           ]
         }
@@ -3643,20 +3838,46 @@
                 "Verses": {
                   "comments": [
                     {
+                      "commentary": {
+                        "Context": {
+                          "comments": [
+                            {
+                              "en": "The opening of the speech, the impossibility of capturing Leviathan",
+                              "he": "פתיחת הנאום, אי אפשר ללכוד את לויתן",
+                              "ref": "llm-context: Rashi on Genesis 43:31:1",
+                              "sourceHeRef": "",
+                              "sourceRef": ""
+                            }
+                          ]
+                        }
+                      },
                       "en": "His protective scales are his pride,<br>Locked with a binding seal.",
                       "he": "גַּ֭אֲוָה אֲפִיקֵ֣י מָגִנִּ֑ים סָ֝ג֗וּר חוֹתָ֥ם צָֽר׃",
                       "link": "/Job/41",
                       "ref": "Job 41:7",
-                      "sourceHeRef": "איוב מא:ז - קשקשי ההגנה של לויתן",
-                      "sourceRef": "Job 41:7 - Leviathan's Protective Scales"
+                      "sourceHeRef": "איוב מא:ז - אי אפשר ללכוד את לויתן",
+                      "sourceRef": "Job 41:7 - The impossibility of capturing Leviathan"
                     },
                     {
+                      "commentary": {
+                        "Context": {
+                          "comments": [
+                            {
+                              "en": "Job describes God's power to humiliate even the most powerful and mighty.",
+                              "he": "איוב מתאר את כוחו של אלוהים להשפיל אפילו את החזקים והעוצמתיים ביותר.",
+                              "ref": "llm-context: Rashi on Genesis 43:31:1",
+                              "sourceHeRef": "",
+                              "sourceRef": ""
+                            }
+                          ]
+                        }
+                      },
                       "en": "He pours disgrace upon great men,<br>And loosens the belt of the mighty.",
                       "he": "שׁוֹפֵ֣ךְ בּ֭וּז עַל־נְדִיבִ֑ים וּמְזִ֖יחַ אֲפִיקִ֣ים רִפָּֽה׃",
                       "link": "/Job/12",
                       "ref": "Job 12:21",
-                      "sourceHeRef": "איוב יב:כא - כוחו של אלוהים להשפיל את החזקים",
-                      "sourceRef": "Job 12:21 - God's Power to Humiliate the Mighty"
+                      "sourceHeRef": "איוב יב:כא - כוחו וריבונותו של אלוהים",
+                      "sourceRef": "Job 12:21 - God's Power and Sovereignty"
                     }
                   ]
                 }

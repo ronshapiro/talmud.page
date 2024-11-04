@@ -17,20 +17,33 @@
         "Verses": {
           "comments": [
             {
+              "commentary": {
+                "Context": {
+                  "comments": [
+                    {
+                      "en": "David asks God to open his lips so that he can declare God's praise.",
+                      "he": "דוד מבקש מאלוהים לפתוח את שפתיו כדי שיוכל להכריז על שבח אלוהים.",
+                      "ref": "llm-context: Siddur Ashkenaz, Weekday, Shacharit, Amidah, Patriarchs 2",
+                      "sourceHeRef": "",
+                      "sourceRef": ""
+                    }
+                  ]
+                }
+              },
               "en": "O Lord, open my lips,<br>and let my mouth declare Your praise.",
               "he": "אֲ֭דֹנָי שְׂפָתַ֣י תִּפְתָּ֑ח וּ֝פִ֗י יַגִּ֥יד תְּהִלָּתֶֽךָ׃",
               "link": "/Psalms/51",
               "ref": "Psalms 51:17",
-              "sourceHeRef": "תהילים נא:יז - כותרת: רצונו של דוד להלל את אלוהים",
-              "sourceRef": "Psalms 51:17 - Heading: David's Desire to Praise God"
+              "sourceHeRef": "תהילים נא:יז - בקשה לפתיחת שפתיים ושבח",
+              "sourceRef": "Psalms 51:17 - Request for Open Lips and Praise"
             },
             {
               "en": "The L<small>ORD</small> restores sight to the blind;<br>the L<small>ORD</small> makes those who are bent stand straight;<br>the L<small>ORD</small> loves the righteous;",
               "he": "יְהֹוָ֤ה <b>׀</b> פֹּ֘קֵ֤חַ עִוְרִ֗ים יְ֭הֹוָה זֹקֵ֣ף כְּפוּפִ֑ים יְ֝הֹוָ֗ה אֹהֵ֥ב צַדִּיקִֽים׃",
               "link": "/Psalms/146",
               "ref": "Psalms 146:8",
-              "sourceHeRef": "תהילים קמו:ח - ריפוי ושיקום של אלוהים",
-              "sourceRef": "Psalms 146:8 - God's Healing and Restoration"
+              "sourceHeRef": "תהילים קמו:ח - מַעֲשֵׂי הָאֱלֹהִים",
+              "sourceRef": "Psalms 146:8 - The Actions of God"
             }
           ]
         }
@@ -44,20 +57,46 @@
         "Verses": {
           "comments": [
             {
+              "commentary": {
+                "Context": {
+                  "comments": [
+                    {
+                      "en": "God tells Moses that his name is \"יהוה\" and that this is his name forever.",
+                      "he": "ה' אומר למשה ש\"יהוה\" הוא שמו וזה יהיה שמו לעולם.",
+                      "ref": "llm-context: Siddur Ashkenaz, Weekday, Shacharit, Amidah, Patriarchs 3",
+                      "sourceHeRef": "",
+                      "sourceRef": ""
+                    }
+                  ]
+                }
+              },
               "en": "And God said further to Moses, “Thus shall you speak to the Israelites: The L<small>ORD</small>, the God of your fathers, the God of Abraham, the God of Isaac, and the God of Jacob, has sent me to you:<br>This shall be My name forever,<br>This My appellation for all eternity.",
               "he": "וַיֹּ֩אמֶר֩ ע֨וֹד אֱלֹהִ֜ים אֶל־מֹשֶׁ֗ה כֹּֽה־תֹאמַר֮ אֶל־בְּנֵ֣י יִשְׂרָאֵל֒ יְהֹוָ֞ה אֱלֹהֵ֣י אֲבֹתֵיכֶ֗ם אֱלֹהֵ֨י אַבְרָהָ֜ם אֱלֹהֵ֥י יִצְחָ֛ק וֵאלֹהֵ֥י יַעֲקֹ֖ב שְׁלָחַ֣נִי אֲלֵיכֶ֑ם זֶה־שְּׁמִ֣י לְעֹלָ֔ם וְזֶ֥ה זִכְרִ֖י לְדֹ֥ר דֹּֽר׃",
               "link": "/Exodus/3",
               "ref": "Exodus 3:15",
-              "sourceHeRef": "שמות ג:טו - שֵׁם הָאֱלֹהִים: יְהֹוָה",
-              "sourceRef": "Exodus 3:15 - God's Name: יהוה"
+              "sourceHeRef": "שמות ג:טו - שם ה' ומשמעותו",
+              "sourceRef": "Exodus 3:15 - God's name and its meaning"
             },
             {
+              "commentary": {
+                "Context": {
+                  "comments": [
+                    {
+                      "en": "Moses describes God's attributes: supreme, mighty, and just.",
+                      "he": "משה מתאר את תכונות אלוהים: עליון, נורא וצדיק.",
+                      "ref": "llm-context: Siddur Ashkenaz, Weekday, Shacharit, Amidah, Patriarchs 3",
+                      "sourceHeRef": "",
+                      "sourceRef": ""
+                    }
+                  ]
+                }
+              },
               "en": "For the L<small>ORD</small> your God is God supreme and Lord supreme, the great, the mighty, and the awesome God, who shows no favor and takes no bribe,",
               "he": "כִּ֚י יְהֹוָ֣ה אֱלֹֽהֵיכֶ֔ם ה֚וּא אֱלֹהֵ֣י הָֽאֱלֹהִ֔ים וַאֲדֹנֵ֖י הָאֲדֹנִ֑ים הָאֵ֨ל הַגָּדֹ֤ל הַגִּבֹּר֙ וְהַנּוֹרָ֔א אֲשֶׁר֙ לֹא־יִשָּׂ֣א פָנִ֔ים וְלֹ֥א יִקַּ֖ח שֹֽׁחַד׃",
               "link": "/Deuteronomy/10",
               "ref": "Deuteronomy 10:17",
-              "sourceHeRef": "דברים י:יז - תכונות אלוהים",
-              "sourceRef": "Deuteronomy 10:17 - God's attributes"
+              "sourceHeRef": "דברים י:יז - תכונות אלוהים: עליון, נורא וצדיק",
+              "sourceRef": "Deuteronomy 10:17 - God's attributes: supreme, mighty, and just"
             }
           ]
         }
@@ -126,12 +165,25 @@
         "Verses": {
           "comments": [
             {
+              "commentary": {
+                "Context": {
+                  "comments": [
+                    {
+                      "en": "Hannah continues her song, describing God’s power over life and death.",
+                      "he": "חנה ממשיכה את שירה, ותארת את כוחו של אלוהים על החיים והמוות.",
+                      "ref": "llm-context: Siddur Ashkenaz, Weekday, Shacharit, Amidah, Divine Might 7",
+                      "sourceHeRef": "",
+                      "sourceRef": ""
+                    }
+                  ]
+                }
+              },
               "en": "The L<small>ORD</small> deals death and gives life,<br>Casts down into Sheol and raises up.",
               "he": "יְהֹוָ֖ה מֵמִ֣ית וּמְחַיֶּ֑ה מוֹרִ֥יד שְׁא֖וֹל וַיָּֽעַל׃",
               "link": "/I Samuel/2",
               "ref": "I Samuel 2:6",
-              "sourceHeRef": "שמואל א ב:ו - שלטונו של אלוהים על חיים ומוות",
-              "sourceRef": "I Samuel 2:6 - God's Control Over Life and Death"
+              "sourceHeRef": "שמואל א ב:ו - כוחו של אלוהים על החיים והמוות",
+              "sourceRef": "I Samuel 2:6 - God’s Power Over Life and Death"
             }
           ]
         }

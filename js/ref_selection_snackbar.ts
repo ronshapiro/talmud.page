@@ -44,7 +44,6 @@ const findSefariaRef = (node: Node | null): FindSefariaRefReturnType => {
   let highlightId;
   while (node?.parentElement) {
     const $parentElement = $(node.parentElement);
-    console.log($parentElement);
     isEnglish = (
       isEnglish
         || $parentElement.hasClass("english")
@@ -146,7 +145,6 @@ class SelectionState {
     const selection = document.getSelection()!;
     this.selectedText = selection.toString().trim() ?? "";
     const {isEnglish, hebrew, translation} = this.sefariaRef;
-    console.log(isEnglish, translation, hebrew);
     const entireNodeAndText = isEnglish ? translation : hebrew;
     if (entireNodeAndText === undefined) {
       throw new Error(`Text is undefined: ${JSON.stringify(this.sefariaRef)}`);
@@ -413,12 +411,13 @@ const onSelectionChange = () => {
     buttons.push(reportLoggedOutCorrection(sefariaRef, sefariaUrl));
   }
 
-  const hideRef = (
-    window.location.hostname !== "localhost" && (
+  const hideRef = (() => {
+    if (ref.startsWith("llm-context:")) return true;
+    return window.location.hostname !== "localhost" && (
       window.location.pathname.startsWith("/Siddur")
         || window.location.pathname.startsWith("/BirkatHamazon")
-    )
-  );
+    );
+  })();
   snackbars.textSelection.show(hideRef ? "" : ref, buttons);
 };
 

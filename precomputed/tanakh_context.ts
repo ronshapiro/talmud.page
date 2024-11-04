@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import {
   GoogleGenerativeAI,
   GenerativeModel,
@@ -137,6 +138,28 @@ export class Gemini extends PromptRequester {
 
   static flash1_5(): Gemini { // eslint-disable-line camelcase
     const GEMINI_API_KEY = checkNotUndefined(process.env.GEMINI_API_KEY, "GEMINI_API_KEY");
+
+    const hebrewEnglish = (description: string): any => {
+      return {
+        type: SchemaType.OBJECT,
+        description,
+        required: ["hebrew", "english"],
+        properties: {
+          hebrew: {type: SchemaType.STRING},
+          english: {type: SchemaType.STRING},
+        },
+      };
+    };
+    const verseItem = hebrewEnglish("Per-verse context");
+    verseItem.required.push("ref");
+    verseItem.properties.ref = {
+      type: SchemaType.STRING, description: "The <book> <chapter>:<verse> provided.",
+    };
+    verseItem.required.push("surroundingContext");
+    verseItem.properties.surroundingContext = hebrewEnglish([
+      "A sentence fragment of describing the surrounding context that is useful to understand the how/why of the verse.",
+    ].join(""));
+
     const modelConfiguration = new GoogleGenerativeAI(GEMINI_API_KEY).getGenerativeModel({
       model: "gemini-1.5-flash",
       generationConfig: {
@@ -144,25 +167,13 @@ export class Gemini extends PromptRequester {
         temperature: .4,
         responseMimeType: "application/json",
         responseSchema: {
-          type: SchemaType.ARRAY,
-          items: {
-            type: SchemaType.OBJECT,
-            required: ["ref", "surroundingContext", "english", "hebrew"],
-            properties: {
-              ref: {type: SchemaType.STRING, description: "The <book> <chapter>:<verse> provided."},
-              english: {type: SchemaType.STRING, description: "The context of the verse in English"},
-              hebrew: {type: SchemaType.STRING, description: "The context of the verse in Hebrew"},
-              surroundingContext: {
-                type: SchemaType.OBJECT,
-                description: "Any relevant surrounding context that is useful to understand the how/why of the verse",
-                required: ["english", "hebrew"],
-                properties: {
-                  english: {type: SchemaType.STRING, description: "The surrounding context of the verse in English"},
-                  hebrew: {type: SchemaType.STRING, description: "The surrounding context of the verse in Hebrew"},
-
-                },
-              },
-
+          type: SchemaType.OBJECT,
+          required: ["chapterHeading", "byVerse"],
+          properties: {
+            chapterHeading: hebrewEnglish("A heading for the entire chapter"),
+            byVerse: {
+              type: SchemaType.ARRAY,
+              items: verseItem,
             },
           },
         },
@@ -230,11 +241,12 @@ function chapterPrompt(chapter: ApiResponse): string {
     "brief heading in English and Hebrew for each verse which summarizes the context/topic of what is discussed. Draw in context from",
     "the surrounding verses (and your knowledge about the book and surrounding chapters, when ",
     "necessary) to provide the heading. Prefer brevity and conciseness over being elaborate; but remain clear if the heading would otherwise be vague.",
-    "When the subject of a verse is not obvious from itself, or when it describes a particular case/setting which is not obvious from the verse itself, include the \"longer\" nested object that provides more detail.",
     // "The key here is that when the verse is vague on its own, the heading should assist.",
     "\n",
     "When multiple verses are part of a logical group, prefer to use the same heading.",
     "Each verse should have a heading.",
+    "\n",
+    "When writing headings, if the verse refers to a specific subject (a person, a type of sacrifice, q unique example of a law, etc) that is not obvious from the text of the verse itself, include that. Same if the verse is part of a sequence of verses describing a process or a story, refer to that so that the reader can understand where the verse takes place.",
     "\n",
     "Here is the data:",
     "\n",
@@ -265,6 +277,8 @@ function chapterPrompt(chapter: ApiResponse): string {
   /* eslint-enable max-len */
 }
 
+const TESTING = false;
+
 export async function llmMain(): Promise<void> {
   const requester = Gemini.flash1_5();
   // const requester = new OpenAi("gpt-4o-mini");
@@ -273,23 +287,32 @@ export async function llmMain(): Promise<void> {
   const result: Record<string, any> = {errors: []};
   await parallelizeRun(
     async function runLlm(chapter) { // eslint-disable-line prefer-arrow-callback
-      if (chapter.title !== "Numbers 6") return;
+      if (TESTING && chapter.title !== "Numbers 6") return;
       console.log(chapter.title); // eslint-disable-line no-console
       const prompt = chapterPrompt(chapter);
 
       try {
-        const response: any[] = await model.makeRequest(prompt, new ConsoleLogger());
-        for (const verse of response) {
+        const response: any = await model.makeRequest(prompt, new ConsoleLogger());
+        if (TESTING) {
+          console.log(response.chapterHeading);
+          console.log(response.byVerse);
+        }
+
+        result[chapter.title] = response.chapterHeading;
+        for (const verse of response.byVerse) {
           result[verse.ref] = verse;
         }
       } catch (e: any) {
+        if (TESTING) console.log(e);
         result.errors.push(chapter.title);
         for (const verse of chapter.sections) {
           result[verse.ref] = e.message;
         }
       }
     }, 100);
-  writeJson(`precomputed/tanakh_contexts_${requester.name()}.json`, result);
+  if (!TESTING) {
+    writeJson(`precomputed/tanakh_contexts_${requester.name()}.json`, result);
+  }
 }
 
-// llmMain();
+llmMain();
