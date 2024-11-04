@@ -1,8 +1,6 @@
 /* eslint-disable import/first */
 jest.mock("../fetch.ts", () => {
-  // eslint-disable-next-line @typescript-eslint/no-var-requires,global-require
-  const fetch = require("make-fetch-happen");
-  return {fetch};
+  return {fetch: "unused"};
 });
 
 import * as fs from "fs";
