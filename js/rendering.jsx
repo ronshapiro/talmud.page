@@ -345,11 +345,9 @@ class CommentarySection extends Component {
     if (DEBUG_EXPAND_ALL_COMMENTARIES_BY_DEFAULT) {
       setTimeout(() => {
         const {commentaries, toggleShowing, sectionLabel} = this.props;
-        for (const commentaryKind of this.context.commentaryTypes) {
-          if (commentaryKind.englishName in commentaries) {
-            toggleShowing(sectionLabel, commentaryKind.className);
-          }
-        }
+        this.forEachCommentary(commentaries, (__, commentaryKind) => {
+          toggleShowing(sectionLabel, commentaryKind.className);
+        });
       }, 100);
     }
   }
