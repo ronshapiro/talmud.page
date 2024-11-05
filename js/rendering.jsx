@@ -12,10 +12,10 @@ import {v4 as newUuid} from "uuid";
 import {addDriveComments} from "./addDriveComments.ts";
 import {amudMetadata} from "./amud.ts";
 import {CorrectionModal} from "./CorrectionModal.tsx";
+import {IndividualComment} from "./IndividualComment.tsx";
 import {FeedbackView} from "./Feedback.tsx";
 import {hebrewSearchRegex} from "../hebrew";
-import isEmptyText from "./is_empty_text.ts";
-import {$} from "./jquery";
+import {$, addJqueryExtensionMethods} from "./jquery";
 import {LocalStorageInt, LocalStorageLru} from "./localStorage";
 import {
   NextButton,
@@ -35,159 +35,7 @@ import {Keybindings} from "./Keybindings";
 
 const JSX_NOOP = null;
 
-$.fn.extend({
-  betterDoubleClick(fn) {
-    this.off("betterDoubleClick");
-    this.on("betterDoubleClick", fn);
-    if (!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)) {
-      let lastTime = 0;
-      this.off("click");
-      this.click((event) => {
-        const now = Date.now();
-        if (now - lastTime <= 1000) {
-          fn(event);
-          lastTime = 0;
-        } else {
-          lastTime = now;
-        }
-      });
-    } else {
-      this.off("dblclick");
-      this.dblclick(fn);
-    }
-    return this;
-  },
-  isInViewport() {
-    const elementTop = $(this).offset().top;
-    const elementBottom = elementTop + $(this).outerHeight();
-
-    const viewportTop = $(window).scrollTop();
-    const viewportBottom = viewportTop + $(window).height();
-
-    return elementBottom > viewportTop && elementTop < viewportBottom;
-  },
-});
-
-const stringOrListToString = (stringOrList) => {
-  return typeof stringOrList === "string"
-    ? stringOrList
-    : stringOrList.join("<br>");
-};
-
-class CommentRow extends Component {
-  static propTypes = {
-    comment: PropTypes.object,
-    commentaryKind: PropTypes.object,
-  };
-
-  static contextType = ConfigurationContext;
-
-  state = {};
-
-  toggleDisplayEnglishSteinsaltzWithHebrew() {
-    this.setState(previousState => {
-      return {
-        ...previousState,
-        displayEnglishSteinsaltzWithHebrew: !previousState.displayEnglishSteinsaltzWithHebrew,
-      };
-    });
-  }
-
-  renderTableRow(key, hebrew, english, options = {}) {
-    const {comment, commentaryKind} = this.props;
-    const classes = options.extraClasses || [];
-    const ref = options.overrideRef || comment.ref;
-    const expandableTranslations = (
-      this.context.translationOption() === "both"
-        && localStorage.hideGemaraTranslationByDefault === "true"
-        && commentaryKind.englishName === "Translation");
-
-    classes.push("commentaryRow", "commentaryRow2", /* used in CSS */ commentaryKind.className);
-    const createRow = (_key, _hebrew, _english) => (
-      <TableRow
-        key={_key}
-        hebrew={_hebrew}
-        english={_english}
-        sefaria-ref={ref}
-        link={comment.link}
-        classes={classes}
-        expandEnglishByDefault={
-          commentaryKind.englishName === "Translation" && this.context.expandEnglishByDefault()
-        }
-        hebrewDoubleClickListener={
-          expandableTranslations
-            ? () => this.toggleDisplayEnglishSteinsaltzWithHebrew()
-            : undefined
-        }
-      />
-    );
-    return (
-      <React.Fragment key={key}>
-        {createRow("main", hebrew, expandableTranslations ? "" : english)}
-        {expandableTranslations && this.state.displayEnglishSteinsaltzWithHebrew
-         && createRow("main-translation", "", english)}
-      </React.Fragment>
-    );
-  }
-
-  render() {
-    const {comment, commentaryKind} = this.props;
-
-    const output = [];
-    if (commentaryKind.showTitle) {
-      const titleRow = this.renderTableRow(
-        "title",
-        comment.sourceHeRef,
-        isEmptyText(comment.en) ? "" : comment.sourceRef);
-      output.push(<strong>{titleRow}</strong>);
-      if (comment.subtitle) {
-        const subtitleRow = this.renderTableRow(
-          "subtitle",
-          comment.subtitle.he,
-          this.context.translationOption() === "just-hebrew" || stringOrListToString(comment.en).length === 0
-            ? undefined
-            : comment.subtitle.en);
-        output.push(<strong>{subtitleRow}</strong>);
-      }
-    }
-
-    if (Array.isArray(comment.he) && Array.isArray(comment.en)
-        && comment.he.length === comment.en.length
-        // Make sure that if there are nested arrays, the flattened length also matches. This is a
-        // lazy-person JaggedArray size check.
-        && comment.he.flat(Infinity).length === comment.en.flat(Infinity).length) {
-      const hebrew = comment.he.flat(Infinity);
-      const english = comment.en.flat(Infinity);
-      for (let i = 0; i < hebrew.length; i++) {
-        const lineRef = (() => {
-          if (comment.expandedRefsAfterRewriting) return comment.expandedRefsAfterRewriting[i];
-          if (commentaryKind.nestedRefSpacer) {
-            return `${comment.ref}${commentaryKind.nestedRefSpacer}${i + 1}`;
-          }
-          if (comment.expandedRefPrefix) return `${comment.expandedRefPrefix} ${i + 1}`;
-          return "ignore-drive";
-        })();
-
-        const extraClasses = (
-          (comment.originalRefsBeforeRewriting
-           && comment.originalRefsBeforeRewriting.includes(lineRef))
-            ? ["directlyReferencedLine"] : []);
-        output.push(this.renderTableRow(i, hebrew[i], english[i], {
-          overrideRef: lineRef,
-          extraClasses,
-        }));
-      }
-    } else {
-      output.push(
-        this.renderTableRow(
-          "joined comments",
-          stringOrListToString(comment.he),
-          stringOrListToString(comment.en)));
-    }
-
-    return output;
-  }
-}
+addJqueryExtensionMethods();
 
 function commentaryHighlightColors(commentary, colors) {
   if (!colors) colors = new Set();
@@ -199,6 +47,10 @@ function commentaryHighlightColors(commentary, colors) {
       nested => commentaryHighlightColors(nested, colors));
   }
   return colors;
+}
+function commentaryHighlightIndicators(commentary) {
+  return Array.from(commentaryHighlightColors(commentary)).map(
+    color => <span key={color} className={`highlighted-commentary-indicator-${color}`}>●</span>);
 }
 
 const MAX_BUTTONS_TO_SHOW_BEFORE_SHOWING_MORE = 7;
@@ -269,7 +121,7 @@ class CommentarySection extends Component {
         if (!seen.has(comment.ref)) {
           seen.add(comment.ref);
           output.push(
-            <CommentRow
+            <IndividualComment
               key={"commentRow" + comment.ref}
               comment={comment}
               commentaryKind={commentaryKind}
@@ -443,16 +295,7 @@ class CommentarySection extends Component {
       // Wrap in a span so that the commentary colors don't get their own flex spacing separate from
       // the button.
       <span key={commentaryKind.englishName}>
-        {button}
-        {!isShowing && Array.from(commentaryHighlightColors(commentary)).map(
-          color => (
-            <span
-              key={commentaryKind.englishName + color}
-              className={`highlighted-commentary-indicator-${color}`}>
-              ●
-            </span>
-          ),
-        )}
+        {button} {!isShowing && commentaryHighlightIndicators(commentary)}
       </span>
     );
   }
