@@ -40,10 +40,10 @@ function commentaryHighlightColors(commentary: Commentary, colors?: Set<string>)
   }
   return colors;
 }
-function commentaryHighlightIndicators(commentary: Commentary): React.ReactElement {
+function commentaryHighlightIndicators(commentary: Commentary): React.ReactElement[] {
   const result = Array.from(commentaryHighlightColors(commentary)).map(
     color => <span key={color} className={`highlighted-commentary-indicator-${color}`}>●</span>);
-  return <>{result}</>;
+  return result;
 }
 
 function InternalTableRow(
