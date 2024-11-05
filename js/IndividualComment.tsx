@@ -87,18 +87,17 @@ export function IndividualComment({
 }: {
   comment: any;
   commentaryKind: any;
-}): React.ReactElement[] {
+}): React.ReactElement {
   const output = [];
   if (commentaryKind.showTitle) {
     const titleRow = (
       <InternalTableRow
-        key="title"
         hebrew={comment.sourceHeRef}
         english={isEmptyText(comment.en) ? "" : comment.sourceRef}
         comment={comment}
         commentaryKind={commentaryKind}
         />);
-    output.push(<strong>{titleRow}</strong>);
+    output.push(<strong key="title">{titleRow}</strong>);
   }
 
   if (Array.isArray(comment.he) && Array.isArray(comment.en)
@@ -142,7 +141,7 @@ export function IndividualComment({
         />);
   }
 
-  return output;
+  return <>{output}</>;
 }
 IndividualComment.propTypes = {
   comment: PropTypes.object.isRequired,
