@@ -407,12 +407,18 @@ function TableRow(props: TableRowProps): React.ReactElement {
         />);
   }
 
+  const htmlRef = useHtmlRef<HTMLDivElement>();
+  if (htmlRef.current && context.selectedView === htmlRef.current) {
+    classes.push("keybindingSelectedRow");
+  }
+
   const row = (
     <div
       id={id}
       className={["table-row"].concat(classes).join(" ")}
       sefaria-ref={props["sefaria-ref"]}
       tp-link={link}
+      ref={htmlRef}
       >
       {cells}
     </div>

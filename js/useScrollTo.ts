@@ -22,8 +22,9 @@ function computeNextMatchIndex(currentIndex: number, diff: number, maxIndex: num
   return newIndex;
 }
 
-interface Scrolling {
+export interface Scrolling {
   currentMatch: number | undefined;
+  currentMatchedView: HTMLElement | undefined;
   matches: number,
   clearState: () => void;
   scrollToDiffedIndex: (diff: number) => void;
@@ -37,6 +38,9 @@ function* iterateOutwards<T>(array: T[], index: number): Generator<T> {
   const maxDelta = Math.max(
     Math.abs(array.length - index),
     Math.abs(index - array.length));
+  if (maxDelta > 100_000) {
+    throw new Error(maxDelta.toString());
+  }
 
   for (let delta = 1; delta < maxDelta; delta++) {
     const candidates = [array[index - delta], array[index + delta]];
@@ -86,13 +90,40 @@ export function useScrollTo(jqueryQuery: string, options?: Options): Scrolling {
     setCurrentMatch(newIndex);
     const newMatchedView = matches[newIndex];
     setCurrentMatchedView(newMatchedView);
-    $("html, body").animate({scrollTop: $(newMatchedView).offset().top}, options?.speed ?? 0);
+    if (!$(newMatchedView).isInViewport()) {
+      const viewportTop = $(window).scrollTop();
+      const viewportBottom = viewportTop + $(window).height();
+      const viewportHeight = (viewportBottom - viewportTop);
+      $("html, body").animate({
+        scrollTop: $(newMatchedView).offset().top - viewportHeight / 4,
+      }, options?.speed ?? 0);
+    }
   };
+
+  /*
+  // Fix: any typing, and name
+  const adjuster = (element: any) => {
+    console.log("adjuster!", element.id);
+    const newMatches = Array.from($(jqueryQuery))
+    setMatches(newMatches);
+    setLastMatches(matches);
+    for (let i = 0; i < newMatches.length; i++) {
+      console.log(newMatches[i].id);
+      if (newMatches[i].id === element.id) {
+        console.log("!!!!!", i);
+        setCurrentMatch(i);
+        setCurrentMatchedView(newMatches[i]);
+      }
+    }
+  };
+  */
 
   return {
     currentMatch: currentMatch === CURRENT_MATCH_UNSET ? undefined : currentMatch,
+    currentMatchedView,
     matches: matches.length,
     clearState,
     scrollToDiffedIndex,
+    // adjuster,
   };
 }

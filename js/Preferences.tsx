@@ -174,6 +174,18 @@ export function Preferences({rerender}: PreferencesViewParams): React.ReactEleme
       ]}
       rerender={rerender}
       localStorageKeyName="offlineMode" />,
+
+    <PreferenceSection
+      title={
+        <span>Enable keyboard shortcuts mode<br /><small>(beta)</small></span>
+      }
+      items={[
+        {value: "true", displayText: "Yes"},
+        {value: "false", displayText: "No"},
+      ]}
+      rerender={rerender}
+      localStorageKeyName="keyboardShortcuts" />,
+
   ];
   if (window.location.host.startsWith("localhost")) {
     options.push(

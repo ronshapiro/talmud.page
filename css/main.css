@@ -682,3 +682,11 @@ h2, .title, .titleHebrew {
 .searchMatchCounter {
     padding: 0 10px;
 }
+
+.keybindingSelectedRow {
+    background: #0f03;
+}
+
+.keybindingSelectedButton {
+    background: #0f06;
+}

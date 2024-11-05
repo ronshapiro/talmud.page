@@ -37,6 +37,8 @@ const JSX_NOOP = null;
 
 $.fn.extend({
   betterDoubleClick(fn) {
+    this.off("betterDoubleClick");
+    this.on("betterDoubleClick", fn);
     if (!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)) {
       let lastTime = 0;
       this.off("click");
@@ -54,6 +56,15 @@ $.fn.extend({
       this.dblclick(fn);
     }
     return this;
+  },
+  isInViewport() {
+    const elementTop = $(this).offset().top;
+    const elementBottom = elementTop + $(this).outerHeight();
+
+    const viewportTop = $(window).scrollTop();
+    const viewportBottom = viewportTop + $(window).height();
+
+    return elementBottom > viewportTop && elementTop < viewportBottom;
   },
 });
 
@@ -84,13 +95,14 @@ class CommentRow extends Component {
 
   renderTableRow(key, hebrew, english, options = {}) {
     const {comment, commentaryKind} = this.props;
-    const extraClasses = options.extraClasses || [];
+    const classes = options.extraClasses || [];
     const ref = options.overrideRef || comment.ref;
     const expandableTranslations = (
       this.context.translationOption() === "both"
         && localStorage.hideGemaraTranslationByDefault === "true"
         && commentaryKind.englishName === "Translation");
 
+    classes.push("commentaryRow", "commentaryRow2", /* used in CSS */ commentaryKind.className);
     const createRow = (_key, _hebrew, _english) => (
       <TableRow
         key={_key}
@@ -98,7 +110,7 @@ class CommentRow extends Component {
         english={_english}
         sefaria-ref={ref}
         link={comment.link}
-        classes={["commentaryRow", /* used in CSS */ commentaryKind.className].concat(extraClasses)}
+        classes={classes}
         expandEnglishByDefault={
           commentaryKind.englishName === "Translation" && this.context.expandEnglishByDefault()
         }
@@ -244,7 +256,7 @@ class CommentarySection extends Component {
       }
       output.push(
         this.renderTableRow(
-          commentaryKind.englishName,
+          `${sectionLabel} ${commentaryKind.englishName}`,
           this.renderButton(commentaryKind, true, commentary),
           ""));
       if (commentaryKind.renderCommentsAsNestedCommentaries && !syntheticCommentaryKinds) {
@@ -309,11 +321,12 @@ class CommentarySection extends Component {
     const overrideFullRow = this.context.translationOption() === "english-side-by-side";
     return (
       <TableRow
+        id={key.replace(/[ .<>:]/g, "__")} // eslint-disable-line unicorn/better-regex
         key={key}
         hebrew={hebrew}
         english={english}
         overrideFullRow={overrideFullRow}
-        classes={["commentaryRow"].concat(extraClasses)}
+        classes={["commentaryRow", "commentaryRow3"].concat(extraClasses)}
         />
     );
   }
@@ -411,11 +424,15 @@ class CommentarySection extends Component {
       return element;
     };
 
+    const id = commentaryKind.className + "__" + sectionLabel;
     const button = applyButtonToFocusRef(
       // eslint-disable-next-line jsx-a11y/anchor-is-valid
       <a
+        id={id}
         key="button"
-        className={this.buttonClasses(commentaryKind, isShowing, commentary)}
+        className={this.buttonClasses(commentaryKind, isShowing, commentary) + (
+          this.context.selectedCommentaryView?.id === id ? " keybindingSelectedButton" : ""
+        )}
         role="button"
         tabIndex="0"
         onClick={onClick}
@@ -981,6 +998,7 @@ export class Renderer {
         // gets booted from the cache, it won't be actually removed here, but if there is a full
         // re-render or refresh, the state could change. That seems probably safe.
         100),
+      forceFullUpdate: () => this.forceUpdate(),
       toggleHighlightedId: (newState, sectionId) => {
         if (newState) {
           context.highlightedIds.add(sectionId);
