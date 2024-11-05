@@ -413,6 +413,7 @@ const onSelectionChange = () => {
 
   const hideRef = (() => {
     if (ref.startsWith("llm-context:")) return true;
+    if (ref === "ignore-drive") return true;
     return window.location.hostname !== "localhost" && (
       window.location.pathname.startsWith("/Siddur")
         || window.location.pathname.startsWith("/BirkatHamazon")
