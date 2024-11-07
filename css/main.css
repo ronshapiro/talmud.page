@@ -279,6 +279,10 @@ h2, .title, .titleHebrew {
     text-align: right;
     width: 100%;
 }
+.segmentCount {
+    font-size: .5em !important;
+    color: #999;
+}
 .titleContainer {
     display: flex;
     align-items: center;

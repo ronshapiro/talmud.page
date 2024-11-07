@@ -21,6 +21,7 @@ import {
   NextButton,
   PreviousButton,
 } from "./NavigationButtons.tsx";
+import {PageTitleMetadata} from "./PageTitleMetadata.tsx";
 import TableRow, {CellText} from "./TableRow.tsx";
 import {
   ConfigurationContext,
@@ -226,7 +227,11 @@ class Amud extends Component {
     );
     return (
       <div className="titleContainer" key="titleContainer">
-        <span className={className} key="title" ref={this.headerRef}>{title}</span>
+        <span className={className} key="title" ref={this.headerRef}>
+          {title}
+          {localStorage.showPageMetadata === "true"
+           && <> <PageTitleMetadata segments={amudData.sections} /></>}
+        </span>
         {removeSectionButton}
       </div>);
   }

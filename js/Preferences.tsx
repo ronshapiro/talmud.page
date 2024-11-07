@@ -165,6 +165,14 @@ export function Preferences({rerender}: PreferencesViewParams): React.ReactEleme
       rerender={rerender}
       localStorageKeyName="expandEnglishByDefault" />,
     <PreferenceSection
+      title="Show page metadata"
+      items={[
+        {value: "true", displayText: "Yes"},
+        {value: "false", displayText: "No"},
+      ]}
+      rerender={rerender}
+      localStorageKeyName="showPageMetadata" />,
+    <PreferenceSection
       title={
         <span>Enable offline mode<br /><small>(beta, recommended only when needed)</small></span>
       }
