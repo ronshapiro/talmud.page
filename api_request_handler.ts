@@ -561,6 +561,23 @@ export abstract class AbstractApiRequestHandler {
     return [[hebrew, english]];
   }
 
+  private dedupeTopicComments(segments: InternalSegment[]) {
+    const currentSugyaTopics = new Set<string>();
+    for (const segment of segments) {
+      if (segment.steinsaltz_start_of_sugya) {
+        currentSugyaTopics.clear();
+      }
+      for (const comment of segment.commentary.comments) {
+        if (comment.englishName !== "Topics") continue;
+        if (currentSugyaTopics.has(comment.ref)) {
+          segment.commentary.removeComment(comment);
+        } else {
+          currentSugyaTopics.add(comment.ref);
+        }
+      }
+    }
+  }
+
   /** Called before postProcessAllSegments(). */
   protected postProcessSegment(segment: InternalSegment): InternalSegment {
     return segment;
@@ -1007,6 +1024,7 @@ export abstract class AbstractApiRequestHandler {
     }
 
     segments = this.injectSegmentSeperators(segments);
+    this.dedupeTopicComments(segments);
     segments = segments.map(x => this.postProcessSegment(x));
     segments = this.postProcessAllSegments(segments, ...extraValues);
 
