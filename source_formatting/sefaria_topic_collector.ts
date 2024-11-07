@@ -1,5 +1,9 @@
 import {Attributes, HtmlVisitor} from "./html_visitor";
 
+const IGNORED_ENTITY_SLUGS = new Set([
+  "israel",
+]);
+
 export class SefariaTopicCollector extends HtmlVisitor {
   entities = new Set<string>();
 
@@ -19,7 +23,7 @@ export class SefariaTopicCollector extends HtmlVisitor {
       }
     }
 
-    if (found) {
+    if (found && !IGNORED_ENTITY_SLUGS.has(href)) {
       this.entities.add(href);
     }
   }
