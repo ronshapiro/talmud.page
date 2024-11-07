@@ -326,7 +326,7 @@ export function CommentariesBlock({
     kindsByClassName)) {
     output.push(
       <InternalTableRow
-        id={commentaryKind.englishName}
+        id={`${sectionLabel} ${commentaryKind.englishName}`}
         key={commentaryKind.englishName + " close button"}
         hebrew={renderButton(commentaryKind, true, commentary)!} />);
 
