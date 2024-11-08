@@ -13,6 +13,7 @@ interface ModalProps {
   onCancel: NullaryFunction<void>;
   acceptText: string;
   onAccept: NullaryFunction<void>;
+  extraButtons?: React.ReactElement[];
 }
 
 export default function Modal(props: ModalProps): React.ReactElement {
@@ -22,6 +23,7 @@ export default function Modal(props: ModalProps): React.ReactElement {
     onCancel,
     acceptText,
     onAccept,
+    extraButtons,
   } = props;
   const modalContainerRef = useHtmlRef<HTMLInputElement>();
   useEffect(() => {
@@ -41,6 +43,7 @@ export default function Modal(props: ModalProps): React.ReactElement {
         <div className="modal-content">
           {content}
           <div style={{display: "flex"}}>
+            {extraButtons}
             <button
               className="mdl-button mdl-js-button mdl-js-ripple-effect modal-cancel"
               style={{marginLeft: "auto"}}
