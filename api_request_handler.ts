@@ -381,7 +381,7 @@ export class InternalSegment {
   commentary = new InternalCommentary();
   hadran?: true;
   // eslint-disable-next-line camelcase
-  steinsaltz_start_of_sugya?: true;
+  startOfSection?: true;
   lastSegmentOfSection?: true;
   defaultMergeWithNext?: true;
 
@@ -419,8 +419,8 @@ export class InternalSegment {
       if (segment.hadran) {
         newSegment.hadran = true;
       }
-      if (segment.steinsaltz_start_of_sugya) {
-        newSegment.steinsaltz_start_of_sugya = true;
+      if (segment.startOfSection) {
+        newSegment.startOfSection = true;
       }
       if (segment.defaultMergeWithNext) {
         newSegment.defaultMergeWithNext = true;
@@ -439,8 +439,9 @@ export class InternalSegment {
     if (this.hadran) {
       json.hadran = this.hadran;
     }
-    if (this.steinsaltz_start_of_sugya) {
-      json.steinsaltz_start_of_sugya = this.steinsaltz_start_of_sugya;
+    if (this.startOfSection) {
+      json.startOfSection = this.startOfSection;
+      json.steinsaltz_start_of_sugya = this.startOfSection;
     }
     if (this.lastSegmentOfSection) {
       json.lastSegmentOfSection = true;
@@ -569,7 +570,7 @@ export abstract class AbstractApiRequestHandler {
   private dedupeTopicComments(segments: InternalSegment[]) {
     const currentSugyaTopics = new Set<string>();
     for (const segment of segments) {
-      if (segment.steinsaltz_start_of_sugya) {
+      if (segment.startOfSection) {
         currentSugyaTopics.clear();
       }
       for (const comment of segment.commentary.comments) {
@@ -624,7 +625,7 @@ export abstract class AbstractApiRequestHandler {
     for (let i = 0; i < segments.length; i++) {
       const segment = segments[i];
       if (segment.ref === SEGMENT_SEPERATOR_REF) {
-        segments[i + 1].steinsaltz_start_of_sugya = true;
+        segments[i + 1].startOfSection = true;
       } else {
         newSegments.push(segment);
       }
@@ -1276,7 +1277,7 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
     for (const comment of segment.commentary.comments) {
       if (comment.englishName === "Steinsaltz"
         && STEINSALTZ_SUGYA_START.test(firstOrOnlyElement(comment.hebrew))) {
-        segment.steinsaltz_start_of_sugya = true;
+        segment.startOfSection = true;
       }
     }
 
@@ -1519,7 +1520,7 @@ function createAnnenuSegment() {
     },
     "Verses",
     consoleLogger));
-  segment.steinsaltz_start_of_sugya = true;
+  segment.startOfSection = true;
   return segment;
 }
 
@@ -1801,7 +1802,7 @@ abstract class LiturgicalApiRequestHandler extends AbstractApiRequestHandler {
       }
 
       const secondSegment = segments[i + 1];
-      secondSegment.steinsaltz_start_of_sugya = firstSegment.steinsaltz_start_of_sugya;
+      secondSegment.startOfSection = firstSegment.startOfSection;
       for (const comment of firstSegment.commentary.comments) {
         secondSegment.commentary.addComment(comment);
       }

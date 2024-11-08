@@ -36,7 +36,7 @@ function referencesMishna(text: string): boolean {
 
 function isMishna(segment: Section): boolean {
   if (segment.ref.endsWith(" 2a:1")) return true;
-  if (!segment.steinsaltz_start_of_sugya) return false;
+  if (!segment.startOfSection) return false;
   if (typeof segment.he !== "string") return false;
   if (startsWithMatni(segment.he)) return true;
 
@@ -103,7 +103,7 @@ for (const book of new Set(Object.values(books.byCanonicalName))) {
           "caching process. Try deleting the cached file and rerunning.",
         ].join());
       }
-      if (segment.steinsaltz_start_of_sugya || isHadranEndOfMasechet) {
+      if (segment.startOfSection || isHadranEndOfMasechet) {
         saveSugya();
         refsInSugya = [];
       }
@@ -123,7 +123,7 @@ for (const book of new Set(Object.values(books.byCanonicalName))) {
     for (const segment of result.sections) {
       if (isMishna(segment)) {
         lastMishna = segment.ref;
-      } else if (segment.steinsaltz_start_of_sugya
+      } else if (segment.startOfSection
         && referencesMishna(segment.commentary!.Steinsaltz.comments[0].he as string)) {
         const pointer = refPointers[lastMishna!] ?? lastMishna;
         if (pointer === undefined) {
