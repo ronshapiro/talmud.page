@@ -129,6 +129,20 @@ type SplitType = [string, string][];
 
 /** A single comment on a text. */
 class Comment {
+  duplicateRefs: string[] = [];
+
+  constructor(
+    readonly englishName: string,
+    readonly hebrew: sefaria.TextType,
+    readonly english: sefaria.TextType,
+    readonly ref: string,
+    readonly sourceRef: string,
+    private sourceHeRef: string,
+    private talmudPageLink?: string,
+    private readonly originalRefsBeforeRewriting?: string[],
+    private readonly expandedRefsAfterRewriting?: string[],
+  ) {}
+
   static create(
     link: sefaria.TextLink,
     sefariaComment: sefaria.TextResponse,
@@ -228,18 +242,6 @@ class Comment {
     return [sourceRef, sourceHeRef];
   }
 
-  constructor(
-    readonly englishName: string,
-    readonly hebrew: sefaria.TextType,
-    readonly english: sefaria.TextType,
-    readonly ref: string,
-    readonly sourceRef: string,
-    private sourceHeRef: string,
-    private talmudPageLink?: string,
-    private readonly originalRefsBeforeRewriting?: string[],
-    private readonly expandedRefsAfterRewriting?: string[],
-  ) {}
-
   toJson(): ApiComment {
     const result: ApiComment = {
       he: this.hebrew,
@@ -256,6 +258,9 @@ class Comment {
     }
     if (this.expandedRefsAfterRewriting) {
       result.expandedRefsAfterRewriting = this.expandedRefsAfterRewriting;
+    }
+    if (this.duplicateRefs.length > 0) {
+      result.duplicateRefs = this.duplicateRefs;
     }
     return result;
   }
@@ -574,6 +579,30 @@ export abstract class AbstractApiRequestHandler {
         } else {
           currentSugyaTopics.add(comment.ref);
         }
+      }
+    }
+  }
+
+  private detectDupes(segments: InternalSegment[]) {
+    const comments: Comment[] = [];
+    for (const segment of segments) {
+      for (const comment of segment.commentary.comments) {
+        if (typeof comment.hebrew !== "string" || comment.hebrew.length === 0) continue;
+        if (comment.englishName === "Verses") continue; // some verses have identical text!
+        comments.push(comment);
+      }
+    }
+
+    const key = (comment: Comment) => `${comment.englishName} // ${comment.hebrew}`;
+    const dupedRefs = new ListMultimap<string, string>();
+    for (const comment of comments) {
+      dupedRefs.put(key(comment), comment.ref);
+    }
+
+    for (const comment of comments) {
+      const dupes = dupedRefs.get(key(comment));
+      if (dupes.length > 1) {
+        comment.duplicateRefs = dupes.filter(x => x !== comment.ref);
       }
     }
   }
@@ -1025,6 +1054,7 @@ export abstract class AbstractApiRequestHandler {
 
     segments = this.injectSegmentSeperators(segments);
     this.dedupeTopicComments(segments);
+    this.detectDupes(segments);
     segments = segments.map(x => this.postProcessSegment(x));
     segments = this.postProcessAllSegments(segments, ...extraValues);
 

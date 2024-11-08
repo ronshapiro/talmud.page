@@ -199,7 +199,6 @@ function reportLoggedOutCorrection(
 class Buttons {
   constructor(
     private sefariaRef: Metadata,
-    private sefariaUrl: string,
     private selectionState: SelectionState,
   ) {}
 
@@ -229,7 +228,6 @@ class Buttons {
         const translation = this.sefariaRef.translation?.text;
         showCorrectionModal({
           ref: this.sefariaRef.ref,
-          url: this.sefariaUrl,
           hebrew,
           hebrewHighlighted: maybeHighlight(hebrew, false),
           translation,
@@ -389,7 +387,7 @@ const onSelectionChange = () => {
   }
   buttons.push(viewOnSefariaButton(ref, sefariaUrl));
 
-  const buttonsImpl = new Buttons(sefariaRef, sefariaUrl, new SelectionState(sefariaRef));
+  const buttonsImpl = new Buttons(sefariaRef, new SelectionState(sefariaRef));
   if ((window as any).SEARCH) {
     buttons.push(buttonsImpl.searchButton());
   }

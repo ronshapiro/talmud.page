@@ -1,6 +1,5 @@
 export interface CorrectionUiInfo {
   ref: string;
-  url: string;
   hebrew: string | undefined;
   hebrewHighlighted: string | undefined;
   translation: string | undefined;

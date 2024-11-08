@@ -1,10 +1,8 @@
-/* global gtag */
 import * as React from "react";
+import {postCorrection} from "./corrections";
 import {CorrectionUiInfo} from "../correctionTypes";
 import {useHtmlRef} from "./hooks";
 import Modal from "./Modal";
-import {postWithRetry} from "./post";
-import {driveClient} from "./google_drive/singleton";
 
 const {
   useState,
@@ -22,7 +20,7 @@ export function showCorrectionModal(data: CorrectionUiInfo): void {
 
 export function CorrectionModal(): React.ReactElement | null {
   const [isShowing, setShowing] = useState(false);
-  const [refData, setRefData] = useState({});
+  const [refData, setRefData] = useState<CorrectionUiInfo | undefined>();
   window.showCorrectionModal = (data: CorrectionUiInfo) => {
     setShowing(true);
     setRefData(data);
@@ -35,14 +33,8 @@ export function CorrectionModal(): React.ReactElement | null {
 
   const onSubmit = (event?: any) => {
     if (event) event.preventDefault();
-    const userText = ref.current.value;
-    postWithRetry("/corrections", {
-      ...refData,
-      userText,
-      user: driveClient.gapi.getSignedInUserEmail(),
-    });
+    postCorrection({...refData!, userText: ref.current.value});
     setShowing(false);
-    gtag("event", "report_correction", {ref});
   };
 
   return (

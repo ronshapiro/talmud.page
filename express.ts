@@ -491,7 +491,6 @@ if (fs.existsSync("sendgrid_api_key")) {
     const params: CorrectionPostData = req.body;
     const {
       ref,
-      url,
       hebrew,
       hebrewHighlighted,
       translation,
@@ -505,6 +504,7 @@ if (fs.existsSync("sendgrid_api_key")) {
     const maybeExcapeHighlightedSection = (text: string | undefined) => {
       return text && EscapeHtmlHighlightCorrections.process(text);
     };
+    const url = `https://www.sefaria.org/${ref.replace(/ /g, "_")}`;
     const isSiddur = pathname.startsWith("/Siddur") || pathname.startsWith("/BirkatHamazon");
     const to = isSiddur ? "siddur@talmud.page" : "corrections@sefaria.org";
     const subject = (

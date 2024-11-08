@@ -3,8 +3,15 @@ import * as PropTypes from "prop-types";
 import isEmptyText from "./is_empty_text";
 import {useConfiguration} from "./context";
 import TableRow from "./TableRow";
+import {ApiComment} from "../apiTypes";
+import {CommentaryType} from "../commentaries";
+import {postCorrection} from "./corrections";
+import {useHtmlRef} from "./hooks";
+import {flatten} from "../sefariaTextType";
+import componentHandler from "./componentHandler";
 
 const {
+  useEffect,
   useState,
 } = React;
 
@@ -24,8 +31,8 @@ function InternalTableRow({
 }: {
   hebrew: string;
   english: string;
-  comment: any;
-  commentaryKind: any;
+  comment: ApiComment;
+  commentaryKind: CommentaryType;
   extraClasses?: string[];
   overrideRef?: string;
 }): React.ReactElement {
@@ -81,12 +88,42 @@ InternalTableRow.propTypes = {
   overrideRef: PropTypes.string,
 };
 
+
+const BUTTON_CLASSES = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent";
+function ReportDuplicateButton({
+  comment,
+  buttonRef,
+}: {
+  comment: ApiComment,
+  buttonRef: React.MutableRefObject<HTMLButtonElement>,
+}): React.ReactElement {
+  const onClick = () => postCorrection({
+    ref: comment.ref,
+    hebrew: flatten(comment.he),
+    hebrewHighlighted: undefined,
+    translation: flatten(comment.en),
+    translationHighlighted: undefined,
+    pathname: window.location.pathname,
+    userText: `Duplicate of ${comment.duplicateRefs!.join(", ")}`,
+  });
+  const buttonText = `לדווח כפילויות: ${comment.duplicateRefs!.join(", ")}`;
+  return (
+    <TableRow
+      key="report duplicate"
+      hebrew={
+        <button ref={buttonRef} className={BUTTON_CLASSES} onClick={onClick}>{buttonText}</button>
+      }
+      classes={["commentaryRow"]} />
+  );
+}
+
+
 export function IndividualComment({
   comment,
   commentaryKind,
 }: {
-  comment: any;
-  commentaryKind: any;
+  comment: ApiComment;
+  commentaryKind: CommentaryType;
 }): React.ReactElement {
   const output = [];
   if (commentaryKind.showTitle) {
@@ -113,7 +150,6 @@ export function IndividualComment({
         if (commentaryKind.nestedRefSpacer) {
           return `${comment.ref}${commentaryKind.nestedRefSpacer}${i + 1}`;
         }
-        if (comment.expandedRefPrefix) return `${comment.expandedRefPrefix} ${i + 1}`;
         return "ignore-drive";
       })();
 
@@ -139,6 +175,16 @@ export function IndividualComment({
         comment={comment}
         commentaryKind={commentaryKind}
         />);
+  }
+
+  const buttonRef = useHtmlRef<HTMLButtonElement>();
+  useEffect(() => {
+    if (buttonRef.current) {
+      componentHandler.upgradeElement(buttonRef.current);
+    }
+  });
+  if ((comment.duplicateRefs?.length ?? 0) > 0) {
+    output.push(<ReportDuplicateButton key="dupe" comment={comment} buttonRef={buttonRef} />);
   }
 
   return <>{output}</>;

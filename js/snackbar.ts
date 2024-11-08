@@ -174,6 +174,10 @@ const Kinds = {
     },
     maxShowCount: 9999999,
   }),
+
+  REPORTED_ISSUE_SENT: new Kind({
+    cssClass: "reportedIssueSent",
+  }),
 };
 
 class Snackbar {
@@ -234,6 +238,7 @@ class SnackbarManager {
   textSelection: Snackbar;
   errors: Snackbar;
   share: Snackbar;
+  reportedIssueSent: Snackbar;
 
   startupKind: Kind | undefined;
 
@@ -257,6 +262,7 @@ class SnackbarManager {
     this.textSelection = new Snackbar(Kinds.TEXT_SELECTION, this);
     // TODO: make each error it's own snackbar? That way each can animate on its own
     this.errors = new Snackbar(Kinds.ERRORS, this);
+    this.reportedIssueSent = new Snackbar(Kinds.REPORTED_ISSUE_SENT, this);
   }
 }
 
