@@ -37,8 +37,11 @@ export function Keybindings(): React.ReactElement {
   };
   let bindings: Record<string, any> = {
     /* eslint-disable quote-props */
+    // TODO: if there's no selected row, use what's on screen? Or have some way to change the
+    // position with the mouse?
     "j": () => switchRow(1, !currentMatch || currentMatch + 1 !== matches),
     "k": () => switchRow(-1, (currentMatch ?? 0) > 0),
+    // TODO: these need to adapt to the translation settings
     "e n": () => $(currentMatchedView).find(".english").trigger("betterDoubleClick"),
     "s t": () => $(currentMatchedView).find(".hebrew").trigger("betterDoubleClick"),
     "n": () => switchButton(1),

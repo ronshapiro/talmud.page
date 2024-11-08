@@ -301,6 +301,8 @@ export function CommentariesBlock({
       if (!commentary) {
         // TODO: investigate a better solution for the indexByClassName overlapping for Translation
         // and Steinsaltz (it appears when side-by-side is used)
+        // TODO: this also causes problems for keyboard shortcuts with an zero-height row for the
+        // close button
         if (commentaryClassName === "translation") {
           commentary = commentaries.Steinsaltz;
         }
