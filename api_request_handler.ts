@@ -8,6 +8,7 @@ import {
   Section,
   ApiComment,
 } from "./apiTypes";
+import {surroundingContext} from "./arrays";
 import {Book, books, internalLinkableRef} from "./books";
 import {ALL_COMMENTARIES, CommentaryType} from "./commentaries";
 import {readUtf8} from "./files";
@@ -29,7 +30,8 @@ import {
   segmentCount,
 } from "./precomputed";
 import {dedupeEnglishRabbiNames, dedupeHebrewRabbiNames, topicJson} from "./precomputed/topics";
-import {llmGeneratedTopic} from "./precomputed/tanakh_context_cache";
+import {llmGeneratedTopic, LlmGeneratedTopic} from "./precomputed/tanakh_context_cache";
+import {getTanakhPassage} from "./precomputed/tanakh_passages";
 import {expandRef} from "./ref_expander";
 import {splitOnBookName} from "./refs";
 import {RequestMaker} from "./request_makers";
@@ -128,6 +130,10 @@ function stripPossiblePrefix(text: string, prefix: string): string {
 
 type SplitType = [string, string][];
 
+function llmGeneratedTopicForLink(link: sefaria.TextLink): LlmGeneratedTopic | undefined {
+  return llmGeneratedTopic(link.ref) ?? llmGeneratedTopic(link.sourceRef);
+}
+
 /** A single comment on a text. */
 class Comment {
   duplicateRefs: string[] = [];
@@ -202,7 +208,7 @@ class Comment {
     }
 
     if (englishName === "Verses") {
-      const llmResult = llmGeneratedTopic(ref);
+      const llmResult = llmGeneratedTopicForLink(link);
       if (llmResult === undefined) {
         // TODO: this happens for spanned refs!
         logger.error("No result for", ref);
@@ -864,10 +870,20 @@ export abstract class AbstractApiRequestHandler {
   }
 
   protected maybeRewriteLinkRef(commentaryType: CommentaryType, link: sefaria.TextLink): void {
-    if (!link.ref.includes(":")
-      && books.byCanonicalName[link.collectiveTitle?.en ?? ""]?.isBibleBook()) {
-      link.expandedRefsAfterRewriting = (
-        _.range(1, segmentCount(link.ref)!).map(x => `${link.ref}:${x}`));
+    if (books.byCanonicalName[link.collectiveTitle?.en ?? ""]?.isBibleBook()) {
+      if (link.ref.includes(":")) {
+        const expandedRefs = expandRef(link.ref)!;
+        const passage = getTanakhPassage(expandedRefs[0]);
+        if (passage) {
+          link.originalRefsBeforeRewriting = expandedRefs;
+          const context = surroundingContext(passage, expandedRefs[0], 10);
+          link.expandedRefsAfterRewriting = context;
+          link.ref = `${context[0]}-${splitOnBookName(context.at(-1)!)[1]}`;
+        }
+      } else {
+        link.expandedRefsAfterRewriting = (
+          _.range(1, segmentCount(link.ref)!).map(x => `${link.ref}:${x}`));
+      }
     }
     if (this.isMesoratHashasTalmudRef(commentaryType, link)) {
       const newRef = getSugyaSpanningRef(link.collectiveTitle?.en ?? "", link.ref);
@@ -1119,7 +1135,7 @@ export abstract class AbstractApiRequestHandler {
       const {comment, footnotes} = FootnotesExtractor.extract(linkResponse);
       commentary.addComment(Comment.create(link, comment, commentaryType.englishName, this.logger));
       if (commentaryType.englishName === "Verses") {
-        const context = llmGeneratedTopic(linkRef)?.surroundingContext;
+        const context = llmGeneratedTopicForLink(link)?.surroundingContext;
         if (context) {
           nestedCommentary.addComment(new Comment(
             "Context",

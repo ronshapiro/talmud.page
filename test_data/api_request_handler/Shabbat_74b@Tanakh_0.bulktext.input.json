@@ -1,83 +1,285 @@
 {
-  "Exodus 35:18": {
-    "en": "the pegs for the Tabernacle, the pegs for the enclosure, and their cords;",
-    "he": "אֶת־יִתְדֹ֧ת הַמִּשְׁכָּ֛ן וְאֶת־יִתְדֹ֥ת הֶחָצֵ֖ר וְאֶת־מֵיתְרֵיהֶֽם׃",
-    "heRef": "שמות ל״ה:י״ח",
+  "Exodus 35:21-35:29": {
+    "en": [
+      "And everyone who excelled in ability and everyone whose spirit moved him came, bringing to the L<small>ORD</small> his offering for the work of the Tent of Meeting and for all its service and for the sacral vestments.",
+      "Men and women, all whose hearts moved them, all who would make an elevation offering of gold to the L<small>ORD</small>, came bringing brooches, earrings, rings, and pendants—gold objects of all kinds.",
+      "And everyone who had in his possession blue, purple, and crimson yarns, fine linen, goats’ hair, tanned ram skins, and dolphin skins, brought them;",
+      "everyone who would make gifts of silver or copper brought them as gifts for the L<small>ORD</small>; and everyone who had in his possession acacia wood for any work of the service brought that.",
+      "And all the skilled women spun with their own hands, and brought what they had spun, in blue, purple, and crimson yarns, and in fine linen.",
+      "And all the women who excelled in that skill spun the goats’ hair.",
+      "And the chieftains brought lapis lazuli and other stones for setting, for the ephod and for the breastpiece;",
+      "and spices and oil for lighting, for the anointing oil, and for the aromatic incense.",
+      "Thus the Israelites, all the men and women whose hearts moved them to bring anything for the work that the L<small>ORD</small>, through Moses, had commanded to be done, brought it as a freewill offering to the L<small>ORD</small>."
+    ],
+    "he": [
+      "וַיָּבֹ֕אוּ כׇּל־אִ֖ישׁ אֲשֶׁר־נְשָׂא֣וֹ לִבּ֑וֹ וְכֹ֡ל אֲשֶׁר֩ נָדְבָ֨ה רוּח֜וֹ אֹת֗וֹ הֵ֠בִ֠יאוּ אֶת־תְּרוּמַ֨ת יְהֹוָ֜ה לִמְלֶ֨אכֶת אֹ֤הֶל מוֹעֵד֙ וּלְכׇל־עֲבֹ֣דָת֔וֹ וּלְבִגְדֵ֖י הַקֹּֽדֶשׁ׃",
+      "וַיָּבֹ֥אוּ הָאֲנָשִׁ֖ים עַל־הַנָּשִׁ֑ים כֹּ֣ל <b>׀</b> נְדִ֣יב לֵ֗ב הֵ֠בִ֠יאוּ חָ֣ח וָנֶ֜זֶם וְטַבַּ֤עַת וְכוּמָז֙ כׇּל־כְּלִ֣י זָהָ֔ב וְכׇל־אִ֕ישׁ אֲשֶׁ֥ר הֵנִ֛יף תְּנוּפַ֥ת זָהָ֖ב לַיהֹוָֽה׃",
+      "וְכׇל־אִ֞ישׁ אֲשֶׁר־נִמְצָ֣א אִתּ֗וֹ תְּכֵ֧לֶת וְאַרְגָּמָ֛ן וְתוֹלַ֥עַת שָׁנִ֖י וְשֵׁ֣שׁ וְעִזִּ֑ים וְעֹרֹ֨ת אֵילִ֧ם מְאׇדָּמִ֛ים וְעֹרֹ֥ת תְּחָשִׁ֖ים הֵבִֽיאוּ׃",
+      "כׇּל־מֵרִ֗ים תְּר֤וּמַת כֶּ֙סֶף֙ וּנְחֹ֔שֶׁת הֵבִ֕יאוּ אֵ֖ת תְּרוּמַ֣ת יְהֹוָ֑ה וְכֹ֡ל אֲשֶׁר֩ נִמְצָ֨א אִתּ֜וֹ עֲצֵ֥י שִׁטִּ֛ים לְכׇל־מְלֶ֥אכֶת הָעֲבֹדָ֖ה הֵבִֽיאוּ׃",
+      "וְכׇל־אִשָּׁ֥ה חַכְמַת־לֵ֖ב בְּיָדֶ֣יהָ טָו֑וּ וַיָּבִ֣יאוּ מַטְוֶ֗ה אֶֽת־הַתְּכֵ֙לֶת֙ וְאֶת־הָֽאַרְגָּמָ֔ן אֶת־תּוֹלַ֥עַת הַשָּׁנִ֖י וְאֶת־הַשֵּֽׁשׁ׃",
+      "וְכׇ֨ל־הַנָּשִׁ֔ים אֲשֶׁ֨ר נָשָׂ֥א לִבָּ֛ן אֹתָ֖נָה בְּחׇכְמָ֑ה טָו֖וּ אֶת־הָעִזִּֽים׃",
+      "וְהַנְּשִׂאִ֣ם הֵבִ֔יאוּ אֵ֚ת אַבְנֵ֣י הַשֹּׁ֔הַם וְאֵ֖ת אַבְנֵ֣י הַמִּלֻּאִ֑ים לָאֵפ֖וֹד וְלַחֹֽשֶׁן׃",
+      "וְאֶת־הַבֹּ֖שֶׂם וְאֶת־הַשָּׁ֑מֶן לְמָא֕וֹר וּלְשֶׁ֙מֶן֙ הַמִּשְׁחָ֔ה וְלִקְטֹ֖רֶת הַסַּמִּֽים׃",
+      "כׇּל־אִ֣ישׁ וְאִשָּׁ֗ה אֲשֶׁ֨ר נָדַ֣ב לִבָּם֮ אֹתָם֒ לְהָבִיא֙ לְכׇל־הַמְּלָאכָ֔ה אֲשֶׁ֨ר צִוָּ֧ה יְהֹוָ֛ה לַעֲשׂ֖וֹת בְּיַד־מֹשֶׁ֑ה הֵבִ֧יאוּ בְנֵי־יִשְׂרָאֵ֛ל נְדָבָ֖ה לַיהֹוָֽה׃ <span class=\"mam-spi-pe\">{פ}</span><br/>"
+    ],
+    "heRef": "שמות ל״ה:כ״א-כ״ט",
     "lang": "en",
     "primary_category": "Tanakh",
-    "ref": "Exodus 35:18",
-    "url": "Exodus.35.18"
+    "ref": "Exodus 35:21-29",
+    "url": "Exodus.35.21-29"
   },
-  "Exodus 35:26": {
-    "en": "And all the women who excelled in that skill spun the goats’ hair.",
-    "he": "וְכׇ֨ל־הַנָּשִׁ֔ים אֲשֶׁ֨ר נָשָׂ֥א לִבָּ֛ן אֹתָ֖נָה בְּחׇכְמָ֑ה טָו֖וּ אֶת־הָעִזִּֽים׃",
-    "heRef": "שמות ל״ה:כ״ו",
+  "Exodus 35:8-35:20": {
+    "en": [
+      "oil for lighting, spices for the anointing oil and for the aromatic incense;",
+      "lapis lazuli and other stones for setting, for the ephod and the breastpiece.",
+      "And let all among you who are skilled come and make all that the L<small>ORD</small> has commanded:",
+      "the Tabernacle, its tent and its covering, its clasps and its planks, its bars, its posts, and its sockets;",
+      "the ark and its poles, the cover, and the curtain for the screen;",
+      "the table, and its poles and all its utensils; and the bread of display;",
+      "the lampstand for lighting, its furnishings and its lamps, and the oil for lighting;",
+      "the altar of incense and its poles; the anointing oil and the aromatic incense; and the entrance screen for the entrance of the Tabernacle;",
+      "the altar of burnt offering, its copper grating, its poles, and all its furnishings; the laver and its stand;",
+      "the hangings of the enclosure, its posts and its sockets, and the screen for the gate of the court;",
+      "the pegs for the Tabernacle, the pegs for the enclosure, and their cords;",
+      "the service vestments for officiating in the sanctuary, the sacral vestments of Aaron the priest and the vestments of his sons for priestly service.",
+      "So the whole community of the Israelites left Moses’ presence."
+    ],
+    "he": [
+      "וְשֶׁ֖מֶן לַמָּא֑וֹר וּבְשָׂמִים֙ לְשֶׁ֣מֶן הַמִּשְׁחָ֔ה וְלִקְטֹ֖רֶת הַסַּמִּֽים׃",
+      "וְאַ֨בְנֵי־שֹׁ֔הַם וְאַבְנֵ֖י מִלֻּאִ֑ים לָאֵפ֖וֹד וְלַחֹֽשֶׁן׃",
+      "וְכׇל־חֲכַם־לֵ֖ב בָּכֶ֑ם יָבֹ֣אוּ וְיַעֲשׂ֔וּ אֵ֛ת כׇּל־אֲשֶׁ֥ר צִוָּ֖ה יְהֹוָֽה׃",
+      "אֶ֨ת־הַמִּשְׁכָּ֔ן אֶֽת־אׇהֳל֖וֹ וְאֶת־מִכְסֵ֑הוּ אֶת־קְרָסָיו֙ וְאֶת־קְרָשָׁ֔יו אֶת־בְּרִיחָ֕ו אֶת־עַמֻּדָ֖יו וְאֶת־אֲדָנָֽיו׃",
+      "אֶת־הָאָרֹ֥ן וְאֶת־בַּדָּ֖יו אֶת־הַכַּפֹּ֑רֶת וְאֵ֖ת פָּרֹ֥כֶת הַמָּסָֽךְ׃",
+      "אֶת־הַשֻּׁלְחָ֥ן וְאֶת־בַּדָּ֖יו וְאֶת־כׇּל־כֵּלָ֑יו וְאֵ֖ת לֶ֥חֶם הַפָּנִֽים׃",
+      "וְאֶת־מְנֹרַ֧ת הַמָּא֛וֹר וְאֶת־כֵּלֶ֖יהָ וְאֶת־נֵרֹתֶ֑יהָ וְאֵ֖ת שֶׁ֥מֶן הַמָּאֽוֹר׃",
+      "וְאֶת־מִזְבַּ֤ח הַקְּטֹ֙רֶת֙ וְאֶת־בַּדָּ֔יו וְאֵת֙ שֶׁ֣מֶן הַמִּשְׁחָ֔ה וְאֵ֖ת קְטֹ֣רֶת הַסַּמִּ֑ים וְאֶת־מָסַ֥ךְ הַפֶּ֖תַח לְפֶ֥תַח הַמִּשְׁכָּֽן׃",
+      "אֵ֣ת <b>׀</b> מִזְבַּ֣ח הָעֹלָ֗ה וְאֶת־מִכְבַּ֤ר הַנְּחֹ֙שֶׁת֙ אֲשֶׁר־ל֔וֹ אֶת־בַּדָּ֖יו וְאֶת־כׇּל־כֵּלָ֑יו אֶת־הַכִּיֹּ֖ר וְאֶת־כַּנּֽוֹ׃",
+      "אֵ֚ת קַלְעֵ֣י הֶחָצֵ֔ר אֶת־עַמֻּדָ֖יו וְאֶת־אֲדָנֶ֑יהָ וְאֵ֕ת מָסַ֖ךְ שַׁ֥עַר הֶחָצֵֽר׃",
+      "אֶת־יִתְדֹ֧ת הַמִּשְׁכָּ֛ן וְאֶת־יִתְדֹ֥ת הֶחָצֵ֖ר וְאֶת־מֵיתְרֵיהֶֽם׃",
+      "אֶת־בִּגְדֵ֥י הַשְּׂרָ֖ד לְשָׁרֵ֣ת בַּקֹּ֑דֶשׁ אֶת־בִּגְדֵ֤י הַקֹּ֙דֶשׁ֙ לְאַהֲרֹ֣ן הַכֹּהֵ֔ן וְאֶת־בִּגְדֵ֥י בָנָ֖יו לְכַהֵֽן׃",
+      "וַיֵּ֥צְא֛וּ כׇּל־עֲדַ֥ת בְּנֵֽי־יִשְׂרָאֵ֖ל מִלִּפְנֵ֥י מֹשֶֽׁה׃"
+    ],
+    "heRef": "שמות ל״ה:ח׳-כ׳",
     "lang": "en",
     "primary_category": "Tanakh",
-    "ref": "Exodus 35:26",
-    "url": "Exodus.35.26"
+    "ref": "Exodus 35:8-20",
+    "url": "Exodus.35.8-20"
   },
-  "Exodus 40:3": {
-    "en": "Place there the Ark of the Pact, and screen off the ark with the curtain.",
-    "he": "וְשַׂמְתָּ֣ שָׁ֔ם אֵ֖ת אֲר֣וֹן הָעֵד֑וּת וְסַכֹּתָ֥ עַל־הָאָרֹ֖ן אֶת־הַפָּרֹֽכֶת׃",
-    "heRef": "שמות מ׳:ג׳",
+  "Exodus 40:1-40:13": {
+    "en": [
+      "And the L<small>ORD</small> spoke to Moses, saying:",
+      "On the first day of the first month you shall set up the Tabernacle of the Tent of Meeting.",
+      "Place there the Ark of the Pact, and screen off the ark with the curtain.",
+      "Bring in the table and lay out its due setting; bring in the lampstand and light its lamps;",
+      "and place the gold altar of incense before the Ark of the Pact. Then put up the screen for the entrance of the Tabernacle.",
+      "You shall place the altar of burnt offering before the entrance of the Tabernacle of the Tent of Meeting.",
+      "Place the laver between the Tent of Meeting and the altar, and put water in it.",
+      "Set up the enclosure round about, and put in place the screen for the gate of the enclosure.",
+      "You shall take the anointing oil and anoint the Tabernacle and all that is in it to consecrate it and all its furnishings, so that it shall be holy.",
+      "Then anoint the altar of burnt offering and all its utensils to consecrate the altar, so that the altar shall be most holy.",
+      "And anoint the laver and its stand to consecrate it.",
+      "You shall bring Aaron and his sons forward to the entrance of the Tent of Meeting and wash them with the water.",
+      "Put the sacral vestments on Aaron, and anoint him and consecrate him, that he may serve Me as priest."
+    ],
+    "he": [
+      "וַיְדַבֵּ֥ר יְהֹוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃",
+      "בְּיוֹם־הַחֹ֥דֶשׁ הָרִאשׁ֖וֹן בְּאֶחָ֣ד לַחֹ֑דֶשׁ תָּקִ֕ים אֶת־מִשְׁכַּ֖ן אֹ֥הֶל מוֹעֵֽד׃",
+      "וְשַׂמְתָּ֣ שָׁ֔ם אֵ֖ת אֲר֣וֹן הָעֵד֑וּת וְסַכֹּתָ֥ עַל־הָאָרֹ֖ן אֶת־הַפָּרֹֽכֶת׃",
+      "וְהֵבֵאתָ֙ אֶת־הַשֻּׁלְחָ֔ן וְעָרַכְתָּ֖ אֶת־עֶרְכּ֑וֹ וְהֵבֵאתָ֙ אֶת־הַמְּנֹרָ֔ה וְהַעֲלֵיתָ֖ אֶת־נֵרֹתֶֽיהָ׃",
+      "וְנָתַתָּ֞ה אֶת־מִזְבַּ֤ח הַזָּהָב֙ לִקְטֹ֔רֶת לִפְנֵ֖י אֲר֣וֹן הָעֵדֻ֑ת וְשַׂמְתָּ֛ אֶת־מָסַ֥ךְ הַפֶּ֖תַח לַמִּשְׁכָּֽן׃",
+      "וְנָ֣תַתָּ֔ה אֵ֖ת מִזְבַּ֣ח הָעֹלָ֑ה לִפְנֵ֕י פֶּ֖תַח מִשְׁכַּ֥ן אֹֽהֶל־מוֹעֵֽד׃",
+      "וְנָֽתַתָּ֙ אֶת־הַכִּיֹּ֔ר בֵּֽין־אֹ֥הֶל מוֹעֵ֖ד וּבֵ֣ין הַמִּזְבֵּ֑חַ וְנָתַתָּ֥ שָׁ֖ם מָֽיִם׃",
+      "וְשַׂמְתָּ֥ אֶת־הֶחָצֵ֖ר סָבִ֑יב וְנָ֣תַתָּ֔ אֶת־מָסַ֖ךְ שַׁ֥עַר הֶחָצֵֽר׃",
+      "וְלָקַחְתָּ֙ אֶת־שֶׁ֣מֶן הַמִּשְׁחָ֔ה וּמָשַׁחְתָּ֥ אֶת־הַמִּשְׁכָּ֖ן וְאֶת־כׇּל־אֲשֶׁר־בּ֑וֹ וְקִדַּשְׁתָּ֥ אֹת֛וֹ וְאֶת־כׇּל־כֵּלָ֖יו וְהָ֥יָה קֹֽדֶשׁ׃",
+      "וּמָשַׁחְתָּ֛ אֶת־מִזְבַּ֥ח הָעֹלָ֖ה וְאֶת־כׇּל־כֵּלָ֑יו וְקִדַּשְׁתָּ֙ אֶת־הַמִּזְבֵּ֔חַ וְהָיָ֥ה הַמִּזְבֵּ֖חַ קֹ֥דֶשׁ קׇֽדָשִֽׁים׃",
+      "וּמָשַׁחְתָּ֥ אֶת־הַכִּיֹּ֖ר וְאֶת־כַּנּ֑וֹ וְקִדַּשְׁתָּ֖ אֹתֽוֹ׃",
+      "וְהִקְרַבְתָּ֤ אֶֽת־אַהֲרֹן֙ וְאֶת־בָּנָ֔יו אֶל־פֶּ֖תַח אֹ֣הֶל מוֹעֵ֑ד וְרָחַצְתָּ֥ אֹתָ֖ם בַּמָּֽיִם׃",
+      "וְהִלְבַּשְׁתָּ֙ אֶֽת־אַהֲרֹ֔ן אֵ֖ת בִּגְדֵ֣י הַקֹּ֑דֶשׁ וּמָשַׁחְתָּ֥ אֹת֛וֹ וְקִדַּשְׁתָּ֥ אֹת֖וֹ וְכִהֵ֥ן לִֽי׃"
+    ],
+    "heRef": "שמות מ׳:א׳-י״ג",
     "lang": "en",
     "primary_category": "Tanakh",
-    "ref": "Exodus 40:3",
-    "url": "Exodus.40.3"
+    "ref": "Exodus 40:1-13",
+    "url": "Exodus.40.1-13"
   },
-  "Ezekiel 31:8": {
-    "en": "Cedars in the garden of God<br/>Could not compare with it;<br/>Cypresses could not match its boughs,<br/>And plane trees could not vie with its branches;<br/>No tree in the garden of God<br/>Was its peer in beauty.",
-    "he": "אֲרָזִ֣ים לֹֽא־עֲמָמֻ֘הוּ֮ בְּגַן־אֱלֹהִים֒ בְּרוֹשִׁ֗ים לֹ֤א דָמוּ֙ אֶל־סְעַפֹּתָ֔יו וְעַרְמֹנִ֥ים לֹא־הָי֖וּ כְּפֹרֹאתָ֑יו כׇּל־עֵץ֙ בְּגַן־אֱלֹהִ֔ים לֹא־דָמָ֥ה אֵלָ֖יו בְּיׇפְיֽוֹ׃",
-    "heRef": "יחזקאל ל״א:ח׳",
+  "Ezekiel 31:1-31:9": {
+    "en": [
+      "In the eleventh year, on the first day of the third month, the word of the L<small>ORD</small> came to me:",
+      "O mortal, say to Pharaoh king of Egypt and his hordes:<br/><br/>Who was comparable to you in greatness?",
+      "Assyria was a cedar in Lebanon<br/>With beautiful branches and shady thickets,<br/>Of lofty stature,<br/>With its top among leafy trees.",
+      "Waters nourished it,<br/>The deep made it grow tall,<br/>Washing with its streams<br/>The place where it was planted,<br/>Making its channels well up<br/>To all the trees of the field.",
+      "Therefore it exceeded in stature<br/>All the trees of the field;<br/>Its branches multiplied and its boughs grew long<br/>Because of the abundant water<br/>That welled up for it.",
+      "In its branches nested<br/>All the birds of the sky;<br/>All the beasts of the field<br/>Bore their young under its boughs,<br/>And in its shadow lived<br/>All the great nations.",
+      "It was beautiful in its height,<br/>In the length of its branches,<br/>Because its stock stood<br/>By abundant waters.",
+      "Cedars in the garden of God<br/>Could not compare with it;<br/>Cypresses could not match its boughs,<br/>And plane trees could not vie with its branches;<br/>No tree in the garden of God<br/>Was its peer in beauty.",
+      "I made it beautiful<br/>In the profusion of its branches;<br/>And all the trees of Eden envied it<br/>In the garden of God.<br/>"
+    ],
+    "he": [
+      "וַיְהִ֗י בְּאַחַ֤ת עֶשְׂרֵה֙ שָׁנָ֔ה בַּשְּׁלִישִׁ֖י בְּאֶחָ֣ד לַחֹ֑דֶשׁ הָיָ֥ה דְבַר־יְהֹוָ֖ה אֵלַ֥י לֵאמֹֽר׃",
+      "בֶּן־אָדָ֕ם אֱמֹ֛ר אֶל־פַּרְעֹ֥ה מֶלֶךְ־מִצְרַ֖יִם וְאֶל־הֲמוֹנ֑וֹ אֶל־מִ֖י דָּמִ֥יתָ בְגׇדְלֶֽךָ׃",
+      "הִנֵּ֨ה אַשּׁ֜וּר אֶ֣רֶז בַּלְּבָנ֗וֹן יְפֵ֥ה עָנָ֛ף וְחֹ֥רֶשׁ מֵצַ֖ל וּגְבַ֣הּ קוֹמָ֑ה וּבֵ֣ין עֲבֹתִ֔ים הָיְתָ֖ה צַמַּרְתּֽוֹ׃",
+      "מַ֣יִם גִּדְּל֔וּהוּ תְּה֖וֹם רֹמְמָ֑תְהוּ אֶת־נַהֲרֹתֶ֗יהָ הֹלֵךְ֙ סְבִיב֣וֹת מַטָּעָ֔הּ וְאֶת־תְּעָלֹתֶ֣יהָ שִׁלְחָ֔ה אֶ֖ל כׇּל־עֲצֵ֥י הַשָּׂדֶֽה׃",
+      "עַל־כֵּן֙ גָּבְהָ֣א קֹמָת֔וֹ מִכֹּ֖ל עֲצֵ֣י הַשָּׂדֶ֑ה וַתִּרְבֶּ֨ינָה סַֽרְעַפֹּתָ֜יו וַתֶּאֱרַ֧כְנָה פֹארֹתָ֛ו מִמַּ֥יִם רַבִּ֖ים בְּשַׁלְּחֽוֹ׃",
+      "בִּסְעַפֹּתָ֤יו קִֽנְנוּ֙ כׇּל־ע֣וֹף הַשָּׁמַ֔יִם וְתַ֤חַת פֹּֽארֹתָיו֙ יָֽלְד֔וּ כֹּ֖ל חַיַּ֣ת הַשָּׂדֶ֑ה וּבְצִלּוֹ֙ יֵֽשְׁב֔וּ כֹּ֖ל גּוֹיִ֥ם רַבִּֽים׃",
+      "וַיְּיִ֣ף בְּגׇדְל֔וֹ בְּאֹ֖רֶךְ דָּלִיּוֹתָ֑יו כִּֽי־הָיָ֥ה שׇׁרְשׁ֖וֹ אֶל־מַ֥יִם רַבִּֽים׃",
+      "אֲרָזִ֣ים לֹֽא־עֲמָמֻ֘הוּ֮ בְּגַן־אֱלֹהִים֒ בְּרוֹשִׁ֗ים לֹ֤א דָמוּ֙ אֶל־סְעַפֹּתָ֔יו וְעַרְמֹנִ֥ים לֹא־הָי֖וּ כְּפֹרֹאתָ֑יו כׇּל־עֵץ֙ בְּגַן־אֱלֹהִ֔ים לֹא־דָמָ֥ה אֵלָ֖יו בְּיׇפְיֽוֹ׃",
+      "יָפֶ֣ה עֲשִׂיתִ֔יו בְּרֹ֖ב דָּלִיּוֹתָ֑יו וַיְקַנְאֻ֙הוּ֙ כׇּל־עֲצֵי־עֵ֔דֶן אֲשֶׁ֖ר בְּגַ֥ן הָאֱלֹהִֽים׃ <span class=\"mam-spi-pe\">{פ}</span><br/>"
+    ],
+    "heRef": "יחזקאל ל״א:א׳-ט׳",
     "lang": "en",
     "primary_category": "Tanakh",
-    "ref": "Ezekiel 31:8",
-    "url": "Ezekiel.31.8"
+    "ref": "Ezekiel 31:1-9",
+    "url": "Ezekiel.31.1-9"
   },
-  "Leviticus 16:12": {
-    "en": "and he shall take a panful of glowing coals scooped from the altar before the L<small>ORD</small>, and two handfuls of finely ground aromatic incense, and bring this behind the curtain.",
-    "he": "וְלָקַ֣ח מְלֹֽא־הַ֠מַּחְתָּ֠ה גַּֽחֲלֵי־אֵ֞שׁ מֵעַ֤ל הַמִּזְבֵּ֙חַ֙ מִלִּפְנֵ֣י יְהֹוָ֔ה וּמְלֹ֣א חׇפְנָ֔יו קְטֹ֥רֶת סַמִּ֖ים דַּקָּ֑ה וְהֵבִ֖יא מִבֵּ֥ית לַפָּרֹֽכֶת׃",
-    "heRef": "ויקרא ט״ז:י״ב",
+  "Leviticus 16:12-16:17": {
+    "en": [
+      "and he shall take a panful of glowing coals scooped from the altar before the L<small>ORD</small>, and two handfuls of finely ground aromatic incense, and bring this behind the curtain.",
+      "He shall put the incense on the fire before the L<small>ORD</small>, so that the cloud from the incense screens the cover that is over [the Ark of] the Pact, lest he die.",
+      "He shall take some of the blood of the bull and sprinkle it with his finger over the cover on the east side; and in front of the cover he shall sprinkle some of the blood with his finger seven times.",
+      "He shall then slaughter the people’s goat of sin offering, bring its blood behind the curtain, and do with its blood as he has done with the blood of the bull: he shall sprinkle it over the cover and in front of the cover.",
+      "Thus he shall purge the Shrine of the uncleanness and transgression of the Israelites, whatever their sins; and he shall do the same for the Tent of Meeting, which abides with them in the midst of their uncleanness.",
+      "When he goes in to make expiation in the Shrine, nobody else shall be in the Tent of Meeting until he comes out.<br/>When he has made expiation for himself and his household, and for the whole congregation of Israel,"
+    ],
+    "he": [
+      "וְלָקַ֣ח מְלֹֽא־הַ֠מַּחְתָּ֠ה גַּֽחֲלֵי־אֵ֞שׁ מֵעַ֤ל הַמִּזְבֵּ֙חַ֙ מִלִּפְנֵ֣י יְהֹוָ֔ה וּמְלֹ֣א חׇפְנָ֔יו קְטֹ֥רֶת סַמִּ֖ים דַּקָּ֑ה וְהֵבִ֖יא מִבֵּ֥ית לַפָּרֹֽכֶת׃",
+      "וְנָתַ֧ן אֶֽת־הַקְּטֹ֛רֶת עַל־הָאֵ֖שׁ לִפְנֵ֣י יְהֹוָ֑ה וְכִסָּ֣ה <b>׀</b> עֲנַ֣ן הַקְּטֹ֗רֶת אֶת־הַכַּפֹּ֛רֶת אֲשֶׁ֥ר עַל־הָעֵד֖וּת וְלֹ֥א יָמֽוּת׃",
+      "וְלָקַח֙ מִדַּ֣ם הַפָּ֔ר וְהִזָּ֧ה בְאֶצְבָּע֛וֹ עַל־פְּנֵ֥י הַכַּפֹּ֖רֶת קֵ֑דְמָה וְלִפְנֵ֣י הַכַּפֹּ֗רֶת יַזֶּ֧ה שֶֽׁבַע־פְּעָמִ֛ים מִן־הַדָּ֖ם בְּאֶצְבָּעֽוֹ׃",
+      "וְשָׁחַ֞ט אֶת־שְׂעִ֤יר הַֽחַטָּאת֙ אֲשֶׁ֣ר לָעָ֔ם וְהֵבִיא֙ אֶת־דָּמ֔וֹ אֶל־מִבֵּ֖ית לַפָּרֹ֑כֶת וְעָשָׂ֣ה אֶת־דָּמ֗וֹ כַּאֲשֶׁ֤ר עָשָׂה֙ לְדַ֣ם הַפָּ֔ר וְהִזָּ֥ה אֹת֛וֹ עַל־הַכַּפֹּ֖רֶת וְלִפְנֵ֥י הַכַּפֹּֽרֶת׃",
+      "וְכִפֶּ֣ר עַל־הַקֹּ֗דֶשׁ מִטֻּמְאֹת֙ בְּנֵ֣י יִשְׂרָאֵ֔ל וּמִפִּשְׁעֵיהֶ֖ם לְכׇל־חַטֹּאתָ֑ם וְכֵ֤ן יַעֲשֶׂה֙ לְאֹ֣הֶל מוֹעֵ֔ד הַשֹּׁכֵ֣ן אִתָּ֔ם בְּת֖וֹךְ טֻמְאֹתָֽם׃",
+      "וְכׇל־אָדָ֞ם לֹא־יִהְיֶ֣ה <b>׀</b> בְּאֹ֣הֶל מוֹעֵ֗ד בְּבֹא֛וֹ לְכַפֵּ֥ר בַּקֹּ֖דֶשׁ עַד־צֵאת֑וֹ וְכִפֶּ֤ר בַּעֲדוֹ֙ וּבְעַ֣ד בֵּית֔וֹ וּבְעַ֖ד כׇּל־קְהַ֥ל יִשְׂרָאֵֽל׃"
+    ],
+    "heRef": "ויקרא ט״ז:י״ב-י״ז",
     "lang": "en",
     "primary_category": "Tanakh",
-    "ref": "Leviticus 16:12",
-    "url": "Leviticus.16.12"
+    "ref": "Leviticus 16:12-17",
+    "url": "Leviticus.16.12-17"
   },
-  "Leviticus 23:20": {
-    "en": "The priest shall elevate these—the two lambs—together with the bread of first fruits as an elevation offering before the L<small>ORD</small>; they shall be holy to the L<small>ORD</small>, for the priest.",
-    "he": "וְהֵנִ֣יף הַכֹּהֵ֣ן <small>׀</small> אֹתָ֡ם עַל֩ לֶ֨חֶם הַבִּכֻּרִ֤ים תְּנוּפָה֙ לִפְנֵ֣י יְהֹוָ֔ה עַל־שְׁנֵ֖י כְּבָשִׂ֑ים קֹ֛דֶשׁ יִהְי֥וּ לַיהֹוָ֖ה לַכֹּהֵֽן׃",
-    "heRef": "ויקרא כ״ג:כ׳",
+  "Leviticus 23:15-23:22": {
+    "en": [
+      "And from the day on which you bring the sheaf of elevation offering—the day after the sabbath—you shall count off seven weeks. They must be complete:",
+      "you must count until the day after the seventh week—fifty days; then you shall bring an offering of new grain to the L<small>ORD</small>.",
+      "You shall bring from your settlements two loaves of bread as an elevation offering; each shall be made of two-tenths of a measure of choice flour, baked after leavening, as first fruits to the L<small>ORD</small>.",
+      "With the bread you shall present, as burnt offerings to the L<small>ORD</small>, seven yearling lambs without blemish, one bull of the herd, and two rams, with their meal offerings and libations, an offering by fire of pleasing odor to the L<small>ORD</small>.",
+      "You shall also offer one he-goat as a sin offering and two yearling lambs as a sacrifice of well-being.",
+      "The priest shall elevate these—the two lambs—together with the bread of first fruits as an elevation offering before the L<small>ORD</small>; they shall be holy to the L<small>ORD</small>, for the priest.",
+      "On that same day you shall hold a celebration; it shall be a sacred occasion for you; you shall not work at your occupations. This is a law for all time in all your settlements, throughout the ages.",
+      "And when you reap the harvest of your land, you shall not reap all the way to the edges of your field, or gather the gleanings of your harvest; you shall leave them for the poor and the stranger: I the L<small>ORD</small> am your God."
+    ],
+    "he": [
+      "וּסְפַרְתֶּ֤ם לָכֶם֙ מִמׇּחֳרַ֣ת הַשַּׁבָּ֔ת מִיּוֹם֙ הֲבִ֣יאֲכֶ֔ם אֶת־עֹ֖מֶר הַתְּנוּפָ֑ה שֶׁ֥בַע שַׁבָּת֖וֹת תְּמִימֹ֥ת תִּהְיֶֽינָה׃",
+      "עַ֣ד מִֽמׇּחֳרַ֤ת הַשַּׁבָּת֙ הַשְּׁבִיעִ֔ת תִּסְפְּר֖וּ חֲמִשִּׁ֣ים י֑וֹם וְהִקְרַבְתֶּ֛ם מִנְחָ֥ה חֲדָשָׁ֖ה לַיהֹוָֽה׃",
+      "מִמּוֹשְׁבֹ֨תֵיכֶ֜ם תָּבִ֣יאּוּ <b>׀</b> לֶ֣חֶם תְּנוּפָ֗ה שְׁ֚תַּיִם שְׁנֵ֣י עֶשְׂרֹנִ֔ים סֹ֣לֶת תִּהְיֶ֔ינָה חָמֵ֖ץ תֵּאָפֶ֑ינָה בִּכּוּרִ֖ים לַֽיהֹוָֽה׃",
+      "וְהִקְרַבְתֶּ֣ם עַל־הַלֶּ֗חֶם שִׁבְעַ֨ת כְּבָשִׂ֤ים תְּמִימִם֙ בְּנֵ֣י שָׁנָ֔ה וּפַ֧ר בֶּן־בָּקָ֛ר אֶחָ֖ד וְאֵילִ֣ם שְׁנָ֑יִם יִהְי֤וּ עֹלָה֙ לַֽיהֹוָ֔ה וּמִנְחָתָם֙ וְנִסְכֵּיהֶ֔ם אִשֵּׁ֥ה רֵֽיחַ־נִיחֹ֖חַ לַיהֹוָֽה׃",
+      "וַעֲשִׂיתֶ֛ם שְׂעִיר־עִזִּ֥ים אֶחָ֖ד לְחַטָּ֑את וּשְׁנֵ֧י כְבָשִׂ֛ים בְּנֵ֥י שָׁנָ֖ה לְזֶ֥בַח שְׁלָמִֽים׃",
+      "וְהֵנִ֣יף הַכֹּהֵ֣ן <small>׀</small> אֹתָ֡ם עַל֩ לֶ֨חֶם הַבִּכֻּרִ֤ים תְּנוּפָה֙ לִפְנֵ֣י יְהֹוָ֔ה עַל־שְׁנֵ֖י כְּבָשִׂ֑ים קֹ֛דֶשׁ יִהְי֥וּ לַיהֹוָ֖ה לַכֹּהֵֽן׃",
+      "וּקְרָאתֶ֞ם בְּעֶ֣צֶם <b>׀</b> הַיּ֣וֹם הַזֶּ֗ה מִֽקְרָא־קֹ֙דֶשׁ֙ יִהְיֶ֣ה לָכֶ֔ם כׇּל־מְלֶ֥אכֶת עֲבֹדָ֖ה לֹ֣א תַעֲשׂ֑וּ חֻקַּ֥ת עוֹלָ֛ם בְּכׇל־מוֹשְׁבֹ֥תֵיכֶ֖ם לְדֹרֹֽתֵיכֶֽם׃",
+      "וּֽבְקֻצְרְכֶ֞ם אֶת־קְצִ֣יר אַרְצְכֶ֗ם לֹֽא־תְכַלֶּ֞ה פְּאַ֤ת שָֽׂדְךָ֙ בְּקֻצְרֶ֔ךָ וְלֶ֥קֶט קְצִירְךָ֖ לֹ֣א תְלַקֵּ֑ט לֶֽעָנִ֤י וְלַגֵּר֙ תַּעֲזֹ֣ב אֹתָ֔ם אֲנִ֖י יְהֹוָ֥ה אֱלֹהֵיכֶֽם׃ <span class=\"mam-spi-pe\">{פ}</span><br/>"
+    ],
+    "heRef": "ויקרא כ״ג:ט״ו-כ״ב",
     "lang": "en",
     "primary_category": "Tanakh",
-    "ref": "Leviticus 23:20",
-    "url": "Leviticus.23.20"
+    "ref": "Leviticus 23:15-22",
+    "url": "Leviticus.23.15-22"
   },
-  "Leviticus 24:7": {
-    "en": "With each row you shall place pure frankincense, which is to be a token offering for the bread, as an offering by fire to the L<small>ORD</small>.",
-    "he": "וְנָתַתָּ֥ עַל־הַֽמַּעֲרֶ֖כֶת לְבֹנָ֣ה זַכָּ֑ה וְהָיְתָ֤ה לַלֶּ֙חֶם֙ לְאַזְכָּרָ֔ה אִשֶּׁ֖ה לַֽיהֹוָֽה׃",
-    "heRef": "ויקרא כ״ד:ז׳",
+  "Leviticus 24:5-24:12": {
+    "en": [
+      "You shall take choice flour and bake of it twelve loaves, two-tenths of a measure for each loaf.",
+      "Place them on the pure table before the L<small>ORD</small> in two rows, six to a row.",
+      "With each row you shall place pure frankincense, which is to be a token offering for the bread, as an offering by fire to the L<small>ORD</small>.",
+      "He shall arrange them before the L<small>ORD</small> regularly every sabbath day—it is a commitment for all time on the part of the Israelites.",
+      "They shall belong to Aaron and his sons, who shall eat them in the sacred precinct; for they are his as most holy things from the L<small>ORD</small>’s offerings by fire, a due for all time.",
+      "There came out among the Israelites one whose mother was Israelite and whose father was Egyptian. And a fight broke out in the camp between that half-Israelite and a certain Israelite.",
+      "The son of the Israelite woman pronounced the Name in blasphemy, and he was brought to Moses—now his mother’s name was Shelomith daughter of Dibri of the tribe of Dan—",
+      "and he was placed in custody, until the decision of the L<small>ORD</small> should be made clear to them."
+    ],
+    "he": [
+      "וְלָקַחְתָּ֣ סֹ֔לֶת וְאָפִיתָ֣ אֹתָ֔הּ שְׁתֵּ֥ים עֶשְׂרֵ֖ה חַלּ֑וֹת שְׁנֵי֙ עֶשְׂרֹנִ֔ים יִהְיֶ֖ה הַֽחַלָּ֥ה הָאֶחָֽת׃",
+      "וְשַׂמְתָּ֥ אוֹתָ֛ם שְׁתַּ֥יִם מַֽעֲרָכ֖וֹת שֵׁ֣שׁ הַֽמַּעֲרָ֑כֶת עַ֛ל הַשֻּׁלְחָ֥ן הַטָּהֹ֖ר לִפְנֵ֥י יְהֹוָֽה׃",
+      "וְנָתַתָּ֥ עַל־הַֽמַּעֲרֶ֖כֶת לְבֹנָ֣ה זַכָּ֑ה וְהָיְתָ֤ה לַלֶּ֙חֶם֙ לְאַזְכָּרָ֔ה אִשֶּׁ֖ה לַֽיהֹוָֽה׃",
+      "בְּי֨וֹם הַשַּׁבָּ֜ת בְּי֣וֹם הַשַּׁבָּ֗ת יַֽעַרְכֶ֛נּוּ לִפְנֵ֥י יְהֹוָ֖ה תָּמִ֑יד מֵאֵ֥ת בְּנֵֽי־יִשְׂרָאֵ֖ל בְּרִ֥ית עוֹלָֽם׃",
+      "וְהָֽיְתָה֙ לְאַהֲרֹ֣ן וּלְבָנָ֔יו וַאֲכָלֻ֖הוּ בְּמָק֣וֹם קָדֹ֑שׁ כִּ֡י קֹ֩דֶשׁ֩ קׇֽדָשִׁ֨ים ה֥וּא ל֛וֹ מֵאִשֵּׁ֥י יְהֹוָ֖ה חׇק־עוֹלָֽם׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "וַיֵּצֵא֙ בֶּן־אִשָּׁ֣ה יִשְׂרְאֵלִ֔ית וְהוּא֙ בֶּן־אִ֣ישׁ מִצְרִ֔י בְּת֖וֹךְ בְּנֵ֣י יִשְׂרָאֵ֑ל וַיִּנָּצוּ֙ בַּֽמַּחֲנֶ֔ה בֶּ֚ן הַיִּשְׂרְאֵלִ֔ית וְאִ֖ישׁ הַיִּשְׂרְאֵלִֽי׃",
+      "וַ֠יִּקֹּ֠ב בֶּן־הָֽאִשָּׁ֨ה הַיִּשְׂרְאֵלִ֤ית אֶת־הַשֵּׁם֙ וַיְקַלֵּ֔ל וַיָּבִ֥יאוּ אֹת֖וֹ אֶל־מֹשֶׁ֑ה וְשֵׁ֥ם אִמּ֛וֹ שְׁלֹמִ֥ית בַּת־דִּבְרִ֖י לְמַטֵּה־דָֽן׃",
+      "וַיַּנִּיחֻ֖הוּ בַּמִּשְׁמָ֑ר לִפְרֹ֥שׁ לָהֶ֖ם עַל־פִּ֥י יְהֹוָֽה׃ <span class=\"mam-spi-pe\">{פ}</span><br/>"
+    ],
+    "heRef": "ויקרא כ״ד:ה׳-י״ב",
     "lang": "en",
     "primary_category": "Tanakh",
-    "ref": "Leviticus 24:7",
-    "url": "Leviticus.24.7"
+    "ref": "Leviticus 24:5-12",
+    "url": "Leviticus.24.5-12"
   },
-  "Numbers 7:14": {
-    "en": "one gold ladle of 10 shekels, filled with incense;",
-    "he": "כַּ֥ף אַחַ֛ת עֲשָׂרָ֥ה זָהָ֖ב מְלֵאָ֥ה קְטֹֽרֶת׃",
-    "heRef": "במדבר ז׳:י״ד",
+  "Numbers 7:1-7:12": {
+    "en": [
+      "On the day that Moses finished setting up the Tabernacle, he anointed and consecrated it and all its furnishings, as well as the altar and its utensils. When he had anointed and consecrated them,",
+      "the chieftains of Israel, the heads of ancestral houses, namely, the chieftains of the tribes, those who were in charge of enrollment, drew near",
+      "and brought their offering before the L<small>ORD</small>: six draught carts and twelve oxen, a cart for every two chieftains and an ox for each one.<br/>When they had brought them before the Tabernacle,",
+      "the L<small>ORD</small> said to Moses:",
+      "Accept these from them for use in the service of the Tent of Meeting, and give them to the Levites according to their respective services.",
+      "Moses took the carts and the oxen and gave them to the Levites.",
+      "Two carts and four oxen he gave to the Gershonites, as required for their service,",
+      "and four carts and eight oxen he gave to the Merarites, as required for their service—under the direction of Ithamar son of Aaron the priest.",
+      "But to the Kohathites he did not give any; since theirs was the service of the [most] sacred objects, their porterage was by shoulder.",
+      "The chieftains also brought the dedication offering for the altar upon its being anointed. As the chieftains were presenting their offerings before the altar,",
+      "the L<small>ORD</small> said to Moses: Let them present their offerings for the dedication of the altar, one chieftain each day.",
+      "The one who presented his offering on the first day was Nahshon son of Amminadab of the tribe of Judah."
+    ],
+    "he": [
+      "וַיְהִ֡י בְּיוֹם֩ כַּלּ֨וֹת מֹשֶׁ֜ה לְהָקִ֣ים אֶת־הַמִּשְׁכָּ֗ן וַיִּמְשַׁ֨ח אֹת֜וֹ וַיְקַדֵּ֤שׁ אֹתוֹ֙ וְאֶת־כׇּל־כֵּלָ֔יו וְאֶת־הַמִּזְבֵּ֖חַ וְאֶת־כׇּל־כֵּלָ֑יו וַיִּמְשָׁחֵ֖ם וַיְקַדֵּ֥שׁ אֹתָֽם׃",
+      "וַיַּקְרִ֙יבוּ֙ נְשִׂיאֵ֣י יִשְׂרָאֵ֔ל רָאשֵׁ֖י בֵּ֣ית אֲבֹתָ֑ם הֵ֚ם נְשִׂיאֵ֣י הַמַּטֹּ֔ת הֵ֥ם הָעֹמְדִ֖ים עַל־הַפְּקֻדִֽים׃",
+      "וַיָּבִ֨יאוּ אֶת־קׇרְבָּנָ֜ם לִפְנֵ֣י יְהֹוָ֗ה שֵׁשׁ־עֶגְלֹ֥ת צָב֙ וּשְׁנֵ֣י עָשָׂ֣ר בָּקָ֔ר עֲגָלָ֛ה עַל־שְׁנֵ֥י הַנְּשִׂאִ֖ים וְשׁ֣וֹר לְאֶחָ֑ד וַיַּקְרִ֥יבוּ אוֹתָ֖ם לִפְנֵ֥י הַמִּשְׁכָּֽן׃",
+      "וַיֹּ֥אמֶר יְהֹוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃",
+      "קַ֚ח מֵֽאִתָּ֔ם וְהָי֕וּ לַעֲבֹ֕ד אֶת־עֲבֹדַ֖ת אֹ֣הֶל מוֹעֵ֑ד וְנָתַתָּ֤ה אוֹתָם֙ אֶל־הַלְוִיִּ֔ם אִ֖ישׁ כְּפִ֥י עֲבֹדָתֽוֹ׃",
+      "וַיִּקַּ֣ח מֹשֶׁ֔ה אֶת־הָעֲגָלֹ֖ת וְאֶת־הַבָּקָ֑ר וַיִּתֵּ֥ן אוֹתָ֖ם אֶל־הַלְוִיִּֽם׃",
+      "אֵ֣ת <b>׀</b> שְׁתֵּ֣י הָעֲגָל֗וֹת וְאֵת֙ אַרְבַּ֣עַת הַבָּקָ֔ר נָתַ֖ן לִבְנֵ֣י גֵרְשׁ֑וֹן כְּפִ֖י עֲבֹדָתָֽם׃",
+      "וְאֵ֣ת <b>׀</b> אַרְבַּ֣ע הָעֲגָלֹ֗ת וְאֵת֙ שְׁמֹנַ֣ת הַבָּקָ֔ר נָתַ֖ן לִבְנֵ֣י מְרָרִ֑י כְּפִי֙ עֲבֹ֣דָתָ֔ם בְּיַד֙ אִֽיתָמָ֔ר בֶּֽן־אַהֲרֹ֖ן הַכֹּהֵֽן׃",
+      "וְלִבְנֵ֥י קְהָ֖ת לֹ֣א נָתָ֑ן כִּֽי־עֲבֹדַ֤ת הַקֹּ֙דֶשׁ֙ עֲלֵהֶ֔ם בַּכָּתֵ֖ף יִשָּֽׂאוּ׃",
+      "וַיַּקְרִ֣יבוּ הַנְּשִׂאִ֗ים אֵ֚ת חֲנֻכַּ֣ת הַמִּזְבֵּ֔חַ בְּי֖וֹם הִמָּשַׁ֣ח אֹת֑וֹ וַיַּקְרִ֧יבוּ הַנְּשִׂיאִ֛ם אֶת־קׇרְבָּנָ֖ם לִפְנֵ֥י הַמִּזְבֵּֽחַ׃",
+      "וַיֹּ֥אמֶר יְהֹוָ֖ה אֶל־מֹשֶׁ֑ה נָשִׂ֨יא אֶחָ֜ד לַיּ֗וֹם נָשִׂ֤יא אֶחָד֙ לַיּ֔וֹם יַקְרִ֙יבוּ֙ אֶת־קׇרְבָּנָ֔ם לַחֲנֻכַּ֖ת הַמִּזְבֵּֽחַ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "וַיְהִ֗י הַמַּקְרִ֛יב בַּיּ֥וֹם הָרִאשׁ֖וֹן אֶת־קׇרְבָּנ֑וֹ נַחְשׁ֥וֹן בֶּן־עַמִּינָדָ֖ב לְמַטֵּ֥ה יְהוּדָֽה׃"
+    ],
+    "heRef": "במדבר ז׳:א׳-י״ב",
     "lang": "en",
     "primary_category": "Tanakh",
-    "ref": "Numbers 7:14",
-    "url": "Numbers.7.14"
+    "ref": "Numbers 7:1-12",
+    "url": "Numbers.7.1-12"
   },
-  "Numbers 7:2": {
-    "en": "the chieftains of Israel, the heads of ancestral houses, namely, the chieftains of the tribes, those who were in charge of enrollment, drew near",
-    "he": "וַיַּקְרִ֙יבוּ֙ נְשִׂיאֵ֣י יִשְׂרָאֵ֔ל רָאשֵׁ֖י בֵּ֣ית אֲבֹתָ֑ם הֵ֚ם נְשִׂיאֵ֣י הַמַּטֹּ֔ת הֵ֥ם הָעֹמְדִ֖ים עַל־הַפְּקֻדִֽים׃",
-    "heRef": "במדבר ז׳:ב׳",
+  "Numbers 7:4-7:17": {
+    "en": [
+      "the L<small>ORD</small> said to Moses:",
+      "Accept these from them for use in the service of the Tent of Meeting, and give them to the Levites according to their respective services.",
+      "Moses took the carts and the oxen and gave them to the Levites.",
+      "Two carts and four oxen he gave to the Gershonites, as required for their service,",
+      "and four carts and eight oxen he gave to the Merarites, as required for their service—under the direction of Ithamar son of Aaron the priest.",
+      "But to the Kohathites he did not give any; since theirs was the service of the [most] sacred objects, their porterage was by shoulder.",
+      "The chieftains also brought the dedication offering for the altar upon its being anointed. As the chieftains were presenting their offerings before the altar,",
+      "the L<small>ORD</small> said to Moses: Let them present their offerings for the dedication of the altar, one chieftain each day.",
+      "The one who presented his offering on the first day was Nahshon son of Amminadab of the tribe of Judah.",
+      "His offering: one silver bowl weighing 130 shekels and one silver basin of 70 shekels by the sanctuary weight, both filled with choice flour with oil mixed in, for a meal offering;",
+      "one gold ladle of 10 shekels, filled with incense;",
+      "one bull of the herd, one ram, and one lamb in its first year, for a burnt offering;",
+      "one goat for a sin offering;",
+      "and for his sacrifice of well-being: two oxen, five rams, five he-goats, and five yearling lambs. That was the offering of Nahshon son of Amminadab."
+    ],
+    "he": [
+      "וַיֹּ֥אמֶר יְהֹוָ֖ה אֶל־מֹשֶׁ֥ה לֵּאמֹֽר׃",
+      "קַ֚ח מֵֽאִתָּ֔ם וְהָי֕וּ לַעֲבֹ֕ד אֶת־עֲבֹדַ֖ת אֹ֣הֶל מוֹעֵ֑ד וְנָתַתָּ֤ה אוֹתָם֙ אֶל־הַלְוִיִּ֔ם אִ֖ישׁ כְּפִ֥י עֲבֹדָתֽוֹ׃",
+      "וַיִּקַּ֣ח מֹשֶׁ֔ה אֶת־הָעֲגָלֹ֖ת וְאֶת־הַבָּקָ֑ר וַיִּתֵּ֥ן אוֹתָ֖ם אֶל־הַלְוִיִּֽם׃",
+      "אֵ֣ת <b>׀</b> שְׁתֵּ֣י הָעֲגָל֗וֹת וְאֵת֙ אַרְבַּ֣עַת הַבָּקָ֔ר נָתַ֖ן לִבְנֵ֣י גֵרְשׁ֑וֹן כְּפִ֖י עֲבֹדָתָֽם׃",
+      "וְאֵ֣ת <b>׀</b> אַרְבַּ֣ע הָעֲגָלֹ֗ת וְאֵת֙ שְׁמֹנַ֣ת הַבָּקָ֔ר נָתַ֖ן לִבְנֵ֣י מְרָרִ֑י כְּפִי֙ עֲבֹ֣דָתָ֔ם בְּיַד֙ אִֽיתָמָ֔ר בֶּֽן־אַהֲרֹ֖ן הַכֹּהֵֽן׃",
+      "וְלִבְנֵ֥י קְהָ֖ת לֹ֣א נָתָ֑ן כִּֽי־עֲבֹדַ֤ת הַקֹּ֙דֶשׁ֙ עֲלֵהֶ֔ם בַּכָּתֵ֖ף יִשָּֽׂאוּ׃",
+      "וַיַּקְרִ֣יבוּ הַנְּשִׂאִ֗ים אֵ֚ת חֲנֻכַּ֣ת הַמִּזְבֵּ֔חַ בְּי֖וֹם הִמָּשַׁ֣ח אֹת֑וֹ וַיַּקְרִ֧יבוּ הַנְּשִׂיאִ֛ם אֶת־קׇרְבָּנָ֖ם לִפְנֵ֥י הַמִּזְבֵּֽחַ׃",
+      "וַיֹּ֥אמֶר יְהֹוָ֖ה אֶל־מֹשֶׁ֑ה נָשִׂ֨יא אֶחָ֜ד לַיּ֗וֹם נָשִׂ֤יא אֶחָד֙ לַיּ֔וֹם יַקְרִ֙יבוּ֙ אֶת־קׇרְבָּנָ֔ם לַחֲנֻכַּ֖ת הַמִּזְבֵּֽחַ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "וַיְהִ֗י הַמַּקְרִ֛יב בַּיּ֥וֹם הָרִאשׁ֖וֹן אֶת־קׇרְבָּנ֑וֹ נַחְשׁ֥וֹן בֶּן־עַמִּינָדָ֖ב לְמַטֵּ֥ה יְהוּדָֽה׃",
+      "וְקׇרְבָּנ֞וֹ קַֽעֲרַת־כֶּ֣סֶף אַחַ֗ת שְׁלֹשִׁ֣ים וּמֵאָה֮ מִשְׁקָלָהּ֒ מִזְרָ֤ק אֶחָד֙ כֶּ֔סֶף שִׁבְעִ֥ים שֶׁ֖קֶל בְּשֶׁ֣קֶל הַקֹּ֑דֶשׁ שְׁנֵיהֶ֣ם <b>׀</b> מְלֵאִ֗ים סֹ֛לֶת בְּלוּלָ֥ה בַשֶּׁ֖מֶן לְמִנְחָֽה׃",
+      "כַּ֥ף אַחַ֛ת עֲשָׂרָ֥ה זָהָ֖ב מְלֵאָ֥ה קְטֹֽרֶת׃",
+      "פַּ֣ר אֶחָ֞ד בֶּן־בָּקָ֗ר אַ֧יִל אֶחָ֛ד כֶּֽבֶשׂ־אֶחָ֥ד בֶּן־שְׁנָת֖וֹ לְעֹלָֽה׃",
+      "שְׂעִיר־עִזִּ֥ים אֶחָ֖ד לְחַטָּֽאת׃",
+      "וּלְזֶ֣בַח הַשְּׁלָמִים֮ בָּקָ֣ר שְׁנַ֒יִם֒ אֵילִ֤ם חֲמִשָּׁה֙ עַתּוּדִ֣ים חֲמִשָּׁ֔ה כְּבָשִׂ֥ים בְּנֵֽי־שָׁנָ֖ה חֲמִשָּׁ֑ה זֶ֛ה קׇרְבַּ֥ן נַחְשׁ֖וֹן בֶּן־עַמִּינָדָֽב׃ <span class=\"mam-spi-pe\">{פ}</span><br/>"
+    ],
+    "heRef": "במדבר ז׳:ד׳-י״ז",
     "lang": "en",
     "primary_category": "Tanakh",
-    "ref": "Numbers 7:2",
-    "url": "Numbers.7.2"
+    "ref": "Numbers 7:4-17",
+    "url": "Numbers.7.4-17"
   }
 }

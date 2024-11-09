@@ -1,191 +1,760 @@
 {
-  "Deuteronomy 22:8": {
-    "en": "When you build a new house, you shall make a parapet for your roof, so that you do not bring bloodguilt on your house if anyone should fall from it.",
-    "he": "כִּ֤י תִבְנֶה֙ בַּ֣יִת חָדָ֔שׁ וְעָשִׂ֥יתָ מַעֲקֶ֖ה לְגַגֶּ֑ךָ וְלֹֽא־תָשִׂ֤ים דָּמִים֙ בְּבֵיתֶ֔ךָ כִּֽי־יִפֹּ֥ל הַנֹּפֵ֖ל מִמֶּֽנּוּ׃",
-    "heRef": "דברים כ״ב:ח׳",
+  "Deuteronomy 22:8-22:18": {
+    "en": [
+      "When you build a new house, you shall make a parapet for your roof, so that you do not bring bloodguilt on your house if anyone should fall from it.",
+      "You shall not sow your vineyard with a second kind of seed, else the crop—from the seed you have sown—and the yield of the vineyard may not be used.",
+      "You shall not plow with an ox and an ass together.",
+      "You shall not wear cloth combining wool and linen.",
+      "You shall make tassels on the four corners of the garment with which you cover yourself.",
+      "A man marries a woman and cohabits with her. Then he takes an aversion to her",
+      "and makes up charges against her and defames her, saying, “I married this woman; but when I approached her, I found that she was not a virgin.”",
+      "In such a case, the girl’s father and mother shall produce the evidence of the girl’s virginity before the elders of the town at the gate.",
+      "And the girl’s father shall say to the elders, “I gave this man my daughter to wife, but he has taken an aversion to her;",
+      "so he has made up charges, saying, ‘I did not find your daughter a virgin.’ But here is the evidence of my daughter’s virginity!” And they shall spread out the cloth before the elders of the town.",
+      "The elders of that town shall then take the man and flog him,"
+    ],
+    "he": [
+      "כִּ֤י תִבְנֶה֙ בַּ֣יִת חָדָ֔שׁ וְעָשִׂ֥יתָ מַעֲקֶ֖ה לְגַגֶּ֑ךָ וְלֹֽא־תָשִׂ֤ים דָּמִים֙ בְּבֵיתֶ֔ךָ כִּֽי־יִפֹּ֥ל הַנֹּפֵ֖ל מִמֶּֽנּוּ׃",
+      "לֹא־תִזְרַ֥ע כַּרְמְךָ֖ כִּלְאָ֑יִם פֶּן־תִּקְדַּ֗שׁ הַֽמְלֵאָ֤ה הַזֶּ֙רַע֙ אֲשֶׁ֣ר תִּזְרָ֔ע וּתְבוּאַ֖ת הַכָּֽרֶם׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "לֹֽא־תַחֲרֹ֥שׁ בְּשׁוֹר־וּבַחֲמֹ֖ר יַחְדָּֽו׃",
+      "לֹ֤א תִלְבַּשׁ֙ שַֽׁעַטְנֵ֔ז צֶ֥מֶר וּפִשְׁתִּ֖ים יַחְדָּֽו׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "גְּדִלִ֖ים תַּעֲשֶׂה־לָּ֑ךְ עַל־אַרְבַּ֛ע כַּנְפ֥וֹת כְּסוּתְךָ֖ אֲשֶׁ֥ר תְּכַסֶּה־בָּֽהּ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "כִּֽי־יִקַּ֥ח אִ֖ישׁ אִשָּׁ֑ה וּבָ֥א אֵלֶ֖יהָ וּשְׂנֵאָֽהּ׃",
+      "וְשָׂ֥ם לָהּ֙ עֲלִילֹ֣ת דְּבָרִ֔ים וְהוֹצִ֥א עָלֶ֖יהָ שֵׁ֣ם רָ֑ע וְאָמַ֗ר אֶת־הָאִשָּׁ֤ה הַזֹּאת֙ לָקַ֔חְתִּי וָאֶקְרַ֣ב אֵלֶ֔יהָ וְלֹא־מָצָ֥אתִי לָ֖הּ בְּתוּלִֽים׃",
+      "וְלָקַ֛ח אֲבִ֥י <span class=\"mam-kq-trivial\">הַֽנַּעֲרָ֖</span> וְאִמָּ֑הּ וְהוֹצִ֜יאוּ אֶת־בְּתוּלֵ֧י <span class=\"mam-kq-trivial\">הַֽנַּעֲרָ֛</span> אֶל־זִקְנֵ֥י הָעִ֖יר הַשָּֽׁעְרָה׃",
+      "וְאָמַ֛ר אֲבִ֥י <span class=\"mam-kq-trivial\">הַֽנַּעֲרָ֖</span> אֶל־הַזְּקֵנִ֑ים אֶת־בִּתִּ֗י נָתַ֜תִּי לָאִ֥ישׁ הַזֶּ֛ה לְאִשָּׁ֖ה וַיִּשְׂנָאֶֽהָ׃",
+      "וְהִנֵּה־ה֡וּא שָׂם֩ עֲלִילֹ֨ת דְּבָרִ֜ים לֵאמֹ֗ר לֹֽא־מָצָ֤אתִי לְבִתְּךָ֙ בְּתוּלִ֔ים וְאֵ֖לֶּה בְּתוּלֵ֣י בִתִּ֑י וּפָֽרְשׂוּ֙ הַשִּׂמְלָ֔ה לִפְנֵ֖י זִקְנֵ֥י הָעִֽיר׃",
+      "וְלָ֥קְח֛וּ זִקְנֵ֥י הָֽעִיר־הַהִ֖וא אֶת־הָאִ֑ישׁ וְיִסְּר֖וּ אֹתֽוֹ׃"
+    ],
+    "heRef": "דברים כ״ב:ח׳-י״ח",
     "lang": "en",
     "primary_category": "Tanakh",
-    "ref": "Deuteronomy 22:8",
-    "url": "Deuteronomy.22.8"
+    "ref": "Deuteronomy 22:8-18",
+    "url": "Deuteronomy.22.8-18"
   },
-  "Deuteronomy 5:16": {
-    "en": "Honor your father and your mother, as the L<small>ORD</small> your God has commanded you, that you may long endure, and that you may fare well, in the land that the L<small>ORD</small> your God is assigning to you.",
-    "he": "כַּבֵּ֤ד אֶת־אָבִ֙יךָ֙ וְאֶת־אִמֶּ֔ךָ כַּאֲשֶׁ֥ר צִוְּךָ֖ יְהֹוָ֣ה אֱלֹהֶ֑יךָ לְמַ֣עַן <b>׀</b> יַאֲרִיכֻ֣ן יָמֶ֗יךָ וּלְמַ֙עַן֙ יִ֣יטַב לָ֔ךְ עַ֚ל הָֽאֲדָמָ֔ה אֲשֶׁר־יְהֹוָ֥ה אֱלֹהֶ֖יךָ נֹתֵ֥ן לָֽךְ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
-    "heRef": "דברים ה׳:ט״ז",
+  "Deuteronomy 5:6-5:18": {
+    "en": [
+      "I the L<small>ORD</small> am your God who brought you out of the land of Egypt, the house of bondage:",
+      "You shall have no other gods beside Me.",
+      "You shall not make for yourself a sculptured image, any likeness of what is in the heavens above, or on the earth below, or in the waters below the earth.",
+      "You shall not bow down to them or serve them. For I the L<small>ORD</small> your God am an impassioned God, visiting the guilt of the parents upon the children, upon the third and upon the fourth generations of those who reject Me,",
+      "but showing kindness to the thousandth generation of those who love Me and keep My commandments.",
+      "You shall not swear falsely by the name of the L<small>ORD</small> your God; for the L<small>ORD</small> will not clear one who swears falsely by His name.",
+      "Observe the sabbath day and keep it holy, as the L<small>ORD</small> your God has commanded you.",
+      "Six days you shall labor and do all your work,",
+      "but the seventh day is a sabbath of the L<small>ORD</small> your God; you shall not do any work—you, your son or your daughter, your male or female slave, your ox or your ass, or any of your cattle, or the stranger in your settlements, so that your male and female slave may rest as you do.",
+      "Remember that you were a slave in the land of Egypt and the L<small>ORD</small> your God freed you from there with a mighty hand and an outstretched arm; therefore the L<small>ORD</small> your God has commanded you to observe the sabbath day.",
+      "Honor your father and your mother, as the L<small>ORD</small> your God has commanded you, that you may long endure, and that you may fare well, in the land that the L<small>ORD</small> your God is assigning to you.",
+      "You shall not murder.<br/>You shall not commit adultery.<br/>You shall not steal.<br/>You shall not bear false witness against your neighbor.",
+      "You shall not covet your neighbor’s wife. You shall not crave your neighbor’s house, or his field, or his male or female slave, or his ox, or his ass, or anything that is your neighbor’s."
+    ],
+    "he": [
+      "אָֽנֹכִ֖י֙ יְהֹוָ֣ה אֱלֹהֶ֑֔יךָ אֲשֶׁ֧ר הוֹצֵאתִ֛יךָ מֵאֶ֥רֶץ מִצְרַ֖יִם מִבֵּ֣֥ית עֲבָדִ֑͏ֽים׃",
+      "לֹ֣א־יִהְיֶ֥͏ֽה־לְךָ֛֩ אֱלֹהִ֥֨ים אֲחֵרִ֖֜ים עַל־פָּנָֽ͏ַ֗י׃",
+      "לֹֽ֣א־תַעֲשֶֽׂ֨ה־לְךָ֥֣ פֶ֣֙סֶל֙ <small>׀</small> כׇּל־תְּמוּנָ֔֡ה אֲשֶׁ֤֣ר בַּשָּׁמַ֣֙יִם֙ <small>׀</small> מִמַּ֔֡עַל וַאֲשֶׁ֥ר֩ בָּאָ֖֨רֶץ מִתָּ֑͏ַ֜חַת וַאֲשֶׁ֥ר בַּמַּ֖֣יִם <b>׀</b> מִתַּ֥֣חַת לָאָֽ֗רֶץ׃",
+      "לֹא־תִשְׁתַּחֲוֶ֥֣ה לָהֶ֖ם֮ וְלֹ֣א תׇעׇבְדֵ֑ם֒ כִּ֣י אָנֹכִ֞י יְהֹוָ֤ה אֱלֹהֶ֙יךָ֙ אֵ֣ל קַנָּ֔א פֹּ֠קֵ֠ד עֲוֺ֨ן אָב֧וֹת עַל־בָּנִ֛ים וְעַל־שִׁלֵּשִׁ֥ים וְעַל־רִבֵּעִ֖ים לְשֹׂנְאָֽ֑י׃",
+      "וְעֹ֥֤שֶׂה חֶ֖֙סֶד֙ לַֽאֲלָפִ֑֔ים לְאֹהֲבַ֖י וּלְשֹׁמְרֵ֥י <span class=\"mam-kq\"><span class=\"mam-kq-k\">(מצותו)</span> <span class=\"mam-kq-q\">[מִצְוֺתָֽי]</span></span>׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "לֹ֥א תִשָּׂ֛א אֶת־שֵֽׁם־יְהֹוָ֥ה אֱלֹהֶ֖יךָ לַשָּׁ֑וְא כִּ֣י לֹ֤א יְנַקֶּה֙ יְהֹוָ֔ה אֵ֛ת אֲשֶׁר־יִשָּׂ֥א אֶת־שְׁמ֖וֹ לַשָּֽׁוְא׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "שָׁמ֛֣וֹר אֶת־י֥וֹם֩ הַשַּׁבָּ֖֨ת לְקַדְּשׁ֑֜וֹ כַּאֲשֶׁ֥ר צִוְּךָ֖֣ <b>׀</b> יְהֹוָ֥֣ה אֱלֹהֶֽ֗יךָ׃",
+      "שֵׁ֤֣שֶׁת יָמִ֣ים֙ תַּֽעֲבֹ֔ד֮ וְעָשִׂ֖֣יתָ כׇּֿל־מְלַאכְתֶּֽךָ֒׃",
+      "וְי֨וֹם֙ הַשְּׁבִיעִ֔֜י שַׁבָּ֖֣ת <b>׀</b> לַיהֹוָ֣ה אֱלֹהֶ֑֗יךָ לֹ֣א תַעֲשֶׂ֣ה כׇל־מְלָאכָ֡ה אַתָּ֣ה וּבִנְךָֽ־וּבִתֶּ֣ךָ וְעַבְדְּךָֽ־וַ֠אֲמָתֶ֠ךָ וְשׁוֹרְךָ֨ וַחֲמֹֽרְךָ֜ וְכׇל־בְּהֶמְתֶּ֗ךָ וְגֵֽרְךָ֙ אֲשֶׁ֣ר בִּשְׁעָרֶ֔יךָ לְמַ֗עַן יָנ֛וּחַ עַבְדְּךָ֥ וַאֲמָתְךָ֖ כָּמֽ֑וֹךָ׃",
+      "וְזָכַרְתָּ֗֞ כִּ֣י־עֶ֤֥בֶד הָיִ֣֙יתָ֙ <b>׀</b> בְּאֶ֣רֶץ מִצְרַ֔֗יִם וַיֹּצִ֨אֲךָ֜֩ יְהֹוָ֤֨ה אֱלֹהֶ֤֙יךָ֙ מִשָּׁ֔ם֙ בְּיָ֥֤ד חֲזָקָ֖ה֙ וּבִזְרֹ֣עַ נְטוּיָ֑֔ה עַל־כֵּ֗ן צִוְּךָ֙ יְהֹוָ֣ה אֱלֹהֶ֔יךָ לַעֲשׂ֖וֹת אֶת־י֥וֹם הַשַּׁבָּֽת׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "כַּבֵּ֤ד אֶת־אָבִ֙יךָ֙ וְאֶת־אִמֶּ֔ךָ כַּאֲשֶׁ֥ר צִוְּךָ֖ יְהֹוָ֣ה אֱלֹהֶ֑יךָ לְמַ֣עַן <b>׀</b> יַאֲרִיכֻ֣ן יָמֶ֗יךָ וּלְמַ֙עַן֙ יִ֣יטַב לָ֔ךְ עַ֚ל הָֽאֲדָמָ֔ה אֲשֶׁר־יְהֹוָ֥ה אֱלֹהֶ֖יךָ נֹתֵ֥ן לָֽךְ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "לֹ֥֖א תִּֿרְצָ֖͏ֽח׃ <span class=\"mam-spi-samekh\">{ס}</span> וְלֹ֣֖א תִּֿנְאָ֑͏ֽף׃ <span class=\"mam-spi-samekh\">{ס}</span> וְלֹ֣֖א תִּֿגְנֹֽ֔ב׃ <span class=\"mam-spi-samekh\">{ס}</span> וְלֹֽא־תַעֲנֶ֥ה בְרֵֽעֲךָ֖ עֵ֥ד שָֽׁוְא׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "וְלֹ֥א תַחְמֹ֖ד אֵ֣שֶׁת רֵעֶ֑ךָ <span class=\"mam-spi-samekh\">{ס}</span> וְלֹ֨א תִתְאַוֶּ֜ה בֵּ֣ית רֵעֶ֗ךָ שָׂדֵ֜הוּ וְעַבְדּ֤וֹ וַאֲמָתוֹ֙ שׁוֹר֣וֹ וַחֲמֹר֔וֹ וְכֹ֖ל אֲשֶׁ֥ר לְרֵעֶֽךָ׃ <span class=\"mam-spi-samekh\">{ס}</span>"
+    ],
+    "heRef": "דברים ה׳:ו׳-י״ח",
     "lang": "en",
     "primary_category": "Tanakh",
-    "ref": "Deuteronomy 5:16",
-    "url": "Deuteronomy.5.16"
+    "ref": "Deuteronomy 5:6-18",
+    "url": "Deuteronomy.5.6-18"
   },
-  "Exodus 16:31": {
-    "en": "The house of Israel named it manna; it was like coriander seed, white, and it tasted like wafers in honey.",
-    "he": "וַיִּקְרְא֧וּ בֵֽית־יִשְׂרָאֵ֛ל אֶת־שְׁמ֖וֹ מָ֑ן וְה֗וּא כְּזֶ֤רַע גַּד֙ לָבָ֔ן וְטַעְמ֖וֹ כְּצַפִּיחִ֥ת בִּדְבָֽשׁ׃",
-    "heRef": "שמות ט״ז:ל״א",
+  "Exodus 16:21-16:36": {
+    "en": [
+      "So they gathered it every morning, each as much as he needed to eat; for when the sun grew hot, it would melt.",
+      "On the sixth day they gathered double the amount of food, two <i>omer</i>s for each; and when all the chieftains of the community came and told Moses,",
+      "he said to them, “This is what the L<small>ORD</small> meant: Tomorrow is a day of rest, a holy sabbath of the L<small>ORD</small>. Bake what you would bake and boil what you would boil; and all that is left put aside to be kept until morning.”",
+      "So they put it aside until morning, as Moses had ordered; and it did not turn foul, and there were no maggots in it.",
+      "Then Moses said, “Eat it today, for today is a sabbath of the L<small>ORD</small>; you will not find it today on the plain.",
+      "Six days you shall gather it; on the seventh day, the sabbath, there will be none.”",
+      "Yet some of the people went out on the seventh day to gather, but they found nothing.",
+      "And the L<small>ORD</small> said to Moses, “How long will you all refuse to obey My commandments and My teachings?",
+      "Mark that the L<small>ORD</small> has given you the sabbath; therefore He gives you two days’ food on the sixth day. Let everyone remain where he is: let no one leave his place on the seventh day.”",
+      "So the people remained inactive on the seventh day.",
+      "The house of Israel named it manna; it was like coriander seed, white, and it tasted like wafers in honey.",
+      "Moses said, “This is what the L<small>ORD</small> has commanded: Let one <i>omer</i> of it be kept throughout the ages, in order that they may see the bread that I fed you in the wilderness when I brought you out from the land of Egypt.”",
+      "And Moses said to Aaron, “Take a jar, put one <i>omer</i> of manna in it, and place it before the L<small>ORD</small>, to be kept throughout the ages.”",
+      "As the L<small>ORD</small> had commanded Moses, Aaron placed it before the Pact, to be kept.",
+      "And the Israelites ate manna forty years, until they came to a settled land; they ate the manna until they came to the border of the land of Canaan.",
+      "The <i>omer</i> is a tenth of an <i>ephah</i>."
+    ],
+    "he": [
+      "וַיִּלְקְט֤וּ אֹתוֹ֙ בַּבֹּ֣קֶר בַּבֹּ֔קֶר אִ֖ישׁ כְּפִ֣י אׇכְל֑וֹ וְחַ֥ם הַשֶּׁ֖מֶשׁ וְנָמָֽס׃",
+      "וַיְהִ֣י <b>׀</b> בַּיּ֣וֹם הַשִּׁשִּׁ֗י לָֽקְט֥וּ לֶ֙חֶם֙ מִשְׁנֶ֔ה שְׁנֵ֥י הָעֹ֖מֶר לָאֶחָ֑ד וַיָּבֹ֙אוּ֙ כׇּל־נְשִׂיאֵ֣י הָֽעֵדָ֔ה וַיַּגִּ֖ידוּ לְמֹשֶֽׁה׃",
+      "וַיֹּ֣אמֶר אֲלֵהֶ֗ם ה֚וּא אֲשֶׁ֣ר דִּבֶּ֣ר יְהֹוָ֔ה שַׁבָּת֧וֹן שַׁבַּת־קֹ֛דֶשׁ לַֽיהֹוָ֖ה מָחָ֑ר אֵ֣ת אֲשֶׁר־תֹּאפ֞וּ אֵפ֗וּ וְאֵ֤ת אֲשֶֽׁר־תְּבַשְּׁלוּ֙ בַּשֵּׁ֔לוּ וְאֵת֙ כׇּל־הָ֣עֹדֵ֔ף הַנִּ֧יחוּ לָכֶ֛ם לְמִשְׁמֶ֖רֶת עַד־הַבֹּֽקֶר׃",
+      "וַיַּנִּ֤יחוּ אֹתוֹ֙ עַד־הַבֹּ֔קֶר כַּאֲשֶׁ֖ר צִוָּ֣ה מֹשֶׁ֑ה וְלֹ֣א הִבְאִ֔ישׁ וְרִמָּ֖ה לֹא־הָ֥יְתָה בּֽוֹ׃",
+      "וַיֹּ֤אמֶר מֹשֶׁה֙ אִכְלֻ֣הוּ הַיּ֔וֹם כִּֽי־שַׁבָּ֥ת הַיּ֖וֹם לַיהֹוָ֑ה הַיּ֕וֹם לֹ֥א תִמְצָאֻ֖הוּ בַּשָּׂדֶֽה׃",
+      "שֵׁ֥שֶׁת יָמִ֖ים תִּלְקְטֻ֑הוּ וּבַיּ֧וֹם הַשְּׁבִיעִ֛י שַׁבָּ֖ת לֹ֥א יִֽהְיֶה־בּֽוֹ׃",
+      "וַֽיְהִי֙ בַּיּ֣וֹם הַשְּׁבִיעִ֔י יָצְא֥וּ מִן־הָעָ֖ם לִלְקֹ֑ט וְלֹ֖א מָצָֽאוּ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "וַיֹּ֥אמֶר יְהֹוָ֖ה אֶל־מֹשֶׁ֑ה עַד־אָ֙נָה֙ מֵֽאַנְתֶּ֔ם לִשְׁמֹ֥ר מִצְוֺתַ֖י וְתוֹרֹתָֽי׃",
+      "רְא֗וּ כִּֽי־יְהֹוָה֮ נָתַ֣ן לָכֶ֣ם הַשַּׁבָּת֒ עַל־כֵּ֠ן ה֣וּא נֹתֵ֥ן לָכֶ֛ם בַּיּ֥וֹם הַשִּׁשִּׁ֖י לֶ֣חֶם יוֹמָ֑יִם שְׁב֣וּ <b>׀</b> אִ֣ישׁ תַּחְתָּ֗יו אַל־יֵ֥צֵא אִ֛ישׁ מִמְּקֹמ֖וֹ בַּיּ֥וֹם הַשְּׁבִיעִֽי׃",
+      "וַיִּשְׁבְּת֥וּ הָעָ֖ם בַּיּ֥וֹם הַשְּׁבִעִֽי׃",
+      "וַיִּקְרְא֧וּ בֵֽית־יִשְׂרָאֵ֛ל אֶת־שְׁמ֖וֹ מָ֑ן וְה֗וּא כְּזֶ֤רַע גַּד֙ לָבָ֔ן וְטַעְמ֖וֹ כְּצַפִּיחִ֥ת בִּדְבָֽשׁ׃",
+      "וַיֹּ֣אמֶר מֹשֶׁ֗ה זֶ֤ה הַדָּבָר֙ אֲשֶׁ֣ר צִוָּ֣ה יְהֹוָ֔ה מְלֹ֤א הָעֹ֙מֶר֙ מִמֶּ֔נּוּ לְמִשְׁמֶ֖רֶת לְדֹרֹתֵיכֶ֑ם לְמַ֣עַן <b>׀</b> יִרְא֣וּ אֶת־הַלֶּ֗חֶם אֲשֶׁ֨ר הֶאֱכַ֤לְתִּי אֶתְכֶם֙ בַּמִּדְבָּ֔ר בְּהוֹצִיאִ֥י אֶתְכֶ֖ם מֵאֶ֥רֶץ מִצְרָֽיִם׃",
+      "וַיֹּ֨אמֶר מֹשֶׁ֜ה אֶֽל־אַהֲרֹ֗ן קַ֚ח צִנְצֶ֣נֶת אַחַ֔ת וְתֶן־שָׁ֥מָּה מְלֹֽא־הָעֹ֖מֶר מָ֑ן וְהַנַּ֤ח אֹתוֹ֙ לִפְנֵ֣י יְהֹוָ֔ה לְמִשְׁמֶ֖רֶת לְדֹרֹתֵיכֶֽם׃",
+      "כַּאֲשֶׁ֛ר צִוָּ֥ה יְהֹוָ֖ה אֶל־מֹשֶׁ֑ה וַיַּנִּיחֵ֧הוּ אַהֲרֹ֛ן לִפְנֵ֥י הָעֵדֻ֖ת לְמִשְׁמָֽרֶת׃",
+      "וּבְנֵ֣י יִשְׂרָאֵ֗ל אָֽכְל֤וּ אֶת־הַמָּן֙ אַרְבָּעִ֣ים שָׁנָ֔ה עַד־בֹּאָ֖ם אֶל־אֶ֣רֶץ נוֹשָׁ֑בֶת אֶת־הַמָּן֙ אָֽכְל֔וּ עַד־בֹּאָ֕ם אֶל־קְצֵ֖ה אֶ֥רֶץ כְּנָֽעַן׃",
+      "וְהָעֹ֕מֶר עֲשִׂרִ֥ית הָאֵיפָ֖ה הֽוּא׃ <span class=\"mam-spi-pe\">{פ}</span><br/>"
+    ],
+    "heRef": "שמות ט״ז:כ״א-ל״ו",
     "lang": "en",
     "primary_category": "Tanakh",
-    "ref": "Exodus 16:31",
-    "url": "Exodus.16.31"
+    "ref": "Exodus 16:21-36",
+    "url": "Exodus.16.21-36"
   },
-  "Exodus 19:13": {
-    "en": "no hand shall touch him, but he shall be either stoned or shot; beast or man, he shall not live.’ When the ram’s horn sounds a long blast, they may go up on the mountain.”",
-    "he": "לֹא־תִגַּ֨ע בּ֜וֹ יָ֗ד כִּֽי־סָק֤וֹל יִסָּקֵל֙ אוֹ־יָרֹ֣ה יִיָּרֶ֔ה אִם־בְּהֵמָ֥ה אִם־אִ֖ישׁ לֹ֣א יִחְיֶ֑ה בִּמְשֹׁךְ֙ הַיֹּבֵ֔ל הֵ֖מָּה יַעֲל֥וּ בָהָֽר׃",
-    "heRef": "שמות י״ט:י״ג",
+  "Exodus 19:7-19:19": {
+    "en": [
+      "Moses came and summoned the elders of the people and put before them all that the L<small>ORD</small> had commanded him.",
+      "All the people answered as one, saying, “All that the L<small>ORD</small> has spoken we will do!” And Moses brought back the people’s words to the L<small>ORD</small>.",
+      "And the L<small>ORD</small> said to Moses, “I will come to you in a thick cloud, in order that the people may hear when I speak with you and so trust you ever after.” Then Moses reported the people’s words to the L<small>ORD</small>,",
+      "and the L<small>ORD</small> said to Moses, “Go to the people and warn them to stay pure today and tomorrow. Let them wash their clothes.",
+      "Let them be ready for the third day; for on the third day the L<small>ORD</small> will come down, in the sight of all the people, on Mount Sinai.",
+      "You shall set bounds for the people round about, saying, ‘Beware of going up the mountain or touching the border of it. Whoever touches the mountain shall be put to death:",
+      "no hand shall touch him, but he shall be either stoned or shot; beast or man, he shall not live.’ When the ram’s horn sounds a long blast, they may go up on the mountain.”",
+      "Moses came down from the mountain to the people and warned the people to stay pure, and they washed their clothes.",
+      "And he said to the people, “Be ready for the third day: do not go near a woman.”",
+      "On the third day, as morning dawned, there was thunder, and lightning, and a dense cloud upon the mountain, and a very loud blast of the horn; and all the people who were in the camp trembled.",
+      "Moses led the people out of the camp toward God, and they took their places at the foot of the mountain.",
+      "Now Mount Sinai was all in smoke, for the L<small>ORD</small> had come down upon it in fire; the smoke rose like the smoke of a kiln, and the whole mountain trembled violently.",
+      "The blare of the horn grew louder and louder. As Moses spoke, God answered him in thunder."
+    ],
+    "he": [
+      "וַיָּבֹ֣א מֹשֶׁ֔ה וַיִּקְרָ֖א לְזִקְנֵ֣י הָעָ֑ם וַיָּ֣שֶׂם לִפְנֵיהֶ֗ם אֵ֚ת כׇּל־הַדְּבָרִ֣ים הָאֵ֔לֶּה אֲשֶׁ֥ר צִוָּ֖הוּ יְהֹוָֽה׃",
+      "וַיַּעֲנ֨וּ כׇל־הָעָ֤ם יַחְדָּו֙ וַיֹּ֣אמְר֔וּ כֹּ֛ל אֲשֶׁר־דִּבֶּ֥ר יְהֹוָ֖ה נַעֲשֶׂ֑ה וַיָּ֧שֶׁב מֹשֶׁ֛ה אֶת־דִּבְרֵ֥י הָעָ֖ם אֶל־יְהֹוָֽה׃",
+      "וַיֹּ֨אמֶר יְהֹוָ֜ה אֶל־מֹשֶׁ֗ה הִנֵּ֨ה אָנֹכִ֜י בָּ֣א אֵלֶ֘יךָ֮ בְּעַ֣ב הֶֽעָנָן֒ בַּעֲב֞וּר יִשְׁמַ֤ע הָעָם֙ בְּדַבְּרִ֣י עִמָּ֔ךְ וְגַם־בְּךָ֖ יַאֲמִ֣ינוּ לְעוֹלָ֑ם וַיַּגֵּ֥ד מֹשֶׁ֛ה אֶת־דִּבְרֵ֥י הָעָ֖ם אֶל־יְהֹוָֽה׃",
+      "וַיֹּ֨אמֶר יְהֹוָ֤ה אֶל־מֹשֶׁה֙ לֵ֣ךְ אֶל־הָעָ֔ם וְקִדַּשְׁתָּ֥ם הַיּ֖וֹם וּמָחָ֑ר וְכִבְּס֖וּ שִׂמְלֹתָֽם׃",
+      "וְהָי֥וּ נְכֹנִ֖ים לַיּ֣וֹם הַשְּׁלִישִׁ֑י כִּ֣י <b>׀</b> בַּיּ֣וֹם הַשְּׁלִשִׁ֗י יֵרֵ֧ד יְהֹוָ֛ה לְעֵינֵ֥י כׇל־הָעָ֖ם עַל־הַ֥ר סִינָֽי׃",
+      "וְהִגְבַּלְתָּ֤ אֶת־הָעָם֙ סָבִ֣יב לֵאמֹ֔ר הִשָּׁמְר֥וּ לָכֶ֛ם עֲל֥וֹת בָּהָ֖ר וּנְגֹ֣עַ בְּקָצֵ֑הוּ כׇּל־הַנֹּגֵ֥עַ בָּהָ֖ר מ֥וֹת יוּמָֽת׃",
+      "לֹא־תִגַּ֨ע בּ֜וֹ יָ֗ד כִּֽי־סָק֤וֹל יִסָּקֵל֙ אוֹ־יָרֹ֣ה יִיָּרֶ֔ה אִם־בְּהֵמָ֥ה אִם־אִ֖ישׁ לֹ֣א יִחְיֶ֑ה בִּמְשֹׁךְ֙ הַיֹּבֵ֔ל הֵ֖מָּה יַעֲל֥וּ בָהָֽר׃",
+      "וַיֵּ֧רֶד מֹשֶׁ֛ה מִן־הָהָ֖ר אֶל־הָעָ֑ם וַיְקַדֵּשׁ֙ אֶת־הָעָ֔ם וַֽיְכַבְּס֖וּ שִׂמְלֹתָֽם׃",
+      "וַיֹּ֙אמֶר֙ אֶל־הָעָ֔ם הֱי֥וּ נְכֹנִ֖ים לִשְׁלֹ֣שֶׁת יָמִ֑ים אַֽל־תִּגְּשׁ֖וּ אֶל־אִשָּֽׁה׃",
+      "וַיְהִי֩ בַיּ֨וֹם הַשְּׁלִישִׁ֜י בִּֽהְיֹ֣ת הַבֹּ֗קֶר וַיְהִי֩ קֹלֹ֨ת וּבְרָקִ֜ים וְעָנָ֤ן כָּבֵד֙ עַל־הָהָ֔ר וְקֹ֥ל שֹׁפָ֖ר חָזָ֣ק מְאֹ֑ד וַיֶּחֱרַ֥ד כׇּל־הָעָ֖ם אֲשֶׁ֥ר בַּֽמַּחֲנֶֽה׃",
+      "וַיּוֹצֵ֨א מֹשֶׁ֧ה אֶת־הָעָ֛ם לִקְרַ֥את הָֽאֱלֹהִ֖ים מִן־הַֽמַּחֲנֶ֑ה וַיִּֽתְיַצְּב֖וּ בְּתַחְתִּ֥ית הָהָֽר׃",
+      "וְהַ֤ר סִינַי֙ עָשַׁ֣ן כֻּלּ֔וֹ מִ֠פְּנֵ֠י אֲשֶׁ֨ר יָרַ֥ד עָלָ֛יו יְהֹוָ֖ה בָּאֵ֑שׁ וַיַּ֤עַל עֲשָׁנוֹ֙ כְּעֶ֣שֶׁן הַכִּבְשָׁ֔ן וַיֶּחֱרַ֥ד כׇּל־הָהָ֖ר מְאֹֽד׃",
+      "וַיְהִי֙ ק֣וֹל הַשֹּׁפָ֔ר הוֹלֵ֖ךְ וְחָזֵ֣ק מְאֹ֑ד מֹשֶׁ֣ה יְדַבֵּ֔ר וְהָאֱלֹהִ֖ים יַעֲנֶ֥נּוּ בְקֽוֹל׃"
+    ],
+    "heRef": "שמות י״ט:ז׳-י״ט",
     "lang": "en",
     "primary_category": "Tanakh",
-    "ref": "Exodus 19:13",
-    "url": "Exodus.19.13"
+    "ref": "Exodus 19:7-19",
+    "url": "Exodus.19.7-19"
   },
-  "Exodus 20:10": {
-    "en": "but the seventh day is a sabbath of the L<small>ORD</small> your God: you shall not do any work—you, your son or daughter, your male or female slave, or your cattle, or the stranger who is within your settlements.",
-    "he": "וְי֨וֹם֙ הַשְּׁבִיעִ֔֜י שַׁבָּ֖֣ת <b>׀</b> לַיהֹוָ֣ה אֱלֹהֶ֑֗יךָ לֹֽ֣א־תַעֲשֶׂ֣֨ה כׇל־מְלָאכָ֜֡ה אַתָּ֣ה <b>׀</b> וּבִנְךָ֣͏ֽ־וּ֠בִתֶּ֗ךָ עַבְדְּךָ֤֨ וַאֲמָֽתְךָ֜֙ וּבְהֶמְתֶּ֔֗ךָ וְגֵרְךָ֖֙ אֲשֶׁ֥֣ר בִּשְׁעָרֶֽ֔יךָ׃",
-    "heRef": "שמות כ׳:י׳",
+  "Exodus 20:8-20:14": {
+    "en": [
+      "Remember the sabbath day and keep it holy.",
+      "Six days you shall labor and do all your work,",
+      "but the seventh day is a sabbath of the L<small>ORD</small> your God: you shall not do any work—you, your son or daughter, your male or female slave, or your cattle, or the stranger who is within your settlements.",
+      "For in six days the L<small>ORD</small> made heaven and earth and sea, and all that is in them, and He rested on the seventh day; therefore the L<small>ORD</small> blessed the sabbath day and hallowed it.",
+      "Honor your father and your mother, that you may long endure on the land that the L<small>ORD</small> your God is assigning to you.",
+      "You shall not murder.<br/>You shall not commit adultery.<br/>You shall not steal.<br/>You shall not bear false witness against your neighbor.",
+      "You shall not covet your neighbor’s house: you shall not covet your neighbor’s wife, or his male or female slave, or his ox or his ass, or anything that is your neighbor’s."
+    ],
+    "he": [
+      "זָכ֛וֹר֩ אֶת־י֥֨וֹם הַשַּׁבָּ֖֜ת לְקַדְּשֽׁ֗וֹ׃",
+      "שֵׁ֤֣שֶׁת יָמִ֣ים֙ תַּֽעֲבֹ֔ד֮ וְעָשִׂ֖֣יתָ כׇּֿל־מְלַאכְתֶּֽךָ֒׃",
+      "וְי֨וֹם֙ הַשְּׁבִיעִ֔֜י שַׁבָּ֖֣ת <b>׀</b> לַיהֹוָ֣ה אֱלֹהֶ֑֗יךָ לֹֽ֣א־תַעֲשֶׂ֣֨ה כׇל־מְלָאכָ֜֡ה אַתָּ֣ה <b>׀</b> וּבִנְךָ֣͏ֽ־וּ֠בִתֶּ֗ךָ עַבְדְּךָ֤֨ וַאֲמָֽתְךָ֜֙ וּבְהֶמְתֶּ֔֗ךָ וְגֵרְךָ֖֙ אֲשֶׁ֥֣ר בִּשְׁעָרֶֽ֔יךָ׃",
+      "כִּ֣י שֵֽׁשֶׁת־יָמִים֩ עָשָׂ֨ה יְהֹוָ֜ה אֶת־הַשָּׁמַ֣יִם וְאֶת־הָאָ֗רֶץ אֶת־הַיָּם֙ וְאֶת־כׇּל־אֲשֶׁר־בָּ֔ם וַיָּ֖נַח בַּיּ֣וֹם הַשְּׁבִיעִ֑י עַל־כֵּ֗ן בֵּרַ֧ךְ יְהֹוָ֛ה אֶת־י֥וֹם הַשַּׁבָּ֖ת וַֽיְקַדְּשֵֽׁהוּ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "כַּבֵּ֥ד אֶת־אָבִ֖יךָ וְאֶת־אִמֶּ֑ךָ לְמַ֙עַן֙ יַאֲרִכ֣וּן יָמֶ֔יךָ עַ֚ל הָאֲדָמָ֔ה אֲשֶׁר־יְהֹוָ֥ה אֱלֹהֶ֖יךָ נֹתֵ֥ן לָֽךְ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "לֹ֥֖א תִּֿרְצָ֖͏ֽח׃ <span class=\"mam-spi-samekh\">{ס}</span> לֹ֣֖א תִּֿנְאָ֑͏ֽף׃ <span class=\"mam-spi-samekh\">{ס}</span> לֹ֣֖א תִּֿגְנֹֽ֔ב׃ <span class=\"mam-spi-samekh\">{ס}</span> לֹֽא־תַעֲנֶ֥ה בְרֵעֲךָ֖ עֵ֥ד שָֽׁקֶר׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "לֹ֥א תַחְמֹ֖ד בֵּ֣ית רֵעֶ֑ךָ <span class=\"mam-spi-samekh\">{ס}</span> לֹֽא־תַחְמֹ֞ד אֵ֣שֶׁת רֵעֶ֗ךָ וְעַבְדּ֤וֹ וַאֲמָתוֹ֙ וְשׁוֹר֣וֹ וַחֲמֹר֔וֹ וְכֹ֖ל אֲשֶׁ֥ר לְרֵעֶֽךָ׃ <span class=\"mam-spi-pe\">{פ}</span><br/>"
+    ],
+    "heRef": "שמות כ׳:ח׳-י״ד",
     "lang": "en",
     "primary_category": "Tanakh",
-    "ref": "Exodus 20:10",
-    "url": "Exodus.20.10"
+    "ref": "Exodus 20:8-14",
+    "url": "Exodus.20.8-14"
   },
-  "Exodus 21:29": {
-    "en": "If, however, that ox has been in the habit of goring, and its owner, though warned, has failed to guard it, and it kills a man or a woman—the ox shall be stoned and its owner, too, shall be put to death.",
-    "he": "וְאִ֡ם שׁוֹר֩ נַגָּ֨ח ה֜וּא מִתְּמֹ֣ל שִׁלְשֹׁ֗ם וְהוּעַ֤ד בִּבְעָלָיו֙ וְלֹ֣א יִשְׁמְרֶ֔נּוּ וְהֵמִ֥ית אִ֖ישׁ א֣וֹ אִשָּׁ֑ה הַשּׁוֹר֙ יִסָּקֵ֔ל וְגַם־בְּעָלָ֖יו יוּמָֽת׃",
-    "heRef": "שמות כ״א:כ״ט",
+  "Exodus 21:28-22:2": {
+    "en": [
+      [
+        "When an ox gores a man or a woman to death, the ox shall be stoned and its flesh shall not be eaten, but the owner of the ox is not to be punished.",
+        "If, however, that ox has been in the habit of goring, and its owner, though warned, has failed to guard it, and it kills a man or a woman—the ox shall be stoned and its owner, too, shall be put to death.",
+        "If ransom is laid upon him, he must pay whatever is laid upon him to redeem his life.",
+        "So, too, if it gores a minor, male or female, [the owner] shall be dealt with according to the same rule.",
+        "But if the ox gores a slave, male or female, he shall pay thirty shekels of silver to the master, and the ox shall be stoned.",
+        "When a man opens a pit, or digs a pit and does not cover it, and an ox or an ass falls into it,",
+        "the one responsible for the pit must make restitution; he shall pay the price to the owner, but shall keep the dead animal.",
+        "When a man’s ox injures his neighbor’s ox and it dies, they shall sell the live ox and divide its price; they shall also divide the dead animal.",
+        "If, however, it is known that the ox was in the habit of goring, and its owner has failed to guard it, he must restore ox for ox, but shall keep the dead animal.",
+        "When a man steals an ox or a sheep, and slaughters it or sells it, he shall pay five oxen for the ox, and four sheep for the sheep.—"
+      ],
+      [
+        "If the thief is seized while tunneling, and he is beaten to death, there is no bloodguilt in his case.",
+        "If the sun has risen on him, there is bloodguilt in that case.—He must make restitution; if he lacks the means, he shall be sold for his theft."
+      ]
+    ],
+    "he": [
+      [
+        "וְכִֽי־יִגַּ֨ח שׁ֥וֹר אֶת־אִ֛ישׁ א֥וֹ אֶת־אִשָּׁ֖ה וָמֵ֑ת סָק֨וֹל יִסָּקֵ֜ל הַשּׁ֗וֹר וְלֹ֤א יֵאָכֵל֙ אֶת־בְּשָׂר֔וֹ וּבַ֥עַל הַשּׁ֖וֹר נָקִֽי׃",
+        "וְאִ֡ם שׁוֹר֩ נַגָּ֨ח ה֜וּא מִתְּמֹ֣ל שִׁלְשֹׁ֗ם וְהוּעַ֤ד בִּבְעָלָיו֙ וְלֹ֣א יִשְׁמְרֶ֔נּוּ וְהֵמִ֥ית אִ֖ישׁ א֣וֹ אִשָּׁ֑ה הַשּׁוֹר֙ יִסָּקֵ֔ל וְגַם־בְּעָלָ֖יו יוּמָֽת׃",
+        "אִם־כֹּ֖פֶר יוּשַׁ֣ת עָלָ֑יו וְנָתַן֙ פִּדְיֹ֣ן נַפְשׁ֔וֹ כְּכֹ֥ל אֲשֶׁר־יוּשַׁ֖ת עָלָֽיו׃",
+        "אוֹ־בֵ֥ן יִגָּ֖ח אוֹ־בַ֣ת יִגָּ֑ח כַּמִּשְׁפָּ֥ט הַזֶּ֖ה יֵעָ֥שֶׂה לּֽוֹ׃",
+        "אִם־עֶ֛בֶד יִגַּ֥ח הַשּׁ֖וֹר א֣וֹ אָמָ֑ה כֶּ֣סֶף <b>׀</b> שְׁלֹשִׁ֣ים שְׁקָלִ֗ים יִתֵּן֙ לַֽאדֹנָ֔יו וְהַשּׁ֖וֹר יִסָּקֵֽל׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+        "וְכִֽי־יִפְתַּ֨ח אִ֜ישׁ בּ֗וֹר א֠וֹ כִּֽי־יִכְרֶ֥ה אִ֛ישׁ בֹּ֖ר וְלֹ֣א יְכַסֶּ֑נּוּ וְנָֽפַל־שָׁ֥מָּה שּׁ֖וֹר א֥וֹ חֲמֽוֹר׃",
+        "בַּ֤עַל הַבּוֹר֙ יְשַׁלֵּ֔ם כֶּ֖סֶף יָשִׁ֣יב לִבְעָלָ֑יו וְהַמֵּ֖ת יִֽהְיֶה־לּֽוֹ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+        "וְכִֽי־יִגֹּ֧ף שֽׁוֹר־אִ֛ישׁ אֶת־שׁ֥וֹר רֵעֵ֖הוּ וָמֵ֑ת וּמָ֨כְר֜וּ אֶת־הַשּׁ֤וֹר הַחַי֙ וְחָצ֣וּ אֶת־כַּסְפּ֔וֹ וְגַ֥ם אֶת־הַמֵּ֖ת יֶֽחֱצֽוּן׃",
+        "א֣וֹ נוֹדַ֗ע כִּ֠י שׁ֣וֹר נַגָּ֥ח הוּא֙ מִתְּמ֣וֹל שִׁלְשֹׁ֔ם וְלֹ֥א יִשְׁמְרֶ֖נּוּ בְּעָלָ֑יו שַׁלֵּ֨ם יְשַׁלֵּ֥ם שׁוֹר֙ תַּ֣חַת הַשּׁ֔וֹר וְהַמֵּ֖ת יִֽהְיֶה־לּֽוֹ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+        "כִּ֤י יִגְנֹֽב־אִישׁ֙ שׁ֣וֹר אוֹ־שֶׂ֔ה וּטְבָח֖וֹ א֣וֹ מְכָר֑וֹ חֲמִשָּׁ֣ה בָקָ֗ר יְשַׁלֵּם֙ תַּ֣חַת הַשּׁ֔וֹר וְאַרְבַּע־צֹ֖אן תַּ֥חַת הַשֶּֽׂה׃"
+      ],
+      [
+        "אִם־בַּמַּחְתֶּ֛רֶת יִמָּצֵ֥א הַגַּנָּ֖ב וְהֻכָּ֣ה וָמֵ֑ת אֵ֥ין ל֖וֹ דָּמִֽים׃",
+        "אִם־זָרְחָ֥ה הַשֶּׁ֛מֶשׁ עָלָ֖יו דָּמִ֣ים ל֑וֹ שַׁלֵּ֣ם יְשַׁלֵּ֔ם אִם־אֵ֣ין ל֔וֹ וְנִמְכַּ֖ר בִּגְנֵבָתֽוֹ׃"
+      ]
+    ],
+    "heRef": "שמות כ״א:כ״ח-כ״ב:ב׳",
     "lang": "en",
     "primary_category": "Tanakh",
-    "ref": "Exodus 21:29",
-    "url": "Exodus.21.29"
+    "ref": "Exodus 21:28-22:2",
+    "url": "Exodus.21.28-22.2"
   },
-  "Exodus 21:33": {
-    "en": "When a man opens a pit, or digs a pit and does not cover it, and an ox or an ass falls into it,",
-    "he": "וְכִֽי־יִפְתַּ֨ח אִ֜ישׁ בּ֗וֹר א֠וֹ כִּֽי־יִכְרֶ֥ה אִ֛ישׁ בֹּ֖ר וְלֹ֣א יְכַסֶּ֑נּוּ וְנָֽפַל־שָׁ֥מָּה שּׁ֖וֹר א֥וֹ חֲמֽוֹר׃",
-    "heRef": "שמות כ״א:ל״ג",
+  "Exodus 21:28-22:3": {
+    "en": [
+      [
+        "When an ox gores a man or a woman to death, the ox shall be stoned and its flesh shall not be eaten, but the owner of the ox is not to be punished.",
+        "If, however, that ox has been in the habit of goring, and its owner, though warned, has failed to guard it, and it kills a man or a woman—the ox shall be stoned and its owner, too, shall be put to death.",
+        "If ransom is laid upon him, he must pay whatever is laid upon him to redeem his life.",
+        "So, too, if it gores a minor, male or female, [the owner] shall be dealt with according to the same rule.",
+        "But if the ox gores a slave, male or female, he shall pay thirty shekels of silver to the master, and the ox shall be stoned.",
+        "When a man opens a pit, or digs a pit and does not cover it, and an ox or an ass falls into it,",
+        "the one responsible for the pit must make restitution; he shall pay the price to the owner, but shall keep the dead animal.",
+        "When a man’s ox injures his neighbor’s ox and it dies, they shall sell the live ox and divide its price; they shall also divide the dead animal.",
+        "If, however, it is known that the ox was in the habit of goring, and its owner has failed to guard it, he must restore ox for ox, but shall keep the dead animal.",
+        "When a man steals an ox or a sheep, and slaughters it or sells it, he shall pay five oxen for the ox, and four sheep for the sheep.—"
+      ],
+      [
+        "If the thief is seized while tunneling, and he is beaten to death, there is no bloodguilt in his case.",
+        "If the sun has risen on him, there is bloodguilt in that case.—He must make restitution; if he lacks the means, he shall be sold for his theft.",
+        "But if what he stole—whether ox or ass or sheep—is found alive in his possession, he shall pay double."
+      ]
+    ],
+    "he": [
+      [
+        "וְכִֽי־יִגַּ֨ח שׁ֥וֹר אֶת־אִ֛ישׁ א֥וֹ אֶת־אִשָּׁ֖ה וָמֵ֑ת סָק֨וֹל יִסָּקֵ֜ל הַשּׁ֗וֹר וְלֹ֤א יֵאָכֵל֙ אֶת־בְּשָׂר֔וֹ וּבַ֥עַל הַשּׁ֖וֹר נָקִֽי׃",
+        "וְאִ֡ם שׁוֹר֩ נַגָּ֨ח ה֜וּא מִתְּמֹ֣ל שִׁלְשֹׁ֗ם וְהוּעַ֤ד בִּבְעָלָיו֙ וְלֹ֣א יִשְׁמְרֶ֔נּוּ וְהֵמִ֥ית אִ֖ישׁ א֣וֹ אִשָּׁ֑ה הַשּׁוֹר֙ יִסָּקֵ֔ל וְגַם־בְּעָלָ֖יו יוּמָֽת׃",
+        "אִם־כֹּ֖פֶר יוּשַׁ֣ת עָלָ֑יו וְנָתַן֙ פִּדְיֹ֣ן נַפְשׁ֔וֹ כְּכֹ֥ל אֲשֶׁר־יוּשַׁ֖ת עָלָֽיו׃",
+        "אוֹ־בֵ֥ן יִגָּ֖ח אוֹ־בַ֣ת יִגָּ֑ח כַּמִּשְׁפָּ֥ט הַזֶּ֖ה יֵעָ֥שֶׂה לּֽוֹ׃",
+        "אִם־עֶ֛בֶד יִגַּ֥ח הַשּׁ֖וֹר א֣וֹ אָמָ֑ה כֶּ֣סֶף <b>׀</b> שְׁלֹשִׁ֣ים שְׁקָלִ֗ים יִתֵּן֙ לַֽאדֹנָ֔יו וְהַשּׁ֖וֹר יִסָּקֵֽל׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+        "וְכִֽי־יִפְתַּ֨ח אִ֜ישׁ בּ֗וֹר א֠וֹ כִּֽי־יִכְרֶ֥ה אִ֛ישׁ בֹּ֖ר וְלֹ֣א יְכַסֶּ֑נּוּ וְנָֽפַל־שָׁ֥מָּה שּׁ֖וֹר א֥וֹ חֲמֽוֹר׃",
+        "בַּ֤עַל הַבּוֹר֙ יְשַׁלֵּ֔ם כֶּ֖סֶף יָשִׁ֣יב לִבְעָלָ֑יו וְהַמֵּ֖ת יִֽהְיֶה־לּֽוֹ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+        "וְכִֽי־יִגֹּ֧ף שֽׁוֹר־אִ֛ישׁ אֶת־שׁ֥וֹר רֵעֵ֖הוּ וָמֵ֑ת וּמָ֨כְר֜וּ אֶת־הַשּׁ֤וֹר הַחַי֙ וְחָצ֣וּ אֶת־כַּסְפּ֔וֹ וְגַ֥ם אֶת־הַמֵּ֖ת יֶֽחֱצֽוּן׃",
+        "א֣וֹ נוֹדַ֗ע כִּ֠י שׁ֣וֹר נַגָּ֥ח הוּא֙ מִתְּמ֣וֹל שִׁלְשֹׁ֔ם וְלֹ֥א יִשְׁמְרֶ֖נּוּ בְּעָלָ֑יו שַׁלֵּ֨ם יְשַׁלֵּ֥ם שׁוֹר֙ תַּ֣חַת הַשּׁ֔וֹר וְהַמֵּ֖ת יִֽהְיֶה־לּֽוֹ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+        "כִּ֤י יִגְנֹֽב־אִישׁ֙ שׁ֣וֹר אוֹ־שֶׂ֔ה וּטְבָח֖וֹ א֣וֹ מְכָר֑וֹ חֲמִשָּׁ֣ה בָקָ֗ר יְשַׁלֵּם֙ תַּ֣חַת הַשּׁ֔וֹר וְאַרְבַּע־צֹ֖אן תַּ֥חַת הַשֶּֽׂה׃"
+      ],
+      [
+        "אִם־בַּמַּחְתֶּ֛רֶת יִמָּצֵ֥א הַגַּנָּ֖ב וְהֻכָּ֣ה וָמֵ֑ת אֵ֥ין ל֖וֹ דָּמִֽים׃",
+        "אִם־זָרְחָ֥ה הַשֶּׁ֛מֶשׁ עָלָ֖יו דָּמִ֣ים ל֑וֹ שַׁלֵּ֣ם יְשַׁלֵּ֔ם אִם־אֵ֣ין ל֔וֹ וְנִמְכַּ֖ר בִּגְנֵבָתֽוֹ׃",
+        "אִֽם־הִמָּצֵא֩ תִמָּצֵ֨א בְיָד֜וֹ הַגְּנֵבָ֗ה מִשּׁ֧וֹר עַד־חֲמ֛וֹר עַד־שֶׂ֖ה חַיִּ֑ים שְׁנַ֖יִם יְשַׁלֵּֽם׃ <span class=\"mam-spi-samekh\">{ס}</span>"
+      ]
+    ],
+    "heRef": "שמות כ״א:כ״ח-כ״ב:ג׳",
     "lang": "en",
     "primary_category": "Tanakh",
-    "ref": "Exodus 21:33",
-    "url": "Exodus.21.33"
+    "ref": "Exodus 21:28-22:3",
+    "url": "Exodus.21.28-22.3"
   },
-  "Exodus 21:36": {
-    "en": "If, however, it is known that the ox was in the habit of goring, and its owner has failed to guard it, he must restore ox for ox, but shall keep the dead animal.",
-    "he": "א֣וֹ נוֹדַ֗ע כִּ֠י שׁ֣וֹר נַגָּ֥ח הוּא֙ מִתְּמ֣וֹל שִׁלְשֹׁ֔ם וְלֹ֥א יִשְׁמְרֶ֖נּוּ בְּעָלָ֑יו שַׁלֵּ֨ם יְשַׁלֵּ֥ם שׁוֹר֙ תַּ֣חַת הַשּׁ֔וֹר וְהַמֵּ֖ת יִֽהְיֶה־לּֽוֹ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
-    "heRef": "שמות כ״א:ל״ו",
+  "Exodus 22:27-23:5": {
+    "en": [
+      [
+        "You shall not revile God, nor put a curse upon a chieftain among your people.",
+        "You shall not put off the skimming of the first yield of your vats. You shall give Me the first-born among your sons.",
+        "You shall do the same with your cattle and your flocks: seven days it shall remain with its mother; on the eighth day you shall give it to Me.",
+        "You shall be holy people to Me: you must not eat flesh torn by beasts in the field; you shall cast it to the dogs."
+      ],
+      [
+        "You must not carry false rumors; you shall not join hands with the guilty to act as a malicious witness:",
+        "You shall neither side with the mighty to do wrong—you shall not give perverse testimony in a dispute so as to pervert it in favor of the mighty—",
+        "nor shall you show deference to a poor man in his dispute.",
+        "When you encounter your enemy’s ox or ass wandering, you must take it back to him.",
+        "When you see the ass of your enemy lying under its burden and would refrain from raising it, you must nevertheless raise it with him."
+      ]
+    ],
+    "he": [
+      [
+        "אֱלֹהִ֖ים לֹ֣א תְקַלֵּ֑ל וְנָשִׂ֥יא בְעַמְּךָ֖ לֹ֥א תָאֹֽר׃",
+        "מְלֵאָתְךָ֥ וְדִמְעֲךָ֖ לֹ֣א תְאַחֵ֑ר בְּכ֥וֹר בָּנֶ֖יךָ תִּתֶּן־לִֽי׃",
+        "כֵּֽן־תַּעֲשֶׂ֥ה לְשֹׁרְךָ֖ לְצֹאנֶ֑ךָ שִׁבְעַ֤ת יָמִים֙ יִהְיֶ֣ה עִם־אִמּ֔וֹ בַּיּ֥וֹם הַשְּׁמִינִ֖י תִּתְּנוֹ־לִֽי׃",
+        "וְאַנְשֵׁי־קֹ֖דֶשׁ תִּהְי֣וּן לִ֑י וּבָשָׂ֨ר בַּשָּׂדֶ֤ה טְרֵפָה֙ לֹ֣א תֹאכֵ֔לוּ לַכֶּ֖לֶב תַּשְׁלִכ֥וּן אֹתֽוֹ׃ <span class=\"mam-spi-samekh\">{ס}</span>"
+      ],
+      [
+        "לֹ֥א תִשָּׂ֖א שֵׁ֣מַע שָׁ֑וְא אַל־תָּ֤שֶׁת יָֽדְךָ֙ עִם־רָשָׁ֔ע לִהְיֹ֖ת עֵ֥ד חָמָֽס׃",
+        "לֹֽא־תִהְיֶ֥ה אַחֲרֵֽי־רַבִּ֖ים לְרָעֹ֑ת וְלֹא־תַעֲנֶ֣ה עַל־רִ֗ב לִנְטֹ֛ת אַחֲרֵ֥י רַבִּ֖ים לְהַטֹּֽת׃",
+        "וְדָ֕ל לֹ֥א תֶהְדַּ֖ר בְּרִיבֽוֹ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+        "כִּ֣י תִפְגַּ֞ע שׁ֧וֹר אֹֽיִבְךָ֛ א֥וֹ חֲמֹר֖וֹ תֹּעֶ֑ה הָשֵׁ֥ב תְּשִׁיבֶ֖נּוּ לֽוֹ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+        "כִּֽי־תִרְאֶ֞ה חֲמ֣וֹר שֹׂנַאֲךָ֗ רֹבֵץ֙ תַּ֣חַת מַשָּׂא֔וֹ וְחָדַלְתָּ֖ מֵעֲזֹ֣ב ל֑וֹ עָזֹ֥ב תַּעֲזֹ֖ב עִמּֽוֹ׃ <span class=\"mam-spi-samekh\">{ס}</span>"
+      ]
+    ],
+    "heRef": "שמות כ״ב:כ״ז-כ״ג:ה׳",
     "lang": "en",
     "primary_category": "Tanakh",
-    "ref": "Exodus 21:36",
-    "url": "Exodus.21.36"
+    "ref": "Exodus 22:27-23:5",
+    "url": "Exodus.22.27-23.5"
   },
-  "Exodus 23:5": {
-    "en": "When you see the ass of your enemy lying under its burden and would refrain from raising it, you must nevertheless raise it with him.",
-    "he": "כִּֽי־תִרְאֶ֞ה חֲמ֣וֹר שֹׂנַאֲךָ֗ רֹבֵץ֙ תַּ֣חַת מַשָּׂא֔וֹ וְחָדַלְתָּ֖ מֵעֲזֹ֣ב ל֑וֹ עָזֹ֥ב תַּעֲזֹ֖ב עִמּֽוֹ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
-    "heRef": "שמות כ״ג:ה׳",
+  "Exodus 33:17-33:23": {
+    "en": [
+      "And the L<small>ORD</small> said to Moses, “I will also do this thing that you have asked; for you have truly gained My favor and I have singled you out by name.”",
+      "He said, “Oh, let me behold Your Presence!”",
+      "And He answered, “I will make all My goodness pass before you, and I will proclaim before you the name L<small>ORD</small>, and the grace that I grant and the compassion that I show.",
+      "But,” He said, “you cannot see My face, for man may not see Me and live.”",
+      "And the L<small>ORD</small> said, “See, there is a place near Me. Station yourself on the rock",
+      "and, as My Presence passes by, I will put you in a cleft of the rock and shield you with My hand until I have passed by.",
+      "Then I will take My hand away and you will see My back; but My face must not be seen.”"
+    ],
+    "he": [
+      "וַיֹּ֤אמֶר יְהֹוָה֙ אֶל־מֹשֶׁ֔ה גַּ֣ם אֶת־הַדָּבָ֥ר הַזֶּ֛ה אֲשֶׁ֥ר דִּבַּ֖רְתָּ אֶֽעֱשֶׂ֑ה כִּֽי־מָצָ֤אתָ חֵן֙ בְּעֵינַ֔י וָאֵדָעֲךָ֖ בְּשֵֽׁם׃",
+      "וַיֹּאמַ֑ר הַרְאֵ֥נִי נָ֖א אֶת־כְּבֹדֶֽךָ׃",
+      "וַיֹּ֗אמֶר אֲנִ֨י אַעֲבִ֤יר כׇּל־טוּבִי֙ עַל־פָּנֶ֔יךָ וְקָרָ֧אתִֽי בְשֵׁ֛ם יְהֹוָ֖ה לְפָנֶ֑יךָ וְחַנֹּתִי֙ אֶת־אֲשֶׁ֣ר אָחֹ֔ן וְרִחַמְתִּ֖י אֶת־אֲשֶׁ֥ר אֲרַחֵֽם׃",
+      "וַיֹּ֕אמֶר לֹ֥א תוּכַ֖ל לִרְאֹ֣ת אֶת־פָּנָ֑י כִּ֛י לֹֽא־יִרְאַ֥נִי הָאָדָ֖ם וָחָֽי׃",
+      "וַיֹּ֣אמֶר יְהֹוָ֔ה הִנֵּ֥ה מָק֖וֹם אִתִּ֑י וְנִצַּבְתָּ֖ עַל־הַצּֽוּר׃",
+      "וְהָיָה֙ בַּעֲבֹ֣ר כְּבֹדִ֔י וְשַׂמְתִּ֖יךָ בְּנִקְרַ֣ת הַצּ֑וּר וְשַׂכֹּתִ֥י כַפִּ֛י עָלֶ֖יךָ עַד־עׇבְרִֽי׃",
+      "וַהֲסִרֹתִי֙ אֶת־כַּפִּ֔י וְרָאִ֖יתָ אֶת־אֲחֹרָ֑י וּפָנַ֖י לֹ֥א יֵרָאֽוּ׃ <span class=\"mam-spi-pe\">{פ}</span><br/>"
+    ],
+    "heRef": "שמות ל״ג:י״ז-כ״ג",
     "lang": "en",
     "primary_category": "Tanakh",
-    "ref": "Exodus 23:5",
-    "url": "Exodus.23.5"
+    "ref": "Exodus 33:17-23",
+    "url": "Exodus.33.17-23"
   },
-  "Exodus 33:19": {
-    "en": "And He answered, “I will make all My goodness pass before you, and I will proclaim before you the name L<small>ORD</small>, and the grace that I grant and the compassion that I show.",
-    "he": "וַיֹּ֗אמֶר אֲנִ֨י אַעֲבִ֤יר כׇּל־טוּבִי֙ עַל־פָּנֶ֔יךָ וְקָרָ֧אתִֽי בְשֵׁ֛ם יְהֹוָ֖ה לְפָנֶ֑יךָ וְחַנֹּתִי֙ אֶת־אֲשֶׁ֣ר אָחֹ֔ן וְרִחַמְתִּ֖י אֶת־אֲשֶׁ֥ר אֲרַחֵֽם׃",
-    "heRef": "שמות ל״ג:י״ט",
+  "Genesis 1:1-1:5": {
+    "en": [
+      "<big><strong>W</strong></big>hen God began to create heaven and earth—",
+      "the earth being unformed and void, with darkness over the surface of the deep and a wind from God sweeping over the water—",
+      "God said, “Let there be light”; and there was light.",
+      "God saw that the light was good, and God separated the light from the darkness.",
+      "God called the light Day, and the darkness He called Night. And there was evening and there was morning, a first day."
+    ],
+    "he": [
+      "<big>בְּ</big>רֵאשִׁ֖ית בָּרָ֣א אֱלֹהִ֑ים אֵ֥ת הַשָּׁמַ֖יִם וְאֵ֥ת הָאָֽרֶץ׃",
+      "וְהָאָ֗רֶץ הָיְתָ֥ה תֹ֙הוּ֙ וָבֹ֔הוּ וְחֹ֖שֶׁךְ עַל־פְּנֵ֣י תְה֑וֹם וְר֣וּחַ אֱלֹהִ֔ים מְרַחֶ֖פֶת עַל־פְּנֵ֥י הַמָּֽיִם׃",
+      "וַיֹּ֥אמֶר אֱלֹהִ֖ים יְהִ֣י א֑וֹר וַֽיְהִי־אֽוֹר׃",
+      "וַיַּ֧רְא אֱלֹהִ֛ים אֶת־הָא֖וֹר כִּי־ט֑וֹב וַיַּבְדֵּ֣ל אֱלֹהִ֔ים בֵּ֥ין הָא֖וֹר וּבֵ֥ין הַחֹֽשֶׁךְ׃",
+      "וַיִּקְרָ֨א אֱלֹהִ֤ים <small>׀</small> לָאוֹר֙ י֔וֹם וְלַחֹ֖שֶׁךְ קָ֣רָא לָ֑יְלָה וַֽיְהִי־עֶ֥רֶב וַֽיְהִי־בֹ֖קֶר י֥וֹם אֶחָֽד׃ <span class=\"mam-spi-pe\">{פ}</span><br/>"
+    ],
+    "heRef": "בראשית א׳:א׳-ה׳",
     "lang": "en",
     "primary_category": "Tanakh",
-    "ref": "Exodus 33:19",
-    "url": "Exodus.33.19"
+    "ref": "Genesis 1:1-5",
+    "url": "Genesis.1.1-5"
   },
-  "Genesis 1:21": {
-    "en": "God created the great sea monsters, and all the living creatures of every kind that creep, which the waters brought forth in swarms, and all the winged birds of every kind. And God saw that this was good.",
-    "he": "וַיִּבְרָ֣א אֱלֹהִ֔ים אֶת־הַתַּנִּינִ֖ם הַגְּדֹלִ֑ים וְאֵ֣ת כׇּל־נֶ֣פֶשׁ הַֽחַיָּ֣ה <small>׀</small> הָֽרֹמֶ֡שֶׂת אֲשֶׁר֩ שָׁרְצ֨וּ הַמַּ֜יִם לְמִֽינֵהֶ֗ם וְאֵ֨ת כׇּל־ע֤וֹף כָּנָף֙ לְמִינֵ֔הוּ וַיַּ֥רְא אֱלֹהִ֖ים כִּי־טֽוֹב׃",
-    "heRef": "בראשית א׳:כ״א",
+  "Genesis 1:20-1:23": {
+    "en": [
+      "God said, “Let the waters bring forth swarms of living creatures, and birds that fly above the earth across the expanse of the sky.”",
+      "God created the great sea monsters, and all the living creatures of every kind that creep, which the waters brought forth in swarms, and all the winged birds of every kind. And God saw that this was good.",
+      "God blessed them, saying, “Be fertile and increase, fill the waters in the seas, and let the birds increase on the earth.”",
+      "And there was evening and there was morning, a fifth day."
+    ],
+    "he": [
+      "וַיֹּ֣אמֶר אֱלֹהִ֔ים יִשְׁרְצ֣וּ הַמַּ֔יִם שֶׁ֖רֶץ נֶ֣פֶשׁ חַיָּ֑ה וְעוֹף֙ יְעוֹפֵ֣ף עַל־הָאָ֔רֶץ עַל־פְּנֵ֖י רְקִ֥יעַ הַשָּׁמָֽיִם׃",
+      "וַיִּבְרָ֣א אֱלֹהִ֔ים אֶת־הַתַּנִּינִ֖ם הַגְּדֹלִ֑ים וְאֵ֣ת כׇּל־נֶ֣פֶשׁ הַֽחַיָּ֣ה <small>׀</small> הָֽרֹמֶ֡שֶׂת אֲשֶׁר֩ שָׁרְצ֨וּ הַמַּ֜יִם לְמִֽינֵהֶ֗ם וְאֵ֨ת כׇּל־ע֤וֹף כָּנָף֙ לְמִינֵ֔הוּ וַיַּ֥רְא אֱלֹהִ֖ים כִּי־טֽוֹב׃",
+      "וַיְבָ֧רֶךְ אֹתָ֛ם אֱלֹהִ֖ים לֵאמֹ֑ר פְּר֣וּ וּרְב֗וּ וּמִלְא֤וּ אֶת־הַמַּ֙יִם֙ בַּיַּמִּ֔ים וְהָע֖וֹף יִ֥רֶב בָּאָֽרֶץ׃",
+      "וַֽיְהִי־עֶ֥רֶב וַֽיְהִי־בֹ֖קֶר י֥וֹם חֲמִישִֽׁי׃ <span class=\"mam-spi-pe\">{פ}</span><br/>"
+    ],
+    "heRef": "בראשית א׳:כ׳-כ״ג",
     "lang": "en",
     "primary_category": "Tanakh",
-    "ref": "Genesis 1:21",
-    "url": "Genesis.1.21"
+    "ref": "Genesis 1:20-23",
+    "url": "Genesis.1.20-23"
   },
-  "Genesis 1:25": {
-    "en": "God made wild beasts of every kind and cattle of every kind, and all kinds of creeping things of the earth. And God saw that this was good.",
-    "he": "וַיַּ֣עַשׂ אֱלֹהִים֩ אֶת־חַיַּ֨ת הָאָ֜רֶץ לְמִינָ֗הּ וְאֶת־הַבְּהֵמָה֙ לְמִינָ֔הּ וְאֵ֛ת כׇּל־רֶ֥מֶשׂ הָֽאֲדָמָ֖ה לְמִינֵ֑הוּ וַיַּ֥רְא אֱלֹהִ֖ים כִּי־טֽוֹב׃",
-    "heRef": "בראשית א׳:כ״ה",
+  "Genesis 1:24-1:31": {
+    "en": [
+      "God said, “Let the earth bring forth every kind of living creature: cattle, creeping things, and wild beasts of every kind.” And it was so.",
+      "God made wild beasts of every kind and cattle of every kind, and all kinds of creeping things of the earth. And God saw that this was good.",
+      "And God said, “Let us make man in our image, after our likeness. They shall rule the fish of the sea, the birds of the sky, the cattle, the whole earth, and all the creeping things that creep on earth.”",
+      "And God created man in His image, in the image of God He created him; male and female He created them.",
+      "God blessed them and God said to them, “Be fertile and increase, fill the earth and master it; and rule the fish of the sea, the birds of the sky, and all the living things that creep on earth.”",
+      "God said, “See, I give you every seed-bearing plant that is upon all the earth, and every tree that has seed-bearing fruit; they shall be yours for food.",
+      "And to all the animals on land, to all the birds of the sky, and to everything that creeps on earth, in which there is the breath of life, [I give] all the green plants for food.” And it was so.",
+      "And God saw all that He had made, and found it very good. And there was evening and there was morning, the sixth day."
+    ],
+    "he": [
+      "וַיֹּ֣אמֶר אֱלֹהִ֗ים תּוֹצֵ֨א הָאָ֜רֶץ נֶ֤פֶשׁ חַיָּה֙ לְמִינָ֔הּ בְּהֵמָ֥ה וָרֶ֛מֶשׂ וְחַֽיְתוֹ־אֶ֖רֶץ לְמִינָ֑הּ וַֽיְהִי־כֵֽן׃",
+      "וַיַּ֣עַשׂ אֱלֹהִים֩ אֶת־חַיַּ֨ת הָאָ֜רֶץ לְמִינָ֗הּ וְאֶת־הַבְּהֵמָה֙ לְמִינָ֔הּ וְאֵ֛ת כׇּל־רֶ֥מֶשׂ הָֽאֲדָמָ֖ה לְמִינֵ֑הוּ וַיַּ֥רְא אֱלֹהִ֖ים כִּי־טֽוֹב׃",
+      "וַיֹּ֣אמֶר אֱלֹהִ֔ים נַֽעֲשֶׂ֥ה אָדָ֛ם בְּצַלְמֵ֖נוּ כִּדְמוּתֵ֑נוּ וְיִרְדּוּ֩ בִדְגַ֨ת הַיָּ֜ם וּבְע֣וֹף הַשָּׁמַ֗יִם וּבַבְּהֵמָה֙ וּבְכׇל־הָאָ֔רֶץ וּבְכׇל־הָרֶ֖מֶשׂ הָֽרֹמֵ֥שׂ עַל־הָאָֽרֶץ׃",
+      "וַיִּבְרָ֨א אֱלֹהִ֤ים <small>׀</small> אֶת־הָֽאָדָם֙ בְּצַלְמ֔וֹ בְּצֶ֥לֶם אֱלֹהִ֖ים בָּרָ֣א אֹת֑וֹ זָכָ֥ר וּנְקֵבָ֖ה בָּרָ֥א אֹתָֽם׃",
+      "וַיְבָ֣רֶךְ אֹתָם֮ אֱלֹהִים֒ וַיֹּ֨אמֶר לָהֶ֜ם אֱלֹהִ֗ים פְּר֥וּ וּרְב֛וּ וּמִלְא֥וּ אֶת־הָאָ֖רֶץ וְכִבְשֻׁ֑הָ וּרְד֞וּ בִּדְגַ֤ת הַיָּם֙ וּבְע֣וֹף הַשָּׁמַ֔יִם וּבְכׇל־חַיָּ֖ה הָֽרֹמֶ֥שֶׂת עַל־הָאָֽרֶץ׃",
+      "וַיֹּ֣אמֶר אֱלֹהִ֗ים הִנֵּה֩ נָתַ֨תִּי לָכֶ֜ם אֶת־כׇּל־עֵ֣שֶׂב <b>׀</b> זֹרֵ֣עַ זֶ֗רַע אֲשֶׁר֙ עַל־פְּנֵ֣י כׇל־הָאָ֔רֶץ וְאֶת־כׇּל־הָעֵ֛ץ אֲשֶׁר־בּ֥וֹ פְרִי־עֵ֖ץ זֹרֵ֣עַ זָ֑רַע לָכֶ֥ם יִֽהְיֶ֖ה לְאׇכְלָֽה׃",
+      "וּֽלְכׇל־חַיַּ֣ת הָ֠אָ֠רֶץ וּלְכׇל־ע֨וֹף הַשָּׁמַ֜יִם וּלְכֹ֣ל <b>׀</b> רוֹמֵ֣שׂ עַל־הָאָ֗רֶץ אֲשֶׁר־בּוֹ֙ נֶ֣פֶשׁ חַיָּ֔ה אֶת־כׇּל־יֶ֥רֶק עֵ֖שֶׂב לְאׇכְלָ֑ה וַֽיְהִי־כֵֽן׃",
+      "וַיַּ֤רְא אֱלֹהִים֙ אֶת־כׇּל־אֲשֶׁ֣ר עָשָׂ֔ה וְהִנֵּה־ט֖וֹב מְאֹ֑ד וַֽיְהִי־עֶ֥רֶב וַֽיְהִי־בֹ֖קֶר י֥וֹם הַשִּׁשִּֽׁי׃ <span class=\"mam-spi-pe\">{פ}</span><br/>"
+    ],
+    "heRef": "בראשית א׳:כ״ד-ל״א",
     "lang": "en",
     "primary_category": "Tanakh",
-    "ref": "Genesis 1:25",
-    "url": "Genesis.1.25"
+    "ref": "Genesis 1:24-31",
+    "url": "Genesis.1.24-31"
   },
-  "Genesis 1:4": {
-    "en": "God saw that the light was good, and God separated the light from the darkness.",
-    "he": "וַיַּ֧רְא אֱלֹהִ֛ים אֶת־הָא֖וֹר כִּי־ט֑וֹב וַיַּבְדֵּ֣ל אֱלֹהִ֔ים בֵּ֥ין הָא֖וֹר וּבֵ֥ין הַחֹֽשֶׁךְ׃",
-    "heRef": "בראשית א׳:ד׳",
+  "Genesis 45:28-46:14": {
+    "en": [
+      [
+        "“Enough!” said Israel. “My son Joseph is still alive! I must go and see him before I die.”"
+      ],
+      [
+        "So Israel set out with all that was his, and he came to Beer-sheba, where he offered sacrifices to the God of his father Isaac.",
+        "God called to Israel in a vision by night: “Jacob! Jacob!” He answered, “Here.”",
+        "And He said, “I am God, the God of your father. Fear not to go down to Egypt, for I will make you there into a great nation.",
+        "I Myself will go down with you to Egypt, and I Myself will also bring you back; and Joseph’s hand shall close your eyes.”",
+        "So Jacob set out from Beer-sheba. The sons of Israel put their father Jacob and their children and their wives in the wagons that Pharaoh had sent to transport him;",
+        "and they took along their livestock and the wealth that they had amassed in the land of Canaan. Thus Jacob and all his offspring with him came to Egypt:",
+        "he brought with him to Egypt his sons and grandsons, his daughters and granddaughters—all his offspring.",
+        "These are the names of the Israelites, Jacob and his descendants, who came to Egypt.<br/>Jacob’s first-born Reuben;",
+        "Reuben’s sons: Enoch, Pallu, Hezron, and Carmi.",
+        "Simeon’s sons: Jemuel, Jamin, Ohad, Jachin, Zohar, and Saul the son of a Canaanite woman.",
+        "Levi’s sons: Gershon, Kohath, and Merari.",
+        "Judah’s sons: Er, Onan, Shelah, Perez, and Zerah—but Er and Onan had died in the land of Canaan; and Perez’s sons were Hezron and Hamul.",
+        "Issachar’s sons: Tola, Puvah, Iob, and Shimron.",
+        "Zebulun’s sons: Sered, Elon, and Jahleel."
+      ]
+    ],
+    "he": [
+      [
+        "וַיֹּ֙אמֶר֙ יִשְׂרָאֵ֔ל רַ֛ב עוֹד־יוֹסֵ֥ף בְּנִ֖י חָ֑י אֵֽלְכָ֥ה וְאֶרְאֶ֖נּוּ בְּטֶ֥רֶם אָמֽוּת׃"
+      ],
+      [
+        "וַיִּסַּ֤ע יִשְׂרָאֵל֙ וְכׇל־אֲשֶׁר־ל֔וֹ וַיָּבֹ֖א בְּאֵ֣רָה שָּׁ֑בַע וַיִּזְבַּ֣ח זְבָחִ֔ים לֵאלֹהֵ֖י אָבִ֥יו יִצְחָֽק׃",
+        "וַיֹּ֨אמֶר אֱלֹהִ֤ים <small>׀</small> לְיִשְׂרָאֵל֙ בְּמַרְאֹ֣ת הַלַּ֔יְלָה וַיֹּ֖אמֶר יַעֲקֹ֣ב <small>׀</small> יַעֲקֹ֑ב וַיֹּ֖אמֶר הִנֵּֽנִי׃",
+        "וַיֹּ֕אמֶר אָנֹכִ֥י הָאֵ֖ל אֱלֹהֵ֣י אָבִ֑יךָ אַל־תִּירָא֙ מֵרְדָ֣ה מִצְרַ֔יְמָה כִּֽי־לְג֥וֹי גָּד֖וֹל אֲשִֽׂימְךָ֥ שָֽׁם׃",
+        "אָנֹכִ֗י אֵרֵ֤ד עִמְּךָ֙ מִצְרַ֔יְמָה וְאָנֹכִ֖י אַֽעַלְךָ֣ גַם־עָלֹ֑ה וְיוֹסֵ֕ף יָשִׁ֥ית יָד֖וֹ עַל־עֵינֶֽיךָ׃",
+        "וַיָּ֥קׇם יַעֲקֹ֖ב מִבְּאֵ֣ר שָׁ֑בַע וַיִּשְׂא֨וּ בְנֵֽי־יִשְׂרָאֵ֜ל אֶת־יַעֲקֹ֣ב אֲבִיהֶ֗ם וְאֶת־טַפָּם֙ וְאֶת־נְשֵׁיהֶ֔ם בָּעֲגָל֕וֹת אֲשֶׁר־שָׁלַ֥ח פַּרְעֹ֖ה לָשֵׂ֥את אֹתֽוֹ׃",
+        "וַיִּקְח֣וּ אֶת־מִקְנֵיהֶ֗ם וְאֶת־רְכוּשָׁם֙ אֲשֶׁ֤ר רָֽכְשׁוּ֙ בְּאֶ֣רֶץ כְּנַ֔עַן וַיָּבֹ֖אוּ מִצְרָ֑יְמָה יַעֲקֹ֖ב וְכׇל־זַרְע֥וֹ אִתּֽוֹ׃",
+        "בָּנָ֞יו וּבְנֵ֤י בָנָיו֙ אִתּ֔וֹ בְּנֹתָ֛יו וּבְנ֥וֹת בָּנָ֖יו וְכׇל־זַרְע֑וֹ הֵבִ֥יא אִתּ֖וֹ מִצְרָֽיְמָה׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+        "וְאֵ֨לֶּה שְׁמ֧וֹת בְּנֵֽי־יִשְׂרָאֵ֛ל הַבָּאִ֥ים מִצְרַ֖יְמָה יַעֲקֹ֣ב וּבָנָ֑יו בְּכֹ֥ר יַעֲקֹ֖ב רְאוּבֵֽן׃",
+        "וּבְנֵ֖י רְאוּבֵ֑ן חֲנ֥וֹךְ וּפַלּ֖וּא וְחֶצְרֹ֥ן וְכַרְמִֽי׃",
+        "וּבְנֵ֣י שִׁמְע֗וֹן יְמוּאֵ֧ל וְיָמִ֛ין וְאֹ֖הַד וְיָכִ֣ין וְצֹ֑חַר וְשָׁא֖וּל בֶּן־הַֽכְּנַעֲנִֽית׃",
+        "וּבְנֵ֖י לֵוִ֑י גֵּרְשׁ֕וֹן קְהָ֖ת וּמְרָרִֽי׃",
+        "וּבְנֵ֣י יְהוּדָ֗ה עֵ֧ר וְאוֹנָ֛ן וְשֵׁלָ֖ה וָפֶ֣רֶץ וָזָ֑רַח וַיָּ֨מׇת עֵ֤ר וְאוֹנָן֙ בְּאֶ֣רֶץ כְּנַ֔עַן וַיִּהְי֥וּ בְנֵי־פֶ֖רֶץ חֶצְרֹ֥ן וְחָמֽוּל׃",
+        "וּבְנֵ֖י יִשָּׂשכָ֑ר תּוֹלָ֥ע וּפֻוָ֖ה וְי֥וֹב וְשִׁמְרֹֽן׃",
+        "וּבְנֵ֖י זְבֻל֑וּן סֶ֥רֶד וְאֵל֖וֹן וְיַחְלְאֵֽל׃"
+      ]
+    ],
+    "heRef": "בראשית מ״ה:כ״ח-מ״ו:י״ד",
     "lang": "en",
     "primary_category": "Tanakh",
-    "ref": "Genesis 1:4",
-    "url": "Genesis.1.4"
+    "ref": "Genesis 45:28-46:14",
+    "url": "Genesis.45.28-46.14"
   },
-  "Genesis 46:4": {
-    "en": "I Myself will go down with you to Egypt, and I Myself will also bring you back; and Joseph’s hand shall close your eyes.”",
-    "he": "אָנֹכִ֗י אֵרֵ֤ד עִמְּךָ֙ מִצְרַ֔יְמָה וְאָנֹכִ֖י אַֽעַלְךָ֣ גַם־עָלֹ֑ה וְיוֹסֵ֕ף יָשִׁ֥ית יָד֖וֹ עַל־עֵינֶֽיךָ׃",
-    "heRef": "בראשית מ״ו:ד׳",
+  "II Samuel 12:3-12:23": {
+    "en": [
+      "but the poor man had only one little ewe lamb that he had bought. He tended it and it grew up together with him and his children: it used to share his morsel of bread, drink from his cup, and nestle in his bosom; it was like a daughter to him.",
+      "One day, a traveler came to the rich man, but he was loath to take anything from his own flocks or herds to prepare a meal for the guest who had come to him; so he took the poor man’s lamb and prepared it for the man who had come to him.”",
+      "David flew into a rage against the man, and said to Nathan, “As the L<small>ORD</small> lives, the man who did this deserves to die!",
+      "He shall pay for the lamb four times over, because he did such a thing and showed no pity.”",
+      "And Nathan said to David, “That man is you! Thus said the L<small>ORD</small>, the God of Israel: ‘It was I who anointed you king over Israel and it was I who rescued you from the hand of Saul.",
+      "I gave you your master’s house and possession of your master’s wives; and I gave you the House of Israel and Judah; and if that were not enough, I would give you twice as much more.",
+      "Why then have you flouted the command of the L<small>ORD</small> and done what displeases Him? You have put Uriah the Hittite to the sword; you took his wife and made her your wife and had him killed by the sword of the Ammonites.",
+      "Therefore the sword shall never depart from your House—because you spurned Me by taking the wife of Uriah the Hittite and making her your wife.’",
+      "Thus said the L<small>ORD</small>: ‘I will make a calamity rise against you from within your own house; I will take your wives and give them to another man before your very eyes and he shall sleep with your wives under this very sun.",
+      "You acted in secret, but I will make this happen in the sight of all Israel and in broad daylight.’”",
+      "David said to Nathan, “I stand guilty before the L<small>ORD</small>!” And Nathan replied to David, “The L<small>ORD</small> has remitted your sin; you shall not die.",
+      "However, since you have spurned the enemies of the L<small>ORD</small> by this deed, even the child about to be born to you shall die.”",
+      "Nathan went home, and the L<small>ORD</small> afflicted the child that Uriah’s wife had borne to David, and it became critically ill.",
+      "David entreated God for the boy; David fasted, and he went in and spent the night lying on the ground.",
+      "The senior servants of his household tried to induce him to get up from the ground; but he refused, nor would he partake of food with them.",
+      "On the seventh day the child died. David’s servants were afraid to tell David that the child was dead; for they said, “We spoke to him when the child was alive and he wouldn’t listen to us; how can we tell him that the child is dead? He might do something terrible.”",
+      "When David saw his servants talking in whispers, David understood that the child was dead; David asked his servants, “Is the child dead?” “Yes,” they replied.",
+      "Thereupon David rose from the ground; he bathed and anointed himself, and he changed his clothes. He went into the House of the L<small>ORD</small> and prostrated himself. Then he went home and asked for food, which they set before him, and he ate.",
+      "His courtiers asked him, “Why have you acted in this manner? While the child was alive, you fasted and wept; but now that the child is dead, you rise and take food!”",
+      "He replied, “While the child was still alive, I fasted and wept because I thought: ‘Who knows? The L<small>ORD</small> may have pity on me, and the child may live.’",
+      "But now that he is dead, why should I fast? Can I bring him back again? I shall go to him, but he will never come back to me.”"
+    ],
+    "he": [
+      "וְלָרָ֣שׁ אֵֽין־כֹּ֗ל כִּי֩ אִם־כִּבְשָׂ֨ה אַחַ֤ת קְטַנָּה֙ אֲשֶׁ֣ר קָנָ֔ה וַיְחַיֶּ֕הָ וַתִּגְדַּ֥ל עִמּ֛וֹ וְעִם־בָּנָ֖יו יַחְדָּ֑ו מִפִּתּ֨וֹ תֹאכַ֜ל וּמִכֹּס֤וֹ תִשְׁתֶּה֙ וּבְחֵיק֣וֹ תִשְׁכָּ֔ב וַתְּהִי־ל֖וֹ כְּבַֽת׃",
+      "וַיָּ֣בֹא הֵ֘לֶךְ֮ לְאִ֣ישׁ הֶעָשִׁיר֒ וַיַּחְמֹ֗ל לָקַ֤חַת מִצֹּאנוֹ֙ וּמִבְּקָר֔וֹ לַעֲשׂ֕וֹת לָאֹרֵ֖חַ הַבָּא־ל֑וֹ וַיִּקַּ֗ח אֶת־כִּבְשַׂת֙ הָאִ֣ישׁ הָרָ֔אשׁ וַֽיַּעֲשֶׂ֔הָ לָאִ֖ישׁ הַבָּ֥א אֵלָֽיו׃",
+      "וַיִּחַר־אַ֥ף דָּוִ֛ד בָּאִ֖ישׁ מְאֹ֑ד וַיֹּ֙אמֶר֙ אֶל־נָתָ֔ן חַי־יְהֹוָ֕ה כִּ֣י בֶן־מָ֔וֶת הָאִ֖ישׁ הָעֹשֶׂ֥ה זֹֽאת׃",
+      "וְאֶת־הַכִּבְשָׂ֖ה יְשַׁלֵּ֣ם אַרְבַּעְתָּ֑יִם עֵ֗קֶב אֲשֶׁ֤ר עָשָׂה֙ אֶת־הַדָּבָ֣ר הַזֶּ֔ה וְעַ֖ל אֲשֶׁ֥ר לֹא־חָמָֽל׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "וַיֹּ֧אמֶר נָתָ֛ן אֶל־דָּוִ֖ד אַתָּ֣ה הָאִ֑ישׁ <span class=\"mam-spi-samekh\">{ס}</span> כֹּה־אָמַ֨ר יְהֹוָ֜ה אֱלֹהֵ֣י יִשְׂרָאֵ֗ל אָנֹכִ֞י מְשַׁחְתִּ֤יךָֽ לְמֶ֙לֶךְ֙ עַל־יִשְׂרָאֵ֔ל וְאָנֹכִ֥י הִצַּלְתִּ֖יךָ מִיַּ֥ד שָׁאֽוּל׃",
+      "וָאֶתְּנָ֨ה לְךָ֜ אֶת־בֵּ֣ית אֲדֹנֶ֗יךָ וְאֶת־נְשֵׁ֤י אֲדֹנֶ֙יךָ֙ בְּחֵיקֶ֔ךָ וָאֶתְּנָ֣ה לְךָ֔ אֶת־בֵּ֥ית יִשְׂרָאֵ֖ל וִיהוּדָ֑ה וְאִ֨ם־מְעָ֔ט וְאֹסִ֥פָה לְּךָ֖ כָּהֵ֥נָּה וְכָהֵֽנָּה׃",
+      "מַדּ֜וּעַ בָּזִ֣יתָ <b>׀</b> אֶת־דְּבַ֣ר יְהֹוָ֗ה לַעֲשׂ֣וֹת הָרַע֮ <span class=\"mam-kq\"><span class=\"mam-kq-k\">(בעינו)</span> <span class=\"mam-kq-q\">[בְּעֵינַי֒]</span></span> אֵ֣ת אוּרִיָּ֤ה הַחִתִּי֙ הִכִּ֣יתָ בַחֶ֔רֶב וְאֶ֨ת־אִשְׁתּ֔וֹ לָקַ֥חְתָּ לְּךָ֖ לְאִשָּׁ֑ה וְאֹת֣וֹ הָרַ֔גְתָּ בְּחֶ֖רֶב בְּנֵ֥י עַמּֽוֹן׃",
+      "וְעַתָּ֗ה לֹא־תָס֥וּר חֶ֛רֶב מִבֵּיתְךָ֖ עַד־עוֹלָ֑ם עֵ֚קֶב כִּ֣י בְזִתָ֔נִי וַתִּקַּ֗ח אֶת־אֵ֙שֶׁת֙ אוּרִיָּ֣ה הַחִתִּ֔י לִהְי֥וֹת לְךָ֖ לְאִשָּֽׁה׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "כֹּ֣ה <b>׀</b> אָמַ֣ר יְהֹוָ֗ה הִנְנִי֩ מֵקִ֨ים עָלֶ֤יךָ רָעָה֙ מִבֵּיתֶ֔ךָ וְלָקַחְתִּ֤י אֶת־נָשֶׁ֙יךָ֙ לְעֵינֶ֔יךָ וְנָתַתִּ֖י לְרֵעֶ֑יךָ וְשָׁכַב֙ עִם־נָשֶׁ֔יךָ לְעֵינֵ֖י הַשֶּׁ֥מֶשׁ הַזֹּֽאת׃",
+      "כִּ֥י אַתָּ֖ה עָשִׂ֣יתָ בַסָּ֑תֶר וַאֲנִ֗י אֶֽעֱשֶׂה֙ אֶת־הַדָּבָ֣ר הַזֶּ֔ה נֶ֥גֶד כׇּל־יִשְׂרָאֵ֖ל וְנֶ֥גֶד הַשָּֽׁמֶשׁ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "וַיֹּ֤אמֶר דָּוִד֙ אֶל־נָתָ֔ן חָטָ֖אתִי לַיהֹוָ֑ה <span class=\"mam-spi-samekh\">{ס}</span> וַיֹּ֨אמֶר נָתָ֜ן אֶל־דָּוִ֗ד גַּם־יְהֹוָ֛ה הֶעֱבִ֥יר חַטָּאתְךָ֖ לֹ֥א תָמֽוּת׃",
+      "אֶ֗פֶס כִּֽי־נִאֵ֤ץ נִאַ֙צְתָּ֙ אֶת־אֹיְבֵ֣י יְהֹוָ֔ה בַּדָּבָ֖ר הַזֶּ֑ה גַּ֗ם הַבֵּ֛ן הַיִּלּ֥וֹד לְךָ֖ מ֥וֹת יָמֽוּת׃",
+      "וַיֵּ֥לֶךְ נָתָ֖ן אֶל־בֵּית֑וֹ וַיִּגֹּ֣ף יְהֹוָ֗ה אֶת־הַיֶּ֜לֶד אֲשֶׁ֨ר יָלְדָ֧ה אֵשֶׁת־אוּרִיָּ֛ה לְדָוִ֖ד וַיֵּאָנַֽשׁ׃",
+      "וַיְבַקֵּ֥שׁ דָּוִ֛ד אֶת־הָאֱלֹהִ֖ים בְּעַ֣ד הַנָּ֑עַר וַיָּ֤צׇם דָּוִד֙ צ֔וֹם וּבָ֥א וְלָ֖ן וְשָׁכַ֥ב אָֽרְצָה׃",
+      "וַיָּקֻ֜מוּ זִקְנֵ֤י בֵיתוֹ֙ עָלָ֔יו לַהֲקִימ֖וֹ מִן־הָאָ֑רֶץ וְלֹ֣א אָבָ֔ה וְלֹא־בָרָ֥א אִתָּ֖ם לָֽחֶם׃",
+      "וַיְהִ֛י בַּיּ֥וֹם הַשְּׁבִיעִ֖י וַיָּ֣מׇת הַיָּ֑לֶד וַיִּֽרְאוּ֩ עַבְדֵ֨י דָוִ֜ד לְהַגִּ֥יד ל֣וֹ <b>׀</b> כִּי־מֵ֣ת הַיֶּ֗לֶד כִּ֤י אָֽמְרוּ֙ הִנֵּה֩ בִֽהְי֨וֹת הַיֶּ֜לֶד חַ֗י דִּבַּ֤רְנוּ אֵלָיו֙ וְלֹא־שָׁמַ֣ע בְּקוֹלֵ֔נוּ וְאֵ֨יךְ נֹאמַ֥ר אֵלָ֛יו מֵ֥ת הַיֶּ֖לֶד וְעָשָׂ֥ה רָעָֽה׃",
+      "וַיַּ֣רְא דָּוִ֗ד כִּ֤י עֲבָדָיו֙ מִֽתְלַחֲשִׁ֔ים וַיָּ֥בֶן דָּוִ֖ד כִּ֣י מֵ֣ת הַיָּ֑לֶד וַיֹּ֨אמֶר דָּוִ֧ד אֶל־עֲבָדָ֛יו הֲמֵ֥ת הַיֶּ֖לֶד וַיֹּ֥אמְרוּ מֵֽת׃",
+      "וַיָּ֩קׇם֩ דָּוִ֨ד מֵהָאָ֜רֶץ וַיִּרְחַ֣ץ וַיָּ֗סֶךְ וַיְחַלֵּף֙ <span class=\"mam-kq-trivial\">שִׂמְלֹתָ֔ו</span> וַיָּבֹ֥א בֵית־יְהֹוָ֖ה וַיִּשְׁתָּ֑חוּ וַיָּבֹא֙ אֶל־בֵּית֔וֹ וַיִּשְׁאַ֕ל וַיָּשִׂ֥ימוּ ל֛וֹ לֶ֖חֶם וַיֹּאכַֽל׃",
+      "וַיֹּאמְר֤וּ עֲבָדָיו֙ אֵלָ֔יו מָה־הַדָּבָ֥ר הַזֶּ֖ה אֲשֶׁ֣ר עָשִׂ֑יתָה בַּעֲב֞וּר הַיֶּ֤לֶד חַי֙ צַ֣מְתָּ וַתֵּ֔בְךְּ וְכַֽאֲשֶׁר֙ מֵ֣ת הַיֶּ֔לֶד קַ֖מְתָּ וַתֹּ֥אכַל לָֽחֶם׃",
+      "וַיֹּ֕אמֶר בְּעוֹד֙ הַיֶּ֣לֶד חַ֔י צַ֖מְתִּי וָאֶבְכֶּ֑ה כִּ֤י אָמַ֙רְתִּי֙ מִ֣י יוֹדֵ֔עַ <span class=\"mam-kq\"><span class=\"mam-kq-k\">(יחנני)</span> <span class=\"mam-kq-q\">[וְחַנַּ֥נִי]</span></span> יְהֹוָ֖ה וְחַ֥י הַיָּֽלֶד׃",
+      "וְעַתָּ֣ה <b>׀</b> מֵ֗ת לָ֤מָּה זֶּה֙ אֲנִ֣י צָ֔ם הַאוּכַ֥ל לַהֲשִׁיב֖וֹ ע֑וֹד אֲנִי֙ הֹלֵ֣ךְ אֵלָ֔יו וְה֖וּא לֹא־יָשׁ֥וּב אֵלָֽי׃"
+    ],
+    "heRef": "שמואל ב י״ב:ג׳-כ״ג",
     "lang": "en",
     "primary_category": "Tanakh",
-    "ref": "Genesis 46:4",
-    "url": "Genesis.46.4"
+    "ref": "II Samuel 12:3-23",
+    "url": "II_Samuel.12.3-23"
   },
-  "II Samuel 12:13": {
-    "en": "David said to Nathan, “I stand guilty before the L<small>ORD</small>!” And Nathan replied to David, “The L<small>ORD</small> has remitted your sin; you shall not die.",
-    "he": "וַיֹּ֤אמֶר דָּוִד֙ אֶל־נָתָ֔ן חָטָ֖אתִי לַיהֹוָ֑ה <span class=\"mam-spi-samekh\">{ס}</span> וַיֹּ֨אמֶר נָתָ֜ן אֶל־דָּוִ֗ד גַּם־יְהֹוָ֛ה הֶעֱבִ֥יר חַטָּאתְךָ֖ לֹ֥א תָמֽוּת׃",
-    "heRef": "שמואל ב י״ב:י״ג",
+  "Isaiah 14:13-14:27": {
+    "en": [
+      "Once you thought in your heart,<br/>“I will climb to the sky;<br/>Higher than the stars of God<br/>I will set my throne.<br/>I will sit in the mount of assembly,<br/>On the summit of Zaphon:",
+      "I will mount the back of a cloud—<br/>I will match the Most High.”",
+      "Instead, you are brought down to Sheol,<br/>To the bottom of the Pit.",
+      "They who behold you stare;<br/>They peer at you closely:<br/>“Is this the man<br/>Who shook the earth,<br/>Who made realms tremble,",
+      "Who made the world like a waste<br/>And wrecked its towns,<br/>Who never released his prisoners to their homes?”",
+      "All the kings of nations<br/>Were laid, every one, in honor<br/>Each in his tomb;",
+      "While you were left lying unburied,<br/>Like loathsome carrion,<br/>Like a trampled corpse<br/>[In] the clothing of slain gashed by the sword<br/>Who sink to the very stones of the Pit.",
+      "You shall not have a burial like them;<br/>Because you destroyed your country,<br/>Murdered your people.<br/><br/>Let the breed of evildoers<br/>Nevermore be named!",
+      "Prepare a slaughtering block for his sons<br/>Because of the guilt of their father.<br/>Let them not arise to possess the earth!<br/>Then the world’s face shall be covered with towns.<br/>",
+      "I will rise up against them—declares the L<small>ORD</small> of Hosts—and will wipe out from Babylon name and remnant, kith and kin—declares the L<small>ORD</small>—",
+      "and I will make it a home of bitterns, pools of water. I will sweep it with a broom of extermination—declares the L<small>ORD</small> of Hosts.<br/>",
+      "The L<small>ORD</small> of Hosts has sworn this oath:<br/>“As I have designed, so shall it happen;<br/>What I have planned, that shall come to pass:",
+      "To break Assyria in My land,<br/>To crush him on My mountain.”<br/>And his yoke shall drop off them,<br/>And his burden shall drop from their backs.",
+      "That is the plan that is planned<br/>For all the earth;<br/>That is why an arm is poised<br/>Over all the nations.",
+      "For the L<small>ORD</small> of Hosts has planned,<br/>Who then can foil it?<br/>It is His arm that is poised,<br/>And who can stay it?<br/>"
+    ],
+    "he": [
+      "וְאַתָּ֞ה אָמַ֤רְתָּ בִֽלְבָבְךָ֙ הַשָּׁמַ֣יִם אֶעֱלֶ֔ה מִמַּ֥עַל לְכוֹכְבֵי־אֵ֖ל אָרִ֣ים כִּסְאִ֑י וְאֵשֵׁ֥ב בְּהַר־מוֹעֵ֖ד בְּיַרְכְּתֵ֥י צָפֽוֹן׃",
+      "אֶֽעֱלֶ֖ה עַל־בָּ֣מֳתֵי עָ֑ב אֶדַּמֶּ֖ה לְעֶלְיֽוֹן׃",
+      "אַ֧ךְ אֶל־שְׁא֛וֹל תּוּרָ֖ד אֶל־יַרְכְּתֵי־בֽוֹר׃",
+      "רֹאֶ֙יךָ֙ אֵלֶ֣יךָ יַשְׁגִּ֔יחוּ אֵלֶ֖יךָ יִתְבּוֹנָ֑נוּ הֲזֶ֤ה הָאִישׁ֙ מַרְגִּ֣יז הָאָ֔רֶץ מַרְעִ֖ישׁ מַמְלָכֽוֹת׃",
+      "שָׂ֥ם תֵּבֵ֛ל כַּמִּדְבָּ֖ר וְעָרָ֣יו הָרָ֑ס אֲסִירָ֖יו לֹא־פָ֥תַח בָּֽיְתָה׃",
+      "כׇּל־מַלְכֵ֥י גוֹיִ֖ם כֻּלָּ֑ם שָׁכְב֥וּ בְכָב֖וֹד אִ֥ישׁ בְּבֵיתֽוֹ׃",
+      "וְאַתָּ֞ה הׇשְׁלַ֤כְתָּ מִֽקִּבְרְךָ֙ כְּנֵ֣צֶר נִתְעָ֔ב לְבֻ֥שׁ הֲרֻגִ֖ים מְטֹ֣עֲנֵי חָ֑רֶב יוֹרְדֵ֥י אֶל־אַבְנֵי־ב֖וֹר כְּפֶ֥גֶר מוּבָֽס׃",
+      "לֹֽא־תֵחַ֤ד אִתָּם֙ בִּקְבוּרָ֔ה כִּי־אַרְצְךָ֥ שִׁחַ֖תָּ עַמְּךָ֣ הָרָ֑גְתָּ לֹא־יִקָּרֵ֥א לְעוֹלָ֖ם זֶ֥רַע מְרֵעִֽים׃",
+      "הָכִ֧ינוּ לְבָנָ֛יו מַטְבֵּ֖חַ בַּעֲוֺ֣ן אֲבוֹתָ֑ם בַּל־יָקֻ֙מוּ֙ וְיָ֣רְשׁוּ אָ֔רֶץ וּמָלְא֥וּ פְנֵי־תֵבֵ֖ל עָרִֽים׃",
+      "וְקַמְתִּ֣י עֲלֵיהֶ֔ם נְאֻ֖ם יְהֹוָ֣ה צְבָא֑וֹת וְהִכְרַתִּ֨י לְבָבֶ֜ל שֵׁ֥ם וּשְׁאָ֛ר וְנִ֥ין וָנֶ֖כֶד נְאֻם־יְהֹוָֽה׃",
+      "וְשַׂמְתִּ֛יהָ לְמוֹרַ֥שׁ קִפֹּ֖ד וְאַגְמֵי־מָ֑יִם וְטֵאטֵאתִ֙יהָ֙ בְּמַטְאֲטֵ֣א הַשְׁמֵ֔ד נְאֻ֖ם יְהֹוָ֥ה צְבָאֽוֹת׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "נִשְׁבַּ֛ע יְהֹוָ֥ה צְבָא֖וֹת לֵאמֹ֑ר אִם־לֹ֞א כַּאֲשֶׁ֤ר דִּמִּ֙יתִי֙ כֵּ֣ן הָיָ֔תָה וְכַאֲשֶׁ֥ר יָעַ֖צְתִּי הִ֥יא תָקֽוּם׃",
+      "לִשְׁבֹּ֤ר אַשּׁוּר֙ בְּאַרְצִ֔י וְעַל־הָרַ֖י אֲבוּסֶ֑נּוּ וְסָ֤ר מֵֽעֲלֵיהֶם֙ עֻלּ֔וֹ וְסֻ֨בֳּל֔וֹ מֵעַ֥ל שִׁכְמ֖וֹ יָסֽוּר׃",
+      "זֹ֛את הָעֵצָ֥ה הַיְּעוּצָ֖ה עַל־כׇּל־הָאָ֑רֶץ וְזֹ֛את הַיָּ֥ד הַנְּטוּיָ֖ה עַל־כׇּל־הַגּוֹיִֽם׃",
+      "כִּֽי־יְהֹוָ֧ה צְבָא֛וֹת יָעָ֖ץ וּמִ֣י יָפֵ֑ר וְיָד֥וֹ הַנְּטוּיָ֖ה וּמִ֥י יְשִׁיבֶֽנָּה׃ <span class=\"mam-spi-pe\">{פ}</span><br/>"
+    ],
+    "heRef": "ישעיהו י״ד:י״ג-כ״ז",
     "lang": "en",
     "primary_category": "Tanakh",
-    "ref": "II Samuel 12:13",
-    "url": "II_Samuel.12.13"
+    "ref": "Isaiah 14:13-27",
+    "url": "Isaiah.14.13-27"
   },
-  "Isaiah 14:23": {
-    "en": "and I will make it a home of bitterns, pools of water. I will sweep it with a broom of extermination—declares the L<small>ORD</small> of Hosts.<br/>",
-    "he": "וְשַׂמְתִּ֛יהָ לְמוֹרַ֥שׁ קִפֹּ֖ד וְאַגְמֵי־מָ֑יִם וְטֵאטֵאתִ֙יהָ֙ בְּמַטְאֲטֵ֣א הַשְׁמֵ֔ד נְאֻ֖ם יְהֹוָ֥ה צְבָאֽוֹת׃ <span class=\"mam-spi-samekh\">{ס}</span>",
-    "heRef": "ישעיהו י״ד:כ״ג",
+  "Lamentations 1:1-1:19": {
+    "en": [
+      "Alas!<br/>Lonely sits the city<br/>Once great with people!<br/>She that was great among nations<br/>Is become like a widow;<br/>The princess among states<br/>Is become a thrall.",
+      "Bitterly she weeps in the night,<br/>Her cheek wet with tears.<br/>There is none to comfort her<br/>Of all her friends.<br/>All her allies have betrayed her;<br/>They have become her foes.",
+      "Judah has gone into exile<br/>Because of misery and harsh oppression;<br/>When she settled among the nations,<br/>She found no rest;<br/>All her pursuers overtook her<br/>In the narrow places.",
+      "Zion’s roads are in mourning,<br/>Empty of festival pilgrims;<br/>All her gates are deserted.<br/>Her priests sigh,<br/>Her maidens are unhappy—<br/>She is utterly disconsolate!",
+      "Her enemies are now the masters,<br/>Her foes are at ease,<br/>Because the L<small>ORD</small> has afflicted her<br/>For her many transgressions;<br/>Her infants have gone into captivity<br/>Before the enemy.<br/>",
+      "Gone from Fair Zion are all<br/>That were her glory;<br/>Her leaders were like stags<br/>That found no pasture;<br/>They could only walk feebly<br/>Before the pursuer.<br/>",
+      "All the precious things she had<br/>In the days of old<br/>Jerusalem recalled<br/>In her days of woe and sorrow,<br/>When her people fell by enemy hands<br/>With none to help her;<br/>When enemies looked on and gloated<br/>Over her downfall.",
+      "Jerusalem has greatly sinned,<br/>Therefore she is become a mockery.<br/>All who admired her despise her,<br/>For they have seen her disgraced;<br/>And she can only sigh<br/>And shrink back.",
+      "Her uncleanness clings to her skirts.<br/>She gave no thought to her future;<br/>She has sunk appallingly,<br/>With none to comfort her.—<br/>See, O L<small>ORD</small>, my misery;<br/>How the enemy jeers!",
+      "The foe has laid hands<br/>On everything dear to her.<br/>She has seen her Sanctuary<br/>Invaded by nations<br/>Which You have denied admission<br/>Into Your community.",
+      "All her inhabitants sigh<br/>As they search for bread;<br/>They have bartered their treasures for food,<br/>To keep themselves alive.—<br/>See, O L<small>ORD</small>, and behold,<br/>How abject I have become!<br/>",
+      "May it never befall you,<br/>All who pass along the road—<br/>Look about and see:<br/>Is there any agony like mine,<br/>Which was dealt out to me<br/>When the L<small>ORD</small> afflicted me<br/>On His day of wrath?",
+      "From above He sent a fire<br/>Down into my bones.<br/>He spread a net for my feet,<br/>He hurled me backward;<br/>He has left me forlorn,<br/>In constant misery.",
+      "The yoke of my offenses is bound fast,<br/>Lashed tight by His hand;<br/>Imposed upon my neck,<br/>It saps my strength;<br/>The Lord has delivered me into the hands<br/>Of those I cannot withstand.",
+      "The Lord in my midst has rejected<br/>All my heroes;<br/>He has proclaimed a set time against me<br/>To crush my young men.<br/>As in a press the Lord has trodden<br/>Fair Maiden Judah.",
+      "For these things do I weep,<br/>My eyes flow with tears:<br/>Far from me is any comforter<br/>Who might revive my spirit;<br/>My children are forlorn,<br/>For the foe has prevailed.",
+      "Zion spreads out her hands,<br/>She has no one to comfort her;<br/>The L<small>ORD</small> has summoned against Jacob<br/>His enemies all about him;<br/>Jerusalem has become among them<br/>A thing unclean.",
+      "The L<small>ORD</small> is in the right,<br/>For I have disobeyed Him.<br/>Hear, all you peoples,<br/>And behold my agony:<br/>My maidens and my youths<br/>Have gone into captivity!",
+      "I cried out to my friends,<br/>But they played me false.<br/>My priests and my elders<br/>Have perished in the city<br/>As they searched for food<br/>To keep themselves alive."
+    ],
+    "he": [
+      "אֵיכָ֣ה <b>׀</b> יָשְׁבָ֣ה בָדָ֗ד הָעִיר֙ רַבָּ֣תִי עָ֔ם הָיְתָ֖ה כְּאַלְמָנָ֑ה רַבָּ֣תִי בַגּוֹיִ֗ם שָׂרָ֙תִי֙ בַּמְּדִינ֔וֹת הָיְתָ֖ה לָמַֽס׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "בָּכ֨וֹ תִבְכֶּ֜ה בַּלַּ֗יְלָה וְדִמְעָתָהּ֙ עַ֣ל לֶֽחֱיָ֔הּ אֵֽין־לָ֥הּ מְנַחֵ֖ם מִכׇּל־אֹהֲבֶ֑יהָ כׇּל־רֵעֶ֙יהָ֙ בָּ֣גְדוּ בָ֔הּ הָ֥יוּ לָ֖הּ לְאֹיְבִֽים׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "גָּֽלְתָ֨ה יְהוּדָ֤ה מֵעֹ֙נִי֙ וּמֵרֹ֣ב עֲבֹדָ֔ה הִ֚יא יָשְׁבָ֣ה בַגּוֹיִ֔ם לֹ֥א מָצְאָ֖ה מָנ֑וֹחַ כׇּל־רֹדְפֶ֥יהָ הִשִּׂיג֖וּהָ בֵּ֥ין הַמְּצָרִֽים׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "דַּרְכֵ֨י צִיּ֜וֹן אֲבֵל֗וֹת מִבְּלִי֙ בָּאֵ֣י מוֹעֵ֔ד כׇּל־שְׁעָרֶ֙יהָ֙ שֽׁוֹמֵמִ֔ין כֹּהֲנֶ֖יהָ נֶאֱנָחִ֑ים בְּתוּלֹתֶ֥יהָ נּוּג֖וֹת וְהִ֥יא מַר־לָֽהּ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "הָי֨וּ צָרֶ֤יהָ לְרֹאשׁ֙ אֹיְבֶ֣יהָ שָׁל֔וּ כִּֽי־יְהֹוָ֥ה הוֹגָ֖הּ עַ֣ל רֹב־פְּשָׁעֶ֑יהָ עוֹלָלֶ֛יהָ הָלְכ֥וּ שְׁבִ֖י לִפְנֵי־צָֽר׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "וַיֵּצֵ֥א <span class=\"mam-kq\"><span class=\"mam-kq-k\">(מן בת)</span> <span class=\"mam-kq-q\">[מִבַּת־]</span></span>צִיּ֖וֹן כׇּל־הֲדָרָ֑הּ הָי֣וּ שָׂרֶ֗יהָ כְּאַיָּלִים֙ לֹא־מָצְא֣וּ מִרְעֶ֔ה וַיֵּלְכ֥וּ בְלֹא־כֹ֖חַ לִפְנֵ֥י רוֹדֵֽף׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "זָֽכְרָ֣ה יְרוּשָׁלַ֗͏ִם יְמֵ֤י עׇנְיָהּ֙ וּמְרוּדֶ֔יהָ כֹּ֚ל מַחֲמֻדֶ֔יהָ אֲשֶׁ֥ר הָי֖וּ מִ֣ימֵי קֶ֑דֶם בִּנְפֹ֧ל עַמָּ֣הּ בְּיַד־צָ֗ר וְאֵ֤ין עוֹזֵר֙ לָ֔הּ רָא֣וּהָ צָרִ֔ים שָׂחֲק֖וּ עַ֥ל מִשְׁבַּתֶּֽהָ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "חֵ֤טְא חָֽטְאָה֙ יְר֣וּשָׁלַ֔͏ִם עַל־כֵּ֖ן לְנִידָ֣ה הָיָ֑תָה כׇּֽל־מְכַבְּדֶ֤יהָ הִזִּיל֙וּהָ֙ כִּי־רָא֣וּ עֶרְוָתָ֔הּ גַּם־הִ֥יא נֶאֶנְחָ֖ה וַתָּ֥שׇׁב אָחֽוֹר׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "טֻמְאָתָ֣הּ בְּשׁוּלֶ֗יהָ לֹ֤א זָֽכְרָה֙ אַחֲרִיתָ֔הּ וַתֵּ֣רֶד פְּלָאִ֔ים אֵ֥ין מְנַחֵ֖ם לָ֑הּ רְאֵ֤ה יְהֹוָה֙ אֶת־עׇנְיִ֔י כִּ֥י הִגְדִּ֖יל אוֹיֵֽב׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "יָדוֹ֙ פָּ֣רַשׂ צָ֔ר עַ֖ל כׇּל־מַחֲמַדֶּ֑יהָ כִּֽי־רָאֲתָ֤ה גוֹיִם֙ בָּ֣אוּ מִקְדָּשָׁ֔הּ אֲשֶׁ֣ר צִוִּ֔יתָה לֹא־יָבֹ֥אוּ בַקָּהָ֖ל לָֽךְ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "כׇּל־עַמָּ֤הּ נֶאֱנָחִים֙ מְבַקְשִׁ֣ים לֶ֔חֶם נָתְנ֧וּ <span class=\"mam-kq\"><span class=\"mam-kq-k\">(מחמודיהם)</span> <span class=\"mam-kq-q\">[מַחֲמַדֵּיהֶ֛ם]</span></span> בְּאֹ֖כֶל לְהָשִׁ֣יב נָ֑פֶשׁ רְאֵ֤ה יְהֹוָה֙ וְֽהַבִּ֔יטָה כִּ֥י הָיִ֖יתִי זוֹלֵלָֽה׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "<small>ל֣</small>וֹא אֲלֵיכֶם֮ כׇּל־עֹ֣בְרֵי דֶ֒רֶךְ֒ הַבִּ֣יטוּ וּרְא֔וּ אִם־יֵ֤שׁ מַכְאוֹב֙ כְּמַכְאֹבִ֔י אֲשֶׁ֥ר עוֹלַ֖ל לִ֑י אֲשֶׁר֙ הוֹגָ֣ה יְהֹוָ֔ה בְּי֖וֹם חֲר֥וֹן אַפּֽוֹ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "מִמָּר֛וֹם שָֽׁלַח־אֵ֥שׁ בְּעַצְמֹתַ֖י וַיִּרְדֶּ֑נָּה פָּרַ֨שׂ רֶ֤שֶׁת לְרַגְלַי֙ הֱשִׁיבַ֣נִי אָח֔וֹר נְתָנַ֙נִי֙ שֹֽׁמֵמָ֔ה כׇּל־הַיּ֖וֹם דָּוָֽה׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "נִשְׂקַד֩ עֹ֨ל פְּשָׁעַ֜י בְּיָד֗וֹ יִשְׂתָּ֥רְג֛וּ עָל֥וּ עַל־צַוָּארִ֖י הִכְשִׁ֣יל כֹּחִ֑י נְתָנַ֣נִי אֲדֹנָ֔י בִּידֵ֖י לֹא־אוּכַ֥ל קֽוּם׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "סִלָּ֨ה כׇל־אַבִּירַ֤י <small>׀</small> אֲדֹנָי֙ בְּקִרְבִּ֔י קָרָ֥א עָלַ֛י מוֹעֵ֖ד לִשְׁבֹּ֣ר בַּחוּרָ֑י גַּ֚ת דָּרַ֣ךְ אֲדֹנָ֔י לִבְתוּלַ֖ת בַּת־יְהוּדָֽה׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "עַל־אֵ֣לֶּה <b>׀</b> אֲנִ֣י בוֹכִיָּ֗ה עֵינִ֤י <small>׀</small> עֵינִי֙ יֹ֣רְדָה מַּ֔יִם כִּֽי־רָחַ֥ק מִמֶּ֛נִּי מְנַחֵ֖ם מֵשִׁ֣יב נַפְשִׁ֑י הָי֤וּ בָנַי֙ שֽׁוֹמֵמִ֔ים כִּ֥י גָבַ֖ר אוֹיֵֽב׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "פֵּֽרְשָׂ֨ה צִיּ֜וֹן בְּיָדֶ֗יהָ אֵ֤ין מְנַחֵם֙ לָ֔הּ צִוָּ֧ה יְהֹוָ֛ה לְיַעֲקֹ֖ב סְבִיבָ֣יו צָרָ֑יו הָיְתָ֧ה יְרוּשָׁלַ֛͏ִם לְנִדָּ֖ה בֵּינֵיהֶֽם׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "צַדִּ֥יק ה֛וּא יְהֹוָ֖ה כִּ֣י פִ֣יהוּ מָרִ֑יתִי שִׁמְעוּ־נָ֣א כׇל־<span class=\"mam-kq\"><span class=\"mam-kq-q\">[הָֽעַמִּ֗ים]</span> <span class=\"mam-kq-k\">(עמים)</span></span> וּרְאוּ֙ מַכְאֹבִ֔י בְּתוּלֹתַ֥י וּבַחוּרַ֖י הָלְכ֥וּ בַשֶּֽׁבִי׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "קָרָ֤אתִי לַֽמְאַהֲבַי֙ הֵ֣מָּה רִמּ֔וּנִי כֹּהֲנַ֥י וּזְקֵנַ֖י בָּעִ֣יר גָּוָ֑עוּ כִּֽי־בִקְשׁ֥וּ אֹ֙כֶל֙ לָ֔מוֹ וְיָשִׁ֖יבוּ אֶת־נַפְשָֽׁם׃ <span class=\"mam-spi-samekh\">{ס}</span>"
+    ],
+    "heRef": "איכה א׳:א׳-י״ט",
     "lang": "en",
     "primary_category": "Tanakh",
-    "ref": "Isaiah 14:23",
-    "url": "Isaiah.14.23"
+    "ref": "Lamentations 1:1-19",
+    "url": "Lamentations.1.1-19"
   },
-  "Lamentations 1:9": {
-    "en": "Her uncleanness clings to her skirts.<br/>She gave no thought to her future;<br/>She has sunk appallingly,<br/>With none to comfort her.—<br/>See, O L<small>ORD</small>, my misery;<br/>How the enemy jeers!",
-    "he": "טֻמְאָתָ֣הּ בְּשׁוּלֶ֗יהָ לֹ֤א זָֽכְרָה֙ אַחֲרִיתָ֔הּ וַתֵּ֣רֶד פְּלָאִ֔ים אֵ֥ין מְנַחֵ֖ם לָ֑הּ רְאֵ֤ה יְהֹוָה֙ אֶת־עׇנְיִ֔י כִּ֥י הִגְדִּ֖יל אוֹיֵֽב׃ <span class=\"mam-spi-samekh\">{ס}</span>",
-    "heRef": "איכה א׳:ט׳",
+  "Lamentations 2:1-2:19": {
+    "en": [
+      "Alas!<br/>The Lord in His wrath<br/>Has shamed Fair Zion,<br/>Has cast down from heaven to earth<br/>The majesty of Israel.<br/>He did not remember His Footstool<br/>On His day of wrath.",
+      "The Lord has laid waste without pity<br/>All the habitations of Jacob;<br/>He has razed in His anger<br/>Fair Judah’s strongholds.<br/>He has brought low in dishonor<br/>The kingdom and its leaders.",
+      "In blazing anger He has cut down<br/>All the might of Israel;<br/>He has withdrawn His right hand<br/>In the presence of the foe;<br/>He has ravaged Jacob like flaming fire,<br/>Consuming on all sides.",
+      "He bent His bow like an enemy,<br/>Poised His right hand like a foe;<br/>He slew all who delighted the eye.<br/>He poured out His wrath like fire<br/>In the Tent of Fair Zion.",
+      "The Lord has acted like a foe,<br/>He has laid waste Israel,<br/>Laid waste all her citadels,<br/>Destroyed her strongholds.<br/>He has increased within Fair Judah<br/>Mourning and moaning.",
+      "He has stripped His Booth like a garden,<br/>He has destroyed His Tabernacle;<br/>The L<small>ORD</small> has ended in Zion<br/>Festival and sabbath;<br/>In His raging anger He has spurned<br/>King and priest.<br/>",
+      "The Lord has rejected His altar,<br/>Disdained His Sanctuary.<br/>He has handed over to the foe<br/>The walls of its citadels;<br/>They raised a shout in the House of the L<small>ORD</small><br/>As on a festival day.",
+      "The L<small>ORD</small> resolved to destroy<br/>The wall of Fair Zion;<br/>He measured with a line, refrained not<br/>From bringing destruction.<br/>He has made wall and rampart to mourn,<br/>Together they languish.",
+      "Her gates have sunk into the ground,<br/>He has smashed her bars to bits;<br/>Her king and her leaders are in exile,<br/>Instruction is no more;<br/>Her prophets, too, receive<br/>No vision from the L<small>ORD</small>.",
+      "Silent sit on the ground<br/>The elders of Fair Zion;<br/>They have strewn dust on their heads<br/>And girded themselves with sackcloth;<br/>The maidens of Jerusalem have bowed<br/>Their heads to the ground.",
+      "My eyes are spent with tears,<br/>My heart is in tumult,<br/>My being melts away<br/>Over the ruin of my poor people,<br/>As babes and sucklings languish<br/>In the squares of the city.",
+      "They keep asking their mothers,<br/>“Where is bread and wine?”<br/>As they languish like battle-wounded<br/>In the squares of the town,<br/>As their life runs out<br/>In their mothers’ bosoms.",
+      "What can I take as witness or liken<br/>To you, O Fair Jerusalem?<br/>What can I match with you to console you,<br/>O Fair Maiden Zion?<br/>For your ruin is vast as the sea:<br/>Who can heal you?",
+      "Your seers prophesied to you<br/>Delusion and folly.<br/>They did not expose your iniquity<br/>So as to restore your fortunes,<br/>But prophesied to you oracles<br/>Of delusion and deception.",
+      "All who pass your way<br/>Clap their hands at you;<br/>They hiss and wag their head<br/>At Fair Jerusalem:<br/>“Is this the city that was called<br/>Perfect in Beauty,<br/>Joy of All the Earth?”",
+      "All your enemies<br/>Jeer at you;<br/>They hiss and gnash their teeth,<br/>And cry: “We’ve ruined her!<br/>Ah, this is the day we hoped for;<br/>We have lived to see it!”<br/>",
+      "The L<small>ORD</small> has done what He purposed,<br/>Has carried out the decree<br/>That He ordained long ago;<br/>He has torn down without pity.<br/>He has let the foe rejoice over you,<br/>Has exalted the might of your enemies.",
+      "Their heart cried out to the Lord.<br/>O wall of Fair Zion,<br/>Shed tears like a torrent<br/>Day and night!<br/>Give yourself no respite,<br/>Your eyes no rest.<br/>",
+      "Arise, cry out in the night<br/>At the beginning of the watches,<br/>Pour out your heart like water<br/>In the presence of the Lord!<br/>Lift up your hands to Him<br/>For the life of your infants,<br/>Who faint for hunger<br/>At every street corner.<br/>"
+    ],
+    "he": [
+      "אֵיכָה֩ יָעִ֨יב בְּאַפּ֤וֹ <small>׀</small> אֲדֹנָי֙ אֶת־בַּת־צִיּ֔וֹן הִשְׁלִ֤יךְ מִשָּׁמַ֙יִם֙ אֶ֔רֶץ תִּפְאֶ֖רֶת יִשְׂרָאֵ֑ל וְלֹא־זָכַ֥ר הֲדֹם־רַגְלָ֖יו בְּי֥וֹם אַפּֽוֹ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "בִּלַּ֨ע אֲדֹנָ֜י <span class=\"mam-kq\"><span class=\"mam-kq-k\">(לא)</span> <span class=\"mam-kq-q\">[וְלֹ֣א]</span></span> חָמַ֗ל אֵ֚ת כׇּל־נְא֣וֹת יַעֲקֹ֔ב הָרַ֧ס בְּעֶבְרָת֛וֹ מִבְצְרֵ֥י בַת־יְהוּדָ֖ה הִגִּ֣יעַ לָאָ֑רֶץ חִלֵּ֥ל מַמְלָכָ֖ה וְשָׂרֶֽיהָ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "גָּדַ֣ע בׇּֽחֳרִי־אַ֗ף כֹּ֚ל קֶ֣רֶן יִשְׂרָאֵ֔ל הֵשִׁ֥יב אָח֛וֹר יְמִינ֖וֹ מִפְּנֵ֣י אוֹיֵ֑ב וַיִּבְעַ֤ר בְּיַעֲקֹב֙ כְּאֵ֣שׁ לֶֽהָבָ֔ה אָכְלָ֖ה סָבִֽיב׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "דָּרַ֨ךְ קַשְׁתּ֜וֹ כְּאוֹיֵ֗ב נִצָּ֤ב יְמִינוֹ֙ כְּצָ֔ר וַֽיַּהֲרֹ֔ג כֹּ֖ל מַחֲמַדֵּי־עָ֑יִן בְּאֹ֙הֶל֙ בַּת־צִיּ֔וֹן שָׁפַ֥ךְ כָּאֵ֖שׁ חֲמָתֽוֹ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "הָיָ֨ה אֲדֹנָ֤י <small>׀</small> כְּאוֹיֵב֙ בִּלַּ֣ע יִשְׂרָאֵ֔ל בִּלַּע֙ כׇּל־אַרְמְנוֹתֶ֔יהָ שִׁחֵ֖ת מִבְצָרָ֑יו וַיֶּ֙רֶב֙ בְּבַת־יְהוּדָ֔ה תַּאֲנִיָּ֖ה וַאֲנִיָּֽה׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "וַיַּחְמֹ֤ס כַּגַּן֙ שֻׂכּ֔וֹ שִׁחֵ֖ת מֹעֲד֑וֹ שִׁכַּ֨ח יְהֹוָ֤ה <small>׀</small> בְּצִיּוֹן֙ מוֹעֵ֣ד וְשַׁבָּ֔ת וַיִּנְאַ֥ץ בְּזַֽעַם־אַפּ֖וֹ מֶ֥לֶךְ וְכֹהֵֽן׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "זָנַ֨ח אֲדֹנָ֤י <small>׀</small> מִזְבְּחוֹ֙ נִאֵ֣ר מִקְדָּשׁ֔וֹ הִסְגִּיר֙ בְּיַד־אוֹיֵ֔ב חוֹמֹ֖ת אַרְמְנוֹתֶ֑יהָ ק֛וֹל נָתְנ֥וּ בְּבֵית־יְהֹוָ֖ה כְּי֥וֹם מוֹעֵֽד׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "חָשַׁ֨ב יְהֹוָ֤ה <small>׀</small> לְהַשְׁחִית֙ חוֹמַ֣ת בַּת־צִיּ֔וֹן נָ֣טָה קָ֔ו לֹא־הֵשִׁ֥יב יָד֖וֹ מִבַּלֵּ֑עַ וַיַּֽאֲבֶל־חֵ֥ל וְחוֹמָ֖ה יַחְדָּ֥ו אֻמְלָֽלוּ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "<small>טָ</small>בְע֤וּ בָאָ֙רֶץ֙ שְׁעָרֶ֔יהָ אִבַּ֥ד וְשִׁבַּ֖ר בְּרִיחֶ֑יהָ מַלְכָּ֨הּ וְשָׂרֶ֤יהָ בַגּוֹיִם֙ אֵ֣ין תּוֹרָ֔ה גַּם־נְבִיאֶ֕יהָ לֹא־מָצְא֥וּ חָז֖וֹן מֵיְהֹוָֽה׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "יֵשְׁב֨וּ לָאָ֤רֶץ יִדְּמוּ֙ זִקְנֵ֣י בַת־צִיּ֔וֹן הֶֽעֱל֤וּ עָפָר֙ עַל־רֹאשָׁ֔ם חָגְר֖וּ שַׂקִּ֑ים הוֹרִ֤ידוּ לָאָ֙רֶץ֙ רֹאשָׁ֔ן בְּתוּלֹ֖ת יְרוּשָׁלָֽ͏ִם׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "כָּל֨וּ בַדְּמָע֤וֹת עֵינַי֙ חֳמַרְמְר֣וּ מֵעַ֔י נִשְׁפַּ֤ךְ לָאָ֙רֶץ֙ כְּבֵדִ֔י עַל־שֶׁ֖בֶר בַּת־עַמִּ֑י בֵּֽעָטֵ֤ף עוֹלֵל֙ וְיוֹנֵ֔ק בִּרְחֹב֖וֹת קִרְיָֽה׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "לְאִמֹּתָם֙ יֹֽאמְר֔וּ אַיֵּ֖ה דָּגָ֣ן וָיָ֑יִן בְּהִֽתְעַטְּפָ֤ם כֶּֽחָלָל֙ בִּרְחֹב֣וֹת עִ֔יר בְּהִשְׁתַּפֵּ֣ךְ נַפְשָׁ֔ם אֶל־חֵ֖יק אִמֹּתָֽם׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "מָֽה־אֲעִידֵ֞ךְ מָ֣ה אֲדַמֶּה־לָּ֗ךְ הַבַּת֙ יְר֣וּשָׁלַ֔͏ִם מָ֤ה אַשְׁוֶה־לָּךְ֙ וַאֲנַֽחֲמֵ֔ךְ בְּתוּלַ֖ת בַּת־צִיּ֑וֹן כִּֽי־גָד֥וֹל כַּיָּ֛ם שִׁבְרֵ֖ךְ מִ֥י יִרְפָּא־לָֽךְ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "נְבִיאַ֗יִךְ חָ֤זוּ לָךְ֙ שָׁ֣וְא וְתָפֵ֔ל וְלֹֽא־גִלּ֥וּ עַל־עֲוֺנֵ֖ךְ לְהָשִׁ֣יב <span class=\"mam-kq\"><span class=\"mam-kq-k\">(שביתך)</span> <span class=\"mam-kq-q\">[שְׁבוּתֵ֑ךְ]</span></span> וַיֶּ֣חֱזוּ לָ֔ךְ מַשְׂא֥וֹת שָׁ֖וְא וּמַדּוּחִֽים׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "סָֽפְק֨וּ עָלַ֤יִךְ כַּפַּ֙יִם֙ כׇּל־עֹ֣בְרֵי דֶ֔רֶךְ שָֽׁרְקוּ֙ וַיָּנִ֣עוּ רֹאשָׁ֔ם עַל־בַּ֖ת יְרוּשָׁלָ֑͏ִם הֲזֹ֣את הָעִ֗יר שֶׁיֹּֽאמְרוּ֙ כְּלִ֣ילַת יֹ֔פִי מָשׂ֖וֹשׂ לְכׇל־הָאָֽרֶץ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "פָּצ֨וּ עָלַ֤יִךְ פִּיהֶם֙ כׇּל־אֹ֣יְבַ֔יִךְ שָֽׁרְקוּ֙ וַיַּֽחַרְקוּ־שֵׁ֔ן אָמְר֖וּ בִּלָּ֑עְנוּ אַ֣ךְ זֶ֥ה הַיּ֛וֹם שֶׁקִּוִּינֻ֖הוּ מָצָ֥אנוּ רָאִֽינוּ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "עָשָׂ֨ה יְהֹוָ֜ה אֲשֶׁ֣ר זָמָ֗ם בִּצַּ֤ע אֶמְרָתוֹ֙ אֲשֶׁ֣ר צִוָּ֣ה מִֽימֵי־קֶ֔דֶם הָרַ֖ס וְלֹ֣א חָמָ֑ל וַיְשַׂמַּ֤ח עָלַ֙יִךְ֙ אוֹיֵ֔ב הֵרִ֖ים קֶ֥רֶן צָרָֽיִךְ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "צָעַ֥ק לִבָּ֖ם אֶל־אֲדֹנָ֑י חוֹמַ֣ת בַּת־צִ֠יּ֠וֹן הוֹרִ֨ידִי כַנַּ֤חַל דִּמְעָה֙ יוֹמָ֣ם וָלַ֔יְלָה אַֽל־תִּתְּנִ֤י פוּגַת֙ לָ֔ךְ אַל־תִּדֹּ֖ם בַּת־עֵינֵֽךְ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+      "ק֣וּמִי <b>׀</b> רֹ֣נִּי <span class=\"mam-kq\"><span class=\"mam-kq-k\">(בליל)</span> <span class=\"mam-kq-q\">[בַלַּ֗יְלָה]</span></span> לְרֹאשׁ֙ אַשְׁמֻר֔וֹת שִׁפְכִ֤י כַמַּ֙יִם֙ לִבֵּ֔ךְ נֹ֖כַח פְּנֵ֣י אֲדֹנָ֑י שְׂאִ֧י אֵלָ֣יו כַּפַּ֗יִךְ עַל־נֶ֙פֶשׁ֙ עֽוֹלָלַ֔יִךְ הָעֲטוּפִ֥ים בְּרָעָ֖ב בְּרֹ֥אשׁ כׇּל־חוּצֽוֹת׃ <span class=\"mam-spi-samekh\">{ס}</span>"
+    ],
+    "heRef": "איכה ב׳:א׳-י״ט",
     "lang": "en",
     "primary_category": "Tanakh",
-    "ref": "Lamentations 1:9",
-    "url": "Lamentations.1.9"
+    "ref": "Lamentations 2:1-19",
+    "url": "Lamentations.2.1-19"
   },
-  "Lamentations 2:9": {
-    "en": "Her gates have sunk into the ground,<br/>He has smashed her bars to bits;<br/>Her king and her leaders are in exile,<br/>Instruction is no more;<br/>Her prophets, too, receive<br/>No vision from the L<small>ORD</small>.",
-    "he": "<small>טָ</small>בְע֤וּ בָאָ֙רֶץ֙ שְׁעָרֶ֔יהָ אִבַּ֥ד וְשִׁבַּ֖ר בְּרִיחֶ֑יהָ מַלְכָּ֨הּ וְשָׂרֶ֤יהָ בַגּוֹיִם֙ אֵ֣ין תּוֹרָ֔ה גַּם־נְבִיאֶ֕יהָ לֹא־מָצְא֥וּ חָז֖וֹן מֵיְהֹוָֽה׃ <span class=\"mam-spi-samekh\">{ס}</span>",
-    "heRef": "איכה ב׳:ט׳",
+  "Leviticus 19:15-19:22": {
+    "en": [
+      "You shall not render an unfair decision: do not favor the poor or show deference to the rich; judge your kinsman fairly.",
+      "Do not deal basely with your countrymen. Do not profit by the blood of your fellow: I am the L<small>ORD</small>.",
+      "You shall not hate your kinsfolk in your heart. Reprove your kinsman but incur no guilt because of him.",
+      "You shall not take vengeance or bear a grudge against your countrymen. Love your fellow as yourself: I am the L<small>ORD</small>.",
+      "You shall observe My laws.<br/>You shall not let your cattle mate with a different kind; you shall not sow your field with two kinds of seed; you shall not put on cloth from a mixture of two kinds of material.",
+      "If a man has carnal relations with a woman who is a slave and has been designated for another man, but has not been redeemed or given her freedom, there shall be an indemnity; they shall not, however, be put to death, since she has not been freed.",
+      "But he must bring to the entrance of the Tent of Meeting, as his guilt offering to the L<small>ORD</small>, a ram of guilt offering.",
+      "With the ram of guilt offering the priest shall make expiation for him before the L<small>ORD</small> for the sin that he committed; and the sin that he committed will be forgiven him."
+    ],
+    "he": [
+      "לֹא־תַעֲשׂ֥וּ עָ֙וֶל֙ בַּמִּשְׁפָּ֔ט לֹא־תִשָּׂ֣א פְנֵי־דָ֔ל וְלֹ֥א תֶהְדַּ֖ר פְּנֵ֣י גָד֑וֹל בְּצֶ֖דֶק תִּשְׁפֹּ֥ט עֲמִיתֶֽךָ׃",
+      "לֹא־תֵלֵ֤ךְ רָכִיל֙ בְּעַמֶּ֔יךָ לֹ֥א תַעֲמֹ֖ד עַל־דַּ֣ם רֵעֶ֑ךָ אֲנִ֖י יְהֹוָֽה׃",
+      "לֹֽא־תִשְׂנָ֥א אֶת־אָחִ֖יךָ בִּלְבָבֶ֑ךָ הוֹכֵ֤חַ תּוֹכִ֙יחַ֙ אֶת־עֲמִיתֶ֔ךָ וְלֹא־תִשָּׂ֥א עָלָ֖יו חֵֽטְא׃",
+      "לֹֽא־תִקֹּ֤ם וְלֹֽא־תִטֹּר֙ אֶת־בְּנֵ֣י עַמֶּ֔ךָ וְאָֽהַבְתָּ֥ לְרֵעֲךָ֖ כָּמ֑וֹךָ אֲנִ֖י יְהֹוָֽה׃",
+      "אֶֽת־חֻקֹּתַי֮ תִּשְׁמֹ֒רוּ֒ בְּהֶמְתְּךָ֙ לֹא־תַרְבִּ֣יעַ כִּלְאַ֔יִם שָׂדְךָ֖ לֹא־תִזְרַ֣ע כִּלְאָ֑יִם וּבֶ֤גֶד כִּלְאַ֙יִם֙ שַֽׁעַטְנֵ֔ז לֹ֥א יַעֲלֶ֖ה עָלֶֽיךָ׃",
+      "וְ֠אִ֠ישׁ כִּֽי־יִשְׁכַּ֨ב אֶת־אִשָּׁ֜ה שִׁכְבַת־זֶ֗רַע וְהִ֤וא שִׁפְחָה֙ נֶחֱרֶ֣פֶת לְאִ֔ישׁ וְהׇפְדֵּה֙ לֹ֣א נִפְדָּ֔תָה א֥וֹ חֻפְשָׁ֖הֿ לֹ֣א נִתַּן־לָ֑הּ בִּקֹּ֧רֶת תִּהְיֶ֛ה לֹ֥א יוּמְת֖וּ כִּי־לֹ֥א חֻפָּֽשָׁה׃",
+      "וְהֵבִ֤יא אֶת־אֲשָׁמוֹ֙ לַֽיהֹוָ֔ה אֶל־פֶּ֖תַח אֹ֣הֶל מוֹעֵ֑ד אֵ֖יל אָשָֽׁם׃",
+      "וְכִפֶּר֩ עָלָ֨יו הַכֹּהֵ֜ן בְּאֵ֤יל הָֽאָשָׁם֙ לִפְנֵ֣י יְהֹוָ֔ה עַל־חַטָּאת֖וֹ אֲשֶׁ֣ר חָטָ֑א וְנִסְלַ֣ח ל֔וֹ מֵחַטָּאת֖וֹ אֲשֶׁ֥ר חָטָֽא׃ <span class=\"mam-spi-pe\">{פ}</span><br/>"
+    ],
+    "heRef": "ויקרא י״ט:ט״ו-כ״ב",
     "lang": "en",
     "primary_category": "Tanakh",
-    "ref": "Lamentations 2:9",
-    "url": "Lamentations.2.9"
+    "ref": "Leviticus 19:15-22",
+    "url": "Leviticus.19.15-22"
   },
-  "Leviticus 19:19": {
-    "en": "You shall observe My laws.<br/>You shall not let your cattle mate with a different kind; you shall not sow your field with two kinds of seed; you shall not put on cloth from a mixture of two kinds of material.",
-    "he": "אֶֽת־חֻקֹּתַי֮ תִּשְׁמֹ֒רוּ֒ בְּהֶמְתְּךָ֙ לֹא־תַרְבִּ֣יעַ כִּלְאַ֔יִם שָׂדְךָ֖ לֹא־תִזְרַ֣ע כִּלְאָ֑יִם וּבֶ֤גֶד כִּלְאַ֙יִם֙ שַֽׁעַטְנֵ֔ז לֹ֥א יַעֲלֶ֖ה עָלֶֽיךָ׃",
-    "heRef": "ויקרא י״ט:י״ט",
+  "Numbers 11:1-11:15": {
+    "en": [
+      "The people took to complaining bitterly before the L<small>ORD</small>. The L<small>ORD</small> heard and was incensed: a fire of the L<small>ORD</small> broke out against them, ravaging the outskirts of the camp.",
+      "The people cried out to Moses. Moses prayed to the L<small>ORD</small>, and the fire died down.",
+      "That place was named Taberah, because a fire of the L<small>ORD</small> had broken out against them.",
+      "The riffraff in their midst felt a gluttonous craving; and then the Israelites wept and said, “If only we had meat to eat!",
+      "We remember the fish that we used to eat free in Egypt, the cucumbers, the melons, the leeks, the onions, and the garlic.",
+      "Now our gullets are shriveled. There is nothing at all! Nothing but this manna to look to!”",
+      "Now the manna was like coriander seed, and in color it was like bdellium.",
+      "The people would go about and gather it, grind it between millstones or pound it in a mortar, boil it in a pot, and make it into cakes. It tasted like rich cream.",
+      "When the dew fell on the camp at night, the manna would fall upon it.",
+      "Moses heard the people weeping, every clan apart, each person at the entrance of his tent. The L<small>ORD</small> was very angry, and Moses was distressed.",
+      "And Moses said to the L<small>ORD</small>, “Why have You dealt ill with Your servant, and why have I not enjoyed Your favor, that You have laid the burden of all this people upon me?",
+      "Did I conceive all this people, did I bear them, that You should say to me, ‘Carry them in your bosom as a nurse carries an infant,’ to the land that You have promised on oath to their fathers?",
+      "Where am I to get meat to give to all this people, when they whine before me and say, ‘Give us meat to eat!’",
+      "I cannot carry all this people by myself, for it is too much for me.",
+      "If You would deal thus with me, kill me rather, I beg You, and let me see no more of my wretchedness!”"
+    ],
+    "he": [
+      "וַיְהִ֤י הָעָם֙ כְּמִתְאֹ֣נְנִ֔ים רַ֖ע בְּאׇזְנֵ֣י יְהֹוָ֑ה וַיִּשְׁמַ֤ע יְהֹוָה֙ וַיִּ֣חַר אַפּ֔וֹ וַתִּבְעַר־בָּם֙ אֵ֣שׁ יְהֹוָ֔ה וַתֹּ֖אכַל בִּקְצֵ֥ה הַֽמַּחֲנֶֽה׃",
+      "וַיִּצְעַ֥ק הָעָ֖ם אֶל־מֹשֶׁ֑ה וַיִּתְפַּלֵּ֤ל מֹשֶׁה֙ אֶל־יְהֹוָ֔ה וַתִּשְׁקַ֖ע הָאֵֽשׁ׃",
+      "וַיִּקְרָ֛א שֵֽׁם־הַמָּק֥וֹם הַה֖וּא תַּבְעֵרָ֑ה כִּֽי־בָעֲרָ֥ה בָ֖ם אֵ֥שׁ יְהֹוָֽה׃",
+      "וְהָֽאסַפְסֻף֙ אֲשֶׁ֣ר בְּקִרְבּ֔וֹ הִתְאַוּ֖וּ תַּאֲוָ֑ה וַיָּשֻׁ֣בוּ וַיִּבְכּ֗וּ גַּ֚ם בְּנֵ֣י יִשְׂרָאֵ֔ל וַיֹּ֣אמְר֔וּ מִ֥י יַאֲכִלֵ֖נוּ בָּשָֽׂר׃",
+      "זָכַ֙רְנוּ֙ אֶת־הַדָּגָ֔ה אֲשֶׁר־נֹאכַ֥ל בְּמִצְרַ֖יִם חִנָּ֑ם אֵ֣ת הַקִּשֻּׁאִ֗ים וְאֵת֙ הָֽאֲבַטִּחִ֔ים וְאֶת־הֶחָצִ֥יר וְאֶת־הַבְּצָלִ֖ים וְאֶת־הַשּׁוּמִֽים׃",
+      "וְעַתָּ֛ה נַפְשֵׁ֥נוּ יְבֵשָׁ֖ה אֵ֣ין כֹּ֑ל בִּלְתִּ֖י אֶל־הַמָּ֥ן עֵינֵֽינוּ׃",
+      "וְהַמָּ֕ן כִּזְרַע־גַּ֖ד ה֑וּא וְעֵינ֖וֹ כְּעֵ֥ין הַבְּדֹֽלַח׃",
+      "שָׁ֩טוּ֩ הָעָ֨ם וְלָֽקְט֜וּ וְטָחֲנ֣וּ בָרֵחַ֗יִם א֤וֹ דָכוּ֙ בַּמְּדֹכָ֔ה וּבִשְּׁלוּ֙ בַּפָּר֔וּר וְעָשׂ֥וּ אֹת֖וֹ עֻג֑וֹת וְהָיָ֣ה טַעְמ֔וֹ כְּטַ֖עַם לְשַׁ֥ד הַשָּֽׁמֶן׃",
+      "וּבְרֶ֧דֶת הַטַּ֛ל עַל־הַֽמַּחֲנֶ֖ה לָ֑יְלָה יֵרֵ֥ד הַמָּ֖ן עָלָֽיו׃",
+      "וַיִּשְׁמַ֨ע מֹשֶׁ֜ה אֶת־הָעָ֗ם בֹּכֶה֙ לְמִשְׁפְּחֹתָ֔יו אִ֖ישׁ לְפֶ֣תַח אׇהֳל֑וֹ וַיִּֽחַר־אַ֤ף יְהֹוָה֙ מְאֹ֔ד וּבְעֵינֵ֥י מֹשֶׁ֖ה רָֽע׃",
+      "וַיֹּ֨אמֶר מֹשֶׁ֜ה אֶל־יְהֹוָ֗ה לָמָ֤ה הֲרֵעֹ֙תָ֙ לְעַבְדֶּ֔ךָ וְלָ֛מָּה לֹא־מָצָ֥תִי חֵ֖ן בְּעֵינֶ֑יךָ לָשׂ֗וּם אֶת־מַשָּׂ֛א כׇּל־הָעָ֥ם הַזֶּ֖ה עָלָֽי׃",
+      "הֶאָנֹכִ֣י הָרִ֗יתִי אֵ֚ת כׇּל־הָעָ֣ם הַזֶּ֔ה אִם־אָנֹכִ֖י יְלִדְתִּ֑יהוּ כִּֽי־תֹאמַ֨ר אֵלַ֜י שָׂאֵ֣הוּ בְחֵיקֶ֗ךָ כַּאֲשֶׁ֨ר יִשָּׂ֤א הָאֹמֵן֙ אֶת־הַיֹּנֵ֔ק עַ֚ל הָֽאֲדָמָ֔ה אֲשֶׁ֥ר נִשְׁבַּ֖עְתָּ לַאֲבֹתָֽיו׃",
+      "מֵאַ֤יִן לִי֙ בָּשָׂ֔ר לָתֵ֖ת לְכׇל־הָעָ֣ם הַזֶּ֑ה כִּֽי־יִבְכּ֤וּ עָלַי֙ לֵאמֹ֔ר תְּנָה־לָּ֥נוּ בָשָׂ֖ר וְנֹאכֵֽלָה׃",
+      "לֹֽא־אוּכַ֤ל אָנֹכִי֙ לְבַדִּ֔י לָשֵׂ֖את אֶת־כׇּל־הָעָ֣ם הַזֶּ֑ה כִּ֥י כָבֵ֖ד מִמֶּֽנִּי׃",
+      "וְאִם־כָּ֣כָה <b>׀</b> אַתְּ־עֹ֣שֶׂה לִּ֗י הׇרְגֵ֤נִי נָא֙ הָרֹ֔ג אִם־מָצָ֥אתִי חֵ֖ן בְּעֵינֶ֑יךָ וְאַל־אֶרְאֶ֖ה בְּרָעָתִֽי׃ <span class=\"mam-spi-pe\">{פ}</span><br/>"
+    ],
+    "heRef": "במדבר י״א:א׳-ט״ו",
     "lang": "en",
     "primary_category": "Tanakh",
-    "ref": "Leviticus 19:19",
-    "url": "Leviticus.19.19"
+    "ref": "Numbers 11:1-15",
+    "url": "Numbers.11.1-15"
   },
-  "Numbers 11:7": {
-    "en": "Now the manna was like coriander seed, and in color it was like bdellium.",
-    "he": "וְהַמָּ֕ן כִּזְרַע־גַּ֖ד ה֑וּא וְעֵינ֖וֹ כְּעֵ֥ין הַבְּדֹֽלַח׃",
-    "heRef": "במדבר י״א:ז׳",
+  "Zechariah 9:1-10:2": {
+    "en": [
+      [
+        "A pronouncement: The word of the L<small>ORD</small>.<br/><br/>He will reside in the land of Hadrach and Damascus;<br/>For all men’s eyes will turn to the L<small>ORD</small>—<br/>Like all the tribes of Israel—",
+        "Including Hamath, which borders on it,<br/>And Tyre and Sidon, though they are very wise.",
+        "Tyre has built herself a fortress;<br/>She has amassed silver like dust,<br/>And gold like the mud in the streets.",
+        "But my Lord will impoverish her;<br/>He will defeat her forces at sea,<br/>And she herself shall be consumed by fire.<br/>",
+        "Ashkelon shall see it and be frightened,<br/>Gaza shall tremble violently,<br/>And Ekron, at the collapse of her hopes.<br/>Kingship shall vanish from Gaza,<br/>Ashkelon shall be without inhabitants,",
+        "And a mongrel people shall settle in Ashdod.<br/>I will uproot the grandeur of Philistia.<br/>",
+        "But I will clean out the blood from its mouth,<br/>And the detestable things from between its teeth.<br/>Its survivors, too, shall belong to our God:<br/>They shall become like a clan in Judah,<br/>And Ekron shall be like the Jebusites.<br/>",
+        "And I will encamp in My House against armies,<br/>Against any that come and go,<br/>And no oppressor shall ever overrun them again;<br/>For I have now taken note with My own eyes.<br/>",
+        "Rejoice greatly, Fair Zion;<br/>Raise a shout, Fair Jerusalem!<br/>Lo, your king is coming to you.<br/>He is victorious, triumphant,<br/>Yet humble, riding on an ass,<br/>On a donkey foaled by a she-ass.",
+        "He shall banish chariots from Ephraim<br/>And horses from Jerusalem;<br/>The warrior’s bow shall be banished.<br/>He shall call on the nations to surrender,<br/>And his rule shall extend from sea to sea<br/>And from ocean to land’s end.<br/>",
+        "You, for your part, have released<br/>Your prisoners from the dry pit,<br/>For the sake of the blood of your covenant,",
+        "[Saying], “Return to Bizzaron,<br/>You prisoners of hope.”<br/>In return [I] announce this day:<br/>I will repay you double.",
+        "For I have drawn Judah taut,<br/>And applied [My hand] to Ephraim as to a bow,<br/>And I will arouse your sons, O Zion,<br/>Against your sons, O Javan,<br/>And make you like a warrior’s sword.<br/>",
+        "And the L<small>ORD</small> will manifest Himself to them,<br/>And His arrows shall flash like lightning;<br/>My Lord G<small>OD</small> shall sound the ram’s horn<br/>And advance in a stormy tempest.",
+        "The L<small>ORD</small> of Hosts will protect them:<br/>[His] slingstones shall devour and conquer;<br/>They shall drink, shall rage as with wine,<br/>And be filled [with it] like a dashing bowl,<br/>Like the corners of an altar.",
+        "The L<small>ORD</small> their God shall prosper them<br/>On that day;<br/>[He shall pasture] His people like sheep.<br/>[They shall be] like crown jewels glittering on His soil.",
+        "How lovely, how beautiful they shall be,<br/>Producing young men like new grain,<br/>Young women like new wine!"
+      ],
+      [
+        "Ask the L<small>ORD</small> for rain<br/>In the season of late rain.<br/>It is the L<small>ORD</small> who causes storms;<br/>And He will provide rainstorms for them,<br/>Grass in the fields for everyone.<br/>",
+        "For the teraphim spoke delusion,<br/>The augurs predicted falsely;<br/>And dreamers speak lies<br/>And console with illusions.<br/>That is why My people have strayed like a flock,<br/>They suffer for lack of a shepherd."
+      ]
+    ],
+    "he": [
+      [
+        "מַשָּׂ֤א דְבַר־יְהֹוָה֙ בְּאֶ֣רֶץ חַדְרָ֔ךְ וְדַמֶּ֖שֶׂק מְנֻחָת֑וֹ כִּ֤י לַֽיהֹוָה֙ עֵ֣ין אָדָ֔ם וְכֹ֖ל שִׁבְטֵ֥י יִשְׂרָאֵֽל׃",
+        "וְגַם־חֲמָ֖ת תִּגְבׇּל־בָּ֑הּ צֹ֣ר וְצִיד֔וֹן כִּ֥י חָֽכְמָ֖ה מְאֹֽד׃",
+        "וַתִּ֥בֶן צֹ֛ר מָצ֖וֹר לָ֑הּ וַתִּצְבׇּר־כֶּ֙סֶף֙ כֶּֽעָפָ֔ר וְחָר֖וּץ כְּטִ֥יט חוּצֽוֹת׃",
+        "הִנֵּ֤ה אֲדֹנָי֙ יֽוֹרִשֶׁ֔נָּה וְהִכָּ֥ה בַיָּ֖ם חֵילָ֑הּ וְהִ֖יא בָּאֵ֥שׁ תֵּאָכֵֽל׃",
+        "תֵּרֶ֨א אַשְׁקְל֜וֹן וְתִירָ֗א וְעַזָּה֙ וְתָחִ֣יל מְאֹ֔ד וְעֶקְר֖וֹן כִּֽי־הֹבִ֣ישׁ מֶבָּטָ֑הּ וְאָ֤בַד מֶ֙לֶךְ֙ מֵֽעַזָּ֔ה וְאַשְׁקְל֖וֹן לֹ֥א תֵשֵֽׁב׃",
+        "וְיָשַׁ֥ב מַמְזֵ֖ר בְּאַשְׁדּ֑וֹד וְהִכְרַתִּ֖י גְּא֥וֹן פְּלִשְׁתִּֽים׃",
+        "וַהֲסִרֹתִ֨י דָמָ֜יו מִפִּ֗יו וְשִׁקֻּצָיו֙ מִבֵּ֣ין שִׁנָּ֔יו וְנִשְׁאַ֥ר גַּם־ה֖וּא לֵֽאלֹהֵ֑ינוּ וְהָיָה֙ כְּאַלֻּ֣ף בִּֽיהוּדָ֔ה וְעֶקְר֖וֹן כִּיבוּסִֽי׃",
+        "וְחָנִ֨יתִי לְבֵיתִ֤י מִצָּבָה֙ מֵעֹבֵ֣ר וּמִשָּׁ֔ב וְלֹֽא־יַעֲבֹ֧ר עֲלֵיהֶ֛ם ע֖וֹד נֹגֵ֑שׂ כִּ֥י עַתָּ֖ה רָאִ֥יתִי בְעֵינָֽי׃ <span class=\"mam-spi-samekh\">{ס}</span>",
+        "גִּילִ֨י מְאֹ֜ד בַּת־צִיּ֗וֹן הָרִ֙יעִי֙ בַּ֣ת יְרוּשָׁלַ֔͏ִם הִנֵּ֤ה מַלְכֵּךְ֙ יָ֣בוֹא לָ֔ךְ צַדִּ֥יק וְנוֹשָׁ֖ע ה֑וּא עָנִי֙ וְרֹכֵ֣ב עַל־חֲמ֔וֹר וְעַל־עַ֖יִר בֶּן־אֲתֹנֽוֹת׃",
+        "וְהִכְרַתִּי־רֶ֣כֶב מֵאֶפְרַ֗יִם וְסוּס֙ מִיר֣וּשָׁלַ֔͏ִם וְנִכְרְתָה֙ קֶ֣שֶׁת מִלְחָמָ֔ה וְדִבֶּ֥ר שָׁל֖וֹם לַגּוֹיִ֑ם וּמׇשְׁלוֹ֙ מִיָּ֣ם עַד־יָ֔ם וּמִנָּהָ֖ר עַד־אַפְסֵי־אָֽרֶץ׃",
+        "גַּם־אַ֣תְּ בְּדַם־בְּרִיתֵ֗ךְ שִׁלַּ֤חְתִּי אֲסִירַ֙יִךְ֙ מִבּ֔וֹר אֵ֥ין מַ֖יִם בּֽוֹ׃",
+        "שׁ֚וּבוּ לְבִצָּר֔וֹן אֲסִירֵ֖י הַתִּקְוָ֑ה גַּם־הַיּ֕וֹם מַגִּ֥יד מִשְׁנֶ֖ה אָשִׁ֥יב לָֽךְ׃",
+        "כִּֽי־דָרַ֨כְתִּי לִ֜י יְהוּדָ֗ה קֶ֚שֶׁת מִלֵּ֣אתִי אֶפְרַ֔יִם וְעוֹרַרְתִּ֤י בָנַ֙יִךְ֙ צִיּ֔וֹן עַל־בָּנַ֖יִךְ יָוָ֑ן וְשַׂמְתִּ֖יךְ כְּחֶ֥רֶב גִּבּֽוֹר׃",
+        "וַֽיהֹוָה֙ עֲלֵיהֶ֣ם יֵֽרָאֶ֔ה וְיָצָ֥א כַבָּרָ֖ק חִצּ֑וֹ וַֽאדֹנָ֤י יֱהֹוִה֙ בַּשּׁוֹפָ֣ר יִתְקָ֔ע וְהָלַ֖ךְ בְּסַעֲר֥וֹת תֵּימָֽן׃",
+        "יְהֹוָ֣ה צְבָאוֹת֮ יָגֵ֣ן עֲלֵיהֶם֒ וְאָכְל֗וּ וְכָֽבְשׁוּ֙ אַבְנֵי־קֶ֔לַע וְשָׁת֥וּ הָמ֖וּ כְּמוֹ־יָ֑יִן וּמָֽלְאוּ֙ כַּמִּזְרָ֔ק כְּזָוִיּ֖וֹת מִזְבֵּֽחַ׃",
+        "וְֽהוֹשִׁיעָ֞ם יְהֹוָ֧ה אֱלֹהֵיהֶ֛ם בַּיּ֥וֹם הַה֖וּא כְּצֹ֣אן עַמּ֑וֹ כִּ֚י אַבְנֵי־נֵ֔זֶר מִֽתְנוֹסְס֖וֹת עַל־אַדְמָתֽוֹ׃",
+        "כִּ֥י מַה־טּוּב֖וֹ וּמַה־יׇּפְי֑וֹ דָּגָן֙ בַּחוּרִ֔ים וְתִיר֖וֹשׁ יְנוֹבֵ֥ב בְּתֻלֽוֹת׃"
+      ],
+      [
+        "שַׁאֲל֨וּ מֵיְהֹוָ֤ה מָטָר֙ בְּעֵ֣ת מַלְק֔וֹשׁ יְהֹוָ֖ה עֹשֶׂ֣ה חֲזִיזִ֑ים וּמְטַר־גֶּ֙שֶׁם֙ יִתֵּ֣ן לָהֶ֔ם לְאִ֖ישׁ עֵ֥שֶׂב בַּשָּׂדֶֽה׃",
+        "כִּ֧י הַתְּרָפִ֣ים דִּבְּרוּ־אָ֗וֶן וְהַקּֽוֹסְמִים֙ חָ֣זוּ שֶׁ֔קֶר וַֽחֲלֹמוֹת֙ הַשָּׁ֣וְא יְדַבֵּ֔רוּ הֶ֖בֶל יְנַחֵמ֑וּן עַל־כֵּן֙ נָסְע֣וּ כְמוֹ־צֹ֔אן יַעֲנ֖וּ כִּי־אֵ֥ין רֹעֶֽה׃ <span class=\"mam-spi-pe\">{פ}</span><br/>"
+      ]
+    ],
+    "heRef": "זכריה ט׳:א׳-י׳:ב׳",
     "lang": "en",
     "primary_category": "Tanakh",
-    "ref": "Numbers 11:7",
-    "url": "Numbers.11.7"
-  },
-  "Zechariah 9:9": {
-    "en": "Rejoice greatly, Fair Zion;<br/>Raise a shout, Fair Jerusalem!<br/>Lo, your king is coming to you.<br/>He is victorious, triumphant,<br/>Yet humble, riding on an ass,<br/>On a donkey foaled by a she-ass.",
-    "he": "גִּילִ֨י מְאֹ֜ד בַּת־צִיּ֗וֹן הָרִ֙יעִי֙ בַּ֣ת יְרוּשָׁלַ֔͏ִם הִנֵּ֤ה מַלְכֵּךְ֙ יָ֣בוֹא לָ֔ךְ צַדִּ֥יק וְנוֹשָׁ֖ע ה֑וּא עָנִי֙ וְרֹכֵ֣ב עַל־חֲמ֔וֹר וְעַל־עַ֖יִר בֶּן־אֲתֹנֽוֹת׃",
-    "heRef": "זכריה ט׳:ט׳",
-    "lang": "en",
-    "primary_category": "Tanakh",
-    "ref": "Zechariah 9:9",
-    "url": "Zechariah.9.9"
+    "ref": "Zechariah 9:1-10:2",
+    "url": "Zechariah.9.1-10.2"
   }
 }

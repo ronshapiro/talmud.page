@@ -5,7 +5,7 @@ interface SurroundingContext {
   hebrew: string;
 }
 
-interface LlmGeneratedTopic {
+export interface LlmGeneratedTopic {
   english: string;
   hebrew: string;
   surroundingContext: SurroundingContext;
