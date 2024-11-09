@@ -117,6 +117,30 @@ function ReportDuplicateButton({
   );
 }
 
+function ExpandContextButtonRow({onClick}: {onClick: () => void;}): React.ReactElement {
+  const onKeyUp = (event?: React.KeyboardEvent) => {
+    if (event && event.code === "Enter") {
+      onClick();
+    }
+  };
+
+  const button = (
+    // eslint-disable-next-line jsx-a11y/anchor-is-valid
+    <a
+      className="commentary_header expandedContext"
+      role="button"
+      tabIndex={0}
+      onClick={() => onClick()}
+      onKeyUp={() => onKeyUp()}
+    >
+      כל הפסקה
+    </a>
+  );
+  // TODO: this may be awkward down the road if we want to apply special styles/indent to nested
+  // buttons. It also could potentially be complicated with keyboard shortcuts. Consider trying to
+  // instead shoehorn this into CommentariesBlock.
+  return <TableRow hebrew={button} classes={["expandedContext", "commentaryRow"]} />;
+}
 
 export function IndividualComment({
   comment,
@@ -126,6 +150,9 @@ export function IndividualComment({
   commentaryKind: CommentaryType;
 }): React.ReactElement {
   const output = [];
+  const [showCompleteContext, setShowCompleteContext] = useState(
+    comment.originalRefsBeforeRewriting === undefined);
+
   if (commentaryKind.showTitle) {
     const titleRow = (
       <InternalTableRow
@@ -153,15 +180,21 @@ export function IndividualComment({
         return "ignore-drive";
       })();
 
+      if (!showCompleteContext
+        && !comment.originalRefsBeforeRewriting?.includes(lineRef)) {
+        continue;
+      }
+
+      const isDirectlyReferenced = (
+        showCompleteContext && comment.originalRefsBeforeRewriting?.includes(lineRef));
+
       output.push(
         <InternalTableRow
           key={i}
           hebrew={hebrew[i]}
           english={english[i]}
           overrideRef={lineRef}
-          extraClasses={
-            comment.originalRefsBeforeRewriting?.includes(lineRef) ? ["directlyReferencedLine"] : []
-          }
+          extraClasses={isDirectlyReferenced ? ["directlyReferencedLine"] : []}
           comment={comment}
           commentaryKind={commentaryKind}
           />);
@@ -175,6 +208,11 @@ export function IndividualComment({
         comment={comment}
         commentaryKind={commentaryKind}
         />);
+  }
+
+  if (comment.originalRefsBeforeRewriting) {
+    const onClick = () => setShowCompleteContext(!showCompleteContext);
+    output.push(<ExpandContextButtonRow key="Expanded context" onClick={() => onClick()} />);
   }
 
   const buttonRef = useHtmlRef<HTMLButtonElement>();
