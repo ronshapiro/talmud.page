@@ -83,6 +83,7 @@ import {SefariaLinkSanitizer} from "./source_formatting/sefaria_link_sanitizer";
 import {SefariaTopicCollector} from "./source_formatting/sefaria_topic_collector";
 import {ShulchanArukhHeaderRemover} from "./source_formatting/shulchan_arukh_remove_header";
 import {isPehSectionEnding, transformTanakhSpacing} from "./source_formatting/tanakh_spacing";
+import {makeSteinsaltzCommentPairings} from "./steinsaltz";
 import {formatDafInHebrew} from "./talmud";
 import {hasMatchingProperty} from "./util/objects";
 import {checkNotUndefined} from "./js/undefined";
@@ -1373,7 +1374,8 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
 
     for (const [segment, steinsaltz] of _.zip(segments, steinsaltzSegments)) {
       let i = 0;
-      for (const [hebrew, english] of _.zip(steinsaltz.notesHeb, steinsaltz.notesEng)) {
+      for (const [hebrew, english] of makeSteinsaltzCommentPairings(
+        steinsaltz.notesHeb, steinsaltz.notesEng)) {
         i += 1;
         segment.commentary.addComment(new Comment(
           "Steinsaltz In-Depth",
@@ -1382,7 +1384,7 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
           `Steinsaltz comment #${i} on ` + segment.ref,
           english ? english.titleEng : "",
           // the hebrew note only supplies the "title" field, and it's not vocalized.
-          english ? english.titleHeb : hebrew.title,
+          english ? english.titleHeb : hebrew!.title,
         ));
         if (hebrew && hebrew.files.length > 0) {
           this.logger.error(segment.ref, "heb", hebrew.files);
