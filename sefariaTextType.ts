@@ -43,3 +43,11 @@ export function flatten(textType: sefaria.TextType): string | undefined {
   }
   return textType.flat(Infinity).join("\n");
 }
+
+export function toFlatArray(textType: sefaria.TextType): string[] | undefined {
+  if (!textType) return undefined;
+  if (typeof textType === "string") {
+    return [textType];
+  }
+  return textType.flat(Infinity);
+}
