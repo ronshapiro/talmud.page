@@ -1,4 +1,4 @@
-import {readUtf8} from "../files";
+import {readAndParseGzippedJsonFile} from "../files";
 
 interface SurroundingContext {
   english: string;
@@ -12,9 +12,10 @@ export interface LlmGeneratedTopic {
 }
 
 const files = [
-  "tanakh_contexts_gemini-1.5-flash-v2.json",
-  "tanakh_contexts_gemini-1.5-flash-v1.json",
-  "tanakh_contexts_gpt-4o-mini.json",
+  // Compress with `gzip <path>`
+  "tanakh_contexts_gemini-1.5-flash-v2.json.gz",
+  "tanakh_contexts_gemini-1.5-flash-v1.json.gz",
+  "tanakh_contexts_gpt-4o-mini.json.gz",
 ];
 const parsedFiles: Record<string, any>[] = [];
 
@@ -22,7 +23,7 @@ const parsedFiles: Record<string, any>[] = [];
 export function llmGeneratedTopic(ref: string): LlmGeneratedTopic | undefined {
   if (parsedFiles.length === 0) {
     for (const file of files) {
-      parsedFiles.push(JSON.parse(readUtf8(`precomputed/${file}`)));
+      parsedFiles.push(readAndParseGzippedJsonFile(`precomputed/${file}`));
     }
   }
 
