@@ -266,14 +266,6 @@ export class Runner {
     onceDocumentReady.execute(registerRefSelectionSnackbarListener);
 
     onceDocumentReady.execute(() => {
-      const modalContainer = $("#modal-container");
-      modalContainer.click((event) => {
-        if (event.target === modalContainer[0]) {
-          modalContainer.hide();
-        }
-      });
-    });
-    onceDocumentReady.execute(() => {
       this.preloadNextSection();
       this.preloadPreviousSection();
     });

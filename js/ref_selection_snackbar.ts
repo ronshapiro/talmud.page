@@ -1,5 +1,6 @@
 /* global gtag,  */
 import {showCorrectionModal} from "./CorrectionModal";
+import {showCommentEditorModal} from "./CommentEditorModal";
 import {findNodeOffset} from "./dom";
 import {driveClient} from "./google_drive/singleton";
 import {AnyComment, CommentSourceMetadata, HighlightColor} from "./google_drive/types";
@@ -292,7 +293,8 @@ class Buttons {
     return {
       text: '<i class="material-icons">add_comment</i>',
       onClick: () => {
-        this.showCommentEditorModal({
+        this.selectionState.capture();
+        showCommentEditorModal({
           initialText: "",
           title: `Add a note on ${ref}`,
           onSave: (text: string) => this.postComment({
@@ -310,8 +312,9 @@ class Buttons {
     return {
       text: '<i class="material-icons">edit</i>',
       onClick: () => {
+        this.selectionState.capture();
         const [initialText, isRtl] = driveClient.currentCommentText(ref);
-        this.showCommentEditorModal({
+        showCommentEditorModal({
           initialText,
           title: `Edit note`,
           onSave: (text: string) => driveClient.updateComment(ref, text),
@@ -319,45 +322,6 @@ class Buttons {
         });
       },
     };
-  }
-
-  private showCommentEditorModal({
-    initialText,
-    title,
-    onSave,
-    direction,
-  }: {
-    initialText: string,
-    title: string,
-    onSave: (newText: string) => void,
-    direction: "ltr" | "rtl",
-  }) {
-    const modalContainer = $("#modal-container");
-    const noteTextArea = $("#personal-note-entry");
-    const ltrButton = $("#modal-ltr");
-    const rtlButton = $("#modal-rtl");
-
-    noteTextArea.attr("dir", direction);
-    (direction === "ltr" ? rtlButton : ltrButton).removeClass("modal-direction-active");
-    (direction === "ltr" ? ltrButton : rtlButton).addClass("modal-direction-active");
-    $(".modal-direction").off("click").on("click", () => {
-      noteTextArea.attr("dir", noteTextArea.attr("dir") === "ltr" ? "rtl" : "ltr");
-      ltrButton.toggleClass("modal-direction-active");
-      rtlButton.toggleClass("modal-direction-active");
-      noteTextArea.focus();
-    });
-
-    $("#modal-label").text(title);
-    noteTextArea.val(initialText);
-    $("#modal-cancel").off("click").on("click", () => modalContainer.hide());
-
-    this.selectionState.capture();
-    $("#modal-save").off("click").on("click", () => {
-      onSave(noteTextArea.val() as string || "");
-      modalContainer.hide();
-    });
-    modalContainer.show();
-    noteTextArea.focus();
   }
 
   searchButton(): Button {

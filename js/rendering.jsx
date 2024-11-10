@@ -12,6 +12,7 @@ import {v4 as newUuid} from "uuid";
 import {addDriveComments} from "./addDriveComments.ts";
 import {amudMetadata} from "./amud.ts";
 import {CorrectionModal} from "./CorrectionModal.tsx";
+import {CommentEditorModal} from "./CommentEditorModal.tsx";
 import {CommentariesBlock} from "./CommentariesBlock.tsx";
 import {FeedbackView} from "./Feedback.tsx";
 import {hebrewSearchRegex} from "../hebrew";
@@ -593,6 +594,7 @@ export class Renderer {
             allAmudim={() => this.getAmudim()}
             navigationExtension={this.navigationExtension} />
           <CorrectionModal />
+          <CommentEditorModal />
         </HiddenHostContext.Provider>
       </ConfigurationContext.Provider>,
       host);

@@ -107,7 +107,12 @@ ModalEditor.propTypes = {
 };
 
 
-export function useTextDirectionButton(): [Direction, React.ReactElement] {
+interface TextDirectionButton {
+  direction: Direction;
+  setDirection: (direction: Direction) => void;
+  directionButton: React.ReactElement;
+}
+export function useTextDirectionButton(): TextDirectionButton {
   const [isRtl, setIsRtl] = useState(false);
   const button = (
     <button
@@ -118,5 +123,9 @@ export function useTextDirectionButton(): [Direction, React.ReactElement] {
         {isRtl ? "format_textdirection_r_to_l" : "format_textdirection_l_to_r"}
       </i>
     </button>);
-  return [isRtl ? "rtl" : "ltr", button];
+  return {
+    direction: isRtl ? "rtl" : "ltr",
+    setDirection: direction => setIsRtl(direction === "rtl"),
+    directionButton: button,
+  };
 }

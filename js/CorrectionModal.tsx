@@ -26,7 +26,7 @@ export function CorrectionModal(): React.ReactElement | null {
     setRefData(data);
   };
   const ref = useHtmlRef<HTMLTextAreaElement>();
-  const [direction, directionButton] = useTextDirectionButton();
+  const {direction, directionButton} = useTextDirectionButton();
 
   if (!isShowing) {
     return null;
