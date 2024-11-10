@@ -2,7 +2,7 @@ import {Book} from "./books";
 import {readUtf8} from "./files";
 
 const SHULCHAN_ARUKH_HEADERS: any = (
-  JSON.parse(readUtf8("precomputed_texts/shulchan_arukh_headings.json"))
+  JSON.parse(readUtf8("precomputed/shulchan_arukh_headings.json"))
 );
 
 export function shulchanArukhChapterTitle(ref: string): string | undefined {
@@ -40,7 +40,7 @@ export function getSugyaSpanningRef(masechet: string, ref: string): string | und
 
   let text: string;
   try {
-    text = readUtf8(`sugya_pointers/${masechet}-pointers.json`);
+    text = readUtf8(`precomputed/sugyot/pointers/${masechet}-pointers.json`);
   } catch {
     SUGYA_POINTERS_CACHE[masechet] = {};
     return undefined;

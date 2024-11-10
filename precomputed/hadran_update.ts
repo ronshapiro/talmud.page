@@ -1,8 +1,8 @@
-import {AbstractApiRequestHandler, InternalSegment} from "./api_request_handler";
-import {NoopLogger} from "./logger";
-import {RealRequestMaker} from "./request_makers";
-import {sefariaTextTypeTransformation} from "./sefariaTextType";
-import {writeJson} from "./util/json_files";
+import {AbstractApiRequestHandler, InternalSegment} from "../api_request_handler";
+import {NoopLogger} from "../logger";
+import {RealRequestMaker} from "../request_makers";
+import {sefariaTextTypeTransformation} from "../sefariaTextType";
+import {writeJson} from "../util/json_files";
 
 const englishTransform = sefariaTextTypeTransformation(
   text => text.replace(/ \[fill in the name of the tractate]/g, ""));
@@ -40,4 +40,4 @@ class HadranRequestHandler extends AbstractApiRequestHandler {
 
 new HadranRequestHandler("Hadran", "", new RealRequestMaker(), new NoopLogger())
   .handleRequest()
-  .then(response => writeJson("precomputed_texts/hadran.json", response));
+  .then(response => writeJson("precomputed/hadran.json", response));

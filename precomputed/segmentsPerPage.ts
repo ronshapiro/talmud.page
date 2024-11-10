@@ -1,8 +1,8 @@
 import * as fs from "fs";
-import {Amud} from "./apiTypes";
-import {books} from "./books";
-import {cachedOutputFilePath} from "./cached_outputs";
-import {writeJson} from "./util/json_files";
+import {Amud} from "../apiTypes";
+import {books} from "../books";
+import {cachedOutputFilePath} from "../cached_outputs";
+import {writeJson} from "../util/json_files";
 
 const segmentsPerPage: Record<string, number> = {};
 

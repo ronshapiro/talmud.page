@@ -12,7 +12,7 @@ import {surroundingContext} from "./arrays";
 import {Book, books, internalLinkableRef} from "./books";
 import {ALL_COMMENTARIES, CommentaryType} from "./commentaries";
 import {readUtf8} from "./files";
-import {hadranSegments, isHadran} from "./hadran";
+import {hadranSegments, isHadran} from "./precomputed/hadran";
 import {
   stripHebrewNonlettersOrVowels,
   intToHebrewNumeral,

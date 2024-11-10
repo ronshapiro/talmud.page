@@ -99,7 +99,7 @@ all_results = {
     "Even HaEzer": get_titles("Even HaEzer", EH_SIMANIM),
 }
 
-write_json("precomputed_texts/shulchan_arukh_headings.json", all_results)
+write_json("precomputed/shulchan_arukh_headings.json", all_results)
 
 # for i in [22, 29, 417, 419, 430, 486, 530, 596, 598, 599, 603, 625, 642, 655, 657, 661, 679, 683]:
 #     get_title("Orach Chayim", i)

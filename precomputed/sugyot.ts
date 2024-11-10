@@ -1,11 +1,11 @@
 import * as fs from "fs";
-import {Amud, Section} from "./apiTypes";
-import {books, Book} from "./books";
-import {cachedOutputFilePath} from "./cached_outputs";
-import {stripHebrewNonletters} from "./hebrew";
-import {mishnaReferencePath} from "./precomputed";
-import {sanitizeHtml} from "./source_formatting/html_sanitization_node";
-import {writeJson} from "./util/json_files";
+import {Amud, Section} from "../apiTypes";
+import {books, Book} from "../books";
+import {cachedOutputFilePath} from "../cached_outputs";
+import {stripHebrewNonletters} from "../hebrew";
+import {mishnaReferencePath} from "../precomputed";
+import {sanitizeHtml} from "../source_formatting/html_sanitization_node";
+import {writeJson} from "../util/json_files";
 
 function mergeRefs(book: Book, start: string, end: string): string {
   const startPrefix = start.split(":")[0];
@@ -141,8 +141,8 @@ for (const book of new Set(Object.values(books.byCanonicalName))) {
     }
   }
 
-  writeJson(`sugyot/${book.canonicalName}.json`, sugyaEndpoints);
-  writeJson(`sugya_pointers/${book.canonicalName}-pointers.json`, refPointers);
-  writeJson(`masechet_prakim/${book.canonicalName}.json`, perekEndpoints);
+  writeJson(`precomputed/sugyot/${book.canonicalName}.json`, sugyaEndpoints);
+  writeJson(`precomputed/sugyot/pointers/${book.canonicalName}-pointers.json`, refPointers);
+  writeJson(`precomputed/masechet_prakim/${book.canonicalName}.json`, perekEndpoints);
   writeJson(mishnaReferencePath(book), mishnaReferences);
 }
