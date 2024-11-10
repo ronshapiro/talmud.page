@@ -2,7 +2,7 @@ import * as React from "react";
 import {postCorrection} from "./corrections";
 import {CorrectionUiInfo} from "../correctionTypes";
 import {useHtmlRef} from "./hooks";
-import Modal from "./Modal";
+import Modal, {ModalEditor, useTextDirectionButton} from "./Modal";
 
 const {
   useState,
@@ -26,8 +26,7 @@ export function CorrectionModal(): React.ReactElement | null {
     setRefData(data);
   };
   const ref = useHtmlRef<HTMLTextAreaElement>();
-  const [isRtl, setIsRtl] = useState(false);
-  const direction = isRtl ? "rtl" : "ltr";
+  const [direction, directionButton] = useTextDirectionButton();
 
   if (!isShowing) {
     return null;
@@ -42,32 +41,18 @@ export function CorrectionModal(): React.ReactElement | null {
   return (
     <Modal
       content={(
-        <div>
-          <p><strong>Submit a correction to Sefaria:</strong></p>
-          <form onSubmit={(event) => onSubmit(event)}>
-            <div
-              className="mdl-textfield mdl-js-textfield
-                         mdl-textfield--expandable
-                         mdl-textfield--floating-label">
-              <textarea dir={direction} ref={ref} className="mdl-textfield__input" rows={5} />
-            </div>
-          </form>
-        </div>
+        <ModalEditor
+          title="Submit a correction to Sefaria:"
+          onSubmit={(event) => onSubmit(event)}
+          direction={direction}
+          textAreaRef={ref}
+        />
       )}
       cancelText="Cancel"
       onCancel={() => setShowing(false)}
       acceptText="Submit Correction"
       onAccept={() => onSubmit()}
-      extraButtons={[
-        <button
-          key="direction"
-          onClick={() => () => setIsRtl(!isRtl)}
-          className="mdl-button mdl-js-button modal-direction-button">
-          <i className="material-icons">
-            {isRtl ? "format_textdirection_r_to_l" : "format_textdirection_l_to_r"}
-          </i>
-        </button>,
-      ]}
+      extraButtons={[directionButton]}
       />
   );
 }
