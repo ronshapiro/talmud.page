@@ -332,8 +332,10 @@ class Amud extends Component {
 function RootHooks() {
   useEffect(() => {
     document.getElementById("darkModeCss").disabled = localStorage.darkMode !== "true";
-    document.getElementById("theme-color").content = (
-      getComputedStyle(document.body).getPropertyValue('--background-color'));
+    for (const id of ["theme-color", "theme-color-dark-mode"]) {
+      document.getElementById(id).content = (
+        getComputedStyle(document.body).getPropertyValue('--background-color'));
+    }
   });
   return null;
 }
