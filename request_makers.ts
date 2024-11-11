@@ -1,7 +1,7 @@
 import {parse as urlParse} from "url";
 import {fetch} from "./fetch";
 import {readUtf8Async} from "./files";
-import {steinsaltzApiUrl} from "./steinsaltz";
+import {steinsaltzApiUrl, steinsaltzImageUrl} from "./steinsaltz";
 import {writeJson} from "./util/json_files";
 
 export abstract class RequestMaker {
@@ -34,6 +34,10 @@ export class RealRequestMaker extends RequestMaker {
     return fetch(steinsaltzApiUrl(masechet, daf), STEINSALTZ_OPTIONS)
       .then(x => x.json())
       .then(json => (json.error ? Promise.reject(json) : Promise.resolve(json)));
+  }
+
+  makeSteinsaltzImageRequest(id: string, filename: string): Promise<any> {
+    return fetch(steinsaltzImageUrl(id, filename), STEINSALTZ_OPTIONS).then(x => x.blob());
   }
 }
 

@@ -46,6 +46,24 @@ function commentaryHighlightIndicators(commentary: Commentary): React.ReactEleme
   return result;
 }
 
+function textTypeHasImage(text: sefaria.TextType): boolean {
+  if (!text) return false;
+  if (typeof text === "string") return text.includes("<img");
+  return text.some(x => textTypeHasImage(x));
+}
+
+function hasImage(commentary: Commentary): boolean {
+  for (const comment of commentary.comments) {
+    if (textTypeHasImage(comment.he) || textTypeHasImage(comment.en)) {
+      return true;
+    }
+    if (Object.values(comment.commentary || {}).some(hasImage)) {
+      return true;
+    }
+  }
+  return false;
+}
+
 function InternalTableRow(
   {hebrew, extraClasses, id}: {
     hebrew: React.ReactElement;
@@ -247,12 +265,12 @@ export function CommentariesBlock({
         onKeyUp={onKeyUp}>
         {commentaryKind.hebrewName}
       </a>);
+    const highlightColors = !isShowing && commentaryHighlightIndicators(commentary);
+    const imageIndicator = !isShowing && hasImage(commentary) && "📸 🖼️";
     return (
       // Wrap in a span so that the commentary colors don't get their own flex spacing separate from
       // the button.
-      <span key={commentaryKind.englishName}>
-        {button} {!isShowing && commentaryHighlightIndicators(commentary)}
-      </span>
+      <span key={commentaryKind.englishName}>{button} {highlightColors} {imageIndicator}</span>
     );
   };
 

@@ -85,7 +85,11 @@ import {SefariaLinkSanitizer} from "./source_formatting/sefaria_link_sanitizer";
 import {SefariaTopicCollector} from "./source_formatting/sefaria_topic_collector";
 import {ShulchanArukhHeaderRemover} from "./source_formatting/shulchan_arukh_remove_header";
 import {isPehSectionEnding, transformTanakhSpacing} from "./source_formatting/tanakh_spacing";
-import {makeSteinsaltzCommentPairings} from "./steinsaltz";
+import {
+  makeSteinsaltzCommentPairings,
+  getTextWithImages,
+  filterDuplicateImages,
+} from "./steinsaltz";
 import {formatDafInHebrew} from "./talmud";
 import {hasMatchingProperty} from "./util/objects";
 import {checkNotUndefined} from "./js/undefined";
@@ -1393,22 +1397,24 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
       for (const [hebrew, english] of makeSteinsaltzCommentPairings(
         steinsaltz.notesHeb, steinsaltz.notesEng)) {
         i += 1;
+        const titles = {
+          english: english ? english.titleEng : "",
+          // the hebrew note only supplies the "title" field, and it's not vocalized.
+          hebrew: english ? english.titleHeb : hebrew!.title,
+        };
+        if (!hebrew) {
+          titles.english += ` (${titles.hebrew})`;
+          titles.hebrew = "";
+        }
+        filterDuplicateImages(hebrew, english);
         segment.commentary.addComment(new Comment(
           "Steinsaltz In-Depth",
-          hebrew ? hebrew.text : "",
-          english ? english.text : "",
+          getTextWithImages(hebrew, this.logger),
+          getTextWithImages(english, this.logger),
           `Steinsaltz comment #${i} on ` + segment.ref,
-          english ? english.titleEng : "",
-          // the hebrew note only supplies the "title" field, and it's not vocalized.
-          english ? english.titleHeb : hebrew!.title,
+          titles.english,
+          titles.hebrew,
         ));
-        if (hebrew && hebrew.files.length > 0) {
-          this.logger.error(segment.ref, "heb", hebrew.files);
-        }
-        if (english && english.files.length > 0) {
-          this.logger.error(segment.ref, "eng", english.files);
-        }
-        // TODO: figure out how files are stored
       }
     }
   }

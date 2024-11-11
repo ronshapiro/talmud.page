@@ -143,6 +143,16 @@ app.use((req, res, next) => {
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.get("/stimg/:id/:filename", async (req, res) => {
+  const {id, filename} = req.params;
+  new RealRequestMaker()
+    .makeSteinsaltzImageRequest(id, filename)
+    .then(blob => {
+      res.setHeader("Content-Type", blob.type);
+      blob.stream().pipe(res);
+    });
+});
+
 app.get("/", (req, res) => res.render("homepage.html"));
 app.get("/css/:ignored/:path", (req, res) => sendLazyStaticFile(res, `css/${req.params.path}`));
 

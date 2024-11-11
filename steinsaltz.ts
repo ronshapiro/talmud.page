@@ -2,6 +2,7 @@ import {zip} from "underscore";
 import {books} from "./books";
 import {ListMultimap} from "./multimap";
 import {stripHebrewNonletters} from "./hebrew";
+import {Logger} from "./logger";
 
 /* eslint-disable quote-props */
 const STEINSALTZ_MASECHET_NUMBER = {
@@ -72,10 +73,23 @@ export function steinsaltzApiUrl(masechet: string, daf: string): string {
   );
 }
 
+export function steinsaltzImageUrl(id: string, filename: string): string {
+  return `https://api.steinsaltz.dev/v1/files/image/${id}/${filename}?preview=false`;
+}
+
+interface File {
+  id: number;
+  type: string;
+  filename: string;
+  size: number;
+  captionEng: string | null;
+  captionHeb: string | null;
+}
+
 interface Note {
   text: string;
   paired: boolean;
-  files: any[];
+  files: File[];
 }
 
 interface EnglishNote extends Note {
@@ -85,6 +99,38 @@ interface EnglishNote extends Note {
 interface HebrewNote extends Note {
   title: string;
   type: {id: number, name: string};
+}
+
+export function getTextWithImages(note: Note | undefined, logger: Logger): string {
+  if (!note) return "";
+
+  const text = [];
+  for (const file of note.files) {
+    if (file.type !== "image") {
+      logger.error(file);
+      continue;
+    }
+    const caption = file.captionHeb ?? file.captionEng;
+    text.push(
+      `<img src="/stimg/${file.id}/${file.filename}" alt="${caption}" /><br />`);
+  }
+  text.push(note.text);
+
+  return text.join("");
+}
+
+export function filterDuplicateImages(
+  hebrew: HebrewNote | undefined, english: EnglishNote | undefined): void {
+  if (!hebrew || !english) return;
+  english.files = english.files.filter(englishFile => {
+    for (const hebrewFile of hebrew.files) {
+      if (englishFile.id === hebrewFile.id
+        && englishFile.filename === hebrewFile.filename) {
+        return false;
+      }
+    }
+    return true;
+  });
 }
 
 type HebrewEnglishPair = [HebrewNote | undefined, EnglishNote | undefined];

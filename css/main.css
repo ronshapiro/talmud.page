@@ -695,3 +695,18 @@ h2, .title, .titleHebrew {
 .keybindingSelectedButton {
     background: #0f06;
 }
+
+.steinsaltz-comments img {
+    width: 300px;
+    padding-bottom: 10px;
+}
+
+.steinsaltz-comments .hebrew img {
+    float: left;
+    padding-right: 10px;
+}
+
+.steinsaltz-comments .english img {
+    float: right;
+    padding-left: 10px;
+}
