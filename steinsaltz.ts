@@ -144,12 +144,34 @@ function splitFilter<T>(array: T[], filter: (t: T) => boolean): [T[], T[]] {
   return [positive, negative];
 }
 
+function isHebrewHalacha(note: HebrewNote): boolean {
+  return note.type.id === 8;
+}
+
+function isEnglishHalacha(note: EnglishNote): boolean {
+  return note.text.includes("(Rambam") || note.text.includes("Shulĥan Arukh");
+}
+
+function isHalachaPair(pair: HebrewEnglishPair): boolean {
+  const [hebrew, english] = pair;
+  return (hebrew !== undefined && isHebrewHalacha(hebrew)) || (
+    english !== undefined && isEnglishHalacha(english));
+}
+
+function sortHalachaToEnd(pairs: HebrewEnglishPair[]): HebrewEnglishPair[] {
+  pairs.sort((a, b) => {
+    const aValue = isHalachaPair(a) ? 1 : -1;
+    const bValue = isHalachaPair(b) ? 1 : -1;
+    return aValue - bValue;
+  });
+  return pairs;
+}
+
 function heuristicTiebraking(
   hebrewNotes: HebrewNote[], englishNotes: EnglishNote[],
 ): HebrewEnglishPair[] {
-  const [hebrewHalacha, hebrewNonHalacha] = splitFilter(hebrewNotes, x => x.type.id === 8);
-  const [englishHalacha, englishNonHalacha] = splitFilter(
-    englishNotes, x => x.text.includes("(Rambam") || x.text.includes("Shulĥan Arukh"));
+  const [hebrewHalacha, hebrewNonHalacha] = splitFilter(hebrewNotes, isHebrewHalacha);
+  const [englishHalacha, englishNonHalacha] = splitFilter(englishNotes, isEnglishHalacha);
   for (const array of [hebrewHalacha, hebrewNonHalacha, englishHalacha, englishNonHalacha]) {
     array.sort((a, b) => a.text.length - b.text.length);
   }
@@ -218,5 +240,5 @@ export function makeSteinsaltzCommentPairings(
       result.push(...(zip([], groupedEnglishNotes) as HebrewEnglishPair[]));
     }
   }
-  return pairUnpaired(result);
+  return sortHalachaToEnd(pairUnpaired(result));
 }
