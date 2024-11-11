@@ -1195,6 +1195,9 @@ export abstract class AbstractApiRequestHandler {
     }
     const name = link.collectiveTitle.en;
     for (const kind of this.applicableCommentaries) {
+      if (kind.shouldHaveIndexedBook && !(name in books.byCanonicalName)) {
+        continue;
+      }
       if (name === kind.englishName
         || hasMatchingProperty(link, kind, "category")
         || hasMatchingProperty(link, kind, "type")

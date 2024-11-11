@@ -260,7 +260,12 @@ class MishnaMasechet extends Book {
     super({
       canonicalName: params.canonicalName,
       hebrewName: params.hebrewName,
-      aliases: params.aliases ?? [],
+      aliases: (params.aliases ?? []).flatMap(alias => {
+        if (alias.startsWith("Mishnah ")) {
+          return [alias, alias.replace("Mishnah ", "Mishna ")];
+        }
+        return [alias];
+      }).concat([params.canonicalName.replace("Mishnah ", "Mishna ")]),
       start: "1",
       end: params.numChapters.toString(),
       sections: chapterSections(params.numChapters),

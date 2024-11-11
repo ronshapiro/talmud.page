@@ -12,6 +12,7 @@ export interface CommentaryType {
   ignoreIfNotTypeLevel?: true;
   nestedRefSpacer?: string;
   renderCommentsAsNestedCommentaries?: true;
+  shouldHaveIndexedBook?: true;
 }
 
 export const ALL_COMMENTARIES: CommentaryType[] = [
@@ -41,6 +42,7 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     hebrewName: 'תנ"ך',
     className: "psukim",
     showTitle: true,
+    shouldHaveIndexedBook: true,
   },
   {
     englishName: "Referenced Mishna",
@@ -54,6 +56,7 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     hebrewName: "משנה",
     className: "mishna",
     showTitle: true,
+    shouldHaveIndexedBook: true,
   },
   {
     englishName: "Tosefta",
@@ -156,6 +159,16 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     englishName: "Gilyon HaShas",
     hebrewName: 'גליון הש"ס',
     className: "gilyon-hashas",
+  },
+  {
+    englishName: "Bartenura",
+    hebrewName: "ברטנורא",
+    className: "bartenura",
+  },
+  {
+    englishName: "Rambam",
+    hebrewName: 'רמב"ם',
+    className: "rambam",
   },
   {
     englishName: "Shulchan Arukh",
