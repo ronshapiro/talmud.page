@@ -1,9 +1,10 @@
 import {WeightBasedLruCache} from "../cache";
+import {NoopLogger} from "../logger";
 
 const newCache = (size: number) => {
   let time = 0;
   const timer = () => time++;
-  return new WeightBasedLruCache<string>(size, x => x.length, timer);
+  return new WeightBasedLruCache<string>(size, x => x.length, timer, new NoopLogger());
 };
 
 test("get and put", () => {

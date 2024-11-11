@@ -1,5 +1,6 @@
 import {Heap} from "heap-js";
 import {checkNotUndefined} from "./js/undefined";
+import {Logger, ConsoleLogger} from "./logger";
 
 class Value<T> {
   constructor(
@@ -25,6 +26,7 @@ export class WeightBasedLruCache<T> {
     private readonly maxSize: number,
     private readonly weighingFunction: (t: T) => number,
     private readonly getTime = () => Date.now(),
+    private readonly logger: Logger = new ConsoleLogger(),
   ) {
     if (this.maxSize <= 0) {
       throw new Error(`maxSize must be positive: ${this.maxSize}`);
@@ -67,7 +69,7 @@ export class WeightBasedLruCache<T> {
   private expireOldest() {
     const oldest = checkNotUndefined(this.lruHeap.pop(), "oldest");
     // eslint-disable-next-line no-console
-    console.log(`Expiring ${oldest.key} from the cache`);
+    this.logger.debug(`Expiring ${oldest.key} from the cache`);
     delete this.ttls[oldest.key];
     this.currentSize -= oldest.weight;
   }
