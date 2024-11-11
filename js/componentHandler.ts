@@ -1,5 +1,6 @@
 interface ComponentHandler {
   upgradeElement(_el: HTMLElement): void;
+  upgradeAllRegistered(): void;
 }
 
 declare const componentHandler: ComponentHandler;
@@ -8,5 +9,9 @@ declare const componentHandler: ComponentHandler;
 export default {
   upgradeElement(el: HTMLElement): void {
     return componentHandler.upgradeElement(el);
+  },
+
+  upgradeAllRegistered(): void {
+    componentHandler.upgradeAllRegistered();
   },
 };

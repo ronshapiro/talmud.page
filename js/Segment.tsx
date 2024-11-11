@@ -8,7 +8,7 @@ import {Section} from "../apiTypes";
 
 const {useState} = React;
 
-interface UiSegment extends Section {
+export interface UiSegment extends Section {
   uuid: string;
 }
 
@@ -17,7 +17,7 @@ interface Props {
   segmentLabel: string;
   toggleMerging: (uuid: string) => void;
   isExpanded: boolean;
-  lastUnexpandedUuid: string;
+  lastUnexpandedUuid: string | undefined;
 }
 
 export function Segment({

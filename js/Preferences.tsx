@@ -82,7 +82,7 @@ interface SlideRendererParams {
   key: any;
 }
 
-export function Preferences({rerender}: PreferencesViewParams): React.ReactElement[] {
+export function Preferences({rerender}: PreferencesViewParams): React.ReactElement {
   const options = [
     <PreferenceSection
       title="Dark Mode"
@@ -263,5 +263,5 @@ export function Preferences({rerender}: PreferencesViewParams): React.ReactEleme
       </div>,
     );
   }
-  return elements;
+  return <>{elements}</>;
 }
