@@ -340,6 +340,10 @@ function TableRow(props: TableRowProps): React.ReactElement {
       return {shouldWrap: false, englishLineClampLines: 1000000};
     }
 
+    if (classes.includes("jastrow")) {
+      return {shouldWrap: false, englishLineClampLines: 3};
+    }
+
     applyHiddenNode(hebrew, hiddenHost.hebrew);
     applyHiddenNode(english, hiddenHost.english);
 
@@ -368,12 +372,12 @@ function TableRow(props: TableRowProps): React.ReactElement {
     $(context.hiddenHost).width(), // recalculate only when there are changes in width
   ]);
 
-  const cellClasses = () => {
+  const cellClasses = (() => {
     if ((isEmptyText(hebrew) || isEmptyText(english)) && !overrideFullRow) {
       return ["fullRow"];
     }
     return [];
-  };
+  })();
 
   const cells = [];
   if (!isEmptyText(hebrew)) {
@@ -386,7 +390,7 @@ function TableRow(props: TableRowProps): React.ReactElement {
       <HebrewCell
         key="hebrew"
         text={contents}
-        classes={cellClasses()}
+        classes={cellClasses}
         hebrewDoubleClickListener={hebrewDoubleClickListener}
         isEnglishExpanded={isEnglishExpanded}
         shouldWrap={shouldWrap}
@@ -394,14 +398,19 @@ function TableRow(props: TableRowProps): React.ReactElement {
   }
   cells.push(<div className="text-selection-divider" key="text-selection-divider" />);
   if (!isEmptyText(english)) {
-    const toggleEnglishExpanded = () => setIsEnglishExpanded(previousState => !previousState);
+    const [overrideExpandedEnglish, toggleEnglishExpanded] = (() => {
+      if (cellClasses.includes("fullRow") && !classes.includes("jastrow")) {
+        return [true, () => {}];
+      }
+      return [isEnglishExpanded, () => setIsEnglishExpanded(previousState => !previousState)];
+    })();
     cells.push(
       <EnglishCell
         key="english"
         text={english}
-        classes={cellClasses()}
+        classes={cellClasses}
         toggleEnglishExpanded={toggleEnglishExpanded}
-        isEnglishExpanded={isEnglishExpanded}
+        isEnglishExpanded={overrideExpandedEnglish}
         lineClampLines={englishLineClampLines}
         shouldWrap={shouldWrap}
         />);
