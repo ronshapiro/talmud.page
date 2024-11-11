@@ -231,6 +231,7 @@ class Amud extends Component {
         <span className={className} key="title" ref={this.headerRef}>
           {title}
           {localStorage.showPageMetadata === "true"
+           && !amudData.loading
            && <> <PageTitleMetadata segments={amudData.sections} /></>}
         </span>
         {removeSectionButton}
