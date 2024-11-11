@@ -1,8 +1,10 @@
 import {Attributes, HtmlVisitor} from "./html_visitor";
 
 const IGNORED_ENTITY_SLUGS = new Set([
+  "eilam",
   "israel",
   "jewish-people",
+  "madai",
 ]);
 
 export class SefariaTopicCollector extends HtmlVisitor {
