@@ -114,9 +114,9 @@ function showMoreCommentaryKind(showAll: boolean): CommentaryType {
 
 interface CommentariesBlockProps {
   commentaries: Record<string, Commentary>;
-  getOrdering: (sectionLabel: string) => string[];
-  toggleShowing: (sectionLabel: string, className: string) => boolean;
-  sectionLabel: string;
+  getOrdering: (segmentLabel: string) => string[];
+  toggleShowing: (segmentLabel: string, className: string) => boolean;
+  segmentLabel: string;
   syntheticClassName?: string;
   syntheticCommentaryKinds?: Record<string, CommentaryType>;
 }
@@ -125,7 +125,7 @@ export function CommentariesBlock({
   commentaries,
   getOrdering,
   toggleShowing,
-  sectionLabel,
+  segmentLabel,
   syntheticClassName,
   syntheticCommentaryKinds,
 }: CommentariesBlockProps): React.ReactElement | null {
@@ -160,7 +160,7 @@ export function CommentariesBlock({
     if (DEBUG_EXPAND_ALL_COMMENTARIES_BY_DEFAULT) {
       setTimeout(() => {
         forEachCommentary((_, commentaryKind) => {
-          toggleShowing(sectionLabel, commentaryKind.className);
+          toggleShowing(segmentLabel, commentaryKind.className);
         });
       }, 100);
     }
@@ -176,7 +176,7 @@ export function CommentariesBlock({
       commentaries={props.commentaries}
       getOrdering={getOrdering}
       toggleShowing={toggleShowing}
-      sectionLabel={props.sectionLabel}
+      segmentLabel={props.segmentLabel}
       syntheticClassName={props.syntheticClassName}
       syntheticCommentaryKinds={props.syntheticCommentaryKinds}
       />;
@@ -194,12 +194,12 @@ export function CommentariesBlock({
       kinds[kind.className] = kind;
     }
 
-    const nestedSectionLabel = `${sectionLabel}.<inner>.${commentaryClassName}`;
+    const nestedSegmentLabel = `${segmentLabel}.<inner>.${commentaryClassName}`;
     return (
       <NestedCommentariesBlock
         commentaries={commentariesByComment}
-        sectionLabel={nestedSectionLabel}
-        key={nestedSectionLabel}
+        segmentLabel={nestedSegmentLabel}
+        key={nestedSegmentLabel}
         syntheticClassName={commentaryClassName}
         syntheticCommentaryKinds={kinds}
         />);
@@ -231,10 +231,10 @@ export function CommentariesBlock({
         setShowAll(previous => !previous);
         return;
       }
-      const newValue = toggleShowing(sectionLabel, commentaryKind.className);
+      const newValue = toggleShowing(segmentLabel, commentaryKind.className);
       gtag("event", newValue ? "commentary_viewed" : "commentary_hidden", {
         commentary: commentaryKind.englishName,
-        section: sectionLabel,
+        section: segmentLabel,
       });
     };
     const onKeyUp = (event?: React.KeyboardEvent) => {
@@ -250,7 +250,7 @@ export function CommentariesBlock({
       return element;
     };
 
-    const id = commentaryKind.className + "__" + sectionLabel;
+    const id = commentaryKind.className + "__" + segmentLabel;
     const button = applyButtonToFocusRef(
       // eslint-disable-next-line jsx-a11y/anchor-is-valid
       <a
@@ -276,7 +276,7 @@ export function CommentariesBlock({
 
   const renderShowButtons = () => {
     const commentariesToShow: [Commentary, CommentaryType][] = [];
-    const openCommentaries = new Set(getOrdering(sectionLabel));
+    const openCommentaries = new Set(getOrdering(segmentLabel));
     forEachCommentary((commentary, commentaryKind) => {
       if (!openCommentaries.has(commentaryKind.className)) {
         commentariesToShow.push([commentary, commentaryKind]);
@@ -303,7 +303,7 @@ export function CommentariesBlock({
 
     return (
       <InternalTableRow
-        id={`${sectionLabel} show buttons`}
+        id={`${segmentLabel} show buttons`}
         key="show buttons"
         hebrew={<>{buttons.filter(x => x)}</>}
         extraClasses={["show-buttons"]} />
@@ -313,7 +313,7 @@ export function CommentariesBlock({
   function* getOpenCommentariesInOrder(
     commentaryKindsByClassName: Record<string, CommentaryType>,
   ): Generator<[Commentary, CommentaryType]> {
-    for (const commentaryClassName of getOrdering(sectionLabel)) {
+    for (const commentaryClassName of getOrdering(segmentLabel)) {
       const commentaryKind = commentaryKindsByClassName[commentaryClassName];
       let commentary = commentaries[commentaryKind.englishName];
       if (!commentary) {
@@ -330,7 +330,7 @@ export function CommentariesBlock({
           if (commentaryClassName === "personal-notes") continue;
 
           throw new Error(
-            `Could not find ${commentaryClassName} commentary in ${sectionLabel}
+            `Could not find ${commentaryClassName} commentary in ${segmentLabel}
             ${Object.keys(commentaries).join(", ")}`);
         }
       }
@@ -346,7 +346,7 @@ export function CommentariesBlock({
     kindsByClassName)) {
     output.push(
       <InternalTableRow
-        id={`${sectionLabel} ${commentaryKind.englishName}`}
+        id={`${segmentLabel} ${commentaryKind.englishName}`}
         key={commentaryKind.englishName + " close button"}
         hebrew={renderButton(commentaryKind, true, commentary)!} />);
 
@@ -354,13 +354,13 @@ export function CommentariesBlock({
       output.push(renderCommentsAsNestedCommentaries(commentary, commentaryKind.className));
     } else {
       for (const comment of dedupeComments(commentary.comments)) {
-        const nestedSectionLabel = `${sectionLabel}.<nested>.${comment.ref}`;
+        const nestedSegmentLabel = `${segmentLabel}.<nested>.${comment.ref}`;
         output.push(
           <IndividualComment key={comment.ref} comment={comment} commentaryKind={commentaryKind} />,
           <NestedCommentariesBlock
             commentaries={comment.commentary || {}}
-            sectionLabel={nestedSectionLabel}
-            key={nestedSectionLabel}
+            segmentLabel={nestedSegmentLabel}
+            key={nestedSegmentLabel}
             />);
       }
     }
@@ -373,7 +373,7 @@ CommentariesBlock.propTypes = {
   commentaries: PropTypes.object,
   getOrdering: PropTypes.func,
   toggleShowing: PropTypes.func,
-  sectionLabel: PropTypes.string,
+  segmentLabel: PropTypes.string,
   syntheticClassName: PropTypes.string,
   syntheticCommentaryKinds: PropTypes.object,
 };

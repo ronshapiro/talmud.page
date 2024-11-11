@@ -61,7 +61,7 @@ interface CellTextProps {
   sefariaRef?: string;
   languageClass: string;
   classes?: string[];
-  sectionIdForHighlighting?: string;
+  segmentIdForHighlighting?: string;
 }
 
 /**
@@ -74,7 +74,7 @@ export function CellText({
   sefariaRef,
   languageClass,
   classes,
-  sectionIdForHighlighting,
+  segmentIdForHighlighting,
 }: CellTextProps): React.ReactElement {
   const context = useConfiguration();
   const ref = useHtmlRef<HTMLSpanElement>();
@@ -96,15 +96,15 @@ export function CellText({
   );
   /* eslint-enable react/no-danger */
 
-  if (sectionIdForHighlighting === undefined) {
+  if (segmentIdForHighlighting === undefined) {
     return cellText;
   }
 
   return (
     <SwipeableBackground
       inline
-      initiallyOn={context.highlightedIds.has(sectionIdForHighlighting)}
-      onChange={(newState) => context.toggleHighlightedId(newState, sectionIdForHighlighting)}
+      initiallyOn={context.highlightedIds.has(segmentIdForHighlighting)}
+      onChange={(newState) => context.toggleHighlightedId(newState, segmentIdForHighlighting)}
     >
       {cellText}
     </SwipeableBackground>
@@ -117,7 +117,7 @@ CellText.propTypes = {
   sefariaRef: PropTypes.string,
   languageClass: PropTypes.string,
   classes: PropTypes.arrayOf(PropTypes.string),
-  sectionIdForHighlighting: PropTypes.string,
+  segmentIdForHighlighting: PropTypes.string,
 };
 
 interface CloseButtonProps {
@@ -299,7 +299,7 @@ interface TableRowProps {
   overrideFullRow?: boolean;
   expandEnglishByDefault?: boolean;
   onUnexpand?: () => void;
-  sectionIdForHighlighting?: string;
+  segmentIdForHighlighting?: string;
 }
 
 function TableRow(props: TableRowProps): React.ReactElement {
@@ -313,7 +313,7 @@ function TableRow(props: TableRowProps): React.ReactElement {
     link,
     expandEnglishByDefault,
     onUnexpand,
-    sectionIdForHighlighting,
+    segmentIdForHighlighting,
   } = props;
   const [isEnglishExpanded, setIsEnglishExpanded] = useState(expandEnglishByDefault ?? false);
   const context = useConfiguration();
@@ -433,11 +433,11 @@ function TableRow(props: TableRowProps): React.ReactElement {
     </div>
   );
 
-  if (hiddenHost && sectionIdForHighlighting) {
+  if (hiddenHost && segmentIdForHighlighting) {
     return (
       <SwipeableBackground
-        initiallyOn={context.highlightedIds.has(sectionIdForHighlighting)}
-        onChange={(newState) => context.toggleHighlightedId(newState, sectionIdForHighlighting)}
+        initiallyOn={context.highlightedIds.has(segmentIdForHighlighting)}
+        onChange={(newState) => context.toggleHighlightedId(newState, segmentIdForHighlighting)}
       >
         {row}
       </SwipeableBackground>
@@ -456,7 +456,7 @@ TableRow.propTypes = {
   overrideFullRow: PropTypes.bool,
   expandEnglishByDefault: PropTypes.bool,
   onUnexpand: PropTypes.func,
-  sectionIdForHighlighting: PropTypes.string,
+  segmentIdForHighlighting: PropTypes.string,
 };
 
 export default TableRow;

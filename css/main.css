@@ -389,7 +389,7 @@ h2, .title, .titleHebrew {
    */
     overflow: hidden;
 }
-.section-container::after {
+.segment-container::after {
     content: "";
     clear: both;
     display: block;
@@ -464,7 +464,7 @@ h2, .title, .titleHebrew {
     color: var(--text-color) !important;
 }
 
-.section-container:has(> .hadran) {
+.segment-container:has(> .hadran) {
     padding-bottom: 80px;
 }
 

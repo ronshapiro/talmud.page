@@ -3,7 +3,6 @@ import React, {
   Component,
   createRef,
   useEffect,
-  useState,
 } from "react";
 import {render} from 'react-dom';
 import PropTypes from 'prop-types';
@@ -13,7 +12,6 @@ import {addDriveComments} from "./addDriveComments.ts";
 import {amudMetadata} from "./amud.ts";
 import {CorrectionModal} from "./CorrectionModal.tsx";
 import {CommentEditorModal} from "./CommentEditorModal.tsx";
-import {CommentariesBlock} from "./CommentariesBlock.tsx";
 import {FeedbackView} from "./Feedback.tsx";
 import {hebrewSearchRegex} from "../hebrew";
 import {$, addJqueryExtensionMethods} from "./jquery";
@@ -23,170 +21,16 @@ import {
   PreviousButton,
 } from "./NavigationButtons.tsx";
 import {PageTitleMetadata} from "./PageTitleMetadata.tsx";
-import TableRow, {CellText} from "./TableRow.tsx";
 import {
   ConfigurationContext,
-  useConfiguration,
   HiddenHostContext,
-  useHiddenHost,
 } from "./context.ts";
-import {mergeCommentaries} from "./mergeCommentaries.ts";
 import {Preferences} from "./Preferences.tsx";
 import {SnackbarHost} from "./SnackbarReact.tsx";
 import {Keybindings} from "./Keybindings";
+import {Segment} from "./Segment.tsx";
 
 addJqueryExtensionMethods();
-
-function Section({sections, sectionLabel, toggleMerging, isExpanded, lastUnexpandedUuid}) {
-  const context = useConfiguration();
-  const hiddenHost = useHiddenHost();
-  // if this is the hidden host, populate the comments as open always
-  const [showingState, setShowingState] = useState(() => {
-    const state = {};
-    if (isExpanded && context.expandTranslationOnMergedSectionExpansion) {
-      state[sectionLabel] = ["translation"];
-    }
-    if (hiddenHost) {
-      return state;
-    }
-    state[sectionLabel] = ["rashi"];
-    return state;
-  });
-  const toggleShowing = (prependNew, toggledSectionLabel, commentaryName) => {
-    // TODO: reducer?
-    let alreadyIncludes;
-    setShowingState(previousState => {
-      const newState = {...previousState};
-
-      if (!(toggledSectionLabel in newState)) {
-        newState[toggledSectionLabel] = [];
-      }
-      const sectionOrdering = newState[toggledSectionLabel];
-      alreadyIncludes = sectionOrdering.includes(commentaryName);
-      if (alreadyIncludes) {
-        newState[toggledSectionLabel] = sectionOrdering.filter(x => x !== commentaryName);
-      } else if (prependNew) {
-        sectionOrdering.unshift(commentaryName);
-      } else {
-        sectionOrdering.push(commentaryName);
-      }
-      return newState;
-    });
-
-    return !alreadyIncludes;
-  };
-
-  const sectionContents = [];
-  const hebrewDoubleClickListener = () => {
-    for (const section of sections) {
-      if (section.commentary.Translation || section.commentary.Steinsaltz) {
-        toggleShowing(true, sectionLabel, "translation");
-        break;
-      }
-    }
-  };
-
-  const gemaraContainerClasses = ["gemara-container"];
-  for (const section of sections) {
-    if (section.hadran) {
-      gemaraContainerClasses.push("hadran");
-      break;
-    }
-  }
-
-  const hebrews = [];
-  const englishes = [];
-  for (const section of sections) {
-    hebrews.push(section.he);
-    if (context.translationOption() === "english-side-by-side") {
-      englishes.push(section.en);
-    }
-  }
-
-  const isStandaloneSegment = sections.length === 1;
-  const createText = (texts, languageClass) => {
-    if (texts.length === 0) {
-      return "";
-    }
-    const elements = [];
-    for (let i = 0; i < texts.length; i++) {
-      const {ref, uuid} = sections[i];
-      const onDoubleClick = texts.length !== 1 ? () => toggleMerging(uuid) : undefined;
-      const classes = lastUnexpandedUuid === uuid ? ["fadeInBackground"] : [];
-      elements.push(
-        // TODO: consider another gesture so that the double clicking is not overloaded.
-        <CellText
-          text={texts[i]}
-          languageClass={languageClass}
-          key={`section-part-${i}`}
-          onDoubleClick={onDoubleClick}
-          classes={classes}
-          sefariaRef={ref}
-          sectionIdForHighlighting={isStandaloneSegment ? undefined : ref} />);
-      if (i + 1 < texts.length) {
-        elements.push(<span key={`section-part-${i}-space`}> </span>);
-      }
-    }
-    return <span>{elements}</span>;
-  };
-
-  sectionContents.push(
-    <TableRow
-      key="gemara"
-      id={`${sectionLabel}-gemara`}
-      hebrew={createText(hebrews, "hebrew-ref-text")}
-      hebrewDoubleClickListener={hebrews.length === 1 ? hebrewDoubleClickListener : undefined}
-      english={createText(englishes, "english-ref-text")}
-      expandEnglishByDefault={context.expandEnglishByDefault()}
-      classes={gemaraContainerClasses}
-      onUnexpand={isExpanded ? () => toggleMerging(sections[0].uuid) : undefined}
-      sectionIdForHighlighting={isStandaloneSegment ? sections[0].ref : undefined}
-    />,
-  );
-
-  const commentary = mergeCommentaries(sections);
-  if (commentary) {
-    const commentarySection = (
-      <CommentariesBlock
-        key="CommentariesBlock"
-        commentaries={commentary}
-        getOrdering={commentSectionLabel => showingState[commentSectionLabel] || []}
-        toggleShowing={(...args) => toggleShowing(false, ...args)}
-        sectionLabel={sectionLabel} />
-    );
-
-
-    if (hiddenHost) {
-      // hiddenHost will be undefined for the section inside the actual hidden host
-      sectionContents.push(
-        <HiddenHostContext.Provider value={hiddenHost.forComments} key="commentarySection">
-          {[commentarySection]}
-        </HiddenHostContext.Provider>);
-    } else {
-      sectionContents.push(commentarySection);
-    }
-  }
-
-  return (
-    // The sefaria-ref here is used for determining what the "parent" of the selected ref is, so for
-    // the case of a commentary, the comment can be placed accordingly in the Google doc. If
-    // `sections` has more than 1 element, the ref that is used could be the first ref or the last
-    // ref. The last seems more logical, since the ordering of comments from merged sections should
-    // be placed after every containing ref. But this isn't absolute and could result in some
-    // weirdness.
-    <div id={sectionLabel} className="section-container" sefaria-ref={sections.at(-1).ref}>
-      {sectionContents}
-    </div>
-  );
-}
-
-Section.propTypes = {
-  sections: PropTypes.arrayOf(PropTypes.object),
-  sectionLabel: PropTypes.string,
-  toggleMerging: PropTypes.func,
-  isExpanded: PropTypes.bool,
-  lastUnexpandedUuid: PropTypes.string,
-};
 
 class Amud extends Component {
   static propTypes = {
@@ -302,10 +146,10 @@ class Amud extends Component {
           });
         };
         output.push(
-          <Section
+          <Segment
             key={mergedSections[0].uuid + "+" + (mergedSections.length - 1)}
-            sections={mergedSections}
-            sectionLabel={sectionLabel}
+            segments={mergedSections}
+            segmentLabel={sectionLabel}
             toggleMerging={toggleMerging}
             isExpanded={this.state.expandMergedRef[mergedSections[0].uuid]}
             lastUnexpandedUuid={this.state.lastUnexpandedUuid}
