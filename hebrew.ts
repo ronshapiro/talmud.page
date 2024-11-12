@@ -75,7 +75,8 @@ export function hebrewSearchRegex(text: string, asRegex: boolean): RegExp | unde
   const escaped = asRegex ? text : escapeRegex(text);
   const regexText = stripHebrewNonletters(escaped).replace(
     /([א-ת])/g,
-    (_, group) => group + HEBREW_NON_LETTERS + "*");
+    (_, group) => group + HEBREW_NON_LETTERS + "*")
+    .split(" ").join("[- —–,.:;?!]+"); // Attempt to ignore punctuation
   try {
     return new RegExp(regexText, "gi");
   } catch {
