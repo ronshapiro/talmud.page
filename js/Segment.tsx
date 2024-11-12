@@ -32,7 +32,7 @@ export function Segment({
     if (isExpanded && context.expandTranslationOnMergedSegmentExpansion) {
       state[segmentLabel] = ["translation"];
     }
-    if (hiddenHost) {
+    if (!context.isFake) {
       return state;
     }
     state[segmentLabel] = ["rashi"];
@@ -142,11 +142,11 @@ export function Segment({
         segmentLabel={segmentLabel} />
     );
 
-    if (hiddenHost) {
+    if (!context.isFake) {
       // hiddenHost will be undefined for the segment inside the actual hidden host
       segmentContents.push(
         <HiddenHostContext.Provider value={hiddenHost.forComments} key="commentaryBlock">
-          {[commentaryBlock]}
+          {commentaryBlock}
         </HiddenHostContext.Provider>);
     } else {
       segmentContents.push(commentaryBlock);

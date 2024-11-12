@@ -18,8 +18,68 @@ import {Section as Segment, Commentary} from "../apiTypes";
 import {UiPage} from "./Page";
 import {DriveClient} from "./google_drive/client";
 import {NavigationExtension} from "./NavigationExtension";
+import {useHtmlRef} from "./hooks";
+
+const {useEffect} = React;
 
 addJqueryExtensionMethods();
+
+function HiddenHost({
+  context,
+  hiddenHostContext,
+  navigationExtension,
+}: {
+  context: any,
+  hiddenHostContext: any,
+  navigationExtension: NavigationExtension,
+}): React.ReactElement {
+  const hiddenData: UiPage[] = [{
+    id: "hidden",
+    title: "hidden",
+    titleHebrew: "hidden",
+    sections: [{
+      en: "H",
+      he: "H",
+      ref: "hidden",
+      uuid: "hidden-uuid",
+      commentary: {
+        Rashi: {
+          comments: [{
+            en: "R",
+            he: "ר",
+            ref: "rashi-hidden",
+            sourceRef: "rashi-ref",
+            sourceHeRef: "rashi-ref",
+          }],
+        },
+      },
+    }],
+  }];
+
+  const ref = useHtmlRef<HTMLDivElement>();
+  useEffect(() => {
+    const $hiddenHost = $(ref.current);
+    Object.assign(hiddenHostContext, {
+      hebrew: $hiddenHost.find(".gemara-container .hebrew"),
+      english: $hiddenHost.find(".gemara-container .english"),
+      forComments: {
+        hebrew: $hiddenHost.find(".commentaryRow[sefaria-ref] .hebrew"),
+        english: $hiddenHost.find(".commentaryRow[sefaria-ref] .english"),
+      },
+    });
+  }, [ref.current]);
+
+  return (
+    <div className="hidden-host" ref={ref}>
+      <ConfigurationContext.Provider value={context}>
+        <Root
+          allAmudim={() => hiddenData}
+          navigationExtension={navigationExtension}
+          isFake />
+      </ConfigurationContext.Provider>
+    </div>
+  );
+}
 
 function indexCommentaryTypesByClassName(
   commentaryTypes: CommentaryType[]): Record<string, CommentaryType> {
@@ -123,19 +183,12 @@ export class Renderer {
   }
 
   register(divId: string): void {
-    const host = document.getElementById(divId)!;
-    const hiddenHost = document.createElement("div");
-    hiddenHost.id = `${divId}-hidden`;
-    hiddenHost.className = "hidden-host";
-    host.parentNode!.insertBefore(hiddenHost, host);
-
     const context = {
       translationOption: this.translationOption,
       commentaryTypes: this.commentaryTypes,
       commentaryTypesByClassName: indexCommentaryTypesByClassName(this.commentaryTypes),
       wrapTranslations: this.wrapTranslations,
       expandEnglishByDefault: this.expandEnglishByDefault,
-      hiddenHost,
       ignoredSectionRefs: (id: string) => this.ignoredSectionRefs(id),
       expandTranslationOnMergedSectionExpansion: this.expandTranslationOnMergedSectionExpansion,
       compactLayout: () => this.allowCompactLayout && localStorage.layoutOption === "compact",
@@ -157,67 +210,34 @@ export class Renderer {
       searchQueryRegex: undefined,
     };
 
-    const hiddenData: UiPage[] = [{
-      id: hiddenHost.id,
-      title: "hidden",
-      titleHebrew: "hidden",
-      sections: [{
-        en: "H",
-        he: "H",
-        ref: "hidden",
-        uuid: "hidden-uuid",
-        commentary: {
-          Rashi: {
-            comments: [{
-              en: "R",
-              he: "ר",
-              ref: "rashi-hidden",
-              sourceRef: "rashi-ref",
-              sourceHeRef: "rashi-ref",
-            }],
-          },
-        },
-      }],
-    }];
-
     const contextForHiddenHostRendering = {
       ...context,
       translationOption: () => "english-side-by-side",
       wrapTranslations: () => false,
       isFake: true,
     };
+    const hiddenHostContext = {};
+
     render(
-      <ConfigurationContext.Provider value={contextForHiddenHostRendering}>
-        <Root
-          allAmudim={() => hiddenData}
+      <>
+        <HiddenHost
+          context={contextForHiddenHostRendering}
+          hiddenHostContext={hiddenHostContext}
           navigationExtension={this.navigationExtension}
-          isFake />
-      </ConfigurationContext.Provider>,
-      hiddenHost);
-
-    const $hiddenHost = $(hiddenHost);
-    const hiddenHostContext = {
-      hebrew: $hiddenHost.find(".gemara-container .hebrew"),
-      english: $hiddenHost.find(".gemara-container .english"),
-      forComments: {
-        hebrew: $hiddenHost.find(".commentaryRow[sefaria-ref] .hebrew"),
-        english: $hiddenHost.find(".commentaryRow[sefaria-ref] .english"),
-      },
-    };
-
-    render(
-      <ConfigurationContext.Provider value={context}>
-        <HiddenHostContext.Provider value={hiddenHostContext}>
-          <Root
-            allAmudim={() => this.getAmudim()}
-            setIsReadyRef={this.setIsReady}
-            forceUpdateRef={this.forceUpdateRef}
-            navigationExtension={this.navigationExtension} />
-          <CorrectionModal />
-          <CommentEditorModal />
-        </HiddenHostContext.Provider>
-      </ConfigurationContext.Provider>,
-      host);
+          />
+        <ConfigurationContext.Provider value={context}>
+          <HiddenHostContext.Provider value={hiddenHostContext}>
+            <Root
+              allAmudim={() => this.getAmudim()}
+              setIsReadyRef={this.setIsReady}
+              forceUpdateRef={this.forceUpdateRef}
+              navigationExtension={this.navigationExtension} />
+            <CorrectionModal />
+            <CommentEditorModal />
+          </HiddenHostContext.Provider>
+        </ConfigurationContext.Provider>
+      </>,
+      document.getElementById(divId)!);
 
     $(window).resize(throttle(() => this.forceUpdate(), 500));
 

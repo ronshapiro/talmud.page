@@ -336,7 +336,7 @@ function TableRow(props: TableRowProps): React.ReactElement {
   };
 
   const shouldTranslationWrap = () => {
-    if (!hiddenHost) {
+    if (context.isFake) {
       return {shouldWrap: false, englishLineClampLines: 1000000};
     }
 
@@ -369,7 +369,7 @@ function TableRow(props: TableRowProps): React.ReactElement {
   };
 
   const {shouldWrap, englishLineClampLines} = useMemo(shouldTranslationWrap, [
-    $(context.hiddenHost).width(), // recalculate only when there are changes in width
+    $("#main-contents").width(), // recalculate only when there are changes in width
   ]);
 
   const cellClasses = (() => {
@@ -433,7 +433,7 @@ function TableRow(props: TableRowProps): React.ReactElement {
     </div>
   );
 
-  if (hiddenHost && segmentIdForHighlighting) {
+  if (!context.isFake && segmentIdForHighlighting) {
     return (
       <SwipeableBackground
         initiallyOn={context.highlightedIds.has(segmentIdForHighlighting)}
