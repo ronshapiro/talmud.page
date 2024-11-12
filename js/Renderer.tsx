@@ -199,7 +199,6 @@ export class Renderer {
         // gets booted from the cache, it won't be actually removed here, but if there is a full
         // re-render or refresh, the state could change. That seems probably safe.
         100),
-      forceFullUpdate: () => this.forceUpdate(),
       toggleHighlightedId: (newState: boolean, sectionId: string) => {
         if (newState) {
           context.highlightedIds.add(sectionId);

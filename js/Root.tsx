@@ -94,7 +94,7 @@ export function Root({
       {!isFake && (
         <>
           <SnackbarHost updateSearchQuery={updateSearchQuery} queryCount={queryCount} />
-          <Keybindings />
+          <Keybindings forceUpdate={forceUpdate} />
         </>
       )}
     </>

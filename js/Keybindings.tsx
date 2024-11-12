@@ -12,7 +12,7 @@ function effectCacheKeys(scrolling: Scrolling): any[] {
   return [scrolling.currentMatch, scrolling.currentMatchedView, scrolling.matches];
 }
 
-export function Keybindings(): React.ReactElement {
+export function Keybindings({forceUpdate}: {forceUpdate: () => void}): React.ReactElement {
   const context = useConfiguration();
 
   const rowScrolling = useScrollTo("#results .table-row", {speed: 100});
@@ -25,14 +25,14 @@ export function Keybindings(): React.ReactElement {
     if (condition) {
       buttonsScrolling.clearState();
       scrollToDiffedIndex(diff);
-      context.forceFullUpdate();
+      forceUpdate();
     }
   };
 
   const switchButton = (diff: number) => {
     if (buttonsScrolling.matches > 0) {
       buttonsScrolling.scrollToDiffedIndex(diff);
-      context.forceFullUpdate();
+      forceUpdate();
     }
   };
   let bindings: Record<string, any> = {
@@ -54,7 +54,7 @@ export function Keybindings(): React.ReactElement {
         const newRow = $(newButton).parents(".table-row")[0];
         adjuster(newRow);
         */
-        context.forceFullUpdate();
+        forceUpdate();
       }
     },
     /* eslint-enable quote-props */
