@@ -3,7 +3,7 @@ import {books} from "./books.ts";
 import {getCommentaryTypes} from "./commentaryTypes.ts";
 import {driveClient} from "./google_drive/singleton.ts";
 import {Runner} from "./page_runner.js";
-import {Renderer} from "./rendering.jsx";
+import {Renderer} from "./Renderer.tsx";
 import {intToHebrewNumeral} from "../hebrew.ts";
 
 // Consider merging impl with Mishna?

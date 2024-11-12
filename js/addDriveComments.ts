@@ -1,9 +1,10 @@
 import {zip} from "underscore";
-import {Amud, Section, ApiComment} from "../apiTypes";
+import {Section, ApiComment} from "../apiTypes";
 import {applyHighlight} from "./highlight";
 import {DriveClient} from "./google_drive/client";
 import {toFlatArray} from "../sefariaTextType";
 import {HighlightColor} from "./google_drive/types";
+import {UiPage} from "./Page";
 
 function setPersonalComments(obj: Section | ApiComment, driveClient: DriveClient) {
   const personalNotes = (() => {
@@ -85,7 +86,7 @@ function setAll(obj: Section | ApiComment, driveClient: DriveClient) {
 }
 
 // TODO: tests here would be great
-export function addDriveComments(amudim: Amud[], driveClient: DriveClient | undefined): Amud[] {
+export function addDriveComments(amudim: UiPage[], driveClient: DriveClient | undefined): UiPage[] {
   if (!driveClient) {
     return amudim;
   }

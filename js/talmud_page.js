@@ -1,6 +1,6 @@
 import {books} from "./books.ts";
 import {getCommentaryTypes} from "./commentaryTypes.ts";
-import {Renderer} from "./rendering.jsx";
+import {Renderer} from "./Renderer.tsx";
 import {amudMetadata, computePreviousAmud, computeNextAmud} from "./amud.ts";
 import {driveClient} from "./google_drive/singleton.ts";
 import {Runner} from "./page_runner.js";

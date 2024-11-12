@@ -1,59 +1,77 @@
-import React, {
-  createRef,
-} from "react";
+import * as React from "react";
 import {render} from 'react-dom';
-import _ from "underscore";
+import {throttle} from "underscore";
 import {v4 as newUuid} from "uuid";
-import {addDriveComments} from "./addDriveComments.ts";
-import {amudMetadata} from "./amud.ts";
-import {CorrectionModal} from "./CorrectionModal.tsx";
-import {CommentEditorModal} from "./CommentEditorModal.tsx";
+import {addDriveComments} from "./addDriveComments";
+import {amudMetadata} from "./amud";
+import {CorrectionModal} from "./CorrectionModal";
+import {CommentEditorModal} from "./CommentEditorModal";
 import {$, addJqueryExtensionMethods} from "./jquery";
 import {LocalStorageInt, LocalStorageLru} from "./localStorage";
 import {
   ConfigurationContext,
   HiddenHostContext,
-} from "./context.ts";
-import {Root} from "./Root.tsx";
+} from "./context";
+import {Root} from "./Root";
+import {CommentaryType} from "../commentaries";
+import {Section as Segment, Commentary} from "../apiTypes";
+import {UiPage} from "./Page";
+import {DriveClient} from "./google_drive/client";
+import {NavigationExtension} from "./NavigationExtension";
 
 addJqueryExtensionMethods();
 
-const indexCommentaryTypesByClassName = (commentaryTypes) => {
-  const result = {};
+function indexCommentaryTypesByClassName(
+  commentaryTypes: CommentaryType[]): Record<string, CommentaryType> {
+  const result: Record<string, CommentaryType> = {};
   for (const type of commentaryTypes) {
     result[type.className] = type;
   }
   return result;
-};
+}
+
+class FakeRef<T> {
+  current: T = undefined as any;
+}
+
+interface Options {
+  isTalmud?: boolean;
+  translationOverride?: string;
+  allowCompactLayout?: boolean;
+  expandTranslationOnMergedSectionExpansion?: boolean;
+}
 
 export class Renderer {
-  constructor(commentaryTypes, navigationExtension, options) {
+  allAmudim: Record<string, UiPage> = {};
+  forceUpdateRef = new FakeRef<() => void>();
+  setIsReady = new FakeRef<() => void>();
+  driveClient: DriveClient = undefined as any; // Set externally
+  allowCompactLayout: boolean | undefined;
+  expandTranslationOnMergedSectionExpansion: boolean | undefined;
+  isTalmud: boolean | undefined;
+  wrapTranslations = (): boolean => localStorage.wrapTranslations !== "false";
+  expandEnglishByDefault = (): boolean => localStorage.expandEnglishByDefault === "true";
+  translationOption: () => string;
+
+  constructor(
+    private readonly commentaryTypes: CommentaryType[],
+    readonly navigationExtension: NavigationExtension,
+    options: Options,
+  ) {
     options = options || {};
-    this._commentaryTypes = commentaryTypes;
-    this._isTalmud = options.isTalmud;
-    this._translationOption = () => {
+    this.isTalmud = options.isTalmud;
+    this.translationOption = () => {
       return (
         options.translationOverride
           || localStorage.translationOption
           || "english-side-by-side");
     };
-    this.wrapTranslations = () => localStorage.wrapTranslations !== "false";
-    this.expandEnglishByDefault = () => localStorage.expandEnglishByDefault === "true";
-    this.amudimRef = createRef();
-    this.forceUpdateRef = createRef();
-    this.setIsReady = createRef();
-    this.allAmudim = {};
-    this.navigationExtension = navigationExtension || {
-      hasPrevious: () => false,
-      hasNext: () => false,
-    };
-    options = options || {};
     this.allowCompactLayout = options.allowCompactLayout;
     this.expandTranslationOnMergedSectionExpansion = (
       options.expandTranslationOnMergedSectionExpansion);
   }
 
-  _applyClientSideDataTransformations(amudData) {
+  _applyClientSideDataTransformations(amudData: UiPage): void {
     if (!amudData.sections) {
       amudData.sections = [];
     }
@@ -67,23 +85,26 @@ export class Renderer {
     // TODO: this logic is not dynamic, and therefore can result in some weird states when settings
     // are changed for already-viewed translations. It may be best to just inline this logic to the
     // UI code instead of modifying the data.
-    if (this._translationOption() !== "both") {
+    if (this.translationOption() !== "both") {
       return;
     }
 
     for (const section of amudData.sections) {
       const commentaries = section.commentary;
       // Reminder: Hadran sections have no steinsaltz
-      if (commentaries && commentaries.Steinsaltz) {
+      if (commentaries?.Steinsaltz) {
         section.steinsaltzRetained = true;
         commentaries.Translation = commentaries.Steinsaltz;
         delete commentaries.Steinsaltz;
-      } else if (section.ref.indexOf("Hadran ") === 0 || !this._isTalmud) {
-        commentaries.Translation = {
+      } else if (section.ref.indexOf("Hadran ") === 0 || !this.isTalmud) {
+        if (!section.commentary) section.commentary = {};
+        section.commentary.Translation = {
           comments: [{
             ref: section.ref,
             en: section.en,
             he: "",
+            sourceRef: "",
+            sourceHeRef: "",
           }],
         };
       }
@@ -92,30 +113,30 @@ export class Renderer {
       // commentaries.Steinsaltz property may be already deleted, but we still want to persist the
       // rewriting, i.e. for text highlighting
       if (section.steinsaltzRetained) {
-        commentaries.Translation.comments[0].en = section.en;
+        commentaries!.Translation.comments[0].en = section.en;
       }
     }
   }
 
-  ignoredSectionRefs(_id) {
+  ignoredSectionRefs(_id: string): string[] {
     return [];
   }
 
-  register(divId) {
-    const host = document.getElementById(divId);
+  register(divId: string): void {
+    const host = document.getElementById(divId)!;
     const hiddenHost = document.createElement("div");
     hiddenHost.id = `${divId}-hidden`;
     hiddenHost.className = "hidden-host";
-    host.parentNode.insertBefore(hiddenHost, host);
+    host.parentNode!.insertBefore(hiddenHost, host);
 
     const context = {
-      translationOption: this._translationOption,
-      commentaryTypes: this._commentaryTypes,
-      commentaryTypesByClassName: indexCommentaryTypesByClassName(this._commentaryTypes),
+      translationOption: this.translationOption,
+      commentaryTypes: this.commentaryTypes,
+      commentaryTypesByClassName: indexCommentaryTypesByClassName(this.commentaryTypes),
       wrapTranslations: this.wrapTranslations,
       expandEnglishByDefault: this.expandEnglishByDefault,
       hiddenHost,
-      ignoredSectionRefs: (id) => this.ignoredSectionRefs(id),
+      ignoredSectionRefs: (id: string) => this.ignoredSectionRefs(id),
       expandTranslationOnMergedSectionExpansion: this.expandTranslationOnMergedSectionExpansion,
       compactLayout: () => this.allowCompactLayout && localStorage.layoutOption === "compact",
       highlightedIds: new LocalStorageLru(
@@ -126,7 +147,7 @@ export class Renderer {
         // re-render or refresh, the state could change. That seems probably safe.
         100),
       forceFullUpdate: () => this.forceUpdate(),
-      toggleHighlightedId: (newState, sectionId) => {
+      toggleHighlightedId: (newState: boolean, sectionId: string) => {
         if (newState) {
           context.highlightedIds.add(sectionId);
         } else {
@@ -136,12 +157,15 @@ export class Renderer {
       searchQueryRegex: undefined,
     };
 
-    const hiddenData = [{
+    const hiddenData: UiPage[] = [{
       id: hiddenHost.id,
+      title: "hidden",
+      titleHebrew: "hidden",
       sections: [{
         en: "H",
         he: "H",
         ref: "hidden",
+        uuid: "hidden-uuid",
         commentary: {
           Rashi: {
             comments: [{
@@ -172,7 +196,6 @@ export class Renderer {
       hiddenHost);
 
     const $hiddenHost = $(hiddenHost);
-    window.$hiddenHost = $hiddenHost;
     const hiddenHostContext = {
       hebrew: $hiddenHost.find(".gemara-container .hebrew"),
       english: $hiddenHost.find(".gemara-container .english"),
@@ -196,7 +219,7 @@ export class Renderer {
       </ConfigurationContext.Provider>,
       host);
 
-    $(window).resize(_.throttle(() => this.forceUpdate(), 500));
+    $(window).resize(throttle(() => this.forceUpdate(), 500));
 
     const pageViews = new LocalStorageInt("pageViews").getAndIncrement();
     if (pageViews === 10
@@ -206,17 +229,17 @@ export class Renderer {
     }
   }
 
-  setAmud(amudData) {
+  setAmud(amudData: UiPage): void {
     this.allAmudim[amudData.id] = amudData;
     this.forceUpdate();
   }
 
-  deleteAmud(id) {
+  deleteAmud(id: string): void {
     delete this.allAmudim[id];
     this.forceUpdate();
   }
 
-  declareReady() {
+  declareReady(): void {
     if (this.setIsReady.current === null) {
       setTimeout(() => this.declareReady(), 200);
     } else {
@@ -224,7 +247,7 @@ export class Renderer {
     }
   }
 
-  forceUpdate() {
+  forceUpdate(): void {
     if (this.forceUpdateRef.current === null) {
       setTimeout(() => this.forceUpdate(), 200);
     } else {
@@ -232,14 +255,15 @@ export class Renderer {
     }
   }
 
-  getAmudim() {
+  getAmudim(): UiPage[] {
     const amudim = addDriveComments(this.sortedAmudim(), this.driveClient);
     amudim.forEach(amud => this._applyClientSideDataTransformations(amud));
     return amudim;
   }
 
-  personalCommentsForRefs(refs) {
-    const unflattened = refs.map(ref => this.driveClient.commentsForRef(ref)).filter(x => x);
+  personalCommentsForRefs(refs: string[]): Commentary | undefined {
+    const unflattened: Commentary[] = refs.map(
+      ref => this.driveClient.commentsForRef(ref)).flatMap(x => (x === undefined ? [] : [x]));
     const flattened = [];
     for (const comment of unflattened) {
       flattened.push(...comment.comments);
@@ -247,16 +271,16 @@ export class Renderer {
     return flattened.length > 0 ? {comments: flattened} : undefined;
   }
 
-  sortedAmudim() {
+  sortedAmudim(): UiPage[] {
     return amudMetadata().range().map(key => this.allAmudim[key]);
   }
 
-  newPageTitle(section) {
+  newPageTitle(section: Segment): string {
     const metadata = amudMetadata();
     return `${metadata.masechet} ${section}`;
   }
 
-  newPageTitleHebrew(section) {
+  newPageTitleHebrew(section: Segment): string {
     return this.newPageTitle(section);
   }
 }

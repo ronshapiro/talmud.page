@@ -1,5 +1,5 @@
 import {getCommentaryTypes} from "./commentaryTypes.ts";
-import {Renderer} from "./rendering.jsx";
+import {Renderer} from "./Renderer.tsx";
 
 export class LiturgyRenderer extends Renderer {
   constructor() {

@@ -13,6 +13,7 @@ import {SnackbarHost} from "./SnackbarReact";
 import {Page, UiPage} from "./Page";
 import {useIncrementer} from "./hooks";
 import componentHandler from "./componentHandler";
+import {NavigationExtension} from "./NavigationExtension";
 
 const {
   useEffect,
@@ -22,8 +23,8 @@ const {
 interface Props {
   allAmudim: () => UiPage[];
   isFake?: boolean;
-  navigationExtension: any;
-  setIsReadyRef?: React.MutableRefObject<((isReady: boolean) => void)>;
+  navigationExtension: NavigationExtension;
+  setIsReadyRef?: React.MutableRefObject<(() => void)>;
   forceUpdateRef?: React.MutableRefObject<(() => void)>;
 }
 export function Root({

@@ -20,6 +20,7 @@ export interface UiPage extends ApiResponse {
 
 interface Props {
   amudData: UiPage;
+  // TODO: add typing here. But we do some ugly things in page_runner to get this to work.
   navigationExtension: any;
   firstRemovable: boolean;
   lastRemovable: boolean;
