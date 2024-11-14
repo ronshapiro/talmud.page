@@ -87,9 +87,10 @@ export function ModalEditor({
 }): React.ReactElement {
   return (
     <div>
-      <p><strong>{title}</strong></p>
+      <strong>{title}</strong>
       <form onSubmit={(event) => onSubmit(event)}>
         <div
+          style={{padding: "0"}}
           className="mdl-textfield mdl-js-textfield
                      mdl-textfield--expandable
                      mdl-textfield--floating-label">

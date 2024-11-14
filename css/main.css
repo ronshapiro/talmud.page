@@ -417,7 +417,7 @@ h2, .title, .titleHebrew {
 .modal {
     --margin: 10px;
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: calc(50%);
     transform: translate(calc(-50% - var(--margin)), -50%);
     background-color: var(--background-color);
