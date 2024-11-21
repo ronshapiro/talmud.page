@@ -155,7 +155,10 @@ if (!isProd) {
 
   let serverProcess: ChildProcess | undefined;
 
-  const killServer = () => serverProcess?.kill();
+  const killServer = () => {
+    serverProcess?.kill();
+    serverProcess = undefined;
+  };
   const startServer = () => {
     killServer();
     const otherProcesses = execSync(
@@ -189,7 +192,9 @@ if (!isProd) {
   let distFiles = new Set();
   bundler.on('bundled', () => {
     const newDistFiles = fs.readdirSync("./dist");
-    if (distFiles.size !== newDistFiles.length || !newDistFiles.every(x => distFiles.has(x))) {
+    if (!serverProcess
+      || distFiles.size !== newDistFiles.length
+      || !newDistFiles.every(x => distFiles.has(x))) {
       distFiles = new Set(newDistFiles);
       startServer();
     }
