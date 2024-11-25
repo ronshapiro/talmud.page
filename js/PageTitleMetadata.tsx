@@ -1,5 +1,6 @@
 import * as React from "react";
 import {Section as Segment} from "../apiTypes";
+import {enumerate} from "../util/enumerate";
 
 export function PageTitleMetadata({
   segments,
@@ -7,14 +8,18 @@ export function PageTitleMetadata({
   segments: Segment[]
 }): React.ReactElement {
   let currentSugya = 0;
-  const counts: number[] = [];
-  segments.forEach((segment, i) => {
+  const counts: (number | string)[] = [];
+  for (const [segment, i] of enumerate(segments)) {
+    if (segment.hadran) {
+      counts.push("הדרן");
+      break;
+    }
     if (segment.steinsaltz_start_of_sugya && i !== 0) {
       counts.push(currentSugya);
       currentSugya = 0;
     }
     currentSugya++;
-  });
+  }
   counts.push(currentSugya);
   return <span className="segmentCount">({counts.join(", ")})</span>;
 }
