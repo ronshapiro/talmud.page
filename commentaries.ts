@@ -218,6 +218,7 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     englishName: "Jastrow",
     hebrewName: "Jastrow",
     className: "jastrow",
+    renderCommentsAsNestedCommentaries: true,
   },
   {
     englishName: "Abarbanel",
@@ -337,7 +338,7 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     englishName: "Topics",
     hebrewName: "נושאים",
     className: "topics",
-    showTitle: true,
+    renderCommentsAsNestedCommentaries: true,
   },
   {
     englishName: "Context",

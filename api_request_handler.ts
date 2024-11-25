@@ -14,6 +14,7 @@ import {ALL_COMMENTARIES, CommentaryType} from "./commentaries";
 import {readUtf8} from "./files";
 import {hadranSegments, isHadran} from "./precomputed/hadran";
 import {
+  stripHebrewNonletters,
   stripHebrewNonlettersOrVowels,
   intToHebrewNumeral,
   ALEPH,
@@ -249,6 +250,13 @@ class Comment {
     } else if (englishName === "Peninei Halakhah") {
       sourceRef = stripPossiblePrefix(sourceRef, "Peninei Halakhah, ");
       sourceHeRef = stripPossiblePrefix(sourceHeRef, "פניני הלכה, ");
+    } else if (englishName === "Jastrow") {
+      sourceHeRef = stripPossiblePrefix(sourceHeRef, "מילון יסטרוב, ");
+      const match = sourceHeRef.match(/^(.*)( [א-ת]['׳])$/);
+      if (match) {
+        sourceHeRef = match[1]; // eslint-disable-line prefer-destructuring
+      }
+      sourceHeRef = stripHebrewNonletters(sourceHeRef);
     }
     return [sourceRef, sourceHeRef];
   }

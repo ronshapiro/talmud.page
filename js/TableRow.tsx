@@ -340,10 +340,6 @@ function TableRow(props: TableRowProps): React.ReactElement {
       return {shouldWrap: false, englishLineClampLines: 1000000};
     }
 
-    if (classes.includes("jastrow")) {
-      return {shouldWrap: false, englishLineClampLines: 3};
-    }
-
     applyHiddenNode(hebrew, hiddenHost.hebrew);
     applyHiddenNode(english, hiddenHost.english);
 

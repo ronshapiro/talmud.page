@@ -349,7 +349,12 @@ h2, .title, .titleHebrew {
 .commentary_header.jastrow {
     color: gray;
 }
-.commentary_header.ein-mishpat, .commentary_header.sefer-hachinukh {
+.commentary_header.ein-mishpat,
+.commentary_header.shulchan-arukh,
+.commentary_header.mishnah-berura,
+.commentary_header.mishneh-torah,
+.commentary_header.peninei-halacha,
+.commentary_header.sefer-hachinukh {
     color: rgb(68,138,255);
 }
 .commentary_header.mesorat-hashas,
