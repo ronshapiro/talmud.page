@@ -38,4 +38,4 @@ class TalmudRenderer extends Renderer {
 }
 
 
-new Runner(new TalmudRenderer(), driveClient, "talmud").main();
+new Runner(new TalmudRenderer(), driveClient).main();

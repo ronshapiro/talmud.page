@@ -1,3 +1,3 @@
 import {tryRedirect} from "./calendar_redirector";
 
-tryRedirect("Daf Yomi");
+tryRedirect("Daily Rambam");

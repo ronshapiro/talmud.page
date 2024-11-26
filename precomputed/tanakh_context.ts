@@ -20,7 +20,7 @@ import {writeJson} from "../util/json_files";
 import {ConsoleLogger, Logger} from "../logger";
 
 function* bibleChapters(): Generator<ApiResponse> {
-  for (const book of Object.values(books.byCanonicalName)) {
+  for (const book of books.allBooks) {
     if (!book.isBibleBook()) continue;
     for (let chapter = 1; true; chapter += 1) {
       try {

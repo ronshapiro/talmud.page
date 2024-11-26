@@ -3,7 +3,7 @@ import * as fs from 'fs';
 import {books} from "./books";
 import {cachedOutputFilePath} from "./cached_outputs";
 
-for (const book of new Set(Object.values(books.byCanonicalName))) {
+for (const book of books.allBooks) {
   if (!book.isTalmud()) continue;
   const missing: string[] = [];
   for (const section of book.sections) {

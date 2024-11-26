@@ -63,7 +63,7 @@ function isMissingSteinsaltz(segment: Section) {
   return !("Steinsaltz" in segment.commentary);
 }
 
-for (const book of new Set(Object.values(books.byCanonicalName))) {
+for (const book of books.allBooks) {
   if (!book.isTalmud()) continue;
   if (book.canonicalName === "Shekalim") continue;
 

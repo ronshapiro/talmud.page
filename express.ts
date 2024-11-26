@@ -249,6 +249,7 @@ app.get("/:title/notes", (req, res) => {
   return res.render("notes_redirecter.html", {title, bookTitle: title});
 });
 
+app.get("/rambam-yomi", (req, res) => res.render("rambam_yomi_redirector.html"));
 app.get("/daf-yomi", (req, res) => res.render("daf_yomi_redirector.html"));
 app.get("/yomi", (req, res) => res.redirectWithQueryParameters("/daf-yomi"));
 app.get("/last", (req, res) => res.render("last_redirecter.html"));
@@ -294,11 +295,14 @@ app.get("/BirkatHamazon", (req, res) => {
 function template(book: Book): string {
   if (book.isTalmud()) {
     return "talmud_page.html";
-  }
-  if (book.isMishna()) {
+  } else if (book.isMishna()) {
     return "mishna.html";
+  } else if (book.isBibleBook()) {
+    return "tanakh.html";
+  } else if (book.isMishnehTorah()) {
+    return "mishneh_torah.html";
   }
-  return "tanakh.html";
+  throw new Error(book.canonicalName);
 }
 
 app.get("/:title/:section", (req, res) => {

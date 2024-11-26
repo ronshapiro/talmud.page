@@ -54,7 +54,7 @@ async function main() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [starts, ends] = await aliyaStartsAndEnds();
   const result: Record<string, string> = {};
-  for (const book of new Set(Object.values(books.byCanonicalName))) {
+  for (const book of books.allBooks) {
     if (!book.isBibleBook()) continue;
 
     let versesInCurrentSection: string[] = [];

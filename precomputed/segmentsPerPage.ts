@@ -6,7 +6,7 @@ import {writeJson} from "../util/json_files";
 
 const segmentsPerPage: Record<string, number> = {};
 
-for (const book of Object.values(books.byCanonicalName)) {
+for (const book of books.allBooks) {
   if (!book.isBibleBook() && !book.isTalmud() && !book.isMishna()) continue;
   if (book.canonicalName === "Shekalim") continue;
 

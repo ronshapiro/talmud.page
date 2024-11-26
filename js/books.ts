@@ -61,10 +61,10 @@ export const books: Record<string, Book> = {
     "start": "2a"
   },
   "BirkatHamazon": {
-    "end": "not used",
+    "end": "Birkat Hamazon",
     "hebrewName": "ברכת המזון",
     "isMasechet": false,
-    "start": "not used"
+    "start": "Shir Hama'alot"
   },
   "Chagigah": {
     "end": "27a",
@@ -306,6 +306,906 @@ export const books: Record<string, Book> = {
     "isMasechet": false,
     "start": "1"
   },
+  "Mishnah Arakhin": {
+    "end": "9",
+    "hebrewName": "משנה ערכין",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Avodah Zarah": {
+    "end": "5",
+    "hebrewName": "משנה עבודה זרה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Bava Batra": {
+    "end": "10",
+    "hebrewName": "משנה בבא בתרא",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Bava Kamma": {
+    "end": "10",
+    "hebrewName": "משנה בבא קמא",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Bava Metzia": {
+    "end": "10",
+    "hebrewName": "משנה בבא מציעא",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Beitzah": {
+    "end": "5",
+    "hebrewName": "משנה ביצה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Bekhorot": {
+    "end": "9",
+    "hebrewName": "משנה בכורות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Berakhot": {
+    "end": "9",
+    "hebrewName": "משנה ברכות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Bikkurim": {
+    "end": "4",
+    "hebrewName": "משנה ביכורים",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Chagigah": {
+    "end": "3",
+    "hebrewName": "משנה חגיגה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Challah": {
+    "end": "4",
+    "hebrewName": "משנה חלה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Chullin": {
+    "end": "12",
+    "hebrewName": "משנה חולין",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Demai": {
+    "end": "7",
+    "hebrewName": "משנה דמאי",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Eduyot": {
+    "end": "8",
+    "hebrewName": "משנה עדיות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Eruvin": {
+    "end": "10",
+    "hebrewName": "משנה עירובין",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Gittin": {
+    "end": "9",
+    "hebrewName": "משנה גיטין",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Horayot": {
+    "end": "3",
+    "hebrewName": "משנה הוריות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Kelim": {
+    "end": "30",
+    "hebrewName": "משנה כלים",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Keritot": {
+    "end": "6",
+    "hebrewName": "משנה כריתות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Ketubot": {
+    "end": "13",
+    "hebrewName": "משנה כתובות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Kiddushin": {
+    "end": "4",
+    "hebrewName": "משנה קידושין",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Kilayim": {
+    "end": "9",
+    "hebrewName": "משנה כלאים",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Kinnim": {
+    "end": "3",
+    "hebrewName": "משנה קינים",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Maaser Sheni": {
+    "end": "5",
+    "hebrewName": "משנה מעשר שני",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Maasrot": {
+    "end": "5",
+    "hebrewName": "משנה מעשרות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Makhshirin": {
+    "end": "6",
+    "hebrewName": "משנה מכשירין",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Makkot": {
+    "end": "3",
+    "hebrewName": "משנה מכות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Megillah": {
+    "end": "4",
+    "hebrewName": "משנה מגילה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Meilah": {
+    "end": "6",
+    "hebrewName": "משנה מעילה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Menachot": {
+    "end": "13",
+    "hebrewName": "משנה מנחות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Middot": {
+    "end": "5",
+    "hebrewName": "משנה מדות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Mikvaot": {
+    "end": "10",
+    "hebrewName": "משנה מקואות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Moed Katan": {
+    "end": "3",
+    "hebrewName": "משנה מועד קטן",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Nazir": {
+    "end": "9",
+    "hebrewName": "משנה נזיר",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Nedarim": {
+    "end": "11",
+    "hebrewName": "משנה נדרים",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Negaim": {
+    "end": "14",
+    "hebrewName": "משנה נגעים",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Niddah": {
+    "end": "10",
+    "hebrewName": "משנה נדה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Oholot": {
+    "end": "18",
+    "hebrewName": "משנה אהלות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Oktzin": {
+    "end": "3",
+    "hebrewName": "משנה עוקצים",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Orlah": {
+    "end": "3",
+    "hebrewName": "משנה ערלה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Parah": {
+    "end": "12",
+    "hebrewName": "משנה פרה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Peah": {
+    "end": "8",
+    "hebrewName": "משנה פאה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Pesachim": {
+    "end": "10",
+    "hebrewName": "משנה פסחים",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Rosh Hashanah": {
+    "end": "4",
+    "hebrewName": "משנה ראש השנה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Sanhedrin": {
+    "end": "11",
+    "hebrewName": "משנה סנהדרין",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Shabbat": {
+    "end": "24",
+    "hebrewName": "משנה שבת",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Shekalim": {
+    "end": "8",
+    "hebrewName": "משנה שקלים",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Sheviit": {
+    "end": "10",
+    "hebrewName": "משנה שביעית",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Shevuot": {
+    "end": "8",
+    "hebrewName": "משנה שבועות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Sotah": {
+    "end": "9",
+    "hebrewName": "משנה סוטה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Sukkah": {
+    "end": "5",
+    "hebrewName": "משנה סוכה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Ta'anit": {
+    "end": "4",
+    "hebrewName": "משנה תענית",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Tahorot": {
+    "end": "10",
+    "hebrewName": "משנה טהרות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Tamid": {
+    "end": "7",
+    "hebrewName": "משנה תמיד",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Temurah": {
+    "end": "7",
+    "hebrewName": "משנה תמורה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Terumot": {
+    "end": "11",
+    "hebrewName": "משנה תרומות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Tevul Yom": {
+    "end": "4",
+    "hebrewName": "משנה טבול יום",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Yadayim": {
+    "end": "4",
+    "hebrewName": "משנה ידים",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Yevamot": {
+    "end": "16",
+    "hebrewName": "משנה יבמות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Yoma": {
+    "end": "8",
+    "hebrewName": "משנה יומא",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Zavim": {
+    "end": "5",
+    "hebrewName": "משנה זבים",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishnah Zevachim": {
+    "end": "14",
+    "hebrewName": "משנה זבחים",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Admission into the Sanctuary": {
+    "end": "9",
+    "hebrewName": "משנה תורה, הלכות ביאת מקדש",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Agents and Partners": {
+    "end": "10",
+    "hebrewName": "משנה תורה, הלכות שלוחין ושותפין",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Appraisals and Devoted Property": {
+    "end": "8",
+    "hebrewName": "משנה תורה, הלכות ערכים וחרמין",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Blessings": {
+    "end": "11",
+    "hebrewName": "משנה תורה, הלכות ברכות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Borrowing and Deposit": {
+    "end": "8",
+    "hebrewName": "משנה תורה, הלכות שאלה ופיקדון",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Circumcision": {
+    "end": "3",
+    "hebrewName": "משנה תורה, הלכות מילה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Creditor and Debtor": {
+    "end": "27",
+    "hebrewName": "משנה תורה, הלכות מלווה ולווה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Daily Offerings and Additional Offerings": {
+    "end": "10",
+    "hebrewName": "משנה תורה, הלכות תמידים ומוספין",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Damages to Property": {
+    "end": "14",
+    "hebrewName": "משנה תורה, הלכות נזקי ממון",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Defilement by Leprosy": {
+    "end": "16",
+    "hebrewName": "משנה תורה, הלכות טומאת צרעת",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Defilement by a Corpse": {
+    "end": "25",
+    "hebrewName": "משנה תורה, הלכות טומאת מת",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Defilement of Foods": {
+    "end": "16",
+    "hebrewName": "משנה תורה, הלכות טומאת אוכלים",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Diverse Species": {
+    "end": "10",
+    "hebrewName": "משנה תורה, הלכות כלאים",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Divorce": {
+    "end": "13",
+    "hebrewName": "משנה תורה, הלכות גירושין",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Eruvin": {
+    "end": "8",
+    "hebrewName": "משנה תורה, הלכות עירובין",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Fasts": {
+    "end": "5",
+    "hebrewName": "משנה תורה, הלכות תעניות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Festival Offering": {
+    "end": "3",
+    "hebrewName": "משנה תורה, הלכות חגיגה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, First Fruits and other Gifts to Priests Outside the Sanctuary": {
+    "end": "12",
+    "hebrewName": "משנה תורה, הלכות ביכורים ושאר מתנות כהונה שבגבולין",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Firstlings": {
+    "end": "8",
+    "hebrewName": "משנה תורה, הלכות בכורות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Forbidden Foods": {
+    "end": "17",
+    "hebrewName": "משנה תורה, הלכות מאכלות אסורות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Forbidden Intercourse": {
+    "end": "22",
+    "hebrewName": "משנה תורה, הלכות איסורי ביאה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Foreign Worship and Customs of the Nations": {
+    "end": "12",
+    "hebrewName": "משנה תורה, הלכות עבודה זרה וחוקות הגויים",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Foundations of the Torah": {
+    "end": "10",
+    "hebrewName": "משנה תורה, הלכות יסודי התורה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Fringes": {
+    "end": "3",
+    "hebrewName": "משנה תורה, הלכות ציצית",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Gifts to the Poor": {
+    "end": "10",
+    "hebrewName": "משנה תורה, הלכות מתנות עניים",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Heave Offerings": {
+    "end": "15",
+    "hebrewName": "משנה תורה, הלכות תרומות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Hiring": {
+    "end": "13",
+    "hebrewName": "משנה תורה, הלכות שכירות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Human Dispositions": {
+    "end": "7",
+    "hebrewName": "משנה תורה, הלכות דעות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Immersion Pools": {
+    "end": "11",
+    "hebrewName": "משנה תורה, הלכות מקואות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Inheritances": {
+    "end": "11",
+    "hebrewName": "משנה תורה, הלכות נחלות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Kings and Wars": {
+    "end": "12",
+    "hebrewName": "משנה תורה, הלכות מלכים ומלחמות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Leavened and Unleavened Bread": {
+    "end": "9",
+    "hebrewName": "משנה תורה, הלכות חמץ ומצה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Levirate Marriage and Release": {
+    "end": "8",
+    "hebrewName": "משנה תורה, הלכות יבום וחליצה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Marriage": {
+    "end": "25",
+    "hebrewName": "משנה תורה, הלכות אישות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Mourning": {
+    "end": "14",
+    "hebrewName": "משנה תורה, הלכות אבל",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Murderer and the Preservation of Life": {
+    "end": "13",
+    "hebrewName": "משנה תורה, הלכות רוצח ושמירת נפש",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Nazariteship": {
+    "end": "10",
+    "hebrewName": "משנה תורה, הלכות נזירות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Negative Mitzvot": {
+    "end": "370",
+    "hebrewName": "משנה תורה, מצוות לא תעשה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Neighbors": {
+    "end": "14",
+    "hebrewName": "משנה תורה, הלכות שכנים",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Oaths": {
+    "end": "12",
+    "hebrewName": "משנה תורה, הלכות שבועות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Offerings for Those with Incomplete Atonement": {
+    "end": "5",
+    "hebrewName": "משנה תורה, הלכות מחוסרי כפרה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Offerings for Unintentional Transgressions": {
+    "end": "15",
+    "hebrewName": "משנה תורה, הלכות שגגות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, One Who Injures a Person or Property": {
+    "end": "8",
+    "hebrewName": "משנה תורה, הלכות חובל ומזיק",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Other Sources of Defilement": {
+    "end": "20",
+    "hebrewName": "משנה תורה, הלכות שאר אבות הטומאות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Overview of Mishneh Torah Contents": {
+    "end": "14",
+    "hebrewName": "משנה תורה, תוכן החיבור",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Ownerless Property and Gifts": {
+    "end": "12",
+    "hebrewName": "משנה תורה, הלכות זכייה ומתנה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Paschal Offering": {
+    "end": "10",
+    "hebrewName": "משנה תורה, הלכות קרבן פסח",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Plaintiff and Defendant": {
+    "end": "16",
+    "hebrewName": "משנה תורה, הלכות טוען ונטען",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Positive Mitzvot": {
+    "end": "248",
+    "hebrewName": "משנה תורה, מצוות עשה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Prayer and the Priestly Blessing": {
+    "end": "15",
+    "hebrewName": "משנה תורה, הלכות תפילה וברכת כהנים",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Reading the Shema": {
+    "end": "4",
+    "hebrewName": "משנה תורה, הלכות קריאת שמע",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Rebels": {
+    "end": "7",
+    "hebrewName": "משנה תורה, הלכות ממרים",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Red Heifer": {
+    "end": "15",
+    "hebrewName": "משנה תורה, הלכות פרה אדומה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Repentance": {
+    "end": "10",
+    "hebrewName": "משנה תורה, הלכות תשובה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Rest on a Holiday": {
+    "end": "8",
+    "hebrewName": "משנה תורה, הלכות שביתת יום טוב",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Rest on the Tenth of Tishrei": {
+    "end": "3",
+    "hebrewName": "משנה תורה, הלכות שביתת עשור",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Ritual Slaughter": {
+    "end": "14",
+    "hebrewName": "משנה תורה, הלכות שחיטה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Robbery and Lost Property": {
+    "end": "18",
+    "hebrewName": "משנה תורה, הלכות גזילה ואבידה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Sabbath": {
+    "end": "30",
+    "hebrewName": "משנה תורה, הלכות שבת",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Sabbatical Year and the Jubilee": {
+    "end": "13",
+    "hebrewName": "משנה תורה, הלכות שמיטה ויובל",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Sacrifices Rendered Unfit": {
+    "end": "19",
+    "hebrewName": "משנה תורה, הלכות פסולי המוקדשין",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Sacrificial Procedure": {
+    "end": "19",
+    "hebrewName": "משנה תורה, הלכות מעשה הקרבנות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Sales": {
+    "end": "30",
+    "hebrewName": "משנה תורה, הלכות מכירה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Sanctification of the New Month": {
+    "end": "19",
+    "hebrewName": "משנה תורה, הלכות קידוש החודש",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Scroll of Esther and Hanukkah": {
+    "end": "4",
+    "hebrewName": "משנה תורה, הלכות מגילה וחנוכה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Second Tithes and Fourth Year's Fruit": {
+    "end": "11",
+    "hebrewName": "משנה תורה, הלכות מעשר שני ונטע רבעי",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Service on the Day of Atonement": {
+    "end": "5",
+    "hebrewName": "משנה תורה, הלכות עבודת יום הכפורים",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Sheqel Dues": {
+    "end": "4",
+    "hebrewName": "משנה תורה, הלכות שקלים",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Shofar, Sukkah and Lulav": {
+    "end": "8",
+    "hebrewName": "משנה תורה, הלכות שופר וסוכה ולולב",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Slaves": {
+    "end": "9",
+    "hebrewName": "משנה תורה, הלכות עבדים",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Substitution": {
+    "end": "4",
+    "hebrewName": "משנה תורה, הלכות תמורה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Tefillin, Mezuzah and the Torah Scroll": {
+    "end": "10",
+    "hebrewName": "משנה תורה, הלכות תפילין ומזוזה וספר תורה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Testimony": {
+    "end": "22",
+    "hebrewName": "משנה תורה, הלכות עדות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, The Chosen Temple": {
+    "end": "8",
+    "hebrewName": "משנה תורה, הלכות בית הבחירה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, The Order of Prayer": {
+    "end": "5",
+    "hebrewName": "משנה תורה, סדר התפילה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, The Sanhedrin and the Penalties within Their Jurisdiction": {
+    "end": "26",
+    "hebrewName": "משנה תורה, הלכות סנהדרין והעונשין המסורין להם",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Theft": {
+    "end": "9",
+    "hebrewName": "משנה תורה, הלכות גניבה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Things Forbidden on the Altar": {
+    "end": "7",
+    "hebrewName": "משנה תורה, הלכות איסורי המזבח",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Those Who Defile Bed or Seat": {
+    "end": "13",
+    "hebrewName": "משנה תורה, הלכות מטמאי משכב ומושב",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Tithes": {
+    "end": "14",
+    "hebrewName": "משנה תורה, הלכות מעשרות",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Torah Study": {
+    "end": "7",
+    "hebrewName": "משנה תורה, הלכות תלמוד תורה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Transmission of the Oral Law": {
+    "end": "45",
+    "hebrewName": "משנה תורה, מסירת תורה שבעל פה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Trespass": {
+    "end": "8",
+    "hebrewName": "משנה תורה, הלכות מעילה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Vessels": {
+    "end": "28",
+    "hebrewName": "משנה תורה, הלכות כלים",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Vessels of the Sanctuary and Those Who Serve Therein": {
+    "end": "10",
+    "hebrewName": "משנה תורה, הלכות כלי המקדש והעובדין בו",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Virgin Maiden": {
+    "end": "3",
+    "hebrewName": "משנה תורה, הלכות נערה בתולה",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Vows": {
+    "end": "13",
+    "hebrewName": "משנה תורה, הלכות נדרים",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Mishneh Torah, Woman Suspected of Infidelity": {
+    "end": "4",
+    "hebrewName": "משנה תורה, הלכות סוטה",
+    "isMasechet": false,
+    "start": "1"
+  },
   "Moed Katan": {
     "end": "29a",
     "hebrewName": "מועד קטן",
@@ -360,6 +1260,12 @@ export const books: Record<string, Book> = {
     "isMasechet": true,
     "start": "2a"
   },
+  "Pirkei Avot": {
+    "end": "6",
+    "hebrewName": "משנה אבות",
+    "isMasechet": false,
+    "start": "1"
+  },
   "Proverbs": {
     "end": "31",
     "hebrewName": "משלי",
@@ -409,16 +1315,16 @@ export const books: Record<string, Book> = {
     "start": "2a"
   },
   "SiddurAshkenaz": {
-    "end": "not used",
+    "end": "Aleinu",
     "hebrewName": "סידור אשכנז",
     "isMasechet": false,
-    "start": "not used"
+    "start": "Morning Blessings"
   },
   "SiddurSefard": {
-    "end": "not used",
+    "end": "Conclusion",
     "hebrewName": "סידור ספרד",
     "isMasechet": false,
-    "start": "not used"
+    "start": "Morning Blessings"
   },
   "Song of Songs": {
     "end": "8",
@@ -456,6 +1362,12 @@ export const books: Record<string, Book> = {
     "isMasechet": true,
     "start": "2a"
   },
+  "WeekdayTorah": {
+    "end": "n/a",
+    "hebrewName": "WeekdayTorah",
+    "isMasechet": false,
+    "start": "n/a"
+  },
   "Yevamot": {
     "end": "122b",
     "hebrewName": "יבמות",
@@ -485,383 +1397,5 @@ export const books: Record<string, Book> = {
     "hebrewName": "זבחים",
     "isMasechet": true,
     "start": "2a"
-  },
-  "Mishnah Berakhot": {
-    "hebrewName": "משנה ברכות",
-    "start": "1",
-    "end": "9",
-    "isMasechet": false,
-  },
-  "Mishnah Peah": {
-    "hebrewName": "משנה פאה",
-    "start": "1",
-    "end": "8",
-    "isMasechet": false,
-  },
-  "Mishnah Demai": {
-    "hebrewName": "משנה דמאי",
-    "start": "1",
-    "end": "7",
-    "isMasechet": false,
-  },
-  "Mishnah Kilayim": {
-    "hebrewName": "משנה כלאים",
-    "start": "1",
-    "end": "9",
-    "isMasechet": false,
-  },
-  "Mishnah Sheviit": {
-    "hebrewName": "משנה שביעית",
-    "start": "1",
-    "end": "10",
-    "isMasechet": false,
-  },
-  "Mishnah Terumot": {
-    "hebrewName": "משנה תרומות",
-    "start": "1",
-    "end": "11",
-    "isMasechet": false,
-  },
-  "Mishnah Maasrot": {
-    "hebrewName": "משנה מעשרות",
-    "start": "1",
-    "end": "5",
-    "isMasechet": false,
-  },
-  "Mishnah Maaser Sheni": {
-    "hebrewName": "משנה מעשר שני",
-    "start": "1",
-    "end": "5",
-    "isMasechet": false,
-  },
-  "Mishnah Challah": {
-    "hebrewName": "משנה חלה",
-    "start": "1",
-    "end": "4",
-    "isMasechet": false,
-  },
-  "Mishnah Orlah": {
-    "hebrewName": "משנה ערלה",
-    "start": "1",
-    "end": "3",
-    "isMasechet": false,
-  },
-  "Mishnah Bikkurim": {
-    "hebrewName": "משנה ביכורים",
-    "start": "1",
-    "end": "4",
-    "isMasechet": false,
-  },
-  "Mishnah Shabbat": {
-    "hebrewName": "משנה שבת",
-    "start": "1",
-    "end": "24",
-    "isMasechet": false,
-  },
-  "Mishnah Eruvin": {
-    "hebrewName": "משנה עירובין",
-    "start": "1",
-    "end": "10",
-    "isMasechet": false,
-  },
-  "Mishnah Pesachim": {
-    "hebrewName": "משנה פסחים",
-    "start": "1",
-    "end": "10",
-    "isMasechet": false,
-  },
-  "Mishnah Shekalim": {
-    "hebrewName": "משנה שקלים",
-    "start": "1",
-    "end": "8",
-    "isMasechet": false,
-  },
-  "Mishnah Yoma": {
-    "hebrewName": "משנה יומא",
-    "start": "1",
-    "end": "8",
-    "isMasechet": false,
-  },
-  "Mishnah Sukkah": {
-    "hebrewName": "משנה סוכה",
-    "start": "1",
-    "end": "5",
-    "isMasechet": false,
-  },
-  "Mishnah Beitzah": {
-    "hebrewName": "משנה ביצה",
-    "start": "1",
-    "end": "5",
-    "isMasechet": false,
-  },
-  "Mishnah Rosh Hashanah": {
-    "hebrewName": "משנה ראש השנה",
-    "start": "1",
-    "end": "4",
-    "isMasechet": false,
-  },
-  "Mishnah Ta'anit": {
-    "hebrewName": "משנה תענית",
-    "start": "1",
-    "end": "4",
-    "isMasechet": false,
-  },
-  "Mishnah Megillah": {
-    "hebrewName": "משנה מגילה",
-    "start": "1",
-    "end": "4",
-    "isMasechet": false,
-  },
-  "Mishnah Moed Katan": {
-    "hebrewName": "משנה מועד קטן",
-    "start": "1",
-    "end": "3",
-    "isMasechet": false,
-  },
-  "Mishnah Chagigah": {
-    "hebrewName": "משנה חגיגה",
-    "start": "1",
-    "end": "3",
-    "isMasechet": false,
-  },
-  "Mishnah Yevamot": {
-    "hebrewName": "משנה יבמות",
-    "start": "1",
-    "end": "16",
-    "isMasechet": false,
-  },
-  "Mishnah Ketubot": {
-    "hebrewName": "משנה כתובות",
-    "start": "1",
-    "end": "13",
-    "isMasechet": false,
-  },
-  "Mishnah Nedarim": {
-    "hebrewName": "משנה נדרים",
-    "start": "1",
-    "end": "11",
-    "isMasechet": false,
-  },
-  "Mishnah Nazir": {
-    "hebrewName": "משנה נזיר",
-    "start": "1",
-    "end": "9",
-    "isMasechet": false,
-  },
-  "Mishnah Sotah": {
-    "hebrewName": "משנה סוטה",
-    "start": "1",
-    "end": "9",
-    "isMasechet": false,
-  },
-  "Mishnah Gittin": {
-    "hebrewName": "משנה גיטין",
-    "start": "1",
-    "end": "9",
-    "isMasechet": false,
-  },
-  "Mishnah Kiddushin": {
-    "hebrewName": "משנה קידושין",
-    "start": "1",
-    "end": "4",
-    "isMasechet": false,
-  },
-  "Mishnah Bava Kamma": {
-    "hebrewName": "משנה בבא קמא",
-    "start": "1",
-    "end": "10",
-    "isMasechet": false,
-  },
-  "Mishnah Bava Metzia": {
-    "hebrewName": "משנה בבא מציעא",
-    "start": "1",
-    "end": "10",
-    "isMasechet": false,
-  },
-  "Mishnah Bava Batra": {
-    "hebrewName": "משנה בבא בתרא",
-    "start": "1",
-    "end": "10",
-    "isMasechet": false,
-  },
-  "Mishnah Sanhedrin": {
-    "hebrewName": "משנה סנהדרין",
-    "start": "1",
-    "end": "11",
-    "isMasechet": false,
-  },
-  "Mishnah Makkot": {
-    "hebrewName": "משנה מכות",
-    "start": "1",
-    "end": "3",
-    "isMasechet": false,
-  },
-  "Mishnah Shevuot": {
-    "hebrewName": "משנה שבועות",
-    "start": "1",
-    "end": "8",
-    "isMasechet": false,
-  },
-  "Mishnah Eduyot": {
-    "hebrewName": "משנה עדיות",
-    "start": "1",
-    "end": "8",
-    "isMasechet": false,
-  },
-  "Mishnah Avodah Zarah": {
-    "hebrewName": "משנה עבודה זרה",
-    "start": "1",
-    "end": "5",
-    "isMasechet": false,
-  },
-  "Pirkei Avot": {
-    "hebrewName": "משנה אבות",
-    "start": "1",
-    "end": "6",
-    "isMasechet": false,
-  },
-  "Mishnah Horayot": {
-    "hebrewName": "משנה הוריות",
-    "start": "1",
-    "end": "3",
-    "isMasechet": false,
-  },
-  "Mishnah Zevachim": {
-    "hebrewName": "משנה זבחים",
-    "start": "1",
-    "end": "14",
-    "isMasechet": false,
-  },
-  "Mishnah Menachot": {
-    "hebrewName": "משנה מנחות",
-    "start": "1",
-    "end": "13",
-    "isMasechet": false,
-  },
-  "Mishnah Chullin": {
-    "hebrewName": "משנה חולין",
-    "start": "1",
-    "end": "12",
-    "isMasechet": false,
-  },
-  "Mishnah Bekhorot": {
-    "hebrewName": "משנה בכורות",
-    "start": "1",
-    "end": "9",
-    "isMasechet": false,
-  },
-  "Mishnah Arakhin": {
-    "hebrewName": "משנה ערכין",
-    "start": "1",
-    "end": "9",
-    "isMasechet": false,
-  },
-  "Mishnah Temurah": {
-    "hebrewName": "משנה תמורה",
-    "start": "1",
-    "end": "7",
-    "isMasechet": false,
-  },
-  "Mishnah Keritot": {
-    "hebrewName": "משנה כריתות",
-    "start": "1",
-    "end": "6",
-    "isMasechet": false,
-  },
-  "Mishnah Meilah": {
-    "hebrewName": "משנה מעילה",
-    "start": "1",
-    "end": "6",
-    "isMasechet": false,
-  },
-  "Mishnah Tamid": {
-    "hebrewName": "משנה תמיד",
-    "start": "1",
-    "end": "7",
-    "isMasechet": false,
-  },
-  "Mishnah Middot": {
-    "hebrewName": "משנה מדות",
-    "start": "1",
-    "end": "5",
-    "isMasechet": false,
-  },
-  "Mishnah Kinnim": {
-    "hebrewName": "משנה קינים",
-    "start": "1",
-    "end": "3",
-    "isMasechet": false,
-  },
-  "Mishnah Kelim": {
-    "hebrewName": "משנה כלים",
-    "start": "1",
-    "end": "30",
-    "isMasechet": false,
-  },
-  "Mishnah Oholot": {
-    "hebrewName": "משנה אהלות",
-    "start": "1",
-    "end": "18",
-    "isMasechet": false,
-  },
-  "Mishnah Negaim": {
-    "hebrewName": "משנה נגעים",
-    "start": "1",
-    "end": "14",
-    "isMasechet": false,
-  },
-  "Mishnah Parah": {
-    "hebrewName": "משנה פרה",
-    "start": "1",
-    "end": "12",
-    "isMasechet": false,
-  },
-  "Mishnah Tahorot": {
-    "hebrewName": "משנה טהרות",
-    "start": "1",
-    "end": "10",
-    "isMasechet": false,
-  },
-  "Mishnah Mikvaot": {
-    "hebrewName": "משנה מקואות",
-    "start": "1",
-    "end": "10",
-    "isMasechet": false,
-  },
-  "Mishnah Niddah": {
-    "hebrewName": "משנה נדה",
-    "start": "1",
-    "end": "10",
-    "isMasechet": false,
-  },
-  "Mishnah Makhshirin": {
-    "hebrewName": "משנה מכשירין",
-    "start": "1",
-    "end": "6",
-    "isMasechet": false,
-  },
-  "Mishnah Zavim": {
-    "hebrewName": "משנה זבים",
-    "start": "1",
-    "end": "5",
-    "isMasechet": false,
-  },
-  "Mishnah Tevul Yom": {
-    "hebrewName": "משנה טבול יום",
-    "start": "1",
-    "end": "4",
-    "isMasechet": false,
-  },
-  "Mishnah Yadayim": {
-    "hebrewName": "משנה ידים",
-    "start": "1",
-    "end": "4",
-    "isMasechet": false,
-  },
-  "Mishnah Oktzin": {
-    "hebrewName": "משנה עוקצים",
-    "start": "1",
-    "end": "3",
-    "isMasechet": false,
   },
 };

@@ -1,6 +1,9 @@
+import * as fs from "fs";
 import {QueryGuesses} from "./apiTypes";
 import {numericLiteralAsInt} from "./hebrew";
 import {SIDDUR_REFS_ASHKENAZ, SIDDUR_REFS_SEFARD, BIRKAT_HAMAZON_REFS, RefPiece} from "./siddur";
+import {readUtf8} from "./files";
+import {jsonStringify} from "./util/json_stringify";
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const levenshteinEditDistance = require("levenshtein-edit-distance");
@@ -88,6 +91,10 @@ export abstract class Book {
   }
 
   isMishna(): boolean {
+    return false;
+  }
+
+  isMishnehTorah(): boolean {
     return false;
   }
 
@@ -323,10 +330,34 @@ class BibleBook extends Book {
   }
 }
 
-interface LiturgicalBookConstructorParameters {
-  canonicalName: string;
-  hebrewName: string;
-  aliases: string[];
+class MishnehTorahBook extends Book {
+  constructor(params: Omit<BookConstructorParams, "start" | "sections">) {
+    super({...params, start: "1", sections: chapterSections(parseInt(params.end))});
+  }
+
+  nextPage(page: string): string {
+    return (parseInt(page) + 1).toString();
+  }
+
+  previousPage(page: string): string {
+    return (parseInt(page) - 1).toString();
+  }
+
+  arePagesInReverseOrder(start: string, end: string): boolean {
+    return parseInt(start) > parseInt(end);
+  }
+
+  bookType(): string {
+    return "Mishneh Torah";
+  }
+
+  isMishnehTorah(): boolean {
+    return true;
+  }
+}
+
+interface LiturgicalBookConstructorParameters extends Omit<
+  BookConstructorParams, "sections" | "end" | "start"> {
   sections: Record<string, RefPiece[]>;
   bookType: string;
   bookNameForRef: string;
@@ -539,11 +570,13 @@ class ChapterRangeParser extends RangeParser {
 const AMUD_RANGE_SEPARATORS = new Set(["to", "-"]);
 
 export class BookIndex {
+  allBooks = new Set<Book>();
   byCanonicalName: Record<string, Book> = {};
   aliasIndex: Record<string, string> = {};
 
   constructor(allBooks: Book[]) {
     for (const book of allBooks) {
+      this.allBooks.add(book);
       this.addIndexValue(book.canonicalName, book, this.byCanonicalName);
       this.addIndexValue(book.canonicalName.toLowerCase(), book.canonicalName, this.aliasIndex);
       for (const alias of book.aliases) {
@@ -553,8 +586,17 @@ export class BookIndex {
   }
 
   private addIndexValue<T>(name: string, value: T, index: Record<string, T>) {
-    index[name] = value;
-    index[name.replace(/ /g, '_')] = value;
+    const replacements: [RegExp, string][] = [[/ /g, "_"], [/,/g, ""]];
+    const candidates: string[] = [name];
+    for (const [regex, replacement] of replacements) {
+      for (const candidate of Array.from(candidates)) {
+        candidates.push(candidate.replace(regex, replacement));
+      }
+    }
+
+    for (const candidate of candidates) {
+      index[candidate] = value;
+    }
   }
 
   private canonicalNameOrUndefined(name: string): string | undefined {
@@ -584,7 +626,7 @@ export class BookIndex {
     const results: [number, string][] = [];
     const candidates = new Set<string>();
     // const maybeBook = query.slice(0, query.lastIndexOf(" "));
-    for (const book of Object.values(this.byCanonicalName)) {
+    for (const book of this.allBooks) {
       let distance = 99999;
       for (const option of [book.canonicalName].concat(book.aliases)) {
         const editDistance = levenshteinEditDistance(option, query, true);
@@ -1665,6 +1707,10 @@ export const books = new BookIndex([
     bookType: "Siddur",
     bookNameForRef: "Siddur Ashkenaz, Berachot, Birkat HaMazon,",
   }),
+  ...(
+    (JSON.parse(readUtf8("precomputed/mishneh_torah_books_cached.json")) as any[])
+      .map(x => new MishnehTorahBook(x))
+  ),
 ]);
 
 export function internalLinkableRef(ref: string): QueryResult | undefined {
@@ -1678,4 +1724,27 @@ export function internalLinkableRef(ref: string): QueryResult | undefined {
     }
   }
   return undefined;
+}
+
+export function regenerateWebBooks(): void {
+  const data: Record<string, any> = {};
+  for (const book of books.allBooks) {
+    data[book.canonicalName] = {
+      hebrewName: book.hebrewName,
+      start: book.start,
+      end: book.end,
+      isMasechet: book.isTalmud(),
+    };
+  }
+
+  const output = `interface Book {
+  start: string;
+  end: string;
+  isMasechet: boolean;
+  hebrewName: string;
+}
+
+export const books: Record<string, Book> = ${jsonStringify(data).replace(/}\n}\n$/, "},\n};")}
+`;
+  fs.writeFileSync("js/books.ts", output);
 }

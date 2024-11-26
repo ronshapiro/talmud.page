@@ -259,4 +259,4 @@ onceDocumentReady.execute(() => {
   document.head.append(style);
 });
 
-new Runner(renderer, driveClient, "siddur").main();
+new Runner(renderer, driveClient).main();

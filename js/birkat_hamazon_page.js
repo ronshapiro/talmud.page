@@ -54,4 +54,4 @@ class BirkatHamazonRenderer extends LiturgyRenderer {
   }
 }
 
-new Runner(new BirkatHamazonRenderer(), driveClient, "siddur").main();
+new Runner(new BirkatHamazonRenderer(), driveClient).main();

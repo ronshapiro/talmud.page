@@ -52,7 +52,7 @@ for (let i = 0; i < 100; i++) {
 }
 
 let i = 0;
-for (const book of new Set(Object.values(books.byCanonicalName))) {
+for (const book of books.allBooks) {
   if (book.canonicalName === "Shekalim") continue;
   for (const section of book.sections) {
     const filePath = cachedOutputFilePath(book, section);

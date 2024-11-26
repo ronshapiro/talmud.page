@@ -8,10 +8,10 @@ const STEINSALTZ = (
 const COMMENTARY_TYPES = ALL_COMMENTARIES.filter(x => x.englishName !== "Steinsaltz");
 
 export function getCommentaryTypes(
-  resourceType: "siddur" | "tanakh" | "talmud" | "mishna",
+  resourceType: "siddur" | "tanakh" | "talmud" | "mishna" | "mishneh torah",
 ): CommentaryType[] {
   const types = [...COMMENTARY_TYPES];
-  if (resourceType === "talmud") {
+  if (resourceType === "talmud" || resourceType === "mishneh torah") {
     if (localStorage.showTranslationButton === "yes") {
       types.push(STEINSALTZ);
     } else {

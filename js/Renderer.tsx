@@ -4,6 +4,7 @@ import {throttle} from "underscore";
 import {v4 as newUuid} from "uuid";
 import {addDriveComments} from "./addDriveComments";
 import {amudMetadata} from "./amud";
+import {books} from "./books";
 import {CorrectionModal} from "./CorrectionModal";
 import {CommentEditorModal} from "./CommentEditorModal";
 import {$, addJqueryExtensionMethods} from "./jquery";
@@ -14,11 +15,12 @@ import {
 } from "./context";
 import {Root} from "./Root";
 import {CommentaryType} from "../commentaries";
-import {Section as Segment, Commentary} from "../apiTypes";
+import {Commentary} from "../apiTypes";
 import {UiPage} from "./Page";
 import {DriveClient} from "./google_drive/client";
-import {NavigationExtension} from "./NavigationExtension";
+import {BaseNavigationExtension, NavigationExtension} from "./NavigationExtension";
 import {useHtmlRef} from "./hooks";
+import {intToHebrewNumeral} from "../hebrew";
 
 const {useEffect} = React;
 
@@ -101,7 +103,7 @@ interface Options {
   expandTranslationOnMergedSectionExpansion?: boolean;
 }
 
-export class Renderer {
+export abstract class Renderer {
   allAmudim: Record<string, UiPage> = {};
   forceUpdateRef = new FakeRef<() => void>();
   setIsReady = new FakeRef<() => void>();
@@ -294,12 +296,28 @@ export class Renderer {
     return amudMetadata().range().map(key => this.allAmudim[key]);
   }
 
-  newPageTitle(section: Segment): string {
+  newPageTitle(section: string): string {
     const metadata = amudMetadata();
     return `${metadata.masechet} ${section}`;
   }
 
-  newPageTitleHebrew(section: Segment): string {
-    return this.newPageTitle(section);
+  abstract newPageTitleHebrew(section: string): string;
+
+  newNumericalPageTitleHebrew(section: string): string {
+    const {hebrewName} = books[amudMetadata().masechet];
+    return `${hebrewName} ${intToHebrewNumeral(parseInt(section))}`;
   }
+}
+
+export function numericalNavigationExtension (): BaseNavigationExtension {
+  return {
+    previous: () => (parseInt(amudMetadata().amudStart!) - 1).toString(),
+    next: () => (parseInt(amudMetadata().amudEnd!) + 1).toString(),
+
+    hasPrevious: () => amudMetadata().amudStart !== "1",
+    hasNext: () => {
+      const metadata = amudMetadata();
+      return metadata.amudEnd !== books[metadata.masechet].end;
+    },
+  };
 }

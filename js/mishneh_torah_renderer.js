@@ -3,12 +3,12 @@ import {driveClient} from "./google_drive/singleton.ts";
 import {Runner} from "./page_runner.js";
 import {Renderer, numericalNavigationExtension} from "./Renderer.tsx";
 
-class TanakhRenderer extends Renderer {
+class MishnehTorahRenderer extends Renderer {
   constructor() {
     super(
-      getCommentaryTypes("tanakh"),
+      getCommentaryTypes("mishneh torah"),
       numericalNavigationExtension(),
-      {allowCompactLayout: true});
+      {allowCompactLayout: false});
   }
 
   newPageTitleHebrew(section) {
@@ -16,4 +16,4 @@ class TanakhRenderer extends Renderer {
   }
 }
 
-new Runner(new TanakhRenderer(), driveClient).main();
+new Runner(new MishnehTorahRenderer(), driveClient).main();

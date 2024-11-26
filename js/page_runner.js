@@ -89,10 +89,9 @@ const firstFullyOnScreenSection = () => {
 };
 
 export class Runner {
-  constructor(renderer, driveClient, resourceType) {
+  constructor(renderer, driveClient) {
     this.renderer = renderer;
     this.driveClient = driveClient;
-    this.resourceType = resourceType;
     renderer.driveClient = driveClient;
     Object.assign(
       renderer.navigationExtension,
@@ -149,7 +148,7 @@ export class Runner {
   }
 
   newUrlRange(start, end) {
-    const masechet = amudMetadata().masechet.replace(" ", "_");
+    const masechet = amudMetadata().masechet.replace(/ /g, "_");
     const newUrl = `${window.location.origin}/${masechet}/${start}`;
     if (start === end) {
       return newUrl;
