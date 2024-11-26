@@ -249,6 +249,8 @@ app.get("/:title/notes", (req, res) => {
   return res.render("notes_redirecter.html", {title, bookTitle: title});
 });
 
+app.get("/mishnah-yomi", (req, res) => res.render("mishna_yomi_redirector.html"));
+app.get("/mishna-yomi", (req, res) => res.render("mishna_yomi_redirector.html"));
 app.get("/rambam-yomi", (req, res) => res.render("rambam_yomi_redirector.html"));
 app.get("/daf-yomi", (req, res) => res.render("daf_yomi_redirector.html"));
 app.get("/yomi", (req, res) => res.redirectWithQueryParameters("/daf-yomi"));

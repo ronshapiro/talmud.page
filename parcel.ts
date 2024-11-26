@@ -21,6 +21,7 @@ const entryFiles = [
   "./templates/homepage.html",
   "./templates/last_redirecter.html",
   "./templates/mishna.html",
+  "./templates/mishna_yomi_redirector.html",
   "./templates/mishneh_torah.html",
   "./templates/notes_redirecter.html",
   "./templates/rambam_yomi_redirector.html",

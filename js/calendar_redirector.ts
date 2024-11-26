@@ -9,7 +9,14 @@ export function tryRedirect(englishTitle: string): void {
       for (const result of results.calendar_items) {
         if (result.title.en === englishTitle) {
           const [book, page] = splitOnBookName(result.ref);
-          window.location.replace(`${window.location.origin}/${book}/${page}`);
+          if (englishTitle === "Daily Mishnah") {
+            const chapter = (x: string) => x.split(":")[0];
+            const [start, end] = page.split("-");
+            window.location.replace(
+              `${window.location.origin}/${book}/${chapter(start)}/to/${chapter(end)}`);
+          } else {
+            window.location.replace(`${window.location.origin}/${book}/${page}`);
+          }
         }
       }
     },
