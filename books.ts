@@ -3,6 +3,7 @@ import {QueryGuesses} from "./apiTypes";
 import {numericLiteralAsInt} from "./hebrew";
 import {SIDDUR_REFS_ASHKENAZ, SIDDUR_REFS_SEFARD, BIRKAT_HAMAZON_REFS, RefPiece} from "./siddur";
 import {readUtf8} from "./files";
+import {splitOnBookName} from "./refs";
 import {jsonStringify} from "./util/json_stringify";
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -1714,16 +1715,15 @@ export const books = new BookIndex([
 ]);
 
 export function internalLinkableRef(ref: string): QueryResult | undefined {
-  for (const title of Object.keys(books.byCanonicalName)) {
-    if (ref.startsWith(title)) {
-      try {
-        return books.parse(ref.split(":")[0]);
-      } catch {
-        continue;
-      }
-    }
+  const bookName = splitOnBookName(ref)[0];
+  if (!(bookName in books.byCanonicalName)) {
+    return undefined;
   }
-  return undefined;
+  try {
+    return books.parse(ref.split(":")[0]);
+  } catch {
+    return undefined;
+  }
 }
 
 export function regenerateWebBooks(): void {
