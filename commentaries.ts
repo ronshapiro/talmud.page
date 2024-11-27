@@ -194,6 +194,24 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     showTitle: true,
   },
   {
+    englishName: "Hasagot HaRa'avad",
+    englishNamePattern: /^Hasagot HaRa'avad on /,
+    hebrewName: 'ראב"ד',
+    className: "raavad",
+  },
+  {
+    englishName: "Kessef Mishneh",
+    englishNamePattern: /^Kessef Mishneh on /,
+    hebrewName: "כסף משנה",
+    className: "kessef-mishneh",
+  },
+  {
+    englishName: "Lechem Mishneh",
+    englishNamePattern: /^Lechem Mishneh on /,
+    hebrewName: "לחם משנה",
+    className: "lechem-mishneh",
+  },
+  {
     englishName: "Peninei Halakhah",
     englishNamePattern: /^Peninei Halakhah, .*/,
     hebrewName: "פניני הלכה",
