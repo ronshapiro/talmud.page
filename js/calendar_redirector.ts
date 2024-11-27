@@ -9,13 +9,17 @@ export function tryRedirect(englishTitle: string): void {
       for (const result of results.calendar_items) {
         if (result.title.en === englishTitle) {
           const [book, page] = splitOnBookName(result.ref);
+          const navigateToPage = (suffix: string) => {
+            window.location.replace(`${window.location.origin}/${book}/${suffix}`);
+          };
           if (englishTitle === "Daily Mishnah") {
-            const chapter = (x: string) => x.split(":")[0];
             const [start, end] = page.split("-");
-            window.location.replace(
-              `${window.location.origin}/${book}/${chapter(start)}/to/${chapter(end)}`);
+            const startChapter = start.split(":")[0];
+            const endChapter = end.includes(":") ? end.split(":")[0] : startChapter;
+            const refLink = result.ref.split("-")[0];
+            navigateToPage(`${startChapter}/to/${endChapter}?ref_link=${refLink}`);
           } else {
-            window.location.replace(`${window.location.origin}/${book}/${page}`);
+            navigateToPage(page);
           }
         }
       }
@@ -26,3 +30,6 @@ export function tryRedirect(englishTitle: string): void {
     },
   });
 }
+
+
+tryRedirect((document.getElementById("sefariaCalendarName") as HTMLMetaElement).content);

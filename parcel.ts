@@ -16,15 +16,13 @@ if (fs.existsSync("./dist")) {
 
 const entryFiles = [
   "./templates/birkat_hamazon_page.html",
-  "./templates/daf_yomi_redirector.html",
+  "./templates/calendar.html",
   "./templates/draw.html",
   "./templates/homepage.html",
   "./templates/last_redirecter.html",
   "./templates/mishna.html",
-  "./templates/mishna_yomi_redirector.html",
   "./templates/mishneh_torah.html",
   "./templates/notes_redirecter.html",
-  "./templates/rambam_yomi_redirector.html",
   "./templates/service_worker.html",
   "./templates/siddur_page.html",
   "./templates/talmud_page.html",

@@ -30,6 +30,7 @@ import {Sitemap} from "./robots";
 import {jsonSize} from "./util/json_size";
 import {writeJson} from "./util/json_files";
 import {getWeekdayReading} from "./weekday_parshiot";
+import {registerCalendarRoutes} from "./calendars";
 
 const app = express();
 const debug = app.settings.env === "development";
@@ -249,10 +250,8 @@ app.get("/:title/notes", (req, res) => {
   return res.render("notes_redirecter.html", {title, bookTitle: title});
 });
 
-app.get("/mishnah-yomi", (req, res) => res.render("mishna_yomi_redirector.html"));
-app.get("/mishna-yomi", (req, res) => res.render("mishna_yomi_redirector.html"));
-app.get("/rambam-yomi", (req, res) => res.render("rambam_yomi_redirector.html"));
-app.get("/daf-yomi", (req, res) => res.render("daf_yomi_redirector.html"));
+registerCalendarRoutes(app);
+app.get("/mishnah-yomi", (req, res) => res.redirectWithQueryParameters("/mishna-yomi"));
 app.get("/yomi", (req, res) => res.redirectWithQueryParameters("/daf-yomi"));
 app.get("/last", (req, res) => res.render("last_redirecter.html"));
 
