@@ -135,6 +135,7 @@ export class DriveClient {
     if (this.isDebug) {
       // eslint-disable-next-line no-console
       this.whenDatabaseReady.execute(() => console.log("Debug database document ready!"));
+      (window as any).driveClient = this;
     }
 
     this.unsavedCommentStore = unsavedCommentStore;

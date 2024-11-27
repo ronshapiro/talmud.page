@@ -69,10 +69,6 @@ class Logger extends ConsoleLogger {
     // eslint-disable-next-line no-console
     super.debug("DEBUG", "|", this.endpoint, "|", ...args);
   }
-
-  newTimer(): Timer {
-    return new Timer(this);
-  }
 }
 
 declare module "express-serve-static-core/index" {

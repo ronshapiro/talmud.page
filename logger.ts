@@ -9,11 +9,33 @@ export interface Logger {
 }
 
 export class Timer {
-  constructor(private readonly logger: Logger, private readonly startTime = Date.now()) {}
+  private running = true;
+  private startTime = Date.now();
+  private accumulatedSeconds = 0;
+  constructor(private readonly logger: Logger) {}
+
+  pause(): void {
+    this.accumulatedSeconds += (Date.now() - this.startTime) / 1000;
+    this.running = false;
+  }
+
+  restart(): void {
+    this.startTime = Date.now();
+    this.running = true;
+  }
+
+  clear(): void {
+    this.running = false;
+    this.accumulatedSeconds = 0;
+  }
 
   finish(description: string): void {
-    const deltaInSeconds = (Date.now() - this.startTime) / 1000;
-    this.logger.debug(description, "took", deltaInSeconds, "seconds");
+    if (!this.running) {
+      this.logger.error("[Timer isn't running!]", description);
+    } else {
+      this.pause();
+      this.logger.debug(description, "took", this.accumulatedSeconds, "seconds");
+    }
   }
 }
 
