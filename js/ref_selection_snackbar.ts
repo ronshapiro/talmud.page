@@ -1,4 +1,5 @@
 /* global gtag,  */
+import {amudMetadata} from "./amud";
 import {showCorrectionModal} from "./CorrectionModal";
 import {showCommentEditorModal} from "./CommentEditorModal";
 import {findNodeOffset} from "./dom";
@@ -43,13 +44,14 @@ const findSefariaRef = (node: Node | null): FindSefariaRefReturnType => {
   let isEnglish = false;
   let hasFoundEnglishAndTranslationElement = false;
   let highlightId;
+  const {isTalmud} = amudMetadata();
   while (node?.parentElement) {
     const $parentElement = $(node.parentElement);
     isEnglish = (
       isEnglish
         || $parentElement.hasClass("english")
         || $parentElement.hasClass("english-ref-text"));
-    const isTranslationOfSourceText = $parentElement.hasClass("translation");
+    const isTranslationOfSourceText = $parentElement.hasClass("translation") && isTalmud;
     const ref = $parentElement.attr("sefaria-ref");
     highlightId ||= $parentElement.attr("highlight-id");
     if (ref === "ignore") {

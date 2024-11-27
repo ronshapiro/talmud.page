@@ -15,6 +15,7 @@ const AMUD_REGEX = /^\d{1,3}[ab]$/;
 
 interface AmudMetadata {
   masechet: string;
+  isTalmud: boolean;
   amudStart?: string;
   amudEnd?: string;
   range: () => string[];
@@ -41,6 +42,7 @@ const _amudMetadata = (book: string, pathname: string): AmudMetadata => {
     const sections = sectionNames.map(x => x.replace(/ /g, "_"));
     return {
       masechet: book,
+      isTalmud: false,
       amudStart: sections[0],
       amudEnd: sections.at(-1),
       range: () => sections,
@@ -55,6 +57,7 @@ const _amudMetadata = (book: string, pathname: string): AmudMetadata => {
   if (books[book].isMasechet) {
     return {
       masechet: book,
+      isTalmud: true,
       amudStart: validAmudOrUndefined(pathParts[1]),
       amudEnd: validAmudOrUndefined(pathParts[3] || pathParts[1]),
       range() {
@@ -77,6 +80,7 @@ const _amudMetadata = (book: string, pathname: string): AmudMetadata => {
   }
   return {
     masechet: book,
+    isTalmud: false,
     amudStart: pathParts[1],
     amudEnd: pathParts[3] || pathParts[1],
     range() {

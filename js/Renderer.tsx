@@ -21,6 +21,7 @@ import {DriveClient} from "./google_drive/client";
 import {BaseNavigationExtension, NavigationExtension} from "./NavigationExtension";
 import {useHtmlRef} from "./hooks";
 import {intToHebrewNumeral} from "../hebrew";
+import isEmptyText from "./is_empty_text";
 
 const {useEffect} = React;
 
@@ -156,8 +157,19 @@ export abstract class Renderer {
       // Reminder: Hadran sections have no steinsaltz
       if (commentaries?.Steinsaltz) {
         section.steinsaltzRetained = true;
+        section.continuallyRewriteSteinsaltzEnglish = isEmptyText(
+          commentaries.Steinsaltz.comments[0].en);
         commentaries.Translation = commentaries.Steinsaltz;
         delete commentaries.Steinsaltz;
+      } else if (section.steinsaltzRetained) {
+        // rewriting is deferred here since on successive calls to this method, the
+        // commentaries.Steinsaltz property may be already deleted, but we still want to persist the
+        // rewriting, i.e. for text highlighting. This is because the highlighting will occur on
+        // section.en since that is the "true"/source value. But we mangle it and render it
+        // elsewhere, so we must continually rewrite.
+        if (section.continuallyRewriteSteinsaltzEnglish) {
+          commentaries!.Translation.comments[0].en = section.en;
+        }
       } else if (section.ref.indexOf("Hadran ") === 0 || !this.isTalmud) {
         if (!section.commentary) section.commentary = {};
         section.commentary.Translation = {
@@ -169,13 +181,6 @@ export abstract class Renderer {
             sourceHeRef: "",
           }],
         };
-      }
-
-      // rewriting is deferred here since on successive calls to this method, the
-      // commentaries.Steinsaltz property may be already deleted, but we still want to persist the
-      // rewriting, i.e. for text highlighting
-      if (section.steinsaltzRetained) {
-        commentaries!.Translation.comments[0].en = section.en;
       }
     }
   }

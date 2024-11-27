@@ -11,6 +11,7 @@ const {useState} = React;
 export interface UiSegment extends Section {
   uuid: string;
   steinsaltzRetained?: true;
+  continuallyRewriteSteinsaltzEnglish?: boolean;
 }
 
 interface Props {
