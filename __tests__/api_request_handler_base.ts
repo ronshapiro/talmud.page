@@ -34,6 +34,10 @@ export const testPages = [
   new TestPage("I Samuel", "18"),
   new TestPage("Obadiah", "1"),
 
+  new TestPage("Mishnah Bava Kamma", "3"),
+
+  new TestPage("Mishneh Torah, Defilement by a Corpse", "5"),
+
   new TestPage("SiddurAshkenaz", "Hodu"),
   new TestPage("SiddurAshkenaz", "Ashrei"),
   new TestPage("SiddurAshkenaz", "Amidah_-_Opening"),
