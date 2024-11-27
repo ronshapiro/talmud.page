@@ -64,13 +64,13 @@ const findSefariaRef = (node: Node | null): FindSefariaRefReturnType => {
       } else {
         return {
           ref,
-          parentRef: $parentElement.parent().closest("[sefaria-ref]").attr("sefaria-ref") as string,
-          link: $parentElement.attr("tp-link") as string,
+          parentRef: $parentElement.parent().closest("[sefaria-ref]").attr("sefaria-ref"),
+          link: $parentElement.attr("tp-link"),
           hebrew: nodeAndText($parentElement.find(".hebrew, .hebrew-ref-text")[0]),
           translation: isTranslationOfSourceText
             ? undefined
             : nodeAndText($parentElement.find(".english, .english-ref-text")[0]),
-          amud: $parentElement.closest(".amudContainer").attr("amud") as string,
+          amud: $parentElement.closest(".amudContainer").attr("data-amud"),
           isEnglish,
           isPersonalNote: $parentElement.hasClass('personal-notes'),
           highlightId,
