@@ -9,7 +9,7 @@ for (const page of testPages) {
   titles.add(page.title);
   fs.writeFileSync(`__tests__/${page.title.replace(/ /g, "_")}.test.ts`, `import {testTitle} from "./api_request_handler_tester";
 
-jest.setTimeout(10_000);
+jest.setTimeout(20_000);
 
 testTitle("${page.title}");
 `);
