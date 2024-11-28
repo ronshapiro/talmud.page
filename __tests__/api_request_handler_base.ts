@@ -38,6 +38,11 @@ export const testPages = [
 
   new TestPage("Mishneh Torah, Defilement by a Corpse", "5"),
 
+  new TestPage("Shulchan Arukh, Orach Chayim", "10"),
+
+  new TestPage("Peninei Halakhah, Pesach", "Introduction"),
+  new TestPage("Peninei Halakhah, Pesach", "1:1"),
+
   new TestPage("SiddurAshkenaz", "Hodu"),
   new TestPage("SiddurAshkenaz", "Ashrei"),
   new TestPage("SiddurAshkenaz", "Amidah_-_Opening"),

@@ -122,10 +122,13 @@ function Grid(): React.ReactElement {
       }
     } else {
       back = routerTo("browse", container.indexCategory);
+      const baseWidth = container.sections.some(x => x.length >= 5) ? 80 : 60;
       for (const [section, color] of withGradient(SECTIONS_COLOR, container.sections)) {
         const onClick = routerTo(extension, section);
+        const width = section === `Introduction` ? `${baseWidth * 2 + 20}px` : `${baseWidth}px`;
+        const key = section;
         items.push(
-          <ItemElement key={section} text={section} onClick={onClick} width="60px" color={color} />,
+          <ItemElement key={key} text={section} onClick={onClick} width={width} color={color} />,
         );
       }
     }

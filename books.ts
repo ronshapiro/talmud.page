@@ -100,6 +100,14 @@ export abstract class Book {
     return false;
   }
 
+  isShulchanArukh(): boolean {
+    return false;
+  }
+
+  isPenineiHalacha(): boolean {
+    return false;
+  }
+
   sectionWord(): string {
     return "section";
   }
@@ -411,6 +419,97 @@ class MishnehTorahBook extends Book {
   }
 }
 
+class ShulchanArukhBook extends Book {
+  constructor(params: Omit<BookConstructorParams, "start" | "sections">) {
+    super({...params, start: "1", sections: chapterSections(parseInt(params.end))});
+  }
+
+  nextPage(page: string): string {
+    return (parseInt(page) + 1).toString();
+  }
+
+  previousPage(page: string): string {
+    return (parseInt(page) - 1).toString();
+  }
+
+  arePagesInReverseOrder(start: string, end: string): boolean {
+    return parseInt(start) > parseInt(end);
+  }
+
+  bookType(): string {
+    return "Shulchan Arukh";
+  }
+
+  indexCategory(): string | undefined {
+    return "Shulchan Arukh";
+  }
+
+  sectionWord(): string {
+    return "siman";
+  }
+
+  indexSubcategoryTitle(): string {
+    return this.canonicalName.replace("Shulchan Arukh, ", "");
+  }
+
+  indexSubcategoryHebrewTitle(): string {
+    return this.hebrewName.replace("שולחן ערוך, ", "");
+  }
+
+  isShulchanArukh(): boolean {
+    return true;
+  }
+}
+
+class PenineiHalachaBook extends Book {
+  constructor(params: Omit<BookConstructorParams, "start" | "end">) {
+    super({...params, start: params.sections[0], end: params.sections.at(-1)!});
+  }
+
+  nextPage(page: string): string {
+    const sections = [...this.sections];
+    return sections[sections.indexOf(page) + 1];
+  }
+
+  previousPage(page: string): string {
+    const sections = [...this.sections];
+    return sections[sections.indexOf(page) - 1];
+  }
+
+  arePagesInReverseOrder(start: string, end: string): boolean {
+    const sections = [...this.sections];
+    return sections.indexOf(start) > sections.indexOf(end);
+  }
+
+  bookType(): string {
+    return "Peninei Halacha";
+  }
+
+  indexCategory(): string | undefined {
+    return "Peninei Halacha";
+  }
+
+  sectionWord(): string {
+    return "chapter";
+  }
+
+  indexSubcategoryTitle(): string {
+    return this.canonicalName.replace("Peninei Halakhah, ", "");
+  }
+
+  indexSubcategoryHebrewTitle(): string {
+    return this.hebrewName.replace("פניני הלכה, ", "");
+  }
+
+  isPenineiHalacha(): boolean {
+    return true;
+  }
+
+  bookNameForRef(): string {
+    return super.bookNameForRef() + ",";
+  }
+}
+
 interface LiturgicalBookConstructorParameters extends Omit<
   BookConstructorParams, "sections" | "end" | "start"> {
   sections: Record<string, RefPiece[]>;
@@ -601,18 +700,21 @@ class AmudRangeParser extends RangeParser {
   }
 }
 
-class ChapterRangeParser extends RangeParser {
+class HardcodedRangeParser extends RangeParser {
+  constructor(readonly sections: Set<string>) { super(); }
+
   validate(pages: string[]): void {
-    const invalid = pages.filter(x => parseInt(x).toString() !== x);
+    const invalid = pages.filter(x => !this.sections.has(x));
     switch (invalid.length) {
       case 0: {
         return;
       }
       case 1: {
-        throw new InvalidQueryException(`${invalid[0]} is not a number`);
+        throw new InvalidQueryException(`${invalid[0]} is not a recognized section`);
       }
       default: {
-        throw new InvalidQueryException(`${formatListEnglish(invalid)} are not numbers`);
+        throw new InvalidQueryException(
+          `${formatListEnglish(invalid)} are not recognized sections`);
       }
     }
   }
@@ -749,7 +851,9 @@ export class BookIndex {
       words = [sections[0], "-", sections[1]];
     }
 
-    const rangeParser = book.isTalmud() ? new AmudRangeParser() : new ChapterRangeParser();
+    const rangeParser = book.isTalmud()
+      ? new AmudRangeParser()
+      : new HardcodedRangeParser(book.sections);
 
     if (words.length === 1) {
       rangeParser.validate(words);
@@ -1770,14 +1874,34 @@ export const books = new BookIndex([
     (JSON.parse(readUtf8("precomputed/mishneh_torah_books_cached.json")) as any[])
       .map(x => new MishnehTorahBook(x))
   ),
+  ...(
+    (JSON.parse(readUtf8("precomputed/shulchan_arukh_books_cached.json")) as any[])
+      .map(x => new ShulchanArukhBook(x))
+  ),
+  ...(
+    (JSON.parse(readUtf8("precomputed/peninei_halakhah_books_cached.json")) as any[])
+      .map(x => new PenineiHalachaBook(x))
+  ),
 ]);
 
 export function internalLinkableRef(ref: string): QueryResult | undefined {
-  const bookName = splitOnBookName(ref)[0];
-  if (!(bookName in books.byCanonicalName)) {
+  const [bookName, page] = splitOnBookName(ref);
+  const book = books.byCanonicalName[bookName];
+  if (!book) {
     return undefined;
   }
+
+  const parts = page.split(":");
+  for (let i = 1; i <= parts.length; i++) {
+    const candidate = parts.slice(0, i).join(":");
+    if (book.sections.has(candidate)) {
+      return new QueryResult(bookName, candidate);
+    }
+  }
+
   try {
+    // TODO: investigate how to remove this. It seems like hyphens are where things are getting
+    // thrown off
     return books.parse(ref.split(":")[0]);
   } catch {
     return undefined;

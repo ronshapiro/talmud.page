@@ -36,6 +36,18 @@ const HARD_CODED_SECTIONS: Record<string, [string[], string]> = {
   BirkatHamazon: [BIRKAT_HAMAZON_SECTIONS, "Birkat Hamazon"],
 };
 
+export function tryReadHardcodedSections(): string[] | undefined {
+  const hardcoded = (document.getElementById("metaBookSections") as HTMLMetaElement)?.content;
+  if (!hardcoded) return undefined;
+  try {
+    const asText = atob(hardcoded);
+    return JSON.parse(asText) as string[];
+  } catch (e: any) {
+    console.error(e);
+    return undefined;
+  }
+}
+
 const _amudMetadata = (book: string, pathname: string): AmudMetadata => {
   if (book in HARD_CODED_SECTIONS) {
     const [sectionNames, title] = HARD_CODED_SECTIONS[book];
@@ -84,11 +96,21 @@ const _amudMetadata = (book: string, pathname: string): AmudMetadata => {
     amudStart: pathParts[1],
     amudEnd: pathParts[3] || pathParts[1],
     range() {
+      const hardcoded = tryReadHardcodedSections();
       if (!this.amudStart) {
         return [];
       }
       if (!this.amudEnd) {
         return [this.amudStart];
+      }
+
+      if (hardcoded) {
+        const start = hardcoded.indexOf(this.amudStart);
+        const end = hardcoded.indexOf(this.amudEnd);
+        if (start === -1 || end === -1) {
+          throw new Error(`Invalid section(s): ${start}, ${end}`);
+        }
+        return hardcoded.slice(start, end + 1);
       }
 
       const start = parseInt(this.amudStart);

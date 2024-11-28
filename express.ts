@@ -302,8 +302,19 @@ function template(book: Book): string {
     return "tanakh.html";
   } else if (book.isMishnehTorah()) {
     return "mishneh_torah.html";
+  } else if (book.isShulchanArukh()) {
+    return "shulchan_arukh.html";
+  } else if (book.isPenineiHalacha()) {
+    return "peninei_halacha.html";
   }
   throw new Error(book.canonicalName);
+}
+
+function templateArgs(book: Book): Record<string, any> {
+  return {
+    bookTitle: book.canonicalName,
+    bookSections: btoa(JSON.stringify([...book.sections])),
+  };
 }
 
 app.get("/:title/:section", (req, res) => {
@@ -317,7 +328,7 @@ app.get("/:title/:section", (req, res) => {
     return res.redirectWithQueryParameters(fullDafUrl(book, section, section));
   }
   validatePages(book, section);
-  return res.render(template(book), {title: `${title} ${section}`, bookTitle: book.canonicalName});
+  return res.render(template(book), {title: `${title} ${section}`, ...templateArgs(book)});
 });
 
 app.get("/:title/:start/to/:end", (req, res) => {
@@ -341,7 +352,7 @@ app.get("/:title/:start/to/:end", (req, res) => {
     return res.redirectWithQueryParameters(`/${title}/${end}/to/${start}`);
   }
 
-  return res.render(template(book), {title: `${title} ${start} - ${end}`, bookTitle: book.canonicalName});
+  return res.render(template(book), {title: `${title} ${start} - ${end}`, ...templateArgs(book)});
 });
 
 class CacheValue<T> {

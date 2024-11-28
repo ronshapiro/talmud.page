@@ -1254,6 +1254,108 @@ export const books: Record<string, Book> = {
     "isMasechet": false,
     "start": "1"
   },
+  "Peninei Halakhah, Berakhot": {
+    "end": "18:5",
+    "hebrewName": "פניני הלכה, ברכות",
+    "isMasechet": false,
+    "start": "Introduction"
+  },
+  "Peninei Halakhah, Days of Awe": {
+    "end": "10:18",
+    "hebrewName": "פניני הלכה, ימים נוראים",
+    "isMasechet": false,
+    "start": "Introduction"
+  },
+  "Peninei Halakhah, Family": {
+    "end": "10:14",
+    "hebrewName": "פניני הלכה, משפחה",
+    "isMasechet": false,
+    "start": "Introduction"
+  },
+  "Peninei Halakhah, Family Purity": {
+    "end": "10:13",
+    "hebrewName": "פניני הלכה, טהרת המשפחה",
+    "isMasechet": false,
+    "start": "Introduction"
+  },
+  "Peninei Halakhah, Festivals": {
+    "end": "13:15",
+    "hebrewName": "פניני הלכה, מועדים",
+    "isMasechet": false,
+    "start": "Introduction"
+  },
+  "Peninei Halakhah, Kashrut": {
+    "end": "37:11",
+    "hebrewName": "פניני הלכה, כשרות",
+    "isMasechet": false,
+    "start": "Introduction"
+  },
+  "Peninei Halakhah, Likkutim I": {
+    "end": "11:8",
+    "hebrewName": "פניני הלכה, ליקוטים א",
+    "isMasechet": false,
+    "start": "Introduction"
+  },
+  "Peninei Halakhah, Likkutim II": {
+    "end": "17:8",
+    "hebrewName": "פניני הלכה, ליקוטים ב",
+    "isMasechet": false,
+    "start": "Introduction"
+  },
+  "Peninei Halakhah, Pesach": {
+    "end": "16:38",
+    "hebrewName": "פניני הלכה, פסח",
+    "isMasechet": false,
+    "start": "Introduction"
+  },
+  "Peninei Halakhah, Prayer": {
+    "end": "25:9",
+    "hebrewName": "פניני הלכה, תפילה",
+    "isMasechet": false,
+    "start": "Introduction"
+  },
+  "Peninei Halakhah, Shabbat": {
+    "end": "30:14",
+    "hebrewName": "פניני הלכה, שבת",
+    "isMasechet": false,
+    "start": "Introduction"
+  },
+  "Peninei Halakhah, Shemitah and Yovel": {
+    "end": "11:10",
+    "hebrewName": "פניני הלכה, שביעית ויובל",
+    "isMasechet": false,
+    "start": "Introduction"
+  },
+  "Peninei Halakhah, Simchat Habayit U'Virkhato": {
+    "end": "10:10",
+    "hebrewName": "פניני הלכה, שמחת הבית וברכתו",
+    "isMasechet": false,
+    "start": "Introduction"
+  },
+  "Peninei Halakhah, Sukkot": {
+    "end": "8:5",
+    "hebrewName": "פניני הלכה, סוכות",
+    "isMasechet": false,
+    "start": "Introduction"
+  },
+  "Peninei Halakhah, The Nation and the Land": {
+    "end": "Supplement, Responsa of Rabbi Nahum Rabinovitch 1",
+    "hebrewName": "פניני הלכה, העם והארץ",
+    "isMasechet": false,
+    "start": "Introduction"
+  },
+  "Peninei Halakhah, Women's Prayer": {
+    "end": "24:6",
+    "hebrewName": "פניני הלכה, תפילת נשים",
+    "isMasechet": false,
+    "start": "Introduction"
+  },
+  "Peninei Halakhah, Zemanim": {
+    "end": "16:16",
+    "hebrewName": "פניני הלכה, זמנים",
+    "isMasechet": false,
+    "start": "Introduction"
+  },
   "Pesachim": {
     "end": "121b",
     "hebrewName": "פסחים",
@@ -1313,6 +1415,30 @@ export const books: Record<string, Book> = {
     "hebrewName": "שבועות",
     "isMasechet": true,
     "start": "2a"
+  },
+  "Shulchan Arukh, Choshen Mishpat": {
+    "end": "427",
+    "hebrewName": "שולחן ערוך, חושן משפט",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Shulchan Arukh, Even HaEzer": {
+    "end": "178",
+    "hebrewName": "שולחן ערוך, אבן העזר",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Shulchan Arukh, Orach Chayim": {
+    "end": "697",
+    "hebrewName": "שולחן ערוך, אורח חיים",
+    "isMasechet": false,
+    "start": "1"
+  },
+  "Shulchan Arukh, Yoreh De'ah": {
+    "end": "403",
+    "hebrewName": "שולחן ערוך, יורה דעה",
+    "isMasechet": false,
+    "start": "1"
   },
   "SiddurAshkenaz": {
     "end": "Aleinu",

@@ -97,3 +97,16 @@ export function stripHebrewNonlettersOrVowels(text: string): string {
       .replace(/<small><\/small>/g, "") // sometimes the after-effect of replacing a paseq
   );
 }
+
+export function penineiHalachaHebrewTitleName(hebrewName: string, page: string): string {
+  const section = (
+    page === "Introduction"
+      ? "הקדמה"
+      : page.split(":").map(x => parseInt(x)).map(intToHebrewNumeral).join(":"));
+  return `${hebrewName} ${section}`;
+}
+
+export function mishnehTorahHebrewTitleName(hebrewName: string, page: string): string {
+  const chapter = intToHebrewNumeral(parseInt(page));
+  return `${hebrewName}, פרק ${chapter}`;
+}

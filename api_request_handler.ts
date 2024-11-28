@@ -17,6 +17,8 @@ import {
   stripHebrewNonletters,
   stripHebrewNonlettersOrVowels,
   intToHebrewNumeral,
+  mishnehTorahHebrewTitleName,
+  penineiHalachaHebrewTitleName,
   ALEPH,
   TAV,
 } from "./hebrew";
@@ -1022,7 +1024,14 @@ export abstract class AbstractApiRequestHandler {
       english.push("");
     }
 
-    if (hebrew.length !== english.length) {
+    if (this.allowUnequalEnglishLength()) {
+      while (hebrew.length < english.length) {
+        hebrew.push("");
+      }
+      while (english.length < hebrew.length) {
+        english.push("");
+      }
+    } else if (hebrew.length !== english.length) {
       const extra = hebrew.slice(english.length).concat(english.slice(hebrew.length));
       this.logger.error("Unmatched text/translation: ", extra);
       throw new ApiException(
@@ -1032,6 +1041,10 @@ export abstract class AbstractApiRequestHandler {
     }
 
     return [hebrew, english];
+  }
+
+  protected allowUnequalEnglishLength(): boolean {
+    return false;
   }
 
   private transformData(
@@ -1496,6 +1509,43 @@ export class MishnaApiRequestHandler extends AbstractApiRequestHandler {
   }
 }
 
+export class MishnehTorahApiRequestHandler extends AbstractApiRequestHandler {
+  protected makeId(): string {
+    return this.page;
+  }
+
+  protected makeTitleHebrew(): string {
+    return mishnehTorahHebrewTitleName(this.book().hebrewName, this.page);
+  }
+}
+
+export class ShulchanArukhApiRequestHandler extends AbstractApiRequestHandler {
+  protected makeId(): string {
+    return this.page;
+  }
+
+  protected makeTitleHebrew(): string {
+    const precomputedChapterTitle = shulchanArukhChapterTitle(
+      `${this.book().canonicalName} ${this.page}`);
+    if (precomputedChapterTitle) return precomputedChapterTitle;
+    const {hebrewName} = this.book();
+    return `${hebrewName}, סעיף ${intToHebrewNumeral(parseInt(this.page))}`;
+  }
+}
+
+export class PenineiHalachaApiRequestHandler extends AbstractApiRequestHandler {
+  protected makeId(): string {
+    return this.page;
+  }
+
+  protected makeTitleHebrew(): string {
+    return penineiHalachaHebrewTitleName(this.book().hebrewName, this.page);
+  }
+
+  protected allowUnequalEnglishLength(): boolean {
+    return true;
+  }
+}
 
 class WeekdayTorahPortionHandler extends AbstractApiRequestHandler {
   protected makeId(): string {
@@ -2022,14 +2072,6 @@ class BirkatHamazonApiRequestHandler extends LiturgicalApiRequestHandler {
 }
 
 export class ApiRequestHandler {
-  private talmudHandlerClass = TalmudApiRequestHandler;
-  private tanakhHandlerClass = TanakhApiRequestHandler;
-  private mishnaHandlerClass = MishnaApiRequestHandler;
-  private siddurAshkenazHandlerClass = SiddurAshkenazApiRequestHandler;
-  private siddurSefardHandlerClass = SiddurSefardApiRequestHandler;
-  private weekdayTorahHandlerClass = WeekdayTorahPortionHandler;
-  private birkatHamazonHandlerClass = BirkatHamazonApiRequestHandler;
-
   constructor(
     private requestMaker: RequestMaker,
     private logger: Logger = consoleLogger,
@@ -2038,20 +2080,23 @@ export class ApiRequestHandler {
   handleRequest(bookName: string, page: string): Promise<ApiResponse> {
     const [handlerClass, isLiturgical] = (() => {
       if (bookName === "SiddurAshkenaz") {
-        return [this.siddurAshkenazHandlerClass, true];
+        return [SiddurAshkenazApiRequestHandler, true];
       } else if (bookName === "SiddurSefard") {
-        return [this.siddurSefardHandlerClass, true];
+        return [SiddurSefardApiRequestHandler, true];
       } else if (bookName === "WeekdayTorah") {
-        return [this.weekdayTorahHandlerClass, false];
+        return [WeekdayTorahPortionHandler, false];
       } else if (bookName === "BirkatHamazon") {
-        return [this.birkatHamazonHandlerClass, true];
+        return [BirkatHamazonApiRequestHandler, true];
       }
       const book = books.byCanonicalName[bookName];
-      if (book.isMishna()) return [this.mishnaHandlerClass, false];
+      if (book.isMishna()) return [MishnaApiRequestHandler, false];
+      if (book.isMishnehTorah()) return [MishnehTorahApiRequestHandler, false];
+      if (book.isShulchanArukh()) return [ShulchanArukhApiRequestHandler, false];
+      if (book.isPenineiHalacha()) return [PenineiHalachaApiRequestHandler, false];
 
       const clazz = book.isTalmud()
-        ? this.talmudHandlerClass
-        : this.tanakhHandlerClass;
+        ? TalmudApiRequestHandler
+        : TanakhApiRequestHandler;
       return [clazz, false];
     })();
 
