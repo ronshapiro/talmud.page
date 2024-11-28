@@ -1938,6 +1938,27 @@ export function internalLinkableRef(ref: string): QueryResult | undefined {
     return undefined;
   }
 
+  if (page.includes("-")) {
+    // This can be improved to check for individual segments in the range, like what is done below.
+    // But that logic starts to get complicated.
+    let [start, end] = page.split("-", 2);
+    if (start.includes(":")) {
+      start = start.slice(0, start.lastIndexOf(":") + 1);
+      if (end.includes(":")) {
+        end = end.slice(0, end.lastIndexOf(":") + 1);
+      } else {
+        end = "never include";
+      }
+    }
+
+    if (book.sections.has(start)) {
+      if (book.sections.has(end)) {
+        return new QueryResult(bookName, start, end);
+      }
+      return new QueryResult(bookName, start);
+    }
+  }
+
   const parts = page.split(":");
   for (let i = 1; i <= parts.length; i++) {
     const candidate = parts.slice(0, i).join(":");
@@ -1945,14 +1966,7 @@ export function internalLinkableRef(ref: string): QueryResult | undefined {
       return new QueryResult(bookName, candidate);
     }
   }
-
-  try {
-    // TODO: investigate how to remove this. It seems like hyphens are where things are getting
-    // thrown off
-    return books.parse(ref.split(":")[0]);
-  } catch {
-    return undefined;
-  }
+  return undefined;
 }
 
 export function regenerateWebBooks(): void {
