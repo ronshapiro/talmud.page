@@ -8,3 +8,8 @@ export function useIncrementer(value = 0): [number, () => void] {
   const [state, setState] = useState(value);
   return [state, () => setState(old => old + 1)];
 }
+
+export function useAlternator(defaultValue: boolean): [boolean, () => void] {
+  const [state, setState] = useState(defaultValue);
+  return [state, () => setState(old => !old)];
+}

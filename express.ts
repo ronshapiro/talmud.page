@@ -246,8 +246,12 @@ app.get("/:title/notes", (req, res) => {
   return res.render("notes_redirecter.html", {title, bookTitle: title});
 });
 
+app.get("/browse", (req, res) => res.render("browse.html"));
+app.get("/browse/*", (req, res) => res.render("browse.html"));
 registerCalendarRoutes(app);
-app.get("/mishnah-yomi", (req, res) => res.redirectWithQueryParameters("/mishna-yomi"));
+for (const alias of ["/mishna-yomi", "/mishnah-yomi", "/mishnah-yomit"]) {
+  app.get(alias, (req, res) => res.redirectWithQueryParameters("/mishna-yomit"));
+}
 app.get("/yomi", (req, res) => res.redirectWithQueryParameters("/daf-yomi"));
 app.get("/last", (req, res) => res.render("last_redirecter.html"));
 

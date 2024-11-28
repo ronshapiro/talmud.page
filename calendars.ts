@@ -19,7 +19,7 @@ const calendars: Calendar[] = [{
   webTitleName: "Mishna Yomi",
   todaysNoun: "Mishnayot",
   todaysNounError: "mishnayot",
-  route: "/mishna-yomi",
+  route: "/mishna-yomit",
 }, {
   sefariaCalendarName: "Daily Rambam",
   webTitleName: "Rambam Yomi",

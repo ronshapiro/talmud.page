@@ -5,6 +5,7 @@ import {SIDDUR_REFS_ASHKENAZ, SIDDUR_REFS_SEFARD, BIRKAT_HAMAZON_REFS, RefPiece}
 import {readUtf8} from "./files";
 import {splitOnBookName} from "./refs";
 import {jsonStringify} from "./util/json_stringify";
+import {ListMultimap} from "./multimap";
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const levenshteinEditDistance = require("levenshtein-edit-distance");
@@ -116,6 +117,15 @@ export abstract class Book {
   }
 
   abstract bookType(): string;
+  abstract indexCategory(): string | undefined;
+
+  indexSubcategoryTitle(): string {
+    return this.canonicalName;
+  }
+
+  indexSubcategoryHebrewTitle(): string {
+    return this.hebrewName;
+  }
 }
 
 class SyntheticBook extends Book {
@@ -155,12 +165,12 @@ class SyntheticBook extends Book {
     return section;
   }
 
-  toString(): string {
-    return `${this.bookType()}[${this.canonicalName}]`;
-  }
-
   bookType(): string {
     return this.canonicalName;
+  }
+
+  indexCategory(): string | undefined {
+    return undefined;
   }
 }
 
@@ -214,6 +224,10 @@ export class TalmudMasechet extends Book {
 
   bookType(): string {
     return "Masechet";
+  }
+
+  indexCategory(): string | undefined {
+    return "Talmud";
   }
 
   isTalmud(): boolean {
@@ -296,6 +310,22 @@ class MishnaMasechet extends Book {
     return "Mishna";
   }
 
+  indexCategory(): string | undefined {
+    return "Mishna";
+  }
+
+  indexSubcategoryTitle(): string {
+    return this.canonicalName.replace("Mishnah ", "");
+  }
+
+  indexSubcategoryHebrewTitle(): string {
+    return this.hebrewName.replace("משנה ", "");
+  }
+
+  sectionWord(): string {
+    return "chapter";
+  }
+
   isMishna(): boolean {
     return true;
   }
@@ -329,6 +359,14 @@ class BibleBook extends Book {
   bookType(): string {
     return "Book";
   }
+
+  indexCategory(): string | undefined {
+    return "Tanakh";
+  }
+
+  sectionWord(): string {
+    return "chapter";
+  }
 }
 
 class MishnehTorahBook extends Book {
@@ -350,6 +388,22 @@ class MishnehTorahBook extends Book {
 
   bookType(): string {
     return "Mishneh Torah";
+  }
+
+  indexCategory(): string | undefined {
+    return "Mishneh Torah";
+  }
+
+  sectionWord(): string {
+    return "chapter";
+  }
+
+  indexSubcategoryTitle(): string {
+    return this.canonicalName.replace("Mishneh Torah, ", "");
+  }
+
+  indexSubcategoryHebrewTitle(): string {
+    return this.hebrewName.replace("משנה תורה, ", "");
   }
 
   isMishnehTorah(): boolean {
@@ -405,6 +459,10 @@ class LiturgicalBook extends Book {
   /* eslint-enable @typescript-eslint/no-unused-vars */
 
   bookType(): string { return this._bookType; }
+
+  indexCategory(): string | undefined {
+    return "Prayer";
+  }
 
   bookNameForRef(): string { return this._bookNameForRef; }
 }
@@ -1747,4 +1805,57 @@ export function regenerateWebBooks(): void {
 export const books: Record<string, Book> = ${jsonStringify(data).replace(/}\n}\n$/, "},\n};")}
 `;
   fs.writeFileSync("js/books.ts", output);
+}
+
+export function regenerateBrowseIndex(): void {
+  const index: Record<string, any> = {};
+  const categories = new ListMultimap<string, string>();
+  for (const book of books.allBooks) {
+    if (!book.indexCategory()) {
+      continue;
+    }
+    categories.put(book.indexCategory()!, book.canonicalName);
+
+    index[book.canonicalName] = {
+      canonicalName: book.canonicalName,
+      hebrewName: book.hebrewName,
+      sections: [...book.sections],
+      indexCategory: book.indexCategory(),
+      indexSubcategoryTitle: book.indexSubcategoryTitle(),
+      indexSubcategoryHebrewTitle: book.indexSubcategoryHebrewTitle(),
+    };
+  }
+  for (const [category, contents] of categories.asMap().entries()) {
+    index[category] = {
+      contents,
+    };
+  }
+  const browseIndex = {
+    index,
+    categories: [...categories.keys()],
+  };
+
+  const output = `/* eslint-disable quote-props,comma-dangle */
+
+export interface Book {
+  canonicalName: string;
+  hebrewName: string;
+  sections: string[];
+  indexCategory: string;
+  indexSubcategoryTitle: string;
+  indexSubcategoryHebrewTitle: string;
+}
+
+export interface Category {
+  contents: string[];
+}
+
+interface BrowseIndex {
+  categories: string[];
+  index: Record<string, Book | Category>;
+}
+
+export const browseIndex: BrowseIndex = ${jsonStringify(browseIndex).replace(/}\n}\n$/, "},\n};")}
+`;
+  fs.writeFileSync("js/BrowseIndex.ts", output);
 }
