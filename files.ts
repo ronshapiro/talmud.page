@@ -5,7 +5,7 @@ export function readUtf8Async(path: string): Promise<string> {
   return fs.promises.open(path, "r")
     .then(file => {
       const text = file.readFile({encoding: "utf-8"});
-      file.close();
+      text.then(() => file.close());
       return text;
     });
 }
