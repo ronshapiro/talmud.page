@@ -31,6 +31,8 @@ function referencesMishna(text: string): boolean {
   text = sanitizeHtml(text);
   return (text.includes("שנינו במשנה")
     || text.includes("שנינו במשנתנו")
+    || text.includes("במשנה שנינו")
+    || text.includes("במשנה הובאה")
     || text.includes("נאמר במשנה"));
 }
 
@@ -96,6 +98,7 @@ for (const book of books.allBooks) {
       fs.readFileSync(cachedOutputFilePath(book, section), {encoding: "utf-8"})) as Amud;
 
     for (const segment of result.sections) {
+      if (segment.steinsaltz_start_of_sugya) segment.startOfSection = true;
       const isHadranEndOfMasechet = segment.ref === "Hadran 1";
       if (isMissingSteinsaltz(segment)) {
         throw new Error([
