@@ -7,24 +7,56 @@ import {mishnaReferencePath} from "../precomputed";
 import {sanitizeHtml} from "../source_formatting/html_sanitization_node";
 import {writeJson} from "../util/json_files";
 
-function mergeRefs(book: Book, start: string, end: string): string {
-  const startPrefix = start.split(":")[0];
-  const [endPrefix, endSuffix] = end.split(":");
-  if (startPrefix === endPrefix) {
-    return `${start}-${endSuffix}`;
+function canonicalizeToRefRange(ref: string): [[string, string], [string, string]] {
+  if (ref.includes("-")) {
+    const [start, end] = ref.split("-");
+    const [startPage, startSegment] = start.split(":");
+    const endParts = end.split(":");
+    if (endParts.length === 1) {
+      return [[startPage, startSegment], [startPage, endParts[0]]];
+    } else {
+      return [[startPage, startSegment], [endParts[0], endParts[1]]];
+    }
   }
-  const endAmud = end.replace(book.canonicalName + " ", "");
-  return `${start}-${endAmud}`;
+  const [page, segment] = ref.split(":");
+  return [[page, segment], [page, segment]];
+}
+
+function mergeRefs(book: Book, first: string, second: string): string {
+  if (first === second) return first;
+
+  const bookPrefix = book.canonicalName + " ";
+  first = first.replace(bookPrefix, "");
+  second = second.replace(bookPrefix, "");
+
+  const [startPage, startSegment] = canonicalizeToRefRange(first)[0];
+  const [endPage, endSegment] = canonicalizeToRefRange(second)[1];
+
+  if (startPage === endPage) {
+    return `${bookPrefix}${startPage}:${startSegment}-${endSegment}`;
+  } else {
+    return `${bookPrefix}${startPage}:${startSegment}-${endPage}:${endSegment}`;
+  }
+}
+
+function startsWithHeading(text: string, prefix: string): boolean {
+  const stripped = stripHebrewNonletters(text);
+  for (const beginning of ["", "<strong>", "<strong><big>", "<big>", "<big><strong>"]) {
+    for (const chupchik of ["'", "׳"]) {
+      if (stripped.startsWith(`${beginning}${prefix}${chupchik}`)) {
+        return true;
+      }
+    }
+  }
+  return false;
 }
 
 function startsWithMatni(text: string): boolean {
-  return stripHebrewNonletters(text).startsWith("מתני׳");
+  return startsWithHeading(text, "מתני");
 }
-
-function doesntStartWithGemara(text: string): boolean {
-  return !stripHebrewNonletters(text).startsWith("גמ׳");
+function startsWithGemara(text: string): boolean {
+  return startsWithHeading(text, "גמ");
 }
-
 const HEBREW_MISHNA_OR_GEMARA_START = (
   /^(<big><strong>|<strong><big>)(.*)(<\/strong><\/big>|<\/big><\/strong>).*$/);
 function referencesMishna(text: string): boolean {
@@ -36,15 +68,18 @@ function referencesMishna(text: string): boolean {
     || text.includes("נאמר במשנה"));
 }
 
-function isMishna(segment: Section): boolean {
-  if (segment.ref.endsWith(" 2a:1")) return true;
-  if (!segment.startOfSection) return false;
-  if (typeof segment.he !== "string") return false;
-  if (startsWithMatni(segment.he)) return true;
+type StartKind = "mishna" | "gemara" | undefined;
+function startKind(segment: Section): StartKind {
+  if (segment.ref.endsWith(" 2a:1")) return "mishna";
+  if (segment.ref === "Tamid 25b:1") return "mishna";
+  if (typeof segment.he !== "string") return undefined;
+
+  if (!segment.startOfSection) return undefined;
+  if (startsWithMatni(segment.he)) return "mishna";
 
   const match = segment.he.match(HEBREW_MISHNA_OR_GEMARA_START);
-  if (!match) return false;
-  return startsWithMatni(match[2]) || doesntStartWithGemara(match[2]);
+  if (!match) return undefined;
+  return startsWithGemara(match[2]) ? "gemara" : "mishna";
 }
 
 const REFS_WITHOUT_STEINSALTZ_BECAUSE_THEYRE_JUST_SIMANIM = new Set([
@@ -72,11 +107,14 @@ for (const book of books.allBooks) {
   const sugyaEndpoints: any[] = [];
   const perekEndpoints = [];
   const refPointers: any = {};
+  const refPointersToSerialize: any = {};
   const mishnaReferences: Record<string, Record<string, string>> = {};
 
   let perekStart: string | undefined;
   let refsInSugya: string[] = [];
   let lastMishna: string | undefined;
+  let lastMishnaEnd: string | undefined;
+  let debugSegment: string | undefined;
 
   const saveSugya = () => {
     if (refsInSugya.length > 0) {
@@ -86,18 +124,23 @@ for (const book of books.allBooks) {
 
       for (const ref of refsInSugya) {
         const sugyaRef = mergeRefs(book, start, end);
+        refPointers[ref] = sugyaRef;
         if (refsInSugya.length > 1) {
-          refPointers[ref] = sugyaRef;
+          refPointersToSerialize[ref] = sugyaRef;
         }
       }
+    } else {
+      throw new Error(debugSegment);
     }
   };
 
+  let lastStartKind: StartKind;
   for (const section of book.sections) {
     const result = JSON.parse(
       fs.readFileSync(cachedOutputFilePath(book, section), {encoding: "utf-8"})) as Amud;
 
     for (const segment of result.sections) {
+      debugSegment = segment.ref;
       if (segment.steinsaltz_start_of_sugya) segment.startOfSection = true;
       const isHadranEndOfMasechet = segment.ref === "Hadran 1";
       if (isMissingSteinsaltz(segment)) {
@@ -106,7 +149,8 @@ for (const book of books.allBooks) {
           "caching process. Try deleting the cached file and rerunning.",
         ].join());
       }
-      if (segment.startOfSection || isHadranEndOfMasechet) {
+      const isFirstRefOfMasechet = segment.ref.endsWith(" 2a:1") || segment.ref === "Tamid 25b:1";
+      if ((segment.startOfSection && !isFirstRefOfMasechet) || isHadranEndOfMasechet) {
         saveSugya();
         refsInSugya = [];
       }
@@ -124,11 +168,28 @@ for (const book of books.allBooks) {
     }
 
     for (const segment of result.sections) {
-      if (isMishna(segment)) {
-        lastMishna = segment.ref;
-      } else if (segment.startOfSection
+      const currentStartKind = startKind(segment);
+      if (currentStartKind === "mishna") {
+        if (lastStartKind === "mishna") {
+          lastMishnaEnd = segment.ref;
+        } else {
+          lastMishna = segment.ref;
+          lastMishnaEnd = undefined;
+        }
+      } else if (!currentStartKind && segment.startOfSection && lastStartKind === "mishna") {
+        lastMishnaEnd = segment.ref;
+      }
+      lastStartKind = currentStartKind ?? lastStartKind;
+
+      if (segment.startOfSection
+        && lastStartKind === "gemara"
         && referencesMishna(segment.commentary!.Steinsaltz.comments[0].he as string)) {
-        const pointer = refPointers[lastMishna!] ?? lastMishna;
+        const pointerStart = refPointers[lastMishna!] ?? lastMishna;
+        const pointerEnd = lastMishnaEnd ? refPointers[lastMishnaEnd] : undefined;
+        if (lastMishnaEnd && !pointerEnd) {
+          throw new Error([lastMishnaEnd, pointerEnd, pointerStart, lastMishna].join(" - "));
+        }
+        const pointer = lastMishnaEnd ? mergeRefs(book, pointerStart, pointerEnd!) : pointerStart;
         if (pointer === undefined) {
           throw new Error([segment.ref, lastMishna + ""].join(" "));
         }
@@ -145,7 +206,8 @@ for (const book of books.allBooks) {
   }
 
   writeJson(`precomputed/sugyot/${book.canonicalName}.json`, sugyaEndpoints);
-  writeJson(`precomputed/sugyot/pointers/${book.canonicalName}-pointers.json`, refPointers);
+  writeJson(
+    `precomputed/sugyot/pointers/${book.canonicalName}-pointers.json`, refPointersToSerialize);
   writeJson(`precomputed/masechet_prakim/${book.canonicalName}.json`, perekEndpoints);
   writeJson(mishnaReferencePath(book), mishnaReferences);
 }
