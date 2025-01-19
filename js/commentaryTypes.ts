@@ -20,7 +20,7 @@ export function getCommentaryTypes(
   }
   types.push({
     englishName: "Personal Notes",
-    hebrewName: "Personal Notes",
+    hebrewName: "הערות אישיות",
     className: "personal-notes",
   });
 

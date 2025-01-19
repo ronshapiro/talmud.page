@@ -299,6 +299,7 @@ class Buttons {
         showCommentEditorModal({
           initialText: "",
           title: `Add a note on ${ref}`,
+          titleHebrew: "להוסיף הערה אישית",
           onSave: (text: string) => this.postComment({
             text,
             commentSourceMetadata: this.selectionState.getCommentSourceMetadata(),
@@ -318,7 +319,8 @@ class Buttons {
         const [initialText, isRtl] = driveClient.currentCommentText(ref);
         showCommentEditorModal({
           initialText,
-          title: `Edit note`,
+          title: "Edit note",
+          titleHebrew: "לערוך הערה",
           onSave: (text: string) => driveClient.updateComment(ref, text),
           direction: isRtl ? "rtl" : "ltr",
         });

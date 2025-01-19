@@ -13,6 +13,7 @@ export interface CommentaryType {
   nestedRefSpacer?: string;
   renderCommentsAsNestedCommentaries?: true;
   shouldHaveIndexedBook?: true;
+  ignoreInHebrew?: true;
 }
 
 export const ALL_COMMENTARIES: CommentaryType[] = [
@@ -25,6 +26,7 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     englishName: "Community Translation",
     hebrewName: "תרגום קהילתי",
     className: "community-translation",
+    ignoreInHebrew: true,
   },
   {
     englishName: "Explanation",
@@ -237,6 +239,7 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     hebrewName: "Jastrow",
     className: "jastrow",
     renderCommentsAsNestedCommentaries: true,
+    ignoreInHebrew: true,
   },
   {
     englishName: "Abarbanel",

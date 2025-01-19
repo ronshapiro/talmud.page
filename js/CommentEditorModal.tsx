@@ -10,6 +10,7 @@ const {
 
 interface ModalData {
   title: string;
+  titleHebrew: string;
   initialText: string;
   onSave: (text: string) => void;
   direction: "rtl" | "ltr";
@@ -57,14 +58,17 @@ export function CommentEditorModal(): React.ReactElement | null {
       content={(
         <ModalEditor
           title={data.title}
+          titleHebrew={data.title}
           onSubmit={(event) => onSubmit(event)}
           direction={direction}
           textAreaRef={ref}
         />
       )}
       cancelText="Cancel"
+      cancelTextHebrew="בטל"
       onCancel={() => setShowing(false)}
       acceptText="Save"
+      acceptTextHebrew="לשמור"
       onAccept={() => onSubmit()}
       extraButtons={[directionButton]}
       />

@@ -124,6 +124,7 @@ export abstract class Renderer {
     options = options || {};
     this.isTalmud = options.isTalmud;
     this.translationOption = () => {
+      if (localStorage.languageOption === "hebrew") return "just-hebrew";
       return (
         options.translationOverride
           || localStorage.translationOption

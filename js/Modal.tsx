@@ -13,8 +13,10 @@ const {
 interface ModalProps {
   content: React.ReactNode;
   cancelText: string;
+  cancelTextHebrew: string;
   onCancel: NullaryFunction<void>;
   acceptText: string;
+  acceptTextHebrew: string;
   onAccept: NullaryFunction<void>;
   extraButtons?: React.ReactElement[];
 }
@@ -22,12 +24,14 @@ interface ModalProps {
 export default function Modal(props: ModalProps): React.ReactElement {
   const {
     content,
-    cancelText,
     onCancel,
-    acceptText,
     onAccept,
     extraButtons,
   } = props;
+  const cancelText = (
+    localStorage.languageOption === "hebrew" ? props.cancelTextHebrew : props.cancelText);
+  const acceptText = (
+    localStorage.languageOption === "hebrew" ? props.acceptTextHebrew : props.acceptText);
   const modalContainerRef = useHtmlRef<HTMLInputElement>();
   useEffect(() => {
     componentHandler.upgradeElement(modalContainerRef.current);
@@ -40,8 +44,13 @@ export default function Modal(props: ModalProps): React.ReactElement {
     modalContainer.find("input, textarea").first().focus();
   });
 
+  const marginStartStyle = (
+    localStorage.languageOption === "hebrew" ? {marginRight: "auto"} : {marginLeft: "auto"});
   return (
-    <div className="modal-container" ref={modalContainerRef}>
+    <div
+      className="modal-container"
+      ref={modalContainerRef}
+      dir={localStorage.languageOption === "hebrew" ? "rtl" : "ltr"}>
       <div className="modal">
         <div className="modal-content">
           {content}
@@ -49,7 +58,7 @@ export default function Modal(props: ModalProps): React.ReactElement {
             {extraButtons}
             <button
               className="mdl-button mdl-js-button mdl-js-ripple-effect modal-cancel"
-              style={{marginLeft: "auto"}}
+              style={marginStartStyle}
               onClick={() => onCancel()}>
               {cancelText}
             </button>
@@ -76,18 +85,20 @@ type Direction = "ltr" | "rtl";
 
 export function ModalEditor({
   title,
+  titleHebrew,
   onSubmit,
   direction,
   textAreaRef,
 }: {
   title: string;
+  titleHebrew: string;
   onSubmit: (event: React.FormEvent) => void;
   direction: Direction;
   textAreaRef?: React.MutableRefObject<HTMLTextAreaElement>;
 }): React.ReactElement {
   return (
     <div>
-      <strong>{title}</strong>
+      <strong>{localStorage.languageOption === "hebrew" ? titleHebrew : title}</strong>
       <form onSubmit={(event) => onSubmit(event)}>
         <div
           style={{padding: "0"}}
@@ -102,6 +113,7 @@ export function ModalEditor({
 }
 ModalEditor.propTypes = {
   title: PropTypes.string.isRequired,
+  titleHebrew: PropTypes.string.isRequired,
   onSubmit: PropTypes.func.isRequired,
   direction: PropTypes.string.isRequired,
   textAreaRef: PropTypes.object,

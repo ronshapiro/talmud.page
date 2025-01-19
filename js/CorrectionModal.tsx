@@ -43,14 +43,17 @@ export function CorrectionModal(): React.ReactElement | null {
       content={(
         <ModalEditor
           title="Submit a correction to Sefaria:"
+          titleHebrew="להציע תיקון לספריא"
           onSubmit={(event) => onSubmit(event)}
           direction={direction}
           textAreaRef={ref}
         />
       )}
       cancelText="Cancel"
+      cancelTextHebrew="בטל"
       onCancel={() => setShowing(false)}
       acceptText="Submit Correction"
+      acceptTextHebrew="שלח תיקון"
       onAccept={() => onSubmit()}
       extraButtons={[directionButton]}
       />

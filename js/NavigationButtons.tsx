@@ -44,7 +44,10 @@ const NavigationButtonRow = (props: NavigationButtonRowProps) => {
   if (isNext) classes.push("next");
 
   return (
-    <div className={classes.join(" ")}>
+    <div
+      className={classes.join(" ")}
+      dir={localStorage.languageOption === "hebrew" ? "rtl" : "ltr"}
+      >
       <span
         className={buttonClasses()}
         onClick={() => doLoad()}
@@ -54,7 +57,7 @@ const NavigationButtonRow = (props: NavigationButtonRowProps) => {
         {text}
       </span>
       <button
-        className="mdl-button mdl-js-button mdl-button--icon mdl-button edit-button"
+        className="mdl-button mdl-js-button mdl-button--icon edit-button"
         onClick={() => setShowModal(true)}>
         <i className="material-icons">edit</i>
       </button>
@@ -62,8 +65,10 @@ const NavigationButtonRow = (props: NavigationButtonRowProps) => {
         <Modal
           content={<SearchBar defaultValue={defaultEditText()} submitRef={submitRef} />}
           cancelText="Cancel"
+          cancelTextHebrew="בטל"
           onCancel={() => setShowModal(false)}
           acceptText="Navigate"
+          acceptTextHebrew="חפש"
           onAccept={() => submitRef.current!()} />
       )}
     </div>
@@ -80,6 +85,12 @@ interface ButtonProps {
   navigationExtension: NavigationExtension;
 }
 
+function loadText(pageText: string): string {
+  return localStorage.languageOption === "hebrew"
+    ? `לטעון ${pageText.replace(/_/g, " ")}`
+    : `Load ${pageText.replace(/_/g, " ")}`;
+}
+
 export const PreviousButton = (props: ButtonProps): React.ReactElement | null => {
   const {navigationExtension} = props;
   if (!navigationExtension.hasPrevious()) {
@@ -88,7 +99,7 @@ export const PreviousButton = (props: ButtonProps): React.ReactElement | null =>
   return (
     <NavigationButtonRow
       isNext={false}
-      text={`Load ${navigationExtension.previous().replace(/_/g, " ")}`}
+      text={loadText(navigationExtension.previous())}
       doLoad={() => navigationExtension.loadPrevious()}
       defaultEditText={() => navigationExtension.defaultEditText()}
     />
@@ -103,10 +114,11 @@ export const NextButton = (props: ButtonProps): React.ReactElement | null => {
   if (!navigationExtension.hasNext()) {
     return null;
   }
+
   return (
     <NavigationButtonRow
       isNext
-      text={`Load ${navigationExtension.next().replace(/_/g, " ")}`}
+      text={loadText(navigationExtension.next())}
       doLoad={() => navigationExtension.loadNext()}
       defaultEditText={() => navigationExtension.defaultEditText()}
     />

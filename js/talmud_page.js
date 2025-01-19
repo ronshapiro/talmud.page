@@ -5,14 +5,21 @@ import {amudMetadata, computePreviousAmud, computeNextAmud} from "./amud.ts";
 import {driveClient} from "./google_drive/singleton.ts";
 import {Runner} from "./page_runner.js";
 import {formatDafInHebrew} from "../talmud.ts";
+import {intToHebrewNumeral, ALEPH, BET} from "../hebrew";
+
+function translatePage(page) {
+  const number = page.slice(0, -1);
+  const aOrB = page.endsWith("a") ? ALEPH : BET;
+  return `${intToHebrewNumeral(parseInt(number))} ע"${aOrB}`;
+}
 
 class TalmudRenderer extends Renderer {
   constructor() {
     super(
       getCommentaryTypes("talmud"),
       {
-        previous: () => computePreviousAmud(amudMetadata().amudStart),
-        next: () => computeNextAmud(amudMetadata().amudEnd),
+        previous: () => translatePage(computePreviousAmud(amudMetadata().amudStart)),
+        next: () => translatePage(computeNextAmud(amudMetadata().amudEnd)),
 
         hasPrevious: () => {
           const metadata = amudMetadata();

@@ -19,22 +19,31 @@ const {
 interface Item {
   value: string;
   displayText: string;
+  displayTextHebrew: string;
 }
 
 interface PreferenceSectionParams {
   title: string | React.ReactElement;
+  titleHebrew: string | React.ReactElement;
   items: Item[];
   localStorageKeyName: string;
   rerender: () => any;
+  ignoreInHebrew?: true;
+}
+
+function useHebrew() {
+  return localStorage.languageOption === "hebrew";
 }
 
 function PreferenceSection({
   title,
+  titleHebrew,
   items,
   localStorageKeyName,
   rerender,
 }: PreferenceSectionParams) {
-  function PreferenceItem({value, displayText}: Item) {
+  function PreferenceItem({item}: {item: Item}) {
+    const {value, displayText, displayTextHebrew} = item;
     const id = useMemo(newUuid, []);
     const isChecked = value === localStorage[localStorageKeyName];
     const labelRef = useHtmlRef<HTMLLabelElement>();
@@ -58,7 +67,7 @@ function PreferenceSection({
             value={value}
             id={id}
             className="mdl-radio__button" />
-          <span className="mdl-radio__label">{displayText}</span>
+          <span className="mdl-radio__label">{useHebrew() ? displayTextHebrew : displayText}</span>
         </label>
       </div>
     );
@@ -66,9 +75,10 @@ function PreferenceSection({
 
   return (
     <div style={{padding: "10px"}}>
-      <span style={{display: "block", fontSize: "20px", padding: "10px 0px"}}>{title}</span>
-      {items.map((item, i) => (
-        <PreferenceItem value={item.value} displayText={item.displayText} key={i.toString()} />))}
+      <span style={{display: "block", fontSize: "20px", padding: "10px 0px"}}>
+        {useHebrew() ? titleHebrew : title}
+      </span>
+      {items.map((item, i) => (<PreferenceItem item={item} key={i.toString()} />))}
     </div>
   );
 }
@@ -82,58 +92,88 @@ interface SlideRendererParams {
   key: any;
 }
 
+function copyEnglishText(item: Omit<Item, "displayTextHebrew">): Item {
+  return {...item, displayTextHebrew: item.displayText};
+}
+
+const STANDARD_YES_TRUE_NO_FALSE = [
+  {value: "true", displayText: "Yes", displayTextHebrew: "כן"},
+  {value: "false", displayText: "No", displayTextHebrew: "לא"},
+];
+
 export function Preferences({rerender}: PreferencesViewParams): React.ReactElement {
-  const options = [
+  const allOptions = [
+    // Note: It's important that this is the first option so that there are no ignoreInHebrew
+    // options before it. Otherwise, the swipe index could get mangled when switching languages.
+    // See also resetOtherLanguageIndex().
     <PreferenceSection
-      title="Dark Mode"
+      title="Display Language // שפת האתר"
+      titleHebrew="שפת האתר // Display Language"
       items={[
-        {value: "true", displayText: "On"},
-        {value: "false", displayText: "Off"},
+        copyEnglishText({value: "hebrew", displayText: "עברית (לא  רוצה אנגלית אף פעם)"}),
+        copyEnglishText(
+          {value: "mix", displayText: "Mix: I can do Hebrew, but sometimes want English"}),
+        copyEnglishText({value: "english", displayText: "English"}),
       ]}
       rerender={rerender}
-      localStorageKeyName="darkMode" />,
+      localStorageKeyName="languageOption" />,
     <PreferenceSection
       title="Translation"
+      titleHebrew=""
+      ignoreInHebrew
       items={[
-        {value: "english-side-by-side", displayText: "English (side-by-side)"},
-        {value: "both", displayText: "English & Hebrew (expandable)"},
-        {value: "just-hebrew", displayText: "Hebrew (expandable)"},
+        copyEnglishText({value: "english-side-by-side", displayText: "English (side-by-side)"}),
+        copyEnglishText({value: "both", displayText: "English & Hebrew (expandable)"}),
+        copyEnglishText({value: "just-hebrew", displayText: "Hebrew (expandable)"}),
       ]}
       rerender={rerender}
       localStorageKeyName="translationOption" />,
     <PreferenceSection
       title="Layout"
+      titleHebrew="פריסת הטקסט"
       items={[
-        {value: "by-segment", displayText: "Default"},
+        {value: "by-segment", displayText: "Default", displayTextHebrew: "ברירת מחדל"},
         {
           value: "compact",
           displayText: "Compact (segments of Sugyot are combined until double-tap)",
+          displayTextHebrew: "קומפקטי: (משפטים בסוגיות מאוחדות עד לחיצה כפולה)",
         },
       ]}
       rerender={rerender}
       localStorageKeyName="layoutOption" />,
     <PreferenceSection
+      title="Display"
+      titleHebrew="תצוגה"
+      items={[
+        {value: "true", displayText: "Dark Mode", displayTextHebrew: "כהה"},
+        {value: "false", displayText: "Light Mode", displayTextHebrew: "בהיר"},
+      ]}
+      rerender={rerender}
+      localStorageKeyName="darkMode" />,
+    <PreferenceSection
+      ignoreInHebrew
       title={
         <span>
-          Hide Gemara translation by default<br />
-          <small>(only relevant if Translation is set to English & Hebrew (expandable)</small>
+          Hide Gemara translation by default <br />
+          <small>(only relevant if Translation is set to English & Hebrew (expandable))</small>
         </span>
       }
+      titleHebrew=""
       items={[
-        {value: "false", displayText: "No"},
-        {value: "true", displayText: "Yes (double click the Hebrew Steinsaltz to show)"},
+        copyEnglishText({value: "false", displayText: "No"}),
+        copyEnglishText({value: "true", displayText: "Yes (double click the Hebrew Steinsaltz to show)"}),
       ]}
       rerender={rerender}
       localStorageKeyName="hideGemaraTranslationByDefault" />,
     <PreferenceSection
+      ignoreInHebrew
       title="Wrap translations around the main text"
-      items={[
-        {value: "true", displayText: "Yes"},
-        {value: "false", displayText: "No"},
-      ]}
+      titleHebrew=""
+      items={STANDARD_YES_TRUE_NO_FALSE}
       rerender={rerender}
       localStorageKeyName="wrapTranslations" />,
     <PreferenceSection
+      ignoreInHebrew
       title={
         <span>
           Show Translation Button<br />
@@ -142,13 +182,15 @@ export function Preferences({rerender}: PreferencesViewParams): React.ReactEleme
           </small>
         </span>
       }
+      titleHebrew=""
       items={[
-        {value: "yes", displayText: "Yes"},
-        {value: "no", displayText: "No"},
+        copyEnglishText({value: "yes", displayText: "Yes"}),
+        copyEnglishText({value: "no", displayText: "No"}),
       ]}
       rerender={rerender}
       localStorageKeyName="showTranslationButton" />,
     <PreferenceSection
+      ignoreInHebrew
       title={
         <span>
           Expand English translations by default<br />
@@ -158,83 +200,85 @@ export function Preferences({rerender}: PreferencesViewParams): React.ReactEleme
           </small>
         </span>
       }
-      items={[
-        {value: "true", displayText: "Yes"},
-        {value: "false", displayText: "No"},
-      ]}
+      titleHebrew=""
+      items={STANDARD_YES_TRUE_NO_FALSE}
       rerender={rerender}
       localStorageKeyName="expandEnglishByDefault" />,
     <PreferenceSection
       title="Show page metadata"
-      items={[
-        {value: "true", displayText: "Yes"},
-        {value: "false", displayText: "No"},
-      ]}
+      titleHebrew="להראות מטא דאטה של הדף"
+      items={STANDARD_YES_TRUE_NO_FALSE}
       rerender={rerender}
       localStorageKeyName="showPageMetadata" />,
     <PreferenceSection
       title={
         <span>Enable offline mode<br /><small>(beta, recommended only when needed)</small></span>
       }
-      items={[
-        {value: "true", displayText: "Yes"},
-        {value: "false", displayText: "No"},
-      ]}
+      titleHebrew={
+        <span>לאפשר מצב אופליין<br /><small>(בטא, מומלץ רק במידת הצורך)</small></span>
+      }
+      items={STANDARD_YES_TRUE_NO_FALSE}
       rerender={rerender}
       localStorageKeyName="offlineMode" />,
-
     <PreferenceSection
       title={
         <span>Enable keyboard shortcuts mode<br /><small>(beta)</small></span>
       }
-      items={[
-        {value: "true", displayText: "Yes"},
-        {value: "false", displayText: "No"},
-      ]}
+      titleHebrew={
+        <span>לאפשר קיצורי מקלדת<br /><small>(בטא)</small></span>
+      }
+      items={STANDARD_YES_TRUE_NO_FALSE}
       rerender={rerender}
       localStorageKeyName="keyboardShortcuts" />,
-
   ];
   if (window.location.host.startsWith("localhost")) {
-    options.push(
+    allOptions.push(
       <PreferenceSection
         title="Disable client-side API caching"
-        items={[
-          {value: "true", displayText: "Yes"},
-          {value: "false", displayText: "No"},
-        ]}
+        titleHebrew="Disable client-side API caching"
+        items={STANDARD_YES_TRUE_NO_FALSE}
         rerender={rerender}
         localStorageKeyName="ignoreLocalCache" />,
       <PreferenceSection
         title="Disable next/previous page precaching"
-        items={[
-          {value: "true", displayText: "Yes"},
-          {value: "false", displayText: "No"},
-        ]}
+        titleHebrew="Disable next/previous page precaching"
+        items={STANDARD_YES_TRUE_NO_FALSE}
         rerender={rerender}
         localStorageKeyName="disablePrecaching" />,
     );
   }
+  const options = useHebrew()
+    ? allOptions.filter(option => !option.props.ignoreInHebrew)
+    : allOptions;
+
   const preferencesIndex = new LocalStorageInt("preferencesIndex");
-  const [currentIndex, setIndexPrivate] = useState(preferencesIndex.get() || 0);
+  const englishIndexState = useState(preferencesIndex.get() || 0);
+  const hebrewIndexState = useState(preferencesIndex.get() || 0);
+  const [currentIndex, setIndexPrivate] = useHebrew() ? hebrewIndexState : englishIndexState;
+  const resetOtherLanguageIndex = () => (useHebrew() ? englishIndexState : hebrewIndexState)[1](1);
   const setIndex = (newIndex: number) => {
+    resetOtherLanguageIndex();
     setIndexPrivate(newIndex);
-    preferencesIndex.set(newIndex);
+    preferencesIndex.set(newIndex % options.length);
   };
+  const direction = useHebrew() ? "rtl" : "ltr";
+  const axis = useHebrew() ? "x-reverse" : "x";
   function slideRenderer({index, key}: SlideRendererParams) {
     const component = options[index % options.length];
+    const goPrevious = () => setIndex(index === 0 ? options.length - 1 : index - 1);
+    const goNext = () => setIndex(index + 1);
     return <div key={key} style={{display: "flex"}}>
       <button
         className="mdl-button mdl-js-button mdl-button--icon mdl-button"
-        onClick={() => setIndex(index === 0 ? options.length - 1 : index - 1)}>
+        onClick={useHebrew() ? goNext : goPrevious}>
         <i className="material-icons">chevron_left</i>
       </button>
-      <div style={{flexGrow: 1}}>
+      <div style={{flexGrow: 1, direction}}>
         {component}
       </div>
       <button
         className="mdl-button mdl-js-button mdl-button--icon mdl-button"
-        onClick={() => setIndex(index + 1)}>
+        onClick={useHebrew() ? goPrevious : goNext}>
         <i className="material-icons">chevron_right</i>
       </button>
     </div>;
@@ -254,8 +298,10 @@ export function Preferences({rerender}: PreferencesViewParams): React.ReactEleme
   if (show) {
     snackbars.preferencesNudge.dismissButtonImpl();
     elements.push(
-      <div id="preferences-container" key="preferences-container">
+      <div id="preferences-container" key="preferences-container" dir={direction}>
         <VirtualizeSwipeableViews
+          key={useHebrew() ? "heb" : "eng"}
+          axis={axis}
           slideRenderer={slideRenderer}
           index={currentIndex}
           onChangeIndex={setIndex}

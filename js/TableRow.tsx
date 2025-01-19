@@ -368,7 +368,9 @@ function TableRow(props: TableRowProps): React.ReactElement {
     $("#main-contents").width(), // recalculate only when there are changes in width
   ]);
 
+  const isHebrewOnly = hiddenHost && localStorage.languageOption === "hebrew";
   const cellClasses = (() => {
+    if (isHebrewOnly) return ["fullRow"];
     if ((isEmptyText(hebrew) || isEmptyText(english)) && !overrideFullRow) {
       return ["fullRow"];
     }
@@ -393,7 +395,7 @@ function TableRow(props: TableRowProps): React.ReactElement {
         />);
   }
   cells.push(<div className="text-selection-divider" key="text-selection-divider" />);
-  if (!isEmptyText(english)) {
+  if (!isEmptyText(english) && !isHebrewOnly) {
     const [overrideExpandedEnglish, toggleEnglishExpanded] = (() => {
       if (cellClasses.includes("fullRow") && !classes.includes("jastrow")) {
         return [true, () => {}];

@@ -246,15 +246,14 @@ items. */
 }
 .navigation-button:not(.edit-button) {
     position: relative;
-    left: 16px;
-}
-
-*:focus {
-    outline: none;
+    inset-inline-start: 16px;
 }
 .edit-button {
     position: relative;
-    left: 24px;
+    inset-inline-start: 24px;
+}
+*:focus {
+    outline: none;
 }
 
 h1, h2 {

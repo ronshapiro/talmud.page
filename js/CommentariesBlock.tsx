@@ -278,6 +278,7 @@ export function CommentariesBlock({
     const commentariesToShow: [Commentary, CommentaryType][] = [];
     const openCommentaries = new Set(getOrdering(segmentLabel));
     forEachCommentary((commentary, commentaryKind) => {
+      if (commentaryKind.ignoreInHebrew && localStorage.languageOption === "hebrew") return;
       if (!openCommentaries.has(commentaryKind.className)) {
         commentariesToShow.push([commentary, commentaryKind]);
       }
