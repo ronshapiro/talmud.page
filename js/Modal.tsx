@@ -126,7 +126,7 @@ interface TextDirectionButton {
   directionButton: React.ReactElement;
 }
 export function useTextDirectionButton(): TextDirectionButton {
-  const [isRtl, setIsRtl] = useState(false);
+  const [isRtl, setIsRtl] = useState(localStorage.languageOption === "hebrew");
   const button = (
     <button
       key="direction"

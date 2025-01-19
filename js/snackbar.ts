@@ -271,35 +271,44 @@ export const snackbars = new SnackbarManager();
 $(document).ready(() => {
   moveSnackbarOffscreen();
 
+  const useHebrew = localStorage.languageOption === "hebrew";
+  const updatedOptions = useHebrew ? "בדקו הגדרות חדשות" : "Check out the updated options!";
+  const availableOptions = useHebrew ? "בדקו הגדרות אפשריות" : "Check out the available options!";
+
   snackbars.preferencesNudge.show(
-    (hasSeenLatestPreferences()
-      ? "Check out the updated options!"
-      : "Check out the available options!"),
+    (hasSeenLatestPreferences() ? updatedOptions : availableOptions),
     [
       {
-        text: "Preferences",
+        text: useHebrew ? "הגדרות" : "Preferences",
         onClick: () => {
           gtag("event", "snackbar.preferencesPage.clicked");
           (window as any).showPreferences();
         },
       },
       {
-        text: "Dismiss",
+        text: useHebrew ? "סגור" : "Dismiss",
         onClick: () => snackbars.preferencesNudge.dismissButtonImpl(),
       },
     ]);
 
   const shareData = {url: "https://talmud.page"};
   if (navigator.canShare && navigator.canShare(shareData)) {
-    const text = [
+    const textEnglish = [
       "Share talmud.page with a friend?",
       "Know someone who would enjoy learning here?",
       "Spread the talmud.page love!",
       "talmud.page isn't well known. Help change that?",
-    ].sort(() => Math.random() - .5)[0];
+    ];
+    const textHebrew = [
+      "שתף talmud.page עם חבר/ה?",
+      "מכירים מישהו שיאהב ללמוד פה?",
+      "להפיץ את האהבה של talmud.page!",
+      "talmud.page עוד לא מוכר. רוצה לשנות את זה?",
+    ];
+    const text = (useHebrew ? textHebrew : textEnglish).sort(() => Math.random() - .5)[0];
     snackbars.share.show(text, [
       {
-        text: "Dismiss",
+        text: useHebrew ? "סגור" : "Dismiss",
         onClick: () => {
           sendEvent({share: false, text, subject: "Share dismissed"});
           snackbars.share.dismissButtonImpl();

@@ -85,6 +85,7 @@ interface ButtonProps {
   navigationExtension: NavigationExtension;
 }
 
+// TODO(language): the pageText still could be localized, need to consider how to do that best.
 function loadText(pageText: string): string {
   return localStorage.languageOption === "hebrew"
     ? `לטעון ${pageText.replace(/_/g, " ")}`
@@ -99,7 +100,7 @@ export const PreviousButton = (props: ButtonProps): React.ReactElement | null =>
   return (
     <NavigationButtonRow
       isNext={false}
-      text={loadText(navigationExtension.previous())}
+      text={loadText(navigationExtension.displayPrevious())}
       doLoad={() => navigationExtension.loadPrevious()}
       defaultEditText={() => navigationExtension.defaultEditText()}
     />
@@ -118,7 +119,7 @@ export const NextButton = (props: ButtonProps): React.ReactElement | null => {
   return (
     <NavigationButtonRow
       isNext
-      text={loadText(navigationExtension.next())}
+      text={loadText(navigationExtension.displayNext())}
       doLoad={() => navigationExtension.loadNext()}
       defaultEditText={() => navigationExtension.defaultEditText()}
     />

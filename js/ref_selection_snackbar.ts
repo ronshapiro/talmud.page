@@ -385,6 +385,7 @@ const onSelectionChange = () => {
         || window.location.pathname.startsWith("/BirkatHamazon")
     );
   })();
+  // TODO(language): localizeRef
   snackbars.textSelection.show(hideRef ? "" : ref, buttons);
 };
 

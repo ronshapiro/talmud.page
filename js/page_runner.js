@@ -102,6 +102,12 @@ export class Runner {
         removeLast: () => this.removeLastSection(),
         defaultEditText: () => bookTitleAndRange(),
       });
+    if (!renderer.navigationExtension.displayNext) {
+      renderer.navigationExtension.displayNext = renderer.navigationExtension.next;
+    }
+    if (!renderer.navigationExtension.displayPrevious) {
+      renderer.navigationExtension.displayPrevious = renderer.navigationExtension.previous;
+    }
     this.apiCache = new ApiCache();
     this.requestQueue = new PromiseQueue(5);
     timeoutPromise(5000).then(() => this.apiCache.purge());
@@ -274,13 +280,17 @@ export class Runner {
         return;
       }
 
-      snackbars.googleSignIn.show("Save notes to Google Drive?", [
+      const useHebrew = localStorage.languageOption === "hebrew";
+      const snackbarText = useHebrew ? "לשמור הערות לGoogle Drive?" : "Save notes to Google Drive?";
+      const noThanks = useHebrew ? "לא תודה" : "No thanks";
+      const signIn = useHebrew ? "להכנס" : "Sign in";
+      snackbars.googleSignIn.show(snackbarText, [
         {
-          text: "No thanks",
+          text: noThanks,
           onClick: () => snackbars.googleSignIn.dismissButtonImpl(),
         },
         {
-          text: "Sign in",
+          text: signIn,
           onClick: () => {
             snackbars.googleSignIn.hide();
             this.driveClient.signIn();

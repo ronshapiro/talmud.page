@@ -58,7 +58,7 @@ export function CommentEditorModal(): React.ReactElement | null {
       content={(
         <ModalEditor
           title={data.title}
-          titleHebrew={data.title}
+          titleHebrew={data.titleHebrew}
           onSubmit={(event) => onSubmit(event)}
           direction={direction}
           textAreaRef={ref}

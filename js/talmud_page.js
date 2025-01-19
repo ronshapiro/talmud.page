@@ -5,21 +5,23 @@ import {amudMetadata, computePreviousAmud, computeNextAmud} from "./amud.ts";
 import {driveClient} from "./google_drive/singleton.ts";
 import {Runner} from "./page_runner.js";
 import {formatDafInHebrew} from "../talmud.ts";
-import {intToHebrewNumeral, ALEPH, BET} from "../hebrew";
 
 function translatePage(page) {
-  const number = page.slice(0, -1);
-  const aOrB = page.endsWith("a") ? ALEPH : BET;
-  return `${intToHebrewNumeral(parseInt(number))} ע"${aOrB}`;
+  return formatDafInHebrew("", page).slice(1);
 }
+
+const previous = () => computePreviousAmud(amudMetadata().amudStart);
+const next = () => computeNextAmud(amudMetadata().amudEnd);
 
 class TalmudRenderer extends Renderer {
   constructor() {
     super(
       getCommentaryTypes("talmud"),
       {
-        previous: () => translatePage(computePreviousAmud(amudMetadata().amudStart)),
-        next: () => translatePage(computeNextAmud(amudMetadata().amudEnd)),
+        previous,
+        next,
+        displayPrevious: () => translatePage(previous()),
+        displayNext: () => translatePage(next()),
 
         hasPrevious: () => {
           const metadata = amudMetadata();

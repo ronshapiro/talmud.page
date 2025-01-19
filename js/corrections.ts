@@ -6,7 +6,12 @@ import {snackbars} from "./snackbar";
 
 export function postCorrection(data: Omit<CorrectionPostData, "user">): Promise<unknown> {
   const {ref, userText} = data;
-  snackbars.reportedIssueSent.show(`Posted correction on ${ref}: ${userText}`, []);
+  snackbars.reportedIssueSent.show(
+    localStorage.languageOption === "hebrew"
+      // TODO(language): ref should be localized
+      ? `תיקון של ${ref} נשלח`
+      : `Posted correction on ${ref}: ${userText}`,
+    []);
 
   const promise = postWithRetry("/corrections", {
     ...data,

@@ -4,6 +4,9 @@ export interface BaseNavigationExtension {
   previous: NullaryFunction<string>;
   next: NullaryFunction<string>;
 
+  displayPrevious: NullaryFunction<string>;
+  displayNext: NullaryFunction<string>;
+
   hasPrevious: NullaryFunction<boolean>;
   hasNext: NullaryFunction<boolean>;
 }

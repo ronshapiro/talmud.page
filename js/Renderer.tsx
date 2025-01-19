@@ -316,9 +316,14 @@ export abstract class Renderer {
 }
 
 export function numericalNavigationExtension (): BaseNavigationExtension {
+  const previous = () => (parseInt(amudMetadata().amudStart!) - 1).toString();
+  const next = () => (parseInt(amudMetadata().amudEnd!) + 1).toString();
   return {
-    previous: () => (parseInt(amudMetadata().amudStart!) - 1).toString(),
-    next: () => (parseInt(amudMetadata().amudEnd!) + 1).toString(),
+    previous,
+    next,
+
+    displayPrevious: previous,
+    displayNext: next,
 
     hasPrevious: () => amudMetadata().amudStart !== "1",
     hasNext: () => {
