@@ -9,8 +9,9 @@ const hideSnackbar = () => $("#snackbar").animate({bottom: -400}).promise();
 
 function addContainer(kind: Kind): void {
   const classes = [kind.cssClass, ...(kind.extraCssClasses || [])].join(" ");
+  const direction = localStorage.languageOption === "hebrew" ? "rtl" : "ltr";
   $(`#snackbar`).append(
-    `<div class="${classes}">
+    `<div class="${classes}" dir="${direction}">
        <div class="snackbar-text"></div>
        <div class="snackbar-buttons"></div>
      </div>`);

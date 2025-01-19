@@ -12,6 +12,7 @@ import {registerRefSelectionSnackbarListener} from "./ref_selection_snackbar.ts"
 import {serviceWorkerMain} from "./service_worker_registration.ts";
 
 if (!localStorage.userUuid) {
+  localStorage.needsToPickLanguage = true;
   localStorage.userUuid = uuid();
 }
 

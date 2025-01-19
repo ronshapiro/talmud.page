@@ -83,7 +83,7 @@ function PreferenceSection({
   );
 }
 
-interface PreferencesViewParams {
+interface RerenderViewParams {
   rerender: () => any;
 }
 
@@ -101,11 +101,11 @@ const STANDARD_YES_TRUE_NO_FALSE = [
   {value: "false", displayText: "No", displayTextHebrew: "לא"},
 ];
 
-export function Preferences({rerender}: PreferencesViewParams): React.ReactElement {
+function preferenceOptions(rerender: () => any): React.ReactElement[] {
   const allOptions = [
     // Note: It's important that this is the first option so that there are no ignoreInHebrew
     // options before it. Otherwise, the swipe index could get mangled when switching languages.
-    // See also resetOtherLanguageIndex().
+    // See also resetOtherLanguageIndex(). It's also used in displayLanguageOption
     <PreferenceSection
       title="Display Language // שפת האתר"
       titleHebrew="שפת האתר // Display Language"
@@ -247,9 +247,13 @@ export function Preferences({rerender}: PreferencesViewParams): React.ReactEleme
         localStorageKeyName="disablePrecaching" />,
     );
   }
-  const options = useHebrew()
+  return useHebrew()
     ? allOptions.filter(option => !option.props.ignoreInHebrew)
     : allOptions;
+}
+
+export function Preferences({rerender}: RerenderViewParams): React.ReactElement {
+  const options = preferenceOptions(rerender);
 
   const preferencesIndex = new LocalStorageInt("preferencesIndex");
   const englishIndexState = useState(preferencesIndex.get() || 0);
@@ -310,4 +314,30 @@ export function Preferences({rerender}: PreferencesViewParams): React.ReactEleme
     );
   }
   return <>{elements}</>;
+}
+
+interface LanguageChooserParams extends RerenderViewParams {
+  children: React.ReactElement;
+}
+export function LanguageChooser({rerender, children}: LanguageChooserParams): React.ReactElement {
+  const setSubmitted = useState(false)[1];
+  const shouldShow = localStorage.needsToPickLanguage;
+  const onClick = () => {
+    delete localStorage.needsToPickLanguage;
+    setSubmitted(true);
+  };
+
+  if (!shouldShow) {
+    return children;
+  }
+  const option = preferenceOptions(rerender)[0];
+  const buttonClasses = (
+    "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored");
+  return (
+    <div style={{padding: "32px"}}>
+      <h1>ברוכים הבאים! Welcome!</h1>
+      {option}
+      <button className={buttonClasses} onClick={onClick}>Enter // כניסה </button>
+    </div>
+  );
 }

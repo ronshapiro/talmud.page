@@ -7,7 +7,7 @@ import {
   PreviousButton,
 } from "./NavigationButtons";
 import {useConfiguration} from "./context";
-import {Preferences} from "./Preferences";
+import {Preferences, LanguageChooser} from "./Preferences";
 import {Keybindings} from "./Keybindings";
 import {SnackbarHost} from "./SnackbarReact";
 import {Page, UiPage} from "./Page";
@@ -83,13 +83,14 @@ export function Root({
     incrementQueryCount();
   };
 
-  return (
+  const rerender = () => forceUpdate();
+  const core = (
     <>
       <div id="inner-content">
         <PreviousButton navigationExtension={navigationExtension} />
         {amudim}
         <NextButton navigationExtension={navigationExtension} />
-        <Preferences rerender={() => forceUpdate()} />
+        <Preferences rerender={rerender} />
       </div>
       {!isFake && (
         <>
@@ -99,6 +100,7 @@ export function Root({
       )}
     </>
   );
+  return isFake ? core : <LanguageChooser rerender={rerender}>{core}</LanguageChooser>;
 }
 Root.propTypes = {
   allAmudim: PropTypes.func.isRequired,
