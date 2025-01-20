@@ -166,9 +166,8 @@ function Main() {
   const rerender = useIncrementer()[1];
   return (
     <>
-      <LanguageChooser rerender={rerender} padding="32px">
-        <Grid />
-      </LanguageChooser>
+      <LanguageChooser rerender={rerender} padding="32px"><></></LanguageChooser>
+      <Grid />
       <Preferences rerender={rerender} />
     </>
   );
