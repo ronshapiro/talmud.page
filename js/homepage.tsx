@@ -84,11 +84,11 @@ function Home() {
           <br />
           <h1 className="lang-english">Read the Talmud</h1>
           <h1 className="lang-hebrew">talmud.page</h1>
-          <Preferences rerender={rerender} />
         </>
       </LanguageChooser>
 
       <SearchBar />
+      <Preferences rerender={rerender} />
 
       <br />
       <Examples />
