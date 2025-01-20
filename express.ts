@@ -31,6 +31,7 @@ import {jsonSize} from "./util/json_size";
 import {writeJson} from "./util/json_files";
 import {getWeekdayReading} from "./weekday_parshiot";
 import {registerCalendarRoutes} from "./calendars";
+import {formatListEnglish, formatListHebrew} from "./util/formatting";
 
 const app = express();
 const debug = app.settings.env === "development";
@@ -209,7 +210,7 @@ app.get("/api/search/:query", (req, res) => {
     parsed = books.parseWithGuesses(query);
   } catch (e) {
     if (e instanceof InvalidQueryException) {
-      return res.send({error: e.message});
+      return res.send({error: e.message, errorHebrew: e.messageHebrew});
     } else {
       throw e;
     }
@@ -256,16 +257,15 @@ app.get("/yomi", (req, res) => res.redirectWithQueryParameters("/daf-yomi"));
 app.get("/last", (req, res) => res.render("last_redirecter.html"));
 
 class PagesDontExistError extends Error {
+  messageHebrew: string;
+
   constructor(book: Book, nonExistentPages: string[]) {
     if (nonExistentPages.length === 1) {
       super(`${book.canonicalName} ${nonExistentPages[0]} doesn't exist`);
+      this.messageHebrew = `${book.canonicalName} ${nonExistentPages[0]} לא קיים`;
     } else {
-      const parts = [`${book.canonicalName} ${nonExistentPages[0]}`];
-      for (const page of nonExistentPages.slice(1, -1)) {
-        parts.push(`, ${page}`);
-      }
-      parts.push(` and ${nonExistentPages.at(-1)} don't exist`);
-      super(parts.join(""));
+      super(`${book.canonicalName} ${formatListEnglish(nonExistentPages)} don't exist`);
+      this.messageHebrew = `${book.canonicalName} ${formatListHebrew(nonExistentPages)} לא קיימים`;
     }
 
     Object.setPrototypeOf(this, PagesDontExistError.prototype);
@@ -646,16 +646,19 @@ if (debug) {
 }
 
 app.use((err: Error, req: express.Request, res: express.Response, next: express.NextFunction) => {
-  const send404 = (message: string, title: string) => {
-    return res.status(404).render("error_page.html", {message, title});
+  const send404 = (message: string, messageHebrew: string, title: string, titleHebrew: string) => {
+    return res.status(404).render("error_page.html", {message, messageHebrew, title, titleHebrew});
   };
 
   if (err instanceof PagesDontExistError) {
-    return send404(err.message, "Error");
+    return send404(err.message, err.messageHebrew, "Error", "שגיאה");
   } else if (err instanceof InvalidQueryException) {
-    return send404(err.message, "Invalid Query");
+    return send404(err.message, err.messageHebrew, "Invalid Query", "חיפוש לא תקין");
   } else if (err instanceof UnknownBookNameException) {
-    return send404(`Could not find title ${err.name}`, "Invalid Query");
+    return send404(
+      `Could not find title ${err.message}`,
+      `לא נמצא ${err.message}`,
+      "Invalid Query", "חיפוש לא תקין");
   }
 
   return next(err);
@@ -665,7 +668,9 @@ app.use((err: Error, req: express.Request, res: express.Response, next: express.
 app.use((req, res) => {
   return res.status(404).render("error_page.html", {
     message: "We don't know what happened!",
+    messageHebrew: "לא יודעים מה קרה!",
     title: "Unknown Error",
+    titleHebrew: "שגיאה לא מוכרת",
   });
 });
 

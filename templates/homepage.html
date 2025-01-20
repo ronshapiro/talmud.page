@@ -3,6 +3,7 @@
 <head>
   <title>Search</title>
   {% include "header_common.html" %}
+  {% include "header_static.html" %}
   <script src="../js/snackbar.ts"></script>
   <link rel="stylesheet" href="../css/homepage.css" />
 </head>
@@ -10,21 +11,62 @@
   <div id="main-contents">
     <div id="center-content-container"><div id="center-contents">
       <br/>
-      <h1>Read the Talmud</h1>
+      <h1 class="lang-english">Read the Talmud</h1>
+      <h1 class="lang-hebrew">talmud.page</h1>
       <div id="form"></div>
 
       <br>
       <p style="text-align: center">
-        e.g. <span class="search-example">Brachot 2a,</span> <span class="search-example">Sukka 20a-21b,</span> <span class="search-example"><span dir="rtl">פסחים 30:</span>,</span> <span class="search-example">Shabbos 67b,</span> <span class="search-example">Bava Metzia 13b to 14a</span></p>
+        <span class="lang-english">
+          e.g.
+
+          <span class="search-example">Brachot 2a,</span>
+          <span class="search-example">ברכות ב,</span>
+
+          <span class="search-example">Sukka 20a-21b,</span>
+          <span class="search-example"><span dir="rtl">פסחים 30:</span>,</span>
+          <span class="search-example">Shabbos 67b,</span>
+          <span class="search-example">Bava Metzia 13b to 14a,</span>
+
+          <span class="search-example">Esther 6,</span>
+          <span class="search-example">Orach Chaim 20</span>
+        </span>
+
+        <span class="lang-hebrew" dir="rtl">
+          למשל:
+
+          <span class="search-example">ברכות ב;</span>
+          <span class="search-example">שבת ע"ג,א;</span>
+
+          <span class="search-example">סוכה 20-21;</span>
+          <span class="search-example">פסחים 30:,</span>
+
+          <span class="search-example">אסתר א,</span>
+          <span class="search-example">אורח חיים כ</span>
+        </span>
+      </p>
 
       <p style="text-align: center; margin-top: 40px">
-        <a href="/browse">Browse Titles</a> &bull;
-        <a href="mailto:feedback@talmud.page">Feedback</a>
+        <span class="lang-english">
+          <a href="/browse">Browse Titles</a> &bull;
+          <a href="mailto:feedback@talmud.page">Feedback</a>
+        </span>
+        <span class="lang-hebrew">
+          <a href="/browse">חפש ספר</a> &bull;
+          <a href="mailto:feedback@talmud.page">משוב</a>
+        </span>
       </p>
       <p style="text-align: center">
-        <a href="/daf-yomi">Daf Yomi</a> &bull;
-        <a href="/mishna-yomit">Mishna Yomit</a> &bull;
-        <a href="/rambam-yomi">Rambam Yomi</a>
+        <span class="lang-english">
+          <a href="/daf-yomi">Daf Yomi</a> &bull;
+          <a href="/mishna-yomit">Mishna Yomit</a> &bull;
+          <a href="/rambam-yomi">Rambam Yomi</a>
+        </span>
+        <span class="lang-hebrew">
+          <a href="/daf-yomi">דף היומי</a> &bull;
+          <a href="/mishna-yomit">משנה יומית</a> &bull;
+          <a href="/rambam-yomi">רמב"ם יומי</a>
+        </span>
       </p>
 
     </div></div> {# end center-contents-container #}

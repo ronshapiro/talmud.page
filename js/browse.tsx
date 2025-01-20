@@ -32,17 +32,20 @@ function withGradient<T>(endRgb: Color, items: T[]): [T, string][] {
 }
 
 function BackButton({onClick}: {onClick: () => void}): React.ReactElement {
+  const useHebrew = localStorage.languageOption === "hebrew";
+  const style: any = {
+    position: "fixed",
+    top: "20px",
+    padding: "30px",
+  };
+  style[useHebrew ? "right" : "left"] = "20px";
+
   return (
     <button
-      style={{
-        position: "fixed",
-        top: "20px",
-        left: "20px",
-        padding: "30px",
-      }}
+      style={style}
       className="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"
       onClick={onClick}>
-      <i className="material-icons">arrow_back</i>
+      <i className="material-icons">{useHebrew ? "arrow_forward" : "arrow_back"}</i>
     </button>
   );
 }
@@ -85,6 +88,7 @@ function isCategory(x: Book | Category): x is Category {
 }
 
 function Grid(): React.ReactElement {
+  const useHebrew = localStorage.languageOption === "hebrew";
   const rerender = useIncrementer()[1];
   const items = [];
   const extension = window.location.pathname.slice("/browse".length).slice(1).replace(/_/g, " ");
@@ -101,25 +105,32 @@ function Grid(): React.ReactElement {
 
   if (extension === "") {
     for (const [category, color] of withGradient(CATEGORIES_COLOR, browseIndex.categories)) {
-      const onClick = routerTo("browse", category);
-      items.push(<ItemElement key={category} text={category} onClick={onClick} color={color} />);
+      const onClick = routerTo("browse", category.english);
+      const text = useHebrew ? category.hebrew : category.english;
+      items.push(<ItemElement key={text} text={text} onClick={onClick} color={color} />);
     }
-    pageTitle = "Browse";
+    pageTitle = useHebrew ? "בחר" : "Browse";
   } else {
     const container = browseIndex.index[extension];
     if (!container) {
       back = routerTo("browse");
-      pageTitle = <span style={{color: "red"}}>No title or category: &quot;{extension}&quot;</span>;
+      const error = useHebrew ? "לא זוהה" : "No title or category";
+      pageTitle = <span style={{color: "red"}}>{error}: &quot;{extension}&quot;</span>;
     } else if (isCategory(container)) {
       back = routerTo("browse");
       for (const [title, color] of withGradient(BLUE, container.contents)) {
         const book = browseIndex.index[title] as Book;
-        const text = <>{book.indexSubcategoryTitle}<br />{book.indexSubcategoryHebrewTitle}</>;
+        const text = useHebrew
+          ? book.indexSubcategoryHebrewTitle
+          : <>{book.indexSubcategoryTitle}<br />{book.indexSubcategoryHebrewTitle}</>;
         const onClick = extension === "Prayer"
           ? routerTo(title)
           : routerTo("browse", title);
         items.push(<ItemElement key={title} text={text} onClick={onClick} color={color} />);
       }
+      const category = browseIndex.categories.find(
+        x => x.english === extension.replace(/_/g, " "));
+      pageTitle = useHebrew ? category!.hebrew : category!.english;
     } else {
       back = routerTo("browse", container.indexCategory);
       const baseWidth = container.sections.some(x => x.length >= 5) ? 80 : 60;
@@ -127,10 +138,12 @@ function Grid(): React.ReactElement {
         const onClick = routerTo(extension, section);
         const width = section === `Introduction` ? `${baseWidth * 2 + 20}px` : `${baseWidth}px`;
         const key = section;
+        const text = useHebrew && section === "Introduction" ? "הקדמה" : section;
         items.push(
-          <ItemElement key={key} text={section} onClick={onClick} width={width} color={color} />,
+          <ItemElement key={key} text={text} onClick={onClick} width={width} color={color} />,
         );
       }
+      pageTitle = useHebrew ? container.hebrewName : container.canonicalName;
     }
   }
 
@@ -138,7 +151,10 @@ function Grid(): React.ReactElement {
     <>
       <h1>{pageTitle}</h1>
       {back && <BackButton onClick={back} />}
-      <div style={{display: "flex", flexWrap: "wrap", gap: "20px", justifyContent: "center"}}>
+      <div
+        style={{display: "flex", flexWrap: "wrap", gap: "20px", justifyContent: "center"}}
+        dir={useHebrew ? "rtl" : "ltr"}
+        >
         {items}
       </div>
     </>

@@ -3,19 +3,20 @@
 <head>
   <title>talmud.page | redirect to last page</title>
   {% include "header_common.html" %}
+  {% include "header_static.html" %}
   <link rel="stylesheet" href="../css/homepage.css" />
 </head>
 <body>
   <div id="main-contents">
     <div id="center-content-container">
       <div id="center-contents">
-        <h1>Loading your last visited page</h1>
+
+        <h1 class="lang-english">Loading your last visited page</h1>
+        <h1 class="lang-hebrew">טוען הדף האחרון שלך</h1>
+
         <div id="progress-bar" class="mdl-progress mdl-js-progress mdl-progress__indeterminate">
         </div>
         <br />
-        <ul id="errors" hidden>
-          <li>Have you visited a page before?</li>
-        </ul>
       </div>
     </div>
   </div>

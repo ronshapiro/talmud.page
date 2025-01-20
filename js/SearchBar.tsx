@@ -4,6 +4,7 @@ import {disableBackButtonProtection} from "./block_back_button";
 import {useHtmlRef} from "./hooks";
 import {$} from "./jquery";
 import {NullaryFunction} from "./types";
+import {upgradeElement} from "./componentHandler";
 
 const {
   useEffect,
@@ -20,7 +21,8 @@ export function SearchBar({
   submitRef,
 }: SearchBarPropTypes): React.ReactElement {
   const ref = useHtmlRef<HTMLInputElement>();
-  const [searchError, setSearchError] = useState("");
+  const formRef = useHtmlRef<HTMLFormElement>();
+  const [searchError, setSearchError] = useState<any>({});
   const [guesses, setGuesses] = useState<QueryGuess[]>([]);
   const [isLoading, setLoading] = useState(false);
   const [hasError, setError] = useState(false);
@@ -37,7 +39,7 @@ export function SearchBar({
         disableBackButtonProtection();
         window.location.href = `${window.location.origin}/${path}`;
       }
-      setSearchError(response.error ?? "");
+      setSearchError(response);
       setGuesses(response.guesses ?? []);
       setLoading(false);
       setError(false);
@@ -49,7 +51,7 @@ export function SearchBar({
     } else {
       $.ajax({url: `${window.location.origin}/api/search/${query}`, type: "GET"})
         .fail(() => {
-          setSearchError("");
+          setSearchError({});
           setGuesses([]);
           setLoading(false);
           setError(true);
@@ -60,12 +62,17 @@ export function SearchBar({
   if (submitRef) {
     submitRef.current = onSubmit;
   }
+  const useHebrew = localStorage.languageOption === "hebrew";
+  const direction = useHebrew ? "rtl" : "ltr";
+  const textAlign = useHebrew ? "right" : "left";
+
 
   const suffixHtml = [];
   if (guesses.length > 0) {
+    const didYouMean = useHebrew ? "האם התכוונת ל" : "Did you mean";
     suffixHtml.push(
-      <div key="suggestions">
-        <span>Did you mean: </span>
+      <div key="suggestions" dir={direction}>
+        <span>{didYouMean}: </span>
         {guesses
           .flatMap(guess => [<a key={guess.url} href={guess.url}>{guess.text}</a>, ", "])
           .slice(0, -1)
@@ -73,7 +80,7 @@ export function SearchBar({
       </div>,
     );
   } else if (hasError) {
-    suffixHtml.push("Error while running");
+    suffixHtml.push(useHebrew ? "שגיאה" : "Error while running");
   }
 
   useEffect(() => {
@@ -81,11 +88,20 @@ export function SearchBar({
       ref.current.value = defaultValue;
       setDefaultValueSet(true);
     }
+    upgradeElement(formRef.current);
   });
+
+
+  const search = useHebrew ? "חפש" : "Search";
+  const searchErrorText = (useHebrew ? searchError.errorHebrew : searchError.error) ?? "";
 
   return (
     <>
-      <form onSubmit={event => onSubmit(event)} style={{display: "flex"}}>
+      <form
+        onSubmit={event => onSubmit(event)}
+        style={{display: "flex"}}
+        dir={direction}
+        ref={formRef}>
         <div
           className="mdl-textfield
                      mdl-js-textfield
@@ -97,12 +113,14 @@ export function SearchBar({
             type="text"
             id="search_term"
             name="search_term"
+            style={{textAlign}}
             ref={ref} />
           { /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }
           <label
             className="mdl-textfield__label"
+            style={{textAlign}}
             htmlFor="search_term">
-            Search
+            {search}
           </label>
         </div>
         <span
@@ -115,7 +133,7 @@ export function SearchBar({
 
       </form>
       {suffixHtml}
-      <span className="search-error">{searchError}</span>
+      <span className="search-error">{searchErrorText}</span>
     </>
   );
 }

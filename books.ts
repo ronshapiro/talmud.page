@@ -6,25 +6,17 @@ import {readUtf8} from "./files";
 import {splitOnBookName} from "./refs";
 import {jsonStringify} from "./util/json_stringify";
 import {ListMultimap} from "./multimap";
+import {formatListEnglish, formatListHebrew} from "./util/formatting";
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const levenshteinEditDistance = require("levenshtein-edit-distance");
 
-const ALL_HEBREW_LETTERS = ((): RegExp => {
-  const hundreds = "ק"; // there are no masechtot with more than 200 dapim
-  const tens = "[יכלמנסעפצ]";
-  const ones = "[א-ט]";
-  return new RegExp(`^(?=.+)${hundreds}?${tens}?${ones}?$`);
-})();
-
-
 function dafWithoutAlephOrBet(amud: string): string | undefined {
   if (/^\d+$/.test(amud)) {
     return amud;
-  } else if (ALL_HEBREW_LETTERS.test(amud)) {
-    return numericLiteralAsInt(amud).toString();
   }
-  return undefined;
+  const maybeNumber = numericLiteralAsInt(amud);
+  return maybeNumber ? maybeNumber.toString() : undefined;
 }
 
 export function nextAmud(amud: string): string {
@@ -108,9 +100,8 @@ export abstract class Book {
     return false;
   }
 
-  sectionWord(): string {
-    return "section";
-  }
+  abstract sectionWord(): string;
+  abstract sectionWordHebrew(): string;
 
   bookNameForRef(): string {
     return this.canonicalName;
@@ -180,6 +171,14 @@ class SyntheticBook extends Book {
   indexCategory(): string | undefined {
     return undefined;
   }
+
+  sectionWord(): string {
+    return "section";
+  }
+
+  sectionWordHebrew(): string {
+    return "פרק";
+  }
 }
 
 
@@ -244,6 +243,10 @@ export class TalmudMasechet extends Book {
 
   sectionWord(): string {
     return "masechet";
+  }
+
+  sectionWordHebrew(): string {
+    return "מסכת";
   }
 }
 
@@ -334,6 +337,10 @@ class MishnaMasechet extends Book {
     return "chapter";
   }
 
+  sectionWordHebrew(): string {
+    return "פרק";
+  }
+
   isMishna(): boolean {
     return true;
   }
@@ -375,6 +382,10 @@ class BibleBook extends Book {
   sectionWord(): string {
     return "chapter";
   }
+
+  sectionWordHebrew(): string {
+    return "פרק";
+  }
 }
 
 class MishnehTorahBook extends Book {
@@ -404,6 +415,10 @@ class MishnehTorahBook extends Book {
 
   sectionWord(): string {
     return "chapter";
+  }
+
+  sectionWordHebrew(): string {
+    return "פרק";
   }
 
   indexSubcategoryTitle(): string {
@@ -446,6 +461,10 @@ class ShulchanArukhBook extends Book {
 
   sectionWord(): string {
     return "siman";
+  }
+
+  sectionWordHebrew(): string {
+    return "סימן";
   }
 
   indexSubcategoryTitle(): string {
@@ -491,6 +510,10 @@ class PenineiHalachaBook extends Book {
 
   sectionWord(): string {
     return "chapter";
+  }
+
+  sectionWordHebrew(): string {
+    return "פרק";
   }
 
   indexSubcategoryTitle(): string {
@@ -564,15 +587,28 @@ class LiturgicalBook extends Book {
   }
 
   bookNameForRef(): string { return this._bookNameForRef; }
+
+  sectionWord(): string {
+    return "section";
+  }
+
+  sectionWordHebrew(): string {
+    return "חלק";
+  }
 }
 
-function formatListEnglish(items: string[]): string {
-  const notLast = items.slice(0, -1).join(", ");
-  return `${notLast} and ${items.at(-1)}`;
-}
-
-const AMUD_ALEPH_OPTIONS = new Set(["a", "."]);
-const AMUD_BET_OPTIONS = new Set(["b", ":"]);
+const AMUD_ALEPH_OPTIONS = [
+  "a",
+  ".",
+  " ע'א",
+  ",א",
+];
+const AMUD_BET_OPTIONS = [
+  "b",
+  ":",
+  " ע'ב",
+  ",ב",
+];
 
 class CanonicalizedAmud {
   singleAmud: string | undefined;
@@ -594,16 +630,15 @@ class CanonicalizedAmud {
       return new CanonicalizedAmud(undefined, _dafWithoutAlephOrBet);
     }
 
-    const justNumber = dafWithoutAlephOrBet(value.slice(0, -1));
-    if (!justNumber) {
-      return undefined;
-    }
-
-    const lastChar = value.slice(-1);
-    if (AMUD_ALEPH_OPTIONS.has(lastChar)) {
-      return new CanonicalizedAmud(`${justNumber}a`, undefined);
-    } else if (AMUD_BET_OPTIONS.has(lastChar)) {
-      return new CanonicalizedAmud(`${justNumber}b`, undefined);
+    for (const [aOrB, suffixes] of [["a", AMUD_ALEPH_OPTIONS], ["b", AMUD_BET_OPTIONS]]) {
+      for (const suffix of suffixes) {
+        if (value.endsWith(suffix)) {
+          const dafNumber = dafWithoutAlephOrBet(value.replace(suffix, ""));
+          if (dafNumber) {
+            return new CanonicalizedAmud(`${dafNumber}${aOrB}`, undefined);
+          }
+        }
+      }
     }
 
     return undefined;
@@ -639,7 +674,7 @@ export class QueryResult {
 }
 
 export class InvalidQueryException extends Error {
-  constructor(message: string) {
+  constructor(message: string, readonly messageHebrew: string) {
     super(message);
     Object.setPrototypeOf(this, InvalidQueryException.prototype);
   }
@@ -672,10 +707,12 @@ class AmudRangeParser extends RangeParser {
         return;
       }
       case 1: {
-        throw new InvalidQueryException(`${invalid[0]} is not a valid amud`);
+        throw new InvalidQueryException(`${invalid[0]} is not valid`, `${invalid[0]} לא תקין`);
       }
       default: {
-        throw new InvalidQueryException(`${formatListEnglish(invalid)} are not valid amudim`);
+        throw new InvalidQueryException(
+          `${formatListEnglish(invalid)} are not valid`,
+          `${formatListHebrew(invalid)} לא תקינים`);
       }
     }
   }
@@ -704,27 +741,32 @@ class HardcodedRangeParser extends RangeParser {
   constructor(readonly sections: Set<string>) { super(); }
 
   validate(pages: string[]): void {
+    pages = pages.map(x => dafWithoutAlephOrBet(x) ?? x);
     const invalid = pages.filter(x => !this.sections.has(x));
     switch (invalid.length) {
       case 0: {
         return;
       }
       case 1: {
-        throw new InvalidQueryException(`${invalid[0]} is not a recognized section`);
+        throw new InvalidQueryException(
+          `${invalid[0]} is not a recognized section`,
+          `${invalid[0]} לא זוהה`);
       }
       default: {
         throw new InvalidQueryException(
-          `${formatListEnglish(invalid)} are not recognized sections`);
+          `${formatListEnglish(invalid)} are not recognized sections`,
+          `${formatListHebrew(invalid)} לא זוהו`);
       }
     }
   }
 
   createSingle(title: string, page: string): QueryResult {
-    return new QueryResult(title, page);
+    return new QueryResult(title, dafWithoutAlephOrBet(page) ?? page);
   }
 
   createRange(title: string, start: string, end: string): QueryResult {
-    return new QueryResult(title, start, end);
+    return new QueryResult(
+      title, dafWithoutAlephOrBet(start) ?? start, dafWithoutAlephOrBet(end) ?? end);
   }
 }
 
@@ -788,13 +830,15 @@ export class BookIndex {
     const candidates = new Set<string>();
     // const maybeBook = query.slice(0, query.lastIndexOf(" "));
     for (const book of this.allBooks) {
-      let distance = 99999;
+      const distances: [number, string][] = [];
       for (const option of [book.canonicalName].concat(book.aliases)) {
         const editDistance = levenshteinEditDistance(option, query, true);
-        distance = Math.min(editDistance / option.length, distance);
+        distances.push([editDistance / option.length, option]);
       }
+      distances.sort((a, b) => a[0] - b[0]);
+      const [distance, option] = distances[0];
       if (distance <= .5 && !candidates.has(book.canonicalName)) {
-        results.push([distance, book.canonicalName]);
+        results.push([distance, option]);
         candidates.add(book.canonicalName);
       }
     }
@@ -805,7 +849,7 @@ export class BookIndex {
   parse(query: string): QueryResult {
     const result = this.parseWithGuesses(query);
     if (!(result instanceof QueryResult)) {
-      throw new InvalidQueryException(`Could not find title: ${query}`);
+      throw new InvalidQueryException(`Could not find title: ${query}`, `לא נמצא: ${query}`);
     }
     return result;
   }
@@ -835,18 +879,21 @@ export class BookIndex {
           return {guesses};
         }
       }
-      throw new InvalidQueryException(`Could not find title: ${query}`);
+      throw new InvalidQueryException(`Could not find title: ${query}`, `לא נמצא: ${query}`);
     }
 
     const book = this.byCanonicalName[title];
     if (words.length === 0) {
-      throw new InvalidQueryException(`No ${book.sectionWord()} specified in query: "${query}"`);
+      throw new InvalidQueryException(
+        `No ${book.sectionWord()} specified in query: "${query}"`,
+        `${book.sectionWordHebrew()} לא מופיע: "${query}"`,
+      );
     }
 
     if (words.length === 1 && words[0].includes("-")) {
       const sections = words[0].split("-");
       if (sections.length !== 2) {
-        throw new InvalidQueryException(`Could not understand: ${query}`);
+        throw new InvalidQueryException(`Could not understand: ${query}`, `${query} לא הובן`);
       }
       words = [sections[0], "-", sections[1]];
     }
@@ -866,7 +913,7 @@ export class BookIndex {
       return rangeParser.createRange(title, start, end);
     }
 
-    throw new InvalidQueryException(`Could not understand: ${query}`);
+    throw new InvalidQueryException(`Could not understand: ${query}`, `${query} לא הובן`);
   }
 }
 
@@ -1934,7 +1981,33 @@ export const books: Record<string, Book> = ${jsonStringify(data).replace(/}\n}\n
 export function regenerateBrowseIndex(): void {
   const index: Record<string, any> = {};
   const categories = new ListMultimap<string, string>();
-  for (const book of books.allBooks) {
+  const ordering: string[] = [];
+  const allBooks = Array.from(books.allBooks);
+  for (const book of allBooks) {
+    if (!book.indexCategory()) {
+      continue;
+    }
+    ordering.push(book.canonicalName);
+  }
+  allBooks.sort((a, b) => {
+    const getName = (x: Book) => {
+      return x.isTalmud()
+        ? `Mishnah ${x.canonicalName}`.replace("Taanit", "Ta'anit")
+        : x.canonicalName;
+    };
+    return ordering.indexOf(getName(a)) - ordering.indexOf(getName(b));
+    if (a.isTalmud() && b.isTalmud()) {
+      return (ordering.indexOf(`Mishnah ${a.canonicalName}`)
+        - ordering.indexOf(`Mishnah ${b.canonicalName}`));
+    } else if (!a.isTalmud() && b.isTalmud()) {
+      return 1;
+    } else if (a.isTalmud() && !b.isTalmud()) {
+      return -1;
+    } else {
+      return ordering.indexOf(a.canonicalName) - ordering.indexOf(b.canonicalName);
+    }
+  });
+  for (const book of allBooks) {
     if (!book.indexCategory()) {
       continue;
     }
@@ -1954,9 +2027,21 @@ export function regenerateBrowseIndex(): void {
       contents,
     };
   }
+
+  const categoryHebrewNames: Record<string, string> = {
+    Tanakh: 'תנ"ך',
+    Talmud: "גמרא",
+    Mishna: "משנה",
+    Prayer: "תפילה",
+    "Mishneh Torah": "משנה תורה",
+    "Shulchan Arukh": "שולחן ערוך",
+    "Peninei Halacha": "פניני הלכה",
+  };
   const browseIndex = {
     index,
-    categories: [...categories.keys()],
+    categories: Array.from(categories.keys()).map(x => {
+      return {english: x, hebrew: categoryHebrewNames[x]};
+    }),
   };
 
   const output = `/* eslint-disable quote-props,comma-dangle */
@@ -1970,12 +2055,17 @@ export interface Book {
   indexSubcategoryHebrewTitle: string;
 }
 
+interface CategoryItem {
+  english: string;
+  hebrew: string;
+}
+
 export interface Category {
   contents: string[];
 }
 
 interface BrowseIndex {
-  categories: string[];
+  categories: CategoryItem[];
   index: Record<string, Book | Category>;
 }
 

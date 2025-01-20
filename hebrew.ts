@@ -25,8 +25,45 @@ const LETTER_NUMERIC_VALUES: Record<string, number> = {
 
 const NUMERIC_VALUES_TO_LETTER = Object.entries(LETTER_NUMERIC_VALUES).sort((a, b) => b[1] - a[1]);
 
-export function numericLiteralAsInt(hebrew: string): number {
-  return hebrew.split("").map(x => LETTER_NUMERIC_VALUES[x]!).reduce((x, y) => x + y);
+const IGNORED_NUMERIC_CHARS = new Set(["'", '"', "׳", "״"]);
+
+function magnitude(value: number): 1 | 10 | 100 {
+  if (value >= 100) return 100;
+  if (value >= 10) return 10;
+  return 1;
+}
+
+export function numericLiteralAsInt(hebrew: string): number | undefined {
+  let sum = 0;
+  let allowed: Record<number, boolean> = {100: true, 10: true, 1: true};
+  let lastCharWasTet = false;
+  for (const char of hebrew.split("")) {
+    if (IGNORED_NUMERIC_CHARS.has(char)) continue;
+    const charValue = LETTER_NUMERIC_VALUES[char];
+    if (charValue === undefined) {
+      return undefined;
+    }
+    sum += charValue;
+    if (char === "ט" && allowed[1]) {
+      lastCharWasTet = true;
+      allowed = {};
+      continue;
+    }
+    if (lastCharWasTet) {
+      if (char !== "ו" && char !== "ז") {
+        return undefined;
+      }
+      allowed = {};
+      continue;
+    }
+    if (!allowed[magnitude(charValue)]) return undefined;
+    if (charValue !== 400) {
+      for (const key of [1, 10, 100]) {
+        allowed[key] = key < magnitude(charValue);
+      }
+    }
+  }
+  return sum;
 }
 
 export function intToHebrewNumeral(value: number): string {

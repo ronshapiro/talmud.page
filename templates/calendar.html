@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>{{webTitleName}} | talmud.page</title>
+  <title id="title">{{webTitleName}} | talmud.page</title>
+  <meta id="title-english" content="{{webTitleName}} | talmud.page" />
+  <meta id="title-hebrew" content="{{webTitleNameHebrew}} | talmud.page" />
   {% include "header_common.html" %}
+  {% include "header_static.html" %}
   <link rel="stylesheet" href="../css/homepage.css" />
   <meta content="{{sefariaCalendarName}}" id="sefariaCalendarName" />
 </head>
@@ -10,12 +13,14 @@
   <div id="main-contents">
     <div id="center-content-container">
       <div id="center-contents">
-        <h1>Loading Today's {{todaysNoun}}</h1>
+        <h1 class="lang-english">Loading Today's {{todaysNoun}}</h1>
+        <h1 class="lang-hebrew">טוען {{todaysNounHebrew}}</h1>
         <div id="progress-bar" class="mdl-progress mdl-js-progress mdl-progress__indeterminate">
         </div>
         <br />
         <ul id="errors" hidden>
-          <li>Error accessing today's {{todaysNounError}}. Try reloading</li>
+          <li class="lang-english">Error accessing today's {{todaysNounError}}. Try reloading</li>
+          <li class="lang-hebrew" dir="rtl">שגיאה בתעינת {{todaysNounHebrew}}. תנסה לרפרש</li>
         </ul>
       </div>
     </div>

@@ -9,24 +9,50 @@ export interface Book {
   indexSubcategoryHebrewTitle: string;
 }
 
+interface CategoryItem {
+  english: string;
+  hebrew: string;
+}
+
 export interface Category {
   contents: string[];
 }
 
 interface BrowseIndex {
-  categories: string[];
+  categories: CategoryItem[];
   index: Record<string, Book | Category>;
 }
 
 export const browseIndex: BrowseIndex = {
   "categories": [
-    "Talmud",
-    "Tanakh",
-    "Mishna",
-    "Prayer",
-    "Mishneh Torah",
-    "Shulchan Arukh",
-    "Peninei Halacha"
+    {
+      "english": "Tanakh",
+      "hebrew": "תנ\"ך"
+    },
+    {
+      "english": "Talmud",
+      "hebrew": "גמרא"
+    },
+    {
+      "english": "Mishna",
+      "hebrew": "משנה"
+    },
+    {
+      "english": "Prayer",
+      "hebrew": "תפילה"
+    },
+    {
+      "english": "Mishneh Torah",
+      "hebrew": "משנה תורה"
+    },
+    {
+      "english": "Shulchan Arukh",
+      "hebrew": "שולחן ערוך"
+    },
+    {
+      "english": "Peninei Halacha",
+      "hebrew": "פניני הלכה"
+    }
   ],
   "index": {
     "Amos": {
@@ -15196,44 +15222,44 @@ export const browseIndex: BrowseIndex = {
     },
     "Talmud": {
       "contents": [
-        "Arakhin",
-        "Avodah Zarah",
-        "Bava Batra",
+        "Berakhot",
+        "Shabbat",
+        "Eruvin",
+        "Pesachim",
+        "Shekalim",
+        "Yoma",
+        "Sukkah",
+        "Beitzah",
+        "Rosh Hashanah",
+        "Taanit",
+        "Megillah",
+        "Moed Katan",
+        "Chagigah",
+        "Yevamot",
+        "Ketubot",
+        "Nedarim",
+        "Nazir",
+        "Sotah",
+        "Gittin",
+        "Kiddushin",
         "Bava Kamma",
         "Bava Metzia",
-        "Beitzah",
-        "Bekhorot",
-        "Berakhot",
-        "Chagigah",
-        "Chullin",
-        "Eruvin",
-        "Gittin",
-        "Horayot",
-        "Keritot",
-        "Ketubot",
-        "Kiddushin",
-        "Makkot",
-        "Megillah",
-        "Meilah",
-        "Menachot",
-        "Moed Katan",
-        "Nazir",
-        "Nedarim",
-        "Niddah",
-        "Pesachim",
-        "Rosh Hashanah",
+        "Bava Batra",
         "Sanhedrin",
-        "Shabbat",
-        "Shekalim",
+        "Makkot",
         "Shevuot",
-        "Sotah",
-        "Sukkah",
-        "Taanit",
-        "Tamid",
+        "Avodah Zarah",
+        "Horayot",
+        "Zevachim",
+        "Menachot",
+        "Chullin",
+        "Bekhorot",
+        "Arakhin",
         "Temurah",
-        "Yevamot",
-        "Yoma",
-        "Zevachim"
+        "Keritot",
+        "Meilah",
+        "Tamid",
+        "Niddah"
       ]
     },
     "Tamid": {

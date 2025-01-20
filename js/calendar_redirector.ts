@@ -31,5 +31,12 @@ export function tryRedirect(englishTitle: string): void {
   });
 }
 
+setTimeout(
+  () => {
+    const id = localStorage.languageOption === "hebrew" ? "title-hebrew" : "title-english";
+    document.getElementById("title")!.textContent = (
+      document.getElementById(id) as HTMLMetaElement)!.content;
+  },
+  10);
 
 tryRedirect((document.getElementById("sefariaCalendarName") as HTMLMetaElement).content);

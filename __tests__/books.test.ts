@@ -10,10 +10,10 @@ class Subject {
       errors.push(`expected title to be ${title}, but was ${queryResult.bookName}`);
     }
     if (queryResult.start !== start) {
-      errors.push(`expected start to be ${start}, but was {queryResult.start}`);
+      errors.push(`expected start to be ${start}, but was ${queryResult.start}`);
     }
     if (queryResult.end !== end) {
-      errors.push(`expected end to be ${end}, but was {queryResult.end}`);
+      errors.push(`expected end to be ${end}, but was ${queryResult.end}`);
     }
 
     expect(errors).toEqual([]);
@@ -104,4 +104,15 @@ test("Invalid chapters", () => {
   assertThat("Genesis 1suffix").doesntParse();
   assertThat("Shabbat A-2").doesntParse();
   assertThat("Shabbat 2-4suffix").doesntParse();
+});
+
+test("Hebrew", () => {
+  assertThat('שבת ע"ג,א-ע״ד').isExtractedTo("Shabbat", "73a", "74b");
+  assertThat('שבת ט״ו,ב').isExtractedTo("Shabbat", "15b");
+  assertThat('שבת ט"ו,ב').isExtractedTo("Shabbat", "15b");
+  assertThat('שבת טו,ב').isExtractedTo("Shabbat", "15b");
+  assertThat('שבת טט').doesntParse();
+
+  assertThat('אסתר א').isExtractedTo("Esther", "1");
+  assertThat('שולחן ערוך אורח חיים ג-ז').isExtractedTo("Shulchan Arukh, Orach Chayim", "3", "7");
 });

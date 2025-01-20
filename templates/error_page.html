@@ -3,12 +3,24 @@
 <head>
   <title>{{ title }}</title>
   {% include "header_common.html" %}
+  {% include "header_static.html" %}
 </head>
 <body>
-  <h1>{{ title }}</h1>
-  <h2>{{ message }}</h2>
+  <div class="lang-english">
+    <h1>{{ title }}</h1>
+    <h2>{{ message }}</h2>
+  </div>
+  <div class="lang-hebrew">
+    <h1>{{ titleHebrew }}</h1>
+    <h2>{{ messageHebrew }}</h2>
+  </div>
   <p style="text-align:center">
-    To report this error, email <a href="mailto:feedback@talmud.page">feedback@talmud.page</a>.
+    <span class="lang-english">
+      To report this error, email <a href="mailto:feedback@talmud.page">feedback@talmud.page</a>.
+    </span>
+    <span class="lang-hebrew" dir="rtl">
+      לדווח על השגיאה: <a href="mailto:feedback@talmud.page">feedback@talmud.page</a>.
+    </span>
   </p>
 </body>
 </html>

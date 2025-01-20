@@ -1,0 +1,13 @@
+<script>
+  setInterval(() => {
+    const english = document.getElementById("englishOnlyCss");
+    const hebrew = document.getElementById("hebrewOnlyCss");
+    if (localStorage.languageOption === "hebrew") {
+      hebrew.disabled = false;
+      english.disabled = true;
+    } else {
+      hebrew.disabled = true;
+      english.disabled = false;
+    }
+  }, 10);
+</script>
