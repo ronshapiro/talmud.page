@@ -3,6 +3,7 @@ import {render} from 'react-dom';
 import {zip} from "underscore";
 import {Book, Category, browseIndex} from "./BrowseIndex";
 import {useIncrementer} from "./hooks";
+import {Preferences, LanguageChooser} from "./Preferences";
 
 interface Color {
   r: number;
@@ -35,10 +36,10 @@ function BackButton({onClick}: {onClick: () => void}): React.ReactElement {
   const useHebrew = localStorage.languageOption === "hebrew";
   const style: any = {
     position: "fixed",
-    top: "20px",
+    top: useHebrew ? "10px" : "50px",
     padding: "30px",
   };
-  style[useHebrew ? "right" : "left"] = "20px";
+  style[useHebrew ? "right" : "left"] = "10px";
 
   return (
     <button
@@ -161,6 +162,17 @@ function Grid(): React.ReactElement {
   );
 }
 
+function Main() {
+  const rerender = useIncrementer()[1];
+  return (
+    <>
+      <LanguageChooser rerender={rerender} padding="32px">
+        <Grid />
+      </LanguageChooser>
+      <Preferences rerender={rerender} />
+    </>
+  );
+}
 
 function main() {
   const root = document.getElementById("main-contents");
@@ -168,8 +180,7 @@ function main() {
     setTimeout(main, 10);
     return;
   }
-
-  render(<Grid />, root);
+  render(<Main />, root);
 }
 
 main();
