@@ -12,6 +12,9 @@ body, #main-contents, #center-content-container {
   align-items: center;
   padding: 5px;
 }
+#center-contents {
+    padding: 32px;
+}
 .search-example {
   display: inline-block;
 }

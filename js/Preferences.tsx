@@ -3,7 +3,7 @@ import * as React from "react";
 import {v4 as newUuid} from "uuid";
 import SwipeableViews from "react-swipeable-views";
 import { virtualize } from "react-swipeable-views-utils";
-import componentHandler from "./componentHandler";
+import {upgradeElement} from "./componentHandler";
 import {useHtmlRef} from "./hooks";
 import {LocalStorageInt} from "./localStorage";
 import {snackbars} from "./snackbar";
@@ -55,7 +55,7 @@ function PreferenceSection({
         rerender();
       }
     };
-    useEffect(() => componentHandler.upgradeElement(labelRef.current));
+    useEffect(() => upgradeElement(labelRef.current));
     return (
       <div>
         <label className="mdl-radio mdl-js-radio mdl-js-ripple-effect" ref={labelRef} htmlFor={id}>
@@ -318,8 +318,13 @@ export function Preferences({rerender}: RerenderViewParams): React.ReactElement 
 
 interface LanguageChooserParams extends RerenderViewParams {
   children: React.ReactElement;
+  padding: string;
 }
-export function LanguageChooser({rerender, children}: LanguageChooserParams): React.ReactElement {
+export function LanguageChooser({
+  rerender,
+  children,
+  padding,
+}: LanguageChooserParams): React.ReactElement {
   const setSubmitted = useState(false)[1];
   const shouldShow = localStorage.needsToPickLanguage;
   const onClick = () => {
@@ -334,7 +339,7 @@ export function LanguageChooser({rerender, children}: LanguageChooserParams): Re
   const buttonClasses = (
     "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored");
   return (
-    <div style={{padding: "32px"}}>
+    <div style={{padding}}>
       <h1>ברוכים הבאים! Welcome!</h1>
       {option}
       <button className={buttonClasses} onClick={onClick}>Enter // כניסה </button>

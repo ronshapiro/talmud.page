@@ -7,7 +7,7 @@ import {Runner} from "./page_runner.js";
 import {formatDafInHebrew} from "../talmud.ts";
 
 function translatePage(page) {
-  return formatDafInHebrew("", page).slice(1);
+  return localStorage.languageOption === "hebrew" ? formatDafInHebrew("", page).slice(1) : page;
 }
 
 const previous = () => computePreviousAmud(amudMetadata().amudStart);

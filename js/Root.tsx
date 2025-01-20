@@ -100,7 +100,9 @@ export function Root({
       )}
     </>
   );
-  return isFake ? core : <LanguageChooser rerender={rerender}>{core}</LanguageChooser>;
+  return isFake ? core : (
+    <LanguageChooser rerender={rerender} padding="32px">{core}</LanguageChooser>
+  );
 }
 Root.propTypes = {
   allAmudim: PropTypes.func.isRequired,
