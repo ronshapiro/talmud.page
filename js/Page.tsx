@@ -51,6 +51,7 @@ export function Page({
     const isEnglishTitle = context.translationOption() === "english-side-by-side";
     const title = isEnglishTitle ? amudData.title : amudData.titleHebrew;
     const className = isEnglishTitle ? "title" : "titleHebrew";
+    const direction = isEnglishTitle ? "ltr" : "rtl";
     const removeSectionButton = navigationExtension.disableNavigation ? undefined : (
       <button
         className="mdl-button mdl-js-button mdl-button--icon mdl-button remove-section-button"
@@ -61,7 +62,7 @@ export function Page({
     );
     return (
       <div className="titleContainer" key="titleContainer">
-        <span className={className} key="title" ref={headerRef}>
+        <span className={className} key="title" ref={headerRef} dir={direction}>
           {title}
           {localStorage.showPageMetadata === "true"
            && !amudData.loading

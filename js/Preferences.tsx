@@ -206,7 +206,7 @@ function preferenceOptions(rerender: () => any): React.ReactElement[] {
       localStorageKeyName="expandEnglishByDefault" />,
     <PreferenceSection
       title="Show page metadata"
-      titleHebrew="להראות מטא דאטה של הדף"
+      titleHebrew="הצג מטא דאטה לפי דף"
       items={STANDARD_YES_TRUE_NO_FALSE}
       rerender={rerender}
       localStorageKeyName="showPageMetadata" />,
@@ -215,7 +215,7 @@ function preferenceOptions(rerender: () => any): React.ReactElement[] {
         <span>Enable offline mode<br /><small>(beta, recommended only when needed)</small></span>
       }
       titleHebrew={
-        <span>לאפשר מצב אופליין<br /><small>(בטא, מומלץ רק במידת הצורך)</small></span>
+        <span>אפשר מצב אופליין<br /><small>(בטא, מומלץ רק במידת הצורך)</small></span>
       }
       items={STANDARD_YES_TRUE_NO_FALSE}
       rerender={rerender}
@@ -225,7 +225,7 @@ function preferenceOptions(rerender: () => any): React.ReactElement[] {
         <span>Enable keyboard shortcuts mode<br /><small>(beta)</small></span>
       }
       titleHebrew={
-        <span>לאפשר קיצורי מקלדת<br /><small>(בטא)</small></span>
+        <span>אפשר קיצורי מקלדת<br /><small>(בטא)</small></span>
       }
       items={STANDARD_YES_TRUE_NO_FALSE}
       rerender={rerender}

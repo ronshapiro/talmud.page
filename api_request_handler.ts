@@ -1527,9 +1527,13 @@ export class ShulchanArukhApiRequestHandler extends AbstractApiRequestHandler {
   protected makeTitleHebrew(): string {
     const precomputedChapterTitle = shulchanArukhChapterTitle(
       `${this.book().canonicalName} ${this.page}`);
-    if (precomputedChapterTitle) return precomputedChapterTitle;
-    const {hebrewName} = this.book();
-    return `${hebrewName}, סעיף ${intToHebrewNumeral(parseInt(this.page))}`;
+    const siman = `סימן ${intToHebrewNumeral(parseInt(this.page))}`;
+    if (precomputedChapterTitle) return `${siman}: ${precomputedChapterTitle}`;
+    return `${this.book().hebrewName}, ${siman}`;
+  }
+
+  protected allowUnequalEnglishLength(): boolean {
+    return true;
   }
 }
 

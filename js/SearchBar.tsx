@@ -21,7 +21,7 @@ export function SearchBar({
   submitRef,
 }: SearchBarPropTypes): React.ReactElement {
   const ref = useHtmlRef<HTMLInputElement>();
-  const formRef = useHtmlRef<HTMLFormElement>();
+  const formRef = useHtmlRef<HTMLDivElement>();
   const [searchError, setSearchError] = useState<any>({});
   const [guesses, setGuesses] = useState<QueryGuess[]>([]);
   const [isLoading, setLoading] = useState(false);
@@ -66,7 +66,6 @@ export function SearchBar({
   const direction = useHebrew ? "rtl" : "ltr";
   const textAlign = useHebrew ? "right" : "left";
 
-
   const suffixHtml = [];
   if (guesses.length > 0) {
     const didYouMean = useHebrew ? "האם התכוונת ל" : "Did you mean";
@@ -84,7 +83,8 @@ export function SearchBar({
   }
 
   useEffect(() => {
-    if (!hasSetDefaultValue && defaultValue) {
+    // Not sure the right way to format the default value in Hebrew yet
+    if (!hasSetDefaultValue && defaultValue && !useHebrew) {
       ref.current.value = defaultValue;
       setDefaultValueSet(true);
     }
@@ -101,8 +101,9 @@ export function SearchBar({
         onSubmit={event => onSubmit(event)}
         style={{display: "flex"}}
         dir={direction}
-        ref={formRef}>
+        >
         <div
+          ref={formRef}
           className="mdl-textfield
                      mdl-js-textfield
                      mdl-textfield--expandable

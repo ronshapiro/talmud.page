@@ -14,7 +14,7 @@ export function shulchanArukhChapterTitle(ref: string): string | undefined {
   if (book.includes(", Seder ")) {
     return undefined;
   }
-  return SHULCHAN_ARUKH_HEADERS[book][chapter];
+  return SHULCHAN_ARUKH_HEADERS[book][chapter]?.replace(/\.$/, "");
 }
 
 const SUGYA_POINTERS_CACHE: Record<string, Record<string, any>> = {};

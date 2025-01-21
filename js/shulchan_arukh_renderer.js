@@ -7,7 +7,7 @@ class ShulchanArukhRenderer extends Renderer {
   constructor() {
     super(
       getCommentaryTypes("shulchan arukh"),
-      numericalNavigationExtension(),
+      numericalNavigationExtension("סימן"),
       {allowCompactLayout: false});
   }
 

@@ -315,15 +315,20 @@ export abstract class Renderer {
   }
 }
 
-export function numericalNavigationExtension (): BaseNavigationExtension {
+export function numericalNavigationExtension(
+  chapterLoadingPrefix = "פרק"): BaseNavigationExtension {
   const previous = () => (parseInt(amudMetadata().amudStart!) - 1).toString();
   const next = () => (parseInt(amudMetadata().amudEnd!) + 1).toString();
+  const maybeHebrew = (fn: () => string) => {
+    if (localStorage.languageOption !== "hebrew") return fn();
+    return `${chapterLoadingPrefix} ${intToHebrewNumeral(parseInt(fn()))}`;
+  };
   return {
     previous,
     next,
 
-    displayPrevious: previous,
-    displayNext: next,
+    displayPrevious: () => maybeHebrew(previous),
+    displayNext: () => maybeHebrew(next),
 
     hasPrevious: () => amudMetadata().amudStart !== "1",
     hasNext: () => {
