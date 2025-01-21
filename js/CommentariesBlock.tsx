@@ -119,6 +119,7 @@ interface CommentariesBlockProps {
   segmentLabel: string;
   syntheticClassName?: string;
   syntheticCommentaryKinds?: Record<string, CommentaryType>;
+  depth?: number;
 }
 
 export function CommentariesBlock({
@@ -128,11 +129,13 @@ export function CommentariesBlock({
   segmentLabel,
   syntheticClassName,
   syntheticCommentaryKinds,
+  depth,
 }: CommentariesBlockProps): React.ReactElement | null {
   const context = useConfiguration();
   const [showAll, setShowAll] = useState(false);
   const [buttonToFocus, setButtonToFocus] = useState<CommentaryType | undefined>();
   const buttonToFocusAfterEnter = useHtmlRef<HTMLElement>();
+  depth = depth ?? 0;
 
   const forEachCommentary = (action: (commentary: Commentary, kind: CommentaryType) => void) => {
     if (syntheticCommentaryKinds) {
@@ -179,6 +182,7 @@ export function CommentariesBlock({
       segmentLabel={props.segmentLabel}
       syntheticClassName={props.syntheticClassName}
       syntheticCommentaryKinds={props.syntheticCommentaryKinds}
+      depth={depth! + 1}
       />;
   };
 
@@ -202,6 +206,7 @@ export function CommentariesBlock({
         key={nestedSegmentLabel}
         syntheticClassName={commentaryClassName}
         syntheticCommentaryKinds={kinds}
+        depth={depth! + 1}
         />);
   };
 
@@ -250,6 +255,8 @@ export function CommentariesBlock({
       return element;
     };
 
+    const depthIndicator = "> ".repeat(depth!);
+
     const id = commentaryKind.className + "__" + segmentLabel;
     const button = applyButtonToFocusRef(
       // eslint-disable-next-line jsx-a11y/anchor-is-valid
@@ -263,7 +270,7 @@ export function CommentariesBlock({
         tabIndex={0}
         onClick={onClick}
         onKeyUp={onKeyUp}>
-        {commentaryKind.hebrewName}
+        {depthIndicator}{commentaryKind.hebrewName}
       </a>);
     const highlightColors = !isShowing && commentaryHighlightIndicators(commentary);
     const imageIndicator = !isShowing && hasImage(commentary) && "📸 🖼️";
@@ -362,6 +369,7 @@ export function CommentariesBlock({
             commentaries={comment.commentary || {}}
             segmentLabel={nestedSegmentLabel}
             key={nestedSegmentLabel}
+            depth={depth! + 1}
             />);
       }
     }
