@@ -54,7 +54,8 @@ function textTypeHasImage(text: sefaria.TextType): boolean {
 
 function hasImage(commentary: Commentary): boolean {
   for (const comment of commentary.comments) {
-    if (textTypeHasImage(comment.he) || textTypeHasImage(comment.en)) {
+    if (textTypeHasImage(comment.he)
+      || (textTypeHasImage(comment.en) && localStorage.languageOption !== "hebrew")) {
       return true;
     }
     if (Object.values(comment.commentary || {}).some(hasImage)) {
