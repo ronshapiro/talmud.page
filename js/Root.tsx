@@ -11,7 +11,7 @@ import {Preferences, LanguageChooser} from "./Preferences";
 import {Keybindings} from "./Keybindings";
 import {SnackbarHost} from "./SnackbarReact";
 import {Page, UiPage} from "./Page";
-import {useIncrementer} from "./hooks";
+import {useIncrementer, useUpdateDarkMode} from "./hooks";
 import componentHandler from "./componentHandler";
 import {NavigationExtension} from "./NavigationExtension";
 
@@ -39,14 +39,7 @@ export function Root({
     componentHandler.upgradeAllRegistered();
   });
 
-  useEffect(() => {
-    (document.getElementById("darkModeCss") as HTMLLinkElement).disabled = (
-      localStorage.darkMode !== "true");
-    for (const id of ["theme-color", "theme-color-dark-mode"]) {
-      (document.getElementById(id) as HTMLMetaElement).content = (
-        getComputedStyle(document.body).getPropertyValue('--background-color'));
-    }
-  });
+  useUpdateDarkMode();
 
   const context = useConfiguration();
   const [queryCount, incrementQueryCount] = useIncrementer();

@@ -4,7 +4,7 @@ import {v4 as newUuid} from "uuid";
 import SwipeableViews from "react-swipeable-views";
 import { virtualize } from "react-swipeable-views-utils";
 import {upgradeElement} from "./componentHandler";
-import {useHtmlRef} from "./hooks";
+import {useHtmlRef, useUpdateDarkMode} from "./hooks";
 import {LocalStorageInt} from "./localStorage";
 import {snackbars} from "./snackbar";
 
@@ -254,6 +254,8 @@ function preferenceOptions(rerender: () => any): React.ReactElement[] {
 
 export function Preferences({rerender}: RerenderViewParams): React.ReactElement {
   const options = preferenceOptions(rerender);
+
+  useUpdateDarkMode();
 
   const preferencesIndex = new LocalStorageInt("preferencesIndex");
   const englishIndexState = useState(preferencesIndex.get() || 0);
