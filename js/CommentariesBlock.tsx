@@ -255,23 +255,33 @@ export function CommentariesBlock({
       return element;
     };
 
-    const depthIndicator = "> ".repeat(depth!);
+    const depthIndicator = [];
+    for (let i = 0; i < depth!; i++) {
+      depthIndicator.push(
+        <span className={"depthIndicator " + buttonClasses(commentaryKind, isShowing, commentary)}>
+          {">"}
+        </span>,
+      );
+    }
 
     const id = commentaryKind.className + "__" + segmentLabel;
     const button = applyButtonToFocusRef(
-      // eslint-disable-next-line jsx-a11y/anchor-is-valid
-      <a
-        id={id}
-        key="button"
-        className={buttonClasses(commentaryKind, isShowing, commentary) + (
-          context.selectedCommentaryView?.id === id ? " keybindingSelectedButton" : ""
-        )}
-        role="button"
-        tabIndex={0}
-        onClick={onClick}
-        onKeyUp={onKeyUp}>
-        {depthIndicator}{commentaryKind.hebrewName}
-      </a>);
+      <>
+        {depthIndicator}
+        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+        <a
+          id={id}
+          key="button"
+          className={buttonClasses(commentaryKind, isShowing, commentary) + (
+            context.selectedCommentaryView?.id === id ? " keybindingSelectedButton" : ""
+          )}
+          role="button"
+          tabIndex={0}
+          onClick={onClick}
+          onKeyUp={onKeyUp}>
+          {commentaryKind.hebrewName}
+        </a>
+      </>);
     const highlightColors = !isShowing && commentaryHighlightIndicators(commentary);
     const imageIndicator = !isShowing && hasImage(commentary) && "📸 🖼️";
     return (

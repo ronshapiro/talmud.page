@@ -722,3 +722,10 @@ h2, .title, .titleHebrew {
 #errors .lang-hebrew {
     text-align: right;
 }
+
+.depthIndicator {
+    text-decoration: none !important;
+    padding-left: .3em;
+    /* backup in case its just a default commentary with no specified color */
+    color: rgb(255, 110, 64);
+}
