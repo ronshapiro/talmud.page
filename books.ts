@@ -789,7 +789,8 @@ export class BookIndex {
   }
 
   private addIndexValue<T>(name: string, value: T, index: Record<string, T>) {
-    const replacements: [RegExp, string][] = [[/ /g, "_"], [/,/g, ""]];
+    // eslint-disable-next-line no-useless-escape
+    const replacements: [RegExp, string][] = [[/ /g, "_"], [/,/g, ""], [/['\-]/g, ""]];
     const candidates: string[] = [name];
     for (const [regex, replacement] of replacements) {
       for (const candidate of Array.from(candidates)) {
@@ -803,8 +804,7 @@ export class BookIndex {
   }
 
   private canonicalNameOrUndefined(name: string): string | undefined {
-    // eslint-disable-next-line no-useless-escape
-    return this.aliasIndex[name.toLowerCase().replace(/['\-]/g, "")];
+    return this.aliasIndex[name.toLowerCase()];
   }
 
   canonicalName(name: string): string {
