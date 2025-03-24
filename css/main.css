@@ -729,3 +729,19 @@ h2, .title, .titleHebrew {
     /* backup in case its just a default commentary with no specified color */
     color: rgb(255, 110, 64);
 }
+
+
+.gdb {
+  background: linear-gradient(-90deg, rgba(87, 175, 235, .3), rgba(87, 175, 235, .8), rgba(87, 175, 235, .3), rgba(87, 175, 235, .8)); /* Initial gradient */
+  background-size: 300% 100%; /* Make the gradient wider than the element */
+  animation: gradientDrift 4s linear infinite; /* Apply animation */
+}
+
+@keyframes gradientDrift {
+  0% {
+    background-position: 0% 50%; /* Start at the left */
+  }
+  100% {
+      background-position: 100% 50%; /* Start at the left */
+  }
+}
