@@ -34,6 +34,8 @@ declare namespace sefaria {
     isSpanning?: boolean;
     spanningRefs?: string[];
     refsPerSubText?: string[];
+
+    alternates?: Record<string, TextResponse>;
   }
 
   interface BulkTextValue {
