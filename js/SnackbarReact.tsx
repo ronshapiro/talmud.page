@@ -110,6 +110,7 @@ export function SnackbarHost({
   queryCount, // eslint-disable-line @typescript-eslint/no-unused-vars
 }: SearchProps): React.ReactElement {
   const [isShowing, setShowing] = useState(false);
+  // `colors` saves the ordering and presence of colors.
   const [colors, setColors] = useState([COLORS[0]]);
   const [contentsByColor, setContentsByColor] = useState({} as Record<string, string | undefined>);
   const setContentForColor = recordStateSetter(setContentsByColor);
@@ -135,13 +136,11 @@ export function SnackbarHost({
     }
   };
   const newSearchWithText = (initialText: string) => {
-    if (!isShowing) {
-      setShowing(true);
-    }
+    setShowing(true);
 
     const latestColor = colors.slice(-1)[0];
     const latestContent = contentsByColor[latestColor];
-    if (latestContent === undefined || latestContent === "") {
+    if (latestColor && (latestContent === undefined || latestContent === "")) {
       setContentForColor(latestColor, initialText);
     } else {
       addNewSearch(initialText);
