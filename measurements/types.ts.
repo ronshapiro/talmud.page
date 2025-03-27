@@ -1,0 +1,404 @@
+interface Hebrew {
+  hebrew: string;
+}
+
+interface English {
+  english: string;
+}
+
+interface Translatable extends Hebrew, English {
+  englishTransliteration?: string;
+  hebrewDouble?: string;
+  hebrewPlural?: string;
+}
+
+interface Conversion {
+  unit: string;
+  amount: number;
+}
+
+interface ConversionRange {
+  minimum: Conversion;
+  maximum: Conversion;
+}
+
+interface Unit extends Translatable {
+  hundreds?: Unit;
+  thousands?: Unit;
+  oneHundredth?: Unit;
+  oneThousandth?: Unit;
+}
+
+interface ModernUnits {
+  chayimNaeh: number;
+  chazonIsh: number;
+  rambam: number;
+  unit: Unit;
+}
+
+interface Measurement {
+  name: Translatable;
+  aliases?: (Hebrew | English)[];
+  conversion?: Conversion;
+  conversionRange?: ConversionRange;
+  modernUnits?: ModernUnits;
+}
+
+const CENTIMETER: Unit = {
+  hebrew: 'ס"מ',
+  english: "cm",
+};
+
+const METER: Unit = {
+  hebrew: 'מטר',
+  english: "m", // do not submit: there's a difference between suffix and the name!
+};
+
+const KILOMETER: Unit = {
+  hebrew: 'ק"מ',
+  english: "km",
+};
+
+KILOMETER.oneThousandth = METER;
+METER.thousands = KILOMETER;
+
+METER.oneHundredth = CENTIMETER;
+CENTIMETER.hundreds = METER;
+
+
+const LENGTH: Measurement[] = [{
+  name: {
+    hebrew: "אצבע",
+    hebrewPlural: "אצבעות",
+    english: "finger",
+    englishTransliteration: "etzba",
+  },
+  aliases: [{hebrew: "אגודל"}, {english: "thumb"}],
+  modernUnits: {
+    chayimNaeh: 2,
+    chazonIsh: 2.4,
+    rambam: 1.9,
+    unit: CENTIMETER,
+  },
+}, {
+  name: {
+    hebrew: "טפח",
+    hebrewDouble: "טפחיים",
+    hebrewPlural: "טפחים",
+    english: "handbreadth",
+    englishTransliteration: "tefach",
+  },
+  aliases: [
+    {hebrew: "טפחא"}, {hebrew: "פשך"},
+    // Just for clothing and weaving: https://bit.ly/4iBUy30
+    {hebrew: "סיט"}, {hebrew: "רוחב הסיט"}, {hebrew: "מלוא הסיט"},
+  ],
+  conversion: {
+    unit: "אצבע",
+    amount: 4,
+  },
+}, {
+  name: {
+    hebrew: "זרת",
+    english: "span",
+    englishTransliteration: "zeret",
+  },
+  aliases: [{hebrew: "זרתא"}],
+  conversion: {
+    unit: "אמה",
+    amount: .5,
+  },
+}, {
+  name: {
+    hebrew: "אמה",
+    hebrewDouble: "אמתיים",
+    hebrewPlural: "אמות",
+    english: "cubit",
+    englishTransliteration: "amah",
+  },
+  aliases: [{hebrew: "גומד"}, {hebrew: "גרמידא"}],
+  conversion: {
+    unit: "טפח",
+    // TODO: sometimes it's only 5! אמה בת חמישה!
+    amount: 6,
+  },
+}, {
+  name: {
+    hebrew: "ריס",
+    english: "ris",
+  },
+  conversion: {
+    unit: "מיל",
+    amount: 2 / 15,
+  },
+}, {
+  name: {
+    hebrew: "מיל",
+    hebrewPlural: "מילים",
+    english: "mil",
+  },
+  conversion: {
+    unit: "אמה",
+    amount: 2000,
+  },
+}, {
+  name: {
+    hebrew: "פרסא",
+    english: "parsa",
+  },
+  aliases: [{hebrew: "פרסה"}],
+  conversion: {
+    unit: "מיל",
+    amount: 4,
+  },
+}];
+
+function makeIndex(measurements: Measurement[]): Record<string, Measurement> {
+  const index: Record<string, Measurement> = {};
+  for (const measurement of measurements) {
+    index[measurement.name.hebrew] = measurement;
+    index[measurement.name.english] = measurement;
+    index[measurement.name.englishTransliteration ?? ""] = measurement;
+    index[measurement.name.hebrewPlural ?? ""] = measurement;
+    index[measurement.name.hebrewDouble ?? ""] = measurement;
+    for (const alias of measurement.aliases ?? []) {
+      index[Object.values(alias)[0]] = measurement;
+    }
+  }
+  delete index[""];
+  return index;
+}
+
+const LENGTH_INDEX = makeIndex(LENGTH);
+
+const MILLILITER: Unit = {
+  hebrew: 'מ״ל',
+  english: "mL",
+};
+const LITER: Unit = {
+  hebrew: "ליטר",
+  english: "L",
+  oneThousandth: MILLILITER,
+};
+MILLILITER.thousands = LITER;
+
+const VOLUME: Measurement[] = [{
+  name: {
+    hebrew: "קורטוב",
+    english: "kortov",
+  },
+  modernUnits: {
+    unit: MILLILITER,
+    chayimNaeh: 5.625,
+    chazonIsh: 9.33,
+    rambam: 5.4,
+  },
+  conversion: {
+    unit: "לוג",
+    amount: 1 / 64,
+  },
+}, {
+  name: {
+    hebrew: "כגרוגרת",
+    english: "", // do not submit
+    englishTransliteration: "k'gerogeret", // do not submit
+  },
+  modernUnits: {
+    unit: MILLILITER,
+    chayimNaeh: 15,
+    chazonIsh: 33.18,
+    rambam: 19.2,
+  },
+  conversion: {unit: "כביצה", amount: 1 / 3},
+}, {
+  name: {
+    hebrew: "כזית",
+    english: "kezayit",
+  },
+  modernUnits: {
+    unit: MILLILITER,
+    chayimNaeh: 25.6,
+    chazonIsh: 49.77,
+    rambam: 15, // do not submit: Wikipedia says "פחות מ-15"
+  },
+  // do not submit: CONVERSION? but there's a machloket
+}, {
+  name: {
+    hebrew: "ככותבת",
+    english: "k'chotevet", // do not submit
+  },
+  modernUnits: {
+    // do not submit: Wikipedia says 40-50
+    unit: MILLILITER,
+    chayimNaeh: 45,
+    chazonIsh: 45,
+    rambam: 45,
+  },
+}, {
+  name: {
+    hebrew: "שמינית",
+    english: "sheminit",
+  },
+  aliases: [{hebrew: "עוכלה"}, {english: "ukhla"}],
+  conversion: {unit: "כביצה", amount: 1 / 8},
+}, {
+  name: {
+    hebrew: "רביעית",
+    english: "revi'it",
+  },
+  conversion: {unit: "לוג", amount: 1 / 4},
+}, {
+  name: {
+    hebrew: "פרס",
+    english: "slice of bread",
+  },
+  conversionRange: {
+    minimum: {unit: "כביצה", amount: 3},
+    maximum: {unit: "כביצה", amount: 4},
+  },
+}, {
+  name: {
+    hebrew: "ליטרא"
+  }
+}];
+
+/*
+	בין שני זיתים לביצה	40-50 מ"ל
+עוכלא, שמינית
+1
+2
+{\displaystyle {\tfrac {1}{2}}} רביעית,
+1
+8
+{\displaystyle {\tfrac {1}{8}}} לוג	43.2 מ"ל	74.65 מ"ל	37.5 מ"ל
+כביצה	(יחידה בסיסית) והיא
+2
+3
+{\displaystyle {\tfrac {2}{3}}} מן הרביעית [14]	57.6 מ"ל	99.53 מ"ל	49.4 מ"ל
+רביעית
+1
+4
+{\displaystyle {\tfrac {1}{4}}} לוג או
+2
+∗
+2
+∗
+2
+7
+10
+{\displaystyle 2*2*2{\tfrac {7}{10}}} אצבעות מעוקבות	86.4 מ"ל	149.3 מ"ל	75 מ"ל
+פרס	מחלוקת: 3 ביצים - 4 ביצים	172.8-230.4 מ"ל	298.6-398.12 מ"ל	148.2-197.6 מ"ל
+ליטרא	2 רביעיות =
+1
+2
+{\displaystyle {\tfrac {1}{2}}} לוג	172.8 מ"ל	298.6 מ"ל	148.2 מ"ל
+לוג	6 ביצים	345.6 מ"ל	597.2 מ"ל	300 מ"ל
+רובע, רובע הקב*
+1
+4
+{\displaystyle {\tfrac {1}{4}}} קב
+רביעית ההין*, קפיזא	1/4 הין	1.037 ליטר (1037.5 מ"ל)	1.79 ליטר (1791.59 מ"ל)	0.9 ליטר (900 מ"ל)
+קב, שלישית ההין*	24 ביצים (4 לוגים)	1.38 ליטר	2.39 ליטר	1.2 ליטר
+עומר, עשרון
+1
+10
+{\displaystyle {\tfrac {1}{10}}} איפה	2.49 ליטר	4.3 ליטר	2.16 ליטר
+הין, תרקב	12 לוג, 3 קבים	4.15 ליטר	7.17 ליטר	3.6 ליטר
+סאה, גריוא, גריוה*	6 קבים	8.3 ליטר	14.3 ליטר	7.2 ליטר
+איפה, בת	3 סאים	24.88 ליטר	43 ליטר	21.6 ליטר
+לתך, אדריב	חצי כור = 15 סאים	124.42 ליטר	214.99 ליטר	108 ליטר
+כור, חומר	10 איפות = 30 סאים	248.83 ליטר (0.25 מ"ק)	429.98 ליטר (0.43 מ"ק)	216 ליטר (0.216 מ"ק)
+מקווה	מקווה = 40 סאים	332 ליטר	572 ליטר	288 ליטר
+*/
+
+/*
+  שם המידה	משמעות תאורטית	הגדרה הלכתית על פי יחידה אחרת	ערך ביחידה המטרית
+רב חיים נאה	חזון איש
+בית רובע	שטח שבו ניתן לזרוע שעורים[43] בנפח רובע הקב	1/4 מבית קב	24 מ"ר	34.56 מ"ר
+בית קב	שטח שבו ניתן לזרוע שעורים בנפח קב	1/6 מבית סאה	96 מ"ר	138.24 מ"ר
+בית סאה, בית גריוא, בית גריוה	שטח שבו ניתן לזרוע שעורים בנפח סאה	50 אמה על 50 אמה	576 מ"ר	829.44 מ"ר
+בית סאתים	שטח שבו ניתן לזרוע שעורים בנפח סאתים	2 בתי סאה	1152 מ"ר	1658.88 מ"ר
+בית כור	שטח שבו ניתן לזרוע שעורים בנפח כור	30 בתי סאה	17280 מ"ר (17.28 דונם)	24883.2 מ"ר (24.88 דונם)
+*/
+
+/*
+  שם המידה	פרוטה	איסר	פונדיון	מעה	טרפעיק	דינר	שקל	סלע	דרכון	מנה	שעורים	גרמים
+פרוטה	1	0.125	0.063	0.031	0.010	0.006	0.003	0.001	⁦6.51×10-4⁩	⁦5.21×10-5⁩	0.5	0.025
+איסר	8	1	0.5	0.25	0.083	0.019	0.009	0.005	0.002	⁦4.17×10-4⁩	4	0.2
+פונדיון	16	2	1	0.5	0.167	0.056	0.028	0.014	0.007	⁦8.33×10-4⁩	8	0.4
+מעה, גרה	32	4	2	1	0.333	0.167	0.083	0.042	0.021	0.002	16	0.8
+טרפעיק, איסתרא, רבעת	96	12	6	3	1	0.5	0.25	0.125	0.063	0.005	48	2.4
+דינר, זוז	192	24	12	6	2	1	0.5	0.25	0.125	0.01	96	4.8
+שקל (חז"ל), בקע	384	48	24	12	4	2	1	0.5	0.25	0.02	192	9.6
+סלע, שקל הקודש	768	96	48	24	8	4	2	1	0.5	0.04	384	19.2
+דרכון	1536	192	96	48	16	8	4	2	1	0.08	768	38.4
+מנה	19200	2400	1200	600	200	100	50	25	12.5	1	9600	480
+*/
+
+function inModernUnits(
+  amount: number, name: string, index: Record<string, Measurement>,
+): ModernUnits {
+  if (index[name].modernUnits) {
+    const base = index[name].modernUnits!;
+    return {
+      // do not submit: if the unit changes across conversions this won't be true! all units must be consistent across measurements in an index
+      chayimNaeh: amount * base.chayimNaeh,
+      chazonIsh: amount * base.chazonIsh,
+      rambam: amount * base.rambam,
+      unit: base.unit,
+    };
+  }
+  // do not submit: need to deal with conversion ranges
+  const conversion = index[name].conversion!;
+  return inModernUnits(amount * conversion.amount, conversion.unit, index);
+}
+
+function normalize(base: ModernUnits, key: "chayimNaeh" | "chazonIsh" | "rambam"): ModernUnits {
+  if (base[key] >= 1000 && base.unit.thousands) {
+    return normalize({
+      chayimNaeh: base.chayimNaeh / 1000,
+      chazonIsh: base.chazonIsh / 1000,
+      rambam: base.rambam / 1000,
+      unit: base.unit.thousands!,
+    }, key);
+  }
+  if (base[key] >= 100 && base.unit.hundreds) {
+    return normalize({
+      chayimNaeh: base.chayimNaeh / 100,
+      chazonIsh: base.chazonIsh / 100,
+      rambam: base.rambam / 100,
+      unit: base.unit.hundreds!,
+    }, key);
+  }
+  if (base[key] < .001 && base.unit.oneThousandth) {
+    return normalize({
+      chayimNaeh: base.chayimNaeh * 1000,
+      chazonIsh: base.chazonIsh * 1000,
+      rambam: base.rambam * 1000,
+      unit: base.unit.oneThousandth!,
+    }, key);
+  }
+  if (base[key] < .01 && base.unit.oneHundredth) {
+    return normalize({
+      chayimNaeh: base.chayimNaeh * 100,
+      chazonIsh: base.chazonIsh * 100,
+      rambam: base.rambam * 100,
+      unit: base.unit.oneHundredth!,
+    }, key);
+  }
+  return base;
+}
+
+function modernToString(modernUnits: ModernUnits): string {
+  modernUnits = normalize(modernUnits, "chazonIsh");
+  return `${modernUnits.chazonIsh} ${modernUnits.unit.english}`;
+}
+
+for (const length of LENGTH) {
+  console.log(length.name.hebrew);
+  if (length.modernUnits) {
+    console.log(modernToString(length.modernUnits!));
+  } else {
+    console.log(modernToString(inModernUnits(1, length.name.hebrew, LENGTH_INDEX)));
+  }
+}

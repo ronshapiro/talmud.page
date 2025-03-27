@@ -101,7 +101,9 @@ const STANDARD_YES_TRUE_NO_FALSE = [
   {value: "false", displayText: "No", displayTextHebrew: "לא"},
 ];
 
-function preferenceOptions(rerender: () => any): React.ReactElement[] {
+type Version = {hebrew: string, english: string};
+
+function preferenceOptions(rerender: () => any, versions: Version[]): React.ReactElement[] {
   const allOptions = [
     // Note: It's important that this is the first option so that there are no ignoreInHebrew
     // options before it. Otherwise, the swipe index could get mangled when switching languages.
@@ -247,13 +249,41 @@ function preferenceOptions(rerender: () => any): React.ReactElement[] {
         localStorageKeyName="disablePrecaching" />,
     );
   }
+  console.log(versions);
+
+  if (versions && versions.length > 0) {
+    // do not submit: this should be by category
+    const versionItems = versions.map(version => {
+      return {
+        value: version.english,
+        displayText: version.english,
+        displayTextHebrew: version.hebrew,
+      };
+    });
+    versionItems.unshift({
+      value: "default",
+      displayText: "Default", // do not submit: this should be more specific
+      displayTextHebrew: "ברירת מחדל",
+    });
+    allOptions.splice(
+      2, 0,
+      <PreferenceSection
+        title="Preferred Version"
+        titleHebrew="גרסה מעודפת"
+        items={versionItems}
+        rerender={rerender}
+        localStorageKeyName="preferredVersion" />);
+  }
   return useHebrew()
     ? allOptions.filter(option => !option.props.ignoreInHebrew)
     : allOptions;
 }
 
-export function Preferences({rerender}: RerenderViewParams): React.ReactElement {
-  const options = preferenceOptions(rerender);
+interface PreferencesViewParams extends RerenderViewParams {
+  versions: Version[];
+}
+export function Preferences({rerender, versions}: PreferencesViewParams): React.ReactElement {
+  const options = preferenceOptions(rerender, versions);
 
   useUpdateDarkMode();
 
@@ -337,7 +367,8 @@ export function LanguageChooser({
   if (!shouldShow) {
     return children;
   }
-  const option = preferenceOptions(rerender)[0];
+  // do not submit: what about a Shas chooser?
+  const option = preferenceOptions(rerender, [])[0];
   const buttonClasses = (
     "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored");
   return (

@@ -98,12 +98,16 @@ function* dedupeComments(comments: Iterable<ApiComment>): Generator<ApiComment> 
   }
 }
 
+// TODO: perhaps the best thing to do here is to just ignore the hebrew in the request
+const IGNORE_IN_HEBREW_KINDS = new Set(["Koren Tanakh"]);
+
 function syntheticCommentaryKind(commentary: Commentary): CommentaryType {
   const comment = commentary.comments[0];
   return {
     englishName: comment.sourceRef,
     className: comment.sourceRef,
     hebrewName: comment.sourceHeRef,
+    ignoreInHebrew: (IGNORE_IN_HEBREW_KINDS.has(comment.sourceRef) as any as true),
   };
 }
 
