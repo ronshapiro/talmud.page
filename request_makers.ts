@@ -56,7 +56,9 @@ function parseEndpoint(endpoint: string): Endpoint {
     const id = new URLSearchParams(urlParse(endpoint).query!).get("tp")!;
     return {requestBase, ref: id};
   }
-  return {requestBase, ref: match[2]};
+
+  const id = new URLSearchParams(urlParse(endpoint).query!).get("tp");
+  return {requestBase, ref: match[2] + (id ? `@_${id}` : "")};
 }
 
 function inputFileName(endpoint: Endpoint): string {

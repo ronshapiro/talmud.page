@@ -14,6 +14,8 @@ class MishnaRenderer extends Renderer {
   newPageTitleHebrew(section) {
     return this.newNumericalPageTitleHebrew(section);
   }
+
+  rendererType() { return "Mishna"; }
 }
 
 new Runner(new MishnaRenderer(), driveClient).main();

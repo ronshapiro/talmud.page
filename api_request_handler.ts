@@ -524,11 +524,22 @@ export class ApiException extends Error {
   }
 }
 
+type Alternate = "" | "Koren Tanakh" | "Vilna Shas";
+const ALTERNATE_DEFAULT: Alternate = "";
+const ALTERNATES_IN_HEBREW: Record<Alternate, string> = {
+  /* eslint-disable quote-props */
+  "": "",
+  "Koren Tanakh": "קורן",
+  "Vilna Shas": 'ש"ס וילנא',
+  /* eslint-enable quote-props */
+};
+
 class BulkTextGroup {
   constructor(
     readonly key: string,
     readonly refs: string[],
     readonly urlExtension: string,
+    readonly alternateKind: Alternate,
   ) {}
 }
 
@@ -689,8 +700,18 @@ export abstract class AbstractApiRequestHandler {
 
         return this.fetchData(Array.from(textRequestRefs), ref)
           .then(fetched => {
-            for (const [fetchedRef, textResponse] of Object.entries(fetched)) {
+            for (const [fetchedRef, textResponse] of Object.entries(fetched[ALTERNATE_DEFAULT])) {
               linkGraph.textResponses[fetchedRef] = textResponse;
+            }
+            for (const [alternateKey, fetchedAlternates] of Object.entries(fetched)) {
+              if (alternateKey !== ALTERNATE_DEFAULT) {
+                for (const [fetchedRef, textResponse] of Object.entries(fetchedAlternates)) {
+                  if (!linkGraph.textResponses[fetchedRef].alternates) {
+                    linkGraph.textResponses[fetchedRef].alternates = {};
+                  }
+                  linkGraph.textResponses[fetchedRef].alternates![alternateKey] = textResponse;
+                }
+              }
             }
           })
           .then(() => linkGraph);
@@ -709,7 +730,24 @@ export abstract class AbstractApiRequestHandler {
 
   private makeTextRequest(ref: string, underlyingRefs: string[]): Promise<sefaria.TextResponse> {
     if (underlyingRefs.length === 1 && ref === underlyingRefs[0]) {
-      return this.requestMaker.makeRequest<sefaria.TextResponse>(textRequestEndpoint(ref));
+      const bulkTextGroups = this.groupRefsByCustomParameters([ref]);
+      const main = this.requestMaker.makeRequest<sefaria.TextResponse>(textRequestEndpoint(ref));
+      const others = [];
+      for (const bulkTextGroup of bulkTextGroups.slice(1)) {
+        others.push(
+          this.requestMaker.makeRequest<sefaria.TextResponse>(
+            textRequestEndpoint(ref) + bulkTextGroup.urlExtension + `&tp=${bulkTextGroup.key}`)
+            .then(x => [bulkTextGroup.alternateKind, x]));
+      }
+      return Promise.all([main, Promise.all(others)])
+        .then(promises => {
+          const [mainResponse, alternates] = promises;
+          mainResponse.alternates = {};
+          for (const [alternateKind, alternate] of alternates) {
+            mainResponse.alternates[alternateKind as string] = alternate as sefaria.TextResponse;
+          }
+          return mainResponse;
+        });
     }
     return this.fetchData(underlyingRefs, ref + "_bulk_root")
       .then(fetchedData => {
@@ -718,9 +756,17 @@ export abstract class AbstractApiRequestHandler {
           text: [],
           ref,
           refsPerSubText: [],
+          alternates: {},
         };
+
+        for (const [alternateKey, fetchedAlternates] of Object.entries(fetchedData)) {
+          if (alternateKey !== ALTERNATE_DEFAULT) {
+            response.alternates![alternateKey] = fetchedAlternates[ref];
+          }
+        }
+
         for (const underlyingRef of underlyingRefs) {
-          const underlyingRefData = fetchedData[underlyingRef];
+          const underlyingRefData = fetchedData[ALTERNATE_DEFAULT][underlyingRef];
           let {he, text} = underlyingRefData;
           const addSegment = (
             hebrew: sefaria.TextType,
@@ -922,18 +968,27 @@ export abstract class AbstractApiRequestHandler {
   private fetchData(
     refs: string[],
     requestId: string,
-  ): Promise<Record<string, sefaria.TextResponse>> {
+  ): Promise<Record<string, Record<string, sefaria.TextResponse>>> {
     if (refs.length === 0) {
-      return Promise.resolve({});
+      const result: any = {};
+      result[ALTERNATE_DEFAULT] = {};
+      return Promise.resolve(result);
     }
 
     const timer = this.logger.newTimer();
-    const fetched: Record<string, sefaria.TextResponse> = {};
+    const fetched: Record<string, Record<string, sefaria.TextResponse>> = {};
     const nestedPromises: Promise<unknown>[] = [];
 
     // 40 seems to be a sweet spot for speed. Perhaps it's because it limits the number of requests
     // without making any of those requests heavyweight.
     const shardSize = 40;
+
+    const setFetchResult = (
+      alternate: Alternate, ref: string, textResponse: sefaria.TextResponse,
+    ) => {
+      if (!(alternate in fetched)) fetched[alternate] = {};
+      fetched[alternate][ref] = textResponse;
+    };
 
     // Sorting helps maintain expected outputs for tests, and also for debugging queries that may go
     // awry. There isn't much need to use mergeRefs(), and in fact it may cause problems with the
@@ -942,7 +997,7 @@ export abstract class AbstractApiRequestHandler {
     refs.sort(refSorter);
     for (const syntheticRef of SYNTHETIC_REFS) {
       if (refs.includes(syntheticRef)) {
-        fetched[syntheticRef] = {ref: syntheticRef, he: "", text: ""};
+        setFetchResult("", syntheticRef, {ref: syntheticRef, he: "", text: ""});
         const [first, last] = [
           refs.indexOf(syntheticRef), refs.lastIndexOf(syntheticRef)];
         refs.splice(first, last - first + 1);
@@ -960,11 +1015,11 @@ export abstract class AbstractApiRequestHandler {
           this.requestMaker.makeRequest<sefaria.BulkTextResponse>(url).then(allTexts => {
             for (const ref of Object.keys(allTexts)) {
               const response = allTexts[ref];
-              fetched[ref] = {
+              setFetchResult(bulkTextGroup.alternateKind, ref, {
                 he: response.he,
                 text: response.en,
                 ref,
-              };
+              });
             }
           }));
       }
@@ -977,23 +1032,32 @@ export abstract class AbstractApiRequestHandler {
 
   private groupRefsByCustomParameters(refs: string[]): BulkTextGroup[] {
     const indexed = new ListMultimap<string, string>();
-    const extensions: Record<string, string> = {
+    const kinds: Record<string, [string, Alternate]> = {
       /* eslint-disable quote-props */
-      "Tanakh": "&ven=Tanakh: The Holy Scriptures, published by JPS",
-      "Standard": "",
+      "Tanakh": ["&ven=Tanakh: The Holy Scriptures, published by JPS", ALTERNATE_DEFAULT],
+      "TanakhKoren": ["&ven=The Koren Jerusalem Bible", "Koren Tanakh"],
+      "Vilna Shas": ["&vhe=Wikisource Talmud Bavli", "Vilna Shas"],
+      // "Vilna Shas": ["&vhe=William Davidson Edition - Aramaic", "Vilna Shas"],
+      "Standard": ["", ALTERNATE_DEFAULT],
       /* eslint-enable quote-props */
     };
     for (const ref of refs) {
       const title = ref.slice(0, ref.lastIndexOf(" "));
-      if (books.byCanonicalName[title]?.isBibleBook()) {
+      const book = books.byCanonicalName[title];
+      if (book?.isBibleBook()) {
         indexed.put("Tanakh", ref);
+        // indexed.put("TanakhKoren", ref);
+      } else if (book?.isTalmud()) {
+        indexed.put("Standard", ref);
+        // indexed.put("Vilna Shas", ref);
       } else {
         indexed.put("Standard", ref);
       }
     }
     const result = [];
     for (const [key, groupedRefs] of indexed.asMap().entries()) {
-      result.push(new BulkTextGroup(key, groupedRefs, extensions[key] ?? ""));
+      const [extension, alternateKind] = kinds[key]!;
+      result.push(new BulkTextGroup(key, groupedRefs, extension, alternateKind));
     }
     return result;
   }
@@ -1065,6 +1129,19 @@ export abstract class AbstractApiRequestHandler {
       textResponse.he as string[],
       textResponse.text as string[]);
 
+    const preformatedAlternates: Record<string, {hebrew: string[], english: string[]}> = {};
+    for (const [alternateKind, alternate] of Object.entries(textResponse.alternates ?? {})) {
+      if (alternate === undefined) {
+        // TODO: explore why this is happening
+        this.logger.error("Undefined alternate", alternateKind, textResponse.ref);
+        continue;
+      }
+      const preformated = this.preformatSegments(
+        alternate.he as string[],
+        alternate.text as string[]);
+      preformatedAlternates[alternateKind] = {hebrew: preformated[0], english: preformated[1]};
+    }
+
     let segments: InternalSegment[] = [];
     for (let i = 0; i < hebrew.length; i++) {
       const ref = (() => {
@@ -1091,6 +1168,18 @@ export abstract class AbstractApiRequestHandler {
         for (const topicComment of extractTopicComments(currentHebrew, currentEnglish)) {
           segment.commentary.addComment(topicComment);
         }
+
+        for (const [alternateKind, alternate] of Object.entries(preformatedAlternates)) {
+          segment.commentary.addComment(new Comment(
+            "Versions",
+            this.translateHebrewText(alternate.hebrew[i], ref),
+            this.translateEnglishText(alternate.english[i], ref),
+            segment.ref,
+            alternateKind,
+            ALTERNATES_IN_HEBREW[alternateKind as Alternate] ?? alternateKind,
+          ));
+        }
+
         segments.push(segment);
       }
     }
@@ -1173,6 +1262,21 @@ export abstract class AbstractApiRequestHandler {
 
       for (const footnote of footnotes) {
         nestedCommentary.addComment(Comment.create(link, footnote, "Footnotes", this.logger));
+      }
+
+      for (const [alternateKind, alternate] of Object.entries(linkResponse.alternates ?? {})) {
+        if (isSefariaError(alternate)) continue;
+        nestedCommentary.addComment(new Comment(
+          "Versions",
+          alternate.he,
+          alternate.text,
+          alternate.ref,
+          alternateKind,
+          ALTERNATES_IN_HEBREW[alternateKind as Alternate] ?? alternateKind,
+          internalLinkableRef(alternate.ref)?.toUrlPathname(),
+          link.originalRefsBeforeRewriting,
+          link.expandedRefsAfterRewriting,
+        ));
       }
 
       cycleChecker.add(ref);
@@ -1350,6 +1454,7 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
       this.resolveDuplicatedNestedCommentaries(nestedCommentary);
 
       for (const nestedComment of nestedCommentary.comments) {
+        if (nestedComment.englishName === "Versions") continue;
         const topLevelComment = topLevelCommentsByRef[nestedComment.ref];
         if (!topLevelComment) continue;
         const removalStrategy = this.removalStrategy(topLevelComment, nestedComment);

@@ -98,12 +98,16 @@ function* dedupeComments(comments: Iterable<ApiComment>): Generator<ApiComment> 
   }
 }
 
+// TODO: perhaps the best thing to do here is to just ignore the hebrew in the request
+const IGNORE_IN_HEBREW_KINDS = new Set(["Koren Tanakh"]);
+
 function syntheticCommentaryKind(commentary: Commentary): CommentaryType {
   const comment = commentary.comments[0];
   return {
     englishName: comment.sourceRef,
     className: comment.sourceRef,
     hebrewName: comment.sourceHeRef,
+    ignoreInHebrew: (IGNORE_IN_HEBREW_KINDS.has(comment.sourceRef) as any as true),
   };
 }
 
@@ -147,7 +151,9 @@ export function CommentariesBlock({
     }
     for (const commentaryKind of context.commentaryTypes) {
       const commentary = commentaries[commentaryKind.englishName];
-      if (commentary) {
+      if (commentary && (
+        commentaryKind.englishName !== "Versions"
+          || localStorage.showAlternateVersions !== "false")) {
         action(commentary, commentaryKind);
       }
     }
@@ -334,6 +340,9 @@ export function CommentariesBlock({
   ): Generator<[Commentary, CommentaryType]> {
     for (const commentaryClassName of getOrdering(segmentLabel)) {
       const commentaryKind = commentaryKindsByClassName[commentaryClassName];
+      // TODO: this can happen today when switching default versions while a comment of that same
+      // version is open. This is probably a safe behavior in general too.
+      if (commentaryKind === undefined) continue;
       let commentary = commentaries[commentaryKind.englishName];
       if (!commentary) {
         // TODO: investigate a better solution for the indexByClassName overlapping for Translation

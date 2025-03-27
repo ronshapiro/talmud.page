@@ -22,6 +22,7 @@ import {BaseNavigationExtension, NavigationExtension} from "./NavigationExtensio
 import {useHtmlRef} from "./hooks";
 import {intToHebrewNumeral} from "../hebrew";
 import isEmptyText from "./is_empty_text";
+import {Version} from "./Preferences";
 
 const {useEffect} = React;
 
@@ -143,6 +144,35 @@ export abstract class Renderer {
     for (const section of amudData.sections) {
       if (!section.uuid) {
         section.uuid = newUuid();
+        section.sourceRef = "default";
+        section.sourceHeRef = "ברירת מחדל";
+      }
+    }
+
+    const preferredVersion = localStorage[`preferredVersion_${this.rendererType()}`];
+    if (preferredVersion && preferredVersion !== amudData.sections[0].sourceRef) {
+      for (const segment of amudData.sections) {
+        if (segment.commentary?.Versions?.comments) {
+          const newVersionComments = [];
+          for (const versionComment of segment.commentary.Versions.comments) {
+            if (versionComment.sourceRef === preferredVersion) {
+              newVersionComments.push({
+                sourceRef: segment.sourceRef!,
+                sourceHeRef: segment.sourceHeRef!,
+                ref: versionComment.ref,
+                en: segment.en,
+                he: segment.he,
+              });
+              segment.he = versionComment.he;
+              segment.en = versionComment.en;
+              segment.sourceRef = versionComment.sourceRef;
+              segment.sourceHeRef = versionComment.sourceHeRef;
+            } else {
+              newVersionComments.push(versionComment);
+            }
+          }
+          segment.commentary.Versions.comments = newVersionComments;
+        }
       }
     }
 
@@ -192,6 +222,8 @@ export abstract class Renderer {
 
   register(divId: string): void {
     const context = {
+      rendererType: this.rendererType(),
+      versions: () => this.versions(),
       translationOption: this.translationOption,
       commentaryTypes: this.commentaryTypes,
       commentaryTypesByClassName: indexCommentaryTypesByClassName(this.commentaryTypes),
@@ -312,6 +344,12 @@ export abstract class Renderer {
   newNumericalPageTitleHebrew(section: string): string {
     const {hebrewName} = books[amudMetadata().masechet];
     return `${hebrewName} ${intToHebrewNumeral(parseInt(section))}`;
+  }
+
+  abstract rendererType(): string;
+
+  versions(): Version[] {
+    return [];
   }
 }
 

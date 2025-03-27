@@ -18,7 +18,7 @@ import {NavigationExtension} from "./NavigationExtension";
 const {
   useEffect,
   useState,
-} = React;
+} = React
 
 interface Props {
   allAmudim: () => UiPage[];
@@ -65,6 +65,7 @@ export function Root({
       navigationExtension={navigationExtension}
       firstRemovable={i === 0 && baseAmudim.length > 1}
       lastRemovable={i !== 0 && i === baseAmudim.length - 1} />));
+
 
   const updateSearchQuery = (
     color: string, query: string, asRegex: boolean | undefined) => {

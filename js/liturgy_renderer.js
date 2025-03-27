@@ -22,4 +22,6 @@ export class LiturgyRenderer extends Renderer {
   newPageTitle(section) {
     return section.replace(/_/g, " ");
   }
+
+  rendererType() { return "Liturgy"; }
 }
