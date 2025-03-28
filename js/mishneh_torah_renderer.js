@@ -14,6 +14,8 @@ class MishnehTorahRenderer extends Renderer {
   newPageTitleHebrew(section) {
     return this.newNumericalPageTitleHebrew(section);
   }
+
+  rendererType() { return "MishnehTorah"; }
 }
 
 new Runner(new MishnehTorahRenderer(), driveClient).main();

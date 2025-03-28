@@ -34,6 +34,8 @@ class PenineiHalachaRenderer extends Renderer {
   newPageTitleHebrew(section) {
     return penineiHalachaHebrewTitleName(books[amudMetadata().masechet].hebrewName, section);
   }
+
+  rendererType() { return "PenineiHalacha"; }
 }
 
 new Runner(new PenineiHalachaRenderer(), driveClient).main();

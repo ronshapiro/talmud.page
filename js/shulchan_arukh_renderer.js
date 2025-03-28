@@ -14,6 +14,8 @@ class ShulchanArukhRenderer extends Renderer {
   newPageTitleHebrew(section) {
     return this.newNumericalPageTitleHebrew(section);
   }
+
+  rendererType() { return "ShulchanArukh"; }
 }
 
 new Runner(new ShulchanArukhRenderer(), driveClient).main();

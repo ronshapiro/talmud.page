@@ -168,7 +168,7 @@ function Main() {
     <>
       <LanguageChooser rerender={rerender} padding="32px"><></></LanguageChooser>
       <Grid />
-      <Preferences rerender={rerender} versions={[]} />
+      <Preferences rerender={rerender} />
     </>
   );
 }

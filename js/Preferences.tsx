@@ -7,6 +7,7 @@ import {upgradeElement} from "./componentHandler";
 import {useHtmlRef, useUpdateDarkMode} from "./hooks";
 import {LocalStorageInt} from "./localStorage";
 import {snackbars} from "./snackbar";
+import {useConfiguration} from "./context";
 
 const VirtualizeSwipeableViews = virtualize(SwipeableViews);
 const {
@@ -101,9 +102,29 @@ const STANDARD_YES_TRUE_NO_FALSE = [
   {value: "false", displayText: "No", displayTextHebrew: "לא"},
 ];
 
-type Version = {hebrew: string, english: string};
+export type Version = {hebrew: string, english: string};
 
-function preferenceOptions(rerender: () => any, versions: Version[]): React.ReactElement[] {
+function defaultVersion(versionStorageKey: string): Item {
+  if (versionStorageKey === "Talmud") {
+    return {
+      value: "default",
+      displayText: "Punctuated and Vocalized by Sefaria (Default)",
+      displayTextHebrew: "מנוקד על ידי ספריא (ברירת מחדל)",
+    };
+  }
+
+  return {
+    value: "default",
+    displayText: "Default",
+    displayTextHebrew: "ברירת מחדל",
+  };
+}
+
+function preferenceOptions(
+  rerender: () => any,
+  versions: Version[],
+  versionStorageKey: string,
+): React.ReactElement[] {
   const allOptions = [
     // Note: It's important that this is the first option so that there are no ignoreInHebrew
     // options before it. Otherwise, the swipe index could get mangled when switching languages.
@@ -249,10 +270,8 @@ function preferenceOptions(rerender: () => any, versions: Version[]): React.Reac
         localStorageKeyName="disablePrecaching" />,
     );
   }
-  console.log(versions);
 
   if (versions && versions.length > 0) {
-    // do not submit: this should be by category
     const versionItems = versions.map(version => {
       return {
         value: version.english,
@@ -260,11 +279,8 @@ function preferenceOptions(rerender: () => any, versions: Version[]): React.Reac
         displayTextHebrew: version.hebrew,
       };
     });
-    versionItems.unshift({
-      value: "default",
-      displayText: "Default", // do not submit: this should be more specific
-      displayTextHebrew: "ברירת מחדל",
-    });
+
+    versionItems.unshift(defaultVersion(versionStorageKey));
     allOptions.splice(
       2, 0,
       <PreferenceSection
@@ -272,18 +288,26 @@ function preferenceOptions(rerender: () => any, versions: Version[]): React.Reac
         titleHebrew="גרסה מעודפת"
         items={versionItems}
         rerender={rerender}
-        localStorageKeyName="preferredVersion" />);
+        localStorageKeyName={`preferredVersion_${versionStorageKey}`} />,
+      <PreferenceSection
+        title="Show alternate versions"
+        titleHebrew="הצג גרסאות אחרות"
+        items={STANDARD_YES_TRUE_NO_FALSE}
+        rerender={rerender}
+        localStorageKeyName="showAlternateVersions" />,
+    );
   }
   return useHebrew()
     ? allOptions.filter(option => !option.props.ignoreInHebrew)
     : allOptions;
 }
 
-interface PreferencesViewParams extends RerenderViewParams {
-  versions: Version[];
-}
-export function Preferences({rerender, versions}: PreferencesViewParams): React.ReactElement {
-  const options = preferenceOptions(rerender, versions);
+export function Preferences({rerender}: RerenderViewParams): React.ReactElement {
+  const context = useConfiguration();
+  const options = preferenceOptions(
+    rerender,
+    context.versions ? context.versions() : [],
+    context.rendererType);
 
   useUpdateDarkMode();
 
@@ -368,7 +392,7 @@ export function LanguageChooser({
     return children;
   }
   // do not submit: what about a Shas chooser?
-  const option = preferenceOptions(rerender, [])[0];
+  const option = preferenceOptions(rerender, [], "")[0];
   const buttonClasses = (
     "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored");
   return (

@@ -88,7 +88,7 @@ function Home() {
       </LanguageChooser>
 
       <SearchBar />
-      <Preferences rerender={rerender} versions={[]} />
+      <Preferences rerender={rerender} />
 
       <br />
       <Examples />
