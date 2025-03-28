@@ -12,6 +12,8 @@ export interface UiSegment extends Section {
   uuid: string;
   steinsaltzRetained?: true;
   continuallyRewriteSteinsaltzEnglish?: boolean;
+  sourceRef?: string;
+  sourceHeRef?: string;
 }
 
 interface Props {

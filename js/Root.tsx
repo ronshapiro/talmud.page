@@ -1,6 +1,5 @@
 import * as React from "react";
 import * as PropTypes from 'prop-types';
-import {zip} from "underscore";
 import {FeedbackView} from "./Feedback";
 import {hebrewSearchRegex} from "../hebrew";
 import {
@@ -16,35 +15,10 @@ import {useIncrementer, useUpdateDarkMode} from "./hooks";
 import componentHandler from "./componentHandler";
 import {NavigationExtension} from "./NavigationExtension";
 
-
 const {
   useEffect,
   useState,
 } = React
-
-type Version = {hebrew: string, english: string};
-
-function getVersions(pages: UiPage[]): Version[] {
-  const hebrewNames = new Set();
-  const englishNames = new Set();
-  for (const page of pages) {
-    for (const segment of page.sections) {
-      for (const version of segment.commentary?.Versions?.comments ?? []) {
-        hebrewNames.add(version.sourceHeRef);
-        englishNames.add(version.sourceRef);
-        if (hebrewNames.size !== englishNames.size) {
-          throw new Error(`${hebrewNames} vs. ${englishNames}`);
-        }
-      }
-    }
-  }
-
-  const result: Version[] = [];
-  for (const [hebrew, english] of zip(Array.from(hebrewNames), Array.from(englishNames))) {
-    result.push({hebrew, english});
-  }
-  return result;
-}
 
 interface Props {
   allAmudim: () => UiPage[];
@@ -110,7 +84,7 @@ export function Root({
         <PreviousButton navigationExtension={navigationExtension} />
         {amudim}
         <NextButton navigationExtension={navigationExtension} />
-        <Preferences rerender={rerender} versions={getVersions(baseAmudim)} />
+        <Preferences rerender={rerender} />
       </div>
       {!isFake && (
         <>

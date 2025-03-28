@@ -44,6 +44,12 @@ class TalmudRenderer extends Renderer {
     const {hebrewName} = books[amudMetadata().masechet];
     return formatDafInHebrew(hebrewName, section);
   }
+
+  rendererType() { return "Talmud"; }
+
+  versions() {
+    return [{hebrew: 'ש"ס וילנא', english: "Vilna Shas"}];
+  }
 }
 
 

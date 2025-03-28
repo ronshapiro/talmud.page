@@ -14,6 +14,8 @@ class TanakhRenderer extends Renderer {
   newPageTitleHebrew(section) {
     return this.newNumericalPageTitleHebrew(section);
   }
+
+  rendererType() { return "Tanakh"; }
 }
 
 new Runner(new TanakhRenderer(), driveClient).main();
