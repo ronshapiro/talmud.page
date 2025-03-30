@@ -1046,10 +1046,10 @@ export abstract class AbstractApiRequestHandler {
       const book = books.byCanonicalName[title];
       if (book?.isBibleBook()) {
         indexed.put("Tanakh", ref);
-        // indexed.put("TanakhKoren", ref);
+        indexed.put("TanakhKoren", ref);
       } else if (book?.isTalmud()) {
         indexed.put("Standard", ref);
-        // indexed.put("Vilna Shas", ref);
+        indexed.put("Vilna Shas", ref);
       } else {
         indexed.put("Standard", ref);
       }
