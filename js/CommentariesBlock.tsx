@@ -16,6 +16,11 @@ const {
 
 const JSX_NOOP = null;
 
+function shouldHide(commentaryKind: CommentaryType): boolean {
+  return localStorage.showTranslationButton !== "yes"
+    && commentaryKind.className === "translation";
+}
+
 function hasNestedPersonalComments(commentary: Commentary): boolean {
   for (const comment of commentary.comments || []) {
     if (!comment.commentary) continue;
@@ -233,8 +238,7 @@ export function CommentariesBlock({
   const renderButton = (
     commentaryKind: CommentaryType, isShowing: boolean, commentary: Commentary,
   ): React.ReactElement | null => {
-    if (localStorage.showTranslationButton !== "yes"
-        && commentaryKind.className === "translation") {
+    if (shouldHide(commentaryKind)) {
       return JSX_NOOP;
     }
 
@@ -265,7 +269,9 @@ export function CommentariesBlock({
     const depthIndicator = [];
     for (let i = 0; i < depth!; i++) {
       depthIndicator.push(
-        <span className={"depthIndicator " + buttonClasses(commentaryKind, isShowing, commentary)}>
+        <span
+          key={"" + i}
+          className={"depthIndicator " + buttonClasses(commentaryKind, isShowing, commentary)}>
           {">"}
         </span>,
       );
@@ -311,6 +317,7 @@ export function CommentariesBlock({
     const buttons = [];
     let wouldAnyButtonBeHidden = false;
     for (const [commentary, commentaryKind] of commentariesToShow) {
+      if (shouldHide(commentaryKind)) continue;
       const wouldThisButtonBeHidden = (
         buttons.length > MAX_BUTTONS_TO_SHOW_BEFORE_SHOWING_MORE
           && commentariesToShow.length > (MAX_BUTTONS_TO_SHOW_BEFORE_SHOWING_MORE + 2)

@@ -24,19 +24,19 @@
                     }
                   ]
                 },
-                "Versions": {
+                "Expanded Context": {
                   "comments": [
                     {
                       "en": [
-                        "Haleluya! Give praise, O servants of the Lord, praise the name of the Lord.",
-                        "Blessed be the name of the Lord from this time forth and for evermore.",
-                        "From the rising of the sun to its setting, the Lord’s name is to be praised.",
-                        "The Lord is high above all nations, and his glory is above the heavens.",
-                        "Who is like the Lord our God, who is enthroned on high,",
-                        "and yet looks far down to behold the things that are in heaven, and on the earth!",
-                        "He raises up the poor out of the dust, and lifts the needy out of the ashheap;",
-                        "that he may set him with nobles, with the nobles of his people.",
-                        "He makes the barren woman to keep house, and be a joyful mother of children. Haleluya!"
+                        "Hallelujah.<br>O servants of the L<small>ORD</small>, give praise;<br>praise the name of the L<small>ORD</small>.",
+                        "Let the name of the L<small>ORD</small> be blessed<br>now and forever.",
+                        "From east to west<br>the name of the L<small>ORD</small> is praised.",
+                        "The L<small>ORD</small> is exalted above all nations;<br>His glory is above the heavens.",
+                        "Who is like the L<small>ORD</small> our God,<br>who, enthroned on high,",
+                        "sees what is below,<br>in heaven and on earth?",
+                        "He raises the poor from the dust,<br>lifts up the needy from the refuse heap",
+                        "to set them with the great,<br>with the great men of His people.",
+                        "He sets the childless woman among her household<br>as a happy mother of children.<br>Hallelujah."
                       ],
                       "expandedRefsAfterRewriting": [
                         "Psalms 113:1",
@@ -53,17 +53,92 @@
                         "הַ֥לְלוּ<span class=\"mam-implicit-maqaf\">־</span>יָ֨הּ <b>׀</b> הַ֭לְלוּ עַבְדֵ֣י יְהֹוָ֑ה הַֽ֝לְל֗וּ אֶת־שֵׁ֥ם יְהֹוָֽה׃",
                         "יְהִ֤י שֵׁ֣ם יְהֹוָ֣ה מְבֹרָ֑ךְ מֵ֝עַתָּ֗ה וְעַד־עוֹלָֽם׃",
                         "מִמִּזְרַח־שֶׁ֥מֶשׁ עַד־מְבוֹא֑וֹ מְ֝הֻלָּ֗ל שֵׁ֣ם יְהֹוָֽה׃",
-                        "רָ֖ם עַל־כׇּל־גּוֹיִ֥ם <small>׀</small> יְהֹוָ֑ה עַ֖ל הַשָּׁמַ֣יִם כְּבוֹדֽוֹ׃",
+                        "רָ֖ם עַל־כׇּל־גּוֹיִ֥ם <span class=\"hebrew-emphasis\">׀</span> יְהֹוָ֑ה עַ֖ל הַשָּׁמַ֣יִם כְּבוֹדֽוֹ׃",
                         "מִ֭י כַּיהֹוָ֣ה אֱלֹהֵ֑ינוּ הַֽמַּגְבִּיהִ֥י לָשָֽׁבֶת׃",
                         "הַֽמַּשְׁפִּילִ֥י לִרְא֑וֹת בַּשָּׁמַ֥יִם וּבָאָֽרֶץ׃",
                         "מְקִ֥ימִ֣י מֵעָפָ֣ר דָּ֑ל מֵ֝אַשְׁפֹּ֗ת יָרִ֥ים אֶבְיֽוֹן׃",
                         "לְהוֹשִׁיבִ֥י עִם־נְדִיבִ֑ים עִ֝֗ם נְדִיבֵ֥י עַמּֽוֹ׃",
-                        "מֽוֹשִׁיבִ֨י <b>׀</b> עֲקֶ֬רֶת הַבַּ֗יִת אֵֽם־הַבָּנִ֥ים שְׂמֵחָ֗ה הַֽלְלוּ־יָֽהּ׃ <span class=\"mam-spi-pe\">{פ}</span><br/>"
+                        "מֽוֹשִׁיבִ֨י <b>׀</b> עֲקֶ֬רֶת הַבַּ֗יִת אֵֽם־הַבָּנִ֥ים שְׂמֵחָ֗ה הַֽלְלוּ־יָֽהּ׃ <span class=\"mam-spi-pe\">{פ}</span><br>"
                       ],
                       "link": "/Psalms/113",
                       "originalRefsBeforeRewriting": [
                         "Psalms 113:2"
                       ],
+                      "ref": "Psalms 113:1-113:9",
+                      "sourceHeRef": "תהילים קיג:ב - שבח לשם אלוהים",
+                      "sourceRef": "Psalms 113:2 - Praise for God's Name"
+                    }
+                  ]
+                },
+                "Versions": {
+                  "comments": [
+                    {
+                      "commentary": {
+                        "Expanded Context": {
+                          "comments": [
+                            {
+                              "en": [
+                                "Haleluya! Give praise, O servants of the Lord, praise the name of the Lord.",
+                                "Blessed be the name of the Lord from this time forth and for evermore.",
+                                "From the rising of the sun to its setting, the Lord’s name is to be praised.",
+                                "The Lord is high above all nations, and his glory is above the heavens.",
+                                "Who is like the Lord our God, who is enthroned on high,",
+                                "and yet looks far down to behold the things that are in heaven, and on the earth!",
+                                "He raises up the poor out of the dust, and lifts the needy out of the ashheap;",
+                                "that he may set him with nobles, with the nobles of his people.",
+                                "He makes the barren woman to keep house, and be a joyful mother of children. Haleluya!"
+                              ],
+                              "expandedRefsAfterRewriting": [
+                                "Psalms 113:1",
+                                "Psalms 113:2",
+                                "Psalms 113:3",
+                                "Psalms 113:4",
+                                "Psalms 113:5",
+                                "Psalms 113:6",
+                                "Psalms 113:7",
+                                "Psalms 113:8",
+                                "Psalms 113:9"
+                              ],
+                              "he": [
+                                "הַ֥לְלוּ<span class=\"mam-implicit-maqaf\">־</span>יָ֨הּ <b>׀</b> הַ֭לְלוּ עַבְדֵ֣י יְהֹוָ֑ה הַֽ֝לְל֗וּ אֶת־שֵׁ֥ם יְהֹוָֽה׃",
+                                "יְהִ֤י שֵׁ֣ם יְהֹוָ֣ה מְבֹרָ֑ךְ מֵ֝עַתָּ֗ה וְעַד־עוֹלָֽם׃",
+                                "מִמִּזְרַח־שֶׁ֥מֶשׁ עַד־מְבוֹא֑וֹ מְ֝הֻלָּ֗ל שֵׁ֣ם יְהֹוָֽה׃",
+                                "רָ֖ם עַל־כׇּל־גּוֹיִ֥ם <small>׀</small> יְהֹוָ֑ה עַ֖ל הַשָּׁמַ֣יִם כְּבוֹדֽוֹ׃",
+                                "מִ֭י כַּיהֹוָ֣ה אֱלֹהֵ֑ינוּ הַֽמַּגְבִּיהִ֥י לָשָֽׁבֶת׃",
+                                "הַֽמַּשְׁפִּילִ֥י לִרְא֑וֹת בַּשָּׁמַ֥יִם וּבָאָֽרֶץ׃",
+                                "מְקִ֥ימִ֣י מֵעָפָ֣ר דָּ֑ל מֵ֝אַשְׁפֹּ֗ת יָרִ֥ים אֶבְיֽוֹן׃",
+                                "לְהוֹשִׁיבִ֥י עִם־נְדִיבִ֑ים עִ֝֗ם נְדִיבֵ֥י עַמּֽוֹ׃",
+                                "מֽוֹשִׁיבִ֨י <b>׀</b> עֲקֶ֬רֶת הַבַּ֗יִת אֵֽם־הַבָּנִ֥ים שְׂמֵחָ֗ה הַֽלְלוּ־יָֽהּ׃ <span class=\"mam-spi-pe\">{פ}</span><br/>"
+                              ],
+                              "link": "/Psalms/113",
+                              "originalRefsBeforeRewriting": [
+                                "Psalms 113:2"
+                              ],
+                              "ref": "Psalms 113:1-113:9",
+                              "sourceHeRef": "קורן",
+                              "sourceRef": "Koren Tanakh"
+                            }
+                          ]
+                        }
+                      },
+                      "en": [
+                        "Blessed be the name of the Lord from this time forth and for evermore."
+                      ],
+                      "expandedRefsAfterRewriting": [
+                        "Psalms 113:1",
+                        "Psalms 113:2",
+                        "Psalms 113:3",
+                        "Psalms 113:4",
+                        "Psalms 113:5",
+                        "Psalms 113:6",
+                        "Psalms 113:7",
+                        "Psalms 113:8",
+                        "Psalms 113:9"
+                      ],
+                      "he": [
+                        "יְהִ֤י שֵׁ֣ם יְהֹוָ֣ה מְבֹרָ֑ךְ מֵ֝עַתָּ֗ה וְעַד־עוֹלָֽם׃"
+                      ],
+                      "link": "/Psalms/113",
                       "ref": "Psalms 113:1-113:9",
                       "sourceHeRef": "קורן",
                       "sourceRef": "Koren Tanakh"
@@ -72,15 +147,7 @@
                 }
               },
               "en": [
-                "Hallelujah.<br>O servants of the L<small>ORD</small>, give praise;<br>praise the name of the L<small>ORD</small>.",
-                "Let the name of the L<small>ORD</small> be blessed<br>now and forever.",
-                "From east to west<br>the name of the L<small>ORD</small> is praised.",
-                "The L<small>ORD</small> is exalted above all nations;<br>His glory is above the heavens.",
-                "Who is like the L<small>ORD</small> our God,<br>who, enthroned on high,",
-                "sees what is below,<br>in heaven and on earth?",
-                "He raises the poor from the dust,<br>lifts up the needy from the refuse heap",
-                "to set them with the great,<br>with the great men of His people.",
-                "He sets the childless woman among her household<br>as a happy mother of children.<br>Hallelujah."
+                "Let the name of the L<small>ORD</small> be blessed<br>now and forever."
               ],
               "expandedRefsAfterRewriting": [
                 "Psalms 113:1",
@@ -94,20 +161,9 @@
                 "Psalms 113:9"
               ],
               "he": [
-                "הַ֥לְלוּ<span class=\"mam-implicit-maqaf\">־</span>יָ֨הּ <b>׀</b> הַ֭לְלוּ עַבְדֵ֣י יְהֹוָ֑ה הַֽ֝לְל֗וּ אֶת־שֵׁ֥ם יְהֹוָֽה׃",
-                "יְהִ֤י שֵׁ֣ם יְהֹוָ֣ה מְבֹרָ֑ךְ מֵ֝עַתָּ֗ה וְעַד־עוֹלָֽם׃",
-                "מִמִּזְרַח־שֶׁ֥מֶשׁ עַד־מְבוֹא֑וֹ מְ֝הֻלָּ֗ל שֵׁ֣ם יְהֹוָֽה׃",
-                "רָ֖ם עַל־כׇּל־גּוֹיִ֥ם <span class=\"hebrew-emphasis\">׀</span> יְהֹוָ֑ה עַ֖ל הַשָּׁמַ֣יִם כְּבוֹדֽוֹ׃",
-                "מִ֭י כַּיהֹוָ֣ה אֱלֹהֵ֑ינוּ הַֽמַּגְבִּיהִ֥י לָשָֽׁבֶת׃",
-                "הַֽמַּשְׁפִּילִ֥י לִרְא֑וֹת בַּשָּׁמַ֥יִם וּבָאָֽרֶץ׃",
-                "מְקִ֥ימִ֣י מֵעָפָ֣ר דָּ֑ל מֵ֝אַשְׁפֹּ֗ת יָרִ֥ים אֶבְיֽוֹן׃",
-                "לְהוֹשִׁיבִ֥י עִם־נְדִיבִ֑ים עִ֝֗ם נְדִיבֵ֥י עַמּֽוֹ׃",
-                "מֽוֹשִׁיבִ֨י <b>׀</b> עֲקֶ֬רֶת הַבַּ֗יִת אֵֽם־הַבָּנִ֥ים שְׂמֵחָ֗ה הַֽלְלוּ־יָֽהּ׃ <span class=\"mam-spi-pe\">{פ}</span><br>"
+                "יְהִ֤י שֵׁ֣ם יְהֹוָ֣ה מְבֹרָ֑ךְ מֵ֝עַתָּ֗ה וְעַד־עוֹלָֽם׃"
               ],
               "link": "/Psalms/113",
-              "originalRefsBeforeRewriting": [
-                "Psalms 113:2"
-              ],
               "ref": "Psalms 113:1-113:9",
               "sourceHeRef": "תהילים קיג:ב - שבח לשם אלוהים",
               "sourceRef": "Psalms 113:2 - Praise for God's Name"
@@ -136,19 +192,19 @@
                     }
                   ]
                 },
-                "Versions": {
+                "Expanded Context": {
                   "comments": [
                     {
                       "en": [
-                        "Haleluya! Give praise, O servants of the Lord, praise the name of the Lord.",
-                        "Blessed be the name of the Lord from this time forth and for evermore.",
-                        "From the rising of the sun to its setting, the Lord’s name is to be praised.",
-                        "The Lord is high above all nations, and his glory is above the heavens.",
-                        "Who is like the Lord our God, who is enthroned on high,",
-                        "and yet looks far down to behold the things that are in heaven, and on the earth!",
-                        "He raises up the poor out of the dust, and lifts the needy out of the ashheap;",
-                        "that he may set him with nobles, with the nobles of his people.",
-                        "He makes the barren woman to keep house, and be a joyful mother of children. Haleluya!"
+                        "Hallelujah.<br>O servants of the L<small>ORD</small>, give praise;<br>praise the name of the L<small>ORD</small>.",
+                        "Let the name of the L<small>ORD</small> be blessed<br>now and forever.",
+                        "From east to west<br>the name of the L<small>ORD</small> is praised.",
+                        "The L<small>ORD</small> is exalted above all nations;<br>His glory is above the heavens.",
+                        "Who is like the L<small>ORD</small> our God,<br>who, enthroned on high,",
+                        "sees what is below,<br>in heaven and on earth?",
+                        "He raises the poor from the dust,<br>lifts up the needy from the refuse heap",
+                        "to set them with the great,<br>with the great men of His people.",
+                        "He sets the childless woman among her household<br>as a happy mother of children.<br>Hallelujah."
                       ],
                       "expandedRefsAfterRewriting": [
                         "Psalms 113:1",
@@ -165,17 +221,92 @@
                         "הַ֥לְלוּ<span class=\"mam-implicit-maqaf\">־</span>יָ֨הּ <b>׀</b> הַ֭לְלוּ עַבְדֵ֣י יְהֹוָ֑ה הַֽ֝לְל֗וּ אֶת־שֵׁ֥ם יְהֹוָֽה׃",
                         "יְהִ֤י שֵׁ֣ם יְהֹוָ֣ה מְבֹרָ֑ךְ מֵ֝עַתָּ֗ה וְעַד־עוֹלָֽם׃",
                         "מִמִּזְרַח־שֶׁ֥מֶשׁ עַד־מְבוֹא֑וֹ מְ֝הֻלָּ֗ל שֵׁ֣ם יְהֹוָֽה׃",
-                        "רָ֖ם עַל־כׇּל־גּוֹיִ֥ם <small>׀</small> יְהֹוָ֑ה עַ֖ל הַשָּׁמַ֣יִם כְּבוֹדֽוֹ׃",
+                        "רָ֖ם עַל־כׇּל־גּוֹיִ֥ם <span class=\"hebrew-emphasis\">׀</span> יְהֹוָ֑ה עַ֖ל הַשָּׁמַ֣יִם כְּבוֹדֽוֹ׃",
                         "מִ֭י כַּיהֹוָ֣ה אֱלֹהֵ֑ינוּ הַֽמַּגְבִּיהִ֥י לָשָֽׁבֶת׃",
                         "הַֽמַּשְׁפִּילִ֥י לִרְא֑וֹת בַּשָּׁמַ֥יִם וּבָאָֽרֶץ׃",
                         "מְקִ֥ימִ֣י מֵעָפָ֣ר דָּ֑ל מֵ֝אַשְׁפֹּ֗ת יָרִ֥ים אֶבְיֽוֹן׃",
                         "לְהוֹשִׁיבִ֥י עִם־נְדִיבִ֑ים עִ֝֗ם נְדִיבֵ֥י עַמּֽוֹ׃",
-                        "מֽוֹשִׁיבִ֨י <b>׀</b> עֲקֶ֬רֶת הַבַּ֗יִת אֵֽם־הַבָּנִ֥ים שְׂמֵחָ֗ה הַֽלְלוּ־יָֽהּ׃ <span class=\"mam-spi-pe\">{פ}</span><br/>"
+                        "מֽוֹשִׁיבִ֨י <b>׀</b> עֲקֶ֬רֶת הַבַּ֗יִת אֵֽם־הַבָּנִ֥ים שְׂמֵחָ֗ה הַֽלְלוּ־יָֽהּ׃ <span class=\"mam-spi-pe\">{פ}</span><br>"
                       ],
                       "link": "/Psalms/113",
                       "originalRefsBeforeRewriting": [
                         "Psalms 113:2"
                       ],
+                      "ref": "Psalms 113:1-113:9",
+                      "sourceHeRef": "תהילים קיג:ב - שבח לשם אלוהים",
+                      "sourceRef": "Psalms 113:2 - Praise for God's Name"
+                    }
+                  ]
+                },
+                "Versions": {
+                  "comments": [
+                    {
+                      "commentary": {
+                        "Expanded Context": {
+                          "comments": [
+                            {
+                              "en": [
+                                "Haleluya! Give praise, O servants of the Lord, praise the name of the Lord.",
+                                "Blessed be the name of the Lord from this time forth and for evermore.",
+                                "From the rising of the sun to its setting, the Lord’s name is to be praised.",
+                                "The Lord is high above all nations, and his glory is above the heavens.",
+                                "Who is like the Lord our God, who is enthroned on high,",
+                                "and yet looks far down to behold the things that are in heaven, and on the earth!",
+                                "He raises up the poor out of the dust, and lifts the needy out of the ashheap;",
+                                "that he may set him with nobles, with the nobles of his people.",
+                                "He makes the barren woman to keep house, and be a joyful mother of children. Haleluya!"
+                              ],
+                              "expandedRefsAfterRewriting": [
+                                "Psalms 113:1",
+                                "Psalms 113:2",
+                                "Psalms 113:3",
+                                "Psalms 113:4",
+                                "Psalms 113:5",
+                                "Psalms 113:6",
+                                "Psalms 113:7",
+                                "Psalms 113:8",
+                                "Psalms 113:9"
+                              ],
+                              "he": [
+                                "הַ֥לְלוּ<span class=\"mam-implicit-maqaf\">־</span>יָ֨הּ <b>׀</b> הַ֭לְלוּ עַבְדֵ֣י יְהֹוָ֑ה הַֽ֝לְל֗וּ אֶת־שֵׁ֥ם יְהֹוָֽה׃",
+                                "יְהִ֤י שֵׁ֣ם יְהֹוָ֣ה מְבֹרָ֑ךְ מֵ֝עַתָּ֗ה וְעַד־עוֹלָֽם׃",
+                                "מִמִּזְרַח־שֶׁ֥מֶשׁ עַד־מְבוֹא֑וֹ מְ֝הֻלָּ֗ל שֵׁ֣ם יְהֹוָֽה׃",
+                                "רָ֖ם עַל־כׇּל־גּוֹיִ֥ם <small>׀</small> יְהֹוָ֑ה עַ֖ל הַשָּׁמַ֣יִם כְּבוֹדֽוֹ׃",
+                                "מִ֭י כַּיהֹוָ֣ה אֱלֹהֵ֑ינוּ הַֽמַּגְבִּיהִ֥י לָשָֽׁבֶת׃",
+                                "הַֽמַּשְׁפִּילִ֥י לִרְא֑וֹת בַּשָּׁמַ֥יִם וּבָאָֽרֶץ׃",
+                                "מְקִ֥ימִ֣י מֵעָפָ֣ר דָּ֑ל מֵ֝אַשְׁפֹּ֗ת יָרִ֥ים אֶבְיֽוֹן׃",
+                                "לְהוֹשִׁיבִ֥י עִם־נְדִיבִ֑ים עִ֝֗ם נְדִיבֵ֥י עַמּֽוֹ׃",
+                                "מֽוֹשִׁיבִ֨י <b>׀</b> עֲקֶ֬רֶת הַבַּ֗יִת אֵֽם־הַבָּנִ֥ים שְׂמֵחָ֗ה הַֽלְלוּ־יָֽהּ׃ <span class=\"mam-spi-pe\">{פ}</span><br/>"
+                              ],
+                              "link": "/Psalms/113",
+                              "originalRefsBeforeRewriting": [
+                                "Psalms 113:2"
+                              ],
+                              "ref": "Psalms 113:1-113:9",
+                              "sourceHeRef": "קורן",
+                              "sourceRef": "Koren Tanakh"
+                            }
+                          ]
+                        }
+                      },
+                      "en": [
+                        "Blessed be the name of the Lord from this time forth and for evermore."
+                      ],
+                      "expandedRefsAfterRewriting": [
+                        "Psalms 113:1",
+                        "Psalms 113:2",
+                        "Psalms 113:3",
+                        "Psalms 113:4",
+                        "Psalms 113:5",
+                        "Psalms 113:6",
+                        "Psalms 113:7",
+                        "Psalms 113:8",
+                        "Psalms 113:9"
+                      ],
+                      "he": [
+                        "יְהִ֤י שֵׁ֣ם יְהֹוָ֣ה מְבֹרָ֑ךְ מֵ֝עַתָּ֗ה וְעַד־עוֹלָֽם׃"
+                      ],
+                      "link": "/Psalms/113",
                       "ref": "Psalms 113:1-113:9",
                       "sourceHeRef": "קורן",
                       "sourceRef": "Koren Tanakh"
@@ -184,15 +315,7 @@
                 }
               },
               "en": [
-                "Hallelujah.<br>O servants of the L<small>ORD</small>, give praise;<br>praise the name of the L<small>ORD</small>.",
-                "Let the name of the L<small>ORD</small> be blessed<br>now and forever.",
-                "From east to west<br>the name of the L<small>ORD</small> is praised.",
-                "The L<small>ORD</small> is exalted above all nations;<br>His glory is above the heavens.",
-                "Who is like the L<small>ORD</small> our God,<br>who, enthroned on high,",
-                "sees what is below,<br>in heaven and on earth?",
-                "He raises the poor from the dust,<br>lifts up the needy from the refuse heap",
-                "to set them with the great,<br>with the great men of His people.",
-                "He sets the childless woman among her household<br>as a happy mother of children.<br>Hallelujah."
+                "Let the name of the L<small>ORD</small> be blessed<br>now and forever."
               ],
               "expandedRefsAfterRewriting": [
                 "Psalms 113:1",
@@ -206,20 +329,9 @@
                 "Psalms 113:9"
               ],
               "he": [
-                "הַ֥לְלוּ<span class=\"mam-implicit-maqaf\">־</span>יָ֨הּ <b>׀</b> הַ֭לְלוּ עַבְדֵ֣י יְהֹוָ֑ה הַֽ֝לְל֗וּ אֶת־שֵׁ֥ם יְהֹוָֽה׃",
-                "יְהִ֤י שֵׁ֣ם יְהֹוָ֣ה מְבֹרָ֑ךְ מֵ֝עַתָּ֗ה וְעַד־עוֹלָֽם׃",
-                "מִמִּזְרַח־שֶׁ֥מֶשׁ עַד־מְבוֹא֑וֹ מְ֝הֻלָּ֗ל שֵׁ֣ם יְהֹוָֽה׃",
-                "רָ֖ם עַל־כׇּל־גּוֹיִ֥ם <span class=\"hebrew-emphasis\">׀</span> יְהֹוָ֑ה עַ֖ל הַשָּׁמַ֣יִם כְּבוֹדֽוֹ׃",
-                "מִ֭י כַּיהֹוָ֣ה אֱלֹהֵ֑ינוּ הַֽמַּגְבִּיהִ֥י לָשָֽׁבֶת׃",
-                "הַֽמַּשְׁפִּילִ֥י לִרְא֑וֹת בַּשָּׁמַ֥יִם וּבָאָֽרֶץ׃",
-                "מְקִ֥ימִ֣י מֵעָפָ֣ר דָּ֑ל מֵ֝אַשְׁפֹּ֗ת יָרִ֥ים אֶבְיֽוֹן׃",
-                "לְהוֹשִׁיבִ֥י עִם־נְדִיבִ֑ים עִ֝֗ם נְדִיבֵ֥י עַמּֽוֹ׃",
-                "מֽוֹשִׁיבִ֨י <b>׀</b> עֲקֶ֬רֶת הַבַּ֗יִת אֵֽם־הַבָּנִ֥ים שְׂמֵחָ֗ה הַֽלְלוּ־יָֽהּ׃ <span class=\"mam-spi-pe\">{פ}</span><br>"
+                "יְהִ֤י שֵׁ֣ם יְהֹוָ֣ה מְבֹרָ֑ךְ מֵ֝עַתָּ֗ה וְעַד־עוֹלָֽם׃"
               ],
               "link": "/Psalms/113",
-              "originalRefsBeforeRewriting": [
-                "Psalms 113:2"
-              ],
               "ref": "Psalms 113:1-113:9",
               "sourceHeRef": "תהילים קיג:ב - שבח לשם אלוהים",
               "sourceRef": "Psalms 113:2 - Praise for God's Name"
@@ -255,14 +367,14 @@
                     }
                   ]
                 },
-                "Versions": {
+                "Expanded Context": {
                   "comments": [
                     {
                       "en": [
-                        "And you shall eat old store, and remove the old because of the new.",
-                        "And I will set my tabernacle among you: and my soul shall not abhor you.",
-                        "And I will walk among you, and will be your God, and you shall be my people.",
-                        "I am the Lord your God, who brought you out of the land of Miżrayim, that you should not be their bondmen; and I have broken the bars of your yoke, and made you walk upright."
+                        "You shall eat old grain long stored, and you shall have to clear out the old to make room for the new.",
+                        "I will establish My abode in your midst, and I will not spurn you.",
+                        "I will be ever present in your midst: I will be your God, and you shall be My people.",
+                        "I the L<small>ORD</small> am your God who brought you out from the land of the Egyptians to be their slaves no more, who broke the bars of your yoke and made you walk erect."
                       ],
                       "expandedRefsAfterRewriting": [
                         "Leviticus 26:10",
@@ -274,12 +386,67 @@
                         "וַאֲכַלְתֶּ֥ם יָשָׁ֖ן נוֹשָׁ֑ן וְיָשָׁ֕ן מִפְּנֵ֥י חָדָ֖שׁ תּוֹצִֽיאוּ׃",
                         "וְנָתַתִּ֥י מִשְׁכָּנִ֖י בְּתוֹכְכֶ֑ם וְלֹֽא־תִגְעַ֥ל נַפְשִׁ֖י אֶתְכֶֽם׃",
                         "וְהִתְהַלַּכְתִּי֙ בְּת֣וֹכְכֶ֔ם וְהָיִ֥יתִי לָכֶ֖ם לֵֽאלֹהִ֑ים וְאַתֶּ֖ם תִּהְיוּ־לִ֥י לְעָֽם׃",
-                        "אֲנִ֞י יְהֹוָ֣ה אֱלֹֽהֵיכֶ֗ם אֲשֶׁ֨ר הוֹצֵ֤אתִי אֶתְכֶם֙ מֵאֶ֣רֶץ מִצְרַ֔יִם מִֽהְיֹ֥ת לָהֶ֖ם עֲבָדִ֑ים וָאֶשְׁבֹּר֙ מֹטֹ֣ת עֻלְּכֶ֔ם וָאוֹלֵ֥ךְ אֶתְכֶ֖ם קֽוֹמְמִיּֽוּת׃ <span class=\"mam-spi-pe\">{פ}</span><br/>"
+                        "אֲנִ֞י יְהֹוָ֣ה אֱלֹֽהֵיכֶ֗ם אֲשֶׁ֨ר הוֹצֵ֤אתִי אֶתְכֶם֙ מֵאֶ֣רֶץ מִצְרַ֔יִם מִֽהְיֹ֥ת לָהֶ֖ם עֲבָדִ֑ים וָאֶשְׁבֹּר֙ מֹטֹ֣ת עֻלְּכֶ֔ם וָאוֹלֵ֥ךְ אֶתְכֶ֖ם קֽוֹמְמִיּֽוּת׃ <span class=\"mam-spi-pe\">{פ}</span><br>"
                       ],
                       "link": "/Leviticus/26",
                       "originalRefsBeforeRewriting": [
                         "Leviticus 26:13"
                       ],
+                      "ref": "Leviticus 26:10-26:13",
+                      "sourceHeRef": "ויקרא כו:יג - הצלת אלוהים מעבדות",
+                      "sourceRef": "Leviticus 26:13 - God's deliverance from slavery"
+                    }
+                  ]
+                },
+                "Versions": {
+                  "comments": [
+                    {
+                      "commentary": {
+                        "Expanded Context": {
+                          "comments": [
+                            {
+                              "en": [
+                                "And you shall eat old store, and remove the old because of the new.",
+                                "And I will set my tabernacle among you: and my soul shall not abhor you.",
+                                "And I will walk among you, and will be your God, and you shall be my people.",
+                                "I am the Lord your God, who brought you out of the land of Miżrayim, that you should not be their bondmen; and I have broken the bars of your yoke, and made you walk upright."
+                              ],
+                              "expandedRefsAfterRewriting": [
+                                "Leviticus 26:10",
+                                "Leviticus 26:11",
+                                "Leviticus 26:12",
+                                "Leviticus 26:13"
+                              ],
+                              "he": [
+                                "וַאֲכַלְתֶּ֥ם יָשָׁ֖ן נוֹשָׁ֑ן וְיָשָׁ֕ן מִפְּנֵ֥י חָדָ֖שׁ תּוֹצִֽיאוּ׃",
+                                "וְנָתַתִּ֥י מִשְׁכָּנִ֖י בְּתוֹכְכֶ֑ם וְלֹֽא־תִגְעַ֥ל נַפְשִׁ֖י אֶתְכֶֽם׃",
+                                "וְהִתְהַלַּכְתִּי֙ בְּת֣וֹכְכֶ֔ם וְהָיִ֥יתִי לָכֶ֖ם לֵֽאלֹהִ֑ים וְאַתֶּ֖ם תִּהְיוּ־לִ֥י לְעָֽם׃",
+                                "אֲנִ֞י יְהֹוָ֣ה אֱלֹֽהֵיכֶ֗ם אֲשֶׁ֨ר הוֹצֵ֤אתִי אֶתְכֶם֙ מֵאֶ֣רֶץ מִצְרַ֔יִם מִֽהְיֹ֥ת לָהֶ֖ם עֲבָדִ֑ים וָאֶשְׁבֹּר֙ מֹטֹ֣ת עֻלְּכֶ֔ם וָאוֹלֵ֥ךְ אֶתְכֶ֖ם קֽוֹמְמִיּֽוּת׃ <span class=\"mam-spi-pe\">{פ}</span><br/>"
+                              ],
+                              "link": "/Leviticus/26",
+                              "originalRefsBeforeRewriting": [
+                                "Leviticus 26:13"
+                              ],
+                              "ref": "Leviticus 26:10-26:13",
+                              "sourceHeRef": "קורן",
+                              "sourceRef": "Koren Tanakh"
+                            }
+                          ]
+                        }
+                      },
+                      "en": [
+                        "I am the Lord your God, who brought you out of the land of Miżrayim, that you should not be their bondmen; and I have broken the bars of your yoke, and made you walk upright."
+                      ],
+                      "expandedRefsAfterRewriting": [
+                        "Leviticus 26:10",
+                        "Leviticus 26:11",
+                        "Leviticus 26:12",
+                        "Leviticus 26:13"
+                      ],
+                      "he": [
+                        "אֲנִ֞י יְהֹוָ֣ה אֱלֹֽהֵיכֶ֗ם אֲשֶׁ֨ר הוֹצֵ֤אתִי אֶתְכֶם֙ מֵאֶ֣רֶץ מִצְרַ֔יִם מִֽהְיֹ֥ת לָהֶ֖ם עֲבָדִ֑ים וָאֶשְׁבֹּר֙ מֹטֹ֣ת עֻלְּכֶ֔ם וָאוֹלֵ֥ךְ אֶתְכֶ֖ם קֽוֹמְמִיּֽוּת׃ <span class=\"mam-spi-pe\">{פ}</span><br/>"
+                      ],
+                      "link": "/Leviticus/26",
                       "ref": "Leviticus 26:10-26:13",
                       "sourceHeRef": "קורן",
                       "sourceRef": "Koren Tanakh"
@@ -288,9 +455,6 @@
                 }
               },
               "en": [
-                "You shall eat old grain long stored, and you shall have to clear out the old to make room for the new.",
-                "I will establish My abode in your midst, and I will not spurn you.",
-                "I will be ever present in your midst: I will be your God, and you shall be My people.",
                 "I the L<small>ORD</small> am your God who brought you out from the land of the Egyptians to be their slaves no more, who broke the bars of your yoke and made you walk erect."
               ],
               "expandedRefsAfterRewriting": [
@@ -300,15 +464,9 @@
                 "Leviticus 26:13"
               ],
               "he": [
-                "וַאֲכַלְתֶּ֥ם יָשָׁ֖ן נוֹשָׁ֑ן וְיָשָׁ֕ן מִפְּנֵ֥י חָדָ֖שׁ תּוֹצִֽיאוּ׃",
-                "וְנָתַתִּ֥י מִשְׁכָּנִ֖י בְּתוֹכְכֶ֑ם וְלֹֽא־תִגְעַ֥ל נַפְשִׁ֖י אֶתְכֶֽם׃",
-                "וְהִתְהַלַּכְתִּי֙ בְּת֣וֹכְכֶ֔ם וְהָיִ֥יתִי לָכֶ֖ם לֵֽאלֹהִ֑ים וְאַתֶּ֖ם תִּהְיוּ־לִ֥י לְעָֽם׃",
                 "אֲנִ֞י יְהֹוָ֣ה אֱלֹֽהֵיכֶ֗ם אֲשֶׁ֨ר הוֹצֵ֤אתִי אֶתְכֶם֙ מֵאֶ֣רֶץ מִצְרַ֔יִם מִֽהְיֹ֥ת לָהֶ֖ם עֲבָדִ֑ים וָאֶשְׁבֹּר֙ מֹטֹ֣ת עֻלְּכֶ֔ם וָאוֹלֵ֥ךְ אֶתְכֶ֖ם קֽוֹמְמִיּֽוּת׃ <span class=\"mam-spi-pe\">{פ}</span><br>"
               ],
               "link": "/Leviticus/26",
-              "originalRefsBeforeRewriting": [
-                "Leviticus 26:13"
-              ],
               "ref": "Leviticus 26:10-26:13",
               "sourceHeRef": "ויקרא כו:יג - הצלת אלוהים מעבדות",
               "sourceRef": "Leviticus 26:13 - God's deliverance from slavery"

@@ -362,15 +362,20 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     renderCommentsAsNestedCommentaries: true,
   },
   {
-    englishName: "Versions",
-    hebrewName: "גרסאות",
-    className: "comment-alternatives",
-    showTitle: true,
-    renderCommentsAsNestedCommentaries: true,
+    englishName: "Expanded Context",
+    hebrewName: "כל הפסקה",
+    className: "expandedContext",
   },
   {
     englishName: "Context",
     hebrewName: "הקשר",
     className: "comment-context",
+  },
+  {
+    englishName: "Versions",
+    hebrewName: "גרסאות",
+    className: "comment-alternatives",
+    showTitle: true,
+    renderCommentsAsNestedCommentaries: true,
   },
 ];

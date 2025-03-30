@@ -274,16 +274,43 @@ class Comment {
     if (this.talmudPageLink) {
       result.link = this.talmudPageLink;
     }
-    if (this.originalRefsBeforeRewriting) {
-      result.originalRefsBeforeRewriting = this.originalRefsBeforeRewriting;
-    }
-    if (this.expandedRefsAfterRewriting) {
-      result.expandedRefsAfterRewriting = this.expandedRefsAfterRewriting;
-    }
+
     if (this.duplicateRefs.length > 0) {
       result.duplicateRefs = this.duplicateRefs;
     }
-    return result;
+
+    if (this.expandedRefsAfterRewriting) {
+      result.expandedRefsAfterRewriting = this.expandedRefsAfterRewriting;
+    }
+
+    if (!this.originalRefsBeforeRewriting) {
+      return result;
+    }
+
+    const flatHebrew = (this.hebrew as string[]).flat();
+    const flatEnglish = (this.english as string[]).flat();
+    const newHebrew = [];
+    const newEnglish = [];
+    for (let i = 0; i < this.expandedRefsAfterRewriting!.length; i++) {
+      if (this.originalRefsBeforeRewriting.includes(this.expandedRefsAfterRewriting![i])) {
+        newHebrew.push(flatHebrew[i] as string);
+        newEnglish.push(flatEnglish[i] as string);
+      }
+    }
+
+    const newResult: ApiComment = {...result, he: newHebrew, en: newEnglish};
+    const nestedComment: ApiComment = {
+      ref: this.ref,
+      he: result.he,
+      en: result.en,
+      sourceRef: result.sourceRef,
+      sourceHeRef: result.sourceHeRef,
+      originalRefsBeforeRewriting: this.originalRefsBeforeRewriting,
+      expandedRefsAfterRewriting: this.expandedRefsAfterRewriting,
+      link: result.link,
+    };
+    newResult.commentary = {"Expanded Context": {comments: [nestedComment]}};
+    return newResult;
   }
 
   static fakeTextLink = {
@@ -1062,7 +1089,9 @@ export abstract class AbstractApiRequestHandler {
     return result;
   }
 
-  private preformatSegments(hebrew: string[], english: string[]): [string[], string[]] {
+  private preformatSegments(
+    hebrew: string[], english: string[], lax = false,
+  ): [string[], string[]] {
     if (typeof hebrew === "string") {
       hebrew = [hebrew];
     }
@@ -1074,7 +1103,7 @@ export abstract class AbstractApiRequestHandler {
       const newEnglish: string[][] = [];
       for (let i = 0; i < hebrew.length; i++) {
         // @ts-ignore
-        const [currentHebrew, currentEnglish] = this.preformatSegments(hebrew[i], english[i]);
+        const [currentHebrew, currentEnglish] = this.preformatSegments(hebrew[i], english[i], lax);
         // Flattening is relevant for refs which are rewritten (like Yerushalmi pages) that span
         // multiple sections (i.e. multiple halachot/chapters).
         newHebrew.push(currentHebrew);
@@ -1088,7 +1117,7 @@ export abstract class AbstractApiRequestHandler {
       english.push("");
     }
 
-    if (this.allowUnequalEnglishLength()) {
+    if (this.allowUnequalEnglishLength() || lax) {
       while (hebrew.length < english.length) {
         hebrew.push("");
       }
@@ -1138,7 +1167,8 @@ export abstract class AbstractApiRequestHandler {
       }
       const preformated = this.preformatSegments(
         alternate.he as string[],
-        alternate.text as string[]);
+        alternate.text as string[],
+        true);
       preformatedAlternates[alternateKind] = {hebrew: preformated[0], english: preformated[1]};
     }
 
