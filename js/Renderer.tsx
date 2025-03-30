@@ -150,7 +150,9 @@ export abstract class Renderer {
     }
 
     const preferredVersion = localStorage[`preferredVersion_${this.rendererType()}`];
-    if (preferredVersion && preferredVersion !== amudData.sections[0].sourceRef) {
+    if (amudData.sections.length > 0
+        && preferredVersion
+        && preferredVersion !== amudData.sections[0].sourceRef) {
       for (const segment of amudData.sections) {
         if (segment.commentary?.Versions?.comments) {
           const newVersionComments = [];
