@@ -153,7 +153,7 @@ export function CommentariesBlock({
       const commentary = commentaries[commentaryKind.englishName];
       if (commentary && (
         commentaryKind.englishName !== "Versions"
-          || localStorage.showAlternateVersions !== "false")) {
+          || localStorage.showAlternateVersions === "true")) {
         action(commentary, commentaryKind);
       }
     }
