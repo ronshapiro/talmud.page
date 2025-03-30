@@ -391,7 +391,7 @@ export function LanguageChooser({
   if (!shouldShow) {
     return children;
   }
-  // do not submit: what about a Shas chooser?
+  // TODO(versions): what about a Shas chooser?
   const option = preferenceOptions(rerender, [], "")[0];
   const buttonClasses = (
     "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored");

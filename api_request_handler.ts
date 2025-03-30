@@ -956,7 +956,10 @@ export abstract class AbstractApiRequestHandler {
     requestId: string,
   ): Promise<Record<string, Record<string, sefaria.TextResponse>>> {
     if (refs.length === 0) {
-      return Promise.resolve({});
+      console.log(">>>>>>>>>>>>>>", refs, requestId)
+      const result: any = {};
+      result[ALTERNATE_DEFAULT] = {};
+      return Promise.resolve(result);
     }
 
     const timer = this.logger.newTimer();
@@ -1030,10 +1033,10 @@ export abstract class AbstractApiRequestHandler {
       const book = books.byCanonicalName[title];
       if (book?.isBibleBook()) {
         indexed.put("Tanakh", ref);
-        indexed.put("TanakhKoren", ref);
+        // indexed.put("TanakhKoren", ref);
       } else if (book?.isTalmud()) {
         indexed.put("Standard", ref);
-        indexed.put("Vilna Shas", ref);
+        // indexed.put("Vilna Shas", ref);
       } else {
         indexed.put("Standard", ref);
       }
@@ -1046,7 +1049,7 @@ export abstract class AbstractApiRequestHandler {
     return result;
   }
 
-  private preformatSegments(hebrew: string[], english: string[]): [string[], string[]] {
+  private preformatSegments(hebrew: string[], english: string[], lax = false): [string[], string[]] {
     if (typeof hebrew === "string") {
       hebrew = [hebrew];
     }
@@ -1072,7 +1075,7 @@ export abstract class AbstractApiRequestHandler {
       english.push("");
     }
 
-    if (this.allowUnequalEnglishLength()) {
+    if (this.allowUnequalEnglishLength() || lax) {
       while (hebrew.length < english.length) {
         hebrew.push("");
       }
@@ -1231,7 +1234,6 @@ export abstract class AbstractApiRequestHandler {
       commentary.addComment(Comment.create(link, comment, commentaryType.englishName, this.logger));
       if (commentaryType.englishName === "Verses") {
         const context = llmGeneratedTopicForLink(link)?.surroundingContext;
-        // do not submit
         if (context) {
           nestedCommentary.addComment(new Comment(
             "Context",
