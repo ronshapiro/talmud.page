@@ -16,7 +16,7 @@ async function run(name: string): Promise<any> {
 
     // require exact match, i.e. for Shulchan Arukh, Even HaEzer, Seder Halitzah
     if (title !== book.title) {
-      console.log("No match for", title);
+      console.log("No match for", title); // eslint-disable-line no-console
       continue;
     }
 
@@ -57,7 +57,7 @@ async function run(name: string): Promise<any> {
       return undefined;
     })();
     if (!endOrSections) {
-      console.log("No length for", title);
+      console.log("No length for", title); // eslint-disable-line no-console
       continue;
     }
 

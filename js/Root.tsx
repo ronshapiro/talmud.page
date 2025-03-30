@@ -18,7 +18,7 @@ import {NavigationExtension} from "./NavigationExtension";
 const {
   useEffect,
   useState,
-} = React
+} = React;
 
 interface Props {
   allAmudim: () => UiPage[];
