@@ -44,8 +44,8 @@ export function flatten(textType: sefaria.TextType): string | undefined {
   return textType.flat(Infinity).join("\n");
 }
 
-export function toFlatArray(textType: sefaria.TextType): string[] | undefined {
-  if (!textType) return undefined;
+export function toFlatArray(textType: sefaria.TextType): string[] {
+  if (!textType) return [];
   if (typeof textType === "string") {
     return [textType];
   }

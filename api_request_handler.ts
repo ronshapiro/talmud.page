@@ -43,6 +43,7 @@ import {
   firstOrOnlyElement,
   flatten,
   sefariaTextTypeTransformation,
+  toFlatArray,
 } from "./sefariaTextType";
 import {
   BIGIFY_REFS,
@@ -287,8 +288,8 @@ class Comment {
       return result;
     }
 
-    const flatHebrew = (this.hebrew as string[]).flat();
-    const flatEnglish = (this.english as string[]).flat();
+    const flatHebrew = toFlatArray(this.hebrew);
+    const flatEnglish = toFlatArray(this.english);
     const newHebrew = [];
     const newEnglish = [];
     for (let i = 0; i < this.expandedRefsAfterRewriting!.length; i++) {
