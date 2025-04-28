@@ -125,7 +125,7 @@ function showMoreCommentaryKind(showAll: boolean): CommentaryType {
 interface CommentariesBlockProps {
   commentaries: Record<string, Commentary>;
   getOrdering: (segmentLabel: string) => string[];
-  toggleShowing: (segmentLabel: string, className: string) => boolean;
+  toggleShowing: (segmentLabel: string, className: string, force?: boolean) => boolean;
   segmentLabel: string;
   syntheticClassName?: string;
   syntheticCommentaryKinds?: Record<string, CommentaryType>;
@@ -172,12 +172,18 @@ export function CommentariesBlock({
   }, [buttonToFocus]);
 
   useEffect(() => {
-    if (DEBUG_EXPAND_ALL_COMMENTARIES_BY_DEFAULT) {
+    const classNames: string[] = [];
+    forEachCommentary((_, commentaryKind) => {
+      classNames.push(commentaryKind.className);
+    });
+
+    if ((depth! > 0 && syntheticClassName && classNames.length === 1)
+      || DEBUG_EXPAND_ALL_COMMENTARIES_BY_DEFAULT) {
       setTimeout(() => {
-        forEachCommentary((_, commentaryKind) => {
-          toggleShowing(segmentLabel, commentaryKind.className);
-        });
-      }, 100);
+        for (const className of classNames) {
+          toggleShowing(segmentLabel, className, true);
+        }
+      }, 10);
     }
   }, ["only once"]);
 

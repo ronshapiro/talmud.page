@@ -41,8 +41,11 @@ export function Segment({
     state[segmentLabel] = ["rashi"];
     return state;
   });
+  const [openedByDefault, setOpenedByDefault] = useState<Record<string, boolean>>({});
+
   const toggleShowing = (
-    prependNew: boolean, toggledSegmentLabel: string, commentaryName: string) => {
+    prependNew: boolean, toggledSegmentLabel: string, commentaryName: string,
+    shouldOpenByDefault?: boolean) => {
     // TODO: reducer?
     let alreadyIncludes;
     setShowingState(previousState => {
@@ -53,6 +56,17 @@ export function Segment({
       }
       const commentOrderingForSegment = newState[toggledSegmentLabel];
       alreadyIncludes = commentOrderingForSegment.includes(commentaryName);
+
+      if (shouldOpenByDefault) {
+        const indexKey = toggledSegmentLabel + commentaryName;
+        if (openedByDefault[indexKey]) {
+          return previousState;
+        } else {
+          setOpenedByDefault(previousOpenByDefault => Object.assign(
+            previousOpenByDefault, Object.fromEntries([[indexKey, true]])));
+        }
+      }
+
       if (alreadyIncludes) {
         newState[toggledSegmentLabel] = commentOrderingForSegment.filter(x => x !== commentaryName);
       } else if (prependNew) {
