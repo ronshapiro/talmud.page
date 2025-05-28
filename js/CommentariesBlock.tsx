@@ -47,7 +47,14 @@ function commentaryHighlightColors(commentary: Commentary, colors?: Set<string>)
 }
 function commentaryHighlightIndicators(commentary: Commentary): React.ReactElement[] {
   const result = Array.from(commentaryHighlightColors(commentary)).map(
-    color => <span key={color} className={`highlighted-commentary-indicator-${color}`}>●</span>);
+    color => (
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="3 6 26 10">
+        <path
+          d="M 10 6 L 20 6 A 4 4 0 0 1 20 14 L 10 14 A 4 4 0 0 1 10 6 Z"
+          fill={`var(--highlight-${color})`} />
+      </svg>
+    ),
+  );
   return result;
 }
 
