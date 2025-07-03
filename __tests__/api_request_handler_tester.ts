@@ -2,6 +2,11 @@
 jest.mock("../fetch.ts", () => {
   return {fetch: "unused"};
 });
+jest.mock("../source_formatting/html_sanitization_node.ts", () => {
+  // eslint-disable-next-line global-require,@typescript-eslint/no-var-requires
+  const {sanitizeHtml} = require("../source_formatting/html_sanitization_web");
+  return {sanitizeHtml};
+});
 
 import * as fs from "fs";
 import {jsonStringify} from "../util/json_stringify";

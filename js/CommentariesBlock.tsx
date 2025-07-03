@@ -155,9 +155,15 @@ export function CommentariesBlock({
   depth = depth ?? 0;
 
   const forEachCommentary = (action: (commentary: Commentary, kind: CommentaryType) => void) => {
+    const decoratedAction = (commentary: Commentary, kind: CommentaryType) => {
+      const newComments = commentary.comments.filter(x => x.isUnique !== false);
+      if (newComments.length > 0) {
+        action({comments: newComments}, kind);
+      }
+    };
     if (syntheticCommentaryKinds) {
       Object.values(commentaries).forEach(commentary => {
-        action(commentary, syntheticCommentaryKind(commentary));
+        decoratedAction(commentary, syntheticCommentaryKind(commentary));
       });
       return;
     }
@@ -166,7 +172,7 @@ export function CommentariesBlock({
       if (commentary && (
         commentaryKind.englishName !== "Versions"
           || localStorage.showAlternateVersions === "true")) {
-        action(commentary, commentaryKind);
+        decoratedAction(commentary, commentaryKind);
       }
     }
   };

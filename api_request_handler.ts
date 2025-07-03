@@ -81,6 +81,7 @@ import {FootnotesExtractor} from "./source_formatting/footnotes";
 import {HebrewSmallToEmphasisTagTranslator} from "./source_formatting/hebrew_small_to_emphasis";
 import {highlightRashiQuotations} from "./source_formatting/rashi_quoting";
 import {HtmlNormalizer} from "./source_formatting/html_normalizer";
+import {sanitizeHtml} from "./source_formatting/html_sanitization_node";
 import {ImageNumberingFormatter} from "./source_formatting/image_numbering";
 import {JastrowReformatter} from "./source_formatting/jastrow";
 import {parseOtzarLaazeiRashi} from "./source_formatting/otzar_laazei_rashi";
@@ -142,9 +143,16 @@ function llmGeneratedTopicForLink(link: sefaria.TextLink): LlmGeneratedTopic | u
   return llmGeneratedTopic(link.ref) ?? llmGeneratedTopic(link.sourceRef);
 }
 
+function normalizeHebrewForVersionUniqueness(text: string): string {
+  return stripHebrewNonletters(sanitizeHtml(text))
+    .replace(/[-—–"'״׳,.:;?!]/g, "") // eslint-disable-line unicorn/better-regex
+    .replace(/\s\s+/g, " ");
+}
+
 /** A single comment on a text. */
 class Comment {
   duplicateRefs: string[] = [];
+  isUnique: boolean | undefined;
 
   constructor(
     readonly englishName: string,
@@ -271,6 +279,7 @@ class Comment {
       ref: this.ref,
       sourceRef: this.sourceRef,
       sourceHeRef: this.sourceHeRef,
+      isUnique: this.isUnique,
     };
     if (this.talmudPageLink) {
       result.link = this.talmudPageLink;
@@ -554,13 +563,26 @@ export class ApiException extends Error {
 
 type Alternate = "" | "Koren Tanakh" | "Vilna Shas";
 const ALTERNATE_DEFAULT: Alternate = "";
-const ALTERNATES_IN_HEBREW: Record<Alternate, string> = {
+interface AlternateMetadata {
+  hebrewName: string;
+  commonLanguage?: "hebrew" | "english";
+}
+const ALTERNATES: Record<Alternate, AlternateMetadata> = {
   /* eslint-disable quote-props */
-  "": "",
-  "Koren Tanakh": "קורן",
-  "Vilna Shas": 'ש"ס וילנא',
+  "": {
+    hebrewName: "",
+  },
+  "Koren Tanakh": {
+    hebrewName: "קורן",
+    commonLanguage: "english",
+  },
+  "Vilna Shas": {
+    hebrewName: 'ש"ס וילנא',
+    commonLanguage: "hebrew",
+  },
   /* eslint-enable quote-props */
 };
+
 
 class BulkTextGroup {
   constructor(
@@ -1201,14 +1223,31 @@ export abstract class AbstractApiRequestHandler {
         }
 
         for (const [alternateKind, alternate] of Object.entries(preformatedAlternates)) {
-          segment.commentary.addComment(new Comment(
+          const alternateMetadata = ALTERNATES[alternateKind as Alternate];
+          const comment = new Comment(
             "Versions",
             this.translateHebrewText(alternate.hebrew[i], ref),
             this.translateEnglishText(alternate.english[i], ref),
             segment.ref,
             alternateKind,
-            ALTERNATES_IN_HEBREW[alternateKind as Alternate] ?? alternateKind,
-          ));
+            alternateMetadata?.hebrewName ?? alternateKind,
+          );
+          if (alternateMetadata?.commonLanguage === "hebrew") {
+            comment.isUnique = (
+              toFlatArray(comment.hebrew).length > 0
+                && !equalJaggedArrays(
+                  comment.hebrew,
+                  segment.hebrew,
+                  (a, b) => {
+                    return (normalizeHebrewForVersionUniqueness(a)
+                      === normalizeHebrewForVersionUniqueness(b));
+                  }));
+          } else if (alternateMetadata?.commonLanguage === "english") {
+            comment.isUnique = (
+              toFlatArray(comment.english).length > 0
+                && !equalJaggedArrays(comment.english, segment.english));
+          }
+          segment.commentary.addComment(comment);
         }
 
         segments.push(segment);
@@ -1303,7 +1342,7 @@ export abstract class AbstractApiRequestHandler {
           alternate.text,
           alternate.ref,
           alternateKind,
-          ALTERNATES_IN_HEBREW[alternateKind as Alternate] ?? alternateKind,
+          ALTERNATES[alternateKind as Alternate]?.hebrewName ?? alternateKind,
           internalLinkableRef(alternate.ref)?.toUrlPathname(),
           link.originalRefsBeforeRewriting,
           link.expandedRefsAfterRewriting,

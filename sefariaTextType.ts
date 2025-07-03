@@ -20,7 +20,10 @@ export function firstOrOnlyElement(text: sefaria.TextType): string {
   return firstOrOnlyElement(text[0]);
 }
 
-export function equalJaggedArrays(hebrew: sefaria.TextType, english: sefaria.TextType): boolean {
+export function equalJaggedArrays(
+  hebrew: sefaria.TextType,
+  english: sefaria.TextType,
+  predicate = (a: string, b: string) => a === b): boolean {
   if (Array.isArray(hebrew) && Array.isArray(english)) {
     if (hebrew.length !== english.length) {
       return false;
@@ -33,7 +36,7 @@ export function equalJaggedArrays(hebrew: sefaria.TextType, english: sefaria.Tex
     return true;
   }
 
-  return hebrew === english;
+  return predicate(hebrew as string, english as string);
 }
 
 export function flatten(textType: sefaria.TextType): string | undefined {

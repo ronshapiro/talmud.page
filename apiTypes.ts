@@ -43,6 +43,7 @@ export interface ApiComment extends Highlightable {
   originalRefsBeforeRewriting?: string[];
   expandedRefsAfterRewriting?: string[];
   duplicateRefs?: string[];
+  isUnique?: boolean;
 }
 
 export interface ApiResponse {
