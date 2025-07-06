@@ -4,7 +4,7 @@ import {Renderer} from "./Renderer.tsx";
 import {amudMetadata, computePreviousAmud, computeNextAmud} from "./amud.ts";
 import {driveClient} from "./google_drive/singleton.ts";
 import {Runner} from "./page_runner.js";
-import {formatDafInHebrew} from "../talmud.ts";
+import {makeAmudSmall, formatDafInHebrew} from "../talmud.ts";
 
 function translatePage(page) {
   return localStorage.languageOption === "hebrew" ? formatDafInHebrew("", page).slice(1) : page;
@@ -42,7 +42,7 @@ class TalmudRenderer extends Renderer {
 
   newPageTitleHebrew(section) {
     const {hebrewName} = books[amudMetadata().masechet];
-    return formatDafInHebrew(hebrewName, section);
+    return makeAmudSmall(formatDafInHebrew(hebrewName, section));
   }
 
   rendererType() { return "Talmud"; }

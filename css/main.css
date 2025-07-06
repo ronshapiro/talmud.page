@@ -275,6 +275,9 @@ h2, .title, .titleHebrew {
     width: 100%;
     line-height: 36px;
 }
+.titleHebrew sub, .titleHebrew sup {
+    font-size: 50%;
+}
 .segmentCount {
     font-size: .5em !important;
     color: #999;

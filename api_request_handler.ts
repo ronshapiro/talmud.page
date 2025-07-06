@@ -95,7 +95,7 @@ import {
   getTextWithImages,
   filterDuplicateImages,
 } from "./steinsaltz";
-import {formatDafInHebrew} from "./talmud";
+import {formatDafInHebrew, makeAmudSmall} from "./talmud";
 import {hasMatchingProperty} from "./util/objects";
 import {checkNotUndefined} from "./js/undefined";
 import {getWeekdayReading} from "./weekday_parshiot";
@@ -1480,7 +1480,7 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
   }
 
   protected makeTitleHebrew(): string {
-    return formatDafInHebrew(this.book().hebrewName, this.page);
+    return makeAmudSmall(formatDafInHebrew(this.book().hebrewName, this.page));
   }
 
   protected extraPromises(): Promise<any>[] {

@@ -60,10 +60,12 @@ export function Page({
         <i className="material-icons">do_not_disturb_on</i>
       </button>
     );
+    // eslint-disable-next-line react/no-danger
+    const titleElement = <span dangerouslySetInnerHTML={{__html: title}} />;
     return (
       <div className="titleContainer" key="titleContainer">
         <span className={className} key="title" ref={headerRef} dir={direction}>
-          {title}
+          {titleElement}
           {localStorage.showPageMetadata === "true"
            && !amudData.loading
            && <> <PageTitleMetadata segments={amudData.sections} /></>}
