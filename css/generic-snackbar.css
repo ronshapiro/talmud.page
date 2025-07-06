@@ -1,0 +1,74 @@
+/* Basic Styling for GenericSnackbar */
+.generic-snackbar {
+  background-color: #323232; /* Standard snackbar background color */
+  color: #ffffff; /* Standard text color */
+  padding: 14px 24px;
+  border-radius: 4px;
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,0.2),
+              0 6px 10px 0 rgba(0,0,0,0.14),
+              0 1px 18px 0 rgba(0,0,0,0.12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px; /* Spacing between stacked snackbars */
+  overflow: hidden; /* Ensures content doesn't spill during animation */
+  min-height: 48px; /* Standard height */
+  box-sizing: border-box;
+}
+
+.generic-snackbar .snackbar-text {
+  flex-grow: 1;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.generic-snackbar .snackbar-buttons {
+  display: flex;
+  align-items: center;
+  margin-left: 16px; /* Spacing between text and buttons */
+}
+
+.generic-snackbar .snackbar-buttons button {
+  /* Using Material Design Lite button styling as a base, assuming MDL is available */
+  /* text-transform: uppercase; */ /* Often used, but can be optional */
+  font-weight: 500;
+  /* color: #bb86fc; */ /* Example accent color for buttons, adjust as needed */
+  padding: 0 8px; /* Horizontal padding for buttons */
+  min-width: auto; /* Override MDL's min-width if necessary for compact buttons */
+  height: 36px; /* Standard height for buttons in snackbars */
+  line-height: 36px; /* Vertically center text */
+}
+
+.generic-snackbar .snackbar-buttons button:not(:last-child) {
+  margin-right: 8px; /* Spacing between buttons */
+}
+
+/* Kind-specific styling examples (add more as needed) */
+.snackbar-kind-error {
+  background-color: #d32f2f; /* Red for errors */
+  color: #ffffff;
+}
+
+.snackbar-kind-error .snackbar-buttons button {
+  color: #ffffff; /* White buttons on red background */
+}
+
+.snackbar-kind-success {
+  background-color: #4caf50; /* Green for success */
+  color: #ffffff;
+}
+
+.snackbar-kind-success .snackbar-buttons button {
+  color: #ffffff; /* White buttons on green background */
+}
+
+/* RTL support adjustments */
+.generic-snackbar[dir="rtl"] .snackbar-buttons {
+  margin-left: 0;
+  margin-right: 16px; /* Spacing between text and buttons for RTL */
+}
+
+.generic-snackbar[dir="rtl"] .snackbar-buttons button:not(:last-child) {
+  margin-right: 0;
+  margin-left: 8px; /* Spacing between buttons for RTL */
+}
