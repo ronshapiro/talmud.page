@@ -9,7 +9,11 @@ import {
 import {useConfiguration} from "./context";
 import {Preferences, LanguageChooser} from "./Preferences";
 import {Keybindings} from "./Keybindings";
-import {SnackbarHost} from "./SnackbarReact";
+import {SnackbarHost} from "./SnackbarReact"; // This is for the search snackbars
+import { SnackbarProvider } from "./SnackbarProvider"; // Import SnackbarProvider
+import { PreferencesNudgeSnackbarTrigger } from "./PreferencesNudgeSnackbar";
+import { GoogleSignInSnackbarTrigger } from "./GoogleSignInSnackbar";
+import { ShareSnackbarTrigger } from "./ShareSnackbar";
 import {Page, UiPage} from "./Page";
 import {useIncrementer, useUpdateDarkMode} from "./hooks";
 import componentHandler from "./componentHandler";
@@ -88,14 +92,29 @@ export function Root({
       </div>
       {!isFake && (
         <>
+          {/* SnackbarHost for search is kept separate as it has its own specific layout logic */}
           <SnackbarHost updateSearchQuery={updateSearchQuery} queryCount={queryCount} />
           <Keybindings forceUpdate={forceUpdate} />
+          {/* Global snackbar triggers */}
+          <PreferencesNudgeSnackbarTrigger />
+          <GoogleSignInSnackbarTrigger />
+          <ShareSnackbarTrigger />
         </>
       )}
     </>
   );
-  return isFake ? core : (
-    <LanguageChooser rerender={rerender} padding="32px">{core}</LanguageChooser>
+
+  // Wrap the core content with SnackbarProvider, then LanguageChooser
+  const contentWithSnackbarProvider = (
+    <SnackbarProvider>
+      {core}
+    </SnackbarProvider>
+  );
+
+  return isFake ? core : ( // isFake scenario might not need SnackbarProvider, assuming it's for limited tests/previews
+    <LanguageChooser rerender={rerender} padding="32px">
+      {contentWithSnackbarProvider}
+    </LanguageChooser>
   );
 }
 Root.propTypes = {
