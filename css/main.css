@@ -53,34 +53,6 @@ html, body {
     font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
-/* https://opensiddur.org/help/fonts/ */
-@font-face{
-    font-family: "Taamey David";
-    src:url(/font/TaameyDavidCLM-Medium.ttf)
-}
-@font-face{
-    font-family: "Taamey David";
-    src:url(/font/TaameyDavidCLM-Bold.ttf);
-    font-weight:700
-}
-@font-face{
-    font-family: "Taamey David";
-    src:url(/font/TaameyDavidCLM-MediumOblique.ttf);
-    font-style:italic
-}
-@font-face{
-    font-family: "Taamey David";
-    src:url(/font/TaameyDavidCLM-BoldOblique.ttf);
-    font-style:italic;
-    font-weight:700
-}
-
-/* https://opensiddur.org/help/fonts/ */
-@font-face{
-    font-family: 'Fira Light';
-    src:url(/font/FiraGO-Light.ttf)
-}
-
 .gemara-container .hebrew, .snackbar .hebrew {
     font-size: calc(1.5em * var(--font-size-multiplier));
     line-height: calc(1.5em * var(--font-size-multiplier));

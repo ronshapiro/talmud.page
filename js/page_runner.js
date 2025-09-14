@@ -1,5 +1,6 @@
 /* global gtag,  */
 import {ApiCache} from "./ApiCache.ts";
+import {FontCache} from "./FontCache.ts";
 import {mainCache} from "./caches.ts";
 import {$} from "./jquery";
 import {snackbars} from "./snackbar.ts";
@@ -328,3 +329,4 @@ export class Runner {
 }
 
 enableBackButtonProtection();
+new FontCache().loadAll();
