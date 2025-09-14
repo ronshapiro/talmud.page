@@ -144,6 +144,7 @@ export class DriveClient {
 
   resetState(): void {
     this.errors = {};
+    this.previousErrors = {};
     this.triggerErrorListener();
     this.whenDatabaseReady.reset();
     this.commentsByRef = {};
@@ -642,7 +643,7 @@ export class DriveClient {
       return this.updateDocument([request])
         .finally(() => this.refreshDatabaseDocument());
     },
-    createError: () => "Error editting personal comment",
+    createError: () => "Error editing personal comment",
   });
 
   signIn(): void {
@@ -692,6 +693,10 @@ export class DriveClient {
     }
 
     this.previousErrors = {...this.errors};
+  }
+
+  clearErrors(): void {
+    this.errors = {};
   }
 
   hasErrors(): boolean {

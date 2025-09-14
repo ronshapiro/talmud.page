@@ -301,7 +301,13 @@ export class Runner {
 
     this.driveClient.onErrorListener = () => {
       if (Object.keys(this.driveClient.errors).length > 0) {
-        snackbars.errors.show(Object.values(this.driveClient.errors).join("<br><br>"));
+        snackbars.errors.show(Object.values(this.driveClient.errors).join("<br><br>"), {
+          text: "Dismiss",
+          onClick: () => {
+            this.driveClient.clearErrors();
+            snackbars.errors.hide();
+          },
+        });
       } else {
         snackbars.errors.hide();
       }
