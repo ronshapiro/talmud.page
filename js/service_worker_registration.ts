@@ -22,6 +22,9 @@ function registerServiceWorker(scriptUrl: string): void {
 }
 
 export function serviceWorkerMain(): void {
+  // Can happen in non-https scenarios, e.g. over local wifi when not connecting via localhost
+  if (!navigator.serviceWorker) return;
+
   const serviceWorkerUrl = (
     document.getElementById("service-worker-ref") as HTMLScriptElement)!.src;
   const scriptUrl = serviceWorkerUrl.slice(serviceWorkerUrl.lastIndexOf("/"));
