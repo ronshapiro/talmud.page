@@ -11,10 +11,11 @@ import {Button, snackbars} from "./snackbar";
 import {checkNotUndefined} from "./undefined";
 
 let selectionSnackbarRef: string | undefined;
-const hideSelectionChangeSnackbar = () => {
+const hideSelectionChangeSnackbar = (arg: string) => {
   if (selectionSnackbarRef) {
     selectionSnackbarRef = undefined;
-    snackbars.textSelection.hide();
+    // snackbars.textSelection.hide();
+    snackbars.textSelection.show(arg, []);
   }
 };
 
@@ -90,17 +91,25 @@ const findSefariaRefOrHideSnackbar = (): FindSefariaRefReturnType => {
   }
 
   if (selection.type !== "Range") {
-    hideSelectionChangeSnackbar();
+    hideSelectionChangeSnackbar(selection.type);
     return undefined;
   }
 
   const sefariaRef = findSefariaRef(selection.anchorNode);
+  if (sefariaRef === undefined) {
+    hideSelectionChangeSnackbar("undefined");
+    return undefined;
+  }
+  if (!sefariaRef.ref) {
+    hideSelectionChangeSnackbar("empty ref");
+    return undefined;
+  }
   if (sefariaRef === undefined
       || !sefariaRef.ref
       // TODO: perhaps support multiple refs, and just grab everything in between?
       // If the selection spans multiple refs, ignore them all
       || sefariaRef.ref !== findSefariaRef(selection.focusNode)?.ref) {
-    hideSelectionChangeSnackbar();
+    hideSelectionChangeSnackbar("unknown");
     return undefined;
   }
   if (sefariaRef.ref === selectionSnackbarRef) {
