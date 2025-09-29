@@ -137,8 +137,6 @@ export abstract class Renderer {
   }
 
   _applyClientSideDataTransformations(amudData: UiPage): void {
-    const start = Date.now();
-    console.log(amudData.id); // eslint-disable-line no-console
     if (!amudData.sections) {
       amudData.sections = [];
     }
@@ -150,13 +148,11 @@ export abstract class Renderer {
         section.sourceHeRef = "ברירת מחדל";
       }
     }
-    console.log("done uuids", Date.now() - start);
 
     const preferredVersion = localStorage[`preferredVersion_${this.rendererType()}`];
     if (amudData.sections.length > 0
         && preferredVersion
         && preferredVersion !== amudData.sections[0].sourceRef) {
-      let i = 0;
       for (const segment of amudData.sections) {
         if (segment.commentary?.Versions?.comments) {
           const newVersionComments = [];
@@ -179,11 +175,8 @@ export abstract class Renderer {
           }
           segment.commentary.Versions.comments = newVersionComments;
         }
-        console.log("done segment #", i, Date.now() - start); // eslint-disable-line no-console
-        i++;
       }
     }
-    console.log("done all preferred", Date.now() - start); // eslint-disable-line no-console
 
     // TODO: this logic is not dynamic, and therefore can result in some weird states when settings
     // are changed for already-viewed translations. It may be best to just inline this logic to the
@@ -192,7 +185,6 @@ export abstract class Renderer {
       return;
     }
 
-    let i = 0;
     for (const section of amudData.sections) {
       const commentaries = section.commentary;
       // Reminder: Hadran sections have no steinsaltz
@@ -223,10 +215,7 @@ export abstract class Renderer {
           }],
         };
       }
-      console.log("done all steinsaltz segment #", i, Date.now() - start); // eslint-disable-line no-console
-      i++;
     }
-    console.log("done all reloading", Date.now() - start); // eslint-disable-line no-console
   }
 
   ignoredSectionRefs(_id: string): string[] {
