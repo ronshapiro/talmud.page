@@ -126,10 +126,66 @@ const STRATEGIES: ((
   entireStringStrategy,
 ];
 
+interface MatchResult {
+  start?: number;
+  length: number;
+}
+export type Matcher = (argument: string) => MatchResult | undefined;
+
+// export for testing only
+export function createRegexMatcher(regexText: string): Matcher | undefined {
+  const regex = createRegex(regexText);
+  if (!regex) return undefined;
+  return (argument: string) => {
+    const match = argument.match(regex);
+    if (!match) return undefined;
+    return {
+      start: match.index,
+      length: match[0].length,
+    };
+  };
+}
+
+// export for testing only
+export function createSimpleIterativeMatcher(regexText: string): Matcher | undefined {
+  if (regexText.length === 0) return undefined;
+  return (argument: string) => {
+    let start = 0;
+    while (true) { // eslint-disable-line no-constant-condition
+      start = argument.indexOf(regexText[0], start);
+      if (start === -1) break;
+
+      let regexIndex = 0;
+      let length = 0;
+      while (true) { // eslint-disable-line no-constant-condition
+        if (regexIndex === regexText.length) {
+          return {start, length};
+        }
+        const regexChar = regexText[regexIndex];
+        const argumentChar = argument[start + length];
+        if (regexChar === argumentChar) {
+          regexIndex++;
+          length++;
+        } else if (NON_SIGNIFICANT_CHARACTER.test(argumentChar)) {
+          length++;
+        } else if (NON_SIGNIFICANT_CHARACTER.test(regexChar)) {
+          regexIndex++;
+        } else {
+          break;
+        }
+      }
+
+      start++;
+    }
+    return undefined;
+  };
+}
+
 export function applyHighlight(
   highlight: HighlightCommentWithText,
   inputText: string | string[],
   highlightingStyle: HighlightingStyle = undefined,
+  createMatcher = createSimpleIterativeMatcher,
 ): string | undefined {
   if (Array.isArray(inputText)) {
     // TODO: devise a strategy for multiline highlights
@@ -143,17 +199,17 @@ export function applyHighlight(
     return undefined;
   }
 
-  const searchRegex = createRegex(highlight.text);
-  if (!searchRegex) {
+  const matcher = createMatcher(highlight.text);
+  if (!matcher) {
     return undefined;
   }
   for (const strategy of STRATEGIES) {
     const [start, end] = strategy(highlight, justText);
-    const match = justText.substring(start, end).match(searchRegex);
-    if (match && match.index !== undefined) {
-      const matchStart = start + match.index;
+    const match = matcher(justText.substring(start, end));
+    if (match && match.start !== undefined) {
+      const matchStart = start + match.start;
       injectHighlighting(
-        el, matchStart, matchStart + match[0].length, highlight, highlightingStyle);
+        el, matchStart, matchStart + match.length, highlight, highlightingStyle);
       return el.innerHTML;
     }
   }
