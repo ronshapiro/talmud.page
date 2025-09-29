@@ -339,14 +339,27 @@ function TableRow(props: TableRowProps): React.ReactElement {
     if (context.isFake) {
       return {shouldWrap: false, englishLineClampLines: 1000000};
     }
+    let start = Date.now();
+    console.log("----apply hebrew", Date.now() - start); // eslint-disable-line no-console
+    start = Date.now();
 
     applyHiddenNode(hebrew, hiddenHost.hebrew);
+    console.log("apply english", Date.now() - start); // eslint-disable-line no-console
+    start = Date.now();
     applyHiddenNode(english, hiddenHost.english);
+    console.log("done applying", Date.now() - start); // eslint-disable-line no-console
+    start = Date.now();
 
     const totalEnglishLines = calculateLineCount(hiddenHost.english);
+    console.log("calc lines", Date.now() - start); // eslint-disable-line no-console
+    start = Date.now();
     const heightRatio = hiddenHost.hebrew.height() / hiddenHost.english.height();
 
+    console.log("apply br tags start", Date.now() - start); // eslint-disable-line no-console
+    start = Date.now();
     applyHiddenNode(brTags(totalEnglishLines - 3 /* heuristic */), hiddenHost.english);
+    console.log("apply br tags end", Date.now() - start); // eslint-disable-line no-console
+    start = Date.now();
 
     if (Number.isNaN(heightRatio)) {
       return {shouldWrap: false, englishLineClampLines: 1000000};
@@ -357,9 +370,14 @@ function TableRow(props: TableRowProps): React.ReactElement {
       englishLineClampLines: Math.floor(heightRatio * totalEnglishLines),
     };
 
+    console.log("restart hidden hebrew", Date.now() - start); // eslint-disable-line no-console
+    start = Date.now();
     // TODO: optimize by applying this in an effect
     applyHiddenNode("", hiddenHost.hebrew);
+    console.log("restart hidden english", Date.now() - start); // eslint-disable-line no-console
+    start = Date.now();
     applyHiddenNode("", hiddenHost.english);
+    console.log("restart hidden done", Date.now() - start); // eslint-disable-line no-console
 
     return result;
   };
