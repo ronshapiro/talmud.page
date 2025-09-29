@@ -13,13 +13,8 @@
   var gtag = console.debug;
 </script>
 {% else %}
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PTTKL1VZZK"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-PTTKL1VZZK');
+  var gtag = console.debug;
 </script>
 {% endif %}
 
