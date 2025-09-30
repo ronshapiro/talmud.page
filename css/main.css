@@ -685,6 +685,10 @@ h2, .title, .titleHebrew {
     width: 300px;
     padding-bottom: 10px;
 }
+.steinsaltz-comments .fullRow img {
+    width: 400px;
+    max-width: 100%;
+}
 
 .steinsaltz-comments .hebrew img {
     float: left;
@@ -694,6 +698,11 @@ h2, .title, .titleHebrew {
 .steinsaltz-comments .english img {
     float: right;
     padding-left: 10px;
+}
+
+.commentFullRowImage .fullRow {
+    display: flex;
+    justify-content: center;
 }
 
 #errors .lang-hebrew {

@@ -7,6 +7,7 @@ import {
   CommentaryMap,
   Section,
   ApiComment,
+  Row,
 } from "./apiTypes";
 import {surroundingContext} from "./arrays";
 import {Book, books, internalLinkableRef} from "./books";
@@ -92,8 +93,7 @@ import {ShulchanArukhHeaderRemover} from "./source_formatting/shulchan_arukh_rem
 import {isPehSectionEnding, transformTanakhSpacing} from "./source_formatting/tanakh_spacing";
 import {
   makeSteinsaltzCommentPairings,
-  getTextWithImages,
-  filterDuplicateImages,
+  getSteinsaltzCommentRows,
 } from "./steinsaltz";
 import {formatDafInHebrew, makeAmudSmall} from "./talmud";
 import {hasMatchingProperty} from "./util/objects";
@@ -153,6 +153,7 @@ function normalizeHebrewForVersionUniqueness(text: string): string {
 class Comment {
   duplicateRefs: string[] = [];
   isUnique: boolean | undefined;
+  rows: Row[] = [];
 
   constructor(
     readonly englishName: string,
@@ -291,6 +292,9 @@ class Comment {
 
     if (this.expandedRefsAfterRewriting) {
       result.expandedRefsAfterRewriting = this.expandedRefsAfterRewriting;
+    }
+    if (this.rows.length > 0) {
+      result.rows = this.rows;
     }
 
     if (!this.originalRefsBeforeRewriting) {
@@ -1605,15 +1609,17 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
           titles.english += ` (${titles.hebrew})`;
           titles.hebrew = "";
         }
-        filterDuplicateImages(hebrew, english);
-        segment.commentary.addComment(new Comment(
+
+        const comment = new Comment(
           "Steinsaltz In-Depth",
-          getTextWithImages(hebrew, this.logger),
-          getTextWithImages(english, this.logger),
+          "",
+          "",
           `Steinsaltz comment #${i} on ` + segment.ref,
           titles.english,
           titles.hebrew,
-        ));
+        );
+        comment.rows = getSteinsaltzCommentRows(hebrew, english, this.logger);
+        segment.commentary.addComment(comment);
       }
     }
   }

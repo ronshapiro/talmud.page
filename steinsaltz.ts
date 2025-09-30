@@ -3,6 +3,7 @@ import {books} from "./books";
 import {ListMultimap} from "./multimap";
 import {stripHebrewNonletters} from "./hebrew";
 import {Logger} from "./logger";
+import {Row} from "./apiTypes";
 
 /* eslint-disable quote-props */
 const STEINSALTZ_MASECHET_NUMBER = {
@@ -101,25 +102,7 @@ interface HebrewNote extends Note {
   type: {id: number, name: string};
 }
 
-export function getTextWithImages(note: Note | undefined, logger: Logger): string {
-  if (!note) return "";
-
-  const text = [];
-  for (const file of note.files) {
-    if (file.type !== "image") {
-      logger.error(file);
-      continue;
-    }
-    const caption = file.captionHeb ?? file.captionEng;
-    text.push(
-      `<img src="/stimg/${file.id}/${file.filename}" alt="${caption}" /><br />`);
-  }
-  text.push(note.text);
-
-  return text.join("");
-}
-
-export function filterDuplicateImages(
+function filterDuplicateImages(
   hebrew: HebrewNote | undefined, english: EnglishNote | undefined): void {
   if (!hebrew || !english) return;
   english.files = english.files.filter(englishFile => {
@@ -132,6 +115,30 @@ export function filterDuplicateImages(
     return true;
   });
 }
+
+export function getSteinsaltzCommentRows(
+  hebrew: HebrewNote | undefined,
+  english: EnglishNote | undefined,
+  logger: Logger): Row[] {
+  filterDuplicateImages(hebrew, english);
+
+  const rows: Row[] = [];
+  for (const file of [...(hebrew?.files || []), ...(english?.files || [])]) {
+    if (file.type !== "image") {
+      logger.error(file);
+      continue;
+    }
+    const caption = file.captionHeb ?? file.captionEng;
+    rows.push({image: `<img src="/stimg/${file.id}/${file.filename}" alt="${caption}" /><br />`});
+  }
+  rows.push({
+    hebrew: hebrew?.text,
+    english: english?.text,
+  });
+
+  return rows;
+}
+
 
 type HebrewEnglishPair = [HebrewNote | undefined, EnglishNote | undefined];
 

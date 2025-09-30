@@ -32,10 +32,17 @@ export interface Section extends Highlightable {
   defaultMergeWithNext?: true;
 }
 
+export interface Row {
+  hebrew?: string;
+  english?: string;
+  image?: string;
+}
+
 export interface ApiComment extends Highlightable {
   ref: string;
   he: sefaria.TextType;
   en: sefaria.TextType;
+  rows?: Row[];
   sourceRef: string;
   sourceHeRef: string;
   link?: string;

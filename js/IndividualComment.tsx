@@ -29,8 +29,8 @@ function InternalTableRow({
   extraClasses,
   overrideRef,
 }: {
-  hebrew: string;
-  english: string;
+  hebrew?: string;
+  english?: string;
   comment: ApiComment;
   commentaryKind: CommentaryType;
   extraClasses?: string[];
@@ -41,7 +41,7 @@ function InternalTableRow({
     () => setEnglishSteinsaltzWithHebrew(old => !old));
   const context = useConfiguration();
   if (commentaryKind.englishName === "Vilna Shas") {
-    english = undefined as any as string;
+    english = undefined;
   }
 
   const ref = overrideRef ?? comment.ref;
@@ -54,7 +54,7 @@ function InternalTableRow({
   const classes = extraClasses || [];
   classes.push("commentaryRow", "IndividualComment", /* used in CSS */ commentaryKind.className);
 
-  const createRow = (key: string, _hebrew: string, _english: string) => (
+  const createRow = (key: string, _hebrew: string | undefined, _english: string | undefined) => (
     <TableRow
       key={key}
       hebrew={_hebrew}
@@ -83,8 +83,8 @@ function InternalTableRow({
   );
 }
 InternalTableRow.propTypes = {
-  hebrew: PropTypes.string.isRequired,
-  english: PropTypes.string.isRequired,
+  hebrew: PropTypes.string,
+  english: PropTypes.string,
   comment: PropTypes.object.isRequired,
   commentaryKind: PropTypes.object.isRequired,
   extraClasses: PropTypes.arrayOf(PropTypes.string),
@@ -140,7 +140,47 @@ export function IndividualComment({
     output.push(<strong key="title">{titleRow}</strong>);
   }
 
-  if (Array.isArray(comment.he) && Array.isArray(comment.en)
+  const getLineRef = (i: number) => {
+    if (comment.expandedRefsAfterRewriting) return comment.expandedRefsAfterRewriting[i];
+    if (commentaryKind.nestedRefSpacer) {
+      return `${comment.ref}${commentaryKind.nestedRefSpacer}${i + 1}`;
+    }
+    return "ignore-drive";
+  };
+
+  if (comment.rows) {
+    let i = 0;
+    for (const row of comment.rows) {
+      const lineRef = getLineRef(i);
+      if (row.image) {
+        output.push(
+          <InternalTableRow
+            key={`image-${i}`}
+            hebrew={row.image}
+            overrideRef={`${lineRef}-image`}
+            comment={comment}
+            commentaryKind={commentaryKind}
+            extraClasses={["commentFullRowImage"]}
+            />);
+      }
+      if (row.hebrew || row.english) {
+        const isDirectlyReferenced = (
+          comment.originalRefsBeforeRewriting?.includes(lineRef));
+
+        output.push(
+          <InternalTableRow
+            key={`text-${i}`}
+            hebrew={row.hebrew}
+            english={row.english}
+            overrideRef={lineRef}
+            extraClasses={isDirectlyReferenced ? ["directlyReferencedLine"] : []}
+            comment={comment}
+            commentaryKind={commentaryKind}
+            />);
+        i++;
+      }
+    }
+  } else if (Array.isArray(comment.he) && Array.isArray(comment.en)
     && comment.he.length === comment.en.length
     // Make sure that if there are nested arrays, the flattened length also matches. This is a
     // lazy-person JaggedArray size check.
@@ -148,14 +188,7 @@ export function IndividualComment({
     const hebrew = comment.he.flat(Infinity);
     const english = comment.en.flat(Infinity);
     for (let i = 0; i < hebrew.length; i++) {
-      const lineRef = (() => {
-        if (comment.expandedRefsAfterRewriting) return comment.expandedRefsAfterRewriting[i];
-        if (commentaryKind.nestedRefSpacer) {
-          return `${comment.ref}${commentaryKind.nestedRefSpacer}${i + 1}`;
-        }
-        return "ignore-drive";
-      })();
-
+      const lineRef = getLineRef(i);
       const isDirectlyReferenced = (
         comment.originalRefsBeforeRewriting?.includes(lineRef));
 
