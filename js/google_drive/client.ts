@@ -181,7 +181,7 @@ export class DriveClient {
     this.isSignedIn = isSignedIn;
     localStorage.hasSignedInWithGoogle = isSignedIn;
     if (isSignedIn) {
-      gtag("config", "GA_MEASUREMENT_ID", {
+      gtag("config", "G-PTTKL1VZZK", {
         user_id: this.gapi.getSignedInUserEmail(),
       });
       this.findDocsDatabase();
