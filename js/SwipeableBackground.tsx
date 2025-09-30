@@ -5,6 +5,7 @@ import {useDrag} from "@use-gesture/react";
 
 const {
   useState,
+  useMemo,
 } = React;
 
 interface SwipeableBackgroundParams {
@@ -23,8 +24,13 @@ export function SwipeableBackground({
   children,
   inline,
 }: SwipeableBackgroundParams): React.ReactElement {
+  const angle = useMemo(() => Math.trunc(Math.random() * 360), undefined);
   const color = (ratio: number) => {
-    return {backgroundColor: `rgba(87, 175, 235, ${ratio})`};
+    const color1 = `rgba(140, 219, 250, ${ratio})`;
+    const color2 = `rgba(213, 170, 255, ${ratio})`;
+    return {
+      background: `linear-gradient(${angle}deg, ${color1}, ${color2})`,
+    };
   };
   const [styles, api] = useSpring(() => color(initiallyOn ? MAX_OPACITY : 0));
   const [isOn, setIsOn] = useState(initiallyOn);
@@ -60,7 +66,7 @@ export function SwipeableBackground({
   const ElementType = inline ? animated.span : animated.div;
   return (
     // eslint-disable-next-line react/jsx-props-no-spreading
-    <ElementType {...bind()} style={styles}>
+    <ElementType {...bind()} style={styles} className="animateSwipeableBackground">
       {children}
     </ElementType>
   );

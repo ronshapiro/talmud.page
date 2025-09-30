@@ -715,3 +715,20 @@ h2, .title, .titleHebrew {
     /* backup in case its just a default commentary with no specified color */
     color: rgb(255, 110, 64);
 }
+
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animateSwipeableBackground {
+    animation: gradient-shift 20s ease infinite;
+    background-size: 400% 400% !important;
+}
