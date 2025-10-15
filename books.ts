@@ -72,6 +72,7 @@ export abstract class Book {
     return this.sections.has(section);
   }
 
+  // Create default impls using sections()
   abstract nextPage(page: string): string;
   abstract previousPage(page: string): string;
   abstract arePagesInReverseOrder(start: string, end: string): boolean;
