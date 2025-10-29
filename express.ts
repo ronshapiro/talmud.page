@@ -3,7 +3,6 @@ import * as fs from "fs";
 import * as http from "http";
 import {JewishCalendar} from "kosher-zmanim";
 import * as nunjucks from "nunjucks";
-import * as sendgrid from "@sendgrid/mail";
 import {range} from "underscore";
 import {parse as urlParse} from "url";
 import {v4 as uuid} from "uuid";
@@ -25,6 +24,7 @@ import {CorrectionPostData} from "./correctionTypes";
 import {htmlEscape} from "./html_escape";
 import {ConsoleLogger, Timer} from "./logger";
 import {PromiseChain} from "./js/promises";
+import {sendEmail} from "./mailjet";
 import {RealRequestMaker} from "./request_makers";
 import {Sitemap} from "./robots";
 import {jsonSize} from "./util/json_size";
@@ -505,8 +505,7 @@ app.get('/sitemap.xml', (req, res) => {
     .send(new Sitemap(`https://${req.hostname}`).generate());
 });
 
-if (fs.existsSync("sendgrid_api_key")) {
-  sendgrid.setApiKey(fs.readFileSync("sendgrid_api_key", {encoding: "utf-8"}));
+if (fs.existsSync("mailjet_api_key")) {
   app.post("/corrections", async (req, res) => {
     if (debug) {
       // eslint-disable-next-line no-console
@@ -540,9 +539,8 @@ if (fs.existsSync("sendgrid_api_key")) {
       cc.push("corrections@talmud.page");
     }
     const rtl = (text: string | undefined) => text && `<div dir="rtl">${text}</div>`;
-    sendgrid.send({
+    sendEmail({
       to,
-      from: "corrections@talmud.page",
       cc,
       subject,
       text: [
@@ -590,9 +588,8 @@ if (fs.existsSync("sendgrid_api_key")) {
     }
     addLog(req.body.localStorage, "localStorage");
 
-    sendgrid.send({
+    sendEmail({
       to: "feedback-form@talmud.page",
-      from: "corrections@talmud.page",
       subject: `Feedback Form: ${userId} ${req.body.ignored ? "IGNORED" : ""}`.trim(),
       text: text.join("\n"),
       html: html.join(""),
@@ -619,9 +616,8 @@ if (fs.existsSync("sendgrid_api_key")) {
     }
     html.push("</ul>");
 
-    sendgrid.send({
+    sendEmail({
       to: "event@talmud.page",
-      from: "corrections@talmud.page",
       subject: `Event: ${userId} ${req.body.subject ?? ""}`.trim(),
       text: text.join("\n"),
       html: html.join(""),

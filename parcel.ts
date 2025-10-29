@@ -35,9 +35,13 @@ const entryFiles = [
 const isProd = (() => {
   switch (process.argv[2]) {
     case "prod":
-      if (!fs.existsSync("sendgrid_api_key")) {
-        throw new Error("Could not find sendgrid_api_key file, which is necessary to deploy.");
+      if (!fs.existsSync("mailjet_api_key")) {
+        throw new Error("Could not find mailjet_api_key file, which is necessary to deploy.");
       }
+      if (!fs.existsSync("mailjet_api_secret")) {
+        throw new Error("Could not find mailjet_api_secret file, which is necessary to deploy.");
+      }
+
       return true;
     case "dev":
       return false;
