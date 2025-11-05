@@ -75,6 +75,7 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
   },
   {
     englishName: "Otzar Laazei Rashi",
+    englishNamePattern: /^Otzar La'?azei Rashi.*/,
     hebrewName: 'אוצר לעזי רש"י',
     className: "otzar-laazei-rashi",
   },
