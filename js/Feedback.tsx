@@ -69,8 +69,9 @@ export function FeedbackView({hide}: FeedbackViewProps): React.ReactElement {
     if (darkMode) darkMode.disabled = true;
   });
   const rootRef = useHtmlRef<HTMLDivElement>();
-  const collectData = () => {
+  const collectData = (stage?: string) => {
     const data: any = {localStorage: {...localStorage}, form: {}};
+    if (stage) data.form.stage = stage;
     for (const input of $(rootRef.current).find(".mdl-textfield__input")) {
       data.form[input.id] = input.value;
     }
@@ -98,7 +99,7 @@ export function FeedbackView({hide}: FeedbackViewProps): React.ReactElement {
 
   if (showMore) {
     const onSubmitFullForm = () => {
-      collectData();
+      collectData("finished");
       localStorage.showFeedbackForm = "finished";
       hide();
     };
@@ -117,8 +118,7 @@ export function FeedbackView({hide}: FeedbackViewProps): React.ReactElement {
       <PrimaryButton key="send" text="Send" onClick={() => onSubmitFullForm()} />);
   } else {
     const onFirstSubmit = () => {
-      localStorage.showFeedbackForm = "submitted first level";
-      collectData();
+      collectData("submitted first level");
       setShowMore(true);
     };
     result.push(
