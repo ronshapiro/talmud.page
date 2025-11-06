@@ -10,6 +10,9 @@ import {$} from "./jquery";
 import {Button, snackbars} from "./snackbar";
 import {checkNotUndefined} from "./undefined";
 
+let debugCounter = 0;
+const DO_DEBUG = localStorage.debugSelection === "true";
+
 let selectionSnackbarRef: string | undefined;
 const hideSelectionChangeSnackbar = () => {
   if (selectionSnackbarRef) {
@@ -341,6 +344,12 @@ class Buttons {
 }
 
 const onSelectionChange = () => {
+  debugCounter++;
+  if (DO_DEBUG) {
+    document.getElementById("debug_header")!.textContent = debugCounter.toString();
+    console.log(document.getElementById("debug_header"));
+  }
+
   const sefariaRef = findSefariaRefOrHideSnackbar();
   if (!sefariaRef) {
     return;

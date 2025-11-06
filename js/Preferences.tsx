@@ -253,6 +253,16 @@ function preferenceOptions(
       items={STANDARD_YES_TRUE_NO_FALSE}
       rerender={rerender}
       localStorageKeyName="keyboardShortcuts" />,
+    <PreferenceSection
+      title={
+        <span>Debug selection bugs<br /><small>(aah!)</small></span>
+      }
+      titleHebrew={
+        <span>Debug selection bugs<br /><small>(aah!)</small></span>
+      }
+      items={STANDARD_YES_TRUE_NO_FALSE}
+      rerender={rerender}
+      localStorageKeyName="debugSelection" />,
   ];
   if (window.location.host.startsWith("localhost")) {
     allOptions.push(

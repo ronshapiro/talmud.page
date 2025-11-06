@@ -732,3 +732,9 @@ h2, .title, .titleHebrew {
     animation: gradient-shift 20s ease infinite;
     background-size: 400% 400% !important;
 }
+
+#debug_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
