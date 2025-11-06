@@ -1,3 +1,5 @@
+import {createSimpleIterativeMatcher} from "./matching";
+
 export const options: any = {};
 
 // Set options.document in tests to set to a JSDOM document
@@ -104,7 +106,7 @@ export interface Wrapper {
 }
 
 export function htmlWrapMatches(
-  sourceText: string, pattern: RegExp, wrapper: Wrapper,
+  sourceText: string, pattern: string, wrapper: Wrapper,
 ): string {
   const [plaintext, tags] = extract(sourceText);
   let currentLength = 0;
@@ -122,12 +124,17 @@ export function htmlWrapMatches(
     }
   };
 
-  const matches = Array.from(plaintext.matchAll(pattern));
-  if (matches.length === 0) return sourceText;
-
   let lastIndex = 0;
-  for (const match of matches) {
-    const split = plaintext.slice(lastIndex, match.index!);
+  while (lastIndex < plaintext.length) {
+    const matcher = createSimpleIterativeMatcher(pattern, lastIndex);
+    if (!matcher) break;
+    const match = matcher(plaintext);
+    if (!match) {
+      if (lastIndex === 0) return sourceText;
+      break;
+    }
+
+    const split = plaintext.slice(lastIndex, match.start!);
     for (let i = 0; i < split.length; i++) {
       processTags();
       chunks.push(split.charAt(i));
@@ -135,16 +142,15 @@ export function htmlWrapMatches(
       processTags();
     }
 
-    const matchedPattern = match[0];
-    for (let i = 0; i < matchedPattern.length; i++) {
+    for (let i = 0; i < match.length; i++) {
       if (i === 0) chunks.push(wrapper.prefix);
       processTags();
-      chunks.push(matchedPattern.charAt(i));
-      if (i === matchedPattern.length - 1) chunks.push(wrapper.suffix);
+      chunks.push(plaintext.charAt(match.start + i));
+      if (i === match.length - 1) chunks.push(wrapper.suffix);
       currentLength++;
       processTags();
     }
-    lastIndex = match.index! + matchedPattern.length;
+    lastIndex = match.start! + match.length;
   }
 
   const lastSplit = plaintext.slice(lastIndex);

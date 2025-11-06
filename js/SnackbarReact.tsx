@@ -8,7 +8,6 @@ import {NullaryFunction} from "./types";
 import {useScrollTo} from "./useScrollTo";
 
 const {
-  useCallback,
   useEffect,
   useRef,
   useState,
@@ -81,7 +80,7 @@ function unescapeHtml(text: string): string {
   );
 }
 
-type UpdateSearchQuery = (key: string, query: string, asRegex: boolean | undefined) => void;
+type UpdateSearchQuery = (key: string, query: string) => void;
 
 interface SearchProps {
   queryCount: number;
@@ -213,24 +212,18 @@ function IndividualSearchRow({
   const scrolling = useScrollTo(`.foundTerm.${color}`);
   const {matches, currentMatch, scrollToDiffedIndex} = scrolling;
 
-  const [asRegex, setAsRegexBase] = useState(false);
-  const updateRegex = useCallback((overrideAsRegexValue?: boolean) => {
+  const updateRegex = () => {
     const newText = unescapeHtml(sanitizeHtml(contentEditableRef.current.innerHTML).trim());
     setContent(newText);
-    const asRegexValue = overrideAsRegexValue !== undefined ? overrideAsRegexValue : asRegex;
-    updateSearchQuery(color, newText.trim(), asRegexValue);
+    updateSearchQuery(color, newText.trim());
     scrolling.clearState();
-  }, [asRegex]);
-  const setAsRegex = (value: boolean) => {
-    setAsRegexBase(value);
-    updateRegex(value);
   };
 
   useEffect(() => {
     if (content !== localContent) {
       const newText = unescapeHtml(sanitizeHtml(content).trim());
       setContent(newText);
-      updateSearchQuery(color, newText.trim(), false);
+      updateSearchQuery(color, newText.trim());
     }
   });
 
@@ -242,7 +235,7 @@ function IndividualSearchRow({
       closeSnackbarRef.current!().then(() => removeSearch());
     } else {
       setContent("");
-      updateSearchQuery(color, "", undefined);
+      updateSearchQuery(color, "");
     }
   };
 
@@ -271,12 +264,6 @@ function IndividualSearchRow({
   children.push(
     <span key="buttons">
       {matchCounterText}
-      <SnackbarButton
-        key="regex"
-        extraClasses={asRegex ? ["mdl-button--raised"] : []}
-        onClick={() => setAsRegex(!asRegex)}>
-        /.*/
-      </SnackbarButton>
       <SnackbarButton key="down" disabled={disabled} onClick={() => scrollToDiffedIndex(1)}>
         <i className="material-icons">arrow_downward</i>
       </SnackbarButton>

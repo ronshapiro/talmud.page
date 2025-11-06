@@ -49,7 +49,7 @@ function useSearchableText(text: string): string {
   const regexes = context.searchQueryRegex ? Object.entries(context.searchQueryRegex) : [];
   return useMemo(() => {
     for (const [color, regex] of regexes) {
-      if (regex) text = htmlWrapMatches(text, regex as RegExp, searchTermWrapper(color));
+      if (regex) text = htmlWrapMatches(text, regex as string, searchTermWrapper(color));
     }
     return text;
   }, [text, regexes]);

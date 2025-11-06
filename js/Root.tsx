@@ -1,7 +1,6 @@
 import * as React from "react";
 import * as PropTypes from 'prop-types';
 import {FeedbackView} from "./Feedback";
-import {hebrewSearchRegex} from "../hebrew";
 import {
   NextButton,
   PreviousButton,
@@ -67,13 +66,12 @@ export function Root({
       lastRemovable={i !== 0 && i === baseAmudim.length - 1} />));
 
 
-  const updateSearchQuery = (
-    color: string, query: string, asRegex: boolean | undefined) => {
+  const updateSearchQuery = (color: string, query: string) => {
     if (!context.searchQueryRegex) {
       context.searchQueryRegex = {};
     }
     context.searchQueryRegex[color] = (
-      (query.length < 2) ? undefined : hebrewSearchRegex(query, !!asRegex));
+      (query.length < 2) ? undefined : query);
     incrementQueryCount();
   };
 

@@ -1,9 +1,10 @@
+import {applyHighlight} from "../highlight";
 import {
-  applyHighlight,
   createRegexMatcher,
   createSimpleIterativeMatcher,
   Matcher,
-} from "../highlight";
+} from "../matching";
+
 import {HighlightCommentWithText} from "../google_drive/types";
 
 function basicComment(text: string, color = "yellow") {
