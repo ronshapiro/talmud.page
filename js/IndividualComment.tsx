@@ -151,7 +151,7 @@ export function IndividualComment({
   if (comment.rows) {
     let i = 0;
     for (const row of comment.rows) {
-      const lineRef = getLineRef(i);
+      const lineRef = row.ref ?? getLineRef(i);
       if (row.image) {
         output.push(
           <InternalTableRow

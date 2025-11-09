@@ -1610,15 +1610,16 @@ class TalmudApiRequestHandler extends AbstractApiRequestHandler {
           titles.hebrew = "";
         }
 
+        const steinsaltzRef = `Steinsaltz comment #${i} on ` + segment.ref;
         const comment = new Comment(
           "Steinsaltz In-Depth",
           "",
           "",
-          `Steinsaltz comment #${i} on ` + segment.ref,
+          steinsaltzRef,
           titles.english,
           titles.hebrew,
         );
-        comment.rows = getSteinsaltzCommentRows(hebrew, english, this.logger);
+        comment.rows = getSteinsaltzCommentRows(hebrew, english, steinsaltzRef, this.logger);
         segment.commentary.addComment(comment);
       }
     }

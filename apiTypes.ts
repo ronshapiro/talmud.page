@@ -36,6 +36,7 @@ export interface Row {
   hebrew?: string;
   english?: string;
   image?: string;
+  ref?: string;
 }
 
 export interface ApiComment extends Highlightable {

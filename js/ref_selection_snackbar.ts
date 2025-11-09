@@ -347,7 +347,6 @@ const onSelectionChange = () => {
   debugCounter++;
   if (DO_DEBUG) {
     document.getElementById("debug_header")!.textContent = debugCounter.toString();
-    console.log(document.getElementById("debug_header"));
   }
 
   const sefariaRef = findSefariaRefOrHideSnackbar();

@@ -119,6 +119,7 @@ function filterDuplicateImages(
 export function getSteinsaltzCommentRows(
   hebrew: HebrewNote | undefined,
   english: EnglishNote | undefined,
+  ref: string,
   logger: Logger): Row[] {
   filterDuplicateImages(hebrew, english);
 
@@ -134,6 +135,7 @@ export function getSteinsaltzCommentRows(
   rows.push({
     hebrew: hebrew?.text,
     english: english?.text,
+    ref,
   });
 
   return rows;
