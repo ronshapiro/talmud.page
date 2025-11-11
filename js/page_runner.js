@@ -254,9 +254,12 @@ export class Runner {
             }
             localStorage.lastUrl = window.location.href;
             localStorage.platform = window.navigator.platform;
-            localStorage.userAgentPlatform = window.navigator.userAgentData.platform;
-            localStorage.userAgentBrands = JSON.stringify(window.navigator.userAgentData.brands);
-            localStorage.isMobile = window.navigator.userAgentData.mobile;
+            localStorage.navigatorVendor = window.navigator.vendor;
+            if (window.navigator.userAgentData) {
+              localStorage.userAgentPlatform = window.navigator.userAgentData.platform;
+              localStorage.userAgentBrands = JSON.stringify(window.navigator.userAgentData.brands);
+              localStorage.isMobile = window.navigator.userAgentData.mobile;
+            }
           }, 1000);
 
           onceDocumentReady.declareReady();
