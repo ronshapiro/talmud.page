@@ -384,12 +384,12 @@ export function CommentariesBlock({
       if (commentaryKind === undefined) continue;
       let commentary = commentaries[commentaryKind.englishName];
       if (!commentary) {
-        // TODO: investigate a better solution for the indexByClassName overlapping for Translation
-        // and Steinsaltz (it appears when side-by-side is used)
+        // TODO: investigate a better solution for the overlapping of Translation and Steinsaltz (it
+        // appears when side-by-side ("both") is used and when showTranslationButton === "yes".
         // TODO: this also causes problems for keyboard shortcuts with an zero-height row for the
         // close button
         if (commentaryClassName === "translation") {
-          commentary = commentaries.Steinsaltz;
+          commentary = commentaries.Steinsaltz ?? commentaries.Translation;
         }
         if (!commentary) {
           // This can happen when deleting the last personal note in a segment, as the delete
