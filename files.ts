@@ -18,3 +18,7 @@ export function readUtf8(path: string): string {
 export function readAndParseGzippedJsonFile<T>(path: string): T {
   return JSON.parse(gunzipSync(fs.readFileSync(path)).toString("utf-8")) as T;
 }
+
+export function writeUtf8(path: string, contents: string): void {
+  return fs.writeFileSync(path, contents, {encoding: "utf-8"});
+}

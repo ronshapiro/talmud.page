@@ -25,6 +25,7 @@ export class PromiseChain {
 export class PromiseQueue {
   private queue: (() => Promise<unknown>)[] = [];
   private nextThreads: Promise<unknown>[] = [];
+  private allPromises: Promise<unknown>[] = [];
 
   constructor(size: number) {
     for (let i = 0; i < size; i++) {
@@ -33,20 +34,35 @@ export class PromiseQueue {
   }
 
   add(fn: () => Promise<unknown>): void {
+    const [promise, markFinished] = promiseParts();
+    this.addWrapped(() => fn().then(() => markFinished(undefined)));
+    this.allPromises.push(promise);
+  }
+
+  private addWrapped(fn: () => Promise<unknown>): void {
     const nextThread = this.nextThreads.shift();
     if (nextThread) {
       nextThread
         .then(() => fn())
-        .catch(() => {})
+        .catch((e) => {
+          console.error(e); // eslint-disable-line no-console
+        })
         .then(() => {
-          this.nextThreads.push(nextThread);
           const nextFn = this.queue.shift();
-          if (nextFn) this.add(nextFn);
+          if (nextFn) {
+            this.nextThreads.push(nextThread);
+            this.addWrapped(nextFn);
+          }
         });
       return;
     }
 
     this.queue.push(fn);
+  }
+
+  asPromise(): Promise<unknown> {
+    console.log(this.allPromises.length);
+    return Promise.allSettled(this.allPromises);
   }
 }
 

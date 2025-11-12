@@ -33,6 +33,7 @@ import {
   shulchanArukhChapterTitle,
   segmentCount,
 } from "./precomputed";
+import {aiEditsForPage} from "./precomputed/ai_edits";
 import {dedupeEnglishRabbiNames, dedupeHebrewRabbiNames, topicJson} from "./precomputed/topics";
 import {llmGeneratedTopic, LlmGeneratedTopic} from "./precomputed/tanakh_context_cache";
 import {getTanakhPassage} from "./precomputed/tanakh_passages";
@@ -565,7 +566,7 @@ export class ApiException extends Error {
   }
 }
 
-type Alternate = "" | "Koren Tanakh" | "Vilna Shas";
+type Alternate = "" | "Koren Tanakh" | "Vilna Shas" | "AI Edit";
 const ALTERNATE_DEFAULT: Alternate = "";
 interface AlternateMetadata {
   hebrewName: string;
@@ -583,6 +584,9 @@ const ALTERNATES: Record<Alternate, AlternateMetadata> = {
   "Vilna Shas": {
     hebrewName: 'ש"ס וילנא',
     commonLanguage: "hebrew",
+  },
+  "AI Edit": {
+    hebrewName: "AI",
   },
   /* eslint-enable quote-props */
 };
@@ -694,6 +698,40 @@ export abstract class AbstractApiRequestHandler {
     }
   }
 
+  private addAiAdditions(segments: InternalSegment[]) {
+    const additions = aiEditsForPage(this.pageRef());
+    if (!additions) return;
+
+    const newComment = (
+      ref: string,
+      maybeOriginalHebrew: sefaria.TextType | undefined,
+      maybeOriginalEnglish: sefaria.TextType | undefined,
+    ) => {
+      return new Comment(
+        "Versions",
+        additions[ref].hebrew ?? maybeOriginalHebrew ?? "",
+        additions[ref].english ?? maybeOriginalEnglish ?? "",
+        ref,
+        "AI Edit",
+        "AI",
+      );
+    };
+
+    for (const segment of segments) {
+      if (additions[segment.ref]) {
+        segment.commentary.addComment(newComment(segment.ref, segment.hebrew, segment.english));
+      }
+
+      // TODO: go to nested comments
+      for (const comment of segment.commentary.comments) {
+        if (additions[comment.ref]) {
+          segment.commentary.nestedCommentary(comment.ref)
+            .addComment(newComment(comment.ref, comment.hebrew, comment.english));
+        }
+      }
+    }
+  }
+
   /** Called before postProcessAllSegments(). */
   protected postProcessSegment(segment: InternalSegment): InternalSegment {
     return segment;
@@ -727,9 +765,13 @@ export abstract class AbstractApiRequestHandler {
     return 2;
   }
 
-  handleRequest(): Promise<ApiResponse> {
+  protected pageRef(): string {
     const book = this.book();
-    const ref = `${book.bookNameForRef()} ${book.rewriteSectionRef(this.page)}`;
+    return `${book.bookNameForRef()} ${book.rewriteSectionRef(this.page)}`;
+  }
+
+  handleRequest(): Promise<ApiResponse> {
+    const ref = this.pageRef();
     const underlyingRefs = this.expandRef(ref);
 
     const textRequest = this.makeTextRequest(ref, underlyingRefs);
@@ -1261,6 +1303,7 @@ export abstract class AbstractApiRequestHandler {
     segments = this.injectSegmentSeperators(segments);
     this.dedupeTopicComments(segments);
     this.detectDupes(segments);
+    this.addAiAdditions(segments);
     segments = segments.map(x => this.postProcessSegment(x));
     segments = this.postProcessAllSegments(segments, ...extraValues);
 

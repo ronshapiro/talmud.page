@@ -9,7 +9,7 @@ jest.mock("../source_formatting/html_sanitization_node.ts", () => {
 });
 
 import * as fs from "fs";
-import {jsonStringify} from "../util/json_stringify";
+import {jsonStringifyOld} from "../util/json_stringify";
 import {ApiRequestHandler} from "../api_request_handler";
 import {testPages} from "./api_request_handler_base";
 import {FakeRequestMaker, TEST_DATA_ROOT} from "../request_makers";
@@ -22,7 +22,7 @@ export function testTitle(title: string): void {
     return handler.handleRequest(testPage.title, testPage.page)
       .then(results => {
         const expected = fs.readFileSync(testPage.outputFilePath(), {encoding: "utf-8"});
-        expect(jsonStringify(results)).toBe(expected);
+        expect(jsonStringifyOld(results)).toBe(expected);
       });
   });
 }

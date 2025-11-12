@@ -3,7 +3,7 @@ import {Amud, Section as Segment} from "../apiTypes";
 import {Book} from "../books";
 import {cachedOutputFilePath} from "../cached_outputs";
 
-type Sugya = Segment[];
+export type Sugya = Segment[];
 type Chapter = Sugya[];
 
 export function indexSugyotByStartRef(book: Book): Record<string, Sugya> {
@@ -73,19 +73,20 @@ interface SugyotVisitOptions {
 }
 type Visitor =
   ((sugya: Sugya) => void) |
-  ((sugya: Sugya, sugyaSpan: Sugya[]) => void);
+  ((sugya: Sugya, before: Sugya[], after: Sugya[]) => void);
 
 export function visitSugyot(book: Book, options: SugyotVisitOptions, visitor: Visitor): void {
   for (const chapter of chapterSugyot(book)) {
     for (let i = 0; i < chapter.length; i++) {
-      const sugyaSpan: Chapter = [];
-      for (
-        let diff = -1 * (options?.diff?.sugyotBefore ?? 0);
-        diff <= (options?.diff?.sugyotAfter ?? 0);
-        diff++) {
-        sugyaSpan.push(chapter[i + diff]);
+      const before: Sugya[] = [];
+      for (let diff = 0; diff < (options?.diff?.sugyotBefore ?? 0); diff++) {
+        before.push(chapter[i - diff]);
       }
-      visitor(chapter[i], sugyaSpan.filter(x => x !== undefined));
+      const after: Sugya[] = [];
+      for (let diff = 0; diff < (options?.diff?.sugyotAfter ?? 0); diff++) {
+        before.push(chapter[i + diff]);
+      }
+      visitor(chapter[i], before.filter(x => x), after.filter(x => x));
     }
   }
 }

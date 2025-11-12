@@ -4,7 +4,7 @@ import {numericLiteralAsInt} from "./hebrew";
 import {SIDDUR_REFS_ASHKENAZ, SIDDUR_REFS_SEFARD, BIRKAT_HAMAZON_REFS, RefPiece} from "./siddur";
 import {readUtf8} from "./files";
 import {splitOnBookName} from "./refs";
-import {jsonStringify} from "./util/json_stringify";
+import {jsonStringifyOld as jsonStringify} from "./util/json_stringify";
 import {ListMultimap} from "./multimap";
 import {formatListEnglish, formatListHebrew} from "./util/formatting";
 
