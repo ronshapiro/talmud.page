@@ -125,7 +125,7 @@ const promiseQueue = new PromiseQueue(1);
 visitSugyot(
   books.byCanonicalName["Avodah Zarah"], {diff: {sugyotBefore: 3, sugyotAfter: 2}},
   (sugya, before, after) => {
-    if (!/.*65.*/.test(sugya[0].ref)) {
+    if (!/.*66.*/.test(sugya[0].ref)) {
       return;
     }
     const prompt = `You are an editor of an interactive Talmud translation.
@@ -133,7 +133,7 @@ visitSugyot(
 # Input Structure
 Talmud text is by-definition unstructured, but your input is an attempt at breaking apart logical segments. Segments are always at least a single sentence, but can be multiple sentences if they are meant to be read as one unit.
 
-The segments are in order of the their appearance. The source text is the value at the \`hebrew\` key of each JSON object. The \`english\` key specifies the translation to English by the default translators. It may be unclear or may have editing issues that you will be asked to fix. The \`ref\` key indicates a unique identifier to the segment. It is constructed with the name of the masechet, a space, then the amud, then a colon and then the 1-indexed per-amud segment number.
+The segments are in order of the their appearance. The source text is the value at the \`hebrew\` key of each JSON object. The \`english\` key specifies the translation to English by the default translators. It may be unclear or may have editing issues that you will be asked to fix. The \`ref\` key indicates the unique identifier to the segment. It is constructed with the name of the masechet, a space, then the amud, then a colon and then the 1-indexed per-amud segment number.
 
 ## Commentatry
 
@@ -152,11 +152,11 @@ Your goal is to be the editor of the input and address the following tasks.
 2. The English translation should be a direct translation of the Steinsaltz modern Hebrew translation, but sometimes one misses details of the other. Make both in line with each other as much as possible.
 3. Expand ambiguous pronouns. Use names it's not a detriment to readability or when it is easy to get lost understanding which pronoun refers to whom.
 4. Fix the start and end of bordering segments: sometimes a segment begins with a period or the end of a previously quoted verse, and these should be moved to the previous segment.
-5. Add an English translation to Rashi's comments and add punctuation to the Hebrew.
+5. Add an English translation to Rashi's comments and add punctuation to the Hebrew. Remember that Rashi style has statements ending with colons, not periods. Expand abbreviations if you know what they stand for, but otherwise do not change the source text beyond adding puncutation. Omit the Hebrew output if it would be identical to the source.
 6. If a comment has a translation in a language that is in French, German, or Spanish, translate the text into English.
 
 # Output Format
-The output should be a JSON object that specifies an \`edits\` key that maps to an array of edit objects, where each edit object has a \`ref\` to the segment or comment that should be edited. Only include the \`hebrew\` or \`english\` keys if they are edited for the particular segment or comment. For example, if you are only editing the english translation of a comment that has a hebrew text as well, omit the hebrew key/value pair. A single shared edit object should be used for all of the edits for the same ref. Edit all the refs that apply to the objectives.
+The output should be a JSON object that specifies an \`edits\` key that maps to an array of edit objects, where each edit object has a \`ref\` that is the same as the \`ref\` key of the segment or comment that should be edited. Only include the \`hebrew\` or \`english\` keys if they are edited for the particular segment or comment. For example, if you are only editing the english translation of a comment that has a hebrew text as well, omit the hebrew key/value pair. A single shared edit object should be used for all of the edits for the same ref. Edit all the refs that apply to the objectives.
 
 Maintain the HTML formatting of the source text when possible. For example, if you are adding punctuation to Rashi's comments that have \`<b>\` tags, the output should also have \`<b>\` tags surrounding the same words.
 
