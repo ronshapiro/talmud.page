@@ -125,7 +125,8 @@ const promiseQueue = new PromiseQueue(1);
 visitSugyot(
   books.byCanonicalName["Avodah Zarah"], {diff: {sugyotBefore: 3, sugyotAfter: 2}},
   (sugya, before, after) => {
-    if (!/.*66.*/.test(sugya[0].ref)) {
+    const firstRef = sugya[0].ref;
+    if (!firstRef.includes(" 69")) {
       return;
     }
     const prompt = `You are an editor of an interactive Talmud translation.
@@ -150,10 +151,11 @@ Your goal is to be the editor of the input and address the following tasks.
 
 1. Sometimes the English translation uses terms that are technical and not part of commonly spoken English, for example "roe" instead of "fish eggs". Instances of this should be rewritten so that the translation is easier to understand. Do this only for words that are outside of common knowledge. Also do this for words that are better understood in their transliterated Hebrew, e.g. <i>menora</i> instead of candelabrum.
 2. The English translation should be a direct translation of the Steinsaltz modern Hebrew translation, but sometimes one misses details of the other. Make both in line with each other as much as possible.
-3. Expand ambiguous pronouns. Use names it's not a detriment to readability or when it is easy to get lost understanding which pronoun refers to whom.
+3. Expand ambiguous pronouns. Use the names the pronouns are referring to if it's not a detriment to readability or when it is easy to get lost understanding which pronoun refers to whom.
 4. Fix the start and end of bordering segments: sometimes a segment begins with a period or the end of a previously quoted verse, and these should be moved to the previous segment.
-5. Add an English translation to Rashi's comments and add punctuation to the Hebrew. Remember that Rashi style has statements ending with colons, not periods. Expand abbreviations if you know what they stand for, but otherwise do not change the source text beyond adding puncutation. Omit the Hebrew output if it would be identical to the source.
-6. If a comment has a translation in a language that is in French, German, or Spanish, translate the text into English.
+5. Add punctuation to Rashi's Hebrew comments if the comments are not simple statements. Remember that Rashi style uses hyphens to separate the dibbur hamatchil and each comment ends with a colon, not periods. Expand abbreviations if you know what they stand for, but otherwise do not change the source text beyond adding punctuation. Omit the Hebrew output if it would be identical to the source.
+6. Add an English translation to all of Rashi's comments.
+7. If a comment has a translation in a language that is in French, German, or Spanish, translate the text into English.
 
 # Output Format
 The output should be a JSON object that specifies an \`edits\` key that maps to an array of edit objects, where each edit object has a \`ref\` that is the same as the \`ref\` key of the segment or comment that should be edited. Only include the \`hebrew\` or \`english\` keys if they are edited for the particular segment or comment. For example, if you are only editing the english translation of a comment that has a hebrew text as well, omit the hebrew key/value pair. A single shared edit object should be used for all of the edits for the same ref. Edit all the refs that apply to the objectives.
@@ -173,16 +175,17 @@ ${jsonStringify(rewriteApiObjects(before.flat()))}
 # Succeeding Segments
 ${jsonStringify(rewriteApiObjects(after.flat()))}
 `;
-    const fileName = `precomputed/sugya_rewriting_temp/v1-flash/${sugya[0].ref}.json`;
+    const fileName = `precomputed/sugya_rewriting_temp/v1-flash/${firstRef}.json`;
     if (fs.existsSync(fileName)) {
-      promiseQueue.add(() => Promise.resolve([sugya[0].ref, JSON.parse(readUtf8(fileName))]));
+      promiseQueue.add(() => Promise.resolve([firstRef, JSON.parse(readUtf8(fileName))]));
     } else {
       promiseQueue.add(() => {
         return executePrompt(prompt)
           .then(response => {
+            console.log("Finished", firstRef);
             response.amudim = extractAmudim(sugya);
             writeJson(fileName, response);
-            return [sugya[0].ref, response];
+            return [firstRef, response];
           });
       });
     }
