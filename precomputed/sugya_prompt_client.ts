@@ -126,7 +126,7 @@ visitSugyot(
   books.byCanonicalName["Avodah Zarah"], {diff: {sugyotBefore: 3, sugyotAfter: 2}},
   (sugya, before, after) => {
     const firstRef = sugya[0].ref;
-    if (!firstRef.includes(" 69")) {
+    if (!firstRef.includes(" 71")) {
       return;
     }
     const prompt = `You are an editor of an interactive Talmud translation.
@@ -141,6 +141,7 @@ The segments are in order of the their appearance. The source text is the value 
 Each segment has a \`commentary\` sub object with comments related to that segment. Most common are:
 - \`Steinsaltz\`: A modern Hebrew translation of the \`hebrew\` key of the segment dict. The Talmud is written in a mix of Babylonian Aramaic and Mishnaic Hebrew which are both different from modern Hebrew. In addition to being a translation, it expands unclear context, e.g. ambiguous pronoun use. The Talmud also often writes in a curt style, omits critical details.
 - \`Rashi\`: the "default" commentator on traditional Jewish texts, Rashi does a combination of translating opaque terms, adds some missing or amibiguous context, rewrites the text for clarity, disambiguates between multiple manuscript versions of the Talmud to declare what is the authoritative version in his view, and more. He also commonly interprets the Talmud. While his view is often critical to understanding the Talmud, it is not always widely accepted.
+- \`Tosafot\`: a common commentator that typically addresses cross-cutting and challenging questions.
 - \`Verses\`: Any Biblical verses and their expanded context that are explicitly or implicitly referenced in the source segment, or are necessary to understand the text.
 
 Comments in the Commentary can themselves havee their own nested comments.
@@ -153,8 +154,8 @@ Your goal is to be the editor of the input and address the following tasks.
 2. The English translation should be a direct translation of the Steinsaltz modern Hebrew translation, but sometimes one misses details of the other. Make both in line with each other as much as possible.
 3. Expand ambiguous pronouns. Use the names the pronouns are referring to if it's not a detriment to readability or when it is easy to get lost understanding which pronoun refers to whom.
 4. Fix the start and end of bordering segments: sometimes a segment begins with a period or the end of a previously quoted verse, and these should be moved to the previous segment.
-5. Add punctuation to Rashi's Hebrew comments if the comments are not simple statements. Remember that Rashi style uses hyphens to separate the dibbur hamatchil and each comment ends with a colon, not periods. Expand abbreviations if you know what they stand for, but otherwise do not change the source text beyond adding punctuation. Omit the Hebrew output if it would be identical to the source.
-6. Add an English translation to all of Rashi's comments.
+5. Add punctuation to Rashi's and Tosafot's Hebrew comments if the comments are not simple statements. Remember that their style uses hyphens to separate the dibbur hamatchil and each comment ends with a colon, not periods. Expand abbreviations if you know what they stand for, but otherwise do not change the source text beyond adding punctuation. Omit the Hebrew output if it would be identical to the source.
+6. Add an English translation to all of Rashi's and Tosafot's comments.
 7. If a comment has a translation in a language that is in French, German, or Spanish, translate the text into English.
 
 # Output Format
