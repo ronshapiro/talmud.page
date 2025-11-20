@@ -346,10 +346,17 @@ class Buttons {
   }
 }
 
+const DEBUG_ERRORS: string[] = [];
+if (DO_DEBUG) {
+  window.addEventListener("error", event => {
+    DEBUG_ERRORS.push(`${event.message}: ${event.error}`);
+  });
+}
+
 const onSelectionChange = () => {
   debugCounter++;
   if (DO_DEBUG) {
-    document.getElementById("debug_header")!.textContent = debugCounter.toString();
+    document.getElementById("debug_header")!.textContent = debugCounter.toString() + "<br>" + DEBUG_ERRORS.join("<br>");
   }
 
   const sefariaRef = findSefariaRefOrHideSnackbar();
