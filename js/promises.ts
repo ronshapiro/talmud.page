@@ -48,9 +48,9 @@ export class PromiseQueue {
           console.error(e); // eslint-disable-line no-console
         })
         .then(() => {
+          this.nextThreads.push(nextThread);
           const nextFn = this.queue.shift();
           if (nextFn) {
-            this.nextThreads.push(nextThread);
             this.addWrapped(nextFn);
           }
         });
