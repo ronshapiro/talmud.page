@@ -90,8 +90,10 @@ const findSefariaRef = (node: Node | null): FindSefariaRefReturnType => {
 const findSefariaRefOrHideSnackbar = (): FindSefariaRefReturnType => {
   const selection = document.getSelection() as Selection;
   const $anchorNode = $(selection.anchorNode as any) as JQuery;
-  if ($anchorNode.closest("#snackbar").length > 0) {
-    return undefined;
+  for (const id of ["#snackbar", "#debug_header"]) {
+    if ($anchorNode.closest(id).length > 0) {
+      return undefined;
+    }
   }
 
   if (selection.type !== "Range") {
@@ -349,19 +351,20 @@ class Buttons {
 const DEBUG_ERRORS: string[] = [];
 if (DO_DEBUG) {
   window.addEventListener("error", event => {
-    DEBUG_ERRORS.push(`${event.message}: ${event.error}`);
+    DEBUG_ERRORS.push(event.message);
+    if (DEBUG_ERRORS.length > 10) DEBUG_ERRORS.shift();
   });
 }
 
 const onSelectionChange = () => {
-  debugCounter++;
-  if (DO_DEBUG) {
-    document.getElementById("debug_header")!.textContent = debugCounter.toString() + "<br>" + DEBUG_ERRORS.join("<br>");
-  }
-
   const sefariaRef = findSefariaRefOrHideSnackbar();
   if (!sefariaRef) {
     return;
+  }
+
+  debugCounter++;
+  if (DO_DEBUG) {
+    document.getElementById("debug_header")!.textContent = debugCounter.toString() + "\n" + DEBUG_ERRORS.join("\n");
   }
 
   const {ref} = sefariaRef;
