@@ -585,6 +585,7 @@ const ALTERNATES: Record<Alternate, AlternateMetadata> = {
     hebrewName: 'ש"ס וילנא',
     commonLanguage: "hebrew",
   },
+  // CAREFUL: This name matches AI_Edit in js/ref_selection_snackbar.js
   "AI Edit": {
     hebrewName: "AI",
   },

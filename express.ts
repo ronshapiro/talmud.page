@@ -523,6 +523,7 @@ if (fs.existsSync("mailjet_api_key")) {
       userText,
       user,
       pathname,
+      isAiEdit,
     } = params;
     const {EscapeHtmlHighlightCorrections} = await import(
       "./source_formatting/escape_html_corrections");
@@ -531,13 +532,16 @@ if (fs.existsSync("mailjet_api_key")) {
     };
     const url = `https://www.sefaria.org/${ref.replace(/ /g, "_")}`;
     const isSiddur = pathname.startsWith("/Siddur") || pathname.startsWith("/BirkatHamazon");
-    const to = isSiddur ? "siddur@talmud.page" : "corrections@sefaria.org";
-    const subject = (
-      isSiddur ? "Siddur Feedback - talmud.page" : "Sefaria Text Correction from talmud.page");
-    const cc = [user];
-    if (!isSiddur) {
-      cc.push("corrections@talmud.page");
-    }
+    const {to, subject, cc} = (() => {
+      if (isAiEdit) return {to: "edits@talmud.page", subject: "AI Text Correction", cc: []};
+      if (isSiddur) return {to: "siddur@talmud.page", subject: "Siddur Feedback", cc: []};
+      return {
+        to: "corrections@sefaria.org",
+        subject: "Sefaria Text Correction from talmud.page",
+        cc: ["corrections@talmud.page"],
+      };
+    })();
+    cc.push(user);
     const rtl = (text: string | undefined) => text && `<div dir="rtl">${text}</div>`;
     sendEmail({
       to,

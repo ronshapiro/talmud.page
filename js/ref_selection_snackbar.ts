@@ -39,6 +39,7 @@ interface Metadata {
   amud: string,
   isEnglish: boolean;
   isPersonalNote: boolean;
+  isAiEdit: boolean;
   highlightId: string | undefined;
 }
 
@@ -76,6 +77,7 @@ const findSefariaRef = (node: Node | null): FindSefariaRefReturnType => {
           amud: $parentElement.closest(".amudContainer").attr("data-amud"),
           isEnglish,
           isPersonalNote: $parentElement.hasClass('personal-notes'),
+          isAiEdit: $parentElement.hasClass('AI_Edit'),
           highlightId,
         };
       }
@@ -239,6 +241,7 @@ class Buttons {
           translation,
           translationHighlighted: maybeHighlight(translation, true),
           pathname: window.location.pathname,
+          isAiEdit: this.sefariaRef.isAiEdit,
         });
       },
     };

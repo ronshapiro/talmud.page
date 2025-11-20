@@ -52,7 +52,10 @@ function InternalTableRow({
       && commentaryKind.englishName === "Translation");
 
   const classes = extraClasses || [];
-  classes.push("commentaryRow", "IndividualComment", /* used in CSS */ commentaryKind.className);
+  classes.push(
+    "commentaryRow", "IndividualComment",
+    // Used in CSS and ref_selection_snackbar.js
+    commentaryKind.className.replace(/ /g, "_"));
 
   const createRow = (key: string, _hebrew: string | undefined, _english: string | undefined) => (
     <TableRow
@@ -108,6 +111,7 @@ function ReportDuplicateButton({
     translationHighlighted: undefined,
     pathname: window.location.pathname,
     userText: `Duplicate of ${comment.duplicateRefs!.join(", ")}`,
+    isAiEdit: false,
   });
   const buttonText = `לדווח כפילויות: ${comment.duplicateRefs!.join(", ")}`;
   return (
