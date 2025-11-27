@@ -13,6 +13,7 @@ import {writeJson} from "../util/json_files";
 import {PromiseQueue} from "../js/promises";
 import {checkNotUndefined} from "../js/undefined";
 import {readUtf8} from "../files";
+import {stripHebrewNonlettersOrVowels} from "../hebrew";
 
 function parseLlmJsonResponse(response: string | undefined) {
   if (!response) return undefined;
@@ -117,16 +118,20 @@ function rewriteApiObjects(jsonObject: any, objectName?: string): any {
     }
     return newDict;
   }
+  if (typeof jsonObject === "string") {
+    return stripHebrewNonlettersOrVowels(jsonObject);
+  }
   return jsonObject;
 }
 
 const promiseQueue = new PromiseQueue(1);
 
+const BOOK_NAME = "Horayot";
 visitSugyot(
-  books.byCanonicalName["Avodah Zarah"], {diff: {sugyotBefore: 3, sugyotAfter: 2}},
+  books.byCanonicalName[BOOK_NAME], {diff: {sugyotBefore: 3, sugyotAfter: 2}},
   (sugya, before, after) => {
     const firstRef = sugya[0].ref;
-    if (!firstRef.includes(" 71")) {
+    if (!firstRef.includes(" 5")) {
       return;
     }
     const prompt = `You are an editor of an interactive Talmud translation.
@@ -178,10 +183,15 @@ ${jsonStringify(rewriteApiObjects(after.flat()))}
 `;
     const fileName = `precomputed/sugya_rewriting_temp/v1-flash/${firstRef}.json`;
     if (fs.existsSync(fileName)) {
+      console.log("Skipping", firstRef);
       promiseQueue.add(() => Promise.resolve([firstRef, JSON.parse(readUtf8(fileName))]));
     } else {
       promiseQueue.add(() => {
         return executePrompt(prompt)
+          .catch(error => {
+            console.error("Error on", firstRef, error);
+            throw error;
+          })
           .then(response => {
             console.log("Finished", firstRef);
             response.amudim = extractAmudim(sugya);
