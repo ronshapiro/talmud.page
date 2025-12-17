@@ -1,4 +1,5 @@
 /* global gtag,  */
+import {debounce} from "underscore";
 import {amudMetadata} from "./amud";
 import {showCorrectionModal} from "./CorrectionModal";
 import {showCommentEditorModal} from "./CommentEditorModal";
@@ -12,6 +13,20 @@ import {checkNotUndefined} from "./undefined";
 
 let debugCounter = 0;
 const DO_DEBUG = localStorage.debugSelection === "true";
+const DEBUG_ERRORS: string[] = [];
+if (DO_DEBUG) {
+  window.addEventListener("error", event => {
+    DEBUG_ERRORS.push(event.message);
+  });
+}
+let lastSelection: Selection;
+
+function renderDebug() {
+  while (DEBUG_ERRORS.length > 10) DEBUG_ERRORS.shift();
+  if (DO_DEBUG) {
+    document.getElementById("debug_header")!.textContent = debugCounter.toString() + "\n" + DEBUG_ERRORS.join("\n");
+  }
+}
 
 let selectionSnackbarRef: string | undefined;
 const hideSelectionChangeSnackbar = () => {
@@ -152,8 +167,14 @@ class SelectionState {
   }
 
   capture() {
+    renderDebug();
     const selection = document.getSelection()!;
-    this.selectedText = selection.toString().trim() ?? "";
+    this.selectedText = selection.toString().trim();
+    if (this.selectedText === "") {
+      this.selectedText = lastSelection?.toString()?.trim() ?? "";
+      DEBUG_ERRORS.push(`Upgraded to:${this.selectedText}`);
+      renderDebug();
+    }
     const {isEnglish, hebrew, translation} = this.sefariaRef;
     const entireNodeAndText = isEnglish ? translation : hebrew;
     if (entireNodeAndText === undefined) {
@@ -348,24 +369,21 @@ class Buttons {
   }
 }
 
-const DEBUG_ERRORS: string[] = [];
-if (DO_DEBUG) {
-  window.addEventListener("error", event => {
-    DEBUG_ERRORS.push(event.message);
-    if (DEBUG_ERRORS.length > 10) DEBUG_ERRORS.shift();
-  });
-}
-
 const onSelectionChange = () => {
+  if (DO_DEBUG) {
+    const selection = document.getSelection()!;
+    DEBUG_ERRORS.push(selection.type + ":" + selection.toString() + ":end");
+    if (selection.type === "Range") lastSelection = selection;
+  }
+  renderDebug();
+
   const sefariaRef = findSefariaRefOrHideSnackbar();
   if (!sefariaRef) {
     return;
   }
 
   debugCounter++;
-  if (DO_DEBUG) {
-    document.getElementById("debug_header")!.textContent = debugCounter.toString() + "\n" + DEBUG_ERRORS.join("\n");
-  }
+  renderDebug();
 
   const {ref} = sefariaRef;
   const sefariaUrl = `https://www.sefaria.org/${ref.replace(/ /g, "_")}`;
@@ -412,6 +430,6 @@ const onSelectionChange = () => {
 
 module.exports = {
   registerRefSelectionSnackbarListener: () => {
-    document.addEventListener("selectionchange", onSelectionChange);
+    document.addEventListener("selectionchange", debounce(onSelectionChange, 30));
   },
 };
