@@ -101,6 +101,7 @@ import {hasMatchingProperty} from "./util/objects";
 import {checkNotUndefined} from "./js/undefined";
 import {getWeekdayReading} from "./weekday_parshiot";
 import {ASERET_YIMEI_TESHUVA_REFS} from "./js/aseret_yimei_teshuva";
+import {AI_EDIT_COMMENT_NAME} from "./js/commentary_constants";
 
 const markdown = new MarkdownConverter();
 
@@ -150,10 +151,26 @@ function normalizeHebrewForVersionUniqueness(text: string): string {
     .replace(/\s\s+/g, " ");
 }
 
+function isUniqueHebrew(source: sefaria.TextType, derived: sefaria.TextType): boolean {
+  return toFlatArray(derived).length > 0
+    && !equalJaggedArrays(
+      derived,
+      source,
+      (a, b) => {
+        return (normalizeHebrewForVersionUniqueness(a)
+          === normalizeHebrewForVersionUniqueness(b));
+      });
+}
+
+function isUniqueEnglish(source: sefaria.TextType, derived: sefaria.TextType): boolean {
+  return toFlatArray(derived).length > 0 && !equalJaggedArrays(derived, source);
+}
+
 /** A single comment on a text. */
 class Comment {
   duplicateRefs: string[] = [];
   isUnique: boolean | undefined;
+  canReplaceParent: boolean | undefined;
   rows: Row[] = [];
 
   constructor(
@@ -282,6 +299,7 @@ class Comment {
       sourceRef: this.sourceRef,
       sourceHeRef: this.sourceHeRef,
       isUnique: this.isUnique,
+      canReplaceParent: this.canReplaceParent,
     };
     if (this.talmudPageLink) {
       result.link = this.talmudPageLink;
@@ -566,7 +584,7 @@ export class ApiException extends Error {
   }
 }
 
-type Alternate = "" | "Koren Tanakh" | "Vilna Shas" | "AI Edit";
+type Alternate = "" | "Koren Tanakh" | "Vilna Shas" | typeof AI_EDIT_COMMENT_NAME;
 const ALTERNATE_DEFAULT: Alternate = "";
 interface AlternateMetadata {
   hebrewName: string;
@@ -585,13 +603,11 @@ const ALTERNATES: Record<Alternate, AlternateMetadata> = {
     hebrewName: 'ש"ס וילנא',
     commonLanguage: "hebrew",
   },
-  // CAREFUL: This name matches AI_Edit in js/ref_selection_snackbar.js
   "AI Edit": {
     hebrewName: "AI",
   },
   /* eslint-enable quote-props */
 };
-
 
 class BulkTextGroup {
   constructor(
@@ -703,31 +719,54 @@ export abstract class AbstractApiRequestHandler {
     const additions = aiEditsForPage(this.pageRef());
     if (!additions) return;
 
-    const newComment = (
+    const maybeNewComment = (
       ref: string,
       maybeOriginalHebrew: sefaria.TextType | undefined,
-      maybeOriginalEnglish: sefaria.TextType | undefined,
     ) => {
-      return new Comment(
+      let hebrewAddition = additions[ref].hebrew;
+      let canReplaceParent = false;
+      if (maybeOriginalHebrew && hebrewAddition) {
+        if (equalJaggedArrays(maybeOriginalHebrew, hebrewAddition)) {
+          hebrewAddition = undefined;
+          if (!additions[ref].english) {
+            return undefined;
+          }
+        } else {
+          // If the text is the same modulo punctuation, prefer the AI
+          canReplaceParent = !isUniqueHebrew(maybeOriginalHebrew, hebrewAddition);
+        }
+      }
+      const comment = new Comment(
         "Versions",
-        additions[ref].hebrew ?? maybeOriginalHebrew ?? "",
-        additions[ref].english ?? maybeOriginalEnglish ?? "",
+        hebrewAddition ?? "",
+        additions[ref].english ?? "",
         ref,
-        "AI Edit",
+        AI_EDIT_COMMENT_NAME,
         "AI",
       );
+      if (canReplaceParent) {
+        comment.canReplaceParent = canReplaceParent;
+      }
+
+      return comment;
     };
 
     for (const segment of segments) {
       if (additions[segment.ref]) {
-        segment.commentary.addComment(newComment(segment.ref, segment.hebrew, segment.english));
+        const newComment = maybeNewComment(segment.ref, segment.hebrew);
+        if (newComment) {
+          segment.commentary.addComment(newComment);
+        }
       }
 
       // TODO: go to nested comments
       for (const comment of segment.commentary.comments) {
         if (additions[comment.ref]) {
-          segment.commentary.nestedCommentary(comment.ref)
-            .addComment(newComment(comment.ref, comment.hebrew, comment.english));
+          const newComment = maybeNewComment(comment.ref, comment.hebrew);
+          if (newComment) {
+            segment.commentary.nestedCommentary(comment.ref)
+              .addComment(newComment);
+          }
         }
       }
     }
@@ -1280,19 +1319,9 @@ export abstract class AbstractApiRequestHandler {
             alternateMetadata?.hebrewName ?? alternateKind,
           );
           if (alternateMetadata?.commonLanguage === "hebrew") {
-            comment.isUnique = (
-              toFlatArray(comment.hebrew).length > 0
-                && !equalJaggedArrays(
-                  comment.hebrew,
-                  segment.hebrew,
-                  (a, b) => {
-                    return (normalizeHebrewForVersionUniqueness(a)
-                      === normalizeHebrewForVersionUniqueness(b));
-                  }));
+            comment.isUnique = isUniqueHebrew(segment.hebrew, comment.hebrew);
           } else if (alternateMetadata?.commonLanguage === "english") {
-            comment.isUnique = (
-              toFlatArray(comment.english).length > 0
-                && !equalJaggedArrays(comment.english, segment.english));
+            comment.isUnique = isUniqueEnglish(segment.english, comment.english);
           }
           segment.commentary.addComment(comment);
         }

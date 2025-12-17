@@ -77,7 +77,7 @@ const findSefariaRef = (node: Node | null): FindSefariaRefReturnType => {
           amud: $parentElement.closest(".amudContainer").attr("data-amud"),
           isEnglish,
           isPersonalNote: $parentElement.hasClass('personal-notes'),
-          isAiEdit: $parentElement.hasClass('AI_Edit'),
+          isAiEdit: $parentElement.hasClass('AI_Edit') || $parentElement.hasClass('ai-modified'),
           highlightId,
         };
       }

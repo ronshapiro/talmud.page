@@ -23,6 +23,7 @@ import {useHtmlRef} from "./hooks";
 import {intToHebrewNumeral} from "../hebrew";
 import isEmptyText from "./is_empty_text";
 import {Version} from "./Preferences";
+import {promoteReplaceableAiComments} from "./promote_replaceable_ai_comments";
 
 const {useEffect} = React;
 
@@ -148,6 +149,8 @@ export abstract class Renderer {
         section.sourceHeRef = "ברירת מחדל";
       }
     }
+
+    promoteReplaceableAiComments(amudData);
 
     const preferredVersion = localStorage[`preferredVersion_${this.rendererType()}`];
     if (amudData.sections.length > 0

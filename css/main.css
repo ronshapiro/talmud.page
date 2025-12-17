@@ -739,3 +739,17 @@ h2, .title, .titleHebrew {
     left: 0;
     white-space: pre;
 }
+
+.ai-modified .english::before , .ai-modified .hebrew::before {
+    content: "⦿ ";
+    background-image: linear-gradient(
+        0deg,
+        rgb(140, 219, 250) 0%,
+        rgb(213, 170, 255) 100%
+    );
+    position: relative;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}

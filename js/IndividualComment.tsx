@@ -152,6 +152,8 @@ export function IndividualComment({
     return "ignore-drive";
   };
 
+  const extraClasses = comment.didModifyUiWithAiVersion ? ["ai-modified"] : [];
+
   if (comment.rows) {
     let i = 0;
     for (const row of comment.rows) {
@@ -177,7 +179,9 @@ export function IndividualComment({
             hebrew={row.hebrew}
             english={row.english}
             overrideRef={lineRef}
-            extraClasses={isDirectlyReferenced ? ["directlyReferencedLine"] : []}
+            extraClasses={
+              extraClasses.concat(isDirectlyReferenced ? ["directlyReferencedLine"] : [])
+            }
             comment={comment}
             commentaryKind={commentaryKind}
             />);
@@ -202,7 +206,7 @@ export function IndividualComment({
           hebrew={hebrew[i]}
           english={english[i]}
           overrideRef={lineRef}
-          extraClasses={isDirectlyReferenced ? ["directlyReferencedLine"] : []}
+          extraClasses={extraClasses.concat(isDirectlyReferenced ? ["directlyReferencedLine"] : [])}
           comment={comment}
           commentaryKind={commentaryKind}
           />);
@@ -215,6 +219,7 @@ export function IndividualComment({
         english={stringOrListToString(comment.en)}
         comment={comment}
         commentaryKind={commentaryKind}
+        extraClasses={extraClasses}
         />);
   }
 

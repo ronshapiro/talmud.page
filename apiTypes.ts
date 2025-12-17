@@ -52,6 +52,8 @@ export interface ApiComment extends Highlightable {
   expandedRefsAfterRewriting?: string[];
   duplicateRefs?: string[];
   isUnique?: boolean;
+  canReplaceParent?: boolean;
+  didModifyUiWithAiVersion?: boolean;
 }
 
 export interface ApiResponse {
