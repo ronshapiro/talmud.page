@@ -22,7 +22,7 @@ if (DO_DEBUG) {
 let lastSelection: Selection;
 
 function renderDebug() {
-  while (DEBUG_ERRORS.length > 10) DEBUG_ERRORS.shift();
+  while (DEBUG_ERRORS.length > 4) DEBUG_ERRORS.shift();
   if (DO_DEBUG) {
     document.getElementById("debug_header")!.textContent = debugCounter.toString() + "\n" + DEBUG_ERRORS.join("\n");
   }
