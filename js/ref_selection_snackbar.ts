@@ -11,7 +11,6 @@ import {$} from "./jquery";
 import {Button, snackbars} from "./snackbar";
 import {checkNotUndefined} from "./undefined";
 
-let debugCounter = 0;
 const DO_DEBUG = localStorage.debugSelection === "true";
 const DEBUG_ERRORS: string[] = [];
 if (DO_DEBUG) {
@@ -24,7 +23,7 @@ let lastSelection: Selection;
 function renderDebug() {
   while (DEBUG_ERRORS.length > 4) DEBUG_ERRORS.shift();
   if (DO_DEBUG) {
-    document.getElementById("debug_header")!.textContent = debugCounter.toString() + "\n" + DEBUG_ERRORS.join("\n");
+    document.getElementById("debug_header")!.textContent = DEBUG_ERRORS.join("\n");
   }
 }
 
@@ -372,8 +371,8 @@ class Buttons {
 const onSelectionChange = () => {
   if (DO_DEBUG) {
     const selection = document.getSelection()!;
-    DEBUG_ERRORS.push(selection.type + ":" + selection.toString() + ":end");
-    if (selection.type === "Range") lastSelection = selection;
+    DEBUG_ERRORS.push(selection.type);
+    if (selection.type === "Range" && lastSelection.toString() !== "") lastSelection = selection;
   }
   renderDebug();
 
@@ -382,7 +381,6 @@ const onSelectionChange = () => {
     return;
   }
 
-  debugCounter++;
   renderDebug();
 
   const {ref} = sefariaRef;
