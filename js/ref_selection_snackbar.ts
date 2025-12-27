@@ -372,7 +372,7 @@ const onSelectionChange = () => {
   if (DO_DEBUG) {
     const selection = document.getSelection()!;
     DEBUG_ERRORS.push(selection.type);
-    if (selection.type === "Range" && lastSelection.toString() !== "") lastSelection = selection;
+    if (selection.type === "Range" && selection.toString() !== "") lastSelection = selection;
   }
   renderDebug();
 
