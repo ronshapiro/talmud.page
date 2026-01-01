@@ -61,7 +61,6 @@ export class PromiseQueue {
   }
 
   asPromise(): Promise<unknown> {
-    console.log(this.allPromises.length);
     return Promise.allSettled(this.allPromises);
   }
 }
