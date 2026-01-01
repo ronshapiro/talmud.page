@@ -11,6 +11,8 @@ import {
   SafetySetting,
 } from "@google/genai";
 import {SchemaType} from "@google/generative-ai";
+import * as yargs from 'yargs';
+import { hideBin } from 'yargs/helpers';
 import {books, Book} from "../books";
 import {chapterSugyot, Sugya} from "./sugya_visitor";
 import {writeJson} from "../util/json_files";
@@ -18,6 +20,12 @@ import {checkNotUndefined} from "../js/undefined";
 import {stripHebrewNonlettersOrVowels} from "../hebrew";
 import {ApiComment} from "../apiTypes";
 import {timeoutPromise} from "../js/promises";
+
+const FLAGS = yargs(hideBin(process.argv))
+  .options({
+    dry_run: { type: 'boolean', default: true},
+  })
+  .parseSync();
 
 const MAX_ADDITIONAL_SUGYOT = 3;
 const MODEL_TYPE = "gemini-2.5-flash";
@@ -314,6 +322,10 @@ async function cachingStrategyMain() {
   }
 
   const label = `${firstRefInPreamble} to ${lastRefInPreamble} [${MODEL_TYPE}]`;
+  if (FLAGS.dry_run) {
+    console.debug(`[[DRY RUN]]: Would cache context for ${label}`);
+    return;
+  }
   const cacheCallStart = Date.now();
   console.log("Starting cache call");
   const cacheResult = await client.caches.create({
