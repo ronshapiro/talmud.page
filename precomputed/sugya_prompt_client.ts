@@ -231,7 +231,7 @@ async function sugyotToPrompt(book: Book): Promise<SugyotToPrompt | undefined> {
         const sugyaBlock = {sugya: chapter[j], sugyaRef: chapter[j][0].ref};
         // eslint-disable-next-line no-await-in-loop
         const tokenLengthResponse = await client.models.countTokens({
-          model: 'gemini-3-flash-preview',
+          model: MODEL_TYPE,
           contents: cachedPrompt([...sugyotForContext, sugyaBlock]),
         });
 
@@ -356,6 +356,15 @@ Execute the objectives for RequestedSugyaRef=${firstRef}.
         responseMimeType: "application/json",
         responseSchema: editsSchema(),
         safetySettings: safetySettings(),
+        stopSequences: [
+          "\n\n\n\n",
+          "\\n\\n\\n\\n",
+          "\r",
+          "\\r",
+          "\t\t",
+          "\\t\\t",
+          ": : :",
+        ],
         // frequencyPenalty: 0.1,
         /*
         thinkingConfig: {
