@@ -30,9 +30,11 @@ jobs:
       env:
         MAILJET_API_KEY: ${{ secrets.MAILJET_API_KEY }}
         MAILJET_API_SECRET: ${{ secrets.MAILJET_API_SECRET }}
+        IGNORE_EMAIL_ADDRESSES: ${{ secrets.IGNORE_EMAIL_ADDRESSES }}
       run: |
         echo -n ${MAILJET_API_KEY} > mailjet_api_key
         echo -n ${MAILJET_API_SECRET} > mailjet_api_secret
+        echo -n ${IGNORE_EMAIL_ADDRESSES} > ignore_email_addresses
 
     - id: 'build'
       run: 'npm run parcel-prod'
