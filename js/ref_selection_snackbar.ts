@@ -18,7 +18,7 @@ if (DO_DEBUG) {
     DEBUG_ERRORS.push(event.message);
   });
 }
-let lastSelection: Selection;
+let lastSelection: string;
 
 function renderDebug() {
   while (DEBUG_ERRORS.length > 4) DEBUG_ERRORS.shift();
@@ -170,7 +170,7 @@ class SelectionState {
     const selection = document.getSelection()!;
     this.selectedText = selection.toString().trim();
     if (this.selectedText === "") {
-      this.selectedText = lastSelection?.toString()?.trim() ?? "";
+      this.selectedText = lastSelection ?? "";
       DEBUG_ERRORS.push(`Upgraded to:${this.selectedText}`);
       renderDebug();
     }
@@ -372,7 +372,10 @@ const onSelectionChange = () => {
   if (DO_DEBUG) {
     const selection = document.getSelection()!;
     DEBUG_ERRORS.push(selection.type);
-    if (selection.type === "Range" && selection.toString() !== "") lastSelection = selection;
+    const selectedText = selection.toString().trim();
+    if (selection.type === "Range" && selectedText !== "") {
+      lastSelection = selectedText;
+    }
   }
   renderDebug();
 
