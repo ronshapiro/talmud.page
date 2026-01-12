@@ -1,1 +1,20 @@
 runtime: nodejs20
+
+handlers:
+- url: /wp-.*
+  static_files: dist/error_page.html
+  upload: dist/error_page.html
+  expiration: "90d"
+
+- url: /.*/wp-.*
+  static_files: dist/error_page.html
+  upload: dist/error_page.html
+  expiration: "90d"
+
+- url: /.*\.php
+  static_files: dist/error_page.html
+  upload: dist/error_page.html
+  expiration: "90d"
+
+- url: /.*
+  script: auto
