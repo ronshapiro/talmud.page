@@ -2,8 +2,12 @@ import * as React from "react";
 import {render} from 'react-dom';
 import {zip} from "underscore";
 import {Book, Category, browseIndex} from "./BrowseIndex";
+import {FontCache} from "./FontCache";
 import {useIncrementer} from "./hooks";
 import {Preferences, LanguageChooser} from "./Preferences";
+
+new FontCache().loadAll();
+
 
 interface Color {
   r: number;

@@ -2,9 +2,11 @@ import * as React from "react";
 import {render} from "react-dom";
 import {SearchBar} from "./SearchBar";
 import {LanguageChooser, Preferences} from "./Preferences";
+import {FontCache} from "./FontCache";
 import {useIncrementer} from "./hooks";
 import {initializeLocalStorage} from "./initializeLocalStorage";
 
+new FontCache().loadAll();
 initializeLocalStorage();
 
 const quote = '"';

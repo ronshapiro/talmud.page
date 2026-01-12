@@ -45,6 +45,10 @@ const FONTS: Font[] = [
     family: 'Fira Light',
     url: "font/FiraGO-Light.ttf",
   },
+  {
+    family: "Material Icons",
+    url: "font/material-icons.woff2",
+  },
 ];
 
 function createAndLoadFont(data: ArrayBuffer, font: Font) {

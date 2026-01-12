@@ -153,6 +153,7 @@ app.get("/stimg/:id/:filename", async (req, res) => {
 
 app.get("/", (req, res) => res.render("homepage.html"));
 app.get("/css/:ignored/:path", (req, res) => sendLazyStaticFile(res, `css/${req.params.path}`));
+app.get("/mdl/material.min.js", (req, res) => sendLazyStaticFile(res, "mdl/material.min.js"));
 
 for (const file of fs.readdirSync("dist").filter(x => !x.endsWith(".html"))) {
   app.get(`/${file}`, (req, res) => res.sendFile(`dist/${file}`, {maxAge: 31536000}));
