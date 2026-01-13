@@ -357,11 +357,8 @@ Execute the objectives for RequestedSugyaRef=${firstRef}.
         responseSchema: editsSchema(),
         safetySettings: safetySettings(),
         stopSequences: [
-          "\n\n\n\n",
           "\\n\\n\\n\\n",
-          "\r",
           "\\r",
-          "\t\t",
           "\\t\\t",
           ": : :",
         ],
