@@ -36,6 +36,11 @@ const setWindowTop = (selector) => {
   }
 };
 
+function extractError(error) {
+  if (error.status === 404) return "Server Error";
+  return error.responseText || error.statusText;
+}
+
 const maybeSetInitialScrollPosition = () => {
   const urlParams = new URLSearchParams(window.location.search);
   const refLink = urlParams.get("ref_link");
@@ -112,21 +117,34 @@ export class Runner {
     timeoutPromise(5000).then(() => this.apiCache.purge());
   }
 
-  getAndCacheSection(section) {
-    return this.apiCache.getAndUpdate(`api/${amudMetadata().masechet}/${section}`);
+  getAndCacheSection(section, errorCallback) {
+    return this.apiCache.getAndUpdate(
+      `api/${amudMetadata().masechet}/${section}`, errorCallback);
   }
 
   requestSection(section, options) {
     options = options || {};
-    this.renderer.setAmud({
+    const pseudoLoadingAmud = {
       id: section,
       title: this.renderer.newPageTitle(section),
       titleHebrew: this.renderer.newPageTitleHebrew(section),
       loading: true,
       sections: [],
-    });
+    };
+    this.renderer.setAmud(pseudoLoadingAmud);
+    let showedError = false;
+    setTimeout(() => {
+      if (!options.finished && !showedError) {
+        this.renderer.setAmud({...pseudoLoadingAmud, errorEnglish: "Still going..."});
+      }
+    }, 10_000);
+    const wrappedErrorCallback = (error) => {
+      if (options.errorCallback) options.errorCallback(error);
+      showedError = true;
+      this.renderer.setAmud({...pseudoLoadingAmud, errorEnglish: extractError(error)});
+    };
     this.requestQueue.add(() => {
-      return this.getAndCacheSection(section).then((results) => {
+      return this.getAndCacheSection(section, wrappedErrorCallback).then((results) => {
         options.finished = true;
         this.renderer.setAmud(results);
         refreshPageState();
@@ -244,6 +262,7 @@ export class Runner {
           }
           this.renderer.declareReady();
           $("#initial-load-spinner").hide();
+          $("#initial-load-error").hide();
 
           maybeSetInitialScrollPosition();
 
@@ -263,6 +282,9 @@ export class Runner {
           }, 1000);
 
           onceDocumentReady.declareReady();
+        },
+        errorCallback: (error) => {
+          $("#initial-load-error").text(extractError(error));
         },
       };
       for (const amud of amudRange) {

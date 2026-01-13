@@ -14,6 +14,7 @@ const RETRY_OPTIONS = {
     retries: 4,
     minTimeout: 200,
   },
+  timeout: 60_000,
 };
 
 const STEINSALTZ_OPTIONS = {

@@ -5,9 +5,12 @@ import {promiseParts, timeoutPromise} from "./promises";
 
 const TTL = 14 * 24 * 60 * 60 * 1000;
 
+type ErrorCallback = (error: Error) => void;
+
 interface AjaxRetryState {
   backoff: number;
   finished: boolean;
+  errorCallback?: ErrorCallback;
 }
 
 export class ApiCache extends AbstractIndexedDb {
@@ -46,12 +49,14 @@ export class ApiCache extends AbstractIndexedDb {
     });
   }
 
-  private ajaxRequest(endpoint: string, maybeState?: AjaxRetryState): Promise<any> {
-    const state = maybeState || {backoff: 200, finished: false};
+  private ajaxRequest(endpoint: string, state: AjaxRetryState): Promise<any> {
     return $.ajax({
       url: `${window.location.origin}/${endpoint}`,
       type: "GET",
-    }).catch(() => {
+    }).catch((error: Error) => {
+      if (state.errorCallback) {
+        state.errorCallback(error);
+      }
       if (state.finished) {
         throw new Error("Finished!"); // Lazy cancellation
       }
@@ -63,8 +68,12 @@ export class ApiCache extends AbstractIndexedDb {
     });
   }
 
-  getAndUpdate(endpoint: string): Promise<any> {
-    return Promise.any([this.ajaxRequest(endpoint), this.get(endpoint)]);
+  getAndUpdate(endpoint: string, errorCallback: ErrorCallback): Promise<any> {
+    return Promise.any([this.ajaxRequest(endpoint, {
+      backoff: 200,
+      finished: false,
+      errorCallback,
+    }), this.get(endpoint)]);
   }
 
   private purge() {

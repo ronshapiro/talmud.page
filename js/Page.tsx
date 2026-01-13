@@ -16,6 +16,7 @@ const {
 export interface UiPage extends ApiResponse {
   sections: UiSegment[];
   loading?: boolean;
+  errorEnglish?: string;
 }
 
 interface Props {
@@ -80,6 +81,13 @@ export function Page({
   }
   if (amudData.loading) {
     output.push(<LoadingSpinner key="loading" />);
+    if (amudData.errorEnglish) {
+      output.push(
+        <div key="error" style={{textAlign: "center", margin: "20px"}}>
+          {amudData.errorEnglish}
+        </div>,
+      );
+    }
   }
 
   // TODO: if not showing, update the UI so it's clear that it's collapsed

@@ -103,6 +103,7 @@ import {getWeekdayReading} from "./weekday_parshiot";
 import {ASERET_YIMEI_TESHUVA_REFS} from "./js/aseret_yimei_teshuva";
 import {AI_EDIT_COMMENT_NAME} from "./js/commentary_constants";
 
+const LOG_TRAVERSAL = false;
 const markdown = new MarkdownConverter();
 
 const standardHebrewTransformations = sefariaTextTypeTransformation(
@@ -842,10 +843,15 @@ export abstract class AbstractApiRequestHandler {
             for (const [alternateKey, fetchedAlternates] of Object.entries(fetched)) {
               if (alternateKey !== ALTERNATE_DEFAULT) {
                 for (const [fetchedRef, textResponse] of Object.entries(fetchedAlternates)) {
-                  if (!linkGraph.textResponses[fetchedRef].alternates) {
-                    linkGraph.textResponses[fetchedRef].alternates = {};
+                  const originalTextResponse = linkGraph.textResponses[fetchedRef];
+                  if (!originalTextResponse) {
+                    if (!linkGraph.complete) this.logger.error(`No alternate for ${fetchedRef}`);
+                    continue;
                   }
-                  linkGraph.textResponses[fetchedRef].alternates![alternateKey] = textResponse;
+                  if (!originalTextResponse.alternates) {
+                    originalTextResponse.alternates = {};
+                  }
+                  originalTextResponse.alternates![alternateKey] = textResponse;
                 }
               }
             }
@@ -1000,8 +1006,15 @@ export abstract class AbstractApiRequestHandler {
         if (SYNTHETIC_REFS.has(ref)) {
           return Promise.resolve<sefaria.TextLink[]>([]);
         }
+        this.logger.debug(`Traversal: [${remainingDepth}]: ${ref}`);
         const url = this.linksRequestUrl(ref);
-        return this.requestMaker.makeRequest<sefaria.TextLink[] | sefaria.ErrorResponse>(url);
+        return this.requestMaker.makeRequest<sefaria.TextLink[] | sefaria.ErrorResponse>(url).then(
+          x => {
+            if (LOG_TRAVERSAL) {
+              this.logger.debug(`Traversal: [${remainingDepth}]: ${ref}: finished`);
+            }
+            return x;
+          });
       }));
 
     return allLinksRequests.then(allLinksResponses => {
