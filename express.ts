@@ -229,6 +229,10 @@ app.get(
   "/manifest.json",
   (req, res) => sendLazyStaticFile(res, "static/progressive_webapp_manifest.json"));
 
+app.get(
+  "/scary--editor--beware",
+  (req, res) => sendLazyStaticFile(res, "static/local_storage_editor.html"));
+
 for (const [endpoint, url] of [
   [
     "/caveats/google-docs",
