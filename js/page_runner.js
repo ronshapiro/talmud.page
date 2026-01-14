@@ -133,16 +133,17 @@ export class Runner {
     };
     this.renderer.setAmud(pseudoLoadingAmud);
     let showedError = false;
-    setTimeout(() => {
-      if (!options.finished && !showedError) {
-        this.renderer.setAmud({...pseudoLoadingAmud, errorEnglish: "Still going..."});
-      }
-    }, 10_000);
     const wrappedErrorCallback = (error) => {
+      if (options.finished) return; // A cached page has already been shown, so don't override that.
       if (options.errorCallback) options.errorCallback(error);
       showedError = true;
       this.renderer.setAmud({...pseudoLoadingAmud, errorEnglish: extractError(error)});
     };
+    setTimeout(() => {
+      if (!showedError) {
+        wrappedErrorCallback({responseText: "Still going..."});
+      }
+    }, 10_000);
     this.requestQueue.add(() => {
       return this.getAndCacheSection(section, wrappedErrorCallback).then((results) => {
         options.finished = true;
