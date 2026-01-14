@@ -1,4 +1,5 @@
 /* global gtag,  */
+import {once} from "underscore";
 import {ApiCache} from "./ApiCache.ts";
 import {FontCache} from "./FontCache.ts";
 import {mainCache} from "./caches.ts";
@@ -91,6 +92,23 @@ const firstFullyOnScreenSection = () => {
   }
   return undefined;
 };
+
+function periodicallySaveScrollPosition() {
+  setInterval(() => {
+    const section = firstFullyOnScreenSection();
+    if (section) {
+      localStorage.setItem("restoreSectionOnRefresh", section.id);
+    }
+    localStorage.lastUrl = window.location.href;
+    localStorage.platform = window.navigator.platform;
+    localStorage.navigatorVendor = window.navigator.vendor;
+    if (window.navigator.userAgentData) {
+      localStorage.userAgentPlatform = window.navigator.userAgentData.platform;
+      localStorage.userAgentBrands = JSON.stringify(window.navigator.userAgentData.brands);
+      localStorage.isMobile = window.navigator.userAgentData.mobile;
+    }
+  }, 1000);
+}
 
 export class Runner {
   constructor(renderer, driveClient) {
@@ -253,6 +271,13 @@ export class Runner {
 
       this.renderer.register("results");
 
+      const switchToPagesView = once(() => {
+        this.renderer.declareReady();
+        $("#initial-load-spinner").hide();
+        $("#initial-load-error").hide();
+        onceDocumentReady.declareReady();
+      });
+
       const requestOptions = {
         counter: 0,
         pageCount: amudRange.length,
@@ -261,28 +286,11 @@ export class Runner {
           if (requestOptions.counter !== requestOptions.pageCount) {
             return;
           }
-          this.renderer.declareReady();
-          $("#initial-load-spinner").hide();
-          $("#initial-load-error").hide();
+
+          switchToPagesView();
 
           maybeSetInitialScrollPosition();
-
-          setInterval(() => {
-            const section = firstFullyOnScreenSection();
-            if (section) {
-              localStorage.setItem("restoreSectionOnRefresh", section.id);
-            }
-            localStorage.lastUrl = window.location.href;
-            localStorage.platform = window.navigator.platform;
-            localStorage.navigatorVendor = window.navigator.vendor;
-            if (window.navigator.userAgentData) {
-              localStorage.userAgentPlatform = window.navigator.userAgentData.platform;
-              localStorage.userAgentBrands = JSON.stringify(window.navigator.userAgentData.brands);
-              localStorage.isMobile = window.navigator.userAgentData.mobile;
-            }
-          }, 1000);
-
-          onceDocumentReady.declareReady();
+          periodicallySaveScrollPosition();
         },
         errorCallback: (error) => {
           $("#initial-load-error").text(extractError(error));
@@ -290,6 +298,11 @@ export class Runner {
       };
       for (const amud of amudRange) {
         this.requestSection(amud, requestOptions);
+      }
+
+      if (localStorage.enablePagesRenderAfterSeconds) {
+        setTimeout(
+          switchToPagesView, parseFloat(localStorage.enablePagesRenderAfterSeconds) * 1000);
       }
     });
 
