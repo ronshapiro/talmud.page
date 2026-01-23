@@ -429,8 +429,6 @@ const onSelectionChange = () => {
   snackbars.textSelection.show(hideRef ? "" : ref, buttons);
 };
 
-module.exports = {
-  registerRefSelectionSnackbarListener: () => {
-    document.addEventListener("selectionchange", debounce(onSelectionChange, 30));
-  },
+export const registerRefSelectionSnackbarListener = () => {
+  document.addEventListener("selectionchange", debounce(onSelectionChange, 30));
 };
