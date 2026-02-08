@@ -7,7 +7,7 @@ export abstract class GoogleApiClient {
   abstract signIn(): void;
   abstract signOut(): void;
   abstract registerSignInListener(listener: (isSignedIn: boolean) => void): void;
-  abstract getSignedInUserEmail(): string;
+  abstract getSignedInUserEmail(): string | undefined;
   abstract searchFiles(databaseProperty: string): gapi.client.Request<gapi.client.drive.FileList>;
   abstract createDocument(title: string): gapi.client.Request<gapi.client.docs.Document>;
   abstract setDatabaseFileProperties(
@@ -76,8 +76,8 @@ export class RealGoogleApiClient extends GoogleApiClient {
     gapi.auth2.getAuthInstance().isSignedIn.listen(listener);
   }
 
-  getSignedInUserEmail(): string {
-    return gapi.auth2.getAuthInstance().currentUser.get().getBasicProfile().getEmail();
+  getSignedInUserEmail(): string | undefined {
+    return gapi.auth2.getAuthInstance().currentUser.get().getBasicProfile()?.getEmail();
   }
 
   searchFiles(databaseProperty: string): gapi.client.Request<gapi.client.drive.FileList> {
