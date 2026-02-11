@@ -40,7 +40,7 @@ const debug = app.settings.env === "development";
 // unnecessary.
 const DO_PRECACHE = false;
 
-nunjucks.configure("dist", {
+nunjucks.configure(debug ? "templates" : "dist", {
   autoescape: true,
   express: app,
 });
@@ -122,6 +122,57 @@ app.use((req, res, next) => {
   next();
 });
 
+let viteServer: any;
+if (debug) {
+  import("vite").then(vite => {
+    vite.createServer({
+      server: { middlewareMode: true },
+      appType: "custom",
+      configFile: "vite.config.ts",
+    }).then(server => {
+      viteServer = server;
+    });
+  });
+}
+
+app.use((req, res, next) => {
+  if (debug) {
+    const waitForVite = () => {
+      if (viteServer) {
+        const superRender = res.render;
+        // @ts-ignore
+        res.render = function (view: string, options?: object, callback?: (err: Error, html: string) => void) {
+          if (typeof options === "function") {
+            callback = options;
+            options = {};
+          }
+          // @ts-ignore
+          superRender.call(this, view, options, async (err: Error, html: string) => {
+            if (err) {
+              if (callback) return callback(err, html);
+              return next(err);
+            }
+            try {
+              const transformed = await viteServer.transformIndexHtml(req.originalUrl, html);
+              if (callback) return callback(null, transformed);
+              res.send(transformed);
+            } catch (e) {
+              if (callback) return callback(e as Error, "");
+              next(e);
+            }
+          });
+        };
+        viteServer.middlewares(req, res, next);
+      } else {
+        setTimeout(waitForVite, 100);
+      }
+    };
+    waitForVite();
+  } else {
+    next();
+  }
+});
+
 function sendLazyStaticFile(res: express.Response, file: string) {
   res.sendFile(file, {
     headers: {
@@ -155,8 +206,15 @@ app.get("/", (req, res) => res.render("homepage.html"));
 app.get("/css/:ignored/:path", (req, res) => sendLazyStaticFile(res, `css/${req.params.path}`));
 app.get("/mdl/material.min.js", (req, res) => sendLazyStaticFile(res, "mdl/material.min.js"));
 
-for (const file of fs.readdirSync("dist").filter(x => !x.endsWith(".html"))) {
-  app.get(`/${file}`, (req, res) => res.sendFile(`dist/${file}`, {maxAge: 31536000}));
+if (!debug) {
+  app.use("/assets", express.static("dist/assets", {maxAge: 31536000}));
+  if (fs.existsSync("dist")) {
+    for (const file of fs.readdirSync("dist").filter(x => !x.endsWith(".html") && !x.startsWith("."))) {
+      if (fs.statSync(`dist/${file}`).isFile()) {
+        app.get(`/${file}`, (req, res) => res.sendFile(`dist/${file}`, {maxAge: 31536000}));
+      }
+    }
+  }
 }
 
 const STATIC_FILES_LAZY_CACHE_OPTIONS = {
