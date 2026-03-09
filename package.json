@@ -48,6 +48,7 @@
     "ignore trailing commas": "exit 1"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
     "@types/argparse": "^2.0.10",
     "@types/chalk": "^2.2.0",
     "@types/dompurify": "^3.0.5",
