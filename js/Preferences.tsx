@@ -105,7 +105,7 @@ const STANDARD_YES_TRUE_NO_FALSE = [
 export type Version = {hebrew: string, english: string};
 
 function defaultVersion(versionStorageKey: string): Item {
-  if (versionStorageKey === "Talmud") {
+  if (versionStorageKey === "Talmud" || versionStorageKey === "Tanakh") {
     return {
       value: "default",
       displayText: "Punctuated and Vocalized by Sefaria (Default)",

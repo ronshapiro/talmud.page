@@ -16,6 +16,10 @@ class TanakhRenderer extends Renderer {
   }
 
   rendererType() { return "Tanakh"; }
+
+  versions() {
+    return [{hebrew: "טקסט ללא ניקוד", english: "Unvocalized"}];
+  }
 }
 
 new Runner(new TanakhRenderer(), driveClient).main();
