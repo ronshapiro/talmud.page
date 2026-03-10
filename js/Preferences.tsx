@@ -112,6 +112,13 @@ function defaultVersion(versionStorageKey: string): Item {
       displayTextHebrew: "מנוקד על ידי ספריא (ברירת מחדל)",
     };
   }
+  if (versionStorageKey === "Tanakh") {
+    return {
+      value: "default",
+      displayText: "Vocalized with Trope (Default)",
+      displayTextHebrew: "מנוקד עם טעמי המקרא (ברירת מחדל)",
+    };
+  }
 
   return {
     value: "default",

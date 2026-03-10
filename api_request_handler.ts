@@ -364,7 +364,7 @@ class InternalCommentary {
   nestedCommentaries: Record<string, InternalCommentary> = {};
 
   addComment(comment: Comment) {
-    if (this.refs.has(comment.ref)) {
+    if (this.refs.has(comment.ref) && comment.englishName !== "Versions") {
       return;
     }
     this.refs.add(comment.ref);
@@ -585,7 +585,8 @@ export class ApiException extends Error {
   }
 }
 
-type Alternate = "" | "Koren Tanakh" | "Vilna Shas" | typeof AI_EDIT_COMMENT_NAME;
+type Alternate =
+  "" | "Koren Tanakh" | "Vilna Shas" | "Unvocalized" | typeof AI_EDIT_COMMENT_NAME;
 const ALTERNATE_DEFAULT: Alternate = "";
 interface AlternateMetadata {
   hebrewName: string;
@@ -606,6 +607,10 @@ const ALTERNATES: Record<Alternate, AlternateMetadata> = {
   },
   "AI Edit": {
     hebrewName: "AI",
+  },
+  "Unvocalized": {
+    hebrewName: 'תנ"ך ללא ניקוד',
+    commonLanguage: "english"
   },
   /* eslint-enable quote-props */
 };
@@ -1186,6 +1191,7 @@ export abstract class AbstractApiRequestHandler {
       "Tanakh": ["&ven=Tanakh: The Holy Scriptures, published by JPS", ALTERNATE_DEFAULT],
       "TanakhKoren": ["&ven=The Koren Jerusalem Bible", "Koren Tanakh"],
       "Vilna Shas": ["&vhe=Wikisource Talmud Bavli", "Vilna Shas"],
+      "Unvocalized": ["&vhe=Tanach with Text Only", "Unvocalized"],
       // "Vilna Shas": ["&vhe=William Davidson Edition - Aramaic", "Vilna Shas"],
       "Standard": ["", ALTERNATE_DEFAULT],
       /* eslint-enable quote-props */
@@ -1196,6 +1202,7 @@ export abstract class AbstractApiRequestHandler {
       if (book?.isBibleBook()) {
         indexed.put("Tanakh", ref);
         indexed.put("TanakhKoren", ref);
+        indexed.put("Unvocalized", ref);
       } else if (book?.isTalmud()) {
         indexed.put("Standard", ref);
         indexed.put("Vilna Shas", ref);
