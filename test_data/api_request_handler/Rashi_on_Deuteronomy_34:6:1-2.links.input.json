@@ -1,54 +1,6 @@
 [
   {
-    "_id": "56e09983d6e4a938b97c9381",
-    "anchorRef": "Rashi on Deuteronomy 34:6:1",
-    "anchorRefExpanded": [
-      "Rashi on Deuteronomy 34:6:1"
-    ],
-    "anchorVerse": 1,
-    "category": "Midrash",
-    "collectiveTitle": {
-      "en": "Sifrei Bamidbar",
-      "he": "ספרי במדבר"
-    },
-    "commentaryNum": 32,
-    "compDate": [
-      200
-    ],
-    "heTitle": "ספרי במדבר",
-    "index_title": "Sifrei Bamidbar",
-    "ref": "Sifrei Bamidbar 32",
-    "sourceHasEn": true,
-    "sourceHeRef": "ספרי במדבר ל״ב",
-    "sourceRef": "Sifrei Bamidbar 32",
-    "type": "reference"
-  },
-  {
-    "_id": "58ca88b1d6e4a901bb96b834",
-    "anchorRef": "Rashi on Deuteronomy 34:6:1",
-    "anchorRefExpanded": [
-      "Rashi on Deuteronomy 34:6:1"
-    ],
-    "anchorVerse": 1,
-    "category": "Talmud",
-    "collectiveTitle": {
-      "en": "Sotah",
-      "he": "סוטה"
-    },
-    "commentaryNum": 27,
-    "compDate": [
-      450,
-      550
-    ],
-    "heTitle": "סוטה",
-    "index_title": "Sotah",
-    "ref": "Sotah 14a",
-    "sourceHasEn": false,
-    "sourceHeRef": "סוטה י״ד א",
-    "sourceRef": "Sotah 14a",
-    "type": ""
-  },
-  {
+    "ref": "Siftei Chakhamim, Deuteronomy 34:6:1",
     "_id": "5a1545e2d6e4a92409ac25b5",
     "anchorRef": "Rashi on Deuteronomy 34:6:1",
     "anchorRefExpanded": [
@@ -57,8 +9,8 @@
     "anchorVerse": 1,
     "category": "Commentary",
     "collectiveTitle": {
-      "en": "Siftei Chakhamim",
-      "he": "שפתי חכמים"
+      "he": "שפתי חכמים",
+      "en": "Siftei Chakhamim"
     },
     "commentaryNum": 6.0001,
     "compDate": [
@@ -67,23 +19,47 @@
     ],
     "heTitle": "דברים",
     "index_title": "Siftei Chakhamim",
-    "ref": "Siftei Chakhamim, Deuteronomy 34:6:1",
     "sourceHasEn": true,
     "sourceHeRef": "שפתי חכמים, דברים ל״ד:ו׳:א׳",
     "sourceRef": "Siftei Chakhamim, Deuteronomy 34:6:1",
     "type": "commentary"
   },
   {
-    "_id": "56ceba1fd6e4a91fd5138497",
-    "anchorRef": "Rashi on Deuteronomy 34:6:2",
+    "ref": "Sifrei Bamidbar 32",
+    "_id": "695f3c6d8b3de5a25f1025e9",
+    "anchorRef": "Rashi on Deuteronomy 34:6:1",
     "anchorRefExpanded": [
-      "Rashi on Deuteronomy 34:6:2"
+      "Rashi on Deuteronomy 34:6:1"
     ],
-    "anchorVerse": 2,
+    "anchorVerse": 1,
+    "category": "Midrash",
+    "collectiveTitle": {
+      "he": "ספרי במדבר",
+      "en": "Sifrei Bamidbar"
+    },
+    "commentaryNum": 32,
+    "compDate": [
+      200
+    ],
+    "heTitle": "ספרי במדבר",
+    "index_title": "Sifrei Bamidbar",
+    "sourceHasEn": true,
+    "sourceHeRef": "ספרי במדבר ל״ב",
+    "sourceRef": "Sifrei Bamidbar 32",
+    "type": ""
+  },
+  {
+    "ref": "Sotah 14a",
+    "_id": "695f3c6d8b3de5a25f1025eb",
+    "anchorRef": "Rashi on Deuteronomy 34:6:1",
+    "anchorRefExpanded": [
+      "Rashi on Deuteronomy 34:6:1"
+    ],
+    "anchorVerse": 1,
     "category": "Talmud",
     "collectiveTitle": {
-      "en": "Sotah",
-      "he": "סוטה"
+      "he": "סוטה",
+      "en": "Sotah"
     },
     "commentaryNum": 27,
     "compDate": [
@@ -92,13 +68,38 @@
     ],
     "heTitle": "סוטה",
     "index_title": "Sotah",
-    "ref": "Sotah 14a",
     "sourceHasEn": false,
     "sourceHeRef": "סוטה י״ד א",
     "sourceRef": "Sotah 14a",
     "type": ""
   },
   {
+    "ref": "Sotah 14a",
+    "_id": "695f3c6edd4dbbbc77df2c99",
+    "anchorRef": "Rashi on Deuteronomy 34:6:2",
+    "anchorRefExpanded": [
+      "Rashi on Deuteronomy 34:6:2"
+    ],
+    "anchorVerse": 2,
+    "category": "Talmud",
+    "collectiveTitle": {
+      "he": "סוטה",
+      "en": "Sotah"
+    },
+    "commentaryNum": 27,
+    "compDate": [
+      450,
+      550
+    ],
+    "heTitle": "סוטה",
+    "index_title": "Sotah",
+    "sourceHasEn": false,
+    "sourceHeRef": "סוטה י״ד א",
+    "sourceRef": "Sotah 14a",
+    "type": ""
+  },
+  {
+    "ref": "Deuteronomy 34:6",
     "_id": "52270368edbab45df91b02ff",
     "anchorRef": "Rashi on Deuteronomy 34:6:1",
     "anchorRefExpanded": [
@@ -107,8 +108,8 @@
     "anchorVerse": 1,
     "category": "Tanakh",
     "collectiveTitle": {
-      "en": "Deuteronomy",
-      "he": "דברים"
+      "he": "דברים",
+      "en": "Deuteronomy"
     },
     "commentaryNum": 34.0006,
     "compDate": [
@@ -117,14 +118,14 @@
     ],
     "heTitle": "דברים",
     "index_title": "Deuteronomy",
-    "ref": "Deuteronomy 34:6",
     "sourceHasEn": true,
     "sourceHeRef": "דברים ל״ד:ו׳",
     "sourceRef": "Deuteronomy 34:6",
     "type": "commentary"
   },
   {
-    "_id": "54bd48c3fbfba21733367bd4",
+    "ref": "Numbers 6:13",
+    "_id": "695eb99c4c54e1cd02f24a9e",
     "anchorRef": "Rashi on Deuteronomy 34:6:1",
     "anchorRefExpanded": [
       "Rashi on Deuteronomy 34:6:1"
@@ -132,33 +133,8 @@
     "anchorVerse": 1,
     "category": "Tanakh",
     "collectiveTitle": {
-      "en": "Leviticus",
-      "he": "ויקרא"
-    },
-    "commentaryNum": 22.0016,
-    "compDate": [
-      -1400,
-      -400
-    ],
-    "heTitle": "ויקרא",
-    "index_title": "Leviticus",
-    "ref": "Leviticus 22:16",
-    "sourceHasEn": true,
-    "sourceHeRef": "ויקרא כ״ב:ט״ז",
-    "sourceRef": "Leviticus 22:16",
-    "type": ""
-  },
-  {
-    "_id": "54bd48c3fbfba21733367bd6",
-    "anchorRef": "Rashi on Deuteronomy 34:6:1",
-    "anchorRefExpanded": [
-      "Rashi on Deuteronomy 34:6:1"
-    ],
-    "anchorVerse": 1,
-    "category": "Tanakh",
-    "collectiveTitle": {
-      "en": "Numbers",
-      "he": "במדבר"
+      "he": "במדבר",
+      "en": "Numbers"
     },
     "commentaryNum": 6.0013,
     "compDate": [
@@ -167,39 +143,38 @@
     ],
     "heTitle": "במדבר",
     "index_title": "Numbers",
-    "ref": "Numbers 6:13",
     "sourceHasEn": true,
     "sourceHeRef": "במדבר ו׳:י״ג",
     "sourceRef": "Numbers 6:13",
     "type": ""
   },
   {
-    "_id": "571f3ab1d6e4a90eb2484d09",
-    "anchorRef": "Rashi on Deuteronomy 34:6:1-2",
+    "ref": "Leviticus 22:16",
+    "_id": "695eb99c4c54e1cd02f24aa0",
+    "anchorRef": "Rashi on Deuteronomy 34:6:1",
     "anchorRefExpanded": [
-      "Rashi on Deuteronomy 34:6:1",
-      "Rashi on Deuteronomy 34:6:2"
+      "Rashi on Deuteronomy 34:6:1"
     ],
     "anchorVerse": 1,
-    "category": "Commentary",
+    "category": "Tanakh",
     "collectiveTitle": {
-      "en": "Gur Aryeh",
-      "he": "גור אריה"
+      "he": "ויקרא",
+      "en": "Leviticus"
     },
-    "commentaryNum": 6.0001,
+    "commentaryNum": 22.0016,
     "compDate": [
-      1548,
-      1578
+      -1400,
+      -400
     ],
-    "heTitle": "גור אריה על דברים",
-    "index_title": "Gur Aryeh on Devarim",
-    "ref": "Gur Aryeh on Devarim 34:6:1",
-    "sourceHasEn": false,
-    "sourceHeRef": "גור אריה על דברים ל״ד:ו׳:א׳",
-    "sourceRef": "Gur Aryeh on Devarim 34:6:1",
-    "type": "commentary"
+    "heTitle": "ויקרא",
+    "index_title": "Leviticus",
+    "sourceHasEn": true,
+    "sourceHeRef": "ויקרא כ״ב:ט״ז",
+    "sourceRef": "Leviticus 22:16",
+    "type": ""
   },
   {
+    "ref": "Deuteronomy 34:6",
     "_id": "52270368edbab45df91b0301",
     "anchorRef": "Rashi on Deuteronomy 34:6:2",
     "anchorRefExpanded": [
@@ -208,8 +183,8 @@
     "anchorVerse": 2,
     "category": "Tanakh",
     "collectiveTitle": {
-      "en": "Deuteronomy",
-      "he": "דברים"
+      "he": "דברים",
+      "en": "Deuteronomy"
     },
     "commentaryNum": 34.0006,
     "compDate": [
@@ -218,113 +193,13 @@
     ],
     "heTitle": "דברים",
     "index_title": "Deuteronomy",
-    "ref": "Deuteronomy 34:6",
     "sourceHasEn": true,
     "sourceHeRef": "דברים ל״ד:ו׳",
     "sourceRef": "Deuteronomy 34:6",
     "type": "commentary"
   },
   {
-    "_id": "56ceb8d9d6e4a91fd5137adf",
-    "anchorRef": "Rashi on Deuteronomy 34:6:2",
-    "anchorRefExpanded": [
-      "Rashi on Deuteronomy 34:6:2"
-    ],
-    "anchorVerse": 2,
-    "category": "Talmud",
-    "collectiveTitle": {
-      "en": "Pesachim",
-      "he": "פסחים"
-    },
-    "commentaryNum": 107,
-    "compDate": [
-      450,
-      550
-    ],
-    "heTitle": "פסחים",
-    "index_title": "Pesachim",
-    "ref": "Pesachim 54a",
-    "sourceHasEn": true,
-    "sourceHeRef": "פסחים נ״ד א",
-    "sourceRef": "Pesachim 54a",
-    "type": ""
-  },
-  {
-    "_id": "56ceb8d9d6e4a91fd5137ae1",
-    "anchorRef": "Rashi on Deuteronomy 34:6:2",
-    "anchorRefExpanded": [
-      "Rashi on Deuteronomy 34:6:2"
-    ],
-    "anchorVerse": 2,
-    "category": "Mishnah",
-    "collectiveTitle": {
-      "en": "Pirkei Avot",
-      "he": "משנה אבות"
-    },
-    "commentaryNum": 4,
-    "compDate": [
-      190,
-      230
-    ],
-    "heTitle": "משנה אבות",
-    "index_title": "Pirkei Avot",
-    "ref": "Pirkei Avot 4",
-    "sourceHasEn": true,
-    "sourceHeRef": "משנה אבות ד׳",
-    "sourceRef": "Pirkei Avot 4",
-    "type": ""
-  },
-  {
-    "_id": "56ceba1fd6e4a91fd5138495",
-    "anchorRef": "Rashi on Deuteronomy 34:6:2",
-    "anchorRefExpanded": [
-      "Rashi on Deuteronomy 34:6:2"
-    ],
-    "anchorVerse": 2,
-    "category": "Tanakh",
-    "collectiveTitle": {
-      "en": "Numbers",
-      "he": "במדבר"
-    },
-    "commentaryNum": 25,
-    "compDate": [
-      -1400,
-      -400
-    ],
-    "heTitle": "במדבר",
-    "index_title": "Numbers",
-    "ref": "Numbers 25",
-    "sourceHasEn": true,
-    "sourceHeRef": "במדבר כ״ה",
-    "sourceRef": "Numbers 25",
-    "type": ""
-  },
-  {
-    "_id": "56ceba1fd6e4a91fd5138499",
-    "anchorRef": "Rashi on Deuteronomy 34:6:2",
-    "anchorRefExpanded": [
-      "Rashi on Deuteronomy 34:6:2"
-    ],
-    "anchorVerse": 2,
-    "category": "Mishnah",
-    "collectiveTitle": {
-      "en": "Pirkei Avot",
-      "he": "משנה אבות"
-    },
-    "commentaryNum": 5.0006,
-    "compDate": [
-      190,
-      230
-    ],
-    "heTitle": "משנה אבות",
-    "index_title": "Pirkei Avot",
-    "ref": "Pirkei Avot 5:6",
-    "sourceHasEn": true,
-    "sourceHeRef": "משנה אבות ה׳:ו׳",
-    "sourceRef": "Pirkei Avot 5:6",
-    "type": ""
-  },
-  {
+    "ref": "Mizrachi, Deuteronomy 34:6:1",
     "_id": "596369acd6e4a9416e9c0020",
     "anchorRef": "Rashi on Deuteronomy 34:6:2",
     "anchorRefExpanded": [
@@ -333,8 +208,8 @@
     "anchorVerse": 2,
     "category": "Commentary",
     "collectiveTitle": {
-      "en": "Mizrachi",
-      "he": "מזרחי"
+      "he": "מזרחי",
+      "en": "Mizrachi"
     },
     "commentaryNum": 6.0001,
     "compDate": [
@@ -343,13 +218,13 @@
     ],
     "heTitle": "דברים",
     "index_title": "Mizrachi",
-    "ref": "Mizrachi, Deuteronomy 34:6:1",
     "sourceHasEn": false,
     "sourceHeRef": "מזרחי, דברים ל״ד:ו׳:א׳",
     "sourceRef": "Mizrachi, Deuteronomy 34:6:1",
     "type": "commentary"
   },
   {
+    "ref": "Maskil LeDavid, Deuteronomy 34:6:1",
     "_id": "60f577dbc71051d5ed54eb62",
     "anchorRef": "Rashi on Deuteronomy 34:6:2",
     "anchorRefExpanded": [
@@ -358,16 +233,140 @@
     "anchorVerse": 2,
     "category": "Commentary",
     "collectiveTitle": {
-      "en": "Maskil LeDavid",
-      "he": "משכיל לדוד"
+      "he": "משכיל לדוד",
+      "en": "Maskil LeDavid"
     },
     "commentaryNum": 6.0001,
     "heTitle": "דברים",
     "index_title": "Maskil LeDavid",
-    "ref": "Maskil LeDavid, Deuteronomy 34:6:1",
     "sourceHasEn": false,
     "sourceHeRef": "משכיל לדוד, דברים ל״ד:ו׳:א׳",
     "sourceRef": "Maskil LeDavid, Deuteronomy 34:6:1",
+    "type": "commentary"
+  },
+  {
+    "ref": "Pirkei Avot 5:6",
+    "_id": "695f3c6ddd4dbbbc77df2c95",
+    "anchorRef": "Rashi on Deuteronomy 34:6:2",
+    "anchorRefExpanded": [
+      "Rashi on Deuteronomy 34:6:2"
+    ],
+    "anchorVerse": 2,
+    "category": "Mishnah",
+    "collectiveTitle": {
+      "he": "משנה אבות",
+      "en": "Pirkei Avot"
+    },
+    "commentaryNum": 5.0006,
+    "compDate": [
+      190,
+      230
+    ],
+    "heTitle": "משנה אבות",
+    "index_title": "Pirkei Avot",
+    "sourceHasEn": true,
+    "sourceHeRef": "משנה אבות ה׳:ו׳",
+    "sourceRef": "Pirkei Avot 5:6",
+    "type": ""
+  },
+  {
+    "ref": "Pesachim 54a",
+    "_id": "695f3c6edd4dbbbc77df2c97",
+    "anchorRef": "Rashi on Deuteronomy 34:6:2",
+    "anchorRefExpanded": [
+      "Rashi on Deuteronomy 34:6:2"
+    ],
+    "anchorVerse": 2,
+    "category": "Talmud",
+    "collectiveTitle": {
+      "he": "פסחים",
+      "en": "Pesachim"
+    },
+    "commentaryNum": 107,
+    "compDate": [
+      450,
+      550
+    ],
+    "heTitle": "פסחים",
+    "index_title": "Pesachim",
+    "sourceHasEn": true,
+    "sourceHeRef": "פסחים נ״ד א",
+    "sourceRef": "Pesachim 54a",
+    "type": ""
+  },
+  {
+    "ref": "Numbers 25",
+    "_id": "695f3c6edd4dbbbc77df2c9b",
+    "anchorRef": "Rashi on Deuteronomy 34:6:2",
+    "anchorRefExpanded": [
+      "Rashi on Deuteronomy 34:6:2"
+    ],
+    "anchorVerse": 2,
+    "category": "Tanakh",
+    "collectiveTitle": {
+      "he": "במדבר",
+      "en": "Numbers"
+    },
+    "commentaryNum": 25,
+    "compDate": [
+      -1400,
+      -400
+    ],
+    "heTitle": "במדבר",
+    "index_title": "Numbers",
+    "sourceHasEn": true,
+    "sourceHeRef": "במדבר כ״ה",
+    "sourceRef": "Numbers 25",
+    "type": ""
+  },
+  {
+    "ref": "Pirkei Avot 4",
+    "_id": "69603872338c46700f03376f",
+    "anchorRef": "Rashi on Deuteronomy 34:6:2",
+    "anchorRefExpanded": [
+      "Rashi on Deuteronomy 34:6:2"
+    ],
+    "anchorVerse": 2,
+    "category": "Mishnah",
+    "collectiveTitle": {
+      "he": "משנה אבות",
+      "en": "Pirkei Avot"
+    },
+    "commentaryNum": 4,
+    "compDate": [
+      190,
+      230
+    ],
+    "heTitle": "משנה אבות",
+    "index_title": "Pirkei Avot",
+    "sourceHasEn": true,
+    "sourceHeRef": "משנה אבות ד׳",
+    "sourceRef": "Pirkei Avot 4",
+    "type": ""
+  },
+  {
+    "ref": "Gur Aryeh on Devarim 34:6:1",
+    "_id": "699c4664508601ec40b326ea",
+    "anchorRef": "Rashi on Deuteronomy 34:6:2",
+    "anchorRefExpanded": [
+      "Rashi on Deuteronomy 34:6:2"
+    ],
+    "anchorVerse": 2,
+    "category": "Commentary",
+    "collectiveTitle": {
+      "he": "גור אריה",
+      "en": "Gur Aryeh"
+    },
+    "commentaryNum": 6.0001,
+    "compDate": [
+      1548,
+      1578
+    ],
+    "heTitle": "גור אריה על דברים",
+    "index_title": "Gur Aryeh on Devarim",
+    "sourceHasEn": false,
+    "sourceHeRef": "גור אריה על דברים ל״ד:ו׳:א׳",
+    "sourceRef": "Gur Aryeh on Devarim 34:6:1",
     "type": "commentary"
   }
 ]

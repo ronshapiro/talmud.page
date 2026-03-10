@@ -1,5 +1,6 @@
 [
   {
+    "ref": "Gittin 85b:11",
     "_id": "5896237dd6e4a91d76271593",
     "anchorRef": "Tosafot on Gittin 85b:11:1",
     "anchorRefExpanded": [
@@ -8,8 +9,8 @@
     "anchorVerse": 1,
     "category": "Talmud",
     "collectiveTitle": {
-      "en": "Gittin",
-      "he": "גיטין"
+      "he": "גיטין",
+      "en": "Gittin"
     },
     "commentaryNum": 170.0011,
     "compDate": [
@@ -18,38 +19,13 @@
     ],
     "heTitle": "גיטין",
     "index_title": "Gittin",
-    "ref": "Gittin 85b:11",
     "sourceHasEn": true,
     "sourceHeRef": "גיטין פ״ה ב:י״א",
     "sourceRef": "Gittin 85b:11",
     "type": "commentary"
   },
   {
-    "_id": "5c17a045bb386c011be9ae61",
-    "anchorRef": "Tosafot on Gittin 85b:11:1",
-    "anchorRefExpanded": [
-      "Tosafot on Gittin 85b:11:1"
-    ],
-    "anchorVerse": 1,
-    "category": "Tanakh",
-    "collectiveTitle": {
-      "en": "Esther",
-      "he": "אסתר"
-    },
-    "commentaryNum": 9.0026,
-    "compDate": [
-      -400,
-      -200
-    ],
-    "heTitle": "אסתר",
-    "index_title": "Esther",
-    "ref": "Esther 9:26",
-    "sourceHasEn": true,
-    "sourceHeRef": "אסתר ט׳:כ״ו",
-    "sourceRef": "Esther 9:26",
-    "type": ""
-  },
-  {
+    "ref": "Piskei Tosafot on Gittin 303:1",
     "_id": "60afdde0e42f4ea506b6d2ea",
     "anchorRef": "Tosafot on Gittin 85b:11:1",
     "anchorRefExpanded": [
@@ -58,8 +34,8 @@
     "anchorVerse": 1,
     "category": "Commentary",
     "collectiveTitle": {
-      "en": "Piskei Tosafot",
-      "he": "פסקי תוספות"
+      "he": "פסקי תוספות",
+      "en": "Piskei Tosafot"
     },
     "commentaryNum": 303.0001,
     "compDate": [
@@ -68,13 +44,13 @@
     ],
     "heTitle": "פסקי תוספות על גיטין",
     "index_title": "Piskei Tosafot on Gittin",
-    "ref": "Piskei Tosafot on Gittin 303:1",
     "sourceHasEn": false,
     "sourceHeRef": "פסקי תוספות על גיטין ש״ג:א׳",
     "sourceRef": "Piskei Tosafot on Gittin 303:1",
     "type": "commentary"
   },
   {
+    "ref": "Piskei Tosafot on Gittin 310:1",
     "_id": "60afddeae42f4ea506b6d2fa",
     "anchorRef": "Tosafot on Gittin 85b:11:1",
     "anchorRefExpanded": [
@@ -83,8 +59,8 @@
     "anchorVerse": 1,
     "category": "Commentary",
     "collectiveTitle": {
-      "en": "Piskei Tosafot",
-      "he": "פסקי תוספות"
+      "he": "פסקי תוספות",
+      "en": "Piskei Tosafot"
     },
     "commentaryNum": 310.0001,
     "compDate": [
@@ -93,23 +69,23 @@
     ],
     "heTitle": "פסקי תוספות על גיטין",
     "index_title": "Piskei Tosafot on Gittin",
-    "ref": "Piskei Tosafot on Gittin 310:1",
     "sourceHasEn": false,
     "sourceHeRef": "פסקי תוספות על גיטין ש״י:א׳",
     "sourceRef": "Piskei Tosafot on Gittin 310:1",
     "type": "commentary"
   },
   {
+    "ref": "Haggahot Ya'avetz on Gittin 85b:2",
     "_id": "649424fe44b5b36cf98f2963",
     "anchorRef": "Tosafot on Gittin 85b:11:1",
     "anchorRefExpanded": [
       "Tosafot on Gittin 85b:11:1"
     ],
     "anchorVerse": 1,
-    "category": "Commentary",
+    "category": "Quoting Commentary",
     "collectiveTitle": {
-      "en": "Haggahot Ya'avetz",
-      "he": "הגהות יעב\"ץ"
+      "he": "הגהות יעב\"ץ על גיטין",
+      "en": "Haggahot Ya'avetz on Gittin"
     },
     "commentaryNum": 170.0002,
     "compDate": [
@@ -118,10 +94,34 @@
     ],
     "heTitle": "הגהות יעב\"ץ על גיטין",
     "index_title": "Haggahot Ya'avetz on Gittin",
-    "ref": "Haggahot Ya'avetz on Gittin 85b:2",
     "sourceHasEn": false,
     "sourceHeRef": "הגהות יעב\"ץ על גיטין פ״ה ב:ב׳",
     "sourceRef": "Haggahot Ya'avetz on Gittin 85b:2",
-    "type": "commentary"
+    "type": ""
+  },
+  {
+    "ref": "Esther 9:26",
+    "_id": "695f1a271ae70b66ca469516",
+    "anchorRef": "Tosafot on Gittin 85b:11:1",
+    "anchorRefExpanded": [
+      "Tosafot on Gittin 85b:11:1"
+    ],
+    "anchorVerse": 1,
+    "category": "Tanakh",
+    "collectiveTitle": {
+      "he": "אסתר",
+      "en": "Esther"
+    },
+    "commentaryNum": 9.0026,
+    "compDate": [
+      -400,
+      -200
+    ],
+    "heTitle": "אסתר",
+    "index_title": "Esther",
+    "sourceHasEn": true,
+    "sourceHeRef": "אסתר ט׳:כ״ו",
+    "sourceRef": "Esther 9:26",
+    "type": ""
   }
 ]

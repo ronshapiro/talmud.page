@@ -1,66 +1,5 @@
 {
-  "addressTypes": [
-    "Perek",
-    "Pasuk"
-  ],
-  "alts": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      "en": [
-        "Sixth"
-      ],
-      "he": [
-        "שישי"
-      ]
-    },
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      "en": [
-        "Seventh"
-      ],
-      "he": [
-        "שביעי"
-      ]
-    }
-  ],
-  "book": "Genesis",
-  "categories": [
-    "Tanakh",
-    "Torah"
-  ],
-  "commentary": [],
-  "digitizedBySefaria": false,
-  "extendedNotes": "",
-  "extendedNotesHebrew": "",
-  "firstAvailableSectionRef": "Genesis 43",
-  "formatEnAsPoetry": false,
-  "formatHeAsPoetry": false,
+  "ref": "Genesis 43",
   "he": [
     "וְהָרָעָ֖ב כָּבֵ֥ד בָּאָֽרֶץ׃",
     "וַיְהִ֗י כַּאֲשֶׁ֤ר כִּלּוּ֙ לֶאֱכֹ֣ל אֶת־הַשֶּׁ֔בֶר אֲשֶׁ֥ר הֵבִ֖יאוּ מִמִּצְרָ֑יִם וַיֹּ֤אמֶר אֲלֵיהֶם֙ אֲבִיהֶ֔ם שֻׁ֖בוּ שִׁבְרוּ־לָ֥נוּ מְעַט־אֹֽכֶל׃",
@@ -97,6 +36,68 @@
     "וַיֵּשְׁב֣וּ לְפָנָ֔יו הַבְּכֹר֙ כִּבְכֹ֣רָת֔וֹ וְהַצָּעִ֖יר כִּצְעִרָת֑וֹ וַיִּתְמְה֥וּ הָאֲנָשִׁ֖ים אִ֥ישׁ אֶל־רֵעֵֽהוּ׃",
     "וַיִּשָּׂ֨א מַשְׂאֹ֜ת מֵאֵ֣ת פָּנָיו֮ אֲלֵהֶם֒ וַתֵּ֜רֶב מַשְׂאַ֧ת בִּנְיָמִ֛ן מִמַּשְׂאֹ֥ת כֻּלָּ֖ם חָמֵ֣שׁ יָד֑וֹת וַיִּשְׁתּ֥וּ וַֽיִּשְׁכְּר֖וּ עִמּֽוֹ׃"
   ],
+  "addressTypes": [
+    "Perek",
+    "Pasuk"
+  ],
+  "alts": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      "he": [
+        "שישי"
+      ],
+      "en": [
+        "Sixth"
+      ]
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      "he": [
+        "שביעי"
+      ],
+      "en": [
+        "Seventh"
+      ]
+    }
+  ],
+  "book": "Genesis",
+  "categories": [
+    "Tanakh",
+    "Torah"
+  ],
+  "commentary": [],
+  "digitizedBySefaria": false,
+  "extendedNotes": "",
+  "extendedNotesHebrew": "",
+  "firstAvailableSectionRef": "Genesis 43",
+  "formatEnAsPoetry": false,
+  "formatHeAsPoetry": false,
   "heDigitizedBySefaria": false,
   "heExtendedNotes": "",
   "heExtendedNotesHebrew": "",
@@ -140,7 +141,6 @@
   ],
   "prev": "Genesis 42",
   "primary_category": "Tanakh",
-  "ref": "Genesis 43",
   "sectionNames": [
     "Chapter",
     "Verse"
@@ -215,6 +215,35 @@
   "versionTitle": "The Koren Jerusalem Bible",
   "versionTitleInHebrew": "",
   "versions": [
+    {
+      "actualLanguage": "en",
+      "digitizedBySefaria": "",
+      "direction": "ltr",
+      "extendedNotes": "",
+      "extendedNotesHebrew": "",
+      "formatAsPoetry": "",
+      "hasManuallyWrappedRefs": "",
+      "heversionSource": "",
+      "isPrimary": false,
+      "isSource": false,
+      "language": "en",
+      "languageFamilyName": "english",
+      "license": "CC-BY-NC",
+      "method": "",
+      "priority": 8,
+      "purchaseInformationImage": "https://storage.googleapis.com/sefaria-physical-editions/JPS-Tanakh-Gender-Sensitive-Edition-Cover-300x450.jpg",
+      "purchaseInformationURL": "https://jps.org/books/the-jps-tanakh-gender-sensitive-edition/",
+      "shortVersionTitle": "Revised JPS, 2023",
+      "shortVersionTitleInHebrew": "",
+      "status": "locked",
+      "title": "Genesis",
+      "versionNotes": "<a href=\"https://purl.org/jps/rjps-preface\">Preface</a>\n<br><br>\n<a href=\"https://purl.org/jps/gender\">Notes on Gender in Translation</a>\n<br><br>\n<a href=\"https://purl.org/scholar/rjps-comm\">Commentary on Translation Choices in the JPS TANAKH (RJPS)</a>",
+      "versionNotesInHebrew": "",
+      "versionSource": "https://jps.org/books/the-jps-tanakh-gender-sensitive-edition/",
+      "versionTitle": "THE JPS TANAKH: Gender-Sensitive Edition",
+      "versionTitleInHebrew": "",
+      "versionUrl": ""
+    },
     {
       "actualLanguage": "en",
       "digitizedBySefaria": "",
@@ -808,7 +837,7 @@
       "isSource": false,
       "language": "en",
       "languageFamilyName": "english",
-      "license": "",
+      "license": "unknown",
       "method": "",
       "priority": "",
       "purchaseInformationImage": "",
@@ -895,7 +924,7 @@
       "isSource": false,
       "language": "he",
       "languageFamilyName": "persian",
-      "license": "",
+      "license": "unknown",
       "method": "",
       "priority": "",
       "purchaseInformationImage": "",
@@ -924,7 +953,7 @@
       "isSource": false,
       "language": "en",
       "languageFamilyName": "french",
-      "license": "",
+      "license": "unknown",
       "method": "",
       "priority": "",
       "purchaseInformationImage": "",
@@ -953,7 +982,7 @@
       "isSource": false,
       "language": "en",
       "languageFamilyName": "ladino",
-      "license": "",
+      "license": "unknown",
       "method": "",
       "priority": "",
       "purchaseInformationImage": "",
@@ -999,35 +1028,6 @@
       "versionUrl": ""
     },
     {
-      "actualLanguage": "en",
-      "digitizedBySefaria": "",
-      "direction": "ltr",
-      "extendedNotes": "",
-      "extendedNotesHebrew": "",
-      "formatAsPoetry": "",
-      "hasManuallyWrappedRefs": "",
-      "heversionSource": "",
-      "isPrimary": false,
-      "isSource": false,
-      "language": "en",
-      "languageFamilyName": "english",
-      "license": "CC-BY-NC",
-      "method": "",
-      "priority": "",
-      "purchaseInformationImage": "https://storage.googleapis.com/sefaria-physical-editions/JPS-Tanakh-Gender-Sensitive-Edition-Cover-300x450.jpg",
-      "purchaseInformationURL": "https://jps.org/books/the-jps-tanakh-gender-sensitive-edition/",
-      "shortVersionTitle": "Revised JPS, 2023",
-      "shortVersionTitleInHebrew": "",
-      "status": "locked",
-      "title": "Genesis",
-      "versionNotes": "<a href=\"https://purl.org/jps/rjps-preface\">Preface</a>\n<br><br>\n<a href=\"https://purl.org/jps/gender\">Notes on Gender in Translation</a>\n<br><br>\n<a href=\"https://purl.org/scholar/rjps-comm\">Commentary on Translation Choices in the JPS TANAKH (RJPS)</a>",
-      "versionNotesInHebrew": "",
-      "versionSource": "https://jps.org/books/the-jps-tanakh-gender-sensitive-edition/",
-      "versionTitle": "THE JPS TANAKH: Gender-Sensitive Edition",
-      "versionTitleInHebrew": "",
-      "versionUrl": ""
-    },
-    {
       "actualLanguage": "pt",
       "digitizedBySefaria": "",
       "direction": "ltr",
@@ -1040,7 +1040,7 @@
       "isSource": false,
       "language": "en",
       "languageFamilyName": "portuguese",
-      "license": "",
+      "license": "unknown",
       "method": "",
       "priority": "",
       "purchaseInformationImage": "",

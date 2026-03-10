@@ -1,54 +1,6 @@
 [
   {
-    "_id": "56d4c454d6e4a9683256138e",
-    "anchorRef": "Rashi on Genesis 43:29:1",
-    "anchorRefExpanded": [
-      "Rashi on Genesis 43:29:1"
-    ],
-    "anchorVerse": 1,
-    "category": "Tanakh",
-    "collectiveTitle": {
-      "en": "Genesis",
-      "he": "בראשית"
-    },
-    "commentaryNum": 31,
-    "compDate": [
-      -1400,
-      -400
-    ],
-    "heTitle": "בראשית",
-    "index_title": "Genesis",
-    "ref": "Genesis 31",
-    "sourceHasEn": true,
-    "sourceHeRef": "בראשית ל״א",
-    "sourceRef": "Genesis 31",
-    "type": ""
-  },
-  {
-    "_id": "58525b80d6e4a938d3e52a9a",
-    "anchorRef": "Rashi on Genesis 43:29:1",
-    "anchorRefExpanded": [
-      "Rashi on Genesis 43:29:1"
-    ],
-    "anchorVerse": 1,
-    "category": "Midrash",
-    "collectiveTitle": {
-      "en": "Bereshit Rabbah",
-      "he": "בראשית רבה"
-    },
-    "commentaryNum": 92.0005,
-    "compDate": [
-      400
-    ],
-    "heTitle": "בראשית רבה",
-    "index_title": "Bereshit Rabbah",
-    "ref": "Bereshit Rabbah 92:5",
-    "sourceHasEn": true,
-    "sourceHeRef": "בראשית רבה צ״ב:ה׳",
-    "sourceRef": "Bereshit Rabbah 92:5",
-    "type": ""
-  },
-  {
+    "ref": "Mizrachi, Genesis 43:29:1",
     "_id": "59636b93d6e4a9416e9c34a0",
     "anchorRef": "Rashi on Genesis 43:29:1",
     "anchorRefExpanded": [
@@ -57,8 +9,8 @@
     "anchorVerse": 1,
     "category": "Commentary",
     "collectiveTitle": {
-      "en": "Mizrachi",
-      "he": "מזרחי"
+      "he": "מזרחי",
+      "en": "Mizrachi"
     },
     "commentaryNum": 29.0001,
     "compDate": [
@@ -67,38 +19,13 @@
     ],
     "heTitle": "בראשית",
     "index_title": "Mizrachi",
-    "ref": "Mizrachi, Genesis 43:29:1",
     "sourceHasEn": false,
     "sourceHeRef": "מזרחי, בראשית מ״ג:כ״ט:א׳",
     "sourceRef": "Mizrachi, Genesis 43:29:1",
     "type": "commentary"
   },
   {
-    "_id": "5c17b93cb071e100bf4e8651",
-    "anchorRef": "Rashi on Genesis 43:29:1",
-    "anchorRefExpanded": [
-      "Rashi on Genesis 43:29:1"
-    ],
-    "anchorVerse": 1,
-    "category": "Tanakh",
-    "collectiveTitle": {
-      "en": "Genesis",
-      "he": "בראשית"
-    },
-    "commentaryNum": 33.0005,
-    "compDate": [
-      -1400,
-      -400
-    ],
-    "heTitle": "בראשית",
-    "index_title": "Genesis",
-    "ref": "Genesis 33:5",
-    "sourceHasEn": true,
-    "sourceHeRef": "בראשית ל״ג:ה׳",
-    "sourceRef": "Genesis 33:5",
-    "type": ""
-  },
-  {
+    "ref": "Genesis 43:29",
     "_id": "65def9ef2e1201bebc22d509",
     "anchorRef": "Rashi on Genesis 43:29:1",
     "anchorRefExpanded": [
@@ -107,8 +34,8 @@
     "anchorVerse": 1,
     "category": "Tanakh",
     "collectiveTitle": {
-      "en": "Genesis",
-      "he": "בראשית"
+      "he": "בראשית",
+      "en": "Genesis"
     },
     "commentaryNum": 43.0029,
     "compDate": [
@@ -117,10 +44,58 @@
     ],
     "heTitle": "בראשית",
     "index_title": "Genesis",
-    "ref": "Genesis 43:29",
     "sourceHasEn": true,
     "sourceHeRef": "בראשית מ״ג:כ״ט",
     "sourceRef": "Genesis 43:29",
     "type": "commentary"
+  },
+  {
+    "ref": "Bereshit Rabbah 92:5",
+    "_id": "695f31b10072db26d629df55",
+    "anchorRef": "Rashi on Genesis 43:29:1",
+    "anchorRefExpanded": [
+      "Rashi on Genesis 43:29:1"
+    ],
+    "anchorVerse": 1,
+    "category": "Midrash",
+    "collectiveTitle": {
+      "he": "בראשית רבה",
+      "en": "Bereshit Rabbah"
+    },
+    "commentaryNum": 92.0005,
+    "compDate": [
+      400
+    ],
+    "heTitle": "בראשית רבה",
+    "index_title": "Bereshit Rabbah",
+    "sourceHasEn": true,
+    "sourceHeRef": "בראשית רבה צ״ב:ה׳",
+    "sourceRef": "Bereshit Rabbah 92:5",
+    "type": ""
+  },
+  {
+    "ref": "Genesis 33",
+    "_id": "696038e1338c46700f0338fb",
+    "anchorRef": "Rashi on Genesis 43:29:1",
+    "anchorRefExpanded": [
+      "Rashi on Genesis 43:29:1"
+    ],
+    "anchorVerse": 1,
+    "category": "Tanakh",
+    "collectiveTitle": {
+      "he": "בראשית",
+      "en": "Genesis"
+    },
+    "commentaryNum": 33,
+    "compDate": [
+      -1400,
+      -400
+    ],
+    "heTitle": "בראשית",
+    "index_title": "Genesis",
+    "sourceHasEn": true,
+    "sourceHeRef": "בראשית ל״ג",
+    "sourceRef": "Genesis 33",
+    "type": ""
   }
 ]

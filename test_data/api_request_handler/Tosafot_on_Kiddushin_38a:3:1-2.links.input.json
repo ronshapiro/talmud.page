@@ -1,5 +1,56 @@
 [
   {
+    "ref": "Yesh Seder LaMishnah on Mishnah Sheviit 9:7:1",
+    "_id": "69609b870594ed2e2ee2eb66",
+    "anchorRef": "Tosafot on Kiddushin 38a:3:1",
+    "anchorRefExpanded": [
+      "Tosafot on Kiddushin 38a:3:1"
+    ],
+    "anchorVerse": 1,
+    "category": "Quoting Commentary",
+    "collectiveTitle": {
+      "he": "יש סדר למשנה על משנה שביעית",
+      "en": "Yesh Seder LaMishnah on Mishnah Sheviit"
+    },
+    "commentaryNum": 7.0001,
+    "compDate": [
+      1751,
+      1799
+    ],
+    "heTitle": "יש סדר למשנה על משנה שביעית",
+    "index_title": "Yesh Seder LaMishnah on Mishnah Sheviit",
+    "sourceHasEn": false,
+    "sourceHeRef": "יש סדר למשנה על משנה שביעית ט׳:ז׳:א׳",
+    "sourceRef": "Yesh Seder LaMishnah on Mishnah Sheviit 9:7:1",
+    "type": ""
+  },
+  {
+    "ref": "Tosefta Kifshutah on Sotah 11:2:5",
+    "_id": "696129f3d140512d4f336b40",
+    "anchorRef": "Tosafot on Kiddushin 38a:3:2",
+    "anchorRefExpanded": [
+      "Tosafot on Kiddushin 38a:3:2"
+    ],
+    "anchorVerse": 2,
+    "category": "Quoting Commentary",
+    "collectiveTitle": {
+      "he": "תוספתא כפשוטה על סוטה",
+      "en": "Tosefta Kifshutah on Sotah"
+    },
+    "commentaryNum": 2.0005,
+    "compDate": [
+      1959,
+      1967
+    ],
+    "heTitle": "תוספתא כפשוטה על סוטה",
+    "index_title": "Tosefta Kifshutah on Sotah",
+    "sourceHasEn": false,
+    "sourceHeRef": "תוספתא כפשוטה על סוטה י״א:ב׳:ה׳",
+    "sourceRef": "Tosefta Kifshutah on Sotah 11:2:5",
+    "type": ""
+  },
+  {
+    "ref": "Kiddushin 38a:3",
     "_id": "5896257ed6e4a91d7627955b",
     "anchorRef": "Tosafot on Kiddushin 38a:3:1",
     "anchorRefExpanded": [
@@ -8,8 +59,8 @@
     "anchorVerse": 1,
     "category": "Talmud",
     "collectiveTitle": {
-      "en": "Kiddushin",
-      "he": "קידושין"
+      "he": "קידושין",
+      "en": "Kiddushin"
     },
     "commentaryNum": 75.0003,
     "compDate": [
@@ -18,13 +69,13 @@
     ],
     "heTitle": "קידושין",
     "index_title": "Kiddushin",
-    "ref": "Kiddushin 38a:3",
     "sourceHasEn": true,
     "sourceHeRef": "קידושין ל״ח א:ג׳",
     "sourceRef": "Kiddushin 38a:3",
     "type": "commentary"
   },
   {
+    "ref": "Chidushei Halachot on Kiddushin 38a:2",
     "_id": "59d0c0f7d6e4a9280e09848b",
     "anchorRef": "Tosafot on Kiddushin 38a:3:1",
     "anchorRefExpanded": [
@@ -33,8 +84,8 @@
     "anchorVerse": 1,
     "category": "Commentary",
     "collectiveTitle": {
-      "en": "Chidushei Halachot",
-      "he": "חידושי הלכות"
+      "he": "חידושי הלכות",
+      "en": "Chidushei Halachot"
     },
     "commentaryNum": 75.0002,
     "compDate": [
@@ -43,38 +94,13 @@
     ],
     "heTitle": "חדושי הלכות על קידושין",
     "index_title": "Chidushei Halachot on Kiddushin",
-    "ref": "Chidushei Halachot on Kiddushin 38a:2",
     "sourceHasEn": false,
     "sourceHeRef": "חדושי הלכות על קידושין ל״ח א:ב׳",
     "sourceRef": "Chidushei Halachot on Kiddushin 38a:2",
     "type": "commentary"
   },
   {
-    "_id": "5c17b967b071e100bf4ea1a4",
-    "anchorRef": "Tosafot on Kiddushin 38a:3:1",
-    "anchorRefExpanded": [
-      "Tosafot on Kiddushin 38a:3:1"
-    ],
-    "anchorVerse": 1,
-    "category": "Tanakh",
-    "collectiveTitle": {
-      "en": "Joshua",
-      "he": "יהושע"
-    },
-    "commentaryNum": 5.0012,
-    "compDate": [
-      -1300,
-      -500
-    ],
-    "heTitle": "יהושע",
-    "index_title": "Joshua",
-    "ref": "Joshua 5:12",
-    "sourceHasEn": true,
-    "sourceHeRef": "יהושע ה׳:י״ב",
-    "sourceRef": "Joshua 5:12",
-    "type": ""
-  },
-  {
+    "ref": "Penei Yehoshua on Kiddushin 38a:2",
     "_id": "5ca329d164c1c600579c0c3b",
     "anchorRef": "Tosafot on Kiddushin 38a:3:1",
     "anchorRefExpanded": [
@@ -83,8 +109,8 @@
     "anchorVerse": 1,
     "category": "Commentary",
     "collectiveTitle": {
-      "en": "Penei Yehoshua",
-      "he": "פני יהושע"
+      "he": "פני יהושע",
+      "en": "Penei Yehoshua"
     },
     "commentaryNum": 75.0002,
     "compDate": [
@@ -93,13 +119,38 @@
     ],
     "heTitle": "פני יהושע על קידושין",
     "index_title": "Penei Yehoshua on Kiddushin",
-    "ref": "Penei Yehoshua on Kiddushin 38a:2",
     "sourceHasEn": false,
     "sourceHeRef": "פני יהושע על קידושין ל״ח א:ב׳",
     "sourceRef": "Penei Yehoshua on Kiddushin 38a:2",
     "type": "commentary"
   },
   {
+    "ref": "Joshua 5:12",
+    "_id": "695efa62ad49e9ce7e5bca05",
+    "anchorRef": "Tosafot on Kiddushin 38a:3:1",
+    "anchorRefExpanded": [
+      "Tosafot on Kiddushin 38a:3:1"
+    ],
+    "anchorVerse": 1,
+    "category": "Tanakh",
+    "collectiveTitle": {
+      "he": "יהושע",
+      "en": "Joshua"
+    },
+    "commentaryNum": 5.0012,
+    "compDate": [
+      -1300,
+      -500
+    ],
+    "heTitle": "יהושע",
+    "index_title": "Joshua",
+    "sourceHasEn": true,
+    "sourceHeRef": "יהושע ה׳:י״ב",
+    "sourceRef": "Joshua 5:12",
+    "type": ""
+  },
+  {
+    "ref": "Kiddushin 38a:3",
     "_id": "5896257ed6e4a91d7627955d",
     "anchorRef": "Tosafot on Kiddushin 38a:3:2",
     "anchorRefExpanded": [
@@ -108,8 +159,8 @@
     "anchorVerse": 2,
     "category": "Talmud",
     "collectiveTitle": {
-      "en": "Kiddushin",
-      "he": "קידושין"
+      "he": "קידושין",
+      "en": "Kiddushin"
     },
     "commentaryNum": 75.0003,
     "compDate": [
@@ -118,13 +169,13 @@
     ],
     "heTitle": "קידושין",
     "index_title": "Kiddushin",
-    "ref": "Kiddushin 38a:3",
     "sourceHasEn": true,
     "sourceHeRef": "קידושין ל״ח א:ג׳",
     "sourceRef": "Kiddushin 38a:3",
     "type": "commentary"
   },
   {
+    "ref": "Rashash on Kiddushin 38a:3",
     "_id": "5ff5a542f41819777c397e00",
     "anchorRef": "Tosafot on Kiddushin 38a:3:2",
     "anchorRefExpanded": [
@@ -133,8 +184,8 @@
     "anchorVerse": 2,
     "category": "Commentary",
     "collectiveTitle": {
-      "en": "Rashash",
-      "he": "רש״ש"
+      "he": "רש״ש",
+      "en": "Rashash"
     },
     "commentaryNum": 75.0003,
     "compDate": [
@@ -143,13 +194,13 @@
     ],
     "heTitle": "רש\"ש על קידושין",
     "index_title": "Rashash on Kiddushin",
-    "ref": "Rashash on Kiddushin 38a:3",
     "sourceHasEn": false,
     "sourceHeRef": "רש\"ש על קידושין ל״ח א:ג׳",
     "sourceRef": "Rashash on Kiddushin 38a:3",
     "type": "commentary"
   },
   {
+    "ref": "Rashash on Kiddushin 38a:4",
     "_id": "5ff5a546f41819777c397e02",
     "anchorRef": "Tosafot on Kiddushin 38a:3:2",
     "anchorRefExpanded": [
@@ -158,8 +209,8 @@
     "anchorVerse": 2,
     "category": "Commentary",
     "collectiveTitle": {
-      "en": "Rashash",
-      "he": "רש״ש"
+      "he": "רש״ש",
+      "en": "Rashash"
     },
     "commentaryNum": 75.0004,
     "compDate": [
@@ -168,7 +219,6 @@
     ],
     "heTitle": "רש\"ש על קידושין",
     "index_title": "Rashash on Kiddushin",
-    "ref": "Rashash on Kiddushin 38a:4",
     "sourceHasEn": false,
     "sourceHeRef": "רש\"ש על קידושין ל״ח א:ד׳",
     "sourceRef": "Rashash on Kiddushin 38a:4",

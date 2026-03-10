@@ -2,40 +2,43 @@
   "id": "1:1",
   "sections": [
     {
-      "commentary": {},
-      "en": "<strong>The Meaning of the Holiday / The Festival of Matzot and the Festival of Pesaĥ</strong>",
+      "ref": "Peninei Halakhah, Pesach 1:1:1",
       "he": "<strong>משמעות החג / חג המצות וחג הפסח</strong>",
-      "ref": "Peninei Halakhah, Pesach 1:1:1"
+      "en": "<strong>The Meaning of the Holiday / The Festival of Matzot and the Festival of Pesaĥ</strong>",
+      "commentary": {}
     },
     {
+      "ref": "Peninei Halakhah, Pesach 1:1:2",
+      "he": "שני שמות מוזכרים לחג בתורה כנגד שתי משמעויותיו: חג המצות, שנאמר: \"אֶת חַג הַמַּצּוֹת תִּשְׁמֹר\" (שמות כג, טו. ובעוד מקומות בתנ\"ך), וחג הפסח, שנאמר: \"זֶבַח חַג הַפָּסַח\" (שמות לד, כה). חג המצות כנגד גילוי האמונה, וחג הפסח כנגד סגולת ישראל.",
+      "en": "The holiday of Pesaḥ has two different names in the Torah: Ḥag Ha-matzot (the Festival of Matzot) and Ḥag Ha-Pesaḥ (the Paschal festival, or Passover). These two names express two different meanings of the holiday: Ḥag Ha-matzot represents the revelation of God’s providence, and Ḥag Ha-Pesaḥ represents Israel’s unique spiritual capacity.",
       "commentary": {
         "Footnotes": {
           "comments": [
             {
-              "en": "1",
-              "he": "",
               "ref": "Footnote 1 on Peninei Halakhah, Pesach 1:1:2",
+              "he": "",
+              "en": "1",
               "sourceHeRef": "fake",
               "sourceRef": "fake"
             },
             {
-              "en": "<sup>1</sup> Shemot 23:15 <em>et al.</em><em> </em>",
-              "he": "",
               "ref": "Footnote 2 on Peninei Halakhah, Pesach 1:1:2",
+              "he": "",
+              "en": "<sup>1</sup> Shemot 23:15 <em>et al.</em><em> </em>",
               "sourceHeRef": "fake",
               "sourceRef": "fake"
             },
             {
-              "en": "2",
-              "he": "",
               "ref": "Footnote 3 on Peninei Halakhah, Pesach 1:1:2",
+              "he": "",
+              "en": "2",
               "sourceHeRef": "fake",
               "sourceRef": "fake"
             },
             {
-              "en": "<sup>2</sup> Shemot 34:25.",
-              "he": "",
               "ref": "Footnote 4 on Peninei Halakhah, Pesach 1:1:2",
+              "he": "",
+              "en": "<sup>2</sup> Shemot 34:25.",
               "sourceHeRef": "fake",
               "sourceRef": "fake"
             }
@@ -44,13 +47,20 @@
         "Verses": {
           "comments": [
             {
+              "ref": "Exodus 23:6-23:19",
+              "he": [
+                "אֶת־חַ֣ג הַמַּצּוֹת֮ תִּשְׁמֹר֒ שִׁבְעַ֣ת יָמִים֩ תֹּאכַ֨ל מַצּ֜וֹת כַּֽאֲשֶׁ֣ר צִוִּיתִ֗ךָ לְמוֹעֵד֙ חֹ֣דֶשׁ הָֽאָבִ֔יב כִּי־ב֖וֹ יָצָ֣אתָ מִמִּצְרָ֑יִם וְלֹא־יֵרָא֥וּ פָנַ֖י רֵיקָֽם׃"
+              ],
+              "en": [
+                "You shall observe the Feast of Unleavened Bread—eating unleavened bread for seven days as I have commanded you—at the set time in the month of Abib, for in it you went forth from Egypt; and none shall appear before Me empty-handed;"
+              ],
               "commentary": {
                 "Context": {
                   "comments": [
                     {
-                      "en": "This verse describes the first of the three annual festivals.",
-                      "he": "פסוק זה מתאר את חג הפסח, הראשון משלושת הרגלים.",
                       "ref": "llm-context: Peninei Halakhah, Pesach 1:1:2",
+                      "he": "פסוק זה מתאר את חג הפסח, הראשון משלושת הרגלים.",
+                      "en": "This verse describes the first of the three annual festivals.",
                       "sourceHeRef": "",
                       "sourceRef": ""
                     }
@@ -59,6 +69,23 @@
                 "Expanded Context": {
                   "comments": [
                     {
+                      "ref": "Exodus 23:6-23:19",
+                      "he": [
+                        "לֹ֥א תַטֶּ֛ה מִשְׁפַּ֥ט אֶבְיֹנְךָ֖ בְּרִיבֽוֹ׃",
+                        "מִדְּבַר־שֶׁ֖קֶר תִּרְחָ֑ק וְנָקִ֤י וְצַדִּיק֙ אַֽל־תַּהֲרֹ֔ג כִּ֥י לֹא־אַצְדִּ֖יק רָשָֽׁע׃",
+                        "וְשֹׁ֖חַד לֹ֣א תִקָּ֑ח כִּ֤י הַשֹּׁ֙חַד֙ יְעַוֵּ֣ר פִּקְחִ֔ים וִֽיסַלֵּ֖ף דִּבְרֵ֥י צַדִּיקִֽים׃",
+                        "וְגֵ֖ר לֹ֣א תִלְחָ֑ץ וְאַתֶּ֗ם יְדַעְתֶּם֙ אֶת־נֶ֣פֶשׁ הַגֵּ֔ר כִּֽי־גֵרִ֥ים הֱיִיתֶ֖ם בְּאֶ֥רֶץ מִצְרָֽיִם׃",
+                        "וְשֵׁ֥שׁ שָׁנִ֖ים תִּזְרַ֣ע אֶת־אַרְצֶ֑ךָ וְאָסַפְתָּ֖ אֶת־תְּבוּאָתָֽהּ׃",
+                        "וְהַשְּׁבִיעִ֞ת תִּשְׁמְטֶ֣נָּה וּנְטַשְׁתָּ֗הּ וְאָֽכְלוּ֙ אֶבְיֹנֵ֣י עַמֶּ֔ךָ וְיִתְרָ֕ם תֹּאכַ֖ל חַיַּ֣ת הַשָּׂדֶ֑ה כֵּֽן־תַּעֲשֶׂ֥ה לְכַרְמְךָ֖ לְזֵיתֶֽךָ׃",
+                        "שֵׁ֤שֶׁת יָמִים֙ תַּעֲשֶׂ֣ה מַעֲשֶׂ֔יךָ וּבַיּ֥וֹם הַשְּׁבִיעִ֖י תִּשְׁבֹּ֑ת לְמַ֣עַן יָנ֗וּחַ שֽׁוֹרְךָ֙ וַחֲמֹרֶ֔ךָ וְיִנָּפֵ֥שׁ בֶּן־אֲמָתְךָ֖ וְהַגֵּֽר׃",
+                        "וּבְכֹ֛ל אֲשֶׁר־אָמַ֥רְתִּי אֲלֵיכֶ֖ם תִּשָּׁמֵ֑רוּ וְשֵׁ֨ם אֱלֹהִ֤ים אֲחֵרִים֙ לֹ֣א תַזְכִּ֔ירוּ לֹ֥א יִשָּׁמַ֖ע עַל־פִּֽיךָ׃",
+                        "שָׁלֹ֣שׁ רְגָלִ֔ים תָּחֹ֥ג לִ֖י בַּשָּׁנָֽה׃",
+                        "אֶת־חַ֣ג הַמַּצּוֹת֮ תִּשְׁמֹר֒ שִׁבְעַ֣ת יָמִים֩ תֹּאכַ֨ל מַצּ֜וֹת כַּֽאֲשֶׁ֣ר צִוִּיתִ֗ךָ לְמוֹעֵד֙ חֹ֣דֶשׁ הָֽאָבִ֔יב כִּי־ב֖וֹ יָצָ֣אתָ מִמִּצְרָ֑יִם וְלֹא־יֵרָא֥וּ פָנַ֖י רֵיקָֽם׃",
+                        "וְחַ֤ג הַקָּצִיר֙ בִּכּוּרֵ֣י מַעֲשֶׂ֔יךָ אֲשֶׁ֥ר תִּזְרַ֖ע בַּשָּׂדֶ֑ה וְחַ֤ג הָֽאָסִף֙ בְּצֵ֣את הַשָּׁנָ֔ה בְּאׇסְפְּךָ֥ אֶֽת־מַעֲשֶׂ֖יךָ מִן־הַשָּׂדֶֽה׃",
+                        "שָׁלֹ֥שׁ פְּעָמִ֖ים בַּשָּׁנָ֑ה יֵרָאֶה֙ כׇּל־זְכ֣וּרְךָ֔ אֶל־פְּנֵ֖י הָאָדֹ֥ן <span class=\"hebrew-emphasis\">׀</span> יְהֹוָֽה׃",
+                        "לֹֽא־תִזְבַּ֥ח עַל־חָמֵ֖ץ דַּם־זִבְחִ֑י וְלֹֽא־יָלִ֥ין חֵֽלֶב־חַגִּ֖י עַד־בֹּֽקֶר׃",
+                        "רֵאשִׁ֗ית בִּכּוּרֵי֙ אַדְמָ֣תְךָ֔ תָּבִ֕יא בֵּ֖ית יְהֹוָ֣ה אֱלֹהֶ֑יךָ לֹֽא־תְבַשֵּׁ֥ל גְּדִ֖י בַּחֲלֵ֥ב אִמּֽוֹ׃ <span class=\"mam-spi-pe\">{פ}</span><br>"
+                      ],
                       "en": [
                         "You shall not subvert the rights of your needy in their disputes.",
                         "Keep far from a false charge; do not bring death on those who are innocent and in the right, for I will not acquit the wrongdoer.",
@@ -91,27 +118,10 @@
                         "Exodus 23:18",
                         "Exodus 23:19"
                       ],
-                      "he": [
-                        "לֹ֥א תַטֶּ֛ה מִשְׁפַּ֥ט אֶבְיֹנְךָ֖ בְּרִיבֽוֹ׃",
-                        "מִדְּבַר־שֶׁ֖קֶר תִּרְחָ֑ק וְנָקִ֤י וְצַדִּיק֙ אַֽל־תַּהֲרֹ֔ג כִּ֥י לֹא־אַצְדִּ֖יק רָשָֽׁע׃",
-                        "וְשֹׁ֖חַד לֹ֣א תִקָּ֑ח כִּ֤י הַשֹּׁ֙חַד֙ יְעַוֵּ֣ר פִּקְחִ֔ים וִֽיסַלֵּ֖ף דִּבְרֵ֥י צַדִּיקִֽים׃",
-                        "וְגֵ֖ר לֹ֣א תִלְחָ֑ץ וְאַתֶּ֗ם יְדַעְתֶּם֙ אֶת־נֶ֣פֶשׁ הַגֵּ֔ר כִּֽי־גֵרִ֥ים הֱיִיתֶ֖ם בְּאֶ֥רֶץ מִצְרָֽיִם׃",
-                        "וְשֵׁ֥שׁ שָׁנִ֖ים תִּזְרַ֣ע אֶת־אַרְצֶ֑ךָ וְאָסַפְתָּ֖ אֶת־תְּבוּאָתָֽהּ׃",
-                        "וְהַשְּׁבִיעִ֞ת תִּשְׁמְטֶ֣נָּה וּנְטַשְׁתָּ֗הּ וְאָֽכְלוּ֙ אֶבְיֹנֵ֣י עַמֶּ֔ךָ וְיִתְרָ֕ם תֹּאכַ֖ל חַיַּ֣ת הַשָּׂדֶ֑ה כֵּֽן־תַּעֲשֶׂ֥ה לְכַרְמְךָ֖ לְזֵיתֶֽךָ׃",
-                        "שֵׁ֤שֶׁת יָמִים֙ תַּעֲשֶׂ֣ה מַעֲשֶׂ֔יךָ וּבַיּ֥וֹם הַשְּׁבִיעִ֖י תִּשְׁבֹּ֑ת לְמַ֣עַן יָנ֗וּחַ שֽׁוֹרְךָ֙ וַחֲמֹרֶ֔ךָ וְיִנָּפֵ֥שׁ בֶּן־אֲמָתְךָ֖ וְהַגֵּֽר׃",
-                        "וּבְכֹ֛ל אֲשֶׁר־אָמַ֥רְתִּי אֲלֵיכֶ֖ם תִּשָּׁמֵ֑רוּ וְשֵׁ֨ם אֱלֹהִ֤ים אֲחֵרִים֙ לֹ֣א תַזְכִּ֔ירוּ לֹ֥א יִשָּׁמַ֖ע עַל־פִּֽיךָ׃",
-                        "שָׁלֹ֣שׁ רְגָלִ֔ים תָּחֹ֥ג לִ֖י בַּשָּׁנָֽה׃",
-                        "אֶת־חַ֣ג הַמַּצּוֹת֮ תִּשְׁמֹר֒ שִׁבְעַ֣ת יָמִים֩ תֹּאכַ֨ל מַצּ֜וֹת כַּֽאֲשֶׁ֣ר צִוִּיתִ֗ךָ לְמוֹעֵד֙ חֹ֣דֶשׁ הָֽאָבִ֔יב כִּי־ב֖וֹ יָצָ֣אתָ מִמִּצְרָ֑יִם וְלֹא־יֵרָא֥וּ פָנַ֖י רֵיקָֽם׃",
-                        "וְחַ֤ג הַקָּצִיר֙ בִּכּוּרֵ֣י מַעֲשֶׂ֔יךָ אֲשֶׁ֥ר תִּזְרַ֖ע בַּשָּׂדֶ֑ה וְחַ֤ג הָֽאָסִף֙ בְּצֵ֣את הַשָּׁנָ֔ה בְּאׇסְפְּךָ֥ אֶֽת־מַעֲשֶׂ֖יךָ מִן־הַשָּׂדֶֽה׃",
-                        "שָׁלֹ֥שׁ פְּעָמִ֖ים בַּשָּׁנָ֑ה יֵרָאֶה֙ כׇּל־זְכ֣וּרְךָ֔ אֶל־פְּנֵ֖י הָאָדֹ֥ן <span class=\"hebrew-emphasis\">׀</span> יְהֹוָֽה׃",
-                        "לֹֽא־תִזְבַּ֥ח עַל־חָמֵ֖ץ דַּם־זִבְחִ֑י וְלֹֽא־יָלִ֥ין חֵֽלֶב־חַגִּ֖י עַד־בֹּֽקֶר׃",
-                        "רֵאשִׁ֗ית בִּכּוּרֵי֙ אַדְמָ֣תְךָ֔ תָּבִ֕יא בֵּ֖ית יְהֹוָ֣ה אֱלֹהֶ֑יךָ לֹֽא־תְבַשֵּׁ֥ל גְּדִ֖י בַּחֲלֵ֥ב אִמּֽוֹ׃ <span class=\"mam-spi-pe\">{פ}</span><br>"
-                      ],
                       "link": "/Exodus/23",
                       "originalRefsBeforeRewriting": [
                         "Exodus 23:15"
                       ],
-                      "ref": "Exodus 23:6-23:19",
                       "sourceHeRef": "שמות כג:טו - את חג המצות תשמור",
                       "sourceRef": "Exodus 23:15 - The Feast of Unleavened Bread"
                     }
@@ -120,10 +130,34 @@
                 "Versions": {
                   "comments": [
                     {
+                      "ref": "Exodus 23:6-23:19",
+                      "he": [
+                        "אֶת־חַ֣ג הַמַּצּוֹת֮ תִּשְׁמֹר֒ שִׁבְעַ֣ת יָמִים֩ תֹּאכַ֨ל מַצּ֜וֹת כַּֽאֲשֶׁ֣ר צִוִּיתִ֗ךָ לְמוֹעֵד֙ חֹ֣דֶשׁ הָֽאָבִ֔יב כִּי־ב֖וֹ יָצָ֣אתָ מִמִּצְרָ֑יִם וְלֹא־יֵרָא֥וּ פָנַ֖י רֵיקָֽם׃"
+                      ],
+                      "en": [
+                        "Thou shalt keep the feast of unleavened bread: (thou shalt eat unleavened bread seven days, as I commanded thee, in the time appointed of the month Aviv; for in it thou didst come out from Miżrayim: and none shall appear before me empty:)"
+                      ],
                       "commentary": {
                         "Expanded Context": {
                           "comments": [
                             {
+                              "ref": "Exodus 23:6-23:19",
+                              "he": [
+                                "לֹ֥א תַטֶּ֛ה מִשְׁפַּ֥ט אֶבְיֹנְךָ֖ בְּרִיבֽוֹ׃",
+                                "מִדְּבַר־שֶׁ֖קֶר תִּרְחָ֑ק וְנָקִ֤י וְצַדִּיק֙ אַֽל־תַּהֲרֹ֔ג כִּ֥י לֹא־אַצְדִּ֖יק רָשָֽׁע׃",
+                                "וְשֹׁ֖חַד לֹ֣א תִקָּ֑ח כִּ֤י הַשֹּׁ֙חַד֙ יְעַוֵּ֣ר פִּקְחִ֔ים וִֽיסַלֵּ֖ף דִּבְרֵ֥י צַדִּיקִֽים׃",
+                                "וְגֵ֖ר לֹ֣א תִלְחָ֑ץ וְאַתֶּ֗ם יְדַעְתֶּם֙ אֶת־נֶ֣פֶשׁ הַגֵּ֔ר כִּֽי־גֵרִ֥ים הֱיִיתֶ֖ם בְּאֶ֥רֶץ מִצְרָֽיִם׃",
+                                "וְשֵׁ֥שׁ שָׁנִ֖ים תִּזְרַ֣ע אֶת־אַרְצֶ֑ךָ וְאָסַפְתָּ֖ אֶת־תְּבוּאָתָֽהּ׃",
+                                "וְהַשְּׁבִיעִ֞ת תִּשְׁמְטֶ֣נָּה וּנְטַשְׁתָּ֗הּ וְאָֽכְלוּ֙ אֶבְיֹנֵ֣י עַמֶּ֔ךָ וְיִתְרָ֕ם תֹּאכַ֖ל חַיַּ֣ת הַשָּׂדֶ֑ה כֵּֽן־תַּעֲשֶׂ֥ה לְכַרְמְךָ֖ לְזֵיתֶֽךָ׃",
+                                "שֵׁ֤שֶׁת יָמִים֙ תַּעֲשֶׂ֣ה מַעֲשֶׂ֔יךָ וּבַיּ֥וֹם הַשְּׁבִיעִ֖י תִּשְׁבֹּ֑ת לְמַ֣עַן יָנ֗וּחַ שֽׁוֹרְךָ֙ וַחֲמֹרֶ֔ךָ וְיִנָּפֵ֥שׁ בֶּן־אֲמָתְךָ֖ וְהַגֵּֽר׃",
+                                "וּבְכֹ֛ל אֲשֶׁר־אָמַ֥רְתִּי אֲלֵיכֶ֖ם תִּשָּׁמֵ֑רוּ וְשֵׁ֨ם אֱלֹהִ֤ים אֲחֵרִים֙ לֹ֣א תַזְכִּ֔ירוּ לֹ֥א יִשָּׁמַ֖ע עַל־פִּֽיךָ׃",
+                                "שָׁלֹ֣שׁ רְגָלִ֔ים תָּחֹ֥ג לִ֖י בַּשָּׁנָֽה׃",
+                                "אֶת־חַ֣ג הַמַּצּוֹת֮ תִּשְׁמֹר֒ שִׁבְעַ֣ת יָמִים֩ תֹּאכַ֨ל מַצּ֜וֹת כַּֽאֲשֶׁ֣ר צִוִּיתִ֗ךָ לְמוֹעֵד֙ חֹ֣דֶשׁ הָֽאָבִ֔יב כִּי־ב֖וֹ יָצָ֣אתָ מִמִּצְרָ֑יִם וְלֹא־יֵרָא֥וּ פָנַ֖י רֵיקָֽם׃",
+                                "וְחַ֤ג הַקָּצִיר֙ בִּכּוּרֵ֣י מַעֲשֶׂ֔יךָ אֲשֶׁ֥ר תִּזְרַ֖ע בַּשָּׂדֶ֑ה וְחַ֤ג הָֽאָסִף֙ בְּצֵ֣את הַשָּׁנָ֔ה בְּאׇסְפְּךָ֥ אֶֽת־מַעֲשֶׂ֖יךָ מִן־הַשָּׂדֶֽה׃",
+                                "שָׁלֹ֥שׁ פְּעָמִ֖ים בַּשָּׁנָ֑ה יֵרָאֶה֙ כׇּל־זְכ֣וּרְךָ֔ אֶל־פְּנֵ֖י הָאָדֹ֥ן&thinsp;<small>׀</small>&thinsp;יְהֹוָֽה׃",
+                                "לֹֽא־תִזְבַּ֥ח עַל־חָמֵ֖ץ דַּם־זִבְחִ֑י וְלֹֽא־יָלִ֥ין חֵֽלֶב־חַגִּ֖י עַד־בֹּֽקֶר׃",
+                                "רֵאשִׁ֗ית בִּכּוּרֵי֙ אַדְמָ֣תְךָ֔ תָּבִ֕יא בֵּ֖ית יְהֹוָ֣ה אֱלֹהֶ֑יךָ לֹֽא־תְבַשֵּׁ֥ל גְּדִ֖י בַּחֲלֵ֥ב אִמּֽוֹ׃&nbsp;<span class=\"mam-spi-pe\">{פ}</span><br>"
+                              ],
                               "en": [
                                 "Thou shalt not pervert the judgment of thy poor in his cause.",
                                 "Keep thee far from a false matter; and the innocent and righteous slay thou not: for I will not justify the wicked.",
@@ -156,36 +190,16 @@
                                 "Exodus 23:18",
                                 "Exodus 23:19"
                               ],
-                              "he": [
-                                "לֹ֥א תַטֶּ֛ה מִשְׁפַּ֥ט אֶבְיֹנְךָ֖ בְּרִיבֽוֹ׃",
-                                "מִדְּבַר־שֶׁ֖קֶר תִּרְחָ֑ק וְנָקִ֤י וְצַדִּיק֙ אַֽל־תַּהֲרֹ֔ג כִּ֥י לֹא־אַצְדִּ֖יק רָשָֽׁע׃",
-                                "וְשֹׁ֖חַד לֹ֣א תִקָּ֑ח כִּ֤י הַשֹּׁ֙חַד֙ יְעַוֵּ֣ר פִּקְחִ֔ים וִֽיסַלֵּ֖ף דִּבְרֵ֥י צַדִּיקִֽים׃",
-                                "וְגֵ֖ר לֹ֣א תִלְחָ֑ץ וְאַתֶּ֗ם יְדַעְתֶּם֙ אֶת־נֶ֣פֶשׁ הַגֵּ֔ר כִּֽי־גֵרִ֥ים הֱיִיתֶ֖ם בְּאֶ֥רֶץ מִצְרָֽיִם׃",
-                                "וְשֵׁ֥שׁ שָׁנִ֖ים תִּזְרַ֣ע אֶת־אַרְצֶ֑ךָ וְאָסַפְתָּ֖ אֶת־תְּבוּאָתָֽהּ׃",
-                                "וְהַשְּׁבִיעִ֞ת תִּשְׁמְטֶ֣נָּה וּנְטַשְׁתָּ֗הּ וְאָֽכְלוּ֙ אֶבְיֹנֵ֣י עַמֶּ֔ךָ וְיִתְרָ֕ם תֹּאכַ֖ל חַיַּ֣ת הַשָּׂדֶ֑ה כֵּֽן־תַּעֲשֶׂ֥ה לְכַרְמְךָ֖ לְזֵיתֶֽךָ׃",
-                                "שֵׁ֤שֶׁת יָמִים֙ תַּעֲשֶׂ֣ה מַעֲשֶׂ֔יךָ וּבַיּ֥וֹם הַשְּׁבִיעִ֖י תִּשְׁבֹּ֑ת לְמַ֣עַן יָנ֗וּחַ שֽׁוֹרְךָ֙ וַחֲמֹרֶ֔ךָ וְיִנָּפֵ֥שׁ בֶּן־אֲמָתְךָ֖ וְהַגֵּֽר׃",
-                                "וּבְכֹ֛ל אֲשֶׁר־אָמַ֥רְתִּי אֲלֵיכֶ֖ם תִּשָּׁמֵ֑רוּ וְשֵׁ֨ם אֱלֹהִ֤ים אֲחֵרִים֙ לֹ֣א תַזְכִּ֔ירוּ לֹ֥א יִשָּׁמַ֖ע עַל־פִּֽיךָ׃",
-                                "שָׁלֹ֣שׁ רְגָלִ֔ים תָּחֹ֥ג לִ֖י בַּשָּׁנָֽה׃",
-                                "אֶת־חַ֣ג הַמַּצּוֹת֮ תִּשְׁמֹר֒ שִׁבְעַ֣ת יָמִים֩ תֹּאכַ֨ל מַצּ֜וֹת כַּֽאֲשֶׁ֣ר צִוִּיתִ֗ךָ לְמוֹעֵד֙ חֹ֣דֶשׁ הָֽאָבִ֔יב כִּי־ב֖וֹ יָצָ֣אתָ מִמִּצְרָ֑יִם וְלֹא־יֵרָא֥וּ פָנַ֖י רֵיקָֽם׃",
-                                "וְחַ֤ג הַקָּצִיר֙ בִּכּוּרֵ֣י מַעֲשֶׂ֔יךָ אֲשֶׁ֥ר תִּזְרַ֖ע בַּשָּׂדֶ֑ה וְחַ֤ג הָֽאָסִף֙ בְּצֵ֣את הַשָּׁנָ֔ה בְּאׇסְפְּךָ֥ אֶֽת־מַעֲשֶׂ֖יךָ מִן־הַשָּׂדֶֽה׃",
-                                "שָׁלֹ֥שׁ פְּעָמִ֖ים בַּשָּׁנָ֑ה יֵרָאֶה֙ כׇּל־זְכ֣וּרְךָ֔ אֶל־פְּנֵ֖י הָאָדֹ֥ן <small>׀</small> יְהֹוָֽה׃",
-                                "לֹֽא־תִזְבַּ֥ח עַל־חָמֵ֖ץ דַּם־זִבְחִ֑י וְלֹֽא־יָלִ֥ין חֵֽלֶב־חַגִּ֖י עַד־בֹּֽקֶר׃",
-                                "רֵאשִׁ֗ית בִּכּוּרֵי֙ אַדְמָ֣תְךָ֔ תָּבִ֕יא בֵּ֖ית יְהֹוָ֣ה אֱלֹהֶ֑יךָ לֹֽא־תְבַשֵּׁ֥ל גְּדִ֖י בַּחֲלֵ֥ב אִמּֽוֹ׃ <span class=\"mam-spi-pe\">{פ}</span><br/>"
-                              ],
                               "link": "/Exodus/23",
                               "originalRefsBeforeRewriting": [
                                 "Exodus 23:15"
                               ],
-                              "ref": "Exodus 23:6-23:19",
                               "sourceHeRef": "קורן",
                               "sourceRef": "Koren Tanakh"
                             }
                           ]
                         }
                       },
-                      "en": [
-                        "Thou shalt keep the feast of unleavened bread: (thou shalt eat unleavened bread seven days, as I commanded thee, in the time appointed of the month Aviv; for in it thou didst come out from Miżrayim: and none shall appear before me empty:)"
-                      ],
                       "expandedRefsAfterRewriting": [
                         "Exodus 23:6",
                         "Exodus 23:7",
@@ -202,20 +216,13 @@
                         "Exodus 23:18",
                         "Exodus 23:19"
                       ],
-                      "he": [
-                        "אֶת־חַ֣ג הַמַּצּוֹת֮ תִּשְׁמֹר֒ שִׁבְעַ֣ת יָמִים֩ תֹּאכַ֨ל מַצּ֜וֹת כַּֽאֲשֶׁ֣ר צִוִּיתִ֗ךָ לְמוֹעֵד֙ חֹ֣דֶשׁ הָֽאָבִ֔יב כִּי־ב֖וֹ יָצָ֣אתָ מִמִּצְרָ֑יִם וְלֹא־יֵרָא֥וּ פָנַ֖י רֵיקָֽם׃"
-                      ],
                       "link": "/Exodus/23",
-                      "ref": "Exodus 23:6-23:19",
                       "sourceHeRef": "קורן",
                       "sourceRef": "Koren Tanakh"
                     }
                   ]
                 }
               },
-              "en": [
-                "You shall observe the Feast of Unleavened Bread—eating unleavened bread for seven days as I have commanded you—at the set time in the month of Abib, for in it you went forth from Egypt; and none shall appear before Me empty-handed;"
-              ],
               "expandedRefsAfterRewriting": [
                 "Exodus 23:6",
                 "Exodus 23:7",
@@ -232,22 +239,25 @@
                 "Exodus 23:18",
                 "Exodus 23:19"
               ],
-              "he": [
-                "אֶת־חַ֣ג הַמַּצּוֹת֮ תִּשְׁמֹר֒ שִׁבְעַ֣ת יָמִים֩ תֹּאכַ֨ל מַצּ֜וֹת כַּֽאֲשֶׁ֣ר צִוִּיתִ֗ךָ לְמוֹעֵד֙ חֹ֣דֶשׁ הָֽאָבִ֔יב כִּי־ב֖וֹ יָצָ֣אתָ מִמִּצְרָ֑יִם וְלֹא־יֵרָא֥וּ פָנַ֖י רֵיקָֽם׃"
-              ],
               "link": "/Exodus/23",
-              "ref": "Exodus 23:6-23:19",
               "sourceHeRef": "שמות כג:טו - את חג המצות תשמור",
               "sourceRef": "Exodus 23:15 - The Feast of Unleavened Bread"
             },
             {
+              "ref": "Exodus 34:15-34:26",
+              "he": [
+                "לֹֽא־תִשְׁחַ֥ט עַל־חָמֵ֖ץ דַּם־זִבְחִ֑י וְלֹא־יָלִ֣ין לַבֹּ֔קֶר זֶ֖בַח חַ֥ג הַפָּֽסַח׃"
+              ],
+              "en": [
+                "You shall not offer the blood of My sacrifice with anything leavened; and the sacrifice of the Feast of Passover shall not be left lying until morning."
+              ],
               "commentary": {
                 "Context": {
                   "comments": [
                     {
-                      "en": "God prohibits the Israelites from offering leavened bread with sacrifices, and from leaving the Passover sacrifice until morning.",
-                      "he": "ה' אוסר על בני ישראל להקריב קורבנות עם חמץ, ולהשאיר את קרבן הפסח עד הבוקר.",
                       "ref": "llm-context: Peninei Halakhah, Pesach 1:1:2",
+                      "he": "ה' אוסר על בני ישראל להקריב קורבנות עם חמץ, ולהשאיר את קרבן הפסח עד הבוקר.",
+                      "en": "God prohibits the Israelites from offering leavened bread with sacrifices, and from leaving the Passover sacrifice until morning.",
                       "sourceHeRef": "",
                       "sourceRef": ""
                     }
@@ -256,6 +266,21 @@
                 "Expanded Context": {
                   "comments": [
                     {
+                      "ref": "Exodus 34:15-34:26",
+                      "he": [
+                        "פֶּן־תִּכְרֹ֥ת בְּרִ֖ית לְיוֹשֵׁ֣ב הָאָ֑רֶץ וְזָנ֣וּ <b>׀</b> אַחֲרֵ֣י אֱלֹֽהֵיהֶ֗ם וְזָבְחוּ֙ לֵאלֹ֣הֵיהֶ֔ם וְקָרָ֣א לְךָ֔ וְאָכַלְתָּ֖ מִזִּבְחֽוֹ׃",
+                        "וְלָקַחְתָּ֥ מִבְּנֹתָ֖יו לְבָנֶ֑יךָ וְזָנ֣וּ בְנֹתָ֗יו אַחֲרֵי֙ אֱלֹ֣הֵיהֶ֔ן וְהִזְנוּ֙ אֶת־בָּנֶ֔יךָ אַחֲרֵ֖י אֱלֹהֵיהֶֽן׃",
+                        "אֱלֹהֵ֥י מַסֵּכָ֖ה לֹ֥א תַעֲשֶׂה־לָּֽךְ׃",
+                        "אֶת־חַ֣ג הַמַּצּוֹת֮ תִּשְׁמֹר֒ שִׁבְעַ֨ת יָמִ֜ים תֹּאכַ֤ל מַצּוֹת֙ אֲשֶׁ֣ר צִוִּיתִ֔ךָ לְמוֹעֵ֖ד חֹ֣דֶשׁ הָאָבִ֑יב כִּ֚י בְּחֹ֣דֶשׁ הָֽאָבִ֔יב יָצָ֖אתָ מִמִּצְרָֽיִם׃",
+                        "כׇּל־פֶּ֥טֶר רֶ֖חֶם לִ֑י וְכׇֽל־מִקְנְךָ֙ תִּזָּכָ֔ר פֶּ֖טֶר שׁ֥וֹר וָשֶֽׂה׃",
+                        "וּפֶ֤טֶר חֲמוֹר֙ תִּפְדֶּ֣ה בְשֶׂ֔ה וְאִם־לֹ֥א תִפְדֶּ֖ה וַעֲרַפְתּ֑וֹ כֹּ֣ל בְּכ֤וֹר בָּנֶ֙יךָ֙ תִּפְדֶּ֔ה וְלֹֽא־יֵרָא֥וּ פָנַ֖י רֵיקָֽם׃",
+                        "שֵׁ֤שֶׁת יָמִים֙ תַּעֲבֹ֔ד וּבַיּ֥וֹם הַשְּׁבִיעִ֖י תִּשְׁבֹּ֑ת בֶּחָרִ֥ישׁ וּבַקָּצִ֖יר תִּשְׁבֹּֽת׃",
+                        "וְחַ֤ג שָׁבֻעֹת֙ תַּעֲשֶׂ֣ה לְךָ֔ בִּכּוּרֵ֖י קְצִ֣יר חִטִּ֑ים וְחַג֙ הָֽאָסִ֔יף תְּקוּפַ֖ת הַשָּׁנָֽה׃",
+                        "שָׁלֹ֥שׁ פְּעָמִ֖ים בַּשָּׁנָ֑ה יֵרָאֶה֙ כׇּל־זְכ֣וּרְךָ֔ אֶת־פְּנֵ֛י הָֽאָדֹ֥ן <span class=\"hebrew-emphasis\">׀</span> יְהֹוָ֖ה אֱלֹהֵ֥י יִשְׂרָאֵֽל׃",
+                        "כִּֽי־אוֹרִ֤ישׁ גּוֹיִם֙ מִפָּנֶ֔יךָ וְהִרְחַבְתִּ֖י אֶת־גְּבֻלֶ֑ךָ וְלֹא־יַחְמֹ֥ד אִישׁ֙ אֶֽת־אַרְצְךָ֔ בַּעֲלֹֽתְךָ֗ לֵרָאוֹת֙ אֶת־פְּנֵי֙ יְהֹוָ֣ה אֱלֹהֶ֔יךָ שָׁלֹ֥שׁ פְּעָמִ֖ים בַּשָּׁנָֽה׃",
+                        "לֹֽא־תִשְׁחַ֥ט עַל־חָמֵ֖ץ דַּם־זִבְחִ֑י וְלֹא־יָלִ֣ין לַבֹּ֔קֶר זֶ֖בַח חַ֥ג הַפָּֽסַח׃",
+                        "רֵאשִׁ֗ית בִּכּוּרֵי֙ אַדְמָ֣תְךָ֔ תָּבִ֕יא בֵּ֖ית יְהֹוָ֣ה אֱלֹהֶ֑יךָ לֹא־תְבַשֵּׁ֥ל גְּדִ֖י בַּחֲלֵ֥ב אִמּֽוֹ׃ <span class=\"mam-spi-pe\">{פ}</span><br>"
+                      ],
                       "en": [
                         "You must not make a covenant with the inhabitants of the land, for they will lust after their gods and sacrifice to their gods and invite you, and you will eat of their sacrifices.",
                         "And when you take wives from among their daughters for your sons, their daughters will lust after their gods and will cause your sons to lust after their gods.",
@@ -284,25 +309,10 @@
                         "Exodus 34:25",
                         "Exodus 34:26"
                       ],
-                      "he": [
-                        "פֶּן־תִּכְרֹ֥ת בְּרִ֖ית לְיוֹשֵׁ֣ב הָאָ֑רֶץ וְזָנ֣וּ <b>׀</b> אַחֲרֵ֣י אֱלֹֽהֵיהֶ֗ם וְזָבְחוּ֙ לֵאלֹ֣הֵיהֶ֔ם וְקָרָ֣א לְךָ֔ וְאָכַלְתָּ֖ מִזִּבְחֽוֹ׃",
-                        "וְלָקַחְתָּ֥ מִבְּנֹתָ֖יו לְבָנֶ֑יךָ וְזָנ֣וּ בְנֹתָ֗יו אַחֲרֵי֙ אֱלֹ֣הֵיהֶ֔ן וְהִזְנוּ֙ אֶת־בָּנֶ֔יךָ אַחֲרֵ֖י אֱלֹהֵיהֶֽן׃",
-                        "אֱלֹהֵ֥י מַסֵּכָ֖ה לֹ֥א תַעֲשֶׂה־לָּֽךְ׃",
-                        "אֶת־חַ֣ג הַמַּצּוֹת֮ תִּשְׁמֹר֒ שִׁבְעַ֨ת יָמִ֜ים תֹּאכַ֤ל מַצּוֹת֙ אֲשֶׁ֣ר צִוִּיתִ֔ךָ לְמוֹעֵ֖ד חֹ֣דֶשׁ הָאָבִ֑יב כִּ֚י בְּחֹ֣דֶשׁ הָֽאָבִ֔יב יָצָ֖אתָ מִמִּצְרָֽיִם׃",
-                        "כׇּל־פֶּ֥טֶר רֶ֖חֶם לִ֑י וְכׇֽל־מִקְנְךָ֙ תִּזָּכָ֔ר פֶּ֖טֶר שׁ֥וֹר וָשֶֽׂה׃",
-                        "וּפֶ֤טֶר חֲמוֹר֙ תִּפְדֶּ֣ה בְשֶׂ֔ה וְאִם־לֹ֥א תִפְדֶּ֖ה וַעֲרַפְתּ֑וֹ כֹּ֣ל בְּכ֤וֹר בָּנֶ֙יךָ֙ תִּפְדֶּ֔ה וְלֹֽא־יֵרָא֥וּ פָנַ֖י רֵיקָֽם׃",
-                        "שֵׁ֤שֶׁת יָמִים֙ תַּעֲבֹ֔ד וּבַיּ֥וֹם הַשְּׁבִיעִ֖י תִּשְׁבֹּ֑ת בֶּחָרִ֥ישׁ וּבַקָּצִ֖יר תִּשְׁבֹּֽת׃",
-                        "וְחַ֤ג שָׁבֻעֹת֙ תַּעֲשֶׂ֣ה לְךָ֔ בִּכּוּרֵ֖י קְצִ֣יר חִטִּ֑ים וְחַג֙ הָֽאָסִ֔יף תְּקוּפַ֖ת הַשָּׁנָֽה׃",
-                        "שָׁלֹ֥שׁ פְּעָמִ֖ים בַּשָּׁנָ֑ה יֵרָאֶה֙ כׇּל־זְכ֣וּרְךָ֔ אֶת־פְּנֵ֛י הָֽאָדֹ֥ן <span class=\"hebrew-emphasis\">׀</span> יְהֹוָ֖ה אֱלֹהֵ֥י יִשְׂרָאֵֽל׃",
-                        "כִּֽי־אוֹרִ֤ישׁ גּוֹיִם֙ מִפָּנֶ֔יךָ וְהִרְחַבְתִּ֖י אֶת־גְּבֻלֶ֑ךָ וְלֹא־יַחְמֹ֥ד אִישׁ֙ אֶֽת־אַרְצְךָ֔ בַּעֲלֹֽתְךָ֗ לֵרָאוֹת֙ אֶת־פְּנֵי֙ יְהֹוָ֣ה אֱלֹהֶ֔יךָ שָׁלֹ֥שׁ פְּעָמִ֖ים בַּשָּׁנָֽה׃",
-                        "לֹֽא־תִשְׁחַ֥ט עַל־חָמֵ֖ץ דַּם־זִבְחִ֑י וְלֹא־יָלִ֣ין לַבֹּ֔קֶר זֶ֖בַח חַ֥ג הַפָּֽסַח׃",
-                        "רֵאשִׁ֗ית בִּכּוּרֵי֙ אַדְמָ֣תְךָ֔ תָּבִ֕יא בֵּ֖ית יְהֹוָ֣ה אֱלֹהֶ֑יךָ לֹא־תְבַשֵּׁ֥ל גְּדִ֖י בַּחֲלֵ֥ב אִמּֽוֹ׃ <span class=\"mam-spi-pe\">{פ}</span><br>"
-                      ],
                       "link": "/Exodus/34",
                       "originalRefsBeforeRewriting": [
                         "Exodus 34:25"
                       ],
-                      "ref": "Exodus 34:15-34:26",
                       "sourceHeRef": "שמות לד:כה - איסור להקריב קורבנות עם חמץ",
                       "sourceRef": "Exodus 34:25 - Prohibition against offering leavened bread with sacrifices"
                     }
@@ -311,10 +321,32 @@
                 "Versions": {
                   "comments": [
                     {
+                      "ref": "Exodus 34:15-34:26",
+                      "he": [
+                        "לֹֽא־תִשְׁחַ֥ט עַל־חָמֵ֖ץ דַּם־זִבְחִ֑י וְלֹא־יָלִ֣ין לַבֹּ֔קֶר זֶ֖בַח חַ֥ג הַפָּֽסַח׃"
+                      ],
+                      "en": [
+                        "Thou shalt not offer the blood of my sacrifice with leaven; neither shall the sacrifice of the feast of the passover be left to the morning."
+                      ],
                       "commentary": {
                         "Expanded Context": {
                           "comments": [
                             {
+                              "ref": "Exodus 34:15-34:26",
+                              "he": [
+                                "פֶּן־תִּכְרֹ֥ת בְּרִ֖ית לְיוֹשֵׁ֣ב הָאָ֑רֶץ וְזָנ֣וּ&thinsp;<b>׀</b> אַחֲרֵ֣י אֱלֹֽהֵיהֶ֗ם וְזָבְחוּ֙ לֵאלֹ֣הֵיהֶ֔ם וְקָרָ֣א לְךָ֔ וְאָכַלְתָּ֖ מִזִּבְחֽוֹ׃",
+                                "וְלָקַחְתָּ֥ מִבְּנֹתָ֖יו לְבָנֶ֑יךָ וְזָנ֣וּ בְנֹתָ֗יו אַחֲרֵי֙ אֱלֹ֣הֵיהֶ֔ן וְהִזְנוּ֙ אֶת־בָּנֶ֔יךָ אַחֲרֵ֖י אֱלֹהֵיהֶֽן׃",
+                                "אֱלֹהֵ֥י מַסֵּכָ֖ה לֹ֥א תַעֲשֶׂה־לָּֽךְ׃",
+                                "אֶת־חַ֣ג הַמַּצּוֹת֮ תִּשְׁמֹר֒ שִׁבְעַ֨ת יָמִ֜ים תֹּאכַ֤ל מַצּוֹת֙ אֲשֶׁ֣ר צִוִּיתִ֔ךָ לְמוֹעֵ֖ד חֹ֣דֶשׁ הָאָבִ֑יב כִּ֚י בְּחֹ֣דֶשׁ הָֽאָבִ֔יב יָצָ֖אתָ מִמִּצְרָֽיִם׃",
+                                "כׇּל־פֶּ֥טֶר רֶ֖חֶם לִ֑י וְכׇֽל־מִקְנְךָ֙ תִּזָּכָ֔ר פֶּ֖טֶר שׁ֥וֹר וָשֶֽׂה׃",
+                                "וּפֶ֤טֶר חֲמוֹר֙ תִּפְדֶּ֣ה בְשֶׂ֔ה וְאִם־לֹ֥א תִפְדֶּ֖ה וַעֲרַפְתּ֑וֹ כֹּ֣ל בְּכ֤וֹר בָּנֶ֙יךָ֙ תִּפְדֶּ֔ה וְלֹֽא־יֵרָא֥וּ פָנַ֖י רֵיקָֽם׃",
+                                "שֵׁ֤שֶׁת יָמִים֙ תַּעֲבֹ֔ד וּבַיּ֥וֹם הַשְּׁבִיעִ֖י תִּשְׁבֹּ֑ת בֶּחָרִ֥ישׁ וּבַקָּצִ֖יר תִּשְׁבֹּֽת׃",
+                                "וְחַ֤ג שָׁבֻעֹת֙ תַּעֲשֶׂ֣ה לְךָ֔ בִּכּוּרֵ֖י קְצִ֣יר חִטִּ֑ים וְחַג֙ הָֽאָסִ֔יף תְּקוּפַ֖ת הַשָּׁנָֽה׃",
+                                "שָׁלֹ֥שׁ פְּעָמִ֖ים בַּשָּׁנָ֑ה יֵרָאֶה֙ כׇּל־זְכ֣וּרְךָ֔ אֶת־פְּנֵ֛י הָֽאָדֹ֥ן&thinsp;<small>׀</small>&thinsp;יְהֹוָ֖ה אֱלֹהֵ֥י יִשְׂרָאֵֽל׃",
+                                "כִּֽי־אוֹרִ֤ישׁ גּוֹיִם֙ מִפָּנֶ֔יךָ וְהִרְחַבְתִּ֖י אֶת־גְּבֻלֶ֑ךָ וְלֹא־יַחְמֹ֥ד אִישׁ֙ אֶֽת־אַרְצְךָ֔ בַּעֲלֹֽתְךָ֗ לֵרָאוֹת֙ אֶת־פְּנֵי֙ יְהֹוָ֣ה אֱלֹהֶ֔יךָ שָׁלֹ֥שׁ פְּעָמִ֖ים בַּשָּׁנָֽה׃",
+                                "לֹֽא־תִשְׁחַ֥ט עַל־חָמֵ֖ץ דַּם־זִבְחִ֑י וְלֹא־יָלִ֣ין לַבֹּ֔קֶר זֶ֖בַח חַ֥ג הַפָּֽסַח׃",
+                                "רֵאשִׁ֗ית בִּכּוּרֵי֙ אַדְמָ֣תְךָ֔ תָּבִ֕יא בֵּ֖ית יְהֹוָ֣ה אֱלֹהֶ֑יךָ לֹא־תְבַשֵּׁ֥ל גְּדִ֖י בַּחֲלֵ֥ב אִמּֽוֹ׃&nbsp;<span class=\"mam-spi-pe\">{פ}</span><br>"
+                              ],
                               "en": [
                                 "lest thou make a covenant with the inhabitants of the land, and they go astray after their gods, and do sacrifice to their gods, and call thee, and thou eat of their sacrifice;",
                                 "and thou take of their daughters to thy sons, and their daughters play the harlot after their gods, and make thy sons play the harlot after their gods.",
@@ -343,34 +375,16 @@
                                 "Exodus 34:25",
                                 "Exodus 34:26"
                               ],
-                              "he": [
-                                "פֶּן־תִּכְרֹ֥ת בְּרִ֖ית לְיוֹשֵׁ֣ב הָאָ֑רֶץ וְזָנ֣וּ <b>׀</b> אַחֲרֵ֣י אֱלֹֽהֵיהֶ֗ם וְזָבְחוּ֙ לֵאלֹ֣הֵיהֶ֔ם וְקָרָ֣א לְךָ֔ וְאָכַלְתָּ֖ מִזִּבְחֽוֹ׃",
-                                "וְלָקַחְתָּ֥ מִבְּנֹתָ֖יו לְבָנֶ֑יךָ וְזָנ֣וּ בְנֹתָ֗יו אַחֲרֵי֙ אֱלֹ֣הֵיהֶ֔ן וְהִזְנוּ֙ אֶת־בָּנֶ֔יךָ אַחֲרֵ֖י אֱלֹהֵיהֶֽן׃",
-                                "אֱלֹהֵ֥י מַסֵּכָ֖ה לֹ֥א תַעֲשֶׂה־לָּֽךְ׃",
-                                "אֶת־חַ֣ג הַמַּצּוֹת֮ תִּשְׁמֹר֒ שִׁבְעַ֨ת יָמִ֜ים תֹּאכַ֤ל מַצּוֹת֙ אֲשֶׁ֣ר צִוִּיתִ֔ךָ לְמוֹעֵ֖ד חֹ֣דֶשׁ הָאָבִ֑יב כִּ֚י בְּחֹ֣דֶשׁ הָֽאָבִ֔יב יָצָ֖אתָ מִמִּצְרָֽיִם׃",
-                                "כׇּל־פֶּ֥טֶר רֶ֖חֶם לִ֑י וְכׇֽל־מִקְנְךָ֙ תִּזָּכָ֔ר פֶּ֖טֶר שׁ֥וֹר וָשֶֽׂה׃",
-                                "וּפֶ֤טֶר חֲמוֹר֙ תִּפְדֶּ֣ה בְשֶׂ֔ה וְאִם־לֹ֥א תִפְדֶּ֖ה וַעֲרַפְתּ֑וֹ כֹּ֣ל בְּכ֤וֹר בָּנֶ֙יךָ֙ תִּפְדֶּ֔ה וְלֹֽא־יֵרָא֥וּ פָנַ֖י רֵיקָֽם׃",
-                                "שֵׁ֤שֶׁת יָמִים֙ תַּעֲבֹ֔ד וּבַיּ֥וֹם הַשְּׁבִיעִ֖י תִּשְׁבֹּ֑ת בֶּחָרִ֥ישׁ וּבַקָּצִ֖יר תִּשְׁבֹּֽת׃",
-                                "וְחַ֤ג שָׁבֻעֹת֙ תַּעֲשֶׂ֣ה לְךָ֔ בִּכּוּרֵ֖י קְצִ֣יר חִטִּ֑ים וְחַג֙ הָֽאָסִ֔יף תְּקוּפַ֖ת הַשָּׁנָֽה׃",
-                                "שָׁלֹ֥שׁ פְּעָמִ֖ים בַּשָּׁנָ֑ה יֵרָאֶה֙ כׇּל־זְכ֣וּרְךָ֔ אֶת־פְּנֵ֛י הָֽאָדֹ֥ן <small>׀</small> יְהֹוָ֖ה אֱלֹהֵ֥י יִשְׂרָאֵֽל׃",
-                                "כִּֽי־אוֹרִ֤ישׁ גּוֹיִם֙ מִפָּנֶ֔יךָ וְהִרְחַבְתִּ֖י אֶת־גְּבֻלֶ֑ךָ וְלֹא־יַחְמֹ֥ד אִישׁ֙ אֶֽת־אַרְצְךָ֔ בַּעֲלֹֽתְךָ֗ לֵרָאוֹת֙ אֶת־פְּנֵי֙ יְהֹוָ֣ה אֱלֹהֶ֔יךָ שָׁלֹ֥שׁ פְּעָמִ֖ים בַּשָּׁנָֽה׃",
-                                "לֹֽא־תִשְׁחַ֥ט עַל־חָמֵ֖ץ דַּם־זִבְחִ֑י וְלֹא־יָלִ֣ין לַבֹּ֔קֶר זֶ֖בַח חַ֥ג הַפָּֽסַח׃",
-                                "רֵאשִׁ֗ית בִּכּוּרֵי֙ אַדְמָ֣תְךָ֔ תָּבִ֕יא בֵּ֖ית יְהֹוָ֣ה אֱלֹהֶ֑יךָ לֹא־תְבַשֵּׁ֥ל גְּדִ֖י בַּחֲלֵ֥ב אִמּֽוֹ׃ <span class=\"mam-spi-pe\">{פ}</span><br/>"
-                              ],
                               "link": "/Exodus/34",
                               "originalRefsBeforeRewriting": [
                                 "Exodus 34:25"
                               ],
-                              "ref": "Exodus 34:15-34:26",
                               "sourceHeRef": "קורן",
                               "sourceRef": "Koren Tanakh"
                             }
                           ]
                         }
                       },
-                      "en": [
-                        "Thou shalt not offer the blood of my sacrifice with leaven; neither shall the sacrifice of the feast of the passover be left to the morning."
-                      ],
                       "expandedRefsAfterRewriting": [
                         "Exodus 34:15",
                         "Exodus 34:16",
@@ -385,20 +399,13 @@
                         "Exodus 34:25",
                         "Exodus 34:26"
                       ],
-                      "he": [
-                        "לֹֽא־תִשְׁחַ֥ט עַל־חָמֵ֖ץ דַּם־זִבְחִ֑י וְלֹא־יָלִ֣ין לַבֹּ֔קֶר זֶ֖בַח חַ֥ג הַפָּֽסַח׃"
-                      ],
                       "link": "/Exodus/34",
-                      "ref": "Exodus 34:15-34:26",
                       "sourceHeRef": "קורן",
                       "sourceRef": "Koren Tanakh"
                     }
                   ]
                 }
               },
-              "en": [
-                "You shall not offer the blood of My sacrifice with anything leavened; and the sacrifice of the Feast of Passover shall not be left lying until morning."
-              ],
               "expandedRefsAfterRewriting": [
                 "Exodus 34:15",
                 "Exodus 34:16",
@@ -413,51 +420,54 @@
                 "Exodus 34:25",
                 "Exodus 34:26"
               ],
-              "he": [
-                "לֹֽא־תִשְׁחַ֥ט עַל־חָמֵ֖ץ דַּם־זִבְחִ֑י וְלֹא־יָלִ֣ין לַבֹּ֔קֶר זֶ֖בַח חַ֥ג הַפָּֽסַח׃"
-              ],
               "link": "/Exodus/34",
-              "ref": "Exodus 34:15-34:26",
               "sourceHeRef": "שמות לד:כה - איסור להקריב קורבנות עם חמץ",
               "sourceRef": "Exodus 34:25 - Prohibition against offering leavened bread with sacrifices"
             }
           ]
         }
-      },
-      "en": "The holiday of Pesaḥ has two different names in the Torah: Ḥag Ha-matzot (the Festival of Matzot) and Ḥag Ha-Pesaḥ (the Paschal festival, or Passover). These two names express two different meanings of the holiday: Ḥag Ha-matzot represents the revelation of God’s providence, and Ḥag Ha-Pesaḥ represents Israel’s unique spiritual capacity.",
-      "he": "שני שמות מוזכרים לחג בתורה כנגד שתי משמעויותיו: חג המצות, שנאמר: \"אֶת חַג הַמַּצּוֹת תִּשְׁמֹר\" (שמות כג, טו. ובעוד מקומות בתנ\"ך), וחג הפסח, שנאמר: \"זֶבַח חַג הַפָּסַח\" (שמות לד, כה). חג המצות כנגד גילוי האמונה, וחג הפסח כנגד סגולת ישראל.",
-      "ref": "Peninei Halakhah, Pesach 1:1:2"
+      }
     },
     {
-      "commentary": {},
-      "en": "At the Exodus from Egypt, God’s sovereignty over the world was given its most apparent and concrete manifestation. Thus, our faith in God is fundamentally rooted in the Exodus. The matza symbolizes this aspect of our holiday, as we read in the Hagada: “This matza that we eat – what is the reason? Because our forefathers’ dough did not have time to rise before the holy Supreme King of kings revealed Himself to them and redeemed them.”",
+      "ref": "Peninei Halakhah, Pesach 1:1:3",
       "he": "ביציאת מצרים נתגלתה הנהגתו של ה' בעולם באופן הבולט והמוחשי ביותר, ולכן יסוד האמונה בה' נעוץ ביציאת מצרים. ולכך רומזת המצה כפי שאנו אומרים בהגדה: \"מצה זו שאנו אוכלים על שום מה? על שום שלא הספיק בצקם של אבותינו להחמיץ עד שנגלה עליהם מלך מלכי המלכים הקדוש ברוך הוא וגאלם\".",
-      "ref": "Peninei Halakhah, Pesach 1:1:3"
+      "en": "At the Exodus from Egypt, God’s sovereignty over the world was given its most apparent and concrete manifestation. Thus, our faith in God is fundamentally rooted in the Exodus. The matza symbolizes this aspect of our holiday, as we read in the Hagada: “This matza that we eat – what is the reason? Because our forefathers’ dough did not have time to rise before the holy Supreme King of kings revealed Himself to them and redeemed them.”",
+      "commentary": {}
     },
     {
-      "commentary": {},
-      "en": "The unique mission and destiny of the people of Israel was also revealed at the time of the Exodus. The distinction between the Egyptians and the Israelites was conspicuous in all of the plagues, as the Egyptians were struck and the Israelites were saved. This culminated with the Plague of the Firstborn, when the Destroyer struck every Egyptian household but passed over (pasaḥ) Israelite homes. Israel’s uniqueness is expressed through and symbolized by the Paschal sacrifice.",
+      "ref": "Peninei Halakhah, Pesach 1:1:4",
       "he": "גם עניינו של עם ישראל נתגלה ביציאת מצרים, שבכל המכות בלט ההבדל שבין ישראל למצרים, שהמצרים הוכו ובני ישראל ניצלו, עד מכת בכורות, שפגע המשחית בכל בתי מצרים ועל בתי ישראל פסח. עניין זה בא לידי ביטוי בקרבן הפסח שמבליט את סגולת ישראל.",
-      "ref": "Peninei Halakhah, Pesach 1:1:4"
+      "en": "The unique mission and destiny of the people of Israel was also revealed at the time of the Exodus. The distinction between the Egyptians and the Israelites was conspicuous in all of the plagues, as the Egyptians were struck and the Israelites were saved. This culminated with the Plague of the Firstborn, when the Destroyer struck every Egyptian household but passed over (pasaḥ) Israelite homes. Israel’s uniqueness is expressed through and symbolized by the Paschal sacrifice.",
+      "commentary": {}
     },
     {
-      "commentary": {},
-      "en": "These two fundamental principles – faith and Israel – are linked together and interdependent. Unlike the other nations, which are formed through human endeavor, the nation of Israel was forged through divine miracles and wonders at the time of the Exodus for the purpose of receiving God’s Torah. Israel’s status entirely depends on their connection with God: when Israel does God’s will and makes God’s name manifest in the world, they earn all the blessings promised in the Torah. But when they do not fulfill God’s will, all of the curses written in the Torah are visited upon them.",
+      "ref": "Peninei Halakhah, Pesach 1:1:5",
       "he": "שני היסודות הללו, אמונה וישראל, קשורים ותלויים זה בזה. שלא כמו העמים האחרים שנוצרו מתוך מגמות אנושיות, עם ישראל נוסד ביציאת מצרים באופן אלוקי על ידי אותות ומופתים כדי לקבל את תורת ה'. וכל מצבם של ישראל תלוי בקשר לעניין האלוקי, שבשעה שישראל עושים רצונו של מקום ומגלים את שמו של ה' בעולם, הם זוכים לכל הברכות שבתורה, ובשעה שאינם עושים רצונו של מקום, באות עליהם כל הקללות שכתובות בתורה.",
-      "ref": "Peninei Halakhah, Pesach 1:1:5"
+      "en": "These two fundamental principles – faith and Israel – are linked together and interdependent. Unlike the other nations, which are formed through human endeavor, the nation of Israel was forged through divine miracles and wonders at the time of the Exodus for the purpose of receiving God’s Torah. Israel’s status entirely depends on their connection with God: when Israel does God’s will and makes God’s name manifest in the world, they earn all the blessings promised in the Torah. But when they do not fulfill God’s will, all of the curses written in the Torah are visited upon them.",
+      "commentary": {}
     },
     {
+      "ref": "Peninei Halakhah, Pesach 1:1:6",
+      "he": "מנגד, גם גילוי שמו של ה' בעולם, היינו גילוי הערכים האלוקיים בעולם, תלוי בישראל, כמו שנאמר (ישעיהו מג, כא): \"עַם זוּ יָצַרְתִּי לִי תְּהִלָּתִי יְסַפֵּרוּ\". לכן אמרו חכמים (ברא\"ר א, ד): \"מחשבתן של ישראל קדמה לכל דבר\", שלפני כל הדברים שנבראו בעולם, נבראה המחשבה על בריאת ישראל, כי על ידי ישראל מתגלית תכלית בריאת העולם. זהו שאמרו חכמים (שבת פח, א): \"תנאי התנה הקב\"ה עם מעשה בראשית ואמר להם: אם ישראל מקבלים התורה אתם מתקיימים, ואם לאו, אני מחזיר אתכם לתוהו ובוהו\". ביותר התגלתה סגולת ישראל, בזה שבחר בנו ה' להיות עמו ובניו, למרות היותנו עבדים שפלים שקועים במ\"ט שערי טומאה של מצרים.",
+      "en": "The revelation of God’s name in the world, i.e., the manifestation of divine values on earth, depends upon Israel, as Scripture states: “I created this nation for My sake; they will tell My praise” (Yeshayahu 43:21). For this reason, the Sages stated (Bereishit Rabba 1:4) that the idea of Israel preceded the creation of the world, for it is through Israel that the purpose of the world is revealed. This is what the Sages meant when they said: “God set a condition with Creation: ‘If Israel accepts the Torah, you will continue to exist, but if not, then I will return you to being formless and void’” (Shabbat 88a). Israel’s unique capabilities were further made manifest in that God chose us to be His nation and children, in spite of the fact that we were lowly slaves, stuck in the morass of impurity in Egypt.",
       "commentary": {
         "Verses": {
           "comments": [
             {
+              "ref": "Isaiah 43:11-43:28",
+              "he": [
+                "עַם־זוּ֙ יָצַ֣רְתִּי לִ֔י תְּהִלָּתִ֖י יְסַפֵּֽרוּ׃ <span class=\"mam-spi-samekh\">{ס}</span>        "
+              ],
+              "en": [
+                "The people I formed for Myself<br>That they might declare My praise.<br>"
+              ],
               "commentary": {
                 "Context": {
                   "comments": [
                     {
-                      "en": "God states that he formed Israel for himself so that they might declare his praise.",
-                      "he": "הַקָּדוֹשׁ מַכְרִיז שֶׁהוּא בָּרָא אֶת יִשְׂרָאֵל לְמַעַן שֶׁיַּכְרִיזוּ אֶת תְּהִלָּתוֹ.",
                       "ref": "llm-context: Peninei Halakhah, Pesach 1:1:6",
+                      "he": "הַקָּדוֹשׁ מַכְרִיז שֶׁהוּא בָּרָא אֶת יִשְׂרָאֵל לְמַעַן שֶׁיַּכְרִיזוּ אֶת תְּהִלָּתוֹ.",
+                      "en": "God states that he formed Israel for himself so that they might declare his praise.",
                       "sourceHeRef": "",
                       "sourceRef": ""
                     }
@@ -466,6 +476,27 @@
                 "Expanded Context": {
                   "comments": [
                     {
+                      "ref": "Isaiah 43:11-43:28",
+                      "he": [
+                        "אָנֹכִ֥י אָנֹכִ֖י יְהֹוָ֑ה וְאֵ֥ין מִבַּלְעָדַ֖י מוֹשִֽׁיעַ׃",
+                        "אָנֹכִ֞י הִגַּ֤דְתִּי וְהוֹשַׁ֙עְתִּי֙ וְהִשְׁמַ֔עְתִּי וְאֵ֥ין בָּכֶ֖ם זָ֑ר וְאַתֶּ֥ם עֵדַ֛י נְאֻם־יְהֹוָ֖ה וַאֲנִי־אֵֽל׃",
+                        "גַּם־מִיּוֹם֙ אֲנִ֣י ה֔וּא וְאֵ֥ין מִיָּדִ֖י מַצִּ֑יל אֶפְעַ֖ל וּמִ֥י יְשִׁיבֶֽנָּה׃ <span class=\"mam-spi-samekh\">{ס}</span>        ",
+                        "כֹּֽה־אָמַ֧ר יְהֹוָ֛ה גֹּאַלְכֶ֖ם קְד֣וֹשׁ יִשְׂרָאֵ֑ל לְמַעַנְכֶ֞ם שִׁלַּ֣חְתִּי בָבֶ֗לָה וְהוֹרַדְתִּ֤י בָֽרִיחִים֙ כֻּלָּ֔ם וְכַשְׂדִּ֖ים בָּאֳנִיּ֥וֹת רִנָּתָֽם׃",
+                        "אֲנִ֥י יְהֹוָ֖ה קְדֽוֹשְׁכֶ֑ם בּוֹרֵ֥א יִשְׂרָאֵ֖ל מַלְכְּכֶֽם׃ <span class=\"mam-spi-samekh\">{ס}</span>        ",
+                        "כֹּ֚ה אָמַ֣ר יְהֹוָ֔ה הַנּוֹתֵ֥ן בַּיָּ֖ם דָּ֑רֶךְ וּבְמַ֥יִם עַזִּ֖ים נְתִיבָֽה׃",
+                        "הַמּוֹצִ֥יא רֶכֶב־וָס֖וּס חַ֣יִל וְעִזּ֑וּז יַחְדָּ֤ו יִשְׁכְּבוּ֙ בַּל־יָק֔וּמוּ דָּעֲכ֖וּ כַּפִּשְׁתָּ֥ה כָבֽוּ׃",
+                        "אַֽל־תִּזְכְּר֖וּ רִאשֹׁנ֑וֹת וְקַדְמֹנִיּ֖וֹת אַל־תִּתְבֹּנָֽנוּ׃",
+                        "הִנְנִ֨י עֹשֶׂ֤ה חֲדָשָׁה֙ עַתָּ֣ה תִצְמָ֔ח הֲל֖וֹא תֵּדָע֑וּהָ אַ֣ף אָשִׂ֤ים בַּמִּדְבָּר֙ דֶּ֔רֶךְ בִּישִׁמ֖וֹן נְהָרֽוֹת׃",
+                        "תְּכַבְּדֵ֙נִי֙ חַיַּ֣ת הַשָּׂדֶ֔ה תַּנִּ֖ים וּבְנ֣וֹת יַעֲנָ֑ה כִּֽי־נָתַ֨תִּי בַמִּדְבָּ֜ר מַ֗יִם נְהָרוֹת֙ בִּֽישִׁימֹ֔ן לְהַשְׁק֖וֹת עַמִּ֥י בְחִירִֽי׃",
+                        "עַם־זוּ֙ יָצַ֣רְתִּי לִ֔י תְּהִלָּתִ֖י יְסַפֵּֽרוּ׃ <span class=\"mam-spi-samekh\">{ס}</span>        ",
+                        "וְלֹא־אֹתִ֥י קָרָ֖אתָ יַעֲקֹ֑ב כִּֽי־יָגַ֥עְתָּ בִּ֖י יִשְׂרָאֵֽל׃",
+                        "לֹֽא־הֵבֵ֤יאתָ לִּי֙ שֵׂ֣ה עֹלֹתֶ֔יךָ וּזְבָחֶ֖יךָ לֹ֣א כִבַּדְתָּ֑נִי לֹ֤א הֶעֱבַדְתִּ֙יךָ֙ בְּמִנְחָ֔ה וְלֹ֥א הוֹגַעְתִּ֖יךָ בִּלְבוֹנָֽה׃",
+                        "לֹא־קָנִ֨יתָ לִּ֤י בַכֶּ֙סֶף֙ קָנֶ֔ה וְחֵ֥לֶב זְבָחֶ֖יךָ לֹ֣א הִרְוִיתָ֑נִי אַ֗ךְ הֶעֱבַדְתַּ֙נִי֙ בְּחַטֹּאותֶ֔יךָ הוֹגַעְתַּ֖נִי בַּעֲוֺנֹתֶֽיךָ׃",
+                        "אָנֹכִ֨י אָנֹכִ֥י ה֛וּא מֹחֶ֥ה פְשָׁעֶ֖יךָ לְמַעֲנִ֑י וְחַטֹּאתֶ֖יךָ לֹ֥א אֶזְכֹּֽר׃",
+                        "הַזְכִּירֵ֕נִי נִשָּׁפְטָ֖ה יָ֑חַד סַפֵּ֥ר אַתָּ֖ה לְמַ֥עַן תִּצְדָּֽק׃",
+                        "אָבִ֥יךָ הָרִאשׁ֖וֹן חָטָ֑א וּמְלִיצֶ֖יךָ פָּ֥שְׁעוּ בִֽי׃",
+                        "וַאֲחַלֵּ֖ל שָׂ֣רֵי קֹ֑דֶשׁ וְאֶתְּנָ֤ה לַחֵ֙רֶם֙ יַֽעֲקֹ֔ב וְיִשְׂרָאֵ֖ל לְגִדּוּפִֽים׃ <span class=\"mam-spi-pe\">{פ}</span><br>"
+                      ],
                       "en": [
                         "None but me, the L<small>ORD</small>;<br>Beside Me, none can grant triumph.",
                         "I alone foretold the triumph<br>And I brought it to pass;<br>I announced it,<br>And no strange god was among you.<br>So you are My witnesses<br>—declares the L<small>ORD</small>—<br>And I am God.",
@@ -484,7 +515,7 @@
                         "It is I, I who—for My own sake—<br>Wipe your transgressions away<br>And remember your sins no more.",
                         "Help me remember!<br>Let us join in argument,<br>Tell your version,<br>That you may be vindicated.",
                         "Your earliest ancestor sinned,<br>And your spokesmen transgressed against Me.",
-                        "So I profaned the holy princes;<br>I abandoned Jacob to proscription<br>And Israel to mockery."
+                        "So I profaned the holy princes; <br>I abandoned Jacob to proscription<br>And Israel to mockery."
                       ],
                       "expandedRefsAfterRewriting": [
                         "Isaiah 43:11",
@@ -506,31 +537,10 @@
                         "Isaiah 43:27",
                         "Isaiah 43:28"
                       ],
-                      "he": [
-                        "אָנֹכִ֥י אָנֹכִ֖י יְהֹוָ֑ה וְאֵ֥ין מִבַּלְעָדַ֖י מוֹשִֽׁיעַ׃",
-                        "אָנֹכִ֞י הִגַּ֤דְתִּי וְהוֹשַׁ֙עְתִּי֙ וְהִשְׁמַ֔עְתִּי וְאֵ֥ין בָּכֶ֖ם זָ֑ר וְאַתֶּ֥ם עֵדַ֛י נְאֻם־יְהֹוָ֖ה וַאֲנִי־אֵֽל׃",
-                        "גַּם־מִיּוֹם֙ אֲנִ֣י ה֔וּא וְאֵ֥ין מִיָּדִ֖י מַצִּ֑יל אֶפְעַ֖ל וּמִ֥י יְשִׁיבֶֽנָּה׃ <span class=\"mam-spi-samekh\">{ס}</span>",
-                        "כֹּֽה־אָמַ֧ר יְהֹוָ֛ה גֹּאַלְכֶ֖ם קְד֣וֹשׁ יִשְׂרָאֵ֑ל לְמַעַנְכֶ֞ם שִׁלַּ֣חְתִּי בָבֶ֗לָה וְהוֹרַדְתִּ֤י בָֽרִיחִים֙ כֻּלָּ֔ם וְכַשְׂדִּ֖ים בָּאֳנִיּ֥וֹת רִנָּתָֽם׃",
-                        "אֲנִ֥י יְהֹוָ֖ה קְדֽוֹשְׁכֶ֑ם בּוֹרֵ֥א יִשְׂרָאֵ֖ל מַלְכְּכֶֽם׃ <span class=\"mam-spi-samekh\">{ס}</span>",
-                        "כֹּ֚ה אָמַ֣ר יְהֹוָ֔ה הַנּוֹתֵ֥ן בַּיָּ֖ם דָּ֑רֶךְ וּבְמַ֥יִם עַזִּ֖ים נְתִיבָֽה׃",
-                        "הַמּוֹצִ֥יא רֶכֶב־וָס֖וּס חַ֣יִל וְעִזּ֑וּז יַחְדָּ֤ו יִשְׁכְּבוּ֙ בַּל־יָק֔וּמוּ דָּעֲכ֖וּ כַּפִּשְׁתָּ֥ה כָבֽוּ׃",
-                        "אַֽל־תִּזְכְּר֖וּ רִאשֹׁנ֑וֹת וְקַדְמֹנִיּ֖וֹת אַל־תִּתְבֹּנָֽנוּ׃",
-                        "הִנְנִ֨י עֹשֶׂ֤ה חֲדָשָׁה֙ עַתָּ֣ה תִצְמָ֔ח הֲל֖וֹא תֵּדָע֑וּהָ אַ֣ף אָשִׂ֤ים בַּמִּדְבָּר֙ דֶּ֔רֶךְ בִּישִׁמ֖וֹן נְהָרֽוֹת׃",
-                        "תְּכַבְּדֵ֙נִי֙ חַיַּ֣ת הַשָּׂדֶ֔ה תַּנִּ֖ים וּבְנ֣וֹת יַעֲנָ֑ה כִּֽי־נָתַ֨תִּי בַמִּדְבָּ֜ר מַ֗יִם נְהָרוֹת֙ בִּֽישִׁימֹ֔ן לְהַשְׁק֖וֹת עַמִּ֥י בְחִירִֽי׃",
-                        "עַם־זוּ֙ יָצַ֣רְתִּי לִ֔י תְּהִלָּתִ֖י יְסַפֵּֽרוּ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
-                        "וְלֹא־אֹתִ֥י קָרָ֖אתָ יַעֲקֹ֑ב כִּֽי־יָגַ֥עְתָּ בִּ֖י יִשְׂרָאֵֽל׃",
-                        "לֹֽא־הֵבֵ֤יאתָ לִּי֙ שֵׂ֣ה עֹלֹתֶ֔יךָ וּזְבָחֶ֖יךָ לֹ֣א כִבַּדְתָּ֑נִי לֹ֤א הֶעֱבַדְתִּ֙יךָ֙ בְּמִנְחָ֔ה וְלֹ֥א הוֹגַעְתִּ֖יךָ בִּלְבוֹנָֽה׃",
-                        "לֹא־קָנִ֨יתָ לִּ֤י בַכֶּ֙סֶף֙ קָנֶ֔ה וְחֵ֥לֶב זְבָחֶ֖יךָ לֹ֣א הִרְוִיתָ֑נִי אַ֗ךְ הֶעֱבַדְתַּ֙נִי֙ בְּחַטֹּאותֶ֔יךָ הוֹגַעְתַּ֖נִי בַּעֲוֺנֹתֶֽיךָ׃",
-                        "אָנֹכִ֨י אָנֹכִ֥י ה֛וּא מֹחֶ֥ה פְשָׁעֶ֖יךָ לְמַעֲנִ֑י וְחַטֹּאתֶ֖יךָ לֹ֥א אֶזְכֹּֽר׃",
-                        "הַזְכִּירֵ֕נִי נִשָּׁפְטָ֖ה יָ֑חַד סַפֵּ֥ר אַתָּ֖ה לְמַ֥עַן תִּצְדָּֽק׃",
-                        "אָבִ֥יךָ הָרִאשׁ֖וֹן חָטָ֑א וּמְלִיצֶ֖יךָ פָּ֥שְׁעוּ בִֽי׃",
-                        "וַאֲחַלֵּ֖ל שָׂ֣רֵי קֹ֑דֶשׁ וְאֶתְּנָ֤ה לַחֵ֙רֶם֙ יַֽעֲקֹ֔ב וְיִשְׂרָאֵ֖ל לְגִדּוּפִֽים׃ <span class=\"mam-spi-pe\">{פ}</span><br>"
-                      ],
                       "link": "/Isaiah/43",
                       "originalRefsBeforeRewriting": [
                         "Isaiah 43:21"
                       ],
-                      "ref": "Isaiah 43:11-43:28",
                       "sourceHeRef": "ישעיהו מג:כא - מַטָּרַת יְהֹוָה לְיִשְׂרָאֵל",
                       "sourceRef": "Isaiah 43:21 - God's purpose for Israel"
                     }
@@ -539,10 +549,38 @@
                 "Versions": {
                   "comments": [
                     {
+                      "ref": "Isaiah 43:11-43:28",
+                      "he": [
+                        "עַם־זוּ֙ יָצַ֣רְתִּי לִ֔י תְּהִלָּתִ֖י יְסַפֵּֽרוּ׃&nbsp;<span class=\"mam-spi-samekh\">{ס}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+                      ],
+                      "en": [
+                        "This people have I formed for myself; they shall relate my praise."
+                      ],
                       "commentary": {
                         "Expanded Context": {
                           "comments": [
                             {
+                              "ref": "Isaiah 43:11-43:28",
+                              "he": [
+                                "אָנֹכִ֥י אָנֹכִ֖י יְהֹוָ֑ה וְאֵ֥ין מִבַּלְעָדַ֖י מוֹשִֽׁיעַ׃",
+                                "אָנֹכִ֞י הִגַּ֤דְתִּי וְהוֹשַׁ֙עְתִּי֙ וְהִשְׁמַ֔עְתִּי וְאֵ֥ין בָּכֶ֖ם זָ֑ר וְאַתֶּ֥ם עֵדַ֛י נְאֻם־יְהֹוָ֖ה וַאֲנִי־אֵֽל׃",
+                                "גַּם־מִיּוֹם֙ אֲנִ֣י ה֔וּא וְאֵ֥ין מִיָּדִ֖י מַצִּ֑יל אֶפְעַ֖ל וּמִ֥י יְשִׁיבֶֽנָּה׃&nbsp;<span class=\"mam-spi-samekh\">{ס}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+                                "כֹּֽה־אָמַ֧ר יְהֹוָ֛ה גֹּאַלְכֶ֖ם קְד֣וֹשׁ יִשְׂרָאֵ֑ל לְמַעַנְכֶ֞ם שִׁלַּ֣חְתִּי בָבֶ֗לָה וְהוֹרַדְתִּ֤י בָֽרִיחִים֙ כֻּלָּ֔ם וְכַשְׂדִּ֖ים בָּאֳנִיּ֥וֹת רִנָּתָֽם׃",
+                                "אֲנִ֥י יְהֹוָ֖ה קְדֽוֹשְׁכֶ֑ם בּוֹרֵ֥א יִשְׂרָאֵ֖ל מַלְכְּכֶֽם׃&nbsp;<span class=\"mam-spi-samekh\">{ס}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+                                "כֹּ֚ה אָמַ֣ר יְהֹוָ֔ה הַנּוֹתֵ֥ן בַּיָּ֖ם דָּ֑רֶךְ וּבְמַ֥יִם עַזִּ֖ים נְתִיבָֽה׃",
+                                "הַמּוֹצִ֥יא רֶכֶב־וָס֖וּס חַ֣יִל וְעִזּ֑וּז יַחְדָּ֤ו יִשְׁכְּבוּ֙ בַּל־יָק֔וּמוּ דָּעֲכ֖וּ כַּפִּשְׁתָּ֥ה כָבֽוּ׃",
+                                "אַֽל־תִּזְכְּר֖וּ רִאשֹׁנ֑וֹת וְקַדְמֹנִיּ֖וֹת אַל־תִּתְבֹּנָֽנוּ׃",
+                                "הִנְנִ֨י עֹשֶׂ֤ה חֲדָשָׁה֙ עַתָּ֣ה תִצְמָ֔ח הֲל֖וֹא תֵּדָע֑וּהָ אַ֣ף אָשִׂ֤ים בַּמִּדְבָּר֙ דֶּ֔רֶךְ בִּישִׁמ֖וֹן נְהָרֽוֹת׃",
+                                "תְּכַבְּדֵ֙נִי֙ חַיַּ֣ת הַשָּׂדֶ֔ה תַּנִּ֖ים וּבְנ֣וֹת יַעֲנָ֑ה כִּֽי־נָתַ֨תִּי בַמִּדְבָּ֜ר מַ֗יִם נְהָרוֹת֙ בִּֽישִׁימֹ֔ן לְהַשְׁק֖וֹת עַמִּ֥י בְחִירִֽי׃",
+                                "עַם־זוּ֙ יָצַ֣רְתִּי לִ֔י תְּהִלָּתִ֖י יְסַפֵּֽרוּ׃&nbsp;<span class=\"mam-spi-samekh\">{ס}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+                                "וְלֹא־אֹתִ֥י קָרָ֖אתָ יַעֲקֹ֑ב כִּֽי־יָגַ֥עְתָּ בִּ֖י יִשְׂרָאֵֽל׃",
+                                "לֹֽא־הֵבֵ֤יאתָ לִּי֙ שֵׂ֣ה עֹלֹתֶ֔יךָ וּזְבָחֶ֖יךָ לֹ֣א כִבַּדְתָּ֑נִי לֹ֤א הֶעֱבַדְתִּ֙יךָ֙ בְּמִנְחָ֔ה וְלֹ֥א הוֹגַעְתִּ֖יךָ בִּלְבוֹנָֽה׃",
+                                "לֹא־קָנִ֨יתָ לִּ֤י בַכֶּ֙סֶף֙ קָנֶ֔ה וְחֵ֥לֶב זְבָחֶ֖יךָ לֹ֣א הִרְוִיתָ֑נִי אַ֗ךְ הֶעֱבַדְתַּ֙נִי֙ בְּחַטֹּאותֶ֔יךָ הוֹגַעְתַּ֖נִי בַּעֲוֺנֹתֶֽיךָ׃",
+                                "אָנֹכִ֨י אָנֹכִ֥י ה֛וּא מֹחֶ֥ה פְשָׁעֶ֖יךָ לְמַעֲנִ֑י וְחַטֹּאתֶ֖יךָ לֹ֥א אֶזְכֹּֽר׃",
+                                "הַזְכִּירֵ֕נִי נִשָּׁפְטָ֖ה יָ֑חַד סַפֵּ֥ר אַתָּ֖ה לְמַ֥עַן תִּצְדָּֽק׃",
+                                "אָבִ֥יךָ הָרִאשׁ֖וֹן חָטָ֑א וּמְלִיצֶ֖יךָ פָּ֥שְׁעוּ בִֽי׃",
+                                "וַאֲחַלֵּ֖ל שָׂ֣רֵי קֹ֑דֶשׁ וְאֶתְּנָ֤ה לַחֵ֙רֶם֙ יַֽעֲקֹ֔ב וְיִשְׂרָאֵ֖ל לְגִדּוּפִֽים׃&nbsp;<span class=\"mam-spi-pe\">{פ}</span><br>"
+                              ],
                               "en": [
                                 "I, even I, am the Lord; and beside me there is no deliverer.",
                                 "I have declared, and have saved, and I have announced, and there was no strange god among you: therefore you are my witnesses, says the Lord, and I am God.",
@@ -583,40 +621,16 @@
                                 "Isaiah 43:27",
                                 "Isaiah 43:28"
                               ],
-                              "he": [
-                                "אָנֹכִ֥י אָנֹכִ֖י יְהֹוָ֑ה וְאֵ֥ין מִבַּלְעָדַ֖י מוֹשִֽׁיעַ׃",
-                                "אָנֹכִ֞י הִגַּ֤דְתִּי וְהוֹשַׁ֙עְתִּי֙ וְהִשְׁמַ֔עְתִּי וְאֵ֥ין בָּכֶ֖ם זָ֑ר וְאַתֶּ֥ם עֵדַ֛י נְאֻם־יְהֹוָ֖ה וַאֲנִי־אֵֽל׃",
-                                "גַּם־מִיּוֹם֙ אֲנִ֣י ה֔וּא וְאֵ֥ין מִיָּדִ֖י מַצִּ֑יל אֶפְעַ֖ל וּמִ֥י יְשִׁיבֶֽנָּה׃ <span class=\"mam-spi-samekh\">{ס}</span>",
-                                "כֹּֽה־אָמַ֧ר יְהֹוָ֛ה גֹּאַלְכֶ֖ם קְד֣וֹשׁ יִשְׂרָאֵ֑ל לְמַעַנְכֶ֞ם שִׁלַּ֣חְתִּי בָבֶ֗לָה וְהוֹרַדְתִּ֤י בָֽרִיחִים֙ כֻּלָּ֔ם וְכַשְׂדִּ֖ים בָּאֳנִיּ֥וֹת רִנָּתָֽם׃",
-                                "אֲנִ֥י יְהֹוָ֖ה קְדֽוֹשְׁכֶ֑ם בּוֹרֵ֥א יִשְׂרָאֵ֖ל מַלְכְּכֶֽם׃ <span class=\"mam-spi-samekh\">{ס}</span>",
-                                "כֹּ֚ה אָמַ֣ר יְהֹוָ֔ה הַנּוֹתֵ֥ן בַּיָּ֖ם דָּ֑רֶךְ וּבְמַ֥יִם עַזִּ֖ים נְתִיבָֽה׃",
-                                "הַמּוֹצִ֥יא רֶכֶב־וָס֖וּס חַ֣יִל וְעִזּ֑וּז יַחְדָּ֤ו יִשְׁכְּבוּ֙ בַּל־יָק֔וּמוּ דָּעֲכ֖וּ כַּפִּשְׁתָּ֥ה כָבֽוּ׃",
-                                "אַֽל־תִּזְכְּר֖וּ רִאשֹׁנ֑וֹת וְקַדְמֹנִיּ֖וֹת אַל־תִּתְבֹּנָֽנוּ׃",
-                                "הִנְנִ֨י עֹשֶׂ֤ה חֲדָשָׁה֙ עַתָּ֣ה תִצְמָ֔ח הֲל֖וֹא תֵּדָע֑וּהָ אַ֣ף אָשִׂ֤ים בַּמִּדְבָּר֙ דֶּ֔רֶךְ בִּישִׁמ֖וֹן נְהָרֽוֹת׃",
-                                "תְּכַבְּדֵ֙נִי֙ חַיַּ֣ת הַשָּׂדֶ֔ה תַּנִּ֖ים וּבְנ֣וֹת יַעֲנָ֑ה כִּֽי־נָתַ֨תִּי בַמִּדְבָּ֜ר מַ֗יִם נְהָרוֹת֙ בִּֽישִׁימֹ֔ן לְהַשְׁק֖וֹת עַמִּ֥י בְחִירִֽי׃",
-                                "עַם־זוּ֙ יָצַ֣רְתִּי לִ֔י תְּהִלָּתִ֖י יְסַפֵּֽרוּ׃ <span class=\"mam-spi-samekh\">{ס}</span>",
-                                "וְלֹא־אֹתִ֥י קָרָ֖אתָ יַעֲקֹ֑ב כִּֽי־יָגַ֥עְתָּ בִּ֖י יִשְׂרָאֵֽל׃",
-                                "לֹֽא־הֵבֵ֤יאתָ לִּי֙ שֵׂ֣ה עֹלֹתֶ֔יךָ וּזְבָחֶ֖יךָ לֹ֣א כִבַּדְתָּ֑נִי לֹ֤א הֶעֱבַדְתִּ֙יךָ֙ בְּמִנְחָ֔ה וְלֹ֥א הוֹגַעְתִּ֖יךָ בִּלְבוֹנָֽה׃",
-                                "לֹא־קָנִ֨יתָ לִּ֤י בַכֶּ֙סֶף֙ קָנֶ֔ה וְחֵ֥לֶב זְבָחֶ֖יךָ לֹ֣א הִרְוִיתָ֑נִי אַ֗ךְ הֶעֱבַדְתַּ֙נִי֙ בְּחַטֹּאותֶ֔יךָ הוֹגַעְתַּ֖נִי בַּעֲוֺנֹתֶֽיךָ׃",
-                                "אָנֹכִ֨י אָנֹכִ֥י ה֛וּא מֹחֶ֥ה פְשָׁעֶ֖יךָ לְמַעֲנִ֑י וְחַטֹּאתֶ֖יךָ לֹ֥א אֶזְכֹּֽר׃",
-                                "הַזְכִּירֵ֕נִי נִשָּׁפְטָ֖ה יָ֑חַד סַפֵּ֥ר אַתָּ֖ה לְמַ֥עַן תִּצְדָּֽק׃",
-                                "אָבִ֥יךָ הָרִאשׁ֖וֹן חָטָ֑א וּמְלִיצֶ֖יךָ פָּ֥שְׁעוּ בִֽי׃",
-                                "וַאֲחַלֵּ֖ל שָׂ֣רֵי קֹ֑דֶשׁ וְאֶתְּנָ֤ה לַחֵ֙רֶם֙ יַֽעֲקֹ֔ב וְיִשְׂרָאֵ֖ל לְגִדּוּפִֽים׃ <span class=\"mam-spi-pe\">{פ}</span><br/>"
-                              ],
                               "link": "/Isaiah/43",
                               "originalRefsBeforeRewriting": [
                                 "Isaiah 43:21"
                               ],
-                              "ref": "Isaiah 43:11-43:28",
                               "sourceHeRef": "קורן",
                               "sourceRef": "Koren Tanakh"
                             }
                           ]
                         }
                       },
-                      "en": [
-                        "This people have I formed for myself; they shall relate my praise."
-                      ],
                       "expandedRefsAfterRewriting": [
                         "Isaiah 43:11",
                         "Isaiah 43:12",
@@ -637,20 +651,13 @@
                         "Isaiah 43:27",
                         "Isaiah 43:28"
                       ],
-                      "he": [
-                        "עַם־זוּ֙ יָצַ֣רְתִּי לִ֔י תְּהִלָּתִ֖י יְסַפֵּֽרוּ׃ <span class=\"mam-spi-samekh\">{ס}</span>"
-                      ],
                       "link": "/Isaiah/43",
-                      "ref": "Isaiah 43:11-43:28",
                       "sourceHeRef": "קורן",
                       "sourceRef": "Koren Tanakh"
                     }
                   ]
                 }
               },
-              "en": [
-                "The people I formed for Myself<br>That they might declare My praise.<br>"
-              ],
               "expandedRefsAfterRewriting": [
                 "Isaiah 43:11",
                 "Isaiah 43:12",
@@ -671,26 +678,19 @@
                 "Isaiah 43:27",
                 "Isaiah 43:28"
               ],
-              "he": [
-                "עַם־זוּ֙ יָצַ֣רְתִּי לִ֔י תְּהִלָּתִ֖י יְסַפֵּֽרוּ׃ <span class=\"mam-spi-samekh\">{ס}</span>"
-              ],
               "link": "/Isaiah/43",
-              "ref": "Isaiah 43:11-43:28",
               "sourceHeRef": "ישעיהו מג:כא - מַטָּרַת יְהֹוָה לְיִשְׂרָאֵל",
               "sourceRef": "Isaiah 43:21 - God's purpose for Israel"
             }
           ]
         }
-      },
-      "en": "The revelation of God’s name in the world, i.e., the manifestation of divine values on earth, depends upon Israel, as Scripture states: “I created this nation for My sake; they will tell My praise” (Yeshayahu 43:21). For this reason, the Sages stated (Bereishit Rabba 1:4) that the idea of Israel preceded the creation of the world, for it is through Israel that the purpose of the world is revealed. This is what the Sages meant when they said: “God set a condition with Creation: ‘If Israel accepts the Torah, you will continue to exist, but if not, then I will return you to being formless and void’” (Shabbat 88a). Israel’s unique capabilities were further made manifest in that God chose us to be His nation and children, in spite of the fact that we were lowly slaves, stuck in the morass of impurity in Egypt.",
-      "he": "מנגד, גם גילוי שמו של ה' בעולם, היינו גילוי הערכים האלוקיים בעולם, תלוי בישראל, כמו שנאמר (ישעיהו מג, כא): \"עַם זוּ יָצַרְתִּי לִי תְּהִלָּתִי יְסַפֵּרוּ\". לכן אמרו חכמים (ברא\"ר א, ד): \"מחשבתן של ישראל קדמה לכל דבר\", שלפני כל הדברים שנבראו בעולם, נבראה המחשבה על בריאת ישראל, כי על ידי ישראל מתגלית תכלית בריאת העולם. זהו שאמרו חכמים (שבת פח, א): \"תנאי התנה הקב\"ה עם מעשה בראשית ואמר להם: אם ישראל מקבלים התורה אתם מתקיימים, ואם לאו, אני מחזיר אתכם לתוהו ובוהו\". ביותר התגלתה סגולת ישראל, בזה שבחר בנו ה' להיות עמו ובניו, למרות היותנו עבדים שפלים שקועים במ\"ט שערי טומאה של מצרים.",
-      "ref": "Peninei Halakhah, Pesach 1:1:6"
+      }
     },
     {
-      "commentary": {},
-      "en": "Thus the two biblical names of the holiday express two aspects of one matter, namely, the revelation of God’s name in the world through Israel.",
+      "ref": "Peninei Halakhah, Pesach 1:1:7",
       "he": "נמצא אם כן ששני השמות של החג שני פנים הם של עניין אחד, והוא: גילוי שם ה' בעולם על ידי ישראל.",
-      "ref": "Peninei Halakhah, Pesach 1:1:7"
+      "en": "Thus the two biblical names of the holiday express two aspects of one matter, namely, the revelation of God’s name in the world through Israel.",
+      "commentary": {}
     }
   ],
   "title": "Peninei Halakhah, Pesach 1:1",

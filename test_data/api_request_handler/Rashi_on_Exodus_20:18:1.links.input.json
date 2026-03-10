@@ -1,55 +1,6 @@
 [
   {
-    "_id": "54bd48b4fbfba217333667ec",
-    "anchorRef": "Rashi on Exodus 20:18:1",
-    "anchorRefExpanded": [
-      "Rashi on Exodus 20:18:1"
-    ],
-    "anchorVerse": 1,
-    "category": "Tanakh",
-    "collectiveTitle": {
-      "en": "Exodus",
-      "he": "שמות"
-    },
-    "commentaryNum": 19.0009,
-    "compDate": [
-      -1400,
-      -400
-    ],
-    "heTitle": "שמות",
-    "index_title": "Exodus",
-    "ref": "Exodus 19:9",
-    "sourceHasEn": true,
-    "sourceHeRef": "שמות י״ט:ט׳",
-    "sourceRef": "Exodus 19:9",
-    "type": ""
-  },
-  {
-    "_id": "54bd48b4fbfba217333667ee",
-    "anchorRef": "Rashi on Exodus 20:18:1",
-    "anchorRefExpanded": [
-      "Rashi on Exodus 20:18:1"
-    ],
-    "anchorVerse": 1,
-    "category": "Tanakh",
-    "collectiveTitle": {
-      "en": "Deuteronomy",
-      "he": "דברים"
-    },
-    "commentaryNum": 4.0011,
-    "compDate": [
-      -1400,
-      -400
-    ],
-    "heTitle": "דברים",
-    "index_title": "Deuteronomy",
-    "ref": "Deuteronomy 4:11",
-    "sourceHasEn": true,
-    "sourceHeRef": "דברים ד׳:י״א",
-    "sourceRef": "Deuteronomy 4:11",
-    "type": ""
-  },
-  {
+    "ref": "Exodus 20:18",
     "_id": "574c6ef4d6e4a9347afe0a48",
     "anchorRef": "Rashi on Exodus 20:18:1",
     "anchorRefExpanded": [
@@ -58,8 +9,8 @@
     "anchorVerse": 1,
     "category": "Tanakh",
     "collectiveTitle": {
-      "en": "Exodus",
-      "he": "שמות"
+      "he": "שמות",
+      "en": "Exodus"
     },
     "commentaryNum": 20.0018,
     "compDate": [
@@ -68,13 +19,13 @@
     ],
     "heTitle": "שמות",
     "index_title": "Exodus",
-    "ref": "Exodus 20:18",
     "sourceHasEn": true,
     "sourceHeRef": "שמות כ׳:י״ח",
     "sourceRef": "Exodus 20:18",
     "type": "commentary"
   },
   {
+    "ref": "Maskil LeDavid, Exodus 20:18:1",
     "_id": "60f575debd6a6e8e342f8773",
     "anchorRef": "Rashi on Exodus 20:18:1",
     "anchorRefExpanded": [
@@ -83,19 +34,19 @@
     "anchorVerse": 1,
     "category": "Commentary",
     "collectiveTitle": {
-      "en": "Maskil LeDavid",
-      "he": "משכיל לדוד"
+      "he": "משכיל לדוד",
+      "en": "Maskil LeDavid"
     },
     "commentaryNum": 18.0001,
     "heTitle": "שמות",
     "index_title": "Maskil LeDavid",
-    "ref": "Maskil LeDavid, Exodus 20:18:1",
     "sourceHasEn": false,
     "sourceHeRef": "משכיל לדוד, שמות כ׳:י״ח:א׳",
     "sourceRef": "Maskil LeDavid, Exodus 20:18:1",
     "type": "commentary"
   },
   {
+    "ref": "Mekhilta DeRabbi Yishmael, Tractate Bachodesh 9:18",
     "_id": "66d704bd882750c1410d08c5",
     "anchorRef": "Rashi on Exodus 20:18:1",
     "anchorRefExpanded": [
@@ -104,8 +55,8 @@
     "anchorVerse": 1,
     "category": "Midrash",
     "collectiveTitle": {
-      "en": "Mekhilta DeRabbi Yishmael",
-      "he": "מכילתא דרבי ישמעאל"
+      "he": "מכילתא דרבי ישמעאל",
+      "en": "Mekhilta DeRabbi Yishmael"
     },
     "commentaryNum": 9.0018,
     "compDate": [
@@ -113,10 +64,59 @@
     ],
     "heTitle": "מַסֶּכְתָּא דְבַחֹדֶשׁ",
     "index_title": "Mekhilta DeRabbi Yishmael",
-    "ref": "Mekhilta DeRabbi Yishmael, Tractate Bachodesh 9:18",
     "sourceHasEn": true,
     "sourceHeRef": "מכילתא דרבי ישמעאל, מַסֶּכְתָּא דְבַחֹדֶשׁ ט׳:י״ח",
     "sourceRef": "Mekhilta DeRabbi Yishmael, Tractate Bachodesh 9:18",
     "type": "commentary"
+  },
+  {
+    "ref": "Deuteronomy 4:11",
+    "_id": "695eb7c4435133f528b5ea73",
+    "anchorRef": "Rashi on Exodus 20:18:1",
+    "anchorRefExpanded": [
+      "Rashi on Exodus 20:18:1"
+    ],
+    "anchorVerse": 1,
+    "category": "Tanakh",
+    "collectiveTitle": {
+      "he": "דברים",
+      "en": "Deuteronomy"
+    },
+    "commentaryNum": 4.0011,
+    "compDate": [
+      -1400,
+      -400
+    ],
+    "heTitle": "דברים",
+    "index_title": "Deuteronomy",
+    "sourceHasEn": true,
+    "sourceHeRef": "דברים ד׳:י״א",
+    "sourceRef": "Deuteronomy 4:11",
+    "type": ""
+  },
+  {
+    "ref": "Exodus 19:9",
+    "_id": "695eb7c4435133f528b5ea75",
+    "anchorRef": "Rashi on Exodus 20:18:1",
+    "anchorRefExpanded": [
+      "Rashi on Exodus 20:18:1"
+    ],
+    "anchorVerse": 1,
+    "category": "Tanakh",
+    "collectiveTitle": {
+      "he": "שמות",
+      "en": "Exodus"
+    },
+    "commentaryNum": 19.0009,
+    "compDate": [
+      -1400,
+      -400
+    ],
+    "heTitle": "שמות",
+    "index_title": "Exodus",
+    "sourceHasEn": true,
+    "sourceHeRef": "שמות י״ט:ט׳",
+    "sourceRef": "Exodus 19:9",
+    "type": ""
   }
 ]

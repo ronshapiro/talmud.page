@@ -1,5 +1,6 @@
 [
   {
+    "ref": "Deuteronomy 34:8",
     "_id": "52270398edbab45df91b030a",
     "anchorRef": "Rashi on Deuteronomy 34:8:1",
     "anchorRefExpanded": [
@@ -8,8 +9,8 @@
     "anchorVerse": 1,
     "category": "Tanakh",
     "collectiveTitle": {
-      "en": "Deuteronomy",
-      "he": "דברים"
+      "he": "דברים",
+      "en": "Deuteronomy"
     },
     "commentaryNum": 34.0008,
     "compDate": [
@@ -18,63 +19,13 @@
     ],
     "heTitle": "דברים",
     "index_title": "Deuteronomy",
-    "ref": "Deuteronomy 34:8",
     "sourceHasEn": true,
     "sourceHeRef": "דברים ל״ד:ח׳",
     "sourceRef": "Deuteronomy 34:8",
     "type": "commentary"
   },
   {
-    "_id": "54bd48c3fbfba21733367bd8",
-    "anchorRef": "Rashi on Deuteronomy 34:8:1",
-    "anchorRefExpanded": [
-      "Rashi on Deuteronomy 34:8:1"
-    ],
-    "anchorVerse": 1,
-    "category": "Tanakh",
-    "collectiveTitle": {
-      "en": "Numbers",
-      "he": "במדבר"
-    },
-    "commentaryNum": 20.0029,
-    "compDate": [
-      -1400,
-      -400
-    ],
-    "heTitle": "במדבר",
-    "index_title": "Numbers",
-    "ref": "Numbers 20:29",
-    "sourceHasEn": true,
-    "sourceHeRef": "במדבר כ׳:כ״ט",
-    "sourceRef": "Numbers 20:29",
-    "type": ""
-  },
-  {
-    "_id": "58ca8ad7d6e4a901bb96b853",
-    "anchorRef": "Rashi on Deuteronomy 34:8:1",
-    "anchorRefExpanded": [
-      "Rashi on Deuteronomy 34:8:1"
-    ],
-    "anchorVerse": 1,
-    "category": "Midrash",
-    "collectiveTitle": {
-      "en": "Pirkei DeRabbi Eliezer",
-      "he": "פרקי דרבי אליעזר"
-    },
-    "commentaryNum": 17,
-    "compDate": [
-      630,
-      1030
-    ],
-    "heTitle": "פרקי דרבי אליעזר",
-    "index_title": "Pirkei DeRabbi Eliezer",
-    "ref": "Pirkei DeRabbi Eliezer 17",
-    "sourceHasEn": true,
-    "sourceHeRef": "פרקי דרבי אליעזר י״ז",
-    "sourceRef": "Pirkei DeRabbi Eliezer 17",
-    "type": ""
-  },
-  {
+    "ref": "Maskil LeDavid, Deuteronomy 34:8:1",
     "_id": "60f577ddc71051d5ed54eb66",
     "anchorRef": "Rashi on Deuteronomy 34:8:1",
     "anchorRefExpanded": [
@@ -83,16 +34,65 @@
     "anchorVerse": 1,
     "category": "Commentary",
     "collectiveTitle": {
-      "en": "Maskil LeDavid",
-      "he": "משכיל לדוד"
+      "he": "משכיל לדוד",
+      "en": "Maskil LeDavid"
     },
     "commentaryNum": 8.0001,
     "heTitle": "דברים",
     "index_title": "Maskil LeDavid",
-    "ref": "Maskil LeDavid, Deuteronomy 34:8:1",
     "sourceHasEn": false,
     "sourceHeRef": "משכיל לדוד, דברים ל״ד:ח׳:א׳",
     "sourceRef": "Maskil LeDavid, Deuteronomy 34:8:1",
     "type": "commentary"
+  },
+  {
+    "ref": "Numbers 20:29",
+    "_id": "695eb99c8d828dfe928065ca",
+    "anchorRef": "Rashi on Deuteronomy 34:8:1",
+    "anchorRefExpanded": [
+      "Rashi on Deuteronomy 34:8:1"
+    ],
+    "anchorVerse": 1,
+    "category": "Tanakh",
+    "collectiveTitle": {
+      "he": "במדבר",
+      "en": "Numbers"
+    },
+    "commentaryNum": 20.0029,
+    "compDate": [
+      -1400,
+      -400
+    ],
+    "heTitle": "במדבר",
+    "index_title": "Numbers",
+    "sourceHasEn": true,
+    "sourceHeRef": "במדבר כ׳:כ״ט",
+    "sourceRef": "Numbers 20:29",
+    "type": ""
+  },
+  {
+    "ref": "Pirkei DeRabbi Eliezer 17",
+    "_id": "695f3c6c987b4e5fb4a16ceb",
+    "anchorRef": "Rashi on Deuteronomy 34:8:1",
+    "anchorRefExpanded": [
+      "Rashi on Deuteronomy 34:8:1"
+    ],
+    "anchorVerse": 1,
+    "category": "Midrash",
+    "collectiveTitle": {
+      "he": "פרקי דרבי אליעזר",
+      "en": "Pirkei DeRabbi Eliezer"
+    },
+    "commentaryNum": 17,
+    "compDate": [
+      630,
+      1030
+    ],
+    "heTitle": "פרקי דרבי אליעזר",
+    "index_title": "Pirkei DeRabbi Eliezer",
+    "sourceHasEn": true,
+    "sourceHeRef": "פרקי דרבי אליעזר י״ז",
+    "sourceRef": "Pirkei DeRabbi Eliezer 17",
+    "type": ""
   }
 ]

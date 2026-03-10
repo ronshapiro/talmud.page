@@ -1,30 +1,6 @@
 [
   {
-    "_id": "5f6879f665fa995325fc6d6c",
-    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 22",
-    "anchorRefExpanded": [
-      "Siddur Ashkenaz, Berachot, Birkat HaMazon 22"
-    ],
-    "anchorVerse": 22,
-    "category": "Tanakh",
-    "collectiveTitle": {
-      "en": "Psalms",
-      "he": "תהילים"
-    },
-    "commentaryNum": 136.0025,
-    "compDate": [
-      -1000,
-      0
-    ],
-    "heTitle": "תהילים",
-    "index_title": "Psalms",
-    "ref": "Psalms 136:25",
-    "sourceHasEn": true,
-    "sourceHeRef": "תהילים קל״ו:כ״ה",
-    "sourceRef": "Psalms 136:25",
-    "type": ""
-  },
-  {
+    "ref": "I Samuel 12:22",
     "_id": "623be8dc89c38c69f4d1cf5e",
     "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 22",
     "anchorRefExpanded": [
@@ -33,8 +9,8 @@
     "anchorVerse": 22,
     "category": "Tanakh",
     "collectiveTitle": {
-      "en": "I Samuel",
-      "he": "שמואל א"
+      "he": "שמואל א",
+      "en": "I Samuel"
     },
     "commentaryNum": 12.0022,
     "compDate": [
@@ -43,13 +19,63 @@
     ],
     "heTitle": "שמואל א",
     "index_title": "I Samuel",
-    "ref": "I Samuel 12:22",
     "sourceHasEn": true,
     "sourceHeRef": "שמואל א י״ב:כ״ב",
     "sourceRef": "I Samuel 12:22",
     "type": "quotation_auto_tanakh"
   },
   {
+    "ref": "Berakhot 48b",
+    "_id": "6960f3b7e85b46c8b2cc6f9d",
+    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 22",
+    "anchorRefExpanded": [
+      "Siddur Ashkenaz, Berachot, Birkat HaMazon 22"
+    ],
+    "anchorVerse": 22,
+    "category": "Talmud",
+    "collectiveTitle": {
+      "he": "ברכות",
+      "en": "Berakhot"
+    },
+    "commentaryNum": 96,
+    "compDate": [
+      450,
+      550
+    ],
+    "heTitle": "ברכות",
+    "index_title": "Berakhot",
+    "sourceHasEn": true,
+    "sourceHeRef": "ברכות מ״ח ב",
+    "sourceRef": "Berakhot 48b",
+    "type": ""
+  },
+  {
+    "ref": "Psalms 136:25",
+    "_id": "6960f3b8e85b46c8b2cc6f9f",
+    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 22",
+    "anchorRefExpanded": [
+      "Siddur Ashkenaz, Berachot, Birkat HaMazon 22"
+    ],
+    "anchorVerse": 22,
+    "category": "Tanakh",
+    "collectiveTitle": {
+      "he": "תהילים",
+      "en": "Psalms"
+    },
+    "commentaryNum": 136.0025,
+    "compDate": [
+      -1000,
+      0
+    ],
+    "heTitle": "תהילים",
+    "index_title": "Psalms",
+    "sourceHasEn": true,
+    "sourceHeRef": "תהילים קל״ו:כ״ה",
+    "sourceRef": "Psalms 136:25",
+    "type": ""
+  },
+  {
+    "ref": "Exodus 3:8",
     "_id": "623be8dc89c38c69f4d1cf60",
     "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 24",
     "anchorRefExpanded": [
@@ -58,8 +84,8 @@
     "anchorVerse": 24,
     "category": "Tanakh",
     "collectiveTitle": {
-      "en": "Exodus",
-      "he": "שמות"
+      "he": "שמות",
+      "en": "Exodus"
     },
     "commentaryNum": 3.0008,
     "compDate": [
@@ -68,13 +94,13 @@
     ],
     "heTitle": "שמות",
     "index_title": "Exodus",
-    "ref": "Exodus 3:8",
     "sourceHasEn": true,
     "sourceHeRef": "שמות ג׳:ח׳",
     "sourceRef": "Exodus 3:8",
     "type": "quotation_auto_tanakh"
   },
   {
+    "ref": "Shabbat 21b:10",
     "_id": "5fa4269267813f47d4d363e7",
     "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 28",
     "anchorRefExpanded": [
@@ -83,8 +109,8 @@
     "anchorVerse": 28,
     "category": "Talmud",
     "collectiveTitle": {
-      "en": "Shabbat",
-      "he": "שבת"
+      "he": "שבת",
+      "en": "Shabbat"
     },
     "commentaryNum": 42.001,
     "compDate": [
@@ -93,13 +119,13 @@
     ],
     "heTitle": "שבת",
     "index_title": "Shabbat",
-    "ref": "Shabbat 21b:10",
     "sourceHasEn": true,
     "sourceHeRef": "שבת כ״א ב:י׳",
     "sourceRef": "Shabbat 21b:10",
     "type": ""
   },
   {
+    "ref": "Nehemiah 9:19",
     "_id": "623be8dc89c38c69f4d1cf62",
     "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 28",
     "anchorRefExpanded": [
@@ -108,8 +134,8 @@
     "anchorVerse": 28,
     "category": "Tanakh",
     "collectiveTitle": {
-      "en": "Nehemiah",
-      "he": "נחמיה"
+      "he": "נחמיה",
+      "en": "Nehemiah"
     },
     "commentaryNum": 9.0019,
     "compDate": [
@@ -118,13 +144,13 @@
     ],
     "heTitle": "נחמיה",
     "index_title": "Nehemiah",
-    "ref": "Nehemiah 9:19",
     "sourceHasEn": true,
     "sourceHeRef": "נחמיה ט׳:י״ט",
     "sourceRef": "Nehemiah 9:19",
     "type": "quotation_auto_tanakh"
   },
   {
+    "ref": "Jeremiah 51:36",
     "_id": "623be8dd89c38c69f4d1cf64",
     "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 28",
     "anchorRefExpanded": [
@@ -133,8 +159,8 @@
     "anchorVerse": 28,
     "category": "Tanakh",
     "collectiveTitle": {
-      "en": "Jeremiah",
-      "he": "ירמיהו"
+      "he": "ירמיהו",
+      "en": "Jeremiah"
     },
     "commentaryNum": 51.0036,
     "compDate": [
@@ -143,13 +169,13 @@
     ],
     "heTitle": "ירמיהו",
     "index_title": "Jeremiah",
-    "ref": "Jeremiah 51:36",
     "sourceHasEn": true,
     "sourceHeRef": "ירמיהו נ״א:ל״ו",
     "sourceRef": "Jeremiah 51:36",
     "type": "quotation_auto_tanakh"
   },
   {
+    "ref": "Esther 9:12",
     "_id": "623be8dd89c38c69f4d1cf66",
     "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 30",
     "anchorRefExpanded": [
@@ -158,8 +184,8 @@
     "anchorVerse": 30,
     "category": "Tanakh",
     "collectiveTitle": {
-      "en": "Esther",
-      "he": "אסתר"
+      "he": "אסתר",
+      "en": "Esther"
     },
     "commentaryNum": 9.0012,
     "compDate": [
@@ -168,13 +194,13 @@
     ],
     "heTitle": "אסתר",
     "index_title": "Esther",
-    "ref": "Esther 9:12",
     "sourceHasEn": true,
     "sourceHeRef": "אסתר ט׳:י״ב",
     "sourceRef": "Esther 9:12",
     "type": "quotation_auto_tanakh"
   },
   {
+    "ref": "Esther 9:17",
     "_id": "623be8de89c38c69f4d1cf68",
     "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 30",
     "anchorRefExpanded": [
@@ -183,8 +209,8 @@
     "anchorVerse": 30,
     "category": "Tanakh",
     "collectiveTitle": {
-      "en": "Esther",
-      "he": "אסתר"
+      "he": "אסתר",
+      "en": "Esther"
     },
     "commentaryNum": 9.0017,
     "compDate": [
@@ -193,13 +219,13 @@
     ],
     "heTitle": "אסתר",
     "index_title": "Esther",
-    "ref": "Esther 9:17",
     "sourceHasEn": true,
     "sourceHeRef": "אסתר ט׳:י״ז",
     "sourceRef": "Esther 9:17",
     "type": "quotation_auto_tanakh"
   },
   {
+    "ref": "Nehemiah 9:19",
     "_id": "623be8de89c38c69f4d1cf6a",
     "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 30",
     "anchorRefExpanded": [
@@ -208,8 +234,8 @@
     "anchorVerse": 30,
     "category": "Tanakh",
     "collectiveTitle": {
-      "en": "Nehemiah",
-      "he": "נחמיה"
+      "he": "נחמיה",
+      "en": "Nehemiah"
     },
     "commentaryNum": 9.0019,
     "compDate": [
@@ -218,13 +244,13 @@
     ],
     "heTitle": "נחמיה",
     "index_title": "Nehemiah",
-    "ref": "Nehemiah 9:19",
     "sourceHasEn": true,
     "sourceHeRef": "נחמיה ט׳:י״ט",
     "sourceRef": "Nehemiah 9:19",
     "type": "quotation_auto_tanakh"
   },
   {
+    "ref": "Esther 9:25",
     "_id": "623be8df89c38c69f4d1cf6c",
     "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 30",
     "anchorRefExpanded": [
@@ -233,8 +259,8 @@
     "anchorVerse": 30,
     "category": "Tanakh",
     "collectiveTitle": {
-      "en": "Esther",
-      "he": "אסתר"
+      "he": "אסתר",
+      "en": "Esther"
     },
     "commentaryNum": 9.0025,
     "compDate": [
@@ -243,38 +269,13 @@
     ],
     "heTitle": "אסתר",
     "index_title": "Esther",
-    "ref": "Esther 9:25",
     "sourceHasEn": true,
     "sourceHeRef": "אסתר ט׳:כ״ה",
     "sourceRef": "Esther 9:25",
     "type": "quotation_auto_tanakh"
   },
   {
-    "_id": "5f6879ff65fa995325fc6d77",
-    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 31",
-    "anchorRefExpanded": [
-      "Siddur Ashkenaz, Berachot, Birkat HaMazon 31"
-    ],
-    "anchorVerse": 31,
-    "category": "Tanakh",
-    "collectiveTitle": {
-      "en": "Deuteronomy",
-      "he": "דברים"
-    },
-    "commentaryNum": 8.001,
-    "compDate": [
-      -1400,
-      -400
-    ],
-    "heTitle": "דברים",
-    "index_title": "Deuteronomy",
-    "ref": "Deuteronomy 8:10",
-    "sourceHasEn": true,
-    "sourceHeRef": "דברים ח׳:י׳",
-    "sourceRef": "Deuteronomy 8:10",
-    "type": ""
-  },
-  {
+    "ref": "I Chronicles 29:13",
     "_id": "623be8df89c38c69f4d1cf6e",
     "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 31",
     "anchorRefExpanded": [
@@ -283,8 +284,8 @@
     "anchorVerse": 31,
     "category": "Tanakh",
     "collectiveTitle": {
-      "en": "I Chronicles",
-      "he": "דברי הימים א"
+      "he": "דברי הימים א",
+      "en": "I Chronicles"
     },
     "commentaryNum": 29.0013,
     "compDate": [
@@ -293,148 +294,23 @@
     ],
     "heTitle": "דברי הימים א",
     "index_title": "I Chronicles",
-    "ref": "I Chronicles 29:13",
     "sourceHasEn": true,
     "sourceHeRef": "דברי הימים א כ״ט:י״ג",
     "sourceRef": "I Chronicles 29:13",
     "type": "quotation_auto_tanakh"
   },
   {
-    "_id": "623be8df89c38c69f4d1cf70",
-    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 32",
+    "ref": "Deuteronomy 8:10",
+    "_id": "6960f3b850683dbcf5978452",
+    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 31",
     "anchorRefExpanded": [
-      "Siddur Ashkenaz, Berachot, Birkat HaMazon 32"
+      "Siddur Ashkenaz, Berachot, Birkat HaMazon 31"
     ],
-    "anchorVerse": 32,
+    "anchorVerse": 31,
     "category": "Tanakh",
     "collectiveTitle": {
-      "en": "Daniel",
-      "he": "דניאל"
-    },
-    "commentaryNum": 9.0019,
-    "compDate": [
-      -400,
-      -200
-    ],
-    "heTitle": "דניאל",
-    "index_title": "Daniel",
-    "ref": "Daniel 9:19",
-    "sourceHasEn": true,
-    "sourceHeRef": "דניאל ט׳:י״ט",
-    "sourceRef": "Daniel 9:19",
-    "type": "quotation_auto_tanakh"
-  },
-  {
-    "_id": "623be8e089c38c69f4d1cf72",
-    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 33",
-    "anchorRefExpanded": [
-      "Siddur Ashkenaz, Berachot, Birkat HaMazon 33"
-    ],
-    "anchorVerse": 33,
-    "category": "Tanakh",
-    "collectiveTitle": {
-      "en": "Daniel",
-      "he": "דניאל"
-    },
-    "commentaryNum": 9.0019,
-    "compDate": [
-      -400,
-      -200
-    ],
-    "heTitle": "דניאל",
-    "index_title": "Daniel",
-    "ref": "Daniel 9:19",
-    "sourceHasEn": true,
-    "sourceHeRef": "דניאל ט׳:י״ט",
-    "sourceRef": "Daniel 9:19",
-    "type": "quotation_auto_tanakh"
-  },
-  {
-    "_id": "623be8e089c38c69f4d1cf74",
-    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 35",
-    "anchorRefExpanded": [
-      "Siddur Ashkenaz, Berachot, Birkat HaMazon 35"
-    ],
-    "anchorVerse": 35,
-    "category": "Tanakh",
-    "collectiveTitle": {
-      "en": "Daniel",
-      "he": "דניאל"
-    },
-    "commentaryNum": 9.0016,
-    "compDate": [
-      -400,
-      -200
-    ],
-    "heTitle": "דניאל",
-    "index_title": "Daniel",
-    "ref": "Daniel 9:16",
-    "sourceHasEn": true,
-    "sourceHeRef": "דניאל ט׳:ט״ז",
-    "sourceRef": "Daniel 9:16",
-    "type": "quotation_auto_tanakh"
-  },
-  {
-    "_id": "623d2950911fb84bccd5e0c2",
-    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 37",
-    "anchorRefExpanded": [
-      "Siddur Ashkenaz, Berachot, Birkat HaMazon 37"
-    ],
-    "anchorVerse": 37,
-    "category": "Mishnah",
-    "collectiveTitle": {
-      "en": "Mishnah Pesachim",
-      "he": "משנה פסחים"
-    },
-    "commentaryNum": 10.0006,
-    "compDate": [
-      190,
-      230
-    ],
-    "heTitle": "משנה פסחים",
-    "index_title": "Mishnah Pesachim",
-    "ref": "Mishnah Pesachim 10:6",
-    "sourceHasEn": true,
-    "sourceHeRef": "משנה פסחים י׳:ו׳",
-    "sourceRef": "Mishnah Pesachim 10:6",
-    "type": "quotation_auto_tanakh"
-  },
-  {
-    "_id": "623be8e189c38c69f4d1cf76",
-    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 45",
-    "anchorRefExpanded": [
-      "Siddur Ashkenaz, Berachot, Birkat HaMazon 45"
-    ],
-    "anchorVerse": 45,
-    "category": "Tanakh",
-    "collectiveTitle": {
-      "en": "Nehemiah",
-      "he": "נחמיה"
-    },
-    "commentaryNum": 9.0031,
-    "compDate": [
-      -450,
-      -350
-    ],
-    "heTitle": "נחמיה",
-    "index_title": "Nehemiah",
-    "ref": "Nehemiah 9:31",
-    "sourceHasEn": true,
-    "sourceHeRef": "נחמיה ט׳:ל״א",
-    "sourceRef": "Nehemiah 9:31",
-    "type": "quotation_auto_tanakh"
-  },
-  {
-    "_id": "5f687a0d65fa995325fc6d87",
-    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 47",
-    "anchorRefExpanded": [
-      "Siddur Ashkenaz, Berachot, Birkat HaMazon 47"
-    ],
-    "anchorVerse": 47,
-    "category": "Tanakh",
-    "collectiveTitle": {
-      "en": "Deuteronomy",
-      "he": "דברים"
+      "he": "דברים",
+      "en": "Deuteronomy"
     },
     "commentaryNum": 8.001,
     "compDate": [
@@ -443,13 +319,188 @@
     ],
     "heTitle": "דברים",
     "index_title": "Deuteronomy",
-    "ref": "Deuteronomy 8:10",
     "sourceHasEn": true,
     "sourceHeRef": "דברים ח׳:י׳",
     "sourceRef": "Deuteronomy 8:10",
     "type": ""
   },
   {
+    "ref": "Daniel 9:19",
+    "_id": "623be8df89c38c69f4d1cf70",
+    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 32",
+    "anchorRefExpanded": [
+      "Siddur Ashkenaz, Berachot, Birkat HaMazon 32"
+    ],
+    "anchorVerse": 32,
+    "category": "Tanakh",
+    "collectiveTitle": {
+      "he": "דניאל",
+      "en": "Daniel"
+    },
+    "commentaryNum": 9.0019,
+    "compDate": [
+      -400,
+      -200
+    ],
+    "heTitle": "דניאל",
+    "index_title": "Daniel",
+    "sourceHasEn": true,
+    "sourceHeRef": "דניאל ט׳:י״ט",
+    "sourceRef": "Daniel 9:19",
+    "type": "quotation_auto_tanakh"
+  },
+  {
+    "ref": "Daniel 9:19",
+    "_id": "623be8e089c38c69f4d1cf72",
+    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 33",
+    "anchorRefExpanded": [
+      "Siddur Ashkenaz, Berachot, Birkat HaMazon 33"
+    ],
+    "anchorVerse": 33,
+    "category": "Tanakh",
+    "collectiveTitle": {
+      "he": "דניאל",
+      "en": "Daniel"
+    },
+    "commentaryNum": 9.0019,
+    "compDate": [
+      -400,
+      -200
+    ],
+    "heTitle": "דניאל",
+    "index_title": "Daniel",
+    "sourceHasEn": true,
+    "sourceHeRef": "דניאל ט׳:י״ט",
+    "sourceRef": "Daniel 9:19",
+    "type": "quotation_auto_tanakh"
+  },
+  {
+    "ref": "Daniel 9:16",
+    "_id": "623be8e089c38c69f4d1cf74",
+    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 35",
+    "anchorRefExpanded": [
+      "Siddur Ashkenaz, Berachot, Birkat HaMazon 35"
+    ],
+    "anchorVerse": 35,
+    "category": "Tanakh",
+    "collectiveTitle": {
+      "he": "דניאל",
+      "en": "Daniel"
+    },
+    "commentaryNum": 9.0016,
+    "compDate": [
+      -400,
+      -200
+    ],
+    "heTitle": "דניאל",
+    "index_title": "Daniel",
+    "sourceHasEn": true,
+    "sourceHeRef": "דניאל ט׳:ט״ז",
+    "sourceRef": "Daniel 9:16",
+    "type": "quotation_auto_tanakh"
+  },
+  {
+    "ref": "Mishnah Pesachim 10:6",
+    "_id": "623d2950911fb84bccd5e0c2",
+    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 37",
+    "anchorRefExpanded": [
+      "Siddur Ashkenaz, Berachot, Birkat HaMazon 37"
+    ],
+    "anchorVerse": 37,
+    "category": "Mishnah",
+    "collectiveTitle": {
+      "he": "משנה פסחים",
+      "en": "Mishnah Pesachim"
+    },
+    "commentaryNum": 10.0006,
+    "compDate": [
+      190,
+      230
+    ],
+    "heTitle": "משנה פסחים",
+    "index_title": "Mishnah Pesachim",
+    "sourceHasEn": true,
+    "sourceHeRef": "משנה פסחים י׳:ו׳",
+    "sourceRef": "Mishnah Pesachim 10:6",
+    "type": "quotation_auto_tanakh"
+  },
+  {
+    "ref": "Nehemiah 9:31",
+    "_id": "623be8e189c38c69f4d1cf76",
+    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 45",
+    "anchorRefExpanded": [
+      "Siddur Ashkenaz, Berachot, Birkat HaMazon 45"
+    ],
+    "anchorVerse": 45,
+    "category": "Tanakh",
+    "collectiveTitle": {
+      "he": "נחמיה",
+      "en": "Nehemiah"
+    },
+    "commentaryNum": 9.0031,
+    "compDate": [
+      -450,
+      -350
+    ],
+    "heTitle": "נחמיה",
+    "index_title": "Nehemiah",
+    "sourceHasEn": true,
+    "sourceHeRef": "נחמיה ט׳:ל״א",
+    "sourceRef": "Nehemiah 9:31",
+    "type": "quotation_auto_tanakh"
+  },
+  {
+    "ref": "Berakhot 45b",
+    "_id": "6960f3b9d90c08b6ebe9a0ef",
+    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 47",
+    "anchorRefExpanded": [
+      "Siddur Ashkenaz, Berachot, Birkat HaMazon 47"
+    ],
+    "anchorVerse": 47,
+    "category": "Talmud",
+    "collectiveTitle": {
+      "he": "ברכות",
+      "en": "Berakhot"
+    },
+    "commentaryNum": 90,
+    "compDate": [
+      450,
+      550
+    ],
+    "heTitle": "ברכות",
+    "index_title": "Berakhot",
+    "sourceHasEn": true,
+    "sourceHeRef": "ברכות מ״ה ב",
+    "sourceRef": "Berakhot 45b",
+    "type": ""
+  },
+  {
+    "ref": "Deuteronomy 8:10",
+    "_id": "6960f3b9d90c08b6ebe9a0f1",
+    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 47",
+    "anchorRefExpanded": [
+      "Siddur Ashkenaz, Berachot, Birkat HaMazon 47"
+    ],
+    "anchorVerse": 47,
+    "category": "Tanakh",
+    "collectiveTitle": {
+      "he": "דברים",
+      "en": "Deuteronomy"
+    },
+    "commentaryNum": 8.001,
+    "compDate": [
+      -1400,
+      -400
+    ],
+    "heTitle": "דברים",
+    "index_title": "Deuteronomy",
+    "sourceHasEn": true,
+    "sourceHeRef": "דברים ח׳:י׳",
+    "sourceRef": "Deuteronomy 8:10",
+    "type": ""
+  },
+  {
+    "ref": "Jeremiah 30:8",
     "_id": "623be8e189c38c69f4d1cf78",
     "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 54",
     "anchorRefExpanded": [
@@ -458,8 +509,8 @@
     "anchorVerse": 54,
     "category": "Tanakh",
     "collectiveTitle": {
-      "en": "Jeremiah",
-      "he": "ירמיהו"
+      "he": "ירמיהו",
+      "en": "Jeremiah"
     },
     "commentaryNum": 30.0008,
     "compDate": [
@@ -468,88 +519,13 @@
     ],
     "heTitle": "ירמיהו",
     "index_title": "Jeremiah",
-    "ref": "Jeremiah 30:8",
     "sourceHasEn": true,
     "sourceHeRef": "ירמיהו ל׳:ח׳",
     "sourceRef": "Jeremiah 30:8",
     "type": "quotation_auto_tanakh"
   },
   {
-    "_id": "5f687a1b65fa995325fc6d97",
-    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 61",
-    "anchorRefExpanded": [
-      "Siddur Ashkenaz, Berachot, Birkat HaMazon 61"
-    ],
-    "anchorVerse": 61,
-    "category": "Tanakh",
-    "collectiveTitle": {
-      "en": "Genesis",
-      "he": "בראשית"
-    },
-    "commentaryNum": 24.0001,
-    "compDate": [
-      -1400,
-      -400
-    ],
-    "heTitle": "בראשית",
-    "index_title": "Genesis",
-    "ref": "Genesis 24:1",
-    "sourceHasEn": true,
-    "sourceHeRef": "בראשית כ״ד:א׳",
-    "sourceRef": "Genesis 24:1",
-    "type": ""
-  },
-  {
-    "_id": "5f687a1c65fa995325fc6d99",
-    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 61",
-    "anchorRefExpanded": [
-      "Siddur Ashkenaz, Berachot, Birkat HaMazon 61"
-    ],
-    "anchorVerse": 61,
-    "category": "Tanakh",
-    "collectiveTitle": {
-      "en": "Genesis",
-      "he": "בראשית"
-    },
-    "commentaryNum": 27.0033,
-    "compDate": [
-      -1400,
-      -400
-    ],
-    "heTitle": "בראשית",
-    "index_title": "Genesis",
-    "ref": "Genesis 27:33",
-    "sourceHasEn": true,
-    "sourceHeRef": "בראשית כ״ז:ל״ג",
-    "sourceRef": "Genesis 27:33",
-    "type": ""
-  },
-  {
-    "_id": "5f687a1c65fa995325fc6d9b",
-    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 61",
-    "anchorRefExpanded": [
-      "Siddur Ashkenaz, Berachot, Birkat HaMazon 61"
-    ],
-    "anchorVerse": 61,
-    "category": "Tanakh",
-    "collectiveTitle": {
-      "en": "Genesis",
-      "he": "בראשית"
-    },
-    "commentaryNum": 33.0011,
-    "compDate": [
-      -1400,
-      -400
-    ],
-    "heTitle": "בראשית",
-    "index_title": "Genesis",
-    "ref": "Genesis 33:11",
-    "sourceHasEn": true,
-    "sourceHeRef": "בראשית ל״ג:י״א",
-    "sourceRef": "Genesis 33:11",
-    "type": ""
-  },
-  {
+    "ref": "Mishnah Bava Metzia 7:1",
     "_id": "623d2952911fb84bccd5e0c8",
     "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 61",
     "anchorRefExpanded": [
@@ -558,8 +534,8 @@
     "anchorVerse": 61,
     "category": "Mishnah",
     "collectiveTitle": {
-      "en": "Mishnah Bava Metzia",
-      "he": "משנה בבא מציעא"
+      "he": "משנה בבא מציעא",
+      "en": "Mishnah Bava Metzia"
     },
     "commentaryNum": 7.0001,
     "compDate": [
@@ -568,13 +544,88 @@
     ],
     "heTitle": "משנה בבא מציעא",
     "index_title": "Mishnah Bava Metzia",
-    "ref": "Mishnah Bava Metzia 7:1",
     "sourceHasEn": true,
     "sourceHeRef": "משנה בבא מציעא ז׳:א׳",
     "sourceRef": "Mishnah Bava Metzia 7:1",
     "type": "quotation_auto_tanakh"
   },
   {
+    "ref": "Genesis 27:33",
+    "_id": "6960f3b866a870b1094154be",
+    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 61",
+    "anchorRefExpanded": [
+      "Siddur Ashkenaz, Berachot, Birkat HaMazon 61"
+    ],
+    "anchorVerse": 61,
+    "category": "Tanakh",
+    "collectiveTitle": {
+      "he": "בראשית",
+      "en": "Genesis"
+    },
+    "commentaryNum": 27.0033,
+    "compDate": [
+      -1400,
+      -400
+    ],
+    "heTitle": "בראשית",
+    "index_title": "Genesis",
+    "sourceHasEn": true,
+    "sourceHeRef": "בראשית כ״ז:ל״ג",
+    "sourceRef": "Genesis 27:33",
+    "type": ""
+  },
+  {
+    "ref": "Genesis 33:11",
+    "_id": "6960f3b966a870b1094154c0",
+    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 61",
+    "anchorRefExpanded": [
+      "Siddur Ashkenaz, Berachot, Birkat HaMazon 61"
+    ],
+    "anchorVerse": 61,
+    "category": "Tanakh",
+    "collectiveTitle": {
+      "he": "בראשית",
+      "en": "Genesis"
+    },
+    "commentaryNum": 33.0011,
+    "compDate": [
+      -1400,
+      -400
+    ],
+    "heTitle": "בראשית",
+    "index_title": "Genesis",
+    "sourceHasEn": true,
+    "sourceHeRef": "בראשית ל״ג:י״א",
+    "sourceRef": "Genesis 33:11",
+    "type": ""
+  },
+  {
+    "ref": "Genesis 24:1",
+    "_id": "6960f3b966a870b1094154c2",
+    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 61",
+    "anchorRefExpanded": [
+      "Siddur Ashkenaz, Berachot, Birkat HaMazon 61"
+    ],
+    "anchorVerse": 61,
+    "category": "Tanakh",
+    "collectiveTitle": {
+      "he": "בראשית",
+      "en": "Genesis"
+    },
+    "commentaryNum": 24.0001,
+    "compDate": [
+      -1400,
+      -400
+    ],
+    "heTitle": "בראשית",
+    "index_title": "Genesis",
+    "sourceHasEn": true,
+    "sourceHeRef": "בראשית כ״ד:א׳",
+    "sourceRef": "Genesis 24:1",
+    "type": ""
+  },
+  {
+    "ref": "Berakhot 46a",
     "_id": "5f687a1f65fa995325fc6d9f",
     "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 63",
     "anchorRefExpanded": [
@@ -583,8 +634,8 @@
     "anchorVerse": 63,
     "category": "Talmud",
     "collectiveTitle": {
-      "en": "Berakhot",
-      "he": "ברכות"
+      "he": "ברכות",
+      "en": "Berakhot"
     },
     "commentaryNum": 91,
     "compDate": [
@@ -593,13 +644,13 @@
     ],
     "heTitle": "ברכות",
     "index_title": "Berakhot",
-    "ref": "Berakhot 46a",
     "sourceHasEn": true,
     "sourceHeRef": "ברכות מ״ו א",
     "sourceRef": "Berakhot 46a",
     "type": ""
   },
   {
+    "ref": "Proverbs 3:4",
     "_id": "623be8e289c38c69f4d1cf7a",
     "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 64",
     "anchorRefExpanded": [
@@ -608,8 +659,8 @@
     "anchorVerse": 64,
     "category": "Tanakh",
     "collectiveTitle": {
-      "en": "Proverbs",
-      "he": "משלי"
+      "he": "משלי",
+      "en": "Proverbs"
     },
     "commentaryNum": 3.0004,
     "compDate": [
@@ -618,13 +669,13 @@
     ],
     "heTitle": "משלי",
     "index_title": "Proverbs",
-    "ref": "Proverbs 3:4",
     "sourceHasEn": true,
     "sourceHeRef": "משלי ג׳:ד׳",
     "sourceRef": "Proverbs 3:4",
     "type": "quotation_auto_tanakh"
   },
   {
+    "ref": "Psalms 24:5",
     "_id": "623be8e289c38c69f4d1cf7c",
     "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 64",
     "anchorRefExpanded": [
@@ -633,8 +684,8 @@
     "anchorVerse": 64,
     "category": "Tanakh",
     "collectiveTitle": {
-      "en": "Psalms",
-      "he": "תהילים"
+      "he": "תהילים",
+      "en": "Psalms"
     },
     "commentaryNum": 24.0005,
     "compDate": [
@@ -643,13 +694,13 @@
     ],
     "heTitle": "תהילים",
     "index_title": "Psalms",
-    "ref": "Psalms 24:5",
     "sourceHasEn": true,
     "sourceHeRef": "תהילים כ״ד:ה׳",
     "sourceRef": "Psalms 24:5",
     "type": "quotation_auto_tanakh"
   },
   {
+    "ref": "Mishnah Shekalim 3:2",
     "_id": "623d2952911fb84bccd5e0ca",
     "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 64",
     "anchorRefExpanded": [
@@ -658,8 +709,8 @@
     "anchorVerse": 64,
     "category": "Mishnah",
     "collectiveTitle": {
-      "en": "Mishnah Shekalim",
-      "he": "משנה שקלים"
+      "he": "משנה שקלים",
+      "en": "Mishnah Shekalim"
     },
     "commentaryNum": 3.0002,
     "compDate": [
@@ -668,13 +719,13 @@
     ],
     "heTitle": "משנה שקלים",
     "index_title": "Mishnah Shekalim",
-    "ref": "Mishnah Shekalim 3:2",
     "sourceHasEn": true,
     "sourceHeRef": "משנה שקלים ג׳:ב׳",
     "sourceRef": "Mishnah Shekalim 3:2",
     "type": "quotation_auto_tanakh"
   },
   {
+    "ref": "Mishnah Tamid 7:4",
     "_id": "623d2953911fb84bccd5e0cc",
     "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 66",
     "anchorRefExpanded": [
@@ -683,8 +734,8 @@
     "anchorVerse": 66,
     "category": "Mishnah",
     "collectiveTitle": {
-      "en": "Mishnah Tamid",
-      "he": "משנה תמיד"
+      "he": "משנה תמיד",
+      "en": "Mishnah Tamid"
     },
     "commentaryNum": 7.0004,
     "compDate": [
@@ -693,13 +744,13 @@
     ],
     "heTitle": "משנה תמיד",
     "index_title": "Mishnah Tamid",
-    "ref": "Mishnah Tamid 7:4",
     "sourceHasEn": true,
     "sourceHeRef": "משנה תמיד ז׳:ד׳",
     "sourceRef": "Mishnah Tamid 7:4",
     "type": "quotation_auto_tanakh"
   },
   {
+    "ref": "Amos 9:11",
     "_id": "623be8e289c38c69f4d1cf7e",
     "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 74",
     "anchorRefExpanded": [
@@ -708,8 +759,8 @@
     "anchorVerse": 74,
     "category": "Tanakh",
     "collectiveTitle": {
-      "en": "Amos",
-      "he": "עמוס"
+      "he": "עמוס",
+      "en": "Amos"
     },
     "commentaryNum": 9.0011,
     "compDate": [
@@ -718,38 +769,13 @@
     ],
     "heTitle": "עמוס",
     "index_title": "Amos",
-    "ref": "Amos 9:11",
     "sourceHasEn": true,
     "sourceHeRef": "עמוס ט׳:י״א",
     "sourceRef": "Amos 9:11",
     "type": "quotation_auto_tanakh"
   },
   {
-    "_id": "5f687a2c65fa995325fc6dad",
-    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 75",
-    "anchorRefExpanded": [
-      "Siddur Ashkenaz, Berachot, Birkat HaMazon 75"
-    ],
-    "anchorVerse": 75,
-    "category": "Tanakh",
-    "collectiveTitle": {
-      "en": "II Samuel",
-      "he": "שמואל ב"
-    },
-    "commentaryNum": 22.0051,
-    "compDate": [
-      -1000,
-      -500
-    ],
-    "heTitle": "שמואל ב",
-    "index_title": "II Samuel",
-    "ref": "II Samuel 22:51",
-    "sourceHasEn": true,
-    "sourceHeRef": "שמואל ב כ״ב:נ״א",
-    "sourceRef": "II Samuel 22:51",
-    "type": ""
-  },
-  {
+    "ref": "Psalms 18:51",
     "_id": "623be8e389c38c69f4d1cf80",
     "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 75",
     "anchorRefExpanded": [
@@ -758,8 +784,8 @@
     "anchorVerse": 75,
     "category": "Tanakh",
     "collectiveTitle": {
-      "en": "Psalms",
-      "he": "תהילים"
+      "he": "תהילים",
+      "en": "Psalms"
     },
     "commentaryNum": 18.0051,
     "compDate": [
@@ -768,13 +794,13 @@
     ],
     "heTitle": "תהילים",
     "index_title": "Psalms",
-    "ref": "Psalms 18:51",
     "sourceHasEn": true,
     "sourceHeRef": "תהילים י״ח:נ״א",
     "sourceRef": "Psalms 18:51",
     "type": "quotation_auto_tanakh"
   },
   {
+    "ref": "Job 25:2",
     "_id": "623be8e389c38c69f4d1cf82",
     "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 75",
     "anchorRefExpanded": [
@@ -783,8 +809,8 @@
     "anchorVerse": 75,
     "category": "Tanakh",
     "collectiveTitle": {
-      "en": "Job",
-      "he": "איוב"
+      "he": "איוב",
+      "en": "Job"
     },
     "commentaryNum": 25.0002,
     "compDate": [
@@ -793,163 +819,38 @@
     ],
     "heTitle": "איוב",
     "index_title": "Job",
-    "ref": "Job 25:2",
     "sourceHasEn": true,
     "sourceHeRef": "איוב כ״ה:ב׳",
     "sourceRef": "Job 25:2",
     "type": "quotation_auto_tanakh"
   },
   {
-    "_id": "5f687a2e65fa995325fc6db0",
-    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 76",
+    "ref": "II Samuel 22:51",
+    "_id": "6960f3b9a98f6e2aeda62825",
+    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 75",
     "anchorRefExpanded": [
-      "Siddur Ashkenaz, Berachot, Birkat HaMazon 76"
+      "Siddur Ashkenaz, Berachot, Birkat HaMazon 75"
     ],
-    "anchorVerse": 76,
+    "anchorVerse": 75,
     "category": "Tanakh",
     "collectiveTitle": {
-      "en": "Psalms",
-      "he": "תהילים"
+      "he": "שמואל ב",
+      "en": "II Samuel"
     },
-    "commentaryNum": 34.001,
+    "commentaryNum": 22.0051,
     "compDate": [
       -1000,
-      0
-    ],
-    "heTitle": "תהילים",
-    "index_title": "Psalms",
-    "ref": "Psalms 34:10-11",
-    "sourceHasEn": true,
-    "sourceHeRef": "תהילים ל״ד:י׳-י״א",
-    "sourceRef": "Psalms 34:10-11",
-    "type": ""
-  },
-  {
-    "_id": "5f687a2e65fa995325fc6db2",
-    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 76",
-    "anchorRefExpanded": [
-      "Siddur Ashkenaz, Berachot, Birkat HaMazon 76"
-    ],
-    "anchorVerse": 76,
-    "category": "Tanakh",
-    "collectiveTitle": {
-      "en": "Psalms",
-      "he": "תהילים"
-    },
-    "commentaryNum": 136.0001,
-    "compDate": [
-      -1000,
-      0
-    ],
-    "heTitle": "תהילים",
-    "index_title": "Psalms",
-    "ref": "Psalms 136:1",
-    "sourceHasEn": true,
-    "sourceHeRef": "תהילים קל״ו:א׳",
-    "sourceRef": "Psalms 136:1",
-    "type": ""
-  },
-  {
-    "_id": "5f687a2e65fa995325fc6db4",
-    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 76",
-    "anchorRefExpanded": [
-      "Siddur Ashkenaz, Berachot, Birkat HaMazon 76"
-    ],
-    "anchorVerse": 76,
-    "category": "Tanakh",
-    "collectiveTitle": {
-      "en": "Psalms",
-      "he": "תהילים"
-    },
-    "commentaryNum": 145.0016,
-    "compDate": [
-      -1000,
-      0
-    ],
-    "heTitle": "תהילים",
-    "index_title": "Psalms",
-    "ref": "Psalms 145:16",
-    "sourceHasEn": true,
-    "sourceHeRef": "תהילים קמ״ה:ט״ז",
-    "sourceRef": "Psalms 145:16",
-    "type": ""
-  },
-  {
-    "_id": "5f687a2e65fa995325fc6db6",
-    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 76",
-    "anchorRefExpanded": [
-      "Siddur Ashkenaz, Berachot, Birkat HaMazon 76"
-    ],
-    "anchorVerse": 76,
-    "category": "Tanakh",
-    "collectiveTitle": {
-      "en": "Jeremiah",
-      "he": "ירמיהו"
-    },
-    "commentaryNum": 17.0007,
-    "compDate": [
-      -600,
       -500
     ],
-    "heTitle": "ירמיהו",
-    "index_title": "Jeremiah",
-    "ref": "Jeremiah 17:7",
+    "heTitle": "שמואל ב",
+    "index_title": "II Samuel",
     "sourceHasEn": true,
-    "sourceHeRef": "ירמיהו י״ז:ז׳",
-    "sourceRef": "Jeremiah 17:7",
+    "sourceHeRef": "שמואל ב כ״ב:נ״א",
+    "sourceRef": "II Samuel 22:51",
     "type": ""
   },
   {
-    "_id": "5f687a2f65fa995325fc6db8",
-    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 76",
-    "anchorRefExpanded": [
-      "Siddur Ashkenaz, Berachot, Birkat HaMazon 76"
-    ],
-    "anchorVerse": 76,
-    "category": "Tanakh",
-    "collectiveTitle": {
-      "en": "Psalms",
-      "he": "תהילים"
-    },
-    "commentaryNum": 37.0025,
-    "compDate": [
-      -1000,
-      0
-    ],
-    "heTitle": "תהילים",
-    "index_title": "Psalms",
-    "ref": "Psalms 37:25",
-    "sourceHasEn": true,
-    "sourceHeRef": "תהילים ל״ז:כ״ה",
-    "sourceRef": "Psalms 37:25",
-    "type": ""
-  },
-  {
-    "_id": "5f687a2f65fa995325fc6dba",
-    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 76",
-    "anchorRefExpanded": [
-      "Siddur Ashkenaz, Berachot, Birkat HaMazon 76"
-    ],
-    "anchorVerse": 76,
-    "category": "Tanakh",
-    "collectiveTitle": {
-      "en": "Psalms",
-      "he": "תהילים"
-    },
-    "commentaryNum": 29.0011,
-    "compDate": [
-      -1000,
-      0
-    ],
-    "heTitle": "תהילים",
-    "index_title": "Psalms",
-    "ref": "Psalms 29:11",
-    "sourceHasEn": true,
-    "sourceHeRef": "תהילים כ״ט:י״א",
-    "sourceRef": "Psalms 29:11",
-    "type": ""
-  },
-  {
+    "ref": "Mishnah Oktzin 3:12",
     "_id": "623d2953911fb84bccd5e0ce",
     "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 76",
     "anchorRefExpanded": [
@@ -958,8 +859,8 @@
     "anchorVerse": 76,
     "category": "Mishnah",
     "collectiveTitle": {
-      "en": "Mishnah Oktzin",
-      "he": "משנה עוקצים"
+      "he": "משנה עוקצים",
+      "en": "Mishnah Oktzin"
     },
     "commentaryNum": 3.0012,
     "compDate": [
@@ -968,13 +869,13 @@
     ],
     "heTitle": "משנה עוקצים",
     "index_title": "Mishnah Oktzin",
-    "ref": "Mishnah Oktzin 3:12",
     "sourceHasEn": true,
     "sourceHeRef": "משנה עוקצים ג׳:י״ב",
     "sourceRef": "Mishnah Oktzin 3:12",
     "type": "quotation_auto_tanakh"
   },
   {
+    "ref": "Mishnah Peah 8:9",
     "_id": "623d2954911fb84bccd5e0d0",
     "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 76",
     "anchorRefExpanded": [
@@ -983,8 +884,8 @@
     "anchorVerse": 76,
     "category": "Mishnah",
     "collectiveTitle": {
-      "en": "Mishnah Peah",
-      "he": "משנה פאה"
+      "he": "משנה פאה",
+      "en": "Mishnah Peah"
     },
     "commentaryNum": 8.0009,
     "compDate": [
@@ -993,13 +894,63 @@
     ],
     "heTitle": "משנה פאה",
     "index_title": "Mishnah Peah",
-    "ref": "Mishnah Peah 8:9",
     "sourceHasEn": true,
     "sourceHeRef": "משנה פאה ח׳:ט׳",
     "sourceRef": "Mishnah Peah 8:9",
     "type": "quotation_auto_tanakh"
   },
   {
+    "ref": "Psalms 34:10-11",
+    "_id": "5f687a2e65fa995325fc6db0",
+    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 76",
+    "anchorRefExpanded": [
+      "Siddur Ashkenaz, Berachot, Birkat HaMazon 76"
+    ],
+    "anchorVerse": 76,
+    "category": "Tanakh",
+    "collectiveTitle": {
+      "he": "תהילים",
+      "en": "Psalms"
+    },
+    "commentaryNum": 34.001,
+    "compDate": [
+      -1000,
+      0
+    ],
+    "heTitle": "תהילים",
+    "index_title": "Psalms",
+    "sourceHasEn": true,
+    "sourceHeRef": "תהילים ל״ד:י׳-י״א",
+    "sourceRef": "Psalms 34:10-11",
+    "type": ""
+  },
+  {
+    "ref": "Psalms 37:25",
+    "_id": "6960f3b9e5a882b6d71cacf0",
+    "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 76",
+    "anchorRefExpanded": [
+      "Siddur Ashkenaz, Berachot, Birkat HaMazon 76"
+    ],
+    "anchorVerse": 76,
+    "category": "Tanakh",
+    "collectiveTitle": {
+      "he": "תהילים",
+      "en": "Psalms"
+    },
+    "commentaryNum": 37.0025,
+    "compDate": [
+      -1000,
+      0
+    ],
+    "heTitle": "תהילים",
+    "index_title": "Psalms",
+    "sourceHasEn": true,
+    "sourceHeRef": "תהילים ל״ז:כ״ה",
+    "sourceRef": "Psalms 37:25",
+    "type": ""
+  },
+  {
+    "ref": "I Kings 8:56",
     "_id": "623be8e489c38c69f4d1cf84",
     "anchorRef": "Siddur Ashkenaz, Berachot, Birkat HaMazon 79",
     "anchorRefExpanded": [
@@ -1008,8 +959,8 @@
     "anchorVerse": 79,
     "category": "Tanakh",
     "collectiveTitle": {
-      "en": "I Kings",
-      "he": "מלכים א"
+      "he": "מלכים א",
+      "en": "I Kings"
     },
     "commentaryNum": 8.0056,
     "compDate": [
@@ -1018,7 +969,6 @@
     ],
     "heTitle": "מלכים א",
     "index_title": "I Kings",
-    "ref": "I Kings 8:56",
     "sourceHasEn": true,
     "sourceHeRef": "מלכים א ח׳:נ״ו",
     "sourceRef": "I Kings 8:56",
