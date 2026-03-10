@@ -105,11 +105,18 @@ const STANDARD_YES_TRUE_NO_FALSE = [
 export type Version = {hebrew: string, english: string};
 
 function defaultVersion(versionStorageKey: string): Item {
-  if (versionStorageKey === "Talmud" || versionStorageKey === "Tanakh") {
+  if (versionStorageKey === "Talmud") {
     return {
       value: "default",
       displayText: "Punctuated and Vocalized by Sefaria (Default)",
       displayTextHebrew: "מנוקד על ידי ספריא (ברירת מחדל)",
+    };
+  }
+  if (versionStorageKey === "Tanakh") {
+    return {
+      value: "default",
+      displayText: "Vocalized with Trope (Default)",
+      displayTextHebrew: "מנוקד עם טעמי המקרא (ברירת מחדל)",
     };
   }
 
