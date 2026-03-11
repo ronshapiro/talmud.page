@@ -4,3 +4,10 @@ export function hasMatchingProperty(first: any, second: any, propertyName: strin
     && propertyName in second
     && first[propertyName] === second[propertyName];
 }
+
+
+export function sortedEntries<T>(x: Record<string, T>, sortOrder: string[]) {
+  return Object.entries(x).sort((a, b) => {
+    return sortOrder.indexOf(a[0]) - sortOrder.indexOf(b[0]);
+  });
+}

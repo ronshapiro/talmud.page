@@ -97,7 +97,7 @@ import {
   getSteinsaltzCommentRows,
 } from "./steinsaltz";
 import {formatDafInHebrew, makeAmudSmall} from "./talmud";
-import {hasMatchingProperty} from "./util/objects";
+import {hasMatchingProperty, sortedEntries} from "./util/objects";
 import {checkNotUndefined} from "./js/undefined";
 import {getWeekdayReading} from "./weekday_parshiot";
 import {ASERET_YIMEI_TESHUVA_REFS} from "./js/aseret_yimei_teshuva";
@@ -610,7 +610,7 @@ const ALTERNATES: Record<Alternate, AlternateMetadata> = {
   },
   "Unvocalized": {
     hebrewName: 'תנ"ך ללא ניקוד',
-    commonLanguage: "english"
+    commonLanguage: "english",
   },
   /* eslint-enable quote-props */
 };
@@ -1328,7 +1328,8 @@ export abstract class AbstractApiRequestHandler {
           segment.commentary.addComment(topicComment);
         }
 
-        for (const [alternateKind, alternate] of Object.entries(preformatedAlternates)) {
+        for (const [alternateKind, alternate] of (
+          sortedEntries(preformatedAlternates, Object.keys(ALTERNATES)))) {
           const alternateMetadata = ALTERNATES[alternateKind as Alternate];
           const comment = new Comment(
             "Versions",
@@ -1431,7 +1432,8 @@ export abstract class AbstractApiRequestHandler {
         nestedCommentary.addComment(Comment.create(link, footnote, "Footnotes", this.logger));
       }
 
-      for (const [alternateKind, alternate] of Object.entries(linkResponse.alternates ?? {})) {
+      for (const [alternateKind, alternate] of (
+        sortedEntries(linkResponse.alternates ?? {}, Object.keys(ALTERNATES)))) {
         if (isSefariaError(alternate)) continue;
         nestedCommentary.addComment(new Comment(
           "Versions",
