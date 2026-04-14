@@ -300,10 +300,13 @@ export class Runner {
         this.requestSection(amud, requestOptions);
       }
 
-      if (localStorage.enablePagesRenderAfterSeconds) {
-        setTimeout(
-          switchToPagesView, parseFloat(localStorage.enablePagesRenderAfterSeconds) * 1000);
-      }
+      const enablePagesRenderAfterSeconds = (
+        localStorage.enablePagesRenderAfterSeconds
+          ? parseFloat(localStorage.enablePagesRenderAfterSeconds)
+          : 3
+      );
+
+      setTimeout(switchToPagesView, enablePagesRenderAfterSeconds * 1000);
     });
 
     onceDocumentReady.execute(registerRefSelectionSnackbarListener);
