@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daf Yomi Lag Calculator</title>
+    <!-- Load React, ReactDOM, and Babel for JSX parsing -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #e2e8f0; border-radius: 10px; }
+        input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+    </style>
+</head>
+<body class="bg-[#f8fafc]">
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect, useMemo } = React;
+
+        const MASECHTOT = [
+            { name: 'Berakhot', start: 2, end: 64 }, { name: 'Shabbat', start: 2, end: 157 }, { name: 'Eruvin', start: 2, end: 105 },
+            { name: 'Pesachim', start: 2, end: 121 }, { name: 'Shekalim', start: 2, end: 22 }, { name: 'Yoma', start: 2, end: 88 },
+            { name: 'Sukkah', start: 2, end: 56 }, { name: 'Beitzah', start: 2, end: 40 }, { name: 'Rosh Hashanah', start: 2, end: 35 },
+            { name: 'Taanit', start: 2, end: 31 }, { name: 'Megillah', start: 2, end: 32 }, { name: 'Moed Katan', start: 2, end: 29 },
+            { name: 'Chagigah', start: 2, end: 27 }, { name: 'Yevamot', start: 2, end: 122 }, { name: 'Ketubot', start: 2, end: 112 },
+            { name: 'Nedarim', start: 2, end: 91 }, { name: 'Nazir', start: 2, end: 66 }, { name: 'Sotah', start: 2, end: 49 },
+            { name: 'Gittin', start: 2, end: 90 }, { name: 'Kiddushin', start: 2, end: 82 }, { name: 'Bava Kamma', start: 2, end: 119 },
+            { name: 'Bava Metzia', start: 2, end: 119 }, { name: 'Bava Batra', start: 2, end: 176 }, { name: 'Sanhedrin', start: 2, end: 113 },
+            { name: 'Makkot', start: 2, end: 24 }, { name: 'Shevuot', start: 2, end: 49 }, { name: 'Avodah Zarah', start: 2, end: 76 },
+            { name: 'Horayot', start: 2, end: 14 }, { name: 'Zevachim', start: 2, end: 120 }, { name: 'Menachot', start: 2, end: 110 },
+            { name: 'Chullin', start: 2, end: 142 }, { name: 'Bekhorot', start: 2, end: 61 }, { name: 'Arakhin', start: 2, end: 34 },
+            { name: 'Temurah', start: 2, end: 34 }, { name: 'Keritot', start: 2, end: 28 }, { name: 'Meilah', start: 2, end: 22 },
+            { name: 'Tamid', start: 25, end: 33 }, { name: 'Middot', start: 34, end: 37 }, { name: 'Kinnim', start: 38, end: 39 },
+            { name: 'Niddah', start: 2, end: 73 }
+        ];
+
+        const STORAGE_KEY = 'daf_yomi_calculator_react_v1';
+        const CACHE_KEY = 'daf_yomi_target_cache_v1';
+
+        // Icon Components (Inline SVG for Zero Dependencies)
+        const IconCalculator = () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg>;
+        const IconSave = ({className}) => <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M15.2 3a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7"/><path d="M7 3v4a1 1 0 0 0 1 1h7"/></svg>;
+        const IconBook = ({size=16}) => <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/></svg>;
+        const IconCheck = ({size=16}) => <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>;
+        const IconChevronDown = ({size=14}) => <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"/></svg>;
+        const IconChevronUp = ({size=14}) => <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m18 15-6-6-6 6"/></svg>;
+        const IconInfo = () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>;
+        const IconTrash = () => <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></svg>;
+
+        function App() {
+            const [userDaf, setUserDaf] = useState(() => {
+                const saved = localStorage.getItem(STORAGE_KEY);
+                return saved ? JSON.parse(saved) : {};
+            });
+
+            // Initialize target from cache if available
+            const [currentTarget, setCurrentTarget] = useState(() => {
+                const cached = localStorage.getItem(CACHE_KEY);
+                return cached ? JSON.parse(cached) : { masechet: "Menachot", daf: 99, dateStr: "Loading..." };
+            });
+
+            const [showAll, setShowAll] = useState(false);
+            const [isLoading, setIsLoading] = useState(true);
+            const [focusedMasechet, setFocusedMasechet] = useState(null);
+
+            useEffect(() => {
+                const cleanedDaf = { ...userDaf };
+                Object.keys(cleanedDaf).forEach(key => {
+                    if (cleanedDaf[key] === "") delete cleanedDaf[key];
+                });
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(cleanedDaf));
+            }, [userDaf]);
+
+            useEffect(() => {
+                const fetchDaf = async () => {
+                    try {
+                        const response = await fetch('https://www.sefaria.org/api/calendars');
+                        const data = await response.json();
+                        const dafYomi = data.calendar_items.find(item => item.title.en === "Daf Yomi");
+                        const match = dafYomi?.ref.match(/(.+?)\s(\d+)/);
+                        if (match) {
+                            const newTarget = {
+                                masechet: match[1],
+                                daf: parseInt(match[2]),
+                                dateStr: data.date
+                            };
+                            setCurrentTarget(newTarget);
+                            // Cache the fresh data
+                            localStorage.setItem(CACHE_KEY, JSON.stringify(newTarget));
+                        }
+                    } catch (err) {
+                        console.error("Failed to sync with Sefaria", err);
+                    } finally {
+                        setIsLoading(false);
+                    }
+                };
+                fetchDaf();
+            }, []);
+
+            const { targetTotal, userTotal, activeIndices } = useMemo(() => {
+                let tTotal = 0;
+                for (const m of MASECHTOT) {
+                    const masechetLength = m.end - m.start + 1;
+                    if (m.name.toLowerCase() === currentTarget.masechet.toLowerCase() ||
+                        (m.name === "Rosh Hashanah" && currentTarget.masechet === "Rosh Hashana")) {
+                        tTotal += Math.max(0, currentTarget.daf - m.start);
+                        break;
+                    }
+                    tTotal += masechetLength;
+                }
+
+                const indices = Object.keys(userDaf)
+                    .filter(name => userDaf[name] !== "")
+                    .map(name => MASECHTOT.findIndex(m => m.name === name))
+                    .filter(idx => idx !== -1);
+
+                const min = indices.length ? Math.min(...indices) : -1;
+                const max = indices.length ? Math.max(...indices) : -1;
+
+                let uTotal = 0;
+                if (min !== -1) {
+                    MASECHTOT.forEach((m, idx) => {
+                        const masechetLength = m.end - m.start + 1;
+                        const isListed = userDaf[m.name] !== undefined;
+                        if (idx < min || (idx > min && idx < max && !isListed)) {
+                            uTotal += masechetLength;
+                        } else if (isListed) {
+                            const val = parseInt(userDaf[m.name]);
+                            if (!isNaN(val)) uTotal += Math.max(0, Math.min(masechetLength, val - m.start));
+                        }
+                    });
+                }
+
+                return { targetTotal: tTotal, userTotal: uTotal, activeIndices: { min, max } };
+            }, [userDaf, currentTarget]);
+
+            const lag = targetTotal - userTotal;
+            const hasData = Object.keys(userDaf).length > 0;
+
+            const handleInputChange = (name, val) => {
+                const newDaf = { ...userDaf };
+                if (val === "") {
+                    newDaf[name] = "";
+                } else {
+                    const num = parseInt(val);
+                    const masechet = MASECHTOT.find(m => m.name === name);
+                    newDaf[name] = Math.min(num, masechet.end);
+                }
+                setUserDaf(newDaf);
+            };
+
+            const handleBlur = (name) => {
+                setFocusedMasechet(null);
+                if (userDaf[name] === "") {
+                    const newDaf = { ...userDaf };
+                    delete newDaf[name];
+                    setUserDaf(newDaf);
+                }
+            };
+
+            const clearData = () => {
+                if (confirm("Clear all progress?")) setUserDaf({});
+            };
+
+            // Show loading shimmer only if we have NO data yet (first load ever)
+            const showShimmer = isLoading && currentTarget.dateStr === "Loading...";
+
+            return (
+                <div className="min-h-screen bg-[#f8fafc] text-slate-900 antialiased p-4 md:p-8 font-sans">
+                    <div className="max-w-2xl mx-auto space-y-6">
+
+                        <header className="bg-white rounded-3xl p-6 shadow-sm border border-slate-200">
+                            <div className="flex items-center justify-between">
+                                <div className="flex items-center gap-3">
+                                    <div className="p-2.5 bg-indigo-50 text-indigo-600 rounded-xl">
+                                        <IconCalculator />
+                                    </div>
+                                    <h1 className="text-2xl font-extrabold tracking-tight text-slate-800">Lag Calculator</h1>
+                                </div>
+                                <div className="flex items-center gap-1 text-[10px] font-bold text-slate-400 bg-slate-50 px-2 py-1 rounded-md">
+                                    <IconSave className="text-emerald-500" />
+                                    <span>AUTO-SAVING</span>
+                                </div>
+                            </div>
+                            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mt-4 pt-4 border-t border-slate-100">
+                                <div className="text-slate-500 text-sm italic">
+                                    {isLoading ? "Syncing with Sefaria..." : `Today is ${currentTarget.dateStr}`}
+                                </div>
+                                {currentTarget.dateStr !== "Loading..." && (
+                                    <div className="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1.5 w-fit">
+                                        <div className={`w-1.5 h-1.5 rounded-full ${isLoading ? 'bg-amber-500 animate-pulse' : 'bg-indigo-500'}`}></div>
+                                        Target: {currentTarget.masechet} {currentTarget.daf}
+                                    </div>
+                                )}
+                            </div>
+                        </header>
+
+                        <div className={`rounded-3xl p-8 shadow-xl transition-all duration-700 border-b-8 ${hasData && lag <= 0 ? 'bg-emerald-600 border-emerald-800 text-white' : 'bg-white border-indigo-500'}`}>
+                            <div className="flex flex-col items-center justify-center text-center">
+                                <span className={`text-xs font-bold uppercase tracking-widest mb-2 ${hasData && lag <= 0 ? 'text-emerald-100' : 'text-slate-400'}`}>
+                                    Total Pages Behind
+                                </span>
+                                <div className="text-8xl font-black tabular-nums transition-all">
+                                    {hasData ? (lag > 0 ? lag : 0) : "--"}
+                                </div>
+                                {hasData && lag <= 0 && (
+                                    <div className="mt-6 flex items-center gap-2 bg-emerald-700/50 py-2 px-6 rounded-full text-sm font-semibold">
+                                        <IconCheck size={18} />
+                                        Finished the target!
+                                    </div>
+                                )}
+                            </div>
+
+                            <div className="grid grid-cols-3 mt-10 pt-8 border-t border-slate-100/50">
+                                <div className="text-center px-2">
+                                    <div className="text-[10px] uppercase font-bold text-slate-400 mb-1">Target</div>
+                                    <div className={`text-lg font-bold ${hasData && lag <= 0 ? 'text-white' : 'text-slate-700'}`}>
+                                        {targetTotal} <span className="text-[10px] font-normal opacity-50">pages</span>
+                                    </div>
+                                </div>
+                                <div className="text-center px-2 border-l border-slate-100/50">
+                                    <div className="text-[10px] uppercase font-bold text-slate-400 mb-1">Completed</div>
+                                    <div className={`text-lg font-bold ${hasData && lag <= 0 ? 'text-white' : 'text-slate-700'}`}>
+                                        {userTotal} <span className="text-[10px] font-normal opacity-50">pages</span>
+                                    </div>
+                                </div>
+                                <div className="text-center px-2 border-l border-slate-100/50">
+                                    <div className="text-[10px] uppercase font-bold text-slate-400 mb-1">Days to Go</div>
+                                    <div className={`text-lg font-bold ${hasData && lag <= 0 ? 'text-white' : 'text-slate-700'}`}>
+                                        {2711 - userTotal} <span className="text-[10px] font-normal opacity-50">days</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden">
+                            <div className="px-6 py-4 bg-slate-50/50 border-b border-slate-100 flex justify-between items-center">
+                                <h3 className="font-bold text-slate-700 text-sm flex items-center gap-2 uppercase tracking-tight">
+                                    <IconBook />
+                                    Set Your Progress
+                                </h3>
+                                <div className="flex items-center gap-3">
+                                    {hasData && (
+                                        <button onClick={clearData} className="text-[10px] font-bold text-rose-500 hover:text-rose-600 uppercase tracking-tighter flex items-center gap-1">
+                                            <IconTrash /> Clear All
+                                        </button>
+                                    )}
+                                    <button onClick={() => setShowAll(!showAll)} className="text-xs font-bold text-indigo-600 hover:bg-indigo-50 px-3 py-1.5 rounded-lg transition-colors flex items-center gap-1">
+                                        {showAll ? 'Collapse' : 'Show Cycle'}
+                                        {showAll ? <IconChevronUp /> : <IconChevronDown />}
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div className="max-h-[500px] overflow-y-auto custom-scrollbar">
+                                {showShimmer ? (
+                                    <div className="p-12 space-y-4">
+                                        {[1,2,3].map(i => <div key={i} className="h-16 bg-slate-100 rounded-2xl animate-pulse" />)}
+                                    </div>
+                                ) : !hasData && !showAll ? (
+                                    <div className="p-12 text-center">
+                                        <div className="mx-auto w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-slate-400 mb-4">
+                                            <IconInfo />
+                                        </div>
+                                        <p className="text-sm font-bold text-slate-400">Enter a Daf to start calculating.</p>
+                                        <p className="text-xs text-slate-300 mt-1">Gaps between entries will be treated as finished.</p>
+                                    </div>
+                                ) : (
+                                    MASECHTOT.map((m, idx) => {
+                                        const isListed = userDaf[m.name] !== undefined;
+                                        const isFocused = focusedMasechet === m.name;
+                                        const isFinished = hasData && ((idx < activeIndices.min) || (idx > activeIndices.min && idx < activeIndices.max && !isListed));
+                                        if (!showAll && !isListed && !isFocused) return null;
+
+                                        return (
+                                            <div key={m.name} className={`px-6 py-3.5 flex items-center justify-between border-b border-slate-50 last:border-0 transition-colors ${isListed || isFocused ? 'bg-indigo-50/30' : ''}`}>
+                                                <div className="flex items-center gap-3">
+                                                    <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${isListed || isFocused ? 'bg-indigo-100 text-indigo-600' : isFinished ? 'bg-emerald-50 text-emerald-600' : 'bg-slate-100 text-slate-300'}`}>
+                                                        {isFinished ? <IconCheck /> : <IconBook />}
+                                                    </div>
+                                                    <div>
+                                                        <div className="text-sm font-bold text-slate-700">{m.name}</div>
+                                                        <div className="text-[10px] text-slate-400 font-bold uppercase tracking-tighter">
+                                                            {m.end - m.start + 1} Pages {isFinished && ' • Finished'}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="flex items-center gap-2">
+                                                    <span className="text-[10px] font-bold text-slate-300 uppercase">Daf:</span>
+                                                    <input
+                                                        type="number"
+                                                        placeholder="--"
+                                                        className={`w-14 h-9 rounded-xl border text-center text-sm font-bold focus:ring-2 focus:ring-indigo-500 outline-none transition-all ${isListed || isFocused ? 'border-indigo-200 bg-white shadow-sm' : 'border-slate-100 bg-slate-50/50'}`}
+                                                        value={userDaf[m.name] ?? ''}
+                                                        onChange={(e) => handleInputChange(m.name, e.target.value)}
+                                                        onFocus={() => setFocusedMasechet(m.name)}
+                                                        onBlur={() => handleBlur(m.name)}
+                                                    />
+                                                </div>
+                                            </div>
+                                        );
+                                    })
+                                )}
+                            </div>
+                        </div>
+
+                        <div className="bg-indigo-900 rounded-2xl p-4 text-indigo-100 text-xs leading-relaxed border border-indigo-800 shadow-inner">
+                            <p className="font-bold flex items-center gap-2 mb-1">Logic Rules:</p>
+                            <ul className="list-disc list-inside space-y-1 opacity-80">
+                                <li>Before first entry: 100% Finished.</li>
+                                <li>In between entries: 100% Finished (Gaps filled).</li>
+                                <li>Current page (e.g. 12): You have learned 10 full pages.</li>
+                                <li>After last entry: Unlearned.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>
