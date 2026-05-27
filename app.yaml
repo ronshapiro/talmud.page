@@ -1,5 +1,8 @@
 runtime: nodejs20
 
+automatic_scaling:
+  max_instances: 1
+
 handlers:
 - url: /wp-.*
   static_files: dist/error_page.html
