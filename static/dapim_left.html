@@ -26,19 +26,20 @@
         const { useState, useEffect, useMemo } = React;
 
         const MASECHTOT = [
-            { name: 'Berakhot', length: 64 }, { name: 'Shabbat', length: 157 }, { name: 'Eruvin', length: 105 },
-            { name: 'Pesachim', length: 121 }, { name: 'Shekalim', length: 22 }, { name: 'Yoma', length: 88 },
-            { name: 'Sukkah', length: 56 }, { name: 'Beitzah', length: 40 }, { name: 'Rosh Hashanah', length: 35 },
-            { name: 'Taanit', length: 31 }, { name: 'Megillah', length: 32 }, { name: 'Moed Katan', length: 29 },
-            { name: 'Chagigah', length: 27 }, { name: 'Yevamot', length: 122 }, { name: 'Ketubot', length: 112 },
-            { name: 'Nedarim', length: 91 }, { name: 'Nazir', length: 66 }, { name: 'Sotah', length: 49 },
-            { name: 'Gittin', length: 90 }, { name: 'Kiddushin', length: 82 }, { name: 'Bava Kamma', length: 119 },
-            { name: 'Bava Metzia', length: 119 }, { name: 'Bava Batra', length: 176 }, { name: 'Sanhedrin', length: 113 },
-            { name: 'Makkot', length: 24 }, { name: 'Shevuot', length: 49 }, { name: 'Avodah Zarah', length: 76 },
-            { name: 'Horayot', length: 14 }, { name: 'Zevachim', length: 120 }, { name: 'Menachot', length: 110 },
-            { name: 'Chullin', length: 142 }, { name: 'Bekhorot', length: 61 }, { name: 'Arakhin', length: 34 },
-            { name: 'Temurah', length: 34 }, { name: 'Keritot', length: 28 }, { name: 'Meilah', length: 22 },
-            { name: 'Tamid', length: 9 }, { name: 'Niddah', length: 73 }
+            { name: 'Berakhot', start: 2, end: 64 }, { name: 'Shabbat', start: 2, end: 157 }, { name: 'Eruvin', start: 2, end: 105 },
+            { name: 'Pesachim', start: 2, end: 121 }, { name: 'Shekalim', start: 2, end: 22 }, { name: 'Yoma', start: 2, end: 88 },
+            { name: 'Sukkah', start: 2, end: 56 }, { name: 'Beitzah', start: 2, end: 40 }, { name: 'Rosh Hashanah', start: 2, end: 35 },
+            { name: 'Taanit', start: 2, end: 31 }, { name: 'Megillah', start: 2, end: 32 }, { name: 'Moed Katan', start: 2, end: 29 },
+            { name: 'Chagigah', start: 2, end: 27 }, { name: 'Yevamot', start: 2, end: 122 }, { name: 'Ketubot', start: 2, end: 112 },
+            { name: 'Nedarim', start: 2, end: 91 }, { name: 'Nazir', start: 2, end: 66 }, { name: 'Sotah', start: 2, end: 49 },
+            { name: 'Gittin', start: 2, end: 90 }, { name: 'Kiddushin', start: 2, end: 82 }, { name: 'Bava Kamma', start: 2, end: 119 },
+            { name: 'Bava Metzia', start: 2, end: 119 }, { name: 'Bava Batra', start: 2, end: 176 }, { name: 'Sanhedrin', start: 2, end: 113 },
+            { name: 'Makkot', start: 2, end: 24 }, { name: 'Shevuot', start: 2, end: 49 }, { name: 'Avodah Zarah', start: 2, end: 76 },
+            { name: 'Horayot', start: 2, end: 14 }, { name: 'Zevachim', start: 2, end: 120 }, { name: 'Menachot', start: 2, end: 110 },
+            { name: 'Chullin', start: 2, end: 142 }, { name: 'Bekhorot', start: 2, end: 61 }, { name: 'Arakhin', start: 2, end: 34 },
+            { name: 'Temurah', start: 2, end: 34 }, { name: 'Keritot', start: 2, end: 28 }, { name: 'Meilah', start: 2, end: 22 },
+            { name: 'Tamid', start: 25, end: 33 }, { name: 'Middot', start: 34, end: 37 }, { name: 'Kinnim', start: 38, end: 39 },
+            { name: 'Niddah', start: 2, end: 73 }
         ];
 
         const STORAGE_KEY = 'daf_yomi_calculator_react_v1';
@@ -68,9 +69,14 @@
 
             const [showAll, setShowAll] = useState(false);
             const [isLoading, setIsLoading] = useState(true);
+            const [focusedMasechet, setFocusedMasechet] = useState(null);
 
             useEffect(() => {
-                localStorage.setItem(STORAGE_KEY, JSON.stringify(userDaf));
+                const cleanedDaf = { ...userDaf };
+                Object.keys(cleanedDaf).forEach(key => {
+                    if (cleanedDaf[key] === "") delete cleanedDaf[key];
+                });
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(cleanedDaf));
             }, [userDaf]);
 
             useEffect(() => {
@@ -102,14 +108,17 @@
             const { targetTotal, userTotal, activeIndices } = useMemo(() => {
                 let tTotal = 0;
                 for (const m of MASECHTOT) {
-                    if (m.name.toLowerCase() === currentTarget.masechet.toLowerCase()) {
-                        tTotal += (currentTarget.daf - 1);
+                    const masechetLength = m.end - m.start + 1;
+                    if (m.name.toLowerCase() === currentTarget.masechet.toLowerCase() ||
+                        (m.name === "Rosh Hashanah" && currentTarget.masechet === "Rosh Hashana")) {
+                        tTotal += Math.max(0, currentTarget.daf - m.start);
                         break;
                     }
-                    tTotal += m.length;
+                    tTotal += masechetLength;
                 }
 
                 const indices = Object.keys(userDaf)
+                    .filter(name => userDaf[name] !== "")
                     .map(name => MASECHTOT.findIndex(m => m.name === name))
                     .filter(idx => idx !== -1);
 
@@ -119,12 +128,13 @@
                 let uTotal = 0;
                 if (min !== -1) {
                     MASECHTOT.forEach((m, idx) => {
+                        const masechetLength = m.end - m.start + 1;
                         const isListed = userDaf[m.name] !== undefined;
                         if (idx < min || (idx > min && idx < max && !isListed)) {
-                            uTotal += m.length;
+                            uTotal += masechetLength;
                         } else if (isListed) {
                             const val = parseInt(userDaf[m.name]);
-                            if (!isNaN(val)) uTotal += Math.min(m.length, Math.max(0, val - 2));
+                            if (!isNaN(val)) uTotal += Math.max(0, Math.min(masechetLength, val - m.start));
                         }
                     });
                 }
@@ -137,13 +147,23 @@
 
             const handleInputChange = (name, val) => {
                 const newDaf = { ...userDaf };
-                if (val === "") delete newDaf[name];
-                else {
+                if (val === "") {
+                    newDaf[name] = "";
+                } else {
                     const num = parseInt(val);
                     const masechet = MASECHTOT.find(m => m.name === name);
-                    newDaf[name] = Math.min(num, masechet.length + 1);
+                    newDaf[name] = Math.min(num, masechet.end);
                 }
                 setUserDaf(newDaf);
+            };
+
+            const handleBlur = (name) => {
+                setFocusedMasechet(null);
+                if (userDaf[name] === "") {
+                    const newDaf = { ...userDaf };
+                    delete newDaf[name];
+                    setUserDaf(newDaf);
+                }
             };
 
             const clearData = () => {
@@ -199,17 +219,23 @@
                                 )}
                             </div>
 
-                            <div className="grid grid-cols-2 mt-10 pt-8 border-t border-slate-100/50">
-                                <div className="text-center px-4">
-                                    <div className="text-[10px] uppercase font-bold text-slate-400 mb-1">Global Target</div>
-                                    <div className={`text-xl font-bold ${hasData && lag <= 0 ? 'text-white' : 'text-slate-700'}`}>
-                                        {targetTotal} <span className="text-sm font-normal opacity-50">pages</span>
+                            <div className="grid grid-cols-3 mt-10 pt-8 border-t border-slate-100/50">
+                                <div className="text-center px-2">
+                                    <div className="text-[10px] uppercase font-bold text-slate-400 mb-1">Target</div>
+                                    <div className={`text-lg font-bold ${hasData && lag <= 0 ? 'text-white' : 'text-slate-700'}`}>
+                                        {targetTotal} <span className="text-[10px] font-normal opacity-50">pages</span>
                                     </div>
                                 </div>
-                                <div className="text-center px-4 border-l border-slate-100/50">
-                                    <div className="text-[10px] uppercase font-bold text-slate-400 mb-1">Your Completed</div>
-                                    <div className={`text-xl font-bold ${hasData && lag <= 0 ? 'text-white' : 'text-slate-700'}`}>
-                                        {userTotal} <span className="text-sm font-normal opacity-50">pages</span>
+                                <div className="text-center px-2 border-l border-slate-100/50">
+                                    <div className="text-[10px] uppercase font-bold text-slate-400 mb-1">Completed</div>
+                                    <div className={`text-lg font-bold ${hasData && lag <= 0 ? 'text-white' : 'text-slate-700'}`}>
+                                        {userTotal} <span className="text-[10px] font-normal opacity-50">pages</span>
+                                    </div>
+                                </div>
+                                <div className="text-center px-2 border-l border-slate-100/50">
+                                    <div className="text-[10px] uppercase font-bold text-slate-400 mb-1">Days to Go</div>
+                                    <div className={`text-lg font-bold ${hasData && lag <= 0 ? 'text-white' : 'text-slate-700'}`}>
+                                        {2711 - userTotal} <span className="text-[10px] font-normal opacity-50">days</span>
                                     </div>
                                 </div>
                             </div>
@@ -250,19 +276,20 @@
                                 ) : (
                                     MASECHTOT.map((m, idx) => {
                                         const isListed = userDaf[m.name] !== undefined;
+                                        const isFocused = focusedMasechet === m.name;
                                         const isFinished = hasData && ((idx < activeIndices.min) || (idx > activeIndices.min && idx < activeIndices.max && !isListed));
-                                        if (!showAll && !isListed) return null;
+                                        if (!showAll && !isListed && !isFocused) return null;
 
                                         return (
-                                            <div key={m.name} className={`px-6 py-3.5 flex items-center justify-between border-b border-slate-50 last:border-0 transition-colors ${isListed ? 'bg-indigo-50/30' : ''}`}>
+                                            <div key={m.name} className={`px-6 py-3.5 flex items-center justify-between border-b border-slate-50 last:border-0 transition-colors ${isListed || isFocused ? 'bg-indigo-50/30' : ''}`}>
                                                 <div className="flex items-center gap-3">
-                                                    <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${isListed ? 'bg-indigo-100 text-indigo-600' : isFinished ? 'bg-emerald-50 text-emerald-600' : 'bg-slate-100 text-slate-300'}`}>
+                                                    <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${isListed || isFocused ? 'bg-indigo-100 text-indigo-600' : isFinished ? 'bg-emerald-50 text-emerald-600' : 'bg-slate-100 text-slate-300'}`}>
                                                         {isFinished ? <IconCheck /> : <IconBook />}
                                                     </div>
                                                     <div>
                                                         <div className="text-sm font-bold text-slate-700">{m.name}</div>
                                                         <div className="text-[10px] text-slate-400 font-bold uppercase tracking-tighter">
-                                                            {m.length} Pages {isFinished && ' • Finished'}
+                                                            {m.end - m.start + 1} Pages {isFinished && ' • Finished'}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -271,9 +298,11 @@
                                                     <input
                                                         type="number"
                                                         placeholder="--"
-                                                        className={`w-14 h-9 rounded-xl border text-center text-sm font-bold focus:ring-2 focus:ring-indigo-500 outline-none transition-all ${isListed ? 'border-indigo-200 bg-white shadow-sm' : 'border-slate-100 bg-slate-50/50'}`}
-                                                        value={userDaf[m.name] || ''}
+                                                        className={`w-14 h-9 rounded-xl border text-center text-sm font-bold focus:ring-2 focus:ring-indigo-500 outline-none transition-all ${isListed || isFocused ? 'border-indigo-200 bg-white shadow-sm' : 'border-slate-100 bg-slate-50/50'}`}
+                                                        value={userDaf[m.name] ?? ''}
                                                         onChange={(e) => handleInputChange(m.name, e.target.value)}
+                                                        onFocus={() => setFocusedMasechet(m.name)}
+                                                        onBlur={() => handleBlur(m.name)}
                                                     />
                                                 </div>
                                             </div>

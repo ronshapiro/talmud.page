@@ -233,9 +233,6 @@ app.get(
   "/dapim-left",
   (req, res) => sendLazyStaticFile(res, "static/dapim_left.html"));
 app.get(
-  "/dapim-left-fixed",
-  (req, res) => sendLazyStaticFile(res, "static/dapim_left_fixed.html"));
-app.get(
   "/scary--editor--beware",
   (req, res) => sendLazyStaticFile(res, "static/local_storage_editor.html"));
 
