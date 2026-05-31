@@ -45,7 +45,8 @@ function updateSnackbar(kind: Kind, labelHtml: string, maybeButtons: MaybeButton
   const buttonClasses = [
     "mdl-button",
     "mdl-js-button",
-    (localStorage.darkMode !== "true") ? "mdl-button--colored" : "mdl-button--normal-text-color",
+    (localStorage.darkMode !== "true" && localStorage.darkMode !== "gray")
+      ? "mdl-button--colored" : "mdl-button--normal-text-color",
   ].join(" ");
   $container.find(".snackbar-buttons").html(
     buttons

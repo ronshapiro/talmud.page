@@ -176,6 +176,7 @@ function preferenceOptions(
       titleHebrew="תצוגה"
       items={[
         {value: "true", displayText: "Dark Mode", displayTextHebrew: "כהה"},
+        {value: "gray", displayText: "Gray Mode", displayTextHebrew: "אפור"},
         {value: "false", displayText: "Light Mode", displayTextHebrew: "בהיר"},
       ]}
       rerender={rerender}

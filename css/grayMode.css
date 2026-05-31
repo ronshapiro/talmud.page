@@ -1,0 +1,33 @@
+:root {
+    --background-color: #707070;
+    --text-color: #f0f0f0;
+    --english-text-color: #e0e0e0;
+    --rashi-quotation-text-color: #ffd0d0;
+    --snackbar-button-color: var(--text-color);
+    --snackbar-disabled-button-color: rgb(160, 160, 160);
+    --snackbar-background-color: #444;
+    --snackbar-text-color: var(--text-color);
+    --highlight-red: rgb(200, 120, 115);
+    --highlight-red-50: rgb(200, 120, 115, .5);
+    --highlight-yellow: rgb(180, 175, 100);
+    --highlight-yellow-50: rgb(180, 175, 100, .5);
+    --highlight-green: rgb(110, 180, 120);
+    --highlight-green-50: rgb(110, 180, 120, .5);
+    --highlight-blue: rgb(110, 160, 180);
+    --highlight-blue-50: rgb(110, 160, 180, .5);
+    --highlight-gray: rgb(150, 150, 150);
+    --highlight-gray-50: rgb(150, 150, 150, .5);
+    --highlighted-commentary-indicator-yellow: rgb(190, 185, 110);
+    --modal-box-shadow-color: #444;
+    --modal-button-color: var(--mdl-accent-color);
+
+    --selection-background-color: #ffffff44;
+}
+
+::selection {
+    background: var(--selection-background-color);
+}
+
+::-moz-selection {
+    background: var(--selection-background-color);
+}

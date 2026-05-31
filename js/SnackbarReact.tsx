@@ -29,7 +29,8 @@ function SnackbarButton({children, disabled, onClick, extraClasses}: SnackbarBut
   const buttonClasses = [
     "mdl-button",
     "mdl-js-button",
-    (localStorage.darkMode !== "true") ? "mdl-button--colored" : "mdl-button--normal-text-color",
+    (localStorage.darkMode !== "true" && localStorage.darkMode !== "gray")
+      ? "mdl-button--colored" : "mdl-button--normal-text-color",
   ].concat(extraClasses || []).join(" ");
   return (
     <button className={buttonClasses} disabled={disabled} onClick={onClick}>
