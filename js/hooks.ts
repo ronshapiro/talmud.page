@@ -18,6 +18,8 @@ export function useUpdateDarkMode(): void {
   useEffect(() => {
     (document.getElementById("darkModeCss") as HTMLLinkElement).disabled = (
       localStorage.darkMode !== "true");
+    (document.getElementById("grayModeCss") as HTMLLinkElement).disabled = (
+      localStorage.darkMode !== "gray");
     for (const id of ["theme-color", "theme-color-dark-mode"]) {
       (document.getElementById(id) as HTMLMetaElement).content = (
         getComputedStyle(document.body).getPropertyValue('--background-color'));

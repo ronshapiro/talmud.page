@@ -67,6 +67,8 @@ export function FeedbackView({hide}: FeedbackViewProps): React.ReactElement {
   useEffect(() => {
     const darkMode = document.getElementById("darkModeCss") as HTMLStyleElement;
     if (darkMode) darkMode.disabled = true;
+    const grayMode = document.getElementById("grayModeCss") as HTMLStyleElement;
+    if (grayMode) grayMode.disabled = true;
   });
   const rootRef = useHtmlRef<HTMLDivElement>();
   const collectData = (stage?: string) => {

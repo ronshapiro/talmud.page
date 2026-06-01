@@ -34,12 +34,14 @@
 
 <link rel="stylesheet" href="/css/{{random_hash}}/main.css" />
 <link rel="stylesheet" href="/css/{{random_hash}}/darkMode.css" id="darkModeCss"/>
+<link rel="stylesheet" href="/css/{{random_hash}}/grayMode.css" id="grayModeCss"/>
 {% if debug %}
 <link rel="stylesheet" href="/css/{{random_hash}}/debug.css" />
 {% endif %}
 
 <script>
   document.getElementById("darkModeCss").disabled = localStorage.darkMode !== "true";
+  document.getElementById("grayModeCss").disabled = localStorage.darkMode !== "gray";
 </script>
 
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
