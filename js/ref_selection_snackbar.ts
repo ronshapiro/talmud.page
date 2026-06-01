@@ -369,6 +369,9 @@ class Buttons {
 }
 
 const onSelectionChange = () => {
+  if ($(document.getSelection()!.anchorNode).closest("#preferences-container").length > 0) {
+    return;
+  }
   if (DO_DEBUG) {
     const selection = document.getSelection()!;
     DEBUG_ERRORS.push(selection.type);
