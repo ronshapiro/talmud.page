@@ -20,7 +20,7 @@ export function ThemeEditor({onClose, onSave, initialTheme}: ThemeEditorProps): 
   const nameInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    if (nameInputRef.current) {
+    if (nameInputRef.current?.parentElement) {
       upgradeElement(nameInputRef.current.parentElement);
     }
   }, []);
