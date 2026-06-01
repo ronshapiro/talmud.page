@@ -1,7 +1,7 @@
 :root {
     --background-color: #606060;
-    --text-color: var(--dark-background);
-    --english-text-color: var(--text-color)x;
+    --text-color: #262626;
+    --english-text-color: var(--text-color);
     --rashi-quotation-text-color: #ffd0d0;
 
     --snackbar-disabled-button-color: rgb(160, 160, 160);
