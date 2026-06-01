@@ -436,6 +436,10 @@ export function Preferences({rerender: originalRerender}: RerenderViewParams): R
             initialTheme={editingTheme}
             onClose={() => setEditingTheme(null)}
             onSave={combinedRerender}
+            onDelete={(themeName) => {
+              deleteCustomTheme(themeName);
+              combinedRerender();
+            }}
           />
         )}
         <VirtualizeSwipeableViews

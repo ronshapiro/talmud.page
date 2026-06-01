@@ -9,10 +9,16 @@ const {useState, useEffect, useRef} = React;
 interface ThemeEditorProps {
   onClose: () => void;
   onSave: () => void;
+  onDelete: (themeName: string) => void;
   initialTheme?: CustomTheme;
 }
 
-export function ThemeEditor({onClose, onSave, initialTheme}: ThemeEditorProps): React.ReactElement {
+export function ThemeEditor({
+  onClose,
+  onSave,
+  onDelete,
+  initialTheme,
+}: ThemeEditorProps): React.ReactElement {
   const [name, setName] = useState(initialTheme?.name || "");
   const [baseTheme, setBaseTheme] = useState(initialTheme?.baseTheme || "false");
   const [overrides, setOverrides] = useState<Record<string, string>>(initialTheme?.overrides || {});
@@ -106,6 +112,21 @@ export function ThemeEditor({onClose, onSave, initialTheme}: ThemeEditorProps): 
     </div>
   );
 
+  const extraButtons = initialTheme ? [
+    <button
+      key="delete"
+      className="mdl-button mdl-js-button mdl-js-ripple-effect"
+      style={{color: "red"}}
+      onClick={() => {
+        if (window.confirm(`Delete theme "${initialTheme.name}"?`)) {
+          onDelete(initialTheme.name);
+          onClose();
+        }
+      }}>
+      Delete
+    </button>,
+  ] : [];
+
   return (
     <Modal
       content={content}
@@ -115,6 +136,7 @@ export function ThemeEditor({onClose, onSave, initialTheme}: ThemeEditorProps): 
       acceptText="Save"
       acceptTextHebrew="שמור"
       onAccept={handleSave}
+      extraButtons={extraButtons}
     />
   );
 }
