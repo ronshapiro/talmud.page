@@ -32,6 +32,7 @@ interface PreferenceSectionParams {
   localStorageKeyName: string;
   rerender: () => any;
   ignoreInHebrew?: true;
+  extraItems?: React.ReactElement[];
 }
 
 function useHebrew() {
@@ -44,6 +45,7 @@ function PreferenceSection({
   items,
   localStorageKeyName,
   rerender,
+  extraItems,
 }: PreferenceSectionParams) {
   function PreferenceItem({item}: {item: Item}) {
     const {value, displayText, displayTextHebrew} = item;
@@ -82,6 +84,7 @@ function PreferenceSection({
         {useHebrew() ? titleHebrew : title}
       </span>
       {items.map((item, i) => (<PreferenceItem item={item} key={i.toString()} />))}
+      {extraItems}
     </div>
   );
 }
@@ -150,6 +153,17 @@ function preferenceOptions(
     });
   }
 
+  const createNewThemeItem = (
+    <div key="create-new-theme" style={{display: "flex", alignItems: "center", padding: "8px 0"}}>
+      <span style={{flexGrow: 1, color: "gray", paddingLeft: "32px"}}>Create new</span>
+      <button
+        className="mdl-button mdl-js-button mdl-button--icon"
+        onClick={() => openThemeEditor()}>
+        <i className="material-icons">add_circle_outline</i>
+      </button>
+    </div>
+  );
+
   const allOptions = [
     // Note: It's important that this is the first option so that there are no ignoreInHebrew
     // options before it. Otherwise, the swipe index could get mangled when switching languages.
@@ -194,13 +208,9 @@ function preferenceOptions(
       titleHebrew="תצוגה"
       items={displayItems}
       rerender={rerender}
-      localStorageKeyName="darkMode" />,
+      localStorageKeyName="darkMode"
+      extraItems={[createNewThemeItem]} />,
     <div style={{padding: "10px"}}>
-      <button
-        className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
-        onClick={() => openThemeEditor()}>
-        Create New Theme
-      </button>
       {customThemes.length > 0 && (
         <div style={{marginTop: "10px"}}>
           <div style={{fontSize: "16px", marginBottom: "5px"}}>Manage Custom Themes:</div>
