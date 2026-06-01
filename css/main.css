@@ -35,7 +35,10 @@
     --snackbar-text-color: var(--background-color);
     --modal-box-shadow-color: #888;
     --modal-button-color: var(--mdl-major-color);
-    --mesorat-hashas-purple: rgb(136, 95, 250)
+    --mesorat-hashas-purple: rgb(136, 95, 250);
+    --commentary-header-orange: rgb(255, 110, 64);
+    --commentary-header-blue: rgb(68,138,255);
+    --commentary-header-gray: gray;
 }
 
 @media only screen and (min-width: 720px) {
@@ -315,6 +318,10 @@ h2, .title, .titleHebrew {
     justify-content: space-between;
 }
 
+.commentary_header {
+    color: var(--commentary-header-orange);
+}
+
 .commentary_header.psukim,
 .commentary_header.mishna,
 .commentary_header.tosefta,
@@ -324,7 +331,7 @@ h2, .title, .titleHebrew {
 .commentary_header.comment-alternatives,
 .commentary_header.comment-context,
 .commentary_header.jastrow {
-    color: gray;
+    color: var(--commentary-header-gray);
 }
 .commentary_header.ein-mishpat,
 .commentary_header.shulchan-arukh,
@@ -335,7 +342,7 @@ h2, .title, .titleHebrew {
 .commentary_header.lechem-mishneh,
 .commentary_header.peninei-halacha,
 .commentary_header.sefer-hachinukh {
-    color: rgb(68,138,255);
+    color: var(--commentary-header-blue);
 }
 .commentary_header.mesorat-hashas,
 .commentary_header.torah-temima,
