@@ -60,16 +60,15 @@ export function ThemeEditor({
   const content = (
     <div style={{maxHeight: "35vh", overflowY: "auto", padding: "10px 10px 40px 10px"}}>
       <div className="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style={{width: "100%"}}>
-        <label className="mdl-textfield__label" htmlFor="theme-name">Theme Name
-          <input
-            className="mdl-textfield__input"
-            type="text"
-            id="theme-name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            ref={nameInputRef}
-          />
-        </label>
+        <input
+          className="mdl-textfield__input"
+          type="text"
+          id="theme-name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          ref={nameInputRef}
+        />
+        <label className="mdl-textfield__label" htmlFor="theme-name">Theme Name</label>
       </div>
 
       <div style={{marginTop: "10px"}}>
