@@ -53,18 +53,12 @@ export default function Modal(props: ModalProps): React.ReactElement {
   const marginStartStyle = (
     localStorage.languageOption === "hebrew" ? {marginRight: "auto"} : {marginLeft: "auto"});
 
-  const modalStyle: React.CSSProperties = isBottom ? {
-    top: "auto",
-    bottom: "0",
-    transform: "translate(calc(-50% - var(--margin)), 0)",
-  } : {};
-
   return (
     <div
       className="modal-container"
       ref={modalContainerRef}
       dir={localStorage.languageOption === "hebrew" ? "rtl" : "ltr"}>
-      <div className="modal" style={modalStyle}>
+      <div className={`modal${isBottom ? " modal-bottom" : ""}`}>
         <div className="modal-content">
           {content}
           <div style={{display: "flex"}}>

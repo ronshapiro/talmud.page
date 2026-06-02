@@ -80,11 +80,7 @@ function PreferenceSection({
           <button
             className="mdl-button mdl-js-button mdl-button--icon"
             style={{margin: 0, padding: 0, width: "32px", height: "32px", minWidth: "32px"}}
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              onEdit();
-            }}>
+            onClick={() => onEdit()}>
             <i className="material-icons" style={{fontSize: "20px"}}>edit</i>
           </button>
         )}
@@ -92,11 +88,7 @@ function PreferenceSection({
           <button
             className="mdl-button mdl-js-button mdl-button--icon"
             style={{margin: 0, padding: 0, width: "32px", height: "32px", minWidth: "32px"}}
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              onDelete();
-            }}>
+            onClick={() => onDelete()}>
             <i className="material-icons" style={{fontSize: "20px"}}>delete</i>
           </button>
         )}
@@ -454,10 +446,6 @@ export function Preferences({rerender: originalRerender}: RerenderViewParams): R
             initialTheme={editingTheme}
             onClose={() => setEditingTheme(null)}
             onSave={combinedRerender}
-            onDelete={(themeName) => {
-              deleteCustomTheme(themeName);
-              combinedRerender();
-            }}
           />
         )}
         <VirtualizeSwipeableViews

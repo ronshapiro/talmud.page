@@ -1,7 +1,7 @@
 import * as React from "react";
 import {throttle} from "underscore";
 import Modal from "./Modal";
-import {COLOR_VARIABLES} from "./themeConstants";
+import {getColorVariables} from "./themeConstants";
 import {CustomTheme, saveCustomTheme, deleteCustomTheme, getCustomTheme, isCustomTheme} from "./CustomThemes";
 import {upgradeElement} from "./componentHandler";
 
@@ -26,17 +26,78 @@ function colorToHex(color: string): string {
   return color;
 }
 
+function getBaseThemeColors(baseTheme: string): Record<string, string> {
+  const linkElement = (id: string) => (document.getElementById(id) as HTMLLinkElement);
+  const darkModeCss = linkElement("darkModeCss");
+  const grayModeCss = linkElement("grayModeCss");
+
+  const oldDarkModeDisabled = darkModeCss?.disabled;
+  const oldGrayModeDisabled = grayModeCss?.disabled;
+
+  if (darkModeCss) {
+    darkModeCss.disabled = (baseTheme !== "true");
+  }
+  if (grayModeCss) {
+    grayModeCss.disabled = (baseTheme !== "gray");
+  }
+
+  const root = document.documentElement;
+  const savedStyles: Record<string, string> = {};
+  const colorVariables = getColorVariables();
+  for (const variable of colorVariables) {
+    savedStyles[variable] = root.style.getPropertyValue(variable);
+    root.style.removeProperty(variable);
+  }
+
+  const computedStyles = getComputedStyle(document.body);
+  const baseColors: Record<string, string> = {};
+  for (const variable of colorVariables) {
+    const value = computedStyles.getPropertyValue(variable).trim();
+    if (value) {
+      baseColors[variable] = colorToHex(value);
+    }
+  }
+
+  for (const variable of colorVariables) {
+    if (savedStyles[variable]) {
+      root.style.setProperty(variable, savedStyles[variable]);
+    }
+  }
+
+  if (darkModeCss && oldDarkModeDisabled !== undefined) {
+    darkModeCss.disabled = oldDarkModeDisabled;
+  }
+  if (grayModeCss && oldGrayModeDisabled !== undefined) {
+    grayModeCss.disabled = oldGrayModeDisabled;
+  }
+
+  return baseColors;
+}
+
+function computeDiff(
+  currentColors: Record<string, string>, baseThemeName: string,
+): Record<string, string> {
+  const baseColors = getBaseThemeColors(baseThemeName);
+  const diff: Record<string, string> = {};
+  for (const variable of getColorVariables()) {
+    const currentValue = colorToHex(currentColors[variable]);
+    const baseValue = colorToHex(baseColors[variable]);
+    if (currentValue && baseValue && currentValue.toLowerCase() !== baseValue.toLowerCase()) {
+      diff[variable] = currentValue;
+    }
+  }
+  return diff;
+}
+
 interface ThemeEditorProps {
   onClose: () => void;
   onSave: () => void;
-  onDelete: (themeName: string) => void;
   initialTheme?: CustomTheme;
 }
 
 export function ThemeEditor({
   onClose,
   onSave,
-  onDelete,
   initialTheme,
 }: ThemeEditorProps): React.ReactElement {
   const [initialCustomThemes] = useState(() => localStorage.getItem("customThemes"));
@@ -51,16 +112,15 @@ export function ThemeEditor({
     return customTheme ? customTheme.baseTheme : currentTheme;
   });
   const [overrides, setOverrides] = useState<Record<string, string>>(() => {
-    if (initialTheme?.overrides) {
-      return initialTheme.overrides;
-    }
-    const computedStyles = getComputedStyle(document.body);
+    const baseColors = getBaseThemeColors(
+      initialTheme?.baseTheme ?? (localStorage.darkMode || "false"),
+    );
     const initialOverrides: Record<string, string> = {};
-    for (const variable of COLOR_VARIABLES) {
-      const value = computedStyles.getPropertyValue(variable).trim();
-      if (value) {
-        initialOverrides[variable] = colorToHex(value);
-      }
+    for (const variable of getColorVariables()) {
+      const initialValue = initialTheme?.overrides?.[variable];
+      initialOverrides[variable] = (
+        initialValue ? colorToHex(initialValue) : (baseColors[variable] || "")
+      );
     }
     return initialOverrides;
   });
@@ -79,10 +139,11 @@ export function ThemeEditor({
   }, [onSave]);
 
   const updateTheme = (
-    themeName: string, baseThemeName: string, newOverrides: Record<string, string>,
+    themeName: string, baseThemeName: string, fullColors: Record<string, string>,
   ) => {
+    const diffOverrides = computeDiff(fullColors, baseThemeName);
     saveCustomTheme(
-      {name: themeName || "Draft", baseTheme: baseThemeName, overrides: newOverrides});
+      {name: themeName || "Draft", baseTheme: baseThemeName, overrides: diffOverrides});
     onSaveRef.current();
   };
   const throttledUpdateTheme = useMemo(() => throttle(updateTheme, 50), []);
@@ -98,30 +159,13 @@ export function ThemeEditor({
 
   const handleBaseThemeChange = (newBaseTheme: string) => {
     setBaseTheme(newBaseTheme);
-
     localStorage.darkMode = newBaseTheme;
 
-    const linkElement = (id: string) => (document.getElementById(id) as HTMLLinkElement);
-    linkElement("darkModeCss").disabled = (newBaseTheme !== "true");
-    linkElement("grayModeCss").disabled = (newBaseTheme !== "gray");
+    // Get the clean base colors of the new base theme
+    const baseColors = getBaseThemeColors(newBaseTheme);
 
-    const root = document.documentElement;
-    for (const variable of COLOR_VARIABLES) {
-      root.style.removeProperty(variable);
-    }
-
-    const computedStyles = getComputedStyle(document.body);
-    const newOverrides: Record<string, string> = {};
-
-    for (const variable of COLOR_VARIABLES) {
-      const value = computedStyles.getPropertyValue(variable).trim();
-      if (value) {
-        newOverrides[variable] = colorToHex(value);
-      }
-    }
-
-    setOverrides(newOverrides);
-    throttledUpdateTheme(name, newBaseTheme, newOverrides);
+    setOverrides(baseColors);
+    throttledUpdateTheme(name, newBaseTheme, baseColors);
   };
 
   const handleCancel = () => {
@@ -153,7 +197,8 @@ export function ThemeEditor({
     if (initialTheme && initialTheme.name !== name) {
       deleteCustomTheme(initialTheme.name);
     }
-    saveCustomTheme({name, baseTheme, overrides});
+    const diffOverrides = computeDiff(overrides, baseTheme);
+    saveCustomTheme({name, baseTheme, overrides: diffOverrides});
     onSave();
     onClose();
   };
@@ -198,7 +243,7 @@ export function ThemeEditor({
       </div>
 
       <div style={{marginTop: "20px"}}>
-        {COLOR_VARIABLES.map(variable => (
+        {getColorVariables().map(variable => (
           <div key={variable} style={{display: "flex", alignItems: "center", marginBottom: "8px"}}>
             <span style={{flexGrow: 1, fontSize: "12px"}}>{variable}</span>
             <input
@@ -219,18 +264,6 @@ export function ThemeEditor({
     </div>
   );
 
-  const extraButtons = initialTheme ? [
-    <button
-      key="delete"
-      className="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary"
-      onClick={() => {
-        onDelete(initialTheme.name);
-        onClose();
-      }}>
-      Delete
-    </button>,
-  ] : [];
-
   return (
     <Modal
       content={content}
@@ -240,7 +273,6 @@ export function ThemeEditor({
       acceptText="Save"
       acceptTextHebrew="שמור"
       onAccept={handleSave}
-      extraButtons={extraButtons}
       isBottom
     />
   );
