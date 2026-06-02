@@ -19,6 +19,7 @@ interface ModalProps {
   acceptTextHebrew: string;
   onAccept: NullaryFunction<void>;
   extraButtons?: React.ReactElement[];
+  isBottom?: boolean;
 }
 
 export default function Modal(props: ModalProps): React.ReactElement {
@@ -27,6 +28,7 @@ export default function Modal(props: ModalProps): React.ReactElement {
     onCancel,
     onAccept,
     extraButtons,
+    isBottom,
   } = props;
   const cancelText = (
     localStorage.languageOption === "hebrew" ? props.cancelTextHebrew : props.cancelText);
@@ -41,27 +43,32 @@ export default function Modal(props: ModalProps): React.ReactElement {
         onCancel();
       }
     });
-    modalContainer.find("input, textarea").first().focus();
+    const {activeElement} = document;
+    if (!activeElement || (
+      activeElement.tagName !== "INPUT" && activeElement.tagName !== "TEXTAREA")) {
+      modalContainer.find("input, textarea").first().focus();
+    }
   });
 
   const marginStartStyle = (
     localStorage.languageOption === "hebrew" ? {marginRight: "auto"} : {marginLeft: "auto"});
+
   return (
     <div
       className="modal-container"
       ref={modalContainerRef}
       dir={localStorage.languageOption === "hebrew" ? "rtl" : "ltr"}>
-      <div className="modal">
+      <div className={`modal${isBottom ? " modal-bottom" : ""}`}>
         <div className="modal-content">
           {content}
           <div style={{display: "flex"}}>
-            {extraButtons}
             <button
               className="mdl-button mdl-js-button mdl-js-ripple-effect modal-cancel"
               style={marginStartStyle}
               onClick={() => onCancel()}>
               {cancelText}
             </button>
+            {extraButtons}
             <button
               className="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent"
               onClick={() => onAccept()}>

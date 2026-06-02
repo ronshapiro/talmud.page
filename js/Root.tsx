@@ -10,7 +10,7 @@ import {Preferences, LanguageChooser} from "./Preferences";
 import {Keybindings} from "./Keybindings";
 import {SnackbarHost} from "./SnackbarReact";
 import {Page, UiPage} from "./Page";
-import {useIncrementer, useUpdateDarkMode} from "./hooks";
+import {useIncrementer, useUpdateDisplayTheme} from "./hooks";
 import componentHandler from "./componentHandler";
 import {NavigationExtension} from "./NavigationExtension";
 
@@ -38,7 +38,7 @@ export function Root({
     componentHandler.upgradeAllRegistered();
   });
 
-  useUpdateDarkMode();
+  useUpdateDisplayTheme();
 
   const context = useConfiguration();
   const [queryCount, incrementQueryCount] = useIncrementer();

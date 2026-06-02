@@ -4,10 +4,12 @@ import {v4 as newUuid} from "uuid";
 import SwipeableViews from "react-swipeable-views";
 import { virtualize } from "react-swipeable-views-utils";
 import {upgradeElement} from "./componentHandler";
-import {useHtmlRef, useUpdateDarkMode} from "./hooks";
+import {useHtmlRef, useUpdateDisplayTheme, useIncrementer} from "./hooks";
 import {LocalStorageInt} from "./localStorage";
 import {snackbars} from "./snackbar";
 import {useConfiguration} from "./context";
+import {getCustomThemes, deleteCustomTheme, CustomTheme} from "./CustomThemes";
+import {ThemeEditor} from "./ThemeEditor";
 
 const VirtualizeSwipeableViews = virtualize(SwipeableViews);
 const {
@@ -21,6 +23,8 @@ interface Item {
   value: string;
   displayText: string;
   displayTextHebrew: string;
+  onEdit?: () => void;
+  onDelete?: () => void;
 }
 
 interface PreferenceSectionParams {
@@ -30,6 +34,7 @@ interface PreferenceSectionParams {
   localStorageKeyName: string;
   rerender: () => any;
   ignoreInHebrew?: true;
+  extraItems?: React.ReactElement[];
 }
 
 function useHebrew() {
@@ -42,9 +47,10 @@ function PreferenceSection({
   items,
   localStorageKeyName,
   rerender,
+  extraItems,
 }: PreferenceSectionParams) {
   function PreferenceItem({item}: {item: Item}) {
-    const {value, displayText, displayTextHebrew} = item;
+    const {value, displayText, displayTextHebrew, onEdit, onDelete} = item;
     const id = useMemo(newUuid, []);
     const isChecked = value === localStorage[localStorageKeyName];
     const labelRef = useHtmlRef<HTMLLabelElement>();
@@ -58,8 +64,8 @@ function PreferenceSection({
     };
     useEffect(() => upgradeElement(labelRef.current));
     return (
-      <div>
-        <label className="mdl-radio mdl-js-radio mdl-js-ripple-effect" ref={labelRef} htmlFor={id}>
+      <div style={{display: "flex", alignItems: "center"}}>
+        <label className="mdl-radio mdl-js-radio mdl-js-ripple-effect" ref={labelRef} htmlFor={id} style={{flexGrow: 1}}>
           <input
             ref={inputRef}
             checked={isChecked}
@@ -70,6 +76,22 @@ function PreferenceSection({
             className="mdl-radio__button" />
           <span className="mdl-radio__label">{useHebrew() ? displayTextHebrew : displayText}</span>
         </label>
+        {onEdit && (
+          <button
+            className="mdl-button mdl-js-button mdl-button--icon"
+            style={{margin: 0, padding: 0, width: "32px", height: "32px", minWidth: "32px"}}
+            onClick={() => onEdit()}>
+            <i className="material-icons" style={{fontSize: "20px"}}>edit</i>
+          </button>
+        )}
+        {onDelete && (
+          <button
+            className="mdl-button mdl-js-button mdl-button--icon"
+            style={{margin: 0, padding: 0, width: "32px", height: "32px", minWidth: "32px"}}
+            onClick={() => onDelete()}>
+            <i className="material-icons" style={{fontSize: "20px"}}>delete</i>
+          </button>
+        )}
       </div>
     );
   }
@@ -80,6 +102,7 @@ function PreferenceSection({
         {useHebrew() ? titleHebrew : title}
       </span>
       {items.map((item, i) => (<PreferenceItem item={item} key={i.toString()} />))}
+      {extraItems}
     </div>
   );
 }
@@ -131,7 +154,42 @@ function preferenceOptions(
   rerender: () => any,
   versions: Version[],
   versionStorageKey: string,
+  openThemeEditor: (theme?: CustomTheme) => void,
 ): React.ReactElement[] {
+  const customThemes = getCustomThemes();
+  const displayItems: Item[] = [
+    {value: "true", displayText: "Dark Mode", displayTextHebrew: "כהה"},
+    {value: "gray", displayText: "Gray Mode", displayTextHebrew: "אפור"},
+    {value: "false", displayText: "Light Mode", displayTextHebrew: "בהיר"},
+  ];
+
+  for (const theme of customThemes) {
+    displayItems.push({
+      value: theme.name,
+      displayText: theme.name,
+      displayTextHebrew: theme.name,
+      onEdit: () => openThemeEditor(theme),
+      onDelete: () => {
+        deleteCustomTheme(theme.name);
+        rerender();
+      },
+    });
+  }
+
+  const createNewThemeItem = (
+    <div
+      key="create-new-theme"
+      style={{display: "flex", alignItems: "center", marginLeft: "-11px"}}
+    >
+      <button
+        className="mdl-button mdl-js-button mdl-button--icon"
+        onClick={() => openThemeEditor()}>
+        <i className="material-icons">add_circle_outline</i>
+      </button>
+      <span style={{flexGrow: 1}}>Create new</span>
+    </div>
+  );
+
   const allOptions = [
     // Note: It's important that this is the first option so that there are no ignoreInHebrew
     // options before it. Otherwise, the swipe index could get mangled when switching languages.
@@ -174,13 +232,11 @@ function preferenceOptions(
     <PreferenceSection
       title="Display"
       titleHebrew="תצוגה"
-      items={[
-        {value: "true", displayText: "Dark Mode", displayTextHebrew: "כהה"},
-        {value: "gray", displayText: "Gray Mode", displayTextHebrew: "אפור"},
-        {value: "false", displayText: "Light Mode", displayTextHebrew: "בהיר"},
-      ]}
+      items={displayItems}
       rerender={rerender}
-      localStorageKeyName="darkMode" />,
+      localStorageKeyName="darkMode"
+      extraItems={[createNewThemeItem]} />,
+
     <PreferenceSection
       ignoreInHebrew
       title={
@@ -320,14 +376,22 @@ function preferenceOptions(
     : allOptions;
 }
 
-export function Preferences({rerender}: RerenderViewParams): React.ReactElement {
+export function Preferences({rerender: originalRerender}: RerenderViewParams): React.ReactElement {
+  const [rerenderCounter, rerender] = useIncrementer();
+  const combinedRerender = () => {
+    rerender();
+    originalRerender();
+  };
   const context = useConfiguration();
-  const options = preferenceOptions(
-    rerender,
-    context.versions ? context.versions() : [],
-    context.rendererType);
+  const [editingTheme, setEditingTheme] = useState<CustomTheme | undefined | null>(null);
 
-  useUpdateDarkMode();
+  const options = preferenceOptions(
+    combinedRerender,
+    context.versions ? context.versions() : [],
+    context.rendererType,
+    (theme) => setEditingTheme(theme || undefined));
+
+  useUpdateDisplayTheme();
 
   const preferencesIndex = new LocalStorageInt("preferencesIndex");
   const englishIndexState = useState(preferencesIndex.get() || 0);
@@ -377,8 +441,15 @@ export function Preferences({rerender}: RerenderViewParams): React.ReactElement 
     snackbars.preferencesNudge.dismissButtonImpl();
     elements.push(
       <div id="preferences-container" key="preferences-container" dir={direction}>
+        {editingTheme !== null && (
+          <ThemeEditor
+            initialTheme={editingTheme}
+            onClose={() => setEditingTheme(null)}
+            onSave={combinedRerender}
+          />
+        )}
         <VirtualizeSwipeableViews
-          key={useHebrew() ? "heb" : "eng"}
+          key={`${useHebrew() ? "heb" : "eng"}_${rerenderCounter}`}
           axis={axis}
           slideRenderer={slideRenderer}
           index={currentIndex}
@@ -410,7 +481,7 @@ export function LanguageChooser({
     return children;
   }
   // TODO(versions): what about a Shas chooser?
-  const option = preferenceOptions(rerender, [], "")[0];
+  const option = preferenceOptions(rerender, [], "", () => {})[0];
   const buttonClasses = (
     "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored");
   return (

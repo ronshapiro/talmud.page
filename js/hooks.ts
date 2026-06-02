@@ -1,4 +1,5 @@
 import {useEffect, useRef, useState} from "react";
+import {getCustomTheme, isCustomTheme} from "./CustomThemes";
 
 export function useHtmlRef<T>(): React.MutableRefObject<T> {
   return useRef<T>(undefined as any);
@@ -14,12 +15,27 @@ export function useAlternator(defaultValue: boolean): [boolean, () => void] {
   return [state, () => setState(old => !old)];
 }
 
-export function useUpdateDarkMode(): void {
+export function useUpdateDisplayTheme(): void {
   useEffect(() => {
+    const {darkMode} = localStorage;
+    const customTheme = isCustomTheme(darkMode) ? getCustomTheme(darkMode) : undefined;
+    const baseTheme = customTheme ? customTheme.baseTheme : darkMode;
+
     (document.getElementById("darkModeCss") as HTMLLinkElement).disabled = (
-      localStorage.darkMode !== "true");
+      baseTheme !== "true");
     (document.getElementById("grayModeCss") as HTMLLinkElement).disabled = (
-      localStorage.darkMode !== "gray");
+      baseTheme !== "gray");
+
+    const root = document.documentElement;
+    // Always clear custom properties first to avoid "sticky" styles when switching
+    // between custom themes.
+    root.removeAttribute("style");
+    if (customTheme) {
+      for (const [variable, value] of Object.entries(customTheme.overrides)) {
+        root.style.setProperty(variable, value);
+      }
+    }
+
     for (const id of ["theme-color", "theme-color-dark-mode"]) {
       (document.getElementById(id) as HTMLMetaElement).content = (
         getComputedStyle(document.body).getPropertyValue('--background-color'));

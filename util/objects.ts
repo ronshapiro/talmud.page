@@ -6,7 +6,7 @@ export function hasMatchingProperty(first: any, second: any, propertyName: strin
 }
 
 
-export function sortedEntries<T>(x: Record<string, T>, sortOrder: string[]) {
+export function sortedEntries<T>(x: Record<string, T>, sortOrder: string[]): [string, T][] {
   return Object.entries(x).sort((a, b) => {
     return sortOrder.indexOf(a[0]) - sortOrder.indexOf(b[0]);
   });
