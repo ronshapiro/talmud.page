@@ -578,6 +578,10 @@ h2, .title, .titleHebrew {
     padding: 20px;
 }
 
+#preferences-container .modal-container button {
+    padding: 0;
+}
+
 
 #showSettings, #showSearch {
     color: var(--highlight-gray);

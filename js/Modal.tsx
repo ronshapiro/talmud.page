@@ -68,13 +68,13 @@ export default function Modal(props: ModalProps): React.ReactElement {
         <div className="modal-content">
           {content}
           <div style={{display: "flex"}}>
-            {extraButtons}
             <button
               className="mdl-button mdl-js-button mdl-js-ripple-effect modal-cancel"
               style={marginStartStyle}
               onClick={() => onCancel()}>
               {cancelText}
             </button>
+            {extraButtons}
             <button
               className="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent"
               onClick={() => onAccept()}>

@@ -23,6 +23,8 @@ interface Item {
   value: string;
   displayText: string;
   displayTextHebrew: string;
+  onEdit?: () => void;
+  onDelete?: () => void;
 }
 
 interface PreferenceSectionParams {
@@ -48,7 +50,7 @@ function PreferenceSection({
   extraItems,
 }: PreferenceSectionParams) {
   function PreferenceItem({item}: {item: Item}) {
-    const {value, displayText, displayTextHebrew} = item;
+    const {value, displayText, displayTextHebrew, onEdit, onDelete} = item;
     const id = useMemo(newUuid, []);
     const isChecked = value === localStorage[localStorageKeyName];
     const labelRef = useHtmlRef<HTMLLabelElement>();
@@ -62,8 +64,8 @@ function PreferenceSection({
     };
     useEffect(() => upgradeElement(labelRef.current));
     return (
-      <div>
-        <label className="mdl-radio mdl-js-radio mdl-js-ripple-effect" ref={labelRef} htmlFor={id}>
+      <div style={{display: "flex", alignItems: "center"}}>
+        <label className="mdl-radio mdl-js-radio mdl-js-ripple-effect" ref={labelRef} htmlFor={id} style={{flexGrow: 1}}>
           <input
             ref={inputRef}
             checked={isChecked}
@@ -74,6 +76,30 @@ function PreferenceSection({
             className="mdl-radio__button" />
           <span className="mdl-radio__label">{useHebrew() ? displayTextHebrew : displayText}</span>
         </label>
+        {onEdit && (
+          <button
+            className="mdl-button mdl-js-button mdl-button--icon"
+            style={{margin: 0, padding: 0, width: "32px", height: "32px", minWidth: "32px"}}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              onEdit();
+            }}>
+            <i className="material-icons" style={{fontSize: "20px"}}>edit</i>
+          </button>
+        )}
+        {onDelete && (
+          <button
+            className="mdl-button mdl-js-button mdl-button--icon"
+            style={{margin: 0, padding: 0, width: "32px", height: "32px", minWidth: "32px"}}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              onDelete();
+            }}>
+            <i className="material-icons" style={{fontSize: "20px"}}>delete</i>
+          </button>
+        )}
       </div>
     );
   }
@@ -150,17 +176,25 @@ function preferenceOptions(
       value: theme.name,
       displayText: theme.name,
       displayTextHebrew: theme.name,
+      onEdit: () => openThemeEditor(theme),
+      onDelete: () => {
+        deleteCustomTheme(theme.name);
+        rerender();
+      },
     });
   }
 
   const createNewThemeItem = (
-    <div key="create-new-theme" style={{display: "flex", alignItems: "center", padding: "8px 0"}}>
-      <span style={{flexGrow: 1, color: "gray", paddingLeft: "32px"}}>Create new</span>
+    <div
+      key="create-new-theme"
+      style={{display: "flex", alignItems: "center", marginLeft: "-11px"}}
+    >
       <button
         className="mdl-button mdl-js-button mdl-button--icon"
         onClick={() => openThemeEditor()}>
         <i className="material-icons">add_circle_outline</i>
       </button>
+      <span style={{flexGrow: 1}}>Create new</span>
     </div>
   );
 
@@ -210,33 +244,7 @@ function preferenceOptions(
       rerender={rerender}
       localStorageKeyName="darkMode"
       extraItems={[createNewThemeItem]} />,
-    <div style={{padding: "10px"}}>
-      {customThemes.length > 0 && (
-        <div style={{marginTop: "10px"}}>
-          <div style={{fontSize: "16px", marginBottom: "5px"}}>Manage Custom Themes:</div>
-          {customThemes.map(theme => (
-            <div key={theme.name} style={{display: "flex", alignItems: "center", marginBottom: "5px"}}>
-              <span style={{flexGrow: 1}}>{theme.name}</span>
-              <button
-                className="mdl-button mdl-js-button mdl-button--icon"
-                onClick={() => openThemeEditor(theme)}>
-                <i className="material-icons">edit</i>
-              </button>
-              <button
-                className="mdl-button mdl-js-button mdl-button--icon"
-                onClick={() => {
-                  if (window.confirm(`Delete theme "${theme.name}"?`)) {
-                    deleteCustomTheme(theme.name);
-                    rerender();
-                  }
-                }}>
-                <i className="material-icons">delete</i>
-              </button>
-            </div>
-          ))}
-        </div>
-      )}
-    </div>,
+
     <PreferenceSection
       ignoreInHebrew
       title={

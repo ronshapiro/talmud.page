@@ -26,6 +26,7 @@ export function saveCustomTheme(theme: CustomTheme): void {
     themes.push(theme);
   }
   localStorage.setItem(CUSTOM_THEMES_KEY, JSON.stringify(themes));
+  localStorage.darkMode = theme.name;
 }
 
 export function deleteCustomTheme(themeName: string): void {

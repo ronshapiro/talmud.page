@@ -1,10 +1,30 @@
 import * as React from "react";
+import {throttle} from "underscore";
 import Modal from "./Modal";
 import {COLOR_VARIABLES} from "./themeConstants";
-import {CustomTheme, saveCustomTheme} from "./CustomThemes";
+import {CustomTheme, saveCustomTheme, deleteCustomTheme, getCustomTheme, isCustomTheme} from "./CustomThemes";
 import {upgradeElement} from "./componentHandler";
 
-const {useState, useEffect, useRef} = React;
+const {useState, useEffect, useRef, useMemo} = React;
+
+function colorToHex(color: string): string {
+  if (!color) return "";
+  color = color.trim();
+  if (color.startsWith("#")) {
+    if (color.length === 4) {
+      return "#" + color[1] + color[1] + color[2] + color[2] + color[3] + color[3];
+    }
+    return color;
+  }
+  const match = color.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*[\d.]+)?\)$/);
+  if (match) {
+    const r = parseInt(match[1], 10).toString(16).padStart(2, "0");
+    const g = parseInt(match[2], 10).toString(16).padStart(2, "0");
+    const b = parseInt(match[3], 10).toString(16).padStart(2, "0");
+    return `#${r}${g}${b}`;
+  }
+  return color;
+}
 
 interface ThemeEditorProps {
   onClose: () => void;
@@ -19,9 +39,31 @@ export function ThemeEditor({
   onDelete,
   initialTheme,
 }: ThemeEditorProps): React.ReactElement {
+  const [initialCustomThemes] = useState(() => localStorage.getItem("customThemes"));
+  const [initialDarkMode] = useState(() => localStorage.darkMode);
   const [name, setName] = useState(initialTheme?.name || "");
-  const [baseTheme, setBaseTheme] = useState(initialTheme?.baseTheme || "false");
-  const [overrides, setOverrides] = useState<Record<string, string>>(initialTheme?.overrides || {});
+  const [baseTheme, setBaseTheme] = useState(() => {
+    if (initialTheme) {
+      return initialTheme.baseTheme;
+    }
+    const currentTheme = localStorage.darkMode || "false";
+    const customTheme = isCustomTheme(currentTheme) ? getCustomTheme(currentTheme) : undefined;
+    return customTheme ? customTheme.baseTheme : currentTheme;
+  });
+  const [overrides, setOverrides] = useState<Record<string, string>>(() => {
+    if (initialTheme?.overrides) {
+      return initialTheme.overrides;
+    }
+    const computedStyles = getComputedStyle(document.body);
+    const initialOverrides: Record<string, string> = {};
+    for (const variable of COLOR_VARIABLES) {
+      const value = computedStyles.getPropertyValue(variable).trim();
+      if (value) {
+        initialOverrides[variable] = colorToHex(value);
+      }
+    }
+    return initialOverrides;
+  });
 
   const nameInputRef = useRef<HTMLInputElement>(null);
 
@@ -31,14 +73,70 @@ export function ThemeEditor({
     }
   }, []);
 
+  const onSaveRef = useRef(onSave);
+  useEffect(() => {
+    onSaveRef.current = onSave;
+  }, [onSave]);
+
+  const updateTheme = (
+    themeName: string, baseThemeName: string, newOverrides: Record<string, string>,
+  ) => {
+    saveCustomTheme(
+      {name: themeName || "Draft", baseTheme: baseThemeName, overrides: newOverrides});
+    onSaveRef.current();
+  };
+  const throttledUpdateTheme = useMemo(() => throttle(updateTheme, 50), []);
+
   const handleColorChange = (variable: string, color: string) => {
     setOverrides(prev => {
       const newOverrides = {...prev, [variable]: color};
       // Live update by calling onSave with the current draft state
-      saveCustomTheme({name: name || "Draft", baseTheme, overrides: newOverrides});
-      onSave();
+      throttledUpdateTheme(name, baseTheme, newOverrides);
       return newOverrides;
     });
+  };
+
+  const handleBaseThemeChange = (newBaseTheme: string) => {
+    setBaseTheme(newBaseTheme);
+
+    localStorage.darkMode = newBaseTheme;
+
+    const linkElement = (id: string) => (document.getElementById(id) as HTMLLinkElement);
+    linkElement("darkModeCss").disabled = (newBaseTheme !== "true");
+    linkElement("grayModeCss").disabled = (newBaseTheme !== "gray");
+
+    const root = document.documentElement;
+    for (const variable of COLOR_VARIABLES) {
+      root.style.removeProperty(variable);
+    }
+
+    const computedStyles = getComputedStyle(document.body);
+    const newOverrides: Record<string, string> = {};
+
+    for (const variable of COLOR_VARIABLES) {
+      const value = computedStyles.getPropertyValue(variable).trim();
+      if (value) {
+        newOverrides[variable] = colorToHex(value);
+      }
+    }
+
+    setOverrides(newOverrides);
+    throttledUpdateTheme(name, newBaseTheme, newOverrides);
+  };
+
+  const handleCancel = () => {
+    if (initialCustomThemes !== null) {
+      localStorage.setItem("customThemes", initialCustomThemes);
+    } else {
+      localStorage.removeItem("customThemes");
+    }
+    if (initialDarkMode !== undefined && initialDarkMode !== null) {
+      localStorage.setItem("darkMode", initialDarkMode);
+    } else {
+      localStorage.removeItem("darkMode");
+    }
+    onSave();
+    onClose();
   };
 
   const handleSave = () => {
@@ -52,13 +150,16 @@ export function ThemeEditor({
       alert("This name is reserved. Please choose another name.");
       return;
     }
+    if (initialTheme && initialTheme.name !== name) {
+      deleteCustomTheme(initialTheme.name);
+    }
     saveCustomTheme({name, baseTheme, overrides});
     onSave();
     onClose();
   };
 
   const content = (
-    <div style={{maxHeight: "35vh", overflowY: "auto", padding: "10px 10px 40px 10px"}}>
+    <div style={{maxHeight: "35vh", overflowY: "auto", padding: "10px 10px 40px 10px", direction: "ltr"}}>
       <div className="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style={{width: "100%"}}>
         <input
           className="mdl-textfield__input"
@@ -68,6 +169,7 @@ export function ThemeEditor({
           onChange={(e) => setName(e.target.value)}
           ref={nameInputRef}
         />
+        {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
         <label className="mdl-textfield__label" htmlFor="theme-name">Theme Name</label>
       </div>
 
@@ -87,7 +189,7 @@ export function ThemeEditor({
                 id={id}
                 value={theme}
                 checked={baseTheme === theme}
-                onChange={() => setBaseTheme(theme)}
+                onChange={() => handleBaseThemeChange(theme)}
               />
               <span className="mdl-radio__label">{displayText}</span>
             </label>
@@ -108,7 +210,7 @@ export function ThemeEditor({
             />
             <input
               type="color"
-              value={overrides[variable]?.startsWith("#") ? overrides[variable] : "#000000"}
+              value={colorToHex(overrides[variable]) || "#000000"}
               onChange={(e) => handleColorChange(variable, e.target.value)}
             />
           </div>
@@ -120,13 +222,10 @@ export function ThemeEditor({
   const extraButtons = initialTheme ? [
     <button
       key="delete"
-      className="mdl-button mdl-js-button mdl-js-ripple-effect"
-      style={{color: "red"}}
+      className="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary"
       onClick={() => {
-        if (window.confirm(`Delete theme "${initialTheme.name}"?`)) {
-          onDelete(initialTheme.name);
-          onClose();
-        }
+        onDelete(initialTheme.name);
+        onClose();
       }}>
       Delete
     </button>,
@@ -137,7 +236,7 @@ export function ThemeEditor({
       content={content}
       cancelText="Cancel"
       cancelTextHebrew="ביטול"
-      onCancel={onClose}
+      onCancel={handleCancel}
       acceptText="Save"
       acceptTextHebrew="שמור"
       onAccept={handleSave}
