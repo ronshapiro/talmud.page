@@ -1,6 +1,5 @@
 import {useEffect, useRef, useState} from "react";
 import {getCustomTheme, isCustomTheme} from "./CustomThemes";
-import {getColorVariables} from "./themeConstants";
 
 export function useHtmlRef<T>(): React.MutableRefObject<T> {
   return useRef<T>(undefined as any);
@@ -30,9 +29,7 @@ export function useUpdateDarkMode(): void {
     const root = document.documentElement;
     // Always clear custom properties first to avoid "sticky" styles when switching
     // between custom themes.
-    for (const variable of getColorVariables()) {
-      root.style.removeProperty(variable);
-    }
+    root.removeAttribute("style");
     if (customTheme) {
       for (const [variable, value] of Object.entries(customTheme.overrides)) {
         root.style.setProperty(variable, value);

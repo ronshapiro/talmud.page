@@ -30,12 +30,18 @@ export function saveCustomTheme(theme: CustomTheme): void {
 }
 
 export function deleteCustomTheme(themeName: string): void {
-  const themes = getCustomThemes();
-  const newThemes = themes.filter(t => t.name !== themeName);
-  localStorage.setItem(CUSTOM_THEMES_KEY, JSON.stringify(newThemes));
-  if (localStorage.darkMode === themeName) {
-    localStorage.darkMode = "false";
+  const newThemes = [];
+  for (const theme of getCustomThemes()) {
+    if (theme.name === themeName) {
+      if (localStorage.darkMode === themeName) {
+        localStorage.darkMode = theme.baseTheme;
+      }
+    } else {
+      newThemes.push(theme);
+    }
   }
+
+  localStorage.setItem(CUSTOM_THEMES_KEY, JSON.stringify(newThemes));
 }
 
 export function getCustomTheme(themeName: string): CustomTheme | undefined {
