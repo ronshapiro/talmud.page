@@ -32,7 +32,13 @@ export function ThemeEditor({
   }, []);
 
   const handleColorChange = (variable: string, color: string) => {
-    setOverrides(prev => ({...prev, [variable]: color}));
+    setOverrides(prev => {
+      const newOverrides = {...prev, [variable]: color};
+      // Live update by calling onSave with the current draft state
+      saveCustomTheme({name: name || "Draft", baseTheme, overrides: newOverrides});
+      onSave();
+      return newOverrides;
+    });
   };
 
   const handleSave = () => {
@@ -52,7 +58,7 @@ export function ThemeEditor({
   };
 
   const content = (
-    <div style={{maxHeight: "60vh", overflowY: "auto", padding: "10px"}}>
+    <div style={{maxHeight: "35vh", overflowY: "auto", padding: "10px 10px 40px 10px"}}>
       <div className="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style={{width: "100%"}}>
         <label className="mdl-textfield__label" htmlFor="theme-name">Theme Name
           <input
@@ -137,6 +143,7 @@ export function ThemeEditor({
       acceptTextHebrew="שמור"
       onAccept={handleSave}
       extraButtons={extraButtons}
+      isBottom
     />
   );
 }
