@@ -4,7 +4,7 @@ import {v4 as newUuid} from "uuid";
 import SwipeableViews from "react-swipeable-views";
 import { virtualize } from "react-swipeable-views-utils";
 import {upgradeElement} from "./componentHandler";
-import {useHtmlRef, useUpdateDarkMode, useIncrementer} from "./hooks";
+import {useHtmlRef, useUpdateDisplayTheme, useIncrementer} from "./hooks";
 import {LocalStorageInt} from "./localStorage";
 import {snackbars} from "./snackbar";
 import {useConfiguration} from "./context";
@@ -391,7 +391,7 @@ export function Preferences({rerender: originalRerender}: RerenderViewParams): R
     context.rendererType,
     (theme) => setEditingTheme(theme || undefined));
 
-  useUpdateDarkMode();
+  useUpdateDisplayTheme();
 
   const preferencesIndex = new LocalStorageInt("preferencesIndex");
   const englishIndexState = useState(preferencesIndex.get() || 0);

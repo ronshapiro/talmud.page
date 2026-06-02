@@ -15,7 +15,7 @@ export function useAlternator(defaultValue: boolean): [boolean, () => void] {
   return [state, () => setState(old => !old)];
 }
 
-export function useUpdateDarkMode(): void {
+export function useUpdateDisplayTheme(): void {
   useEffect(() => {
     const {darkMode} = localStorage;
     const customTheme = isCustomTheme(darkMode) ? getCustomTheme(darkMode) : undefined;
