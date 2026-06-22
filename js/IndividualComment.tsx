@@ -134,10 +134,14 @@ export function IndividualComment({
   const output = [];
 
   if (commentaryKind.showTitle) {
+    const includeEnglishTitle = (
+      !isEmptyText(comment.en)
+        || (comment.rows ?? []).filter(row => !isEmptyText(row.english)).length > 0
+    );
     const titleRow = (
       <InternalTableRow
         hebrew={comment.sourceHeRef}
-        english={isEmptyText(comment.en) ? "" : comment.sourceRef}
+        english={includeEnglishTitle ? comment.sourceRef : ""}
         comment={comment}
         commentaryKind={commentaryKind}
         />);
