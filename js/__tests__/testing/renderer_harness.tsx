@@ -11,6 +11,7 @@
  */
 import {Renderer} from "../../Renderer";
 import {getCommentaryTypes} from "../../commentaryTypes";
+import {CommentaryType} from "../../../commentaries";
 import {UiPage} from "../../Page";
 import {DriveClient} from "../../google_drive/client";
 import {amudMetadata, computeNextAmud, computePreviousAmud} from "../../amud";
@@ -25,6 +26,8 @@ export interface HarnessOptions {
   /** Refs that the renderer should skip, as the siddur and Mishneh Torah renderers do. */
   ignoredSectionRefs?: string[];
   driveClient?: Partial<DriveClient>;
+  /** Overrides the commentary types, which each renderer chooses for its resource type. */
+  commentaryTypes?: CommentaryType[];
 }
 
 class HarnessRenderer extends Renderer {
@@ -35,7 +38,7 @@ class HarnessRenderer extends Renderer {
     const previous = () => computePreviousAmud(amudMetadata().amudStart!);
     const next = () => computeNextAmud(amudMetadata().amudEnd!);
     super(
-      getCommentaryTypes("talmud"),
+      harnessOptions.commentaryTypes ?? getCommentaryTypes("talmud"),
       {
         previous,
         next,

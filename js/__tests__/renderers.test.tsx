@@ -16,6 +16,8 @@
 import * as React from "react";
 import {Renderer, numericalNavigationExtension} from "../Renderer";
 import {Segment} from "../Segment";
+// @ts-ignore -- liturgy_renderer is still plain JS; see suggestion #13 in
+// FrontendTestabilitySuggestions.md.
 import {LiturgyRenderer} from "../liturgy_renderer";
 import {getCommentaryTypes} from "../commentaryTypes";
 import {UiPage} from "../Page";
