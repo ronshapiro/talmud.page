@@ -42,29 +42,49 @@ export function rerender(container: HTMLElement, element: React.ReactElement): v
   });
 }
 
+const isThenable = (value: unknown): boolean => (
+  typeof (value as {then?: unknown})?.then === "function");
+
 /**
- * Runs `body` inside `act()`, flushing the state updates and effects it triggers.
+ * Runs `body` inside `act()`, flushing the state updates and effects it triggers, and returns
+ * whatever `body` returned.
  *
- * The body's return value is discarded rather than handed to `act`, which warns about anything
- * that is neither undefined nor a promise. Callers routinely pass a concise arrow whose expression
- * happens to evaluate to something (`() => setState(x)`, `() => Mousetrap.trigger("j")`).
+ * `act` decides between its synchronous and asynchronous modes by looking at what the callback
+ * returns: a thenable means "await this and flush what it schedules", anything else means "flush
+ * now". A callback that returns some unrelated value is therefore ambiguous, and `act` warns about
+ * it. Callers here routinely pass a concise arrow whose expression happens to evaluate to
+ * something (`() => setState(x)`, `() => Mousetrap.trigger("j")`), so the value is captured and
+ * handed back to the caller instead of being passed on to `act`.
+ *
+ * A body that returns a promise is a mistake rather than a value worth returning: the synchronous
+ * `act` cannot flush whatever that promise goes on to schedule, so the test would assert against a
+ * half-settled tree. That throws, pointing at `flushAsync`.
  */
-export function flush(body: () => unknown): void {
+export function flush<T>(body: () => T): T {
+  let result: T = undefined as unknown as T;
   act(() => {
-    body();
+    result = body();
   });
+  if (isThenable(result)) {
+    throw new Error("flush() was given an async body; use flushAsync() so act() can await it");
+  }
+  return result;
 }
 
 /**
- * Runs `body` inside an async `act()`, then lets pending promises settle. Use when the code under
- * test renders as the result of a resolved promise, as the api-backed page loads do.
+ * Runs `body` inside an async `act()`, then lets pending promises settle, and returns what `body`
+ * resolved to. Use when the code under test renders as the result of a resolved promise, as the
+ * api-backed page loads do.
  */
-export async function flushAsync(body: () => unknown = () => {}): Promise<void> {
+export async function flushAsync<T>(body: () => T = (() => undefined as unknown as T)):
+Promise<Awaited<T>> {
+  let result: Awaited<T> = undefined as unknown as Awaited<T>;
   // eslint-disable-next-line @typescript-eslint/await-thenable
   await act(async () => {
-    await body();
+    result = await body();
     await new Promise(resolve => setImmediate(resolve));
   });
+  return result;
 }
 
 /**
