@@ -212,12 +212,13 @@ describe("loading the next section", () => {
 
   test("the navigation extension exposes it to the next button", async () => {
     const app = mountRenderer([page({id: "2a"})]);
-    const {runner} = setUpRunner(app);
+    const {api} = setUpRunner(app);
 
     await flushAsync(() => { app.renderer.navigationExtension.loadNext(); });
 
     expect(visiblePages(app)).toEqual(["amud-2a", "amud-2b"]);
-    expect(runner.apiCache).toBeDefined();
+    // Loading a page also warms the cache for the one after it.
+    expect(api.requests).toEqual(["api/Berakhot/2b", "api/Berakhot/3a"]);
   });
 });
 

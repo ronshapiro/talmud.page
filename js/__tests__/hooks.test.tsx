@@ -194,12 +194,20 @@ describe("useUpdateDisplayTheme", () => {
     expect(document.documentElement.style.getPropertyValue("--background-color")).toBe("");
   });
 
-  test("the theme-color meta tags are refreshed", () => {
+  test("the theme-color meta tags are set from the computed background color", () => {
+    // jsdom does not resolve css custom properties, so the computed value is the empty string
+    // here. What this pins is the wiring: both tags are rewritten from that computed value on
+    // every render, rather than keeping whatever the server put there.
     localStorage.darkMode = "true";
+    for (const id of ["theme-color", "theme-color-dark-mode"]) {
+      (document.getElementById(id) as HTMLMetaElement).content = "stale";
+    }
+
     renderTheme();
 
+    const computed = getComputedStyle(document.body).getPropertyValue("--background-color");
     for (const id of ["theme-color", "theme-color-dark-mode"]) {
-      expect((document.getElementById(id) as HTMLMetaElement).content).toEqual(expect.any(String));
+      expect((document.getElementById(id) as HTMLMetaElement).content).toBe(computed);
     }
   });
 });

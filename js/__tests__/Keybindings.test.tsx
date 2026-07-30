@@ -131,7 +131,8 @@ describe("known defects in row navigation", () => {
   test("the hidden measuring host's rows are navigated first", () => {
     enableShortcuts();
     const app = mountRenderer([twoSegments()]);
-    expect(hiddenRowCount()).toBeGreaterThan(0);
+    // The hidden host renders one gemara row and its commentary rows, all invisible.
+    expect(hiddenRowCount()).toBe(4);
 
     press("j");
 
@@ -284,7 +285,7 @@ describe("choosing a commentary with the keyboard", () => {
     focusCommentaryButtonRow();
     press("n");
     press("n"); // a second press lets the first one's highlight land
-    expect(selectedButton(app)).toBeDefined();
+    expect(selectedButton(app)).toBe('רש"י');
 
     pressUntil("j", () => selectedButton(app) === undefined, "cleared the button selection");
 

@@ -111,7 +111,7 @@ describe("title", () => {
 
   test("double clicking the title collapses the page contents", () => {
     const root = render(page());
-    expect(queryAll(root, ".segment-container").length).toBeGreaterThan(0);
+    expect(queryAll(root, ".segment-container")).toHaveLength(2);
 
     doubleClick(query(root, ".titleContainer span"));
 

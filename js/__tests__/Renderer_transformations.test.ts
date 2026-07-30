@@ -62,8 +62,7 @@ describe("segment defaults", () => {
     }));
 
     const [only] = target.sections;
-    expect(only.uuid).toEqual(expect.any(String));
-    expect(only.uuid).not.toBe("");
+    expect(only.uuid).toMatch(/^[\da-f]{8}(?:-[\da-f]{4}){3}-[\da-f]{12}$/);
     expect(only.sourceRef).toBe("default");
     expect(only.sourceHeRef).toBe("ברירת מחדל");
   });
@@ -187,8 +186,8 @@ describe("side-by-side ('both') translation mode", () => {
   test("Steinsaltz is left alone in the default translation mode", () => {
     const target = transform(withSteinsaltz());
 
-    expect(target.sections[0].commentary!.Steinsaltz).toBeDefined();
-    expect(target.sections[0].commentary!.Translation).toBeUndefined();
+    expect(Object.keys(target.sections[0].commentary!)).toEqual(["Steinsaltz"]);
+    expect(target.sections[0].steinsaltzRetained).toBeUndefined();
   });
 
   test("an empty Steinsaltz english is continually refreshed from the segment", () => {
@@ -249,8 +248,7 @@ describe("side-by-side ('both') translation mode", () => {
 
     const target = transform(withSteinsaltz(), new TestRenderer({isTalmud: true}));
 
-    expect(target.sections[0].commentary!.Steinsaltz).toBeDefined();
-    expect(target.sections[0].commentary!.Translation).toBeUndefined();
+    expect(Object.keys(target.sections[0].commentary!)).toEqual(["Steinsaltz"]);
   });
 
   test("a translationOverride is used when no language override applies", () => {
@@ -258,6 +256,7 @@ describe("side-by-side ('both') translation mode", () => {
       withSteinsaltz(),
       new TestRenderer({isTalmud: true, translationOverride: "both"}));
 
-    expect(target.sections[0].commentary!.Translation).toBeDefined();
+    expect(Object.keys(target.sections[0].commentary!)).toEqual(["Translation"]);
+    expect(target.sections[0].commentary!.Translation.comments[0].he).toEqual("שטיינזלץ");
   });
 });

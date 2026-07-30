@@ -71,10 +71,21 @@ describe("first render", () => {
     expect(queryAll(document.body, ".hidden-host")).toHaveLength(1);
   });
 
-  test("navigation buttons for the neighboring pages are offered", () => {
+  test("only the next-page button is offered on the first daf of a masechet", () => {
     const app = mountRenderer([simplePage()]);
 
-    expect(app.all(".navigation-button-container").length).toBeGreaterThan(0);
+    expect(app.all(".navigation-button-container").map(x => x.className))
+      .toEqual(["navigation-button-container next"]);
+    expect(app.find(".navigation-button-container span[role=button]").textContent)
+      .toEqual("Load 2b");
+  });
+
+  test("both buttons are offered once past the start of the masechet", () => {
+    installPageEnvironment({book: "Berakhot", path: "/Berakhot/5a"});
+    const app = mountRenderer([page({id: "5a", sections: [segment({he: "טקסט"})]})]);
+
+    expect(app.all(".navigation-button-container span[role=button]").map(x => x.textContent))
+      .toEqual(["Load 4b", "Load 5b"]);
   });
 });
 

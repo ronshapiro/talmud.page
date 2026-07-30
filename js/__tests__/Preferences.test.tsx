@@ -368,6 +368,7 @@ describe("custom themes", () => {
       .find(x => x.textContent === "add_circle_outline")!;
     click(addButton.parentElement!);
 
-    expect(queryAll(container, "input[type=color]").length).toBeGreaterThan(0);
+    expect(queryOrNull(container, "#theme-name")).not.toBeNull();
+    expect(texts(container, "#preferences-container button")).toContain("Save");
   });
 });

@@ -176,13 +176,42 @@ describe("Talmud page titles", () => {
 });
 
 describe("other books' hebrew title formats", () => {
-  test("Peninei Halacha titles are formatted with its own helper", () => {
-    expect(penineiHalachaHebrewTitleName("פניני הלכה", "3")).toEqual(expect.any(String));
-    expect(penineiHalachaHebrewTitleName("פניני הלכה", "3")).toContain("פניני הלכה");
+  describe("Peninei Halacha", () => {
+    const title = (section: string) => penineiHalachaHebrewTitleName("פניני הלכה", section);
+
+    test("a numbered section becomes a hebrew numeral after the book name", () => {
+      expect(title("3")).toEqual("פניני הלכה ג");
+    });
+
+    test("the introduction is named rather than numbered", () => {
+      expect(title("Introduction")).toEqual("פניני הלכה הקדמה");
+    });
+
+    test("a chapter:section reference keeps its separator", () => {
+      expect(title("2:5")).toEqual("פניני הלכה ב:ה");
+    });
+
+    test("fifteen and sixteen avoid spelling the divine name", () => {
+      expect(title("15")).toEqual("פניני הלכה טו");
+      expect(title("16")).toEqual("פניני הלכה טז");
+    });
   });
 
-  test("Mishneh Torah titles are formatted with its own helper", () => {
-    expect(mishnehTorahHebrewTitleName("הלכות תשובה", "3")).toContain("הלכות תשובה");
+  describe("Mishneh Torah", () => {
+    const title = (section: string) => mishnehTorahHebrewTitleName("הלכות תשובה", section);
+
+    test("the section is labelled as a chapter, after a comma", () => {
+      expect(title("3")).toEqual("הלכות תשובה, פרק ג");
+    });
+
+    test("fifteen and sixteen avoid spelling the divine name", () => {
+      expect(title("15")).toEqual("הלכות תשובה, פרק טו");
+      expect(title("16")).toEqual("הלכות תשובה, פרק טז");
+    });
+
+    test("a round number drops the units letter", () => {
+      expect(title("20")).toEqual("הלכות תשובה, פרק כ");
+    });
   });
 });
 
