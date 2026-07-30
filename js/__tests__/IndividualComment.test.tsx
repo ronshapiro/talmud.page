@@ -119,6 +119,155 @@ describe("content shapes", () => {
   });
 });
 
+/**
+ * `rows` is a parallel rendering path to the `he`/`en` branches, used today only by "Steinsaltz
+ * In-Depth" comments (see getSteinsaltzCommentRows in steinsaltz.ts, which emits image rows plus
+ * one text row). These tests compare it against the default path and pin the places where it
+ * behaves differently or supports less.
+ */
+describe("the rows path compared with the he/en path", () => {
+  test("rows take precedence over he and en entirely", () => {
+    const root = renderComment({
+      he: "עברית שלא תוצג",
+      en: "english that is not shown",
+      rows: [{hebrew: "מהשורה", english: "from the row"}],
+    });
+
+    expect(hebrews(root)).toEqual(["מהשורה"]);
+    expect(englishes(root)).toEqual(["from the row"]);
+  });
+
+  test("an empty rows list renders nothing, and does not fall back to he/en", () => {
+    // `if (comment.rows)` is true for an empty array, so the he/en branches are never reached.
+    // Nothing in the codebase currently emits `rows: []`, but the fallback is worth knowing about.
+    const root = renderComment({he: "עברית", en: "english", rows: []});
+
+    expect(hebrews(root)).toEqual([]);
+    expect(englishes(root)).toEqual([]);
+    expect(queryAll(root, ".IndividualComment")).toHaveLength(0);
+  });
+
+  test("both paths carry the commentary class and the comment link", () => {
+    const viaRows = renderComment({rows: [{hebrew: "אחד"}], link: "https://example.com"});
+    const viaText = renderComment({he: "אחד", en: "", link: "https://example.com"});
+
+    for (const root of [viaRows, viaText]) {
+      expect(classesOf(query(root, ".table-row"))).toContain("rashi");
+      expect(query(root, ".table-row").getAttribute("tp-link")).toBe("https://example.com");
+    }
+  });
+
+  test("both paths mark directly referenced lines", () => {
+    const viaRows = renderComment({
+      rows: [{hebrew: "אחד", ref: "Ref A"}, {hebrew: "שתים", ref: "Ref B"}],
+      originalRefsBeforeRewriting: ["Ref B"],
+    });
+    const viaText = renderComment({
+      he: ["אחד", "שתים"],
+      en: ["one", "two"],
+      expandedRefsAfterRewriting: ["Ref A", "Ref B"],
+      originalRefsBeforeRewriting: ["Ref B"],
+    });
+
+    for (const root of [viaRows, viaText]) {
+      expect(queryAll(root, ".directlyReferencedLine").map(x => x.getAttribute("sefaria-ref")))
+        .toEqual(["Ref B"]);
+    }
+  });
+
+  test("both paths mark text rows as AI-modified", () => {
+    const viaRows = renderComment({rows: [{hebrew: "אחד"}], didModifyUiWithAiVersion: true});
+    const viaText = renderComment({he: "אחד", en: "", didModifyUiWithAiVersion: true});
+
+    for (const root of [viaRows, viaText]) {
+      expect(classesOf(query(root, ".table-row"))).toContain("ai-modified");
+    }
+  });
+
+  test("image rows do not get the AI-modified marker that their text row gets", () => {
+    // The image row is built with `extraClasses={["commentFullRowImage"]}`, discarding the
+    // extraClasses the text rows receive. Harmless today, since only Steinsaltz In-Depth emits
+    // images and it is not AI-rewritten, but the two rows of one comment disagree.
+    const root = renderComment({
+      rows: [{image: "<img src='x.png'>"}, {hebrew: "אחד"}],
+      didModifyUiWithAiVersion: true,
+    });
+
+    expect(classesOf(query(root, ".commentFullRowImage"))).not.toContain("ai-modified");
+    expect(classesOf(queryAll(root, ".table-row")[1])).toContain("ai-modified");
+  });
+
+  test("a row's own ref wins, where the he/en path can only use generated refs", () => {
+    const viaRows = renderComment({
+      ref: "Comment 1",
+      rows: [{hebrew: "אחד", ref: "Explicit"}],
+    });
+
+    expect(attributes(viaRows, ".table-row", "sefaria-ref")).toEqual(["Explicit"]);
+  });
+
+  test("rows fall back to the same generated refs as the he/en path", () => {
+    const viaRows = renderComment(
+      {ref: "Comment 1", rows: [{hebrew: "אחד"}, {hebrew: "שתים"}]},
+      {...RASHI, nestedRefSpacer: ":"});
+    const viaText = renderComment(
+      {ref: "Comment 1", he: ["אחד", "שתים"], en: ["one", "two"]},
+      {...RASHI, nestedRefSpacer: ":"});
+
+    expect(attributes(viaRows, ".table-row", "sefaria-ref"))
+      .toEqual(["Comment 1:1", "Comment 1:2"]);
+    expect(attributes(viaText, ".table-row", "sefaria-ref"))
+      .toEqual(["Comment 1:1", "Comment 1:2"]);
+  });
+
+  test("both paths report duplicates the same way", () => {
+    const viaRows = renderComment({rows: [{hebrew: "אחד"}], duplicateRefs: ["Other 1"]});
+    const viaText = renderComment({he: "אחד", en: "", duplicateRefs: ["Other 1"]});
+
+    for (const root of [viaRows, viaText]) {
+      expect(query(root, "button").textContent).toContain("Other 1");
+    }
+  });
+
+  test("both paths suppress english for hebrew-only commentaries", () => {
+    const vilnaShas: CommentaryType = {
+      englishName: "Vilna Shas", hebrewName: 'ש"ס וילנא', className: "vilna-shas",
+    };
+    const viaRows = renderComment({rows: [{hebrew: "אחד", english: "one"}]}, vilnaShas);
+    const viaText = renderComment({he: "אחד", en: "one"}, vilnaShas);
+
+    expect(englishes(viaRows)).toEqual([]);
+    expect(englishes(viaText)).toEqual([]);
+  });
+
+  test("a rows comment contributes its english to the title decision", () => {
+    const withTitle: CommentaryType = {...RASHI, showTitle: true};
+    const root = renderComment(
+      {sourceRef: "Steinsaltz",
+        sourceHeRef: "שטיינזלץ",
+        he: "",
+        en: "",
+        rows: [{hebrew: "אחד", english: "one"}]},
+      withTitle);
+
+    // The english title is included because a row has english, even though comment.en is empty.
+    expect(englishes(root)[0]).toBe("Steinsaltz");
+  });
+
+  test("a rows comment with no english anywhere drops the english title", () => {
+    const withTitle: CommentaryType = {...RASHI, showTitle: true};
+    const root = renderComment(
+      {sourceRef: "Steinsaltz",
+        sourceHeRef: "שטיינזלץ",
+        he: "",
+        en: "",
+        rows: [{hebrew: "אחד"}]},
+      withTitle);
+
+    expect(englishes(root)).toEqual([]);
+  });
+});
+
 describe("titles", () => {
   const withTitle: CommentaryType = {...RASHI, showTitle: true};
 

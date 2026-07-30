@@ -10,7 +10,7 @@
 // FrontendTestabilitySuggestions.md.
 import {Runner} from "../page_runner";
 import {MountedRenderer, mountRenderer} from "./testing/renderer_harness";
-import {flushAsync, unmountAll} from "./testing/dom";
+import {click, flush, flushAsync, flushTimers, unmountAll} from "./testing/dom";
 import {
   GtagCall,
   clearPageEnvironment,
@@ -96,27 +96,35 @@ describe("url arithmetic", () => {
 });
 
 describe("requesting a section", () => {
-  test("the placeholder is not visible while the request is in flight", () => {
-    // The placeholder is registered *before* the url is extended to cover it, and nothing
-    // re-renders in between, so the reader sees no loading state until the response (or an error)
-    // arrives and triggers the next render. See Observations in FrontendTestingPlan.md.
+  test("a spinning, titled placeholder is shown while the request is in flight", async () => {
+    // `requestSection` registers the placeholder *before* extending the url to cover it, and the
+    // renderer only shows pages named by the url range. React's batching is what makes this work:
+    // the render is deferred to the end of the surrounding batch, by which point the url covers
+    // the new page. The batch is what the test must reproduce, hence `flush`.
     const app = mountRenderer([page({id: "2a"})]);
     const {runner} = setUpRunner(app);
 
-    runner.requestSection("2b", {newUrl: runner.newUrlRange("2a", "2b")});
+    flush(() => runner.requestSection("2b", {newUrl: runner.newUrlRange("2a", "2b")}));
 
-    expect(visiblePages(app)).toEqual(["amud-2a"]);
-  });
-
-  test("the placeholder is titled and spinning once anything re-renders", () => {
-    const app = mountRenderer([page({id: "2a"})]);
-    const {runner} = setUpRunner(app);
-    runner.requestSection("2b", {newUrl: runner.newUrlRange("2a", "2b")});
-
-    app.setPage(page({id: "2a", sections: [segment({he: "עברית 2a"})]}));
-
+    expect(visiblePages(app)).toEqual(["amud-2a", "amud-2b"]);
     expect(app.textsOf(".title")).toEqual(["Berakhot 2a", "Berakhot 2b"]);
     expect(app.all(".text-loading-spinner")).toHaveLength(1);
+
+    await flushAsync(); // let the queued request settle before the test ends
+  });
+
+  test("the placeholder appears when the reader clicks the load button", async () => {
+    // The production trigger. A click handler is a React batch, so the ordering inside
+    // `requestSection` is safe here for the same reason as above.
+    const app = mountRenderer([page({id: "2a"})]);
+    setUpRunner(app);
+
+    click(app.find(".navigation-button-container.next span[role=button]"));
+
+    expect(visiblePages(app)).toEqual(["amud-2a", "amud-2b"]);
+    expect(app.all(".text-loading-spinner")).toHaveLength(1);
+
+    await flushAsync();
   });
 
   test("the response replaces the placeholder", async () => {
@@ -132,22 +140,26 @@ describe("requesting a section", () => {
     expect(app.textsOf(".gemara-container .table-cell.hebrew")).toContain("עברית 2b");
   });
 
-  test("the url is updated as soon as the request starts", () => {
+  test("the url is updated as soon as the request starts", async () => {
     const app = mountRenderer([page({id: "2a"})]);
     const {runner} = setUpRunner(app);
 
-    runner.requestSection("2b", {newUrl: runner.newUrlRange("2a", "2b")});
+    flush(() => runner.requestSection("2b", {newUrl: runner.newUrlRange("2a", "2b")}));
 
     expect(path()).toBe("/Berakhot/2a/to/2b");
+
+    await flushAsync();
   });
 
-  test("the document title follows the loaded range", () => {
+  test("the document title follows the loaded range", async () => {
     const app = mountRenderer([page({id: "2a"})]);
     const {runner} = setUpRunner(app);
 
-    runner.requestSection("2b", {newUrl: runner.newUrlRange("2a", "2b")});
+    flush(() => runner.requestSection("2b", {newUrl: runner.newUrlRange("2a", "2b")}));
 
     expect(document.title).toBe("Berakhot 2a - 2b");
+
+    await flushAsync();
   });
 
   test("an error is surfaced on the placeholder", async () => {
@@ -220,6 +232,9 @@ describe("loading the previous section", () => {
     expect(api.requests[0]).toBe("api/Berakhot/2b");
     expect(visiblePages(app)).toEqual(["amud-2b", "amud-3a"]);
     expect(path()).toBe("/Berakhot/2b/to/3a");
+
+    // Loading a previous page schedules a scroll back to where the reader was.
+    await flushTimers();
   });
 
   test("is reported to analytics", async () => {
@@ -232,6 +247,8 @@ describe("loading the previous section", () => {
 
     expect(gtagCalls.find(x => x.event === "load_section")!.parameters)
       .toEqual({direction: "previous", section: "2b"});
+
+    await flushTimers();
   });
 });
 
@@ -289,7 +306,7 @@ describe("removing sections", () => {
   });
 });
 
-describe("precaching neighbours", () => {
+describe("precaching neighbors", () => {
   test("the next section is fetched ahead of time", async () => {
     const app = mountRenderer([page({id: "2a"})]);
     const {runner, api} = setUpRunner(app);

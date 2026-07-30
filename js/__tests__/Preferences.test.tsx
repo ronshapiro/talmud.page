@@ -1,14 +1,16 @@
 import * as React from "react";
 import {Preferences} from "../Preferences";
-import {saveCustomTheme} from "../CustomThemes";
+import {getCustomThemes, saveCustomTheme} from "../CustomThemes";
 import {TestConfiguration, TestContext} from "./testing/configuration";
 import {
   click,
+  flush,
   mount,
   query,
   queryAll,
   queryOrNull,
   texts,
+  typeInto,
   unmountAll,
 } from "./testing/dom";
 import {clearPageEnvironment, installPageEnvironment} from "./testing/page_environment";
@@ -69,7 +71,7 @@ describe("showing and hiding", () => {
   test("it can be opened programmatically, as the snackbar nudge does", () => {
     const {container} = render();
 
-    (window as any).showPreferences();
+    flush(() => (window as any).showPreferences());
 
     expect(queryOrNull(container, "#preferences-container")).not.toBeNull();
   });
@@ -211,6 +213,110 @@ describe("version preferences", () => {
     radios(container).find(x => x.value === "Vilna Shas")!.click();
 
     expect(localStorage.preferredVersion_Talmud).toBe("Vilna Shas");
+  });
+});
+
+/**
+ * Every preference has to ask the page to re-render, since the render tree reads `localStorage`
+ * directly rather than taking settings as props. A setting that persists but does not trigger the
+ * callback would appear to do nothing until the reader reloaded.
+ */
+describe("preferences ask the page to re-render", () => {
+  const CASES: {name: string, sectionIndex: number, key: string, value: string}[] = [
+    {name: "display language", sectionIndex: 0, key: "languageOption", value: "hebrew"},
+    {name: "translation", sectionIndex: 1, key: "translationOption", value: "both"},
+    {name: "layout", sectionIndex: 2, key: "layoutOption", value: "compact"},
+    {name: "display theme", sectionIndex: 3, key: "darkMode", value: "true"},
+    {
+      name: "hide gemara translation",
+      sectionIndex: 4,
+      key: "hideGemaraTranslationByDefault",
+      value: "true",
+    },
+    {name: "wrap translations", sectionIndex: 5, key: "wrapTranslations", value: "false"},
+    {name: "show translation button", sectionIndex: 6, key: "showTranslationButton", value: "yes"},
+    {
+      name: "expand english by default",
+      sectionIndex: 7,
+      key: "expandEnglishByDefault",
+      value: "true",
+    },
+    {name: "show page metadata", sectionIndex: 8, key: "showPageMetadata", value: "true"},
+    {name: "offline mode", sectionIndex: 9, key: "offlineMode", value: "true"},
+    {name: "keyboard shortcuts", sectionIndex: 10, key: "keyboardShortcuts", value: "true"},
+  ];
+
+  for (const {name, sectionIndex, key, value} of CASES) {
+    test(`the ${name} setting persists and re-renders`, () => {
+      localStorage.preferencesIndex = sectionIndex.toString();
+      const {container, rerenders} = open({versions: () => []});
+      const before = rerenders();
+
+      const radio = radios(container).find(x => x.value === value);
+      expect(radio).toBeDefined();
+      radio!.click();
+
+      expect(localStorage[key]).toBe(value);
+      expect(rerenders()).toBeGreaterThan(before);
+    });
+  }
+
+  test("choosing a preferred version re-renders", () => {
+    localStorage.preferencesIndex = "2";
+    const {container, rerenders} = open({
+      rendererType: "Talmud",
+      versions: () => [{hebrew: 'ש"ס וילנא', english: "Vilna Shas"}],
+    });
+    const before = rerenders();
+
+    radios(container).find(x => x.value === "Vilna Shas")!.click();
+
+    expect(rerenders()).toBeGreaterThan(before);
+  });
+
+  test("toggling alternate versions re-renders", () => {
+    localStorage.preferencesIndex = "3";
+    const {container, rerenders} = open({
+      rendererType: "Talmud",
+      versions: () => [{hebrew: 'ש"ס וילנא', english: "Vilna Shas"}],
+    });
+    expect(container.textContent).toContain("Show alternate versions");
+    const before = rerenders();
+
+    radios(container).find(x => x.value === "true")!.click();
+
+    expect(localStorage.showAlternateVersions).toBe("true");
+    expect(rerenders()).toBeGreaterThan(before);
+  });
+
+  test("deleting a custom theme re-renders", () => {
+    saveCustomTheme({name: "Sepia", baseTheme: "gray", overrides: {}});
+    localStorage.preferencesIndex = "3";
+    const {container, rerenders} = open({versions: () => []});
+    const before = rerenders();
+
+    const deleteButton = queryAll(container, "#preferences-container .material-icons")
+      .find(x => x.textContent === "delete")!;
+    click(deleteButton.parentElement!);
+
+    expect(rerenders()).toBeGreaterThan(before);
+  });
+
+  test("saving a custom theme from the editor persists it and re-renders", () => {
+    localStorage.preferencesIndex = "3";
+    const {container, rerenders} = open({versions: () => []});
+    const addButton = queryAll(container, "#preferences-container .material-icons")
+      .find(x => x.textContent === "add_circle_outline")!;
+    click(addButton.parentElement!);
+    typeInto(query(container, "#theme-name"), "Sepia");
+    const before = rerenders();
+
+    const saveButton = queryAll(container, "#preferences-container button")
+      .find(x => x.textContent === "Save")!;
+    click(saveButton);
+
+    expect(getCustomThemes().map(x => x.name)).toEqual(["Sepia"]);
+    expect(rerenders()).toBeGreaterThan(before);
   });
 });
 

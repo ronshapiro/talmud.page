@@ -71,7 +71,7 @@ describe("first render", () => {
     expect(queryAll(document.body, ".hidden-host")).toHaveLength(1);
   });
 
-  test("navigation buttons for the neighbouring pages are offered", () => {
+  test("navigation buttons for the neighboring pages are offered", () => {
     const app = mountRenderer([simplePage()]);
 
     expect(app.all(".navigation-button-container").length).toBeGreaterThan(0);
@@ -294,6 +294,83 @@ describe("personal notes from Drive", () => {
     const app = mountRenderer([simplePage()]);
 
     expect(app.findOrNull("a.personal-notes")).toBeNull();
+  });
+});
+
+describe("highlights from Drive", () => {
+  const highlightOf = (text: string, color = "yellow", isEnglish = false) => ({
+    highlight: color,
+    text,
+    commentSourceMetadata: {
+      startPercentage: 0,
+      endPercentage: 1,
+      wordCountStart: Number.NaN,
+      wordCountEnd: Number.NaN,
+      isEnglish,
+    },
+  });
+
+  const driveClientHighlighting = (refToHighlight: Record<string, any[]>) => ({
+    commentsForRef: () => undefined,
+    highlightsForRef: (ref: string) => refToHighlight[ref] ?? [],
+  } as any);
+
+  test("a highlight on a segment wraps the matching hebrew", () => {
+    const app = mountRenderer([simplePage()], {
+      driveClient: driveClientHighlighting({"Berakhot 2a:1": [highlightOf("מאימתי")]}),
+    });
+
+    const marks = app.all("span-highlight");
+    expect(marks.map(x => x.textContent)).toEqual(["מאימתי"]);
+    expect([...marks[0].classList]).toContain("highlighted-yellow");
+  });
+
+  test("a highlight on a comment shows a color indicator on its button", () => {
+    const app = mountRenderer([simplePage()], {
+      driveClient: driveClientHighlighting({
+        "Rashi on Berakhot 2a:2": [highlightOf('פירוש רש"י')],
+      }),
+    });
+
+    expect(app.all(".show-buttons svg path").map(x => x.getAttribute("fill")))
+      .toEqual(["var(--highlight-yellow)"]);
+  });
+
+  test("a highlight cannot reach text held in a comment's rows", () => {
+    // `addDriveComments.setHighlights` only rewrites `he`/`en`; the `rows` array is untouched.
+    // "Steinsaltz In-Depth" is the only commentary that uses rows, and it carries its text there
+    // with `he`/`en` empty, so highlighting it produces neither a mark nor a button indicator —
+    // and `applyHighlight` logs an error, since it was handed empty text to search.
+    // Recorded as Observation #8 in FrontendTestingPlan.md.
+    const consoleError = jest.spyOn(console, "error").mockImplementation(() => {});
+
+    const app = mountRenderer([page({
+      id: "2a",
+      sections: [segment({
+        ref: "Berakhot 2a:1",
+        he: "מאימתי",
+        en: "From when",
+        commentary: {
+          "Steinsaltz In-Depth": {comments: [{
+            ref: "Steinsaltz comment #0 on Berakhot 2a:1",
+            he: "",
+            en: "",
+            sourceRef: "In-Depth",
+            sourceHeRef: "עיון",
+            rows: [{hebrew: "טקסט מעמיק", english: "in depth text"}],
+          }]},
+        },
+      })],
+    })], {
+      driveClient: driveClientHighlighting({
+        "Steinsaltz comment #0 on Berakhot 2a:1": [highlightOf("טקסט מעמיק")],
+      }),
+    });
+
+    expect(app.all("span-highlight")).toHaveLength(0);
+    expect(app.all(".show-buttons svg path")).toHaveLength(0);
+    expect(consoleError).toHaveBeenCalledWith("text content is undefined!");
+    consoleError.mockRestore();
   });
 });
 

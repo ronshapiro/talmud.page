@@ -172,15 +172,18 @@ No npm dependencies were added.
       (16), `Renderer_transformations` (18).
 - [x] Tier 2: `hooks` (16), covering `useIncrementer`, `useAlternator`,
       `useArrayStateBackedByLength`, `useUpdateDisplayTheme`.
-- [x] Tier 3: `TableRow` (21), `IndividualComment` (23), `CommentariesBlock` (27), `Segment` (22),
-      `Page` (33), `Root` (15), `Preferences` (23).
-- [x] Tier 4: `renderer_integration` (24), `SearchHighlighting` (12), `Keybindings` (17),
+- [x] Tier 3: `TableRow` (21), `IndividualComment` (35), `CommentariesBlock` (34), `Segment` (22),
+      `Page` (33), `Root` (15), `Preferences` (38).
+- [x] Tier 4: `renderer_integration` (27), `SearchHighlighting` (12), `Keybindings` (17),
       `page_runner` (24) — first render, commentary interaction, multi-page load/removal,
-      translation and layout modes, Drive notes, the feedback gate, in-page search, keyboard
-      navigation, and url/api-driven navigation.
+      translation and layout modes, Drive notes and highlights, the feedback gate, in-page search,
+      keyboard navigation, and url/api-driven navigation.
+- [x] Tier 5: `LanguageOptions` (62) — the language/translation matrix and every surface it
+      reaches; `renderers` (35) — the per-page-type differences.
 - [ ] Deferred until after the testability refactors: per-mode snapshots (see Tier 4 above).
 
-Total: 493 tests across 63 suites, up from 182 across 48.
+Total: 627 tests across 65 suites, up from 182 across 48. The suite runs clean: no React `act`
+warnings and no stray `console.error` output.
 
 ### Not covered, and why
 
@@ -233,15 +236,42 @@ the current behavior, so a deliberate change will show up as a failing test.
    Both of these would be fixed by the same change — scoping the row query to the visible page and
    putting the selection in React state rather than on the mutable context object.
 
-6. **Loading a neighbouring page shows no loading state.**
-   `Runner.requestSection` registers the loading placeholder, *then* extends the url, and nothing
-   re-renders in between — `PromiseQueue.add` defers the request to a microtask, after
-   `updateUrl`. Since the renderer only shows pages named by the url range, the placeholder and its
-   spinner are invisible until the response or an error triggers the next render. The spinner does
-   work on first page load, where the url already covers the range. A `forceUpdate()` after
-   `updateUrl` would fix it. Pinned in `page_runner.test.tsx`.
+6. **~~Loading a neighboring page shows no loading state.~~ Retracted — not a defect.**
+   An earlier draft of these tests reported that `Runner.requestSection` registers the loading
+   placeholder *before* extending the url, so the placeholder was invisible. That was an artifact
+   of the test calling `requestSection` outside React's batching. In production the call comes from
+   a click handler, which is a batch, so the render is deferred until after `updateUrl` and the
+   placeholder appears correctly. `page_runner.test.tsx` now covers this through the actual load
+   button. The ordering is still fragile — it depends on nothing forcing a synchronous render
+   between the two statements — but it is not currently broken.
 
-7. **The first update from `useArrayStateBackedByLength` always re-renders.** The backing state is
+7. **Personal highlights cannot reach text stored in a comment's `rows`.**
+   `addDriveComments.setHighlights` only rewrites `he`/`en`. "Steinsaltz In-Depth" is the one
+   commentary built from `rows` (see `getSteinsaltzCommentRows`), and it carries its text there
+   with `he`/`en` empty — so highlighting it produces no mark, no color indicator on the button,
+   and an `applyHighlight` error in the console, since it was handed empty text to search. Pinned
+   in `renderer_integration.test.tsx`.
+
+8. **Enabling "Show Translation Button" silently disables two other preferences.**
+   The `Steinsaltz` and `Translation` commentary kinds share the className `"translation"`, and
+   `commentaryTypesByClassName` is last-one-wins. `getCommentaryTypes` puts Steinsaltz *first*
+   when the button is hidden and *last* when it is shown, so which kind wins that lookup flips
+   with the setting. `IndividualComment` gates both "Expand English translations by default" and
+   "Hide Gemara translation by default" on `commentaryKind.englishName === "Translation"`, so both
+   stop working once the translation button is enabled. Compounding it, the *button* resolves its
+   kind by `englishName` against the commentary map key while the *opened commentary* resolves by
+   className, so one commentary can render as two different kinds at once. Pinned in
+   `LanguageOptions.test.tsx`.
+
+9. **`expandTranslationOnMergedSectionExpansion` is a dead setting.**
+   `Renderer` accepts and publishes it under that name (`js/Renderer.tsx:238`), and
+   `liturgy_renderer.js` is its only caller — but `Segment` reads
+   `expandTranslationOnMergedSegmentExpansion` (`js/Segment.tsx:35`). Segment versus Section: the
+   names have never matched, so the option has never had any effect. Pinned in
+   `renderers.test.tsx`, including a test showing the behavior works when the correctly spelled
+   key is supplied.
+
+10. **The first update from `useArrayStateBackedByLength` always re-renders.** The backing state is
    `useState(0)` rather than `useState(array.length)`, so the initial set of a non-empty array is
    seen as a change even when nothing changed. Harmless, but it means the hook saves fewer renders
    than it appears to.

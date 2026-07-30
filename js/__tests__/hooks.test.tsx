@@ -110,6 +110,11 @@ describe("useArrayStateBackedByLength", () => {
   });
 
   test("the very first update always re-renders, since the length state starts at zero", () => {
+    // TODO: this looks like it should be fixed — `useState(array.length)` instead of
+    // `useState(0)` in js/state.ts would make the first update behave like every later one. The
+    // extra render is harmless today, but it means the hook saves fewer renders than it appears
+    // to, and the asymmetry is surprising. Changing it should make this test fail, at which point
+    // it should be deleted rather than updated.
     // The backing state is `useState(0)` rather than `useState(array.length)`, so the first
     // update to a non-empty array is always seen as a change.
     const hook = renderHook(() => useArrayStateBackedByLength([1, 2, 3]));

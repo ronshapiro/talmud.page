@@ -42,20 +42,41 @@ export function rerender(container: HTMLElement, element: React.ReactElement): v
   });
 }
 
-/** Runs `body` inside `act()`, flushing the state updates and effects it triggers. */
-export function flush(body: () => void): void {
-  act(body);
+/**
+ * Runs `body` inside `act()`, flushing the state updates and effects it triggers.
+ *
+ * The body's return value is discarded rather than handed to `act`, which warns about anything
+ * that is neither undefined nor a promise. Callers routinely pass a concise arrow whose expression
+ * happens to evaluate to something (`() => setState(x)`, `() => Mousetrap.trigger("j")`).
+ */
+export function flush(body: () => unknown): void {
+  act(() => {
+    body();
+  });
 }
 
 /**
  * Runs `body` inside an async `act()`, then lets pending promises settle. Use when the code under
  * test renders as the result of a resolved promise, as the api-backed page loads do.
  */
-export async function flushAsync(body: () => Promise<void> | void = () => {}): Promise<void> {
+export async function flushAsync(body: () => unknown = () => {}): Promise<void> {
   // eslint-disable-next-line @typescript-eslint/await-thenable
   await act(async () => {
     await body();
     await new Promise(resolve => setImmediate(resolve));
+  });
+}
+
+/**
+ * Lets real timers scheduled by the code under test fire, inside `act()`.
+ *
+ * Some behavior is deferred with a short `setTimeout` — scroll restoration after a page loads,
+ * for instance. Without draining it, the callback runs after the test has torn the DOM down.
+ */
+export async function flushTimers(milliseconds = 25): Promise<void> {
+  // eslint-disable-next-line @typescript-eslint/await-thenable
+  await act(async () => {
+    await new Promise(resolve => setTimeout(resolve, milliseconds));
   });
 }
 
@@ -88,6 +109,21 @@ export function doubleClick(node: Element | null | undefined): void {
 
 export function keyUp(node: Element | null | undefined, code: string): void {
   dispatch(node, new KeyboardEvent("keyup", {bubbles: true, cancelable: true, code}));
+}
+
+/**
+ * Types into a React-controlled input.
+ *
+ * Assigning `.value` directly is not enough: React tracks the last value it wrote and skips the
+ * change event when the DOM value looks unchanged to it. Going through the prototype's setter
+ * updates the node without touching React's tracker, so the dispatched event is seen as a change.
+ */
+export function typeInto(node: Element | null | undefined, value: string): void {
+  if (!node) throw new Error("Cannot type into a missing node");
+  const setter = Object.getOwnPropertyDescriptor(
+    window.HTMLInputElement.prototype, "value")!.set!;
+  setter.call(node, value);
+  dispatch(node, new Event("input", {bubbles: true}));
 }
 
 // --- Queries -----------------------------------------------------------------------------------

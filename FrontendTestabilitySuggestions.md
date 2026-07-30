@@ -139,7 +139,37 @@ the jQuery extension registration into an explicit init step called by `page_run
 Unlocks: removal of the global jest setup file; independent component tests that don't touch
 storage or Google APIs.
 
-## 11. `page_runner.js` / `*_renderer.js` are still untyped JS
+## 11. Renderer entry points boot the app on import
+
+Every page type except `liturgy_renderer.js` ends with `new Runner(new XRenderer(), driveClient).main()`
+at module scope. Importing `js/mishna.js` to test `MishnaRenderer` therefore registers a React
+root, starts API requests, and installs a service worker. As a result the per-renderer tests in
+`renderers.test.tsx` exercise the shared pieces each renderer configures rather than the renderer
+classes themselves.
+
+Suggested shape: `export class MishnaRenderer ...` alongside the existing bootstrap, or move the
+bootstrap into a `main.js` per page. `liturgy_renderer.js` already does the former and is
+imported directly by its tests.
+
+Unlocks: direct tests of each renderer's `newPageTitleHebrew`, `versions`, `ignoredSectionRefs`
+and `sortedAmudim` — the Siddur's `sortedAmudim` in particular is ~60 lines of calendar-driven
+logic with no coverage.
+
+## 12. `Steinsaltz` and `Translation` share a className
+
+Both commentary kinds declare `className: "translation"`, and `commentaryTypesByClassName` is a
+last-one-wins map whose winner changes with `showTranslationButton`. This is the direct cause of
+Observation #8 in `FrontendTestingPlan.md`: two unrelated preferences stop working when the
+translation button is enabled.
+
+Suggested shape: give Steinsaltz its own className and map the CSS accordingly, or make the
+lookup explicit about which kind is intended. Either way, `IndividualComment` should not be
+branching on `englishName === "Translation"` to decide behavior that the user configured
+elsewhere.
+
+Unlocks: removes a class of bug where enabling one preference disables another.
+
+## 13. `page_runner.js` / `*_renderer.js` are still untyped JS
 
 `page_runner.js` (374 lines) is the actual entry point that wires URL → API → `Renderer`, and it
 is plain JS with `navigationExtension` typed as `any` on the React side

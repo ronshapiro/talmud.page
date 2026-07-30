@@ -183,10 +183,13 @@ describe("opening and closing", () => {
     const root = render(commentaries({Rashi: [{}]}));
 
     click(button(root, "rashi"));
+    expect(gtagCalls.map(x => x.event)).toEqual(["commentary_viewed"]);
+
     click(button(root, "rashi"));
 
     expect(gtagCalls.map(x => x.event)).toEqual(["commentary_viewed", "commentary_hidden"]);
     expect(gtagCalls[0].parameters).toEqual({commentary: "Rashi", section: SEGMENT_LABEL});
+    expect(gtagCalls[1].parameters).toEqual({commentary: "Rashi", section: SEGMENT_LABEL});
   });
 
   test("comments sharing a ref are shown once", () => {
@@ -232,6 +235,32 @@ describe("settings that hide buttons", () => {
       {commentaryTypes: [VERSIONS, RASHI]});
 
     expect(buttonLabels(withVersions)).toEqual(["he:Versions", "he:Rashi"]);
+  });
+
+  test("alternate versions are hidden when none of them are unique", () => {
+    localStorage.showAlternateVersions = "true";
+    const VERSIONS = kind("Versions", "versions");
+    const root = render(
+      commentaries({
+        Versions: [{isUnique: false}, {isUnique: false}],
+        Rashi: [{}],
+      }),
+      {commentaryTypes: [VERSIONS, RASHI]});
+
+    expect(buttonLabels(root)).toEqual(["he:Rashi"]);
+  });
+
+  test("alternate versions appear when at least one of them is unique", () => {
+    localStorage.showAlternateVersions = "true";
+    const VERSIONS = kind("Versions", "versions");
+    const root = render(
+      commentaries({
+        Versions: [{isUnique: false}, {}],
+        Rashi: [{}],
+      }),
+      {commentaryTypes: [VERSIONS, RASHI]});
+
+    expect(buttonLabels(root)).toEqual(["he:Versions", "he:Rashi"]);
   });
 
   test("english-only commentaries are hidden in hebrew mode", () => {
@@ -365,6 +394,110 @@ describe("indicators on closed commentaries", () => {
     }));
 
     expect(classesOf(button(root, "rashi"))).toContain("has-nested-commentaries");
+  });
+
+  test("a personal note nested two levels deep is still flagged", () => {
+    const root = render(commentaries({
+      Rashi: [{
+        he: "עברית",
+        commentary: commentaries({
+          Tosafot: [{
+            he: "תוספות",
+            commentary: commentaries({"Personal Notes": [{he: "הערה"}]}),
+          }],
+        }),
+      }],
+    }));
+
+    expect(classesOf(button(root, "rashi"))).toContain("has-nested-commentaries");
+  });
+
+  test("a highlight on a nested comment is previewed on the parent button", () => {
+    const root = render({
+      Rashi: {comments: [{
+        ref: "r",
+        he: "עברית",
+        en: "english",
+        sourceRef: "s",
+        sourceHeRef: "s",
+        commentary: {
+          Tosafot: {comments: [{
+            ref: "t",
+            he: "תוספות",
+            en: "tosafot",
+            sourceRef: "s",
+            sourceHeRef: "s",
+            highlightColors: new Set(["green"]) as any,
+          }]},
+        },
+      }]},
+    });
+
+    const indicators = queryAll(root, ".show-buttons svg path");
+    expect(indicators.map(x => x.getAttribute("fill"))).toEqual(["var(--highlight-green)"]);
+  });
+
+  test("highlights on a comment and on its nested comment are both previewed", () => {
+    const root = render({
+      Rashi: {comments: [{
+        ref: "r",
+        he: "עברית",
+        en: "english",
+        sourceRef: "s",
+        sourceHeRef: "s",
+        highlightColors: new Set(["yellow"]) as any,
+        commentary: {
+          Tosafot: {comments: [{
+            ref: "t",
+            he: "תוספות",
+            en: "tosafot",
+            sourceRef: "s",
+            sourceHeRef: "s",
+            highlightColors: new Set(["green"]) as any,
+          }]},
+        },
+      }]},
+    });
+
+    const indicators = queryAll(root, ".show-buttons svg path");
+    expect(indicators.map(x => x.getAttribute("fill")).sort())
+      .toEqual(["var(--highlight-green)", "var(--highlight-yellow)"]);
+  });
+
+  test("the same color used at both levels is only previewed once", () => {
+    const root = render({
+      Rashi: {comments: [{
+        ref: "r",
+        he: "עברית",
+        en: "english",
+        sourceRef: "s",
+        sourceHeRef: "s",
+        highlightColors: new Set(["yellow"]) as any,
+        commentary: {
+          Tosafot: {comments: [{
+            ref: "t",
+            he: "תוספות",
+            en: "tosafot",
+            sourceRef: "s",
+            sourceHeRef: "s",
+            highlightColors: new Set(["yellow"]) as any,
+          }]},
+        },
+      }]},
+    });
+
+    expect(queryAll(root, ".show-buttons svg path")).toHaveLength(1);
+  });
+
+  test("an image inside a nested comment is flagged on the parent button", () => {
+    const root = render(commentaries({
+      Rashi: [{
+        he: "עברית",
+        commentary: commentaries({Tosafot: [{he: "<img src='x.png'> תוספות"}]}),
+      }],
+    }));
+
+    expect(query(root, ".show-buttons").textContent).toContain("📸");
   });
 });
 
