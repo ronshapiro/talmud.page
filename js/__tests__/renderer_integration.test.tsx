@@ -341,7 +341,8 @@ describe("highlights from Drive", () => {
     // "Steinsaltz In-Depth" is the only commentary that uses rows, and it carries its text there
     // with `he`/`en` empty, so highlighting it produces neither a mark nor a button indicator —
     // and `applyHighlight` logs an error, since it was handed empty text to search.
-    // Recorded as Observation #8 in FrontendTestingPlan.md.
+    // Recorded in FrontendTestingPlan.md under Observations, "Personal highlights cannot
+    // reach text stored in a comment's rows".
     const consoleError = jest.spyOn(console, "error").mockImplementation(() => {});
 
     const app = mountRenderer([page({

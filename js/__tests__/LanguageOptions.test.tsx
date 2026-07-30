@@ -619,7 +619,8 @@ describe("numeric navigation labels", () => {
  * changes their relative order depending on `showTranslationButton` — so which kind the gemara
  * translation renders as flips with that setting. Two other preferences are gated on
  * `commentaryKind.englishName === "Translation"`, and therefore stop working when the translation
- * button is enabled. Recorded as Observation #9 in FrontendTestingPlan.md.
+ * button is enabled. Recorded in FrontendTestingPlan.md under Observations, "Enabling
+ * \"Show Translation Button\" silently disables two other preferences".
  */
 describe("the Steinsaltz / Translation className collision", () => {
   const kindForTranslation = () => {

@@ -11,13 +11,14 @@
  * would boot the whole app. `liturgy_renderer.js` is the exception and is imported directly. For
  * the rest, the differing behavior lives in the shared pieces they configure — the commentary
  * type lists, `numericalNavigationExtension`, and the title formatters — which are what these
- * tests exercise. See suggestion #12 in FrontendTestabilitySuggestions.md.
+ * tests exercise. See "Renderer entry points boot the app on import" in
+ * FrontendTestabilitySuggestions.md.
  */
 import * as React from "react";
 import {Renderer, numericalNavigationExtension} from "../Renderer";
 import {Segment} from "../Segment";
-// @ts-ignore -- liturgy_renderer is still plain JS; see suggestion #13 in
-// FrontendTestabilitySuggestions.md.
+// @ts-ignore -- liturgy_renderer is still plain JS; see "page_runner.js / *_renderer.js are
+// still untyped JS" in FrontendTestabilitySuggestions.md.
 import {LiturgyRenderer} from "../liturgy_renderer";
 import {getCommentaryTypes} from "../commentaryTypes";
 import {UiPage} from "../Page";
@@ -307,7 +308,8 @@ describe("the liturgy renderer", () => {
     // The liturgy renderer is the only caller of this option, and it never takes effect:
     // `Renderer` publishes it as `expandTranslationOnMergedSectionExpansion` while `Segment`
     // reads `expandTranslationOnMergedSegmentExpansion` — Section versus Segment. Recorded as
-    // Observation #10 in FrontendTestingPlan.md.
+    // FrontendTestingPlan.md under Observations,
+    // "expandTranslationOnMergedSectionExpansion is a dead setting".
     const withTranslation = () => segment({
       ref: "Siddur 1",
       he: "עברית",

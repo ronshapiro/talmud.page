@@ -6,8 +6,8 @@
  * are about. Everything else — the loading placeholder, the URL rewriting, the amud arithmetic,
  * and the resulting render — is the real code.
  */
-// @ts-ignore -- page_runner is still plain JS; see suggestion #11 in
-// FrontendTestabilitySuggestions.md.
+// @ts-ignore -- page_runner is still plain JS; see "page_runner.js / *_renderer.js are still
+// untyped JS" in FrontendTestabilitySuggestions.md.
 import {Runner} from "../page_runner";
 import {MountedRenderer, mountRenderer} from "./testing/renderer_harness";
 import {click, flush, flushAsync, flushTimers, unmountAll} from "./testing/dom";
