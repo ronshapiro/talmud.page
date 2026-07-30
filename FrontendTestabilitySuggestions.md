@@ -1,0 +1,181 @@
+# Frontend testability / modularity suggestions
+
+Recorded while writing tests for `js/`. **None of these have been performed.** They are ordered by
+(value to testability) ÷ (risk of the change). Each notes what it would unlock.
+
+## 1. Give the configuration context a type
+
+`ConfigurationContext` is `createContext<any>` (`js/context.ts:10`) and `useConfiguration()`
+returns `any`. Its actual shape is defined implicitly by the object literal in
+`Renderer.register` (`js/Renderer.tsx:229`) plus a handful of fields assigned elsewhere
+(`searchQueryRegex`, `selectedView`, `selectedCommentaryView`, `isFake`).
+
+Declaring an interface would: make every test-context omission a compile error instead of an
+`undefined is not a function` at runtime; document which fields are functions (lazily re-read
+from `localStorage`) vs values; and reveal that `isFake` is only ever set on the *hidden host*
+copy, which is currently discoverable only by reading `register()` closely.
+
+Unlocks: cheap, correct test contexts; type-checking of the tests themselves.
+
+## 2. Extract the context construction out of `register()`
+
+`register()` currently does five things: build the context, build the hidden-host context variant,
+`ReactDOM.render` the tree, attach a window resize handler, and bump the `pageViews` counter that
+triggers the feedback form. A test that wants a *realistic* context has to either take all five or
+duplicate the first.
+
+Suggested shape (no behavior change): `buildConfiguration(): Configuration` and
+`buildHiddenHostConfiguration(base): Configuration` as standalone exported functions that
+`register()` calls.
+
+Unlocks: integration tests that use production configuration without mounting the resize
+listener or mutating `localStorage.pageViews`.
+
+## 3. Funnel `localStorage` reads through a single module
+
+`localStorage.<key>` is read directly at render time in ~10 components. Consequences:
+- Every test has to know the exact string keys and their string-y values (`"true"`, `"yes"`,
+  `"hebrew"`) — they're stringly-typed and inconsistent (`showTranslationButton === "yes"` but
+  `wrapTranslations !== "false"` but `expandEnglishByDefault === "true"`).
+- The defaults are expressed as comparison direction (`!== "false"` means "default on") which is
+  easy to get backwards and impossible to discover without reading each site.
+- There is no way to render the tree with settings that aren't global.
+
+A `settings.ts` exposing typed getters (`translationOption(): TranslationOption`) — even if it
+still reads `localStorage` under the hood — would centralize the defaults and give tests one
+place to stub.
+
+Unlocks: mode-matrix tests without global mutation; would let the mode be a prop/context value
+later.
+
+## 4. Separate the measurement concern in `TableRow`
+
+`shouldTranslationWrap` (`js/TableRow.tsx:338`) mixes three things: writing text into the hidden
+host, measuring heights, and deciding layout. Only the third is business logic, and it is
+currently untestable because the first two need a real layout engine.
+
+Suggested shape: `decideWrapping({hebrewHeight, englishHeight, totalEnglishLines}) →
+{shouldWrap, englishLineClampLines}` as a pure function, with the DOM poking left in the
+component. Also `calculateLineCountCache` (`js/TableRow.tsx:267`) is keyed by a jQuery object
+used as an object key, so every node stringifies to `"[object Object]"` and shares one cache
+entry — worth a look independently of testing.
+
+Unlocks: real coverage of the line-clamp heuristics, which are currently the least verifiable and
+most visually consequential logic in the app.
+
+## 5. The section-merging loop in `Page` wants to be a function
+
+`Page` (`js/Page.tsx:97`) contains a ~50 line loop that mutates the loop variable `i` from inside
+a nested `while`, consults `context.compactLayout()`, `expandMergedRef`, hadran/sugya markers,
+and emits separators. It is the highest-branching logic in the render tree and can only be tested
+today by rendering and reading the DOM back.
+
+Suggested shape: `groupSections(sections, {compactLayout, expandedUuids}) → SectionGroup[]`
+returning plain data (groups + separator positions), with `Page` mapping it to JSX.
+
+Unlocks: exhaustive table-driven tests of merging, which is where merged-segment bugs live.
+
+## 6. `Renderer._applyClientSideDataTransformations` mutates its input
+
+It rewrites `amudData` in place, and is called on every `getAmudim()` — i.e. on every render.
+Its correctness depends on being idempotent, and the `steinsaltzRetained` /
+`continuallyRewriteSteinsaltzEnglish` flags exist purely to survive re-entry (see the comment at
+`js/Renderer.tsx:200`). This is testable as-is (and is being tested), but a pure
+`transform(page) → page` would make the idempotency contract enforceable rather than implied.
+
+Unlocks: nothing new for tests; reduces the chance the implied contract silently breaks.
+
+## 7. Implicit globals should be injected or guarded
+
+`gtag` (`js/CommentariesBlock.tsx:283`) and `componentHandler` are bare globals; the theme code
+(`js/hooks.ts:18`) hard-requires four DOM nodes to exist and throws if they don't. Tests must
+install all of these. A no-op fallback (`window.gtag ?? (() => {})`) or a thin injected
+`analytics` module would remove the need, and would also make the app resilient when an ad
+blocker eats the gtag script — which is a real production condition today.
+
+Unlocks: leaf-component tests without a full page environment.
+
+## 8. `HiddenHost` couples measurement to a duplicate render
+
+The hidden host renders a second, fake copy of the whole component tree
+(`js/Renderer.tsx:32`) whose only purpose is to own two jQuery nodes for measuring. Any test that
+mounts a `TableRow` outside the full app must supply a `HiddenHostContext` with objects that
+respond to `.html()` and `.height()`. A narrower `MeasurementContext` (just the two nodes, or a
+`measure(html) → height` function) would decouple the two.
+
+This coupling also causes a live bug: the hidden host renders into `#results`, so
+`Keybindings`' row navigation walks through its invisible rows before reaching the real page. See
+Observations #4 in `FrontendTestingPlan.md`.
+
+Unlocks: mid-level component tests without constructing a fake jQuery surface.
+
+## 9. Modals reassign `window` callbacks during render
+
+`CorrectionModal` assigns `window.showCorrectionModal` in the component body
+(`js/CorrectionModal.tsx:24`), i.e. as a render side effect, and `CommentEditorModal` does the
+same. Two mounted copies silently fight over the global. In tests this means mount order matters
+and cleanup must delete the globals.
+
+Unlocks: independent modal tests; removes a real double-mount hazard.
+
+## 10. Module-load side effects force global setup on every test
+
+Importing `js/Renderer.tsx` transitively imports `js/google_drive/singleton.ts`, which at **module
+scope** constructs a `DriveClient`, calls `amudMetadata()` (reading `#book-title` from the
+document), and opens an IndexedDB connection. Nothing has been rendered or requested yet.
+
+Consequences:
+- A test cannot set up the document in `beforeEach`, because imports are hoisted above it. The
+  jest `setupFiles` entry `js/__tests__/testing/jest_setup_page.js` exists purely to install
+  `#book-title` and an `indexedDB` stub before any module is evaluated.
+- Importing any component for any reason opens a database.
+- `Renderer.tsx` also calls `addJqueryExtensionMethods()` at module scope, so whether
+  `betterDoubleClick` exists depends on whether something in the import graph reached
+  `Renderer.tsx`.
+
+Suggested shape: make `driveClient` a lazily-initialized accessor (`getDriveClient()`), and move
+the jQuery extension registration into an explicit init step called by `page_runner`.
+
+Unlocks: removal of the global jest setup file; independent component tests that don't touch
+storage or Google APIs.
+
+## 11. Renderer entry points boot the app on import
+
+Every page type except `liturgy_renderer.js` ends with `new Runner(new XRenderer(), driveClient).main()`
+at module scope. Importing `js/mishna.js` to test `MishnaRenderer` therefore registers a React
+root, starts API requests, and installs a service worker. As a result the per-renderer tests in
+`renderers.test.tsx` exercise the shared pieces each renderer configures rather than the renderer
+classes themselves.
+
+Suggested shape: `export class MishnaRenderer ...` alongside the existing bootstrap, or move the
+bootstrap into a `main.js` per page. `liturgy_renderer.js` already does the former and is
+imported directly by its tests.
+
+Unlocks: direct tests of each renderer's `newPageTitleHebrew`, `versions`, `ignoredSectionRefs`
+and `sortedAmudim` — the Siddur's `sortedAmudim` in particular is ~60 lines of calendar-driven
+logic with no coverage.
+
+## 12. `Steinsaltz` and `Translation` share a className
+
+Both commentary kinds declare `className: "translation"`, and `commentaryTypesByClassName` is a
+last-one-wins map whose winner changes with `showTranslationButton`. This is the direct cause of
+Observation #8 in `FrontendTestingPlan.md`: two unrelated preferences stop working when the
+translation button is enabled.
+
+Suggested shape: give Steinsaltz its own className and map the CSS accordingly, or make the
+lookup explicit about which kind is intended. Either way, `IndividualComment` should not be
+branching on `englishName === "Translation"` to decide behavior that the user configured
+elsewhere.
+
+Unlocks: removes a class of bug where enabling one preference disables another.
+
+## 13. `page_runner.js` / `*_renderer.js` are still untyped JS
+
+`page_runner.js` (374 lines) is the actual entry point that wires URL → API → `Renderer`, and it
+is plain JS with `navigationExtension` typed as `any` on the React side
+(`js/Page.tsx:24` notes this). It is the largest piece of the frontend with no type safety and no
+tests. Converting it to TS is a prerequisite for testing navigation/loading behavior with any
+confidence.
+
+Unlocks: navigation, prefetch, and multi-page-load coverage — currently the biggest untested
+surface.
