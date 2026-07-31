@@ -1,8 +1,7 @@
 /**
  * Builders for the two React contexts the render tree depends on.
  *
- * `ConfigurationContext` is typed `any` and its real shape is defined implicitly by the object
- * literal in `Renderer.register` (js/Renderer.tsx). `testConfiguration` mirrors that literal,
+ * `testConfiguration` mirrors the object literal in `Renderer.register` (js/Renderer.tsx),
  * including which fields are *functions* — several of them are lazily re-read from `localStorage`
  * on every render, so tests that flip a setting between renders depend on that laziness.
  *
@@ -12,30 +11,13 @@
  * "don't wrap", exactly as the production code does when it cannot measure.
  */
 import * as React from "react";
-import {ConfigurationContext, HiddenHostContext} from "../../context";
+import {Configuration, ConfigurationContext, HiddenHostContext} from "../../context";
 import {CommentaryType} from "../../../commentaries";
 import {getCommentaryTypes} from "../../commentaryTypes";
 import {LocalStorageLru} from "../../localStorage";
 import {$} from "../../jquery";
 
-export interface TestConfiguration {
-  rendererType: string;
-  versions: () => unknown[];
-  translationOption: () => string;
-  commentaryTypes: CommentaryType[];
-  commentaryTypesByClassName: Record<string, CommentaryType>;
-  wrapTranslations: () => boolean;
-  expandEnglishByDefault: () => boolean;
-  ignoredSectionRefs: (id: string) => string[];
-  expandTranslationOnMergedSectionExpansion?: boolean;
-  compactLayout: () => boolean;
-  highlightedIds: LocalStorageLru;
-  toggleHighlightedId: (newState: boolean, sectionId: string) => void;
-  searchQueryRegex?: Record<string, string | undefined>;
-  isFake?: boolean;
-  selectedView?: HTMLElement;
-  selectedCommentaryView?: HTMLElement;
-}
+export type TestConfiguration = Configuration;
 
 export function indexByClassName(types: CommentaryType[]): Record<string, CommentaryType> {
   const result: Record<string, CommentaryType> = {};
