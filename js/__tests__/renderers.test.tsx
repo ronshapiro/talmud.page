@@ -378,7 +378,7 @@ describe("the liturgy renderer", () => {
 
     test("an unexpanded segment never opens the translation either way", () => {
       const root = mount(
-        <TestContext overrides={{expandTranslationOnMergedSegmentExpansion: true} as any}>
+        <TestContext overrides={{expandTranslationOnMergedSegmentExpansion: true}}>
           <Segment
             segments={[withTranslation()]}
             segmentLabel="s_section_1"

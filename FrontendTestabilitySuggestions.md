@@ -1,21 +1,24 @@
 # Frontend testability / modularity suggestions
 
-Recorded while writing tests for `js/`. **None of these have been performed.** They are ordered by
-(value to testability) ÷ (risk of the change). Each notes what it would unlock.
+Recorded while writing tests for `js/`. They are ordered by (value to testability) ÷ (risk of the
+change). Each notes what it would unlock.
 
-## 1. Give the configuration context a type
+## 1. Give the configuration context a type — done
 
-`ConfigurationContext` is `createContext<any>` (`js/context.ts:10`) and `useConfiguration()`
-returns `any`. Its actual shape is defined implicitly by the object literal in
-`Renderer.register` (`js/Renderer.tsx:229`) plus a handful of fields assigned elsewhere
-(`searchQueryRegex`, `selectedView`, `selectedCommentaryView`, `isFake`).
+`ConfigurationContext` is now `createContext<Configuration | undefined>` and `useConfiguration()`
+returns `Configuration` (`js/context.ts`). The shape was already accurate in the test-only
+`TestConfiguration` (`js/__tests__/testing/configuration.tsx`), so that interface moved to
+production code as `Configuration`, and the test harness now imports it instead of hand-maintaining
+a duplicate. `Renderer.register`'s object literal and the `HiddenHost` component's `context` prop
+are both typed against it, so a future field rename or omission there is a compile error.
 
-Declaring an interface would: make every test-context omission a compile error instead of an
-`undefined is not a function` at runtime; document which fields are functions (lazily re-read
-from `localStorage`) vs values; and reveal that `isFake` is only ever set on the *hidden host*
-copy, which is currently discoverable only by reading `register()` closely.
+The type is honest about the one place production and consumer disagree: both
+`expandTranslationOnMergedSectionExpansion` and `expandTranslationOnMergedSegmentExpansion` are
+declared (see Observation #9 in `FrontendTestingPlan.md`) rather than "fixed" by picking one
+spelling — this was a pure typing change, not a behavior change.
 
-Unlocks: cheap, correct test contexts; type-checking of the tests themselves.
+Unlocked: `js/__tests__/renderers.test.tsx` no longer needs the `as any` cast it used to pass the
+mismatched-spelling override through `TestContext`.
 
 ## 2. Extract the context construction out of `register()`
 

@@ -10,6 +10,7 @@ import {CommentEditorModal} from "./CommentEditorModal";
 import {$, addJqueryExtensionMethods} from "./jquery";
 import {LocalStorageInt, LocalStorageLru} from "./localStorage";
 import {
+  Configuration,
   ConfigurationContext,
   HiddenHostContext,
 } from "./context";
@@ -34,7 +35,7 @@ function HiddenHost({
   hiddenHostContext,
   navigationExtension,
 }: {
-  context: any,
+  context: Configuration,
   hiddenHostContext: any,
   navigationExtension: NavigationExtension,
 }): React.ReactElement {
@@ -226,7 +227,7 @@ export abstract class Renderer {
   }
 
   register(divId: string): void {
-    const context = {
+    const context: Configuration = {
       rendererType: this.rendererType(),
       versions: () => this.versions(),
       translationOption: this.translationOption,
@@ -236,7 +237,7 @@ export abstract class Renderer {
       expandEnglishByDefault: this.expandEnglishByDefault,
       ignoredSectionRefs: (id: string) => this.ignoredSectionRefs(id),
       expandTranslationOnMergedSectionExpansion: this.expandTranslationOnMergedSectionExpansion,
-      compactLayout: () => this.allowCompactLayout && localStorage.layoutOption === "compact",
+      compactLayout: () => !!this.allowCompactLayout && localStorage.layoutOption === "compact",
       highlightedIds: new LocalStorageLru(
         "highlightedIds",
         // 100 seems like enough to make sure that we don't save too much data, but also don't have
