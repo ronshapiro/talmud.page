@@ -226,7 +226,7 @@ export abstract class Renderer {
     return [];
   }
 
-  register(divId: string): void {
+  buildConfiguration(): Configuration {
     const context: Configuration = {
       rendererType: this.rendererType(),
       versions: () => this.versions(),
@@ -254,13 +254,21 @@ export abstract class Renderer {
       },
       searchQueryRegex: undefined,
     };
+    return context;
+  }
 
-    const contextForHiddenHostRendering = {
-      ...context,
+  buildHiddenHostConfiguration(base: Configuration): Configuration {
+    return {
+      ...base,
       translationOption: () => "english-side-by-side",
       wrapTranslations: () => false,
       isFake: true,
     };
+  }
+
+  register(divId: string): void {
+    const context = this.buildConfiguration();
+    const contextForHiddenHostRendering = this.buildHiddenHostConfiguration(context);
     const hiddenHostContext = {};
 
     render(

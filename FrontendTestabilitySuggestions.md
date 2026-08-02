@@ -20,19 +20,22 @@ spelling — this was a pure typing change, not a behavior change.
 Unlocked: `js/__tests__/renderers.test.tsx` no longer needs the `as any` cast it used to pass the
 mismatched-spelling override through `TestContext`.
 
-## 2. Extract the context construction out of `register()`
+## 2. Extract the context construction out of `register()` — done
 
-`register()` currently does five things: build the context, build the hidden-host context variant,
+`register()` did five things: build the context, build the hidden-host context variant,
 `ReactDOM.render` the tree, attach a window resize handler, and bump the `pageViews` counter that
-triggers the feedback form. A test that wants a *realistic* context has to either take all five or
-duplicate the first.
+triggers the feedback form. `buildConfiguration(): Configuration` and
+`buildHiddenHostConfiguration(base): Configuration` are now `Renderer` methods (not standalone
+functions, since the context literal reads `this.*` throughout) that `register()` calls; no other
+change to `register()`'s behavior.
 
-Suggested shape (no behavior change): `buildConfiguration(): Configuration` and
-`buildHiddenHostConfiguration(base): Configuration` as standalone exported functions that
-`register()` calls.
+Covered by `Renderer_buildConfiguration.test.ts`, including the collision noted in Observation #8
+(Steinsaltz/Translation sharing a className) surfacing immediately in a naive
+`commentaryTypesByClassName` bijection check — narrowed to a single unaffected commentary type
+rather than worked around.
 
-Unlocks: integration tests that use production configuration without mounting the resize
-listener or mutating `localStorage.pageViews`.
+Unlocked: those tests build a production configuration directly, without touching `pageViews` or
+rendering anything.
 
 ## 3. Funnel `localStorage` reads through a single module
 
