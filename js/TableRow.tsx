@@ -8,6 +8,7 @@ import {$} from "./jquery";
 import {onClickKeyListener} from "./key_clicks";
 import {useConfiguration, useHiddenHost} from "./context";
 import {SwipeableBackground} from "./SwipeableBackground";
+import {isSiteLanguageHebrew} from "./settings";
 
 const {
   useEffect,
@@ -368,7 +369,7 @@ function TableRow(props: TableRowProps): React.ReactElement {
     $("#main-contents").width(), // recalculate only when there are changes in width
   ]);
 
-  const isHebrewOnly = hiddenHost && localStorage.languageOption === "hebrew";
+  const isHebrewOnly = hiddenHost && isSiteLanguageHebrew();
   const cellClasses = (() => {
     if (isHebrewOnly) return ["fullRow"];
     if ((isEmptyText(hebrew) || isEmptyText(english)) && !overrideFullRow) {

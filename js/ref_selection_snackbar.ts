@@ -10,8 +10,9 @@ import {applyHighlight} from "./highlight";
 import {$} from "./jquery";
 import {Button, snackbars} from "./snackbar";
 import {checkNotUndefined} from "./undefined";
+import {debugSelectionPreference} from "./settings";
 
-const DO_DEBUG = localStorage.debugSelection === "true";
+const DO_DEBUG = debugSelectionPreference.get() === "true";
 const DEBUG_ERRORS: string[] = [];
 if (DO_DEBUG) {
   window.addEventListener("error", event => {

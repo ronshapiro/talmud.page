@@ -4,6 +4,7 @@ import {$} from "./jquery";
 import {NullaryFunction} from "./types";
 import componentHandler from "./componentHandler";
 import {useHtmlRef} from "./hooks";
+import {isSiteLanguageHebrew} from "./settings";
 
 const {
   useEffect,
@@ -31,9 +32,9 @@ export default function Modal(props: ModalProps): React.ReactElement {
     isBottom,
   } = props;
   const cancelText = (
-    localStorage.languageOption === "hebrew" ? props.cancelTextHebrew : props.cancelText);
+    isSiteLanguageHebrew() ? props.cancelTextHebrew : props.cancelText);
   const acceptText = (
-    localStorage.languageOption === "hebrew" ? props.acceptTextHebrew : props.acceptText);
+    isSiteLanguageHebrew() ? props.acceptTextHebrew : props.acceptText);
   const modalContainerRef = useHtmlRef<HTMLInputElement>();
   useEffect(() => {
     componentHandler.upgradeElement(modalContainerRef.current);
@@ -51,13 +52,13 @@ export default function Modal(props: ModalProps): React.ReactElement {
   });
 
   const marginStartStyle = (
-    localStorage.languageOption === "hebrew" ? {marginRight: "auto"} : {marginLeft: "auto"});
+    isSiteLanguageHebrew() ? {marginRight: "auto"} : {marginLeft: "auto"});
 
   return (
     <div
       className="modal-container"
       ref={modalContainerRef}
-      dir={localStorage.languageOption === "hebrew" ? "rtl" : "ltr"}>
+      dir={isSiteLanguageHebrew() ? "rtl" : "ltr"}>
       <div className={`modal${isBottom ? " modal-bottom" : ""}`}>
         <div className="modal-content">
           {content}
@@ -105,7 +106,7 @@ export function ModalEditor({
 }): React.ReactElement {
   return (
     <div>
-      <strong>{localStorage.languageOption === "hebrew" ? titleHebrew : title}</strong>
+      <strong>{isSiteLanguageHebrew() ? titleHebrew : title}</strong>
       <form onSubmit={(event) => onSubmit(event)}>
         <div
           style={{padding: "0"}}
@@ -133,7 +134,7 @@ interface TextDirectionButton {
   directionButton: React.ReactElement;
 }
 export function useTextDirectionButton(): TextDirectionButton {
-  const [isRtl, setIsRtl] = useState(localStorage.languageOption === "hebrew");
+  const [isRtl, setIsRtl] = useState(isSiteLanguageHebrew());
   const button = (
     <button
       key="direction"

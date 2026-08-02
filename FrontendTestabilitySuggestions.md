@@ -37,19 +37,66 @@ rather than worked around.
 Unlocked: those tests build a production configuration directly, without touching `pageViews` or
 rendering anything.
 
-## 3. Funnel `localStorage` reads through a single module
+## 3. Funnel `localStorage` reads through a single module — done, except `darkMode`'s deeper logic
 
-`localStorage.<key>` is read directly at render time in ~10 components. Consequences:
-- Every test has to know the exact string keys and their string-y values (`"true"`, `"yes"`,
+`localStorage.<key>` used to be read directly at render time in ~10 components, and written
+through `Preferences.tsx`'s `PreferenceSection` via a raw, untyped `localStorage[key] = value`.
+Consequences:
+- Every test had to know the exact string keys and their string-y values (`"true"`, `"yes"`,
   `"hebrew"`) — they're stringly-typed and inconsistent (`showTranslationButton === "yes"` but
   `wrapTranslations !== "false"` but `expandEnglishByDefault === "true"`).
-- The defaults are expressed as comparison direction (`!== "false"` means "default on") which is
+- The defaults were expressed as comparison direction (`!== "false"` means "default on") which is
   easy to get backwards and impossible to discover without reading each site.
-- There is no way to render the tree with settings that aren't global.
+- `PreferenceSection` writing every setting the same untyped way meant a typed getter added for
+  one setting (`languageOption`, done first) either went unused or had to special-case that one
+  section, leaving two different patterns side by side.
 
-A `settings.ts` exposing typed getters (`translationOption(): TranslationOption`) — even if it
-still reads `localStorage` under the hood — would centralize the defaults and give tests one
-place to stub.
+`js/settings.ts` now covers every setting `Preferences.tsx` exposes: a typed `get`/`set` pair per
+`localStorage` key (`translationOptionPreference`, `layoutOptionPreference`,
+`showTranslationButtonPreference`, `wrapTranslationsPreference`,
+`expandEnglishByDefaultPreference`, `hideGemaraTranslationByDefaultPreference`,
+`showPageMetadataPreference`, `showAlternateVersionsPreference`, `offlineModePreference`,
+`keyboardShortcutsPreference`, `debugSelectionPreference`, `ignoreLocalCachePreference`,
+`disablePrecachingPreference`, `preferredVersionPreference(resourceType)`, `darkModePreference`),
+plus `languageOption`'s richer pair: a `SiteLanguage` enum (`Hebrew`/`Mix`/`English`, matching the
+three values the "Display Language" section actually writes — collapsing straight to a boolean
+would have hidden that `Mix` exists), `siteLanguage(): SiteLanguage` (defaults unset/unrecognized
+to `English`), `setSiteLanguage()`, and `isSiteLanguageHebrew()` for the boolean nearly every call
+site actually wants (`Mix` reads as English here, same as everywhere else).
+
+`PreferenceSectionParams<T>` is generic and takes a whole `Preference<T>` object (the same `get`/
+`set` pair exported from `settings.ts`) instead of a raw `localStorageKeyName` string, and
+`Item<T>`'s `value` is `T` rather than a bare `string`. Every `<PreferenceSection>` passes one of
+the accessors above directly — one consistent path, not "languageOption is typed, the rest are raw
+strings" — and TypeScript checks that every `items` entry's `value` is actually a member of that
+setting's type: an earlier draft where each call site instead took separate `get`/`set` functions
+and cast the value at the boundary (`value as TranslationOption`) compiled even for a bogus,
+made-up option value, since the cast happened before the type could be checked against `items`.
+The one unavoidable cast is inside `PreferenceSection` itself, converting the DOM radio input's
+native `string` value back to `T` once — safe, since that string can only be one of the `value`s
+the component itself rendered.
+
+Writing this surfaced a real bug before it shipped: `siteLanguage()`'s `English` default made the
+"English" radio in `Preferences.tsx` render pre-checked even before a user had ever chosen a
+language, because the "is this radio checked" comparison needs the *raw* stored value (undefined
+until chosen), not the defaulted one. `Preferences.test.tsx`'s existing "nothing is checked when no
+choice has been made" test caught it immediately. Fixed by adding `languageOptionPreference` — the
+raw, undefaulted accessor `siteLanguage()`/`setSiteLanguage()` are now built on — and wiring
+`Preferences.tsx`'s "Display Language" section to that instead. Every other setting was already
+using its raw accessor directly, so none of them had this problem.
+
+`darkMode` intentionally still isn't fully migrated: `Preferences.tsx`'s "Display" section uses
+`darkModePreference` (a plain raw string, since the value is `"true"`/`"gray"`/`"false"`/a custom
+theme's name — open-ended), but `ThemeEditor.tsx`, `CustomThemes.ts`, and the snackbar dark-mode
+checks read and roll it back with more entangled logic (live preview while editing, restoring the
+previous value on cancel via `removeItem`) that wasn't touched here. `showFeedbackForm` also isn't
+a `Preferences.tsx` setting at all — it's a lifecycle string (`"true"`/`"finished"`/`"ignored"`) set
+programmatically by `Renderer`/`Feedback.tsx`, not user-selectable, so it was out of scope for this
+pass.
+
+No new React state was introduced: every settings write already goes through `Preferences`'
+`rerender()`, which forces a full re-render of the tree from `Root` down, so a plain
+localStorage-backed accessor is sufficient — there's no separate state to fall out of sync.
 
 Unlocks: mode-matrix tests without global mutation; would let the mode be a prop/context value
 later.

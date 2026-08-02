@@ -25,6 +25,14 @@ import {intToHebrewNumeral} from "../hebrew";
 import isEmptyText from "./is_empty_text";
 import {Version} from "./Preferences";
 import {promoteReplaceableAiComments} from "./promote_replaceable_ai_comments";
+import {
+  expandEnglishByDefaultPreference,
+  isSiteLanguageHebrew,
+  layoutOptionPreference,
+  preferredVersionPreference,
+  translationOptionPreference,
+  wrapTranslationsPreference,
+} from "./settings";
 
 const {useEffect} = React;
 
@@ -115,8 +123,8 @@ export abstract class Renderer {
   allowCompactLayout: boolean | undefined;
   expandTranslationOnMergedSectionExpansion: boolean | undefined;
   isTalmud: boolean | undefined;
-  wrapTranslations = (): boolean => localStorage.wrapTranslations !== "false";
-  expandEnglishByDefault = (): boolean => localStorage.expandEnglishByDefault === "true";
+  wrapTranslations = (): boolean => wrapTranslationsPreference.get() !== "false";
+  expandEnglishByDefault = (): boolean => expandEnglishByDefaultPreference.get() === "true";
   translationOption: () => string;
 
   constructor(
@@ -127,10 +135,10 @@ export abstract class Renderer {
     options = options || {};
     this.isTalmud = options.isTalmud;
     this.translationOption = () => {
-      if (localStorage.languageOption === "hebrew") return "just-hebrew";
+      if (isSiteLanguageHebrew()) return "just-hebrew";
       return (
         options.translationOverride
-          || localStorage.translationOption
+          || translationOptionPreference.get()
           || "english-side-by-side");
     };
     this.allowCompactLayout = options.allowCompactLayout;
@@ -153,7 +161,7 @@ export abstract class Renderer {
 
     promoteReplaceableAiComments(amudData);
 
-    const preferredVersion = localStorage[`preferredVersion_${this.rendererType()}`];
+    const preferredVersion = preferredVersionPreference(this.rendererType()).get();
     if (amudData.sections.length > 0
         && preferredVersion
         && preferredVersion !== amudData.sections[0].sourceRef) {
@@ -237,7 +245,7 @@ export abstract class Renderer {
       expandEnglishByDefault: this.expandEnglishByDefault,
       ignoredSectionRefs: (id: string) => this.ignoredSectionRefs(id),
       expandTranslationOnMergedSectionExpansion: this.expandTranslationOnMergedSectionExpansion,
-      compactLayout: () => !!this.allowCompactLayout && localStorage.layoutOption === "compact",
+      compactLayout: () => !!this.allowCompactLayout && layoutOptionPreference.get() === "compact",
       highlightedIds: new LocalStorageLru(
         "highlightedIds",
         // 100 seems like enough to make sure that we don't save too much data, but also don't have
@@ -372,7 +380,7 @@ export function numericalNavigationExtension(
   const previous = () => (parseInt(amudMetadata().amudStart!) - 1).toString();
   const next = () => (parseInt(amudMetadata().amudEnd!) + 1).toString();
   const maybeHebrew = (fn: () => string) => {
-    if (localStorage.languageOption !== "hebrew") return fn();
+    if (!isSiteLanguageHebrew()) return fn();
     return `${chapterLoadingPrefix} ${intToHebrewNumeral(parseInt(fn()))}`;
   };
   return {

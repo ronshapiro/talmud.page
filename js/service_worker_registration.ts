@@ -1,4 +1,5 @@
 import {clearNonMainCaches, mainCache} from "./caches";
+import {offlineModePreference} from "./settings";
 
 function registerServiceWorker(scriptUrl: string): void {
   clearNonMainCaches().then(() => mainCache()).then(cache => {
@@ -29,7 +30,7 @@ export function serviceWorkerMain(): void {
     document.getElementById("service-worker-ref") as HTMLScriptElement)!.src;
   const scriptUrl = serviceWorkerUrl.slice(serviceWorkerUrl.lastIndexOf("/"));
 
-  if (localStorage.offlineMode === "true") {
+  if (offlineModePreference.get() === "true") {
     registerServiceWorker(scriptUrl);
   } else {
     navigator.serviceWorker.getRegistration(scriptUrl).then(registration => {

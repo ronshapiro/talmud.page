@@ -12,6 +12,7 @@ import {PromiseQueue, timeoutPromise} from "./promises";
 import {registerRefSelectionSnackbarListener} from "./ref_selection_snackbar.ts";
 import {serviceWorkerMain} from "./service_worker_registration.ts";
 import {initializeLocalStorage} from "./initializeLocalStorage";
+import {disablePrecachingPreference, isSiteLanguageHebrew} from "./settings.ts";
 
 initializeLocalStorage();
 
@@ -213,7 +214,7 @@ export class Runner {
   }
 
   preloadNextSection() {
-    if (localStorage.disablePrecaching === "true") return;
+    if (disablePrecachingPreference.get() === "true") return;
     if (this.renderer.navigationExtension.hasNext()) {
       this.requestQueue.add(
         () => this.getAndCacheSection(this.renderer.navigationExtension.next()));
@@ -238,7 +239,7 @@ export class Runner {
   }
 
   preloadPreviousSection() {
-    if (localStorage.disablePrecaching === "true") return;
+    if (disablePrecachingPreference.get() === "true") return;
     if (this.renderer.navigationExtension.hasPrevious()) {
       this.requestQueue.add(
         () => this.getAndCacheSection(this.renderer.navigationExtension.previous()));
@@ -321,7 +322,7 @@ export class Runner {
         return;
       }
 
-      const useHebrew = localStorage.languageOption === "hebrew";
+      const useHebrew = isSiteLanguageHebrew();
       const snackbarText = useHebrew ? "לשמור הערות לGoogle Drive?" : "Save notes to Google Drive?";
       const noThanks = useHebrew ? "לא תודה" : "No thanks";
       const signIn = useHebrew ? "להכנס" : "Sign in";

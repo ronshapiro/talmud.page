@@ -3,11 +3,12 @@ import {driveClient} from "./google_drive/singleton";
 import {postWithRetry} from "./post";
 import {timeoutPromise} from "./promises";
 import {snackbars} from "./snackbar";
+import {isSiteLanguageHebrew} from "./settings";
 
 export function postCorrection(data: Omit<CorrectionPostData, "user">): Promise<unknown> {
   const {ref, userText} = data;
   snackbars.reportedIssueSent.show(
-    localStorage.languageOption === "hebrew"
+    isSiteLanguageHebrew()
       // TODO(language): ref should be localized
       ? `תיקון של ${ref} נשלח`
       : `Posted correction on ${ref}: ${userText}`,

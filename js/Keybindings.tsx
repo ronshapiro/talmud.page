@@ -3,6 +3,7 @@ import * as React from "react";
 import {useConfiguration} from "./context";
 import {Scrolling, useScrollTo} from "./useScrollTo";
 import {$} from "./jquery";
+import {keyboardShortcutsPreference} from "./settings";
 
 const {
   useEffect,
@@ -59,12 +60,12 @@ export function Keybindings({forceUpdate}: {forceUpdate: () => void}): React.Rea
     },
     /* eslint-enable quote-props */
   };
-  if (localStorage.keyboardShortcuts !== "true") {
+  if (keyboardShortcutsPreference.get() !== "true") {
     bindings = {};
   }
 
   const cachingKeys = (
-    [localStorage.keyboardShortcuts]
+    [keyboardShortcutsPreference.get()]
       .concat(effectCacheKeys(rowScrolling))
       .concat(effectCacheKeys(buttonsScrolling)));
 

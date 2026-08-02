@@ -5,6 +5,7 @@ import {useHtmlRef} from "./hooks";
 import {$} from "./jquery";
 import {NullaryFunction} from "./types";
 import {upgradeElement} from "./componentHandler";
+import {isSiteLanguageHebrew} from "./settings";
 
 const {
   useEffect,
@@ -62,7 +63,7 @@ export function SearchBar({
   if (submitRef) {
     submitRef.current = onSubmit;
   }
-  const useHebrew = localStorage.languageOption === "hebrew";
+  const useHebrew = isSiteLanguageHebrew();
   const direction = useHebrew ? "rtl" : "ltr";
   const textAlign = useHebrew ? "right" : "left";
 
