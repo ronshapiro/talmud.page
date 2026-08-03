@@ -289,6 +289,52 @@ function calculateLineCount(node: JqueryNode): number {
   throw new Error("Couldn't find height");
 }
 
+interface WrappingMeasurements {
+  /** Height of the hidden host's hebrew node, holding this row's actual hebrew text. */
+  hebrewHeight: number;
+  totalEnglishLines: number;
+  /**
+   * Height of the hidden host's english node right after `calculateLineCount` finished probing
+   * it — i.e. the height of `totalEnglishLines` worth of `<br>` tags, not of the actual english
+   * text (which `calculateLineCount` has already overwritten by this point).
+   */
+  englishHeightAtFullLineCount: number;
+  /**
+   * Height of the hidden host's english node after it's rewritten to `totalEnglishLines - 3`
+   * `<br>` tags (a heuristic margin) — the actual comparison point for `shouldWrap`.
+   */
+  englishHeightAtReducedLineCount: number;
+}
+
+interface WrappingDecision {
+  shouldWrap: boolean;
+  englishLineClampLines: number;
+}
+
+/**
+ * The layout decision at the heart of `shouldTranslationWrap`, pulled out as a pure function of
+ * already-taken DOM measurements (testability suggestion #4 in
+ * FrontendTestabilitySuggestions.md). The measuring itself — writing text into the hidden host
+ * and reading `.height()` back — still requires a real layout engine and stays in the component.
+ */
+export function decideWrapping({
+  hebrewHeight,
+  totalEnglishLines,
+  englishHeightAtFullLineCount,
+  englishHeightAtReducedLineCount,
+}: WrappingMeasurements): WrappingDecision {
+  const heightRatio = hebrewHeight / englishHeightAtFullLineCount;
+  if (Number.isNaN(heightRatio)) {
+    return {shouldWrap: false, englishLineClampLines: 1000000};
+  }
+
+  return {
+    // A zero hebrew height means there's no hebrew to wrap the english around.
+    shouldWrap: hebrewHeight > 0 && hebrewHeight < englishHeightAtReducedLineCount,
+    englishLineClampLines: Math.floor(heightRatio * totalEnglishLines),
+  };
+}
+
 interface TableRowProps {
   hebrew?: StringOrElement;
   english?: StringOrElement;
@@ -345,18 +391,18 @@ function TableRow(props: TableRowProps): React.ReactElement {
     applyHiddenNode(english, hiddenHost.english);
 
     const totalEnglishLines = calculateLineCount(hiddenHost.english);
-    const heightRatio = hiddenHost.hebrew.height() / hiddenHost.english.height();
+    const hebrewHeight = hiddenHost.hebrew.height();
+    const englishHeightAtFullLineCount = hiddenHost.english.height();
 
     applyHiddenNode(brTags(totalEnglishLines - 3 /* heuristic */), hiddenHost.english);
+    const englishHeightAtReducedLineCount = hiddenHost.english.height();
 
-    if (Number.isNaN(heightRatio)) {
-      return {shouldWrap: false, englishLineClampLines: 1000000};
-    }
-
-    const result = {
-      shouldWrap: hiddenHost.hebrew.height() < hiddenHost.english.height(),
-      englishLineClampLines: Math.floor(heightRatio * totalEnglishLines),
-    };
+    const result = decideWrapping({
+      hebrewHeight,
+      totalEnglishLines,
+      englishHeightAtFullLineCount,
+      englishHeightAtReducedLineCount,
+    });
 
     // TODO: optimize by applying this in an effect
     applyHiddenNode("", hiddenHost.hebrew);
