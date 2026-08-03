@@ -101,20 +101,40 @@ localStorage-backed accessor is sufficient — there's no separate state to fall
 Unlocks: mode-matrix tests without global mutation; would let the mode be a prop/context value
 later.
 
-## 4. Separate the measurement concern in `TableRow`
+## 4. Separate the measurement concern in `TableRow` — done
 
-`shouldTranslationWrap` (`js/TableRow.tsx:338`) mixes three things: writing text into the hidden
-host, measuring heights, and deciding layout. Only the third is business logic, and it is
-currently untestable because the first two need a real layout engine.
+`shouldTranslationWrap` mixed three things: writing text into the hidden host, measuring heights,
+and deciding layout. Only the third was business logic, and it was untestable because the first
+two need a real layout engine.
 
-Suggested shape: `decideWrapping({hebrewHeight, englishHeight, totalEnglishLines}) →
-{shouldWrap, englishLineClampLines}` as a pure function, with the DOM poking left in the
-component. Also `calculateLineCountCache` (`js/TableRow.tsx:267`) is keyed by a jQuery object
-used as an object key, so every node stringifies to `"[object Object]"` and shares one cache
-entry — worth a look independently of testing.
+`decideWrapping` is now a pure function in `js/TableRow.tsx`, exported and tested directly in
+`TableRow_decideWrapping.test.ts` with made-up heights — no DOM involved. Its actual parameters
+turned out more specific than the rough sketch this suggestion originally proposed
+(`{hebrewHeight, englishHeight, totalEnglishLines}`): tracing `shouldTranslationWrap` closely
+showed it reads the hidden english node's height *twice*, at two different points after two
+different rewrites (once right after `calculateLineCount` leaves it holding
+`totalEnglishLines` `<br>` tags, once after it's rewritten to `totalEnglishLines - 3`), and those
+two heights are not derivable from each other without assuming a constant per-`<br>` line height
+that the original code doesn't assume — it re-measures instead. So `decideWrapping` takes both
+explicitly: `{hebrewHeight, englishHeightAtFullLineCount, totalEnglishLines,
+englishHeightAtReducedLineCount}`. `shouldTranslationWrap` itself is otherwise untouched — same
+sequence of writes and reads, just calling `decideWrapping` instead of computing inline.
 
-Unlocks: real coverage of the line-clamp heuristics, which are currently the least verifiable and
-most visually consequential logic in the app.
+`calculateLineCountCache` (`js/TableRow.tsx`) is still keyed by a jQuery object used as an object
+key, so every node stringifies to `"[object Object]"` and shares one cache entry — left alone,
+as before, since it's a separate bug from what this suggestion was about.
+
+Unlocked: real, direct coverage of the line-clamp decision math, including a case worth noting —
+`heightRatio` is `Infinity` (not `NaN`) when the hebrew height is nonzero but the english height
+is 0, so the "could not measure" fallback only triggers on the true `0/0` case. Not currently
+reachable in production (a `<br>`-tag probe height of exactly 0 would need a collapsed layout),
+but the distinction is real and now pinned by a test rather than left implicit.
+
+One deliberate, reviewed behavior change (not just an extraction): `shouldWrap` now also requires
+`hebrewHeight > 0`. Direct tests on the pure function made a real edge case visible in a way the
+inline version never surfaced — a zero hebrew height produced `shouldWrap: true`, but there's no
+hebrew to wrap the english around when the hebrew cell has no height. Fixed in `decideWrapping`
+and pinned by a test for that exact case.
 
 ## 5. The section-merging loop in `Page` wants to be a function
 

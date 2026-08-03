@@ -187,7 +187,10 @@ warnings and no stray `console.error` output.
 
 ### Not covered, and why
 
-- **Wrap / line-clamp heuristics** — unreachable in jsdom; needs suggestion #4.
+- **Wrap / line-clamp heuristics, the measurement half** — still unreachable in jsdom (every
+  height reads back 0). The decision math itself was pulled out as `decideWrapping` and is
+  covered directly in `TableRow_decideWrapping.test.ts` (suggestion #4); only the DOM
+  read/write/re-measure around it remains untested here.
 - **Google Drive sync** (`google_drive/client.ts`, 705 lines) — has its own existing tests for
   document parsing; the sign-in and write paths need a gapi fake that does not exist yet.
 - **`ref_selection_snackbar`** — driven by real text selection ranges, which jsdom models poorly.
@@ -209,7 +212,10 @@ the current behavior, so a deliberate change will show up as a failing test.
 
 2. **jsdom cannot exercise the wrap/line-clamp heuristics.** Every height is 0, so
    `shouldTranslationWrap` divides 0 by 0 and takes its `NaN` branch. Every test therefore runs
-   in the "could not measure" layout. See suggestion #4 for what would make this testable.
+   in the "could not measure" layout. Suggestion #4 pulled the decision itself out as
+   `decideWrapping`, which is tested directly with made-up heights in
+   `TableRow_decideWrapping.test.ts`; the DOM measurement wrapper is still only exercised in this
+   "could not measure" state.
 
 3. **The URL range and the loaded pages must be kept in sync, or rendering throws.**
    `Renderer.sortedAmudim()` maps `amudMetadata().range()` through `this.allAmudim`, so if the URL
