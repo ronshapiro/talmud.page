@@ -1,5 +1,6 @@
 import {CommentaryType, ALL_COMMENTARIES} from "../commentaries";
 import {checkNotUndefined} from "./undefined";
+import {showTranslationButtonPreference} from "./settings";
 
 const STEINSALTZ = (
   checkNotUndefined(
@@ -12,7 +13,7 @@ export function getCommentaryTypes(
 ): CommentaryType[] {
   const types = [...COMMENTARY_TYPES];
   if (resourceType === "talmud" || resourceType === "mishneh torah") {
-    if (localStorage.showTranslationButton === "yes") {
+    if (showTranslationButtonPreference.get() === "yes") {
       types.push(STEINSALTZ);
     } else {
       types.unshift(STEINSALTZ);

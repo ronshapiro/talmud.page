@@ -5,9 +5,10 @@ import {amudMetadata, computePreviousAmud, computeNextAmud} from "./amud.ts";
 import {driveClient} from "./google_drive/singleton.ts";
 import {Runner} from "./page_runner.js";
 import {makeAmudSmall, formatDafInHebrew} from "../talmud.ts";
+import {isSiteLanguageHebrew} from "./settings.ts";
 
 function translatePage(page) {
-  return localStorage.languageOption === "hebrew" ? formatDafInHebrew("", page).slice(1) : page;
+  return isSiteLanguageHebrew() ? formatDafInHebrew("", page).slice(1) : page;
 }
 
 const previous = () => computePreviousAmud(amudMetadata().amudStart);

@@ -3,13 +3,14 @@ import {sendEvent} from "./event";
 import {$} from "./jquery";
 import {LocalStorageInt} from "./localStorage";
 import PREFERENCES_PAGE_VERSION from "./preferences_version";
+import {isSiteLanguageHebrew} from "./settings";
 
 const moveSnackbarOffscreen = () => $("#snackbar").css("bottom", -400).promise();
 const hideSnackbar = () => $("#snackbar").animate({bottom: -400}).promise();
 
 function addContainer(kind: Kind): void {
   const classes = [kind.cssClass, ...(kind.extraCssClasses || [])].join(" ");
-  const direction = localStorage.languageOption === "hebrew" ? "rtl" : "ltr";
+  const direction = isSiteLanguageHebrew() ? "rtl" : "ltr";
   $(`#snackbar`).append(
     `<div class="${classes}" dir="${direction}">
        <div class="snackbar-text"></div>
@@ -273,7 +274,7 @@ export const snackbars = new SnackbarManager();
 $(document).ready(() => {
   moveSnackbarOffscreen();
 
-  const useHebrew = localStorage.languageOption === "hebrew";
+  const useHebrew = isSiteLanguageHebrew();
   const updatedOptions = useHebrew ? "בדקו הגדרות חדשות" : "Check out the updated options!";
   const availableOptions = useHebrew ? "בדקו הגדרות אפשריות" : "Check out the available options!";
 

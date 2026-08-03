@@ -1,5 +1,6 @@
 import {$} from "./jquery";
 import {splitOnBookName} from "../refs";
+import {isSiteLanguageHebrew} from "./settings";
 
 export function tryRedirect(englishTitle: string): void {
   $.ajax({
@@ -33,7 +34,7 @@ export function tryRedirect(englishTitle: string): void {
 
 setTimeout(
   () => {
-    const id = localStorage.languageOption === "hebrew" ? "title-hebrew" : "title-english";
+    const id = isSiteLanguageHebrew() ? "title-hebrew" : "title-english";
     document.getElementById("title")!.textContent = (
       document.getElementById(id) as HTMLMetaElement)!.content;
   },

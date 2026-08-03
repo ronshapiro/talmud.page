@@ -7,6 +7,7 @@ import {useHtmlRef} from "./hooks";
 import {LoadingSpinner} from "./LoadingSpinner";
 import {$} from "./jquery";
 import {ApiResponse} from "../apiTypes";
+import {showPageMetadataPreference} from "./settings";
 
 const {
   useEffect,
@@ -67,7 +68,7 @@ export function Page({
       <div className="titleContainer" key="titleContainer">
         <span className={className} key="title" ref={headerRef} dir={direction}>
           {titleElement}
-          {localStorage.showPageMetadata === "true"
+          {showPageMetadataPreference.get() === "true"
            && !amudData.loading
            && <> <PageTitleMetadata segments={amudData.sections} /></>}
         </span>

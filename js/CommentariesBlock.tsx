@@ -8,6 +8,11 @@ import {useConfiguration} from "./context";
 import {ApiComment, Commentary} from "../apiTypes";
 import {CommentaryType} from "../commentaries";
 import {useHtmlRef} from "./hooks";
+import {
+  isSiteLanguageHebrew,
+  showAlternateVersionsPreference,
+  showTranslationButtonPreference,
+} from "./settings";
 
 const {
   useEffect,
@@ -17,7 +22,7 @@ const {
 const JSX_NOOP = null;
 
 function shouldHide(commentaryKind: CommentaryType): boolean {
-  return localStorage.showTranslationButton !== "yes"
+  return showTranslationButtonPreference.get() !== "yes"
     && commentaryKind.className === "translation";
 }
 
@@ -74,13 +79,13 @@ function hasImage(commentary: Commentary): boolean {
     for (const row of comment.rows ?? []) {
       if (row.image
         || textTypeHasImage(row.hebrew ?? "")
-        || (textTypeHasImage(row.english ?? "") && localStorage.languageOption !== "hebrew")) {
+        || (textTypeHasImage(row.english ?? "") && !isSiteLanguageHebrew())) {
         return true;
       }
     }
 
     if (textTypeHasImage(comment.he)
-      || (textTypeHasImage(comment.en) && localStorage.languageOption !== "hebrew")) {
+      || (textTypeHasImage(comment.en) && !isSiteLanguageHebrew())) {
       return true;
     }
     if (Object.values(comment.commentary || {}).some(hasImage)) {
@@ -184,7 +189,7 @@ export function CommentariesBlock({
       const commentary = commentaries[commentaryKind.englishName];
       if (commentary && (
         commentaryKind.englishName !== "Versions"
-          || localStorage.showAlternateVersions === "true")) {
+          || showAlternateVersionsPreference.get() === "true")) {
         decoratedAction(commentary, commentaryKind);
       }
     }
@@ -340,7 +345,7 @@ export function CommentariesBlock({
     const commentariesToShow: [Commentary, CommentaryType][] = [];
     const openCommentaries = new Set(getOrdering(segmentLabel));
     forEachCommentary((commentary, commentaryKind) => {
-      if (commentaryKind.ignoreInHebrew && localStorage.languageOption === "hebrew") return;
+      if (commentaryKind.ignoreInHebrew && isSiteLanguageHebrew()) return;
       if (!openCommentaries.has(commentaryKind.className)) {
         commentariesToShow.push([commentary, commentaryKind]);
       }

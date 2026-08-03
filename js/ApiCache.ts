@@ -2,6 +2,7 @@
 import {AbstractIndexedDb, result} from "./AbstractIndexedDb";
 import {$} from "./jquery";
 import {promiseParts, timeoutPromise} from "./promises";
+import {ignoreLocalCachePreference} from "./settings";
 
 const TTL = 14 * 24 * 60 * 60 * 1000;
 
@@ -33,7 +34,7 @@ export class ApiCache extends AbstractIndexedDb {
   }
 
   get(ref: string): Promise<any> {
-    if (localStorage.ignoreLocalCache === "true") {
+    if (ignoreLocalCachePreference.get() === "true") {
       return Promise.reject();
     }
     // eslint-disable-next-line @typescript-eslint/no-unused-vars

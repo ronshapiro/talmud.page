@@ -5,6 +5,7 @@ import {NavigationExtension} from "./NavigationExtension";
 import Modal from "./Modal";
 import {NullaryFunction} from "./types";
 import {SearchBar} from "./SearchBar";
+import {isSiteLanguageHebrew} from "./settings";
 
 const {
   useRef,
@@ -46,7 +47,7 @@ const NavigationButtonRow = (props: NavigationButtonRowProps) => {
   return (
     <div
       className={classes.join(" ")}
-      dir={localStorage.languageOption === "hebrew" ? "rtl" : "ltr"}
+      dir={isSiteLanguageHebrew() ? "rtl" : "ltr"}
       >
       <span
         className={buttonClasses()}
@@ -87,7 +88,7 @@ interface ButtonProps {
 
 // TODO(language): the pageText still could be localized, need to consider how to do that best.
 function loadText(pageText: string): string {
-  return localStorage.languageOption === "hebrew"
+  return isSiteLanguageHebrew()
     ? `לטעון ${pageText.replace(/_/g, " ")}`
     : `Load ${pageText.replace(/_/g, " ")}`;
 }

@@ -9,6 +9,7 @@ import {postCorrection} from "./corrections";
 import {useHtmlRef} from "./hooks";
 import {flatten} from "../sefariaTextType";
 import componentHandler from "./componentHandler";
+import {hideGemaraTranslationByDefaultPreference} from "./settings";
 
 const {
   useEffect,
@@ -48,7 +49,7 @@ function InternalTableRow({
 
   const expandableTranslations = (
     context.translationOption() === "both"
-      && localStorage.hideGemaraTranslationByDefault === "true"
+      && hideGemaraTranslationByDefaultPreference.get() === "true"
       && commentaryKind.englishName === "Translation");
 
   const classes = extraClasses || [];

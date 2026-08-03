@@ -5,6 +5,7 @@ import {Book, Category, browseIndex} from "./BrowseIndex";
 import {FontCache} from "./FontCache";
 import {useIncrementer} from "./hooks";
 import {Preferences, LanguageChooser} from "./Preferences";
+import {isSiteLanguageHebrew} from "./settings";
 
 new FontCache().loadAll();
 
@@ -37,7 +38,7 @@ function withGradient<T>(endRgb: Color, items: T[]): [T, string][] {
 }
 
 function BackButton({onClick}: {onClick: () => void}): React.ReactElement {
-  const useHebrew = localStorage.languageOption === "hebrew";
+  const useHebrew = isSiteLanguageHebrew();
   const style: any = {
     position: "fixed",
     top: useHebrew ? "10px" : "50px",
@@ -93,7 +94,7 @@ function isCategory(x: Book | Category): x is Category {
 }
 
 function Grid(): React.ReactElement {
-  const useHebrew = localStorage.languageOption === "hebrew";
+  const useHebrew = isSiteLanguageHebrew();
   const rerender = useIncrementer()[1];
   const items = [];
   const extension = window.location.pathname.slice("/browse".length).slice(1).replace(/_/g, " ");
