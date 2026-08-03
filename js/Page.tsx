@@ -28,6 +28,67 @@ interface Props {
   lastRemovable: boolean;
 }
 
+export interface SectionGroup {
+  sections: UiSegment[];
+  /** Index of `sections[0]` within the array `groupSections` was called with. */
+  startIndex: number;
+  separatorBefore: boolean;
+  separatorAfter: boolean;
+}
+
+interface GroupingOptions {
+  compactLayout: boolean;
+  /** `expandMergedRef`: which uuids the user has manually expanded out of their merged run. */
+  expandedUuids: Record<string, boolean | undefined>;
+}
+
+/**
+ * Merges adjacent sections into the runs `Page` displays as one `Segment` each (testability
+ * suggestion #5 in FrontendTestabilitySuggestions.md), returning plain data rather than JSX so
+ * this — the highest-branching logic in the render tree — can be tested directly rather than
+ * only by rendering and reading the DOM back.
+ */
+export function groupSections(
+  sections: UiSegment[],
+  {compactLayout, expandedUuids}: GroupingOptions,
+): SectionGroup[] {
+  const groups: SectionGroup[] = [];
+  for (let i = 0; i < sections.length; i++) {
+    const startIndex = i;
+    const section = sections[i];
+
+    const separatorBefore = i !== 0 && !!(
+      section.steinsaltz_start_of_sugya
+        || section.hadran
+        || section.ref === "Hadran 1");
+
+    const mergedSections = [section];
+    while (i < sections.length) {
+      const currentSection = sections[i];
+      const nextSection = sections[i + 1];
+      if (currentSection.lastSegmentOfSection) break;
+      if (!currentSection.defaultMergeWithNext && !compactLayout) break;
+      if (expandedUuids[currentSection.uuid]) break;
+      if (nextSection && (
+        expandedUuids[nextSection.uuid]
+          || nextSection.steinsaltz_start_of_sugya
+          || nextSection.hadran
+          || nextSection.ref.startsWith("Hadran "))) {
+        break;
+      }
+      i++;
+      if (i === sections.length) break;
+      mergedSections.push(nextSection);
+    }
+
+    const separatorAfter = (
+      i < sections.length - 1 && !!mergedSections.at(-1)!.lastSegmentOfSection);
+
+    groups.push({sections: mergedSections, startIndex, separatorBefore, separatorAfter});
+  }
+  return groups;
+}
+
 export function Page({
   amudData, navigationExtension, firstRemovable, lastRemovable,
 }: Props): React.ReactElement {
@@ -95,55 +156,34 @@ export function Page({
   if (showing) {
     const ignoredRefs = new Set(context.ignoredSectionRefs(amudData.id));
     const sections = amudData.sections.filter(x => !ignoredRefs.has(x.ref));
-    for (let i = 0; i < sections.length; i++) {
-      const section = sections[i];
+    const groups = groupSections(sections, {
+      compactLayout: context.compactLayout(),
+      expandedUuids: expandMergedRef,
+    });
 
-      const makeSeparator = () => <br key={`separator-${i}`} className="section-separator" />;
-      if (i !== 0 && (
-        section.steinsaltz_start_of_sugya
-          || section.hadran
-          || section.ref === "Hadran 1")) {
-        output.push(makeSeparator());
-      }
+    const toggleMerging = (uuid: string) => {
+      const newExpandMergedRef = {...expandMergedRef};
+      newExpandMergedRef[uuid] = !expandMergedRef[uuid];
+      setExpandMergedRef(newExpandMergedRef);
+      setLastUnexpandedUuid(newExpandMergedRef[uuid] ? undefined : uuid);
+    };
 
-      const sectionLabel = `${amudData.id}_section_${i + 1}`;
-      const mergedSections = [section];
-      while (i < sections.length) {
-        const currentSection = sections[i];
-        const nextSection = sections[i + 1];
-        if (currentSection.lastSegmentOfSection) break;
-        if (!currentSection.defaultMergeWithNext && !context.compactLayout()) break;
-        if (expandMergedRef[currentSection.uuid]) break;
-        if (nextSection && (
-          expandMergedRef[nextSection.uuid]
-            || nextSection.steinsaltz_start_of_sugya
-            || nextSection.hadran
-            || nextSection.ref.startsWith("Hadran "))) {
-          break;
-        }
-        i++;
-        if (i === sections.length) {
-          break;
-        }
-        mergedSections.push(nextSection);
+    for (const group of groups) {
+      const endIndex = group.startIndex + group.sections.length - 1;
+      if (group.separatorBefore) {
+        output.push(<br key={`separator-${group.startIndex}`} className="section-separator" />);
       }
-      const toggleMerging = (uuid: string) => {
-        const newExpandMergedRef = {...expandMergedRef};
-        newExpandMergedRef[uuid] = !expandMergedRef[uuid];
-        setExpandMergedRef(newExpandMergedRef);
-        setLastUnexpandedUuid(newExpandMergedRef[uuid] ? undefined : uuid);
-      };
       output.push(
         <Segment
-          key={mergedSections[0].uuid + "+" + (mergedSections.length - 1)}
-          segments={mergedSections}
-          segmentLabel={sectionLabel}
+          key={group.sections[0].uuid + "+" + (group.sections.length - 1)}
+          segments={group.sections}
+          segmentLabel={`${amudData.id}_section_${group.startIndex + 1}`}
           toggleMerging={toggleMerging}
-          isExpanded={!!expandMergedRef[mergedSections[0].uuid]}
+          isExpanded={!!expandMergedRef[group.sections[0].uuid]}
           lastUnexpandedUuid={lastUnexpandedUuid}
           />);
-      if (i < sections.length - 1 && mergedSections.at(-1)!.lastSegmentOfSection) {
-        output.push(makeSeparator());
+      if (group.separatorAfter) {
+        output.push(<br key={`separator-${endIndex}`} className="section-separator" />);
       }
     }
   }
