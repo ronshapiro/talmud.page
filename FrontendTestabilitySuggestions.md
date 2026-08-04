@@ -165,15 +165,18 @@ folded in here.
 Unlocked: `Page_groupSections.test.ts`, exhaustive table-driven tests of merging, hadran/sugya
 separators, and the expand/collapse interaction, all without mounting anything.
 
-## 6. `Renderer._applyClientSideDataTransformations` mutates its input
+## 6. `Renderer._applyClientSideDataTransformations` mutates its input — done
 
-It rewrites `amudData` in place, and is called on every `getAmudim()` — i.e. on every render.
-Its correctness depends on being idempotent, and the `steinsaltzRetained` /
-`continuallyRewriteSteinsaltzEnglish` flags exist purely to survive re-entry (see the comment at
-`js/Renderer.tsx:200`). This is testable as-is (and is being tested), but a pure
-`transform(page) → page` would make the idempotency contract enforceable rather than implied.
+`transformAmudData(page, options) → page` in `js/Renderer.tsx` is now the pure core; the class
+method is a thin wrapper that writes the result back onto its argument, so `getAmudim()`'s
+mutate-in-place calling convention (and its reliance on uuids/flags persisting across renders)
+is unchanged. Clones via `structuredClone`, not `JSON.parse(JSON.stringify())`: a section's
+`highlightColors` is a `Set`, which JSON silently drops. jest's jsdom environment has no global
+`structuredClone`, and `v8.serialize`/`deserialize` reconstructs `Set`/`Map` in the wrong realm
+(fails `instanceof`) — `jest_setup_page.js` now polyfills it manually.
 
-Unlocks: nothing new for tests; reduces the chance the implied contract silently breaks.
+New tests (`Renderer_transformAmudData.test.ts`): the input isn't mutated, `highlightColors`
+survives the clone, and calling it twice in a row is idempotent.
 
 ## 7. Implicit globals should be injected or guarded
 

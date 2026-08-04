@@ -104,6 +104,111 @@ function indexCommentaryTypesByClassName(
   return result;
 }
 
+export interface AmudDataTransformOptions {
+  preferredVersion: string | undefined;
+  translationOption: string;
+  isTalmud: boolean | undefined;
+}
+
+/**
+ * Rewrites section uuids, promotes replaceable AI comments, swaps in a preferred version, and (in
+ * "both" translation mode) folds Steinsaltz into a synthetic Translation commentary. Returns a
+ * new page rather than mutating its input, so repeated calls are safe to reason about directly
+ * instead of relying on steinsaltzRetained/continuallyRewriteSteinsaltzEnglish surviving re-entry
+ * by convention alone.
+ *
+ * Clones via structuredClone rather than JSON round-tripping: sections can carry a
+ * `highlightColors` Set (see addDriveComments.ts), which JSON.stringify silently drops.
+ */
+export function transformAmudData(
+  page: UiPage,
+  {preferredVersion, translationOption, isTalmud}: AmudDataTransformOptions,
+): UiPage {
+  const amudData: UiPage = structuredClone(page);
+  if (!amudData.sections) {
+    amudData.sections = [];
+  }
+
+  for (const section of amudData.sections) {
+    if (!section.uuid) {
+      section.uuid = newUuid();
+      section.sourceRef = "default";
+      section.sourceHeRef = "ברירת מחדל";
+    }
+  }
+
+  promoteReplaceableAiComments(amudData);
+
+  if (amudData.sections.length > 0
+      && preferredVersion
+      && preferredVersion !== amudData.sections[0].sourceRef) {
+    for (const segment of amudData.sections) {
+      if (segment.commentary?.Versions?.comments) {
+        const newVersionComments = [];
+        for (const versionComment of segment.commentary.Versions.comments) {
+          if (versionComment.sourceRef === preferredVersion) {
+            newVersionComments.push({
+              sourceRef: segment.sourceRef!,
+              sourceHeRef: segment.sourceHeRef!,
+              ref: versionComment.ref,
+              en: segment.en,
+              he: segment.he,
+            });
+            segment.he = versionComment.he;
+            segment.en = versionComment.en;
+            segment.sourceRef = versionComment.sourceRef;
+            segment.sourceHeRef = versionComment.sourceHeRef;
+          } else {
+            newVersionComments.push(versionComment);
+          }
+        }
+        segment.commentary.Versions.comments = newVersionComments;
+      }
+    }
+  }
+
+  // TODO: this logic is not dynamic, and therefore can result in some weird states when settings
+  // are changed for already-viewed translations. It may be best to just inline this logic to the
+  // UI code instead of modifying the data.
+  if (translationOption !== "both") {
+    return amudData;
+  }
+
+  for (const section of amudData.sections) {
+    const commentaries = section.commentary;
+    // Reminder: Hadran sections have no steinsaltz
+    if (commentaries?.Steinsaltz) {
+      section.steinsaltzRetained = true;
+      section.continuallyRewriteSteinsaltzEnglish = isEmptyText(
+        commentaries.Steinsaltz.comments[0].en);
+      commentaries.Translation = commentaries.Steinsaltz;
+      delete commentaries.Steinsaltz;
+    } else if (section.steinsaltzRetained) {
+      // rewriting is deferred here since on successive calls to this method, the
+      // commentaries.Steinsaltz property may be already deleted, but we still want to persist the
+      // rewriting, i.e. for text highlighting. This is because the highlighting will occur on
+      // section.en since that is the "true"/source value. But we mangle it and render it
+      // elsewhere, so we must continually rewrite.
+      if (section.continuallyRewriteSteinsaltzEnglish) {
+        commentaries!.Translation.comments[0].en = section.en;
+      }
+    } else if (section.ref.indexOf("Hadran ") === 0 || !isTalmud) {
+      if (!section.commentary) section.commentary = {};
+      section.commentary.Translation = {
+        comments: [{
+          ref: section.ref,
+          en: section.en,
+          he: "",
+          sourceRef: "",
+          sourceHeRef: "",
+        }],
+      };
+    }
+  }
+
+  return amudData;
+}
+
 class FakeRef<T> {
   current: T = undefined as any;
 }
@@ -147,87 +252,11 @@ export abstract class Renderer {
   }
 
   _applyClientSideDataTransformations(amudData: UiPage): void {
-    if (!amudData.sections) {
-      amudData.sections = [];
-    }
-
-    for (const section of amudData.sections) {
-      if (!section.uuid) {
-        section.uuid = newUuid();
-        section.sourceRef = "default";
-        section.sourceHeRef = "ברירת מחדל";
-      }
-    }
-
-    promoteReplaceableAiComments(amudData);
-
-    const preferredVersion = preferredVersionPreference(this.rendererType()).get();
-    if (amudData.sections.length > 0
-        && preferredVersion
-        && preferredVersion !== amudData.sections[0].sourceRef) {
-      for (const segment of amudData.sections) {
-        if (segment.commentary?.Versions?.comments) {
-          const newVersionComments = [];
-          for (const versionComment of segment.commentary.Versions.comments) {
-            if (versionComment.sourceRef === preferredVersion) {
-              newVersionComments.push({
-                sourceRef: segment.sourceRef!,
-                sourceHeRef: segment.sourceHeRef!,
-                ref: versionComment.ref,
-                en: segment.en,
-                he: segment.he,
-              });
-              segment.he = versionComment.he;
-              segment.en = versionComment.en;
-              segment.sourceRef = versionComment.sourceRef;
-              segment.sourceHeRef = versionComment.sourceHeRef;
-            } else {
-              newVersionComments.push(versionComment);
-            }
-          }
-          segment.commentary.Versions.comments = newVersionComments;
-        }
-      }
-    }
-
-    // TODO: this logic is not dynamic, and therefore can result in some weird states when settings
-    // are changed for already-viewed translations. It may be best to just inline this logic to the
-    // UI code instead of modifying the data.
-    if (this.translationOption() !== "both") {
-      return;
-    }
-
-    for (const section of amudData.sections) {
-      const commentaries = section.commentary;
-      // Reminder: Hadran sections have no steinsaltz
-      if (commentaries?.Steinsaltz) {
-        section.steinsaltzRetained = true;
-        section.continuallyRewriteSteinsaltzEnglish = isEmptyText(
-          commentaries.Steinsaltz.comments[0].en);
-        commentaries.Translation = commentaries.Steinsaltz;
-        delete commentaries.Steinsaltz;
-      } else if (section.steinsaltzRetained) {
-        // rewriting is deferred here since on successive calls to this method, the
-        // commentaries.Steinsaltz property may be already deleted, but we still want to persist the
-        // rewriting, i.e. for text highlighting. This is because the highlighting will occur on
-        // section.en since that is the "true"/source value. But we mangle it and render it
-        // elsewhere, so we must continually rewrite.
-        if (section.continuallyRewriteSteinsaltzEnglish) {
-          commentaries!.Translation.comments[0].en = section.en;
-        }
-      } else if (section.ref.indexOf("Hadran ") === 0 || !this.isTalmud) {
-        if (!section.commentary) section.commentary = {};
-        section.commentary.Translation = {
-          comments: [{
-            ref: section.ref,
-            en: section.en,
-            he: "",
-            sourceRef: "",
-            sourceHeRef: "",
-          }],
-        };
-      }
-    }
+    Object.assign(amudData, transformAmudData(amudData, {
+      preferredVersion: preferredVersionPreference(this.rendererType()).get(),
+      translationOption: this.translationOption(),
+      isTalmud: this.isTalmud,
+    }));
   }
 
   ignoredSectionRefs(_id: string): string[] {

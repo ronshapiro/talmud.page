@@ -49,3 +49,36 @@ if (!("indexedDB" in window)) {
     }),
   };
 }
+
+// jest's jsdom environment doesn't provide the global structuredClone real browsers have (used by
+// Renderer.tsx's transformAmudData). Node's own v8.serialize/deserialize reconstructs objects
+// using the outer process's Set/Map, not this per-test-file sandbox's -- Set instances would come
+// back failing `instanceof Set` here -- so this clones manually instead.
+function polyfillStructuredClone(value, seen = new Map()) {
+  if (value === null || typeof value !== "object") return value;
+  if (seen.has(value)) return seen.get(value);
+  if (value instanceof Date) return new Date(value.getTime());
+  if (value instanceof Set) {
+    const clone = new Set();
+    seen.set(value, clone);
+    for (const item of value) clone.add(polyfillStructuredClone(item, seen));
+    return clone;
+  }
+  if (value instanceof Map) {
+    const clone = new Map();
+    seen.set(value, clone);
+    for (const [key, item] of value) {
+      clone.set(polyfillStructuredClone(key, seen), polyfillStructuredClone(item, seen));
+    }
+    return clone;
+  }
+  const clone = Array.isArray(value) ? [] : {};
+  seen.set(value, clone);
+  for (const key of Object.keys(value)) {
+    clone[key] = polyfillStructuredClone(value[key], seen);
+  }
+  return clone;
+}
+if (typeof structuredClone === "undefined") {
+  global.structuredClone = polyfillStructuredClone;
+}
