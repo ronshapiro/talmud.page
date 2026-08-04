@@ -210,4 +210,12 @@ describe("useUpdateDisplayTheme", () => {
       expect((document.getElementById(id) as HTMLMetaElement).content).toBe(computed);
     }
   });
+
+  test("does not throw when the stylesheet/meta nodes are missing", () => {
+    for (const id of ["darkModeCss", "grayModeCss", "theme-color", "theme-color-dark-mode"]) {
+      document.getElementById(id)?.remove();
+    }
+
+    expect(() => renderTheme()).not.toThrow();
+  });
 });

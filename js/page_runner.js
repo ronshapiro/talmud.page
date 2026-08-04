@@ -1,6 +1,6 @@
-/* global gtag,  */
 import {once} from "underscore";
 import {ApiCache} from "./ApiCache.ts";
+import {trackEvent} from "./analytics.ts";
 import {FontCache} from "./FontCache.ts";
 import {mainCache} from "./caches.ts";
 import {$} from "./jquery";
@@ -169,7 +169,7 @@ export class Runner {
         this.renderer.setAmud(results);
         refreshPageState();
         if (options.callback) options.callback();
-        gtag("event", "section_loaded", {section});
+        trackEvent("event", "section_loaded", {section});
       });
     });
     if (options.newUrl) {
@@ -207,7 +207,7 @@ export class Runner {
       callback: () => this.preloadNextSection(),
     });
 
-    gtag("event", "load_section", {
+    trackEvent("event", "load_section", {
       direction: "next",
       section: nextSection,
     });
@@ -232,7 +232,7 @@ export class Runner {
       },
     });
 
-    gtag("event", "load_section", {
+    trackEvent("event", "load_section", {
       direction: "previous",
       section: previousSection,
     });
@@ -266,7 +266,7 @@ export class Runner {
       serviceWorkerMain();
 
       const metadata = amudMetadata();
-      gtag("set", {section: metadata.masechet});
+      trackEvent("set", {section: metadata.masechet});
 
       const amudRange = metadata.range();
 

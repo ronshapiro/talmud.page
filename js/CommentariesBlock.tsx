@@ -1,9 +1,9 @@
-/* global gtag */
 /* eslint-disable react/jsx-max-props-per-line */
 import * as React from "react";
 import * as PropTypes from 'prop-types';
 import {IndividualComment} from "./IndividualComment";
 import TableRow from "./TableRow";
+import {trackEvent} from "./analytics";
 import {useConfiguration} from "./context";
 import {ApiComment, Commentary} from "../apiTypes";
 import {CommentaryType} from "../commentaries";
@@ -285,7 +285,7 @@ export function CommentariesBlock({
         return;
       }
       const newValue = toggleShowing(segmentLabel, commentaryKind.className);
-      gtag("event", newValue ? "commentary_viewed" : "commentary_hidden", {
+      trackEvent("event", newValue ? "commentary_viewed" : "commentary_hidden", {
         commentary: commentaryKind.englishName,
         section: segmentLabel,
       });

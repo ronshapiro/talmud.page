@@ -175,15 +175,18 @@ Its correctness depends on being idempotent, and the `steinsaltzRetained` /
 
 Unlocks: nothing new for tests; reduces the chance the implied contract silently breaks.
 
-## 7. Implicit globals should be injected or guarded
+## 7. Implicit globals should be injected or guarded — done
 
-`gtag` (`js/CommentariesBlock.tsx:283`) and `componentHandler` are bare globals; the theme code
-(`js/hooks.ts:18`) hard-requires four DOM nodes to exist and throws if they don't. Tests must
-install all of these. A no-op fallback (`window.gtag ?? (() => {})`) or a thin injected
-`analytics` module would remove the need, and would also make the app resilient when an ad
-blocker eats the gtag script — which is a real production condition today.
+`js/analytics.ts`'s `trackEvent` wraps `gtag`, guarding against it being undefined (ad blocker);
+all 11 call sites now go through it. `componentHandler.ts`'s default export previously called the
+bare global directly — unlike its named exports, which already retried until MDL loaded — so it
+was one inconsistency away from throwing in production if `Root`/`IndividualComment`/`Modal` ran
+before the MDL script did; it now delegates to the same guarded named exports. `useUpdateDisplayTheme`
+no longer throws if any of its four DOM nodes are missing, just skips that one.
 
-Unlocks: leaf-component tests without a full page environment.
+New tests: `analytics.test.ts`, `componentHandler.test.ts`, and one more case in
+`hooks.test.tsx`'s `useUpdateDisplayTheme` suite — each pinning the "doesn't throw, degrades
+gracefully" behavior directly, without installing the full page environment.
 
 ## 8. `HiddenHost` couples measurement to a duplicate render
 
