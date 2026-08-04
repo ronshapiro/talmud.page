@@ -136,17 +136,34 @@ inline version never surfaced — a zero hebrew height produced `shouldWrap: tru
 hebrew to wrap the english around when the hebrew cell has no height. Fixed in `decideWrapping`
 and pinned by a test for that exact case.
 
-## 5. The section-merging loop in `Page` wants to be a function
+## 5. The section-merging loop in `Page` wants to be a function — done
 
-`Page` (`js/Page.tsx:97`) contains a ~50 line loop that mutates the loop variable `i` from inside
-a nested `while`, consults `context.compactLayout()`, `expandMergedRef`, hadran/sugya markers,
-and emits separators. It is the highest-branching logic in the render tree and can only be tested
-today by rendering and reading the DOM back.
+`Page` contained a ~50 line loop that mutated the loop variable `i` from inside a nested `while`,
+consulted `context.compactLayout()`, `expandMergedRef`, hadran/sugya markers, and emitted
+separators. It was the highest-branching logic in the render tree and could only be tested by
+rendering and reading the DOM back.
 
-Suggested shape: `groupSections(sections, {compactLayout, expandedUuids}) → SectionGroup[]`
-returning plain data (groups + separator positions), with `Page` mapping it to JSX.
+`groupSections(sections, {compactLayout, expandedUuids}) → SectionGroup[]` is now a pure function
+in `js/Page.tsx`, returning plain data (`{sections, startIndex, separatorBefore,
+separatorAfter}[]`) with `Page` mapping it to JSX (`Segment`s and `<br>` separators). `startIndex`
+-- the merged group's position in the array `groupSections` was called with -- is included because
+`Page` needs it for both the segment label (`${amudData.id}_section_${startIndex + 1}`) and, on
+the last merged section, the `<br>` key; keeping it as returned data rather than recomputed avoids
+`Page` having to re-derive an index that already fell out of the merging itself. Same merging
+rules as before, no behavior change; `Page.test.tsx`'s "segment merging"/"separators"/"segment
+labels" suites cover it unchanged, since they read the DOM and don't know `groupSections` exists.
 
-Unlocks: exhaustive table-driven tests of merging, which is where merged-segment bugs live.
+One thing this made visible without changing: `Page`'s separator `<br>` keys were built from
+whatever the shared loop variable `i` happened to be at each of the two call sites (before the
+merge, and after it), which are the same number whenever a run merges exactly one section. A
+section that is simultaneously a sugya/hadran start *and* marked `lastSegmentOfSection` would hit
+both separator branches with an identical index and produce two `<br>` elements with the same
+React key. `groupSections`' `separatorBefore`/`separatorAfter`/`startIndex` reproduce this
+faithfully rather than incidentally fixing it — worth a look independently of this suggestion, not
+folded in here.
+
+Unlocked: `Page_groupSections.test.ts`, exhaustive table-driven tests of merging, hadran/sugya
+separators, and the expand/collapse interaction, all without mounting anything.
 
 ## 6. `Renderer._applyClientSideDataTransformations` mutates its input
 
