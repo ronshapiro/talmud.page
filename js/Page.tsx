@@ -43,10 +43,9 @@ interface GroupingOptions {
 }
 
 /**
- * Merges adjacent sections into the runs `Page` displays as one `Segment` each (testability
- * suggestion #5 in FrontendTestabilitySuggestions.md), returning plain data rather than JSX so
- * this — the highest-branching logic in the render tree — can be tested directly rather than
- * only by rendering and reading the DOM back.
+ * Merges adjacent sections into the runs `Page` displays as one `Segment` each, returning plain
+ * data rather than JSX so this — the highest-branching logic in the render tree — can be tested
+ * directly rather than only by rendering and reading the DOM back.
  */
 export function groupSections(
   sections: UiSegment[],

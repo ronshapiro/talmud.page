@@ -1,9 +1,8 @@
 /**
- * Table-driven tests for `groupSections`, the section-merging loop pulled out of `Page`
- * (testability suggestion #5 in FrontendTestabilitySuggestions.md). This is the highest-branching
- * logic in the render tree, and merged-segment bugs live here — these tests exercise it directly
- * with plain data rather than only through rendering and reading the DOM back (as
- * `Page.test.tsx`'s "segment merging"/"separators" suites already do, and continue to).
+ * Table-driven tests for `groupSections`, the section-merging loop pulled out of `Page`. This is
+ * the highest-branching logic in the render tree, and merged-segment bugs live here — these tests
+ * exercise it directly with plain data rather than only through rendering and reading the DOM
+ * back (as `Page.test.tsx`'s "segment merging"/"separators" suites already do, and continue to).
  */
 import {groupSections} from "../Page";
 import {resetFixtureCounter, segment} from "./testing/fixtures";
