@@ -1,5 +1,5 @@
-/* global gtag */
 import {sendEvent} from "./event";
+import {trackEvent} from "./analytics";
 import {$} from "./jquery";
 import {LocalStorageInt} from "./localStorage";
 import PREFERENCES_PAGE_VERSION from "./preferences_version";
@@ -219,7 +219,7 @@ class Snackbar {
   dismissButtonImpl() {
     const {prefix} = this.kind;
     if (prefix) {
-      gtag("event", `snackbar.${prefix}.dismissed`);
+      trackEvent("event", `snackbar.${prefix}.dismissed`);
       localStorage[this.kind.dismissedString()] = true;
     }
     this.hide();
@@ -284,7 +284,7 @@ $(document).ready(() => {
       {
         text: useHebrew ? "הגדרות" : "Preferences",
         onClick: () => {
-          gtag("event", "snackbar.preferencesPage.clicked");
+          trackEvent("event", "snackbar.preferencesPage.clicked");
           (window as any).showPreferences();
         },
       },

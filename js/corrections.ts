@@ -1,4 +1,5 @@
 import {CorrectionPostData} from "../correctionTypes";
+import {trackEvent} from "./analytics";
 import {driveClient} from "./google_drive/singleton";
 import {postWithRetry} from "./post";
 import {timeoutPromise} from "./promises";
@@ -19,7 +20,7 @@ export function postCorrection(data: Omit<CorrectionPostData, "user">): Promise<
     user: driveClient.gapi.getSignedInUserEmail(),
   });
 
-  promise.then(() => gtag("event", "report_correction", {ref}));
+  promise.then(() => trackEvent("event", "report_correction", {ref}));
   promise
     .then(() => timeoutPromise(2000))
     .then(() => snackbars.reportedIssueSent.hide());

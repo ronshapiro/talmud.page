@@ -21,10 +21,10 @@ export function useUpdateDisplayTheme(): void {
     const customTheme = isCustomTheme(darkMode) ? getCustomTheme(darkMode) : undefined;
     const baseTheme = customTheme ? customTheme.baseTheme : darkMode;
 
-    (document.getElementById("darkModeCss") as HTMLLinkElement).disabled = (
-      baseTheme !== "true");
-    (document.getElementById("grayModeCss") as HTMLLinkElement).disabled = (
-      baseTheme !== "gray");
+    const darkModeCss = document.getElementById("darkModeCss") as HTMLLinkElement | null;
+    if (darkModeCss) darkModeCss.disabled = baseTheme !== "true";
+    const grayModeCss = document.getElementById("grayModeCss") as HTMLLinkElement | null;
+    if (grayModeCss) grayModeCss.disabled = baseTheme !== "gray";
 
     const root = document.documentElement;
     // Always clear custom properties first to avoid "sticky" styles when switching
@@ -37,8 +37,10 @@ export function useUpdateDisplayTheme(): void {
     }
 
     for (const id of ["theme-color", "theme-color-dark-mode"]) {
-      (document.getElementById(id) as HTMLMetaElement).content = (
-        getComputedStyle(document.body).getPropertyValue('--background-color'));
+      const meta = document.getElementById(id) as HTMLMetaElement | null;
+      if (meta) {
+        meta.content = getComputedStyle(document.body).getPropertyValue('--background-color');
+      }
     }
   });
 }

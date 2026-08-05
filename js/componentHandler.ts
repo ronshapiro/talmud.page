@@ -21,13 +21,4 @@ export function upgradeAllRegistered(): void {
   }
 }
 
-// define a proxy since componentHandler is a defered load
-export default {
-  upgradeElement(el: HTMLElement): void {
-    return componentHandler.upgradeElement(el);
-  },
-
-  upgradeAllRegistered(): void {
-    componentHandler.upgradeAllRegistered();
-  },
-};
+export default {upgradeElement, upgradeAllRegistered};

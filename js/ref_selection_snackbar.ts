@@ -1,6 +1,6 @@
-/* global gtag,  */
 import {debounce} from "underscore";
 import {amudMetadata} from "./amud";
+import {trackEvent} from "./analytics";
 import {showCorrectionModal} from "./CorrectionModal";
 import {showCommentEditorModal} from "./CommentEditorModal";
 import {findNodeOffset} from "./dom";
@@ -136,7 +136,7 @@ function talmudPageLinkButton({ref, link}: Metadata): Button {
   return {
     text: '<i class="material-icons">open_in_browser</i>',
     onClick: () => {
-      gtag("event", "view_on_talmud_page", {ref});
+      trackEvent("event", "view_on_talmud_page", {ref});
       window.open(link + `?ref_link=${ref}`);
     },
   };
@@ -146,7 +146,7 @@ function viewOnSefariaButton(ref: string, sefariaUrl: string): Button {
   return {
     text: '<i class="material-icons">open_in_new</i>',
     onClick: () => {
-      gtag("event", "view_on_sefaria", {ref});
+      trackEvent("event", "view_on_sefaria", {ref});
       window.open(sefariaUrl);
     },
   };
@@ -209,7 +209,7 @@ function reportLoggedOutCorrection(
   return {
     text: REPORT_CORRECTION_HTML,
     onClick: () => {
-      gtag("event", "report_correction", {ref});
+      trackEvent("event", "report_correction", {ref});
       const subject = "Sefaria Text Correction from talmud.page";
       const bodyParts = [
         `${ref} (${sefariaUrl})`,
