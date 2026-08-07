@@ -642,6 +642,58 @@ if (fs.existsSync("mailjet_api_key")) {
   });
 }
 
+// Files a GitHub issue from RsiSuggestionBox.tsx, labeled "rsi-suggestion", read periodically by
+// a scheduled triage run (see RecursiveSelfImprovingAgentPlan.md). Requires GITHUB_ISSUE_TOKEN to
+// be set in the deployment environment (a GitHub token with `repo` scope) — never commit that
+// token to app.yaml or any other tracked file.
+app.post("/api/suggest-rsi-task", async (req, res) => {
+  const suggestion = (req.body?.suggestion as string | undefined)?.trim();
+  if (!suggestion) {
+    res.sendStatus(400);
+    return;
+  }
+
+  const token = process.env.GITHUB_ISSUE_TOKEN;
+  if (!token) {
+    console.error("GITHUB_ISSUE_TOKEN is not configured; dropping RSI suggestion", suggestion);
+    res.sendStatus(503);
+    return;
+  }
+
+  if (debug) {
+    // eslint-disable-next-line no-console
+    console.log("Not filing a GitHub issue in debug mode", suggestion);
+    res.status(200).send({});
+    return;
+  }
+
+  const title = suggestion.length > 80 ? `${suggestion.slice(0, 77)}...` : suggestion;
+  try {
+    const response = await fetch("https://api.github.com/repos/ronshapiro/talmud.page/issues", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${token}`,
+        Accept: "application/vnd.github+json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        title: `RSI task suggestion: ${title}`,
+        body: suggestion,
+        labels: ["rsi-suggestion"],
+      }),
+    });
+    if (!response.ok) {
+      console.error("Failed to file GitHub issue", response.status, await response.text());
+      res.sendStatus(502);
+      return;
+    }
+    res.status(200).send({});
+  } catch (e) {
+    console.error(e);
+    res.sendStatus(500);
+  }
+});
+
 if (debug) {
   app.post("/google-docs-record", (req, res) => {
     const dataDump = req.body;

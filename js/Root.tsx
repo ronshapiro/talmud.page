@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as PropTypes from 'prop-types';
 import {FeedbackView} from "./Feedback";
+import {RsiSuggestionBox} from "./RsiSuggestionBox";
 import {
   NextButton,
   PreviousButton,
@@ -83,6 +84,7 @@ export function Root({
         {amudim}
         <NextButton navigationExtension={navigationExtension} />
         <Preferences rerender={rerender} />
+        {!isFake && <RsiSuggestionBox />}
       </div>
       {!isFake && (
         <>
