@@ -25,10 +25,10 @@ confirmed — start with the CLI, since that's certain.
 Consequences of self-hosting instead of Managed Agents:
 
 - **Content that ships** stays git-committed, reviewed via PR — unchanged.
-- **Operational state** (dependency/staleness manifest, model-routing stats, context-usage logs,
-  staleness-detector calibration data) lives in git-tracked JSON/JSONL files (e.g. under a new
-  `precomputed/rsi_state/`), not a memory store. Diffable, and backed up simply by being
-  committed — a private repo is enough.
+- **Operational state** (dependency/staleness generation records, model-routing stats,
+  context-usage logs, staleness-detector calibration data) lives in git-tracked JSON/JSONL files
+  (e.g. under a new `precomputed/rsi_state/`), not a memory store. Diffable, and backed up simply
+  by being committed — a private repo is enough.
 - **Each task type is its own versioned config file** (model, effort, system prompt) rather than
   a Managed Agents `Agent` object — git history is the version/rollback mechanism, arguably more
   inspectable than an API-managed version.
@@ -56,7 +56,7 @@ accepted in exchange for staying on the existing subscription.
   comment kinds alongside the existing `"AI Edit"`, since most of them (tables, unit
   conversions) aren't a single-segment Hebrew/English replacement.
 - **Tier 2 — operational state**: git-tracked JSON/JSONL under `precomputed/rsi_state/`. Holds:
-  - a manifest per generated artifact: `{sourceRefs, sourceHash, model, promptVersion,
+  - a generation record per generated artifact: `{sourceRefs, sourceText, model, promptVersion,
     generatedAt, dependsOn[], confidence}`
   - staleness-detector calibration data (edit-distance ratios vs. agentic verdicts)
   - per-(task type, model) acceptance-rate / edit-distance-from-final stats
@@ -88,15 +88,16 @@ Generalizes two things that already exist: `isUniqueHebrew`/`normalizeHebrewForV
 - **Tier 2 — agentic classification (new, only for the ambiguous band)**: ratio between
   "clearly cosmetic" and "clearly rewritten" escalates to an actual Claude call — one of the
   task-type agents — that's shown the old text, the new text, and the dependent artifact, and
-  judges whether the artifact is still valid. Its verdict is logged to the memory store.
+  judges whether the artifact is still valid. Its verdict is logged alongside the generation
+  record so the thresholds below can be retuned from it later.
 - **Tier 3 — structural break**: above the upper threshold (or a segment-count change, cheaply
   detectable via `precomputed/segmentsPerPage.json` — exactly the "Rashi comment got split in
   two" case) → the artifact is suppressed and requeued for regeneration without asking.
 - **Self-tuning**: the logged Tier 2 verdicts are periodically reviewed to retune the Tier 1
   thresholds — literal recursive self-improvement of the staleness detector itself.
-- **Cascading invalidation**: each artifact's manifest entry declares `dependsOn`; a Tier 3 hit on
-  a ref walks the manifest for dependents and marks them stale too (this is how a segmentation-
-  boundary fix invalidates downstream Rashi translations).
+- **Cascading invalidation**: each artifact's generation record declares `dependsOn`; a Tier 3 hit
+  on a ref walks the generation records for dependents and marks them stale too (this is how a
+  segmentation-boundary fix invalidates downstream Rashi translations).
 
 ## Generation pipeline (fully agentic — no hand-crafted prompts)
 
@@ -152,7 +153,7 @@ halachic-conclusion summary (already covered by the linked explicit segments).
 
 1. **Foundations** — orchestrator scaffolding on a self-hosted always-on machine (headless
    `claude -p` invocation, cron/systemd scheduling, GitHub credentials for `gh pr create`), the
-   tiered staleness detector (Tiers 0–3), the manifest/dependency-graph schema in
+   tiered staleness detector (Tiers 0–3), the generation-record/dependency-graph schema in
    `precomputed/rsi_state/`, and the suggestion-box UI + GitHub-issue endpoint + triage-run
    skeleton.
 2. **Rewrite the generation pipeline** — retire the Gemini pipeline entirely; stand up the fully

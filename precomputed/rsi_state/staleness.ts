@@ -90,8 +90,8 @@ export function computeEditRatio(oldText: string, newText: string): number {
  * Tiers 0-1. Returns `needsClassification` (tier 2) for the ambiguous band rather than resolving
  * it — the caller decides whether/how to run the agentic classifier for that ref.
  *
- * `storedSourceText` is the raw source text captured in the artifact's manifest entry
- * (ManifestEntry.sourceText) at generation time.
+ * `storedSourceText` is the raw source text captured in the artifact's generation record
+ * (GenerationRecord.sourceText) at generation time.
  */
 export function checkTextStaleness(
   storedSourceText: string,
@@ -115,8 +115,9 @@ export function checkTextStaleness(
 /**
  * Resolves a tier-2 `needsClassification` result using a verdict obtained elsewhere (the
  * orchestrator's own agentic call). Log the (editRatio, verdict) pair the caller passes in
- * alongside this result to a manifest/stats file — that log is what lets the cosmeticMaxRatio /
- * structuralMinRatio thresholds be retuned later instead of staying hand-picked forever.
+ * alongside this result to a generation-record/stats file — that log is what lets the
+ * cosmeticMaxRatio / structuralMinRatio thresholds be retuned later instead of staying
+ * hand-picked forever.
  */
 export function resolveWithClassification(
   pending: StalenessResult,
