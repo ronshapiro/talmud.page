@@ -7,7 +7,7 @@ import {Edit} from "../precomputed/ai_edits";
 import {readGenerationRecord, upsertGenerationRecord} from "../precomputed/rsi_state/generation_record";
 import {checkTextStaleness, DEFAULT_STALENESS_THRESHOLDS} from "../precomputed/rsi_state/staleness";
 import {toFlatArray} from "../sefariaTextType";
-import {runHeadlessClaude} from "./headless_claude";
+import {HeadlessClaudeError, runHeadlessClaude} from "./headless_claude";
 
 /**
  * Translates and punctuates Rashi/Tosafot comments — the first task type on the new agentic
@@ -73,6 +73,8 @@ export async function generateWithSelfCritique(
 export interface TranslationDeps {
   listCandidates: () => TranslationCandidate[];
   isFresh: (candidate: TranslationCandidate) => boolean;
+  // May reject — translateRashiTosafotComments stops the whole run on a HeadlessClaudeError with
+  // isRateLimited, and skips just this candidate on any other error.
   generate: (candidate: TranslationCandidate) => Promise<GeneratedEdit | undefined>;
   writeEdit: (candidate: TranslationCandidate, edit: Edit) => void;
   recordGeneration: (candidate: TranslationCandidate, generated: GeneratedEdit) => void;
@@ -81,9 +83,22 @@ export interface TranslationDeps {
 export async function translateRashiTosafotComments(deps: TranslationDeps): Promise<void> {
   for (const candidate of deps.listCandidates()) {
     if (deps.isFresh(candidate)) continue;
-    // Deliberately sequential — see the same rationale in triage_suggestions.ts.
-    // eslint-disable-next-line no-await-in-loop
-    const generated = await deps.generate(candidate);
+    let generated;
+    try {
+      // Deliberately sequential — see the same rationale in triage_suggestions.ts.
+      // eslint-disable-next-line no-await-in-loop
+      generated = await deps.generate(candidate);
+    } catch (e) {
+      if (e instanceof HeadlessClaudeError && e.isRateLimited) {
+        // Every remaining candidate would fail against the same wall — stop the run rather than
+        // burn through it logging the identical failure. Subscription usage limits are the
+        // expected budget signal under self-hosted billing; see RecursiveSelfImprovingAgentPlan.md.
+        console.error(`Stopping: hit the usage limit (${e.message})`);
+        return;
+      }
+      console.error(`Skipping ${candidate.ref}: ${e}`);
+      continue;
+    }
     if (!generated) continue;
     deps.writeEdit(candidate, generated.edit);
     deps.recordGeneration(candidate, generated);

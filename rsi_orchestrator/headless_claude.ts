@@ -6,13 +6,21 @@ const execFileAsync = promisify(execFile);
 export interface HeadlessClaudeOptions {
   cwd?: string;
   timeoutMs?: number;
+  // Defaults to a safe read-only set — this task family only needs to read repo files, not run
+  // arbitrary commands or write anything. Without an explicit allow-list, headless calls have no
+  // way to approve tool use, so anything beyond the default-allowed tools gets silently denied
+  // and Claude wastes turns retrying workarounds instead of just reading the file.
+  allowedTools?: string[];
 }
+
+const DEFAULT_ALLOWED_TOOLS = ["Read", "Grep", "Glob"];
 
 export interface HeadlessClaudeResult {
   text: string;
-  // The canonical model ID that actually ran (e.g. "claude-sonnet-5"), read back from
-  // `--output-format json`'s modelUsage — undefined if the CLI didn't report one. Recording this
-  // per generated artifact is what Phase 4's model-routing learning reads later.
+  // The canonical model ID that actually did the substantive work (highest-cost entry in
+  // modelUsage — a session can involve more than one model, e.g. a cheap model for a small
+  // sub-step alongside the model that did the real generation). Recording this per generated
+  // artifact is what Phase 4's model-routing learning reads later.
   model: string | undefined;
   costUsd: number | undefined;
 }
@@ -20,11 +28,53 @@ export interface HeadlessClaudeResult {
 export type HeadlessClaudeRunner =
   (prompt: string, options?: HeadlessClaudeOptions) => Promise<HeadlessClaudeResult>;
 
+/** Thrown when the CLI itself reports an error (as opposed to a malformed-response parse error).
+ * `isRateLimited` distinguishes a usage/session-limit hit (429) — expected under subscription
+ * billing, and the caller should stop the run rather than keep retrying every remaining
+ * candidate against the same wall — from a genuine unexpected failure. */
+export class HeadlessClaudeError extends Error {
+  public readonly isRateLimited: boolean;
+
+  constructor(
+    message: string,
+    public readonly apiErrorStatus: number | undefined,
+  ) {
+    super(message);
+    this.name = "HeadlessClaudeError";
+    this.isRateLimited = apiErrorStatus === 429;
+  }
+}
+
 interface ClaudeCliJsonOutput {
   result: string;
   is_error: boolean; // eslint-disable-line camelcase
   total_cost_usd?: number; // eslint-disable-line camelcase
-  modelUsage?: Record<string, unknown>;
+  api_error_status?: number; // eslint-disable-line camelcase
+  modelUsage?: Record<string, {costUSD?: number}>;
+}
+
+export function primaryModel(modelUsage: ClaudeCliJsonOutput["modelUsage"]): string | undefined {
+  if (!modelUsage) return undefined;
+  const entries = Object.entries(modelUsage);
+  if (entries.length === 0) return undefined;
+  return entries.reduce((a, b) => ((b[1].costUSD ?? 0) > (a[1].costUSD ?? 0) ? b : a))[0];
+}
+
+/**
+ * The CLI often still writes valid JSON to stdout even when the process exits non-zero (e.g. a
+ * rate limit) — execFile treats that as a rejected promise carrying an error whose `.stdout`
+ * holds that JSON. Recover the structured error from it rather than surfacing a raw exec
+ * failure with no usable information.
+ */
+export function asCliError(error: unknown): HeadlessClaudeError | undefined {
+  const stdout = (error as {stdout?: string} | undefined)?.stdout;
+  if (!stdout) return undefined;
+  try {
+    const parsed = JSON.parse(stdout) as ClaudeCliJsonOutput;
+    return new HeadlessClaudeError(parsed.result, parsed.api_error_status);
+  } catch {
+    return undefined;
+  }
 }
 
 /**
@@ -37,22 +87,31 @@ interface ClaudeCliJsonOutput {
  * tests instead of depending on this one directly.
  */
 export const runHeadlessClaude: HeadlessClaudeRunner = async (prompt, options = {}) => {
-  const {stdout} = await execFileAsync(
-    "claude",
-    ["-p", prompt, "--output-format", "json"],
-    {
-      cwd: options.cwd,
-      timeout: options.timeoutMs,
-      maxBuffer: 1024 * 1024 * 32,
-    },
-  );
+  let stdout: string;
+  try {
+    ({stdout} = await execFileAsync(
+      "claude",
+      [
+        "-p", prompt,
+        "--output-format", "json",
+        "--allowedTools", (options.allowedTools ?? DEFAULT_ALLOWED_TOOLS).join(","),
+      ],
+      {
+        cwd: options.cwd,
+        timeout: options.timeoutMs,
+        maxBuffer: 1024 * 1024 * 32,
+      },
+    ));
+  } catch (e) {
+    throw asCliError(e) ?? e;
+  }
   const parsed = JSON.parse(stdout) as ClaudeCliJsonOutput;
   if (parsed.is_error) {
-    throw new Error(`Headless Claude call failed: ${parsed.result}`);
+    throw new HeadlessClaudeError(parsed.result, parsed.api_error_status);
   }
   return {
     text: parsed.result,
-    model: parsed.modelUsage ? Object.keys(parsed.modelUsage)[0] : undefined,
+    model: primaryModel(parsed.modelUsage),
     costUsd: parsed.total_cost_usd,
   };
 };

@@ -1,4 +1,5 @@
 import {Edit} from "../precomputed/ai_edits";
+import {HeadlessClaudeError} from "./headless_claude";
 import {
   CritiqueVerdict,
   GeneratedEdit,
@@ -122,6 +123,32 @@ describe("translateRashiTosafotComments", () => {
     }));
     expect(writeEdit).not.toHaveBeenCalled();
     expect(recordGeneration).not.toHaveBeenCalled();
+  });
+
+  test("stops the whole run when generate hits a rate limit, without writing", async () => {
+    const writeEdit = jest.fn();
+    const generate = jest.fn()
+      .mockRejectedValueOnce(new HeadlessClaudeError("You've hit your session limit", 429));
+    await translateRashiTosafotComments(fakeGenerationDeps({
+      listCandidates: () => [candidate({ref: "a"}), candidate({ref: "b"})],
+      generate,
+      writeEdit,
+    }));
+    expect(generate).toHaveBeenCalledTimes(1); // never reached candidate "b"
+    expect(writeEdit).not.toHaveBeenCalled();
+  });
+
+  test("skips a candidate on a non-rate-limit error and continues to the next", async () => {
+    const written: string[] = [];
+    await translateRashiTosafotComments(fakeGenerationDeps({
+      listCandidates: () => [candidate({ref: "a"}), candidate({ref: "b"})],
+      generate: async (c) => {
+        if (c.ref === "a") throw new Error("transient CLI failure");
+        return generated();
+      },
+      writeEdit: (c) => written.push(c.ref),
+    }));
+    expect(written).toEqual(["b"]);
   });
 
   test("processes multiple candidates independently", async () => {
