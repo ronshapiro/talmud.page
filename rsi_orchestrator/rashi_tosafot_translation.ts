@@ -1,9 +1,9 @@
 import * as fs from "fs";
 import {Amud, ApiComment} from "../apiTypes";
-import {Book, books} from "../books";
+import {Book} from "../books";
 import {cachedOutputFilePath} from "../cached_outputs";
 import {readUtf8} from "../files";
-import {Edit, writeAiEdit} from "../precomputed/ai_edits";
+import {Edit} from "../precomputed/ai_edits";
 import {readGenerationRecord, upsertGenerationRecord} from "../precomputed/rsi_state/generation_record";
 import {checkTextStaleness, DEFAULT_STALENESS_THRESHOLDS} from "../precomputed/rsi_state/staleness";
 import {toFlatArray} from "../sefariaTextType";
@@ -198,7 +198,7 @@ async function critiqueViaClaude(
   return parseJsonResponse<CritiqueVerdict>(result.text);
 }
 
-async function generateAndRecord(
+export async function generateAndRecord(
   candidate: TranslationCandidate,
 ): Promise<GeneratedEdit | undefined> {
   return generateWithSelfCritique(candidate, {
@@ -207,7 +207,7 @@ async function generateAndRecord(
   });
 }
 
-function recordGenerationForCandidate(
+export function recordGenerationForCandidate(
   candidate: TranslationCandidate, generated: GeneratedEdit,
 ): void {
   upsertGenerationRecord(TASK_TYPE, candidate.page, candidate.ref, {
@@ -217,33 +217,5 @@ function recordGenerationForCandidate(
     promptVersion: PROMPT_VERSION,
     generatedAt: new Date().toISOString(),
     dependsOn: [],
-  });
-}
-
-async function main(): Promise<void> {
-  const bookName = process.argv[2];
-  if (!bookName || !books.byCanonicalName[bookName]) {
-    console.error("Usage: ts-node rashi_tosafot_translation.ts <CanonicalBookName> [limit]");
-    process.exitCode = 1;
-    return;
-  }
-  const book = books.byCanonicalName[bookName];
-  const limit = process.argv[3] ? parseInt(process.argv[3], 10) : undefined;
-  await translateRashiTosafotComments({
-    listCandidates: () => {
-      const candidates = listCandidatesForBook(book);
-      return limit ? candidates.slice(0, limit) : candidates;
-    },
-    isFresh: isFreshTranslation,
-    generate: generateAndRecord,
-    writeEdit: (candidate, edit) => writeAiEdit(candidate.page, candidate.ref, edit),
-    recordGeneration: recordGenerationForCandidate,
-  });
-}
-
-if (require.main === module) {
-  main().catch(e => {
-    console.error(e);
-    process.exitCode = 1;
   });
 }

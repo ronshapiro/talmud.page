@@ -26,9 +26,11 @@ billing.
   boundaries live in the repo rather than pre-assembling context itself, so the model decides how
   much it needs to read — then runs a bounded self-critique pass (generate → critique → at most
   one retry with feedback → give up) before writing to `precomputed/ai_additions/<Book Page>.json`
-  and recording a generation record. Run with `npx ts-node rsi_orchestrator/rashi_tosafot_translation.ts <CanonicalBookName>`
-  (e.g. `Zevachim`) — requires `cached_outputs/api_request_handler/` to be populated for that book
-  first (`npx ts-node cache_all_api_requests.ts`).
+  and recording a generation record. Requires `cached_outputs/api_request_handler/` to be
+  populated for that book first (`npx ts-node cache_all_api_requests.ts`).
+- `rashi_tosafot_translation_cli.ts` — the CLI entrypoint for the above, kept in a separate file
+  because `yargs` is ESM-only and breaks under jest; the core module stays importable by its test
+  file this way. `--section`/`--limit` bound a run to one page / a handful of candidates.
 - `precomputed/rsi_state/triage_log.json` (created on first run) — tracks which issue numbers have
   already been triaged, so re-running doesn't re-comment on the same issue.
 
@@ -36,7 +38,7 @@ billing.
 
 ```sh
 npx ts-node rsi_orchestrator/triage_suggestions.ts
-npx ts-node rsi_orchestrator/rashi_tosafot_translation.ts Zevachim
+npx ts-node rsi_orchestrator/rashi_tosafot_translation_cli.ts Zevachim --section 2a --limit 2
 ```
 
 Requires the `gh` CLI authenticated with access to `ronshapiro/talmud.page` (already true on this
