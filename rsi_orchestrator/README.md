@@ -1,4 +1,4 @@
-# RSI orchestrator (Phase 1 scaffolding)
+# RSI orchestrator
 
 Self-hosted scripts for the recursive self-improving content agent — see
 `RecursiveSelfImprovingAgentPlan.md` at the repo root for the full plan. These run on this
@@ -8,24 +8,35 @@ billing.
 
 ## What's here today
 
-- `headless_claude.ts` — thin wrapper around `claude -p` (headless Claude Code). Exported as an
-  injectable function so callers can substitute a fake in tests.
+- `headless_claude.ts` — thin wrapper around `claude -p --output-format json` (headless Claude
+  Code). Exported as an injectable function so callers can substitute a fake in tests. Returns the
+  response text plus the canonical model ID and cost the CLI reports, so generation records can
+  capture what actually ran (needed for Phase 4's model-routing learning).
 - `triage_suggestions.ts` — reads open `rsi-suggestion`-labeled GitHub issues (filed via the
   suggestion box in the app UI), has Claude assess each one's feasibility against the current
   codebase, and posts that assessment as an issue comment. **It stops there** — it does not yet
-  scaffold a new task type or open a PR. That auto-implement step needs Phase 2's task-type config
-  format to exist first; building it now would have nothing real to scaffold against. Until then,
-  this gives you a triaged, annotated backlog to act on manually.
+  scaffold a new task type or open a PR. That auto-implement step needs a settled task-type config
+  format across more than one task type first; building it now would have nothing real to
+  scaffold against. Until then, this gives you a triaged, annotated backlog to act on manually.
+- `rashi_tosafot_translation.ts` — the first content-generation task type, replacing
+  `precomputed/sugya_prompt_client.ts` (Gemini-based; left in place, unused, not deleted). For a
+  given book, finds Rashi/Tosafot comments that are missing a translation or whose source text has
+  drifted (via `precomputed/rsi_state/staleness.ts` + `generation_record.ts`), and for each one:
+  asks Claude to punctuate and translate it — pointing at where the page's cached data and sugya
+  boundaries live in the repo rather than pre-assembling context itself, so the model decides how
+  much it needs to read — then runs a bounded self-critique pass (generate → critique → at most
+  one retry with feedback → give up) before writing to `precomputed/ai_additions/<Book Page>.json`
+  and recording a generation record. Run with `npx ts-node rsi_orchestrator/rashi_tosafot_translation.ts <CanonicalBookName>`
+  (e.g. `Zevachim`) — requires `cached_outputs/api_request_handler/` to be populated for that book
+  first (`npx ts-node cache_all_api_requests.ts`).
 - `precomputed/rsi_state/triage_log.json` (created on first run) — tracks which issue numbers have
   already been triaged, so re-running doesn't re-comment on the same issue.
-
-Not here yet: the actual content-generation task types (Phase 2), and anything that pushes a
-branch or opens a PR — those come once Phase 2 exists.
 
 ## Running manually
 
 ```sh
 npx ts-node rsi_orchestrator/triage_suggestions.ts
+npx ts-node rsi_orchestrator/rashi_tosafot_translation.ts Zevachim
 ```
 
 Requires the `gh` CLI authenticated with access to `ronshapiro/talmud.page` (already true on this
