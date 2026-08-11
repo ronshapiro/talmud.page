@@ -11,6 +11,7 @@ import {
   readGenerationRecordsForPage,
   upsertGenerationRecord,
 } from "../precomputed/rsi_state/generation_record";
+import {getTaskModelConfig} from "../precomputed/rsi_state/model_routing";
 import {buildPageSkeleton, formatPageSkeleton} from "../precomputed/rsi_state/page_skeleton";
 import {
   checkTextStaleness,
@@ -35,10 +36,10 @@ import {HeadlessClaudeError, runHeadlessClaude} from "./headless_claude";
 
 export const TASK_TYPE = "rashi_tosafot_translation";
 const PROMPT_VERSION = "v2";
-// Hardcoded for now — Phase 4's routing tuner is meant to replace this with a per-task-type value
-// chosen from logged outcomes, not this constant. See "Model routing" in
-// RecursiveSelfImprovingAgentPlan.md.
-const MODEL = "claude-sonnet-5";
+// Falls back to this only if precomputed/rsi_state/model_routing.json has no entry for this task
+// type. The routing tuner (Phase 4 — not built yet) is meant to propose changes to that file from
+// logged outcomes; this constant is just the safety-net default, not the source of truth.
+const DEFAULT_MODEL_CONFIG = {generateModel: "claude-sonnet-5", critiqueModel: "claude-sonnet-5"};
 // The only tool this task type's headless calls may use — see the module doc above. Scoped to
 // this exact command so it can't fall back to arbitrary Bash use.
 const CONTEXT_FETCH_ALLOWED_TOOLS = ["Bash(npx ts-node rsi_orchestrator/context_fetch_cli.ts *)"];
@@ -322,9 +323,10 @@ export function parseJsonResponse<T>(text: string): T {
 async function generateViaClaude(
   candidate: TranslationCandidate, priorFeedback?: string,
 ): Promise<GeneratedEdit> {
+  const modelConfig = getTaskModelConfig(TASK_TYPE, DEFAULT_MODEL_CONFIG);
   const result = await runHeadlessClaude(
     generationPrompt(candidate, priorFeedback),
-    {model: MODEL, allowedTools: CONTEXT_FETCH_ALLOWED_TOOLS});
+    {model: modelConfig.generateModel, allowedTools: CONTEXT_FETCH_ALLOWED_TOOLS});
   recordContextUsage({
     taskType: TASK_TYPE,
     ref: candidate.ref,
@@ -343,8 +345,10 @@ async function generateViaClaude(
 async function critiqueViaClaude(
   candidate: TranslationCandidate, edit: Edit,
 ): Promise<CritiqueOutcome> {
+  const modelConfig = getTaskModelConfig(TASK_TYPE, DEFAULT_MODEL_CONFIG);
   const result = await runHeadlessClaude(
-    critiquePrompt(candidate, edit), {model: MODEL, allowedTools: CONTEXT_FETCH_ALLOWED_TOOLS});
+    critiquePrompt(candidate, edit),
+    {model: modelConfig.critiqueModel, allowedTools: CONTEXT_FETCH_ALLOWED_TOOLS});
   recordContextUsage({
     taskType: TASK_TYPE,
     ref: candidate.ref,
