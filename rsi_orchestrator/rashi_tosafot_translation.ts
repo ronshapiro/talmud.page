@@ -5,7 +5,11 @@ import {cachedOutputFilePath} from "../cached_outputs";
 import {readUtf8} from "../files";
 import {Edit} from "../precomputed/ai_edits";
 import {readGenerationRecord, upsertGenerationRecord} from "../precomputed/rsi_state/generation_record";
-import {checkTextStaleness, DEFAULT_STALENESS_THRESHOLDS} from "../precomputed/rsi_state/staleness";
+import {
+  checkTextStaleness,
+  DEFAULT_STALENESS_THRESHOLDS,
+  StalenessStatus,
+} from "../precomputed/rsi_state/staleness";
 import {toFlatArray} from "../sefariaTextType";
 import {HeadlessClaudeError, runHeadlessClaude} from "./headless_claude";
 
@@ -141,7 +145,7 @@ export function isFreshTranslation(candidate: TranslationCandidate): boolean {
   if (!record) return false;
   const result = checkTextStaleness(
     record.sourceText, candidate.hebrewSource, DEFAULT_STALENESS_THRESHOLDS);
-  return result.status === "fresh";
+  return result.status === StalenessStatus.Fresh;
 }
 
 function generationPrompt(candidate: TranslationCandidate, priorFeedback?: string): string {
