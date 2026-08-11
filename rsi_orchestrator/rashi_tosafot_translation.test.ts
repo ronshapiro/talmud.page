@@ -28,6 +28,7 @@ function generated(overrides: Partial<GeneratedEdit> = {}): GeneratedEdit {
     edit: {hebrew: "מקור.", english: "source"},
     model: "claude-sonnet-5",
     costUsd: 0.01,
+    contextRefsUsed: [],
     ...overrides,
   };
 }
@@ -36,6 +37,7 @@ function outcome(overrides: Partial<CritiqueOutcome> = {}): CritiqueOutcome {
   return {
     verdict: {valid: true, reason: "looks good"},
     costUsd: 0.002,
+    contextRefsUsed: [],
     ...overrides,
   };
 }
@@ -74,6 +76,30 @@ describe("generateWithSelfCritique", () => {
     expect(result).toEqual(generated({costUsd: 0.024}));
     expect(generate).toHaveBeenCalledTimes(2);
     expect(generate.mock.calls[1]).toEqual([candidate(), invalidVerdict.reason]);
+  });
+
+  test("unions contextRefsUsed from the accepted generate and critique calls", async () => {
+    const generate = jest.fn(async () => generated({contextRefsUsed: ["Zevachim 2a:1"]}));
+    const critique = jest.fn(async () => outcome({
+      contextRefsUsed: ["Zevachim 2a:1", "Rashi on Zevachim 2a:1:2"],
+    }));
+    const result = await generateWithSelfCritique(candidate(), {generate, critique});
+    expect(result!.contextRefsUsed.sort()).toEqual(["Rashi on Zevachim 2a:1:2", "Zevachim 2a:1"]);
+  });
+
+  test("only counts the final accepted attempt's contextRefsUsed, not the rejected one's", async () => {
+    const generate = jest.fn<Promise<GeneratedEdit>, [TranslationCandidate, string?]>()
+      .mockResolvedValueOnce(generated({
+        edit: {hebrew: "wrong"}, contextRefsUsed: ["Zevachim 2a:99"],
+      }))
+      .mockResolvedValueOnce(generated({contextRefsUsed: ["Zevachim 2a:1"]}));
+    const critique = jest.fn<Promise<CritiqueOutcome>, [TranslationCandidate, Edit]>()
+      .mockResolvedValueOnce(outcome({verdict: invalidVerdict, contextRefsUsed: []}))
+      .mockResolvedValueOnce(outcome({contextRefsUsed: []}));
+
+    const result = await generateWithSelfCritique(candidate(), {generate, critique});
+
+    expect(result!.contextRefsUsed).toEqual(["Zevachim 2a:1"]);
   });
 
   test("gives up after a second failed critique, without a third attempt", async () => {

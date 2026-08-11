@@ -1,34 +1,47 @@
 import * as fs from "fs";
 import {Amud, ApiComment} from "../apiTypes";
-import {Book} from "../books";
+import {Book, books} from "../books";
 import {cachedOutputFilePath} from "../cached_outputs";
 import {readUtf8} from "../files";
-import {Edit} from "../precomputed/ai_edits";
+import {aiEditsForPage, Edit} from "../precomputed/ai_edits";
 import {recordContextUsage} from "../precomputed/rsi_state/context_usage_log";
-import {readGenerationRecord, upsertGenerationRecord} from "../precomputed/rsi_state/generation_record";
+import {
+  listPagesWithGenerationRecords,
+  readGenerationRecord,
+  readGenerationRecordsForPage,
+  upsertGenerationRecord,
+} from "../precomputed/rsi_state/generation_record";
+import {buildPageSkeleton, formatPageSkeleton} from "../precomputed/rsi_state/page_skeleton";
 import {
   checkTextStaleness,
   DEFAULT_STALENESS_THRESHOLDS,
   StalenessStatus,
 } from "../precomputed/rsi_state/staleness";
 import {toFlatArray} from "../sefariaTextType";
+import {extractRequestedRefs} from "./context_fetch";
 import {HeadlessClaudeError, runHeadlessClaude} from "./headless_claude";
 
 /**
  * Translates and punctuates Rashi/Tosafot comments — the first task type on the new agentic
  * pipeline, replacing precomputed/sugya_prompt_client.ts (Gemini-based, retired but left in place
- * unused). Unlike that pipeline, this one does not pre-assemble context (prior sugyot,
- * commentaries) itself — it points Claude at where that data lives in the repo and lets it decide
- * what to read, per RecursiveSelfImprovingAgentPlan.md's "goal and tools, not a scripted
- * context-assembly function."
+ * unused). The generation prompt inlines a compact page skeleton (page_skeleton.ts) plus 1-2
+ * worked examples of past accepted output, rather than pointing Claude at the page's full raw
+ * cached JSON — RSIAgentDesignRetrospective.md documented that "goal + raw filesystem access"
+ * led to real, expensive wandering (a single call reading unrelated books looking for calibration
+ * examples). `context_fetch_cli.ts` is the only tool available beyond the initial prompt, so any
+ * further context Claude decides it needs is ref-addressed and size-capped rather than open-ended
+ * file access.
  */
 
 export const TASK_TYPE = "rashi_tosafot_translation";
-const PROMPT_VERSION = "v1";
+const PROMPT_VERSION = "v2";
 // Hardcoded for now — Phase 4's routing tuner is meant to replace this with a per-task-type value
 // chosen from logged outcomes, not this constant. See "Model routing" in
 // RecursiveSelfImprovingAgentPlan.md.
 const MODEL = "claude-sonnet-5";
+// The only tool this task type's headless calls may use — see the module doc above. Scoped to
+// this exact command so it can't fall back to arbitrary Bash use.
+const CONTEXT_FETCH_ALLOWED_TOOLS = ["Bash(npx ts-node rsi_orchestrator/context_fetch_cli.ts *)"];
 const COMMENTATORS = ["Rashi", "Tosafot"] as const;
 type Commentator = typeof COMMENTATORS[number];
 
@@ -49,6 +62,11 @@ export interface CritiqueVerdict {
 export interface CritiqueOutcome {
   verdict: CritiqueVerdict;
   costUsd: number | undefined;
+  // Refs this call fetched via context_fetch_cli (see context_fetch.ts's extractRequestedRefs) —
+  // unioned with the accepted generate call's own contextRefsUsed to become the generation
+  // record's `dependsOn`, so cascading staleness invalidation covers everything the accepted
+  // edit's validity actually rested on, not just its primary source ref.
+  contextRefsUsed: string[];
 }
 
 /** The canonical model ID is threaded through so the generation record can capture what actually
@@ -60,6 +78,7 @@ export interface GeneratedEdit {
   // rejected attempts) before handing it to the caller, so the value callers actually see is the
   // full cost of producing the accepted edit, not just the last call.
   costUsd: number | undefined;
+  contextRefsUsed: string[];
 }
 
 export interface GenerationDeps {
@@ -92,7 +111,11 @@ export async function generateWithSelfCritique(
     console.error(`Giving up on ${candidate.ref}: ${outcome.verdict.reason}`);
     return undefined;
   }
-  return {...generated, costUsd: totalCost};
+  // Only the final, accepted generate+critique pair's context counts — a rejected first
+  // attempt's fetches didn't contribute to what actually shipped.
+  const contextRefsUsed = Array.from(
+    new Set([...generated.contextRefsUsed, ...outcome.contextRefsUsed]));
+  return {...generated, costUsd: totalCost, contextRefsUsed};
 }
 
 export interface TranslationDeps {
@@ -165,8 +188,68 @@ export function isFreshTranslation(candidate: TranslationCandidate): boolean {
   return result.status === StalenessStatus.Fresh;
 }
 
+interface WorkedExample {
+  hebrewSource: string;
+  hebrew?: string;
+  english?: string;
+}
+
+const MAX_WORKED_EXAMPLES = 2;
+
+// Used only until real accepted generations exist to draw examples from — see findWorkedExamples.
+const FALLBACK_WORKED_EXAMPLE: Record<Commentator, WorkedExample> = {
+  Rashi: {
+    hebrewSource: "ואם תמצי לומר דבר זה קשה",
+    hebrew: "<strong class=\"dibur-hamatchil\">ואם תמצי לומר</strong> - דבר זה קשה:",
+    english: "<strong class=\"dibur-hamatchil\">And if you should say:</strong> "
+      + "This matter is difficult.",
+  },
+  Tosafot: {
+    hebrewSource: "וכן משמע בכל דוכתא",
+    hebrew: "<strong class=\"dibur-hamatchil\">וכן משמע</strong> - בכל דוכתא:",
+    english: "<strong class=\"dibur-hamatchil\">And so it implies:</strong> in every place.",
+  },
+};
+
+/**
+ * Pulls worked examples of past *accepted* output for the same commentator from real generation
+ * records + their corresponding ai_additions, to inline directly in the prompt — addressing
+ * RSIAgentDesignRetrospective.md's working hypothesis that Claude went hunting across the corpus
+ * for calibration examples specifically because none were given up front.
+ */
+function findWorkedExamples(commentator: Commentator, excludeRef: string): WorkedExample[] {
+  const examples: WorkedExample[] = [];
+  for (const page of listPagesWithGenerationRecords(TASK_TYPE)) {
+    const edits = aiEditsForPage(page);
+    if (!edits) continue;
+    const records = readGenerationRecordsForPage(TASK_TYPE, page);
+    for (const [ref, record] of Object.entries(records)) {
+      if (ref === excludeRef || !ref.startsWith(`${commentator} on `)) continue;
+      const edit = edits[ref];
+      if (!edit) continue;
+      examples.push({hebrewSource: record.sourceText, hebrew: edit.hebrew, english: edit.english});
+      if (examples.length >= MAX_WORKED_EXAMPLES) return examples;
+    }
+  }
+  return examples;
+}
+
+function formatWorkedExamples(examples: WorkedExample[]): string {
+  return examples.map((example, i) => [
+    `Example ${i + 1}:`,
+    `  Source Hebrew: ${example.hebrewSource}`,
+    example.hebrew ? `  Punctuated Hebrew: ${example.hebrew}` : undefined,
+    example.english ? `  English translation: ${example.english}` : undefined,
+  ].filter((line): line is string => line !== undefined).join("\n")).join("\n\n");
+}
+
 function generationPrompt(candidate: TranslationCandidate, priorFeedback?: string): string {
-  const cachedFile = `cached_outputs/api_request_handler/${candidate.book}.${candidate.section}.json`;
+  const book = books.byCanonicalName[candidate.book] as Book | undefined;
+  const skeleton = book ? buildPageSkeleton(book, candidate.section) : undefined;
+  const examples = findWorkedExamples(candidate.commentator, candidate.ref);
+  const workedExamples = examples.length > 0
+    ? examples : [FALLBACK_WORKED_EXAMPLE[candidate.commentator]];
+
   return [
     "You're translating and punctuating a single commentary comment on the Talmud, for",
     "talmud.page (an interactive study tool).",
@@ -175,13 +258,25 @@ function generationPrompt(candidate: TranslationCandidate, priorFeedback?: strin
     `Commentator: ${candidate.commentator}`,
     `Current Hebrew text: ${candidate.hebrewSource}`,
     "",
-    `This page's full cached data (segments, existing commentary/translations) is at:`,
-    `  ${cachedFile}`,
-    `Sugya boundaries for this book are at: precomputed/sugyot/${candidate.book}.json`,
+    "Worked example(s) of the expected output — punctuation style, and how literal vs. free the",
+    "English translation should be:",
     "",
-    "If it would help you translate accurately, read the surrounding segments, other",
-    "commentaries on this segment, or prior sugyot on this page — use your own judgment about",
-    "how much context you actually need. Don't assume you need all of it.",
+    formatWorkedExamples(workedExamples),
+    "",
+    "This page's segments and commentary, for orientation (not full text):",
+    skeleton ? formatPageSkeleton(skeleton) : "(page not cached)",
+    "",
+    "If you need the actual text of something beyond what's given above — a neighboring segment,",
+    "another commentary on this segment, or a prior sugya — the only tool available to you is",
+    "context_fetch_cli:",
+    "  npx ts-node rsi_orchestrator/context_fetch_cli.ts get-refs '[\"<ref>\", ...]'",
+    "  npx ts-node rsi_orchestrator/context_fetch_cli.ts get-neighbors \"<segment ref>\" "
+      + "[--before N] [--after N]",
+    "  npx ts-node rsi_orchestrator/context_fetch_cli.ts get-prior-sugyot \"<any ref on this "
+      + "page>\" [--count N]",
+    "Use your own judgment about whether you need any of this — most comments don't need extra",
+    "context beyond what's already above. Each call is capped in size, so ask for specific refs",
+    "rather than trying to pull in everything at once.",
     "",
     "Tasks:",
     "1. Add punctuation to the Hebrew comment if it doesn't already have it (Rashi/Tosafot",
@@ -228,7 +323,8 @@ async function generateViaClaude(
   candidate: TranslationCandidate, priorFeedback?: string,
 ): Promise<GeneratedEdit> {
   const result = await runHeadlessClaude(
-    generationPrompt(candidate, priorFeedback), {model: MODEL});
+    generationPrompt(candidate, priorFeedback),
+    {model: MODEL, allowedTools: CONTEXT_FETCH_ALLOWED_TOOLS});
   recordContextUsage({
     taskType: TASK_TYPE,
     ref: candidate.ref,
@@ -240,13 +336,15 @@ async function generateViaClaude(
     edit: parseJsonResponse<Edit>(result.text),
     model: result.model,
     costUsd: result.costUsd,
+    contextRefsUsed: extractRequestedRefs(result.toolUses),
   };
 }
 
 async function critiqueViaClaude(
   candidate: TranslationCandidate, edit: Edit,
 ): Promise<CritiqueOutcome> {
-  const result = await runHeadlessClaude(critiquePrompt(candidate, edit), {model: MODEL});
+  const result = await runHeadlessClaude(
+    critiquePrompt(candidate, edit), {model: MODEL, allowedTools: CONTEXT_FETCH_ALLOWED_TOOLS});
   recordContextUsage({
     taskType: TASK_TYPE,
     ref: candidate.ref,
@@ -257,6 +355,7 @@ async function critiqueViaClaude(
   return {
     verdict: parseJsonResponse<CritiqueVerdict>(result.text),
     costUsd: result.costUsd,
+    contextRefsUsed: extractRequestedRefs(result.toolUses),
   };
 }
 
@@ -278,7 +377,10 @@ export function recordGenerationForCandidate(
     model: generated.model ?? "unknown",
     promptVersion: PROMPT_VERSION,
     generatedAt: new Date().toISOString(),
-    dependsOn: [],
+    // Auto-populated from what context_fetch_cli actually served during the accepted generate +
+    // critique calls (see generateWithSelfCritique) — not self-reported by the model. This is
+    // what lets a Tier 3 staleness hit on a fetched ref cascade to this artifact too.
+    dependsOn: generated.contextRefsUsed,
     costUsd: generated.costUsd,
   });
 }

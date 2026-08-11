@@ -22,12 +22,20 @@ billing.
   `precomputed/sugya_prompt_client.ts` (Gemini-based; left in place, unused, not deleted). For a
   given book, finds Rashi/Tosafot comments that are missing a translation or whose source text has
   drifted (via `precomputed/rsi_state/staleness.ts` + `generation_record.ts`), and for each one:
-  asks Claude to punctuate and translate it — pointing at where the page's cached data and sugya
-  boundaries live in the repo rather than pre-assembling context itself, so the model decides how
-  much it needs to read — then runs a bounded self-critique pass (generate → critique → at most
-  one retry with feedback → give up) before writing to `precomputed/ai_additions/<Book Page>.json`
-  and recording a generation record. Requires `cached_outputs/api_request_handler/` to be
-  populated for that book first (`npx ts-node cache_all_api_requests.ts`).
+  asks Claude to punctuate and translate it, then runs a bounded self-critique pass (generate →
+  critique → at most one retry with feedback → give up) before writing to
+  `precomputed/ai_additions/<Book Page>.json` and recording a generation record. Requires
+  `cached_outputs/api_request_handler/` to be populated for that book first
+  (`npx ts-node cache_all_api_requests.ts`).
+- `context_fetch.ts` + `context_fetch_cli.ts` — the only tool a task-type headless call may use
+  beyond its initial prompt (a compact page skeleton — see `page_skeleton.ts` — plus the target
+  text and worked examples). Narrow and ref-addressed on purpose: an earlier version pointed
+  Claude at the raw cached page file and general `Read`/`Grep`/`Glob` access, which real runs
+  showed leads to expensive wandering across unrelated books looking for calibration examples
+  (see `RSIAgentDesignRetrospective.md`). `context_fetch_cli.ts get-refs '["ref", ...]'` /
+  `get-neighbors <ref>` / `get-prior-sugyot <ref>` are size-capped and log exactly which refs were
+  requested — that log is what auto-populates a generation record's `dependsOn` (see
+  `extractRequestedRefs`), rather than relying on the model to self-report it.
 - `rashi_tosafot_translation_cli.ts` — the CLI entrypoint for the above, kept in a separate file
   because `yargs` is ESM-only and breaks under jest; the core module stays importable by its test
   file this way. `--section`/`--limit` bound a run to one page / a handful of candidates.
