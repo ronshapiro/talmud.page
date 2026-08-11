@@ -4,6 +4,7 @@ import {Book} from "../books";
 import {cachedOutputFilePath} from "../cached_outputs";
 import {readUtf8} from "../files";
 import {Edit} from "../precomputed/ai_edits";
+import {recordContextUsage} from "../precomputed/rsi_state/context_usage_log";
 import {readGenerationRecord, upsertGenerationRecord} from "../precomputed/rsi_state/generation_record";
 import {
   checkTextStaleness,
@@ -228,6 +229,13 @@ async function generateViaClaude(
 ): Promise<GeneratedEdit> {
   const result = await runHeadlessClaude(
     generationPrompt(candidate, priorFeedback), {model: MODEL});
+  recordContextUsage({
+    taskType: TASK_TYPE,
+    ref: candidate.ref,
+    callKind: "generate",
+    toolUses: result.toolUses,
+    costUsd: result.costUsd,
+  });
   return {
     edit: parseJsonResponse<Edit>(result.text),
     model: result.model,
@@ -239,6 +247,13 @@ async function critiqueViaClaude(
   candidate: TranslationCandidate, edit: Edit,
 ): Promise<CritiqueOutcome> {
   const result = await runHeadlessClaude(critiquePrompt(candidate, edit), {model: MODEL});
+  recordContextUsage({
+    taskType: TASK_TYPE,
+    ref: candidate.ref,
+    callKind: "critique",
+    toolUses: result.toolUses,
+    costUsd: result.costUsd,
+  });
   return {
     verdict: parseJsonResponse<CritiqueVerdict>(result.text),
     costUsd: result.costUsd,

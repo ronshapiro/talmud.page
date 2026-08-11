@@ -35,6 +35,11 @@ async function main(): Promise<void> {
     listCandidates: () => {
       let candidates = listCandidatesForBook(book);
       if (FLAGS.section) candidates = candidates.filter(c => c.section.startsWith(FLAGS.section!));
+      // Filter freshness before slicing to --limit — otherwise a limit smaller than the run of
+      // already-fresh candidates at the start of the page silently does nothing (found the hard
+      // way: a real --limit 1 run picked an already-generated candidate, skipped it, and exited
+      // with zero output and zero work done).
+      candidates = candidates.filter(c => !isFreshTranslation(c));
       return FLAGS.limit ? candidates.slice(0, FLAGS.limit) : candidates;
     },
     isFresh: isFreshTranslation,

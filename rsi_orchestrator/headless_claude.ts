@@ -25,6 +25,11 @@ export interface HeadlessClaudeOptions {
 
 const DEFAULT_ALLOWED_TOOLS = ["Read", "Grep", "Glob"];
 
+export interface ToolUseRecord {
+  name: string;
+  input: unknown;
+}
+
 export interface HeadlessClaudeResult {
   text: string;
   // The canonical model ID that actually did the substantive work (highest-cost entry in
@@ -33,6 +38,12 @@ export interface HeadlessClaudeResult {
   // artifact is what Phase 4's model-routing learning reads later.
   model: string | undefined;
   costUsd: number | undefined;
+  // Every Read/Grep/Glob (or whatever --allowedTools permits) call Claude made this turn, in
+  // order, with its input (e.g. {file_path: "..."} or {pattern: "..."}). This is the raw signal
+  // for context-usage logging: rather than a hand-picked list of "which commentaries matter",
+  // record what Claude actually reads across many real calls and let that data answer the
+  // question. See RecursiveSelfImprovingAgentPlan.md's "learned, not hand-picked" framing.
+  toolUses: ToolUseRecord[];
 }
 
 export type HeadlessClaudeRunner =
@@ -60,7 +71,8 @@ export class HeadlessClaudeError extends Error {
   }
 }
 
-interface ClaudeCliJsonOutput {
+interface ClaudeCliResultLine {
+  type: "result";
   result: string;
   is_error: boolean; // eslint-disable-line camelcase
   total_cost_usd?: number; // eslint-disable-line camelcase
@@ -68,7 +80,16 @@ interface ClaudeCliJsonOutput {
   modelUsage?: Record<string, {costUSD?: number}>;
 }
 
-export function primaryModel(modelUsage: ClaudeCliJsonOutput["modelUsage"]): string | undefined {
+interface ClaudeCliAssistantLine {
+  type: "assistant";
+  message: {
+    content: Array<{type: string; name?: string; input?: unknown}>;
+  };
+}
+
+export function primaryModel(
+  modelUsage: ClaudeCliResultLine["modelUsage"],
+): string | undefined {
   if (!modelUsage) return undefined;
   const entries = Object.entries(modelUsage);
   if (entries.length === 0) return undefined;
@@ -76,20 +97,51 @@ export function primaryModel(modelUsage: ClaudeCliJsonOutput["modelUsage"]): str
 }
 
 /**
- * The CLI often still writes valid JSON to stdout even when the process exits non-zero (e.g. a
- * rate limit) — execFile treats that as a rejected promise carrying an error whose `.stdout`
- * holds that JSON. Recover the structured error from it rather than surfacing a raw exec
- * failure with no usable information.
+ * `--output-format stream-json` writes one JSON object per line: assistant turns (which carry
+ * tool_use blocks — this is where toolUses comes from), tool results, system events, and finally
+ * a single `type: "result"` line with the same summary fields the plain `json` format returns.
+ * Tolerant of a trailing partial/non-JSON line, which happens when the process is killed
+ * mid-write.
+ */
+export function parseStreamJsonLines(stdout: string): {
+  toolUses: ToolUseRecord[];
+  result: ClaudeCliResultLine | undefined;
+} {
+  const toolUses: ToolUseRecord[] = [];
+  let result: ClaudeCliResultLine | undefined;
+  for (const line of stdout.split("\n")) {
+    if (!line.trim()) continue;
+    let parsed: {type?: string};
+    try {
+      parsed = JSON.parse(line) as {type?: string};
+    } catch {
+      continue;
+    }
+    if (parsed.type === "assistant") {
+      for (const block of (parsed as unknown as ClaudeCliAssistantLine).message.content) {
+        if (block.type === "tool_use" && block.name) {
+          toolUses.push({name: block.name, input: block.input});
+        }
+      }
+    } else if (parsed.type === "result") {
+      result = parsed as unknown as ClaudeCliResultLine;
+    }
+  }
+  return {toolUses, result};
+}
+
+/**
+ * The CLI often still writes its stream-json output to stdout even when the process exits
+ * non-zero (e.g. a rate limit) — execFile treats that as a rejected promise carrying an error
+ * whose `.stdout` holds it. Recover the structured error from the trailing result line rather
+ * than surfacing a raw exec failure with no usable information.
  */
 export function asCliError(error: unknown): HeadlessClaudeError | undefined {
   const stdout = (error as {stdout?: string} | undefined)?.stdout;
   if (!stdout) return undefined;
-  try {
-    const parsed = JSON.parse(stdout) as ClaudeCliJsonOutput;
-    return new HeadlessClaudeError(parsed.result, parsed.api_error_status);
-  } catch {
-    return undefined;
-  }
+  const {result} = parseStreamJsonLines(stdout);
+  if (!result) return undefined;
+  return new HeadlessClaudeError(result.result, result.api_error_status);
 }
 
 /**
@@ -108,7 +160,8 @@ export const runHeadlessClaude: HeadlessClaudeRunner = async (prompt, options = 
       "claude",
       [
         "-p", prompt,
-        "--output-format", "json",
+        "--output-format", "stream-json",
+        "--verbose",
         "--allowedTools", (options.allowedTools ?? DEFAULT_ALLOWED_TOOLS).join(","),
         ...(options.model ? ["--model", options.model] : []),
       ],
@@ -121,13 +174,17 @@ export const runHeadlessClaude: HeadlessClaudeRunner = async (prompt, options = 
   } catch (e) {
     throw asCliError(e) ?? e;
   }
-  const parsed = JSON.parse(stdout) as ClaudeCliJsonOutput;
-  if (parsed.is_error) {
-    throw new HeadlessClaudeError(parsed.result, parsed.api_error_status);
+  const {toolUses, result} = parseStreamJsonLines(stdout);
+  if (!result) {
+    throw new Error("Headless Claude call produced no result line");
+  }
+  if (result.is_error) {
+    throw new HeadlessClaudeError(result.result, result.api_error_status);
   }
   return {
-    text: parsed.result,
-    model: primaryModel(parsed.modelUsage),
-    costUsd: parsed.total_cost_usd,
+    text: result.result,
+    model: primaryModel(result.modelUsage),
+    costUsd: result.total_cost_usd,
+    toolUses,
   };
 };
