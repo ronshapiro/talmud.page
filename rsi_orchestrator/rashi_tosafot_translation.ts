@@ -20,6 +20,10 @@ import {HeadlessClaudeError, runHeadlessClaude} from "./headless_claude";
 
 export const TASK_TYPE = "rashi_tosafot_translation";
 const PROMPT_VERSION = "v1";
+// Hardcoded for now — Phase 4's routing tuner is meant to replace this with a per-task-type value
+// chosen from logged outcomes, not this constant. See "Model routing" in
+// RecursiveSelfImprovingAgentPlan.md.
+const MODEL = "claude-sonnet-5";
 const COMMENTATORS = ["Rashi", "Tosafot"] as const;
 type Commentator = typeof COMMENTATORS[number];
 
@@ -202,14 +206,15 @@ export function parseJsonResponse<T>(text: string): T {
 async function generateViaClaude(
   candidate: TranslationCandidate, priorFeedback?: string,
 ): Promise<GeneratedEdit> {
-  const result = await runHeadlessClaude(generationPrompt(candidate, priorFeedback));
+  const result = await runHeadlessClaude(
+    generationPrompt(candidate, priorFeedback), {model: MODEL});
   return {edit: parseJsonResponse<Edit>(result.text), model: result.model};
 }
 
 async function critiqueViaClaude(
   candidate: TranslationCandidate, edit: Edit,
 ): Promise<CritiqueVerdict> {
-  const result = await runHeadlessClaude(critiquePrompt(candidate, edit));
+  const result = await runHeadlessClaude(critiquePrompt(candidate, edit), {model: MODEL});
   return parseJsonResponse<CritiqueVerdict>(result.text);
 }
 

@@ -3,9 +3,19 @@ import {promisify} from "util";
 
 const execFileAsync = promisify(execFile);
 
+// NOT YET IMPLEMENTED: `claude -p` also has a `--max-budget-usd <amount>` flag (see
+// `claude --help`), not passed here yet — see RecursiveSelfImprovingAgentPlan.md's "Budget"
+// section. `--model` (below) is now pinned per call; without it the CLI picked the model on its
+// own — confirmed on a real run, which came back mostly claude-haiku-4-5 with one claude-sonnet-5
+// call, none of it requested by this code.
 export interface HeadlessClaudeOptions {
   cwd?: string;
   timeoutMs?: number;
+  // Explicit model alias or full name (e.g. "sonnet", "claude-sonnet-5"). Without this, `claude
+  // -p` chooses on its own — see the note above. Each task type should pass its own pinned
+  // model; Phase 4's routing tuner is what eventually changes this value based on logged outcomes
+  // (see RecursiveSelfImprovingAgentPlan.md's "Model routing" section), not this wrapper.
+  model?: string;
   // Defaults to a safe read-only set — this task family only needs to read repo files, not run
   // arbitrary commands or write anything. Without an explicit allow-list, headless calls have no
   // way to approve tool use, so anything beyond the default-allowed tools gets silently denied
@@ -40,6 +50,11 @@ export class HeadlessClaudeError extends Error {
     public readonly apiErrorStatus: number | undefined,
   ) {
     super(message);
+    // Without this, `instanceof HeadlessClaudeError` silently returns false at this project's
+    // (unset, so ES3-default) tsconfig target — a well-known gotcha extending Error in TS. Found
+    // the hard way: a real run kept "skipping" every candidate after a rate limit instead of
+    // stopping, because the isRateLimited branch's instanceof check never matched.
+    Object.setPrototypeOf(this, HeadlessClaudeError.prototype);
     this.name = "HeadlessClaudeError";
     this.isRateLimited = apiErrorStatus === 429;
   }
@@ -95,6 +110,7 @@ export const runHeadlessClaude: HeadlessClaudeRunner = async (prompt, options = 
         "-p", prompt,
         "--output-format", "json",
         "--allowedTools", (options.allowedTools ?? DEFAULT_ALLOWED_TOOLS).join(","),
+        ...(options.model ? ["--model", options.model] : []),
       ],
       {
         cwd: options.cwd,
