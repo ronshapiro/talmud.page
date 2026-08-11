@@ -41,12 +41,34 @@ billing.
   file this way. `--section`/`--limit` bound a run to one page / a handful of candidates.
 - `precomputed/rsi_state/triage_log.json` (created on first run) — tracks which issue numbers have
   already been triaged, so re-running doesn't re-comment on the same issue.
+- `precomputed/rsi_state/model_routing.ts` + `model_routing_config.json` — per-task-type model
+  choice (`generateModel`/`critiqueModel`), read instead of a hardcoded constant so a future
+  routing tuner (Phase 4 — not built yet) can propose changes here from logged outcomes. Note the
+  config file is named `model_routing_config.json`, not `model_routing.json` — sharing a basename
+  with the `.ts` module makes Node's extensionless `require`/`import` resolve to the `.json` file
+  instead of the module, silently shadowing every export (hit this for real while building it).
+- `precomputed/rsi_state/budget.ts` + `budget_config.json` — the human-driven schedule: per task
+  type, `enabled`/`maxCallsPerRun`/`maxCallsPerDay`/`priority`, plus a top-level `pausedUntil`
+  kill switch. Hand-edit this file to turn a task type on/off or change its caps — no code change
+  needed. Ships with every task type `enabled: false`, matching the "not wired in on purpose until
+  you deliberately turn it on" stance below.
+- `status_cli.ts` (`npx ts-node rsi_orchestrator/status_cli.ts`) — the read side of the budget
+  loop: today's/this week's call counts and cost per task type against `budget_config.json`'s
+  caps, and whether anything is currently paused. Check this before enabling a task type, raising
+  a cap, or pausing everything ahead of unrelated Claude Code work.
+- `schedule_runner.ts` — the actual scheduled-run entrypoint. Each invocation ("tick") reads
+  `budget_config.json`, and for every enabled/under-cap/unpaused task type runs one bounded batch
+  (capped by `maxCallsPerRun` and the remaining daily budget), then stops — never an open-ended
+  run. See "Scheduling" below for wiring this into launchd.
 
 ## Running manually
 
 ```sh
 npx ts-node rsi_orchestrator/triage_suggestions.ts
 npx ts-node rsi_orchestrator/rashi_tosafot_translation_cli.ts Zevachim --section 2a --limit 2
+npx ts-node rsi_orchestrator/status_cli.ts
+npx ts-node rsi_orchestrator/schedule_runner.ts   # honors budget_config.json — no-ops if nothing
+                                                   # is enabled/unpaused/under its daily cap
 ```
 
 Requires the `gh` CLI authenticated with access to `ronshapiro/talmud.page` (already true on this
@@ -99,3 +121,10 @@ To install: save as `~/Library/LaunchAgents/page.talmud.rsi-triage.plist`, then
 `launchctl load ~/Library/LaunchAgents/page.talmud.rsi-triage.plist`. `WorkingDirectory` and the
 `node`/`npx` path should point at wherever the real (non-worktree) checkout of this repo lives on
 this machine — adjust before installing.
+
+For content generation, the equivalent plist would point `ProgramArguments` at
+`rsi_orchestrator/schedule_runner.ts` instead, on a more frequent interval (e.g. every 30–60
+minutes, not once a day — see `schedule_runner.ts`'s module doc for why short ticks are
+deliberate). Unlike the triage plist, this one is safe to install even before you're ready to use
+it: `budget_config.json` ships with every task type `enabled: false`, so a scheduled tick is a
+no-op until you hand-edit that file to turn one on.

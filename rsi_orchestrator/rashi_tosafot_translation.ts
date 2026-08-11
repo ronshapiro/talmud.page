@@ -333,6 +333,7 @@ async function generateViaClaude(
     callKind: "generate",
     toolUses: result.toolUses,
     costUsd: result.costUsd,
+    model: result.model,
   });
   return {
     edit: parseJsonResponse<Edit>(result.text),
@@ -355,6 +356,7 @@ async function critiqueViaClaude(
     callKind: "critique",
     toolUses: result.toolUses,
     costUsd: result.costUsd,
+    model: result.model,
   });
   return {
     verdict: parseJsonResponse<CritiqueVerdict>(result.text),

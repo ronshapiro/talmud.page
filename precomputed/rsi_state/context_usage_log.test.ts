@@ -16,6 +16,7 @@ function entry(overrides: Partial<ContextUsageEntry> = {}): Omit<ContextUsageEnt
     callKind: "generate",
     toolUses: [{name: "Read", input: {file_path: "cached_outputs/api_request_handler/Test.2a.json"}}],
     costUsd: 0.01,
+    model: "claude-sonnet-5",
     ...overrides,
   };
 }

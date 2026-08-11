@@ -22,6 +22,10 @@ export interface ContextUsageEntry {
   callKind: string;
   toolUses: ToolUseRecord[];
   costUsd: number | undefined;
+  // The canonical model ID that did the work (HeadlessClaudeResult.model) — doubles this log as
+  // the spend/budget ledger (see budget.ts's status reporting) rather than needing a second,
+  // separately-written log that could drift out of sync with this one.
+  model: string | undefined;
   timestamp: string; // ISO 8601
 }
 
