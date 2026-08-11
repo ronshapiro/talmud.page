@@ -14,6 +14,10 @@ export interface GenerationRecord {
   model: string;
   promptVersion: string;
   generatedAt: string; // ISO 8601
+  // Total cost of every model call that went into producing this artifact (including rejected
+  // attempts a self-critique loop retried) — not just the final accepted call. Undefined if the
+  // task type doesn't report cost.
+  costUsd?: number;
   // Refs this artifact depends on beyond its own sourceRefs (e.g. a table generated from a whole
   // sugya depends on every ref in that sugya, not just the one it's attached to).
   dependsOn: string[];

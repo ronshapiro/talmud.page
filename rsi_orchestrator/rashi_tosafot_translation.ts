@@ -45,16 +45,30 @@ export interface CritiqueVerdict {
   reason: string;
 }
 
+export interface CritiqueOutcome {
+  verdict: CritiqueVerdict;
+  costUsd: number | undefined;
+}
+
 /** The canonical model ID is threaded through so the generation record can capture what actually
  * produced the accepted edit, for Phase 4's model-routing learning. */
 export interface GeneratedEdit {
   edit: Edit;
   model: string | undefined;
+  // Cost of just this one call — generateWithSelfCritique sums this across every call (including
+  // rejected attempts) before handing it to the caller, so the value callers actually see is the
+  // full cost of producing the accepted edit, not just the last call.
+  costUsd: number | undefined;
 }
 
 export interface GenerationDeps {
   generate: (candidate: TranslationCandidate, priorFeedback?: string) => Promise<GeneratedEdit>;
-  critique: (candidate: TranslationCandidate, edit: Edit) => Promise<CritiqueVerdict>;
+  critique: (candidate: TranslationCandidate, edit: Edit) => Promise<CritiqueOutcome>;
+}
+
+function sumCost(...costs: (number | undefined)[]): number | undefined {
+  if (costs.every(c => c === undefined)) return undefined;
+  return costs.reduce((total: number, c) => total + (c ?? 0), 0);
 }
 
 /**
@@ -66,16 +80,18 @@ export async function generateWithSelfCritique(
   candidate: TranslationCandidate, deps: GenerationDeps,
 ): Promise<GeneratedEdit | undefined> {
   let generated = await deps.generate(candidate);
-  let verdict = await deps.critique(candidate, generated.edit);
-  if (!verdict.valid) {
-    generated = await deps.generate(candidate, verdict.reason);
-    verdict = await deps.critique(candidate, generated.edit);
+  let outcome = await deps.critique(candidate, generated.edit);
+  let totalCost = sumCost(generated.costUsd, outcome.costUsd);
+  if (!outcome.verdict.valid) {
+    generated = await deps.generate(candidate, outcome.verdict.reason);
+    outcome = await deps.critique(candidate, generated.edit);
+    totalCost = sumCost(totalCost, generated.costUsd, outcome.costUsd);
   }
-  if (!verdict.valid) {
-    console.error(`Giving up on ${candidate.ref}: ${verdict.reason}`);
+  if (!outcome.verdict.valid) {
+    console.error(`Giving up on ${candidate.ref}: ${outcome.verdict.reason}`);
     return undefined;
   }
-  return generated;
+  return {...generated, costUsd: totalCost};
 }
 
 export interface TranslationDeps {
@@ -212,14 +228,21 @@ async function generateViaClaude(
 ): Promise<GeneratedEdit> {
   const result = await runHeadlessClaude(
     generationPrompt(candidate, priorFeedback), {model: MODEL});
-  return {edit: parseJsonResponse<Edit>(result.text), model: result.model};
+  return {
+    edit: parseJsonResponse<Edit>(result.text),
+    model: result.model,
+    costUsd: result.costUsd,
+  };
 }
 
 async function critiqueViaClaude(
   candidate: TranslationCandidate, edit: Edit,
-): Promise<CritiqueVerdict> {
+): Promise<CritiqueOutcome> {
   const result = await runHeadlessClaude(critiquePrompt(candidate, edit), {model: MODEL});
-  return parseJsonResponse<CritiqueVerdict>(result.text);
+  return {
+    verdict: parseJsonResponse<CritiqueVerdict>(result.text),
+    costUsd: result.costUsd,
+  };
 }
 
 export async function generateAndRecord(
@@ -241,5 +264,6 @@ export function recordGenerationForCandidate(
     promptVersion: PROMPT_VERSION,
     generatedAt: new Date().toISOString(),
     dependsOn: [],
+    costUsd: generated.costUsd,
   });
 }

@@ -1,6 +1,7 @@
 import {Edit} from "../precomputed/ai_edits";
 import {HeadlessClaudeError} from "./headless_claude";
 import {
+  CritiqueOutcome,
   CritiqueVerdict,
   GeneratedEdit,
   generateWithSelfCritique,
@@ -26,40 +27,58 @@ function generated(overrides: Partial<GeneratedEdit> = {}): GeneratedEdit {
   return {
     edit: {hebrew: "מקור.", english: "source"},
     model: "claude-sonnet-5",
+    costUsd: 0.01,
     ...overrides,
   };
 }
 
-const validVerdict: CritiqueVerdict = {valid: true, reason: "looks good"};
+function outcome(overrides: Partial<CritiqueOutcome> = {}): CritiqueOutcome {
+  return {
+    verdict: {valid: true, reason: "looks good"},
+    costUsd: 0.002,
+    ...overrides,
+  };
+}
+
+const validOutcome = outcome();
 const invalidVerdict: CritiqueVerdict = {valid: false, reason: "changed a word"};
+const invalidOutcome = outcome({verdict: invalidVerdict});
 
 describe("generateWithSelfCritique", () => {
   test("returns the edit when the first critique passes", async () => {
     const generate = jest.fn(async () => generated());
-    const critique = jest.fn(async () => validVerdict);
+    const critique = jest.fn(async () => validOutcome);
     const result = await generateWithSelfCritique(candidate(), {generate, critique});
-    expect(result).toEqual(generated());
+    // costUsd is the sum of the generate + critique calls (0.01 + 0.002), not just generate's own.
+    expect(result).toEqual(generated({costUsd: 0.012}));
     expect(generate).toHaveBeenCalledTimes(1);
+  });
+
+  test("sums cost across the generate and critique calls", async () => {
+    const generate = jest.fn(async () => generated({costUsd: 0.03}));
+    const critique = jest.fn(async () => outcome({costUsd: 0.005}));
+    const result = await generateWithSelfCritique(candidate(), {generate, critique});
+    expect(result!.costUsd).toBeCloseTo(0.035);
   });
 
   test("retries once with feedback when the first critique fails, then succeeds", async () => {
     const generate = jest.fn<Promise<GeneratedEdit>, [TranslationCandidate, string?]>()
-      .mockResolvedValueOnce(generated({edit: {hebrew: "wrong", english: "wrong"}}))
-      .mockResolvedValueOnce(generated());
-    const critique = jest.fn<Promise<CritiqueVerdict>, [TranslationCandidate, Edit]>()
-      .mockResolvedValueOnce(invalidVerdict)
-      .mockResolvedValueOnce(validVerdict);
+      .mockResolvedValueOnce(generated({edit: {hebrew: "wrong", english: "wrong"}, costUsd: 0.01}))
+      .mockResolvedValueOnce(generated({costUsd: 0.01}));
+    const critique = jest.fn<Promise<CritiqueOutcome>, [TranslationCandidate, Edit]>()
+      .mockResolvedValueOnce(outcome({verdict: invalidVerdict, costUsd: 0.002}))
+      .mockResolvedValueOnce(outcome({costUsd: 0.002}));
 
     const result = await generateWithSelfCritique(candidate(), {generate, critique});
 
-    expect(result).toEqual(generated());
+    expect(result).toEqual(generated({costUsd: 0.024}));
     expect(generate).toHaveBeenCalledTimes(2);
     expect(generate.mock.calls[1]).toEqual([candidate(), invalidVerdict.reason]);
   });
 
   test("gives up after a second failed critique, without a third attempt", async () => {
     const generate = jest.fn(async () => generated({edit: {hebrew: "wrong"}}));
-    const critique = jest.fn(async () => invalidVerdict);
+    const critique = jest.fn(async () => invalidOutcome);
 
     const result = await generateWithSelfCritique(candidate(), {generate, critique});
 
