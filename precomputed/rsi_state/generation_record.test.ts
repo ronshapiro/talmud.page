@@ -2,6 +2,7 @@ import * as fs from "fs";
 import {
   findDependentsOnPage,
   GenerationRecord,
+  listPagesWithGenerationRecords,
   readGenerationRecord,
   readGenerationRecordsForPage,
   upsertGenerationRecord,
@@ -59,4 +60,14 @@ test("findDependentsOnPage finds refs that declare a dependency", () => {
 
   expect(findDependentsOnPage(TASK_TYPE, PAGE, "Test 2a:1").sort())
     .toEqual(["Test 2a:1", "Test 2a:2"]); // includes itself, since sourceRefs also matches
+});
+
+test("listPagesWithGenerationRecords returns an empty array when nothing has been written", () => {
+  expect(listPagesWithGenerationRecords(TASK_TYPE)).toEqual([]);
+});
+
+test("listPagesWithGenerationRecords lists every page with a record file", () => {
+  upsertGenerationRecord(TASK_TYPE, PAGE, "Test 2a:1", record());
+  upsertGenerationRecord(TASK_TYPE, "__Test_Page__ 2b", "Test 2b:1", record());
+  expect(listPagesWithGenerationRecords(TASK_TYPE).sort()).toEqual([PAGE, "__Test_Page__ 2b"]);
 });

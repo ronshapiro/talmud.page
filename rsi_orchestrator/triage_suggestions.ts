@@ -80,7 +80,10 @@ async function main(): Promise<void> {
   await triageOpenSuggestions({
     listOpenSuggestions: listOpenSuggestionsViaGh,
     commentOnIssue: commentOnIssueViaGh,
-    assessFeasibility: suggestion => runHeadlessClaude(feasibilityPrompt(suggestion)),
+    assessFeasibility: async suggestion => {
+      const result = await runHeadlessClaude(feasibilityPrompt(suggestion));
+      return result.text;
+    },
     isAlreadyTriaged,
     markTriaged,
   });

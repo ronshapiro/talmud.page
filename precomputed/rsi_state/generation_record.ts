@@ -14,6 +14,10 @@ export interface GenerationRecord {
   model: string;
   promptVersion: string;
   generatedAt: string; // ISO 8601
+  // Total cost of every model call that went into producing this artifact (including rejected
+  // attempts a self-critique loop retried) — not just the final accepted call. Undefined if the
+  // task type doesn't report cost.
+  costUsd?: number;
   // Refs this artifact depends on beyond its own sourceRefs (e.g. a table generated from a whole
   // sugya depends on every ref in that sugya, not just the one it's attached to).
   dependsOn: string[];
@@ -26,6 +30,16 @@ const GENERATION_RECORD_DIR = "precomputed/rsi_state/generation_records";
 
 function generationRecordPath(taskType: string, page: string): string {
   return `${GENERATION_RECORD_DIR}/${taskType}/${page}.json`;
+}
+
+/** Every page with at least one generation record for this task type — used to find worked
+ * examples of past accepted output (see rashi_tosafot_translation.ts's generationPrompt). */
+export function listPagesWithGenerationRecords(taskType: string): string[] {
+  const dir = `${GENERATION_RECORD_DIR}/${taskType}`;
+  if (!fs.existsSync(dir)) return [];
+  return fs.readdirSync(dir)
+    .filter(name => name.endsWith(".json"))
+    .map(name => name.slice(0, -".json".length));
 }
 
 export function readGenerationRecordsForPage(

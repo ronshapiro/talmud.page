@@ -1,4 +1,4 @@
-# RSI orchestrator (Phase 1 scaffolding)
+# RSI orchestrator
 
 Self-hosted scripts for the recursive self-improving content agent — see
 `RecursiveSelfImprovingAgentPlan.md` at the repo root for the full plan. These run on this
@@ -8,24 +8,70 @@ billing.
 
 ## What's here today
 
-- `headless_claude.ts` — thin wrapper around `claude -p` (headless Claude Code). Exported as an
-  injectable function so callers can substitute a fake in tests.
+- `headless_claude.ts` — thin wrapper around `claude -p --output-format json` (headless Claude
+  Code). Exported as an injectable function so callers can substitute a fake in tests. Returns the
+  response text plus the canonical model ID and cost the CLI reports, so generation records can
+  capture what actually ran (needed for Phase 4's model-routing learning).
 - `triage_suggestions.ts` — reads open `rsi-suggestion`-labeled GitHub issues (filed via the
   suggestion box in the app UI), has Claude assess each one's feasibility against the current
   codebase, and posts that assessment as an issue comment. **It stops there** — it does not yet
-  scaffold a new task type or open a PR. That auto-implement step needs Phase 2's task-type config
-  format to exist first; building it now would have nothing real to scaffold against. Until then,
-  this gives you a triaged, annotated backlog to act on manually.
+  scaffold a new task type or open a PR. That auto-implement step needs a settled task-type config
+  format across more than one task type first; building it now would have nothing real to
+  scaffold against. Until then, this gives you a triaged, annotated backlog to act on manually.
+- `rashi_tosafot_translation.ts` — the first content-generation task type, replacing
+  `precomputed/sugya_prompt_client.ts` (Gemini-based; left in place, unused, not deleted). For a
+  given book, finds Rashi/Tosafot comments that are missing a translation or whose source text has
+  drifted (via `precomputed/rsi_state/staleness.ts` + `generation_record.ts`), and for each one:
+  asks Claude to punctuate and translate it, then runs a bounded self-critique pass (generate →
+  critique → at most one retry with feedback → give up) before writing to
+  `precomputed/ai_additions/<Book Page>.json` and recording a generation record. Requires
+  `cached_outputs/api_request_handler/` to be populated for that book first
+  (`npx ts-node cache_all_api_requests.ts`).
+- `context_fetch.ts` + `context_fetch_cli.ts` — the only tool a task-type headless call may use
+  beyond its initial prompt (a compact page skeleton — see `page_skeleton.ts` — plus the target
+  text and worked examples). Narrow and ref-addressed on purpose: an earlier version pointed
+  Claude at the raw cached page file and general `Read`/`Grep`/`Glob` access, which real runs
+  showed leads to expensive wandering across unrelated books looking for calibration examples
+  (see `RSIAgentDesignRetrospective.md`). `context_fetch_cli.ts get-refs '["ref", ...]'` /
+  `get-neighbors <ref>` / `get-prior-sugyot <ref>` are size-capped and log exactly which refs were
+  requested — that log is what auto-populates a generation record's `dependsOn` (see
+  `extractRequestedRefs`), rather than relying on the model to self-report it.
+- `rashi_tosafot_translation_cli.ts` — the CLI entrypoint for the above, kept in a separate file
+  because `yargs` is ESM-only and breaks under jest; the core module stays importable by its test
+  file this way. `--section`/`--limit` bound a run to one page / a handful of candidates.
 - `precomputed/rsi_state/triage_log.json` (created on first run) — tracks which issue numbers have
   already been triaged, so re-running doesn't re-comment on the same issue.
-
-Not here yet: the actual content-generation task types (Phase 2), and anything that pushes a
-branch or opens a PR — those come once Phase 2 exists.
+- `precomputed/rsi_state/model_routing.ts` + `model_routing_config.json` — per-task-type model
+  choice (`generateModel`/`critiqueModel`), read instead of a hardcoded constant so a future
+  routing tuner (Phase 4 — not built yet) can propose changes here from logged outcomes. A task
+  type with no entry throws rather than silently falling back to a default — uncontrolled model
+  selection is exactly what went unnoticed in PR #54's real runs until someone happened to inspect
+  a generation record. Note the config file is named `model_routing_config.json`, not
+  `model_routing.json` — sharing a basename with the `.ts` module makes Node's extensionless
+  `require`/`import` resolve to the `.json` file instead of the module, silently shadowing every
+  export (hit this for real while building it).
+- `precomputed/rsi_state/budget.ts` + `budget_config.json` — the human-driven schedule: per task
+  type, `enabled`/`maxCallsPerRun`/`maxCallsPerDay`/`priority`, plus a top-level `pausedUntil`
+  kill switch. Hand-edit this file to turn a task type on/off or change its caps — no code change
+  needed. Ships with every task type `enabled: false`, matching the "not wired in on purpose until
+  you deliberately turn it on" stance below.
+- `status_cli.ts` (`npx ts-node rsi_orchestrator/status_cli.ts`) — the read side of the budget
+  loop: today's/this week's call counts and cost per task type against `budget_config.json`'s
+  caps, and whether anything is currently paused. Check this before enabling a task type, raising
+  a cap, or pausing everything ahead of unrelated Claude Code work.
+- `schedule_runner.ts` — the actual scheduled-run entrypoint. Each invocation ("tick") reads
+  `budget_config.json`, and for every enabled/under-cap/unpaused task type runs one bounded batch
+  (capped by `maxCallsPerRun` and the remaining daily budget), then stops — never an open-ended
+  run. See "Scheduling" below for wiring this into launchd.
 
 ## Running manually
 
 ```sh
 npx ts-node rsi_orchestrator/triage_suggestions.ts
+npx ts-node rsi_orchestrator/rashi_tosafot_translation_cli.ts Zevachim --section 2a --limit 2
+npx ts-node rsi_orchestrator/status_cli.ts
+npx ts-node rsi_orchestrator/schedule_runner.ts   # honors budget_config.json — no-ops if nothing
+                                                   # is enabled/unpaused/under its daily cap
 ```
 
 Requires the `gh` CLI authenticated with access to `ronshapiro/talmud.page` (already true on this
@@ -78,3 +124,10 @@ To install: save as `~/Library/LaunchAgents/page.talmud.rsi-triage.plist`, then
 `launchctl load ~/Library/LaunchAgents/page.talmud.rsi-triage.plist`. `WorkingDirectory` and the
 `node`/`npx` path should point at wherever the real (non-worktree) checkout of this repo lives on
 this machine — adjust before installing.
+
+For content generation, the equivalent plist would point `ProgramArguments` at
+`rsi_orchestrator/schedule_runner.ts` instead, on a more frequent interval (e.g. every 30–60
+minutes, not once a day — see `schedule_runner.ts`'s module doc for why short ticks are
+deliberate). Unlike the triage plist, this one is safe to install even before you're ready to use
+it: `budget_config.json` ships with every task type `enabled: false`, so a scheduled tick is a
+no-op until you hand-edit that file to turn one on.

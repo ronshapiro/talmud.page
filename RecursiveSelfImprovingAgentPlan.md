@@ -47,6 +47,12 @@ sessions per day per task type, running only during off-hours, priority ordering
 starve your other Claude Code work on a heavy day). This is coarser than a spend cap by design —
 accepted in exchange for staying on the existing subscription.
 
+`claude -p` also has a `--max-budget-usd <amount>` flag — a real per-call dollar cap, independent
+of whether the underlying billing is subscription or API-key based (confirmed via `claude --help`,
+saved at `/tmp/claude_cli_help.txt`). Not wired into `headless_claude.ts` yet — a per-task-type
+budget cap via this flag is a natural next step, and belongs in the same change as the `--model`
+pinning below, since both are "known flag, not used yet" gaps in the same file.
+
 ## Data flow
 
 - **Tier 0 — source of truth**: Sefaria's API, pulled offline into `cached_outputs/` (unchanged).
@@ -124,6 +130,15 @@ audit/rollback trail. A periodic "routing tuner" run reads the logged per-(task 
 acceptance-rate and edit-distance stats and proposes an updated config — e.g. downgrading a task
 type that a cheaper model already handles well, or upgrading one where quality is the bottleneck.
 This is the concrete mechanism behind "learn which models to use for which tasks."
+
+**Not wired in yet, found during Phase 2's first real run**: `headless_claude.ts` doesn't pass a
+`--model` flag, so `claude -p` picks the model on its own — the real Menachot 77a smoke test came
+back mostly `claude-haiku-4-5`, with one `claude-sonnet-5` call, and nothing in this codebase
+requested either. `runHeadlessClaude` records which model ran (`primaryModel`, picked by
+highest-cost entry in the CLI's `modelUsage`) but does not yet *select* it — routing "learning" is
+meaningless while the model is chosen opaquely underneath it. Pinning `--model` per task type,
+sourced from that task type's config file, is a prerequisite for this section to be true, not
+just an optimization.
 
 ## Task types
 
