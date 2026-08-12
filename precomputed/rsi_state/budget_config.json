@@ -1,10 +1,16 @@
 {
   "taskTypes": {
+    "segmentation_audit": {
+      "enabled": false,
+      "maxCallsPerRun": 5,
+      "maxCallsPerDay": 20,
+      "priority": 1
+    },
     "rashi_tosafot_translation": {
       "enabled": false,
       "maxCallsPerRun": 10,
       "maxCallsPerDay": 40,
-      "priority": 1
+      "priority": 2
     }
   }
 }
