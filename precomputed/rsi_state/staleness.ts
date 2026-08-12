@@ -26,11 +26,22 @@ function normalizeForStalenessFingerprint(text: string): string {
     .trim();
 }
 
-export type StalenessStatus = "fresh" | "stale" | "needsClassification";
+export enum StalenessStatus {
+  Fresh = "fresh",
+  Stale = "stale",
+  NeedsClassification = "needsClassification",
+}
+
+export enum StalenessTier {
+  Fingerprint = 0,
+  EditDistance = 1,
+  AgenticClassification = 2,
+  StructuralBreak = 3,
+}
 
 export interface StalenessResult {
   status: StalenessStatus;
-  tier: 0 | 1 | 2 | 3;
+  tier: StalenessTier;
   editRatio?: number;
   reason?: string;
 }
@@ -99,17 +110,26 @@ export function checkTextStaleness(
   thresholds: StalenessThresholds = DEFAULT_STALENESS_THRESHOLDS,
 ): StalenessResult {
   if (hashNormalizedText(currentSourceText) === hashNormalizedText(storedSourceText)) {
-    return {status: "fresh", tier: 0};
+    return {status: StalenessStatus.Fresh, tier: StalenessTier.Fingerprint};
   }
 
   const editRatio = computeEditRatio(storedSourceText, currentSourceText);
   if (editRatio <= thresholds.cosmeticMaxRatio) {
-    return {status: "fresh", tier: 1, editRatio};
+    return {status: StalenessStatus.Fresh, tier: StalenessTier.EditDistance, editRatio};
   }
   if (editRatio >= thresholds.structuralMinRatio) {
-    return {status: "stale", tier: 3, editRatio, reason: "edit ratio above structural threshold"};
+    return {
+      status: StalenessStatus.Stale,
+      tier: StalenessTier.StructuralBreak,
+      editRatio,
+      reason: "edit ratio above structural threshold",
+    };
   }
-  return {status: "needsClassification", tier: 2, editRatio};
+  return {
+    status: StalenessStatus.NeedsClassification,
+    tier: StalenessTier.AgenticClassification,
+    editRatio,
+  };
 }
 
 /**
@@ -123,13 +143,13 @@ export function resolveWithClassification(
   pending: StalenessResult,
   classifierVerdict: {stillValid: boolean; reason: string},
 ): StalenessResult {
-  if (pending.status !== "needsClassification") {
+  if (pending.status !== StalenessStatus.NeedsClassification) {
     throw new Error(`resolveWithClassification called on a tier-${pending.tier} result that `
       + `wasn't needsClassification`);
   }
   return {
-    status: classifierVerdict.stillValid ? "fresh" : "stale",
-    tier: 2,
+    status: classifierVerdict.stillValid ? StalenessStatus.Fresh : StalenessStatus.Stale,
+    tier: StalenessTier.AgenticClassification,
     editRatio: pending.editRatio,
     reason: classifierVerdict.reason,
   };
@@ -145,11 +165,11 @@ export function checkSegmentCountStaleness(
   currentSegmentCount: number,
 ): StalenessResult {
   if (storedSegmentCount === currentSegmentCount) {
-    return {status: "fresh", tier: 0};
+    return {status: StalenessStatus.Fresh, tier: StalenessTier.Fingerprint};
   }
   return {
-    status: "stale",
-    tier: 3,
+    status: StalenessStatus.Stale,
+    tier: StalenessTier.StructuralBreak,
     reason: `segment count changed from ${storedSegmentCount} to ${currentSegmentCount}`,
   };
 }
