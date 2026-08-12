@@ -36,10 +36,6 @@ import {HeadlessClaudeError, runHeadlessClaude} from "./headless_claude";
 
 export const TASK_TYPE = "rashi_tosafot_translation";
 const PROMPT_VERSION = "v2";
-// Falls back to this only if precomputed/rsi_state/model_routing.json has no entry for this task
-// type. The routing tuner (Phase 4 — not built yet) is meant to propose changes to that file from
-// logged outcomes; this constant is just the safety-net default, not the source of truth.
-const DEFAULT_MODEL_CONFIG = {generateModel: "claude-sonnet-5", critiqueModel: "claude-sonnet-5"};
 // The only tool this task type's headless calls may use — see the module doc above. Scoped to
 // this exact command so it can't fall back to arbitrary Bash use.
 const CONTEXT_FETCH_ALLOWED_TOOLS = ["Bash(npx ts-node rsi_orchestrator/context_fetch_cli.ts *)"];
@@ -246,7 +242,17 @@ function formatWorkedExamples(examples: WorkedExample[]): string {
 
 function generationPrompt(candidate: TranslationCandidate, priorFeedback?: string): string {
   const book = books.byCanonicalName[candidate.book] as Book | undefined;
-  const skeleton = book ? buildPageSkeleton(book, candidate.section) : undefined;
+  if (!book) {
+    throw new Error(`Unknown book "${candidate.book}" for candidate ${candidate.ref}`);
+  }
+  // listCandidatesForBook only produces a candidate for a page whose cached file already exists,
+  // so a missing skeleton here means the cache was deleted/moved out from under a run in
+  // progress — a real inconsistency worth failing loudly on, not a degraded-but-still-plausible
+  // prompt.
+  const skeleton = buildPageSkeleton(book, candidate.section);
+  if (!skeleton) {
+    throw new Error(`${candidate.page} is not cached (needed to build its page skeleton)`);
+  }
   const examples = findWorkedExamples(candidate.commentator, candidate.ref);
   const workedExamples = examples.length > 0
     ? examples : [FALLBACK_WORKED_EXAMPLE[candidate.commentator]];
@@ -265,7 +271,7 @@ function generationPrompt(candidate: TranslationCandidate, priorFeedback?: strin
     formatWorkedExamples(workedExamples),
     "",
     "This page's segments and commentary, for orientation (not full text):",
-    skeleton ? formatPageSkeleton(skeleton) : "(page not cached)",
+    formatPageSkeleton(skeleton),
     "",
     "If you need the actual text of something beyond what's given above — a neighboring segment,",
     "another commentary on this segment, or a prior sugya — the only tool available to you is",
@@ -323,7 +329,7 @@ export function parseJsonResponse<T>(text: string): T {
 async function generateViaClaude(
   candidate: TranslationCandidate, priorFeedback?: string,
 ): Promise<GeneratedEdit> {
-  const modelConfig = getTaskModelConfig(TASK_TYPE, DEFAULT_MODEL_CONFIG);
+  const modelConfig = getTaskModelConfig(TASK_TYPE);
   const result = await runHeadlessClaude(
     generationPrompt(candidate, priorFeedback),
     {model: modelConfig.generateModel, allowedTools: CONTEXT_FETCH_ALLOWED_TOOLS});
@@ -346,7 +352,7 @@ async function generateViaClaude(
 async function critiqueViaClaude(
   candidate: TranslationCandidate, edit: Edit,
 ): Promise<CritiqueOutcome> {
-  const modelConfig = getTaskModelConfig(TASK_TYPE, DEFAULT_MODEL_CONFIG);
+  const modelConfig = getTaskModelConfig(TASK_TYPE);
   const result = await runHeadlessClaude(
     critiquePrompt(candidate, edit),
     {model: modelConfig.critiqueModel, allowedTools: CONTEXT_FETCH_ALLOWED_TOOLS});

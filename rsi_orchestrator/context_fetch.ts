@@ -25,21 +25,29 @@ export interface RefLocation {
  * Parses which book/page a ref belongs to from the ref string itself (e.g.
  * "Rashi on Zevachim 2a:1:1" or "Zevachim 2a:1") — refs always encode this, so no separate
  * book/page argument is needed anywhere in this module's public API.
+ *
+ * A commentary ref prepends an arbitrary commentator-attribution prefix (e.g. "Rashi on ") ahead
+ * of the base location. Rather than special-casing that literal " on " text — which isn't a
+ * documented part of Sefaria's ref format and would break silently for any other prefix shape —
+ * this tries every space-separated suffix of the ref, left to right, through `books.parse()` (the
+ * same book-name/alias matching the rest of the app uses for query strings) until one resolves.
+ * The base location is always such a suffix, so this finds it structurally instead of by
+ * string convention.
  */
 export function parseRefLocation(ref: string): RefLocation | undefined {
-  const onIndex = ref.lastIndexOf(" on ");
-  const baseRef = onIndex === -1 ? ref : ref.slice(onIndex + 4);
-  let match: Book | undefined;
-  for (const book of books.allBooks) {
-    if (baseRef.startsWith(`${book.canonicalName} `)
-        && (!match || book.canonicalName.length > match.canonicalName.length)) {
-      match = book;
+  const tokens = ref.split(" ");
+  for (let start = 0; start < tokens.length; start++) {
+    const candidate = tokens.slice(start).join(" ");
+    const colonIndex = candidate.indexOf(":");
+    const pageQuery = colonIndex === -1 ? candidate : candidate.slice(0, colonIndex);
+    try {
+      const result = books.parse(pageQuery);
+      return {book: books.byCanonicalName[result.bookName], page: result.start};
+    } catch {
+      // Not a valid "<book> <page>" starting at this token — try a shorter suffix.
     }
   }
-  if (!match) return undefined;
-  const rest = baseRef.slice(match.canonicalName.length + 1);
-  const page = rest.split(":")[0];
-  return {book: match, page};
+  return undefined;
 }
 
 export interface RefEntry {

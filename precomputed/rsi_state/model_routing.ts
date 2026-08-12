@@ -27,8 +27,19 @@ export function readModelRoutingConfig(configPath = DEFAULT_CONFIG_PATH): ModelR
   return JSON.parse(readUtf8(configPath)) as ModelRoutingConfig;
 }
 
+/**
+ * Throws rather than silently falling back to a hardcoded default when a task type has no entry —
+ * an uncontrolled model choice is exactly the kind of thing that went unnoticed in PR #54's real
+ * runs until someone happened to inspect a generation record (see
+ * RSIAgentDesignRetrospective.md's finding #2). Every task type must have an explicit entry in
+ * model_routing_config.json before it can run.
+ */
 export function getTaskModelConfig(
-  taskType: string, fallback: TaskModelConfig, configPath = DEFAULT_CONFIG_PATH,
+  taskType: string, configPath = DEFAULT_CONFIG_PATH,
 ): TaskModelConfig {
-  return readModelRoutingConfig(configPath)[taskType] ?? fallback;
+  const config = readModelRoutingConfig(configPath)[taskType];
+  if (!config) {
+    throw new Error(`No model routing config for task type "${taskType}" in ${configPath}`);
+  }
+  return config;
 }

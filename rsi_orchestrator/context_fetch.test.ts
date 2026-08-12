@@ -16,7 +16,12 @@ import {
 } from "./context_fetch";
 
 const TEST_BOOK = {canonicalName: "Zevachim"} as unknown as Book; // a real, registered book name
-const SECTION = "__ctxfetch_test__a";
+// A real, valid amud — parseRefLocation now validates pages against the real book registry (see
+// context_fetch.ts), so a made-up page string like the previous "__ctxfetch_test__a" no longer
+// resolves. This does mean the fixture below writes to the same cached_outputs path a real cache
+// run would use — see the beforeAll/afterAll pair further down, which preserves and restores any
+// real data already at that path rather than assuming it's safe to clobber.
+const SECTION = "2a";
 
 function amud(): Amud {
   return {
@@ -52,15 +57,30 @@ function amud(): Amud {
 }
 
 const filePath = cachedOutputFilePath(TEST_BOOK, SECTION);
+let preexistingContent: string | undefined;
 
 beforeAll(() => {
   fs.mkdirSync(path.dirname(filePath), {recursive: true});
+  // Preserve whatever's really there (if anything — a local `cache_all_api_requests.ts` run would
+  // populate this exact path) rather than assuming it's safe to overwrite/delete. See the comment
+  // on SECTION above for why this test can no longer use a made-up path.
+  if (fs.existsSync(filePath)) preexistingContent = fs.readFileSync(filePath, "utf-8");
+});
+
+afterAll(() => {
+  if (preexistingContent !== undefined) {
+    fs.writeFileSync(filePath, preexistingContent);
+  } else {
+    fs.rmSync(filePath, {force: true});
+  }
 });
 
 beforeEach(() => {
   resetPageIndexCacheForTests();
 });
 
+// Per-test isolation (some tests rely on the file not existing yet) — the true pre-existing
+// content, if any, is restored once by afterAll above, not on every test.
 afterEach(() => {
   fs.rmSync(filePath, {force: true});
 });
@@ -166,7 +186,9 @@ describe("getNeighborSegments", () => {
 
 describe("getPriorSugyaSkeleton", () => {
   test("returns an error when there's no sugya data for the book", () => {
-    const result = getPriorSugyaSkeleton(`Zevachim ${SECTION}:1`);
+    // Sugyot are only precomputed for Talmud masechtot — Genesis is a real registered book with
+    // no precomputed/sugyot/Genesis.json, so this exercises the "book has no data at all" branch.
+    const result = getPriorSugyaSkeleton("Genesis 1:1");
     expect(result.sugyot).toEqual([]);
     expect(result.error).toBeDefined();
   });

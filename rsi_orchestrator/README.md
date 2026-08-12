@@ -43,10 +43,13 @@ billing.
   already been triaged, so re-running doesn't re-comment on the same issue.
 - `precomputed/rsi_state/model_routing.ts` + `model_routing_config.json` — per-task-type model
   choice (`generateModel`/`critiqueModel`), read instead of a hardcoded constant so a future
-  routing tuner (Phase 4 — not built yet) can propose changes here from logged outcomes. Note the
-  config file is named `model_routing_config.json`, not `model_routing.json` — sharing a basename
-  with the `.ts` module makes Node's extensionless `require`/`import` resolve to the `.json` file
-  instead of the module, silently shadowing every export (hit this for real while building it).
+  routing tuner (Phase 4 — not built yet) can propose changes here from logged outcomes. A task
+  type with no entry throws rather than silently falling back to a default — uncontrolled model
+  selection is exactly what went unnoticed in PR #54's real runs until someone happened to inspect
+  a generation record. Note the config file is named `model_routing_config.json`, not
+  `model_routing.json` — sharing a basename with the `.ts` module makes Node's extensionless
+  `require`/`import` resolve to the `.json` file instead of the module, silently shadowing every
+  export (hit this for real while building it).
 - `precomputed/rsi_state/budget.ts` + `budget_config.json` — the human-driven schedule: per task
   type, `enabled`/`maxCallsPerRun`/`maxCallsPerDay`/`priority`, plus a top-level `pausedUntil`
   kill switch. Hand-edit this file to turn a task type on/off or change its caps — no code change
