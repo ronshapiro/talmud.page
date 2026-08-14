@@ -6,7 +6,9 @@ import {writeJson} from "../util/json_files";
  * A local, structural analog to ai_edits.ts's text-override mechanism: instead of overriding a
  * comment's he/en text, this overrides segment/comment *boundaries* — splitting one Sefaria
  * segment or Rashi/Tosafot comment into two, or merging two adjacent ones into one. Applied by
- * api_request_handler.ts's applySegmentationOverrides, between detectDupes and addAiAdditions.
+ * api_request_handler.ts's applySegmentationOverrides, after postProcessSegment/
+ * postProcessAllSegments and before addAiAdditions — see that method's doc comment for why the
+ * ordering there is load-bearing (Steinsaltz In-Depth attachment on Talmud pages).
  *
  * Deliberately explicit, not computed: like ai_edits.ts's Edit, a split's replacement text is
  * fully spelled out here rather than derived on the fly — deciding *how* an approved

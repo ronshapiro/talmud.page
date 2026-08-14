@@ -918,11 +918,23 @@ export abstract class AbstractApiRequestHandler {
   /**
    * Applies human-approved local segment/comment boundary corrections from
    * precomputed/segmentation_overrides/<page>.json (segmentation_audit.ts finds candidates;
-   * nothing here decides what to apply, it only applies what's already in that file). Runs after
-   * detectDupes and before addAiAdditions, so addAiAdditions's ref-keyed lookups see final,
-   * already-corrected refs rather than stale pre-override ones, and before
-   * postProcessSegment/postProcessAllSegments, which assume a finalized segment array. A failure
+   * nothing here decides what to apply, it only applies what's already in that file). A failure
    * applying any single override is logged and that override is skipped — never aborts the page.
+   *
+   * Runs after postProcessSegment/postProcessAllSegments and before addAiAdditions. Ordering here
+   * is load-bearing, found the hard way: TalmudApiRequestHandler's Steinsaltz In-Depth injection
+   * (addSteinsaltzData, called from postProcessAllSegments) zips `segments` *positionally* against
+   * a separate, independent Steinsaltz notes array from Sefaria — it has no idea a segmentation
+   * override exists, and the zip is index-based, not ref-based. Running this method *before*
+   * postProcessAllSegments (the first attempt) silently misattributed Steinsaltz In-Depth notes to
+   * the wrong segments even when the override's net segment-count change was zero, since the zip
+   * only cares about array position, not which original ref a segment traces back to. Running
+   * *after* means Steinsaltz In-Depth (like every other commentary type) is already correctly
+   * attached to each original segment by the time this runs, so it's carried along correctly by
+   * the same commentary.addAll()/attachExistingCommentary logic used for everything else — instead
+   * of needing this method to somehow account for that separate, position-sensitive data source.
+   * addAiAdditions still needs to run after this (not before), so its ref-keyed lookups see final,
+   * already-corrected refs rather than stale pre-override ones.
    */
   private applySegmentationOverrides(
     segments: InternalSegment[],
@@ -1588,11 +1600,19 @@ export abstract class AbstractApiRequestHandler {
     segments = this.injectSegmentSeperators(segments);
     this.dedupeTopicComments(segments);
     this.detectDupes(segments);
+    segments = segments.map(x => this.postProcessSegment(x));
+    segments = this.postProcessAllSegments(segments, ...extraValues);
+    // Runs after postProcessAllSegments, not before: TalmudApiRequestHandler's Steinsaltz In-Depth
+    // injection (addSteinsaltzData, called from postProcessAllSegments) zips segments
+    // *positionally* against a separate Steinsaltz notes array — it has no idea a segmentation
+    // override exists. Running the override after that step means Steinsaltz In-Depth is already
+    // correctly attached to each *original* segment by the time this runs, so it gets carried
+    // along correctly by the same commentary.addAll()/attachExistingCommentary logic that already
+    // carries every other commentary type — instead of the zip silently misaligning against
+    // whatever new segment shape the override produced.
     const {segments: overriddenSegments, replacedRefs} = this.applySegmentationOverrides(segments);
     segments = overriddenSegments;
     this.addAiAdditions(segments);
-    segments = segments.map(x => this.postProcessSegment(x));
-    segments = this.postProcessAllSegments(segments, ...extraValues);
 
     if (segments.length === 0) {
       this.logger.log(`No segments for ${mainRef}`);
