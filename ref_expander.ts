@@ -2,9 +2,28 @@ import {books} from "./books";
 import {splitOnBookName} from "./refs";
 import {segmentCount} from "./precomputed";
 
+function isNumeric(x: string): boolean {
+  return parseInt(x).toString() === x;
+}
+
 function pageAndSegmentNumber(combined: string, defaultPage?: string): [string, number] {
+  // A segmentation-override sub-ref (precomputed/segmentation_overrides.ts) is never a valid
+  // range endpoint — that design explicitly forbids composing further refs on top of one. Guard
+  // for it explicitly, since its trailing segment component (e.g. the "1" in "...:split:1") is
+  // still numeric on its own and wouldn't otherwise be caught by the check below.
+  if (combined.includes(":split:")) {
+    throw new Error(
+      `"${combined}" is a synthetic segmentation-override sub-ref (contains ":split:") and `
+      + "cannot be used as a range endpoint — expandRef only operates on real Sefaria refs.");
+  }
   const parts = combined.split(":");
-  const segmentNumber = parseInt(parts.at(-1)!);
+  const segmentNumberStr = parts.at(-1)!;
+  if (!isNumeric(segmentNumberStr)) {
+    throw new Error(
+      `"${combined}" has a non-numeric trailing segment component ("${segmentNumberStr}") — `
+      + "expandRef cannot expand a range endpoint that isn't a plain Sefaria segment number.");
+  }
+  const segmentNumber = parseInt(segmentNumberStr);
   if (parts.length === 2) {
     return [parts[0], segmentNumber];
   }
