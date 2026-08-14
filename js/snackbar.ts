@@ -163,6 +163,15 @@ const Kinds = {
     extraCssClasses: ["mdl-color-text--accent"],
   }),
 
+  // A local segmentation override (precomputed/segmentation_overrides.ts) replaced a ref the
+  // user has personal notes/highlights on — see js/checkReplacedRefs.ts. Not persistent
+  // show-count-limited state like most other kinds here: it should show every time it's actually
+  // relevant, on whatever page that is.
+  SEGMENTATION_CHANGED: new Kind({
+    cssClass: "segmentationChanged",
+    extraCssClasses: ["mdl-color-text--accent"],
+  }),
+
   SHARE: new Kind({
     prefix: "shareSnackbar",
     cssClass: "share-talmud-page",
@@ -242,6 +251,7 @@ class SnackbarManager {
   errors: Snackbar;
   share: Snackbar;
   reportedIssueSent: Snackbar;
+  segmentationChanged: Snackbar;
 
   startupKind: Kind | undefined;
 
@@ -266,6 +276,7 @@ class SnackbarManager {
     // TODO: make each error it's own snackbar? That way each can animate on its own
     this.errors = new Snackbar(Kinds.ERRORS, this);
     this.reportedIssueSent = new Snackbar(Kinds.REPORTED_ISSUE_SENT, this);
+    this.segmentationChanged = new Snackbar(Kinds.SEGMENTATION_CHANGED, this);
   }
 }
 
