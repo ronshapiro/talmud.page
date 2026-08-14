@@ -34,6 +34,12 @@ import {
   segmentCount,
 } from "./precomputed";
 import {aiEditsForPage} from "./precomputed/ai_edits";
+import {
+  segmentationOverridesForPage,
+  SegmentationMergeOverride,
+  SegmentationSplitOverride,
+  SplitPiece,
+} from "./precomputed/segmentation_overrides";
 import {dedupeEnglishRabbiNames, dedupeHebrewRabbiNames, topicJson} from "./precomputed/topics";
 import {llmGeneratedTopic, LlmGeneratedTopic} from "./precomputed/tanakh_context_cache";
 import {getTanakhPassage} from "./precomputed/tanakh_passages";
@@ -292,6 +298,57 @@ class Comment {
     return [sourceRef, sourceHeRef];
   }
 
+  /**
+   * Merges N adjacent comments into one — the Comment-level analog of InternalSegment.merge,
+   * used by applySegmentationOverrides for a "merge" segmentation override at comment level.
+   */
+  static merge(comments: Comment[]): Comment {
+    const {englishName} = comments[0];
+    if (comments.some(comment => comment.englishName !== englishName)) {
+      throw new Error(
+        `Cannot merge comments with different englishName: ${comments.map(c => c.englishName)}`);
+    }
+    const hebrews: string[] = [];
+    const englishes: string[] = [];
+    const refs: string[] = [];
+    for (const comment of comments) {
+      if (typeof comment.hebrew !== "string") {
+        throw new TypeError(`comment.hebrew is not a string! ${comment.ref}`);
+      } else if (typeof comment.english !== "string") {
+        throw new TypeError(`comment.english is not a string! ${comment.ref}`);
+      }
+      hebrews.push(comment.hebrew);
+      englishes.push(comment.english);
+      refs.push(comment.ref);
+    }
+    const mergedRefs = Array.from(mergeRefs(refs).keys());
+    if (mergedRefs.length !== 1) {
+      throw new Error(mergedRefs.join(" :: "));
+    }
+    return new Comment(
+      englishName,
+      hebrews.join(" "),
+      englishes.join(" "),
+      mergedRefs[0],
+      comments[0].sourceRef,
+      comments[0].sourceHeRef,
+      comments[0].talmudPageLink,
+    );
+  }
+
+  /** Splits one comment into N pieces — the Comment-level analog of InternalSegment.split. */
+  static split(comment: Comment, pieces: SplitPiece[]): Comment[] {
+    return pieces.map(piece => new Comment(
+      comment.englishName,
+      piece.hebrew,
+      piece.english,
+      piece.ref,
+      comment.sourceRef,
+      comment.sourceHeRef,
+      comment.talmudPageLink,
+    ));
+  }
+
   toJson(): ApiComment {
     const result: ApiComment = {
       he: this.hebrew,
@@ -511,6 +568,33 @@ export class InternalSegment {
     return newSegment;
   }
 
+  /**
+   * Splits one segment into N pieces. startOfSection goes to the first piece only;
+   * lastSegmentOfSection/defaultMergeWithNext go to the last piece only — mirroring how .merge
+   * already unions these flags, just in reverse. Commentary is not attached here: the caller
+   * (applySegmentationOverrides) does that, since it needs the override's
+   * attachExistingCommentary flag to decide which piece gets it. hadran isn't supported — hadran
+   * text is synthetically assembled later in per-subclass post-processing, and splitting it has
+   * no sensible semantics.
+   */
+  static split(segment: InternalSegment, pieces: SplitPiece[]): InternalSegment[] {
+    if (segment.hadran) {
+      throw new Error(`Cannot split ${segment.ref}: hadran segments aren't supported`);
+    }
+    return pieces.map((piece, i) => {
+      const newSegment = new InternalSegment(
+        {hebrew: piece.hebrew, english: piece.english, ref: piece.ref});
+      if (i === 0) {
+        newSegment.startOfSection = segment.startOfSection;
+      }
+      if (i === pieces.length - 1) {
+        newSegment.lastSegmentOfSection = segment.lastSegmentOfSection;
+        newSegment.defaultMergeWithNext = segment.defaultMergeWithNext;
+      }
+      return newSegment;
+    });
+  }
+
   toJson(): Section {
     const json: Section = {
       he: this.hebrew,
@@ -532,6 +616,116 @@ export class InternalSegment {
       json.defaultMergeWithNext = this.defaultMergeWithNext;
     }
     return json;
+  }
+}
+
+/**
+ * Free functions backing AbstractApiRequestHandler.applySegmentationOverrides — kept outside the
+ * class since none of them need `this`, only InternalSegment/Comment/InternalCommentary's
+ * existing public APIs (InternalSegment.merge/.split, Comment.merge/.split, addComment,
+ * removeCommentWithRef, nestedCommentary, addAll).
+ */
+
+function attachIndexForSplit(pieces: SplitPiece[]): number {
+  const flaggedIndices = pieces
+    .map((piece, i) => (piece.attachExistingCommentary ? i : -1))
+    .filter(i => i !== -1);
+  if (flaggedIndices.length > 1) {
+    throw new Error("More than one split piece flagged attachExistingCommentary");
+  }
+  return flaggedIndices.length === 1 ? flaggedIndices[0] : 0;
+}
+
+function findContiguousIndex(refs: string[], target: string[]): number {
+  for (let i = 0; i + target.length <= refs.length; i++) {
+    if (target.every((ref, j) => refs[i + j] === ref)) return i;
+  }
+  return -1;
+}
+
+/** Recurses into nestedCommentaries — the same recursion convention already used by
+ * TalmudApiRequestHandler.resolveDuplicatedNestedCommentaries and
+ * promote_replaceable_ai_comments.ts's walk into comment.commentary. */
+function findOwningCommentaryRecursive(
+  commentary: InternalCommentary, ref: string,
+): InternalCommentary | undefined {
+  if (commentary.comments.some(comment => comment.ref === ref)) return commentary;
+  for (const nested of Object.values(commentary.nestedCommentaries)) {
+    const found = findOwningCommentaryRecursive(nested, ref);
+    if (found) return found;
+  }
+  return undefined;
+}
+
+function findOwningCommentaryOnPage(
+  segments: InternalSegment[], ref: string,
+): InternalCommentary | undefined {
+  for (const segment of segments) {
+    const found = findOwningCommentaryRecursive(segment.commentary, ref);
+    if (found) return found;
+  }
+  return undefined;
+}
+
+function applySegmentSplit(segments: InternalSegment[], override: SegmentationSplitOverride): void {
+  const index = segments.findIndex(segment => segment.ref === override.originalRef);
+  if (index === -1) {
+    throw new Error(`Segment ${override.originalRef} not found on this page`);
+  }
+  const original = segments[index];
+  const pieces = InternalSegment.split(original, override.pieces);
+  pieces[attachIndexForSplit(override.pieces)].commentary.addAll(original.commentary);
+  segments.splice(index, 1, ...pieces);
+}
+
+function applySegmentMerge(segments: InternalSegment[], override: SegmentationMergeOverride): void {
+  const index = findContiguousIndex(segments.map(segment => segment.ref), override.refs);
+  if (index === -1) {
+    throw new Error(`Segments ${override.refs.join(", ")} not found contiguously on this page`);
+  }
+  const matched = segments.slice(index, index + override.refs.length);
+  segments.splice(index, override.refs.length, InternalSegment.merge(matched));
+}
+
+function applyCommentSplit(segments: InternalSegment[], override: SegmentationSplitOverride): void {
+  const owning = findOwningCommentaryOnPage(segments, override.originalRef);
+  if (!owning) {
+    throw new Error(`Comment ${override.originalRef} not found on this page`);
+  }
+  const original = owning.comments.find(comment => comment.ref === override.originalRef)!;
+  const pieces = Comment.split(original, override.pieces);
+  const attachIndex = attachIndexForSplit(override.pieces);
+  owning.removeCommentWithRef(override.originalRef);
+  for (const piece of pieces) owning.addComment(piece);
+  const nested = owning.nestedCommentaries[override.originalRef];
+  if (nested) {
+    delete owning.nestedCommentaries[override.originalRef];
+    owning.nestedCommentary(pieces[attachIndex].ref).addAll(nested);
+  }
+}
+
+function applyCommentMerge(segments: InternalSegment[], override: SegmentationMergeOverride): void {
+  const owning = findOwningCommentaryOnPage(segments, override.refs[0]);
+  if (!owning) {
+    throw new Error(`Comment ${override.refs[0]} not found on this page`);
+  }
+  const commentary = owning;
+  const matched = override.refs.map(ref => {
+    const comment = commentary.comments.find(c => c.ref === ref);
+    if (!comment) {
+      throw new Error(`Comment ${ref} isn't a sibling of ${override.refs[0]}`);
+    }
+    return comment;
+  });
+  const merged = Comment.merge(matched);
+  for (const ref of override.refs) commentary.removeCommentWithRef(ref);
+  commentary.addComment(merged);
+  for (const ref of override.refs) {
+    const nested = commentary.nestedCommentaries[ref];
+    if (nested) {
+      delete commentary.nestedCommentaries[ref];
+      commentary.nestedCommentary(merged.ref).addAll(nested);
+    }
   }
 }
 
@@ -719,6 +913,46 @@ export abstract class AbstractApiRequestHandler {
         comment.duplicateRefs = dupes.filter(x => x !== comment.ref);
       }
     }
+  }
+
+  /**
+   * Applies human-approved local segment/comment boundary corrections from
+   * precomputed/segmentation_overrides/<page>.json (segmentation_audit.ts finds candidates;
+   * nothing here decides what to apply, it only applies what's already in that file). Runs after
+   * detectDupes and before addAiAdditions, so addAiAdditions's ref-keyed lookups see final,
+   * already-corrected refs rather than stale pre-override ones, and before
+   * postProcessSegment/postProcessAllSegments, which assume a finalized segment array. A failure
+   * applying any single override is logged and that override is skipped — never aborts the page.
+   */
+  private applySegmentationOverrides(
+    segments: InternalSegment[],
+  ): {segments: InternalSegment[]; replacedRefs: string[]} {
+    const overridesFile = segmentationOverridesForPage(this.pageRef());
+    if (!overridesFile) return {segments, replacedRefs: []};
+
+    const replacedRefs: string[] = [];
+    for (const override of overridesFile.overrides) {
+      try {
+        if (override.kind === "split") {
+          if (override.level === "segment") {
+            applySegmentSplit(segments, override);
+          } else {
+            applyCommentSplit(segments, override);
+          }
+          replacedRefs.push(override.originalRef);
+        } else {
+          if (override.level === "segment") {
+            applySegmentMerge(segments, override);
+          } else {
+            applyCommentMerge(segments, override);
+          }
+          replacedRefs.push(...override.refs);
+        }
+      } catch (e) {
+        this.logger.error(`Skipping segmentation override for ${this.pageRef()}: ${e}`);
+      }
+    }
+    return {segments, replacedRefs};
   }
 
   private addAiAdditions(segments: InternalSegment[]) {
@@ -1354,6 +1588,8 @@ export abstract class AbstractApiRequestHandler {
     segments = this.injectSegmentSeperators(segments);
     this.dedupeTopicComments(segments);
     this.detectDupes(segments);
+    const {segments: overriddenSegments, replacedRefs} = this.applySegmentationOverrides(segments);
+    segments = overriddenSegments;
     this.addAiAdditions(segments);
     segments = segments.map(x => this.postProcessSegment(x));
     segments = this.postProcessAllSegments(segments, ...extraValues);
@@ -1369,6 +1605,7 @@ export abstract class AbstractApiRequestHandler {
       title: checkNotUndefined(this.makeTitle(), "title"),
       titleHebrew: checkNotUndefined(this.makeTitleHebrew(), "titleHebrew"),
       sections: segments.map(x => x.toJson()).concat(this.extraSegments()),
+      ...(replacedRefs.length > 0 ? {replacedRefs} : {}),
     };
   }
 

@@ -61,6 +61,12 @@ export interface ApiResponse {
   titleHebrew: string;
   id: string;
   sections: Section[];
+  // Refs that existed before a local segmentation override (precomputed/segmentation_overrides.ts)
+  // split or merged them, and no longer exist on the page. A personal note/highlight saved under
+  // one of these refs will no longer be found by the usual ref-keyed lookup — see
+  // js/checkReplacedRefs.ts, which surfaces a warning for that case rather than letting it happen
+  // silently. Only present when non-empty.
+  replacedRefs?: string[];
 }
 
 export interface ApiErrorResponse {
