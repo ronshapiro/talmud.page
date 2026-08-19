@@ -179,6 +179,7 @@ class Comment {
   isUnique: boolean | undefined;
   canReplaceParent: boolean | undefined;
   rows: Row[] = [];
+  recentlySplit?: true;
 
   constructor(
     readonly englishName: string,
@@ -298,10 +299,6 @@ class Comment {
     return [sourceRef, sourceHeRef];
   }
 
-  /**
-   * Merges N adjacent comments into one — the Comment-level analog of InternalSegment.merge,
-   * used by applySegmentationOverrides for a "merge" segmentation override at comment level.
-   */
   static merge(comments: Comment[]): Comment {
     const {englishName} = comments[0];
     if (comments.some(comment => comment.englishName !== englishName)) {
@@ -311,21 +308,21 @@ class Comment {
     const hebrews: string[] = [];
     const englishes: string[] = [];
     const refs: string[] = [];
+    const rows: Row[] = [];
     for (const comment of comments) {
-      if (typeof comment.hebrew !== "string") {
-        throw new TypeError(`comment.hebrew is not a string! ${comment.ref}`);
-      } else if (typeof comment.english !== "string") {
-        throw new TypeError(`comment.english is not a string! ${comment.ref}`);
-      }
-      hebrews.push(comment.hebrew);
-      englishes.push(comment.english);
+      // he/en can be a nested sefaria.TextType, not just a plain string — flatten() collapses it
+      // the same way the rest of this file already does (e.g. Comment.toJson()), rather than
+      // rejecting anything that isn't already flat.
+      hebrews.push(flatten(comment.hebrew) ?? "");
+      englishes.push(flatten(comment.english) ?? "");
       refs.push(comment.ref);
+      rows.push(...comment.rows);
     }
     const mergedRefs = Array.from(mergeRefs(refs).keys());
     if (mergedRefs.length !== 1) {
       throw new Error(mergedRefs.join(" :: "));
     }
-    return new Comment(
+    const merged = new Comment(
       englishName,
       hebrews.join(" "),
       englishes.join(" "),
@@ -334,19 +331,35 @@ class Comment {
       comments[0].sourceHeRef,
       comments[0].talmudPageLink,
     );
+    merged.rows = rows;
+    return merged;
   }
 
-  /** Splits one comment into N pieces — the Comment-level analog of InternalSegment.split. */
+  /**
+   * Splits one comment into N pieces — the Comment-level analog of InternalSegment.split.
+   * Comments built from `rows` (e.g. Steinsaltz In-Depth) don't have a well-defined split, since
+   * a SplitPiece only carries plain he/en strings, not per-piece rows — reject rather than
+   * silently drop the row data.
+   */
   static split(comment: Comment, pieces: SplitPiece[]): Comment[] {
-    return pieces.map(piece => new Comment(
-      comment.englishName,
-      piece.hebrew,
-      piece.english,
-      piece.ref,
-      comment.sourceRef,
-      comment.sourceHeRef,
-      comment.talmudPageLink,
-    ));
+    if (comment.rows.length > 0) {
+      throw new Error(`Cannot split ${comment.ref}: it's built from rows, not plain he/en text`);
+    }
+    return pieces.map((piece, i) => {
+      const newComment = new Comment(
+        comment.englishName,
+        piece.hebrew,
+        piece.english,
+        piece.ref,
+        comment.sourceRef,
+        comment.sourceHeRef,
+        comment.talmudPageLink,
+      );
+      if (i === 0) {
+        newComment.recentlySplit = true;
+      }
+      return newComment;
+    });
   }
 
   toJson(): ApiComment {
@@ -372,6 +385,9 @@ class Comment {
     }
     if (this.rows.length > 0) {
       result.rows = this.rows;
+    }
+    if (this.recentlySplit) {
+      result.recentlySplit = this.recentlySplit;
     }
 
     if (!this.originalRefsBeforeRewriting) {
@@ -523,6 +539,7 @@ export class InternalSegment {
   startOfSection?: true;
   lastSegmentOfSection?: true;
   defaultMergeWithNext?: true;
+  recentlySplit?: true;
 
   constructor({hebrew, english, ref}: InternalSegmentConstructorParams) {
     this.hebrew = hebrew;
@@ -586,6 +603,7 @@ export class InternalSegment {
         {hebrew: piece.hebrew, english: piece.english, ref: piece.ref});
       if (i === 0) {
         newSegment.startOfSection = segment.startOfSection;
+        newSegment.recentlySplit = true;
       }
       if (i === pieces.length - 1) {
         newSegment.lastSegmentOfSection = segment.lastSegmentOfSection;
@@ -615,16 +633,12 @@ export class InternalSegment {
     if (this.defaultMergeWithNext) {
       json.defaultMergeWithNext = this.defaultMergeWithNext;
     }
+    if (this.recentlySplit) {
+      json.recentlySplit = this.recentlySplit;
+    }
     return json;
   }
 }
-
-/**
- * Free functions backing AbstractApiRequestHandler.applySegmentationOverrides — kept outside the
- * class since none of them need `this`, only InternalSegment/Comment/InternalCommentary's
- * existing public APIs (InternalSegment.merge/.split, Comment.merge/.split, addComment,
- * removeCommentWithRef, nestedCommentary, addAll).
- */
 
 function attachIndexForSplit(pieces: SplitPiece[]): number {
   const flaggedIndices = pieces
@@ -636,9 +650,13 @@ function attachIndexForSplit(pieces: SplitPiece[]): number {
   return flaggedIndices.length === 1 ? flaggedIndices[0] : 0;
 }
 
+/** The index in `refs` where the contiguous run `target` starts, or -1 if `target` doesn't
+ * appear as a contiguous run anywhere in `refs`. */
 function findContiguousIndex(refs: string[], target: string[]): number {
-  for (let i = 0; i + target.length <= refs.length; i++) {
-    if (target.every((ref, j) => refs[i + j] === ref)) return i;
+  const lastPossibleStart = refs.length - target.length;
+  for (let start = 0; start <= lastPossibleStart; start++) {
+    const isMatchAtStart = target.every((ref, offset) => refs[start + offset] === ref);
+    if (isMatchAtStart) return start;
   }
   return -1;
 }
@@ -915,27 +933,7 @@ export abstract class AbstractApiRequestHandler {
     }
   }
 
-  /**
-   * Applies human-approved local segment/comment boundary corrections from
-   * precomputed/segmentation_overrides/<page>.json (segmentation_audit.ts finds candidates;
-   * nothing here decides what to apply, it only applies what's already in that file). A failure
-   * applying any single override is logged and that override is skipped — never aborts the page.
-   *
-   * Runs after postProcessSegment/postProcessAllSegments and before addAiAdditions. Ordering here
-   * is load-bearing, found the hard way: TalmudApiRequestHandler's Steinsaltz In-Depth injection
-   * (addSteinsaltzData, called from postProcessAllSegments) zips `segments` *positionally* against
-   * a separate, independent Steinsaltz notes array from Sefaria — it has no idea a segmentation
-   * override exists, and the zip is index-based, not ref-based. Running this method *before*
-   * postProcessAllSegments (the first attempt) silently misattributed Steinsaltz In-Depth notes to
-   * the wrong segments even when the override's net segment-count change was zero, since the zip
-   * only cares about array position, not which original ref a segment traces back to. Running
-   * *after* means Steinsaltz In-Depth (like every other commentary type) is already correctly
-   * attached to each original segment by the time this runs, so it's carried along correctly by
-   * the same commentary.addAll()/attachExistingCommentary logic used for everything else — instead
-   * of needing this method to somehow account for that separate, position-sensitive data source.
-   * addAiAdditions still needs to run after this (not before), so its ref-keyed lookups see final,
-   * already-corrected refs rather than stale pre-override ones.
-   */
+  /** Applies human-approved local segment/comment boundary corrections. */
   private applySegmentationOverrides(
     segments: InternalSegment[],
   ): {segments: InternalSegment[]; replacedRefs: string[]} {
@@ -952,13 +950,15 @@ export abstract class AbstractApiRequestHandler {
             applyCommentSplit(segments, override);
           }
           replacedRefs.push(override.originalRef);
-        } else {
+        } else if (override.kind === "merge") {
           if (override.level === "segment") {
             applySegmentMerge(segments, override);
           } else {
             applyCommentMerge(segments, override);
           }
           replacedRefs.push(...override.refs);
+        } else {
+          throw new Error(`Unknown segmentation override kind: ${JSON.stringify(override)}`);
         }
       } catch (e) {
         this.logger.error(`Skipping segmentation override for ${this.pageRef()}: ${e}`);

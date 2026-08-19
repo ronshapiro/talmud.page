@@ -30,6 +30,10 @@ export interface Section extends Highlightable {
   startOfSection?: true;
   lastSegmentOfSection?: true;
   defaultMergeWithNext?: true;
+  // Set on the first piece produced by a local segmentation-override split
+  // (precomputed/segmentation_overrides.ts) — see js/checkReplacedRefs.ts for the related
+  // replacedRefs warning. Surfaced in the UI to flag "this text was recently split."
+  recentlySplit?: true;
 }
 
 export interface Row {
@@ -54,6 +58,10 @@ export interface ApiComment extends Highlightable {
   isUnique?: boolean;
   canReplaceParent?: boolean;
   didModifyUiWithAiVersion?: boolean;
+  // Set on the first piece produced by a local segmentation-override split
+  // (precomputed/segmentation_overrides.ts). Surfaced in the UI to flag "this text was recently
+  // split."
+  recentlySplit?: true;
 }
 
 export interface ApiResponse {
