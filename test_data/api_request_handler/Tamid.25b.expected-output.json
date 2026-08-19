@@ -6,7 +6,8 @@
     "Tamid 25b:3",
     "Mishnah Middot 1:1",
     "Mishneh Torah, The Chosen Temple 8:6",
-    "Mishneh Torah, The Chosen Temple 8:7"
+    "Mishneh Torah, The Chosen Temple 8:7",
+    "Steinsaltz comment #1 on Tamid 25b:1"
   ],
   "sections": [
     {
@@ -100,20 +101,6 @@
         },
         "Steinsaltz In-Depth": {
           "comments": [
-            {
-              "ref": "Steinsaltz comment #1 on Tamid 25b:1",
-              "he": "",
-              "en": "",
-              "rows": [
-                {
-                  "ref": "Steinsaltz comment #1 on Tamid 25b:1",
-                  "hebrew": "נחלקו המפרשים בטעמו של שם זה. יש האומרים שנקרא כן משום שהיו עושים בו מדורה קטנה כדי שתהיה אש קיימת באופן קבוע לצורך המערכה, ובהשוואה למדורה הגדולה שבבית המוקד, נקרא זה \"בית הניצוץ\", שהריהו כניצוץ קטן אל מול האש הגדולה שהיתה בבית המוקד (באר שבע), ויש האומרים שנקרא כך, על שום שהיה בנוי כמין אכסדרה הפתוחה מצד אחד, והיו מנצנצים בו ניצוצי חמה, ואורו מרובה (רא\"ש).",
-                  "english": "According to some commentaries, this room was so named because there was a small fire inside, which was maintained in order to provide a perpetual reserve source for the fire of the arrangement of wood upon the altar (<i>Be’er Sheva</i>). Others suggest that the room was like a portico, i.e., it was covered with a broad roof so that it resembled an enclosure that was open on one side, and rays of light would shine into it. Consequently, the brightly lit room was called the Chamber of the Spark (Rosh)."
-                }
-              ],
-              "sourceHeRef": "בֵּית הַנִּיצוֹץ",
-              "sourceRef": "The Chamber of the Spark"
-            },
             {
               "ref": "Steinsaltz comment #2 on Tamid 25b:1",
               "he": "",
@@ -258,6 +245,33 @@
               ],
               "sourceHeRef": "מוקף רובדין של אבן",
               "sourceRef": ""
+            },
+            {
+              "ref": "Steinsaltz comment #1 on Tamid 25b:1:split:1",
+              "he": "נחלקו המפרשים בטעמו של שם זה.",
+              "en": "According to some commentaries, this room was so named because there was a small fire inside.",
+              "recentlySplit": true,
+              "rows": [
+                {
+                  "hebrew": "נחלקו המפרשים בטעמו של שם זה.",
+                  "english": "According to some commentaries, this room was so named because there was a small fire inside."
+                }
+              ],
+              "sourceHeRef": "בֵּית הַנִּיצוֹץ",
+              "sourceRef": "The Chamber of the Spark"
+            },
+            {
+              "ref": "Steinsaltz comment #1 on Tamid 25b:1:split:2",
+              "he": "ויש האומרים שנקרא כך, על שום שהיה בנוי כמין אכסדרה.",
+              "en": "Others suggest that the room was like a portico.",
+              "rows": [
+                {
+                  "hebrew": "ויש האומרים שנקרא כך, על שום שהיה בנוי כמין אכסדרה.",
+                  "english": "Others suggest that the room was like a portico."
+                }
+              ],
+              "sourceHeRef": "בֵּית הַנִּיצוֹץ",
+              "sourceRef": "The Chamber of the Spark"
             }
           ]
         },

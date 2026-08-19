@@ -336,15 +336,13 @@ class Comment {
   }
 
   /**
-   * Splits one comment into N pieces — the Comment-level analog of InternalSegment.split.
-   * Comments built from `rows` (e.g. Steinsaltz In-Depth) don't have a well-defined split, since
-   * a SplitPiece only carries plain he/en strings, not per-piece rows — reject rather than
-   * silently drop the row data.
+   * Splits one comment into N pieces — the Comment-level analog of InternalSegment.split. Each
+   * SplitPiece's hebrew/english is authored replacement content for that piece, not something
+   * derived from the original — so if the original comment was built from rows (e.g. Steinsaltz
+   * In-Depth), each new piece keeps that shape too, as a single-entry rows array, rather than
+   * losing the row-based rendering it needs.
    */
   static split(comment: Comment, pieces: SplitPiece[]): Comment[] {
-    if (comment.rows.length > 0) {
-      throw new Error(`Cannot split ${comment.ref}: it's built from rows, not plain he/en text`);
-    }
     return pieces.map((piece, i) => {
       const newComment = new Comment(
         comment.englishName,
@@ -355,6 +353,9 @@ class Comment {
         comment.sourceHeRef,
         comment.talmudPageLink,
       );
+      if (comment.rows.length > 0) {
+        newComment.rows = [{hebrew: piece.hebrew, english: piece.english}];
+      }
       if (i === 0) {
         newComment.recentlySplit = true;
       }
