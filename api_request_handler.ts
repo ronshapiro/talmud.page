@@ -343,17 +343,18 @@ class Comment {
    * losing the row-based rendering it needs.
    */
   static split(comment: Comment, pieces: SplitPiece[]): Comment[] {
+    const isRowBased = comment.rows.length > 0;
     return pieces.map((piece, i) => {
       const newComment = new Comment(
         comment.englishName,
-        piece.hebrew,
-        piece.english,
+        isRowBased ? "" : piece.hebrew,
+        isRowBased ? "" : piece.english,
         piece.ref,
         comment.sourceRef,
         comment.sourceHeRef,
         comment.talmudPageLink,
       );
-      if (comment.rows.length > 0) {
+      if (isRowBased) {
         newComment.rows = [{hebrew: piece.hebrew, english: piece.english}];
       }
       if (i === 0) {
