@@ -1,7 +1,7 @@
 import * as React from "react";
 import {postWithRetry} from "./post";
 
-const {useState} = React;
+const {useEffect, useRef, useState} = React;
 
 type Status = "collapsed" | "editing" | "sending" | "sent" | "error";
 
@@ -13,15 +13,56 @@ type Status = "collapsed" | "editing" | "sending" | "sent" | "error";
 export function RsiSuggestionBox(): React.ReactElement {
   const [status, setStatus] = useState<Status>("collapsed");
   const [text, setText] = useState("");
+  const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!menuOpen) return undefined;
+    const closeOnOutsideClick = (event: MouseEvent) => {
+      if (!menuRef.current?.contains(event.target as Node)) {
+        setMenuOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", closeOnOutsideClick);
+    return () => document.removeEventListener("mousedown", closeOnOutsideClick);
+  }, [menuOpen]);
 
   if (status === "collapsed") {
     return (
-      <div style={{padding: "8px", textAlign: "center"}}>
+      <div ref={menuRef}>
         <button
-          className="mdl-button mdl-js-button"
-          onClick={() => setStatus("editing")}>
-          Suggest something the site could do automatically
+          id="rsi-suggestion-menu-button"
+          className="mdl-button mdl-js-button mdl-button--icon"
+          aria-label="More actions"
+          aria-haspopup="true"
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen(open => !open)}>
+          <i className="material-icons">more_vert</i>
         </button>
+        {menuOpen && (
+          <div
+            style={{
+              position: "fixed",
+              top: "65px",
+              left: "65px",
+              background: "#fff",
+              boxShadow: "0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), "
+                + "0 1px 5px 0 rgba(0,0,0,.12)",
+              borderRadius: "2px",
+              zIndex: 999,
+              minWidth: "180px",
+            }}>
+            <button
+              className="mdl-button mdl-js-button"
+              style={{display: "block", width: "100%", textAlign: "left", textTransform: "none"}}
+              onClick={() => {
+                setMenuOpen(false);
+                setStatus("editing");
+              }}>
+              Suggest something the site could do automatically
+            </button>
+          </div>
+        )}
       </div>
     );
   }
