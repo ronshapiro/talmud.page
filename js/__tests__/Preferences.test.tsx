@@ -75,6 +75,24 @@ describe("showing and hiding", () => {
 
     expect(queryOrNull(container, "#preferences-container")).not.toBeNull();
   });
+
+  test("it can be toggled programmatically, as the overflow menu does", () => {
+    const {container} = render();
+
+    flush(() => (window as any).togglePreferences());
+    expect(queryOrNull(container, "#preferences-container")).not.toBeNull();
+
+    flush(() => (window as any).togglePreferences());
+    expect(queryOrNull(container, "#preferences-container")).toBeNull();
+  });
+
+  test("the close button closes the panel", () => {
+    const {container} = open();
+
+    click(query(container, "#closePreferences"));
+
+    expect(queryOrNull(container, "#preferences-container")).toBeNull();
+  });
 });
 
 describe("the display language section", () => {
@@ -154,7 +172,8 @@ describe("navigating between sections", () => {
     const {container} = open();
     expect(container.textContent).toContain("Display Language");
 
-    click(queryAll(container, "#preferences-container button.mdl-button--icon")[1]);
+    click(queryAll(container, "#preferences-container .material-icons")
+      .find(x => x.textContent === "chevron_right")!.parentElement!);
 
     expect(container.textContent).toContain("Translation");
   });
@@ -162,7 +181,8 @@ describe("navigating between sections", () => {
   test("the section index is remembered for the next visit", () => {
     const {container} = open();
 
-    click(queryAll(container, "#preferences-container button.mdl-button--icon")[1]);
+    click(queryAll(container, "#preferences-container .material-icons")
+      .find(x => x.textContent === "chevron_right")!.parentElement!);
 
     expect(localStorage.preferencesIndex).toBe("1");
   });

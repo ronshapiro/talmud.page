@@ -464,6 +464,13 @@ export function Preferences({rerender: originalRerender}: RerenderViewParams): R
     snackbars.preferencesNudge.dismissButtonImpl();
     elements.push(
       <div id="preferences-container" key="preferences-container" dir={direction}>
+        <button
+          id="closePreferences"
+          className="mdl-button mdl-js-button mdl-button--icon"
+          aria-label="Close settings"
+          onClick={() => setShowing(false)}>
+          <i className="material-icons">close</i>
+        </button>
         {editingTheme !== null && (
           <ThemeEditor
             initialTheme={editingTheme}

@@ -583,6 +583,18 @@ h2, .title, .titleHebrew {
     padding: 20px;
 }
 
+#closePreferences {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    margin: 0;
+    padding: 12px;
+    background: var(--background-color);
+    color: var(--highlight-gray);
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, .2);
+    border-radius: 4px 4px 0 0;
+}
+
 #preferences-container .modal-container button {
     padding: 0;
 }
