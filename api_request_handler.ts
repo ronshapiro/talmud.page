@@ -340,10 +340,15 @@ class Comment {
    * SplitPiece's hebrew/english is authored replacement content for that piece, not something
    * derived from the original — so if the original comment was built from rows (e.g. Steinsaltz
    * In-Depth), each new piece keeps that shape too, as a single-entry rows array, rather than
-   * losing the row-based rendering it needs.
+   * losing the row-based rendering it needs. Any image rows in the original
+   * (getSteinsaltzCommentRows can attach one or more before the text row) aren't split-able
+   * either — they move as a unit to whichever piece is flagged attachExistingCommentary (default:
+   * the first), same as nested commentary attachment in applyCommentSplit.
    */
   static split(comment: Comment, pieces: SplitPiece[]): Comment[] {
     const isRowBased = comment.rows.length > 0;
+    const imageRows = comment.rows.filter(row => row.image);
+    const attachIndex = attachIndexForSplit(pieces);
     return pieces.map((piece, i) => {
       const newComment = new Comment(
         comment.englishName,
@@ -355,7 +360,8 @@ class Comment {
         comment.talmudPageLink,
       );
       if (isRowBased) {
-        newComment.rows = [{hebrew: piece.hebrew, english: piece.english}];
+        const textRow: Row = {hebrew: piece.hebrew, english: piece.english};
+        newComment.rows = i === attachIndex ? [...imageRows, textRow] : [textRow];
       }
       if (i === 0) {
         newComment.recentlySplit = true;
