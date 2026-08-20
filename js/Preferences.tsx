@@ -450,6 +450,7 @@ export function Preferences({rerender: originalRerender}: RerenderViewParams): R
 
   const [show, setShowing] = useState(false);
   (window as any).showPreferences = () => setShowing(true);
+  (window as any).togglePreferences = () => setShowing(x => !x);
   const elements = [
     <button
       id="showSettings"

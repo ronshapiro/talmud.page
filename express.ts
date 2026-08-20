@@ -642,7 +642,7 @@ if (fs.existsSync("mailjet_api_key")) {
   });
 }
 
-// Files a GitHub issue from RsiSuggestionBox.tsx, labeled "rsi-suggestion", read periodically by
+// Files a GitHub issue from OverflowMenu.tsx, labeled "rsi-suggestion", read periodically by
 // a scheduled triage run (see RecursiveSelfImprovingAgentPlan.md). Requires GITHUB_ISSUE_TOKEN to
 // be set in the deployment environment (a GitHub token with `repo` scope) — never commit that
 // token to app.yaml or any other tracked file.

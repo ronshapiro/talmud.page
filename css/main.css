@@ -588,22 +588,21 @@ h2, .title, .titleHebrew {
 }
 
 
-#showSettings, #showSearch, #rsi-suggestion-menu-button {
+#showSettings, #showSearch, #overflow-menu-button {
     color: var(--highlight-gray);
 }
 
+/* Its own click-to-toggle logic still drives the settings panel; #overflow-menu-button's
+   "Settings" item triggers it programmatically instead of duplicating that state. */
 #showSettings {
+    display: none;
+}
+
+#overflow-menu-button {
     position: fixed;
     padding: 25px;
     top: 15px;
     left: 15px;
-}
-
-#rsi-suggestion-menu-button {
-    position: fixed;
-    padding: 25px;
-    top: 15px;
-    left: 65px;
 }
 
 #showSearch {
