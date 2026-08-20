@@ -588,7 +588,7 @@ h2, .title, .titleHebrew {
 }
 
 
-#showSettings, #showSearch {
+#showSettings, #showSearch, #rsi-suggestion-menu-button {
     color: var(--highlight-gray);
 }
 
@@ -597,6 +597,13 @@ h2, .title, .titleHebrew {
     padding: 25px;
     top: 15px;
     left: 15px;
+}
+
+#rsi-suggestion-menu-button {
+    position: fixed;
+    padding: 25px;
+    top: 15px;
+    left: 65px;
 }
 
 #showSearch {
