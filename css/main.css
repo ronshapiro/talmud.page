@@ -583,27 +583,38 @@ h2, .title, .titleHebrew {
     padding: 20px;
 }
 
+#closePreferences {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    margin: 0;
+    padding: 12px;
+    background: var(--background-color);
+    color: var(--highlight-gray);
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, .2);
+    border-radius: 4px 4px 0 0;
+}
+
 #preferences-container .modal-container button {
     padding: 0;
 }
 
 
-#showSettings, #showSearch, #rsi-suggestion-menu-button {
+#showSettings, #showSearch, #overflow-menu-button {
     color: var(--highlight-gray);
 }
 
+/* Its own click-to-toggle logic still drives the settings panel; #overflow-menu-button's
+   "Settings" item triggers it programmatically instead of duplicating that state. */
 #showSettings {
+    display: none;
+}
+
+#overflow-menu-button {
     position: fixed;
     padding: 25px;
     top: 15px;
     left: 15px;
-}
-
-#rsi-suggestion-menu-button {
-    position: fixed;
-    padding: 25px;
-    top: 15px;
-    left: 65px;
 }
 
 #showSearch {
