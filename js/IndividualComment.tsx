@@ -157,7 +157,10 @@ export function IndividualComment({
     return "ignore-drive";
   };
 
-  const extraClasses = comment.didModifyUiWithAiVersion ? ["ai-modified"] : [];
+  const extraClasses = [
+    ...(comment.didModifyUiWithAiVersion ? ["ai-modified"] : []),
+    ...(comment.recentlySplit ? ["recently-split"] : []),
+  ];
 
   if (comment.rows) {
     let i = 0;

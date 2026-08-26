@@ -5,6 +5,7 @@ import {v4 as newUuid} from "uuid";
 import {addDriveComments} from "./addDriveComments";
 import {amudMetadata} from "./amud";
 import {books} from "./books";
+import {findReplacedRefsWithPersonalContent} from "./checkReplacedRefs";
 import {CorrectionModal} from "./CorrectionModal";
 import {CommentEditorModal} from "./CommentEditorModal";
 import {$, addJqueryExtensionMethods} from "./jquery";
@@ -25,6 +26,7 @@ import {intToHebrewNumeral} from "../hebrew";
 import isEmptyText from "./is_empty_text";
 import {Version} from "./Preferences";
 import {promoteReplaceableAiComments} from "./promote_replaceable_ai_comments";
+import {snackbars} from "./snackbar";
 import {
   expandEnglishByDefaultPreference,
   isSiteLanguageHebrew,
@@ -120,6 +122,9 @@ export abstract class Renderer {
   forceUpdateRef = new FakeRef<() => void>();
   setIsReady = new FakeRef<() => void>();
   driveClient: DriveClient = undefined as any; // Set externally
+  // Amud ids already checked for replaced-ref personal-content warnings — see
+  // maybeWarnAboutReplacedRefs. Prevents re-firing on every render.
+  private checkedForReplacedRefs = new Set<string>();
   allowCompactLayout: boolean | undefined;
   expandTranslationOnMergedSectionExpansion: boolean | undefined;
   isTalmud: boolean | undefined;
@@ -339,7 +344,29 @@ export abstract class Renderer {
   getAmudim(): UiPage[] {
     const amudim = addDriveComments(this.sortedAmudim(), this.driveClient);
     amudim.forEach(amud => this._applyClientSideDataTransformations(amud));
+    this.maybeWarnAboutReplacedRefs(amudim);
     return amudim;
+  }
+
+  /** Surfaces a warning (doesn't fix anything — see js/checkReplacedRefs.ts) when a local
+   * segmentation override replaced a ref the user has personal notes/highlights on. */
+  private maybeWarnAboutReplacedRefs(amudim: UiPage[]): void {
+    // The Drive document loads asynchronously — before it has, every commentsForRef/
+    // highlightsForRef lookup would return empty, which would look identical to "genuinely no
+    // personal content" and permanently mark the amud checked before the real data arrives.
+    if (!this.driveClient?.databaseDocument?.documentId) return;
+
+    for (const amud of amudim) {
+      if (this.checkedForReplacedRefs.has(amud.id)) continue;
+      this.checkedForReplacedRefs.add(amud.id);
+      const affected = findReplacedRefsWithPersonalContent(amud, this.driveClient);
+      if (affected.length === 0) continue;
+      snackbars.segmentationChanged.show(
+        "This page's text boundaries were recently corrected. You have personal notes or "
+        + `highlights attached to text that moved (${affected.join(", ")}) — they still exist `
+        + "in your notes doc but won't display here.",
+        {text: "Dismiss", onClick: () => snackbars.segmentationChanged.hide()});
+    }
   }
 
   personalCommentsForRefs(refs: string[]): Commentary | undefined {

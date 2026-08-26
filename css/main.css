@@ -787,3 +787,12 @@ h2, .title, .titleHebrew {
     background-clip: text;
     color: transparent;
 }
+
+/* Flags a segment/comment as the first piece of a recent local segmentation-override split
+   (precomputed/segmentation_overrides.ts). Styled on the outer wrapper directly, rather than
+   mirroring .ai-modified's nested .english/.hebrew ::before selectors, since the Gemara-segment
+   rendering path (Segment.tsx) doesn't have those nested class names available. */
+.recently-split {
+    border-left: 3px solid rgb(213, 170, 255);
+    padding-left: 4px;
+}

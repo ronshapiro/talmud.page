@@ -114,9 +114,12 @@ export function Segment({
     }
     const elements = [];
     for (let i = 0; i < texts.length; i++) {
-      const {ref, uuid} = segments[i];
+      const {ref, uuid, recentlySplit} = segments[i];
       const onDoubleClick = texts.length !== 1 ? () => toggleMerging(uuid) : undefined;
       const classes = lastUnexpandedUuid === uuid ? ["fadeInBackground"] : [];
+      if (recentlySplit) {
+        classes.push("recently-split");
+      }
       elements.push(
         // TODO: consider another gesture so that the double clicking is not overloaded.
         <CellText

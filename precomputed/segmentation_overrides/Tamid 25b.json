@@ -1,0 +1,80 @@
+{
+  "overrides": [
+    {
+      "kind": "merge",
+      "level": "segment",
+      "refs": ["Tamid 25b:1", "Tamid 25b:2"]
+    },
+    {
+      "kind": "split",
+      "level": "segment",
+      "originalRef": "Tamid 25b:3",
+      "pieces": [
+        {
+          "ref": "Tamid 25b:3:split:1",
+          "hebrew": "פִּרְחֵי כְהוּנָּה אִישׁ כִּסְתּוֹ בָּאָרֶץ. לֹא הָיוּ יְשֵׁנִים בְּבִגְדֵי קֹדֶשׁ, אֶלָּא הָיוּ פּוֹשְׁטִין וּמַנִּיחִין אוֹתָן תַּחַת רָאשֵׁיהֶם, וּמִתְכַּסִּין בִּכְסוּת עַצְמָן.",
+          "english": "The <b>young men of the priesthood,</b> who were old enough to serve in the Temple, would also sleep in the Chamber of the Hearth. They would not sleep on benches, but instead <b>each</b> of the priests would sleep with <b>his garment on the ground.</b> Furthermore, <b>they would not sleep</b> dressed <b>in the sacred vestments; rather, they would remove</b> them and fold them up. <b>And</b> then <b>they</b> would <b>place</b> their vestments on the floor <b>beneath their heads, and cover themselves with their own</b> non-sacred <b>garments.</b>",
+          "attachExistingCommentary": true
+        },
+        {
+          "ref": "Tamid 25b:3:split:2",
+          "hebrew": "אֵירַע קֶרִי לְאֶחָד מֵהֶן – יוֹצֵא וְהוֹלֵךְ לוֹ",
+          "english": "If <b>a seminal emission befell one of</b> the priests, rendering him ritually impure and unfit for service, <b>he would leave</b> the Chamber of the Hearth, <b>and he would walk</b>"
+        }
+      ]
+    },
+    {
+      "kind": "split",
+      "level": "comment",
+      "originalRef": "Mishnah Middot 1:1",
+      "pieces": [
+        {
+          "ref": "Mishnah Middot 1:1:split:1",
+          "hebrew": "בִּשְׁלשָׁה מְקוֹמוֹת הַכֹּהֲנִים שׁוֹמְרִים בְּבֵית הַמִּקְדָּשׁ, בְּבֵית אַבְטִינָס, וּבְבֵית הַנִּיצוֹץ, וּבְבֵית הַמּוֹקֵד.",
+          "english": "In three places the priests keep watch in the Temple: in the chamber of Avtinas, in the chamber of the spark, and in the fire chamber."
+        },
+        {
+          "ref": "Mishnah Middot 1:1:split:2",
+          "hebrew": "וְהַלְוִיִּם בְּעֶשְׂרִים וְאֶחָד מָקוֹם. חֲמִשָּׁה, עַל חֲמִשָּׁה שַׁעֲרֵי הַר הַבַּיִת. אַרְבָּעָה, עַל אַרְבַּע פִּנּוֹתָיו מִתּוֹכוֹ. חֲמִשָּׁה, עַל חֲמִשָּׁה שַׁעֲרֵי הָעֲזָרָה. אַרְבָּעָה, עַל אַרְבַּע פִּנּוֹתֶיהָ מִבַּחוּץ. וְאֶחָד בְּלִשְׁכַּת הַקָּרְבָּן, וְאֶחָד בְּלִשְׁכַּת הַפָּרֹכֶת, וְאֶחָד לַאֲחוֹרֵי בֵית הַכַּפֹּרֶת:",
+          "english": "And the Levites in twenty-one places: Five at the five gates of the Temple Mount; Four at its four corners on the inside; Five at five of the gates of the courtyard; Four at its four corners on the outside; One at the offering chamber; One at the chamber of the curtain, And one behind the place of the kapporet.",
+          "attachExistingCommentary": true
+        }
+      ]
+    },
+    {
+      "kind": "merge",
+      "level": "comment",
+      "refs": [
+        "Mishneh Torah, The Chosen Temple 8:6",
+        "Mishneh Torah, The Chosen Temple 8:7"
+      ]
+    },
+    {
+      "kind": "split",
+      "level": "comment",
+      "originalRef": "Steinsaltz comment #1 on Tamid 25b:1",
+      "pieces": [
+        {
+          "ref": "Steinsaltz comment #1 on Tamid 25b:1:split:1",
+          "hebrew": "נחלקו המפרשים בטעמו של שם זה.",
+          "english": "According to some commentaries, this room was so named because there was a small fire inside.",
+          "attachExistingCommentary": true
+        },
+        {
+          "ref": "Steinsaltz comment #1 on Tamid 25b:1:split:2",
+          "hebrew": "ויש האומרים שנקרא כך, על שום שהיה בנוי כמין אכסדרה.",
+          "english": "Others suggest that the room was like a portico."
+        }
+      ]
+    },
+    {
+      "kind": "split",
+      "level": "segment",
+      "originalRef": "Tamid 25b:999",
+      "pieces": [
+        {"ref": "Tamid 25b:999:split:1", "hebrew": "x", "english": "x"},
+        {"ref": "Tamid 25b:999:split:2", "hebrew": "y", "english": "y"}
+      ]
+    }
+  ]
+}
