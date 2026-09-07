@@ -39,8 +39,8 @@ const PROMPT_VERSION = "v2";
 // The only tool this task type's headless calls may use — see the module doc above. Scoped to
 // this exact command so it can't fall back to arbitrary Bash use.
 const CONTEXT_FETCH_ALLOWED_TOOLS = ["Bash(npx ts-node rsi_orchestrator/context_fetch_cli.ts *)"];
-const COMMENTATORS = ["Rashi", "Tosafot"] as const;
-type Commentator = typeof COMMENTATORS[number];
+export const COMMENTATORS = ["Rashi", "Tosafot"] as const;
+export type Commentator = typeof COMMENTATORS[number];
 
 export interface TranslationCandidate {
   page: string; // e.g. "Zevachim 2a" — matches ai_additions/segmentsPerPage.json's key format

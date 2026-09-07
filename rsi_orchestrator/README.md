@@ -39,6 +39,18 @@ billing.
 - `rashi_tosafot_translation_cli.ts` — the CLI entrypoint for the above, kept in a separate file
   because `yargs` is ESM-only and breaks under jest; the core module stays importable by its test
   file this way. `--section`/`--limit` bound a run to one page / a handful of candidates.
+- `segmentation_audit.ts` + `segmentation_audit_cli.ts` — the second content-generation task type,
+  and the first one from Phase 2 of the plan: detects poorly-split Gemara segments or Rashi/Tosafot
+  comments (e.g. "this Rashi comment is really two comments") and reports findings for human
+  review. Deliberately an **audit, not a mutation** — it never changes segment boundaries itself,
+  it writes suggestions to `precomputed/rsi_state/segmentation_suggestions/<Book Page>.json` for a
+  human to act on manually. No self-critique pass either, unlike translation: since nothing here
+  is ever auto-applied, the human reviewer is the real judgment gate, not a second model call — a
+  cheap local check (no model call) does still drop any suggestion referencing a ref that isn't
+  actually on the page, as a guard against a hallucinated ref. Staleness is keyed on a *boundary
+  fingerprint* (the ordered list of segment/comment refs), not full text — a punctuation fix
+  elsewhere on the page shouldn't invalidate a boundary finding, but an actual boundary change
+  always should.
 - `precomputed/rsi_state/triage_log.json` (created on first run) — tracks which issue numbers have
   already been triaged, so re-running doesn't re-comment on the same issue.
 - `precomputed/rsi_state/model_routing.ts` + `model_routing_config.json` — per-task-type model
@@ -49,7 +61,9 @@ billing.
   a generation record. Note the config file is named `model_routing_config.json`, not
   `model_routing.json` — sharing a basename with the `.ts` module makes Node's extensionless
   `require`/`import` resolve to the `.json` file instead of the module, silently shadowing every
-  export (hit this for real while building it).
+  export (hit this for real while building it). `TaskModelConfig` always has both
+  `generateModel`/`critiqueModel` fields, even for a task type like `segmentation_audit` that has
+  no critique step — `critiqueModel` just goes unread for those.
 - `precomputed/rsi_state/budget.ts` + `budget_config.json` — the human-driven schedule: per task
   type, `enabled`/`maxCallsPerRun`/`maxCallsPerDay`/`priority`, plus a top-level `pausedUntil`
   kill switch. Hand-edit this file to turn a task type on/off or change its caps — no code change
@@ -92,6 +106,7 @@ billing.
 ```sh
 npx ts-node rsi_orchestrator/triage_suggestions.ts
 npx ts-node rsi_orchestrator/rashi_tosafot_translation_cli.ts Zevachim --section 2a --limit 2
+npx ts-node rsi_orchestrator/segmentation_audit_cli.ts Zevachim --section 2a --limit 2
 npx ts-node rsi_orchestrator/status_cli.ts
 npx ts-node rsi_orchestrator/schedule_runner.ts   # honors budget_config.json — no-ops if nothing
                                                    # is enabled/unpaused/under its daily cap

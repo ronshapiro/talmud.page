@@ -16,6 +16,15 @@ import {
   TASK_TYPE as RASHI_TOSAFOT_TRANSLATION,
   translateRashiTosafotComments,
 } from "./rashi_tosafot_translation";
+import {
+  generateAndRecord as generateAndRecordAudit,
+  isFreshAudit,
+  listCandidatesForBook as listAuditCandidatesForBook,
+  recordGenerationForCandidate as recordAuditGeneration,
+  runSegmentationAudit,
+  TASK_TYPE as SEGMENTATION_AUDIT,
+  writeAuditSuggestions,
+} from "./segmentation_audit";
 
 /**
  * `npx ts-node rsi_orchestrator/schedule_runner.ts` — the cron/launchd entrypoint (see README.md's
@@ -46,12 +55,27 @@ async function runRashiTosafotTranslation(maxCalls: number): Promise<void> {
   });
 }
 
-// Known gap: if translateRashiTosafotComments stops early on a rate limit, that's swallowed
-// internally (it just returns) rather than propagated here — with only one task type registered,
-// a session-wide rate limit and "this task type is done for now" look the same. Once a second task
-// type exists, this should propagate a "stop the whole tick" signal instead of letting the loop
-// below move on to try another task type against the same wall.
+async function runSegmentationAuditTick(maxCalls: number): Promise<void> {
+  await runSegmentationAudit({
+    listCandidates: () => {
+      const candidates = [];
+      for (const book of books.allBooks) candidates.push(...listAuditCandidatesForBook(book));
+      return candidates.filter(c => !isFreshAudit(c)).slice(0, maxCalls);
+    },
+    isFresh: isFreshAudit,
+    generate: generateAndRecordAudit,
+    writeSuggestions: (candidate, result) => writeAuditSuggestions(candidate.page, result),
+    recordGeneration: recordAuditGeneration,
+  });
+}
+
+// Known gap, now live now that two task types are registered: if a runner stops early on a rate
+// limit, that's swallowed internally (each runner's underlying loop just returns) rather than
+// propagated here — a session-wide rate limit hit while running one task type doesn't stop this
+// tick from then trying the next task type against the same wall. Worth fixing (propagate a "stop
+// the whole tick" signal) before adding more task types than this.
 export const TASK_RUNNERS: Record<string, TaskRunner> = {
+  [SEGMENTATION_AUDIT]: runSegmentationAuditTick,
   [RASHI_TOSAFOT_TRANSLATION]: runRashiTosafotTranslation,
 };
 
