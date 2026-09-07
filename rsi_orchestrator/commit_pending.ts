@@ -77,8 +77,11 @@ async function findOpenPrViaGh(): Promise<{number: number} | undefined> {
 export const realCommitPendingDeps: CommitPendingDeps = {
   gitStatusPorcelain: gitStatusPorcelainViaCli,
   findOpenPr: findOpenPrViaGh,
+  // `from` (BASE_BRANCH, i.e. "base") is a local branch name that can go stale across sessions —
+  // fetch and branch from origin's ref, not whatever the local branch happens to point at.
   checkoutNewBranch: async (branch, from) => {
-    await execFileAsync("git", ["checkout", "-B", branch, from]);
+    await execFileAsync("git", ["fetch", "origin", from]);
+    await execFileAsync("git", ["checkout", "-B", branch, `origin/${from}`]);
   },
   checkoutExistingBranch: async branch => {
     await execFileAsync("git", ["fetch", "origin", branch]);
@@ -97,7 +100,10 @@ export const realCommitPendingDeps: CommitPendingDeps = {
       "--title", title, "--body", body,
     ]);
   },
+  // Same staleness concern as checkoutNewBranch — land back on a local `base` that actually
+  // matches origin, not whatever it was left at.
   checkout: async branch => {
-    await execFileAsync("git", ["checkout", branch]);
+    await execFileAsync("git", ["fetch", "origin", branch]);
+    await execFileAsync("git", ["checkout", "-B", branch, `origin/${branch}`]);
   },
 };
