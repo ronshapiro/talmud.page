@@ -1,9 +1,7 @@
 import {Edit} from "./precomputed/ai_edits";
 
 // Opens (or adds to) a PR against ai_edits.ts entries from plain HTTPS calls to the GitHub REST
-// API — no git binary, no local checkout. This is the same approach express.ts's
-// /api/suggest-rsi-task already uses to file an issue: GitHub's Contents/Git-Refs/Pulls endpoints
-// let a stateless server (this runs on App Engine) create commits and PRs over HTTP.
+// API — no git binary, no local checkout, so the server can remain stateless.
 const REPO = "ronshapiro/talmud.page";
 const BASE_BRANCH = "base";
 // Every branch this module creates starts with this — how findOpenReviewPr recognizes "a PR this
