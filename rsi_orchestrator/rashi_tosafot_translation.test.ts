@@ -153,7 +153,7 @@ describe("translateRashiTosafotComments", () => {
       writeEdit,
       recordGeneration,
     }));
-    expect(writeEdit).toHaveBeenCalledWith(candidate(), gen.edit);
+    expect(writeEdit).toHaveBeenCalledWith(candidate(), {...gen.edit, status: "pending"});
     expect(recordGeneration).toHaveBeenCalledWith(candidate(), gen);
   });
 

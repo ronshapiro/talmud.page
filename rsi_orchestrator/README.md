@@ -64,6 +64,29 @@ billing.
   (capped by `maxCallsPerRun` and the remaining daily budget), then stops — never an open-ended
   run. See "Scheduling" below for wiring this into launchd.
 
+- **In-page review (Phase 3, translation only)** — `rashi_tosafot_translation.ts` now writes every
+  generated candidate with `status: "pending"` (see `precomputed/ai_edits.ts`) instead of shipping
+  it live. Pending content still renders to every site visitor, badged as pending — only the
+  approve/edit/reject action is gated. A reviewer visits any page with `?rsiReviewKey=<secret>`
+  once; the client persists it (`js/rsiReviewKey.ts`) and shows Approve/Edit/Reject controls
+  (`js/RsiReviewControls.tsx`) on every pending comment from then on. Those controls call
+  `POST /api/rsi-review-decision` (`express.ts`), which checks the key against `RSI_REVIEW_KEY`
+  and opens a PR via the GitHub REST API (`rsi_review_pr.ts` — no git checkout needed; see that
+  file for how). Decisions batch **per reviewer**: each browser remembers its own last-known-open
+  PR number (`rsiReviewPrNumberPreference`) and sends it along as `knownPrNumber`; the server
+  reuses that specific PR (if still open) rather than opening a new one per click, but two
+  reviewers batching at the same time never share a branch, since each only ever reuses a PR it
+  was itself handed back. Merging a PR is what closes that reviewer's current batch; their next
+  decision after that starts a fresh one. A reviewer also enters a name/email once
+  (`rsiReviewerIdentityPreference`, prompted via a modal on first use), included in every
+  PR/commit this flow creates for attribution — self-reported, not verified, since this codebase
+  has no login system. **Requires two env vars set in the deployment environment**, neither
+  committed anywhere: `GITHUB_ISSUE_TOKEN` (already required above, `repo`-scoped) and
+  `RSI_REVIEW_KEY` (a secret string of your choosing — this is the value you put in the
+  `?rsiReviewKey=` link). Segmentation-audit review (writing to
+  `precomputed/segmentation_overrides.ts` instead of `ai_edits.ts`) is a deliberate fast-follow,
+  not built yet — see the RSI Phase 3 plan.
+
 ## Running manually
 
 ```sh

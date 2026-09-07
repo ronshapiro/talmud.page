@@ -8,12 +8,14 @@ import {
   mount,
   query,
   queryAll,
+  queryOrNull,
   texts,
   unmountAll,
 } from "./testing/dom";
 import {clearPageEnvironment, installPageEnvironment} from "./testing/page_environment";
 import {comment, resetFixtureCounter} from "./testing/fixtures";
 import {ApiComment} from "../../apiTypes";
+import {rsiReviewKeyPreference} from "../settings";
 
 beforeEach(() => {
   installPageEnvironment();
@@ -183,6 +185,17 @@ describe("the rows path compared with the he/en path", () => {
       expect(classesOf(query(root, ".table-row"))).toContain("ai-modified");
     }
   });
+
+  test("marks text rows as pending-review for every reader, review controls only for a key-holder",
+    () => {
+      const withoutKey = renderComment({he: "אחד", en: "", pendingReview: "Zevachim 2a"});
+      expect(classesOf(query(withoutKey, ".table-row"))).toContain("pending-review");
+      expect(queryOrNull(withoutKey, ".rsi-review-controls")).toBeNull();
+
+      rsiReviewKeyPreference.set("secret123");
+      const withKey = renderComment({he: "אחד", en: "", pendingReview: "Zevachim 2a"});
+      expect(query(withKey, ".rsi-review-controls")).toBeTruthy();
+    });
 
   test("image rows do not get the AI-modified marker that their text row gets", () => {
     // The image row is built with `extraClasses={["commentFullRowImage"]}`, discarding the

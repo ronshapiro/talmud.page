@@ -11,6 +11,9 @@ import {
   layoutOptionPreference,
   offlineModePreference,
   preferredVersionPreference,
+  rsiReviewerIdentityPreference,
+  rsiReviewKeyPreference,
+  rsiReviewPrNumberPreference,
   setSiteLanguage,
   showAlternateVersionsPreference,
   showPageMetadataPreference,
@@ -105,6 +108,9 @@ describe("preference-backed settings", () => {
     [ignoreLocalCachePreference, "ignoreLocalCache", "true"],
     [disablePrecachingPreference, "disablePrecaching", "true"],
     [darkModePreference, "darkMode", "gray"],
+    [rsiReviewKeyPreference, "rsiReviewKey", "secret123"],
+    [rsiReviewerIdentityPreference, "rsiReviewerIdentity", "ron@example.com"],
+    [rsiReviewPrNumberPreference, "rsiReviewPrNumber", "42"],
   ];
 
   test.each(cases)("%#: is undefined when unset, and round trips through its own key", (

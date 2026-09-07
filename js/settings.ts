@@ -103,3 +103,25 @@ export const darkModePreference = preference<string>("darkMode");
 export function preferredVersionPreference(resourceType: string): Preference<string> {
   return preference<string>(`preferredVersion_${resourceType}`);
 }
+
+/**
+ * The RSI review-decision key (see rsiReviewKey.ts) — not a `Preferences.tsx` radio-button
+ * setting like the rest of this file, since it's acquired via a one-time `?rsiReviewKey=` URL
+ * param rather than chosen from the UI, but it's still a single `localStorage`-backed value, so it
+ * follows the same typed-accessor convention as everything else here.
+ */
+export const rsiReviewKeyPreference = preference<string>("rsiReviewKey");
+
+/**
+ * Free-text name/email a reviewer enters once (see RsiReviewControls.tsx), for PR/commit
+ * attribution — this codebase has no login system, so this is self-reported, not verified.
+ */
+export const rsiReviewerIdentityPreference = preference<string>("rsiReviewerIdentity");
+
+/**
+ * This browser's own last-known-open RSI review PR number, as a string (stringified, since
+ * `preference` is string-typed like every other entry here — parse with `Number(...)` at the
+ * read site). Lets each reviewer batch their own decisions into their own PR without colliding
+ * with a different reviewer's (see rsi_review_pr.ts's `knownPrNumber`).
+ */
+export const rsiReviewPrNumberPreference = preference<string>("rsiReviewPrNumber");

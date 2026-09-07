@@ -32,6 +32,7 @@ import {writeJson} from "./util/json_files";
 import {getWeekdayReading} from "./weekday_parshiot";
 import {registerCalendarRoutes} from "./calendars";
 import {formatListEnglish, formatListHebrew} from "./util/formatting";
+import {openReviewDecisionPr} from "./rsi_review_pr";
 
 const app = express();
 const debug = app.settings.env === "development";
@@ -690,6 +691,48 @@ app.post("/api/suggest-rsi-task", async (req, res) => {
     res.status(200).send({});
   } catch (e) {
     console.error(e);
+    res.sendStatus(500);
+  }
+});
+
+// Approve (optionally with edited text), or reject, a single precomputed/ai_additions/ entry
+// with status: "pending" (see RsiReviewControls.tsx). Pending content is visible to every reader
+// already — this endpoint is the only thing gated by RSI_REVIEW_KEY, since only the mutating
+// action needs a reviewer. Requires GITHUB_ISSUE_TOKEN (same token/scope as
+// /api/suggest-rsi-task above) and RSI_REVIEW_KEY to be set in the deployment environment.
+app.post("/api/rsi-review-decision", async (req, res) => {
+  const {
+    page, ref, decision, hebrew, english, reason, key, knownPrNumber, reviewerIdentity,
+  } = req.body ?? {};
+  if (!process.env.RSI_REVIEW_KEY || key !== process.env.RSI_REVIEW_KEY) {
+    res.sendStatus(403);
+    return;
+  }
+  if (typeof page !== "string" || typeof ref !== "string"
+      || (decision !== "approve" && decision !== "reject")) {
+    res.sendStatus(400);
+    return;
+  }
+
+  const token = process.env.GITHUB_ISSUE_TOKEN;
+  if (!token) {
+    req.logger.error("GITHUB_ISSUE_TOKEN is not configured; dropping RSI review decision", ref);
+    res.sendStatus(503);
+    return;
+  }
+
+  if (debug) {
+    req.logger.log("Not opening a review-decision PR in debug mode", {page, ref, decision});
+    res.status(200).send({url: undefined, prNumber: undefined});
+    return;
+  }
+
+  try {
+    const result = await openReviewDecisionPr(
+      {page, ref, decision, hebrew, english, reason, knownPrNumber, reviewerIdentity}, token);
+    res.status(200).send(result);
+  } catch (e) {
+    req.logger.error(e);
     res.sendStatus(500);
   }
 });

@@ -180,6 +180,7 @@ class Comment {
   canReplaceParent: boolean | undefined;
   rows: Row[] = [];
   recentlySplit?: true;
+  pendingReview?: string;
 
   constructor(
     readonly englishName: string,
@@ -396,6 +397,9 @@ class Comment {
     }
     if (this.recentlySplit) {
       result.recentlySplit = this.recentlySplit;
+    }
+    if (this.pendingReview) {
+      result.pendingReview = this.pendingReview;
     }
 
     if (!this.originalRefsBeforeRewriting) {
@@ -1006,6 +1010,9 @@ export abstract class AbstractApiRequestHandler {
       );
       if (canReplaceParent) {
         comment.canReplaceParent = canReplaceParent;
+      }
+      if (additions[ref].status === "pending") {
+        comment.pendingReview = this.pageRef();
       }
 
       return comment;
