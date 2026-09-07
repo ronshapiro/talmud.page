@@ -8,6 +8,7 @@ import {
   runnableTaskTypesByPriority,
 } from "../precomputed/rsi_state/budget";
 import {readContextUsageLog} from "../precomputed/rsi_state/context_usage_log";
+import {commitAndPushPendingCandidates, realCommitPendingDeps} from "./commit_pending";
 import {
   generateAndRecord,
   isFreshTranslation,
@@ -102,6 +103,8 @@ async function main(): Promise<void> {
     callsToday: callsTodayFromLog,
     runners: TASK_RUNNERS,
   });
+  await commitAndPushPendingCandidates(
+    "RSI: new pending translation candidates", realCommitPendingDeps);
 }
 
 if (require.main === module) {

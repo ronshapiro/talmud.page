@@ -2,6 +2,7 @@ import * as yargs from "yargs";
 import {hideBin} from "yargs/helpers";
 import {books} from "../books";
 import {writeAiEdit} from "../precomputed/ai_edits";
+import {commitAndPushPendingCandidates, realCommitPendingDeps} from "./commit_pending";
 import {
   generateAndRecord,
   isFreshTranslation,
@@ -47,6 +48,8 @@ async function main(): Promise<void> {
     writeEdit: (candidate, edit) => writeAiEdit(candidate.page, candidate.ref, edit),
     recordGeneration: recordGenerationForCandidate,
   });
+  await commitAndPushPendingCandidates(
+    `RSI: new pending translation candidates (${bookName})`, realCommitPendingDeps);
 }
 
 main().catch(e => {
