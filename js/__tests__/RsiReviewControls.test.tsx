@@ -138,7 +138,7 @@ describe("RsiReviewControls", () => {
       });
     });
 
-    test("reject shows a modal for the reason instead of a native prompt", async () => {
+    test("reject shows a modal for the reason", async () => {
       (postWithRetry as jest.Mock).mockResolvedValue({});
       const root = mount(<RsiReviewControls comment={
         comment({pendingReview: "Zevachim 2a", ref: "Zevachim 2a:1"})

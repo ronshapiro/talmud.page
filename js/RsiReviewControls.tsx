@@ -81,9 +81,6 @@ export function RsiReviewControls({comment}: {comment: ApiComment}): React.React
   if (editing) {
     return (
       <div className="rsi-review-controls rsi-review-editing">
-        {/* Controlled inputs with a stable position/key in the tree — only this leaf component
-            re-renders on a keystroke, so React patches the existing DOM node's value rather than
-            recreating it, which is what keeps the caret position intact across re-renders. */}
         <textarea
           dir="rtl"
           value={hebrew}
@@ -123,7 +120,7 @@ export function RsiReviewControls({comment}: {comment: ApiComment}): React.React
         <Modal
           content={(
             <div>
-              <p>Your name or email, so RSI review PRs/commits can be attributed to you:</p>
+              <p>Your name or email, so your changes can be attributed:</p>
               <input ref={identityInputRef} type="text" className="mdl-textfield__input" />
             </div>
           )}

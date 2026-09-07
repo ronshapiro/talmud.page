@@ -65,10 +65,7 @@ export interface ApiComment extends Highlightable {
   // Carries the *page* identifier (e.g. "Zevachim 2a" — matching ai_edits.ts's OUTPUT_DIR keying)
   // rather than being a plain boolean, because that's the one piece RsiReviewControls.tsx cannot
   // otherwise recover: ApiComment only has this comment's own ref (e.g. "Rashi on Zevachim
-  // 2a:1:1"), and parsing a page out of a ref string client-side would be fragile (varies by
-  // comment kind, and breaks the moment a ref's shape changes upstream). Server-side,
-  // this.pageRef() is already known for free where addAiAdditions() sets this flag, so it's
-  // cheapest to just carry it along.
+  // 2a:1:1"), and parsing a page out of a ref string client-side would be fragile.
   pendingReview?: string;
   // Set on the first piece produced by a local segmentation-override split
   // (precomputed/segmentation_overrides.ts). Surfaced in the UI to flag "this text was recently
