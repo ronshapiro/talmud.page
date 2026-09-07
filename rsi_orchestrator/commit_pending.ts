@@ -8,6 +8,13 @@ const BASE_BRANCH = "base";
 // rsi_review_pr.ts's per-reviewer batching (which has to handle concurrent browser reviewers),
 // this only ever runs sequentially on one machine, so there's no concurrent-writer case to guard
 // against by scoping per-caller.
+//
+// A plain (non-force) push relies on this branch never colliding with a stale ref of the same
+// name once its PR merges — true only because the repo has "automatically delete head branches"
+// enabled. Without that setting, a squash-merged PR leaves its branch behind, and the next run's
+// freshly re-created branch (built from base, which now has an equivalent-but-different commit)
+// would be a non-fast-forward push. Hit this for real once; fix is the repo setting, not a
+// --force here — a failed push should fail loudly, not be silently forced past.
 const BRANCH = "rsi-pending-candidates";
 
 export interface CommitPendingDeps {
@@ -18,12 +25,7 @@ export interface CommitPendingDeps {
   checkoutNewBranch: (branch: string, from: string) => Promise<void>;
   checkoutExistingBranch: (branch: string) => Promise<void>;
   commitAiAdditions: (message: string) => Promise<void>;
-  // `force` is true exactly when this branch was just freshly re-created off base
-  // (checkoutNewBranch, not checkoutExistingBranch) — needed because a merged PR's branch ref
-  // often isn't deleted on GitHub, and a squash/rebase merge means the new branch (built from
-  // base, which now has an
-  // equivalent-but-different commit) is no longer a fast-forward of that stale remote ref.
-  push: (branch: string, force: boolean) => Promise<void>;
+  push: (branch: string) => Promise<void>;
   openPr: (branch: string, title: string, body: string) => Promise<void>;
   checkout: (branch: string) => Promise<void>;
 }
@@ -50,7 +52,7 @@ export async function commitAndPushPendingCandidates(
   }
 
   await deps.commitAiAdditions(message);
-  await deps.push(BRANCH, !openPr);
+  await deps.push(BRANCH);
 
   if (!openPr) {
     await deps.openPr(
@@ -96,14 +98,8 @@ export const realCommitPendingDeps: CommitPendingDeps = {
     await execFileAsync("git", ["add", "precomputed/ai_additions"]);
     await execFileAsync("git", ["commit", "-m", message]);
   },
-  push: async (branch, force) => {
-    // Plain --force, not --force-with-lease: the safety property we need ("don't clobber an
-    // open PR's active branch") is already guaranteed by findOpenPr's check before this ever
-    // runs, not by comparing against a remote-tracking ref we may never have fetched (the
-    // new-branch path only fetches origin/base, not origin/<branch>).
-    const args = ["push", "-u", "origin", branch];
-    if (force) args.push("--force");
-    await execFileAsync("git", args);
+  push: async branch => {
+    await execFileAsync("git", ["push", "-u", "origin", branch]);
   },
   openPr: async (branch, title, body) => {
     await execFileAsync("gh", [

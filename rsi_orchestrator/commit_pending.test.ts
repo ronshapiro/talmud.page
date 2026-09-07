@@ -48,10 +48,7 @@ describe("commitAndPushPendingCandidates", () => {
     expect(checkoutNewBranch).toHaveBeenCalledWith("rsi-pending-candidates", "base");
     expect(checkoutExistingBranch).not.toHaveBeenCalled();
     expect(commitAiAdditions).toHaveBeenCalledWith("New candidates");
-    // force: true — a freshly re-created branch may collide with a stale, already-merged remote
-    // ref of the same name (GitHub doesn't always delete a merged PR's branch), so this has to
-    // be allowed to overwrite it.
-    expect(push).toHaveBeenCalledWith("rsi-pending-candidates", true);
+    expect(push).toHaveBeenCalledWith("rsi-pending-candidates");
     expect(openPr).toHaveBeenCalledWith(
       "rsi-pending-candidates", expect.any(String), expect.any(String));
     expect(checkout).toHaveBeenCalledWith("base");
@@ -73,7 +70,7 @@ describe("commitAndPushPendingCandidates", () => {
     expect(checkoutExistingBranch).toHaveBeenCalledWith("rsi-pending-candidates");
     expect(checkoutNewBranch).not.toHaveBeenCalled();
     expect(openPr).not.toHaveBeenCalled();
-    expect(push).toHaveBeenCalledWith("rsi-pending-candidates", false);
+    expect(push).toHaveBeenCalledWith("rsi-pending-candidates");
   });
 
   test("always returns to base afterward, even when reusing an open PR", async () => {
