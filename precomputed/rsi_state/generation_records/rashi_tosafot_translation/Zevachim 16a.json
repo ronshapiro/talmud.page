@@ -1,0 +1,73 @@
+{
+  "Rashi on Zevachim 16a:1:1": {
+    "costUsd": 0.1291848,
+    "dependsOn": [],
+    "generatedAt": "2026-09-07T12:56:54.717Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Zevachim 16a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זר שאינו אוכל</strong> - בקדשי קדשים:"
+  },
+  "Rashi on Zevachim 16a:2:1": {
+    "costUsd": 0.11456279999999999,
+    "dependsOn": [],
+    "generatedAt": "2026-09-07T13:15:24.366Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Zevachim 16a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שכן עשה בו קרב כמקריב</strong> - המום פוסל בקרבן כדרך שפוסל בכהן:"
+  },
+  "Rashi on Zevachim 16a:3:1": {
+    "costUsd": 0.157652,
+    "dependsOn": [],
+    "generatedAt": "2026-09-07T13:16:54.213Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Zevachim 16a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טמא יוכיח</strong> - שלא עשה בו קרב כמקריב שאין בהמה מקבלת טומאה מחיים כשם שהכהן טמא מחיים וכתיב וינזרו ולא יחללו אלמא טמא שעבד חילל:"
+  },
+  "Rashi on Zevachim 16a:4:1": {
+    "costUsd": 0.2350022,
+    "dependsOn": [],
+    "generatedAt": "2026-09-07T13:21:30.818Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Zevachim 16a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמוזהרין</strong> - שלא לעבוד טמא מוינזרו בעל מום מולא יגש:"
+  },
+  "Tosafot on Zevachim 16a:1:1": {
+    "costUsd": 0.17953819999999998,
+    "dependsOn": [],
+    "generatedAt": "2026-09-07T13:14:44.973Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Zevachim 16a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זר שאינו אוכל כו'</strong> - ואין לומר דטמא בקרבן צבור וכהן גדול אונן יוכיח שאינן אוכלין ועובדים דמה להנך שכן אינן מוזהרים תאמר בזר דמוזהר:"
+  },
+  "Tosafot on Zevachim 16a:3:1": {
+    "costUsd": 0.33246699999999996,
+    "dependsOn": [
+      "Rashi on Zevachim 16a:3:1",
+      "Zevachim 16a:3",
+      "Zevachim 16a:2",
+      "Tosafot on Zevachim 16a:2:1"
+    ],
+    "generatedAt": "2026-09-07T13:19:40.569Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Zevachim 16a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה לטמא שכן מטמא</strong> - לא מצי למיפרך שכן עשה בו קריבים כמקריבים [<span class=\"rashi-quotation\">כדפי' בקונטרס</span>]:"
+  }
+}

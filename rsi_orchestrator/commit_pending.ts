@@ -8,6 +8,13 @@ const BASE_BRANCH = "base";
 // rsi_review_pr.ts's per-reviewer batching (which has to handle concurrent browser reviewers),
 // this only ever runs sequentially on one machine, so there's no concurrent-writer case to guard
 // against by scoping per-caller.
+//
+// A plain (non-force) push relies on this branch never colliding with a stale ref of the same
+// name once its PR merges — true only because the repo has "automatically delete head branches"
+// enabled. Without that setting, a squash-merged PR leaves its branch behind, and the next run's
+// freshly re-created branch (built from base, which now has an equivalent-but-different commit)
+// would be a non-fast-forward push. Hit this for real once; fix is the repo setting, not a
+// --force here — a failed push should fail loudly, not be silently forced past.
 const BRANCH = "rsi-pending-candidates";
 
 export interface CommitPendingDeps {

@@ -58,16 +58,19 @@ describe("commitAndPushPendingCandidates", () => {
     const checkoutNewBranch = jest.fn();
     const checkoutExistingBranch = jest.fn();
     const openPr = jest.fn();
+    const push = jest.fn();
     await commitAndPushPendingCandidates("More candidates", fakeDeps({
       findOpenPr: async () => ({number: 42}),
       checkoutNewBranch,
       checkoutExistingBranch,
       openPr,
+      push,
     }));
 
     expect(checkoutExistingBranch).toHaveBeenCalledWith("rsi-pending-candidates");
     expect(checkoutNewBranch).not.toHaveBeenCalled();
     expect(openPr).not.toHaveBeenCalled();
+    expect(push).toHaveBeenCalledWith("rsi-pending-candidates");
   });
 
   test("always returns to base afterward, even when reusing an open PR", async () => {
