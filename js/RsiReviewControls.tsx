@@ -34,10 +34,8 @@ async function postDecision(
 
 /**
  * Approve/edit/reject controls for a single pending AI-generated comment (comment.pendingReview
- * set — see api_request_handler.ts's addAiAdditions). Rendered inline in IndividualComment.tsx
- * for every reader, but only shown when a review key has been acquired (see rsiReviewKey.ts) —
- * the endpoint itself independently re-checks the key, so this is a rendering convenience, not
- * the actual security boundary.
+ * set. Rendered inline in IndividualComment for every reader, but only shown when a review key
+ * has been acquired.
  */
 export function RsiReviewControls({comment}: {comment: ApiComment}): React.ReactElement | null {
   const [editing, setEditing] = useState(false);
