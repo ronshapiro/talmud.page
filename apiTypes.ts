@@ -58,6 +58,11 @@ export interface ApiComment extends Highlightable {
   isUnique?: boolean;
   canReplaceParent?: boolean;
   didModifyUiWithAiVersion?: boolean;
+  // Set (to the page identifier ai_edits.ts files are keyed by, e.g. "Zevachim 2a" — needed by
+  // RsiReviewControls.tsx's POST body) when this comment's text comes from an ai_edits.ts entry
+  // with status: "pending" — not yet approved via /api/rsi-review-decision. Visible to every
+  // reader (see RsiReviewControls.tsx for why), but only a key-holder gets the controls.
+  pendingReview?: string;
   // Set on the first piece produced by a local segmentation-override split
   // (precomputed/segmentation_overrides.ts). Surfaced in the UI to flag "this text was recently
   // split."

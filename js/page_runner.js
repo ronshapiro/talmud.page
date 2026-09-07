@@ -12,9 +12,11 @@ import {PromiseQueue, timeoutPromise} from "./promises";
 import {registerRefSelectionSnackbarListener} from "./ref_selection_snackbar.ts";
 import {serviceWorkerMain} from "./service_worker_registration.ts";
 import {initializeLocalStorage} from "./initializeLocalStorage";
+import {initializeRsiReviewKey} from "./rsiReviewKey.ts";
 import {disablePrecachingPreference, isSiteLanguageHebrew} from "./settings.ts";
 
 initializeLocalStorage();
+initializeRsiReviewKey();
 
 const bookTitleAndRange = () => {
   const metadata = amudMetadata();

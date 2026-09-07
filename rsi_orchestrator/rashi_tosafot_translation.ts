@@ -145,7 +145,7 @@ export async function translateRashiTosafotComments(deps: TranslationDeps): Prom
       continue;
     }
     if (!generated) continue;
-    deps.writeEdit(candidate, generated.edit);
+    deps.writeEdit(candidate, {...generated.edit, status: "pending"});
     deps.recordGeneration(candidate, generated);
   }
 }

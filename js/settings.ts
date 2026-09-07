@@ -103,3 +103,11 @@ export const darkModePreference = preference<string>("darkMode");
 export function preferredVersionPreference(resourceType: string): Preference<string> {
   return preference<string>(`preferredVersion_${resourceType}`);
 }
+
+/**
+ * The RSI review-decision key (see rsiReviewKey.ts) — not a `Preferences.tsx` radio-button
+ * setting like the rest of this file, since it's acquired via a one-time `?rsiReviewKey=` URL
+ * param rather than chosen from the UI, but it's still a single `localStorage`-backed value, so it
+ * follows the same typed-accessor convention as everything else here.
+ */
+export const rsiReviewKeyPreference = preference<string>("rsiReviewKey");

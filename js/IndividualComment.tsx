@@ -10,6 +10,7 @@ import {useHtmlRef} from "./hooks";
 import {flatten} from "../sefariaTextType";
 import componentHandler from "./componentHandler";
 import {hideGemaraTranslationByDefaultPreference} from "./settings";
+import {RsiReviewControls} from "./RsiReviewControls";
 
 const {
   useEffect,
@@ -160,6 +161,7 @@ export function IndividualComment({
   const extraClasses = [
     ...(comment.didModifyUiWithAiVersion ? ["ai-modified"] : []),
     ...(comment.recentlySplit ? ["recently-split"] : []),
+    ...(comment.pendingReview ? ["pending-review"] : []),
   ];
 
   if (comment.rows) {
@@ -239,6 +241,9 @@ export function IndividualComment({
   });
   if ((comment.duplicateRefs?.length ?? 0) > 0) {
     output.push(<ReportDuplicateButton key="dupe" comment={comment} buttonRef={buttonRef} />);
+  }
+  if (comment.pendingReview) {
+    output.push(<RsiReviewControls key="rsi-review" comment={comment} />);
   }
 
   return <>{output}</>;

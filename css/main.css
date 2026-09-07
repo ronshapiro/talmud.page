@@ -796,3 +796,25 @@ h2, .title, .titleHebrew {
     border-left: 3px solid rgb(213, 170, 255);
     padding-left: 4px;
 }
+
+/* Flags an AI-generated comment awaiting approve/edit/reject via RsiReviewControls.tsx (see
+   apiTypes.ts's pendingReview). Visible to every reader, not just a review-key holder — only the
+   controls themselves are key-gated. */
+.pending-review {
+    border-left: 3px solid rgb(255, 179, 71);
+    padding-left: 4px;
+}
+
+.rsi-review-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 4px;
+}
+
+.rsi-review-editing textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 4px;
+}
