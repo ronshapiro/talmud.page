@@ -72,7 +72,10 @@ billing.
   (`js/RsiReviewControls.tsx`) on every pending comment from then on. Those controls call
   `POST /api/rsi-review-decision` (`express.ts`), which checks the key against `RSI_REVIEW_KEY`
   and opens a PR via the GitHub REST API (`rsi_review_pr.ts` — no git checkout needed; see that
-  file for how). **Requires two env vars set in the deployment environment**, neither committed
+  file for how). Decisions batch automatically: each call reuses whatever PR this flow currently
+  has open (found by branch-name prefix, `findOpenReviewPr`) and adds another commit to it, rather
+  than opening a new PR per click — merging that PR is what closes the current batch; the next
+  decision after that starts a fresh one. **Requires two env vars set in the deployment environment**, neither committed
   anywhere: `GITHUB_ISSUE_TOKEN` (already required above, `repo`-scoped) and `RSI_REVIEW_KEY` (a
   secret string of your choosing — this is the value you put in the `?rsiReviewKey=` link).
   Segmentation-audit review (writing to `precomputed/segmentation_overrides.ts` instead of
