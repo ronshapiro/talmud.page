@@ -1,9 +1,14 @@
-import {getRsiReviewKey, initializeRsiReviewKey} from "../rsiReviewKey";
+import {
+  getRsiReviewKey,
+  initializeRsiReviewKey,
+  resetRsiReviewKeyInitializationForTesting,
+} from "../rsiReviewKey";
 import {rsiReviewKeyPreference} from "../settings";
 
 beforeEach(() => {
   localStorage.clear();
   window.history.pushState({}, "", "/Zevachim/2a");
+  resetRsiReviewKeyInitializationForTesting();
 });
 
 describe("initializeRsiReviewKey", () => {
@@ -30,6 +35,16 @@ describe("initializeRsiReviewKey", () => {
 
     expect(window.location.search).toBe("?foo=bar");
   });
+
+  test("only checks the URL once, even across repeated calls", () => {
+    window.history.pushState({}, "", "/Zevachim/2a?rsiReviewKey=secret123");
+    initializeRsiReviewKey();
+
+    window.history.pushState({}, "", "/Zevachim/2a?rsiReviewKey=different");
+    initializeRsiReviewKey();
+
+    expect(rsiReviewKeyPreference.get()).toBe("secret123");
+  });
 });
 
 describe("getRsiReviewKey", () => {
@@ -39,5 +54,12 @@ describe("getRsiReviewKey", () => {
     rsiReviewKeyPreference.set("secret123");
 
     expect(getRsiReviewKey()).toBe("secret123");
+  });
+
+  test("picks up the URL param on its own, even if initializeRsiReviewKey was never called", () => {
+    window.history.pushState({}, "", "/Zevachim/2a?rsiReviewKey=secret123");
+
+    expect(getRsiReviewKey()).toBe("secret123");
+    expect(window.location.search).toBe("");
   });
 });

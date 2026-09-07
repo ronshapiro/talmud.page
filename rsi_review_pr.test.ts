@@ -12,12 +12,13 @@ interface FakePr {
   number: number;
   head: {ref: string};
   body: string;
+  state: "open" | "closed";
 }
 
 /**
  * A minimal in-memory stand-in for the slice of the GitHub REST API rsi_review_pr.ts calls —
- * tracks per-branch file content/shas and open PRs, so multi-call tests (batching into one PR)
- * can assert on state that persists across calls the way the real API would.
+ * tracks per-branch file content/shas and PRs, so multi-call tests (batching into one PR) can
+ * assert on state that persists across calls the way the real API would.
  */
 class FakeGitHub {
   calls: Array<{url: string; init?: RequestInit}> = [];
@@ -34,11 +35,17 @@ class FakeGitHub {
     }
   }
 
-  /** Lets a test seed an already-open PR, as if a previous call had created it. */
-  seedOpenPr(headRef: string, body = ""): void {
-    this.prs.push({number: this.nextPr++, head: {ref: headRef}, body});
+  /** Lets a test seed a PR as if a previous call had created it — open by default. */
+  seedPr(headRef: string, body = "", state: "open" | "closed" = "open"): number {
+    const number = this.nextPr++;
+    this.prs.push({number, head: {ref: headRef}, body, state});
     this.branches[headRef] = {};
     this.shas[headRef] = {};
+    return number;
+  }
+
+  closePr(number: number): void {
+    this.prs.find(pr => pr.number === number)!.state = "closed";
   }
 
   contentOf(branch: string, page: string): Record<string, unknown> {
@@ -47,7 +54,7 @@ class FakeGitHub {
     return JSON.parse(Buffer.from(encoded, "base64").toString("utf8"));
   }
 
-  openPrs(): FakePr[] {
+  allPrs(): FakePr[] {
     return this.prs;
   }
 
@@ -55,12 +62,14 @@ class FakeGitHub {
     this.calls.push({url, init});
     const method = init?.method ?? "GET";
 
-    if (url.includes("/pulls?state=open")) {
-      return jsonResponse(this.prs);
+    const singlePrMatch = url.match(/\/pulls\/(\d+)$/);
+    if (singlePrMatch && method === "GET") {
+      const pr = this.prs.find(p => p.number === Number(singlePrMatch[1]));
+      if (!pr) return {ok: false, status: 404, text: async () => "not found"} as Response;
+      return jsonResponse(pr);
     }
-    const patchMatch = url.match(/\/pulls\/(\d+)$/);
-    if (patchMatch && method === "PATCH") {
-      const pr = this.prs.find(p => p.number === Number(patchMatch[1]))!;
+    if (singlePrMatch && method === "PATCH") {
+      const pr = this.prs.find(p => p.number === Number(singlePrMatch[1]))!;
       pr.body = (JSON.parse(init!.body as string) as {body: string}).body;
       return jsonResponse({});
     }
@@ -94,8 +103,11 @@ class FakeGitHub {
     if (url.endsWith("/pulls") && method === "POST") {
       const body = JSON.parse(init!.body as string) as {head: string; body: string};
       const number = this.nextPr++;
-      this.prs.push({number, head: {ref: body.head}, body: body.body});
-      return jsonResponse({html_url: `https://github.com/ronshapiro/talmud.page/pull/${number}`});
+      this.prs.push({number, head: {ref: body.head}, body: body.body, state: "open"});
+      return jsonResponse({
+        html_url: `https://github.com/ronshapiro/talmud.page/pull/${number}`,
+        number,
+      });
     }
     throw new Error(`Unexpected fetch: ${method} ${url}`);
   }) as unknown as typeof fetch;
@@ -110,8 +122,8 @@ describe("openReviewDecisionPr", () => {
       {page: "Zevachim 2a", ref: "Zevachim 2a:1", decision: "approve"}, "token",
       github.fetchImpl);
 
-    expect(result.url).toMatch(/\/pull\/1$/);
-    const branch = github.openPrs()[0].head.ref;
+    expect(result.prNumber).toEqual(1);
+    const branch = github.allPrs()[0].head.ref;
     expect(github.contentOf(branch, "Zevachim 2a")["Zevachim 2a:1"])
       .toEqual({hebrew: "א", english: "a"});
   });
@@ -128,10 +140,10 @@ describe("openReviewDecisionPr", () => {
       english: "b",
     }, "token", github.fetchImpl);
 
-    const branch = github.openPrs()[0].head.ref;
+    const branch = github.allPrs()[0].head.ref;
     expect(github.contentOf(branch, "Zevachim 2a")["Zevachim 2a:1"])
       .toEqual({hebrew: "ב", english: "b"});
-    expect(result.url).toMatch(/\/pull\/1$/);
+    expect(result.prNumber).toEqual(1);
   });
 
   test("reject deletes the ref's entry and records the reason in the PR body", async () => {
@@ -148,11 +160,25 @@ describe("openReviewDecisionPr", () => {
       reason: "mistranslated",
     }, "token", github.fetchImpl);
 
-    const branch = github.openPrs()[0].head.ref;
+    const branch = github.allPrs()[0].head.ref;
     expect(github.contentOf(branch, "Zevachim 2a")).toEqual({
       "Zevachim 2a:2": {hebrew: "ג", english: "c"},
     });
-    expect(github.openPrs()[0].body).toContain("mistranslated");
+    expect(github.allPrs()[0].body).toContain("mistranslated");
+  });
+
+  test("records the reviewer's self-reported identity in the PR body", async () => {
+    const github = new FakeGitHub({
+      "Zevachim 2a": {"Zevachim 2a:1": {hebrew: "א", english: "a", status: "pending"}},
+    });
+    await openReviewDecisionPr({
+      page: "Zevachim 2a",
+      ref: "Zevachim 2a:1",
+      decision: "approve",
+      reviewerIdentity: "ron@example.com",
+    }, "token", github.fetchImpl);
+
+    expect(github.allPrs()[0].body).toContain("ron@example.com");
   });
 
   test("throws when the ref has no ai_edits.ts entry", async () => {
@@ -163,8 +189,8 @@ describe("openReviewDecisionPr", () => {
     )).rejects.toThrow("No ai_edits.ts entry");
   });
 
-  describe("batching", () => {
-    test("a second decision reuses the still-open PR instead of opening a new one", async () => {
+  describe("batching via knownPrNumber", () => {
+    test("passing the PR number returned by an earlier call reuses that PR", async () => {
       const github = new FakeGitHub({
         "Zevachim 2a": {
           "Zevachim 2a:1": {hebrew: "א", english: "a", status: "pending"},
@@ -176,53 +202,55 @@ describe("openReviewDecisionPr", () => {
         {page: "Zevachim 2a", ref: "Zevachim 2a:1", decision: "approve"}, "token",
         github.fetchImpl);
       const second = await openReviewDecisionPr(
-        {page: "Zevachim 2a", ref: "Zevachim 2a:2", decision: "approve"}, "token",
-        github.fetchImpl);
+        {
+          page: "Zevachim 2a",
+          ref: "Zevachim 2a:2",
+          decision: "approve",
+          knownPrNumber: first.prNumber,
+        }, "token", github.fetchImpl);
 
-      expect(first.url).toEqual(second.url);
-      expect(github.openPrs().length).toBe(1);
+      expect(second.prNumber).toEqual(first.prNumber);
+      expect(github.allPrs().length).toBe(1);
+      expect(github.calls.some(c => c.url.includes("/git/refs") && c.init?.method === "POST"))
+        .toBe(true); // only the first call creates a branch
 
-      const branch = github.openPrs()[0].head.ref;
+      const branch = github.allPrs()[0].head.ref;
       const content = github.contentOf(branch, "Zevachim 2a");
       expect(content["Zevachim 2a:1"]).toEqual({hebrew: "א", english: "a"});
       expect(content["Zevachim 2a:2"]).toEqual({hebrew: "ד", english: "d"});
     });
 
-    test("an already-open PR (from a previous call) is reused without creating a branch", async () => {
+    test("without a knownPrNumber, a new PR opens even while another is open", async () => {
       const github = new FakeGitHub({
         "Zevachim 2a": {"Zevachim 2a:1": {hebrew: "א", english: "a", status: "pending"}},
       });
-      github.seedOpenPr("rsi-review/1700000000000", "Existing batch PR");
+      github.seedPr("rsi-review/someone-elses-batch", "Someone else's batch");
 
       const result = await openReviewDecisionPr(
         {page: "Zevachim 2a", ref: "Zevachim 2a:1", decision: "approve"}, "token",
         github.fetchImpl);
 
-      expect(result.url).toMatch(/\/pull\/1$/);
-      expect(github.openPrs().length).toBe(1);
-      expect(github.calls.some(c => c.url.includes("/git/refs") && c.init?.method === "POST"))
-        .toBe(false);
-      expect(github.openPrs()[0].body).toContain("Existing batch PR");
-      expect(github.openPrs()[0].body).toContain("Approve RSI translation for Zevachim 2a:1");
+      expect(github.allPrs().length).toBe(2);
+      expect(result.prNumber).not.toEqual(1);
     });
 
-    test("a decision after the batch PR merges (no longer open) starts a fresh PR", async () => {
+    test("a knownPrNumber that's no longer open starts a fresh PR", async () => {
       const github = new FakeGitHub({
-        "Zevachim 2a": {
-          "Zevachim 2a:1": {hebrew: "א", english: "a", status: "pending"},
-          "Zevachim 2a:2": {hebrew: "ד", english: "d", status: "pending"},
-        },
+        "Zevachim 2a": {"Zevachim 2a:1": {hebrew: "א", english: "a", status: "pending"}},
       });
-      github.seedOpenPr("rsi-review/1700000000000", "Merged already");
-      // Simulate the PR having merged: no longer open.
-      github.openPrs().pop();
+      const staleNumber = github.seedPr("rsi-review/1700000000000", "Merged already");
+      github.closePr(staleNumber);
 
       const result = await openReviewDecisionPr(
-        {page: "Zevachim 2a", ref: "Zevachim 2a:2", decision: "approve"}, "token",
-        github.fetchImpl);
+        {
+          page: "Zevachim 2a",
+          ref: "Zevachim 2a:1",
+          decision: "approve",
+          knownPrNumber: staleNumber,
+        }, "token", github.fetchImpl);
 
-      expect(github.openPrs().length).toBe(1);
-      expect(result.url).toMatch(/\/pull\/\d+$/);
+      expect(result.prNumber).not.toEqual(staleNumber);
+      expect(github.allPrs().find(pr => pr.number === result.prNumber)!.state).toEqual("open");
     });
   });
 });

@@ -701,7 +701,9 @@ app.post("/api/suggest-rsi-task", async (req, res) => {
 // action needs a reviewer. Requires GITHUB_ISSUE_TOKEN (same token/scope as
 // /api/suggest-rsi-task above) and RSI_REVIEW_KEY to be set in the deployment environment.
 app.post("/api/rsi-review-decision", async (req, res) => {
-  const {page, ref, decision, hebrew, english, reason, key} = req.body ?? {};
+  const {
+    page, ref, decision, hebrew, english, reason, key, knownPrNumber, reviewerIdentity,
+  } = req.body ?? {};
   if (!process.env.RSI_REVIEW_KEY || key !== process.env.RSI_REVIEW_KEY) {
     res.sendStatus(403);
     return;
@@ -714,24 +716,23 @@ app.post("/api/rsi-review-decision", async (req, res) => {
 
   const token = process.env.GITHUB_ISSUE_TOKEN;
   if (!token) {
-    console.error("GITHUB_ISSUE_TOKEN is not configured; dropping RSI review decision", ref);
+    req.logger.error("GITHUB_ISSUE_TOKEN is not configured; dropping RSI review decision", ref);
     res.sendStatus(503);
     return;
   }
 
   if (debug) {
-    // eslint-disable-next-line no-console
-    console.log("Not opening a review-decision PR in debug mode", {page, ref, decision});
-    res.status(200).send({url: undefined});
+    req.logger.log("Not opening a review-decision PR in debug mode", {page, ref, decision});
+    res.status(200).send({url: undefined, prNumber: undefined});
     return;
   }
 
   try {
-    const result = await openReviewDecisionPr({page, ref, decision, hebrew, english, reason},
-      token);
+    const result = await openReviewDecisionPr(
+      {page, ref, decision, hebrew, english, reason, knownPrNumber, reviewerIdentity}, token);
     res.status(200).send(result);
   } catch (e) {
-    console.error(e);
+    req.logger.error(e);
     res.sendStatus(500);
   }
 });

@@ -4,9 +4,6 @@ import {Edit} from "./precomputed/ai_edits";
 // API — no git binary, no local checkout, so the server can remain stateless.
 const REPO = "ronshapiro/talmud.page";
 const BASE_BRANCH = "base";
-// Every branch this module creates starts with this — how findOpenReviewPr recognizes "a PR this
-// module opened" among the repo's other open PRs, without needing a label (which would need its
-// own auto-create-if-missing step) or any server-side state (App Engine gives none to rely on).
 const BRANCH_PREFIX = "rsi-review/";
 
 export interface ReviewDecisionRequest {
@@ -19,10 +16,21 @@ export interface ReviewDecisionRequest {
   english?: string;
   // Only meaningful for "reject" — recorded in the PR body as the retry signal for a future run.
   reason?: string;
+  // This client's own last-known review PR number (see js/RsiReviewControls.tsx), reused if it's
+  // still open. Deliberately per-client rather than "any open PR from this flow" — two reviewers
+  // batching into the same shared PR could otherwise clash if they disagree on a change, or want
+  // to submit their batches independently. Omitted, or no longer open, starts a fresh PR.
+  knownPrNumber?: number;
+  // Free-text name/email the reviewer entered once (see rsiReviewerIdentityPreference), for
+  // PR/commit attribution — this codebase has no login system, so this is self-reported, not
+  // verified. The review key only proves "a key-holder," not who.
+  reviewerIdentity?: string;
 }
 
 export interface ReviewDecisionResult {
   url: string;
+  // Returned so the caller can remember it as its own knownPrNumber for the next decision.
+  prNumber: number;
 }
 
 type FetchFn = typeof fetch;
@@ -56,39 +64,38 @@ interface OpenReviewPr {
 }
 
 /**
- * Finds this module's own currently-open batch PR, if any — the first open PR against `base`
- * whose head branch starts with BRANCH_PREFIX. While it's open, every decision lands as another
- * commit on that same branch instead of opening a new PR each time; once it's merged (no longer
- * open), the next decision starts a fresh one.
+ * Looks up the caller's own previously-opened review PR, if it gave one and it's still open —
+ * see ReviewDecisionRequest.knownPrNumber for why this is scoped per-caller instead of "any open
+ * PR from this flow."
  */
-async function findOpenReviewPr(
-  fetchImpl: FetchFn, token: string,
+async function findKnownOpenPr(
+  fetchImpl: FetchFn, token: string, knownPrNumber: number | undefined,
 ): Promise<OpenReviewPr | undefined> {
-  type PrListEntry = {number: number; head: {ref: string}; body: string | null};
-  const prs = await githubRequest<PrListEntry[]>(
-    fetchImpl, token, `/repos/${REPO}/pulls?state=open&base=${BASE_BRANCH}`);
-  const match = prs.find(pr => pr.head.ref.startsWith(BRANCH_PREFIX));
-  if (!match) return undefined;
-  return {number: match.number, headRef: match.head.ref, body: match.body ?? ""};
+  if (!knownPrNumber) return undefined;
+  type PrEntry = {number: number; state: string; head: {ref: string}; body: string | null};
+  const pr = await githubRequest<PrEntry>(
+    fetchImpl, token, `/repos/${REPO}/pulls/${knownPrNumber}`);
+  if (pr.state !== "open") return undefined;
+  return {number: pr.number, headRef: pr.head.ref, body: pr.body ?? ""};
 }
 
 /**
  * Approve (optionally with edited text) or reject a single pending ai_edits.ts entry. Approve
  * clears `status: "pending"` (and overwrites hebrew/english if given); reject deletes the ref's
  * entry entirely so the next scheduled translation run's staleness check treats it as
- * never-generated and retries from scratch. Batches with any other still-open decision from this
- * module into one PR (see findOpenReviewPr) rather than opening a new one per call.
+ * never-generated and retries from scratch. Batches with the caller's own still-open PR (see
+ * ReviewDecisionRequest.knownPrNumber) rather than opening a new one per call.
  */
 export async function openReviewDecisionPr(
   request: ReviewDecisionRequest,
   token: string,
   fetchImpl: FetchFn = fetch,
 ): Promise<ReviewDecisionResult> {
-  const {page, ref, decision, hebrew, english, reason} = request;
+  const {page, ref, decision, hebrew, english, reason, knownPrNumber, reviewerIdentity} = request;
   const path = `precomputed/ai_additions/${page}.json`;
   const encodedPath = encodePath(path);
 
-  const openPr = await findOpenReviewPr(fetchImpl, token);
+  const openPr = await findKnownOpenPr(fetchImpl, token, knownPrNumber);
   const branch = openPr?.headRef ?? `${BRANCH_PREFIX}${Date.now()}`;
   // Read from the batch branch itself (not base) when one exists — it may already carry an
   // earlier decision in this same batch, including one touching this exact page's file.
@@ -136,19 +143,20 @@ export async function openReviewDecisionPr(
     }),
   });
 
-  // No reviewer username in the PR body — this codebase has no login/identity system to draw one
-  // from (see RSI Phase 3 plan); the review key only proves "a key-holder," not who.
-  const entryLine = `${message} — via the review overlay at ${new Date().toISOString()}.`;
+  const attribution = reviewerIdentity ? ` by ${reviewerIdentity}` : "";
+  const entryLine = `${message}${attribution} — via the review overlay at ${
+    new Date().toISOString()}.`;
 
   if (openPr) {
     await githubRequest(fetchImpl, token, `/repos/${REPO}/pulls/${openPr.number}`, {
       method: "PATCH",
       body: JSON.stringify({body: `${openPr.body}\n${entryLine}`}),
     });
-    return {url: `https://github.com/${REPO}/pull/${openPr.number}`};
+    return {url: `https://github.com/${REPO}/pull/${openPr.number}`, prNumber: openPr.number};
   }
 
-  const pr = await githubRequest<{html_url: string}>( // eslint-disable-line camelcase
+  type NewPr = {html_url: string; number: number}; // eslint-disable-line camelcase
+  const pr = await githubRequest<NewPr>(
     fetchImpl, token, `/repos/${REPO}/pulls`, {
       method: "POST",
       body: JSON.stringify({
@@ -159,5 +167,5 @@ export async function openReviewDecisionPr(
       }),
     });
 
-  return {url: pr.html_url};
+  return {url: pr.html_url, prNumber: pr.number};
 }
