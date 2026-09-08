@@ -29,11 +29,6 @@ export interface ContextUsageEntry {
   timestamp: string; // ISO 8601
 }
 
-// One file per (task type, page), not one shared file — a shared file meant two runs touching
-// *different* pages still collided on the same file when commit_pending.ts tried to batch their
-// commits onto one PR branch, purely because they both happened to log to the same place. Split
-// by page, only runs that touch the *same* page can collide at all (still handled — see
-// commit_pending.ts's per-file merge), and every other case just avoids the problem entirely.
 const DEFAULT_LOG_DIR = "precomputed/rsi_state/context_usage_log";
 // Every entry recorded before the per-page split above lived here. Still read for continuity
 // with real historical data already committed; never written to again.

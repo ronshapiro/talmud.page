@@ -18,23 +18,6 @@ const BASE_BRANCH = "base";
 // --force here — a failed push should fail loudly, not be silently forced past.
 const BRANCH = "rsi-pending-candidates";
 
-// Everything a task-type run can write locally: ai_additions/ (the reviewable candidates
-// themselves — this is what makes a run's output visible on the live site at all) and rsi_state/
-// (generation records + the context-usage log — the provenance/audit trail, read by
-// isFreshTranslation()'s staleness check).
-//
-// Both MUST be committed together, on every run, not just ai_additions/. Committing only
-// ai_additions/ and leaving rsi_state/ dangling uncommitted was the original design — it broke
-// for two reasons hit for real: (1) a later run's branch switch fails outright once rsi_state/
-// has local modifications git would discard (the context-usage log used to be one shared
-// context_usage_log.jsonl file that every run touched — since split into one file per (task
-// type, page) under context_usage_log/ specifically to shrink how often two runs collide on the
-// same file at all, though same-page reruns still can, hence the merge logic below), and (2)
-// worse, if the audit trail is ever committed *without* the matching ai_additions content (e.g.
-// by hand, after a run that generated content but failed to commit it), isFreshTranslation()
-// reads the generation record and wrongly reports those refs as already translated —
-// permanently masking lost work from ever being regenerated, since nothing rechecks that
-// ai_additions actually has the content the record claims exists.
 const MANAGED_PATHS = ["precomputed/ai_additions", "precomputed/rsi_state"];
 
 export interface CommitPendingDeps {
@@ -43,12 +26,6 @@ export interface CommitPendingDeps {
   // The open PR (if any) already on BRANCH, so a run adds to it instead of opening a new one.
   findOpenPr: () => Promise<{number: number} | undefined>;
   checkoutNewBranch: (branch: string, from: string) => Promise<void>;
-  // Switches to BRANCH and merges any local pending edits into whatever's already committed
-  // there for the same paths — needed because a not-yet-merged earlier run may have already
-  // committed a different version of the same file (most often the same page's ai_additions
-  // entry or context-usage log, from an earlier not-yet-merged run against that same page). A
-  // plain `git checkout` refuses to overwrite that local, uncommitted work rather than silently
-  // discarding it (hit this for real).
   mergeLocalChangesOnto: (branch: string) => Promise<void>;
   commitPendingState: (message: string) => Promise<void>;
   push: (branch: string) => Promise<void>;
