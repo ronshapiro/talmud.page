@@ -1,11 +1,38 @@
-import {commitAndPushPendingCandidates, CommitPendingDeps} from "./commit_pending";
+import {commitAndPushPendingCandidates, CommitPendingDeps, parseStatusPaths} from "./commit_pending";
+
+describe("parseStatusPaths", () => {
+  test("parses plain paths with no special characters", () => {
+    expect(parseStatusPaths(" M precomputed/ai_additions/Zevachim.json")).toEqual(
+      ["precomputed/ai_additions/Zevachim.json"]);
+  });
+
+  // git quotes any path containing a space (verified against a real repo) — every ai_additions
+  // path does, since pages are named e.g. "Menachot 87a.json". Missing this parses the quotes
+  // themselves as part of the path, which then fails to match any real file.
+  test("un-quotes paths git quotes for containing a space", () => {
+    expect(parseStatusPaths(' M "precomputed/ai_additions/Menachot 87a.json"')).toEqual(
+      ["precomputed/ai_additions/Menachot 87a.json"]);
+  });
+
+  test("parses multiple lines, ignoring blank ones", () => {
+    const statusOut = [
+      ' M "precomputed/ai_additions/Menachot 87a.json"',
+      '?? "precomputed/ai_additions/Menachot 87b.json"',
+      "",
+    ].join("\n");
+    expect(parseStatusPaths(statusOut)).toEqual([
+      "precomputed/ai_additions/Menachot 87a.json",
+      "precomputed/ai_additions/Menachot 87b.json",
+    ]);
+  });
+});
 
 function fakeDeps(overrides: Partial<CommitPendingDeps> = {}): CommitPendingDeps {
   return {
     gitStatusPorcelain: async () => " M precomputed/ai_additions/Zevachim 16a.json",
     findOpenPr: async () => undefined,
     checkoutNewBranch: async () => {},
-    checkoutExistingBranch: async () => {},
+    mergeLocalAiAdditionsOnto: async () => {},
     commitAiAdditions: async () => {},
     push: async () => {},
     openPr: async () => {},
@@ -30,7 +57,7 @@ describe("commitAndPushPendingCandidates", () => {
 
   test("opens a fresh branch+PR when none is open", async () => {
     const checkoutNewBranch = jest.fn();
-    const checkoutExistingBranch = jest.fn();
+    const mergeLocalAiAdditionsOnto = jest.fn();
     const openPr = jest.fn();
     const commitAiAdditions = jest.fn();
     const push = jest.fn();
@@ -38,7 +65,7 @@ describe("commitAndPushPendingCandidates", () => {
     await commitAndPushPendingCandidates("New candidates", fakeDeps({
       findOpenPr: async () => undefined,
       checkoutNewBranch,
-      checkoutExistingBranch,
+      mergeLocalAiAdditionsOnto,
       commitAiAdditions,
       push,
       openPr,
@@ -46,7 +73,7 @@ describe("commitAndPushPendingCandidates", () => {
     }));
 
     expect(checkoutNewBranch).toHaveBeenCalledWith("rsi-pending-candidates", "base");
-    expect(checkoutExistingBranch).not.toHaveBeenCalled();
+    expect(mergeLocalAiAdditionsOnto).not.toHaveBeenCalled();
     expect(commitAiAdditions).toHaveBeenCalledWith("New candidates");
     expect(push).toHaveBeenCalledWith("rsi-pending-candidates");
     expect(openPr).toHaveBeenCalledWith(
@@ -54,18 +81,18 @@ describe("commitAndPushPendingCandidates", () => {
     expect(checkout).toHaveBeenCalledWith("base");
   });
 
-  test("adds to the existing open PR's branch instead of opening a new one", async () => {
+  test("merges onto the existing open PR's branch instead of opening a new one", async () => {
     const checkoutNewBranch = jest.fn();
-    const checkoutExistingBranch = jest.fn();
+    const mergeLocalAiAdditionsOnto = jest.fn();
     const openPr = jest.fn();
     await commitAndPushPendingCandidates("More candidates", fakeDeps({
       findOpenPr: async () => ({number: 42}),
       checkoutNewBranch,
-      checkoutExistingBranch,
+      mergeLocalAiAdditionsOnto,
       openPr,
     }));
 
-    expect(checkoutExistingBranch).toHaveBeenCalledWith("rsi-pending-candidates");
+    expect(mergeLocalAiAdditionsOnto).toHaveBeenCalledWith("rsi-pending-candidates");
     expect(checkoutNewBranch).not.toHaveBeenCalled();
     expect(openPr).not.toHaveBeenCalled();
   });
