@@ -29,26 +29,54 @@ export interface ContextUsageEntry {
   timestamp: string; // ISO 8601
 }
 
-const DEFAULT_LOG_PATH = "precomputed/rsi_state/context_usage_log.jsonl";
+const DEFAULT_LOG_DIR = "precomputed/rsi_state/context_usage_log";
+// Every entry recorded before the per-page split above lived here. Still read for continuity
+// with real historical data already committed; never written to again.
+const LEGACY_LOG_PATH = "precomputed/rsi_state/context_usage_log.jsonl";
 
-// logPath defaults to the real log so production call sites don't need to know it exists, but
-// tests can point elsewhere — see triage_log.ts for why this matters: a test that deletes the
-// default path on cleanup would silently destroy real accumulated data once this is ever run for
-// real.
+function logFilePath(taskType: string, page: string, logDir: string): string {
+  return `${logDir}/${taskType}/${page}.jsonl`;
+}
 
 /** Append-only — many entries accumulate per ref (one per generate/critique call, including
  * retries), so this is a log, not a keyed record like generation_record.ts. */
 export function recordContextUsage(
-  entry: Omit<ContextUsageEntry, "timestamp">, logPath = DEFAULT_LOG_PATH,
+  entry: Omit<ContextUsageEntry, "timestamp">, page: string, logDir = DEFAULT_LOG_DIR,
 ): void {
   const full: ContextUsageEntry = {...entry, timestamp: new Date().toISOString()};
-  fs.appendFileSync(logPath, `${JSON.stringify(full)}\n`);
+  const filePath = logFilePath(entry.taskType, page, logDir);
+  fs.mkdirSync(filePath.slice(0, filePath.lastIndexOf("/")), {recursive: true});
+  fs.appendFileSync(filePath, `${JSON.stringify(full)}\n`);
 }
 
-export function readContextUsageLog(logPath = DEFAULT_LOG_PATH): ContextUsageEntry[] {
-  if (!fs.existsSync(logPath)) return [];
-  return fs.readFileSync(logPath, "utf-8")
+function readJsonlFile(filePath: string): ContextUsageEntry[] {
+  if (!fs.existsSync(filePath)) return [];
+  return fs.readFileSync(filePath, "utf-8")
     .split("\n")
     .filter(line => line.trim())
     .map(line => JSON.parse(line) as ContextUsageEntry);
+}
+
+function allPageLogFiles(logDir: string): string[] {
+  if (!fs.existsSync(logDir)) return [];
+  const files: string[] = [];
+  for (const taskType of fs.readdirSync(logDir)) {
+    const taskDir = `${logDir}/${taskType}`;
+    if (!fs.statSync(taskDir).isDirectory()) continue;
+    for (const file of fs.readdirSync(taskDir)) {
+      if (file.endsWith(".jsonl")) files.push(`${taskDir}/${file}`);
+    }
+  }
+  return files;
+}
+
+/** Every entry across every page (and task type) — callers that need "calls today" or similar
+ * aggregates already filter/reduce this themselves; this module doesn't interpret callKind or
+ * taskType beyond storing them. `legacyLogPath` is a separate override (not folded into `logDir`)
+ * so a test can point `logDir` at an empty scratch directory without also picking up the real,
+ * already-committed legacy file's entries. */
+export function readContextUsageLog(
+  logDir = DEFAULT_LOG_DIR, legacyLogPath = LEGACY_LOG_PATH,
+): ContextUsageEntry[] {
+  return [...readJsonlFile(legacyLogPath), ...allPageLogFiles(logDir).flatMap(readJsonlFile)];
 }
