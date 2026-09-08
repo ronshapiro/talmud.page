@@ -18,31 +18,48 @@ const BASE_BRANCH = "base";
 // --force here — a failed push should fail loudly, not be silently forced past.
 const BRANCH = "rsi-pending-candidates";
 
+// Everything a task-type run can write locally: ai_additions/ (the reviewable candidates
+// themselves — this is what makes a run's output visible on the live site at all) and rsi_state/
+// (generation records + the context-usage log — the provenance/audit trail, read by
+// isFreshTranslation()'s staleness check).
+//
+// Both MUST be committed together, on every run, not just ai_additions/. Committing only
+// ai_additions/ and leaving rsi_state/ dangling uncommitted was the original design — it broke
+// for two reasons hit for real: (1) a later run's branch switch fails outright once
+// rsi_state/context_usage_log.jsonl has local modifications git would discard, and (2) worse, if
+// the audit trail is ever committed *without* the matching ai_additions content (e.g. by hand,
+// after a run that generated content but failed to commit it), isFreshTranslation() reads the
+// generation record and wrongly reports those refs as already translated — permanently masking
+// lost work from ever being regenerated, since nothing rechecks that ai_additions actually has
+// the content the record claims exists.
+const MANAGED_PATHS = ["precomputed/ai_additions", "precomputed/rsi_state"];
+
 export interface CommitPendingDeps {
-  // Anything staged/unstaged under precomputed/ai_additions/ right now, or "" if none.
+  // Anything staged/unstaged under the managed paths right now, or "" if none.
   gitStatusPorcelain: () => Promise<string>;
   // The open PR (if any) already on BRANCH, so a run adds to it instead of opening a new one.
   findOpenPr: () => Promise<{number: number} | undefined>;
   checkoutNewBranch: (branch: string, from: string) => Promise<void>;
-  // Switches to BRANCH and merges any local pending ai_additions/ edits into whatever's already
-  // committed there for the same paths (JSON key union, local wins on a duplicate ref) — needed
-  // because a not-yet-merged earlier run may have already committed a different version of the
-  // same page's file. A plain `git checkout` refuses to overwrite that local, uncommitted work
-  // rather than silently discarding it (hit this for real: two separate runs against the same
-  // page, the first still an unmerged PR when the second ran).
-  mergeLocalAiAdditionsOnto: (branch: string) => Promise<void>;
-  commitAiAdditions: (message: string) => Promise<void>;
+  // Switches to BRANCH and merges any local pending edits into whatever's already committed
+  // there for the same paths — needed because a not-yet-merged earlier run may have already
+  // committed a different version of the same file (e.g. the same page's ai_additions entry, or
+  // an appended context_usage_log.jsonl). A plain `git checkout` refuses to overwrite that local,
+  // uncommitted work rather than silently discarding it (hit this for real, twice: once for a
+  // page touched by two separate runs, once for context_usage_log.jsonl changing on every run).
+  mergeLocalChangesOnto: (branch: string) => Promise<void>;
+  commitPendingState: (message: string) => Promise<void>;
   push: (branch: string) => Promise<void>;
   openPr: (branch: string, title: string, body: string) => Promise<void>;
   checkout: (branch: string) => Promise<void>;
 }
 
 /**
- * Commits + pushes any locally-modified precomputed/ai_additions/ files (status: "pending"
- * candidates a task type just wrote) onto a standing PR, opening one if none is currently open.
- * Without this, a generated candidate sits on local disk only — not actually reviewable on the
- * live site until someone commits and pushes it by hand (a real gap the RSI Phase 3 plan flagged
- * and didn't close). No-ops if nothing changed this run.
+ * Commits + pushes any locally-modified files under the managed paths (status: "pending"
+ * candidates a task type just wrote, plus its generation-record/context-usage audit trail) onto
+ * a standing PR, opening one if none is currently open. Without this, a generated candidate sits
+ * on local disk only — not actually reviewable on the live site until someone commits and pushes
+ * it by hand (a real gap the RSI Phase 3 plan flagged and didn't close). No-ops if nothing
+ * changed this run.
  */
 export async function commitAndPushPendingCandidates(
   message: string,
@@ -53,12 +70,12 @@ export async function commitAndPushPendingCandidates(
 
   const openPr = await deps.findOpenPr();
   if (openPr) {
-    await deps.mergeLocalAiAdditionsOnto(BRANCH);
+    await deps.mergeLocalChangesOnto(BRANCH);
   } else {
     await deps.checkoutNewBranch(BRANCH, BASE_BRANCH);
   }
 
-  await deps.commitAiAdditions(message);
+  await deps.commitPendingState(message);
   await deps.push(BRANCH);
 
   if (!openPr) {
@@ -78,9 +95,9 @@ async function gitStatusPorcelainViaCli(): Promise<string> {
   const {stdout} = await execFileAsync(
     // --untracked-files=all: without it, git collapses an entirely-untracked directory into a
     // single directory-path entry instead of listing the files inside it. Doesn't bite today
-    // (this directory always has other already-tracked pages in it), but it's the difference
-    // between "correct" and "correct by accident of existing repo state."
-    "git", ["status", "--porcelain", "--untracked-files=all", "--", "precomputed/ai_additions"]);
+    // (both managed directories always have other already-tracked files in them), but it's the
+    // difference between "correct" and "correct by accident of existing repo state."
+    "git", ["status", "--porcelain", "--untracked-files=all", "--", ...MANAGED_PATHS]);
   return stdout;
 }
 
@@ -101,24 +118,41 @@ export function parseStatusPaths(statusOut: string): string[] {
     .map(path => (path.startsWith("\"") ? JSON.parse(path) as string : path));
 }
 
+/**
+ * Merges one file's local content with what's already committed on the target branch (or
+ * undefined if the target branch doesn't have this file at all). `.jsonl` files (the
+ * append-only context-usage log) merge by line union — keep the remote's lines, then append any
+ * local line not already present. Everything else is treated as a ref-keyed JSON object
+ * (ai_additions entries, generation records) and merges by key union, local winning on a
+ * duplicate ref — harmless, since a duplicate is just a re-attempt at the same source.
+ */
+export function mergeFileContent(
+  path: string, remoteRaw: string | undefined, localRaw: string,
+): string {
+  if (path.endsWith(".jsonl")) {
+    const remoteLines = remoteRaw ? remoteRaw.split("\n").filter(Boolean) : [];
+    const remoteSet = new Set(remoteLines);
+    const newLocalLines = localRaw.split("\n").filter(line => line && !remoteSet.has(line));
+    return [...remoteLines, ...newLocalLines].map(line => `${line}\n`).join("");
+  }
+  const remoteJson = remoteRaw ? JSON.parse(remoteRaw) as Record<string, unknown> : {};
+  const localJson = JSON.parse(localRaw) as Record<string, unknown>;
+  return `${JSON.stringify({...remoteJson, ...localJson}, undefined, 2)}\n`;
+}
+
 async function isTrackedOnCurrentBranch(path: string): Promise<boolean> {
   const {stdout} = await execFileAsync("git", ["ls-files", "--", path]);
   return stdout.trim().length > 0;
 }
 
-async function mergeLocalAiAdditionsOntoViaCli(branch: string): Promise<void> {
+async function mergeLocalChangesOntoViaCli(branch: string): Promise<void> {
   const {stdout: statusOut} = await execFileAsync(
-    // --untracked-files=all: without it, git collapses an entirely-untracked directory into a
-    // single directory-path entry instead of listing the files inside it. Doesn't bite today
-    // (this directory always has other already-tracked pages in it), but it's the difference
-    // between "correct" and "correct by accident of existing repo state."
-    "git", ["status", "--porcelain", "--untracked-files=all", "--", "precomputed/ai_additions"]);
+    "git", ["status", "--porcelain", "--untracked-files=all", "--", ...MANAGED_PATHS]);
   const paths = parseStatusPaths(statusOut);
 
-  const localByPath = new Map<string, Record<string, unknown>>();
+  const localContentByPath = new Map<string, string>();
   for (const path of paths) {
-    // eslint-disable-next-line no-await-in-loop
-    localByPath.set(path, JSON.parse(fs.readFileSync(path, "utf-8")) as Record<string, unknown>);
+    localContentByPath.set(path, fs.readFileSync(path, "utf-8"));
   }
 
   // Clean the working tree for just these paths so the branch switch below doesn't refuse —
@@ -136,11 +170,11 @@ async function mergeLocalAiAdditionsOntoViaCli(branch: string): Promise<void> {
   await execFileAsync("git", ["fetch", "origin", branch]);
   await execFileAsync("git", ["checkout", "-B", branch, `origin/${branch}`]);
 
-  for (const [path, localJson] of localByPath) {
-    const remoteJson = fs.existsSync(path)
-      ? JSON.parse(fs.readFileSync(path, "utf-8")) as Record<string, unknown>
-      : {};
-    fs.writeFileSync(path, `${JSON.stringify({...remoteJson, ...localJson}, undefined, 2)}\n`);
+  for (const [path, localRaw] of localContentByPath) {
+    const remoteRaw = fs.existsSync(path) ? fs.readFileSync(path, "utf-8") : undefined;
+    const dir = path.slice(0, path.lastIndexOf("/"));
+    fs.mkdirSync(dir, {recursive: true});
+    fs.writeFileSync(path, mergeFileContent(path, remoteRaw, localRaw));
   }
 }
 
@@ -153,9 +187,9 @@ export const realCommitPendingDeps: CommitPendingDeps = {
     await execFileAsync("git", ["fetch", "origin", from]);
     await execFileAsync("git", ["checkout", "-B", branch, `origin/${from}`]);
   },
-  mergeLocalAiAdditionsOnto: mergeLocalAiAdditionsOntoViaCli,
-  commitAiAdditions: async message => {
-    await execFileAsync("git", ["add", "precomputed/ai_additions"]);
+  mergeLocalChangesOnto: mergeLocalChangesOntoViaCli,
+  commitPendingState: async message => {
+    await execFileAsync("git", ["add", ...MANAGED_PATHS]);
     await execFileAsync("git", ["commit", "-m", message]);
   },
   push: async branch => {
