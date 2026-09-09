@@ -5,6 +5,7 @@ import {
   CritiqueVerdict,
   GeneratedEdit,
   generateWithSelfCritique,
+  MAX_GENERATION_ATTEMPTS,
   parseJsonResponse,
   TranslationCandidate,
   TranslationDeps,
@@ -102,15 +103,54 @@ describe("generateWithSelfCritique", () => {
     expect(result!.contextRefsUsed).toEqual(["Zevachim 2a:1"]);
   });
 
-  test("gives up after a second failed critique, without a third attempt", async () => {
+  test(`retries up to ${MAX_GENERATION_ATTEMPTS} times, then gives up`, async () => {
     const generate = jest.fn(async () => generated({edit: {hebrew: "wrong"}}));
     const critique = jest.fn(async () => invalidOutcome);
 
     const result = await generateWithSelfCritique(candidate(), {generate, critique});
 
     expect(result).toBeUndefined();
+    expect(generate).toHaveBeenCalledTimes(MAX_GENERATION_ATTEMPTS);
+    expect(critique).toHaveBeenCalledTimes(MAX_GENERATION_ATTEMPTS);
+  });
+
+  test("succeeds on the final allowed attempt rather than giving up early", async () => {
+    const generate = jest.fn(async () => generated({edit: {hebrew: "wrong"}}));
+    const critique = jest.fn<Promise<CritiqueOutcome>, [TranslationCandidate, Edit]>();
+    for (let i = 0; i < MAX_GENERATION_ATTEMPTS - 1; i++) {
+      critique.mockResolvedValueOnce(invalidOutcome);
+    }
+    critique.mockResolvedValueOnce(validOutcome);
+
+    const result = await generateWithSelfCritique(candidate(), {generate, critique});
+
+    expect(result).not.toBeUndefined();
+    expect(generate).toHaveBeenCalledTimes(MAX_GENERATION_ATTEMPTS);
+  });
+
+  test("retries with feedback when generate throws (e.g. a malformed response), not just on a "
+    + "rejected critique", async () => {
+    const generate = jest.fn<Promise<GeneratedEdit>, [TranslationCandidate, string?]>()
+      .mockRejectedValueOnce(new SyntaxError("Unexpected token"))
+      .mockResolvedValueOnce(generated());
+    const critique = jest.fn(async () => validOutcome);
+
+    const result = await generateWithSelfCritique(candidate(), {generate, critique});
+
+    expect(result).not.toBeUndefined();
     expect(generate).toHaveBeenCalledTimes(2);
-    expect(critique).toHaveBeenCalledTimes(2);
+    expect(critique).toHaveBeenCalledTimes(1); // not called for the attempt that threw
+    expect(generate.mock.calls[1][1]).toContain("Unexpected token");
+  });
+
+  test("propagates a rate-limit error immediately instead of retrying", async () => {
+    const rateLimitError = new HeadlessClaudeError("rate limited", 429);
+    const generate = jest.fn(async () => { throw rateLimitError; });
+    const critique = jest.fn(async () => validOutcome);
+
+    await expect(generateWithSelfCritique(candidate(), {generate, critique}))
+      .rejects.toBe(rateLimitError);
+    expect(generate).toHaveBeenCalledTimes(1);
   });
 });
 
