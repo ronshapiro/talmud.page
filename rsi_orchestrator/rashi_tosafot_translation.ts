@@ -88,31 +88,58 @@ function sumCost(...costs: (number | undefined)[]): number | undefined {
   return costs.reduce((total: number, c) => total + (c ?? 0), 0);
 }
 
+// Every Rashi/Tosafot comment should end up translated, not just the ones that pass critique on
+// the first or second try — so this retries with accumulated feedback well past a single retry.
+// Not literally unbounded, though: a persistently bad candidate (or a source text that
+// genuinely can't produce a valid edit) would otherwise consume a whole run's budget on its own.
+// The only *unbounded* stop is a genuine subscription rate limit, which is deliberately treated
+// as "stop the whole run," not "give up on this candidate" — see translateRashiTosafotComments.
+export const MAX_GENERATION_ATTEMPTS = 5;
+
 /**
- * Generate once, critique it, and — if the critique finds a problem — retry generation once with
- * that feedback before giving up. Bounded at two generation attempts so a persistently bad
- * candidate doesn't loop forever.
+ * Generate, critique, and retry with feedback — across up to MAX_GENERATION_ATTEMPTS attempts —
+ * until the critique accepts the result. A malformed (non-JSON) response from `generate` is
+ * treated the same as a rejected critique verdict: fed back as the reason for the next attempt,
+ * not a fatal error for this candidate — real runs have hit this from the model occasionally
+ * returning prose instead of the requested JSON object.
  */
 export async function generateWithSelfCritique(
   candidate: TranslationCandidate, deps: GenerationDeps,
 ): Promise<GeneratedEdit | undefined> {
-  let generated = await deps.generate(candidate);
-  let outcome = await deps.critique(candidate, generated.edit);
-  let totalCost = sumCost(generated.costUsd, outcome.costUsd);
-  if (!outcome.verdict.valid) {
-    generated = await deps.generate(candidate, outcome.verdict.reason);
-    outcome = await deps.critique(candidate, generated.edit);
+  let feedback: string | undefined;
+  let totalCost: number | undefined;
+  let lastReason = "unknown error";
+
+  for (let attempt = 0; attempt < MAX_GENERATION_ATTEMPTS; attempt++) {
+    let generated: GeneratedEdit;
+    let outcome: CritiqueOutcome;
+    try {
+      // eslint-disable-next-line no-await-in-loop
+      generated = await deps.generate(candidate, feedback);
+      // eslint-disable-next-line no-await-in-loop
+      outcome = await deps.critique(candidate, generated.edit);
+    } catch (e) {
+      if (e instanceof HeadlessClaudeError && e.isRateLimited) throw e;
+      lastReason = `Your previous response errored rather than producing a usable result: ${e}. `
+        + "Respond with ONLY a JSON object with \"hebrew\" and/or \"english\" string fields — "
+        + "no other text.";
+      feedback = lastReason;
+      continue;
+    }
     totalCost = sumCost(totalCost, generated.costUsd, outcome.costUsd);
+    if (outcome.verdict.valid) {
+      // Only the final, accepted generate+critique pair's context counts — a rejected attempt's
+      // fetches didn't contribute to what actually shipped.
+      const contextRefsUsed = Array.from(
+        new Set([...generated.contextRefsUsed, ...outcome.contextRefsUsed]));
+      return {...generated, costUsd: totalCost, contextRefsUsed};
+    }
+    lastReason = outcome.verdict.reason;
+    feedback = lastReason;
   }
-  if (!outcome.verdict.valid) {
-    console.error(`Giving up on ${candidate.ref}: ${outcome.verdict.reason}`);
-    return undefined;
-  }
-  // Only the final, accepted generate+critique pair's context counts — a rejected first
-  // attempt's fetches didn't contribute to what actually shipped.
-  const contextRefsUsed = Array.from(
-    new Set([...generated.contextRefsUsed, ...outcome.contextRefsUsed]));
-  return {...generated, costUsd: totalCost, contextRefsUsed};
+  console.error(
+    `Giving up on ${candidate.ref} after ${MAX_GENERATION_ATTEMPTS} attempts: ${lastReason}`);
+  return undefined;
 }
 
 export interface TranslationDeps {
