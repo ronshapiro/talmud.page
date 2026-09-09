@@ -340,7 +340,7 @@ async function generateViaClaude(
     toolUses: result.toolUses,
     costUsd: result.costUsd,
     model: result.model,
-  });
+  }, candidate.page);
   return {
     edit: parseJsonResponse<Edit>(result.text),
     model: result.model,
@@ -363,7 +363,7 @@ async function critiqueViaClaude(
     toolUses: result.toolUses,
     costUsd: result.costUsd,
     model: result.model,
-  });
+  }, candidate.page);
   return {
     verdict: parseJsonResponse<CritiqueVerdict>(result.text),
     costUsd: result.costUsd,
