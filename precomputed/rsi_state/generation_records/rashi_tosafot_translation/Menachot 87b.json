@@ -97,10 +97,13 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">מחוק שבו היה מודד חביתי כ\"ג</strong> - לפי שיש לו לחלק בשני חצאי עשרון ואם היה גדוש כשהיה מטלטלו לחצותו היה מתפזר על גבי קרקע:"
   },
   "Rashi on Menachot 87b:3:1": {
-    "costUsd": 0.10785220000000001,
-    "dependsOn": [],
-    "generatedAt": "2026-09-08T20:53:47.302Z",
-    "model": "claude-haiku-4-5",
+    "costUsd": 0.14953660000000002,
+    "dependsOn": [
+      "Menachot 87b:3",
+      "Menachot 87b:4"
+    ],
+    "generatedAt": "2026-09-09T06:05:32.962Z",
+    "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
       "Rashi on Menachot 87b:3:1"
@@ -108,10 +111,12 @@
     "sourceText": "מוי\"ו דועשרון נפקא ליה:"
   },
   "Rashi on Menachot 87b:5:1": {
-    "costUsd": 0.1833022,
-    "dependsOn": [],
-    "generatedAt": "2026-09-08T20:56:06.644Z",
-    "model": "claude-haiku-4-5",
+    "costUsd": 0.113997,
+    "dependsOn": [
+      "Menachot 87b:5"
+    ],
+    "generatedAt": "2026-09-09T06:06:06.546Z",
+    "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
       "Rashi on Menachot 87b:5:1"
@@ -119,10 +124,10 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">מנקודו</strong> - שאותו נקוד שעליו אתי למעט דכל נקודה אתי למעוטי:"
   },
   "Rashi on Menachot 87b:6:1": {
-    "costUsd": 0.177445,
+    "costUsd": 0.09386739999999999,
     "dependsOn": [],
-    "generatedAt": "2026-09-08T20:59:11.972Z",
-    "model": "claude-haiku-4-5",
+    "generatedAt": "2026-09-09T06:06:43.333Z",
+    "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
       "Rashi on Menachot 87b:6:1"
