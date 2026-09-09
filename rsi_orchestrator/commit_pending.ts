@@ -18,7 +18,17 @@ const BASE_BRANCH = "base";
 // --force here — a failed push should fail loudly, not be silently forced past.
 const BRANCH = "rsi-pending-candidates";
 
-const MANAGED_PATHS = ["precomputed/ai_additions", "precomputed/rsi_state"];
+// Deliberately narrower than all of precomputed/rsi_state/ — that directory also holds
+// human-edited control files (model_routing_config.json, budget_config.json) that must stay on
+// base, not get swept into the candidates PR branch. Hit this for real: a local model-routing
+// experiment got auto-committed onto rsi-pending-candidates and reverted the moment the run
+// finished and checked back out to base, since the edit never actually landed there.
+const MANAGED_PATHS = [
+  "precomputed/ai_additions",
+  "precomputed/rsi_state/generation_records",
+  "precomputed/rsi_state/context_usage_log",
+  "precomputed/rsi_state/context_usage_log.jsonl",
+];
 
 export interface CommitPendingDeps {
   // Anything staged/unstaged under the managed paths right now, or "" if none.
