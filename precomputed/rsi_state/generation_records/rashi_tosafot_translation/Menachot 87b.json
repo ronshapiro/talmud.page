@@ -1,4 +1,90 @@
 {
+  "Rashi on Menachot 87b:12:1": {
+    "costUsd": 0.19239699999999998,
+    "dependsOn": [],
+    "generatedAt": "2026-09-08T21:05:29.569Z",
+    "model": "claude-haiku-4-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 87b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדאמר ר\"מ עשרון שבו מודד לחביתי כ\"ג מחוק חצי עשרון נמי מחוק הוה</strong> - דהא הוה נמי לחביתי כ\"ג:"
+  },
+  "Rashi on Menachot 87b:12:2": {
+    "costUsd": 0.2415806,
+    "dependsOn": [
+      "Menachot 87b:12",
+      "Rashi on Menachot 87b:12:1",
+      "Rashi on Menachot 87b:11:1",
+      "Menachot 87b:9",
+      "Menachot 87b:11",
+      "Menachot 87b:13",
+      "Rashi on Menachot 87b:6:1",
+      "Rashi on Menachot 87b:8:1"
+    ],
+    "generatedAt": "2026-09-08T19:01:12.497Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 87b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומדר\"מ</strong> - דאמר שניהם מחוק היו אותו עשרון של כ\"ג והחצי עשרון נמי לרבנן נמי לא היה בו אלא עשרון אחד ובו היה מודד לחביתי כ\"ג ה\"נ דמחוק היה זה וזה דלדברי הכל של כ\"ג מחוק היה דהכי פליגי בברייתא רבי מאיר ורבנן מחוק שבו היה מודד לחביתי כ\"ג וחכמים אומרי' לא היה בו אלא עשרון אחד מחוק:"
+  },
+  "Rashi on Menachot 87b:14:1": {
+    "costUsd": 0.071303,
+    "dependsOn": [],
+    "generatedAt": "2026-09-08T21:09:25.165Z",
+    "model": "claude-haiku-4-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 87b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חביתי כ\"ג</strong> - אותן שנים עשר חלות שעושה ששה בבקר וששה בערב:"
+  },
+  "Rashi on Menachot 87b:14:2": {
+    "costUsd": 0.085135,
+    "dependsOn": [],
+    "generatedAt": "2026-09-08T21:10:51.625Z",
+    "model": "claude-haiku-4-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 87b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במה מחלקן</strong> - לחלות ביד או בכלי ישער בידו או יחלקם בכלי:"
+  },
+  "Rashi on Menachot 87b:14:3": {
+    "costUsd": 0.1596554,
+    "dependsOn": [],
+    "generatedAt": "2026-09-08T21:13:15.157Z",
+    "model": "claude-haiku-4-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 87b:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי טורטני יכניס</strong> - אם היה צריך להביא משקלות:"
+  },
+  "Rashi on Menachot 87b:16:1": {
+    "costUsd": 0.256773,
+    "dependsOn": [],
+    "generatedAt": "2026-09-08T21:26:46.805Z",
+    "model": "claude-haiku-4-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 87b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלחן מהו שיקדש קמצים בגודש שלו</strong> - כגון שאם הניח קומץ של מנחה או <span class=\"parenthesized\">(של)</span> לבונה בלא בזיכין שהיה לו לקדשו בכלי והניחן על השולחן שבו לחם ולא קידשו בכלי אחר והיינו בגודש שלו שלא הניחו בבזיכין אלא למעלה בין לחם ללחם שהכל היה בגודש שלא הניחן בתוך כלי. ענין אחר בגודש שלו דשולחן לא היה לו בית קיבול כלל למעלה וכל מה שמניחין עליו הוי כמו שמונח בגודש כך שמעתי:"
+  },
+  "Rashi on Menachot 87b:16:2": {
+    "costUsd": 0.059404,
+    "dependsOn": [],
+    "generatedAt": "2026-09-08T21:27:23.291Z",
+    "model": "claude-haiku-4-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 87b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלא חזי ליה</strong> - כגון קומץ ולבונה בלא בזיכין:"
+  },
   "Rashi on Menachot 87b:1:1": {
     "costUsd": 0.21229739999999997,
     "dependsOn": [],
@@ -9,5 +95,103 @@
       "Rashi on Menachot 87b:1:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">מחוק שבו היה מודד חביתי כ\"ג</strong> - לפי שיש לו לחלק בשני חצאי עשרון ואם היה גדוש כשהיה מטלטלו לחצותו היה מתפזר על גבי קרקע:"
+  },
+  "Rashi on Menachot 87b:3:1": {
+    "costUsd": 0.14953660000000002,
+    "dependsOn": [
+      "Menachot 87b:3",
+      "Menachot 87b:4"
+    ],
+    "generatedAt": "2026-09-09T06:05:32.962Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 87b:3:1"
+    ],
+    "sourceText": "מוי\"ו דועשרון נפקא ליה:"
+  },
+  "Rashi on Menachot 87b:5:1": {
+    "costUsd": 0.113997,
+    "dependsOn": [
+      "Menachot 87b:5"
+    ],
+    "generatedAt": "2026-09-09T06:06:06.546Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 87b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנקודו</strong> - שאותו נקוד שעליו אתי למעט דכל נקודה אתי למעוטי:"
+  },
+  "Rashi on Menachot 87b:6:1": {
+    "costUsd": 0.09386739999999999,
+    "dependsOn": [],
+    "generatedAt": "2026-09-09T06:06:43.333Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 87b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שבו היה מודד חביתי כ\"ג</strong> - השתא משמע שמודד חצי עשרון בביתו ומביא והיינו דקא פריך מודד:"
+  },
+  "Rashi on Menachot 87b:8:1": {
+    "costUsd": 0.0671844,
+    "dependsOn": [],
+    "generatedAt": "2026-09-08T21:01:26.389Z",
+    "model": "claude-haiku-4-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 87b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחלק</strong> - שהיה מביאו מביתו שלם לעזרה ואח\"כ חוצהו בחצי העשרון:"
+  },
+  "Tosafot on Menachot 87b:14:1": {
+    "costUsd": 0.4284264,
+    "dependsOn": [],
+    "generatedAt": "2026-09-08T19:08:40.132Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 87b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במה מחלקה לחלות</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> שמחלקה לעיסה וא\"א לומר כך דהא אמרינן לקמן <span class=\"parenthesized\">(מנחות דף פח:)</span> דרביעית נמשחה שבו היה מודד לחביתי כ\"ג רביעית שמן לכל חלה וחלה וקודם לישה צריך לבלול כשהוא סלת ומכל מקום לא אפשר לעשות בו טורטני דמשקולת ומאזנים סימן קללה בסלת כמו בעיסה ומדה קטנה כל כך של א' משנים עשר בעשרון לא רצו לתקן ואפשר דקטנה כל כך גם היא אינה סימן ברכה:"
+  },
+  "Tosafot on Menachot 87b:7:1": {
+    "costUsd": 0.23269439999999997,
+    "dependsOn": [
+      "Menachot 87b:6",
+      "Menachot 87b:7",
+      "Rashi on Menachot 87b:7:1",
+      "Menachot 87b:13"
+    ],
+    "generatedAt": "2026-09-08T18:56:57.752Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 87b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מודד ורמינהו חביתי כהן גדול כו'</strong> - מהא דקאמר ר\"מ ומחוק שבו מודד לחביתי כ\"ג לא בעי לאקשויי דסלקא דעתך שפעמים מודד בזה ופעמים בזה:"
+  },
+  "Rashi on Menachot 87b:11:1": {
+    "costUsd": 0.057413,
+    "dependsOn": [],
+    "generatedAt": "2026-09-08T21:02:03.413Z",
+    "model": "claude-haiku-4-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 87b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותיבעי לך לרבנן</strong> - דלדברי הכל צריך חצי עשרון:"
+  },
+  "Rashi on Menachot 87b:17:1": {
+    "costUsd": 0.058857999999999994,
+    "dependsOn": [],
+    "generatedAt": "2026-09-08T21:32:02.036Z",
+    "model": "claude-haiku-4-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 87b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינו מקדש</strong> - שאין דרכו לקדש כי אם לחם:"
   }
 }
