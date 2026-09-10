@@ -1,4 +1,5 @@
 fail_fast: true
+default_stages: [pre-commit]
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v2.3.0
@@ -15,3 +16,9 @@ repos:
         entry: pre-commit/custom.sh
         language: script
         require_serial: true
+    -   id: symlink-node-modules
+        name: "Symlink node_modules for new worktrees"
+        entry: git-hooks/post-checkout
+        language: script
+        stages: [post-checkout]
+        always_run: true
