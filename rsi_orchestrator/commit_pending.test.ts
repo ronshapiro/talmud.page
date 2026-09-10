@@ -1,8 +1,10 @@
 import {
   commitAndPushPendingCandidates,
   CommitPendingDeps,
+  makeRealCommitPendingDeps,
   mergeFileContent,
   parseStatusPaths,
+  realCommitPendingDeps,
 } from "./commit_pending";
 
 describe("parseStatusPaths", () => {
@@ -152,5 +154,23 @@ describe("commitAndPushPendingCandidates", () => {
     }));
 
     expect(checkout).toHaveBeenCalledWith("base");
+  });
+});
+
+describe("makeRealCommitPendingDeps", () => {
+  test("constructs an object satisfying CommitPendingDeps", () => {
+    const deps = makeRealCommitPendingDeps({debug: true});
+    expect(typeof deps.gitStatusPorcelain).toBe("function");
+    expect(typeof deps.findOpenPr).toBe("function");
+    expect(typeof deps.checkoutNewBranch).toBe("function");
+    expect(typeof deps.mergeLocalChangesOnto).toBe("function");
+    expect(typeof deps.commitPendingState).toBe("function");
+    expect(typeof deps.push).toBe("function");
+    expect(typeof deps.openPr).toBe("function");
+    expect(typeof deps.checkout).toBe("function");
+  });
+
+  test("realCommitPendingDeps is initialized with default options", () => {
+    expect(typeof realCommitPendingDeps.gitStatusPorcelain).toBe("function");
   });
 });

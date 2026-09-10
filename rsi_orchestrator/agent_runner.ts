@@ -1,7 +1,4 @@
 import {execFile} from "child_process";
-import {promisify} from "util";
-
-const execFileAsync = promisify(execFile);
 
 export type AgentBackend = "claude" | "agy";
 
@@ -17,6 +14,8 @@ export interface AgentOptions {
   allowedTools?: string[];
   backend?: AgentBackend;
   dangerouslySkipPermissions?: boolean;
+  debug?: boolean;
+  onToolUse?: (toolUse: ToolUseRecord) => void;
 }
 
 export interface AgentResult {
@@ -146,6 +145,58 @@ export function asAgyCliError(error: unknown): AgentError | undefined {
   return undefined;
 }
 
+export function getSubcommandFromToolUse(toolUse: ToolUseRecord): string | undefined {
+  const input = toolUse.input as {command?: string; CommandLine?: string} | undefined;
+  return input?.command ?? input?.CommandLine;
+}
+
+export interface ExecStreamingOptions {
+  cwd?: string;
+  timeout?: number;
+  maxBuffer?: number;
+  onStdoutLine?: (line: string) => void;
+}
+
+export function execFileWithStreaming(
+  file: string,
+  args: string[],
+  options: ExecStreamingOptions,
+): Promise<{stdout: string; stderr: string}> {
+  return new Promise((resolve, reject) => {
+    let buffer = "";
+    const child = execFile(file, args, {
+      cwd: options.cwd,
+      timeout: options.timeout,
+      maxBuffer: options.maxBuffer,
+    }, (error, stdout, stderr) => {
+      if (options.onStdoutLine && buffer.trim()) {
+        options.onStdoutLine(buffer);
+        buffer = "";
+      }
+      if (error) {
+        const err = error as Error & {stdout?: string; stderr?: string};
+        err.stdout = stdout;
+        err.stderr = stderr;
+        reject(err);
+      } else {
+        resolve({stdout, stderr});
+      }
+    });
+
+    child.stdout?.on("data", (chunk: Buffer | string) => {
+      if (!options.onStdoutLine) return;
+      buffer += chunk.toString();
+      const lines = buffer.split("\n");
+      buffer = lines.pop() ?? "";
+      for (const line of lines) {
+        if (line.trim()) {
+          options.onStdoutLine(line);
+        }
+      }
+    });
+  });
+}
+
 /**
  * Invokes the Antigravity CLI in headless mode (`agy -p`).
  */
@@ -164,12 +215,49 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
     args.push("--print-timeout", `${Math.ceil(options.timeoutMs / 1000)}s`);
   }
 
+  if (options.debug) {
+    console.log(`  [agent] Running agy${options.model ? ` (model: ${options.model})` : ""}...`);
+  }
+
+  const seenStepIndices = new Set<number>();
   let stdout: string;
   try {
-    ({stdout} = await execFileAsync("agy", args, {
+    ({stdout} = await execFileWithStreaming("agy", args, {
       cwd: options.cwd,
       timeout: options.timeoutMs,
       maxBuffer: 1024 * 1024 * 32,
+      onStdoutLine: (line) => {
+        let parsed: AgyStreamLine;
+        try {
+          parsed = JSON.parse(line) as AgyStreamLine;
+        } catch {
+          return;
+        }
+        if (parsed.event === "step_update" && parsed.step_update) {
+          const step = parsed.step_update;
+          const stepIndex = step.step_index;
+          const isNewStep = stepIndex === undefined || !seenStepIndices.has(stepIndex);
+          if (step.step_type === "tool" && step.tool_info && isNewStep) {
+            if (stepIndex !== undefined) seenStepIndices.add(stepIndex);
+            const toolName = step.tool_name ?? step.tool_info.name ?? "unknown";
+            const rawParams = step.tool_info.parameters ?? {};
+            const input = {
+              ...rawParams,
+              ...(rawParams.CommandLine && !rawParams.command
+                ? {command: rawParams.CommandLine}
+                : {}),
+            };
+            const toolUse = {name: toolName, input};
+            options.onToolUse?.(toolUse);
+            if (options.debug) {
+              const cmd = getSubcommandFromToolUse(toolUse);
+              if (cmd) {
+                console.log(`    [subcommand] ${cmd}`);
+              }
+            }
+          }
+        }
+      },
     }));
   } catch (e) {
     throw asAgyCliError(e) ?? e;
@@ -263,9 +351,13 @@ export function asClaudeCliError(error: unknown): AgentError | undefined {
 const DEFAULT_CLAUDE_ALLOWED_TOOLS = ["Read", "Grep", "Glob"];
 
 export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
+  if (options.debug) {
+    console.log(`  [agent] Running claude${options.model ? ` (model: ${options.model})` : ""}...`);
+  }
+
   let stdout: string;
   try {
-    ({stdout} = await execFileAsync(
+    ({stdout} = await execFileWithStreaming(
       "claude",
       [
         "-p", prompt,
@@ -278,6 +370,28 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
         cwd: options.cwd,
         timeout: options.timeoutMs,
         maxBuffer: 1024 * 1024 * 32,
+        onStdoutLine: (line) => {
+          let parsed: {type?: string};
+          try {
+            parsed = JSON.parse(line) as {type?: string};
+          } catch {
+            return;
+          }
+          if (parsed.type === "assistant") {
+            for (const block of (parsed as unknown as ClaudeCliAssistantLine).message.content) {
+              if (block.type === "tool_use" && block.name) {
+                const toolUse = {name: block.name, input: block.input};
+                options.onToolUse?.(toolUse);
+                if (options.debug) {
+                  const cmd = getSubcommandFromToolUse(toolUse);
+                  if (cmd) {
+                    console.log(`    [subcommand] ${cmd}`);
+                  }
+                }
+              }
+            }
+          }
+        },
       },
     ));
   } catch (e) {

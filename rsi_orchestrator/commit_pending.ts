@@ -78,26 +78,38 @@ export async function commitAndPushPendingCandidates(
 
 let startingBranch: string | undefined;
 
-async function gitStatusPorcelainViaCli(): Promise<string> {
+async function runSubcommand(
+  file: string,
+  args: string[],
+  debug = false,
+): Promise<{stdout: string; stderr: string}> {
+  if (debug) {
+    console.log(`  [subcommand] ${file} ${args.join(" ")}`);
+  }
+  return execFileAsync(file, args);
+}
+
+async function gitStatusPorcelainViaCli(debug = false): Promise<string> {
   try {
-    const {stdout: branchOut} = await execFileAsync("git", ["rev-parse", "--abbrev-ref", "HEAD"]);
+    const {stdout: branchOut} = await runSubcommand(
+      "git", ["rev-parse", "--abbrev-ref", "HEAD"], debug);
     startingBranch = branchOut.trim();
   } catch {
     // Ignore error if unable to determine starting branch
   }
-  const {stdout} = await execFileAsync(
+  const {stdout} = await runSubcommand(
     // --untracked-files=all: without it, git collapses an entirely-untracked directory into a
     // single directory-path entry instead of listing the files inside it. Doesn't bite today
     // (both managed directories always have other already-tracked files in them), but it's the
     // difference between "correct" and "correct by accident of existing repo state."
-    "git", ["status", "--porcelain", "--untracked-files=all", "--", ...MANAGED_PATHS]);
+    "git", ["status", "--porcelain", "--untracked-files=all", "--", ...MANAGED_PATHS], debug);
   return stdout;
 }
 
-async function findOpenPrViaGh(): Promise<{number: number} | undefined> {
-  const {stdout} = await execFileAsync("gh", [
+async function findOpenPrViaGh(debug = false): Promise<{number: number} | undefined> {
+  const {stdout} = await runSubcommand("gh", [
     "pr", "list", "--repo", REPO, "--head", BRANCH, "--state", "open", "--json", "number",
-  ]);
+  ], debug);
   const prs = JSON.parse(stdout) as Array<{number: number}>;
   return prs[0];
 }
@@ -133,14 +145,14 @@ export function mergeFileContent(
   return `${JSON.stringify({...remoteJson, ...localJson}, undefined, 2)}\n`;
 }
 
-async function isTrackedOnCurrentBranch(path: string): Promise<boolean> {
-  const {stdout} = await execFileAsync("git", ["ls-files", "--", path]);
+async function isTrackedOnCurrentBranch(path: string, debug = false): Promise<boolean> {
+  const {stdout} = await runSubcommand("git", ["ls-files", "--", path], debug);
   return stdout.trim().length > 0;
 }
 
-async function mergeLocalChangesOntoViaCli(branch: string): Promise<void> {
-  const {stdout: statusOut} = await execFileAsync(
-    "git", ["status", "--porcelain", "--untracked-files=all", "--", ...MANAGED_PATHS]);
+async function mergeLocalChangesOntoViaCli(branch: string, debug = false): Promise<void> {
+  const {stdout: statusOut} = await runSubcommand(
+    "git", ["status", "--porcelain", "--untracked-files=all", "--", ...MANAGED_PATHS], debug);
   const paths = parseStatusPaths(statusOut);
 
   const localContentByPath = new Map<string, string>();
@@ -152,16 +164,16 @@ async function mergeLocalChangesOntoViaCli(branch: string): Promise<void> {
   // their content is already captured above and gets written back after switching.
   for (const path of paths) {
     // eslint-disable-next-line no-await-in-loop
-    if (await isTrackedOnCurrentBranch(path)) {
+    if (await isTrackedOnCurrentBranch(path, debug)) {
       // eslint-disable-next-line no-await-in-loop
-      await execFileAsync("git", ["checkout", "--", path]);
+      await runSubcommand("git", ["checkout", "--", path], debug);
     } else {
       fs.unlinkSync(path);
     }
   }
 
-  await execFileAsync("git", ["fetch", "origin", branch]);
-  await execFileAsync("git", ["checkout", "-B", branch, `origin/${branch}`]);
+  await runSubcommand("git", ["fetch", "origin", branch], debug);
+  await runSubcommand("git", ["checkout", "-B", branch, `origin/${branch}`], debug);
 
   for (const [path, localRaw] of localContentByPath) {
     const remoteRaw = fs.existsSync(path) ? fs.readFileSync(path, "utf-8") : undefined;
@@ -171,43 +183,48 @@ async function mergeLocalChangesOntoViaCli(branch: string): Promise<void> {
   }
 }
 
-export const realCommitPendingDeps: CommitPendingDeps = {
-  gitStatusPorcelain: gitStatusPorcelainViaCli,
-  findOpenPr: findOpenPrViaGh,
-  // `from` (BASE_BRANCH, i.e. "base") is a local branch name that can go stale across sessions —
-  // fetch and branch from origin's ref, not whatever the local branch happens to point at.
-  checkoutNewBranch: async (branch, from) => {
-    await execFileAsync("git", ["fetch", "origin", from]);
-    await execFileAsync("git", ["checkout", "-B", branch, `origin/${from}`]);
-  },
-  mergeLocalChangesOnto: mergeLocalChangesOntoViaCli,
-  commitPendingState: async message => {
-    await execFileAsync("git", ["add", ...MANAGED_PATHS]);
-    await execFileAsync("git", ["commit", "--no-verify", "-m", message]);
-  },
-  push: async branch => {
-    await execFileAsync("git", ["push", "-u", "origin", branch]);
-  },
-  openPr: async (branch, title, body) => {
-    await execFileAsync("gh", [
-      "pr", "create", "--repo", REPO, "--base", BASE_BRANCH, "--head", branch,
-      "--title", title, "--body", body,
-    ]);
-  },
-  // Same staleness concern as checkoutNewBranch — land back on the starting branch (or local
-  // `base` matching origin if starting on base). If `branch` is checked out in another worktree,
-  // fall back to a detached checkout of origin's ref.
-  checkout: async branch => {
-    if (startingBranch && startingBranch !== "HEAD" && startingBranch !== BRANCH
-      && startingBranch !== branch) {
-      await execFileAsync("git", ["checkout", startingBranch]);
-      return;
-    }
-    await execFileAsync("git", ["fetch", "origin", branch]);
-    try {
-      await execFileAsync("git", ["checkout", "-B", branch, `origin/${branch}`]);
-    } catch {
-      await execFileAsync("git", ["checkout", "--detach", `origin/${branch}`]);
-    }
-  },
-};
+export function makeRealCommitPendingDeps(options?: {debug?: boolean}): CommitPendingDeps {
+  const debug = options?.debug ?? false;
+  return {
+    gitStatusPorcelain: () => gitStatusPorcelainViaCli(debug),
+    findOpenPr: () => findOpenPrViaGh(debug),
+    // `from` (BASE_BRANCH, i.e. "base") is a local branch name that can go stale across sessions —
+    // fetch and branch from origin's ref, not whatever the local branch happens to point at.
+    checkoutNewBranch: async (branch, from) => {
+      await runSubcommand("git", ["fetch", "origin", from], debug);
+      await runSubcommand("git", ["checkout", "-B", branch, `origin/${from}`], debug);
+    },
+    mergeLocalChangesOnto: (branch) => mergeLocalChangesOntoViaCli(branch, debug),
+    commitPendingState: async message => {
+      await runSubcommand("git", ["add", ...MANAGED_PATHS], debug);
+      await runSubcommand("git", ["commit", "--no-verify", "-m", message], debug);
+    },
+    push: async branch => {
+      await runSubcommand("git", ["push", "-u", "origin", branch], debug);
+    },
+    openPr: async (branch, title, body) => {
+      await runSubcommand("gh", [
+        "pr", "create", "--repo", REPO, "--base", BASE_BRANCH, "--head", branch,
+        "--title", title, "--body", body,
+      ], debug);
+    },
+    // Same staleness concern as checkoutNewBranch — land back on the starting branch (or local
+    // `base` matching origin if starting on base). If `branch` is checked out in another worktree,
+    // fall back to a detached checkout of origin's ref.
+    checkout: async branch => {
+      if (startingBranch && startingBranch !== "HEAD" && startingBranch !== BRANCH
+        && startingBranch !== branch) {
+        await runSubcommand("git", ["checkout", startingBranch], debug);
+        return;
+      }
+      await runSubcommand("git", ["fetch", "origin", branch], debug);
+      try {
+        await runSubcommand("git", ["checkout", "-B", branch, `origin/${branch}`], debug);
+      } catch {
+        await runSubcommand("git", ["checkout", "--detach", `origin/${branch}`], debug);
+      }
+    },
+  };
+}
+
+export const realCommitPendingDeps: CommitPendingDeps = makeRealCommitPendingDeps();

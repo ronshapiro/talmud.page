@@ -2,7 +2,9 @@ import {
   AgentError,
   asAgyCliError,
   asClaudeCliError,
+  execFileWithStreaming,
   getAgentRunner,
+  getSubcommandFromToolUse,
   parseAgyStreamJsonLines,
   parseClaudeStreamJsonLines,
   primaryClaudeModel,
@@ -275,5 +277,43 @@ describe("asClaudeCliError", () => {
       resultLine({is_error: true, result: "boom", api_error_status: 429}),
     ].join("\n");
     expect(asClaudeCliError({stdout})!.isRateLimited).toBe(true);
+  });
+});
+
+describe("getSubcommandFromToolUse", () => {
+  test("returns command when command is present", () => {
+    expect(getSubcommandFromToolUse({
+      name: "Bash",
+      input: {command: "npx ts-node rsi_orchestrator/context_fetch_cli.ts get-refs '[\"a\"]'"},
+    })).toBe("npx ts-node rsi_orchestrator/context_fetch_cli.ts get-refs '[\"a\"]'");
+  });
+
+  test("returns CommandLine when command is not present", () => {
+    expect(getSubcommandFromToolUse({
+      name: "run_command",
+      input: {CommandLine: "npx ts-node rsi_orchestrator/context_fetch_cli.ts get-neighbors ref"},
+    })).toBe("npx ts-node rsi_orchestrator/context_fetch_cli.ts get-neighbors ref");
+  });
+
+  test("returns undefined when no command or CommandLine is present", () => {
+    expect(getSubcommandFromToolUse({
+      name: "Read",
+      input: {file_path: "foo.ts"},
+    })).toBeUndefined();
+  });
+});
+
+describe("execFileWithStreaming", () => {
+  test("streams stdout lines to onStdoutLine callback", async () => {
+    const lines: string[] = [];
+    const {stdout} = await execFileWithStreaming(
+      "node",
+      ["-e", "console.log('line1'); console.log('line2');"],
+      {
+        onStdoutLine: line => lines.push(line),
+      },
+    );
+    expect(stdout).toContain("line1\nline2");
+    expect(lines).toEqual(["line1", "line2"]);
   });
 });
