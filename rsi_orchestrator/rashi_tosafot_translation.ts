@@ -142,6 +142,13 @@ export async function generateWithSelfCritique(
   return undefined;
 }
 
+export interface TranslationRunResult {
+  rateLimited: boolean;
+  rateLimitError?: AgentError;
+  candidatesProcessed: number;
+  stoppedDueToDeadline?: boolean;
+}
+
 export interface TranslationDeps {
   listCandidates: () => TranslationCandidate[];
   isFresh: (candidate: TranslationCandidate) => boolean;
@@ -150,10 +157,17 @@ export interface TranslationDeps {
   generate: (candidate: TranslationCandidate) => Promise<GeneratedEdit | undefined>;
   writeEdit: (candidate: TranslationCandidate, edit: Edit) => void;
   recordGeneration: (candidate: TranslationCandidate, generated: GeneratedEdit) => void;
+  shouldStop?: () => boolean;
 }
 
-export async function translateRashiTosafotComments(deps: TranslationDeps): Promise<void> {
+export async function translateRashiTosafotComments(
+  deps: TranslationDeps,
+): Promise<TranslationRunResult> {
+  let candidatesProcessed = 0;
   for (const candidate of deps.listCandidates()) {
+    if (deps.shouldStop?.()) {
+      return {rateLimited: false, candidatesProcessed, stoppedDueToDeadline: true};
+    }
     if (deps.isFresh(candidate)) continue;
     let generated;
     try {
@@ -166,7 +180,7 @@ export async function translateRashiTosafotComments(deps: TranslationDeps): Prom
         // burn through it logging the identical failure. Subscription usage limits are the
         // expected budget signal under self-hosted billing; see RecursiveSelfImprovingAgentPlan.md.
         console.error(`Stopping: hit the usage limit (${e.message})`);
-        return;
+        return {rateLimited: true, rateLimitError: e, candidatesProcessed};
       }
       console.error(`Skipping ${candidate.ref}: ${e}`);
       continue;
@@ -174,7 +188,131 @@ export async function translateRashiTosafotComments(deps: TranslationDeps): Prom
     if (!generated) continue;
     deps.writeEdit(candidate, {...generated.edit, status: "pending"});
     deps.recordGeneration(candidate, generated);
+    candidatesProcessed++;
   }
+  return {rateLimited: false, candidatesProcessed};
+}
+
+export interface ContinuousTranslationDeps {
+  listCandidates: () => TranslationCandidate[];
+  isFresh: (candidate: TranslationCandidate) => boolean;
+  generate: (candidate: TranslationCandidate) => Promise<GeneratedEdit | undefined>;
+  writeEdit: (candidate: TranslationCandidate, edit: Edit) => void;
+  recordGeneration: (candidate: TranslationCandidate, generated: GeneratedEdit) => void;
+  onProgress?: () => Promise<void>;
+  sleep?: (ms: number) => Promise<void>;
+  now?: () => number;
+  durationMs: number;
+  checkIntervalMs?: number;
+  logger?: {
+    log: (msg: string) => void;
+    error: (msg: string) => void;
+  };
+}
+
+export interface ContinuousTranslationSummary {
+  totalProcessed: number;
+  totalPauses: number;
+  stoppedReason: "duration_elapsed" | "all_completed";
+}
+
+export const DEFAULT_CHECK_INTERVAL_MS = 60 * 60 * 1000; // 1 hour
+
+/**
+ * Runs translation continuously for a specified duration (e.g. 24 hours), processing as many
+ * candidates as possible. When agent quota/rate limits are encountered, it pauses and checks
+ * hourly, resuming candidate translation as soon as quota is restored.
+ */
+export async function runContinuousTranslation(
+  deps: ContinuousTranslationDeps,
+): Promise<ContinuousTranslationSummary> {
+  const now = deps.now ?? Date.now;
+  const sleep = deps.sleep ?? (ms => new Promise(resolve => setTimeout(resolve, ms)));
+  const checkIntervalMs = deps.checkIntervalMs ?? DEFAULT_CHECK_INTERVAL_MS;
+  const logger = deps.logger ?? console;
+
+  const startTime = now();
+  const deadline = startTime + deps.durationMs;
+  let totalProcessed = 0;
+  let totalPauses = 0;
+
+  logger.log(
+    `Starting continuous translation mode for ${deps.durationMs / 3600000} hours `
+    + `(until ${new Date(deadline).toISOString()}), checking quota every `
+    + `${Math.round(checkIntervalMs / 60000)} minutes on exhaustion.`);
+
+  while (now() < deadline) {
+    const unFreshCandidates = deps.listCandidates().filter(c => !deps.isFresh(c));
+    if (unFreshCandidates.length === 0) {
+      logger.log("All candidates are up to date. Finished.");
+      if (deps.onProgress) {
+        // eslint-disable-next-line no-await-in-loop
+        await deps.onProgress();
+      }
+      return {totalProcessed, totalPauses, stoppedReason: "all_completed"};
+    }
+
+    // eslint-disable-next-line no-await-in-loop
+    const result = await translateRashiTosafotComments({
+      listCandidates: () => unFreshCandidates,
+      isFresh: deps.isFresh,
+      generate: deps.generate,
+      writeEdit: deps.writeEdit,
+      recordGeneration: deps.recordGeneration,
+      shouldStop: () => now() >= deadline,
+    });
+
+    totalProcessed += result.candidatesProcessed;
+
+    if (result.candidatesProcessed > 0 && deps.onProgress) {
+      // eslint-disable-next-line no-await-in-loop
+      await deps.onProgress();
+    }
+
+    if (now() >= deadline) {
+      logger.log(`Reached duration limit (${deps.durationMs / 3600000} hours). Stopping.`);
+      return {totalProcessed, totalPauses, stoppedReason: "duration_elapsed"};
+    }
+
+    if (result.rateLimited) {
+      if (deps.onProgress) {
+        // eslint-disable-next-line no-await-in-loop
+        await deps.onProgress();
+      }
+      const remainingMs = deadline - now();
+      if (remainingMs <= 0) {
+        logger.log("Quota exhausted and duration limit reached. Stopping.");
+        return {totalProcessed, totalPauses, stoppedReason: "duration_elapsed"};
+      }
+      const sleepMs = Math.min(checkIntervalMs, remainingMs);
+      totalPauses++;
+      const resumeAt = new Date(now() + sleepMs).toISOString();
+      logger.log(
+        `Quota exhausted (${result.rateLimitError?.message ?? "rate limited"}). `
+        + `Pausing for ${Math.round(sleepMs / 60000)} minutes until `
+        + `${resumeAt} to check quota availability.`);
+      // eslint-disable-next-line no-await-in-loop
+      await sleep(sleepMs);
+      if (now() >= deadline) {
+        logger.log("Duration limit reached while paused. Stopping.");
+        return {totalProcessed, totalPauses, stoppedReason: "duration_elapsed"};
+      }
+      logger.log(`Resuming at ${new Date(now()).toISOString()} and checking quota availability...`);
+    } else {
+      const remaining = deps.listCandidates().filter(c => !deps.isFresh(c));
+      if (remaining.length === 0) {
+        logger.log("All candidates have been translated and recorded. Exiting.");
+        if (deps.onProgress) {
+          // eslint-disable-next-line no-await-in-loop
+          await deps.onProgress();
+        }
+        return {totalProcessed, totalPauses, stoppedReason: "all_completed"};
+      }
+    }
+  }
+
+  logger.log(`Reached duration limit (${deps.durationMs / 3600000} hours). Stopping.`);
+  return {totalProcessed, totalPauses, stoppedReason: "duration_elapsed"};
 }
 
 function hebrewText(comment: ApiComment): string {
@@ -202,6 +340,14 @@ export function listCandidatesForBook(book: Book): TranslationCandidate[] {
     }
   }
   return candidates;
+}
+
+export function listCandidatesForAllBooks(): TranslationCandidate[] {
+  const all: TranslationCandidate[] = [];
+  for (const book of books.allBooks) {
+    all.push(...listCandidatesForBook(book));
+  }
+  return all;
 }
 
 export function isFreshTranslation(candidate: TranslationCandidate): boolean {
