@@ -169,3 +169,43 @@ test("a page with no commentary at all is left untouched", () => {
   expect(() => promoteReplaceableAiComments(target)).not.toThrow();
   expect(target.sections[0].he).toBe("עברית");
 });
+
+test("pendingReview is transferred from AI version to parent comment on promotion", () => {
+  const target = pageWithRashi({
+    commentary: {
+      Versions: {
+        comments: [aiVersion({pendingReview: "Menachot 87b"})],
+      },
+    },
+  });
+
+  promoteReplaceableAiComments(target);
+
+  expect(rashiOf(target).pendingReview).toBe("Menachot 87b");
+  expect(versionsOf(target)[0].pendingReview).toBeUndefined();
+});
+
+test("Model commentary is transferred from AI version to parent comment on promotion", () => {
+  const modelSubcomment = comment({
+    ref: "ai-ref-model",
+    he: "claude-sonnet-5",
+    en: "claude-sonnet-5",
+    sourceRef: "Model",
+  });
+  const target = pageWithRashi({
+    commentary: {
+      Versions: {
+        comments: [aiVersion({
+          commentary: {
+            Model: {comments: [modelSubcomment]},
+          },
+        })],
+      },
+    },
+  });
+
+  promoteReplaceableAiComments(target);
+
+  expect(rashiOf(target).commentary!.Model.comments).toEqual([modelSubcomment]);
+  expect(versionsOf(target)[0].commentary?.Model).toBeUndefined();
+});
