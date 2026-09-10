@@ -94,7 +94,7 @@ billing.
 ```sh
 npx ts-node rsi_orchestrator/triage_suggestions.ts
 npx ts-node rsi_orchestrator/rashi_tosafot_translation_cli.ts Zevachim --section 2a --limit 2
-npx ts-node rsi_orchestrator/rashi_tosafot_translation_cli.ts --continuous --duration-hours 24
+npx ts-node rsi_orchestrator/rashi_tosafot_translation_cli.ts Zevachim --start-page 10b --continuous --duration-hours 24
 npx ts-node rsi_orchestrator/status_cli.ts
 npx ts-node rsi_orchestrator/schedule_runner.ts   # honors budget_config.json — no-ops if nothing
                                                    # is enabled/unpaused/under its daily cap

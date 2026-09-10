@@ -1,6 +1,7 @@
 import * as yargs from "yargs";
 import {hideBin} from "yargs/helpers";
 import {books} from "../books";
+import {splitOnBookName} from "../refs";
 import {writeAiEdit} from "../precomputed/ai_edits";
 import {commitAndPushPendingCandidates, makeRealCommitPendingDeps} from "./commit_pending";
 import {
@@ -22,7 +23,15 @@ import {
 async function main(): Promise<void> {
   const FLAGS = yargs(hideBin(process.argv))
     .options({
-      section: {type: "string", describe: 'e.g. "77" (matches 77a/77b) or "77a" (exact)'},
+      section: {type: "string", describe: 'only process this specific section/page, e.g. "77" or "77a"'},
+      startPage: {
+        type: "string",
+        describe: 'start processing from this page onwards, e.g. "10b" or "10" (or "Zevachim 10b")',
+      },
+      startBook: {
+        type: "string",
+        describe: 'when processing across all tractates, start from this book onwards',
+      },
       limit: {type: "number", describe: "cap the number of candidates processed"},
       backend: {
         choices: ["claude", "agy"] as const,
@@ -60,7 +69,8 @@ async function main(): Promise<void> {
   if (!isContinuous && (!bookName || (bookName !== "all" && !books.byCanonicalName[bookName]))) {
     console.error(
       "Usage: ts-node rashi_tosafot_translation_cli.ts [<CanonicalBookName> | all] "
-      + "[--section 77] [--limit 2] [--backend agy|claude] [--model <name>] [--no-push] [--no-debug] "
+      + "[--section 77] [--start-page 10b] [--start-book <name>] [--limit 2] "
+      + "[--backend agy|claude] [--model <name>] [--no-push] [--no-debug] "
       + "[--continuous] [--duration-hours 24] [--check-interval-minutes 60]");
     process.exitCode = 1;
     return;
@@ -71,14 +81,24 @@ async function main(): Promise<void> {
     return;
   }
 
+  let {startBook, startPage} = FLAGS;
+
+  if (startPage && (!bookName || bookName === "all") && startPage.includes(" ")) {
+    const [parsedBook, parsedSection] = splitOnBookName(startPage);
+    if (books.byCanonicalName[parsedBook]) {
+      startBook = startBook ?? parsedBook;
+      startPage = parsedSection;
+    }
+  }
+
   const scopeLabel = bookName && bookName !== "all" ? bookName : "all tractates";
 
   function getCandidates(): TranslationCandidate[] {
     let candidates: TranslationCandidate[];
     if (!bookName || bookName === "all") {
-      candidates = listCandidatesForAllBooks();
+      candidates = listCandidatesForAllBooks({startBook, startPage});
     } else {
-      candidates = listCandidatesForBook(books.byCanonicalName[bookName]);
+      candidates = listCandidatesForBook(books.byCanonicalName[bookName], {startPage});
     }
     if (FLAGS.section) candidates = candidates.filter(c => c.section.startsWith(FLAGS.section!));
     return candidates;

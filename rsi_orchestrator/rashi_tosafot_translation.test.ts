@@ -5,6 +5,8 @@ import {
   CritiqueVerdict,
   GeneratedEdit,
   generateWithSelfCritique,
+  compareAmudim,
+  filterSectionsFromStartPage,
   MAX_GENERATION_ATTEMPTS,
   parseJsonResponse,
   runContinuousTranslation,
@@ -495,6 +497,43 @@ describe("runContinuousTranslation", () => {
     });
     // Two 1-hour pauses hit the 2-hour duration limit
     expect(sleepCalls).toEqual([3600000, 3600000]);
+  });
+});
+
+describe("filterSectionsFromStartPage", () => {
+  const sections = ["2a", "2b", "3a", "3b", "10a", "10b", "11a"];
+
+  test("filters from exact matching section", () => {
+    expect(filterSectionsFromStartPage(sections, "10b")).toEqual(["10b", "11a"]);
+  });
+
+  test("normalizes integer page to daf 'a'", () => {
+    expect(filterSectionsFromStartPage(sections, "10")).toEqual(["10a", "10b", "11a"]);
+  });
+
+  test("finds closest subsequent page when exact page not in list", () => {
+    expect(filterSectionsFromStartPage(sections, "4a")).toEqual(["10a", "10b", "11a"]);
+  });
+
+  test("returns all sections when start page is before first section", () => {
+    expect(filterSectionsFromStartPage(sections, "1a")).toEqual(sections);
+  });
+
+  test("returns empty array when start page is after all sections", () => {
+    expect(filterSectionsFromStartPage(sections, "20a")).toEqual([]);
+  });
+});
+
+describe("compareAmudim", () => {
+  test("compares dafim numerically", () => {
+    expect(compareAmudim("2b", "10a")).toBeLessThan(0);
+    expect(compareAmudim("10a", "2b")).toBeGreaterThan(0);
+  });
+
+  test("compares amud 'a' and 'b' on same daf", () => {
+    expect(compareAmudim("10a", "10b")).toBeLessThan(0);
+    expect(compareAmudim("10b", "10a")).toBeGreaterThan(0);
+    expect(compareAmudim("10a", "10a")).toBe(0);
   });
 });
 

@@ -319,9 +319,59 @@ function hebrewText(comment: ApiComment): string {
   return toFlatArray(comment.he).join(" ");
 }
 
-export function listCandidatesForBook(book: Book): TranslationCandidate[] {
+export interface CandidateListOptions {
+  startPage?: string;
+}
+
+export interface AllBooksCandidateListOptions {
+  startBook?: string;
+  startPage?: string;
+}
+
+function parseAmud(amud: string): {daf: number; side: string} {
+  const match = /^(\d+)([ab]?)$/.exec(amud.trim());
+  if (!match) return {daf: 0, side: "a"};
+  return {
+    daf: parseInt(match[1], 10),
+    side: match[2] || "a",
+  };
+}
+
+export function compareAmudim(a: string, b: string): number {
+  const pa = parseAmud(a);
+  const pb = parseAmud(b);
+  if (pa.daf !== pb.daf) return pa.daf - pb.daf;
+  return pa.side.localeCompare(pb.side);
+}
+
+export function filterSectionsFromStartPage(
+  sections: Iterable<string>,
+  startPage: string,
+): string[] {
+  const allSections = Array.from(sections);
+  const normalized = /^\d+$/.test(startPage.trim())
+    ? `${startPage.trim()}a`
+    : startPage.trim();
+  const directIdx = allSections.indexOf(normalized);
+  if (directIdx !== -1) {
+    return allSections.slice(directIdx);
+  }
+  const cmpIdx = allSections.findIndex(s => compareAmudim(s, normalized) >= 0);
+  if (cmpIdx !== -1) {
+    return allSections.slice(cmpIdx);
+  }
+  return [];
+}
+
+export function listCandidatesForBook(
+  book: Book,
+  options?: CandidateListOptions,
+): TranslationCandidate[] {
   const candidates: TranslationCandidate[] = [];
-  for (const section of Array.from(book.sections)) {
+  const sections = options?.startPage
+    ? filterSectionsFromStartPage(book.sections, options.startPage)
+    : Array.from(book.sections);
+  for (const section of sections) {
     const filePath = cachedOutputFilePath(book, section);
     if (!fs.existsSync(filePath)) continue;
     const amud = JSON.parse(readUtf8(filePath)) as Amud;
@@ -342,10 +392,24 @@ export function listCandidatesForBook(book: Book): TranslationCandidate[] {
   return candidates;
 }
 
-export function listCandidatesForAllBooks(): TranslationCandidate[] {
+export function listCandidatesForAllBooks(
+  options?: AllBooksCandidateListOptions,
+): TranslationCandidate[] {
   const all: TranslationCandidate[] = [];
-  for (const book of books.allBooks) {
-    all.push(...listCandidatesForBook(book));
+  const allBooksList = Array.from(books.allBooks);
+  let started = !options?.startBook;
+
+  for (const book of allBooksList) {
+    if (!started) {
+      if (book.canonicalName === options?.startBook) {
+        started = true;
+      } else {
+        continue;
+      }
+    }
+    const isFirstBook = book.canonicalName === options?.startBook;
+    const startPageForBook = isFirstBook ? options?.startPage : undefined;
+    all.push(...listCandidatesForBook(book, {startPage: startPageForBook}));
   }
   return all;
 }
