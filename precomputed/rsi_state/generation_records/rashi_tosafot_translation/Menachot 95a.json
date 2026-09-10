@@ -12,5 +12,319 @@
       "Rashi on Menachot 95a:1:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">כמין כוורת היה לה בתנור</strong> - וזה הדפוס שהוא נאפה בו מרובע והיינו כמין תיבה פרוצה שיש לה שוליים רחבים ומרובעים:"
+  },
+  "Rashi on Menachot 95a:10:1": {
+    "dependsOn": [
+      "Menachot 95a:10",
+      "Rashi on Menachot 95a:10:1",
+      "Menachot 95a:9",
+      "Menachot 95a:11",
+      "Rashi on Menachot 95a:11:1"
+    ],
+    "generatedAt": "2026-09-10T10:54:12.700Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 95a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי לא מפיק ליה</strong> - מעזרה והשתא נמי לא אפקיה ממחנה לויה:"
+  },
+  "Rashi on Menachot 95a:11:1": {
+    "dependsOn": [
+      "Menachot 95a:11",
+      "Rashi on Menachot 95a:11:1"
+    ],
+    "generatedAt": "2026-09-10T10:54:35.492Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 95a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לדגלים</strong> - להורות איזה דגל יסע ראשון ואיזה אמצעי ואיזה אחרון:"
+  },
+  "Rashi on Menachot 95a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T10:55:01.846Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 95a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סילוק מסעות</strong> - שהפרוכת נגללות:"
+  },
+  "Rashi on Menachot 95a:13:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T10:55:33.244Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 95a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קדשים נפסלים ביוצא</strong> - שאין להם קלעים ואעפ\"כ המחנה קדוש וזבין ומצורעין משתלחין חוץ ממחיצתן מצורע חוץ למחנה ישראל והיו מהלכים בסוף מחנה כדאמר בברכות <span class=\"parenthesized\">(דף נד.)</span> את והב בסופה וזבין חוץ למחנה לויה:"
+  },
+  "Rashi on Menachot 95a:14:1": {
+    "dependsOn": [
+      "Menachot 95a:13",
+      "Menachot 95a:14",
+      "Rashi on Menachot 95a:14:1",
+      "Rashi on Menachot 95a:14:2",
+      "context_fetch_cli.ts",
+      "kMDItemFSName == ",
+      "Rashi on Menachot 95a:13:1",
+      "Rashi on Menachot 95a:13:2",
+      "Rashi on Menachot 95a:1:1",
+      "Rashi on Menachot 95a:1:2",
+      "Rashi on Menachot 95a:7:1",
+      "Steinsaltz on Menachot 95a:14:1",
+      "Tosafot on Menachot 95a:14:1"
+    ],
+    "generatedAt": "2026-09-10T10:57:07.947Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 95a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי אהל מועד דווקא הוא</strong> - אע\"ג דהוגללו הפרוכת כדקתני לעיל:"
+  },
+  "Rashi on Menachot 95a:14:2": {
+    "dependsOn": [
+      "Menachot 95a:14",
+      "Rashi on Menachot 95a:14:1",
+      "Rashi on Menachot 95a:14:2",
+      "Tosafot on Menachot 95a:14:1",
+      "Steinsaltz on Menachot 95a:14"
+    ],
+    "generatedAt": "2026-09-10T10:59:15.811Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 95a:14:2"
+    ],
+    "sourceText": "ה\"ג אפילו קדשים נמי לא ליפסלו ביוצא ואי אהל מועד לאו דוקא הוא אפילו לחם הפנים נמי ליפסול:"
+  },
+  "Rashi on Menachot 95a:15:1": {
+    "dependsOn": [
+      "Menachot 95a:15"
+    ],
+    "generatedAt": "2026-09-10T11:04:50.549Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 95a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא כי אתא רבין אמר</strong> - אהל מועד לאו דווקא דלדגלים הוא דאתא ומר דמכשיר במסודר דכתיב לחם תמיד עליו יהיה ומר דפסיל במסולק:"
+  },
+  "Rashi on Menachot 95a:16:1": {
+    "dependsOn": [
+      "Menachot 95a:16",
+      "Rashi on Menachot 95a:16:1",
+      "Rashi on Menachot 95a:16:2",
+      "Rashi on Menachot 95a:16:3",
+      "context_fetch_cli.ts"
+    ],
+    "generatedAt": "2026-09-10T11:06:10.990Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 95a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ש\"מ</strong> - מדקתני קדשים נפסלים משום פסול יוצא:"
+  },
+  "Rashi on Menachot 95a:16:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T11:06:31.310Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 95a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יש סילוק מסעות בלילה</strong> - שאם היה נעלה הענן בלילה היו נוסעים מיד ולא היו ממתינין עד הבקר:"
+  },
+  "Rashi on Menachot 95a:16:3": {
+    "dependsOn": [
+      "Menachot 95a:16",
+      "Rashi on Menachot 95a:16:1",
+      "Rashi on Menachot 95a:16:2",
+      "Rashi on Menachot 95a:16:3"
+    ],
+    "generatedAt": "2026-09-10T11:07:46.937Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 95a:16:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אימת מידלו</strong> - קלעים:"
+  },
+  "Rashi on Menachot 95a:17:1": {
+    "dependsOn": [
+      "Menachot 95a:17",
+      "Rashi on Menachot 95a:17:1"
+    ],
+    "generatedAt": "2026-09-10T11:10:07.974Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 95a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בלילה לא מצו עקרי</strong> - דכתיב יומם ברישא והדר לילה קמ\"ל:"
+  },
+  "Rashi on Menachot 95a:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T11:10:35.495Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 95a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורמינהי</strong> - דקתני וזבין ומצורעין משתלחין:"
+  },
+  "Rashi on Menachot 95a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T10:43:20.955Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 95a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אימא ופיה דומה כו'</strong> - השוליים עשויין כספינה:"
+  },
+  "Rashi on Menachot 95a:2:1": {
+    "dependsOn": [
+      "Menachot 95a:2",
+      "Rashi on Menachot 95a:2:1",
+      "context_fetch_cli.ts"
+    ],
+    "generatedAt": "2026-09-10T10:46:45.856Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 95a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כמין דוקרנין</strong> - כמין קנים הדוקרנין קנים שיש בהן ענפים הרבה דהוו מפוצלין:"
+  },
+  "Rashi on Menachot 95a:3:1": {
+    "dependsOn": [
+      "Rashi on Menachot 95a:4:1",
+      "Rashi on Menachot 95a:5:1",
+      "Rashi on Menachot 95a:7:1",
+      "context_fetch_cli.ts"
+    ],
+    "generatedAt": "2026-09-10T10:48:11.168Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 95a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נפסל במסעות</strong> - כשנוסעין ישראל במדבר ומפרקים המשכן ונושאים השלחן עם הלחם כדכתיב <span class=\"parenthesized\">(במדבר ד׳:ז׳)</span> ועל שלחן הפנים יפרשו בגד תכלת מי נפסל לחם ביוצא או לא:"
+  },
+  "Rashi on Menachot 95a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T10:48:38.773Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 95a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בחנייתו נפסל ביוצא</strong> - אם יוצא חוץ לקלעים כדכתיב והיתה לאהרן ולבניו ואכלוהו במקום קדוש <span class=\"parenthesized\">(ויקרא כ״ד:ט׳)</span>:"
+  },
+  "Rashi on Menachot 95a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T10:48:57.488Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 95a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולחם התמיד עליו יהיה</strong> - אלמא בקדושתיה קאי:"
+  },
+  "Rashi on Menachot 95a:6:1": {
+    "dependsOn": [
+      "Menachot 95a:5",
+      "Menachot 95a:6",
+      "Menachot 95a:7",
+      "Rashi on Menachot 95a:6:1",
+      "context_fetch_cli.ts"
+    ],
+    "generatedAt": "2026-09-10T10:49:58.269Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 95a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ממקומו</strong> - של שולחן:"
+  },
+  "Rashi on Menachot 95a:7:1": {
+    "dependsOn": [
+      "Menachot 95a:7",
+      "Rashi on Menachot 95a:7:1",
+      "Rashi on Menachot 95a:7:2",
+      "Menachot 95a:15",
+      "Rashi on Menachot 95a:15:1"
+    ],
+    "generatedAt": "2026-09-10T10:50:48.551Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 95a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במסודר</strong> - על השלחן:"
+  },
+  "Rashi on Menachot 95a:7:2": {
+    "dependsOn": [
+      "Menachot 95a:7"
+    ],
+    "generatedAt": "2026-09-10T10:53:26.460Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 95a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[במסולק]</strong> - שעדיין לא הגיע זמן לסלק את זה עד שנסעו ומ\"מ בתוך מחנה הלוים הוא שנושאין אותן עמהן עם המשכן ודגלי מחנה ישראל סביב להם:"
+  },
+  "Tosafot on Menachot 95a:14:1": {
+    "dependsOn": [
+      "Tosafot on Menachot 95a:14:1",
+      "\nimport os\nfor root, dirs, files in os.walk(",
+      "mdfind",
+      "context_fetch_cli.ts"
+    ],
+    "generatedAt": "2026-09-10T11:04:18.526Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 95a:14:1"
+    ],
+    "sourceText": "מר אמר במסודר ומר אמר במסולק ולא פליגי מסקנא דשמעתא דלא אמרינן אע\"פ שנסע אהל מועד הוא והא דמסיק ליה בפ' בתרא דזבחים <span class=\"parenthesized\">(דף קטז:)</span> היינו לענין קדשים קלים דנאכלין בכל מחנה ישראל ולא בעו אהל מועד ומיהו ק' דבפרק קדשי קדשים <span class=\"parenthesized\">(זבחים דף סא:)</span> מסיק ליה גבי קדשי קדשים דמפרש בשני מקומות קדשים נאכלים קודם שיעמידו הלוים את המשכן ולאחר שיפרקו הלוים המשכן ולא מיפסלי ביוצא משום דאע\"פ שנסע אהל מועד הוא ויש לומר דהתם מיירי <span class=\"parenthesized\">(קודם)</span> שנפרס אהל מועד והמזבח וקלעי החצר עומדים במקומן וא\"ת וכיון שנסתלק המזבח היכי מתאכלן הא\"ר אלעזר התם מזבח שנפגם אין אוכלין בגינו שירי מנחה ור' ישמעאל ברבי יוסי נמי קאמר כל הקדשים שנשחטו שם פסולין ואפילו קדשים קלים והתם מדמי סילוק מסעות לנפגם מזבח וי\"ל דאתיא כתנא דפליג אר' ישמעאל בר' יוסי ו<span class=\"rashi-quotation\">בקונטרס</span> פי' התם דשני מקומות לאו לאחר שנסעו ונסתלק המזבח קאמר אלא חד מינייהו כדאיתא בעוד שהמשכן נטוי כמשפטו וחד לאחר שפרקוהו קרשיו ויריעותיו ועדיין המזבח במקומו וקודם שיעמידו לוים המשכן דנקט לאו דווקא נקט חדא דלא משכחת לה שיהא המזבח מונח קודם העמדת המשכן שהרי קודם שיחנו בני קהת נושאי המזבחות היו חונין בני גרשון ובני מררי נושאי המשכן ומקימין אותו אבל בנסיעתן שהיו מורידין המשכן תחלה ונושאין בני גרשון ובני מררי אחר דגל ראשון ובני קהת אחר דגל שני כדי שיהו קודמין בני גרשון בחנייתן ומעמידין את המשכן לפני בא בני קהת כדכתיב אחר מסע בני יהודה <span class=\"parenthesized\">(במדבר י)</span> והורד המשכן ואחר שני דגלים כתיב <span class=\"parenthesized\">(שם)</span> ונסעו הקהתים נושאי המקדש דהיינו ארון ומזבחות וכלי שרת והקימו בני גרשון המשכן עד בואם של בני קהת ועוד אי בששינו את הסדר מוקמת לה היכי שחטו קרבנם קודם שיעמידו המשכן הא אמרן באיזהו מקומן <span class=\"parenthesized\">(זבחים דף נה:)</span> שלמים ששחטן קודם שיעמידו הלוים את המשכן פסולין ואי גרסינן לה מיתוקמא בששינו את הסדר וההיא דאיזהו מקומן שלמים דווקא קאמר ומשום דכתיב בהו ושחטו פתח אהל מועד ולא יליף שאר קדשים מינייהו עכ\"ל והא דתנן גבי תמיד <span class=\"parenthesized\">(דף ל:)</span> לא היה השוחט שוחט עד שישמע קול שער גדול שנפתח למצוה בעלמא וא\"ת ולעיל אמאי איצטריך לשנויי ההוא לדגלים הוא דאתא לימא לקדשים קלים הוא דאתא כדמוכח בפרק בתרא דזבחים <span class=\"parenthesized\">(דף קטז:)</span> וי\"ל דא\"כ לא הוה ליה למתלייה באהל מועד ואם תאמר ולוקמה בקדשי קדשים וכגון שהמזבח והקלעים במקומן וי\"ל דמשמע ליה ונסע אהל מועד שנסתלק הכל אפילו המזבח:"
+  },
+  "Tosafot on Menachot 95a:16:1": {
+    "dependsOn": [
+      "Menachot 95a:13",
+      "Menachot 95a:14",
+      "Menachot 95a:15",
+      "Menachot 95a:16",
+      "Rashi on Menachot 95a:16:1",
+      "Rashi on Menachot 95a:16:2",
+      "Rashi on Menachot 95a:16:3"
+    ],
+    "generatedAt": "2026-09-10T11:09:30.759Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 95a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמע מינה יש סילוק מסעות בלילה </strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> מדקתני קדשים נפסלין דאי אין סילוק מסעות בלילה אימת מידלו קלעים בצפרא מאי איריא משום יוצא תיפוק לי דאיפסיל ליה בלינה תימה דלמא נפקא מינה היכא דנסעו באמצע היום דקדשים שנשחטו היום נפסלין משום יוצא ולא משום לינה ונראה לפרש דקאי אפלוגתא דרבי יוחנן ורבי יהושע בן לוי דאיירי בלחם הפנים ומסקינן דמסולק נפסל במסעות ועל כרחיך בשבת לא היו נוסעין דאפילו לא היו תחומין מדאורייתא לא היו יכולין ליסע משום איסור הוצאה ואיסור מחמר להכי דייק דאי אין סילוק מסעות בלילה תיפסול הלחם בלינה ואי הוה אמרינן דבשום פעם לא היו נוסעין אלא או בתחלת היום או בתחלת הלילה הוה מצינו למימר דדייק מברייתא שפיר:"
+  },
+  "Tosafot on Menachot 95a:1:1": {
+    "dependsOn": [
+      "Menachot 95a:1",
+      "context_fetch_cli.ts"
+    ],
+    "generatedAt": "2026-09-10T10:44:24.727Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 95a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כמין כוורת היה לה בתנור</strong> - כוורת עגולה היא כדמוכח בפ\"ק דשבת <span class=\"parenthesized\">(דף ח.)</span> והכא קתני כמין טבלא מרובעת אלא מנוקב ככוורת של קנים שישלוט האור בכולו:"
   }
 }
