@@ -76,7 +76,15 @@ export async function commitAndPushPendingCandidates(
   await deps.checkout(BASE_BRANCH);
 }
 
+let startingBranch: string | undefined;
+
 async function gitStatusPorcelainViaCli(): Promise<string> {
+  try {
+    const {stdout: branchOut} = await execFileAsync("git", ["rev-parse", "--abbrev-ref", "HEAD"]);
+    startingBranch = branchOut.trim();
+  } catch {
+    // Ignore error if unable to determine starting branch
+  }
   const {stdout} = await execFileAsync(
     // --untracked-files=all: without it, git collapses an entirely-untracked directory into a
     // single directory-path entry instead of listing the files inside it. Doesn't bite today
@@ -186,10 +194,15 @@ export const realCommitPendingDeps: CommitPendingDeps = {
       "--title", title, "--body", body,
     ]);
   },
-  // Same staleness concern as checkoutNewBranch — land back on a local `base` that actually
-  // matches origin, not whatever it was left at. If `branch` is checked out in another worktree,
+  // Same staleness concern as checkoutNewBranch — land back on the starting branch (or local
+  // `base` matching origin if starting on base). If `branch` is checked out in another worktree,
   // fall back to a detached checkout of origin's ref.
   checkout: async branch => {
+    if (startingBranch && startingBranch !== "HEAD" && startingBranch !== BRANCH
+      && startingBranch !== branch) {
+      await execFileAsync("git", ["checkout", startingBranch]);
+      return;
+    }
     await execFileAsync("git", ["fetch", "origin", branch]);
     try {
       await execFileAsync("git", ["checkout", "-B", branch, `origin/${branch}`]);
