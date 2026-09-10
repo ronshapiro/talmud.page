@@ -38,7 +38,9 @@ billing.
   `extractRequestedRefs`), rather than relying on the model to self-report it.
 - `rashi_tosafot_translation_cli.ts` — the CLI entrypoint for the above, kept in a separate file
   because `yargs` is ESM-only and breaks under jest; the core module stays importable by its test
-  file this way. `--section`/`--limit` bound a run to one page / a handful of candidates.
+  file this way. `--section`/`--limit` bound a run to one page / a handful of candidates. Supports
+  a continuous mode (`--continuous`, `--duration-hours 24`) that runs as much as possible, pausing
+  and checking hourly when quota is exhausted and resuming when available.
 - `precomputed/rsi_state/triage_log.json` (created on first run) — tracks which issue numbers have
   already been triaged, so re-running doesn't re-comment on the same issue.
 - `precomputed/rsi_state/model_routing.ts` + `model_routing_config.json` — per-task-type model
@@ -92,6 +94,7 @@ billing.
 ```sh
 npx ts-node rsi_orchestrator/triage_suggestions.ts
 npx ts-node rsi_orchestrator/rashi_tosafot_translation_cli.ts Zevachim --section 2a --limit 2
+npx ts-node rsi_orchestrator/rashi_tosafot_translation_cli.ts --continuous --duration-hours 24
 npx ts-node rsi_orchestrator/status_cli.ts
 npx ts-node rsi_orchestrator/schedule_runner.ts   # honors budget_config.json — no-ops if nothing
                                                    # is enabled/unpaused/under its daily cap
