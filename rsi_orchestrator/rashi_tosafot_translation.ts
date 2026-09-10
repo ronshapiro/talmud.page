@@ -356,6 +356,8 @@ export function parseJsonResponse<T>(text: string): T {
 export interface TaskExecutionOptions {
   backend?: AgentBackend;
   model?: string;
+  debug?: boolean;
+  onSubcommand?: (command: string) => void;
 }
 
 export async function generateViaAgent(
@@ -367,9 +369,23 @@ export async function generateViaAgent(
   const backend = options?.backend ?? modelConfig.backend ?? "claude";
   const model = options?.model ?? modelConfig.generateModel;
   const runner = getAgentRunner(backend);
+  if (options?.debug) {
+    console.log(`  [generate] running ${backend} (${model ?? "default model"})...`);
+  }
   const result = await runner(
     generationPrompt(candidate, priorFeedback),
-    {model, allowedTools: CONTEXT_FETCH_ALLOWED_TOOLS});
+    {
+      model,
+      allowedTools: CONTEXT_FETCH_ALLOWED_TOOLS,
+      debug: options?.debug,
+      onToolUse: (toolUse) => {
+        const cmd = (toolUse.input as {command?: string; CommandLine?: string})?.command
+          ?? (toolUse.input as {command?: string; CommandLine?: string})?.CommandLine;
+        if (cmd) {
+          options?.onSubcommand?.(cmd);
+        }
+      },
+    });
   const finalModel = result.model ?? model;
   recordContextUsage({
     taskType: TASK_TYPE,
@@ -396,9 +412,23 @@ export async function critiqueViaAgent(
   const backend = options?.backend ?? modelConfig.backend ?? "claude";
   const model = options?.model ?? modelConfig.critiqueModel;
   const runner = getAgentRunner(backend);
+  if (options?.debug) {
+    console.log(`  [critique] running ${backend} (${model ?? "default model"})...`);
+  }
   const result = await runner(
     critiquePrompt(candidate, edit),
-    {model, allowedTools: CONTEXT_FETCH_ALLOWED_TOOLS});
+    {
+      model,
+      allowedTools: CONTEXT_FETCH_ALLOWED_TOOLS,
+      debug: options?.debug,
+      onToolUse: (toolUse) => {
+        const cmd = (toolUse.input as {command?: string; CommandLine?: string})?.command
+          ?? (toolUse.input as {command?: string; CommandLine?: string})?.CommandLine;
+        if (cmd) {
+          options?.onSubcommand?.(cmd);
+        }
+      },
+    });
   const finalModel = result.model ?? model;
   recordContextUsage({
     taskType: TASK_TYPE,
@@ -420,8 +450,23 @@ export async function generateAndRecord(
   options?: TaskExecutionOptions,
 ): Promise<GeneratedEdit | undefined> {
   return generateWithSelfCritique(candidate, {
-    generate: (c, priorFeedback) => generateViaAgent(c, priorFeedback, options),
-    critique: (c, edit) => critiqueViaAgent(c, edit, options),
+    generate: (c, priorFeedback) => {
+      if (options?.debug && priorFeedback) {
+        console.log(`  [retry] feedback from previous attempt: ${priorFeedback}`);
+      }
+      return generateViaAgent(c, priorFeedback, options);
+    },
+    critique: async (c, edit) => {
+      const outcome = await critiqueViaAgent(c, edit, options);
+      if (options?.debug) {
+        if (outcome.verdict.valid) {
+          console.log(`  [critique] accepted`);
+        } else {
+          console.log(`  [critique] rejected: ${outcome.verdict.reason}`);
+        }
+      }
+      return outcome;
+    },
   });
 }
 
