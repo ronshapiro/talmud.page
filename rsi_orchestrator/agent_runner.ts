@@ -192,6 +192,116 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
   };
 };
 
+/* ============================================================================
+ * Claude CLI Runner (`claude -p`)
+ * ============================================================================ */
+
+interface ClaudeCliResultLine {
+  type: "result";
+  result: string;
+  is_error: boolean; // eslint-disable-line camelcase
+  total_cost_usd?: number; // eslint-disable-line camelcase
+  api_error_status?: number; // eslint-disable-line camelcase
+  modelUsage?: Record<string, {costUSD?: number}>;
+}
+
+interface ClaudeCliAssistantLine {
+  type: "assistant";
+  message: {
+    content: Array<{type: string; name?: string; input?: unknown}>;
+  };
+}
+
+export function primaryClaudeModel(
+  modelUsage: ClaudeCliResultLine["modelUsage"],
+): string | undefined {
+  if (!modelUsage) return undefined;
+  const entries = Object.entries(modelUsage);
+  if (entries.length === 0) return undefined;
+  return entries.reduce((a, b) => ((b[1].costUSD ?? 0) > (a[1].costUSD ?? 0) ? b : a))[0];
+}
+
+/**
+ * `--output-format stream-json` writes one JSON object per line: assistant turns (which carry
+ * tool_use blocks), tool results, system events, and a trailing `type: "result"` line.
+ */
+export function parseClaudeStreamJsonLines(stdout: string): {
+  toolUses: ToolUseRecord[];
+  result: ClaudeCliResultLine | undefined;
+} {
+  const toolUses: ToolUseRecord[] = [];
+  let result: ClaudeCliResultLine | undefined;
+  for (const line of stdout.split("\n")) {
+    if (!line.trim()) continue;
+    let parsed: {type?: string};
+    try {
+      parsed = JSON.parse(line) as {type?: string};
+    } catch {
+      continue;
+    }
+    if (parsed.type === "assistant") {
+      for (const block of (parsed as unknown as ClaudeCliAssistantLine).message.content) {
+        if (block.type === "tool_use" && block.name) {
+          toolUses.push({name: block.name, input: block.input});
+        }
+      }
+    } else if (parsed.type === "result") {
+      result = parsed as unknown as ClaudeCliResultLine;
+    }
+  }
+  return {toolUses, result};
+}
+
+export function asClaudeCliError(error: unknown): AgentError | undefined {
+  const stdout = (error as {stdout?: string} | undefined)?.stdout;
+  if (!stdout) return undefined;
+  const {result} = parseClaudeStreamJsonLines(stdout);
+  if (!result) return undefined;
+  return new AgentError(result.result, result.api_error_status, "claude");
+}
+
+const DEFAULT_CLAUDE_ALLOWED_TOOLS = ["Read", "Grep", "Glob"];
+
+export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
+  let stdout: string;
+  try {
+    ({stdout} = await execFileAsync(
+      "claude",
+      [
+        "-p", prompt,
+        "--output-format", "stream-json",
+        "--verbose",
+        "--allowedTools", (options.allowedTools ?? DEFAULT_CLAUDE_ALLOWED_TOOLS).join(","),
+        ...(options.model ? ["--model", options.model] : []),
+      ],
+      {
+        cwd: options.cwd,
+        timeout: options.timeoutMs,
+        maxBuffer: 1024 * 1024 * 32,
+      },
+    ));
+  } catch (e) {
+    throw asClaudeCliError(e) ?? e;
+  }
+  const {toolUses, result} = parseClaudeStreamJsonLines(stdout);
+  if (!result) {
+    throw new Error("Headless Claude call produced no result line");
+  }
+  if (result.is_error) {
+    throw new AgentError(result.result, result.api_error_status, "claude");
+  }
+  return {
+    text: result.result,
+    model: primaryClaudeModel(result.modelUsage),
+    costUsd: result.total_cost_usd,
+    toolUses,
+  };
+};
+
+/* ============================================================================
+ * Runner Factory
+ * ============================================================================ */
+
 /**
  * Returns an AgentRunner implementation for the specified backend.
  */
@@ -200,8 +310,7 @@ export function getAgentRunner(backend: AgentBackend = "claude"): AgentRunner {
     case "agy":
       return runHeadlessAgy;
     case "claude":
-      // eslint-disable-next-line global-require, @typescript-eslint/no-var-requires
-      return (require("./headless_claude") as typeof import("./headless_claude")).runHeadlessClaude;
+      return runHeadlessClaude;
     default:
       throw new Error(`Unknown agent backend: "${String(backend)}"`);
   }
