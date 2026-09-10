@@ -373,6 +373,11 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     className: "comment-context",
   },
   {
+    englishName: "Model",
+    hebrewName: "מודל",
+    className: "model",
+  },
+  {
     englishName: "Versions",
     hebrewName: "גרסאות",
     className: "comment-alternatives",

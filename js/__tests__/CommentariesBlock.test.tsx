@@ -41,6 +41,7 @@ const kind = (
 
 const RASHI = kind("Rashi", "rashi");
 const TOSAFOT = kind("Tosafot", "tosafot");
+const MODEL = kind("Model", "model");
 const SEGMENT_LABEL = "2a_section_1";
 
 /**
@@ -522,5 +523,23 @@ describe("nested commentaries", () => {
 
     expect(queryAll(root, ".depthIndicator")).toHaveLength(1);
     expect(query(root, ".depthIndicator").textContent).toBe(">");
+  });
+
+  test("a comment's Model commentary renders as a nested subcomment button", () => {
+    const root = render(
+      commentaries({
+        Rashi: [{
+          he: "רשי",
+          commentary: commentaries({
+            Model: [{he: "claude-sonnet-5", en: "claude-sonnet-5"}],
+          }),
+        }],
+      }),
+      {
+        commentaryTypes: [RASHI, MODEL],
+        initiallyOpen: ["rashi"],
+      });
+
+    expect(texts(root, ".show-buttons a.model")).toEqual(["he:Model"]);
   });
 });

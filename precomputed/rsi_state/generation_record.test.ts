@@ -1,6 +1,7 @@
 import * as fs from "fs";
 import {
   findDependentsOnPage,
+  findGenerationRecord,
   GenerationRecord,
   listPagesWithGenerationRecords,
   readGenerationRecord,
@@ -70,4 +71,10 @@ test("listPagesWithGenerationRecords lists every page with a record file", () =>
   upsertGenerationRecord(TASK_TYPE, PAGE, "Test 2a:1", record());
   upsertGenerationRecord(TASK_TYPE, "__Test_Page__ 2b", "Test 2b:1", record());
   expect(listPagesWithGenerationRecords(TASK_TYPE).sort()).toEqual([PAGE, "__Test_Page__ 2b"]);
+});
+
+test("findGenerationRecord finds record across task types", () => {
+  expect(findGenerationRecord(PAGE, "Test 2a:1")).toBeUndefined();
+  upsertGenerationRecord(TASK_TYPE, PAGE, "Test 2a:1", record({model: "claude-sonnet-5"}));
+  expect(findGenerationRecord(PAGE, "Test 2a:1")?.model).toBe("claude-sonnet-5");
 });

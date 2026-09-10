@@ -8,6 +8,7 @@ export interface Edit {
   // Set by the RSI orchestrator on newly generated candidates; absent (the default for every
   // pre-existing shipped edit) means live. Cleared by /api/rsi-review-decision on approve.
   status?: "pending";
+  model?: string;
 }
 export const OUTPUT_DIR = "precomputed/ai_additions";
 
