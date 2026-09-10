@@ -1,11 +1,14 @@
 import {
   AgentError,
   asAgyCliError,
+  asClaudeCliError,
   getAgentRunner,
   parseAgyStreamJsonLines,
+  parseClaudeStreamJsonLines,
+  primaryClaudeModel,
   runHeadlessAgy,
+  runHeadlessClaude,
 } from "./agent_runner";
-import {runHeadlessClaude} from "./headless_claude";
 
 describe("parseAgyStreamJsonLines", () => {
   test("returns empty toolUses and undefined result for empty output", () => {
@@ -155,5 +158,122 @@ describe("AgentError", () => {
   test("does not set isRateLimited on generic error", () => {
     const err = new AgentError("Syntax error in file", 500);
     expect(err.isRateLimited).toBe(false);
+  });
+});
+
+describe("primaryClaudeModel", () => {
+  test("returns undefined when there's no modelUsage", () => {
+    expect(primaryClaudeModel(undefined)).toBeUndefined();
+  });
+
+  test("returns undefined for an empty modelUsage", () => {
+    expect(primaryClaudeModel({})).toBeUndefined();
+  });
+
+  test("returns the only model when there's just one", () => {
+    expect(primaryClaudeModel({"claude-sonnet-5": {costUSD: 0.01}})).toBe("claude-sonnet-5");
+  });
+
+  test("picks the highest-cost model when several models were used in one session", () => {
+    expect(primaryClaudeModel({
+      "claude-haiku-4-5-20251001": {costUSD: 0.001142},
+      "claude-sonnet-5": {costUSD: 0.14135159999999997},
+    })).toBe("claude-sonnet-5");
+  });
+
+  test("treats a missing costUSD as zero", () => {
+    expect(primaryClaudeModel({
+      "claude-haiku-4-5-20251001": {},
+      "claude-sonnet-5": {costUSD: 0.01},
+    })).toBe("claude-sonnet-5");
+  });
+});
+
+function assistantLine(toolUseBlocks: Array<{name: string; input: unknown}>): string {
+  return JSON.stringify({
+    type: "assistant",
+    message: {
+      content: toolUseBlocks.map(b => ({type: "tool_use", name: b.name, input: b.input})),
+    },
+  });
+}
+
+function textAssistantLine(text: string): string {
+  return JSON.stringify({type: "assistant", message: {content: [{type: "text", text}]}});
+}
+
+function resultLine(overrides: Record<string, unknown> = {}): string {
+  return JSON.stringify({
+    type: "result", is_error: false, result: "done", total_cost_usd: 0.05, ...overrides,
+  });
+}
+
+describe("parseClaudeStreamJsonLines", () => {
+  test("returns no tool uses and no result for an empty stream", () => {
+    expect(parseClaudeStreamJsonLines("")).toEqual({toolUses: [], result: undefined});
+  });
+
+  test("collects tool_use blocks from assistant lines, in order", () => {
+    const stdout = [
+      JSON.stringify({type: "system", subtype: "init"}),
+      assistantLine([{name: "Read", input: {file_path: "a.json"}}]),
+      JSON.stringify({type: "user", message: {content: []}}),
+      assistantLine([{name: "Grep", input: {pattern: "Rashi"}}]),
+      textAssistantLine("done"),
+      resultLine(),
+    ].join("\n");
+
+    const {toolUses, result} = parseClaudeStreamJsonLines(stdout);
+    expect(toolUses).toEqual([
+      {name: "Read", input: {file_path: "a.json"}},
+      {name: "Grep", input: {pattern: "Rashi"}},
+    ]);
+    expect(result?.result).toBe("done");
+  });
+
+  test("ignores a trailing partial/non-JSON line", () => {
+    const stdout = `${resultLine()}\n{"type": "assistant", truncated`;
+    expect(parseClaudeStreamJsonLines(stdout).result?.result).toBe("done");
+  });
+
+  test("returns undefined result when no result line is present", () => {
+    const stdout = assistantLine([{name: "Read", input: {file_path: "a.json"}}]);
+    expect(parseClaudeStreamJsonLines(stdout).result).toBeUndefined();
+  });
+});
+
+describe("asClaudeCliError", () => {
+  test("returns undefined when the error has no stdout", () => {
+    expect(asClaudeCliError(new Error("boom"))).toBeUndefined();
+  });
+
+  test("returns undefined when stdout has no result line", () => {
+    expect(asClaudeCliError({stdout: "not json"})).toBeUndefined();
+  });
+
+  test("recovers an AgentError from a rate-limited response on stdout", () => {
+    const stdout = resultLine({
+      is_error: true,
+      result: "You've hit your session limit · resets 6:10pm",
+      api_error_status: 429,
+    });
+    const recovered = asClaudeCliError({stdout});
+    expect(recovered).toBeInstanceOf(AgentError);
+    expect(recovered!.isRateLimited).toBe(true);
+    expect(recovered!.backend).toBe("claude");
+    expect(recovered!.message).toBe("You've hit your session limit · resets 6:10pm");
+  });
+
+  test("a non-429 CLI error is not treated as rate-limited", () => {
+    const stdout = resultLine({is_error: true, result: "boom", api_error_status: 500});
+    expect(asClaudeCliError({stdout})!.isRateLimited).toBe(false);
+  });
+
+  test("recovers the error even with preceding assistant/tool-use lines on stdout", () => {
+    const stdout = [
+      assistantLine([{name: "Read", input: {file_path: "a.json"}}]),
+      resultLine({is_error: true, result: "boom", api_error_status: 429}),
+    ].join("\n");
+    expect(asClaudeCliError({stdout})!.isRateLimited).toBe(true);
   });
 });

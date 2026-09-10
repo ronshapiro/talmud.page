@@ -1,7 +1,7 @@
 import {execFile} from "child_process";
 import {promisify} from "util";
 import {isAlreadyTriaged, markTriaged} from "../precomputed/rsi_state/triage_log";
-import {runHeadlessClaude} from "./headless_claude";
+import {runHeadlessClaude} from "./agent_runner";
 
 const execFileAsync = promisify(execFile);
 const REPO = "ronshapiro/talmud.page";

@@ -21,7 +21,6 @@ import {
 import {toFlatArray} from "../sefariaTextType";
 import {extractRequestedRefs} from "./context_fetch";
 import {AgentError, AgentBackend, getAgentRunner} from "./agent_runner";
-import {HeadlessClaudeError} from "./headless_claude";
 
 /**
  * Translates and punctuates Rashi/Tosafot comments — the first task type on the new agentic
@@ -120,7 +119,7 @@ export async function generateWithSelfCritique(
       // eslint-disable-next-line no-await-in-loop
       outcome = await deps.critique(candidate, generated.edit);
     } catch (e) {
-      if ((e instanceof AgentError || e instanceof HeadlessClaudeError) && e.isRateLimited) throw e;
+      if (e instanceof AgentError && e.isRateLimited) throw e;
       lastReason = `Your previous response errored rather than producing a usable result: ${e}. `
         + "Respond with ONLY a JSON object with \"hebrew\" and/or \"english\" string fields — "
         + "no other text.";
@@ -146,7 +145,7 @@ export async function generateWithSelfCritique(
 export interface TranslationDeps {
   listCandidates: () => TranslationCandidate[];
   isFresh: (candidate: TranslationCandidate) => boolean;
-  // May reject — translateRashiTosafotComments stops the whole run on a HeadlessClaudeError with
+  // May reject — translateRashiTosafotComments stops the whole run on an AgentError with
   // isRateLimited, and skips just this candidate on any other error.
   generate: (candidate: TranslationCandidate) => Promise<GeneratedEdit | undefined>;
   writeEdit: (candidate: TranslationCandidate, edit: Edit) => void;
@@ -162,7 +161,7 @@ export async function translateRashiTosafotComments(deps: TranslationDeps): Prom
       // eslint-disable-next-line no-await-in-loop
       generated = await deps.generate(candidate);
     } catch (e) {
-      if ((e instanceof AgentError || e instanceof HeadlessClaudeError) && e.isRateLimited) {
+      if (e instanceof AgentError && e.isRateLimited) {
         // Every remaining candidate would fail against the same wall — stop the run rather than
         // burn through it logging the identical failure. Subscription usage limits are the
         // expected budget signal under self-hosted billing; see RecursiveSelfImprovingAgentPlan.md.
@@ -415,9 +414,6 @@ export async function critiqueViaAgent(
     contextRefsUsed: extractRequestedRefs(result.toolUses),
   };
 }
-
-export const generateViaClaude = generateViaAgent;
-export const critiqueViaClaude = critiqueViaAgent;
 
 export async function generateAndRecord(
   candidate: TranslationCandidate,

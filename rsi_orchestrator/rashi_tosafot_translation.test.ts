@@ -1,5 +1,5 @@
 import {Edit} from "../precomputed/ai_edits";
-import {HeadlessClaudeError} from "./headless_claude";
+import {AgentError} from "./agent_runner";
 import {
   CritiqueOutcome,
   CritiqueVerdict,
@@ -144,7 +144,7 @@ describe("generateWithSelfCritique", () => {
   });
 
   test("propagates a rate-limit error immediately instead of retrying", async () => {
-    const rateLimitError = new HeadlessClaudeError("rate limited", 429);
+    const rateLimitError = new AgentError("rate limited", 429, "claude");
     const generate = jest.fn(async () => { throw rateLimitError; });
     const critique = jest.fn(async () => validOutcome);
 
@@ -213,7 +213,7 @@ describe("translateRashiTosafotComments", () => {
   test("stops the whole run when generate hits a rate limit, without writing", async () => {
     const writeEdit = jest.fn();
     const generate = jest.fn()
-      .mockRejectedValueOnce(new HeadlessClaudeError("You've hit your session limit", 429));
+      .mockRejectedValueOnce(new AgentError("You've hit your session limit", 429, "claude"));
     await translateRashiTosafotComments(fakeGenerationDeps({
       listCandidates: () => [candidate({ref: "a"}), candidate({ref: "b"})],
       generate,
