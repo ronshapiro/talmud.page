@@ -16,6 +16,12 @@ repos:
         entry: pre-commit/custom.sh
         language: script
         require_serial: true
+    -   id: ensure-worktree-base
+        name: "Ensure new worktrees start from origin/base"
+        entry: git-hooks/ensure-worktree-base
+        language: script
+        stages: [post-checkout]
+        always_run: true
     -   id: symlink-node-modules
         name: "Symlink node_modules for new worktrees"
         entry: git-hooks/post-checkout

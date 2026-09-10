@@ -1,0 +1,64 @@
+#!/bin/bash
+set -euo pipefail
+
+# Git post-checkout hook arguments:
+# $1: ref of the previous HEAD
+# $2: ref of the new HEAD
+# $3: flag (1 = branch/worktree checkout, 0 = file checkout)
+#
+# When a new worktree is created via `git worktree add`, $1 is 0000000000000000000000000000000000000000.
+# If invoked via the pre-commit framework, PRE_COMMIT_FROM_REF contains the previous HEAD.
+PREV_HEAD="${1:-${PRE_COMMIT_FROM_REF:-}}"
+
+# Resolve Git directories
+GIT_DIR="$(git rev-parse --path-format=absolute --git-dir 2>/dev/null || true)"
+GIT_COMMON_DIR="$(git rev-parse --path-format=absolute --git-common-dir 2>/dev/null || true)"
+
+# Exit if not inside a git repository
+if [[ -z "$GIT_DIR" || -z "$GIT_COMMON_DIR" ]]; then
+  exit 0
+fi
+
+# If git-dir and git-common-dir are identical, we are in the main worktree.
+# Never modify base in the main repository.
+if [[ "$GIT_DIR" == "$GIT_COMMON_DIR" ]]; then
+  exit 0
+fi
+
+# Only run on worktree creation (when previous HEAD is null SHA)
+if [[ ! "$PREV_HEAD" =~ ^0+$ ]]; then
+  exit 0
+fi
+
+# Exit if origin remote does not exist
+if ! git remote get-url origin >/dev/null 2>&1; then
+  exit 0
+fi
+
+# Fetch origin/base to ensure we have the latest remote commits
+echo "Fetching origin/base for new worktree..."
+if ! git fetch origin base; then
+  echo "Warning: Failed to fetch origin/base" >&2
+  exit 0
+fi
+
+ORIGIN_BASE="$(git rev-parse --verify origin/base 2>/dev/null || true)"
+CURRENT_HEAD="$(git rev-parse --verify HEAD 2>/dev/null || true)"
+
+if [[ -z "$ORIGIN_BASE" || -z "$CURRENT_HEAD" || "$CURRENT_HEAD" == "$ORIGIN_BASE" ]]; then
+  exit 0
+fi
+
+BRANCH="$(git symbolic-ref --short HEAD 2>/dev/null || true)"
+REFLOG_COUNT=0
+if [[ -n "$BRANCH" ]]; then
+  REFLOG_COUNT="$(git reflog show "$BRANCH" 2>/dev/null | wc -l | tr -d ' ')"
+fi
+
+# Only reset if HEAD is an ancestor of origin/base or this is a freshly created branch
+if git merge-base --is-ancestor "$CURRENT_HEAD" "$ORIGIN_BASE" || [[ "$REFLOG_COUNT" -le 1 ]]; then
+  git reset --hard origin/base
+  echo "Updated ${BRANCH:-HEAD} to tip of origin/base ($ORIGIN_BASE)"
+else
+  echo "Notice: Current branch has independent commits; not resetting to origin/base." >&2
+fi
