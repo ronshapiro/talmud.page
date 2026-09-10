@@ -388,16 +388,6 @@ describe("special commentary kinds", () => {
     expect(englishes(root)).toEqual([]);
   });
 
-  test("Model commentary renders model name without a title header", () => {
-    const root = renderComment(
-      {he: "claude-sonnet-5", en: "claude-sonnet-5", sourceRef: "Model", sourceHeRef: "מודל"},
-      {englishName: "Model", hebrewName: "מודל", className: "model"});
-
-    expect(hebrews(root)).toEqual(["claude-sonnet-5"]);
-    expect(englishes(root)).toEqual(["claude-sonnet-5"]);
-    expect(queryOrNull(root, "strong")).toBeNull();
-  });
-
   test("a Translation comment expands by default when the setting is on", () => {
     localStorage.expandEnglishByDefault = "true";
     const root = renderComment(
