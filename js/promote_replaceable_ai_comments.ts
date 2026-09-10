@@ -35,6 +35,20 @@ function promoteReplaceableAiCommentsForCommentary(commentaryMap: CommentaryMap 
         comment.he = aiCommentCopy.he;
         comment.en = aiCommentCopy.en;
         comment.didModifyUiWithAiVersion = true;
+        if (aiCommentCopy.pendingReview) {
+          comment.pendingReview = aiCommentCopy.pendingReview;
+          delete originalTextComment.pendingReview;
+        }
+        if (aiCommentCopy.commentary?.Model) {
+          comment.commentary = comment.commentary || {};
+          comment.commentary.Model = aiCommentCopy.commentary.Model;
+          if (originalTextComment.commentary) {
+            delete originalTextComment.commentary.Model;
+            if (Object.keys(originalTextComment.commentary).length === 0) {
+              delete originalTextComment.commentary;
+            }
+          }
+        }
       }
 
       promoteReplaceableAiCommentsForCommentary(comment.commentary);

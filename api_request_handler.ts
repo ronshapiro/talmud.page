@@ -34,6 +34,7 @@ import {
   segmentCount,
 } from "./precomputed";
 import {aiEditsForPage} from "./precomputed/ai_edits";
+import {findGenerationRecord} from "./precomputed/rsi_state/generation_record";
 import {
   segmentationOverridesForPage,
   SegmentationMergeOverride,
@@ -174,7 +175,7 @@ function isUniqueEnglish(source: sefaria.TextType, derived: sefaria.TextType): b
 }
 
 /** A single comment on a text. */
-class Comment {
+export class Comment {
   duplicateRefs: string[] = [];
   isUnique: boolean | undefined;
   canReplaceParent: boolean | undefined;
@@ -1018,11 +1019,29 @@ export abstract class AbstractApiRequestHandler {
       return comment;
     };
 
+    const maybeModelComment = (ref: string) => {
+      if (additions[ref].status !== "pending") return undefined;
+      const model = additions[ref].model ?? findGenerationRecord(this.pageRef(), ref)?.model;
+      if (!model) return undefined;
+      return new Comment(
+        "Model",
+        model,
+        model,
+        `${ref}-model`,
+        "Model",
+        "מודל",
+      );
+    };
+
     for (const segment of segments) {
       if (additions[segment.ref]) {
         const newComment = maybeNewComment(segment.ref, segment.hebrew);
         if (newComment) {
           segment.commentary.addComment(newComment);
+          const modelComment = maybeModelComment(segment.ref);
+          if (modelComment) {
+            segment.commentary.nestedCommentary(newComment.ref).addComment(modelComment);
+          }
         }
       }
 
@@ -1031,8 +1050,12 @@ export abstract class AbstractApiRequestHandler {
         if (additions[comment.ref]) {
           const newComment = maybeNewComment(comment.ref, comment.hebrew);
           if (newComment) {
-            segment.commentary.nestedCommentary(comment.ref)
-              .addComment(newComment);
+            const nested = segment.commentary.nestedCommentary(comment.ref);
+            nested.addComment(newComment);
+            const modelComment = maybeModelComment(comment.ref);
+            if (modelComment) {
+              nested.nestedCommentary(newComment.ref).addComment(modelComment);
+            }
           }
         }
       }

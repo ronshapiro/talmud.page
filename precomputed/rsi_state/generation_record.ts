@@ -87,3 +87,20 @@ export function findDependentsOnPage(
       || record.sourceRefs.includes(changedRef))
     .map(([ref]) => ref);
 }
+
+/**
+ * Looks up a generation record across any registered task type on the page.
+ */
+export function findGenerationRecord(
+  page: string, ref: string,
+): GenerationRecord | undefined {
+  if (!fs.existsSync(GENERATION_RECORD_DIR)) return undefined;
+  for (const entry of fs.readdirSync(GENERATION_RECORD_DIR)) {
+    const taskDirPath = `${GENERATION_RECORD_DIR}/${entry}`;
+    if (fs.statSync(taskDirPath).isDirectory()) {
+      const record = readGenerationRecord(entry, page, ref);
+      if (record) return record;
+    }
+  }
+  return undefined;
+}
