@@ -20,7 +20,7 @@ import {
 } from "../precomputed/rsi_state/staleness";
 import {toFlatArray} from "../sefariaTextType";
 import {extractRequestedRefs} from "./context_fetch";
-import {HeadlessClaudeError, runHeadlessClaude} from "./headless_claude";
+import {AgentError, AgentBackend, getAgentRunner} from "./agent_runner";
 
 /**
  * Translates and punctuates Rashi/Tosafot comments — the first task type on the new agentic
@@ -119,7 +119,7 @@ export async function generateWithSelfCritique(
       // eslint-disable-next-line no-await-in-loop
       outcome = await deps.critique(candidate, generated.edit);
     } catch (e) {
-      if (e instanceof HeadlessClaudeError && e.isRateLimited) throw e;
+      if (e instanceof AgentError && e.isRateLimited) throw e;
       lastReason = `Your previous response errored rather than producing a usable result: ${e}. `
         + "Respond with ONLY a JSON object with \"hebrew\" and/or \"english\" string fields — "
         + "no other text.";
@@ -145,7 +145,7 @@ export async function generateWithSelfCritique(
 export interface TranslationDeps {
   listCandidates: () => TranslationCandidate[];
   isFresh: (candidate: TranslationCandidate) => boolean;
-  // May reject — translateRashiTosafotComments stops the whole run on a HeadlessClaudeError with
+  // May reject — translateRashiTosafotComments stops the whole run on an AgentError with
   // isRateLimited, and skips just this candidate on any other error.
   generate: (candidate: TranslationCandidate) => Promise<GeneratedEdit | undefined>;
   writeEdit: (candidate: TranslationCandidate, edit: Edit) => void;
@@ -161,7 +161,7 @@ export async function translateRashiTosafotComments(deps: TranslationDeps): Prom
       // eslint-disable-next-line no-await-in-loop
       generated = await deps.generate(candidate);
     } catch (e) {
-      if (e instanceof HeadlessClaudeError && e.isRateLimited) {
+      if (e instanceof AgentError && e.isRateLimited) {
         // Every remaining candidate would fail against the same wall — stop the run rather than
         // burn through it logging the identical failure. Subscription usage limits are the
         // expected budget signal under self-hosted billing; see RecursiveSelfImprovingAgentPlan.md.
@@ -353,43 +353,60 @@ export function parseJsonResponse<T>(text: string): T {
   return JSON.parse(stripped) as T;
 }
 
-async function generateViaClaude(
-  candidate: TranslationCandidate, priorFeedback?: string,
+export interface TaskExecutionOptions {
+  backend?: AgentBackend;
+  model?: string;
+}
+
+export async function generateViaAgent(
+  candidate: TranslationCandidate,
+  priorFeedback?: string,
+  options?: TaskExecutionOptions,
 ): Promise<GeneratedEdit> {
   const modelConfig = getTaskModelConfig(TASK_TYPE);
-  const result = await runHeadlessClaude(
+  const backend = options?.backend ?? modelConfig.backend ?? "claude";
+  const model = options?.model ?? modelConfig.generateModel;
+  const runner = getAgentRunner(backend);
+  const result = await runner(
     generationPrompt(candidate, priorFeedback),
-    {model: modelConfig.generateModel, allowedTools: CONTEXT_FETCH_ALLOWED_TOOLS});
+    {model, allowedTools: CONTEXT_FETCH_ALLOWED_TOOLS});
+  const finalModel = result.model ?? model;
   recordContextUsage({
     taskType: TASK_TYPE,
     ref: candidate.ref,
     callKind: "generate",
     toolUses: result.toolUses,
     costUsd: result.costUsd,
-    model: result.model,
+    model: finalModel,
   }, candidate.page);
   return {
     edit: parseJsonResponse<Edit>(result.text),
-    model: result.model,
+    model: finalModel,
     costUsd: result.costUsd,
     contextRefsUsed: extractRequestedRefs(result.toolUses),
   };
 }
 
-async function critiqueViaClaude(
-  candidate: TranslationCandidate, edit: Edit,
+export async function critiqueViaAgent(
+  candidate: TranslationCandidate,
+  edit: Edit,
+  options?: TaskExecutionOptions,
 ): Promise<CritiqueOutcome> {
   const modelConfig = getTaskModelConfig(TASK_TYPE);
-  const result = await runHeadlessClaude(
+  const backend = options?.backend ?? modelConfig.backend ?? "claude";
+  const model = options?.model ?? modelConfig.critiqueModel;
+  const runner = getAgentRunner(backend);
+  const result = await runner(
     critiquePrompt(candidate, edit),
-    {model: modelConfig.critiqueModel, allowedTools: CONTEXT_FETCH_ALLOWED_TOOLS});
+    {model, allowedTools: CONTEXT_FETCH_ALLOWED_TOOLS});
+  const finalModel = result.model ?? model;
   recordContextUsage({
     taskType: TASK_TYPE,
     ref: candidate.ref,
     callKind: "critique",
     toolUses: result.toolUses,
     costUsd: result.costUsd,
-    model: result.model,
+    model: finalModel,
   }, candidate.page);
   return {
     verdict: parseJsonResponse<CritiqueVerdict>(result.text),
@@ -400,10 +417,11 @@ async function critiqueViaClaude(
 
 export async function generateAndRecord(
   candidate: TranslationCandidate,
+  options?: TaskExecutionOptions,
 ): Promise<GeneratedEdit | undefined> {
   return generateWithSelfCritique(candidate, {
-    generate: generateViaClaude,
-    critique: critiqueViaClaude,
+    generate: (c, priorFeedback) => generateViaAgent(c, priorFeedback, options),
+    critique: (c, edit) => critiqueViaAgent(c, edit, options),
   });
 }
 

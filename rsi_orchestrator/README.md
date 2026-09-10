@@ -8,8 +8,8 @@ billing.
 
 ## What's here today
 
-- `headless_claude.ts` — thin wrapper around `claude -p --output-format json` (headless Claude
-  Code). Exported as an injectable function so callers can substitute a fake in tests. Returns the
+- `agent_runner.ts` — headless agent runner interface wrapping `claude` (`claude -p`) and `agy`
+  (`agy -p`). Exported as an injectable function so callers can substitute a fake in tests. Returns the
   response text plus the canonical model ID and cost the CLI reports, so generation records can
   capture what actually ran (needed for Phase 4's model-routing learning).
 - `triage_suggestions.ts` — reads open `rsi-suggestion`-labeled GitHub issues (filed via the

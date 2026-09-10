@@ -21,13 +21,19 @@ async function main(): Promise<void> {
     .options({
       section: {type: "string", describe: 'e.g. "77" (matches 77a/77b) or "77a" (exact)'},
       limit: {type: "number", describe: "cap the number of candidates processed"},
+      backend: {
+        choices: ["claude", "agy"] as const,
+        describe: 'agent backend to use ("claude" or "agy")',
+      },
+      model: {type: "string", describe: "model override to use for generation"},
+      push: {type: "boolean", default: true, describe: "whether to commit and push candidates"},
     })
     .parseSync();
   const bookName = FLAGS._[0] as string | undefined;
   if (!bookName || !books.byCanonicalName[bookName]) {
     console.error(
       "Usage: ts-node rashi_tosafot_translation_cli.ts <CanonicalBookName> "
-      + "[--section 77] [--limit 2]");
+      + "[--section 77] [--limit 2] [--backend agy|claude] [--model <name>] [--no-push]");
     process.exitCode = 1;
     return;
   }
@@ -44,12 +50,17 @@ async function main(): Promise<void> {
       return FLAGS.limit ? candidates.slice(0, FLAGS.limit) : candidates;
     },
     isFresh: isFreshTranslation,
-    generate: generateAndRecord,
+    generate: candidate => generateAndRecord(candidate, {
+      backend: FLAGS.backend,
+      model: FLAGS.model,
+    }),
     writeEdit: (candidate, edit) => writeAiEdit(candidate.page, candidate.ref, edit),
     recordGeneration: recordGenerationForCandidate,
   });
-  await commitAndPushPendingCandidates(
-    `RSI: new pending translation candidates (${bookName})`, realCommitPendingDeps);
+  if (FLAGS.push) {
+    await commitAndPushPendingCandidates(
+      `RSI: new pending translation candidates (${bookName})`, realCommitPendingDeps);
+  }
 }
 
 main().catch(e => {

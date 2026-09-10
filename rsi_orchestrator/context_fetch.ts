@@ -228,14 +228,15 @@ export function getPriorSugyaSkeleton(ref: string, count = 2): PriorSugyaResult 
 
 /**
  * Extracts which refs a generation call actually requested via context_fetch_cli, from the raw
- * Bash tool-use log a headless call returns (headless_claude.ts's `toolUses`). This is what makes
+ * Bash tool-use log a headless call returns (agent_runner.ts's `toolUses`). This is what makes
  * `dependsOn` auto-populated rather than self-reported — see rashi_tosafot_translation.ts.
  */
 export function extractRequestedRefs(toolUses: ToolUseRecord[]): string[] {
   const refs = new Set<string>();
   for (const use of toolUses) {
-    if (use.name !== "Bash") continue;
-    const command = (use.input as {command?: string} | undefined)?.command;
+    if (use.name !== "Bash" && use.name !== "run_command") continue;
+    const input = use.input as {command?: string; CommandLine?: string} | undefined;
+    const command = input?.command ?? input?.CommandLine;
     if (!command || !command.includes("context_fetch_cli")) continue;
     const arrayMatch = command.match(/\[[^\]]*]/);
     if (arrayMatch) {
