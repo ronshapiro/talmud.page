@@ -1,0 +1,57 @@
+#!/bin/bash
+set -euo pipefail
+
+# Git post-checkout hook arguments:
+# $1: ref of the previous HEAD
+# $2: ref of the new HEAD
+# $3: flag (1 = branch/worktree checkout, 0 = file checkout)
+#
+# When a new worktree is created via `git worktree add`, $1 is 0000000000000000000000000000000000000000.
+# If invoked via the pre-commit framework, PRE_COMMIT_FROM_REF contains the previous HEAD.
+PREV_HEAD="${1:-${PRE_COMMIT_FROM_REF:-}}"
+
+# Resolve Git directories
+GIT_DIR="$(git rev-parse --path-format=absolute --git-dir 2>/dev/null || true)"
+GIT_COMMON_DIR="$(git rev-parse --path-format=absolute --git-common-dir 2>/dev/null || true)"
+
+# Exit if not inside a git repository
+if [[ -z "$GIT_DIR" || -z "$GIT_COMMON_DIR" ]]; then
+  exit 0
+fi
+
+# If git-dir and git-common-dir are identical, we are in the main worktree.
+# Never modify node_modules in the main repository.
+if [[ "$GIT_DIR" == "$GIT_COMMON_DIR" ]]; then
+  exit 0
+fi
+
+# We are in a linked worktree.
+WORKTREE_ROOT="$(git rev-parse --show-toplevel 2>/dev/null || true)"
+if [[ -z "$WORKTREE_ROOT" ]]; then
+  exit 0
+fi
+
+MAIN_REPO="$(dirname "$GIT_COMMON_DIR")"
+SOURCE_NODE_MODULES="$MAIN_REPO/node_modules"
+DEST_NODE_MODULES="$WORKTREE_ROOT/node_modules"
+
+if [[ ! -e "$SOURCE_NODE_MODULES" ]]; then
+  echo "Notice: Source node_modules not found at $SOURCE_NODE_MODULES" >&2
+  exit 0
+fi
+
+# If destination already points to the correct target, nothing to do
+if [[ -L "$DEST_NODE_MODULES" ]]; then
+  CURRENT_TARGET="$(readlink "$DEST_NODE_MODULES")"
+  if [[ "$CURRENT_TARGET" == "$SOURCE_NODE_MODULES" ]]; then
+    exit 0
+  fi
+  # Remove stale or mismatched symlink
+  rm "$DEST_NODE_MODULES"
+elif [[ -d "$DEST_NODE_MODULES" ]]; then
+  # Existing real directory; do not overwrite
+  exit 0
+fi
+
+ln -s "$SOURCE_NODE_MODULES" "$DEST_NODE_MODULES"
+echo "Symlinked node_modules -> $SOURCE_NODE_MODULES"

@@ -33,7 +33,7 @@ For suggestions/questions, email feedback@talmud.page.
       `virtualenv venv && chmod +x venv/bin/activate && source venv/bin/activate && pip install -r requirements.txt`
 - `pre-commit`
     - [Pre-Commit](https://pre-commit.com) simplifies configuring Git pre-commit hooks. This is optional but recommended - otherwise you may see errors when trying to push/merge on Github.
-    - To install, run `pip install -g pre-commit && pre-commit install`
+    - To install, run `pip install -g pre-commit && pre-commit install --hook-type pre-commit --hook-type post-checkout`
 - NodeJS v24
     - To install JavaScript dependencies, run `npm install`
 - eslint
