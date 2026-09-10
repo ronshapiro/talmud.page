@@ -1,14 +1,18 @@
 import * as yargs from "yargs";
 import {hideBin} from "yargs/helpers";
 import {books} from "../books";
+import {splitOnBookName} from "../refs";
 import {writeAiEdit} from "../precomputed/ai_edits";
 import {commitAndPushPendingCandidates, makeRealCommitPendingDeps} from "./commit_pending";
 import {
   generateAndRecord,
   isFreshTranslation,
+  listCandidatesForAllBooks,
   listCandidatesForBook,
   recordGenerationForCandidate,
+  runContinuousTranslation,
   translateRashiTosafotComments,
+  TranslationCandidate,
 } from "./rashi_tosafot_translation";
 
 /**
@@ -19,7 +23,15 @@ import {
 async function main(): Promise<void> {
   const FLAGS = yargs(hideBin(process.argv))
     .options({
-      section: {type: "string", describe: 'e.g. "77" (matches 77a/77b) or "77a" (exact)'},
+      section: {type: "string", describe: 'only process this specific section/page, e.g. "77" or "77a"'},
+      startPage: {
+        type: "string",
+        describe: 'start processing from this page onwards, e.g. "10b" or "10" (or "Zevachim 10b")',
+      },
+      startBook: {
+        type: "string",
+        describe: 'when processing across all tractates, start from this book onwards',
+      },
       limit: {type: "number", describe: "cap the number of candidates processed"},
       backend: {
         choices: ["claude", "agy"] as const,
@@ -32,60 +44,144 @@ async function main(): Promise<void> {
         default: true,
         describe: "whether to print debugging output for subcommands and progress",
       },
+      continuous: {
+        type: "boolean",
+        default: false,
+        describe: "run continuously for a fixed duration, pausing and checking hourly when quota is exhausted",
+      },
+      durationHours: {
+        type: "number",
+        describe: "duration in hours for continuous mode (default: 24)",
+      },
+      checkIntervalMinutes: {
+        type: "number",
+        default: 60,
+        describe: "interval in minutes to wait before re-checking quota when exhausted (default: 60)",
+      },
     })
     .parseSync();
+
+  const isContinuous = Boolean(FLAGS.continuous || FLAGS.durationHours !== undefined);
+  const durationHours = FLAGS.durationHours ?? 24;
+  const checkIntervalMs = (FLAGS.checkIntervalMinutes ?? 60) * 60 * 1000;
+
   const bookName = FLAGS._[0] as string | undefined;
-  if (!bookName || !books.byCanonicalName[bookName]) {
+  if (!isContinuous && (!bookName || (bookName !== "all" && !books.byCanonicalName[bookName]))) {
     console.error(
-      "Usage: ts-node rashi_tosafot_translation_cli.ts <CanonicalBookName> "
-      + "[--section 77] [--limit 2] [--backend agy|claude] [--model <name>] [--no-push] [--no-debug]");
+      "Usage: ts-node rashi_tosafot_translation_cli.ts [<CanonicalBookName> | all] "
+      + "[--section 77] [--start-page 10b] [--start-book <name>] [--limit 2] "
+      + "[--backend agy|claude] [--model <name>] [--no-push] [--no-debug] "
+      + "[--continuous] [--duration-hours 24] [--check-interval-minutes 60]");
     process.exitCode = 1;
     return;
   }
-  const book = books.byCanonicalName[bookName];
-  await translateRashiTosafotComments({
-    listCandidates: () => {
-      let candidates = listCandidatesForBook(book);
-      if (FLAGS.section) candidates = candidates.filter(c => c.section.startsWith(FLAGS.section!));
-      // Filter freshness before slicing to --limit — otherwise a limit smaller than the run of
-      // already-fresh candidates at the start of the page silently does nothing (found the hard
-      // way: a real --limit 1 run picked an already-generated candidate, skipped it, and exited
-      // with zero output and zero work done).
-      candidates = candidates.filter(c => !isFreshTranslation(c));
-      const sliced = FLAGS.limit ? candidates.slice(0, FLAGS.limit) : candidates;
-      if (FLAGS.debug) {
-        console.log(
-          `Found ${sliced.length} candidate(s) to process for ${bookName}`
-          + `${FLAGS.section ? ` (section ${FLAGS.section})` : ""}.`);
-      }
-      return sliced;
-    },
-    isFresh: isFreshTranslation,
-    generate: candidate => {
-      if (FLAGS.debug) {
-        console.log(`\n[Candidate] ${candidate.ref}`);
-      }
-      return generateAndRecord(candidate, {
-        backend: FLAGS.backend,
-        model: FLAGS.model,
-        debug: FLAGS.debug,
-      });
-    },
-    writeEdit: (candidate, edit) => {
-      if (FLAGS.debug) {
-        console.log(`Saved pending edit for ${candidate.ref}`);
-      }
-      writeAiEdit(candidate.page, candidate.ref, edit);
-    },
-    recordGeneration: recordGenerationForCandidate,
-  });
-  if (FLAGS.push) {
-    if (FLAGS.debug) {
-      console.log("\nCommitting and pushing pending candidates...");
+  if (bookName && bookName !== "all" && !books.byCanonicalName[bookName]) {
+    console.error(`Unknown book: "${bookName}"`);
+    process.exitCode = 1;
+    return;
+  }
+
+  let {startBook, startPage} = FLAGS;
+
+  if (startPage && (!bookName || bookName === "all") && startPage.includes(" ")) {
+    const [parsedBook, parsedSection] = splitOnBookName(startPage);
+    if (books.byCanonicalName[parsedBook]) {
+      startBook = startBook ?? parsedBook;
+      startPage = parsedSection;
     }
-    await commitAndPushPendingCandidates(
-      `RSI: new pending translation candidates (${bookName})`,
-      makeRealCommitPendingDeps({debug: FLAGS.debug}));
+  }
+
+  const scopeLabel = bookName && bookName !== "all" ? bookName : "all tractates";
+
+  function getCandidates(): TranslationCandidate[] {
+    let candidates: TranslationCandidate[];
+    if (!bookName || bookName === "all") {
+      candidates = listCandidatesForAllBooks({startBook, startPage});
+    } else {
+      candidates = listCandidatesForBook(books.byCanonicalName[bookName], {startPage});
+    }
+    if (FLAGS.section) candidates = candidates.filter(c => c.section.startsWith(FLAGS.section!));
+    return candidates;
+  }
+
+  if (isContinuous) {
+    await runContinuousTranslation({
+      listCandidates: getCandidates,
+      isFresh: isFreshTranslation,
+      generate: candidate => {
+        if (FLAGS.debug) {
+          console.log(`\n[Candidate] ${candidate.ref}`);
+        }
+        return generateAndRecord(candidate, {
+          backend: FLAGS.backend,
+          model: FLAGS.model,
+          debug: FLAGS.debug,
+        });
+      },
+      writeEdit: (candidate, edit) => {
+        if (FLAGS.debug) {
+          console.log(`Saved pending edit for ${candidate.ref}`);
+        }
+        writeAiEdit(candidate.page, candidate.ref, edit);
+      },
+      recordGeneration: recordGenerationForCandidate,
+      onProgress: FLAGS.push
+        ? async () => {
+          if (FLAGS.debug) {
+            console.log("\nCommitting and pushing pending candidates...");
+          }
+          await commitAndPushPendingCandidates(
+            `RSI: new pending translation candidates (${scopeLabel})`,
+            makeRealCommitPendingDeps({debug: FLAGS.debug}));
+        }
+        : undefined,
+      durationMs: durationHours * 60 * 60 * 1000,
+      checkIntervalMs,
+    });
+  } else {
+    await translateRashiTosafotComments({
+      listCandidates: () => {
+        let candidates = getCandidates();
+        // Filter freshness before slicing to --limit — otherwise a limit smaller than the run of
+        // already-fresh candidates at the start of the page silently does nothing (found the hard
+        // way: a real --limit 1 run picked an already-generated candidate, skipped it, and exited
+        // with zero output and zero work done).
+        candidates = candidates.filter(c => !isFreshTranslation(c));
+        const sliced = FLAGS.limit ? candidates.slice(0, FLAGS.limit) : candidates;
+        if (FLAGS.debug) {
+          console.log(
+            `Found ${sliced.length} candidate(s) to process for ${scopeLabel}`
+            + `${FLAGS.section ? ` (section ${FLAGS.section})` : ""}.`);
+        }
+        return sliced;
+      },
+      isFresh: isFreshTranslation,
+      generate: candidate => {
+        if (FLAGS.debug) {
+          console.log(`\n[Candidate] ${candidate.ref}`);
+        }
+        return generateAndRecord(candidate, {
+          backend: FLAGS.backend,
+          model: FLAGS.model,
+          debug: FLAGS.debug,
+        });
+      },
+      writeEdit: (candidate, edit) => {
+        if (FLAGS.debug) {
+          console.log(`Saved pending edit for ${candidate.ref}`);
+        }
+        writeAiEdit(candidate.page, candidate.ref, edit);
+      },
+      recordGeneration: recordGenerationForCandidate,
+    });
+    if (FLAGS.push) {
+      if (FLAGS.debug) {
+        console.log("\nCommitting and pushing pending candidates...");
+      }
+      await commitAndPushPendingCandidates(
+        `RSI: new pending translation candidates (${scopeLabel})`,
+        makeRealCommitPendingDeps({debug: FLAGS.debug}));
+    }
   }
 }
 
