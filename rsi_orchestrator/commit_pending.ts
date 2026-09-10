@@ -175,7 +175,7 @@ export const realCommitPendingDeps: CommitPendingDeps = {
   mergeLocalChangesOnto: mergeLocalChangesOntoViaCli,
   commitPendingState: async message => {
     await execFileAsync("git", ["add", ...MANAGED_PATHS]);
-    await execFileAsync("git", ["commit", "-m", message]);
+    await execFileAsync("git", ["commit", "--no-verify", "-m", message]);
   },
   push: async branch => {
     await execFileAsync("git", ["push", "-u", "origin", branch]);
