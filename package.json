@@ -108,7 +108,8 @@
       "<rootDir>/__tests__/api_request_handler_runner.ts",
       "<rootDir>/__tests__/api_request_handler_tester.ts",
       "<rootDir>/__tests__/api_request_handler_tests_generator.ts",
-      "<rootDir>/node_modules/"
+      "<rootDir>/node_modules/",
+      "<rootDir>/.claude/"
     ],
     "setupFiles": [
       "./jest_start.js",

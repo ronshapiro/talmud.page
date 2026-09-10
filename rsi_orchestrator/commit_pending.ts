@@ -187,9 +187,14 @@ export const realCommitPendingDeps: CommitPendingDeps = {
     ]);
   },
   // Same staleness concern as checkoutNewBranch — land back on a local `base` that actually
-  // matches origin, not whatever it was left at.
+  // matches origin, not whatever it was left at. If `branch` is checked out in another worktree,
+  // fall back to a detached checkout of origin's ref.
   checkout: async branch => {
     await execFileAsync("git", ["fetch", "origin", branch]);
-    await execFileAsync("git", ["checkout", "-B", branch, `origin/${branch}`]);
+    try {
+      await execFileAsync("git", ["checkout", "-B", branch, `origin/${branch}`]);
+    } catch {
+      await execFileAsync("git", ["checkout", "--detach", `origin/${branch}`]);
+    }
   },
 };

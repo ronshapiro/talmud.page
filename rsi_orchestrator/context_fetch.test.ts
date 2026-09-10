@@ -233,19 +233,37 @@ describe("extractRequestedRefs", () => {
     const refs = extractRequestedRefs([
       {name: "Read", input: {file_path: "foo.json"}},
       {name: "Bash", input: {command: "echo hello"}},
+      {name: "run_command", input: {CommandLine: "echo hello"}},
     ]);
     expect(refs).toEqual([]);
+  });
+
+  test("extracts refs from a get-refs run_command tool use (agy)", () => {
+    const refs = extractRequestedRefs([
+      {
+        name: "run_command",
+        input: {
+          CommandLine: "npx ts-node rsi_orchestrator/context_fetch_cli.ts get-refs "
+            + "'[\"Rashi on Menachot 95a:1:1\"]'",
+        },
+      },
+    ]);
+    expect(refs).toEqual(["Rashi on Menachot 95a:1:1"]);
   });
 
   test("deduplicates refs requested more than once", () => {
     const refs = extractRequestedRefs([
       {
         name: "Bash",
-        input: {command: "context_fetch_cli.ts get-refs '[\"Zevachim 2a:1\"]'"},
+        input: {
+          command: "npx ts-node rsi_orchestrator/context_fetch_cli.ts get-refs '[\"Zevachim 2a:1\"]'",
+        },
       },
       {
-        name: "Bash",
-        input: {command: "context_fetch_cli.ts get-refs '[\"Zevachim 2a:1\"]'"},
+        name: "run_command",
+        input: {
+          CommandLine: "npx ts-node rsi_orchestrator/context_fetch_cli.ts get-neighbors \"Zevachim 2a:1\"",
+        },
       },
     ]);
     expect(refs).toEqual(["Zevachim 2a:1"]);

@@ -11,6 +11,7 @@ import {readUtf8} from "../../files";
  */
 
 export interface TaskModelConfig {
+  backend?: "claude" | "agy";
   generateModel: string;
   critiqueModel: string;
 }
