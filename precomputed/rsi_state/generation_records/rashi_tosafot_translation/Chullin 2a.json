@@ -1,8 +1,8 @@
 {
   "Rashi on Chullin 2a:1:1": {
-    "costUsd": 0.123585,
+    "costUsd": 0.14443060000000002,
     "dependsOn": [],
-    "generatedAt": "2026-09-10T23:28:07.186Z",
+    "generatedAt": "2026-09-11T04:29:01.326Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -11,9 +11,11 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">הכל שוחטין</strong> - כל היכא דתני הכל כולהו מייתי להו בשמעתא קמייתא דערכין ומפרש הכל לאתויי מאי. והכל שוחטין דמתניתין פליגי בה אמוראי בגמרא למר לאתויי טמא בחולין ולמר לאתויי כותי או מומר:"
   },
   "Rashi on Chullin 2a:1:2": {
-    "costUsd": 0.08767,
-    "dependsOn": [],
-    "generatedAt": "2026-09-10T23:28:29.091Z",
+    "costUsd": 0.10727220000000001,
+    "dependsOn": [
+      "Chullin 2a:1"
+    ],
+    "generatedAt": "2026-09-11T04:29:28.363Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -22,11 +24,9 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">וכולן</strong> - בגמרא מפרש מאי וכולן:"
   },
   "Rashi on Chullin 2a:2:1": {
-    "costUsd": 0.134033,
-    "dependsOn": [
-      "Chullin 2a:2"
-    ],
-    "generatedAt": "2026-09-10T23:34:20.066Z",
+    "costUsd": 0.091736,
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T04:36:09.583Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -35,12 +35,12 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">ושחיטתן כשרה דיעבד</strong> - בתמיה. וקשה רישא דמשמע דההוא דאתרבי מהכל לכתחלה אתרבי ואילו סיפא משמע דכי מרבינן מהכל דיעבד מרבינן לה אבל לכתחלה לא אתרבי והא ליכא למימר כולה מתניתין לכתחלה וחדא קתני דכיון דתנא הכל שוחטין פשיטא דכשרה:"
   },
   "Rashi on Chullin 2a:3:1": {
-    "costUsd": 0.150924,
+    "costUsd": 0.2080464,
     "dependsOn": [
       "Chullin 2a:3",
       "Chullin 2a:2"
     ],
-    "generatedAt": "2026-09-10T23:35:35.935Z",
+    "generatedAt": "2026-09-11T04:38:22.223Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -49,9 +49,9 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">וכל הכל לכתחלה הוא</strong> - דתקשה לך ולא תוכל לומר כולה דיעבד וה\"ק הכל תורת שחיטה נוהגת בהן שאם שחטו אותן הפסולין דמתרבי תהא שחיטתן כשרה:"
   },
   "Rashi on Chullin 2a:3:2": {
-    "costUsd": 0.11720959999999998,
+    "costUsd": 0.0948814,
     "dependsOn": [],
-    "generatedAt": "2026-09-10T23:36:35.528Z",
+    "generatedAt": "2026-09-11T04:39:10.345Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -60,14 +60,11 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">אלא הכל ממירים</strong> - מי מצית למימר לכתחלה יביא בהמת חולין אצל בהמת קדשים ויאמר זו תמורת זו. הכל דתמורה מפרש התם לאתויי יורש שממיר בקרבן אביו לאחר מיתת אביו דהתם תנן אין ממירין בשל אחרים:"
   },
   "Rashi on Chullin 2a:3:3": {
-    "costUsd": 0.09221440000000002,
+    "costUsd": 0.07541540000000001,
     "dependsOn": [
-      "Chullin 2a:3",
-      "Rashi on Chullin 2a:3:1",
-      "Rashi on Chullin 2a:3:2",
-      "Rashi on Chullin 2a:3:4"
+      "Chullin 2a:3"
     ],
-    "generatedAt": "2026-09-10T23:37:11.752Z",
+    "generatedAt": "2026-09-11T04:39:39.237Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -76,11 +73,9 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">טוב</strong> - תם:"
   },
   "Rashi on Chullin 2a:3:4": {
-    "costUsd": 0.0803892,
-    "dependsOn": [
-      "Chullin 2a:3"
-    ],
-    "generatedAt": "2026-09-10T23:37:54.326Z",
+    "costUsd": 0.057626,
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T04:39:54.891Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -89,13 +84,13 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">רע</strong> - בעל מום:"
   },
   "Rashi on Chullin 2a:4:1": {
-    "costUsd": 0.1995152,
+    "costUsd": 0.1540536,
     "dependsOn": [
       "Chullin 2a:3",
       "Chullin 2a:4",
       "Chullin 2a:5"
     ],
-    "generatedAt": "2026-09-10T23:40:19.615Z",
+    "generatedAt": "2026-09-11T04:41:27.428Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -104,9 +99,9 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">התם כדקתני טעמא</strong> - דעקר להכל דרישא דלא תימא לכתחלה הוא אבל הכל שוחטין בדוכתיה קאי דכל כמה דלא עקר ליה ותנא לא שיהו הפסולים רשאים לשחוט כדעקר התם משמע דלכתחלה רבינהו והדר תני ושחיטתן כשרה דמשמע דיעבד:"
   },
   "Rashi on Chullin 2a:4:2": {
-    "costUsd": 0.1385648,
+    "costUsd": 0.2463164,
     "dependsOn": [],
-    "generatedAt": "2026-09-10T23:41:40.413Z",
+    "generatedAt": "2026-09-11T04:43:18.918Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -115,11 +110,14 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">לא שהאדם רשאי</strong> - דכתיב לא יחליפנו ורישא הכי קאמר הכל דין תמורה נוהגת בהם והא דתנא ברישא הכל ממירין ואיצטריך ליה תו לפרושי לא שהאדם רשאי כו' ולא נקט ברישא לשון קצרה הכל שהמירו תמורתם תמורה לשון התנאים הוא זה כמו הכל שוחטין הכל סומכין הכל חייבין הלכך הכא אע\"ג דהוצרך להאריך לא שינה התנא את לשונו:"
   },
   "Rashi on Chullin 2a:4:3": {
-    "costUsd": 0.09699100000000001,
+    "costUsd": 0.10357960000000001,
     "dependsOn": [
-      "Chullin 2a:4"
+      "Chullin 2a:4",
+      "Rashi on Chullin 2a:4:1",
+      "Rashi on Chullin 2a:4:2",
+      "Rashi on Chullin 2a:4:4"
     ],
-    "generatedAt": "2026-09-10T23:42:21.388Z",
+    "generatedAt": "2026-09-11T04:43:55.530Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -128,9 +126,9 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">מומר</strong> - נתפסת השניה ושתיהן קדושות:"
   },
   "Rashi on Chullin 2a:4:4": {
-    "costUsd": 0.057157,
+    "costUsd": 0.059295,
     "dependsOn": [],
-    "generatedAt": "2026-09-10T23:42:36.634Z",
+    "generatedAt": "2026-09-11T04:44:14.884Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -139,9 +137,9 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">וסופג את הארבעים</strong> - משום לאו דלא ימיר:"
   },
   "Rashi on Chullin 2a:5:1": {
-    "costUsd": 0.09817580000000001,
+    "costUsd": 0.09066300000000001,
     "dependsOn": [],
-    "generatedAt": "2026-09-10T23:51:18.488Z",
+    "generatedAt": "2026-09-11T04:50:58.229Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -150,9 +148,9 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">הכל מעריכין</strong> - התם מפרש לאתויי מופלא סמוך לאיש קטן היודע להפלות לשם מי מקדישין ואם סמוך לפרקו הוא כגון בן י\"ב שנה ויום אחד דבריו קיימין אע\"פ שעדיין קטן הוא עד י\"ג שנה ויום אחד:"
   },
   "Rashi on Chullin 2a:5:2": {
-    "costUsd": 0.2884188,
+    "costUsd": 0.10840240000000001,
     "dependsOn": [],
-    "generatedAt": "2026-09-10T23:53:46.770Z",
+    "generatedAt": "2026-09-11T04:51:47.312Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -161,9 +159,9 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">מעריכין</strong> - תורת מעריכין עליהם שאם אמר ערכי עלי או ערך פלוני עלי נדרו קיים ואע\"ג דקטן הוא זה הנודר חייב ליתן כפי שנים של נערך והדמים קצובין בפרשה:"
   },
   "Rashi on Chullin 2a:5:3": {
-    "costUsd": 0.106794,
+    "costUsd": 0.079481,
     "dependsOn": [],
-    "generatedAt": "2026-09-10T23:54:24.824Z",
+    "generatedAt": "2026-09-11T04:52:21.552Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -172,11 +170,9 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">הכל נערכין</strong> - יש להם ערך ואפילו מוכה שחין שאינו שוה כלום לימכר בשוק יש לו ערך הכתוב בפרשה ואם אמר על עצמו ערכי עלי או אמר על אחר ערך מוכה שחין זה עלי לא אמרינן הואיל ודמים אין לו ערך נמי אין לו:"
   },
   "Rashi on Chullin 2a:5:4": {
-    "costUsd": 0.10481900000000001,
-    "dependsOn": [
-      "Chullin 2a:5"
-    ],
-    "generatedAt": "2026-09-10T23:55:14.614Z",
+    "costUsd": 0.0964064,
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T04:53:03.063Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -185,9 +181,9 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">הכל נודרים</strong> - דמי עלי או דמי פלוני עלי. והתם מפרש דאיידי דבעי למיתני הכל נידרין תנא נמי הכל נודרים:"
   },
   "Rashi on Chullin 2a:5:5": {
-    "costUsd": 0.110828,
+    "costUsd": 0.14454619999999999,
     "dependsOn": [],
-    "generatedAt": "2026-09-10T23:56:14.726Z",
+    "generatedAt": "2026-09-11T04:54:18.054Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -196,11 +192,12 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">הכל נידרים</strong> - כל אדם השוה כלום יש לו דמים ואם אמר דמי עלי או אמר על אחר דמי פלוני עלי נותן לפי מה שהוא נמכר בשוק ואפילו היה הנידר זה פחות מבן חדש ואמר דמי תינוק זה עלי יתן דמיו ואע\"פ שאין פחות מבן חדש נערך ואם אמר ערכו עלי פטור מכלום שלא נתנה בו תורה ערך דכתיב <span class=\"parenthesized\">(ויקרא כז)</span> ואם מבן חדש ועד בן חמש שנים דמים מיהא יש לו לפי שויו ואם אמר בתורת דמים נותן דמיו:"
   },
   "Rashi on Chullin 2a:5:6": {
-    "costUsd": 0.0766626,
+    "costUsd": 0.09048079999999999,
     "dependsOn": [
-      "Chullin 2a:6"
+      "Chullin 2a:6",
+      "Chullin 2a:5"
     ],
-    "generatedAt": "2026-09-10T23:56:39.633Z",
+    "generatedAt": "2026-09-11T04:54:49.796Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -209,13 +206,12 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">לא יהיה בך חטא</strong> - הא אם תדור יהיה בך חטא:"
   },
   "Rashi on Chullin 2a:6:1": {
-    "costUsd": 0.1296946,
+    "costUsd": 0.0939548,
     "dependsOn": [
-      "Chullin 2a:6:2",
-      "Chullin 2a:6:3",
-      "Chullin 2a:6"
+      "Kohelet 5:3",
+      "Kohelet 5:4"
     ],
-    "generatedAt": "2026-09-10T23:57:52.268Z",
+    "generatedAt": "2026-09-11T04:55:32.694Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -224,9 +220,11 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">טוב אשר לא תדור</strong> - לעיל מיניה כתיב את אשר תדור שלם ואפילו הכי טוב אשר לא תדור שמא תדור ולא תשלם הכי מפרש ליה רבי מאיר:"
   },
   "Rashi on Chullin 2a:6:2": {
-    "costUsd": 0.32149040000000007,
-    "dependsOn": [],
-    "generatedAt": "2026-09-11T00:00:54.247Z",
+    "costUsd": 0.0874716,
+    "dependsOn": [
+      "Chullin 2a:6"
+    ],
+    "generatedAt": "2026-09-11T04:56:11.286Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -235,9 +233,9 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">טוב מזה ומזה</strong> - מנודר ומשלם ומנודר ואינו משלם:"
   },
   "Rashi on Chullin 2a:6:3": {
-    "costUsd": 0.073181,
+    "costUsd": 0.0703928,
     "dependsOn": [],
-    "generatedAt": "2026-09-11T00:01:28.975Z",
+    "generatedAt": "2026-09-11T04:56:36.748Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -246,11 +244,9 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">שאינו נודר כל עיקר</strong> - שהרגיל בנדרים בא לידי לא יחל דברו:"
   },
   "Rashi on Chullin 2a:6:4": {
-    "costUsd": 0.10104959999999999,
-    "dependsOn": [
-      "Chullin 2a:6"
-    ],
-    "generatedAt": "2026-09-11T00:02:18.822Z",
+    "costUsd": 0.1003802,
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T04:57:12.397Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -259,9 +255,18 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">רבי יהודה אומר טוב מזה ומזה נודר ומשלם</strong> - דהכי משמע טוב אשר לא תדור משתדור ולא תשלם אבל משתדור ותשלם לא שהוא טוב מכולם:"
   },
   "Rashi on Chullin 2a:6:5": {
-    "costUsd": 0.070039,
-    "dependsOn": [],
-    "generatedAt": "2026-09-11T00:02:47.326Z",
+    "costUsd": 0.1304276,
+    "dependsOn": [
+      "Chullin 2a:5",
+      "Rashi on Chullin 2a:5:5",
+      "Rashi on Chullin 2a:5:6",
+      "Chullin 2a:6",
+      "Rashi on Chullin 2a:6:1",
+      "Rashi on Chullin 2a:6:2",
+      "Rashi on Chullin 2a:6:3",
+      "Rashi on Chullin 2a:6:4"
+    ],
+    "generatedAt": "2026-09-11T04:58:13.731Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -270,9 +275,9 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">ואפילו ר' יהודה לא קאמר אלא דאמר הרי זו</strong> - דאם מתה או נגנבה אינו חייב באחריותה. אי נמי כיון דאפרשה תו לא הדר ביה:"
   },
   "Tosafot on Chullin 2a:1:1": {
-    "costUsd": 0.1774194,
+    "costUsd": 0.18671379999999999,
     "dependsOn": [],
-    "generatedAt": "2026-09-10T23:29:48.715Z",
+    "generatedAt": "2026-09-11T04:30:55.374Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -281,13 +286,9 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">הכל שוחטין</strong> - כתוב בהלכות ארץ ישראל דנשים לא ישחטו מפני שדעתן קלות ואין נראה דאפילו במוקדשין שוחטות לכתחלה כדאמרינן פרק כל הפסולין <span class=\"parenthesized\">(זבחים דף לא:)</span> כל הפסולים ששחטו דיעבד אין לכתחלה לא ורמינהי ושחט מלמד שהשחיטה כשרה כו' ומשני הוא הדין דאפילו לכתחלה אלא משום דבעי למיתני טמא במוקדשים דלכתחלה לא תנא נמי ששחטו ולא קאמר משום דבעי למיתני נשים דתנא להו ברישא אלא ודאי משום דנשים שוחטות לכתחלה אפילו במוקדשין והא דלא קתני הכל שוחטין אחד אנשים ואחד נשים כדקתני בתמורה <span class=\"parenthesized\">(דף ב.)</span> התם אצטריך למיתנייה כדפירש בריש תמורה משום דכל הפרשה כולה נאמרה בלשון זכר אבל הכא אין חידוש באשה יותר מבאיש ובפרק כל הפסולין <span class=\"parenthesized\">(זבחים דף לא:)</span> גבי קדשים איצטריך למיתני נשים משום דבשאר עבודות נשים פסולות אפילו כהנות:"
   },
   "Tosafot on Chullin 2a:1:2": {
-    "costUsd": 0.3502308,
-    "dependsOn": [
-      "Chullin 12b:5",
-      "Mishnah Chullin 1:1",
-      "Tosafot on Chullin 2a:1:1"
-    ],
-    "generatedAt": "2026-09-10T23:33:21.716Z",
+    "costUsd": 0.4505964,
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T04:35:22.164Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -296,9 +297,9 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">שמא יקלקלו כו'</strong> - בגמרא <span class=\"parenthesized\">(לקמן חולין יב:)</span> דייק מדקתני שמא יקלקלו ולא קתני שמא קלקלו ש\"מ אין מוסרין להן חולין לכתחלה ופ\"ה אפילו אחרים רואין אותן וק' לפירושו דהא מסיפא שמעינן לה וכולן ששחטו ואחרים רואין אותן כו' דמשמע דיעבד דוקא וליכא למימר דדיעבד נקט משום טמא במוקדשין או אין מומחין אבל חש\"ו אפילו לכתחלה שוחטין באחרים רואין אותן דהא רבא הוא דדייק שמא קלקלו לא קתני ולרבא לא קאי וכולן ששחטו אלא אחש\"ו כדאמרינן בגמרא וי\"מ דגרס לקמן רבה אבל רבא לא דייק בין יקלקלו לקלקלו כי היכי דלא חייש בהא דלא קתני ואם שחטו ור\"ת מפרש דאין מוסרין להן חולין לכתחלה לשחוט אפילו כדי להשליך לכלבים דלמא אתי למיכל שיטעו להכשיר שחיטתן מתוך שיראו שמוסרים להן כדפטר לקמן שחיטתן מכסוי דלמא אתי למימר שחיטה מעלייתא היא וניחא השתא דבאין אחרים רואין אותן עסקינן ברישא:"
   },
   "Tosafot on Chullin 2a:4:1": {
-    "costUsd": 0.5988502,
+    "costUsd": 0.334266,
     "dependsOn": [],
-    "generatedAt": "2026-09-10T23:48:55.270Z",
+    "generatedAt": "2026-09-11T04:49:03.026Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -307,9 +308,9 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">התם כדקתני טעמא</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> דעקר ליה להכל דרישא דלא תימא לכתחלה הוא ולשון כדקתני טעמא לא משמע כפירושו ומה שפירש נמי במסקנא גבי דאי דיעבד תרתי דיעבד למה לי ואע\"ג דבתמורה נמי תני והדר מפרש התם לא תנא כי האי גוונא הכל ממירין ותמורתן תמורה גבי הדדי ואי משום לא שהאדם רשאי להמיר משום דבעי לאסוקי וסופג את הארבעים לאשמועינן דלוקין על לאו שאין בו מעשה אין נראה דמשום וסופג את הארבעים לחודיה לא הוה ליה למיתני תרתי דיעבד דהוה מצי למיתני הכל ממירים והממיר סופג את הארבעים ועוד דבריש תמורה <span class=\"parenthesized\">(דף ב.)</span> פריך הכל ממירים לכתחלה ולא שהאדם רשאי להמיר דיעבד ומשני התם רב יהודה הכי קתני הכל מתפיסים בתמורה אחד שוגג ואחד מזיד והוה ליה לשנויי דתנא ליה משום וסופג את הארבעים <span class=\"rashi-quotation\">כדפירש בקונטרס</span> כאן ונראה לרבינו תם דשינויא דהכא הוי כההיא דתמורה והכי קאמר התם כדקתני טעמא דלהכי תנא הכל ממירים דמשמע לכתחלה לאשמעינן שאפילו המיר במזיד דהיינו לכתחלה מומר דלא תימא ארבעים בכתפיה וכשר כדאמרן בהתודה <span class=\"parenthesized\">(מנחות פא.)</span> וקשה לפירושו דבסוף פרק קמא דתמורה <span class=\"parenthesized\">(דף יג.)</span> משמע דמן הדין ראוי להיות תמורה במזיד יותר מבשוגג דקאמר יהיה לרבות שוגג כמזיד ויש לומר דלענין בהמה שתהא כשרה למזבח פשוט לן שוגג יותר ממזיד אי נמי התם איירי במזיד ולא אתרו ביה דלא הוו ארבעים בכתפיה וההוא מזיד פשוט לן יותר משוגג:"
   },
   "Tosafot on Chullin 2a:4:2": {
-    "costUsd": 0.1643096,
+    "costUsd": 0.124777,
     "dependsOn": [],
-    "generatedAt": "2026-09-10T23:50:28.651Z",
+    "generatedAt": "2026-09-11T04:50:17.732Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -318,11 +319,9 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">וסופג את הארבעים</strong> - וא\"ת הוה ליה למימר וסופג שמונים דהא תרי לאוי כתיב לא יחליפנו ולא ימיר ויש לומר דחד בשלו וחד בשל חברו כדאמר בתמורה <span class=\"parenthesized\">(דף ט.)</span> וכגון דאמר חברו כל הרוצה להמיר בבהמתו ימיר דבענין אחר אין ממירין בשל אחרים והכי איתא בהדיא בתמורה פ\"ק:"
   },
   "Tosafot on Chullin 2a:6:1": {
-    "costUsd": 0.097168,
-    "dependsOn": [
-      "Chullin 2a:5"
-    ],
-    "generatedAt": "2026-09-11T00:03:16.057Z",
+    "costUsd": 0.0878926,
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T04:59:05.030Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -331,11 +330,9 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">וכתיב טוב אשר לא תדור</strong> - מעיקרא מייתי מדברי תורה והדר מייתי מדברי קבלה:"
   },
   "Tosafot on Chullin 2a:6:2": {
-    "costUsd": 0.24506080000000002,
-    "dependsOn": [
-      "Chullin 2a:6"
-    ],
-    "generatedAt": "2026-09-11T00:05:31.384Z",
+    "costUsd": 0.4192244,
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T05:02:48.582Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
