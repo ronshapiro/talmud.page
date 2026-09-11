@@ -1,0 +1,429 @@
+{
+  "Rashi on Menachot 91b:10:1": {
+    "dependsOn": [
+      "Menachot 91b:9",
+      "Menachot 91b:10",
+      "Rashi on Menachot 91b:10:1",
+      "context_fetch_cli.ts",
+      "Menachot 91b:11",
+      "Tosafot on Menachot 91b:10:1"
+    ],
+    "generatedAt": "2026-09-10T20:16:48.773Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 91b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיהא טפל חמור מן העיקר</strong> - אלא זה דמעשר גופיה לא בעי נסכים והאי דאתי מכחו טעון נסכים:"
+  },
+  "Rashi on Menachot 91b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T20:18:46.861Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 91b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבא אמר</strong> - לא מצית למימר לא חטאת ואשם דנזיר ולא עולה דיולדת דג' ריבויין יש בפסוק העולה ואו לזבח:"
+  },
+  "Rashi on Menachot 91b:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T20:19:14.160Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 91b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיזהו דבר שצריך שלשה רבויין הוי אומר זה מצורע</strong> - דאית ביה שלשה קרבנות חטאת ועולה ואשם דאי בנזיר ארבע ריבויין מיבעיא ליה דהא אית ביה חטאת ועולה ואשם ושלמים:"
+  },
+  "Rashi on Menachot 91b:12:1": {
+    "dependsOn": [
+      "Menachot 91b:12"
+    ],
+    "generatedAt": "2026-09-10T20:19:49.952Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 91b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאיל</strong> - דכתיב או לאיל תעשה מנחה למה לי ליכתוב וכי תעשה מנחה סלת שני עשרונים בלולה בשמן שלישית ההין ואנא ידענא דהיינו איל דצריך שני עשרונים אלא לרבות אילו של אהרן:"
+  },
+  "Rashi on Menachot 91b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T20:20:47.608Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 91b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מבמועדיכם נפקא</strong> - כל הבא במועדיכם ואילו של אהרן הוא בא במועד ביום הכפורים:"
+  },
+  "Rashi on Menachot 91b:13:2": {
+    "dependsOn": [
+      "Menachot 91b:13",
+      "Rashi on Menachot 91b:13:1",
+      "Rashi on Menachot 91b:13:2"
+    ],
+    "generatedAt": "2026-09-10T20:21:28.817Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 91b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"מ</strong> - דדבר הבא במועד טעון נסכים דציבור אבל ביחיד באילו של אהרן אימא לא:"
+  },
+  "Rashi on Menachot 91b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T20:22:21.828Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 91b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומאי שנא</strong> - אילו של אהרן דמשום דהוי דיחיד הוה אמינא דלא יטעון נסכים:"
+  },
+  "Rashi on Menachot 91b:14:2": {
+    "dependsOn": [
+      "Menachot 91b:14",
+      "context_fetch_cli.ts"
+    ],
+    "generatedAt": "2026-09-10T20:23:20.240Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 91b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעולת יולדת</strong> - דמרבינן לעיל אף ע\"ג דשל יחיד היא טעונה נסכים אף של אהרן נמי לא ליבעי איל לרבוייה:"
+  },
+  "Rashi on Menachot 91b:15:1": {
+    "dependsOn": [
+      "Menachot 91b:13",
+      "Menachot 91b:14",
+      "Menachot 91b:15",
+      "Rashi on Menachot 91b:15:1"
+    ],
+    "generatedAt": "2026-09-10T20:29:00.789Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 91b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איצטריך סד\"א כו'</strong> - אילו של אהרן קבוע לו זמן:"
+  },
+  "Rashi on Menachot 91b:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T20:30:48.890Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 91b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או לאיל למה לי לרבות את הפלגס</strong> - לנסכים פלגס שעברה שנתו ולא בא לכלל שנים:"
+  },
+  "Rashi on Menachot 91b:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T20:31:05.437Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 91b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הניחא לרבי יוחנן</strong> - דאמר בריה בפני עצמו הוא וטעון נסכים:"
+  },
+  "Rashi on Menachot 91b:17:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T20:34:29.588Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 91b:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דתנן הקריבו</strong> - לפלגס היכא דנדר איל או כבש והקריב פלגס מביא עליו נסכי איל ואין עולות לו מזבחו לשם חובת נדרו וצריך להביא איל ודאי או כבש ודאי דאף על גב דבריה בפני עצמו הוא קמרבי ליה קרא:"
+  },
+  "Rashi on Menachot 91b:18:1": {
+    "dependsOn": [
+      "Menachot 91b:18"
+    ],
+    "generatedAt": "2026-09-10T20:35:27.670Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 91b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לבר פדא דאמר מייתי נסכי איל ומתני</strong> - אם כבש הוא יקדישו נסכים הראויין לו והמותר יהו נדבה ואם <span class=\"parenthesized\">(לאו)</span> איל הוא הרי נסכיו דקסבר לאו בריה הוא אלא ספיקא מי איצטריך קרא למיכתב או לרבויי ספיקא והלא לפני המקום הכל גלוי ואין ספיקא לפניו ולא אשכחן קרא דכתיב משום ספיקא:"
+  },
+  "Rashi on Menachot 91b:19:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T20:38:12.845Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 91b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודאי לבר פדא קשיא</strong> - דלדידיה לא ידעינא או למה לי:"
+  },
+  "Rashi on Menachot 91b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T19:59:45.982Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 91b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאמר מר</strong> - גבי נזיר ולקח את שער ראש נזרו ונתן על האש אשר תחת זבח השלמים אין לי אלא תחת זבח השלמים תחת הדוד של חטאת ואשם מנין ת\"ל זבח:"
+  },
+  "Rashi on Menachot 91b:20:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T20:39:11.479Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 91b:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשור האחד מה תלמוד לומר</strong> - והא כבר נאמר <span class=\"parenthesized\">(במדבר טז)</span> והקריב על בן הבקר מנחה וגו':"
+  },
+  "Rashi on Menachot 91b:20:2": {
+    "dependsOn": [
+      "Menachot 91b:20",
+      "Rashi on Menachot 91b:20:1",
+      "Rashi on Menachot 91b:20:2",
+      "context_fetch_cli.ts"
+    ],
+    "generatedAt": "2026-09-10T20:40:49.947Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 91b:20:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תלמוד לומר לשור האחד</strong> - דבין גדול בין קטן נסכיו שוין:"
+  },
+  "Rashi on Menachot 91b:21:1": {
+    "dependsOn": [
+      "Menachot 91b:21"
+    ],
+    "generatedAt": "2026-09-10T20:43:04.674Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 91b:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או לאיל האחד מה תלמוד לומר</strong> - והלא כבר נאמר <span class=\"parenthesized\">(שם)</span> או לאיל תעשה מנחה:"
+  },
+  "Rashi on Menachot 91b:22:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T20:50:25.324Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 91b:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[או לשה בכבשים מת\"ל</strong> - והלא כבר נאמר או לזבח לכבש האחד]:"
+  },
+  "Rashi on Menachot 91b:23:1": {
+    "dependsOn": [
+      "Menachot 91b:23"
+    ],
+    "generatedAt": "2026-09-10T20:51:20.041Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 91b:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או בעזים מה ת\"ל</strong> - והלא עזים בכלל כבשים הם:"
+  },
+  "Rashi on Menachot 91b:23:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T20:56:54.410Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 91b:23:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גדי</strong> - היינו בחור שעיר היינו זקן:"
+  },
+  "Rashi on Menachot 91b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T20:07:43.305Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 91b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"מ</strong> - דנפקי תרוייהו חטאת ואשם של נזיר דכי הדדי נינהו דתרוייהו <span class=\"parenthesized\">(חטאת דנזיר טהור ואשם דנזיר טמא)</span> להכשירו ביין וליטמא במתים אתו אבל הכא במצורע דאשם להכשירו לבא במחנה אתי וחטאת לכפר דעל ז' דברים נגעים באין:"
+  },
+  "Rashi on Menachot 91b:3:1": {
+    "dependsOn": [
+      "Menachot 91b:3",
+      "Rashi on Menachot 91b:3:1",
+      "context_fetch_cli.ts"
+    ],
+    "generatedAt": "2026-09-10T20:10:31.191Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 91b:3:1"
+    ],
+    "sourceText": "חטאת דנזיר טהור ואשם דנזיר טמא:"
+  },
+  "Rashi on Menachot 91b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T20:11:35.501Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 91b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא ס\"ד</strong> - דמנחתם ונסכיהם דכתיב בנזיר טהור בעולתו ושלמיו הכתוב מדבר דטעונים נסכים ולא חטאתו של טהור ואשמו של נזיר טמא:"
+  },
+  "Rashi on Menachot 91b:6:1": {
+    "dependsOn": [
+      "Rashi on Menachot 91b:6:1",
+      "Rashi on Menachot 91b:6:2",
+      "Rashi on Menachot 91b:6:3",
+      "context_fetch_cli.ts"
+    ],
+    "generatedAt": "2026-09-10T20:12:13.858Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 91b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איל בכלל היה</strong> - דהא כתיב ברישא ואיל אחד תמים לשלמים:"
+  },
+  "Rashi on Menachot 91b:6:2": {
+    "dependsOn": [
+      "Menachot 91b:6",
+      "Rashi on Menachot 91b:6:1",
+      "Rashi on Menachot 91b:6:2",
+      "Rashi on Menachot 91b:6:3",
+      "context_fetch_cli.ts"
+    ],
+    "generatedAt": "2026-09-10T20:12:58.259Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 91b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה איל</strong> - שהוא שלמים מיוחד שבא בנדר ונדבה:"
+  },
+  "Rashi on Menachot 91b:6:3": {
+    "dependsOn": [
+      "Menachot 91b:6",
+      "Rashi on Menachot 91b:6:1",
+      "Rashi on Menachot 91b:6:2",
+      "Rashi on Menachot 91b:6:3"
+    ],
+    "generatedAt": "2026-09-10T20:13:42.468Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 91b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף כל בא בנדר ונדבה</strong> - אוציא חטאת ואשם שאין באין בנדר ובנדבה שאין טעונין נסכים הילכך ליכא לרבות לנסכים מזבח אלא חטאת מצורע:"
+  },
+  "Rashi on Menachot 91b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T20:15:18.458Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 91b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זו עולת יולדת</strong> - שטעונה נסכים:"
+  },
+  "Rashi on Menachot 91b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T20:15:54.751Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 91b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זה אחד עשר של מעשר</strong> - דטעון נסכים כדתנן <span class=\"parenthesized\">(בכורות דף ס.)</span> קרא לתשיעי עשירי ולעשירי תשיעי ולי\"א עשירי שלשתן מקודשין התשיעי נאכל במומו והאחד עשר קרב שלמים וטעון נסכים:"
+  },
+  "Tosafot on Menachot 91b:10:1": {
+    "dependsOn": [
+      "Menachot 91b:10",
+      "context_fetch_cli.ts"
+    ],
+    "generatedAt": "2026-09-10T20:17:25.065Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 91b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חמור מן העיקר</strong> - דמעשר גופיה לא בעי נסכים:"
+  },
+  "Tosafot on Menachot 91b:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T20:37:00.141Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 91b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמייתי ומתני</strong> - [פירש] <span class=\"rashi-quotation\">בקונט'</span> מביא נסכי איל ואומר אם איל הוא הרי נסכיו עמו ואם כבש הוא יהו נסכים כשיעור כבש באין חובה לו והשאר יהו נסכי נדבה שהרי מתנדב אדם נסכים בלא זבח ובפ\"ק דחולין <span class=\"parenthesized\">(דף כג.)</span> הוסיף <span class=\"rashi-quotation\">בקונטרס</span> אע\"ג דתנן בפרק המנחות והנסכים <span class=\"parenthesized\">(לקמן מנחות דף קד.)</span> אין מתנדב לוג שנים וחמשה אלא שלשה שיהו קרויין נסכי כבש או ארבעה שקרויין נסכי איל או ששה הראויין לפר הכא כי האי גוונא בהדי אחריני קרבי והא דאמרינן לקמן בגמרא <span class=\"parenthesized\">(מנחות דף קד.)</span> דהיכא דאייתי חמשה אי אמרת אין קבע לנסכים משיך ארבעה מינייהו דחזו לאיל ומקריב ואידך הוו נדבה ופי' שם <span class=\"rashi-quotation\">בקונטרס</span> נדבת צבור וימכר ויפלו דמיו לשופרות או יקרב הוא עצמו ויצטרף עם שני לוגין אחרים ויקרב לנסכי תמיד דהני נמי לצבור משמע דאותו לוג חמישי אינו קרב עם הארבעה לא דמי להכא דאע\"ג דאם כבש הוא השלשה באין חובה לו והרביעי ניתוסף עליהם שאני הכא דהא ארבעה חזו לאיל בעלמא וא\"ת והא תניא בסוף כל התדיר <span class=\"parenthesized\">(זבחים דף צא:)</span> יין כדברי רבי עקיבא לספלים כדברי רבי טרפון לאשים והשתא לרבי עקיבא ניחא אלא לר' טרפון דאמר לאשים הא לא ידע הי מינייהו נדבה דעביד לאשים וי\"ל דכי קאמר רבי טרפון בסתם אבל במפרש לספלים מודה דלספלים ולענין המנחה מייתי שתי מנחות בשני כלים אחת של שני עשרונים לאיל וד' לוגין שמן ואחת של עשרון אחד לכבש ושלשה לוגין שמן והויא חדא לחובתו ואידך נדבה ושתיהן אינן נקמצות דמתנדב אדם מנחת נסכים בכל יום ואי אפשר לערב כדתנן במתניתין אין מערבין נסכי כבשים בנסכי פרים ואילים:"
+  },
+  "Tosafot on Menachot 91b:1:1": {
+    "dependsOn": [
+      "Rashi on Menachot 91b:1:1",
+      "Menachot 91b:1"
+    ],
+    "generatedAt": "2026-09-10T20:05:39.079Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 91b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאמר מר חטאת ואשם מנין ת\"ל זבח</strong> - בפ' כל הפסולין <span class=\"parenthesized\">(זבחים לו, א)</span> גבי נאכל ליום ולילה <span class=\"rashi-quotation\">ובקונטרס פירש</span> בנזיר בפ' ג' מינין <span class=\"parenthesized\">(נזיר דף מה:)</span> גבי חטאת נזיר ואשמו:"
+  },
+  "Tosafot on Menachot 91b:20:1": {
+    "dependsOn": [
+      "Menachot 91b:20"
+    ],
+    "generatedAt": "2026-09-10T20:42:28.116Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 91b:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תלמוד לומר לשור האחד</strong> - ושור בן יומו קרוי שור כדכתיב <span class=\"parenthesized\">(ויקרא יז)</span> שור או כשב או עז כי יולד:"
+  },
+  "Tosafot on Menachot 91b:2:1": {
+    "dependsOn": [
+      "Menachot 91b:1",
+      "Menachot 91b:2",
+      "Menachot 91b:3"
+    ],
+    "generatedAt": "2026-09-10T20:08:25.067Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 91b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל היכא דחטאת לכפר ואשם להכשיר בעי תרי קראי</strong> - והא דלא מבעיא לן תרי קראי לחטאת ואשם של מצורע בפרק כל הפסולין <span class=\"parenthesized\">(זבחים דף לו.)</span> אלא נפקא לן מחד קרא כולהו חטאות ואשמות דנאכלים ליום ולילה היינו היכא דלא משנינן להו מדין שאר חטאות ואשמות אבל הכא משנינן להו דשאר חטאות ואשמות לא בעו נסכים והני בעו נסכים:"
+  },
+  "Tosafot on Menachot 91b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T20:11:02.903Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 91b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אימא חטאת ואשם דנזיר</strong> - אחטאת ואשם דעלמא לא פריך אלא מהני משום דאית בהו מנחה וגם דמו לנדבה דנזירות נדבה היא:"
+  },
+  "Tosafot on Menachot 91b:6:1": {
+    "dependsOn": [
+      "Menachot 91b:6",
+      "context_fetch_cli.ts"
+    ],
+    "generatedAt": "2026-09-10T20:14:59.723Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 91b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איל בכלל היה ולמה יצא</strong> - דכתיב ביה מנחתו ונסכו וא\"ת והא דרשינן ליה בפ\"ק דזבחים <span class=\"parenthesized\">(דף ח.)</span> וי\"ל דהתם וי\"ו קדריש ולעיל פירשתי בפ' התכלת <span class=\"parenthesized\">(מנחות דף מד:)</span>:"
+  }
+}

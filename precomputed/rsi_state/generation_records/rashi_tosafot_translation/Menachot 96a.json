@@ -1,0 +1,588 @@
+{
+  "Rashi on Menachot 96a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T01:16:48.193Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וטפחיים ריוח באמצע</strong> - בין שתי הסדרים דרוחב הלחם אינו אלא ה' ושני הסדרים מחזיקים י' טפחים כאורך השלחן פשו להו טפחיים והם ריוח בין סדר לסדר שתהא רוח מנשבת בהם שלא יתעפשו:"
+  },
+  "Rashi on Menachot 96a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T01:17:10.653Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבא שאול אומר שם</strong> - באותו ריוח שבין סדר לסדר בו נותנין בזיכים:"
+  },
+  "Rashi on Menachot 96a:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T01:17:26.215Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על המערכת</strong> - על ממש:"
+  },
+  "Rashi on Menachot 96a:11:3": {
+    "dependsOn": [
+      "Menachot 96a:11",
+      "Rashi on Menachot 96a:11:1",
+      "Rashi on Menachot 96a:11:2",
+      "Rashi on Menachot 96a:11:3",
+      "context_fetch_cli.ts",
+      "Rashi on Numbers 2:20"
+    ],
+    "generatedAt": "2026-09-11T01:19:06.081Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועליו מטה</strong> - הוי אותו על בסמוך:"
+  },
+  "Rashi on Menachot 96a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T01:19:27.190Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המפוצלים</strong> - לתת ראשי הקנים באותן פיצולין והרבה פיצולין יש בהן למנין הקנים:"
+  },
+  "Rashi on Menachot 96a:12:2": {
+    "dependsOn": [
+      "Menachot 96a:12",
+      "Rashi on Menachot 96a:12:1",
+      "Rashi on Menachot 96a:12:2",
+      "Rashi on Menachot 96a:13:1",
+      "Rashi on Menachot 96a:19:1",
+      "Menachot 96a:19",
+      "Menachot 97a:1",
+      "Menachot 97a:2"
+    ],
+    "generatedAt": "2026-09-11T01:20:05.969Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כ\"ח קנים</strong> - בגמרא מפרש כמה קנים ללחם:"
+  },
+  "Rashi on Menachot 96a:13:1": {
+    "dependsOn": [
+      "Menachot 96a:13",
+      "Rashi on Menachot 96a:13:2",
+      "Menachot 96a:12",
+      "Menachot 96a:19"
+    ],
+    "generatedAt": "2026-09-11T01:20:41.337Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא סידור הקנים</strong> - במערכת החדשה ולא נטילתן מעל הישנה דוחה שבת:"
+  },
+  "Rashi on Menachot 96a:13:2": {
+    "dependsOn": [
+      "Menachot 96a:13",
+      "Rashi on Menachot 96a:13:1",
+      "Rashi on Menachot 96a:13:2"
+    ],
+    "generatedAt": "2026-09-11T01:21:09.914Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שומטן</strong> - מבין כל לחם ולחם ומניחן לאורכו של שלחן ולמחר מסדר הלחם ולמוצאי שבת נותן הקנים בין כל לחם ולחם כמשפטן:"
+  },
+  "Rashi on Menachot 96a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T01:21:24.641Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל הכלים</strong> - כגון שולחנות אורכן לאורכו של בית ממזרח למערב:"
+  },
+  "Rashi on Menachot 96a:15:1": {
+    "dependsOn": [
+      "Menachot 96a:15",
+      "Rashi on Menachot 96a:15:1",
+      "Rashi on Menachot 96a:4:1",
+      "Rashi on Menachot 96a:16:1"
+    ],
+    "generatedAt": "2026-09-11T01:22:15.461Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זו מנין</strong> - שהמנחות טעונות כלי:"
+  },
+  "Rashi on Menachot 96a:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T01:23:50.413Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה חטאת ואשם טעונין כלי</strong> - דכתיב אשר יבשלו ואין בישול בלא כלי ובפנים משתעי קרא דכתיב <span class=\"parenthesized\">(יחזקאל מ״ו:כ׳)</span> לבלתי הוציא אל החיצונות:"
+  },
+  "Rashi on Menachot 96a:18:1": {
+    "dependsOn": [
+      "Menachot 96a:18"
+    ],
+    "generatedAt": "2026-09-11T01:24:21.436Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ט\"ו טפחים</strong> - ב' טפחים ומחצה לכל לחם והם שש חלות זו על גב זו נמצא שלחן מקדש כו' ונפקא מינה דאי יהיב באויר השלחן מידי בתוך ט\"ו טפחים מקדש ליה ליפסל בלינה:"
+  },
+  "Rashi on Menachot 96a:19:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T01:24:38.267Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והאיכא קנים</strong> - שבין כל לחם ולחם ואיכא טפי:"
+  },
+  "Rashi on Menachot 96a:19:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T01:24:57.843Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משקע להו</strong> - פגימות עושה בלחם בעוד שהיה בצק והקנים היו משוקעים בהם ואינו מגביה הלחם:"
+  },
+  "Rashi on Menachot 96a:1:1": {
+    "dependsOn": [
+      "Menachot 96a:1",
+      "Menachot 95b:20",
+      "Menachot 95b:21"
+    ],
+    "generatedAt": "2026-09-11T01:03:51.130Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מסוכן הוא</strong> - שאחזו בולמוס ותנן מי שאחזו בולמוס מאכילין אותו עד שיאורו עיניו אפילו ביום הכפורים ביומא בפרק בתרא <span class=\"parenthesized\">(דף פג.)</span>:"
+  },
+  "Rashi on Menachot 96a:1:2": {
+    "dependsOn": [
+      "Menachot 96a:1",
+      "Rashi on Menachot 96a:1:1",
+      "Rashi on Menachot 96a:1:2"
+    ],
+    "generatedAt": "2026-09-11T01:04:38.034Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בגמ' פליגי</strong> - מר גמיר ליה מרביה דתנור מקדש ומר גמיר דלא מקדש:"
+  },
+  "Rashi on Menachot 96a:20:1": {
+    "dependsOn": [
+      "Menachot 96a:19",
+      "Menachot 96a:20",
+      "Rashi on Menachot 96a:20:1",
+      "Rashi on Menachot 96a:20:2",
+      "Rashi on Menachot 96a:8:1",
+      "Rashi on Menachot 96a:8:2",
+      "Rashi on Menachot 96a:8:3",
+      "Rashi on Menachot 96a:12:1"
+    ],
+    "generatedAt": "2026-09-11T01:25:35.866Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקא פריך מאי טעמא</strong> - כלומר מכדי קנים מאי טעמא היו בין כל לחם:"
+  },
+  "Rashi on Menachot 96a:20:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T01:25:54.232Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:20:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום איעפושי</strong> - שיהא אויר בינתים שלא יתעפשו:"
+  },
+  "Rashi on Menachot 96a:20:3": {
+    "dependsOn": [
+      "Menachot 96a:20",
+      "Rashi on Menachot 96a:20:1",
+      "Rashi on Menachot 96a:20:2",
+      "Rashi on Menachot 96a:20:3",
+      "Rashi on Menachot 96a:20:4"
+    ],
+    "generatedAt": "2026-09-11T01:26:17.677Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:20:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סוף סוף</strong> - כיון דמשקע להו ליכא אוירא ומיעפש הלחם:"
+  },
+  "Rashi on Menachot 96a:20:4": {
+    "dependsOn": [
+      "Menachot 96a:20",
+      "Rashi on Menachot 96a:20:1",
+      "Rashi on Menachot 96a:20:2",
+      "Rashi on Menachot 96a:20:3",
+      "Rashi on Menachot 96a:20:4"
+    ],
+    "generatedAt": "2026-09-11T01:26:37.300Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:20:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פורתא</strong> - שלא יהא משוקע כל כך:"
+  },
+  "Rashi on Menachot 96a:22:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T01:32:05.807Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והאיכא בזיכין</strong> - קשיא לי אמאי פריך הכי דהא שלחן לא מקדש להו לבזיכין:"
+  },
+  "Rashi on Menachot 96a:22:2": {
+    "dependsOn": [
+      "Menachot 96a:22",
+      "Rashi on Menachot 96a:22:1",
+      "Rashi on Menachot 96a:22:2",
+      "Rashi on Menachot 96a:19:1",
+      "Rashi on Menachot 96a:19:2",
+      "Rashi on Menachot 96a:20:1",
+      "Rashi on Menachot 96a:20:2",
+      "Rashi on Menachot 96a:8:1",
+      "Rashi on Menachot 96a:8:2",
+      "Rashi on Menachot 96a:8:3"
+    ],
+    "generatedAt": "2026-09-11T01:32:41.561Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:22:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והאיכא קרנות</strong> - שבולטין ועשויין בראשי הדופן:"
+  },
+  "Rashi on Menachot 96a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T01:05:10.535Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דיקא נמי</strong> - דבגמרא פליגי ולא בקראי מדנקט האי לישנא לעולם הוי רגיל לומר כו':"
+  },
+  "Rashi on Menachot 96a:3:1": {
+    "dependsOn": [
+      "Menachot 96a:3",
+      "Rashi on Menachot 96a:3:2",
+      "Menachot 96a:15",
+      "Rashi on Menachot 96a:15:1",
+      "Menachot 87b:19",
+      "Menachot 88a:1",
+      "Menachot 88a:2",
+      "Menachot 88a:3",
+      "Menachot 88a:5",
+      "Menachot 88a:6",
+      "Menachot 88a:7",
+      "Menachot 87a:14",
+      "Menachot 87a:15",
+      "Menachot 87a:16",
+      "Menachot 87b:1",
+      "Menachot 87b:2",
+      "Tosafot on Menachot 96a:3:1",
+      "Menachot 96a:4",
+      "Rashi on Menachot 96a:4:1"
+    ],
+    "generatedAt": "2026-09-11T01:06:30.344Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חביתי כהן גדול לישתן ועריכתן בפנים</strong> - ולדברי הכל אותו חצי עשרון שהיה חולק בו עשרונו של כהן גדול נמשח והאי דלא משחו עשרון שלם מפני שכל אדם מודד בו מנחתו דפעמים שמוציאו לחוץ אבל זה אינו מסור אלא לכהנים לחצות בו עשרונים:"
+  },
+  "Rashi on Menachot 96a:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T01:06:59.693Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושא\"א</strong> - אפייתן אי אפשר לעשות מאתמול ולא לישה ועריכה דכיון דקדשה בכלי מיפסל בלינה:"
+  },
+  "Rashi on Menachot 96a:4:1": {
+    "dependsOn": [
+      "Menachot 96a:4",
+      "Rashi on Menachot 96a:4:1"
+    ],
+    "generatedAt": "2026-09-11T01:10:08.393Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעשה כלי</strong> - לישה ועריכה הכל בכלי שרת בפנים ולא בחוץ:"
+  },
+  "Rashi on Menachot 96a:5:1": {
+    "dependsOn": [
+      "Menachot 96a:5"
+    ],
+    "generatedAt": "2026-09-11T01:10:32.422Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקרנותיה</strong> - שהיה מדביק בצק לכל זוית כעין קרנים ואורך הקרן ד' אצבעות:"
+  },
+  "Rashi on Menachot 96a:6:1": {
+    "dependsOn": [
+      "Rashi on Menachot 96a:6:1",
+      "Menachot 96a:6",
+      "Rashi on Menachot 96a:5:1",
+      "Rashi on Menachot 96a:6:2",
+      "Rashi on Menachot 96a:6:3"
+    ],
+    "generatedAt": "2026-09-11T01:11:03.882Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא תטעה</strong> - בין שתי הלחם ללחם הפנים בין בשיעור רוחב בין בשיעור אורך וקרנות:"
+  },
+  "Rashi on Menachot 96a:6:2": {
+    "dependsOn": [
+      "Menachot 96a:6"
+    ],
+    "generatedAt": "2026-09-11T01:11:58.074Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זד\"ד יה\"ז</strong> - זד\"ד שתי הלחם אורכה ז' ורחבה ד' וקרנותיה ד' יה\"ז לחם הפנים ארכו י' ורחבו ה' וקרנותיו ז':"
+  },
+  "Rashi on Menachot 96a:6:3": {
+    "dependsOn": [
+      "Menachot 96a:6",
+      "Rashi on Menachot 96a:6:1",
+      "Rashi on Menachot 96a:6:2",
+      "Rashi on Menachot 96a:6:3",
+      "Rashi on Menachot 96a:8:1",
+      "Rashi on Menachot 96a:8:2",
+      "Rashi on Menachot 96a:8:3",
+      "Rashi on Menachot 96a:11:1",
+      "Rashi on Menachot 96a:12:1",
+      "context_fetch_cli.ts",
+      "Rashi on Menachot 94b:1:1",
+      "Rashi on Menachot 94b:2:1",
+      "Rashi on Menachot 94b:3:1",
+      "Rashi on Berakhot 2a:1:1",
+      "console.log(process.cwd()); console.log(require(",
+      "Rashi on Horayot 4b:15:1"
+    ],
+    "generatedAt": "2026-09-11T01:14:11.531Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיהא לו פנים</strong> - דפנות. [ל\"א] שיהא לו פנים זויות והן הן הקרנות:"
+  },
+  "Rashi on Menachot 96a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T01:14:39.626Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ארכו י' ורחבו ה'</strong> - כדכתיב אמתים ארכו ואמה רחבו ור' יהודה לטעמיה דאמר אמת כלים באמת בת ה' ונותן אורכו של לחם כנגד רוחבו של שלחן:"
+  },
+  "Rashi on Menachot 96a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T01:14:59.308Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכופל</strong> - הלחם:"
+  },
+  "Rashi on Menachot 96a:8:2": {
+    "dependsOn": [
+      "Menachot 96a:8",
+      "Rashi on Menachot 96a:8:1",
+      "Rashi on Menachot 96a:8:2",
+      "Rashi on Menachot 96a:8:3"
+    ],
+    "generatedAt": "2026-09-11T01:15:30.669Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טפחיים ומחצה</strong> - למעלה מיכן ומיכן ובהן הן הקרנות ונמצאו זקופות בשוה לשפת השלחן ולמ\"ד כמין ספינה רוקדת הוו הנך דפנות הולכות וזוקפות בשיפוע:"
+  },
+  "Rashi on Menachot 96a:8:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T01:15:50.832Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונמצא ארכו ממלא רחבו של שלחן</strong> - ורחבן מחזיק חצי אורך השלחן וכשהיה סודר האחר אצלו נמצא שלחן כולו מלא:"
+  },
+  "Rashi on Menachot 96a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T01:16:14.441Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 96a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אורכו י\"ב</strong> - ר' מאיר לטעמיה דאמר כל האמות היו בבינונית והלחם עשרה דבהא לא פליג:"
+  },
+  "Tosafot on Menachot 96a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T01:21:50.216Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 96a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל הכלים שהיו במקדש אורכן לאורכו של בית</strong> - בגמ' תניא חוץ מארון שאורכו לרוחבו של בית ובשולחן ומנורה פליגי רבי ור' אלעזר בר' שמעון ומתני' כרבי דאמר מזרח ומערב מונחין:"
+  },
+  "Tosafot on Menachot 96a:15:1": {
+    "dependsOn": [
+      "Menachot 96a:15",
+      "Rashi on Menachot 96a:15:1",
+      "Menachot 96a:16",
+      "Rashi on Menachot 96a:16:1"
+    ],
+    "generatedAt": "2026-09-11T01:23:20.900Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 96a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאלו את רבי זו מנין</strong> - אמתני' קאי וקאמר מנין שכל המנחות יש בהן מעשה כלי בפנים ולא לענין קמיצה מכלי שרת וקידוש קומץ בכלי שרת איירי דבהאי קרא דמייתי איירי בבישול חטאת ואשם ואפיית מנחה ולא מיירי בקידוש קומץ כלל ומהיקשא דזאת התורה נפקא לן לעיל בסוף פ' התודה <span class=\"parenthesized\">(מנחות דף פב:)</span> מה עולה טעונה כלי דכתיב ויקח את המאכלת אף כל טעון כלי וקמיצה כנגד שחיטה וקידוש קומץ כנגד קבלה כדאמר לעיל בפ' שני <span class=\"parenthesized\">(מנחות דף יג:)</span> אלא הכא בלישה ועריכה ואפיה של מנחה מיירי דאיתקש אפיה דמנחה לבישול דחטאת ואשם מה הם טעונין כלי דכתיב וכלי חרס אשר תבושל בו ישבר ואם בכלי נחושת בושלה ומיהו מזה אין ראיה דלאו למירמי חובה קאמר אלא <span class=\"rashi-quotation\">כדפירש בקונטרס</span> דכתיב אשר תבושל בו ואין בישול בלא כלי ובפנים משתעי קרא דאי בחוץ הרי חטאת ואשם נפסל ביוצא ועוד כתיב ביה לבלתי הוציא אל [החצר] החיצונה אף אפיה דמנחה טעונין כלי שרת והוא הדין לישה ועריכה וצריך לדקדק לאיזו מנחה איצטריך קרא אי למנחת מחבת ומרחשת ומאפה תנור הא כתיב בהו כלי ואילו למנחת סלת אין בה אפיה קודם קמיצה:"
+  },
+  "Tosafot on Menachot 96a:22:1": {
+    "dependsOn": [
+      "Rashi on Menachot 96a:22:1",
+      "Rashi on Menachot 96a:22:2",
+      "Menachot 96a:22",
+      "Menachot 7a:1",
+      "Menachot 7a:2",
+      "Menachot 7a:3",
+      "Menachot 7a:4",
+      "Menachot 7a:5",
+      "Menachot 7b:6",
+      "Menachot 7b:7",
+      "Menachot 7b:8",
+      "Menachot 8a:1",
+      "Zevachim 86a:1",
+      "Menachot 7a:6",
+      "Menachot 7a:7",
+      "Menachot 7a:8",
+      "Menachot 7a:9",
+      "Menachot 8b:1",
+      "Menachot 8b:2",
+      "Menachot 8b:3",
+      "Menachot 8b:4",
+      "Menachot 9a:1",
+      "Menachot 9a:2",
+      "Menachot 9a:3",
+      "Menachot 9a:4",
+      "Menachot 7b:1",
+      "Menachot 7b:2"
+    ],
+    "generatedAt": "2026-09-11T01:35:40.736Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 96a:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והאיכא בזיכין</strong> - הקשה <span class=\"rashi-quotation\">בקונטרס</span> אמאי פריך הכי דהא שולחן לא מקדש להו לבזיכין ונראה דלא קשה <span class=\"parenthesized\">(ליה)</span> מידי דהא אמרינן בפ\"ק <span class=\"parenthesized\">(לעיל מנחות דף ז.)</span> דקומץ מנחה מכלי שעל גבי קרקע שכן מצינו בסילוק בזיכין משמע דהוי כקומץ מע\"ג השלחן:"
+  },
+  "Tosafot on Menachot 96a:3:1": {
+    "dependsOn": [
+      "Menachot 96a:3",
+      "Pesachim 69b:12",
+      "Pesachim 69b:13",
+      "Shabbat 133a:1",
+      "Shabbat 133a:2",
+      "Pesachim 69b:1",
+      "Pesachim 66a:1",
+      "Shabbat 130a:1",
+      "Pesachim 68a:1",
+      "Pesachim 69a:1",
+      "Pesachim 70a:1",
+      "Pesachim 70a:2",
+      "Pesachim 70a:3",
+      "Shabbat 133a:10",
+      "Shabbat 133a:11",
+      "Shabbat 133a:12",
+      "Shabbat 133a:8",
+      "Shabbat 133a:9",
+      "Shabbat 131b:1",
+      "Shabbat 131b:2",
+      "Shabbat 131b:3",
+      "Shabbat 131b:4",
+      "Shabbat 133b:1",
+      "Shabbat 132b:1",
+      "Shabbat 132b:2",
+      "Shabbat 132b:3",
+      "Shabbat 132b:4",
+      "Shabbat 131a:1",
+      "Shabbat 131a:2",
+      "Shabbat 131a:3",
+      "Tosafot on Menachot 96a:3:1",
+      "Tosafot on Shabbat 133a:1:1",
+      "Tosafot on Shabbat 133a:2:1",
+      "Tosafot on Pesachim 69b:1:1",
+      "\nconst fs = require("
+    ],
+    "generatedAt": "2026-09-11T01:09:42.761Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 96a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כלל א\"ר עקיבא כו'</strong> - בפ' ר\"א אומר אם לא הביא <span class=\"parenthesized\">(שבת דף קלג. ושם)</span> ובפ' אלו דברים <span class=\"parenthesized\">(פסחים דף סט:)</span> פסק כר' עקיבא משום דאיכא צריכותא גבי פסח ומילה אבל הכא ליכא צריכותא ומיהו אמילתיה דר\"ע לא בעי צריכותא דאשמעינן בכל דוכתא מאי דדחי שבת:"
+  }
+}

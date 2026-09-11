@@ -1,0 +1,155 @@
+{
+  "Rashi on Menachot 108b:1:1": {
+    "dependsOn": [
+      "Menachot 108b:1",
+      "Rashi on Menachot 108b:1:1",
+      "Rashi on Menachot 108b:1:2",
+      "Menachot 108a:15",
+      "Menachot 108a:16",
+      "Menachot 108a:17",
+      "Menachot 108a:18",
+      "Menachot 108a:19",
+      "Menachot 108a:20",
+      "Menachot 108a:21",
+      "Menachot 108a:22",
+      "Menachot 108a:23",
+      "Menachot 107a:20",
+      "Menachot 107a:21",
+      "Menachot 107b:1",
+      "Menachot 107b:5",
+      "Menachot 107b:6",
+      "Menachot 107b:7",
+      "Menachot 107b:8",
+      "Rashi on Menachot 108b:4:1",
+      "Rashi on Menachot 108b:5:1",
+      "Rashi on Menachot 108b:6:1",
+      "Rashi on Menachot 108b:7:1",
+      "Menachot 108b:2",
+      "Menachot 108b:3",
+      "Menachot 108b:4",
+      "Menachot 108b:5",
+      "Menachot 108b:6",
+      "context_fetch_cli.ts"
+    ],
+    "generatedAt": "2026-09-11T11:22:16.807Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 108b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא אמרת רישא</strong> - אפילו לרבנן:"
+  },
+  "Rashi on Menachot 108b:1:2": {
+    "dependsOn": [
+      "Menachot 108b:1",
+      "Rashi on Menachot 108b:1:1",
+      "Rashi on Menachot 108b:1:2"
+    ],
+    "generatedAt": "2026-09-11T11:22:46.214Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 108b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שור במנה כו'</strong> - ואמאי יביא בדמיו שנים:"
+  },
+  "Rashi on Menachot 108b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T11:23:27.538Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 108b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זה ונסתאב שאני</strong> - דכיון דאמר זה אקריב עולה ונסתאב אזל ליה נדריה דזה לא מצי למיקרב אבל התם דאמר הרי עלי שור במנה חייב עד שיביאנו:"
+  },
+  "Rashi on Menachot 108b:4:1": {
+    "dependsOn": [
+      "Menachot 108b:4",
+      "Rashi on Menachot 108b:4:2"
+    ],
+    "generatedAt": "2026-09-11T11:23:56.236Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 108b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גדול והביא קטן</strong> - שבכל מקום שנים חשובים מאחד ואפילו שניהם שוין:"
+  },
+  "Rashi on Menachot 108b:4:2": {
+    "dependsOn": [
+      "Menachot 108b:4",
+      "Rashi on Menachot 108b:4:1",
+      "Rashi on Menachot 108b:4:2",
+      "Rashi on Menachot 108b:1:1",
+      "Rashi on Menachot 108b:2:1",
+      "Rashi on Menachot 108b:7:1",
+      "Rashi on Menachot 108a:1:1",
+      "Rashi on Menachot 108a:2:1"
+    ],
+    "generatedAt": "2026-09-11T11:26:41.382Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 108b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואף על גב דנסתאב</strong> - איכא למימר חלף ליה נדריה ובאחריות נמי לא ליחייב דהא אמר אלו אפילו הכי לכתחילה לא שרו:"
+  },
+  "Rashi on Menachot 108b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T11:27:34.130Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 108b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליפלוג נמי ברישא</strong> - שור זה עולה ונסתאב יביא בדמיו שנים דהוי קטן והביא גדול נמי ליפלוג ולימא ורבי אוסר דלא שני ליה בין קטן והביא גדול לגדול והביא קטן:"
+  },
+  "Rashi on Menachot 108b:7:1": {
+    "dependsOn": [
+      "Menachot 108b:7",
+      "Rashi on Menachot 108b:7:1",
+      "Rashi on Menachot 108b:7:2"
+    ],
+    "generatedAt": "2026-09-11T11:28:02.523Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 108b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תדע</strong> - דארישא דנדר קטן והביא גדול נמי פליג:"
+  },
+  "Rashi on Menachot 108b:7:2": {
+    "dependsOn": [
+      "Menachot 108b:7",
+      "Rashi on Menachot 108b:7:1"
+    ],
+    "generatedAt": "2026-09-11T11:28:37.410Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 108b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי אוסר</strong> - אלמא בכבש אסר נמי רבי להביא בדמיו איל דהוי קטן והביא גדול דומיא דשור זה ונסתאב דלא יביא בדמיו שנים:"
+  },
+  "Rashi on Menachot 108b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T11:29:02.010Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 108b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ממינא למינא מאי</strong> - שור זה עולה ונסתאב מהו שיביא בדמיו שני אילים:"
+  },
+  "Rashi on Menachot 108b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T11:29:32.703Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 108b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא יביא בדמיו איל</strong> - דקטן הוא יותר מדאי אבל יביא בדמיו שני אילים אלמא ממינא למינא שרי:"
+  }
+}
