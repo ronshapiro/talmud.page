@@ -1,10 +1,13 @@
 {
   "Rashi on Chullin 2b:1:1": {
-    "costUsd": 0.2254078,
+    "costUsd": 0.2138854,
     "dependsOn": [
-      "Chullin 2b:1"
+      "Chullin 2b:1",
+      "Nedarim 10a:1",
+      "Nedarim 10a:2",
+      "Nedarim 10a:3"
     ],
-    "generatedAt": "2026-09-10T19:10:10.823Z",
+    "generatedAt": "2026-09-11T00:07:25.320Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -13,9 +16,9 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">אבל אמר הרי עלי לא</strong> - דלמא פשע ולא מקיים והכי מוקמינן לה בנדרים בפ\"ק <span class=\"parenthesized\">(דף י.)</span> לר' יהודה תני נודב ומשלם. אלמא מעריכין ונודרין לכתחלה לא דהרי עלי הוא דליכא למימר בהו הרי זו עד דאמר ברישא ערכי עלי והדר יהיב כפי הקצוב בפרשה ודמי עלי נמי דבעי למשיימיה כעבדא דהיכי מצי למימר הרי אלו לערכים אם לא נדר תחלה בערך:"
   },
   "Rashi on Chullin 2b:2:1": {
-    "costUsd": 0.201767,
+    "costUsd": 0.106659,
     "dependsOn": [],
-    "generatedAt": "2026-09-10T19:21:33.657Z",
+    "generatedAt": "2026-09-11T00:13:39.551Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -24,9 +27,9 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">וכל הכל לאו לכתחלה הוא</strong> - וכי אין לך הכל שהוא לכתחלה:"
   },
   "Rashi on Chullin 2b:2:2": {
-    "costUsd": 0.0623446,
+    "costUsd": 0.0691426,
     "dependsOn": [],
-    "generatedAt": "2026-09-10T19:21:51.438Z",
+    "generatedAt": "2026-09-11T00:14:16.793Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -35,9 +38,9 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">הכל חייבים בסוכה</strong> - לאתויי קטן שאינו צריך לאמו:"
   },
   "Rashi on Chullin 2b:2:3": {
-    "costUsd": 0.059622600000000005,
+    "costUsd": 0.0591276,
     "dependsOn": [],
-    "generatedAt": "2026-09-10T19:22:07.153Z",
+    "generatedAt": "2026-09-11T00:14:32.595Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -46,12 +49,11 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">הכל חייבים בציצית</strong> - לאתויי קטן היודע להתעטף:"
   },
   "Rashi on Chullin 2b:3:1": {
-    "costUsd": 0.11214260000000001,
+    "costUsd": 0.0853694,
     "dependsOn": [
-      "Chullin 2b:2",
       "Chullin 2b:3"
     ],
-    "generatedAt": "2026-09-10T19:22:47.679Z",
+    "generatedAt": "2026-09-11T00:15:03.888Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -60,9 +62,12 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">חייבין לא קאמינא</strong> - היכא דתני חייבין מוכח ודאי דלכתחלה קאמר:"
   },
   "Rashi on Chullin 2b:3:2": {
-    "costUsd": 0.0737606,
-    "dependsOn": [],
-    "generatedAt": "2026-09-10T19:23:17.951Z",
+    "costUsd": 0.1349932,
+    "dependsOn": [
+      "Chullin 2b:3:1",
+      "Chullin 2b:3"
+    ],
+    "generatedAt": "2026-09-11T00:16:29.188Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -71,14 +76,14 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">הכל סומכין</strong> - לאתויי יורש והא ודאי לכתחלה קאמר דמצוה רמיא עליה על כרחיה:"
   },
   "Rashi on Chullin 2b:5:1": {
-    "costUsd": 0.3871172,
+    "costUsd": 0.2561212,
     "dependsOn": [
-      "Chullin.2b.4",
-      "Chullin.2b.5",
-      "Chullin 2b:5",
-      "Sanhedrin 2b Mishnah"
+      "Chullin 2b:5:1",
+      "Mishnah Temurah 1:1",
+      "Chullin 2b:6:1",
+      "Chullin 2b:5"
     ],
-    "generatedAt": "2026-09-10T19:26:48.876Z",
+    "generatedAt": "2026-09-11T00:19:27.633Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
@@ -87,14 +92,93 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">תרתי דיעבד למה לי</strong> - הכי איבעי ליה למיתני שחיטת הכל כשרה חוץ מחש\"ו דמשמע שפיר דהנך דמרבינן מהכל דיעבד קמרבינן אבל לא לכתחלה א\"נ ניתני הכל שוחטין לחודיה כדתנן גבי מעריכין ונודרין ולא מפרש למה לי למיתני הכל שוחטין ואצטריך לפרושי ושחיטתן כשרה למימר דשוחטין דרישא דיעבד הוא. ואי קשיא בתמורה נמי הא תני והדר מפרש התם לא קתני כה\"ג הכל ממירין ותמורתן תמורה בהדי הדדי ואי משום לא שאדם רשאי משום דבעי לאסוקי וסופג את הארבעים לאשמועינן דלוקין על לאו שאין בו מעשה:"
   },
   "Tosafot on Chullin 2b:1:1": {
-    "costUsd": 0.7492388000000001,
+    "costUsd": 0.23023760000000004,
     "dependsOn": [],
-    "generatedAt": "2026-09-10T19:20:07.516Z",
+    "generatedAt": "2026-09-11T00:12:40.104Z",
     "model": "claude-sonnet-5",
     "promptVersion": "v2",
     "sourceRefs": [
       "Tosafot on Chullin 2b:1:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">אבל אמר הרי עלי לא</strong> - הך סוגיא כלישנא בתרא דפ\"ק דנדרים <span class=\"parenthesized\">(דף י.)</span> דקאמר דפליגי בנודב אבל ללישנא קמא דקאמר דפליגי בנודר אבל בנודב מודה רבי מאיר וא\"ת כיון דקרא בנדר כתיב מנא ליה לרבי מאיר דאין נודב טוב מנודר ומשלם ולרבי יהודה נמי אמאי אם אמר הרי עלי לא הא כל היכא דכתיב נדר הוי נדר דוקא ונדבה הוי נדבה דוקא כדמוכח בריש מנחות <span class=\"parenthesized\">(דף ב.)</span> וזבחים <span class=\"parenthesized\">(דף ב.)</span> גבי כאשר נדרת לה' אלהיך נדבה דפריך האי נדבה נדר הוא וי\"מ דהתם פריך משום דשני קרא בדבוריה וי\"ל דקסבר כיון דחייש קרא לתקלה בנדר ה\"ה בנדבה דהא איכא למיחש לתקלה דאפי' מביאה לעזרה ומקדישה יכול להנות ולמעול בה ולבא לידי תקלה בכמה עניינים דכ\"ע לא בקיאי כהלל דמעולם לא מעל אדם בעולתו <span class=\"parenthesized\">(פסחים דף סו:)</span> ולרבי יהודה נמי משמע ליה קרא דוקא בנדבה אע\"ג דבנדר כתיב דהא בנדר לא מצי למימר דנודר ומשלם טוב שהרי כתיב וכי תחדל לנדור לא יהיה בך חטא הא אם תדור יהיה בך חטא וללישנא קמא דנדרים מפרשינן לקרא הא אם תדור אפשר שיהיה בך חטא אם לא תשלם וא\"ת לרבי מאיר דאין טוב שיהא נודב ומשלם כל עיקר אפילו מביא כבשתו לעזרה להאי לישנא בתרא דנדרים היאך אכלו ישראל שלמים במדבר וי\"ל כיון שנאסרו בענין אחר בבשר הוו כאילו צוה להם המקום לאכול על ידי שלמים וא\"ת והא כתיב <span class=\"parenthesized\">(בראשית כ״ח:כ׳)</span> וידר יעקב נדר וכתיב <span class=\"parenthesized\">(יונה ב׳:י׳)</span> את אשר נדרתי אשלמה וי\"ל דבשעת צרה שרי כדאמרינן בבראשית רבה וידר יעקב נדר לאמר לאמר לדורות שיהיו נודרים בעת צרה:"
+  },
+  "Rashi on Chullin 2b:6:1": {
+    "costUsd": 0.09719719999999998,
+    "dependsOn": [
+      "Chullin 2b:6"
+    ],
+    "generatedAt": "2026-09-11T00:21:31.927Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 2b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכי קתני</strong> - לכתחלה ודיעבד דמתניתין הכל שוחטין לכתחלה לאתויי טמא בחולין:"
+  },
+  "Rashi on Chullin 2b:6:2": {
+    "costUsd": 0.0806074,
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T00:21:58.893Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 2b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פשיטא</strong> - דהא לא הוזהרו ישראל על טהרת חוליהן:"
+  },
+  "Rashi on Chullin 2b:6:3": {
+    "costUsd": 0.0734486,
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T00:22:30.653Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 2b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנעשו על טהרת קדש</strong> - דקבל עליה לאכול בטהרת קדש שרוצה להרגיל עצמו בטהרת קדשים שאם יאכל שלמים או תודה יהא בקי בשמירתן:"
+  },
+  "Rashi on Chullin 2b:6:4": {
+    "costUsd": 0.11401819999999999,
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T00:23:34.966Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 2b:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כקדש דמו</strong> - וחייב להבדל מדרבנן מכל טומאות הפוסלות בהן ואפילו הכי <span class=\"parenthesized\">(שחיט טמא)</span> לכתחלה ובסכין ארוכה כדמפרש:"
+  },
+  "Rashi on Chullin 2b:8:1": {
+    "costUsd": 0.35955639999999994,
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T00:27:45.757Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 2b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובמוקדשין</strong> - לכתחלה לא ישחוט ואפילו בסכין ארוכה כיון דמוזהר מן התורה שלא יטמא כדכתיב <span class=\"parenthesized\">(במדבר יח)</span> ואני הנה נתתי לך את משמרת תרומותי אלמא בעינן שמירה גזור בהו רבנן לכתחלה משום לך לך אמרינן נזירא סחור סחור לכרמא לא תקרב:"
+  },
+  "Tosafot on Chullin 2b:5:1": {
+    "costUsd": 0.12399,
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T00:20:51.064Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 2b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אנא שחיטתן כשרה קא קשיא לי</strong> - משמע שרב אשי הקשה אותה קושיא ואע\"פ שהיא סוגיית הגמרא ומכאן ראיה שרב אשי סידר הגמרא אע\"ג דאביי ורבא נמי אתו לשנויי הך קושיא והם קדמו הרבה לרב אשי שמא גם בימיהם הקשוה כבר:"
+  },
+  "Tosafot on Chullin 2b:6:1": {
+    "costUsd": 0.1190326,
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T00:24:22.551Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 2b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טמא בחולין מאי למימרא</strong> - ואע\"ג דאסור לגרום טומאה לחולין שבא\"י היינו דוקא בפירות דשייכא בהו תרומה אבל בשר לא ואפילו יהא אסור לטמאות גופו באוכלין טמאין כדדרשינן והתקדשתם והייתם קדושים אזהרה לבני ישראל שיאכלו חוליהן בטהרה מכל מקום יכול לטמאותן ולאוכלן בימי טומאתו:"
   }
 }
