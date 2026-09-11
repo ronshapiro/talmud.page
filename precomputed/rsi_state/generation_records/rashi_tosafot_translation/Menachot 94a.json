@@ -1,0 +1,392 @@
+{
+  "Rashi on Menachot 94a:11:1": {
+    "dependsOn": [
+      "context_fetch_cli.ts"
+    ],
+    "generatedAt": "2026-09-10T23:46:27.617Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 94a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דפוס</strong> - פורמ\"א בלע\"ז ובגמ' מפרש היאך עשוי:"
+  },
+  "Rashi on Menachot 94a:11:2": {
+    "dependsOn": [
+      "Menachot 94a:11"
+    ],
+    "generatedAt": "2026-09-10T23:46:48.660Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 94a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכשהוא רודה</strong> - מן התנור:"
+  },
+  "Rashi on Menachot 94a:11:3": {
+    "dependsOn": [
+      "Menachot 94a:11",
+      "Rashi on Menachot 94a:11:1",
+      "Rashi on Menachot 94a:11:2",
+      "Rashi on Menachot 94a:11:3"
+    ],
+    "generatedAt": "2026-09-10T23:47:07.368Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 94a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נותנן בדפוס</strong> - כדי שלא יתקלקלו וישברו:"
+  },
+  "Rashi on Menachot 94a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T23:49:51.609Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 94a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">החלה האחת</strong> - בלחם הפנים כתיב:"
+  },
+  "Rashi on Menachot 94a:13:1": {
+    "dependsOn": [
+      "Menachot 94a:12",
+      "Menachot 94a:13",
+      "Menachot 94a:14"
+    ],
+    "generatedAt": "2026-09-10T23:50:16.345Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 94a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושמת אותם</strong> - שימה ראשונה שאתה עושה מהם דהיינו בתנור תהא בלשון אותם דמשמע שהיה נותן שתים בשני דפוסין יחד בתנור:"
+  },
+  "Rashi on Menachot 94a:15:1": {
+    "dependsOn": [
+      "Menachot 94a:15",
+      "Rashi on Menachot 94a:15:1"
+    ],
+    "generatedAt": "2026-09-10T23:50:44.206Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 94a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועדיין היא בצק</strong> - נותנה בדפוס שהדפוס עשוי כמין תיבה פרוצה ולמר כמין ספינה רוקדת כדפליגי לקמן ומתקן הבצק בתוך הדפוס שיהא עשוי כעין הדפוס שהלחם היה לו דפנות ותוך:"
+  },
+  "Rashi on Menachot 94a:15:2": {
+    "dependsOn": [
+      "Menachot 94a:15",
+      "Rashi on Menachot 94a:15:1",
+      "Rashi on Menachot 94a:15:2",
+      "Rashi on Menachot 94a:15:3"
+    ],
+    "generatedAt": "2026-09-10T23:51:05.764Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 94a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכמין דפוס היה לה בתנור</strong> - והיו מסיקין אותו עם התנור ואופה את הלחם:"
+  },
+  "Rashi on Menachot 94a:15:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T23:51:26.763Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 94a:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכשהוא רודה</strong> - מן התנור:"
+  },
+  "Rashi on Menachot 94a:15:4": {
+    "dependsOn": [
+      "Menachot 94a:15",
+      "Rashi on Menachot 94a:15:1",
+      "Rashi on Menachot 94a:15:2",
+      "Rashi on Menachot 94a:15:3",
+      "Rashi on Menachot 94a:15:4",
+      "Rashi on Menachot 94a:15:5"
+    ],
+    "generatedAt": "2026-09-10T23:51:52.639Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 94a:15:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וליהדרה</strong> - לאחר שרדה לדפוס קמא שתקנה בו:"
+  },
+  "Rashi on Menachot 94a:15:5": {
+    "dependsOn": [
+      "Menachot 94a:15",
+      "Rashi on Menachot 94a:15:1",
+      "Rashi on Menachot 94a:15:2",
+      "Rashi on Menachot 94a:15:3",
+      "Rashi on Menachot 94a:15:4",
+      "Rashi on Menachot 94a:15:5"
+    ],
+    "generatedAt": "2026-09-10T23:52:53.252Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 94a:15:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נפחה</strong> - וצריכה דפוס גדול מן הראשון:"
+  },
+  "Rashi on Menachot 94a:1:1": {
+    "dependsOn": [
+      "Menachot 94a:1",
+      "Rashi on Menachot 94a:1:1",
+      "Rashi on Menachot 94a:1:2",
+      "Rashi on Menachot 94a:1:3"
+    ],
+    "generatedAt": "2026-09-10T23:38:25.158Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 94a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בחיין ובשחוטין</strong> - בכבשי עצרת:"
+  },
+  "Rashi on Menachot 94a:1:2": {
+    "dependsOn": [
+      "Rashi on Menachot 94a:1:2"
+    ],
+    "generatedAt": "2026-09-10T23:38:55.158Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 94a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובדבר שאיו בו רוח חיים</strong> - לחם ומנחות:"
+  },
+  "Rashi on Menachot 94a:1:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T23:39:20.469Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 94a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה שאין כן בסמיכה</strong> - דאין נוהגין בשחוטין ואין נוהג אלא בדבר שיש בו רוח חיים:"
+  },
+  "Rashi on Menachot 94a:3:1": {
+    "dependsOn": [
+      "Menachot 94a:2",
+      "Menachot 94a:3",
+      "Rashi on Menachot 94a:3:1",
+      "Rashi on Menachot 94a:3:2",
+      "Rashi on Menachot 93b:1:1",
+      "Rashi on Menachot 93a:1:1"
+    ],
+    "generatedAt": "2026-09-10T23:39:51.588Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 94a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיכול</strong> - שיהא האחד סומך לכל החבירים והלא דין הוא וכו':"
+  },
+  "Rashi on Menachot 94a:3:2": {
+    "dependsOn": [
+      "Menachot 94a:3",
+      "Rashi on Menachot 94a:3:2"
+    ],
+    "generatedAt": "2026-09-10T23:40:38.280Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 94a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בחוברין</strong> - בחבירין:"
+  },
+  "Rashi on Menachot 94a:3:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T23:40:56.826Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 94a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתמעטה בחוברין</strong> - שאין כולם צריכין להניף אלא אחד מניף על יד כולם:"
+  },
+  "Rashi on Menachot 94a:4:1": {
+    "dependsOn": [
+      "Menachot 94a:4",
+      "Rashi on Menachot 94a:4:1",
+      "Rashi on Menachot 94a:4:2"
+    ],
+    "generatedAt": "2026-09-10T23:42:03.690Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 94a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותתרבי תנופה בחוברין</strong> - שיהא כולם צריכין להניף:"
+  },
+  "Rashi on Menachot 94a:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T23:42:23.170Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 94a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנופה שנתרבית בשחוטין</strong> - בין בשלמי צבור בין בשלמי יחיד:"
+  },
+  "Rashi on Menachot 94a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T23:42:44.006Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 94a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קא הוי חציצה</strong> - דכי מניף זה ידו ע\"י חבירו הויא ידו חוצצת בין יד חבירו לזבח:"
+  },
+  "Rashi on Menachot 94a:5:2": {
+    "dependsOn": [
+      "Menachot 94a:5",
+      "Rashi on Menachot 94a:5:1",
+      "Rashi on Menachot 94a:5:2",
+      "Rashi on Menachot 94a:5:3"
+    ],
+    "generatedAt": "2026-09-10T23:43:13.332Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 94a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליניף</strong> - חד והדר ליניף חבריה:"
+  },
+  "Rashi on Menachot 94a:5:3": {
+    "dependsOn": [
+      "Menachot 94a:5",
+      "Rashi on Menachot 94a:5:1",
+      "Rashi on Menachot 94a:5:2",
+      "Rashi on Menachot 94a:5:3"
+    ],
+    "generatedAt": "2026-09-10T23:43:36.458Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 94a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנופה</strong> - אחת כתיב אבל בסמיכה לא כתיב סמיכה בהדיא אלא וסמך סתם [יכול] לסמוך והדר לסמוך:"
+  },
+  "Rashi on Menachot 94a:6:1": {
+    "dependsOn": [
+      "Menachot 94a:6",
+      "Rashi on Menachot 94a:6:1",
+      "Rashi on Menachot 94a:6:2",
+      "Rashi on Menachot 94a:9:1"
+    ],
+    "generatedAt": "2026-09-10T23:44:37.268Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 94a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והעלהו</strong> - לכהן גדול:"
+  },
+  "Rashi on Menachot 94a:6:2": {
+    "dependsOn": [
+      "Menachot 94a:6",
+      "Rashi on Menachot 94a:6:1",
+      "Rashi on Menachot 94a:6:2"
+    ],
+    "generatedAt": "2026-09-10T23:45:19.725Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 94a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הושיט הראשון</strong> - מאותן י\"ב שעסוקים בתמיד וסומך עליהם כהן גדול וזורקן על האישים ונשמט השני והלך לו ובא חבירו שלישי ומושיט לראשון והראשון לכהן גדול:"
+  },
+  "Rashi on Menachot 94a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T23:45:57.269Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 94a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום יקרא דכהן גדול</strong> - שיהא נראה כמו שהקריב הוא את כולן היה סומך עליהן ולא שתהא סמיכתם נוהגת בשחוטין מן התורה:"
+  },
+  "Tosafot on Menachot 94a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T23:47:41.790Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 94a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתי הלחם</strong> - במשנה ובמקרא קרוי לשון זכר ולשון נקבה דהכא תנן שתי הלחם ובשמואל <span class=\"parenthesized\">(א י)</span> כתיב גבי שאול ונתנו לך שתי לחם ולקחת מידם ולעיל פ' ואלו מנחות <span class=\"parenthesized\">(מנחות דף עה:)</span> קרי ליה לשון זכר דקאמר בבא מלחם גדול וכתיב <span class=\"parenthesized\">(ישעיהו נ״א:י״ד)</span> ולא יחסר לחמו:"
+  },
+  "Tosafot on Menachot 94a:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T23:48:51.990Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 94a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובדפוס היה עושה אותן</strong> - אית דגרסי טפוס והכל אחד כמו גיטין <span class=\"parenthesized\">(דף כו.)</span> טופסי גיטין פורמ\"א בלע\"ז ואי אפשר לברר אם היה מתקן הלחם מחוץ לדפוס שהיה הדפוס בתוך הלחם או הלחם בפנים ומתוך הסברא נראה שהלחם בתוך הדפוס אבל מדקאמר בגמ' וליהדרה בדפוס קמא ומשני כיון דאפי לה נפחה משמע שהלחם חוץ לדפוס דאי בתוך הדפוס כיון דכמין דפוס היה לה בתנור היכי מינפחה הא אין הדפוס מניחה ועוד דבכל דוכתא משמע שהיו מדביקין את הפת בתנור ואם בתוך הדפוס נתונה אי אפשר להדביקה ומהא דקתני וכשהוא רודן נותנן בדפוס אין לדקדק דשייך רדיה מפני הדפוס ולא מפני שהודבקה בתנור:"
+  },
+  "Tosafot on Menachot 94a:11:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T23:49:34.748Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 94a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכשהוא רודן נותנן בדפוס</strong> - הן הקערות של שולחן כדאמר <span class=\"parenthesized\">(לקמן מנחות דף צז.)</span> קערותיו אלו דפוסין וכן פירש רש\"י בפירושי חומש שהיה נותנו בקערות לאחר אפייה ותימה הא דפליגי לקמן <span class=\"parenthesized\">(מנחות דף צה:)</span> באפייתן אי דחיא שבת דלמאן דאמר תנור מקדש דחיא שבת משום דאי אפי לה מאתמול איפסלא בלינה ולמאן דאמר אין תנור מקדש לא דחיא הא בין למר ובין למר קערות נתקדשו כדכתיב בפ' נשא ומשחת בו את אהל מועד ואת ארון העדות את השולחן ואת כל כליו ושמא אע\"ג דכתיב גבי שלחן ועשית קערותיו מ\"מ כלי השולחן מיהא לא מיקרו אי נמי מאן דמפרש קערותיו אלו הדפוסים קסבר תנור מקדש אבל מאן דאמר אין תנור מקדש היה מפרש דקערותיו היינו קערות שהיו נותנים בהם את הלחם על שתי שולחנות שבאולם אחד מכסף ואחד מזהב על של כסף נותנים לחם הפנים בכניסתן ועל של זהב ביציאתן אבל אין לפרש דעל שולחן של משה שבהיכל היו סודרין בתוך הקערות דאם כן שולחן היה מקדש יותר מחמשה עשר טפחים:"
+  },
+  "Tosafot on Menachot 94a:15:1": {
+    "dependsOn": [
+      "Menachot 94a:15"
+    ],
+    "generatedAt": "2026-09-10T23:53:30.353Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 94a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושמת אותם בדפוס</strong> - וא\"ת והא אפיקתיה לומר שאפייתן שתים שתים ויש לומר דאם כן לכתוב ונתת אותם אבל ושמת משמע שימה בדפוס:"
+  },
+  "Tosafot on Menachot 94a:3:1": {
+    "dependsOn": [
+      "Menachot 94a:3",
+      "Tosafot on Menachot 94a:3:1"
+    ],
+    "generatedAt": "2026-09-10T23:41:39.343Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 94a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סמיכה שלא נתרבתה בשחוטין</strong> - תימה ותתרבה בשחוטין מקל וחומר מתנופה שנתמעטה בחוברין ונתרבתה בשחוטין:"
+  },
+  "Tosafot on Menachot 94a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T23:43:55.101Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 94a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קא הויא חציצה</strong> - והא דכהן מניח ידו תחת יד הבעלים ומניף פירשתי לעיל בפרק כל המנחות באות מצה <span class=\"parenthesized\">(מנחות דף סא:)</span>:"
+  },
+  "Tosafot on Menachot 94a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-10T23:45:36.122Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 94a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בזמן שכהן גדול רוצה להקטיר</strong> - משנה היא במסכת תמיד <span class=\"parenthesized\">(דף לג:)</span>:"
+  }
+}

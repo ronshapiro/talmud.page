@@ -1,0 +1,63 @@
+{
+  "Rashi on Menachot 99a:1:1": {
+    "dependsOn": [
+      "Menachot 99a:1",
+      "Rashi on Menachot 99a:1:1",
+      "Steinsaltz on Menachot 99a:1:1",
+      "Tosafot on Menachot 99a:2:1",
+      "Menachot 98b:12",
+      "Menachot 98b:13",
+      "Menachot 98b:14",
+      "Menachot 98b:15",
+      "Menachot 98b:16"
+    ],
+    "generatedAt": "2026-09-11T10:37:45.067Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 99a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשלמא למ\"ד צפון ודרום שפיר</strong> - דאע\"ג דלא אפשר שלא יהא מקצת מן השולחן בדרום דאי אפשר לצמצם שולחנות של עשר אמות בעשר אמות אפ\"ה דמאי דטפי טפח לא הוי לא חשיב ליה:"
+  },
+  "Rashi on Menachot 99a:2:1": {
+    "dependsOn": [
+      "Menachot 99a:1",
+      "Menachot 99a:2",
+      "Menachot 99a:3"
+    ],
+    "generatedAt": "2026-09-11T10:38:42.570Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 99a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא למ\"ד מזרח ומערב</strong> - הוא האורך והרוחב מצפון לדרום מכדי שורה הצפונית כמה מרוחקת מכותל צפוני שתי אמות ומחצה שיהו כהנים הנושאים שני סדרים יכולים להלך זה בצד זה כדאמרינן במתני' דשנים היו מסדרין בבת אחת ולהילוך שני בני אדם בעינן שתי אמות ומחצה כדאמרינן לעיל גבי בדי ארון ושלחן רוחב אמה ושתי אמות ומחצה בין שורה צפונית לשלחן של משה ואמה דידיה ושתי אמות ומחצה בינו לשורה דרומית ואמה רוחב השולחנות הרי עשר אמות ומחצה אישתכח דקאכיל פלגא באמתא דדרום. אכל תפס ולמ\"ד צפון ודרום ליכא למיפרך הכי דלדידיה הוי רוחבו ממזרח למערב ושורה מערבית משוכה מכותל מערבי שתי אמות ומחצה ואמה רוחב דשולחן ושתי אמות ומחצה בינו ובין השלחן של משה כו':"
+  },
+  "Rashi on Menachot 99a:4:1": {
+    "dependsOn": [
+      "Menachot 99a:4",
+      "Rashi on Menachot 99a:4:1",
+      "Rashi on Menachot 99a:4:2",
+      "Rashi on Menachot 99a:4:3",
+      "Rashi on Menachot 99a:4:4",
+      "Rashi on Menachot 99a:2:1"
+    ],
+    "generatedAt": "2026-09-11T10:45:29.805Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 99a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמשה בהדייהו הוה יתיב</strong> - באמצע ממש דליבעי שתי <span class=\"parenthesized\">(אמות)</span> הפרשות של שתי אמות ומחצה:"
+  },
+  "Tosafot on Menachot 99a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-11T10:44:42.744Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 99a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כמה משוך מן הכותל שתי אמות ומחצה</strong> - כדתניא ביומא פרק אמר להן הממונה <span class=\"parenthesized\">(דף לג:)</span> <span class=\"rashi-quotation\">ובקונטרס פירש</span> הטעם שיהיו שני הכהנים הנושאים שני הסדרין יכולין להלך זה בצד זה:"
+  }
+}
