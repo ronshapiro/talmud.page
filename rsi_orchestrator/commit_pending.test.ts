@@ -80,80 +80,84 @@ function fakeDeps(overrides: Partial<CommitPendingDeps> = {}): CommitPendingDeps
   return {
     gitStatusPorcelain: async () => " M precomputed/ai_additions/Zevachim 16a.json",
     findOpenPr: async () => undefined,
-    checkoutNewBranch: async () => {},
-    mergeLocalChangesOnto: async () => {},
+    createWorktree: async (_targetRef: string) => "/tmp/fake-worktree",
+    removeWorktree: async () => {},
+    mergeAndWriteFiles: async () => {},
     commitPendingState: async () => {},
     push: async () => {},
     openPr: async () => {},
-    checkout: async () => {},
     ...overrides,
   };
 }
 
 describe("commitAndPushPendingCandidates", () => {
   test("no-ops when nothing changed under the managed paths", async () => {
-    const checkoutNewBranch = jest.fn();
+    const createWorktree = jest.fn();
     const commitPendingState = jest.fn();
     await commitAndPushPendingCandidates("msg", fakeDeps({
       gitStatusPorcelain: async () => "",
-      checkoutNewBranch,
+      createWorktree,
       commitPendingState,
     }));
 
-    expect(checkoutNewBranch).not.toHaveBeenCalled();
+    expect(createWorktree).not.toHaveBeenCalled();
     expect(commitPendingState).not.toHaveBeenCalled();
   });
 
   test("opens a fresh branch+PR when none is open", async () => {
-    const checkoutNewBranch = jest.fn();
-    const mergeLocalChangesOnto = jest.fn();
+    const createWorktree = jest.fn(async (_targetRef: string) => "/tmp/fake-worktree");
+    const removeWorktree = jest.fn();
+    const mergeAndWriteFiles = jest.fn();
     const openPr = jest.fn();
     const commitPendingState = jest.fn();
     const push = jest.fn();
-    const checkout = jest.fn();
     await commitAndPushPendingCandidates("New candidates", fakeDeps({
       findOpenPr: async () => undefined,
-      checkoutNewBranch,
-      mergeLocalChangesOnto,
+      createWorktree,
+      removeWorktree,
+      mergeAndWriteFiles,
       commitPendingState,
       push,
       openPr,
-      checkout,
     }));
 
-    expect(checkoutNewBranch).toHaveBeenCalledWith("rsi-pending-candidates", "base");
-    expect(mergeLocalChangesOnto).not.toHaveBeenCalled();
-    expect(commitPendingState).toHaveBeenCalledWith("New candidates");
-    expect(push).toHaveBeenCalledWith("rsi-pending-candidates");
+    expect(createWorktree).toHaveBeenCalledWith("base");
+    expect(mergeAndWriteFiles).toHaveBeenCalledWith(
+      "/tmp/fake-worktree", ["precomputed/ai_additions/Zevachim 16a.json"]);
+    expect(commitPendingState).toHaveBeenCalledWith("/tmp/fake-worktree", "New candidates");
+    expect(push).toHaveBeenCalledWith("/tmp/fake-worktree", "rsi-pending-candidates");
     expect(openPr).toHaveBeenCalledWith(
       "rsi-pending-candidates", expect.any(String), expect.any(String));
-    expect(checkout).toHaveBeenCalledWith("base");
+    expect(removeWorktree).toHaveBeenCalledWith("/tmp/fake-worktree");
   });
 
   test("merges onto the existing open PR's branch instead of opening a new one", async () => {
-    const checkoutNewBranch = jest.fn();
-    const mergeLocalChangesOnto = jest.fn();
+    const createWorktree = jest.fn(async (_targetRef: string) => "/tmp/fake-worktree");
+    const removeWorktree = jest.fn();
     const openPr = jest.fn();
     await commitAndPushPendingCandidates("More candidates", fakeDeps({
       findOpenPr: async () => ({number: 42}),
-      checkoutNewBranch,
-      mergeLocalChangesOnto,
+      createWorktree,
+      removeWorktree,
       openPr,
     }));
 
-    expect(mergeLocalChangesOnto).toHaveBeenCalledWith("rsi-pending-candidates");
-    expect(checkoutNewBranch).not.toHaveBeenCalled();
+    expect(createWorktree).toHaveBeenCalledWith("rsi-pending-candidates");
     expect(openPr).not.toHaveBeenCalled();
+    expect(removeWorktree).toHaveBeenCalledWith("/tmp/fake-worktree");
   });
 
-  test("always returns to base afterward, even when reusing an open PR", async () => {
-    const checkout = jest.fn();
-    await commitAndPushPendingCandidates("msg", fakeDeps({
-      findOpenPr: async () => ({number: 42}),
-      checkout,
-    }));
+  test("always removes worktree even if commit or push throws", async () => {
+    const removeWorktree = jest.fn();
+    await expect(commitAndPushPendingCandidates("msg", fakeDeps({
+      createWorktree: async (_targetRef: string) => "/tmp/fake-worktree",
+      removeWorktree,
+      commitPendingState: async () => {
+        throw new Error("commit failed");
+      },
+    }))).rejects.toThrow("commit failed");
 
-    expect(checkout).toHaveBeenCalledWith("base");
+    expect(removeWorktree).toHaveBeenCalledWith("/tmp/fake-worktree");
   });
 });
 
@@ -162,12 +166,12 @@ describe("makeRealCommitPendingDeps", () => {
     const deps = makeRealCommitPendingDeps({debug: true});
     expect(typeof deps.gitStatusPorcelain).toBe("function");
     expect(typeof deps.findOpenPr).toBe("function");
-    expect(typeof deps.checkoutNewBranch).toBe("function");
-    expect(typeof deps.mergeLocalChangesOnto).toBe("function");
+    expect(typeof deps.createWorktree).toBe("function");
+    expect(typeof deps.removeWorktree).toBe("function");
+    expect(typeof deps.mergeAndWriteFiles).toBe("function");
     expect(typeof deps.commitPendingState).toBe("function");
     expect(typeof deps.push).toBe("function");
     expect(typeof deps.openPr).toBe("function");
-    expect(typeof deps.checkout).toBe("function");
   });
 
   test("realCommitPendingDeps is initialized with default options", () => {
