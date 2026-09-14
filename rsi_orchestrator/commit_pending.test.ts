@@ -83,7 +83,7 @@ function fakeDeps(overrides: Partial<CommitPendingDeps> = {}): CommitPendingDeps
     createWorktree: async (_targetRef: string) => "/tmp/fake-worktree",
     removeWorktree: async () => {},
     mergeAndWriteFiles: async () => {},
-    commitPendingState: async () => {},
+    commitPendingState: async () => true,
     push: async () => {},
     openPr: async () => {},
     ...overrides,
@@ -109,7 +109,8 @@ describe("commitAndPushPendingCandidates", () => {
     const removeWorktree = jest.fn();
     const mergeAndWriteFiles = jest.fn();
     const openPr = jest.fn();
-    const commitPendingState = jest.fn();
+    const commitPendingState = jest.fn(
+      async (_worktreeDir: string, _message: string) => true);
     const push = jest.fn();
     await commitAndPushPendingCandidates("New candidates", fakeDeps({
       findOpenPr: async () => undefined,
@@ -143,6 +144,24 @@ describe("commitAndPushPendingCandidates", () => {
     }));
 
     expect(createWorktree).toHaveBeenCalledWith("rsi-pending-candidates");
+    expect(openPr).not.toHaveBeenCalled();
+    expect(removeWorktree).toHaveBeenCalledWith("/tmp/fake-worktree");
+  });
+
+  test("does not push or open PR if worktree has nothing to commit", async () => {
+    const createWorktree = jest.fn(async (_targetRef: string) => "/tmp/fake-worktree");
+    const removeWorktree = jest.fn();
+    const push = jest.fn();
+    const openPr = jest.fn();
+    await commitAndPushPendingCandidates("No changes", fakeDeps({
+      createWorktree,
+      removeWorktree,
+      commitPendingState: async () => false,
+      push,
+      openPr,
+    }));
+
+    expect(push).not.toHaveBeenCalled();
     expect(openPr).not.toHaveBeenCalled();
     expect(removeWorktree).toHaveBeenCalledWith("/tmp/fake-worktree");
   });

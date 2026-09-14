@@ -35,7 +35,7 @@ export interface CommitPendingDeps {
   createWorktree: (targetRef: string) => Promise<string>;
   removeWorktree: (worktreeDir: string) => Promise<void>;
   mergeAndWriteFiles: (worktreeDir: string, paths: string[]) => Promise<void>;
-  commitPendingState: (worktreeDir: string, message: string) => Promise<void>;
+  commitPendingState: (worktreeDir: string, message: string) => Promise<boolean>;
   push: (worktreeDir: string, branch: string) => Promise<void>;
   openPr: (branch: string, title: string, body: string) => Promise<void>;
 }
@@ -91,17 +91,19 @@ export async function commitAndPushPendingCandidates(
   try {
     const paths = parseStatusPaths(status);
     await deps.mergeAndWriteFiles(worktreeDir, paths);
-    await deps.commitPendingState(worktreeDir, message);
-    await deps.push(worktreeDir, BRANCH);
+    const committed = await deps.commitPendingState(worktreeDir, message);
+    if (committed) {
+      await deps.push(worktreeDir, BRANCH);
 
-    if (!openPr) {
-      await deps.openPr(
-        BRANCH,
-        "RSI: new pending translation candidates",
-        "Automated batch of newly-generated `status: \"pending\"` translation candidates. Review "
-        + "them on their live page (once deployed) with `?rsiReviewKey=<secret>` — this PR itself "
-        + "isn't the review surface, just what makes the candidates visible at all.",
-      );
+      if (!openPr) {
+        await deps.openPr(
+          BRANCH,
+          "RSI: new pending translation candidates",
+          "Automated batch of newly-generated `status: \"pending\"` translation candidates. Review "
+          + "them on their live page (once deployed) with `?rsiReviewKey=<secret>` — this PR itself "
+          + "isn't the review surface, just what makes the candidates visible at all.",
+        );
+      }
     }
   } finally {
     await deps.removeWorktree(worktreeDir);
@@ -172,8 +174,18 @@ export function makeRealCommitPendingDeps(options?: {debug?: boolean}): CommitPe
     mergeAndWriteFiles: (worktreeDir, paths) => mergeAndWriteFilesViaCli(worktreeDir, paths),
     commitPendingState: async (worktreeDir, message) => {
       await runSubcommand("git", ["-C", worktreeDir, "add", ...MANAGED_PATHS], debug);
+      const {stdout: statusOut} = await runSubcommand(
+        "git", ["-C", worktreeDir, "status", "--porcelain", "--", ...MANAGED_PATHS], debug);
+      if (!statusOut.trim()) {
+        if (debug) {
+          // eslint-disable-next-line no-console
+          console.log("  [commit] nothing to commit, working tree clean.");
+        }
+        return false;
+      }
       await runSubcommand(
         "git", ["-C", worktreeDir, "commit", "--no-verify", "-m", message], debug);
+      return true;
     },
     push: async (worktreeDir, branch) => {
       try {
