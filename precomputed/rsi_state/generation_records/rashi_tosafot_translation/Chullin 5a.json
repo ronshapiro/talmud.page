@@ -1,0 +1,406 @@
+{
+  "Rashi on Chullin 5a:10:1": {
+    "costUsd": 0.0686848,
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T17:45:08.442Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכם</strong> - אדם כי יקריב מכם קרבן וגבי נדר או נדבה כתיב דהא כי יקריב משמע כשירצו להקריב:"
+  },
+  "Rashi on Chullin 5a:10:2": {
+    "costUsd": 0.0588028,
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T17:45:20.780Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להוציא המומר</strong> - שאין מקבלין נדבתו:"
+  },
+  "Rashi on Chullin 5a:10:3": {
+    "costUsd": 0.170348,
+    "dependsOn": [
+      "Chullin 13b:1",
+      "Chullin 5a:10:1",
+      "Chullin 5a:10:2"
+    ],
+    "generatedAt": "2026-09-14T17:47:16.321Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכם בכם חילקתי</strong> - כלומר מדכתיב האי מיעוטא בישראל ולא באומות דכתיב איש איש מבית ישראל אשר יקריב קרבן לכל נדריכם וגו' בפרשת מומין <span class=\"parenthesized\">(ויקרא כב)</span> ותניא לקמן בפירקין <span class=\"parenthesized\">(חולין דף יג:)</span> איש מה תלמוד לומר איש איש לרבות העובדי כוכבים שנודרים נדרים ונדבות כישראל וגבי דידהו לא כתיב מיעוטא דלכתוב מן האדם כי יקריב קרבן דמשמע ולא כל האדם שמע מינה בכם חלקתי שכשרין מביאין ולא המומרין ולא באומות שכולן מתנדבין מקבלין מהם:"
+  },
+  "Rashi on Chullin 5a:10:4": {
+    "costUsd": 0.1775638,
+    "dependsOn": [
+      "Chullin 5a:10",
+      "Rashi on Chullin 5a:10:3",
+      "Rashi on Chullin 5a:10:5"
+    ],
+    "generatedAt": "2026-09-14T17:48:54.734Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5a:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עם הדומה לבהמה</strong> - שאין מקיימין את המצות: מן דכתיב גבי בהמה למעוטי רובע ונרבע הכי דריש ליה בבבא קמא <span class=\"parenthesized\">(דף מ:)</span> ובבכורות <span class=\"parenthesized\">(דף מא.)</span> ובתמורה <span class=\"parenthesized\">(דף כח.)</span>:"
+  },
+  "Rashi on Chullin 5a:10:5": {
+    "costUsd": 0.0923506,
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T17:49:31.047Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5a:10:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפושעי ישראל</strong> - משמע מזידין כדתניא במסכת יומא <span class=\"parenthesized\">(דף לו:)</span> פשעים אלו המרדים וכן הוא אומר מלך מואב פשע בי והיינו מומר ולקמן מפרש לה ואזיל:"
+  },
+  "Rashi on Chullin 5a:10:6": {
+    "costUsd": 0.0588998,
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T17:49:43.013Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5a:10:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומנסך את היין</strong> - לעבודת כוכבים:"
+  },
+  "Rashi on Chullin 5a:13:1": {
+    "costUsd": 0.1010932,
+    "dependsOn": [
+      "Chullin 5a:13"
+    ],
+    "generatedAt": "2026-09-14T17:54:52.220Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי מומר לדבר אחד קשיא מציעתא</strong> - דקתני מקבלין אסיפא:"
+  },
+  "Rashi on Chullin 5a:14:1": {
+    "costUsd": 0.102074,
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T17:55:29.283Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לאו ה\"ק</strong> - מקבלין קרבנות מפושעי ישראל במומר לדבר אחד חוץ מן המומר לנסך את היין ולחלל שבתות דהני חמירי אלמא מומר לעבודת כוכבים כמומר לכל התורה כולה דמי. האי תנא חמירא ליה שבת כעבודת כוכבים דהעובד עבודת כוכבים כופר בהקב\"ה והמחלל שבת כופר במעשיו ומעיד שקר שלא שבת הקב\"ה במעשה בראשית:"
+  },
+  "Rashi on Chullin 5a:15:1": {
+    "costUsd": 0.0840496,
+    "dependsOn": [
+      "Chullin 5a:14",
+      "Chullin 5a:15"
+    ],
+    "generatedAt": "2026-09-14T17:55:54.252Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא מהכא נפקא מהתם נפקא</strong> - דאין מקבלין קרבן מן המומרין:"
+  },
+  "Rashi on Chullin 5a:1:1": {
+    "costUsd": 0.09888920000000001,
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T17:25:00.579Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא הוה מפליג נפשיה מיניה</strong> - לא היה יהושפט נזהר ונבדל ממנו משום חשד כלל אלמא אע\"ג דמומר לעבודת כוכבים היה לא הוי מומר לכל התורה כולה:"
+  },
+  "Rashi on Chullin 5a:1:2": {
+    "costUsd": 0.13923800000000003,
+    "dependsOn": [
+      "Chullin 5a:2",
+      "Rashi on Chullin 5a:2:1",
+      "Chullin 5a:1",
+      "Rashi on Chullin 5a:1:1",
+      "Rashi on Chullin 5a:1:3"
+    ],
+    "generatedAt": "2026-09-14T17:25:37.222Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כעמי כעמך</strong> - דמשמע הרי אתה כמותינו דסומכין עלייהו:"
+  },
+  "Rashi on Chullin 5a:1:3": {
+    "costUsd": 0.06867680000000001,
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T17:27:26.769Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כסוסי כסוסיך ה\"נ</strong> - דלענין איסור והיתר קאמר אלא על כרחך לענין המלחמה קאמר ליה:"
+  },
+  "Rashi on Chullin 5a:2:1": {
+    "costUsd": 0.08772139999999999,
+    "dependsOn": [
+      "Chullin 5a:6"
+    ],
+    "generatedAt": "2026-09-14T17:27:50.811Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בגורן</strong> - כי גורן היו יושבים בחיבה ובריעות ובאגודה א' כסנהדרין שאין חושדין זה את זה:"
+  },
+  "Rashi on Chullin 5a:2:2": {
+    "costUsd": 0.09215079999999999,
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T17:28:23.009Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיהו רואין זה את זה</strong> - להיות שומעין איש את חבירו ומתווכחין זה עם זה עד שתצא הוראה כהלכה שאילו היו יושבין כשורה שלא בעגולה אין בני ראש השורה רואין בני סוף שורתו וכעגולה שלימה לא היו יושבין כדי שיהא מקום לצאת ולבא:"
+  },
+  "Rashi on Chullin 5a:3:1": {
+    "costUsd": 0.0683064,
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T17:28:50.808Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מסייע ליה</strong> - לרב ענן:"
+  },
+  "Rashi on Chullin 5a:3:2": {
+    "costUsd": 0.09274460000000001,
+    "dependsOn": [
+      "Chullin 5a:3"
+    ],
+    "generatedAt": "2026-09-14T17:29:17.548Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על פי הדבור שאני</strong> - שהקב\"ה התירו לפי שעה דכתיב <span class=\"parenthesized\">(מלכים א יז)</span> ואת העורבים צויתי שם לכלכלך:"
+  },
+  "Rashi on Chullin 5a:4:1": {
+    "costUsd": 0.08456880000000001,
+    "dependsOn": [
+      "Chullin 5a:4"
+    ],
+    "generatedAt": "2026-09-14T17:31:22.366Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואתרמי מילתא כו'</strong> - בתמיהה:"
+  },
+  "Rashi on Chullin 5a:5:1": {
+    "costUsd": 0.1016378,
+    "dependsOn": [
+      "Chullin 5a:5",
+      "Rashi on Chullin 5a:5:2"
+    ],
+    "generatedAt": "2026-09-14T17:32:00.049Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודלמא על שם מקומן</strong> - שהיו מצור עורב:"
+  },
+  "Rashi on Chullin 5a:5:2": {
+    "costUsd": 0.27315880000000003,
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T17:34:19.206Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי לא כתיב</strong> - שאדם נקרא על שם מקומו ואפילו יחיד ואף ע\"פ שאין מדבר בכל אנשי המקום כגון פלשתים גבעונים אלא באיש אחד כדכתיב נערה קטנה:"
+  },
+  "Rashi on Chullin 5a:5:3": {
+    "costUsd": 0.099845,
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T17:35:00.364Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקשיא לן קרי לה נערה</strong> - דהביאה ב' שערות וקרי לה קטנה דמשמע שלא הביאה שתי שערות:"
+  },
+  "Rashi on Chullin 5a:5:4": {
+    "costUsd": 0.1476248,
+    "dependsOn": [
+      "Chullin 5a:5"
+    ],
+    "generatedAt": "2026-09-14T17:36:20.774Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5a:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וא\"ר פדת</strong> - האי נערה לאו נערה ממש אלא על שם מקומה דמן נעורן. וה\"נ אע\"ג דלאו בכל בני המקום קאמר שהרי ודאי לכולן לא גילה שהרי נחבא היה מ\"מ איכא למימר דתרי גברי הוו וקראן על שם מקומן ואין מזכיר שמם:"
+  },
+  "Rashi on Chullin 5a:5:5": {
+    "costUsd": 0.1009932,
+    "dependsOn": [
+      "Chullin 5a:5"
+    ],
+    "generatedAt": "2026-09-14T17:36:58.950Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5a:5:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עורביים מבעי ליה</strong> - דלא אתי למטעי בעורבים ממש:"
+  },
+  "Rashi on Chullin 5a:6:1": {
+    "costUsd": 0.125485,
+    "dependsOn": [
+      "Chullin 5a:9",
+      "Chullin 5a:7",
+      "Chullin 5a:8",
+      "Chullin 5a:6"
+    ],
+    "generatedAt": "2026-09-14T17:42:57.883Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ישראל מעליא הוא</strong> - דאנוס הוא:"
+  },
+  "Rashi on Chullin 5a:7:1": {
+    "costUsd": 0.0689168,
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T17:43:20.087Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי נימא מומר לדבר אחד</strong> - לאחד מכל המצות לאשמועינן דלא הוה מומר לכל התורה כולה:"
+  },
+  "Rashi on Chullin 5a:8:1": {
+    "costUsd": 0.08775480000000001,
+    "dependsOn": [
+      "Chullin 5a:8"
+    ],
+    "generatedAt": "2026-09-14T17:43:56.598Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שכל הכופר בה כמודה בכל התורה</strong> - כדכתיב <span class=\"parenthesized\">(במדבר טו)</span> וכי תשגו ולא תעשו את כל המצות האלה וגו' וילפינן בהוריות <span class=\"parenthesized\">(דף ח.)</span> דבעבודת כוכבים מיירי:"
+  },
+  "Rashi on Chullin 5a:9:1": {
+    "costUsd": 0.09924140000000001,
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T17:44:42.896Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מומר לאותו דבר</strong> - לשחיטה ולתיאבון ואיצטריך לאשמועינן דלא תימא כיון דדש ביה כהיתירא דמי ליה אלא ודאי כאיסורא דמי ליה ולתיאבון הוא דעבר עליה וכי מזמנינן ליה סכין לא שביק היתירא ואכיל איסורא:"
+  },
+  "Tosafot on Chullin 5a:10:1": {
+    "costUsd": 0.37186820000000004,
+    "dependsOn": [
+      "Sukkah 30a:1",
+      "Bava Kamma 67b:1",
+      "Bava Kamma 67b:2"
+    ],
+    "generatedAt": "2026-09-14T17:53:26.909Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 5a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכם ולא כולכם להוציא את המומר</strong> - תימה דהא איצטריך לכדדרשינן בריש לולב הגזול <span class=\"parenthesized\">(סוכה דף ל.)</span> אי לפני יאוש אדם כי יקריב מכם אמר רחמנא והאי לאו דידיה הוא וי\"ל דהתם לאו משום דתיפוק לן מהאי קרא גזול לפני יאוש דהאי מביתו נפקא כדאמרינן במרובה <span class=\"parenthesized\">(ב\"ק דף סז:)</span> קרבנו ולא הגזול אימת אילימא לפני יאוש ל\"ל קרא כלומר וכי יכול להקדיש ביתו אמר רחמנא ולא מייתי התם קרא דכי יקריב אלא לומר דקרבן אמר רחמנא והאי לאו קרבן הוא שאין בידו להקדישו לפני יאוש ועוד י\"ל דתרתי שמעינן ממכם ולגזילה מקודשת איצטריך ומביתו לא נפקא אלא שלא עלתה לשם חובה:"
+  },
+  "Tosafot on Chullin 5a:10:2": {
+    "costUsd": 0.155494,
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T17:54:03.860Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 5a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדי שיחזרו בהם בתשובה</strong> - לאו טעמא דקרא קא דריש אלא נותן טעם לדבר מדרבינן מהא מומר לדבר אחד טפי ממומר לכל התורה כולה ולא מוקמינן קרא במילתא אחריתי וקאמר דמומר לדבר אחד בקל יחזור בתשובה ולכך מקבלין מהם כדי שיחזרו:"
+  },
+  "Tosafot on Chullin 5a:3:1": {
+    "costUsd": 0.1566768,
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T17:30:57.361Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 5a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על פי הדבור שאני</strong> - וא\"ת ולמאי דס\"ד דלא הוי ע\"פ הדבור תקשי דהא אמר רב בשר שנתעלם מן העין אסור לקמן <span class=\"parenthesized\">(חולין דף צה.)</span> ויש לומר דזה היה יודע שהיה סומך ע\"פ הדבור דלאו משל עובד כוכבים קא מייתי אבל לא ס\"ד שבא הדבור להתיר האיסור שחיטת טבחים דאחאב:"
+  },
+  "Tosafot on Chullin 5a:5:1": {
+    "costUsd": 0.09594839999999999,
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T17:38:53.787Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 5a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קרי לה נערה וקרי לה קטנה</strong> - בפרק בתרא דסוטה <span class=\"parenthesized\">(דף מו:)</span> דריש נערים שהיו מנוערים מן המצות והכא לא שייך למדרש הכי:"
+  },
+  "Tosafot on Chullin 5a:5:2": {
+    "costUsd": 0.1288956,
+    "dependsOn": [
+      "Chullin 5a:5"
+    ],
+    "generatedAt": "2026-09-14T17:40:39.571Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 5a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמן נעורן</strong> - שם מקום דכתיב <span class=\"parenthesized\">(בד\"ה א ז)</span> למזרח נערן ולמערב גזר:"
+  },
+  "Tosafot on Chullin 5a:5:3": {
+    "costUsd": 0.1505126,
+    "dependsOn": [
+      "Chullin 5a:4",
+      "Rashi on Chullin 5a:4:1",
+      "Chullin 5a:5",
+      "Rashi on Chullin 5a:5:1",
+      "Rashi on Chullin 5a:5:2",
+      "Rashi on Chullin 5a:5:3"
+    ],
+    "generatedAt": "2026-09-14T17:41:54.595Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 5a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עורביים מבעי ליה</strong> - ואף על גב דכתיב עברים מצרים ולא כתיב עבריים מצריים התם ליכא למיטעי:"
+  }
+}
