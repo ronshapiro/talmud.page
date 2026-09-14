@@ -1,0 +1,261 @@
+{
+  "Rashi on Menachot 109b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T20:47:00.182Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 109b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נכנס עמי</strong> - לפני ולפנים:"
+  },
+  "Rashi on Menachot 109b:13:1": {
+    "dependsOn": [
+      "context_fetch_cli.ts"
+    ],
+    "generatedAt": "2026-09-14T20:48:15.507Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 109b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ליה</strong> - שמעי לחוניו בא ואלמדך סדר עבודה:"
+  },
+  "Rashi on Menachot 109b:13:2": {
+    "dependsOn": [
+      "Menachot 109b:13",
+      "Rashi on Menachot 109b:13:1",
+      "Rashi on Menachot 109b:13:3",
+      "Rashi on Menachot 109b:13:4",
+      "Jastrow on Menachot 109b:13:1",
+      "Jastrow on Menachot 109b:13:2",
+      "\nimport json\n# let",
+      "Menachot 87b:14"
+    ],
+    "generatedAt": "2026-09-14T20:52:11.540Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 109b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אונקלי</strong> - מלבוש של עור:"
+  },
+  "Rashi on Menachot 109b:13:3": {
+    "dependsOn": [
+      "Rashi on Menachot 109b:13:3",
+      "Menachot 109b:13",
+      "Rashi on Menachot 109b:13:1",
+      "Rashi on Menachot 109b:13:2",
+      "Rashi on Menachot 109b:13:4",
+      "Rashi on Menachot 109b:14:1",
+      "Rashi on Menachot 109b:14:2",
+      "Rashi on Menachot 109b:5:1",
+      "context_fetch_cli.ts",
+      "Jastrow on Menachot 109b:13:1",
+      "Jastrow on Menachot 109b:13:2",
+      "Jastrow on Menachot 109b:13:3",
+      "Jastrow on Menachot 109b:13:4"
+    ],
+    "generatedAt": "2026-09-14T20:55:15.157Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 109b:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צילצול</strong> - אזור:"
+  },
+  "Rashi on Menachot 109b:13:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T20:55:31.005Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 109b:13:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאהובתו</strong> - לאשתו:"
+  },
+  "Rashi on Menachot 109b:14:1": {
+    "dependsOn": [
+      "Menachot 109b:13",
+      "Menachot 109b:14",
+      "Menachot 109b:15",
+      "Rashi on Menachot 109b:14:1",
+      "Rashi on Menachot 109b:17:1",
+      "Rashi on Menachot 109b:18:1",
+      "Tosafot on Menachot 109b:13:1",
+      "Steinsaltz on Menachot 109b:14:1"
+    ],
+    "generatedAt": "2026-09-14T20:57:11.698Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 109b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זה שלא ירד לה</strong> - שמעי שלא ירד לה לגדולה כך נתקנא באחיו:"
+  },
+  "Rashi on Menachot 109b:14:2": {
+    "dependsOn": [
+      "Menachot 109b:14",
+      "Rashi on Menachot 109b:14:1",
+      "Rashi on Menachot 109b:14:2"
+    ],
+    "generatedAt": "2026-09-14T20:57:47.029Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 109b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היורד לה על אחת כמה וכמה</strong> - שאין מורידין אותו שלא יקלקל עצמו:"
+  },
+  "Rashi on Menachot 109b:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T20:58:09.531Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 109b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בא ואלמדך</strong> - חוניו היה חכם משמעי:"
+  },
+  "Rashi on Menachot 109b:17:1": {
+    "dependsOn": [
+      "Menachot 109b:17"
+    ],
+    "generatedAt": "2026-09-14T20:59:25.802Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 109b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שברח ממנה</strong> - שלא רצה לקבלה מתחילה:"
+  },
+  "Rashi on Menachot 109b:18:1": {
+    "dependsOn": [
+      "Menachot 109b:18",
+      "Rashi on Menachot 109b:18:1",
+      "Tosafot on Menachot 109b:18:1",
+      "Maharsha on Menachot 109b:18:1",
+      "Rashi on Menachot 109b:1:1",
+      "Rashi on Menachot 109b:5:1",
+      "Rashi on Menachot 109b:11:1",
+      "Rashi on Menachot 109b:13:1",
+      "Rashi on Menachot 109b:17:1",
+      "Rashi on Menachot 109b:21:1",
+      "Rashi on Menachot 109a:1:1",
+      "Rashi on Menachot 109a:2:1",
+      "Rashi on Menachot 109a:3:1"
+    ],
+    "generatedAt": "2026-09-14T21:00:58.916Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 109b:18:1"
+    ],
+    "sourceText": "כל האומר עולה [או] מנחה בתחילה קודם שיפריש קרבנו ואמר עלי עולה או מנחה אני מטיל עליו כו' משום דאין טוב לומר עלי שמא לא יקיים וכתיב <span class=\"parenthesized\">(דברים כ״ג:כ״ג)</span> וכי תחדל לנדור לשון אחר בתחילה כל האומר עלה אני כופתו ומניחו לפני ארי ועכשיו כל האומר לירד הימנה אני מטיל עליו קומקום של חמין בתחילה הייתי שונא את הרבנות וכל האומר לי עלה לגדולה וכו' ועכשיו שעליתי לגדולה וכו' רבי יהושע בן פרחיה נשיא היה במסכת חגיגה <span class=\"parenthesized\">(דף טז.)</span>:"
+  },
+  "Rashi on Menachot 109b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T20:44:24.519Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 109b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נעשה משרת</strong> - והא דאמרינן לעיל בשחיטה לא מיפסלא מוקי לה רב ששת בשוגג:"
+  },
+  "Rashi on Menachot 109b:21:1": {
+    "dependsOn": [
+      "Menachot 109b:21"
+    ],
+    "generatedAt": "2026-09-14T21:03:16.689Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 109b:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדברות שפת כנען</strong> - שפת ישראל היושבים בארץ כנען וסיפא דקרא נשבעים בשם ה' צבאות:"
+  },
+  "Rashi on Menachot 109b:5:1": {
+    "dependsOn": [
+      "Menachot 109b:5"
+    ],
+    "generatedAt": "2026-09-14T20:45:28.128Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 109b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הודה לעבודת ככובים</strong> - אמר לה אלי אתה:"
+  },
+  "Rashi on Menachot 109b:6:1": {
+    "dependsOn": [
+      "Menachot 109b:6",
+      "Rashi on Menachot 109b:6:1",
+      "Rashi on Menachot 109b:6:2"
+    ],
+    "generatedAt": "2026-09-14T20:45:54.366Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 109b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קמייתא</strong> - שגג בזריקה:"
+  },
+  "Rashi on Menachot 109b:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T20:46:41.990Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 109b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל שחיטה אימא מודה ליה לרב נחמן</strong> - ואפילו הזיד:"
+  },
+  "Tosafot on Menachot 109b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T20:47:31.061Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 109b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נזדמן לי זקן אחד לבוש לבנים</strong> - בירושלמי פריך והכתיב וכל אדם לא יהיה באהל מועד ואפי' מלאכים דכתיב ודמות פניהם פני אדם ומשני דשמא שכינה היתה:"
+  },
+  "Tosafot on Menachot 109b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T20:56:14.443Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 109b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חוניו בני ישמש תחתי</strong> - תימה הא דרשינן בת\"כ תחת אביו בזמן שהוא ממלא מקום אביו וזה לא היה יודע סדר עבודה דהא קאמר ליה בא ואלמדך סדר [עבודה] ויש לומר דביראת חטא היה ממלא מקום אבותיו ואם תאמר וכי לא ראה כהן גדול משמש מעולם שהיה לובש באונקלי וחגור בצילצול ועוד הא אינו נעשה כהן גדול עד שיעשה סגן ויש לומר דלא היה יודע ובא ליכנס בכהונה גדולה תחילה:"
+  },
+  "Tosafot on Menachot 109b:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T20:58:59.101Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 109b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והעלה עליו עולה לשם שמים</strong> - תימה הרי יש כאן איסור שחוטי חוץ ונראה דלבני נח היה מעלה <span class=\"parenthesized\">(לעובדי כוכבים)</span> הנודרים נדרים ונדבות:"
+  },
+  "Tosafot on Menachot 109b:18:1": {
+    "dependsOn": [
+      "Menachot 109b:18",
+      "Rashi on Menachot 109b:18:1",
+      "Zevachim 45b:8",
+      "Shevuot 12b:11",
+      "Zevachim 45b:1",
+      "Shevuot 12b:1"
+    ],
+    "generatedAt": "2026-09-14T21:02:41.858Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 109b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתחילה כל האומר עולה [או] מנחה</strong> - בתחלה קודם שיפריש קרבנו ואומר הרי עלי עולה ומנחה אני מטיל עליו כו' משום דאין טוב לומר עלי שמא לא יקיים וכתיב <span class=\"parenthesized\">(דברים כ״ג:כ״ג)</span> וכי תחדל לנדור וגו' <span class=\"rashi-quotation\">כך פירש הקונטרס</span> עוד <span class=\"rashi-quotation\">פירש בקונט'</span> פירוש אחר גרסינן בתחילה כל האומר עלה אני כופתו ומניחו לפני ארי עכשיו כל האומר לירד ממנה אני מטיל עליו קומקום של חמין בתחילה הייתי שונא הרבנות וכל האומר לי עלה לגדולה כו' ועכשיו שעליתי לגדולה רבי יהושע בן פרחיה נשיא היה במסכ' חגיגה <span class=\"parenthesized\">(דף טז.)</span> עד כאן לשונו ואותו לשון ראשון היה כתוב בספר ולעיל הוה ליה לאיתויי גבי הרי עלי עולה ורבינו קלונימוס אביו של רבי משולם הגיה כלשון שני בשעת פטירתו והסופר טעה בין עלה לעולה ושלשה דברים הגיה כמפי נבואה בשעת פטירתו זאת ועוד אחרת שהיה כתוב בספרים בפרק בית שמאי בזבחים <span class=\"parenthesized\">(דף מה:)</span> דברים שאין חייבין עליהם משום פיגול חייבין עליהם משום נותר וטמא חוץ מן הדם ונומי רבי שמעון מחייב בדבר שדרכו להיאכל פי' אמר רבי שמעון ועוד הגיה בשבועות <span class=\"parenthesized\">(דף יב:)</span> שהיה כתוב בספרים קרבנות ציבור סכין מושכתן למשהו ולא היו יודעין מהו ואמר דגרסינן למה שהן:"
+  }
+}
