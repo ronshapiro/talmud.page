@@ -1,5 +1,7 @@
 import {execFile} from "child_process";
 import {promisify} from "util";
+import {books} from "../books";
+import {splitOnBookName} from "../refs";
 
 const execFileAsync = promisify(execFile);
 const REPO = "ronshapiro/talmud.page";
@@ -15,10 +17,15 @@ const MANAGED_PATHS = [
 export interface CommitPendingDeps {
   gitStatusPorcelain: () => Promise<string>;
   currentBranch: () => Promise<string>;
-  findOpenPr: (branch: string) => Promise<{number: number} | undefined>;
+  findOpenPr: (branch: string) => Promise<{number: number; title?: string} | undefined>;
   commitPendingState: (message: string) => Promise<boolean>;
   push: () => Promise<void>;
-  openPr: (branch: string, title: string, body: string) => Promise<void>;
+  openPr: (branch: string, title: string, body: string) => Promise<number | undefined | void>;
+  updatePrTitle?: (prNumber: number, title: string) => Promise<void>;
+  addPrComment?: (prNumber: number, comment: string) => Promise<void>;
+  getCurrentHeadSha?: () => Promise<string>;
+  getDiffStats?: (fromRef: string, toRef: string) => Promise<{numstat: string; nameStatus: string}>;
+  getBranchChangedPaths?: (baseBranch: string, branch: string) => Promise<string[]>;
 }
 
 export function parseStatusPaths(statusOut: string): string[] {
@@ -51,6 +58,130 @@ export function mergeFileContent(
   return `${JSON.stringify({...remoteJson, ...localJson}, undefined, 2)}\n`;
 }
 
+export function extractPagesFromPaths(paths: string[]): string[] {
+  const pages = new Set<string>();
+  for (const p of paths) {
+    let candidate: string | undefined;
+    const aiMatch = p.match(/^precomputed\/ai_additions\/(.+)\.json$/);
+    if (aiMatch) {
+      [, candidate] = aiMatch;
+    } else {
+      const genMatch = p.match(/^precomputed\/rsi_state\/generation_records\/[^/]+\/(.+)\.json$/);
+      if (genMatch) {
+        [, candidate] = genMatch;
+      } else {
+        const logMatch = p.match(/^precomputed\/rsi_state\/context_usage_log\/[^/]+\/(.+)\.jsonl$/);
+        if (logMatch) {
+          [, candidate] = logMatch;
+        }
+      }
+    }
+    if (!candidate || !candidate.includes(" ")) continue;
+    const [bookName] = splitOnBookName(candidate);
+    if (books.byCanonicalName[bookName]) {
+      pages.add(candidate);
+    }
+  }
+  return Array.from(pages);
+}
+
+export function formatPrTitle(task: string, backend: string, pages: string[]): string {
+  const prefix = `${task} (${backend})`;
+  if (pages.length === 0) {
+    return prefix;
+  }
+  const pagesList = pages.join(", ");
+  if (pagesList.length > 150) {
+    const truncated = pages.slice(0, 5).join(", ");
+    return `${prefix}: ${truncated} (+${pages.length - 5} more)`;
+  }
+  return `${prefix}: ${pagesList}`;
+}
+
+export interface FileEditStat {
+  path: string;
+  mode: "add" | "delete" | "modify";
+  addedLines: number;
+  deletedLines: number;
+}
+
+export function parseDiffStats(numstatOut: string, nameStatusOut: string): FileEditStat[] {
+  const modeByPath = new Map<string, "add" | "delete" | "modify">();
+  for (const line of nameStatusOut.split("\n")) {
+    const trimmed = line.trim();
+    if (!trimmed) continue;
+    const parts = trimmed.split("\t");
+    const statusCode = parts[0].charAt(0).toUpperCase();
+    let mode: "add" | "delete" | "modify" = "modify";
+    if (statusCode === "A") mode = "add";
+    else if (statusCode === "D") mode = "delete";
+    else if (statusCode === "M" || statusCode === "R") mode = "modify";
+
+    let rawPath = parts[parts.length - 1].trim();
+    if (rawPath.startsWith("\"")) {
+      rawPath = JSON.parse(rawPath) as string;
+    }
+    modeByPath.set(rawPath, mode);
+  }
+
+  const stats: FileEditStat[] = [];
+  for (const line of numstatOut.split("\n")) {
+    const trimmed = line.trim();
+    if (!trimmed) continue;
+    const parts = trimmed.split("\t");
+    if (parts.length < 3) continue;
+    const addedRaw = parts[0].trim();
+    const deletedRaw = parts[1].trim();
+    let rawPath = parts.slice(2).join("\t").trim();
+    if (rawPath.startsWith("\"")) {
+      rawPath = JSON.parse(rawPath) as string;
+    }
+    const addedLines = addedRaw === "-" ? 0 : parseInt(addedRaw, 10) || 0;
+    const deletedLines = deletedRaw === "-" ? 0 : parseInt(deletedRaw, 10) || 0;
+    const mode = modeByPath.get(rawPath) ?? "modify";
+    stats.push({path: rawPath, mode, addedLines, deletedLines});
+  }
+
+  const seenPaths = new Set(stats.map(s => s.path));
+  for (const [p, mode] of modeByPath.entries()) {
+    if (!seenPaths.has(p)) {
+      stats.push({path: p, mode, addedLines: 0, deletedLines: 0});
+    }
+  }
+
+  stats.sort((a, b) => a.path.localeCompare(b.path));
+  return stats;
+}
+
+export function formatDiffStatsTable(stats: FileEditStat[]): string {
+  if (stats.length === 0) return "No file changes in this batch.";
+
+  const rows: string[] = [];
+  rows.push("### File Changes\n");
+  rows.push("| File | Mode | Added Lines | Deleted Lines |");
+  rows.push("| :--- | :---: | ---: | ---: |");
+
+  let totalAdded = 0;
+  let totalDeleted = 0;
+
+  for (const stat of stats) {
+    totalAdded += stat.addedLines;
+    totalDeleted += stat.deletedLines;
+    rows.push(`| \`${stat.path}\` | ${stat.mode} | +${stat.addedLines} | -${stat.deletedLines} |`);
+  }
+
+  rows.push(`| **Total** | | **+${totalAdded}** | **-${totalDeleted}** |`);
+
+  return rows.join("\n");
+}
+
+export interface CommitPendingOptions {
+  task?: string;
+  backend?: string;
+  pages?: string[];
+  message?: string;
+}
+
 /**
  * Commits + pushes any locally-modified files under the managed paths (status: "pending"
  * candidates a task type just wrote, plus its generation-record/context-usage audit trail)
@@ -60,9 +191,13 @@ export function mergeFileContent(
  * No-ops if nothing changed this run.
  */
 export async function commitAndPushPendingCandidates(
-  message: string,
+  optionsOrMessage: string | CommitPendingOptions,
   deps: CommitPendingDeps,
 ): Promise<void> {
+  const options: CommitPendingOptions = typeof optionsOrMessage === "string"
+    ? {message: optionsOrMessage}
+    : optionsOrMessage;
+
   const status = await deps.gitStatusPorcelain();
   if (!status.trim()) return;
 
@@ -73,20 +208,66 @@ export async function commitAndPushPendingCandidates(
       + "Run translation in a dedicated feature branch or worktree.");
   }
 
-  const committed = await deps.commitPendingState(message);
+  const runPages = extractPagesFromPaths(parseStatusPaths(status));
+  const task = options.task ?? "rashi_tosafot_translation";
+  const backend = options.backend ?? "claude";
+  const commitMessage = options.message ?? `${task} (${backend}): new pending translation candidates`;
+
+  const preCommitSha = deps.getCurrentHeadSha ? await deps.getCurrentHeadSha() : undefined;
+
+  const committed = await deps.commitPendingState(commitMessage);
   if (!committed) return;
 
   await deps.push();
 
+  const postCommitSha = deps.getCurrentHeadSha ? await deps.getCurrentHeadSha() : undefined;
+
+  let prPages = (options.pages && options.pages.length > 0) ? options.pages : runPages;
+  if (deps.getBranchChangedPaths) {
+    try {
+      const branchPaths = await deps.getBranchChangedPaths(BASE_BRANCH, branch);
+      const allPages = extractPagesFromPaths(branchPaths);
+      if (allPages.length > 0) {
+        prPages = allPages;
+      }
+    } catch {
+      // Keep prPages
+    }
+  }
+
+  const title = formatPrTitle(task, backend, prPages);
+
   const openPr = await deps.findOpenPr(branch);
+  let targetPrNumber: number | undefined;
+
   if (!openPr) {
-    await deps.openPr(
+    const prNumber = await deps.openPr(
       branch,
-      message,
+      title,
       "Automated batch of newly-generated `status: \"pending\"` translation candidates. Review "
       + "them on their live page (once deployed) with `?rsiReviewKey=<secret>` — this PR itself "
       + "isn't the review surface, just what makes the candidates visible at all.",
     );
+    if (typeof prNumber === "number") {
+      targetPrNumber = prNumber;
+    } else {
+      const newlyOpened = await deps.findOpenPr(branch);
+      targetPrNumber = newlyOpened?.number;
+    }
+  } else {
+    targetPrNumber = openPr.number;
+    if (openPr.title !== title && deps.updatePrTitle) {
+      await deps.updatePrTitle(openPr.number, title);
+    }
+  }
+
+  if (targetPrNumber && deps.getDiffStats && deps.addPrComment && preCommitSha && postCommitSha) {
+    const {numstat, nameStatus} = await deps.getDiffStats(preCommitSha, postCommitSha);
+    const stats = parseDiffStats(numstat, nameStatus);
+    if (stats.length > 0) {
+      const comment = formatDiffStatsTable(stats);
+      await deps.addPrComment(targetPrNumber, comment);
+    }
   }
 }
 
@@ -115,11 +296,11 @@ async function currentBranchViaCli(debug = false): Promise<string> {
 
 async function findOpenPrViaGh(
   branch: string, debug = false,
-): Promise<{number: number} | undefined> {
+): Promise<{number: number; title?: string} | undefined> {
   const {stdout} = await runSubcommand("gh", [
-    "pr", "list", "--repo", REPO, "--head", branch, "--state", "open", "--json", "number",
+    "pr", "list", "--repo", REPO, "--head", branch, "--state", "open", "--json", "number,title",
   ], debug);
-  const prs = JSON.parse(stdout) as Array<{number: number}>;
+  const prs = JSON.parse(stdout) as Array<{number: number; title: string}>;
   return prs[0];
 }
 
@@ -144,11 +325,52 @@ async function pushViaCli(debug = false): Promise<void> {
 
 async function openPrViaGh(
   branch: string, title: string, body: string, debug = false,
-): Promise<void> {
-  await runSubcommand("gh", [
+): Promise<number | undefined> {
+  const {stdout} = await runSubcommand("gh", [
     "pr", "create", "--repo", REPO, "--base", BASE_BRANCH, "--head", branch,
     "--title", title, "--body", body,
   ], debug);
+  const match = stdout.match(/\/pull\/(\d+)/);
+  return match ? parseInt(match[1], 10) : undefined;
+}
+
+async function updatePrTitleViaGh(
+  prNumber: number, title: string, debug = false,
+): Promise<void> {
+  await runSubcommand("gh", [
+    "pr", "edit", String(prNumber), "--repo", REPO, "--title", title,
+  ], debug);
+}
+
+async function addPrCommentViaGh(
+  prNumber: number, comment: string, debug = false,
+): Promise<void> {
+  await runSubcommand("gh", [
+    "pr", "comment", String(prNumber), "--repo", REPO, "--body", comment,
+  ], debug);
+}
+
+async function getCurrentHeadShaViaCli(debug = false): Promise<string> {
+  const {stdout} = await runSubcommand("git", ["rev-parse", "HEAD"], debug);
+  return stdout.trim();
+}
+
+async function getDiffStatsViaCli(
+  fromRef: string, toRef: string, debug = false,
+): Promise<{numstat: string; nameStatus: string}> {
+  const {stdout: numstat} = await runSubcommand(
+    "git", ["diff", "--numstat", fromRef, toRef, "--", ...MANAGED_PATHS], debug);
+  const {stdout: nameStatus} = await runSubcommand(
+    "git", ["diff", "--name-status", fromRef, toRef, "--", ...MANAGED_PATHS], debug);
+  return {numstat, nameStatus};
+}
+
+async function getBranchChangedPathsViaCli(
+  baseBranch: string, _branch: string, debug = false,
+): Promise<string[]> {
+  const {stdout} = await runSubcommand(
+    "git", ["diff", "--name-only", `origin/${baseBranch}...HEAD`, "--", ...MANAGED_PATHS], debug);
+  return stdout.split("\n").map(l => l.trim()).filter(Boolean);
 }
 
 export function makeRealCommitPendingDeps(options?: {debug?: boolean}): CommitPendingDeps {
@@ -160,6 +382,12 @@ export function makeRealCommitPendingDeps(options?: {debug?: boolean}): CommitPe
     commitPendingState: message => commitPendingStateViaCli(message, debug),
     push: () => pushViaCli(debug),
     openPr: (branch, title, body) => openPrViaGh(branch, title, body, debug),
+    updatePrTitle: (prNumber, title) => updatePrTitleViaGh(prNumber, title, debug),
+    addPrComment: (prNumber, comment) => addPrCommentViaGh(prNumber, comment, debug),
+    getCurrentHeadSha: () => getCurrentHeadShaViaCli(debug),
+    getDiffStats: (fromRef, toRef) => getDiffStatsViaCli(fromRef, toRef, debug),
+    getBranchChangedPaths: (baseBranch, branch) => getBranchChangedPathsViaCli(
+      baseBranch, branch, debug),
   };
 }
 

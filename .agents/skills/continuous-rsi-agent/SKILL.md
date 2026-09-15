@@ -34,5 +34,7 @@ When running from Antigravity:
 ## 3. Worktree Management & Parallel Runs
 
 - **Direct Commits & PRs**: The translation runner commits and pushes pending candidates directly within its active worktree to its own branch (`git push -u origin HEAD`) and creates/updates a PR for that branch.
+- **PR Title Format**: PR titles are formatted as `<task> (<backend>): <pages>` (e.g. `rashi_tosafot_translation (claude): Menachot 90a`), without any `RSI:` prefix. The title dynamically updates as additional pages are committed on the branch.
+- **File Change Statistics Comment**: On each commit and push, a markdown comment is automatically posted to the PR containing a rich table with per-file edit modes (`add`, `delete`, `modify`), line addition/deletion counts, and totals.
 - **Parallel Safety**: Multiple translation runs for different tractates can run concurrently in separate worktrees without collisions.
 - **Cleanup**: Worktrees persist while their PR is open and should be deleted externally only after the PR merges.

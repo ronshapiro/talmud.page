@@ -130,9 +130,11 @@ async function main(): Promise<void> {
           if (FLAGS.debug) {
             console.log("\nCommitting and pushing pending candidates...");
           }
-          await commitAndPushPendingCandidates(
-            `RSI: new pending translation candidates (${scopeLabel})`,
-            makeRealCommitPendingDeps({debug: FLAGS.debug}));
+          await commitAndPushPendingCandidates({
+            task: "rashi_tosafot_translation",
+            backend: FLAGS.backend ?? "claude",
+            message: `new pending translation candidates (${scopeLabel})`,
+          }, makeRealCommitPendingDeps({debug: FLAGS.debug}));
         }
         : undefined,
       durationMs: durationHours * 60 * 60 * 1000,
@@ -178,9 +180,11 @@ async function main(): Promise<void> {
       if (FLAGS.debug) {
         console.log("\nCommitting and pushing pending candidates...");
       }
-      await commitAndPushPendingCandidates(
-        `RSI: new pending translation candidates (${scopeLabel})`,
-        makeRealCommitPendingDeps({debug: FLAGS.debug}));
+      await commitAndPushPendingCandidates({
+        task: "rashi_tosafot_translation",
+        backend: FLAGS.backend ?? "claude",
+        message: `new pending translation candidates (${scopeLabel})`,
+      }, makeRealCommitPendingDeps({debug: FLAGS.debug}));
     }
   }
 }
