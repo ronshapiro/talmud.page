@@ -238,6 +238,7 @@ export function extractRequestedRefs(toolUses: ToolUseRecord[]): string[] {
     const input = use.input as {command?: string; CommandLine?: string} | undefined;
     const command = input?.command ?? input?.CommandLine;
     if (!command || !command.includes("context_fetch_cli")) continue;
+    if (/\bwikipedia\b/.test(command)) continue;
     const arrayMatch = command.match(/\[[^\]]*]/);
     if (arrayMatch) {
       try {
@@ -253,4 +254,54 @@ export function extractRequestedRefs(toolUses: ToolUseRecord[]): string[] {
     if (singleMatch) refs.add(singleMatch[1]);
   }
   return Array.from(refs);
+}
+
+export interface WikipediaResult {
+  title?: string;
+  description?: string;
+  extract?: string;
+  url?: string;
+  error?: string;
+}
+
+/**
+ * Fetches summary text from Wikipedia for a given term or topic (e.g. realia, plants, animals,
+ * historical figures, or French loanwords).
+ */
+export async function fetchWikipedia(
+  query: string,
+  lang = "en",
+): Promise<WikipediaResult> {
+  const cleanLang = /^[a-z]{2,3}$/.test(lang) ? lang : "en";
+  const titleSlug = encodeURIComponent(query.trim().replace(/\s+/g, "_"));
+  const url = `https://${cleanLang}.wikipedia.org/api/rest_v1/page/summary/${titleSlug}`;
+  try {
+    const res = await fetch(url, {
+      headers: {
+        "User-Agent": "TalmudPageTranslationBot/1.0 (https://talmud.page)",
+      },
+    });
+    if (!res.ok) {
+      if (res.status === 404) {
+        return {error: `Wikipedia article not found for "${query}" on ${cleanLang}.wikipedia.org`};
+      }
+      return {error: `Wikipedia API returned HTTP ${res.status}`};
+    }
+    /* eslint-disable camelcase */
+    const data = await res.json() as {
+      title?: string;
+      description?: string;
+      extract?: string;
+      content_urls?: {desktop?: {page?: string}};
+    };
+    /* eslint-enable camelcase */
+    return {
+      title: data.title,
+      description: data.description,
+      extract: data.extract,
+      url: data.content_urls?.desktop?.page,
+    };
+  } catch (e) {
+    return {error: `Failed to fetch Wikipedia: ${(e as Error).message}`};
+  }
 }

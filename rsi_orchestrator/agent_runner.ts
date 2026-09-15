@@ -153,25 +153,30 @@ export function getSubcommandFromToolUse(toolUse: ToolUseRecord): string | undef
   return input?.command ?? input?.CommandLine;
 }
 
+export function matchesWildcardPattern(command: string, pattern: string): boolean {
+  const regexStr = "^" + pattern
+    .split("*")
+    .map(segment => segment.replace(/[$()+.?[\\\]^{|}]/g, "\\$&"))
+    .join(".*") + "$";
+  return new RegExp(regexStr).test(command);
+}
+
 /**
  * Checks whether a command is allowed according to the allowedTools patterns.
- * Explicitly rejects any command targeting Sefaria or unapproved interpreters.
+ * Explicitly rejects any command targeting sefaria.org or starting with python.
  */
 export function isCommandAllowed(command: string, allowedTools?: string[]): boolean {
-  // External lookups to Sefaria are strictly forbidden regardless
-  if (/sefaria/i.test(command)) return false;
+  // External lookups to sefaria.org are strictly forbidden regardless
+  if (/sefaria\.org/i.test(command)) return false;
+  // Block any command starting with python
+  if (/(?:^|[&;|]\s*)(?:.*\/)?python/i.test(command.trim())) return false;
   if (!allowedTools || allowedTools.length === 0) return true;
 
   for (const toolPattern of allowedTools) {
     const bashMatch = toolPattern.match(/^Bash\((.*)\)$/);
     if (bashMatch) {
       const pattern = bashMatch[1].trim();
-      if (pattern.endsWith("*")) {
-        const prefix = pattern.slice(0, -1).trim();
-        if (command.startsWith(prefix)) return true;
-      } else if (command === pattern) {
-        return true;
-      }
+      if (matchesWildcardPattern(command, pattern)) return true;
     }
   }
   return false;
@@ -182,21 +187,49 @@ export interface ToolFilterShims {
   cleanup: () => void;
 }
 
+function findExecutableInPath(name: string, searchPath: string): string | undefined {
+  for (const dir of searchPath.split(path.delimiter)) {
+    if (!dir) continue;
+    const fullPath = path.join(dir, name);
+    try {
+      if (fs.existsSync(fullPath) && fs.statSync(fullPath).isFile()) {
+        return fullPath;
+      }
+    } catch {
+      // ignore
+    }
+  }
+  return undefined;
+}
+
 /**
- * Creates temporary executable shims prepended to PATH when running headless agy.
- * Blocks python, arbitrary node execution (allowing only context_fetch_cli), curl, and wget.
+ * Creates temporary executable shims prepended to PATH when running headless agents.
+ * Blocks anything starting with python, arbitrary node execution (allowing only context_fetch_cli),
+ * and blocks curl/wget targeting sefaria.org.
  */
-export function createAgyToolFilterShims(): ToolFilterShims {
-  const shimDir = fs.mkdtempSync(path.join(os.tmpdir(), "agy-tool-shims-"));
+export function createToolFilterShims(): ToolFilterShims {
+  const shimDir = fs.mkdtempSync(path.join(os.tmpdir(), "agent-tool-shims-"));
+  const originalPath = process.env.PATH ?? "";
   const realNode = process.execPath;
 
   const pythonShim = "#!/bin/sh\n"
-    + "echo \"Blocked: python execution is forbidden. External lookups (including Sefaria) are not allowed.\" >&2\n"
+    + "echo \"Blocked: python execution is forbidden. External lookups to sefaria.org and scripting are not allowed.\" >&2\n"
     + "exit 1\n";
-  const pythonBinaries = [
-    "python", "python3",
-    "python3.8", "python3.9", "python3.10", "python3.11", "python3.12", "python3.13", "python3.14",
-  ];
+
+  // Dynamically block anything in PATH that starts with python
+  const pythonBinaries = new Set(["python", "python3"]);
+  for (const dir of originalPath.split(path.delimiter)) {
+    try {
+      if (!fs.existsSync(dir)) continue;
+      for (const entry of fs.readdirSync(dir)) {
+        if (entry.startsWith("python")) {
+          pythonBinaries.add(entry);
+        }
+      }
+    } catch {
+      // Ignore inaccessible directories
+    }
+  }
   for (const bin of pythonBinaries) {
     fs.writeFileSync(path.join(shimDir, bin), pythonShim, {mode: 0o755});
   }
@@ -221,12 +254,39 @@ export function createAgyToolFilterShims(): ToolFilterShims {
     + `exec "${realNode}" "$@"\n`;
   fs.writeFileSync(path.join(shimDir, "node"), nodeShim, {mode: 0o755});
 
-  const netShim = "#!/bin/sh\n"
-    + "echo \"Blocked: external network requests are forbidden. Lookups of Sefaria or external websites are not allowed.\" >&2\n"
-    + "exit 1\n";
-  for (const bin of ["curl", "wget"]) {
-    fs.writeFileSync(path.join(shimDir, bin), netShim, {mode: 0o755});
-  }
+  const realCurl = findExecutableInPath("curl", originalPath);
+  const curlShim = realCurl
+    ? "#!/bin/sh\n"
+      + "for arg in \"$@\"; do\n"
+      + "  case \"$arg\" in\n"
+      + "    *sefaria.org*)\n"
+      + "      echo \"Blocked: lookups to sefaria.org are forbidden.\" >&2\n"
+      + "      exit 1\n"
+      + "      ;;\n"
+      + "  esac\n"
+      + "done\n"
+      + `exec "${realCurl}" "$@"\n`
+    : "#!/bin/sh\n"
+      + "echo \"Blocked: curl is not available.\" >&2\n"
+      + "exit 1\n";
+  fs.writeFileSync(path.join(shimDir, "curl"), curlShim, {mode: 0o755});
+
+  const realWget = findExecutableInPath("wget", originalPath);
+  const wgetShim = realWget
+    ? "#!/bin/sh\n"
+      + "for arg in \"$@\"; do\n"
+      + "  case \"$arg\" in\n"
+      + "    *sefaria.org*)\n"
+      + "      echo \"Blocked: lookups to sefaria.org are forbidden.\" >&2\n"
+      + "      exit 1\n"
+      + "      ;;\n"
+      + "  esac\n"
+      + "done\n"
+      + `exec "${realWget}" "$@"\n`
+    : "#!/bin/sh\n"
+      + "echo \"Blocked: wget is not available.\" >&2\n"
+      + "exit 1\n";
+  fs.writeFileSync(path.join(shimDir, "wget"), wgetShim, {mode: 0o755});
 
   return {
     shimDir,
@@ -239,6 +299,8 @@ export function createAgyToolFilterShims(): ToolFilterShims {
     },
   };
 }
+
+export const createAgyToolFilterShims = createToolFilterShims;
 
 export interface ExecStreamingOptions {
   cwd?: string;
@@ -316,7 +378,7 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
 
   let shims: ToolFilterShims | undefined;
   if (options.allowedTools && options.allowedTools.length > 0) {
-    shims = createAgyToolFilterShims();
+    shims = createToolFilterShims();
   }
 
   const env: NodeJS.ProcessEnv = shims
@@ -365,7 +427,7 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
                 }
                 childProcess?.kill("SIGKILL");
                 throw new AgentError(
-                  `Disallowed command attempted: "${cmd}". Python/Node scripts and external lookups (like Sefaria) are blocked.`,
+                  `Disallowed command attempted: "${cmd}". Python scripts and external lookups to sefaria.org are blocked.`,
                   undefined,
                   "agy",
                 );
@@ -484,6 +546,16 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
     console.log(`  [agent] Running claude${options.model ? ` (model: ${options.model})` : ""}...`);
   }
 
+  let shims: ToolFilterShims | undefined;
+  if (options.allowedTools && options.allowedTools.length > 0) {
+    shims = createToolFilterShims();
+  }
+
+  const env: NodeJS.ProcessEnv = shims
+    ? {...process.env, PATH: `${shims.shimDir}:${process.env.PATH ?? ""}`}
+    : process.env;
+
+  let childProcess: ChildProcess | undefined;
   let stdout: string;
   try {
     ({stdout} = await execFileWithStreaming(
@@ -497,8 +569,12 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
       ],
       {
         cwd: options.cwd,
+        env,
         timeout: options.timeoutMs,
         maxBuffer: 1024 * 1024 * 32,
+        onChild: (child) => {
+          childProcess = child;
+        },
         onStdoutLine: (line) => {
           let parsed: {type?: string};
           try {
@@ -510,13 +586,24 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
             for (const block of (parsed as unknown as ClaudeCliAssistantLine).message.content) {
               if (block.type === "tool_use" && block.name) {
                 const toolUse = {name: block.name, input: block.input};
-                options.onToolUse?.(toolUse);
-                if (options.debug) {
-                  const cmd = getSubcommandFromToolUse(toolUse);
-                  if (cmd) {
+                const cmd = getSubcommandFromToolUse(toolUse);
+                if (cmd) {
+                  if (options.allowedTools && !isCommandAllowed(cmd, options.allowedTools)) {
+                    if (options.debug) {
+                      console.log(`    [subcommand blocked] ${cmd}`);
+                    }
+                    childProcess?.kill("SIGKILL");
+                    throw new AgentError(
+                      `Disallowed command attempted: "${cmd}". Python scripts and external lookups to sefaria.org are blocked.`,
+                      undefined,
+                      "claude",
+                    );
+                  }
+                  if (options.debug) {
                     console.log(`    [subcommand] ${cmd}`);
                   }
                 }
+                options.onToolUse?.(toolUse);
               }
             }
           }
@@ -525,6 +612,8 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
     ));
   } catch (e) {
     throw asClaudeCliError(e) ?? e;
+  } finally {
+    shims?.cleanup();
   }
   const {toolUses, result} = parseClaudeStreamJsonLines(stdout);
   if (!result) {
@@ -533,11 +622,18 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
   if (result.is_error) {
     throw new AgentError(result.result, result.api_error_status, "claude");
   }
+  const filteredToolUses = options.allowedTools
+    ? toolUses.filter(t => {
+      const cmd = getSubcommandFromToolUse(t);
+      return !cmd || isCommandAllowed(cmd, options.allowedTools);
+    })
+    : toolUses;
+
   return {
     text: result.result,
     model: primaryClaudeModel(result.modelUsage),
     costUsd: result.total_cost_usd,
-    toolUses,
+    toolUses: filteredToolUses,
   };
 };
 

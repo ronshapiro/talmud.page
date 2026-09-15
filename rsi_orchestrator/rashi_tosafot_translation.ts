@@ -38,7 +38,10 @@ export const TASK_TYPE = "rashi_tosafot_translation";
 const PROMPT_VERSION = "v2";
 // The only tool this task type's headless calls may use — see the module doc above. Scoped to
 // this exact command so it can't fall back to arbitrary Bash use.
-const CONTEXT_FETCH_ALLOWED_TOOLS = ["Bash(npx ts-node rsi_orchestrator/context_fetch_cli.ts *)"];
+const CONTEXT_FETCH_ALLOWED_TOOLS = [
+  "Bash(npx ts-node rsi_orchestrator/context_fetch_cli.ts *)",
+  "Bash(curl *wikipedia.org*)",
+];
 const COMMENTATORS = ["Rashi", "Tosafot"] as const;
 type Commentator = typeof COMMENTATORS[number];
 
@@ -511,22 +514,22 @@ function generationPrompt(candidate: TranslationCandidate, priorFeedback?: strin
     formatPageSkeleton(skeleton),
     "",
     "If you need the actual text of something beyond what's given above — a neighboring segment,",
-    "another commentary on this segment, or a prior sugya — the only tool available to you is",
-    "context_fetch_cli:",
+    "another commentary on this segment, or a prior sugya — you can use context_fetch_cli:",
     "  npx ts-node rsi_orchestrator/context_fetch_cli.ts get-refs '[\"<ref>\", ...]'",
     "  npx ts-node rsi_orchestrator/context_fetch_cli.ts get-neighbors \"<segment ref>\" "
       + "[--before N] [--after N]",
     "  npx ts-node rsi_orchestrator/context_fetch_cli.ts get-prior-sugyot \"<any ref on this "
       + "page>\" [--count N]",
+    "  npx ts-node rsi_orchestrator/context_fetch_cli.ts wikipedia \"<topic>\" [--lang en|he]",
     "Use your own judgment about whether you need any of this — most comments don't need extra",
     "context beyond what's already above. Each call is capped in size, so ask for specific refs",
     "rather than trying to pull in everything at once.",
     "",
     "Rules on tools and external lookups:",
-    "- You must NOT use python, node, bash commands, curl, wget, or any other scripting/networking tools.",
-    "- You must NOT make any external web lookups, API queries, or searches (such as Sefaria or any website). You do not have internet access.",
-    "- The ONLY tool command you are permitted to run is context_fetch_cli (`npx ts-node rsi_orchestrator/context_fetch_cli.ts ...`). Any other command will be blocked and rejected.",
-    "- If context_fetch_cli does not provide what you need, do not seek it elsewhere — translate based on the provided text and your own knowledge.",
+    "- You must NOT use python, arbitrary node execution, or unapproved bash scripts.",
+    "- You must NOT make any lookups to Sefaria (sefaria.org). External lookups to sefaria.org are strictly forbidden and blocked.",
+    "- Wikipedia checks ARE permitted (via `npx ts-node rsi_orchestrator/context_fetch_cli.ts wikipedia ...` or curl to wikipedia.org) if needed for realia, botanical/zoological terms, historical figures, or French loanwords.",
+    "- If context_fetch_cli or Wikipedia does not provide what you need, do not seek it elsewhere — translate based on the provided text and your own knowledge.",
     "",
     "Tasks:",
     "1. Add punctuation to the Hebrew comment if it doesn't already have it (Rashi/Tosafot",
@@ -559,7 +562,7 @@ function critiquePrompt(candidate: TranslationCandidate, edit: Edit): string {
     "Does the proposed Hebrew preserve the exact wording (only punctuation/HTML changed, no",
     "words added, removed, or changed)? Is the English translation accurate to the Hebrew?",
     "",
-    "No external lookups or scripting (no python, node, curl, Sefaria, or web requests) are permitted.",
+    "No lookups to sefaria.org or unapproved scripts (no python or arbitrary node) are permitted. Wikipedia lookups are permitted.",
     "",
     'Respond with ONLY a JSON object: {"valid": boolean, "reason": string}. No other text.',
   ].join("\n");
