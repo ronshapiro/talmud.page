@@ -1,10 +1,13 @@
+import {execFileSync} from "child_process";
 import {
   AgentError,
   asAgyCliError,
   asClaudeCliError,
+  createAgyToolFilterShims,
   execFileWithStreaming,
   getAgentRunner,
   getSubcommandFromToolUse,
+  isCommandAllowed,
   parseAgyStreamJsonLines,
   parseClaudeStreamJsonLines,
   primaryClaudeModel,
@@ -315,5 +318,84 @@ describe("execFileWithStreaming", () => {
     );
     expect(stdout).toContain("line1\nline2");
     expect(lines).toEqual(["line1", "line2"]);
+  });
+});
+
+describe("isCommandAllowed", () => {
+  const allowed = ["Bash(npx ts-node rsi_orchestrator/context_fetch_cli.ts *)"];
+
+  test("allows context_fetch_cli commands", () => {
+    expect(isCommandAllowed(
+      'npx ts-node rsi_orchestrator/context_fetch_cli.ts get-neighbors "Menachot 108a:1" --before 2',
+      allowed,
+    )).toBe(true);
+
+    expect(isCommandAllowed(
+      'npx ts-node rsi_orchestrator/context_fetch_cli.ts get-refs \'["Menachot 107b:23"]\'',
+      allowed,
+    )).toBe(true);
+  });
+
+  test("blocks python commands", () => {
+    expect(isCommandAllowed("python3 -c 'import urllib.request'", allowed)).toBe(false);
+    expect(isCommandAllowed("/usr/bin/python3 -c 'print(1)'", allowed)).toBe(false);
+    expect(isCommandAllowed("python script.py", allowed)).toBe(false);
+  });
+
+  test("blocks arbitrary node commands", () => {
+    expect(isCommandAllowed("node -e 'const https = require(\"https\");'", allowed)).toBe(false);
+    expect(isCommandAllowed("node script.js", allowed)).toBe(false);
+  });
+
+  test("blocks any command mentioning Sefaria", () => {
+    expect(isCommandAllowed("curl https://www.sefaria.org/api/v2/raw/index", allowed)).toBe(false);
+    expect(isCommandAllowed("echo sefaria", allowed)).toBe(false);
+    expect(isCommandAllowed(
+      'npx ts-node rsi_orchestrator/context_fetch_cli.ts get-refs \'["sefaria"]\'',
+      allowed,
+    )).toBe(false);
+  });
+
+  test("allows any command when allowedTools is undefined or empty", () => {
+    expect(isCommandAllowed("node -e 'console.log(1)'", undefined)).toBe(true);
+    expect(isCommandAllowed("python3 script.py", [])).toBe(true);
+  });
+
+  test("still blocks Sefaria even if allowedTools is empty", () => {
+    expect(isCommandAllowed("curl https://www.sefaria.org", undefined)).toBe(false);
+  });
+});
+
+describe("createAgyToolFilterShims", () => {
+  test("creates executable shims that block python, node -e, and curl", () => {
+    const {shimDir, cleanup} = createAgyToolFilterShims();
+    try {
+      const env = {...process.env, PATH: `${shimDir}:${process.env.PATH ?? ""}`};
+
+      // Python is blocked
+      expect(() => {
+        execFileSync("python3", ["-c", "print(1)"], {env, stdio: "pipe"});
+      }).toThrow();
+
+      // Node -e is blocked
+      expect(() => {
+        execFileSync("node", ["-e", "console.log(1)"], {env, stdio: "pipe"});
+      }).toThrow();
+
+      // Curl is blocked
+      expect(() => {
+        execFileSync("curl", ["https://example.com"], {env, stdio: "pipe"});
+      }).toThrow();
+
+      // Node executing context_fetch_cli via npx ts-node is allowed through
+      const out = execFileSync(
+        "npx",
+        ["ts-node", "rsi_orchestrator/context_fetch_cli.ts", "--help"],
+        {env, encoding: "utf8", stdio: ["pipe", "pipe", "pipe"]},
+      );
+      expect(out).toContain("context_fetch_cli.ts");
+    } finally {
+      cleanup();
+    }
   });
 });

@@ -1,4 +1,7 @@
-import {execFile} from "child_process";
+import {ChildProcess, execFile} from "child_process";
+import * as fs from "fs";
+import * as os from "os";
+import * as path from "path";
 
 export type AgentBackend = "claude" | "agy";
 
@@ -150,11 +153,100 @@ export function getSubcommandFromToolUse(toolUse: ToolUseRecord): string | undef
   return input?.command ?? input?.CommandLine;
 }
 
+/**
+ * Checks whether a command is allowed according to the allowedTools patterns.
+ * Explicitly rejects any command targeting Sefaria or unapproved interpreters.
+ */
+export function isCommandAllowed(command: string, allowedTools?: string[]): boolean {
+  // External lookups to Sefaria are strictly forbidden regardless
+  if (/sefaria/i.test(command)) return false;
+  if (!allowedTools || allowedTools.length === 0) return true;
+
+  for (const toolPattern of allowedTools) {
+    const bashMatch = toolPattern.match(/^Bash\((.*)\)$/);
+    if (bashMatch) {
+      const pattern = bashMatch[1].trim();
+      if (pattern.endsWith("*")) {
+        const prefix = pattern.slice(0, -1).trim();
+        if (command.startsWith(prefix)) return true;
+      } else if (command === pattern) {
+        return true;
+      }
+    }
+  }
+  return false;
+}
+
+export interface ToolFilterShims {
+  shimDir: string;
+  cleanup: () => void;
+}
+
+/**
+ * Creates temporary executable shims prepended to PATH when running headless agy.
+ * Blocks python, arbitrary node execution (allowing only context_fetch_cli), curl, and wget.
+ */
+export function createAgyToolFilterShims(): ToolFilterShims {
+  const shimDir = fs.mkdtempSync(path.join(os.tmpdir(), "agy-tool-shims-"));
+  const realNode = process.execPath;
+
+  const pythonShim = "#!/bin/sh\n"
+    + "echo \"Blocked: python execution is forbidden. External lookups (including Sefaria) are not allowed.\" >&2\n"
+    + "exit 1\n";
+  const pythonBinaries = [
+    "python", "python3",
+    "python3.8", "python3.9", "python3.10", "python3.11", "python3.12", "python3.13", "python3.14",
+  ];
+  for (const bin of pythonBinaries) {
+    fs.writeFileSync(path.join(shimDir, bin), pythonShim, {mode: 0o755});
+  }
+
+  const nodeShim = "#!/bin/sh\n"
+    + "allowed=0\n"
+    + "for arg in \"$@\"; do\n"
+    + "  case \"$arg\" in\n"
+    + "    *context_fetch_cli*|*ts-node*|*npx*)\n"
+    + "      allowed=1\n"
+    + "      ;;\n"
+    + "    -e|--eval)\n"
+    + "      allowed=0\n"
+    + "      break\n"
+    + "      ;;\n"
+    + "  esac\n"
+    + "done\n"
+    + "if [ \"$allowed\" -eq 0 ]; then\n"
+    + "  echo \"Blocked: arbitrary node execution is forbidden. Only context_fetch_cli is permitted.\" >&2\n"
+    + "  exit 1\n"
+    + "fi\n"
+    + `exec "${realNode}" "$@"\n`;
+  fs.writeFileSync(path.join(shimDir, "node"), nodeShim, {mode: 0o755});
+
+  const netShim = "#!/bin/sh\n"
+    + "echo \"Blocked: external network requests are forbidden. Lookups of Sefaria or external websites are not allowed.\" >&2\n"
+    + "exit 1\n";
+  for (const bin of ["curl", "wget"]) {
+    fs.writeFileSync(path.join(shimDir, bin), netShim, {mode: 0o755});
+  }
+
+  return {
+    shimDir,
+    cleanup: () => {
+      try {
+        fs.rmSync(shimDir, {recursive: true, force: true});
+      } catch {
+        // Best-effort cleanup
+      }
+    },
+  };
+}
+
 export interface ExecStreamingOptions {
   cwd?: string;
+  env?: NodeJS.ProcessEnv;
   timeout?: number;
   maxBuffer?: number;
   onStdoutLine?: (line: string) => void;
+  onChild?: (child: ChildProcess) => void;
 }
 
 export function execFileWithStreaming(
@@ -166,6 +258,7 @@ export function execFileWithStreaming(
     let buffer = "";
     const child = execFile(file, args, {
       cwd: options.cwd,
+      env: options.env,
       timeout: options.timeout,
       maxBuffer: options.maxBuffer,
     }, (error, stdout, stderr) => {
@@ -182,6 +275,8 @@ export function execFileWithStreaming(
         resolve({stdout, stderr});
       }
     });
+
+    options.onChild?.(child);
 
     child.stdout?.on("data", (chunk: Buffer | string) => {
       if (!options.onStdoutLine) return;
@@ -219,13 +314,27 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
     console.log(`  [agent] Running agy${options.model ? ` (model: ${options.model})` : ""}...`);
   }
 
+  let shims: ToolFilterShims | undefined;
+  if (options.allowedTools && options.allowedTools.length > 0) {
+    shims = createAgyToolFilterShims();
+  }
+
+  const env: NodeJS.ProcessEnv = shims
+    ? {...process.env, PATH: `${shims.shimDir}:${process.env.PATH ?? ""}`}
+    : process.env;
+
   const seenStepIndices = new Set<number>();
+  let childProcess: ChildProcess | undefined;
   let stdout: string;
   try {
     ({stdout} = await execFileWithStreaming("agy", args, {
       cwd: options.cwd,
+      env,
       timeout: options.timeoutMs,
       maxBuffer: 1024 * 1024 * 32,
+      onChild: (child) => {
+        childProcess = child;
+      },
       onStdoutLine: (line) => {
         let parsed: AgyStreamLine;
         try {
@@ -248,19 +357,32 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
                 : {}),
             };
             const toolUse = {name: toolName, input};
-            options.onToolUse?.(toolUse);
-            if (options.debug) {
-              const cmd = getSubcommandFromToolUse(toolUse);
-              if (cmd) {
+            const cmd = getSubcommandFromToolUse(toolUse);
+            if (cmd) {
+              if (options.allowedTools && !isCommandAllowed(cmd, options.allowedTools)) {
+                if (options.debug) {
+                  console.log(`    [subcommand blocked] ${cmd}`);
+                }
+                childProcess?.kill("SIGKILL");
+                throw new AgentError(
+                  `Disallowed command attempted: "${cmd}". Python/Node scripts and external lookups (like Sefaria) are blocked.`,
+                  undefined,
+                  "agy",
+                );
+              }
+              if (options.debug) {
                 console.log(`    [subcommand] ${cmd}`);
               }
             }
+            options.onToolUse?.(toolUse);
           }
         }
       },
     }));
   } catch (e) {
     throw asAgyCliError(e) ?? e;
+  } finally {
+    shims?.cleanup();
   }
 
   const {toolUses, result} = parseAgyStreamJsonLines(stdout);
@@ -271,11 +393,18 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
     throw new AgentError(result.error || "Agy returned an error", undefined, "agy");
   }
 
+  const filteredToolUses = options.allowedTools
+    ? toolUses.filter(t => {
+      const cmd = getSubcommandFromToolUse(t);
+      return !cmd || isCommandAllowed(cmd, options.allowedTools);
+    })
+    : toolUses;
+
   return {
     text: result.response ?? "",
     model: options.model,
     costUsd: undefined,
-    toolUses,
+    toolUses: filteredToolUses,
     durationSeconds: result.duration_seconds,
   };
 };
