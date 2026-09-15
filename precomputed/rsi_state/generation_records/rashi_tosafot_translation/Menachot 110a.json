@@ -1,0 +1,355 @@
+{
+  "Rashi on Menachot 110a:11:1": {
+    "dependsOn": [
+      "Menachot 110a:11",
+      "Rashi on Menachot 110a:13:1",
+      "Rashi on Menachot 110a:15:1"
+    ],
+    "generatedAt": "2026-09-14T21:09:09.372Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 110a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי דכתיב זאת התורה</strong> - ולא כתיב בה חוקה:"
+  },
+  "Rashi on Menachot 110a:12:1": {
+    "dependsOn": [
+      "Menachot 110a:12",
+      "Rashi on Menachot 110a:12:1",
+      "Rashi on Menachot 110a:12:2"
+    ],
+    "generatedAt": "2026-09-14T21:09:34.670Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 110a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עולה ומנחה מיבעי ליה</strong> - דליהוי משמע זאת התורה היא עולה ומנחה כו':"
+  },
+  "Rashi on Menachot 110a:12:2": {
+    "dependsOn": [
+      "Menachot 110a:12",
+      "Rashi on Menachot 110a:12:1",
+      "Rashi on Menachot 110a:12:2",
+      "Rashi on Menachot 110a:11:1",
+      "Rashi on Menachot 110a:15:1",
+      "Rashi on Menachot 110a:15:2",
+      "Rashi on Menachot 110a:16:1",
+      "Rashi on Menachot 110a:20:1",
+      "Rashi on Menachot 109b:1:1",
+      "Rashi on Menachot 109b:2:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Menachot 109b:1:2",
+      "Rashi on Menachot 110a:4:1",
+      "Rashi on Menachot 110a:4:2",
+      "context_fetch_cli.ts"
+    ],
+    "generatedAt": "2026-09-14T21:10:49.604Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 110a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין צריך לא עולה וכו'</strong> - דהכי משמע זאת התורה לעולה כלומר במקום העולה למנחה בשביל המנחה כגון לכם בשבילכם כלומר התלמוד תורה מכפר על עונותינו:"
+  },
+  "Rashi on Menachot 110a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T21:11:17.077Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 110a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתורת חטאת</strong> - כגון סדר קדשים דמיירי בהלכות עבודה:"
+  },
+  "Rashi on Menachot 110a:15:1": {
+    "dependsOn": [
+      "Menachot 110a:15",
+      "Rashi on Menachot 110a:15:1",
+      "Rashi on Menachot 110a:15:2",
+      "Menachot 110a:16",
+      "Rashi on Menachot 110a:16:1",
+      "Rashi on Menachot 110a:16:2",
+      "Rashi on Menachot 110a:16:3"
+    ],
+    "generatedAt": "2026-09-14T21:11:53.929Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 110a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנת העובד</strong> - עבודת קרבנות ומביאו למזבח מתוקה שנתו שהוא ישן ולא ירא:"
+  },
+  "Rashi on Menachot 110a:15:2": {
+    "dependsOn": [
+      "Menachot 110a:15",
+      "Rashi on Menachot 110a:15:1",
+      "Rashi on Menachot 110a:15:2"
+    ],
+    "generatedAt": "2026-09-14T21:12:27.362Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 110a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם מעט ואם הרבה יאכל</strong> - מתן שכרו:"
+  },
+  "Rashi on Menachot 110a:16:1": {
+    "dependsOn": [
+      "Menachot 110a:15",
+      "Menachot 110a:16",
+      "Rashi on Menachot 110a:16:1",
+      "Rashi on Menachot 110a:16:2",
+      "Rashi on Menachot 110a:16:3"
+    ],
+    "generatedAt": "2026-09-14T21:12:57.045Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 110a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ברבות הטובה</strong> - קרבנות:"
+  },
+  "Rashi on Menachot 110a:16:2": {
+    "dependsOn": [
+      "Menachot 110a:16",
+      "Rashi on Menachot 110a:16:1",
+      "Rashi on Menachot 110a:16:3",
+      "Rashi on Menachot 110a:15:1",
+      "Rashi on Menachot 110a:15:2",
+      "Rashi on Menachot 110a:4:1",
+      "Rashi on Menachot 110a:4:2",
+      "Rashi on Menachot 110a:12:1",
+      "Rashi on Menachot 110a:13:1"
+    ],
+    "generatedAt": "2026-09-14T21:13:56.949Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 110a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבו אוכליה</strong> - כהנים:"
+  },
+  "Rashi on Menachot 110a:16:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T21:14:31.786Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 110a:16:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומה כשרון לבעליו</strong> - להקדוש ברוך הוא כי אם ראות עיניו שזה מתכוין לטובה:"
+  },
+  "Rashi on Menachot 110a:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T21:14:59.380Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 110a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לבעל הדין</strong> - לאומרים רשויות הרבה הן והדבר מוכיח שזה ששמו כך ציום להקריב לו מנחה [וזה] ששמו כך ציום להקריב לו פרים וזה אילים לכך נאמר בכולם ריח ניחוח לה':"
+  },
+  "Rashi on Menachot 110a:18:1": {
+    "dependsOn": [
+      "Rashi on Menachot 110a:18:1",
+      "Menachot 110a:18",
+      "Rashi on Menachot 110a:14:1",
+      "Rashi on Menachot 110a:15:1"
+    ],
+    "generatedAt": "2026-09-14T21:15:47.006Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 110a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחד המרבה</strong> - להביא קרבנות:"
+  },
+  "Rashi on Menachot 110a:20:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T21:16:11.136Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 110a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדי שתאמר אעשה רצונו</strong> - להקריב לו קרבן ויעשה רצוני לפי שהוא צריך לכך ואשחדנו:"
+  },
+  "Rashi on Menachot 110a:20:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T21:16:32.889Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 110a:20:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא לרצוני אתם זובחים</strong> - כלומר לא להנאותי שאיני רוצה להטריח אתכם לעשות על כרחכם:"
+  },
+  "Rashi on Menachot 110a:20:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T21:16:55.949Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 110a:20:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לרצונכם</strong> - לצורך עצמכם לקיים מצוותי שתהא כפרה לכם בכך:"
+  },
+  "Rashi on Menachot 110a:21:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T21:17:21.313Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 110a:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לרצונכם זבוחו</strong> - שתהא כוונתכם לשחוט פרט למתעסק בסכין לחתוך דבר אחר ושחט בהמת קדשים שפסולה:"
+  },
+  "Rashi on Menachot 110a:22:1": {
+    "dependsOn": [
+      "Menachot 110a:22",
+      "Rashi on Chullin 31b:1:1",
+      "Rashi on Chullin 13a:1:1",
+      "Rashi on Sanhedrin 62b:14:1",
+      "Chullin 13a:2"
+    ],
+    "generatedAt": "2026-09-14T21:17:58.119Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 110a:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנין למתעסק</strong> - בדבר אחר ושחט בהמת קדשים שהוא פסול:"
+  },
+  "Rashi on Menachot 110a:23:1": {
+    "dependsOn": [
+      "Menachot 110a:22",
+      "Menachot 110a:23",
+      "Rashi on Menachot 110a:23:1",
+      "Rashi on Menachot 110a:23:2"
+    ],
+    "generatedAt": "2026-09-14T21:18:23.930Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 110a:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זו בידינו הוא</strong> - דמצוה לכוין דעתו:"
+  },
+  "Rashi on Menachot 110a:23:2": {
+    "dependsOn": [
+      "Menachot 110a:23",
+      "Rashi on Menachot 110a:23:1",
+      "Rashi on Menachot 110a:23:2",
+      "Rashi on Menachot 110a:20:1",
+      "Rashi on Menachot 110a:20:2",
+      "Rashi on Menachot 110a:20:3",
+      "Rashi on Menachot 110a:21:1"
+    ],
+    "generatedAt": "2026-09-14T21:18:51.075Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 110a:23:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לרצונכם תזבחהו</strong> - שנה עליו הכתוב לעכב:"
+  },
+  "Rashi on Menachot 110a:4:1": {
+    "dependsOn": [
+      "Menachot 110a:4"
+    ],
+    "generatedAt": "2026-09-14T21:03:44.179Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 110a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכירין את ישראל</strong> - בכבודן הראשון מכירין ואין מכבידין עולם:"
+  },
+  "Rashi on Menachot 110a:4:2": {
+    "dependsOn": [
+      "Menachot 110a:4",
+      "Rashi on Menachot 110a:4:1",
+      "Rashi on Menachot 110a:4:2",
+      "Jastrow, אִמֵּץ",
+      "Steinsaltz on Menachot 110a:4:1",
+      "Steinsaltz on Menachot 110a:4:2",
+      "Steinsaltz on Menachot 110a:4",
+      "Steinsaltz In-Depth on Menachot 110a:4",
+      "Jastrow on Menachot 110a:4:1",
+      "Jastrow on Menachot 110a:4:2"
+    ],
+    "generatedAt": "2026-09-14T21:05:44.098Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 110a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואת אביהם שבשמים</strong> - שמאמצים בהקדוש ברוך הוא ואין מאמצים בעבודת כוכבים:"
+  },
+  "Rashi on Menachot 110a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T21:06:04.633Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 110a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שימי את</strong> - בתמיה אתה הוא שימי חכם גדול ומקשה לי דבר זה ויש אומרים רב לא היה זוקף עיניו אלא כובשן כל שעה משום צניעות:"
+  },
+  "Rashi on Menachot 110a:7:1": {
+    "dependsOn": [
+      "Rashi on Menachot 110a:7:1",
+      "Menachot 110a:7",
+      "Rashi on Menachot 110a:4:1",
+      "Rashi on Menachot 110a:4:2",
+      "Rashi on Menachot 110a:5:1",
+      "Rashi on Menachot 110a:9:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3"
+    ],
+    "generatedAt": "2026-09-14T21:06:46.225Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 110a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זה הלומד תורה בטהרה</strong> - עליו הוא אומר לשמי ומנחה טהורה:"
+  },
+  "Rashi on Menachot 110a:9:1": {
+    "dependsOn": [
+      "Menachot 110a:9",
+      "Rashi on Menachot 110a:9:1"
+    ],
+    "generatedAt": "2026-09-14T21:07:57.890Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 110a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעולם זאת על ישראל</strong> - מקרא הוא בדברי הימים <span class=\"parenthesized\">(ב סי' ב)</span> בשלמים ובקרבנות משתעי דלעולם הם עומדים והיכי דמי מזבח בנוי בשמים ומיכאל עומד ומקטיר עליו:"
+  },
+  "Tosafot on Menachot 110a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T21:07:20.734Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 110a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלומד תורה בטהרה נושא אשה ואחר כך לומד תורה</strong> - בפרק קמא דקידושין <span class=\"parenthesized\">(דף כט:)</span> איכא למאן דאמר איפכא ואמרינן לא פליגי הא לן והא להו:"
+  },
+  "Tosafot on Menachot 110a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T21:08:32.485Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 110a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומיכאל שר הגדול עומד ומקריב עליו קרבן</strong> - מדרשות חלוקין יש מי שאומר נשמותיהן של צדיקים ויש מי שאומר כבשים של אש והיינו דאמרינן בשמונה עשרה בעבודה ואשי ישראל ותפלתם מהרה באהבה תקבל ברצון ויש אומרים דקאי אדלעיל והשב את העבודה לדביר ביתך ואשי ישראל. לא מצאתי יותר:"
+  }
+}

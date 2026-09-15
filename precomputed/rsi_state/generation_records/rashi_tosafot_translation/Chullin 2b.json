@@ -266,5 +266,111 @@
       "Tosafot on Chullin 2b:9:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">שמא ישהו</strong> - ולהגרמה ועיקור לא חיישינן דמינכר ומיהו עיקור דסכין פגומה לא מינכר:"
+  },
+  "Rashi on Chullin 2b:11:1": {
+    "costUsd": 0.3348006,
+    "dependsOn": [
+      "Chullin 2b:10",
+      "Chullin 2b:11",
+      "Rashi on Chullin 2b:10:1"
+    ],
+    "generatedAt": "2026-09-13T19:44:22.426Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 2b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואלא אטמא במוקדשין</strong> - דאמרת דאיירי בה מתניתין ואמר לא ישחוט מאי איריא אחרים רואין אותן הא אמרת איהו מהימן אי אמר ברי לי:"
+  },
+  "Rashi on Chullin 2b:12:1": {
+    "costUsd": 0.099076,
+    "dependsOn": [
+      "Chullin 2b:12",
+      "Rashi on Chullin 2b:11:1",
+      "Rashi on Chullin 2b:12:2"
+    ],
+    "generatedAt": "2026-09-13T19:47:05.341Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 2b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהכא נפקא</strong> - כלומר הכא סתמו רבי במתניתין הא בשחיטת קדשים סתמיה דלכתחלה לא ודיעבד כשר:"
+  },
+  "Rashi on Chullin 2b:12:2": {
+    "costUsd": 0.083837,
+    "dependsOn": [
+      "Chullin 2b:12:1"
+    ],
+    "generatedAt": "2026-09-13T19:47:39.463Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 2b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל הפסולין</strong> - כגון זר ואונן טמא ובעל מום וכיוצא בהן:"
+  },
+  "Rashi on Chullin 2b:12:3": {
+    "costUsd": 0.0751824,
+    "dependsOn": [
+      "Chullin 2b:12"
+    ],
+    "generatedAt": "2026-09-13T19:48:02.383Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 2b:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ששחטו</strong> - קרבן:"
+  },
+  "Rashi on Chullin 2b:12:4": {
+    "costUsd": 0.1144164,
+    "dependsOn": [
+      "Chullin 2b:12"
+    ],
+    "generatedAt": "2026-09-13T19:48:41.620Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 2b:12:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בזרים</strong> - דכתיב <span class=\"parenthesized\">(ויקרא א)</span> ושחט את בן הבקר לפני ה' והקריבו בני אהרן מקבלה ואילך מצות כהונה לימד על שחיטת קדשים שכשרה בזרים וה\"ה לשאר פסולין:"
+  },
+  "Rashi on Chullin 2b:13:1": {
+    "costUsd": 0.074834,
+    "dependsOn": [],
+    "generatedAt": "2026-09-13T19:49:07.998Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 2b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא עיקר</strong> - דכולה פרקין בתורת שחיטה איירי:"
+  },
+  "Tosafot on Chullin 2b:10:1": {
+    "costUsd": 0.9047778,
+    "dependsOn": [],
+    "generatedAt": "2026-09-13T19:41:26.300Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 2b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אילימא אחש\"ו עלה קאי</strong> - פירוש עלה לחודה קאי אבל הא פשיטא דעלייהו נמי קאי דדייקינן עלה לקמן <span class=\"parenthesized\">(חולין דף יב:)</span> מאן תנא דלא בעי כוונה לשחיטה:"
+  },
+  "Tosafot on Chullin 2b:11:1": {
+    "costUsd": 0.1789992,
+    "dependsOn": [
+      "Rashi on Chullin 2b:11:1",
+      "Steinsaltz on Chullin 2b:11:1",
+      "Chullin 2b:11"
+    ],
+    "generatedAt": "2026-09-13T19:46:13.574Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 2b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דליתיה קמן דנשייליה</strong> - ואע\"ג דעזרה רה\"ר היא כדאמר בפ\"ק דפסחים <span class=\"parenthesized\">(דף יט:)</span> והיה לנו לטהר כאן מספק האי ספק לא דמי לשאר ספק טומאה ברה\"ר משום דרוב פעמים לא יכול להזהר מליגע ואי איירי בבמה אתי שפיר:"
   }
 }

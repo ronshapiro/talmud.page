@@ -223,5 +223,219 @@
       "Tosafot on Menachot 108a:9:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">ושמואל מאי טעמא לא אמר כרבי אושעיא</strong> - והוא הדין כל הני אמוראי דלעיל ורבי אושעיא מאי טעמא לא אמר כשמואל דבשלמא אמוראי דלעיל סברי דמותר מנחה לאו לנדבה אזלי אלא לרבי אושעיא דחשיב מותר מנחת חוטא כל שכן מותר עשירית האיפה:"
+  },
+  "Rashi on Menachot 108a:1:3": {
+    "dependsOn": [
+      "Menachot 108a:1",
+      "Rashi on Menachot 108a:1:1",
+      "Rashi on Menachot 108a:1:2",
+      "Rashi on Menachot 108a:1:3",
+      "Rashi on Menachot 108a:1:4"
+    ],
+    "generatedAt": "2026-09-14T21:26:32.076Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 108a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והמותרות</strong> - כגון מי שמקריב אחד מכל אלו והפריש מעות לשם כך והוזלו בהמות וניתותרו המעות נותן לשופר החמישי:"
+  },
+  "Rashi on Menachot 108a:1:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T21:27:04.895Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 108a:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והמעה</strong> - קולבון שכל יחיד מביא מחצית השקל בהכרעה באדר ואם נתנו בין שניהם שקל שלם נותנין קולבון אחד מעה קטנה מפני הכרעה שעכשיו לא נתנו בין שניהם אלא הכרע אחד ואילו הביאום כמשפטן היו שם שתי הכרעות לפיכך נותנין קולבון:"
+  },
+  "Rashi on Menachot 108a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T21:30:31.591Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 108a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל חד וחד יומיה עביד</strong> - ואם באו לו קרבנות הרבה שלא צריך לשופר אין לו ליטול כלום בעורות שנקנו מן המעות שניתנו בשופר:"
+  },
+  "Rashi on Menachot 108a:4:1": {
+    "dependsOn": [
+      "Menachot 108a:4"
+    ],
+    "generatedAt": "2026-09-14T21:30:59.082Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 108a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיחידאה לא מוקמינן</strong> - דלא חיישינן להא דרבי דאמר קטן והביא גדול לא יצא אלא המתנדב עגל נותן המעות לשופר של פר והכהנים מקריבין פרים מהם עד שיכלו כל המעות שיש שם:"
+  },
+  "Rashi on Menachot 108a:5:1": {
+    "dependsOn": [
+      "Menachot 108a:5"
+    ],
+    "generatedAt": "2026-09-14T21:31:28.356Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 108a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מותרות</strong> - בתמיה כלומר איהו חשיב חד שופר למותרות כולהו קמאי נמי דחשיב מן הניתקין לרעייה מותרות נינהו שניתותרו מכדי קרבן:"
+  },
+  "Rashi on Menachot 108a:6:1": {
+    "dependsOn": [
+      "Menachot 108a:6",
+      "Rashi on Menachot 108a:6:1"
+    ],
+    "generatedAt": "2026-09-14T21:31:55.755Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 108a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשקלים אזלו</strong> - לתרומת הלשכה עם שאר השקלים:"
+  },
+  "Rashi on Menachot 108a:6:2": {
+    "dependsOn": [
+      "Menachot 108a:6",
+      "Rashi on Menachot 108a:6:1",
+      "Menachot 108a:1"
+    ],
+    "generatedAt": "2026-09-14T21:33:12.779Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 108a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לנדבה</strong> - לשופרות:"
+  },
+  "Rashi on Menachot 108a:7:1": {
+    "dependsOn": [
+      "context_fetch_cli.ts"
+    ],
+    "generatedAt": "2026-09-14T18:03:47.421Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 108a:7:1"
+    ],
+    "sourceText": "הכי גרסינן כנגד מותר חטאת מותר אשם נזיר ומותר אשם מצורע כו'. שהפריש מעות לאחד מכל אלו וניתותרו נותנן לשופרות ואשם סתם היינו אשם גזילות ומעילות לא מיעריב מותר דידיה בהדי חטאת ואשם נזיר ומצורע לא מיעריב בהדי אשם סתם דזה בין שתי שנים ואיל בן שנה ואשם מצורע לא מיערב בהדי אשם נזיר דאשם נזיר בא להכשירו לנזירות טהרה ואין נותנין מדמו לבהונות ואין טעונים נסכים ואשם מצורע נותנין מדמו לבהונות וטעון נסכים ובא להתירו במחנה:"
+  },
+  "Rashi on Menachot 108a:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T18:10:34.379Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 108a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומותר דמנחת חוטא</strong> - הואיל ואיקרי חטאת אזיל מותרה לנדבת צבור דהכי אמרינן במסכת תמורה <span class=\"parenthesized\">(דף כג:)</span> זה מדרש דרש יהוידע הכהן כל הבא ממותר חטאת וממותר אשם ילקח בהם עולות הבשר לשם ועורות לכהנים אבל מותר מעות שאר מנחות לא אזלי לנדבת צבור אלא הוא יוסיף משלו ומביא מנחה אחרת:"
+  },
+  "Rashi on Menachot 108a:7:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T18:14:07.180Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 108a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומותר עשירית האיפה</strong> - של כ\"ג שמקריב בכל יום ויום ואם הפריש מעות לעשירית האיפה של היום וניתותרו שוב אין יכול לצרפן לשם מחר אלא תפול לנדבת צבור שגם היא נקראת חטאת בפרק ואלו מגלחין במועד קטן <span class=\"parenthesized\">(דף טז.)</span> יקריב חטאתו זו עשירית האיפה של כהן גדול:"
+  },
+  "Rashi on Menachot 108a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T18:15:23.490Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 108a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומותר קינין</strong> - המפריש מעות לקינו וניתותרו מקינין:"
+  },
+  "Tosafot on Menachot 108a:1:1": {
+    "dependsOn": [
+      "Menachot 108a:1",
+      "Rashi on Menachot 108a:1:1",
+      "Rashi on Menachot 108a:1:2",
+      "Rashi on Menachot 108a:1:3",
+      "Rashi on Menachot 108a:1:4",
+      "Menachot 108a:6",
+      "Tosafot on Menachot 108a:1:1",
+      "Menachot 107b:22",
+      "Menachot 107b:23",
+      "Menachot 107b:24",
+      "Menachot 107b:25",
+      "Menachot 107b:15",
+      "Menachot 107b:16",
+      "Menachot 107b:17",
+      "Menachot 107b:18",
+      "Menachot 107b:19",
+      "Menachot 107b:20",
+      "Steinsaltz In-Depth on Menachot 108a:1:1",
+      "Steinsaltz In-Depth on Menachot 108a:1:2",
+      "Steinsaltz In-Depth on Menachot 108a:1:3"
+    ],
+    "generatedAt": "2026-09-14T21:29:44.834Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 108a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והמעה</strong> - קולבון שכל יחיד מביא מחצית השקל בהכרע באדר ואם נתנו בין שניהם שקל שלם נותנין קולבון א' מעה קטנה מפני הכרע שעכשיו לא נתנו שניהם אלא הכרע אחד ואילו הביאו כמשפטו היה שם שתי הכרעות לפיכך נותנין קולבון אחד <span class=\"rashi-quotation\">כך פירש בקונט'</span> וקשיא דאם הכרע עולה יותר ממעה היאך יוצאין בהכרע אחד במעה והלא חייבין שתי הכרעות ואם זה שיעור הכרע למה דחק <span class=\"rashi-quotation\">בקונטרס</span> לפרש כן לפיכך נראה דבכל הכרעות מיירי ופלוגתא היא בתוספ' דשקלים דתניא כמה הוא נותן קולבון מעה כסף אחד מכ\"ד כסף לסלע וחכמים אומרים חצי מעה של ארבע איסרות וקולבונות אלו מה היו עושין מהן נופלין לשקלים דברי ר\"מ ר' אלעזר אומר לנדבה:"
+  },
+  "Rashi on Menachot 108a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T21:19:41.258Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 108a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והכבשים</strong> - אשם נזיר ואשם מצורע הבאים בני שנה שנאמר בהן כבש ינתקו לרעייה דמיהן לשופר השלישי ואהכי לא מערב מותריהן עם מותר גזילות ומעילות משום דלא דמו דאלו בני שנה ואלו בני שתי שנים אלו באין לכפר ואלו להכשיר:"
+  },
+  "Rashi on Menachot 108a:1:2": {
+    "dependsOn": [
+      "Menachot 108a:1",
+      "Rashi on Menachot 108a:1:1",
+      "Rashi on Menachot 108a:1:2",
+      "Rashi on Menachot 108a:1:3",
+      "Menachot 107b:15",
+      "Menachot 107b:16",
+      "Menachot 107b:17",
+      "Menachot 107b:18",
+      "Menachot 107b:19",
+      "Menachot 107b:20",
+      "Shevuot 2a:1",
+      "Shevuot 2a:2",
+      "Shevuot 2b:1",
+      "Shevuot 2b:2",
+      "Shevuot 2b:3",
+      "Shevuot 2b:4",
+      "Shevuot 9a:1",
+      "Shevuot 9a:2",
+      "Shevuot 9a:3",
+      "Shevuot 9a:4",
+      "Shevuot 9a:5",
+      "Shevuot 9b:1",
+      "Shevuot 9b:2",
+      "Shevuot 9b:3",
+      "Shevuot 9b:4",
+      "Shevuot 9b:5",
+      "Steinsaltz on Menachot 108a:1:1",
+      "Steinsaltz on Menachot 108a:1:2",
+      "Steinsaltz on Menachot 108a:1:3",
+      "Tosafot on Menachot 108a:1:1",
+      "Steinsaltz on Menachot 108a:1",
+      "\nimport glob\nfiles = glob.glob(",
+      "\nconst fs = require("
+    ],
+    "generatedAt": "2026-09-14T21:26:07.496Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 108a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והשעירים</strong> - שעירי חטאת של ציבור של רגלים מכפרים על טומאת מקדש וקדשיו בשאין בה ידיעה כדאמרינן בשבועות <span class=\"parenthesized\">(דף ב.)</span> ולא מפי השמועה. ואין לנו בהמה ניתקת לרעייה אלא אלו דכבשה ושעירה הבאין לחטאת יחיד אין ניתקות לרעיה אלא מתות:"
   }
 }
