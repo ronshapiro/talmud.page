@@ -6,6 +6,7 @@ import {cachedOutputFilePath} from "../cached_outputs";
 import {writeJson} from "../util/json_files";
 import {
   extractRequestedRefs,
+  fetchWikipedia,
   getNeighborSegments,
   getPriorSugyaSkeleton,
   getRefs,
@@ -267,5 +268,67 @@ describe("extractRequestedRefs", () => {
       },
     ]);
     expect(refs).toEqual(["Zevachim 2a:1"]);
+  });
+
+  test("ignores wikipedia commands when extracting refs", () => {
+    const refs = extractRequestedRefs([
+      {
+        name: "Bash",
+        input: {
+          command: "npx ts-node rsi_orchestrator/context_fetch_cli.ts wikipedia \"Fenugreek\"",
+        },
+      },
+      {
+        name: "run_command",
+        input: {
+          CommandLine: "npx ts-node rsi_orchestrator/context_fetch_cli.ts get-refs '[\"Zevachim 2a:1\"]'",
+        },
+      },
+    ]);
+    expect(refs).toEqual(["Zevachim 2a:1"]);
+  });
+});
+
+describe("fetchWikipedia", () => {
+  const originalFetch = global.fetch;
+
+  afterEach(() => {
+    global.fetch = originalFetch;
+  });
+
+  test("returns parsed summary on success", async () => {
+    global.fetch = jest.fn().mockResolvedValue({
+      ok: true,
+      json: async () => ({
+        title: "Fenugreek",
+        description: "Plant species",
+        extract: "Fenugreek is an annual plant in the family Fabaceae.",
+        content_urls: {desktop: {page: "https://en.wikipedia.org/wiki/Fenugreek"}},
+      }),
+    } as unknown as Response);
+
+    const res = await fetchWikipedia("Fenugreek");
+    expect(res.title).toBe("Fenugreek");
+    expect(res.description).toBe("Plant species");
+    expect(res.extract).toContain("Fabaceae");
+    expect(res.url).toBe("https://en.wikipedia.org/wiki/Fenugreek");
+    expect(res.error).toBeUndefined();
+  });
+
+  test("returns error when article is not found", async () => {
+    global.fetch = jest.fn().mockResolvedValue({
+      ok: false,
+      status: 404,
+    } as unknown as Response);
+
+    const res = await fetchWikipedia("NonExistentArticle12345");
+    expect(res.error).toContain("Wikipedia article not found");
+  });
+
+  test("returns error on network failure", async () => {
+    global.fetch = jest.fn().mockRejectedValue(new Error("Network offline"));
+
+    const res = await fetchWikipedia("Fenugreek");
+    expect(res.error).toContain("Network offline");
   });
 });

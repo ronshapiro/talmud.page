@@ -1,6 +1,6 @@
 import * as yargs from "yargs";
 import {hideBin} from "yargs/helpers";
-import {getNeighborSegments, getPriorSugyaSkeleton, getRefs} from "./context_fetch";
+import {fetchWikipedia, getNeighborSegments, getPriorSugyaSkeleton, getRefs} from "./context_fetch";
 
 /**
  * CLI entrypoint for context_fetch.ts, invoked by a headless task-type call via
@@ -53,6 +53,17 @@ async function main(): Promise<void> {
         .options({count: {type: "number", default: 2, describe: "how many prior sugyot"}}),
       argv => {
         console.log(JSON.stringify(getPriorSugyaSkeleton(argv.ref, argv.count)));
+      },
+    )
+    .command(
+      "wikipedia <query>",
+      "Fetch Wikipedia summary for a term (useful for realia, botanical/zoological terms, historical figures)",
+      y => y
+        .positional("query", {type: "string", demandOption: true, describe: "article title or search term"})
+        .options({lang: {type: "string", default: "en", describe: "language code (e.g. en, he)"}}),
+      async argv => {
+        const res = await fetchWikipedia(argv.query, argv.lang);
+        console.log(JSON.stringify(res));
       },
     )
     .demandCommand(1)
