@@ -13,18 +13,14 @@ const MANAGED_PATHS = [
 ];
 
 export interface CommitPendingDeps {
-  // Anything staged/unstaged under the managed paths right now, or "" if none.
   gitStatusPorcelain: () => Promise<string>;
-  // Current git branch name.
   currentBranch: () => Promise<string>;
-  // The open PR (if any) already on this branch.
   findOpenPr: (branch: string) => Promise<{number: number} | undefined>;
   commitPendingState: (message: string) => Promise<boolean>;
   push: () => Promise<void>;
   openPr: (branch: string, title: string, body: string) => Promise<void>;
 }
 
-/** Parses `git status --porcelain`'s path column, including its quoting of unusual paths. */
 export function parseStatusPaths(statusOut: string): string[] {
   return statusOut
     .split("\n")

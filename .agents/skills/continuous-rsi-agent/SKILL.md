@@ -33,7 +33,6 @@ When running from Antigravity:
 
 ## 3. Worktree Management & Parallel Runs
 
-- **Externally Managed Worktrees**: Each continuous translation run executes in its own dedicated, externally managed worktree on a feature branch (e.g. `git worktree add ../rsi-chullin -b rsi-chullin origin/base`).
 - **Direct Commits & PRs**: The translation runner commits and pushes pending candidates directly within its active worktree to its own branch (`git push -u origin HEAD`) and creates/updates a PR for that branch.
 - **Parallel Safety**: Multiple translation runs for different tractates can run concurrently in separate worktrees without collisions.
 - **Cleanup**: Worktrees persist while their PR is open and should be deleted externally only after the PR merges.
