@@ -9,5 +9,385 @@
       "Rashi on Chullin 5b:1:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">מעם</strong> - ולא כל עם וגבי חטאת כתיב שבא ע\"י השוגג:"
+  },
+  "Rashi on Chullin 5b:10:1": {
+    "costUsd": 0.1746192,
+    "dependsOn": [
+      "Chullin 5b:10"
+    ],
+    "generatedAt": "2026-09-14T23:37:53.111Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והדר פשיט</strong> - ר' זירא לנפשיה:"
+  },
+  "Rashi on Chullin 5b:10:2": {
+    "costUsd": 0.190829,
+    "dependsOn": [
+      "Chullin 5b:10",
+      "Chullin 5b:9",
+      "Rashi on Chullin 5b:10:1",
+      "Rashi on Chullin 5b:10:2",
+      "Rashi on Chullin 5b:10:3",
+      "Rashi on Chullin 5b:10:4",
+      "Rashi on Chullin 5b:10:5"
+    ],
+    "generatedAt": "2026-09-14T23:39:59.112Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5b:10:2"
+    ],
+    "sourceText": "מסתברא שמיע להו ולא קבלוה דאי ס\"ד לא שמיע להו ואי שמיע להו הוו מקבלי לה:"
+  },
+  "Rashi on Chullin 5b:10:3": {
+    "costUsd": 0.1286056,
+    "dependsOn": [
+      "Chullin 5b:10"
+    ],
+    "generatedAt": "2026-09-14T23:40:58.472Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היכי מסתייע מילתא למיכל כו'</strong> - היאך יגרום שום שטן לפני צדיקים ע\"י שוגג שום דבר עון:"
+  },
+  "Rashi on Chullin 5b:10:4": {
+    "costUsd": 0.0766262,
+    "dependsOn": [
+      "Chullin 5b:10"
+    ],
+    "generatedAt": "2026-09-14T23:41:22.515Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5b:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השתא בהמתן של צדיקים</strong> - חמרא דר' פנחס בן יאיר לקמן:"
+  },
+  "Rashi on Chullin 5b:10:5": {
+    "costUsd": 0.0983144,
+    "dependsOn": [
+      "Chullin 5b:10"
+    ],
+    "generatedAt": "2026-09-14T23:41:50.747Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5b:10:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין הקב\"ה מביא תקלה על ידן</strong> - שתאכל הבהמה דבר האסור לה:"
+  },
+  "Rashi on Chullin 5b:2:1": {
+    "costUsd": 0.09077740000000001,
+    "dependsOn": [
+      "Chullin 5b:2"
+    ],
+    "generatedAt": "2026-09-14T23:13:22.774Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר\"ש בן יוסי אומר</strong> - מכאן אתה למד:"
+  },
+  "Rashi on Chullin 5b:2:2": {
+    "costUsd": 0.17497200000000002,
+    "dependsOn": [
+      "Chullin 5b:2",
+      "Rashi on Chullin 5b:2:1",
+      "Rashi on Chullin 5b:2:3"
+    ],
+    "generatedAt": "2026-09-14T23:14:44.563Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אשר לא תעשינה בשגגה ואשם</strong> - וסמיך ליה או הודע אליו חטאתו אשר חטא והביא אשמו דמשמע אשר לא תעשינה אם היה יודע שהוא אסור ושגגה היתה לו וחטא ואשם הוא יביא:"
+  },
+  "Rashi on Chullin 5b:2:3": {
+    "costUsd": 0.2182988,
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T23:16:51.301Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השב מידיעתו</strong> - שאם היה יודע שהוא חלב היה יושב ומבטל מעבירה זו. ואית דגריס השב והוא נמי הפורש ונבדל מתחלה ואין עובר אם היה יודע שהוא אסור ובת\"כ גרס היושב:"
+  },
+  "Rashi on Chullin 5b:3:1": {
+    "costUsd": 0.2178426,
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T23:19:45.378Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי בינייהו</strong> - מ\"מ מומר לא מקבלינן מיניה בין למר בין למר ואפילו שוגג דהא אילו היה יודע מתחלה נמי היה אוכלו ואין שב מידיעתו:"
+  },
+  "Rashi on Chullin 5b:3:2": {
+    "costUsd": 0.1201754,
+    "dependsOn": [
+      "Chullin 5b:3"
+    ],
+    "generatedAt": "2026-09-14T23:20:58.104Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והביא קרבן על הדם</strong> - ששגג בו ואילו היה יודע שהוא דם לא היה אוכלו לת\"ק מומר שמו ולא מקבלינן מיניה ולר\"ש שב מידיעתו הוא בדם ומקבלינן מיניה:"
+  },
+  "Rashi on Chullin 5b:4:1": {
+    "costUsd": 0.09002560000000001,
+    "dependsOn": [
+      "Chullin 5b:4"
+    ],
+    "generatedAt": "2026-09-14T23:21:42.499Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכם ולא כולכם</strong> - דלעיל בעולת נדבה משתעי קרא דכתיב בתריה אם עולה קרבנו וגו':"
+  },
+  "Rashi on Chullin 5b:4:2": {
+    "costUsd": 0.1130464,
+    "dependsOn": [
+      "Chullin 5b:4",
+      "Rashi on Chullin 5b:4:1"
+    ],
+    "generatedAt": "2026-09-14T23:22:34.760Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלכפרה הוא</strong> - וכיון דדעתו להזיד ולחזור על עבירתו ובהא מיהא אתרמי דשגג ולא הזיד א\"כ אמאי נקבל מיניה הא לאו בר כפרה הוא:"
+  },
+  "Rashi on Chullin 5b:4:3": {
+    "costUsd": 0.0704504,
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T23:23:01.152Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלאו חיובא</strong> - ולאו אורח ארעא לקבולי דורון מיניה דכתיב זבח רשעים תועבה <span class=\"parenthesized\">(משלי כא)</span>:"
+  },
+  "Rashi on Chullin 5b:4:4": {
+    "costUsd": 0.1062784,
+    "dependsOn": [
+      "Chullin 5b:4"
+    ],
+    "generatedAt": "2026-09-14T23:23:38.861Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5b:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל חטאת דחובה</strong> - רמיא עליה:"
+  },
+  "Rashi on Chullin 5b:4:5": {
+    "costUsd": 0.1005702,
+    "dependsOn": [
+      "Chullin 5b:4",
+      "Rashi on Chullin 5b:4:1",
+      "Rashi on Chullin 5b:4:2",
+      "Rashi on Chullin 5b:4:3",
+      "Rashi on Chullin 5b:4:4"
+    ],
+    "generatedAt": "2026-09-14T23:24:23.857Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5b:4:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אימא נקבל מיניה</strong> - שלא יהא חוטא נשכר:"
+  },
+  "Rashi on Chullin 5b:5:1": {
+    "costUsd": 0.0957022,
+    "dependsOn": [
+      "Chullin 5b:5"
+    ],
+    "generatedAt": "2026-09-14T23:25:05.109Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גריעותא הוא</strong> - דאוקמת לעיל דפושעים קרי בהמה:"
+  },
+  "Rashi on Chullin 5b:5:2": {
+    "costUsd": 0.237681,
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T23:26:38.373Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהן ערומים בדעת</strong> - כאדם הראשון ומשימין עצמן כבהמה דכאי רוח:"
+  },
+  "Rashi on Chullin 5b:6:1": {
+    "costUsd": 0.1042806,
+    "dependsOn": [
+      "Jeremiah 31:26",
+      "Jeremiah 31:27"
+    ],
+    "generatedAt": "2026-09-14T23:27:14.436Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וזרע בהמה</strong> - ומוקמינן לה במסכת סוטה <span class=\"parenthesized\">(דף כב.)</span> לא קרא ולא שנה ולא שמש תלמידי חכמים עליו הכתוב אומר וזרעתי את בית ישראל זרע אדם וזרע בהמה כלומר החכמים והבורים כולם אזרעם לפרותם ולרבותם:"
+  },
+  "Rashi on Chullin 5b:8:1": {
+    "costUsd": 0.0789724,
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T23:27:45.025Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר\"ג</strong> - בנו של ר' יהודה הנשיא שהיה מן האחרונים ובית דינו נמנו על שחיטת כותי לאחר שנשנית משנתינו דהכל שוחטין ואפילו כותי ואסרוה:"
+  },
+  "Rashi on Chullin 5b:8:2": {
+    "costUsd": 0.143857,
+    "dependsOn": [
+      "Chullin 5b:8",
+      "Chullin 5b:1",
+      "Rashi on Chullin 5b:8:1",
+      "Rashi on Chullin 5b:8:3"
+    ],
+    "generatedAt": "2026-09-14T23:28:58.278Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שמע רבי כו'</strong> - והיינו נמי כי מתניתין:"
+  },
+  "Rashi on Chullin 5b:8:3": {
+    "costUsd": 0.10778920000000003,
+    "dependsOn": [
+      "Chullin 5b:8"
+    ],
+    "generatedAt": "2026-09-14T23:29:49.061Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למימרא בעי</strong> - וכי לא פשיטא לן דלית להו לפני עור לא תתן מכשול <span class=\"parenthesized\">(ויקרא יט)</span>:"
+  },
+  "Rashi on Chullin 5b:9:1": {
+    "costUsd": 0.12016380000000002,
+    "dependsOn": [
+      "Chullin 5b:9"
+    ],
+    "generatedAt": "2026-09-14T23:34:24.577Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קבלה מיניה</strong> - רבי זירא מר' יעקב דאפילו כשישראל עומד על גביו אסור או לא קבלה:"
+  },
+  "Rashi on Chullin 5b:9:2": {
+    "costUsd": 0.09096499999999999,
+    "dependsOn": [
+      "Chullin 5b:9"
+    ],
+    "generatedAt": "2026-09-14T23:35:04.006Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אכל משחיטת כותי</strong> - בישראל עומד על גביו או ע\"י שחתך כזית בשר ונתן לו ואכל ואף ר' אסי אכל:"
+  },
+  "Rashi on Chullin 5b:9:3": {
+    "costUsd": 0.11211180000000001,
+    "dependsOn": [
+      "Chullin 5b:9"
+    ],
+    "generatedAt": "2026-09-14T23:36:05.849Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותהי בה רבי זירא גרסינן מתמיה</strong> - עליהן שאכלוה ומבעיא ליה בלביה הכי:"
+  },
+  "Rashi on Chullin 5b:9:4": {
+    "costUsd": 0.10469300000000001,
+    "dependsOn": [
+      "Chullin 5b:9",
+      "Chullin 5b:8",
+      "Rashi on Chullin 5b:9:1",
+      "Rashi on Chullin 5b:9:2",
+      "Rashi on Chullin 5b:9:3"
+    ],
+    "generatedAt": "2026-09-14T23:36:54.145Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 5b:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שמיע להו</strong> - הא דנמנו ר\"ג דאי שמיע להו הוו מקבלי או דלמא שמיע ולא קבלוה:"
+  },
+  "Tosafot on Chullin 5b:10:1": {
+    "costUsd": 0.361809,
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T23:45:02.447Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 5b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צדיקים עצמן לא כ\"ש</strong> - תימה דהא אשכחן יהודה בן טבאי שהרג עד זומם בפ\"ק דמכות <span class=\"parenthesized\">(דף ה:)</span> ור' ישמעאל שקרא והטה בפ\"ק דשבת <span class=\"parenthesized\">(דף יב:)</span> ואור\"י דדוקא במידי דאכילה אין הקב\"ה מביא תקלה על ידן שגנאי הוא לצדיק שאוכל דבר איסור ולספרים דגרסי <span class=\"parenthesized\">(בפ\"ק)</span> דכתובות <span class=\"parenthesized\">(דף כח:)</span> גבי העלה עבד לכהונה על פיו השתא בהמתן של צדיקים כו' משום דאתי לידי אכילת איסור שמאכיל בת ישראל שנשאת לו בתרומה והוא עבד ואין לו בה קדושין ומיהו ברוב ספרים לא גרסינן ליה והיינו משום דליכא למפרך אלא כשהצדיק עצמו אוכל האיסור ובר\"ה <span class=\"parenthesized\">(דף כא.)</span> דאמר כמה בסים תבשילא דבבלאי בצומא רבא דמערבא ובערבי פסחים <span class=\"parenthesized\">(דף קו:)</span> ר' ירמיה בר אבא איקלע לבי רב אסי ואשתלי וטעם קודם הבדלה אע\"ג דמיתתו באסכרה התם אכילת היתר הוא אלא שאוכל בשעה האסורה ובבראשית רבה גרס ר' ירמיה דשדר לר' זירא כלכלה דפירי בין דין לדין אתאכיל פירי בטבלייהו ומיהו ההוא עובדא איתא במסכתא שקלים <span class=\"parenthesized\">(דף ח.)</span> וקאמר עלה ר' זירא אם הראשונים כמלאכים אנו כבר אינש ואם הראשונים כבני אינש אנו כחמורים ולא כחמורו דר' פנחס בן יאיר: [ע\"ע תוס' שבת דף יב: ד\"ה רבי נתן ותוספות פסחים קו: ד\"ה אישתלי ותוספות יבמות צט: ד\"ה ס\"ד ותוספות גיטין ז. ד\"ה השתא]:"
+  },
+  "Tosafot on Chullin 5b:1:1": {
+    "costUsd": 1.0280174000000002,
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T23:12:53.874Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 5b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעם הארץ פרט למומר</strong> - תימה דמאי קאמר הא מהכא נפקא מהתם נפקא הא אדרבה הך פליגא דאפילו מומר לדבר אחד קאמר ת\"ק דאין מקבלין דהא מוקמינן דפליגי באוכל חלב והפריש קרבן על הדם ודוחק לומר דפריך מדר\"ש ומפרש ר\"ת דמומר לאכול חלב היינו מומר לכל התורה חוץ מדם כדאשכחן שכולל כל החטאות בכלל חטאת חלב בפ\"ק דמנחות <span class=\"parenthesized\">(דף ו.)</span> ובפרק היה מביא <span class=\"parenthesized\">(סוטה דף טו.)</span> דאמר בדין שתהא חטאת חלב טעונה נסכים והשתא קאמר דלת\"ק כשהוא מומר לכל התורה כולה חוץ מדם אינו מביא קרבן על הדם ולר\"ש מביא כיון שהוא שב מידיעתו מדם אבל מומר לדבר אחד דברי הכל מביא ועוי\"ל דדוקא בחלב ודם פליגי לפי שהם שוין שיש כרת בשניהן ועולין לגבוה ונאמרו בלאו אחד כל חלב וכל דם לא תאכלו דלת\"ק חשיב ליה מומר לאותו דבר כאילו הוא מומר לדם עצמו ואינו מניח בשביל האיסור אלא משום דנפשו קצה לאכול דם אבל מומר לאחד משאר איסורים פשיטא דמביא קרבן על הדם ולר\"ש אפילו מומר לאכול חלב מביא קרבן על הדם:"
+  },
+  "Tosafot on Chullin 5b:2:1": {
+    "costUsd": 0.12103640000000002,
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T23:17:48.589Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 5b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינו שב מידיעתו אינו מביא קרבן על שגגתו</strong> - תימה מה צריך קרא למעט לאינו שב מידיעתו ועומד ברשעו הא הוי זבח רשעים והיכי תיסק אדעתין לומר דמביא ויש לומר דאיצטריך להיכא דחזר בתשובה אח\"כ ובשעה שאכל לא היה שב מידיעתו:"
+  },
+  "Tosafot on Chullin 5b:8:1": {
+    "costUsd": 0.3531582,
+    "dependsOn": [],
+    "generatedAt": "2026-09-14T23:33:33.721Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 5b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר\"ג ובית דינו נמנו על שחיטת כותי ואסרוה</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> ר\"ג בנו של ר' יהודה הנשיא שהיה אחרון וכן משמע קצת דקאמר בסמוך ר\"ג ובית דינו כר\"מ ס\"ל דחייש למיעוטא משמע שהוא ר\"ג אחרון שהיה אחר ר\"מ ומיהו קשה דא\"כ הויא ליה לפרושי בהדיא ר\"ג בנו של ר\"י הנשיא כדתנן במס' אבות <span class=\"parenthesized\">(פ\"ב מ\"ב)</span> ר\"ג בנו של ר' יהודה הנשיא אומר יפה תלמוד תורה עם דרך ארץ ועוד תימה דגזר ר\"מ על סתם יינם ולא גזר על שחיטה דאורייתא אבל אם הוא ר\"ג דיבנה ניחא והא דקאמר כר\"מ סבירא להו משום דר\"מ ס\"ל הכי בהדיא אבל קשה דא\"כ סבר ר\"ג דיבנה דכותים גרי אמת הן כיון דשחיטתן הויא שריא קודם גזירה ובריש הדר <span class=\"parenthesized\">(עירובין סא.)</span> תנן הדר עם העובד כוכבים או עם מי שאינו מודה בעירוב ה\"ז אסור פירוש אינו מודה בעירוב היינו כותי כדאמר בפרק בכל מערבין <span class=\"parenthesized\">(עירובין לא:)</span> ר\"א ב\"ר יעקב אומר עד שיהיו שני ישראלים אוסרים זה על זה ר\"ג אומר צדוקי אינו כעובד כוכבים ו<span class=\"rashi-quotation\">פירש בקונטרס</span> אבל כותי הוי כעובד כוכבים דקסבר כותים גרי אריות הן מיהו ע\"כ א\"א לומר כפירוש <span class=\"rashi-quotation\">הקונטרס</span> דהא ר\"ג דיבנה אית ליה בהדיא בפ\"ק דגיטין <span class=\"parenthesized\">(דף י.)</span> דגרי אמת הן שהכשיר גט שעדיו עדי כותים והיינו יכולין לפרש אבל כותי הוי כעובד כוכבים משום דאינו מודה בעירוב דהיינו נמי טעמא דת\"ק דאסר שהוא ר\"מ כדמוכח התם בגמרא ור\"מ אית ליה התם <span class=\"parenthesized\">(בבכורות)</span> דכותים גרי אמת הן אבל קשה כיון דלכ\"ע כותי אוסר אע\"ג דגרי אמת הן א\"כ מה באו לחדש ר' אמי ור' אסי שעשאום עובדי כוכבים גמורין לבטל רשות וליתן רשות הא מעיקרא נמי הכי הוה לכ\"ע אלא י\"ל דלר\"ג כותי נמי אינו כעובד כוכבים ותנן צדוקי אינו כעובד כוכבים וה\"ה לכותים דגרי אמת הן והיו סבורין דגרי אמת הן כר\"ג עד שעשאום רבי אמי ור' אסי עובדי כוכבים גמורין אע\"ג דרבי יוחנן פסק כר' אליעזר בר' יעקב ור' אליעזר בר' יעקב לא פליג את\"ק שאוסר כותי ר' יוחנן לא בא לפסוק כמותו אלא במה שצריך שיהו שני ישראלים אוסרים זה על זה:"
   }
 }
