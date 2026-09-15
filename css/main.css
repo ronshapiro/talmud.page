@@ -775,7 +775,8 @@ h2, .title, .titleHebrew {
     white-space: pre;
 }
 
-.ai-modified .english::before , .ai-modified .hebrew::before {
+.ai-modified-english .english::before,
+.ai-modified-hebrew .hebrew::before {
     content: "⦿ ";
     background-image: linear-gradient(
         0deg,
