@@ -158,8 +158,14 @@ export function IndividualComment({
     return "ignore-drive";
   };
 
+  const isAiModified = Boolean(comment.didModifyUiWithAiVersion);
+  const aiHebrew = isAiModified && (comment.aiModifiedHebrew ?? !comment.aiModifiedEnglish);
+  const aiEnglish = isAiModified && (comment.aiModifiedEnglish ?? !comment.aiModifiedHebrew);
+
   const extraClasses = [
-    ...(comment.didModifyUiWithAiVersion ? ["ai-modified"] : []),
+    ...(isAiModified ? ["ai-modified"] : []),
+    ...(aiHebrew ? ["ai-modified-hebrew"] : []),
+    ...(aiEnglish ? ["ai-modified-english"] : []),
     ...(comment.recentlySplit ? ["recently-split"] : []),
     ...(comment.pendingReview ? ["pending-review"] : []),
   ];

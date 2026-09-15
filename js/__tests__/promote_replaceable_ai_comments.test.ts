@@ -209,3 +209,197 @@ test("Model commentary is transferred from AI version to parent comment on promo
   expect(rashiOf(target).commentary!.Model.comments).toEqual([modelSubcomment]);
   expect(versionsOf(target)[0].commentary?.Model).toBeUndefined();
 });
+
+test("an AI version that only adds English is inlined into the parent comment", () => {
+  const target = page({
+    sections: [segment({
+      commentary: commentaries({
+        Rashi: [{
+          ref: "Rashi 1",
+          he: "עברית מקורית",
+          en: "",
+          commentary: {
+            Versions: {
+              comments: [aiVersion({
+                he: "",
+                en: "ai english",
+                canReplaceParent: false,
+              })],
+            },
+          },
+        }],
+      }),
+    })],
+  });
+
+  promoteReplaceableAiComments(target);
+
+  const rashi = rashiOf(target);
+  expect(rashi.he).toBe("עברית מקורית");
+  expect(rashi.en).toBe("ai english");
+  expect(rashi.didModifyUiWithAiVersion).toBe(true);
+  expect(rashi.aiModifiedHebrew).toBe(false);
+  expect(rashi.aiModifiedEnglish).toBe(true);
+  expect(rashi.commentary?.Versions).toBeUndefined();
+});
+
+test("an AI version that only adds English to a comment with existing English preserves original text", () => {
+  const target = page({
+    sections: [segment({
+      commentary: commentaries({
+        Rashi: [{
+          ref: "Rashi 1",
+          he: "עברית מקורית",
+          en: "original english",
+          commentary: {
+            Versions: {
+              comments: [aiVersion({
+                he: "",
+                en: "ai english",
+                canReplaceParent: false,
+              })],
+            },
+          },
+        }],
+      }),
+    })],
+  });
+
+  promoteReplaceableAiComments(target);
+
+  const rashi = rashiOf(target);
+  expect(rashi.he).toBe("עברית מקורית");
+  expect(rashi.en).toBe("ai english");
+  expect(rashi.didModifyUiWithAiVersion).toBe(true);
+  expect(rashi.aiModifiedHebrew).toBe(false);
+  expect(rashi.aiModifiedEnglish).toBe(true);
+
+  const [original] = versionsOf(target);
+  expect(original.sourceRef).toBe("Original Text");
+  expect(original.sourceHeRef).toBe("מקורי");
+  expect(original.he).toBe("עברית מקורית");
+  expect(original.en).toBe("original english");
+});
+
+test("an AI version that only adds English transfers pendingReview to parent comment", () => {
+  const target = page({
+    sections: [segment({
+      commentary: commentaries({
+        Rashi: [{
+          ref: "Rashi 1",
+          he: "עברית מקורית",
+          en: "",
+          commentary: {
+            Versions: {
+              comments: [aiVersion({
+                he: "",
+                en: "ai english",
+                canReplaceParent: false,
+                pendingReview: "Menachot 87a",
+              })],
+            },
+          },
+        }],
+      }),
+    })],
+  });
+
+  promoteReplaceableAiComments(target);
+
+  expect(rashiOf(target).pendingReview).toBe("Menachot 87a");
+});
+
+test("an AI version that only adds English transfers Model commentary to parent comment", () => {
+  const modelSubcomment = comment({
+    ref: "ai-ref-model",
+    he: "claude-sonnet-5",
+    en: "claude-sonnet-5",
+    sourceRef: "Model",
+  });
+  const target = page({
+    sections: [segment({
+      commentary: commentaries({
+        Rashi: [{
+          ref: "Rashi 1",
+          he: "עברית מקורית",
+          en: "",
+          commentary: {
+            Versions: {
+              comments: [aiVersion({
+                he: "",
+                en: "ai english",
+                canReplaceParent: false,
+                commentary: {
+                  Model: {comments: [modelSubcomment]},
+                },
+              })],
+            },
+          },
+        }],
+      }),
+    })],
+  });
+
+  promoteReplaceableAiComments(target);
+
+  expect(rashiOf(target).commentary!.Model.comments).toEqual([modelSubcomment]);
+  expect(rashiOf(target).commentary?.Versions).toBeUndefined();
+});
+
+test("promotion of English-only AI addition is idempotent", () => {
+  const target = page({
+    sections: [segment({
+      commentary: commentaries({
+        Rashi: [{
+          ref: "Rashi 1",
+          he: "עברית מקורית",
+          en: "",
+          commentary: {
+            Versions: {
+              comments: [aiVersion({
+                he: "",
+                en: "ai english",
+                canReplaceParent: false,
+              })],
+            },
+          },
+        }],
+      }),
+    })],
+  });
+
+  promoteReplaceableAiComments(target);
+  const afterFirst = {he: rashiOf(target).he, en: rashiOf(target).en};
+  promoteReplaceableAiComments(target);
+
+  expect({he: rashiOf(target).he, en: rashiOf(target).en}).toEqual(afterFirst);
+  expect(rashiOf(target).commentary?.Versions).toBeUndefined();
+});
+
+test("replacing Hebrew and adding English sets both aiModifiedHebrew and aiModifiedEnglish to true", () => {
+  const target = pageWithRashi();
+
+  promoteReplaceableAiComments(target);
+
+  expect(rashiOf(target).aiModifiedHebrew).toBe(true);
+  expect(rashiOf(target).aiModifiedEnglish).toBe(true);
+});
+
+test("replacing Hebrew without English sets aiModifiedHebrew to true and aiModifiedEnglish to false", () => {
+  const target = pageWithRashi({
+    commentary: {
+      Versions: {
+        comments: [aiVersion({
+          he: "עברית של הבינה",
+          en: "",
+          canReplaceParent: true,
+        })],
+      },
+    },
+  });
+
+  promoteReplaceableAiComments(target);
+
+  expect(rashiOf(target).aiModifiedHebrew).toBe(true);
+  expect(rashiOf(target).aiModifiedEnglish).toBe(false);
+});

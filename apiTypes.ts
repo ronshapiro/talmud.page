@@ -58,6 +58,8 @@ export interface ApiComment extends Highlightable {
   isUnique?: boolean;
   canReplaceParent?: boolean;
   didModifyUiWithAiVersion?: boolean;
+  aiModifiedHebrew?: boolean;
+  aiModifiedEnglish?: boolean;
   // Set when this comment's text comes from an ai_edits.ts entry with status: "pending" — not
   // yet approved via /api/rsi-review-decision. Visible to every reader (see
   // RsiReviewControls.tsx for why), but only a key-holder gets the controls.

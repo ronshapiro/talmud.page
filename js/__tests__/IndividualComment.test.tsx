@@ -376,6 +376,53 @@ describe("classes", () => {
     const root = renderComment({he: "עברית", didModifyUiWithAiVersion: true});
 
     expect(classesOf(query(root, ".table-row"))).toContain("ai-modified");
+    expect(classesOf(query(root, ".table-row"))).toContain("ai-modified-hebrew");
+    expect(classesOf(query(root, ".table-row"))).toContain("ai-modified-english");
+  });
+
+  test("English-only AI-modified comments mark only English", () => {
+    const root = renderComment({
+      he: "עברית מקורית",
+      en: "ai english",
+      didModifyUiWithAiVersion: true,
+      aiModifiedHebrew: false,
+      aiModifiedEnglish: true,
+    });
+
+    const classes = classesOf(query(root, ".table-row"));
+    expect(classes).toContain("ai-modified");
+    expect(classes).toContain("ai-modified-english");
+    expect(classes).not.toContain("ai-modified-hebrew");
+  });
+
+  test("Hebrew-only AI-modified comments mark only Hebrew", () => {
+    const root = renderComment({
+      he: "עברית חדשה",
+      en: "original english",
+      didModifyUiWithAiVersion: true,
+      aiModifiedHebrew: true,
+      aiModifiedEnglish: false,
+    });
+
+    const classes = classesOf(query(root, ".table-row"));
+    expect(classes).toContain("ai-modified");
+    expect(classes).toContain("ai-modified-hebrew");
+    expect(classes).not.toContain("ai-modified-english");
+  });
+
+  test("Both Hebrew and English AI-modified comments mark both", () => {
+    const root = renderComment({
+      he: "עברית חדשה",
+      en: "ai english",
+      didModifyUiWithAiVersion: true,
+      aiModifiedHebrew: true,
+      aiModifiedEnglish: true,
+    });
+
+    const classes = classesOf(query(root, ".table-row"));
+    expect(classes).toContain("ai-modified");
+    expect(classes).toContain("ai-modified-hebrew");
+    expect(classes).toContain("ai-modified-english");
   });
 });
 
