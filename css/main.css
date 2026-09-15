@@ -776,9 +776,7 @@ h2, .title, .titleHebrew {
 }
 
 .ai-modified-english .english::before,
-.ai-modified-hebrew .hebrew::before,
-.ai-modified:not(.ai-modified-english):not(.ai-modified-hebrew) .english::before,
-.ai-modified:not(.ai-modified-english):not(.ai-modified-hebrew) .hebrew::before {
+.ai-modified-hebrew .hebrew::before {
     content: "⦿ ";
     background-image: linear-gradient(
         0deg,
