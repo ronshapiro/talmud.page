@@ -1,6 +1,7 @@
 import {execFile} from "child_process";
 import {promisify} from "util";
 import {books} from "../books";
+import {mergeRefs} from "../ref_merging";
 import {splitOnBookName} from "../refs";
 
 const execFileAsync = promisify(execFile);
@@ -86,14 +87,15 @@ export function extractPagesFromPaths(paths: string[]): string[] {
 }
 
 export function formatPrTitle(task: string, backend: string, pages: string[]): string {
-  const prefix = `${task} (${backend})`;
+  const prefix = `${task} | ${backend}`;
   if (pages.length === 0) {
     return prefix;
   }
-  const pagesList = pages.join(", ");
+  const mergedPages = Array.from(mergeRefs(pages).keys());
+  const pagesList = mergedPages.join(", ");
   if (pagesList.length > 150) {
-    const truncated = pages.slice(0, 5).join(", ");
-    return `${prefix}: ${truncated} (+${pages.length - 5} more)`;
+    const truncated = mergedPages.slice(0, 5).join(", ");
+    return `${prefix}: ${truncated} (+${mergedPages.length - 5} more)`;
   }
   return `${prefix}: ${pagesList}`;
 }
@@ -211,7 +213,7 @@ export async function commitAndPushPendingCandidates(
   const runPages = extractPagesFromPaths(parseStatusPaths(status));
   const task = options.task ?? "rashi_tosafot_translation";
   const backend = options.backend ?? "claude";
-  const commitMessage = options.message ?? `${task} (${backend}): new pending translation candidates`;
+  const commitMessage = options.message ?? `${task} | ${backend}: new pending translation candidates`;
 
   const preCommitSha = deps.getCurrentHeadSha ? await deps.getCurrentHeadSha() : undefined;
 

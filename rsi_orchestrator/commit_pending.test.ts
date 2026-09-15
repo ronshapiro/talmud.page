@@ -97,28 +97,31 @@ describe("extractPagesFromPaths", () => {
 describe("formatPrTitle", () => {
   test("formats title with task, backend, and pages without RSI prefix", () => {
     expect(formatPrTitle("rashi_tosafot_translation", "claude", ["Menachot 90a"]))
-      .toBe("rashi_tosafot_translation (claude): Menachot 90a");
+      .toBe("rashi_tosafot_translation | claude: Menachot 90a");
   });
 
-  test("formats title with multiple pages", () => {
+  test("merges adjacent pages in title", () => {
     expect(formatPrTitle("rashi_tosafot_translation", "agy", ["Menachot 90a", "Menachot 90b"]))
-      .toBe("rashi_tosafot_translation (agy): Menachot 90a, Menachot 90b");
+      .toBe("rashi_tosafot_translation | agy: Menachot 90a-90b");
+  });
+
+  test("formats title with multiple tractates", () => {
+    expect(formatPrTitle("rashi_tosafot_translation", "claude", ["Menachot 90a", "Menachot 90b", "Chullin 2a"]))
+      .toBe("rashi_tosafot_translation | claude: Chullin 2a, Menachot 90a-90b");
   });
 
   test("handles empty pages", () => {
     expect(formatPrTitle("rashi_tosafot_translation", "claude", []))
-      .toBe("rashi_tosafot_translation (claude)");
+      .toBe("rashi_tosafot_translation | claude");
   });
 
   test("truncates gracefully if page list is long", () => {
     const pages = [
-      "Menachot 90a", "Menachot 90b", "Menachot 91a", "Menachot 91b", "Menachot 92a",
-      "Menachot 92b", "Menachot 93a", "Menachot 93b", "Menachot 94a", "Menachot 94b",
-      "Menachot 95a", "Menachot 95b",
+      "Menachot 90a", "Chullin 2a", "Shabbat 15a", "Berakhot 2a", "Pesachim 10a",
+      "Yoma 20a", "Sukkah 30a",
     ];
     const title = formatPrTitle("rashi_tosafot_translation", "claude", pages);
-    expect(title).toContain("(+7 more)");
-    expect(title.startsWith("rashi_tosafot_translation (claude): ")).toBe(true);
+    expect(title.startsWith("rashi_tosafot_translation | claude: ")).toBe(true);
     expect(title.startsWith("RSI")).toBe(false);
   });
 });
@@ -256,7 +259,7 @@ describe("commitAndPushPendingCandidates", () => {
     expect(push).toHaveBeenCalled();
     expect(openPr).toHaveBeenCalledWith(
       "rsi-zevachim",
-      "rashi_tosafot_translation (claude): Zevachim 16a",
+      "rashi_tosafot_translation | claude: Zevachim 16a",
       expect.any(String),
     );
     expect(addPrComment).toHaveBeenCalledWith(
@@ -298,7 +301,7 @@ describe("commitAndPushPendingCandidates", () => {
     expect(openPr).not.toHaveBeenCalled();
     expect(updatePrTitle).toHaveBeenCalledWith(
       42,
-      "rashi_tosafot_translation (claude): Zevachim 16a",
+      "rashi_tosafot_translation | claude: Zevachim 16a",
     );
     expect(addPrComment).toHaveBeenCalledWith(
       42,
