@@ -103,8 +103,11 @@ async function main(): Promise<void> {
     callsToday: callsTodayFromLog,
     runners: TASK_RUNNERS,
   });
-  await commitAndPushPendingCandidates(
-    "RSI: new pending translation candidates", realCommitPendingDeps);
+  await commitAndPushPendingCandidates({
+    task: "rashi_tosafot_translation",
+    backend: "claude",
+    message: "new pending translation candidates",
+  }, realCommitPendingDeps);
 }
 
 if (require.main === module) {
