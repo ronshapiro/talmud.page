@@ -23,7 +23,7 @@ repos:
         stages: [post-checkout]
         always_run: true
     -   id: symlink-node-modules
-        name: "Symlink node_modules for new worktrees"
+        name: "Symlink node_modules and cached_outputs for new worktrees"
         entry: git-hooks/post-checkout
         language: script
         stages: [post-checkout]
