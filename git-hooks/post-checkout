@@ -20,7 +20,7 @@ if [[ -z "$GIT_DIR" || -z "$GIT_COMMON_DIR" ]]; then
 fi
 
 # If git-dir and git-common-dir are identical, we are in the main worktree.
-# Never modify node_modules in the main repository.
+# Never modify symlinks in the main repository.
 if [[ "$GIT_DIR" == "$GIT_COMMON_DIR" ]]; then
   exit 0
 fi
@@ -32,26 +32,42 @@ if [[ -z "$WORKTREE_ROOT" ]]; then
 fi
 
 MAIN_REPO="$(dirname "$GIT_COMMON_DIR")"
-SOURCE_NODE_MODULES="$MAIN_REPO/node_modules"
-DEST_NODE_MODULES="$WORKTREE_ROOT/node_modules"
 
-if [[ ! -e "$SOURCE_NODE_MODULES" ]]; then
-  echo "Notice: Source node_modules not found at $SOURCE_NODE_MODULES" >&2
-  exit 0
-fi
+symlink_from_main() {
+  local target_name="$1"
+  local source_path="$MAIN_REPO/$target_name"
+  local dest_path="$WORKTREE_ROOT/$target_name"
 
-# If destination already points to the correct target, nothing to do
-if [[ -L "$DEST_NODE_MODULES" ]]; then
-  CURRENT_TARGET="$(readlink "$DEST_NODE_MODULES")"
-  if [[ "$CURRENT_TARGET" == "$SOURCE_NODE_MODULES" ]]; then
-    exit 0
+  if [[ ! -e "$source_path" ]]; then
+    echo "Notice: Source $target_name not found at $source_path" >&2
+    return 0
   fi
-  # Remove stale or mismatched symlink
-  rm "$DEST_NODE_MODULES"
-elif [[ -d "$DEST_NODE_MODULES" ]]; then
-  # Existing real directory; do not overwrite
-  exit 0
-fi
 
-ln -s "$SOURCE_NODE_MODULES" "$DEST_NODE_MODULES"
-echo "Symlinked node_modules -> $SOURCE_NODE_MODULES"
+  # If destination already points to the correct target, nothing to do
+  if [[ -L "$dest_path" ]]; then
+    local current_target
+    current_target="$(readlink "$dest_path")"
+    if [[ "$current_target" == "$source_path" ]]; then
+      return 0
+    fi
+    # Remove stale or mismatched symlink
+    rm "$dest_path"
+  elif [[ -d "$dest_path" ]]; then
+    # If the directory contains no files (e.g. empty directory created by a test/build), replace it
+    if [[ -z "$(find "$dest_path" -type f -print -quit 2>/dev/null)" ]]; then
+      rm -rf "$dest_path"
+    else
+      # Existing directory with files; do not overwrite
+      return 0
+    fi
+  elif [[ -e "$dest_path" ]]; then
+    # Existing non-directory file; do not overwrite
+    return 0
+  fi
+
+  ln -s "$source_path" "$dest_path"
+  echo "Symlinked $target_name -> $source_path"
+}
+
+symlink_from_main "node_modules"
+symlink_from_main "cached_outputs"
