@@ -804,8 +804,9 @@ export class BookIndex {
     }
   }
 
-  private canonicalNameOrUndefined(name: string): string | undefined {
-    return this.aliasIndex[name.toLowerCase()];
+  canonicalNameOrUndefined(name?: string): string | undefined {
+    if (!name) return undefined;
+    return this.aliasIndex[name.toLowerCase()] ?? this.byCanonicalName[name]?.canonicalName;
   }
 
   canonicalName(name: string): string {
