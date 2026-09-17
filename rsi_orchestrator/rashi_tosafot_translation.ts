@@ -526,7 +526,7 @@ function generationPrompt(candidate: TranslationCandidate, priorFeedback?: strin
     "rather than trying to pull in everything at once.",
     "",
     "Rules on tools and external lookups:",
-    "- You must NOT use python, arbitrary node execution, or unapproved bash scripts.",
+    "- You must NOT execute python, node, or arbitrary bash commands/scripts (e.g. cat, diff, echo to file). The only tools permitted are context_fetch_cli and Wikipedia lookups.",
     "- You must NOT make any lookups to Sefaria (sefaria.org). External lookups to sefaria.org are strictly forbidden and blocked.",
     "- Wikipedia checks ARE permitted (via `npx ts-node rsi_orchestrator/context_fetch_cli.ts wikipedia ...` or curl to wikipedia.org) if needed for realia, botanical/zoological terms, historical figures, or French loanwords.",
     "- If context_fetch_cli or Wikipedia does not provide what you need, do not seek it elsewhere — translate based on the provided text and your own knowledge.",
@@ -562,7 +562,7 @@ function critiquePrompt(candidate: TranslationCandidate, edit: Edit): string {
     "Does the proposed Hebrew preserve the exact wording (only punctuation/HTML changed, no",
     "words added, removed, or changed)? Is the English translation accurate to the Hebrew?",
     "",
-    "No lookups to sefaria.org or unapproved scripts (no python or arbitrary node) are permitted. Wikipedia lookups are permitted.",
+    "No lookups to sefaria.org or arbitrary bash/scripts (e.g. no python, no node, no cat/diff/file creation) are permitted. All text comparison must be performed directly in your own reasoning. Wikipedia lookups are permitted if needed.",
     "",
     'Respond with ONLY a JSON object: {"valid": boolean, "reason": string}. No other text.',
   ].join("\n");
