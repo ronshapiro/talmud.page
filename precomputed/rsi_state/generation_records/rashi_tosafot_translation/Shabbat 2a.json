@@ -1,0 +1,466 @@
+{
+  "Rashi on Shabbat 2a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-17T18:44:22.785Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 2a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יציאות השבת</strong> - הוצאות שמרשות לרשות האמורות לשבת ובגמ' מפרש דהכנסות נמי קא קרי יציאות הואיל ומוציא מרשות לרשות:"
+  },
+  "Rashi on Shabbat 2a:1:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:3",
+      "Rashi on Shabbat 2a:1:4",
+      "Shabbat 2a:3",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2"
+    ],
+    "generatedAt": "2026-09-17T18:52:55.349Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 2a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתים שהן ארבע בפנים</strong> - לאותן העומדים בפנים שתים מן התורה הוצאה והכנסה דבע\"ה ובפ' הזורק <span class=\"parenthesized\">(לקמן שבת צו:)</span> ברישיה נפקא לן מויצו משה ויעבירו קול במחנה וגו' לא תפיקו מרה\"י לר\"ה להביא נדבה למחנה לויה ויום השבת היה כדיליף התם ועל שתים אלו חייב חטאת על שגגתו ועל זדונו כרת ועל התראתו סקילה וכן בכל מלאכת שבת:"
+  },
+  "Rashi on Shabbat 2a:1:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 2a:1:3",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Shabbat 2a:1:4",
+      "Rashi on Shabbat 2a:3:1",
+      "Rashi on Shabbat 2a:3:2",
+      "Rashi on Shabbat 2a:5:1",
+      "Rashi on Shabbat 2a:7:1",
+      "Rashi on Shabbat 2a:7:2",
+      "Rashi on Shabbat 2a:7:3"
+    ],
+    "generatedAt": "2026-09-17T18:55:02.246Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 2a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהן ארבע</strong> - מדבריהם הוסיפו שתים לאסור לכתחלה ואם עשה פטור ולקמן מפרש להו ואזיל:"
+  },
+  "Rashi on Shabbat 2a:1:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Shabbat 2a:1:3"
+    ],
+    "generatedAt": "2026-09-17T18:56:53.469Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 2a:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושתים שהן ד' בחוץ</strong> - שתים מן התורה הוצאה והכנסה דעני העומד בחוץ ושתים מדבריהם כשהמלאכה נעשית על ידי שנים זה עוקר וזה מניח לכתחלה אסור ואם עשה פטור כדיליף בגמרא <span class=\"parenthesized\">(דף ג.)</span> שנים שעשאוה פטורים:"
+  },
+  "Rashi on Shabbat 2a:3:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 2a:3:1",
+      "Shabbat 2a:3",
+      "Rashi on Shabbat 2a:3:2",
+      "Rashi on Shabbat 2a:3:3",
+      "Rashi on Shabbat 2a:3:4",
+      "Rashi on Shabbat 2a:3:5",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Shabbat 2a:1:3",
+      "Rashi on Shabbat 2a:1:4",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2"
+    ],
+    "generatedAt": "2026-09-17T19:09:04.527Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 2a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פשט העני את ידו</strong> - וחפץ בתוכה:"
+  },
+  "Rashi on Shabbat 2a:3:2": {
+    "dependsOn": [
+      "Shabbat 2a:3",
+      "Rashi on Shabbat 2a:3:1",
+      "Rashi on Shabbat 2a:3:2",
+      "Rashi on Shabbat 2a:3:3",
+      "Rashi on Shabbat 2a:3:4",
+      "Rashi on Shabbat 2a:3:5",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Shabbat 2a:1:3",
+      "Rashi on Shabbat 2a:1:4",
+      "Shabbat 2a:1"
+    ],
+    "generatedAt": "2026-09-17T19:11:29.400Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 2a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונתן לתוך ידו דבע\"ה</strong> - דעביד ליה עקירה ברה\"ר והנחה ברה\"י:"
+  },
+  "Rashi on Shabbat 2a:3:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 2a:3:3",
+      "Rashi on Shabbat 2a:3:1",
+      "Rashi on Shabbat 2a:3:2",
+      "Rashi on Shabbat 2a:3:4",
+      "Rashi on Shabbat 2a:3:5",
+      "Shabbat 2a:3",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Shabbat 2a:1:3",
+      "Rashi on Shabbat 2a:1:4",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Tosafot on Shabbat 2a:1:1",
+      "Rashi on Berakhot 2a:1:3",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:4:1",
+      "Rashi on Berakhot 2a:5:1",
+      "Rashi on Arakhin 2a:1:1",
+      "Rashi on Arakhin 2a:1:2",
+      "Rashi on Chullin 2a:1:1",
+      "Rashi on Chullin 2a:2:1"
+    ],
+    "generatedAt": "2026-09-17T19:13:34.469Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 2a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או שנטל מתוכה והוציא</strong> - החפץ והניח בר\"ה דעביד ליה עקירה [ברה\"י] והנחה [ברה\"ר]:"
+  },
+  "Rashi on Shabbat 2a:3:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 2a:3:4",
+      "Rashi on Shabbat 2a:3:1",
+      "Rashi on Shabbat 2a:3:2",
+      "Rashi on Shabbat 2a:3:3",
+      "Rashi on Shabbat 2a:3:5",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Shabbat 2a:1:3",
+      "Rashi on Shabbat 2a:1:4"
+    ],
+    "generatedAt": "2026-09-17T19:14:11.765Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 2a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">העני חייב</strong> - שעשה מלאכה שלמה והרי שתים מן התורה לעומד בחוץ:"
+  },
+  "Rashi on Shabbat 2a:3:5": {
+    "dependsOn": [
+      "Shabbat 2a:3",
+      "Rashi on Shabbat 2a:3:1",
+      "Rashi on Shabbat 2a:3:2",
+      "Rashi on Shabbat 2a:3:3",
+      "Rashi on Shabbat 2a:3:4",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Shabbat 3a:1",
+      "Shabbat 3a:2",
+      "Shabbat 3a:3",
+      "Rashi on Zevachim 2a:1:1",
+      "Rashi on Zevachim 2a:2:1",
+      "Rashi on Zevachim 2a:3:1",
+      "Rashi on Zevachim 2a:4:1"
+    ],
+    "generatedAt": "2026-09-17T19:17:18.415Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 2a:3:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובעל הבית פטור</strong> - פטור לגמרי ואפי' לכתחלה מותר דהא לאו מידי עבד והכי מפרש בגמ' <span class=\"parenthesized\">(דף ג.)</span>:"
+  },
+  "Rashi on Shabbat 2a:4:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 2a:3:1",
+      "Rashi on Shabbat 2a:4:1",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Shabbat 2a:1:3",
+      "Rashi on Shabbat 2a:1:4",
+      "Rashi on Shabbat 2a:3:2",
+      "Rashi on Shabbat 2a:3:3",
+      "Rashi on Shabbat 2a:3:4",
+      "Rashi on Shabbat 2a:3:5",
+      "Shabbat 2a:4",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Chullin 2a:1:1"
+    ],
+    "generatedAt": "2026-09-17T19:19:02.645Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 2a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פשט בעה\"ב כו' בעה\"ב חייב</strong> - והרי שתים מן התורה לעומד בפנים:"
+  },
+  "Rashi on Shabbat 2a:5:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 2a:5:1",
+      "Rashi on Shabbat 2a:3:1",
+      "Rashi on Shabbat 2a:4:1",
+      "Rashi on Shabbat 2a:5:2",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Shabbat 2a:1:3",
+      "Rashi on Shabbat 2a:1:4"
+    ],
+    "generatedAt": "2026-09-17T19:30:20.860Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 2a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פשט העני את כו'</strong> - דעביד ליה עקירה ונטל בעה\"ב מתוכה והניח בפנים ועביד ליה בעל הבית הנחה:"
+  },
+  "Rashi on Shabbat 2a:5:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 2a:5:1",
+      "Rashi on Shabbat 2a:5:2",
+      "Rashi on Shabbat 2a:5:3",
+      "Shabbat 2a:5",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Shabbat 2a:3:1",
+      "Rashi on Shabbat 2a:3:2",
+      "Rashi on Shabbat 2a:4:1",
+      "Shabbat 2a:1",
+      "Rashi on Shabbat 2b:1:1",
+      "Rashi on Shabbat 3a:1:1",
+      "Rashi on Arakhin 2a:1:1",
+      "Rashi on Arakhin 2a:1:2",
+      "Rashi on Chullin 2a:1:1",
+      "Rashi on Chullin 2a:1:2",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3"
+    ],
+    "generatedAt": "2026-09-17T19:32:00.153Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 2a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או שנתן לתוכה</strong> - דעביד ליה בעל הבית עקירה והוציא העני והניח:"
+  },
+  "Rashi on Shabbat 2a:5:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 2a:5:1",
+      "Rashi on Shabbat 2a:5:2",
+      "Rashi on Shabbat 2a:3:1",
+      "Rashi on Shabbat 2a:3:2",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Shabbat 2a:1:3",
+      "Rashi on Shabbat 2a:1:4",
+      "Rashi on Shabbat 2a:7:1",
+      "Rashi on Shabbat 2a:7:2",
+      "Shabbat 3a:1",
+      "Shabbat 3a:2",
+      "Shabbat 3a:3",
+      "Shabbat 3a:4",
+      "Shabbat 3a:5",
+      "Shabbat 3a:6",
+      "Shabbat 3a:7",
+      "Shabbat 3a:8",
+      "Shabbat 3a:9",
+      "Rashi on Shabbat 2b:1:1",
+      "Rashi on Shabbat 2b:2:1",
+      "Rashi on Shabbat 2b:3:1",
+      "Rashi on Shabbat 2b:4:1",
+      "Rashi on Shabbat 3a:1:1",
+      "Rashi on Shabbat 3a:4:1",
+      "Rashi on Shabbat 3a:4:2",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3",
+      "Rashi on Shabbat 2a:4:1",
+      "Rashi on Shabbat 2a:3:3",
+      "Rashi on Shabbat 2a:3:4",
+      "Rashi on Shabbat 2a:3:5",
+      "Rashi on Shabbat 2a:6:1"
+    ],
+    "generatedAt": "2026-09-17T19:38:52.322Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 2a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שניהם פטורין</strong> - שלא עשה האחד מלאכה שלימה אבל אסורין לעשות כן לכתחלה שמא יבואו כל אחד ואחד לעשות מלאכה שלימה בשבת הרי שתים מדבריהם אחת לעני בחוץ ואחת לבע\"ה בפנים וא\"ת שנים הן לכל אחד ואחד עקירה לעני ועקירה לבע\"ה הנחה לעני והנחה לבע\"ה לקמן פריך לה ומשני דלא חשיב אלא עקירות שהן תחלת המלאכה ואיכא למימר שמא יגמרנה:"
+  },
+  "Rashi on Shabbat 2a:7:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 2a:7:1",
+      "Rashi on Shabbat 2a:7:2",
+      "Rashi on Shabbat 2a:7:3",
+      "Shabbat 2a:7",
+      "Steinsaltz on Shabbat 2a:7:1",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Shabbat 2a:3:1"
+    ],
+    "generatedAt": "2026-09-17T19:39:33.964Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 2a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנן התם</strong> - במסכת שבועות:"
+  },
+  "Rashi on Shabbat 2a:7:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 2a:7:1",
+      "Rashi on Shabbat 2a:7:2",
+      "Rashi on Shabbat 2a:7:3",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Shabbat 2a:1:3",
+      "Rashi on Shabbat 2a:1:4",
+      "Shabbat 2a:7",
+      "Verses on Shabbat 2a:7:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Shabbat 2b:1:1",
+      "Rashi on Shabbat 3a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:4:1",
+      "Rashi on Berakhot 2a:5:1"
+    ],
+    "generatedAt": "2026-09-17T19:42:01.351Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 2a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שבועות שתים</strong> - שבועות של ביטוי להרע או להיטיב שתים הן להתחייב עליהן קרבן עולה ויורד האמור בפרשה <span class=\"parenthesized\">(ויקרא ה׳:ד׳)</span> דנפקי מלהרע או להטיב דמשמע להבא אוכל ולא אוכל:"
+  },
+  "Rashi on Shabbat 2a:7:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 2a:7:1",
+      "Rashi on Shabbat 2a:7:2",
+      "Rashi on Shabbat 2a:7:3",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Shabbat 2a:3:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:4:1",
+      "Rashi on Berakhot 2a:5:1",
+      "Rashi on Shabbat 2a:4:1",
+      "Rashi on Shabbat 2a:5:1",
+      "Rashi on Shabbat 2a:5:2",
+      "Rashi on Shabbat 2a:5:3",
+      "Shabbat 2a:7",
+      "Tosafot on Shabbat 2a:7:1",
+      "Rabbeinu Chananel on Shabbat 2a:7:1",
+      "Tosafot on Shabbat 2a:1:1",
+      "Tosafot on Shabbat 2a:1:2"
+    ],
+    "generatedAt": "2026-09-17T19:43:53.811Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 2a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהן ארבע</strong> - יש לך לרבות עוד שתים מריבוי הכתוב לכל אשר יבטא האדם לרבות לשעבר אכלתי ולא אכל לא אכלתי ואכל:"
+  },
+  "Tosafot on Shabbat 2a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-17T19:01:30.743Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 2a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יציאות השבת שתים שהן ארבע</strong> - הקשה ריב\"א דדיני הוצאות שבת היה לו לשנות גבי אבות מלאכות אחר פרק כלל גדול לקמן <span class=\"parenthesized\">(שבת דף עג.)</span> דהתם קתני אבות מלאכות מ' חסר אחת וקתני הוצאה לבסוף והוה ליה להתחיל כסדר בדברים דמיירי בע\"ש מבעוד יום כגון לא יצא החייט במחטו סמוך לחשיכה אין שורין דיו וסמנין ואין צולין בשר ואח\"כ במה מדליקין וכירה ובמה טומנין שהם דברים הנוהגים עם חשיכה ואח\"כ במה בהמה ובמה אשה יוצאה דברים הנוהגים בשבת עצמו ושוב אבות מלאכות של שבת ודרך התנא לשנות כסדר זה כמו שמצינו בפסחים דמתחיל בליל י\"ד ושוב בי\"ד ושוב בשחיטת פסחים שהוא בין הערבים ואחר כך שונה מאכילת פסחים שהוא בלילה וכן ביומא מתחיל בז' ימי' קוד' יה\"כ ואח\"כ בעיה\"כ ואח\"כ ליל י\"כ ותירץ דהוצאה חביבא ליה לאקדומי משום דממשנה זו שמעינן כמה דברים הוצאה והכנסה דעני ועשיר ודבעי' עקירה והנחה ושנים שעשאוה פטורין וידו של אדם חשובה לו כד' על ד' וידו של אדם אינה לא כרה\"י ולא כרה\"ר ור\"ת מפרש דדבר ההוה רגיל הש\"ס לשנות תחילה וכן במס' ב\"ק <span class=\"parenthesized\">(דף ב)</span> השור והבור המבעה וההבער ולא נקט כסדר הפרשה וכן מפרש רב האי גבי ד' צריכין להודות בפרק הרואה <span class=\"parenthesized\">(ברכות דף נד:)</span> דלא נקט הש\"ס כסדר הפסוק ועוד מפרש ר\"ת דפתח ביציאות משום דבעי למימר לא יצא החייט במחטו אע\"ג דלא שנה המלבן משום אין נותנין כלים לכובס ולא המעביר משום במה טומנין הוצאה הוצרך לשנות טפי משום דמלאכה גרועה היא כמו שאפרש:"
+  },
+  "Tosafot on Shabbat 2a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-17T19:04:29.235Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 2a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יציאות</strong> - הוצאות הוה ליה למתני אלא נקט יציאות לישנא דקרא אל יצא איש ממקומו <span class=\"parenthesized\">(שמות טז)</span> ודרשינן מינה <span class=\"parenthesized\">(עירובין דף יז:)</span> הוצאה אל יצא עם הכלי ללקט המן:"
+  },
+  "Tosafot on Shabbat 2a:1:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Shabbat 2a:1:3",
+      "Shevuot 2a:1",
+      "Shevuot 2a:2",
+      "Rashi on Shevuot 2a:1:1",
+      "Rashi on Shevuot 2a:2:1",
+      "Shevuot 2a:3",
+      "Shevuot 2a:4",
+      "Rashi on Shevuot 2a:3:1",
+      "Rashi on Shevuot 2a:4:1",
+      "Rashi on Shevuot 2a:3:2",
+      "Rashi on Shevuot 2a:3:3",
+      "Rashi on Shevuot 2a:3:4",
+      "Shabbat 2a:7",
+      "Shabbat 2b:1",
+      "Shabbat 2b:2",
+      "Shabbat 2b:3",
+      "Shabbat 2b:4",
+      "Shabbat 2b:5",
+      "Shabbat 2b:6",
+      "Shabbat 2b:7",
+      "Shabbat 2b:8",
+      "Shabbat 2b:9",
+      "Shabbat 2b:10",
+      "Shabbat 3a:1",
+      "Shabbat 2b:11",
+      "Shabbat 2b:12",
+      "Shabbat 2b:13",
+      "Shabbat 2b:14"
+    ],
+    "generatedAt": "2026-09-17T19:07:54.907Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 2a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתים שהן ארבע בפנים</strong> - כן נראה כמו שמפרש רש\"י כאן דמבפנים היינו לבעה\"ב העומד בפנים ובחוץ היינו לעני העומד בחוץ שתים הוצאות והכנסות דחיוב שהן ד' הוצאות והכנסות דפטור ובשבועות פרש\"י בפנים היינו הכנסות פנים שנים דחיוב דעני ודעשיר ושנים דפטור ובחוץ היינו הוצאות חוץ ואין נראה מדפירש מילי דעני לחוד ומילי דעשיר לחוד משמע כפי שפירש כאן ולפי' דהתם לא היה לו לערב הוצאות והכנסות יחד ומיהו שמא לפי שהיה צריך להאריך אם היה בא לפרש הוצאות לבד [והכנסו' לבד] מ\"מ אין נראה לרבינו אלחנן מדקאמר בגמרא דיקא נמי דקתני יציאות וקמפרש הכנסות לאלתר ולא דייק מדקתני בפנים:"
+  },
+  "Tosafot on Shabbat 2a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-17T19:23:02.316Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 2a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פשט בעה\"ב את ידו כו'</strong> - תימה לר\"י אמאי צריך למתני תרתי דעני ודבעה\"ב וכן בריש שבועות דמפרש בגמרא <span class=\"parenthesized\">(דף ג. ושה)</span> שתים דעני ודבעל הבית מה שייך לקרותו שתים מה לי עני מה לי עשיר ונראה לר\"י דאיצטריך לאשמעי' משום דהוצאה מלאכה גרועה היא דמה לי מוציא מרה\"י לרה\"ר מה לי מוציא מרה\"י לרה\"י ולא הוה גמרינן הוצאה דעני מבעה\"ב ולא בעה\"ב מעני ותדע מדאיצטריך תרי קראי בהוצאה כדנפקא לן בריש הזורק <span class=\"parenthesized\">(לקמן שבת דף צו: ושה)</span> מויכלא העם מהביא ובספ\"ק דעירובין <span class=\"parenthesized\">(דף יז:)</span> נפקא לן מקרא אחרינא דדרשינן אל יצא איש ממקומו אל יוציא והתם פירשתי והיינו משום דמלאכה גרועה היא איצטריך תרווייהו חד לעני וחד לעשיר וכן בכל תולדות דאבות מלאכות לא חיישינן שיהא במשכן אלא אבות בלבד ובתולדות דהוצאה בעי' שיהא במשכן דתנן בהזורק <span class=\"parenthesized\">(דף צו.)</span> שתי גזוזטראות זו כנגד זו המושיט והזורק מזו לזו פטור היו שתיהן בדיוטא אחת הזורק פטור והמושיט חייב שכך היתה עבודת לוים ובריש הזורק <span class=\"parenthesized\">(ג\"ז שם:)</span> נמי בעי הזורק ד' אמות ברה\"ר מנלן ודחיק לאשכחינהו במשכן עד דמסיק כל ד\"א ברה\"ר הלכתא גמירי לה וכל אלו תולדה דהוצאה נינהו ולא אבות שאין אבות אלא מ' חסר אחת וגבי הכנסה נמי אמרינן בפ' במה טומנין <span class=\"parenthesized\">(לקמן שבת מט:)</span> הם העלו קרשים מקרקע לעגלה אף אתם אל תכניסו מרה\"ר לרה\"י וא\"ת כיון דהכנסה היתה במשכן מה צריך תו לקמן בהזורק <span class=\"parenthesized\">(שבת דף צו:)</span> לפרושי דסברא הוא מה לי אפוקי מה לי עיולי דהזורק ד' אמות ברה\"ר משמע דאי הוה משכחת לה במשכן הוה ניחא ליה אע\"ג דהתם ליכא סברא וי\"ל דאיצטריך סברא להכנסה דבעה\"ב דלא הוה במשכן דהם העלו קרשים כו' היינו הכנסה דעני דמסתמא בקרקע היו עומדים שהוא רה\"ר ואם תאמר כיון דאיכא סברא אמאי איצטריך בבמה טומנין למימר דהכנסה היתה במשכן וי\"ל דתנא ליה איידי דבעי למיתני הם הורידו קרשים מעגלה ואתם אל תוציאו כו' אע\"ג דהוצאה נפקא לן מקרא בהדיא איצטריך למיתני שהיתה במשכן משום. דקתני ברישא בברייתא אין חייבין אלא על מלאכה שכיוצא בה היתה במשכן ואם לא היה מוצא הוצאה במשכן הייתי מחייב בכל מלאכות הדומות למלאכה גמורה אע\"פ שלא היה במשכן כמו בהוצאה והא דאסמוך קרא דשבת למלאכת המשכן הוה דרשינן למילתא אחריתי:"
+  },
+  "Tosafot on Shabbat 2a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-17T19:45:59.032Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 2a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שבועות שתים שהן ארבע</strong> - בריש שבועות <span class=\"parenthesized\">(דף ג.)</span> מפרש שתים אוכל ולא אוכל דכתיב בהדיא בקרא להרע או להיטיב דהיינו להבא שהן ד' אכלתי ולא אכלתי דאתי מדרשא והא דלא מפר' שהן ד' אזרוק ולא אזרוק והוה אתיא כולה כרבי ישמעאל ולא הוה צריך לאוקומי בתרי תנאי משום דמתני' בפ\"ג <span class=\"parenthesized\">(דף יט:)</span> תנן בהדיא שהן ד' אכלתי ולא אכלתי וא\"ת אמאי לא קתני שתים שהן שמונה [אוכל ולא אוכל] אכלתי ולא אכלתי אזרוק ולא אזרוק זרקתי ולא זרקתי ונראה דלכך פירש רש\"י בריש שבועות שאינו שונה אלא דבר וחילופו ור' יצחק תירץ דלא נקט אלא אכלתי ולא אכלתי משום דפליג ר' ישמעאל והוי רבותא טפי אבל אזרוק ולא אזרוק דמודה ר\"י לא חש למיתני וא\"ת וגבי שבת אמאי קתני שתים שהן ד' ותו לא ליתני נמי מושיט ומעביר מרשות היחיד לרשות היחיד דרך רה\"ר דחייב כדאמר לקמן <span class=\"parenthesized\">(שבת דף צו:)</span> וזורק מרשות היחיד לרשות הרבים ומרה\"ר לרה\"י וי\"ל דלא קתני אלא הכנסה דדמיא להוצאה שהוא מרה\"י לרה\"ר לאפוקי מושיט ומעביר שהוא מרה\"י לרה\"י וזריקה נמי לא דמיא להוצאה שזה בהולכה ביד וזה בזריקה:"
+  }
+}
