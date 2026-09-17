@@ -65,10 +65,14 @@ async function main(): Promise<void> {
   const durationHours = FLAGS.durationHours ?? 24;
   const checkIntervalMs = (FLAGS.checkIntervalMinutes ?? 60) * 60 * 1000;
 
-  const bookName = FLAGS._[0] as string | undefined;
+  const rawBookName = FLAGS._[0] as string | undefined;
+  const canonicalBookName = (rawBookName && rawBookName !== "all")
+    ? books.canonicalNameOrUndefined(rawBookName)
+    : undefined;
+  const bookName = canonicalBookName ?? rawBookName;
   if (!isContinuous && (!bookName || (bookName !== "all" && !books.byCanonicalName[bookName]))) {
     console.error(
-      "Usage: ts-node rashi_tosafot_translation_cli.ts [<CanonicalBookName> | all] "
+      "Usage: ts-node rashi_tosafot_translation_cli.ts [<BookName> | all] "
       + "[--section 77] [--start-page 10b] [--start-book <name>] [--limit 2] "
       + "[--backend agy|claude] [--model <name>] [--no-push] [--no-debug] "
       + "[--continuous] [--duration-hours 24] [--check-interval-minutes 60]");
@@ -76,17 +80,25 @@ async function main(): Promise<void> {
     return;
   }
   if (bookName && bookName !== "all" && !books.byCanonicalName[bookName]) {
-    console.error(`Unknown book: "${bookName}"`);
+    console.error(`Unknown book: "${rawBookName}"`);
     process.exitCode = 1;
     return;
   }
 
   let {startBook, startPage} = FLAGS;
 
+  if (startBook) {
+    const canonicalStartBook = books.canonicalNameOrUndefined(startBook);
+    if (canonicalStartBook) {
+      startBook = canonicalStartBook;
+    }
+  }
+
   if (startPage && (!bookName || bookName === "all") && startPage.includes(" ")) {
     const [parsedBook, parsedSection] = splitOnBookName(startPage);
-    if (books.byCanonicalName[parsedBook]) {
-      startBook = startBook ?? parsedBook;
+    const canonicalParsedBook = books.canonicalNameOrUndefined(parsedBook);
+    if (canonicalParsedBook) {
+      startBook = startBook ?? canonicalParsedBook;
       startPage = parsedSection;
     }
   }
@@ -149,7 +161,7 @@ async function main(): Promise<void> {
         // way: a real --limit 1 run picked an already-generated candidate, skipped it, and exited
         // with zero output and zero work done).
         candidates = candidates.filter(c => !isFreshTranslation(c));
-        const sliced = FLAGS.limit ? candidates.slice(0, FLAGS.limit) : candidates;
+        const sliced = FLAGS.limit !== undefined ? candidates.slice(0, FLAGS.limit) : candidates;
         if (FLAGS.debug) {
           console.log(
             `Found ${sliced.length} candidate(s) to process for ${scopeLabel}`
