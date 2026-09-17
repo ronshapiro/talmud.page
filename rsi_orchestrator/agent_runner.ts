@@ -318,17 +318,24 @@ export function execFileWithStreaming(
 ): Promise<{stdout: string; stderr: string}> {
   return new Promise((resolve, reject) => {
     let buffer = "";
+    let streamError: Error | undefined;
     const child = execFile(file, args, {
       cwd: options.cwd,
       env: options.env,
       timeout: options.timeout,
       maxBuffer: options.maxBuffer,
     }, (error, stdout, stderr) => {
-      if (options.onStdoutLine && buffer.trim()) {
-        options.onStdoutLine(buffer);
+      if (options.onStdoutLine && buffer.trim() && !streamError) {
+        try {
+          options.onStdoutLine(buffer);
+        } catch (e) {
+          streamError = e as Error;
+        }
         buffer = "";
       }
-      if (error) {
+      if (streamError) {
+        reject(streamError);
+      } else if (error) {
         const err = error as Error & {stdout?: string; stderr?: string};
         err.stdout = stdout;
         err.stderr = stderr;
@@ -341,13 +348,18 @@ export function execFileWithStreaming(
     options.onChild?.(child);
 
     child.stdout?.on("data", (chunk: Buffer | string) => {
-      if (!options.onStdoutLine) return;
+      if (!options.onStdoutLine || streamError) return;
       buffer += chunk.toString();
       const lines = buffer.split("\n");
       buffer = lines.pop() ?? "";
       for (const line of lines) {
         if (line.trim()) {
-          options.onStdoutLine(line);
+          try {
+            options.onStdoutLine(line);
+          } catch (e) {
+            streamError = e as Error;
+            break;
+          }
         }
       }
     });
