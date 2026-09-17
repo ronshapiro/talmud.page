@@ -319,6 +319,19 @@ describe("execFileWithStreaming", () => {
     expect(stdout).toContain("line1\nline2");
     expect(lines).toEqual(["line1", "line2"]);
   });
+
+  test("rejects promise when onStdoutLine throws an error", async () => {
+    const customError = new Error("Blocked command test");
+    await expect(execFileWithStreaming(
+      "node",
+      ["-e", "console.log('test line');"],
+      {
+        onStdoutLine: () => {
+          throw customError;
+        },
+      },
+    )).rejects.toThrow("Blocked command test");
+  });
 });
 
 describe("isCommandAllowed", () => {

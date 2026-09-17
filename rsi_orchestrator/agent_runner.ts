@@ -318,21 +318,35 @@ export function execFileWithStreaming(
 ): Promise<{stdout: string; stderr: string}> {
   return new Promise((resolve, reject) => {
     let buffer = "";
+    let rejected = false;
+
+    const safeReject = (err: unknown) => {
+      if (rejected) return;
+      rejected = true;
+      reject(err);
+    };
+
     const child = execFile(file, args, {
       cwd: options.cwd,
       env: options.env,
       timeout: options.timeout,
       maxBuffer: options.maxBuffer,
     }, (error, stdout, stderr) => {
+      if (rejected) return;
       if (options.onStdoutLine && buffer.trim()) {
-        options.onStdoutLine(buffer);
+        try {
+          options.onStdoutLine(buffer);
+        } catch (err) {
+          safeReject(err);
+          return;
+        }
         buffer = "";
       }
       if (error) {
         const err = error as Error & {stdout?: string; stderr?: string};
         err.stdout = stdout;
         err.stderr = stderr;
-        reject(err);
+        safeReject(err);
       } else {
         resolve({stdout, stderr});
       }
@@ -341,13 +355,18 @@ export function execFileWithStreaming(
     options.onChild?.(child);
 
     child.stdout?.on("data", (chunk: Buffer | string) => {
-      if (!options.onStdoutLine) return;
+      if (rejected || !options.onStdoutLine) return;
       buffer += chunk.toString();
       const lines = buffer.split("\n");
       buffer = lines.pop() ?? "";
       for (const line of lines) {
         if (line.trim()) {
-          options.onStdoutLine(line);
+          try {
+            options.onStdoutLine(line);
+          } catch (err) {
+            safeReject(err);
+            return;
+          }
         }
       }
     });
