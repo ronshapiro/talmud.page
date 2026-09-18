@@ -1,0 +1,34 @@
+{
+  "Rashi on Shabbat 4a:2:1": {
+    "dependsOn": [
+      "Shabbat 4a:2",
+      "Rashi on Shabbat 4a:2:1",
+      "Rashi on Shabbat 4a:2:2"
+    ],
+    "generatedAt": "2026-09-18T03:30:02.459Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 4a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לכי תיכול עלה כורא דמילחא</strong> - בבדיחותא אהדר ליה כשתמדוד לי כור של מלח אומר לך טעמו של דבר לישנא אחרינא לכשתאכל עליה כור של מלח לא תוכל להשוותם זו לזו:"
+  },
+  "Tosafot on Shabbat 4a:1:1": {
+    "dependsOn": [
+      "Shabbat 4a:1",
+      "Shabbat 3b:15",
+      "Shabbat 3b:16",
+      "Rosh on Shabbat 4a:1:1",
+      "Rashba on Shabbat 4a:1:1",
+      "Tosafot on Shabbat 4a:1:1",
+      "Steinsaltz on Shabbat 4a:1:1"
+    ],
+    "generatedAt": "2026-09-18T03:28:05.921Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 4a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כאן לחצר אחרת</strong> - ואסור להחזירה דקתני לא להחזירה אצלו קאמר אלא להחזירה לחצר אחרת:"
+  }
+}

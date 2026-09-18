@@ -62,6 +62,79 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">מתניתין</strong> - דהכא נמי דיקא דהכנסה נמי קרי הוצאה:"
   },
+  "Rashi on Shabbat 2b:13:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 2b:13:1",
+      "Rashi on Shabbat 2b:13:2",
+      "Shabbat 2b:13",
+      "Rashi on Shabbat 2b:11:1",
+      "Rashi on Shabbat 2b:11:2",
+      "Rashi on Shabbat 2b:14:1",
+      "Rashi on Shabbat 2b:5:1",
+      "Rashi on Shabbat 2b:6:1",
+      "Rashi on Shabbat 2b:7:1",
+      "Rashi on Shabbat 2b:7:2",
+      "Rashi on Shabbat 2b:8:1",
+      "Rashi on Shabbat 2b:9:1"
+    ],
+    "generatedAt": "2026-09-18T00:12:55.351Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 2b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דקתני יציאות</strong> - ועל כרחיך לא מצית מפרש לה דיציאות לחודייהו קאמר ומאי שהן ארבע חיובי ופטורי דהא מפרש הכנסה ברישא דקתני כיצד פשט העני את ידו לפנים דהיינו הכנסה וקתני לה בפירושא דיציאות אלמא הכנסה נמי קרי לה הוצאה:"
+  },
+  "Rashi on Shabbat 2b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-18T00:16:10.139Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 2b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבא אמר</strong> - דקשיא לך לישנא דיציאה בין הכא בין התם רשויות קתני רשויות שתים רשות היחיד ורשות הרבים שהן ארבע בפנים כו' כלומר ועל ידיהן יש לך ארבע איסורין בפנים וכנגדן בחוץ ומהן לחיוב ומהן לפטור וההיא דשבועות כולהו לחיובא כדאוקימנא:"
+  },
+  "Rashi on Shabbat 2b:15:1": {
+    "dependsOn": [
+      "Shabbat 2b:15",
+      "Shabbat 2a:1",
+      "Shabbat 2b:16",
+      "Rashi on Shabbat 2b:15:1",
+      "Rashi on Shabbat 2b:6:1",
+      "Rashi on Shabbat 2b:9:1",
+      "Rashi on Shabbat 2b:11:1",
+      "Rashi on Shabbat 2b:16:1"
+    ],
+    "generatedAt": "2026-09-18T00:20:17.713Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 2b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרתי סרי הויין</strong> - ארבעה חיובי ותמניא פטורי שתי עקירות לעני בלא הנחה ושתי הנחות בלא עקירה וכן לבעל הבית כגון פשט העני את ידו מליאה לפנים ונטל בעל הבית מתוכה הרי עקירה לעני והנחה לבעל הבית או שנתן לתוכה והוציא הרי עקירה לבעל הבית והנחה לעני וכן פשט בעל הבית כו' כדקתני לה:"
+  },
+  "Rashi on Shabbat 2b:16:1": {
+    "dependsOn": [
+      "Shabbat 2b:16",
+      "Rashi on Shabbat 2b:15:1",
+      "Rashi on Shabbat 2b:5:1",
+      "Rashi on Shabbat 2b:6:1",
+      "Rashi on Shabbat 2b:7:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:2:1",
+      "Rashi on Shabbat 2a:3:1"
+    ],
+    "generatedAt": "2026-09-18T00:26:23.421Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 2b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיתסרי הויין</strong> - דאיכא למיחשב נמי הנך פטורי דמיתנו גבי חיובי העני חייב ובעל הבית פטור וכן בעל הבית חייב והעני פטור:"
+  },
   "Rashi on Shabbat 2b:1:1": {
     "dependsOn": [
       "Rashi on Shabbat 2b:5:1",
@@ -276,6 +349,47 @@
       "Tosafot on Shabbat 2b:11:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">מי לא עסקינן דקא מעייל מרה\"ר לרה\"י</strong> - ובפ\"ק דשבועות <span class=\"parenthesized\">(דף ה:)</span> פריך ואימא דקא מפיק מרה\"י לרה\"ר ומשני א\"כ ליתני המוציא לרה\"ר מאי מרשות לרשות אפילו מרה\"ר לרה\"י וא\"ת ומ\"ש דתני תולדה דהוצאה ולא תני שום תולדה דכל שאר אבות ותירץ ריב\"א דבכל שאר תולדות אם היה רוצה לשנותם היה צריך להאריך בלשונו אבל הכנסה דקרויה הוצאה כוללה עמו בקוצר:"
+  },
+  "Tosafot on Shabbat 2b:13:1": {
+    "dependsOn": [
+      "Shabbat 2b:13",
+      "Tosafot on Shabbat 2b:1:1",
+      "Tosafot on Shabbat 2b:2:1",
+      "Tosafot on Shabbat 2b:5:1",
+      "Tosafot on Shabbat 2b:7:1",
+      "Tosafot on Shabbat 2b:7:2",
+      "Tosafot on Shabbat 2b:8:1",
+      "Tosafot on Shabbat 2b:10:1",
+      "Tosafot on Shabbat 2b:11:1"
+    ],
+    "generatedAt": "2026-09-18T00:14:27.309Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 2b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקמפרש הכנסה לאלתר</strong> - וא\"ת ואמאי לא דייק מכח דלא משכחת ארבע בפנים וד' בחוץ בלא הכנסות וי\"ל דמשכחת להו כדפירשתי לעיל א\"נ דמהא לא הוה שייך למימר מתני' נמי דיקא דמאי אולמא מההיא דשבועות דקיימא עלה דהתם נמי לא משכחת כולהו לחיובא אא\"כ תחשוב הכנסות בכלל:"
+  },
+  "Tosafot on Shabbat 2b:14:1": {
+    "dependsOn": [
+      "Shabbat 2b:14",
+      "Rashi on Shabbat 2b:14:1",
+      "Rashba on Shabbat 2b:14:1",
+      "Tosafot on Shabbat 2b:1:1",
+      "Tosafot on Shabbat 2b:5:1",
+      "Tosafot on Shabbat 2b:7:1",
+      "Tosafot on Shabbat 2b:8:1",
+      "Tosafot on Shabbat 2b:10:1",
+      "Tosafot on Shabbat 2b:11:1",
+      "Tosafot on Shabbat 2b:13:1"
+    ],
+    "generatedAt": "2026-09-18T00:18:48.265Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 2b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רשויות קתני</strong> - רשויות שתים שהן ארבע פירוש דשתים קאי ארשויות רשות הרבים ורשות היחיד וקשה לריב\"א דאם כן לא הוה ליה למיתני ושתים שהן ארבע בחוץ אלא שתים שהן ארבע בפנים וארבע בחוץ שתים שתים למה לי ופירש ריב\"א רשויות שבת יש בהן שני חיובים שהן ד' בפנים וב' חיובים שהן ד' בחוץ ויציאות נראה לריב\"א דהוי כמו תוצאות דאשכחן רשויות דאקרי הוצאות דכתיב <span class=\"parenthesized\">(במדבר ל״ד:ה׳)</span> והיו תוצאותיו הימה ומתרגמינן רשוותיה:"
   },
   "Tosafot on Shabbat 2b:1:1": {
     "dependsOn": [],
