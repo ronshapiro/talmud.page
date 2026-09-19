@@ -1,6 +1,7 @@
 {
   "rashi_tosafot_translation": {
-    "generateModel": "claude-sonnet-5",
-    "critiqueModel": "claude-sonnet-5"
+    "backend": "agy",
+    "generateModel": "gemini-3.8-flash-high",
+    "critiqueModel": "gemini-3.8-flash-high"
   }
 }

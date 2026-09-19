@@ -1,25 +1,28 @@
 ---
 name: continuous-rsi-agent
-description: Runbook for starting and running continuous RSI (Recursive Self-Improving) Rashi and Tosafot translation in talmud.page.
+description: Runbook for starting and running continuous RSI (Recursive Self-Improving) Rashi and Tosafot translation in talmud.page. The only step required is invoking the command.
 metadata:
-  version: 1.0.0
+  version: 1.1.0
 ---
 
 # Continuous RSI Translation Runbook
 
 Use this skill when asked to run continuous translation for Rashi and Tosafot in `talmud.page`.
 
+> [!IMPORTANT]
+> The **only step that needs to be done is to invoke the command**. Do not perform any preliminary or manual setup steps — such as looking up canonical book names in `books.ts`, creating git branches, or configuring worktrees. The CLI handles book alias resolution, candidate discovery, translation, commits, pushing, and PR management completely automatically.
+
 ## 1. Command Invocation
 
 ```bash
-npx ts-node rsi_orchestrator/rashi_tosafot_translation_cli.ts <CanonicalBookName> \
+npx ts-node rsi_orchestrator/rashi_tosafot_translation_cli.ts <BookName> \
   --backend claude \
   --continuous \
   --duration-hours <Hours>
 ```
 
 ### Key Parameters:
-- **`<CanonicalBookName>`**: The canonical name from `books.ts` (e.g. `Chullin`, `Menachot`, `all`). Check aliases if unsure (e.g. "Chulin" -> `Chullin`).
+- **`<BookName>`**: Tractate name or alias (e.g. `Chullin`, `Chulin`, `Menachot`, `all`). The CLI looks up book names by alias automatically (e.g. "Chulin" resolves to `Chullin`), so you can pass canonical names or aliases directly without looking them up beforehand.
 - **`--backend`**: `claude` (default for Claude Code CLI) or `agy` (Antigravity CLI).
 - **`--continuous`**: Runs continuously for the duration, automatically pausing on quota limits and checking hourly until quota recovers.
 - **`--duration-hours`**: Duration for the run (e.g. `18`, `24`, `72`).

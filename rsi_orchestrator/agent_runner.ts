@@ -318,35 +318,28 @@ export function execFileWithStreaming(
 ): Promise<{stdout: string; stderr: string}> {
   return new Promise((resolve, reject) => {
     let buffer = "";
-    let rejected = false;
-
-    const safeReject = (err: unknown) => {
-      if (rejected) return;
-      rejected = true;
-      reject(err);
-    };
-
+    let streamError: Error | undefined;
     const child = execFile(file, args, {
       cwd: options.cwd,
       env: options.env,
       timeout: options.timeout,
       maxBuffer: options.maxBuffer,
     }, (error, stdout, stderr) => {
-      if (rejected) return;
-      if (options.onStdoutLine && buffer.trim()) {
+      if (options.onStdoutLine && buffer.trim() && !streamError) {
         try {
           options.onStdoutLine(buffer);
-        } catch (err) {
-          safeReject(err);
-          return;
+        } catch (e) {
+          streamError = e as Error;
         }
         buffer = "";
       }
-      if (error) {
+      if (streamError) {
+        reject(streamError);
+      } else if (error) {
         const err = error as Error & {stdout?: string; stderr?: string};
         err.stdout = stdout;
         err.stderr = stderr;
-        safeReject(err);
+        reject(err);
       } else {
         resolve({stdout, stderr});
       }
@@ -355,7 +348,7 @@ export function execFileWithStreaming(
     options.onChild?.(child);
 
     child.stdout?.on("data", (chunk: Buffer | string) => {
-      if (rejected || !options.onStdoutLine) return;
+      if (!options.onStdoutLine || streamError) return;
       buffer += chunk.toString();
       const lines = buffer.split("\n");
       buffer = lines.pop() ?? "";
@@ -363,9 +356,9 @@ export function execFileWithStreaming(
         if (line.trim()) {
           try {
             options.onStdoutLine(line);
-          } catch (err) {
-            safeReject(err);
-            return;
+          } catch (e) {
+            streamError = e as Error;
+            break;
           }
         }
       }
