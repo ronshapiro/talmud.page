@@ -527,7 +527,7 @@ function generationPrompt(candidate: TranslationCandidate, priorFeedback?: strin
     "",
     "Rules on tools and external lookups:",
     "- The ONLY permitted CLI tool is context_fetch_cli (`npx ts-node rsi_orchestrator/context_fetch_cli.ts ...`).",
-    "- You must NOT run `git`, `python`, arbitrary node execution (such as `node -e`), or any unapproved bash commands. Any attempt to run git, python, or other commands is blocked and will abort your attempt.",
+    "- You must NOT execute `git`, `python`, arbitrary node execution (such as `node -e`), or arbitrary bash commands/scripts (e.g. cat, diff, echo to file). Any attempt to run git, python, or other unapproved commands is blocked and will abort your attempt.",
     "- Do NOT attempt to output your response via `node` or bash. Output your JSON response directly as text in your message.",
     "- You must NOT make any lookups to Sefaria (sefaria.org). External lookups to sefaria.org are strictly forbidden and blocked.",
     "- Wikipedia checks ARE permitted (via `npx ts-node rsi_orchestrator/context_fetch_cli.ts wikipedia ...` or curl to wikipedia.org) if needed for realia, botanical/zoological terms, historical figures, or French loanwords.",
@@ -564,7 +564,7 @@ function critiquePrompt(candidate: TranslationCandidate, edit: Edit): string {
     "Does the proposed Hebrew preserve the exact wording (only punctuation/HTML changed, no",
     "words added, removed, or changed)? Is the English translation accurate to the Hebrew?",
     "",
-    "No lookups to sefaria.org or unapproved scripts (no python or arbitrary node) are permitted. Wikipedia lookups are permitted.",
+    "No lookups to sefaria.org or arbitrary bash/scripts (e.g. no python, no node, no cat/diff/file creation) are permitted. All text comparison must be performed directly in your own reasoning. Wikipedia lookups are permitted if needed.",
     "",
     'Respond with ONLY a JSON object: {"valid": boolean, "reason": string}. No other text.',
   ].join("\n");
