@@ -1,4 +1,32 @@
 {
+  "Rashi on Shabbat 4a:10:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 4a:2:1",
+      "Rashi on Shabbat 4a:5:1",
+      "Shabbat 4a:10"
+    ],
+    "generatedAt": "2026-09-18T06:37:38.966Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 4a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעל גבי מקום ד'</strong> - דהוי חשוב למיהוי הנחתו הנחה ועקירתו עקירה וידו לאו מקום ד' הוא וקתני לה מתני' בין לעקירה בין להנחה דקתני ונתן לתוך ידו של בעל הבית הרי הנחה או שנטל מתוכה הרי עקירה:"
+  },
+  "Rashi on Shabbat 4a:12:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 4a:2:1",
+      "Rashi on Shabbat 4a:2:2",
+      "Rashi on Shabbat 4a:4:1"
+    ],
+    "generatedAt": "2026-09-18T06:44:35.608Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 4a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קלוטה</strong> - החפץ הואיל ונקלט באוירה של רשות הרבים כמי שהונחה בתוכו הוא ואע\"ג דלא נח:"
+  },
   "Rashi on Shabbat 4a:2:1": {
     "dependsOn": [
       "Shabbat 4a:2",
@@ -12,6 +40,202 @@
       "Rashi on Shabbat 4a:2:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">לכי תיכול עלה כורא דמילחא</strong> - בבדיחותא אהדר ליה כשתמדוד לי כור של מלח אומר לך טעמו של דבר לישנא אחרינא לכשתאכל עליה כור של מלח לא תוכל להשוותם זו לזו:"
+  },
+  "Rashi on Shabbat 4a:2:2": {
+    "dependsOn": [
+      "Shabbat 4a:2",
+      "Rashi on Shabbat 4a:2:1",
+      "Rashi on Shabbat 4a:2:2",
+      "Rashi on Shabbat 4a:4:1",
+      "Rashi on Shabbat 4a:4:2",
+      "Rashi on Shabbat 4a:5:1",
+      "Shabbat 3b:15",
+      "Shabbat 4a:1"
+    ],
+    "generatedAt": "2026-09-18T06:01:28.379Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 4a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחשבתו</strong> - שנתכוון לפנותה מחצר זה לא נתקיימה הלכך לא גזרו אבל לחצר אחרת נתקיימה מחשבתו וגזור דילמא זימנא אחריתי שדי להו לרה\"ר:"
+  },
+  "Rashi on Shabbat 4a:4:1": {
+    "dependsOn": [
+      "Shabbat 4a:4",
+      "Rashi on Shabbat 4a:4:1",
+      "Rashi on Shabbat 4a:4:2",
+      "Rashi on Shabbat 4a:2:1",
+      "Rashi on Shabbat 4a:2:2",
+      "Rashi on Shabbat 4a:5:1",
+      "Rashi on Shabbat 4a:5:2",
+      "Rashi on Shabbat 4a:5:3",
+      "Rashi on Shabbat 4a:7:1",
+      "Rashi on Shabbat 4a:8:1",
+      "Rashi on Shabbat 4a:9:1",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-09-18T06:07:54.480Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 4a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא אידכר</strong> - קודם אפייה על שגגתו שהיא שבת או שמלאכה זו אסורה:"
+  },
+  "Rashi on Shabbat 4a:4:2": {
+    "dependsOn": [
+      "Shabbat 4a:4",
+      "Rashi on Shabbat 4a:4:1",
+      "Rashi on Shabbat 4a:4:2"
+    ],
+    "generatedAt": "2026-09-18T06:09:23.561Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 4a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למאן התירו</strong> - הא לא מסיק אדעתיה לבא לישאל על כך:"
+  },
+  "Rashi on Shabbat 4a:5:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 4a:5:1",
+      "Shabbat 4a:5",
+      "Rashi on Shabbat 4a:5:2",
+      "Rashi on Shabbat 4a:5:3",
+      "Rashi on Shabbat 4a:2:1",
+      "Rashi on Shabbat 4a:2:2",
+      "Rashi on Shabbat 4a:4:1",
+      "Rashi on Shabbat 4a:4:2",
+      "Shabbat 3b:1",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Shabbat 2a:2:1",
+      "Rashi on Shabbat 4a:9:1",
+      "Rashi on Shabbat 4a:7:1",
+      "Rashi on Shabbat 4a:8:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2"
+    ],
+    "generatedAt": "2026-09-18T06:11:18.663Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 4a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואלא דאיהדר ואידכר</strong> - קודם אפייה:"
+  },
+  "Rashi on Shabbat 4a:5:2": {
+    "dependsOn": [
+      "Shabbat 4a:5",
+      "Rashi on Shabbat 4a:5:1",
+      "Rashi on Shabbat 4a:5:2",
+      "Rashi on Shabbat 4a:5:3",
+      "Rashi on Shabbat 4a:2:1",
+      "Rashi on Shabbat 4a:2:2",
+      "Rashi on Shabbat 4a:4:1",
+      "Rashi on Shabbat 4a:4:2",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Shabbat 3a:1:1"
+    ],
+    "generatedAt": "2026-09-18T06:14:16.794Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 4a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי מחייב</strong> - חטאת באפייתו:"
+  },
+  "Rashi on Shabbat 4a:5:3": {
+    "dependsOn": [
+      "Shabbat 4a:5",
+      "Rashi on Shabbat 4a:5:1",
+      "Rashi on Shabbat 4a:5:2",
+      "Rashi on Shabbat 4a:5:3",
+      "Rashi on Shabbat 4a:2:1",
+      "Rashi on Shabbat 4a:2:2",
+      "Rashi on Shabbat 4a:4:1",
+      "Rashi on Shabbat 4a:4:2"
+    ],
+    "generatedAt": "2026-09-18T06:15:08.202Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 4a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תחלתה וסופה</strong> - תחלת המלאכה וסופה לא נודעה לו שגגתו עד שנגמרה עבירה:"
+  },
+  "Rashi on Shabbat 4a:7:1": {
+    "dependsOn": [
+      "Shabbat 4a:7",
+      "Rashi on Shabbat 4a:7:1",
+      "Shabbat 4a:8",
+      "Rashi on Shabbat 4a:8:1",
+      "Rashi on Shabbat 4a:4:1",
+      "Rashi on Shabbat 4a:4:2",
+      "Rashi on Shabbat 4a:5:1",
+      "Jastrow on Shabbat 4a:3:1",
+      "Jastrow on Shabbat 4a:3:2",
+      "Shabbat 4a:3"
+    ],
+    "generatedAt": "2026-09-18T06:22:43.993Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 4a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאחרים</strong> - אחר שראה ובא לפנינו לישאל לרדותה קודם שיבא חבירו לידי חיוב חטאת:"
+  },
+  "Rashi on Shabbat 4a:8:1": {
+    "dependsOn": [
+      "Shabbat 4a:8",
+      "Rashi on Shabbat 4a:8:1",
+      "Steinsaltz on Shabbat 4a:8:1",
+      "Rashi on Shabbat 4a:7:1",
+      "Tosafot on Shabbat 4a:8:1"
+    ],
+    "generatedAt": "2026-09-18T06:24:25.845Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 4a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי אומרים לו לאדם</strong> - צא וחטא איסור קל כדי שלא יתחייב חבירך עונש חמור:"
+  },
+  "Rashi on Shabbat 4a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-18T06:28:42.087Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 4a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בהדיא</strong> - סקילה ובלשון פשיטותא ולא בלשון בעיא מתני רב אחא בריה דרבא מילתא דרב ביבי:"
+  },
+  "Tosafot on Shabbat 4a:10:1": {
+    "dependsOn": [
+      "Shabbat 4a:10",
+      "Tosafot on Shabbat 4a:10:1",
+      "Rashi on Shabbat 4a:10:1",
+      "Rashba on Shabbat 4a:10:1",
+      "Tosafot on Shabbat 4a:1:1",
+      "Tosafot on Shabbat 4a:2:1",
+      "Tosafot on Shabbat 4a:8:1",
+      "Tosafot on Shabbat 4a:9:1",
+      "Tosafot on Shabbat 2a:1:1",
+      "Tosafot on Shabbat 2b:1:1",
+      "Tosafot on Shabbat 3a:1:1"
+    ],
+    "generatedAt": "2026-09-18T06:39:59.387Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 4a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא בעינן עקירה והנחה מעל מקום ד'</strong> - אומר ר\"ת דאין רגילות להניח החפץ בפחות מד' וכן היה מסתמא במשכן ועוד אומר ר\"י דאל יצא איש ממקומו משמע דקאי נמי אחפץ כלומר ממקומו של חפץ דרשינן בעירובין <span class=\"parenthesized\">(פ\"א ד' יז:)</span> דאל יצא אל יוציא אע\"ג דפשטיה דקרא קאי אמקומו של אדם דהיינו ד' אמות מ\"מ משמע נמי מקום החפץ ואין מקום חשוב בפחות מד':"
   },
   "Tosafot on Shabbat 4a:1:1": {
     "dependsOn": [
@@ -30,5 +254,134 @@
       "Tosafot on Shabbat 4a:1:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">כאן לחצר אחרת</strong> - ואסור להחזירה דקתני לא להחזירה אצלו קאמר אלא להחזירה לחצר אחרת:"
+  },
+  "Tosafot on Shabbat 4a:2:1": {
+    "dependsOn": [
+      "Shabbat 4a:2",
+      "Rashi on Shabbat 4a:2:1",
+      "Rashi on Shabbat 4a:2:2",
+      "Tosafot on Shabbat 4a:2:1",
+      "Shabbat 3b:15",
+      "Shabbat 3b:16",
+      "Shabbat 3b:17",
+      "Tosafot on Shabbat 3b:1",
+      "Shabbat 4a:1",
+      "Shabbat 3b:3",
+      "Shabbat 3b:4",
+      "Shabbat 3b:5",
+      "Shabbat 3b:6",
+      "Shabbat 3b:7",
+      "Shabbat 3b:8",
+      "Shabbat 3b:9",
+      "Shabbat 3b:10",
+      "Shabbat 3b:11",
+      "Shabbat 3b:12",
+      "Shabbat 3b:13",
+      "Shabbat 3b:14",
+      "Rashba on Shabbat 4a:1:1",
+      "Rosh on Shabbat 4a:1:1",
+      "Tosafot on Shabbat 4a:1:1",
+      "Steinsaltz In-Depth on Shabbat 4a:1:1",
+      "Steinsaltz In-Depth on Shabbat 4a:2:1",
+      "Steinsaltz on Shabbat 4a:2:1",
+      "Shabbat 96a:1",
+      "Shabbat 96a:2",
+      "Shabbat 96b:1",
+      "Shabbat 96b:2",
+      "Shabbat 98a:1",
+      "Shabbat 98a:2",
+      "Shabbat 98b:1",
+      "Shabbat 98b:2",
+      "Shabbat 98b:3",
+      "Shabbat 99a:1",
+      "Shabbat 99a:2",
+      "Shabbat 99a:3",
+      "Shabbat 96a:3",
+      "Shabbat 96a:4",
+      "Shabbat 98b:4",
+      "Shabbat 98b:5",
+      "Shabbat 98b:6",
+      "Shabbat 98b:7",
+      "Shabbat 98b:8",
+      "Shabbat 98b:10",
+      "Shabbat 98b:11",
+      "Shabbat 96a:5",
+      "Rashi on Shabbat 96a:5:1",
+      "Rashi on Shabbat 96a:5:2",
+      "Rashi on Shabbat 96a:5:3",
+      "Rashi on Shabbat 96a:5:4",
+      "Rashi on Shabbat 96a:5:5",
+      "Tosafot on Shabbat 4a:5:1"
+    ],
+    "generatedAt": "2026-09-18T06:05:58.915Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 4a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומאי שנא</strong> - בזו כנגד זו איירי דבדיוטא אחת שנא ושנא דאיכא איסור חיוב חטאת דמושיט מרה\"י לרה\"י דרך רה\"ר א\"נ בדיוטא אחת וכגון שאין מפסיק שם רה\"ר:"
+  },
+  "Tosafot on Shabbat 4a:5:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 4a:5:1",
+      "Shabbat 4a:5",
+      "Tosafot on Shabbat 4a:1:1",
+      "Tosafot on Shabbat 4a:2:1",
+      "Tosafot on Shabbat 4a:8:1",
+      "Tosafot on Shabbat 4a:9:1",
+      "Tosafot on Shabbat 4a:9:2",
+      "Tosafot on Shabbat 4a:10:1",
+      "Tosafot on Shabbat 3a:1:1",
+      "Tosafot on Shabbat 3a:6:1",
+      "Tosafot on Shabbat 3b:1:1"
+    ],
+    "generatedAt": "2026-09-18T06:20:14.988Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 4a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואלא דאהדר ואידכר מי מחייב</strong> - תימה דלישני אימא לידי <span class=\"parenthesized\">(חיוב)</span> איסור חטאת כדקאמר בסמוך קודם שיבא לידי איסור סקילה:"
+  },
+  "Tosafot on Shabbat 4a:8:1": {
+    "dependsOn": [
+      "Shabbat 4a:8",
+      "Rashi on Shabbat 4a:8:1"
+    ],
+    "generatedAt": "2026-09-18T06:27:05.725Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 4a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי אומרים לו לאדם חטא בשביל שיזכה חבירך</strong> - והא דאמר בבכל מערבין <span class=\"parenthesized\">(עירובי ן לב: ושם)</span> רבי סבר ניחא ליה לחבר דליעבד איסורא קלילא ולא ליעבד עם הארץ איסורא רבה התם כדי שלא יאכל ע\"ה טבל על ידו דאמר לי' מלא לך כלכלה של תאנים מתאנתי אבל הכא שלא נעשה האיסור על ידו אין אומרים לו חטא אפי' איסור קל שלא יבא חבירו לידי איסור חמור ואומר ריב\"א דאפי' למדביק עצמו אין לפשוט משם להתיר דהתם עדיין לא נעשה האיסור ומוטב שיעשה איסור קל ולא יעשה איסור חמור על ידו אבל הכא המעשה של איסור כבר נעשה וממילא יגמור לא יעשה אפי' איסור קל בידים והא דתנן בהשולח <span class=\"parenthesized\">(גיטין דף מא: ושם)</span> מי שחציו עבד וחציו בן חורין כופין את רבו ועושה אותו בן חורין ואע\"ג דבהאי פירקא <span class=\"parenthesized\">(דף לח:)</span> א\"ר יהודה כל המשחרר עבדו עובר בעשה דלעולם בהם תעבודו שאני פריה ורביה דמצוה רבה היא כדמשני התם בר\"א שנכנס לבה\"מ ולא מצא שם י' ושחרר את עבדו להשלימו לי' מצוה דרבים שאני ועוד י\"ל דדוקא היכא דפשע קאמר וכי אומרים לו לאדם חטא כדי כו' ואתי שפיר הא דאמרי' בריש תמיד נשחט <span class=\"parenthesized\">(פסחים דף נט. ושם)</span> דאתי עשה דפסח שיש בו כרת ודחי עשה דהשלמה וקא עברי כהנים בעשה דהשלמה ומקריבין למחוסר כפורים כפרתו כדי שיביא פסחו וכן בפרק בתרא דעירובין <span class=\"parenthesized\">(דף קג: ושם)</span> כהן שנמצא בו יבלת חבירו חותכה לו לו בשיניו אע\"ג דהוי שבות וגבי חציה שפחה וחציה בת חורין שנהגו בה מנהג הפקר וכפו את רבה בהשולח <span class=\"parenthesized\">(גיטין דף לח:)</span> משום שהיתה מחזרת וממציאה עצמה לזנות ודומי' לאנוסין והוי נמי כמצוה דרבים:"
+  },
+  "Tosafot on Shabbat 4a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-18T06:32:44.669Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 4a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קודם שיבא לידי איסור סקילה</strong> - וא\"ת מאי בעיא היא זו אם התירו לרדותה פשיטא שלא ישמע לנו אם נאסור לו ותי' ריב\"א דאם לא התירו לא מיחייב סקילה כיון שמניח מלרדות ע\"י מה שאנו אוסרין לו וכן בפסחים בס\"פ האשה <span class=\"parenthesized\">(דף צב. ושם)</span> ערל הזאה ואיזמל העמידו דבריהם במקום כרת אלמא לא מיחייב כרת הואיל ורבנן הוא דאסרי ליה למיעבד פסח וא\"ת והיכי אתי לידי חיוב סקילה והא התראת ספק הוא דבשעה שהדביק פת בתנור שמא היה בדעתו לרדותה קודם שיבא לידי איסור סקילה ומה שלא רדה שמא שכח ההתראה ותי' ריב\"א דכיון שהדביק תוך כדי דבור של התראה ובודאי תאפה אם לא ירדנה לאו התראת ספק הוא דודאי לא היה בדעתו לרדות קודם אפייה ולא הוי התראת ספק אלא בלוקח אם על הבנים למ\"ד בפ' ואלו הן הלוקין <span class=\"parenthesized\">(מכות דף טו.)</span> בטלו ולא בטלו דשמא לא ישבור כנפיה או לא ישחטנה ועכשיו שמשבר כנפיה אין יכולין להתרותו דלא הויא התראה אלא על הלאו והלאו כבר עבר וכן בשבועה שלא אוכל ככר זו אם אוכל זו ואכליה לאיסוריה והדר אכליה לתנאיה דכשמתרין בו בשעת אכילת איסור עדיין מחוסר מעשה אכילה של תנאי קודם שיתחייב מלקות אבל הכא כשמדביק פת בתנור אין האפייה מחוסרת מעשה:"
+  },
+  "Tosafot on Shabbat 4a:9:2": {
+    "dependsOn": [
+      "Shabbat 4a:9",
+      "Tosafot on Shabbat 4a:9:1",
+      "Tosafot on Shabbat 4a:9:2",
+      "Rashi on Shabbat 4a:9:1",
+      "Tosafot on Shabbat 4a:1:1",
+      "Tosafot on Shabbat 4a:2:1",
+      "Tosafot on Shabbat 4a:8:1"
+    ],
+    "generatedAt": "2026-09-18T06:35:16.743Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 4a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתני לה בהדיא</strong> - אית ספרים דגרסי בעי רב ביבי ומתני בהדיא בבעיא דרב ביבי איסור סקילה:"
   }
 }
