@@ -85,3 +85,5 @@
 {"taskType":"rashi_tosafot_translation","ref":"Rashi on Chullin 11a:16:1","callKind":"critique","toolUses":[],"costUsd":0.04101899999999999,"model":"claude-sonnet-5","timestamp":"2026-09-21T11:59:00.583Z"}
 {"taskType":"rashi_tosafot_translation","ref":"Tosafot on Chullin 11a:16:1","callKind":"generate","toolUses":[],"costUsd":0.19001800000000002,"model":"claude-sonnet-5","timestamp":"2026-09-21T12:01:00.223Z"}
 {"taskType":"rashi_tosafot_translation","ref":"Tosafot on Chullin 11a:16:1","callKind":"critique","toolUses":[],"costUsd":0.147575,"model":"claude-sonnet-5","timestamp":"2026-09-21T12:02:22.953Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Tosafot on Chullin 11a:13:2","callKind":"generate","toolUses":[{"name":"ToolSearch","input":{"query":"select:none","max_results":1}}],"costUsd":0.1523268,"model":"claude-sonnet-5","timestamp":"2026-09-21T16:53:18.963Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Tosafot on Chullin 11a:13:2","callKind":"critique","toolUses":[],"costUsd":0.06796699999999999,"model":"claude-sonnet-5","timestamp":"2026-09-21T16:53:42.594Z"}
