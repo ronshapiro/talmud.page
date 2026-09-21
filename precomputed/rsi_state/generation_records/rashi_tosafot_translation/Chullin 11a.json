@@ -1,4 +1,133 @@
 {
+  "Rashi on Chullin 11a:10:1": {
+    "costUsd": 0.1254004,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T11:31:50.431Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 11a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאליה</strong> - המקריב שלמים או חטאת מכבש ואיל קרב אליה עם האימורים. מן הכליות ולמטה לצד הזנב והזנב קרי ליה אליה:"
+  },
+  "Rashi on Chullin 11a:10:2": {
+    "costUsd": 0.0892842,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T11:32:18.835Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 11a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חוט השדרה</strong> - שנפסק טרפה. וכולהו תננהו באלו טריפות <span class=\"parenthesized\">(דף מב.)</span>:"
+  },
+  "Rashi on Chullin 11a:11:1": {
+    "costUsd": 0.291647,
+    "dependsOn": [
+      "Rashi on Chullin 11a:10:2",
+      "Chullin 11a:11"
+    ],
+    "generatedAt": "2026-09-21T11:35:03.377Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 11a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמתתאי פסק ליה</strong> - שמשפיל לחותכה סמוך לזנב שאפילו נפסק החוט באותו אליה אין הבהמה נטרפה בו כדאמרינן באלו טריפות <span class=\"parenthesized\">(דף מה:)</span> עד היכן חוט השדרה עד בין הפרשות דהיינו כנגד היריכים שהחוט מתפצל שם לג' האחד פורש לצד עצם ימין האליה שקורין הנק\"ש בלע\"ז והשני לשמאלו והאמצעי הולך כדרכו עד סוף הזנב ומבין הפרשות והלאה לא מתקרי חוט השדרה להטריף בו שכבר הבהמה נסמך על ירכה ולא על חללה ואין צריך לחוט והא נמי מבין הפרשות ולמטה פסיק לה לאליה ובודק כל החוט הנשאר מבין הפרשות ולמעלה עד המוח של ראש שהוא יוצא משם:"
+  },
+  "Rashi on Chullin 11a:11:2": {
+    "costUsd": 0.1251552,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T11:36:02.599Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 11a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקום שהכליות יועצות</strong> - למעלה מן הפרשות הוא. בברכות <span class=\"parenthesized\">(דף סא.)</span> אמרינן לב מבין כליות יועצות:"
+  },
+  "Rashi on Chullin 11a:12:1": {
+    "costUsd": 0.2522042,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T11:38:56.143Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 11a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היכא דלייף</strong> - שמחובר מבחוץ לצד הגב ואינו פותח לצד הגב אלא לצד החלל מבקע את השדרה כולה לארכה:"
+  },
+  "Rashi on Chullin 11a:13:1": {
+    "costUsd": 0.13187500000000002,
+    "dependsOn": [
+      "Chullin 11a:13",
+      "Rashi on Chullin 11a:13:1"
+    ],
+    "generatedAt": "2026-09-21T11:39:59.178Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 11a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלמה תהוי</strong> - אפילו לאחר עריפה עולמית אלמא לא מצינו למיתבר גרמי ולמיבדק אי טרפה היא דניתי אחריתי:"
+  },
+  "Rashi on Chullin 11a:14:1": {
+    "costUsd": 0.160229,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T11:51:43.578Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 11a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי נפקא מינה</strong> - אי טרפה היא הא לאו קרבן הוא ומהערופה לא נפקא אלא שתהא לעולם כעין עריפה שלא ינתחנה לאברין אבל טרפות מחיים לא שמעינן מינה:"
+  },
+  "Rashi on Chullin 11a:14:2": {
+    "costUsd": 0.097903,
+    "dependsOn": [
+      "Chullin 11a:14"
+    ],
+    "generatedAt": "2026-09-21T11:52:18.787Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 11a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האמר ר' ינאי</strong> - בקדושין <span class=\"parenthesized\">(דף נז.)</span> לענין לאסור בהנאה:"
+  },
+  "Rashi on Chullin 11a:14:3": {
+    "costUsd": 0.1393016,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T11:53:29.969Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 11a:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כפרה כתיב בה כקדשים</strong> - כפר לעמך ישראל מה קדשים אסורין בהנאה אף היא אסורה בהנאה וה\"נ לענין טרפה מהתם תיפוק:"
+  },
+  "Rashi on Chullin 11a:15:1": {
+    "costUsd": 0.073066,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T11:54:02.323Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 11a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשהיא שלמה</strong> - שלא ינתחנה:"
+  },
+  "Rashi on Chullin 11a:16:1": {
+    "costUsd": 0.10878979999999999,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T11:59:00.585Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 11a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חטאת קרייה רחמנא</strong> - <span class=\"parenthesized\">(במדבר, יט)</span> למי נדה חטאת היא:"
+  },
   "Rashi on Chullin 11a:1:1": {
     "costUsd": 0.1606266,
     "dependsOn": [
@@ -67,6 +196,135 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">קטן וקטנה</strong> - דפליגי רבנן עליה דר\"מ ביבמות <span class=\"parenthesized\">(דף סא:)</span> דתנן יבם קטן שבא על יבמה קטנה יגדלו זה עם זה ולא חיישינן שמא תמצא אילונית או הוא סריס ונמצא פוגע באשת אחיו שלא במקום מצוה דבעי להקים לאחיו שם והאי לאו בר הכי הוא אלא אמרינן זיל בתר רוב קטנים דעלמא דאינם סריסים והיינו רובא דליתיה קמן:"
   },
+  "Rashi on Chullin 11a:6:1": {
+    "costUsd": 0.29286,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T11:23:18.941Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 11a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אתיא מרישא של עולה</strong> - שאין יכולין לחצותו ולבדוק בקרום של מוח שמא ניקב והוא אחת מי\"ח טרפות משום דכתיב <span class=\"parenthesized\">(ויקרא א)</span> ונתח אותה לנתחיה ולא נתחיה לנתחים שאסור לחתוך נתחיה אחד לשנים וקרבן טרפה פסולה בשמעתא קמייתא דמנחות <span class=\"parenthesized\">(דף ה:)</span> שכשהוא אומר למטה מן הבקר שאין ת\"ל אלא להוציא את הטרפה:"
+  },
+  "Rashi on Chullin 11a:7:1": {
+    "costUsd": 0.073212,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T11:23:58.324Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 11a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דפלי ליה</strong> - קורעו וחוצהו ולא יבדיל:"
+  },
+  "Rashi on Chullin 11a:7:2": {
+    "costUsd": 0.1797888,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T11:24:59.640Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 11a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פלי</strong> - פרטי\"ר בלע\"ז:"
+  },
+  "Rashi on Chullin 11a:7:3": {
+    "costUsd": 0.137123,
+    "dependsOn": [
+      "Chullin 11a:7",
+      "Rashi on Chullin 11a:7:1",
+      "Rashi on Chullin 11a:7:2",
+      "Rashi on Chullin 11a:7:3"
+    ],
+    "generatedAt": "2026-09-21T11:27:28.891Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 11a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לייף</strong> - מחובר. תרגום וחברת ותלפף:"
+  },
+  "Rashi on Chullin 11a:9:1": {
+    "costUsd": 0.068081,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T11:28:40.280Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 11a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גומרתא</strong> - גחלת:"
+  },
+  "Rashi on Chullin 11a:9:2": {
+    "costUsd": 0.1045394,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T11:29:22.323Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 11a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקלי ליה</strong> - לעצם הגולגולת לבדוק ליה לקרום:"
+  },
+  "Rashi on Chullin 11a:9:3": {
+    "costUsd": 0.086985,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T11:30:00.641Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 11a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המחתך בגידין</strong> - אע\"פ דקשין כעצמות:"
+  },
+  "Tosafot on Chullin 11a:13:1": {
+    "costUsd": 0.2005974,
+    "dependsOn": [
+      "Chullin 11a:13",
+      "Sotah 46a"
+    ],
+    "generatedAt": "2026-09-21T11:41:48.721Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 11a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אתיא מעגלה ערופה</strong> - תימה דלא דחי גבי פרה ועגלה כיון דלייף לית לן בה וי\"ל דמשמע דבשעת שריפה ולאחר עריפה תהיה שלימה כמו בשעת שחיטה ועריפה:"
+  },
+  "Tosafot on Chullin 11a:15:1": {
+    "costUsd": 0.273265,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T11:57:24.782Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 11a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אתיא מפרה אדומה</strong> - וא\"ת כיון דפרה בת שתי שנים א\"כ דילמא היינו משום דאוקמיה אחזקה שאינה טרפה למ\"ד טרפה אינה חיה ומיהו כאן י\"ל דאיכא חזקה אחרת כנגדה דהעמד טמא על חזקתו אבל לקמן דיליף מעדים זוממים קשה וי\"ל דכל חזקה שלא נתבררה ולא נודעה אפילו שעה אחת לא אזלינן בתרה ויש ללמוד מתוך כך הלכה למעשה דאם עשה גבינות מכמה בהמות ואח\"כ נשחטה האחת ונמצאת טרפה שכולם אסורות דאין לי להעמיד פרה אחזקתה ולומר השתא הוא דנטרפה מיהו בטרפה מחמת שהריאה היא סרוכה דאם היינו בקיאין לבדוק אפשר שהיה לה היתר אין לאסור דהוה ליה ספק ספקא ספק אינה טרפה ואם תמצא לומר טרפה אימא דאחר כך נטרפה:"
+  },
+  "Tosafot on Chullin 11a:15:2": {
+    "costUsd": 0.117614,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T11:58:15.065Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 11a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושחט ושרף</strong> - אע\"פ שיש פסוק אחד בינתים מכל מקום משמע ושרף את הפרה כמו שהיתה בשעת שחיטה מדלא כתיב ושרף אותה:"
+  },
+  "Tosafot on Chullin 11a:16:1": {
+    "costUsd": 0.33759300000000003,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T12:02:22.954Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 11a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חטאת קרייה רחמנא</strong> - תימה דלא קאי האי טעמא בריש אין מעמידין <span class=\"parenthesized\">(ע\"ז כג:)</span> דדייק התם גבי פלוגתא דרבי אליעזר ור' יהושע עד כאן לא פליגי אלא בחששא אבל היכא דודאי רבעה פסולה ש\"מ דפרה קדשי מזבח היא ומשני דשאני פרה דקרייה רחמנא חטאת אלא מעתה תפסל ביוצא דופן אלמה תניא הקדישה ליוצא דופן פסולה ור\"ש מכשיר פירוש ואי איתא לההיא דרשה דחטאת מסתמא אקרא לא הוה פליג ר\"ש ומסיק אלא שאני פרה הואיל ומום פוסל בה דבר ערוה ועבודת כוכבים פוסלין בה לכך פסולה ברביעה וביוצא דופן כשרה ורבנן דפסלי ביוצא דופן משום דסברי דקדשי מזבח היא ומיהו על כרחיך אי אפשר לפרשה כן דבכל דוכתא אמרינן שאני פרה דקדשי בדק הבית היא א\"כ הוה אתי כר\"ש ונראה לפרש דהכי פריך אלא מעתה תפסל ביוצא דופן ופריך לכולהו טעמי בין נפרש דטעמא דרביעה משום דקדשי מזבח היא בין נפרש משום דחטאת קרייה רחמנא דמסתמא ר\"ש לא פליג ארבותיו רבי אליעזר ורבי יהושע ומשני שאני פרה הואיל ומום פוסל בה ולא גרסינן אלא ובספרים לא היה כתוב אלא ש<span class=\"rashi-quotation\">בקונטרס</span> הגיה וכתב ה\"ג אלא וטעמא דחטאת קרייה רחמנא לעולם קאי לרבנן דפסלי ביוצא דופן ואם תאמר לרבי שמעון דלית ליה דחטאת קרייה רחמנא מנא ליה דטרפות פוסל בה וי\"ל דנפקא ליה מדכתיב תמימה כדדרשינן בפ\"ק דמסכת ע\"ז <span class=\"parenthesized\">(דף ו.)</span> דנח גופיה לאו טרפה הוה מדכתיב תמים ורבנן אצטריך תמימה לכדדרשינן בספרי תמימה דאף שתי שערות שחורות פוסלות בה ולרבי שמעון תרתי ש\"מ מדכתיב תמימה בין אדומה לאשר אין בה מום ועוד יש לומר דבפסול התלוי בגופה מודו כולי עלמא כדתנן <span class=\"parenthesized\">(פרה פ\"ד מ\"א)</span> שחטה שלא לשמה פסולה והיינו מחטאת היא ובספרי נמי דרשינן חטאת היא דמועלין בה וכמה דרשות ואם תאמר בכל דוכתין דמשני קדשי בדק הבית אמאי לא חשיב ליה כקדשי מזבח משום דחטאת קרייה רחמנא ויש לומר דבכל דוכתין מסלק לה בקושיא אחריתי ובפרק אלו קדשים <span class=\"parenthesized\">(תמורה כ.)</span> דקאמר דאין פרה עושה תמורה משום דקדשי בדק הבית היא כיון דנפקותא ליתא בגוף הפרה לא שייך דרשה דחטאת קרייה רחמנא ובבכורות <span class=\"parenthesized\">(דף כה.)</span> נמי דקאמר דאין בה איסור גיזה ועבודה לאחר שנפדית משום דקדשי בדק הבית היא ולא הויא כפסולי המוקדשים שנפדו משום דלאחר פדיון שאין תורת פרה עליה לא קרייה רחמנא חטאת אי נמי מה שנפדית היינו משום דלב בית דין מתנה עליה דאי לא הוצרכוה תהא לדמיה כדאמרינן בפרק קמא דשבועות <span class=\"parenthesized\">(דף יא.)</span>:"
+  },
   "Tosafot on Chullin 11a:1:1": {
     "costUsd": 0.1458916,
     "dependsOn": [],
@@ -88,5 +346,27 @@
       "Tosafot on Chullin 11a:2:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">מנא הא מילתא דאמור רבנן זיל בתר רובא</strong> - וא\"ת כיון דאמרינן זיל בתר חזקה כ\"ש בתר רובא דרובא וחזקה רובא עדיף וי\"ל דלרב אחא בר יעקב בעי דלא קים ליה חזקה מקרא ולמאי דמפרש רבינו חיים דהא דרובא עדיף מחזקה לא מסברא אלא ילפינן מפרה אדומה דאזלינן בתר רובא אע\"ג דאיכא חזקה כנגד הרוב דאוקי גברא שמזין עליו בחזקת טמא אתי שפיר הכא:"
+  },
+  "Tosafot on Chullin 11a:7:1": {
+    "costUsd": 0.1408578,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T11:28:26.458Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 11a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל היכא דלייף לית לן בה</strong> - מקשין אמאי לא יליף מכל קרבנות דדחו שבת ולא חיישינן שמא ימצא קרבן טרפה ונמצא שחלל שבת ונ\"ל דאין יכול להוכיח משם דאיכא למימר דמספק נמי אמר רחמנא דלדחי שבת מצות קרבן כמו שבפיקוח נפש אמרינן בספ\"ק דכתובות <span class=\"parenthesized\">(דף טו:)</span> דלא הלכו בו אחר הרוב:"
+  },
+  "Tosafot on Chullin 11a:9:1": {
+    "costUsd": 0.20441379999999998,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T11:31:11.875Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 11a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמנח גומרתא כו'</strong> - ואפילו חל ערב פסח להיות בשבת מלאכה שאי אפשר לעשות מע\"ש דוחה את השבת:"
   }
 }
