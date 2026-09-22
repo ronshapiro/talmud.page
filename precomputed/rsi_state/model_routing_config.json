@@ -2,6 +2,24 @@
   "rashi_tosafot_translation": {
     "backend": "agy",
     "generateModel": "claude-sonnet-4-6",
-    "critiqueModel": "gemini-3.8-flash-medium"
+    "critiqueModel": "gemini-3.8-flash-medium",
+    "configs": {
+      "agy": {
+        "claude-sonnet-4.6": {
+          "generateModel": "claude-sonnet-4-6",
+          "critiqueModel": "gemini-3.8-flash-medium"
+        },
+        "gemini-3.8-flash": {
+          "generateModel": "gemini-3.8-flash-high",
+          "critiqueModel": "gemini-3.8-flash-medium"
+        }
+      },
+      "claude": {
+        "sonnet-5": {
+          "generateModel": "claude-sonnet-5",
+          "critiqueModel": "claude-sonnet-5"
+        }
+      }
+    }
   }
 }

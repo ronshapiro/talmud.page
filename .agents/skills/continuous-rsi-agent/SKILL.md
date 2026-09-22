@@ -16,7 +16,8 @@ Use this skill when asked to run continuous translation for Rashi and Tosafot in
 
 ```bash
 npx ts-node rsi_orchestrator/rashi_tosafot_translation_cli.ts <BookName> \
-  --backend claude \
+  --backend <claude|agy> \
+  [--model-config <ConfigPreset>] \
   --continuous \
   --duration-hours <Hours>
 ```
@@ -24,8 +25,9 @@ npx ts-node rsi_orchestrator/rashi_tosafot_translation_cli.ts <BookName> \
 ### Key Parameters:
 - **`<BookName>`**: Tractate name or alias (e.g. `Chullin`, `Chulin`, `Menachot`, `all`). The CLI looks up book names by alias automatically (e.g. "Chulin" resolves to `Chullin`), so you can pass canonical names or aliases directly without looking them up beforehand.
 - **`--backend`**: `claude` (default for Claude Code CLI) or `agy` (Antigravity CLI).
+- **`--model-config`** (alias: **`--backend-config`**): Named model preset defined in `model_routing_config.json` under the backend (e.g. `claude-sonnet-4.6`, `gemini-3.8-flash`, `sonnet-5`). Specifies the generator and critique model pairing.
 - **`--continuous`**: Runs continuously for the duration, automatically pausing on quota limits and checking hourly until quota recovers.
-- **`--duration-hours`**: Duration for the run (e.g. `18`, `24`, `72`).
+- **`--duration-hours`**: Duration for the run (e.g. `10`, `18`, `24`, `72`).
 - **`--start-page` / `--section`** (optional): Start or bound processing to specific pages (e.g. `--start-page 10b` or `--section 2a`).
 
 ## 2. Antigravity Execution Flags

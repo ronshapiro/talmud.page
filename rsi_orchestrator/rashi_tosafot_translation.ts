@@ -579,6 +579,8 @@ export function parseJsonResponse<T>(text: string): T {
 export interface TaskExecutionOptions {
   backend?: AgentBackend;
   model?: string;
+  critiqueModel?: string;
+  modelConfig?: string;
   debug?: boolean;
   onSubcommand?: (command: string) => void;
 }
@@ -588,7 +590,10 @@ export async function generateViaAgent(
   priorFeedback?: string,
   options?: TaskExecutionOptions,
 ): Promise<GeneratedEdit> {
-  const modelConfig = getTaskModelConfig(TASK_TYPE);
+  const modelConfig = getTaskModelConfig(TASK_TYPE, {
+    configName: options?.modelConfig,
+    backend: options?.backend,
+  });
   const backend = options?.backend ?? modelConfig.backend ?? "claude";
   const model = options?.model ?? modelConfig.generateModel;
   const runner = getAgentRunner(backend);
@@ -631,9 +636,15 @@ export async function critiqueViaAgent(
   edit: Edit,
   options?: TaskExecutionOptions,
 ): Promise<CritiqueOutcome> {
-  const modelConfig = getTaskModelConfig(TASK_TYPE);
+  const modelConfig = getTaskModelConfig(TASK_TYPE, {
+    configName: options?.modelConfig,
+    backend: options?.backend,
+  });
   const backend = options?.backend ?? modelConfig.backend ?? "claude";
-  const model = options?.model ?? modelConfig.critiqueModel;
+  const model = options?.critiqueModel
+    ?? (options?.modelConfig
+      ? modelConfig.critiqueModel
+      : (options?.model ?? modelConfig.critiqueModel));
   const runner = getAgentRunner(backend);
   if (options?.debug) {
     console.log(`  [critique] running ${backend} (${model ?? "default model"})...`);

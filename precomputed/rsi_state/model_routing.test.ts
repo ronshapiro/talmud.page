@@ -37,3 +37,108 @@ test("getTaskModelConfig throws when the task type isn't configured", () => {
 test("getTaskModelConfig throws when there's no config file at all", () => {
   expect(() => getTaskModelConfig("my_task", CONFIG_PATH)).toThrow(/my_task/);
 });
+
+test("getTaskModelConfig returns named config under backend group", () => {
+  writeJson(CONFIG_PATH, {
+    my_task: {
+      backend: "claude",
+      generateModel: "default-gen",
+      critiqueModel: "default-crit",
+      configs: {
+        agy: {
+          "claude-sonnet-4.6": {
+            generateModel: "claude-sonnet-4-6",
+            critiqueModel: "gemini-3.8-flash-medium",
+          },
+        },
+      },
+    },
+  });
+
+  const resolved = getTaskModelConfig("my_task", {
+    configPath: CONFIG_PATH,
+    backend: "agy",
+    configName: "claude-sonnet-4.6",
+  });
+  expect(resolved).toEqual({
+    backend: "agy",
+    generateModel: "claude-sonnet-4-6",
+    critiqueModel: "gemini-3.8-flash-medium",
+    configs: expect.any(Object),
+  });
+});
+
+test("getTaskModelConfig fuzzy matches hyphens and dots in configName", () => {
+  writeJson(CONFIG_PATH, {
+    my_task: {
+      backend: "agy",
+      generateModel: "default-gen",
+      critiqueModel: "default-crit",
+      configs: {
+        agy: {
+          "claude-sonnet-4.6": {
+            generateModel: "claude-sonnet-4-6",
+            critiqueModel: "gemini-3.8-flash-medium",
+          },
+        },
+      },
+    },
+  });
+
+  const resolved = getTaskModelConfig("my_task", {
+    configPath: CONFIG_PATH,
+    backend: "agy",
+    configName: "claude-sonnet-4-6",
+  });
+  expect(resolved.generateModel).toBe("claude-sonnet-4-6");
+  expect(resolved.critiqueModel).toBe("gemini-3.8-flash-medium");
+});
+
+test("getTaskModelConfig infers backend from config group if backend omitted", () => {
+  writeJson(CONFIG_PATH, {
+    my_task: {
+      backend: "claude",
+      generateModel: "default-gen",
+      critiqueModel: "default-crit",
+      configs: {
+        agy: {
+          "claude-sonnet-4.6": {
+            generateModel: "claude-sonnet-4-6",
+            critiqueModel: "gemini-3.8-flash-medium",
+          },
+        },
+      },
+    },
+  });
+
+  const resolved = getTaskModelConfig("my_task", {
+    configPath: CONFIG_PATH,
+    configName: "claude-sonnet-4.6",
+  });
+  expect(resolved.backend).toBe("agy");
+  expect(resolved.generateModel).toBe("claude-sonnet-4-6");
+});
+
+test("getTaskModelConfig throws descriptive error for unknown configName", () => {
+  writeJson(CONFIG_PATH, {
+    my_task: {
+      backend: "agy",
+      generateModel: "default-gen",
+      critiqueModel: "default-crit",
+      configs: {
+        agy: {
+          "claude-sonnet-4.6": {
+            generateModel: "claude-sonnet-4-6",
+            critiqueModel: "gemini-3.8-flash-medium",
+          },
+        },
+      },
+    },
+  });
+
+  expect(() => getTaskModelConfig("my_task", {
+    configPath: CONFIG_PATH,
+    backend: "agy",
+    configName: "nonexistent",
+  })).toThrow(/Unknown model config "nonexistent".*claude-sonnet-4.6/);
+});
