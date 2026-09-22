@@ -27,7 +27,7 @@ npx ts-node rsi_orchestrator/rashi_tosafot_translation_cli.ts <BookName> \
 - **`--backend`**: `claude` (default for Claude Code CLI) or `agy` (Antigravity CLI).
 - **`--model-config`** (alias: **`--backend-config`**): Named model preset defined in `model_routing_config.json` under the backend (e.g. `claude-sonnet-4.6`, `gemini-3.8-flash`, `sonnet-5`). Specifies the generator and critique model pairing.
 - **`--continuous`**: Runs continuously for the duration, automatically pausing on quota limits and checking hourly until quota recovers.
-- **`--duration-hours`**: Duration for the run (e.g. `10`, `18`, `24`, `72`).
+- **`--duration-hours`**: Duration for the run (e.g. `18`, `24`, `72`).
 - **`--start-page` / `--section`** (optional): Start or bound processing to specific pages (e.g. `--start-page 10b` or `--section 2a`).
 
 ## 2. Antigravity Execution Flags
