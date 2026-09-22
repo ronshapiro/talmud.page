@@ -1,4 +1,120 @@
 {
+  "Rashi on Chullin 15b:10:1": {
+    "costUsd": 0.1048646,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T09:36:43.155Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 15b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי פוסל</strong> - לקמן נפקא לן מויקח את המאכלת:"
+  },
+  "Rashi on Chullin 15b:10:2": {
+    "costUsd": 0.2679628,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T09:38:45.900Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 15b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי חייא מכשיר</strong> - ומתניתין דקתני שחיטתו כשרה לא מתוקמא כרבי אלא כרבי חייא ולכתחלה מיהת לא שחטינן ואשמועינן מתני' דעד כאן כו':"
+  },
+  "Rashi on Chullin 15b:11:1": {
+    "costUsd": 0.07348439999999999,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T09:39:04.890Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 15b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בין שהסכין למעלה</strong> - כעין כל השחיטות:"
+  },
+  "Rashi on Chullin 15b:11:2": {
+    "costUsd": 0.09363480000000002,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T09:40:07.168Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 15b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובין שהסכין למטה וצואר בהמה למעלה</strong> - ולא חיישינן שמא יכבד הצואר על הסכין ויתיז בבת אחת קודם שיוליך ויביא:"
+  },
+  "Rashi on Chullin 15b:12:1": {
+    "costUsd": 0.1158918,
+    "dependsOn": [
+      "Chullin 15b:11",
+      "Chullin 15b:12",
+      "Chullin 15b:13"
+    ],
+    "generatedAt": "2026-09-22T09:40:44.883Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 15b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעולם רבי חייא ואפי' לכתחלה</strong> - נמי מכשר:"
+  },
+  "Rashi on Chullin 15b:15:1": {
+    "costUsd": 0.09222520000000001,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T09:42:12.866Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 15b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קשיא דרבי אדרבי</strong> - דהא קתני בברייתא רבי פוסל דמשמע דיעבד:"
+  },
+  "Rashi on Chullin 15b:15:2": {
+    "costUsd": 0.0739944,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T09:42:33.444Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 15b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחובר מעיקרו</strong> - פוסל ואפילו בדיעבד:"
+  },
+  "Rashi on Chullin 15b:16:1": {
+    "costUsd": 0.1713944,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T09:44:44.078Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 15b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במוכני</strong> - גלגל שקורין טו\"ר והשכיב בו הסכין חודו למעלה וגלגל ושחט:"
+  },
+  "Rashi on Chullin 15b:16:2": {
+    "costUsd": 0.1026944,
+    "dependsOn": [
+      "Chullin 15b:16"
+    ],
+    "generatedAt": "2026-09-22T09:45:12.920Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 15b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נעץ סכין בכותל</strong> - והוליך והביא צואר בהמה עליה:"
+  },
+  "Rashi on Chullin 15b:16:3": {
+    "costUsd": 0.2937688,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T09:47:47.569Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 15b:16:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צור יוצא מן הכותל</strong> - היינו מחובר מעיקרו דמוקמי' ליה לקמן בכותל מערה שלא נבנה הכותל ע\"י אדם אלא חוקק בקרקע והכותל עומד מאליו ורישא בתלוש ולבסוף חברו והאי דהדר תנא נעץ סכין בכותל איצטריך לאשמועינן דאף על גב דלא מבטל ליה אפילו הכי לכתחלה לא ישחוט. קנה עומד מאליו שלא נטעו אדם שם אלא מעצמו עלה:"
+  },
   "Rashi on Chullin 15b:1:1": {
     "costUsd": 0.2789642,
     "dependsOn": [],
@@ -9,6 +125,19 @@
       "Rashi on Chullin 15b:1:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">שהיה לו חולה</strong> - מע\"ש דכיון דשוגג הוא כדאוקמינן וליכא איסור שבת איסור מוקצה נמי ליכא דעומדת לשחיטה היתה בין השמשות ואפילו בשבת משום דחולי דפיקוח נפש דוחה את השבת:"
+  },
+  "Rashi on Chullin 15b:2:1": {
+    "costUsd": 0.18451639999999997,
+    "dependsOn": [
+      "Chullin 15b:2"
+    ],
+    "generatedAt": "2026-09-22T09:23:31.540Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 15b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מ\"ט דרבי יהודה</strong> - הא אפי' במזיד איסור שבת ליכא וכ\"ש בשוגג:"
   },
   "Rashi on Chullin 15b:2:2": {
     "costUsd": 0.13663240000000001,
@@ -258,6 +387,50 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">דלמא אתי למעבד באידך גיסא</strong> - במקום הפגימות. ושמעינן מהא דסכין פגומה ויש בה כדי לשחוט מן הפגם ולהלן אסור לשחוט בה לכתחלה דהא הכא גזרינן משום אידך גיסא וכל שכן הכא דבההיא גיסא גופה פגומה:"
   },
+  "Rashi on Chullin 15b:9:2": {
+    "costUsd": 0.1342014,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T09:30:30.579Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 15b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קרומית</strong> - צלע של קנה:"
+  },
+  "Tosafot on Chullin 15b:12:1": {
+    "costUsd": 0.10472160000000001,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T09:41:18.117Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 15b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להודיעך כחו דרבי</strong> - ולא חייש לאשמועי' כח דהיתרא דרבי חייא דכבר אשמועינן בברייתא דבכל שוחטין בין בתלוש בין במחובר:"
+  },
+  "Tosafot on Chullin 15b:15:1": {
+    "costUsd": 0.1148626,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T09:43:29.720Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 15b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כאן במחובר מעיקרו</strong> - לעיל גבי רבי חייא לא הוה מצי לשנויי הכי דכיון דמחובר מעיקרו כשר בדיעבד למה יאסור לכתחלה דאי משום שמא ידרוס א\"כ תלוש ולבסוף חיברו נמי:"
+  },
+  "Tosafot on Chullin 15b:16:1": {
+    "costUsd": 0.1484642,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T09:49:13.729Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 15b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או שהיה קנה עומד מאליו</strong> - לאו למעוטי נטעו אדם קאתי דההוא נמי חשיב מחובר מעיקרו דאפי' למאן דאמר המשתחוה לבית אסרו המשתחוה לאילן לא אסרו אלא תוספת דוקא ולא נקט הכא עולה מאליו אלא לגלות על צור היוצא מן הכותל דאיירי בכותל מערה דומיא דקנה העומד מאליו:"
+  },
   "Tosafot on Chullin 15b:2:1": {
     "costUsd": 0.1476492,
     "dependsOn": [],
@@ -268,5 +441,51 @@
       "Tosafot on Chullin 15b:2:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">כגון שהיה לו חולה והבריא</strong> - וא\"ת אם יש מוקצה לחצי שבת אמאי שרי לר\"מ בשוחט לחולה והבריא ור' יהודה נמי אמאי לא אסר משום מוקצה דלא אסר אלא משום דקניס שוגג אטו מזיד כדאמרינן בהניזקין <span class=\"parenthesized\">(גיטין נג:)</span> דבעיא היא בשילהי אין צדין <span class=\"parenthesized\">(ביצה דף כו:)</span> אם יש מוקצה לחצי שבת אם לאו וי\"ל כיון שרגילות הוא שחוזר לחוליו לא הוי מוקצה כמו גמרו בידי אדם דשרי התם אי נמי רב גופיה מספקא ליה דשמא אין מוקצה לחצי שבת ולהכי לא אוקמיה כר\"מ אלא כר' יהודה דאסר משום דקניס שוגג אטו מזיד:"
+  },
+  "Tosafot on Chullin 15b:5:1": {
+    "costUsd": 0.6906988000000001,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T09:30:10.848Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 15b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כגון שקצץ לו דלעת</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> מדנקט קצץ משמע דאיירי מן המחובר וקשה דא\"כ מאי איריא מבשל אפילו כי לא נתבשל נמי אסור ואומר ר\"ת דבתלושה איירי ושייך נמי בתלושה לשון קציצה כמו כאן קיצץ בן עזאי תורמוסי תרומה בפ' במה מדליקין <span class=\"parenthesized\">(שבת דף לד.)</span> ובריש פרק אחד דיני ממונות <span class=\"parenthesized\">(סנהדרין דף לג:)</span> אדמוקדך יקוד קוץ קרך וצלי דבתלושה איירי והא דלא נקט לשון חתיכה כדתנן <span class=\"parenthesized\">(שבת דף קנו:)</span> מחתכין את הדילועין לפי שדרך לקוצצן בחתיכות גדולות כשבאין לבשל שייך בו לשון קציצה ומבשל אסור משום דדלעת לא חזיא לכוס כדאמרינן במס' תמיד <span class=\"parenthesized\">(דף כז:)</span> כל מידי לא תפלט קמי רבך בר מקרא חייא דכפתילה של אבר דמיא וא\"ת והא חזיא לבהמה ומוכן לכלבים הוי מוכן לאדם כדמסיק בפ\"ק דביצה <span class=\"parenthesized\">(דף ו:)</span> גבי אפרוח שנולדה בי\"ט וי\"ל כיון דדלעת עומדת לאדם ואינה ראויה לאדם הוי מוקצה אע\"ג דחזיא לבהמה:"
+  },
+  "Tosafot on Chullin 15b:9:1": {
+    "costUsd": 0.2020148,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T09:33:19.573Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 15b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא צור וקנה לכתחלה לא</strong> - וא\"ת ודלמא נקט לשון דיעבד משום מגל יד כדאשכחן בריש כל הפסולין <span class=\"parenthesized\">(זבחים דף לב.)</span> דנקט ששחט משום טמא אע\"ג דזרים ונשים ועבדים שוחטין לכתחלה וי\"ל דהתם ניחא ליה למינקט כל הפסולין בעבודה יחד דשחיטה כשרה אבל כאן מה לו לשנות יחד כשרים לכתחלה עם כשרים בדיעבד וא\"ת דבפ' חבית <span class=\"parenthesized\">(שבת קמז.)</span> קתני הרוחץ דיעבד משום מי מערה אע\"ג דחמי טבריא אפי' לכתחלה וי\"ל דמש\"ה קתני חמי טבריא בהדי מי מערה למידק נמי דמי מערה חמין דומיא דמי טבריא כדאמר התם:"
+  },
+  "Tosafot on Chullin 15b:9:2": {
+    "costUsd": 0.24057099999999998,
+    "dependsOn": [
+      "Rashi on Chullin 16b:1:1",
+      "Chullin 16b:1",
+      "Chullin 16b:2",
+      "Chullin 16b:3",
+      "Chullin 16b:4",
+      "Chullin 16b:5",
+      "Chullin 16b:6",
+      "Chullin 16b:7",
+      "Chullin 15b:9",
+      "Jastrow on Chullin 15b:9:1",
+      "Sefer HeArukh on Chullin 15b:9:1",
+      "Sefer HeArukh on Chullin 15b:9:2"
+    ],
+    "generatedAt": "2026-09-22T09:35:55.994Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 15b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורמינהי בכל שוחטין בין בצור</strong> - הוה מצי למימר בשלמא קנה אקנה לא קשיא הא בסימוניא דאגמא הא בשאר קנה כמו שמחלק לקמן <span class=\"parenthesized\">(חולין דף טז:)</span> אלא צור אצור קשיא:"
   }
 }
