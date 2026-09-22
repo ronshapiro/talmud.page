@@ -116,3 +116,21 @@ test("Hebrew", () => {
   assertThat('אסתר א').isExtractedTo("Esther", "1");
   assertThat('שולחן ערוך אורח חיים ג-ז').isExtractedTo("Shulchan Arukh, Orach Chayim", "3", "7");
 });
+
+test("canonicalName and canonicalNameOrUndefined with aliases", () => {
+  expect(books.canonicalNameOrUndefined("Chulin")).toBe("Chullin");
+  expect(books.canonicalNameOrUndefined("Chullin")).toBe("Chullin");
+  expect(books.canonicalNameOrUndefined("chulin")).toBe("Chullin");
+  expect(books.canonicalNameOrUndefined("Brachot")).toBe("Berakhot");
+  expect(books.canonicalNameOrUndefined("Berakhot")).toBe("Berakhot");
+  expect(books.canonicalNameOrUndefined("Bava Kama")).toBe("Bava Kamma");
+  expect(books.canonicalNameOrUndefined("Bava_Kama")).toBe("Bava Kamma");
+  expect(books.canonicalNameOrUndefined("חולין")).toBe("Chullin");
+  expect(books.canonicalNameOrUndefined("UnknownBook")).toBeUndefined();
+  expect(books.canonicalNameOrUndefined(undefined)).toBeUndefined();
+  expect(books.canonicalNameOrUndefined("")).toBeUndefined();
+
+  expect(books.canonicalName("Chulin")).toBe("Chullin");
+  expect(books.canonicalName("Brachot")).toBe("Berakhot");
+  expect(() => books.canonicalName("UnknownBook")).toThrow("UnknownBook");
+});
