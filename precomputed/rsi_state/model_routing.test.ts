@@ -32,25 +32,13 @@ test("readModelRoutingConfig returns an empty object when there's no config file
 });
 
 test("readModelRoutingConfig reads a written config file", () => {
-  const config: ModelRoutingConfig = {
-    my_task: {generateModel: "claude-opus-5", critiqueModel: "claude-haiku-4-5"},
-  };
+  const config: ModelRoutingConfig = SAMPLE_CONFIG;
   writeJson(CONFIG_PATH, config);
   expect(readModelRoutingConfig(CONFIG_PATH)).toEqual(config);
 });
 
-test("getTaskModelConfig returns the configured entry when present (legacy flat format)", () => {
-  writeJson(CONFIG_PATH, {
-    my_task: {generateModel: "claude-opus-5", critiqueModel: "claude-haiku-4-5"},
-  });
-  expect(getTaskModelConfig("my_task", CONFIG_PATH)).toEqual({
-    generateModel: "claude-opus-5",
-    critiqueModel: "claude-haiku-4-5",
-  });
-});
-
 test("getTaskModelConfig throws when the task type isn't configured", () => {
-  writeJson(CONFIG_PATH, {other_task: {generateModel: "x", critiqueModel: "y"}});
+  writeJson(CONFIG_PATH, {other_task: SAMPLE_CONFIG});
   expect(() => getTaskModelConfig("my_task", CONFIG_PATH)).toThrow(/my_task/);
 });
 

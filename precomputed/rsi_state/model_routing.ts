@@ -12,11 +12,11 @@ export interface ModelConfig {
 }
 
 export interface TaskModelConfig extends ModelConfig {
-  backend?: "claude" | "agy";
+  backend: "claude" | "agy";
 }
 
 export type BackendConfigs = Record<string, ModelConfig>;
-export type ModelRoutingConfig = Record<string, unknown>;
+export type ModelRoutingConfig = Record<string, BackendConfigs>;
 
 export interface ModelConfigLookupOptions {
   configPath?: string;
@@ -64,34 +64,15 @@ export function getTaskModelConfig(
     throw new Error(`No model routing config for task type "${taskType}" in ${configPath}`);
   }
 
-  let backendsMap: Record<string, unknown> | undefined;
-  if (raw[taskType] && typeof raw[taskType] === "object") {
-    backendsMap = raw[taskType] as Record<string, unknown>;
+  const rawObj = raw as Record<string, unknown>;
+  let backends: Record<string, BackendConfigs> | undefined;
+  if (rawObj[taskType] && typeof rawObj[taskType] === "object") {
+    backends = rawObj[taskType] as Record<string, BackendConfigs>;
   } else if ("agy" in raw || "claude" in raw) {
-    backendsMap = raw as Record<string, unknown>;
+    backends = raw;
   } else {
     throw new Error(`No model routing config for task type "${taskType}" in ${configPath}`);
   }
-
-  // Handle legacy flat TaskModelConfig: { generateModel, critiqueModel, backend? }
-  if ("generateModel" in backendsMap && "critiqueModel" in backendsMap) {
-    const legacy = backendsMap as unknown as {
-      generateModel: string;
-      critiqueModel: string;
-      backend?: "claude" | "agy";
-    };
-    const result: TaskModelConfig = {
-      generateModel: legacy.generateModel,
-      critiqueModel: legacy.critiqueModel,
-    };
-    const backend = (options.backend as "claude" | "agy" | undefined) ?? legacy.backend;
-    if (backend) {
-      result.backend = backend;
-    }
-    return result;
-  }
-
-  const backends = backendsMap as Record<string, Record<string, ModelConfig>>;
   const requestedConfig = options.configName;
   const requestedBackend = options.backend;
 
