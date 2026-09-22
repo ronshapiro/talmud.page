@@ -133,7 +133,7 @@ async function main(): Promise<void> {
           await commitAndPushPendingCandidates({
             task: "rashi_tosafot_translation",
             backend: FLAGS.backend ?? "claude",
-            message: `new pending translation candidates (${scopeLabel})`,
+            message: `New pending translation candidates (${scopeLabel})`,
           }, makeRealCommitPendingDeps({debug: FLAGS.debug}));
         }
         : undefined,
@@ -183,7 +183,7 @@ async function main(): Promise<void> {
       await commitAndPushPendingCandidates({
         task: "rashi_tosafot_translation",
         backend: FLAGS.backend ?? "claude",
-        message: `new pending translation candidates (${scopeLabel})`,
+        message: `New pending translation candidates (${scopeLabel})`,
       }, makeRealCommitPendingDeps({debug: FLAGS.debug}));
     }
   }
