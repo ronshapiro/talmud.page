@@ -1,0 +1,375 @@
+{
+  "Rashi on Chullin 14b:10:1": {
+    "costUsd": 0.21599100000000002,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T03:54:50.427Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ש\"ד</strong> - דלאו נולד חשבינן ליה:"
+  },
+  "Rashi on Chullin 14b:10:2": {
+    "costUsd": 0.07838,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T03:55:24.090Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:10:2"
+    ],
+    "sourceText": "סחיטה אב מלאכה היא:"
+  },
+  "Rashi on Chullin 14b:10:3": {
+    "costUsd": 0.17672300000000002,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T03:56:23.793Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסורין</strong> - וטעמא דמשקין שזבו אסורין מפרשינן בשמעתא קמייתא דביצה <span class=\"parenthesized\">(דף ג.)</span> גזירה שמא יסחוט:"
+  },
+  "Rashi on Chullin 14b:11:1": {
+    "costUsd": 0.11113899999999999,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T03:57:18.126Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם לאוכלין היוצא מהם מותר</strong> - אם היו עומדין לאכילה ולא לסחוט היוצא מהם מותר דכיון דלא ניחא ליה ליכא למיגזר אי שרית להו בשתייה היום אתי לסחוט דהא לאו להכי קיימי:"
+  },
+  "Rashi on Chullin 14b:11:2": {
+    "costUsd": 0.0888834,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T03:57:56.715Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם למשקין</strong> - הואיל ונתקיימה מחשבתו אי שרית להו כשזבו איכא למיגזר בהו שמא יסחוט דהא להכי קיימי. שמע מינה מיהא דמשום נולד לא אסר להו רבי יהודה:"
+  },
+  "Rashi on Chullin 14b:12:1": {
+    "costUsd": 0.0965908,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T03:58:30.338Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מודה רבי יהודה בסלי זיתים וענבים</strong> - שאפילו הצניען לאכילה הואיל ורוב בני אדם סוחטין אותם האי נמי ממליך עלייהו ואי שרית למשקין שזבו מהן אתי למיסחט:"
+  },
+  "Rashi on Chullin 14b:13:1": {
+    "costUsd": 0.0689294,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T04:03:23.320Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיון דלהכי קיימי</strong> - סתם ענבים:"
+  },
+  "Rashi on Chullin 14b:13:2": {
+    "costUsd": 0.1445116,
+    "dependsOn": [
+      "Chullin 14b:13",
+      "Chullin 14b:10",
+      "Chullin 14b:11"
+    ],
+    "generatedAt": "2026-09-22T04:04:43.739Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יהיב דעתיה</strong> - עלייהו למשקין וכי הוו משקין הוה ליה נתקיימה מחשבתו וגזרה שמא יסחוט ופלוגתייהו בתותים ורימונים:"
+  },
+  "Rashi on Chullin 14b:13:3": {
+    "costUsd": 0.11264760000000001,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T04:05:34.344Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"נ כיון דלשחיטה קיימא יהיב דעתיה</strong> - דאי משחטה אכיל לה וכיון דדעתיה בהכי גזרינן בה נמי אי שרית ליה באכילה אתי לכתחלה למישחט:"
+  },
+  "Rashi on Chullin 14b:14:1": {
+    "costUsd": 0.22735999999999998,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T04:06:43.959Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מידי הוא טעמא אלא לרב</strong> - האי שנויא אליבא דרב משנינן לה דאיהו אמר לרבי יהודה אסורה באכילה ליומא:"
+  },
+  "Rashi on Chullin 14b:14:2": {
+    "costUsd": 0.0848026,
+    "dependsOn": [
+      "Chullin 14b:14",
+      "Rashi on Chullin 14b:14:1",
+      "Rashi on Chullin 14b:14:2"
+    ],
+    "generatedAt": "2026-09-22T04:09:08.609Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חלוק היה</strong> - ומתיר והכא נמי אמאי אסורה ליומא:"
+  },
+  "Rashi on Chullin 14b:15:1": {
+    "costUsd": 0.0427916,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T04:10:20.228Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נר חדש</strong> - שלא הדליקו בו מעולם. נר של חרס וכשהוא חדש חזי למרמי ביה פירי:"
+  },
+  "Rashi on Chullin 14b:15:2": {
+    "costUsd": 0.1158844,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T04:11:10.111Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל לא ישן</strong> - דמוקצה הוא מחמת מיאוס שהדעת קצה בו. והך בהמה נמי כשקדש היום היא מוקצה מחמת אבר מן החי שלא נשחטה:"
+  },
+  "Rashi on Chullin 14b:16:1": {
+    "costUsd": 0.08988979999999999,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T04:11:38.646Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אימר דשמעת ליה כו'</strong> - דמידי דמאיס מקצה איניש מדעתיה לגמרי:"
+  },
+  "Rashi on Chullin 14b:1:1": {
+    "costUsd": 0.22338980000000003,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T23:35:52.567Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם</strong> - טעמא לאו משום דאין ברירה הוא אלא דחייש לשמא יבקע הנוד והוברר שלא היה עתיד לבא לידי הפרשה ושתה טבלים למפרע:"
+  },
+  "Rashi on Chullin 14b:1:2": {
+    "costUsd": 0.3117704,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T23:37:31.004Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לכשיבקע</strong> - נראה כלומר דלא חיישינן להכי:"
+  },
+  "Rashi on Chullin 14b:3:1": {
+    "costUsd": 0.09152460000000001,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T03:41:18.128Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איו</strong> - שם חכם:"
+  },
+  "Rashi on Chullin 14b:3:2": {
+    "costUsd": 0.1565436,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T03:44:05.801Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין אדם מתנה</strong> - בעירובין <span class=\"parenthesized\">(דף לו:)</span> אמרינן מתנה אדם על עירובו ומניח שני עירובין אחד בסוף אלפים למזרח עירו ואחד בסוף אלפים למערב ואומר אם בא חכם למזרח שהיה חכם עתיד לבא ממקום אחר ולשבות חוץ לתחום ולדרוש עירובי של מזרח יקנה לי שביתה למזרח ואהיה בשבת במקום עירובי ויש לי משם והלאה אלפים ואם יגידו לי שבא חכם למערב יקנה עירובי שבמערב בא לכאן ולכאן אם יבאו שני חכמים זה למזרח וזה למערב לאיזה מהם שארצה אבחר הליכתי ועל שם ברירה של מחר יקנה לי עירובי היום דכל קניית עירוב בין השמשות היא ותני איו דפליג רבי יהודה אסיפא דקתני בא לכאן ולכאן וקאמר רבי יהודה אין אדם מתנה על שני דברים שני חכמים:"
+  },
+  "Rashi on Chullin 14b:3:3": {
+    "costUsd": 0.132114,
+    "dependsOn": [
+      "Chullin 14b:5"
+    ],
+    "generatedAt": "2026-09-22T03:44:51.294Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אם בא חכם כו'</strong> - על חכם אחד שבא ואין ידוע לו לאיזו רוח יבא מתנה:"
+  },
+  "Rashi on Chullin 14b:4:1": {
+    "costUsd": 0.25074460000000004,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T03:46:43.222Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והוינן בה מאי שנא כו' דאין ברירה</strong> - כשיבא למחר למזרח שמא בין השמשות לא היתה דעתו לכך וקנה לו עירובו של מערב והרי הוא כמי ששבת במערב וממקום אותה שביתה יש לו אלפים לכל רוח ונמצאו האלפים האחרונות המזרחיות כלות לביתו ואין לו מביתו ולמזרח אפי' פסיעה אחת:"
+  },
+  "Rashi on Chullin 14b:4:2": {
+    "costUsd": 0.11681139999999998,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T03:47:39.423Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מזרח ומערב נמי</strong> - כשהתנה על חכם אחד ותלה תנאו בביאת חכם נמי אין ברירה דאם בא חכם למזרח לאחר שקדש היום שמא כשקדש היום היה בדעתו למערב וזה תלה בדעתו של חכם והחכם יכול לילך בשבת ארבעת אלפים אמה כדאמרינן בעירובין <span class=\"parenthesized\">(דף מט:)</span> אם ראה שחשכה והיה מכיר אילן או גדר שהוא בסוף אלפים אמה אומר שביתתי בעיקרו ומהלך ממקום רגליו ועד עיקרו אלפים ומעיקרו ולהלן אלפים והכא נמי איכא למימר חכם זה בשעת קניית עירוב לא בא למזרח עדיין ודעתו היה למערב:"
+  },
+  "Rashi on Chullin 14b:5:1": {
+    "costUsd": 0.1016368,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T03:48:35.531Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמר רבי יוחנן וכבר בא חכם</strong> - מתניתין בהכי עסקינן שכבר בא חכם קודם קנין העירוב אבל זה לא ידע להיכן בא ואין כאן צריך ברירה שכך מתנה לצד שהחכם בא יהא עירובי קונה ואין הדבר תלוי אלא גלויי מילתא כשיגידו למחר שבמזרח בא נמצא שקנה עירוב המזרחי:"
+  },
+  "Rashi on Chullin 14b:6:1": {
+    "costUsd": 0.0847376,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T03:48:56.065Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שבריהן ניטלין</strong> - אפילו נשתברו היום בשבת:"
+  },
+  "Rashi on Chullin 14b:6:2": {
+    "costUsd": 0.0786414,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T03:49:35.650Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיהו עושין בהן מעין מלאכה</strong> - שתהא תורת כלי עליהם:"
+  },
+  "Rashi on Chullin 14b:6:3": {
+    "costUsd": 0.0902116,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T03:50:02.411Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעין מלאכה</strong> - כלומר אע\"פ שאין ראויה למלאכה ממש אלא לכסוי בעלמא:"
+  },
+  "Rashi on Chullin 14b:7:1": {
+    "costUsd": 0.0766954,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T03:50:25.837Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעין מלאכתן</strong> - הראשונה:"
+  },
+  "Rashi on Chullin 14b:7:2": {
+    "costUsd": 0.0826482,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T03:50:47.515Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקפה</strong> - תבשיל עב דהיינו מעין עיסה:"
+  },
+  "Rashi on Chullin 14b:8:1": {
+    "costUsd": 0.07166439999999999,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T03:51:28.228Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא נמי כיון דלא איתכן מאתמול</strong> - לאכילה:"
+  },
+  "Rashi on Chullin 14b:9:1": {
+    "costUsd": 0.10657559999999999,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T03:52:04.732Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא מעיקרא אוכלא</strong> - דע\"כ בהמה בחייה לאכילה עומדת כדאוקמינן לעיל דאי לגדל בהמה לרבי יהודה היכי שחטינן בי\"ט:"
+  },
+  "Rashi on Chullin 14b:9:2": {
+    "costUsd": 0.1183582,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T03:53:00.308Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 14b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאיפרת</strong> - נשבר ונפרש וחבירו [בפרק בהמה המקשה] <span class=\"parenthesized\">(לקמן חולין דף עג.)</span> חבורי אוכלין כמאן דמפרתי דמו:"
+  },
+  "Tosafot on Chullin 14b:12:1": {
+    "costUsd": 0.48930319999999994,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T04:02:07.821Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 14b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מודה רבי יהודה בסלי זתים וענבים</strong> - תימה בלאו הכי אמאי לא מדמה למשקים דגזרינן שמא יסחוט ה\"נ גבי בהמה לגזור שמא ישחוט ועוד אמאי נסבין חבריא למימר דרבי יהודה היא כ\"ש דאתיא כרבנן דגזרי שמא יסחוט אפי' בשאר פירות ועוד דהיכי מדמה שמא יסחוט לשמא ישחוט שקל הרבה לסחוט מלשחוט וי\"ל דודאי לא דמי ולהכי לא מדמה לה למשקין אבל מדמה שמא ישחוט דבהמה העומדת לשחיטה לשמא יסחוט דפירות העומדות לאכילה אבל כרבנן לא אתיא דלא אשכחן דגזרינן שמא יסחוט אלא בעומדים למשקין והא דאסרי לכולהו משום דגזרינן עומדין לאכילה אטו עומדין למשקין אבל לרבי יהודה דשרי בשאר פירות העומדין לאכילה ואסר בזיתים וענבים ואף על גב דעומדים לאכילה משום דמימלך וסחיט וה\"ה בבהמה דגזרינן:"
+  },
+  "Tosafot on Chullin 14b:16:1": {
+    "costUsd": 0.33030860000000006,
+    "dependsOn": [],
+    "generatedAt": "2026-09-22T04:14:58.889Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 14b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אימר דשמעת ליה לרבי יהודה במוקצה מחמת מיאוס כו'</strong> - דיחויא בעלמא הוא דמוקצה מחמת איסור יותר חמור ממוקצה מחמת מיאוס דהא לקמן אמר עד כאן לא שרי רבי מאיר אלא במבשל אבל שוחט דאינו ראוי לכוס לא ובהדיא שמעינן ליה לרבי מאיר בפרק כירה <span class=\"parenthesized\">(שבת דף מד.)</span> דלית ליה מוקצה מחמת מיאוס דקאמר כל הנרות מטלטלין אפילו נר ישן חוץ מנר שהדליקו בה באותה שבת ומוקי מתני' כרבי יהודה דמבשל משום דלא מיתוקמא מתניתין משום מוקצה מחמת איסור דמשמע ליה שבת דומיא דיום הכפורים אפילו היה לו חולה והבריא כמו שאפרש בסמוך:"
+  },
+  "Tosafot on Chullin 14b:1:1": {
+    "costUsd": 0.2569882,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T23:39:52.367Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 14b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם כדקתני טעמא וכו'</strong> - קשיא לי דהכא אליבא דרב קיימינן ורב לית ליה דטעמא משום בקיעת הנוד בפ' בכל מערבין <span class=\"parenthesized\">(עירובין דף לו:)</span> דקאמר ליתא למתניתין מקמי איו והלוקח יין ואית ליה דטעמא דרבי יהודה משום דאין ברירה ורבינו שמשון מקוצי הקשה דהיכי מייתי הכא ההוא דאיו אחר שדוחה ההיא דהלוקח הא בפ' בכל מערבין <span class=\"parenthesized\">(גם זה שם)</span> משמע דאי לאו ההיא דהלוקח הוה אמינא דליתא לדאיו מקמי מתניתין דפריך התם לרב אדרבה ליתא לדאיו מקמי מתני' ומשני לא ס\"ד דשמעינן ליה לרבי יהודה דלית ליה ברירה דתניא הלוקח יין כו' ונ\"ל דהכא דיחויא בעלמא הוא דקאמר התם כדקתני טעמא ועיקר סמיך אדאיו דאין להוכיח מההיא דהלוקח דלית ליה ברירה כל כמה דלא מייתי לדאיו דליתיה מקמי מתניתין דעירובין להכי מייתי לדאיו דהשתא ליתא מתניתין מקמי תרווייהו:"
+  }
+}

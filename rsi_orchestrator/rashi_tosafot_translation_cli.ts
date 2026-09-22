@@ -4,6 +4,7 @@ import {books} from "../books";
 import {splitOnBookName} from "../refs";
 import {writeAiEdit} from "../precomputed/ai_edits";
 import {commitAndPushPendingCandidates, makeRealCommitPendingDeps} from "./commit_pending";
+import {getTaskModelConfig} from "../precomputed/rsi_state/model_routing";
 import {
   generateAndRecord,
   isFreshTranslation,
@@ -11,6 +12,7 @@ import {
   listCandidatesForBook,
   recordGenerationForCandidate,
   runContinuousTranslation,
+  TASK_TYPE,
   translateRashiTosafotComments,
   TranslationCandidate,
 } from "./rashi_tosafot_translation";
@@ -36,6 +38,11 @@ async function main(): Promise<void> {
       backend: {
         choices: ["claude", "agy"] as const,
         describe: 'agent backend to use ("claude" or "agy")',
+      },
+      modelConfig: {
+        type: "string",
+        alias: ["backend-config", "backendConfig", "model-config"],
+        describe: 'model routing configuration preset for the backend (e.g. "claude-sonnet-4.6")',
       },
       model: {type: "string", describe: "model override to use for generation"},
       push: {type: "boolean", default: true, describe: "whether to commit and push candidates"},
@@ -74,7 +81,7 @@ async function main(): Promise<void> {
     console.error(
       "Usage: ts-node rashi_tosafot_translation_cli.ts [<BookName> | all] "
       + "[--section 77] [--start-page 10b] [--start-book <name>] [--limit 2] "
-      + "[--backend agy|claude] [--model <name>] [--no-push] [--no-debug] "
+      + "[--backend agy|claude] [--model-config <name>] [--model <name>] [--no-push] [--no-debug] "
       + "[--continuous] [--duration-hours 24] [--check-interval-minutes 60]");
     process.exitCode = 1;
     return;
@@ -105,6 +112,20 @@ async function main(): Promise<void> {
 
   const scopeLabel = bookName && bookName !== "all" ? bookName : "all tractates";
 
+  const resolvedModelConfig = getTaskModelConfig(TASK_TYPE, {
+    configName: FLAGS.modelConfig,
+    backend: FLAGS.backend,
+  });
+  const effectiveBackend = FLAGS.backend ?? resolvedModelConfig.backend ?? "claude";
+
+  if (FLAGS.debug) {
+    console.log(
+      `[Config] Backend: ${effectiveBackend}`
+      + `${FLAGS.modelConfig ? ` (preset: ${FLAGS.modelConfig})` : ""}`
+      + ` | Generation: ${FLAGS.model ?? resolvedModelConfig.generateModel}`
+      + ` | Critique: ${resolvedModelConfig.critiqueModel}`);
+  }
+
   function getCandidates(): TranslationCandidate[] {
     let candidates: TranslationCandidate[];
     if (!bookName || bookName === "all") {
@@ -125,8 +146,9 @@ async function main(): Promise<void> {
           console.log(`\n[Candidate] ${candidate.ref}`);
         }
         return generateAndRecord(candidate, {
-          backend: FLAGS.backend,
+          backend: effectiveBackend,
           model: FLAGS.model,
+          modelConfig: FLAGS.modelConfig,
           debug: FLAGS.debug,
         });
       },
@@ -144,7 +166,7 @@ async function main(): Promise<void> {
           }
           await commitAndPushPendingCandidates({
             task: "rashi_tosafot_translation",
-            backend: FLAGS.backend ?? "claude",
+            backend: effectiveBackend,
             message: `New pending translation candidates (${scopeLabel})`,
           }, makeRealCommitPendingDeps({debug: FLAGS.debug}));
         }
@@ -175,8 +197,9 @@ async function main(): Promise<void> {
           console.log(`\n[Candidate] ${candidate.ref}`);
         }
         return generateAndRecord(candidate, {
-          backend: FLAGS.backend,
+          backend: effectiveBackend,
           model: FLAGS.model,
+          modelConfig: FLAGS.modelConfig,
           debug: FLAGS.debug,
         });
       },
@@ -194,7 +217,7 @@ async function main(): Promise<void> {
       }
       await commitAndPushPendingCandidates({
         task: "rashi_tosafot_translation",
-        backend: FLAGS.backend ?? "claude",
+        backend: effectiveBackend,
         message: `New pending translation candidates (${scopeLabel})`,
       }, makeRealCommitPendingDeps({debug: FLAGS.debug}));
     }
