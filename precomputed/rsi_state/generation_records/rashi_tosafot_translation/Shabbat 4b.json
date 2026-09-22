@@ -1,0 +1,207 @@
+{
+  "Rashi on Shabbat 4b:1:1": {
+    "dependsOn": [
+      "Shabbat 4b:1",
+      "Shabbat 4a:14",
+      "Shabbat 4a:10",
+      "Shabbat 4a:11",
+      "Shabbat 4a:12",
+      "Shabbat 4a:13",
+      "Rashi on Shabbat 4b:1:1",
+      "Rashi on Shabbat 4b:1:2",
+      "Rashi on Shabbat 4a:12:1",
+      "Rashi on Shabbat 4a:12:2",
+      "Steinsaltz on Shabbat 4b:1:1",
+      "Rashba on Shabbat 4b:1:1",
+      "Tosafot on Shabbat 4b:1:1"
+    ],
+    "generatedAt": "2026-09-18T06:48:32.675Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 4b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובתוך י'</strong> - דאילו למעלה מי' לאו אויר ר\"ה הוא אלא אויר מקום פטור הוא ואפי' קלוטה ליכא:"
+  },
+  "Rashi on Shabbat 4b:1:2": {
+    "dependsOn": [
+      "Shabbat 4b:1",
+      "Rashi on Shabbat 4b:1:1",
+      "Rashi on Shabbat 4b:1:2",
+      "Rashi on Shabbat 4b:4:1",
+      "Rashi on Shabbat 4b:6:1",
+      "Rashi on Shabbat 4b:6:2",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Shabbat 3a:1:1"
+    ],
+    "generatedAt": "2026-09-18T06:51:41.764Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 4b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זורק ממושיט</strong> - דאילו במושיט מרה\"י לרה\"י דרך ר\"ה אפי' למעלה מי' קיימא לן בפ' הזורק דחייב דיליף מעגלות של מדבר שמושיטין את הקרשים מזו לזו והן רה\"י וביניהם ר\"ה ולא היו זורקים אותן שלא יתקלקלו:"
+  },
+  "Rashi on Shabbat 4b:4:1": {
+    "dependsOn": [
+      "Shabbat 4b:4",
+      "Shabbat 4a:10",
+      "Rashi on Shabbat 4b:4:1",
+      "Tosafot on Shabbat 4b:4:1",
+      "Rashba on Shabbat 4b:4:1",
+      "Rashi on Shabbat 4b:1:1",
+      "Rashi on Shabbat 4b:1:2",
+      "Rashi on Shabbat 4b:6:1",
+      "Rashi on Shabbat 4b:6:2",
+      "Rashi on Shabbat 4b:8:1",
+      "Rashi on Shabbat 4b:10:1",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Shabbat 3a:1:1"
+    ],
+    "generatedAt": "2026-09-18T07:05:33.037Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 4b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודילמא הנחה הוא דלא בעיא</strong> - מדקתני ר\"ע מחייב אבל עקירה בעי מעל גבי מקום ד' מדלא קתני ר\"ע מחייב שתים אחת משום הוצאה ואחת משום הכנסה:"
+  },
+  "Tosafot on Shabbat 4b:1:1": {
+    "dependsOn": [
+      "Shabbat 4b:1",
+      "Tosafot on Shabbat 4b:2:1",
+      "Tosafot on Shabbat 4b:2:2",
+      "Mishnah Shabbat 11:2"
+    ],
+    "generatedAt": "2026-09-18T06:53:38.659Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 4b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל למעלה מי' ד\"ה פטור</strong> - יש להוכיח קצת מכאן דמושיט חייב נמי למטה מי' דאם תמצא לומר פטור לפי שלא מצינו במשכן מושיט למטה מי' שהעגלות היו גבוהים י' א\"כ לימא הכא אבל למעלה מי' ד\"ה חייב דילפינן זורק ממושיט אבל עתה דמושיט חייב למטה מי' אז לא מצי למימר למעלה מי' ד\"ה חייב דא\"כ למטה מי' מ\"ט פטור זורק ומיהו אינו הוכחה דלא מצי למימר דלכ\"ע ילפינן זורק ממושיט דא\"כ הא דתנן לקמן בהזורק <span class=\"parenthesized\">(שבת דף צו.)</span> היו שתיהן בדיוטא אחת הזורק פטור והמושיט חייב אלמא לא ילפי' זורק ממושיט אמאן תרמייה ותדע דהא כי נמי נימא דמושיט חייב למטה מי' הוי מצי למימר דלכ\"ע ילפי' זורק ממושיט ובדיוטא אחת בין למטה מי' בין למעלה מי' ד\"ה חייב ופליגי למטה מי' בזו כנגד זו דמר סבר אמרינן קלוטה כמי שהונחה דמיא ומר סבר לא אמרינן אלא דלא מצי למימר דלכ\"ע ילפינן זורק ממושיט משום מתני' דהזורק ולמאי שנפרש בסמוך אתי נמי שפיר דלא נקט הכי:"
+  },
+  "Tosafot on Shabbat 4b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-09-18T06:58:09.155Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 4b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דרבי עקיבא סבר ילפי' זורק ממושיט</strong> - וא\"ת והא ע\"כ זורק מרשות היחיד לרה\"י דרך רשות הרבים לא היה במשכן דאם היה במשכן מה צריך למילף ממושיט ומ\"ט נמי דרבנן דפטרי וכיון דלא היה במשכן אמאי מחייב ר\"ע דבתולדה דהוצאה שהיא מלאכה גרועה אין לנו לחייב אלא דוקא אותן שהיו במשכן כדפרישית לעיל <span class=\"parenthesized\">(שבת ד' ב.)</span> וי\"ל דר\"ע סבר דזורק דמי טפי למושיט ממאי דדמו שאר תולדות להוצאה:"
+  },
+  "Tosafot on Shabbat 4b:2:2": {
+    "dependsOn": [
+      "Shabbat 4b:2",
+      "Shabbat 4b:1",
+      "Shabbat 4a:12",
+      "Tosafot on Shabbat 4a:10:1",
+      "Tosafot on Shabbat 4b:1:1",
+      "Tosafot on Shabbat 4b:2:1",
+      "Tosafot on Shabbat 4b:2:2",
+      "Rashba on Shabbat 4b:2:1",
+      "Rashba on Shabbat 4b:1:1"
+    ],
+    "generatedAt": "2026-09-18T07:02:13.324Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 4b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל למטה מי' ד\"ה חייב דאמר קלוטה כמי שהונחה</strong> - כשהחפץ בידו של עני או של בע\"ה לא שייך קלוטה דהא כשנותן בע\"ה לתוך ידו והוציא לא מחייב תימה לר\"י אם ברייתא היא בשום מקום דבעינן הנחה על גבי מקום ד' וכדמשמע קצת בסמוך דא\"ר זירא הא מני אחרים היא משמע דפליגי רבנן עליה אם כן היכי קאמר הכא ד\"ה חייב אם כן ההיא ברייתא מני ונראה דלא קשה מידי שיעמיד ר\"ע ורבנן כמתניתין ולא כההיא ברייתא דניחא ליה להעמיד מתני' ככ\"ע: דאמרינן קלוטה כמי שהונחה דמיא. וקשה לר\"י דמאי פריך למימרא דפשיטא ליה לרבה מנא ליה דפשיטא ליה לרבה אי משום דקאמר הא מני ר\"ע היא היינו משום דלר\"ע אית ליה ממה נפשך קלוטה כמי שהונחה דמיא אבל אליבא דרבנן מספקא ליה ולהכי לא הוה מצי למימר הא מני רבנן היא ואם היינו אומרים הא דקאמר לעיל רבי עקיבא סבר קלוטה כמי שהונחה דמיא ורבנן כו' הכל מדברי רבה היא הוה אתי שפיר אך אין נראה שיהא מדברי רבה ואומר ר\"י דהכי פירושו והא מיבעיא בעי לרבה וכיון דאיכא לספוקי בפלוגתייהו איכא נמי לספוקי דילמא לכולי עלמא לא אמרינן קלוטה כמי שהונחה ובזו כנגד זו לכ\"ע פטור כי פליגי בדיוטא אחת דר\"ע סבר ילפי' זורק ממושיט ורבנן סברי לא ילפינן אלא דרבה לא חש לפרש כל הבעיות ועוד אומר ר\"י דהא דקאמר הש\"ס אבל למטה מעשרה ד\"ה חייב דאמרינן קלוטה כמי שהונחה היינו לרבנן אבל לר\"ע קלוטה לאו כמי שהונחה דמיא ומחייב משום דילפינן זורק ממושיט דאי סבר כמי שהונחה דמיא לא הוה מצי למילף זורק ממושיט דהא לא דמיא כלל דכיון דכמי שהונחה דמיא הוי [זורק למעלה מעשר'] כזורק מרה\"י למקום פטור וממקום פטור לרה\"י ולא דמי כלל למושיט שהוא מרה\"י לרה\"י ורה\"ר באמצע אלמא ע\"כ כיון דסבר ילפינן זורק ממושיט סבר קלוטה לאו כמי שהונחה דמיא והשתא אתי. שפיר דפריך למימרא דפשיטא ליה כו' ואתי נמי שפיר דלא מצי למימר לעיל אבל למעלה מי' ד\"ה חייב דילפינן זורק ממושיט דלר\"ע לא מצי למילף כיון דסבר כמי שהונחה דמיא וכן משמע קצת דהא רב חסדא בעי נמי בהזורק <span class=\"parenthesized\">(לקמן שבת דף צז.)</span> כמו רבה דהכא ואי הא דקא מסיים קלוטה כמי שהונחה דמיא קאי נמי אדר\"ע היכי מצי למימר לרב חסדא דלכ\"ע כמי שהונחה דמיא ולקמן בפירקין <span class=\"parenthesized\">(שבת דף ח.)</span> משמע דדוקא ברה\"י לא בעי רב חסדא הנחה ע\"ג מקום ארבעה ומיהו רשב\"א פירש בסמוך אף ברה\"ר לא בעי רב חסדא מקום ד':"
+  },
+  "Tosafot on Shabbat 4b:4:1": {
+    "dependsOn": [
+      "Shabbat 4b:4",
+      "Rashi on Shabbat 4b:4:1",
+      "Tosafot on Shabbat 4b:4:1",
+      "Shabbat 4a:5",
+      "Shabbat 4a:11",
+      "Tosafot on Shabbat 4a:10:1",
+      "Tosafot on Shabbat 4a:11:1",
+      "Tosafot on Shabbat 4b:1:1",
+      "Tosafot on Shabbat 4b:2:1",
+      "Tosafot on Shabbat 2a:1:1",
+      "Tosafot on Shabbat 3a:1:1",
+      "Rashba on Shabbat 4b:4:1",
+      "Rashba on Shabbat 4b:4",
+      "Steinsaltz In-Depth on Shabbat 4b:4:1",
+      "Steinsaltz on Shabbat 4b:4:1",
+      "Steinsaltz In-Depth on Shabbat 4b:4",
+      "Steinsaltz on Shabbat 4b:4",
+      "Tosafot on Shabbat 96b:1:1",
+      "Tosafot on Shabbat 98a:1:1",
+      "Shabbat 96b:6"
+    ],
+    "generatedAt": "2026-09-18T07:11:09.615Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 4b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודילמא הנחה הוא דלא בעיא הא עקירה בעיא</strong> - פירש\"י דדייק מדלא מחייב ב' אחת משום הוצאה ואחת משום הכנסה וקשה דילמא הא דלא מחייב ב' משום דלא מחייב אתולדה במקום אב ועוד דבסמוך קאמר רב יהודה מחייב היה רבי ב' אע\"ג דקתני סתם רבי מחייב ה\"נ לר\"ע מנ\"ל דלא מחייב שתים ונראה לפרש דפריך הא עקירה בעיא דילפינן ממשכן שהיו נוטלין מתיבתן שהיו בהן ארבע על ארבע ונותנין ליד עושי המלאכה ולפי מה שפירשתי לעיל דדרשינן מאל יצא איש ממקומו אתי נמי שפיר דבעקירה מיירי:"
+  },
+  "Tosafot on Shabbat 4b:5:1": {
+    "dependsOn": [
+      "Shabbat 4b:5",
+      "Shabbat 4a:1",
+      "Shabbat 4b:1",
+      "Eruvin 99a:1",
+      "Eruvin 99a:2",
+      "Eruvin 99a:3",
+      "Eruvin 99a:4",
+      "Eruvin 99b:1",
+      "Eruvin 99b:2",
+      "Eruvin 99b:3",
+      "Eruvin 99b:4",
+      "Eruvin 99b:5",
+      "Eruvin 99b:6",
+      "Eruvin 99b:7",
+      "Eruvin 99b:8",
+      "Eruvin 99b:9",
+      "Eruvin 99b:10",
+      "Eruvin 99b:11",
+      "Eruvin 99b:12",
+      "Eruvin 99b:13",
+      "Eruvin 99b:14",
+      "Eruvin 99b:15",
+      "Eruvin 99b:16",
+      "Eruvin 99b:17",
+      "Eruvin 100a:1",
+      "Eruvin 100a:2",
+      "Eruvin 98a:10",
+      "Eruvin 98a:11",
+      "Eruvin 98b:1",
+      "Eruvin 98b:2",
+      "Eruvin 98b:3",
+      "Eruvin 98b:4",
+      "Eruvin 99a:5",
+      "Eruvin 99a:6",
+      "Eruvin 99a:7",
+      "Shabbat 3a:17",
+      "Shabbat 3b:1",
+      "Shabbat 3b:2",
+      "Shabbat 3a:1",
+      "Shabbat 5a:1",
+      "Shabbat 5a:6",
+      "Shabbat 5a:7",
+      "Shabbat 5a:8",
+      "Shabbat 5a:9",
+      "Shabbat 5a:10",
+      "Shabbat 5a:11",
+      "Shabbat 5a:12",
+      "Shabbat 5a:13",
+      "Shabbat 5a:14"
+    ],
+    "generatedAt": "2026-09-21T18:23:06.912Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 4b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא א\"ר יוסף כו'</strong> - קשה לרשב\"א מה צריכין רבה ורב יוסף להעמיד המשנה כתנאים והא סבירא להו בפ\"ב דעירובין <span class=\"parenthesized\">(ד' צט. ושם)</span> דמחשבתו משויא ליה מקום דקאמר התם רב יוסף השתין ורק חייב חטאת ופריך והא בעינן מקום ד' וליכא ומשני מחשבתו משויא ליה מקום דאי לא תימא הכי הא דאמר רבה זרק בפי כלב או בפי כבשן חייב וכו' ותי' ר\"ת דהא דאמר מחשבתו משויא ליה מקום היינו היכא דלא ניחא לי' בענין אחר אלא בענין זה כמו משתין ורק שאינו יכול להשתין או לרוק בענין אחר וכן זרק בפי כלב שרצונו שיאכלנו הכלב או שישרוף העץ בכבשן ול\"ג התם ונח בפי כלב דנח משמע דאין כוונתו לכך אבל הכא אינו חושש אם מקבל בידו או בכלי אחר והא דאמר לקמן <span class=\"parenthesized\">(שבת ד' ה.)</span> ה\"א ה\"מ היכא דאחשבה לידו אע\"ג דניחא ליה שיקבלנו בע\"א כמו בידו היינו משום דקאמר דידו של אדם חשובה לו כד' על ד' אבל בשאר דברים לא משוי ליה מחשבתו אלא היכא דלא ניחא ליה בע\"א:"
+  }
+}
