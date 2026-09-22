@@ -1,0 +1,3 @@
+{"taskType":"rashi_tosafot_translation","ref":"Rashi on Chullin 17a:1:1","callKind":"generate","toolUses":[{"name":"Bash","input":{"command":"npx ts-node rsi_orchestrator/context_fetch_cli.ts get-refs '[\"Chullin 17a:1\"]'"}}],"costUsd":0.0534932,"model":"claude-sonnet-5","timestamp":"2026-09-22T10:54:47.093Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Rashi on Chullin 17a:1:1","callKind":"critique","toolUses":[],"costUsd":0.0520558,"model":"claude-sonnet-5","timestamp":"2026-09-22T10:54:55.300Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Tosafot on Chullin 17a:1:1","callKind":"generate","toolUses":[{"name":"ToolSearch","input":{"query":"select:none","max_results":1}}],"costUsd":0.1349526,"model":"claude-sonnet-5","timestamp":"2026-09-22T10:55:42.535Z"}
