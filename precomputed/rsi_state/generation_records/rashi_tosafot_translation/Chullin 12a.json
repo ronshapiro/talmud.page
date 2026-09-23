@@ -1,0 +1,338 @@
+{
+  "Rashi on Chullin 12a:10:1": {
+    "costUsd": 0.107822,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T17:05:20.819Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 12a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לכי תיכול עלה כורא דמלחא</strong> - כשתמדוד לי כור של מלח בשכר שאומר לך ובדיחותא בעלמא הוא:"
+  },
+  "Rashi on Chullin 12a:10:2": {
+    "costUsd": 0.09487179999999999,
+    "dependsOn": [
+      "Chullin 12a:9"
+    ],
+    "generatedAt": "2026-09-21T17:05:47.459Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 12a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין חזקה כו'</strong> - אלא ספק עושה ספק אינו עושה:"
+  },
+  "Rashi on Chullin 12a:10:3": {
+    "costUsd": 0.1002198,
+    "dependsOn": [
+      "Chullin 12a:10",
+      "Rashi on Chullin 12a:10:1",
+      "Rashi on Chullin 12a:10:2",
+      "Rashi on Chullin 12a:10:4"
+    ],
+    "generatedAt": "2026-09-21T17:06:22.496Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 12a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי נמי שמע איניש וכו'</strong> - אפילו שמע איש אחר:"
+  },
+  "Rashi on Chullin 12a:10:4": {
+    "costUsd": 0.11632719999999999,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T17:07:09.717Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 12a:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תורם שלא מדעת אינה תרומה</strong> - דשליחות דתרומה מגם אתם אתרבי <span class=\"parenthesized\">(גיטין דף כג:)</span> אתם גם אתם לרבות שלוחכם ומינה מה אתם לדעתכם אף שלוחכם לדעתכם:"
+  },
+  "Rashi on Chullin 12a:11:1": {
+    "costUsd": 0.11486060000000001,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T17:10:07.537Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 12a:11:1"
+    ],
+    "sourceText": "דרך נבלות להשליך לאשפה: מדקאמר רבי נראין דברי ר' יהודה באשפה מכלל דפליג רבי חנינא אפילו באשפה ומדקאמר דברי ר' חנינא בבית מכלל דפליג ר' יהודה אפילו בבית:"
+  },
+  "Rashi on Chullin 12a:13:1": {
+    "costUsd": 0.09874060000000001,
+    "dependsOn": [
+      "Chullin 12a:13"
+    ],
+    "generatedAt": "2026-09-21T17:11:27.527Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 12a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכולי עלמא לא פליגי דשרי</strong> - דרוב מצויין אצל שחיטה מומחין הם:"
+  },
+  "Rashi on Chullin 12a:13:2": {
+    "costUsd": 0.1481164,
+    "dependsOn": [
+      "Chullin 12a:13",
+      "Rashi on Chullin 12a:13:1"
+    ],
+    "generatedAt": "2026-09-21T17:12:20.352Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 12a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאסור</strong> - דכיון דהשליכם שם ודאי נתנבלה בשחיטתה בשהייה או בדרסה:"
+  },
+  "Rashi on Chullin 12a:13:3": {
+    "costUsd": 0.08236800000000001,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T17:12:56.500Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 12a:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין אדם עשוי להטיל נבלתו באשפה שבבית</strong> - משום דמסרח ואיכא ריח רע:"
+  },
+  "Rashi on Chullin 12a:14:1": {
+    "costUsd": 0.11039479999999999,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T17:14:12.278Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 12a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא אמרת דכולי עלמא וכו'</strong> - ומאי נראין דברי פלוני או דברי פלוני והלא שניהם שוין בה:"
+  },
+  "Rashi on Chullin 12a:14:2": {
+    "costUsd": 0.10275580000000001,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T17:14:43.539Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 12a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא</strong> - פשיטא באשפה דקתני היינו אשפה שבבית דפליגי בה ואשמועינן דכרבי יהודה סבירא ליה:"
+  },
+  "Rashi on Chullin 12a:15:1": {
+    "costUsd": 0.1189318,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T17:15:31.541Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 12a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא אמרת לכולי עלמא שרי</strong> - ומאי נראין דברי רבי חנינא דמשמע אבל דברי ר' יהודה אין נראין ר' יהודה נמי שרי בה:"
+  },
+  "Rashi on Chullin 12a:15:2": {
+    "costUsd": 0.1298064,
+    "dependsOn": [
+      "Chullin 12a:15",
+      "Chullin 12a:14"
+    ],
+    "generatedAt": "2026-09-21T17:16:17.853Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 12a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא פשיטא</strong> - מאי בית באשפה שבבית ובה פליגי ואשמועינן רבי דכרבי חנינא סבירא ליה:"
+  },
+  "Rashi on Chullin 12a:15:3": {
+    "costUsd": 0.0823036,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T17:16:41.967Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 12a:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קשיא דרבי אדרבי</strong> - דברישא נראו לו דברי רבי יהודה דאסר באשפה שבבית ובסיפא נראו לו דברי רבי חנינא בנו של רבי יוסי הגלילי דמתיר באשפה שבבית אם כן קשיא דרבי אדרבי:"
+  },
+  "Rashi on Chullin 12a:1:1": {
+    "costUsd": 0.45884660000000005,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T16:58:02.688Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 12a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פסח</strong> - דאמר רחמנא <span class=\"parenthesized\">(שמות י״ב:ח׳)</span> ואכלו את הבשר ושלמים דאמר רחמנא <span class=\"parenthesized\">(שם כט)</span> ואכלו אותם אשר כופר בהם מלמד שהכפרה תלויה אף באכילה מאי איכא למימר אלא ודאי אכיל דסמיך ארובא היכא דלא אפשר ואפי' הכי פליג בקטן וקטנה משום דאפשר. לדידן נמי היכי ילפינן מיניה אלא ודאי הלכה למשה מסיני הא דסמכינן ארובא אפי' היכא דאפשר אי נמי אחרי רבים להטות <span class=\"parenthesized\">(שם כג)</span> משמע בין רובא דאיתיה קמן בין רובא דליתיה קמן דמאי שנא האי מהאי ואהא מלתא סמכינן ולא בדקינן כל י\"ח טרפות. ונקובת הריאה משום דשכיח בה ריעותא בדקינן והיכא דאיתרמי דאיפרשה ריאה ולא בדק מתאכלא דסמכינן אהא ואדרב הונא דאמר <span class=\"parenthesized\">(לעיל חולין דף ט.)</span> נשחטה בחזקת היתר עומדת ואין מפרסמין הדבר:"
+  },
+  "Rashi on Chullin 12a:3:1": {
+    "costUsd": 0.0687146,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T16:59:56.414Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 12a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי דידע דגמיר</strong> - שמכיר בו שמלומד בהלכות שחיטה:"
+  },
+  "Rashi on Chullin 12a:3:2": {
+    "costUsd": 0.0678996,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T17:00:12.247Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 12a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דידע דלא גמיר</strong> - שמכיר בו שאין יודע הלכות שחיטה:"
+  },
+  "Rashi on Chullin 12a:3:3": {
+    "costUsd": 0.1096982,
+    "dependsOn": [
+      "Chullin 12a:3"
+    ],
+    "generatedAt": "2026-09-21T17:01:05.184Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 12a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פשיטא</strong> - דראה מותר דהא לא שהה ולא דרס ולא ראה אסור שמא שהה או דרס:"
+  },
+  "Rashi on Chullin 12a:4:1": {
+    "costUsd": 0.09697660000000001,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T17:01:29.296Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 12a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלא ידע אי גמיר אי לא גמיר</strong> - ואשמועינן דלא סמכינן אסתמא עד שיהא מכיר בו שיודע:"
+  },
+  "Rashi on Chullin 12a:6:1": {
+    "costUsd": 0.0752636,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T17:02:49.727Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 12a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מומחין הן</strong> - שאם לא היה מומחה לא היה שוחט:"
+  },
+  "Rashi on Chullin 12a:6:2": {
+    "costUsd": 0.07908860000000001,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T17:03:15.430Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 12a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רוב מצויין אצל שחיטה</strong> - כלומר רוב השוחטין:"
+  },
+  "Rashi on Chullin 12a:8:1": {
+    "costUsd": 0.0675506,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T17:03:30.282Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 12a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והלך</strong> - בעל הבית:"
+  },
+  "Rashi on Chullin 12a:8:2": {
+    "costUsd": 0.0694076,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T17:03:46.563Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 12a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומצא תרום</strong> - ולא ידע מי תרמו:"
+  },
+  "Rashi on Chullin 12a:9:1": {
+    "costUsd": 0.0753636,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T17:04:07.654Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 12a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חזקה שליח עושה שליחותו</strong> - כל השלוחין עושין שליחותן ומחזקינן להו בכך מאחר שנתרצו בשליחותם:"
+  },
+  "Rashi on Chullin 12a:9:2": {
+    "costUsd": 0.07908559999999999,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T17:04:38.605Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 12a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם אין עושה שליחותו אפילו בשחיטה נמי לא</strong> - דשמא לא שלוחו שחט אלא אחר שאינו בקי בהלכות שחיטה:"
+  },
+  "Tosafot on Chullin 12a:10:1": {
+    "costUsd": 0.1011746,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T17:07:41.981Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 12a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכי גרסינן לעולם אין חזקה שליח כו'</strong> - מפורש בפ' בכל מערבין <span class=\"parenthesized\">(עירובין לב:)</span>:"
+  },
+  "Tosafot on Chullin 12a:11:1": {
+    "costUsd": 0.09114459999999999,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T17:10:54.599Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 12a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי שאבדו לו גדייו</strong> - ה\"ה נגנבו דמשום דחשיד אגנבה לא חשיד אנבלה ובתוספתא קתני בהדיא נגנבה לו תרנגולת ומצאה כו':"
+  },
+  "Tosafot on Chullin 12a:13:1": {
+    "costUsd": 0.1013646,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T17:13:30.030Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 12a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי פליגי באשפה שבבית</strong> - הוא הדין דפליגי בשוק בלא אשפה כדמוכח באלו מציאות <span class=\"parenthesized\">(ב\"מ דף כד:)</span> גבי ר' חנינא שמצא גדי שחוט בין טבריא לציפורי:"
+  },
+  "Tosafot on Chullin 12a:1:1": {
+    "costUsd": 0.1777186,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T16:59:34.198Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 12a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פסח וקדשים מאי איכא למימר</strong> - מבשר תאוה לא פריך משום דנראה דמדאורייתא לא חייש רבי מאיר למיעוטא אלא מדרבנן ולהכי פריך הכי נמי שמחמיר שלא לאכול בשר כלל ואפילו מחמיר בשאר בשר פסח וקדשים אין יכול להחמיר ומדקדק כי היכי דלר\"מ יש חילוק מדרבנן בין אפשר ללא אפשר ה\"ה לרבנן:"
+  },
+  "Tosafot on Chullin 12a:5:1": {
+    "costUsd": 0.12370800000000001,
+    "dependsOn": [],
+    "generatedAt": "2026-09-21T17:02:17.185Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 12a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או שאמר לשלוחו כו'</strong> - מעיקרא תנא מצא תרנגולת שחוטה בשוק דאיכא למימר בעליה שחטוה והדר אמר דאפי' אמר לשלוחו ומצאו השליח שהיא שחוטה דהשתא שלא ברשות נשחטה אפ\"ה חזקתו שחוטה:"
+  }
+}
