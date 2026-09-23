@@ -58,6 +58,7 @@ async function main(): Promise<void> {
       },
       durationHours: {
         type: "number",
+        alias: ["hours", "duration-hours"],
         describe: "duration in hours for continuous mode (default: 24)",
       },
       checkIntervalMinutes: {
