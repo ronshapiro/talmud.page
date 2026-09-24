@@ -25,7 +25,11 @@ export interface CommitPendingDeps {
   updatePrTitle?: (prNumber: number, title: string) => Promise<void>;
   addPrComment?: (prNumber: number, comment: string) => Promise<void>;
   getCurrentHeadSha?: () => Promise<string>;
-  getDiffStats?: (fromRef: string, toRef: string) => Promise<{numstat: string; nameStatus: string}>;
+  getDiffStats?: (fromRef: string, toRef: string) => Promise<{
+    diff?: string;
+    numstat?: string;
+    nameStatus: string;
+  }>;
   getBranchChangedPaths?: (baseBranch: string, branch: string) => Promise<string[]>;
 }
 
@@ -104,10 +108,11 @@ export interface FileEditStat {
   path: string;
   mode: "add" | "delete" | "modify";
   addedLines: number;
+  modifiedLines: number;
   deletedLines: number;
 }
 
-export function parseDiffStats(numstatOut: string, nameStatusOut: string): FileEditStat[] {
+export function parseDiffStats(diffOrNumstatOut: string, nameStatusOut: string): FileEditStat[] {
   const modeByPath = new Map<string, "add" | "delete" | "modify">();
   for (const line of nameStatusOut.split("\n")) {
     const trimmed = line.trim();
@@ -126,28 +131,75 @@ export function parseDiffStats(numstatOut: string, nameStatusOut: string): FileE
     modeByPath.set(rawPath, mode);
   }
 
-  const stats: FileEditStat[] = [];
-  for (const line of numstatOut.split("\n")) {
-    const trimmed = line.trim();
-    if (!trimmed) continue;
-    const parts = trimmed.split("\t");
-    if (parts.length < 3) continue;
-    const addedRaw = parts[0].trim();
-    const deletedRaw = parts[1].trim();
-    let rawPath = parts.slice(2).join("\t").trim();
-    if (rawPath.startsWith("\"")) {
-      rawPath = JSON.parse(rawPath) as string;
+  type LineStats = {addedLines: number; modifiedLines: number; deletedLines: number};
+  const statsByPath = new Map<string, LineStats>();
+  const isDiff = diffOrNumstatOut.includes("@@ ") || diffOrNumstatOut.includes("diff --git");
+
+  if (isDiff) {
+    let currentFile: string | undefined;
+    for (const line of diffOrNumstatOut.split("\n")) {
+      if (line.startsWith("--- ")) {
+        const raw = line.slice(4).trim();
+        if (raw !== "/dev/null") {
+          currentFile = raw.startsWith("\"") ? (JSON.parse(raw) as string).slice(2) : raw.slice(2);
+        }
+      } else if (line.startsWith("+++ ")) {
+        const raw = line.slice(4).trim();
+        if (raw !== "/dev/null") {
+          currentFile = raw.startsWith("\"") ? (JSON.parse(raw) as string).slice(2) : raw.slice(2);
+        }
+      } else if (line.startsWith("@@ ") && currentFile) {
+        const match = line.match(/^@@ -(\d+)(?:,(\d+))? \+(\d+)(?:,(\d+))? @@/);
+        if (match) {
+          if (!statsByPath.has(currentFile)) {
+            statsByPath.set(currentFile, {addedLines: 0, modifiedLines: 0, deletedLines: 0});
+          }
+          const del = match[2] === undefined ? 1 : parseInt(match[2], 10);
+          const add = match[4] === undefined ? 1 : parseInt(match[4], 10);
+          const mod = Math.min(del, add);
+          const stat = statsByPath.get(currentFile)!;
+          stat.modifiedLines += mod;
+          stat.addedLines += (add - mod);
+          stat.deletedLines += (del - mod);
+        }
+      }
     }
-    const addedLines = addedRaw === "-" ? 0 : parseInt(addedRaw, 10) || 0;
-    const deletedLines = deletedRaw === "-" ? 0 : parseInt(deletedRaw, 10) || 0;
-    const mode = modeByPath.get(rawPath) ?? "modify";
-    stats.push({path: rawPath, mode, addedLines, deletedLines});
+  } else {
+    for (const line of diffOrNumstatOut.split("\n")) {
+      const trimmed = line.trim();
+      if (!trimmed) continue;
+      const parts = trimmed.split("\t");
+      if (parts.length < 3) continue;
+      const addedRaw = parts[0].trim();
+      const deletedRaw = parts[1].trim();
+      let rawPath = parts.slice(2).join("\t").trim();
+      if (rawPath.startsWith("\"")) {
+        rawPath = JSON.parse(rawPath) as string;
+      }
+      const addedLines = addedRaw === "-" ? 0 : parseInt(addedRaw, 10) || 0;
+      const deletedLines = deletedRaw === "-" ? 0 : parseInt(deletedRaw, 10) || 0;
+      statsByPath.set(rawPath, {addedLines, modifiedLines: 0, deletedLines});
+    }
   }
 
-  const seenPaths = new Set(stats.map(s => s.path));
+  const stats: FileEditStat[] = [];
+  const seenPaths = new Set<string>();
+
+  for (const [p, lineStats] of statsByPath.entries()) {
+    seenPaths.add(p);
+    const mode = modeByPath.get(p) ?? "modify";
+    stats.push({
+      path: p,
+      mode,
+      addedLines: lineStats.addedLines,
+      modifiedLines: lineStats.modifiedLines,
+      deletedLines: lineStats.deletedLines,
+    });
+  }
+
   for (const [p, mode] of modeByPath.entries()) {
     if (!seenPaths.has(p)) {
-      stats.push({path: p, mode, addedLines: 0, deletedLines: 0});
+      stats.push({path: p, mode, addedLines: 0, modifiedLines: 0, deletedLines: 0});
     }
   }
 
@@ -160,19 +212,23 @@ export function formatDiffStatsTable(stats: FileEditStat[]): string {
 
   const rows: string[] = [];
   rows.push("### File Changes\n");
-  rows.push("| File | Mode | Added Lines | Deleted Lines |");
-  rows.push("| :--- | :---: | ---: | ---: |");
+  rows.push("| File | Mode | Added Lines | Modified Lines | Deleted Lines |");
+  rows.push("| :--- | :---: | ---: | ---: | ---: |");
 
   let totalAdded = 0;
+  let totalModified = 0;
   let totalDeleted = 0;
 
   for (const stat of stats) {
     totalAdded += stat.addedLines;
+    totalModified += stat.modifiedLines;
     totalDeleted += stat.deletedLines;
-    rows.push(`| \`${stat.path}\` | ${stat.mode} | +${stat.addedLines} | -${stat.deletedLines} |`);
+    rows.push(
+      `| \`${stat.path}\` | ${stat.mode} | +${stat.addedLines} | ~${stat.modifiedLines} | -${stat.deletedLines} |`,
+    );
   }
 
-  rows.push(`| **Total** | | **+${totalAdded}** | **-${totalDeleted}** |`);
+  rows.push(`| **Total** | | **+${totalAdded}** | **~${totalModified}** | **-${totalDeleted}** |`);
 
   return rows.join("\n");
 }
@@ -264,8 +320,8 @@ export async function commitAndPushPendingCandidates(
   }
 
   if (targetPrNumber && deps.getDiffStats && deps.addPrComment && preCommitSha && postCommitSha) {
-    const {numstat, nameStatus} = await deps.getDiffStats(preCommitSha, postCommitSha);
-    const stats = parseDiffStats(numstat, nameStatus);
+    const diffStats = await deps.getDiffStats(preCommitSha, postCommitSha);
+    const stats = parseDiffStats(diffStats.diff ?? diffStats.numstat ?? "", diffStats.nameStatus);
     if (stats.length > 0) {
       const comment = formatDiffStatsTable(stats);
       await deps.addPrComment(targetPrNumber, comment);
@@ -359,12 +415,14 @@ async function getCurrentHeadShaViaCli(debug = false): Promise<string> {
 
 async function getDiffStatsViaCli(
   fromRef: string, toRef: string, debug = false,
-): Promise<{numstat: string; nameStatus: string}> {
+): Promise<{diff: string; numstat: string; nameStatus: string}> {
+  const {stdout: diff} = await runSubcommand(
+    "git", ["diff", "-U0", fromRef, toRef, "--", ...MANAGED_PATHS], debug);
   const {stdout: numstat} = await runSubcommand(
     "git", ["diff", "--numstat", fromRef, toRef, "--", ...MANAGED_PATHS], debug);
   const {stdout: nameStatus} = await runSubcommand(
     "git", ["diff", "--name-status", fromRef, toRef, "--", ...MANAGED_PATHS], debug);
-  return {numstat, nameStatus};
+  return {diff, numstat, nameStatus};
 }
 
 async function getBranchChangedPathsViaCli(
