@@ -1,4 +1,70 @@
 {
+  "Rashi on Chullin 29b:10:1": {
+    "costUsd": 0.0836452,
+    "dependsOn": [],
+    "generatedAt": "2026-09-26T06:45:20.276Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 29b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשחיטתה</strong> - כגון שנתנבלה:"
+  },
+  "Rashi on Chullin 29b:10:2": {
+    "costUsd": 0.0910812,
+    "dependsOn": [],
+    "generatedAt": "2026-09-26T06:45:38.475Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 29b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינה מטמאה בגדים</strong> - שאין כאן עבודה ואם אסף אפרה או שרפה ולא נגע בה או אפילו נגע בה בפשוטי כלי עץ שלא טמאתו משום נבלה אינו טמא משום מתעסק בפרה שאין כאן פרה אדומה:"
+  },
+  "Rashi on Chullin 29b:10:3": {
+    "costUsd": 0.1770104,
+    "dependsOn": [],
+    "generatedAt": "2026-09-26T06:46:10.696Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 29b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בהזאתה</strong> - בהזאת דמה שהיה מזה הימנה ז' פעמים כנגד פתח של היכל כדכתיב <span class=\"parenthesized\">(שם יט)</span> והזה אל נכח פני וגו':"
+  },
+  "Rashi on Chullin 29b:10:4": {
+    "costUsd": 0.08520720000000001,
+    "dependsOn": [],
+    "generatedAt": "2026-09-26T06:46:24.435Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 29b:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קודם פסולה מטמאה בגדים</strong> - דמתעסק בפרה הוא וכבר נעשית שחיטתה בהכשר:"
+  },
+  "Rashi on Chullin 29b:12:1": {
+    "costUsd": 0.0857012,
+    "dependsOn": [],
+    "generatedAt": "2026-09-26T06:47:02.010Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 29b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלאו שחיטה היא כלל</strong> - שהרי סופה הוכיח אבל היכא דנגמרה שחיטה ממש אימא לך דכולה קרויה שחיטה מתחלה ועד סוף:"
+  },
+  "Rashi on Chullin 29b:13:1": {
+    "costUsd": 0.0927692,
+    "dependsOn": [],
+    "generatedAt": "2026-09-26T06:47:23.302Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 29b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לפלוג</strong> - נמי האי תנא בהכשרא דפרה אפילו בפרה שלא נפסלה יש לחלק בין בגדים לבגדים:"
+  },
   "Rashi on Chullin 29b:2:1": {
     "costUsd": 0.1822824,
     "dependsOn": [],
@@ -108,6 +174,61 @@
       "Rashi on Chullin 29b:9:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">כל העסוקין בפרה</strong> - אדומה:"
+  },
+  "Rashi on Chullin 29b:9:2": {
+    "costUsd": 0.16832640000000001,
+    "dependsOn": [],
+    "generatedAt": "2026-09-26T06:44:09.213Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 29b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתחלה ועד סופה</strong> - באחת עבודותיה בין באמצע ובין בתחלה ובין בסוף:"
+  },
+  "Rashi on Chullin 29b:9:3": {
+    "costUsd": 0.1935904,
+    "dependsOn": [],
+    "generatedAt": "2026-09-26T06:44:50.109Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 29b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מטמאין את הבגדים</strong> - כדכתיב <span class=\"parenthesized\">(במדבר יט)</span> עץ ארז ואזוב ושני תולעת והשליך אל תוך שריפת הפרה וסמיך ליה וכבס בגדיו הכהן וגו' וכתיב בשריפתה והשורף אותה וגו' ותניא בסיפרי אם המשליך את האזוב מטמא בגדים השורף לא כ\"ש מה ת\"ל והשורף בא הכתוב ולימד על כל העסוקים בפרה מתחלה ועד סוף שיהו טעונים תכבוסת בגדים:"
+  },
+  "Rashi on Chullin 29b:9:4": {
+    "costUsd": 0.08993519999999999,
+    "dependsOn": [],
+    "generatedAt": "2026-09-26T06:45:06.614Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Chullin 29b:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ופוסלין אותה במלאכה</strong> - אם נתעסקו עמה במלאכה אחרת כגון ששחט וחתך עמה דלעת דתניא <span class=\"parenthesized\">(ספרי חקת יט ג)</span> ושחט אותה בא הכתוב ולימד על הפרה שתהא מלאכה פוסלתה בשחיטתה ושרף את הפרה בא הכתוב ולימד שתהא מלאכה פוסלת בשריפתה:"
+  },
+  "Tosafot on Chullin 29b:10:1": {
+    "costUsd": 0.10391320000000001,
+    "dependsOn": [],
+    "generatedAt": "2026-09-26T06:46:47.712Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 29b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אירע פסול בשחיטתה</strong> - פ\"ה כגון נתנבלה ור\"ת מפרש פסול של מלאכה אחרת דומיא דהזאה דאי אמרת בשחיטה נמי יש חילוק במלאכה בין קודם פסולה בין לאחר פסולה א\"כ לפלוג בשחיטה עצמה ואמאי נקט הזאה ואע\"ג דאיירי בפסול מלאכה מ\"מ קאמר שפיר בסמוך שאני נתקלקלה בשחיטה דאגלאי מילתא למפרע דלאו שחיטה היא כלל דכיון דנתקלקלה א\"כ לא נעשה עדיין כלום לשם פרה בכשרות אבל אירע פסול בהזאתה אין לחוש דכבר נעשית השחיטה בכשרות:"
+  },
+  "Tosafot on Chullin 29b:14:1": {
+    "costUsd": 0.0997872,
+    "dependsOn": [],
+    "generatedAt": "2026-09-26T06:47:44.282Z",
+    "model": "claude-sonnet-5",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Chullin 29b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרי גברי בחד זיבחא קאמרת</strong> - תימה הא ע\"כ שלא יהיו ב' שוחטין זבח אחד היינו לכתחלה אבל בדיעבד כשר כמו אחד שוחט ב' זבחים דמוקי לעיל מתניתין דשוחט ב' ראשים כאחד שחיטתו כשרה בקדשים וא\"כ אכתי לפלוג בהכשר דפרה וי\"ל דכיון דלכתחלה אסור מילתא דלא שכיחא היא אע\"ג דפריך לפלוג בב' סודרים הא שכיחא טפי:"
   },
   "Tosafot on Chullin 29b:1:1": {
     "costUsd": 0.10435320000000001,
