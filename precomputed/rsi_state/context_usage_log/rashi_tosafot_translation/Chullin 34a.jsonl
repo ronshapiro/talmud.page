@@ -1,0 +1,12 @@
+{"taskType":"rashi_tosafot_translation","ref":"Rashi on Chullin 34a:1:1","callKind":"generate","toolUses":[],"costUsd":0.0503934,"model":"claude-sonnet-5","timestamp":"2026-09-27T20:27:51.678Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Rashi on Chullin 34a:1:1","callKind":"generate","toolUses":[],"costUsd":0.0544594,"model":"claude-sonnet-5","timestamp":"2026-09-27T20:28:21.784Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Rashi on Chullin 34a:1:1","callKind":"critique","toolUses":[],"costUsd":0.0578554,"model":"claude-sonnet-5","timestamp":"2026-09-27T20:29:20.856Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Rashi on Chullin 34a:2:1","callKind":"generate","toolUses":[],"costUsd":0.0670954,"model":"claude-sonnet-5","timestamp":"2026-09-27T20:29:48.096Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Rashi on Chullin 34a:2:1","callKind":"critique","toolUses":[],"costUsd":0.0584194,"model":"claude-sonnet-5","timestamp":"2026-09-27T20:30:14.043Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Rashi on Chullin 34a:2:1","callKind":"generate","toolUses":[],"costUsd":0.0515134,"model":"claude-sonnet-5","timestamp":"2026-09-27T20:30:24.615Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Rashi on Chullin 34a:2:1","callKind":"critique","toolUses":[],"costUsd":0.049633399999999994,"model":"claude-sonnet-5","timestamp":"2026-09-27T20:30:41.539Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Rashi on Chullin 34a:2:2","callKind":"generate","toolUses":[],"costUsd":0.0505394,"model":"claude-sonnet-5","timestamp":"2026-09-27T20:30:52.132Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Rashi on Chullin 34a:2:2","callKind":"critique","toolUses":[],"costUsd":0.0517514,"model":"claude-sonnet-5","timestamp":"2026-09-27T20:31:08.859Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Rashi on Chullin 34a:2:2","callKind":"generate","toolUses":[],"costUsd":0.0500414,"model":"claude-sonnet-5","timestamp":"2026-09-27T20:31:16.524Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Rashi on Chullin 34a:2:2","callKind":"critique","toolUses":[],"costUsd":0.0516674,"model":"claude-sonnet-5","timestamp":"2026-09-27T20:31:35.784Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Rashi on Chullin 34a:3:1","callKind":"generate","toolUses":[{"name":"Bash","input":{"command":"npx ts-node rsi_orchestrator/context_fetch_cli.ts get-neighbors \"Chullin 34a:3\" --before 2 --after 2"}}],"costUsd":0.10060079999999999,"model":"claude-sonnet-5","timestamp":"2026-09-27T20:32:22.364Z"}
