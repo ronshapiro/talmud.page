@@ -65,5 +65,150 @@
       "Rashi on Berakhot 6b:2:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">משאיל בו</strong> – מה טיבו של פלוני למה לא בא:"
+  },
+  "Rashi on Berakhot 6b:2:2": {
+    "dependsOn": [
+      "Berakhot 6b:2",
+      "Rashi on Berakhot 6b:2:1",
+      "Rashi on Berakhot 6b:2:2",
+      "Rashi on Berakhot 6b:2:3",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 5b:1:1",
+      "Rashi on Berakhot 6a:1:1",
+      "Rashi on Berakhot 6a:2:1"
+    ],
+    "generatedAt": "2026-09-28T02:09:39.969Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Berakhot 6b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ירא את ה'</strong> – שהיה רגיל לבא אליו:"
+  },
+  "Rashi on Berakhot 6b:2:3": {
+    "dependsOn": [
+      "Berakhot 6b:2",
+      "Rashi on Berakhot 6b:2:1",
+      "Rashi on Berakhot 6b:2:2",
+      "Rashi on Berakhot 6b:2:3",
+      "Berakhot 6b:3",
+      "Berakhot 6b:4",
+      "Steinsaltz on Berakhot 6b:2:1",
+      "Rashi on Berakhot 6b:1:1",
+      "Rashi on Berakhot 6b:5:1",
+      "Rashi on Berakhot 6a:1:1",
+      "Rashi on Berakhot 6a:2:1",
+      "Rashi on Berakhot 6a:3:1"
+    ],
+    "generatedAt": "2026-09-28T02:11:05.202Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Berakhot 6b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אשר הלך חשכים ואין נוגה לו</strong> – אשר עתה הלך למקום חשך אשר ימנע עצמו מלהשכים לפתחי:"
+  },
+  "Rashi on Berakhot 6b:5:1": {
+    "dependsOn": [
+      "Berakhot 6b:5",
+      "Maharsha on Berakhot 6b:5:1",
+      "Gilyon HaShas on Berakhot 6b:5:1",
+      "Steinsaltz on Berakhot 6b:5:1",
+      "Rashi on Berakhot 6b:1:1",
+      "Rashi on Berakhot 6b:2:1",
+      "Rashi on Berakhot 6b:6:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2"
+    ],
+    "generatedAt": "2026-09-28T02:12:23.367Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Berakhot 6b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין עונה</strong> – שיעור שיוכלו לענות דבר קדושה:"
+  },
+  "Rashi on Berakhot 6b:6:1": {
+    "dependsOn": [
+      "Berakhot 6b:6",
+      "Rashi on Berakhot 6b:6:1",
+      "Rashi on Berakhot 6b:6:2",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 6a:1:1"
+    ],
+    "generatedAt": "2026-09-28T02:12:59.458Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Berakhot 6b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלהי אברהם</strong> – שקבע מקום לתפלתו:"
+  },
+  "Rashi on Berakhot 6b:6:2": {
+    "dependsOn": [
+      "Berakhot 6b:6",
+      "Rashi on Berakhot 6b:6:1",
+      "Rashi on Berakhot 6b:6:2",
+      "Rashi on Berakhot 6b:1:1",
+      "Rashi on Berakhot 6b:2:1",
+      "Rashi on Berakhot 6b:2:2",
+      "Rashi on Berakhot 6b:2:3",
+      "Rashi on Berakhot 6b:5:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3",
+      "Mei HaShiloach on Berakhot 6b:6:1",
+      "Mei HaShiloach on Berakhot 6b:6:2"
+    ],
+    "generatedAt": "2026-09-28T02:15:40.913Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Berakhot 6b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעזרו</strong> – כדרך שהיה עוזר לאברהם:"
+  },
+  "Rashi on Berakhot 6b:9:1": {
+    "dependsOn": [
+      "Berakhot 6b:9",
+      "Rashi on Berakhot 6b:9:1",
+      "Rashi on Berakhot 6b:9:2",
+      "Rashi on Berakhot 6b:6:1",
+      "Rashi on Berakhot 6b:6:2",
+      "Rashi on Berakhot 6a:1:1",
+      "Rashi on Berakhot 6b:2:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3"
+    ],
+    "generatedAt": "2026-09-28T02:16:49.957Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Berakhot 6b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אל יפסיע פסיעה גסה</strong> – לפי שמראה בעצמו שעכוב בית הכנסת דומה עליו כמשוי:"
+  },
+  "Rashi on Berakhot 6b:9:2": {
+    "dependsOn": [
+      "Berakhot 6b:9",
+      "Rashi on Berakhot 6b:9:1",
+      "Rashi on Berakhot 6b:9:2",
+      "Rashi on Berakhot 6b:10:1",
+      "Rashi on Berakhot 6b:10:2",
+      "Rashi on Berakhot 6b:11:1",
+      "Rashi on Berakhot 6b:6:1",
+      "Rashi on Berakhot 6b:6:2",
+      "Rashi on Berakhot 6b:5:1"
+    ],
+    "generatedAt": "2026-09-28T02:20:43.711Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Berakhot 6b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נרדפה</strong> – לשון מרוצה משמע שהרודף רץ:"
   }
 }
