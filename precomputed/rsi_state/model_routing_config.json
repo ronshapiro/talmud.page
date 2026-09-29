@@ -7,6 +7,10 @@
     "sonnet-4.6": {
       "generateModel": "claude-sonnet-4-6",
       "critiqueModel": "gemini-3.8-flash-medium"
+    },
+    "opus-4.6": {
+      "generateModel": "claude-opus-4-6",
+      "critiqueModel": "claude-opus-4-6"
     }
   },
   "claude": {
