@@ -127,7 +127,7 @@ describe("formatPrTitle", () => {
 });
 
 describe("parseDiffStats", () => {
-  test("parses edit mode (add, delete, modify) and added/deleted lines per file", () => {
+  test("parses edit mode (add, delete, modify) and added/deleted lines from numstat fallback", () => {
     const numstat = [
       "15\t2\tprecomputed/ai_additions/Menachot 90a.json",
       "30\t0\t\"precomputed/ai_additions/Chullin 2b.json\"",
@@ -147,37 +147,163 @@ describe("parseDiffStats", () => {
         path: "precomputed/ai_additions/Chullin 2b.json",
         mode: "add",
         addedLines: 30,
+        modifiedLines: 0,
         deletedLines: 0,
       },
       {
         path: "precomputed/ai_additions/Deleted.json",
         mode: "delete",
         addedLines: 0,
+        modifiedLines: 0,
         deletedLines: 10,
       },
       {
         path: "precomputed/ai_additions/Menachot 90a.json",
         mode: "modify",
         addedLines: 15,
+        modifiedLines: 0,
         deletedLines: 2,
+      },
+    ]);
+  });
+
+  test("parses unified diff -U0 and accurately extracts added, modified, and deleted lines", () => {
+    const diff = [
+      "diff --git a/precomputed/ai_additions/Menachot 90a.json b/precomputed/ai_additions/Menachot 90a.json",
+      "--- a/precomputed/ai_additions/Menachot 90a.json",
+      "+++ b/precomputed/ai_additions/Menachot 90a.json",
+      // 2 lines replaced with 5 lines -> 2 modified, 3 added, 0 deleted
+      "@@ -10,2 +10,5 @@",
+      "-old1",
+      "-old2",
+      "+new1",
+      "+new2",
+      "+new3",
+      "+new4",
+      "+new5",
+      // 4 lines replaced with 1 line -> 1 modified, 0 added, 3 deleted
+      "@@ -30,4 +33 @@",
+      "-del1",
+      "-del2",
+      "-del3",
+      "-del4",
+      "+rep1",
+      // 1 line replaced with 1 line (single line format) -> 1 modified, 0 added, 0 deleted
+      "@@ -50 +49 @@",
+      "-single_old",
+      "+single_new",
+      // 2 lines purely deleted -> 0 modified, 0 added, 2 deleted
+      "@@ -70,2 +69,0 @@",
+      "-gone1",
+      "-gone2",
+      "diff --git a/precomputed/ai_additions/Chullin 2b.json b/precomputed/ai_additions/Chullin 2b.json",
+      "new file mode 100644",
+      "--- /dev/null",
+      "+++ b/precomputed/ai_additions/Chullin 2b.json",
+      // Pure addition in new file -> 30 added, 0 modified, 0 deleted
+      "@@ -0,0 +1,30 @@",
+      "+line",
+      "diff --git a/precomputed/ai_additions/Deleted.json b/precomputed/ai_additions/Deleted.json",
+      "deleted file mode 100644",
+      "--- a/precomputed/ai_additions/Deleted.json",
+      "+++ /dev/null",
+      // Pure deletion in deleted file -> 0 added, 0 modified, 10 deleted
+      "@@ -1,10 +0,0 @@",
+      "-line",
+      "",
+    ].join("\n");
+
+    const nameStatus = [
+      "M\tprecomputed/ai_additions/Menachot 90a.json",
+      "A\tprecomputed/ai_additions/Chullin 2b.json",
+      "D\tprecomputed/ai_additions/Deleted.json",
+      "",
+    ].join("\n");
+
+    const stats = parseDiffStats(diff, nameStatus);
+    expect(stats).toEqual([
+      {
+        path: "precomputed/ai_additions/Chullin 2b.json",
+        mode: "add",
+        addedLines: 30,
+        modifiedLines: 0,
+        deletedLines: 0,
+      },
+      {
+        path: "precomputed/ai_additions/Deleted.json",
+        mode: "delete",
+        addedLines: 0,
+        modifiedLines: 0,
+        deletedLines: 10,
+      },
+      {
+        path: "precomputed/ai_additions/Menachot 90a.json",
+        mode: "modify",
+        // Menachot 90a:
+        // Hunk 1: 2 mod, 3 add, 0 del
+        // Hunk 2: 1 mod, 0 add, 3 del
+        // Hunk 3: 1 mod, 0 add, 0 del
+        // Hunk 4: 0 mod, 0 add, 2 del
+        // Total: addedLines = 3, modifiedLines = 4, deletedLines = 5
+        addedLines: 3,
+        modifiedLines: 4,
+        deletedLines: 5,
+      },
+    ]);
+  });
+
+  test("handles quoted file paths with special characters and files with no line changes", () => {
+    const diff = [
+      "diff --git \"a/precomputed/ai_additions/Special\\\"Page.json\" \"b/precomputed/ai_additions/Special\\\"Page.json\"",
+      "--- \"a/precomputed/ai_additions/Special\\\"Page.json\"",
+      "+++ \"b/precomputed/ai_additions/Special\\\"Page.json\"",
+      "@@ -1 +1 @@",
+      "-old",
+      "+new",
+      "",
+    ].join("\n");
+
+    const nameStatus = [
+      "M\t\"precomputed/ai_additions/Special\\\"Page.json\"",
+      "M\tprecomputed/ai_additions/Unchanged.json",
+      "",
+    ].join("\n");
+
+    const stats = parseDiffStats(diff, nameStatus);
+    expect(stats).toEqual([
+      {
+        path: "precomputed/ai_additions/Special\"Page.json",
+        mode: "modify",
+        addedLines: 0,
+        modifiedLines: 1,
+        deletedLines: 0,
+      },
+      {
+        path: "precomputed/ai_additions/Unchanged.json",
+        mode: "modify",
+        addedLines: 0,
+        modifiedLines: 0,
+        deletedLines: 0,
       },
     ]);
   });
 });
 
 describe("formatDiffStatsTable", () => {
-  test("generates rich markdown table with headers, modes, line counts, and totals without RSI prefix", () => {
+  test("generates rich markdown table with headers, modes, line counts including modified, and totals", () => {
     const stats: FileEditStat[] = [
       {
         path: "precomputed/ai_additions/Menachot 90a.json",
         mode: "modify",
         addedLines: 15,
+        modifiedLines: 3,
         deletedLines: 2,
       },
       {
         path: "precomputed/ai_additions/Chullin 2b.json",
         mode: "add",
         addedLines: 30,
+        modifiedLines: 0,
         deletedLines: 0,
       },
     ];
@@ -185,10 +311,10 @@ describe("formatDiffStatsTable", () => {
     const table = formatDiffStatsTable(stats);
     expect(table).toContain("### File Changes");
     expect(table).not.toContain("RSI");
-    expect(table).toContain("| File | Mode | Added Lines | Deleted Lines |");
-    expect(table).toContain("| `precomputed/ai_additions/Menachot 90a.json` | modify | +15 | -2 |");
-    expect(table).toContain("| `precomputed/ai_additions/Chullin 2b.json` | add | +30 | -0 |");
-    expect(table).toContain("| **Total** | | **+45** | **-2** |");
+    expect(table).toContain("| File | Mode | Added Lines | Modified Lines | Deleted Lines |");
+    expect(table).toContain("| `precomputed/ai_additions/Menachot 90a.json` | modify | +15 | ~3 | -2 |");
+    expect(table).toContain("| `precomputed/ai_additions/Chullin 2b.json` | add | +30 | ~0 | -0 |");
+    expect(table).toContain("| **Total** | | **+45** | **~3** | **-2** |");
   });
 });
 
@@ -235,7 +361,24 @@ describe("commitAndPushPendingCandidates", () => {
       .mockResolvedValueOnce("sha1")
       .mockResolvedValueOnce("sha2");
     const getDiffStats = jest.fn(async () => ({
-      numstat: "10\t0\tprecomputed/ai_additions/Zevachim 16a.json\n",
+      diff: [
+        "diff --git a/precomputed/ai_additions/Zevachim 16a.json b/precomputed/ai_additions/Zevachim 16a.json",
+        "--- a/precomputed/ai_additions/Zevachim 16a.json",
+        "+++ b/precomputed/ai_additions/Zevachim 16a.json",
+        "@@ -1,2 +1,10 @@",
+        "-old1",
+        "-old2",
+        "+new1",
+        "+new2",
+        "+new3",
+        "+new4",
+        "+new5",
+        "+new6",
+        "+new7",
+        "+new8",
+        "+new9",
+        "+new10",
+      ].join("\n"),
       nameStatus: "M\tprecomputed/ai_additions/Zevachim 16a.json\n",
     }));
     const addPrComment = jest.fn();
@@ -264,7 +407,7 @@ describe("commitAndPushPendingCandidates", () => {
     );
     expect(addPrComment).toHaveBeenCalledWith(
       123,
-      expect.stringContaining("| `precomputed/ai_additions/Zevachim 16a.json` | modify | +10 | -0 |"),
+      expect.stringContaining("| `precomputed/ai_additions/Zevachim 16a.json` | modify | +8 | ~2 | -0 |"),
     );
   });
 
@@ -305,7 +448,7 @@ describe("commitAndPushPendingCandidates", () => {
     );
     expect(addPrComment).toHaveBeenCalledWith(
       42,
-      expect.stringContaining("| `precomputed/ai_additions/Zevachim 16a.json` | modify | +5 | -1 |"),
+      expect.stringContaining("| `precomputed/ai_additions/Zevachim 16a.json` | modify | +5 | ~0 | -1 |"),
     );
   });
 
