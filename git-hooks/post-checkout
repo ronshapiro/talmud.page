@@ -19,6 +19,19 @@ if [[ -z "$GIT_DIR" || -z "$GIT_COMMON_DIR" ]]; then
   exit 0
 fi
 
+CHECKOUT_TYPE="${3:-1}"
+
+# Fetch latest changes from origin on branch/worktree checkout
+if [[ "$CHECKOUT_TYPE" -eq 1 && -z "${GIT_HOOK_FETCHED:-}" ]]; then
+  export GIT_HOOK_FETCHED=1
+  if git remote get-url origin >/dev/null 2>&1; then
+    echo "Fetching latest changes from origin..."
+    if ! git fetch origin; then
+      echo "Notice: Could not fetch from origin (offline or remote unreachable)." >&2
+    fi
+  fi
+fi
+
 # If git-dir and git-common-dir are identical, we are in the main worktree.
 # Never modify symlinks in the main repository.
 if [[ "$GIT_DIR" == "$GIT_COMMON_DIR" ]]; then
