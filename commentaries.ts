@@ -322,6 +322,14 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     className: "torah-temima",
   },
   {
+    // Commentary of the Koren Sacks Siddur (Rabbi Jonathan Sacks). Not available from Sefaria; its
+    // content is entered per segment in the print siddur editor (print/README.md).
+    englishName: "Koren Sacks Commentary",
+    hebrewName: "פירוש הרב זקס",
+    className: "koren-sacks",
+    showTitle: true,
+  },
+  {
     englishName: "Steinsaltz Masechet Intro",
     refPattern: /^Introductions to the Babylonian Talmud, (.*), Introduction to \1( .*)?/,
     hebrewName: "הקדמה למסכת",
