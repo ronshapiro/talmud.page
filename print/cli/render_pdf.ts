@@ -17,6 +17,7 @@
 //   --png-dir DIR      Also write page PNGs (page-001.png, …).
 //   --pages A-B        Limit PNG output to a page range (1-based, inclusive).
 //   --scale N          PNG device scale factor (default 2).
+//   --spreads          PNGs of facing spreads instead of single pages.
 //   --url URL          Use an already-running server (e.g. http://localhost:5001) instead of
 //                      building and starting one.
 //   --offline          Never fetch from the network; use cached_outputs/print only.
@@ -36,6 +37,7 @@ import {buildPrintBundle, startPrintServer} from "./printServer";
 
 interface Args {
   help?: boolean;
+  spreads?: boolean;
   doc?: string;
   kind?: string;
   set: string[];
@@ -68,6 +70,7 @@ function parseArgs(argv: string[]): Args {
       case "--scale": args.scale = parseFloat(next()); break;
       case "--url": args.url = next(); break;
       case "--offline": args.offline = true; break;
+      case "--spreads": args.spreads = true; break;
       case "--chrome": args.chrome = next(); break;
       case "--no-build": args.build = false; break;
       case "--help":
@@ -161,7 +164,10 @@ async function main() {
     page.on("console", message => {
       if (message.type() === "error") console.error("[console]", message.text());
     });
-    await page.addInitScript(`window.__PRINT_DOC__ = ${JSON.stringify(doc)};`);
+    const viewMode = args.spreads ? "spreads" : "single";
+    await page.addInitScript(`localStorage.setItem("print:viewMode", "${viewMode}");
+      localStorage.setItem("print:zoom", "1");
+      window.__PRINT_DOC__ = ${JSON.stringify(doc)};`);
     const started = Date.now();
     await page.goto(`${baseUrl}/print/${doc.kind}`);
     await page.waitForFunction(
@@ -179,7 +185,7 @@ async function main() {
 
     if (args.pngDir) {
       fs.mkdirSync(args.pngDir, {recursive: true});
-      const pages = await page.$$(".page");
+      const pages = await page.$$(args.spreads ? ".spread" : ".page");
       const [from, to] = args.pages ?? [1, pages.length];
       for (let i = from - 1; i < Math.min(to, pages.length); i++) {
         const file = path.join(args.pngDir, `page-${String(i + 1).padStart(3, "0")}.png`);

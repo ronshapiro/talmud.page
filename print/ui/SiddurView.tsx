@@ -3,6 +3,8 @@ import {useEffect, useMemo, useState} from "react";
 import {SiddurSectionData} from "../model/dataTypes";
 import {SiddurDocument} from "../model/documents";
 import {fontFamily} from "../model/fonts";
+import {isLeftHandPage} from "../model/geometry";
+import {SIDDUR_EDITIONS} from "../model/siddurEditions";
 import {SiddurUnit, buildSiddurUnits} from "../model/siddurModel";
 import {Selection} from "../model/siddurEdits";
 import {SiddurLayout, SdFragment, SdPage, paginateSiddur} from "../layout/siddurPaginator";
@@ -100,6 +102,60 @@ function SiddurPageContent({page, layout}: {page: SdPage; layout: SiddurLayout})
   );
 }
 
+/** One language's page of a facing spread. Rows keep their heights so both pages line up. */
+function FacingPageContent({page, layout, lang, number}: {
+  page: SdPage;
+  layout: SiddurLayout;
+  lang: "he" | "en";
+  number: number;
+}) {
+  const g = layout.geometry;
+  const lane = lang === "he" ? 0 : 1;
+  return (
+    <>
+      <div style={{height: g.headerHeight, flexShrink: 0}}>
+        <div className="sd-head">
+          {lang === "he"
+            ? <span className="he" style={{marginInlineStart: "auto"}}>{page.headerHebrew}</span>
+            : <span className="en">{page.headerEnglish}</span>}
+        </div>
+      </div>
+      <div style={{height: g.headerGap, flexShrink: 0}} />
+      {page.rows.map(row => (
+        <div key={row.key} className="sd-row" style={{marginTop: row.spaceBefore, height: row.height}}>
+          <Fragment fragment={row.lanes[lane]} width={g.contentWidth} />
+        </div>
+      ))}
+      <div style={{flex: 1}} />
+      {lang === "en" && page.notes.length > 0
+        ? (
+          <div style={{flexShrink: 0}}>
+            <div style={{height: g.notesRuleHeight, display: "flex", alignItems: "center"}}>
+              <div className="sd-notes-rule" />
+            </div>
+            <div style={{height: page.notesHeight}}>
+              {page.notes.map(note => (
+                <Fragment key={note.key} fragment={note} width={g.contentWidth} />
+              ))}
+            </div>
+          </div>
+        ) : null}
+      <div style={{height: g.footerGap, flexShrink: 0}} />
+      <div className="sd-foot" style={{height: g.footerHeight, flexShrink: 0}}>{number}</div>
+    </>
+  );
+}
+
+function TitlePageContent({doc}: {doc: SiddurDocument}) {
+  const edition = SIDDUR_EDITIONS.find(x => x.id === doc.edition);
+  return (
+    <div className="sd-title-page">
+      <div className="he">{edition?.titleHebrew}</div>
+      <div className="en">{doc.name}</div>
+    </div>
+  );
+}
+
 export function SiddurView(): React.ReactElement {
   const {doc, error, update, replace, saving} = useDocument<SiddurDocument>("siddur");
   const [sections, setSections] = useState<Map<string, SiddurSectionData>>();
@@ -135,7 +191,10 @@ export function SiddurView(): React.ReactElement {
       const result = paginateSiddur(doc, built.units);
       setUnits(built.units);
       setLayout(result);
-      window.__PRINT_STATS__ = {...result.stats, pages: result.pages.length};
+      window.__PRINT_STATS__ = {
+        ...result.stats,
+        pages: result.facing ? 2 * result.pages.length + 1 : result.pages.length,
+      };
       window.requestAnimationFrame(() => window.requestAnimationFrame(() => {
         window.__PRINT_READY__ = true;
       }));
@@ -176,20 +235,38 @@ export function SiddurView(): React.ReactElement {
   const selectedKey = selection ? `${selection.ref}#${selection.pieceIndex}` : undefined;
   const editing = !isHeadless();
 
-  const pages = layout?.pages.map(page => (
+  const frame = (index: number, content: React.ReactElement) => (
     <PageFrame
-      key={page.index}
-      size={{widthPx: layout.geometry.widthPx, heightPx: layout.geometry.heightPx}}
-      margins={layout.marginsFor(page.index)}
+      key={index}
+      size={{widthPx: layout!.geometry.widthPx, heightPx: layout!.geometry.heightPx}}
+      margins={layout!.marginsFor(index)}
       className={`siddur ${editing ? "editing" : ""}`}
-      style={layout.cssVars}
+      style={layout!.cssVars}
       showMargins={showMargins}>
-      <SiddurPageContent page={page} layout={layout} />
+      {content}
     </PageFrame>
-  )) ?? [];
+  );
+
+  let pages: React.ReactElement[] = [];
+  if (layout && !layout.facing) {
+    pages = layout.pages.map(page => (
+      frame(page.index, <SiddurPageContent page={page} layout={layout} />)));
+  } else if (layout) {
+    // A title page first, so that each logical page becomes a two-page spread.
+    pages = [frame(0, <TitlePageContent doc={doc} />)];
+    layout.pages.forEach((page, k) => {
+      for (const index of [2 * k + 1, 2 * k + 2]) {
+        const side = isLeftHandPage(index, doc.page.binding) ? "left" : "right";
+        const lang = side === doc.facingHebrewSide ? "he" : "en";
+        pages.push(frame(index, (
+          <FacingPageContent page={page} layout={layout} lang={lang} number={index + 1} />
+        )));
+      }
+    });
+  }
 
   const status = layout
-    ? `${layout.pages.length} pages · ${layout.stats.millis} ms`
+    ? `${pages.length} pages · ${layout.stats.millis} ms`
     : (dataError ? "" : "Loading text…");
 
   return (

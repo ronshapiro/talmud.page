@@ -763,3 +763,32 @@ body.print-app {
 .blk.justify-last.align-end {
   text-align-last: auto;
 }
+
+.siddur .sd-title-page {
+  margin: auto;
+  text-align: center;
+}
+
+.siddur .sd-title-page .he {
+  font-family: var(--he-font);
+  font-size: calc(var(--he-size) * 2);
+  color: var(--accent);
+  margin-bottom: 0.6em;
+}
+
+.siddur .sd-title-page .en {
+  font-family: var(--en-font);
+  font-size: calc(var(--en-size) * 1.2);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #8a8275;
+}
+
+/* Facing pages: the English title stands alone on its page. */
+.siddur .sd-title .en:only-child {
+  font-size: calc(var(--en-size) * 1.6);
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  text-transform: none;
+  font-variant: small-caps;
+}

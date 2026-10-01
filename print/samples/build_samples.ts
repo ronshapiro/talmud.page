@@ -182,7 +182,14 @@ function mikraotIsaiah(): MikraotDocument {
 }
 
 (async () => {
-  write("siddur-showcase.json", await siddurShowcase());
+  const showcase = await siddurShowcase();
+  write("siddur-showcase.json", showcase);
+  write("siddur-facing.json", {
+    ...showcase,
+    id: "siddur-facing",
+    name: "Showcase: facing pages",
+    spread: "facing",
+  });
   write("siddur-hebrew-only-pocket.json", siddurHebrewOnly());
   write("mikraot-genesis-1.json", mikraotGenesis());
   write("mikraot-exodus-20.json", mikraotExodus());

@@ -77,6 +77,8 @@ export interface SdPage {
 
 export interface SiddurLayout {
   pages: SdPage[];
+  // Facing mode: each SdPage is a spread, rendered as a Hebrew page and an English page.
+  facing: boolean;
   cssVars: string;
   geometry: {
     widthPx: number;
@@ -148,9 +150,11 @@ export function paginateSiddur(doc: SiddurDocument, units: SiddurUnit[]): Siddur
   setMeasurementContext("print-root siddur", cssVars);
 
   const W = box.contentWidthPx;
+  const facing = doc.spread === "facing";
   const gap = 16 * PT;
-  const hebrewWidth = (W - gap) * 0.56;
-  const englishWidth = W - gap - hebrewWidth;
+  // In facing mode each language has its own page, so each lane is a full page wide.
+  const hebrewWidth = facing ? W : (W - gap) * 0.56;
+  const englishWidth = facing ? W : W - gap - hebrewWidth;
   const heLine = doc.typography.hebrewSizePt * PT * doc.typography.lineHeight;
   const headerGap = 10 * PT;
   const footerGap = 8 * PT;
@@ -199,16 +203,22 @@ export function paginateSiddur(doc: SiddurDocument, units: SiddurUnit[]): Siddur
   for (const unit of units) {
     if (unit.kind === "title") {
       titles.set(unit.sectionId, {he: unit.he, en: unit.en});
-      pending.push({
-        key: unit.key,
-        specs: [{
+      const specs: BlockSpec[] = facing
+        ? [
+          {key: `${unit.key}:he`, className: "blk sd-title", dir: "rtl", tokens: tokenize(`<span class="he">${unit.he}</span>`)},
+          {key: `${unit.key}:en`, className: "blk sd-title", dir: "ltr", tokens: tokenize(`<span class="en">${unit.en}</span>`)},
+        ]
+        : [{
           key: unit.key,
           className: "blk sd-title",
           dir: "rtl",
           tokens: tokenize(`<span class="he">${unit.he}</span><br><span class="en">${unit.en}</span>`),
-        }],
-        widths: [W],
-        pair: false,
+        }];
+      pending.push({
+        key: unit.key,
+        specs,
+        widths: facing ? [W, W] : [W],
+        pair: facing,
         spaceBefore: 2.2 * heLine,
         keepWithNext: true,
         pageBreakBefore: unit.pageBreakBefore,
@@ -240,7 +250,20 @@ export function paginateSiddur(doc: SiddurDocument, units: SiddurUnit[]): Siddur
       pieces: row.pieces,
     };
 
-    if (row.translation === "side-by-side") {
+    if (facing) {
+      // Every row is a pair: Hebrew on its page, English (if any) at the same height on the other.
+      const hasEnglish = row.en.length > 0 && row.translation !== "hebrew-only";
+      pending.push({
+        ...common,
+        key: row.key,
+        specs: [heSpec(row, `${row.key}:he`, row.he), hasEnglish ? enSpec(row, `${row.key}:en`) : undefined],
+        widths: [W, W],
+        pair: true,
+        spaceBefore,
+        keepWithNext: row.options.keepWithNext,
+        noteSpecs,
+      });
+    } else if (row.translation === "side-by-side") {
       pending.push({
         ...common,
         key: row.key,
@@ -495,6 +518,7 @@ export function paginateSiddur(doc: SiddurDocument, units: SiddurUnit[]): Siddur
 
   return {
     pages,
+    facing,
     cssVars,
     geometry: {
       widthPx: box.widthPx,

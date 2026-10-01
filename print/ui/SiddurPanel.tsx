@@ -496,6 +496,28 @@ export function SiddurPanel({doc, update, sections, selection, setSelection}: {
             </Row>
             <h3>Prayers</h3>
             <SectionPicker doc={doc} update={update} />
+            <Row label="Layout">
+              <select
+                value={doc.spread}
+                onChange={e => update(x => ({...x, spread: e.target.value as SiddurDocument["spread"]}))}>
+                <option value="single">Single pages</option>
+                <option value="facing">Facing pages (Hebrew | English)</option>
+              </select>
+            </Row>
+            {doc.spread === "facing"
+              ? (
+                <Row label="Hebrew on the">
+                  <select
+                    value={doc.facingHebrewSide}
+                    onChange={e => update(x => ({
+                      ...x,
+                      facingHebrewSide: e.target.value as SiddurDocument["facingHebrewSide"],
+                    }))}>
+                    <option value="left">Left page</option>
+                    <option value="right">Right page</option>
+                  </select>
+                </Row>
+              ) : null}
             <Row label="Each prayer on a new page">
               <input
                 type="checkbox"

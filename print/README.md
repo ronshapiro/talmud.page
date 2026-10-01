@@ -138,8 +138,10 @@ Done:
   per-level overrides, section page breaks, running heads.
 - IndexedDB documents, `?doc=`, duplicate/export/import/delete; offline PDF/PNG renderer.
 
+- Siddur facing-pages mode: Hebrew and English on facing pages with rows aligned across the
+  spread (Hebrew side configurable), preceded by a title page.
+
 Next:
-- Siddur facing-pages mode (Hebrew and English on facing pages, Koren style).
 - Mikraot per-comment curation UI (hide/re-tier individual comments) and an import format for
   AI-produced curation.
 - Nusach Sefard and Koren Machzor editions (registered, disabled until their sources are mapped).

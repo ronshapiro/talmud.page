@@ -112,6 +112,10 @@ export interface SiddurDocument extends BaseDocument {
   showCommentary: string[];
   // Each section starts on a new page.
   sectionPageBreaks: boolean;
+  // "facing": Hebrew and English on facing pages of each spread, rows aligned (Koren style).
+  spread: "single" | "facing";
+  // In facing mode, which page of the spread holds the Hebrew.
+  facingHebrewSide: "left" | "right";
 }
 
 // ---------------------------------------------------------------------------------------------
@@ -220,6 +224,8 @@ export function defaultSiddurDocument(name = "My Siddur"): SiddurDocument {
     commentary: {},
     showCommentary: ["Koren Sacks Commentary"],
     sectionPageBreaks: true,
+    spread: "single",
+    facingHebrewSide: "left",
   };
 }
 

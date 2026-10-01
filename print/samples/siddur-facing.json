@@ -1,6 +1,6 @@
 {
-  "id": "siddur-showcase",
-  "name": "Showcase: Koren-style siddur",
+  "id": "siddur-facing",
+  "name": "Showcase: facing pages",
   "kind": "siddur",
   "schemaVersion": 1,
   "createdAt": 1790889011791,
@@ -181,6 +181,6 @@
     "Koren Sacks Commentary"
   ],
   "sectionPageBreaks": true,
-  "spread": "single",
+  "spread": "facing",
   "facingHebrewSide": "left"
 }

@@ -3,8 +3,8 @@
   "name": "Hebrew-only pocket siddur",
   "kind": "siddur",
   "schemaVersion": 1,
-  "createdAt": 1790888784028,
-  "updatedAt": 1790888784028,
+  "createdAt": 1790889011793,
+  "updatedAt": 1790889011793,
   "page": {
     "preset": "pocket",
     "unit": "in",
@@ -49,5 +49,7 @@
   "showCommentary": [
     "Koren Sacks Commentary"
   ],
-  "sectionPageBreaks": true
+  "sectionPageBreaks": true,
+  "spread": "single",
+  "facingHebrewSide": "left"
 }
