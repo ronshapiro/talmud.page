@@ -792,3 +792,22 @@ body.print-app {
   text-transform: none;
   font-variant: small-caps;
 }
+
+.flip-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  font-size: 13px;
+}
+
+@media screen {
+  .flip-hidden {
+    display: none !important;
+  }
+}
+
+.print-panel select {
+  max-width: 190px;
+}

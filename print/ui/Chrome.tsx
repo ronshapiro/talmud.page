@@ -31,7 +31,7 @@ interface ToolbarProps<T extends PrintDocument> {
   children?: React.ReactNode;
 }
 
-export type ViewMode = "spreads" | "single";
+export type ViewMode = "spreads" | "single" | "flip";
 
 const ZOOM_LEVELS = [0.5, 0.65, 0.8, 1, 1.25, 1.5, 2];
 
@@ -112,6 +112,7 @@ export function Toolbar<T extends PrintDocument>(props: ToolbarProps<T>): React.
       <select value={props.viewMode} onChange={e => props.setViewMode(e.target.value as ViewMode)}>
         <option value="spreads">Spreads</option>
         <option value="single">Single pages</option>
+        <option value="flip">One spread at a time</option>
       </select>
       <select value={props.zoom} onChange={e => props.setZoom(parseFloat(e.target.value))}>
         {ZOOM_LEVELS.map(x => <option key={x} value={x}>{Math.round(x * 100)}%</option>)}
@@ -135,6 +136,7 @@ export function PagesView(props: {
   zoom: number;
 }): React.ReactElement {
   const {pages, size, binding, viewMode, zoom} = props;
+  const [current, setCurrent] = useState(0);
   const wrapped = pages.map((page, i) => (
     // Pages are positional; their index is their identity.
     // eslint-disable-next-line react/no-array-index-key
@@ -144,25 +146,44 @@ export function PagesView(props: {
     </div>
   ));
 
+  const pageCount = pages.length;
+  let spreadCount = 0;
+  const shown = Math.min(current, Math.max(0, Math.ceil((pageCount + 1) / 2) - 1));
+
+  useEffect(() => {
+    if (viewMode !== "flip") return undefined;
+    const onKey = (event: KeyboardEvent) => {
+      if ((event.target as HTMLElement).closest("input, textarea, select")) return;
+      // Turning a page forward moves leftward in a right-bound (Hebrew) book.
+      const forward = binding === "rtl" ? "ArrowLeft" : "ArrowRight";
+      const back = binding === "rtl" ? "ArrowRight" : "ArrowLeft";
+      if (event.key === forward) setCurrent(x => x + 1);
+      if (event.key === back) setCurrent(x => Math.max(0, x - 1));
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [viewMode, binding]);
+
   let content: React.ReactElement;
   if (viewMode === "single") {
     content = <div className="single-pages">{wrapped}</div>;
   } else {
     // Pages are grouped into facing spreads; the first page stands alone (like a book opening).
     const spreads: {pages: React.ReactElement[]; firstIndex: number}[] = [];
-    let current: React.ReactElement[] = [];
+    let currentSpread: React.ReactElement[] = [];
     let firstIndex = 0;
     wrapped.forEach((page, i) => {
-      if (current.length === 0) firstIndex = i;
-      current.push(page);
+      if (currentSpread.length === 0) firstIndex = i;
+      currentSpread.push(page);
       // A spread ends with its left-hand page for right-bound books, its right-hand page otherwise.
       const left = isLeftHandPage(i, binding);
       if (binding === "rtl" ? left : !left) {
-        spreads.push({pages: current, firstIndex});
-        current = [];
+        spreads.push({pages: currentSpread, firstIndex});
+        currentSpread = [];
       }
     });
-    if (current.length > 0) spreads.push({pages: current, firstIndex});
+    if (currentSpread.length > 0) spreads.push({pages: currentSpread, firstIndex});
+    spreadCount = spreads.length;
     content = (
       <div>
         {spreads.map((spread, i) => {
@@ -172,8 +193,11 @@ export function PagesView(props: {
             ? "center"
             : ((binding === "rtl") === loneLeft ? "flex-end" : "flex-start");
           return (
-            // eslint-disable-next-line react/no-array-index-key
-            <div key={i} className={`spread ${binding}`} style={{justifyContent: justify, width: size.widthPx * 2}}>
+            <div
+              // eslint-disable-next-line react/no-array-index-key
+              key={i}
+              className={`spread ${binding} ${viewMode === "flip" && i !== shown ? "flip-hidden" : ""}`}
+              style={{justifyContent: justify, width: size.widthPx * 2}}>
               {spread.pages}
             </div>
           );
@@ -183,9 +207,24 @@ export function PagesView(props: {
   }
 
   return (
-    <div className="zoom-container" style={{transform: zoom === 1 ? undefined : `scale(${zoom})`}}>
-      {content}
-    </div>
+    <>
+      {viewMode === "flip"
+        ? (
+          <div className="flip-nav no-print">
+            <button disabled={shown === 0} onClick={() => setCurrent(Math.max(0, shown - 1))}>
+              Back
+            </button>
+            <span>{`Spread ${shown + 1} of ${spreadCount}`}</span>
+            <button disabled={shown >= spreadCount - 1} onClick={() => setCurrent(shown + 1)}>
+              Forward
+            </button>
+            <span className="hint">{binding === "rtl" ? "← forward · → back" : "→ forward · ← back"}</span>
+          </div>
+        ) : null}
+      <div className="zoom-container" style={{transform: zoom === 1 ? undefined : `scale(${zoom})`}}>
+        {content}
+      </div>
+    </>
   );
 }
 
