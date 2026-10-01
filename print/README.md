@@ -110,12 +110,40 @@ commentary regions · English notes.
 
 ## Usage
 
-- `npm run dev`, then open `http://localhost:5001/print`.
-- `/print/siddur?doc=<id>` and `/print/mikraot?doc=<id>`; with no `doc`, the most recently used
-  document of that kind is opened (or a new one created).
-- Offline PDF: `npx ts-node print/cli/render_pdf.ts --doc exported.json --out out.pdf`
-  (see `--help`).
+- With the full app: `npm run dev`, then open `http://localhost:5001/print`.
+- Print layouts only (faster to iterate): `npx ts-node print/cli/printServer.ts --watch`, then open
+  `http://localhost:5002/print`.
+- `/print/siddur?doc=<id>` and `/print/mikraot?doc=<id>`. With no `doc`, the most recently used
+  document of that kind is opened. An unknown id creates a new document with that id, so
+  `?doc=shabbat-pocket` is a quick way to start a variant. Open several in different tabs to
+  work on variants in parallel.
+- In the Siddur, click any text on a page to edit it. Scope tabs choose the level an option applies
+  to (piece, segment, paragraph, section, or all); word chips are used for splits, line breaks
+  and styles.
+- Offline PDF: `npx ts-node print/cli/render_pdf.ts --doc print/samples/siddur-showcase.json
+  --out siddur.pdf` (`--help` for options, including `--png-dir` for page images and `--offline`
+  to use only cached text).
+- Samples: `print/samples/*.json` (regenerate with `npx ts-node print/samples/build_samples.ts`).
+  Import them with the toolbar's Import button.
 
-## Roadmap / status
+## Status
 
-See the bottom of this file; it is updated as work lands.
+Done:
+- Layout engine (token rich text, line-box measurement, column packing) with unit tests.
+- Mikraot Gedolot: tiers, configurable commentators/order/English, targum beside the text,
+  parasha (petucha/setuma) breaks, trope toggle, English notes, commentary lag budget,
+  page-fill control, all page sizes.
+- Siddur: Nusach Ashkenaz (curated weekday Shacharit + Kabbalat Shabbat/Shabbat evening from
+  Sefaria + Birkat Hamazon), all translation modes, splits, breaks, styles, commentary notes,
+  per-level overrides, section page breaks, running heads.
+- IndexedDB documents, `?doc=`, duplicate/export/import/delete; offline PDF/PNG renderer.
+
+Next:
+- Siddur facing-pages mode (Hebrew and English on facing pages, Koren style).
+- Mikraot per-comment curation UI (hide/re-tier individual comments) and an import format for
+  AI-produced curation.
+- Nusach Sefard and Koren Machzor editions (registered, disabled until their sources are mapped).
+
+Known issues:
+- Chrome occasionally stretches letters on a justified Hebrew line; Siddur defaults are therefore
+  ragged (start-aligned).

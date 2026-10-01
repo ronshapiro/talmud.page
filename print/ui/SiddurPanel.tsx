@@ -82,12 +82,16 @@ function OptionalNumber(props: {
   step: number;
 }) {
   return (
-    <span>
-      <NumberInput value={props.value ?? 0} step={props.step} onChange={props.onChange} />
-      {props.value !== undefined
-        ? <button onClick={() => props.onChange(undefined)} title="Inherit">×</button>
-        : null}
-    </span>
+    <input
+      type="number"
+      value={props.value ?? ""}
+      placeholder="inherit"
+      step={props.step}
+      style={{width: 72}}
+      onChange={e => {
+        const parsed = parseFloat(e.target.value);
+        props.onChange(Number.isNaN(parsed) ? undefined : parsed);
+      }} />
   );
 }
 
