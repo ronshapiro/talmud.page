@@ -42,6 +42,7 @@ export interface MgItemData {
 type Item = FlowItem<MgItemData>;
 
 interface CommentEntry {
+  ref: string;
   commentator: string;
   tier: 1 | 2;
   verseIndex: number;
@@ -60,6 +61,8 @@ interface GlobalVerse {
 
 export interface RenderedFragment {
   key: string;
+  // The comment this fragment belongs to (comments and their English notes), for selection.
+  ref?: string;
   lang?: string;
   className: string;
   style?: string;
@@ -154,6 +157,7 @@ function renderFragment(
   if (absoluteTo < lines.length) classes.push("justify-last");
   return {
     key,
+    ref: fragment.item.data.entry?.ref,
     className: classes.join(" "),
     style: spec.style,
     dir: spec.dir,
@@ -229,6 +233,7 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
   const commentatorOrder = new Map(activeCommentators.map((x, i) => [x.id, i]));
 
   interface PendingEntry {
+    ref: string;
     commentator: string;
     tier: 1 | 2;
     verseIndex: number;
@@ -253,6 +258,7 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
           const index = verseIndex.get(`${chapter.chapter}:${v + 1}`);
           if (index === undefined) return;
           pendingEntries.push({
+            ref: comment.ref,
             commentator: config.id,
             tier: tier as 1 | 2,
             verseIndex: index,
@@ -285,6 +291,7 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
   }
   measureBlocks(pendingEntries.filter(x => x.noteSpec).map(x => x.noteSpec!), notesWidth);
   const entries: CommentEntry[] = pendingEntries.map(x => ({
+    ref: x.ref,
     commentator: x.commentator,
     tier: x.tier,
     verseIndex: x.verseIndex,

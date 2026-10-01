@@ -23,8 +23,16 @@ const SHEMA = "SiddurAshkenaz/Birchot Kriat Shema";
 const LEKHA_DODI = "Siddur Ashkenaz, Shabbat, Kabbalat Shabbat, Lekha Dodi";
 const SHEMA_PREFIX = "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, ";
 
+// Fixed timestamps keep regenerated samples stable in version control.
+const SAMPLE_TIME = Date.UTC(2026, 9, 1);
+
 function write(name: string, doc: unknown) {
-  fs.writeFileSync(path.join(OUT, name), JSON.stringify(doc, undefined, 2) + "\n");
+  const stable = {
+    ...(doc as Record<string, unknown>),
+    createdAt: SAMPLE_TIME,
+    updatedAt: SAMPLE_TIME,
+  };
+  fs.writeFileSync(path.join(OUT, name), JSON.stringify(stable, undefined, 2) + "\n");
   console.log(`Wrote ${name}`);
 }
 

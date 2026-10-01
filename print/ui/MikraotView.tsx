@@ -1,7 +1,14 @@
 import * as React from "react";
 import {useEffect, useState} from "react";
 import {MikraotChapter} from "../model/dataTypes";
-import {CommentatorConfig, MikraotDocument, Tier, defaultCommentatorConfigs} from "../model/documents";
+import {applyCuration, buildCurationRequest, setCommentOverride} from "../model/curation";
+import {
+  CommentOverride,
+  CommentatorConfig,
+  MikraotDocument,
+  Tier,
+  defaultCommentatorConfigs,
+} from "../model/documents";
 import {fontFamily, fontsForScript} from "../model/fonts";
 import {COMMENTATORS_BY_ID, TANAKH_BOOKS, tanakhBook} from "../model/mikraotCommentators";
 import {MikraotLayout, MgPage, RegionLayout, RenderedFragment, paginateMikraot} from "../layout/mikraotPaginator";
@@ -51,7 +58,13 @@ function Fragment({fragment}: {fragment: RenderedFragment}) {
       className={fragment.className}
       dir={fragment.dir}
       lang={fragment.lang}
-      style={{...parseStyle(fragment.style ?? ""), marginTop: fragment.spaceBefore, height: fragment.height, display: "flow-root"}}
+      data-ref={fragment.ref}
+      style={{
+        ...parseStyle(fragment.style ?? ""),
+        marginTop: fragment.spaceBefore,
+        height: fragment.height,
+        display: "flow-root",
+      }}
       dangerouslySetInnerHTML={{__html: fragment.html}} />
   );
 }
@@ -127,9 +140,135 @@ function MikraotPageContent({page, layout, doc}: {
 
 const TIER_LABELS: Record<Tier, string> = {0: "Off", 1: "Primary", 2: "Secondary"};
 
-function MikraotSettings({doc, update}: {
+type Update = (updater: (doc: MikraotDocument) => MikraotDocument) => void;
+
+function findComment(chapters: MikraotChapter[] | undefined, ref: string) {
+  for (const chapter of chapters ?? []) {
+    for (const [id, commentary] of Object.entries(chapter.commentaries)) {
+      for (let v = 0; v < commentary.verses.length; v++) {
+        const comment = commentary.verses[v].find(x => x.ref === ref);
+        if (comment) return {commentator: id, verse: `${chapter.chapter}:${v + 1}`, comment};
+      }
+    }
+  }
+  return undefined;
+}
+
+function downloadFile(name: string, value: unknown) {
+  const blob = new Blob([JSON.stringify(value, undefined, 2)], {type: "application/json"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = name;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+function pickFile(): Promise<string> {
+  return new Promise(resolve => {
+    const input = document.createElement("input");
+    input.type = "file";
+    input.accept = "application/json,.json";
+    input.addEventListener("change", () => input.files?.[0]?.text().then(resolve));
+    input.click();
+  });
+}
+
+function CurationPanel({doc, update, chapters, selectedRef, setSelectedRef}: {
   doc: MikraotDocument;
-  update: (updater: (doc: MikraotDocument) => MikraotDocument) => void;
+  update: Update;
+  chapters?: MikraotChapter[];
+  selectedRef?: string;
+  setSelectedRef: (ref: string | undefined) => void;
+}) {
+  const selected = selectedRef ? findComment(chapters, selectedRef) : undefined;
+  const override = selectedRef ? doc.commentOverrides[selectedRef] ?? {} : {};
+  const overrides = Object.entries(doc.commentOverrides);
+  const set = (change: CommentOverride) => update(x => setCommentOverride(x, selectedRef!, change));
+
+  const importCuration = async () => {
+    try {
+      const {doc: next, warnings} = applyCuration(doc, JSON.parse(await pickFile()));
+      update(() => next);
+      if (warnings.length > 0) {
+        // eslint-disable-next-line no-alert
+        alert(`Imported with warnings:\n${warnings.join("\n")}`);
+      }
+    } catch (e) {
+      // eslint-disable-next-line no-alert
+      alert(String(e));
+    }
+  };
+
+  return (
+    <>
+      <h3>Curation</h3>
+      {selected
+        ? (
+          <>
+            <div className="hint">
+              {COMMENTATORS_BY_ID[selected.commentator]?.englishName} on {selected.verse}
+              {" · "}
+              <button onClick={() => setSelectedRef(undefined)}>deselect</button>
+            </div>
+            <div className="word-chips rtl" style={{maxHeight: 90}}>
+              {selected.comment.he.replace(/<[^>]+>/g, "").slice(0, 220)}
+            </div>
+            <div className="row">
+              <span>Show</span>
+              <select
+                value={override.hidden ? "hidden" : String(override.tier ?? "")}
+                onChange={e => {
+                  const {value} = e.target;
+                  if (value === "hidden") set({hidden: true, tier: undefined});
+                  else set({hidden: undefined, tier: value ? parseInt(value) as Tier : undefined});
+                }}>
+                <option value="">(commentator default)</option>
+                <option value="1">Primary</option>
+                <option value="2">Secondary</option>
+                <option value="hidden">Hidden</option>
+              </select>
+            </div>
+            <div className="row">
+              <span>English note</span>
+              <select
+                value={override.showEnglish === undefined ? "" : String(override.showEnglish)}
+                onChange={e => set({showEnglish: e.target.value === "" ? undefined : e.target.value === "true"})}>
+                <option value="">(commentator default)</option>
+                <option value="true">Show</option>
+                <option value="false">Hide</option>
+              </select>
+            </div>
+          </>
+        )
+        : <div className="hint">Click a comment on a page to hide it or change its prominence.</div>}
+      <div className="hint">{overrides.length} comment override{overrides.length === 1 ? "" : "s"}</div>
+      <div className="button-row">
+        <button
+          onClick={() => chapters && downloadFile(
+            `curation-request-${doc.book}-${doc.startChapter}.json`, buildCurationRequest(doc, chapters))}
+          title="Inventory of every comment, for an automated curation tool">
+          Export comments
+        </button>
+        <button onClick={importCuration} title="Apply a curation file (kind: mikraot-curation)">
+          Import curation
+        </button>
+        <button
+          disabled={overrides.length === 0}
+          onClick={() => update(x => ({...x, commentOverrides: {}}))}>
+          Clear overrides
+        </button>
+      </div>
+    </>
+  );
+}
+
+function MikraotSettings({doc, update, chapters, selectedRef, setSelectedRef}: {
+  doc: MikraotDocument;
+  update: Update;
+  chapters?: MikraotChapter[];
+  selectedRef?: string;
+  setSelectedRef: (ref: string | undefined) => void;
 }) {
   const info = tanakhBook(doc.book);
   const setTypography = (key: keyof MikraotDocument["typography"], value: any) => (
@@ -150,6 +289,12 @@ function MikraotSettings({doc, update}: {
 
   return (
     <div className="print-panel no-print">
+      <CurationPanel
+        doc={doc}
+        update={update}
+        chapters={chapters}
+        selectedRef={selectedRef}
+        setSelectedRef={setSelectedRef} />
       <h3>Text</h3>
       <div className="row">
         <span>Book</span>
@@ -296,6 +441,7 @@ export function MikraotView(): React.ReactElement {
   const [viewMode, setViewMode] = usePersistentState<ViewMode>("print:viewMode", "spreads");
   const [zoom, setZoom] = usePersistentState<number>("print:zoom", 1);
   const [showMargins, setShowMargins] = useState(false);
+  const [selectedRef, setSelectedRef] = useState<string>();
 
   usePageRule(doc?.page ?? {width: 8.5, height: 11, unit: "in"} as any);
 
@@ -354,8 +500,20 @@ export function MikraotView(): React.ReactElement {
     ? `${layout.pages.length} pages · ${layout.stats.comments} comments · ${layout.stats.millis} ms`
     : (dataError ? "" : "Loading text…");
 
+  const onPagesClick = (event: React.MouseEvent) => {
+    const target = (event.target as HTMLElement).closest<HTMLElement>("[data-ref]");
+    if (target) setSelectedRef(target.dataset.ref);
+  };
+
   return (
     <>
+      {selectedRef
+        ? (
+          <style>
+            {`.mikraot [data-ref="${CSS.escape(selectedRef)}"] { background: rgba(232, 200, 120, 0.4); }
+              @media print { .mikraot [data-ref] { background: none !important; } }`}
+          </style>
+        ) : null}
       <Toolbar
         kind="mikraot"
         doc={doc}
@@ -373,7 +531,9 @@ export function MikraotView(): React.ReactElement {
         </span>
       </Toolbar>
       <div className="print-workspace">
-        <div className="print-pages">
+        {/* eslint-disable-next-line max-len */}
+        {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions */}
+        <div className="print-pages" onClick={onPagesClick}>
           {dataError ? <div className="print-status print-error">{dataError}</div> : null}
           {layout
             ? (
@@ -386,7 +546,12 @@ export function MikraotView(): React.ReactElement {
             )
             : (dataError ? null : <div className="print-status">Laying out pages…</div>)}
         </div>
-        <MikraotSettings doc={doc} update={update} />
+        <MikraotSettings
+          doc={doc}
+          update={update}
+          chapters={chapters}
+          selectedRef={selectedRef}
+          setSelectedRef={setSelectedRef} />
       </div>
     </>
   );
