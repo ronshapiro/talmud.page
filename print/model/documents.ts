@@ -157,6 +157,9 @@ export interface MikraotLayout {
   // How many verses the main text may run ahead of a long commentary that is continued across
   // pages, before pages are given over to the commentary alone.
   maxCommentaryLag: number;
+  // If a page that fits its verses' commentary completely would be less full than this, take one
+  // more verse and continue its commentary on the next page instead.
+  minPageFill: number;
   showTargum: boolean;
   showVerseTranslation: boolean;
   columnRules: boolean;
@@ -264,6 +267,7 @@ export function defaultMikraotDocument(name = "Mikraot Gedolot", book = "Genesis
       maxNotesFraction: 0.3,
       maxMainFraction: 0.45,
       maxCommentaryLag: 3,
+      minPageFill: 0.88,
       showTargum: false,
       showVerseTranslation: true,
       columnRules: true,

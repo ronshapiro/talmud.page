@@ -3,8 +3,8 @@
   "name": "Genesis 1 (default)",
   "kind": "mikraot",
   "schemaVersion": 1,
-  "createdAt": 1790888525593,
-  "updatedAt": 1790888525593,
+  "createdAt": 1790888784028,
+  "updatedAt": 1790888784028,
   "page": {
     "preset": "crown-quarto",
     "unit": "in",
@@ -110,6 +110,7 @@
     "maxNotesFraction": 0.3,
     "maxMainFraction": 0.45,
     "maxCommentaryLag": 3,
+    "minPageFill": 0.88,
     "showTargum": false,
     "showVerseTranslation": true,
     "columnRules": true

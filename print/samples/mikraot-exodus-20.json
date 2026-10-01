@@ -3,8 +3,8 @@
   "name": "Exodus 20 with Onkelos",
   "kind": "mikraot",
   "schemaVersion": 1,
-  "createdAt": 1790888525593,
-  "updatedAt": 1790888525593,
+  "createdAt": 1790888784029,
+  "updatedAt": 1790888784029,
   "page": {
     "preset": "crown-quarto",
     "unit": "in",
@@ -110,6 +110,7 @@
     "maxNotesFraction": 0.3,
     "maxMainFraction": 0.45,
     "maxCommentaryLag": 3,
+    "minPageFill": 0.88,
     "showTargum": true,
     "showVerseTranslation": true,
     "columnRules": true

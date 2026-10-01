@@ -595,7 +595,9 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
         break;
       }
     }
-    if (lastComplete && (lastComplete.fill >= 0.75 || !firstIncomplete)) return lastComplete;
+    if (lastComplete && (lastComplete.fill >= layout.minPageFill || !firstIncomplete)) {
+      return lastComplete;
+    }
     // Space-filling: rather than leave the page mostly white, take one more verse and let its
     // commentary continue on the next page.
     return firstIncomplete ?? carryOnly;

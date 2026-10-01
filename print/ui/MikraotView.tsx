@@ -270,6 +270,7 @@ function MikraotSettings({doc, update}: {
         ["maxNotesFraction", "Max notes share of page", 0.05],
         ["maxMainFraction", "Max main text share of page", 0.05],
         ["maxCommentaryLag", "Max verses text may run ahead", 1],
+        ["minPageFill", "Min page fill before continuing", 0.02],
       ] as const).map(([key, label, step]) => (
         <div className="row" key={key}>
           <span>{label}</span>
