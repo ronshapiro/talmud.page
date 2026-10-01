@@ -1,0 +1,117 @@
+{
+  "id": "mikraot-exodus-20",
+  "name": "Exodus 20 with Onkelos",
+  "kind": "mikraot",
+  "schemaVersion": 1,
+  "createdAt": 1790888525593,
+  "updatedAt": 1790888525593,
+  "page": {
+    "preset": "crown-quarto",
+    "unit": "in",
+    "width": 7.44,
+    "height": 9.69,
+    "margins": {
+      "top": 0.55,
+      "bottom": 0.55,
+      "inner": 0.65,
+      "outer": 0.5
+    },
+    "binding": "rtl"
+  },
+  "book": "Exodus",
+  "startChapter": 20,
+  "endChapter": 20,
+  "commentators": [
+    {
+      "id": "onkelos",
+      "tier": 0,
+      "showEnglish": false
+    },
+    {
+      "id": "rashi",
+      "tier": 1,
+      "showEnglish": true
+    },
+    {
+      "id": "ramban",
+      "tier": 1,
+      "showEnglish": false
+    },
+    {
+      "id": "ibn-ezra",
+      "tier": 1,
+      "showEnglish": true
+    },
+    {
+      "id": "rashbam",
+      "tier": 2,
+      "showEnglish": false
+    },
+    {
+      "id": "sforno",
+      "tier": 2,
+      "showEnglish": false
+    },
+    {
+      "id": "radak",
+      "tier": 0,
+      "showEnglish": false
+    },
+    {
+      "id": "or-hachaim",
+      "tier": 2,
+      "showEnglish": false
+    },
+    {
+      "id": "baal-haturim",
+      "tier": 0,
+      "showEnglish": false
+    },
+    {
+      "id": "siftei-chakhamim",
+      "tier": 0,
+      "showEnglish": false
+    },
+    {
+      "id": "chizkuni",
+      "tier": 0,
+      "showEnglish": false
+    },
+    {
+      "id": "kli-yakar",
+      "tier": 0,
+      "showEnglish": false
+    },
+    {
+      "id": "malbim",
+      "tier": 0,
+      "showEnglish": false
+    }
+  ],
+  "commentOverrides": {},
+  "typography": {
+    "mainFont": "keter-yg",
+    "commentaryFont": "noto-rashi",
+    "notesFont": "eb-garamond",
+    "mainSizePt": 15,
+    "tier1SizePt": 9.6,
+    "tier2SizePt": 8.6,
+    "targumSizePt": 10,
+    "notesSizePt": 7.6,
+    "lineHeight": 1.45,
+    "showTrope": true
+  },
+  "layout": {
+    "tier1Columns": 2,
+    "tier2Columns": 3,
+    "notesColumns": 2,
+    "columnGapPt": 14,
+    "regionGapPt": 10,
+    "maxNotesFraction": 0.3,
+    "maxMainFraction": 0.45,
+    "maxCommentaryLag": 3,
+    "showTargum": true,
+    "showVerseTranslation": true,
+    "columnRules": true
+  }
+}

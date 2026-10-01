@@ -12,6 +12,8 @@ export interface BlockSpec {
   className: string;
   style?: string;
   dir: "rtl" | "ltr";
+  // Language, for hyphenation.
+  lang?: string;
   tokens: Token[];
   // HTML placed before the first token on the first fragment only (e.g. a commentator heading
   // run-in). It is measured as part of the first line.
@@ -149,6 +151,7 @@ export function measureBlocks(specs: BlockSpec[], width: number): MeasuredBlock[
     element.className = spec.className;
     if (spec.style) element.setAttribute("style", spec.style);
     element.dir = spec.dir;
+    if (spec.lang) element.lang = spec.lang;
     // display: flow-root so that margins of children can't collapse through the block.
     element.style.display = "flow-root";
     element.innerHTML = blockInnerHtml(spec, 0, spec.tokens.length, true);

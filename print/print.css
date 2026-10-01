@@ -491,3 +491,275 @@ body.print-app {
 .print-home a {
   color: #7a1f1f;
 }
+
+/* ------------------------------------------------------------------------------------------ */
+/* Siddur */
+
+.siddur {
+  --he-font: "Frank Ruehl CLM", serif;
+  --en-font: "EB Garamond", serif;
+  --he-size: 14pt;
+  --en-size: 10.5pt;
+  --lh: 1.55;
+  --instruction-color: #8a6d3b;
+  --accent: #7a1f1f;
+}
+
+.siddur .sd-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: #8a8275;
+}
+
+.siddur .sd-head .he {
+  font-family: var(--he-font);
+  font-size: 9.5pt;
+  order: 2;
+}
+
+.siddur .sd-head .en {
+  font-family: var(--en-font);
+  font-size: 7.5pt;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  order: 1;
+}
+
+.siddur .sd-foot {
+  text-align: center;
+  font-family: var(--en-font);
+  font-size: 8.5pt;
+  color: #8a8275;
+}
+
+.siddur .sd-he {
+  font-family: var(--he-font);
+  font-size: var(--he-size);
+  line-height: var(--lh);
+  direction: rtl;
+}
+
+.siddur .sd-en {
+  font-family: var(--en-font);
+  font-size: var(--en-size);
+  line-height: 1.42;
+  direction: ltr;
+  hyphens: auto;
+  color: #26231f;
+}
+
+.siddur .sd-en.stacked {
+  color: #4a453d;
+  font-size: calc(var(--en-size) * 0.95);
+}
+
+.siddur .align-start { text-align: start; }
+.siddur .align-end { text-align: end; }
+.siddur .align-center { text-align: center; }
+.siddur .align-justify { text-align: justify; }
+
+.siddur .sd-he.align-center.lines, .siddur .sd-he.align-start.lines {
+  text-align-last: auto;
+}
+
+/* Instructions (rubrics) */
+.siddur .sd-he small {
+  font-family: "Noto Sans Hebrew", sans-serif;
+  font-size: 0.62em;
+  font-weight: 500;
+  color: var(--instruction-color);
+}
+
+.siddur .sd-en i {
+  font-style: italic;
+  color: var(--instruction-color);
+  font-size: 0.92em;
+}
+
+.siddur .sd-he b, .siddur .sd-he strong {
+  font-weight: 700;
+}
+
+.siddur .really-big-text {
+  font-size: 1.3em;
+}
+
+.siddur .sd-title {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.siddur .sd-title .he {
+  font-family: var(--he-font);
+  font-size: calc(var(--he-size) * 1.45);
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+}
+
+.siddur .sd-title .en {
+  font-family: var(--en-font);
+  font-size: calc(var(--en-size) * 0.95);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #8a8275;
+}
+
+.siddur .sd-fn {
+  font-family: var(--en-font);
+  font-size: 0.5em;
+  color: var(--accent);
+  vertical-align: 0.9em;
+  line-height: 0;
+  margin-inline-start: 0.1em;
+}
+
+.siddur .sd-note {
+  font-family: var(--en-font);
+  font-size: calc(var(--en-size) * 0.82);
+  line-height: 1.32;
+  text-align: justify;
+  hyphens: auto;
+  color: #3a362f;
+  direction: ltr;
+}
+
+.siddur .sd-note sup {
+  color: var(--accent);
+  font-weight: 600;
+  margin-inline-end: 0.2em;
+}
+
+.siddur .sd-note .sd-note-type {
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  margin-inline-end: 0.3em;
+}
+
+.siddur .sd-notes-rule {
+  border-top: 0.5pt solid #c9c2b5;
+  width: 30%;
+}
+
+.siddur .sd-row {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+
+.siddur .sd-row.pair {
+  flex-direction: row-reverse;
+}
+
+/* Editor affordances (never printed) */
+.siddur.editing .sd-piece {
+  cursor: pointer;
+}
+
+.siddur.editing .sd-piece:hover {
+  background: rgba(214, 192, 140, 0.25);
+}
+
+@media print {
+  .siddur .sd-piece.selected, .siddur .sd-piece:hover {
+    background: none !important;
+  }
+}
+
+.word-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px 2px;
+  padding: 6px;
+  background: white;
+  border: 1px solid #ddd6c8;
+  border-radius: 4px;
+  max-height: 220px;
+  overflow-y: auto;
+  line-height: 1.2;
+}
+
+.word-chips.rtl {
+  direction: rtl;
+  font-family: "Frank Ruehl CLM", serif;
+  font-size: 16px;
+}
+
+.word-chips .chip {
+  padding: 1px 3px;
+  border-radius: 3px;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid transparent;
+}
+
+.word-chips .chip.selected {
+  background: #f1dfb5;
+  border-color: #c9a85e;
+}
+
+.word-chips .chip.styled {
+  text-decoration: underline dotted #a8916a;
+}
+
+.word-chips .marker {
+  color: #7a1f1f;
+  font-weight: 700;
+  padding: 0 1px;
+  font-family: sans-serif;
+  font-size: 12px;
+  align-self: center;
+}
+
+.word-chips .marker.split {
+  color: #1f5a7a;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 6px 0;
+}
+
+.scope-tabs {
+  display: flex;
+  gap: 2px;
+  margin: 6px 0;
+}
+
+.scope-tabs button {
+  flex: 1;
+  font-size: 11px !important;
+  padding: 3px 2px !important;
+}
+
+.print-panel textarea {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 70px;
+}
+
+.section-list {
+  max-height: 260px;
+  overflow-y: auto;
+  border: 1px solid #ddd6c8;
+  border-radius: 4px;
+  background: white;
+  padding: 4px 6px;
+}
+
+.section-list .group {
+  font-weight: 600;
+  margin-top: 6px;
+  color: #6b6458;
+}
+
+/* Only justified blocks keep their last line justified when continued on the next column/page. */
+.blk.justify-last.align-start,
+.blk.justify-last.align-center,
+.blk.justify-last.align-end {
+  text-align-last: auto;
+}

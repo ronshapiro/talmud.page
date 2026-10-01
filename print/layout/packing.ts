@@ -255,3 +255,23 @@ export function remainingHeight<T>(items: FlowItem<T>[], start: Cursor): number 
   }
   return total;
 }
+
+/**
+ * The unconsumed tail of an item that was split after `line`, as a new item whose line boxes start
+ * at 0. `data.lineOffset` records how many lines of the original block were consumed.
+ */
+export function rebaseItem<T extends {lineOffset: number}>(
+  item: FlowItem<T>,
+  line: number,
+): FlowItem<T> {
+  if (line === 0) return item;
+  const base = item.block.lines[line - 1].bottom;
+  return {
+    ...item,
+    spaceBefore: 0,
+    block: {
+      lines: item.block.lines.slice(line).map(x => ({start: x.start, bottom: x.bottom - base})),
+    },
+    data: {...item.data, lineOffset: item.data.lineOffset + line},
+  };
+}

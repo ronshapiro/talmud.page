@@ -50,6 +50,7 @@ function Fragment({fragment}: {fragment: RenderedFragment}) {
     <div
       className={fragment.className}
       dir={fragment.dir}
+      lang={fragment.lang}
       style={{...parseStyle(fragment.style ?? ""), marginTop: fragment.spaceBefore, height: fragment.height, display: "flow-root"}}
       dangerouslySetInnerHTML={{__html: fragment.html}} />
   );

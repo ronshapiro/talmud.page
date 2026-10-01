@@ -26,6 +26,8 @@ interface BaseDocument {
 export type TranslationMode = "side-by-side" | "stacked" | "hebrew-only" | "footnote";
 export type LineMode = "prose" | "lines";
 export type Align = "start" | "center" | "justify" | "end";
+// Automatic Hebrew line breaks: after sentence punctuation (. : ; ׃) or also after commas.
+export type HebrewBreaks = "none" | "sentence" | "clause";
 
 export const TRANSLATION_MODES: {id: TranslationMode; label: string}[] = [
   {id: "side-by-side", label: "Side by side"},
@@ -43,6 +45,7 @@ export interface LayoutOptions {
   lineMode?: LineMode;
   align?: Align;
   englishAlign?: Align;
+  hebrewBreaks?: HebrewBreaks;
   // Indentation of continuation lines in `lines` mode / whole block otherwise, in em.
   indent?: number;
   // Extra space above, in units of the Hebrew line height.
@@ -61,7 +64,8 @@ export interface SegmentOverride extends LayoutOptions {
   // independently, so that each piece's translation can be matched by hand. Both lists must have
   // the same length; missing English split points are filled in proportionally.
   splitHe?: number[];
-  splitEn?: number[];
+  // Parallel to splitHe; null = place proportionally.
+  splitEn?: (number | null)[];
   // Forced line breaks (token indices, before the token) in the original token numbering.
   breaksHe?: number[];
   breaksEn?: number[];
@@ -206,7 +210,7 @@ export function defaultSiddurDocument(name = "My Siddur"): SiddurDocument {
       instructionColor: "#8a6d3b",
       accentColor: "#7a1f1f",
     },
-    defaults: {translation: "side-by-side", lineMode: "prose", align: "justify"},
+    defaults: {translation: "side-by-side", lineMode: "prose", align: "start", englishAlign: "start"},
     sectionOverrides: {},
     paragraphOverrides: {},
     segmentOverrides: {},

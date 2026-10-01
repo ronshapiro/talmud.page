@@ -24,6 +24,7 @@ import {
   START,
   cursorDone,
   fillColumnsBalanced,
+  rebaseItem,
   remainingHeight,
 } from "./packing";
 
@@ -59,6 +60,7 @@ interface GlobalVerse {
 
 export interface RenderedFragment {
   key: string;
+  lang?: string;
   className: string;
   style?: string;
   dir: "rtl" | "ltr";
@@ -130,23 +132,11 @@ function columnWidth(total: number, count: number, gap: number): number {
   return (total - (count - 1) * gap) / count;
 }
 
-function rebase(item: Item, line: number): Item {
-  if (line === 0) return item;
-  const base = item.block.lines[line - 1].bottom;
-  return {
-    ...item,
-    spaceBefore: 0,
-    block: {
-      lines: item.block.lines.slice(line).map(x => ({start: x.start, bottom: x.bottom - base})),
-    },
-    data: {...item.data, lineOffset: item.data.lineOffset + line},
-  };
-}
 
 function remainingItems(items: Item[], result: ColumnsResult<MgItemData>): Item[] {
   const {end} = result;
   if (cursorDone(items, end)) return [];
-  return [rebase(items[end.item], end.line), ...items.slice(end.item + 1)];
+  return [rebaseItem(items[end.item], end.line), ...items.slice(end.item + 1)];
 }
 
 function renderFragment(
@@ -167,6 +157,7 @@ function renderFragment(
     className: classes.join(" "),
     style: spec.style,
     dir: spec.dir,
+    lang: spec.lang,
     html: blockInnerHtml(spec, start, end, false),
     spaceBefore: fragment.spaceBefore,
     height: fragment.height,
@@ -276,6 +267,7 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
                 key: `en:${comment.ref}`,
                 className: "blk mg-note",
                 dir: "ltr",
+                lang: "en",
                 tokens: tokenize(
                   `<span class="ref">${chapter.chapter}:${v + 1}</span> ${comment.en}`),
               }
@@ -416,6 +408,7 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
       key: `translation:${from}:${count}`,
       className: "blk mg-note",
       dir: "ltr",
+      lang: "en",
       tokens: tokenize(parts.join(" ")),
     }], notesWidth)[0];
     return {block: measured, spaceBefore: 0, data: {kind: "translation", measured, lineOffset: 0}};
