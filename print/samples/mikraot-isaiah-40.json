@@ -1,0 +1,93 @@
+{
+  "id": "mikraot-isaiah-40",
+  "name": "Isaiah 40, A4",
+  "kind": "mikraot",
+  "schemaVersion": 1,
+  "createdAt": 1790812800000,
+  "updatedAt": 1790812800000,
+  "page": {
+    "preset": "a4",
+    "unit": "mm",
+    "width": 210,
+    "height": 297,
+    "margins": {
+      "top": 16,
+      "bottom": 16,
+      "inner": 18,
+      "outer": 14
+    },
+    "binding": "rtl"
+  },
+  "book": "Isaiah",
+  "startChapter": 40,
+  "endChapter": 40,
+  "commentators": [
+    {
+      "id": "targum-jonathan",
+      "tier": 0,
+      "showEnglish": false
+    },
+    {
+      "id": "rashi",
+      "tier": 1,
+      "showEnglish": true
+    },
+    {
+      "id": "ibn-ezra",
+      "tier": 2,
+      "showEnglish": false
+    },
+    {
+      "id": "radak",
+      "tier": 0,
+      "showEnglish": false
+    },
+    {
+      "id": "metzudat-david",
+      "tier": 1,
+      "showEnglish": false
+    },
+    {
+      "id": "metzudat-zion",
+      "tier": 2,
+      "showEnglish": false
+    },
+    {
+      "id": "malbim",
+      "tier": 0,
+      "showEnglish": false
+    },
+    {
+      "id": "ralbag",
+      "tier": 0,
+      "showEnglish": false
+    }
+  ],
+  "commentOverrides": {},
+  "typography": {
+    "mainFont": "keter-yg",
+    "commentaryFont": "noto-rashi",
+    "notesFont": "eb-garamond",
+    "mainSizePt": 15,
+    "tier1SizePt": 9.6,
+    "tier2SizePt": 8.6,
+    "targumSizePt": 10,
+    "notesSizePt": 7.6,
+    "lineHeight": 1.45,
+    "showTrope": false
+  },
+  "layout": {
+    "tier1Columns": 2,
+    "tier2Columns": 3,
+    "notesColumns": 3,
+    "columnGapPt": 14,
+    "regionGapPt": 10,
+    "maxNotesFraction": 0.3,
+    "maxMainFraction": 0.45,
+    "maxCommentaryLag": 3,
+    "minPageFill": 0.88,
+    "showTargum": false,
+    "showVerseTranslation": true,
+    "columnRules": true
+  }
+}

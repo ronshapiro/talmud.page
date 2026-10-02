@@ -1,0 +1,186 @@
+{
+  "id": "siddur-showcase",
+  "name": "Showcase: Koren-style siddur (Metsudah text)",
+  "kind": "siddur",
+  "schemaVersion": 1,
+  "createdAt": 1790812800000,
+  "updatedAt": 1790812800000,
+  "page": {
+    "preset": "digest",
+    "unit": "in",
+    "width": 5.5,
+    "height": 8.5,
+    "margins": {
+      "top": 0.6,
+      "bottom": 0.65,
+      "inner": 0.7,
+      "outer": 0.55
+    },
+    "binding": "rtl"
+  },
+  "edition": "ashkenaz",
+  "sections": [
+    "SiddurAshkenaz/Birchot Kriat Shema",
+    "Siddur Ashkenaz, Shabbat, Kabbalat Shabbat, Lekha Dodi"
+  ],
+  "typography": {
+    "hebrewFont": "frank-ruehl-clm",
+    "englishFont": "eb-garamond",
+    "hebrewSizePt": 14,
+    "englishSizePt": 10.5,
+    "lineHeight": 1.55,
+    "instructionColor": "#8a6d3b",
+    "accentColor": "#7a1f1f"
+  },
+  "defaults": {
+    "translation": "side-by-side",
+    "lineMode": "prose",
+    "align": "start",
+    "englishAlign": "start"
+  },
+  "sectionOverrides": {
+    "Siddur Ashkenaz, Shabbat, Kabbalat Shabbat, Lekha Dodi": {
+      "hebrewBreaks": "sentence",
+      "align": "center"
+    }
+  },
+  "paragraphOverrides": {
+    "SiddurAshkenaz/Birchot Kriat Shema#0": {
+      "lineMode": "lines",
+      "align": "center",
+      "englishAlign": "center"
+    },
+    "SiddurAshkenaz/Birchot Kriat Shema#3": {
+      "translation": "stacked",
+      "align": "center",
+      "englishAlign": "center"
+    },
+    "SiddurAshkenaz/Birchot Kriat Shema#4": {
+      "translation": "footnote",
+      "lineMode": "lines",
+      "indent": 1.5
+    },
+    "SiddurAshkenaz/Birchot Kriat Shema#5": {
+      "lineMode": "lines",
+      "indent": 1.5
+    }
+  },
+  "segmentOverrides": {
+    "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Barchu 2-3": {
+      "scale": 1.12
+    },
+    "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, First Blessing before Shema 1": {
+      "splitHe": [
+        6,
+        10
+      ],
+      "splitEn": [
+        10,
+        16
+      ]
+    },
+    "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, First Blessing before Shema 5": {
+      "translation": "stacked",
+      "align": "center",
+      "englishAlign": "center",
+      "spaceBefore": 0.6,
+      "keepWithNext": false,
+      "stylesHe": [
+        {
+          "start": 0,
+          "end": 3,
+          "style": {
+            "scale": 1.3,
+            "letterSpacing": 0.04,
+            "color": "#7a1f1f"
+          }
+        }
+      ]
+    },
+    "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, First Blessing before Shema 7": {
+      "translation": "stacked",
+      "align": "center",
+      "englishAlign": "center",
+      "spaceBefore": 0.6,
+      "scale": 1.15
+    },
+    "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Shema 3": {
+      "scale": 1.15,
+      "spaceBefore": 0.8
+    },
+    "Siddur Ashkenaz, Shabbat, Kabbalat Shabbat, Lekha Dodi 1": {
+      "translation": "footnote",
+      "heOverride": "לְכָה דוֹדִי לִקְרַאת כַּלָּה. פְּנֵי שַׁבָּת נְקַבְּ֒לָה:",
+      "stylesHe": [
+        {
+          "start": 0,
+          "end": 7,
+          "style": {
+            "bold": true,
+            "scale": 1.1
+          }
+        }
+      ]
+    },
+    "Siddur Ashkenaz, Shabbat, Kabbalat Shabbat, Lekha Dodi 3": {
+      "translation": "hebrew-only",
+      "spaceBefore": 0.3
+    },
+    "Siddur Ashkenaz, Shabbat, Kabbalat Shabbat, Lekha Dodi 5": {
+      "translation": "hebrew-only",
+      "spaceBefore": 0.3
+    },
+    "Siddur Ashkenaz, Shabbat, Kabbalat Shabbat, Lekha Dodi 7": {
+      "translation": "hebrew-only",
+      "spaceBefore": 0.3
+    },
+    "Siddur Ashkenaz, Shabbat, Kabbalat Shabbat, Lekha Dodi 9": {
+      "translation": "hebrew-only",
+      "spaceBefore": 0.3
+    },
+    "Siddur Ashkenaz, Shabbat, Kabbalat Shabbat, Lekha Dodi 11": {
+      "translation": "hebrew-only",
+      "spaceBefore": 0.3
+    },
+    "Siddur Ashkenaz, Shabbat, Kabbalat Shabbat, Lekha Dodi 13": {
+      "translation": "hebrew-only",
+      "spaceBefore": 0.3
+    },
+    "Siddur Ashkenaz, Shabbat, Kabbalat Shabbat, Lekha Dodi 15": {
+      "translation": "hebrew-only",
+      "spaceBefore": 0.3
+    },
+    "Siddur Ashkenaz, Shabbat, Kabbalat Shabbat, Lekha Dodi 17": {
+      "translation": "hebrew-only",
+      "spaceBefore": 0.3
+    },
+    "Siddur Ashkenaz, Shabbat, Kabbalat Shabbat, Lekha Dodi 19": {
+      "translation": "hebrew-only",
+      "spaceBefore": 0.3
+    },
+    "Siddur Ashkenaz, Shabbat, Kabbalat Shabbat, Lekha Dodi 4": {
+      "splitHe": [
+        11
+      ],
+      "pieces": {
+        "1": {
+          "css": "color: #7a1f1f"
+        }
+      }
+    }
+  },
+  "commentary": {
+    "Siddur Ashkenaz, Weekday, Shacharit, Blessings of the Shema, Barchu 2-3": [
+      {
+        "type": "Koren Sacks Commentary",
+        "html": "<i>[Sample.]</i> Commentary notes are entered per segment in the editor and set at the foot of the page, separately from the translation footnotes."
+      }
+    ]
+  },
+  "showCommentary": [
+    "Koren Sacks Commentary"
+  ],
+  "sectionPageBreaks": true,
+  "spread": "single",
+  "facingHebrewSide": "left"
+}
