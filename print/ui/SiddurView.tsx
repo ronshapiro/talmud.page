@@ -48,6 +48,7 @@ function Fragment({fragment, width}: {fragment?: SdFragment; width: number}) {
         ...parseStyle(fragment.style ?? ""),
         width,
         height: fragment.height,
+        marginTop: fragment.offset ?? 0,
         display: "flow-root",
         flexShrink: 0,
       }}
@@ -167,7 +168,7 @@ export function SiddurView(): React.ReactElement {
   const [selection, setSelection] = useState<Selection>();
   const [showMargins, setShowMargins] = useState(false);
 
-  usePageRule(doc?.page ?? {width: 5.5, height: 8.5, unit: "in"} as any);
+  usePageRule(doc?.page ?? {width: 5.5, height: 8.5, unit: "in"} as any, Boolean(doc?.printSpreads));
 
   const sectionsKey = doc ? `${doc.edition}|${doc.sections.join("|")}` : "";
   useEffect(() => {
@@ -306,7 +307,8 @@ export function SiddurView(): React.ReactElement {
                 size={layout.geometry}
                 binding={doc.page.binding}
                 viewMode={viewMode}
-                zoom={zoom} />
+                zoom={zoom}
+                printSpreads={doc.printSpreads} />
             )
             : (dataError ? null : <div className="print-status">Laying out pages…</div>)}
         </div>

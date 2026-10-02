@@ -228,11 +228,13 @@ export function segmentSplits(
   if (splitLines) {
     const heLines = lineBreakSplits(he);
     const enLines = lineBreakSplits(en);
-    heLines.forEach((point, i) => {
-      if (!pairs.has(point)) {
-        pairs.set(point, heLines.length === enLines.length ? enLines[i] : undefined);
-      }
-    });
+    // Split line by line only when both languages have the same lines; otherwise the segment stays
+    // one row, whose lines still share a baseline grid with the facing text.
+    if (heLines.length === enLines.length || en.length === 0) {
+      heLines.forEach((point, i) => {
+        if (!pairs.has(point)) pairs.set(point, enLines[i]);
+      });
+    }
   }
   const heSplits = Array.from(pairs.keys())
     .filter(x => x > 0 && x < he.length)
@@ -281,6 +283,27 @@ export function pieceMark(key: string): Mark {
   return {tag: "span", attrs: ` class="sd-piece" data-k="${key.replace(/"/g, "&quot;")}"`};
 }
 
+/**
+ * Replaces line breaks with one block-level span per line, so that each line can carry its own
+ * hanging indent (CSS can't indent what follows a <br>).
+ */
+export function linesToSpans(tokens: Token[], key: string): Token[] {
+  const result: Token[] = [];
+  let line = 0;
+  for (const token of tokens) {
+    if (token.kind === "br") {
+      if (result.length > 0) {
+        result[result.length - 1] = {...result[result.length - 1], spaceAfter: true};
+        line++;
+      }
+      continue;
+    }
+    const mark: Mark = {tag: "span", attrs: ` class="sd-line" data-l="${key.replace(/"/g, "&quot;")}#${line}"`};
+    result.push({...token, marks: [mark, ...token.marks]});
+  }
+  return result;
+}
+
 function wrapPiece(tokens: Token[], key: string): Token[] {
   const mark = pieceMark(key);
   return tokens.map(x => ({...x, marks: [mark, ...x.marks]}));
@@ -313,14 +336,20 @@ export function segmentPieces(
     const manualHe = shiftedBreaks(override.breaksHe, heBounds[i], heBounds[i + 1]);
     const manualEn = shiftedBreaks(override.breaksEn, enBounds[i], enBounds[i + 1]);
     const key = pieceKey(segment.ref, i);
+    let pieceHe = applyLineBreaks(heTokens, Array.from(new Set([...auto, ...manualHe])));
+    let pieceEn = applyLineBreaks(enPieces[i] ?? [], manualEn);
+    if (options.lineMode === "lines") {
+      pieceHe = linesToSpans(pieceHe, `${key}:he`);
+      pieceEn = linesToSpans(pieceEn, `${key}:en`);
+    }
     return {
       key,
       ref: segment.ref,
       index: i,
       sectionId,
       paragraphKey: paragraph,
-      he: wrapPiece(applyLineBreaks(heTokens, Array.from(new Set([...auto, ...manualHe]))), key),
-      en: wrapPiece(applyLineBreaks(enPieces[i] ?? [], manualEn), key),
+      he: wrapPiece(pieceHe, key),
+      en: wrapPiece(pieceEn, key),
       options,
     };
   });

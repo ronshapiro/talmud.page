@@ -21,12 +21,18 @@ const SECTION: SiddurSectionData = {
   ],
 };
 
-function build(doc = defaultSiddurDocument()) {
+function proseDocument() {
+  const doc = defaultSiddurDocument();
+  doc.defaults = {translation: "side-by-side", lineMode: "prose", align: "start"};
+  return doc;
+}
+
+function build(doc = proseDocument()) {
   doc.sections = ["s"];
   return buildSiddurUnits(doc, new Map([["s", SECTION]]));
 }
 
-function rows(doc = defaultSiddurDocument()): SiddurRow[] {
+function rows(doc = proseDocument()): SiddurRow[] {
   return build(doc).units.filter((x): x is SiddurRow => x.kind === "row");
 }
 
@@ -53,7 +59,7 @@ describe("siddur model", () => {
   });
 
   test("splits create pieces; lines mode gives each piece its own row", () => {
-    let doc = defaultSiddurDocument();
+    let doc = proseDocument();
     doc = toggleSplit(doc, "s 1", 2);
     doc = setLayoutAt(doc, {ref: "s 1", pieceIndex: 0, sectionId: "s", paragraphKey: "s#0"}, "segment", {
       lineMode: "lines",
@@ -67,12 +73,12 @@ describe("siddur model", () => {
   });
 
   test("toggleSplit twice removes the split", () => {
-    const doc = toggleSplit(toggleSplit(defaultSiddurDocument(), "s 1", 2), "s 1", 2);
+    const doc = toggleSplit(toggleSplit(proseDocument(), "s 1", 2), "s 1", 2);
     expect(doc.segmentOverrides["s 1"]).toBeUndefined();
   });
 
   test("line breaks and styles", () => {
-    let doc = defaultSiddurDocument();
+    let doc = proseDocument();
     doc = toggleBreak(doc, "s 1", "he", 2);
     doc = addStyle(doc, "s 1", "he", 0, 1, {bold: true});
     const html = renderTokens(rows(doc)[0].he);
@@ -81,7 +87,7 @@ describe("siddur model", () => {
   });
 
   test("footnote mode moves English to notes with markers", () => {
-    const doc = defaultSiddurDocument();
+    const doc = proseDocument();
     doc.defaults = {...doc.defaults, translation: "footnote"};
     const result = rows(doc);
     expect(result[0].en).toEqual([]);
@@ -90,7 +96,7 @@ describe("siddur model", () => {
   });
 
   test("hidden pieces are dropped", () => {
-    const doc = defaultSiddurDocument();
+    const doc = proseDocument();
     doc.segmentOverrides["s 2"] = {hidden: true};
     expect(rows(doc).map(x => text(x.he))).toEqual(["אחד שנים שלשה ארבעה", "שבע. שמונה, תשע"]);
   });
@@ -103,7 +109,7 @@ describe("siddur model", () => {
   });
 
   test("commentary notes are attached when enabled", () => {
-    const doc = defaultSiddurDocument();
+    const doc = proseDocument();
     doc.commentary["s 3"] = [{type: "Koren Sacks Commentary", html: "A note"}];
     expect(rows(doc)[2].notes.map(x => x.html)).toEqual(["A note"]);
     doc.showCommentary = [];
@@ -130,10 +136,26 @@ describe("splitting at source lines", () => {
       .map(x => [text(x.he), text(x.en)]);
   };
 
-  test("pairs Hebrew and English lines when the counts match, else snaps to English lines", () => {
+  test("pairs Hebrew and English lines when the counts match, else keeps the segment whole", () => {
     expect(build2()).toEqual([
       ["א ב", "a b"], ["ג ד", "c d"], ["ה ו", "e f"],
-      ["א ב", "a b c"], ["ג ד", ""], ["ה ו", "d e f g h"],
+      ["א ב ג ד ה ו", "a b c d e f g h"],
     ]);
+  });
+});
+
+describe("lines mode", () => {
+  test("each source line becomes its own block span", () => {
+    const doc = proseDocument();
+    doc.sections = ["s"];
+    doc.defaults = {...doc.defaults, lineMode: "lines"};
+    const section: SiddurSectionData = {
+      id: "s", title: "S", titleHebrew: "ס", segments: [{ref: "s 1", he: "א ב<br>ג", en: "a", paragraphStart: true}],
+    };
+    const row = buildSiddurUnits(doc, new Map([["s", section]])).units
+      .find((x): x is SiddurRow => x.kind === "row")!;
+    const html = renderTokens(row.he);
+    expect(html).not.toContain("<br>");
+    expect(html.match(/class="sd-line"/g)).toHaveLength(2);
   });
 });

@@ -32,6 +32,8 @@ export interface MeasuredBlock {
   width: number;
   height: number;
   lines: LineBox[];
+  // Distance from the top of the block to the first line's baseline.
+  baseline: number;
 }
 
 let measurementRoot: HTMLElement | undefined;
@@ -99,9 +101,14 @@ interface RawLine {
   bottom: number;
 }
 
+const BASELINE_PROBE = '<span class="baseline-probe" '
+  + 'style="display: inline-block; width: 0; height: 0; vertical-align: baseline"></span>';
+
 function readLines(spec: BlockSpec, element: HTMLElement, width: number): MeasuredBlock {
   const blockRect = element.getBoundingClientRect();
   const {height} = blockRect;
+  const probe = element.querySelector(".baseline-probe");
+  const baseline = probe ? probe.getBoundingClientRect().top - blockRect.top : 0;
   const spans = element.querySelectorAll<HTMLElement>("span[data-t]");
   const lines: RawLine[] = [];
   let current: RawLine | undefined;
@@ -121,7 +128,7 @@ function readLines(spec: BlockSpec, element: HTMLElement, width: number): Measur
   });
 
   if (lines.length === 0) {
-    return {spec, width, height, lines: [{start: 0, bottom: height}]};
+    return {spec, width, height, baseline, lines: [{start: 0, bottom: height}]};
   }
 
   lines[0].start = 0;
@@ -133,7 +140,7 @@ function readLines(spec: BlockSpec, element: HTMLElement, width: number): Measur
       // this is exactly the line-box boundary.
       : (line.bottom + lines[i + 1].top) / 2,
   }));
-  return {spec, width, height, lines: boxes};
+  return {spec, width, height, baseline, lines: boxes};
 }
 
 /** Measures many blocks at the given width with a single forced layout. */
@@ -154,7 +161,12 @@ export function measureBlocks(specs: BlockSpec[], width: number): MeasuredBlock[
     if (spec.lang) element.lang = spec.lang;
     // display: flow-root so that margins of children can't collapse through the block.
     element.style.display = "flow-root";
-    element.innerHTML = blockInnerHtml(spec, 0, spec.tokens.length, true);
+    // A zero-size inline-block sits on the baseline without affecting the line box.
+    element.innerHTML = BASELINE_PROBE + blockInnerHtml(spec, 0, spec.tokens.length, true);
+    // Before a block-level child the probe would create a line of its own: move it inside.
+    const firstLine = element.querySelector(".sd-line");
+    const probe = element.querySelector(".baseline-probe");
+    if (firstLine && probe) firstLine.prepend(probe);
     container.append(element);
     elements.push(element);
   }

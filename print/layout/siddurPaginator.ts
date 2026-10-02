@@ -33,6 +33,10 @@ import {
 
 const PT = 96 / 72;
 
+export function usesLineGrid(doc: SiddurDocument): boolean {
+  return doc.spread === "facing" || Boolean(doc.typography.lineGrid);
+}
+
 export function siddurCssVars(doc: SiddurDocument): string {
   const t = doc.typography;
   return [
@@ -41,12 +45,16 @@ export function siddurCssVars(doc: SiddurDocument): string {
     `--he-size: ${t.hebrewSizePt}pt`,
     `--en-size: ${t.englishSizePt}pt`,
     `--lh: ${t.lineHeight}`,
+    // On a shared baseline grid, English lines use the Hebrew line pitch so they line up.
+    `--en-lh: ${usesLineGrid(doc) ? `${t.hebrewSizePt * t.lineHeight}pt` : "1.42"}`,
     `--instruction-color: ${t.instructionColor}`,
     `--accent: ${t.accentColor}`,
   ].join("; ");
 }
 
 export interface SdFragment {
+  // Pushes the fragment down so its first baseline lines up with its partner lane's.
+  offset?: number;
   key: string;
   lang?: string;
   className: string;
@@ -98,6 +106,8 @@ export interface SiddurLayout {
 }
 
 interface Item {
+  // Per-lane downward shift aligning the lanes' first baselines.
+  shifts: number[];
   key: string;
   lanes: (MeasuredBlock | undefined)[];
   pair: boolean;
@@ -120,6 +130,19 @@ function defaultSpaceBefore(row: SiddurRow, lineHeight: number): number {
   return row.options.lineMode === "lines" ? 0 : 0.2 * lineHeight;
 }
 
+function hasHebrew(row: SiddurRow): boolean {
+  return row.he.some(x => x.kind === "word" && x.html.replace(/<[^>]*>/g, "").trim().length > 0);
+}
+
+function lineMark(token: Token | undefined): string | undefined {
+  return token?.marks.find(x => x.attrs.includes("sd-line"))?.attrs;
+}
+
+function sameLine(a: Token | undefined, b: Token | undefined): boolean {
+  const mark = lineMark(a);
+  return mark !== undefined && mark === lineMark(b);
+}
+
 function alignClass(align: string): string {
   return `align-${align}`;
 }
@@ -132,8 +155,8 @@ function blockStyle(row: SiddurRow, lang: "he" | "en"): string {
   }
   if (options.indent > 0) {
     if (options.lineMode === "lines") {
-      // Hanging indent: continuation lines of a sense-line are indented.
-      parts.push(`padding-inline-start: ${options.indent}em`, `text-indent: -${options.indent}em`);
+      // Hanging indent: each sense line (a .sd-line span) indents only its wrapped continuation.
+      parts.push(`--hang: ${options.indent}em`);
     } else {
       parts.push(`padding-inline-start: ${options.indent}em`);
     }
@@ -193,7 +216,8 @@ export function paginateSiddur(doc: SiddurDocument, units: SiddurUnit[]): Siddur
   });
   const enSpec = (row: SiddurRow, key: string, extraClass = ""): BlockSpec => ({
     key,
-    className: `blk sd-en ${alignClass(row.options.englishAlign)} ${extraClass}`,
+    // With no Hebrew beside it there is nothing to line up with: use normal leading.
+    className: `blk sd-en ${alignClass(row.options.englishAlign)} ${extraClass}${hasHebrew(row) ? "" : " solo"}`,
     style: blockStyle(row, "en"),
     dir: "ltr",
     lang: "en",
@@ -327,6 +351,7 @@ export function paginateSiddur(doc: SiddurDocument, units: SiddurUnit[]): Siddur
   const items: Item[] = pending.map(x => ({
     key: x.key,
     lanes: x.specs.map((spec, i) => (spec ? measure(spec, x.widths[i]) : undefined)),
+    shifts: [],
     pair: x.pair,
     spaceBefore: x.spaceBefore,
     keepWithNext: x.keepWithNext,
@@ -336,6 +361,11 @@ export function paginateSiddur(doc: SiddurDocument, units: SiddurUnit[]): Siddur
     sectionId: x.sectionId,
     pieces: x.pieces,
   }));
+  for (const item of items) {
+    const present = item.lanes.filter((x): x is MeasuredBlock => x !== undefined);
+    const top = Math.max(0, ...present.map(x => x.baseline));
+    item.shifts = item.lanes.map(lane => (item.pair && lane ? top - lane.baseline : 0));
+  }
 
   // ---- Pagination
   const noteItem = (measured: MeasuredBlock): FlowItem<NoteData> => ({
@@ -356,6 +386,10 @@ export function paginateSiddur(doc: SiddurDocument, units: SiddurUnit[]): Siddur
     const end = to < lines.length ? lines[to].start : spec.tokens.length;
     const classes = [spec.className];
     if (from > 0) classes.push("cont");
+    // Starting in the middle of a sense line: its first (partial) line isn't outdented.
+    if (from > 0 && start > 0 && sameLine(spec.tokens[start - 1], spec.tokens[start])) {
+      classes.push("cont-mid");
+    }
     if (to < lines.length) classes.push("justify-last");
     return {
       key,
@@ -405,7 +439,9 @@ export function paginateSiddur(doc: SiddurDocument, units: SiddurUnit[]): Siddur
       const available = bodyHeight - used - space - notesHeight(notesFor(newNotes));
 
       const remaining = Math.max(0, ...item.lanes.map((lane, i) => (
-        lane ? linesHeight(lane, offsets[i], lane.lines.length) : 0)));
+        lane && offsets[i] < lane.lines.length
+          ? item.shifts[i] + linesHeight(lane, offsets[i], lane.lines.length)
+          : 0)));
 
       let targets: number[];
       if (remaining <= available + 0.5) {
@@ -418,7 +454,7 @@ export function paginateSiddur(doc: SiddurDocument, units: SiddurUnit[]): Siddur
           const from = offsets[i];
           const total = lane.lines.length;
           if (from >= total) return total;
-          let to = maxLinesFitting(lane, from, available);
+          let to = maxLinesFitting(lane, from, available - item.shifts[i]);
           const {orphans, widows} = DEFAULT_PACK_OPTIONS;
           if (from === 0 && to - from < Math.min(orphans, total)) to = from;
           if (to > from && to < total && total - to < widows) {
@@ -443,7 +479,7 @@ export function paginateSiddur(doc: SiddurDocument, units: SiddurUnit[]): Siddur
 
       const laneHeights = item.lanes.map((lane, i) => (
         lane ? linesHeight(lane, offsets[i], targets[i]) : 0));
-      const height = Math.max(0, ...laneHeights);
+      const height = Math.max(0, ...laneHeights.map((h, i) => (h > 0 ? h + item.shifts[i] : 0)));
       rows.push({
         key: `${item.key}@${offsets.join(",")}`,
         spaceBefore: space,
@@ -451,7 +487,10 @@ export function paginateSiddur(doc: SiddurDocument, units: SiddurUnit[]): Siddur
         pair: item.pair,
         pieces: item.pieces,
         lanes: item.lanes.map((lane, i) => (lane && targets[i] > offsets[i]
-          ? renderFragment(lane, offsets[i], targets[i], `${item.key}:${i}:${offsets[i]}`, laneHeights[i])
+          ? {
+            ...renderFragment(lane, offsets[i], targets[i], `${item.key}:${i}:${offsets[i]}`, laneHeights[i]),
+            offset: item.shifts[i],
+          }
           : undefined)),
       });
       rowItems.push({item, startedHere: atStart});

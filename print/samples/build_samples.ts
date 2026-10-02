@@ -220,6 +220,12 @@ function mikraotIsaiah(): MikraotDocument {
   write("siddur-hebrew-only-pocket.json", siddurHebrewOnly());
   write("siddur-koren.json", korenSiddur());
   write("siddur-koren-facing.json", korenSiddurFacing());
+  write("siddur-koren-facing-landscape.json", {
+    ...korenSiddurFacing(),
+    id: "siddur-koren-facing-landscape",
+    name: "Koren Shalem Siddur, facing pages printed as landscape spreads",
+    printSpreads: true,
+  });
   write("mikraot-genesis-1.json", mikraotGenesis());
   write("mikraot-exodus-20.json", mikraotExodus());
   write("mikraot-isaiah-40.json", mikraotIsaiah());

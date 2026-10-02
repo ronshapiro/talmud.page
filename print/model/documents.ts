@@ -95,6 +95,9 @@ export interface SiddurTypography {
   lineHeight: number;
   instructionColor: string;
   accentColor: string;
+  // Set English on the Hebrew line pitch so side-by-side lines line up (always on for facing
+  // pages).
+  lineGrid?: boolean;
 }
 
 export interface SiddurDocument extends BaseDocument {
@@ -118,6 +121,8 @@ export interface SiddurDocument extends BaseDocument {
   spread: "single" | "facing";
   // In facing mode, which page of the spread holds the Hebrew.
   facingHebrewSide: "left" | "right";
+  // Print/PDF each spread as a single landscape page.
+  printSpreads?: boolean;
 }
 
 // ---------------------------------------------------------------------------------------------

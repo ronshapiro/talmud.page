@@ -134,8 +134,11 @@ export function PagesView(props: {
   binding: BindingDirection;
   viewMode: ViewMode;
   zoom: number;
+  // Print each spread as one landscape page (forces spread grouping).
+  printSpreads?: boolean;
 }): React.ReactElement {
-  const {pages, size, binding, viewMode, zoom} = props;
+  const {pages, size, binding, zoom, printSpreads} = props;
+  const viewMode = printSpreads && props.viewMode === "single" ? "spreads" : props.viewMode;
   const [current, setCurrent] = useState(0);
   const wrapped = pages.map((page, i) => (
     // Pages are positional; their index is their identity.
@@ -221,7 +224,9 @@ export function PagesView(props: {
             <span className="hint">{binding === "rtl" ? "← forward · → back" : "→ forward · ← back"}</span>
           </div>
         ) : null}
-      <div className="zoom-container" style={{transform: zoom === 1 ? undefined : `scale(${zoom})`}}>
+      <div
+        className={`zoom-container ${printSpreads ? "print-spreads" : ""}`}
+        style={{transform: zoom === 1 ? undefined : `scale(${zoom})`}}>
         {content}
       </div>
     </>
@@ -287,13 +292,18 @@ export function PageFrame(props: {
 }
 
 /** Injects an @page rule matching the document's page size, so browser printing is exact. */
-export function usePageRule(page: PageSettings): void {
+/**
+ * Injects an @page rule matching the document's page size, so browser printing is exact. With
+ * `spreads`, each printed page is a whole two-page spread (twice as wide, landscape).
+ */
+export function usePageRule(page: PageSettings, spreads = false): void {
   useEffect(() => {
+    const width = cssLength(spreads ? page.width * 2 : page.width, page.unit);
     const style = document.createElement("style");
-    style.textContent = `@page { size: ${cssLength(page.width, page.unit)} ${cssLength(page.height, page.unit)}; margin: 0; }`;
+    style.textContent = `@page { size: ${width} ${cssLength(page.height, page.unit)}; margin: 0; }`;
     document.head.append(style);
     return () => style.remove();
-  }, [page.width, page.height, page.unit]);
+  }, [page.width, page.height, page.unit, spreads]);
 }
 
 export function NumberInput(props: {

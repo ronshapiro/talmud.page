@@ -543,7 +543,7 @@ body.print-app {
 .siddur .sd-en {
   font-family: var(--en-font);
   font-size: var(--en-size);
-  line-height: 1.42;
+  line-height: var(--en-lh, 1.42);
   direction: ltr;
   hyphens: auto;
   color: #26231f;
@@ -828,4 +828,41 @@ body.print-app {
 .siddur .sd-en small {
   font-size: 0.78em;
   letter-spacing: 0.04em;
+}
+
+@media print {
+  /* One printed page per spread. */
+  .print-spreads .spread {
+    display: flex !important;
+    break-after: page;
+    margin: 0;
+  }
+
+  .print-spreads .page-wrapper {
+    break-after: auto;
+  }
+}
+
+@media print {
+  /* No page break after the last page (it would add a blank page). */
+  .single-pages .page-wrapper:last-child,
+  .spread:last-child .page-wrapper:last-child,
+  .print-spreads .spread:last-child {
+    break-after: auto;
+  }
+}
+
+/* Sense lines (lines mode): each line is a block with its own hanging indent. */
+.siddur .sd-line {
+  display: block;
+  padding-inline-start: var(--hang, 0);
+  text-indent: calc(-1 * var(--hang, 0));
+}
+
+.siddur .blk.cont-mid .sd-line:first-of-type {
+  text-indent: 0;
+}
+
+.siddur .sd-en.solo {
+  line-height: 1.42;
 }

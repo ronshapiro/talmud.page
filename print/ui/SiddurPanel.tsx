@@ -551,6 +551,22 @@ export function SiddurPanel({doc, update, sections, selection, setSelection}: {
                   </select>
                 </Row>
               ) : null}
+            <Row label="Print spreads as landscape pages">
+              <input
+                type="checkbox"
+                checked={Boolean(doc.printSpreads)}
+                onChange={e => update(x => ({...x, printSpreads: e.target.checked}))} />
+            </Row>
+            <Row label="English on the Hebrew line grid">
+              <input
+                type="checkbox"
+                checked={doc.spread === "facing" || Boolean(doc.typography.lineGrid)}
+                disabled={doc.spread === "facing"}
+                onChange={e => update(x => ({
+                  ...x,
+                  typography: {...x.typography, lineGrid: e.target.checked},
+                }))} />
+            </Row>
             <Row label="Each prayer on a new page">
               <input
                 type="checkbox"
