@@ -171,7 +171,11 @@ async function main() {
     const started = Date.now();
     await page.goto(`${baseUrl}/print/${doc.kind}`);
     await page.waitForFunction(
-      () => (window as any).__PRINT_READY__ === true, undefined, {timeout: 10 * 60_000});
+      () => (window as any).__PRINT_READY__ === true || (window as any).__PRINT_ERROR__,
+      undefined,
+      {timeout: 10 * 60_000});
+    const error = await page.evaluate(() => (window as any).__PRINT_ERROR__);
+    if (error) throw new Error(`Layout failed: ${error}`);
     const stats = await page.evaluate(() => (window as any).__PRINT_STATS__);
     console.log(`Laid out in ${Date.now() - started} ms:`, JSON.stringify(stats));
 

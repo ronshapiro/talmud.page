@@ -17,7 +17,7 @@ import {
   usePageRule,
   usePersistentState,
 } from "./Chrome";
-import {isHeadless, loadFonts, useDocument} from "./documentHooks";
+import {isHeadless, loadFonts, reportPrintError, useDocument} from "./documentHooks";
 import {SiddurPanel} from "./SiddurPanel";
 
 const sectionCache = new Map<string, Promise<SiddurSectionData>>();
@@ -175,7 +175,7 @@ export function SiddurView(): React.ReactElement {
     setDataError(undefined);
     Promise.all(doc.sections.map(id => fetchSection(doc.edition, id).then(x => [id, x] as const)))
       .then(entries => setSections(new Map(entries)))
-      .catch(e => setDataError(String(e)));
+      .catch(e => setDataError(reportPrintError(e)));
   }, [sectionsKey]);
 
   const layoutKey = doc ? JSON.stringify({...doc, name: "", updatedAt: 0}) : "";

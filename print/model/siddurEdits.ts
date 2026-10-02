@@ -206,8 +206,21 @@ export function setCommentary(
   type: string,
   html: string,
 ): SiddurDocument {
+  // An empty html is kept: it suppresses the source's commentary for this segment.
   const others = (doc.commentary[ref] ?? []).filter(x => x.type !== type);
-  const notes: SiddurCommentaryNote[] = html.trim() ? [...others, {type, html}] : others;
+  const notes: SiddurCommentaryNote[] = [...others, {type, html}];
+  const commentary = {...doc.commentary};
+  if (notes.length === 0) {
+    delete commentary[ref];
+  } else {
+    commentary[ref] = notes;
+  }
+  return {...doc, commentary};
+}
+
+/** Drops the document's own commentary text, falling back to the source's. */
+export function resetCommentary(doc: SiddurDocument, ref: string, type: string): SiddurDocument {
+  const notes = (doc.commentary[ref] ?? []).filter(x => x.type !== type);
   const commentary = {...doc.commentary};
   if (notes.length === 0) {
     delete commentary[ref];

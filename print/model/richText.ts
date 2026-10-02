@@ -340,6 +340,19 @@ export function splitTokens(tokens: Token[], splitPoints: number[]): Token[][] {
   return pieces;
 }
 
+/**
+ * Slices tokens at the given (sorted, possibly repeated) points, always returning
+ * `points.length + 1` slices so that parallel texts stay aligned. Slices may be empty.
+ */
+export function sliceTokens(tokens: Token[], points: number[]): Token[][] {
+  const bounds = [0, ...points.map(x => Math.max(0, Math.min(tokens.length, x))), tokens.length];
+  const slices: Token[][] = [];
+  for (let i = 0; i < bounds.length - 1; i++) {
+    slices.push(trimBreaks(tokens.slice(bounds[i], Math.max(bounds[i], bounds[i + 1]))));
+  }
+  return slices;
+}
+
 /** Concatenates token lists with a space (or a line break) between them. */
 export function joinTokens(lists: Token[][], separator: "space" | "br" = "space"): Token[] {
   const result: Token[] = [];

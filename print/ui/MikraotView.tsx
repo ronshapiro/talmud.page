@@ -23,7 +23,7 @@ import {
   usePageRule,
   usePersistentState,
 } from "./Chrome";
-import {loadFonts, useDocument} from "./documentHooks";
+import {loadFonts, reportPrintError, useDocument} from "./documentHooks";
 
 const chapterCache = new Map<string, Promise<MikraotChapter>>();
 
@@ -454,7 +454,7 @@ export function MikraotView(): React.ReactElement {
     for (let chapter = doc.startChapter; chapter <= doc.endChapter; chapter++) {
       requests.push(fetchChapter(doc.book, chapter, ids));
     }
-    Promise.all(requests).then(setChapters).catch(e => setDataError(String(e)));
+    Promise.all(requests).then(setChapters).catch(e => setDataError(reportPrintError(e)));
   }, [doc?.book, doc?.startChapter, doc?.endChapter, commentatorKey]);
 
   // Re-paginate whenever the document or data changes.

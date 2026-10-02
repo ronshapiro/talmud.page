@@ -18,7 +18,7 @@ import {siddurSection} from "../model/siddurEditions";
 export const PRINT_CACHE_ROOT = path.join(__dirname, "..", "..", "cached_outputs", "print");
 
 // Bump to invalidate processed (not raw) cache entries when transformations change.
-const PROCESSING_VERSION = 2;
+const PROCESSING_VERSION = 3;
 
 // When set, never touch the network; missing cache entries are errors.
 let offline = false;
@@ -161,6 +161,14 @@ function parashaBreak(text: string): "peh" | "samekh" | undefined {
   if (/mam-spi-pe">{פ}/.test(text)) return "peh";
   if (/mam-spi-samekh">{ס}/.test(text)) return "samekh";
   return undefined;
+}
+
+/**
+ * Koren's English starts some paragraphs with the Hebrew opening word as an anchor
+ * ("בָּרוּךְ Blessed are You…"). Drop it when it's followed by English.
+ */
+function stripLeadingHebrew(html: string): string {
+  return html.replace(/^((?:<[^>]+>)*)[ "'\u0590-\u05FF]+\s+(?=(?:<[^>]+>)*["(A-Z[a-z“])/, "$1");
 }
 
 function asStringArray(value: any): string[] {
@@ -335,13 +343,35 @@ export async function siddurSectionData(
     const en = asStringArray(version(response, "en")?.text);
     const segments: SiddurSegmentData[] = [];
     for (let i = 0; i < Math.max(he.length, en.length); i++) {
+      const english = format.english(en[i] ?? "");
       segments.push({
         ref: `${source.ref} ${i + 1}`,
         he: format.hebrew(he[i] ?? ""),
-        en: format.english(en[i] ?? ""),
+        en: source.stripEnglishLeadWords ? stripLeadingHebrew(english) : english,
         paragraphStart: true,
       });
     }
+
+    // Commentaries whose segments align by index with this section's segments. Not every section
+    // has commentary, so failed fetches are skipped.
+    const commentaries = source.commentaries ?? [];
+    const responses = await Promise.all(
+      commentaries.map(x => fetchSefariaText(x.ref).catch(() => undefined)));
+    commentaries.forEach((commentary, c) => {
+      const commentaryResponse = responses[c];
+      if (!commentaryResponse) return;
+      const commentaryHe = asStringArray(version(commentaryResponse, "he")?.text);
+      const commentaryEn = asStringArray(version(commentaryResponse, "en")?.text);
+      segments.forEach((segment, i) => {
+        const heText = commentaryHe[i]?.trim() ? format.hebrew(commentaryHe[i]) : "";
+        const enText = commentaryEn[i]?.trim() ? format.english(commentaryEn[i]) : "";
+        if (!heText && !enText) return;
+        segment.commentary = {
+          ...(segment.commentary ?? {}),
+          [commentary.type]: [{he: heText, en: enText}],
+        };
+      });
+    });
     return {id: sectionId, title: section.title, titleHebrew: section.titleHebrew, segments};
   });
 }

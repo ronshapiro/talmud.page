@@ -811,3 +811,21 @@ body.print-app {
 .print-panel select {
   max-width: 190px;
 }
+
+/* Koren marks rubrics as <i class="instruction"> in both languages. */
+.siddur .sd-he i.instruction {
+  font-family: "Noto Sans Hebrew", sans-serif;
+  font-style: normal;
+  font-size: 0.62em;
+  font-weight: 500;
+  color: var(--instruction-color);
+}
+
+.siddur .sd-en i.instruction {
+  font-size: 0.88em;
+}
+
+.siddur .sd-en small {
+  font-size: 0.78em;
+  letter-spacing: 0.04em;
+}

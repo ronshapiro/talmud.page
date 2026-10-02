@@ -110,3 +110,30 @@ describe("siddur model", () => {
     expect(rows(doc)[2].notes).toEqual([]);
   });
 });
+
+describe("splitting at source lines", () => {
+  const section: SiddurSectionData = {
+    id: "k",
+    title: "K",
+    titleHebrew: "ק",
+    segments: [
+      {ref: "k 1", he: "א ב<br>ג ד<br>ה ו", en: "a b<br>c d<br>e f", paragraphStart: true},
+      {ref: "k 2", he: "א ב<br>ג ד<br>ה ו", en: "a b c<br>d e f g h", paragraphStart: true},
+    ],
+  };
+  const build2 = () => {
+    const doc = defaultSiddurDocument();
+    doc.sections = ["k"];
+    doc.defaults = {...doc.defaults, lineMode: "lines", splitLines: true};
+    return buildSiddurUnits(doc, new Map([["k", section]])).units
+      .filter((x): x is SiddurRow => x.kind === "row")
+      .map(x => [text(x.he), text(x.en)]);
+  };
+
+  test("pairs Hebrew and English lines when the counts match, else snaps to English lines", () => {
+    expect(build2()).toEqual([
+      ["א ב", "a b"], ["ג ד", "c d"], ["ה ו", "e f"],
+      ["א ב", "a b c"], ["ג ד", ""], ["ה ו", "d e f g h"],
+    ]);
+  });
+});

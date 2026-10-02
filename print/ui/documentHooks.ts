@@ -17,7 +17,15 @@ declare global {
     // Set once the pages are laid out and fonts are loaded.
     __PRINT_READY__?: boolean;
     __PRINT_STATS__?: unknown;
+    // Set when the page can't be laid out (e.g. text failed to load), so the renderer can stop.
+    __PRINT_ERROR__?: string;
   }
+}
+
+export function reportPrintError(error: unknown): string {
+  const message = String(error);
+  window.__PRINT_ERROR__ = message;
+  return message;
 }
 
 export function isHeadless(): boolean {

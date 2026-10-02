@@ -8,9 +8,18 @@
 // Only Nusach Ashkenaz is enabled today. The other editions are registered so that documents,
 // the editor and the data layer are all edition-aware from the start.
 
+import {KOREN_SIDDUR_TOC} from "./korenSiddurToc";
+
+export interface CommentarySource {
+  // CommentaryType englishName (commentaries.ts).
+  type: string;
+  // A Sefaria ref whose segments align 1:1 by index with the section's segments.
+  ref: string;
+}
+
 export type SectionSource =
   | {kind: "curated"; book: string; page: string}
-  | {kind: "sefaria"; ref: string};
+  | {kind: "sefaria"; ref: string; commentaries?: CommentarySource[]; stripEnglishLeadWords?: boolean};
 
 export interface SiddurSectionDef {
   id: string;
@@ -114,10 +123,37 @@ const SHABBAT_EVENING: [string, string, string?][] = [
   ["Kiddush", "קידוש"],
 ];
 
+const KOREN_BOOK = "The Koren Shalem Siddur; Ashkenaz";
+
+export const KOREN_SACKS_COMMENTARY = "Koren Sacks Commentary";
+
+const KOREN_SECTIONS: SiddurSectionDef[] = KOREN_SIDDUR_TOC.map(
+  ([group, groupHebrew, sectionPath, title, titleHebrew]) => ({
+    id: `koren:${sectionPath}`,
+    title,
+    titleHebrew,
+    group,
+    groupHebrew,
+    source: {
+      kind: "sefaria",
+      ref: `${KOREN_BOOK}, ${sectionPath}`,
+      commentaries: [{type: KOREN_SACKS_COMMENTARY, ref: `Rabbi Sacks on Siddur, ${sectionPath}`}],
+      stripEnglishLeadWords: true,
+    },
+  }));
+
 export const SIDDUR_EDITIONS: SiddurEdition[] = [
   {
+    id: "koren",
+    title: "Koren Shalem Siddur — Ashkenaz",
+    titleHebrew: "סידור קורן השלם — נוסח אשכנז",
+    enabled: true,
+    note: "Koren's Hebrew and English, with Rabbi Sacks' commentary, from Sefaria.",
+    sections: KOREN_SECTIONS,
+  },
+  {
     id: "ashkenaz",
-    title: "Siddur — Nusach Ashkenaz",
+    title: "Siddur — Nusach Ashkenaz (Metsudah)",
     titleHebrew: "סידור נוסח אשכנז",
     enabled: true,
     sections: [

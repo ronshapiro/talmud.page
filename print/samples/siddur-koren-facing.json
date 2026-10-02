@@ -1,0 +1,53 @@
+{
+  "id": "siddur-koren-facing",
+  "name": "Koren Shalem Siddur, facing pages",
+  "kind": "siddur",
+  "schemaVersion": 1,
+  "createdAt": 1790812800000,
+  "updatedAt": 1790812800000,
+  "page": {
+    "preset": "trade",
+    "unit": "in",
+    "width": 6,
+    "height": 9,
+    "margins": {
+      "top": 0.6,
+      "bottom": 0.65,
+      "inner": 0.7,
+      "outer": 0.55
+    },
+    "binding": "rtl"
+  },
+  "edition": "koren",
+  "sections": [
+    "koren:Weekdays, Blessings of the Shema",
+    "koren:Shabbat, Kabbalat Shabbat"
+  ],
+  "typography": {
+    "hebrewFont": "frank-ruehl-clm",
+    "englishFont": "eb-garamond",
+    "hebrewSizePt": 14,
+    "englishSizePt": 10.5,
+    "lineHeight": 1.55,
+    "instructionColor": "#8a6d3b",
+    "accentColor": "#7a1f1f"
+  },
+  "defaults": {
+    "translation": "side-by-side",
+    "lineMode": "lines",
+    "splitLines": true,
+    "indent": 1.5,
+    "align": "start",
+    "englishAlign": "start"
+  },
+  "sectionOverrides": {},
+  "paragraphOverrides": {},
+  "segmentOverrides": {},
+  "commentary": {},
+  "showCommentary": [
+    "Koren Sacks Commentary"
+  ],
+  "sectionPageBreaks": true,
+  "spread": "facing",
+  "facingHebrewSide": "left"
+}

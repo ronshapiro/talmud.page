@@ -21,7 +21,7 @@ import {
   applyStyleRanges,
   joinTokens,
   renderTokens,
-  splitTokens,
+  sliceTokens,
   tokenize,
   wordStarts,
 } from "./richText";
@@ -32,6 +32,7 @@ export interface ResolvedOptions {
   align: Align;
   englishAlign: Align;
   hebrewBreaks: HebrewBreaks;
+  splitLines: boolean;
   indent: number;
   spaceBefore?: number;
   pageBreakBefore: boolean;
@@ -103,6 +104,22 @@ function renderPlain(tokens: Token[]): string {
     .map(x => ({...x, marks: x.marks.filter(m => !m.attrs.includes("sd-piece"))})));
 }
 
+/**
+ * The commentary of `type` for a segment: the document's own text if it has one (an empty string
+ * suppresses the source's), otherwise the source's.
+ */
+export function effectiveCommentary(
+  doc: SiddurDocument,
+  segment: SiddurSegmentData | undefined,
+  ref: string,
+  type: string,
+): string {
+  const own = (doc.commentary[ref] ?? []).find(x => x.type === type);
+  if (own) return own.html;
+  const source = segment?.commentary?.[type]?.[0];
+  return source ? (source.en || source.he) : "";
+}
+
 export function paragraphKey(sectionId: string, index: number): string {
   return `${sectionId}#${index}`;
 }
@@ -117,6 +134,7 @@ const LAYOUT_KEYS: (keyof LayoutOptions)[] = [
   "align",
   "englishAlign",
   "hebrewBreaks",
+  "splitLines",
   "indent",
   "spaceBefore",
   "pageBreakBefore",
@@ -145,6 +163,7 @@ export function resolveOptions(levels: (LayoutOptions | undefined)[]): ResolvedO
     align: merged.align ?? "justify",
     englishAlign: merged.englishAlign ?? merged.align ?? "justify",
     hebrewBreaks: merged.hebrewBreaks ?? "none",
+    splitLines: merged.splitLines ?? false,
     indent: merged.indent ?? 0,
     spaceBefore: merged.spaceBefore,
     pageBreakBefore: merged.pageBreakBefore ?? false,
@@ -175,18 +194,66 @@ function snapToWord(tokens: Token[], index: number): number {
   return best;
 }
 
-/**
- * English split points for each Hebrew split point. Explicit ones are used as given; missing ones
- * are placed proportionally (by token position) and snapped to a word start.
- */
-export function englishSplits(override: SegmentOverride, heLength: number, en: Token[]): number[] {
-  const heSplits = override.splitHe ?? [];
-  return heSplits.map((heIndex, i) => {
-    const explicit = override.splitEn?.[i];
-    if (explicit !== undefined && explicit !== null) return explicit;
-    if (en.length === 0) return 0;
-    return snapToWord(en, Math.round((heIndex / Math.max(1, heLength)) * en.length));
+/** Split points just after each line break (so the break is trimmed from the next piece). */
+function lineBreakSplits(tokens: Token[]): number[] {
+  const points: number[] = [];
+  tokens.forEach((token, i) => {
+    if (token.kind === "br" && i > 0 && i + 1 < tokens.length) points.push(i + 1);
   });
+  return points;
+}
+
+export interface SegmentSplits {
+  he: number[];
+  en: number[];
+}
+
+/**
+ * Where a segment is split into pieces, in each language. Manual splits (override.splitHe, with
+ * optional explicit English counterparts) are combined with the source's line breaks when
+ * `splitLines` is on; English line breaks are paired with Hebrew ones when their counts match.
+ * English points without an explicit counterpart are placed proportionally and snapped to a word.
+ */
+export function segmentSplits(
+  override: SegmentOverride,
+  he: Token[],
+  en: Token[],
+  splitLines: boolean,
+): SegmentSplits {
+  // Hebrew split point -> explicit English split point, if any.
+  const pairs = new Map<number, number | undefined>();
+  (override.splitHe ?? []).forEach((point, i) => {
+    pairs.set(point, override.splitEn?.[i] ?? undefined);
+  });
+  if (splitLines) {
+    const heLines = lineBreakSplits(he);
+    const enLines = lineBreakSplits(en);
+    heLines.forEach((point, i) => {
+      if (!pairs.has(point)) {
+        pairs.set(point, heLines.length === enLines.length ? enLines[i] : undefined);
+      }
+    });
+  }
+  const heSplits = Array.from(pairs.keys())
+    .filter(x => x > 0 && x < he.length)
+    .sort((a, b) => a - b);
+  // When line counts differ, prefer the English's own line boundaries to splitting mid-line.
+  const enLineStarts = splitLines ? lineBreakSplits(en) : [];
+  let last = 0;
+  const enSplits = heSplits.map(point => {
+    let english = pairs.get(point);
+    if (english === undefined) {
+      const estimate = Math.round((point / Math.max(1, he.length)) * en.length);
+      english = en.length === 0 ? 0 : snapToWord(en, estimate);
+      if (enLineStarts.length > 0) {
+        english = enLineStarts.reduce((best, x) => (
+          Math.abs(x - estimate) < Math.abs(best - estimate) ? x : best));
+      }
+    }
+    last = Math.max(last, Math.min(en.length, english));
+    return last;
+  });
+  return {he: heSplits, en: enSplits};
 }
 
 function shiftedBreaks(breaks: number[] | undefined, start: number, end: number): number[] {
@@ -233,12 +300,12 @@ export function segmentPieces(
   he = applyStyleRanges(he, override.stylesHe ?? []);
   en = applyStyleRanges(en, override.stylesEn ?? []);
 
-  const heSplits = override.splitHe ?? [];
-  const enSplitPoints = englishSplits(override, he.length, en);
-  const heBounds = [0, ...heSplits, he.length];
-  const enBounds = [0, ...enSplitPoints, en.length];
-  const hePieces = splitTokens(he, heSplits);
-  const enPieces = splitTokens(en, enSplitPoints);
+  const segmentOptions = resolveOptions([...levels, layoutFields(override)]);
+  const splits = segmentSplits(override, he, en, segmentOptions.splitLines);
+  const heBounds = [0, ...splits.he, he.length];
+  const enBounds = [0, ...splits.en, en.length];
+  const hePieces = sliceTokens(he, splits.he);
+  const enPieces = sliceTokens(en, splits.en);
 
   return hePieces.map((heTokens, i) => {
     const options = resolveOptions([...levels, layoutFields(override), override.pieces?.[i]]);
@@ -298,6 +365,7 @@ export function buildSiddurUnits(
     });
 
     let footnoteCounter = 0;
+    const segmentsByRef = new Map(section.segments.map(x => [x.ref, x]));
     paragraphsOf(section).forEach((segments, paragraphIndex) => {
       const pKey = paragraphKey(sectionId, paragraphIndex);
       const levels = [doc.defaults, sectionOptions, doc.paragraphOverrides[pKey]];
@@ -358,9 +426,10 @@ export function buildSiddurUnits(
           row.en = joinTokens([row.en, piece.en]);
         }
         if (piece.index === 0) {
-          for (const note of doc.commentary[piece.ref] ?? []) {
-            if (doc.showCommentary.includes(note.type) && note.html.trim()) {
-              row.notes.push({kind: "commentary", type: note.type, html: note.html, pieceKey: piece.key});
+          for (const type of doc.showCommentary) {
+            const html = effectiveCommentary(doc, segmentsByRef.get(piece.ref), piece.ref, type);
+            if (html.trim()) {
+              row.notes.push({kind: "commentary", type, html, pieceKey: piece.key});
             }
           }
         }

@@ -46,6 +46,8 @@ export interface LayoutOptions {
   align?: Align;
   englishAlign?: Align;
   hebrewBreaks?: HebrewBreaks;
+  // Split segments into pieces at the source's own line breaks (e.g. Koren's sense lines).
+  splitLines?: boolean;
   // Indentation of continuation lines in `lines` mode / whole block otherwise, in em.
   indent?: number;
   // Extra space above, in units of the Hebrew line height.
@@ -203,10 +205,10 @@ export function defaultSiddurDocument(name = "My Siddur"): SiddurDocument {
     createdAt: now,
     updatedAt: now,
     page: pageSettingsFromPreset("digest", SIDDUR_MARGINS, "rtl"),
-    edition: "ashkenaz",
+    edition: "koren",
     sections: [
-      "SiddurAshkenaz/Birchot Kriat Shema",
-      "Siddur Ashkenaz, Shabbat, Kabbalat Shabbat, Lekha Dodi",
+      "koren:Weekdays, Blessings of the Shema",
+      "koren:Shabbat, Kabbalat Shabbat",
     ],
     typography: {
       hebrewFont: "frank-ruehl-clm",
@@ -217,7 +219,16 @@ export function defaultSiddurDocument(name = "My Siddur"): SiddurDocument {
       instructionColor: "#8a6d3b",
       accentColor: "#7a1f1f",
     },
-    defaults: {translation: "side-by-side", lineMode: "prose", align: "start", englishAlign: "start"},
+    // Koren's text comes broken into sense lines: give each line its own row, aligned with its
+    // translation, with a hanging indent for lines that wrap.
+    defaults: {
+      translation: "side-by-side",
+      lineMode: "lines",
+      splitLines: true,
+      indent: 1.5,
+      align: "start",
+      englishAlign: "start",
+    },
     sectionOverrides: {},
     paragraphOverrides: {},
     segmentOverrides: {},

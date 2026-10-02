@@ -56,9 +56,11 @@ async function siddurShowcase(): Promise<SiddurDocument> {
     return found;
   };
 
-  const doc = defaultSiddurDocument("Showcase: Koren-style siddur");
+  const doc = defaultSiddurDocument("Showcase: Koren-style siddur (Metsudah text)");
   doc.id = "siddur-showcase";
+  doc.edition = "ashkenaz";
   doc.sections = [SHEMA, LEKHA_DODI];
+  doc.defaults = {translation: "side-by-side", lineMode: "prose", align: "start", englishAlign: "start"};
 
   const overrides: Record<string, SegmentOverride> = {};
 
@@ -140,6 +142,7 @@ async function siddurShowcase(): Promise<SiddurDocument> {
 function siddurHebrewOnly(): SiddurDocument {
   const doc = defaultSiddurDocument("Hebrew-only pocket siddur");
   doc.id = "siddur-hebrew-only-pocket";
+  doc.edition = "ashkenaz";
   doc.page = {...doc.page,
     preset: "pocket",
     unit: "in",
@@ -150,6 +153,22 @@ function siddurHebrewOnly(): SiddurDocument {
   doc.defaults = {translation: "hebrew-only", lineMode: "prose", align: "justify"};
   doc.sectionOverrides[LEKHA_DODI] = {hebrewBreaks: "sentence", align: "center"};
   doc.typography = {...doc.typography, hebrewSizePt: 13};
+  return doc;
+}
+
+function korenSiddur(): SiddurDocument {
+  // The defaults: Koren's text and sense lines, with Rabbi Sacks' commentary.
+  const doc = defaultSiddurDocument("Koren Shalem Siddur with Rabbi Sacks' commentary");
+  doc.id = "siddur-koren";
+  return doc;
+}
+
+function korenSiddurFacing(): SiddurDocument {
+  const doc = korenSiddur();
+  doc.id = "siddur-koren-facing";
+  doc.name = "Koren Shalem Siddur, facing pages";
+  doc.spread = "facing";
+  doc.page = {...doc.page, preset: "trade", unit: "in", width: 6, height: 9};
   return doc;
 }
 
@@ -199,6 +218,8 @@ function mikraotIsaiah(): MikraotDocument {
     spread: "facing",
   });
   write("siddur-hebrew-only-pocket.json", siddurHebrewOnly());
+  write("siddur-koren.json", korenSiddur());
+  write("siddur-koren-facing.json", korenSiddurFacing());
   write("mikraot-genesis-1.json", mikraotGenesis());
   write("mikraot-exodus-20.json", mikraotExodus());
   write("mikraot-isaiah-40.json", mikraotIsaiah());

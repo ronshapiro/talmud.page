@@ -12,14 +12,15 @@ import {
 } from "../model/documents";
 import {fontsForScript} from "../model/fonts";
 import {InlineStyle, Token, tokenize} from "../model/richText";
-import {SIDDUR_EDITIONS} from "../model/siddurEditions";
-import {englishSplits} from "../model/siddurModel";
+import {KOREN_SACKS_COMMENTARY, SIDDUR_EDITIONS} from "../model/siddurEditions";
+import {effectiveCommentary, resolveOptions, segmentSplits} from "../model/siddurModel";
 import {
   Scope,
   Selection,
   addStyle,
   clearStyles,
   layoutAt,
+  resetCommentary,
   resetSegment,
   setCommentary,
   setEnglishSplit,
@@ -32,7 +33,7 @@ import {NumberInput, PageSettingsEditor} from "./Chrome";
 
 type Update = (updater: (doc: SiddurDocument) => SiddurDocument) => void;
 
-const KOREN_SACKS = "Koren Sacks Commentary";
+const KOREN_SACKS = KOREN_SACKS_COMMENTARY;
 
 function Row({label, children}: {label: string; children: React.ReactNode}) {
   return (
@@ -141,6 +142,12 @@ export function LayoutOptionsEditor({value, onChange, allowInherit}: {
           allowInherit
           onChange={hebrewBreaks => onChange({hebrewBreaks})} />
       </Row>
+      <Row label="Split at source lines">
+        <BooleanSelect
+          value={value.splitLines}
+          allowInherit
+          onChange={splitLines => onChange({splitLines})} />
+      </Row>
       <Row label="Hebrew alignment">
         <OptionSelect<Align>
           value={value.align}
@@ -214,7 +221,10 @@ function WordChips(props: {
   return (
     <div className={`word-chips ${props.rtl ? "rtl" : ""}`}>
       {tokens.map((token, i) => {
-        if (token.kind === "br") return null;
+        if (token.kind === "br") {
+          // eslint-disable-next-line react/no-array-index-key
+          return <span key={i} className="marker" title="Line break in the source">⏎</span>;
+        }
         const selected = selection && i >= selection.start && i < selection.end;
         const classes = ["chip", selected ? "selected" : "", stylesCover(props.styled, i) ? "styled" : ""];
         return (
@@ -289,8 +299,16 @@ function SegmentEditor({doc, update, selection, segment}: {
   const enText = override.enOverride ?? segment.en;
   const heTokens = useMemo(() => tokenize(heText), [heText]);
   const enTokens = useMemo(() => tokenize(enText), [enText]);
-  const enSplitPoints = englishSplits(override, heTokens.length, enTokens);
-  const commentary = (doc.commentary[ref] ?? []).find(x => x.type === KOREN_SACKS)?.html ?? "";
+  const resolved = resolveOptions([
+    doc.defaults,
+    doc.sectionOverrides[selection.sectionId],
+    doc.paragraphOverrides[selection.paragraphKey],
+    override,
+  ]);
+  const splits = segmentSplits(override, heTokens, enTokens, resolved.splitLines);
+  const commentary = effectiveCommentary(doc, segment, ref, KOREN_SACKS);
+  const ownCommentary = (doc.commentary[ref] ?? []).some(x => x.type === KOREN_SACKS);
+  const sourceCommentary = Boolean(segment.commentary?.[KOREN_SACKS]?.length);
 
   const scopes: {id: Scope; label: string}[] = [
     {id: "piece", label: "Piece"},
@@ -328,7 +346,7 @@ function SegmentEditor({doc, update, selection, segment}: {
         rtl
         selection={heRange}
         onSelect={setHeRange}
-        splits={override.splitHe ?? []}
+        splits={splits.he}
         breaks={override.breaksHe ?? []}
         styled={override.stylesHe} />
       <div className="button-row">
@@ -368,7 +386,7 @@ function SegmentEditor({doc, update, selection, segment}: {
         rtl={false}
         selection={enRange}
         onSelect={setEnRange}
-        splits={enSplitPoints}
+        splits={splits.en}
         breaks={override.breaksEn ?? []}
         styled={override.stylesEn} />
       <div className="button-row">
@@ -398,6 +416,21 @@ function SegmentEditor({doc, update, selection, segment}: {
         value={commentary}
         placeholder="Commentary for this segment (HTML allowed: <b>, <i>)"
         onChange={e => update(x => setCommentary(x, ref, KOREN_SACKS, e.target.value))} />
+      <div className="button-row">
+        {sourceCommentary
+          ? <span className="hint">{ownCommentary ? "Edited (Sefaria has text)" : "From Sefaria"}</span>
+          : null}
+        <button
+          disabled={!ownCommentary}
+          onClick={() => update(x => resetCommentary(x, ref, KOREN_SACKS))}>
+          {sourceCommentary ? "Reset to Sefaria" : "Clear"}
+        </button>
+        <button
+          disabled={!commentary}
+          onClick={() => update(x => setCommentary(x, ref, KOREN_SACKS, ""))}>
+          Suppress
+        </button>
+      </div>
 
       <h3>Text corrections</h3>
       <details>
