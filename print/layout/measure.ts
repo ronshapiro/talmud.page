@@ -14,6 +14,8 @@ export interface BlockSpec {
   dir: "rtl" | "ltr";
   // Language, for hyphenation.
   lang?: string;
+  // The text continues in another block (e.g. wrapped below): keep the last line justified.
+  justifyEnd?: boolean;
   tokens: Token[];
   // HTML placed before the first token on the first fragment only (e.g. a commentator heading
   // run-in). It is measured as part of the first line.

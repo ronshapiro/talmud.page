@@ -56,6 +56,8 @@ interface CommentEntry {
   en?: MeasuredBlock;
   // Footnote mode.
   note?: MeasuredBlock;
+  // Side by side with wrapping: the longer lane's remainder, set full-width below the pair.
+  tail?: MeasuredBlock;
 }
 
 export interface MgItemData {
@@ -68,7 +70,7 @@ export interface MgItemData {
 }
 
 interface MgPairData {
-  kind: "chead" | "comment";
+  kind: "chead" | "comment" | "tail";
   measured: (MeasuredBlock | undefined)[];
   lineOffsets: number[];
   commentator: string;
@@ -227,7 +229,7 @@ function sliceFragment(
   const end = absoluteTo < lines.length ? lines[absoluteTo].start : spec.tokens.length;
   const classes = [spec.className];
   if (absoluteFrom > 0) classes.push("cont");
-  const continues = absoluteTo < lines.length;
+  const continues = absoluteTo < lines.length || Boolean(spec.justifyEnd);
   const justifyFrom = continues ? lines[absoluteTo - 1].start : undefined;
   return {html: blockInnerHtml(spec, start, end, false, justifyFrom), className: classes.join(" ")};
 }
@@ -496,6 +498,36 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
     note: x.noteSpec ? measure(x.noteSpec, notesWidth) : undefined,
   }));
 
+  // Wrapping: when one side of a side-by-side comment runs well past the other, keep only as many
+  // of its lines beside the other as fit alongside it, and set the rest full-width below.
+  entries.forEach(entry => {
+    const config = configById.get(entry.commentator);
+    if (!config?.wrap || entry.english !== "side-by-side" || !entry.he || !entry.en) return;
+    const longEnglish = entry.en.height > entry.he.height;
+    const long = longEnglish ? entry.en : entry.he;
+    const short = longEnglish ? entry.he : entry.en;
+    const lineHeight = long.height / long.lines.length;
+    if (long.height - short.height < 2 * lineHeight) return;
+    const keep = Math.max(1, long.lines.filter(x => x.bottom <= short.height + 1).length);
+    if (keep >= long.lines.length) return;
+    const split = long.lines[keep].start;
+    const head = measure({
+      ...long.spec,
+      key: `${long.spec.key}:head`,
+      tokens: long.spec.tokens.slice(0, split),
+      justifyEnd: true,
+    }, longEnglish ? pairEnglishWidth : pairHebrewWidth);
+    const tail = measure({
+      ...long.spec,
+      key: `${long.spec.key}:tail`,
+      className: `${long.spec.className} wrap-tail`,
+      tokens: long.spec.tokens.slice(split),
+    }, W);
+    if (longEnglish) entry.en = head;
+    else entry.he = head;
+    entry.tail = tail;
+  });
+
   const fontPx = (id: string, tier: TierNumber) => hebrewSizePt(configById.get(id)!, tier) * PT;
   const notesFontPx = typography.notesSizePt * PT;
 
@@ -590,15 +622,26 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
     return items;
   };
 
-  const pairItem = (entry: CommentEntry): Pair => {
+  const pairItems = (entry: CommentEntry): Pair[] => {
     const lanes = [entry.he, entry.en];
     const top = Math.max(entry.he?.baseline ?? 0, entry.en?.baseline ?? 0);
-    return {
+    const items: Pair[] = [{
       lanes,
       shifts: lanes.map(x => (x ? top - x.baseline : 0)),
       spaceBefore: 0.4 * fontPx(entry.commentator, entry.tier),
       data: {kind: "comment", measured: lanes, lineOffsets: [0, 0], commentator: entry.commentator, entry},
-    };
+    }];
+    if (entry.tail) {
+      items.push({
+        lanes: [entry.tail],
+        shifts: [0],
+        spaceBefore: 0,
+        data: {
+          kind: "tail", measured: [entry.tail], lineOffsets: [0], commentator: entry.commentator, entry,
+        },
+      });
+    }
+    return items;
   };
 
   const noteItem = (entry: CommentEntry): Item => ({
@@ -728,7 +771,7 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
     const queue: Pair[] = [];
     for (const id of sortedCommentators([...carryPairs[tier].keys(), ...fresh.keys()])) {
       const carried = carryPairs[tier].get(id) ?? [];
-      const items = [...carried, ...(fresh.get(id) ?? []).map(pairItem)];
+      const items = [...carried, ...(fresh.get(id) ?? []).flatMap(pairItems)];
       if (items.length === 0) continue;
       const continued = carried.length > 0 && carried[0].data.lineOffsets.some(x => x > 0);
       queue.push(pairHeading(id, tier, continued));
