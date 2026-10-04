@@ -44,6 +44,9 @@ function matchesConfig(key: string, query: string, cfg?: ModelConfig): boolean {
     const normGen = normalizeKey(cfg.generateModel);
     if (normGen === normQuery) return true;
     if (normGen.replace(/^claude-/, "") === normQuery.replace(/^claude-/, "")) return true;
+    const normGenNoEffort = normGen.replace(/-(?:high|medium|low)$/, "");
+    if (normGenNoEffort === normQuery) return true;
+    if (normGenNoEffort.replace(/^claude-/, "") === normQuery.replace(/^claude-/, "")) return true;
   }
   return false;
 }

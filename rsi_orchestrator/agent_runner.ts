@@ -378,7 +378,11 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
     args.push("--dangerously-skip-permissions");
   }
   if (options.model) {
-    args.push("--model", options.model);
+    const model = options.model.startsWith("claude-")
+      && !/-(?:low|medium|high|xhigh|max)$/.test(options.model)
+      ? `${options.model}-high`
+      : options.model;
+    args.push("--model", model);
   }
   if (options.timeoutMs) {
     args.push("--print-timeout", `${Math.ceil(options.timeoutMs / 1000)}s`);

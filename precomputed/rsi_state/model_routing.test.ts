@@ -147,12 +147,12 @@ test("actual model_routing_config.json resolves agy default and sonnet-4.6", () 
     configName: "sonnet 5.5",
   });
   expect(agySonnet55.backend).toBe("agy");
-  expect(agySonnet55.generateModel).toBe("claude-sonnet-5-5");
+  expect(agySonnet55.generateModel).toBe("claude-sonnet-5-5-high");
   expect(agySonnet55.critiqueModel).toBe("gemini-3.8-flash-medium");
 
   const agySonnet55Hyphen = getTaskModelConfig("rashi_tosafot_translation", {
     backend: "agy",
     configName: "sonnet-5.5",
   });
-  expect(agySonnet55Hyphen.generateModel).toBe("claude-sonnet-5-5");
+  expect(agySonnet55Hyphen.generateModel).toBe("claude-sonnet-5-5-high");
 });
