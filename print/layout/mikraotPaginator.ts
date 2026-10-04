@@ -614,18 +614,32 @@ export function paginateMikraot(
     + `p. ${PAGE_PLACEHOLDER})</span>`);
   const ellipsis = tokenize("…");
 
-  /** Keeps as many whole lines of `block` as fit with `marker` within `limit` lines. */
+  /**
+   * Keeps as many words of `block` as fit with `marker` within `limit` lines, so the marker fills
+   * out the last line rather than starting its own.
+   */
   const cut = (block: MeasuredBlock, limit: number, marker: Token[], tag: string) => {
-    for (let keep = Math.min(limit, block.lines.length - 1); keep >= 1; keep--) {
-      const split = block.lines[keep].start;
-      const head = measure({
-        ...block.spec,
-        key: `${block.spec.key}:${tag}:${keep}`,
-        tokens: [...block.spec.tokens.slice(0, split), ...marker],
-      }, block.width);
-      if (head.lines.length <= limit) return {head, rest: block.spec.tokens.slice(split)};
+    const {tokens} = block.spec;
+    const attempt = (split: number) => measure({
+      ...block.spec,
+      key: `${block.spec.key}:${tag}:${split}`,
+      tokens: [...tokens.slice(0, split), ...marker],
+    }, block.width);
+    // Fitting is monotonic in the number of words kept: binary search for the most that fit.
+    let lo = 1;
+    let hi = block.lines[Math.min(limit, block.lines.length - 1)].start;
+    let best: {head: MeasuredBlock; split: number} | undefined;
+    while (lo <= hi) {
+      const split = Math.floor((lo + hi) / 2);
+      const head = attempt(split);
+      if (head.lines.length <= limit) {
+        best = {head, split};
+        lo = split + 1;
+      } else {
+        hi = split - 1;
+      }
     }
-    return undefined;
+    return best && {head: best.head, rest: tokens.slice(best.split)};
   };
 
   entries.forEach((entry, i) => {

@@ -112,7 +112,8 @@ notes live in `print/README.md`.
 
 ### Long comments and continuations
 - Line limits (per comment, per commentator, or global) apply to the Hebrew, to stacked and
-  side-by-side English, and to footnotes, each separately. A cut block ends with a marker naming
+  side-by-side English, and to footnotes, each separately. A block is cut after as many words as
+  fit, so its marker fills out the last line. A cut block ends with a marker naming
   the addendum and the page it is on ("(המשך ב׳, עמ׳ 23)", "(continued in addendum 5,
   p. 23)").
 - A comment whose English is set in the continuations can optionally carry a compact pointer to it
