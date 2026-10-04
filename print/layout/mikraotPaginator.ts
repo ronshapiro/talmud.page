@@ -493,9 +493,12 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
 
     const afterMain = bodyHeight - main.height - (main.height > 0 ? regionGap : 0);
     // Let the notes catch up (up to 1.5x their usual share) when they are lagging behind.
-    const notesCap = bodyHeight * (carryNotes.size > 0
-      ? Math.min(0.5, layout.maxNotesFraction * 1.5)
-      : layout.maxNotesFraction);
+    // The notes can never take more than what's left below the main text.
+    const notesCap = Math.max(0, Math.min(
+      afterMain - notesRuleHeight - regionGap,
+      bodyHeight * (carryNotes.size > 0
+        ? Math.min(0.5, layout.maxNotesFraction * 1.5)
+        : layout.maxNotesFraction)));
 
     let notesReserved = 0;
     let tierResults = {1: emptyColumns(), 2: emptyColumns()};
