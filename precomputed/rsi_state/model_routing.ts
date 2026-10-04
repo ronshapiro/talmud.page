@@ -32,7 +32,7 @@ export function readModelRoutingConfig(configPath = DEFAULT_CONFIG_PATH): ModelR
 }
 
 function normalizeKey(s: string): string {
-  return s.toLowerCase().replace(/[._]/g, "-");
+  return s.toLowerCase().replace(/[\s._]/g, "-");
 }
 
 function matchesConfig(key: string, query: string, cfg?: ModelConfig): boolean {
