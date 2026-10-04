@@ -66,9 +66,25 @@ function root(): HTMLElement {
   return measurementRoot;
 }
 
-export function blockInnerHtml(spec: BlockSpec, start: number, end: number, wrap: boolean): string {
+/**
+ * HTML for tokens [start, end). With `justifyFrom`, the tokens from there on (a fragment's last
+ * line, when the paragraph continues in the next column) are wrapped in a block that keeps that
+ * line justified; `text-align-last` on the whole block would also stretch lines before <br>s.
+ */
+export function blockInnerHtml(
+  spec: BlockSpec,
+  start: number,
+  end: number,
+  wrap: boolean,
+  justifyFrom?: number,
+): string {
   const lead = start === 0 && spec.leadHtml ? spec.leadHtml : "";
-  return lead + renderTokens(spec.tokens, {
+  const tokens = justifyFrom === undefined
+    ? spec.tokens
+    : spec.tokens.map((token, i) => (i >= justifyFrom && i < end
+      ? {...token, marks: [{tag: "span", attrs: ' class="last-line"'}, ...token.marks]}
+      : token));
+  return lead + renderTokens(tokens, {
     start,
     end,
     wrapWord: wrap ? (html, i) => `<span data-t="${i}">${html}</span>` : undefined,

@@ -130,30 +130,75 @@ export interface SiddurDocument extends BaseDocument {
 
 export type Tier = 0 | 1 | 2;
 
+// How a commentary's (or the verses') English is set relative to its Hebrew.
+export type EnglishMode = "none" | "footnote" | "stacked" | "side-by-side";
+
+export const ENGLISH_MODES: {id: EnglishMode; label: string}[] = [
+  {id: "none", label: "No English"},
+  {id: "footnote", label: "English as footnote"},
+  {id: "stacked", label: "Hebrew above English"},
+  {id: "side-by-side", label: "Side by side"},
+];
+
 export interface CommentatorConfig {
+  // A registry id (mikraotCommentators.ts) or "sefaria:<refPrefix>" for any other Sefaria text.
   id: string;
+  // For Sefaria texts outside the registry: the chapter ref is `${refPrefix}${chapter}`.
+  refPrefix?: string;
+  englishName?: string;
+  hebrewName?: string;
   tier: Tier;
-  showEnglish: boolean;
+  english: EnglishMode;
+  // Typography overrides; unset = the document's general commentary typography.
+  font?: string;
+  sizePt?: number;
+  englishFont?: string;
+  englishSizePt?: number;
+  /** @deprecated Replaced by `english`; read only when migrating old documents. */
+  showEnglish?: boolean;
 }
 
 export interface CommentOverride {
   hidden?: boolean;
   tier?: Tier;
+  // Turn the English of this one comment on (in the commentator's mode, or as a footnote) or off.
   showEnglish?: boolean;
+}
+
+// Styling of a verse/chapter marker, e.g. the red verse numbers.
+export interface LabelStyle {
+  font?: string;
+  // Relative to the surrounding text.
+  scale: number;
+  color: string;
+  bold: boolean;
+  superscript: boolean;
+  prefix: string;
+  suffix: string;
+  numerals: "hebrew" | "arabic";
 }
 
 export interface MikraotTypography {
   mainFont: string;
   commentaryFont: string;
   notesFont: string;
+  // General English font/size for stacked and side-by-side commentary English.
+  englishFont: string;
+  englishSizePt: number;
   mainSizePt: number;
+  // General commentary sizes by tier.
   tier1SizePt: number;
   tier2SizePt: number;
   targumSizePt: number;
   notesSizePt: number;
   lineHeight: number;
   showTrope: boolean;
+  verseLabel: LabelStyle;
+  commentLabel: LabelStyle;
+  chapterLabel: LabelStyle;
 }
+
+export type MainEnglishMode = "notes" | "side-by-side" | "stacked" | "none";
 
 export interface MikraotLayout {
   tier1Columns: number;
@@ -172,8 +217,11 @@ export interface MikraotLayout {
   // more verse and continue its commentary on the next page instead.
   minPageFill: number;
   showTargum: boolean;
-  showVerseTranslation: boolean;
+  // Where the verses' translation goes.
+  mainEnglish: MainEnglishMode;
   columnRules: boolean;
+  /** @deprecated Replaced by mainEnglish. */
+  showVerseTranslation?: boolean;
 }
 
 export interface MikraotDocument extends BaseDocument {
@@ -181,6 +229,8 @@ export interface MikraotDocument extends BaseDocument {
   book: string;
   startChapter: number;
   endChapter: number;
+  // Sefaria versionTitle of the verse translation; unset = Sefaria's default.
+  translationVersion?: string;
   commentators: CommentatorConfig[];
   commentOverrides: Record<string, CommentOverride>;
   typography: MikraotTypography;
@@ -249,9 +299,19 @@ export function defaultCommentatorConfigs(book: string): CommentatorConfig[] {
   return commentatorsForBook(book).map(x => ({
     id: x.id,
     tier: x.defaultTier,
-    showEnglish: x.defaultShowEnglish,
+    english: x.defaultShowEnglish ? "footnote" : "none",
   }));
 }
+
+export const DEFAULT_VERSE_LABEL: LabelStyle = {
+  scale: 0.56, color: "#7a1f1f", bold: true, superscript: true, prefix: "", suffix: "", numerals: "hebrew",
+};
+export const DEFAULT_COMMENT_LABEL: LabelStyle = {
+  scale: 0.92, color: "#7a1f1f", bold: true, superscript: false, prefix: "", suffix: "", numerals: "hebrew",
+};
+export const DEFAULT_CHAPTER_LABEL: LabelStyle = {
+  scale: 0.82, color: "#7a1f1f", bold: false, superscript: false, prefix: "פרק ", suffix: "", numerals: "hebrew",
+};
 
 export function defaultMikraotDocument(name = "Mikraot Gedolot", book = "Genesis"): MikraotDocument {
   const now = Date.now();
@@ -272,6 +332,8 @@ export function defaultMikraotDocument(name = "Mikraot Gedolot", book = "Genesis
       mainFont: "keter-yg",
       commentaryFont: "noto-rashi",
       notesFont: "eb-garamond",
+      englishFont: "eb-garamond",
+      englishSizePt: 8.6,
       mainSizePt: 15,
       tier1SizePt: 9.6,
       tier2SizePt: 8.6,
@@ -279,6 +341,9 @@ export function defaultMikraotDocument(name = "Mikraot Gedolot", book = "Genesis
       notesSizePt: 7.6,
       lineHeight: 1.45,
       showTrope: true,
+      verseLabel: DEFAULT_VERSE_LABEL,
+      commentLabel: DEFAULT_COMMENT_LABEL,
+      chapterLabel: DEFAULT_CHAPTER_LABEL,
     },
     layout: {
       tier1Columns: 2,
@@ -291,10 +356,24 @@ export function defaultMikraotDocument(name = "Mikraot Gedolot", book = "Genesis
       maxCommentaryLag: 3,
       minPageFill: 0.88,
       showTargum: false,
-      showVerseTranslation: true,
+      mainEnglish: "notes",
       columnRules: true,
     },
   };
+}
+
+function migrateMikraot(doc: MikraotDocument, merged: any): void {
+  merged.commentators = doc.commentators
+    .filter(x => x.id.startsWith("sefaria:") || COMMENTATORS.some(c => c.id === x.id))
+    .map(x => {
+      const {showEnglish, ...rest} = x;
+      if (rest.english !== undefined) return rest;
+      return {...rest, english: showEnglish ? "footnote" : "none"};
+    });
+  if (doc.layout?.mainEnglish === undefined && doc.layout?.showVerseTranslation === false) {
+    merged.layout.mainEnglish = "none";
+  }
+  delete merged.layout.showVerseTranslation;
 }
 
 /** Fills in fields added after a document was created. */
@@ -304,16 +383,7 @@ export function migrateDocument(doc: PrintDocument): PrintDocument {
   for (const key of ["typography", "layout", "defaults"]) {
     if ((defaults as any)[key]) merged[key] = {...(defaults as any)[key], ...(doc as any)[key]};
   }
-  if (doc.kind === "mikraot") {
-    // Add newly registered commentators (off by default) so they show up in the settings.
-    const known = new Set(doc.commentators.map(x => x.id));
-    merged.commentators = [
-      ...doc.commentators.filter(x => COMMENTATORS.some(c => c.id === x.id)),
-      ...defaultCommentatorConfigs(doc.book)
-        .filter(x => !known.has(x.id))
-        .map(x => ({...x, tier: 0})),
-    ];
-  }
+  if (doc.kind === "mikraot") migrateMikraot(doc, merged);
   merged.schemaVersion = SCHEMA_VERSION;
   return merged;
 }

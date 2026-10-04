@@ -267,3 +267,50 @@ export function commentatorsForBook(book: string): Commentator[] {
   return COMMENTATORS.filter(
     x => x.sections.includes(info.section) && (!x.books || x.books.includes(book)));
 }
+
+export interface ResolvedCommentator {
+  id: string;
+  englishName: string;
+  hebrewName: string;
+  // The chapter ref is `${refPrefix}${chapter}`.
+  refPrefix: string;
+  isTargum: boolean;
+}
+
+/** Names and Sefaria ref for a commentator config: from the registry, or from the config itself. */
+export function resolveCommentator(
+  config: {id: string; refPrefix?: string; englishName?: string; hebrewName?: string},
+  book: string,
+): ResolvedCommentator | undefined {
+  const known = COMMENTATORS_BY_ID[config.id];
+  if (known) {
+    return {
+      id: config.id,
+      englishName: known.englishName,
+      hebrewName: known.hebrewName,
+      refPrefix: known.ref(book, 1).replace(/1$/, ""),
+      isTargum: Boolean(known.isTargum),
+    };
+  }
+  if (!config.refPrefix) return undefined;
+  return {
+    id: config.id,
+    englishName: config.englishName ?? config.refPrefix.trim(),
+    hebrewName: config.hebrewName ?? config.englishName ?? config.refPrefix.trim(),
+    refPrefix: config.refPrefix,
+    isTargum: false,
+  };
+}
+
+export function sefariaCommentatorId(refPrefix: string): string {
+  return `sefaria:${refPrefix}`;
+}
+
+/** A commentary available for a chapter on Sefaria (from its links). */
+export interface AvailableSource {
+  refPrefix: string;
+  englishName: string;
+  hebrewName: string;
+  category: string;
+  count: number;
+}

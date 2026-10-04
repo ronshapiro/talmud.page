@@ -8,8 +8,8 @@
 //      commentOverrides, which remain editable by hand.
 
 import {MikraotChapter} from "./dataTypes";
-import {CommentOverride, MikraotDocument, Tier} from "./documents";
-import {COMMENTATORS_BY_ID} from "./mikraotCommentators";
+import {CommentOverride, ENGLISH_MODES, EnglishMode, MikraotDocument, Tier} from "./documents";
+import {resolveCommentator} from "./mikraotCommentators";
 
 export const CURATION_VERSION = 1;
 
@@ -37,7 +37,7 @@ export interface CurationResponse {
   version: number;
   kind: "mikraot-curation";
   // Commentator-level tiers.
-  commentators?: Record<string, {tier?: Tier; showEnglish?: boolean}>;
+  commentators?: Record<string, {tier?: Tier; english?: EnglishMode; showEnglish?: boolean}>;
   // Comment-level decisions, keyed by comment ref.
   comments?: Record<string, CommentOverride>;
   // Optional free-form rationale, kept for the reader of the file.
@@ -62,7 +62,7 @@ export function buildCurationRequest(
   const comments: CurationRequestComment[] = [];
   for (const chapter of chapters) {
     for (const config of doc.commentators) {
-      const commentator = COMMENTATORS_BY_ID[config.id];
+      const commentator = resolveCommentator(config, doc.book);
       if (!commentator || commentator.isTargum) continue;
       const commentary = chapter.commentaries[config.id];
       if (!commentary) continue;
@@ -88,12 +88,13 @@ export function buildCurationRequest(
     book: doc.book,
     chapters: [doc.startChapter, doc.endChapter],
     commentators: doc.commentators
-      .filter(x => COMMENTATORS_BY_ID[x.id] && !COMMENTATORS_BY_ID[x.id].isTargum)
-      .map(x => ({
-        id: x.id,
-        englishName: COMMENTATORS_BY_ID[x.id].englishName,
-        hebrewName: COMMENTATORS_BY_ID[x.id].hebrewName,
-        currentTier: x.tier,
+      .map(x => ({config: x, resolved: resolveCommentator(x, doc.book)}))
+      .filter(x => x.resolved && !x.resolved.isTargum)
+      .map(({config, resolved}) => ({
+        id: config.id,
+        englishName: resolved!.englishName,
+        hebrewName: resolved!.hebrewName,
+        currentTier: config.tier,
       })),
     comments,
     instructions: INSTRUCTIONS,
@@ -122,7 +123,12 @@ export function applyCuration(
       if (isTier(change.tier)) next.tier = change.tier;
       else warnings.push(`Invalid tier for ${config.id}: ${String(change.tier)}`);
     }
-    if (typeof change.showEnglish === "boolean") next.showEnglish = change.showEnglish;
+    if (change.english !== undefined) {
+      if (ENGLISH_MODES.some(x => x.id === change.english)) next.english = change.english;
+      else warnings.push(`Invalid english mode for ${config.id}: ${String(change.english)}`);
+    } else if (typeof change.showEnglish === "boolean") {
+      next.english = change.showEnglish ? "footnote" : "none";
+    }
     return next;
   });
   for (const id of Object.keys(response.commentators ?? {})) {

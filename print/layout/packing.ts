@@ -275,3 +275,171 @@ export function rebaseItem<T extends {lineOffset: number}>(
     data: {...item.data, lineOffset: item.data.lineOffset + line},
   };
 }
+
+// ---------------------------------------------------------------------------------------------
+// Paired lanes: rows of side-by-side blocks (e.g. Hebrew | English) that split across columns
+// and pages independently, each lane with its own progress.
+
+export interface PairItem<T = unknown> {
+  // One or two lanes (a single lane spans the row, e.g. a heading).
+  lanes: (Lines | undefined)[];
+  // Per-lane downward shift aligning the lanes' first baselines.
+  shifts: number[];
+  spaceBefore: number;
+  keepWithNext?: boolean;
+  unsplittable?: boolean;
+  data: T;
+}
+
+export interface PairCursor {
+  item: number;
+  // Lines consumed so far, per lane.
+  lines: number[];
+}
+
+export interface PlacedPairRow<T = unknown> {
+  item: PairItem<T>;
+  itemIndex: number;
+  from: number[];
+  to: number[];
+  spaceBefore: number;
+  height: number;
+  isFirst: boolean;
+  isLast: boolean;
+}
+
+export interface PairsResult<T = unknown> {
+  rows: PlacedPairRow<T>[];
+  height: number;
+  end: PairCursor;
+}
+
+export const PAIR_START: PairCursor = {item: 0, lines: []};
+
+function laneCount(lane: Lines | undefined): number {
+  return lane ? lane.lines.length : 0;
+}
+
+function pairDone<T>(item: PairItem<T>, lines: number[]): boolean {
+  return item.lanes.every((lane, i) => (lines[i] ?? 0) >= laneCount(lane));
+}
+
+export function pairsDone<T>(items: PairItem<T>[], cursor: PairCursor): boolean {
+  return cursor.item >= items.length;
+}
+
+/** Fills one column of the given height with paired rows. */
+export function fillPairs<T>(
+  items: PairItem<T>[],
+  start: PairCursor,
+  height: number,
+  options: PackOptions = DEFAULT_PACK_OPTIONS,
+  allowEmpty = false,
+): PairsResult<T> {
+  const rows: PlacedPairRow<T>[] = [];
+  let used = 0;
+  let cursor: PairCursor = {item: start.item, lines: start.lines.slice()};
+
+  while (cursor.item < items.length) {
+    const item = items[cursor.item];
+    const consumed = cursor.lines;
+    const from = item.lanes.map((_, i) => consumed[i] ?? 0);
+    const atStart = from.every(x => x === 0);
+    const space = rows.length === 0 || !atStart ? 0 : item.spaceBefore;
+    const available = height - used - space;
+    // eslint-disable-next-line @typescript-eslint/no-loop-func
+    const laneRest = (i: number) => {
+      const lane = item.lanes[i];
+      return lane && from[i] < lane.lines.length
+        ? item.shifts[i] + linesHeight(lane, from[i], lane.lines.length)
+        : 0;
+    };
+    const remaining = Math.max(0, ...item.lanes.map((_, i) => laneRest(i)));
+
+    let to: number[];
+    if (remaining <= available + 0.5) {
+      to = item.lanes.map(laneCount);
+    } else if (item.unsplittable) {
+      to = rows.length === 0 && !allowEmpty ? item.lanes.map(laneCount) : from.slice();
+    } else {
+      to = item.lanes.map((lane, i) => {
+        if (!lane) return 0;
+        const total = lane.lines.length;
+        if (from[i] >= total) return total;
+        let fit = maxLinesFitting(lane, from[i], available - item.shifts[i]);
+        if (from[i] === 0 && fit - from[i] < Math.min(options.orphans, total)) fit = from[i];
+        if (fit > from[i] && fit < total && total - fit < options.widows) {
+          fit = Math.max(from[i], total - options.widows);
+          if (from[i] === 0 && fit < options.orphans) fit = from[i];
+        }
+        return fit;
+      });
+      if (to.every((x, i) => x === from[i]) && rows.length === 0 && !allowEmpty) {
+        to = item.lanes.map((lane, i) => (lane ? Math.min(lane.lines.length, from[i] + 1) : 0));
+      }
+    }
+
+    if (!to.some((x, i) => x > from[i])) break;
+    const rowHeight = Math.max(0, ...item.lanes.map((lane, i) => (
+      lane && to[i] > from[i] ? item.shifts[i] + linesHeight(lane, from[i], to[i]) : 0)));
+    const done = pairDone(item, to);
+    rows.push({
+      item,
+      itemIndex: cursor.item,
+      from,
+      to,
+      spaceBefore: space,
+      height: rowHeight,
+      isFirst: atStart,
+      isLast: done,
+    });
+    used += space + rowHeight;
+    if (!done) {
+      cursor = {item: cursor.item, lines: to};
+      break;
+    }
+    cursor = {item: cursor.item + 1, lines: []};
+  }
+
+  // keep-with-next, as in fillColumn.
+  while (rows.length > 1 && cursor.item < items.length && cursor.lines.length === 0) {
+    const last = rows[rows.length - 1];
+    if (!(last.isLast && last.isFirst && last.item.keepWithNext)) break;
+    rows.pop();
+    used -= last.spaceBefore + last.height;
+    cursor = {item: last.itemIndex, lines: []};
+  }
+
+  return {rows, height: used, end: cursor};
+}
+
+/** The unconsumed tail of a pair item, with each lane rebased. */
+export function rebasePair<T extends {lineOffsets: number[]}>(
+  item: PairItem<T>,
+  lines: number[],
+): PairItem<T> {
+  if (lines.every(x => !x)) return item;
+  return {
+    ...item,
+    spaceBefore: 0,
+    lanes: item.lanes.map((lane, i) => {
+      const line = lines[i] ?? 0;
+      if (!lane || line === 0) return lane;
+      const base = lane.lines[line - 1].bottom;
+      return {lines: lane.lines.slice(line).map(x => ({start: x.start, bottom: x.bottom - base}))};
+    }),
+    data: {...item.data, lineOffsets: item.data.lineOffsets.map((x, i) => x + (lines[i] ?? 0))},
+  };
+}
+
+export function pairsRemainingHeight<T>(items: PairItem<T>[], start: PairCursor): number {
+  let total = 0;
+  for (let i = start.item; i < items.length; i++) {
+    const item = items[i];
+    const lines = i === start.item ? start.lines : [];
+    const atStart = lines.every(x => !x);
+    total += (atStart ? item.spaceBefore : 0) + Math.max(0, ...item.lanes.map((lane, l) => (
+      lane ? item.shifts[l] + linesHeight(lane, lines[l] ?? 0, lane.lines.length) : 0)));
+  }
+  return total;
+}

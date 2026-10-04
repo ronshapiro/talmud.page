@@ -1,6 +1,12 @@
 import * as express from "express";
 import {SIDDUR_EDITIONS} from "../model/siddurEditions";
-import {mikraotChapter, siddurSectionData} from "./printData";
+import {
+  mikraotChapter,
+  mikraotSources,
+  probeSource,
+  siddurSectionData,
+  translationVersions,
+} from "./printData";
 
 function sendError(res: express.Response, e: any) {
   res.status(500).json({error: e?.message ?? String(e)});
@@ -15,10 +21,31 @@ export function registerPrintRoutes(
   renderPage: (res: express.Response) => void,
 ): void {
   app.get("/api/print/mikraot/:book/:chapter", (req, res) => {
-    const commentators = typeof req.query.c === "string" && req.query.c.length > 0
-      ? req.query.c.split(",")
+    // p: "|"-separated ref prefixes; v: translation versionTitle.
+    const prefixes = typeof req.query.p === "string" && req.query.p.length > 0
+      ? req.query.p.split("|")
       : [];
-    mikraotChapter(req.params.book, parseInt(req.params.chapter), commentators)
+    const translation = typeof req.query.v === "string" && req.query.v ? req.query.v : undefined;
+    mikraotChapter(req.params.book, parseInt(req.params.chapter), prefixes, translation)
+      .then(x => res.json(x))
+      .catch(e => sendError(res, e));
+  });
+
+  app.get("/api/print/mikraot-sources/:book/:chapter", (req, res) => {
+    mikraotSources(req.params.book, parseInt(req.params.chapter))
+      .then(x => res.json(x))
+      .catch(e => sendError(res, e));
+  });
+
+  app.get("/api/print/mikraot-probe/:chapter", (req, res) => {
+    const prefix = typeof req.query.p === "string" ? req.query.p : "";
+    probeSource(prefix, parseInt(req.params.chapter))
+      .then(x => res.json(x))
+      .catch(e => res.status(404).json({error: e?.message ?? String(e)}));
+  });
+
+  app.get("/api/print/versions/:book", (req, res) => {
+    translationVersions(req.params.book)
       .then(x => res.json(x))
       .catch(e => sendError(res, e));
   });

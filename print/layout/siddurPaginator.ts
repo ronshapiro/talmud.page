@@ -390,14 +390,17 @@ export function paginateSiddur(doc: SiddurDocument, units: SiddurUnit[]): Siddur
     if (from > 0 && start > 0 && sameLine(spec.tokens[start - 1], spec.tokens[start])) {
       classes.push("cont-mid");
     }
-    if (to < lines.length) classes.push("justify-last");
+
     return {
       key,
       className: classes.join(" "),
       style: spec.style,
       dir: spec.dir,
       lang: spec.lang,
-      html: blockInnerHtml(spec, start, end, false),
+      // Only justified blocks keep a continued fragment's last line justified.
+      html: blockInnerHtml(
+        spec, start, end, false,
+        to < lines.length && spec.className.includes("align-justify") ? lines[to - 1].start : undefined),
       height,
     };
   };

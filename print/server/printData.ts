@@ -12,13 +12,13 @@ import {
   SiddurSectionData,
   SiddurSegmentData,
 } from "../model/dataTypes";
-import {COMMENTATORS_BY_ID, tanakhBook} from "../model/mikraotCommentators";
+import {AvailableSource, tanakhBook} from "../model/mikraotCommentators";
 import {siddurSection} from "../model/siddurEditions";
 
 export const PRINT_CACHE_ROOT = path.join(__dirname, "..", "..", "cached_outputs", "print");
 
 // Bump to invalidate processed (not raw) cache entries when transformations change.
-const PROCESSING_VERSION = 3;
+const PROCESSING_VERSION = 4;
 
 // When set, never touch the network; missing cache entries are errors.
 let offline = false;
@@ -64,17 +64,22 @@ interface SefariaV3Response {
   error?: string;
 }
 
+const FETCH_OPTIONS = {retry: {retries: 4, minTimeout: 200}, timeout: 60_000};
+
 const inFlight = new Map<string, Promise<SefariaV3Response>>();
 
-export function fetchSefariaText(ref: string): Promise<SefariaV3Response> {
-  const file = path.join(PRINT_CACHE_ROOT, "sefaria", `${safeFileName(ref)}.json`);
+export function fetchSefariaText(ref: string, englishVersion?: string): Promise<SefariaV3Response> {
+  const versionSuffix = englishVersion ? `@${englishVersion.slice(0, 60)}` : "";
+  const file = path.join(PRINT_CACHE_ROOT, "sefaria", `${safeFileName(ref + versionSuffix)}.json`);
   const existing = readJson<SefariaV3Response>(file);
   if (existing) return Promise.resolve(existing);
   if (offline) return Promise.reject(new Error(`Offline and not cached: ${ref}`));
-  if (inFlight.has(ref)) return inFlight.get(ref)!;
+  const key = ref + versionSuffix;
+  if (inFlight.has(key)) return inFlight.get(key)!;
 
+  const english = englishVersion ? `english|${englishVersion}` : "english";
   const url = `https://www.sefaria.org/api/v3/texts/${encodeURIComponent(ref.replace(/ /g, "_"))}`
-    + "?version=hebrew&version=english&return_format=strip_only_footnotes";
+    + `?version=hebrew&version=${encodeURIComponent(english)}&return_format=strip_only_footnotes`;
   const promise = fetch(url, {retry: {retries: 4, minTimeout: 200}, timeout: 60_000})
     .then(x => x.json())
     .then((json: SefariaV3Response) => {
@@ -82,8 +87,8 @@ export function fetchSefariaText(ref: string): Promise<SefariaV3Response> {
       writeJsonFile(file, json);
       return json;
     })
-    .finally(() => inFlight.delete(ref));
-  inFlight.set(ref, promise);
+    .finally(() => inFlight.delete(key));
+  inFlight.set(key, promise);
   return promise;
 }
 
@@ -180,35 +185,42 @@ function asStringArray(value: any): string[] {
 // ---------------------------------------------------------------------------------------------
 // Mikraot Gedolot
 
+/** The commentator's name for formatting heuristics, e.g. "Rashi" from "Rashi on Genesis ". */
+function nameFromPrefix(refPrefix: string): string {
+  return refPrefix.trim().split(/ on |,/)[0].trim();
+}
+
+/**
+ * A commentary (or targum) chapter, fetched as `${refPrefix}${chapter}`. Texts with one string per
+ * verse (targumim, Steinsaltz) become one comment per verse.
+ */
 export async function mikraotCommentary(
-  book: string,
+  refPrefix: string,
   chapter: number,
-  commentatorId: string,
 ): Promise<MikraotCommentary> {
-  const commentator = COMMENTATORS_BY_ID[commentatorId];
-  if (!commentator) throw new Error(`Unknown commentator: ${commentatorId}`);
-  const file = path.join(
-    PRINT_CACHE_ROOT, "mikraot", `v${PROCESSING_VERSION}`, `${safeFileName(book)}.${chapter}.${commentatorId}.json`);
+  const ref = `${refPrefix}${chapter}`;
+  const file = path.join(PRINT_CACHE_ROOT, "mikraot", `v${PROCESSING_VERSION}`, `${safeFileName(ref)}.json`);
   return cached(file, async () => {
     const format = await formatters();
-    const ref = commentator.ref(book, chapter);
+    const name = nameFromPrefix(refPrefix);
     let response: SefariaV3Response;
     try {
       response = await fetchSefariaText(ref);
     } catch (e: any) {
-      return {id: commentatorId, verses: [], error: e.message ?? String(e)};
+      return {id: refPrefix, verses: [], error: e.message ?? String(e)};
     }
     const he = version(response, "he");
     const en = version(response, "en");
     const heVerses: any[] = Array.isArray(he?.text) ? he!.text : [];
     const enVerses: any[] = Array.isArray(en?.text) ? en!.text : [];
+    const flat = [...heVerses, ...enVerses].every(x => !Array.isArray(x));
     const verseCount = Math.max(heVerses.length, enVerses.length);
     const verses: MikraotComment[][] = [];
     for (let v = 0; v < verseCount; v++) {
-      if (commentator.isTargum) {
+      if (flat) {
         const heText = asStringArray(heVerses[v]).join(" ");
         const enText = asStringArray(enVerses[v]).join(" ");
-        verses.push(heText || enText ? [{
+        verses.push(heText.trim() || enText.trim() ? [{
           ref: `${ref}:${v + 1}`,
           he: format.verseHebrew(heText),
           en: format.english(enText),
@@ -224,35 +236,32 @@ export async function mikraotCommentary(
         if (!heText.trim() && !enText.trim()) continue;
         comments.push({
           ref: `${ref}:${v + 1}:${c + 1}`,
-          he: heText ? format.hebrew(heText, commentator.englishName) : "",
+          he: heText ? format.hebrew(heText, name) : "",
           en: enText ? format.english(enText) : "",
         });
       }
       verses.push(comments);
     }
-    return {
-      id: commentatorId,
-      verses,
-      heVersion: he?.versionTitle,
-      enVersion: en?.versionTitle,
-    };
+    return {id: refPrefix, verses, heVersion: he?.versionTitle, enVersion: en?.versionTitle};
   });
 }
 
 export async function mikraotChapter(
   book: string,
   chapter: number,
-  commentatorIds: string[],
+  refPrefixes: string[],
+  translationVersion?: string,
 ): Promise<MikraotChapter> {
   const info = tanakhBook(book);
   if (!info) throw new Error(`Unknown Tanakh book: ${book}`);
   if (!(chapter >= 1 && chapter <= info.chapters)) throw new Error(`No chapter ${chapter} in ${book}`);
 
+  const versionKey = translationVersion ? `.${safeFileName(translationVersion).slice(0, 60)}` : "";
   const file = path.join(
-    PRINT_CACHE_ROOT, "mikraot", `v${PROCESSING_VERSION}`, `${safeFileName(book)}.${chapter}.text.json`);
+    PRINT_CACHE_ROOT, "mikraot", `v${PROCESSING_VERSION}`, `${safeFileName(book)}.${chapter}${versionKey}.text.json`);
   const base = await cached(file, async () => {
     const format = await formatters();
-    const response = await fetchSefariaText(`${book} ${chapter}`);
+    const response = await fetchSefariaText(`${book} ${chapter}`, translationVersion);
     const he = asStringArray(version(response, "he")?.text);
     const en = asStringArray(version(response, "en")?.text);
     return {
@@ -267,17 +276,88 @@ export async function mikraotChapter(
   });
 
   const commentaries: Record<string, MikraotCommentary> = {};
-  await Promise.all(commentatorIds.map(async id => {
-    commentaries[id] = await mikraotCommentary(book, chapter, id);
+  await Promise.all(refPrefixes.map(async prefix => {
+    commentaries[prefix] = await mikraotCommentary(prefix, chapter);
   }));
 
+  return {book, bookHebrew: info.hebrewName, chapter, ...base, commentaries};
+}
+
+const LINKED_REF_RE = /^(.+?)(\d+):(\d+)(?::\d+)?(?:-[\d:]+)?$/;
+
+/**
+ * Commentaries and targumim that Sefaria links to a chapter and that are organized by chapter and
+ * verse (so they can be fetched as `${refPrefix}${chapter}`), most-linked first.
+ */
+export async function mikraotSources(book: string, chapter: number): Promise<AvailableSource[]> {
+  const file = path.join(PRINT_CACHE_ROOT, "mikraot", "sources", `${safeFileName(book)}.${chapter}.json`);
+  return cached(file, async () => {
+    if (offline) throw new Error(`Offline and not cached: sources for ${book} ${chapter}`);
+    const url = `https://www.sefaria.org/api/links/${encodeURIComponent(`${book}.${chapter}`.replace(/ /g, "_"))}?with_text=0`;
+    const links: any[] = await (await fetch(url, FETCH_OPTIONS)).json();
+    const sources = new Map<string, AvailableSource>();
+    for (const link of links) {
+      if (link.category !== "Commentary" && link.category !== "Targum") continue;
+      const match = String(link.ref ?? "").match(LINKED_REF_RE);
+      if (!match || parseInt(match[2]) !== chapter) continue;
+      // The commentary's verse must be the verse it's linked to (i.e. it is organized by verse).
+      const anchorVerse = String(link.anchorRef ?? "").match(/:(\d+)/)?.[1];
+      if (anchorVerse !== match[3]) continue;
+      const refPrefix = match[1];
+      const existing = sources.get(refPrefix);
+      if (existing) {
+        existing.count++;
+      } else {
+        sources.set(refPrefix, {
+          refPrefix,
+          englishName: link.collectiveTitle?.en ?? link.index_title ?? refPrefix,
+          hebrewName: link.collectiveTitle?.he ?? "",
+          category: link.category,
+          count: 1,
+        });
+      }
+    }
+    // A single matching link is usually a coincidence of an unrelated structure.
+    return Array.from(sources.values()).filter(x => x.count > 1).sort((a, b) => b.count - a.count);
+  });
+}
+
+/** Checks that `${refPrefix}${chapter}` is a fetchable text, returning its names. */
+export async function probeSource(refPrefix: string, chapter: number): Promise<AvailableSource> {
+  const response = await fetchSefariaText(`${refPrefix}${chapter}`);
+  const he = version(response, "he");
+  const en = version(response, "en");
+  if (!he && !en) throw new Error(`No text found for ${refPrefix}${chapter}`);
   return {
-    book,
-    bookHebrew: info.hebrewName,
-    chapter,
-    ...base,
-    commentaries,
+    refPrefix,
+    englishName: nameFromPrefix(refPrefix),
+    hebrewName: (response.heRef ?? "").replace(/\s+\S+$/, ""),
+    category: "Commentary",
+    count: 0,
   };
+}
+
+export interface TranslationVersion {
+  versionTitle: string;
+  label: string;
+  language: string;
+}
+
+export async function translationVersions(book: string): Promise<TranslationVersion[]> {
+  const file = path.join(PRINT_CACHE_ROOT, "mikraot", "versions", `${safeFileName(book)}.json`);
+  return cached(file, async () => {
+    if (offline) throw new Error(`Offline and not cached: versions of ${book}`);
+    const url = `https://www.sefaria.org/api/texts/versions/${encodeURIComponent(book.replace(/ /g, "_"))}`;
+    const versions: any[] = await (await fetch(url, FETCH_OPTIONS)).json();
+    return versions
+      .filter(x => x.language !== "he")
+      .sort((a, b) => (b.priority ?? 0) - (a.priority ?? 0))
+      .map(x => ({
+        versionTitle: x.versionTitle,
+        label: x.shortVersionTitle || x.versionTitle,
+        language: x.actualLanguage ?? x.language,
+      }));
+  });
 }
 
 // ---------------------------------------------------------------------------------------------

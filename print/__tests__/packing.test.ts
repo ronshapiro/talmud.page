@@ -5,6 +5,9 @@ import {
   fillColumns,
   fillColumnsBalanced,
   maxLinesFitting,
+  PAIR_START,
+  fillPairs,
+  rebasePair,
 } from "../layout/packing";
 
 function block(lineCount: number, lineHeight = 10) {
@@ -67,5 +70,41 @@ describe("packing", () => {
     const result = fillColumnsBalanced([item(10)], START, 2, 200);
     expect(result.columns.map(x => x.height)).toEqual([50, 50]);
     expect(result.end).toEqual({item: 1, line: 0});
+  });
+});
+
+describe("pairs", () => {
+  const pair = (a: number, b: number, extra = {}) => ({
+    lanes: [block(a), block(b)],
+    shifts: [0, 0],
+    spaceBefore: 5,
+    data: {lineOffsets: [0, 0]},
+    ...extra,
+  });
+
+  test("rows take the taller lane's height", () => {
+    const result = fillPairs([pair(2, 4), pair(1, 1)], PAIR_START, 1000);
+    expect(result.rows.map(x => x.height)).toEqual([40, 10]);
+    expect(result.height).toBe(55);
+  });
+
+  test("lanes split independently with widow/orphan control", () => {
+    const result = fillPairs([pair(3, 8)], PAIR_START, 50);
+    expect(result.rows[0].to).toEqual([3, 5]);
+    expect(result.end).toEqual({item: 0, lines: [3, 5]});
+    const next = fillPairs([pair(3, 8)], result.end, 100);
+    expect(next.rows[0].from).toEqual([3, 5]);
+    expect(next.end).toEqual({item: 1, lines: []});
+  });
+
+  test("shifts count toward the row height", () => {
+    const result = fillPairs([{...pair(1, 1), shifts: [0, 3]}], PAIR_START, 100);
+    expect(result.rows[0].height).toBe(13);
+  });
+
+  test("rebasePair", () => {
+    const rebased = rebasePair(pair(3, 8), [3, 5]);
+    expect(rebased.lanes[1]!.lines.map(x => x.bottom)).toEqual([10, 20, 30]);
+    expect(rebased.data.lineOffsets).toEqual([3, 5]);
   });
 });

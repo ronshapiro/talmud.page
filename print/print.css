@@ -222,7 +222,10 @@ body.print-app {
   text-indent: 0 !important;
 }
 
-.blk.justify-last {
+/* The last line of a paragraph that continues in the next column stays justified. */
+.blk .last-line {
+  display: block;
+  text-indent: 0;
   text-align-last: justify;
 }
 
@@ -757,12 +760,7 @@ body.print-app {
   color: #6b6458;
 }
 
-/* Only justified blocks keep their last line justified when continued on the next column/page. */
-.blk.justify-last.align-start,
-.blk.justify-last.align-center,
-.blk.justify-last.align-end {
-  text-align-last: auto;
-}
+
 
 .siddur .sd-title-page {
   margin: auto;
@@ -865,4 +863,146 @@ body.print-app {
 
 .siddur .sd-en.solo {
   line-height: 1.42;
+}
+
+/* Mikraot: English set with commentary (stacked / side by side) and with the verses. */
+.mikraot .mg-comment-en {
+  font-family: var(--english-font);
+  font-size: var(--english-size);
+  line-height: 1.32;
+  text-align: justify;
+  hyphens: auto;
+  direction: ltr;
+  color: #34302a;
+}
+
+.mikraot .mg-main-en {
+  font-family: var(--english-font);
+  font-size: calc(var(--english-size) * 1.25);
+  line-height: 1.45;
+  text-align: justify;
+  hyphens: auto;
+  direction: ltr;
+  color: #2b2925;
+}
+
+.mikraot .mg-main-en .mg-para + .mg-para {
+  margin-top: 0.35em;
+}
+
+.mikraot .mg-envnum {
+  font-size: 0.7em;
+  font-weight: 600;
+  color: #7a1f1f;
+  vertical-align: 0.3em;
+  line-height: 0;
+  margin-inline-end: 0.2em;
+}
+
+.mikraot .mg-chapter-en {
+  text-align: center;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+  color: #7a1f1f;
+  margin: 0 0 0.25em;
+}
+
+.mikraot .mg-chapter .mg-chapter-label {
+  letter-spacing: 0.1em;
+}
+
+.mikraot .mg-chapter {
+  font-size: 1em;
+  color: inherit;
+}
+
+.mikraot .mg-main-area.below {
+  flex-direction: column;
+  gap: 0;
+}
+
+.mikraot .pair-row {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+/* Mikraot settings: commentary list */
+.commentator-row {
+  border: 1px solid #e3ddd0;
+  border-radius: 4px;
+  background: white;
+  padding: 4px 6px;
+  margin: 4px 0;
+}
+
+.commentator-head {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.commentator-head .name {
+  flex: 1;
+}
+
+.commentator-controls {
+  display: flex;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.commentator-controls select {
+  flex: 1;
+  min-width: 0;
+}
+
+.commentator-details {
+  margin-top: 4px;
+  padding-top: 4px;
+  border-top: 1px dashed #e3ddd0;
+}
+
+.print-panel button.link {
+  border: none;
+  background: none;
+  padding: 2px 4px;
+  text-align: start;
+  cursor: pointer;
+}
+
+.add-commentary input {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 6px;
+}
+
+.add-list {
+  display: flex;
+  flex-direction: column;
+  max-height: 260px;
+  overflow-y: auto;
+  border: 1px solid #e3ddd0;
+  border-top: none;
+  background: white;
+}
+
+.add-list button.link:hover {
+  background: #f4efe4;
+}
+
+.label-style {
+  margin: 4px 0;
+}
+
+.label-style summary {
+  cursor: pointer;
+  color: #444;
+}
+
+.mikraot .mg-envlabel {
+  font-weight: 600;
+  color: #7a1f1f;
+  font-size: 0.9em;
 }
