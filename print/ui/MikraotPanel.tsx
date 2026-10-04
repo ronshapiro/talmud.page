@@ -10,9 +10,13 @@ import {
   LabelStyle,
   MainEnglishMode,
   MikraotDocument,
+  MikraotSection,
+  SectionRange,
   Tier,
-  defaultCommentatorConfigs,
+  defaultSection,
+  newId,
 } from "../model/documents";
+import {parshiyotForBook, sectionBounds, sectionLabel} from "../model/sections";
 import {fontsForScript} from "../model/fonts";
 import {
   AvailableSource,
@@ -25,10 +29,12 @@ import {
 import {NumberInput, PageSettingsEditor} from "./Chrome";
 
 type Update = (updater: (doc: MikraotDocument) => MikraotDocument) => void;
+type SectionUpdate = (updater: (section: MikraotSection) => MikraotSection) => void;
 
-function commentatorName(doc: MikraotDocument, id: string): string {
-  const config = doc.commentators.find(x => x.id === id) ?? {id};
-  return resolveCommentator(config, doc.book)?.englishName ?? id;
+function commentatorName(doc: MikraotDocument, section: MikraotSection, id: string): string {
+  const config = section.commentators.find(x => x.id === id) ?? {id};
+  const resolved = resolveCommentator(config, doc.book);
+  return (doc.hebrewOnly ? resolved?.hebrewName : resolved?.englishName) ?? id;
 }
 
 function findComment(chapters: MikraotChapter[] | undefined, ref: string) {
@@ -63,9 +69,13 @@ function pickFile(): Promise<string> {
   });
 }
 
-function CurationPanel({doc, update, chapters, selectedRef, setSelectedRef}: {
+function CurationPanel({
+  doc, update, section, sectionIndex, chapters, selectedRef, setSelectedRef,
+}: {
   doc: MikraotDocument;
   update: Update;
+  section: MikraotSection;
+  sectionIndex: number;
   chapters?: MikraotChapter[];
   selectedRef?: string;
   setSelectedRef: (ref: string | undefined) => void;
@@ -77,7 +87,7 @@ function CurationPanel({doc, update, chapters, selectedRef, setSelectedRef}: {
 
   const importCuration = async () => {
     try {
-      const {doc: next, warnings} = applyCuration(doc, JSON.parse(await pickFile()));
+      const {doc: next, warnings} = applyCuration(doc, sectionIndex, JSON.parse(await pickFile()));
       update(() => next);
       if (warnings.length > 0) {
         // eslint-disable-next-line no-alert
@@ -96,7 +106,7 @@ function CurationPanel({doc, update, chapters, selectedRef, setSelectedRef}: {
         ? (
           <>
             <div className="hint">
-              {commentatorName(doc, selected.commentator)} on {selected.verse}
+              {commentatorName(doc, section, selected.commentator)} · {selected.verse}
               {" · "}
               <button onClick={() => setSelectedRef(undefined)}>deselect</button>
             </div>
@@ -132,16 +142,18 @@ function CurationPanel({doc, update, chapters, selectedRef, setSelectedRef}: {
                   set({maxLines: Number.isNaN(parsed) ? undefined : parsed});
                 }} />
             </div>
-            <div className="row">
-              <span>English note</span>
-              <select
-                value={override.showEnglish === undefined ? "" : String(override.showEnglish)}
-                onChange={e => set({showEnglish: e.target.value === "" ? undefined : e.target.value === "true"})}>
-                <option value="">(commentator default)</option>
-                <option value="true">Show</option>
-                <option value="false">Hide</option>
-              </select>
-            </div>
+            {doc.hebrewOnly ? null : (
+              <div className="row">
+                <span>English</span>
+                <select
+                  value={override.showEnglish === undefined ? "" : String(override.showEnglish)}
+                  onChange={e => set({showEnglish: e.target.value === "" ? undefined : e.target.value === "true"})}>
+                  <option value="">(commentator default)</option>
+                  <option value="true">Show</option>
+                  <option value="false">Hide</option>
+                </select>
+              </div>
+            )}
           </>
         )
         : <div className="hint">Click a comment on a page to hide it or change its prominence.</div>}
@@ -149,7 +161,8 @@ function CurationPanel({doc, update, chapters, selectedRef, setSelectedRef}: {
       <div className="button-row">
         <button
           onClick={() => chapters && downloadFile(
-            `curation-request-${doc.book}-${doc.startChapter}.json`, buildCurationRequest(doc, chapters))}
+            `curation-request-${doc.book}-${sectionLabel(doc, section, false)}.json`,
+            buildCurationRequest(doc, section, chapters))}
           title="Inventory of every comment, for an automated curation tool">
           Export comments
         </button>
@@ -214,19 +227,19 @@ const TIERS: {id: Tier; label: string}[] = [
   {id: 2, label: "Secondary"},
 ];
 
-function CommentatorRow({doc, config, index, update}: {
+function CommentatorRow({doc, config, index, updateSection}: {
   doc: MikraotDocument;
   config: CommentatorConfig;
   index: number;
-  update: Update;
+  updateSection: SectionUpdate;
 }) {
   const [open, setOpen] = useState(false);
   const resolved = resolveCommentator(config, doc.book);
-  const set = (change: Partial<CommentatorConfig>) => update(x => ({
+  const set = (change: Partial<CommentatorConfig>) => updateSection(x => ({
     ...x,
     commentators: x.commentators.map(c => (c.id === config.id ? {...c, ...change} : c)),
   }));
-  const move = (delta: number) => update(x => {
+  const move = (delta: number) => updateSection(x => {
     const active = x.commentators.filter(c => c.tier > 0);
     const target = active[active.findIndex(c => c.id === config.id) + delta];
     if (!target) return x;
@@ -244,7 +257,8 @@ function CommentatorRow({doc, config, index, update}: {
           {open ? "▾" : "▸"}
         </button>
         <span className="name">
-          {resolved?.englishName ?? config.id} <span className="hint">{resolved?.hebrewName}</span>
+          {doc.hebrewOnly ? null : `${resolved?.englishName ?? config.id} `}
+          <span className={doc.hebrewOnly ? "" : "hint"}>{resolved?.hebrewName}</span>
         </span>
         <button onClick={() => move(-1)} title="Move up" disabled={index === 0}>↑</button>
         <button onClick={() => move(1)} title="Move down">↓</button>
@@ -254,13 +268,15 @@ function CommentatorRow({doc, config, index, update}: {
         <select value={config.tier} onChange={e => set({tier: parseInt(e.target.value) as Tier})}>
           {TIERS.map(t => <option key={t.id} value={t.id}>{t.label}</option>)}
         </select>
-        <select
-          value={config.english}
-          onChange={e => set({english: e.target.value as EnglishMode})}>
-          {ENGLISH_MODES.map(m => <option key={m.id} value={m.id}>{m.label}</option>)}
-        </select>
+        {doc.hebrewOnly ? null : (
+          <select
+            value={config.english}
+            onChange={e => set({english: e.target.value as EnglishMode})}>
+            {ENGLISH_MODES.map(m => <option key={m.id} value={m.id}>{m.label}</option>)}
+          </select>
+        )}
       </div>
-      {config.english === "side-by-side"
+      {config.english === "side-by-side" && !doc.hebrewOnly
         ? (
           <div className="hint">
             <label htmlFor={`wrap-${config.id}`}>
@@ -291,19 +307,23 @@ function CommentatorRow({doc, config, index, update}: {
                 placeholder={doc.layout.maxCommentLines ? String(doc.layout.maxCommentLines) : "none"}
                 onChange={maxLines => set({maxLines})} />
             </Row>
-            <Row label="English font">
-              <FontSelect
-                value={config.englishFont}
-                script="latin"
-                general="(general)"
-                onChange={englishFont => set({englishFont})} />
-            </Row>
-            <Row label="English size (pt)">
-              <OptionalSize
-                value={config.englishSizePt}
-                placeholder={String(config.english === "footnote" ? doc.typography.notesSizePt : doc.typography.englishSizePt)}
-                onChange={englishSizePt => set({englishSizePt})} />
-            </Row>
+            {doc.hebrewOnly ? null : (
+              <>
+                <Row label="English font">
+                  <FontSelect
+                    value={config.englishFont}
+                    script="latin"
+                    general="(general)"
+                    onChange={englishFont => set({englishFont})} />
+                </Row>
+                <Row label="English size (pt)">
+                  <OptionalSize
+                    value={config.englishSizePt}
+                    placeholder={String(config.english === "footnote" ? doc.typography.notesSizePt : doc.typography.englishSizePt)}
+                    onChange={englishSizePt => set({englishSizePt})} />
+                </Row>
+              </>
+            )}
           </div>
         ) : null}
     </div>
@@ -324,18 +344,23 @@ function fetchSources(book: string, chapter: number): Promise<AvailableSource[]>
 }
 
 /** Search and add any commentary available for this chapter on Sefaria. */
-function AddCommentary({doc, update}: {doc: MikraotDocument; update: Update}) {
+function AddCommentary({doc, section, updateSection}: {
+  doc: MikraotDocument;
+  section: MikraotSection;
+  updateSection: SectionUpdate;
+}) {
   const [query, setQuery] = useState("");
   const [sources, setSources] = useState<AvailableSource[]>([]);
   const [probeError, setProbeError] = useState<string>();
+  const chapter = sectionBounds(doc.book, section.range).startChapter;
   useEffect(() => {
-    fetchSources(doc.book, doc.startChapter).then(setSources);
-  }, [doc.book, doc.startChapter]);
+    fetchSources(doc.book, chapter).then(setSources);
+  }, [doc.book, chapter]);
 
   // Registry commentators first (they have tuned defaults), then everything Sefaria links.
   const candidates = useMemo(() => {
-    const active = new Set(doc.commentators.filter(x => x.tier > 0).map(x => x.id));
-    const registry = doc.commentators
+    const active = new Set(section.commentators.filter(x => x.tier > 0).map(x => x.id));
+    const registry = section.commentators
       .filter(x => x.tier === 0 && COMMENTATORS.some(c => c.id === x.id && !c.isTargum))
       .map(x => resolveCommentator(x, doc.book)!);
     const registryPrefixes = new Set(registry.map(x => x.refPrefix));
@@ -349,7 +374,7 @@ function AddCommentary({doc, update}: {doc: MikraotDocument; update: Update}) {
         isTargum: false,
       }));
     return [...registry, ...dynamic].filter(x => !active.has(x.id));
-  }, [doc.commentators, doc.book, sources]);
+  }, [section.commentators, doc.book, sources]);
 
   const lower = query.trim().toLowerCase();
   const matches = candidates.filter(x => !lower
@@ -359,7 +384,7 @@ function AddCommentary({doc, update}: {doc: MikraotDocument; update: Update}) {
 
   type Candidate = {id: string; englishName: string; hebrewName: string; refPrefix: string};
   const add = (candidate: Candidate) => {
-    update(x => {
+    updateSection(x => {
       const existing = x.commentators.find(c => c.id === candidate.id);
       const others = x.commentators.filter(c => c.id !== candidate.id);
       const config: CommentatorConfig = existing
@@ -386,7 +411,7 @@ function AddCommentary({doc, update}: {doc: MikraotDocument; update: Update}) {
     const title = query.trim();
     // Accept "Abarbanel on Torah, Genesis" (chapter appended) or a full prefix.
     const prefix = /\s$/.test(query) || /\d$/.test(title) ? query : `${title} `;
-    const response = await fetch(`/api/print/mikraot-probe/${doc.startChapter}?p=${encodeURIComponent(prefix)}`);
+    const response = await fetch(`/api/print/mikraot-probe/${chapter}?p=${encodeURIComponent(prefix)}`);
     const json = await response.json();
     if (!response.ok) {
       setProbeError(json.error ?? "Not found");
@@ -406,11 +431,11 @@ function AddCommentary({doc, update}: {doc: MikraotDocument; update: Update}) {
           <div className="add-list">
             {matches.slice(0, 40).map(x => (
               <button key={x.id} className="link" onClick={() => add(x)}>
-                {x.englishName} <span className="hint">{x.hebrewName}</span>
+                {doc.hebrewOnly ? x.hebrewName : <>{x.englishName} <span className="hint">{x.hebrewName}</span></>}
               </button>
             ))}
             <button className="link" onClick={addByTitle} title="Fetch this Sefaria title by chapter">
-              Load “{query.trim()} {doc.startChapter}” from Sefaria…
+              Load “{query.trim()} {chapter}” from Sefaria…
             </button>
             {probeError ? <div className="print-error">{probeError}</div> : null}
           </div>
@@ -504,93 +529,283 @@ const MAIN_ENGLISH: {id: MainEnglishMode; label: string}[] = [
   {id: "none", label: "None"},
 ];
 
-export function MikraotSettings({doc, update, chapters, selectedRef, setSelectedRef}: {
+/** Choosing which section is being edited, and adding, duplicating, reordering or removing them. */
+function SectionsEditor({doc, update, activeSection, setActiveSection}: {
   doc: MikraotDocument;
   update: Update;
+  activeSection: number;
+  setActiveSection: (index: number) => void;
+}) {
+  const section = doc.sections[activeSection];
+  const setSections = (sections: MikraotSection[], active: number) => {
+    update(x => ({...x, sections}));
+    setActiveSection(active);
+  };
+  const move = (delta: number) => {
+    const target = activeSection + delta;
+    if (target < 0 || target >= doc.sections.length) return;
+    const list = doc.sections.slice();
+    [list[activeSection], list[target]] = [list[target], list[activeSection]];
+    setSections(list, target);
+  };
+  return (
+    <>
+      <div className="section-tabs">
+        {doc.sections.map((x, i) => (
+          <button
+            key={x.id}
+            className={i === activeSection ? "active" : ""}
+            onClick={() => setActiveSection(i)}
+            title={x.showMainText ? "" : "Without the source text"}>
+            {i + 1}. {sectionLabel(doc, x, true)}{x.showMainText ? "" : " ✱"}
+          </button>
+        ))}
+      </div>
+      <div className="button-row">
+        <button
+          onClick={() => setSections(
+            [...doc.sections, defaultSection(doc.book, section.range)], doc.sections.length)}>
+          + New
+        </button>
+        <button
+          onClick={() => setSections(
+            [...doc.sections, {...section, id: newId("section"), title: undefined}], doc.sections.length)}
+          title="Repeat this range (e.g. again with more commentaries)">
+          Duplicate
+        </button>
+        <button onClick={() => move(-1)} disabled={activeSection === 0}>↑</button>
+        <button onClick={() => move(1)} disabled={activeSection === doc.sections.length - 1}>
+          ↓
+        </button>
+        <button
+          disabled={doc.sections.length === 1}
+          onClick={() => setSections(
+            doc.sections.filter((_, i) => i !== activeSection), Math.max(0, activeSection - 1))}>
+          Remove
+        </button>
+      </div>
+    </>
+  );
+}
+
+function RangeEditor({doc, section, updateSection}: {
+  doc: MikraotDocument;
+  section: MikraotSection;
+  updateSection: SectionUpdate;
+}) {
+  const info = tanakhBook(doc.book);
+  const parshiyot = parshiyotForBook(doc.book);
+  const {range} = section;
+  const setRange = (next: SectionRange) => updateSection(x => ({...x, range: next}));
+  return (
+    <>
+      {parshiyot.length > 0
+        ? (
+          <Row label="Split by">
+            <select
+              value={range.kind}
+              onChange={e => setRange(e.target.value === "parsha"
+                ? {kind: "parsha", parsha: parshiyot[0].id}
+                : {kind: "chapters", startChapter: 1, endChapter: 1})}>
+              <option value="chapters">Chapters</option>
+              <option value="parsha">Parsha</option>
+            </select>
+          </Row>
+        ) : null}
+      {range.kind === "parsha"
+        ? (
+          <Row label="Parsha">
+            <select value={range.parsha} onChange={e => setRange({kind: "parsha", parsha: e.target.value})}>
+              {parshiyot.map(x => (
+                <option key={x.id} value={x.id}>
+                  {doc.hebrewOnly ? x.hebrewName : `${x.name} · ${x.hebrewName}`}
+                </option>
+              ))}
+            </select>
+          </Row>
+        )
+        : (
+          <Row label="Chapters">
+            <span>
+              <NumberInput
+                value={range.startChapter}
+                step={1}
+                min={1}
+                max={info?.chapters}
+                onChange={v => setRange({kind: "chapters", startChapter: v, endChapter: Math.max(v, range.endChapter)})} />
+              {" – "}
+              <NumberInput
+                value={range.endChapter}
+                step={1}
+                min={range.startChapter}
+                max={info?.chapters}
+                onChange={v => setRange({...range, endChapter: Math.max(range.startChapter, v)})} />
+            </span>
+          </Row>
+        )}
+    </>
+  );
+}
+
+const LINE_HEIGHTS: [keyof MikraotDocument["typography"], string][] = [
+  ["mainLineHeight", "Main text"],
+  ["targumLineHeight", "Targum"],
+  ["mainEnglishLineHeight", "Verse translation"],
+  ["lineHeight", "Commentary"],
+  ["commentaryEnglishLineHeight", "Commentary English"],
+  ["notesLineHeight", "Notes"],
+  ["headingLineHeight", "Commentary headings"],
+];
+
+export function MikraotSettings({
+  doc, update, activeSection, setActiveSection, chapters, selectedRef, setSelectedRef,
+}: {
+  doc: MikraotDocument;
+  update: Update;
+  activeSection: number;
+  setActiveSection: (index: number) => void;
   chapters?: MikraotChapter[];
   selectedRef?: string;
   setSelectedRef: (ref: string | undefined) => void;
 }): React.ReactElement {
-  const info = tanakhBook(doc.book);
+  const section = doc.sections[activeSection];
+  const english = !doc.hebrewOnly;
   const setTypography = (key: keyof MikraotDocument["typography"], value: any) => (
     update(x => ({...x, typography: {...x.typography, [key]: value}})));
   const setLayout = (key: keyof MikraotDocument["layout"], value: any) => (
     update(x => ({...x, layout: {...x.layout, [key]: value}})));
-  const active = doc.commentators.filter(
+  const updateSection: SectionUpdate = updater => update(x => ({
+    ...x,
+    sections: x.sections.map((s, i) => (i === activeSection ? updater(s) : s)),
+  }));
+  const active = section.commentators.filter(
     x => x.tier > 0 && !resolveCommentator(x, doc.book)?.isTargum);
+  const isTorah = tanakhBook(doc.book)?.section === "Torah";
 
   return (
     <div className="print-panel no-print">
-      <CurationPanel
-        doc={doc}
-        update={update}
-        chapters={chapters}
-        selectedRef={selectedRef}
-        setSelectedRef={setSelectedRef} />
+      <Row label="Hebrew only (no English anywhere)">
+        <input type="checkbox" checked={doc.hebrewOnly} onChange={e => update(x => ({...x, hebrewOnly: e.target.checked}))} />
+      </Row>
 
-      <h3>Text</h3>
-      <Row label="Book">
+      <h3>{english ? "Book" : "ספר"}</h3>
+      <Row label={english ? "Book" : "ספר"}>
         <select
           value={doc.book}
           onChange={e => {
             const book = e.target.value;
-            const commentators = defaultCommentatorConfigs(book);
             update(x => ({
-              ...x,
-              book,
-              startChapter: 1,
-              endChapter: 1,
-              commentators,
-              translationVersion: undefined,
+              ...x, book, sections: [defaultSection(book)], translationVersion: undefined,
             }));
+            setActiveSection(0);
           }}>
           {TANAKH_BOOKS.map(x => (
-            <option key={x.name} value={x.name}>{x.name} · {x.hebrewName}</option>
+            <option key={x.name} value={x.name}>{english ? `${x.name} · ${x.hebrewName}` : x.hebrewName}</option>
           ))}
         </select>
       </Row>
-      <Row label="Chapters">
-        <span>
-          <NumberInput
-            value={doc.startChapter}
-            step={1}
-            min={1}
-            max={info?.chapters}
-            onChange={v => update(x => ({
-              ...x,
-              startChapter: v,
-              endChapter: Math.max(v, x.endChapter),
-            }))} />
-          {" – "}
-          <NumberInput
-            value={doc.endChapter}
-            step={1}
-            min={doc.startChapter}
-            max={info?.chapters}
-            onChange={v => update(x => ({...x, endChapter: Math.max(x.startChapter, v)}))} />
-        </span>
-      </Row>
-      <Row label="Translation">
-        <TranslationSelect doc={doc} update={update} />
-      </Row>
-      <Row label="Translation placement">
-        <select value={doc.layout.mainEnglish} onChange={e => setLayout("mainEnglish", e.target.value)}>
-          {MAIN_ENGLISH.map(x => <option key={x.id} value={x.id}>{x.label}</option>)}
-        </select>
-      </Row>
+      {english
+        ? (
+          <Row label="Translation">
+            <TranslationSelect doc={doc} update={update} />
+          </Row>
+        ) : null}
       <Row label="Trope (cantillation)">
         <input type="checkbox" checked={doc.typography.showTrope} onChange={e => setTypography("showTrope", e.target.checked)} />
       </Row>
       <Row label="Targum beside the text">
         <input type="checkbox" checked={doc.layout.showTargum} onChange={e => setLayout("showTargum", e.target.checked)} />
       </Row>
+      {isTorah
+        ? (
+          <Row label="Label aliyot">
+            <input type="checkbox" checked={doc.showAliyot} onChange={e => update(x => ({...x, showAliyot: e.target.checked}))} />
+          </Row>
+        ) : null}
 
-      <h3>Commentaries</h3>
-      <div className="hint">Order sets the reading order. Primary commentaries are set larger, in fewer columns.</div>
-      {active.map((config, index) => (
-        <CommentatorRow key={config.id} doc={doc} config={config} index={index} update={update} />
-      ))}
-      <AddCommentary doc={doc} update={update} />
+      <h3>Sections</h3>
+      <div className="hint">
+        Each section renders a range of the book; repeat a range to show it again with other
+        commentaries.
+      </div>
+      <SectionsEditor
+        doc={doc}
+        update={update}
+        activeSection={activeSection}
+        setActiveSection={setActiveSection} />
+      <div className="section-box">
+        <RangeEditor doc={doc} section={section} updateSection={updateSection} />
+        <Row label="Title (optional)">
+          <input
+            value={section.title ?? ""}
+            placeholder={sectionLabel(doc, {...section, title: undefined}, true)}
+            onChange={e => updateSection(x => ({...x, title: e.target.value || undefined}))} />
+        </Row>
+        <Row label="Show the source text">
+          <input
+            type="checkbox"
+            checked={section.showMainText}
+            onChange={e => updateSection(x => ({...x, showMainText: e.target.checked}))} />
+        </Row>
+        {english && section.showMainText
+          ? (
+            <Row label="Translation placement">
+              <select
+                value={section.mainEnglish ?? doc.layout.mainEnglish}
+                onChange={e => {
+                  const mainEnglish = e.target.value as MainEnglishMode;
+                  updateSection(x => ({...x, mainEnglish}));
+                }}>
+                {MAIN_ENGLISH.map(x => <option key={x.id} value={x.id}>{x.label}</option>)}
+              </select>
+            </Row>
+          ) : null}
+
+        <h3>Commentaries</h3>
+        <div className="hint">Order sets the reading order. Primary commentaries are set larger, in fewer columns.</div>
+        {active.map((config, index) => (
+          <CommentatorRow
+            key={config.id}
+            doc={doc}
+            config={config}
+            index={index}
+            updateSection={updateSection} />
+        ))}
+        <AddCommentary doc={doc} section={section} updateSection={updateSection} />
+      </div>
+
+      <CurationPanel
+        doc={doc}
+        update={update}
+        section={section}
+        sectionIndex={activeSection}
+        chapters={chapters}
+        selectedRef={selectedRef}
+        setSelectedRef={setSelectedRef} />
+
+      {english
+        ? (
+          <>
+            <h3>English labels</h3>
+            {([
+              ["runningHead", "Running heads"],
+              ["chapterHeadings", "Chapter headings in the translation"],
+              ["sectionTitles", "Section titles"],
+              ["continuations", "Continuations title"],
+              ["notes", "Note labels (else Hebrew names)"],
+            ] as const).map(([key, label]) => (
+              <Row label={label} key={key}>
+                <input
+                  type="checkbox"
+                  checked={doc.englishLabels[key]}
+                  onChange={e => {
+                    const {checked} = e.target;
+                    update(x => ({...x, englishLabels: {...x.englishLabels, [key]: checked}}));
+                  }} />
+              </Row>
+            ))}
+          </>
+        ) : null}
 
       <h3>Verse and chapter markers</h3>
       <LabelStyleEditor
@@ -612,10 +827,7 @@ export function MikraotSettings({doc, update, chapters, selectedRef, setSelected
       <h3>General typography</h3>
       <div className="hint">Used for every commentary that doesn&apos;t set its own.</div>
       <Row label="Main text font">
-        <FontSelect
-          value={doc.typography.mainFont}
-          script="hebrew"
-          onChange={font => setTypography("mainFont", font)} />
+        <FontSelect value={doc.typography.mainFont} script="hebrew" onChange={font => setTypography("mainFont", font)} />
       </Row>
       <Row label="Commentary font">
         <FontSelect
@@ -623,31 +835,53 @@ export function MikraotSettings({doc, update, chapters, selectedRef, setSelected
           script="hebrew"
           onChange={font => setTypography("commentaryFont", font)} />
       </Row>
-      <Row label="English font">
-        <FontSelect
-          value={doc.typography.englishFont}
-          script="latin"
-          onChange={font => setTypography("englishFont", font)} />
-      </Row>
-      <Row label="Notes font">
-        <FontSelect value={doc.typography.notesFont} script="latin" onChange={font => setTypography("notesFont", font)} />
-      </Row>
+      {english
+        ? (
+          <>
+            <Row label="English font">
+              <FontSelect value={doc.typography.englishFont} script="latin" onChange={font => setTypography("englishFont", font)} />
+            </Row>
+            <Row label="Notes font">
+              <FontSelect value={doc.typography.notesFont} script="latin" onChange={font => setTypography("notesFont", font)} />
+            </Row>
+          </>
+        ) : null}
       {([
-        ["mainSizePt", "Main text size (pt)"],
-        ["tier1SizePt", "Primary commentary (pt)"],
-        ["tier2SizePt", "Secondary commentary (pt)"],
-        ["englishSizePt", "Commentary English (pt)"],
-        ["targumSizePt", "Targum (pt)"],
-        ["notesSizePt", "Notes (pt)"],
-        ["lineHeight", "Commentary line height"],
-      ] as const).map(([key, label]) => (
+        ["mainSizePt", "Main text size (pt)", false],
+        ["tier1SizePt", "Primary commentary (pt)", false],
+        ["tier2SizePt", "Secondary commentary (pt)", false],
+        ["englishSizePt", "Commentary English (pt)", true],
+        ["targumSizePt", "Targum (pt)", false],
+        ["notesSizePt", "Notes (pt)", true],
+      ] as const).filter(entry => english || !entry[2]).map(([key, label]) => (
         <Row label={label} key={key}>
           <NumberInput
             value={doc.typography[key]}
-            step={key === "lineHeight" ? 0.05 : 0.2}
+            step={0.2}
             onChange={v => setTypography(key, v)} />
         </Row>
       ))}
+
+      <h3>Line heights</h3>
+      {LINE_HEIGHTS
+        .filter(([key]) => english || !["mainEnglishLineHeight", "commentaryEnglishLineHeight", "notesLineHeight"].includes(key))
+        .map(([key, label]) => (
+          <Row label={label} key={key}>
+            <NumberInput
+              value={doc.typography[key] as number}
+              step={0.05}
+              onChange={v => setTypography(key, v)} />
+          </Row>
+        ))}
+      {english
+        ? (
+          <Row label="Align side-by-side verse translation lines">
+            <input
+              type="checkbox"
+              checked={doc.typography.alignMainLines}
+              onChange={e => setTypography("alignMainLines", e.target.checked)} />
+          </Row>
+        ) : null}
 
       <h3>Layout</h3>
       {([

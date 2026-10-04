@@ -1,5 +1,8 @@
 # Print layouts
 
+> **What's supported:** see [`PRINT_REQUIREMENTS.md`](../PRINT_REQUIREMENTS.md). Update it with every
+> feature change.
+
 Print-ready, paginated renderings of the texts that talmud.page shows on the web. Two layouts:
 
 1. **Siddur** (`/print/siddur`) — a Koren-Sacks–inspired siddur that emphasizes whitespace and

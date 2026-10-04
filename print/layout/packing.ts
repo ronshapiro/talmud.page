@@ -169,8 +169,9 @@ export function fillColumn<T>(
   }
 
   // keep-with-next: if the column ends right after a keepWithNext item (i.e. the next item didn't
-  // start in this column), push that item to the next column as well, unless it's alone.
-  while (fragments.length > 1) {
+  // start in this column), push that item to the next column as well, unless it's alone in a
+  // column that must make progress.
+  while (fragments.length > (allowEmpty ? 0 : 1)) {
     const last = fragments[fragments.length - 1];
     const nextNotStarted = cursor.item < items.length && cursor.line === 0;
     if (!(last.isLast && last.item.keepWithNext && nextNotStarted)) {

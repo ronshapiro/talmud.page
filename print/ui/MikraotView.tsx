@@ -1,7 +1,8 @@
 import * as React from "react";
 import {useEffect, useState} from "react";
 import {MikraotChapter} from "../model/dataTypes";
-import {MikraotDocument} from "../model/documents";
+import {MikraotDocument, MikraotSection} from "../model/documents";
+import {sectionBounds} from "../model/sections";
 import {fontFamily} from "../model/fonts";
 import {COMMENTATORS_BY_ID, resolveCommentator} from "../model/mikraotCommentators";
 import {
@@ -10,7 +11,7 @@ import {
   PairRowLayout,
   RegionLayout,
   RenderedFragment,
-  paginateMikraot,
+  paginateMikraotDocument,
 } from "../layout/mikraotPaginator";
 import {
   PageFrame,
@@ -55,8 +56,11 @@ function fetchChapter(
   return chapterCache.get(key)!;
 }
 
-function neededCommentators(doc: MikraotDocument): {id: string; refPrefix: string}[] {
-  return doc.commentators
+function neededCommentators(
+  doc: MikraotDocument,
+  section: MikraotSection,
+): {id: string; refPrefix: string}[] {
+  return section.commentators
     .filter(x => x.tier > 0 || (COMMENTATORS_BY_ID[x.id]?.isTargum && doc.layout.showTargum))
     .map(x => resolveCommentator(x, doc.book))
     .filter((x): x is NonNullable<typeof x> => x !== undefined)
@@ -69,7 +73,9 @@ function documentFonts(doc: MikraotDocument): string[] {
   const ids = [
     t.mainFont, t.commentaryFont, t.notesFont, t.englishFont,
     t.verseLabel.font, t.commentLabel.font, t.chapterLabel.font,
-    ...doc.commentators.filter(x => x.tier > 0).flatMap(x => [x.font, x.englishFont]),
+    ...doc.sections.flatMap(x => x.commentators)
+      .filter(x => x.tier > 0)
+      .flatMap(x => [x.font, x.englishFont]),
   ].filter((x): x is string => Boolean(x));
   return Array.from(new Set(ids)).map(x => fontFamily(x).split(",")[0]);
 }
@@ -144,7 +150,10 @@ function Region({region, gap, rules, g}: {
 function MainArea({page, g}: {page: MgPage; g: MikraotLayout["geometry"]}) {
   const hebrew = (
     // eslint-disable-next-line react/no-danger
-    <div className="mg-main" style={{width: g.mainWidth}} dangerouslySetInnerHTML={{__html: page.mainHtml!}} />
+    <div
+      className={g.mainClass}
+      style={{width: g.mainWidth}}
+      dangerouslySetInnerHTML={{__html: page.mainHtml!}} />
   );
   const targum = page.targumHtml
     // eslint-disable-next-line react/no-danger
@@ -153,9 +162,13 @@ function MainArea({page, g}: {page: MgPage; g: MikraotLayout["geometry"]}) {
   const english = page.englishHtml
     ? (
       <div
-        className="mg-main-en"
+        className={g.englishClass}
         lang="en"
-        style={{width: g.englishWidth, marginTop: g.mainEnglish === "below" ? g.stackGap : 0}}
+        style={{
+          ...parseStyle(g.englishMainStyle),
+          width: g.englishWidth,
+          marginTop: g.mainEnglish === "below" ? g.stackGap : 0,
+        }}
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{__html: page.englishHtml}} />
     ) : null;
@@ -206,6 +219,13 @@ function MikraotPageContent({page, layout, doc}: {
         hasAbove = true;
         return (
           <div key={region.kind} style={{marginTop, flexShrink: 0}}>
+            {region.titleHtml
+              ? (
+                <div
+                  style={{height: region.titleHeight, marginBottom: g.regionGap}}
+                  // eslint-disable-next-line react/no-danger
+                  dangerouslySetInnerHTML={{__html: region.titleHtml}} />
+              ) : null}
             <Region region={region} gap={gap} rules={doc.layout.columnRules} g={g} />
           </div>
         );
@@ -228,7 +248,8 @@ function MikraotPageContent({page, layout, doc}: {
 
 export function MikraotView(): React.ReactElement {
   const {doc, error, update, replace, saving} = useDocument<MikraotDocument>("mikraot");
-  const [chapters, setChapters] = useState<MikraotChapter[]>();
+  const [chaptersBySection, setChaptersBySection] = useState<MikraotChapter[][]>();
+  const [activeSection, setActiveSection] = useState(0);
   const [dataError, setDataError] = useState<string>();
   const [layout, setLayout] = useState<MikraotLayout>();
   const [viewMode, setViewMode] = usePersistentState<ViewMode>("print:viewMode", "spreads");
@@ -238,27 +259,37 @@ export function MikraotView(): React.ReactElement {
 
   usePageRule(doc?.page ?? {width: 8.5, height: 11, unit: "in"} as any);
 
-  const needed = doc ? neededCommentators(doc) : [];
-  const commentatorKey = needed.map(x => x.refPrefix).join("|");
+  // What to fetch: per section, its chapters and commentators.
+  const requests = doc ? doc.sections.map(section => ({
+    bounds: sectionBounds(doc.book, section.range),
+    commentators: neededCommentators(doc, section),
+  })) : [];
+  const requestKey = JSON.stringify([doc?.book, doc?.translationVersion, requests]);
   useEffect(() => {
     if (!doc) return;
     setDataError(undefined);
-    const requests = [];
-    for (let chapter = doc.startChapter; chapter <= doc.endChapter; chapter++) {
-      requests.push(fetchChapter(doc.book, chapter, needed, doc.translationVersion));
-    }
-    Promise.all(requests).then(setChapters).catch(e => setDataError(reportPrintError(e)));
-  }, [doc?.book, doc?.startChapter, doc?.endChapter, commentatorKey, doc?.translationVersion]);
+    Promise.all(requests.map(request => {
+      const chapterRequests = [];
+      const {startChapter, endChapter} = request.bounds;
+      for (let chapter = startChapter; chapter <= endChapter; chapter++) {
+        chapterRequests.push(
+          fetchChapter(doc.book, chapter, request.commentators, doc.translationVersion));
+      }
+      return Promise.all(chapterRequests);
+    }))
+      .then(setChaptersBySection)
+      .catch(e => setDataError(reportPrintError(e)));
+  }, [requestKey]);
 
   // Re-paginate whenever the document or data changes.
   const layoutKey = doc ? JSON.stringify({...doc, name: "", updatedAt: 0}) : "";
   useEffect(() => {
-    if (!doc || !chapters) return undefined;
+    if (!doc || chaptersBySection?.length !== doc.sections.length) return undefined;
     let cancelled = false;
     const families = documentFonts(doc);
     loadFonts(families).then(() => {
       if (cancelled) return;
-      const result = paginateMikraot(doc, chapters);
+      const result = paginateMikraotDocument(doc, chaptersBySection);
       setLayout(result);
       window.__PRINT_STATS__ = {...result.stats, pages: result.pages.length};
       // Let React commit, then signal readiness to the PDF renderer.
@@ -269,7 +300,7 @@ export function MikraotView(): React.ReactElement {
     return () => {
       cancelled = true;
     };
-  }, [layoutKey, chapters]);
+  }, [layoutKey, chaptersBySection]);
 
   if (error) return <div className="print-status print-error">{error}</div>;
   if (!doc) return <div className="print-status">Loading…</div>;
@@ -339,7 +370,9 @@ export function MikraotView(): React.ReactElement {
         <MikraotSettings
           doc={doc}
           update={update}
-          chapters={chapters}
+          activeSection={Math.min(activeSection, doc.sections.length - 1)}
+          setActiveSection={setActiveSection}
+          chapters={chaptersBySection?.[Math.min(activeSection, doc.sections.length - 1)]}
           selectedRef={selectedRef}
           setSelectedRef={setSelectedRef} />
       </div>

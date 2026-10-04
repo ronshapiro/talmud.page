@@ -1,36 +1,35 @@
 {
-  "id": "mikraot-isaiah-40",
-  "name": "Isaiah 40, A4",
+  "id": "mikraot-bereshit-hebrew",
+  "name": "Parashat Bereshit, Hebrew only",
   "kind": "mikraot",
   "schemaVersion": 1,
   "createdAt": 1790812800000,
   "updatedAt": 1790812800000,
   "page": {
-    "preset": "a4",
-    "unit": "mm",
-    "width": 210,
-    "height": 297,
+    "preset": "crown-quarto",
+    "unit": "in",
+    "width": 7.44,
+    "height": 9.69,
     "margins": {
-      "top": 16,
-      "bottom": 16,
-      "inner": 18,
-      "outer": 14
+      "top": 0.55,
+      "bottom": 0.55,
+      "inner": 0.65,
+      "outer": 0.5
     },
     "binding": "rtl"
   },
-  "book": "Isaiah",
+  "book": "Genesis",
   "sections": [
     {
-      "id": "section-mutv74j6-7vnasi",
+      "id": "section-mutv74j7-itjzz7",
       "range": {
-        "kind": "chapters",
-        "startChapter": 40,
-        "endChapter": 40
+        "kind": "parsha",
+        "parsha": "Bereshit"
       },
       "showMainText": true,
       "commentators": [
         {
-          "id": "targum-jonathan",
+          "id": "onkelos",
           "tier": 0,
           "english": "none"
         },
@@ -40,7 +39,22 @@
           "english": "footnote"
         },
         {
+          "id": "ramban",
+          "tier": 1,
+          "english": "none"
+        },
+        {
           "id": "ibn-ezra",
+          "tier": 2,
+          "english": "none"
+        },
+        {
+          "id": "rashbam",
+          "tier": 2,
+          "english": "none"
+        },
+        {
+          "id": "sforno",
           "tier": 2,
           "english": "none"
         },
@@ -50,29 +64,39 @@
           "english": "none"
         },
         {
-          "id": "metzudat-david",
-          "tier": 1,
+          "id": "or-hachaim",
+          "tier": 0,
           "english": "none"
         },
         {
-          "id": "metzudat-zion",
-          "tier": 2,
+          "id": "baal-haturim",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "siftei-chakhamim",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "chizkuni",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "kli-yakar",
+          "tier": 0,
           "english": "none"
         },
         {
           "id": "malbim",
           "tier": 0,
           "english": "none"
-        },
-        {
-          "id": "ralbag",
-          "tier": 0,
-          "english": "none"
         }
       ]
     }
   ],
-  "hebrewOnly": false,
+  "hebrewOnly": true,
   "englishLabels": {
     "runningHead": true,
     "chapterHeadings": true,
@@ -101,7 +125,7 @@
     "commentaryEnglishLineHeight": 1.32,
     "notesLineHeight": 1.3,
     "headingLineHeight": 1.6,
-    "showTrope": false,
+    "showTrope": true,
     "verseLabel": {
       "scale": 0.56,
       "color": "#7a1f1f",
@@ -133,7 +157,7 @@
   "layout": {
     "tier1Columns": 2,
     "tier2Columns": 3,
-    "notesColumns": 3,
+    "notesColumns": 2,
     "columnGapPt": 14,
     "regionGapPt": 10,
     "maxNotesFraction": 0.3,
@@ -143,6 +167,6 @@
     "showTargum": false,
     "mainEnglish": "notes",
     "columnRules": true,
-    "maxCommentLines": 0
+    "maxCommentLines": 16
   }
 }

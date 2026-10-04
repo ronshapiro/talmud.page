@@ -8,7 +8,15 @@
 //      commentOverrides, which remain editable by hand.
 
 import {MikraotChapter} from "./dataTypes";
-import {CommentOverride, ENGLISH_MODES, EnglishMode, MikraotDocument, Tier} from "./documents";
+import {
+  CommentOverride,
+  ENGLISH_MODES,
+  EnglishMode,
+  MikraotDocument,
+  MikraotSection,
+  Tier,
+} from "./documents";
+import {sectionBounds} from "./sections";
 import {resolveCommentator} from "./mikraotCommentators";
 
 export const CURATION_VERSION = 1;
@@ -55,13 +63,15 @@ function stripTags(html: string): string {
   return html.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
 }
 
+/** An inventory of every comment in one section of the document. */
 export function buildCurationRequest(
   doc: MikraotDocument,
+  section: MikraotSection,
   chapters: MikraotChapter[],
 ): CurationRequest {
   const comments: CurationRequestComment[] = [];
   for (const chapter of chapters) {
-    for (const config of doc.commentators) {
+    for (const config of section.commentators) {
       const commentator = resolveCommentator(config, doc.book);
       if (!commentator || commentator.isTargum) continue;
       const commentary = chapter.commentaries[config.id];
@@ -86,8 +96,11 @@ export function buildCurationRequest(
     version: CURATION_VERSION,
     kind: "mikraot-curation-request",
     book: doc.book,
-    chapters: [doc.startChapter, doc.endChapter],
-    commentators: doc.commentators
+    chapters: [
+      sectionBounds(doc.book, section.range).startChapter,
+      sectionBounds(doc.book, section.range).endChapter,
+    ],
+    commentators: section.commentators
       .map(x => ({config: x, resolved: resolveCommentator(x, doc.book)}))
       .filter(x => x.resolved && !x.resolved.isTargum)
       .map(({config, resolved}) => ({
@@ -105,17 +118,19 @@ function isTier(value: unknown): value is Tier {
   return value === 0 || value === 1 || value === 2;
 }
 
-/** Validates and merges a curation response into the document. Returns warnings. */
+/** Validates and merges a curation response into a section of the document. Returns warnings. */
 export function applyCuration(
   doc: MikraotDocument,
+  sectionIndex: number,
   response: CurationResponse,
 ): {doc: MikraotDocument; warnings: string[]} {
+  const section = doc.sections[sectionIndex];
   const warnings: string[] = [];
   if (response.kind !== "mikraot-curation") {
     throw new Error(`Expected a "mikraot-curation" file, got ${String(response.kind)}`);
   }
 
-  const commentators = doc.commentators.map(config => {
+  const commentators = section.commentators.map(config => {
     const change = response.commentators?.[config.id];
     if (!change) return config;
     const next = {...config};
@@ -132,7 +147,7 @@ export function applyCuration(
     return next;
   });
   for (const id of Object.keys(response.commentators ?? {})) {
-    if (!doc.commentators.some(x => x.id === id)) warnings.push(`Unknown commentator: ${id}`);
+    if (!section.commentators.some(x => x.id === id)) warnings.push(`Unknown commentator: ${id}`);
   }
 
   const commentOverrides = {...doc.commentOverrides};
@@ -154,7 +169,8 @@ export function applyCuration(
     commentOverrides[ref] = {...(commentOverrides[ref] ?? {}), ...clean};
   }
 
-  return {doc: {...doc, commentators, commentOverrides}, warnings};
+  const sections = doc.sections.map((x, i) => (i === sectionIndex ? {...x, commentators} : x));
+  return {doc: {...doc, sections, commentOverrides}, warnings};
 }
 
 export function setCommentOverride(

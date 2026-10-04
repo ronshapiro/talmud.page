@@ -611,8 +611,26 @@ export function SiddurPanel({doc, update, sections, selection, setSelection}: {
             <Row label="English size (pt)">
               <NumberInput value={doc.typography.englishSizePt} step={0.5} onChange={v => setTypography("englishSizePt", v)} />
             </Row>
-            <Row label="Line height">
+            <Row label="Hebrew line height">
               <NumberInput value={doc.typography.lineHeight} step={0.05} onChange={v => setTypography("lineHeight", v)} />
+            </Row>
+            <Row label="English line height">
+              <NumberInput
+                value={doc.typography.englishLineHeight}
+                step={0.05}
+                onChange={v => setTypography("englishLineHeight", v)} />
+            </Row>
+            <Row label="Notes line height">
+              <NumberInput
+                value={doc.typography.notesLineHeight}
+                step={0.05}
+                onChange={v => setTypography("notesLineHeight", v)} />
+            </Row>
+            <Row label="Title line height">
+              <NumberInput
+                value={doc.typography.titleLineHeight}
+                step={0.05}
+                onChange={v => setTypography("titleLineHeight", v)} />
             </Row>
             <Row label="Instruction color">
               <input

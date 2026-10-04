@@ -16,7 +16,8 @@ const CHAPTER: MikraotChapter = {
 
 describe("curation", () => {
   test("request lists every comment with its current tier", () => {
-    const request = buildCurationRequest(defaultMikraotDocument(), [CHAPTER]);
+    const doc = defaultMikraotDocument();
+    const request = buildCurationRequest(doc, doc.sections[0], [CHAPTER]);
     expect(request.comments).toEqual([{
       ref: "Rashi on Genesis 1:1:1",
       commentator: "rashi",
@@ -29,19 +30,19 @@ describe("curation", () => {
   });
 
   test("applies commentator and comment decisions, with warnings for bad input", () => {
-    const {doc, warnings} = applyCuration(defaultMikraotDocument(), {
+    const {doc, warnings} = applyCuration(defaultMikraotDocument(), 0, {
       version: 1,
       kind: "mikraot-curation",
       commentators: {ramban: {tier: 2}, nobody: {tier: 1}},
       comments: {"Rashi on Genesis 1:1:1": {hidden: true}, "Rashi on Genesis 1:2:1": {tier: 7 as any}},
     });
-    expect(doc.commentators.find(x => x.id === "ramban")!.tier).toBe(2);
+    expect(doc.sections[0].commentators.find(x => x.id === "ramban")!.tier).toBe(2);
     expect(doc.commentOverrides["Rashi on Genesis 1:1:1"]).toEqual({hidden: true});
     expect(warnings).toEqual(["Unknown commentator: nobody", "Invalid tier for Rashi on Genesis 1:2:1: 7"]);
   });
 
   test("rejects other files", () => {
-    expect(() => applyCuration(defaultMikraotDocument(), {kind: "x"} as any)).toThrow();
+    expect(() => applyCuration(defaultMikraotDocument(), 0, {kind: "x"} as any)).toThrow();
   });
 
   test("setCommentOverride removes empty overrides", () => {

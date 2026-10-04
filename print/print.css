@@ -15,6 +15,35 @@
 @font-face { font-family: "David Libre"; src: url("../fonts/print/DavidLibre-Bold.ttf"); font-weight: 700; }
 @font-face { font-family: "Taamey David CLM"; src: url("../fonts/TaameyDavidCLM-Medium.ttf"); font-weight: 400; }
 @font-face { font-family: "Taamey David CLM"; src: url("../fonts/TaameyDavidCLM-Bold.ttf"); font-weight: 700; }
+@font-face { font-family: "Ezra SIL"; src: url("../fonts/print/EzraSIL.ttf"); }
+@font-face { font-family: "Cardo"; src: url("../fonts/print/Cardo-Regular.ttf"); font-weight: 400; }
+@font-face { font-family: "Cardo"; src: url("../fonts/print/Cardo-Bold.ttf"); font-weight: 700; }
+@font-face { font-family: "Cardo"; src: url("../fonts/print/Cardo-Italic.ttf"); font-style: italic; }
+@font-face { font-family: "Shofar"; src: url("../fonts/print/Shofar-Regular.ttf"); font-weight: 400; }
+@font-face { font-family: "Shofar"; src: url("../fonts/print/Shofar-Bold.ttf"); font-weight: 700; }
+@font-face { font-family: "Hadasim CLM"; src: url("../fonts/print/HadasimCLM-Regular.ttf"); font-weight: 400; }
+@font-face { font-family: "Hadasim CLM"; src: url("../fonts/print/HadasimCLM-Bold.ttf"); font-weight: 700; }
+@font-face { font-family: "Miriam Libre"; src: url("../fonts/print/MiriamLibre.ttf"); font-weight: 400 700; }
+@font-face { font-family: "Bellefair"; src: url("../fonts/print/Bellefair-Regular.ttf"); }
+@font-face { font-family: "Alef"; src: url("../fonts/print/Alef-Regular.ttf"); font-weight: 400; }
+@font-face { font-family: "Alef"; src: url("../fonts/print/Alef-Bold.ttf"); font-weight: 700; }
+@font-face { font-family: "Assistant"; src: url("../fonts/print/Assistant.ttf"); font-weight: 200 800; }
+@font-face { font-family: "Heebo"; src: url("../fonts/print/Heebo.ttf"); font-weight: 100 900; }
+@font-face { font-family: "Secular One"; src: url("../fonts/print/SecularOne-Regular.ttf"); }
+@font-face { font-family: "Suez One"; src: url("../fonts/print/SuezOne-Regular.ttf"); }
+@font-face { font-family: "Crimson Pro"; src: url("../fonts/print/CrimsonPro.ttf"); font-weight: 200 900; }
+@font-face { font-family: "Crimson Pro"; src: url("../fonts/print/CrimsonPro-Italic.ttf"); font-weight: 200 900; font-style: italic; }
+@font-face { font-family: "Libre Baskerville"; src: url("../fonts/print/LibreBaskerville.ttf"); font-weight: 400 700; }
+@font-face { font-family: "Libre Baskerville"; src: url("../fonts/print/LibreBaskerville-Italic.ttf"); font-weight: 400 700; font-style: italic; }
+@font-face { font-family: "Libre Caslon Text"; src: url("../fonts/print/LibreCaslonText.ttf"); font-weight: 400 700; }
+@font-face { font-family: "Libre Caslon Text"; src: url("../fonts/print/LibreCaslonText-Italic.ttf"); font-weight: 400 700; font-style: italic; }
+@font-face { font-family: "Lora"; src: url("../fonts/print/Lora.ttf"); font-weight: 400 700; }
+@font-face { font-family: "Lora"; src: url("../fonts/print/Lora-Italic.ttf"); font-weight: 400 700; font-style: italic; }
+@font-face { font-family: "Source Serif 4"; src: url("../fonts/print/SourceSerif4.ttf"); font-weight: 200 900; }
+@font-face { font-family: "Source Serif 4"; src: url("../fonts/print/SourceSerif4-Italic.ttf"); font-weight: 200 900; font-style: italic; }
+@font-face { font-family: "Spectral"; src: url("../fonts/print/Spectral-Regular.ttf"); font-weight: 400; }
+@font-face { font-family: "Spectral"; src: url("../fonts/print/Spectral-SemiBold.ttf"); font-weight: 600 700; }
+@font-face { font-family: "Spectral"; src: url("../fonts/print/Spectral-Italic.ttf"); font-style: italic; }
 @font-face { font-family: "EB Garamond"; src: url("../fonts/print/EBGaramond.ttf"); font-weight: 400 800; font-style: normal; }
 @font-face { font-family: "EB Garamond"; src: url("../fonts/print/EBGaramond-Italic.ttf"); font-weight: 400 800; font-style: italic; }
 
@@ -347,7 +376,7 @@ body.print-app {
 .mikraot .mg-main {
   font-family: var(--main-font);
   font-size: var(--main-size);
-  line-height: 1.62;
+  line-height: var(--main-lh, 1.62);
   text-align: justify;
   direction: rtl;
 }
@@ -355,7 +384,7 @@ body.print-app {
 .mikraot .mg-targum {
   font-family: var(--main-font);
   font-size: var(--targum-size);
-  line-height: 1.5;
+  line-height: var(--targum-lh, 1.5);
   text-align: justify;
   direction: rtl;
   color: #2d2a25;
@@ -414,7 +443,7 @@ body.print-app {
   font-size: 1.12em;
   letter-spacing: 0.04em;
   color: #3b352c;
-  line-height: 1.6;
+  line-height: var(--heading-lh, 1.6);
 }
 
 .mikraot .mg-chead.tier-1 { font-size: calc(var(--tier1-size) * 1.15); }
@@ -441,7 +470,7 @@ body.print-app {
 .mikraot .mg-note, .mikraot .mg-note-head {
   font-family: var(--notes-font);
   font-size: var(--notes-size);
-  line-height: 1.3;
+  line-height: var(--notes-lh, 1.3);
   text-align: justify;
   hyphens: auto;
   direction: ltr;
@@ -590,7 +619,7 @@ body.print-app {
 
 .siddur .sd-title {
   text-align: center;
-  line-height: 1.5;
+  line-height: var(--sd-title-lh, 1.5);
 }
 
 .siddur .sd-title .he {
@@ -621,7 +650,7 @@ body.print-app {
 .siddur .sd-note {
   font-family: var(--en-font);
   font-size: calc(var(--en-size) * 0.82);
-  line-height: 1.32;
+  line-height: var(--sd-notes-lh, 1.32);
   text-align: justify;
   hyphens: auto;
   color: #3a362f;
@@ -862,14 +891,14 @@ body.print-app {
 }
 
 .siddur .sd-en.solo {
-  line-height: 1.42;
+  line-height: var(--en-solo-lh, 1.42);
 }
 
 /* Mikraot: English set with commentary (stacked / side by side) and with the verses. */
 .mikraot .mg-comment-en {
   font-family: var(--english-font);
   font-size: var(--english-size);
-  line-height: 1.32;
+  line-height: var(--comment-en-lh, 1.32);
   text-align: justify;
   hyphens: auto;
   direction: ltr;
@@ -879,7 +908,7 @@ body.print-app {
 .mikraot .mg-main-en {
   font-family: var(--english-font);
   font-size: calc(var(--english-size) * 1.25);
-  line-height: 1.45;
+  line-height: var(--main-en-lh, 1.45);
   text-align: justify;
   hyphens: auto;
   direction: ltr;
@@ -1039,4 +1068,115 @@ body.print-app {
 
 .mikraot .mg-addendum-head {
   text-align: start;
+}
+
+.section-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.section-tabs button {
+  text-align: start;
+}
+
+.section-box {
+  border-inline-start: 3px solid #e3d6b8;
+  padding-inline-start: 8px;
+  margin: 6px 0;
+}
+
+/* Side-by-side verse translation on the Hebrew's line grid: equal line pitch, paragraph gaps and
+   heading heights, so lines on both sides stay level. */
+.mikraot .mg-main-en.aligned {
+  line-height: var(--main-pitch);
+}
+
+.mikraot .aligned .mg-para + .mg-para {
+  margin-top: calc(var(--main-pitch) * 0.35);
+}
+
+.mikraot .aligned .mg-chapter, .mikraot .aligned .mg-chapter-en,
+.mikraot .aligned .mg-parsha {
+  height: var(--main-pitch);
+  line-height: var(--main-pitch);
+  margin: 0;
+  overflow: hidden;
+}
+
+.mikraot .mg-chapter-en:empty {
+  display: none;
+}
+
+.mikraot .aligned .mg-chapter-en:empty {
+  display: block;
+}
+
+/* Aliyot and parsha starts */
+.mikraot .mg-aliyah {
+  font-family: var(--main-font);
+  font-size: 0.5em;
+  font-weight: 700;
+  color: #7a1f1f;
+  border: 0.5pt solid #c9a9a0;
+  border-radius: 2pt;
+  padding: 0 0.3em;
+  vertical-align: 0.4em;
+  line-height: 0;
+  white-space: nowrap;
+}
+
+.mikraot .mg-aliyah .combined {
+  font-weight: 400;
+  color: #8a6d63;
+}
+
+.mikraot .mg-parsha {
+  text-align: center;
+  font-size: 0.85em;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #7a1f1f;
+  margin: 0.2em 0;
+}
+
+.mikraot .mg-parsha-en {
+  visibility: hidden;
+}
+
+/* Section titles */
+.mikraot .mg-section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2pt 0 4pt;
+}
+
+.mikraot .mg-section-title .he {
+  font-family: var(--main-font);
+  font-size: 20pt;
+  font-weight: 700;
+  color: #7a1f1f;
+}
+
+.mikraot .mg-section-title .en {
+  font-family: var(--notes-font);
+  font-size: 8.5pt;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #6f685c;
+}
+
+.mikraot .mg-note-head.hebrew {
+  font-family: var(--main-font);
+  font-variant: normal;
+  direction: rtl;
+  text-align: right;
+}
+
+.mikraot .mg-addendum-ref.compact {
+  font-size: 0.6em;
+  vertical-align: 0.5em;
+  line-height: 0;
+  margin-inline-start: 0.15em;
 }

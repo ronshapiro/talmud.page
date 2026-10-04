@@ -46,7 +46,10 @@ export function siddurCssVars(doc: SiddurDocument): string {
     `--en-size: ${t.englishSizePt}pt`,
     `--lh: ${t.lineHeight}`,
     // On a shared baseline grid, English lines use the Hebrew line pitch so they line up.
-    `--en-lh: ${usesLineGrid(doc) ? `${t.hebrewSizePt * t.lineHeight}pt` : "1.42"}`,
+    `--en-lh: ${usesLineGrid(doc) ? `${t.hebrewSizePt * t.lineHeight}pt` : t.englishLineHeight}`,
+    `--en-solo-lh: ${t.englishLineHeight}`,
+    `--sd-notes-lh: ${t.notesLineHeight}`,
+    `--sd-title-lh: ${t.titleLineHeight}`,
     `--instruction-color: ${t.instructionColor}`,
     `--accent: ${t.accentColor}`,
   ].join("; ");

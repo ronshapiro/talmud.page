@@ -92,7 +92,11 @@ export interface SiddurTypography {
   englishFont: string;
   hebrewSizePt: number;
   englishSizePt: number;
+  // Hebrew line height (and the line grid for English when lines are aligned).
   lineHeight: number;
+  englishLineHeight: number;
+  notesLineHeight: number;
+  titleLineHeight: number;
   instructionColor: string;
   accentColor: string;
   // Set English on the Hebrew line pitch so side-by-side lines line up (always on for facing
@@ -131,13 +135,14 @@ export interface SiddurDocument extends BaseDocument {
 export type Tier = 0 | 1 | 2;
 
 // How a commentary's (or the verses') English is set relative to its Hebrew.
-export type EnglishMode = "none" | "footnote" | "stacked" | "side-by-side";
+export type EnglishMode = "none" | "footnote" | "stacked" | "side-by-side" | "addendum";
 
 export const ENGLISH_MODES: {id: EnglishMode; label: string}[] = [
   {id: "none", label: "No English"},
   {id: "footnote", label: "English as footnote"},
   {id: "stacked", label: "Hebrew above English"},
   {id: "side-by-side", label: "Side by side"},
+  {id: "addendum", label: "English in the continuations"},
 ];
 
 export interface CommentatorConfig {
@@ -199,7 +204,18 @@ export interface MikraotTypography {
   tier2SizePt: number;
   targumSizePt: number;
   notesSizePt: number;
+  // Commentary line height.
   lineHeight: number;
+  // Line heights of the other element types.
+  mainLineHeight: number;
+  targumLineHeight: number;
+  // Translation set with the verses. With side-by-side placement and alignMainLines, the English
+  // instead uses the Hebrew line pitch so the lines line up.
+  mainEnglishLineHeight: number;
+  alignMainLines: boolean;
+  commentaryEnglishLineHeight: number;
+  notesLineHeight: number;
+  headingLineHeight: number;
   showTrope: boolean;
   verseLabel: LabelStyle;
   commentLabel: LabelStyle;
@@ -235,17 +251,56 @@ export interface MikraotLayout {
   showVerseTranslation?: boolean;
 }
 
+// What a section covers: a range of chapters, or a weekly Torah portion (parshiyot.ts id).
+export type SectionRange =
+  | {kind: "chapters"; startChapter: number; endChapter: number}
+  | {kind: "parsha"; parsha: string};
+
+/**
+ * A rendering of a range of the book. A document can render the same range several times, e.g. a
+ * parsha with only Rashi for reading through, then again with more commentaries for study.
+ */
+export interface MikraotSection {
+  id: string;
+  // A heading set at the start of the section (optional).
+  title?: string;
+  range: SectionRange;
+  // Repeated renderings may leave out the verses themselves.
+  showMainText: boolean;
+  commentators: CommentatorConfig[];
+  // Overrides layout.mainEnglish for this section.
+  mainEnglish?: MainEnglishMode;
+}
+
+// Which English labels are printed (all are dropped in Hebrew-only mode).
+export interface EnglishLabels {
+  runningHead: boolean;
+  chapterHeadings: boolean;
+  sectionTitles: boolean;
+  continuations: boolean;
+  notes: boolean;
+}
+
 export interface MikraotDocument extends BaseDocument {
   kind: "mikraot";
   book: string;
-  startChapter: number;
-  endChapter: number;
+  sections: MikraotSection[];
+  // No English anywhere, in the output or the editor's options.
+  hebrewOnly: boolean;
+  englishLabels: EnglishLabels;
+  // Label the aliyot in the text (Torah books).
+  showAliyot: boolean;
   // Sefaria versionTitle of the verse translation; unset = Sefaria's default.
   translationVersion?: string;
-  commentators: CommentatorConfig[];
   commentOverrides: Record<string, CommentOverride>;
   typography: MikraotTypography;
   layout: MikraotLayout;
+  /** @deprecated Moved into sections; read only when migrating old documents. */
+  startChapter?: number;
+  /** @deprecated */
+  endChapter?: number;
+  /** @deprecated */
+  commentators?: CommentatorConfig[];
 }
 
 export type PrintDocument = SiddurDocument | MikraotDocument;
@@ -282,6 +337,9 @@ export function defaultSiddurDocument(name = "My Siddur"): SiddurDocument {
       hebrewSizePt: 14,
       englishSizePt: 10.5,
       lineHeight: 1.55,
+      englishLineHeight: 1.42,
+      notesLineHeight: 1.32,
+      titleLineHeight: 1.5,
       instructionColor: "#8a6d3b",
       accentColor: "#7a1f1f",
     },
@@ -324,6 +382,23 @@ export const DEFAULT_CHAPTER_LABEL: LabelStyle = {
   scale: 0.82, color: "#7a1f1f", bold: false, superscript: false, prefix: "פרק ", suffix: "", numerals: "hebrew",
 };
 
+export function defaultSection(book: string, range?: SectionRange): MikraotSection {
+  return {
+    id: newId("section"),
+    range: range ?? {kind: "chapters", startChapter: 1, endChapter: 1},
+    showMainText: true,
+    commentators: defaultCommentatorConfigs(book),
+  };
+}
+
+export const DEFAULT_ENGLISH_LABELS: EnglishLabels = {
+  runningHead: true,
+  chapterHeadings: true,
+  sectionTitles: true,
+  continuations: true,
+  notes: true,
+};
+
 export function defaultMikraotDocument(name = "Mikraot Gedolot", book = "Genesis"): MikraotDocument {
   const now = Date.now();
   return {
@@ -335,9 +410,10 @@ export function defaultMikraotDocument(name = "Mikraot Gedolot", book = "Genesis
     updatedAt: now,
     page: pageSettingsFromPreset("crown-quarto", MIKRAOT_MARGINS, "rtl"),
     book,
-    startChapter: 1,
-    endChapter: 1,
-    commentators: defaultCommentatorConfigs(book),
+    sections: [defaultSection(book)],
+    hebrewOnly: false,
+    englishLabels: DEFAULT_ENGLISH_LABELS,
+    showAliyot: true,
     commentOverrides: {},
     typography: {
       mainFont: "keter-yg",
@@ -351,6 +427,13 @@ export function defaultMikraotDocument(name = "Mikraot Gedolot", book = "Genesis
       targumSizePt: 10,
       notesSizePt: 7.6,
       lineHeight: 1.45,
+      mainLineHeight: 1.62,
+      targumLineHeight: 1.5,
+      mainEnglishLineHeight: 1.45,
+      alignMainLines: true,
+      commentaryEnglishLineHeight: 1.32,
+      notesLineHeight: 1.3,
+      headingLineHeight: 1.6,
       showTrope: true,
       verseLabel: DEFAULT_VERSE_LABEL,
       commentLabel: DEFAULT_COMMENT_LABEL,
@@ -374,14 +457,35 @@ export function defaultMikraotDocument(name = "Mikraot Gedolot", book = "Genesis
   };
 }
 
-function migrateMikraot(doc: MikraotDocument, merged: any): void {
-  merged.commentators = doc.commentators
+function migrateCommentators(commentators: CommentatorConfig[]): CommentatorConfig[] {
+  return commentators
     .filter(x => x.id.startsWith("sefaria:") || COMMENTATORS.some(c => c.id === x.id))
     .map(x => {
       const {showEnglish, ...rest} = x;
       if (rest.english !== undefined) return rest;
       return {...rest, english: showEnglish ? "footnote" : "none"};
     });
+}
+
+function migrateMikraot(doc: MikraotDocument, merged: any): void {
+  if (!doc.sections) {
+    // Before sections, a document was a single chapter range.
+    merged.sections = [{
+      id: newId("section"),
+      range: {kind: "chapters", startChapter: doc.startChapter ?? 1, endChapter: doc.endChapter ?? 1},
+      showMainText: true,
+      commentators: migrateCommentators(doc.commentators ?? defaultCommentatorConfigs(doc.book)),
+    }];
+  } else {
+    merged.sections = doc.sections.map(x => ({
+      ...x,
+      commentators: migrateCommentators(x.commentators),
+    }));
+  }
+  delete merged.startChapter;
+  delete merged.endChapter;
+  delete merged.commentators;
+  merged.englishLabels = {...DEFAULT_ENGLISH_LABELS, ...(doc.englishLabels ?? {})};
   if (doc.layout?.mainEnglish === undefined && doc.layout?.showVerseTranslation === false) {
     merged.layout.mainEnglish = "none";
   }

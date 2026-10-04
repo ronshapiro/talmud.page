@@ -19,87 +19,141 @@
     "binding": "rtl"
   },
   "book": "Exodus",
-  "startChapter": 20,
-  "endChapter": 20,
-  "commentators": [
+  "sections": [
     {
-      "id": "onkelos",
-      "tier": 0,
-      "showEnglish": false
-    },
-    {
-      "id": "rashi",
-      "tier": 1,
-      "showEnglish": true
-    },
-    {
-      "id": "ramban",
-      "tier": 1,
-      "showEnglish": false
-    },
-    {
-      "id": "ibn-ezra",
-      "tier": 1,
-      "showEnglish": true
-    },
-    {
-      "id": "rashbam",
-      "tier": 2,
-      "showEnglish": false
-    },
-    {
-      "id": "sforno",
-      "tier": 2,
-      "showEnglish": false
-    },
-    {
-      "id": "radak",
-      "tier": 0,
-      "showEnglish": false
-    },
-    {
-      "id": "or-hachaim",
-      "tier": 2,
-      "showEnglish": false
-    },
-    {
-      "id": "baal-haturim",
-      "tier": 0,
-      "showEnglish": false
-    },
-    {
-      "id": "siftei-chakhamim",
-      "tier": 0,
-      "showEnglish": false
-    },
-    {
-      "id": "chizkuni",
-      "tier": 0,
-      "showEnglish": false
-    },
-    {
-      "id": "kli-yakar",
-      "tier": 0,
-      "showEnglish": false
-    },
-    {
-      "id": "malbim",
-      "tier": 0,
-      "showEnglish": false
+      "id": "section-mutv74j6-ivv0nk",
+      "range": {
+        "kind": "chapters",
+        "startChapter": 20,
+        "endChapter": 20
+      },
+      "showMainText": true,
+      "commentators": [
+        {
+          "id": "onkelos",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "rashi",
+          "tier": 1,
+          "english": "footnote"
+        },
+        {
+          "id": "ramban",
+          "tier": 1,
+          "english": "none"
+        },
+        {
+          "id": "ibn-ezra",
+          "tier": 1,
+          "english": "footnote"
+        },
+        {
+          "id": "rashbam",
+          "tier": 2,
+          "english": "none"
+        },
+        {
+          "id": "sforno",
+          "tier": 2,
+          "english": "none"
+        },
+        {
+          "id": "radak",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "or-hachaim",
+          "tier": 2,
+          "english": "none"
+        },
+        {
+          "id": "baal-haturim",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "siftei-chakhamim",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "chizkuni",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "kli-yakar",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "malbim",
+          "tier": 0,
+          "english": "none"
+        }
+      ]
     }
   ],
+  "hebrewOnly": false,
+  "englishLabels": {
+    "runningHead": true,
+    "chapterHeadings": true,
+    "sectionTitles": true,
+    "continuations": true,
+    "notes": true
+  },
+  "showAliyot": true,
   "commentOverrides": {},
   "typography": {
     "mainFont": "keter-yg",
     "commentaryFont": "noto-rashi",
     "notesFont": "eb-garamond",
+    "englishFont": "eb-garamond",
+    "englishSizePt": 8.6,
     "mainSizePt": 15,
     "tier1SizePt": 9.6,
     "tier2SizePt": 8.6,
     "targumSizePt": 10,
     "notesSizePt": 7.6,
     "lineHeight": 1.45,
-    "showTrope": true
+    "mainLineHeight": 1.62,
+    "targumLineHeight": 1.5,
+    "mainEnglishLineHeight": 1.45,
+    "alignMainLines": true,
+    "commentaryEnglishLineHeight": 1.32,
+    "notesLineHeight": 1.3,
+    "headingLineHeight": 1.6,
+    "showTrope": true,
+    "verseLabel": {
+      "scale": 0.56,
+      "color": "#7a1f1f",
+      "bold": true,
+      "superscript": true,
+      "prefix": "",
+      "suffix": "",
+      "numerals": "hebrew"
+    },
+    "commentLabel": {
+      "scale": 0.92,
+      "color": "#7a1f1f",
+      "bold": true,
+      "superscript": false,
+      "prefix": "",
+      "suffix": "",
+      "numerals": "hebrew"
+    },
+    "chapterLabel": {
+      "scale": 0.82,
+      "color": "#7a1f1f",
+      "bold": false,
+      "superscript": false,
+      "prefix": "פרק ",
+      "suffix": "",
+      "numerals": "hebrew"
+    }
   },
   "layout": {
     "tier1Columns": 2,
@@ -112,7 +166,8 @@
     "maxCommentaryLag": 3,
     "minPageFill": 0.88,
     "showTargum": true,
-    "showVerseTranslation": true,
-    "columnRules": true
+    "mainEnglish": "notes",
+    "columnRules": true,
+    "maxCommentLines": 0
   }
 }

@@ -11,12 +11,20 @@ import {
   EnglishMode,
   LabelStyle,
   MikraotDocument,
+  MikraotSection,
   Tier,
 } from "../model/documents";
 import {fontFamily, mixedFontFamily} from "../model/fonts";
 import {pageBox} from "../model/geometry";
-import {COMMENTATORS_BY_ID, resolveCommentator} from "../model/mikraotCommentators";
-import {tokenize} from "../model/richText";
+import {
+  VerseMarker,
+  inBounds,
+  sectionBounds,
+  sectionLabel,
+  verseMarkers,
+} from "../model/sections";
+import {COMMENTATORS_BY_ID, resolveCommentator, tanakhBook} from "../model/mikraotCommentators";
+import {Token, tokenize} from "../model/richText";
 import {
   BlockSpec,
   MeasuredBlock,
@@ -114,10 +122,13 @@ export interface PairRowLayout {
   span: boolean;
 }
 
-export type RegionKind = "tier-1" | "tier-1-pairs" | "tier-2" | "tier-2-pairs" | "notes";
+export type RegionKind = "tier-1" | "tier-1-pairs" | "tier-2" | "tier-2-pairs" | "notes" | "addenda";
 
 export interface RegionLayout {
   kind: RegionKind;
+  // A title set above the region (the start of the addenda).
+  titleHtml?: string;
+  titleHeight?: number;
   columnCount: number;
   columnWidth: number;
   height: number;
@@ -164,6 +175,9 @@ export interface MikraotLayout {
     pairHebrewWidth: number;
     pairEnglishWidth: number;
     columnGap: number;
+    mainClass: string;
+    englishClass: string;
+    englishMainStyle: string;
   };
   marginsFor: (pageIndex: number) => {top: number; bottom: number; left: number; right: number};
   stats: {verses: number; comments: number; notes: number; millis: number};
@@ -183,9 +197,19 @@ export function mikraotCssVars(doc: MikraotDocument): string {
     `--targum-size: ${t.targumSizePt}pt`,
     `--notes-size: ${t.notesSizePt}pt`,
     `--lh: ${t.lineHeight}`,
+    `--main-lh: ${t.mainLineHeight}`,
+    `--main-pitch: ${t.mainSizePt * t.mainLineHeight}pt`,
+    `--targum-lh: ${t.targumLineHeight}`,
+    `--main-en-lh: ${t.mainEnglishLineHeight}`,
+    `--comment-en-lh: ${t.commentaryEnglishLineHeight}`,
+    `--notes-lh: ${t.notesLineHeight}`,
+    `--heading-lh: ${t.headingLineHeight}`,
     `--col-gap: ${doc.layout.columnGapPt}pt`,
   ].join("; ");
 }
+
+// Notes-queue key for the verses' translation.
+const TRANSLATION = "#translation";
 
 const TROPE_RE = /[֑-֯׀]/g;
 
@@ -282,9 +306,35 @@ function effectiveEnglish(
   return config.english;
 }
 
-export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]): MikraotLayout {
+export interface SectionOptions {
+  // Global index of this section's first page (sections are paginated one after another).
+  pageOffset: number;
+  // A title set at the top of the section's first page.
+  title?: {hebrew: string; english?: string};
+}
+
+export function paginateMikraot(
+  doc: MikraotDocument,
+  section: MikraotSection,
+  chapters: MikraotChapter[],
+  options?: SectionOptions,
+): MikraotLayout {
+  const pageOffset = options?.pageOffset ?? 0;
   const startTime = performance.now();
-  const {layout, typography} = doc;
+  const {typography} = doc;
+  const {hebrewOnly} = doc;
+  const labels = doc.englishLabels;
+  const layout = {
+    ...doc.layout,
+    mainEnglish: hebrewOnly || !section.showMainText
+      ? "none" as const
+      : (section.mainEnglish ?? doc.layout.mainEnglish),
+  };
+  const showEnglish = (label: boolean) => !hebrewOnly && label;
+  const bounds = sectionBounds(doc.book, section.range);
+  const markers = doc.showAliyot && tanakhBook(doc.book)?.section === "Torah"
+    ? verseMarkers(doc.book, section.range)
+    : new Map<string, VerseMarker>();
   const box = pageBox(doc.page);
   const cssVars = mikraotCssVars(doc);
   setMeasurementContext("print-root mikraot", cssVars);
@@ -335,6 +385,7 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
   const verses: GlobalVerse[] = [];
   for (const chapter of chapters) {
     chapter.verses.forEach((verse, i) => {
+      if (!inBounds(bounds, {chapter: chapter.chapter, verse: i + 1})) return;
       verses.push({
         chapter: chapter.chapter,
         verse: i + 1,
@@ -351,7 +402,8 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
   verses.forEach((x, i) => verseIndex.set(`${x.chapter}:${x.verse}`, i));
 
   // ---- Commentators and their typography
-  const activeCommentators: CommentatorConfig[] = doc.commentators.filter(x => {
+  const activeCommentators: CommentatorConfig[] = section.commentators.map(x => (
+    hebrewOnly ? {...x, english: "none" as const} : x)).filter(x => {
     if (x.tier === 0) return false;
     if (COMMENTATORS_BY_ID[x.id]?.isTargum) return false;
     return resolveCommentator(x, doc.book) !== undefined;
@@ -402,6 +454,7 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
       // Hebrew, a segment that only has English is a translation artifact and is skipped.
       const englishOnly = commentary.verses.every(x => x.every(c => !c.he.trim()));
       commentary.verses.forEach((comments, v) => {
+        if (!inBounds(bounds, {chapter: chapter.chapter, verse: v + 1})) return;
         let firstOnVerse = true;
         comments.forEach(comment => {
           const override = doc.commentOverrides[comment.ref] ?? {};
@@ -511,60 +564,98 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
     note: x.noteSpec ? measure(x.noteSpec, notesWidth) : undefined,
   }));
 
-  // ---- Line limits: a comment longer than its limit keeps its first lines here, ending with a
-  // reference to an addendum at the end of the book, where the rest (and its English) is set.
+  // ---- Line limits and English set aside: a block (Hebrew, English, or footnote) longer than its
+  // limit keeps its first lines here, ending with a reference to an addendum at the end of the
+  // section, where the rest is set. Comments whose English goes "in the continuations" get their
+  // whole English there.
   interface Addendum {
     number: number;
     entry: CommentEntry;
-    rest: BlockSpec;
-    width: number;
-    english?: string;
+    hebrewRest?: BlockSpec;
+    english?: Token[];
+    englishStyle?: string;
   }
   const addenda: Addendum[] = [];
   const hebrewNumeral = (n: number) => {
     const hebrew = intToHebrewNumeral(n);
     return hebrew.length === 1 ? `${hebrew}׳` : `${hebrew.slice(0, -1)}״${hebrew.slice(-1)}`;
   };
-  entries.forEach((entry, i) => {
-    const limit = pendingEntries[i].maxLines;
-    const block = entry.he ?? entry.en;
-    if (!limit || limit <= 0 || !block || block.lines.length <= limit) return;
-    const number = addenda.length + 1;
-    const {spec} = block;
-    const marker = tokenize(entry.he
-      ? `<span class="mg-addendum-ref">(המשך בנספח ${hebrewNumeral(number)})</span>`
-      : `<span class="mg-addendum-ref">(continued in addendum ${number})</span>`);
-    // Keep as many whole lines as fit with the marker within the limit.
-    let cut = limit;
-    let head: MeasuredBlock | undefined;
-    for (; cut >= 1; cut--) {
-      head = measure({
-        ...spec,
-        key: `${spec.key}:head:${cut}:${number}`,
-        tokens: [...spec.tokens.slice(0, block.lines[cut].start), ...marker],
+  // Page numbers aren't known until the addenda are laid out; markers are measured with this
+  // placeholder and filled in afterwards.
+  const PAGE_PLACEHOLDER = "000";
+  const hebrewMarker = (n: number, kind: "continued" | "translation") => tokenize(kind === "continued"
+    ? `<span class="mg-addendum-ref" data-addendum="${n}">(המשך בנספח ${hebrewNumeral(n)}, `
+      + `עמ׳ ${PAGE_PLACEHOLDER})</span>`
+    // A translation set aside gets a compact pointer: addendum number · page.
+    : `<sup class="mg-addendum-ref compact" data-addendum="${n}">${hebrewNumeral(n)}·${PAGE_PLACEHOLDER}</sup>`);
+  const englishMarker = (n: number) => tokenize(
+    `<span class="mg-addendum-ref" data-addendum="${n}">(continued in addendum ${n}, `
+    + `p. ${PAGE_PLACEHOLDER})</span>`);
+  const ellipsis = tokenize("…");
+
+  /** Keeps as many whole lines of `block` as fit with `marker` within `limit` lines. */
+  const cut = (block: MeasuredBlock, limit: number, marker: Token[], tag: string) => {
+    for (let keep = Math.min(limit, block.lines.length - 1); keep >= 1; keep--) {
+      const split = block.lines[keep].start;
+      const head = measure({
+        ...block.spec,
+        key: `${block.spec.key}:${tag}:${keep}`,
+        tokens: [...block.spec.tokens.slice(0, split), ...marker],
       }, block.width);
-      if (head.lines.length <= limit) break;
+      if (head.lines.length <= limit) return {head, rest: block.spec.tokens.slice(split)};
     }
-    if (!head || cut < 1) return;
-    const ellipsis = tokenize("…");
-    addenda.push({
-      number,
-      entry,
-      width: block.width,
-      english: entry.he ? pendingEntries[i].englishHtml : undefined,
-      rest: {
-        ...spec,
-        key: `${spec.key}:rest`,
-        tokens: [...ellipsis, ...spec.tokens.slice(block.lines[cut].start)],
-      },
-    });
-    if (entry.he) {
-      entry.he = head;
-      // The English translates the whole comment, so it moves to the addendum with the rest.
-      entry.en = undefined;
-      entry.note = undefined;
-    } else {
-      entry.en = head;
+    return undefined;
+  };
+
+  entries.forEach((entry, i) => {
+    const pending = pendingEntries[i];
+    const config = configById.get(entry.commentator)!;
+    const limit = pending.maxLines > 0 ? pending.maxLines : Infinity;
+    let addendum: Addendum | undefined;
+    const ensure = () => {
+      if (!addendum) {
+        addendum = {number: addenda.length + 1, entry};
+        addenda.push(addendum);
+      }
+      return addendum;
+    };
+
+    if (entry.he && entry.he.lines.length > limit) {
+      const {number} = ensure();
+      const result = cut(entry.he, limit, hebrewMarker(number, "continued"), `he${number}`);
+      if (result) {
+        entry.he = result.head;
+        addendum!.hebrewRest = {
+          ...entry.he.spec,
+          key: `${entry.he.spec.key}:rest`,
+          tokens: [...ellipsis, ...result.rest],
+        };
+      }
+    }
+
+    for (const field of ["en", "note"] as const) {
+      const block = entry[field];
+      if (!block || block.lines.length <= limit) continue;
+      const {number} = ensure();
+      const result = cut(block, limit, englishMarker(number), `${field}${number}`);
+      if (!result) continue;
+      entry[field] = result.head;
+      addendum!.english = [...ellipsis, ...result.rest];
+      addendum!.englishStyle = englishStyle(config);
+    }
+
+    if (pending.english === "addendum" && pending.englishHtml?.trim() && entry.he) {
+      const {number} = ensure();
+      addendum!.english = tokenize(pending.englishHtml);
+      addendum!.englishStyle = englishStyle(config);
+      if (!addendum!.hebrewRest) {
+        // Point from the Hebrew to its translation.
+        entry.he = measure({
+          ...entry.he.spec,
+          key: `${entry.he.spec.key}:tr${number}`,
+          tokens: [...entry.he.spec.tokens, ...hebrewMarker(number, "translation")],
+        }, entry.he.width);
+      }
     }
   });
 
@@ -610,6 +701,10 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
     if (typography.commentLabel.numerals === "arabic") return String(n);
     const hebrew = intToHebrewNumeral(n);
     return hebrew.length === 1 ? `${hebrew}׳` : `${hebrew.slice(0, -1)}״${hebrew.slice(-1)}`;
+  };
+  const verseRangeHebrew = (from: GlobalVerse, to: GlobalVerse) => {
+    const one = (x: GlobalVerse) => `${intToHebrewNumeral(x.chapter)}:${intToHebrewNumeral(x.verse)}`;
+    return from === to ? one(from) : `${one(from)}–${one(to)}`;
   };
   const continuationLabel = (verse: number) => {
     const {chapter, verse: number} = verses[verse];
@@ -664,14 +759,16 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
     };
   };
 
-  const noteHeading = (id: string): Item => {
-    const key = `nhead:${id}`;
+  const noteHeading = (id: string, continued = false): Item => {
+    const key = `nhead:${id}:${continued}`;
     if (!headingCache.has(key)) {
+      const englishNames = showEnglish(labels.notes);
+      const name = id === TRANSLATION ? "Translation" : names(id)[englishNames ? "englishName" : "hebrewName"];
       headingCache.set(key, measure({
         key,
-        className: "blk mg-note-head",
-        dir: "ltr",
-        tokens: tokenize(escapeHtml(names(id).englishName)),
+        className: `blk mg-note-head${englishNames ? "" : " hebrew"}`,
+        dir: englishNames ? "ltr" : "rtl",
+        tokens: tokenize(`${escapeHtml(name)}${continued ? ` <span class="cont">${englishNames ? "(cont.)" : "(המשך)"}</span>` : ""}`),
       }, notesWidth));
     }
     const block = headingCache.get(key)!;
@@ -753,11 +850,24 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
     english?: string;
     height: number;
   }
+  // Side-by-side translation on the Hebrew's line grid: same line pitch, paragraph gaps and
+  // heading heights, and the first baselines aligned.
+  const aligned = mainEnglish === "beside" && typography.alignMainLines;
+  const mainClass = `mg-main${aligned ? " aligned" : ""}`;
+  const englishClass = `mg-main-en${aligned ? " aligned" : ""}`;
+  let englishMainStyle = "";
+  if (aligned) {
+    const [hebrewSample] = measureBlocks(
+      [{key: "baseline:he", className: `blk ${mainClass}`, dir: "rtl", tokens: tokenize("א")}], mainWidth);
+    const [englishSample] = measureBlocks(
+      [{key: "baseline:en", className: `blk ${englishClass}`, dir: "ltr", tokens: tokenize("A")}], englishWidth);
+    englishMainStyle = `padding-top: ${Math.max(0, hebrewSample.baseline - englishSample.baseline)}px`;
+  }
   const mainCache = new Map<string, MainText>();
   const mainText = (from: number, count: number): MainText => {
     const key = `${from}:${count}`;
     if (mainCache.has(key)) return mainCache.get(key)!;
-    if (count === 0) {
+    if (count === 0 || !section.showMainText) {
       const empty = {main: "", height: 0};
       mainCache.set(key, empty);
       return empty;
@@ -767,12 +877,32 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
       const parts: string[] = ['<div class="mg-para">'];
       for (let i = from; i < from + count; i++) {
         const verse = verses[i];
-        if (verse.verse === 1) {
+        const marker = markers.get(`${verse.chapter}:${verse.verse}`);
+        const chapterStart = verse.verse === 1;
+        const parshaStart = Boolean(marker?.parsha);
+        if (chapterStart || parshaStart) {
           if (i !== from) parts.push("</div>");
-          parts.push(english
-            ? `<div class="mg-chapter-en">Chapter ${verse.chapter}</div>`
-            : `<div class="mg-chapter">${labelHtml(typography.chapterLabel, verse.chapter, "mg-chapter-label")}</div>`);
+          if (parshaStart) {
+            parts.push(english
+              ? '<div class="mg-parsha mg-parsha-en"></div>'
+              : `<div class="mg-parsha">פרשת ${escapeHtml(marker!.parsha!)}</div>`);
+          }
+          if (chapterStart) {
+            if (!english) {
+              parts.push(`<div class="mg-chapter">${labelHtml(typography.chapterLabel, verse.chapter, "mg-chapter-label")}</div>`);
+            } else {
+              // An empty heading keeps aligned translations level with the Hebrew.
+              parts.push(`<div class="mg-chapter-en">${showEnglish(labels.chapterHeadings) ? `Chapter ${verse.chapter}` : ""}</div>`);
+            }
+          }
           if (i !== from) parts.push('<div class="mg-para">');
+        }
+        if (!english && (marker?.aliyah || marker?.combinedAliyah)) {
+          // The combined reading's aliyah, when it differs from this reading's.
+          const combined = marker.combinedAliyah && marker.combinedAliyah !== marker.aliyah
+            ? `<span class="combined">${marker.aliyah ? " · " : ""}במחוברות: ${marker.combinedAliyah}</span>`
+            : "";
+          parts.push(`<span class="mg-aliyah">${marker.aliyah ?? ""}${combined}</span> `);
         }
         parts.push(english
           ? `<span class="mg-envnum">${verse.verse}</span>${verse.en} `
@@ -789,11 +919,13 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
     const targum = showTargum ? build("targum") : undefined;
     const english = mainEnglish !== "none" ? build("en") : undefined;
     const top = Math.max(
-      measureHtmlHeight(main, "mg-main", mainWidth),
+      measureHtmlHeight(main, mainClass, mainWidth),
       targum ? measureHtmlHeight(targum, "mg-targum", targumWidth) : 0,
-      english && mainEnglish === "beside" ? measureHtmlHeight(english, "mg-main-en", englishWidth) : 0);
+      english && mainEnglish === "beside"
+        ? measureHtmlHeight(english, englishClass, englishWidth, englishMainStyle)
+        : 0);
     const below = english && mainEnglish === "below"
-      ? stackGap + measureHtmlHeight(english, "mg-main-en", englishWidth)
+      ? stackGap + measureHtmlHeight(english, englishClass, englishWidth, englishMainStyle)
       : 0;
     const value = {main, targum, english, height: top + below};
     mainCache.set(key, value);
@@ -802,7 +934,7 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
 
   const translationItem = (from: number, count: number): Item | undefined => {
     if (layout.mainEnglish !== "notes" || count === 0) return undefined;
-    const parts: string[] = ['<span class="label">Translation</span>'];
+    const parts: string[] = showEnglish(labels.notes) ? ['<span class="label">Translation</span>'] : [];
     for (let i = from; i < from + count; i++) {
       const verse = verses[i];
       const number = verse.verse === 1 || i === from ? `${verse.chapter}:${verse.verse}` : `${verse.verse}`;
@@ -876,11 +1008,17 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
       if (!fresh.has(entry.commentator)) fresh.set(entry.commentator, []);
       fresh.get(entry.commentator)!.push(noteItem(entry));
     }
-    const queue: Item[] = [...translation];
+    const queue: Item[] = [];
+    // A translation (or note) continued from the previous page is labelled as such.
+    if (translation.length > 0 && translation[0].data.lineOffset > 0) {
+      queue.push(noteHeading(TRANSLATION, true));
+    }
+    queue.push(...translation);
     for (const id of sortedCommentators([...carryNotes.keys(), ...fresh.keys()])) {
-      const items = [...(carryNotes.get(id) ?? []), ...(fresh.get(id) ?? [])];
+      const carried = carryNotes.get(id) ?? [];
+      const items = [...carried, ...(fresh.get(id) ?? [])];
       if (items.length === 0) continue;
-      queue.push(noteHeading(id), ...items);
+      queue.push(noteHeading(id, carried.length > 0 && carried[0].data.lineOffset > 0), ...items);
     }
     return queue;
   };
@@ -907,6 +1045,16 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
     ? cursorDone(stream.queue, stream.result.end)
     : pairsDone(stream.queue, stream.result.end));
 
+  // The section title takes room on the first page.
+  const sectionTitleHtml = options?.title
+    ? `<div class="mg-section-title"><span class="he">${escapeHtml(options?.title.hebrew)}</span>`
+      + `${options?.title.english && showEnglish(labels.sectionTitles)
+        ? `<span class="en">${escapeHtml(options?.title.english)}</span>`
+        : ""}</div>`
+    : undefined;
+  const sectionTitleHeight = sectionTitleHtml ? measureHtmlHeight(sectionTitleHtml, "", W) : 0;
+  let pageBody = bodyHeight - (sectionTitleHtml ? sectionTitleHeight + regionGap : 0);
+
   const evaluate = (count: number): Candidate => {
     const main = mainText(nextVerse, count);
     const queues = {
@@ -917,12 +1065,12 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
     const newTranslation = translationItem(nextVerse, count);
     if (newTranslation) translation.push(newTranslation);
 
-    const afterMain = bodyHeight - main.height - (main.height > 0 ? regionGap : 0);
+    const afterMain = pageBody - main.height - (main.height > 0 ? regionGap : 0);
     // Let the notes catch up (up to 1.5x their usual share) when they are lagging behind, but never
     // take more than what's left below the main text.
     const notesCap = Math.max(0, Math.min(
       afterMain - notesRuleHeight - regionGap,
-      bodyHeight * (carryNotes.size > 0
+      pageBody * (carryNotes.size > 0
         ? Math.min(0.5, layout.maxNotesFraction * 1.5)
         : layout.maxNotesFraction)));
 
@@ -1021,7 +1169,7 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
     const used = main.height
       + streamsHeight
       + (notesResult.height > 0 ? regionGap + notesRuleHeight + notesResult.height : 0);
-    return {count, main, streams, notesQueue, notesResult, complete, fill: used / bodyHeight};
+    return {count, main, streams, notesQueue, notesResult, complete, fill: used / pageBody};
   };
 
   const hasCarry = () => [1, 2].some(tier => (
@@ -1059,8 +1207,9 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
     let lastComplete: Candidate | undefined;
     let firstIncomplete: Candidate | undefined;
     for (let count = 1; nextVerse + count <= verses.length; count++) {
-      const tooTall = mainText(nextVerse, count).height > layout.maxMainFraction * bodyHeight;
-      if (count > 1 && tooTall) break;
+      const tooTall = mainText(nextVerse, count).height > layout.maxMainFraction * pageBody;
+      // The main-text cap gives way when the page would otherwise be left under-filled.
+      if (count > 1 && tooTall && (!lastComplete || lastComplete.fill >= layout.minPageFill)) break;
       const candidate = evaluate(count);
       if (candidate.complete) {
         lastComplete = candidate;
@@ -1133,10 +1282,12 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
   });
 
   const pages: MgPage[] = [];
+  // Height used on each page (for starting the addenda on the last page when there's room).
+  const pageUsed: number[] = [];
   let lastVerse = 0;
   while ((nextVerse < verses.length || hasCarry()) && pages.length < 2000) {
     const candidate = choose();
-    const pageIndex = pages.length;
+    const pageIndex = pageOffset + pages.length;
     const regions: RegionLayout[] = [];
     for (const stream of candidate.streams) {
       if (stream.result.height <= 0) continue;
@@ -1162,12 +1313,16 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
       ? `–${last.chapter !== first.chapter ? `${last.chapter}:` : ""}${last.verse}`
       : "";
     const hasMain = candidate.main.height > 0;
+    const isFirstPage = pages.length === 0;
+    const headerEnglish = candidate.count > 0
+      ? `${doc.book} ${first.chapter}:${first.verse}${range}`
+      : `${doc.book} ${last.chapter}:${last.verse} (cont.)`;
     pages.push({
       index: pageIndex,
+      titleHtml: isFirstPage ? sectionTitleHtml : undefined,
+      titleHeight: isFirstPage && sectionTitleHtml ? sectionTitleHeight : undefined,
       headerHebrew: `${bookHebrew} ${chapterHebrew}`,
-      headerEnglish: candidate.count > 0
-        ? `${doc.book} ${first.chapter}:${first.verse}${range}`
-        : `${doc.book} ${last.chapter}:${last.verse} (cont.)`,
+      headerEnglish: showEnglish(labels.runningHead) ? headerEnglish : "",
       mainHtml: hasMain ? candidate.main.main : undefined,
       targumHtml: hasMain ? candidate.main.targum : undefined,
       englishHtml: hasMain ? candidate.main.english : undefined,
@@ -1177,6 +1332,9 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
         ? [`${first.chapter}:${first.verse}`, `${last.chapter}:${last.verse}`]
         : undefined,
     });
+
+    pageUsed.push(candidate.fill * pageBody + (bodyHeight - pageBody));
+    pageBody = bodyHeight;
 
     // Advance state.
     if (candidate.count > 0) lastVerse = nextVerse + candidate.count - 1;
@@ -1198,7 +1356,7 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
   }
 
 
-  // ---- Addenda: the continuations of comments cut by a line limit.
+  // ---- Addenda: continuations of comments cut by a line limit, and English set aside.
   if (addenda.length > 0) {
     const firstPage = new Map<string, number>();
     for (const page of pages) {
@@ -1219,53 +1377,103 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
     const items: Item[] = [];
     for (const addendum of addenda) {
       const {entry} = addendum;
-      const config = configById.get(entry.commentator)!;
       const {hebrewName} = names(entry.commentator);
       const page = firstPage.get(entry.ref);
       const heading = measure({
-        key: `addendum-head:${addendum.number}`,
+        key: `addendum-head:${addendum.number}:${page}`,
         className: "blk mg-chead mg-addendum-head tier-1",
         dir: "rtl",
         tokens: tokenize(
           `${hebrewNumeral(addendum.number)}. ${escapeHtml(hebrewName)}, `
           + `${continuationLabel(entry.verseIndex)}`
-          + `${page === undefined ? "" : ` <span class="cont">(עמ׳ ${page + 1})</span>`}`),
+          + `${page === undefined ? "" : ` <span class="cont">(מעמ׳ ${page + 1})</span>`}`),
       }, addendaWidth);
+      // The heading carries the addendum number so its page can be found once laid out.
       items.push({
         block: heading,
         spaceBefore: 0.8 * tierSizePt(1) * PT,
         keepWithNext: true,
         unsplittable: true,
-        data: {kind: "chead", measured: heading, lineOffset: 0},
+        data: {kind: "chead", measured: heading, lineOffset: 0, entry, commentator: `#${addendum.number}`},
       });
-      const rest = measure({...addendum.rest, key: `${addendum.rest.key}:${addendaWidth}`}, addendaWidth);
-      items.push({
-        block: rest,
-        spaceBefore: 0,
-        data: {kind: "comment", measured: rest, lineOffset: 0, commentator: entry.commentator, entry},
-      });
-      if (addendum.english?.trim()) {
+      if (addendum.hebrewRest) {
+        const rest = measure(
+          {...addendum.hebrewRest, key: `${addendum.hebrewRest.key}:${addendaWidth}`}, addendaWidth);
+        items.push({
+          block: rest,
+          spaceBefore: 0,
+          keepWithNext: Boolean(addendum.english),
+          data: {kind: "comment", measured: rest, lineOffset: 0, commentator: entry.commentator, entry},
+        });
+      }
+      if (addendum.english) {
         const english = measure({
           key: `addendum-en:${addendum.number}`,
           className: "blk mg-comment-en tier-1",
-          style: englishStyle(config),
+          style: addendum.englishStyle,
           dir: "ltr",
           lang: "en",
-          tokens: tokenize(addendum.english),
+          tokens: addendum.english,
         }, addendaWidth);
         items.push({
           block: english,
-          spaceBefore: 0.3 * tierSizePt(1) * PT,
+          spaceBefore: addendum.hebrewRest ? 0.3 * tierSizePt(1) * PT : 0,
           data: {kind: "comment-en", measured: english, lineOffset: 0, commentator: entry.commentator, entry},
         });
       }
     }
 
     const titleHtml = '<div class="mg-addenda-title"><span class="he">המשכים</span>'
-      + '<span class="en">Continuations</span></div>';
+      + `${showEnglish(labels.continuations) ? '<span class="en">Continuations</span>' : ""}</div>`;
     const titleHeight = measureHtmlHeight(titleHtml, "", W);
+    const addendumPage = new Map<number, number>();
+
+    // The verses a page of addenda continues, for its running head.
+    const rangeOf = (result: ColumnsResult<MgItemData>) => {
+      const indices = result.columns.flatMap(x => x.fragments)
+        .map(x => x.item.data.entry?.verseIndex)
+        .filter((x): x is number => x !== undefined);
+      if (indices.length === 0) return undefined;
+      return [verses[Math.min(...indices)], verses[Math.max(...indices)]];
+    };
+    const recordPages = (result: ColumnsResult<MgItemData>, pageIndex: number) => {
+      for (const fragment of result.columns.flatMap(x => x.fragments)) {
+        const tag = fragment.item.data.commentator;
+        if (fragment.item.data.kind === "chead" && tag?.startsWith("#")) {
+          addendumPage.set(parseInt(tag.slice(1)), pageIndex);
+        }
+      }
+    };
+
     let cursor = START;
     let first = true;
+    // Start on the last page if there's room for the title and a few lines.
+    const lastIndex = pages.length - 1;
+    const room = lastIndex >= 0 ? bodyHeight - pageUsed[lastIndex] - regionGap : 0;
+    if (room > titleHeight + regionGap + 5 * tierSizePt(1) * PT * typography.lineHeight) {
+      const space = room - titleHeight - regionGap;
+      const result = fillColumns(items, cursor, addendaColumns, space, undefined, true);
+      if (result.columns.some(x => x.fragments.length > 0)) {
+        const page = pages[lastIndex];
+        const balanced = cursorDone(items, result.end)
+          ? fillColumnsBalanced(items, cursor, addendaColumns, room - titleHeight - regionGap)
+          : result;
+        page.regions.splice(
+          page.regions.findIndex(x => x.kind === "notes") === -1
+            ? page.regions.length
+            : page.regions.findIndex(x => x.kind === "notes"),
+          0,
+          {
+            ...columnsRegion("addenda", balanced, addendaColumns, addendaWidth, page.index),
+            titleHtml,
+            titleHeight,
+          });
+        recordPages(balanced, page.index);
+        cursor = balanced.end;
+        first = false;
+      }
+    }
+
     while (!cursorDone(items, cursor) && pages.length < 4000) {
       const available = bodyHeight - (first ? titleHeight + regionGap : 0);
       let result = fillColumns(items, cursor, addendaColumns, available);
@@ -1273,18 +1481,43 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
         // The last page: balance its columns.
         result = fillColumnsBalanced(items, cursor, addendaColumns, available);
       }
-      const pageIndex = pages.length;
+      const pageIndex = pageOffset + pages.length;
+      const range = rangeOf(result);
+      const rangeHebrew = range
+        ? ` · ${verseRangeHebrew(range[0], range[1])}`
+        : "";
+      const rangeEnglish = range
+        ? ` · ${doc.book} ${range[0].chapter}:${range[0].verse}–${range[1].chapter}:${range[1].verse}`
+        : "";
       pages.push({
         index: pageIndex,
-        headerHebrew: "המשכים",
-        headerEnglish: "Continuations",
-        titleHtml: first ? titleHtml : undefined,
-        titleHeight: first ? titleHeight : undefined,
+        headerHebrew: `המשכים${rangeHebrew}`,
+        headerEnglish: showEnglish(labels.runningHead) ? `Continuations${rangeEnglish}` : "",
         mainHeight: 0,
-        regions: [columnsRegion("tier-1", result, addendaColumns, addendaWidth, pageIndex)],
+        regions: [{
+          ...columnsRegion("addenda", result, addendaColumns, addendaWidth, pageIndex),
+          titleHtml: first ? titleHtml : undefined,
+          titleHeight: first ? titleHeight : undefined,
+        }],
       });
+      recordPages(result, pageIndex);
       cursor = result.end;
       first = false;
+    }
+
+    // Fill in the markers' page numbers.
+    const fill = (html: string) => html.replace(
+      /(data-addendum="(\d+)">[^<]*?)000/g,
+      (_, prefix: string, number: string) => `${prefix}${(addendumPage.get(parseInt(number)) ?? 0) + 1}`);
+    for (const page of pages) {
+      for (const region of page.regions) {
+        for (const column of region.columns) {
+          for (const fragment of column) fragment.html = fill(fragment.html);
+        }
+        for (const row of region.rows ?? []) {
+          for (const lane of row.lanes) if (lane) lane.html = fill(lane.html);
+        }
+      }
     }
   }
 
@@ -1310,6 +1543,9 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
       pairHebrewWidth,
       pairEnglishWidth,
       columnGap: gap,
+      mainClass,
+      englishClass,
+      englishMainStyle,
     },
     marginsFor: box.marginsFor,
     stats: {
@@ -1319,4 +1555,43 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
       millis: Math.round(performance.now() - startTime),
     },
   };
+}
+
+/** Paginates every section of a document, one after another. */
+export function paginateMikraotDocument(
+  doc: MikraotDocument,
+  chaptersBySection: MikraotChapter[][],
+): MikraotLayout {
+  const startTime = performance.now();
+  let combined: MikraotLayout | undefined;
+  doc.sections.forEach((section, i) => {
+    const titled = Boolean(section.title) || doc.sections.length > 1;
+    const result = paginateMikraot(doc, section, chaptersBySection[i] ?? [], {
+      pageOffset: combined?.pages.length ?? 0,
+      title: titled
+        ? {
+          hebrew: sectionLabel(doc, section, true),
+          // A custom title is set as written; generated titles also get an English line.
+          english: section.title ? undefined : sectionLabel(doc, section, false),
+        }
+        : undefined,
+    });
+    if (!combined) {
+      combined = result;
+    } else {
+      combined = {
+        ...combined,
+        pages: [...combined.pages, ...result.pages],
+        stats: {
+          verses: combined.stats.verses + result.stats.verses,
+          comments: combined.stats.comments + result.stats.comments,
+          notes: combined.stats.notes + result.stats.notes,
+          millis: 0,
+        },
+      };
+    }
+  });
+  if (!combined) throw new Error("A document needs at least one section");
+  combined.stats.millis = Math.round(performance.now() - startTime);
+  return combined;
 }

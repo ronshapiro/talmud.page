@@ -12,6 +12,7 @@ import {
   SegmentOverride,
   SiddurDocument,
   defaultMikraotDocument,
+  defaultSection,
   defaultSiddurDocument,
 } from "../model/documents";
 import {tokenize, tokensText} from "../model/richText";
@@ -181,11 +182,11 @@ function mikraotGenesis(): MikraotDocument {
 function mikraotExodus(): MikraotDocument {
   const doc = defaultMikraotDocument("Exodus 20 with Onkelos", "Exodus");
   doc.id = "mikraot-exodus-20";
-  doc.startChapter = 20;
-  doc.endChapter = 20;
+  const [section] = doc.sections;
+  section.range = {kind: "chapters", startChapter: 20, endChapter: 20};
   doc.layout = {...doc.layout, showTargum: true};
-  doc.commentators = doc.commentators.map(x => {
-    if (x.id === "ibn-ezra") return {...x, tier: 1 as const, showEnglish: true};
+  section.commentators = section.commentators.map(x => {
+    if (x.id === "ibn-ezra") return {...x, tier: 1 as const, english: "footnote" as const};
     if (x.id === "or-hachaim") return {...x, tier: 2 as const};
     return x;
   });
@@ -195,8 +196,7 @@ function mikraotExodus(): MikraotDocument {
 function mikraotIsaiah(): MikraotDocument {
   const doc = defaultMikraotDocument("Isaiah 40, A4", "Isaiah");
   doc.id = "mikraot-isaiah-40";
-  doc.startChapter = 40;
-  doc.endChapter = 40;
+  doc.sections[0].range = {kind: "chapters", startChapter: 40, endChapter: 40};
   doc.page = {...doc.page,
     preset: "a4",
     unit: "mm",
@@ -205,6 +205,38 @@ function mikraotIsaiah(): MikraotDocument {
     margins: {top: 16, bottom: 16, inner: 18, outer: 14}};
   doc.typography = {...doc.typography, showTrope: false};
   doc.layout = {...doc.layout, notesColumns: 3, tier2Columns: 3};
+  return doc;
+}
+
+/** A parsha read twice: once with Rashi only, then again in depth without repeating the verses. */
+function mikraotParshaStudy(): MikraotDocument {
+  const doc = defaultMikraotDocument("Parashat Vayakhel: Rashi, then in depth", "Exodus");
+  doc.id = "mikraot-vayakhel-study";
+  const reading = doc.sections[0];
+  reading.range = {kind: "parsha", parsha: "Vayakhel"};
+  reading.title = "ויקהל עם רש״י";
+  reading.commentators = reading.commentators.map(x => (
+    x.id === "rashi" ? {...x, tier: 1 as const, english: "side-by-side" as const, wrap: true} : {...x, tier: 0 as const}));
+  reading.mainEnglish = "side-by-side";
+  const study = {
+    ...defaultSection("Exodus", {kind: "parsha", parsha: "Vayakhel"}),
+    id: "section-study",
+    title: "ויקהל: עיון",
+    showMainText: false,
+  };
+  study.commentators = study.commentators.map(x => (
+    x.id === "rashi" ? {...x, tier: 0 as const} : x));
+  doc.sections = [reading, study];
+  doc.layout = {...doc.layout, maxCommentLines: 18};
+  return doc;
+}
+
+function mikraotHebrewOnly(): MikraotDocument {
+  const doc = defaultMikraotDocument("Parashat Bereshit, Hebrew only", "Genesis");
+  doc.id = "mikraot-bereshit-hebrew";
+  doc.hebrewOnly = true;
+  doc.sections[0].range = {kind: "parsha", parsha: "Bereshit"};
+  doc.layout = {...doc.layout, maxCommentLines: 16};
   return doc;
 }
 
@@ -229,4 +261,6 @@ function mikraotIsaiah(): MikraotDocument {
   write("mikraot-genesis-1.json", mikraotGenesis());
   write("mikraot-exodus-20.json", mikraotExodus());
   write("mikraot-isaiah-40.json", mikraotIsaiah());
+  write("mikraot-vayakhel-study.json", mikraotParshaStudy());
+  write("mikraot-bereshit-hebrew.json", mikraotHebrewOnly());
 })();

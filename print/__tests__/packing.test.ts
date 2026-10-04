@@ -108,3 +108,12 @@ describe("pairs", () => {
     expect(rebased.data.lineOffsets).toEqual([3, 5]);
   });
 });
+
+describe("keep-with-next in optional columns", () => {
+  test("a heading alone at the end of an optional column moves on", () => {
+    const items = [item(1, {keepWithNext: true, unsplittable: true}), item(5)];
+    expect(fillColumn(items, START, 15, undefined, true).fragments).toEqual([]);
+    // In a column that must make progress, the heading stays.
+    expect(fillColumn(items, START, 15).fragments.length).toBe(1);
+  });
+});

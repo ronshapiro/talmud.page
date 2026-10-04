@@ -1,6 +1,6 @@
 {
-  "id": "mikraot-genesis-1",
-  "name": "Genesis 1 (default)",
+  "id": "mikraot-vayakhel-study",
+  "name": "Parashat Vayakhel: Rashi, then in depth",
   "kind": "mikraot",
   "schemaVersion": 1,
   "createdAt": 1790812800000,
@@ -18,14 +18,13 @@
     },
     "binding": "rtl"
   },
-  "book": "Genesis",
+  "book": "Exodus",
   "sections": [
     {
-      "id": "section-mutv74j6-cd8n8i",
+      "id": "section-mutv74j6-vglnv7",
       "range": {
-        "kind": "chapters",
-        "startChapter": 1,
-        "endChapter": 1
+        "kind": "parsha",
+        "parsha": "Vayakhel"
       },
       "showMainText": true,
       "commentators": [
@@ -37,6 +36,84 @@
         {
           "id": "rashi",
           "tier": 1,
+          "english": "side-by-side",
+          "wrap": true
+        },
+        {
+          "id": "ramban",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "ibn-ezra",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "rashbam",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "sforno",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "radak",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "or-hachaim",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "baal-haturim",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "siftei-chakhamim",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "chizkuni",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "kli-yakar",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "malbim",
+          "tier": 0,
+          "english": "none"
+        }
+      ],
+      "title": "ויקהל עם רש״י",
+      "mainEnglish": "side-by-side"
+    },
+    {
+      "id": "section-study",
+      "range": {
+        "kind": "parsha",
+        "parsha": "Vayakhel"
+      },
+      "showMainText": false,
+      "commentators": [
+        {
+          "id": "onkelos",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "rashi",
+          "tier": 0,
           "english": "footnote"
         },
         {
@@ -94,7 +171,8 @@
           "tier": 0,
           "english": "none"
         }
-      ]
+      ],
+      "title": "ויקהל: עיון"
     }
   ],
   "hebrewOnly": false,
@@ -168,6 +246,6 @@
     "showTargum": false,
     "mainEnglish": "notes",
     "columnRules": true,
-    "maxCommentLines": 0
+    "maxCommentLines": 18
   }
 }
