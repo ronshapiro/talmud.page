@@ -95,7 +95,8 @@ notes live in `print/README.md`.
 - Choose any of Sefaria's translations of the book (English and other languages).
 - Placement: in the notes, side by side, below the Hebrew, or none (per document or per section).
 - Side by side, lines align with the Hebrew (same line pitch, paragraph gaps and heading heights;
-  matched first baselines), which can be turned off.
+  matched first baselines), which can be turned off. Aligned lines use the larger of the main
+  text's and the translation's line pitch, so raising either line height spaces both.
 
 ### Commentaries
 - Any commentary or targum that Sefaria links to the chapter and that is organized by verse can be

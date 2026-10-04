@@ -198,7 +198,10 @@ export function mikraotCssVars(doc: MikraotDocument): string {
     `--notes-size: ${t.notesSizePt}pt`,
     `--lh: ${t.lineHeight}`,
     `--main-lh: ${t.mainLineHeight}`,
-    `--main-pitch: ${t.mainSizePt * t.mainLineHeight}pt`,
+    // The line grid shared by aligned side-by-side Hebrew and English: the larger of their pitches.
+    `--main-pitch: ${t.alignMainLines
+      ? Math.max(t.mainSizePt * t.mainLineHeight, t.englishSizePt * 1.25 * t.mainEnglishLineHeight)
+      : t.mainSizePt * t.mainLineHeight}pt`,
     `--targum-lh: ${t.targumLineHeight}`,
     `--main-en-lh: ${t.mainEnglishLineHeight}`,
     `--comment-en-lh: ${t.commentaryEnglishLineHeight}`,

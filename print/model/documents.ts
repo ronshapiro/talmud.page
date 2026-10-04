@@ -209,8 +209,8 @@ export interface MikraotTypography {
   // Line heights of the other element types.
   mainLineHeight: number;
   targumLineHeight: number;
-  // Translation set with the verses. With side-by-side placement and alignMainLines, the English
-  // instead uses the Hebrew line pitch so the lines line up.
+  // Translation set with the verses. With side-by-side placement and alignMainLines, both sides
+  // use the larger of the Hebrew and English line pitches so the lines line up.
   mainEnglishLineHeight: number;
   alignMainLines: boolean;
   commentaryEnglishLineHeight: number;

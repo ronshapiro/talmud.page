@@ -1088,7 +1088,7 @@ body.print-app {
 
 /* Side-by-side verse translation on the Hebrew's line grid: equal line pitch, paragraph gaps and
    heading heights, so lines on both sides stay level. */
-.mikraot .mg-main-en.aligned {
+.mikraot .mg-main.aligned, .mikraot .mg-main-en.aligned {
   line-height: var(--main-pitch);
 }
 

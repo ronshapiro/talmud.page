@@ -885,6 +885,13 @@ export function MikraotSettings({
               onChange={e => setTypography("alignMainLines", e.target.checked)} />
           </Row>
         ) : null}
+      {english && doc.typography.alignMainLines
+        ? (
+          <div className="hint">
+            Aligned side-by-side lines share one line pitch: the larger of the main text&apos;s
+            and the verse translation&apos;s.
+          </div>
+        ) : null}
 
       <h3>Layout</h3>
       {([
