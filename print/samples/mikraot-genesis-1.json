@@ -21,7 +21,7 @@
   "book": "Genesis",
   "sections": [
     {
-      "id": "section-mutv74j6-cd8n8i",
+      "id": "section-muu9edz3-xky905",
       "range": {
         "kind": "chapters",
         "startChapter": 1,
@@ -168,6 +168,8 @@
     "showTargum": false,
     "mainEnglish": "notes",
     "columnRules": true,
-    "maxCommentLines": 0
+    "maxCommentLines": 0,
+    "continuationTranslationRefs": false,
+    "continuationHeading": "{n}. {name}, {ref} (מעמ׳ {page})"
   }
 }

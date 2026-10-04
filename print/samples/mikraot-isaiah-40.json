@@ -21,7 +21,7 @@
   "book": "Isaiah",
   "sections": [
     {
-      "id": "section-mutv74j6-7vnasi",
+      "id": "section-muu9edz3-h8nvgl",
       "range": {
         "kind": "chapters",
         "startChapter": 40,
@@ -143,6 +143,8 @@
     "showTargum": false,
     "mainEnglish": "notes",
     "columnRules": true,
-    "maxCommentLines": 0
+    "maxCommentLines": 0,
+    "continuationTranslationRefs": false,
+    "continuationHeading": "{n}. {name}, {ref} (מעמ׳ {page})"
   }
 }

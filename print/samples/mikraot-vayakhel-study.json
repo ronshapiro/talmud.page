@@ -21,7 +21,7 @@
   "book": "Exodus",
   "sections": [
     {
-      "id": "section-mutv74j6-vglnv7",
+      "id": "section-muu9edz3-ev1hjw",
       "range": {
         "kind": "parsha",
         "parsha": "Vayakhel"
@@ -246,6 +246,8 @@
     "showTargum": false,
     "mainEnglish": "notes",
     "columnRules": true,
-    "maxCommentLines": 18
+    "maxCommentLines": 18,
+    "continuationTranslationRefs": false,
+    "continuationHeading": "{n}. {name}, {ref} (מעמ׳ {page})"
   }
 }

@@ -313,6 +313,27 @@ export interface SectionOptions {
   title?: {hebrew: string; english?: string};
 }
 
+/**
+ * Fills a continuation heading template (CONTINUATION_HEADING_FORMATS). Values are HTML; the
+ * template is escaped. Parenthesized parts are set in the lighter "cont" style, and a part that
+ * needs the page is dropped when there is none.
+ */
+export function continuationHeadingHtml(
+  template: string,
+  values: {n: string; name: string; ref: string; cv: string; page?: string},
+): string {
+  const fill = (text: string) => escapeHtml(text).replace(
+    /{(n|name|ref|cv|page)}/g, (_, key: keyof typeof values) => values[key] ?? "");
+  const parts = template.split(/(\([^()]*\))/);
+  return parts.map(part => {
+    if (!part.startsWith("(")) {
+      return values.page === undefined ? fill(part.replace(/\s*{page}/g, "")) : fill(part);
+    }
+    if (values.page === undefined && part.includes("{page}")) return "";
+    return `<span class="cont">${fill(part)}</span>`;
+  }).join("").replace(/\s+$/, "");
+}
+
 export function paginateMikraot(
   doc: MikraotDocument,
   section: MikraotSection,
@@ -648,7 +669,7 @@ export function paginateMikraot(
       const {number} = ensure();
       addendum!.english = tokenize(pending.englishHtml);
       addendum!.englishStyle = englishStyle(config);
-      if (!addendum!.hebrewRest) {
+      if (!addendum!.hebrewRest && layout.continuationTranslationRefs) {
         // Point from the Hebrew to its translation.
         entry.he = measure({
           ...entry.he.spec,
@@ -711,6 +732,16 @@ export function paginateMikraot(
     return multipleChapters
       ? `פרק ${numeral(chapter)} פסוק ${numeral(number)}`
       : `פסוק ${numeral(number)}`;
+  };
+  // "א:י״א" (marks only on multi-letter numerals).
+  const chapterVerse = (verse: number) => {
+    const {chapter, verse: number} = verses[verse];
+    const short = (n: number) => {
+      if (typography.commentLabel.numerals === "arabic") return String(n);
+      const hebrew = intToHebrewNumeral(n);
+      return hebrew.length === 1 ? hebrew : `${hebrew.slice(0, -1)}״${hebrew.slice(-1)}`;
+    };
+    return `${short(chapter)}:${short(number)}`;
   };
   const headingCache = new Map<string, MeasuredBlock>();
   const headingBlock = (
@@ -1383,10 +1414,13 @@ export function paginateMikraot(
         key: `addendum-head:${addendum.number}:${page}`,
         className: "blk mg-chead mg-addendum-head tier-1",
         dir: "rtl",
-        tokens: tokenize(
-          `${hebrewNumeral(addendum.number)}. ${escapeHtml(hebrewName)}, `
-          + `${continuationLabel(entry.verseIndex)}`
-          + `${page === undefined ? "" : ` <span class="cont">(מעמ׳ ${page + 1})</span>`}`),
+        tokens: tokenize(continuationHeadingHtml(layout.continuationHeading, {
+          n: hebrewNumeral(addendum.number),
+          name: escapeHtml(hebrewName),
+          ref: continuationLabel(entry.verseIndex),
+          cv: chapterVerse(entry.verseIndex),
+          page: page === undefined ? undefined : String(page + 1),
+        })),
       }, addendaWidth);
       // The heading carries the addendum number so its page can be found once laid out.
       items.push({

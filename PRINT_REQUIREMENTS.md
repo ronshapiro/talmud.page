@@ -114,10 +114,15 @@ notes live in `print/README.md`.
 - Line limits (per comment, per commentator, or global) apply to the Hebrew, to stacked and
   side-by-side English, and to footnotes, each separately. A cut block ends with a marker naming
   the addendum and the page it is on ("(המשך ב׳, עמ׳ 23)", "(continued in addendum 5,
-  p. 23)"); English set aside gets a compact pointer ("ד׳·20").
+  p. 23)").
+- A comment whose English is set in the continuations can optionally carry a compact pointer to it
+  ("ד׳·20"); off by default.
 - The rest is set in a **Continuations** section at the end of each section, starting on the last
-  page if there is room. Each entry names the commentator, verse and originating page; running
-  heads list the verses continued on that page.
+  page if there is room. Running heads list the verses continued on that page.
+- Each continuation's heading names the commentator and verse, in a chosen format:
+  "ע״ד. העמק דבר, פרק א׳ פסוק י״א (מעמ׳ 5)", "[ע״ד] העמק דבר - א:י״א", "[ע״ד] העמק דבר - א:י״א
+  (עמ׳ 5)", "ע״ד. העמק דבר (א:י״א)", "א:י״א העמק דבר [ע״ד]", or a custom template with {n},
+  {name}, {ref}, {cv} and {page}.
 - Commentary continued from a previous page is headed with the verse it continues
   ("רמב״ן (המשך פסוק א׳)"); continued notes and translations are labelled "(cont.)".
 

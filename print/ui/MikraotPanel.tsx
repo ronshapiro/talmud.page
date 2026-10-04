@@ -4,6 +4,7 @@ import {MikraotChapter} from "../model/dataTypes";
 import {applyCuration, buildCurationRequest, setCommentOverride} from "../model/curation";
 import {
   CommentOverride,
+  CONTINUATION_HEADING_FORMATS,
   CommentatorConfig,
   ENGLISH_MODES,
   EnglishMode,
@@ -670,6 +671,8 @@ export function MikraotSettings({
 }): React.ReactElement {
   const section = doc.sections[activeSection];
   const english = !doc.hebrewOnly;
+  const presetHeading = CONTINUATION_HEADING_FORMATS.some(
+    x => x.template === doc.layout.continuationHeading);
   const setTypography = (key: keyof MikraotDocument["typography"], value: any) => (
     update(x => ({...x, typography: {...x.typography, [key]: value}})));
   const setLayout = (key: keyof MikraotDocument["layout"], value: any) => (
@@ -906,6 +909,37 @@ export function MikraotSettings({
       <Row label="Column rules">
         <input type="checkbox" checked={doc.layout.columnRules} onChange={e => setLayout("columnRules", e.target.checked)} />
       </Row>
+
+      <h3>Continuations</h3>
+      <Row label="Heading format">
+        <select
+          value={presetHeading ? doc.layout.continuationHeading : "custom"}
+          onChange={e => {
+            if (e.target.value !== "custom") setLayout("continuationHeading", e.target.value);
+          }}>
+          {CONTINUATION_HEADING_FORMATS.map(x => (
+            <option key={x.template} value={x.template}>{x.label}</option>
+          ))}
+          <option value="custom">Custom…</option>
+        </select>
+      </Row>
+      <Row label="Heading template">
+        <input
+          type="text"
+          dir="rtl"
+          value={doc.layout.continuationHeading}
+          title="{n} number, {name} commentator, {ref} פרק א׳ פסוק י״א, {cv} א:י״א, {page} page"
+          onChange={e => setLayout("continuationHeading", e.target.value)} />
+      </Row>
+      {english
+        ? (
+          <Row label="Point to translations in the continuations">
+            <input
+              type="checkbox"
+              checked={doc.layout.continuationTranslationRefs}
+              onChange={e => setLayout("continuationTranslationRefs", e.target.checked)} />
+          </Row>
+        ) : null}
     </div>
   );
 }

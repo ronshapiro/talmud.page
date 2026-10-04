@@ -247,9 +247,27 @@ export interface MikraotLayout {
   // Comments longer than this many lines are cut, continuing in an addenda section at the end of
   // the book. 0 = no limit.
   maxCommentLines: number;
+  // Mark a comment whose English is set in the continuations with a pointer to it ("ד׳·20").
+  continuationTranslationRefs: boolean;
+  // The heading of each continuation: a template (see CONTINUATION_HEADING_FORMATS).
+  continuationHeading: string;
   /** @deprecated Replaced by mainEnglish. */
   showVerseTranslation?: boolean;
 }
+
+/**
+ * Preset templates for continuation headings. Placeholders: {n} the continuation's number, {name}
+ * the commentator, {ref} "פרק א׳ פסוק י״א" (just the verse within a single chapter), {cv} "א:י״א",
+ * {page} the page the comment starts on. Parentheses are set in a lighter style; a parenthesis
+ * containing {page} is dropped when the page isn't known.
+ */
+export const CONTINUATION_HEADING_FORMATS: {template: string; label: string}[] = [
+  {template: "{n}. {name}, {ref} (מעמ׳ {page})", label: "ע״ד. העמק דבר, פרק א׳ פסוק י״א (מעמ׳ 5)"},
+  {template: "[{n}] {name} - {cv}", label: "[ע״ד] העמק דבר - א:י״א"},
+  {template: "[{n}] {name} - {cv} (עמ׳ {page})", label: "[ע״ד] העמק דבר - א:י״א (עמ׳ 5)"},
+  {template: "{n}. {name} ({cv})", label: "ע״ד. העמק דבר (א:י״א)"},
+  {template: "{cv} {name} [{n}]", label: "א:י״א העמק דבר [ע״ד]"},
+];
 
 // What a section covers: a range of chapters, or a weekly Torah portion (parshiyot.ts id).
 export type SectionRange =
@@ -453,6 +471,8 @@ export function defaultMikraotDocument(name = "Mikraot Gedolot", book = "Genesis
       mainEnglish: "notes",
       columnRules: true,
       maxCommentLines: 0,
+      continuationTranslationRefs: false,
+      continuationHeading: CONTINUATION_HEADING_FORMATS[0].template,
     },
   };
 }

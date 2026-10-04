@@ -21,7 +21,7 @@
   "book": "Genesis",
   "sections": [
     {
-      "id": "section-mutv74j7-itjzz7",
+      "id": "section-muu9edz4-1vzy0p",
       "range": {
         "kind": "parsha",
         "parsha": "Bereshit"
@@ -167,6 +167,8 @@
     "showTargum": false,
     "mainEnglish": "notes",
     "columnRules": true,
-    "maxCommentLines": 16
+    "maxCommentLines": 16,
+    "continuationTranslationRefs": false,
+    "continuationHeading": "{n}. {name}, {ref} (מעמ׳ {page})"
   }
 }

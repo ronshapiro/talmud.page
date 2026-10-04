@@ -21,7 +21,7 @@
   "book": "Exodus",
   "sections": [
     {
-      "id": "section-mutv74j6-ivv0nk",
+      "id": "section-muu9edz3-xz11ub",
       "range": {
         "kind": "chapters",
         "startChapter": 20,
@@ -168,6 +168,8 @@
     "showTargum": true,
     "mainEnglish": "notes",
     "columnRules": true,
-    "maxCommentLines": 0
+    "maxCommentLines": 0,
+    "continuationTranslationRefs": false,
+    "continuationHeading": "{n}. {name}, {ref} (מעמ׳ {page})"
   }
 }
