@@ -584,7 +584,7 @@ export function paginateMikraot(
   // placeholder and filled in afterwards.
   const PAGE_PLACEHOLDER = "000";
   const hebrewMarker = (n: number, kind: "continued" | "translation") => tokenize(kind === "continued"
-    ? `<span class="mg-addendum-ref" data-addendum="${n}">(המשך בנספח ${hebrewNumeral(n)}, `
+    ? `<span class="mg-addendum-ref" data-addendum="${n}">(המשך ${hebrewNumeral(n)}, `
       + `עמ׳ ${PAGE_PLACEHOLDER})</span>`
     // A translation set aside gets a compact pointer: addendum number · page.
     : `<sup class="mg-addendum-ref compact" data-addendum="${n}">${hebrewNumeral(n)}·${PAGE_PLACEHOLDER}</sup>`);
