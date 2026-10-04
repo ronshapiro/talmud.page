@@ -18,7 +18,7 @@ import {siddurSection} from "../model/siddurEditions";
 export const PRINT_CACHE_ROOT = path.join(__dirname, "..", "..", "cached_outputs", "print");
 
 // Bump to invalidate processed (not raw) cache entries when transformations change.
-const PROCESSING_VERSION = 4;
+const PROCESSING_VERSION = 6;
 
 // When set, never touch the network; missing cache entries are errors.
 let offline = false;
@@ -100,8 +100,11 @@ function version(response: SefariaV3Response, language: "he" | "en"): SefariaV3V
 // Text cleanup, using the web app's source_formatting pipeline. Loaded lazily because it pulls in
 // JSDOM, which is slow to import.
 
-const PEH_RE = /\s*<span class="mam-spi-pe">{פ}<\/span>(<br\s*\/?>)?\s*/g;
-const SAMEKH_RE = /\s*<span class="mam-spi-samekh">{ס}<\/span>\s*/g;
+// The markers come with spaces around them, often &nbsp; entities (a setuma's gap is a run of
+// them), which go with them: the layout sets its own gap.
+const SPACES = "(?:\\s|&nbsp;|&#160;)*";
+const PEH_RE = new RegExp(`${SPACES}<span class="mam-spi-pe">{פ}</span>(<br\\s*/?>)?${SPACES}`, "g");
+const SAMEKH_RE = new RegExp(`${SPACES}<span class="mam-spi-samekh">{ס}</span>${SPACES}`, "g");
 
 function stripParashaMarkers(text: string): string {
   return text.replace(PEH_RE, " ").replace(SAMEKH_RE, " ").trim();
