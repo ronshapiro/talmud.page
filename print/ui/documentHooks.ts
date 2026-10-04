@@ -78,7 +78,14 @@ export interface DocumentState<T extends PrintDocument> {
 
 /** Loads the document for this page and persists edits (debounced) to IndexedDB. */
 export function useDocument<T extends PrintDocument>(kind: DocumentKind): DocumentState<T> {
-  const [doc, setDoc] = useState<T>();
+  const [doc, setDocState] = useState<T>();
+  // The latest document, so updates apply immediately (and in order) rather than in a deferred
+  // state updater, where React 16 has already recycled the event a handler read its value from.
+  const docRef = useRef<T>();
+  const setDoc = useCallback((next: T) => {
+    docRef.current = next;
+    setDocState(next);
+  }, []);
   const [error, setError] = useState<string>();
   const [saving, setSaving] = useState(false);
   const saveTimer = useRef<number>();
@@ -90,7 +97,7 @@ export function useDocument<T extends PrintDocument>(kind: DocumentKind): Docume
         if (!isHeadless()) setDocParam(x.id);
       })
       .catch(e => setError(String(e)));
-  }, [kind]);
+  }, [kind, setDoc]);
 
   const persist = useCallback((next: T) => {
     if (isHeadless()) return;
@@ -102,13 +109,12 @@ export function useDocument<T extends PrintDocument>(kind: DocumentKind): Docume
   }, []);
 
   const update = useCallback((updater: (doc: T) => T) => {
-    setDoc(previous => {
-      if (!previous) return previous;
-      const next = {...updater(previous), updatedAt: Date.now()};
-      persist(next);
-      return next;
-    });
-  }, [persist]);
+    const previous = docRef.current;
+    if (!previous) return;
+    const next = {...updater(previous), updatedAt: Date.now()};
+    setDoc(next);
+    persist(next);
+  }, [persist, setDoc]);
 
   const replace = useCallback((next: T) => {
     setDoc(next);
@@ -116,7 +122,7 @@ export function useDocument<T extends PrintDocument>(kind: DocumentKind): Docume
       documentStore.put(next);
       setDocParam(next.id);
     }
-  }, []);
+  }, [setDoc]);
 
   return {doc, error, update, replace, saving};
 }
