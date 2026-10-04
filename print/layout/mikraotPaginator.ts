@@ -56,6 +56,8 @@ interface CommentEntry {
   en?: MeasuredBlock;
   // Footnote mode.
   note?: MeasuredBlock;
+  // Side by side with wrapping: one block of English flowing around the floated Hebrew.
+  wrapped?: MeasuredBlock;
 }
 
 export interface MgItemData {
@@ -389,6 +391,9 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
     for (const config of activeCommentators) {
       const commentary = chapter.commentaries[config.id];
       if (!commentary) continue;
+      // English-only commentaries (e.g. Rav Hirsch) are set in English. In a commentary with
+      // Hebrew, a segment that only has English is a translation artifact and is skipped.
+      const englishOnly = commentary.verses.every(x => x.every(c => !c.he.trim()));
       commentary.verses.forEach((comments, v) => {
         let firstOnVerse = true;
         comments.forEach(comment => {
@@ -397,7 +402,7 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
           const tier = (override.tier ?? config.tier) as Tier;
           const hasHebrew = comment.he.trim().length > 0;
           const hasEnglish = comment.en.trim().length > 0;
-          if (tier === 0 || (!hasHebrew && !hasEnglish)) return;
+          if (tier === 0 || (!hasHebrew && (!hasEnglish || !englishOnly))) return;
           const index = verseIndex.get(`${chapter.chapter}:${v + 1}`);
           if (index === undefined) return;
           const label = firstOnVerse ? `${labelHtml(typography.commentLabel, v + 1, "mg-vlabel")} ` : "";
@@ -496,18 +501,64 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
     note: x.noteSpec ? measure(x.noteSpec, notesWidth) : undefined,
   }));
 
+  // Wrapping (as the web app's translationWrapped): the Hebrew floats at the start of a single
+  // English block, which flows beside it and then continues full-width below.
+  entries.forEach(entry => {
+    const config = configById.get(entry.commentator);
+    if (!config?.wrap || entry.english !== "side-by-side" || !entry.he || !entry.en) return;
+    // A float can't break across pages: keep very long Hebrew as a plain side-by-side row.
+    if (entry.he.height > 0.45 * box.contentHeightPx) return;
+    const heSpec = entry.he.spec;
+    const hebrewHtml = blockInnerHtml(heSpec, 0, heSpec.tokens.length, false);
+    // Line up the first baselines: push down whichever side starts higher.
+    const drop = entry.he.baseline - entry.en.baseline;
+    const floatStyle = [
+      "float: right",
+      `width: ${pairHebrewWidth}px`,
+      `margin-left: ${gap}px`,
+      `margin-top: ${-drop}px`,
+      "margin-bottom: 0.15em",
+      heSpec.style ?? "",
+    ].join("; ");
+    entry.wrapped = measure({
+      key: `wrap:${entry.ref}`,
+      className: `${entry.en.spec.className} mg-wrap`,
+      style: `${entry.en.spec.style ?? ""}; padding-top: ${Math.max(0, drop)}px`,
+      dir: "ltr",
+      lang: "en",
+      tokens: entry.en.spec.tokens,
+      leadHtml: `<div class="float-lead ${heSpec.className}" dir="rtl" style="${floatStyle}">${hebrewHtml}</div>`,
+    }, W);
+  });
+
   const fontPx = (id: string, tier: TierNumber) => hebrewSizePt(configById.get(id)!, tier) * PT;
   const notesFontPx = typography.notesSizePt * PT;
 
   // ---- Headings
+
+  // "פסוק ב׳" (or "פרק א פסוק ב׳" when the document spans chapters), in the commentary labels'
+  // numeral style.
+  const multipleChapters = chapters.length > 1;
+  const numeral = (n: number) => {
+    if (typography.commentLabel.numerals === "arabic") return String(n);
+    const hebrew = intToHebrewNumeral(n);
+    return hebrew.length === 1 ? `${hebrew}׳` : `${hebrew.slice(0, -1)}״${hebrew.slice(-1)}`;
+  };
+  const continuationLabel = (verse: number) => {
+    const {chapter, verse: number} = verses[verse];
+    return multipleChapters
+      ? `פרק ${numeral(chapter)} פסוק ${numeral(number)}`
+      : `פסוק ${numeral(number)}`;
+  };
   const headingCache = new Map<string, MeasuredBlock>();
   const headingBlock = (
     id: string,
     tier: TierNumber,
-    continued: boolean,
+    // The verse (index into `verses`) a continued commentary resumes, if it is continued.
+    continuedVerse: number | undefined,
     width: number,
   ): MeasuredBlock => {
-    const key = `${id}:${tier}:${continued}:${width}`;
+    const key = `${id}:${tier}:${continuedVerse}:${width}`;
     if (!headingCache.has(key)) {
       const name = escapeHtml(names(id).hebrewName);
       headingCache.set(key, measure({
@@ -515,14 +566,16 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
         className: `blk mg-chead tier-${tier}`,
         style: `font-size: ${hebrewSizePt(configById.get(id)!, tier) * 1.15}pt`,
         dir: "rtl",
-        tokens: tokenize(continued ? `${name} <span class="cont">(המשך)</span>` : name),
+        tokens: tokenize(continuedVerse === undefined
+          ? name
+          : `${name} <span class="cont">(המשך ${continuationLabel(continuedVerse)})</span>`),
       }, width));
     }
     return headingCache.get(key)!;
   };
 
-  const columnHeading = (id: string, tier: TierNumber, continued: boolean): Item => {
-    const block = headingBlock(id, tier, continued, tierWidth(tier));
+  const columnHeading = (id: string, tier: TierNumber, continuedVerse?: number): Item => {
+    const block = headingBlock(id, tier, continuedVerse, tierWidth(tier));
     return {
       block,
       spaceBefore: 0.55 * fontPx(id, tier),
@@ -532,8 +585,8 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
     };
   };
 
-  const pairHeading = (id: string, tier: TierNumber, continued: boolean): Pair => {
-    const block = headingBlock(id, tier, continued, W);
+  const pairHeading = (id: string, tier: TierNumber, continuedVerse?: number): Pair => {
+    const block = headingBlock(id, tier, continuedVerse, W);
     return {
       lanes: [block],
       shifts: [0],
@@ -591,6 +644,16 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
   };
 
   const pairItem = (entry: CommentEntry): Pair => {
+    if (entry.wrapped) {
+      return {
+        lanes: [entry.wrapped],
+        shifts: [0],
+        spaceBefore: 0.4 * fontPx(entry.commentator, entry.tier),
+        data: {
+          kind: "comment", measured: [entry.wrapped], lineOffsets: [0], commentator: entry.commentator, entry,
+        },
+      };
+    }
     const lanes = [entry.he, entry.en];
     const top = Math.max(entry.he?.baseline ?? 0, entry.en?.baseline ?? 0);
     return {
@@ -717,7 +780,9 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
       const carried = carryColumns[tier].get(id) ?? [];
       const items = [...carried, ...(fresh.get(id) ?? []).flatMap(columnItems)];
       if (items.length === 0) continue;
-      queue.push(columnHeading(id, tier, carried.length > 0 && carried[0].data.lineOffset > 0));
+      const continued = carried.length > 0 && carried[0].data.lineOffset > 0;
+      const continuedVerse = continued ? carried[0].data.entry?.verseIndex : undefined;
+      queue.push(columnHeading(id, tier, continuedVerse));
       queue.push(...items);
     }
     return queue;
@@ -731,7 +796,7 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
       const items = [...carried, ...(fresh.get(id) ?? []).map(pairItem)];
       if (items.length === 0) continue;
       const continued = carried.length > 0 && carried[0].data.lineOffsets.some(x => x > 0);
-      queue.push(pairHeading(id, tier, continued));
+      queue.push(pairHeading(id, tier, continued ? carried[0].data.entry?.verseIndex : undefined));
       queue.push(...items);
     }
     return queue;

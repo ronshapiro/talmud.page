@@ -148,7 +148,7 @@ function readLines(spec: BlockSpec, element: HTMLElement, width: number): Measur
   }
 
   lines[0].start = 0;
-  const boxes: LineBox[] = lines.map((line, i) => ({
+  let boxes: LineBox[] = lines.map((line, i) => ({
     start: line.start,
     bottom: i === lines.length - 1
       ? height
@@ -156,6 +156,22 @@ function readLines(spec: BlockSpec, element: HTMLElement, width: number): Measur
       // this is exactly the line-box boundary.
       : (line.bottom + lines[i + 1].top) / 2,
   }));
+
+  // A floated lead element (e.g. Hebrew that the English wraps around) can't be split: merge all
+  // lines that start beside it into one line box reaching at least to the float's bottom.
+  const float = element.querySelector<HTMLElement>(".float-lead");
+  if (float) {
+    const marginBottom = parseFloat(getComputedStyle(float).marginBottom) || 0;
+    const floatBottom = float.getBoundingClientRect().bottom - blockRect.top + marginBottom;
+    const beside = lines.filter(x => x.top < floatBottom - 1).length;
+    if (beside > 0) {
+      const merged: LineBox = {
+        start: 0,
+        bottom: beside === lines.length ? height : Math.max(boxes[beside - 1].bottom, floatBottom),
+      };
+      boxes = [merged, ...boxes.slice(beside)];
+    }
+  }
   return {spec, width, height, baseline, lines: boxes};
 }
 

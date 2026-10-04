@@ -149,6 +149,9 @@ export interface CommentatorConfig {
   hebrewName?: string;
   tier: Tier;
   english: EnglishMode;
+  // Side by side: let the English wrap around the Hebrew (floated, as in the web app's
+  // translationWrapped) instead of keeping to its own column.
+  wrap?: boolean;
   // Typography overrides; unset = the document's general commentary typography.
   font?: string;
   sizePt?: number;
