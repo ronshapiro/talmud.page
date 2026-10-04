@@ -193,6 +193,13 @@ function MikraotPageContent({page, layout, doc}: {
         </div>
       </div>
       <div style={{height: g.headerGap, flexShrink: 0}} />
+      {page.titleHtml
+        ? (
+          <div
+            style={{height: page.titleHeight, flexShrink: 0, marginBottom: g.regionGap}}
+            // eslint-disable-next-line react/no-danger
+            dangerouslySetInnerHTML={{__html: page.titleHtml}} />
+        ) : null}
       {page.mainHeight > 0 ? <MainArea page={page} g={g} /> : null}
       {commentaryRegions.map(region => {
         const marginTop = hasAbove ? g.regionGap : 0;

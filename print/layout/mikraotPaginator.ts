@@ -33,6 +33,7 @@ import {
   PairsResult,
   START,
   cursorDone,
+  fillColumns,
   fillColumnsBalanced,
   fillPairs,
   pairsDone,
@@ -127,6 +128,9 @@ export interface RegionLayout {
 
 export interface MgPage {
   index: number;
+  // A section title set above the regions (the addenda).
+  titleHtml?: string;
+  titleHeight?: number;
   headerHebrew: string;
   headerEnglish: string;
   mainHtml?: string;
@@ -385,6 +389,9 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
     enSpec?: BlockSpec;
     enWidth?: number;
     noteSpec?: BlockSpec;
+    // Line limit (0 = none), and the comment's English for the addendum if it is cut.
+    maxLines: number;
+    englishHtml?: string;
   }
   const pendingEntries: PendingEntry[] = [];
   for (const chapter of chapters) {
@@ -415,6 +422,7 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
             // An English-only commentary (e.g. Rav Hirsch, translated from German): its English is
             // the comment itself, in its column (or the English lane when side by side).
             pendingEntries.push({
+              maxLines: override.maxLines ?? config.maxLines ?? layout.maxCommentLines ?? 0,
               ref: comment.ref,
               commentator: config.id,
               tier,
@@ -435,6 +443,8 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
           const english = effectiveEnglish(config, override, hasEnglish);
           const heWidth = english === "side-by-side" ? pairHebrewWidth : tierWidth(tier);
           pendingEntries.push({
+            maxLines: override.maxLines ?? config.maxLines ?? layout.maxCommentLines ?? 0,
+            englishHtml: english !== "none" ? comment.en : undefined,
             ref: comment.ref,
             commentator: config.id,
             tier,
@@ -500,6 +510,63 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
     en: x.enSpec ? measure(x.enSpec, x.enWidth!) : undefined,
     note: x.noteSpec ? measure(x.noteSpec, notesWidth) : undefined,
   }));
+
+  // ---- Line limits: a comment longer than its limit keeps its first lines here, ending with a
+  // reference to an addendum at the end of the book, where the rest (and its English) is set.
+  interface Addendum {
+    number: number;
+    entry: CommentEntry;
+    rest: BlockSpec;
+    width: number;
+    english?: string;
+  }
+  const addenda: Addendum[] = [];
+  const hebrewNumeral = (n: number) => {
+    const hebrew = intToHebrewNumeral(n);
+    return hebrew.length === 1 ? `${hebrew}׳` : `${hebrew.slice(0, -1)}״${hebrew.slice(-1)}`;
+  };
+  entries.forEach((entry, i) => {
+    const limit = pendingEntries[i].maxLines;
+    const block = entry.he ?? entry.en;
+    if (!limit || limit <= 0 || !block || block.lines.length <= limit) return;
+    const number = addenda.length + 1;
+    const {spec} = block;
+    const marker = tokenize(entry.he
+      ? `<span class="mg-addendum-ref">(המשך בנספח ${hebrewNumeral(number)})</span>`
+      : `<span class="mg-addendum-ref">(continued in addendum ${number})</span>`);
+    // Keep as many whole lines as fit with the marker within the limit.
+    let cut = limit;
+    let head: MeasuredBlock | undefined;
+    for (; cut >= 1; cut--) {
+      head = measure({
+        ...spec,
+        key: `${spec.key}:head:${cut}:${number}`,
+        tokens: [...spec.tokens.slice(0, block.lines[cut].start), ...marker],
+      }, block.width);
+      if (head.lines.length <= limit) break;
+    }
+    if (!head || cut < 1) return;
+    const ellipsis = tokenize("…");
+    addenda.push({
+      number,
+      entry,
+      width: block.width,
+      english: entry.he ? pendingEntries[i].englishHtml : undefined,
+      rest: {
+        ...spec,
+        key: `${spec.key}:rest`,
+        tokens: [...ellipsis, ...spec.tokens.slice(block.lines[cut].start)],
+      },
+    });
+    if (entry.he) {
+      entry.he = head;
+      // The English translates the whole comment, so it moves to the addendum with the rest.
+      entry.en = undefined;
+      entry.note = undefined;
+    } else {
+      entry.en = head;
+    }
+  });
 
   // Wrapping (as the web app's translationWrapped): the Hebrew floats at the start of a single
   // English block, which flows beside it and then continues full-width below.
@@ -1128,6 +1195,97 @@ export function paginateMikraot(doc: MikraotDocument, chapters: MikraotChapter[]
     const notesLeft = remainingItems(candidate.notesQueue, candidate.notesResult);
     carryTranslation = notesLeft.filter(x => x.data.kind === "translation");
     carryNotes = groupByCommentator(notesLeft);
+  }
+
+
+  // ---- Addenda: the continuations of comments cut by a line limit.
+  if (addenda.length > 0) {
+    const firstPage = new Map<string, number>();
+    for (const page of pages) {
+      for (const region of page.regions) {
+        const fragments = [
+          ...region.columns.flat(),
+          ...(region.rows ?? []).flatMap(
+            row => row.lanes.filter((x): x is RenderedFragment => !!x)),
+        ];
+        for (const fragment of fragments) {
+          if (fragment.ref && !firstPage.has(fragment.ref)) firstPage.set(fragment.ref, page.index);
+        }
+      }
+    }
+
+    const addendaWidth = tier1Width;
+    const addendaColumns = layout.tier1Columns;
+    const items: Item[] = [];
+    for (const addendum of addenda) {
+      const {entry} = addendum;
+      const config = configById.get(entry.commentator)!;
+      const {hebrewName} = names(entry.commentator);
+      const page = firstPage.get(entry.ref);
+      const heading = measure({
+        key: `addendum-head:${addendum.number}`,
+        className: "blk mg-chead mg-addendum-head tier-1",
+        dir: "rtl",
+        tokens: tokenize(
+          `${hebrewNumeral(addendum.number)}. ${escapeHtml(hebrewName)}, `
+          + `${continuationLabel(entry.verseIndex)}`
+          + `${page === undefined ? "" : ` <span class="cont">(עמ׳ ${page + 1})</span>`}`),
+      }, addendaWidth);
+      items.push({
+        block: heading,
+        spaceBefore: 0.8 * tierSizePt(1) * PT,
+        keepWithNext: true,
+        unsplittable: true,
+        data: {kind: "chead", measured: heading, lineOffset: 0},
+      });
+      const rest = measure({...addendum.rest, key: `${addendum.rest.key}:${addendaWidth}`}, addendaWidth);
+      items.push({
+        block: rest,
+        spaceBefore: 0,
+        data: {kind: "comment", measured: rest, lineOffset: 0, commentator: entry.commentator, entry},
+      });
+      if (addendum.english?.trim()) {
+        const english = measure({
+          key: `addendum-en:${addendum.number}`,
+          className: "blk mg-comment-en tier-1",
+          style: englishStyle(config),
+          dir: "ltr",
+          lang: "en",
+          tokens: tokenize(addendum.english),
+        }, addendaWidth);
+        items.push({
+          block: english,
+          spaceBefore: 0.3 * tierSizePt(1) * PT,
+          data: {kind: "comment-en", measured: english, lineOffset: 0, commentator: entry.commentator, entry},
+        });
+      }
+    }
+
+    const titleHtml = '<div class="mg-addenda-title"><span class="he">המשכים</span>'
+      + '<span class="en">Continuations</span></div>';
+    const titleHeight = measureHtmlHeight(titleHtml, "", W);
+    let cursor = START;
+    let first = true;
+    while (!cursorDone(items, cursor) && pages.length < 4000) {
+      const available = bodyHeight - (first ? titleHeight + regionGap : 0);
+      let result = fillColumns(items, cursor, addendaColumns, available);
+      if (cursorDone(items, result.end)) {
+        // The last page: balance its columns.
+        result = fillColumnsBalanced(items, cursor, addendaColumns, available);
+      }
+      const pageIndex = pages.length;
+      pages.push({
+        index: pageIndex,
+        headerHebrew: "המשכים",
+        headerEnglish: "Continuations",
+        titleHtml: first ? titleHtml : undefined,
+        titleHeight: first ? titleHeight : undefined,
+        mainHeight: 0,
+        regions: [columnsRegion("tier-1", result, addendaColumns, addendaWidth, pageIndex)],
+      });
+      cursor = result.end;
+      first = false;
+    }
   }
 
   return {

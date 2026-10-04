@@ -119,6 +119,20 @@ function CurationPanel({doc, update, chapters, selectedRef, setSelectedRef}: {
               </select>
             </div>
             <div className="row">
+              <span>Max lines (then addendum)</span>
+              <input
+                type="number"
+                step={1}
+                min={0}
+                style={{width: 64}}
+                value={override.maxLines ?? ""}
+                placeholder="inherit"
+                onChange={e => {
+                  const parsed = parseInt(e.target.value);
+                  set({maxLines: Number.isNaN(parsed) ? undefined : parsed});
+                }} />
+            </div>
+            <div className="row">
               <span>English note</span>
               <select
                 value={override.showEnglish === undefined ? "" : String(override.showEnglish)}
@@ -270,6 +284,12 @@ function CommentatorRow({doc, config, index, update}: {
                 value={config.sizePt}
                 placeholder={String(generalSize)}
                 onChange={sizePt => set({sizePt})} />
+            </Row>
+            <Row label="Max lines (then addendum)">
+              <OptionalSize
+                value={config.maxLines}
+                placeholder={doc.layout.maxCommentLines ? String(doc.layout.maxCommentLines) : "none"}
+                onChange={maxLines => set({maxLines})} />
             </Row>
             <Row label="English font">
               <FontSelect
@@ -640,6 +660,7 @@ export function MikraotSettings({doc, update, chapters, selectedRef, setSelected
         ["maxMainFraction", "Max main text share of page", 0.05],
         ["maxCommentaryLag", "Max verses text may run ahead", 1],
         ["minPageFill", "Min page fill before continuing", 0.02],
+        ["maxCommentLines", "Max lines per comment (0 = none)", 1],
       ] as const).map(([key, label, step]) => (
         <Row label={label} key={key}>
           <NumberInput

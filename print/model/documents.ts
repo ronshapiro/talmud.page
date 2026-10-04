@@ -152,6 +152,9 @@ export interface CommentatorConfig {
   // Side by side: let the English wrap around the Hebrew (floated, as in the web app's
   // translationWrapped) instead of keeping to its own column.
   wrap?: boolean;
+  // Comments longer than this many lines continue in the addenda at the end (unset = the
+  // document's maxCommentLines).
+  maxLines?: number;
   // Typography overrides; unset = the document's general commentary typography.
   font?: string;
   sizePt?: number;
@@ -166,6 +169,8 @@ export interface CommentOverride {
   tier?: Tier;
   // Turn the English of this one comment on (in the commentator's mode, or as a footnote) or off.
   showEnglish?: boolean;
+  // Line limit for this comment (0 = no limit); overrides the commentator's and the document's.
+  maxLines?: number;
 }
 
 // Styling of a verse/chapter marker, e.g. the red verse numbers.
@@ -223,6 +228,9 @@ export interface MikraotLayout {
   // Where the verses' translation goes.
   mainEnglish: MainEnglishMode;
   columnRules: boolean;
+  // Comments longer than this many lines are cut, continuing in an addenda section at the end of
+  // the book. 0 = no limit.
+  maxCommentLines: number;
   /** @deprecated Replaced by mainEnglish. */
   showVerseTranslation?: boolean;
 }
@@ -361,6 +369,7 @@ export function defaultMikraotDocument(name = "Mikraot Gedolot", book = "Genesis
       showTargum: false,
       mainEnglish: "notes",
       columnRules: true,
+      maxCommentLines: 0,
     },
   };
 }

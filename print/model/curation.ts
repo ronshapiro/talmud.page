@@ -144,6 +144,13 @@ export function applyCuration(
       else warnings.push(`Invalid tier for ${ref}: ${String(override.tier)}`);
     }
     if (typeof override.showEnglish === "boolean") clean.showEnglish = override.showEnglish;
+    if (override.maxLines !== undefined) {
+      if (Number.isInteger(override.maxLines) && override.maxLines >= 0) {
+        clean.maxLines = override.maxLines;
+      } else {
+        warnings.push(`Invalid maxLines for ${ref}: ${String(override.maxLines)}`);
+      }
+    }
     commentOverrides[ref] = {...(commentOverrides[ref] ?? {}), ...clean};
   }
 

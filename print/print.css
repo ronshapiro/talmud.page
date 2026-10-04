@@ -1006,3 +1006,37 @@ body.print-app {
   color: #7a1f1f;
   font-size: 0.9em;
 }
+
+/* Mikraot: line-limited comments and the addenda */
+.mikraot .mg-addendum-ref {
+  font-family: var(--main-font);
+  font-size: 0.85em;
+  color: #7a1f1f;
+  white-space: nowrap;
+}
+
+.mikraot .mg-addenda-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4pt 0 6pt;
+  border-bottom: 0.5pt solid #c9c2b5;
+}
+
+.mikraot .mg-addenda-title .he {
+  font-family: var(--main-font);
+  font-size: 18pt;
+  color: #7a1f1f;
+}
+
+.mikraot .mg-addenda-title .en {
+  font-family: var(--notes-font);
+  font-size: 8pt;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #6f685c;
+}
+
+.mikraot .mg-addendum-head {
+  text-align: start;
+}
