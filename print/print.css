@@ -399,7 +399,7 @@ body.print-app {
   font-size: 0.82em;
   letter-spacing: 0.1em;
   color: #7a1f1f;
-  margin: 0 0 0.25em;
+  margin: 0;
 }
 
 .mikraot .mg-vnum {
@@ -933,7 +933,7 @@ body.print-app {
   font-variant: small-caps;
   letter-spacing: 0.1em;
   color: #7a1f1f;
-  margin: 0 0 0.25em;
+  margin: 0;
 }
 
 .mikraot .mg-chapter .mg-chapter-label {
@@ -1149,7 +1149,8 @@ body.print-app {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2pt 0 4pt;
+  margin: 0;
+  padding: 0;
 }
 
 .mikraot .mg-section-title .he {
