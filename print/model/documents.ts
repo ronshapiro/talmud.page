@@ -149,8 +149,6 @@ export interface CommentatorConfig {
   hebrewName?: string;
   tier: Tier;
   english: EnglishMode;
-  // Side by side: when one language runs longer, continue it full-width below the shorter one.
-  wrap?: boolean;
   // Typography overrides; unset = the document's general commentary typography.
   font?: string;
   sizePt?: number;

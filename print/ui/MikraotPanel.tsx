@@ -246,19 +246,6 @@ function CommentatorRow({doc, config, index, update}: {
           {ENGLISH_MODES.map(m => <option key={m.id} value={m.id}>{m.label}</option>)}
         </select>
       </div>
-      {config.english === "side-by-side"
-        ? (
-          <div className="hint">
-            <label htmlFor={`wrap-${config.id}`}>
-              <input
-                type="checkbox"
-                id={`wrap-${config.id}`}
-                checked={Boolean(config.wrap)}
-                onChange={e => set({wrap: e.target.checked})} />
-              Wrap the longer text below the shorter
-            </label>
-          </div>
-        ) : null}
       {open
         ? (
           <div className="commentator-details">
