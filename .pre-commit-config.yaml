@@ -16,6 +16,8 @@ repos:
         entry: pre-commit/custom.sh
         language: script
         require_serial: true
+        always_run: true
+        pass_filenames: false
     -   id: ensure-worktree-base
         name: "Ensure new worktrees start from origin/base"
         entry: git-hooks/ensure-worktree-base
