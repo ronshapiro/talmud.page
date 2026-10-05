@@ -12,7 +12,12 @@ const exitCodes: number[] = [];
 
 const files = process.argv.slice(process.argv.indexOf("--") + 1);
 
+const logSync = (msg: string) => {
+  fs.writeSync(2, `${msg}\n`);
+};
+
 const precommit = (command: string) => {
+  logSync(`[pre-commit.ts] Spawning ${command} with ${files.length} file args`);
   const proc = spawn(command, files);
   precommits.push(proc);
   const output: string[] = [];
@@ -21,17 +26,32 @@ const precommit = (command: string) => {
   };
   proc.stdout.on("data", collectOutput);
   proc.stderr.on("data", collectOutput);
-  proc.on("exit", (exitCode: number) => {
-    exitCodes.push(exitCode);
-    if (exitCode !== 0) {
-      console.log(chalk.red.inverse(`${command} failed`));
+  proc.on("error", (err: any) => {
+    const errorDetails = err && err.stack ? err.stack : String(err);
+    logSync(`[pre-commit.ts] ERROR spawning ${command}: ${errorDetails}`);
+    exitCodes.push(1);
+    if (precommits.length === exitCodes.length) {
+      const finalCode = exitCodes.reduce((x, y) => x + y, 0);
+      logSync(`[pre-commit.ts] All ${precommits.length} checks completed. Final exit code: ${finalCode}`);
+      // eslint-disable-next-line unicorn/no-process-exit
+      process.exit(finalCode);
+    }
+  });
+  proc.on("exit", (exitCode: number | null, signal: string | null) => {
+    const code = exitCode !== null ? exitCode : (signal ? 1 : 0);
+    logSync(`[pre-commit.ts] ${command} exit: code=${exitCode}, signal=${signal}`);
+    exitCodes.push(code);
+    if (code !== 0) {
+      logSync(chalk.red.inverse(`${command} failed (code=${exitCode}, signal=${signal})`));
       if (output.length > 0) {
-        console.log(output.join(""));
+        logSync(output.join(""));
       }
     }
     if (precommits.length === exitCodes.length) {
+      const finalCode = exitCodes.reduce((x, y) => x + y, 0);
+      logSync(`[pre-commit.ts] All ${precommits.length} checks completed. Final exit code: ${finalCode}`);
       // eslint-disable-next-line unicorn/no-process-exit
-      process.exit(exitCodes.reduce((x, y) => x + y));
+      process.exit(finalCode);
     }
   });
 };
