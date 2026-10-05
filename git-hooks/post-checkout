@@ -46,6 +46,14 @@ fi
 
 MAIN_REPO="$(dirname "$GIT_COMMON_DIR")"
 
+# Ensure new worktrees start from the latest origin/base
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+if [[ -x "$SCRIPT_DIR/ensure-worktree-base" ]]; then
+  "$SCRIPT_DIR/ensure-worktree-base" "$@"
+elif [[ -x "$MAIN_REPO/git-hooks/ensure-worktree-base" ]]; then
+  "$MAIN_REPO/git-hooks/ensure-worktree-base" "$@"
+fi
+
 symlink_from_main() {
   local target_name="$1"
   local source_path="$MAIN_REPO/$target_name"
