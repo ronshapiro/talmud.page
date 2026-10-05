@@ -42,6 +42,12 @@ if ! git fetch origin base; then
   exit 0
 fi
 
+# Also fast-forward local base branch if not checked out in current worktree
+CURRENT_BRANCH="$(git symbolic-ref --short HEAD 2>/dev/null || true)"
+if [[ "$CURRENT_BRANCH" != "base" ]]; then
+  git fetch origin base:base 2>/dev/null || true
+fi
+
 ORIGIN_BASE="$(git rev-parse --verify origin/base 2>/dev/null || true)"
 CURRENT_HEAD="$(git rev-parse --verify HEAD 2>/dev/null || true)"
 
