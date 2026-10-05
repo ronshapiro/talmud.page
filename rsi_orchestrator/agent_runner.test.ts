@@ -158,6 +158,9 @@ describe("AgentError", () => {
   test("sets isRateLimited on rate limit message", () => {
     const err = new AgentError("User session limit reached");
     expect(err.isRateLimited).toBe(true);
+
+    const quotaErr = new AgentError("Individual quota reached. Please upgrade your subscription.");
+    expect(quotaErr.isRateLimited).toBe(true);
   });
 
   test("does not set isRateLimited on generic error", () => {

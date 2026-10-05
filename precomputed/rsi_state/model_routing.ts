@@ -32,7 +32,7 @@ export function readModelRoutingConfig(configPath = DEFAULT_CONFIG_PATH): ModelR
 }
 
 function normalizeKey(s: string): string {
-  return s.toLowerCase().replace(/[._]/g, "-");
+  return s.toLowerCase().replace(/[\s._]/g, "-");
 }
 
 function matchesConfig(key: string, query: string, cfg?: ModelConfig): boolean {
@@ -44,6 +44,9 @@ function matchesConfig(key: string, query: string, cfg?: ModelConfig): boolean {
     const normGen = normalizeKey(cfg.generateModel);
     if (normGen === normQuery) return true;
     if (normGen.replace(/^claude-/, "") === normQuery.replace(/^claude-/, "")) return true;
+    const normGenNoEffort = normGen.replace(/-(?:high|medium|low)$/, "");
+    if (normGenNoEffort === normQuery) return true;
+    if (normGenNoEffort.replace(/^claude-/, "") === normQuery.replace(/^claude-/, "")) return true;
   }
   return false;
 }

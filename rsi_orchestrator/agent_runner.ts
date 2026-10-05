@@ -47,7 +47,7 @@ export class AgentError extends Error {
     Object.setPrototypeOf(this, AgentError.prototype);
     this.name = "AgentError";
     this.isRateLimited = apiErrorStatus === 429
-      || /rate.?limit|quota.?exceeded|resource.?exhausted|session limit/i.test(message);
+      || /rate.?limit|quota.?(?:exceeded|reached)|resource.?exhausted|session limit/i.test(message);
   }
 }
 
@@ -142,7 +142,7 @@ export function asAgyCliError(error: unknown): AgentError | undefined {
     }
   }
   const message = stderr || (error as Error | undefined)?.message;
-  if (message && /rate.?limit|quota.?exceeded|resource.?exhausted|session limit/i.test(message)) {
+  if (message && /rate.?limit|quota.?(?:exceeded|reached)|resource.?exhausted|session limit/i.test(message)) {
     return new AgentError(message, 429, "agy");
   }
   return undefined;
@@ -378,7 +378,11 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
     args.push("--dangerously-skip-permissions");
   }
   if (options.model) {
-    args.push("--model", options.model);
+    const model = options.model.startsWith("claude-")
+      && !/-(?:low|medium|high|xhigh|max)$/.test(options.model)
+      ? `${options.model}-high`
+      : options.model;
+    args.push("--model", model);
   }
   if (options.timeoutMs) {
     args.push("--print-timeout", `${Math.ceil(options.timeoutMs / 1000)}s`);
