@@ -47,7 +47,7 @@ export class AgentError extends Error {
     Object.setPrototypeOf(this, AgentError.prototype);
     this.name = "AgentError";
     this.isRateLimited = apiErrorStatus === 429
-      || /rate.?limit|quota.?exceeded|resource.?exhausted|session limit/i.test(message);
+      || /rate.?limit|quota.?(?:exceeded|reached)|resource.?exhausted|session limit/i.test(message);
   }
 }
 
@@ -142,7 +142,7 @@ export function asAgyCliError(error: unknown): AgentError | undefined {
     }
   }
   const message = stderr || (error as Error | undefined)?.message;
-  if (message && /rate.?limit|quota.?exceeded|resource.?exhausted|session limit/i.test(message)) {
+  if (message && /rate.?limit|quota.?(?:exceeded|reached)|resource.?exhausted|session limit/i.test(message)) {
     return new AgentError(message, 429, "agy");
   }
   return undefined;
