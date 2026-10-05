@@ -1,0 +1,783 @@
+{
+  "Rashi on Menachot 3a:11:1": {
+    "dependsOn": [
+      "Menachot 3a:8",
+      "Menachot 3a:9",
+      "Menachot 3a:10",
+      "Menachot 3a:11",
+      "Menachot 3a:12",
+      "Rashi on Menachot 3a:8:1",
+      "Rashi on Menachot 3a:9:1",
+      "Rashi on Menachot 3a:11:1",
+      "Rashi on Menachot 3a:12:1",
+      "Rashi on Menachot 3a:12:2",
+      "Rashi on Menachot 2a:1:1",
+      "Rashi on Menachot 2a:2:1",
+      "Rashi on Menachot 2a:3:1",
+      "Rashi on Menachot 2b:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3",
+      "Rashi on Menachot 30b:1:1",
+      "Rashi on Menachot 34a:1:1",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Menachot 2b:2:1",
+      "Rashi on Menachot 2b:3:1",
+      "Rashi on Menachot 2b:4:1",
+      "Rashi on Menachot 2b:5:1"
+    ],
+    "generatedAt": "2026-10-04T15:44:44.988Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 3a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכי גרסינן ודילמא זו אמר</strong> - כלומר אכתי לא מינכרא דסברי קושטא קאמר דלשום מרחשת נדר ומיעבר עבר ואתייה במחבת ודקא אמרת כיון דאתייה במחבת מחבת הויא איכא למימר לא היא דדילמא מנחה זו אביא במרחשת אמר דתו לא מצי לשנוייה למחבת:"
+  },
+  "Rashi on Menachot 3a:12:1": {
+    "dependsOn": [
+      "Menachot 3a:10",
+      "Menachot 3a:11",
+      "Menachot 3a:12",
+      "Rashi on Menachot 3a:11:1",
+      "Rashi on Menachot 3a:12:1",
+      "Rashi on Menachot 3a:12:2",
+      "Rashi on Menachot 3a:1:1",
+      "Rashi on Menachot 3a:3:1",
+      "Rashi on Menachot 3a:8:1",
+      "Rashi on Menachot 3a:9:1",
+      "Rashi on Menachot 2a:1:1",
+      "Rashi on Menachot 2b:1:1",
+      "Rashi on Menachot 2a:2:1",
+      "Rashi on Menachot 2a:3:1",
+      "Rashi on Menachot 2a:4:1",
+      "Rashi on Menachot 2b:2:1"
+    ],
+    "generatedAt": "2026-10-04T15:46:40.807Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 3a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לרבנן</strong> - דאמרי ה\"ז פסולה הכי נמי דאיכא למימר ולמיפרך הכי ואנן כרבי שמעון קמיירי ור\"ש אומר התם האומר הרי עלי במחבת והביא במרחשת אף ידי נדרו יצא אלמא קביעותא דמנא לאו כלום היא:"
+  },
+  "Rashi on Menachot 3a:12:2": {
+    "dependsOn": [
+      "Menachot 3a:11",
+      "Menachot 3a:12",
+      "Rashi on Menachot 3a:12:1",
+      "Rashi on Menachot 3a:12:2",
+      "Menachot 3a:1",
+      "Menachot 3a:2",
+      "Menachot 3a:7",
+      "Menachot 3a:8",
+      "Rashi on Menachot 3a:2:1",
+      "Rashi on Menachot 3a:3:1",
+      "Rashi on Menachot 3a:3:2",
+      "Rashi on Menachot 3a:8:1",
+      "Rashi on Menachot 3a:9:1",
+      "Rashi on Menachot 3a:11:1",
+      "Rashi on Menachot 3a:13:1",
+      "Rashi on Menachot 3a:14:1",
+      "Rashi on Menachot 3a:14:2",
+      "Rashi on Menachot 3a:14:3",
+      "Rashi on Menachot 3a:15:1",
+      "Berakhot 2a:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2"
+    ],
+    "generatedAt": "2026-10-04T15:48:30.000Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 3a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שנא אמר עלי ולא שנא אמר ה\"ז</strong> - הילכך כי אתייה במחבת מחבת הויא וכי קמץ לה לשום מרחשת מחשבה דמינכרא הויא אבל גבי זבחים איכא למימר מיעבר עבר ושחטינהו בדרום ואי קשיא גבי חטאת העוף לישני ליה הכי דסברי עולת העוף הוא ומיעבר עבר הא ליכא למיפרך דתרי איסורי לא מחזקינן ליה חדא דעביד ליה הזאה ועוד דקא עביד ליה למטה:"
+  },
+  "Rashi on Menachot 3a:13:1": {
+    "dependsOn": [
+      "Menachot 3a:13",
+      "Rashi on Menachot 3a:13:1",
+      "Rashi on Menachot 3a:12:1",
+      "Rashi on Menachot 3a:12:2",
+      "Rashi on Menachot 3a:14:1",
+      "Rashi on Menachot 3a:14:2",
+      "Tosafot on Menachot 3a:13:1",
+      "Rashi on Menachot 3a:1:1",
+      "Rashi on Menachot 3a:3:1",
+      "Rashi on Menachot 3a:5:1",
+      "Rashi on Menachot 3a:8:1",
+      "Rashi on Menachot 3a:11:1",
+      "Rashi on Menachot 3a:15:1"
+    ],
+    "generatedAt": "2026-10-04T16:01:52.629Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 3a:13:1"
+    ],
+    "sourceText": "עולה זכר וחטאת נקבה:"
+  },
+  "Rashi on Menachot 3a:14:1": {
+    "dependsOn": [
+      "Menachot 3a:14",
+      "Rashi on Menachot 3a:14:1",
+      "Rashi on Menachot 3a:14:2",
+      "Rashi on Menachot 3a:14:3"
+    ],
+    "generatedAt": "2026-10-04T16:05:16.311Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 3a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר הריני שוחטה לשם יחיד מאי איכא למימר</strong> - הא ודאי ידעינן דחטאת יחיד נקבה היא כשבה או שעירה:"
+  },
+  "Rashi on Menachot 3a:14:2": {
+    "dependsOn": [
+      "Menachot 3a:14",
+      "Rashi on Menachot 3a:14:1",
+      "Rashi on Menachot 3a:14:2",
+      "Rashi on Menachot 3a:14:3",
+      "Rashi on Menachot 2b:1:1",
+      "Rashi on Menachot 3a:3:1",
+      "Rashi on Menachot 3a:3:2",
+      "Rashi on Menachot 3a:13:1",
+      "Rashi on Menachot 2a:1:1",
+      "Rashi on Menachot 2a:2:1",
+      "Rashi on Menachot 2b:2:1",
+      "Rashi on Menachot 3a:5:1",
+      "Rashi on Menachot 3a:8:1",
+      "Rashi on Menachot 3a:9:1",
+      "Rashi on Menachot 3a:11:1",
+      "Rashi on Menachot 3a:12:1"
+    ],
+    "generatedAt": "2026-10-04T16:07:04.854Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 3a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותו דחטאת יחיד</strong> - נקבה היא והביא נקבה לעזרה ושחטה לשם עולה מאי איכא למימר:"
+  },
+  "Rashi on Menachot 3a:14:3": {
+    "dependsOn": [
+      "Menachot 3a:14",
+      "Rashi on Menachot 3a:14:1",
+      "Rashi on Menachot 3a:14:2",
+      "Rashi on Menachot 3a:14:3",
+      "Rashi on Menachot 3a:15:1"
+    ],
+    "generatedAt": "2026-10-04T16:08:00.557Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 3a:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיכסיא</strong> - נקבות דרחל באליה בזנבה ולא ידיעה:"
+  },
+  "Rashi on Menachot 3a:15:1": {
+    "dependsOn": [
+      "Menachot 3a:15",
+      "Rashi on Menachot 3a:15:1",
+      "Rashi on Menachot 3a:13:1",
+      "Rashi on Menachot 3a:14:1",
+      "Rashi on Menachot 3a:14:2",
+      "Rashi on Menachot 3a:14:3",
+      "Menachot 2a:1",
+      "Rashi on Menachot 2a:1:1",
+      "Rashi on Menachot 2a:4:1",
+      "Rashi on Menachot 2b:1:1"
+    ],
+    "generatedAt": "2026-10-04T16:09:00.093Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 3a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שעירה</strong> - דאין לה זנב מאי איכא למימר:"
+  },
+  "Rashi on Menachot 3a:16:1": {
+    "dependsOn": [
+      "Menachot 3a:16",
+      "Rashi on Menachot 3a:14:1",
+      "Rashi on Menachot 3a:15:1",
+      "Rashi on Menachot 3a:17:1"
+    ],
+    "generatedAt": "2026-10-04T16:11:59.691Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 3a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אשם נזיר ומצורע</strong> - כתיב בהו כבש וכל כבש בן שנה הוא במסכת פרה <span class=\"parenthesized\">(פ\"א מ\"ג)</span>:"
+  },
+  "Rashi on Menachot 3a:17:1": {
+    "dependsOn": [
+      "Menachot 3a:16",
+      "Menachot 3a:17",
+      "Menachot 3a:18",
+      "Rashi on Menachot 3a:17:1",
+      "Rashi on Menachot 3a:17:2",
+      "Rashi on Menachot 3a:16:1",
+      "Rashi on Menachot 3a:15:1",
+      "Rashi on Menachot 3a:14:1",
+      "Rashi on Menachot 3a:14:2",
+      "Rashi on Menachot 3a:14:3",
+      "Rashi on Menachot 3a:13:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3",
+      "Rashi on Berakhot 2a:1:4",
+      "Rashi on Menachot 2a:1:1",
+      "Rashi on Menachot 2a:2:1",
+      "Rashi on Menachot 2a:3:1",
+      "Rashi on Menachot 2b:1:1"
+    ],
+    "generatedAt": "2026-10-04T16:14:28.416Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 3a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אשם גזילות</strong> - דכתיב בויקרא והשיב את הגזילה אשר גזל וגו' ואת אשמו יביא וגו' <span class=\"parenthesized\">(ויקרא ה׳:כ״ג)</span> ואשם מעילות בני ב' שנים נינהו דכתיב בהו איל <span class=\"parenthesized\">(שם)</span>:"
+  },
+  "Rashi on Menachot 3a:17:2": {
+    "dependsOn": [
+      "Menachot 3a:16",
+      "Menachot 3a:17",
+      "Menachot 3a:18",
+      "Rashi on Menachot 3a:17:1",
+      "Rashi on Menachot 3a:17:2",
+      "Rashi on Menachot 3a:14:1",
+      "Rashi on Menachot 3a:14:2",
+      "Rashi on Menachot 3a:14:3",
+      "Rashi on Menachot 3a:16:1",
+      "Rashi on Menachot 2a:1:1",
+      "Rashi on Menachot 2b:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2"
+    ],
+    "generatedAt": "2026-10-04T16:16:57.691Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 3a:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותו אשם גזילות ומעילות</strong> - דאיתנהו בדינייהו בני ב' שנים ושחטן לשם פסח לירצו:"
+  },
+  "Rashi on Menachot 3a:19:1": {
+    "dependsOn": [
+      "Menachot 3a:19",
+      "Rashi on Menachot 3a:19:1",
+      "Rashi on Menachot 3a:19:2",
+      "Rashi on Menachot 3a:19:3",
+      "Rashi on Menachot 3a:16:1",
+      "Rashi on Menachot 3a:17:1",
+      "Rashi on Menachot 3a:17:2",
+      "Rashi on Menachot 2a:1:1",
+      "Rashi on Menachot 2a:2:1"
+    ],
+    "generatedAt": "2026-10-04T16:19:24.743Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 3a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אשם</strong> - אינו בא אלא מן הכבשים:"
+  },
+  "Rashi on Menachot 3a:19:2": {
+    "dependsOn": [
+      "Menachot 3a:19",
+      "Rashi on Menachot 3a:19:1",
+      "Rashi on Menachot 3a:19:2",
+      "Rashi on Menachot 3a:19:3",
+      "Rashi on Menachot 3a:13:1",
+      "Rashi on Menachot 3a:16:1",
+      "Rashi on Menachot 2a:1:1",
+      "Rashi on Menachot 2a:2:1"
+    ],
+    "generatedAt": "2026-10-04T16:20:06.619Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 3a:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דהאי צמר</strong> - אשם כבשים יש לו צמר ושעיר אין לו צמר אלא שיער בעלמא ודבר גלוי לכל הוא:"
+  },
+  "Rashi on Menachot 3a:19:3": {
+    "dependsOn": [
+      "Menachot 3a:19",
+      "Rashi on Menachot 3a:19:1",
+      "Rashi on Menachot 3a:19:2",
+      "Rashi on Menachot 3a:19:3",
+      "Rashi on Menachot 3a:1:1",
+      "Rashi on Menachot 3a:3:1",
+      "Rashi on Menachot 3a:3:2",
+      "Rashi on Menachot 3a:5:1",
+      "Rashi on Menachot 3a:13:1",
+      "Rashi on Menachot 3a:14:1",
+      "Rashi on Menachot 3a:17:1",
+      "Rashi on Menachot 2a:1:1",
+      "Rashi on Menachot 2a:1:2",
+      "Rashi on Menachot 2a:2:1",
+      "Rashi on Menachot 2b:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:4:1"
+    ],
+    "generatedAt": "2026-10-04T16:22:13.976Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 3a:19:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרי דיכרא אוכמא הוא</strong> - סברי איל שחור הוא ולהכי נקט אוכמא דסתם שעירים שחורים הן:"
+  },
+  "Rashi on Menachot 3a:1:1": {
+    "dependsOn": [
+      "Menachot 3a:1",
+      "Rashi on Menachot 3a:1:1",
+      "Menachot 2b:15",
+      "Menachot 2b:16",
+      "Menachot 2b:17",
+      "Menachot 2b:18",
+      "Menachot 2b:19",
+      "Menachot 2b:20",
+      "Menachot 2b:21",
+      "Menachot 2b:22",
+      "Menachot 2b:23",
+      "Steinsaltz on Menachot 3a:1:1",
+      "Tosafot on Menachot 3a:1:1",
+      "Rashi on Menachot 3a:3:1",
+      "Rashi on Menachot 3a:3:2",
+      "Rashi on Menachot 3a:5:1",
+      "Rashi on Menachot 3a:8:1",
+      "Rashi on Menachot 3a:11:1",
+      "Rashi on Menachot 3a:12:1",
+      "Rashi on Menachot 2b:19:1",
+      "Rashi on Menachot 2b:20:1",
+      "Rashi on Menachot 2b:21:1",
+      "Rashi on Menachot 2a:1:1",
+      "Rashi on Menachot 2a:1:2",
+      "Rashi on Menachot 2a:2:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2"
+    ],
+    "generatedAt": "2026-10-04T15:26:12.122Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 3a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרי</strong> - אינשי ודאי חטאת היא והך מיצוי דבתר הזאה הוא והאי דקעביד לה למעלה הא קאמר וכו':"
+  },
+  "Rashi on Menachot 3a:20:1": {
+    "dependsOn": [
+      "Menachot 3a:20",
+      "Rashi on Menachot 3a:20:1",
+      "Rashi on Menachot 3a:19:1",
+      "Rashi on Menachot 3a:19:2",
+      "Rashi on Menachot 3a:19:3",
+      "Menachot 3a:12",
+      "Menachot 3a:13",
+      "Rashi on Menachot 3a:13:1",
+      "Rashi on Menachot 3a:16:1",
+      "Steinsaltz on Menachot 3a:20:1",
+      "Rashi on Menachot 3a:8:1",
+      "Rashi on Menachot 3a:9:1",
+      "Rashi on Menachot 3a:17:1",
+      "Rashi on Menachot 3a:17:2",
+      "Rashi on Menachot 2a:1:1",
+      "Rashi on Menachot 2b:1:1"
+    ],
+    "generatedAt": "2026-10-04T16:27:13.080Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 3a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עגל ופר</strong> - חטאת כגון פר כהן משיח ששחטו לשם פסח ואשם שאין באין אלא מן הצאן לירצו:"
+  },
+  "Rashi on Menachot 3a:3:1": {
+    "dependsOn": [
+      "Menachot 3a:3",
+      "Rashi on Menachot 3a:3:1",
+      "Rashi on Menachot 3a:3:2",
+      "Menachot 3a:2",
+      "Rashi on Menachot 2a:1:1",
+      "Rashi on Menachot 2a:1:2",
+      "Rashi on Menachot 2a:13:1",
+      "Rashi on Menachot 3a:1:1",
+      "Rashi on Menachot 2a:2:1",
+      "Rashi on Menachot 2a:3:1",
+      "Rashi on Menachot 2a:4:1",
+      "Rashi on Menachot 2a:5:1",
+      "Rashi on Menachot 3a:8:1",
+      "Rashi on Menachot 3a:9:1",
+      "Rashi on Menachot 3a:12:1",
+      "Rashi on Menachot 2b:1:1",
+      "Rashi on Menachot 2b:2:1",
+      "Rashi on Menachot 2b:3:1",
+      "Rashi on Menachot 2b:4:1",
+      "Menachot 3a:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3"
+    ],
+    "generatedAt": "2026-10-04T15:31:43.185Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 3a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכי נמי</strong> - דודאי מודה ר\"ש בה דכשירה:"
+  },
+  "Rashi on Menachot 3a:3:2": {
+    "dependsOn": [
+      "Menachot 3a:3",
+      "Rashi on Menachot 3a:3:1",
+      "Rashi on Menachot 3a:3:2"
+    ],
+    "generatedAt": "2026-10-04T15:32:31.246Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 3a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא לעופות</strong> - דודאי לעופות דומין דעופות עלו לשם חובה כגון חטאת העוף שהזה דמה למטה לשם עולת העוף:"
+  },
+  "Rashi on Menachot 3a:5:1": {
+    "dependsOn": [
+      "Menachot 3a:4",
+      "Menachot 3a:5"
+    ],
+    "generatedAt": "2026-10-04T15:36:54.718Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 3a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אימר דאמר רחמנא אף בדרום</strong> - דלא קבע להו צפון כדקבע לחטאת ואשם ועולה דכתיב בעולה על ירך המזבח צפונה <span class=\"parenthesized\">(ויקרא א)</span> וכתיב בחטאת במקום אשר תשחט העולה תשחט החטאת <span class=\"parenthesized\">(שם ו)</span> וכן באשם:"
+  },
+  "Rashi on Menachot 3a:8:1": {
+    "dependsOn": [
+      "Menachot 3a:8",
+      "Rashi on Menachot 3a:8:1",
+      "Rashi on Menachot 3a:3:1",
+      "Rashi on Menachot 3a:3:2",
+      "Rashi on Menachot 3a:5:1",
+      "Rashi on Menachot 3a:9:1",
+      "Rashi on Menachot 3a:11:1",
+      "Rashi on Menachot 2b:11:1",
+      "Rashi on Menachot 2b:11:2",
+      "Rashi on Menachot 2b:12:1",
+      "Menachot 3a:1"
+    ],
+    "generatedAt": "2026-10-04T15:41:14.807Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 3a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא דקא קמיץ לה במרחשת</strong> - כלומר לשם מרחשת:"
+  },
+  "Rashi on Menachot 3a:9:1": {
+    "dependsOn": [
+      "Menachot 3a:8",
+      "Menachot 3a:9",
+      "Menachot 3a:10",
+      "Rashi on Menachot 3a:8:1",
+      "Rashi on Menachot 3a:9:1",
+      "Menachot 3a:3",
+      "Rashi on Menachot 3a:3:1",
+      "Rashi on Menachot 3a:3:2",
+      "Menachot 2b:11",
+      "Menachot 2b:12",
+      "Menachot 2b:13",
+      "Menachot 2b:14",
+      "Menachot 2b:15",
+      "Menachot 2b:16",
+      "Menachot 2b:17",
+      "Menachot 2b:18",
+      "Rashi on Menachot 3a:11:1",
+      "Rashi on Menachot 3a:12:1",
+      "Rashi on Menachot 3a:12:2",
+      "Rashi on Menachot 2a:1:1",
+      "Rashi on Menachot 2a:2:1",
+      "Rashi on Menachot 2b:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2"
+    ],
+    "generatedAt": "2026-10-04T15:43:06.794Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Menachot 3a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחבת הויא</strong> - ומידע ידעי דמכזב:"
+  },
+  "Tosafot on Menachot 3a:12:1": {
+    "dependsOn": [
+      "Menachot 3a:12",
+      "Tosafot on Menachot 3a:12:1",
+      "Tosafot on Menachot 3a:12:2",
+      "Menachot 104b:1",
+      "Menachot 106b:1",
+      "Menachot 104a:1",
+      "Menachot 100b:1",
+      "Menachot 107a:1",
+      "Menachot 107b:1",
+      "Menachot 105a:1",
+      "Menachot 105b:1",
+      "Menachot 105a:6",
+      "Menachot 105a:12",
+      "Menachot 105a:18",
+      "Rashi on Menachot 3a:12:1",
+      "Rashi on Menachot 3a:12:2",
+      "Steinsaltz on Menachot 3a:12:1",
+      "Tosafot on Menachot 2a:1:1",
+      "Tosafot on Menachot 2a:2:1",
+      "Tosafot on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-10-04T15:51:40.752Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 3a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלמא קביעותא דמנא לאו כלום הוא</strong> - ובפרק בתרא <span class=\"parenthesized\">(לקמן מנחות דף קד:)</span> תנן פירשתי ואיני יודע מה פירשתי יביא חמשתן ומוקי לה בגמרא כר\"ש והיכי אתיא כוותיה דר\"ש הא לר\"ש אפי' פירש מחבת והביא מרחשת יצא ושמא התם בבא לצאת ידי שמים ואי נמי כגון דאיכא חדא דמייתי וקאמר אם זו נדרתי תהא לנדרי ואם לאו תהא נדבה:"
+  },
+  "Tosafot on Menachot 3a:12:2": {
+    "dependsOn": [
+      "Menachot 3a:12",
+      "Tosafot on Menachot 3a:12:1",
+      "Tosafot on Menachot 3a:12:2",
+      "Menachot 3a:3",
+      "Menachot 3a:7",
+      "Menachot 3a:8",
+      "Menachot 3a:9",
+      "Tosafot on Menachot 3a:13:1"
+    ],
+    "generatedAt": "2026-10-04T15:56:36.596Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 3a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שנא אמר עלי ולא שנא אמר זו</strong> - הקשה הרב ר' יצחק בן הר\"ר מאיר תינח מחבת לשם מרחשת אלא חריבה לשם בלולה אמרי הא בלולה היא ומיעבר הוא דעבר ועביד לה חריבה וכן בלולה לשם חריבה ויש לומר דבהא לא טעי אינש שיעשה חריבה בלולה ובלולה חריבה ועוד י\"ל דניחא בלאו הכי בין למ\"ד מנחה קדושה בלא שמן בין למ\"ד אין מנחה קדושה בלא שמן לקמן צ\"ע:"
+  },
+  "Tosafot on Menachot 3a:13:1": {
+    "dependsOn": [
+      "Menachot 3a:13",
+      "Menachot 3a:14",
+      "Menachot 3a:15",
+      "Rashi on Menachot 3a:13:1",
+      "Menachot 3a:19",
+      "Menachot 3b:1",
+      "Menachot 3b:2",
+      "Menachot 3b:3",
+      "Tosafot on Menachot 3a:1:1",
+      "Tosafot on Menachot 3a:2:1",
+      "Tosafot on Menachot 3a:4:1",
+      "Tosafot on Menachot 3a:7:1",
+      "Tosafot on Menachot 3a:12:1",
+      "Tosafot on Menachot 3a:17:1",
+      "Tosafot on Menachot 3a:19:1",
+      "Rashi on Menachot 3a:19:1",
+      "Rashi on Menachot 3a:19:2",
+      "Rashi on Menachot 3a:19:3"
+    ],
+    "generatedAt": "2026-10-04T16:04:31.562Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 3a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיון דאיכא שעיר נשיא</strong> - ואם עולה זו איל אמרי שעיר נשיא הוא כדאמרינן בסמוך אמרי דיכרא אוכמא הוא:"
+  },
+  "Tosafot on Menachot 3a:17:1": {
+    "dependsOn": [
+      "Menachot 3a:16",
+      "Menachot 3a:17",
+      "Menachot 3a:18",
+      "Temurah 19b:10",
+      "Temurah 19b:11",
+      "Temurah 19b:12",
+      "Temurah 19b:13",
+      "Temurah 19b:14",
+      "Rashi on Menachot 3a:17:1",
+      "Rashi on Menachot 3a:17:2",
+      "Tosafot on Menachot 3a:13:1",
+      "Menachot 3a:4",
+      "Menachot 3a:7",
+      "Menachot 3a:13",
+      "Menachot 3a:14",
+      "Menachot 3a:15",
+      "Tosafot on Menachot 2a:1:1",
+      "Tosafot on Menachot 2b:1:1",
+      "Tosafot on Menachot 3a:4:1",
+      "Tosafot on Menachot 3a:7:1",
+      "Tosafot on Berakhot 2a:1:1",
+      "Tosafot on Berakhot 2a:2:1",
+      "Tosafot on Berakhot 2a:3:1",
+      "Tosafot on Berakhot 2a:4:1",
+      "Tosafot on Menachot 3a:12:1",
+      "Tosafot on Menachot 3a:19:1",
+      "Tosafot on Berakhot 2a:11:1",
+      "Tosafot on Berakhot 2b:1:1",
+      "Tosafot on Berakhot 2b:2:1"
+    ],
+    "generatedAt": "2026-10-04T16:18:42.009Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 3a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר לשם אשם גזילות לשם אשם מעילות מאי איכא למימר</strong> - וא\"ת אכתי אמרי דאי עבר עבר ומייתי ליה בן שנה דהאמר בתמורה בפרק אלו קדשים <span class=\"parenthesized\">(תמורה דף יט:)</span> אשם בן שנה והביאו בן שתים בן שתים והביאו בן שנה כשירה אלא שלא עלו לשם חובה ויש לומר דרבי שמעון לטעמיה דאמר התם כל עצמה אינה קדושה:"
+  },
+  "Tosafot on Menachot 3a:19:1": {
+    "dependsOn": [
+      "Menachot 3a:19",
+      "Rashi on Menachot 3a:19:1",
+      "Rashi on Menachot 3a:19:2",
+      "Rashi on Menachot 3a:19:3",
+      "Tosafot on Menachot 2a:1:1",
+      "Tosafot on Menachot 2b:2:1",
+      "Menachot 3a:14",
+      "Menachot 3a:15",
+      "Tosafot on Menachot 3a:1:1",
+      "Tosafot on Menachot 3a:4:1",
+      "Tosafot on Menachot 3a:13:1",
+      "Tosafot on Berakhot 2a:1:1",
+      "Tosafot on Berakhot 2a:2:1",
+      "Tosafot on Berakhot 2a:3:1"
+    ],
+    "generatedAt": "2026-10-04T16:24:16.944Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 3a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דהאי צמר והאי שיער</strong> - צמר לבן כדכתיב <span class=\"parenthesized\">(ישעיהו א׳:י״ח)</span> אם יאדימו כתולע כצמר יהיו שיער שחור כדמשמע בריש המוציא יין <span class=\"parenthesized\">(שבת דף עז:)</span> מאי טעמא עיזי מסגי ברישא והדר אימרי כברייתו של עולם ברישא חשוכא והדר נהורא והיינו דקאמר הכא אמרי דיכרא אוכמא הוא ו<span class=\"rashi-quotation\">בקונטרס</span> לא פירש כן:"
+  },
+  "Tosafot on Menachot 3a:1:1": {
+    "dependsOn": [
+      "Menachot 3a:1",
+      "Menachot 2b:21",
+      "Menachot 2b:22",
+      "Menachot 2b:23",
+      "Rashi on Menachot 3a:1:1"
+    ],
+    "generatedAt": "2026-10-04T15:28:08.369Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 3a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיצה דמה בכל מקום במזבח כשירה</strong> - אע\"ג דכתיב בה יסוד כדכתיב <span class=\"parenthesized\">(ויקרא ה׳:ט׳)</span> ימצה אל יסוד המזבח האמרינן בפרק חטאת העוף <span class=\"parenthesized\">(זבחים דף סה: ושם)</span> דמיצוי לא מעכב אפי' לא מיצה כלל ופלוגתא היא בפ\"ב דמעילה <span class=\"parenthesized\">(דף ח:)</span>:"
+  },
+  "Tosafot on Menachot 3a:2:1": {
+    "dependsOn": [
+      "Menachot 3a:2",
+      "Tosafot on Menachot 3a:1:1",
+      "Tosafot on Menachot 3a:4:1",
+      "Tosafot on Menachot 2b:16:1"
+    ],
+    "generatedAt": "2026-10-04T15:30:05.810Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 3a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חטאת העוף שהזה דמה</strong> - לפי שהתחיל להקשות ממיצוי והזאה מקשה כמו כן עתה אבל כמו כן <span class=\"parenthesized\">(עתה)</span> היה יכול להקשות ממליקת חטאת שמלקה למטה לשם עולה דמליקת עולת העוף למעלה כדאמרי' בזבחים בפרק קדשי קדשים <span class=\"parenthesized\">(זבחים דף סה. ושם)</span> מה הקטרה בראשו של מזבח אף מליקה:"
+  },
+  "Tosafot on Menachot 3a:4:1": {
+    "dependsOn": [
+      "Menachot 3a:4",
+      "Menachot 3a:5",
+      "Menachot 3a:6",
+      "Tosafot on Menachot 3a:4:1",
+      "Tosafot on Menachot 3a:1:1",
+      "Tosafot on Menachot 3a:2:1",
+      "Tosafot on Menachot 3a:7:1",
+      "Rashi on Menachot 3a:5:1",
+      "Tosafot on Menachot 2a:1:1",
+      "Tosafot on Menachot 2b:1:1",
+      "Tosafot on Berakhot 2a:1:1",
+      "Tosafot on Berakhot 2a:2:1"
+    ],
+    "generatedAt": "2026-10-04T15:34:52.904Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 3a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאי קדשים קלים בדרום הוה עביד להו</strong> - ס\"ד משום דלא ליתי למיטעי ולומר שהם קדשי קדשים:"
+  },
+  "Tosafot on Menachot 3a:7:1": {
+    "dependsOn": [
+      "Menachot 3a:2",
+      "Menachot 3a:4",
+      "Menachot 3a:6",
+      "Menachot 3a:7",
+      "Tosafot on Menachot 3a:2:1",
+      "Tosafot on Menachot 3a:4:1",
+      "Rashi on Menachot 3a:2:1",
+      "Rashi on Menachot 3a:3:1",
+      "Rashi on Menachot 3a:3:2",
+      "Menachot 3a:3",
+      "Menachot 2b:11",
+      "Menachot 2b:12",
+      "Menachot 2b:13",
+      "Menachot 2b:14",
+      "Rashi on Menachot 2b:11:1",
+      "Rashi on Menachot 2b:12:1",
+      "Rashi on Menachot 2b:13:1",
+      "Rashi on Menachot 2b:14:1",
+      "Menachot 2b:5",
+      "Menachot 2a:11",
+      "Menachot 2a:12",
+      "Menachot 2a:13",
+      "Rashi on Menachot 2a:11:1",
+      "Rashi on Menachot 2a:12:1",
+      "Rashi on Menachot 2a:13:1",
+      "Tosafot on Menachot 2a:11:1",
+      "Menachot 2b:1",
+      "Rashi on Menachot 2b:3:1",
+      "Rashi on Menachot 2b:4:1",
+      "Rashi on Menachot 3a:1:1",
+      "Tosafot on Menachot 3a:1:1",
+      "Rashi on Menachot 3a:5:1",
+      "Rashi on Menachot 3a:7:1",
+      "Rashi on Menachot 3a:8:1",
+      "Menachot 3a:1",
+      "Tosafot on Menachot 2b:2:1",
+      "Tosafot on Menachot 2b:3:1",
+      "Tosafot on Menachot 2b:4:1",
+      "Tosafot on Menachot 2b:19:1",
+      "Tosafot on Menachot 2b:21:1",
+      "Menachot 2a:1",
+      "Menachot 2a:2",
+      "Tosafot on Menachot 2a:1:1",
+      "Tosafot on Menachot 2a:2:1",
+      "Tosafot on Menachot 2b:16:1",
+      "Tosafot on Menachot 2b:17:1",
+      "Tosafot on Menachot 2b:15:1",
+      "Tosafot on Menachot 2b:18:1",
+      "Tosafot on Menachot 2b:20:1",
+      "Menachot 3a:13",
+      "Tosafot on Menachot 3a:13:1",
+      "Rashi on Menachot 3a:13:1",
+      "Tosafot on Menachot 2a:3:1"
+    ],
+    "generatedAt": "2026-10-04T15:39:49.444Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Menachot 3a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומיעבר הוא דעבר ושחטינהו בדרום</strong> - הא דלא משני הכי לעיל גבי קושיא דחטאת העוף שהזה דמה למטה לשם עולת העוף <span class=\"rashi-quotation\">פי' בקונטרס</span> משום דאיכא תרתי ולא טעי שיעשה הזאה ולמטה ולפירושו קשה דא\"כ תקשי לו מחטאת בהמה לשם עולה דאיכא תרתי שינויי כדפרישנא לעיל ונראה דהשתא חוזר בו משינויא דלעיל דלזבחים ולא לעופות דאכולהו איכא לשנויי דאמרי' מיעבר עבר:"
+  }
+}
