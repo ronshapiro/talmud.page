@@ -3,6 +3,7 @@ import {AgentError} from "./agent_runner";
 import {
   CritiqueOutcome,
   CritiqueVerdict,
+  critiquePrompt,
   GeneratedEdit,
   generateWithSelfCritique,
   compareAmudim,
@@ -154,6 +155,29 @@ describe("generateWithSelfCritique", () => {
     await expect(generateWithSelfCritique(candidate(), {generate, critique}))
       .rejects.toBe(rateLimitError);
     expect(generate).toHaveBeenCalledTimes(1);
+  });
+
+  test("accepts a terse verdict without reason", async () => {
+    const generate = jest.fn(async () => generated());
+    const critique = jest.fn(async () => outcome({verdict: {valid: true}}));
+    const result = await generateWithSelfCritique(candidate(), {generate, critique});
+    expect(result).not.toBeUndefined();
+    expect(generate).toHaveBeenCalledTimes(1);
+  });
+
+  test("retries with fallback reason when terse rejection omits reason", async () => {
+    const generate = jest.fn<Promise<GeneratedEdit>, [TranslationCandidate, string?]>()
+      .mockResolvedValueOnce(generated({edit: {hebrew: "wrong"}}))
+      .mockResolvedValueOnce(generated());
+    const critique = jest.fn<Promise<CritiqueOutcome>, [TranslationCandidate, Edit]>()
+      .mockResolvedValueOnce(outcome({verdict: {valid: false}}))
+      .mockResolvedValueOnce(outcome({verdict: {valid: true}}));
+
+    const result = await generateWithSelfCritique(candidate(), {generate, critique});
+
+    expect(result).not.toBeUndefined();
+    expect(generate).toHaveBeenCalledTimes(2);
+    expect(generate.mock.calls[1][1]).toBe("Critique rejected the edit");
   });
 });
 
@@ -548,5 +572,21 @@ describe("parseJsonResponse", () => {
 
   test("strips a code fence with no language tag", () => {
     expect(parseJsonResponse<{a: number}>('```\n{"a": 1}\n```')).toEqual({a: 1});
+  });
+
+  test("extracts JSON when surrounded by text", () => {
+    expect(parseJsonResponse<{valid: boolean}>('Decision:\n{"valid": true}\nDone.')).toEqual({
+      valid: true,
+    });
+  });
+});
+
+describe("critiquePrompt", () => {
+  test("instructs terse output and compact JSON format", () => {
+    const prompt = critiquePrompt(candidate(), {hebrew: "מקור:", english: "source."});
+    expect(prompt).toContain("Be extremely terse to minimize token usage.");
+    expect(prompt).toContain('{"valid": true}');
+    expect(prompt).toContain('{"valid": false, "reason": "<brief one-sentence reason>"}');
+    expect(prompt).toContain("Keep any rejection reason to a single brief sentence.");
   });
 });
