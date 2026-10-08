@@ -3,7 +3,9 @@ import {hideBin} from "yargs/helpers";
 import {books} from "../books";
 import {splitOnBookName} from "../refs";
 import {writeAiEdit} from "../precomputed/ai_edits";
+import {stopAllActiveAgents} from "./agent_runner";
 import {commitAndPushPendingCandidates, makeRealCommitPendingDeps} from "./commit_pending";
+import {setupRsiSignalHandler} from "./signal_handler";
 import {getTaskModelConfig} from "../precomputed/rsi_state/model_routing";
 import {
   generateAndRecord,
@@ -138,89 +140,134 @@ async function main(): Promise<void> {
     return candidates;
   }
 
-  if (isContinuous) {
-    await runContinuousTranslation({
-      listCandidates: getCandidates,
-      isFresh: isFreshTranslation,
-      generate: candidate => {
-        if (FLAGS.debug) {
-          console.log(`\n[Candidate] ${candidate.ref}`);
-        }
-        return generateAndRecord(candidate, {
-          backend: effectiveBackend,
-          model: FLAGS.model,
-          modelConfig: FLAGS.modelConfig,
-          debug: FLAGS.debug,
-        });
-      },
-      writeEdit: (candidate, edit) => {
-        if (FLAGS.debug) {
-          console.log(`Saved pending edit for ${candidate.ref}`);
-        }
-        writeAiEdit(candidate.page, candidate.ref, edit);
-      },
-      recordGeneration: recordGenerationForCandidate,
-      onProgress: FLAGS.push
-        ? async () => {
-          if (FLAGS.debug) {
-            console.log("\nCommitting and pushing pending candidates...");
-          }
-          await commitAndPushPendingCandidates({
-            task: "rashi_tosafot_translation",
-            backend: effectiveBackend,
-            message: `New pending translation candidates (${scopeLabel})`,
-          }, makeRealCommitPendingDeps({debug: FLAGS.debug}));
-        }
-        : undefined,
-      durationMs: durationHours * 60 * 60 * 1000,
-      checkIntervalMs,
-    });
-  } else {
-    await translateRashiTosafotComments({
-      listCandidates: () => {
-        let candidates = getCandidates();
-        // Filter freshness before slicing to --limit — otherwise a limit smaller than the run of
-        // already-fresh candidates at the start of the page silently does nothing (found the hard
-        // way: a real --limit 1 run picked an already-generated candidate, skipped it, and exited
-        // with zero output and zero work done).
-        candidates = candidates.filter(c => !isFreshTranslation(c));
-        const sliced = FLAGS.limit !== undefined ? candidates.slice(0, FLAGS.limit) : candidates;
-        if (FLAGS.debug) {
-          console.log(
-            `Found ${sliced.length} candidate(s) to process for ${scopeLabel}`
-            + `${FLAGS.section ? ` (section ${FLAGS.section})` : ""}.`);
-        }
-        return sliced;
-      },
-      isFresh: isFreshTranslation,
-      generate: candidate => {
-        if (FLAGS.debug) {
-          console.log(`\n[Candidate] ${candidate.ref}`);
-        }
-        return generateAndRecord(candidate, {
-          backend: effectiveBackend,
-          model: FLAGS.model,
-          modelConfig: FLAGS.modelConfig,
-          debug: FLAGS.debug,
-        });
-      },
-      writeEdit: (candidate, edit) => {
-        if (FLAGS.debug) {
-          console.log(`Saved pending edit for ${candidate.ref}`);
-        }
-        writeAiEdit(candidate.page, candidate.ref, edit);
-      },
-      recordGeneration: recordGenerationForCandidate,
-    });
-    if (FLAGS.push) {
+  let stopRequested = false;
+  let activeRunPromise: Promise<unknown> | undefined;
+
+  const performCommitAndPush = async () => {
+    if (FLAGS.debug) {
+      console.log("\nCommitting and pushing pending candidates...");
+    }
+    await commitAndPushPendingCandidates({
+      task: "rashi_tosafot_translation",
+      backend: effectiveBackend,
+      message: `New pending translation candidates (${scopeLabel})`,
+    }, makeRealCommitPendingDeps({debug: FLAGS.debug}));
+  };
+
+  const signalHandler = setupRsiSignalHandler({
+    onStopAgents: async () => {
+      stopRequested = true;
+      const stoppedCount = stopAllActiveAgents();
       if (FLAGS.debug) {
-        console.log("\nCommitting and pushing pending candidates...");
+        console.log(`[Signal] Stopped ${stoppedCount} active agent process(es).`);
       }
-      await commitAndPushPendingCandidates({
-        task: "rashi_tosafot_translation",
-        backend: effectiveBackend,
-        message: `New pending translation candidates (${scopeLabel})`,
-      }, makeRealCommitPendingDeps({debug: FLAGS.debug}));
+      if (activeRunPromise) {
+        try {
+          await Promise.race([
+            activeRunPromise,
+            new Promise(resolve => setTimeout(resolve, 5000)),
+          ]);
+        } catch {
+          // Ignore cancellation errors from stopped agents
+        }
+      }
+    },
+    onCreatePr: async () => {
+      await performCommitAndPush();
+    },
+    logger: console,
+  });
+
+  if (FLAGS.debug) {
+    console.log(
+      `[Signal] Process PID: ${process.pid}. Send SIGINT, SIGTERM, SIGUSR1, or SIGUSR2 to stop agents and create PR.`);
+  }
+
+  try {
+    if (isContinuous) {
+      activeRunPromise = runContinuousTranslation({
+        listCandidates: getCandidates,
+        isFresh: isFreshTranslation,
+        generate: candidate => {
+          if (FLAGS.debug) {
+            console.log(`\n[Candidate] ${candidate.ref}`);
+          }
+          return generateAndRecord(candidate, {
+            backend: effectiveBackend,
+            model: FLAGS.model,
+            modelConfig: FLAGS.modelConfig,
+            debug: FLAGS.debug,
+            shouldStop: () => stopRequested,
+          });
+        },
+        writeEdit: (candidate, edit) => {
+          if (FLAGS.debug) {
+            console.log(`Saved pending edit for ${candidate.ref}`);
+          }
+          writeAiEdit(candidate.page, candidate.ref, edit);
+        },
+        recordGeneration: recordGenerationForCandidate,
+        onProgress: FLAGS.push ? performCommitAndPush : undefined,
+        durationMs: durationHours * 60 * 60 * 1000,
+        checkIntervalMs,
+        shouldStop: () => stopRequested,
+      });
+      await activeRunPromise;
+      if (FLAGS.push && !signalHandler.isShuttingDown()) {
+        await performCommitAndPush();
+      }
+    } else {
+      activeRunPromise = translateRashiTosafotComments({
+        listCandidates: () => {
+          let candidates = getCandidates();
+          // Filter freshness before slicing to --limit — otherwise a limit smaller than the run of
+          // already-fresh candidates at the start of the page silently does nothing (found the hard
+          // way: a real --limit 1 run picked an already-generated candidate, skipped it, and exited
+          // with zero output and zero work done).
+          candidates = candidates.filter(c => !isFreshTranslation(c));
+          const sliced = FLAGS.limit !== undefined ? candidates.slice(0, FLAGS.limit) : candidates;
+          if (FLAGS.debug) {
+            console.log(
+              `Found ${sliced.length} candidate(s) to process for ${scopeLabel}`
+              + `${FLAGS.section ? ` (section ${FLAGS.section})` : ""}.`);
+          }
+          return sliced;
+        },
+        isFresh: isFreshTranslation,
+        generate: candidate => {
+          if (FLAGS.debug) {
+            console.log(`\n[Candidate] ${candidate.ref}`);
+          }
+          return generateAndRecord(candidate, {
+            backend: effectiveBackend,
+            model: FLAGS.model,
+            modelConfig: FLAGS.modelConfig,
+            debug: FLAGS.debug,
+            shouldStop: () => stopRequested,
+          });
+        },
+        writeEdit: (candidate, edit) => {
+          if (FLAGS.debug) {
+            console.log(`Saved pending edit for ${candidate.ref}`);
+          }
+          writeAiEdit(candidate.page, candidate.ref, edit);
+        },
+        recordGeneration: recordGenerationForCandidate,
+        shouldStop: () => stopRequested,
+      });
+      await activeRunPromise;
+      if (FLAGS.push && !signalHandler.isShuttingDown()) {
+        await performCommitAndPush();
+      }
+    }
+
+    if (signalHandler.isShuttingDown()) {
+      // Signal handler is in the middle of creating PR and exiting cleanly
+      await new Promise(() => {});
+    }
+  } finally {
+    if (!signalHandler.isShuttingDown()) {
+      signalHandler.uninstall();
     }
   }
 }

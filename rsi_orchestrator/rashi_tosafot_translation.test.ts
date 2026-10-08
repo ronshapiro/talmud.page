@@ -179,6 +179,28 @@ describe("generateWithSelfCritique", () => {
     expect(generate).toHaveBeenCalledTimes(2);
     expect(generate.mock.calls[1][1]).toBe("Critique rejected the edit");
   });
+
+  test("propagates a cancelled error immediately without retrying", async () => {
+    const cancelledErr = new AgentError("Execution cancelled", undefined, "agy", true);
+    const generate = jest.fn(async () => { throw cancelledErr; });
+    const critique = jest.fn(async () => validOutcome);
+
+    await expect(generateWithSelfCritique(candidate(), {generate, critique}))
+      .rejects.toBe(cancelledErr);
+    expect(generate).toHaveBeenCalledTimes(1);
+  });
+
+  test("returns undefined immediately when shouldStop returns true", async () => {
+    const generate = jest.fn(async () => generated());
+    const critique = jest.fn(async () => validOutcome);
+    const result = await generateWithSelfCritique(candidate(), {
+      generate,
+      critique,
+      shouldStop: () => true,
+    });
+    expect(result).toBeUndefined();
+    expect(generate).not.toHaveBeenCalled();
+  });
 });
 
 function fakeGenerationDeps(overrides: Partial<TranslationDeps> = {}): TranslationDeps {
@@ -309,6 +331,23 @@ describe("translateRashiTosafotComments", () => {
       rateLimited: false,
       candidatesProcessed: 1,
       stoppedDueToDeadline: true,
+    });
+  });
+
+  test("stops early and flags stoppedDueToSignal when generate throws cancelled error", async () => {
+    const cancelledErr = new AgentError("Process cancelled", undefined, "claude", true);
+    const writeEdit = jest.fn();
+    const result = await translateRashiTosafotComments(fakeGenerationDeps({
+      listCandidates: () => [candidate({ref: "a"}), candidate({ref: "b"})],
+      generate: async () => { throw cancelledErr; },
+      writeEdit,
+    }));
+    expect(writeEdit).not.toHaveBeenCalled();
+    expect(result).toEqual({
+      rateLimited: false,
+      candidatesProcessed: 0,
+      stoppedDueToDeadline: true,
+      stoppedDueToSignal: true,
     });
   });
 });
@@ -521,6 +560,86 @@ describe("runContinuousTranslation", () => {
     });
     // Two 1-hour pauses hit the 2-hour duration limit
     expect(sleepCalls).toEqual([3600000, 3600000]);
+  });
+
+  test("stops with stopped_by_signal when shouldStop returns true", async () => {
+    let stop = false;
+    let candidatesProcessed = 0;
+    const summary = await runContinuousTranslation({
+      listCandidates: () => [candidate({ref: "a"}), candidate({ref: "b"})],
+      isFresh: () => false,
+      generate: async () => {
+        candidatesProcessed++;
+        stop = true;
+        return generated();
+      },
+      writeEdit: () => {},
+      recordGeneration: () => {},
+      durationMs: 24 * 60 * 60 * 1000,
+      shouldStop: () => stop,
+      logger: {log: () => {}, error: () => {}},
+    });
+
+    expect(candidatesProcessed).toBe(1);
+    expect(summary).toEqual({
+      totalProcessed: 1,
+      totalPauses: 0,
+      stoppedReason: "stopped_by_signal",
+    });
+  });
+
+  test("stops with stopped_by_signal and wakes from sleep when aborted", async () => {
+    const controller = new AbortController();
+    let slept = false;
+
+    const summary = await runContinuousTranslation({
+      listCandidates: () => [candidate({ref: "a"})],
+      isFresh: () => false,
+      generate: async () => {
+        throw new AgentError("quota exceeded", 429, "claude");
+      },
+      writeEdit: () => {},
+      recordGeneration: () => {},
+      durationMs: 24 * 60 * 60 * 1000,
+      checkIntervalMs: 60 * 60 * 1000,
+      signal: controller.signal,
+      sleep: async () => {
+        slept = true;
+        controller.abort();
+      },
+      logger: {log: () => {}, error: () => {}},
+    });
+
+    expect(slept).toBe(true);
+    expect(summary).toEqual({
+      totalProcessed: 0,
+      totalPauses: 1,
+      stoppedReason: "stopped_by_signal",
+    });
+  });
+
+  test("default sleep wakes up when aborted", async () => {
+    const controller = new AbortController();
+    setTimeout(() => { controller.abort(); }, 15);
+
+    const startTime = Date.now();
+    const summary = await runContinuousTranslation({
+      listCandidates: () => [candidate({ref: "a"})],
+      isFresh: () => false,
+      generate: async () => {
+        throw new AgentError("quota exceeded", 429, "claude");
+      },
+      writeEdit: () => {},
+      recordGeneration: () => {},
+      durationMs: 24 * 60 * 60 * 1000,
+      checkIntervalMs: 60 * 60 * 1000,
+      signal: controller.signal,
+      logger: {log: () => {}, error: () => {}},
+    });
+
+    const elapsed = Date.now() - startTime;
+    expect(elapsed).toBeLessThan(2000); // Definitely didn't wait 1 hour!
+    expect(summary.stoppedReason).toBe("stopped_by_signal");
   });
 });
 

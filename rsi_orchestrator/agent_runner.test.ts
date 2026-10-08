@@ -3,16 +3,21 @@ import {
   AgentError,
   asAgyCliError,
   asClaudeCliError,
+  clearActiveAgentRegistry,
   createAgyToolFilterShims,
   execFileWithStreaming,
+  getActiveAgentCount,
   getAgentRunner,
   getSubcommandFromToolUse,
+  isCancelledError,
   isCommandAllowed,
   parseAgyStreamJsonLines,
   parseClaudeStreamJsonLines,
   primaryClaudeModel,
+  registerActiveChildProcess,
   runHeadlessAgy,
   runHeadlessClaude,
+  stopAllActiveAgents,
 } from "./agent_runner";
 
 describe("parseAgyStreamJsonLines", () => {
@@ -163,9 +168,65 @@ describe("AgentError", () => {
     expect(quotaErr.isRateLimited).toBe(true);
   });
 
+  test("sets isCancelled when passed", () => {
+    const err = new AgentError("Process stopped", undefined, "agy", true);
+    expect(err.isCancelled).toBe(true);
+    expect(err.isRateLimited).toBe(false);
+  });
+
   test("does not set isRateLimited on generic error", () => {
     const err = new AgentError("Syntax error in file", 500);
     expect(err.isRateLimited).toBe(false);
+    expect(err.isCancelled).toBe(false);
+  });
+});
+
+describe("active agent process registry and cancellation", () => {
+  beforeEach(() => {
+    clearActiveAgentRegistry();
+  });
+
+  test("tracks registered child processes and unregisters on exit", () => {
+    expect(getActiveAgentCount()).toBe(0);
+    const mockChild: any = {
+      kill: jest.fn(),
+      once: jest.fn((event, cb) => {
+        if (event === "close") {
+          mockChild._onClose = cb;
+        }
+      }),
+    };
+
+    const cleanup = registerActiveChildProcess(mockChild);
+    expect(getActiveAgentCount()).toBe(1);
+
+    cleanup();
+    expect(getActiveAgentCount()).toBe(0);
+  });
+
+  test("stopAllActiveAgents signals all registered child processes and clears registry", () => {
+    const child1: any = {kill: jest.fn(), once: jest.fn()};
+    const child2: any = {kill: jest.fn(), once: jest.fn()};
+
+    registerActiveChildProcess(child1);
+    registerActiveChildProcess(child2);
+    expect(getActiveAgentCount()).toBe(2);
+
+    const stoppedCount = stopAllActiveAgents("SIGTERM");
+    expect(stoppedCount).toBe(2);
+    expect(child1.kill).toHaveBeenCalledWith("SIGTERM");
+    expect(child2.kill).toHaveBeenCalledWith("SIGTERM");
+    expect(getActiveAgentCount()).toBe(0);
+  });
+
+  test("isCancelledError correctly detects signal and killed errors", () => {
+    expect(isCancelledError(new AgentError("Cancelled", undefined, "claude", true))).toBe(true);
+    expect(isCancelledError({killed: true})).toBe(true);
+    expect(isCancelledError({signal: "SIGTERM"})).toBe(true);
+    expect(isCancelledError({signal: "SIGINT"})).toBe(true);
+    expect(isCancelledError({message: "Command was aborted"})).toBe(true);
+    expect(isCancelledError(new Error("random error"))).toBe(false);
+    expect(isCancelledError(undefined)).toBe(false);
   });
 });
 
