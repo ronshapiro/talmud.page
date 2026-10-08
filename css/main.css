@@ -177,6 +177,10 @@ items. */
 
     margin-inline-start: 2px;
     content: "+";
+}
+
+.commentary_header.has-nested-commentaries::after,
+.steinsaltz-inline-plus {
     font-size: smaller;
 }
 
@@ -190,7 +194,6 @@ items. */
 }
 
 .steinsaltz-inline-plus {
-    font-size: smaller;
     margin-inline-end: 2px;
 }
 
