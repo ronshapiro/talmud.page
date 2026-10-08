@@ -3,6 +3,7 @@ import {Segment, UiSegment} from "../Segment";
 import {TestConfiguration, TestContext} from "./testing/configuration";
 import {
   classesOf,
+  click,
   doubleClick,
   mount,
   query,
@@ -267,5 +268,225 @@ describe("the hidden host copy", () => {
     );
 
     expect(texts(root, ".IndividualComment .table-cell.hebrew")).toEqual(["פירוש"]);
+  });
+});
+
+describe("steinsaltz inline indicators", () => {
+  const steinsaltzIndicators = (root: HTMLElement) => (
+    queryOrNull(gemaraHebrew(root), ".steinsaltz-inline-indicators")
+  );
+  const steinsaltzPlus = (root: HTMLElement) => (
+    queryOrNull(gemaraHebrew(root), ".steinsaltz-inline-plus")
+  );
+  const steinsaltzChips = (root: HTMLElement) => (
+    queryAll(gemaraHebrew(root), ".steinsaltz-inline-indicators svg.highlight-chip")
+  );
+
+  test("renders plus sign when there is a comment on Steinsaltz translation", () => {
+    const root = render([
+      segment({
+        he: "עברית",
+        commentary: commentaries({
+          Steinsaltz: [{
+            he: "שטיינזלץ",
+            en: "steinsaltz english",
+            commentary: commentaries({"Personal Notes": [{he: "הערה אישית"}]}),
+          }],
+        }),
+      }),
+    ]);
+
+    expect(steinsaltzIndicators(root)).not.toBeNull();
+    expect(steinsaltzPlus(root)).not.toBeNull();
+    expect(steinsaltzPlus(root)!.textContent).toBe("+");
+    expect(steinsaltzChips(root)).toHaveLength(0);
+  });
+
+  test("renders highlight chips when there is a highlight on Steinsaltz translation", () => {
+    const root = render([
+      segment({
+        he: "עברית",
+        commentary: commentaries({
+          Steinsaltz: [{
+            he: "שטיינזלץ",
+            en: "steinsaltz english",
+            highlightColors: new Set(["yellow", "blue"]) as any,
+          }],
+        }),
+      }),
+    ]);
+
+    expect(steinsaltzIndicators(root)).not.toBeNull();
+    expect(steinsaltzPlus(root)).toBeNull();
+    const chips = steinsaltzChips(root);
+    expect(chips).toHaveLength(2);
+    const fills = chips.map(c => query(c, "path").getAttribute("fill"));
+    expect(fills).toContain("var(--highlight-yellow)");
+    expect(fills).toContain("var(--highlight-blue)");
+  });
+
+  test("extracts highlight chips from english translation markup", () => {
+    const root = render([
+      segment({
+        he: "עברית",
+        en: 'Some <span-highlight class="highlighted highlighted-green">highlighted</span-highlight> text',
+        commentary: commentaries({Steinsaltz: [{he: "שטיינזלץ"}]}),
+      }),
+    ]);
+
+    expect(steinsaltzIndicators(root)).not.toBeNull();
+    const chips = steinsaltzChips(root);
+    expect(chips).toHaveLength(1);
+    expect(query(chips[0], "path").getAttribute("fill")).toBe("var(--highlight-green)");
+  });
+
+  test("renders both plus sign and chips when both are present", () => {
+    const root = render([
+      segment({
+        he: "עברית",
+        commentary: commentaries({
+          Steinsaltz: [{
+            he: "שטיינזלץ",
+            en: "steinsaltz english",
+            commentary: commentaries({"Personal Notes": [{he: "הערה"}]}),
+            highlightColors: new Set(["red"]) as any,
+          }],
+        }),
+      }),
+    ]);
+
+    expect(steinsaltzPlus(root)).not.toBeNull();
+    const chips = steinsaltzChips(root);
+    expect(chips).toHaveLength(1);
+    expect(query(chips[0], "path").getAttribute("fill")).toBe("var(--highlight-red)");
+  });
+
+  test("does not render indicators when there are no highlights or comments on Steinsaltz", () => {
+    const root = render([
+      segment({
+        he: "עברית",
+        en: "english",
+        commentary: commentaries({Steinsaltz: [{he: "שטיינזלץ", en: "steinsaltz english"}]}),
+      }),
+    ]);
+
+    expect(steinsaltzIndicators(root)).toBeNull();
+  });
+
+  test("hides indicators when Steinsaltz commentary is opened", () => {
+    localStorage.translationOption = "both";
+    const root = render([
+      segment({
+        he: "עברית",
+        commentary: commentaries({
+          Steinsaltz: [{
+            he: "שטיינזלץ",
+            en: "steinsaltz english",
+            commentary: commentaries({"Personal Notes": [{he: "הערה"}]}),
+          }],
+        }),
+      }),
+    ]);
+
+    expect(steinsaltzIndicators(root)).not.toBeNull();
+
+    doubleClick(gemaraHebrew(root));
+    expect(steinsaltzIndicators(root)).toBeNull();
+
+    doubleClick(gemaraHebrew(root));
+    expect(steinsaltzIndicators(root)).not.toBeNull();
+  });
+
+  test("hides indicators when showTranslationButton is enabled", () => {
+    localStorage.showTranslationButton = "yes";
+    const root = render([
+      segment({
+        he: "עברית",
+        commentary: commentaries({
+          Steinsaltz: [{
+            he: "שטיינזלץ",
+            en: "steinsaltz english",
+            commentary: commentaries({"Personal Notes": [{he: "הערה"}]}),
+          }],
+        }),
+      }),
+    ]);
+
+    expect(steinsaltzIndicators(root)).toBeNull();
+  });
+
+  test("clicking the indicator opens the translation commentary", () => {
+    localStorage.translationOption = "both";
+    const root = render([
+      segment({
+        he: "עברית",
+        commentary: commentaries({
+          Steinsaltz: [{
+            he: "שטיינזלץ",
+            en: "steinsaltz english",
+            commentary: commentaries({"Personal Notes": [{he: "הערה"}]}),
+          }],
+        }),
+      }),
+    ]);
+
+    expect(texts(root, ".IndividualComment .table-cell.hebrew")).toEqual([]);
+    click(steinsaltzIndicators(root));
+    expect(texts(root, ".IndividualComment .table-cell.hebrew")).toEqual(["שטיינזלץ"]);
+  });
+
+  test("renders at the very end of merged main text in compact layout", () => {
+    const root = render([
+      segment({
+        he: "משפט ראשון",
+        commentary: commentaries({
+          Steinsaltz: [{
+            he: "שטיינזלץ א",
+            highlightColors: new Set(["yellow"]) as any,
+          }],
+        }),
+      }),
+      segment({
+        he: "משפט שני",
+        commentary: commentaries({
+          Steinsaltz: [{
+            he: "שטיינזלץ ב",
+            commentary: commentaries({"Personal Notes": [{he: "הערה"}]}),
+          }],
+        }),
+      }),
+    ]);
+
+    expect(steinsaltzIndicators(root)).not.toBeNull();
+    expect(steinsaltzPlus(root)).not.toBeNull();
+    const chips = steinsaltzChips(root);
+    expect(chips).toHaveLength(1);
+    expect(query(chips[0], "path").getAttribute("fill")).toBe("var(--highlight-yellow)");
+
+    // Sits at the end of the combined text in the hebrew cell
+    expect(gemaraHebrew(root).textContent).toContain("משפט ראשון משפט שני");
+  });
+
+  test("renders indicators directly on a middle segment in compact layout", () => {
+    const root = render([
+      segment({he: "משפט ראשון"}),
+      segment({
+        he: "משפט שני",
+        commentary: commentaries({
+          Steinsaltz: [{
+            he: "שטיינזלץ ב",
+            commentary: commentaries({"Personal Notes": [{he: "הערה"}]}),
+          }],
+        }),
+      }),
+      segment({he: "משפט שלישי"}),
+    ]);
+
+    const indicators = queryAll(gemaraHebrew(root), ".steinsaltz-inline-indicators");
+    expect(indicators).toHaveLength(1);
+    expect(indicators[0].textContent).toBe("+");
+
+    // The plus indicator appears in the hebrew cell alongside the middle segment
+    expect(gemaraHebrew(root).textContent).toBe("משפט ראשון משפט שני+ משפט שלישי");
   });
 });
