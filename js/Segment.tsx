@@ -1,10 +1,17 @@
 import * as React from "react";
 import * as PropTypes from 'prop-types';
-import {CommentariesBlock} from "./CommentariesBlock";
+import {
+  CommentariesBlock,
+  commentaryHighlightColors,
+  hasNestedPersonalComments,
+  renderHighlightChip,
+} from "./CommentariesBlock";
 import TableRow, {CellText} from "./TableRow";
 import {useConfiguration, useHiddenHost, HiddenHostContext} from "./context";
 import {mergeCommentaries} from "./mergeCommentaries";
-import {Section} from "../apiTypes";
+import {Section, Commentary} from "../apiTypes";
+import {showTranslationButtonPreference} from "./settings";
+import {onClickKeyListener} from "./key_clicks";
 
 const {useState} = React;
 
@@ -14,6 +21,90 @@ export interface UiSegment extends Section {
   continuallyRewriteSteinsaltzEnglish?: boolean;
   sourceRef?: string;
   sourceHeRef?: string;
+}
+
+function getSteinsaltzCommentaries(segments: (UiSegment | Section)[]): Commentary[] {
+  const result: Commentary[] = [];
+  for (const segment of segments) {
+    if (segment.commentary?.Steinsaltz) {
+      result.push(segment.commentary.Steinsaltz);
+    }
+    if (segment.commentary?.Translation) {
+      result.push(segment.commentary.Translation);
+    }
+  }
+  return result;
+}
+
+export function hasSteinsaltzComment(segments: (UiSegment | Section)[]): boolean {
+  for (const commentary of getSteinsaltzCommentaries(segments)) {
+    if (hasNestedPersonalComments(commentary)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function extractHighlightColorsFromText(
+  text: sefaria.TextType | undefined,
+  colors: Set<string>,
+): void {
+  if (!text) return;
+  if (typeof text === "string") {
+    const matches = text.matchAll(/highlighted-(red|yellow|green|blue|gray)/g);
+    for (const match of matches) {
+      colors.add(match[1]);
+    }
+  } else if (Array.isArray(text)) {
+    for (const t of text) {
+      extractHighlightColorsFromText(t, colors);
+    }
+  }
+}
+
+export function steinsaltzHighlightColors(segments: (UiSegment | Section)[]): Set<string> {
+  const colors = new Set<string>();
+  for (const commentary of getSteinsaltzCommentaries(segments)) {
+    commentaryHighlightColors(commentary, colors);
+  }
+  for (const segment of segments) {
+    extractHighlightColorsFromText(segment.en, colors);
+  }
+  return colors;
+}
+
+interface InlineSteinsaltzIndicatorsProps {
+  hasComment: boolean;
+  highlightColors: Set<string>;
+  onClick?: (event: React.MouseEvent) => void;
+}
+
+export function InlineSteinsaltzIndicators({
+  hasComment,
+  highlightColors,
+  onClick,
+}: InlineSteinsaltzIndicatorsProps): React.ReactElement | null {
+  if (!hasComment && highlightColors.size === 0) {
+    return null;
+  }
+
+  const chips = Array.from(highlightColors).map(renderHighlightChip);
+  const plusSign = hasComment ? (
+    <span className="steinsaltz-inline-plus">+</span>
+  ) : null;
+
+  return (
+    <span
+      className="steinsaltz-inline-indicators"
+      onClick={onClick}
+      onKeyUp={onClick ? onClickKeyListener(onClick as any) : undefined}
+      role="button"
+      tabIndex={0}
+    >
+      {plusSign}
+      {chips}
+    </span>
+  );
 }
 
 interface Props {
@@ -107,8 +198,39 @@ export function Segment({
     }
   }
 
+  const isSteinsaltzCommentRendered = (
+    (showingState[segmentLabel] || []).includes("translation")
+    || showTranslationButtonPreference.get() === "yes"
+  );
+
+  const getSteinsaltzIndicatorsForSegment = (seg: UiSegment, index: number) => {
+    if (isSteinsaltzCommentRendered) {
+      return null;
+    }
+    const hasComment = hasSteinsaltzComment([seg]);
+    const highlightColors = steinsaltzHighlightColors([seg]);
+    if (!hasComment && highlightColors.size === 0) {
+      return null;
+    }
+    return (
+      <InlineSteinsaltzIndicators
+        key={`steinsaltz-indicators-${index}`}
+        hasComment={hasComment}
+        highlightColors={highlightColors}
+        onClick={(event) => {
+          event.stopPropagation();
+          toggleShowing(true, segmentLabel, "translation");
+        }}
+      />
+    );
+  };
+
   const isStandaloneSegment = segments.length === 1;
-  const createText = (texts: string[], languageClass: string) => {
+  const createText = (
+    texts: string[],
+    languageClass: string,
+    getSuffix?: (segment: UiSegment, index: number) => React.ReactNode,
+  ) => {
     if (texts.length === 0) {
       return "";
     }
@@ -130,6 +252,12 @@ export function Segment({
           classes={classes}
           sefariaRef={ref}
           segmentIdForHighlighting={isStandaloneSegment ? undefined : ref} />);
+      if (getSuffix) {
+        const suffix = getSuffix(segments[i], i);
+        if (suffix) {
+          elements.push(suffix);
+        }
+      }
       if (i + 1 < texts.length) {
         elements.push(<span key={`segment-part-${i}-space`}> </span>);
       }
@@ -141,7 +269,7 @@ export function Segment({
     <TableRow
       key="gemara"
       id={`${segmentLabel}-gemara`}
-      hebrew={createText(hebrews, "hebrew-ref-text")}
+      hebrew={createText(hebrews, "hebrew-ref-text", getSteinsaltzIndicatorsForSegment)}
       hebrewDoubleClickListener={hebrews.length === 1 ? hebrewDoubleClickListener : undefined}
       english={createText(englishes, "english-ref-text")}
       expandEnglishByDefault={context.expandEnglishByDefault()}
