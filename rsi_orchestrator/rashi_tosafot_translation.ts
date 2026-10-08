@@ -56,7 +56,7 @@ export interface TranslationCandidate {
 
 export interface CritiqueVerdict {
   valid: boolean;
-  reason: string;
+  reason?: string;
 }
 
 export interface CritiqueOutcome {
@@ -137,7 +137,7 @@ export async function generateWithSelfCritique(
         new Set([...generated.contextRefsUsed, ...outcome.contextRefsUsed]));
       return {...generated, costUsd: totalCost, contextRefsUsed};
     }
-    lastReason = outcome.verdict.reason;
+    lastReason = outcome.verdict.reason ?? "Critique rejected the edit";
     feedback = lastReason;
   }
   console.error(
@@ -553,7 +553,7 @@ function generationPrompt(candidate: TranslationCandidate, priorFeedback?: strin
   ].filter(line => line !== "").join("\n");
 }
 
-function critiquePrompt(candidate: TranslationCandidate, edit: Edit): string {
+export function critiquePrompt(candidate: TranslationCandidate, edit: Edit): string {
   return [
     "You proposed this edit to a Talmud commentary comment. Check it before it ships.",
     "",
@@ -566,14 +566,27 @@ function critiquePrompt(candidate: TranslationCandidate, edit: Edit): string {
     "",
     "No lookups to sefaria.org or arbitrary bash/scripts (e.g. no python, no node, no cat/diff/file creation) are permitted. All text comparison must be performed directly in your own reasoning. Wikipedia lookups are permitted if needed.",
     "",
-    'Respond with ONLY a JSON object: {"valid": boolean, "reason": string}. No other text.',
+    "Be extremely terse to minimize token usage. Output ONLY a concise JSON decision with no preamble or commentary:",
+    '- If valid: {"valid": true}',
+    '- If invalid: {"valid": false, "reason": "<brief one-sentence reason>"} so generation can retry.',
+    "Keep any rejection reason to a single brief sentence. Do not include verbose commentary, apologies, or full rewrites.",
   ].join("\n");
 }
 
 export function parseJsonResponse<T>(text: string): T {
+  const trimmed = text.trim();
   // Defensive against an occasional markdown code fence around the JSON.
-  const stripped = text.trim().replace(/^```(?:json)?\n?/, "").replace(/\n?```$/, "");
-  return JSON.parse(stripped) as T;
+  const stripped = trimmed.replace(/^```(?:json)?\n?/, "").replace(/\n?```$/, "").trim();
+  try {
+    return JSON.parse(stripped) as T;
+  } catch (e) {
+    // If there is preamble or postamble, extract the first outermost {...} block.
+    const match = stripped.match(/{[\S\s]*}/);
+    if (match) {
+      return JSON.parse(match[0]) as T;
+    }
+    throw e;
+  }
 }
 
 export interface TaskExecutionOptions {
@@ -696,7 +709,7 @@ export async function generateAndRecord(
         if (outcome.verdict.valid) {
           console.log(`  [critique] accepted`);
         } else {
-          console.log(`  [critique] rejected: ${outcome.verdict.reason}`);
+          console.log(`  [critique] rejected: ${outcome.verdict.reason ?? "(no reason provided)"}`);
         }
       }
       return outcome;
