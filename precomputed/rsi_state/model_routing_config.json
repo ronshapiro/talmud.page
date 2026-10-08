@@ -25,6 +25,18 @@
     "sonnet-5.5": {
       "generateModel": "claude-sonnet-5-5",
       "critiqueModel": "claude-sonnet-5-5"
+    },
+    "haiku-5.5": {
+      "generateModel": "claude-haiku-5-5",
+      "critiqueModel": "claude-sonnet-5-5"
+    },
+    "haiku-sonnet-5.5": {
+      "generateModel": "claude-haiku-5-5",
+      "critiqueModel": "claude-sonnet-5-5"
+    },
+    "haiku-5.5-sonnet-5.5": {
+      "generateModel": "claude-haiku-5-5",
+      "critiqueModel": "claude-sonnet-5-5"
     }
   }
 }
