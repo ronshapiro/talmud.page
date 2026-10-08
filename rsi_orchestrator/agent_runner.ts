@@ -19,6 +19,8 @@ export interface AgentOptions {
   dangerouslySkipPermissions?: boolean;
   debug?: boolean;
   onToolUse?: (toolUse: ToolUseRecord) => void;
+  signal?: AbortSignal;
+  onChild?: (child: ChildProcess) => void;
 }
 
 export interface AgentResult {
@@ -34,21 +36,89 @@ export type AgentRunner = (prompt: string, options?: AgentOptions) => Promise<Ag
 /**
  * Unified error thrown when an agent runner CLI fails.
  * `isRateLimited` flags whether the error is due to session limits, quotas, or 429 status.
+ * `isCancelled` flags whether execution was aborted/cancelled via signal or process stop.
  */
 export class AgentError extends Error {
   public readonly isRateLimited: boolean;
+  public readonly isCancelled: boolean;
 
   constructor(
     message: string,
     public readonly apiErrorStatus?: number,
     public readonly backend?: AgentBackend,
+    isCancelled = false,
   ) {
     super(message);
     Object.setPrototypeOf(this, AgentError.prototype);
     this.name = "AgentError";
-    this.isRateLimited = apiErrorStatus === 429
-      || /rate.?limit|quota.?(?:exceeded|reached)|resource.?exhausted|session limit/i.test(message);
+    this.isCancelled = isCancelled;
+    this.isRateLimited = !isCancelled && (apiErrorStatus === 429
+      || /rate.?limit|quota.?(?:exceeded|reached)|resource.?exhausted|session limit/i.test(message));
   }
+}
+
+const activeChildProcesses = new Set<ChildProcess>();
+
+/**
+ * Registers an active agent child process in the global tracking registry.
+ * Returns an unregister cleanup function.
+ */
+export function registerActiveChildProcess(child: ChildProcess): () => void {
+  activeChildProcesses.add(child);
+  const cleanup = () => {
+    activeChildProcesses.delete(child);
+  };
+  child.once("close", cleanup);
+  child.once("exit", cleanup);
+  return cleanup;
+}
+
+/**
+ * Sends a termination signal (default: SIGTERM) to all currently running agent child processes.
+ * Returns the number of processes signaled.
+ */
+export function stopAllActiveAgents(signal: NodeJS.Signals = "SIGTERM"): number {
+  let count = 0;
+  for (const child of Array.from(activeChildProcesses)) {
+    try {
+      child.kill(signal);
+      count++;
+    } catch {
+      // ignore
+    }
+  }
+  activeChildProcesses.clear();
+  return count;
+}
+
+/**
+ * Returns the number of currently tracked active agent child processes.
+ */
+export function getActiveAgentCount(): number {
+  return activeChildProcesses.size;
+}
+
+/**
+ * Clears the active agent child process registry (primarily for test resets).
+ */
+export function clearActiveAgentRegistry(): void {
+  activeChildProcesses.clear();
+}
+
+/**
+ * Checks whether an error represents process cancellation or termination via signal.
+ */
+export function isCancelledError(error: unknown): boolean {
+  if (!error) return false;
+  if (error instanceof AgentError && error.isCancelled) return true;
+  const err = error as {killed?: boolean; signal?: string; message?: string};
+  return Boolean(
+    err.killed
+    || err.signal === "SIGTERM"
+    || err.signal === "SIGKILL"
+    || err.signal === "SIGINT"
+    || (err.message && /cancelled|aborted|sigterm|sigkill|sigint/i.test(err.message)),
+  );
 }
 
 /* eslint-disable camelcase */
@@ -388,6 +458,10 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
     args.push("--print-timeout", `${Math.ceil(options.timeoutMs / 1000)}s`);
   }
 
+  if (options.signal?.aborted) {
+    throw new AgentError("Agent execution was cancelled", undefined, "agy", true);
+  }
+
   if (options.debug) {
     console.log(`  [agent] Running agy${options.model ? ` (model: ${options.model})` : ""}...`);
   }
@@ -403,6 +477,14 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
 
   const seenStepIndices = new Set<number>();
   let childProcess: ChildProcess | undefined;
+  let unregisterChild: (() => void) | undefined;
+  const abortListener = () => {
+    childProcess?.kill("SIGTERM");
+  };
+  if (options.signal) {
+    options.signal.addEventListener("abort", abortListener, {once: true});
+  }
+
   let stdout: string;
   try {
     ({stdout} = await execFileWithStreaming("agy", args, {
@@ -412,6 +494,8 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
       maxBuffer: 1024 * 1024 * 32,
       onChild: (child) => {
         childProcess = child;
+        unregisterChild = registerActiveChildProcess(child);
+        options.onChild?.(child);
       },
       onStdoutLine: (line) => {
         let parsed: AgyStreamLine;
@@ -458,8 +542,15 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
       },
     }));
   } catch (e) {
+    if (isCancelledError(e) || options.signal?.aborted) {
+      throw new AgentError("Agent execution was cancelled", undefined, "agy", true);
+    }
     throw asAgyCliError(e) ?? e;
   } finally {
+    if (options.signal) {
+      options.signal.removeEventListener("abort", abortListener);
+    }
+    unregisterChild?.();
     shims?.cleanup();
   }
 
@@ -558,6 +649,10 @@ export function asClaudeCliError(error: unknown): AgentError | undefined {
 const DEFAULT_CLAUDE_ALLOWED_TOOLS = ["Read", "Grep", "Glob"];
 
 export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
+  if (options.signal?.aborted) {
+    throw new AgentError("Agent execution was cancelled", undefined, "claude", true);
+  }
+
   if (options.debug) {
     console.log(`  [agent] Running claude${options.model ? ` (model: ${options.model})` : ""}...`);
   }
@@ -572,6 +667,14 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
     : process.env;
 
   let childProcess: ChildProcess | undefined;
+  let unregisterChild: (() => void) | undefined;
+  const abortListener = () => {
+    childProcess?.kill("SIGTERM");
+  };
+  if (options.signal) {
+    options.signal.addEventListener("abort", abortListener, {once: true});
+  }
+
   let stdout: string;
   try {
     ({stdout} = await execFileWithStreaming(
@@ -590,6 +693,8 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
         maxBuffer: 1024 * 1024 * 32,
         onChild: (child) => {
           childProcess = child;
+          unregisterChild = registerActiveChildProcess(child);
+          options.onChild?.(child);
         },
         onStdoutLine: (line) => {
           let parsed: {type?: string};
@@ -627,8 +732,15 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
       },
     ));
   } catch (e) {
+    if (isCancelledError(e) || options.signal?.aborted) {
+      throw new AgentError("Agent execution was cancelled", undefined, "claude", true);
+    }
     throw asClaudeCliError(e) ?? e;
   } finally {
+    if (options.signal) {
+      options.signal.removeEventListener("abort", abortListener);
+    }
+    unregisterChild?.();
     shims?.cleanup();
   }
   const {toolUses, result} = parseClaudeStreamJsonLines(stdout);

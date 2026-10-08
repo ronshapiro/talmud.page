@@ -41,3 +41,19 @@ When running from Antigravity:
 - **Direct Commits & PRs**: The translation runner commits and pushes pending candidates directly within its active worktree to its own branch (`git push -u origin HEAD`) and creates/updates a PR for that branch.
 - **Parallel Safety**: Multiple translation runs for different tractates can run concurrently in separate worktrees without collisions.
 - **Cleanup**: Worktrees persist while their PR is open and should be deleted externally only after the PR merges.
+
+## 4. Graceful Stopping & PR Creation
+
+To stop a running translation runner early, terminate all active agents, commit/push all pending candidates, and create or update the PR:
+- Send `SIGINT`, `SIGTERM`, `SIGUSR1`, or `SIGUSR2` to the process:
+  ```bash
+  kill -INT <PID>   # or kill -TERM <PID> / kill -USR1 <PID> / kill -USR2 <PID>
+  ```
+  (or press `Ctrl+C` if running interactively in the foreground).
+- The runner will:
+  1. Immediately terminate any active LLM agent processes (`agy` or `claude`).
+  2. Stop processing further candidates and wake any quota sleep.
+  3. Commit and push all pending translation candidates to `origin HEAD`.
+  4. Create or update the GitHub Pull Request (including diff stats).
+  5. Exit cleanly with status 0.
+- Sending a second signal while shutdown/push is in progress forces an immediate exit.
