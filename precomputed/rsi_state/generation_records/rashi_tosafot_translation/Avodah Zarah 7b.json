@@ -1,0 +1,836 @@
+{
+  "Rashi on Avodah Zarah 7b:10:1": {
+    "dependsOn": [
+      "Rashi on Avodah Zarah 7b:10:2",
+      "Rashi on Avodah Zarah 7b:10:3",
+      "Rashi on Avodah Zarah 7b:10:4",
+      "Rashi on Avodah Zarah 7b:9:1",
+      "Rashi on Avodah Zarah 7b:8:1",
+      "Rashi on Avodah Zarah 7b:7:1",
+      "Rashi on Avodah Zarah 7b:6:1",
+      "Rashi on Avodah Zarah 7b:6:2",
+      "Rashi on Avodah Zarah 7b:1:1",
+      "Rashi on Avodah Zarah 7b:1:2",
+      "Rashi on Avodah Zarah 7b:3:1",
+      "Rashi on Avodah Zarah 7b:4:1",
+      "Rashi on Avodah Zarah 7b:4:2",
+      "Rashi on Avodah Zarah 7b:5:1",
+      "Rashi on Avodah Zarah 2a:1:1",
+      "Rashi on Avodah Zarah 2a:1:2",
+      "Rashi on Avodah Zarah 2a:1:3",
+      "Avodah Zarah 7b:10"
+    ],
+    "generatedAt": "2026-10-09T04:06:40.238Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Avodah Zarah 7b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בן בתירא מתיר בסוס</strong> - לפי שמלאכתו לרכוב אדם עליו ואין במלאכה זו חיוב חטאת שהחי נושא את עצמו דתנן במשילין פירות <span class=\"parenthesized\">(ביצה לו:)</span> אלו הן משום שבות לא רוכבין על גבי בהמה:"
+  },
+  "Rashi on Avodah Zarah 7b:10:2": {
+    "dependsOn": [
+      "Avodah Zarah 7b:10",
+      "Rashi on Avodah Zarah 7b:10:1",
+      "Rashi on Avodah Zarah 7b:10:2",
+      "Rashi on Avodah Zarah 7b:10:3",
+      "Rashi on Avodah Zarah 7b:10:4",
+      "Avodah Zarah 7b:9",
+      "Rashi on Avodah Zarah 7b:9:1",
+      "Tosafot on Avodah Zarah 7b:9:1",
+      "Maharsha on Avodah Zarah 7b:10:1",
+      "Steinsaltz on Avodah Zarah 7b:10",
+      "Steinsaltz In-Depth on Avodah Zarah 7b:10:1",
+      "Versions on Avodah Zarah 7b:10:1",
+      "Rosh on Avodah Zarah 7b:10:1",
+      "Ritva on Avodah Zarah 7b:10:1",
+      "Rabbeinu Chananel on Avodah Zarah 7b:10:1",
+      "Rashi on Avodah Zarah 7b:6:1",
+      "Rashi on Avodah Zarah 7b:6:2",
+      "Rashi on Avodah Zarah 7b:8:1",
+      "Rashi on Avodah Zarah 7b:11:1",
+      "Rashi on Avodah Zarah 7b:11:2",
+      "Rashi on Avodah Zarah 7b:4:1",
+      "Rashi on Avodah Zarah 7b:4:2",
+      "Rashi on Avodah Zarah 7b:5:1",
+      "Rashi on Avodah Zarah 7b:7:1",
+      "Versions on Avodah Zarah 7b:10",
+      "Steinsaltz In-Depth on Avodah Zarah 7b:10"
+    ],
+    "generatedAt": "2026-10-09T04:10:04.115Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Avodah Zarah 7b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא קא מפליג בין זכר לנקבה</strong> - בין זקן לבחור איהו מדקמפליג ואוסר בבחור:"
+  },
+  "Rashi on Avodah Zarah 7b:10:3": {
+    "dependsOn": [
+      "Avodah Zarah 7b:10",
+      "Rashi on Avodah Zarah 7b:10:1",
+      "Rashi on Avodah Zarah 7b:10:2",
+      "Rashi on Avodah Zarah 7b:10:3",
+      "Rashi on Avodah Zarah 7b:10:4",
+      "Avodah Zarah 16a:1",
+      "Avodah Zarah 16a:2",
+      "Avodah Zarah 16a:3",
+      "Avodah Zarah 16a:4",
+      "Avodah Zarah 15b:6",
+      "Avodah Zarah 15b:7",
+      "Avodah Zarah 15b:8",
+      "Avodah Zarah 15b:9",
+      "Avodah Zarah 15b:10",
+      "Avodah Zarah 16a:7",
+      "Avodah Zarah 16a:8",
+      "Avodah Zarah 16a:9",
+      "Avodah Zarah 16a:10",
+      "Avodah Zarah 16a:11",
+      "Avodah Zarah 16a:12",
+      "Avodah Zarah 16a:13",
+      "Avodah Zarah 16a:14",
+      "Avodah Zarah 16a:15",
+      "Avodah Zarah 16a:16",
+      "Avodah Zarah 16a:17",
+      "Avodah Zarah 16b:1",
+      "Avodah Zarah 16b:2",
+      "Avodah Zarah 16b:3",
+      "Avodah Zarah 16b:4",
+      "Avodah Zarah 16b:5",
+      "Avodah Zarah 16b:6",
+      "Avodah Zarah 16b:7",
+      "Avodah Zarah 14b:1",
+      "Avodah Zarah 14b:2",
+      "Avodah Zarah 14b:3",
+      "Avodah Zarah 14b:4",
+      "Avodah Zarah 15a:1",
+      "Avodah Zarah 14b:5",
+      "Avodah Zarah 14b:6",
+      "Avodah Zarah 14b:7",
+      "Avodah Zarah 15a:2",
+      "Avodah Zarah 15a:3",
+      "Avodah Zarah 15a:4",
+      "Mishnah Avodah Zarah 1:6",
+      "Rashi on Avodah Zarah 16a:2:1",
+      "Rashi on Avodah Zarah 16a:2:2",
+      "Avodah Zarah 7b:9",
+      "Rashi on Avodah Zarah 7b:9:1",
+      "Avodah Zarah 20b:1",
+      "Avodah Zarah 20b:2",
+      "Avodah Zarah 20b:3",
+      "Steinsaltz on Avodah Zarah 7b:10:1",
+      "Steinsaltz In-Depth on Avodah Zarah 7b:10:1",
+      "Steinsaltz In-Depth on Avodah Zarah 7b:10:2",
+      "Steinsaltz In-Depth on Avodah Zarah 7b:10:3",
+      "Maharsha on Avodah Zarah 7b:10:1",
+      "Steinsaltz on Avodah Zarah 7b:10",
+      "Maharsha on Avodah Zarah 7b:10",
+      "Steinsaltz In-Depth on Avodah Zarah 7b:10",
+      "Avodah Zarah 15b:11",
+      "Avodah Zarah 15b:12",
+      "Avodah Zarah 15b:13",
+      "Avodah Zarah 15b:14",
+      "Avodah Zarah 15b:15",
+      "Avodah Zarah 15b:16",
+      "Rashi on Avodah Zarah 16a:13:1",
+      "Rashi on Avodah Zarah 16a:13:2",
+      "Rashi on Avodah Zarah 14b:8:1",
+      "Rashi on Avodah Zarah 14b:8:2",
+      "Rashi on Avodah Zarah 15a:2:1",
+      "Rashi on Avodah Zarah 15a:2:2",
+      "Rashi on Avodah Zarah 16a:4:1",
+      "Rashi on Avodah Zarah 16a:4:2",
+      "Rashi on Avodah Zarah 16a:4:3",
+      "Rashi on Avodah Zarah 16a:4:4",
+      "Tosafot on Avodah Zarah 7b:9:1",
+      "Rabbeinu Chananel on Avodah Zarah 7b:9:1",
+      "Rabbeinu Chananel on Avodah Zarah 7b:10:1",
+      "Rashi on Avodah Zarah 16a:6:1",
+      "Rashi on Avodah Zarah 16a:6:2"
+    ],
+    "generatedAt": "2026-10-09T04:14:07.005Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Avodah Zarah 7b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרבנן סבירא ליה</strong> - דאסרי משום תורת כלי זיין דקטיל בסיחופיה כדלקמן:"
+  },
+  "Rashi on Avodah Zarah 7b:10:4": {
+    "dependsOn": [
+      "Avodah Zarah 7b:10",
+      "Rashi on Avodah Zarah 7b:10:1",
+      "Rashi on Avodah Zarah 7b:10:2",
+      "Rashi on Avodah Zarah 7b:10:3",
+      "Rashi on Avodah Zarah 7b:10:4",
+      "Avodah Zarah 7b:9",
+      "Rashi on Avodah Zarah 7b:9:1"
+    ],
+    "generatedAt": "2026-10-09T04:15:42.599Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Avodah Zarah 7b:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולרבנן נשתקע הדבר</strong> - שיהא מותר בזקן דכולן אסורין:"
+  },
+  "Rashi on Avodah Zarah 7b:11:1": {
+    "dependsOn": [
+      "Rashi on Avodah Zarah 7b:11:1",
+      "Avodah Zarah 7b:11",
+      "Rashi on Shabbat 128a:8:1",
+      "Rashi on Sukkah 39b:18:1",
+      "Rashi on Berakhot 40a:7:1",
+      "Rashi on Avodah Zarah 7b:11:2",
+      "Rashi on Avodah Zarah 7b:11:3",
+      "Jastrow on Avodah Zarah 7b:11:1",
+      "Steinsaltz on Avodah Zarah 7b:11:1",
+      "Steinsaltz In-Depth on Avodah Zarah 7b:11:1",
+      "Steinsaltz In-Depth on Avodah Zarah 7b:11:2",
+      "Ritva on Avodah Zarah 7b:11:1"
+    ],
+    "generatedAt": "2026-10-09T04:24:06.138Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Avodah Zarah 7b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השבת</strong> - ירק של תבלין שקורין אוי\"ר ובלשון רומי אניט\"ו:"
+  },
+  "Rashi on Avodah Zarah 7b:11:2": {
+    "dependsOn": [
+      "Rashi on Avodah Zarah 7b:11:1",
+      "Rashi on Avodah Zarah 7b:11:2",
+      "Rashi on Avodah Zarah 7b:11:3",
+      "Avodah Zarah 7b:11",
+      "Mishnah Maasrot 4:5",
+      "Rashi on Berakhot 39a:3:1",
+      "Rashi on Sukkah 39b:18:1",
+      "Jastrow on Avodah Zarah 7b:11:1",
+      "Steinsaltz on Avodah Zarah 7b:11",
+      "Ritva on Avodah Zarah 7b:11:1",
+      "Steinsaltz In-Depth on Avodah Zarah 7b:11:1",
+      "Steinsaltz In-Depth on Avodah Zarah 7b:11:2",
+      "Rashi on Avodah Zarah 7b:6:1",
+      "Rashi on Avodah Zarah 7b:6:2",
+      "Rashi on Avodah Zarah 7b:10:1",
+      "Rashi on Avodah Zarah 7b:10:2"
+    ],
+    "generatedAt": "2026-10-09T04:29:17.538Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Avodah Zarah 7b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתעשר זרע וירק וזירין</strong> - בין שלקטו כשהוא ירק בין שלקטו כשהוא זירין דולדיילש\"א בלע\"ז ובין שהניחו עד שצמחו גרעיני זרעו בתוכו והוקשו וחבטן צריך לעשר את הזרע מדרבנן דאורחיה למיכליה זרע וירק וזירין הלכך כולהו הוו להו גמר פירי:"
+  },
+  "Rashi on Avodah Zarah 7b:11:3": {
+    "dependsOn": [
+      "Avodah Zarah 7b:11",
+      "Rashi on Avodah Zarah 7b:11:1",
+      "Rashi on Avodah Zarah 7b:11:2",
+      "Rashi on Avodah Zarah 7b:11:3",
+      "Rashi on Avodah Zarah 7b:10:1",
+      "Rashi on Avodah Zarah 7b:10:2",
+      "Rashi on Avodah Zarah 7b:10:3",
+      "Rashi on Avodah Zarah 7b:12:1",
+      "Rashi on Avodah Zarah 2a:1:1",
+      "Rashi on Avodah Zarah 2a:1:2",
+      "Rashi on Avodah Zarah 2a:1:3",
+      "Rashi on Avodah Zarah 5b:1:1",
+      "Rashi on Avodah Zarah 6a:1:1",
+      "Rashi on Avodah Zarah 6b:1:1",
+      "Rashi on Avodah Zarah 7a:1:1",
+      "Rashi on Avodah Zarah 7a:2:1",
+      "Jastrow on Avodah Zarah 7b:11:1",
+      "Ritva on Avodah Zarah 7b:11:1"
+    ],
+    "generatedAt": "2026-10-09T04:32:18.954Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Avodah Zarah 7b:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בדגנוניתא</strong> - הגדל בגנה דראוי לאכול זרע וירק וזירין אבל הגדל בשדות אינו נאכל ירק אלא זרע כעין חרדל:"
+  },
+  "Rashi on Avodah Zarah 7b:12:1": {
+    "dependsOn": [
+      "Avodah Zarah 7b:12",
+      "Rashi on Avodah Zarah 7b:12:1",
+      "Rashi on Avodah Zarah 7b:12:2"
+    ],
+    "generatedAt": "2026-10-09T04:34:16.229Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Avodah Zarah 7b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאתרין</strong> - ממקומנו ממדי:"
+  },
+  "Rashi on Avodah Zarah 7b:12:2": {
+    "dependsOn": [
+      "Avodah Zarah 7b:12",
+      "Rashi on Avodah Zarah 7b:12:1",
+      "Rashi on Avodah Zarah 7b:12:2",
+      "Rashi on Avodah Zarah 7b:14:1",
+      "Rashi on Avodah Zarah 7b:14:2",
+      "Rashi on Avodah Zarah 7b:14:3",
+      "Rashi on Berakhot 31a:14:1",
+      "Rashi on Berakhot 34a:5:1",
+      "Avodah Zarah 7b:1",
+      "Rashi on Avodah Zarah 7b:1:1",
+      "Rashi on Avodah Zarah 7a:1:1"
+    ],
+    "generatedAt": "2026-10-09T04:38:18.684Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Avodah Zarah 7b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשומע תפלה</strong> - מאריך בה ושואל צרכיו:"
+  },
+  "Rashi on Avodah Zarah 7b:13:1": {
+    "dependsOn": [
+      "Avodah Zarah 7b:13",
+      "Rashi on Avodah Zarah 7b:13:1",
+      "Avodah Zarah 7b:18",
+      "Avodah Zarah 8a:1",
+      "Rashi on Avodah Zarah 7b:10:1",
+      "Rashi on Avodah Zarah 7b:10:2",
+      "Rashi on Avodah Zarah 7b:12:1",
+      "Rashi on Avodah Zarah 2a:1:1",
+      "Rashi on Avodah Zarah 2a:1:2",
+      "Rashi on Avodah Zarah 7b:11:1",
+      "Rashi on Avodah Zarah 7b:14:1",
+      "Rashi on Avodah Zarah 7b:14:2"
+    ],
+    "generatedAt": "2026-10-09T04:44:44.641Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Avodah Zarah 7b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באשלי רברבי</strong> - חבלים עבים וחזקים. ויש אומרים באילנות גדולות כמו ויטע אשל <span class=\"parenthesized\">(בראשית כ״א:ל״ג)</span>. כלומר הא לאו כוותיה אתון עבדין פלוגתא דרבנן נמי היא כדקתני לקמן וחכ\"א כו':"
+  },
+  "Rashi on Avodah Zarah 7b:14:1": {
+    "dependsOn": [
+      "Avodah Zarah 7b:14",
+      "Rashi on Avodah Zarah 7b:14:1",
+      "Rashi on Avodah Zarah 7b:14:2",
+      "Rashi on Avodah Zarah 7b:14:3",
+      "Rashi on Avodah Zarah 7b:15:1",
+      "Rashi on Avodah Zarah 7b:16:1",
+      "Rashi on Avodah Zarah 7b:4:1",
+      "Rashi on Avodah Zarah 7b:4:2",
+      "Rashi on Avodah Zarah 7b:5:1",
+      "Rashi on Avodah Zarah 7b:6:1",
+      "Rashi on Avodah Zarah 6a:1:1",
+      "Rashi on Avodah Zarah 6b:1:1",
+      "Rashi on Avodah Zarah 2a:1:1",
+      "Rashi on Avodah Zarah 2a:1:2",
+      "Rashi on Avodah Zarah 2a:2:1",
+      "Steinsaltz on Avodah Zarah 7b:14:1",
+      "Tosafot on Avodah Zarah 7b:14:1",
+      "Rashi on Berakhot 28b:1:1",
+      "Rashi on Megillah 17b:1:1",
+      "Rashi on Avodah Zarah 2a:3:1",
+      "Rashi on Avodah Zarah 2a:4:1",
+      "Rashi on Avodah Zarah 2b:1:1",
+      "Rashi on Berakhot 31a:1:1",
+      "Rashi on Berakhot 31a:2:1",
+      "Rashi on Berakhot 31a:3:1"
+    ],
+    "generatedAt": "2026-10-09T04:50:15.214Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Avodah Zarah 7b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואח\"כ יתפלל</strong> - י\"ח:"
+  },
+  "Rashi on Avodah Zarah 7b:14:2": {
+    "dependsOn": [
+      "Avodah Zarah 7b:14",
+      "Rashi on Avodah Zarah 7b:14:1",
+      "Rashi on Avodah Zarah 7b:14:2",
+      "Rashi on Avodah Zarah 7b:14:3",
+      "Rashi on Avodah Zarah 7b:10:1",
+      "Rashi on Avodah Zarah 7b:10:2",
+      "Rashi on Avodah Zarah 7b:11:1",
+      "Rashi on Avodah Zarah 2a:1:1",
+      "Rashi on Avodah Zarah 2a:2:1",
+      "Rashi on Avodah Zarah 2b:1:1",
+      "Rashi on Avodah Zarah 3a:1:1",
+      "Rashi on Avodah Zarah 4a:1:1",
+      "Rashi on Avodah Zarah 7b:16:1",
+      "Rashi on Avodah Zarah 7b:17:1",
+      "Rashi on Avodah Zarah 7b:18:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 3a:1:1",
+      "Rashi on Berakhot 3a:2:1",
+      "Rashi on Berakhot 3a:3:1",
+      "Rashi on Berakhot 3b:1:1",
+      "Rashi on Berakhot 4a:1:1",
+      "Rashi on Berakhot 4b:1:1",
+      "Rashi on Berakhot 5a:1:1",
+      "Rashi on Berakhot 5a:2:1",
+      "Rashi on Berakhot 5b:1:1",
+      "Rashi on Berakhot 6a:1:1",
+      "Rashi on Berakhot 6b:1:1",
+      "Rashi on Berakhot 7a:1:1",
+      "Rashi on Berakhot 7b:1:1",
+      "Rashi on Berakhot 7b:2:1",
+      "Rashi on Berakhot 8a:1:1",
+      "Rashi on Berakhot 8b:1:1",
+      "Rashi on Berakhot 8a:1:2",
+      "Rashi on Berakhot 8a:2:1",
+      "Rashi on Berakhot 9a:1:1",
+      "Verses on Avodah Zarah 7b:14:1",
+      "Verses on Avodah Zarah 7b:14:2",
+      "Tosafot on Avodah Zarah 7b:14:1",
+      "Rabbeinu Chananel on Avodah Zarah 7b:15:1",
+      "Rashi on Avodah Zarah 7b:4:1",
+      "Rashi on Avodah Zarah 7b:4:2",
+      "Rashi on Avodah Zarah 7b:5:1",
+      "Rashi on Berakhot 9b:1:1",
+      "Rashi on Berakhot 10a:1:1",
+      "Rashi on Berakhot 10b:1:1"
+    ],
+    "generatedAt": "2026-10-09T04:54:41.005Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Avodah Zarah 7b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי יעטוף</strong> - עטיפת נפשו ודאגת לבו יתפלל תחלה והדר לפני ה' ישפוך שיחו שמונה עשרה:<br>עטיפה לשון כאב ופריחת לב מתוך צרה כמו בהתעטפם כחלל <span class=\"parenthesized\">(איכה ב)</span>:"
+  },
+  "Rashi on Avodah Zarah 7b:14:3": {
+    "dependsOn": [
+      "Avodah Zarah 7b:14",
+      "Rashi on Avodah Zarah 7b:14:1",
+      "Rashi on Avodah Zarah 7b:14:2",
+      "Rashi on Avodah Zarah 7b:14:3",
+      "Rashi on Avodah Zarah 7b:13:1",
+      "Rashi on Avodah Zarah 7b:12:1",
+      "Rashi on Avodah Zarah 7b:10:1",
+      "Rashi on Avodah Zarah 2a:1:1",
+      "Rashi on Avodah Zarah 2a:2:1",
+      "Rashi on Avodah Zarah 7a:1:1",
+      "Rashi on Berakhot 26b:3:1",
+      "Rashi on Berakhot 26b:4:1",
+      "Rashi on Berakhot 26b:5:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:2:1",
+      "Rashi on Shabbat 2a:3:1",
+      "Rashi on Shabbat 2a:4:1"
+    ],
+    "generatedAt": "2026-10-09T04:57:07.771Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Avodah Zarah 7b:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשוח בשדה</strong> - תפלת המנחה תקן בפרק תפלת השחר <span class=\"parenthesized\">(ברבות כו:)</span>:"
+  },
+  "Rashi on Avodah Zarah 7b:16:1": {
+    "dependsOn": [
+      "Avodah Zarah 7b:16",
+      "Avodah Zarah 7b:14",
+      "Avodah Zarah 7b:15",
+      "Rashi on Avodah Zarah 7b:14:1",
+      "Rashi on Avodah Zarah 7b:14:2",
+      "Rashi on Avodah Zarah 7b:14:3",
+      "Rashi on Avodah Zarah 7b:17:1",
+      "Rashi on Avodah Zarah 7b:3:1",
+      "Rashi on Avodah Zarah 7b:4:1",
+      "Rashi on Avodah Zarah 7b:4:2"
+    ],
+    "generatedAt": "2026-10-09T05:00:33.239Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Avodah Zarah 7b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בזמן שצרתי לפניו אגיד</strong> - כבר קודם לכן:"
+  },
+  "Rashi on Avodah Zarah 7b:17:1": {
+    "dependsOn": [
+      "Avodah Zarah 7b:17",
+      "Rashi on Avodah Zarah 7b:17:1",
+      "Rashi on Avodah Zarah 7b:16:1",
+      "Rashi on Avodah Zarah 7b:18:1",
+      "Rashi on Avodah Zarah 7b:4:1",
+      "Rashi on Avodah Zarah 7b:4:2",
+      "Rashi on Avodah Zarah 7b:5:1",
+      "Rashi on Avodah Zarah 7b:6:1",
+      "Rashi on Avodah Zarah 2a:1:1",
+      "Rashi on Avodah Zarah 2a:2:1"
+    ],
+    "generatedAt": "2026-10-09T05:02:10.161Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Avodah Zarah 7b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא כמר דייקי כו'</strong> - דהא איכא לשנויי הכי והכי:"
+  },
+  "Rashi on Avodah Zarah 7b:18:1": {
+    "dependsOn": [
+      "Avodah Zarah 7b:18",
+      "Rashi on Avodah Zarah 7b:14:1",
+      "Rashi on Avodah Zarah 7b:14:2",
+      "Rashi on Avodah Zarah 7b:14:3",
+      "Rashi on Avodah Zarah 7b:18:1",
+      "Rashi on Avodah Zarah 7b:1:1",
+      "Rashi on Avodah Zarah 7b:1:2",
+      "Rashi on Avodah Zarah 7b:3:1",
+      "Rashi on Avodah Zarah 7b:4:1",
+      "Rashi on Avodah Zarah 7b:5:1",
+      "Rashi on Avodah Zarah 6b:1:1",
+      "Rashi on Avodah Zarah 6b:2:1",
+      "Rashi on Avodah Zarah 2a:1:1"
+    ],
+    "generatedAt": "2026-10-09T05:04:07.288Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Avodah Zarah 7b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יסדר אדם שבחו של הקב\"ה</strong> - שלש ברכות ראשונות אבות גבורות וקדושת השם שאין בהן תפלה אלא שבח ואח\"כ בשאר ברכות יש דברי תחנה ותפלה:"
+  },
+  "Rashi on Avodah Zarah 7b:1:1": {
+    "dependsOn": [
+      "Avodah Zarah 7b:1",
+      "Avodah Zarah 7a:18",
+      "Avodah Zarah 7a:19",
+      "Rashi on Avodah Zarah 7b:1:2",
+      "Rabbeinu Chananel on Avodah Zarah 7b:1:1",
+      "Rabbeinu Chananel on Avodah Zarah 7b:1:2",
+      "Rashi on Avodah Zarah 7b:4:1",
+      "Rashi on Avodah Zarah 7b:5:1"
+    ],
+    "generatedAt": "2026-10-09T03:25:31.427Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Avodah Zarah 7b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בפרהסיא</strong> - הואיל ופקרו כל כך שוב אין נותנין לבן לשוב בתשובה שלימה:"
+  },
+  "Rashi on Avodah Zarah 7b:1:2": {
+    "dependsOn": [
+      "Avodah Zarah 7b:1",
+      "Rashi on Avodah Zarah 7b:1:1",
+      "Rashi on Avodah Zarah 7b:1:2",
+      "Rashi on Avodah Zarah 7a:1:1",
+      "Rashi on Avodah Zarah 7a:2:1",
+      "Rashi on Avodah Zarah 7a:3:1",
+      "Rashi on Avodah Zarah 7b:4:1",
+      "Jastrow on Avodah Zarah 7b:3:1"
+    ],
+    "generatedAt": "2026-10-09T03:28:08.666Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Avodah Zarah 7b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שובבים</strong> - משמע מזידים ופרהסיא לשון מרד וגאוה כמו וילך שובב בדרך לבו <span class=\"parenthesized\">(ישעיהו נ״ז:י״ז)</span>:"
+  },
+  "Rashi on Avodah Zarah 7b:3:1": {
+    "dependsOn": [
+      "Avodah Zarah 7b:3",
+      "Rashi on Avodah Zarah 7b:4:1",
+      "Rashi on Avodah Zarah 7b:4:2",
+      "Rabbeinu Chananel on Avodah Zarah 7b:3:1",
+      "Steinsaltz on Avodah Zarah 7b:3:1",
+      "Rashi on Avodah Zarah 2a:1:1",
+      "Rashi on Avodah Zarah 6a:1:1",
+      "Rashi on Avodah Zarah 7b:5:1",
+      "Rashi on Avodah Zarah 7b:6:1",
+      "Rashi on Avodah Zarah 7b:6:2",
+      "Rashi on Avodah Zarah 7b:7:1",
+      "Rashi on Avodah Zarah 7b:8:1"
+    ],
+    "generatedAt": "2026-10-09T03:30:55.557Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Avodah Zarah 7b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעולם אסור</strong> - שלשה לפניו ושלשה לאחריו והוא עצמו כלומר כל שבעת ימי השבת:"
+  },
+  "Rashi on Avodah Zarah 7b:4:1": {
+    "dependsOn": [
+      "Rashi on Avodah Zarah 7b:3:1",
+      "Rashi on Avodah Zarah 7b:4:2",
+      "Rashi on Avodah Zarah 7b:5:1",
+      "Avodah Zarah 7b:4",
+      "Rashi on Avodah Zarah 6a:1:1",
+      "Rashi on Avodah Zarah 6a:2:1",
+      "Rashi on Avodah Zarah 2a:1:1",
+      "Rashi on Avodah Zarah 7b:6:1",
+      "Rashi on Avodah Zarah 7b:6:2",
+      "Rashi on Avodah Zarah 7b:7:1",
+      "Rashi on Avodah Zarah 7b:8:1"
+    ],
+    "generatedAt": "2026-10-09T03:34:57.502Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Avodah Zarah 7b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ק סבר הן בלא אידיהן</strong> - כדדייקינן לעיל דקתני לפני אידיהן של עובדי כוכבים שלשה ימים ש\"מ שלשה לפניהם לבד האיד קאמר:"
+  },
+  "Rashi on Avodah Zarah 7b:4:2": {
+    "dependsOn": [
+      "Avodah Zarah 7b:4",
+      "Rashi on Avodah Zarah 7b:4:1",
+      "Rashi on Avodah Zarah 7b:4:2",
+      "Avodah Zarah 7b:2",
+      "Avodah Zarah 7b:3",
+      "Rabbeinu Chananel on Avodah Zarah 7b:4",
+      "Steinsaltz on Avodah Zarah 7b:4",
+      "Rashi on Avodah Zarah 7b:5:1",
+      "Rashi on Avodah Zarah 7b:6:1",
+      "Rashi on Avodah Zarah 7b:6:2",
+      "Rashi on Avodah Zarah 7b:1:1",
+      "Rashi on Avodah Zarah 7b:1:2",
+      "Rashi on Avodah Zarah 7b:3:1",
+      "Rashi on Avodah Zarah 7b:7:1",
+      "Rashi on Avodah Zarah 7b:8:1"
+    ],
+    "generatedAt": "2026-10-09T03:37:08.836Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Avodah Zarah 7b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבנן בתראי</strong> - דלא יהבו סימנא איכא למימר הואיל ולא אשכחן מידי ביניהן איכא למימר בהא אתו לאפלוגי דהן ואידיהן ג' קאמר:"
+  },
+  "Rashi on Avodah Zarah 7b:5:1": {
+    "dependsOn": [
+      "Avodah Zarah 7b:5"
+    ],
+    "generatedAt": "2026-10-09T03:42:21.945Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Avodah Zarah 7b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבנן בתראי סברי נשא ונתן אסור</strong> - סתמא קאמרינן ולא קתני אסור לשאת ולתת כתנא קמא דמשמע לכתחלה הוא דלא הא דיעבד שפיר דמי:"
+  },
+  "Rashi on Avodah Zarah 7b:6:1": {
+    "dependsOn": [
+      "Rashi on Avodah Zarah 7b:4:1",
+      "Rashi on Avodah Zarah 7b:4:2",
+      "Rashi on Avodah Zarah 7b:6:2",
+      "Rashi on Avodah Zarah 7a:1:1",
+      "Rashi on Avodah Zarah 7a:2:1",
+      "Rashi on Avodah Zarah 6b:1:1",
+      "Rashi on Avodah Zarah 2a:1:1",
+      "Rashi on Avodah Zarah 2a:1:2",
+      "Rashi on Avodah Zarah 2a:2:1",
+      "Avodah Zarah 7b:6",
+      "Avodah Zarah 65a:1",
+      "Avodah Zarah 65a:2",
+      "Avodah Zarah 65a:3",
+      "Chullin 13b:15",
+      "Chullin 13b:16"
+    ],
+    "generatedAt": "2026-10-09T03:45:02.823Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Avodah Zarah 7b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בגולה</strong> - אין העובדי כוכבים אדוקין כל כך בעבודת כוכבים כדאמרינן <span class=\"parenthesized\">(לקמן)</span> עובדי כוכבים שבחוצה לארץ לאו עובדי עבודת כוכבים נינהו כו'. ועוד דמסתפינן מינייהו:"
+  },
+  "Rashi on Avodah Zarah 7b:6:2": {
+    "dependsOn": [
+      "Avodah Zarah 7b:6",
+      "Rashi on Avodah Zarah 7b:6:1",
+      "Avodah Zarah 7b:4",
+      "Avodah Zarah 7b:5",
+      "Rashi on Avodah Zarah 7b:4:1",
+      "Rashi on Avodah Zarah 7b:5:1",
+      "Rashi on Avodah Zarah 7b:7:1",
+      "Rashi on Avodah Zarah 7b:1:1",
+      "Rashi on Avodah Zarah 7b:1:2",
+      "Rashi on Avodah Zarah 7b:3:1",
+      "Rashi on Avodah Zarah 7b:10:1",
+      "Rashi on Avodah Zarah 2a:1:1",
+      "Rashi on Avodah Zarah 2a:1:2",
+      "Rashi on Avodah Zarah 6a:1:1",
+      "Rashi on Avodah Zarah 2a:2:1",
+      "Rashi on Avodah Zarah 2a:3:1",
+      "Rashi on Avodah Zarah 2b:1:1",
+      "Tosafot on Avodah Zarah 7b:9:1"
+    ],
+    "generatedAt": "2026-10-09T03:47:43.332Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Avodah Zarah 7b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבנן בתראי לית להו דשמואל</strong> - דכיון דלא מסיים בהדיא במאי פליגי איכא למימר לטפויי אתו דשמעינן לתנא קמא דקאמר לפני אידיהן אסור לשאת ולתת עמהם וסתמא דמילתא כשאין יד עובדי כוכבים תקיפה על ישראל קא אמר ואתו אינהו למימר לפני אידיהן לעולם אסורין. ואיפכא ליכא לשנויי דתתריץ שפיר דסתם תנא בתרא לטפויי אתא:"
+  },
+  "Rashi on Avodah Zarah 7b:7:1": {
+    "dependsOn": [
+      "Avodah Zarah 7b:7",
+      "Steinsaltz on Avodah Zarah 7b:7:1",
+      "Rashi on Avodah Zarah 7b:6:1",
+      "Rashi on Avodah Zarah 7b:6:2",
+      "Rashi on Avodah Zarah 7b:8:1"
+    ],
+    "generatedAt": "2026-10-09T03:49:17.334Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Avodah Zarah 7b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבנן בתראי אית להו כנחום</strong> - דלא יהבי חושבנא אלא אסור סתמא קאמרי:"
+  },
+  "Rashi on Avodah Zarah 7b:8:1": {
+    "dependsOn": [
+      "Rashi on Avodah Zarah 7b:8:1",
+      "Avodah Zarah 7b:8",
+      "Rashi on Avodah Zarah 7b:6:1",
+      "Rashi on Avodah Zarah 7b:6:2",
+      "Rashi on Avodah Zarah 7b:7:1",
+      "Rashi on Avodah Zarah 2a:1:1",
+      "Rashi on Avodah Zarah 2b:1:1",
+      "Rashi on Avodah Zarah 5a:1:1"
+    ],
+    "generatedAt": "2026-10-09T03:55:05.232Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Avodah Zarah 7b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נשתקע הדבר</strong> - לא יצא דבר זה מפי אדם לעולם. ל\"א לא יצא דבר זה לחוץ:"
+  },
+  "Rashi on Avodah Zarah 7b:9:1": {
+    "dependsOn": [
+      "Avodah Zarah 7b:9",
+      "Tosafot on Avodah Zarah 7b:9:1",
+      "Rabbeinu Chananel on Avodah Zarah 7b:9:1",
+      "Rabbeinu Chananel on Avodah Zarah 7b:9:2",
+      "Steinsaltz on Avodah Zarah 7b:9:1",
+      "Steinsaltz on Avodah Zarah 7b:9",
+      "Steinsaltz In-Depth on Avodah Zarah 7b:9",
+      "Rashi on Avodah Zarah 16a:1:1",
+      "Rashi on Avodah Zarah 16a:2:1",
+      "Rashi on Avodah Zarah 16a:3:1",
+      "Rashi on Avodah Zarah 16a:4:1",
+      "Avodah Zarah 16a:9",
+      "Avodah Zarah 16a:10",
+      "Avodah Zarah 16a:11",
+      "Avodah Zarah 16a:12",
+      "Avodah Zarah 16a:13",
+      "Avodah Zarah 16a:14",
+      "Avodah Zarah 16a:15",
+      "Avodah Zarah 16b:1",
+      "Avodah Zarah 16b:2",
+      "Avodah Zarah 16b:3",
+      "Avodah Zarah 16b:4",
+      "Avodah Zarah 16b:5",
+      "Avodah Zarah 16b:6",
+      "Avodah Zarah 16b:7",
+      "Avodah Zarah 16b:8",
+      "Avodah Zarah 16b:9",
+      "Avodah Zarah 16b:10",
+      "Avodah Zarah 16b:11",
+      "Avodah Zarah 7b:10",
+      "Rashi on Avodah Zarah 7b:10:1",
+      "Rashi on Avodah Zarah 7b:10:2",
+      "Rashi on Avodah Zarah 7b:10:3",
+      "Rashi on Avodah Zarah 7b:10:4",
+      "Avodah Zarah 15b:11",
+      "Avodah Zarah 15b:12",
+      "Avodah Zarah 15b:13",
+      "Avodah Zarah 15b:14",
+      "Avodah Zarah 16a:1",
+      "Avodah Zarah 16a:2",
+      "Avodah Zarah 16a:3",
+      "Avodah Zarah 16a:4",
+      "Avodah Zarah 14b:1",
+      "Avodah Zarah 14b:2",
+      "Avodah Zarah 14b:3",
+      "Avodah Zarah 14b:4",
+      "Avodah Zarah 14b:5",
+      "Avodah Zarah 14b:6",
+      "Avodah Zarah 14b:7",
+      "Avodah Zarah 14b:8",
+      "Avodah Zarah 14b:9",
+      "Avodah Zarah 14b:10",
+      "Avodah Zarah 15a:1",
+      "Rashi on Avodah Zarah 15a:1:1",
+      "Avodah Zarah 15a:2",
+      "Avodah Zarah 15a:3",
+      "Avodah Zarah 15a:4",
+      "Avodah Zarah 15a:5",
+      "Avodah Zarah 15a:6",
+      "Avodah Zarah 15a:7",
+      "Avodah Zarah 15a:8",
+      "Avodah Zarah 15a:9",
+      "Avodah Zarah 15a:10",
+      "Rashi on Avodah Zarah 2a:1:1",
+      "Rashi on Avodah Zarah 6a:1:1",
+      "Rashi on Avodah Zarah 14b:9:1",
+      "Rashi on Avodah Zarah 7b:3:1",
+      "Rashi on Avodah Zarah 7b:4:1",
+      "Rashi on Avodah Zarah 7b:6:1",
+      "Rashi on Avodah Zarah 7b:7:1",
+      "Avodah Zarah 7b:1",
+      "Rashi on Avodah Zarah 6b:13:1",
+      "Rashi on Avodah Zarah 7a:1:1",
+      "Rashi on Avodah Zarah 7a:2:1"
+    ],
+    "generatedAt": "2026-10-09T03:59:46.013Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Avodah Zarah 7b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מוכרין להן סוס זכר זקן</strong> - בתוך המלחמה שאינו אלא לקלקל ומלתא דלא שכיחא הוא ולא אתי למילף מינה למכור בהמה אחריתי דהא דאמרי רבנן אין מוכרין להן בהמה גסה לא אסרו אלא משום שאלה או שכירות כדאמר בפירקין דלקמן <span class=\"parenthesized\">(עבודה זרה ד' טו.)</span> והכא במלתא דלא שכיחא לא גזור רבנן:"
+  },
+  "Tosafot on Avodah Zarah 7b:14:1": {
+    "dependsOn": [
+      "Avodah Zarah 7b:14",
+      "Avodah Zarah 7b:15",
+      "Avodah Zarah 7b:16"
+    ],
+    "generatedAt": "2026-10-09T04:58:50.924Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Avodah Zarah 7b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין שיחה אלא תפלה דכתיב ויצא יצחק לשוח בשדה</strong> - תימה דבפרק תפלת השחר <span class=\"parenthesized\">(ברכות דף כו:)</span> אמרינן יצחק קבע תפלת מנחה דכתיב ויצא יצחק לשוח בשדה ואין שיחה אלא תפלה דכתיב אשפוך לפניו שיחי וי\"ל דתרוייהו איצטריך דתרוייהו מלמדים זה את זה דאי מקרא דיצחק הוה אמינא שיצא בשדה לדבר עם שום אדם ולא לתפלה תלמוד לומר אשפוך לפניו שיחי אלמא לשון תפלה הוא ואי מאשפוך לפניו שיחי הוה אמינא דלשון תפלה הוא אכן אינו תפלה קבוע ת\"ל קרא דיצחק דכתיב ביה לפנות ערב ולפנות משמע שכן היה דרכו בכל ערב והיינו תפלת מנחה:"
+  },
+  "Tosafot on Avodah Zarah 7b:9:1": {
+    "dependsOn": [
+      "Avodah Zarah 7b:9",
+      "Avodah Zarah 7b:10",
+      "Avodah Zarah 16a:1",
+      "Avodah Zarah 16a:2",
+      "Avodah Zarah 16a:3",
+      "Avodah Zarah 16a:4",
+      "Avodah Zarah 16a:5",
+      "Avodah Zarah 16a:6",
+      "Avodah Zarah 16a:7"
+    ],
+    "generatedAt": "2026-10-09T04:02:17.027Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Avodah Zarah 7b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סוס זכר זקן במלחמה</strong> - פי' ר' אלחנן דלהכי נקט זכר במלחמה כדאמרינן בירושלמי גבי בן בתירא מתיר בסוס לא אמרו אלא בסוס זכר שהורג את אדונו במלחמה וזקן נמי נקט דשמא ימות במלחמה ויהרוג בעליו עמו ומילי מילי קתני ור\"א מביה\"ם היה מפרש דזקן נקט לרבותא דאע\"פ שעושה בו מלאכה שיש בה חיוב חטאת כדאמר לקמן <span class=\"parenthesized\">(עבודה זרה דף טז.)</span> מפני שכשמזקין מטחינו בריחים אפילו הכי מותר וזכר במלחמה נמי נקט לרבותא ואע\"פ שיש לאסור כדאמר לקמן <span class=\"parenthesized\">(עבודה זרה דף טז.)</span> מפני ב' דברים אחת משום תורת כלי זיין ואחת משום תורת בהמה גסה ואפי' הכי מותר:"
+  }
+}
