@@ -2,7 +2,7 @@ import * as yargs from "yargs";
 import {hideBin} from "yargs/helpers";
 import {books} from "../books";
 import {splitOnBookName} from "../refs";
-import {writeAiEdit} from "../precomputed/ai_edits";
+import {Edit, writeAiEdit} from "../precomputed/ai_edits";
 import {stopAllActiveAgents} from "./agent_runner";
 import {commitAndPushPendingCandidates, makeRealCommitPendingDeps} from "./commit_pending";
 import {setupRsiSignalHandler} from "./signal_handler";
@@ -136,7 +136,9 @@ async function main(): Promise<void> {
     } else {
       candidates = listCandidatesForBook(books.byCanonicalName[bookName], {startPage});
     }
-    if (FLAGS.section) candidates = candidates.filter(c => c.section.startsWith(FLAGS.section!));
+    if (FLAGS.section) {
+      candidates = candidates.filter(candidate => candidate.section.startsWith(FLAGS.section!));
+    }
     return candidates;
   }
 
@@ -178,87 +180,71 @@ async function main(): Promise<void> {
     logger: console,
   });
 
-  if (FLAGS.debug) {
-    console.log(
-      `[Signal] Process PID: ${process.pid}. Send SIGINT, SIGTERM, SIGUSR1, or SIGUSR2 to stop agents and create PR.`);
+  console.log(
+    `[Signal] Process PID: ${process.pid}. Send SIGINT, SIGTERM, SIGUSR1, or SIGUSR2 to stop agents and create PR.`);
+
+  const sharedDeps = {
+    isFresh: isFreshTranslation,
+    generate: (candidate: TranslationCandidate) => {
+      if (FLAGS.debug) {
+        console.log(`\n[Candidate] ${candidate.ref}`);
+      }
+      return generateAndRecord(candidate, {
+        backend: effectiveBackend,
+        model: FLAGS.model,
+        modelConfig: FLAGS.modelConfig,
+        debug: FLAGS.debug,
+        shouldStop: () => stopRequested,
+      });
+    },
+    writeEdit: (candidate: TranslationCandidate, edit: Edit) => {
+      if (FLAGS.debug) {
+        console.log(`Saved pending edit for ${candidate.ref}`);
+      }
+      writeAiEdit(candidate.page, candidate.ref, edit);
+    },
+    recordGeneration: recordGenerationForCandidate,
+    shouldStop: () => stopRequested,
+  };
+
+  function listBatchCandidates(): TranslationCandidate[] {
+    let candidates = getCandidates();
+    // Filter freshness before slicing to --limit — otherwise a limit smaller than the run of
+    // already-fresh candidates at the start of the page silently does nothing (found the hard
+    // way: a real --limit 1 run picked an already-generated candidate, skipped it, and exited
+    // with zero output and zero work done).
+    candidates = candidates.filter(candidate => !isFreshTranslation(candidate));
+    const sliced = FLAGS.limit !== undefined ? candidates.slice(0, FLAGS.limit) : candidates;
+    if (FLAGS.debug) {
+      console.log(
+        `Found ${sliced.length} candidate(s) to process for ${scopeLabel}`
+        + `${FLAGS.section ? ` (section ${FLAGS.section})` : ""}.`);
+    }
+    return sliced;
   }
 
-  try {
+  function runTranslation(): Promise<unknown> {
     if (isContinuous) {
-      activeRunPromise = runContinuousTranslation({
+      return runContinuousTranslation({
+        ...sharedDeps,
         listCandidates: getCandidates,
-        isFresh: isFreshTranslation,
-        generate: candidate => {
-          if (FLAGS.debug) {
-            console.log(`\n[Candidate] ${candidate.ref}`);
-          }
-          return generateAndRecord(candidate, {
-            backend: effectiveBackend,
-            model: FLAGS.model,
-            modelConfig: FLAGS.modelConfig,
-            debug: FLAGS.debug,
-            shouldStop: () => stopRequested,
-          });
-        },
-        writeEdit: (candidate, edit) => {
-          if (FLAGS.debug) {
-            console.log(`Saved pending edit for ${candidate.ref}`);
-          }
-          writeAiEdit(candidate.page, candidate.ref, edit);
-        },
-        recordGeneration: recordGenerationForCandidate,
         onProgress: FLAGS.push ? performCommitAndPush : undefined,
         durationMs: durationHours * 60 * 60 * 1000,
         checkIntervalMs,
-        shouldStop: () => stopRequested,
       });
-      await activeRunPromise;
-      if (FLAGS.push && !signalHandler.isShuttingDown()) {
-        await performCommitAndPush();
-      }
-    } else {
-      activeRunPromise = translateRashiTosafotComments({
-        listCandidates: () => {
-          let candidates = getCandidates();
-          // Filter freshness before slicing to --limit — otherwise a limit smaller than the run of
-          // already-fresh candidates at the start of the page silently does nothing (found the hard
-          // way: a real --limit 1 run picked an already-generated candidate, skipped it, and exited
-          // with zero output and zero work done).
-          candidates = candidates.filter(c => !isFreshTranslation(c));
-          const sliced = FLAGS.limit !== undefined ? candidates.slice(0, FLAGS.limit) : candidates;
-          if (FLAGS.debug) {
-            console.log(
-              `Found ${sliced.length} candidate(s) to process for ${scopeLabel}`
-              + `${FLAGS.section ? ` (section ${FLAGS.section})` : ""}.`);
-          }
-          return sliced;
-        },
-        isFresh: isFreshTranslation,
-        generate: candidate => {
-          if (FLAGS.debug) {
-            console.log(`\n[Candidate] ${candidate.ref}`);
-          }
-          return generateAndRecord(candidate, {
-            backend: effectiveBackend,
-            model: FLAGS.model,
-            modelConfig: FLAGS.modelConfig,
-            debug: FLAGS.debug,
-            shouldStop: () => stopRequested,
-          });
-        },
-        writeEdit: (candidate, edit) => {
-          if (FLAGS.debug) {
-            console.log(`Saved pending edit for ${candidate.ref}`);
-          }
-          writeAiEdit(candidate.page, candidate.ref, edit);
-        },
-        recordGeneration: recordGenerationForCandidate,
-        shouldStop: () => stopRequested,
-      });
-      await activeRunPromise;
-      if (FLAGS.push && !signalHandler.isShuttingDown()) {
-        await performCommitAndPush();
-      }
+    }
+    return translateRashiTosafotComments({
+      ...sharedDeps,
+      listCandidates: listBatchCandidates,
+    });
+  }
+
+  try {
+    activeRunPromise = runTranslation();
+    await activeRunPromise;
+
+    if (FLAGS.push && !signalHandler.isShuttingDown()) {
+      await performCommitAndPush();
     }
 
     if (signalHandler.isShuttingDown()) {
@@ -272,7 +258,7 @@ async function main(): Promise<void> {
   }
 }
 
-main().catch(e => {
-  console.error(e);
+main().catch(error => {
+  console.error(error);
   process.exitCode = 1;
 });

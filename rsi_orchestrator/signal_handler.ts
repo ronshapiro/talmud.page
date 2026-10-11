@@ -82,8 +82,8 @@ export class RsiSignalHandler {
         const stopped = stopAllActiveAgents();
         logger.log(`[Signal] Stopped ${stopped} active agent process(es).`);
       }
-    } catch (e) {
-      logger.error(`[Signal] Error stopping active agents: ${e}`);
+    } catch (error) {
+      logger.error(`[Signal] Error stopping active agents: ${error}`);
     }
 
     try {
@@ -91,8 +91,8 @@ export class RsiSignalHandler {
       logger.log("[Signal] Creating PR for pending candidates...");
       await this.options.onCreatePr();
       logger.log("[Signal] PR creation completed successfully.");
-    } catch (e) {
-      logger.error(`[Signal] Error creating PR: ${e}`);
+    } catch (error) {
+      logger.error(`[Signal] Error creating PR: ${error}`);
       exit(1);
       return;
     }

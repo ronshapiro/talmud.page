@@ -64,9 +64,9 @@ describe("RsiSignalHandler", () => {
     expect(onStopAgents).toHaveBeenCalledTimes(1);
     expect(onCreatePr).toHaveBeenCalledTimes(1);
     expect(exitCalls).toEqual([0]);
-    expect(logs.some(l => l.includes("Received SIGINT"))).toBe(true);
-    expect(logs.some(l => l.includes("Creating PR"))).toBe(true);
-    expect(logs.some(l => l.includes("Process finished cleanly"))).toBe(true);
+    expect(logs.some(log => log.includes("Received SIGINT"))).toBe(true);
+    expect(logs.some(log => log.includes("Creating PR"))).toBe(true);
+    expect(logs.some(log => log.includes("Process finished cleanly"))).toBe(true);
 
     handler.uninstall();
   });
@@ -90,7 +90,7 @@ describe("RsiSignalHandler", () => {
     await handler.handleSignal("SIGINT");
 
     expect(exitCalls).toContain(130);
-    expect(logs.some(l => l.includes("Received second SIGINT. Forcing immediate exit"))).toBe(true);
+    expect(logs.some(log => log.includes("Received second SIGINT. Forcing immediate exit"))).toBe(true);
 
     await firstPromise;
     handler.uninstall();
@@ -111,7 +111,7 @@ describe("RsiSignalHandler", () => {
     expect(stopAllSpy).toHaveBeenCalledTimes(1);
     expect(onCreatePr).toHaveBeenCalledTimes(1);
     expect(exitCalls).toEqual([0]);
-    expect(logs.some(l => l.includes("Stopped 2 active agent process(es)"))).toBe(true);
+    expect(logs.some(log => log.includes("Stopped 2 active agent process(es)"))).toBe(true);
 
     stopAllSpy.mockRestore();
     handler.uninstall();
@@ -135,7 +135,7 @@ describe("RsiSignalHandler", () => {
     expect(onStopAgents).toHaveBeenCalledTimes(1);
     expect(onCreatePr).toHaveBeenCalledTimes(1);
     expect(exitCalls).toEqual([1]);
-    expect(errors.some(e => e.includes("Git push rejected"))).toBe(true);
+    expect(errors.some(error => error.includes("Git push rejected"))).toBe(true);
 
     handler.uninstall();
   });
@@ -158,7 +158,7 @@ describe("RsiSignalHandler", () => {
     expect(onStopAgents).toHaveBeenCalledTimes(1);
     expect(onCreatePr).toHaveBeenCalledTimes(1);
     expect(exitCalls).toEqual([0]);
-    expect(errors.some(e => e.includes("Failed to signal child process"))).toBe(true);
+    expect(errors.some(error => error.includes("Failed to signal child process"))).toBe(true);
 
     handler.uninstall();
   });
