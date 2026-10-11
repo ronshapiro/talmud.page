@@ -177,7 +177,28 @@ items. */
 
     margin-inline-start: 2px;
     content: "+";
+}
+
+.commentary_header.has-nested-commentaries::after,
+.steinsaltz-inline-plus {
     font-size: smaller;
+}
+
+.steinsaltz-inline-indicators {
+    user-select: none;
+    margin-inline-start: 4px;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.steinsaltz-inline-plus {
+    margin-inline-end: 2px;
+}
+
+.steinsaltz-inline-indicators svg {
+    vertical-align: middle;
 }
 
 #main-contents {

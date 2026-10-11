@@ -40,7 +40,12 @@ billing.
   because `yargs` is ESM-only and breaks under jest; the core module stays importable by its test
   file this way. `--section`/`--limit` bound a run to one page / a handful of candidates. Supports
   a continuous mode (`--continuous`, `--duration-hours 24`) that runs as much as possible, pausing
-  and checking hourly when quota is exhausted and resuming when available.
+  and checking hourly when quota is exhausted and resuming when available. Listens for termination
+  signals (`SIGINT`, `SIGTERM`, `SIGUSR1`, `SIGUSR2`) to stop all active agents, commit and push
+  pending candidates, create or update the PR, and exit cleanly.
+- `signal_handler.ts` — graceful process shutdown coordinator for RSI runners. Intercepts OS signals,
+  terminates active agent child processes immediately via `agent_runner.ts`, triggers PR creation and
+  pushes for pending work, and finishes the process cleanly (with double-signal immediate force exit).
 - `precomputed/rsi_state/triage_log.json` (created on first run) — tracks which issue numbers have
   already been triaged, so re-running doesn't re-comment on the same issue.
 - `precomputed/rsi_state/model_routing.ts` + `model_routing_config.json` — per-task-type model

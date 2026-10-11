@@ -81,7 +81,13 @@ export function getTaskModelConfig(
   const requestedBackend = options.backend;
 
   if (requestedBackend) {
-    const backendConfigs = backends[requestedBackend];
+    const baseBackend = requestedBackend.endsWith("-long-thread")
+      ? requestedBackend.replace(/-long-thread$/, "")
+      : undefined;
+    let backendConfigs = backends[requestedBackend];
+    if (!backendConfigs && baseBackend && backends[baseBackend]) {
+      backendConfigs = backends[baseBackend];
+    }
     if (!backendConfigs) {
       const available = Object.keys(backends).join(", ");
       throw new Error(
@@ -89,13 +95,24 @@ export function getTaskModelConfig(
     }
 
     if (requestedConfig) {
-      for (const [key, cfg] of Object.entries(backendConfigs)) {
-        if (matchesConfig(key, requestedConfig, cfg)) {
+      for (const [key, configuration] of Object.entries(backendConfigs)) {
+        if (matchesConfig(key, requestedConfig, configuration)) {
           return {
             backend: requestedBackend as AgentBackend,
-            generateModel: cfg.generateModel,
-            critiqueModel: cfg.critiqueModel,
+            generateModel: configuration.generateModel,
+            critiqueModel: configuration.critiqueModel,
           };
+        }
+      }
+      if (baseBackend && backends[baseBackend] && backendConfigs !== backends[baseBackend]) {
+        for (const [key, configuration] of Object.entries(backends[baseBackend])) {
+          if (matchesConfig(key, requestedConfig, configuration)) {
+            return {
+              backend: requestedBackend as AgentBackend,
+              generateModel: configuration.generateModel,
+              critiqueModel: configuration.critiqueModel,
+            };
+          }
         }
       }
       const available = Object.keys(backendConfigs).join(", ");
@@ -104,17 +121,18 @@ export function getTaskModelConfig(
         + `Available configs: ${available}`);
     }
 
-    const defaultCfg = backendConfigs.default
+    const defaultConfig = backendConfigs.default
+      ?? (baseBackend && backends[baseBackend]?.default)
       ?? (Object.keys(backendConfigs).length === 1 ? Object.values(backendConfigs)[0] : undefined);
-    if (!defaultCfg) {
+    if (!defaultConfig) {
       const available = Object.keys(backendConfigs).join(", ");
       throw new Error(
         `Backend "${requestedBackend}" has no default config. Available configs: ${available}`);
     }
     return {
       backend: requestedBackend as AgentBackend,
-      generateModel: defaultCfg.generateModel,
-      critiqueModel: defaultCfg.critiqueModel,
+      generateModel: defaultConfig.generateModel,
+      critiqueModel: defaultConfig.critiqueModel,
     };
   }
 

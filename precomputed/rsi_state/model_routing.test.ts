@@ -169,4 +169,34 @@ test("actual model_routing_config.json resolves agy default and sonnet-4.6", () 
   expect(claudeLongThreadDefault.backend).toBe("claude-long-thread");
   expect(claudeLongThreadDefault.generateModel).toBe("claude-sonnet-5");
   expect(claudeLongThreadDefault.critiqueModel).toBe("claude-sonnet-5");
+
+  const claudeLongThreadHaiku = getTaskModelConfig("rashi_tosafot_translation", {
+    backend: "claude-long-thread",
+    configName: "haiku-5.5",
+  });
+  expect(claudeLongThreadHaiku.backend).toBe("claude-long-thread");
+  expect(claudeLongThreadHaiku.generateModel).toBe("claude-haiku-5-5");
+  expect(claudeLongThreadHaiku.critiqueModel).toBe("claude-sonnet-5-5");
+
+  const claudeHaiku = getTaskModelConfig("rashi_tosafot_translation", {
+    backend: "claude",
+    configName: "haiku-5.5",
+  });
+  expect(claudeHaiku.backend).toBe("claude");
+  expect(claudeHaiku.generateModel).toBe("claude-haiku-5-5");
+  expect(claudeHaiku.critiqueModel).toBe("claude-sonnet-5-5");
+
+  const claudeHaikuSonnet = getTaskModelConfig("rashi_tosafot_translation", {
+    backend: "claude",
+    configName: "haiku-sonnet-5.5",
+  });
+  expect(claudeHaikuSonnet.generateModel).toBe("claude-haiku-5-5");
+  expect(claudeHaikuSonnet.critiqueModel).toBe("claude-sonnet-5-5");
+
+  const claudeHaikuInferred = getTaskModelConfig("rashi_tosafot_translation", {
+    configName: "haiku-5.5",
+  });
+  expect(claudeHaikuInferred.backend).toBe("claude");
+  expect(claudeHaikuInferred.generateModel).toBe("claude-haiku-5-5");
+  expect(claudeHaikuInferred.critiqueModel).toBe("claude-sonnet-5-5");
 });

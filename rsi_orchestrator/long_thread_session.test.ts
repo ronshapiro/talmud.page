@@ -1,6 +1,7 @@
 import {
   continuationCritiquePrompt,
   continuationGenerationPrompt,
+  DEFAULT_MAX_THREAD_TOKENS,
   getBaseBackend,
   isLongThreadBackend,
   LongThreadSessionManager,
@@ -42,6 +43,10 @@ describe("long_thread_session backend helpers", () => {
     expect(getBaseBackend("claude")).toBe("claude");
     expect(getBaseBackend("agy")).toBe("agy");
   });
+
+  test("defines default max thread tokens as 128 KB", () => {
+    expect(DEFAULT_MAX_THREAD_TOKENS).toBe(128 * 1024);
+  });
 });
 
 describe("continuation prompts", () => {
@@ -50,7 +55,7 @@ describe("continuation prompts", () => {
     const prompt = continuationGenerationPrompt(candidate);
     expect(prompt).toContain("Next commentary comment to translate and punctuate on this page:");
     expect(prompt).toContain("Comment ref: Rashi on Menachot 80a:1:1");
-    expect(prompt).toContain("Follow the same tasks and formatting rules as established above.");
+    expect(prompt).toContain("Follow TRANSLATION_TASK instructions and format established above.");
   });
 
   test("formats concise continuation critique prompt", () => {
@@ -61,7 +66,7 @@ describe("continuation prompts", () => {
     });
     expect(prompt).toContain("Target comment to check:");
     expect(prompt).toContain("Comment ref: Rashi on Menachot 80a:1:1");
-    expect(prompt).toContain("Apply the same verification criteria and rules as established above.");
+    expect(prompt).toContain("Evaluate according to CRITIQUE_TASK instructions and format established above.");
   });
 });
 

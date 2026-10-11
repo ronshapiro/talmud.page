@@ -338,7 +338,7 @@ async function runSubcommand(
     // eslint-disable-next-line no-console
     console.log(`  [subcommand] ${file} ${args.join(" ")}`);
   }
-  return execFileAsync(file, args);
+  return execFileAsync(file, args, {maxBuffer: 50 * 1024 * 1024});
 }
 
 async function gitStatusPorcelainViaCli(debug = false): Promise<string> {

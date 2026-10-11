@@ -3,7 +3,7 @@ import {Edit} from "../precomputed/ai_edits";
 import {AgentBackend} from "./agent_runner";
 import {CritiqueOutcome, TranslationCandidate} from "./rashi_tosafot_translation";
 
-export const DEFAULT_MAX_THREAD_TOKENS = 50000;
+export const DEFAULT_MAX_THREAD_TOKENS = 128 * 1024;
 export const DEFAULT_MAX_THREAD_TURNS = 10;
 
 export function isLongThreadBackend(backend?: string): boolean {
@@ -23,9 +23,7 @@ export function continuationGenerationPrompt(candidate: TranslationCandidate): s
     `Commentator: ${candidate.commentator}`,
     `Current Hebrew text: ${candidate.hebrewSource}`,
     "",
-    "Follow the same tasks and formatting rules as established above.",
-    'Respond with ONLY a JSON object matching {"hebrew"?: string, "english"?: string} — include',
-    "a key only if you're proposing a change to it. No other text before or after the JSON.",
+    "Follow TRANSLATION_TASK instructions and format established above.",
   ].join("\n");
 }
 
@@ -40,11 +38,7 @@ export function continuationCritiquePrompt(
     `Proposed Hebrew: ${edit.hebrew ?? "(unchanged)"}`,
     `Proposed English: ${edit.english ?? "(none)"}`,
     "",
-    "Apply the same verification criteria and rules as established above.",
-    "Output ONLY a concise JSON decision with no preamble or commentary:",
-    '- If valid: {"valid": true}',
-    '- If invalid: {"valid": false, "reason": "<brief one-sentence reason>"} so generation can retry.',
-    "Keep any rejection reason to a single brief sentence. Do not include verbose commentary, apologies, or full rewrites.",
+    "Evaluate according to CRITIQUE_TASK instructions and format established above.",
   ].join("\n");
 }
 

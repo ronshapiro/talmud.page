@@ -26,7 +26,7 @@ function shouldHide(commentaryKind: CommentaryType): boolean {
     && commentaryKind.className === "translation";
 }
 
-function hasNestedPersonalComments(commentary: Commentary): boolean {
+export function hasNestedPersonalComments(commentary: Commentary): boolean {
   for (const comment of commentary.comments || []) {
     if (!comment.commentary) continue;
     if (comment.commentary["Personal Notes"]) return true;
@@ -39,33 +39,58 @@ function hasNestedPersonalComments(commentary: Commentary): boolean {
   return false;
 }
 
-function commentaryHighlightColors(commentary: Commentary, colors?: Set<string>): Set<string> {
+function extractHighlightColorsFromText(
+  text: sefaria.TextType | undefined,
+  colors: Set<string>,
+): void {
+  if (!text) return;
+  if (typeof text === "string") {
+    const matches = text.matchAll(/highlighted-(red|yellow|green|blue|gray)/g);
+    for (const match of matches) {
+      colors.add(match[1]);
+    }
+  } else if (Array.isArray(text)) {
+    for (const t of text) {
+      extractHighlightColorsFromText(t, colors);
+    }
+  }
+}
+
+export function commentaryHighlightColors(
+  commentary: Commentary,
+  colors?: Set<string>,
+): Set<string> {
   if (!colors) colors = new Set();
-  for (const comment of commentary.comments) {
+  for (const comment of commentary.comments || []) {
     for (const color of comment.highlightColors || []) {
       colors.add(color);
     }
+    extractHighlightColorsFromText(comment.he, colors);
+    extractHighlightColorsFromText(comment.en, colors);
     Object.values(comment.commentary || {}).forEach(
       nested => commentaryHighlightColors(nested, colors));
   }
   return colors;
 }
-function commentaryHighlightIndicators(commentary: Commentary): React.ReactElement[] {
-  const result = Array.from(commentaryHighlightColors(commentary)).map(
-    color => (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="22"
-        height="20"
-        viewBox="3 6 26 10"
-        key={color}>
-        <path
-          d="M 10 6 L 20 6 A 4 4 0 0 1 20 14 L 10 14 A 4 4 0 0 1 10 6 Z"
-          fill={`var(--highlight-${color})`} />
-      </svg>
-    ),
+
+export function renderHighlightChip(color: string): React.ReactElement {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="22"
+      height="20"
+      viewBox="3 6 26 10"
+      key={color}
+      className="highlight-chip">
+      <path
+        d="M 10 6 L 20 6 A 4 4 0 0 1 20 14 L 10 14 A 4 4 0 0 1 10 6 Z"
+        fill={`var(--highlight-${color})`} />
+    </svg>
   );
-  return result;
+}
+
+export function commentaryHighlightIndicators(commentary: Commentary): React.ReactElement[] {
+  return Array.from(commentaryHighlightColors(commentary)).map(renderHighlightChip);
 }
 
 function textTypeHasImage(text: sefaria.TextType): boolean {

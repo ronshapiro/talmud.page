@@ -1,0 +1,40 @@
+{
+  "Rashi on Avodah Zarah 8b:1:1": {
+    "dependsOn": [
+      "Avodah Zarah 8b:1",
+      "Rashi on Avodah Zarah 8b:1:1",
+      "Rashi on Avodah Zarah 8b:1:2",
+      "Rashi on Avodah Zarah 8b:1:3"
+    ],
+    "generatedAt": "2026-10-09T06:22:37.566Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Avodah Zarah 8b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל תלתין יומין</strong> - דבתר הלולא:"
+  },
+  "Rashi on Avodah Zarah 8b:1:2": {
+    "dependsOn": [
+      "Avodah Zarah 8b:1",
+      "Rashi on Avodah Zarah 8b:1:1",
+      "Rashi on Avodah Zarah 8b:1:2",
+      "Rashi on Avodah Zarah 8b:1:3",
+      "Avodah Zarah 8a:1",
+      "Rashi on Avodah Zarah 8a:5:1",
+      "Rashi on Avodah Zarah 8a:5:2",
+      "Rashi on Avodah Zarah 8a:5:3",
+      "Rashi on Avodah Zarah 8a:5:4",
+      "Rashi on Avodah Zarah 2a:1:1",
+      "Rashi on Avodah Zarah 2a:1:2",
+      "Rashi on Avodah Zarah 2a:1:3"
+    ],
+    "generatedAt": "2026-10-09T06:24:56.415Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Avodah Zarah 8b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בין אמר</strong> - עובד כוכבים זה לישראל מחמת הלולא אני עושה סעודה זו:"
+  }
+}
