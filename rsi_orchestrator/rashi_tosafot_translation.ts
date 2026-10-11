@@ -21,6 +21,14 @@ import {
 import {toFlatArray} from "../sefariaTextType";
 import {extractRequestedRefs} from "./context_fetch";
 import {AgentError, AgentBackend, getAgentRunner} from "./agent_runner";
+import {
+  continuationCritiquePrompt,
+  continuationGenerationPrompt,
+  isLongThreadBackend,
+  LongThreadSessionManager,
+} from "./long_thread_session";
+
+export {LongThreadSessionManager, isLongThreadBackend};
 
 /**
  * Translates and punctuates Rashi/Tosafot comments — the first task type on the new agentic
@@ -480,7 +488,7 @@ function formatWorkedExamples(examples: WorkedExample[]): string {
   ].filter((line): line is string => line !== undefined).join("\n")).join("\n\n");
 }
 
-function generationPrompt(candidate: TranslationCandidate, priorFeedback?: string): string {
+export function generationPrompt(candidate: TranslationCandidate, priorFeedback?: string): string {
   const book = books.byCanonicalName[candidate.book] as Book | undefined;
   if (!book) {
     throw new Error(`Unknown book "${candidate.book}" for candidate ${candidate.ref}`);
@@ -501,17 +509,24 @@ function generationPrompt(candidate: TranslationCandidate, priorFeedback?: strin
     "You're translating and punctuating a single commentary comment on the Talmud, for",
     "talmud.page (an interactive study tool).",
     "",
-    `Comment ref: ${candidate.ref}`,
-    `Commentator: ${candidate.commentator}`,
-    `Current Hebrew text: ${candidate.hebrewSource}`,
+    "Tasks:",
+    "1. Add punctuation to the Hebrew comment if it doesn't already have it (Rashi/Tosafot",
+    "   style: a hyphen separates the dibbur hamatchil from the comment body, and the comment",
+    "   ends with a colon, not a period). Expand abbreviations only if you're confident what",
+    "   they stand for. Don't change the source text otherwise. Preserve existing HTML tags",
+    "   around the same words. Omit the Hebrew field entirely if it would be identical to the",
+    "   source.",
+    "2. Write an accurate, readable English translation.",
+    "3. If the existing translation is in French, German, or Spanish rather than English,",
+    "   translate that into English instead of writing a fresh translation.",
     "",
-    "Worked example(s) of the expected output — punctuation style, and how literal vs. free the",
-    "English translation should be:",
-    "",
-    formatWorkedExamples(workedExamples),
-    "",
-    "This page's segments and commentary, for orientation (not full text):",
-    formatPageSkeleton(skeleton),
+    "Rules on tools and external lookups:",
+    "- The ONLY permitted CLI tool is context_fetch_cli (`npx ts-node rsi_orchestrator/context_fetch_cli.ts ...`).",
+    "- You must NOT execute `git`, `python`, arbitrary node execution (such as `node -e`), or arbitrary bash commands/scripts (e.g. cat, diff, echo to file). Any attempt to run git, python, or other unapproved commands is blocked and will abort your attempt.",
+    "- Do NOT attempt to output your response via `node` or bash. Output your JSON response directly as text in your message.",
+    "- You must NOT make any lookups to Sefaria (sefaria.org). External lookups to sefaria.org are strictly forbidden and blocked.",
+    "- Wikipedia checks ARE permitted (via `npx ts-node rsi_orchestrator/context_fetch_cli.ts wikipedia ...` or curl to wikipedia.org) if needed for realia, botanical/zoological terms, historical figures, or French loanwords.",
+    "- If context_fetch_cli or Wikipedia does not provide what you need, do not seek it elsewhere — translate based on the provided text and your own knowledge.",
     "",
     "If you need the actual text of something beyond what's given above — a neighboring segment,",
     "another commentary on this segment, or a prior sugya — you can use context_fetch_cli:",
@@ -525,41 +540,31 @@ function generationPrompt(candidate: TranslationCandidate, priorFeedback?: strin
     "context beyond what's already above. Each call is capped in size, so ask for specific refs",
     "rather than trying to pull in everything at once.",
     "",
-    "Rules on tools and external lookups:",
-    "- The ONLY permitted CLI tool is context_fetch_cli (`npx ts-node rsi_orchestrator/context_fetch_cli.ts ...`).",
-    "- You must NOT execute `git`, `python`, arbitrary node execution (such as `node -e`), or arbitrary bash commands/scripts (e.g. cat, diff, echo to file). Any attempt to run git, python, or other unapproved commands is blocked and will abort your attempt.",
-    "- Do NOT attempt to output your response via `node` or bash. Output your JSON response directly as text in your message.",
-    "- You must NOT make any lookups to Sefaria (sefaria.org). External lookups to sefaria.org are strictly forbidden and blocked.",
-    "- Wikipedia checks ARE permitted (via `npx ts-node rsi_orchestrator/context_fetch_cli.ts wikipedia ...` or curl to wikipedia.org) if needed for realia, botanical/zoological terms, historical figures, or French loanwords.",
-    "- If context_fetch_cli or Wikipedia does not provide what you need, do not seek it elsewhere — translate based on the provided text and your own knowledge.",
+    'Respond with ONLY a JSON object matching {"hebrew"?: string, "english"?: string} — include',
+    "a key only if you're proposing a change to it. No other text before or after the JSON.",
     "",
-    "Tasks:",
-    "1. Add punctuation to the Hebrew comment if it doesn't already have it (Rashi/Tosafot",
-    "   style: a hyphen separates the dibbur hamatchil from the comment body, and the comment",
-    "   ends with a colon, not a period). Expand abbreviations only if you're confident what",
-    "   they stand for. Don't change the source text otherwise. Preserve existing HTML tags",
-    "   around the same words. Omit the Hebrew field entirely if it would be identical to the",
-    "   source.",
-    "2. Write an accurate, readable English translation.",
-    "3. If the existing translation is in French, German, or Spanish rather than English,",
-    "   translate that into English instead of writing a fresh translation.",
+    "Worked example(s) of the expected output — punctuation style, and how literal vs. free the",
+    "English translation should be:",
+    "",
+    formatWorkedExamples(workedExamples),
+    "",
+    "This page's segments and commentary, for orientation (not full text):",
+    formatPageSkeleton(skeleton),
+    "",
+    "Target commentary comment to translate:",
+    `Comment ref: ${candidate.ref}`,
+    `Commentator: ${candidate.commentator}`,
+    `Current Hebrew text: ${candidate.hebrewSource}`,
     "",
     priorFeedback
       ? `Your previous attempt was rejected for this reason — fix it: ${priorFeedback}`
       : "",
-    "",
-    'Respond with ONLY a JSON object matching {"hebrew"?: string, "english"?: string} — include',
-    "a key only if you're proposing a change to it. No other text before or after the JSON.",
   ].filter(line => line !== "").join("\n");
 }
 
 export function critiquePrompt(candidate: TranslationCandidate, edit: Edit): string {
   return [
     "You proposed this edit to a Talmud commentary comment. Check it before it ships.",
-    "",
-    `Original Hebrew: ${candidate.hebrewSource}`,
-    `Proposed Hebrew: ${edit.hebrew ?? "(unchanged)"}`,
-    `Proposed English: ${edit.english ?? "(none)"}`,
     "",
     "Does the proposed Hebrew preserve the exact wording (only punctuation/HTML changed, no",
     "words added, removed, or changed)? Is the English translation accurate to the Hebrew?",
@@ -570,6 +575,11 @@ export function critiquePrompt(candidate: TranslationCandidate, edit: Edit): str
     '- If valid: {"valid": true}',
     '- If invalid: {"valid": false, "reason": "<brief one-sentence reason>"} so generation can retry.',
     "Keep any rejection reason to a single brief sentence. Do not include verbose commentary, apologies, or full rewrites.",
+    "",
+    "Target comment to check:",
+    `Original Hebrew: ${candidate.hebrewSource}`,
+    `Proposed Hebrew: ${edit.hebrew ?? "(unchanged)"}`,
+    `Proposed English: ${edit.english ?? "(none)"}`,
   ].join("\n");
 }
 
@@ -596,6 +606,7 @@ export interface TaskExecutionOptions {
   modelConfig?: string;
   debug?: boolean;
   onSubcommand?: (command: string) => void;
+  sessionManager?: LongThreadSessionManager;
 }
 
 export async function generateViaAgent(
@@ -613,21 +624,45 @@ export async function generateViaAgent(
   if (options?.debug) {
     console.log(`  [generate] running ${backend} (${model ?? "default model"})...`);
   }
+
+  const isLongThread = isLongThreadBackend(backend);
+  let promptText = generationPrompt(candidate, priorFeedback);
+  let sessionId: string | undefined;
+  let resumeSession = false;
+
+  if (isLongThread && options?.sessionManager) {
+    const sessionInfo = options.sessionManager.prepareGenerateSession(
+      candidate,
+      backend,
+      Boolean(priorFeedback),
+    );
+    sessionId = sessionInfo.sessionId;
+    resumeSession = sessionInfo.isResume;
+    promptText = resumeSession
+      ? continuationGenerationPrompt(candidate)
+      : generationPrompt(candidate, priorFeedback);
+  }
+
   const result = await runner(
-    generationPrompt(candidate, priorFeedback),
+    promptText,
     {
       model,
       allowedTools: CONTEXT_FETCH_ALLOWED_TOOLS,
       debug: options?.debug,
+      sessionId,
+      resumeSession,
       onToolUse: (toolUse) => {
-        const cmd = (toolUse.input as {command?: string; CommandLine?: string})?.command
+        const command = (toolUse.input as {command?: string; CommandLine?: string})?.command
           ?? (toolUse.input as {command?: string; CommandLine?: string})?.CommandLine;
-        if (cmd) {
-          options?.onSubcommand?.(cmd);
+        if (command) {
+          options?.onSubcommand?.(command);
         }
       },
     });
   const finalModel = result.model ?? model;
+  if (isLongThread && options?.sessionManager) {
+    options.sessionManager.recordGenerateResult(result.sessionId, result.totalTokens);
+  }
   recordContextUsage({
     taskType: TASK_TYPE,
     ref: candidate.ref,
@@ -662,21 +697,47 @@ export async function critiqueViaAgent(
   if (options?.debug) {
     console.log(`  [critique] running ${backend} (${model ?? "default model"})...`);
   }
+
+  const isLongThread = isLongThreadBackend(backend);
+  let promptText = critiquePrompt(candidate, edit);
+  let sessionId: string | undefined;
+  let resumeSession = false;
+
+  if (isLongThread && options?.sessionManager) {
+    const sessionInfo = options.sessionManager.prepareCritiqueSession(backend);
+    sessionId = sessionInfo.sessionId;
+    resumeSession = sessionInfo.isResume;
+    promptText = resumeSession
+      ? continuationCritiquePrompt(candidate, edit)
+      : critiquePrompt(candidate, edit);
+  }
+
   const result = await runner(
-    critiquePrompt(candidate, edit),
+    promptText,
     {
       model,
       allowedTools: CONTEXT_FETCH_ALLOWED_TOOLS,
       debug: options?.debug,
+      sessionId,
+      resumeSession,
       onToolUse: (toolUse) => {
-        const cmd = (toolUse.input as {command?: string; CommandLine?: string})?.command
+        const command = (toolUse.input as {command?: string; CommandLine?: string})?.command
           ?? (toolUse.input as {command?: string; CommandLine?: string})?.CommandLine;
-        if (cmd) {
-          options?.onSubcommand?.(cmd);
+        if (command) {
+          options?.onSubcommand?.(command);
         }
       },
     });
   const finalModel = result.model ?? model;
+  const verdict = parseJsonResponse<CritiqueVerdict>(result.text);
+  const outcome: CritiqueOutcome = {
+    verdict,
+    costUsd: result.costUsd,
+    contextRefsUsed: extractRequestedRefs(result.toolUses),
+  };
+  if (isLongThread && options?.sessionManager) {
+    options.sessionManager.recordCritiqueOutcome(outcome, result.sessionId, result.totalTokens);
+  }
   recordContextUsage({
     taskType: TASK_TYPE,
     ref: candidate.ref,
@@ -685,36 +746,47 @@ export async function critiqueViaAgent(
     costUsd: result.costUsd,
     model: finalModel,
   }, candidate.page);
-  return {
-    verdict: parseJsonResponse<CritiqueVerdict>(result.text),
-    costUsd: result.costUsd,
-    contextRefsUsed: extractRequestedRefs(result.toolUses),
-  };
+  return outcome;
 }
 
 export async function generateAndRecord(
   candidate: TranslationCandidate,
   options?: TaskExecutionOptions,
 ): Promise<GeneratedEdit | undefined> {
-  return generateWithSelfCritique(candidate, {
-    generate: (c, priorFeedback) => {
-      if (options?.debug && priorFeedback) {
-        console.log(`  [retry] feedback from previous attempt: ${priorFeedback}`);
-      }
-      return generateViaAgent(c, priorFeedback, options);
-    },
-    critique: async (c, edit) => {
-      const outcome = await critiqueViaAgent(c, edit, options);
-      if (options?.debug) {
-        if (outcome.verdict.valid) {
-          console.log(`  [critique] accepted`);
-        } else {
-          console.log(`  [critique] rejected: ${outcome.verdict.reason ?? "(no reason provided)"}`);
+  const isLongThread = isLongThreadBackend(options?.backend);
+  const sessionManager = options?.sessionManager
+    ?? (isLongThread ? new LongThreadSessionManager() : undefined);
+  const effectiveOptions: TaskExecutionOptions = {
+    ...options,
+    sessionManager,
+  };
+
+  try {
+    return await generateWithSelfCritique(candidate, {
+      generate: (currentCandidate, priorFeedback) => {
+        if (effectiveOptions.debug && priorFeedback) {
+          console.log(`  [retry] feedback from previous attempt: ${priorFeedback}`);
         }
-      }
-      return outcome;
-    },
-  });
+        return generateViaAgent(currentCandidate, priorFeedback, effectiveOptions);
+      },
+      critique: async (currentCandidate, edit) => {
+        const outcome = await critiqueViaAgent(currentCandidate, edit, effectiveOptions);
+        if (effectiveOptions.debug) {
+          if (outcome.verdict.valid) {
+            console.log(`  [critique] accepted`);
+          } else {
+            console.log(`  [critique] rejected: ${outcome.verdict.reason ?? "(no reason provided)"}`);
+          }
+        }
+        return outcome;
+      },
+    });
+  } catch (error) {
+    if (sessionManager) {
+      sessionManager.reset();
+    }
+    throw error;
+  }
 }
 
 export function recordGenerationForCandidate(

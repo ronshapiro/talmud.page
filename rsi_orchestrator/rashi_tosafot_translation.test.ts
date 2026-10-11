@@ -4,6 +4,7 @@ import {
   CritiqueOutcome,
   CritiqueVerdict,
   critiquePrompt,
+  generationPrompt,
   GeneratedEdit,
   generateWithSelfCritique,
   compareAmudim,
@@ -588,5 +589,39 @@ describe("critiquePrompt", () => {
     expect(prompt).toContain('{"valid": true}');
     expect(prompt).toContain('{"valid": false, "reason": "<brief one-sentence reason>"}');
     expect(prompt).toContain("Keep any rejection reason to a single brief sentence.");
+  });
+
+  test("places static rules and format requirements before dynamic candidate content for prefix caching", () => {
+    const prompt = critiquePrompt(candidate(), {hebrew: "מקור:", english: "source."});
+    const rulesIndex = prompt.indexOf("Be extremely terse to minimize token usage.");
+    const targetIndex = prompt.indexOf("Target comment to check:");
+    expect(rulesIndex).toBeGreaterThan(-1);
+    expect(targetIndex).toBeGreaterThan(-1);
+    expect(rulesIndex).toBeLessThan(targetIndex);
+  });
+});
+
+describe("generationPrompt", () => {
+  test("places static tasks, rules, and skeleton before dynamic candidate commentary text for prefix caching", () => {
+    const testCandidate = candidate({
+      book: "Menachot",
+      section: "80a",
+      page: "Menachot 80a",
+      ref: "Rashi on Menachot 80a:1:1",
+      commentator: "Rashi",
+      hebrewSource: "מקור הבדיקה",
+    });
+    const prompt = generationPrompt(testCandidate, "previous error message");
+    const tasksIndex = prompt.indexOf("Tasks:");
+    const rulesIndex = prompt.indexOf("Rules on tools and external lookups:");
+    const skeletonIndex = prompt.indexOf("This page's segments and commentary, for orientation");
+    const targetIndex = prompt.indexOf("Target commentary comment to translate:");
+    const feedbackIndex = prompt.indexOf("Your previous attempt was rejected for this reason");
+
+    expect(tasksIndex).toBeGreaterThan(-1);
+    expect(rulesIndex).toBeGreaterThan(tasksIndex);
+    expect(skeletonIndex).toBeGreaterThan(rulesIndex);
+    expect(targetIndex).toBeGreaterThan(skeletonIndex);
+    expect(feedbackIndex).toBeGreaterThan(targetIndex);
   });
 });

@@ -140,8 +140,16 @@ describe("getAgentRunner", () => {
     expect(getAgentRunner("agy")).toBe(runHeadlessAgy);
   });
 
+  test("returns runHeadlessAgy for backend agy-long-thread", () => {
+    expect(getAgentRunner("agy-long-thread")).toBe(runHeadlessAgy);
+  });
+
   test("returns runHeadlessClaude for backend claude", () => {
     expect(getAgentRunner("claude")).toBe(runHeadlessClaude);
+  });
+
+  test("returns runHeadlessClaude for backend claude-long-thread", () => {
+    expect(getAgentRunner("claude-long-thread")).toBe(runHeadlessClaude);
   });
 
   test("throws for unknown backend", () => {

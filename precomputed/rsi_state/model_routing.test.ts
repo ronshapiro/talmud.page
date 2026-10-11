@@ -155,4 +155,18 @@ test("actual model_routing_config.json resolves agy default and sonnet-4.6", () 
     configName: "sonnet-5.5",
   });
   expect(agySonnet55Hyphen.generateModel).toBe("claude-sonnet-5-5-high");
+
+  const agyLongThreadDefault = getTaskModelConfig("rashi_tosafot_translation", {
+    backend: "agy-long-thread",
+  });
+  expect(agyLongThreadDefault.backend).toBe("agy-long-thread");
+  expect(agyLongThreadDefault.generateModel).toBe("gemini-3.8-flash-high");
+  expect(agyLongThreadDefault.critiqueModel).toBe("gemini-3.8-flash-medium");
+
+  const claudeLongThreadDefault = getTaskModelConfig("rashi_tosafot_translation", {
+    backend: "claude-long-thread",
+  });
+  expect(claudeLongThreadDefault.backend).toBe("claude-long-thread");
+  expect(claudeLongThreadDefault.generateModel).toBe("claude-sonnet-5");
+  expect(claudeLongThreadDefault.critiqueModel).toBe("claude-sonnet-5");
 });

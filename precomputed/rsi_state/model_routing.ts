@@ -1,5 +1,6 @@
 import * as fs from "fs";
 import {readUtf8} from "../../files";
+import {AgentBackend} from "../../rsi_orchestrator/agent_runner";
 
 /**
  * Model routing configuration. Maps backends ("agy", "claude") to their default and
@@ -12,7 +13,7 @@ export interface ModelConfig {
 }
 
 export interface TaskModelConfig extends ModelConfig {
-  backend: "claude" | "agy";
+  backend: AgentBackend;
 }
 
 export type BackendConfigs = Record<string, ModelConfig>;
@@ -91,7 +92,7 @@ export function getTaskModelConfig(
       for (const [key, cfg] of Object.entries(backendConfigs)) {
         if (matchesConfig(key, requestedConfig, cfg)) {
           return {
-            backend: requestedBackend as "claude" | "agy",
+            backend: requestedBackend as AgentBackend,
             generateModel: cfg.generateModel,
             critiqueModel: cfg.critiqueModel,
           };
@@ -111,7 +112,7 @@ export function getTaskModelConfig(
         `Backend "${requestedBackend}" has no default config. Available configs: ${available}`);
     }
     return {
-      backend: requestedBackend as "claude" | "agy",
+      backend: requestedBackend as AgentBackend,
       generateModel: defaultCfg.generateModel,
       critiqueModel: defaultCfg.critiqueModel,
     };
@@ -122,7 +123,7 @@ export function getTaskModelConfig(
       for (const [key, cfg] of Object.entries(backendConfigs)) {
         if (matchesConfig(key, requestedConfig, cfg)) {
           return {
-            backend: backendName as "claude" | "agy",
+            backend: backendName as AgentBackend,
             generateModel: cfg.generateModel,
             critiqueModel: cfg.critiqueModel,
           };
@@ -137,7 +138,7 @@ export function getTaskModelConfig(
 
   const defaultBackend = ("agy" in backends
     ? "agy"
-    : Object.keys(backends)[0]) as "claude" | "agy";
+    : Object.keys(backends)[0]) as AgentBackend;
   const defaultBackendConfigs = backends[defaultBackend];
   const defaultCfg = defaultBackendConfigs.default
     ?? Object.values(defaultBackendConfigs)[0];
