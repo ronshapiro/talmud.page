@@ -146,9 +146,7 @@ async function main(): Promise<void> {
   let activeRunPromise: Promise<unknown> | undefined;
 
   const performCommitAndPush = async () => {
-    if (FLAGS.debug) {
-      console.log("\nCommitting and pushing pending candidates...");
-    }
+    console.log("\nCommitting and pushing pending candidates...");
     await commitAndPushPendingCandidates({
       task: "rashi_tosafot_translation",
       backend: effectiveBackend,
@@ -160,9 +158,7 @@ async function main(): Promise<void> {
     onStopAgents: async () => {
       stopRequested = true;
       const stoppedCount = stopAllActiveAgents();
-      if (FLAGS.debug) {
-        console.log(`[Signal] Stopped ${stoppedCount} active agent process(es).`);
-      }
+      console.log(`[Signal] Stopped ${stoppedCount} active agent process(es).`);
       if (activeRunPromise) {
         try {
           await Promise.race([
