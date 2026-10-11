@@ -1,3 +1,4 @@
+import * as pageSkeleton from "../precomputed/rsi_state/page_skeleton";
 import {Edit} from "../precomputed/ai_edits";
 import {AgentError} from "./agent_runner";
 import {
@@ -722,25 +723,39 @@ describe("critiquePrompt", () => {
 
 describe("generationPrompt", () => {
   test("places static tasks, rules, and skeleton before dynamic candidate commentary text for prefix caching", () => {
-    const testCandidate = candidate({
-      book: "Menachot",
-      section: "80a",
+    const buildPageSkeletonSpy = jest.spyOn(pageSkeleton, "buildPageSkeleton").mockReturnValue({
       page: "Menachot 80a",
-      ref: "Rashi on Menachot 80a:1:1",
-      commentator: "Rashi",
-      hebrewSource: "מקור הבדיקה",
+      segments: [
+        {
+          ref: "Menachot 80a:1",
+          preview: "מקור הבדיקה",
+          commentary: {Rashi: 1},
+        },
+      ],
     });
-    const prompt = generationPrompt(testCandidate, "previous error message");
-    const tasksIndex = prompt.indexOf("Tasks:");
-    const rulesIndex = prompt.indexOf("Rules on tools and external lookups:");
-    const skeletonIndex = prompt.indexOf("This page's segments and commentary, for orientation");
-    const targetIndex = prompt.indexOf("Target commentary comment to translate:");
-    const feedbackIndex = prompt.indexOf("Your previous attempt was rejected for this reason");
+    try {
+      const testCandidate = candidate({
+        book: "Menachot",
+        section: "80a",
+        page: "Menachot 80a",
+        ref: "Rashi on Menachot 80a:1:1",
+        commentator: "Rashi",
+        hebrewSource: "מקור הבדיקה",
+      });
+      const prompt = generationPrompt(testCandidate, "previous error message");
+      const tasksIndex = prompt.indexOf("Tasks:");
+      const rulesIndex = prompt.indexOf("Rules on tools and external lookups:");
+      const skeletonIndex = prompt.indexOf("This page's segments and commentary, for orientation");
+      const targetIndex = prompt.indexOf("Target commentary comment to translate:");
+      const feedbackIndex = prompt.indexOf("Your previous attempt was rejected for this reason");
 
-    expect(tasksIndex).toBeGreaterThan(-1);
-    expect(rulesIndex).toBeGreaterThan(tasksIndex);
-    expect(skeletonIndex).toBeGreaterThan(rulesIndex);
-    expect(targetIndex).toBeGreaterThan(skeletonIndex);
-    expect(feedbackIndex).toBeGreaterThan(targetIndex);
+      expect(tasksIndex).toBeGreaterThan(-1);
+      expect(rulesIndex).toBeGreaterThan(tasksIndex);
+      expect(skeletonIndex).toBeGreaterThan(rulesIndex);
+      expect(targetIndex).toBeGreaterThan(skeletonIndex);
+      expect(feedbackIndex).toBeGreaterThan(targetIndex);
+    } finally {
+      buildPageSkeletonSpy.mockRestore();
+    }
   });
 });
