@@ -102,3 +102,57 @@ test("an original ref sorts before its own split pieces", () => {
     "Book Foo 2a:10:split:1",
   ]);
 });
+
+test("Talmud page refs without colons sort in Talmud page order", () => {
+  const references = [
+    "Bava Kamma 10a",
+    "Bava Kamma 2a",
+    "Bava Kamma 2b",
+    "Bava Kamma 9b",
+    "Bava Kamma 100a",
+    "Bava Kamma 99b",
+    "Bava Kamma 10b",
+  ];
+  references.sort(refSorter);
+  expect(references).toEqual([
+    "Bava Kamma 2a",
+    "Bava Kamma 2b",
+    "Bava Kamma 9b",
+    "Bava Kamma 10a",
+    "Bava Kamma 10b",
+    "Bava Kamma 99b",
+    "Bava Kamma 100a",
+  ]);
+});
+
+test("Tanakh chapter refs without colons sort numerically", () => {
+  const references = [
+    "Genesis 10",
+    "Genesis 2",
+    "Genesis 1",
+  ];
+  references.sort(refSorter);
+  expect(references).toEqual([
+    "Genesis 1",
+    "Genesis 2",
+    "Genesis 10",
+  ]);
+});
+
+test("Talmud page ranges sort in Talmud page order", () => {
+  const references = [
+    "Bava Kamma 10a-15b",
+    "Bava Kamma 2a-10a",
+    "Bava Kamma 2a-9b",
+    "Bava Kamma 2a",
+    "Bava Kamma 2b",
+  ];
+  references.sort(refSorter);
+  expect(references).toEqual([
+    "Bava Kamma 2a",
+    "Bava Kamma 2a-9b",
+    "Bava Kamma 2a-10a",
+    "Bava Kamma 2b",
+    "Bava Kamma 10a-15b",
+  ]);
+});

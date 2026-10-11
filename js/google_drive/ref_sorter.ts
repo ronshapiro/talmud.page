@@ -1,15 +1,20 @@
-const refPieces = (ref: string): (string | number)[] => {
-  const splitPoint = ref.lastIndexOf(" ", ref.indexOf(":"));
-  const title = ref.substring(0, splitPoint);
-  const basicPieces = ref.substring(splitPoint + 1).split(":");
+const refPieces = (reference: string): (string | number)[] => {
+  const colonIndex = reference.indexOf(":");
+  let splitPoint = colonIndex !== -1 ? reference.lastIndexOf(" ", colonIndex) : reference.lastIndexOf(" ");
+  if (splitPoint === -1 && colonIndex !== -1) {
+    splitPoint = colonIndex;
+  }
+  const title = splitPoint === -1 ? reference : reference.substring(0, splitPoint);
+  const suffixString = splitPoint === -1 ? "" : reference.substring(splitPoint + 1);
+  const basicPieces = suffixString ? suffixString.split(/[:-]/) : [];
   const result: (string | number)[] = [title];
   for (const piece of basicPieces) {
-    const asInt = parseInt(piece);
-    if (asInt) {
-      result.push(asInt);
+    const parsedInteger = parseInt(piece, 10);
+    if (!Number.isNaN(parsedInteger)) {
+      result.push(parsedInteger);
     }
 
-    if (!asInt || asInt.toString() !== piece) {
+    if (Number.isNaN(parsedInteger) || parsedInteger.toString() !== piece) {
       result.push(piece);
     }
   }

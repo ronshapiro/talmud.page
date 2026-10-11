@@ -115,6 +115,34 @@ describe("formatPrTitle", () => {
       .toBe("rashi_tosafot_translation | claude");
   });
 
+  test("strictly orders Talmud pages across single- and double-digit dafs", () => {
+    expect(formatPrTitle("rashi_tosafot_translation", "agy", [
+      "Bava Kamma 10a",
+      "Bava Kamma 2a",
+      "Bava Kamma 2b",
+      "Bava Kamma 3b",
+      "Bava Kamma 4a",
+      "Bava Kamma 4b",
+      "Bava Kamma 5a",
+      "Bava Kamma 5b",
+      "Bava Kamma 6a",
+      "Bava Kamma 6b",
+      "Bava Kamma 7a",
+      "Bava Kamma 7b",
+      "Bava Kamma 8b",
+      "Bava Kamma 9a",
+      "Bava Kamma 9b",
+    ])).toBe("rashi_tosafot_translation | agy: Bava Kamma 2a-10a");
+  });
+
+  test("strictly orders Talmud pages up to single-digit end", () => {
+    expect(formatPrTitle("rashi_tosafot_translation", "agy", [
+      "Bava Kamma 2a",
+      "Bava Kamma 2b",
+      "Bava Kamma 9b",
+    ])).toBe("rashi_tosafot_translation | agy: Bava Kamma 2a-9b");
+  });
+
   test("truncates gracefully if page list is long", () => {
     const pages = [
       "Menachot 90a", "Chullin 2a", "Shabbat 15a", "Berakhot 2a", "Pesachim 10a",

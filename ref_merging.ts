@@ -1,31 +1,31 @@
 import {refSorter} from "./js/google_drive/ref_sorter";
 import {ListMultimap} from "./multimap";
 
-function refSuffixIndex(ref: string): number {
-  if (ref.includes("-")) {
+function refSuffixIndex(reference: string): number {
+  if (reference.includes("-")) {
     return -1;
   }
-  return Math.max(ref.lastIndexOf(":"), ref.lastIndexOf(" "));
+  return Math.max(reference.lastIndexOf(":"), reference.lastIndexOf(" "));
 }
 
-function splitOnRefSuffix(ref: string): string[] {
-  const splitPoint = refSuffixIndex(ref);
+function splitOnRefSuffix(reference: string): string[] {
+  const splitPoint = refSuffixIndex(reference);
   if (splitPoint === -1) {
-    return [ref];
+    return [reference];
   }
-  return [ref.substring(0, splitPoint), ref.substring(splitPoint + 1)];
+  return [reference.substring(0, splitPoint), reference.substring(splitPoint + 1)];
 }
 
-export function mergeRefs(refs: string[]): ListMultimap<string, string> {
-  refs = Array.from(new Set(refs));
+export function mergeRefs(references: string[]): ListMultimap<string, string> {
+  const uniqueReferences = Array.from(new Set(references));
   const unmerged: string[] = [];
   const bySharedPrefix = new ListMultimap<string, string>();
-  for (const ref of refs) {
-    const pieces = splitOnRefSuffix(ref);
+  for (const reference of uniqueReferences) {
+    const pieces = splitOnRefSuffix(reference);
     if (pieces.length === 1) {
-      unmerged.push(ref);
+      unmerged.push(reference);
     } else {
-      bySharedPrefix.put(pieces[0], ref);
+      bySharedPrefix.put(pieces[0], reference);
     }
   }
 
@@ -37,10 +37,10 @@ export function mergeRefs(refs: string[]): ListMultimap<string, string> {
       mergeableValues.sort(refSorter);
       const [prefix, firstSuffix] = splitOnRefSuffix(mergeableValues[0]);
       const [, lastSuffix] = splitOnRefSuffix(mergeableValues.at(-1)!);
-      const splitChar = mergeableValues[0].charAt(refSuffixIndex(mergeableValues[0]));
-      mergedRefs.putAll(`${prefix}${splitChar}${firstSuffix}-${lastSuffix}`, mergeableValues);
+      const splitCharacter = mergeableValues[0].charAt(refSuffixIndex(mergeableValues[0]));
+      mergedRefs.putAll(`${prefix}${splitCharacter}${firstSuffix}-${lastSuffix}`, mergeableValues);
     }
   }
-  unmerged.forEach(x => mergedRefs.put(x, x));
-  return mergedRefs.sortedCopy();
+  unmerged.forEach(unmergedReference => mergedRefs.put(unmergedReference, unmergedReference));
+  return mergedRefs.sortedCopy(refSorter);
 }
