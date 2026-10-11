@@ -84,6 +84,7 @@ export interface GeneratedEdit {
 export interface GenerationDeps {
   generate: (candidate: TranslationCandidate, priorFeedback?: string) => Promise<GeneratedEdit>;
   critique: (candidate: TranslationCandidate, edit: Edit) => Promise<CritiqueOutcome>;
+  shouldStop?: () => boolean;
 }
 
 function sumCost(...costs: (number | undefined)[]): number | undefined {
@@ -114,14 +115,22 @@ export async function generateWithSelfCritique(
   let lastReason = "unknown error";
 
   for (let attempt = 0; attempt < MAX_GENERATION_ATTEMPTS; attempt++) {
+    if (deps.shouldStop?.()) {
+      return undefined;
+    }
     let generated: GeneratedEdit;
     let outcome: CritiqueOutcome;
     try {
       // eslint-disable-next-line no-await-in-loop
       generated = await deps.generate(candidate, feedback);
+      if (deps.shouldStop?.()) {
+        return undefined;
+      }
       // eslint-disable-next-line no-await-in-loop
       outcome = await deps.critique(candidate, generated.edit);
     } catch (e) {
+      if (e instanceof AgentError && e.isCancelled) throw e;
+      if (deps.shouldStop?.()) return undefined;
       if (e instanceof AgentError && e.isRateLimited) throw e;
       lastReason = `Your previous response errored rather than producing a usable result: ${e}. `
         + "Respond with ONLY a JSON object with \"hebrew\" and/or \"english\" string fields — "
@@ -150,6 +159,7 @@ export interface TranslationRunResult {
   rateLimitError?: AgentError;
   candidatesProcessed: number;
   stoppedDueToDeadline?: boolean;
+  stoppedDueToSignal?: boolean;
 }
 
 export interface TranslationDeps {
@@ -178,6 +188,17 @@ export async function translateRashiTosafotComments(
       // eslint-disable-next-line no-await-in-loop
       generated = await deps.generate(candidate);
     } catch (e) {
+      if (e instanceof AgentError && e.isCancelled) {
+        return {
+          rateLimited: false,
+          candidatesProcessed,
+          stoppedDueToDeadline: true,
+          stoppedDueToSignal: true,
+        };
+      }
+      if (deps.shouldStop?.()) {
+        return {rateLimited: false, candidatesProcessed, stoppedDueToDeadline: true};
+      }
       if (e instanceof AgentError && e.isRateLimited) {
         // Every remaining candidate would fail against the same wall — stop the run rather than
         // burn through it logging the identical failure. Subscription usage limits are the
@@ -211,12 +232,14 @@ export interface ContinuousTranslationDeps {
     log: (msg: string) => void;
     error: (msg: string) => void;
   };
+  shouldStop?: () => boolean;
+  signal?: AbortSignal;
 }
 
 export interface ContinuousTranslationSummary {
   totalProcessed: number;
   totalPauses: number;
-  stoppedReason: "duration_elapsed" | "all_completed";
+  stoppedReason: "duration_elapsed" | "all_completed" | "stopped_by_signal";
 }
 
 export const DEFAULT_CHECK_INTERVAL_MS = 60 * 60 * 1000; // 1 hour
@@ -230,7 +253,36 @@ export async function runContinuousTranslation(
   deps: ContinuousTranslationDeps,
 ): Promise<ContinuousTranslationSummary> {
   const now = deps.now ?? Date.now;
-  const sleep = deps.sleep ?? (ms => new Promise(resolve => setTimeout(resolve, ms)));
+  const isStopping = () => Boolean(deps.shouldStop?.() || deps.signal?.aborted);
+
+  const sleep = deps.sleep ?? ((ms: number) => new Promise<void>(resolve => {
+    if (isStopping()) {
+      resolve();
+      return;
+    }
+    const timer = setTimeout(resolve, ms);
+    let interval: NodeJS.Timeout | undefined;
+    const abortHandler = () => {
+      clearTimeout(timer);
+      if (interval) clearInterval(interval);
+      resolve();
+    };
+    if (deps.signal) {
+      deps.signal.addEventListener("abort", abortHandler, {once: true});
+    }
+    interval = setInterval(() => {
+      if (isStopping()) {
+        abortHandler();
+      }
+    }, 100);
+    if (typeof (interval as any)?.unref === "function") {
+      (interval as any).unref();
+    }
+    if (typeof (timer as any)?.unref === "function") {
+      (timer as any).unref();
+    }
+  }));
+
   const checkIntervalMs = deps.checkIntervalMs ?? DEFAULT_CHECK_INTERVAL_MS;
   const logger = deps.logger ?? console;
 
@@ -245,6 +297,11 @@ export async function runContinuousTranslation(
     + `${Math.round(checkIntervalMs / 60000)} minutes on exhaustion.`);
 
   while (now() < deadline) {
+    if (isStopping()) {
+      logger.log("Stop signal received. Stopping continuous translation.");
+      return {totalProcessed, totalPauses, stoppedReason: "stopped_by_signal"};
+    }
+
     const unFreshCandidates = deps.listCandidates().filter(c => !deps.isFresh(c));
     if (unFreshCandidates.length === 0) {
       logger.log("All candidates are up to date. Finished.");
@@ -262,7 +319,7 @@ export async function runContinuousTranslation(
       generate: deps.generate,
       writeEdit: deps.writeEdit,
       recordGeneration: deps.recordGeneration,
-      shouldStop: () => now() >= deadline,
+      shouldStop: () => isStopping() || now() >= deadline,
     });
 
     totalProcessed += result.candidatesProcessed;
@@ -270,6 +327,11 @@ export async function runContinuousTranslation(
     if (result.candidatesProcessed > 0 && deps.onProgress) {
       // eslint-disable-next-line no-await-in-loop
       await deps.onProgress();
+    }
+
+    if (isStopping() || result.stoppedDueToSignal) {
+      logger.log("Stop signal received. Stopping continuous translation.");
+      return {totalProcessed, totalPauses, stoppedReason: "stopped_by_signal"};
     }
 
     if (now() >= deadline) {
@@ -296,6 +358,10 @@ export async function runContinuousTranslation(
         + `${resumeAt} to check quota availability.`);
       // eslint-disable-next-line no-await-in-loop
       await sleep(sleepMs);
+      if (isStopping()) {
+        logger.log("Stop signal received while paused. Stopping continuous translation.");
+        return {totalProcessed, totalPauses, stoppedReason: "stopped_by_signal"};
+      }
       if (now() >= deadline) {
         logger.log("Duration limit reached while paused. Stopping.");
         return {totalProcessed, totalPauses, stoppedReason: "duration_elapsed"};
@@ -596,6 +662,8 @@ export interface TaskExecutionOptions {
   modelConfig?: string;
   debug?: boolean;
   onSubcommand?: (command: string) => void;
+  signal?: AbortSignal;
+  shouldStop?: () => boolean;
 }
 
 export async function generateViaAgent(
@@ -619,6 +687,7 @@ export async function generateViaAgent(
       model,
       allowedTools: CONTEXT_FETCH_ALLOWED_TOOLS,
       debug: options?.debug,
+      signal: options?.signal,
       onToolUse: (toolUse) => {
         const cmd = (toolUse.input as {command?: string; CommandLine?: string})?.command
           ?? (toolUse.input as {command?: string; CommandLine?: string})?.CommandLine;
@@ -668,6 +737,7 @@ export async function critiqueViaAgent(
       model,
       allowedTools: CONTEXT_FETCH_ALLOWED_TOOLS,
       debug: options?.debug,
+      signal: options?.signal,
       onToolUse: (toolUse) => {
         const cmd = (toolUse.input as {command?: string; CommandLine?: string})?.command
           ?? (toolUse.input as {command?: string; CommandLine?: string})?.CommandLine;
@@ -697,6 +767,7 @@ export async function generateAndRecord(
   options?: TaskExecutionOptions,
 ): Promise<GeneratedEdit | undefined> {
   return generateWithSelfCritique(candidate, {
+    shouldStop: options?.shouldStop,
     generate: (c, priorFeedback) => {
       if (options?.debug && priorFeedback) {
         console.log(`  [retry] feedback from previous attempt: ${priorFeedback}`);
