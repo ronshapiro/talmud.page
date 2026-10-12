@@ -3,7 +3,7 @@ import * as fs from "fs";
 import * as os from "os";
 import * as path from "path";
 
-export type AgentBackend = "claude" | "agy";
+export type AgentBackend = "claude" | "agy" | "claude-long-thread" | "agy-long-thread";
 
 export interface ToolUseRecord {
   name: string;
@@ -19,6 +19,8 @@ export interface AgentOptions {
   dangerouslySkipPermissions?: boolean;
   debug?: boolean;
   onToolUse?: (toolUse: ToolUseRecord) => void;
+  sessionId?: string;
+  resumeSession?: boolean;
   signal?: AbortSignal;
   onChild?: (child: ChildProcess) => void;
 }
@@ -29,6 +31,8 @@ export interface AgentResult {
   costUsd: number | undefined;
   toolUses: ToolUseRecord[];
   durationSeconds?: number;
+  sessionId?: string;
+  totalTokens?: number;
 }
 
 export type AgentRunner = (prompt: string, options?: AgentOptions) => Promise<AgentResult>;
@@ -444,6 +448,9 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
     "-p", prompt,
     "--output-format", "stream-json",
   ];
+  if (options.sessionId) {
+    args.push("--conversation", options.sessionId);
+  }
   if (options.dangerouslySkipPermissions !== false) {
     args.push("--dangerously-skip-permissions");
   }
@@ -569,12 +576,19 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
     })
     : toolUses;
 
+  const totalTokens = result.usage?.total_tokens
+    ?? (result.usage
+      ? ((result.usage.input_tokens ?? 0) + (result.usage.output_tokens ?? 0))
+      : undefined);
+
   return {
     text: result.response ?? "",
     model: options.model,
     costUsd: undefined,
     toolUses: filteredToolUses,
     durationSeconds: result.duration_seconds,
+    sessionId: result.conversation_id ?? options.sessionId,
+    totalTokens,
   };
 };
 
@@ -667,6 +681,21 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
     : process.env;
 
   let childProcess: ChildProcess | undefined;
+  const claudeArgs = [
+    "-p", prompt,
+    "--output-format", "stream-json",
+    "--verbose",
+    "--allowedTools", (options.allowedTools ?? DEFAULT_CLAUDE_ALLOWED_TOOLS).join(","),
+    ...(options.model ? ["--model", options.model] : []),
+  ];
+  if (options.sessionId) {
+    if (options.resumeSession) {
+      claudeArgs.push("--resume", options.sessionId);
+    } else {
+      claudeArgs.push("--session-id", options.sessionId);
+    }
+  }
+
   let unregisterChild: (() => void) | undefined;
   const abortListener = () => {
     childProcess?.kill("SIGTERM");
@@ -679,13 +708,7 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
   try {
     ({stdout} = await execFileWithStreaming(
       "claude",
-      [
-        "-p", prompt,
-        "--output-format", "stream-json",
-        "--verbose",
-        "--allowedTools", (options.allowedTools ?? DEFAULT_CLAUDE_ALLOWED_TOOLS).join(","),
-        ...(options.model ? ["--model", options.model] : []),
-      ],
+      claudeArgs,
       {
         cwd: options.cwd,
         env,
@@ -762,6 +785,7 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
     model: primaryClaudeModel(result.modelUsage),
     costUsd: result.total_cost_usd,
     toolUses: filteredToolUses,
+    sessionId: options.sessionId,
   };
 };
 
@@ -775,8 +799,10 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
 export function getAgentRunner(backend: AgentBackend = "claude"): AgentRunner {
   switch (backend) {
     case "agy":
+    case "agy-long-thread":
       return runHeadlessAgy;
     case "claude":
+    case "claude-long-thread":
       return runHeadlessClaude;
     default:
       throw new Error(`Unknown agent backend: "${String(backend)}"`);

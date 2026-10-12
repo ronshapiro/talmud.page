@@ -1,5 +1,6 @@
 import * as fs from "fs";
 import {readUtf8} from "../../files";
+import {AgentBackend} from "../../rsi_orchestrator/agent_runner";
 
 /**
  * Model routing configuration. Maps backends ("agy", "claude") to their default and
@@ -12,7 +13,7 @@ export interface ModelConfig {
 }
 
 export interface TaskModelConfig extends ModelConfig {
-  backend: "claude" | "agy";
+  backend: AgentBackend;
 }
 
 export type BackendConfigs = Record<string, ModelConfig>;
@@ -51,6 +52,19 @@ function matchesConfig(key: string, query: string, cfg?: ModelConfig): boolean {
   return false;
 }
 
+function findMatchingConfig(
+  configurations: BackendConfigs | undefined,
+  queryName: string,
+): ModelConfig | undefined {
+  if (!configurations) return undefined;
+  for (const [key, configuration] of Object.entries(configurations)) {
+    if (matchesConfig(key, queryName, configuration)) {
+      return configuration;
+    }
+  }
+  return undefined;
+}
+
 /**
  * Resolves the generator and critique model configuration for a task type and backend/preset.
  */
@@ -80,40 +94,65 @@ export function getTaskModelConfig(
   const requestedBackend = options.backend;
 
   if (requestedBackend) {
-    const backendConfigs = backends[requestedBackend];
-    if (!backendConfigs) {
+    const baseBackend = requestedBackend.endsWith("-long-thread")
+      ? requestedBackend.replace(/-long-thread$/, "")
+      : undefined;
+    const directConfigs = backends[requestedBackend];
+    const baseConfigs = baseBackend ? backends[baseBackend] : undefined;
+
+    if (!directConfigs && !baseConfigs) {
       const available = Object.keys(backends).join(", ");
       throw new Error(
         `Unknown backend "${requestedBackend}". Available backends: ${available}`);
     }
 
     if (requestedConfig) {
-      for (const [key, cfg] of Object.entries(backendConfigs)) {
-        if (matchesConfig(key, requestedConfig, cfg)) {
-          return {
-            backend: requestedBackend as "claude" | "agy",
-            generateModel: cfg.generateModel,
-            critiqueModel: cfg.critiqueModel,
-          };
-        }
+      const matchedConfig = findMatchingConfig(directConfigs, requestedConfig)
+        ?? findMatchingConfig(baseConfigs, requestedConfig);
+
+      if (matchedConfig) {
+        return {
+          backend: requestedBackend as AgentBackend,
+          generateModel: matchedConfig.generateModel,
+          critiqueModel: matchedConfig.critiqueModel,
+        };
       }
-      const available = Object.keys(backendConfigs).join(", ");
+
+      const allAvailableConfigs = {
+        ...(baseConfigs ?? {}),
+        ...(directConfigs ?? {}),
+      };
+      const available = Object.keys(allAvailableConfigs).join(", ");
       throw new Error(
         `Unknown model config "${requestedConfig}" for backend "${requestedBackend}". `
         + `Available configs: ${available}`);
     }
 
-    const defaultCfg = backendConfigs.default
-      ?? (Object.keys(backendConfigs).length === 1 ? Object.values(backendConfigs)[0] : undefined);
-    if (!defaultCfg) {
-      const available = Object.keys(backendConfigs).join(", ");
+    const singleDirectConfig = directConfigs && Object.keys(directConfigs).length === 1
+      ? Object.values(directConfigs)[0]
+      : undefined;
+    const singleBaseConfig = baseConfigs && Object.keys(baseConfigs).length === 1
+      ? Object.values(baseConfigs)[0]
+      : undefined;
+
+    const defaultConfig = directConfigs?.default
+      ?? baseConfigs?.default
+      ?? singleDirectConfig
+      ?? singleBaseConfig;
+
+    if (!defaultConfig) {
+      const allAvailableConfigs = {
+        ...(baseConfigs ?? {}),
+        ...(directConfigs ?? {}),
+      };
+      const available = Object.keys(allAvailableConfigs).join(", ");
       throw new Error(
         `Backend "${requestedBackend}" has no default config. Available configs: ${available}`);
     }
     return {
-      backend: requestedBackend as "claude" | "agy",
-      generateModel: defaultCfg.generateModel,
-      critiqueModel: defaultCfg.critiqueModel,
+      backend: requestedBackend as AgentBackend,
+      generateModel: defaultConfig.generateModel,
+      critiqueModel: defaultConfig.critiqueModel,
     };
   }
 
@@ -122,7 +161,7 @@ export function getTaskModelConfig(
       for (const [key, cfg] of Object.entries(backendConfigs)) {
         if (matchesConfig(key, requestedConfig, cfg)) {
           return {
-            backend: backendName as "claude" | "agy",
+            backend: backendName as AgentBackend,
             generateModel: cfg.generateModel,
             critiqueModel: cfg.critiqueModel,
           };
@@ -137,7 +176,7 @@ export function getTaskModelConfig(
 
   const defaultBackend = ("agy" in backends
     ? "agy"
-    : Object.keys(backends)[0]) as "claude" | "agy";
+    : Object.keys(backends)[0]) as AgentBackend;
   const defaultBackendConfigs = backends[defaultBackend];
   const defaultCfg = defaultBackendConfigs.default
     ?? Object.values(defaultBackendConfigs)[0];

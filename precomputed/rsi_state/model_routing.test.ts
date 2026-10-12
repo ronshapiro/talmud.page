@@ -156,6 +156,28 @@ test("actual model_routing_config.json resolves agy default and sonnet-4.6", () 
   });
   expect(agySonnet55Hyphen.generateModel).toBe("claude-sonnet-5-5-high");
 
+  const agyLongThreadDefault = getTaskModelConfig("rashi_tosafot_translation", {
+    backend: "agy-long-thread",
+  });
+  expect(agyLongThreadDefault.backend).toBe("agy-long-thread");
+  expect(agyLongThreadDefault.generateModel).toBe("gemini-3.8-flash-high");
+  expect(agyLongThreadDefault.critiqueModel).toBe("gemini-3.8-flash-medium");
+
+  const claudeLongThreadDefault = getTaskModelConfig("rashi_tosafot_translation", {
+    backend: "claude-long-thread",
+  });
+  expect(claudeLongThreadDefault.backend).toBe("claude-long-thread");
+  expect(claudeLongThreadDefault.generateModel).toBe("claude-sonnet-5");
+  expect(claudeLongThreadDefault.critiqueModel).toBe("claude-sonnet-5");
+
+  const claudeLongThreadHaiku = getTaskModelConfig("rashi_tosafot_translation", {
+    backend: "claude-long-thread",
+    configName: "haiku-5.5",
+  });
+  expect(claudeLongThreadHaiku.backend).toBe("claude-long-thread");
+  expect(claudeLongThreadHaiku.generateModel).toBe("claude-haiku-5-5");
+  expect(claudeLongThreadHaiku.critiqueModel).toBe("claude-sonnet-5-5");
+
   const claudeHaiku = getTaskModelConfig("rashi_tosafot_translation", {
     backend: "claude",
     configName: "haiku-5.5",
@@ -177,4 +199,44 @@ test("actual model_routing_config.json resolves agy default and sonnet-4.6", () 
   expect(claudeHaikuInferred.backend).toBe("claude");
   expect(claudeHaikuInferred.generateModel).toBe("claude-haiku-5-5");
   expect(claudeHaikuInferred.critiqueModel).toBe("claude-sonnet-5-5");
+});
+
+test("getTaskModelConfig checks requested backend with matchesConfig first, falling back to base backend", () => {
+  const customConfig = {
+    claude: {
+      default: {
+        generateModel: "claude-sonnet-5",
+        critiqueModel: "claude-sonnet-5",
+      },
+      "custom-preset": {
+        generateModel: "claude-base-model",
+        critiqueModel: "claude-base-model",
+      },
+      "override-preset": {
+        generateModel: "claude-base-override",
+        critiqueModel: "claude-base-override",
+      },
+    },
+    "claude-long-thread": {
+      "override-preset": {
+        generateModel: "claude-long-thread-special",
+        critiqueModel: "claude-long-thread-special",
+      },
+    },
+  };
+  writeJson(CONFIG_PATH, customConfig);
+
+  const directMatch = getTaskModelConfig("any_task", {
+    configPath: CONFIG_PATH,
+    backend: "claude-long-thread",
+    configName: "override-preset",
+  });
+  expect(directMatch.generateModel).toBe("claude-long-thread-special");
+
+  const fallbackMatch = getTaskModelConfig("any_task", {
+    configPath: CONFIG_PATH,
+    backend: "claude-long-thread",
+    configName: "custom-preset",
+  });
+  expect(fallbackMatch.generateModel).toBe("claude-base-model");
 });
