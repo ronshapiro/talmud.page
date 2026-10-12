@@ -440,30 +440,107 @@ export function execFileWithStreaming(
   });
 }
 
+let processIsolatedAgyHomeDirectory: string | undefined;
+
 /**
- * Invokes the Antigravity CLI in headless mode (`agy -p`).
+ * Creates or retrieves a temporary isolated home directory for Antigravity executions.
+ * Symlinks only necessary authentication tokens and installation identifiers so that
+ * the CLI authenticates properly while completely isolating execution from machine-local
+ * customizations (~/.gemini/config, user skills, user plugins, MCP servers, and global rules).
  */
-export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
-  const args = [
+export function getOrCreateIsolatedAgyHomeDirectory(): string {
+  if (processIsolatedAgyHomeDirectory && fs.existsSync(processIsolatedAgyHomeDirectory)) {
+    return processIsolatedAgyHomeDirectory;
+  }
+  const isolatedHomeDirectory = fs.mkdtempSync(path.join(os.tmpdir(), "agy-isolated-home-"));
+  const originalHomeDirectory = process.env.HOME || os.homedir();
+
+  const tokenSources = [
+    {
+      source: path.join(originalHomeDirectory, ".gemini", "antigravity-cli", "antigravity-oauth-token"),
+      destination: path.join(isolatedHomeDirectory, ".gemini", "antigravity-cli", "antigravity-oauth-token"),
+    },
+    {
+      source: path.join(originalHomeDirectory, ".gemini", "jetski-standalone-oauth-token"),
+      destination: path.join(isolatedHomeDirectory, ".gemini", "jetski-standalone-oauth-token"),
+    },
+    {
+      source: path.join(originalHomeDirectory, ".gemini", "antigravity-cli", "installation_id"),
+      destination: path.join(isolatedHomeDirectory, ".gemini", "antigravity-cli", "installation_id"),
+    },
+    {
+      source: path.join(originalHomeDirectory, ".gemini", "installation_id"),
+      destination: path.join(isolatedHomeDirectory, ".gemini", "installation_id"),
+    },
+  ];
+
+  for (const tokenSource of tokenSources) {
+    if (fs.existsSync(tokenSource.source)) {
+      const destinationDirectory = path.dirname(tokenSource.destination);
+      fs.mkdirSync(destinationDirectory, {recursive: true});
+      try {
+        fs.symlinkSync(tokenSource.source, tokenSource.destination);
+      } catch {
+        fs.copyFileSync(tokenSource.source, tokenSource.destination);
+      }
+    }
+  }
+
+  processIsolatedAgyHomeDirectory = isolatedHomeDirectory;
+  return isolatedHomeDirectory;
+}
+
+/**
+ * Cleans up the temporary isolated Antigravity home directory if one was created.
+ */
+export function cleanupIsolatedAgyHomeDirectory(): void {
+  if (processIsolatedAgyHomeDirectory) {
+    try {
+      fs.rmSync(processIsolatedAgyHomeDirectory, {recursive: true, force: true});
+    } catch {
+      // Best-effort cleanup
+    }
+    processIsolatedAgyHomeDirectory = undefined;
+  }
+}
+
+process.on("exit", () => {
+  cleanupIsolatedAgyHomeDirectory();
+});
+
+/**
+ * Builds CLI arguments for headless Antigravity execution with slash commands disabled.
+ */
+export function buildAgyArgs(prompt: string, options: AgentOptions = {}): string[] {
+  const agyArguments = [
     "-p", prompt,
     "--output-format", "stream-json",
+    "--disable-slash-commands",
   ];
   if (options.sessionId) {
-    args.push("--conversation", options.sessionId);
+    agyArguments.push("--conversation", options.sessionId);
   }
   if (options.dangerouslySkipPermissions !== false) {
-    args.push("--dangerously-skip-permissions");
+    agyArguments.push("--dangerously-skip-permissions");
   }
   if (options.model) {
     const model = options.model.startsWith("claude-")
       && !/-(?:low|medium|high|xhigh|max)$/.test(options.model)
       ? `${options.model}-high`
       : options.model;
-    args.push("--model", model);
+    agyArguments.push("--model", model);
   }
   if (options.timeoutMs) {
-    args.push("--print-timeout", `${Math.ceil(options.timeoutMs / 1000)}s`);
+    agyArguments.push("--print-timeout", `${Math.ceil(options.timeoutMs / 1000)}s`);
   }
+  return agyArguments;
+}
+
+/**
+ * Invokes the Antigravity CLI in headless mode (`agy -p`).
+ */
+export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
+  const agyArguments = buildAgyArgs(prompt, options);
 
   if (options.signal?.aborted) {
     throw new AgentError("Agent execution was cancelled", undefined, "agy", true);
@@ -478,9 +555,13 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
     shims = createToolFilterShims();
   }
 
-  const env: NodeJS.ProcessEnv = shims
-    ? {...process.env, PATH: `${shims.shimDir}:${process.env.PATH ?? ""}`}
-    : process.env;
+  const isolatedHomeDirectory = getOrCreateIsolatedAgyHomeDirectory();
+
+  const executionEnvironment: NodeJS.ProcessEnv = {
+    ...process.env,
+    HOME: isolatedHomeDirectory,
+    ...(shims ? {PATH: `${shims.shimDir}:${process.env.PATH ?? ""}`} : {}),
+  };
 
   const seenStepIndices = new Set<number>();
   let childProcess: ChildProcess | undefined;
@@ -494,9 +575,9 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
 
   let stdout: string;
   try {
-    ({stdout} = await execFileWithStreaming("agy", args, {
+    ({stdout} = await execFileWithStreaming("agy", agyArguments, {
       cwd: options.cwd,
-      env,
+      env: executionEnvironment,
       timeout: options.timeoutMs,
       maxBuffer: 1024 * 1024 * 32,
       onChild: (child) => {
@@ -660,7 +741,33 @@ export function asClaudeCliError(error: unknown): AgentError | undefined {
   return new AgentError(result.result, result.api_error_status, "claude");
 }
 
-const DEFAULT_CLAUDE_ALLOWED_TOOLS = ["Read", "Grep", "Glob"];
+export const DEFAULT_CLAUDE_ALLOWED_TOOLS = ["Read", "Grep", "Glob"];
+
+/**
+ * Builds CLI arguments for headless Claude execution with safe mode enabled,
+ * slash commands disabled, strict MCP config enforced, and user/local settings excluded.
+ */
+export function buildClaudeArgs(prompt: string, options: AgentOptions = {}): string[] {
+  const claudeArguments = [
+    "-p", prompt,
+    "--output-format", "stream-json",
+    "--verbose",
+    "--safe-mode",
+    "--disable-slash-commands",
+    "--strict-mcp-config",
+    "--setting-sources", "project",
+    "--allowedTools", (options.allowedTools ?? DEFAULT_CLAUDE_ALLOWED_TOOLS).join(","),
+    ...(options.model ? ["--model", options.model] : []),
+  ];
+  if (options.sessionId) {
+    if (options.resumeSession) {
+      claudeArguments.push("--resume", options.sessionId);
+    } else {
+      claudeArguments.push("--session-id", options.sessionId);
+    }
+  }
+  return claudeArguments;
+}
 
 export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
   if (options.signal?.aborted) {
@@ -671,31 +778,20 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
     console.log(`  [agent] Running claude${options.model ? ` (model: ${options.model})` : ""}...`);
   }
 
+  const claudeArguments = buildClaudeArgs(prompt, options);
+
   let shims: ToolFilterShims | undefined;
   if (options.allowedTools && options.allowedTools.length > 0) {
     shims = createToolFilterShims();
   }
 
-  const env: NodeJS.ProcessEnv = shims
-    ? {...process.env, PATH: `${shims.shimDir}:${process.env.PATH ?? ""}`}
-    : process.env;
+  const executionEnvironment: NodeJS.ProcessEnv = {
+    ...process.env,
+    CLAUDE_CODE_SAFE_MODE: "1",
+    ...(shims ? {PATH: `${shims.shimDir}:${process.env.PATH ?? ""}`} : {}),
+  };
 
   let childProcess: ChildProcess | undefined;
-  const claudeArgs = [
-    "-p", prompt,
-    "--output-format", "stream-json",
-    "--verbose",
-    "--allowedTools", (options.allowedTools ?? DEFAULT_CLAUDE_ALLOWED_TOOLS).join(","),
-    ...(options.model ? ["--model", options.model] : []),
-  ];
-  if (options.sessionId) {
-    if (options.resumeSession) {
-      claudeArgs.push("--resume", options.sessionId);
-    } else {
-      claudeArgs.push("--session-id", options.sessionId);
-    }
-  }
-
   let unregisterChild: (() => void) | undefined;
   const abortListener = () => {
     childProcess?.kill("SIGTERM");
@@ -708,10 +804,10 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
   try {
     ({stdout} = await execFileWithStreaming(
       "claude",
-      claudeArgs,
+      claudeArguments,
       {
         cwd: options.cwd,
-        env,
+        env: executionEnvironment,
         timeout: options.timeoutMs,
         maxBuffer: 1024 * 1024 * 32,
         onChild: (child) => {
