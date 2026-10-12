@@ -455,36 +455,23 @@ export function getOrCreateIsolatedAgyHomeDirectory(): string {
   const isolatedHomeDirectory = fs.mkdtempSync(path.join(os.tmpdir(), "agy-isolated-home-"));
   const originalHomeDirectory = process.env.HOME || os.homedir();
 
-  const tokenSources = [
-    {
-      source: path.join(originalHomeDirectory, ".gemini", "antigravity-cli", "antigravity-oauth-token"),
-      destination: path.join(isolatedHomeDirectory, ".gemini", "antigravity-cli", "antigravity-oauth-token"),
-    },
-    {
-      source: path.join(originalHomeDirectory, ".gemini", "jetski-standalone-oauth-token"),
-      destination: path.join(isolatedHomeDirectory, ".gemini", "jetski-standalone-oauth-token"),
-    },
-    {
-      source: path.join(originalHomeDirectory, ".gemini", "antigravity-cli", "installation_id"),
-      destination: path.join(isolatedHomeDirectory, ".gemini", "antigravity-cli", "installation_id"),
-    },
-    {
-      source: path.join(originalHomeDirectory, ".gemini", "installation_id"),
-      destination: path.join(isolatedHomeDirectory, ".gemini", "installation_id"),
-    },
-  ];
-
-  for (const tokenSource of tokenSources) {
-    if (fs.existsSync(tokenSource.source)) {
-      const destinationDirectory = path.dirname(tokenSource.destination);
-      fs.mkdirSync(destinationDirectory, {recursive: true});
-      try {
-        fs.symlinkSync(tokenSource.source, tokenSource.destination);
-      } catch {
-        fs.copyFileSync(tokenSource.source, tokenSource.destination);
-      }
+  function copyTokenSource(...pathParts: string[]): void {
+    const source = path.join(originalHomeDirectory, ...pathParts);
+    if (!fs.existsSync(source)) return;
+    const destination = path.join(isolatedHomeDirectory, ...pathParts);
+    const destinationDirectory = path.dirname(destination);
+    fs.mkdirSync(destinationDirectory, {recursive: true});
+    try {
+      fs.symlinkSync(source, destination);
+    } catch {
+      fs.copyFileSync(source, destination);
     }
   }
+
+  copyTokenSource(".gemini", "antigravity-cli", "antigravity-oauth-token");
+  copyTokenSource(".gemini", "jetski-standalone-oauth-token");
+  copyTokenSource(".gemini", "antigravity-cli", "installation_id");
+  copyTokenSource(".gemini", "installation_id");
 
   processIsolatedAgyHomeDirectory = isolatedHomeDirectory;
   return isolatedHomeDirectory;
