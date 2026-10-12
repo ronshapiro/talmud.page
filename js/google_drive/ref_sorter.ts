@@ -1,24 +1,38 @@
-const refPieces = (reference: string): (string | number)[] => {
-  const colonIndex = reference.indexOf(":");
-  let splitPoint = colonIndex !== -1 ? reference.lastIndexOf(" ", colonIndex) : reference.lastIndexOf(" ");
-  if (splitPoint === -1 && colonIndex !== -1) {
-    splitPoint = colonIndex;
-  }
-  const title = splitPoint === -1 ? reference : reference.substring(0, splitPoint);
-  const suffixString = splitPoint === -1 ? "" : reference.substring(splitPoint + 1);
-  const basicPieces = suffixString ? suffixString.split(/[:-]/) : [];
-  const result: (string | number)[] = [title];
-  for (const piece of basicPieces) {
-    const parsedInteger = parseInt(piece, 10);
-    if (!Number.isNaN(parsedInteger)) {
-      result.push(parsedInteger);
-    }
+const refPieces = (ref: string): (string | number)[] => {
+  if (ref.includes(":")) {
+    const splitPoint = ref.lastIndexOf(" ", ref.indexOf(":"));
+    const title = ref.substring(0, splitPoint);
+    const basicPieces = ref.substring(splitPoint + 1).split(":");
+    const result: (string | number)[] = [title];
+    for (const piece of basicPieces) {
+      const parsedInteger = parseInt(piece, 10);
+      if (parsedInteger) {
+        result.push(parsedInteger);
+      }
 
-    if (Number.isNaN(parsedInteger) || parsedInteger.toString() !== piece) {
-      result.push(piece);
+      if (!parsedInteger || parsedInteger.toString() !== piece) {
+        result.push(piece);
+      }
     }
+    return result;
   }
-  return result;
+
+  const amudMatch = ref.match(/^(?:(.*)\s+)?(\d+[ab](?:-\d+[ab])?)$/);
+  if (amudMatch) {
+    const title = amudMatch[1] ?? "";
+    const amudPart = amudMatch[2];
+    const result: (string | number)[] = [title];
+    for (const amud of amudPart.split("-")) {
+      const parsedInteger = parseInt(amud, 10);
+      if (parsedInteger) {
+        result.push(parsedInteger);
+      }
+      result.push(amud);
+    }
+    return result;
+  }
+
+  return ["", ref];
 };
 
 type ComparisonType = string | number | (number | string)[];
