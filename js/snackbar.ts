@@ -192,7 +192,7 @@ const Kinds = {
   }),
 };
 
-class Snackbar {
+export class Snackbar {
   kind: Kind;
   snackbarManager: SnackbarManager;
   constructor(kind: Kind, snackbarManager: SnackbarManager) {

@@ -1,7 +1,11 @@
 import * as React from "react";
-import {RsiReviewControls} from "../RsiReviewControls";
+import {
+  AUTO_DISMISS_DELAY_MILLISECONDS,
+  resetSnackbarDismissTimerForTesting,
+  RsiReviewControls,
+} from "../RsiReviewControls";
 import {postWithRetry} from "../post";
-import {snackbars} from "../snackbar";
+import {Button, snackbars} from "../snackbar";
 import {rsiReviewerIdentityPreference, rsiReviewKeyPreference, rsiReviewPrNumberPreference}
   from "../settings";
 import {click, flushAsync, mount, query, queryAll, unmountAll} from "./testing/dom";
@@ -16,7 +20,10 @@ beforeEach(() => {
   resetFixtureCounter();
   (postWithRetry as jest.Mock).mockReset();
 });
-afterEach(() => unmountAll());
+afterEach(() => {
+  unmountAll();
+  resetSnackbarDismissTimerForTesting();
+});
 
 describe("RsiReviewControls", () => {
   test("renders nothing for a comment that isn't pending review", () => {
@@ -192,6 +199,144 @@ describe("RsiReviewControls", () => {
         expect.stringContaining("Approved"), expect.anything());
 
       showSpy.mockRestore();
+      updateSpy.mockRestore();
+    });
+
+    test("updated snackbar includes a dismiss button that hides the snackbar when clicked", async () => {
+      const updateSpy = jest.spyOn(snackbars.reportedIssueSent, "update");
+      const hideSpy = jest.spyOn(snackbars.reportedIssueSent, "hide");
+      (postWithRetry as jest.Mock).mockResolvedValue({url: "https://example.com/pull/1"});
+      const root = mount(<RsiReviewControls comment={
+        comment({pendingReview: "Zevachim 2a", ref: "Zevachim 2a:1"})
+      } />);
+
+      await flushAsync(() => click(query(root, "button")));
+
+      expect(updateSpy).toHaveBeenCalled();
+      const buttons = updateSpy.mock.calls[0][1] as Button[];
+      expect(buttons.length).toBe(1);
+      expect(buttons[0].text).toBe("Dismiss");
+
+      buttons[0].onClick();
+      expect(hideSpy).toHaveBeenCalledTimes(1);
+
+      updateSpy.mockRestore();
+      hideSpy.mockRestore();
+    });
+
+    test("updated snackbar automatically dismisses after 10 seconds", async () => {
+      jest.useFakeTimers();
+      const hideSpy = jest.spyOn(snackbars.reportedIssueSent, "hide");
+      (postWithRetry as jest.Mock).mockResolvedValue({url: "https://example.com/pull/1"});
+      const root = mount(<RsiReviewControls comment={
+        comment({pendingReview: "Zevachim 2a", ref: "Zevachim 2a:1"})
+      } />);
+
+      await flushAsync(() => click(query(root, "button")));
+
+      expect(hideSpy).not.toHaveBeenCalled();
+
+      jest.advanceTimersByTime(AUTO_DISMISS_DELAY_MILLISECONDS - 1);
+      expect(hideSpy).not.toHaveBeenCalled();
+
+      jest.advanceTimersByTime(1);
+      expect(hideSpy).toHaveBeenCalledTimes(1);
+
+      hideSpy.mockRestore();
+      jest.useRealTimers();
+    });
+
+    test("clicking dismiss button cancels automatic 10 second dismissal", async () => {
+      jest.useFakeTimers();
+      const updateSpy = jest.spyOn(snackbars.reportedIssueSent, "update");
+      const hideSpy = jest.spyOn(snackbars.reportedIssueSent, "hide");
+      (postWithRetry as jest.Mock).mockResolvedValue({url: "https://example.com/pull/1"});
+      const root = mount(<RsiReviewControls comment={
+        comment({pendingReview: "Zevachim 2a", ref: "Zevachim 2a:1"})
+      } />);
+
+      await flushAsync(() => click(query(root, "button")));
+
+      const buttons = updateSpy.mock.calls[0][1] as Button[];
+      buttons[0].onClick();
+      expect(hideSpy).toHaveBeenCalledTimes(1);
+
+      jest.advanceTimersByTime(AUTO_DISMISS_DELAY_MILLISECONDS);
+      expect(hideSpy).toHaveBeenCalledTimes(1);
+
+      updateSpy.mockRestore();
+      hideSpy.mockRestore();
+      jest.useRealTimers();
+    });
+
+    test("subsequent decision submission cancels earlier dismissal timer", async () => {
+      jest.useFakeTimers();
+      const hideSpy = jest.spyOn(snackbars.reportedIssueSent, "hide");
+      (postWithRetry as jest.Mock).mockResolvedValue({url: "https://example.com/pull/1"});
+      const root = mount(<RsiReviewControls comment={
+        comment({pendingReview: "Zevachim 2a", ref: "Zevachim 2a:1"})
+      } />);
+
+      await flushAsync(() => click(query(root, "button")));
+
+      jest.advanceTimersByTime(5000);
+      expect(hideSpy).not.toHaveBeenCalled();
+
+      await flushAsync(() => click(query(root, "button")));
+
+      jest.advanceTimersByTime(5000);
+      expect(hideSpy).not.toHaveBeenCalled();
+
+      jest.advanceTimersByTime(5000);
+      expect(hideSpy).toHaveBeenCalledTimes(1);
+
+      hideSpy.mockRestore();
+      jest.useRealTimers();
+    });
+
+    test("submission failure shows error snackbar with dismiss button and auto-dismisses after 10s", async () => {
+      jest.useFakeTimers();
+      const consoleErrorSpy = jest.spyOn(console, "error").mockImplementation(() => {});
+      const errorShowSpy = jest.spyOn(snackbars.errors, "show");
+      const errorHideSpy = jest.spyOn(snackbars.errors, "hide");
+      (postWithRetry as jest.Mock).mockRejectedValue(new Error("Network failure"));
+      const root = mount(<RsiReviewControls comment={
+        comment({pendingReview: "Zevachim 2a", ref: "Zevachim 2a:1"})
+      } />);
+
+      await flushAsync(() => click(query(root, "button")));
+
+      expect(errorShowSpy).toHaveBeenCalledWith(
+        expect.stringContaining("Failed to submit review decision"),
+        expect.anything(),
+      );
+      const buttons = errorShowSpy.mock.calls[0][1] as Button[];
+      expect(buttons.length).toBe(1);
+      expect(buttons[0].text).toBe("Dismiss");
+
+      expect(errorHideSpy).not.toHaveBeenCalled();
+      jest.advanceTimersByTime(AUTO_DISMISS_DELAY_MILLISECONDS);
+      expect(errorHideSpy).toHaveBeenCalledTimes(1);
+
+      consoleErrorSpy.mockRestore();
+      errorShowSpy.mockRestore();
+      errorHideSpy.mockRestore();
+      jest.useRealTimers();
+    });
+
+    test("uses Hebrew dismiss button when site language is Hebrew", async () => {
+      localStorage.languageOption = "hebrew";
+      const updateSpy = jest.spyOn(snackbars.reportedIssueSent, "update");
+      (postWithRetry as jest.Mock).mockResolvedValue({url: "https://example.com/pull/1"});
+      const root = mount(<RsiReviewControls comment={
+        comment({pendingReview: "Zevachim 2a", ref: "Zevachim 2a:1"})
+      } />);
+
+      await flushAsync(() => click(query(root, "button")));
+
+      const buttons = updateSpy.mock.calls[0][1] as Button[];
+      expect(buttons[0].text).toBe("סגור");
+
       updateSpy.mockRestore();
     });
   });

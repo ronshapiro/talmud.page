@@ -2,13 +2,75 @@ import * as React from "react";
 import {ApiComment} from "../apiTypes";
 import {flatten} from "../sefariaTextType";
 import {useHtmlRef} from "./hooks";
+import {$} from "./jquery";
 import Modal from "./Modal";
 import {postWithRetry} from "./post";
 import {getRsiReviewKey} from "./rsiReviewKey";
-import {rsiReviewerIdentityPreference, rsiReviewPrNumberPreference} from "./settings";
-import {snackbars} from "./snackbar";
+import {
+  isSiteLanguageHebrew,
+  rsiReviewerIdentityPreference,
+  rsiReviewPrNumberPreference,
+} from "./settings";
+import {Button, snackbars, Snackbar} from "./snackbar";
 
 const {useState} = React;
+
+export const AUTO_DISMISS_DELAY_MILLISECONDS = 10000;
+
+let autoDismissTimeout: ReturnType<typeof setTimeout> | undefined;
+let activeSnackbarToken = 0;
+
+function clearAutoDismissTimer(): void {
+  if (autoDismissTimeout !== undefined) {
+    clearTimeout(autoDismissTimeout);
+    autoDismissTimeout = undefined;
+  }
+}
+
+export function resetSnackbarDismissTimerForTesting(): void {
+  clearAutoDismissTimer();
+  activeSnackbarToken = 0;
+}
+
+function isSnackbarStillPresent(snackbar: Snackbar): boolean {
+  const snackbarRoot = $("#snackbar");
+  if (snackbarRoot.length > 0) {
+    return snackbarRoot.find(`.${snackbar.kind.cssClass}`).length > 0;
+  }
+  return true;
+}
+
+function showSnackbarWithAutoDismiss(
+  snackbar: Snackbar,
+  updateAction: (dismissButton: Button) => void,
+): void {
+  clearAutoDismissTimer();
+  activeSnackbarToken += 1;
+  const expectedToken = activeSnackbarToken;
+
+  const dismissButton: Button = {
+    text: isSiteLanguageHebrew() ? "סגור" : "Dismiss",
+    onClick: () => {
+      if (activeSnackbarToken === expectedToken) {
+        clearAutoDismissTimer();
+        activeSnackbarToken += 1;
+      }
+      snackbar.hide();
+    },
+  };
+
+  updateAction(dismissButton);
+
+  autoDismissTimeout = setTimeout(() => {
+    if (activeSnackbarToken === expectedToken) {
+      activeSnackbarToken += 1;
+      autoDismissTimeout = undefined;
+      if (isSnackbarStillPresent(snackbar)) {
+        snackbar.hide();
+      }
+    }
+  }, AUTO_DISMISS_DELAY_MILLISECONDS);
+}
 
 interface DecisionResponse {
   url?: string;
@@ -34,6 +96,8 @@ async function postDecision(
   const knownPrNumberString = rsiReviewPrNumberPreference.get();
   const knownPrNumber = knownPrNumberString ? Number(knownPrNumberString) : undefined;
 
+  clearAutoDismissTimer();
+  activeSnackbarToken += 1;
   snackbars.reportedIssueSent.show(`Submitting ${decision} for ${ref}…`, []);
   try {
     const response = await postWithRetry("/api/rsi-review-decision", {
@@ -43,11 +107,17 @@ async function postDecision(
       rsiReviewPrNumberPreference.set(String(response.prNumber));
     }
     const link = response?.url ? ` — <a href="${response.url}" target="_blank">view PR</a>` : "";
-    snackbars.reportedIssueSent.update(`${label} ${ref}${link}`, []);
-  } catch (e) {
-    console.error(e);
+    showSnackbarWithAutoDismiss(snackbars.reportedIssueSent, dismissButton => {
+      snackbars.reportedIssueSent.update(`${label} ${ref}${link}`, [dismissButton]);
+    });
+  } catch (error) {
+    console.error(error);
+    clearAutoDismissTimer();
+    activeSnackbarToken += 1;
     snackbars.reportedIssueSent.hide();
-    snackbars.errors.show(`Failed to submit review decision for ${ref}`, []);
+    showSnackbarWithAutoDismiss(snackbars.errors, dismissButton => {
+      snackbars.errors.show(`Failed to submit review decision for ${ref}`, [dismissButton]);
+    });
   }
 }
 
