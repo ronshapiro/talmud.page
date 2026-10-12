@@ -30,6 +30,7 @@ export interface ReviewDecisionRequest {
   // PR/commit attribution — this codebase has no login system, so this is self-reported, not
   // verified. The review key only proves "a key-holder," not who.
   reviewerIdentity?: string;
+  username?: string;
 }
 
 export interface ReviewDecisionResult {
@@ -86,10 +87,10 @@ async function findKnownOpenPr(
 
 /**
  * Approve (optionally with edited text) or reject a single pending ai_edits.ts entry. Approve
- * clears `status: "pending"` (and overwrites hebrew/english if given); reject deletes the ref's
- * entry entirely so the next scheduled translation run's staleness check treats it as
- * never-generated and retries from scratch. Batches with the caller's own still-open PR (see
- * ReviewDecisionRequest.knownPrNumber) rather than opening a new one per call.
+ * replaces `status: "pending"` with `approved: username` (and overwrites hebrew/english if given);
+ * reject deletes the ref's entry entirely so the next scheduled translation run's staleness check
+ * treats it as never-generated and retries from scratch. Batches with the caller's own still-open
+ * PR (see ReviewDecisionRequest.knownPrNumber) rather than opening a new one per call.
  */
 export async function openReviewDecisionPr(
   request: ReviewDecisionRequest,
@@ -98,7 +99,7 @@ export async function openReviewDecisionPr(
 ): Promise<ReviewDecisionResult> {
   const {
     page, ref, decision, hebrew, english, fallbackHebrew, fallbackEnglish,
-    reason, knownPrNumber, reviewerIdentity,
+    reason, knownPrNumber, reviewerIdentity, username,
   } = request;
   const path = `precomputed/ai_additions/${page}.json`;
   const encodedPath = encodePath(path);
@@ -148,6 +149,7 @@ export async function openReviewDecisionPr(
 
   const verb = decision === "approve" ? "Approve" : "Reject";
   let message = `${verb} RSI translation for ${ref}`;
+  const reviewerUsername = reviewerIdentity ?? username ?? "unknown";
   if (decision === "approve") {
     const resolvedHebrew = hebrew !== undefined ? hebrew : existing!.hebrew;
     const resolvedEnglish = english !== undefined ? english : existing!.english;
@@ -158,6 +160,7 @@ export async function openReviewDecisionPr(
     if (resolvedEnglish !== undefined) {
       updatedEdit.english = resolvedEnglish;
     }
+    updatedEdit.approved = reviewerUsername;
     edits[ref] = updatedEdit;
   } else {
     delete edits[ref];
@@ -185,7 +188,7 @@ export async function openReviewDecisionPr(
     }),
   });
 
-  const attribution = reviewerIdentity ? ` by ${reviewerIdentity}` : "";
+  const attribution = (reviewerIdentity ?? username) ? ` by ${reviewerIdentity ?? username}` : "";
   const entryLine = `${message}${attribution} — via the review overlay at ${
     new Date().toISOString()}.`;
 

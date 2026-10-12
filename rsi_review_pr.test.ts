@@ -121,18 +121,19 @@ class FakeGitHub {
 }
 
 describe("openReviewDecisionPr", () => {
-  test("approve clears pending status and keeps the AI-proposed text", async () => {
+  test("approve replaces pending status with approved username and keeps the AI-proposed text", async () => {
     const github = new FakeGitHub({
       "Zevachim 2a": {"Zevachim 2a:1": {hebrew: "א", english: "a", status: "pending"}},
     });
     const result = await openReviewDecisionPr(
-      {page: "Zevachim 2a", ref: "Zevachim 2a:1", decision: "approve"}, "token",
+      {page: "Zevachim 2a", ref: "Zevachim 2a:1", decision: "approve", reviewerIdentity: "ron"},
+      "token",
       github.fetchImpl);
 
     expect(result.prNumber).toEqual(1);
     const branch = github.allPrs()[0].head.ref;
     expect(github.contentOf(branch, "Zevachim 2a")["Zevachim 2a:1"])
-      .toEqual({hebrew: "א", english: "a"});
+      .toEqual({hebrew: "א", english: "a", approved: "ron"});
   });
 
   test("terminates the saved JSON file with a trailing newline", async () => {
@@ -147,7 +148,7 @@ describe("openReviewDecisionPr", () => {
     expect(github.rawContentOf(branch, "Zevachim 2a").endsWith("\n")).toBe(true);
   });
 
-  test("approve with edited text overwrites hebrew/english", async () => {
+  test("approve with edited text overwrites hebrew/english and sets approved", async () => {
     const github = new FakeGitHub({
       "Zevachim 2a": {"Zevachim 2a:1": {hebrew: "א", english: "a", status: "pending"}},
     });
@@ -157,12 +158,59 @@ describe("openReviewDecisionPr", () => {
       decision: "approve",
       hebrew: "ב",
       english: "b",
+      username: "ronsh",
     }, "token", github.fetchImpl);
 
     const branch = github.allPrs()[0].head.ref;
     expect(github.contentOf(branch, "Zevachim 2a")["Zevachim 2a:1"])
-      .toEqual({hebrew: "ב", english: "b"});
+      .toEqual({hebrew: "ב", english: "b", approved: "ronsh"});
     expect(result.prNumber).toEqual(1);
+  });
+
+  test("approve defaults approved to unknown when no reviewer identity is given", async () => {
+    const github = new FakeGitHub({
+      "Zevachim 2a": {"Zevachim 2a:1": {hebrew: "א", english: "a", status: "pending"}},
+    });
+    await openReviewDecisionPr(
+      {page: "Zevachim 2a", ref: "Zevachim 2a:1", decision: "approve"}, "token",
+      github.fetchImpl);
+
+    const branch = github.allPrs()[0].head.ref;
+    expect(github.contentOf(branch, "Zevachim 2a")["Zevachim 2a:1"])
+      .toEqual({hebrew: "א", english: "a", approved: "unknown"});
+  });
+
+  test("accepting an edit leaves preceding lines and trailing commas unchanged in JSON", async () => {
+    const originalEdits = {
+      "Zevachim 2a:1": {
+        hebrew: "א",
+        english: "a",
+        status: "pending" as const,
+      },
+    };
+    const github = new FakeGitHub({
+      "Zevachim 2a": originalEdits,
+    });
+    await openReviewDecisionPr({
+      page: "Zevachim 2a",
+      ref: "Zevachim 2a:1",
+      decision: "approve",
+      reviewerIdentity: "reviewer_username",
+    }, "token", github.fetchImpl);
+
+    const branch = github.allPrs()[0].head.ref;
+    const updatedEdits = github.contentOf(branch, "Zevachim 2a");
+    const originalLines = JSON.stringify(originalEdits, undefined, 2).split("\n");
+    const updatedLines = JSON.stringify(updatedEdits, undefined, 2).split("\n");
+
+    expect(originalLines.length).toEqual(updatedLines.length);
+    for (let index = 0; index < originalLines.length; index++) {
+      if (originalLines[index].includes('"status": "pending"')) {
+        expect(updatedLines[index]).toBe('    "approved": "reviewer_username"');
+      } else {
+        expect(updatedLines[index]).toBe(originalLines[index]);
+      }
+    }
   });
 
   test("reject deletes the ref's entry and records the reason in the PR body", async () => {
@@ -228,7 +276,7 @@ describe("openReviewDecisionPr", () => {
 
     expect(approveResult.prNumber).toEqual(rejectResult.prNumber);
     expect(github.contentOf(branch, "Zevachim 2a")["Zevachim 2a:1"])
-      .toEqual({hebrew: "א", english: "a"});
+      .toEqual({hebrew: "א", english: "a", approved: "unknown"});
     expect(github.allPrs()[0].body).toContain("Reject RSI translation for Zevachim 2a:1");
     expect(github.allPrs()[0].body).toContain("Approve RSI translation for Zevachim 2a:1");
   });
@@ -253,7 +301,7 @@ describe("openReviewDecisionPr", () => {
     expect(approveResult.prNumber).toEqual(rejectResult.prNumber);
     const branch = github.allPrs()[0].head.ref;
     expect(github.contentOf(branch, "Zevachim 2a")["Zevachim 2a:1"])
-      .toEqual({hebrew: "ב", english: "b"});
+      .toEqual({hebrew: "ב", english: "b", approved: "unknown"});
   });
 
   test("approve falls back to browser payload if entry is missing on both branch and base", async () => {
@@ -269,7 +317,7 @@ describe("openReviewDecisionPr", () => {
     expect(result.prNumber).toEqual(1);
     const branch = github.allPrs()[0].head.ref;
     expect(github.contentOf(branch, "Zevachim 2a")["Zevachim 2a:1"])
-      .toEqual({hebrew: "היברו", english: "english"});
+      .toEqual({hebrew: "היברו", english: "english", approved: "unknown"});
   });
 
   describe("batching via knownPrNumber", () => {
@@ -282,7 +330,13 @@ describe("openReviewDecisionPr", () => {
       });
 
       const first = await openReviewDecisionPr(
-        {page: "Zevachim 2a", ref: "Zevachim 2a:1", decision: "approve"}, "token",
+        {
+          page: "Zevachim 2a",
+          ref: "Zevachim 2a:1",
+          decision: "approve",
+          reviewerIdentity: "ron",
+        },
+        "token",
         github.fetchImpl);
       const second = await openReviewDecisionPr(
         {
@@ -290,7 +344,10 @@ describe("openReviewDecisionPr", () => {
           ref: "Zevachim 2a:2",
           decision: "approve",
           knownPrNumber: first.prNumber,
-        }, "token", github.fetchImpl);
+          reviewerIdentity: "ron",
+        },
+        "token",
+        github.fetchImpl);
 
       expect(second.prNumber).toEqual(first.prNumber);
       expect(github.allPrs().length).toBe(1);
@@ -299,8 +356,8 @@ describe("openReviewDecisionPr", () => {
 
       const branch = github.allPrs()[0].head.ref;
       const content = github.contentOf(branch, "Zevachim 2a");
-      expect(content["Zevachim 2a:1"]).toEqual({hebrew: "א", english: "a"});
-      expect(content["Zevachim 2a:2"]).toEqual({hebrew: "ד", english: "d"});
+      expect(content["Zevachim 2a:1"]).toEqual({hebrew: "א", english: "a", approved: "ron"});
+      expect(content["Zevachim 2a:2"]).toEqual({hebrew: "ד", english: "d", approved: "ron"});
     });
 
     test("without a knownPrNumber, a new PR opens even while another is open", async () => {

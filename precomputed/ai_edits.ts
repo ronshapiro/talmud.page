@@ -6,10 +6,13 @@ export interface Edit {
   hebrew?: string;
   english?: string;
   // Set by the RSI orchestrator on newly generated candidates; absent (the default for every
-  // pre-existing shipped edit) means live. Cleared by /api/rsi-review-decision on approve.
+  // pre-existing shipped edit) means live. Replaced by `approved` on approve.
   status?: "pending";
+  // The username of the reviewer who approved this edit. Replaces `status: "pending"` on approve.
+  approved?: string;
   model?: string;
 }
+
 export const OUTPUT_DIR = "precomputed/ai_additions";
 
 export function aiEditsForPage(page: string): Record<string, Edit> | undefined {

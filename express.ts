@@ -703,7 +703,7 @@ app.post("/api/suggest-rsi-task", async (req, res) => {
 app.post("/api/rsi-review-decision", async (req, res) => {
   const {
     page, ref, decision, hebrew, english, fallbackHebrew, fallbackEnglish,
-    reason, key, knownPrNumber, reviewerIdentity,
+    reason, key, knownPrNumber, reviewerIdentity, username,
   } = req.body ?? {};
   if (!process.env.RSI_REVIEW_KEY) {
     res.send({error: 404, reason: "no rsi key"});
@@ -754,8 +754,10 @@ app.post("/api/rsi-review-decision", async (req, res) => {
         reason,
         knownPrNumber,
         reviewerIdentity,
+        username,
       },
-      token);
+      token,
+    );
     res.status(200).send(result);
   } catch (e) {
     req.logger.error(e);
