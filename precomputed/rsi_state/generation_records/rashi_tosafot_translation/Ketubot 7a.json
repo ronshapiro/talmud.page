@@ -1,0 +1,55 @@
+{
+  "Rashi on Ketubot 7a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-12T02:53:45.001Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 7a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בועז אלמון הוה</strong> - דאמר מר אבצן זה בועז וכבר היו לו ל' בנים ושלשים בנות בבבא בתרא <span class=\"parenthesized\">(דף צא.)</span>:"
+  },
+  "Rashi on Ketubot 7a:15:1": {
+    "dependsOn": [
+      "Ketubot 7a:15",
+      "Ketubot 7a:12",
+      "Rashi on Ketubot 7a:12:1",
+      "Rashi on Ketubot 7a:13:1",
+      "Rashi on Ketubot 7a:5:1",
+      "Rashi on Ketubot 7a:5:2",
+      "Rashi on Ketubot 7a:8:1",
+      "Rashi on Ketubot 7a:9:1",
+      "Rashi on Ketubot 7a:10:1",
+      "Rashi on Ketubot 6b:1:1",
+      "Rashi on Ketubot 6b:2:1",
+      "Rashi on Ketubot 6b:3:1"
+    ],
+    "generatedAt": "2026-10-12T02:59:22.901Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 7a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האמרת שבעה</strong> - דמדאינה טעונה דקאמר רב הונא אוקימנא דאינה טעונה שבעה מכלל דטעונה דקאמר רבי אבא שבעה:"
+  },
+  "Tosafot on Ketubot 7a:13:1": {
+    "dependsOn": [
+      "Tosafot on Ketubot 7a:5:1",
+      "Tosafot on Ketubot 7a:7:1",
+      "Ketubot 7a:13",
+      "Rashi on Ketubot 7a:13:1",
+      "Tosafot on Ketubot 7a:9:1",
+      "Tosafot on Ketubot 7a:11:1",
+      "Tosafot on Ketubot 7a:12:1",
+      "Tosafot on Ketubot 2a:1:1",
+      "Tosafot on Ketubot 3a:1:1"
+    ],
+    "generatedAt": "2026-10-12T02:56:58.273Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Ketubot 7a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא בועז אלמון שנשא אלמנה הוה</strong> - לאו דוקא אלמנה דכשנשאת למחלון <span class=\"parenthesized\">(וכליון)</span> היתה נכרית אלא כיון דבעולה היא כאלמנה חשיב לה:"
+  }
+}

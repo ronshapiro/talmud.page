@@ -1,0 +1,565 @@
+{
+  "Rashi on Ketubot 2a:1:1": {
+    "dependsOn": [
+      "Rashi on Ketubot 2a:1:2",
+      "Rashi on Ketubot 2a:1:3",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2"
+    ],
+    "generatedAt": "2026-10-11T08:04:36.590Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתולה נשאת ליום הרביעי</strong> - תקנת חכמים היא שתנשא ברביעי בשבת כדמפרש טעמא:"
+  },
+  "Rashi on Ketubot 2a:1:2": {
+    "dependsOn": [
+      "Ketubot 2a:1",
+      "Rashi on Ketubot 2a:1:1",
+      "Rashi on Ketubot 2a:1:2",
+      "Rashi on Ketubot 2a:1:3",
+      "Ketubot 2a:2",
+      "Rashi on Ketubot 2a:2:1"
+    ],
+    "generatedAt": "2026-10-11T08:06:09.395Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שפעמים בשבת</strong> - אבתולה קאי:"
+  },
+  "Rashi on Ketubot 2a:1:3": {
+    "dependsOn": [
+      "Rashi on Ketubot 2a:1:1",
+      "Rashi on Ketubot 2a:1:2",
+      "Rashi on Ketubot 2a:2:1",
+      "Rashi on Ketubot 2a:2:2",
+      "Rashi on Ketubot 2a:2:3",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Ketubot 2a:1"
+    ],
+    "generatedAt": "2026-10-11T08:08:49.876Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשני ובחמישי</strong> - אחת מעשר תקנות שתקן עזרא בבבא קמא בפרק מרובה <span class=\"parenthesized\">(בבא קמא דף פב.)</span> מפרש לכולהו ולכך תקנו שתנשא ברביעי שאם היה לו טענת בתולים ישכים לב\"ד בעוד כעסו עליו [ואם יש שהות בינתים יש לחוש] שמא יתפייס ותתקרר דעתו ויקיימנה ושמא היא זינתה תחתיו ונאסרה עליו כדילפינן <span class=\"parenthesized\">(סוטה דף כח.)</span> מונסתרה והיא נטמאה ומתוך שיבא לבית דין יתברר הדבר כשיצא הקול שמא יבואו עדים ובגמר' פריך ותינשא באחד בשבת:"
+  },
+  "Rashi on Ketubot 2a:2:1": {
+    "dependsOn": [
+      "Ketubot 2a:2",
+      "Rashi on Ketubot 2a:2:1",
+      "Rashi on Ketubot 2a:4:1",
+      "Rashi on Ketubot 2a:4:2",
+      "Rashi on Ketubot 2a:4:3",
+      "Rashi on Ketubot 2a:4:4",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:2:2"
+    ],
+    "generatedAt": "2026-10-11T08:27:14.581Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לפי ששנינו כו'</strong> - לקמן מקשי עלה:"
+  },
+  "Rashi on Ketubot 2a:2:2": {
+    "dependsOn": [
+      "Ketubot 2a:2",
+      "Ketubot 57a:1",
+      "Rashi on Ketubot 57a:10:1",
+      "Rashi on Ketubot 57a:10:2",
+      "Rashi on Ketubot 57a:10:3",
+      "Rashi on Ketubot 2a:2:1",
+      "Rashi on Ketubot 2a:2:2",
+      "Rashi on Ketubot 2a:2:3",
+      "Rashi on Ketubot 2a:2:4",
+      "Rashi on Ketubot 2a:2:5"
+    ],
+    "generatedAt": "2026-10-11T08:33:53.557Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הגיע זמן ולא נישאו</strong> - לקמן בפרק אע\"פ תנן נותנין לבתולה שנים עשר חדש משתבעה הבעל והזהיר על הנישואין לפרנס עצמה בתכשיטין. לפרנס קנדיר\"ר בלע\"ז. ולאלמנה שלשים יום:"
+  },
+  "Rashi on Ketubot 2a:2:3": {
+    "dependsOn": [
+      "Ketubot 2a:2",
+      "Rashi on Ketubot 2a:2:1",
+      "Rashi on Ketubot 2a:2:2",
+      "Rashi on Ketubot 2a:2:3",
+      "Rashi on Ketubot 2a:2:4",
+      "Rashi on Ketubot 2a:3:1",
+      "Rashi on Ketubot 2a:4:1",
+      "Rashi on Ketubot 2a:4:2",
+      "Rashi on Ketubot 2b:1:1",
+      "Rashi on Ketubot 2b:2:1"
+    ],
+    "generatedAt": "2026-10-11T08:36:49.784Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הגיע זמן</strong> - זה ולא נישאו לחופה לקמן מפרש שעכב הבעל:"
+  },
+  "Rashi on Ketubot 2a:2:4": {
+    "dependsOn": [
+      "Ketubot 2a:2",
+      "Rashi on Ketubot 2a:2:1",
+      "Rashi on Ketubot 2a:2:2",
+      "Rashi on Ketubot 2a:2:3",
+      "Rashi on Ketubot 2a:2:4",
+      "Rashi on Ketubot 2a:2:5",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Ketubot 2a:1:1",
+      "Rashi on Ketubot 2a:1:2",
+      "Rashi on Ketubot 2a:1:3",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:2:2",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 3a:1:1",
+      "Rashi on Berakhot 3b:1:1",
+      "Rashi on Berakhot 4b:1:1",
+      "Rashi on Berakhot 8b:1:1",
+      "Rashi on Berakhot 10a:1:1",
+      "Rashi on Berakhot 12a:1:1",
+      "Rashi on Berakhot 2a:4:1",
+      "Rashi on Berakhot 2a:5:1",
+      "Rashi on Berakhot 2a:6:1",
+      "Rashi on Berakhot 2a:7:1"
+    ],
+    "generatedAt": "2026-10-11T08:42:50.326Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2a:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אוכלות משלו</strong> - שהבעל חייב במזונות אשתו מתקנת ב\"ד כדלקמן בפרק נערה <span class=\"parenthesized\">(כתובות דף מו:)</span>:"
+  },
+  "Rashi on Ketubot 2a:2:5": {
+    "dependsOn": [
+      "Ketubot 2a:2",
+      "Rashi on Ketubot 2a:2:1",
+      "Rashi on Ketubot 2a:2:2",
+      "Rashi on Ketubot 2a:2:3",
+      "Rashi on Ketubot 2a:2:4",
+      "Rashi on Ketubot 2a:2:5",
+      "Rashi on Ketubot 2a:1:1",
+      "Rashi on Ketubot 2a:1:2",
+      "Rashi on Ketubot 2a:1:3",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:8:1",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 2a:9:1",
+      "Rashi on Berakhot 2a:10:1",
+      "Rashi on Berakhot 2a:11:1",
+      "Rashi on Berakhot 2a:12:1",
+      "Rashi on Berakhot 3a:1:1",
+      "Rashi on Berakhot 3a:2:1",
+      "Rashi on Berakhot 3a:3:1",
+      "Rashi on Berakhot 3a:4:1",
+      "Rashi on Ketubot 2a:3:1",
+      "Rashi on Ketubot 2a:4:1",
+      "Rashi on Ketubot 2a:4:2",
+      "Rashi on Ketubot 2a:4:3",
+      "Ketubot 57b:1",
+      "Ketubot 57b:2",
+      "Ketubot 57b:6",
+      "Ketubot 57b:7",
+      "Ketubot 57b:8",
+      "Ketubot 57b:12",
+      "Ketubot 57b:13",
+      "Ketubot 58a:1",
+      "Ketubot 57b:9",
+      "Ketubot 57b:10",
+      "Ketubot 57b:11",
+      "Rashi on Ketubot 57b:11:1",
+      "Rashi on Ketubot 57b:11:2",
+      "Rashi on Berakhot 15b:1:1",
+      "Rashi on Berakhot 16a:1:1"
+    ],
+    "generatedAt": "2026-10-11T08:47:21.625Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2a:2:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואוכלות בתרומה</strong> - אם כהן הוא והיא בת ישראל שהכהן מאכיל את אשתו תרומה כדיליף <span class=\"parenthesized\">(לקמן כתובות דף נז:)</span> מוכהן כי יקנה נפש:"
+  },
+  "Rashi on Ketubot 2a:3:1": {
+    "dependsOn": [
+      "Ketubot 2a:3",
+      "Rashi on Ketubot 2a:3:1",
+      "Rashi on Ketubot 2a:1:1",
+      "Rashi on Ketubot 2a:1:2",
+      "Rashi on Ketubot 2a:2:1",
+      "Rashi on Ketubot 2a:6:1",
+      "Rashi on Ketubot 2a:7:1",
+      "Rashi on Ketubot 2a:9:1"
+    ],
+    "generatedAt": "2026-10-11T08:52:17.795Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לכך שנינו בתולה נשאת כו'</strong> - להודיע שתקנת חכמים מעכבתו מלכנוס ואין עכבה זו שלו:"
+  },
+  "Rashi on Ketubot 2a:4:1": {
+    "dependsOn": [
+      "Ketubot 2a:4",
+      "Rashi on Ketubot 2a:4:1",
+      "Rashi on Ketubot 2a:4:2",
+      "Rashi on Ketubot 2a:4:3",
+      "Rashi on Ketubot 2a:2:1",
+      "Rashi on Ketubot 2a:2:2",
+      "Rashi on Ketubot 2a:2:3",
+      "Rashi on Ketubot 2a:2:4",
+      "Rashi on Ketubot 2a:2:5",
+      "Tosafot on Ketubot 2a:4:1",
+      "Rashba on Ketubot 2a:4:1",
+      "Ritva on Ketubot 2a:4:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1"
+    ],
+    "generatedAt": "2026-10-11T09:00:19.685Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מריה דאברהם כו'</strong> - תמה על דברי רבו ואמר מריה דאברהם מה זה היה לשמואל לומר כן ועוד שחלה רב יוסף ושכח תלמודו ותוהה על דבריו הראשונים:"
+  },
+  "Rashi on Ketubot 2a:4:2": {
+    "dependsOn": [
+      "Ketubot 2a:4",
+      "Rashi on Ketubot 2a:4:1",
+      "Rashi on Ketubot 2a:4:2",
+      "Rashi on Ketubot 2a:4:3",
+      "Rashi on Ketubot 2a:4:4",
+      "Rashi on Ketubot 2a:1:1",
+      "Rashi on Ketubot 2a:2:1"
+    ],
+    "generatedAt": "2026-10-11T09:02:07.753Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תלי תניא בדלא תניא</strong> - תולה טעם משנה שנויה במשנה שאינה שנויה:"
+  },
+  "Rashi on Ketubot 2a:4:3": {
+    "dependsOn": [
+      "Ketubot 2a:4",
+      "Rashi on Ketubot 2a:4:1",
+      "Rashi on Ketubot 2a:4:2",
+      "Rashi on Ketubot 2a:4:3",
+      "Rashi on Ketubot 2a:4:4",
+      "Rashi on Ketubot 2a:1:1",
+      "Rashi on Ketubot 2a:1:2",
+      "Rashi on Ketubot 2a:1:3",
+      "Rashi on Ketubot 2a:2:1",
+      "Rashi on Ketubot 2a:2:2",
+      "Rashi on Ketubot 2a:2:3",
+      "Rashi on Ketubot 2a:2:4",
+      "Rashi on Ketubot 2a:2:5",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3"
+    ],
+    "generatedAt": "2026-10-11T09:04:31.266Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומקשינן לרב יוסף הי תניא והי לא תניא הא תניא והא תניא</strong> - זו שנויה וזו שנויה:"
+  },
+  "Rashi on Ketubot 2a:4:4": {
+    "dependsOn": [
+      "Rashi on Ketubot 2a:4:1",
+      "Rashi on Ketubot 2a:4:2",
+      "Rashi on Ketubot 2a:4:3",
+      "Rashi on Ketubot 2a:4:4",
+      "Rashi on Ketubot 2a:2:1",
+      "Rashi on Ketubot 2a:2:2",
+      "Rashi on Ketubot 2a:3:1",
+      "Rashi on Ketubot 2a:5:1",
+      "Rashi on Ketubot 2a:6:1",
+      "Rashi on Ketubot 2a:7:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3",
+      "Steinsaltz on Ketubot 2a:4",
+      "Ketubot 2a:4"
+    ],
+    "generatedAt": "2026-10-11T09:10:02.471Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2a:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא תלי תניא דמפרש טעמא בדתניא דלא מפרש טעמא</strong> - משנתינו טעמא מפורש בתוכה כדי שישכים לבית דין והגיע זמן אין שום טעם מפורש בה לומר מפני מה אם הגיע זמן באחד בשבת אינו מעלה לה מזונות:"
+  },
+  "Rashi on Ketubot 2a:5:1": {
+    "dependsOn": [
+      "Ketubot 2a:5",
+      "Rashi on Ketubot 2a:5:1",
+      "Rashi on Ketubot 2a:2:1",
+      "Rashi on Ketubot 2a:4:1",
+      "Ketubot 2a:2",
+      "Ketubot 2a:4"
+    ],
+    "generatedAt": "2026-10-11T09:14:01.895Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותינשא באחד בשבת</strong> - כולה רב יוסף קאמר לה:"
+  },
+  "Rashi on Ketubot 2a:6:1": {
+    "dependsOn": [
+      "Ketubot 2a:6",
+      "Rashi on Ketubot 2a:6:1",
+      "Rashi on Ketubot 2a:1:1",
+      "Rashi on Ketubot 2a:1:2",
+      "Rashi on Ketubot 2a:1:3",
+      "Rashi on Ketubot 2a:2:1",
+      "Rashi on Ketubot 2a:4:1",
+      "Rashi on Ketubot 2a:5:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:2:1"
+    ],
+    "generatedAt": "2026-10-11T09:36:06.148Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועכשיו ששנינו שקדו</strong> - ובשביל תקנה זו הוא מעוכב מלכנוס באחד בשבת מעתה אותה ששנינו כו':"
+  },
+  "Rashi on Ketubot 2a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-11T09:40:48.963Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לפיכך</strong> - רב יוסף מסיים לה משמיה דנפשיה ומסבריה ואמר לפיכך הואיל ולמדנו שהמעוכב מחמת אונס אינו חייב לזונה חלה הוא כו':"
+  },
+  "Rashi on Ketubot 2a:9:1": {
+    "dependsOn": [
+      "Ketubot 2a:9",
+      "Rashi on Ketubot 2a:9:1"
+    ],
+    "generatedAt": "2026-10-11T09:47:51.399Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא קאימנא</strong> - הנני מזומן:"
+  },
+  "Rashi on Ketubot 2a:9:2": {
+    "dependsOn": [
+      "Ketubot 2a:9",
+      "Rashi on Ketubot 2a:9:1",
+      "Rashi on Ketubot 2a:9:2",
+      "Rashi on Ketubot 2a:1:1",
+      "Rashi on Ketubot 2a:1:2",
+      "Rashi on Ketubot 2a:1:3",
+      "Rashi on Ketubot 2a:7:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1"
+    ],
+    "generatedAt": "2026-10-11T09:53:05.639Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נסתחפה שדהו</strong> - לשון מטר סוחף <span class=\"parenthesized\">(משלי כח ג)</span> נשטפה שדך כלומר מזלך גרם כי מהיום אני מוטלת עליך לזון:"
+  },
+  "Tosafot on Ketubot 2a:1:1": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 2a:1:1",
+      "Tosafot on Ketubot 2a:1:2",
+      "Tosafot on Ketubot 2a:1:3",
+      "Tosafot on Ketubot 2a:1:4",
+      "Tosafot on Berakhot 2a:1:1",
+      "Tosafot on Berakhot 2a:1:2",
+      "Tosafot on Berakhot 2a:5:1",
+      "Rashi on Ketubot 2a:1:1",
+      "Rashi on Ketubot 2a:1:2",
+      "Rashi on Ketubot 2a:1:3",
+      "Rashba on Ketubot 2a:1:1",
+      "Ritva on Ketubot 2a:1:1"
+    ],
+    "generatedAt": "2026-10-11T08:12:12.108Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Ketubot 2a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתולה</strong> - הא דלא קתני הבתולה כדתני האשה נקנית היבמה ניקנית <span class=\"parenthesized\">(קדושין דף ב.)</span> משום דהתם אקרא קאי כי יקח איש אשה <span class=\"parenthesized\">(דברים כ״ב:י״ג)</span> האשה הכתובה וכן היבמה אבל הכא לא קאי אקרא והא דלא תנן בפ\"ק דקידושין <span class=\"parenthesized\">(דף יד:)</span> העבד עברי אף על פי דכתיב בקרא <span class=\"parenthesized\">(שמות כ״א:ב׳)</span> כי תקנה עבד עברי משום דא\"כ ה\"ל למתני העבד העברי שאינו דבוק ואין דרך הש\"ס לדבר כן ומיהו גבי איש ואשה רגילים בכל מקום לשנות בה' אע\"ג דלא קאי אקרא כמו האשה שהלכה <span class=\"parenthesized\">(ביבמות דף קיד:)</span> האשה שנתארמלה <span class=\"parenthesized\">(לקמן כתובות דף טו:)</span> האיש מדיר את בנו בנזיר <span class=\"parenthesized\">(נזיר ד' כח:)</span>:"
+  },
+  "Tosafot on Ketubot 2a:1:2": {
+    "dependsOn": [
+      "Tosafot on Ketubot 2a:1:1",
+      "Tosafot on Ketubot 2a:1:3"
+    ],
+    "generatedAt": "2026-10-11T08:17:07.145Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Ketubot 2a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נשאת</strong> - הא דלא קתני נושאין את הבתולה כמו האיש מקדש <span class=\"parenthesized\">(קדושין דף מא.)</span> לפי שעתה מקצר יותר ועוד דאי תנא הכי ה\"א אפי' בעל כרחה כדמשני <span class=\"parenthesized\">(שם דף ב:)</span> גבי הא דפריך וליתני האיש קונה ועוד דהתם אקרא קאי כי יקח איש אשה:"
+  },
+  "Tosafot on Ketubot 2a:1:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-11T08:21:22.621Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Ketubot 2a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליום הרביעי</strong> - ולא בליל חמישי כדאמר בפרק בתרא דנדה <span class=\"parenthesized\">(דף סה:)</span> דליכא כתובה דלא רמו בה תיגרא כ\"ש אם יעשה נשואין בליל ה' דאיכא למיחש שיטרד בנשואין וכתובה ולא יבעול:"
+  },
+  "Tosafot on Ketubot 2a:1:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-11T08:25:44.036Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Ketubot 2a:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאם היה לו טענת וכו'</strong> - ואם תאמר הא תינח אשת כהן או פחותה מבת שלש דליכא אלא חד ספיקא כדאמרינן בגמרא <span class=\"parenthesized\">(לקמן כתובות ט.)</span> אבל בשאר נשים דאיכא ספק ספיקא אמאי תנשא ליום ד' ואומר ר\"ת דלא פלוג רבנן בתקנתא ומשום אשת כהן ופחותה מג' תקנו בכל הנשים שינשאו ביום ד' ו<span class=\"rashi-quotation\">בקונטרס</span> פי' שמתוך כך יתברר הדבר ויבואו עדים שזינתה ברצון וקשה לפירושו דאמרינן בגמרא <span class=\"parenthesized\">(שם:)</span> אמר אביי אף אנן נמי תנינא דהאומר פתח פתוח מצאתי נאמן לאוסרה עליו בתולה נשאת כו' מאי לאו דקטעין פתח פתוח והשתא היכי מייתי ראיה לפ\"ה הא אע\"ג דאינו נאמן מכל מקום ישכים לבית דין שמתוך כך יצא הקול ויבואו עדים ויתברר הדבר וי\"ל דלא מייתי אביי ראיה לרבי אלעזר אלא שהוא בקי ומכיר אם הוא פתח פתוח דאם אינו בקי לא יצא הקול ולא יבא לידי בירור כי יאמרו שהוא טעה וסבור שמצא פתח פתוח ואינו כן ולא יחושו לדבריו ועי\"ל דגם לפ\"ה לא היו מתקנים שתהא ניסת ליום ד' משום שמא יתברר על ידי עדים אבל כיון דבאשת כהן ובפחותה מבת שלש דנאמן לאוסרה עליו תקנו שתהא ניסת ברביעי גם בשאר נשים תקנו משום שמתוך כך יצא הקול ויתברר הדבר על ידי עדים והשתא מייתי אביי שפיר ממתניתין דבאשת כהן ובפחותה מבת שלש נאמן לאוסרה עליו. ותימה דהכא משמע דמשום חששא דזנות תקנו שתהא ניסת ברביעי ובפ\"ב דגטין <span class=\"parenthesized\">(דף יז. ושם)</span> איכא מ\"ד דתקנו זמן בגטין משום פירי אבל משום שמא יחפה על בת אחותו לא חיישינן משום דזנות לא שכיח וי\"ל דהתם קאמר זנות דאתי לידי מיתה דהיינו בהתראה ובעדים לא שכיח אי נמי הכא שלא תשב עמו באיסור כל ימיו חשו אפילו לזנות אע\"ג דלא שכיח:"
+  },
+  "Tosafot on Ketubot 2a:2:1": {
+    "dependsOn": [
+      "Ketubot 2a:2",
+      "Ketubot 2a:4",
+      "Tosafot on Ketubot 2a:5:1",
+      "Tosafot on Ketubot 2a:7:1",
+      "Tosafot on Ketubot 2a:1:1",
+      "Tosafot on Ketubot 2a:1:2",
+      "Tosafot on Ketubot 2a:1:3",
+      "Tosafot on Ketubot 2a:1:4",
+      "Rashi on Ketubot 2a:2:1",
+      "Rashi on Ketubot 2a:2:2",
+      "Rashi on Ketubot 2a:2:3",
+      "Rashi on Ketubot 2a:4:1",
+      "Rashi on Ketubot 2a:4:2",
+      "Tosafot on Berakhot 2a:1:1",
+      "Tosafot on Berakhot 2a:2:1",
+      "Ketubot 2a:1",
+      "Tosafot on Ketubot 2a:2:1"
+    ],
+    "generatedAt": "2026-10-11T08:50:39.095Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Ketubot 2a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני מה אמרו בתולה נשאת ליום הרביעי לפי ששנינו כו'</strong> - אין שואל הטעם למה נשאת ברביעי דאם כן לא הוה משני מידי אלא הכי פירושו מפני מה אמרו כלומר מאי נפקא מינה שתיקנו שנשאת ברביעי ומשני נפקא מינה לענין מזונות ותרומה ורב יוסף קא מתמה מריה דאברהם דהא נפקותא מפרשה בהדיא שאם היה לו טענת בתולים והוא מניח נפקותא זו המפורשת ותופס נפקותא אחרינא:"
+  },
+  "Tosafot on Ketubot 2a:5:1": {
+    "dependsOn": [
+      "Ketubot 2a:5",
+      "Tosafot on Ketubot 2a:5:1",
+      "Tosafot on Ketubot 2a:5:2",
+      "Tosafot on Ketubot 2a:5:3",
+      "Rashi on Ketubot 2a:5:1"
+    ],
+    "generatedAt": "2026-10-11T09:16:06.004Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Ketubot 2a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אי אתמר הכי אתמר א\"ר יהודה אמר שמואל</strong> - ולא גרסינן רב יוסף דהא רב יוסף גופיה קאמר אלא אי איתמר:"
+  },
+  "Tosafot on Ketubot 2a:5:2": {
+    "dependsOn": [
+      "Ketubot 2a:5",
+      "Tosafot on Ketubot 2a:5:1",
+      "Tosafot on Ketubot 2a:5:2",
+      "Tosafot on Ketubot 2a:5:3",
+      "Tosafot on Ketubot 2a:1:1",
+      "Tosafot on Ketubot 2a:2:1"
+    ],
+    "generatedAt": "2026-10-11T09:26:12.106Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Ketubot 2a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני מה אמרו כו'</strong> - בניחותא גרסינן לה ולא בא להקשות אלא ותנשא באחד בשבת:"
+  },
+  "Tosafot on Ketubot 2a:5:3": {
+    "dependsOn": [
+      "Ketubot 5a:1",
+      "Ketubot 5a:2",
+      "Ketubot 5a:3",
+      "Ketubot 5a:4",
+      "Ketubot 5a:5",
+      "Ketubot 5a:6",
+      "Ketubot 5a:7",
+      "Ketubot 5a:8",
+      "Ketubot 5a:9",
+      "Ketubot 5a:10",
+      "Ketubot 5a:11",
+      "Ketubot 5a:12",
+      "Ketubot 5a:13",
+      "Ketubot 5a:14",
+      "Ketubot 2a:5",
+      "Tosafot on Ketubot 2a:5:1",
+      "Tosafot on Ketubot 2a:5:2",
+      "Tosafot on Ketubot 2a:1:1",
+      "Tosafot on Ketubot 2a:1:2",
+      "Tosafot on Ketubot 2a:2:1"
+    ],
+    "generatedAt": "2026-10-11T09:30:50.973Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Ketubot 2a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותנשא באחד בשבת</strong> - לא בעי לשנויי דנשאת ברביעי כדי שתבעל בחמישי משום ברכה שנאמרה בו לדגים כדאמרינן לקמן <span class=\"parenthesized\">(כתובות דף ה.)</span> ועוד למה לי טעם דשקדו תיפוק ליה משום ברכה ואומר ר\"י דטעם דברכה אינה אלא עצה טובה ולא מקרי עבריינא אבל משום שקדו מקרי עבריינא וכן משמע לקמן דאמר טעמא משום ברכה אבל משום איקרורי דעתא לא חיישינן ומאי נפקא מינה אלא ודאי דמשום ברכה לא מקרי עבריינא:"
+  },
+  "Tosafot on Ketubot 2a:7:1": {
+    "dependsOn": [
+      "Ketubot 2a:7",
+      "Ketubot 2a:8",
+      "Rashi on Ketubot 2a:7:1",
+      "Yevamot 41b:11",
+      "Yevamot 41b:12",
+      "Rashi on Yevamot 41b:12:1"
+    ],
+    "generatedAt": "2026-10-11T09:43:03.416Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Ketubot 2a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לפיכך חלה הוא אינו מעלה לה מזונות</strong> - קשה לר\"י דאמר בהחולץ <span class=\"parenthesized\">(שם דף מא: ושם)</span> עמד בדין וברח נזונת משל יבם ומפרש בירושלמי ברח ה\"ה חלה והכא אמרי' דחלה אין מעלה לה מזונות ואור\"י דהתם חלה או ברח לאחר שעמד בדין שכבר נתחייב לה במזונות אבל הכא בחלה קודם הגעת זמן ו<span class=\"rashi-quotation\">בקונט'</span> פי' שם דוקא ברח אבל חלה לא ואין נראה כדמשמע בירושלמי ולפירושו אין להקשות מאיכא דבעו לה מיבעיא אמאי לא פשיט לה מהתם דיש לומר דארוסתו אגידא ביה טפי מיבמתו כדאמרינן ביבמות בכמה דוכתי:"
+  }
+}
