@@ -497,53 +497,53 @@ describe("createToolFilterShims", () => {
 
 describe("buildClaudeArgs", () => {
   test("includes safe-mode and isolated configuration flags", () => {
-    const claudeArguments = buildClaudeArgs("Translate this text");
+    const claudeArgs = buildClaudeArgs("Translate this text");
 
-    expect(claudeArguments).toContain("--safe-mode");
-    expect(claudeArguments).toContain("--disable-slash-commands");
-    expect(claudeArguments).toContain("--strict-mcp-config");
-    expect(claudeArguments).toContain("--setting-sources");
-    expect(claudeArguments[claudeArguments.indexOf("--setting-sources") + 1]).toBe("project");
-    expect(claudeArguments).toContain("--allowedTools");
+    expect(claudeArgs).toContain("--safe-mode");
+    expect(claudeArgs).toContain("--disable-slash-commands");
+    expect(claudeArgs).toContain("--strict-mcp-config");
+    expect(claudeArgs).toContain("--setting-sources");
+    expect(claudeArgs[claudeArgs.indexOf("--setting-sources") + 1]).toBe("project");
+    expect(claudeArgs).toContain("--allowedTools");
   });
 
   test("includes session arguments when sessionId is provided", () => {
-    const newSessionArguments = buildClaudeArgs("Prompt", {sessionId: "session-123"});
-    expect(newSessionArguments).toContain("--session-id");
-    expect(newSessionArguments[newSessionArguments.indexOf("--session-id") + 1]).toBe("session-123");
+    const newSessionArgs = buildClaudeArgs("Prompt", {sessionId: "session-123"});
+    expect(newSessionArgs).toContain("--session-id");
+    expect(newSessionArgs[newSessionArgs.indexOf("--session-id") + 1]).toBe("session-123");
 
-    const resumeSessionArguments = buildClaudeArgs("Prompt", {sessionId: "session-123", resumeSession: true});
-    expect(resumeSessionArguments).toContain("--resume");
-    expect(resumeSessionArguments[resumeSessionArguments.indexOf("--resume") + 1]).toBe("session-123");
+    const resumeSessionArgs = buildClaudeArgs("Prompt", {sessionId: "session-123", resumeSession: true});
+    expect(resumeSessionArgs).toContain("--resume");
+    expect(resumeSessionArgs[resumeSessionArgs.indexOf("--resume") + 1]).toBe("session-123");
   });
 
   test("includes model argument when specified", () => {
-    const claudeArguments = buildClaudeArgs("Prompt", {model: "claude-sonnet-4-6"});
-    expect(claudeArguments).toContain("--model");
-    expect(claudeArguments[claudeArguments.indexOf("--model") + 1]).toBe("claude-sonnet-4-6");
+    const claudeArgs = buildClaudeArgs("Prompt", {model: "claude-sonnet-4-6"});
+    expect(claudeArgs).toContain("--model");
+    expect(claudeArgs[claudeArgs.indexOf("--model") + 1]).toBe("claude-sonnet-4-6");
   });
 });
 
 describe("buildAgyArgs", () => {
   test("includes disable-slash-commands and standard flags", () => {
-    const agyArguments = buildAgyArgs("Translate this text");
+    const args = buildAgyArgs("Translate this text");
 
-    expect(agyArguments).toContain("-p");
-    expect(agyArguments).toContain("--output-format");
-    expect(agyArguments).toContain("--disable-slash-commands");
-    expect(agyArguments).toContain("--dangerously-skip-permissions");
+    expect(args).toContain("-p");
+    expect(args).toContain("--output-format");
+    expect(args).toContain("--disable-slash-commands");
+    expect(args).toContain("--dangerously-skip-permissions");
   });
 
   test("includes conversation identifier when sessionId is provided", () => {
-    const agyArguments = buildAgyArgs("Prompt", {sessionId: "conversation-456"});
-    expect(agyArguments).toContain("--conversation");
-    expect(agyArguments[agyArguments.indexOf("--conversation") + 1]).toBe("conversation-456");
+    const args = buildAgyArgs("Prompt", {sessionId: "conversation-456"});
+    expect(args).toContain("--conversation");
+    expect(args[args.indexOf("--conversation") + 1]).toBe("conversation-456");
   });
 
   test("formats Claude models with high reasoning suffix if needed", () => {
-    const agyArguments = buildAgyArgs("Prompt", {model: "claude-3-7-sonnet"});
-    expect(agyArguments).toContain("--model");
-    expect(agyArguments[agyArguments.indexOf("--model") + 1]).toBe("claude-3-7-sonnet-high");
+    const args = buildAgyArgs("Prompt", {model: "claude-3-7-sonnet"});
+    expect(args).toContain("--model");
+    expect(args[args.indexOf("--model") + 1]).toBe("claude-3-7-sonnet-high");
   });
 });
 

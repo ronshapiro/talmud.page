@@ -512,35 +512,35 @@ process.on("exit", () => {
  * Builds CLI arguments for headless Antigravity execution with slash commands disabled.
  */
 export function buildAgyArgs(prompt: string, options: AgentOptions = {}): string[] {
-  const agyArguments = [
+  const args = [
     "-p", prompt,
     "--output-format", "stream-json",
     "--disable-slash-commands",
   ];
   if (options.sessionId) {
-    agyArguments.push("--conversation", options.sessionId);
+    args.push("--conversation", options.sessionId);
   }
   if (options.dangerouslySkipPermissions !== false) {
-    agyArguments.push("--dangerously-skip-permissions");
+    args.push("--dangerously-skip-permissions");
   }
   if (options.model) {
     const model = options.model.startsWith("claude-")
       && !/-(?:low|medium|high|xhigh|max)$/.test(options.model)
       ? `${options.model}-high`
       : options.model;
-    agyArguments.push("--model", model);
+    args.push("--model", model);
   }
   if (options.timeoutMs) {
-    agyArguments.push("--print-timeout", `${Math.ceil(options.timeoutMs / 1000)}s`);
+    args.push("--print-timeout", `${Math.ceil(options.timeoutMs / 1000)}s`);
   }
-  return agyArguments;
+  return args;
 }
 
 /**
  * Invokes the Antigravity CLI in headless mode (`agy -p`).
  */
 export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
-  const agyArguments = buildAgyArgs(prompt, options);
+  const args = buildAgyArgs(prompt, options);
 
   if (options.signal?.aborted) {
     throw new AgentError("Agent execution was cancelled", undefined, "agy", true);
@@ -575,7 +575,7 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
 
   let stdout: string;
   try {
-    ({stdout} = await execFileWithStreaming("agy", agyArguments, {
+    ({stdout} = await execFileWithStreaming("agy", args, {
       cwd: options.cwd,
       env: executionEnvironment,
       timeout: options.timeoutMs,
@@ -748,7 +748,7 @@ export const DEFAULT_CLAUDE_ALLOWED_TOOLS = ["Read", "Grep", "Glob"];
  * slash commands disabled, strict MCP config enforced, and user/local settings excluded.
  */
 export function buildClaudeArgs(prompt: string, options: AgentOptions = {}): string[] {
-  const claudeArguments = [
+  const claudeArgs = [
     "-p", prompt,
     "--output-format", "stream-json",
     "--verbose",
@@ -761,12 +761,12 @@ export function buildClaudeArgs(prompt: string, options: AgentOptions = {}): str
   ];
   if (options.sessionId) {
     if (options.resumeSession) {
-      claudeArguments.push("--resume", options.sessionId);
+      claudeArgs.push("--resume", options.sessionId);
     } else {
-      claudeArguments.push("--session-id", options.sessionId);
+      claudeArgs.push("--session-id", options.sessionId);
     }
   }
-  return claudeArguments;
+  return claudeArgs;
 }
 
 export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
@@ -778,7 +778,7 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
     console.log(`  [agent] Running claude${options.model ? ` (model: ${options.model})` : ""}...`);
   }
 
-  const claudeArguments = buildClaudeArgs(prompt, options);
+  const claudeArgs = buildClaudeArgs(prompt, options);
 
   let shims: ToolFilterShims | undefined;
   if (options.allowedTools && options.allowedTools.length > 0) {
@@ -804,7 +804,7 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
   try {
     ({stdout} = await execFileWithStreaming(
       "claude",
-      claudeArguments,
+      claudeArgs,
       {
         cwd: options.cwd,
         env: executionEnvironment,
