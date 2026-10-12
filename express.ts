@@ -702,7 +702,8 @@ app.post("/api/suggest-rsi-task", async (req, res) => {
 // /api/suggest-rsi-task above) and RSI_REVIEW_KEY to be set in the deployment environment.
 app.post("/api/rsi-review-decision", async (req, res) => {
   const {
-    page, ref, decision, hebrew, english, reason, key, knownPrNumber, reviewerIdentity, username,
+    page, ref, decision, hebrew, english, fallbackHebrew, fallbackEnglish,
+    reason, key, knownPrNumber, reviewerIdentity, username,
   } = req.body ?? {};
   if (!process.env.RSI_REVIEW_KEY) {
     res.send({error: 404, reason: "no rsi key"});
@@ -742,7 +743,19 @@ app.post("/api/rsi-review-decision", async (req, res) => {
 
   try {
     const result = await openReviewDecisionPr(
-      {page, ref, decision, hebrew, english, reason, knownPrNumber, reviewerIdentity, username},
+      {
+        page,
+        ref,
+        decision,
+        hebrew,
+        english,
+        fallbackHebrew,
+        fallbackEnglish,
+        reason,
+        knownPrNumber,
+        reviewerIdentity,
+        username,
+      },
       token,
     );
     res.status(200).send(result);
