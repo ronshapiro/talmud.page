@@ -1,19 +1,38 @@
 const refPieces = (ref: string): (string | number)[] => {
-  const splitPoint = ref.lastIndexOf(" ", ref.indexOf(":"));
-  const title = ref.substring(0, splitPoint);
-  const basicPieces = ref.substring(splitPoint + 1).split(":");
-  const result: (string | number)[] = [title];
-  for (const piece of basicPieces) {
-    const asInt = parseInt(piece);
-    if (asInt) {
-      result.push(asInt);
-    }
+  if (ref.includes(":")) {
+    const splitPoint = ref.lastIndexOf(" ", ref.indexOf(":"));
+    const title = ref.substring(0, splitPoint);
+    const basicPieces = ref.substring(splitPoint + 1).split(":");
+    const result: (string | number)[] = [title];
+    for (const piece of basicPieces) {
+      const parsedInteger = parseInt(piece, 10);
+      if (parsedInteger) {
+        result.push(parsedInteger);
+      }
 
-    if (!asInt || asInt.toString() !== piece) {
-      result.push(piece);
+      if (!parsedInteger || parsedInteger.toString() !== piece) {
+        result.push(piece);
+      }
     }
+    return result;
   }
-  return result;
+
+  const amudMatch = ref.match(/^(?:(.*)\s+)?(\d+[ab](?:-\d+[ab])?)$/);
+  if (amudMatch) {
+    const title = amudMatch[1] ?? "";
+    const amudPart = amudMatch[2];
+    const result: (string | number)[] = [title];
+    for (const amud of amudPart.split("-")) {
+      const parsedInteger = parseInt(amud, 10);
+      if (parsedInteger) {
+        result.push(parsedInteger);
+      }
+      result.push(amud);
+    }
+    return result;
+  }
+
+  return ["", ref];
 };
 
 type ComparisonType = string | number | (number | string)[];

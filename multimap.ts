@@ -25,10 +25,10 @@ export class ListMultimap<K, V> {
     return this.map;
   }
 
-  sortedCopy(): ListMultimap<K, V> {
+  sortedCopy(comparator?: (firstKey: K, secondKey: K) => number): ListMultimap<K, V> {
     const copy = new ListMultimap<K, V>();
     const keys = Array.from(this.map.keys());
-    keys.sort();
+    keys.sort(comparator);
     for (const key of keys) {
       copy.putAll(key, this.get(key));
     }

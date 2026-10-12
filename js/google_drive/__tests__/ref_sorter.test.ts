@@ -102,3 +102,62 @@ test("an original ref sorts before its own split pieces", () => {
     "Book Foo 2a:10:split:1",
   ]);
 });
+
+test("Talmud page refs without colons sort in Talmud page order", () => {
+  const refs = [
+    "Bava Kamma 10a",
+    "Bava Kamma 2a",
+    "Bava Kamma 2b",
+    "Bava Kamma 9b",
+    "Bava Kamma 100a",
+    "Bava Kamma 99b",
+    "Bava Kamma 10b",
+  ];
+  refs.sort(refSorter);
+  expect(refs).toEqual([
+    "Bava Kamma 2a",
+    "Bava Kamma 2b",
+    "Bava Kamma 9b",
+    "Bava Kamma 10a",
+    "Bava Kamma 10b",
+    "Bava Kamma 99b",
+    "Bava Kamma 100a",
+  ]);
+});
+
+test("Bare amud refs without book names sort in Talmud page order", () => {
+  const refs = [
+    "10a",
+    "2a",
+    "9a",
+    "9b",
+    "10b",
+  ];
+  refs.sort(refSorter);
+  expect(refs).toEqual([
+    "2a",
+    "9a",
+    "9b",
+    "10a",
+    "10b",
+  ]);
+});
+
+
+test("Talmud page ranges sort in Talmud page order", () => {
+  const refs = [
+    "Bava Kamma 10a-15b",
+    "Bava Kamma 2a-10a",
+    "Bava Kamma 2a-9b",
+    "Bava Kamma 2a",
+    "Bava Kamma 2b",
+  ];
+  refs.sort(refSorter);
+  expect(refs).toEqual([
+    "Bava Kamma 2a",
+    "Bava Kamma 2a-9b",
+    "Bava Kamma 2a-10a",
+    "Bava Kamma 2b",
+    "Bava Kamma 10a-15b",
+  ]);
+});

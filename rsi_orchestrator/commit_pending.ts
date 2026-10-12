@@ -95,11 +95,36 @@ export function formatPrTitle(task: string, backend: string, pages: string[]): s
   if (pages.length === 0) {
     return prefix;
   }
-  const mergedPages = Array.from(mergeRefs(pages).keys());
-  const pagesList = mergedPages.join(", ");
+  const mergedPages = Array.from(mergeRefs(pages, {requireContiguity: true}).keys());
+  const groupedByBook = new Map<string, string[]>();
+  for (const mergedPage of mergedPages) {
+    if (mergedPage.includes(" ")) {
+      const [bookName, pageRange] = splitOnBookName(mergedPage);
+      if (!groupedByBook.has(bookName)) {
+        groupedByBook.set(bookName, []);
+      }
+      groupedByBook.get(bookName)!.push(pageRange);
+    } else {
+      if (!groupedByBook.has("")) {
+        groupedByBook.set("", []);
+      }
+      groupedByBook.get("")!.push(mergedPage);
+    }
+  }
+
+  const formattedTractates: string[] = [];
+  for (const [bookName, ranges] of groupedByBook.entries()) {
+    if (bookName) {
+      formattedTractates.push(`${bookName} ${ranges.join(", ")}`);
+    } else {
+      formattedTractates.push(ranges.join(", "));
+    }
+  }
+
+  const pagesList = formattedTractates.join(", ");
   if (pagesList.length > 150) {
-    const truncated = mergedPages.slice(0, 5).join(", ");
-    return `${prefix}: ${truncated} (+${mergedPages.length - 5} more)`;
+    const truncated = formattedTractates.slice(0, 5).join(", ");
+    return `${prefix}: ${truncated} (+${formattedTractates.length - 5} more)`;
   }
   return `${prefix}: ${pagesList}`;
 }
