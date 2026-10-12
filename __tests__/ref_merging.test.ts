@@ -1,4 +1,4 @@
-import {mergeRefs} from "../ref_merging";
+import {isAmud, mergeRefs} from "../ref_merging";
 
 test("Merge weird refs", () => {
   const result = Array.from(
@@ -88,4 +88,11 @@ test("Merge multiple tractates with contiguous runs", () => {
       "Bava Kamma 2b",
     ]).keys());
   expect(result).toEqual(["Bava Kamma 2a-2b", "Berakhot 2a-2b"]);
+});
+
+test("isAmud identifies amud format correctly", () => {
+  expect(isAmud("2a")).toBe(true);
+  expect(isAmud("10b")).toBe(true);
+  expect(isAmud("2")).toBe(false);
+  expect(isAmud("Berakhot 2a")).toBe(false);
 });

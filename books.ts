@@ -19,6 +19,10 @@ function dafWithoutAlephOrBet(amud: string): string | undefined {
   return maybeNumber ? maybeNumber.toString() : undefined;
 }
 
+export function isAmud(amud: string): boolean {
+  return /^\d+[ab]$/.test(amud);
+}
+
 export function nextAmud(amud: string): string {
   const prefix = amud.slice(0, -1);
   if (amud.slice(-1) === "a") {

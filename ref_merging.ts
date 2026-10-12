@@ -1,6 +1,8 @@
-import {nextAmud} from "./books";
+import {isAmud, nextAmud} from "./books";
 import {refSorter} from "./js/google_drive/ref_sorter";
 import {ListMultimap} from "./multimap";
+
+export {isAmud};
 
 interface MergeOptions {
   requireContiguity?: boolean;
@@ -11,7 +13,7 @@ function isContiguousSuffix(
   currentSuffix: string,
   options?: MergeOptions,
 ): boolean {
-  if (/^\d+[ab]$/.test(previousSuffix) && /^\d+[ab]$/.test(currentSuffix)) {
+  if (isAmud(previousSuffix) && isAmud(currentSuffix)) {
     return currentSuffix === nextAmud(previousSuffix);
   }
   if (/^\d+$/.test(previousSuffix) && /^\d+$/.test(currentSuffix)) {
@@ -31,7 +33,7 @@ function refSuffixIndex(ref: string): number {
   if (splitPoint !== -1) {
     return splitPoint;
   }
-  if (/^\d+[ab]$/.test(ref) || /^\d+$/.test(ref)) {
+  if (isAmud(ref) || /^\d+$/.test(ref)) {
     return 0;
   }
   return -1;
