@@ -644,9 +644,9 @@ if (fs.existsSync("mailjet_api_key")) {
 }
 
 // Files a GitHub issue from OverflowMenu.tsx, labeled "rsi-suggestion", read periodically by
-// a scheduled triage run (see RecursiveSelfImprovingAgentPlan.md). Requires GITHUB_ISSUE_TOKEN to
-// be set in the deployment environment (a GitHub token with `repo` scope) — never commit that
-// token to app.yaml or any other tracked file.
+// a scheduled triage run (see RecursiveSelfImprovingAgentPlan.md). Requires
+// CREATE_ISSUE_ACCESS_TOKEN to be set in the deployment environment (a GitHub token with `repo`
+// scope).
 app.post("/api/suggest-rsi-task", async (req, res) => {
   const suggestion = (req.body?.suggestion as string | undefined)?.trim();
   if (!suggestion) {
@@ -654,9 +654,9 @@ app.post("/api/suggest-rsi-task", async (req, res) => {
     return;
   }
 
-  const token = process.env.GITHUB_ISSUE_TOKEN;
+  const token = process.env.CREATE_ISSUE_ACCESS_TOKEN;
   if (!token) {
-    console.error("GITHUB_ISSUE_TOKEN is not configured; dropping RSI suggestion", suggestion);
+    console.error("CREATE_ISSUE_ACCESS_TOKEN is not configured; dropping RSI suggestion", suggestion);
     res.sendStatus(503);
     return;
   }
@@ -698,23 +698,25 @@ app.post("/api/suggest-rsi-task", async (req, res) => {
 // Approve (optionally with edited text), or reject, a single precomputed/ai_additions/ entry
 // with status: "pending" (see RsiReviewControls.tsx). Pending content is visible to every reader
 // already — this endpoint is the only thing gated by RSI_REVIEW_KEY, since only the mutating
-// action needs a reviewer. Requires GITHUB_ISSUE_TOKEN (same token/scope as
+// action needs a reviewer. Requires CREATE_ISSUE_ACCESS_TOKEN (same token/scope as
 // /api/suggest-rsi-task above) and RSI_REVIEW_KEY to be set in the deployment environment.
 app.post("/api/rsi-review-decision", async (req, res) => {
   const {
     page, ref, decision, hebrew, english, reason, key, knownPrNumber, reviewerIdentity,
   } = req.body ?? {};
   if (!process.env.RSI_REVIEW_KEY) {
-    console.log("no rsi key");
-    res.sendStatus(404);
+    res.send({error: 404, reason: "no rsi key"});
     return;
   }
-  console.log("key", key.trim() === key);
-  console.log("process.env.RSI_REVIEW_KEY", process.env.RSI_REVIEW_KEY.trim() === process.env.RSI_REVIEW_KEY);
-  console.log("trim equals", key.trim() === process.env.RSI_REVIEW_KEY);
 
   if (!process.env.RSI_REVIEW_KEY || key.trim() !== process.env.RSI_REVIEW_KEY.trim()) {
-    res.sendStatus(403);
+    // res.sendStatus(403);
+    res.send({
+      error: 403,
+      key: key.trim() === key,
+      "process.env.RSI_REVIEW_KEY": process.env.RSI_REVIEW_KEY.trim() === process.env.RSI_REVIEW_KEY,
+      "trim equals": key.trim() === process.env.RSI_REVIEW_KEY,
+    });
     return;
   }
 
@@ -724,9 +726,10 @@ app.post("/api/rsi-review-decision", async (req, res) => {
     return;
   }
 
-  const token = process.env.GITHUB_ISSUE_TOKEN;
+  const token = process.env.CREATE_ISSUE_ACCESS_TOKEN;
   if (!token) {
-    req.logger.error("GITHUB_ISSUE_TOKEN is not configured; dropping RSI review decision", ref);
+    req.logger.error(
+      "CREATE_ISSUE_ACCESS_TOKEN is not configured; dropping RSI review decision", ref);
     res.sendStatus(503);
     return;
   }

@@ -248,7 +248,7 @@ data, not something to hand-tune indefinitely).
        the existing suggestion-box/triage_log pattern), read back by the next scheduled run as
        `generateWithSelfCritique`'s existing `priorFeedback` input — reuse, not a new mechanism.
   - Net effect: no new auth system, no Google Docs integration work at all for this path — it
-    reuses exactly the one server-side credential pattern (`GITHUB_ISSUE_TOKEN`-style token) already
+    reuses exactly the one server-side credential pattern (`CREATE_ISSUE_ACCESS_TOKEN`-style token) already
     proven in this codebase for "the deployed app needs to durably record something but has no DB."
     Works identically whether reviewing from the live site on a phone or from a desktop.
 
@@ -341,7 +341,7 @@ bounded first, to build up logged data before spending real budget on harder one
 rate-limit error handling — all validated by real runs), `precomputed/rsi_state/staleness.ts`,
 `precomputed/rsi_state/generation_record.ts` (schema extended, not replaced),
 `precomputed/rsi_state/triage_log.ts`, `js/promote_replaceable_ai_comments.ts`, and the
-`GITHUB_ISSUE_TOKEN`-based GitHub REST API call pattern already in `express.ts` (~line 645,
+`CREATE_ISSUE_ACCESS_TOKEN`-based GitHub REST API call pattern already in `express.ts` (~line 645,
 `/api/suggest-rsi-task`) — the direct template for the new `/api/rsi-review-decision` endpoint.
 
 **Rewritten:** `rsi_orchestrator/rashi_tosafot_translation.ts` (`generationPrompt()` rebuilt around

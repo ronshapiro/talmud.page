@@ -88,7 +88,7 @@ billing.
   (`rsiReviewerIdentityPreference`, prompted via a modal on first use), included in every
   PR/commit this flow creates for attribution — self-reported, not verified, since this codebase
   has no login system. **Requires two env vars set in the deployment environment**, neither
-  committed anywhere: `GITHUB_ISSUE_TOKEN` (already required above, `repo`-scoped) and
+  committed anywhere: `CREATE_ISSUE_ACCESS_TOKEN` (already required above, `repo`-scoped) and
   `RSI_REVIEW_KEY` (a secret string of your choosing — this is the value you put in the
   `?rsiReviewKey=` link). Segmentation-audit review (writing to
   `precomputed/segmentation_overrides.ts` instead of `ai_edits.ts`) is a deliberate fast-follow,
