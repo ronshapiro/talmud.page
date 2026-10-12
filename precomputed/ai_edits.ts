@@ -13,10 +13,6 @@ export interface Edit {
   model?: string;
 }
 
-export interface TheSchema {
-  status?: "pending";
-  approved?: string;
-}
 export const OUTPUT_DIR = "precomputed/ai_additions";
 
 export function aiEditsForPage(page: string): Record<string, Edit> | undefined {
