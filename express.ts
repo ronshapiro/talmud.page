@@ -704,10 +704,20 @@ app.post("/api/rsi-review-decision", async (req, res) => {
   const {
     page, ref, decision, hebrew, english, reason, key, knownPrNumber, reviewerIdentity,
   } = req.body ?? {};
-  if (!process.env.RSI_REVIEW_KEY || key !== process.env.RSI_REVIEW_KEY) {
+  if (!process.env.RSI_REVIEW_KEY) {
+    console.log("no rsi key");
+    res.sendStatus(404);
+    return;
+  }
+  console.log("key", key.trim() === key);
+  console.log("process.env.RSI_REVIEW_KEY", process.env.RSI_REVIEW_KEY.trim() === process.env.RSI_REVIEW_KEY);
+  console.log("trim equals", key.trim() === process.env.RSI_REVIEW_KEY);
+
+  if (!process.env.RSI_REVIEW_KEY || key.trim() !== process.env.RSI_REVIEW_KEY.trim()) {
     res.sendStatus(403);
     return;
   }
+
   if (typeof page !== "string" || typeof ref !== "string"
       || (decision !== "approve" && decision !== "reject")) {
     res.sendStatus(400);
