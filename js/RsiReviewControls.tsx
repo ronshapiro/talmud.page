@@ -84,20 +84,32 @@ export function RsiReviewControls({comment}: {comment: ApiComment}): React.React
         <textarea
           dir="rtl"
           value={hebrew}
-          onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setHebrew(e.target.value)} />
+          onChange={(event: React.ChangeEvent<HTMLTextAreaElement>) => {
+            setHebrew(event.target.value);
+          }} />
         <textarea
           dir="ltr"
           value={english}
-          onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setEnglish(e.target.value)} />
-        <button
-          type="button"
-          onClick={() => withIdentity(identity => {
-            setEditing(false);
-            postDecision(page, comment.ref, "approve", {hebrew, english}, identity);
-          })}>
-          Submit edit
-        </button>
-        <button type="button" onClick={() => setEditing(false)}>Cancel</button>
+          onChange={(event: React.ChangeEvent<HTMLTextAreaElement>) => {
+            setEnglish(event.target.value);
+          }} />
+        <div className="rsi-review-editing-actions">
+          <button
+            type="button"
+            className="rsi-review-button rsi-review-submit-edit"
+            onClick={() => withIdentity(identity => {
+              setEditing(false);
+              postDecision(page, comment.ref, "approve", {hebrew, english}, identity);
+            })}>
+            Submit edit
+          </button>
+          <button
+            type="button"
+            className="rsi-review-button rsi-review-cancel"
+            onClick={() => setEditing(false)}>
+            Cancel
+          </button>
+        </div>
       </div>
     );
   }
@@ -106,13 +118,20 @@ export function RsiReviewControls({comment}: {comment: ApiComment}): React.React
     <div className="rsi-review-controls">
       <button
         type="button"
+        className="rsi-review-button rsi-review-approve"
         onClick={() => withIdentity(
           identity => postDecision(page, comment.ref, "approve", {}, identity))}>
         Approve
       </button>
-      <button type="button" onClick={() => setEditing(true)}>Edit</button>
       <button
         type="button"
+        className="rsi-review-button rsi-review-edit"
+        onClick={() => setEditing(true)}>
+        Edit
+      </button>
+      <button
+        type="button"
+        className="rsi-review-button rsi-review-reject"
         onClick={() => withIdentity(identity => setModal({kind: "reject", identity}))}>
         Reject
       </button>
