@@ -84,15 +84,11 @@ export function RsiReviewControls({comment}: {comment: ApiComment}): React.React
         <textarea
           dir="rtl"
           value={hebrew}
-          onChange={(event: React.ChangeEvent<HTMLTextAreaElement>) => {
-            setHebrew(event.target.value);
-          }} />
+          onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setHebrew(e.target.value)} />
         <textarea
           dir="ltr"
           value={english}
-          onChange={(event: React.ChangeEvent<HTMLTextAreaElement>) => {
-            setEnglish(event.target.value);
-          }} />
+          onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setEnglish(e.target.value)} />
         <div className="rsi-review-editing-actions">
           <button
             type="button"
