@@ -15,16 +15,22 @@ interface FakePr {
   state: "open" | "closed";
 }
 
+interface FakeComment {
+  issueNumber: number;
+  body: string;
+}
+
 /**
  * A minimal in-memory stand-in for the slice of the GitHub REST API rsi_review_pr.ts calls —
- * tracks per-branch file content/shas and PRs, so multi-call tests (batching into one PR) can
- * assert on state that persists across calls the way the real API would.
+ * tracks per-branch file content/shas, PRs, and PR comments, so multi-call tests (batching into
+ * one PR) can assert on state that persists across calls the way the real API would.
  */
 class FakeGitHub {
   calls: Array<{url: string; init?: RequestInit}> = [];
   private branches: Record<string, Record<string, string>> = {base: {}};
   private shas: Record<string, Record<string, string>> = {base: {}};
   private prs: FakePr[] = [];
+  private comments: FakeComment[] = [];
   private nextPr = 1;
 
   constructor(basePages: Record<string, Record<string, unknown>> = {}) {
@@ -64,6 +70,16 @@ class FakeGitHub {
     return this.prs;
   }
 
+  allComments(): FakeComment[] {
+    return this.comments;
+  }
+
+  commentsForPr(pullRequestNumber: number): string[] {
+    return this.comments
+      .filter(comment => comment.issueNumber === pullRequestNumber)
+      .map(comment => comment.body);
+  }
+
   fetchImpl: typeof fetch = (async (url: string, init?: RequestInit) => {
     this.calls.push({url, init});
     const method = init?.method ?? "GET";
@@ -78,6 +94,13 @@ class FakeGitHub {
       const pr = this.prs.find(p => p.number === Number(singlePrMatch[1]))!;
       pr.body = (JSON.parse(init!.body as string) as {body: string}).body;
       return jsonResponse({});
+    }
+    const commentMatch = url.match(/\/issues\/(\d+)\/comments$/);
+    if (commentMatch && method === "POST") {
+      const issueNumber = Number(commentMatch[1]);
+      const {body} = JSON.parse(init!.body as string) as {body: string};
+      this.comments.push({issueNumber, body});
+      return jsonResponse({id: this.comments.length, body});
     }
     if (url.includes("/contents/") && method === "GET") {
       const [, query] = url.split("?ref=");
@@ -108,9 +131,9 @@ class FakeGitHub {
       return jsonResponse({});
     }
     if (url.endsWith("/pulls") && method === "POST") {
-      const body = JSON.parse(init!.body as string) as {head: string; body: string};
+      const body = JSON.parse(init!.body as string) as {head: string; body?: string};
       const number = this.nextPr++;
-      this.prs.push({number, head: {ref: body.head}, body: body.body, state: "open"});
+      this.prs.push({number, head: {ref: body.head}, body: body.body ?? "", state: "open"});
       return jsonResponse({
         html_url: `https://github.com/ronshapiro/talmud.page/pull/${number}`,
         number,
@@ -213,7 +236,7 @@ describe("openReviewDecisionPr", () => {
     }
   });
 
-  test("reject deletes the ref's entry and records the reason in the PR body", async () => {
+  test("reject deletes the ref's entry and records the reason in a PR comment", async () => {
     const github = new FakeGitHub({
       "Zevachim 2a": {
         "Zevachim 2a:1": {hebrew: "א", english: "a", status: "pending"},
@@ -231,10 +254,12 @@ describe("openReviewDecisionPr", () => {
     expect(github.contentOf(branch, "Zevachim 2a")).toEqual({
       "Zevachim 2a:2": {hebrew: "ג", english: "c"},
     });
-    expect(github.allPrs()[0].body).toContain("mistranslated");
+    expect(github.commentsForPr(1)).toEqual([
+      "Reject — RSI translation for `Zevachim 2a:1`: mistranslated",
+    ]);
   });
 
-  test("records the reviewer's self-reported identity in the PR body", async () => {
+  test("records the reviewer's self-reported identity in a PR comment", async () => {
     const github = new FakeGitHub({
       "Zevachim 2a": {"Zevachim 2a:1": {hebrew: "א", english: "a", status: "pending"}},
     });
@@ -245,7 +270,25 @@ describe("openReviewDecisionPr", () => {
       reviewerIdentity: "ron@example.com",
     }, "token", github.fetchImpl);
 
-    expect(github.allPrs()[0].body).toContain("ron@example.com");
+    expect(github.commentsForPr(1)).toEqual([
+      "Approve — RSI translation for `Zevachim 2a:1` by ron@example.com",
+    ]);
+  });
+
+  test("formats the PR comment as expected when approving with identity", async () => {
+    const github = new FakeGitHub({
+      "Berakhot 2a": {"Rashi on Berakhot 2a:5:1": {hebrew: "א", english: "a", status: "pending"}},
+    });
+    await openReviewDecisionPr({
+      page: "Berakhot 2a",
+      ref: "Rashi on Berakhot 2a:5:1",
+      decision: "approve",
+      reviewerIdentity: "test@gmail.com",
+    }, "token", github.fetchImpl);
+
+    expect(github.commentsForPr(1)).toEqual([
+      "Approve — RSI translation for `Rashi on Berakhot 2a:5:1` by test@gmail.com",
+    ]);
   });
 
   test("throws when the ref has no ai_edits.ts entry", async () => {
@@ -277,8 +320,10 @@ describe("openReviewDecisionPr", () => {
     expect(approveResult.prNumber).toEqual(rejectResult.prNumber);
     expect(github.contentOf(branch, "Zevachim 2a")["Zevachim 2a:1"])
       .toEqual({hebrew: "א", english: "a", approved: "unknown"});
-    expect(github.allPrs()[0].body).toContain("Reject RSI translation for Zevachim 2a:1");
-    expect(github.allPrs()[0].body).toContain("Approve RSI translation for Zevachim 2a:1");
+    expect(github.commentsForPr(approveResult.prNumber)).toEqual([
+      "Reject — RSI translation for `Zevachim 2a:1`",
+      "Approve — RSI translation for `Zevachim 2a:1`",
+    ]);
   });
 
   test("approve with edited text falls back to base if the entry was deleted on branch", async () => {
@@ -358,6 +403,10 @@ describe("openReviewDecisionPr", () => {
       const content = github.contentOf(branch, "Zevachim 2a");
       expect(content["Zevachim 2a:1"]).toEqual({hebrew: "א", english: "a", approved: "ron"});
       expect(content["Zevachim 2a:2"]).toEqual({hebrew: "ד", english: "d", approved: "ron"});
+      expect(github.commentsForPr(first.prNumber)).toEqual([
+        "Approve — RSI translation for `Zevachim 2a:1` by ron",
+        "Approve — RSI translation for `Zevachim 2a:2` by ron",
+      ]);
     });
 
     test("without a knownPrNumber, a new PR opens even while another is open", async () => {
