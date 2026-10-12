@@ -21,7 +21,13 @@ async function postDecision(
   page: string,
   ref: string,
   decision: Decision,
-  extra: {hebrew?: string; english?: string; reason?: string},
+  extra: {
+    hebrew?: string;
+    english?: string;
+    fallbackHebrew?: string;
+    fallbackEnglish?: string;
+    reason?: string;
+  },
   reviewerIdentity: string,
 ): Promise<void> {
   const label = decision === "approve" ? "Approved" : "Rejected";
@@ -78,6 +84,9 @@ export function RsiReviewControls({comment}: {comment: ApiComment}): React.React
     setModal({kind: "identity", onIdentity});
   };
 
+  const fallbackHebrew = flatten(comment.he) || undefined;
+  const fallbackEnglish = flatten(comment.en) || undefined;
+
   if (editing) {
     return (
       <div className="rsi-review-controls rsi-review-editing">
@@ -93,7 +102,12 @@ export function RsiReviewControls({comment}: {comment: ApiComment}): React.React
           type="button"
           onClick={() => withIdentity(identity => {
             setEditing(false);
-            postDecision(page, comment.ref, "approve", {hebrew, english}, identity);
+            postDecision(page, comment.ref, "approve", {
+              hebrew,
+              english,
+              fallbackHebrew,
+              fallbackEnglish,
+            }, identity);
           })}>
           Submit edit
         </button>
@@ -107,7 +121,10 @@ export function RsiReviewControls({comment}: {comment: ApiComment}): React.React
       <button
         type="button"
         onClick={() => withIdentity(
-          identity => postDecision(page, comment.ref, "approve", {}, identity))}>
+          identity => postDecision(page, comment.ref, "approve", {
+            fallbackHebrew,
+            fallbackEnglish,
+          }, identity))}>
         Approve
       </button>
       <button type="button" onClick={() => setEditing(true)}>Edit</button>
