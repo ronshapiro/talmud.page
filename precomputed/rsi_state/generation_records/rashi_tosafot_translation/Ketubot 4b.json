@@ -1,0 +1,545 @@
+{
+  "Rashi on Ketubot 4b:1:1": {
+    "dependsOn": [
+      "Ketubot 4b:1",
+      "Ketubot 4a:10",
+      "Ketubot 4a:11",
+      "Ketubot 4a:12",
+      "Ketubot 4a:7",
+      "Ketubot 4a:8",
+      "Ketubot 4a:9",
+      "Rashi on Ketubot 4b:2:1",
+      "Rashi on Ketubot 4b:3:1",
+      "Rashi on Ketubot 4b:4:1",
+      "Rashi on Ketubot 4a:7:1",
+      "Rashi on Ketubot 4a:8:1",
+      "Rashi on Ketubot 4a:9:1",
+      "Rashi on Ketubot 2a:1:1",
+      "Rashi on Ketubot 2a:2:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Ketubot 3b:1:1",
+      "Rashi on Ketubot 3b:2:1",
+      "Rashi on Ketubot 3b:3:1",
+      "Rashi on Ketubot 3b:4:1",
+      "Rashi on Ketubot 4a:1:1",
+      "Rashi on Ketubot 4a:2:1",
+      "Rashi on Ketubot 4a:3:1",
+      "Rashi on Ketubot 4a:4:1",
+      "Rashi on Ketubot 4a:5:1"
+    ],
+    "generatedAt": "2026-10-11T16:01:19.042Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 4b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ק כו'</strong> - כלומר כי קאמר וכן אהוא ישן בין האנשים והיא ישנה בין הנשים קאמר ולעולם הך בשלא בעל קאי:"
+  },
+  "Rashi on Ketubot 4b:2:1": {
+    "dependsOn": [
+      "Ketubot 4b:2"
+    ],
+    "generatedAt": "2026-10-11T16:05:08.723Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 4b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קילא ליה</strong> - לעבור עליה מנדה דאאבילות לא מהימנת ליה ואנדה מהימנת ליה:"
+  },
+  "Rashi on Ketubot 4b:3:1": {
+    "dependsOn": [
+      "Ketubot 4b:3"
+    ],
+    "generatedAt": "2026-10-11T16:13:53.548Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 4b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מלאכות שהאשה עושה לבעלה</strong> - לקמן תני להו בפרק אע\"פ:"
+  },
+  "Rashi on Ketubot 4b:3:2": {
+    "dependsOn": [
+      "Rashi on Ketubot 4b:3:1",
+      "Rashi on Ketubot 4b:3:2",
+      "Rashi on Ketubot 4b:3:3",
+      "Rashi on Ketubot 4b:3:4",
+      "Ketubot 4b:3"
+    ],
+    "generatedAt": "2026-10-11T16:17:06.261Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 4b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חוץ ממזיגת הכוס</strong> - להושיט לו:"
+  },
+  "Rashi on Ketubot 4b:3:3": {
+    "dependsOn": [
+      "Ketubot 4b:3",
+      "Rashi on Ketubot 4b:3:1",
+      "Rashi on Ketubot 4b:3:2",
+      "Rashi on Ketubot 4b:3:3",
+      "Rashi on Ketubot 4b:3:4"
+    ],
+    "generatedAt": "2026-10-11T16:18:41.754Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 4b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והצעת המטה והרחצת פניו כו'</strong> - שדרך קירוב וחיבה הן ובאין לידי הרגל דבר:"
+  },
+  "Rashi on Ketubot 4b:3:4": {
+    "dependsOn": [
+      "Rashi on Ketubot 4b:3:1",
+      "Rashi on Ketubot 4b:3:2",
+      "Rashi on Ketubot 4b:3:3",
+      "Rashi on Ketubot 4b:3:5"
+    ],
+    "generatedAt": "2026-10-11T16:21:35.959Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 4b:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין אדם רשאי לכוף את אשתו</strong> - בימי אבלה כשמת אביה או אמה:"
+  },
+  "Rashi on Ketubot 4b:3:5": {
+    "dependsOn": [
+      "Ketubot 4b:3",
+      "Rashi on Ketubot 4b:3:4",
+      "Rashi on Ketubot 4b:3:5",
+      "Rashi on Ketubot 4b:1:1",
+      "Rashi on Ketubot 4b:2:1",
+      "Rashi on Ketubot 4b:3:1",
+      "Rashi on Ketubot 4b:3:2",
+      "Rashi on Ketubot 4b:3:3",
+      "Rashi on Ketubot 2a:1:1",
+      "Rashi on Ketubot 2a:1:2",
+      "Rashi on Ketubot 3a:1:1"
+    ],
+    "generatedAt": "2026-10-11T16:26:02.943Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 4b:3:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פוקסת</strong> - מעברת שרק על פניה:"
+  },
+  "Rashi on Ketubot 4b:3:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-11T16:30:31.534Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 4b:3:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מוזגת לו</strong> - ולא חיישינן להרגל דבר אלמא אבילות חמירא ליה:"
+  },
+  "Rashi on Ketubot 4b:4:1": {
+    "dependsOn": [
+      "Ketubot 4b:4",
+      "Rashi on Ketubot 4b:2:1",
+      "Rashi on Ketubot 4b:3:1",
+      "Rashi on Ketubot 4b:3:2",
+      "Rashi on Ketubot 4b:3:3",
+      "Rashi on Ketubot 4b:3:4",
+      "Rashi on Ketubot 4b:3:5",
+      "Rashi on Ketubot 4b:3:6",
+      "Rashi on Ketubot 4a:2:1",
+      "Rashi on Ketubot 4a:3:1",
+      "Rashi on Ketubot 4a:5:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Ketubot 3b:1:1",
+      "Rashi on Ketubot 3b:2:1",
+      "Rashi on Ketubot 3b:4:1",
+      "Rashi on Ketubot 3b:8:1",
+      "Rashi on Ketubot 4a:1:1",
+      "Rashi on Ketubot 4a:1:2",
+      "Rashi on Ketubot 4a:1:3"
+    ],
+    "generatedAt": "2026-10-11T16:41:35.959Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 4b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כאן באבילות דידיה</strong> - לעולם אבילות קילא ליה מנדה והני מתניתא הכי מתרצן הא דקתני לעיל הוא ישן בין האנשים כו' באבילות דידיה והך דקתני מוזגת לו כו' באבילות דידה קאי דקתני אין אדם רשאי לכוף כו' אלמא באבילות דידה קיימינן שאינה רוצה לכחול ולפקוס והיינו טעמא דמוזגת דאם יתגבר יצרו עליו כיון דאבילות דידה הוא אינה שומעת לו:"
+  },
+  "Rashi on Ketubot 4b:5:1": {
+    "dependsOn": [
+      "Ketubot 4b:4",
+      "Ketubot 4b:5",
+      "Rashi on Ketubot 4b:5:2",
+      "Rashi on Ketubot 4b:4:1",
+      "Rashi on Ketubot 4b:2:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Ketubot 3b:8:1",
+      "Rashi on Ketubot 3b:1:1",
+      "Rashi on Ketubot 3a:1:1",
+      "Rashi on Ketubot 4a:1:1",
+      "Rashi on Berakhot 2a:9:1",
+      "Rashi on Berakhot 2a:8:1",
+      "Rashi on Berakhot 2a:11:1",
+      "Rashi on Berakhot 3a:1:1",
+      "Rashi on Ketubot 4b:3:1",
+      "Rashi on Ketubot 4b:3:2",
+      "Rashi on Ketubot 4b:7:1",
+      "Rashi on Ketubot 4b:7:2",
+      "Rashi on Berakhot 2a:4:1",
+      "Rashi on Berakhot 2a:5:1",
+      "Rashi on Berakhot 2a:6:1",
+      "Rashi on Berakhot 2a:7:1",
+      "Rashi on Berakhot 3a:3:1",
+      "Rashi on Berakhot 3b:1:1",
+      "Rashi on Berakhot 4a:2:1",
+      "Rashi on Berakhot 4b:3:1",
+      "Rashi on Ketubot 2a:1:1",
+      "Rashi on Ketubot 2a:2:1",
+      "Rashi on Ketubot 2a:3:1",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 2b:3:1",
+      "Rashi on Berakhot 2b:4:1",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 4a:1:1",
+      "Rashi on Ketubot 2b:1:1",
+      "Rashi on Ketubot 2b:2:1",
+      "Rashi on Ketubot 2b:3:1",
+      "Rashi on Berakhot 2a:13:1",
+      "Rashi on Berakhot 2a:14:1",
+      "Rashi on Berakhot 2b:5:1",
+      "Rashi on Berakhot 2b:6:1",
+      "Rashi on Berakhot 3a:4:1",
+      "Rashi on Berakhot 3a:5:1",
+      "Rashi on Berakhot 3a:6:1",
+      "Rashi on Berakhot 3b:4:1",
+      "Rashi on Berakhot 3b:5:1",
+      "Rashi on Berakhot 3b:6:1"
+    ],
+    "generatedAt": "2026-10-11T16:50:45.172Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 4b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא אביו של חתן כו'</strong> - אלמא באבילות דידה נמי אחמיר תנא דלעיל:"
+  },
+  "Rashi on Ketubot 4b:5:2": {
+    "dependsOn": [
+      "Ketubot 4b:5",
+      "Rashi on Ketubot 4b:5:1",
+      "Rashi on Ketubot 4b:5:2",
+      "Ketubot 3b:15",
+      "Ketubot 4a:1",
+      "Ketubot 4a:2",
+      "Rashi on Ketubot 4b:4:1"
+    ],
+    "generatedAt": "2026-10-11T16:56:55.332Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 4b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי קתני</strong> - אמה של כלה אשארא אמכניסים המת לחדר אבל הוא ישן בין האנשים אאבילות דחתן קאי:"
+  },
+  "Rashi on Ketubot 4b:6:1": {
+    "dependsOn": [
+      "Ketubot 4b:6",
+      "Ketubot 4b:3",
+      "Ketubot 4b:4",
+      "Ketubot 4b:5",
+      "Ketubot 4b:7",
+      "Rashi on Ketubot 4b:4:1",
+      "Rashi on Ketubot 4b:5:1",
+      "Rashi on Ketubot 4b:5:2",
+      "Rashi on Ketubot 4a:1:1",
+      "Ketubot 4a:1",
+      "Rashi on Ketubot 2a:1:1",
+      "Rashi on Ketubot 2a:1:2",
+      "Rashi on Ketubot 3a:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Ketubot 4a:1:2",
+      "Rashi on Ketubot 4a:1:3",
+      "Rashi on Ketubot 3b:1:1",
+      "Rashi on Ketubot 3b:2:1"
+    ],
+    "generatedAt": "2026-10-11T17:02:45.026Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 4b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונוהגת עמו אבילות</strong> - אלמא מדלא קתני באבילות דידיה הוא ישן בין האנשים שמע מינה חמיר ליה ולא שני לן:"
+  },
+  "Rashi on Ketubot 4b:7:1": {
+    "dependsOn": [
+      "Rashi on Ketubot 4b:7:1",
+      "Ketubot 4b:7",
+      "Rashi on Ketubot 4b:7:2",
+      "Rashi on Ketubot 4b:7:3",
+      "Rashi on Ketubot 4b:7:4",
+      "Rashi on Ketubot 4b:6:1",
+      "Rashi on Ketubot 4b:5:1",
+      "Rashi on Ketubot 4b:5:2",
+      "Rashi on Ketubot 3b:8:1",
+      "Rashi on Ketubot 4a:1:1",
+      "Rashi on Ketubot 4a:2:1",
+      "Rashi on Ketubot 4a:3:1",
+      "Rashi on Ketubot 4a:5:1",
+      "Rashi on Ketubot 4b:4:1",
+      "Rashi on Ketubot 4b:2:1",
+      "Rashi on Ketubot 4b:1:1",
+      "Ritva on Ketubot 4b:7:1",
+      "Rashba on Ketubot 4b:7:1",
+      "Versions on Ketubot 4b:7:1",
+      "Steinsaltz In-Depth on Ketubot 4b:7:1",
+      "Steinsaltz on Ketubot 4b:7:1",
+      "Rashi on Ketubot 2a:1:1",
+      "Rashi on Ketubot 2b:1:1",
+      "Rashi on Ketubot 3a:1:1",
+      "Rashi on Ketubot 3b:1:1",
+      "Rashi on Ketubot 2a:2:1",
+      "Rashi on Ketubot 2a:3:1",
+      "Rashi on Ketubot 3a:2:1",
+      "Rashi on Ketubot 3a:3:1",
+      "Rashi on Ketubot 3a:4:1",
+      "Rashi on Ketubot 3a:10:1",
+      "Rashi on Ketubot 3a:11:1",
+      "Rashi on Ketubot 3a:12:1",
+      "Rashi on Ketubot 3a:13:1",
+      "Rashi on Ketubot 4b:3:1",
+      "Rashi on Ketubot 4b:3:2",
+      "Rashi on Ketubot 4b:3:3",
+      "Rashi on Ketubot 4b:3:4",
+      "Rashi on Ketubot 4b:3:5",
+      "Rashi on Ketubot 4b:3:6",
+      "Rashi on Ketubot 4b:9:1",
+      "Rashi on Ketubot 4b:9:2",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1"
+    ],
+    "generatedAt": "2026-10-11T17:14:48.770Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 4b:7:1"
+    ],
+    "sourceText": "ה\"ג תני באבילות דידיה הוא ישן כו':"
+  },
+  "Rashi on Ketubot 4b:7:2": {
+    "dependsOn": [
+      "Ketubot 4b:7",
+      "Rashi on Ketubot 4b:7:1",
+      "Rashi on Ketubot 4b:7:2",
+      "Rashi on Ketubot 4b:7:3",
+      "Rashi on Ketubot 4b:7:4",
+      "Rashi on Ketubot 4b:1:1",
+      "Rashi on Ketubot 4b:2:1",
+      "Rashi on Ketubot 4b:4:1",
+      "Rashi on Ketubot 4b:5:1"
+    ],
+    "generatedAt": "2026-10-11T17:20:44.467Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 4b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכי גרסינן והא עמו קתני מאי לאו עמו במטה</strong> - אלמא אאבילות דידיה נמי מהימן:"
+  },
+  "Rashi on Ketubot 4b:7:3": {
+    "dependsOn": [
+      "Ketubot 4b:7",
+      "Rashi on Ketubot 4b:7:1",
+      "Rashi on Ketubot 4b:7:2",
+      "Rashi on Ketubot 4b:7:3",
+      "Rashi on Ketubot 4b:7:4",
+      "Rashi on Ketubot 4b:3:1",
+      "Rashi on Ketubot 4b:3:2",
+      "Rashi on Ketubot 4b:5:1",
+      "Rashi on Ketubot 4b:6:1",
+      "Rashi on Ketubot 2a:1:1",
+      "Rashi on Ketubot 2a:1:2",
+      "Rashi on Ketubot 4a:2:1",
+      "Rashi on Ketubot 4a:2:2",
+      "Rashi on Ketubot 3b:1:1",
+      "Rashi on Ketubot 3b:2:1",
+      "Rashi on Ketubot 3b:3:1",
+      "Rashi on Ketubot 3b:4:1",
+      "Rashi on Ketubot 3b:5:1",
+      "Rashi on Ketubot 4b:1:1",
+      "Rashi on Ketubot 4b:2:1",
+      "Rashi on Ketubot 4b:4:1",
+      "Rashi on Ketubot 4b:8:1",
+      "Rashi on Ketubot 4b:9:1",
+      "Rashi on Ketubot 4b:9:2"
+    ],
+    "generatedAt": "2026-10-11T17:26:13.097Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 4b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא עמו בבית</strong> - וטעמא לאו משום דמהימן נקט לה אלא לאשמועינן דאין אבילותו מוטל עליה אלא בפניו משום כבודו וכן הוא אין אבילותה מוטל עליו אלא לפניה ולכבודה:"
+  },
+  "Rashi on Ketubot 4b:7:4": {
+    "dependsOn": [
+      "Ketubot 4b:7",
+      "Rashi on Ketubot 4b:7:1",
+      "Rashi on Ketubot 4b:7:2",
+      "Rashi on Ketubot 4b:7:3",
+      "Rashi on Ketubot 4b:7:4",
+      "Rashi on Ketubot 4b:5:1",
+      "Rashi on Ketubot 4b:5:2",
+      "Rashi on Ketubot 4b:6:1",
+      "Rashi on Ketubot 4b:9:1",
+      "Rashi on Ketubot 4b:9:2",
+      "Rashi on Ketubot 4b:3:1",
+      "Rashi on Ketubot 4b:3:2",
+      "Rashi on Ketubot 4b:3:3",
+      "Rashi on Ketubot 4b:3:4",
+      "Rashi on Ketubot 4b:3:5",
+      "Rashi on Ketubot 4b:3:6",
+      "Rashi on Ketubot 3b:1:1",
+      "Rashi on Ketubot 3b:2:1",
+      "Rashi on Ketubot 3b:3:1",
+      "Rashi on Ketubot 3b:4:1",
+      "Rashi on Ketubot 4a:1:1",
+      "Rashi on Ketubot 3b:5:1",
+      "Rashi on Ketubot 4a:2:1",
+      "Rashi on Ketubot 4a:3:1",
+      "Rashi on Ketubot 4a:4:1",
+      "Rashi on Ketubot 2a:1:1",
+      "Rashi on Ketubot 2a:1:2",
+      "Rashi on Ketubot 2a:2:1",
+      "Rashi on Ketubot 2b:1:1"
+    ],
+    "generatedAt": "2026-10-11T17:29:12.745Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 4b:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדאמר ליה רב לחייא בריה</strong> - כשמת חמיו באפה נהוג אבילותא כו':"
+  },
+  "Rashi on Ketubot 4b:9:1": {
+    "dependsOn": [
+      "Ketubot 4b:9",
+      "Rashi on Ketubot 4b:9:1",
+      "Rashi on Ketubot 4b:9:2",
+      "Rashi on Ketubot 3b:4:1",
+      "Rashi on Ketubot 2a:1:1"
+    ],
+    "generatedAt": "2026-10-11T17:30:59.410Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 4b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פלוגתא דרבי אליעזר ורבי יהושע</strong> - במועד קטן:"
+  },
+  "Rashi on Ketubot 4b:9:2": {
+    "dependsOn": [
+      "Ketubot 4b:9",
+      "Rashi on Ketubot 4b:9:1",
+      "Rashi on Ketubot 4b:9:2"
+    ],
+    "generatedAt": "2026-10-11T18:03:46.416Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 4b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גולל</strong> - זהו כסוי של ארון המת:"
+  },
+  "Tosafot on Ketubot 4b:3:1": {
+    "dependsOn": [
+      "Tosafot on Ketubot 4b:3:2",
+      "Tosafot on Ketubot 4b:6:1",
+      "Tosafot on Ketubot 3b:1:1",
+      "Tosafot on Ketubot 4a:1:1",
+      "Ketubot 4b:3",
+      "Rashi on Ketubot 4b:3:1",
+      "Rashi on Ketubot 4b:3:2",
+      "Rashi on Ketubot 4b:3:3",
+      "Rashi on Ketubot 4b:3:4",
+      "Rashi on Ketubot 4b:1:1",
+      "Tosafot on Ketubot 2a:1:1"
+    ],
+    "generatedAt": "2026-10-11T16:33:54.730Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Ketubot 4b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והצעת המטה</strong> - נראה לר\"י דהצעת המטה דהכא היינו פריסת סדינין שהוא דבר של חיבה אבל הצעת כרים וכסתות שאינן דברים של חיבה שרי לנדה והביא ראיה מדתנן בפ' אע\"פ <span class=\"parenthesized\">(לקמן כתובות נט:)</span> הכניסה לו ג' שפחות אינה מצעת לו המטה ואינה עושה בצמר ארבע יושבת בקתדרא ואמרינן בגמרא אע\"פ שאמרו ד' יושבת בקתדרא אבל מוזגת לו כוס ומצעת לו המטה ומרחצת לו פניו ידיו ורגליו ו<span class=\"rashi-quotation\">פי' בקונטרס</span> דהא דתנא ג' אינה מצעת לו המטה היינו הצעת כרים וכסתות דהוי דבר שיש טורח אבל מצעת לו המטה היינו פריסת סדין ולבדין דמילי דחיבה נינהו שתחבב עליו ואין בו טורח וההיא הצעה של חיבה נראה דדוקא אסור וכן משמע דמזכירה בהדי מזיגת כוס והרחצת פניו ידיו ורגליו כי התם מיהו לספרים דל\"ג במשנה אלא ואינה מצעת המטה ול\"ג לו ובגמרא גרסינן לו אין ראיה משם שיהו תרי גווני הצעה דמתני' איירי בהצעת שאר מטות ובגמרא איירי בהצעת מטה לבעלה לבדו:"
+  },
+  "Tosafot on Ketubot 4b:3:2": {
+    "dependsOn": [
+      "Ketubot 4b:3",
+      "Rashi on Ketubot 4b:3:1",
+      "Rashi on Ketubot 4b:3:2",
+      "Rashi on Ketubot 4b:3:3",
+      "Rashi on Ketubot 4b:3:4",
+      "Rashi on Ketubot 4b:3:5",
+      "Rashi on Ketubot 4b:3:6",
+      "Tosafot on Ketubot 4b:3:1",
+      "Tosafot on Ketubot 4b:3:2",
+      "Shabbat 94b:11",
+      "Shabbat 94b:12",
+      "Shabbat 95a:1",
+      "Shabbat 95a:2",
+      "Ketubot 17a:2",
+      "Ketubot 17a:3",
+      "Ketubot 4b:4",
+      "Ketubot 4b:6",
+      "Ketubot 4b:7",
+      "Ketubot 4b:8",
+      "Tosafot on Ketubot 4b:6:1",
+      "Tosafot on Ketubot 4b:9:1"
+    ],
+    "generatedAt": "2026-10-11T16:37:00.892Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Ketubot 4b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פוקסת</strong> - פ\"ה מעברת שרק על פניה ואין נראה דאמר בפ\"ב לקמן <span class=\"parenthesized\">(כתובות דף יז.)</span> לא שרק ולא פירכוס משמע דתרי מילי נינהו דפוקסת דהכא היינו פירכוס כדאמרי' בסמוך כי קתני אכיחול ואפירכוס ובשילהי המצניע <span class=\"parenthesized\">(שבת צה.)</span> קתני פוקסת ומעברת שרק על פניה ולקמן בפ\"ב פ\"ה פירכוס קליעת שער וקשה לר\"י דבשילהי המצניע <span class=\"parenthesized\">(שבת צד: ושקתני גודלת ופוקסת אלא נראה דאחד מתיקוני נשים הוא:"
+  },
+  "Tosafot on Ketubot 4b:6:1": {
+    "dependsOn": [
+      "Ketubot 4b:5",
+      "Ketubot 4b:6",
+      "Ketubot 4b:7",
+      "Ketubot 4b:3",
+      "Ketubot 4b:4",
+      "Ketubot 4a:1",
+      "Ketubot 4a:5"
+    ],
+    "generatedAt": "2026-10-11T17:07:28.290Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Ketubot 4b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומי שאני בין אבילות דידיה לאבילות דידה</strong> - תימה דבלאו מילתא דרב יוסף הוי מצי למיפרך ברייתות אהדדי וי\"ל דאי לאו הוה מילתא דרב יוסף הוה מפלגינן בין שעת חופה לשלא בשעת חופה דבשעת חופה יצרו תוקפו אע\"ג דבעל אבל לרב יוסף לא מצי לפלוגי בהכי דהא בבעל חשיב ליה כאשתו ישנה דאפי' בשעת חופה אשתו ישנה עמו בנדה ובאבילות דידה ואפילו הכי באבילות דידיה קתני הוא ישן בין האנשים ולהכי פריך שפיר ולרשב\"א נראה דאי לאו דרב יוסף לא הוה קשה מידי דעמו ועמה דקתני בברייתא לאו עמו במטה אלא עמה בבית אבל לרב יוסף דבאבילות דידה אשתו ישנה עמו א\"כ הא דקתני נוהג עמה אבילות היינו עמה במטה דומיא דהכא באבילות דידיה הוי עמו במטה והא דמשני תני באבילות דידיה הוא ישן אינו מגיה הברייתא אלא מפרש דעמו דקתני בברייתא דהכי הוא ופריך והא עמו קתני מאי לאו עמו במטה פי' דומיא דעמה ומשני לא עמו בבית כדא\"ל רב כו':"
+  },
+  "Tosafot on Ketubot 4b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-11T18:18:17.008Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Ketubot 4b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד שיסתם הגולל</strong> - בכמה מקומות פי' רש\"י דגולל הוי כיסוי ארון ודופק היינו קרשים שבצידי הארון ונקרא דופק על שם שהגולל דופק עליו וכעין זה פי' בערוך וקשה לר\"ת דאמר בפרק מי שמתו <span class=\"parenthesized\">(ברכות יט: ושם)</span> מדלגין היינו על גבי ארונות ואיך היו מדלגין והלא הגולל והדופק מטמא באהל כדאמרינן בהעור והרוטב <span class=\"parenthesized\">(חולין קכו: ושם)</span> ועוד דבפרק בהמה המקשה <span class=\"parenthesized\">(חולין עב:)</span> דריש על פני השדה לרבות גולל ודופק ולפ\"ה הלא ארון אינו על פני השדה ואומר ה\"ר דוד מנצינבורק כי לפרש\"י [דריש] לרבות גולל ודופק שפירש דלא מרבינן מעל פני השדה דמטמא אלא כשפירש אבל בעוד שהוא טמון בטל אגב קרקע ולא מטמא באוהל והשתא אתי נמי שפיר ההיא דמדלגים היינו על גבי ארונות ועוד י\"מ אע\"ג דגולל מטמא באהל מ\"מ יכולין לדלג ולטמאות עצמם בגולל דתניא במס' שמחות <span class=\"parenthesized\">(פ\"ד)</span> כל טומאה שאין נזיר מגלח עליה אין כהן מוזהר עליה ואר\"ת דמשובשת היא דהא רביעית דם אין נזיר מגלח עליה כדתנן בנזיר <span class=\"parenthesized\">(דף נד. ושם)</span> וכהן מוזהר עליה ועוד הקשה דתניא בעירובין <span class=\"parenthesized\">(דף טו:)</span> כל דבר שיש בו רוח חיים אין עושין ממנו לא גולל לקבר כו' ולפ\"ה וכי דרך לעשות כסוי ארון מבעלי חיים ויש לומר אע\"ג דאין דרך לעשות כסוי ארון מבעלי חיים מכל מקום כמה דברים אשכחן דלא שכיח ומיירי בהן הש\"ס לדרוש ולקבל שכר כדאמרינן בפרק המקשה <span class=\"parenthesized\">(חולין ע.)</span> בלעתו חולדה והוציאתו והכניסתו והקיאתו ויצא מאליו מהו הדביק שני רחמים ויצא מזה לזה מהו אף על פי שלא יבא לעולם ור\"ת מפרש דגולל היינו מצבה שהיא אבן גדולה ולשון גולל שייך על האבן כדכתיב וגללו את האבן <span class=\"parenthesized\">(בראשית כט)</span> ודופק הן שתי אבנים אחת לראשה ואחת לרגלה של מצבה ופעמים כשאין המצבה מזומנת מעמידין שם בהמה או דבר אחר לסימן ובההיא דמדלגין לא היה שם מצבה ומחמת המת לא היו מיטמאין דרוב ארונות יש בהן פותח טפח ולא תקשה לר' יהושע מאימת חל אבילות כשאין שם מצבה די\"ל דכי מהדרי אפייהו דקוברין כדאמרינן במועד קטן <span class=\"parenthesized\">(דף כב.)</span> דהנהו דלא אזלי בתר שכבא מכי מהדרי אפייהו וקשה לר\"י על פירוש רבינו תם דתניא בתוספתא דאהלות בפרק ד' אמר רבי יהודה שתי אבנים גדולות של ארבעה ארבעה טפחים שעשאן גולל לקבר המאהיל על גבי שתיהם טמא ניטלה אחת מהן המאהיל על גבי השניה טהור מפני שיש לטומאה דרך שיצא מה שייך דרך שיצא לפר\"ת ובתוספתא דאהלות ספ\"ג תניא מעשה באחד שמת בערב הפסח ולא רצו לקוברו ונכנסו הנשים וקשרו החבל בגולל משכו האנשים מבחוץ וקברוהו הנשים והלכו האנשים ועשו פסחיהן לערב משמע שלא היו יכולין הנשים לקוברו עד שמשכו האנשים מבחוץ את הגולל ואם הגולל הויא מצבה למה לא קברוהו בלא מצבה עד אחר הפסח אלא ודאי הוא כסוי ארון כפירוש <span class=\"rashi-quotation\">הקונטרס</span> ולפי שהיה של אבן היה כבד כל כך:"
+  }
+}
