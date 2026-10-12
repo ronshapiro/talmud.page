@@ -1,13 +1,18 @@
 import {execFileSync} from "child_process";
+import * as fs from "fs";
 import {
   AgentError,
   asAgyCliError,
   asClaudeCliError,
+  buildAgyArgs,
+  buildClaudeArgs,
+  cleanupIsolatedAgyHomeDirectory,
   clearActiveAgentRegistry,
   createAgyToolFilterShims,
   execFileWithStreaming,
   getActiveAgentCount,
   getAgentRunner,
+  getOrCreateIsolatedAgyHomeDirectory,
   getSubcommandFromToolUse,
   isCancelledError,
   isCommandAllowed,
@@ -487,5 +492,74 @@ describe("createToolFilterShims", () => {
     } finally {
       cleanup();
     }
+  });
+});
+
+describe("buildClaudeArgs", () => {
+  test("includes safe-mode and isolated configuration flags", () => {
+    const claudeArgs = buildClaudeArgs("Translate this text");
+
+    expect(claudeArgs).toContain("--safe-mode");
+    expect(claudeArgs).toContain("--disable-slash-commands");
+    expect(claudeArgs).toContain("--strict-mcp-config");
+    expect(claudeArgs).toContain("--setting-sources");
+    expect(claudeArgs[claudeArgs.indexOf("--setting-sources") + 1]).toBe("project");
+    expect(claudeArgs).toContain("--allowedTools");
+  });
+
+  test("includes session arguments when sessionId is provided", () => {
+    const newSessionArgs = buildClaudeArgs("Prompt", {sessionId: "session-123"});
+    expect(newSessionArgs).toContain("--session-id");
+    expect(newSessionArgs[newSessionArgs.indexOf("--session-id") + 1]).toBe("session-123");
+
+    const resumeSessionArgs = buildClaudeArgs("Prompt", {sessionId: "session-123", resumeSession: true});
+    expect(resumeSessionArgs).toContain("--resume");
+    expect(resumeSessionArgs[resumeSessionArgs.indexOf("--resume") + 1]).toBe("session-123");
+  });
+
+  test("includes model argument when specified", () => {
+    const claudeArgs = buildClaudeArgs("Prompt", {model: "claude-sonnet-4-6"});
+    expect(claudeArgs).toContain("--model");
+    expect(claudeArgs[claudeArgs.indexOf("--model") + 1]).toBe("claude-sonnet-4-6");
+  });
+});
+
+describe("buildAgyArgs", () => {
+  test("includes disable-slash-commands and standard flags", () => {
+    const args = buildAgyArgs("Translate this text");
+
+    expect(args).toContain("-p");
+    expect(args).toContain("--output-format");
+    expect(args).toContain("--disable-slash-commands");
+    expect(args).toContain("--dangerously-skip-permissions");
+  });
+
+  test("includes conversation identifier when sessionId is provided", () => {
+    const args = buildAgyArgs("Prompt", {sessionId: "conversation-456"});
+    expect(args).toContain("--conversation");
+    expect(args[args.indexOf("--conversation") + 1]).toBe("conversation-456");
+  });
+
+  test("formats Claude models with high reasoning suffix if needed", () => {
+    const args = buildAgyArgs("Prompt", {model: "claude-3-7-sonnet"});
+    expect(args).toContain("--model");
+    expect(args[args.indexOf("--model") + 1]).toBe("claude-3-7-sonnet-high");
+  });
+});
+
+describe("isolated Antigravity environment", () => {
+  afterEach(() => {
+    cleanupIsolatedAgyHomeDirectory();
+  });
+
+  test("creates an isolated directory without local configuration", () => {
+    const isolatedHomeDirectory = getOrCreateIsolatedAgyHomeDirectory();
+    expect(fs.existsSync(isolatedHomeDirectory)).toBe(true);
+
+    const configurationDirectory = `${isolatedHomeDirectory}/.gemini/config`;
+    expect(fs.existsSync(configurationDirectory)).toBe(false);
+
+    cleanupIsolatedAgyHomeDirectory();
+    expect(fs.existsSync(isolatedHomeDirectory)).toBe(false);
   });
 });

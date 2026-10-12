@@ -440,13 +440,69 @@ export function execFileWithStreaming(
   });
 }
 
+let processIsolatedAgyHomeDirectory: string | undefined;
+
 /**
- * Invokes the Antigravity CLI in headless mode (`agy -p`).
+ * Creates or retrieves a temporary isolated home directory for Antigravity executions.
+ * Symlinks only necessary authentication tokens and installation identifiers so that
+ * the CLI authenticates properly while completely isolating execution from machine-local
+ * customizations (~/.gemini/config, user skills, user plugins, MCP servers, and global rules).
  */
-export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
+export function getOrCreateIsolatedAgyHomeDirectory(): string {
+  if (processIsolatedAgyHomeDirectory && fs.existsSync(processIsolatedAgyHomeDirectory)) {
+    return processIsolatedAgyHomeDirectory;
+  }
+  const isolatedHomeDirectory = fs.mkdtempSync(path.join(os.tmpdir(), "agy-isolated-home-"));
+  const originalHomeDirectory = process.env.HOME || os.homedir();
+
+  function copyTokenSource(...pathParts: string[]): void {
+    const source = path.join(originalHomeDirectory, ...pathParts);
+    if (!fs.existsSync(source)) return;
+    const destination = path.join(isolatedHomeDirectory, ...pathParts);
+    const destinationDirectory = path.dirname(destination);
+    fs.mkdirSync(destinationDirectory, {recursive: true});
+    try {
+      fs.symlinkSync(source, destination);
+    } catch {
+      fs.copyFileSync(source, destination);
+    }
+  }
+
+  copyTokenSource(".gemini", "antigravity-cli", "antigravity-oauth-token");
+  copyTokenSource(".gemini", "antigravity-cli", "installation_id");
+  copyTokenSource(".gemini", "installation_id");
+  copyTokenSource(".gemini", "jetski-standalone-oauth-token");
+
+  processIsolatedAgyHomeDirectory = isolatedHomeDirectory;
+  return isolatedHomeDirectory;
+}
+
+/**
+ * Cleans up the temporary isolated Antigravity home directory if one was created.
+ */
+export function cleanupIsolatedAgyHomeDirectory(): void {
+  if (processIsolatedAgyHomeDirectory) {
+    try {
+      fs.rmSync(processIsolatedAgyHomeDirectory, {recursive: true, force: true});
+    } catch {
+      // Best-effort cleanup
+    }
+    processIsolatedAgyHomeDirectory = undefined;
+  }
+}
+
+process.on("exit", () => {
+  cleanupIsolatedAgyHomeDirectory();
+});
+
+/**
+ * Builds CLI arguments for headless Antigravity execution with slash commands disabled.
+ */
+export function buildAgyArgs(prompt: string, options: AgentOptions = {}): string[] {
   const args = [
     "-p", prompt,
     "--output-format", "stream-json",
+    "--disable-slash-commands",
   ];
   if (options.sessionId) {
     args.push("--conversation", options.sessionId);
@@ -464,6 +520,14 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
   if (options.timeoutMs) {
     args.push("--print-timeout", `${Math.ceil(options.timeoutMs / 1000)}s`);
   }
+  return args;
+}
+
+/**
+ * Invokes the Antigravity CLI in headless mode (`agy -p`).
+ */
+export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
+  const args = buildAgyArgs(prompt, options);
 
   if (options.signal?.aborted) {
     throw new AgentError("Agent execution was cancelled", undefined, "agy", true);
@@ -478,9 +542,13 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
     shims = createToolFilterShims();
   }
 
-  const env: NodeJS.ProcessEnv = shims
-    ? {...process.env, PATH: `${shims.shimDir}:${process.env.PATH ?? ""}`}
-    : process.env;
+  const isolatedHomeDirectory = getOrCreateIsolatedAgyHomeDirectory();
+
+  const executionEnvironment: NodeJS.ProcessEnv = {
+    ...process.env,
+    HOME: isolatedHomeDirectory,
+    ...(shims ? {PATH: `${shims.shimDir}:${process.env.PATH ?? ""}`} : {}),
+  };
 
   const seenStepIndices = new Set<number>();
   let childProcess: ChildProcess | undefined;
@@ -496,7 +564,7 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
   try {
     ({stdout} = await execFileWithStreaming("agy", args, {
       cwd: options.cwd,
-      env,
+      env: executionEnvironment,
       timeout: options.timeoutMs,
       maxBuffer: 1024 * 1024 * 32,
       onChild: (child) => {
@@ -662,29 +730,19 @@ export function asClaudeCliError(error: unknown): AgentError | undefined {
 
 const DEFAULT_CLAUDE_ALLOWED_TOOLS = ["Read", "Grep", "Glob"];
 
-export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
-  if (options.signal?.aborted) {
-    throw new AgentError("Agent execution was cancelled", undefined, "claude", true);
-  }
-
-  if (options.debug) {
-    console.log(`  [agent] Running claude${options.model ? ` (model: ${options.model})` : ""}...`);
-  }
-
-  let shims: ToolFilterShims | undefined;
-  if (options.allowedTools && options.allowedTools.length > 0) {
-    shims = createToolFilterShims();
-  }
-
-  const env: NodeJS.ProcessEnv = shims
-    ? {...process.env, PATH: `${shims.shimDir}:${process.env.PATH ?? ""}`}
-    : process.env;
-
-  let childProcess: ChildProcess | undefined;
+/**
+ * Builds CLI arguments for headless Claude execution with safe mode enabled,
+ * slash commands disabled, strict MCP config enforced, and user/local settings excluded.
+ */
+export function buildClaudeArgs(prompt: string, options: AgentOptions = {}): string[] {
   const claudeArgs = [
     "-p", prompt,
     "--output-format", "stream-json",
     "--verbose",
+    "--safe-mode",
+    "--disable-slash-commands",
+    "--strict-mcp-config",
+    "--setting-sources", "project",
     "--allowedTools", (options.allowedTools ?? DEFAULT_CLAUDE_ALLOWED_TOOLS).join(","),
     ...(options.model ? ["--model", options.model] : []),
   ];
@@ -695,7 +753,32 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
       claudeArgs.push("--session-id", options.sessionId);
     }
   }
+  return claudeArgs;
+}
 
+export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
+  if (options.signal?.aborted) {
+    throw new AgentError("Agent execution was cancelled", undefined, "claude", true);
+  }
+
+  if (options.debug) {
+    console.log(`  [agent] Running claude${options.model ? ` (model: ${options.model})` : ""}...`);
+  }
+
+  const claudeArgs = buildClaudeArgs(prompt, options);
+
+  let shims: ToolFilterShims | undefined;
+  if (options.allowedTools && options.allowedTools.length > 0) {
+    shims = createToolFilterShims();
+  }
+
+  const executionEnvironment: NodeJS.ProcessEnv = {
+    ...process.env,
+    CLAUDE_CODE_SAFE_MODE: "1",
+    ...(shims ? {PATH: `${shims.shimDir}:${process.env.PATH ?? ""}`} : {}),
+  };
+
+  let childProcess: ChildProcess | undefined;
   let unregisterChild: (() => void) | undefined;
   const abortListener = () => {
     childProcess?.kill("SIGTERM");
@@ -711,7 +794,7 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
       claudeArgs,
       {
         cwd: options.cwd,
-        env,
+        env: executionEnvironment,
         timeout: options.timeoutMs,
         maxBuffer: 1024 * 1024 * 32,
         onChild: (child) => {
