@@ -200,3 +200,43 @@ test("actual model_routing_config.json resolves agy default and sonnet-4.6", () 
   expect(claudeHaikuInferred.generateModel).toBe("claude-haiku-5-5");
   expect(claudeHaikuInferred.critiqueModel).toBe("claude-sonnet-5-5");
 });
+
+test("getTaskModelConfig checks requested backend with matchesConfig first, falling back to base backend", () => {
+  const customConfig = {
+    claude: {
+      default: {
+        generateModel: "claude-sonnet-5",
+        critiqueModel: "claude-sonnet-5",
+      },
+      "custom-preset": {
+        generateModel: "claude-base-model",
+        critiqueModel: "claude-base-model",
+      },
+      "override-preset": {
+        generateModel: "claude-base-override",
+        critiqueModel: "claude-base-override",
+      },
+    },
+    "claude-long-thread": {
+      "override-preset": {
+        generateModel: "claude-long-thread-special",
+        critiqueModel: "claude-long-thread-special",
+      },
+    },
+  };
+  writeJson(CONFIG_PATH, customConfig);
+
+  const directMatch = getTaskModelConfig("any_task", {
+    configPath: CONFIG_PATH,
+    backend: "claude-long-thread",
+    configName: "override-preset",
+  });
+  expect(directMatch.generateModel).toBe("claude-long-thread-special");
+
+  const fallbackMatch = getTaskModelConfig("any_task", {
+    configPath: CONFIG_PATH,
+    backend: "claude-long-thread",
+    configName: "custom-preset",
+  });
+  expect(fallbackMatch.generateModel).toBe("claude-base-model");
+});
