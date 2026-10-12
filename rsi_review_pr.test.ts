@@ -54,6 +54,12 @@ class FakeGitHub {
     return JSON.parse(Buffer.from(encoded, "base64").toString("utf8"));
   }
 
+  rawContentOf(branch: string, page: string): string {
+    const path = `precomputed/ai_additions/${page}.json`;
+    const encoded = this.branches[branch]?.[path] ?? this.branches.base[path];
+    return Buffer.from(encoded, "base64").toString("utf8");
+  }
+
   allPrs(): FakePr[] {
     return this.prs;
   }
@@ -127,6 +133,18 @@ describe("openReviewDecisionPr", () => {
     const branch = github.allPrs()[0].head.ref;
     expect(github.contentOf(branch, "Zevachim 2a")["Zevachim 2a:1"])
       .toEqual({hebrew: "א", english: "a", approved: "ron"});
+  });
+
+  test("terminates the saved JSON file with a trailing newline", async () => {
+    const github = new FakeGitHub({
+      "Zevachim 2a": {"Zevachim 2a:1": {hebrew: "א", english: "a", status: "pending"}},
+    });
+    await openReviewDecisionPr(
+      {page: "Zevachim 2a", ref: "Zevachim 2a:1", decision: "approve"}, "token",
+      github.fetchImpl);
+
+    const branch = github.allPrs()[0].head.ref;
+    expect(github.rawContentOf(branch, "Zevachim 2a").endsWith("\n")).toBe(true);
   });
 
   test("approve with edited text overwrites hebrew/english and sets approved", async () => {

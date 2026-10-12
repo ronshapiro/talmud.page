@@ -18,6 +18,7 @@ import {
   installPageEnvironment,
 } from "./testing/page_environment";
 import {commentaries, resetFixtureCounter} from "./testing/fixtures";
+import {rsiReviewKeyPreference} from "../settings";
 
 let gtagCalls: GtagCall[];
 
@@ -522,5 +523,38 @@ describe("nested commentaries", () => {
 
     expect(queryAll(root, ".depthIndicator")).toHaveLength(1);
     expect(query(root, ".depthIndicator").textContent).toBe(">");
+  });
+
+  test("review controls render inside open Model subcomment", () => {
+    rsiReviewKeyPreference.set("secret123");
+    const MODEL = kind("Model", "model");
+    const root = render(
+      commentaries({
+        Rashi: [{
+          he: "רש״י",
+          en: "translation",
+          pendingReview: "Shabbat 2b",
+          commentary: commentaries({
+            Model: [{he: "gemini-3.8-flash-high", en: "gemini-3.8-flash-high"}],
+          }),
+        }],
+      }),
+      {
+        commentaryTypes: [RASHI, MODEL],
+        initiallyOpen: ["rashi"],
+      });
+
+    expect(queryAll(root, ".rsi-review-controls")).toHaveLength(0);
+
+    click(query(root, ".show-buttons a.model"));
+
+    expect(query(root, ".IndividualComment.model")).toBeTruthy();
+    expect(query(root, ".rsi-review-controls")).toBeTruthy();
+    const buttons = queryAll(root, ".rsi-review-button");
+    expect(buttons.map(buttonElement => buttonElement.textContent)).toEqual([
+      "Approve",
+      "Edit",
+      "Reject",
+    ]);
   });
 });

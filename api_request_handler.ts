@@ -1021,8 +1021,7 @@ export abstract class AbstractApiRequestHandler {
 
     const maybeModelComment = (ref: string) => {
       if (additions[ref].status !== "pending") return undefined;
-      const model = additions[ref].model ?? findGenerationRecord(this.pageRef(), ref)?.model;
-      if (!model) return undefined;
+      const model = additions[ref].model ?? findGenerationRecord(this.pageRef(), ref)?.model ?? "AI";
       return new Comment(
         "Model",
         model,
