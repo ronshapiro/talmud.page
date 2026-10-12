@@ -85,6 +85,7 @@ class FakeGitHub {
       const path = decodeURIComponent(url.split("/contents/")[1].split("?")[0]);
       const content = this.branches[branch]?.[path] ?? this.branches.base[path];
       const sha = this.shas[branch]?.[path] ?? this.shas.base[path];
+      if (!content) return {ok: false, status: 404, text: async () => "not found"} as Response;
       return jsonResponse({content, sha});
     }
     if (url.includes("/git/ref/heads/base")) {
@@ -205,6 +206,70 @@ describe("openReviewDecisionPr", () => {
       {page: "Zevachim 2a", ref: "Zevachim 2a:1", decision: "approve"}, "token",
       github.fetchImpl,
     )).rejects.toThrow("No ai_edits.ts entry");
+  });
+
+  test("approve falls back to base if the entry was deleted on the review PR branch", async () => {
+    const github = new FakeGitHub({
+      "Zevachim 2a": {"Zevachim 2a:1": {hebrew: "א", english: "a", status: "pending"}},
+    });
+    const rejectResult = await openReviewDecisionPr(
+      {page: "Zevachim 2a", ref: "Zevachim 2a:1", decision: "reject"}, "token",
+      github.fetchImpl);
+
+    const branch = github.allPrs()[0].head.ref;
+    expect(github.contentOf(branch, "Zevachim 2a")["Zevachim 2a:1"]).toBeUndefined();
+
+    const approveResult = await openReviewDecisionPr({
+      page: "Zevachim 2a",
+      ref: "Zevachim 2a:1",
+      decision: "approve",
+      knownPrNumber: rejectResult.prNumber,
+    }, "token", github.fetchImpl);
+
+    expect(approveResult.prNumber).toEqual(rejectResult.prNumber);
+    expect(github.contentOf(branch, "Zevachim 2a")["Zevachim 2a:1"])
+      .toEqual({hebrew: "א", english: "a"});
+    expect(github.allPrs()[0].body).toContain("Reject RSI translation for Zevachim 2a:1");
+    expect(github.allPrs()[0].body).toContain("Approve RSI translation for Zevachim 2a:1");
+  });
+
+  test("approve with edited text falls back to base if the entry was deleted on branch", async () => {
+    const github = new FakeGitHub({
+      "Zevachim 2a": {"Zevachim 2a:1": {hebrew: "א", english: "a", status: "pending"}},
+    });
+    const rejectResult = await openReviewDecisionPr(
+      {page: "Zevachim 2a", ref: "Zevachim 2a:1", decision: "reject"}, "token",
+      github.fetchImpl);
+
+    const approveResult = await openReviewDecisionPr({
+      page: "Zevachim 2a",
+      ref: "Zevachim 2a:1",
+      decision: "approve",
+      hebrew: "ב",
+      english: "b",
+      knownPrNumber: rejectResult.prNumber,
+    }, "token", github.fetchImpl);
+
+    expect(approveResult.prNumber).toEqual(rejectResult.prNumber);
+    const branch = github.allPrs()[0].head.ref;
+    expect(github.contentOf(branch, "Zevachim 2a")["Zevachim 2a:1"])
+      .toEqual({hebrew: "ב", english: "b"});
+  });
+
+  test("approve falls back to browser payload if entry is missing on both branch and base", async () => {
+    const github = new FakeGitHub({"Zevachim 2a": {}});
+    const result = await openReviewDecisionPr({
+      page: "Zevachim 2a",
+      ref: "Zevachim 2a:1",
+      decision: "approve",
+      fallbackHebrew: "היברו",
+      fallbackEnglish: "english",
+    }, "token", github.fetchImpl);
+
+    expect(result.prNumber).toEqual(1);
+    const branch = github.allPrs()[0].head.ref;
+    expect(github.contentOf(branch, "Zevachim 2a")["Zevachim 2a:1"])
+      .toEqual({hebrew: "היברו", english: "english"});
   });
 
   describe("batching via knownPrNumber", () => {

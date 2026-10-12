@@ -96,6 +96,8 @@ describe("RsiReviewControls", () => {
         key: "secret123",
         knownPrNumber: undefined,
         reviewerIdentity: IDENTITY,
+        fallbackHebrew: "hebrew of Zevachim 2a:1",
+        fallbackEnglish: "english of Zevachim 2a:1",
       });
     });
 
@@ -135,6 +137,8 @@ describe("RsiReviewControls", () => {
         reviewerIdentity: IDENTITY,
         hebrew: "א",
         english: "a",
+        fallbackHebrew: "א",
+        fallbackEnglish: "a",
       });
     });
 

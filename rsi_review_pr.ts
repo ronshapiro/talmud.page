@@ -15,6 +15,10 @@ export interface ReviewDecisionRequest {
   // overridden text). Undefined means "ship the AI-proposed text as-is."
   hebrew?: string;
   english?: string;
+  // Fallback text if the entry is missing from both the batch branch and base branch
+  // (e.g. recovering from an accidental reject where the base entry is unavailable).
+  fallbackHebrew?: string;
+  fallbackEnglish?: string;
   // Only meaningful for "reject" — recorded in the PR body as the retry signal for a future run.
   reason?: string;
   // This client's own last-known review PR number (see js/RsiReviewControls.tsx), reused if it's
@@ -92,7 +96,10 @@ export async function openReviewDecisionPr(
   token: string,
   fetchImpl: FetchFn = fetch,
 ): Promise<ReviewDecisionResult> {
-  const {page, ref, decision, hebrew, english, reason, knownPrNumber, reviewerIdentity} = request;
+  const {
+    page, ref, decision, hebrew, english, fallbackHebrew, fallbackEnglish,
+    reason, knownPrNumber, reviewerIdentity,
+  } = request;
   const path = `precomputed/ai_additions/${page}.json`;
   const encodedPath = encodePath(path);
 
@@ -106,18 +113,52 @@ export async function openReviewDecisionPr(
     fetchImpl, token, `/repos/${REPO}/contents/${encodedPath}?ref=${readRef}`);
   const edits = JSON.parse(
     Buffer.from(file.content, "base64").toString("utf8")) as Record<string, Edit>;
-  if (!edits[ref]) {
+
+  let existing = edits[ref];
+  if (!existing && decision === "approve") {
+    if (readRef !== BASE_BRANCH) {
+      try {
+        const baseFile = await githubRequest<{content: string}>(
+          fetchImpl, token, `/repos/${REPO}/contents/${encodedPath}?ref=${BASE_BRANCH}`);
+        const baseEdits = JSON.parse(
+          Buffer.from(baseFile.content, "base64").toString("utf8")) as Record<string, Edit>;
+        existing = baseEdits[ref];
+      } catch {
+        // Base file doesn't exist or request failed; fall through to browser payload if provided.
+      }
+    }
+    if (!existing) {
+      if (fallbackHebrew !== undefined || fallbackEnglish !== undefined) {
+        existing = {
+          ...(fallbackHebrew !== undefined ? {hebrew: fallbackHebrew} : {}),
+          ...(fallbackEnglish !== undefined ? {english: fallbackEnglish} : {}),
+        };
+      } else if (hebrew !== undefined || english !== undefined) {
+        existing = {
+          ...(hebrew !== undefined ? {hebrew} : {}),
+          ...(english !== undefined ? {english} : {}),
+        };
+      }
+    }
+  }
+
+  if (!existing && !edits[ref]) {
     throw new Error(`No ai_edits.ts entry for ${page} ${ref}`);
   }
 
   const verb = decision === "approve" ? "Approve" : "Reject";
   let message = `${verb} RSI translation for ${ref}`;
   if (decision === "approve") {
-    const existing = edits[ref];
-    edits[ref] = {
-      hebrew: hebrew !== undefined ? hebrew : existing.hebrew,
-      english: english !== undefined ? english : existing.english,
-    };
+    const resolvedHebrew = hebrew !== undefined ? hebrew : existing!.hebrew;
+    const resolvedEnglish = english !== undefined ? english : existing!.english;
+    const updatedEdit: Edit = {};
+    if (resolvedHebrew !== undefined) {
+      updatedEdit.hebrew = resolvedHebrew;
+    }
+    if (resolvedEnglish !== undefined) {
+      updatedEdit.english = resolvedEnglish;
+    }
+    edits[ref] = updatedEdit;
   } else {
     delete edits[ref];
     if (reason) {
