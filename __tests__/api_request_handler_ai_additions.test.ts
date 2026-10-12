@@ -195,3 +195,36 @@ test("pending segment-level addition gets Model subcomment", () => {
     sourceHeRef: "מודל",
   });
 });
+
+test("approved AI comment with approved username does not get pendingReview or Model subcomment", () => {
+  const commentRef = "Rashi on __Test_Ai_Page__ 2a:1:1";
+  writeAiEdit(TEST_PAGE, commentRef, {
+    hebrew: "עברית מאושרת",
+    english: "approved english",
+    approved: "reviewer_username",
+    model: "claude-sonnet-5",
+  });
+
+  const handler = createHandler();
+  const segment = new InternalSegment({
+    hebrew: "עברית",
+    english: "english",
+    ref: `${TEST_PAGE}:1`,
+  });
+  const rashi = new Comment(
+    "Rashi",
+    "עברית מקורית",
+    "",
+    commentRef,
+    commentRef,
+    'רש"י',
+  );
+  segment.commentary.addComment(rashi);
+
+  (handler as any).addAiAdditions([segment]);
+
+  const json = segment.toJson();
+  const aiVersion = json.commentary!.Rashi.comments[0].commentary!.Versions.comments[0];
+  expect(aiVersion.pendingReview).toBeUndefined();
+  expect(aiVersion.commentary?.Model).toBeUndefined();
+});
