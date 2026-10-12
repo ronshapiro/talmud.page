@@ -36,10 +36,15 @@ function renderComment(
   overrides: Partial<ApiComment> = {},
   commentaryKind: CommentaryType = RASHI,
   contextOverrides = {},
+  parentComment?: ApiComment,
 ): HTMLElement {
   return mount(
     <TestContext overrides={contextOverrides}>
-      <IndividualComment comment={comment(overrides)} commentaryKind={commentaryKind} />
+      <IndividualComment
+        comment={comment(overrides)}
+        commentaryKind={commentaryKind}
+        parentComment={parentComment}
+        />
     </TestContext>,
   );
 }
@@ -196,6 +201,45 @@ describe("the rows path compared with the he/en path", () => {
       const withKey = renderComment({he: "אחד", en: "", pendingReview: "Zevachim 2a"});
       expect(query(withKey, ".rsi-review-controls")).toBeTruthy();
     });
+
+  test("review controls are placed inside Model synthetic comment and omitted from parent", () => {
+    rsiReviewKeyPreference.set("secret123");
+    const parentComment = comment({
+      he: "רש״י מקורי",
+      en: "ai translation",
+      pendingReview: "Shabbat 2b",
+      commentary: {
+        Model: {
+          comments: [comment({
+            ref: "rashi-model",
+            he: "gemini-3.8-flash-high",
+            en: "gemini-3.8-flash-high",
+          })],
+        },
+      },
+    });
+
+    const parentRoot = renderComment(parentComment);
+    expect(queryOrNull(parentRoot, ".rsi-review-controls")).toBeNull();
+
+    const modelKind: CommentaryType = {
+      englishName: "Model",
+      hebrewName: "מודל",
+      className: "model",
+    };
+    const modelRoot = renderComment(
+      {he: "gemini-3.8-flash-high", en: "gemini-3.8-flash-high"},
+      modelKind,
+      {},
+      parentComment,
+    );
+    expect(query(modelRoot, ".rsi-review-controls")).toBeTruthy();
+    const buttons = queryAll(modelRoot, ".rsi-review-button");
+    expect(buttons).toHaveLength(3);
+    expect(classesOf(buttons[0])).toContain("rsi-review-approve");
+    expect(classesOf(buttons[1])).toContain("rsi-review-edit");
+    expect(classesOf(buttons[2])).toContain("rsi-review-reject");
+  });
 
   test("image rows do not get the AI-modified marker that their text row gets", () => {
     // The image row is built with `extraClasses={["commentFullRowImage"]}`, discarding the
