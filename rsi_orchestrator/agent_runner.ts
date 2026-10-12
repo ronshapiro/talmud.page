@@ -728,7 +728,7 @@ export function asClaudeCliError(error: unknown): AgentError | undefined {
   return new AgentError(result.result, result.api_error_status, "claude");
 }
 
-export const DEFAULT_CLAUDE_ALLOWED_TOOLS = ["Read", "Grep", "Glob"];
+const DEFAULT_CLAUDE_ALLOWED_TOOLS = ["Read", "Grep", "Glob"];
 
 /**
  * Builds CLI arguments for headless Claude execution with safe mode enabled,
