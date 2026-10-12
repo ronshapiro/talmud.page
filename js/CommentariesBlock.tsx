@@ -180,6 +180,7 @@ interface CommentariesBlockProps {
   syntheticClassName?: string;
   syntheticCommentaryKinds?: Record<string, CommentaryType>;
   depth?: number;
+  parentComment?: ApiComment;
 }
 
 export function CommentariesBlock({
@@ -190,6 +191,7 @@ export function CommentariesBlock({
   syntheticClassName,
   syntheticCommentaryKinds,
   depth,
+  parentComment,
 }: CommentariesBlockProps): React.ReactElement | null {
   const context = useConfiguration();
   const [showAll, setShowAll] = useState(false);
@@ -257,6 +259,7 @@ export function CommentariesBlock({
       syntheticClassName={props.syntheticClassName}
       syntheticCommentaryKinds={props.syntheticCommentaryKinds}
       depth={depth! + 1}
+      parentComment={props.parentComment}
       />;
   };
 
@@ -453,12 +456,18 @@ export function CommentariesBlock({
       for (const comment of dedupeComments(commentary.comments)) {
         const nestedSegmentLabel = `${segmentLabel}.<nested>.${comment.ref}`;
         output.push(
-          <IndividualComment key={comment.ref} comment={comment} commentaryKind={commentaryKind} />,
+          <IndividualComment
+            key={comment.ref}
+            comment={comment}
+            commentaryKind={commentaryKind}
+            parentComment={parentComment}
+            />,
           <NestedCommentariesBlock
             commentaries={comment.commentary || {}}
             segmentLabel={nestedSegmentLabel}
             key={nestedSegmentLabel}
             depth={depth! + 1}
+            parentComment={comment}
             />);
       }
     }
@@ -474,4 +483,5 @@ CommentariesBlock.propTypes = {
   segmentLabel: PropTypes.string,
   syntheticClassName: PropTypes.string,
   syntheticCommentaryKinds: PropTypes.object,
+  parentComment: PropTypes.object,
 };

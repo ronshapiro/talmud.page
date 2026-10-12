@@ -831,13 +831,115 @@ h2, .title, .titleHebrew {
 .rsi-review-controls {
     display: flex;
     flex-wrap: wrap;
-    gap: 4px;
-    margin-top: 4px;
+    align-items: center;
+    gap: 8px;
+    margin: 6px 0;
+    padding: 0 4px;
+}
+
+.rsi-review-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 14px;
+    border-radius: 16px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: inherit;
+    line-height: 1.4;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+    user-select: none;
+    outline: none;
+}
+
+.rsi-review-button:focus-visible {
+    box-shadow: 0 0 0 2px var(--background-color), 0 0 0 4px currentColor;
+}
+
+.rsi-review-button.rsi-review-approve {
+    background-color: #e6f4ea;
+    color: #137333;
+    border-color: #a8dab5;
+}
+
+.rsi-review-button.rsi-review-approve:hover {
+    background-color: #ceead6;
+    border-color: #81c995;
+    color: #0d652d;
+}
+
+.rsi-review-button.rsi-review-edit {
+    background-color: #e8f0fe;
+    color: #1a73e8;
+    border-color: #aecbfa;
+}
+
+.rsi-review-button.rsi-review-edit:hover {
+    background-color: #d2e3fc;
+    border-color: #8ab4f8;
+    color: #174ea6;
+}
+
+.rsi-review-button.rsi-review-reject {
+    background-color: #fce8e6;
+    color: #c5221f;
+    border-color: #f5c2c7;
+}
+
+.rsi-review-button.rsi-review-reject:hover {
+    background-color: #fad2cf;
+    border-color: #f28b82;
+    color: #a50e0e;
+}
+
+.rsi-review-button.rsi-review-submit-edit {
+    background-color: #e6f4ea;
+    color: #137333;
+    border-color: #a8dab5;
+}
+
+.rsi-review-button.rsi-review-submit-edit:hover {
+    background-color: #ceead6;
+    border-color: #81c995;
+    color: #0d652d;
+}
+
+.rsi-review-button.rsi-review-cancel {
+    background-color: #f1f3f4;
+    color: #5f6368;
+    border-color: #dadce0;
+}
+
+.rsi-review-button.rsi-review-cancel:hover {
+    background-color: #e8eaed;
+    border-color: #bdc1c6;
+    color: #3c4043;
+}
+
+.rsi-review-editing {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 6px;
 }
 
 .rsi-review-editing textarea {
     display: block;
     width: 100%;
     box-sizing: border-box;
-    margin-bottom: 4px;
+    padding: 8px 10px;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.rsi-review-editing-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 2px;
 }

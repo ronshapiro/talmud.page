@@ -129,9 +129,11 @@ function ReportDuplicateButton({
 export function IndividualComment({
   comment,
   commentaryKind,
+  parentComment,
 }: {
   comment: ApiComment;
   commentaryKind: CommentaryType;
+  parentComment?: ApiComment;
 }): React.ReactElement {
   const output = [];
 
@@ -248,7 +250,9 @@ export function IndividualComment({
   if ((comment.duplicateRefs?.length ?? 0) > 0) {
     output.push(<ReportDuplicateButton key="dupe" comment={comment} buttonRef={buttonRef} />);
   }
-  if (comment.pendingReview) {
+  if (parentComment?.pendingReview && commentaryKind.englishName === "Model") {
+    output.push(<RsiReviewControls key="rsi-review" comment={parentComment} />);
+  } else if (comment.pendingReview && !comment.commentary?.Model) {
     output.push(<RsiReviewControls key="rsi-review" comment={comment} />);
   }
 
@@ -257,4 +261,5 @@ export function IndividualComment({
 IndividualComment.propTypes = {
   comment: PropTypes.object.isRequired,
   commentaryKind: PropTypes.object.isRequired,
+  parentComment: PropTypes.object,
 };

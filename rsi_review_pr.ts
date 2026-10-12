@@ -1,4 +1,5 @@
 import {Edit} from "./precomputed/ai_edits";
+import {jsonStringify} from "./util/json_stringify";
 
 // Opens (or adds to) a PR against ai_edits.ts entries from plain HTTPS calls to the GitHub REST
 // API — no git binary, no local checkout, so the server can remain stateless.
@@ -178,7 +179,7 @@ export async function openReviewDecisionPr(
     method: "PUT",
     body: JSON.stringify({
       message,
-      content: Buffer.from(JSON.stringify(edits, undefined, 2)).toString("base64"),
+      content: Buffer.from(jsonStringify(edits)).toString("base64"),
       sha: file.sha,
       branch,
     }),
