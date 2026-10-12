@@ -1,4 +1,4 @@
-import {books, QueryResult} from "../books";
+import {books, isAmud, QueryResult} from "../books";
 
 class Subject {
   constructor(private query: string) {}
@@ -133,4 +133,14 @@ test("canonicalName and canonicalNameOrUndefined with aliases", () => {
   expect(books.canonicalName("Chulin")).toBe("Chullin");
   expect(books.canonicalName("Brachot")).toBe("Berakhot");
   expect(() => books.canonicalName("UnknownBook")).toThrow("UnknownBook");
+});
+
+test("isAmud", () => {
+  expect(isAmud("2a")).toBe(true);
+  expect(isAmud("10b")).toBe(true);
+  expect(isAmud("100a")).toBe(true);
+  expect(isAmud("2")).toBe(false);
+  expect(isAmud("2c")).toBe(false);
+  expect(isAmud("a")).toBe(false);
+  expect(isAmud("")).toBe(false);
 });

@@ -1,0 +1,642 @@
+{
+  "Rashi on Ketubot 2b:10:1": {
+    "dependsOn": [
+      "Rashi on Ketubot 2b:5:1",
+      "Rashi on Ketubot 2b:6:1",
+      "Rashi on Ketubot 2b:10:2",
+      "Ketubot 2b:10"
+    ],
+    "generatedAt": "2026-10-11T11:30:30.857Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואלא מסיפא</strong> - גמר רבא דאין אונס בגיטין:"
+  },
+  "Rashi on Ketubot 2b:10:2": {
+    "dependsOn": [
+      "Ketubot 2b:10",
+      "Rashi on Ketubot 2b:10:1",
+      "Rashi on Ketubot 2b:10:2",
+      "Rashi on Ketubot 2b:6:1",
+      "Rashi on Ketubot 2b:6:2",
+      "Rashi on Ketubot 2b:6:3",
+      "Rashi on Ketubot 2b:7:1",
+      "Rashi on Ketubot 2b:8:1",
+      "Rashi on Ketubot 2b:9:1",
+      "Rashi on Ketubot 2b:9:2",
+      "Rashi on Ketubot 2b:11:1",
+      "Rashi on Ketubot 2a:1:1",
+      "Rashi on Ketubot 2a:1:2",
+      "Rashi on Ketubot 2a:2:1",
+      "Rashi on Ketubot 2a:3:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Gittin 2a:1:1",
+      "Rashi on Ketubot 2b:5:1",
+      "Rashi on Ketubot 2b:5:2",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:2:2",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:4:1"
+    ],
+    "generatedAt": "2026-10-11T11:38:16.480Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי זה גט</strong> - ואע\"ג דאין אונס גדול ממיתה אלמא אין אונס בגיטין והוא הדין לחלה:"
+  },
+  "Rashi on Ketubot 2b:11:1": {
+    "dependsOn": [
+      "Ketubot 2b:11",
+      "Rashi on Ketubot 2b:10:1",
+      "Rashi on Ketubot 2b:10:2",
+      "Rashi on Ketubot 2b:12:1",
+      "Rashi on Ketubot 2a:1:1",
+      "Rashi on Ketubot 2a:2:1",
+      "Rashi on Ketubot 2b:2:1"
+    ],
+    "generatedAt": "2026-10-11T11:44:05.723Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלמא מת דוקא</strong> - דכל עצמו שכתב לה גט מחמת כן כתב לה שאם ימות יהיה גט למפרע שלא תיזקק ליבם ובהאי אונסא לא ניחא ליה למיבטל גיטא אבל באונסא אחרינא דניחא ליה לבטולי גיטא ביה אימא לך יש אונס בגיטין:"
+  },
+  "Rashi on Ketubot 2b:12:1": {
+    "dependsOn": [
+      "Ketubot 2b:12",
+      "Rashi on Ketubot 2b:12:1",
+      "Rashi on Ketubot 2b:12:2"
+    ],
+    "generatedAt": "2026-10-11T11:52:37.033Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ופסקיה מברא</strong> - הנהר הפסיקו שהיתה המעבורת מצד העיר ולא יכול לעבור:"
+  },
+  "Rashi on Ketubot 2b:12:2": {
+    "dependsOn": [
+      "Ketubot 2b:12",
+      "Rashi on Ketubot 2b:12:1",
+      "Rashi on Ketubot 2b:12:2",
+      "Rashi on Ketubot 2b:12:3",
+      "Rashi on Ketubot 2b:10:1",
+      "Rashi on Ketubot 2b:10:2",
+      "Rashi on Ketubot 2b:11:1",
+      "Rashi on Ketubot 2a:1:1",
+      "Rashi on Ketubot 2a:1:2",
+      "Rashi on Ketubot 2a:2:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:4:1",
+      "Rashi on Berakhot 2a:5:1",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 2b:3:1",
+      "Rashi on Berakhot 2b:4:1",
+      "Rashi on Berakhot 2b:5:1",
+      "Rashi on Berakhot 2b:6:1",
+      "Rashi on Berakhot 3a:1:1",
+      "Rashi on Berakhot 3a:2:1",
+      "Rashi on Berakhot 3a:3:1",
+      "Rashi on Berakhot 3a:4:1",
+      "Rashi on Berakhot 3a:5:1",
+      "Rashi on Gittin 34a:10:1",
+      "Rashi on Gittin 34a:10:2",
+      "Rashi on Gittin 34a:10:3",
+      "Rashi on Berakhot 2b:7:1",
+      "Rashi on Berakhot 2b:8:1",
+      "Rashi on Berakhot 2b:9:1",
+      "Rashi on Berakhot 2b:10:1",
+      "Rashi on Berakhot 2b:11:1",
+      "Rashi on Berakhot 3b:1:1",
+      "Rashi on Berakhot 3b:2:1",
+      "Rashi on Berakhot 4a:1:1",
+      "Rashi on Berakhot 4a:2:1",
+      "Rashi on Berakhot 4b:1:1",
+      "Rashi on Berakhot 5a:1:1",
+      "Rashi on Berakhot 5b:1:1",
+      "Rashi on Berakhot 6a:1:1",
+      "Rashi on Berakhot 6b:1:1",
+      "Rashi on Berakhot 7a:1:1",
+      "Rashi on Berakhot 7b:1:1",
+      "Rashi on Berakhot 8a:1:1",
+      "Rashi on Berakhot 8a:2:1",
+      "Rashi on Berakhot 8b:1:1",
+      "Rashi on Berakhot 9a:1:1",
+      "Rashi on Berakhot 9b:1:1"
+    ],
+    "generatedAt": "2026-10-11T12:02:53.381Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חזו דאתאי</strong> - שבאתי:"
+  },
+  "Rashi on Ketubot 2b:12:3": {
+    "dependsOn": [
+      "Ketubot 2b:12",
+      "Rashi on Ketubot 2b:12:1",
+      "Rashi on Ketubot 2b:12:2",
+      "Rashi on Ketubot 2b:12:3",
+      "Ketubot 2b:13",
+      "Ketubot 2b:14",
+      "Rashba on Ketubot 2b:12:1",
+      "Steinsaltz on Ketubot 2b:12:1",
+      "Rashi on Ketubot 2b:6:1",
+      "Rashi on Ketubot 2b:8:1",
+      "Rashi on Ketubot 2b:9:1",
+      "Rashi on Ketubot 2b:10:1",
+      "Rashi on Ketubot 2b:10:2",
+      "Rashi on Gittin 76b:2:1",
+      "Gittin 76b:2",
+      "Rashi on Ketubot 2a:1:1",
+      "Rashi on Ketubot 2a:2:1"
+    ],
+    "generatedAt": "2026-10-11T12:05:58.221Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2b:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שמיה מתיא</strong> - והוי גיטא ואם רצתה תינשא לאחר וגם לכהונה נפסלת מהיום:"
+  },
+  "Rashi on Ketubot 2b:2:1": {
+    "dependsOn": [
+      "Ketubot 2b:2",
+      "Rashi on Ketubot 2b:2:1",
+      "Rashi on Ketubot 2b:2:2",
+      "Rashi on Ketubot 2a:1:1",
+      "Rashi on Ketubot 2a:1:2",
+      "Rashi on Ketubot 2b:4:1",
+      "Rashi on Ketubot 2b:5:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:2:1"
+    ],
+    "generatedAt": "2026-10-11T10:03:04.690Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פשיט רב אחאי</strong> - הך בעיא ממתניתין דקתני לא נישאו ולא קתני לא נשאו דלישתמע שהבעלים מעכבים:"
+  },
+  "Rashi on Ketubot 2b:2:2": {
+    "dependsOn": [
+      "Ketubot 2b:2",
+      "Rashi on Ketubot 2b:2:1",
+      "Rashi on Ketubot 2b:2:2"
+    ],
+    "generatedAt": "2026-10-11T10:04:26.638Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לא נישאו</strong> - הן לבעלים תלה העכבה בנשים:"
+  },
+  "Rashi on Ketubot 2b:4:1": {
+    "dependsOn": [
+      "Ketubot 2b:4",
+      "Rashi on Ketubot 2b:4:1",
+      "Rashi on Ketubot 2b:2:1",
+      "Rashi on Ketubot 2b:2:2",
+      "Ketubot 2b:2"
+    ],
+    "generatedAt": "2026-10-11T10:20:42.484Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיידי דתנא רישא בדידהי</strong> - נותנין לבתולה שנים עשר חדש ולאלמנה שלשים יום:"
+  },
+  "Rashi on Ketubot 2b:5:1": {
+    "dependsOn": [
+      "Ketubot 2b:5",
+      "Rashi on Ketubot 2b:2:1",
+      "Rashi on Ketubot 2b:2:2",
+      "Rashi on Ketubot 2b:4:1",
+      "Rashi on Ketubot 2b:5:1",
+      "Rashi on Ketubot 2b:5:2",
+      "Ketubot 2a:2",
+      "Ketubot 2a:3",
+      "Ketubot 2a:4",
+      "Ketubot 2a:5",
+      "Ketubot 2a:6",
+      "Ketubot 2a:7",
+      "Ketubot 2a:8",
+      "Ketubot 2b:1",
+      "Ketubot 2b:2",
+      "Rashi on Ketubot 2a:7:1",
+      "Rashi on Ketubot 2b:6:1",
+      "Rashi on Ketubot 2b:6:2"
+    ],
+    "generatedAt": "2026-10-11T10:28:22.270Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולענין גיטין אינו כן</strong> - אלפיכך קאי דאשמעינן שעכבת האונס פוטרתו מן המזונות לענין גיטין אין טענת אונס מועלת אם נתן גט לאשתו ע\"מ אם לא אבא עד זמן פלוני יהא גט [ונאנס] ולא בא הרי זה גט ואינו יכול לומר אנוס הייתי:"
+  },
+  "Rashi on Ketubot 2b:5:2": {
+    "dependsOn": [
+      "Ketubot 2b:5",
+      "Rashi on Ketubot 2b:5:1",
+      "Rashi on Ketubot 2b:5:2"
+    ],
+    "generatedAt": "2026-10-11T10:30:14.936Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלמא קסבר אין אונס בגטין</strong> - אין טענת אונס בגיטין ולקמיה מפרש טעמא:"
+  },
+  "Rashi on Ketubot 2b:6:1": {
+    "dependsOn": [
+      "Ketubot 2b:6",
+      "Rashi on Ketubot 2b:6:1",
+      "Rashi on Ketubot 2b:6:2",
+      "Rashi on Ketubot 2b:6:3",
+      "Rashi on Ketubot 2b:2:1",
+      "Rashi on Ketubot 2b:2:2",
+      "Rashi on Ketubot 2b:4:1",
+      "Rashi on Ketubot 2b:5:1",
+      "Rashi on Ketubot 2a:1:1",
+      "Rashi on Ketubot 2a:1:2",
+      "Rashi on Ketubot 2a:1:3"
+    ],
+    "generatedAt": "2026-10-11T10:39:15.102Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינו גט</strong> - ואם אין לה בנים זקוקה ליבם:"
+  },
+  "Rashi on Ketubot 2b:6:2": {
+    "dependsOn": [
+      "Ketubot 2b:6",
+      "Rashi on Ketubot 2b:6:1",
+      "Rashi on Ketubot 2b:6:2",
+      "Rashi on Ketubot 2b:6:3",
+      "Gittin 76b:1",
+      "Rashi on Gittin 76b:1:1",
+      "Rashi on Gittin 76b:1:2"
+    ],
+    "generatedAt": "2026-10-11T10:41:15.009Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מת הוא דאינו גט</strong> - דהא לא שויא גיטא עד י\"ב חדש והוא מת בתוך הזמן ומאן קא מגרש לה מהשתא אין המתים מגרשים:"
+  },
+  "Rashi on Ketubot 2b:6:3": {
+    "dependsOn": [
+      "Ketubot 2b:6",
+      "Rashi on Ketubot 2b:6:1",
+      "Rashi on Ketubot 2b:6:2",
+      "Rashi on Ketubot 2b:6:3"
+    ],
+    "generatedAt": "2026-10-11T10:45:34.595Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מת הוא דאינו גט</strong> - משום דאין גט לאחר מיתה אבל משום אונס אחרינא לא מפקע גיטא אלמא אין אונס בגטין דאי סלקא דעתך חלה נמי אינו גט ניתני חלה וכל שכן מת שאין אונס גדול מזה:"
+  },
+  "Rashi on Ketubot 2b:7:1": {
+    "dependsOn": [
+      "Ketubot 2b:7",
+      "Rashi on Ketubot 2b:6:1",
+      "Rashi on Ketubot 2b:6:2",
+      "Rashi on Ketubot 2b:2:1",
+      "Rashi on Ketubot 2b:2:2",
+      "Rashi on Ketubot 2b:4:1",
+      "Rashi on Ketubot 2b:5:1",
+      "Rashi on Ketubot 2b:5:2",
+      "Rashi on Ketubot 2a:1:1",
+      "Rashi on Ketubot 2a:1:2",
+      "Rashi on Ketubot 2a:3:1",
+      "Rashi on Ketubot 2b:7:1"
+    ],
+    "generatedAt": "2026-10-11T10:54:26.731Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היא גופא קמ\"ל</strong> - כלומר האי דתנא מת לאו לדיוקא דילה תניה למידק הא חלה הרי זה גט אלא לאשמעינן היא גופא דאין גט לאחר מיתה ואפי' בלא תנאי כגון האומר לאשתו הרי זה גיטיך לאחר מותי אינו גט לפוטרה מן היבם:"
+  },
+  "Rashi on Ketubot 2b:8:1": {
+    "dependsOn": [
+      "Ketubot 2b:8",
+      "Rashi on Ketubot 2b:6:1",
+      "Rashi on Ketubot 2b:6:2",
+      "Rashi on Ketubot 2b:6:3",
+      "Rashi on Ketubot 2b:7:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:2:2",
+      "Rashi on Berakhot 2a:2:3",
+      "Rashi on Ketubot 2b:2:1",
+      "Rashi on Ketubot 2b:4:1",
+      "Rashi on Ketubot 2b:5:1",
+      "Rashi on Ketubot 2b:9:1"
+    ],
+    "generatedAt": "2026-10-11T10:59:49.308Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זה גיטך אם מתי</strong> - שכיב מרע שכתב גט לאשתו באחד מן הלשונות הללו זה גיטך אם מתי או זה גיטך מחולי זה משיפסוק חולי זה <span class=\"parenthesized\">(מעלי)</span> משמע והוא מת מאותו חולי לא אמר כלום שהרי משפסק אינו בחיים ואינו יכול לגרש:"
+  },
+  "Rashi on Ketubot 2b:9:1": {
+    "dependsOn": [
+      "Ketubot 2b:8",
+      "Ketubot 2b:9",
+      "Rashi on Ketubot 2b:9:1",
+      "Rashi on Ketubot 2b:9:2",
+      "Rashi on Ketubot 2b:9:3",
+      "Ketubot 2b:6",
+      "Ketubot 2b:7",
+      "Rashi on Ketubot 2b:2:1",
+      "Rashi on Ketubot 2b:5:1",
+      "Rashi on Ketubot 2b:6:1",
+      "Rashi on Ketubot 2b:10:1",
+      "Rashi on Ketubot 2a:1:1",
+      "Rashi on Ketubot 2a:1:2",
+      "Rashi on Ketubot 2a:2:1",
+      "Rashi on Ketubot 2a:3:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:4:1",
+      "Rashi on Berakhot 2a:5:1",
+      "Rashi on Berakhot 2a:8:1",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 2b:3:1",
+      "Rashi on Berakhot 2b:5:1"
+    ],
+    "generatedAt": "2026-10-11T11:12:05.168Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלמא</strong> - הא דאיצטריך סיפא אם לא באתי וכו' לאפוקי מדרבותינו איצטריך דפליגי עלה ואמרי דאין גט לאחר מיתה הוא דכיון דכתוב בגט זמן כתיבתו הוא מוכיח שכך אמר לה אם לא באתי לאותו זמן יהא גט למפרע מהיום דאי לא משוה גיטא עד שנים עשר חדש למה כתב יום כתיבת הגט בתוכו לכתוב אם לא באתי לר\"ח פלוני יהא גט:"
+  },
+  "Rashi on Ketubot 2b:9:2": {
+    "dependsOn": [
+      "Ketubot 2b:8",
+      "Ketubot 2b:9",
+      "Rashi on Ketubot 2b:9:1",
+      "Rashi on Ketubot 2b:9:2",
+      "Rashi on Ketubot 2b:9:3",
+      "Rashi on Ketubot 2a:1:1",
+      "Rashi on Ketubot 2a:1:2",
+      "Rashi on Ketubot 2b:2:1",
+      "Rashi on Ketubot 2b:5:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Ketubot 7a:1",
+      "Yevamot 2a:1",
+      "Steinsaltz on Ketubot 2b:9:1",
+      "Steinsaltz on Ketubot 2b:9"
+    ],
+    "generatedAt": "2026-10-11T11:18:39.799Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התירוה לינשא</strong> - בלא חליצה לההיא דאם לא באתי:"
+  },
+  "Rashi on Ketubot 2b:9:3": {
+    "dependsOn": [
+      "Rashi on Ketubot 2b:9:1",
+      "Rashi on Ketubot 2b:9:2",
+      "Rashi on Ketubot 2b:9:3",
+      "Rashi on Ketubot 2b:6:1",
+      "Rashi on Ketubot 2b:6:2",
+      "Rashi on Ketubot 2b:6:3",
+      "Rashi on Ketubot 2b:8:1",
+      "Ketubot 2b:2",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:4:1",
+      "Rashi on Berakhot 2a:5:1",
+      "Rashi on Ketubot 2b:4:1",
+      "Rashi on Ketubot 2b:5:1",
+      "Rashi on Ketubot 2b:5:2",
+      "Ketubot 2b:9",
+      "Rashi on Ketubot 2b:1:1",
+      "Rashi on Ketubot 2b:2:1",
+      "Rashi on Ketubot 2b:2:2"
+    ],
+    "generatedAt": "2026-10-11T11:23:13.033Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Ketubot 2b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זמנו של שטר מוכיח עליו</strong> - לא לחנם נכתב זמנו לתוכו אם לא להודיע שמיום הכתיבה והמסירה הוא מגרשה אם לא יבא לאותו זמן הלכך אע\"ג דלא כתב זה גיטך מהיום אם לא באתי כו' כמאן דכתב מהיום דמי ובבבא בתרא <span class=\"parenthesized\">(דף קלו.)</span> אמרה רבי יוסי דתנן הכותב נכסיו לבנו צריך שיכתוב מהיום ולאחר מיתה ואם לא כתב מהיום אינה מתנה רבי יוסי אומר אינו צריך:"
+  },
+  "Tosafot on Ketubot 2b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-11T11:49:40.504Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Ketubot 2b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלמא מת דוקא דלא ניחא ליה דתפול קמי יבם</strong> - וא\"ת בפרק מי שאחזו <span class=\"parenthesized\">(גיטין דף עג. ושם)</span> דאמרי' אכלו ארי אין לנו פירוש אין לנו שיהא גט ואמאי לא הוי גט הא לא ניחא ליה דתפול קמי יבם וי\"ל דבאונס דלא שכיח כלל לא אסיק אדעתיה שירצה שיהא גט:"
+  },
+  "Tosafot on Ketubot 2b:1:1": {
+    "dependsOn": [
+      "Ketubot 2b:1",
+      "Ketubot 2a:10",
+      "Ketubot 2a:11",
+      "Ketubot 2a:12",
+      "Ketubot 2a:13",
+      "Ketubot 2a:14",
+      "Yevamot 64b:8",
+      "Yevamot 64b:9",
+      "Yevamot 64b:10",
+      "Yevamot 64b:11",
+      "Yevamot 64b:12",
+      "Yevamot 64b:13",
+      "Yevamot 64b:14",
+      "Yevamot 64b:15",
+      "Yevamot 64b:1",
+      "Yevamot 64b:2",
+      "Yevamot 64b:3",
+      "Yevamot 64b:4",
+      "Yevamot 64b:5",
+      "Yevamot 64b:6",
+      "Yevamot 64b:7"
+    ],
+    "generatedAt": "2026-10-11T09:58:00.971Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Ketubot 2b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מציא אמרה ליה נסתחפה שדהו</strong> - ואינו יכול לטעון דאדרבה מזלה גרם דכיון דלא מיפקדא אפריה ורביה לא מיענשא כדאמרינן בהבא על יבמתו <span class=\"parenthesized\">(יבמות דף סד:)</span> ועוד דהאשה היא שדה של הבעל ואין הבעל שדה שלה:"
+  },
+  "Tosafot on Ketubot 2b:2:1": {
+    "dependsOn": [
+      "Tosafot on Ketubot 2b:2:1",
+      "Ketubot 2b:2",
+      "Tosafot on Ketubot 2b:2:2",
+      "Tosafot on Ketubot 2b:2:3",
+      "Tosafot on Ketubot 2a:1:1",
+      "Tosafot on Ketubot 2b:1:1",
+      "Rashi on Ketubot 2b:2:1",
+      "Rashi on Ketubot 2a:1:1",
+      "Rashi on Ketubot 2a:1:2",
+      "Tosafot on Berakhot 2a:1:1",
+      "Sanhedrin 3b:10",
+      "Sanhedrin 3b:13",
+      "Bava Kamma 112b:1",
+      "Bava Kamma 112b:4",
+      "Berakhot 29a:5"
+    ],
+    "generatedAt": "2026-10-11T10:09:42.936Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Ketubot 2b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פשיט רב אחאי</strong> - לא כמו שפירש רשב\"ם דהיינו רב אחאי גאון שעשה שאלתות והיה בסוף כל האמוראים ולכך משנה לשונו בכל הש\"ס פריך רב אחאי פשיט רב אחאי שהרי כאן רב אשי עונה על דבריו אלא אומר רבינו תם שהוא אמורא וכל אמורא היה תופס לשונו כמו מגדף בה ר' אבהו <span class=\"parenthesized\">(סנהדרין ג:)</span> תהי בה ר' יוחנן <span class=\"parenthesized\">(ב\"ק קיב:)</span> לייט עלה אביי <span class=\"parenthesized\">(ברכות כט.)</span>:"
+  },
+  "Tosafot on Ketubot 2b:2:2": {
+    "dependsOn": [
+      "Ketubot 2b:2",
+      "Ketubot 2b:3",
+      "Tosafot on Ketubot 2b:2:1",
+      "Tosafot on Ketubot 2b:2:2",
+      "Tosafot on Ketubot 2b:2:3",
+      "Tosafot on Ketubot 2a:1:1",
+      "Tosafot on Ketubot 2a:2:1",
+      "Tosafot on Ketubot 2a:3:1",
+      "Tosafot on Berakhot 2a:1:1",
+      "Tosafot on Berakhot 2a:1:2",
+      "Rashi on Ketubot 2b:2:1",
+      "Rashi on Ketubot 2b:2:2"
+    ],
+    "generatedAt": "2026-10-11T10:15:31.487Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Ketubot 2b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא נשאו לא קתני אלא לא נישאו</strong> - מקובלין היו כך לקרות לא נישאו ועוד דאי לא נשאו אאנשים קאי ה\"ל למימר נמי בלשון רבים ואוכלות משלהם:"
+  },
+  "Tosafot on Ketubot 2b:2:3": {
+    "dependsOn": [
+      "Ketubot 2b:2",
+      "Ketubot 2b:3",
+      "Tosafot on Ketubot 2b:2:1",
+      "Tosafot on Ketubot 2b:2:2",
+      "Tosafot on Ketubot 2b:2:3",
+      "Ketubot 2b:4",
+      "Tosafot on Berakhot 2a:1:1",
+      "Tosafot on Berakhot 2a:1:2",
+      "Tosafot on Ketubot 2b:6:1"
+    ],
+    "generatedAt": "2026-10-11T10:18:20.298Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Ketubot 2b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לא נישאו</strong> - פירוש דמשמע נמי דמעכבי אינהי אבל אין לומר דמשמע דוקא דמעכבי אינהי אבל לא אינהו מדקאמר לעולם דמעכבי אינהו ואיידי דתנא רישא בדידהי כו' דמשום איידי אין לשנות טעות בסיפא:"
+  },
+  "Tosafot on Ketubot 2b:6:1": {
+    "dependsOn": [
+      "Ketubot 2b:6",
+      "Tosafot on Ketubot 2b:2:1",
+      "Tosafot on Ketubot 2b:2:2",
+      "Tosafot on Ketubot 2a:1:1",
+      "Tosafot on Ketubot 2a:2:1"
+    ],
+    "generatedAt": "2026-10-11T10:47:53.913Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Ketubot 2b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מת הוא דאינו גט</strong> - דאין גט לאחר מיתה הא חלה הרי זה גט דאי חלה נמי אינו גט וטעמא דהכא דאינו גט משום אונס אם כן לישמעינן חלה דהוי אונס מועט וכ\"ש מת דהשתא אכתי לא אסיק אדעתיה דבמת איכא למימר ניחא ליה דלא תפול קמי יבם:"
+  },
+  "Tosafot on Ketubot 2b:7:1": {
+    "dependsOn": [
+      "Tosafot on Ketubot 2b:6:1",
+      "Tosafot on Ketubot 2b:8:1",
+      "Rashi on Ketubot 2b:7:1",
+      "Tosafot on Ketubot 2a:1:1",
+      "Tosafot on Ketubot 2b:2:1",
+      "Ketubot 2b:7",
+      "Ketubot 2b:6"
+    ],
+    "generatedAt": "2026-10-11T10:57:20.915Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Ketubot 2b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודלמא לעולם אימא לך חלה נמי אינו גט</strong> - ויש טענת אונס ודקאמר ליתני חלה וכ\"ש מת הא דקתני מת הא קמ\"ל דאין גט לאחר מיתה ואתא לאשמועינן תרוייהו דיש אונס ואין גט לאחר מיתה דאי יש אונס גרידא אתא לאשמועינן אבל יש גט לאחר מיתה הוה ליה למינקט חלה ואי אין גט לאחר מיתה גרידא הוה בעי לאשמועינן לא הוה ליה למינקט הרי זה גיטך אם לא באתי שעושה תנאי אלא הרי זה גיטיך לאחר מיתה:"
+  },
+  "Tosafot on Ketubot 2b:8:1": {
+    "dependsOn": [
+      "Ketubot 2b:8",
+      "Tosafot on Ketubot 2b:6:1",
+      "Tosafot on Ketubot 2b:7:1",
+      "Tosafot on Ketubot 2b:9:1",
+      "Tosafot on Berakhot 2a:1:1",
+      "Tosafot on Berakhot 2a:1:2"
+    ],
+    "generatedAt": "2026-10-11T11:05:44.915Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Ketubot 2b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי זה גיטיך אם מתי מחולי זה לאחר מיתה</strong> - לאחר מיתה הוי טעמא דכולהו כמו אתם ולא אפוטרופסין ולא שותפין ולא אריסין ולא כל התורם את שאינו שלו <span class=\"parenthesized\">(גיטין דף נב.)</span> דכולהו הוו משום תורם את שאינו שלו וא\"ת ההיא משנה גופה אמאי איצטריך הא תנן בהדיא בפ\"ק דגיטין <span class=\"parenthesized\">(דף יג. ושם)</span> דאין גט לאחר מיתה דתנן האומר תנו גט זה לאשתי לא יתנו לאחר מיתה ובפרק קמא דגיטין <span class=\"parenthesized\">(שם ד\"ה לא)</span> פירשנו:"
+  },
+  "Tosafot on Ketubot 2b:9:1": {
+    "dependsOn": [
+      "Ketubot 2b:8",
+      "Ketubot 2b:9",
+      "Rashi on Ketubot 2b:9:1",
+      "Rashi on Ketubot 2b:9:2",
+      "Rashi on Ketubot 2b:9:3",
+      "Rashba on Ketubot 2b:9:1",
+      "Ritva on Ketubot 2b:9:1",
+      "Steinsaltz In-Depth on Ketubot 2b:9:1"
+    ],
+    "generatedAt": "2026-10-11T11:25:36.359Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Ketubot 2b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלמא לאפוקי מדרבותינו</strong> - אבל מההיא דרישא לא שמעינן לאפוקי מדרבותינו דאיכא לאוקמה בשאין כתוב זמן בשטר והא דאמרינן <span class=\"parenthesized\">(בגיטין דף פו.)</span> שלשה גיטין פסולין וחד מינייהו שאין בו זמן הא אמרינן אם נשאת הולד כשר ומשום דאין גט לאחר מיתה קתני הכא לא אמר כלום אפילו נשאת אי נמי בשכתוב בו שבוע או שנה או חדש דאמר בפרק שני דגיטין <span class=\"parenthesized\">(דף יז:)</span> דכשר ואין זמנו מוכיח עליו אי נמי במאוחר:"
+  }
+}

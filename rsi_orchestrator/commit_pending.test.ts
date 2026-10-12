@@ -115,6 +115,44 @@ describe("formatPrTitle", () => {
       .toBe("rashi_tosafot_translation | claude");
   });
 
+  test("breaks non-contiguous Talmud page ranges in title", () => {
+    expect(formatPrTitle("rashi_tosafot_translation", "agy", [
+      "Bava Kamma 2a",
+      "Bava Kamma 9a",
+      "Bava Kamma 9b",
+      "Bava Kamma 10a",
+      "Bava Kamma 10b",
+    ])).toBe("rashi_tosafot_translation | agy: Bava Kamma 2a, 9a-10b");
+  });
+
+  test("breaks across gaps in PR 114 pages where 3a and 8a were absent", () => {
+    expect(formatPrTitle("rashi_tosafot_translation", "agy", [
+      "Bava Kamma 10a",
+      "Bava Kamma 2a",
+      "Bava Kamma 2b",
+      "Bava Kamma 3b",
+      "Bava Kamma 4a",
+      "Bava Kamma 4b",
+      "Bava Kamma 5a",
+      "Bava Kamma 5b",
+      "Bava Kamma 6a",
+      "Bava Kamma 6b",
+      "Bava Kamma 7a",
+      "Bava Kamma 7b",
+      "Bava Kamma 8b",
+      "Bava Kamma 9a",
+      "Bava Kamma 9b",
+    ])).toBe("rashi_tosafot_translation | agy: Bava Kamma 2a-2b, 3b-7b, 8b-10a");
+  });
+
+  test("formats contiguous ranges without breaks", () => {
+    expect(formatPrTitle("rashi_tosafot_translation", "agy", [
+      "Bava Kamma 2a",
+      "Bava Kamma 2b",
+      "Bava Kamma 3a",
+    ])).toBe("rashi_tosafot_translation | agy: Bava Kamma 2a-3a");
+  });
+
   test("truncates gracefully if page list is long", () => {
     const pages = [
       "Menachot 90a", "Chullin 2a", "Shabbat 15a", "Berakhot 2a", "Pesachim 10a",
