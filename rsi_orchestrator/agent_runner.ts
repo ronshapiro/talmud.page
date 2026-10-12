@@ -469,9 +469,9 @@ export function getOrCreateIsolatedAgyHomeDirectory(): string {
   }
 
   copyTokenSource(".gemini", "antigravity-cli", "antigravity-oauth-token");
-  copyTokenSource(".gemini", "jetski-standalone-oauth-token");
   copyTokenSource(".gemini", "antigravity-cli", "installation_id");
   copyTokenSource(".gemini", "installation_id");
+  copyTokenSource(".gemini", "jetski-standalone-oauth-token");
 
   processIsolatedAgyHomeDirectory = isolatedHomeDirectory;
   return isolatedHomeDirectory;
