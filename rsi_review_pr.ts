@@ -19,7 +19,7 @@ export interface ReviewDecisionRequest {
   // (e.g. recovering from an accidental reject where the base entry is unavailable).
   fallbackHebrew?: string;
   fallbackEnglish?: string;
-  // Only meaningful for "reject" — recorded in the PR body as the retry signal for a future run.
+  // Only meaningful for "reject" — recorded in the PR comment as the retry signal for a future run.
   reason?: string;
   // This client's own last-known review PR number (see js/RsiReviewControls.tsx), reused if it's
   // still open. Deliberately per-client rather than "any open PR from this flow" — two reviewers
@@ -66,7 +66,6 @@ async function githubRequest<T>(
 interface OpenReviewPr {
   number: number;
   headRef: string;
-  body: string;
 }
 
 /**
@@ -78,11 +77,11 @@ async function findKnownOpenPr(
   fetchImpl: FetchFn, token: string, knownPrNumber: number | undefined,
 ): Promise<OpenReviewPr | undefined> {
   if (!knownPrNumber) return undefined;
-  type PrEntry = {number: number; state: string; head: {ref: string}; body: string | null};
+  type PrEntry = {number: number; state: string; head: {ref: string}};
   const pr = await githubRequest<PrEntry>(
     fetchImpl, token, `/repos/${REPO}/pulls/${knownPrNumber}`);
   if (pr.state !== "open") return undefined;
-  return {number: pr.number, headRef: pr.head.ref, body: pr.body ?? ""};
+  return {number: pr.number, headRef: pr.head.ref};
 }
 
 /**
@@ -148,7 +147,7 @@ export async function openReviewDecisionPr(
   }
 
   const verb = decision === "approve" ? "Approve" : "Reject";
-  let message = `${verb} RSI translation for ${ref}`;
+  let commitMessage = `${verb} RSI translation for ${ref}`;
   const reviewerUsername = reviewerIdentity ?? username ?? "unknown";
   if (decision === "approve") {
     const resolvedHebrew = hebrew !== undefined ? hebrew : existing!.hebrew;
@@ -165,7 +164,7 @@ export async function openReviewDecisionPr(
   } else {
     delete edits[ref];
     if (reason) {
-      message += `: ${reason}`;
+      commitMessage += `: ${reason}`;
     }
   }
 
@@ -181,36 +180,44 @@ export async function openReviewDecisionPr(
   await githubRequest(fetchImpl, token, `/repos/${REPO}/contents/${encodedPath}`, {
     method: "PUT",
     body: JSON.stringify({
-      message,
+      message: commitMessage,
       content: Buffer.from(jsonStringify(edits)).toString("base64"),
       sha: file.sha,
       branch,
     }),
   });
 
-  const attribution = (reviewerIdentity ?? username) ? ` by ${reviewerIdentity ?? username}` : "";
-  const entryLine = `${message}${attribution} — via the review overlay at ${
-    new Date().toISOString()}.`;
+  const reviewer = reviewerIdentity ?? username;
+  const attribution = reviewer ? ` by ${reviewer}` : "";
+  const reasonSuffix = reason ? `: ${reason}` : "";
+  const commentBody = `${verb} — RSI translation for \`${ref}\`${attribution}${reasonSuffix}`;
+
+  let pullRequestNumber: number;
+  let pullRequestUrl: string;
 
   if (openPr) {
-    await githubRequest(fetchImpl, token, `/repos/${REPO}/pulls/${openPr.number}`, {
-      method: "PATCH",
-      body: JSON.stringify({body: `${openPr.body}\n${entryLine}`}),
-    });
-    return {url: `https://github.com/${REPO}/pull/${openPr.number}`, prNumber: openPr.number};
+    pullRequestNumber = openPr.number;
+    pullRequestUrl = `https://github.com/${REPO}/pull/${openPr.number}`;
+  } else {
+    type NewPullRequest = {html_url: string; number: number}; // eslint-disable-line camelcase
+    const pullRequest = await githubRequest<NewPullRequest>(
+      fetchImpl, token, `/repos/${REPO}/pulls`, {
+        method: "POST",
+        body: JSON.stringify({
+          title: "RSI review batch",
+          head: branch,
+          base: BASE_BRANCH,
+        }),
+      });
+    pullRequestNumber = pullRequest.number;
+    pullRequestUrl = pullRequest.html_url;
   }
 
-  type NewPr = {html_url: string; number: number}; // eslint-disable-line camelcase
-  const pr = await githubRequest<NewPr>(
-    fetchImpl, token, `/repos/${REPO}/pulls`, {
+  await githubRequest(
+    fetchImpl, token, `/repos/${REPO}/issues/${pullRequestNumber}/comments`, {
       method: "POST",
-      body: JSON.stringify({
-        title: "RSI review batch",
-        head: branch,
-        base: BASE_BRANCH,
-        body: entryLine,
-      }),
+      body: JSON.stringify({body: commentBody}),
     });
 
-  return {url: pr.html_url, prNumber: pr.number};
+  return {url: pullRequestUrl, prNumber: pullRequestNumber};
 }
