@@ -87,6 +87,8 @@ export interface GeneratedEdit {
   // full cost of producing the accepted edit, not just the last call.
   costUsd: number | undefined;
   contextRefsUsed: string[];
+  // Inference time of this call as reported by the backend, when it reports one (ollama does).
+  durationSeconds?: number;
 }
 
 export interface GenerationDeps {
@@ -669,6 +671,8 @@ export function parseJsonResponse<T>(text: string): T {
 
 export interface TaskExecutionOptions {
   backend?: AgentBackend;
+  // Backend used for critique, if different from `backend` (e.g. agy judging ollama output).
+  critiqueBackend?: AgentBackend;
   model?: string;
   critiqueModel?: string;
   modelConfig?: string;
@@ -713,6 +717,11 @@ export async function generateViaAgent(
       : generationPrompt(candidate, priorFeedback);
   }
 
+  if (backend === "ollama") {
+    promptText += "\n\nNo tools or lookups are available in this environment — ignore the tool "
+      + "instructions above and translate from the provided text and your own knowledge.";
+  }
+
   const result = await runner(
     promptText,
     {
@@ -747,6 +756,7 @@ export async function generateViaAgent(
     model: finalModel,
     costUsd: result.costUsd,
     contextRefsUsed: extractRequestedRefs(result.toolUses),
+    durationSeconds: result.durationSeconds,
   };
 }
 
@@ -759,8 +769,14 @@ export async function critiqueViaAgent(
     configName: options?.modelConfig,
     backend: options?.backend,
   });
-  const backend = options?.backend ?? modelConfig.backend ?? "claude";
+  // A separate critique backend (e.g. a local ollama generator judged by agy) resolves its own
+  // critique model from that backend's routing config rather than the generator's.
+  const critiqueBackendConfig = options?.critiqueBackend
+    ? getTaskModelConfig(TASK_TYPE, {backend: options.critiqueBackend})
+    : undefined;
+  const backend = options?.critiqueBackend ?? options?.backend ?? modelConfig.backend ?? "claude";
   const model = options?.critiqueModel
+    ?? critiqueBackendConfig?.critiqueModel
     ?? (options?.modelConfig
       ? modelConfig.critiqueModel
       : (options?.model ?? modelConfig.critiqueModel));

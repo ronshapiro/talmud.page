@@ -39,8 +39,13 @@ async function main(): Promise<void> {
       },
       limit: {type: "number", describe: "cap the number of candidates processed"},
       backend: {
-        choices: ["claude", "agy", "claude-long-thread", "agy-long-thread"] as const,
-        describe: 'agent backend to use ("claude", "agy", "claude-long-thread", or "agy-long-thread")',
+        choices: ["claude", "agy", "claude-long-thread", "agy-long-thread", "ollama"] as const,
+        describe: 'agent backend to use ("claude", "agy", "claude-long-thread", "agy-long-thread", or "ollama")',
+      },
+      critiqueBackend: {
+        choices: ["claude", "agy", "ollama"] as const,
+        alias: ["critique-backend"],
+        describe: "backend to use for critique if different from --backend (e.g. agy to judge ollama)",
       },
       modelConfig: {
         type: "string",
@@ -190,6 +195,7 @@ async function main(): Promise<void> {
       }
       return generateAndRecord(candidate, {
         backend: effectiveBackend,
+        critiqueBackend: FLAGS.critiqueBackend,
         model: FLAGS.model,
         modelConfig: FLAGS.modelConfig,
         debug: FLAGS.debug,
