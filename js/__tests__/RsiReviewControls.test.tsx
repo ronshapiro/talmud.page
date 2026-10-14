@@ -131,7 +131,12 @@ describe("RsiReviewControls", () => {
       })} />);
 
       click(queryAll(root, "button")[1]); // Edit
-      expect(queryAll(root, "textarea").length).toBe(2);
+      const textAreas = queryAll(root, "textarea") as HTMLTextAreaElement[];
+      expect(textAreas.length).toBe(2);
+      expect(textAreas[0].value).toBe("א");
+      expect(textAreas[1].value).toBe("a");
+      textAreas[0].value = "ב";
+      textAreas[1].value = "b";
 
       await flushAsync(
         () => click(query(root, ".modal-content .mdl-button--accent"))); // Submit edit
@@ -143,8 +148,8 @@ describe("RsiReviewControls", () => {
         key: "secret123",
         knownPrNumber: undefined,
         reviewerIdentity: IDENTITY,
-        hebrew: "א",
-        english: "a",
+        hebrew: "ב",
+        english: "b",
         fallbackHebrew: "א",
         fallbackEnglish: "a",
       });

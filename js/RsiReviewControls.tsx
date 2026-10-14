@@ -116,11 +116,11 @@ type ModalState =
  */
 export function RsiReviewControls({comment}: {comment: ApiComment}): React.ReactElement | null {
   const [editing, setEditing] = useState(false);
-  const [hebrew, setHebrew] = useState(() => flatten(comment.he) ?? "");
-  const [english, setEnglish] = useState(() => flatten(comment.en) ?? "");
   const [modal, setModal] = useState<ModalState | null>(null);
   const identityInputRef = useHtmlRef<HTMLInputElement>();
   const reasonRef = useHtmlRef<HTMLTextAreaElement>();
+  const hebrewInputRef = useHtmlRef<HTMLTextAreaElement>();
+  const englishInputRef = useHtmlRef<HTMLTextAreaElement>();
 
   const page = comment.pendingReview;
   if (!page || !getRsiReviewKey()) return null;
@@ -156,11 +156,7 @@ export function RsiReviewControls({comment}: {comment: ApiComment}): React.React
       <button
         type="button"
         className="rsi-review-button rsi-review-edit"
-        onClick={() => {
-          setHebrew(flatten(comment.he) ?? "");
-          setEnglish(flatten(comment.en) ?? "");
-          setEditing(true);
-        }}>
+        onClick={() => setEditing(true)}>
         Edit
       </button>
       <button
@@ -174,21 +170,17 @@ export function RsiReviewControls({comment}: {comment: ApiComment}): React.React
           content={(
             <div>
               <textarea
+                ref={hebrewInputRef}
                 dir="rtl"
                 rows={6}
                 className="mdl-textfield__input"
-                value={hebrew}
-                onChange={(event: React.ChangeEvent<HTMLTextAreaElement>) => {
-                  setHebrew(event.target.value);
-                }} />
+                defaultValue={flatten(comment.he) ?? ""} />
               <textarea
+                ref={englishInputRef}
                 dir="ltr"
                 rows={6}
                 className="mdl-textfield__input"
-                value={english}
-                onChange={(event: React.ChangeEvent<HTMLTextAreaElement>) => {
-                  setEnglish(event.target.value);
-                }} />
+                defaultValue={flatten(comment.en) ?? ""} />
             </div>
           )}
           cancelText="Cancel"
@@ -197,6 +189,8 @@ export function RsiReviewControls({comment}: {comment: ApiComment}): React.React
           acceptText="Submit edit"
           acceptTextHebrew="שלח עריכה"
           onAccept={() => withIdentity(identity => {
+            const hebrew = hebrewInputRef.current?.value;
+            const english = englishInputRef.current?.value;
             setEditing(false);
             postDecision(page, comment.ref, "approve", {
               hebrew,
