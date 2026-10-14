@@ -1,0 +1,872 @@
+{
+  "Rashi on Arakhin 16b:10:1": {
+    "dependsOn": [
+      "Arakhin 16b:10",
+      "Rashi on Arakhin 16b:10:1",
+      "Rashi on Arakhin 16b:10:2",
+      "Rashi on Arakhin 16b:10:3",
+      "Rashi on Arakhin 16b:14:1",
+      "Rashi on Arakhin 16b:21:1",
+      "Rashi on Arakhin 16b:8:1",
+      "Rashi on Arakhin 16b:8:2",
+      "Rashi on Arakhin 16b:8:3",
+      "Rashi on Arakhin 16b:9:1",
+      "Rashi on Arakhin 16b:9:2",
+      "Rashi on Berakhot 24a:1",
+      "Rashi on Shabbat 10a:1",
+      "Rashi on Bava Metzia 30b:1",
+      "Rashi on Arakhin 16b:1:1",
+      "Rashi on Arakhin 16b:2:1",
+      "Rashi on Arakhin 16b:3:1",
+      "Rashi on Arakhin 16b:4:1",
+      "Rashi on Arakhin 16b:5:1",
+      "Rashi on Arakhin 16b:6:1",
+      "Rashi on Arakhin 16b:7:1"
+    ],
+    "generatedAt": "2026-10-13T22:12:51.628Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד היכן</strong> - אדם חייב להוכיח את חבירו:"
+  },
+  "Rashi on Arakhin 16b:10:2": {
+    "dependsOn": [
+      "Rashi on Arakhin 16b:10:1",
+      "Rashi on Arakhin 16b:10:3",
+      "Steinsaltz on Arakhin 16b:10:1",
+      "Arakhin 16b:10"
+    ],
+    "generatedAt": "2026-10-13T22:16:40.449Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד הכאה</strong> - עד שיקצוף זה ויכה את המוכיח:"
+  },
+  "Rashi on Arakhin 16b:10:3": {
+    "dependsOn": [
+      "Arakhin 16b:10",
+      "Arakhin 16b:11",
+      "Arakhin 16b:12",
+      "Arakhin 16b:13",
+      "Rashi on Arakhin 16b:10:1",
+      "Rashi on Arakhin 16b:10:2",
+      "Rashi on Arakhin 16b:10:3",
+      "Rashi on Arakhin 16b:11:1",
+      "Rashi on Arakhin 16b:11:2",
+      "Rashi on Arakhin 16b:12:1",
+      "Rashi on Arakhin 16b:13:1"
+    ],
+    "generatedAt": "2026-10-13T22:20:49.720Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד קללה</strong> - שיקלל את המוכיח:<br>יהונתן הוכיח לשאול עד שקצף שאול:"
+  },
+  "Rashi on Arakhin 16b:14:1": {
+    "dependsOn": [
+      "Arakhin 16b:14",
+      "Arakhin 16b:15",
+      "Rashi on Arakhin 16b:14:1",
+      "Rashi on Arakhin 16b:14:2",
+      "Rashi on Arakhin 16b:10:1",
+      "Rashi on Arakhin 16b:10:2",
+      "Rashi on Arakhin 16b:15:1",
+      "Rashi on Arakhin 16b:15:2",
+      "Rashi on Arakhin 16b:16:1"
+    ],
+    "generatedAt": "2026-10-13T22:26:01.385Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיכה</strong> - בעל הבית את האכסנאי או את אשתו:"
+  },
+  "Rashi on Arakhin 16b:14:2": {
+    "dependsOn": [
+      "Arakhin 16b:14",
+      "Rashi on Arakhin 16b:14:1",
+      "Rashi on Arakhin 16b:14:2",
+      "Arakhin 16b:15",
+      "Jastrow on Arakhin 16b:15:1",
+      "Rashi on Arakhin 16b:15:1",
+      "Rashi on Arakhin 16b:15:2",
+      "Rashi on Arakhin 16b:16:1",
+      "Rashi on Arakhin 16b:16:2",
+      "Rashi on Arakhin 16b:16:3",
+      "Rashi on Arakhin 16b:16:4"
+    ],
+    "generatedAt": "2026-10-13T22:32:57.233Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד שיפשיל</strong> - בעל הבית כלי האכסנאי לאחוריו להשליכם מן הבית:"
+  },
+  "Rashi on Arakhin 16b:15:1": {
+    "dependsOn": [
+      "Arakhin 16b:15",
+      "Rashi on Arakhin 16b:15:1",
+      "Rashi on Arakhin 16b:15:2",
+      "Rashi on Arakhin 16b:14:1",
+      "Rashi on Arakhin 16b:14:2",
+      "Rashi on Arakhin 16b:10:1",
+      "Rashi on Arakhin 16b:10:2",
+      "Rashi on Arakhin 16b:10:3",
+      "Rashi on Arakhin 16b:16:1",
+      "Rashi on Arakhin 16b:16:2",
+      "Rashi on Arakhin 16b:16:3",
+      "Rashi on Arakhin 16b:16:4"
+    ],
+    "generatedAt": "2026-10-13T22:37:48.804Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:15:1"
+    ],
+    "sourceText": "בהפשלה ובהכאה דאכסנאי גופיה כ\"ע לא פליגי דתו לא מצי קאי: שמואל סבר כיון דלדידיה אינו מכה מאי נפקא ליה מיניה הלכך עד הפשלה:"
+  },
+  "Rashi on Arakhin 16b:15:2": {
+    "dependsOn": [
+      "Arakhin 16b:15",
+      "Rashi on Arakhin 16b:15:1",
+      "Rashi on Arakhin 16b:15:2",
+      "Jastrow, לאטרודי",
+      "Jastrow on Arakhin 16b:15:1",
+      "Rashi on Arakhin 16b:18:1",
+      "Rashi on Arakhin 16b:21:1",
+      "Rashi on Arakhin 16b:22:1",
+      "Rashi on Arakhin 16b:1:1",
+      "Rashi on Arakhin 16b:3:1",
+      "Rashi on Arakhin 16b:5:1",
+      "Jastrow on Arakhin 16b:15",
+      "Jastrow on Arakhin 16b:3:1",
+      "Rashi on Arakhin 16a:1:1",
+      "Rashi on Arakhin 16a:2:1",
+      "Rashi on Arakhin 15b:1:1"
+    ],
+    "generatedAt": "2026-10-13T22:44:44.153Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאטרודי</strong> - להתקוטט:"
+  },
+  "Rashi on Arakhin 16b:16:1": {
+    "dependsOn": [
+      "Rashi on Arakhin 16b:16:1",
+      "Rashi on Arakhin 16b:16:2",
+      "Rashi on Arakhin 16b:16:3",
+      "Rashi on Arakhin 16b:16:4"
+    ],
+    "generatedAt": "2026-10-13T22:48:26.991Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכל כך למה</strong> - לו לסבול:"
+  },
+  "Rashi on Arakhin 16b:16:2": {
+    "dependsOn": [
+      "Arakhin 16b:16",
+      "Rashi on Arakhin 16b:16:1",
+      "Rashi on Arakhin 16b:16:2",
+      "Rashi on Arakhin 16b:16:3",
+      "Rashi on Arakhin 16b:16:4",
+      "Jastrow on Arakhin 16b:16:1",
+      "Rashi on Arakhin 16b:14:1",
+      "Rashi on Arakhin 16b:14:2"
+    ],
+    "generatedAt": "2026-10-13T22:52:17.249Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אכסנאי</strong> - המשנה מאכסניא שלו:"
+  },
+  "Rashi on Arakhin 16b:16:3": {
+    "dependsOn": [
+      "Arakhin 16b:16",
+      "Rashi on Arakhin 16b:16:1",
+      "Rashi on Arakhin 16b:16:2",
+      "Rashi on Arakhin 16b:16:3",
+      "Rashi on Arakhin 16b:16:4"
+    ],
+    "generatedAt": "2026-10-13T22:58:59.669Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:16:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פוגם</strong> - בעל הבית:"
+  },
+  "Rashi on Arakhin 16b:16:4": {
+    "dependsOn": [
+      "Rashi on Arakhin 16b:16:1",
+      "Rashi on Arakhin 16b:16:2",
+      "Rashi on Arakhin 16b:16:3",
+      "Rashi on Arakhin 16b:16:4",
+      "Rashi on Arakhin 16b:10:1",
+      "Rashi on Arakhin 16b:10:2",
+      "Rashi on Arakhin 16b:15:1",
+      "Steinsaltz on Arakhin 16b:16",
+      "Arakhin 16b:16"
+    ],
+    "generatedAt": "2026-10-13T23:02:06.831Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:16:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונפגם</strong> - הוא עצמו דאמרי אינשי כמה קשים אלו שלא יוכלו לדור יחד:"
+  },
+  "Rashi on Arakhin 16b:18:1": {
+    "dependsOn": [
+      "Arakhin 16b:18"
+    ],
+    "generatedAt": "2026-10-13T23:03:59.225Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למסעיו</strong> - בדרך שהיה רגיל לחנות ממסע למסע שלא שינה בית מלוניו:"
+  },
+  "Rashi on Arakhin 16b:18:2": {
+    "dependsOn": [
+      "Arakhin 16b:17",
+      "Arakhin 16b:18",
+      "Rashi on Arakhin 16b:18:1",
+      "Rashi on Arakhin 16b:14:1",
+      "Rashi on Arakhin 16b:14:2",
+      "Rashi on Arakhin 16b:16:1",
+      "Rashi on Arakhin 16b:16:2",
+      "Rashi on Arakhin 16b:16:3",
+      "Rashi on Arakhin 16b:16:4",
+      "Rashi on Arakhin 16b:8:1",
+      "Rashi on Arakhin 16b:10:1",
+      "Rashi on Arakhin 16b:10:2",
+      "Rashi on Arakhin 16b:10:3",
+      "Rashi on Arakhin 16a:1:1",
+      "Rashi on Arakhin 16a:2:1",
+      "Rashi on Arakhin 16a:3:1",
+      "Rashi on Arakhin 16a:4:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:4:1",
+      "Rashi on Berakhot 2a:5:1",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 2b:3:1",
+      "Rashi on Berakhot 2b:4:1",
+      "Rashi on Berakhot 2b:5:1",
+      "Rashi on Berakhot 4b:1:1",
+      "Rashi on Berakhot 4b:2:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3",
+      "Rashi on Berakhot 3a:1:1"
+    ],
+    "generatedAt": "2026-10-13T23:08:46.895Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאקראי</strong> - כגון אכסנאי שבדרך שלן שם במקרה בעלמא ששקעה לו שם חמה. למאן דאמר מאהלו לא חשיב אלא אכסניא קבועה ומאן דאמר ממסעיו חשיב אפילו דאקראי:"
+  },
+  "Rashi on Arakhin 16b:1:1": {
+    "dependsOn": [
+      "Arakhin 16b:1",
+      "Arakhin 16a:16",
+      "Arakhin 16a:17",
+      "Arakhin 16a:18",
+      "Arakhin 16a:19",
+      "Arakhin 16a:20",
+      "Arakhin 16a:21",
+      "Arakhin 16a:22",
+      "Arakhin 16a:23",
+      "Arakhin 16a:1",
+      "Arakhin 16a:14",
+      "Arakhin 16a:15",
+      "Rashi on Arakhin 16a:15:1",
+      "Rashi on Arakhin 16a:15:2",
+      "Rashi on Arakhin 16a:17:1",
+      "Rashi on Arakhin 2a:1:1",
+      "Rashi on Arakhin 15b:1:1"
+    ],
+    "generatedAt": "2026-10-13T20:50:07.940Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בפרהסיא</strong> - דאמעשה קול הוא מעיל מכפר:"
+  },
+  "Rashi on Arakhin 16b:21:1": {
+    "dependsOn": [
+      "Rashi on Arakhin 16b:21:1",
+      "Rashi on Arakhin 16b:21:2",
+      "Rashi on Arakhin 16b:21:3",
+      "Rashi on Arakhin 16b:10:1",
+      "Rashi on Arakhin 16b:10:2",
+      "Rashi on Arakhin 16b:14:1",
+      "Rashi on Arakhin 16b:16:1",
+      "Arakhin 16b:21",
+      "Arakhin 16b:8",
+      "Rashi on Arakhin 16a:1:1",
+      "Rashi on Arakhin 16a:2:1",
+      "Rashi on Arakhin 15b:1:1"
+    ],
+    "generatedAt": "2026-10-13T23:18:24.747Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תכלית יסורין</strong> - סוף מדת יסורין כלומר יסורין שאין פחותין מהן:"
+  },
+  "Rashi on Arakhin 16b:21:2": {
+    "dependsOn": [
+      "Arakhin 16b:21",
+      "Rashi on Arakhin 16b:21:1",
+      "Rashi on Arakhin 16b:21:2",
+      "Rashi on Arakhin 16b:21:3",
+      "Rashi on Arakhin 16b:16:1",
+      "Rashi on Arakhin 16b:16:2",
+      "Rashi on Arakhin 16b:22:1",
+      "Rashi on Arakhin 16b:23:1",
+      "Rashi on Arakhin 16b:8:1",
+      "Rashi on Arakhin 16b:8:2",
+      "Rashi on Arakhin 16b:9:1",
+      "Rashi on Arakhin 16b:10:1",
+      "Rashi on Arakhin 16a:1:1",
+      "Rashi on Arakhin 16a:2:1",
+      "Rashi on Arakhin 17a:1:1"
+    ],
+    "generatedAt": "2026-10-13T23:20:43.544Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:21:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואינו מתקבל עליו</strong> - שאינו למדתו כהגון וצער הוא לו:"
+  },
+  "Rashi on Arakhin 16b:21:3": {
+    "dependsOn": [
+      "Arakhin 16b:21",
+      "Rashi on Arakhin 16b:21:1",
+      "Rashi on Arakhin 16b:21:2",
+      "Rashi on Arakhin 16b:21:3"
+    ],
+    "generatedAt": "2026-10-13T23:22:26.910Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:21:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למזוג</strong> - כוס של יין במים חמין:"
+  },
+  "Rashi on Arakhin 16b:22:1": {
+    "dependsOn": [
+      "Arakhin 16b:22",
+      "Rashi on Arakhin 16b:21:1",
+      "Rashi on Arakhin 16b:21:2",
+      "Rashi on Arakhin 16b:21:3",
+      "Rashi on Arakhin 16b:22:1",
+      "Rashi on Arakhin 16b:23:1",
+      "Steinsaltz on Arakhin 16b:22:1",
+      "Mei HaShiloach on Arakhin 16b:22:1",
+      "Rashi on Arakhin 16b:1:1",
+      "Rashi on Arakhin 16b:3:1",
+      "Rashi on Arakhin 16b:4:1",
+      "Rashi on Arakhin 16b:5:1",
+      "Rashi on Arakhin 15b:1:1",
+      "Rashi on Arakhin 15a:1:1",
+      "Rashi on Arakhin 14a:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Rosh Hashanah 20a:1:1"
+    ],
+    "generatedAt": "2026-10-13T23:25:33.981Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נהפך לו חלוקו</strong> - שלא לבשה כסדר וצריך להופכה ולפושטה:"
+  },
+  "Rashi on Arakhin 16b:23:1": {
+    "dependsOn": [
+      "Arakhin 16b:23",
+      "Rashi on Arakhin 16b:21:1",
+      "Rashi on Arakhin 16b:22:1",
+      "Rashi on Arakhin 16b:1:1",
+      "Rashi on Arakhin 16b:2:1",
+      "Rashi on Arakhin 16b:3:1",
+      "Rashi on Arakhin 2a:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Arakhin 16b:10:1",
+      "Rashi on Arakhin 16b:10:2",
+      "Rashi on Arakhin 16b:10:3"
+    ],
+    "generatedAt": "2026-10-13T23:28:51.151Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלש ועלו בידו שתים</strong> - איכא טירחא למיהדר ולמשקל שלישית:"
+  },
+  "Rashi on Arakhin 16b:24:1": {
+    "dependsOn": [
+      "Arakhin 16b:24",
+      "Rashi on Arakhin 16b:24:1",
+      "Rashi on Arakhin 16b:24:2",
+      "Rashi on Arakhin 16b:14:1",
+      "Rashi on Arakhin 16b:15:1",
+      "Rashi on Arakhin 16b:16:1",
+      "Rashi on Arakhin 16b:16:2",
+      "Rashi on Arakhin 16b:21:1",
+      "Rashi on Arakhin 16b:4:1",
+      "Rashi on Arakhin 16b:5:1",
+      "Rashi on Arakhin 16b:8:1",
+      "Rashi on Arakhin 16b:10:1",
+      "Rashi on Arakhin 16a:1:1",
+      "Rashi on Arakhin 16a:2:1",
+      "Rashi on Arakhin 15b:1:1",
+      "Rashi on Arakhin 15a:1:1",
+      "Rashi on Arakhin 2a:1:1",
+      "Rashi on Arakhin 2b:1:1",
+      "Steinsaltz on Arakhin 16b:10:1",
+      "Arakhin 16b:10"
+    ],
+    "generatedAt": "2026-10-13T23:34:19.961Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכל כך למה</strong> - כלומר למאי הילכתא הוו יסורין:"
+  },
+  "Rashi on Arakhin 16b:24:2": {
+    "dependsOn": [
+      "Arakhin 16b:24",
+      "Rashi on Arakhin 16b:24:1",
+      "Rashi on Arakhin 16b:21:1",
+      "Rashi on Arakhin 16b:21:2",
+      "Rashi on Arakhin 16b:21:3",
+      "Rashi on Arakhin 16b:22:1",
+      "Rashi on Arakhin 16b:23:1",
+      "Steinsaltz on Arakhin 16b:24:1",
+      "Maharsha on Arakhin 16b:24:1",
+      "Rashi on Arakhin 16b:16:1",
+      "Rashi on Arakhin 16b:16:2",
+      "Rashi on Arakhin 16b:16:3",
+      "Rashi on Arakhin 16a:5:1",
+      "Rashi on Arakhin 16a:6:1"
+    ],
+    "generatedAt": "2026-10-13T23:37:01.520Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:24:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קיבל עולמו</strong> - כל מנוחתו לעתיד ואי עבר עליה חד מהנך הרי הוא יסורין:"
+  },
+  "Rashi on Arakhin 16b:2:1": {
+    "dependsOn": [
+      "Arakhin 16b:2"
+    ],
+    "generatedAt": "2026-10-13T20:52:05.976Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוא הבדיל</strong> - שעל לשון הרע באו נגעים עליו:"
+  },
+  "Rashi on Arakhin 16b:3:1": {
+    "dependsOn": [
+      "Arakhin 16b:3",
+      "Rashi on Arakhin 16b:3:1",
+      "Rashi on Arakhin 16b:3:2",
+      "Jastrow on Arakhin 16b:3:1"
+    ],
+    "generatedAt": "2026-10-13T21:04:28.283Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פטיט</strong> - לשון קול היוצא בחשאי ובלע\"ז פולי\"ר:"
+  },
+  "Rashi on Arakhin 16b:3:2": {
+    "dependsOn": [
+      "Arakhin 16b:3",
+      "Rashi on Arakhin 16b:3:1",
+      "Steinsaltz on Arakhin 16b:3:1"
+    ],
+    "generatedAt": "2026-10-13T21:08:10.127Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יביא קרבן פטיט</strong> - שהצפרים צועקין בכל שעה:"
+  },
+  "Rashi on Arakhin 16b:4:1": {
+    "dependsOn": [
+      "Arakhin 16b:4",
+      "Rashi on Arakhin 16b:4:1",
+      "Rashi on Arakhin 16b:4:2",
+      "Rashi on Arakhin 16b:5:1",
+      "Maharsha on Arakhin 16b:4:1",
+      "Steinsaltz on Arakhin 16b:4:1",
+      "Torah Temima on Arakhin 16b:4:1"
+    ],
+    "generatedAt": "2026-10-13T21:10:44.317Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יכול לא יכנו</strong> - על דבר תוכחה:"
+  },
+  "Rashi on Arakhin 16b:4:2": {
+    "dependsOn": [
+      "Arakhin 16b:4",
+      "Rashi on Arakhin 16b:4:1",
+      "Rashi on Arakhin 16b:4:2"
+    ],
+    "generatedAt": "2026-10-13T21:23:37.487Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יסטרנו</strong> - כלאחר יד:"
+  },
+  "Rashi on Arakhin 16b:5:1": {
+    "dependsOn": [
+      "Arakhin 16b:5",
+      "Rashi on Arakhin 16b:4:1",
+      "Rashi on Arakhin 16b:4:2",
+      "Rashi on Arakhin 16a:1:1",
+      "Rashi on Arakhin 15b:1:1"
+    ],
+    "generatedAt": "2026-10-13T21:26:53.823Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ופניו משתנין</strong> - שיוכיחנו ברבים להלבין פניו:"
+  },
+  "Rashi on Arakhin 16b:6:1": {
+    "dependsOn": [
+      "Arakhin 16b:6",
+      "Rashi on Arakhin 16b:6:2",
+      "Rashi on Arakhin 16b:1:1",
+      "Rashi on Arakhin 16b:2:1",
+      "Rashi on Arakhin 16b:3:1",
+      "Rashi on Arakhin 16b:4:1",
+      "Rashi on Arakhin 16b:5:1",
+      "Rashi on Arakhin 16a:1:1",
+      "Rashi on Arakhin 16a:2:1",
+      "Rashi on Arakhin 16a:3:1",
+      "Rashi on Arakhin 2a:1:1"
+    ],
+    "generatedAt": "2026-10-13T21:38:17.854Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קיסם</strong> - כלומר עון קטן שבידך זה יכול לומר לו טול אתה עון גדול שבידך הלכך אין יכולין להוכיח שכולן חוטאים:"
+  },
+  "Rashi on Arakhin 16b:6:2": {
+    "dependsOn": [
+      "Arakhin 16b:6",
+      "Rashi on Arakhin 16b:6:1",
+      "Rashi on Arakhin 16b:6:2",
+      "Arakhin 16b:4",
+      "Rashi on Arakhin 16b:4:1",
+      "Rashi on Arakhin 16b:4:2",
+      "Arakhin 16b:5",
+      "Rashi on Arakhin 16b:5:1",
+      "Rashi on Arakhin 16b:1:1",
+      "Rashi on Arakhin 16b:2:1",
+      "Rashi on Arakhin 16b:3:1",
+      "Rashi on Arakhin 16b:3:2",
+      "Rashi on Arakhin 15b:1:1",
+      "Rashi on Arakhin 15b:2:1"
+    ],
+    "generatedAt": "2026-10-13T21:41:17.755Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיודע להוכיח</strong> - דרך כבוד שלא יהו פניו משתנין:"
+  },
+  "Rashi on Arakhin 16b:7:1": {
+    "dependsOn": [
+      "Rashi on Arakhin 16b:6:1",
+      "Rashi on Arakhin 16b:6:2",
+      "Rashi on Arakhin 16b:7:1",
+      "Arakhin 16b:7",
+      "Rashi on Arakhin 16b:4:1",
+      "Rashi on Arakhin 16b:4:2",
+      "Rashi on Arakhin 16b:5:1",
+      "Rashi on Arakhin 16a:1:1",
+      "Rashi on Arakhin 16a:2:1"
+    ],
+    "generatedAt": "2026-10-13T21:45:29.031Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קובל עליו</strong> - כשהייתי רואה בו דבר גנאי:"
+  },
+  "Rashi on Arakhin 16b:8:1": {
+    "dependsOn": [
+      "Arakhin 16b:8",
+      "Rashi on Arakhin 16b:8:1",
+      "Rashi on Arakhin 16b:8:2",
+      "Rashi on Arakhin 16b:8:3"
+    ],
+    "generatedAt": "2026-10-13T21:47:56.464Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תוכחה לשמה</strong> - לשם שמים:"
+  },
+  "Rashi on Arakhin 16b:8:2": {
+    "dependsOn": [
+      "Rashi on Arakhin 16b:8:1",
+      "Rashi on Arakhin 16b:8:2",
+      "Rashi on Arakhin 16b:8:3",
+      "Arakhin 16b:8",
+      "Arakhin 16b:9",
+      "Rashi on Arakhin 16b:9:1",
+      "Rashi on Arakhin 16b:9:2",
+      "Rashi on Arakhin 16b:4:1",
+      "Rashi on Arakhin 16b:5:1",
+      "Rashi on Arakhin 16b:6:1"
+    ],
+    "generatedAt": "2026-10-13T21:52:20.551Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וענוה שלא לשמה</strong> - שעושה עצמו עניו שאינו רוצה להוכיחו ואותה ענוה שלא לשם שמים הוא אלא שלא ישנאנו:"
+  },
+  "Rashi on Arakhin 16b:8:3": {
+    "dependsOn": [
+      "Rashi on Arakhin 16b:8:1",
+      "Rashi on Arakhin 16b:8:2",
+      "Rashi on Arakhin 16b:8:3",
+      "Arakhin 16b:8",
+      "Rashi on Arakhin 16b:1:1",
+      "Rashi on Arakhin 16b:2:1",
+      "Rashi on Arakhin 16b:3:1",
+      "Rashi on Arakhin 16b:4:1",
+      "Rashi on Arakhin 16b:5:1",
+      "Rashi on Arakhin 16a:1:1",
+      "Rashi on Arakhin 16a:2:1",
+      "Rashi on Arakhin 16a:3:1"
+    ],
+    "generatedAt": "2026-10-13T21:55:49.436Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאמר מר</strong> - במסכת עבודה זרה בפ\"ק <span class=\"parenthesized\">(דף כ:)</span> ענוה גדולה מכולן דכתיב יען משח אותי לבשר ענוים לבשר חסידים לא נאמר:"
+  },
+  "Rashi on Arakhin 16b:9:1": {
+    "dependsOn": [
+      "Arakhin 16b:9",
+      "Rashi on Arakhin 16b:8:1",
+      "Rashi on Arakhin 16b:8:2",
+      "Rashi on Arakhin 16b:8:3",
+      "Rashi on Arakhin 16b:9:2",
+      "Rashi on Arakhin 16b:10:1",
+      "Rashi on Arakhin 16a:1:1",
+      "Rashi on Arakhin 16a:2:1",
+      "Rashi on Arakhin 16a:3:1",
+      "Rashi on Arakhin 16a:4:1",
+      "Rashi on Arakhin 16a:5:1",
+      "Rashi on Arakhin 2a:1:1",
+      "Rashi on Arakhin 2a:1:2",
+      "Rashi on Arakhin 2a:2:1",
+      "Rashi on Rosh Hashanah 20a:3:1",
+      "Rashi on Rosh Hashanah 20a:4:1",
+      "Rashi on Rosh Hashanah 20a:5:1",
+      "Rashi on Rosh Hashanah 20a:6:1",
+      "Rashi on Rosh Hashanah 20a:1:1",
+      "Rashi on Rosh Hashanah 20a:2:1",
+      "Rashi on Rosh Hashanah 19b:1:1",
+      "Rashi on Rosh Hashanah 19b:2:1"
+    ],
+    "generatedAt": "2026-10-13T22:02:33.889Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ליה רבי חייא</strong> - לשמואל חזי מר דקא מצער לן רב הונא שמכה וחובט אותי:"
+  },
+  "Rashi on Arakhin 16b:9:2": {
+    "dependsOn": [
+      "Arakhin 16b:9",
+      "Rashi on Arakhin 16b:9:1",
+      "Tosafot on Arakhin 16b:9:1",
+      "Rosh on Arakhin 16b:9:1",
+      "Rashi on Arakhin 16b:8:1",
+      "Rashi on Arakhin 16b:8:2",
+      "Rashi on Arakhin 16b:10:1",
+      "Rashi on Arakhin 16b:1:1",
+      "Rashi on Arakhin 16b:3:1",
+      "Rashi on Arakhin 16b:4:1",
+      "Rashi on Arakhin 16b:5:1",
+      "Rashi on Arakhin 16a:1:1",
+      "Rashi on Arakhin 15b:1:1",
+      "Rashi on Arakhin 16a:2:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 12b:5:1",
+      "Rashi on Berakhot 13a:3:1",
+      "Tosafot on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-10-13T22:07:14.248Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 16b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי נפק</strong> - חייא בר רב אמר ליה רב הונא לשמואל להכי מצערנא ליה דהכי והכי עביד דברים מגונים והיינו ענוה שלא לשמה דלא אמר ליה בפניו ושלא בפניו סיפר בגנותו:"
+  },
+  "Tosafot on Arakhin 16b:13:1": {
+    "dependsOn": [
+      "Arakhin 16b:10",
+      "Arakhin 16b:11",
+      "Arakhin 16b:12",
+      "Arakhin 16b:13",
+      "Maharsha on Arakhin 16b:13:1",
+      "Tosafot on Arakhin 16b:8:1",
+      "Tosafot on Arakhin 16b:9:1",
+      "Tosafot on Arakhin 16b:19:1"
+    ],
+    "generatedAt": "2026-10-13T22:24:22.099Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Arakhin 16b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומאן דאמר עד נזיפה הא כתיב הכאה וקללה</strong> - ואם תאמר למאן דאמר נמי קללה הא כתיב הכאה וי\"ל שמא כדמשני אגב חביבותא דיונתן אי נמי לא דריש ליה קרא דויטל שאול כיון דליתיה בהאי קרא דויחר אף שאול אלא קרא אחרינא הוא:"
+  },
+  "Tosafot on Arakhin 16b:19:1": {
+    "dependsOn": [
+      "Arakhin 16b:19",
+      "Arakhin 16b:20",
+      "Tosafot on Arakhin 16b:19:2",
+      "Tosafot on Arakhin 16b:8:1",
+      "Tosafot on Arakhin 16b:9:1",
+      "Tosafot on Arakhin 16b:13:1",
+      "Tosafot on Arakhin 16b:19:1"
+    ],
+    "generatedAt": "2026-10-13T23:10:59.508Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Arakhin 16b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\"><span class=\"parenthesized\">(לעיל)</span> לעולם אל ישנה אדם מאומנות אביו ומאומנות אבותיו</strong> - ומייתי ראיה שאמו היתה מבני דן ולקח לו אומנות אבותיו:"
+  },
+  "Tosafot on Arakhin 16b:19:2": {
+    "dependsOn": [
+      "Arakhin 16b:19",
+      "Tosafot on Arakhin 16b:19:1",
+      "Tosafot on Arakhin 16b:19:2",
+      "Rashi on Arakhin 16b:20:1",
+      "Maharsha on Arakhin 16b:20:1",
+      "Steinsaltz In-Depth on Arakhin 16b:19:1",
+      "Versions on Arakhin 16b:19:1",
+      "Versions on Arakhin 16b:20:1",
+      "Tosafot on Arakhin 16b:8:1",
+      "Tosafot on Arakhin 16b:9:1",
+      "Tosafot on Arakhin 16b:13:1",
+      "Arakhin 16a:10",
+      "Tosafot on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-10-13T23:15:23.281Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Arakhin 16b:19:2"
+    ],
+    "sourceText": "הכי גרסינן דאמר מר אימיה מדן ואבוה מנפתלי דבדברי הימים <span class=\"parenthesized\">(ב ב)</span> כתיב ואמו מבני דן:"
+  },
+  "Tosafot on Arakhin 16b:8:1": {
+    "dependsOn": [
+      "Arakhin 16b:8",
+      "Arakhin 16b:9",
+      "Rashi on Arakhin 16b:8:1",
+      "Rashi on Arakhin 16b:8:2",
+      "Rashi on Arakhin 16b:8:3",
+      "Rashi on Arakhin 16b:9:1",
+      "Rashi on Arakhin 16b:9:2",
+      "Tosafot on Arakhin 16b:9:1",
+      "Tosafot on Arakhin 16b:13:1",
+      "Maharsha on Arakhin 16b:8:1",
+      "Steinsaltz In-Depth on Arakhin 16b:8:1",
+      "Steinsaltz In-Depth on Arakhin 16b:8:2",
+      "Tosafot on Arakhin 16b:19:1",
+      "Tosafot on Arakhin 16b:19:2",
+      "Tosafot on Arakhin 16a:5:1",
+      "Tosafot on Arakhin 16a:6:1",
+      "Tosafot on Arakhin 16a:7:1",
+      "Tosafot on Arakhin 16a:8:1"
+    ],
+    "generatedAt": "2026-10-13T21:58:47.645Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Arakhin 16b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וענוה שלא לשמה</strong> - שעושה עצמו עניו ואינו רוצה להוכיחו ואותה ענוה לא לשם שמים היא אלא שלא ישנאנו וי\"מ ענוה שלא לשמה פירוש משום גאוה או שיאמרו אדם עניו הוא ומשפיל עצמו ושותק בחירופו ועלבונו ולא לשם שמים אלא לקנות שם אבל <span class=\"rashi-quotation\">בקונט'</span> שפירש ענוה שלא לשמה שמונע תוכחה מן הצריכים לא ישר אלי דהוה רשע גמור:"
+  },
+  "Tosafot on Arakhin 16b:9:1": {
+    "dependsOn": [
+      "Arakhin 16b:9",
+      "Rashi on Arakhin 16b:9:1",
+      "Rashi on Arakhin 16b:9:2",
+      "Tosafot on Arakhin 16b:8:1",
+      "Rosh on Arakhin 16b:9:1",
+      "Maharsha on Arakhin 16b:9:1"
+    ],
+    "generatedAt": "2026-10-13T22:09:47.618Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Arakhin 16b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חס ליה דליכסוף זרעיה דרב על ידאי</strong> - וזהו ענוה שלא לשמה שהניחו לביישו משום כבוד אביו:"
+  }
+}

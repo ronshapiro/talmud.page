@@ -1,0 +1,340 @@
+{
+  "Rashi on Arakhin 13a:10:1": {
+    "dependsOn": [
+      "Arakhin 13a:10",
+      "Rashi on Arakhin 13a:10:1",
+      "Rashi on Arakhin 13a:9:1",
+      "Rashi on Arakhin 13a:9:2",
+      "Rashi on Arakhin 13a:11:1",
+      "Rashi on Arakhin 12a:1:1",
+      "Rashi on Arakhin 12a:2:1",
+      "Rashi on Arakhin 12b:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Maharshal on Arakhin 13a:10:1",
+      "Rashi on Arakhin 13a:1:1"
+    ],
+    "generatedAt": "2026-10-13T08:41:25.596Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 13a:10:1"
+    ],
+    "sourceText": "קס\"ד כדי לשבת ולשני ימים טובים דווקא קאמר דלהכי בעינן ששה שאם יבאו יחד שבת ושני ימים טובים של ראש השנה ולא יוכלו לבקר יהו להם אילים מזומנים:"
+  },
+  "Rashi on Arakhin 13a:11:1": {
+    "dependsOn": [
+      "Arakhin 13a:11",
+      "Rashi on Arakhin 13a:11:1",
+      "Rashi on Arakhin 13a:11:2",
+      "Arakhin 13b:1",
+      "Arakhin 13b:2",
+      "Arakhin 13b:3",
+      "Arakhin 13b:4",
+      "Rashi on Arakhin 13a:10:1"
+    ],
+    "generatedAt": "2026-10-13T08:44:40.728Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 13a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעלמא קאי</strong> - דבכל ימות השנה נמי בעינן ששה ולאו משום שבת וראש השנה אלא משום דבן בג בג וכדמפרש בסמוך:"
+  },
+  "Rashi on Arakhin 13a:11:2": {
+    "dependsOn": [
+      "Arakhin 13a:11",
+      "Rashi on Arakhin 13a:11:1",
+      "Rashi on Arakhin 13a:11:2"
+    ],
+    "generatedAt": "2026-10-13T08:48:47.447Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 13a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סימנא בעלמא</strong> - שלא תטעה בגירסא שלא תשנה ארבעה או חמשה משום הכי נקט הנך שלשה ימים דבעו ששה תמידין:"
+  },
+  "Rashi on Arakhin 13a:1:1": {
+    "dependsOn": [
+      "Arakhin 13a:1",
+      "Arakhin 12b:9",
+      "Arakhin 12b:10",
+      "Arakhin 12b:11",
+      "Rashi on Arakhin 12b:11:1",
+      "Tosafot on Arakhin 13a:1:1",
+      "Steinsaltz on Arakhin 13a:1",
+      "Rashi on Pesachim 3b:12:1",
+      "Rashi on Yoma 21b:1:1",
+      "Rashi on Sanhedrin 102b:1:1"
+    ],
+    "generatedAt": "2026-10-13T07:52:06.613Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 13a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן חרים וכן פשחור וכן אימר</strong> - ויהויריב שוב לא עלה:"
+  },
+  "Rashi on Arakhin 13a:2:1": {
+    "dependsOn": [
+      "Arakhin 13a:1",
+      "Arakhin 13a:2",
+      "Arakhin 12b:11",
+      "Arakhin 12b:12",
+      "Arakhin 12b:13",
+      "Arakhin 12b:14",
+      "Arakhin 12b:2",
+      "Arakhin 12b:3",
+      "Arakhin 12b:4",
+      "Arakhin 12b:5",
+      "Rashi on Arakhin 13a:2:2",
+      "Rashi on Arakhin 13a:3:1",
+      "Rashi on Arakhin 12b:3:1",
+      "Rashi on Arakhin 12b:2:1",
+      "Rashi on Arakhin 12b:4:1",
+      "Rashi on Arakhin 13a:6:1",
+      "Tosafot on Arakhin 13a:2:1",
+      "Rashi on Arakhin 13a:9:1",
+      "Rashi on Arakhin 13a:11:1"
+    ],
+    "generatedAt": "2026-10-13T08:01:39.743Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 13a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב אשי אמר</strong> - לעולם וכן בשניה אמוצאי שביעית קאי ורבנן היא ודקא קשיא לך לעיל דבשביעית חרוב לא קשיא דשית שני קמאי מבנין הבית עד דסליק עזרא וקידש ארץ ישראל לא מנו שמיטין ויובלות דל שית שנין משני הבית משכחת שנת ת\"כ בשביעית כיצד ארבע מאה <span class=\"parenthesized\">(ושית שנין)</span> תמניא יובלי וארבע סרי שני תרי שבועי ובשנת תכ\"א שהיה מוצאי שביעית חרב:"
+  },
+  "Rashi on Arakhin 13a:2:2": {
+    "dependsOn": [
+      "Arakhin 13a:2",
+      "Rashi on Arakhin 13a:2:1",
+      "Rashi on Arakhin 13a:2:2",
+      "Rashi on Arakhin 13a:3:1",
+      "Rashi on Arakhin 12b:1:1",
+      "Rashi on Arakhin 12b:2:1",
+      "Rashi on Arakhin 12b:3:1",
+      "Rashi on Arakhin 12a:1:1",
+      "Rashi on Arakhin 2a:1:1",
+      "Rashi on Arakhin 2b:1:1",
+      "Rashi on Arakhin 3a:1:1",
+      "Rashi on Arakhin 13a:8:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Berakhot 2a:1",
+      "Rashi on Berakhot 2a:6:1",
+      "Rashi on Berakhot 5a:1:1",
+      "Rashi on Berakhot 5a:2:1",
+      "Rashi on Berakhot 3a:1:1"
+    ],
+    "generatedAt": "2026-10-13T08:05:08.248Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 13a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומנלן דעד שית שני לא סליק עזרא דכתיב באדין בטילת וגו'</strong> - אלמא בשנת שתים לדריוש התחיל הבנין:"
+  },
+  "Rashi on Arakhin 13a:3:1": {
+    "dependsOn": [
+      "Arakhin 13a:3",
+      "Rashi on Arakhin 13a:2:1",
+      "Rashi on Arakhin 13a:2:2"
+    ],
+    "generatedAt": "2026-10-13T08:12:35.087Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 13a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכתיב ושיציא ביתא וגו'</strong> - אלמא בשנת שש נשלם הרי חמש שנים ובאותו זמן לשנה הבאה שהיא שנה ששית לבנין עלה עזרא ובא לירושלים בחדש אב ועד תשרי שהוא שבע לבנין לא התחיל למנות:"
+  },
+  "Rashi on Arakhin 13a:7:1": {
+    "dependsOn": [
+      "Arakhin 13a:7"
+    ],
+    "generatedAt": "2026-10-13T08:16:30.759Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 13a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בר תמנן נכי תרתי</strong> - דמשילוח מרגלים עד שנכנסו לארץ אינו אלא ל\"ח לבד משנת השילוח דהא בשניה ליציאת מצרים נשתלחו:"
+  },
+  "Rashi on Arakhin 13a:8:1": {
+    "dependsOn": [
+      "Arakhin 13a:8",
+      "Rashi on Arakhin 12b:11:1",
+      "Rashi on Arakhin 12b:11:2",
+      "Rashi on Arakhin 12b:11:3",
+      "Rashi on Arakhin 12b:12:1",
+      "Arakhin 13a:1",
+      "Arakhin 12b:1",
+      "Arakhin 12b:2",
+      "Arakhin 12b:3",
+      "Rashi on Arakhin 13a:7:1",
+      "Rashi on Arakhin 13a:2:1",
+      "Rashi on Arakhin 13a:2:2",
+      "Rashi on Arakhin 13a:3:1"
+    ],
+    "generatedAt": "2026-10-13T08:24:43.795Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 13a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדלא משכחת ארבע עשרה שנה אחרי אשר הוכתה העיר</strong> - דליהוי יובל אי לא מדלית ארבע עשרה לכיבוש ולחילוק:"
+  },
+  "Rashi on Arakhin 13a:9:1": {
+    "dependsOn": [
+      "Arakhin 13a:9",
+      "Rashi on Arakhin 13a:9:2",
+      "Rashi on Arakhin 13b:1:1",
+      "Rashi on Arakhin 13b:2:1",
+      "Rashi on Arakhin 13b:3:1",
+      "Rashi on Arakhin 13b:4:1",
+      "Rashi on Arakhin 13b:5:1",
+      "Arakhin 10a:1",
+      "Rashi on Arakhin 10a:1:1",
+      "Arakhin 13b:1"
+    ],
+    "generatedAt": "2026-10-13T08:27:47.103Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 13a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתשעה כנורות</strong> - לא אתפרש טעמא:"
+  },
+  "Rashi on Arakhin 13a:9:2": {
+    "dependsOn": [
+      "Arakhin 13a:9",
+      "Rashi on Arakhin 13a:9:1",
+      "Rashi on Arakhin 13a:9:2",
+      "Rashi on Arakhin 13a:2:1",
+      "Rashi on Arakhin 13a:3:1",
+      "Rashi on Arakhin 12b:1:1",
+      "Rashi on Arakhin 12a:1:1"
+    ],
+    "generatedAt": "2026-10-13T08:31:39.288Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 13a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והצלצל לבדו</strong> - צלצל אחד היה שם ולא יותר וטעמא מפרש בגמ':"
+  },
+  "Tosafot on Arakhin 13a:11:1": {
+    "dependsOn": [
+      "Arakhin 13a:11",
+      "Arakhin 13b:1",
+      "Arakhin 13b:2",
+      "Menachot 49b:12",
+      "Menachot 49b:13",
+      "Menachot 49b:14",
+      "Menachot 50a:1",
+      "Menachot 50a:2",
+      "Rashi on Arakhin 13a:11:1",
+      "Rashi on Arakhin 13a:11:2",
+      "Tosafot on Menachot 49b:10:1",
+      "Tosafot on Menachot 50a:1:1",
+      "Tosafot on Menachot 49b:12:1",
+      "Tosafot on Arakhin 13a:1:1",
+      "Tosafot on Arakhin 13a:2:1",
+      "Tosafot on Arakhin 13a:4:1",
+      "Tosafot on Arakhin 13a:7:1"
+    ],
+    "generatedAt": "2026-10-13T08:52:17.983Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Arakhin 13a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי כדי לשבת סימנא בעלמא</strong> - הכא מפרש מעיקרא דכדי לשבת סימנא בעלמא אבל במנחות פרק התכלת <span class=\"parenthesized\">(מנחות דף מט: ושם)</span> לא אמר הכי עד דבמסקנא דקאמר התם אמר רבינא לרב אשי הני ששה שבעה הוו דהא איכא צפרא דחד בשבתא דווקא נקט לשבת וה\"פ אם היו ב' ימים ראש השנה ביום החמישי וביום ששי ביום הראשון יבקרו התמיד שהוא ארבעה ימים קודם שחיטתו של ה' בשבת ושל יום ו' שהוא שני לר\"ה יבקרו ביום שני שהוא ד' ימים קודם שחיטתו וכן של שבת מבקרו ביום ג' ופריך שבעה הוו דהא איכא צפרא דחד בשבתא שגם הוא טעון ביקור ד' ימים קודם שחיטתו וא\"כ היאך יפחתו מז':"
+  },
+  "Tosafot on Arakhin 13a:1:1": {
+    "dependsOn": [
+      "Arakhin 13a:1",
+      "Rashi on Arakhin 12b:11:1",
+      "Rashi on Arakhin 12b:12:1",
+      "Rashi on Arakhin 13a:1:1",
+      "Arakhin 12b:10",
+      "Arakhin 12b:11",
+      "Steinsaltz In-Depth on Arakhin 13a:1:1",
+      "Steinsaltz on Arakhin 13a:1:1",
+      "Steinsaltz on Arakhin 13a:1",
+      "Steinsaltz In-Depth on Arakhin 13a:1",
+      "Tosafot on Arakhin 13a:2:1",
+      "Tosafot on Arakhin 13a:4:1",
+      "Tosafot on Arakhin 13a:7:1",
+      "Tosafot on Arakhin 13a:11:1",
+      "Tosafot on Arakhin 12b:1:1",
+      "Tosafot on Arakhin 12b:4:1",
+      "Tosafot on Arakhin 12b:5:1"
+    ],
+    "generatedAt": "2026-10-13T07:55:33.919Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Arakhin 13a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאפי' משמרתו של יהויריב עולה</strong> - פרש\"י ששוב לא עלה וזהו תימה דמנא ליה ששוב לא עלה דהא משמע שיכול לעלות מדקאמר שאפילו משמרתו של יהויריב עולה ועוד הקשה רבינו אלחנן דהרבה עלו ואין פשוט לנו שלא עלה ואמר רבי דמכל מקום יכול להיות שעלה יהויריב והכא קא פריך הכי משמרתו של יהויריב בשניה מי הואי כי כ\"ד היו אלו נגד המשמרות שלא עלו שחלוקות לארבע ועשרים משמרות ושימשו תחתיהם:"
+  },
+  "Tosafot on Arakhin 13a:2:1": {
+    "dependsOn": [
+      "Arakhin 13a:2",
+      "Tosafot on Arakhin 12b:11:1",
+      "Tosafot on Arakhin 12b:11:2",
+      "Tosafot on Arakhin 12b:11:3",
+      "Tosafot on Arakhin 12b:10:1",
+      "Arakhin 12b:5",
+      "Tosafot on Arakhin 12b:8:1",
+      "Tosafot on Arakhin 12b:4:1",
+      "Tosafot on Arakhin 12b:5:1",
+      "Tosafot on Arakhin 12b:6:1",
+      "Tosafot on Arakhin 12b:7:1",
+      "Tosafot on Arakhin 13a:4:1",
+      "Tosafot on Arakhin 13a:7:1",
+      "Tosafot on Arakhin 13a:11:1"
+    ],
+    "generatedAt": "2026-10-13T08:10:54.840Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Arakhin 13a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הנך שית עד דסליק עזרא וקדיש לא קחשיב</strong> - צריך עיון למאי דפירשתי דכי נמי גלו השבטים מנו נמי יובלות כדי לקדש השמיטין א\"כ בגלות דבבל קודם דסליק עזרא נמי היו מונין ואמאי התחילו למנות כי סליק עזרא וי\"ל דלא דמי דודאי בעוד ישראל על אדמתם כי נמי אין יובל נוהג שמיטה נוהג בחרישה וזריעה והיו מקדשין אבל בגלות לא היו מקדשין כלל שביעית וצ\"ע דכי נמי היו בגולה היו צריכין לקדש שביעית מפני שמיטת כספים שנוהגת בין בארץ בין בחוצה לארץ ואם הוא כך דשביעית אינו תלוי ביובל כי נמי ישראל בגלות ואינן כלל על אדמתן למה לא ימנו שמיטין כמו מקצת ישראל על אדמתן ואף על גב דאין כל יושביה עליה מונין שביעית אף על גב שאין מונין יובל:"
+  },
+  "Tosafot on Arakhin 13a:4:1": {
+    "dependsOn": [
+      "Arakhin 13a:3",
+      "Arakhin 13a:4",
+      "Rashi on Arakhin 13a:4:1",
+      "Tosafot on Arakhin 13a:2:1",
+      "Tosafot on Arakhin 12a:7:1",
+      "Tosafot on Arakhin 12b:1:1"
+    ],
+    "generatedAt": "2026-10-13T08:14:50.221Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Arakhin 13a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אותו זמן לשנה הבאה</strong> - שהוא שלש <span class=\"parenthesized\">(ועשרים)</span> באדר עלה עזרא מבבל ועלה ירושלים בחדש החמישי שאיחר במהלך הדרך מחדש אדר עד חדש אב:"
+  },
+  "Tosafot on Arakhin 13a:7:1": {
+    "dependsOn": [
+      "Arakhin 13a:6",
+      "Arakhin 13a:7",
+      "Arakhin 13a:8"
+    ],
+    "generatedAt": "2026-10-13T08:21:57.983Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Arakhin 13a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כלב כמה הוי בר תמנין נכי תרתין</strong> - והקשה רבינו אלחנן והא מנין לנו שבשנה שניה דווקא היה כלב בן מ' שנה דאז הוה כי עבר ישראל את הירדן בר תמנין נכי תרין שמא התחיל שנת הארבעים ואחד שלו ובשילוח מרגלים היה בסוף הארבעים שהרי שנות כלב לא מצינו וכשעברו ישראל את הירדן הוה בר תמנין נכי חד ומנא להש\"ס הא דז' כיבשו וז' חילקו ואמר רבי דלא בא הכתוב לסתום אלא לפרש דמה לנו לשנות כלב אם לא להודיענו בודאי שז' כיבשו וז' חילקו:"
+  }
+}

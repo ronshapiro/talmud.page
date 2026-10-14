@@ -1,0 +1,103 @@
+{
+  "Rashi on Arakhin 10a:1:1": {
+    "dependsOn": [
+      "Arakhin 10a:1",
+      "Rashi on Arakhin 10a:1:1",
+      "Rashi on Arakhin 10a:1:2",
+      "Arakhin 9b:10",
+      "Arakhin 9b:11",
+      "Arakhin 9b:12",
+      "Arakhin 9b:13",
+      "Arakhin 9b:14",
+      "Arakhin 9b:15",
+      "Arakhin 9b:16",
+      "Arakhin 9b:17",
+      "Arakhin 9b:18"
+    ],
+    "generatedAt": "2026-10-12T19:32:40.097Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 10a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועיבור שנה שלשים</strong> - הרי לך א' מלא ואשתקד עשינו שניהן מליאים מרחשון ואייר והרי לך שלשה מלאין יותר על כסדרן הלכך כי חסרה השתא לבהדייהו שלשה קם ליה בדוכתיה:"
+  },
+  "Rashi on Arakhin 10a:1:2": {
+    "dependsOn": [
+      "Arakhin 10a:1"
+    ],
+    "generatedAt": "2026-10-12T19:34:45.910Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 10a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נר ישראל</strong> - שאתה מאיר עיני חכמים:"
+  },
+  "Rashi on Arakhin 10a:2:1": {
+    "dependsOn": [
+      "Arakhin 10a:2",
+      "Rashi on Arakhin 10a:2:1",
+      "Rashi on Arakhin 2a:1:1",
+      "Rashi on Arakhin 8b:1:1",
+      "Rashi on Arakhin 10a:5:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Sukkah 53b:2:1",
+      "Rashi on Arakhin 10a:1:1",
+      "Rashi on Arakhin 10a:1:2",
+      "Tosafot on Arakhin 10a:2:1",
+      "Rashi on Arakhin 10a:3:1",
+      "Rashi on Arakhin 10a:3:2",
+      "Rashi on Sukkah 53b:1:1",
+      "Rashi on Sukkah 53b:1:2",
+      "Rashi on Sukkah 53b:1:3",
+      "Rashi on Sukkah 53b:15:1",
+      "Rashi on Sukkah 54a:1:1",
+      "Rashi on Sukkah 54a:2:1"
+    ],
+    "generatedAt": "2026-10-12T19:43:08.247Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 10a:2:1"
+    ],
+    "sourceText": "<b>מתני'</b> כ\"א תקיעות ומ\"ח תקיעות מפרש להו במס' סוכה בפ' החליל <span class=\"parenthesized\">(סוכה דף נג:)</span>:"
+  },
+  "Rashi on Arakhin 10a:3:1": {
+    "dependsOn": [
+      "Arakhin 10a:3",
+      "Rashi on Arakhin 10a:3:1",
+      "Rashi on Arakhin 10a:3:2",
+      "Rashi on Arakhin 10a:3:3",
+      "Rashi on Arakhin 10a:3:4",
+      "Rashi on Arakhin 10a:3:5",
+      "Tosafot on Arakhin 10a:3:1",
+      "Steinsaltz on Arakhin 10a:3",
+      "Jastrow on Arakhin 10a:3:1"
+    ],
+    "generatedAt": "2026-10-12T19:58:10.094Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 10a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משני נבלים</strong> - לשני לוים:"
+  },
+  "Tosafot on Arakhin 10a:2:1": {
+    "dependsOn": [
+      "Tosafot on Arakhin 10a:2:1",
+      "Arakhin 10a:2",
+      "Tosafot on Arakhin 10a:3:1",
+      "Tosafot on Arakhin 10a:4:1",
+      "Tosafot on Arakhin 10a:5:1",
+      "Arakhin 10a:6"
+    ],
+    "generatedAt": "2026-10-12T19:50:48.910Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Arakhin 10a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\"><span class=\"parenthesized\">(שייך למתני')</span> אין פוחתין מכ\"א תקיעות במקדש בכל' יום</strong> - ומפרש בסוכה <span class=\"parenthesized\">(דף נג:)</span> שלשה לפתיחת שערים ותשע לתמיד של שחר שהיו הלוים אומרים שירה בשעת נסכים והיה בו ג' פרקים לכל פרק תקעו והריעו ותקעו:"
+  }
+}
