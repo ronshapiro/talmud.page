@@ -25,6 +25,7 @@ import {
 } from "./hebrew";
 import {Logger, consoleLogger} from "./logger";
 import {mergeRefs} from "./ref_merging";
+import {filterNonEnglishOverflow, reportMismatch} from "./translation_mismatch";
 import {refSorter} from "./js/google_drive/ref_sorter";
 import {ListMultimap} from "./multimap";
 import {
@@ -1502,7 +1503,7 @@ export abstract class AbstractApiRequestHandler {
   }
 
   private preformatSegments(
-    hebrew: string[], english: string[], lax = false,
+    hebrew: string[], english: string[], lax = false, ref = "",
   ): [string[], string[]] {
     if (typeof hebrew === "string") {
       hebrew = [hebrew];
@@ -1514,8 +1515,9 @@ export abstract class AbstractApiRequestHandler {
       const newHebrew: string[][] = [];
       const newEnglish: string[][] = [];
       for (let i = 0; i < hebrew.length; i++) {
-        // @ts-ignore
-        const [currentHebrew, currentEnglish] = this.preformatSegments(hebrew[i], english[i], lax);
+        const [currentHebrew, currentEnglish] = this.preformatSegments(
+          // @ts-ignore
+          hebrew[i], english[i], lax, ref);
         // Flattening is relevant for refs which are rewritten (like Yerushalmi pages) that span
         // multiple sections (i.e. multiple halachot/chapters).
         newHebrew.push(currentHebrew);
@@ -1529,6 +1531,22 @@ export abstract class AbstractApiRequestHandler {
       english.push("");
     }
 
+    if (!this.allowUnequalEnglishLength() && !lax && english.length > hebrew.length) {
+      const filtered = filterNonEnglishOverflow(hebrew, english);
+      if (filtered.removed.length > 0) {
+        this.logger.error("Removing non-English overflow translation segments: ", filtered.removed);
+        reportMismatch({
+          kind: "otherLanguageOverflow",
+          ref,
+          hebrewLength: hebrew.length,
+          englishLength: english.length,
+          extra: filtered.removed,
+          resolved: filtered.english.length === hebrew.length,
+        });
+        english = filtered.english;
+      }
+    }
+
     if (this.allowUnequalEnglishLength() || lax) {
       while (hebrew.length < english.length) {
         hebrew.push("");
@@ -1539,6 +1557,14 @@ export abstract class AbstractApiRequestHandler {
     } else if (hebrew.length !== english.length) {
       const extra = hebrew.slice(english.length).concat(english.slice(hebrew.length));
       this.logger.error("Unmatched text/translation: ", extra);
+      reportMismatch({
+        kind: "genericMismatch",
+        ref,
+        hebrewLength: hebrew.length,
+        englishLength: english.length,
+        extra,
+        resolved: false,
+      });
       throw new ApiException(
         `Hebrew length (${hebrew.length} != English length (${english.length})`,
         500,
@@ -1568,7 +1594,9 @@ export abstract class AbstractApiRequestHandler {
 
     const [hebrew, english] = this.preformatSegments(
       textResponse.he as string[],
-      textResponse.text as string[]);
+      textResponse.text as string[],
+      false,
+      mainRef);
 
     const preformatedAlternates: Record<string, {hebrew: string[], english: string[]}> = {};
     for (const [alternateKind, alternate] of Object.entries(textResponse.alternates ?? {})) {
@@ -1580,7 +1608,8 @@ export abstract class AbstractApiRequestHandler {
       const preformated = this.preformatSegments(
         alternate.he as string[],
         alternate.text as string[],
-        true);
+        true,
+        textResponse.ref);
       preformatedAlternates[alternateKind] = {hebrew: preformated[0], english: preformated[1]};
     }
 
