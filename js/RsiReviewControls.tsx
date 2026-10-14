@@ -141,43 +141,6 @@ export function RsiReviewControls({comment}: {comment: ApiComment}): React.React
   const fallbackHebrew = flatten(comment.he) || undefined;
   const fallbackEnglish = flatten(comment.en) || undefined;
 
-  if (editing) {
-    return (
-      <div className="rsi-review-controls rsi-review-editing">
-        <textarea
-          dir="rtl"
-          value={hebrew}
-          onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setHebrew(e.target.value)} />
-        <textarea
-          dir="ltr"
-          value={english}
-          onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setEnglish(e.target.value)} />
-        <div className="rsi-review-editing-actions">
-          <button
-            type="button"
-            className="rsi-review-button rsi-review-submit-edit"
-            onClick={() => withIdentity(identity => {
-              setEditing(false);
-              postDecision(page, comment.ref, "approve", {
-                hebrew,
-                english,
-                fallbackHebrew,
-                fallbackEnglish,
-              }, identity);
-            })}>
-            Submit edit
-          </button>
-          <button
-            type="button"
-            className="rsi-review-button rsi-review-cancel"
-            onClick={() => setEditing(false)}>
-            Cancel
-          </button>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div className="rsi-review-controls">
       <button
@@ -193,7 +156,11 @@ export function RsiReviewControls({comment}: {comment: ApiComment}): React.React
       <button
         type="button"
         className="rsi-review-button rsi-review-edit"
-        onClick={() => setEditing(true)}>
+        onClick={() => {
+          setHebrew(flatten(comment.he) ?? "");
+          setEnglish(flatten(comment.en) ?? "");
+          setEditing(true);
+        }}>
         Edit
       </button>
       <button
@@ -202,6 +169,43 @@ export function RsiReviewControls({comment}: {comment: ApiComment}): React.React
         onClick={() => withIdentity(identity => setModal({kind: "reject", identity}))}>
         Reject
       </button>
+      {editing && (
+        <Modal
+          content={(
+            <div>
+              <textarea
+                dir="rtl"
+                rows={6}
+                className="mdl-textfield__input"
+                value={hebrew}
+                onChange={(event: React.ChangeEvent<HTMLTextAreaElement>) => {
+                  setHebrew(event.target.value);
+                }} />
+              <textarea
+                dir="ltr"
+                rows={6}
+                className="mdl-textfield__input"
+                value={english}
+                onChange={(event: React.ChangeEvent<HTMLTextAreaElement>) => {
+                  setEnglish(event.target.value);
+                }} />
+            </div>
+          )}
+          cancelText="Cancel"
+          cancelTextHebrew="בטל"
+          onCancel={() => setEditing(false)}
+          acceptText="Submit edit"
+          acceptTextHebrew="שלח עריכה"
+          onAccept={() => withIdentity(identity => {
+            setEditing(false);
+            postDecision(page, comment.ref, "approve", {
+              hebrew,
+              english,
+              fallbackHebrew,
+              fallbackEnglish,
+            }, identity);
+          })} />
+      )}
       {modal?.kind === "identity" && (
         <Modal
           content={(
