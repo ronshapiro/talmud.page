@@ -10,7 +10,7 @@ export function isLongThreadBackend(backend?: string): boolean {
   return backend === "claude-long-thread" || backend === "agy-long-thread";
 }
 
-export function getBaseBackend(backend: AgentBackend): "claude" | "agy" {
+export function getBaseBackend(backend: AgentBackend): "claude" | "agy" | "ollama" {
   if (backend === "claude-long-thread") return "claude";
   if (backend === "agy-long-thread") return "agy";
   return backend;
