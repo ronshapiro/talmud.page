@@ -6,6 +6,7 @@ import {
 } from "../apiTypes";
 import {AI_EDIT_COMMENT_NAME} from "./commentary_constants";
 import isEmptyText from "./is_empty_text";
+import {isSiteLanguageHebrew} from "./settings";
 
 function getAiVersionComment(parent: Section | ApiComment): ApiComment | undefined {
   for (const comment of parent.commentary?.Versions?.comments ?? []) {
@@ -16,11 +17,31 @@ function getAiVersionComment(parent: Section | ApiComment): ApiComment | undefin
   return undefined;
 }
 
+/** True if the AI version only changes the English text of the parent comment. */
+function isEnglishOnlyChange(aiComment: ApiComment, parent: ApiComment): boolean {
+  if (isEmptyText(aiComment.he)) return true;
+  return JSON.stringify(aiComment.he) === JSON.stringify(parent.he);
+}
+
 function promoteReplaceableAiCommentsForCommentary(commentaryMap: CommentaryMap | undefined) {
   if (!commentaryMap) return;
   for (const commentary of Object.values(commentaryMap ?? {})) {
     for (const comment of commentary.comments) {
       const aiComment = getAiVersionComment(comment);
+      if (aiComment && isSiteLanguageHebrew() && isEnglishOnlyChange(aiComment, comment)) {
+        // English-only AI changes are irrelevant when only Hebrew is displayed, so ignore them
+        // entirely (no replacement, no AI-modified styling).
+        const versions = comment.commentary!.Versions!;
+        versions.comments = versions.comments.filter(c => c !== aiComment);
+        if (versions.comments.length === 0) {
+          delete comment.commentary!.Versions;
+        }
+        if (Object.keys(comment.commentary!).length === 0) {
+          delete comment.commentary;
+        }
+        promoteReplaceableAiCommentsForCommentary(comment.commentary);
+        continue;
+      }
       if (aiComment?.canReplaceParent) {
         delete aiComment.canReplaceParent;
         // Rename for clarity

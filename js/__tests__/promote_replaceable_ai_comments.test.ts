@@ -403,3 +403,47 @@ test("replacing Hebrew without English sets aiModifiedHebrew to true and aiModif
   expect(rashiOf(target).aiModifiedHebrew).toBe(true);
   expect(rashiOf(target).aiModifiedEnglish).toBe(false);
 });
+
+describe("when the site language is Hebrew", () => {
+  beforeEach(() => {
+    localStorage.languageOption = "hebrew";
+  });
+  afterEach(() => {
+    localStorage.clear();
+  });
+
+  test("an English-only AI version is ignored and not styled as AI-modified", () => {
+    const target = page({
+      sections: [segment({
+        commentary: commentaries({
+          Rashi: [{
+            ref: "Rashi 1",
+            he: "עברית מקורית",
+            en: "original english",
+            commentary: {
+              Versions: {
+                comments: [aiVersion({he: "עברית מקורית", en: "ai english"})],
+              },
+            },
+          }],
+        }),
+      })],
+    });
+
+    promoteReplaceableAiComments(target);
+
+    const rashi = rashiOf(target);
+    expect(rashi.en).toBe("original english");
+    expect(rashi.didModifyUiWithAiVersion).toBeFalsy();
+    expect(rashi.commentary?.Versions).toBeUndefined();
+  });
+
+  test("an AI version that changes the Hebrew is still promoted", () => {
+    const target = pageWithRashi();
+
+    promoteReplaceableAiComments(target);
+
+    expect(rashiOf(target).he).toBe("עברית של הבינה");
+    expect(rashiOf(target).didModifyUiWithAiVersion).toBe(true);
+  });
+});
