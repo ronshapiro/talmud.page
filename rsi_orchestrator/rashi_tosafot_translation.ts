@@ -268,8 +268,11 @@ export async function runContinuousTranslation(
       resolve();
       return;
     }
-    const timer = setTimeout(resolve, ms);
     let interval: NodeJS.Timeout | undefined;
+    const timer = setTimeout(() => {
+      if (interval) clearInterval(interval);
+      resolve();
+    }, ms);
     const abortHandler = () => {
       clearTimeout(timer);
       if (interval) clearInterval(interval);
@@ -285,9 +288,6 @@ export async function runContinuousTranslation(
     }, 100);
     if (typeof (interval as any)?.unref === "function") {
       (interval as any).unref();
-    }
-    if (typeof (timer as any)?.unref === "function") {
-      (timer as any).unref();
     }
   }));
 
