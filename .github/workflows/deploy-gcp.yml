@@ -29,32 +29,55 @@ jobs:
     - id: determine-deployment
       env:
         HEAD_BRANCH: ${{ github.event.workflow_run.head_branch }}
-        EVENT: ${{ github.event.workflow_run.event }}
-        PR_NUMBER: ${{ github.event.workflow_run.pull_requests[0].number }}
+        EVENT_NAME: ${{ github.event.workflow_run.event }}
+        PULL_REQUEST_NUMBER: ${{ github.event.workflow_run.pull_requests[0].number }}
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        if [ "$HEAD_BRANCH" = "base" ] && [ "$EVENT" = "push" ]; then
+        if [ "$HEAD_BRANCH" = "base" ] && [ "$EVENT_NAME" = "push" ]; then
+          echo "Base branch push detected: always deploying to production."
+          echo "should_deploy=true" >> "$GITHUB_OUTPUT"
           echo "is_base=true" >> "$GITHUB_OUTPUT"
           echo "version=" >> "$GITHUB_OUTPUT"
           echo "promote=true" >> "$GITHUB_OUTPUT"
-        elif [ -n "$PR_NUMBER" ]; then
-          echo "is_base=false" >> "$GITHUB_OUTPUT"
-          echo "version=pr-${PR_NUMBER}" >> "$GITHUB_OUTPUT"
-          echo "promote=false" >> "$GITHUB_OUTPUT"
-          echo "pr_number=${PR_NUMBER}" >> "$GITHUB_OUTPUT"
+        elif [ -n "$PULL_REQUEST_NUMBER" ]; then
+          echo "Pull request #${PULL_REQUEST_NUMBER} detected. Inspecting modified files..."
+          CHANGED_FILES=$(gh pr diff "$PULL_REQUEST_NUMBER" --name-only -R "${{ github.repository }}")
+          echo "Changed files in PR #${PULL_REQUEST_NUMBER}:"
+          echo "$CHANGED_FILES"
+
+          NON_IGNORED_FILES=$(echo "$CHANGED_FILES" | grep -v -E '^(precomputed/ai_additions/|precomputed/rsi_state/)' | grep -v '^[[:space:]]*$' || true)
+
+          if [ -z "$NON_IGNORED_FILES" ]; then
+            echo "PR #${PULL_REQUEST_NUMBER} only modifies files in precomputed/ai_additions/ or precomputed/rsi_state/ (or diff is empty)."
+            echo "Skipping staging deployment."
+            echo "should_deploy=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "PR #${PULL_REQUEST_NUMBER} has modifications outside ignored paths:"
+            echo "$NON_IGNORED_FILES"
+            echo "Proceeding with preview deployment."
+            echo "should_deploy=true" >> "$GITHUB_OUTPUT"
+            echo "is_base=false" >> "$GITHUB_OUTPUT"
+            echo "version=pr-${PULL_REQUEST_NUMBER}" >> "$GITHUB_OUTPUT"
+            echo "promote=false" >> "$GITHUB_OUTPUT"
+            echo "pull_request_number=${PULL_REQUEST_NUMBER}" >> "$GITHUB_OUTPUT"
+          fi
         else
-          echo "Skipping deployment: neither push to base nor pull request with number found."
-          exit 1
+          echo "Neither base push nor pull request detected. Skipping deployment."
+          echo "should_deploy=false" >> "$GITHUB_OUTPUT"
         fi
 
     - uses: actions/setup-node@v4
+      if: steps.determine-deployment.outputs.should_deploy == 'true'
       with:
         node-version: 24
         cache: 'npm'
         cache-dependency-path: package-lock.json
 
-    - run: 'npm install --no-audit'
+    - if: steps.determine-deployment.outputs.should_deploy == 'true'
+      run: 'npm install --no-audit'
 
     - id: configure-secrets
+      if: steps.determine-deployment.outputs.should_deploy == 'true'
       env:
         MAILJET_API_KEY: ${{ secrets.MAILJET_API_KEY }}
         MAILJET_API_SECRET: ${{ secrets.MAILJET_API_SECRET }}
@@ -71,9 +94,11 @@ jobs:
         echo "  CREATE_ISSUE_ACCESS_TOKEN: '${CREATE_ISSUE_ACCESS_TOKEN}'" >> app.yaml
 
     - id: 'build'
+      if: steps.determine-deployment.outputs.should_deploy == 'true'
       run: 'npm run parcel-prod'
 
     - id: 'auth'
+      if: steps.determine-deployment.outputs.should_deploy == 'true'
       # Note: make sure that the roles are configured in the IAM tab and not under the
       # Service Accounts > Permissions page. This is confusing!
       uses: 'google-github-actions/auth@v2'
@@ -84,34 +109,37 @@ jobs:
         credentials_json: '${{ secrets.GCP_DEPLOY_SERVICE_ACCOUNT }}'
 
     - id: 'verify-gcloud'
+      if: steps.determine-deployment.outputs.should_deploy == 'true'
       run: 'gcloud --version'
 
     - id: 'verify-auth'
+      if: steps.determine-deployment.outputs.should_deploy == 'true'
       run: 'gcloud auth list'
 
     - id: 'deploy'
+      if: steps.determine-deployment.outputs.should_deploy == 'true'
       uses: 'google-github-actions/deploy-appengine@v2'
       with:
         version: ${{ steps.determine-deployment.outputs.version }}
         promote: ${{ steps.determine-deployment.outputs.promote }}
 
     - name: Comment Preview URL on PR
-      if: steps.determine-deployment.outputs.is_base == 'false'
+      if: steps.determine-deployment.outputs.should_deploy == 'true' && steps.determine-deployment.outputs.is_base == 'false'
       continue-on-error: true
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        PR_NUMBER: ${{ steps.determine-deployment.outputs.pr_number }}
+        PULL_REQUEST_NUMBER: ${{ steps.determine-deployment.outputs.pull_request_number }}
         PREVIEW_URL: ${{ steps.deploy.outputs.version_url || format('https://{0}-dot-talmud.appspot.com', steps.determine-deployment.outputs.version) }}
       run: |
         COMMENT_BODY="<!-- pr-preview-deployment -->
         🚀 Deployed preview to App Engine:
         ${PREVIEW_URL}"
 
-        COMMENT_ID=$(gh api "repos/${{ github.repository }}/issues/${PR_NUMBER}/comments" \
+        COMMENT_IDENTIFIER=$(gh api "repos/${{ github.repository }}/issues/${PULL_REQUEST_NUMBER}/comments" \
           --jq '.[] | select(.body | contains("<!-- pr-preview-deployment -->")) | .id' | head -n 1)
 
-        if [ -n "$COMMENT_ID" ]; then
-          gh api -X PATCH "repos/${{ github.repository }}/issues/comments/${COMMENT_ID}" -f body="$COMMENT_BODY"
+        if [ -n "$COMMENT_IDENTIFIER" ]; then
+          gh api -X PATCH "repos/${{ github.repository }}/issues/comments/${COMMENT_IDENTIFIER}" -f body="$COMMENT_BODY"
         else
-          gh pr comment "$PR_NUMBER" --body "$COMMENT_BODY"
+          gh pr comment "$PULL_REQUEST_NUMBER" --body "$COMMENT_BODY"
         fi
