@@ -7,7 +7,7 @@ on:
     types: [completed]
 
 jobs:
-  gcp_deploy:
+  check_deployment:
     runs-on: ubuntu-latest
     if: >-
       github.event.workflow_run.conclusion == 'success' &&
@@ -15,18 +15,17 @@ jobs:
        github.event.workflow_run.event == 'pull_request')
 
     permissions:
-      contents: 'read'
-      id-token: 'write'
-      pull-requests: 'write'
-      issues: 'write'
+      pull-requests: 'read'
+
+    outputs:
+      should_deploy: ${{ steps.determine.outputs.should_deploy }}
+      is_base: ${{ steps.determine.outputs.is_base }}
+      version: ${{ steps.determine.outputs.version }}
+      promote: ${{ steps.determine.outputs.promote }}
+      pull_request_number: ${{ steps.determine.outputs.pull_request_number }}
 
     steps:
-    - uses: actions/checkout@v4
-      with:
-        repository: ${{ github.event.workflow_run.head_repository.full_name }}
-        ref: ${{ github.event.workflow_run.head_sha }}
-
-    - id: determine-deployment
+    - id: determine
       env:
         HEAD_BRANCH: ${{ github.event.workflow_run.head_branch }}
         EVENT_NAME: ${{ github.event.workflow_run.event }}
@@ -40,7 +39,16 @@ jobs:
           echo "version=" >> "$GITHUB_OUTPUT"
           echo "promote=true" >> "$GITHUB_OUTPUT"
         elif [ -n "$PULL_REQUEST_NUMBER" ]; then
-          echo "Pull request #${PULL_REQUEST_NUMBER} detected. Inspecting modified files..."
+          echo "Pull request #${PULL_REQUEST_NUMBER} detected. Inspecting author..."
+          PULL_REQUEST_AUTHOR=$(gh pr view "$PULL_REQUEST_NUMBER" --json author --jq .author.login -R "${{ github.repository }}")
+
+          if [ "$PULL_REQUEST_AUTHOR" != "ronshapiro" ]; then
+            echo "PR #${PULL_REQUEST_NUMBER} author is '$PULL_REQUEST_AUTHOR' (not ronshapiro). Skipping staging deployment."
+            echo "should_deploy=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "Author verified as ronshapiro. Inspecting modified files..."
           CHANGED_FILES=$(gh pr diff "$PULL_REQUEST_NUMBER" --name-only -R "${{ github.repository }}")
           echo "Changed files in PR #${PULL_REQUEST_NUMBER}:"
           echo "$CHANGED_FILES"
@@ -66,18 +74,32 @@ jobs:
           echo "should_deploy=false" >> "$GITHUB_OUTPUT"
         fi
 
+  gcp_deploy:
+    needs: check_deployment
+    if: needs.check_deployment.outputs.should_deploy == 'true'
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+      issues: 'write'
+      pull-requests: 'read'
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        repository: ${{ github.event.workflow_run.head_repository.full_name }}
+        ref: ${{ github.event.workflow_run.head_sha }}
+
     - uses: actions/setup-node@v4
-      if: steps.determine-deployment.outputs.should_deploy == 'true'
       with:
         node-version: 24
         cache: 'npm'
         cache-dependency-path: package-lock.json
 
-    - if: steps.determine-deployment.outputs.should_deploy == 'true'
-      run: 'npm install --no-audit'
+    - run: 'npm install --no-audit'
 
     - id: configure-secrets
-      if: steps.determine-deployment.outputs.should_deploy == 'true'
       env:
         MAILJET_API_KEY: ${{ secrets.MAILJET_API_KEY }}
         MAILJET_API_SECRET: ${{ secrets.MAILJET_API_SECRET }}
@@ -94,11 +116,9 @@ jobs:
         echo "  CREATE_ISSUE_ACCESS_TOKEN: '${CREATE_ISSUE_ACCESS_TOKEN}'" >> app.yaml
 
     - id: 'build'
-      if: steps.determine-deployment.outputs.should_deploy == 'true'
       run: 'npm run parcel-prod'
 
     - id: 'auth'
-      if: steps.determine-deployment.outputs.should_deploy == 'true'
       # Note: make sure that the roles are configured in the IAM tab and not under the
       # Service Accounts > Permissions page. This is confusing!
       uses: 'google-github-actions/auth@v2'
@@ -109,27 +129,24 @@ jobs:
         credentials_json: '${{ secrets.GCP_DEPLOY_SERVICE_ACCOUNT }}'
 
     - id: 'verify-gcloud'
-      if: steps.determine-deployment.outputs.should_deploy == 'true'
       run: 'gcloud --version'
 
     - id: 'verify-auth'
-      if: steps.determine-deployment.outputs.should_deploy == 'true'
       run: 'gcloud auth list'
 
     - id: 'deploy'
-      if: steps.determine-deployment.outputs.should_deploy == 'true'
       uses: 'google-github-actions/deploy-appengine@v2'
       with:
-        version: ${{ steps.determine-deployment.outputs.version }}
-        promote: ${{ steps.determine-deployment.outputs.promote }}
+        version: ${{ needs.check_deployment.outputs.version }}
+        promote: ${{ needs.check_deployment.outputs.promote == 'true' }}
 
     - name: Comment Preview URL on PR
-      if: steps.determine-deployment.outputs.should_deploy == 'true' && steps.determine-deployment.outputs.is_base == 'false'
+      if: needs.check_deployment.outputs.is_base == 'false'
       continue-on-error: true
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        PULL_REQUEST_NUMBER: ${{ steps.determine-deployment.outputs.pull_request_number }}
-        PREVIEW_URL: ${{ steps.deploy.outputs.version_url || format('https://{0}-dot-talmud.appspot.com', steps.determine-deployment.outputs.version) }}
+        PULL_REQUEST_NUMBER: ${{ needs.check_deployment.outputs.pull_request_number }}
+        PREVIEW_URL: ${{ steps.deploy.outputs.version_url || format('https://{0}-dot-talmud.appspot.com', needs.check_deployment.outputs.version) }}
       run: |
         COMMENT_BODY="<!-- pr-preview-deployment -->
         🚀 Deployed preview to App Engine:
