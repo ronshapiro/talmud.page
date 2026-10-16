@@ -48,11 +48,6 @@ async function main(): Promise<void> {
         describe: 'model routing configuration preset for the backend (e.g. "claude-sonnet-4.6")',
       },
       model: {type: "string", describe: "model override to use for generation"},
-      critiqueModel: {
-        type: "string",
-        alias: ["critique-model", "critique_model"],
-        describe: "model override to use for critique",
-      },
       push: {type: "boolean", default: true, describe: "whether to commit and push candidates"},
       debug: {
         type: "boolean",
@@ -132,7 +127,7 @@ async function main(): Promise<void> {
       `[Config] Backend: ${effectiveBackend}`
       + `${FLAGS.modelConfig ? ` (preset: ${FLAGS.modelConfig})` : ""}`
       + ` | Generation: ${FLAGS.model ?? resolvedModelConfig.generateModel}`
-      + ` | Critique: ${FLAGS.critiqueModel ?? resolvedModelConfig.critiqueModel}`);
+      + ` | Critique: ${resolvedModelConfig.critiqueModel}`);
   }
 
   function getCandidates(): TranslationCandidate[] {
@@ -196,7 +191,6 @@ async function main(): Promise<void> {
       return generateAndRecord(candidate, {
         backend: effectiveBackend,
         model: FLAGS.model,
-        critiqueModel: FLAGS.critiqueModel,
         modelConfig: FLAGS.modelConfig,
         debug: FLAGS.debug,
         sessionManager,
