@@ -4,18 +4,6 @@
       "generateModel": "gemini-3.8-flash-high",
       "critiqueModel": "gemini-3.8-flash-medium"
     },
-    "argon": {
-      "generateModel": "gemini-4-argon-high",
-      "critiqueModel": "gemini-3.8-flash-medium"
-    },
-    "argon-flash": {
-      "generateModel": "gemini-4-argon-high",
-      "critiqueModel": "gemini-3.8-flash-medium"
-    },
-    "flash-argon": {
-      "generateModel": "gemini-3.8-flash-high",
-      "critiqueModel": "gemini-4-argon-medium"
-    },
     "sonnet-4.6": {
       "generateModel": "claude-sonnet-4-6",
       "critiqueModel": "gemini-3.8-flash-medium"
