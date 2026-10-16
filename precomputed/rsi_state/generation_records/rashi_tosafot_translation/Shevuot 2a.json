@@ -1,0 +1,461 @@
+{
+  "Rashi on Shevuot 2a:1:1": {
+    "dependsOn": [
+      "Shevuot 2a:1",
+      "Rashi on Shevuot 2a:1:1",
+      "Rashi on Shevuot 2a:1:2",
+      "Rashi on Shevuot 2a:1:3"
+    ],
+    "generatedAt": "2026-10-16T08:56:16.648Z",
+    "model": "gemini-4-argon-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shevuot 2a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שבועות שתים שהן ארבע</strong> - בשבועת ביטוי שפתים הכתוב בויקרא אצל קרבן עולה ויורד קאמר כדמפרש בפרק שלישי <span class=\"parenthesized\">(דף כ.)</span>:"
+  },
+  "Rashi on Shevuot 2a:1:2": {
+    "dependsOn": [
+      "Rashi on Shevuot 2a:1:1",
+      "Rashi on Shevuot 2a:1:3"
+    ],
+    "generatedAt": "2026-10-16T09:03:26.664Z",
+    "model": "gemini-4-argon-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shevuot 2a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתים</strong> - כתיבי בקרא דכתיב <span class=\"parenthesized\">(שם)</span> להרע או להיטיב ומפרש במשנה פרק שלישי <span class=\"parenthesized\">(דף כה.)</span> אוכל להיטיב לא אוכל להרע שמענה את עצמו וה\"ה לכל דבר שהוא הן ולאו להבא דלהרע או להיטיב להבא משמע ובפ\"ג <span class=\"parenthesized\">(שם)</span> מרבה מן המקרא אף דברים שאין בהן הרעה והטבה ומיהו שתים נינהו ותו לא דבר וחילופו:"
+  },
+  "Rashi on Shevuot 2a:1:3": {
+    "dependsOn": [
+      "Shevuot 2a:1",
+      "Rashi on Shevuot 2a:1:1",
+      "Rashi on Shevuot 2a:1:2"
+    ],
+    "generatedAt": "2026-10-16T09:05:49.986Z",
+    "model": "gemini-4-argon-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shevuot 2a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהן ד'</strong> - יש לרבות מריבוי הכתובים כדמפרש בפ\"ג <span class=\"parenthesized\">(שם)</span> אף דבר וחילופו לשעבר כגון אכלתי והוא לא אכל או לא אכלתי ואכל:"
+  },
+  "Rashi on Shevuot 2a:2:1": {
+    "dependsOn": [
+      "Shevuot 2a:1",
+      "Shevuot 2a:2",
+      "Rashi on Shevuot 2a:1:1",
+      "Rashi on Shevuot 2a:1:2",
+      "Rashi on Shevuot 2a:1:3",
+      "Rashi on Shevuot 2a:2:2",
+      "Rashi on Shevuot 2a:2:3"
+    ],
+    "generatedAt": "2026-10-16T09:09:11.779Z",
+    "model": "gemini-4-argon-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shevuot 2a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ידיעות הטומאה</strong> - חיוב קרבן עולה ויורד מחמת טומאת מקדש וקדשיו הכתובה אצל שבועת ביטוי או נפש כי תגע וגו' וילפינן בפירקין שאין הכתוב מדבר אלא בטומאת מקדש וקדשיו שנכנס בשוגג למקדש אחר טומאה זו או אכל בשר קודש:"
+  },
+  "Rashi on Shevuot 2a:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-16T09:12:04.777Z",
+    "model": "gemini-4-argon-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shevuot 2a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתים שהן ארבע</strong> - שתים כתיבי דכתיב <span class=\"parenthesized\">(ויקרא ה׳:ב׳)</span> ונעלם ממנו והוא טמא משמע שנתעלמה ממנו טומאה וע\"י אותו העלם אכל קודש הרי אחת או שנכנס למקדש הרי שתים ולפי שאין חייב עליה אלא אם כן ידע בתחלה שנטמא ואח\"כ נעלמה ממנו ולאחר מעשה נודע לו שחטא משום הכי קרי לי' ידיעות:"
+  },
+  "Rashi on Shevuot 2a:2:3": {
+    "dependsOn": [
+      "Shevuot 2a:1",
+      "Shevuot 2a:2",
+      "Rashi on Shevuot 2a:1:1",
+      "Rashi on Shevuot 2a:1:2",
+      "Rashi on Shevuot 2a:1:3",
+      "Rashi on Shevuot 2a:2:1",
+      "Rashi on Shevuot 2a:2:2"
+    ],
+    "generatedAt": "2026-10-16T09:13:06.079Z",
+    "model": "gemini-4-argon-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shevuot 2a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהן ארבע</strong> - יש לרבות מן המקרא עוד שני חיובים העלם קודש והעלם מקדש וזכור הוא את הטומאה:"
+  },
+  "Rashi on Shevuot 2a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-16T09:17:45.579Z",
+    "model": "gemini-4-argon-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shevuot 2a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יציאות השבת שתים שהן ארבע</strong> - הוציא מרשות היחיד לרשות הרבים למדנו מן המקרא שחייב בפרק הזורק במסכת שבת <span class=\"parenthesized\">(דף צו:)</span> מויצו משה ויעבירו קול במחנה וגו' . <span class=\"parenthesized\">(ומתרגמינן)</span> לא תפיקו מרה\"י לרה\"ר זהו שתים אחת לעומד בחוץ והושיט ידו לפנים ונטל חפץ והוציאו לחוץ ואחת לעומד בפנים ונטל חפץ ממקומו והוציאו בידו והניחו בחוץ:"
+  },
+  "Rashi on Shevuot 2a:3:2": {
+    "dependsOn": [
+      "Rashi on Shevuot 2a:3:1",
+      "Shevuot 2a:3",
+      "Rashi on Shevuot 2a:1:1",
+      "Rashi on Shevuot 2a:1:2",
+      "Rashi on Shevuot 2a:1:3",
+      "Rashi on Shevuot 2a:2:1",
+      "Rashi on Shevuot 2a:2:2",
+      "Rashi on Shevuot 2a:2:3"
+    ],
+    "generatedAt": "2026-10-16T09:18:54.448Z",
+    "model": "gemini-4-argon-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shevuot 2a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהן ארבע</strong> - יש ללמוד מאלו שכשם שהקפידה תורה מרשות לרשות בהוצאה כך הקפידה בהכנסה והרי הן שתים אחת לעומד בפנים והושיט ידו לחוץ ונטל חפץ והכניסו ואחת לעומד מבחוץ ונטל חפץ ממקומו והושיטו בפנים והניחו:"
+  },
+  "Rashi on Shevuot 2a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-16T09:25:25.450Z",
+    "model": "gemini-4-argon-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shevuot 2a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מראות נגעים</strong> - שהמצורע מביא עליהם קרבן לטהרתו שנים כתובין במקרא שאת ובהרת והן חלוקין במראיהן כדמפרש בגמ':"
+  },
+  "Rashi on Shevuot 2a:4:2": {
+    "dependsOn": [
+      "Shevuot 2a:4",
+      "Rashi on Shevuot 2a:4:1",
+      "Rashi on Shevuot 2a:4:2",
+      "Rashi on Shevuot 2a:1:1",
+      "Rashi on Shevuot 2a:1:2",
+      "Rashi on Shevuot 2a:1:3",
+      "Rashi on Shevuot 2a:2:1",
+      "Rashi on Shevuot 2a:3:1",
+      "Rashi on Shevuot 2a:3:2"
+    ],
+    "generatedAt": "2026-10-16T09:27:22.613Z",
+    "model": "gemini-4-argon-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shevuot 2a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהן ארבעה</strong> - יש לרבות תולדה לזו ותולדה לזו כדמפרש בגמ':"
+  },
+  "Rashi on Shevuot 2a:5:1": {
+    "dependsOn": [
+      "Shevuot 2a:1",
+      "Shevuot 2a:2",
+      "Shevuot 2a:3",
+      "Shevuot 2a:4",
+      "Shevuot 2a:5",
+      "Rashi on Shevuot 2a:2:1",
+      "Rashi on Shevuot 2a:3:1",
+      "Rashi on Shevuot 2a:4:1",
+      "Rashi on Shevuot 2a:5:2"
+    ],
+    "generatedAt": "2026-10-16T09:32:29.330Z",
+    "model": "gemini-4-argon-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shevuot 2a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">את שיש בה ידיעה</strong> - כוליה אטומאה קאי ובגמרא מפרש אמאי מפרש מילי דטומאה ברישא ויציאות ומראות כל חדא וחדא מפרש במסכת דידה להכי לא פרשינהו בהאי מסכת והאי דתנינהו הכא משום דדמו להדדי בשתים שהן ארבע:"
+  },
+  "Rashi on Shevuot 2a:5:2": {
+    "dependsOn": [
+      "Shevuot 2a:5",
+      "Rashi on Shevuot 2a:5:1",
+      "Rashi on Shevuot 2a:5:3",
+      "Rashi on Shevuot 2a:2:1",
+      "Rashi on Shevuot 2a:2:2",
+      "Rashi on Shevuot 2a:2:3"
+    ],
+    "generatedAt": "2026-10-16T09:33:38.460Z",
+    "model": "gemini-4-argon-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shevuot 2a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ידיעה בתחלה</strong> - שידע שנטמא:"
+  },
+  "Rashi on Shevuot 2a:5:3": {
+    "dependsOn": [
+      "Shevuot 2a:5",
+      "Rashi on Shevuot 2a:5:1",
+      "Rashi on Shevuot 2a:5:2",
+      "Rashi on Shevuot 2a:5:4",
+      "Rashi on Shevuot 2a:5:5"
+    ],
+    "generatedAt": "2026-10-16T09:34:23.677Z",
+    "model": "gemini-4-argon-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shevuot 2a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וידיעה בסוף</strong> - משאכל את הקודש בהעלם או נכנס למקדש ויצא ונודע לו שבטומאה אכל או בטומאה נכנס:"
+  },
+  "Rashi on Shevuot 2a:5:4": {
+    "dependsOn": [
+      "Shevuot 2a:5",
+      "Rashi on Shevuot 2a:5:1",
+      "Rashi on Shevuot 2a:5:2",
+      "Rashi on Shevuot 2a:5:3",
+      "Rashi on Shevuot 2a:5:4",
+      "Rashi on Shevuot 2a:5:5",
+      "Rashi on Shevuot 2a:2:1",
+      "Rashi on Shevuot 2a:2:2",
+      "Rashi on Shevuot 2a:2:3"
+    ],
+    "generatedAt": "2026-10-16T09:35:26.542Z",
+    "model": "gemini-4-argon-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shevuot 2a:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והעלם בינתים</strong> - כשאכל את הקודש נעלמה ממנו טומאה או קודש וכן הנכנס למקדש נעלמה ממנו טומאה או מקדש:"
+  },
+  "Rashi on Shevuot 2a:5:5": {
+    "dependsOn": [
+      "Shevuot 2a:5",
+      "Rashi on Shevuot 2a:5:1",
+      "Rashi on Shevuot 2a:5:2",
+      "Rashi on Shevuot 2a:5:3",
+      "Rashi on Shevuot 2a:5:4",
+      "Rashi on Shevuot 2a:5:5",
+      "Rashi on Shevuot 2a:1:1",
+      "Rashi on Shevuot 2a:1:2",
+      "Rashi on Shevuot 2a:1:3",
+      "Rashi on Shevuot 2a:2:1"
+    ],
+    "generatedAt": "2026-10-16T09:36:37.405Z",
+    "model": "gemini-4-argon-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shevuot 2a:5:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי זה</strong> - בקרבן המפורש באותה פרשה לעשיר חטאת בהמה ולעני עוף ולדל שבדלים עשירית האיפה והיא מנחת חוטא האמורה בכל מקום וזהו לשון עולה ויורד לעשיר עולה ולעני יורד ובגמרא מפרש מנא ליה דבידיעה בתחלה ובסוף והעלם בינתים כתיב:"
+  },
+  "Rashi on Shevuot 2a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-16T09:38:34.111Z",
+    "model": "gemini-4-argon-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shevuot 2a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שעיר הנעשה בפנים</strong> - שלשה שעירים נעשין לצבור ביוה\"כ אחד מתן דמו לפנים וחבירו משתלח לעזאזל כמה שכתוב באחרי מות ואחד קרב במזבח החיצון במוספין והוא כתוב בפרשת פינחס עם שאר כל מוספי המועדות:"
+  },
+  "Rashi on Shevuot 2a:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-16T09:39:58.099Z",
+    "model": "gemini-4-argon-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shevuot 2a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תולה</strong> - להגין עליו מן היסורין שאע\"פ שאינו יודע שחטא יש לו לדאג שכל השוגגין צריכים כפרה לכשידעו אלמא קודם ידיעה ענושים הן:"
+  },
+  "Rashi on Shevuot 2a:6:3": {
+    "dependsOn": [
+      "Shevuot 2a:6",
+      "Rashi on Shevuot 2a:6:1",
+      "Rashi on Shevuot 2a:6:2",
+      "Rashi on Shevuot 2a:6:3",
+      "Rashi on Shevuot 2a:5:1",
+      "Rashi on Shevuot 2a:5:2",
+      "Rashi on Shevuot 2a:5:3",
+      "Rashi on Shevuot 2a:5:4",
+      "Rashi on Shevuot 2a:5:5"
+    ],
+    "generatedAt": "2026-10-16T09:40:47.155Z",
+    "model": "gemini-4-argon-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shevuot 2a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד שיודע לו</strong> - שאכל קודש בטומאה:"
+  },
+  "Rashi on Shevuot 2a:7:1": {
+    "dependsOn": [
+      "Shevuot 2a:5",
+      "Shevuot 2a:6",
+      "Shevuot 2a:7",
+      "Rashi on Shevuot 2a:5",
+      "Rashi on Shevuot 2a:6",
+      "Rashi on Shevuot 2a:7",
+      "Rashi on Shevuot 2a:5:1",
+      "Rashi on Shevuot 2a:5:2",
+      "Rashi on Shevuot 2a:6:1",
+      "Rashi on Shevuot 2a:6:2",
+      "Rashi on Shevuot 2a:7:2",
+      "Rashi on Shevuot 2a:7:3"
+    ],
+    "generatedAt": "2026-10-16T09:41:51.345Z",
+    "model": "gemini-4-argon-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shevuot 2a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין בה ידיעה בתחלה</strong> - שלא ידע בטומאה מימיו זה לא יבא לכלל קרבן עוד לעולם שהרי אין קרבן בא אלא על שיש בו ידיעה בתחלה:"
+  },
+  "Rashi on Shevuot 2a:7:2": {
+    "dependsOn": [
+      "Shevuot 2a:7",
+      "Rashi on Shevuot 2a:7",
+      "Rashi on Shevuot 2a:6:1",
+      "Rashi on Shevuot 2a:6:2",
+      "Rashi on Shevuot 2a:6:3",
+      "Rashi on Shevuot 2a:7:1",
+      "Rashi on Shevuot 2a:7:3",
+      "Rashi on Shevuot 2a:7:4",
+      "Rashi on Shevuot 2a:7:5",
+      "Rashi on Shevuot 2a:1:1",
+      "Rashi on Shevuot 2a:1:2",
+      "Rashi on Shevuot 2a:1:3",
+      "Rashi on Shevuot 2a:2:1",
+      "Rashi on Shevuot 2a:5:1",
+      "Rashi on Shevuot 2a:5:2",
+      "Rashi on Shevuot 2a:5:3",
+      "Rashi on Shevuot 2a:5:4",
+      "Rashi on Shevuot 2a:5:5"
+    ],
+    "generatedAt": "2026-10-16T09:43:09.639Z",
+    "model": "gemini-4-argon-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shevuot 2a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שעיר הנעשה בחוץ ויום הכפורים מכפר</strong> - ויום הכפורים הוא עצמו מועיל עם הקרבנות שנאמר <span class=\"parenthesized\">(ויקרא כג)</span> כי יום כפורים הוא:"
+  },
+  "Rashi on Shevuot 2a:7:3": {
+    "dependsOn": [
+      "Shevuot 2a:7",
+      "Rashi on Shevuot 2a:7",
+      "Rashi on Shevuot 2a:7:1",
+      "Rashi on Shevuot 2a:7:2",
+      "Rashi on Shevuot 2a:7:4",
+      "Rashi on Shevuot 2a:7:5",
+      "Shevuot 2a:6",
+      "Rashi on Shevuot 2a:6:1",
+      "Rashi on Shevuot 2a:6:2",
+      "Rashi on Shevuot 2a:6:3"
+    ],
+    "generatedAt": "2026-10-16T09:44:47.058Z",
+    "model": "gemini-4-argon-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shevuot 2a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנאמר</strong> - בשעיר הנעשה בחוץ ושעיר חטאת אחד מלבד חטאת הכפורים והוא שעיר הנעשה בפנים הקישם לך הכתוב ללמד שעל מה שזה מכפר זה מכפר:"
+  },
+  "Rashi on Shevuot 2a:7:4": {
+    "dependsOn": [
+      "Shevuot 2a:7",
+      "Rashi on Shevuot 2a:7:1",
+      "Rashi on Shevuot 2a:7:2",
+      "Rashi on Shevuot 2a:7:3",
+      "Rashi on Shevuot 2a:7:4",
+      "Rashi on Shevuot 2a:7:5"
+    ],
+    "generatedAt": "2026-10-16T09:46:08.575Z",
+    "model": "gemini-4-argon-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shevuot 2a:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה פנימי אינו מכפר אלא על דבר שיש בו ידיעה</strong> - בתחלה דהכי ילפינן בהדיא בגמ' דאינו תולה אלא על דבר שיש בו ידיעה בתחלה:"
+  },
+  "Rashi on Shevuot 2a:7:5": {
+    "dependsOn": [
+      "Shevuot 2a:7",
+      "Rashi on Shevuot 2a:7",
+      "Rashi on Shevuot 2a:7:1",
+      "Rashi on Shevuot 2a:7:2",
+      "Rashi on Shevuot 2a:7:3",
+      "Rashi on Shevuot 2a:7:4",
+      "Rashi on Shevuot 2a:7:5"
+    ],
+    "generatedAt": "2026-10-16T09:48:08.031Z",
+    "model": "gemini-4-argon-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shevuot 2a:7:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף חיצון אינו מכפר אלא על דבר שיש בו ידיעה</strong> - מאי נינהו ידיעה בסוף ולא בתחלה דלא אתא לכלל קרבן ומכפר זה כפרה גמורה בלא תלייה וא\"ת כיון שהוקשו יכפרו שניהם על שיש בו ידיעה בתחלה ונ\"מ לטומאה שאירעה בין זה לזה הא פריך בגמ' <span class=\"parenthesized\">(דף ח:)</span> ומשני לה:"
+  },
+  "Rashi on Shevuot 2a:8:1": {
+    "dependsOn": [
+      "Shevuot 2a:8"
+    ],
+    "generatedAt": "2026-10-16T09:49:46.163Z",
+    "model": "gemini-4-argon-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shevuot 2a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שעירי הרגלים</strong> - בכל הרגלים נאמר שעירי חטאת ובגמ' מפרש מנא ליה דאשאין בה ידיעה לא בתחלה ולא בסוף מכפר:"
+  },
+  "Rashi on Shevuot 2a:8:2": {
+    "dependsOn": [
+      "Shevuot 2a:8",
+      "Rashi on Shevuot 2a:8:1",
+      "Rashi on Shevuot 2a:8:2",
+      "Rashi on Shevuot 2a:5:1",
+      "Rashi on Shevuot 2a:5:2",
+      "Rashi on Shevuot 2a:6:1",
+      "Rashi on Shevuot 2a:7:1"
+    ],
+    "generatedAt": "2026-10-16T09:52:07.652Z",
+    "model": "gemini-4-argon-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shevuot 2a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר\"ש אומר שעירי הרגלים מכפרים</strong> - עליה אבל לא שעירי ראשי חדשים:"
+  },
+  "Tosafot on Shevuot 2a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-16T09:08:04.854Z",
+    "model": "gemini-4-argon-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shevuot 2a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שבועות</strong> - הא דלא פתח האי מסכת כל כינויי שבועות כשבועות כדפתח נדרים ונזיר משום דתנא ממכות קא סליק כדמפרש בגמרא הוצרך לפתוח בשתים שהן ארבע והואיל ולא מצי פתח בכינוי תו לא חש לשנות אח\"כ וא\"ת אמאי לא תני ידיעות ברישא דהא בקרא כתיב ברישא או נפש אשר תגע וגו' והדר או נפש כי תשבע וגו' וי\"ל דשבועות הוא עיקר המסכת דבסדר ישועות קאי ואגב שבועות תני ידיעות משום דגבי הדדי כתיבן כדמפרש בגמרא א\"נ משום דמילי דשבועות כתיבי בקרא ברישא ונפש כי תחטא וגו' <span class=\"parenthesized\">(ויקרא ה)</span> והוא עד דהיינו שבועת העדות והאי דלא פתח בשבועת העדות משום דלית בהו שתים שהן ארבע:"
+  },
+  "Tosafot on Shevuot 2a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-16T09:15:11.599Z",
+    "model": "gemini-4-argon-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shevuot 2a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ידיעות הטומאה שתים שהן ארבע</strong> - תימה דהעלמות הו\"ל למיתני דהיא עיקר מילתא העלם טומאה דקודש ומקדש והעלם קודש ומקדש וי\"ל דניחא ליה למנקט לשון ידיעה מטעמא דמפורש בפ\"ב <span class=\"parenthesized\">(דף יד:)</span> ידיעות קמייתא דליתנהו בכל התורה כולה קא חשיב א\"נ לאידך לישנא דידיעות בתרייתא דאתיין לידי קרבן קא חשיב ולהך לישנא הא דלא תני נמי ידיעות השבת משום דניחא ליה למינקט יציאות דבמלאכות גופייהו איכא שתים שהן ארבע אבל הכא לא מצי למינקט הטומאות שתים שהן ד' דליכא אלא תרתי טומאת קודש וטומאת מקדש:"
+  },
+  "Tosafot on Shevuot 2a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-16T09:22:08.348Z",
+    "model": "gemini-4-argon-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shevuot 2a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יציאות השבת שתים שהן ארבע</strong> - בגמ' מפרש שתים הוצאה דעני ודבעל הבית שהן ארבע הכנסה דעני ודבעל הבית ותימה אמאי חשיב דעני ודבעל הבית בתרתי דמה לי עני ומה לי בעל הבית ויש לומר דאצטריך למתנינהו משום דקס\"ד דלא הוי דרך הוצאה אלא כשעומד ברשות היחיד ונטל פירות ויצא לרשות הרבים אבל כי האי גוונא דגופו ברשות היחיד וידו ברשות הרבים או איפכא לאו דרך הוצאה היא ובכי האי גוונא אמר בפ\"ק דשבת <span class=\"parenthesized\">(דף ג:)</span> ידו של אדם אינה לא כרשות היחיד ולא כרשות הרבים ואיצטריך למיתני תרוייהו דאי תנא חדא לא הוה שמעינן אידך ומהאי טעמא ניחא ליה דלא תני הך הוצאה שלישית כדפרישית ור\"ת מפרש דהוצאה מלאכה גרועה היא דמה לי אם מוציא מרשות היחיד לרשות היחיד ומה לי לרשות הרבים לכך הוצרך לפרש כל ענינים דעני ודעשיר ותדע דמלאכה גרועה היא מדאמר בריש הזורק <span class=\"parenthesized\">(שבת דף צו: ושם)</span> הוצאה גופא היכא כתיבא ודריש לה מויכלא העם מהביא כו' וקאמר אשכחנא הוצאה הכנסה מנלן סברא היא מה לי אפוקי מה לי עיולי ולשאר אבות לא בעינא קרא אלא מחייבינן כל דהוו במשכן והוצאה היתה במשכן כדאמר בפרק במה טומנין <span class=\"parenthesized\">(שבת דף מט:)</span> הם הורידו קרשים מעגלה לקרקע ואתם אל תוציאו הם העלו קרשים לעגלה ואתם אל תכניסו ולשאר תולדות לא חיישינן דלהוו במשכן אלא אאב לחודה אבל תולדות דהוצאה בעי בפרק הזורק <span class=\"parenthesized\">(שבת דף צו:)</span> או סברא או דלהוו במשכן כגון מכניס וזורק ומעביר ומושיט והיינו משום דמלאכה גרועה היא ואין להאריך כאן יותר:"
+  },
+  "Tosafot on Shevuot 2a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-16T09:31:33.248Z",
+    "model": "gemini-4-argon-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shevuot 2a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מראות נגעים שנים</strong> - גרסינן ולא שתים דמראה לשון זכר הוא כדכתיב <span class=\"parenthesized\">(שמות ג׳:ג׳)</span> את המראה הגדול הזה ותנן נמי במס' נגעים <span class=\"parenthesized\">(פ\"א משנה ד)</span> ומייתי לה בהמזבח מקדש <span class=\"parenthesized\">(זבחים דף פח: ושם)</span> מראות נגעים רבי דוסא בן הרכינס אומר שלשים וששה עקביא בן מהללאל אומר שבעים ושנים והא דקתני התם טובא משום דחשיב נמי פתיכי אי נמי כייל נגעי בתים ובגדים:"
+  }
+}
