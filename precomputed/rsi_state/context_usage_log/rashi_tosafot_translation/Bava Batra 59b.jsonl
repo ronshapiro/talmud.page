@@ -11,3 +11,5 @@
 {"taskType":"rashi_tosafot_translation","ref":"Tosafot on Bava Batra 59b:8:1","callKind":"critique","toolUses":[],"costUsd":0.051992,"model":"claude-sonnet-5-5","timestamp":"2026-10-17T16:52:02.661Z"}
 {"taskType":"rashi_tosafot_translation","ref":"Tosafot on Bava Batra 59b:9:1","callKind":"generate","toolUses":[{"name":"Bash","input":{"command":"npx ts-node rsi_orchestrator/context_fetch_cli.ts get-refs '[\"Bava Batra 59b:9\", \"Rashbam on Bava Batra 59b:9\"]'"}}],"costUsd":0.0947788,"model":"claude-sonnet-5-5","timestamp":"2026-10-17T16:52:20.284Z"}
 {"taskType":"rashi_tosafot_translation","ref":"Tosafot on Bava Batra 59b:9:1","callKind":"critique","toolUses":[],"costUsd":0.043511999999999995,"model":"claude-sonnet-5-5","timestamp":"2026-10-17T16:52:28.949Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Tosafot on Bava Batra 59b:8:1","callKind":"generate","toolUses":[],"costUsd":0.20356,"model":"claude-sonnet-5-5","timestamp":"2026-10-17T20:55:52.389Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Tosafot on Bava Batra 59b:8:1","callKind":"critique","toolUses":[],"costUsd":0.042768,"model":"claude-sonnet-5-5","timestamp":"2026-10-17T20:56:01.773Z"}
