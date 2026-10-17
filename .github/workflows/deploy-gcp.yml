@@ -49,7 +49,7 @@ jobs:
           fi
 
           echo "Author verified as ronshapiro. Inspecting modified files..."
-          CHANGED_FILES=$(gh pr diff "$PULL_REQUEST_NUMBER" --name-only -R "${{ github.repository }}")
+          CHANGED_FILES=$(gh api --paginate "repos/${{ github.repository }}/pulls/${PULL_REQUEST_NUMBER}/files" --jq '.[].filename')
           echo "Changed files in PR #${PULL_REQUEST_NUMBER}:"
           echo "$CHANGED_FILES"
 
@@ -83,7 +83,7 @@ jobs:
       contents: 'read'
       id-token: 'write'
       issues: 'write'
-      pull-requests: 'read'
+      pull-requests: 'write'
 
     steps:
     - uses: actions/checkout@v4
@@ -148,9 +148,7 @@ jobs:
         PULL_REQUEST_NUMBER: ${{ needs.check_deployment.outputs.pull_request_number }}
         PREVIEW_URL: ${{ steps.deploy.outputs.version_url || format('https://{0}-dot-talmud.appspot.com', needs.check_deployment.outputs.version) }}
       run: |
-        COMMENT_BODY="<!-- pr-preview-deployment -->
-        🚀 Deployed preview to App Engine:
-        ${PREVIEW_URL}"
+        COMMENT_BODY=$(printf '<!-- pr-preview-deployment -->\n🚀 Deployed preview to App Engine:\n%s\n' "$PREVIEW_URL")
 
         COMMENT_IDENTIFIER=$(gh api "repos/${{ github.repository }}/issues/${PULL_REQUEST_NUMBER}/comments" \
           --jq '.[] | select(.body | contains("<!-- pr-preview-deployment -->")) | .id' | head -n 1)
