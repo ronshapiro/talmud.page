@@ -1,5 +1,6 @@
 import {execFileSync} from "child_process";
 import * as fs from "fs";
+import * as path from "path";
 import {
   AgentError,
   asAgyCliError,
@@ -18,12 +19,15 @@ import {
   isCommandAllowed,
   parseAgyStreamJsonLines,
   parseClaudeStreamJsonLines,
+  preparePromptWithImages,
   primaryClaudeModel,
   registerActiveChildProcess,
   runHeadlessAgy,
   runHeadlessClaude,
+  runOllama,
   stopAllActiveAgents,
 } from "./agent_runner";
+import {extractBase64Images} from "./base64_images";
 
 describe("parseAgyStreamJsonLines", () => {
   test("returns empty toolUses and undefined result for empty output", () => {
@@ -561,5 +565,69 @@ describe("isolated Antigravity environment", () => {
 
     cleanupIsolatedAgyHomeDirectory();
     expect(fs.existsSync(isolatedHomeDirectory)).toBe(false);
+  });
+});
+
+describe("image attachment helpers and multimodal runners", () => {
+  const sampleBase64 = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhg"
+    + "GAWjR9awAAAABJRU5ErkJggg==";
+
+  test("preparePromptWithImages appends @filePath and returns imageDirectories for --add-dir", () => {
+    const {images} = extractBase64Images(
+      `<img src="data:image/png;base64,${sampleBase64}">`,
+      {ref: "Rashi on Menachot 99a:4:2"},
+    );
+    expect(images).toHaveLength(1);
+    expect(images[0].filePath).toMatch(/Rashi_on_Menachot_99a_4_2_IMAGE_PLACEHOLDER_1\.png$/);
+    expect(fs.existsSync(images[0].filePath)).toBe(true);
+    const writtenBytes = fs.readFileSync(images[0].filePath);
+    expect(writtenBytes.equals(Buffer.from(sampleBase64, "base64"))).toBe(true);
+
+    const {effectivePrompt, imageDirectories} = preparePromptWithImages(
+      "Translate this comment",
+      images,
+    );
+    expect(effectivePrompt).toContain(
+      `- IMAGE_PLACEHOLDER_1: @${images[0].filePath}`,
+    );
+    expect(imageDirectories).toEqual([path.dirname(images[0].filePath)]);
+
+    const claudeArgs = buildClaudeArgs(
+      effectivePrompt,
+      {},
+      imageDirectories,
+    );
+    const addDirIndex = claudeArgs.indexOf("--add-dir");
+    expect(addDirIndex).toBeGreaterThan(-1);
+    expect(claudeArgs[addDirIndex + 1]).toBe(path.dirname(images[0].filePath));
+  });
+
+  test("runOllama attaches base64Data array on user message when images are provided", async () => {
+    const originalFetch = global.fetch;
+    const fetchMock = jest.fn().mockResolvedValue({
+      ok: true,
+      json: async () => ({
+        message: {content: '{"english": "translated"}'},
+        total_duration: 1000000000,
+      }),
+    } as unknown as Response);
+    global.fetch = fetchMock;
+
+    try {
+      const {images} = extractBase64Images(`<img src="data:image/png;base64,${sampleBase64}">`);
+      await runOllama("Translate", {model: "gemma4:e4b", images});
+
+      expect(fetchMock).toHaveBeenCalledTimes(1);
+      const requestBody = JSON.parse(fetchMock.mock.calls[0][1].body as string);
+      expect(requestBody.messages).toEqual([
+        {
+          role: "user",
+          content: "Translate",
+          images: [sampleBase64],
+        },
+      ]);
+    } finally {
+      global.fetch = originalFetch;
+    }
   });
 });
