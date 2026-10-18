@@ -160,6 +160,26 @@ describe("getRefs", () => {
     expect(result.entries).toEqual([]);
     expect(result.error).toMatch(/over the .*-character limit/);
   });
+
+  test("replaces huge base64 image data URIs with placeholders and temp file locations so getRefs stays under the character cap", () => {
+    const hugeBase64Payload = "A".repeat(MAX_CHARS_PER_CALL + 1000);
+    const amudWithImage = amud();
+    const imageHtml = `הגה"ה <img src="data:image/png;base64,${hugeBase64Payload}"> ע"כ`;
+    amudWithImage.sections[0].commentary!.Rashi.comments[0].he = imageHtml;
+    writeJson(filePath, amudWithImage);
+
+    const result = getRefs([`Rashi on Zevachim ${SECTION}:1:1`]);
+    expect(result.error).toBeUndefined();
+    expect(result.entries).toHaveLength(1);
+    expect(result.entries[0].ref).toBe(`Rashi on Zevachim ${SECTION}:1:1`);
+    expect(result.entries[0].en).toBe("explanation");
+    expect(result.entries[0].he).toContain('הגה"ה <img src="IMAGE_PLACEHOLDER_1"> ע"כ');
+    expect(result.entries[0].he).toMatch(
+      new RegExp(
+        `Attached image\\(s\\):\\n- IMAGE_PLACEHOLDER_1: @.*\\/Rashi_on_Zevachim_${SECTION}_1_1_IMAGE_PLACEHOLDER_1\\.png$`,
+      ),
+    );
+  });
 });
 
 describe("getNeighborSegments", () => {
@@ -182,6 +202,23 @@ describe("getNeighborSegments", () => {
     const result = getNeighborSegments(`Rashi on Zevachim ${SECTION}:1:1`);
     expect(result.entries).toEqual([]);
     expect(result.error).toMatch(/not a base Gemara segment/);
+  });
+
+  test("replaces base64 image data URIs with placeholders and temp file locations in neighbor segments", () => {
+    const amudWithImage = amud();
+    amudWithImage.sections[0].he = 'ציור <img src="data:image/png;base64,iVBORw0KGgo=">';
+    writeJson(filePath, amudWithImage);
+
+    const result = getNeighborSegments(`Zevachim ${SECTION}:1`, 0, 0);
+    expect(result.entries).toHaveLength(1);
+    expect(result.entries[0].ref).toBe(`Zevachim ${SECTION}:1`);
+    expect(result.entries[0].en).toBe("first");
+    expect(result.entries[0].he).toContain('ציור <img src="IMAGE_PLACEHOLDER_1">');
+    expect(result.entries[0].he).toMatch(
+      new RegExp(
+        `Attached image\\(s\\):\\n- IMAGE_PLACEHOLDER_1: @.*\\/Zevachim_${SECTION}_1_IMAGE_PLACEHOLDER_1\\.png$`,
+      ),
+    );
   });
 });
 

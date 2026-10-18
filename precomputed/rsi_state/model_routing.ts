@@ -66,6 +66,13 @@ function findMatchingConfig(
   return undefined;
 }
 
+function toTaskModelConfig(backend: AgentBackend, configuration: ModelConfig): TaskModelConfig {
+  return {
+    ...configuration,
+    backend,
+  };
+}
+
 /**
  * Resolves the generator and critique model configuration for a task type and backend/preset.
  */
@@ -112,14 +119,7 @@ export function getTaskModelConfig(
         ?? findMatchingConfig(baseConfigs, requestedConfig);
 
       if (matchedConfig) {
-        return {
-          backend: requestedBackend as AgentBackend,
-          generateModel: matchedConfig.generateModel,
-          critiqueModel: matchedConfig.critiqueModel,
-          ...(matchedConfig.critiqueBackend
-            ? {critiqueBackend: matchedConfig.critiqueBackend}
-            : {}),
-        };
+        return toTaskModelConfig(requestedBackend as AgentBackend, matchedConfig);
       }
 
       const allAvailableConfigs = {
@@ -153,28 +153,14 @@ export function getTaskModelConfig(
       throw new Error(
         `Backend "${requestedBackend}" has no default config. Available configs: ${available}`);
     }
-    return {
-      backend: requestedBackend as AgentBackend,
-      generateModel: defaultConfig.generateModel,
-      critiqueModel: defaultConfig.critiqueModel,
-      ...(defaultConfig.critiqueBackend
-        ? {critiqueBackend: defaultConfig.critiqueBackend}
-        : {}),
-    };
+    return toTaskModelConfig(requestedBackend as AgentBackend, defaultConfig);
   }
 
   if (requestedConfig) {
     for (const [backendName, backendConfigs] of Object.entries(backends)) {
       for (const [key, cfg] of Object.entries(backendConfigs)) {
         if (matchesConfig(key, requestedConfig, cfg)) {
-          return {
-            backend: backendName as AgentBackend,
-            generateModel: cfg.generateModel,
-            critiqueModel: cfg.critiqueModel,
-            ...(cfg.critiqueBackend
-              ? {critiqueBackend: cfg.critiqueBackend}
-              : {}),
-          };
+          return toTaskModelConfig(backendName as AgentBackend, cfg);
         }
       }
     }
@@ -193,12 +179,5 @@ export function getTaskModelConfig(
   if (!defaultCfg) {
     throw new Error(`No default model configuration found in ${configPath}`);
   }
-  return {
-    backend: defaultBackend,
-    generateModel: defaultCfg.generateModel,
-    critiqueModel: defaultCfg.critiqueModel,
-    ...(defaultCfg.critiqueBackend
-      ? {critiqueBackend: defaultCfg.critiqueBackend}
-      : {}),
-  };
+  return toTaskModelConfig(defaultBackend, defaultCfg);
 }

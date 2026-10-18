@@ -1,6 +1,8 @@
+import * as contextUsageLog from "../precomputed/rsi_state/context_usage_log";
 import * as modelRouting from "../precomputed/rsi_state/model_routing";
 import * as pageSkeleton from "../precomputed/rsi_state/page_skeleton";
 import {Edit} from "../precomputed/ai_edits";
+import * as agentRunner from "./agent_runner";
 import {AgentError} from "./agent_runner";
 import {
   CritiqueOutcome,
@@ -791,6 +793,150 @@ describe("generateViaAgent and critiqueViaAgent backend validation", () => {
       );
     } finally {
       getTaskModelConfigSpy.mockRestore();
+    }
+  });
+});
+
+describe("base64 image decoding, placeholders, and restoration", () => {
+  const sampleBase64 = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhg"
+    + "GAWjR9awAAAABJRU5ErkJggg==";
+  const sampleDataUri = `data:image/png;base64,${sampleBase64}`;
+
+  test("generationPrompt replaces base64 data URI with IMAGE_PLACEHOLDER_1 and adds instruction", () => {
+    const buildPageSkeletonSpy = jest.spyOn(pageSkeleton, "buildPageSkeleton").mockReturnValue({
+      page: "Menachot 98a",
+      segments: [
+        {
+          ref: "Menachot 98a:1",
+          preview: "מקור הבדיקה",
+          commentary: {Rashi: 1},
+        },
+      ],
+    });
+    try {
+      const imageCandidate = candidate({
+        book: "Menachot",
+        section: "98a",
+        page: "Menachot 98a",
+        ref: "Rashi on Menachot 98a:1:1",
+        commentator: "Rashi",
+        hebrewSource: `הגה"ה <img src="${sampleDataUri}"> ע"כ`,
+      });
+      const prompt = generationPrompt(imageCandidate);
+      expect(prompt).not.toContain(sampleBase64);
+      expect(prompt).toContain('Current Hebrew text: הגה"ה <img src="IMAGE_PLACEHOLDER_1"> ע"כ');
+      expect(prompt).toContain("Note: Base64-encoded images in the source text have been decoded");
+    } finally {
+      buildPageSkeletonSpy.mockRestore();
+    }
+  });
+
+  test("critiquePrompt replaces base64 data URIs with consistent placeholders across original and proposed fields", () => {
+    const imageCandidate = candidate({
+      hebrewSource: `הגה"ה <img src="${sampleDataUri}"> ע"כ`,
+    });
+    const proposedEdit: Edit = {
+      hebrew: `<strong class="dibur-hamatchil">הגה"ה</strong> - <img src="${sampleDataUri}"> ע"כ:`,
+      english: `<strong class="dibur-hamatchil">Gloss:</strong> <img src="${sampleDataUri}">.`,
+    };
+    const prompt = critiquePrompt(imageCandidate, proposedEdit);
+    expect(prompt).not.toContain(sampleBase64);
+    expect(prompt).toContain('Original Hebrew: הגה"ה <img src="IMAGE_PLACEHOLDER_1"> ע"כ');
+    expect(prompt).toContain(
+      'Proposed Hebrew: <strong class="dibur-hamatchil">הגה"ה</strong> - <img src="IMAGE_PLACEHOLDER_1"> ע"כ:',
+    );
+    expect(prompt).toContain(
+      'Proposed English: <strong class="dibur-hamatchil">Gloss:</strong> <img src="IMAGE_PLACEHOLDER_1">.',
+    );
+    expect(prompt).toContain("Treat matching placeholders as preserving the original image.");
+  });
+
+  test("generateWithSelfCritique restores IMAGE_PLACEHOLDER_1 to original data URI in final edit", async () => {
+    const imageCandidate = candidate({
+      hebrewSource: `הגה"ה <img src="${sampleDataUri}"> ע"כ`,
+    });
+    const generate = jest.fn(async () => generated({
+      edit: {
+        hebrew: '<b>הגה"ה</b> - <img src="IMAGE_PLACEHOLDER_1"> ע"כ:',
+        english: '<b>Gloss:</b> <img src="IMAGE_PLACEHOLDER_1">.',
+      },
+    }));
+    const critique = jest.fn(async () => validOutcome);
+
+    const result = await generateWithSelfCritique(imageCandidate, {generate, critique});
+    expect(result).toBeDefined();
+    expect(result!.edit).toEqual({
+      hebrew: `<b>הגה"ה</b> - <img src="${sampleDataUri}"> ע"כ:`,
+      english: `<b>Gloss:</b> <img src="${sampleDataUri}">.`,
+    });
+  });
+
+  test("generateViaAgent and critiqueViaAgent pass decoded images to runner and restore placeholders", async () => {
+    const buildPageSkeletonSpy = jest.spyOn(pageSkeleton, "buildPageSkeleton").mockReturnValue({
+      page: "Menachot 98a",
+      segments: [{ref: "Menachot 98a:1", preview: "מקור", commentary: {Rashi: 1}}],
+    });
+    const recordContextUsageSpy = jest
+      .spyOn(contextUsageLog, "recordContextUsage")
+      .mockImplementation(() => {});
+    const mockRunner = jest.fn()
+      .mockResolvedValueOnce({
+        text: JSON.stringify({
+          hebrew: '<b>הגה"ה</b> - <img src="IMAGE_PLACEHOLDER_1"> ע"כ:',
+          english: '<b>Gloss:</b> <img src="IMAGE_PLACEHOLDER_1">.',
+        }),
+        model: "claude-sonnet-5",
+        costUsd: 0.01,
+        toolUses: [],
+      })
+      .mockResolvedValueOnce({
+        text: JSON.stringify({valid: true}),
+        model: "claude-sonnet-5",
+        costUsd: 0.002,
+        toolUses: [],
+      });
+    const getAgentRunnerSpy = jest.spyOn(agentRunner, "getAgentRunner").mockReturnValue(mockRunner);
+
+    try {
+      const imageCandidate = candidate({
+        book: "Menachot",
+        section: "98a",
+        page: "Menachot 98a",
+        ref: "Rashi on Menachot 98a:1:1",
+        commentator: "Rashi",
+        hebrewSource: `הגה"ה <img src="${sampleDataUri}"> ע"כ`,
+      });
+
+      const generatedResult = await generateViaAgent(imageCandidate, undefined, {backend: "claude"});
+      expect(mockRunner).toHaveBeenCalledTimes(1);
+      const [generatePromptText, generateAgentOptions] = mockRunner.mock.calls[0];
+      expect(generatePromptText).not.toContain(sampleBase64);
+      expect(generatePromptText).toContain("IMAGE_PLACEHOLDER_1");
+      expect(generateAgentOptions.images).toHaveLength(1);
+      expect(generateAgentOptions.images[0].placeholder).toBe("IMAGE_PLACEHOLDER_1");
+      expect(generateAgentOptions.images[0].base64Data).toBe(sampleBase64);
+
+      expect(generatedResult.edit).toEqual({
+        hebrew: `<b>הגה"ה</b> - <img src="${sampleDataUri}"> ע"כ:`,
+        english: `<b>Gloss:</b> <img src="${sampleDataUri}">.`,
+      });
+
+      const critiqueResult = await critiqueViaAgent(
+        imageCandidate,
+        generatedResult.edit,
+        {backend: "claude"},
+      );
+      expect(critiqueResult.verdict.valid).toBe(true);
+      expect(mockRunner).toHaveBeenCalledTimes(2);
+      const [critiquePromptText, critiqueAgentOptions] = mockRunner.mock.calls[1];
+      expect(critiquePromptText).not.toContain(sampleBase64);
+      expect(critiquePromptText).toContain("IMAGE_PLACEHOLDER_1");
+      expect(critiqueAgentOptions.images).toHaveLength(1);
+      expect(critiqueAgentOptions.images[0].placeholder).toBe("IMAGE_PLACEHOLDER_1");
+    } finally {
+      buildPageSkeletonSpy.mockRestore();
+      recordContextUsageSpy.mockRestore();
+      getAgentRunnerSpy.mockRestore();
     }
   });
 });
