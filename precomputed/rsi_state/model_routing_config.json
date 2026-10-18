@@ -33,6 +33,14 @@
     "gemma4-12b": {
       "generateModel": "gemma4:12b",
       "critiqueModel": "gemma4:12b"
+    },
+    "gemma4-26b": {
+      "generateModel": "gemma4:26b",
+      "critiqueModel": "gemma4:26b"
+    },
+    "gemma4-31b": {
+      "generateModel": "gemma4:31b",
+      "critiqueModel": "gemma4:31b"
     }
   },
   "claude": {
