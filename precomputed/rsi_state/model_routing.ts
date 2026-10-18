@@ -10,6 +10,7 @@ import {AgentBackend} from "../../rsi_orchestrator/agent_runner";
 export interface ModelConfig {
   generateModel: string;
   critiqueModel: string;
+  critiqueBackend?: AgentBackend;
 }
 
 export interface TaskModelConfig extends ModelConfig {
@@ -85,7 +86,7 @@ export function getTaskModelConfig(
   let backends: Record<string, BackendConfigs> | undefined;
   if (rawObj[taskType] && typeof rawObj[taskType] === "object") {
     backends = rawObj[taskType] as Record<string, BackendConfigs>;
-  } else if ("agy" in raw || "claude" in raw) {
+  } else if ("agy" in raw || "claude" in raw || "ollama" in raw) {
     backends = raw;
   } else {
     throw new Error(`No model routing config for task type "${taskType}" in ${configPath}`);
@@ -115,6 +116,9 @@ export function getTaskModelConfig(
           backend: requestedBackend as AgentBackend,
           generateModel: matchedConfig.generateModel,
           critiqueModel: matchedConfig.critiqueModel,
+          ...(matchedConfig.critiqueBackend
+            ? {critiqueBackend: matchedConfig.critiqueBackend}
+            : {}),
         };
       }
 
@@ -153,6 +157,9 @@ export function getTaskModelConfig(
       backend: requestedBackend as AgentBackend,
       generateModel: defaultConfig.generateModel,
       critiqueModel: defaultConfig.critiqueModel,
+      ...(defaultConfig.critiqueBackend
+        ? {critiqueBackend: defaultConfig.critiqueBackend}
+        : {}),
     };
   }
 
@@ -164,6 +171,9 @@ export function getTaskModelConfig(
             backend: backendName as AgentBackend,
             generateModel: cfg.generateModel,
             critiqueModel: cfg.critiqueModel,
+            ...(cfg.critiqueBackend
+              ? {critiqueBackend: cfg.critiqueBackend}
+              : {}),
           };
         }
       }
@@ -187,5 +197,8 @@ export function getTaskModelConfig(
     backend: defaultBackend,
     generateModel: defaultCfg.generateModel,
     critiqueModel: defaultCfg.critiqueModel,
+    ...(defaultCfg.critiqueBackend
+      ? {critiqueBackend: defaultCfg.critiqueBackend}
+      : {}),
   };
 }

@@ -772,32 +772,34 @@ export async function critiqueViaAgent(
     configName: options?.modelConfig,
     backend: options?.backend,
   });
-  // A separate critique backend (e.g. a local ollama generator judged by agy) resolves its own
-  // critique model from that backend's routing config rather than the generator's.
+  const critiqueBackend = options?.critiqueBackend
+    ?? modelConfig?.critiqueBackend
+    ?? options?.backend
+    ?? modelConfig?.backend;
+  if (!critiqueBackend) {
+    throw new Error("No backend configured for critique");
+  }
   const critiqueBackendConfig = options?.critiqueBackend
     ? getTaskModelConfig(TASK_TYPE, {backend: options.critiqueBackend})
     : undefined;
-  const backend = options?.critiqueBackend ?? options?.backend ?? modelConfig?.backend;
-  if (!backend) {
-    throw new Error("No backend configured for critique");
-  }
   const model = options?.critiqueModel
+    ?? (modelConfig?.critiqueBackend ? modelConfig.critiqueModel : undefined)
     ?? critiqueBackendConfig?.critiqueModel
     ?? (options?.modelConfig
       ? modelConfig.critiqueModel
       : (options?.model ?? modelConfig.critiqueModel));
-  const runner = getAgentRunner(backend);
+  const runner = getAgentRunner(critiqueBackend);
   if (options?.debug) {
-    console.log(`  [critique] running ${backend} (${model ?? "default model"})...`);
+    console.log(`  [critique] running ${critiqueBackend} (${model ?? "default model"})...`);
   }
 
-  const isLongThread = isLongThreadBackend(backend);
+  const isLongThread = isLongThreadBackend(critiqueBackend);
   let promptText = critiquePrompt(candidate, edit);
   let sessionId: string | undefined;
   let resumeSession = false;
 
   if (isLongThread && options?.sessionManager) {
-    const sessionInfo = options.sessionManager.prepareCritiqueSession(backend);
+    const sessionInfo = options.sessionManager.prepareCritiqueSession(critiqueBackend);
     sessionId = sessionInfo.sessionId;
     resumeSession = sessionInfo.isResume;
     promptText = resumeSession

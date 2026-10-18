@@ -23,24 +23,34 @@
   },
   "ollama": {
     "default": {
-      "generateModel": "gemma4:e4b",
-      "critiqueModel": "gemma4:e4b"
+      "generateModel": "gemma4:31b",
+      "critiqueModel": "gemini-3.8-flash-medium",
+      "critiqueBackend": "agy"
     },
     "gemma4-e2b": {
       "generateModel": "gemma4:e2b",
-      "critiqueModel": "gemma4:e2b"
+      "critiqueModel": "gemini-3.8-flash-medium",
+      "critiqueBackend": "agy"
+    },
+    "gemma4-e4b": {
+      "generateModel": "gemma4:e4b",
+      "critiqueModel": "gemini-3.8-flash-medium",
+      "critiqueBackend": "agy"
     },
     "gemma4-12b": {
       "generateModel": "gemma4:12b",
-      "critiqueModel": "gemma4:12b"
+      "critiqueModel": "gemini-3.8-flash-medium",
+      "critiqueBackend": "agy"
     },
     "gemma4-26b": {
       "generateModel": "gemma4:26b",
-      "critiqueModel": "gemma4:26b"
+      "critiqueModel": "gemini-3.8-flash-medium",
+      "critiqueBackend": "agy"
     },
     "gemma4-31b": {
       "generateModel": "gemma4:31b",
-      "critiqueModel": "gemma4:31b"
+      "critiqueModel": "gemini-3.8-flash-medium",
+      "critiqueBackend": "agy"
     }
   },
   "claude": {
