@@ -1,8 +1,8 @@
 import {execFileSync} from "child_process";
 import * as fs from "fs";
+import * as path from "path";
 import {
   AgentError,
-  appendImageAttachmentsToPrompt,
   asAgyCliError,
   asClaudeCliError,
   buildAgyArgs,
@@ -17,9 +17,9 @@ import {
   getSubcommandFromToolUse,
   isCancelledError,
   isCommandAllowed,
-  materializeImageFiles,
   parseAgyStreamJsonLines,
   parseClaudeStreamJsonLines,
+  preparePromptWithImages,
   primaryClaudeModel,
   registerActiveChildProcess,
   runHeadlessAgy,
@@ -572,37 +572,34 @@ describe("image attachment helpers and multimodal runners", () => {
   const sampleBase64 = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhg"
     + "GAWjR9awAAAABJRU5ErkJggg==";
 
-  test("materializeImageFiles writes decoded image bytes to disk and cleans up", () => {
-    const {images} = extractBase64Images(`<img src="data:image/png;base64,${sampleBase64}">`);
-    const materialized = materializeImageFiles(images);
-    try {
-      expect(materialized.filePaths).toHaveLength(1);
-      expect(materialized.filePaths[0]).toMatch(/IMAGE_PLACEHOLDER_1\.png$/);
-      expect(fs.existsSync(materialized.filePaths[0])).toBe(true);
-      const writtenBytes = fs.readFileSync(materialized.filePaths[0]);
-      expect(writtenBytes.equals(Buffer.from(sampleBase64, "base64"))).toBe(true);
+  test("preparePromptWithImages appends @filePath and returns imageDirectories for --add-dir", () => {
+    const {images} = extractBase64Images(
+      `<img src="data:image/png;base64,${sampleBase64}">`,
+      {ref: "Rashi on Menachot 99a:4:2"},
+    );
+    expect(images).toHaveLength(1);
+    expect(images[0].filePath).toMatch(/Rashi_on_Menachot_99a_4_2_IMAGE_PLACEHOLDER_1\.png$/);
+    expect(fs.existsSync(images[0].filePath)).toBe(true);
+    const writtenBytes = fs.readFileSync(images[0].filePath);
+    expect(writtenBytes.equals(Buffer.from(sampleBase64, "base64"))).toBe(true);
 
-      const promptWithAttachments = appendImageAttachmentsToPrompt(
-        "Translate this comment",
-        images,
-        materialized.filePaths,
-      );
-      expect(promptWithAttachments).toContain(
-        `- IMAGE_PLACEHOLDER_1: @${materialized.filePaths[0]}`,
-      );
+    const {effectivePrompt, imageDirectories} = preparePromptWithImages(
+      "Translate this comment",
+      images,
+    );
+    expect(effectivePrompt).toContain(
+      `- IMAGE_PLACEHOLDER_1: @${images[0].filePath}`,
+    );
+    expect(imageDirectories).toEqual([path.dirname(images[0].filePath)]);
 
-      const claudeArgs = buildClaudeArgs(
-        promptWithAttachments,
-        {},
-        [materialized.directoryPath],
-      );
-      const addDirIndex = claudeArgs.indexOf("--add-dir");
-      expect(addDirIndex).toBeGreaterThan(-1);
-      expect(claudeArgs[addDirIndex + 1]).toBe(materialized.directoryPath);
-    } finally {
-      materialized.cleanup();
-    }
-    expect(fs.existsSync(materialized.directoryPath)).toBe(false);
+    const claudeArgs = buildClaudeArgs(
+      effectivePrompt,
+      {},
+      imageDirectories,
+    );
+    const addDirIndex = claudeArgs.indexOf("--add-dir");
+    expect(addDirIndex).toBeGreaterThan(-1);
+    expect(claudeArgs[addDirIndex + 1]).toBe(path.dirname(images[0].filePath));
   });
 
   test("runOllama attaches base64Data array on user message when images are provided", async () => {

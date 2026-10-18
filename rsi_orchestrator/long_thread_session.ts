@@ -23,7 +23,10 @@ export function getBaseBackend(backend: AgentBackend): "claude" | "agy" | "ollam
 }
 
 export function continuationGenerationPrompt(candidate: TranslationCandidate): string {
-  const {textWithPlaceholders, images} = extractBase64Images(candidate.hebrewSource);
+  const {textWithPlaceholders, images} = extractBase64Images(
+    candidate.hebrewSource,
+    {ref: candidate.ref},
+  );
   const imageNote = formatGenerationImagePlaceholderNote(images);
   return [
     "Next commentary comment to translate and punctuate on this page:",
@@ -45,7 +48,7 @@ export function continuationCritiquePrompt(
     proposedHebrewWithPlaceholders,
     proposedEnglishWithPlaceholders,
     images,
-  } = extractBase64ImagesForCritique(candidate.hebrewSource, edit);
+  } = extractBase64ImagesForCritique(candidate.hebrewSource, edit, candidate.ref);
   const imageNote = formatCritiqueImagePlaceholderNote(images);
   return [
     "Target comment to check:",

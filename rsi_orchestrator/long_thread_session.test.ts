@@ -1,3 +1,6 @@
+import * as fs from "fs";
+import * as path from "path";
+import {extractBase64Images} from "./base64_images";
 import {
   continuationCritiquePrompt,
   continuationGenerationPrompt,
@@ -90,6 +93,29 @@ describe("continuation prompts", () => {
     expect(critiqueText).toContain('Original Hebrew: הגה"ה <img src="IMAGE_PLACEHOLDER_1"> ע"כ');
     expect(critiqueText).toContain('Proposed Hebrew: <b>הגה"ה</b> - <img src="IMAGE_PLACEHOLDER_1"> ע"כ:');
     expect(critiqueText).toContain('Proposed English: <b>Gloss:</b> <img src="IMAGE_PLACEHOLDER_1">.');
+  });
+
+  test("uses a shared temp directory and ref-prefixed filenames across turns in a long conversation", () => {
+    const firstPayload = Buffer.from("turn-1-image").toString("base64");
+    const secondPayload = Buffer.from("turn-2-image").toString("base64");
+
+    const firstTurnExtraction = extractBase64Images(
+      `<img src="data:image/png;base64,${firstPayload}">`,
+      {ref: "Rashi on Menachot 80a:1:1"},
+    );
+    const secondTurnExtraction = extractBase64Images(
+      `<img src="data:image/png;base64,${secondPayload}">`,
+      {ref: "Rashi on Menachot 80a:1:2"},
+    );
+
+    const firstFilePath = firstTurnExtraction.images[0].filePath;
+    const secondFilePath = secondTurnExtraction.images[0].filePath;
+
+    expect(path.dirname(firstFilePath)).toBe(path.dirname(secondFilePath));
+    expect(path.basename(firstFilePath)).toBe("Rashi_on_Menachot_80a_1_1_IMAGE_PLACEHOLDER_1.png");
+    expect(path.basename(secondFilePath)).toBe("Rashi_on_Menachot_80a_1_2_IMAGE_PLACEHOLDER_1.png");
+    expect(fs.readFileSync(firstFilePath).toString("utf-8")).toBe("turn-1-image");
+    expect(fs.readFileSync(secondFilePath).toString("utf-8")).toBe("turn-2-image");
   });
 });
 
