@@ -18,7 +18,7 @@ import {
   installPageEnvironment,
 } from "./testing/page_environment";
 import {commentaries, resetFixtureCounter} from "./testing/fixtures";
-import {rsiReviewKeyPreference} from "../settings";
+import {rsiReviewKeyPreference, rsiReviewerIdentityPreference} from "../settings";
 
 let gtagCalls: GtagCall[];
 
@@ -556,5 +556,70 @@ describe("nested commentaries", () => {
       "Edit",
       "Reject",
     ]);
+  });
+
+  test("review controls in open Model subcomment survive parent re-render", () => {
+    rsiReviewKeyPreference.set("secret123");
+    const MODEL = kind("Model", "model");
+    const root = render(
+      commentaries({
+        Rashi: [{
+          he: "רש״י",
+          en: "translation",
+          pendingReview: "Shabbat 2b",
+          commentary: commentaries({
+            Model: [{he: "gemini-3.8-flash-high", en: "gemini-3.8-flash-high"}],
+          }),
+        }],
+        Tosafot: [{he: "תוספות"}],
+      }),
+      {
+        commentaryTypes: [RASHI, TOSAFOT, MODEL],
+        initiallyOpen: ["rashi"],
+      });
+
+    click(query(root, ".show-buttons a.model"));
+    expect(query(root, ".rsi-review-controls")).toBeTruthy();
+
+    click(query(root, ".rsi-review-button.rsi-review-edit"));
+    expect(queryAll(root, "textarea")).toHaveLength(2);
+
+    // Open Tosafot, causing CommentariesBlock to re-render
+    click(query(root, ".show-buttons a.tosafot"));
+
+    // Textareas should STILL be open!
+    expect(queryAll(root, "textarea")).toHaveLength(2);
+  });
+
+  test("reject modal in open Model subcomment survives parent re-render", () => {
+    rsiReviewKeyPreference.set("secret123");
+    rsiReviewerIdentityPreference.set("reviewer@example.com");
+    const MODEL = kind("Model", "model");
+    const root = render(
+      commentaries({
+        Rashi: [{
+          he: "רש״י",
+          en: "translation",
+          pendingReview: "Shabbat 2b",
+          commentary: commentaries({
+            Model: [{he: "gemini-3.8-flash-high", en: "gemini-3.8-flash-high"}],
+          }),
+        }],
+        Tosafot: [{he: "תוספות"}],
+      }),
+      {
+        commentaryTypes: [RASHI, TOSAFOT, MODEL],
+        initiallyOpen: ["rashi"],
+      });
+
+    click(query(root, ".show-buttons a.model"));
+    click(query(root, ".rsi-review-button.rsi-review-reject"));
+    expect(query(root, ".modal textarea")).toBeTruthy();
+
+    // Open Tosafot, causing CommentariesBlock to re-render
+    click(query(root, ".show-buttons a.tosafot"));
+
+    // Modal should STILL be open!
+    expect(query(root, ".modal textarea")).toBeTruthy();
   });
 });

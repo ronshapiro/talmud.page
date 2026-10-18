@@ -249,20 +249,6 @@ export function CommentariesBlock({
     return JSX_NOOP;
   }
 
-  const NestedCommentariesBlock = (
-    props: Omit<CommentariesBlockProps, "toggleShowing" | "getOrdering">): React.ReactElement => {
-    return <CommentariesBlock
-      commentaries={props.commentaries}
-      getOrdering={getOrdering}
-      toggleShowing={toggleShowing}
-      segmentLabel={props.segmentLabel}
-      syntheticClassName={props.syntheticClassName}
-      syntheticCommentaryKinds={props.syntheticCommentaryKinds}
-      depth={depth! + 1}
-      parentComment={props.parentComment}
-      />;
-  };
-
   const renderCommentsAsNestedCommentaries = (
     commentary: Commentary, commentaryClassName: string,
   ): React.ReactElement => {
@@ -277,8 +263,10 @@ export function CommentariesBlock({
 
     const nestedSegmentLabel = `${segmentLabel}.<inner>.${commentaryClassName}`;
     return (
-      <NestedCommentariesBlock
+      <CommentariesBlock
         commentaries={commentariesByComment}
+        getOrdering={getOrdering}
+        toggleShowing={toggleShowing}
         segmentLabel={nestedSegmentLabel}
         key={nestedSegmentLabel}
         syntheticClassName={commentaryClassName}
@@ -462,8 +450,10 @@ export function CommentariesBlock({
             commentaryKind={commentaryKind}
             parentComment={parentComment}
             />,
-          <NestedCommentariesBlock
+          <CommentariesBlock
             commentaries={comment.commentary || {}}
+            getOrdering={getOrdering}
+            toggleShowing={toggleShowing}
             segmentLabel={nestedSegmentLabel}
             key={nestedSegmentLabel}
             depth={depth! + 1}
