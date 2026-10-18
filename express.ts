@@ -705,19 +705,8 @@ app.post("/api/rsi-review-decision", async (req, res) => {
     page, ref, decision, hebrew, english, fallbackHebrew, fallbackEnglish,
     reason, key, knownPrNumber, reviewerIdentity, username,
   } = req.body ?? {};
-  if (!process.env.RSI_REVIEW_KEY) {
-    res.send({error: 404, reason: "no rsi key"});
-    return;
-  }
-
-  if (!process.env.RSI_REVIEW_KEY || key.trim() !== process.env.RSI_REVIEW_KEY.trim()) {
-    // res.sendStatus(403);
-    res.send({
-      error: 403,
-      key: key.trim() === key,
-      "process.env.RSI_REVIEW_KEY": process.env.RSI_REVIEW_KEY.trim() === process.env.RSI_REVIEW_KEY,
-      "trim equals": key.trim() === process.env.RSI_REVIEW_KEY,
-    });
+  if (!process.env.RSI_REVIEW_KEY || key !== process.env.RSI_REVIEW_KEY) {
+    res.sendStatus(403);
     return;
   }
 
