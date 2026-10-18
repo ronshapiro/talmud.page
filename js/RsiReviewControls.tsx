@@ -116,11 +116,11 @@ type ModalState =
  */
 export function RsiReviewControls({comment}: {comment: ApiComment}): React.ReactElement | null {
   const [editing, setEditing] = useState(false);
-  const [hebrew, setHebrew] = useState(() => flatten(comment.he) ?? "");
-  const [english, setEnglish] = useState(() => flatten(comment.en) ?? "");
   const [modal, setModal] = useState<ModalState | null>(null);
   const identityInputRef = useHtmlRef<HTMLInputElement>();
   const reasonRef = useHtmlRef<HTMLTextAreaElement>();
+  const hebrewInputRef = useHtmlRef<HTMLTextAreaElement>();
+  const englishInputRef = useHtmlRef<HTMLTextAreaElement>();
 
   const page = comment.pendingReview;
   if (!page || !getRsiReviewKey()) return null;
@@ -140,43 +140,6 @@ export function RsiReviewControls({comment}: {comment: ApiComment}): React.React
 
   const fallbackHebrew = flatten(comment.he) || undefined;
   const fallbackEnglish = flatten(comment.en) || undefined;
-
-  if (editing) {
-    return (
-      <div className="rsi-review-controls rsi-review-editing">
-        <textarea
-          dir="rtl"
-          value={hebrew}
-          onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setHebrew(e.target.value)} />
-        <textarea
-          dir="ltr"
-          value={english}
-          onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setEnglish(e.target.value)} />
-        <div className="rsi-review-editing-actions">
-          <button
-            type="button"
-            className="rsi-review-button rsi-review-submit-edit"
-            onClick={() => withIdentity(identity => {
-              setEditing(false);
-              postDecision(page, comment.ref, "approve", {
-                hebrew,
-                english,
-                fallbackHebrew,
-                fallbackEnglish,
-              }, identity);
-            })}>
-            Submit edit
-          </button>
-          <button
-            type="button"
-            className="rsi-review-button rsi-review-cancel"
-            onClick={() => setEditing(false)}>
-            Cancel
-          </button>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className="rsi-review-controls">
@@ -202,6 +165,41 @@ export function RsiReviewControls({comment}: {comment: ApiComment}): React.React
         onClick={() => withIdentity(identity => setModal({kind: "reject", identity}))}>
         Reject
       </button>
+      {editing && (
+        <Modal
+          content={(
+            <div>
+              <textarea
+                ref={hebrewInputRef}
+                dir="rtl"
+                rows={6}
+                className="mdl-textfield__input"
+                defaultValue={flatten(comment.he) ?? ""} />
+              <textarea
+                ref={englishInputRef}
+                dir="ltr"
+                rows={6}
+                className="mdl-textfield__input"
+                defaultValue={flatten(comment.en) ?? ""} />
+            </div>
+          )}
+          cancelText="Cancel"
+          cancelTextHebrew="בטל"
+          onCancel={() => setEditing(false)}
+          acceptText="Submit edit"
+          acceptTextHebrew="שלח עריכה"
+          onAccept={() => withIdentity(identity => {
+            const hebrew = hebrewInputRef.current?.value;
+            const english = englishInputRef.current?.value;
+            setEditing(false);
+            postDecision(page, comment.ref, "approve", {
+              hebrew,
+              english,
+              fallbackHebrew,
+              fallbackEnglish,
+            }, identity);
+          })} />
+      )}
       {modal?.kind === "identity" && (
         <Modal
           content={(

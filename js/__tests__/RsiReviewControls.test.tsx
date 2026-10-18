@@ -124,16 +124,22 @@ describe("RsiReviewControls", () => {
       expect(rsiReviewPrNumberPreference.get()).toEqual("9");
     });
 
-    test("edit reveals textareas and submits the overridden text", async () => {
+    test("edit opens a modal with textareas and submits the overridden text", async () => {
       (postWithRetry as jest.Mock).mockResolvedValue({});
       const root = mount(<RsiReviewControls comment={comment({
         pendingReview: "Zevachim 2a", ref: "Zevachim 2a:1", he: "א", en: "a",
       })} />);
 
       click(queryAll(root, "button")[1]); // Edit
-      expect(queryAll(root, "textarea").length).toBe(2);
+      const textAreas = queryAll(root, "textarea") as HTMLTextAreaElement[];
+      expect(textAreas.length).toBe(2);
+      expect(textAreas[0].value).toBe("א");
+      expect(textAreas[1].value).toBe("a");
+      textAreas[0].value = "ב";
+      textAreas[1].value = "b";
 
-      await flushAsync(() => click(query(root, "button"))); // Submit edit
+      await flushAsync(
+        () => click(query(root, ".modal-content .mdl-button--accent"))); // Submit edit
 
       expect(postWithRetry).toHaveBeenCalledWith("/api/rsi-review-decision", {
         page: "Zevachim 2a",
@@ -142,11 +148,23 @@ describe("RsiReviewControls", () => {
         key: "secret123",
         knownPrNumber: undefined,
         reviewerIdentity: IDENTITY,
-        hebrew: "א",
-        english: "a",
+        hebrew: "ב",
+        english: "b",
         fallbackHebrew: "א",
         fallbackEnglish: "a",
       });
+    });
+
+    test("canceling the edit modal closes the modal and submits nothing", () => {
+      const root = mount(<RsiReviewControls comment={
+        comment({pendingReview: "Zevachim 2a", ref: "Zevachim 2a:1"})
+      } />);
+
+      click(queryAll(root, "button")[1]); // Edit
+      expect(queryAll(root, "textarea").length).toBe(2);
+      click(query(root, ".modal-cancel"));
+      expect(queryAll(root, "textarea").length).toBe(0);
+      expect(postWithRetry).not.toHaveBeenCalled();
     });
 
     test("reject shows a modal for the reason", async () => {
