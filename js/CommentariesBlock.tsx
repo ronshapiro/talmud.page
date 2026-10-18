@@ -249,24 +249,19 @@ export function CommentariesBlock({
     return JSX_NOOP;
   }
 
-  const renderNestedCommentariesBlock = ({
-    commentaries: nestedCommentaries,
-    segmentLabel: nestedSegmentLabel,
-    key: nestedKey,
-    syntheticClassName: nestedSyntheticClassName,
-    syntheticCommentaryKinds: nestedSyntheticCommentaryKinds,
-    parentComment: nestedParentComment,
-  }: Omit<CommentariesBlockProps, "toggleShowing" | "getOrdering"> & {key?: React.Key}): React.ReactElement => (
+  const renderNestedCommentariesBlock = (
+    nestedBlockProperties: Omit<CommentariesBlockProps, "toggleShowing" | "getOrdering"> & {key?: React.Key},
+  ): React.ReactElement => (
     <CommentariesBlock
-      commentaries={nestedCommentaries}
+      commentaries={nestedBlockProperties.commentaries}
       getOrdering={getOrdering}
       toggleShowing={toggleShowing}
-      segmentLabel={nestedSegmentLabel}
-      key={nestedKey}
-      syntheticClassName={nestedSyntheticClassName}
-      syntheticCommentaryKinds={nestedSyntheticCommentaryKinds}
+      segmentLabel={nestedBlockProperties.segmentLabel}
+      key={nestedBlockProperties.key}
+      syntheticClassName={nestedBlockProperties.syntheticClassName}
+      syntheticCommentaryKinds={nestedBlockProperties.syntheticCommentaryKinds}
       depth={depth! + 1}
-      parentComment={nestedParentComment}
+      parentComment={nestedBlockProperties.parentComment}
     />
   );
 
