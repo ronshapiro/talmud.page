@@ -249,19 +249,21 @@ export function CommentariesBlock({
     return JSX_NOOP;
   }
 
-  const NestedCommentariesBlock = (
-    props: Omit<CommentariesBlockProps, "toggleShowing" | "getOrdering">): React.ReactElement => {
-    return <CommentariesBlock
-      commentaries={props.commentaries}
+  const renderNestedCommentariesBlock = (
+    nestedBlockProperties: Omit<CommentariesBlockProps, "toggleShowing" | "getOrdering"> & {key?: React.Key},
+  ): React.ReactElement => (
+    <CommentariesBlock
+      commentaries={nestedBlockProperties.commentaries}
       getOrdering={getOrdering}
       toggleShowing={toggleShowing}
-      segmentLabel={props.segmentLabel}
-      syntheticClassName={props.syntheticClassName}
-      syntheticCommentaryKinds={props.syntheticCommentaryKinds}
+      segmentLabel={nestedBlockProperties.segmentLabel}
+      key={nestedBlockProperties.key}
+      syntheticClassName={nestedBlockProperties.syntheticClassName}
+      syntheticCommentaryKinds={nestedBlockProperties.syntheticCommentaryKinds}
       depth={depth! + 1}
-      parentComment={props.parentComment}
-      />;
-  };
+      parentComment={nestedBlockProperties.parentComment}
+    />
+  );
 
   const renderCommentsAsNestedCommentaries = (
     commentary: Commentary, commentaryClassName: string,
@@ -276,15 +278,13 @@ export function CommentariesBlock({
     }
 
     const nestedSegmentLabel = `${segmentLabel}.<inner>.${commentaryClassName}`;
-    return (
-      <NestedCommentariesBlock
-        commentaries={commentariesByComment}
-        segmentLabel={nestedSegmentLabel}
-        key={nestedSegmentLabel}
-        syntheticClassName={commentaryClassName}
-        syntheticCommentaryKinds={kinds}
-        depth={depth! + 1}
-        />);
+    return renderNestedCommentariesBlock({
+      commentaries: commentariesByComment,
+      segmentLabel: nestedSegmentLabel,
+      key: nestedSegmentLabel,
+      syntheticClassName: commentaryClassName,
+      syntheticCommentaryKinds: kinds,
+    });
   };
 
   const buttonClasses = (
@@ -462,13 +462,12 @@ export function CommentariesBlock({
             commentaryKind={commentaryKind}
             parentComment={parentComment}
             />,
-          <NestedCommentariesBlock
-            commentaries={comment.commentary || {}}
-            segmentLabel={nestedSegmentLabel}
-            key={nestedSegmentLabel}
-            depth={depth! + 1}
-            parentComment={comment}
-            />);
+          renderNestedCommentariesBlock({
+            commentaries: comment.commentary || {},
+            segmentLabel: nestedSegmentLabel,
+            key: nestedSegmentLabel,
+            parentComment: comment,
+          }));
       }
     }
   }
