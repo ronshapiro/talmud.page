@@ -68,6 +68,29 @@ describe("continuation prompts", () => {
     expect(prompt).toContain("Comment ref: Rashi on Menachot 80a:1:1");
     expect(prompt).toContain("Evaluate according to CRITIQUE_TASK instructions and format established above.");
   });
+
+  test("replaces base64 images with placeholders in continuation generation and critique prompts", () => {
+    const sampleBase64 = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhg"
+      + "GAWjR9awAAAABJRU5ErkJggg==";
+    const sampleDataUri = `data:image/png;base64,${sampleBase64}`;
+    const candidate = makeCandidate({
+      hebrewSource: `הגה"ה <img src="${sampleDataUri}"> ע"כ`,
+    });
+
+    const generationText = continuationGenerationPrompt(candidate);
+    expect(generationText).not.toContain(sampleBase64);
+    expect(generationText).toContain('Current Hebrew text: הגה"ה <img src="IMAGE_PLACEHOLDER_1"> ע"כ');
+    expect(generationText).toContain("IMAGE_PLACEHOLDER_1");
+
+    const critiqueText = continuationCritiquePrompt(candidate, {
+      hebrew: `<b>הגה"ה</b> - <img src="${sampleDataUri}"> ע"כ:`,
+      english: `<b>Gloss:</b> <img src="${sampleDataUri}">.`,
+    });
+    expect(critiqueText).not.toContain(sampleBase64);
+    expect(critiqueText).toContain('Original Hebrew: הגה"ה <img src="IMAGE_PLACEHOLDER_1"> ע"כ');
+    expect(critiqueText).toContain('Proposed Hebrew: <b>הגה"ה</b> - <img src="IMAGE_PLACEHOLDER_1"> ע"כ:');
+    expect(critiqueText).toContain('Proposed English: <b>Gloss:</b> <img src="IMAGE_PLACEHOLDER_1">.');
+  });
 });
 
 describe("LongThreadSessionManager", () => {

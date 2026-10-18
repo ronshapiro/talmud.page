@@ -22,6 +22,14 @@ import {toFlatArray} from "../sefariaTextType";
 import {extractRequestedRefs} from "./context_fetch";
 import {AgentError, AgentBackend, getAgentRunner} from "./agent_runner";
 import {
+  extractBase64Images,
+  extractBase64ImagesForCritique,
+  formatCritiqueImagePlaceholderNote,
+  formatGenerationImagePlaceholderNote,
+  replaceBase64ImagesWithPlaceholders,
+  restoreBase64ImagesInEdit,
+} from "./base64_images";
+import {
   continuationCritiquePrompt,
   continuationGenerationPrompt,
   isLongThreadBackend,
@@ -123,6 +131,7 @@ export async function generateWithSelfCritique(
   let feedback: string | undefined;
   let totalCost: number | undefined;
   let lastReason = "unknown error";
+  const {images: candidateImages} = extractBase64Images(candidate.hebrewSource);
 
   for (let attempt = 0; attempt < MAX_GENERATION_ATTEMPTS; attempt++) {
     if (deps.shouldStop?.()) {
@@ -133,6 +142,12 @@ export async function generateWithSelfCritique(
     try {
       // eslint-disable-next-line no-await-in-loop
       generated = await deps.generate(candidate, feedback);
+      if (candidateImages.length > 0) {
+        generated = {
+          ...generated,
+          edit: restoreBase64ImagesInEdit(generated.edit, candidateImages),
+        };
+      }
       if (deps.shouldStop?.()) {
         return undefined;
       }
@@ -540,7 +555,15 @@ function findWorkedExamples(commentator: Commentator, excludeRef: string): Worke
       if (ref === excludeRef || !ref.startsWith(`${commentator} on `)) continue;
       const edit = edits[ref];
       if (!edit) continue;
-      examples.push({hebrewSource: record.sourceText, hebrew: edit.hebrew, english: edit.english});
+      examples.push({
+        hebrewSource: replaceBase64ImagesWithPlaceholders(record.sourceText),
+        hebrew: edit.hebrew !== undefined
+          ? replaceBase64ImagesWithPlaceholders(edit.hebrew)
+          : undefined,
+        english: edit.english !== undefined
+          ? replaceBase64ImagesWithPlaceholders(edit.english)
+          : undefined,
+      });
       if (examples.length >= MAX_WORKED_EXAMPLES) return examples;
     }
   }
@@ -572,6 +595,9 @@ export function generationPrompt(candidate: TranslationCandidate, priorFeedback?
   const examples = findWorkedExamples(candidate.commentator, candidate.ref);
   const workedExamples = examples.length > 0
     ? examples : [FALLBACK_WORKED_EXAMPLE[candidate.commentator]];
+  const extractedImages = extractBase64Images(candidate.hebrewSource);
+  const hebrewSourceWithPlaceholders = extractedImages.textWithPlaceholders;
+  const imageNote = formatGenerationImagePlaceholderNote(extractedImages.images);
 
   return [
     "Instructions (ID: TRANSLATION_TASK):",
@@ -623,7 +649,8 @@ export function generationPrompt(candidate: TranslationCandidate, priorFeedback?
     "Target commentary comment to translate:",
     `Comment ref: ${candidate.ref}`,
     `Commentator: ${candidate.commentator}`,
-    `Current Hebrew text: ${candidate.hebrewSource}`,
+    `Current Hebrew text: ${hebrewSourceWithPlaceholders}`,
+    imageNote,
     "",
     priorFeedback
       ? `Your previous attempt was rejected for this reason — fix it: ${priorFeedback}`
@@ -632,6 +659,14 @@ export function generationPrompt(candidate: TranslationCandidate, priorFeedback?
 }
 
 export function critiquePrompt(candidate: TranslationCandidate, edit: Edit): string {
+  const {
+    originalHebrewWithPlaceholders,
+    proposedHebrewWithPlaceholders,
+    proposedEnglishWithPlaceholders,
+    images,
+  } = extractBase64ImagesForCritique(candidate.hebrewSource, edit);
+  const imageNote = formatCritiqueImagePlaceholderNote(images);
+
   return [
     "Instructions (ID: CRITIQUE_TASK):",
     "You proposed this edit to a Talmud commentary comment. Check it before it ships.",
@@ -647,9 +682,10 @@ export function critiquePrompt(candidate: TranslationCandidate, edit: Edit): str
     "Keep any rejection reason to a single brief sentence. Do not include verbose commentary, apologies, or full rewrites.",
     "",
     "Target comment to check:",
-    `Original Hebrew: ${candidate.hebrewSource}`,
-    `Proposed Hebrew: ${edit.hebrew ?? "(unchanged)"}`,
-    `Proposed English: ${edit.english ?? "(none)"}`,
+    `Original Hebrew: ${originalHebrewWithPlaceholders}`,
+    `Proposed Hebrew: ${proposedHebrewWithPlaceholders}`,
+    `Proposed English: ${proposedEnglishWithPlaceholders}`,
+    ...(imageNote ? [imageNote] : []),
   ].join("\n");
 }
 
@@ -702,6 +738,7 @@ export async function generateViaAgent(
     console.log(`  [generate] running ${backend} (${model ?? "default model"})...`);
   }
 
+  const {images} = extractBase64Images(candidate.hebrewSource);
   const isLongThread = isLongThreadBackend(backend);
   let promptText = generationPrompt(candidate, priorFeedback);
   let sessionId: string | undefined;
@@ -734,6 +771,7 @@ export async function generateViaAgent(
       sessionId,
       resumeSession,
       signal: options?.signal,
+      images: images.length > 0 ? images : undefined,
       onToolUse: (toolUse) => {
         const command = (toolUse.input as {command?: string; CommandLine?: string})?.command
           ?? (toolUse.input as {command?: string; CommandLine?: string})?.CommandLine;
@@ -754,8 +792,9 @@ export async function generateViaAgent(
     costUsd: result.costUsd,
     model: finalModel,
   }, candidate.page);
+  const parsedEdit = parseJsonResponse<Edit>(result.text);
   return {
-    edit: parseJsonResponse<Edit>(result.text),
+    edit: restoreBase64ImagesInEdit(parsedEdit, images),
     model: finalModel,
     costUsd: result.costUsd,
     contextRefsUsed: extractRequestedRefs(result.toolUses),
@@ -791,6 +830,7 @@ export async function critiqueViaAgent(
     console.log(`  [critique] running ${backend} (${model ?? "default model"})...`);
   }
 
+  const {images} = extractBase64ImagesForCritique(candidate.hebrewSource, edit);
   const isLongThread = isLongThreadBackend(backend);
   let promptText = critiquePrompt(candidate, edit);
   let sessionId: string | undefined;
@@ -814,6 +854,7 @@ export async function critiqueViaAgent(
       sessionId,
       resumeSession,
       signal: options?.signal,
+      images: images.length > 0 ? images : undefined,
       onToolUse: (toolUse) => {
         const command = (toolUse.input as {command?: string; CommandLine?: string})?.command
           ?? (toolUse.input as {command?: string; CommandLine?: string})?.CommandLine;

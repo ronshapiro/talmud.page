@@ -2,6 +2,7 @@ import {execFileSync} from "child_process";
 import * as fs from "fs";
 import {
   AgentError,
+  appendImageAttachmentsToPrompt,
   asAgyCliError,
   asClaudeCliError,
   buildAgyArgs,
@@ -16,14 +17,17 @@ import {
   getSubcommandFromToolUse,
   isCancelledError,
   isCommandAllowed,
+  materializeImageFiles,
   parseAgyStreamJsonLines,
   parseClaudeStreamJsonLines,
   primaryClaudeModel,
   registerActiveChildProcess,
   runHeadlessAgy,
   runHeadlessClaude,
+  runOllama,
   stopAllActiveAgents,
 } from "./agent_runner";
+import {extractBase64Images} from "./base64_images";
 
 describe("parseAgyStreamJsonLines", () => {
   test("returns empty toolUses and undefined result for empty output", () => {
@@ -561,5 +565,72 @@ describe("isolated Antigravity environment", () => {
 
     cleanupIsolatedAgyHomeDirectory();
     expect(fs.existsSync(isolatedHomeDirectory)).toBe(false);
+  });
+});
+
+describe("image attachment helpers and multimodal runners", () => {
+  const sampleBase64 = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhg"
+    + "GAWjR9awAAAABJRU5ErkJggg==";
+
+  test("materializeImageFiles writes decoded image bytes to disk and cleans up", () => {
+    const {images} = extractBase64Images(`<img src="data:image/png;base64,${sampleBase64}">`);
+    const materialized = materializeImageFiles(images);
+    try {
+      expect(materialized.filePaths).toHaveLength(1);
+      expect(materialized.filePaths[0]).toMatch(/IMAGE_PLACEHOLDER_1\.png$/);
+      expect(fs.existsSync(materialized.filePaths[0])).toBe(true);
+      const writtenBytes = fs.readFileSync(materialized.filePaths[0]);
+      expect(writtenBytes.equals(Buffer.from(sampleBase64, "base64"))).toBe(true);
+
+      const promptWithAttachments = appendImageAttachmentsToPrompt(
+        "Translate this comment",
+        images,
+        materialized.filePaths,
+      );
+      expect(promptWithAttachments).toContain(
+        `- IMAGE_PLACEHOLDER_1: @${materialized.filePaths[0]}`,
+      );
+
+      const claudeArgs = buildClaudeArgs(
+        promptWithAttachments,
+        {},
+        [materialized.directoryPath],
+      );
+      const addDirIndex = claudeArgs.indexOf("--add-dir");
+      expect(addDirIndex).toBeGreaterThan(-1);
+      expect(claudeArgs[addDirIndex + 1]).toBe(materialized.directoryPath);
+    } finally {
+      materialized.cleanup();
+    }
+    expect(fs.existsSync(materialized.directoryPath)).toBe(false);
+  });
+
+  test("runOllama attaches base64Data array on user message when images are provided", async () => {
+    const originalFetch = global.fetch;
+    const fetchMock = jest.fn().mockResolvedValue({
+      ok: true,
+      json: async () => ({
+        message: {content: '{"english": "translated"}'},
+        total_duration: 1000000000,
+      }),
+    } as unknown as Response);
+    global.fetch = fetchMock;
+
+    try {
+      const {images} = extractBase64Images(`<img src="data:image/png;base64,${sampleBase64}">`);
+      await runOllama("Translate", {model: "gemma4:e4b", images});
+
+      expect(fetchMock).toHaveBeenCalledTimes(1);
+      const requestBody = JSON.parse(fetchMock.mock.calls[0][1].body as string);
+      expect(requestBody.messages).toEqual([
+        {
+          role: "user",
+          content: "Translate",
+          images: [sampleBase64],
+        },
+      ]);
+    } finally {
+      global.fetch = originalFetch;
+    }
   });
 });

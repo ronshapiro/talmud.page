@@ -5,6 +5,7 @@ import {cachedOutputFilePath} from "../cached_outputs";
 import {readUtf8} from "../files";
 import {ToolUseRecord} from "../precomputed/rsi_state/context_usage_log";
 import {toFlatArray} from "../sefariaTextType";
+import {replaceBase64ImagesWithPlaceholders} from "./base64_images";
 
 /**
  * The only way a headless task-type call gets more than what its initial prompt inlines (a page
@@ -61,8 +62,8 @@ function indexAmud(amud: Amud): Map<string, RefEntry> {
   const visitComment = (comment: ApiComment): void => {
     index.set(comment.ref, {
       ref: comment.ref,
-      he: toFlatArray(comment.he).join(" "),
-      en: toFlatArray(comment.en).join(" "),
+      he: replaceBase64ImagesWithPlaceholders(toFlatArray(comment.he).join(" ")),
+      en: replaceBase64ImagesWithPlaceholders(toFlatArray(comment.en).join(" ")),
     });
     for (const commentary of Object.values(comment.commentary ?? {})) {
       for (const nested of commentary.comments) visitComment(nested);
@@ -71,8 +72,8 @@ function indexAmud(amud: Amud): Map<string, RefEntry> {
   for (const segment of amud.sections) {
     index.set(segment.ref, {
       ref: segment.ref,
-      he: toFlatArray(segment.he).join(" "),
-      en: toFlatArray(segment.en).join(" "),
+      he: replaceBase64ImagesWithPlaceholders(toFlatArray(segment.he).join(" ")),
+      en: replaceBase64ImagesWithPlaceholders(toFlatArray(segment.en).join(" ")),
     });
     for (const commentary of Object.values(segment.commentary ?? {})) {
       for (const comment of commentary.comments) visitComment(comment);
@@ -182,8 +183,8 @@ export function getNeighborSegments(
   return {
     entries: amud.sections.slice(start, end).map(segment => ({
       ref: segment.ref,
-      he: toFlatArray(segment.he).join(" "),
-      en: toFlatArray(segment.en).join(" "),
+      he: replaceBase64ImagesWithPlaceholders(toFlatArray(segment.he).join(" ")),
+      en: replaceBase64ImagesWithPlaceholders(toFlatArray(segment.en).join(" ")),
     })),
   };
 }

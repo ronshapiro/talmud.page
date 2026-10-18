@@ -2,6 +2,7 @@ import {ChildProcess, execFile} from "child_process";
 import * as fs from "fs";
 import * as os from "os";
 import * as path from "path";
+import {DecodedImage} from "./base64_images";
 
 export type AgentBackend = "claude" | "agy" | "claude-long-thread" | "agy-long-thread" | "ollama";
 
@@ -23,6 +24,7 @@ export interface AgentOptions {
   resumeSession?: boolean;
   signal?: AbortSignal;
   onChild?: (child: ChildProcess) => void;
+  images?: DecodedImage[];
 }
 
 export interface AgentResult {
@@ -495,6 +497,55 @@ process.on("exit", () => {
   cleanupIsolatedAgyHomeDirectory();
 });
 
+export interface MaterializedImageFiles {
+  directoryPath: string;
+  filePaths: string[];
+  cleanup: () => void;
+}
+
+/**
+ * Writes decoded base64 images to a temporary directory as real image files
+ * (`IMAGE_PLACEHOLDER_1.png`, etc.) so CLI agents can view/attach them natively.
+ */
+export function materializeImageFiles(images: DecodedImage[]): MaterializedImageFiles {
+  const directoryPath = fs.mkdtempSync(path.join(os.tmpdir(), "agent-images-"));
+  const filePaths = images.map(image => {
+    const fileName = `${image.placeholder}.${image.extension}`;
+    const filePath = path.join(directoryPath, fileName);
+    fs.writeFileSync(filePath, image.buffer);
+    return filePath;
+  });
+  return {
+    directoryPath,
+    filePaths,
+    cleanup: () => {
+      try {
+        fs.rmSync(directoryPath, {recursive: true, force: true});
+      } catch {
+        // Best-effort cleanup
+      }
+    },
+  };
+}
+
+/**
+ * Appends `@<filePath>` references for each decoded image at the end of the prompt.
+ * In Claude CLI (`claude -p`), `@<filePath>` is automatically extracted and attached as a native
+ * multimodal image content block on the user message when the image directory is added via
+ * `--add-dir`. In Antigravity (`agy -p`), the file path allows the agent to view the image file.
+ */
+export function appendImageAttachmentsToPrompt(
+  prompt: string,
+  images: DecodedImage[],
+  filePaths: string[],
+): string {
+  if (images.length === 0 || filePaths.length === 0) return prompt;
+  const attachmentLines = images.map(
+    (image, i) => `- ${image.placeholder}: @${filePaths[i]}`,
+  );
+  return `${prompt}\n\nAttached image(s):\n${attachmentLines.join("\n")}`;
+}
+
 /**
  * Builds CLI arguments for headless Antigravity execution with slash commands disabled.
  */
@@ -527,8 +578,6 @@ export function buildAgyArgs(prompt: string, options: AgentOptions = {}): string
  * Invokes the Antigravity CLI in headless mode (`agy -p`).
  */
 export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
-  const args = buildAgyArgs(prompt, options);
-
   if (options.signal?.aborted) {
     throw new AgentError("Agent execution was cancelled", undefined, "agy", true);
   }
@@ -536,6 +585,19 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
   if (options.debug) {
     console.log(`  [agent] Running agy${options.model ? ` (model: ${options.model})` : ""}...`);
   }
+
+  let materializedImages: MaterializedImageFiles | undefined;
+  let effectivePrompt = prompt;
+  if (options.images && options.images.length > 0) {
+    materializedImages = materializeImageFiles(options.images);
+    effectivePrompt = appendImageAttachmentsToPrompt(
+      prompt,
+      options.images,
+      materializedImages.filePaths,
+    );
+  }
+
+  const args = buildAgyArgs(effectivePrompt, options);
 
   let shims: ToolFilterShims | undefined;
   if (options.allowedTools && options.allowedTools.length > 0) {
@@ -627,6 +689,7 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
     }
     unregisterChild?.();
     shims?.cleanup();
+    materializedImages?.cleanup();
   }
 
   const {toolUses, result} = parseAgyStreamJsonLines(stdout);
@@ -734,7 +797,11 @@ const DEFAULT_CLAUDE_ALLOWED_TOOLS = ["Read", "Grep", "Glob"];
  * Builds CLI arguments for headless Claude execution with safe mode enabled,
  * slash commands disabled, strict MCP config enforced, and user/local settings excluded.
  */
-export function buildClaudeArgs(prompt: string, options: AgentOptions = {}): string[] {
+export function buildClaudeArgs(
+  prompt: string,
+  options: AgentOptions = {},
+  additionalDirectories: string[] = [],
+): string[] {
   const claudeArgs = [
     "-p", prompt,
     "--output-format", "stream-json",
@@ -746,6 +813,9 @@ export function buildClaudeArgs(prompt: string, options: AgentOptions = {}): str
     "--allowedTools", (options.allowedTools ?? DEFAULT_CLAUDE_ALLOWED_TOOLS).join(","),
     ...(options.model ? ["--model", options.model] : []),
   ];
+  for (const directory of additionalDirectories) {
+    claudeArgs.push("--add-dir", directory);
+  }
   if (options.sessionId) {
     if (options.resumeSession) {
       claudeArgs.push("--resume", options.sessionId);
@@ -765,7 +835,20 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
     console.log(`  [agent] Running claude${options.model ? ` (model: ${options.model})` : ""}...`);
   }
 
-  const claudeArgs = buildClaudeArgs(prompt, options);
+  let materializedImages: MaterializedImageFiles | undefined;
+  let effectivePrompt = prompt;
+  const additionalDirectories: string[] = [];
+  if (options.images && options.images.length > 0) {
+    materializedImages = materializeImageFiles(options.images);
+    effectivePrompt = appendImageAttachmentsToPrompt(
+      prompt,
+      options.images,
+      materializedImages.filePaths,
+    );
+    additionalDirectories.push(materializedImages.directoryPath);
+  }
+
+  const claudeArgs = buildClaudeArgs(effectivePrompt, options, additionalDirectories);
 
   let shims: ToolFilterShims | undefined;
   if (options.allowedTools && options.allowedTools.length > 0) {
@@ -848,6 +931,7 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
     }
     unregisterChild?.();
     shims?.cleanup();
+    materializedImages?.cleanup();
   }
   const {toolUses, result} = parseClaudeStreamJsonLines(stdout);
   if (!result) {
@@ -905,6 +989,13 @@ export const runOllama: AgentRunner = async (prompt, options = {}) => {
   if (options.debug) {
     console.log(`  [agent] Running ollama (model: ${options.model})...`);
   }
+  const userMessage: {role: "user"; content: string; images?: string[]} = {
+    role: "user",
+    content: prompt,
+    ...(options.images && options.images.length > 0
+      ? {images: options.images.map(image => image.base64Data)}
+      : {}),
+  };
   let response: Response;
   try {
     response = await fetch(`${baseUrl}/api/chat`, {
@@ -912,7 +1003,7 @@ export const runOllama: AgentRunner = async (prompt, options = {}) => {
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({
         model: options.model,
-        messages: [{role: "user", content: prompt}],
+        messages: [userMessage],
         stream: false,
         format: "json",
         think: false,

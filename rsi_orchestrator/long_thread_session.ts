@@ -1,6 +1,12 @@
 import {v4 as uuid} from "uuid";
 import {Edit} from "../precomputed/ai_edits";
 import {AgentBackend} from "./agent_runner";
+import {
+  extractBase64Images,
+  extractBase64ImagesForCritique,
+  formatCritiqueImagePlaceholderNote,
+  formatGenerationImagePlaceholderNote,
+} from "./base64_images";
 import {CritiqueOutcome, TranslationCandidate} from "./rashi_tosafot_translation";
 
 export const DEFAULT_MAX_THREAD_TOKENS = 128 * 1024;
@@ -17,11 +23,14 @@ export function getBaseBackend(backend: AgentBackend): "claude" | "agy" | "ollam
 }
 
 export function continuationGenerationPrompt(candidate: TranslationCandidate): string {
+  const {textWithPlaceholders, images} = extractBase64Images(candidate.hebrewSource);
+  const imageNote = formatGenerationImagePlaceholderNote(images);
   return [
     "Next commentary comment to translate and punctuate on this page:",
     `Comment ref: ${candidate.ref}`,
     `Commentator: ${candidate.commentator}`,
-    `Current Hebrew text: ${candidate.hebrewSource}`,
+    `Current Hebrew text: ${textWithPlaceholders}`,
+    ...(imageNote ? [imageNote] : []),
     "",
     "Follow TRANSLATION_TASK instructions and format established above.",
   ].join("\n");
@@ -31,12 +40,20 @@ export function continuationCritiquePrompt(
   candidate: TranslationCandidate,
   edit: Edit,
 ): string {
+  const {
+    originalHebrewWithPlaceholders,
+    proposedHebrewWithPlaceholders,
+    proposedEnglishWithPlaceholders,
+    images,
+  } = extractBase64ImagesForCritique(candidate.hebrewSource, edit);
+  const imageNote = formatCritiqueImagePlaceholderNote(images);
   return [
     "Target comment to check:",
     `Comment ref: ${candidate.ref}`,
-    `Original Hebrew: ${candidate.hebrewSource}`,
-    `Proposed Hebrew: ${edit.hebrew ?? "(unchanged)"}`,
-    `Proposed English: ${edit.english ?? "(none)"}`,
+    `Original Hebrew: ${originalHebrewWithPlaceholders}`,
+    `Proposed Hebrew: ${proposedHebrewWithPlaceholders}`,
+    `Proposed English: ${proposedEnglishWithPlaceholders}`,
+    ...(imageNote ? [imageNote] : []),
     "",
     "Evaluate according to CRITIQUE_TASK instructions and format established above.",
   ].join("\n");

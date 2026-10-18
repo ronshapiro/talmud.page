@@ -160,6 +160,24 @@ describe("getRefs", () => {
     expect(result.entries).toEqual([]);
     expect(result.error).toMatch(/over the .*-character limit/);
   });
+
+  test("replaces huge base64 image data URIs with placeholders so getRefs stays under the character cap", () => {
+    const hugeBase64Payload = "A".repeat(MAX_CHARS_PER_CALL + 1000);
+    const amudWithImage = amud();
+    const imageHtml = `הגה"ה <img src="data:image/png;base64,${hugeBase64Payload}"> ע"כ`;
+    amudWithImage.sections[0].commentary!.Rashi.comments[0].he = imageHtml;
+    writeJson(filePath, amudWithImage);
+
+    const result = getRefs([`Rashi on Zevachim ${SECTION}:1:1`]);
+    expect(result.error).toBeUndefined();
+    expect(result.entries).toEqual([
+      {
+        ref: `Rashi on Zevachim ${SECTION}:1:1`,
+        he: 'הגה"ה <img src="IMAGE_PLACEHOLDER_1"> ע"כ',
+        en: "explanation",
+      },
+    ]);
+  });
 });
 
 describe("getNeighborSegments", () => {
@@ -182,6 +200,21 @@ describe("getNeighborSegments", () => {
     const result = getNeighborSegments(`Rashi on Zevachim ${SECTION}:1:1`);
     expect(result.entries).toEqual([]);
     expect(result.error).toMatch(/not a base Gemara segment/);
+  });
+
+  test("replaces base64 image data URIs with placeholders in neighbor segments", () => {
+    const amudWithImage = amud();
+    amudWithImage.sections[0].he = 'ציור <img src="data:image/png;base64,iVBORw0KGgo=">';
+    writeJson(filePath, amudWithImage);
+
+    const result = getNeighborSegments(`Zevachim ${SECTION}:1`, 0, 0);
+    expect(result.entries).toEqual([
+      {
+        ref: `Zevachim ${SECTION}:1`,
+        he: 'ציור <img src="IMAGE_PLACEHOLDER_1">',
+        en: "first",
+      },
+    ]);
   });
 });
 
