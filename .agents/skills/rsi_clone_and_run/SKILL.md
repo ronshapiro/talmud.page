@@ -7,7 +7,7 @@ metadata:
 
 # RSI Clone & Run Runbook
 
-Use this skill when preparing and launching Recursive Self-Improving (RSI) Rashi and Tosafot translation runs in fresh, remote, or cloud environments (e.g. Google Colab, cloud VMs, or remote GPU boxes).
+Use this skill when preparing and launching agentic runs in new environments.
 
 Once the environment is cloned and dependencies are set up, see the default RSI skill [continuous-rsi-agent](../continuous-rsi-agent/SKILL.md) for detailed invocation flags, runtime options, and graceful shutdown controls.
 
@@ -33,15 +33,7 @@ gh auth login
 
 ## 2. Clone Repository & Check Out Submodule
 
-Clone the main repository and initialize the `cached_outputs` submodule:
-
-```bash
-git clone https://github.com/ronshapiro/talmud.page.git
-cd talmud.page
-
-# Check out the cached_outputs submodule (fetches precomputed Sefaria API texts)
-git submodule update --init cached_outputs
-```
+Clone the main repository and initialize the `cached_outputs` submodule.
 
 > [!IMPORTANT]
 > The `cached_outputs/api_request_handler/` directory must be populated for translation candidate discovery and context fetching to work without live Sefaria API hits.
@@ -49,8 +41,6 @@ git submodule update --init cached_outputs
 ---
 
 ## 3. Install Node.js Dependencies
-
-Ensure Node.js (version 18 or newer) is installed, then install project dependencies:
 
 ```bash
 npm ci    # or npm install
