@@ -774,18 +774,18 @@ export async function critiqueViaAgent(
   });
   // A separate critique backend (e.g. a local ollama generator judged by agy) resolves its own
   // critique model from that backend's routing config rather than the generator's.
-  const critiqueBackendConfig = options?.critiqueBackend
-    ? getTaskModelConfig(TASK_TYPE, {backend: options.critiqueBackend})
+  const effectiveCritiqueBackend = options?.critiqueBackend ?? modelConfig.critiqueBackend;
+  const critiqueBackendConfig = effectiveCritiqueBackend
+    ? getTaskModelConfig(TASK_TYPE, {backend: effectiveCritiqueBackend})
     : undefined;
-  const backend = options?.critiqueBackend ?? options?.backend ?? modelConfig?.backend;
+  const backend = effectiveCritiqueBackend ?? options?.backend ?? modelConfig?.backend;
   if (!backend) {
     throw new Error("No backend configured for critique");
   }
   const model = options?.critiqueModel
-    ?? critiqueBackendConfig?.critiqueModel
     ?? (options?.modelConfig
       ? modelConfig.critiqueModel
-      : (options?.model ?? modelConfig.critiqueModel));
+      : (critiqueBackendConfig?.critiqueModel ?? options?.model ?? modelConfig.critiqueModel));
   const runner = getAgentRunner(backend);
   if (options?.debug) {
     console.log(`  [critique] running ${backend} (${model ?? "default model"})...`);

@@ -161,3 +161,26 @@ test("getTaskModelConfig checks requested backend with matchesConfig first, fall
   });
   expect(fallbackMatch.generateModel).toBe("claude-base-model");
 });
+
+test("getTaskModelConfig resolves critiqueBackend when specified in configuration", () => {
+  const customConfig = {
+    ollama: {
+      "gemma4-e2b-rsi-rashi-v1": {
+        generateModel: "gemma4:e2b-rsi-rashi-v1",
+        critiqueModel: "gemini-3.8-flash-medium",
+        critiqueBackend: "agy",
+      },
+    },
+  };
+  writeJson(CONFIG_PATH, customConfig);
+
+  const resolved = getTaskModelConfig("any_task", {
+    configPath: CONFIG_PATH,
+    backend: "ollama",
+    configName: "gemma4-e2b-rsi-rashi-v1",
+  });
+  expect(resolved.backend).toBe("ollama");
+  expect(resolved.generateModel).toBe("gemma4:e2b-rsi-rashi-v1");
+  expect(resolved.critiqueModel).toBe("gemini-3.8-flash-medium");
+  expect(resolved.critiqueBackend).toBe("agy");
+});

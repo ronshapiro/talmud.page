@@ -33,6 +33,16 @@
     "gemma4-12b": {
       "generateModel": "gemma4:12b",
       "critiqueModel": "gemma4:12b"
+    },
+    "gemma4-e2b-rsi-rashi-v1": {
+      "generateModel": "gemma4:e2b-rsi-rashi-v1",
+      "critiqueModel": "gemini-3.8-flash-medium",
+      "critiqueBackend": "agy"
+    },
+    "gemma4-e4b-rsi-rashi-v1": {
+      "generateModel": "gemma4:e4b-rsi-rashi-v1",
+      "critiqueModel": "gemini-3.8-flash-medium",
+      "critiqueBackend": "agy"
     }
   },
   "claude": {
