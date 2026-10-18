@@ -1,3 +1,4 @@
+import * as modelRouting from "../precomputed/rsi_state/model_routing";
 import * as pageSkeleton from "../precomputed/rsi_state/page_skeleton";
 import {Edit} from "../precomputed/ai_edits";
 import {AgentError} from "./agent_runner";
@@ -5,8 +6,10 @@ import {
   CritiqueOutcome,
   CritiqueVerdict,
   critiquePrompt,
+  critiqueViaAgent,
   generationPrompt,
   GeneratedEdit,
+  generateViaAgent,
   generateWithSelfCritique,
   compareAmudim,
   filterSectionsFromStartPage,
@@ -756,6 +759,38 @@ describe("generationPrompt", () => {
       expect(feedbackIndex).toBeGreaterThan(targetIndex);
     } finally {
       buildPageSkeletonSpy.mockRestore();
+    }
+  });
+});
+
+describe("generateViaAgent and critiqueViaAgent backend validation", () => {
+  test("generateViaAgent throws when no backend is configured", async () => {
+    const getTaskModelConfigSpy = jest.spyOn(modelRouting, "getTaskModelConfig").mockReturnValue({
+      backend: undefined as any,
+      generateModel: "model",
+      critiqueModel: "model",
+    });
+    try {
+      await expect(generateViaAgent(candidate())).rejects.toThrow(
+        "No backend configured for generation",
+      );
+    } finally {
+      getTaskModelConfigSpy.mockRestore();
+    }
+  });
+
+  test("critiqueViaAgent throws when no backend is configured", async () => {
+    const getTaskModelConfigSpy = jest.spyOn(modelRouting, "getTaskModelConfig").mockReturnValue({
+      backend: undefined as any,
+      generateModel: "model",
+      critiqueModel: "model",
+    });
+    try {
+      await expect(critiqueViaAgent(candidate(), {hebrew: "מקור"})).rejects.toThrow(
+        "No backend configured for critique",
+      );
+    } finally {
+      getTaskModelConfigSpy.mockRestore();
     }
   });
 });

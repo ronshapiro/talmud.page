@@ -125,7 +125,10 @@ async function main(): Promise<void> {
     configName: FLAGS.modelConfig,
     backend: FLAGS.backend,
   });
-  const effectiveBackend = FLAGS.backend ?? resolvedModelConfig.backend ?? "claude";
+  const effectiveBackend = FLAGS.backend ?? resolvedModelConfig?.backend;
+  if (!effectiveBackend) {
+    throw new Error("No backend configured");
+  }
 
   if (FLAGS.debug) {
     console.log(

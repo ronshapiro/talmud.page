@@ -692,7 +692,10 @@ export async function generateViaAgent(
     configName: options?.modelConfig,
     backend: options?.backend,
   });
-  const backend = options?.backend ?? modelConfig.backend ?? "claude";
+  const backend = options?.backend ?? modelConfig?.backend;
+  if (!backend) {
+    throw new Error("No backend configured for generation");
+  }
   const model = options?.model ?? modelConfig.generateModel;
   const runner = getAgentRunner(backend);
   if (options?.debug) {
@@ -774,7 +777,10 @@ export async function critiqueViaAgent(
   const critiqueBackendConfig = options?.critiqueBackend
     ? getTaskModelConfig(TASK_TYPE, {backend: options.critiqueBackend})
     : undefined;
-  const backend = options?.critiqueBackend ?? options?.backend ?? modelConfig.backend ?? "claude";
+  const backend = options?.critiqueBackend ?? options?.backend ?? modelConfig?.backend;
+  if (!backend) {
+    throw new Error("No backend configured for critique");
+  }
   const model = options?.critiqueModel
     ?? critiqueBackendConfig?.critiqueModel
     ?? (options?.modelConfig
