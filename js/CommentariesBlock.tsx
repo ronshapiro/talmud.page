@@ -249,6 +249,27 @@ export function CommentariesBlock({
     return JSX_NOOP;
   }
 
+  const renderNestedCommentariesBlock = ({
+    commentaries: nestedCommentaries,
+    segmentLabel: nestedSegmentLabel,
+    key: nestedKey,
+    syntheticClassName: nestedSyntheticClassName,
+    syntheticCommentaryKinds: nestedSyntheticCommentaryKinds,
+    parentComment: nestedParentComment,
+  }: Omit<CommentariesBlockProps, "toggleShowing" | "getOrdering"> & {key?: React.Key}): React.ReactElement => (
+    <CommentariesBlock
+      commentaries={nestedCommentaries}
+      getOrdering={getOrdering}
+      toggleShowing={toggleShowing}
+      segmentLabel={nestedSegmentLabel}
+      key={nestedKey}
+      syntheticClassName={nestedSyntheticClassName}
+      syntheticCommentaryKinds={nestedSyntheticCommentaryKinds}
+      depth={depth! + 1}
+      parentComment={nestedParentComment}
+    />
+  );
+
   const renderCommentsAsNestedCommentaries = (
     commentary: Commentary, commentaryClassName: string,
   ): React.ReactElement => {
@@ -262,17 +283,13 @@ export function CommentariesBlock({
     }
 
     const nestedSegmentLabel = `${segmentLabel}.<inner>.${commentaryClassName}`;
-    return (
-      <CommentariesBlock
-        commentaries={commentariesByComment}
-        getOrdering={getOrdering}
-        toggleShowing={toggleShowing}
-        segmentLabel={nestedSegmentLabel}
-        key={nestedSegmentLabel}
-        syntheticClassName={commentaryClassName}
-        syntheticCommentaryKinds={kinds}
-        depth={depth! + 1}
-        />);
+    return renderNestedCommentariesBlock({
+      commentaries: commentariesByComment,
+      segmentLabel: nestedSegmentLabel,
+      key: nestedSegmentLabel,
+      syntheticClassName: commentaryClassName,
+      syntheticCommentaryKinds: kinds,
+    });
   };
 
   const buttonClasses = (
@@ -450,15 +467,12 @@ export function CommentariesBlock({
             commentaryKind={commentaryKind}
             parentComment={parentComment}
             />,
-          <CommentariesBlock
-            commentaries={comment.commentary || {}}
-            getOrdering={getOrdering}
-            toggleShowing={toggleShowing}
-            segmentLabel={nestedSegmentLabel}
-            key={nestedSegmentLabel}
-            depth={depth! + 1}
-            parentComment={comment}
-            />);
+          renderNestedCommentariesBlock({
+            commentaries: comment.commentary || {},
+            segmentLabel: nestedSegmentLabel,
+            key: nestedSegmentLabel,
+            parentComment: comment,
+          }));
       }
     }
   }
