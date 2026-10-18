@@ -3,7 +3,7 @@ import * as fs from "fs";
 import * as os from "os";
 import * as path from "path";
 
-export type AgentBackend = "claude" | "agy" | "claude-long-thread" | "agy-long-thread";
+export type AgentBackend = "claude" | "agy" | "claude-long-thread" | "agy-long-thread" | "ollama";
 
 export interface ToolUseRecord {
   name: string;
@@ -873,6 +873,75 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
 };
 
 /* ============================================================================
+ * Ollama Runner
+ * ============================================================================ */
+
+export const DEFAULT_OLLAMA_HOST = "http://localhost:11434";
+
+/* eslint-disable camelcase */
+interface OllamaChatResponse {
+  message?: {content?: string};
+  total_duration?: number; // nanoseconds
+  prompt_eval_count?: number;
+  eval_count?: number;
+}
+/* eslint-enable camelcase */
+
+/**
+ * Runs a prompt against a local Ollama server (`OLLAMA_HOST`, default localhost:11434). Local
+ * models have no tool access, so `allowedTools` is ignored and the model must answer from the
+ * prompt alone. Output is constrained to JSON, and `durationSeconds` is Ollama's own measured
+ * total inference time (load + prompt eval + generation) so callers can compare models.
+ */
+export const runOllama: AgentRunner = async (prompt, options = {}) => {
+  if (options.signal?.aborted) {
+    throw new AgentError("Agent execution was cancelled", undefined, "ollama", true);
+  }
+  if (!options.model) {
+    throw new AgentError("The ollama backend requires a model (e.g. gemma4:e4b)", undefined, "ollama");
+  }
+  const host = (process.env.OLLAMA_HOST ?? DEFAULT_OLLAMA_HOST).replace(/\/$/, "");
+  const baseUrl = /^https?:\/\//.test(host) ? host : `http://${host}`;
+  if (options.debug) {
+    console.log(`  [agent] Running ollama (model: ${options.model})...`);
+  }
+  let response: Response;
+  try {
+    response = await fetch(`${baseUrl}/api/chat`, {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({
+        model: options.model,
+        messages: [{role: "user", content: prompt}],
+        stream: false,
+        format: "json",
+        think: false,
+        options: {temperature: 0},
+      }),
+      signal: options.signal,
+    });
+  } catch (e) {
+    if (options.signal?.aborted) {
+      throw new AgentError("Agent execution was cancelled", undefined, "ollama", true);
+    }
+    throw new AgentError(`Could not reach ollama at ${baseUrl}: ${e}`, undefined, "ollama");
+  }
+  if (!response.ok) {
+    throw new AgentError(
+      `Ollama returned ${response.status}: ${await response.text()}`, response.status, "ollama");
+  }
+  const body = await response.json() as OllamaChatResponse;
+  return {
+    text: body.message?.content ?? "",
+    model: options.model,
+    costUsd: 0,
+    toolUses: [],
+    durationSeconds: body.total_duration === undefined ? undefined : body.total_duration / 1e9,
+    totalTokens: (body.prompt_eval_count ?? 0) + (body.eval_count ?? 0),
+  };
+};
+
+/* ============================================================================
  * Runner Factory
  * ============================================================================ */
 
@@ -881,6 +950,8 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
  */
 export function getAgentRunner(backend: AgentBackend = "claude"): AgentRunner {
   switch (backend) {
+    case "ollama":
+      return runOllama;
     case "agy":
     case "agy-long-thread":
       return runHeadlessAgy;

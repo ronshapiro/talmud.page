@@ -21,6 +21,20 @@
       "critiqueModel": "gemini-3.8-flash-medium"
     }
   },
+  "ollama": {
+    "default": {
+      "generateModel": "gemma4:e4b",
+      "critiqueModel": "gemma4:e4b"
+    },
+    "gemma4-e2b": {
+      "generateModel": "gemma4:e2b",
+      "critiqueModel": "gemma4:e2b"
+    },
+    "gemma4-12b": {
+      "generateModel": "gemma4:12b",
+      "critiqueModel": "gemma4:12b"
+    }
+  },
   "claude": {
     "default": {
       "generateModel": "claude-sonnet-5",
