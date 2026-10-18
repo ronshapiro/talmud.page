@@ -47,6 +47,11 @@ async function main(): Promise<void> {
         alias: ["critique-backend"],
         describe: "backend to use for critique if different from --backend (e.g. agy to judge ollama)",
       },
+      critiqueModel: {
+        type: "string",
+        alias: ["critique-model"],
+        describe: "model to use for critique if different from default",
+      },
       modelConfig: {
         type: "string",
         alias: ["backend-config", "backendConfig", "model-config"],
@@ -130,12 +135,21 @@ async function main(): Promise<void> {
     throw new Error("No backend configured");
   }
 
+  const effectiveCritiqueBackend = FLAGS.critiqueBackend ?? effectiveBackend;
+  const critiqueBackendConfiguration = FLAGS.critiqueBackend
+    ? getTaskModelConfig(TASK_TYPE, {backend: FLAGS.critiqueBackend})
+    : undefined;
+  const effectiveCritiqueModel = FLAGS.critiqueModel
+    ?? critiqueBackendConfiguration?.critiqueModel
+    ?? resolvedModelConfig.critiqueModel;
+
   if (FLAGS.debug) {
     console.log(
       `[Config] Backend: ${effectiveBackend}`
       + `${FLAGS.modelConfig ? ` (preset: ${FLAGS.modelConfig})` : ""}`
       + ` | Generation: ${FLAGS.model ?? resolvedModelConfig.generateModel}`
-      + ` | Critique: ${resolvedModelConfig.critiqueModel}`);
+      + ` | Critique Backend: ${effectiveCritiqueBackend}`
+      + ` | Critique Model: ${effectiveCritiqueModel}`);
   }
 
   function getCandidates(): TranslationCandidate[] {
@@ -199,6 +213,7 @@ async function main(): Promise<void> {
       return generateAndRecord(candidate, {
         backend: effectiveBackend,
         critiqueBackend: FLAGS.critiqueBackend,
+        critiqueModel: FLAGS.critiqueModel,
         model: FLAGS.model,
         modelConfig: FLAGS.modelConfig,
         debug: FLAGS.debug,

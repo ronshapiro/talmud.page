@@ -161,3 +161,25 @@ test("getTaskModelConfig checks requested backend with matchesConfig first, fall
   });
   expect(fallbackMatch.generateModel).toBe("claude-base-model");
 });
+
+test("getTaskModelConfig preserves critiqueBackend when defined in preset", () => {
+  const customConfig = {
+    ollama: {
+      default: {
+        generateModel: "gemma4:31b",
+        critiqueModel: "gemini-3.8-flash-medium",
+        critiqueBackend: "agy",
+      },
+    },
+  };
+  writeJson(CONFIG_PATH, customConfig);
+
+  const resolved = getTaskModelConfig("any_task", {
+    configPath: CONFIG_PATH,
+    backend: "ollama",
+  });
+  expect(resolved.backend).toBe("ollama");
+  expect(resolved.generateModel).toBe("gemma4:31b");
+  expect(resolved.critiqueModel).toBe("gemini-3.8-flash-medium");
+  expect(resolved.critiqueBackend).toBe("agy");
+});
