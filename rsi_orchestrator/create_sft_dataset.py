@@ -5,7 +5,7 @@ and precomputed AI additions.
 
 Creates both:
 1. Generation tasks: Translate and punctuate Talmud commentary comments into structured JSON.
-2. Critique tasks: Evaluate proposed edits (balanced positive and negative examples).
+2. Critique tasks: Evaluate proposed edits (positive examples, and ~10% corrupted negative examples).
 
 Outputs standard ChatML / OpenAI / Gemma chat format:
 {"messages": [{"role": "user", "content": "..."}, {"role": "assistant", "content": "..."}]}
@@ -18,6 +18,7 @@ import random
 from typing import Any, Dict, List
 
 RANDOM_SEED = 42
+CORRUPTION_PERCENTAGE = 0.10
 random.seed(RANDOM_SEED)
 
 def build_generation_user_prompt(ref: str, source_hebrew: str) -> str:
@@ -45,12 +46,12 @@ Ref: {ref}
 Hebrew: {source_hebrew}"""
 
 def build_generation_assistant_response(hebrew: str, english: str, source_hebrew: str) -> str:
-    response_obj: Dict[str, str] = {}
+    response_object: Dict[str, str] = {}
     if hebrew and hebrew != source_hebrew:
-        response_obj["hebrew"] = hebrew
+        response_object["hebrew"] = hebrew
     if english:
-        response_obj["english"] = english
-    return f"```json\n{json.dumps(response_obj, ensure_ascii=False, indent=2)}\n```"
+        response_object["english"] = english
+    return f"```json\n{json.dumps(response_object, ensure_ascii=False, indent=2)}\n```"
 
 def build_critique_user_prompt(original_hebrew: str, proposed_hebrew: str, proposed_english: str) -> str:
     return f"""Instructions (ID: CRITIQUE_TASK):
@@ -70,6 +71,45 @@ Original Hebrew: {original_hebrew}
 Proposed Hebrew: {proposed_hebrew or '(unchanged)'}
 Proposed English: {proposed_english or '(none)'}"""
 
+def load_pairs_from_record_file(record_file: str) -> List[Dict[str, str]]:
+    page_name = os.path.basename(record_file)
+    ai_additions_path = os.path.join("precomputed/ai_additions", page_name)
+    if not os.path.exists(ai_additions_path):
+        return []
+
+    with open(record_file, "r", encoding="utf-8") as generation_records_file, \
+         open(ai_additions_path, "r", encoding="utf-8") as ai_additions_file:
+        try:
+            generation_records = json.load(generation_records_file)
+            ai_additions = json.load(ai_additions_file)
+        except Exception:
+            return []
+
+    pairs: List[Dict[str, str]] = []
+    for ref, generation_record in generation_records.items():
+        if not isinstance(generation_record, dict):
+            continue
+        source_text = generation_record.get("sourceText", "")
+        if not source_text:
+            continue
+
+        ai_entry = ai_additions.get(ref)
+        if not ai_entry or not isinstance(ai_entry, dict):
+            continue
+
+        target_hebrew = ai_entry.get("hebrew", "")
+        target_english = ai_entry.get("english", "")
+        if not target_english:
+            continue
+
+        pairs.append({
+            "ref": ref,
+            "source_text": source_text,
+            "target_hebrew": target_hebrew,
+            "target_english": target_english,
+        })
+    return pairs
+
 def create_dataset(output_path: str = "precomputed/rsi_state/sft_dataset.jsonl") -> Dict[str, int]:
     records_files = sorted(glob.glob("precomputed/rsi_state/generation_records/rashi_tosafot_translation/*.json"))
 
@@ -79,103 +119,68 @@ def create_dataset(output_path: str = "precomputed/rsi_state/sft_dataset.jsonl")
 
     all_pairs: List[Dict[str, str]] = []
 
-    for rf in records_files:
-        page_name = os.path.basename(rf)
-        ai_path = os.path.join("precomputed/ai_additions", page_name)
-        if not os.path.exists(ai_path):
-            continue
-
-        with open(rf, "r", encoding="utf-8") as f_r, open(ai_path, "r", encoding="utf-8") as f_a:
-            try:
-                gen_data = json.load(f_r)
-                ai_data = json.load(f_a)
-            except Exception:
-                continue
-
-        for ref, rec in gen_data.items():
-            if not isinstance(rec, dict):
-                continue
-            source_text = rec.get("sourceText", "")
-            if not source_text:
-                continue
-
-            ai_entry = ai_data.get(ref)
-            if not ai_entry or not isinstance(ai_entry, dict):
-                continue
-
-            target_hebrew = ai_entry.get("hebrew", "")
-            target_english = ai_entry.get("english", "")
-            if not target_english:
-                continue
-
-            all_pairs.append({
-                "ref": ref,
-                "source_text": source_text,
-                "target_hebrew": target_hebrew,
-                "target_english": target_english,
-            })
+    for record_file in records_files:
+        all_pairs.extend(load_pairs_from_record_file(record_file))
 
     # 1. Build generation examples
     for item in all_pairs:
-        user_msg = build_generation_user_prompt(item["ref"], item["source_text"])
-        asst_msg = build_generation_assistant_response(item["target_hebrew"], item["target_english"], item["source_text"])
+        user_message = build_generation_user_prompt(item["ref"], item["source_text"])
+        assistant_message = build_generation_assistant_response(item["target_hebrew"], item["target_english"], item["source_text"])
         generation_examples.append({
             "task": "generation",
             "ref": item["ref"],
             "messages": [
-                {"role": "user", "content": user_msg},
-                {"role": "assistant", "content": asst_msg},
+                {"role": "user", "content": user_message},
+                {"role": "assistant", "content": assistant_message},
             ]
         })
 
     # 2. Build positive critique examples
     for item in all_pairs:
-        user_msg = build_critique_user_prompt(item["source_text"], item["target_hebrew"], item["target_english"])
-        asst_msg = json.dumps({"valid": True})
+        user_message = build_critique_user_prompt(item["source_text"], item["target_hebrew"], item["target_english"])
+        assistant_message = json.dumps({"valid": True})
         positive_critique_examples.append({
             "task": "critique_positive",
             "ref": item["ref"],
             "messages": [
-                {"role": "user", "content": user_msg},
-                {"role": "assistant", "content": asst_msg},
+                {"role": "user", "content": user_message},
+                {"role": "assistant", "content": assistant_message},
             ]
         })
 
-    # 3. Build negative critique examples (simulated common generator errors)
-    # Types of corruptions:
-    # A: Altered Hebrew wording (added extraneous word or deleted words)
-    # B: Swapped English (mismatched translation)
-    # C: Missing English translation
-    # D: Truncated English
-    for i, item in enumerate(all_pairs):
-        corruption_type = i % 3
+    # 3. Build negative critique examples (~10% corrupted pairs)
+    corrupted_count = max(1, int(len(all_pairs) * CORRUPTION_PERCENTAGE))
+    corrupted_indices = sorted(random.sample(range(len(all_pairs)), corrupted_count))
+
+    for index, pair_index in enumerate(corrupted_indices):
+        item = all_pairs[pair_index]
+        corruption_type = index % 3
 
         if corruption_type == 0:
-            # Corrupted Hebrew: prepend or append extra words to the Hebrew body
+            # Corrupted Hebrew: alter wording beyond punctuation
             words = item["source_text"].split()
             if len(words) > 4:
-                # remove a word or insert a foreign word
                 corrupted_hebrew = " ".join(words[:2] + ["פירוש", "אחר"] + words[4:])
             else:
                 corrupted_hebrew = item["source_text"] + " נוסף"
-            user_msg = build_critique_user_prompt(item["source_text"], corrupted_hebrew, item["target_english"])
-            asst_msg = json.dumps({
+            user_message = build_critique_user_prompt(item["source_text"], corrupted_hebrew, item["target_english"])
+            assistant_message = json.dumps({
                 "valid": False,
                 "reason": "Proposed Hebrew text altered the original wording beyond punctuation."
             })
         elif corruption_type == 1:
             # Swapped English: pick English from a completely different comment
-            mismatch_idx = (i + len(all_pairs) // 2) % len(all_pairs)
-            swapped_english = all_pairs[mismatch_idx]["target_english"]
-            user_msg = build_critique_user_prompt(item["source_text"], item["target_hebrew"], swapped_english)
-            asst_msg = json.dumps({
+            mismatch_index = (pair_index + len(all_pairs) // 2) % len(all_pairs)
+            swapped_english = all_pairs[mismatch_index]["target_english"]
+            user_message = build_critique_user_prompt(item["source_text"], item["target_hebrew"], swapped_english)
+            assistant_message = json.dumps({
                 "valid": False,
                 "reason": "The English translation does not match the commentary text."
             })
         else:
             # Missing or empty English
-            user_msg = build_critique_user_prompt(item["source_text"], item["target_hebrew"], "")
-            asst_msg = json.dumps({
+            user_message = build_critique_user_prompt(item["source_text"], item["target_hebrew"], "")
+            assistant_message = json.dumps({
                 "valid": False,
                 "reason": "Missing English translation."
             })
@@ -184,8 +189,8 @@ def create_dataset(output_path: str = "precomputed/rsi_state/sft_dataset.jsonl")
             "task": "critique_negative",
             "ref": item["ref"],
             "messages": [
-                {"role": "user", "content": user_msg},
-                {"role": "assistant", "content": asst_msg},
+                {"role": "user", "content": user_message},
+                {"role": "assistant", "content": assistant_message},
             ]
         })
 
@@ -194,9 +199,9 @@ def create_dataset(output_path: str = "precomputed/rsi_state/sft_dataset.jsonl")
     random.shuffle(all_examples)
 
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    with open(output_path, "w", encoding="utf-8") as f_out:
-        for ex in all_examples:
-            f_out.write(json.dumps(ex, ensure_ascii=False) + "\n")
+    with open(output_path, "w", encoding="utf-8") as output_file:
+        for example in all_examples:
+            output_file.write(json.dumps(example, ensure_ascii=False) + "\n")
 
     return {
         "generation": len(generation_examples),
@@ -206,7 +211,7 @@ def create_dataset(output_path: str = "precomputed/rsi_state/sft_dataset.jsonl")
     }
 
 if __name__ == "__main__":
-    stats = create_dataset()
+    statistics = create_dataset()
     print("SFT Dataset generated successfully:")
-    for k, v in stats.items():
-        print(f"  {k}: {v}")
+    for key, value in statistics.items():
+        print(f"  {key}: {value}")
