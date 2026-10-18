@@ -140,6 +140,26 @@ describe("the display language section", () => {
 
     expect(rerenders()).toBe(before);
   });
+
+  test("preference item identity and input IDs are preserved across parent re-renders", () => {
+    let forceParentRerender: () => void = () => {};
+    function Parent() {
+      const [, setCounter] = React.useState(0);
+      forceParentRerender = () => setCounter(count => count + 1);
+      return <Preferences rerender={() => {}} />;
+    }
+    const container = mount(<TestContext><Parent /></TestContext>);
+    click(query(container, "#showSettings"));
+
+    const initialRadios = radios(container);
+    const initialRadioIdentifiers = initialRadios.map(radio => radio.id);
+
+    flush(() => forceParentRerender());
+
+    const updatedRadios = radios(container);
+    const updatedRadioIdentifiers = updatedRadios.map(radio => radio.id);
+    expect(updatedRadioIdentifiers).toEqual(initialRadioIdentifiers);
+  });
 });
 
 describe("hebrew mode", () => {

@@ -59,6 +59,65 @@ interface PreferenceSectionParams<T extends string> {
   extraItems?: React.ReactElement[];
 }
 
+interface PreferenceItemParams<T extends string> {
+  item: Item<T>;
+  preference: Preference<T>;
+  rerender: () => any;
+}
+
+function PreferenceItem<T extends string>({
+  item,
+  preference,
+  rerender,
+}: PreferenceItemParams<T>) {
+  const {value, displayText, displayTextHebrew, onEdit, onDelete} = item;
+  const elementId = useMemo(newUuid, []);
+  const isChecked = value === preference.get();
+  const labelRef = useHtmlRef<HTMLLabelElement>();
+  const inputRef = useHtmlRef<HTMLInputElement>();
+  const onChanged = () => {
+    // The DOM only ever hands back a plain string, but it can only be one of this radio
+    // group's own `value`s, which are all valid `T` -- see `items` above.
+    const maybeNewValue = inputRef.current!.value as T;
+    if (maybeNewValue !== preference.get()) {
+      preference.set(maybeNewValue);
+      rerender();
+    }
+  };
+  useEffect(() => upgradeElement(labelRef.current));
+  return (
+    <div style={{display: "flex", alignItems: "center"}}>
+      <label className="mdl-radio mdl-js-radio mdl-js-ripple-effect" ref={labelRef} htmlFor={elementId} style={{flexGrow: 1}}>
+        <input
+          ref={inputRef}
+          checked={isChecked}
+          onChange={() => onChanged()}
+          type="radio"
+          value={value}
+          id={elementId}
+          className="mdl-radio__button" />
+        <span className="mdl-radio__label">{isSiteLanguageHebrew() ? displayTextHebrew : displayText}</span>
+      </label>
+      {onEdit && (
+        <button
+          className="mdl-button mdl-js-button mdl-button--icon"
+          style={{margin: 0, padding: 0, width: "32px", height: "32px", minWidth: "32px"}}
+          onClick={() => onEdit()}>
+          <i className="material-icons" style={{fontSize: "20px"}}>edit</i>
+        </button>
+      )}
+      {onDelete && (
+        <button
+          className="mdl-button mdl-js-button mdl-button--icon"
+          style={{margin: 0, padding: 0, width: "32px", height: "32px", minWidth: "32px"}}
+          onClick={() => onDelete()}>
+          <i className="material-icons" style={{fontSize: "20px"}}>delete</i>
+        </button>
+      )}
+    </div>
+  );
+}
+
 function PreferenceSection<T extends string>({
   title,
   titleHebrew,
@@ -67,61 +126,19 @@ function PreferenceSection<T extends string>({
   rerender,
   extraItems,
 }: PreferenceSectionParams<T>) {
-  function PreferenceItem({item}: {item: Item<T>}) {
-    const {value, displayText, displayTextHebrew, onEdit, onDelete} = item;
-    const id = useMemo(newUuid, []);
-    const isChecked = value === preference.get();
-    const labelRef = useHtmlRef<HTMLLabelElement>();
-    const inputRef = useHtmlRef<HTMLInputElement>();
-    const onChanged = () => {
-      // The DOM only ever hands back a plain string, but it can only be one of this radio
-      // group's own `value`s, which are all valid `T` -- see `items` above.
-      const maybeNewValue = inputRef.current!.value as T;
-      if (maybeNewValue !== preference.get()) {
-        preference.set(maybeNewValue);
-        rerender();
-      }
-    };
-    useEffect(() => upgradeElement(labelRef.current));
-    return (
-      <div style={{display: "flex", alignItems: "center"}}>
-        <label className="mdl-radio mdl-js-radio mdl-js-ripple-effect" ref={labelRef} htmlFor={id} style={{flexGrow: 1}}>
-          <input
-            ref={inputRef}
-            checked={isChecked}
-            onChange={() => onChanged()}
-            type="radio"
-            value={value}
-            id={id}
-            className="mdl-radio__button" />
-          <span className="mdl-radio__label">{isSiteLanguageHebrew() ? displayTextHebrew : displayText}</span>
-        </label>
-        {onEdit && (
-          <button
-            className="mdl-button mdl-js-button mdl-button--icon"
-            style={{margin: 0, padding: 0, width: "32px", height: "32px", minWidth: "32px"}}
-            onClick={() => onEdit()}>
-            <i className="material-icons" style={{fontSize: "20px"}}>edit</i>
-          </button>
-        )}
-        {onDelete && (
-          <button
-            className="mdl-button mdl-js-button mdl-button--icon"
-            style={{margin: 0, padding: 0, width: "32px", height: "32px", minWidth: "32px"}}
-            onClick={() => onDelete()}>
-            <i className="material-icons" style={{fontSize: "20px"}}>delete</i>
-          </button>
-        )}
-      </div>
-    );
-  }
-
   return (
     <div style={{padding: "10px"}}>
       <span style={{display: "block", fontSize: "20px", padding: "10px 0px"}}>
         {isSiteLanguageHebrew() ? titleHebrew : title}
       </span>
-      {items.map((item, i) => (<PreferenceItem item={item} key={i.toString()} />))}
+      {items.map((item, i) => (
+        <PreferenceItem
+          item={item}
+          key={i.toString()}
+          preference={preference}
+          rerender={rerender}
+        />
+      ))}
       {extraItems}
     </div>
   );
