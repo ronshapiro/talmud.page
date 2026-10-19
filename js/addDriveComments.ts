@@ -28,6 +28,9 @@ function setPersonalComments(obj: Section | ApiComment, driveClient: DriveClient
 }
 
 function setHighlights(obj: Section | ApiComment, driveClient: DriveClient) {
+  if ("sourceRef" in obj && obj.sourceRef === "Model") {
+    return;
+  }
   if (obj.unhighlighted) {
     Object.assign(obj, obj.unhighlighted);
     delete obj.unhighlighted;
@@ -80,8 +83,13 @@ function setAll(obj: Section | ApiComment, driveClient: DriveClient) {
   setPersonalComments(obj, driveClient);
   setHighlights(obj, driveClient);
 
-  for (const comment of Object.values(obj?.commentary || {}).flatMap(x => x.comments)) {
-    setAll(comment, driveClient);
+  for (const [commentaryName, commentary] of Object.entries(obj?.commentary || {})) {
+    if (commentaryName === "Model") {
+      continue;
+    }
+    for (const comment of commentary.comments) {
+      setAll(comment, driveClient);
+    }
   }
 }
 

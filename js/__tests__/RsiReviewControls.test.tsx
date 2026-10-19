@@ -149,6 +149,66 @@ describe("RsiReviewControls", () => {
       });
     });
 
+    test("approve strips highlights from fallbackHebrew and fallbackEnglish", async () => {
+      (postWithRetry as jest.Mock).mockResolvedValue({url: "https://example.com/pull/1"});
+      const root = mount(<RsiReviewControls comment={
+        comment({
+          pendingReview: "Zevachim 2a",
+          ref: "Zevachim 2a:1",
+          he: 'שלום <span-highlight class="highlighted highlighted-yellow">עולם</span-highlight>',
+          en: 'hello <span-highlight class="highlighted highlighted-yellow">world</span-highlight>',
+          unhighlighted: {
+            he: "שלום עולם",
+            en: "hello world",
+          },
+        })
+      } />);
+
+      await flushAsync(() => click(query(root, "button")));
+
+      expect(postWithRetry).toHaveBeenCalledWith("/api/rsi-review-decision", {
+        page: "Zevachim 2a",
+        ref: "Zevachim 2a:1",
+        decision: "approve",
+        key: "secret123",
+        knownPrNumber: undefined,
+        reviewerIdentity: IDENTITY,
+        fallbackHebrew: "שלום עולם",
+        fallbackEnglish: "hello world",
+      });
+    });
+
+    test("edit reveals unhighlighted text and strips highlight tags on submission", async () => {
+      (postWithRetry as jest.Mock).mockResolvedValue({});
+      const root = mount(<RsiReviewControls comment={comment({
+        pendingReview: "Zevachim 2a",
+        ref: "Zevachim 2a:1",
+        he: 'שלום <span-highlight class="highlighted highlighted-yellow">עולם</span-highlight>',
+        en: 'hello <span-highlight class="highlighted highlighted-yellow">world</span-highlight>',
+      })} />);
+
+      click(queryAll(root, "button")[1]); // Edit
+      const textareas = queryAll(root, "textarea") as HTMLTextAreaElement[];
+      expect(textareas.length).toBe(2);
+      expect(textareas[0].value).toBe("שלום עולם");
+      expect(textareas[1].value).toBe("hello world");
+
+      await flushAsync(() => click(query(root, "button"))); // Submit edit
+
+      expect(postWithRetry).toHaveBeenCalledWith("/api/rsi-review-decision", {
+        page: "Zevachim 2a",
+        ref: "Zevachim 2a:1",
+        decision: "approve",
+        key: "secret123",
+        knownPrNumber: undefined,
+        reviewerIdentity: IDENTITY,
+        hebrew: "שלום עולם",
+        english: "hello world",
+        fallbackHebrew: "שלום עולם",
+        fallbackEnglish: "hello world",
+      });
+    });
+
     test("reject shows a modal for the reason", async () => {
       (postWithRetry as jest.Mock).mockResolvedValue({});
       const root = mount(<RsiReviewControls comment={
