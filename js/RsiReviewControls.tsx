@@ -109,15 +109,9 @@ type ModalState =
   | {kind: "identity"; onIdentity: (identity: string) => void}
   | {kind: "reject"; identity: string};
 
-export function stripHighlights(text: string | undefined): string {
-  if (!text) return "";
-  return text.replace(/<\/?span-highlight(?:\s+[^>]*)?>/gi, "");
-}
-
 function getUnhighlightedText(comment: ApiComment, property: "he" | "en"): string {
   const text = comment.unhighlighted ? comment.unhighlighted[property] : comment[property];
-  const flattenedText = flatten(text) ?? "";
-  return stripHighlights(flattenedText);
+  return flatten(text) ?? "";
 }
 
 /**
@@ -173,8 +167,8 @@ export function RsiReviewControls({comment}: {comment: ApiComment}): React.React
             onClick={() => withIdentity(identity => {
               setEditing(false);
               postDecision(page, comment.ref, "approve", {
-                hebrew: stripHighlights(hebrew),
-                english: stripHighlights(english),
+                hebrew,
+                english,
                 fallbackHebrew,
                 fallbackEnglish,
               }, identity);

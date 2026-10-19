@@ -178,13 +178,17 @@ describe("RsiReviewControls", () => {
       });
     });
 
-    test("edit reveals unhighlighted text and strips highlight tags on submission", async () => {
+    test("edit reveals unhighlighted text and submits it", async () => {
       (postWithRetry as jest.Mock).mockResolvedValue({});
       const root = mount(<RsiReviewControls comment={comment({
         pendingReview: "Zevachim 2a",
         ref: "Zevachim 2a:1",
         he: 'שלום <span-highlight class="highlighted highlighted-yellow">עולם</span-highlight>',
         en: 'hello <span-highlight class="highlighted highlighted-yellow">world</span-highlight>',
+        unhighlighted: {
+          he: "שלום עולם",
+          en: "hello world",
+        },
       })} />);
 
       click(queryAll(root, "button")[1]); // Edit
