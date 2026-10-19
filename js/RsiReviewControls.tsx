@@ -109,15 +109,23 @@ type ModalState =
   | {kind: "identity"; onIdentity: (identity: string) => void}
   | {kind: "reject"; identity: string};
 
+function getUnhighlightedText(comment: ApiComment, property: "he" | "en"): string | undefined {
+  const text = comment.unhighlighted ? comment.unhighlighted[property] : comment[property];
+  return flatten(text) || undefined;
+}
+
 /**
  * Approve/edit/reject controls for a single pending AI-generated comment (comment.pendingReview
  * set. Rendered inline in IndividualComment for every reader, but only shown when a review key
  * has been acquired.
  */
 export function RsiReviewControls({comment}: {comment: ApiComment}): React.ReactElement | null {
+  const unhighlightedHebrew = getUnhighlightedText(comment, "he");
+  const unhighlightedEnglish = getUnhighlightedText(comment, "en");
+
   const [editing, setEditing] = useState(false);
-  const [hebrew, setHebrew] = useState(() => flatten(comment.he) ?? "");
-  const [english, setEnglish] = useState(() => flatten(comment.en) ?? "");
+  const [hebrew, setHebrew] = useState(unhighlightedHebrew ?? "");
+  const [english, setEnglish] = useState(unhighlightedEnglish ?? "");
   const [modal, setModal] = useState<ModalState | null>(null);
   const identityInputRef = useHtmlRef<HTMLInputElement>();
   const reasonRef = useHtmlRef<HTMLTextAreaElement>();
@@ -137,9 +145,6 @@ export function RsiReviewControls({comment}: {comment: ApiComment}): React.React
     }
     setModal({kind: "identity", onIdentity});
   };
-
-  const fallbackHebrew = flatten(comment.he) || undefined;
-  const fallbackEnglish = flatten(comment.en) || undefined;
 
   if (editing) {
     return (
@@ -161,8 +166,8 @@ export function RsiReviewControls({comment}: {comment: ApiComment}): React.React
               postDecision(page, comment.ref, "approve", {
                 hebrew,
                 english,
-                fallbackHebrew,
-                fallbackEnglish,
+                fallbackHebrew: unhighlightedHebrew,
+                fallbackEnglish: unhighlightedEnglish,
               }, identity);
             })}>
             Submit edit
@@ -185,15 +190,19 @@ export function RsiReviewControls({comment}: {comment: ApiComment}): React.React
         className="rsi-review-button rsi-review-approve"
         onClick={() => withIdentity(
           identity => postDecision(page, comment.ref, "approve", {
-            fallbackHebrew,
-            fallbackEnglish,
+            fallbackHebrew: unhighlightedHebrew,
+            fallbackEnglish: unhighlightedEnglish,
           }, identity))}>
         Approve
       </button>
       <button
         type="button"
         className="rsi-review-button rsi-review-edit"
-        onClick={() => setEditing(true)}>
+        onClick={() => {
+          setHebrew(unhighlightedHebrew ?? "");
+          setEnglish(unhighlightedEnglish ?? "");
+          setEditing(true);
+        }}>
         Edit
       </button>
       <button
