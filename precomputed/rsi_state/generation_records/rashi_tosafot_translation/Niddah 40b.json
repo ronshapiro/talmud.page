@@ -1,0 +1,555 @@
+{
+  "Rashi on Niddah 40b:2:1": {
+    "dependsOn": [
+      "Niddah 40b:1",
+      "Niddah 40b:2",
+      "Rashi on Niddah 40b:2:1",
+      "Rashi on Niddah 40b:2:2",
+      "Rashi on Niddah 40b:2:3",
+      "Rashi on Niddah 40b:3:1",
+      "Rashi on Niddah 40b:5:1",
+      "Rashi on Niddah 40a:1:1",
+      "Rashi on Niddah 40a:2:1",
+      "Rashi on Niddah 40a:3:1",
+      "Rashi on Niddah 40a:4:1"
+    ],
+    "generatedAt": "2026-10-16T09:23:54.280Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 40b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנשחטה בלילה ושנשפך דמה</strong> - לארץ ולא נזרק:"
+  },
+  "Rashi on Niddah 40b:2:2": {
+    "dependsOn": [
+      "Niddah 40b:2",
+      "Rashi on Niddah 40b:2:1",
+      "Rashi on Niddah 40b:2:2",
+      "Rashi on Niddah 40b:2:3"
+    ],
+    "generatedAt": "2026-10-16T09:25:16.629Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 40b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושיצא דמה חוץ לקלעים</strong> - אבל כל הנך פסולי אחריני דמכשר בהו רבי שמעון כגון לן ויוצא שיצא הבשר קודם זריקת דם וטמא ושנשחט לאוכלו חוץ לזמנו וחוץ למקומו כולן מודה נמי רבי יהודה דלא ירדו וטעמא מפרש רבי יהודה במסכת זבחים בפרק המזבח מקדש <span class=\"parenthesized\">(זבחים דף פד:)</span> מפני מה אמרו לן בדם כשר שהרי לן כשר בבשר וכן כולן:"
+  },
+  "Rashi on Niddah 40b:2:3": {
+    "dependsOn": [
+      "Niddah 40b:2",
+      "Rashi on Niddah 40b:2:1",
+      "Rashi on Niddah 40b:2:2",
+      "Rashi on Niddah 40b:2:3",
+      "Rashi on Niddah 40b:2:4",
+      "Rashi on Niddah 40a:7:1",
+      "Rashi on Niddah 40b:1:1",
+      "Rashi on Niddah 40b:2:5",
+      "Rashi on Niddah 40b:2:6"
+    ],
+    "generatedAt": "2026-10-16T09:26:25.719Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 40b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והלן</strong> - דם הלן:"
+  },
+  "Rashi on Niddah 40b:2:4": {
+    "dependsOn": [
+      "Niddah 40b:2",
+      "Rashi on Niddah 40b:2:1",
+      "Rashi on Niddah 40b:2:2",
+      "Rashi on Niddah 40b:2:3",
+      "Rashi on Niddah 40b:2:4",
+      "Rashi on Niddah 40b:2:5",
+      "Rashi on Niddah 40b:2:6"
+    ],
+    "generatedAt": "2026-10-16T09:27:40.702Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 40b:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והיוצא</strong> - בשר עולה שיצא והכניסה והעלה:"
+  },
+  "Rashi on Niddah 40b:2:5": {
+    "dependsOn": [
+      "Niddah 40b:2",
+      "Rashi on Niddah 40b:2:4",
+      "Rashi on Niddah 40b:2:5",
+      "Rashi on Niddah 40b:2:6",
+      "Rashi on Niddah 40b:2:1",
+      "Rashi on Niddah 40b:2:2",
+      "Rashi on Niddah 40b:2:3",
+      "Rashi on Niddah 40b:3:1",
+      "Rashi on Niddah 40b:3:2",
+      "Rashi on Niddah 40b:3:3",
+      "Rashi on Niddah 40b:3:4",
+      "Rashi on Niddah 40a:1:1",
+      "Rashi on Niddah 40a:2:1",
+      "Zevachim 84a:1",
+      "Zevachim 84a:7",
+      "Zevachim 84a:8"
+    ],
+    "generatedAt": "2026-10-16T09:30:15.554Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 40b:2:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והנותר</strong> - בשר שנתותר חוץ לזמנו והקטירו:"
+  },
+  "Rashi on Niddah 40b:2:6": {
+    "dependsOn": [
+      "Niddah 40b:2",
+      "Rashi on Niddah 40b:2:1",
+      "Rashi on Niddah 40b:2:2",
+      "Rashi on Niddah 40b:2:3",
+      "Rashi on Niddah 40b:2:4",
+      "Rashi on Niddah 40b:2:5",
+      "Rashi on Niddah 40a:1:1",
+      "Rashi on Niddah 40a:2:1",
+      "Rashi on Niddah 40a:3:1",
+      "Rashi on Niddah 40b:1:1",
+      "Niddah 40b:1"
+    ],
+    "generatedAt": "2026-10-16T09:31:43.402Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 40b:2:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושנשחט</strong> - על מנת לאוכלו חוץ לזמנו דהוי פגול:"
+  },
+  "Rashi on Niddah 40b:3:1": {
+    "dependsOn": [
+      "Rashi on Niddah 40b:2:1",
+      "Rashi on Niddah 40b:3:2",
+      "Rashi on Niddah 40b:5:1",
+      "Niddah 40b:3",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Niddah 40a:2:1",
+      "Rashi on Niddah 40a:2:2",
+      "Rashi on Niddah 40a:3:1",
+      "Rashi on Niddah 2a:1:1",
+      "Rashi on Niddah 2a:1:2",
+      "Rashi on Niddah 2a:2:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:4:1",
+      "Rashi on Berakhot 2a:5:1",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 2b:3:1",
+      "Rashi on Berakhot 2a:11:1",
+      "Rashi on Berakhot 4b:1:1",
+      "Rashi on Berakhot 10b:1:1",
+      "Rashi on Berakhot 4b:3:1",
+      "Rashi on Berakhot 4b:4:1",
+      "Rashi on Berakhot 5a:1:1",
+      "Rashi on Berakhot 5a:2:1",
+      "Rashi on Berakhot 3a:1:1",
+      "Rashi on Berakhot 3a:2:1",
+      "Rashi on Berakhot 3a:3:1",
+      "Rashi on Berakhot 3a:4:1"
+    ],
+    "generatedAt": "2026-10-16T09:40:04.759Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 40b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושקבלו פסולין את דמו וזרקוהו</strong> - כגון בעל מום או שאר פסולין. ולהכי נקט קבלו פסולין ולא נקט ששחטוהו פסולין שהשחיטה כשרה בפסולין כדתנן <span class=\"parenthesized\">(זבחים דף לא:)</span> כל הפסולין ששחטו שחיטתן כשרה:"
+  },
+  "Rashi on Niddah 40b:3:2": {
+    "dependsOn": [
+      "Niddah 40b:3",
+      "Rashi on Niddah 40b:3:1",
+      "Rashi on Niddah 40b:3:2",
+      "Rashi on Niddah 40b:3:3",
+      "Rashi on Niddah 40b:3:4",
+      "Rashi on Niddah 40b:2:1",
+      "Rashi on Niddah 40b:2:2",
+      "Rashi on Niddah 40b:2:3",
+      "Rashi on Niddah 40b:2:4",
+      "Rashi on Niddah 40b:2:5",
+      "Rashi on Niddah 40b:2:6",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:3:2",
+      "Rashi on Berakhot 2a:4:1",
+      "Rashi on Berakhot 2a:5:1"
+    ],
+    "generatedAt": "2026-10-16T09:42:17.838Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 40b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והנתנין למעלה</strong> - מחוט הסיקרא דקי\"ל חטאת בהמה למעלה דכתיב בה קרנות ועולה למטה:"
+  },
+  "Rashi on Niddah 40b:3:3": {
+    "dependsOn": [
+      "Niddah 40b:3",
+      "Rashi on Niddah 40b:3:3",
+      "Rashi on Niddah 40b:3:1",
+      "Rashi on Niddah 40b:3:2",
+      "Rashi on Niddah 40b:3:4"
+    ],
+    "generatedAt": "2026-10-16T09:43:20.490Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 40b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הנתנין בפנים</strong> - על מזבח הפנימי כגון פר העלם דבר ופר כהן משיח:"
+  },
+  "Rashi on Niddah 40b:3:4": {
+    "dependsOn": [
+      "Niddah 40b:3",
+      "Rashi on Niddah 40b:3:1",
+      "Rashi on Niddah 40b:3:2",
+      "Rashi on Niddah 40b:3:3",
+      "Rashi on Niddah 40b:3:4",
+      "Rashi on Niddah 40b:2:1",
+      "Rashi on Niddah 40b:2:2",
+      "Rashi on Niddah 40b:2:3",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Niddah 40a:7:1",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 2b:3:1",
+      "Rashi on Berakhot 3a:1:1",
+      "Rashi on Berakhot 3a:3:1",
+      "Rashi on Berakhot 3a:4:1",
+      "Rashi on Berakhot 3a:5:1",
+      "Rashi on Berakhot 4b:1:1",
+      "Rashi on Berakhot 4b:2:1",
+      "Rashi on Berakhot 5a:1:1",
+      "Rashi on Berakhot 5a:2:1",
+      "Rashi on Berakhot 5a:3:1",
+      "Rashi on Berakhot 5b:1:1",
+      "Rashi on Berakhot 8a:1:1",
+      "Rashi on Berakhot 8b:1:1"
+    ],
+    "generatedAt": "2026-10-16T09:45:53.848Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 40b:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והחטאת ששחטו שלא לשמן</strong> - להכי נקט פסח והחטאת דקיימא לן <span class=\"parenthesized\">(זבחים דף ב.)</span> כל הזבחים שנזבחו שלא לשמן כשרין חוץ מפסח וחטאת:"
+  },
+  "Rashi on Niddah 40b:5:1": {
+    "dependsOn": [
+      "Niddah 40b:5",
+      "Rashi on Niddah 40b:5:1",
+      "Rashi on Niddah 40b:5:2",
+      "Rashi on Niddah 40b:5:3",
+      "Rashi on Niddah 40b:5:4",
+      "Niddah 40b:6",
+      "Niddah 41a:1",
+      "Niddah 41a:2",
+      "Rashi on Niddah 41a:1:1",
+      "Rashi on Niddah 41a:1:2",
+      "Rashi on Niddah 41a:1:3",
+      "Niddah 41a:7"
+    ],
+    "generatedAt": "2026-10-16T09:49:38.448Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 40b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרובע והנרבע מוקצה ונעבד</strong> - פסולין ליקרב כדיליף לקמן בשמעתין:"
+  },
+  "Rashi on Niddah 40b:5:2": {
+    "dependsOn": [
+      "Niddah 40b:5",
+      "Rashi on Niddah 40b:5:1",
+      "Rashi on Niddah 40b:5:2",
+      "Rashi on Niddah 40b:5:3",
+      "Rashi on Niddah 40b:5:4",
+      "Rashi on Niddah 40b:2:1",
+      "Rashi on Niddah 40b:2:2",
+      "Rashi on Niddah 40b:3:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:2:1"
+    ],
+    "generatedAt": "2026-10-16T09:51:27.236Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 40b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מוקצה</strong> - שיחדו לצורך תקרובת עבודת כוכבים:"
+  },
+  "Rashi on Niddah 40b:5:3": {
+    "dependsOn": [
+      "Rashi on Niddah 40b:5:1",
+      "Rashi on Niddah 40b:5:2",
+      "Rashi on Niddah 40b:5:3",
+      "Rashi on Niddah 40b:5:4",
+      "Niddah 40b:5",
+      "Rashi on Niddah 40b:2:1",
+      "Rashi on Niddah 40b:2:2",
+      "Rashi on Niddah 40b:3:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1"
+    ],
+    "generatedAt": "2026-10-16T09:53:44.764Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 40b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונעבד</strong> - שהשתחוה לו:"
+  },
+  "Rashi on Niddah 40b:5:4": {
+    "dependsOn": [
+      "Niddah 40b:5",
+      "Rashi on Niddah 40b:5:1",
+      "Rashi on Niddah 40b:5:2",
+      "Rashi on Niddah 40b:5:3",
+      "Rashi on Niddah 40b:5:4",
+      "Rashi on Niddah 40b:2:1",
+      "Rashi on Niddah 40b:2:2",
+      "Rashi on Niddah 40b:2:3",
+      "Rashi on Niddah 40b:3:1",
+      "Rashi on Niddah 40b:3:2",
+      "Rashi on Niddah 40a:1:1",
+      "Rashi on Niddah 40a:2:1",
+      "Rashi on Niddah 40a:3:1",
+      "Rashi on Niddah 40a:4:1",
+      "Rashi on Niddah 40a:5:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Niddah 2a:1:1",
+      "Rashi on Berakhot 2a:11:1",
+      "Rashi on Berakhot 2a:9:1",
+      "Rashi on Berakhot 2a:8:1",
+      "Rashi on Berakhot 2a:8:2",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 3a:1:1",
+      "Rashi on Berakhot 25a:1:1",
+      "Rashi on Berakhot 25b:1:1",
+      "Rashi on Berakhot 3a:3:1",
+      "Rashi on Berakhot 3b:1:1",
+      "Rashi on Berakhot 4b:1:1",
+      "Rashi on Berakhot 5a:1:1",
+      "Rashi on Berakhot 5a:2:1",
+      "Rashi on Berakhot 5a:3:1",
+      "Rashi on Berakhot 5a:4:1",
+      "Rashi on Berakhot 5a:5:1",
+      "Rashi on Berakhot 4a:1:1",
+      "Rashi on Berakhot 4a:2:1",
+      "Rashi on Berakhot 4a:3:1",
+      "Rashi on Berakhot 4a:4:1",
+      "Rashi on Berakhot 6a:1:1",
+      "Rashi on Berakhot 6a:2:1",
+      "Rashi on Berakhot 6b:1:1",
+      "Rashi on Berakhot 7a:1:1",
+      "Rashi on Berakhot 7b:1:1",
+      "Rashi on Berakhot 8a:1:1",
+      "Rashi on Berakhot 8a:2:1",
+      "Rashi on Berakhot 8b:1:1",
+      "Rashi on Berakhot 9a:1:1",
+      "Rashi on Berakhot 10a:1:1",
+      "Rashi on Berakhot 3b:2:1",
+      "Rashi on Berakhot 3b:3:1",
+      "Rashi on Berakhot 3b:4:1",
+      "Rashi on Berakhot 3b:5:1",
+      "Niddah 40b:1",
+      "Niddah 40b:4"
+    ],
+    "generatedAt": "2026-10-16T09:57:13.316Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 40b:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כלאים</strong> - פסולין לקרבן שנאמר <span class=\"parenthesized\">(ויקרא כ״ב:כ״ז)</span> שור או כשב פרט לכלאים:"
+  },
+  "Tosafot on Niddah 40b:1:1": {
+    "dependsOn": [
+      "Niddah 40b:1",
+      "Zevachim 84b:1",
+      "Zevachim 84b:2",
+      "Zevachim 84b:3",
+      "Zevachim 84b:4",
+      "Zevachim 84b:5",
+      "Zevachim 84b:6",
+      "Zevachim 84b:7",
+      "Zevachim 84b:8",
+      "Zevachim 84b:9",
+      "Zevachim 84b:10",
+      "Rashi on Zevachim 84b:4:1",
+      "Rashi on Zevachim 84b:9:1",
+      "Zevachim 51a:12",
+      "Zevachim 51a:13",
+      "Zevachim 51a:14",
+      "Zevachim 51a:9",
+      "Zevachim 51a:10",
+      "Zevachim 51a:11",
+      "Zevachim 68b:4",
+      "Zevachim 68b:5",
+      "Zevachim 68b:6",
+      "Zevachim 68b:7",
+      "Zevachim 68b:8",
+      "Zevachim 68b:9",
+      "Zevachim 68b:10",
+      "Zevachim 68b:11",
+      "Zevachim 68b:12",
+      "Zevachim 24b:10",
+      "Zevachim 24b:11",
+      "Zevachim 24b:12",
+      "Zevachim 24b:13",
+      "Zevachim 24b:14",
+      "Zevachim 24b:15",
+      "Zevachim 24b:16",
+      "Zevachim 24b:17",
+      "Tosafot on Niddah 40b:1:2",
+      "Tosafot on Niddah 40b:2:1",
+      "Tosafot on Niddah 40b:3:1"
+    ],
+    "generatedAt": "2026-10-16T09:19:35.363Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Niddah 40b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פרט לנשחטה בלילה</strong> - בפרק המזבח מקדש <span class=\"parenthesized\">(זבחים דף פד:)</span> מפרש טעמא אמאי מודה רבי יהודה בהנך דלא ירדו טפי מהני ג' וקאמר לן בדם כשר שכן לן באימורין כשר שהרי לן כשר בבשר לכתחלה דנאכל לשני ימים ולילה אחד יוצא כשר שהרי יוצא כשר בבמה וטמא דחזי לעבודת צבור חוץ לזמנו שהרי מרצה בפגולו חוץ למקומו איתקש לחוץ לזמנו קבלו פסולין וזרקו בהנך פסולים דחזו לעבודת צבור ואם תאמר נשחטה בלילה ויצא דמה נמי ליתכשרו דאין לילה ויוצא פסול בבמה כדאמר בפרק פרת חטאת <span class=\"parenthesized\">(זבחים דף קכ.)</span> וכן קבלו פסולין דלא מכשר אלא בהנך דחזו לעבודת צבור אבל זר לא דהא כשר בבמה וכן חוץ למקומו מה צריך לטעמא דאיתקש לחוץ לזמנו תיפוק ליה דכשר בבמה מיהו רש\"י פי' בהמזבח מקדש <span class=\"parenthesized\">(שם פד:)</span> דיוצא דכשר הוא דילפינן מבמה אבל הכשר דם דחמיר לא ילפינן מבמה אם לא נמצא לן הכשר בפנים אך קשה אמאי אצטריך למילף לן בדם מאימורין ואימורין מלן דבשר ופשיט מיניה באיזה מקומן <span class=\"parenthesized\">(שם דף נא)</span> דגמרי בנין אב מבנין אב לילף חד בנין אב לן בדם מלן דבשר וכ\"ת דלא בעי למילף דם מבשר שאינו קרב אלא ילפינן מאימורין דקרבי ואימורין מבשר משום דהוי בשר מבשר מכל מקום תימה דנילף לן דמה שנפסל בשקיעת החמה דאם עלו לא ירדו מאימורין שלנו בלא מזבח בשקיעת החמה דלא מיפסלי בשקיעת החמה דמצותן כל הלילה וכיון דלן דם בשקיעת החמה אע\"ג דמיפסל לא ירד מעתה גם לן בעמוד השחר לא ירד דאין חילוק ותדע דהא לן שתי לילות לא ירד אע\"ג דאין כיוצא בו כשר ואפילו בבשר על כן י\"ל דפסול דם לא ילפינן מאימורין שכשרים לכתחלה כל הלילה משום דאיכא תרתי חדא דהוי דם מבשר ועוד דהוי פסול מהכשרו בכך ולהכי נמי גבי דם לא ילפינן מבמה דאיכא נמי תרי שנויי פנים מחוץ ופסול מהכשרו בכך אבל יוצא דבשר לא חמיר וילפינן מבמה דמים הנתנין למטה שנתנן למעלה או איפכא וכן הנתנין בפנים שנתנן בחוץ כיון דכל אחד כשר בחבירו לא תרד דדם מדם בפנים ילפינן [פסול] מהכשרו ומיהו תימה יצא דמה חוץ לקלעים אמאי תרד לר\"י נילף יצא דם מאימורין שיצאו ואימורים שיצאו מבמה או מבשר שלמים שיצא חוץ לקלעים דכשר וכיון דיצא חוץ לקלעים לא ירד הוא הדין אפילו חוץ לחומה דאין חילוק כדפירשתי לעיל וא\"ת דבפרק חטאת העוף <span class=\"parenthesized\">(זבחים דף סח:)</span> גבי זר וסכין מטמאין בגדים בבית הבליעה פריך מאי שנא שמאל דהכשירו ביום הכפורים ולילה באברין ופדרים זר נמי נילף מבמה דתניא מנין ליוצא שהוא כשר שהרי כשר בבמה ומאי פריך הא דווקא בשר ילפינן מבמה לההוא תנא ולא דם כדפרישית ותו בשמאל ולילה דהוא עבודת דם היכי יליף מהכשרו בכך וי\"ל דההיא סוגיא כר\"ש דמכשיר אפילו נשחטה בלילה ויצא דמה ואפילו דם יליף מהכשרו מבמה ומבשר ונשפך דמה לפי שכבר נעשה השחיטה בהכשר או גם הקבלה כמו שאפרש ותדע דההיא כרבי שמעון דבמשנה דהתם קאמר כל שפסולו בקדש אין מטמא בגדים בבית הבליעה וכל שאין פסולו בקדש מטמא ורבי שמעון נמי בשמעתין קאמר כל שפסולו בקדש אם עלו לא ירדו והכי פריך והתניא יוצא כשר שהרי כשר בבמה וכמו דיליף ר' יהודה אימורין מבמה ה\"נ לילף לר\"ש פסול דם מבמה ומיהו לר\"ת דגרסינן פ\"ב דזבחים <span class=\"parenthesized\">(דף כד:)</span> והתניא מלק בשמאל פסול ול\"ג זרק בשמאל דלא מצינו משנה זו בשום מקום ומשני פליגי בברייתא ור\"ש מכשיר ההיא דפ' חטאת העוף <span class=\"parenthesized\">(זבחים דף סח:)</span> לא אתיא כר\"ש דלדידיה מלק בשמאל כשר אלא תנא אחר הוא וסבר לה כר' שמעון ובמלק בשמאל לא סבר ליה כוותיה:"
+  },
+  "Tosafot on Niddah 40b:1:2": {
+    "dependsOn": [
+      "Niddah 40b:1",
+      "Tosafot on Zevachim 84a:6:1",
+      "Tosafot on Zevachim 84a:7:1",
+      "Tosafot on Niddah 40b:1:1",
+      "Tosafot on Niddah 40a:7:1",
+      "Tosafot on Niddah 40a:8:1",
+      "Steinsaltz on Niddah 40b:1:1",
+      "Steinsaltz In-Depth on Niddah 40b:1:1",
+      "Tosafot on Niddah 40b:2:1",
+      "Tosafot on Niddah 40b:2:2",
+      "Tosafot on Niddah 40b:3:1"
+    ],
+    "generatedAt": "2026-10-16T09:22:22.506Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Niddah 40b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושנשפך דמה</strong> - נראה דלרבי יהודה תרד אפילו נתקבלה ואח\"כ נשפך דומיא דיצא דמה דהוי אפילו נתקבל דאי ביצא קודם שנתקבל כגון שיצא מן הצואר לחוץ אם כן היינו נשפך דמה דאין כלי שרת מקדש אלא בפנים כדאמר בהמזבח מקדש <span class=\"parenthesized\">(שם פח.)</span>:"
+  },
+  "Tosafot on Niddah 40b:2:1": {
+    "dependsOn": [
+      "Niddah 40b:1",
+      "Niddah 40b:2",
+      "Tosafot on Niddah 40b:2:1",
+      "Tosafot on Zevachim 84a:8:1",
+      "Tosafot on Zevachim 84a:9:1",
+      "Tosafot on Zevachim 84a:10:1",
+      "Zevachim 84a:8",
+      "Tosafot on Niddah 40b:2:2",
+      "Rashi on Niddah 40b:2:1",
+      "Rashi on Niddah 40b:2:2",
+      "Zevachim 84b:1",
+      "Zevachim 85b:1",
+      "Zevachim 85b:2",
+      "Zevachim 85b:3",
+      "Zevachim 85b:4",
+      "Zevachim 83b:1",
+      "Zevachim 83a:2",
+      "Zevachim 83a:3",
+      "Zevachim 87a:1",
+      "Menachot 26b:1",
+      "Menachot 26b:2",
+      "Zevachim 77a:1",
+      "Zevachim 77a:2",
+      "Zevachim 77a:3",
+      "Zevachim 77a:4",
+      "Menachot 58a:1",
+      "Menachot 58a:2",
+      "Menachot 58a:3",
+      "Menachot 58b:1",
+      "Menachot 58b:4",
+      "Menachot 57b:1",
+      "Menachot 57a:1"
+    ],
+    "generatedAt": "2026-10-16T09:35:02.628Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Niddah 40b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלן</strong> - היינו לן דדם והנותר היינו לן דאימורין דאילו בשר אפילו אינו נותר ירד דכל שממנו לאשים הרי הוא בבל תקטירו:"
+  },
+  "Tosafot on Niddah 40b:2:2": {
+    "dependsOn": [
+      "Niddah 40b:1",
+      "Niddah 40b:2",
+      "Tosafot on Niddah 40b:2:1",
+      "Menachot 79a:11",
+      "Menachot 79a:12",
+      "Menachot 79a:13",
+      "Menachot 79a:14",
+      "Menachot 79a:15",
+      "Zevachim 84a:13",
+      "Zevachim 84b:1",
+      "Menachot 79a:8",
+      "Menachot 79a:9",
+      "Menachot 79a:10",
+      "Zevachim 84b:2",
+      "Zevachim 84b:3",
+      "Zevachim 84b:4",
+      "Zevachim 84b:5",
+      "Zevachim 84b:6",
+      "Zevachim 84b:7",
+      "Zevachim 84b:8",
+      "Menachot 78b:13",
+      "Menachot 78b:14",
+      "Menachot 78b:15",
+      "Menachot 79a:1",
+      "Menachot 79a:2",
+      "Menachot 79a:3",
+      "Menachot 79a:4",
+      "Menachot 79a:5"
+    ],
+    "generatedAt": "2026-10-16T09:37:31.706Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Niddah 40b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חוץ למקומו</strong> - ור' יהודה נמי לא פליג אלא בג' דלעיל וקשה דבפרק התודה <span class=\"parenthesized\">(מנחות דף עט.)</span> אמרינן חטאת ששחטה חוץ למקומה רבא אומר תרד רבה אומר לא תרד והדר ביה רבה לגבי רבא והתם אתי כרבי יהודה דקתני התם אמר רבי יהודה לא נחלקו על חוץ לזמנו שקדש הלחם על מה נחלקו על חוץ למקומו רבי אליעזר אומר קדש רבי יהושע אומר לא קדש והדר ביה רבי אליעזר לגבי רבי יהושע ויש לומר דהתם רבי יהודה אליבא דרבי יהושע קאמר דלא מקיש חוץ למקומו לחוץ לזמנו אבל רבי יהודה גופיה מקיש דקאמר בהמזבח מקדש <span class=\"parenthesized\">(זבחים פד:)</span> טעמא דחוץ למקומו דלא ירדו משום דאיתקש לחוץ לזמנו:"
+  },
+  "Tosafot on Niddah 40b:3:1": {
+    "dependsOn": [
+      "Tosafot on Niddah 40a:7:1",
+      "Tosafot on Niddah 40b:1:1",
+      "Tosafot on Niddah 40b:2:1",
+      "Niddah 40b:1",
+      "Niddah 40b:2",
+      "Niddah 40b:3",
+      "Niddah 40b:4"
+    ],
+    "generatedAt": "2026-10-16T09:48:02.569Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Niddah 40b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והנתנין למעלה שנתנן למטה</strong> - אפילו רבי יהודה מודה דלא ירדו דדם מדם בפנים יליף שפיר מהכשרו בכך כדפירשתי לעיל והכי נמי אמר בפ\"ב דזבחים <span class=\"parenthesized\">(דף כז:)</span> קתני מיהא הנתנין למעלה שנתנן למטה ולא פליג רבי יהודה וקשה דאמר בריש מעילה קדשי קדשים ששחטן בדרום מהו שירדו אליבא דר' יהודה פשיטא דירדו כי תבעי לך אליבא דר' שמעון מאי רב יוסף אמר לא ירדו רבה אמר עד כאן לא קאמר ר\"ש התם דלא ירדו אלא בנתנין למטה שנתנן למעלה למעלה שנתנן למטה ולעולם ששחטן וקבל דמן בצפון אבל הכא ששחטן בדרום אף ר\"ש מודה דירדו דכחנקינהו דמי והשתא אמאי נקט הנתנין למעלה שנתנן למטה טפי מאחריני אדרבה הוה ליה למנקט נשחטין בלילה ונשפך דמה אע\"ג דפליג אדרבי יהודה ואמר דלא ירדו היינו משום ששחטן בצפון אלא יש לומר דנקט הנתנים למעלה שנתנן למטה משום דמינה מייתי רב יוסף דנתנין למעלה משמע ליה דהוי בכלל עולת העוף שדינה למעלה ומלקה ומצה דמה למטה וכי היכי דהתם לא ירדו אע\"פ שהמליקה לא היתה במקומה הכי נמי קדשי קדשים שנשחטו בדרום ורבה אומר הנתנין למעלה שנתנן למטה איירי דווקא בזבחים ולכך לא ירדו ששחיטה וקבלה היתה כדינה בצפון אבל שחיטת דרום וכן מליקת עולת העוף למטה לא אם כן לרב יוסף דהוי בכלל הנתנים למעלה עולת העוף פליג רבי יהודה כדאמר התם דבשחיטת דרום אליבא דרבי יהודה פשיטא דירדו ובפ\"ב דזבחים <span class=\"parenthesized\">(דף כז:)</span> אמר דלא פליג רבי יהודה וי\"ל דכיון דבזבחים מיהא מודה רבי יהודה דלא ירדו שייך שפיר למימר לא פליג רבי יהודה כמו בקבלו פסולין וזרקו דקאמר נמי התם דלא פליג אע\"ג דרבי יהודה לא מודה אלא בהנך דחזו לעבודת צבור ור\"ש אפילו בהנך דלא חזו לעבודת צבור קאמר דלא ירדו דלא גרע מנשפך דמה שלא נזרק כלל דלא ירדו לר\"ש ומיהו אין ראיה דמצינן למימר דאף לרבי שמעון בהנך דלא חזו לעבודת צבור כגון זר אם קיבל דם ירדו כיון דלא מצינו בעלמא הכשר בפנים ומבמה לא ילפינן עבודת דם אף לר\"ש ונשחטה בלילה דלא ירד לרבי שמעון היינו משום דילפינן מאימורין ונשפך הדם נמי דלא ירד לרבי שמעון דווקא שנשפך אחר שכבר נתקבל אבל נשפך מן הצואר ירד דמשום שחיטה לבדה שנעשית בהכשר לא מיקרי פסולו בקדש וקבלו פסולין בהנך דווקא דחזו לעבודת ציבור אף לר\"ש ולא הוי פירוש קבלו או זרקו דאם כן פליג אר' יהודה דהא לרבי שמעון אפילו זרקו הנך דלא חזו לעבודת צבור לא ירדו דלא גרע מנשפך אלא פי' קבלו וזרקו אותו דם עצמו מכל מקום בלא ראיה יש לומר דשייך שפיר דלא פליג רבי יהודה כיון דמודה בזבחים וכן משמע בריש מעילה דמשום שחיטה לבדה שנעשה בהכשר לא חשיב פסולו בקדש אף לרבי שמעון דפריך רב יוסף לרבה מדתניא בפרק דם חטאת העוף בזבחים <span class=\"parenthesized\">(דף סו:)</span> וכולן אין מטמאין בבית הבליעה וקתני לעיל עולת העוף שעשאה כמעשה החטאת ותנן התם <span class=\"parenthesized\">(דף סח:)</span> כל שפסולו בקדש אינו מטמא וה\"ה דלא ירדו ומאי פריך הא התם מוכח בזבחים דעולת העוף שעשאה כמעשה חטאת היינו שהמיצוי עשה למטה אבל המליקה היתה במקומה אלא ודאי רבה דאמר ירדו אפילו שחט בצפון וקבל בדרום דמשום שחיטה גרידא לא מקרי פסולו בקדש אף לרבי שמעון ומיהו יש לדחות דבשחט בצפון מודה רבה דלא ירדו ופריך ליה רב יוסף משום שהמיצוי הוי כמו השחיטה שממצה ומוציא דם מן העוף כמו שעושה בשחיטה ואע\"פ שמלק למעלה כיון שמיצה למטה הוי כשחט בדרום:"
+  }
+}
