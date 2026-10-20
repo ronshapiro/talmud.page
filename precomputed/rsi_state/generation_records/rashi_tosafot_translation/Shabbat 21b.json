@@ -1,0 +1,917 @@
+{
+  "Rashi on Shabbat 21b:10:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 21b:10:1",
+      "Shabbat 21b:10",
+      "Rashi on Shabbat 21b:10:2",
+      "Rashi on Shabbat 21b:10:3",
+      "Rashi on Shabbat 21b:8:1",
+      "Rashi on Shabbat 21b:9:1",
+      "Rashi on Shabbat 21b:2:1",
+      "Rashi on Shabbat 21a:1:1",
+      "Rashi on Shabbat 21a:2:1",
+      "Tosafot on Shabbat 21b:10:1",
+      "Rashi on Shabbat 22a:1:1",
+      "Rashi on Shabbat 22b:1:1",
+      "Rashi on Shabbat 23a:1:1"
+    ],
+    "generatedAt": "2026-10-15T16:56:39.854Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 21b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי חנוכה</strong> - על איזה נס קבעוה:"
+  },
+  "Rashi on Shabbat 21b:10:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 21b:10:2",
+      "Shabbat 21b:10",
+      "Rashi on Shabbat 21b:10:1",
+      "Rashi on Shabbat 21b:10:3"
+    ],
+    "generatedAt": "2026-10-15T16:57:37.072Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 21b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בחותמו</strong> - בהצנע וחתום בטבעתו והכיר שלא נגעו בו:"
+  },
+  "Rashi on Shabbat 21b:10:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 21b:10:3",
+      "Rashi on Shabbat 21b:10:1",
+      "Rashi on Shabbat 21b:10:2",
+      "Shabbat 21b:10",
+      "Rashi on Shabbat 21a:10:1",
+      "Rashi on Shabbat 21a:11:1",
+      "Rashi on Shabbat 21a:12:1",
+      "Rashi on Shabbat 21b:8:1",
+      "Rashi on Shabbat 21b:8:2",
+      "Rashi on Shabbat 21b:8:3",
+      "Rashi on Shabbat 21b:8:4",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 11a:1:1",
+      "Rashi on Berakhot 12a:1:1",
+      "Rashi on Shabbat 24a:1:1",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 3a:1:1",
+      "Rashi on Shabbat 22a:1:1",
+      "Rashi on Shabbat 22b:1:1",
+      "Rashi on Shabbat 23a:1:1",
+      "Tosafot on Shabbat 21b:3:1",
+      "Tosafot on Shabbat 21b:10:1",
+      "Rashi on Shabbat 24b:5:1",
+      "Rashi on Shabbat 24b:6:1",
+      "Rashi on Shabbat 24b:7:1"
+    ],
+    "generatedAt": "2026-10-15T17:01:16.930Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 21b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג ועשאום ימים טובים בהלל והודאה</strong> - לא שאסורין במלאכה שלא נקבעו אלא לקרות הלל ולומר על הנסים בהודאה:"
+  },
+  "Rashi on Shabbat 21b:11:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 21b:11:1",
+      "Shabbat 21b:11",
+      "Rashi on Shabbat 21b:11:2",
+      "Rashi on Shabbat 21b:11:3",
+      "Rashi on Shabbat 20b:2:1",
+      "Rashi on Shabbat 20b:5:1",
+      "Rashi on Shabbat 20b:7:1",
+      "Rashi on Shabbat 21a:1:1",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Berakhot 2a:1:1",
+      "Bava Kamma 62b:14",
+      "Rashi on Bava Kamma 62b:14:1",
+      "Rashi on Bava Kamma 62b:14:2",
+      "Rashi on Shabbat 21b:8:1",
+      "Rashi on Shabbat 21b:8:2",
+      "Rashi on Shabbat 21b:8:3",
+      "Rashi on Shabbat 21b:8:4",
+      "Rashi on Berakhot 40a:7:1",
+      "Rashi on Berakhot 44b:3:1",
+      "Rashi on Berakhot 51a:8:1",
+      "Rashi on Genesis 1:1:1",
+      "Rashi on Shabbat 2a:2:1",
+      "Rashi on Shabbat 2b:1:1",
+      "Rashi on Shabbat 3a:1:1",
+      "Rashi on Shabbat 3a:2:1",
+      "Rashi on Shabbat 3a:3:1",
+      "Rashi on Shabbat 3a:4:1",
+      "Rashi on Shabbat 3b:1:1",
+      "Rashi on Shabbat 4a:1:1",
+      "Rashi on Shabbat 4a:2:1",
+      "Rashi on Shabbat 4b:1:1",
+      "Rashi on Shabbat 5a:1:1",
+      "Rashi on Shabbat 6a:1:1",
+      "Rashi on Shabbat 8a:1:1",
+      "Rashi on Shabbat 11a:1:1"
+    ],
+    "generatedAt": "2026-10-15T17:07:38.523Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 21b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גץ</strong> - ניצוץ אישטינציל\"ש:"
+  },
+  "Rashi on Shabbat 21b:11:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 21b:11:1",
+      "Rashi on Shabbat 21b:11:2",
+      "Rashi on Shabbat 21b:11:3",
+      "Rashi on Bava Kamma 62b:7:1",
+      "Rashi on Bava Kamma 62b:8:1",
+      "Rashi on Bava Kamma 62b:9:1",
+      "Steinsaltz on Shabbat 21b:11",
+      "Shabbat 21b:11",
+      "Rashi on Shabbat 102b:7:1",
+      "Rashi on Sanhedrin 96b:1:1",
+      "Rashi on Avodah Zarah 16a:1:1"
+    ],
+    "generatedAt": "2026-10-15T17:08:45.843Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 21b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פטיש</strong> - קורנס גדול של נפחים:"
+  },
+  "Rashi on Shabbat 21b:11:3": {
+    "dependsOn": [
+      "Shabbat 21b:11",
+      "Rashi on Shabbat 21b:11:1",
+      "Rashi on Shabbat 21b:11:2",
+      "Rashi on Shabbat 21b:11:3",
+      "Bava Kamma 62b",
+      "Rashi on Bava Kamma 62b",
+      "Rashi on Shabbat 21b:12:1",
+      "Rashi on Shabbat 21b:12:2"
+    ],
+    "generatedAt": "2026-10-15T17:09:42.966Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 21b:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעל גמל חייב</strong> - שלא היה לו להגדיל בחבילתו שתכנס לחנות:"
+  },
+  "Rashi on Shabbat 21b:12:1": {
+    "dependsOn": [
+      "Shabbat 21b:11",
+      "Shabbat 21b:12",
+      "Rashi on Shabbat 21b:12:1",
+      "Rashi on Shabbat 21b:12:2",
+      "Rashi on Shabbat 21b:11:1",
+      "Rashi on Shabbat 21b:11:2",
+      "Rashi on Shabbat 21b:11:3",
+      "Rashi on Bava Kamma 62b:15:1",
+      "Rashi on Bava Kamma 62b:16:1"
+    ],
+    "generatedAt": "2026-10-15T17:10:58.519Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 21b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בנר חנוכה פטור</strong> - חנוני שברשות פירסום מצוה הניחה שם:"
+  },
+  "Rashi on Shabbat 21b:12:2": {
+    "dependsOn": [
+      "Shabbat 21b:12",
+      "Rashi on Shabbat 21b:12:1",
+      "Rashi on Shabbat 21b:12:2",
+      "Rashi on Shabbat 21b:8:1",
+      "Rashi on Shabbat 21b:8:2",
+      "Rashi on Shabbat 21b:9:1",
+      "Rashi on Shabbat 21b:11:1",
+      "Rashi on Shabbat 21a:1:1",
+      "Rashi on Shabbat 21a:2:1",
+      "Rashi on Shabbat 21a:3:1",
+      "Rashi on Shabbat 21b:1:1",
+      "Rashi on Shabbat 21b:2:1",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Shabbat 2a:2:1",
+      "Rashi on Shabbat 3a:1:1",
+      "Rashi on Shabbat 3a:1:2",
+      "Rashi on Shabbat 3b:1:1",
+      "Rashi on Shabbat 4a:1:1",
+      "Rashi on Shabbat 5a:1:1",
+      "Rashi on Shabbat 2b:1:1",
+      "Rashi on Shabbat 2b:2:1",
+      "Rashi on Shabbat 2b:3:1",
+      "Rashi on Shabbat 2b:4:1",
+      "Rashi on Shabbat 2b:5:1",
+      "Rashi on Shabbat 21b:1:2",
+      "Rashi on Shabbat 21b:3:1",
+      "Rashi on Shabbat 21b:4:1",
+      "Rashi on Shabbat 21b:6:1",
+      "Rashi on Shabbat 21b:11:2",
+      "Rashi on Shabbat 21b:11:3",
+      "Rashi on Shabbat 6a:1:1",
+      "Rashi on Shabbat 6b:1:1",
+      "Rashi on Shabbat 9a:1:1",
+      "Rashi on Shabbat 11b:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1"
+    ],
+    "generatedAt": "2026-10-15T17:13:38.932Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 21b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זאת אומרת</strong> - הא דקתני בנר חנוכה פטור:"
+  },
+  "Rashi on Shabbat 21b:1:1": {
+    "dependsOn": [
+      "Shabbat 21b:1",
+      "Rashi on Shabbat 21b:1:1",
+      "Rashi on Shabbat 21b:1:2",
+      "Shabbat 21a:13",
+      "Shabbat 21a:14",
+      "Rashi on Shabbat 21b:2:1",
+      "Rashi on Shabbat 21b:2:2",
+      "Rashi on Shabbat 21b:2:3",
+      "Rashi on Shabbat 21b:3:1",
+      "Tosafot on Shabbat 21b:3:1",
+      "Tosafot on Shabbat 21b:5:1"
+    ],
+    "generatedAt": "2026-10-15T15:59:29.139Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 21b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין זקוק לה</strong> - הלכך בחול שרי:"
+  },
+  "Rashi on Shabbat 21b:1:2": {
+    "dependsOn": [
+      "Shabbat 21b:1",
+      "Rashi on Shabbat 21b:1:1",
+      "Rashi on Shabbat 21b:1:2",
+      "Rashi on Shabbat 21a:14:1",
+      "Rashi on Shabbat 21b:2:1",
+      "Rashi on Shabbat 21b:2:2",
+      "Rashi on Shabbat 21b:2:3",
+      "Rashi on Shabbat 21b:3:1"
+    ],
+    "generatedAt": "2026-10-15T16:00:35.953Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 21b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואסור להשתמש לאורה</strong> - שיהא ניכר שהוא נר מצוה וליכא למיחש להטייה:"
+  },
+  "Rashi on Shabbat 21b:2:1": {
+    "dependsOn": [
+      "Shabbat 21b:2",
+      "Rashi on Shabbat 21b:2:1",
+      "Rashi on Shabbat 21b:2:2",
+      "Rashi on Shabbat 21b:2:3"
+    ],
+    "generatedAt": "2026-10-15T16:03:54.059Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 21b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא קבלה</strong> - שלא חשבו לסמוך על דבריו:"
+  },
+  "Rashi on Shabbat 21b:2:2": {
+    "dependsOn": [
+      "Shabbat 21b:2",
+      "Rashi on Shabbat 21b:2:1",
+      "Rashi on Shabbat 21b:2:2",
+      "Rashi on Shabbat 21b:2:3",
+      "Jastrow on Shabbat 21b:2:1",
+      "Jastrow on Shabbat 21b:2:2",
+      "Jastrow on Shabbat 21b:2:3"
+    ],
+    "generatedAt": "2026-10-15T16:04:55.155Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 21b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי זכאי</strong> - אילו הייתי זוכה ללומדה הייתי גורסה כששמעתיה ראשון:"
+  },
+  "Rashi on Shabbat 21b:2:3": {
+    "dependsOn": [
+      "Shabbat 21b:2",
+      "Rashi on Shabbat 21b:2:1",
+      "Rashi on Shabbat 21b:2:2",
+      "Rashi on Shabbat 21b:2:3"
+    ],
+    "generatedAt": "2026-10-15T16:06:47.105Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 21b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גירסא דינקותא</strong> - מתקיים יותר משל זקנה:"
+  },
+  "Rashi on Shabbat 21b:3:1": {
+    "dependsOn": [
+      "Shabbat 21b:3",
+      "Rashi on Shabbat 21b:1:1",
+      "Rashi on Shabbat 21b:1:2",
+      "Rashi on Shabbat 21a:10:1",
+      "Rashi on Shabbat 21a:11:1"
+    ],
+    "generatedAt": "2026-10-15T16:07:47.170Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 21b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשיעורה</strong> - שיהא בה שמן כשיעור הזה ומיהו אם כבתה אין זקוק לה:"
+  },
+  "Rashi on Shabbat 21b:4:1": {
+    "dependsOn": [
+      "Shabbat 21b:4",
+      "Rashi on Shabbat 21b:4:1",
+      "Rashba on Shabbat 21b:4:1",
+      "Steinsaltz on Shabbat 21b:4:1",
+      "Jastrow on Shabbat 21b:4:1",
+      "Rashi on Shabbat 21b:3:1",
+      "Rashi on Shabbat 21b:5:1",
+      "Rashi on Shabbat 21b:1:1",
+      "Rashi on Shabbat 21b:1:2",
+      "Rashi on Shabbat 21b:2:1",
+      "Rashi on Shabbat 21a:12:1",
+      "Rashi on Shabbat 21a:13:1"
+    ],
+    "generatedAt": "2026-10-15T16:16:33.677Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 21b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רגלא דתרמודאי</strong> - שם אומה מלקטי עצים דקים ומתעכבין בשוק עד שהולכים בני השוק לבתיהם משחשכה ומבעירים בבתיהם אור וכשצריכין לעצים יוצאים וקונין מהן:"
+  },
+  "Rashi on Shabbat 21b:5:1": {
+    "dependsOn": [
+      "Shabbat 21b:5",
+      "Rashi on Shabbat 21b:5:1",
+      "Rashi on Shabbat 21b:5:2",
+      "Rashi on Shabbat 21b:3:1",
+      "Rashi on Shabbat 21b:4:1",
+      "Rashi on Shabbat 21b:8:1"
+    ],
+    "generatedAt": "2026-10-15T16:17:23.903Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 21b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נר איש וביתו</strong> - נר אחד בכל לילה ואיש וכל בני ביתו סגי להו בנר אחד:"
+  },
+  "Rashi on Shabbat 21b:5:2": {
+    "dependsOn": [
+      "Shabbat 21b:5",
+      "Rashi on Shabbat 21b:5:1",
+      "Rashi on Shabbat 21b:5:2",
+      "Rashi on Shabbat 21b:6:1",
+      "Rashi on Shabbat 21b:6:2"
+    ],
+    "generatedAt": "2026-10-15T16:18:20.298Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 21b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והמהדרין</strong> - אחר המצות עושין נר אחד בכל לילה לכל אחד ואחד מבני הבית:"
+  },
+  "Rashi on Shabbat 21b:6:1": {
+    "dependsOn": [
+      "Shabbat 21b:6",
+      "Rashi on Shabbat 21b:6:1",
+      "Rashi on Shabbat 21b:6:2",
+      "Rashi on Shabbat 21b:6:3",
+      "Rashi on Shabbat 21b:6:4"
+    ],
+    "generatedAt": "2026-10-15T16:21:16.635Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 21b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כנגד ימים הנכנסים</strong> - העתידים לבא:"
+  },
+  "Rashi on Shabbat 21b:6:2": {
+    "dependsOn": [
+      "Shabbat 21b:6",
+      "Rashi on Shabbat 21b:6:1",
+      "Rashi on Shabbat 21b:6:2",
+      "Rashi on Shabbat 21b:6:3",
+      "Rashi on Shabbat 21b:6:4",
+      "Rashi on Shabbat 21b:5:1",
+      "Rashi on Shabbat 21b:5:2",
+      "Rashi on Shabbat 21b:8:1",
+      "Rashi on Shabbat 21b:8:2",
+      "Rashi on Shabbat 21a:1:1",
+      "Rashi on Shabbat 21a:2:1",
+      "Rashi on Shabbat 21a:3:1",
+      "Rashi on Shabbat 20a:1:1",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Shabbat 2a:2:1"
+    ],
+    "generatedAt": "2026-10-15T16:22:35.130Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 21b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ימים היוצאין</strong> - שיצאו כבר וזה שהוא עומד בו נמנה עם היוצאין:"
+  },
+  "Rashi on Shabbat 21b:6:3": {
+    "dependsOn": [
+      "Shabbat 21b:6",
+      "Rashi on Shabbat 21b:6:1",
+      "Rashi on Shabbat 21b:6:2",
+      "Rashi on Shabbat 21b:6:3",
+      "Rashi on Shabbat 21b:6:4"
+    ],
+    "generatedAt": "2026-10-15T16:23:29.738Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 21b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פרי החג</strong> - מתמעטים והולכים בקרבנות דפרשת פנחס:"
+  },
+  "Rashi on Shabbat 21b:6:4": {
+    "dependsOn": [
+      "Shabbat 21b:6",
+      "Rashi on Shabbat 21b:6:1",
+      "Rashi on Shabbat 21b:6:2",
+      "Rashi on Shabbat 21b:6:3",
+      "Rashi on Shabbat 21b:6:4",
+      "Rashi on Shabbat 21a:2:1",
+      "Rashi on Shabbat 21a:3:1",
+      "Rashi on Shabbat 20b:6:1",
+      "Rashi on Shabbat 22a:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3",
+      "Menachot 99a:1",
+      "Menachot 99a:2",
+      "Menachot 99a:3",
+      "Menachot 99a:10",
+      "Menachot 99a:11",
+      "Menachot 99a:12",
+      "Menachot 99a:13",
+      "Rashi on Menachot 99a:10:1",
+      "Rashi on Menachot 99a:11:1",
+      "Rashi on Megillah 26a:1:1",
+      "Rashi on Megillah 26a:2:1",
+      "Rashi on Megillah 26a:3:1",
+      "Rashi on Berakhot 15a:2:1",
+      "Rashi on Berakhot 21a:1:1",
+      "Rashi on Berakhot 35a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:4:1",
+      "Rashi on Berakhot 2a:5:1",
+      "Rashi on Berakhot 2a:6:1",
+      "Rashi on Berakhot 2a:7:1",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 4b:1:1",
+      "Rashi on Berakhot 4b:2:1",
+      "Rashi on Berakhot 5a:1:1",
+      "Rashi on Shabbat 22b:1:1",
+      "Rashi on Shabbat 23a:1:1",
+      "Rashi on Shabbat 23b:1:1"
+    ],
+    "generatedAt": "2026-10-15T16:27:33.889Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 21b:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעלין בקדש ואין מורידין</strong> - מקרא ילפינן לה במנחות בפרק שתי הלחם <span class=\"parenthesized\">(מנחות דף צט.)</span>:"
+  },
+  "Rashi on Shabbat 21b:8:1": {
+    "dependsOn": [
+      "Shabbat 21b:8",
+      "Rashi on Shabbat 21b:8:1",
+      "Rashi on Shabbat 21b:8:2",
+      "Rashi on Shabbat 21b:8:3",
+      "Rashi on Shabbat 21b:8:4"
+    ],
+    "generatedAt": "2026-10-15T16:40:26.825Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 21b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מבחוץ</strong> - משום פרסומי ניסא ולא ברה\"ר אלא בחצרו שבתיהן היו פתוחין לחצר:"
+  },
+  "Rashi on Shabbat 21b:8:2": {
+    "dependsOn": [
+      "Shabbat 21b:8",
+      "Rashi on Shabbat 21b:8:1",
+      "Rashi on Shabbat 21b:8:2",
+      "Rashi on Shabbat 21b:8:3",
+      "Rashi on Shabbat 21a:1:1",
+      "Rashi on Shabbat 21b:4:1",
+      "Rashi on Shabbat 21b:5:1"
+    ],
+    "generatedAt": "2026-10-15T16:28:26.707Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 21b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם היה דר בעלייה</strong> - שאין לו מקום בחצרו להניחה שם:"
+  },
+  "Rashi on Shabbat 21b:8:3": {
+    "dependsOn": [
+      "Shabbat 21b:8",
+      "Rashi on Shabbat 21b:8:1",
+      "Rashi on Shabbat 21b:8:2",
+      "Rashi on Shabbat 21b:8:3",
+      "Rashi on Shabbat 21b:8:4",
+      "Rashi on Shabbat 21b:1:1",
+      "Rashi on Shabbat 21b:1:2",
+      "Rashi on Shabbat 21b:6:1",
+      "Rashi on Shabbat 21a:2:1",
+      "Rashi on Shabbat 21a:3:1",
+      "Rashi on Shabbat 21a:5:1",
+      "Rashi on Shabbat 20a:1:1",
+      "Rashi on Shabbat 20b:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:9:1",
+      "Rashi on Berakhot 2a:11:1",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 2b:4:1",
+      "Rashi on Berakhot 3a:1:1"
+    ],
+    "generatedAt": "2026-10-15T16:30:20.667Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 21b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מניחה</strong> - מבפנים כנגד חלון הסמוך לרה\"ר:"
+  },
+  "Rashi on Shabbat 21b:8:4": {
+    "dependsOn": [
+      "Shabbat 21b:8",
+      "Rashi on Shabbat 21b:8:4",
+      "Rashi on Shabbat 21b:8:1",
+      "Rashi on Shabbat 21b:8:2",
+      "Rashi on Shabbat 21b:8:3",
+      "Gittin 17a:2",
+      "Gittin 17a:3",
+      "Rashi on Gittin 17a:3:1",
+      "Rashi on Gittin 17a:3:2",
+      "Gittin 17a:4",
+      "Gittin 17a:5",
+      "Gittin 17a:6",
+      "Gittin 16b:17",
+      "Gittin 16b:18",
+      "Gittin 17a:1",
+      "Rashi on Gittin 17a:1:1",
+      "Rashi on Gittin 17a:1:2",
+      "Rashi on Shabbat 21b:3:1",
+      "Rashi on Shabbat 21b:4:1",
+      "Rashi on Shabbat 21b:5:1",
+      "Rashi on Shabbat 21b:5:2",
+      "Rashi on Shabbat 21a:1:1",
+      "Rashi on Shabbat 21a:2:1",
+      "Rashi on Shabbat 22a:1:1",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Shabbat 2a:2:1",
+      "Rashi on Shabbat 2a:3:1",
+      "Rashi on Shabbat 2b:1:1",
+      "Steinsaltz on Shabbat 21b:8:1",
+      "Tosafot on Shabbat 21b:8:1",
+      "Tosafot on Shabbat 21b:8:2",
+      "Rashi on Shabbat 3a:1:1",
+      "Rashi on Shabbat 3a:1:2",
+      "Rashi on Shabbat 3b:1:1",
+      "Rashi on Shabbat 4a:1:1",
+      "Rashi on Shabbat 5a:1:1",
+      "Rashi on Shabbat 6a:1:1"
+    ],
+    "generatedAt": "2026-10-15T16:36:43.106Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 21b:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הסכנה</strong> - שהיה להם לפרסיים חוק ביום אידם שלא יבעירו נר אלא בבית ע\"ז שלהם כדאמרינן בגיטין <span class=\"parenthesized\">(פ\"ב דף יז:)</span>:"
+  },
+  "Rashi on Shabbat 21b:9:1": {
+    "dependsOn": [
+      "Shabbat 21b:9",
+      "Rashi on Shabbat 21b:9:1",
+      "Rashi on Shabbat 21b:9:2"
+    ],
+    "generatedAt": "2026-10-15T16:48:11.866Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 21b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נר אחרת</strong> - לעשות היכר לדבר:"
+  },
+  "Rashi on Shabbat 21b:9:2": {
+    "dependsOn": [
+      "Shabbat 21b:9",
+      "Rashi on Shabbat 21b:9:1",
+      "Rashi on Shabbat 21b:9:2",
+      "Rashi on Shabbat 21b:9:3",
+      "Rashi on Shabbat 21b:9:4",
+      "Rashi on Shabbat 21a:1:1",
+      "Rashi on Shabbat 21a:2:1",
+      "Rashi on Shabbat 21b:8:1",
+      "Rashi on Shabbat 21b:8:2",
+      "Rashi on Shabbat 21b:8:3",
+      "Rashi on Shabbat 21b:8:4",
+      "Rashi on Shabbat 20a:1:1",
+      "Rashi on Shabbat 20a:1:2",
+      "Rashi on Shabbat 20b:1:1",
+      "Rashi on Shabbat 20b:2:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2b:1:1",
+      "Rashi on Shabbat 3a:1:1",
+      "Rashi on Shabbat 4a:1:1",
+      "Rashi on Shabbat 5a:1:1",
+      "Rashi on Shabbat 22a:1:1",
+      "Rashi on Shabbat 22a:2:1",
+      "Rashi on Shabbat 22b:1:1",
+      "Rashi on Berakhot 2a:1:3",
+      "Rashi on Berakhot 2a:1:4",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Berakhot 2b:1:2",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 2b:3:1",
+      "Rashi on Berakhot 3a:1:1",
+      "Rashi on Shabbat 20a:2:1",
+      "Rashi on Shabbat 20a:3:1",
+      "Rashi on Shabbat 20a:4:1",
+      "Rashi on Shabbat 20a:5:1",
+      "Rashi on Berakhot 2a:5:1",
+      "Rashi on Berakhot 2b:4:1",
+      "Rashi on Berakhot 2b:5:1",
+      "Rashi on Shabbat 23b:1:1",
+      "Rashi on Shabbat 23b:2:1",
+      "Rashi on Shabbat 23b:3:1",
+      "Rashi on Shabbat 23b:4:1",
+      "Tosafot on Shabbat 21b:8:1",
+      "Shabbat 21b:1",
+      "Shabbat 21b:2"
+    ],
+    "generatedAt": "2026-10-15T16:51:06.279Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 21b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי איכא מדורה</strong> - אש לא צריך נר אחרת לפי שמשתמש לאור המדורה ויש היכרא שהנר של מצוה היא:"
+  },
+  "Rashi on Shabbat 21b:9:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 21b:9:3",
+      "Shabbat 21b:9",
+      "Rashi on Shabbat 21b:9:1",
+      "Rashi on Shabbat 21b:9:2",
+      "Rashi on Shabbat 21b:9:4",
+      "Rashi on Shabbat 21b:8:1",
+      "Rashi on Shabbat 21b:8:2",
+      "Rashi on Shabbat 21a:1:1",
+      "Rashi on Shabbat 21a:2:1",
+      "Rashi on Shabbat 22a:1:1"
+    ],
+    "generatedAt": "2026-10-15T16:52:12.930Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 21b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי אדם חשוב הוא</strong> - שאינו רגיל להשתמש לאור המדורה:"
+  },
+  "Rashi on Shabbat 21b:9:4": {
+    "dependsOn": [
+      "Shabbat 21b:9",
+      "Rashi on Shabbat 21b:9:1",
+      "Rashi on Shabbat 21b:9:2",
+      "Rashi on Shabbat 21b:9:3",
+      "Rashi on Shabbat 21b:9:4",
+      "Rashi on Shabbat 21b:8:1",
+      "Rashi on Shabbat 21b:8:2",
+      "Rashi on Shabbat 21b:8:3",
+      "Rashi on Shabbat 21b:8:4",
+      "Rashi on Shabbat 21a:1:1",
+      "Rashi on Shabbat 21a:2:1",
+      "Rashi on Shabbat 21a:3:1",
+      "Rashi on Shabbat 21a:3:2",
+      "Rashi on Shabbat 21a:4:1",
+      "Rashi on Shabbat 21a:4:2",
+      "Rashi on Shabbat 20a:1:1",
+      "Rashi on Shabbat 20b:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Steinsaltz on Shabbat 21b:9:1"
+    ],
+    "generatedAt": "2026-10-15T16:54:26.378Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 21b:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צריך נר אחרת</strong> - דאי לא לא הוי היכר:"
+  },
+  "Tosafot on Shabbat 21b:10:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 21b:10:1",
+      "Shabbat 21b:10",
+      "Tosafot on Shabbat 21b:3:1",
+      "Tosafot on Shabbat 21b:5:1",
+      "Tosafot on Shabbat 21b:8:1",
+      "Niddah 34a:1",
+      "Niddah 34a:2",
+      "Niddah 34a:3",
+      "Niddah 34a:4",
+      "Niddah 34a:5",
+      "Maharsha on Shabbat 21b:10:1",
+      "Maharsha on Shabbat 21b:10:2",
+      "Rashba on Shabbat 21b:10:1",
+      "Rashi on Shabbat 21b:10:1",
+      "Rashi on Shabbat 21b:10:2",
+      "Rashi on Shabbat 21b:10:3",
+      "Steinsaltz on Shabbat 21b:10:1"
+    ],
+    "generatedAt": "2026-10-15T17:04:15.806Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 21b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהיה מונח בחותמו של כ\"ג</strong> - אם כבר גזרו על הנכרים להיות כזבים <span class=\"parenthesized\">(נדה פ\"ד דף לד.)</span> צ\"ל שהיה מונח בחותם בקרקע שלא הסיטו הכלי:"
+  },
+  "Tosafot on Shabbat 21b:3:1": {
+    "dependsOn": [
+      "Shabbat 21b:3",
+      "Shabbat 21b:4"
+    ],
+    "generatedAt": "2026-10-15T16:13:22.715Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 21b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאי לא אדליק מדליק</strong> - אבל מכאן ואילך עבר הזמן אומר הר\"י פורת דיש ליזהר ולהדליק בלילה מיד שלא יאחר יותר מדאי ומ\"מ אם איחר ידליק מספק דהא משני שינויי אחרינא ולר\"י נראה דעתה אין לחוש מתי ידליק דאנו אין לנו היכרא אלא לבני הבית שהרי מדליקין מבפנים:"
+  },
+  "Tosafot on Shabbat 21b:5:1": {
+    "dependsOn": [
+      "Shabbat 21b:5",
+      "Tosafot on Shabbat 21b:3:1",
+      "Tosafot on Shabbat 21b:8:1",
+      "Tosafot on Shabbat 21b:8:2",
+      "Tosafot on Shabbat 21a:1:1",
+      "Tosafot on Shabbat 20a:1:1",
+      "Rashi on Shabbat 21b:5:1",
+      "Rashi on Shabbat 21b:5:2",
+      "Tosafot on Berakhot 2a:1:1",
+      "Tosafot on Berakhot 2a:2:1"
+    ],
+    "generatedAt": "2026-10-15T16:20:17.908Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 21b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והמהדרין מן המהדרין</strong> - נראה לר\"י דב\"ש וב\"ה לא קיימי אלא אנר איש וביתו שכן יש יותר הידור דאיכא היכרא כשמוסיף והולך או מחסר שהוא כנגד ימים הנכנסים או היוצאים אבל אם עושה נר לכל אחד אפי' יוסיף מכאן ואילך ליכא היכרא שיסברו שכך יש בני אדם בבית:"
+  },
+  "Tosafot on Shabbat 21b:8:1": {
+    "dependsOn": [
+      "Shabbat 21b:8",
+      "Shabbat 23a:1",
+      "Shabbat 23a:2",
+      "Shabbat 23a:3",
+      "Shabbat 23a:4",
+      "Shabbat 23b:1",
+      "Shabbat 23b:2",
+      "Shabbat 23b:3",
+      "Shabbat 23b:4",
+      "Shabbat 23a:5",
+      "Shabbat 23a:6",
+      "Shabbat 23a:7",
+      "Shabbat 23a:8",
+      "Shabbat 23a:9",
+      "Shabbat 23a:10",
+      "Shabbat 23a:11",
+      "Tosafot on Shabbat 21b:8:2",
+      "Rashi on Shabbat 21b:8:1",
+      "Rashi on Shabbat 21b:8:2",
+      "Rashi on Shabbat 21b:8:3",
+      "Rashi on Shabbat 21b:8:4",
+      "Shabbat 22a:1",
+      "Shabbat 22a:2",
+      "Rashba on Shabbat 21b:8:1",
+      "Rosh on Shabbat 2:3",
+      "Tosafot on Shabbat 21b:8:1",
+      "Rosh on Shabbat 2:4",
+      "Rosh on Shabbat 2:5",
+      "Tosafot on Shabbat 21b:3:1",
+      "Tosafot on Shabbat 21b:5:1",
+      "Tosafot on Shabbat 21b:10:1",
+      "Tosafot on Shabbat 22a:1:1",
+      "Tosafot on Shabbat 22a:2:1",
+      "Tosafot on Shabbat 2a:1:1",
+      "Tosafot on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-10-15T16:43:49.986Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 21b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מצוה להניחה על פתח ביתו מבחוץ</strong> - ומיירי דליכא חצר אלא בית עומד סמוך לרה\"ר אבל אם יש חצר לפני הבית מצוה להניח על פתח חצר דאמר לקמן חצר שיש לה ב' פתחים צריכה ב' נרות ואמרי' נמי נר שיש לה שני פיות עולה לשני בני אדם משמע לשני בתים ואם היו מניחים על פתחי בתיהם היה לזה מימין ולזה משמאל אבל אי מניחים על פתח החצר אתי שפיר:"
+  },
+  "Tosafot on Shabbat 21b:8:2": {
+    "dependsOn": [
+      "Shabbat 21b:8",
+      "Tosafot on Shabbat 21b:8:1",
+      "Tosafot on Shabbat 21b:3:1",
+      "Tosafot on Shabbat 21b:5:1",
+      "Tosafot on Shabbat 21b:10:1",
+      "Tosafot on Shabbat 21a:1:1",
+      "Tosafot on Shabbat 21a:2:1",
+      "Tosafot on Shabbat 22a:1:1",
+      "Shabbat 45a:13",
+      "Shabbat 45a:14",
+      "Gittin 17a:4",
+      "Gittin 17a:5",
+      "Gittin 17a:10",
+      "Gittin 17a:13",
+      "Gittin 16b:10",
+      "Gittin 16b:11",
+      "Gittin 16b:12",
+      "Gittin 17a:1",
+      "Gittin 17a:2",
+      "Gittin 17a:3",
+      "Gittin 16b:13",
+      "Gittin 16b:14",
+      "Gittin 16b:15",
+      "Gittin 16b:16",
+      "Shabbat 45a:5",
+      "Shabbat 45a:9",
+      "Shabbat 45a:10",
+      "Shabbat 45a:11",
+      "Shabbat 45a:12",
+      "Shabbat 45b:1",
+      "Shabbat 45b:2",
+      "Shabbat 44b:1",
+      "Shabbat 44b:2",
+      "Shabbat 44b:3",
+      "Shabbat 44b:4",
+      "Shabbat 44b:5",
+      "Shabbat 45a:1",
+      "Shabbat 45a:2",
+      "Shabbat 45a:3",
+      "Rashi on Shabbat 21b:8:1",
+      "Rashi on Shabbat 21b:8:2",
+      "Rashi on Shabbat 21b:8:3",
+      "Rashi on Shabbat 21b:8:4",
+      "Tosafot on Shabbat 2b:1:1",
+      "Tosafot on Shabbat 2a:1:1",
+      "Tosafot on Shabbat 3a:1:1",
+      "Tosafot on Shabbat 2b:2:1",
+      "Tosafot on Shabbat 12a:1:1",
+      "Tosafot on Shabbat 13a:1:1"
+    ],
+    "generatedAt": "2026-10-15T16:47:34.322Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 21b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובשעת הסכנה</strong> - נראה לר\"י דהיינו מכי אתו חברי לבבל כדאמר בפ' כירה <span class=\"parenthesized\">(לקמן שבת דף מה. ושם)</span> מהו לטלטל שרגא דחנוכתא מקמי חברי בשבתא וא\"ת דעל השלחן נמי יקחו אותו כדאמר בגיטין <span class=\"parenthesized\">(דף יז.)</span> רבה בר בר חנה חלש אתא חברא שקל שרגא מקמייהו וי\"ל דאין רגילות כ\"כ לחפש בבתים:"
+  }
+}

@@ -1,4 +1,22 @@
 {
+  "Rashi on Shabbat 4b:10:1": {
+    "dependsOn": [
+      "Shabbat 4b:10",
+      "Rashi on Shabbat 4b:10:1",
+      "Rashba on Shabbat 4b:10:1",
+      "Rashba on Shabbat 4b:10:2",
+      "Rashi on Shabbat 4b:6:1",
+      "Rashi on Shabbat 4b:6:2",
+      "Rashi on Shabbat 4b:8:1"
+    ],
+    "generatedAt": "2026-10-14T10:10:36.121Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 4b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחייב היה ר' שתים</strong> - דהוי כאלו נח ברה\"י וחזר ונעקר משם והכניס לר\"ה אלמא לא עקירה בעי ולא הנחה בעי ע\"ג מקו' ד':"
+  },
   "Rashi on Shabbat 4b:1:1": {
     "dependsOn": [
       "Shabbat 4b:1",
@@ -67,6 +85,95 @@
       "Rashi on Shabbat 4b:4:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">ודילמא הנחה הוא דלא בעיא</strong> - מדקתני ר\"ע מחייב אבל עקירה בעי מעל גבי מקום ד' מדלא קתני ר\"ע מחייב שתים אחת משום הוצאה ואחת משום הכנסה:"
+  },
+  "Rashi on Shabbat 4b:6:1": {
+    "dependsOn": [
+      "Shabbat 4b:6",
+      "Rashi on Shabbat 4b:6:1",
+      "Rashi on Shabbat 4b:6:2",
+      "Rashi on Shabbat 4b:1:1",
+      "Rashi on Shabbat 4b:1:2",
+      "Rashi on Shabbat 4b:4:1",
+      "Rashi on Shabbat 4b:8:1",
+      "Rashi on Shabbat 4b:10:1",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 3a:1:1",
+      "Rashi on Shabbat 5a:1:1",
+      "Rashi on Shabbat 8a:1:1",
+      "Rashi on Shabbat 8a:2:1",
+      "Rashi on Shabbat 8a:3:1",
+      "Shabbat 4b:5",
+      "Shabbat 4b:7",
+      "Shabbat 4b:8",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Tosafot on Shabbat 4b:6:1",
+      "Tosafot on Shabbat 4b:1:1",
+      "Rashi on Eruvin 86a:1",
+      "Rashi on Eruvin 86b:1",
+      "Rashi on Shabbat 6a:1",
+      "Rashba on Shabbat 4b:6:1"
+    ],
+    "generatedAt": "2026-10-14T09:50:39.261Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 4b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זרק</strong> - מר\"ה מתחלת ד' לסוף ד' ונח' ע\"ג זיז. כל עץ היוצא מן הכותל קרי זיז:"
+  },
+  "Rashi on Shabbat 4b:6:2": {
+    "dependsOn": [
+      "Shabbat 4b:6",
+      "Rashi on Shabbat 4b:6:1",
+      "Rashi on Shabbat 4b:6:2",
+      "Rashi on Shabbat 4b:1:1",
+      "Rashi on Shabbat 4b:1:2",
+      "Rashi on Shabbat 4b:4:1",
+      "Rashi on Shabbat 3a:1:1",
+      "Rashi on Shabbat 3b:1:1",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 5a:1:1",
+      "Tosafot on Shabbat 4b:6:1",
+      "Rashi on Shabbat 4b:8:1",
+      "Rashi on Shabbat 4b:10:1",
+      "Rashi on Shabbat 3a:2:1",
+      "Rashi on Shabbat 3a:3:1",
+      "Rashi on Shabbat 2b:1:1",
+      "Rashi on Shabbat 2b:6:1",
+      "Rashi on Shabbat 2b:7:1",
+      "Rashi on Shabbat 3b:4:1",
+      "Rashi on Shabbat 4b:5:1",
+      "Rashi on Shabbat 4a:1:1",
+      "Rashi on Shabbat 4a:2:1",
+      "Rashi on Shabbat 4a:3:1",
+      "Rabbeinu Chananel on Shabbat 4b:5:1",
+      "Rashba on Shabbat 4b:6:1",
+      "Tosafot on Shabbat 4b:5:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2b:1:1"
+    ],
+    "generatedAt": "2026-10-14T09:53:22.040Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 4b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי מחייב</strong> - אלמא דלא בעי הנחה על מקום ד':"
+  },
+  "Rashi on Shabbat 4b:8:1": {
+    "dependsOn": [
+      "Shabbat 4b:8",
+      "Shabbat 4b:6",
+      "Shabbat 4b:7"
+    ],
+    "generatedAt": "2026-10-14T10:08:08.841Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 4b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שדי נופו בתר עיקרו</strong> - והוי כמונח בר\"ה על מקום ד' דעיקר מחשב ליה לנוף:"
   },
   "Tosafot on Shabbat 4b:1:1": {
     "dependsOn": [
@@ -203,5 +310,103 @@
       "Tosafot on Shabbat 4b:5:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">אלא א\"ר יוסף כו'</strong> - קשה לרשב\"א מה צריכין רבה ורב יוסף להעמיד המשנה כתנאים והא סבירא להו בפ\"ב דעירובין <span class=\"parenthesized\">(ד' צט. ושם)</span> דמחשבתו משויא ליה מקום דקאמר התם רב יוסף השתין ורק חייב חטאת ופריך והא בעינן מקום ד' וליכא ומשני מחשבתו משויא ליה מקום דאי לא תימא הכי הא דאמר רבה זרק בפי כלב או בפי כבשן חייב וכו' ותי' ר\"ת דהא דאמר מחשבתו משויא ליה מקום היינו היכא דלא ניחא לי' בענין אחר אלא בענין זה כמו משתין ורק שאינו יכול להשתין או לרוק בענין אחר וכן זרק בפי כלב שרצונו שיאכלנו הכלב או שישרוף העץ בכבשן ול\"ג התם ונח בפי כלב דנח משמע דאין כוונתו לכך אבל הכא אינו חושש אם מקבל בידו או בכלי אחר והא דאמר לקמן <span class=\"parenthesized\">(שבת ד' ה.)</span> ה\"א ה\"מ היכא דאחשבה לידו אע\"ג דניחא ליה שיקבלנו בע\"א כמו בידו היינו משום דקאמר דידו של אדם חשובה לו כד' על ד' אבל בשאר דברים לא משוי ליה מחשבתו אלא היכא דלא ניחא ליה בע\"א:"
+  },
+  "Tosafot on Shabbat 4b:6:1": {
+    "dependsOn": [
+      "Shabbat 4b:5",
+      "Shabbat 4b:6",
+      "Shabbat 4b:7",
+      "Shabbat 4b:8",
+      "Shabbat 4b:9",
+      "Shabbat 4b:10",
+      "Shabbat 4b:11",
+      "Shabbat 4a:12",
+      "Shabbat 4b:1",
+      "Shabbat 4b:2",
+      "Shabbat 4b:3",
+      "Shabbat 4b:4",
+      "Shabbat 97a:5",
+      "Shabbat 97a:6",
+      "Shabbat 97a:7",
+      "Shabbat 97a:8",
+      "Shabbat 97a:9",
+      "Shabbat 97a:10",
+      "Shabbat 97a:11",
+      "Shabbat 97a:12",
+      "Shabbat 97b:1",
+      "Shabbat 97b:2",
+      "Shabbat 97b:3",
+      "Shabbat 97a:13",
+      "Shabbat 97a:14",
+      "Shabbat 97a:15",
+      "Shabbat 97a:16",
+      "Shabbat 97a:17",
+      "Shabbat 97a:18",
+      "Shabbat 97a:19",
+      "Shabbat 97a:20",
+      "Tosafot on Shabbat 4b:4:1",
+      "Tosafot on Shabbat 4b:5:1",
+      "Tosafot on Shabbat 4b:7:1",
+      "Tosafot on Shabbat 97b:1:1",
+      "Tosafot on Shabbat 97b:3:1",
+      "Tosafot on Shabbat 97b:1:2",
+      "Tosafot on Shabbat 97b:2:1",
+      "Shabbat 5a:1",
+      "Shabbat 5a:2",
+      "Shabbat 5a:3",
+      "Shabbat 5a:4",
+      "Shabbat 97b:4",
+      "Shabbat 97b:5",
+      "Shabbat 97b:6",
+      "Shabbat 97b:7",
+      "Shabbat 97b:8",
+      "Shabbat 97b:9",
+      "Shabbat 97b:10",
+      "Shabbat 97b:11"
+    ],
+    "generatedAt": "2026-10-14T09:57:10.216Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 4b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זרק ונח ע\"ג זיז כל שהוא ר' מחייב</strong> - וא\"ת אכתי תקשה לך דילמא הנחה הוא דלא בעיא הא עקירה בעיא וי\"ל דבלאו הכי פריך שפיר אבל קשה לספרים דגרסי לקמן בהזורק <span class=\"parenthesized\">(שבת ד' צז.)</span> על מילתא דרב יהודה דאמר בסמוך מחייב היה רבי שתים ויתיב רב חסדא וקא קשיא ליה למימרא דמחייב רבי אתולדה במקום אב וכו' א\"ל רב יוסף מר אדר' מתני לה וקשיא ליה אנן אדר' יהודה מתנינן לה לדברי ר\"י דאמר חייב ב' אבל לר' לא מחייב ב' דלא מחייב ר' אתולדה במקום אב אם כן מה תירץ רב יוסף הא מני ר' היא אכתי תקשה דילמא הנחה הוא דלא בעי הא עקירה בעי וי\"ל דסבר רב יוסף דדוקא אקלוטה דר\"ע דליכא הנחה כלל איכא למיפרך הא עקירה בעי אבל אר' דבעי הנחה ע\"ג זיז כל שהוא ה\"ה דלעקירה סגיא בכל שהוא ומיהו להש\"ס בסמוך לית ליה סברא דרב יוסף דפריך ארבי זירא דילמא אחרים בעו עקירת מקום ד' ולא סגיא בכל שהוא כמו בהנחה ולר\"ת נראה דגרסינן בהזורק יתיב רב יוסף וקא קשיא ליה א\"ל רב חסדא וכו' ואתי שפיר דרב יוסף הוה מתני דברי רב יהודה אדר' ובסמוך דפריך והא איתמר כו' הוה מצי למיפרך הא דקשיא ליה לרב יוסף בהזורק <span class=\"parenthesized\">(שם:)</span> דרבי לא מחייב אתולדה במקום אב דתניא ר' אומר דברים הדברים אלה הדברים וכגירסת ר\"ת נראה דלההוא גירסא דמתני רב יוסף מילתא דרב יהודה דמחייב ב' ארבי יהודה קשה דרב יוסף אדרב יוסף דהתם אומר בהדיא רבה ורב יוסף דאמרי תרוייהו לא מחייב ר\"י אלא אחת ויש לדחות דרב יוסף משמי' דרב יהודה קאמר ורב יהודה מחייב שתים וליה לא סבירא ליה:"
+  },
+  "Tosafot on Shabbat 4b:7:1": {
+    "dependsOn": [
+      "Shabbat 4b:6",
+      "Shabbat 4b:7",
+      "Shabbat 4b:8",
+      "Shabbat 5a:1",
+      "Shabbat 8a:1",
+      "Shabbat 7b:8",
+      "Shabbat 7b:9",
+      "Shabbat 7b:10",
+      "Shabbat 7b:11",
+      "Shabbat 7b:12",
+      "Rashi on Shabbat 4b:7:1",
+      "Rashi on Shabbat 4b:8:1",
+      "Tosafot on Shabbat 2a:1:1",
+      "Tosafot on Shabbat 3a:1:1",
+      "Tosafot on Shabbat 4a:1:1",
+      "Tosafot on Shabbat 4b:1:1",
+      "Tosafot on Shabbat 4b:2:1",
+      "Tosafot on Shabbat 4b:4:1",
+      "Tosafot on Shabbat 4b:5:1",
+      "Tosafot on Shabbat 4b:6:1",
+      "Shabbat 101a:1",
+      "Shabbat 101a:2",
+      "Shabbat 100a:8",
+      "Shabbat 100a:9",
+      "Shabbat 100a:10",
+      "Shabbat 100b:1"
+    ],
+    "generatedAt": "2026-10-14T10:04:30.778Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 4b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באילן העומד ברה\"י ונופו נוטה לרשות הרבים</strong> - הכא בשמעתין הוה מצי לאוקמי באילן שעיקרו ונופו כולו קאי ברה\"י ויש בעיקרו ד' דרבי סבר שדי נופו בתר עיקרו וחשיבא מקום ד' ורבנן סברי לא אמרינן שדי נופו בתר עיקרו ולא הוי מקום ד' דברה\"י נמי סברא שמעתין דבעינן מקום ד' על ד' מדאמר בסמוך תני טרסקל שבידו הא תינח ברה\"י משמע דברה\"י נמי מהדרינן לאשכוחי מקום ארבע אלא נקט בכה\"ג משום דמילתא דאביי איתמר בפרקין אמילתא דרב חסדא דאמר נעץ קנה ברה\"י וזרק ונח על גביו אפילו גבוה מאה אמה חייב ופריך לימא דרב חסדא דאמר כרבי ומשני דברה\"י כ\"ע לא פליגי כדרב חסדא והכא באילן העומד ברה\"י ונופו נוטה לרה\"ר ומיירי אפילו אין בעיקרו ד' דרבי סבר שדי נופו בתר עיקרו דהויא כרה\"י וחייב אע\"ג דלא הוי מקום ד' כדרב חסדא ורבנן סברי לא אמרינן שדי נופו בתר עיקרו אבל קשה אמאי לא משני אביי לקמן באילן העומד כולו ברה\"ר ויש בעיקרו ד' דרבי סבר שדי נופו כו' וחשיב מקום ד' ולרבנן לא הוי מקום ד' דברה\"ר מודה רב חסדא דבעינן מקום ד' דברה\"י דווקא קאמר רב חסדא כדמשמע לקמן דקאמר ברשות היחיד כולי עלמא לא פליגי כדרב חסדא ויש לומר דברה\"ר לא מצי לאוקמי דאי הנוף למטה מג' לא הוו פטרי רבנן אע\"ג דליכא ד' דכארעא סמיכתא היא ואי למעלה מג' לא הוה מחייב ר' דכרמלית היא אם רחב ארבע או מקום פטור אם אינו רחב ד' ולרשב\"א נראה דברשות הרבים נמי משכחת לה למימר שדי נופו בתר עיקרו כגון שעיקרו פחות משלשה או גבוה ט' ורבים מכתפים עליו דהוו רה\"ר ונופו עולה למעלה מג' דלרבי הוי נוף רשות הרבים דשדינן ליה בתר עיקרו כי היכי דשדינן ליה בתר עיקרו לשויא רה\"י ולרבנן לא הוי כרה\"ר והא דלא מוקי ליה אביי הכי משום דרב חסדא לא בעי מקום ד' גם ברשות הרבים דמ\"ש ורב חסדא נקט רשות היחיד משום דבעי לאשמעינן אפילו גבוה מאה אמות משום דרה\"י עולה עד לרקיע ואיידי דנקט איהו רשות היחיד נקט נמי בתר הכי ברה\"י כ\"ע לא פליגי כו' ולמאי דמוקי לה אביי לקמן אליבא דרב חסדא הא דנקט זיז כל שהוא דהא אפי' ברוחב ד' נמי פליגי אומר רשב\"א דנקט כל שהוא משום למעלה מי' דאי הוי רחב ד' הוי רה\"י ולא הוו פטרי רבנן <span class=\"parenthesized\">(אי אין)</span> גדיים בוקעין תחתיו אי סברי כר' יוסי בר' יהודה בהזורק <span class=\"parenthesized\">(לקמן שבת ד' קא.)</span> ואין נראה לר\"י דמשמע דמשום רבותא דר' נקט לה ואומר ר\"י דאי הוה נקיט זיז סתמא הוה סלקא דעתך דמיירי ברחב ארבע וטעמא דר' לאו משום שדי נופו בתר עיקרו אלא ה\"א דסבר כרבי יוסי בר\"י דנעץ קנה ברה\"ר ובראשו טרסקל להכי נקט כל שהוא לאשמעינן דטעמא דרבי משום שדי נופו כו' ורש\"י שפירש כאן משום שדי נופו בתר עיקרו והוי כמונח ברשות הרבים ע\"ג מקום ד' אי אפשר להעמידה דאי למטה מג' לא בעי רחב ד' לכ\"ע ולמעלה מג' לא הוי רה\"ר אם לא נעמיד בדבילה שמנה וטח בצד הנוף:"
   }
 }
