@@ -1,3 +1,4 @@
+import * as fs from "fs";
 import {execFile} from "child_process";
 import {promisify} from "util";
 import {books} from "../books";
@@ -12,7 +13,6 @@ const MANAGED_PATHS = [
   "precomputed/ai_additions",
   "precomputed/rsi_state/generation_records",
   "precomputed/rsi_state/context_usage_log",
-  "precomputed/rsi_state/context_usage_log.jsonl",
 ];
 
 export interface CommitPendingDeps {
@@ -367,8 +367,9 @@ async function runSubcommand(
 }
 
 async function gitStatusPorcelainViaCli(debug = false): Promise<string> {
+  const existingManagedPaths = MANAGED_PATHS.filter(p => fs.existsSync(p));
   const {stdout} = await runSubcommand(
-    "git", ["status", "--porcelain", "--untracked-files=all", "--", ...MANAGED_PATHS], debug);
+    "git", ["status", "--porcelain", "--untracked-files=all", "--", ...existingManagedPaths], debug);
   return stdout;
 }
 
@@ -388,9 +389,10 @@ async function findOpenPrViaGh(
 }
 
 async function commitPendingStateViaCli(message: string, debug = false): Promise<boolean> {
-  await runSubcommand("git", ["add", ...MANAGED_PATHS], debug);
+  const existingManagedPaths = MANAGED_PATHS.filter(p => fs.existsSync(p));
+  await runSubcommand("git", ["add", ...existingManagedPaths], debug);
   const {stdout: statusOut} = await runSubcommand(
-    "git", ["status", "--porcelain", "--", ...MANAGED_PATHS], debug);
+    "git", ["status", "--porcelain", "--", ...existingManagedPaths], debug);
   if (!statusOut.trim()) {
     if (debug) {
       // eslint-disable-next-line no-console
