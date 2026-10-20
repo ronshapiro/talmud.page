@@ -1,0 +1,546 @@
+{
+  "Rashi on Berakhot 60b:13:1": {
+    "dependsOn": [
+      "Berakhot 60b:13",
+      "Rashi on Berakhot 60b:13:2",
+      "Rashi on Berakhot 60b:1:1",
+      "Rashi on Berakhot 60b:1:2",
+      "Rashi on Berakhot 60b:1:3",
+      "Rashi on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-10-20T00:47:14.843Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Berakhot 60b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובת בדברא</strong> – ולן בשדה:"
+  },
+  "Rashi on Berakhot 60b:13:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 60b:13:1",
+      "Rashi on Berakhot 60b:13:2",
+      "Berakhot 60b:13",
+      "Rashi on Berakhot 60b:1:1",
+      "Rashi on Berakhot 60b:2:1",
+      "Rashi on Berakhot 60b:3:1",
+      "Rashi on Berakhot 60b:7:1"
+    ],
+    "generatedAt": "2026-10-20T00:48:02.191Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Berakhot 60b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוה בהדיה תרנגולא</strong> – להקיצו משנתו:"
+  },
+  "Rashi on Berakhot 60b:1:1": {
+    "dependsOn": [
+      "Berakhot 60b:1",
+      "Rashi on Berakhot 60b:1:1",
+      "Rashi on Berakhot 60b:1:2",
+      "Rashi on Berakhot 60b:1:3",
+      "Rashi on Berakhot 60b:2:1",
+      "Rashi on Berakhot 60a:1:1",
+      "Rashi on Berakhot 60a:2:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 59b:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:2:2",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:4:1",
+      "Rashi on Berakhot 3a:1:1",
+      "Rashi on Berakhot 3b:1:1",
+      "Rashi on Berakhot 4a:1:1",
+      "Rashi on Berakhot 6a:1:1",
+      "Rashi on Berakhot 6b:1:1",
+      "Rashi on Berakhot 7a:1:1",
+      "Rashi on Berakhot 7b:1:1",
+      "Rashi on Berakhot 8a:1:1",
+      "Rashi on Berakhot 9b:1:1",
+      "Rashi on Berakhot 10b:1:1",
+      "Rashi on Berakhot 11a:1:1",
+      "Rashi on Berakhot 8a:1:2",
+      "Rashi on Berakhot 8a:1:3",
+      "Rashi on Berakhot 8a:1:4",
+      "Rashi on Berakhot 8a:1:5"
+    ],
+    "generatedAt": "2026-10-19T23:55:55.027Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Berakhot 60b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התכבדו וכו'</strong> – אל המלאכים המלוים אותו הוא אומר שנאמר כי מלאכיו יצוה לך <span class=\"parenthesized\">(תהילים צ״א:י״א)</span>:"
+  },
+  "Rashi on Berakhot 60b:1:2": {
+    "dependsOn": [
+      "Berakhot 60b:1",
+      "Rashi on Berakhot 60b:1:1",
+      "Rashi on Berakhot 60b:1:2",
+      "Rashi on Berakhot 60b:1:3",
+      "Jastrow, כרס 1",
+      "Tosafot on Berakhot 60b:1:1"
+    ],
+    "generatedAt": "2026-10-19T23:56:54.370Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Berakhot 60b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאם יפתח אחד מהם</strong> – מן החללים כגון הלב או הכרס או המעים:"
+  },
+  "Rashi on Berakhot 60b:1:3": {
+    "dependsOn": [
+      "Berakhot 60b:1",
+      "Rashi on Berakhot 60b:1:1",
+      "Rashi on Berakhot 60b:1:2",
+      "Rashi on Berakhot 60b:1:3",
+      "Rashi on Berakhot 60b:2:1",
+      "Rashi on Berakhot 60b:2:2",
+      "Rashi on Berakhot 60b:2:3",
+      "Rashi on Berakhot 60a:1:1",
+      "Berakhot 60b:7",
+      "Rashi on Berakhot 59b:1:1",
+      "Rashi on Berakhot 59b:2:1",
+      "Rashi on Berakhot 59b:3:1",
+      "Rashi on Berakhot 59b:4:1",
+      "Rashi on Berakhot 59a:1:1",
+      "Rashi on Berakhot 59a:2:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:4:1",
+      "Rashi on Berakhot 2a:5:1",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 2b:3:1",
+      "Rashi on Berakhot 2b:4:1",
+      "Rashi on Berakhot 2b:5:1",
+      "Rashi on Berakhot 2b:6:1",
+      "Rashi on Berakhot 40a:1:1",
+      "Rashi on Berakhot 40b:1:1",
+      "Rashi on Berakhot 41a:1:1"
+    ],
+    "generatedAt": "2026-10-19T23:58:40.046Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Berakhot 60b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או אם יסתם אחד מהם</strong> – מן הנקבים הפתוחים כגון הפה או החוטם או פי הטבעת. יפתח קאי אחללים יסתם קאי אנקבים:"
+  },
+  "Rashi on Berakhot 60b:2:1": {
+    "dependsOn": [
+      "Berakhot 60b:2",
+      "Rashi on Berakhot 60b:2:1",
+      "Rashi on Berakhot 60b:2:2",
+      "Rashi on Berakhot 60b:2:3",
+      "Rashi on Berakhot 60b:1:1",
+      "Rashi on Berakhot 60b:1:2",
+      "Rashi on Berakhot 60b:1:3",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:5:3",
+      "Rashi on Berakhot 2a:5:4",
+      "Steinsaltz on Berakhot 60b:2:1",
+      "Steinsaltz In-Depth on Berakhot 60b:2:1",
+      "Jastrow on Berakhot 60b:2:1",
+      "Jastrow, קציר 2",
+      "Jastrow, קצירא",
+      "Rashi on Berakhot 60b:7:1",
+      "Rashi on Berakhot 60b:7:2",
+      "Rashi on Berakhot 60b:9:1",
+      "Rashi on Berakhot 60b:13:1",
+      "Rashi on Berakhot 60b:13:2",
+      "Rashi on Berakhot 2a:13:1",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Berakhot 2b:2:1"
+    ],
+    "generatedAt": "2026-10-20T00:06:23.606Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Berakhot 60b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קצירי</strong> – חולים:"
+  },
+  "Rashi on Berakhot 60b:2:2": {
+    "dependsOn": [
+      "Berakhot 60b:2",
+      "Rashi on Berakhot 60b:2:1",
+      "Rashi on Berakhot 60b:2:2",
+      "Rashi on Berakhot 60b:2:3",
+      "Rashi on Berakhot 60a:1:1",
+      "Rashi on Berakhot 60a:2:1",
+      "Rashi on Berakhot 60a:3:1",
+      "Rashi on Berakhot 60a:4:1",
+      "Rashi on Berakhot 60b:1:1",
+      "Rashi on Berakhot 60b:1:2",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3",
+      "Steinsaltz on Berakhot 60b:2",
+      "Steinsaltz on Berakhot 60b:2:1",
+      "Tosafot on Berakhot 60b:2:1",
+      "Rashi on Berakhot 26b:1:1",
+      "Rashi on Berakhot 26b:1:2",
+      "Rashi on Berakhot 4b:1:1",
+      "Rashi on Berakhot 5b:1:1",
+      "Rashi on Berakhot 26b:8:1",
+      "Rashi on Berakhot 26b:9:1",
+      "Shulchan Arukh, Orach Chayim 6:1",
+      "Jastrow, יְצִיאָה 1",
+      "Jastrow on Berakhot 60b:2:1",
+      "Steinsaltz In-Depth on Berakhot 60b:2",
+      "Rashi on Berakhot 60b:1:3"
+    ],
+    "generatedAt": "2026-10-20T00:08:59.414Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Berakhot 60b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רופא כל בשר</strong> – כנגד היציאה שהיא רפואת כל הגוף:"
+  },
+  "Rashi on Berakhot 60b:2:3": {
+    "dependsOn": [
+      "Rashi on Berakhot 60b:2:3",
+      "Berakhot 60b:2",
+      "Rashi on Berakhot 60b:2:1",
+      "Rashi on Berakhot 60b:2:2",
+      "Rashi on Berakhot 60b:1:1",
+      "Rashi on Berakhot 60b:1:2",
+      "Rashi on Berakhot 60b:1:3",
+      "Rashi on Berakhot 60a:1:1",
+      "Rashi on Berakhot 60a:2:1",
+      "Rashi on Berakhot 60a:3:1",
+      "Rashi on Berakhot 60b:7:1",
+      "Rashi on Berakhot 60b:7:2",
+      "Rashi on Berakhot 60a:19:1",
+      "Rashi on Berakhot 60a:20:1",
+      "Rashi on Berakhot 60a:21:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Jastrow, נוֹאד 1",
+      "Jastrow, נאד"
+    ],
+    "generatedAt": "2026-10-20T00:13:58.348Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Berakhot 60b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומפליא לעשות</strong> – כנגד שהגוף חלול כמו נאד והנאד הזה אם יש בו נקב אין הרוח עומד בתוכו והקב\"ה ברא את האדם בחכמה וברא בו נקבים נקבים הרבה ואעפ\"כ הרוח בתוכו כל ימי חייו וזו היא פליאה וחכמה:"
+  },
+  "Rashi on Berakhot 60b:3:1": {
+    "dependsOn": [
+      "Berakhot 60b:3",
+      "Rashi on Berakhot 60b:1:1",
+      "Rashi on Berakhot 60b:2:1",
+      "Rashi on Berakhot 60b:5:1",
+      "Rashi on Berakhot 60a:1:1",
+      "Rashi on Berakhot 60a:2:1",
+      "Rashi on Berakhot 60a:3:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Tosafot on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:4:1",
+      "Rashi on Berakhot 60b:7:1",
+      "Rashi on Berakhot 60b:9:1",
+      "Rashi on Pesachim 56a:4:1",
+      "Rashi on Pesachim 56a:5:1",
+      "Pesachim 56a:1",
+      "Pesachim 56a:2",
+      "Pesachim 56a:3",
+      "Pesachim 56a:6",
+      "Pesachim 56a:7",
+      "Pesachim 56a:8",
+      "Steinsaltz on Berakhot 60b:3:1",
+      "Steinsaltz In-Depth on Berakhot 60b:3:1",
+      "Steinsaltz on Berakhot 60b:3",
+      "Steinsaltz In-Depth on Berakhot 60b:3"
+    ],
+    "generatedAt": "2026-10-20T00:20:16.855Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Berakhot 60b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותהא מטתי שלמה</strong> – שלא יהא פסול ורשע בזרעי:"
+  },
+  "Rashi on Berakhot 60b:5:1": {
+    "dependsOn": [
+      "Berakhot 60b:5",
+      "Rashi on Berakhot 60b:5:1",
+      "Rosh Hashanah 26a:16",
+      "Rosh Hashanah 26a:17",
+      "Rosh Hashanah 26a:18",
+      "Rosh Hashanah 26a:19",
+      "Rosh Hashanah 26a:20"
+    ],
+    "generatedAt": "2026-10-20T00:26:33.863Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Berakhot 60b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשכוי</strong> – תרנגול דאיכא דוכתא דקרו לתרנגול שכוי כדאמרינן בר\"ה <span class=\"parenthesized\">(דף כו.)</span>:"
+  },
+  "Rashi on Berakhot 60b:7:1": {
+    "dependsOn": [
+      "Berakhot 60b:7",
+      "Rashi on Berakhot 60b:7:1",
+      "Rashi on Berakhot 60b:7:2",
+      "Rashi on Berakhot 60a:1:1",
+      "Rashi on Berakhot 60a:2:1",
+      "Rashi on Berakhot 60a:3:1",
+      "Rashi on Berakhot 60a:4:1",
+      "Rashi on Berakhot 60b:1:1",
+      "Rashi on Berakhot 60b:2:1",
+      "Rashi on Berakhot 60b:3:1",
+      "Rashi on Berakhot 60b:9:1",
+      "Rashi on Berakhot 60b:13:1",
+      "Rashi on Berakhot 60a:14:2",
+      "Rashi on Berakhot 59b:13:1"
+    ],
+    "generatedAt": "2026-10-20T00:37:29.466Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Berakhot 60b:7:1"
+    ],
+    "sourceText": "הכי גרסי' אילימא כשם שמברך על הטובה הטוב והמטיב כך מברך על הרעה הטוב והמטיב והתנן על בשורות טובות הטוב והמטיב ועל שמועות רעות אומר ברוך דיין האמת:"
+  },
+  "Rashi on Berakhot 60b:7:2": {
+    "dependsOn": [
+      "Berakhot 60b:7",
+      "Rashi on Berakhot 60b:7:1",
+      "Rashi on Berakhot 60b:7:2",
+      "Rashi on Berakhot 60b:1:1",
+      "Rashi on Berakhot 60b:1:2",
+      "Rashi on Berakhot 60b:2:1",
+      "Steinsaltz on Berakhot 60b:7:1",
+      "Berakhot 60b:9"
+    ],
+    "generatedAt": "2026-10-20T00:39:48.443Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Berakhot 60b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לקבולינהו בשמחה</strong> – לברך על מדת פורענות בלבב שלם:"
+  },
+  "Rashi on Berakhot 60b:9:1": {
+    "dependsOn": [
+      "Berakhot 60b:9",
+      "Rashi on Berakhot 60b:9:1",
+      "Rashi on Berakhot 60b:7:1",
+      "Rashi on Berakhot 60b:7:2",
+      "Rashi on Berakhot 60b:13:1",
+      "Rashi on Berakhot 60b:13:2",
+      "Rashi on Berakhot 60a:1:1",
+      "Rashi on Berakhot 60a:2:1",
+      "Rashi on Berakhot 60a:3:1",
+      "Rashi on Berakhot 60a:4:1",
+      "Rashi on Berakhot 59b:1:1",
+      "Rashi on Berakhot 59b:2:1",
+      "Rashi on Berakhot 59a:1:1",
+      "Rashi on Berakhot 58b:1:1",
+      "Rashi on Berakhot 57a:1:1",
+      "Rashi on Berakhot 54a:1:1",
+      "Rashi on Berakhot 54a:2:1",
+      "Rashi on Berakhot 54a:3:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:8:1",
+      "Rashi on Berakhot 3a:1:1",
+      "Rashi on Berakhot 4b:1:1",
+      "Rashi on Berakhot 5a:1:1",
+      "Rashi on Berakhot 7a:1:1",
+      "Rashi on Berakhot 7b:1:1",
+      "Rashi on Berakhot 8a:1:1",
+      "Rashi on Berakhot 9a:1:1",
+      "Rashi on Berakhot 10b:1:1",
+      "Rashi on Berakhot 11a:1:1",
+      "Rashi on Berakhot 12a:1:1",
+      "Rashi on Berakhot 13a:1:1",
+      "Rashi on Berakhot 14a:1:1",
+      "Rashi on Exodus 22:8:1",
+      "Exodus 22:8",
+      "Rashi on Exodus 22:7:2",
+      "Rashi on Exodus 22:7:3",
+      "Steinsaltz on Berakhot 60b:9:1",
+      "Steinsaltz on Berakhot 60b:9"
+    ],
+    "generatedAt": "2026-10-20T00:45:00.254Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Berakhot 60b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלהים</strong> – לשון דיין כמו עד האלהים יבא דבר שניהם <span class=\"parenthesized\">(שמות כ״ב:ח׳)</span>:"
+  },
+  "Tosafot on Berakhot 60b:1:1": {
+    "dependsOn": [
+      "Berakhot 60b:1",
+      "Berakhot 60b:2",
+      "Sanhedrin 38a:3",
+      "Sanhedrin 38a:4",
+      "Sanhedrin 38a:6",
+      "Sanhedrin 38a:7",
+      "Sanhedrin 38a:8",
+      "Sanhedrin 38a:9",
+      "Sanhedrin 38a:10",
+      "Sanhedrin 38a:11",
+      "Sanhedrin 38a:12",
+      "Sanhedrin 38a:13",
+      "Sanhedrin 38a:14",
+      "Tosafot on Berakhot 60b:1:1",
+      "Tosafot on Berakhot 60b:5:1",
+      "Tosafot on Berakhot 60b:5:2",
+      "Tosafot on Berakhot 60b:6:1",
+      "Tosafot on Berakhot 2a:1:1",
+      "Tosafot on Berakhot 2a:2:1",
+      "Tosafot on Berakhot 2b:1:1",
+      "Midrash Tanchuma, Tazria 1",
+      "Tosafot on Berakhot 59b:1:1",
+      "Tosafot on Berakhot 60a:1:1",
+      "Tosafot on Berakhot 3a:1:1"
+    ],
+    "generatedAt": "2026-10-20T00:02:03.587Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Berakhot 60b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אשר יצר את האדם בחכמה</strong> - בתנחומא ויברא אלהים את האדם א\"ר בון בחכמה שהתקין מזונותיו ואח\"כ בראו היינו דאמר בסנהדרין בס\"פ אחד דיני ממונות <span class=\"parenthesized\">(סנהדרין דף לח.)</span> לכך נברא בערב שבת כדי שיכנס לסעודה מיד וע\"כ יסדו אשר יצר את האדם בחכמה:"
+  },
+  "Tosafot on Berakhot 60b:2:1": {
+    "dependsOn": [
+      "Tosafot on Berakhot 60b:2:1",
+      "Berakhot 60b:2",
+      "Rashi on Berakhot 60b:2:1",
+      "Rashi on Berakhot 60b:2:2",
+      "Rashi on Berakhot 60b:2:3",
+      "Shabbat 60a:1",
+      "Kelim 13:5",
+      "Mishnah Kelim 13:5",
+      "Chullin 48b:1",
+      "Chullin 48b:2",
+      "Chullin 48b:3",
+      "Steinsaltz on Berakhot 60b:2",
+      "Steinsaltz In-Depth on Berakhot 60b:2",
+      "Tosafot on Berakhot 60b:5:1",
+      "Tosafot on Berakhot 60b:5:2",
+      "Tosafot on Berakhot 60b:6:1",
+      "Tosafot on Berakhot 60a:1:1",
+      "Tosafot on Berakhot 59b:1:1",
+      "Berakhot 60b:1",
+      "Rashi on Berakhot 60b:7:1",
+      "Rashi on Berakhot 60b:7:2"
+    ],
+    "generatedAt": "2026-10-20T00:16:43.231Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Berakhot 60b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפליא לעשות</strong> - משום דאמרינן בב\"ר כי גדול אתה ועושה נפלאות אתה אלהים לבדך אדם עושה נאד אפילו יש בו נקב אחד מלא מחט סדקית הרוח יוצא ואינו יכול לשמור בו יין והקב\"ה ברא נקבים נקבים באדם ושומר הרוח שאינו יוצא ממנו:"
+  },
+  "Tosafot on Berakhot 60b:5:1": {
+    "dependsOn": [
+      "Berakhot 60b:5",
+      "Tosafot on Berakhot 60b:5:1",
+      "Tosafot on Berakhot 60b:5:2",
+      "Rosh on Berakhot 9:23",
+      "Rosh on Berakhot 9:24",
+      "Rashi on Berakhot 60b:5:1",
+      "Shulchan Arukh, Orach Chayim 46:8",
+      "Steinsaltz on Berakhot 60b:5",
+      "Steinsaltz In-Depth on Berakhot 60b:5:1",
+      "Steinsaltz In-Depth on Berakhot 60b:5:2",
+      "Torah Temima on Berakhot 60b:5:1",
+      "Mishneh Torah, Blessings 7:3",
+      "Mishneh Torah, Blessings 7:4",
+      "Mishneh Torah, Prayer and the Priestly Blessing 7:3",
+      "Mishneh Torah, Prayer and the Priestly Blessing 7:9",
+      "Tur, Orach Chayim 46",
+      "Beit Yosef, Orach Chayim 46"
+    ],
+    "generatedAt": "2026-10-20T00:28:46.390Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Berakhot 60b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי שמע קול תרנגולא אומר ברוך שנתן לשכוי בינה להבחין</strong> - והוא הדין אפילו כי לא שמע דאין ברכה זו אלא להבחנה על הנאת האורה שתרנגול מבחין והוא נהנה מן האור:"
+  },
+  "Tosafot on Berakhot 60b:5:2": {
+    "dependsOn": [
+      "Berakhot 60b:5",
+      "Tosafot on Berakhot 60b:5:1",
+      "Tosafot on Berakhot 60b:5:2",
+      "Megillah 24b:11",
+      "Megillah 24b:12",
+      "Megillah 24b:13",
+      "Megillah 24a:10",
+      "Megillah 24a:11",
+      "Megillah 24a:12",
+      "Megillah 24a:13",
+      "Megillah 24a:14",
+      "Megillah 24b:1",
+      "Megillah 24b:2",
+      "Megillah 24b:3",
+      "Megillah 24b:4",
+      "Megillah 24b:5",
+      "Megillah 24b:6",
+      "Tosafot on Berakhot 60b:1:1",
+      "Tosafot on Berakhot 60b:2:1",
+      "Tosafot on Berakhot 60b:6:1",
+      "Tosafot on Berakhot 60a:1:1",
+      "Tosafot on Berakhot 59b:1:1",
+      "Tosafot on Berakhot 54a:1:1",
+      "Rashi on Berakhot 60b:5:1",
+      "Berakhot 2a:1",
+      "Tosafot on Berakhot 2a:2:1"
+    ],
+    "generatedAt": "2026-10-20T00:31:30.026Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Berakhot 60b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי פריס סודרא על רישיה</strong> - וה\"ה לכל כובע ולכל כסוי ודוקא כשנהנה אבל אם אינו נהנה כגון שהוא שוכב על מטתו לא יברך לא זו ולא מלביש ערומים ולא ברכות כיוצא בהן כיון שלא נהנה כדמשמע בפרק שלישי דמגילה <span class=\"parenthesized\">(דף כד:)</span> גבי מי שלא ראה מאורות מימיו דכולי עלמא בעי שיהנה מן האורה:"
+  },
+  "Tosafot on Berakhot 60b:6:1": {
+    "dependsOn": [
+      "Berakhot 60b:6",
+      "Menachot 36a:10",
+      "Menachot 36a:11",
+      "Menachot 36a:12",
+      "Bava Metzia 29b:13",
+      "Bava Metzia 29b:14",
+      "Bava Metzia 29b:19",
+      "Bava Metzia 29b:24",
+      "Tosafot on Berakhot 60b:1:1",
+      "Tosafot on Berakhot 60b:2:1",
+      "Tosafot on Berakhot 60b:5:1",
+      "Tosafot on Berakhot 60a:1:1",
+      "Tosafot on Berakhot 59b:1:1",
+      "Tosafot on Berakhot 59a:1:1"
+    ],
+    "generatedAt": "2026-10-20T00:34:01.394Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Berakhot 60b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אשר קדשנו במצותיו וצונו להניח תפילין</strong> - כיון דתחלת הנחתו בזרועו יש לברך להניח אבל בשל ראש מברך על מצות ולא להניח שכבר התחיל והניח אחד מהם ובפ' הקומץ <span class=\"parenthesized\">(מנחות לו. ושם)</span> אמר לא סח מברך אחת סח מברך שתים פ\"ה דעל שתי התפילין קאמר דמברך ברכה אחת על שתיהן בלא סח בינתים ודוחק לומר דלא הוצרכו שתי ברכות דלהניח ועל מצות אלא כשסח ועבר עבירה. לכן פר\"ת דעל של ראש שהיא גמר מצוה ועיקר דיש בה ד' בתים ושי\"ן מברך על מצות אבל סח חוזר ומברך שתים על של ראש וכן בשימושא רבא דגאונים ולפר\"ת גבי סח מברך שתים אם יניח של ראש לבד דאין מעכבין זה את זה מברך שתים על של ראש בלבד ומה שלא הזכיר הגמ' על של ראש בלבד מברך שתים לפי שאין רגילות כלל להניח זה בלא זה דתפילין בי בר חבו שכיחי <span class=\"parenthesized\">(ב\"מ ד' כט:)</span> וכן פי' רבינו תם בתשובותיו וכן רבינו אלחנן בסדר תקון תפלה שלו כתב כן:"
+  }
+}
