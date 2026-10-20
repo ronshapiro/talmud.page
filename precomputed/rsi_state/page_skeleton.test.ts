@@ -67,7 +67,7 @@ test("returns undefined when the page isn't cached", () => {
   expect(buildPageSkeleton(TEST_BOOK, SECTION)).toBeUndefined();
 });
 
-test("builds a segment per section, with commentary counts and a truncated preview", () => {
+test("builds a segment per section, with commentary counts and no segment text", () => {
   writeJson(filePath, amud());
   const skeleton = buildPageSkeleton(TEST_BOOK, SECTION);
   expect(skeleton).toEqual({
@@ -75,31 +75,27 @@ test("builds a segment per section, with commentary counts and a truncated previ
     segments: [
       {
         ref: "__Test_Book__ 2a:1",
-        preview: "מילה ראשונה שנייה שלישית רביעית חמישית שישית שביעית...",
         commentary: {Rashi: 1, Tosafot: 2},
       },
       {
         ref: "__Test_Book__ 2a:2",
-        preview: "מילה שנייה",
         commentary: {},
       },
     ],
   });
 });
 
-test("strips HTML tags from the preview", () => {
-  writeJson(filePath, amud());
-  const skeleton = buildPageSkeleton(TEST_BOOK, SECTION)!;
-  expect(skeleton.segments[1].preview).toEqual("מילה שנייה");
-});
-
 test("formatPageSkeleton renders a compact, human/LLM-readable summary", () => {
   writeJson(filePath, amud());
   const skeleton = buildPageSkeleton(TEST_BOOK, SECTION)!;
-  const formatted = formatPageSkeleton(skeleton);
-  expect(formatted).toContain("__Test_Book__ 2a:1");
-  expect(formatted).toContain("Rashi(1)");
-  expect(formatted).toContain("Tosafot(2)");
-  expect(formatted).toContain("__Test_Book__ 2a:2");
-  expect(formatted).toContain("commentary: none");
+  expect(formatPageSkeleton(skeleton)).toEqual([
+    "__Test_Book__ 2a:1: Rashi(1), Tosafot(2)",
+    "__Test_Book__ 2a:2: no commentary",
+  ].join("\n"));
+});
+
+test("filters commentary counts to specified commentators", () => {
+  writeJson(filePath, amud());
+  const skeleton = buildPageSkeleton(TEST_BOOK, SECTION, ["Rashi"])!;
+  expect(skeleton.segments[0].commentary).toEqual({Rashi: 1});
 });

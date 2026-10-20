@@ -29,13 +29,14 @@ billing.
   (`npx ts-node cache_all_api_requests.ts`).
 - `context_fetch.ts` + `context_fetch_cli.ts` — the only tool a task-type headless call may use
   beyond its initial prompt (a compact page skeleton — see `page_skeleton.ts` — plus the target
-  text and worked examples). Narrow and ref-addressed on purpose: an earlier version pointed
-  Claude at the raw cached page file and general `Read`/`Grep`/`Glob` access, which real runs
+  comment, worked examples, and its inlined base Gemara segment anchor). Narrow and ref-addressed on purpose:
+  an earlier version pointed Claude at the raw cached page file and general `Read`/`Grep`/`Glob` access, which real runs
   showed leads to expensive wandering across unrelated books looking for calibration examples
-  (see `RSIAgentDesignRetrospective.md`). `context_fetch_cli.ts get-refs '["ref", ...]'` /
-  `get-neighbors <ref>` / `get-prior-sugyot <ref>` are size-capped and log exactly which refs were
-  requested — that log is what auto-populates a generation record's `dependsOn` (see
-  `extractRequestedRefs`), rather than relying on the model to self-report it.
+  (see `RSIAgentDesignRetrospective.md`). `context_fetch_cli.ts find "<page>" "<phrase>"` locates
+  quoted text on another amud, while `get-refs '["ref", ...]'` / `get-neighbors <ref>` /
+  `get-prior-sugyot <ref>` are size-capped and log exactly which refs were requested — that log is
+  what auto-populates a generation record's `dependsOn` (see `extractRequestedRefs`), rather than
+  relying on the model to self-report it.
 - `rashi_tosafot_translation_cli.ts` — the CLI entrypoint for the above, kept in a separate file
   because `yargs` is ESM-only and breaks under jest; the core module stays importable by its test
   file this way. `--section`/`--limit` bound a run to one page / a handful of candidates. Supports

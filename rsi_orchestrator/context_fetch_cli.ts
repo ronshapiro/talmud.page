@@ -1,6 +1,6 @@
 import * as yargs from "yargs";
 import {hideBin} from "yargs/helpers";
-import {fetchWikipedia, getNeighborSegments, getPriorSugyaSkeleton, getRefs} from "./context_fetch";
+import {fetchWikipedia, findPhrase, getNeighborSegments, getPriorSugyaSkeleton, getRefs} from "./context_fetch";
 
 /**
  * CLI entrypoint for context_fetch.ts, invoked by a headless task-type call via
@@ -30,6 +30,37 @@ async function main(): Promise<void> {
           return;
         }
         console.log(JSON.stringify(getRefs(refs)));
+      },
+    )
+    .command(
+      "find <pageOrRef> <phrase>",
+      "Search for a Hebrew phrase on an amud (and optionally neighboring amudim) to locate its ref",
+      commandBuilder => commandBuilder
+        .positional("pageOrRef", {
+          type: "string",
+          demandOption: true,
+          describe: 'Page or ref to search on, e.g. "Bava Metzia 14b" or "Bava Metzia 14b:1"',
+        })
+        .positional("phrase", {
+          type: "string",
+          demandOption: true,
+          describe: "Hebrew phrase or words to find",
+        })
+        .options({
+          within: {
+            type: "string",
+            default: "gemara",
+            describe: 'What to search: "gemara" or a commentary name (e.g. "Rashi")',
+          },
+          before: {type: "number", default: 0, describe: "amudim before to include in search (max 3)"},
+          after: {type: "number", default: 0, describe: "amudim after to include in search (max 3)"},
+        }),
+      parsedArguments => {
+        console.log(JSON.stringify(findPhrase(parsedArguments.pageOrRef, parsedArguments.phrase, {
+          within: parsedArguments.within,
+          amudimBefore: parsedArguments.before,
+          amudimAfter: parsedArguments.after,
+        })));
       },
     )
     .command(

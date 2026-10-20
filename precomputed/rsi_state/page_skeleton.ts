@@ -3,21 +3,22 @@ import {Amud} from "../../apiTypes";
 import {Book} from "../../books";
 import {cachedOutputFilePath} from "../../cached_outputs";
 import {readUtf8} from "../../files";
-import {toFlatArray} from "../../sefariaTextType";
 
 /**
- * A compact, per-page structural index — ordered segment refs, a short preview of each, and which
- * commentaries exist with how many comments each has. Deliberately excludes full comment text
- * (a real page's full cached JSON can be 400KB+, most of it irrelevant to any single generation
- * task) — this is what a task-type prompt inlines instead of pointing at the raw cached file, with
- * `context_fetch` available for anything the skeleton alone doesn't answer.
+ * A compact, per-page structural index — ordered segment refs and which commentaries exist on each
+ * with how many comments each has. Deliberately excludes text (a real page's full cached JSON can
+ * be 400KB+, most of it irrelevant to any single generation task) — this is what a task-type
+ * prompt inlines instead of pointing at the raw cached file, so the model can construct exact refs
+ * for `context_fetch` (and `find` for locating a quoted phrase) when it needs more.
+ *
+ * Earlier versions also included the first ~8 words of each segment. Those previews were dropped:
+ * 8 words are too short to judge whether a segment is relevant or to locate a phrase a comment
+ * quotes, so they cost prompt tokens on every call without saving fetches. `context_fetch`'s
+ * `find` subcommand answers "which segment says X?" directly instead.
  */
-
-const PREVIEW_WORD_COUNT = 8;
 
 export interface SegmentSkeleton {
   ref: string;
-  preview: string;
   commentary: Record<string, number>; // commentary name -> comment count
 }
 
@@ -26,26 +27,22 @@ export interface PageSkeleton {
   segments: SegmentSkeleton[];
 }
 
-function preview(text: string): string {
-  const words = text.replace(/<[^>]*>/g, "").split(/\s+/).filter(Boolean);
-  const truncated = words.slice(0, PREVIEW_WORD_COUNT).join(" ");
-  return words.length > PREVIEW_WORD_COUNT ? `${truncated}...` : truncated;
-}
-
-export function buildPageSkeleton(book: Book, section: string): PageSkeleton | undefined {
+export function buildPageSkeleton(
+  book: Book,
+  section: string,
+  commentators?: readonly string[],
+): PageSkeleton | undefined {
   const filePath = cachedOutputFilePath(book, section);
   if (!fs.existsSync(filePath)) return undefined;
   const amud = JSON.parse(readUtf8(filePath)) as Amud;
   const segments: SegmentSkeleton[] = amud.sections.map(segment => {
     const commentary: Record<string, number> = {};
     for (const [name, entry] of Object.entries(segment.commentary ?? {})) {
-      commentary[name] = entry.comments.length;
+      if (!commentators || commentators.includes(name)) {
+        commentary[name] = entry.comments.length;
+      }
     }
-    return {
-      ref: segment.ref,
-      preview: preview(toFlatArray(segment.he).join(" ")),
-      commentary,
-    };
+    return {ref: segment.ref, commentary};
   });
   return {page: `${book.canonicalName} ${section}`, segments};
 }
@@ -56,6 +53,6 @@ export function formatPageSkeleton(skeleton: PageSkeleton): string {
     const commentaryList = Object.entries(segment.commentary)
       .map(([name, count]) => `${name}(${count})`)
       .join(", ");
-    return `${segment.ref}: "${segment.preview}" — commentary: ${commentaryList || "none"}`;
+    return `${segment.ref}: ${commentaryList || "no commentary"}`;
   }).join("\n");
 }

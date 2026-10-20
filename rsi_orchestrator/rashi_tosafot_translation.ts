@@ -19,7 +19,7 @@ import {
   StalenessStatus,
 } from "../precomputed/rsi_state/staleness";
 import {toFlatArray} from "../sefariaTextType";
-import {extractRequestedRefs} from "./context_fetch";
+import {extractRequestedRefs, getCommentAnchor} from "./context_fetch";
 import {AgentError, AgentBackend, getAgentRunner} from "./agent_runner";
 import {
   extractBase64Images,
@@ -51,7 +51,7 @@ export {LongThreadSessionManager, isLongThreadBackend};
  */
 
 export const TASK_TYPE = "rashi_tosafot_translation";
-const PROMPT_VERSION = "v2";
+const PROMPT_VERSION = "v3";
 // The only tool this task type's headless calls may use — see the module doc above. Scoped to
 // this exact command so it can't fall back to arbitrary Bash use.
 const CONTEXT_FETCH_ALLOWED_TOOLS = [
@@ -591,7 +591,7 @@ export function generationPrompt(candidate: TranslationCandidate, priorFeedback?
   // so a missing skeleton here means the cache was deleted/moved out from under a run in
   // progress — a real inconsistency worth failing loudly on, not a degraded-but-still-plausible
   // prompt.
-  const skeleton = buildPageSkeleton(book, candidate.section);
+  const skeleton = buildPageSkeleton(book, candidate.section, COMMENTATORS);
   if (!skeleton) {
     throw new Error(`${candidate.page} is not cached (needed to build its page skeleton)`);
   }
@@ -601,6 +601,18 @@ export function generationPrompt(candidate: TranslationCandidate, priorFeedback?
   const extractedImages = extractBase64Images(candidate.hebrewSource, {ref: candidate.ref});
   const hebrewSourceWithPlaceholders = extractedImages.textWithPlaceholders;
   const imageNote = formatGenerationImagePlaceholderNote(extractedImages.images);
+  const anchor = getCommentAnchor(candidate.ref);
+  const segmentContext = anchor
+    ? [
+      `Base Gemara segment this comment explains (${anchor.segment.ref}):`,
+      `  Hebrew: ${anchor.segment.he}`,
+      anchor.segment.en.trim() ? `  English: ${anchor.segment.en}` : undefined,
+    ].filter((line): line is string => line !== undefined).join("\n")
+    : "";
+  const existingEnglish = anchor?.comment.en.trim();
+  const existingEnglishNote = existingEnglish
+    ? `Current English translation: ${existingEnglish}`
+    : "";
 
   return [
     "Instructions (ID: TRANSLATION_TASK):",
@@ -626,17 +638,25 @@ export function generationPrompt(candidate: TranslationCandidate, priorFeedback?
     "- Wikipedia checks ARE permitted (via `npx ts-node rsi_orchestrator/context_fetch_cli.ts wikipedia ...` or curl to wikipedia.org) if needed for realia, botanical/zoological terms, historical figures, or French loanwords.",
     "- If context_fetch_cli or Wikipedia does not provide what you need, do not seek it elsewhere — translate based on the provided text and your own knowledge.",
     "",
-    "If you need the actual text of something beyond what's given above — a neighboring segment,",
-    "another commentary on this segment, or a prior sugya — you can use context_fetch_cli:",
+    "When and how to fetch context (only when needed):",
+    "- Default to translating directly without tool calls. You are an expert Talmudic translator. Over 90% of comments should be translated immediately in a single turn without running any tools.",
+    "- The base Gemara segment that this comment explains is already provided below. Most comments do not need any further text.",
+    "- DO NOT use tools as a dictionary or concordance: do NOT search for common Aramaic words, grammatical forms, Talmudic idioms, or phrases (e.g. \"שנינן\", \"כלומר\", \"הכי גרסינן\") across pages or tractates. Translate them directly using your knowledge.",
+    "- DO NOT request refs from the beginning of the tractate (such as 2a or 2b) or other tractates (e.g. Berakhot 2a) for formatting, style examples, or calibration. The worked examples above already provide the required style.",
+    "- DO NOT fetch other commentaries or surrounding comments on the page for general background reading.",
+    "- When IS a context lookup appropriate?",
+    "  1. Quoted Gemara elsewhere: If the comment explicitly quotes or cites a specific external passage (e.g. \"כדאמרינן לקמן\", \"בפרק...\", \"לעיל\", or a daf citation like \"ב\"מ יד:\") whose text is essential to understand the reference, do NOT guess segment numbers or blindly page through using get-neighbors. Use `find \"<page or ref>\" \"<Hebrew phrase>\"` to locate the exact segment ref, and then `get-refs` only that specific segment.",
+    "  2. Commentary disputes: If the comment explicitly disputes or references another commentator on the same segment (e.g. Tosafot on Rashi), check the commentary counts in the page skeleton below and use `get-refs` to fetch only that specific commentary ref.",
+    "  3. Immediate sugya flow: If the comment directly depends on the immediately preceding or following Gemara statement, use `get-neighbors \"<segment ref>\" --before 1 --after 1`.",
+    "  4. Realia / loanwords: Use `wikipedia \"<topic>\"` for realia, botanical/zoological terms, historical figures, or French loanwords.",
+    "Keep fetches minimal and targeted: request only the specific refs that directly resolve the ambiguity.",
+    "",
+    "Available context_fetch_cli commands:",
+    "  npx ts-node rsi_orchestrator/context_fetch_cli.ts find \"<page or ref>\" \"<Hebrew phrase>\" [--within gemara|<commentator>] [--before N] [--after N]",
     "  npx ts-node rsi_orchestrator/context_fetch_cli.ts get-refs '[\"<ref>\", ...]'",
-    "  npx ts-node rsi_orchestrator/context_fetch_cli.ts get-neighbors \"<segment ref>\" "
-      + "[--before N] [--after N]",
-    "  npx ts-node rsi_orchestrator/context_fetch_cli.ts get-prior-sugyot \"<any ref on this "
-      + "page>\" [--count N]",
+    "  npx ts-node rsi_orchestrator/context_fetch_cli.ts get-neighbors \"<segment ref>\" [--before N] [--after N]",
+    "  npx ts-node rsi_orchestrator/context_fetch_cli.ts get-prior-sugyot \"<any ref on this page>\" [--count N]",
     "  npx ts-node rsi_orchestrator/context_fetch_cli.ts wikipedia \"<topic>\" [--lang en|he]",
-    "Use your own judgment about whether you need any of this — most comments don't need extra",
-    "context beyond what's already above. Each call is capped in size, so ask for specific refs",
-    "rather than trying to pull in everything at once.",
     "",
     'Respond with ONLY a JSON object matching {"hebrew"?: string, "english"?: string} — include '
       + "a key only if you're proposing a change to it. No other text before or after the JSON.",
@@ -654,6 +674,8 @@ export function generationPrompt(candidate: TranslationCandidate, priorFeedback?
     `Commentator: ${candidate.commentator}`,
     `Current Hebrew text: ${hebrewSourceWithPlaceholders}`,
     imageNote,
+    ...(existingEnglishNote ? [existingEnglishNote] : []),
+    ...(segmentContext ? ["", segmentContext] : []),
     "",
     priorFeedback
       ? `Your previous attempt was rejected for this reason — fix it: ${priorFeedback}`

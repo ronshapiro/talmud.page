@@ -9,7 +9,8 @@ import {replaceBase64ImagesWithTempFileLocations} from "./base64_images";
 
 /**
  * The only way a headless task-type call gets more than what its initial prompt inlines (a page
- * skeleton + the target text — see page_skeleton.ts). Deliberately narrow and ref-addressed,
+ * skeleton + the target text and its own Gemara segment — see page_skeleton.ts and
+ * getCommentAnchor). Deliberately narrow and ref-addressed,
  * unlike raw Read/Grep/Glob filesystem access: there is no operation here that can read an
  * arbitrary file or search across books, so the "wandering into unrelated books for calibration"
  * failure mode documented in RSIAgentDesignRetrospective.md is structurally impossible, not just
@@ -246,6 +247,165 @@ export function getPriorSugyaSkeleton(ref: string, count = 2): PriorSugyaResult 
 }
 
 /**
+ * Normalizes Hebrew text for phrase search: strips HTML, nikud/cantillation, the quote marks used
+ * inside abbreviations (so ת"ש matches תש), and punctuation, then collapses whitespace. Applied to
+ * both the query and the searched text, so a phrase copied straight out of a comment — with or
+ * without its punctuation — matches the segment it quotes.
+ */
+export function normalizeForSearch(text: string): string {
+  return text
+    .replace(/<[^>]*>/g, " ")
+    .replace(/[\u0591-\u05BD\u05BF-\u05C7]/g, "")
+    .replace(/\u05BE/g, " ")
+    .replace(/["'\u05F3\u05F4\u2018\u2019\u201C\u201D]/g, "")
+    .replace(/[!(),.:;?[\]{}\u2013\u2014-]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+export const MAX_FIND_MATCHES = 8;
+export const MAX_FIND_AMUDIM_EACH_DIRECTION = 3;
+const FIND_SNIPPET_RADIUS = 60;
+
+export interface FindOptions {
+  // "gemara" (the default) searches the base Gemara segments; any other value is a commentary
+  // name (e.g. "Rashi", "Tosafot") whose top-level comments are searched instead.
+  within?: string;
+  amudimBefore?: number;
+  amudimAfter?: number;
+}
+
+export interface FindMatch {
+  ref: string;
+  snippet: string;
+}
+
+export interface FindResult {
+  matches: FindMatch[];
+  searchedPages: string[];
+  // Set when more than MAX_FIND_MATCHES entries matched — the phrase is too generic.
+  truncated?: boolean;
+  error?: string;
+}
+
+function snippetAround(text: string, start: number, length: number): string {
+  const snippetStart = Math.max(0, start - FIND_SNIPPET_RADIUS);
+  const snippetEnd = Math.min(text.length, start + length + FIND_SNIPPET_RADIUS);
+  return (snippetStart > 0 ? "…" : "")
+    + text.slice(snippetStart, snippetEnd)
+    + (snippetEnd < text.length ? "…" : "");
+}
+
+/**
+ * Locates which ref(s) on an amud (optionally a few amudim around it) contain a phrase — refs and
+ * short snippets only, not full text. This exists so that when a comment quotes or cites Gemara
+ * that isn't in its own segment (לעיל / לקמן / "(ב"מ דף יד:)"), the model can go straight to the
+ * right segment and then get-refs just that one, instead of paging through whole amudim with
+ * get-neighbors or guessing segment numbers — the single biggest source of wasted fetches in real
+ * usage logs.
+ */
+export function findPhrase(
+  pageOrRef: string,
+  phrase: string,
+  options: FindOptions = {},
+): FindResult {
+  const location = parseRefLocation(pageOrRef);
+  if (!location) {
+    return {
+      matches: [],
+      searchedPages: [],
+      error: "could not determine which book/page this is — pass e.g. \"Bava Metzia 14b\"",
+    };
+  }
+  const normalizedPhrase = normalizeForSearch(phrase);
+  if (normalizedPhrase.length < 2) {
+    return {matches: [], searchedPages: [], error: "phrase is empty after normalization"};
+  }
+  const clamp = (value: number | undefined) => Math.max(
+    0, Math.min(MAX_FIND_AMUDIM_EACH_DIRECTION, Math.floor(value ?? 0)));
+  const sections = Array.from(location.book.sections);
+  const pageIndex = sections.indexOf(location.page);
+  const pages = pageIndex === -1
+    ? [location.page]
+    : sections.slice(
+      Math.max(0, pageIndex - clamp(options.amudimBefore)),
+      pageIndex + clamp(options.amudimAfter) + 1);
+  const within = options.within ?? "gemara";
+
+  const matches: FindMatch[] = [];
+  const searchedPages: string[] = [];
+  let truncated = false;
+  for (const page of pages) {
+    const amud = loadAmud(location.book, page);
+    if (!amud) continue;
+    searchedPages.push(`${location.book.canonicalName} ${page}`);
+    const entries: {ref: string; he: ApiComment["he"]}[] = within.toLowerCase() === "gemara"
+      ? amud.sections
+      : amud.sections.flatMap(segment => segment.commentary?.[within]?.comments ?? []);
+    for (const entry of entries) {
+      const text = normalizeForSearch(toFlatArray(entry.he).join(" "));
+      const matchIndex = text.indexOf(normalizedPhrase);
+      if (matchIndex === -1) continue;
+      if (matches.length >= MAX_FIND_MATCHES) {
+        truncated = true;
+        break;
+      }
+      matches.push({
+        ref: entry.ref,
+        snippet: snippetAround(text, matchIndex, normalizedPhrase.length),
+      });
+    }
+    if (truncated) break;
+  }
+  if (searchedPages.length === 0) {
+    return {matches: [], searchedPages: [], error: "page not cached"};
+  }
+  return truncated ? {matches, searchedPages, truncated} : {matches, searchedPages};
+}
+
+export interface CommentAnchor {
+  // The base Gemara segment the comment is attached to.
+  segment: RefEntry;
+  comment: RefEntry;
+}
+
+function commentMatchesRef(comment: ApiComment, targetRef: string): boolean {
+  if (comment.ref === targetRef) return true;
+  for (const commentary of Object.values(comment.commentary ?? {})) {
+    for (const nestedComment of commentary.comments) {
+      if (commentMatchesRef(nestedComment, targetRef)) return true;
+    }
+  }
+  return false;
+}
+
+/**
+ * The Gemara segment a commentary comment is attached to, plus the comment's own entry (for its
+ * existing English, if any) — inlined directly into the generation prompt, since real usage logs
+ * showed the most common fetch by far was exactly this (and re-fetching the target comment itself
+ * to see whether it already had a translation). Deliberately bypasses pageIndexCache: this runs in
+ * the long-lived orchestrator process rather than a one-shot CLI, where an unbounded per-page
+ * cache would grow for the whole run.
+ */
+export function getCommentAnchor(ref: string): CommentAnchor | undefined {
+  const location = parseRefLocation(ref);
+  if (!location) return undefined;
+  const amud = loadAmud(location.book, location.page);
+  if (!amud) return undefined;
+  const segment = amud.sections.find(candidateSegment => {
+    return Object.values(candidateSegment.commentary ?? {}).some(commentary => {
+      return commentary.comments.some(comment => commentMatchesRef(comment, ref));
+    });
+  });
+  if (!segment) return undefined;
+  const index = indexAmud({...amud, sections: [segment]});
+  const segmentEntry = index.get(segment.ref);
+  const commentEntry = index.get(ref);
+  if (!segmentEntry || !commentEntry) return undefined;
+  return {segment: segmentEntry, comment: commentEntry};
+}
+
+/**
  * Extracts which refs a generation call actually requested via context_fetch_cli, from the raw
  * Bash tool-use log a headless call returns (agent_runner.ts's `toolUses`). This is what makes
  * `dependsOn` auto-populated rather than self-reported — see rashi_tosafot_translation.ts.
@@ -258,6 +418,9 @@ export function extractRequestedRefs(toolUses: ToolUseRecord[]): string[] {
     const command = input?.command ?? input?.CommandLine;
     if (!command || !command.includes("context_fetch_cli")) continue;
     if (/\bwikipedia\b/.test(command)) continue;
+    // `find` only returns locator refs + snippets; whatever the model then actually reads is
+    // captured by the get-refs call that follows it.
+    if (/context_fetch_cli\.ts\s+find\b/.test(command)) continue;
     const arrayMatch = command.match(/\[[^\]]*]/);
     if (arrayMatch) {
       try {

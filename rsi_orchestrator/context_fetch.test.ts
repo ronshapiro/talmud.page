@@ -7,11 +7,14 @@ import {writeJson} from "../util/json_files";
 import {
   extractRequestedRefs,
   fetchWikipedia,
+  findPhrase,
+  getCommentAnchor,
   getNeighborSegments,
   getPriorSugyaSkeleton,
   getRefs,
   MAX_CHARS_PER_CALL,
   MAX_REFS_PER_CALL,
+  normalizeForSearch,
   parseRefLocation,
   resetPageIndexCacheForTests,
 } from "./context_fetch";
@@ -323,6 +326,105 @@ describe("extractRequestedRefs", () => {
       },
     ]);
     expect(refs).toEqual(["Zevachim 2a:1"]);
+  });
+
+  test("ignores find commands when extracting refs", () => {
+    const refs = extractRequestedRefs([
+      {
+        name: "Bash",
+        input: {
+          command: "npx ts-node rsi_orchestrator/context_fetch_cli.ts find \"Zevachim 2a\" \"ראשון\"",
+        },
+      },
+      {
+        name: "run_command",
+        input: {
+          CommandLine: "npx ts-node rsi_orchestrator/context_fetch_cli.ts get-refs '[\"Zevachim 2a:1\"]'",
+        },
+      },
+    ]);
+    expect(refs).toEqual(["Zevachim 2a:1"]);
+  });
+});
+
+describe("normalizeForSearch", () => {
+  test("strips HTML tags and cantillation/nikud", () => {
+    const rawText = "<b>וְיָצְאוּ</b> עָלֶיהָ עֲסִיקִין;";
+    expect(normalizeForSearch(rawText)).toEqual("ויצאו עליה עסיקין");
+  });
+
+  test("normalizes abbreviation quotes and punctuation", () => {
+    const textWithQuotes = 'ת"ש ("תא שמע"): אמר רב';
+    expect(normalizeForSearch(textWithQuotes)).toEqual("תש תא שמע אמר רב");
+  });
+});
+
+describe("findPhrase", () => {
+  test("returns error when page is not cached", () => {
+    expect(findPhrase("Zevachim 2a", "ראשון").error).toEqual("page not cached");
+  });
+
+  test("locates matching segments on a cached page with snippet", () => {
+    writeJson(filePath, amud());
+    const result = findPhrase("Zevachim 2a", "ראשון");
+    expect(result.matches).toHaveLength(1);
+    expect(result.matches[0].ref).toEqual("Zevachim 2a:1");
+    expect(result.matches[0].snippet).toContain("ראשון");
+    expect(result.searchedPages).toEqual(["Zevachim 2a"]);
+  });
+
+  test("matches regardless of nikud in source or query", () => {
+    writeJson(filePath, amud());
+    const result = findPhrase("Zevachim 2a", "רִאשׁוֹן");
+    expect(result.matches).toHaveLength(1);
+    expect(result.matches[0].ref).toEqual("Zevachim 2a:1");
+  });
+
+  test("searches commentary when within option is specified", () => {
+    writeJson(filePath, amud());
+    const gemaraResult = findPhrase("Zevachim 2a", "פירוש");
+    expect(gemaraResult.matches).toHaveLength(0);
+
+    const rashiResult = findPhrase("Zevachim 2a", "פירוש", {within: "Rashi"});
+    expect(rashiResult.matches).toHaveLength(1);
+    expect(rashiResult.matches[0].ref).toEqual("Rashi on Zevachim 2a:1:1");
+  });
+
+  test("rejects query that is empty after normalization", () => {
+    writeJson(filePath, amud());
+    const result = findPhrase("Zevachim 2a", ' " . ');
+    expect(result.error).toEqual("phrase is empty after normalization");
+  });
+});
+
+describe("getCommentAnchor", () => {
+  test("returns undefined if page is not cached", () => {
+    expect(getCommentAnchor("Rashi on Zevachim 2a:1:1")).toBeUndefined();
+  });
+
+  test("returns segment and comment entries for a valid commentary comment", () => {
+    writeJson(filePath, amud());
+    const anchor = getCommentAnchor("Rashi on Zevachim 2a:1:1");
+    expect(anchor).toBeDefined();
+    expect(anchor!.segment.ref).toEqual("Zevachim 2a:1");
+    expect(anchor!.segment.he).toEqual("ראשון");
+    expect(anchor!.segment.en).toEqual("first");
+    expect(anchor!.comment.ref).toEqual("Rashi on Zevachim 2a:1:1");
+    expect(anchor!.comment.he).toEqual("פירוש");
+    expect(anchor!.comment.en).toEqual("explanation");
+  });
+
+  test("finds segment for nested commentary comment", () => {
+    writeJson(filePath, amud());
+    const anchor = getCommentAnchor("Rashi on Zevachim 2a:1:1:1");
+    expect(anchor).toBeDefined();
+    expect(anchor!.segment.ref).toEqual("Zevachim 2a:1");
+    expect(anchor!.comment.ref).toEqual("Rashi on Zevachim 2a:1:1:1");
+  });
+
+  test("returns undefined for a nonexistent comment ref", () => {
+    writeJson(filePath, amud());
+    expect(getCommentAnchor("Rashi on Zevachim 2a:99:1")).toBeUndefined();
   });
 });
 

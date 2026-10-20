@@ -733,7 +733,6 @@ describe("generationPrompt", () => {
       segments: [
         {
           ref: "Menachot 80a:1",
-          preview: "מקור הבדיקה",
           commentary: {Rashi: 1},
         },
       ],
@@ -808,7 +807,6 @@ describe("base64 image decoding, placeholders, and restoration", () => {
       segments: [
         {
           ref: "Menachot 98a:1",
-          preview: "מקור הבדיקה",
           commentary: {Rashi: 1},
         },
       ],
@@ -874,7 +872,7 @@ describe("base64 image decoding, placeholders, and restoration", () => {
   test("generateViaAgent and critiqueViaAgent pass decoded images to runner and restore placeholders", async () => {
     const buildPageSkeletonSpy = jest.spyOn(pageSkeleton, "buildPageSkeleton").mockReturnValue({
       page: "Menachot 98a",
-      segments: [{ref: "Menachot 98a:1", preview: "מקור", commentary: {Rashi: 1}}],
+      segments: [{ref: "Menachot 98a:1", commentary: {Rashi: 1}}],
     });
     const recordContextUsageSpy = jest
       .spyOn(contextUsageLog, "recordContextUsage")

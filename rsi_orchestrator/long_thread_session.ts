@@ -8,6 +8,7 @@ import {
   formatGenerationImagePlaceholderNote,
 } from "./base64_images";
 import {CritiqueOutcome, TranslationCandidate} from "./rashi_tosafot_translation";
+import {getCommentAnchor} from "./context_fetch";
 
 export const DEFAULT_MAX_THREAD_TOKENS = 128 * 1024;
 export const DEFAULT_MAX_THREAD_TURNS = 10;
@@ -28,12 +29,27 @@ export function continuationGenerationPrompt(candidate: TranslationCandidate): s
     {ref: candidate.ref},
   );
   const imageNote = formatGenerationImagePlaceholderNote(images);
+  const anchor = getCommentAnchor(candidate.ref);
+  const segmentContext = anchor
+    ? [
+      `Base Gemara segment this comment explains (${anchor.segment.ref}):`,
+      `  Hebrew: ${anchor.segment.he}`,
+      anchor.segment.en.trim() ? `  English: ${anchor.segment.en}` : undefined,
+    ].filter((line): line is string => line !== undefined).join("\n")
+    : "";
+  const existingEnglish = anchor?.comment.en.trim();
+  const existingEnglishNote = existingEnglish
+    ? `Current English translation: ${existingEnglish}`
+    : "";
+
   return [
     "Next commentary comment to translate and punctuate on this page:",
     `Comment ref: ${candidate.ref}`,
     `Commentator: ${candidate.commentator}`,
     `Current Hebrew text: ${textWithPlaceholders}`,
     ...(imageNote ? [imageNote] : []),
+    ...(existingEnglishNote ? [existingEnglishNote] : []),
+    ...(segmentContext ? ["", segmentContext] : []),
     "",
     "Follow TRANSLATION_TASK instructions and format established above.",
   ].join("\n");
