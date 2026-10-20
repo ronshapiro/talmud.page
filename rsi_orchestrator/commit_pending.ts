@@ -1,4 +1,5 @@
 import {execFile} from "child_process";
+import * as fs from "fs";
 import {promisify} from "util";
 import {books} from "../books";
 import {mergeRefs} from "../ref_merging";
@@ -12,7 +13,9 @@ const MANAGED_PATHS = [
   "precomputed/ai_additions",
   "precomputed/rsi_state/generation_records",
   "precomputed/rsi_state/context_usage_log",
-  "precomputed/rsi_state/context_usage_log.jsonl",
+  ...(fs.existsSync("precomputed/rsi_state/context_usage_log.jsonl")
+    ? ["precomputed/rsi_state/context_usage_log.jsonl"]
+    : []),
 ];
 
 export interface CommitPendingDeps {
@@ -388,7 +391,8 @@ async function findOpenPrViaGh(
 }
 
 async function commitPendingStateViaCli(message: string, debug = false): Promise<boolean> {
-  await runSubcommand("git", ["add", ...MANAGED_PATHS], debug);
+  const existingManagedPaths = MANAGED_PATHS.filter(p => fs.existsSync(p));
+  await runSubcommand("git", ["add", ...existingManagedPaths], debug);
   const {stdout: statusOut} = await runSubcommand(
     "git", ["status", "--porcelain", "--", ...MANAGED_PATHS], debug);
   if (!statusOut.trim()) {
