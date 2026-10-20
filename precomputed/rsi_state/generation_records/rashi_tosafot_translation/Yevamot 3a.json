@@ -1,0 +1,782 @@
+{
+  "Rashi on Yevamot 3a:10:1": {
+    "dependsOn": [
+      "Yevamot 3a:10",
+      "Rashi on Yevamot 3a:10:1",
+      "Rashi on Yevamot 3a:10:2",
+      "Rashi on Yevamot 3a:10:3",
+      "Rashi on Yevamot 3a:8:1",
+      "Rashi on Yevamot 3a:8:2",
+      "Rashi on Yevamot 3a:8:3",
+      "Rashi on Yevamot 3a:9:1",
+      "Rashi on Yevamot 3a:9:2",
+      "Rashi on Yevamot 2a:1:1",
+      "Rashi on Yevamot 2a:1:2",
+      "Tosafot on Yevamot 3a:10:1",
+      "Rashba on Yevamot 3a:10",
+      "Ritva on Yevamot 3a:10",
+      "Rashi on Yevamot 3a:5:1",
+      "Rashi on Yevamot 3a:6:1",
+      "Rashi on Yevamot 3a:7:1",
+      "Yevamot 3a:1",
+      "Rashi on Yevamot 2b:9:1",
+      "Rashi on Yevamot 2b:10:1"
+    ],
+    "generatedAt": "2026-10-20T13:08:03.105Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 3a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיון דבמקום מצות יבום הוא דאסירה</strong> - צרת הבת וכדמפרש במתני' דמשפטרה הכתוב מזיקת ייבום קיימא ליה באשת אח שיש לו בנים:"
+  },
+  "Rashi on Yevamot 3a:10:2": {
+    "dependsOn": [
+      "Yevamot 3a:10",
+      "Rashi on Yevamot 3a:10:1",
+      "Rashi on Yevamot 3a:10:3",
+      "Mishnah Yevamot 2:1",
+      "Yevamot 13a:1",
+      "Yevamot 13a:2",
+      "Mishnah Yevamot 1:2",
+      "Mishnah Yevamot 1:3",
+      "Mishnah Yevamot 1:4",
+      "Rashi on Yevamot 13a:3:1",
+      "Rashi on Yevamot 13a:3:2",
+      "Rashi on Yevamot 13b:1:1",
+      "Yevamot 13a:3",
+      "Yevamot 13b:1",
+      "Tosafot on Yevamot 3a:10:1",
+      "Rashi on Yevamot 3a:8:1",
+      "Rashi on Yevamot 3a:8:2",
+      "Rashi on Yevamot 3a:9:1",
+      "Rashi on Yevamot 2b:1:1",
+      "Rashi on Yevamot 2b:2:1",
+      "Rashi on Yevamot 2b:4:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 2b:3:1",
+      "Rashi on Berakhot 3a:1:1",
+      "Rashi on Berakhot 3a:7:1",
+      "Rashi on Berakhot 3a:8:1",
+      "Rashi on Berakhot 3b:1:1",
+      "Rashi on Yevamot 2a:1:1",
+      "Rashi on Yevamot 2a:1:2",
+      "Rashi on Yevamot 2a:2:1"
+    ],
+    "generatedAt": "2026-10-20T13:12:12.799Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 3a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא במקום מצוה שריא</strong> - כגון נכרי שנעשה חתנו ולו אשה אחרת ומת מותרת אשתו לחמיו כדתנן לקמן <span class=\"parenthesized\">(יבמות דף יג.)</span> גבי שש עריות חמורות מאלו במתני':"
+  },
+  "Rashi on Yevamot 3a:10:3": {
+    "dependsOn": [
+      "Yevamot 3a:10",
+      "Rashi on Yevamot 3a:10:1",
+      "Rashi on Yevamot 3a:10:2",
+      "Rashi on Yevamot 3a:10:3",
+      "Yevamot 3a:8",
+      "Rashi on Yevamot 3a:8:1",
+      "Rashi on Yevamot 3a:8:2",
+      "Rashi on Yevamot 3a:8:3",
+      "Yevamot 3a:9",
+      "Rashi on Yevamot 3a:9:1",
+      "Rashi on Yevamot 3a:9:2"
+    ],
+    "generatedAt": "2026-10-20T13:15:33.417Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 3a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום הכי תנא פוטרות</strong> - דאי תנא אוסרות משמע שהבת אוסרתה עליו ליקח [וק\"ו] שלא במקום מצוה אבל פוטרות לא משתמע איסורא משום צרתה של בת אלא הבת פוטרתה מייבום ואיסורא שכיב עלה ממילא דהויא באיסור אשת אח שיש לה בנים ומשום אשת אח הוא דמיתסר שלא במקום מצוה דליכא איסור אשת אח עלה שריא:"
+  },
+  "Rashi on Yevamot 3a:11:1": {
+    "dependsOn": [
+      "Yevamot 3a:11",
+      "Rashi on Yevamot 3a:11:1",
+      "Rashi on Yevamot 3a:11:2",
+      "Rashi on Yevamot 3a:8:1",
+      "Rashi on Yevamot 3a:9:1",
+      "Rashi on Yevamot 3a:10:1",
+      "Rashi on Yevamot 2a:1:1",
+      "Rashi on Yevamot 2b:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Steinsaltz on Yevamot 3a:11:1"
+    ],
+    "generatedAt": "2026-10-20T13:22:14.605Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 3a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וליתני מן הייבום לחודיה</strong> - דהא עיקר מצוה היא וחליצה ממילא משתמע:"
+  },
+  "Rashi on Yevamot 3a:11:2": {
+    "dependsOn": [
+      "Yevamot 3a:11",
+      "Rashi on Yevamot 3a:11:1",
+      "Rashi on Yevamot 3a:8:1",
+      "Rashi on Yevamot 3a:8:2",
+      "Rashi on Yevamot 3a:10:1",
+      "Rashi on Yevamot 2a:1:1",
+      "Rashi on Yevamot 2b:1:1",
+      "Rashi on Yevamot 2b:2:1",
+      "Rashi on Yevamot 2a:8:1",
+      "Rashi on Yevamot 2b:7:1",
+      "Rashi on Yevamot 3a:4:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1"
+    ],
+    "generatedAt": "2026-10-20T13:24:19.831Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 3a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"א מיחלץ חלצה</strong> - שלא להפקיע מצות ייבום אבל יבומי לא משום גזירת הכתוב דלצרור קמ\"ל מתני' הואיל ופטרה הבת מזיקת יבום פטורה מן החליצה דכל העולה לזיקת ייבום עולה לזיקת חליצה וכל שאין עולה לזיקת ייבום פטורה מן החליצה וכל היכא דאמרינן חולצת ולא מתייבמת משום ספקא הוא:"
+  },
+  "Rashi on Yevamot 3a:12:1": {
+    "dependsOn": [
+      "Yevamot 3a:12",
+      "Rashi on Yevamot 3a:12:2",
+      "Rashi on Yevamot 3a:1:1",
+      "Rashi on Yevamot 3a:1:2",
+      "Rashi on Yevamot 3a:2:1",
+      "Rashi on Yevamot 2a:1:1",
+      "Rashi on Yevamot 2b:1:1"
+    ],
+    "generatedAt": "2026-10-20T13:27:31.623Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 3a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וניתני ייבום ברישא</strong> - דהוא עיקר דהא כתיב אם לא יחפוץ האיש לקחת וחלצה <span class=\"parenthesized\">(דברים כ״ה:ז׳)</span> הא אם חפץ לייבם מייבם אלמא מצות ייבום ברישא:"
+  },
+  "Rashi on Yevamot 3a:12:2": {
+    "dependsOn": [
+      "Yevamot 3a:12",
+      "Rashi on Yevamot 3a:12:1",
+      "Rashi on Yevamot 3a:12:2",
+      "Yevamot 39b:1",
+      "Yevamot 39b:2",
+      "Yevamot 39b:3",
+      "Rashi on Yevamot 3a:1:1",
+      "Rashi on Yevamot 3a:5:1",
+      "Rashi on Yevamot 3a:6:1",
+      "Rashi on Yevamot 3a:8:1",
+      "Rashi on Yevamot 3a:10:1",
+      "Rashi on Yevamot 2a:1:1",
+      "Rashi on Yevamot 2a:1:2",
+      "Rashi on Yevamot 2b:1:1"
+    ],
+    "generatedAt": "2026-10-20T13:34:04.569Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 3a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבא שאול היא</strong> - בפ' החולץ <span class=\"parenthesized\">(לקמן יבמות לט:)</span> אבא שאול אומר הכונס יבמתו לשום נוי ולשום אישות כאילו פוגע בערוה וקרוב בעיני להיות הולד ממזר:"
+  },
+  "Rashi on Yevamot 3a:13:1": {
+    "dependsOn": [
+      "Rashi on Yevamot 3a:13:1",
+      "Rashi on Yevamot 3a:13:2",
+      "Yevamot 3a:13"
+    ],
+    "generatedAt": "2026-10-20T13:37:35.268Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 3a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנינא דרישא</strong> - דמשמע ט\"ו ותו לא:"
+  },
+  "Rashi on Yevamot 3a:13:2": {
+    "dependsOn": [
+      "Rashi on Yevamot 3a:13:1",
+      "Rashi on Yevamot 3a:13:2",
+      "Yevamot 3a:13",
+      "Rashi on Yevamot 3a:8:1",
+      "Rashi on Yevamot 3a:8:2",
+      "Rashi on Yevamot 3a:11:1",
+      "Rashi on Yevamot 3a:12:1",
+      "Yevamot 3b:1",
+      "Rashi on Yevamot 3b:1:1",
+      "Rashi on Yevamot 3b:1:2"
+    ],
+    "generatedAt": "2026-10-20T13:39:33.916Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 3a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנינא דסיפא</strong> - הרי אלו פוטרות דמשמע אלו ותו לא:"
+  },
+  "Rashi on Yevamot 3a:1:1": {
+    "dependsOn": [
+      "Yevamot 3a:1",
+      "Rashi on Yevamot 3a:1:1",
+      "Rashi on Yevamot 3a:1:2",
+      "Rashi on Yevamot 2b:1:1",
+      "Rashi on Yevamot 2b:2:1",
+      "Rashi on Yevamot 2b:3:1",
+      "Rashi on Yevamot 2b:4:1",
+      "Rashi on Yevamot 2b:5:1",
+      "Rashi on Yevamot 2a:1:1",
+      "Rashi on Yevamot 2a:1:2",
+      "Rashi on Yevamot 2a:1:3",
+      "Rashi on Yevamot 2b:9:1",
+      "Rashi on Yevamot 2b:9:2",
+      "Yevamot 2b:9",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Yevamot 3a:2:1",
+      "Rashi on Yevamot 3a:3:1",
+      "Tosafot on Yevamot 3a:2:1"
+    ],
+    "generatedAt": "2026-10-20T11:52:27.327Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 3a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כולהו נמי</strong> - לענין פטור ייבום מדרשא אתיין מאחות אשה:"
+  },
+  "Rashi on Yevamot 3a:1:2": {
+    "dependsOn": [
+      "Yevamot 3a:1",
+      "Rashi on Yevamot 3a:1:1",
+      "Rashi on Yevamot 3a:1:2",
+      "Rashi on Yevamot 3a:4:1",
+      "Rashi on Yevamot 3a:5:1",
+      "Rashi on Yevamot 3a:5:2",
+      "Rashi on Yevamot 3a:5:3",
+      "Rashi on Yevamot 2a:1:1",
+      "Rashi on Yevamot 2a:1:2",
+      "Rashi on Yevamot 2b:1:1",
+      "Rashi on Yevamot 2b:2:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Yevamot 2a:8:1",
+      "Rashi on Yevamot 2a:9:1",
+      "Rashi on Yevamot 3a:3:1",
+      "Tosafot on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Steinsaltz on Yevamot 3a:1:1",
+      "Steinsaltz on Yevamot 3a:1:2",
+      "Steinsaltz on Yevamot 3a:1",
+      "Rashi on Berakhot 4b:1:1",
+      "Rashi on Berakhot 4b:2:1"
+    ],
+    "generatedAt": "2026-10-20T11:56:03.348Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 3a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עיקר איסורייהו</strong> - שאסורים משום ערוה בכל מקום בהדיא כתיב בהו אבל בתו מאנוסתו דאיירי בה במתני' עיקר איסורה מדרשא אתיא:"
+  },
+  "Rashi on Yevamot 3a:2:1": {
+    "dependsOn": [
+      "Yevamot 3a:2",
+      "Rashi on Yevamot 3a:2:1",
+      "Yevamot 3a:1",
+      "Yevamot 3a:3",
+      "Rashi on Yevamot 3a:3:1",
+      "Rashi on Yevamot 2b:1:1",
+      "Rashi on Yevamot 2b:2:1",
+      "Rashi on Yevamot 2b:3:1",
+      "Rashi on Yevamot 2a:1:1",
+      "Rashi on Yevamot 2a:1:2",
+      "Rashi on Yevamot 2a:1:3",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1"
+    ],
+    "generatedAt": "2026-10-20T12:02:48.306Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 3a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אתיא הנה הנה</strong> - לאיסורא אתיא זמה זמה לשריפה. דבתו מאשתו וכן בת בתו ובת בנו ילפא מערות אשה ובתה לא תגלה והרי בתו מאשתו בכלל בת אשתו אבל בתו מאנוסתו לא משתמעא דכתיב ערות אשה ולשון אישות דעל ידי קידושין משמע וגלי רחמנא בבת בתו ובת בנו מאנוסתו בהאי קרא ערות בת בנך או בת בתך והכא לשון אישות לא כתיב ואכתי בתו לא כתיב הכא וילפינן בג\"ש כתיב הכא בקרא דאנוסה כי ערותך הנה וכתיב בקרא אחרינא דאישות שארה הנה מה התם בתו כבת בתו אף כאן בתו כבת בתו:"
+  },
+  "Rashi on Yevamot 3a:3:1": {
+    "dependsOn": [
+      "Yevamot 3a:3",
+      "Rashi on Yevamot 3a:2:1",
+      "Rashi on Yevamot 3a:3:1",
+      "Rashi on Yevamot 3a:1:1",
+      "Rashi on Yevamot 3a:1:2",
+      "Rashi on Yevamot 3a:4:1",
+      "Rashi on Yevamot 3a:5:1",
+      "Rashi on Yevamot 2b:9:1",
+      "Rashi on Yevamot 2b:10:1",
+      "Rashi on Yevamot 2b:11:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:7:1",
+      "Rashi on Berakhot 2a:9:1",
+      "Rashi on Berakhot 2a:13:1",
+      "Rashi on Berakhot 2a:14:1",
+      "Rashi on Yevamot 2a:1:1",
+      "Rashi on Yevamot 2a:1:2",
+      "Rashi on Yevamot 2a:1:3",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Berakhot 3a:1:1",
+      "Rashi on Berakhot 3a:2:1",
+      "Rashi on Berakhot 3a:3:1",
+      "Rashi on Berakhot 4a:1:1",
+      "Rashi on Berakhot 4b:1:1"
+    ],
+    "generatedAt": "2026-10-20T12:16:19.184Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 3a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אתיא זמה זמה</strong> - לשריפה כתיב הכא בבתו מאשתו זמה היא וכתיב בשריפה זמה היא באש ישרפו מה להלן שריפה אף כאן שריפה ובתו מאנוסתו הא ילפינן מהנה הנה מבת אשתו:"
+  },
+  "Rashi on Yevamot 3a:4:1": {
+    "dependsOn": [
+      "Yevamot 3a:4",
+      "Rashi on Yevamot 3a:4:1",
+      "Rashi on Yevamot 3a:3:1",
+      "Rashi on Yevamot 3a:5:1",
+      "Rashi on Yevamot 3a:5:2",
+      "Rashi on Yevamot 3a:5:3",
+      "Rashi on Yevamot 2a:1:1",
+      "Rashi on Yevamot 2a:1:2",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Bava Metzia 2a:1:1",
+      "Yevamot 3a:1",
+      "Rashi on Yevamot 2a:2:1",
+      "Rashi on Yevamot 2a:3:1",
+      "Rashi on Yevamot 2a:4:1",
+      "Rashi on Yevamot 2b:1:1"
+    ],
+    "generatedAt": "2026-10-20T12:23:06.632Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 3a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליתני אחות אשה לבסוף</strong> - דכולהו מינה ילפי' לענין פטור ייבום לקמן:"
+  },
+  "Rashi on Yevamot 3a:5:1": {
+    "dependsOn": [
+      "Yevamot 3a:4",
+      "Yevamot 3a:5",
+      "Rashi on Yevamot 3a:5:1",
+      "Rashi on Yevamot 3a:5:2",
+      "Rashi on Yevamot 3a:5:3",
+      "Rashi on Yevamot 2a:1",
+      "Rashi on Yevamot 2b:1",
+      "Rashi on Bava Metzia 2a:1",
+      "Rashi on Yevamot 3a:4:1",
+      "Rashi on Yevamot 3a:6:1",
+      "Rashi on Yevamot 3a:7:1"
+    ],
+    "generatedAt": "2026-10-20T12:24:38.232Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 3a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להאי בבא</strong> - כל איסור [אחוותא] ליתני לבסוף ויקדים כלתו לאחותו כי היכי דתיהוי אחות אשה לבסוף:"
+  },
+  "Rashi on Yevamot 3a:5:2": {
+    "dependsOn": [
+      "Yevamot 3a:5",
+      "Rashi on Yevamot 3a:5:1",
+      "Rashi on Yevamot 3a:5:2",
+      "Rashi on Yevamot 3a:5:3",
+      "Rashi on Yevamot 3a:1:1",
+      "Rashi on Yevamot 3a:1:2",
+      "Rashi on Yevamot 3a:2:1",
+      "Rashi on Yevamot 3a:3:1",
+      "Rashi on Yevamot 3a:4:1"
+    ],
+    "generatedAt": "2026-10-20T12:28:55.264Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 3a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קורבי קורבי</strong> - הנך דקריב ליה טפי נקט ברישא:"
+  },
+  "Rashi on Yevamot 3a:5:3": {
+    "dependsOn": [
+      "Yevamot 3a:5",
+      "Rashi on Yevamot 3a:5:1",
+      "Rashi on Yevamot 3a:5:2",
+      "Rashi on Yevamot 3a:5:3",
+      "Rashi on Yevamot 3a:7:1",
+      "Rashi on Yevamot 3a:7:2"
+    ],
+    "generatedAt": "2026-10-20T12:30:05.567Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 3a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דקרובי עצמו</strong> - ואין בכולן קרובות כאלו:"
+  },
+  "Rashi on Yevamot 3a:6:1": {
+    "dependsOn": [
+      "Yevamot 3a:6",
+      "Rashi on Yevamot 3a:6:2",
+      "Rashi on Yevamot 3a:5:3",
+      "Rashi on Yevamot 3a:5:1",
+      "Rashi on Yevamot 3a:5:2",
+      "Rashi on Yevamot 3a:1:1",
+      "Rashi on Yevamot 3a:1:2",
+      "Rashi on Yevamot 2b:1:1",
+      "Rashi on Yevamot 2b:2:1",
+      "Rashi on Yevamot 2b:3:1",
+      "Rashi on Yevamot 2b:4:1",
+      "Rashi on Yevamot 2b:5:1",
+      "Rashi on Yevamot 2a:1:1",
+      "Rashi on Yevamot 2a:1:2",
+      "Rashi on Yevamot 2a:1:3",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2"
+    ],
+    "generatedAt": "2026-10-20T12:33:13.923Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 3a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למטה דידה</strong> - דאשתו ואע\"ג דהנך לאו משום קורבה דידיה אסירן ליה:"
+  },
+  "Rashi on Yevamot 3a:6:2": {
+    "dependsOn": [
+      "Yevamot 3a:6",
+      "Rashi on Yevamot 3a:6:1",
+      "Rashi on Yevamot 3a:6:2",
+      "Rashi on Yevamot 3a:1:1",
+      "Rashi on Yevamot 3a:5:1",
+      "Rashi on Yevamot 2a:1:1",
+      "Rashi on Yevamot 2b:2:1",
+      "Yevamot 3a:1",
+      "Rashi on Yevamot 2a:2:1",
+      "Rashi on Yevamot 2a:3:1",
+      "Rashi on Yevamot 2a:4:1"
+    ],
+    "generatedAt": "2026-10-20T12:35:50.869Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 3a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למעלה דידה</strong> - חמותו. ולמעלה דידיה לא מצי למיתני מידי דהא אמו לא אתיא ליה לייבום שהרי אסורה לאחיו מאביו משום אשת אביו:"
+  },
+  "Rashi on Yevamot 3a:7:1": {
+    "dependsOn": [
+      "Yevamot 3a:7",
+      "Rashi on Yevamot 3a:7:1",
+      "Rashi on Yevamot 3a:7:2",
+      "Rashba on Yevamot 3a:7:1",
+      "Tosafot on Yevamot 3a:7:1"
+    ],
+    "generatedAt": "2026-10-20T12:37:34.472Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 3a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותני אחותו ואחות אמו דקרובי עצמו</strong> - טפי מכלתו דכלתו לאו קרובתו היא אלא מכח קדושי בנו נאסרה עליו:"
+  },
+  "Rashi on Yevamot 3a:7:2": {
+    "dependsOn": [
+      "Yevamot 3a:7",
+      "Rashi on Yevamot 3a:7:1",
+      "Rashi on Yevamot 3a:5:1",
+      "Rashi on Yevamot 3a:5:2",
+      "Rashi on Yevamot 3a:6:1"
+    ],
+    "generatedAt": "2026-10-20T12:38:52.402Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 3a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובדין הוא דליקדמה לכלתו מקמי אשת אחיו שלא היה בעולמו דלאו משום קורבא הוא דאסור</strong> - כלומר וכיון דקרובין נקט ואזיל וכלתו ואשת אחיו שלא היה בעולמו ואשת אחיו מאמו לאו משום קורבא דידיה הוא דאסירן ליה בדין הוא דליתני כלתו מקמי אשת אחיו שלא היה בעולמו ומקמי אשת אחיו מאמו נמי משום דכלתו חמירא טפי מנייהו והוה ליה למנקט חומרי כיון דלא מצי למינקט קורבי:"
+  },
+  "Rashi on Yevamot 3a:8:1": {
+    "dependsOn": [
+      "Yevamot 3a:8",
+      "Rashi on Yevamot 3a:8:1",
+      "Rashi on Yevamot 3a:8:2",
+      "Rashi on Yevamot 3a:8:3",
+      "Rashi on Yevamot 3a:6:1",
+      "Rashi on Yevamot 3a:7:1",
+      "Rashi on Yevamot 3a:5:1",
+      "Rashi on Yevamot 2a:1:1",
+      "Rashi on Yevamot 2a:1:2"
+    ],
+    "generatedAt": "2026-10-20T12:43:33.599Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 3a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי איריא דקתני פוטרות</strong> - דמשמע פטורות הן ואי בעי מייבם:"
+  },
+  "Rashi on Yevamot 3a:8:2": {
+    "dependsOn": [
+      "Yevamot 3a:8",
+      "Rashi on Yevamot 3a:8:1",
+      "Rashi on Yevamot 3a:8:2",
+      "Rashi on Yevamot 3a:8:3",
+      "Rashi on Yevamot 3a:7:1",
+      "Rashi on Yevamot 3a:7:2",
+      "Rashi on Yevamot 2a:1:1",
+      "Rashi on Yevamot 2a:1:2",
+      "Rashi on Yevamot 2b:9:1",
+      "Rashi on Yevamot 2b:9:2",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3",
+      "Steinsaltz on Yevamot 3a:8:1"
+    ],
+    "generatedAt": "2026-10-20T12:48:56.587Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 3a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליתני אסורות</strong> - דהא ודאי אסורות הן מאחר שאינן זקוקות לייבום וקיימי באיסור אשת אח:"
+  },
+  "Rashi on Yevamot 3a:8:3": {
+    "dependsOn": [
+      "Yevamot 3a:8",
+      "Rashi on Yevamot 3a:8:1",
+      "Rashi on Yevamot 3a:8:2",
+      "Rashi on Yevamot 3a:8:3",
+      "Rashi on Yevamot 3a:5:1",
+      "Rashi on Yevamot 3a:6:1",
+      "Rashi on Yevamot 3a:7:1",
+      "Steinsaltz on Yevamot 3a:8:1",
+      "Steinsaltz In-Depth on Yevamot 3a:8:1",
+      "Ritva on Yevamot 3a:8:1",
+      "Maharsha on Yevamot 3a:8:1",
+      "Tosafot on Yevamot 3a:8:1",
+      "Tosafot on Yevamot 3a:8:2"
+    ],
+    "generatedAt": "2026-10-20T12:51:51.253Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 3a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"א אוסרות</strong> - לייבום. וחליצה לא משתמעא מהכא שאין איסור בחליצה והוה אמינא מיחלץ חלצי על כרחו שאין אשת אח מאב בלא בנים נפטרת בלא חליצה:"
+  },
+  "Rashi on Yevamot 3a:9:1": {
+    "dependsOn": [
+      "Yevamot 3a:9",
+      "Rashi on Yevamot 3a:9:1",
+      "Rashi on Yevamot 3a:9:2",
+      "Rashi on Yevamot 3a:8:1",
+      "Rashi on Yevamot 3a:8:2",
+      "Rashi on Yevamot 3a:8:3",
+      "Rashi on Yevamot 3a:10:1",
+      "Rashi on Yevamot 2a:1:1",
+      "Rashi on Yevamot 2a:1:2",
+      "Rashi on Yevamot 2a:1:3"
+    ],
+    "generatedAt": "2026-10-20T13:01:38.278Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 3a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי קעביד</strong> - והלכך לא שייך לשון איסור בחליצה אלא לשון פטור:"
+  },
+  "Rashi on Yevamot 3a:9:2": {
+    "dependsOn": [
+      "Yevamot 3a:9",
+      "Rashi on Yevamot 3a:9:1",
+      "Rashi on Yevamot 3a:8:1",
+      "Rashi on Yevamot 3a:8:2",
+      "Rashi on Yevamot 3a:8:3",
+      "Rashi on Yevamot 3a:10:1",
+      "Rashi on Yevamot 3a:10:2",
+      "Steinsaltz on Yevamot 3a:9:1",
+      "Rashi on Yevamot 2a:1:1",
+      "Rashi on Yevamot 2b:9:1",
+      "Rashi on Yevamot 2b:11:1",
+      "Rashi on Yevamot 2a:1:2",
+      "Rashi on Yevamot 2a:2:1",
+      "Rashi on Yevamot 2a:3:1",
+      "Rashi on Yevamot 2a:4:1"
+    ],
+    "generatedAt": "2026-10-20T13:04:39.088Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 3a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלמה לא</strong> - שייך [לשון] איסור הא ודאי שייך שאם אתה אומר חולצת אתי למימר מתייבמת:"
+  },
+  "Tosafot on Yevamot 3a:10:1": {
+    "dependsOn": [
+      "Yevamot 3a:8",
+      "Yevamot 3a:9",
+      "Yevamot 3a:10",
+      "Tosafot on Yevamot 3a:10:1",
+      "Rashi on Yevamot 3a:10:1",
+      "Rashi on Yevamot 3a:10:2",
+      "Rashi on Yevamot 3a:10:3",
+      "Tosafot on Yevamot 3a:8:1",
+      "Tosafot on Yevamot 3a:8:2",
+      "Tosafot on Yevamot 3a:2:1",
+      "Tosafot on Yevamot 3a:7:1",
+      "Tosafot on Yevamot 3a:12:1"
+    ],
+    "generatedAt": "2026-10-20T13:19:11.880Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 3a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיון דבמקום מצוה הוא דאסירה צרה</strong> - ואי הוה תני אסורות הוה משמע כל שכן שלא במקום מצוה כיון דאיסור צרה מחמת ערוה קאתי מש\"ה קתני פוטרות דהשתא במקום מצוה הוא דאסור משום דממילא קאי באיסור אשת אח:"
+  },
+  "Tosafot on Yevamot 3a:12:1": {
+    "dependsOn": [
+      "Yevamot 3a:11",
+      "Yevamot 3a:12",
+      "Rashi on Yevamot 3a:12:1",
+      "Rashi on Yevamot 3a:12:2",
+      "Maharsha on Yevamot 3a:12",
+      "Rosh on Yevamot 3a:12:1",
+      "Tosafot on Yevamot 3a:2:1",
+      "Tosafot on Yevamot 3a:7:1",
+      "Tosafot on Yevamot 3a:8:1",
+      "Tosafot on Yevamot 2a:1:1",
+      "Tosafot on Yevamot 2a:1:2"
+    ],
+    "generatedAt": "2026-10-20T13:36:16.171Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 3a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמצות חליצה קודמת</strong> - השתא דקתני תרוייהו ושונה חליצה ברישא משמע דחליצה קודמת אבל אי לא הוה תני אלא חליצה לחודה לא הוה משמע מידי:"
+  },
+  "Tosafot on Yevamot 3a:2:1": {
+    "dependsOn": [
+      "Yevamot 3a:2",
+      "Tosafot on Yevamot 3a:7:1",
+      "Tosafot on Yevamot 3a:8:1",
+      "Tosafot on Yevamot 2a:1:1",
+      "Tosafot on Yevamot 2b:1:1",
+      "Rashi on Yevamot 2a:1:1",
+      "Sanhedrin 76a:4",
+      "Sanhedrin 76a:5",
+      "Sanhedrin 76a:6",
+      "Sanhedrin 76a:1",
+      "Sanhedrin 76a:2",
+      "Sanhedrin 76a:3",
+      "Sanhedrin 75b:14",
+      "Sanhedrin 75b:15",
+      "Sanhedrin 76a:7",
+      "Sanhedrin 76a:8",
+      "Sanhedrin 76a:9",
+      "Sanhedrin 76a:10",
+      "Sanhedrin 76a:11",
+      "Sanhedrin 76a:12",
+      "Sanhedrin 76a:13",
+      "Sanhedrin 76a:14",
+      "Sanhedrin 76a:15",
+      "Sanhedrin 76a:16",
+      "Sanhedrin 76a:17",
+      "Sanhedrin 76a:18"
+    ],
+    "generatedAt": "2026-10-20T12:06:35.171Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 3a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאמר רבא אמר לי רב יצחק בר אבדימי</strong> - יש מגיהין רב משום דרב יצחק בר אבדימי היה רבו של רב כדאמר בפרק כל הבשר <span class=\"parenthesized\">(חולין דף קי. ושם)</span> איכא תנא דאתנייה לרב כחל אחוי ליה לרב יצחק בר אבדימי ובפ' כירה <span class=\"parenthesized\">(שבת מ: ושם)</span> א\"ר יצחק בר אבדימי פעם אחת נכנסתי אחר רבי לבית המרחץ כו' ולא היה רבא בימיו דביום שמת רב יהודה נולד רבא בפ' בתרא דקידושין <span class=\"parenthesized\">(ד' עב:)</span> ואר\"ת דע\"כ גרסי' הכא רבא שהיה בר פלוגתיה דאביי ואמר בפ' הנשרפין <span class=\"parenthesized\">(סנהדרין עו.)</span> בתו מאנוסתו מנלן אמר אביי ק\"ו על בת בתו ענש על בתו לא כ\"ש רבא אמר רב יצחק בר אבדימי כו' וצ\"ל דתרי יצחק בר אבדימי היו:"
+  },
+  "Tosafot on Yevamot 3a:7:1": {
+    "dependsOn": [
+      "Yevamot 3a:7",
+      "Rashi on Yevamot 3a:7:1",
+      "Rashi on Yevamot 3a:7:2",
+      "Bava Batra 128a:5",
+      "Bava Batra 128a:6",
+      "Bava Batra 128a:7",
+      "Bava Batra 128a:8",
+      "Tosafot on Bava Batra 128a:6:1",
+      "Tosafot on Bava Batra 128a:6:2",
+      "Tosafot on Sanhedrin 28a:11:1",
+      "Tosafot on Yevamot 3a:2:1",
+      "Tosafot on Yevamot 2a:1:1",
+      "Tosafot on Yevamot 2b:1:1"
+    ],
+    "generatedAt": "2026-10-20T12:42:00.897Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 3a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקמי אשת אחיו שלא היה בעולמו</strong> - וה\"ה מקמי אשת אחיו מאמו וחדא מנייהו נקט דתרוייהו לאו קרובי עצמו נינהו אלא ע\"י קידושין וכלתו שהיא אשת בנו קרובה מנייהו טפי אבל אין לומר דוקא לגבי אשת אחיו שלא היה בעולמו כלתו קרובה טפי לפי שלא היה בעולמו אבל לגבי אשת אחיו מאמו לא דבאשת בנו איפלג דרא כדאשכחן לענין עדות בב\"ב <span class=\"parenthesized\">(ד' קכח.)</span> דאפי' מאן דמכשר באבא דאבא פסיל בן אחיו דע\"כ לענין עריות אשת בנו קרובה טפי מאשת אח שהבן כרעיה דאבוה הוא דקחשיב בתו ובת בתו קרובי עצמו טפי מאחותו:"
+  },
+  "Tosafot on Yevamot 3a:8:1": {
+    "dependsOn": [
+      "Yevamot 3a:8",
+      "Tosafot on Yevamot 3a:8:1",
+      "Tosafot on Yevamot 3a:8:2",
+      "Rashi on Yevamot 3a:8:1",
+      "Ritva on Yevamot 3a:8:1",
+      "Ritva on Yevamot 3a:8:2",
+      "Maharsha on Yevamot 3a:8:1",
+      "Maharsha on Yevamot 3a:8:2",
+      "Tosafot on Yevamot 3a:2:1",
+      "Tosafot on Yevamot 3a:7:1",
+      "Tosafot on Yevamot 3a:10:1",
+      "Tosafot on Yevamot 3a:12:1",
+      "Tosafot on Yevamot 2a:1:1",
+      "Tosafot on Yevamot 2a:2:1",
+      "Tosafot on Yevamot 2b:1:1",
+      "Tosafot on Yevamot 2b:2:1",
+      "Rashi on Yevamot 2a:1:1",
+      "Rashi on Yevamot 2a:1:2",
+      "Rashi on Yevamot 2a:1:3"
+    ],
+    "generatedAt": "2026-10-20T12:57:51.467Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 3a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי איריא דתנא פוטרות</strong> - פי' דמשמע אבל אי בעי מייבם ליתני אסורות לייבם:"
+  },
+  "Tosafot on Yevamot 3a:8:2": {
+    "dependsOn": [
+      "Yevamot 3a:8",
+      "Tosafot on Yevamot 3a:8:1",
+      "Tosafot on Yevamot 3a:8:2",
+      "Tosafot on Yevamot 2a:1:1",
+      "Tosafot on Yevamot 2b:1:1"
+    ],
+    "generatedAt": "2026-10-20T12:59:04.837Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 3a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל מיחלץ חלצה קמ\"ל</strong> - אע\"ג דמסיפא שמעינן דברישא לא בעיא חליצה דקתני בסיפא כל שיכולה למאן כו' מ\"מ ניחא ליה נמי לאשמועינן ברישא גופיה:"
+  }
+}
