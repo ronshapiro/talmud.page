@@ -1,3 +1,4 @@
+import * as fs from "fs";
 import {execFile} from "child_process";
 import {promisify} from "util";
 import {books} from "../books";
@@ -388,7 +389,10 @@ async function findOpenPrViaGh(
 }
 
 async function commitPendingStateViaCli(message: string, debug = false): Promise<boolean> {
-  await runSubcommand("git", ["add", ...MANAGED_PATHS], debug);
+  const existingManagedPaths = MANAGED_PATHS.filter(managedPath => fs.existsSync(managedPath));
+  if (existingManagedPaths.length > 0) {
+    await runSubcommand("git", ["add", ...existingManagedPaths], debug);
+  }
   const {stdout: statusOut} = await runSubcommand(
     "git", ["status", "--porcelain", "--", ...MANAGED_PATHS], debug);
   if (!statusOut.trim()) {
