@@ -1,0 +1,823 @@
+{
+  "Rashi on Niddah 62b:10:1": {
+    "dependsOn": [
+      "Rashi on Niddah 62b:10:2",
+      "Rashi on Niddah 62b:10:3",
+      "Rashi on Niddah 62b:10:4",
+      "Niddah 62b:10",
+      "Rashi on Niddah 62b:11:1",
+      "Rashi on Niddah 62b:12:1",
+      "Rashi on Berakhot 27a:11:1",
+      "Rashi on Pesachim 17b:1:1",
+      "Rashi on Shabbat 15a:2:1",
+      "Rashi on Berakhot 19b:12:1",
+      "Rashi on Berakhot 19b:13:1",
+      "Rashi on Nazir 49b:1:1",
+      "Rashi on Nazir 53b:1:1",
+      "Steinsaltz on Niddah 62b:10:1",
+      "Steinsaltz In-Depth on Niddah 62b:10:1",
+      "Rashi on Pesachim 108b:10:1",
+      "Rashi on Berakhot 51a:8:1",
+      "Niddah 62b:11"
+    ],
+    "generatedAt": "2026-10-18T20:48:32.715Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 62b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רביעית דם</strong> - של מת מטמא באהל:"
+  },
+  "Rashi on Niddah 62b:10:2": {
+    "dependsOn": [
+      "Niddah 62b:10",
+      "Rashi on Niddah 62b:10:1",
+      "Rashi on Niddah 62b:10:2",
+      "Rashi on Niddah 62b:10:3",
+      "Rashi on Niddah 62b:10:4",
+      "Rashi on Niddah 62b:5:1",
+      "Rashi on Niddah 62b:5:2",
+      "Rashi on Niddah 62b:4:1",
+      "Rashi on Niddah 62a:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Pesachim 9a:1:1",
+      "Rashi on Pesachim 9a:1:2",
+      "Rashi on Shabbat 27b:1:1",
+      "Rashi on Shabbat 27b:1:2",
+      "Rashi on Shabbat 28a:1:1"
+    ],
+    "generatedAt": "2026-10-18T20:50:06.769Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 62b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הבית טמא</strong> - כלי הבית טמאין באהל:"
+  },
+  "Rashi on Niddah 62b:10:3": {
+    "dependsOn": [
+      "Niddah 62b:10",
+      "Rashi on Niddah 62b:10:1",
+      "Rashi on Niddah 62b:10:2",
+      "Rashi on Niddah 62b:10:3",
+      "Rashi on Niddah 62b:10:4"
+    ],
+    "generatedAt": "2026-10-18T20:52:57.053Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 62b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכלים דמעיקרא</strong> - שהיו שם קודם שנבלעה טמאים שנטמאו באהל:"
+  },
+  "Rashi on Niddah 62b:10:4": {
+    "dependsOn": [
+      "Niddah 62b:10",
+      "Rashi on Niddah 62b:10:1",
+      "Rashi on Niddah 62b:10:2",
+      "Rashi on Niddah 62b:10:3",
+      "Rashi on Niddah 62b:10:4",
+      "Rashi on Niddah 62b:5:1",
+      "Rashi on Niddah 62b:5:2",
+      "Rashi on Niddah 62b:5:3",
+      "Rashi on Niddah 62b:5:4",
+      "Rashi on Niddah 62a:1:1",
+      "Rashi on Niddah 62a:2:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 2b:3:1"
+    ],
+    "generatedAt": "2026-10-18T20:55:16.752Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 62b:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא בכלים דלבסוף</strong> - שבאו לבית לאחר שנבלע הדם בקרקע טהורים דתו לא מטמיא:"
+  },
+  "Rashi on Niddah 62b:11:1": {
+    "dependsOn": [
+      "Niddah 62b:11",
+      "Rashi on Niddah 62b:10:1",
+      "Rashi on Niddah 62b:10:2",
+      "Rashi on Niddah 62b:10:3",
+      "Rashi on Niddah 62b:10:4",
+      "Rashi on Niddah 62b:11:1",
+      "Tosafot on Niddah 62b:11:1",
+      "Tosafot on Niddah 62b:11:2",
+      "Niddah 62b:5",
+      "Rashi on Niddah 62b:5:1",
+      "Rashi on Niddah 62b:5:2",
+      "Rashi on Niddah 62b:5:3",
+      "Rashi on Niddah 62b:5:4",
+      "Meir Lublin on Niddah 62b:11:1",
+      "Maharshal on Niddah 62b:12:1",
+      "Steinsaltz on Niddah 62b:11:1",
+      "Steinsaltz In-Depth on Niddah 62b:11:1",
+      "Versions on Niddah 62b:11:1",
+      "Rashi on Niddah 62b:12:1",
+      "Rashi on Niddah 62b:15:1",
+      "Bava Kamma 101b:1",
+      "Rashi on Bava Kamma 101b:1:1",
+      "Bava Kamma 101b:2",
+      "Rashi on Bava Kamma 101b:2:1",
+      "Rashi on Bava Kamma 101b:2:2",
+      "Bava Kamma 101b:3",
+      "Rashi on Bava Kamma 101b:3:1",
+      "Chullin 71a:1",
+      "Chullin 71a:2",
+      "Chullin 71b:11",
+      "Chullin 71b:12",
+      "Chullin 72a:1",
+      "Niddah 62b:13",
+      "Mishnah Oholot 3:2",
+      "Bartenura on Mishnah Oholot 3:2:1",
+      "Bartenura on Mishnah Oholot 3:2:2",
+      "Bartenura on Mishnah Oholot 3:2:3",
+      "Bartenura on Mishnah Oholot 3:2:4",
+      "Bartenura on Mishnah Oholot 3:2:5",
+      "Rashi on Niddah 61b:1:1",
+      "Rashi on Niddah 62a:1:1",
+      "Rashi on Niddah 62a:2:1",
+      "Shabbat 90a:1",
+      "Rashi on Shabbat 90a:1:1",
+      "Arukh on Niddah 62b:12:1",
+      "Sefer HeArukh on Niddah 62b:12:1"
+    ],
+    "generatedAt": "2026-10-18T21:08:06.660Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 62b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם לאו טהורה</strong> - ואע\"ג דרביעית שלמה נבלעת בו. אלמא בלוע שאינו יכול לצאת להדיא אלא ע\"י הדחק כי הכא דע\"י צפון נפקא כולה וקתני טהורה:"
+  },
+  "Rashi on Niddah 62b:12:1": {
+    "dependsOn": [
+      "Niddah 62b:12",
+      "Rashi on Niddah 62b:10:1",
+      "Rashi on Niddah 62b:10:2",
+      "Rashi on Niddah 62b:11:1",
+      "Niddah 71a:1",
+      "Niddah 71a:2",
+      "Niddah 71a:5",
+      "Niddah 71a:10",
+      "Niddah 71a:15",
+      "Tosafot on Niddah 62b:12:1"
+    ],
+    "generatedAt": "2026-10-18T21:15:54.125Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 62b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דם תבוסה</strong> - האי רביעית דמקילין בה לא בבאה ממש מן המת אלא ברביעית דם תבוסה שהוא ספק ואפי' לא נבלעה אין לה טומאה ודאית כדתניא בפ' בתרא <span class=\"parenthesized\">(לקמן נדה דף עא.)</span> איזהו דם תבוסה הרוג שיצא ממנו רביעית דם בחייו ובמותו ספק יצא רובו מחיים ספק יצא רובו לאחר מיתה וטמא:"
+  },
+  "Rashi on Niddah 62b:15:1": {
+    "dependsOn": [
+      "Niddah 62b:15",
+      "Rashi on Niddah 62b:15:1",
+      "Rashi on Niddah 62b:4:1",
+      "Rashi on Niddah 62b:4:2",
+      "Rashi on Niddah 62b:5:1",
+      "Niddah 63a:1",
+      "Tosafot on Niddah 62b:15:1",
+      "Rashi on Niddah 62b:10:1",
+      "Rashi on Niddah 62b:10:2",
+      "Rashi on Niddah 62b:12:1",
+      "Niddah 62b:2",
+      "Niddah 62b:5"
+    ],
+    "generatedAt": "2026-10-18T21:32:47.408Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 62b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיון דיכול לצאת כו'</strong> - והנך חרסין אע\"ג דלא קפיד בהו להוציא כל מה שבתוכן טמאין כל זמן שלא יצא הואיל ויכול לצאת על ידי היסק:"
+  },
+  "Rashi on Niddah 62b:1:1": {
+    "dependsOn": [
+      "Niddah 62b:1",
+      "Niddah 62a:13",
+      "Niddah 62a:14",
+      "Niddah 62a:15",
+      "Niddah 62a:9",
+      "Niddah 62a:10",
+      "Niddah 62a:11",
+      "Niddah 62a:12",
+      "Rashi on Niddah 62b:2:1",
+      "Rashi on Niddah 62b:4:1",
+      "Rashi on Niddah 62b:5:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 15a:2:1",
+      "Rashi on Shabbat 3b:1:1",
+      "Rashi on Eruvin 3a:1:1",
+      "Rashi on Berakhot 10b:1:1",
+      "Rashi on Berakhot 11a:1:1",
+      "Rashi on Berakhot 12a:1:1",
+      "Rashi on Berakhot 2a:5:1",
+      "Rashi on Berakhot 2a:6:1",
+      "Rashi on Berakhot 2a:7:1",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 20b:1:1",
+      "Rashi on Berakhot 20b:2:1",
+      "Rashi on Berakhot 20b:3:1",
+      "Rashi on Berakhot 20b:4:1",
+      "Rashi on Berakhot 20b:5:1",
+      "Tosafot on Niddah 62b:1:1",
+      "Steinsaltz on Niddah 62b:1:1"
+    ],
+    "generatedAt": "2026-10-18T19:53:43.172Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 62b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מידי בקפידא תליא מילתא</strong> - בתמיה. כיון דטהרות שבינתיים טהורות אלמא לאו דם הוא אחרונות משום קפידא אמאי טמאות:"
+  },
+  "Rashi on Niddah 62b:2:1": {
+    "dependsOn": [
+      "Niddah 62b:2",
+      "Rashi on Niddah 62b:2:1",
+      "Rashi on Niddah 62b:2:2",
+      "Niddah 62b:1",
+      "Rashi on Niddah 62b:1:1",
+      "Niddah 62b:3",
+      "Tosafot on Niddah 62b:3:1"
+    ],
+    "generatedAt": "2026-10-18T19:59:33.824Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 62b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דם הנדה ודאי</strong> - כגון נדה שקנחה בסדין דם אף על גב דודאי דם הוא:"
+  },
+  "Rashi on Niddah 62b:2:2": {
+    "dependsOn": [
+      "Niddah 62b:2",
+      "Rashi on Niddah 62b:2:1",
+      "Rashi on Niddah 62b:1:1",
+      "Rashi on Niddah 62b:4:1",
+      "Rashi on Niddah 62b:4:2",
+      "Niddah 62b:3",
+      "Tosafot on Niddah 62b:3:1",
+      "Niddah 62a:5",
+      "Rashi on Niddah 61b:6:1",
+      "Rashi on Niddah 61b:6:2",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Niddah 58a:2:1",
+      "Rashi on Niddah 58a:3:1"
+    ],
+    "generatedAt": "2026-10-18T20:01:52.915Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 62b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעביר עליו ז' סממנין ומבטלו</strong> - ואפילו לא עבר הרי הוא בטל וטהור הוא הואיל ואין אדם מקפיד עליו אחר העברת הסמנין מדאזל לה חזותא:"
+  },
+  "Rashi on Niddah 62b:4:1": {
+    "dependsOn": [
+      "Niddah 62b:4",
+      "Rashi on Niddah 62b:4:2",
+      "Rashi on Niddah 62b:5:1",
+      "Rashi on Niddah 62b:5:2",
+      "Rashi on Niddah 62b:5:3",
+      "Rashi on Niddah 62b:5:4",
+      "Shabbat 82a:1",
+      "Berakhot 23a:1",
+      "Berakhot 25b:1",
+      "Berakhot 25b:2",
+      "Berakhot 25a:12",
+      "Berakhot 25a:13",
+      "Berakhot 25a:14",
+      "Shabbat 121b:7",
+      "Shabbat 121b:8",
+      "Shabbat 121b:16",
+      "Shabbat 121b:17",
+      "Shabbat 121b:10",
+      "Shabbat 121b:11",
+      "Shabbat 121b:12",
+      "Shabbat 121b:13",
+      "Shabbat 121b:9",
+      "Shabbat 142b:1",
+      "Shabbat 142b:2",
+      "Shabbat 142b:3",
+      "Beitzah 36b:2",
+      "Beitzah 36b:3",
+      "Beitzah 36b:4",
+      "Rashi on Niddah 62a:1:1",
+      "Rashi on Niddah 62a:2:1",
+      "Rashi on Niddah 61b:1:1",
+      "Rashi on Niddah 61a:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:2:1"
+    ],
+    "generatedAt": "2026-10-18T20:08:15.698Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 62b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חרסין</strong> - כגון עביט של מי רגלים של זב ושל זבה:"
+  },
+  "Rashi on Niddah 62b:4:2": {
+    "dependsOn": [
+      "Niddah 62b:4",
+      "Rashi on Niddah 62b:4:1",
+      "Rashi on Niddah 62b:4:2",
+      "Rashi on Niddah 62b:2:1",
+      "Rashi on Niddah 62b:2:2",
+      "Rashi on Niddah 62b:5:1",
+      "Rashi on Niddah 62b:5:2",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 2b:5:1",
+      "Rashi on Berakhot 3a:1:1",
+      "Rashi on Berakhot 3b:4:1",
+      "Rashi on Berakhot 4a:2:1",
+      "Rashi on Berakhot 4b:3:1",
+      "Rashi on Berakhot 5a:2:1"
+    ],
+    "generatedAt": "2026-10-18T20:12:02.730Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 62b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שסוף משקה לצאת</strong> - כלומר דרך משקה לצאת ע\"י ליבון החרס וכיון שהיו חרסין אלו בתנור בשעת היסקו יצאו המשקין ונטמא תנור מאוירו:"
+  },
+  "Rashi on Niddah 62b:5:1": {
+    "dependsOn": [
+      "Niddah 62b:4",
+      "Niddah 62b:5",
+      "Rashi on Niddah 62b:5:2",
+      "Rashi on Niddah 62b:5:3",
+      "Rashi on Niddah 62b:5:4",
+      "Rashi on Niddah 62b:4:1",
+      "Rashi on Niddah 62b:4:2",
+      "Rashi on Niddah 62b:1:1",
+      "Rashi on Niddah 62b:2:1",
+      "Rashi on Niddah 62b:2:2",
+      "Rashi on Niddah 61b:1:1",
+      "Rashi on Niddah 61b:2:1"
+    ],
+    "generatedAt": "2026-10-18T20:13:49.113Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 62b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שנו</strong> - הא דקתני הוסק אין לא הוסק לא דכל זמן שהן נבלעין בחרסין אין מטמאין את אויר התנור אלא משקין קלין שאינן אב הטומאה כגון דמעת עינו ודם מגפתו או מי רגלים דטמא מת או טמא שרץ דאפילו כשהוסק ויצאו והיו הן ממש באויר התנור לא טמאוהו אלא מדרבנן דאין משקה מטמא כלי חוץ ממשקה אב הטומאה:"
+  },
+  "Rashi on Niddah 62b:5:2": {
+    "dependsOn": [
+      "Niddah 62b:4",
+      "Niddah 62b:5",
+      "Rashi on Niddah 62b:5:1",
+      "Rashi on Niddah 62b:5:2",
+      "Rashi on Niddah 62b:5:3",
+      "Rashi on Niddah 62b:1:1",
+      "Rashi on Niddah 62b:2:1",
+      "Rashi on Niddah 62b:2:2",
+      "Rashi on Niddah 62b:4:1",
+      "Rashi on Niddah 62a:9:1",
+      "Rashi on Niddah 62a:9:2"
+    ],
+    "generatedAt": "2026-10-18T20:16:04.783Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 62b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל משקין חמורין</strong> - כגון מי רגלים של זב ושל זבה שריבה בהן הכתוב מעיינות לטמא אדם וכלים:"
+  },
+  "Rashi on Niddah 62b:5:3": {
+    "dependsOn": [
+      "Niddah 62b:4",
+      "Niddah 62b:5",
+      "Rashi on Niddah 62b:5:1",
+      "Rashi on Niddah 62b:5:2",
+      "Rashi on Niddah 62b:5:3",
+      "Rashi on Niddah 62b:5:4",
+      "Rashi on Niddah 62b:2:1",
+      "Rashi on Niddah 62b:2:2",
+      "Rashi on Niddah 62b:4:1",
+      "Rashi on Niddah 62b:4:2",
+      "Rashi on Niddah 62b:10:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3",
+      "Niddah 62b:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:4:1",
+      "Rashi on Berakhot 2a:5:1",
+      "Rashi on Niddah 62b:9:1",
+      "Rashi on Niddah 62b:9:2",
+      "Rashi on Niddah 62b:10:2",
+      "Rashi on Niddah 62b:10:3",
+      "Rashi on Niddah 62b:10:4",
+      "Rashi on Niddah 62b:11:1",
+      "Rashi on Niddah 62b:12:1",
+      "Rashi on Niddah 62b:15:1",
+      "Rashi on Berakhot 2a:7:1",
+      "Rashi on Berakhot 2a:8:1"
+    ],
+    "generatedAt": "2026-10-18T20:18:47.693Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 62b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טמא</strong> - התנור אפילו לא הוסק כיון דיכולין לצאת ע\"י היסק לאו טומאה בלועה היא ומטמאה:"
+  },
+  "Rashi on Niddah 62b:5:4": {
+    "dependsOn": [
+      "Niddah 62b:4",
+      "Niddah 62b:5",
+      "Rashi on Niddah 62b:5:1",
+      "Rashi on Niddah 62b:5:2",
+      "Rashi on Niddah 62b:5:3",
+      "Rashi on Niddah 62b:5:4",
+      "Rashi on Niddah 62b:1:1",
+      "Rashi on Niddah 62b:2:1",
+      "Rashi on Niddah 62b:2:2",
+      "Rashi on Niddah 62b:4:1",
+      "Rashi on Niddah 62b:4:2",
+      "Niddah 62a:5",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 2b:3:1",
+      "Rashi on Berakhot 4b:1:1",
+      "Rashi on Berakhot 15a:5:1",
+      "Rashi on Berakhot 20b:1:1",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Berakhot 11a:1:1",
+      "Rashi on Berakhot 13b:1:1",
+      "Rashi on Berakhot 16a:1:1"
+    ],
+    "generatedAt": "2026-10-18T20:20:51.047Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 62b:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי לא לא</strong> - דהוה ליה טומאה בלועה בחרסין וטומאה בלועה לא מטמיא כדאמר בבהמה המקשה <span class=\"parenthesized\">(חולין עא.)</span>:"
+  },
+  "Rashi on Niddah 62b:6:1": {
+    "dependsOn": [
+      "Niddah 62b:6",
+      "Niddah 62b:4",
+      "Niddah 62b:5",
+      "Niddah 62b:7",
+      "Niddah 62b:8",
+      "Niddah 62b:9",
+      "Niddah 62b:1",
+      "Niddah 61b:6",
+      "Niddah 61b:7",
+      "Niddah 62a:1",
+      "Niddah 62a:2",
+      "Rashi on Niddah 62b:6:1",
+      "Steinsaltz on Niddah 62b:6:1",
+      "Rashi on Niddah 62b:5:1",
+      "Rashi on Niddah 62b:5:2",
+      "Rashi on Niddah 62b:5:3",
+      "Rashi on Niddah 62b:5:4",
+      "Rashi on Niddah 62b:7:1",
+      "Rashi on Niddah 62a:1:1",
+      "Rashi on Niddah 62a:1:2",
+      "Rashi on Niddah 62a:1:3",
+      "Rashi on Niddah 62a:2:1",
+      "Rashi on Niddah 62a:2:2",
+      "Rashi on Niddah 62a:3:1",
+      "Rashi on Niddah 62a:4:1",
+      "Rashi on Niddah 62a:5:1",
+      "Rashi on Niddah 62a:6:1",
+      "Rashi on Niddah 62a:7:1",
+      "Rashi on Niddah 62a:8:1",
+      "Niddah 62a:7",
+      "Niddah 62a:8",
+      "Sefer HeArukh on Niddah 62b:12:1",
+      "Tosafot on Niddah 62b:7:1"
+    ],
+    "generatedAt": "2026-10-18T20:28:13.343Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 62b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טהרותיו טהורות</strong> - אי אמרת בשלמא בלוע שאינו יכול לצאת אלא ע\"י הדחק טהור משום הכי תלינן לקולא ואמרינן צבע הוא וטהור משום דאי נמי דם הוא כיון דנבלע כל כך דאין הסממנין יכולין להעבירו ואף על פי שיכול לצאת על ידי צפון טהור אלא לדידך דאמרת הואיל ויכולין לצאת על ידי היסק כי לא יצאו נמי טמאין הכא היכי תלינן לקולא לאכול תרומה תלויה דדלמא דם הוא:"
+  },
+  "Rashi on Niddah 62b:7:1": {
+    "dependsOn": [
+      "Niddah 62b:7"
+    ],
+    "generatedAt": "2026-10-18T20:29:12.398Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 62b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ליה הנח לכתמים</strong> - דעיקר תחילת גזרתן אינה אלא מדרבנן הילכך מקילינן דמדאורייתא עד שתראה בבשרה:"
+  },
+  "Rashi on Niddah 62b:8:1": {
+    "dependsOn": [
+      "Niddah 62b:8",
+      "Rashi on Niddah 62b:8:1",
+      "Rashi on Niddah 62b:5:1",
+      "Rashi on Niddah 62b:5:2",
+      "Rashi on Niddah 62b:5:3",
+      "Rashi on Niddah 62b:5:4",
+      "Rashi on Niddah 62b:6:1",
+      "Rashi on Niddah 62b:7:1",
+      "Niddah 62b:15",
+      "Niddah 63a:1",
+      "Niddah 62a:1",
+      "Rashi on Niddah 62a:1:1",
+      "Rashi on Niddah 61b:7:1",
+      "Rashi on Niddah 62a:4:1",
+      "Rashi on Niddah 62a:4:2",
+      "Rashi on Niddah 62a:2:1",
+      "Rashi on Niddah 62a:2:2",
+      "Rashi on Niddah 62a:2:3",
+      "Rashi on Niddah 62a:3:1",
+      "Tosafot on Niddah 62b:7:1",
+      "Tosafot on Niddah 62b:9:1",
+      "Tosafot on Niddah 62b:11:1",
+      "Tosafot on Niddah 62b:11:2",
+      "Tosafot on Niddah 62b:12:1",
+      "Rashi on Shabbat 90a:1:1",
+      "Rashi on Shabbat 89b:12:1",
+      "Rashi on Bekhorot 5b:5:1",
+      "Rashi on Bava Kamma 101a:1:1",
+      "Bava Kamma 93b:12",
+      "Bava Kamma 93b:13",
+      "Bava Kamma 93b:14",
+      "Bava Kamma 93b:15",
+      "Bava Kamma 93b:16",
+      "Rashi on Bava Kamma 93b:16:1",
+      "Rashi on Bava Kamma 93b:16:2"
+    ],
+    "generatedAt": "2026-10-18T20:38:20.793Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 62b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעביר עליו כו'</strong> - והא הכא דודאי דם הוא מטהרינן ליה משום דנבלע כל כך ואע\"פ שיכול לצאת ע\"י צפון:"
+  },
+  "Rashi on Niddah 62b:9:1": {
+    "dependsOn": [
+      "Niddah 62b:9",
+      "Rashi on Niddah 62b:9:1",
+      "Rashi on Niddah 62b:9:2",
+      "Rashi on Niddah 62b:5:1",
+      "Rashi on Niddah 62b:5:2",
+      "Rashi on Niddah 62b:5:3",
+      "Rashi on Niddah 62b:5:4",
+      "Rashi on Niddah 62a:1:1",
+      "Rashi on Niddah 62a:2:1",
+      "Rashi on Niddah 62b:1:1",
+      "Rashi on Niddah 60b:1:1",
+      "Rashi on Niddah 61a:1:1",
+      "Rashi on Niddah 61b:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:4:1",
+      "Rashi on Berakhot 2a:7:1",
+      "Rashi on Berakhot 2a:9:1",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 3a:1:1",
+      "Rashi on Berakhot 3a:3:1",
+      "Rashi on Berakhot 3b:1:1",
+      "Rashi on Berakhot 4a:1:1",
+      "Rashi on Berakhot 4a:2:1",
+      "Rashi on Berakhot 4b:1:1",
+      "Rashi on Berakhot 2a:5:1",
+      "Rashi on Berakhot 4b:3:1",
+      "Rashi on Berakhot 5a:1:1",
+      "Rashi on Berakhot 5b:1:1",
+      "Rashi on Berakhot 8b:1:1",
+      "Rashi on Berakhot 9a:1:1",
+      "Rashi on Niddah 2a:1:1",
+      "Rashi on Niddah 2a:1:2"
+    ],
+    "generatedAt": "2026-10-18T20:42:02.242Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 62b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר לו זו אינה משנה</strong> - ומשובשת היא הואיל ורבי לא שנאה במשנתינו שסידר את המשנה:"
+  },
+  "Rashi on Niddah 62b:9:2": {
+    "dependsOn": [
+      "Niddah 62b:9",
+      "Rashi on Niddah 62b:9:1",
+      "Rashi on Niddah 62b:9:2",
+      "Rashi on Niddah 62b:5:1",
+      "Rashi on Niddah 62b:5:2",
+      "Rashi on Niddah 62b:5:3",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Niddah 62b:2:1",
+      "Rashi on Niddah 62b:2:2",
+      "Berakhot 2a:1",
+      "Rashi on Berakhot 2a:6:1",
+      "Rashi on Berakhot 2a:6:2",
+      "Rashi on Berakhot 2a:7:1",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Berakhot 2b:2:1"
+    ],
+    "generatedAt": "2026-10-18T20:43:56.386Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 62b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר' חייא</strong> - תלמידו מנין לו:"
+  },
+  "Tosafot on Niddah 62b:11:1": {
+    "dependsOn": [
+      "Rashi on Niddah 62b:11:1",
+      "Tosafot on Bava Kamma 101b:1",
+      "Tosafot on Niddah 62b:11:2",
+      "Rashi on Niddah 62b:10:1",
+      "Rashi on Niddah 62b:10:2",
+      "Bava Kamma 101b:1",
+      "Rashi on Bava Kamma 101b:1",
+      "Rashi on Bava Kamma 101b:2:1",
+      "Rashi on Bava Kamma 101b:2:2"
+    ],
+    "generatedAt": "2026-10-18T21:10:23.414Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Niddah 62b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם מתכבסת ויוצא ממנה רביעית דם</strong> - פרש\"י בהגוזל <span class=\"parenthesized\">(ב\"ק קא:)</span> שיתנו מים במדה ואם כשיסחטנו לחוץ ימצאו רביעית יותר א\"כ ודאי היה בו רביעית דם וקשה דאפילו לא ימצאו רביעית יותר מ\"מ יכול להיות שהיה בו רביעית שהרי הכסות בלועה גם מן המים וגם מן הדם שאין הכל יכול לצאת ונראה כדתניא בתוספתא דאהלות <span class=\"parenthesized\">(פ\"ד)</span> רביעית דם שבלוע בכסות כיצד משערין אותו מביא מים במדה ומכבס ומביא מים אחרים ונותן בתוכו רביעית דם ואם היה שוה מראיהן טמאה שאם כן גם מן הבגד יצא רביעית דם שהרי גם מן המים ומן הדם נשארו בבגד ולא יהיה מראהו שוה אם לא היה בו רביעית דם מתחלה ואם תאמר ומה צריך מדה למים הראשונים לא היה צריך אלא שיתן מים במדה שיצא מן הבגד פחות רביעית ויתן רביעית דם לתוכו ואם ישוה מראיהן טמא וכ\"ת שלא הזכיר מדה ראשונה אלא לתת מן השניה כמדתה הלא על כרחך אינו צריך מן השניים כשיעור שבלעה כסות מן הראשונים ויש לומר דמשום הכי נקט מדה בראשונה שאם ימצא רביעית יותר א\"צ לחזור ולטרוח ולהביא מים שניים כדפרש\"י:"
+  },
+  "Tosafot on Niddah 62b:11:2": {
+    "dependsOn": [
+      "Niddah 62b:10",
+      "Niddah 62b:11",
+      "Tosafot on Niddah 62b:11:1"
+    ],
+    "generatedAt": "2026-10-18T21:12:19.927Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Niddah 62b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם לאו טהורה</strong> - אע\"ג דכל הרביעית נבלע בבגד וא\"ת משעה שנפל עליה יחד נטמא הכסות וי\"ל דמיירי דקודם שנפל רביעית נבלע בכסות מה שאינו יכול לצאת ע\"י סתם כבוס ונתבטל בבגד ולא היה רביעית שלם מעולם:"
+  },
+  "Tosafot on Niddah 62b:12:1": {
+    "dependsOn": [
+      "Tosafot on Niddah 62b:11:1",
+      "Tosafot on Niddah 62b:11:2",
+      "Tosafot on Niddah 62b:13:1",
+      "Tosafot on Niddah 62b:1:1",
+      "Tosafot on Niddah 62b:3:1",
+      "Tosafot on Niddah 62b:7:1",
+      "Tosafot on Niddah 62b:9:1",
+      "Rashi on Niddah 62b:12:1",
+      "Steinsaltz on Niddah 62b:12:1",
+      "Tosafot on Niddah 62a:1:1",
+      "Tosafot on Niddah 62a:2:1",
+      "Tosafot on Niddah 61b:1:1",
+      "Niddah 62b:12"
+    ],
+    "generatedAt": "2026-10-18T21:21:17.414Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Niddah 62b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקולי רביעיות שנו כאן</strong> - תימה דבהגוזל קמא <span class=\"parenthesized\">(ב\"ק דף קא.)</span> פריך תנא בגד שצבעו בקליפי ערלה ידלק אלמא חזותא מילתא היא ורמינהי רביעית דם שנבלע בבגד כו' ומשני מקולי רביעיות שנו כאן והא הך שינויא לא הוי אלא לר\"ל א\"כ תקשה לר' יוחנן וי\"ל דלר' יוחנן לא קשה מידי טומאה לערלה דגבי טומאה משום קפידא וכיון דאינו יכול לצאת אלא ע\"י הדחק בטל דטומאה בלועה לא מטמיא אבל גבי ערלה ניחא ליה בחזותא ולא מבטל ליה והתם משני שינוייא דמהני לר\"ל וה\"ק אפילו לפי דבריך שאתה מדמה טומאה לאיסור לא קשה דדם תבוסה דרבנן:"
+  },
+  "Tosafot on Niddah 62b:13:1": {
+    "dependsOn": [
+      "Niddah 62b:10",
+      "Niddah 62b:11",
+      "Niddah 62b:12",
+      "Niddah 62b:13",
+      "Niddah 62b:14",
+      "Niddah 62b:15",
+      "Tosafot on Niddah 62b:11:1",
+      "Tosafot on Niddah 62b:11:2",
+      "Tosafot on Niddah 62b:12:1",
+      "Rashi on Niddah 62b:12:1",
+      "Rashi on Niddah 62b:15:1",
+      "Niddah 62b:1",
+      "Niddah 62a:5",
+      "Niddah 62a:10",
+      "Maharshal on Niddah 62b:13:1",
+      "Maharsha on Niddah 62b:14:1"
+    ],
+    "generatedAt": "2026-10-18T21:30:32.647Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Niddah 62b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא יכול לצאת טמא</strong> - ואם תאמר ומאי קושיא דלמא הכי פירושו כל הבלוע שאינו יכול לצאת על ידי סתם תכבוסת טהור אע\"ג דיכול לצאת על ידי הדחק בצפון הא יכול לצאת ע\"י סתם תכבוסת טמא דהא הך דכל הבלוע סיפא דהך דלעיל שנבלע בכסות והאי בסתם תכבוסת אוקמינן ופרישנא ואם לאו טהורה אע\"ג דיכול לצאת ע\"י הדחק בצפון ואדרבה קשיא לריש לקיש ויש לומר דהך דכל הבלוע משמע שאינו יכול לצאת כלל דסתמא קתני ואפילו הכי קיימא שפיר ארישא דה\"פ לריש לקיש שכל הבלוע שאינו יכול לצאת אפילו על ידי הדחק בצפון טהורה ואם לאו דיכול לצאת ע\"י הדחק טמאה אפילו בטומאה דאורייתא ואם כן בדם תבוסה דרבנן אפילו יוצא על ידי הדחק טהור והשתא מפרש בסיפא ויהיב טעמא לרישא בטומאה דאורייתא דכי אינו יכול לצאת טהורה אבל יכול לצאת על ידי הדחק טמאה ולר' יוחנן דמפרש כדמשני רב פפא פירוש דרישא אם מתכבסת ויוצא ממנו בתכבוסת סתם טמא שכן דרך להקפיד עליו הואיל ויוצא בקל ואם לאו טהורה ואפילו יוצא ע\"י צפון דאין דרך להקפיד עליו כיון שאינו יוצא בתכבוסת סתם ומייתי כל הבלוע ליתן טעם לרישא דכיון דאינו יכול לצאת כלל אפילו הקפיד בפירוש אין קפידתו קפידא דבטלה דעתו אצל כל אדם שאין דרכן להקפיד ברישא נמי יכול לצאת על ידי הדחק ועל ידי כבוס סתם אינו יכול לצאת טהור הואיל ואין דרך להקפיד בסתם והיינו כדמשני רב פפא כל היכא דאינו יכול לצאת כו' והשתא רב פפא אינו סותר מה שאמר למעלה אלא בא לתרץ דה\"פ הא יכול לצאת על ידי הדחק והקפיד עליו להוציאו טמא וכי קאמר לעיל טהור בשלא הקפיד עליו להוציאו ולא היה צריך רב פפא לומר אלא התם בדקפיד אלא בא להשמיענו פלוגתא דרבי יוחנן ור\"ל דפליגי בדלא קפיד ויכול לצאת על ידי הדחק דר\"ל מטמא ור\"י מטהר:"
+  },
+  "Tosafot on Niddah 62b:1:1": {
+    "dependsOn": [
+      "Niddah 62b:1",
+      "Niddah 62a:13",
+      "Niddah 62a:14",
+      "Niddah 62a:15",
+      "Rashi on Niddah 62b:1:1",
+      "Tosafot on Niddah 62b:3:1",
+      "Tosafot on Niddah 62b:7:1",
+      "Tosafot on Niddah 62b:11:1"
+    ],
+    "generatedAt": "2026-10-18T19:56:26.182Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Niddah 62b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רבי אבא מידי בקפידא תליא מילתא</strong> - דכיון דלא עבר בראשונה נתבטל בבגד וכי עבר נמי בשניה לא טמא הבגד ביציאתו לחוץ לפי שנתבטל במי תכבוסת וא\"ת ולר' אבא תקשה אמאי נקט במתניתין הרי זה צבע אפילו דם <span class=\"parenthesized\">(נדה)</span> ודאי טהור אף למפרע דכיון דלא עבר איגלאי מילתא למפרע שנתבטל בבגד אלא ודאי בקפידא תליא מילתא וי\"ל דלא איגלאי מילתא למפרע שלא היה ראוי לעבור מתחלה ע\"י שלא עבר עתה שהרי כל שעה הוא מתייבש יותר ויותר ומעיקרא שמא היה ראוי לעבור אי נמי היה סבור כריש לקיש דמטמא טומאה בלועה לכך. אצטריך לומר ה\"ז צבע:"
+  },
+  "Tosafot on Niddah 62b:3:1": {
+    "dependsOn": [
+      "Tosafot on Niddah 62b:7:1",
+      "Tosafot on Niddah 62b:9:1",
+      "Tosafot on Niddah 62a:1:1",
+      "Tosafot on Niddah 62a:3:1",
+      "Tosafot on Niddah 61b:1:1",
+      "Tosafot on Niddah 62b:1:1",
+      "Niddah 62b:3",
+      "Tosafot on Berakhot 2a:1:1",
+      "Tosafot on Berakhot 2a:2:1",
+      "Tosafot on Berakhot 2a:9:1",
+      "Rashi on Niddah 62b:1:1",
+      "Rashi on Niddah 62b:2:1"
+    ],
+    "generatedAt": "2026-10-18T20:04:39.084Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Niddah 62b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלמא בקפידא תליא מילתא</strong> - וא\"ת אם כן מה צורך בהעברת סמנים כיון דמבטל בלבו סגי וי\"ל דבטלה דעתו אצל כל אדם אם יבטלנו בלא שבעה סממנים:"
+  },
+  "Tosafot on Niddah 62b:7:1": {
+    "dependsOn": [
+      "Niddah 62b:7",
+      "Rashi on Niddah 62b:7:1",
+      "Tosafot on Niddah 62b:7:1",
+      "Niddah 62b:11",
+      "Tosafot on Niddah 62b:11:1",
+      "Tosafot on Niddah 62b:12:1"
+    ],
+    "generatedAt": "2026-10-18T20:31:29.013Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Niddah 62b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הנח לכתמים דרבנן</strong> - מיהו כיון דרגילות לבא כתם מגופה לא מקילינן אי לאו משום דאיכא למתלי בצבע כדפירש במתניתין ולא דמי לדם תבוסה דלקמן דמקילינן משום דהוי מדרבנן אי נמי כדי לטהר אפילו למפרע נקט הרי זה צבע או שמא מתחלה שלא נתייבש כל כך היה יכול לצאת:"
+  },
+  "Tosafot on Niddah 62b:9:1": {
+    "dependsOn": [
+      "Niddah 62b:9",
+      "Rashi on Niddah 62b:9:1",
+      "Rashi on Niddah 62b:9:2",
+      "Steinsaltz on Niddah 62b:9:1",
+      "Tosafot on Niddah 62b:1:1",
+      "Tosafot on Niddah 62b:3:1",
+      "Tosafot on Niddah 62b:7:1",
+      "Tosafot on Berakhot 2a:1:1",
+      "Tosafot on Berakhot 2a:2:1",
+      "Tosafot on Berakhot 2a:3:1",
+      "Tosafot on Niddah 62b:11:1",
+      "Niddah 62b:1"
+    ],
+    "generatedAt": "2026-10-18T20:46:29.076Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Niddah 62b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי חייא מנא ליה</strong> - וא\"ת אם כן לעולם לא ניתיב תיובתא מברייתא דמתני בי ר' חייא ובי רבי אושעיא וי\"ל דבכולהו איכא למימר כדאמר אילפא בתענית <span class=\"parenthesized\">(דף כא.)</span> ובכתובות <span class=\"parenthesized\">(דף סט:)</span> כל דאמר מילתא דבי ר' חייא ור' אושעיא ולא פשיטנא ליה ממתני' כו' והך הוה פשיטא ליה לר\"ל דלא רמיזא במתניתין ועוד דסברא הוא מדנקט מתניתין כתם ולא דם נדה שמע מינה דדם נדה ודאי לא מצי לבטל ולית ליה חילוק בין להבא בין למפרע:"
+  }
+}

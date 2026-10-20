@@ -1,0 +1,645 @@
+{
+  "Rashi on Niddah 51a:10:1": {
+    "dependsOn": [
+      "Niddah 51a:10",
+      "Rashi on Niddah 51a:10:1",
+      "Rashi on Niddah 51a:10:2",
+      "Rashi on Niddah 51a:10:3",
+      "Rashi on Niddah 51a:10:4",
+      "Niddah 51a:9",
+      "Rashi on Niddah 51a:9:1"
+    ],
+    "generatedAt": "2026-10-17T11:10:01.954Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 51a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לענין מעשר</strong> - דהואיל ונמלך עליהן לאדם הויא מחשבה וחייבין במעשר:"
+  },
+  "Rashi on Niddah 51a:10:2": {
+    "dependsOn": [
+      "Niddah 51a:10",
+      "Rashi on Niddah 51a:10:1",
+      "Rashi on Niddah 51a:10:2",
+      "Rashi on Niddah 51a:10:3",
+      "Rashi on Niddah 51a:10:4",
+      "Shabbat 128a:10",
+      "Rashi on Shabbat 128a:12:1",
+      "Rashi on Shabbat 128a:14:1",
+      "Rashi on Shabbat 128a:14:2",
+      "Rashi on Shabbat 128a:14:3",
+      "Rashi on Shabbat 128a:14:4",
+      "Rashi on Shabbat 128a:15:1",
+      "Rashi on Shabbat 128a:15:2",
+      "Rashi on Shabbat 128a:15:3",
+      "Rashi on Niddah 51a:5:1",
+      "Rashi on Niddah 51a:8:1",
+      "Rashi on Niddah 51a:9:1",
+      "Rashi on Berakhot 40a:7:1",
+      "Rashi on Berakhot 40a:8:1",
+      "Rashi on Berakhot 40a:9:1",
+      "Rashi on Berakhot 36b:2:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3"
+    ],
+    "generatedAt": "2026-10-17T11:14:14.274Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 51a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הסיאה</strong> - פוליו\"ל:"
+  },
+  "Rashi on Niddah 51a:10:3": {
+    "dependsOn": [
+      "Niddah 51a:10",
+      "Rashi on Niddah 51a:10:1",
+      "Rashi on Niddah 51a:10:2",
+      "Rashi on Niddah 51a:10:3",
+      "Rashi on Niddah 51a:10:4",
+      "Shabbat 128a:12",
+      "Rashi on Shabbat 128a:12:1",
+      "Rashi on Shabbat 128a:12:2",
+      "Rashi on Shabbat 128a:12:3",
+      "Rashi on Shabbat 128a:12:4",
+      "Rashi on Shabbat 128a:12:5",
+      "Shabbat 128b:1",
+      "Shabbat 128b:2",
+      "Shabbat 128b:3",
+      "Rashi on Shabbat 128b:1:1",
+      "Rashi on Shabbat 128b:2:1",
+      "Rashi on Shabbat 128b:3:1",
+      "Rashi on Shabbat 128a:14:1",
+      "Rashi on Shabbat 128a:14:2",
+      "Rashi on Shabbat 128a:14:3",
+      "Rashi on Shabbat 128a:14:4",
+      "Rashi on Shabbat 128a:15:1",
+      "Rashi on Shabbat 128a:15:2",
+      "Rashi on Berakhot 25a:1:1",
+      "Rashi on Berakhot 36a:1:1",
+      "Rashi on Berakhot 39a:1:1",
+      "Rashi on Berakhot 40a:1:1",
+      "Rashi on Berakhot 44b:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Niddah 50a:1:1",
+      "Rashi on Niddah 50b:1:1",
+      "Rashi on Niddah 50b:2:1",
+      "Rashi on Berakhot 25a:8:1",
+      "Rashi on Berakhot 40a:7:1",
+      "Rashi on Pesachim 2a:1:1",
+      "Pesachim 39a:1",
+      "Pesachim 39a:2",
+      "Rashi on Pesachim 39a:1:1",
+      "Rashi on Pesachim 39a:2:1",
+      "Rashi on Pesachim 39a:2:2",
+      "Pesachim 39a:4",
+      "Pesachim 39a:5",
+      "Rashi on Pesachim 39a:4:1",
+      "Rashi on Pesachim 39a:5:1",
+      "Rashi on Pesachim 39a:5:2",
+      "Pesachim 39a:6",
+      "Pesachim 39a:7",
+      "Rashi on Pesachim 39a:6:1",
+      "Rashi on Pesachim 39a:7:1",
+      "Rashi on Berakhot 40a:2:1",
+      "Rashi on Berakhot 40a:3:1",
+      "Rashi on Berakhot 40a:4:1",
+      "Rashi on Berakhot 40a:5:1",
+      "Rashi on Berakhot 3a:1:1",
+      "Rashi on Berakhot 3b:1:1",
+      "Rashi on Berakhot 4a:1:1",
+      "Rashi on Niddah 2a:1:1",
+      "Rashi on Niddah 2a:1:2",
+      "Rashi on Niddah 2b:1:1",
+      "Rashi on Niddah 3a:1:1"
+    ],
+    "generatedAt": "2026-10-17T11:18:22.799Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 51a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והקורנית</strong> - שדריא\"ה:"
+  },
+  "Rashi on Niddah 51a:10:4": {
+    "dependsOn": [
+      "Niddah 51a:10",
+      "Rashi on Niddah 51a:10:1",
+      "Rashi on Niddah 51a:10:2",
+      "Rashi on Niddah 51a:10:3",
+      "Rashi on Niddah 51a:10:4",
+      "Niddah 51a:11",
+      "Rashi on Niddah 51a:11:1",
+      "Versions on Rashi on Niddah 51a:10:4",
+      "Tosafot on Niddah 51a:10:1",
+      "Steinsaltz on Niddah 51a:10",
+      "Niddah 51a:12",
+      "Niddah 51a:13",
+      "Niddah 51a:14",
+      "Rashi on Niddah 51a:12:1"
+    ],
+    "generatedAt": "2026-10-17T11:21:24.927Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 51a:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נשמרין</strong> - ס\"ד אם היו נשמרין לאכילת אדם:"
+  },
+  "Rashi on Niddah 51a:11:1": {
+    "dependsOn": [
+      "Niddah 51a:10",
+      "Niddah 51a:11",
+      "Rashi on Niddah 51a:10:1",
+      "Rashi on Niddah 51a:10:2",
+      "Rashi on Niddah 51a:10:3",
+      "Rashi on Niddah 51a:10:4",
+      "Rashi on Niddah 51a:11:1"
+    ],
+    "generatedAt": "2026-10-17T11:23:17.239Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 51a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לאו דזרען לבהמה וקתני</strong> - אם חזר ושמרן לאדם חייבין:"
+  },
+  "Rashi on Niddah 51a:12:1": {
+    "dependsOn": [
+      "Niddah 51a:11",
+      "Niddah 51a:12",
+      "Rashi on Niddah 51a:11:1",
+      "Rashi on Niddah 51a:12:1",
+      "Rashi on Niddah 51a:13:1",
+      "Rashi on Niddah 51a:10:1",
+      "Rashi on Niddah 51a:10:2",
+      "Rashi on Niddah 51a:10:3",
+      "Rashi on Niddah 51a:10:4",
+      "Rashi on Niddah 51a:1:1",
+      "Rashi on Niddah 51a:5:1",
+      "Rashi on Niddah 51a:8:1",
+      "Rashi on Niddah 51a:9:1",
+      "Rashi on Niddah 50a:1:1",
+      "Rashi on Niddah 50b:1:1",
+      "Rashi on Niddah 50b:2:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:4:1",
+      "Rashi on Berakhot 2a:5:1",
+      "Rashi on Berakhot 2a:9:1",
+      "Rashi on Berakhot 2a:11:1",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 2b:3:1",
+      "Rashi on Berakhot 3a:1:1",
+      "Rashi on Berakhot 3b:1:1",
+      "Rashi on Berakhot 4a:1:1",
+      "Rashi on Berakhot 4b:1:1"
+    ],
+    "generatedAt": "2026-10-17T11:28:23.370Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 51a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאדם קיימי</strong> - וכיון דסתמייהו לאדם מאי אם היו נשמרין הכי קאמר אם החצר משמרת פירותיה דלא הוי הפקר חייבין:"
+  },
+  "Rashi on Niddah 51a:13:1": {
+    "dependsOn": [
+      "Rashi on Niddah 51a:13:1",
+      "Rashi on Niddah 51a:13:2",
+      "Niddah 51a:13",
+      "Rashi on Niddah 50a:1:1",
+      "Rashi on Niddah 51a:9:1",
+      "Rashi on Niddah 51a:10:1",
+      "Rashi on Niddah 51a:12:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 5a:3:1",
+      "Rashi on Berakhot 12a:5:1",
+      "Rashi on Berakhot 5a:1:1",
+      "Rashi on Berakhot 5a:2:1",
+      "Rashi on Berakhot 3a:1:1",
+      "Rashi on Berakhot 4b:1:1",
+      "Rashi on Berakhot 16a:1:1",
+      "Rashi on Berakhot 15b:6:1",
+      "Rashi on Berakhot 15b:7:1",
+      "Rashi on Berakhot 20b:1:1",
+      "Rashi on Berakhot 21a:1:1",
+      "Rashi on Niddah 2a:1:1",
+      "Rashi on Niddah 2a:4:1",
+      "Rashi on Niddah 3a:1:1",
+      "Rashi on Niddah 4a:1:1"
+    ],
+    "generatedAt": "2026-10-17T11:30:16.490Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 51a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתיב רב אשי</strong> - לרבא:"
+  },
+  "Rashi on Niddah 51a:13:2": {
+    "dependsOn": [
+      "Niddah 51a:13",
+      "Rashi on Niddah 51a:13:1",
+      "Rashi on Niddah 51a:10:1",
+      "Rashi on Niddah 51a:10:2",
+      "Rashi on Niddah 51a:10:3",
+      "Rashi on Niddah 51a:10:4",
+      "Rashi on Niddah 51a:11:1",
+      "Rashi on Niddah 51a:12:1",
+      "Niddah 51a:1",
+      "Niddah 50a:12",
+      "Niddah 50a:13",
+      "Niddah 50a:14",
+      "Niddah 50a:15",
+      "Niddah 50a:16",
+      "Niddah 50b:1",
+      "Rashi on Niddah 51a:5:1",
+      "Rashi on Niddah 51a:8:1",
+      "Rashi on Niddah 51a:9:1",
+      "Rashi on Niddah 51a:15:1"
+    ],
+    "generatedAt": "2026-10-17T11:32:12.799Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 51a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם איתא</strong> - דלענין מעשר הויא מחשבה הא איכא עולשין שזרען לבהמה ונמלך עליהם לאדם דחייבין במעשר ואינן מטמאין דהא לענין טומאה אמרת לאו מחשבה היא:"
+  },
+  "Rashi on Niddah 51a:15:1": {
+    "dependsOn": [
+      "Niddah 51a:15",
+      "Rashi on Niddah 51a:15:1",
+      "Rashi on Niddah 51a:15:2",
+      "Rashi on Niddah 51a:15:3",
+      "Rashi on Niddah 49b:12:1",
+      "Rashi on Niddah 51a:10:1",
+      "Rashi on Niddah 51a:8:1"
+    ],
+    "generatedAt": "2026-10-17T11:33:32.980Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 51a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ראשית הגז</strong> - הגוזז צאנו חייב ליתן בכל שנה מן הגז מעט לכהן ובשחיטת חולין מפרש שיעורא:"
+  },
+  "Rashi on Niddah 51a:15:2": {
+    "dependsOn": [
+      "Niddah 51a:15",
+      "Rashi on Niddah 51a:15:1",
+      "Rashi on Niddah 51a:15:2",
+      "Rashi on Niddah 51a:15:3",
+      "Chullin 130a:1",
+      "Chullin 130a:2",
+      "Rashi on Chullin 130a:1:1",
+      "Rashi on Chullin 130a:2:1",
+      "Mishnah Niddah 6:9",
+      "Niddah 51b:1",
+      "Niddah 51b:2",
+      "Niddah 51b:3",
+      "Niddah 51b:4"
+    ],
+    "generatedAt": "2026-10-17T11:35:22.319Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 51a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במתנות</strong> - זרוע לחיים והקיבה:"
+  },
+  "Rashi on Niddah 51a:15:3": {
+    "dependsOn": [
+      "Niddah 51a:15",
+      "Rashi on Niddah 51a:15:1",
+      "Rashi on Niddah 51a:15:2",
+      "Rashi on Niddah 51a:15:3"
+    ],
+    "generatedAt": "2026-10-17T11:36:42.977Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 51a:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויש שחייב במתנות</strong> - כגון בקר ואינו חייב בראשית הגז:"
+  },
+  "Rashi on Niddah 51a:18:1": {
+    "dependsOn": [
+      "Niddah 51a:18",
+      "Rashi on Niddah 51a:18:1",
+      "Rashi on Niddah 51a:18:2",
+      "Niddah 51a:19",
+      "Rashi on Niddah 51a:13:1",
+      "Rashi on Niddah 51a:13:2",
+      "Rashi on Niddah 51a:15:1"
+    ],
+    "generatedAt": "2026-10-17T11:40:16.665Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 51a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ש</strong> - דמין קתני במתני':"
+  },
+  "Rashi on Niddah 51a:18:2": {
+    "dependsOn": [
+      "Niddah 51a:18",
+      "Rashi on Niddah 51a:18:1",
+      "Niddah 50a:1",
+      "Rashi on Niddah 51a:10:1",
+      "Rashi on Niddah 51a:10:2",
+      "Rashi on Niddah 51a:13:1",
+      "Rashi on Niddah 51a:15:1",
+      "Rashi on Niddah 50a:11:1",
+      "Rashi on Niddah 50b:1:1",
+      "Rashi on Niddah 50b:2:1",
+      "Rashi on Niddah 2a:1:1",
+      "Rashi on Niddah 2a:1:2",
+      "Rashi on Niddah 2a:2:1",
+      "Bava Kamma 94a:12",
+      "Bava Kamma 94a:13",
+      "Bava Kamma 94a:14",
+      "Rashi on Bava Kamma 94a:18:1",
+      "Rashi on Bava Kamma 94a:19:1",
+      "Chullin 131a:3",
+      "Chullin 131a:4",
+      "Chullin 131a:5",
+      "Chullin 131b:1",
+      "Chullin 131b:2",
+      "Chullin 131b:3",
+      "Chullin 131b:4"
+    ],
+    "generatedAt": "2026-10-17T11:43:47.803Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 51a:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ופטור מן המעשר</strong> - דהפקר פטור מן המעשר. ובפרט ובפאה להכי מחייב כדאמרינן בהגוזל בבבא קמא משום תעזוב יתירתא דכתיב במשנה תורה לא תפאר אחריך ואמר מר <span class=\"parenthesized\">(חולין דף קלא.)</span> לא תטול תפארתו ממנו והיינו פאה ודרשינן בספרי אחריך זו שכחה וכתיב לגר ליתום ולאלמנה יהיה וכתיב בתריה כי תבצור כרמך לא תעולל אחריך לגר ליתום ולאלמנה יהיה הרי פאה ושכחה ועוללות ל\"ל למהדר ומכתב בפרשה קדושים בכולהו לעני ולגר תעזוב אותם לרבות הפקר כי האי גוונא אבל הפקר גמור פטור מכולם כדתנן לעיל ונשמר פרט להפקר:"
+  },
+  "Rashi on Niddah 51a:1:1": {
+    "dependsOn": [
+      "Niddah 51a:1",
+      "Rashi on Niddah 51a:5:1",
+      "Rashi on Niddah 50b:1:1",
+      "Rashi on Niddah 50b:2:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Niddah 2a:1:1",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 2b:3:1",
+      "Rashi on Berakhot 2b:4:1",
+      "Niddah 50b:1",
+      "Niddah 50b:2",
+      "Niddah 50b:3"
+    ],
+    "generatedAt": "2026-10-17T10:49:49.488Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 51a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טומאה חמורה אינה עושה כיוצא בה</strong> - מאחר שמטמאה נבלה את האדם אין אותו אדם חוזר ומטמא אדם שאין מטמא אדם אלא אב הטומאה אבל אוכל חוזר ומטמא אוכל מדרבנן:"
+  },
+  "Rashi on Niddah 51a:20:1": {
+    "dependsOn": [
+      "Niddah 51a:20",
+      "Rashi on Niddah 51a:20:1",
+      "Rashi on Niddah 51a:20:2",
+      "Niddah 51b:1",
+      "Niddah 51b:2",
+      "Niddah 51b:3",
+      "Niddah 51b:4",
+      "Niddah 51a:10",
+      "Rashi on Niddah 51a:10:1",
+      "Rashi on Niddah 51a:10:2",
+      "Rashi on Niddah 51a:10:3",
+      "Rashi on Niddah 51a:10:4",
+      "Niddah 50a:15",
+      "Niddah 50a:16",
+      "Niddah 50a:17",
+      "Niddah 50b:1",
+      "Niddah 50b:2",
+      "Rashi on Niddah 50a:15:1",
+      "Rashi on Niddah 50a:15:2",
+      "Rashi on Niddah 50a:15:3",
+      "Niddah 50a:1",
+      "Niddah 50a:2",
+      "Niddah 49b:20",
+      "Niddah 50a:11",
+      "Niddah 50a:12",
+      "Niddah 50a:13",
+      "Niddah 50a:14",
+      "Tosafot on Niddah 51a:20:1",
+      "Tosafot on Niddah 51b:1:1",
+      "Rashi on Niddah 50a:14:1",
+      "Rashi on Niddah 50b:1:1",
+      "Rashi on Niddah 50b:2:1",
+      "Niddah 51b:5",
+      "Niddah 51b:6",
+      "Niddah 51b:7",
+      "Niddah 51b:8",
+      "Rashi on Niddah 51a:13:1",
+      "Rashi on Niddah 51a:13:2",
+      "Rashi on Niddah 51a:19:1",
+      "Rashi on Niddah 50a:11:1"
+    ],
+    "generatedAt": "2026-10-17T11:51:16.390Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 51a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנן התם כו'</strong> - האי דנקט לה הכא משום דאותיב עלה ממתני' ודר' יוחנן נמי עולשין שזרען כו' משום דאותיב עליה ממתני' נקט לה הכא:"
+  },
+  "Rashi on Niddah 51a:20:2": {
+    "dependsOn": [
+      "Niddah 51a:20",
+      "Rashi on Niddah 51a:20:1",
+      "Mishnah Peah 3:2",
+      "Bava Metzia 105b:1",
+      "Rashi on Bava Metzia 105b:1:1",
+      "Rashi on Shabbat 68a:7:2",
+      "Bava Metzia 105b:10",
+      "Bava Metzia 106a:1",
+      "Rashi on Bava Metzia 105b:10:1",
+      "Rashi on Bava Metzia 106a:1:1",
+      "Bava Metzia 106b:5",
+      "Bava Metzia 106b:6",
+      "Rashi on Bava Metzia 106b:5:1",
+      "Rashi on Bava Metzia 106b:6:1",
+      "Niddah 51b:1",
+      "Niddah 51b:2",
+      "Rashi on Niddah 51b:1:1",
+      "Rashi on Niddah 51b:2:1",
+      "Rashi on Niddah 51a:10:1",
+      "Rashi on Niddah 51a:10:2",
+      "Rashi on Niddah 51a:18:1",
+      "Steinsaltz on Niddah 51a:20:1",
+      "Steinsaltz In-Depth on Niddah 51a:20:1"
+    ],
+    "generatedAt": "2026-10-17T11:54:15.381Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 51a:20:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מודים חכמים לרבי עקיבא</strong> - אע\"פ דפליגי במנמר שדהו ושייר קלחים לחים. מנמר טיי\"ר בלע\"ז שמלקט כאן את המבושלים כל צרכן ומניח את הלחים שלא בשלו וחוזר ומלקט במקום אחר דהוה ליה מנומר. וקאמר ר' עקיבא כשהוא חוזר ולוקט נותן פאה מכל אחד ואחד שהקציר שבינתים מפסיק וחכמים אומרים פאה מאחת על הכל ומודים חכמים לרבי עקיבא בזורע שבת או חרדל כו'. להכי נקט הני שאין דרכן לעשות מהן ערוגה אלא זורען לתבלין בעלמא בשנים ושלשה מקומות. שבת אני\"ט:"
+  },
+  "Rashi on Niddah 51a:5:1": {
+    "dependsOn": [
+      "Niddah 51a:5",
+      "Rashi on Niddah 51a:5:1",
+      "Pesachim 16a:5",
+      "Pesachim 16a:11",
+      "Pesachim 16a:17",
+      "Pesachim 16b:1",
+      "Pesachim 17a:5",
+      "Pesachim 17b:1",
+      "Rashi on Pesachim 16a:11:1",
+      "Rashi on Pesachim 16a:11:2",
+      "Rashi on Pesachim 16a:11:3",
+      "Rashi on Pesachim 16a:11:4",
+      "Rashi on Pesachim 16a:11:5",
+      "Rashi on Niddah 51a:8:1",
+      "Rashi on Niddah 51a:9:1",
+      "Rashba on Niddah 51a:5:1",
+      "Chiddushei HaRitva on Niddah 51a:5:1",
+      "Steinsaltz on Niddah 51a:5:1",
+      "Steinsaltz In-Depth on Niddah 51a:5:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1"
+    ],
+    "generatedAt": "2026-10-17T10:57:02.660Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 51a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכשר שרץ</strong> - שיכשירו שרץ להביאו לידי טומאה:"
+  },
+  "Rashi on Niddah 51a:8:1": {
+    "dependsOn": [
+      "Niddah 51a:8",
+      "Rashi on Niddah 51a:5:1",
+      "Rashi on Niddah 51a:9:1",
+      "Rashi on Niddah 50b:15:1",
+      "Rashi on Niddah 50b:16:1",
+      "Rashi on Niddah 51a:1:1"
+    ],
+    "generatedAt": "2026-10-17T10:58:42.755Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 51a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאין סופן לטמא טומאה חמורה</strong> - אין לך אוכל מטמא אדם:"
+  },
+  "Rashi on Niddah 51a:9:1": {
+    "dependsOn": [
+      "Niddah 51a:9",
+      "Rashi on Niddah 51a:5:1",
+      "Rashi on Niddah 51a:8:1",
+      "Rashi on Niddah 51a:10:1",
+      "Tosafot on Niddah 51a:9:1",
+      "Rashi on Niddah 51a:9:1",
+      "Rashi on Niddah 50a:1:1",
+      "Rashi on Niddah 50b:1:1",
+      "Rashi on Niddah 51b:1:1",
+      "Rashi on Niddah 52a:1:1",
+      "Rashi on Niddah 2a:1:1",
+      "Rashi on Niddah 2a:2:1",
+      "Rashi on Niddah 2a:3:1",
+      "Rashi on Niddah 2a:4:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:2:1"
+    ],
+    "generatedAt": "2026-10-17T11:02:26.426Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 51a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שום טומאה חמורה שום טומאה קלה</strong> - לא אם אמרת בטומאה חמורה דין הוא שמטמא בלא מחשבה שלא מצינו שום טומאה ששמה טומאה חמורה שתהא צריכה הכשר תאמר בטומאה קלה דאוכלין שאע\"פ שזו אינה צריכה הכשר הרי כל אוכלין יש עליהם שום טומאה קלה וצריכין הכשר הלכך הכא נמי בעיא מחשבה:"
+  },
+  "Tosafot on Niddah 51a:11:1": {
+    "dependsOn": [
+      "Niddah 51a:10",
+      "Niddah 51a:11",
+      "Niddah 51a:12",
+      "Rashi on Niddah 51a:11:1",
+      "Rashi on Niddah 51a:10:1",
+      "Rashi on Niddah 51a:10:2",
+      "Rashi on Niddah 51a:10:3",
+      "Rashi on Niddah 51a:10:4",
+      "Mishnah Maasrot 3:5",
+      "Mishnah Maasrot 3:6",
+      "Mishnah Maasrot 3:7",
+      "Mishnah Maasrot 3:8",
+      "Mishnah Maasrot 3:9",
+      "Mishnah Sheviit 8:1"
+    ],
+    "generatedAt": "2026-10-17T11:25:08.482Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Niddah 51a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא דזרעינהו לבהמה</strong> - והא דנקט שבחצר לפי מאי דמסיק שעלו מאיליהן אתי שפיר משום דבחצר אין דרך לזרוע אלא בגינה ועוד דבחצר סתמא לאדם לפי שרואה ויודע מתי ללוקטן עד שלא יתקשו ולפי מאי דס\"ד השתא יש לפרש דנקט חצר לפי שדרך התנא למנקט חצר דגם בשאר דבר תני חצר דקתני התם תאנה עומדת בחצר אוכל אחת מהן ופטור ואם צירף חייב גפן נטוע בחצר כקורנית שבחצר שהחצר קובעת בדבר שנגמרה מלאכתו אם צירף או בלא צירוף כהנהו שאין רגילין לעשות מהן גורן והא דתנן פ\"ח דשביעית [מ\"א] כל שאינו מיוחד לא לאוכל אדם ולא לאוכל בהמה חישב עליו לאוכל אדם ולאוכל בהמה נותנין חומרי אדם וחומרי בהמה כגון האזוב והקורנית לא קשה אהא דאמרינן בשמעתין דסתמיה לאדם דהיינו דוקא בחצר כדפרישית לעיל:"
+  },
+  "Tosafot on Niddah 51a:19:1": {
+    "dependsOn": [
+      "Niddah 51a:18",
+      "Niddah 51a:19",
+      "Bava Kamma 94a:1",
+      "Temurah 6a:1",
+      "Bava Kamma 94a:11",
+      "Temurah 6a:11",
+      "Bava Kamma 94a:10",
+      "Niddah 51a:16",
+      "Niddah 51a:17",
+      "Meir Lublin on Niddah 51a:19:1",
+      "Meir Lublin on Niddah 51a:19:2"
+    ],
+    "generatedAt": "2026-10-17T11:46:51.686Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Niddah 51a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מין קתני ש\"מ</strong> - וא\"ת בריש הגוזל קמא <span class=\"parenthesized\">(ב\"ק צד.)</span> קאמר אביי דלר' ישמעאל שינוי אין קונה דקאמרי רבנן לא הפריש פאה מן הקמה יפריש מן העמרים או מן הכרי ולא מן העיסה ולר\"ש אף מן העיסה ודחי רבא בעלמא שינוי קונה והכא משום תעזוב יתירא ואביי תעזוב יתירא למפקיר כרמו אם כן לרבא מפקיר כרמו פטור מן הפאה לר\"ש וא\"כ היכי מוכח הכא דמין קתני דילמא מתני' דקתני כל שחייב בפאה חייב במעשר ר\"ש היא וי\"ל דלרבא נמי תעזוב יתירא למפקיר כרמו ותרתי ש\"מ דהא אביי נמי דדריש ליה בהגוזל קמא <span class=\"parenthesized\">(שם צד.)</span> למפקיר כרמו לכ\"ע דריש לה בפ\"ק דתמורה <span class=\"parenthesized\">(דף ו.)</span> למילתא אחריתי דקאמר התם אביי כל דאמר רחמנא לא תעביד אי עביד מהני ליה מותיב רבא והרי פאה דאמר רחמנא לא תכלה ואמרינן דאם לא הפריש מן הקמה יפריש מן העומרין או מן הכרי לרבנן או אף מן העיסה לר\"ש אלמא דלא מהני ומשני אביי התם משום תעזוב יתירא ורבא תעזוב יתירא למפקיר כרמו והשתא בין אביי ובין רבא דרשי תעזוב למפקיר כרמו ואביי דסבר דבעלמא אי עביד מהני דריש נמי מתעזוב דיפריש מן העומרים או מן הכרי או מעיסה לר\"ש דלא נימא אי עביד מהני אבל אי בעלמא שינוי קונה לר\"ש כמו בגזל אין סברא להעמיד תעזוב שיפריש מן העיסה אלא דדוקא מעמרים או מהכרי ורבא סבר דתעזוב למפקיר כרמו ולר' שמעון שיפריש מן העיסה אע\"ג דבעלמא שינוי קונה אבל להפריש מן העומרים או מן הכרי לא צריך קרא דבעלמא נמי כל דאמר רחמנא לא תעביד אי עביד לא מהני לרבא:"
+  },
+  "Tosafot on Niddah 51a:9:1": {
+    "dependsOn": [
+      "Niddah 51a:8",
+      "Niddah 51a:9",
+      "Rashi on Niddah 51a:9:1",
+      "Niddah 51a:3",
+      "Niddah 51a:1",
+      "Niddah 50b:15",
+      "Niddah 50b:16",
+      "Niddah 50b:17",
+      "Niddah 50b:18",
+      "Tosafot on Niddah 50b:15:1",
+      "Tosafot on Niddah 50b:16:1",
+      "Tosafot on Niddah 50b:17:1"
+    ],
+    "generatedAt": "2026-10-17T11:07:47.130Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Niddah 51a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שום טומאה חמורה בעולם כו'</strong> - תימה דיפרש הא דקתני דאינה יורדת לכך המחשבה גופה דלא מצינו טומאה חמורה שצריכה מחשבה בשום מקום דהא דאמרינן דנבלת בהמה ועוף טהור צריכין מחשבה היינו לטומאת אוכלין לצרף פחות מכזית ופחות מכביצה אוכלין אבל כזית מהם מטמא אדם וכלים בלא מחשבה כדפרישית אבל טומאה קלה צריכה מחשבה בעלמא ומיהו נבלה נמי בעינן שתהא ראויה לגר לבר פדא:"
+  }
+}

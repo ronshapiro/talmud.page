@@ -53,10 +53,10 @@ jobs:
           echo "Changed files in PR #${PULL_REQUEST_NUMBER}:"
           echo "$CHANGED_FILES"
 
-          NON_IGNORED_FILES=$(echo "$CHANGED_FILES" | grep -v -E '^(precomputed/ai_additions/|precomputed/rsi_state/)' | grep -v '^[[:space:]]*$' || true)
+          NON_IGNORED_FILES=$(echo "$CHANGED_FILES" | grep -v -E '^(precomputed/ai_additions/|precomputed/rsi_state/|precomputed/test_data/)' | grep -v '^[[:space:]]*$' || true)
 
           if [ -z "$NON_IGNORED_FILES" ]; then
-            echo "PR #${PULL_REQUEST_NUMBER} only modifies files in precomputed/ai_additions/ or precomputed/rsi_state/ (or diff is empty)."
+            echo "PR #${PULL_REQUEST_NUMBER} only modifies data files (or diff is empty)."
             echo "Skipping staging deployment."
             echo "should_deploy=false" >> "$GITHUB_OUTPUT"
           else

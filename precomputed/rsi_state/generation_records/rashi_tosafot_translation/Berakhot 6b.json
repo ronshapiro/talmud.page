@@ -1,41 +1,97 @@
 {
+  "Rashi on Berakhot 6b:10:1": {
+    "dependsOn": [
+      "Berakhot 6b:10",
+      "Rashi on Berakhot 6b:10:1",
+      "Rashi on Berakhot 6b:10:2",
+      "Rashi on Berakhot 6b:9:1",
+      "Rashi on Berakhot 6b:9:2",
+      "Rashi on Berakhot 6b:11:1"
+    ],
+    "generatedAt": "2026-10-14T09:49:59.779Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Berakhot 6b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לפרקא</strong> – לשמוע הדרשה:"
+  },
   "Rashi on Berakhot 6b:10:2": {
     "dependsOn": [
       "Berakhot 6b:10",
       "Rashi on Berakhot 6b:10:1",
       "Rashi on Berakhot 6b:10:2",
-      "Rashi on Berakhot 6b:11:1",
+      "Rashi on Berakhot 6b:10:3",
+      "Rashi on Berakhot 6b:2:1",
+      "Rashi on Berakhot 6b:2:2",
+      "Rashi on Berakhot 6b:2:3",
+      "Rashi on Berakhot 6b:5:1",
+      "Rashi on Berakhot 6b:6:1",
+      "Rashi on Berakhot 6b:6:2",
       "Rashi on Berakhot 6b:9:1",
       "Rashi on Berakhot 6b:9:2",
-      "Rashi on Berakhot 6a:1:1",
-      "Rashi on Berakhot 6a:2:1",
-      "Rashi on Berakhot 6a:3:1",
-      "Rashi on Berakhot 6b:6:1",
+      "Rashi on Berakhot 6b:11:1",
+      "Rashi on Berakhot 6b:12:1",
+      "Rashi on Berakhot 6b:13:1",
+      "Rashi on Berakhot 6b:15:1",
+      "Rashi on Berakhot 6b:25:1",
+      "Rashi on Berakhot 6b:32:1",
+      "Rashi on Berakhot 6b:35:1",
+      "Rashi on Berakhot 6b:36:1",
+      "Rashi on Berakhot 6b:37:1",
+      "Rashi on Berakhot 6a:7:1",
+      "Rashi on Berakhot 6a:8:1",
+      "Rashi on Berakhot 6a:8:2",
+      "Rashi on Berakhot 7a:1:1",
+      "Rashi on Berakhot 7a:2:1",
+      "Rashi on Berakhot 6b:18:1",
+      "Rashi on Berakhot 6b:20:1",
+      "Rashi on Berakhot 6b:20:2",
       "Rashi on Berakhot 2a:1:1",
-      "Rashi on Berakhot 2a:1:2",
       "Rashi on Berakhot 2a:2:1",
-      "Jastrow, פִּרְקָא 1",
-      "Steinsaltz on Berakhot 6b:10:1",
-      "Steinsaltz In-Depth on Berakhot 6b:10:1",
-      "Rashi on Berakhot 2b:1:1",
-      "Rashi on Berakhot 2b:2:1",
       "Rashi on Berakhot 3a:1:1",
-      "Rashi on Berakhot 3a:2:1",
-      "Rashi on Berakhot 3b:1:1",
-      "Rashi on Berakhot 4a:1:1",
       "Rashi on Berakhot 4b:1:1",
       "Rashi on Berakhot 5a:1:1",
-      "Rashi on Chullin 2a:1:1",
-      "Rashi on Chullin 2a:1:2",
-      "Rashi on Menachot 2a:1:1"
+      "Rashi on Berakhot 5b:1:1",
+      "Rashi on Berakhot 5b:2:1",
+      "Rashi on Berakhot 5b:3:1",
+      "Rashi on Berakhot 5b:4:1",
+      "Rashi on Berakhot 5b:5:1",
+      "Rashi on Berakhot 6b:33:1",
+      "Rashi on Berakhot 6b:29:1",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Berakhot 3b:1:1",
+      "Rashi on Berakhot 4a:1:1",
+      "Rashi on Berakhot 6a:5:1",
+      "Rashi on Berakhot 6a:6:1",
+      "Rashi on Berakhot 6a:10:1",
+      "Rashi on Berakhot 6b:8:1",
+      "Rashi on Berakhot 6b:16:1",
+      "Rashi on Berakhot 6b:17:1",
+      "Rashi on Berakhot 6b:21:1",
+      "Rashi on Berakhot 6b:22:1",
+      "Rashi on Berakhot 6b:23:1",
+      "Tosafot on Berakhot 6b:18:1",
+      "Isaiah 58:13",
+      "Shabbat 113a:10",
+      "Shabbat 113a:11",
+      "Shabbat 113b:1",
+      "Shabbat 113b:2",
+      "Shabbat 113b:3",
+      "Shabbat 113a:12",
+      "Shabbat 113a:13",
+      "Shabbat 113a:14",
+      "Rashi on Berakhot 3a:3:1",
+      "Rashi on Berakhot 4b:2:1",
+      "Rashi on Berakhot 5a:2:1"
     ],
-    "generatedAt": "2026-09-28T17:48:29.431Z",
+    "generatedAt": "2026-10-14T09:49:09.625Z",
     "model": "gemini-3.8-flash-high",
     "promptVersion": "v2",
     "sourceRefs": [
       "Rashi on Berakhot 6b:10:2"
     ],
-    "sourceText": "<strong class=\"dibur-hamatchil\">לפרקא</strong> – לשמוע הדרשה:"
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחליין רבנן שבתא</strong> – דאמר מר <span class=\"parenthesized\">(שבת ד' קיג:)</span> אסור לפסוע פסיעה גסה בשבת שנאמר אם תשיב משבת רגלך:"
   },
   "Rashi on Berakhot 6b:10:3": {
     "dependsOn": [
@@ -227,6 +283,31 @@
       "Rashi on Berakhot 6b:17:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">מילי</strong> – לשמח החתן בדברים:"
+  },
+  "Rashi on Berakhot 6b:18:1": {
+    "dependsOn": [
+      "Berakhot 6b:18",
+      "Berakhot 6b:19",
+      "Tosafot on Berakhot 6b:18:1",
+      "Tosefta Megillah 3:21",
+      "Tosefta Megillah 3:22",
+      "Tosefta Megillah 3:23",
+      "Maharsha on Berakhot 6b:18:1",
+      "Steinsaltz on Berakhot 6b:18:1",
+      "Rashi on Berakhot 6b:20:1",
+      "Rashi on Berakhot 6b:20:2",
+      "Shulchan Arukh on Berakhot 6b:18:1",
+      "Mishneh Torah on Berakhot 6b:18:1",
+      "Steinsaltz In-Depth on Berakhot 6b:18:1",
+      "Torah Temima on Berakhot 6b:18:1"
+    ],
+    "generatedAt": "2026-10-14T09:52:07.346Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Berakhot 6b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחורי בית הכנסת</strong> – כל פתחי בית הכנסת היו במזרח והכי תניא בתוספתא דמגילה <span class=\"parenthesized\">(פרק ג)</span> מעין מקדש ומשכן פניהם למערב ואחוריהם למזרח והמתפלל אחורי בית הכנסת ואינו מחזיר פניו לבית הכנסת נראה ככופר במי שהצבור מתפללין לפניו והא דרב הונא מוקי לה לאביי בדלא מהדר אפיה לבי כנישתא:"
   },
   "Rashi on Berakhot 6b:18:2": {
     "dependsOn": [

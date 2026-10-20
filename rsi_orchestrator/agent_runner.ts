@@ -570,10 +570,6 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
     throw new AgentError("Agent execution was cancelled", undefined, "agy", true);
   }
 
-  if (options.debug) {
-    console.log(`  [agent] Running agy${options.model ? ` (model: ${options.model})` : ""}...`);
-  }
-
   const {effectivePrompt} = preparePromptWithImages(prompt, options.images);
   const args = buildAgyArgs(effectivePrompt, options);
 
@@ -806,10 +802,6 @@ export function buildClaudeArgs(
 export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
   if (options.signal?.aborted) {
     throw new AgentError("Agent execution was cancelled", undefined, "claude", true);
-  }
-
-  if (options.debug) {
-    console.log(`  [agent] Running claude${options.model ? ` (model: ${options.model})` : ""}...`);
   }
 
   const {effectivePrompt, imageDirectories} = preparePromptWithImages(prompt, options.images);
