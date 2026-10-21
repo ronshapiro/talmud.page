@@ -286,6 +286,30 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">ולרבינא דאמר כו'</strong> - בפרק קמא דחגיגה <span class=\"parenthesized\">(דף ד.)</span> ומייתי לה מסיפא דמתניתין דהתם קתני ועבדים שאינן משוחררין:"
   },
+  "Rashi on Arakhin 2b:9:2": {
+    "dependsOn": [
+      "Arakhin 2b:9",
+      "Rashi on Arakhin 2b:9:1",
+      "Rashi on Arakhin 2b:9:2",
+      "Rashi on Arakhin 2b:8:1",
+      "Rashi on Arakhin 2b:10:1",
+      "Rashi on Arakhin 2b:10:2",
+      "Rashi on Arakhin 2b:12:1",
+      "Rashi on Arakhin 2a:1:1",
+      "Rashi on Arakhin 2a:1:2",
+      "Rashi on Arakhin 2a:2:1",
+      "Rashi on Arakhin 2a:3:1",
+      "Tosafot on Arakhin 2a:1:1",
+      "Tosafot on Arakhin 2b:1:1"
+    ],
+    "generatedAt": "2026-10-20T10:00:23.719Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Arakhin 2b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חיגר</strong> - פטור מן הראייה דרגלים כתיב פרט לבעלי קבין:"
+  },
   "Tosafot on Arakhin 2b:10:1": {
     "dependsOn": [
       "Arakhin 2b:10",
