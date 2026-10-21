@@ -67,7 +67,7 @@ test("returns undefined when the page isn't cached", () => {
   expect(buildPageSkeleton(TEST_BOOK, SECTION)).toBeUndefined();
 });
 
-test("builds a segment per section, with commentary counts and a truncated preview", () => {
+test("builds a segment per section, with commentary counts", () => {
   writeJson(filePath, amud());
   const skeleton = buildPageSkeleton(TEST_BOOK, SECTION);
   expect(skeleton).toEqual({
@@ -75,22 +75,14 @@ test("builds a segment per section, with commentary counts and a truncated previ
     segments: [
       {
         ref: "__Test_Book__ 2a:1",
-        preview: "מילה ראשונה שנייה שלישית רביעית חמישית שישית שביעית...",
         commentary: {Rashi: 1, Tosafot: 2},
       },
       {
         ref: "__Test_Book__ 2a:2",
-        preview: "מילה שנייה",
         commentary: {},
       },
     ],
   });
-});
-
-test("strips HTML tags from the preview", () => {
-  writeJson(filePath, amud());
-  const skeleton = buildPageSkeleton(TEST_BOOK, SECTION)!;
-  expect(skeleton.segments[1].preview).toEqual("מילה שנייה");
 });
 
 test("formatPageSkeleton renders a compact, human/LLM-readable summary", () => {

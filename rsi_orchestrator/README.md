@@ -65,7 +65,11 @@ billing.
 - `status_cli.ts` (`npx ts-node rsi_orchestrator/status_cli.ts`) — the read side of the budget
   loop: today's/this week's call counts and cost per task type against `budget_config.json`'s
   caps, and whether anything is currently paused. Check this before enabling a task type, raising
-  a cap, or pausing everything ahead of unrelated Claude Code work.
+  a cap, or pausing everything ahead of unrelated Claude Code work. `status_cli.ts context
+  [--since YYYY-MM-DD] [--task <taskType>]` instead prints per-model context_fetch usage for
+  generate calls (`context_usage_report.ts`): how often calls fetch, refs per fetch, and how many
+  refs land off the target's page, off its book, or on the tractate's first pages. Run it with
+  `--since` set to the date of a prompt change to see whether the change reduced wasted fetches.
 - `schedule_runner.ts` — the actual scheduled-run entrypoint. Each invocation ("tick") reads
   `budget_config.json`, and for every enabled/under-cap/unpaused task type runs one bounded batch
   (capped by `maxCallsPerRun` and the remaining daily budget), then stops — never an open-ended
@@ -101,6 +105,7 @@ npx ts-node rsi_orchestrator/triage_suggestions.ts
 npx ts-node rsi_orchestrator/rashi_tosafot_translation_cli.ts Zevachim --section 2a --limit 2
 npx ts-node rsi_orchestrator/rashi_tosafot_translation_cli.ts Zevachim --start-page 10b --continuous --duration-hours 24
 npx ts-node rsi_orchestrator/status_cli.ts
+npx ts-node rsi_orchestrator/status_cli.ts context --since 2026-10-21
 npx ts-node rsi_orchestrator/schedule_runner.ts   # honors budget_config.json — no-ops if nothing
                                                    # is enabled/unpaused/under its daily cap
 ```

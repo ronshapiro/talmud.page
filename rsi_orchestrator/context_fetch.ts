@@ -1,6 +1,7 @@
 import * as fs from "fs";
 import {Amud, ApiComment} from "../apiTypes";
 import {Book, books} from "../books";
+import {hebrewSearchRegex, stripHebrewNonletters} from "../hebrew";
 import {cachedOutputFilePath} from "../cached_outputs";
 import {readUtf8} from "../files";
 import {ToolUseRecord} from "../precomputed/rsi_state/context_usage_log";
@@ -138,7 +139,79 @@ export interface GetRefsResult {
   error?: string;
 }
 
-export function getRefs(refs: string[]): GetRefsResult {
+type Segment = Amud["sections"][number];
+
+function segmentEntry(segment: Segment): GetRefsResultEntry {
+  return {
+    ref: segment.ref,
+    he: replaceBase64ImagesWithTempFileLocations(
+      toFlatArray(segment.he).join(" "), {ref: segment.ref}),
+    en: replaceBase64ImagesWithTempFileLocations(
+      toFlatArray(segment.en).join(" "), {ref: segment.ref}),
+  };
+}
+
+function adjacentPage(book: Book, page: string, direction: "previous" | "next"): string | undefined {
+  try {
+    const adjacent = direction === "previous" ? book.previousPage(page) : book.nextPage(page);
+    return book.doesSectionExist(adjacent) ? adjacent : undefined;
+  } catch {
+    return undefined; // books without page navigation
+  }
+}
+
+// e.g. "Sukkah 53b:7-9" or "Sukkah 53b:10-54a:2" — the shape Mesorat Hashas parallels use.
+const RANGE_REF = /^(.+) (\d+[ab]):(\d+)-(?:(\d+[ab]):)?(\d+)$/;
+const MAX_RANGE_PAGES = 3;
+
+function segmentNumber(segmentRef: string): number {
+  return parseInt(segmentRef.slice(segmentRef.lastIndexOf(":") + 1), 10);
+}
+
+type RangeSegments =
+  | {segments: Segment[]; error?: undefined}
+  | {segments?: undefined; error: string};
+
+/** The base segments of a range ref, in order, walking forward across at most `maxPages` amudim. */
+function rangeSegments(ref: string, maxPages: number): RangeSegments {
+  const [, bookName, startPage, startSegment, endPageOrSame, endSegment] = RANGE_REF.exec(ref)!;
+  const location = parseRefLocation(`${bookName} ${startPage}`);
+  if (!location) return {error: "could not determine which book/page this ref belongs to"};
+  const endPage = endPageOrSame ?? startPage;
+  const segments: Segment[] = [];
+  let page: string | undefined = startPage;
+  for (let pagesRead = 0; page && pagesRead < maxPages; pagesRead++) {
+    const amud = loadAmud(location.book, page);
+    if (!amud) return {error: `${bookName} ${page} is not cached`};
+    for (const segment of amud.sections) {
+      const n = segmentNumber(segment.ref);
+      if (page === startPage && n < parseInt(startSegment, 10)) continue;
+      if (page === endPage && n > parseInt(endSegment, 10)) continue;
+      segments.push(segment);
+    }
+    if (page === endPage) return {segments};
+    page = adjacentPage(location.book, page, "next");
+  }
+  return {error: `range spans more than ${maxPages} pages, or its end isn't in the book`};
+}
+
+export type RefLang = "he" | "en" | "both";
+
+function withLang(entry: GetRefsResultEntry, lang: RefLang): GetRefsResultEntry {
+  if (lang === "he") return {ref: entry.ref, he: entry.he};
+  if (lang === "en") return {ref: entry.ref, en: entry.en};
+  return entry;
+}
+
+/** A segment range, returned as one entry whose text is the range's segments joined in order. */
+function getRangeEntry(ref: string): GetRefsResultEntry {
+  const {segments, error} = rangeSegments(ref, MAX_RANGE_PAGES);
+  if (!segments) return {ref, error};
+  const entries = segments.map(segmentEntry);
+  return {ref, he: entries.map(e => e.he).join(" "), en: entries.map(e => e.en).join(" ")};
+}
+
+export function getRefs(refs: string[], lang: RefLang = "both"): GetRefsResult {
   if (refs.length > MAX_REFS_PER_CALL) {
     return {
       entries: [],
@@ -146,7 +219,8 @@ export function getRefs(refs: string[]): GetRefsResult {
         + "Split this into multiple smaller calls.",
     };
   }
-  const entries: GetRefsResultEntry[] = refs.map(ref => {
+  const entries: GetRefsResultEntry[] = refs.map((ref): GetRefsResultEntry => {
+    if (RANGE_REF.test(ref)) return getRangeEntry(ref);
     const location = parseRefLocation(ref);
     if (!location) {
       return {ref, error: "could not determine which book/page this ref belongs to"};
@@ -154,14 +228,20 @@ export function getRefs(refs: string[]): GetRefsResult {
     const entry = getPageIndex(location.book, location.page)?.get(ref);
     if (!entry) return {ref, error: "not found on the cached page"};
     return {ref, he: entry.he, en: entry.en};
-  });
+  }).map(entry => (entry.error ? entry : withLang(entry, lang)));
   const totalChars = entries.reduce(
     (sum, e) => sum + (e.he?.length ?? 0) + (e.en?.length ?? 0), 0);
   if (totalChars > MAX_CHARS_PER_CALL) {
     return {
       entries: [],
       error: `Combined result is ${totalChars} characters, over the ${MAX_CHARS_PER_CALL}-`
-        + "character limit per call. Request fewer refs at once.",
+        + "character limit per call. Request fewer refs at once"
+        + (lang === "both" ? ", or pass --lang he if you only need the Hebrew wording" : "")
+        + "."
+        + (refs.some(ref => RANGE_REF.test(ref))
+          ? " To find one spot in a long range, search the range instead, then get-refs only "
+            + "the matching segment."
+          : ""),
     };
   }
   return {entries};
@@ -172,7 +252,32 @@ export interface NeighborSegmentsResult {
   error?: string;
 }
 
-/** Neighbors only make sense for base Gemara segments, not commentary comments. */
+function segmentsBeyondPage(
+  book: Book, page: string, direction: "previous" | "next", count: number,
+): Segment[] {
+  const result: Segment[] = [];
+  let current = page;
+  while (result.length < count) {
+    const adjacent = adjacentPage(book, current, direction);
+    const adjacentAmud = adjacent && loadAmud(book, adjacent);
+    if (!adjacent || !adjacentAmud) break;
+    const remaining = count - result.length;
+    const {sections} = adjacentAmud;
+    if (direction === "previous") {
+      result.unshift(...sections.slice(Math.max(0, sections.length - remaining)));
+    } else {
+      result.push(...sections.slice(0, remaining));
+    }
+    current = adjacent;
+  }
+  return result;
+}
+
+/**
+ * Neighbors only make sense for base Gemara segments, not commentary comments. Crosses into the
+ * previous/next amud when `before`/`after` runs past the edge of the page, so the caller never has
+ * to guess how many segments the adjacent amud has in order to address its last few by ref.
+ */
 export function getNeighborSegments(
   ref: string, before = 1, after = 1,
 ): NeighborSegmentsResult {
@@ -180,7 +285,8 @@ export function getNeighborSegments(
   if (!location) {
     return {entries: [], error: "could not determine which book/page this ref belongs to"};
   }
-  const amud = loadAmud(location.book, location.page);
+  const {book} = location;
+  const amud = loadAmud(book, location.page);
   if (!amud) return {entries: [], error: "page not cached"};
   const index = amud.sections.findIndex(segment => segment.ref === ref);
   if (index === -1) {
@@ -190,21 +296,103 @@ export function getNeighborSegments(
         + "not commentary comments — use get-refs for a specific comment)",
     };
   }
-  const start = Math.max(0, index - before);
-  const end = Math.min(amud.sections.length, index + after + 1);
-  return {
-    entries: amud.sections.slice(start, end).map(segment => ({
-      ref: segment.ref,
-      he: replaceBase64ImagesWithTempFileLocations(
-        toFlatArray(segment.he).join(" "),
-        {ref: segment.ref},
-      ),
-      en: replaceBase64ImagesWithTempFileLocations(
-        toFlatArray(segment.en).join(" "),
-        {ref: segment.ref},
-      ),
-    })),
-  };
+  const segments = amud.sections.slice(
+    Math.max(0, index - before), Math.min(amud.sections.length, index + after + 1));
+
+  segments.unshift(...segmentsBeyondPage(book, location.page, "previous", before - index));
+  segments.push(...segmentsBeyondPage(
+    book, location.page, "next", after - (amud.sections.length - index - 1)));
+  return {entries: segments.map(segmentEntry)};
+}
+
+export interface BaseSegment extends GetRefsResultEntry {
+  // Mesorat Hashas refs (often ranges like "Sukkah 53b:7-9") for passages parallel to this one.
+  parallelRefs: string[];
+}
+
+/** The base Gemara segment a top-level commentary comment is attached to. */
+export function findBaseSegment(commentRef: string): BaseSegment | undefined {
+  const location = parseRefLocation(commentRef);
+  if (!location) return undefined;
+  const amud = loadAmud(location.book, location.page);
+  const segment = amud?.sections.find(candidate => Object.values(candidate.commentary ?? {})
+    .some(commentary => commentary.comments.some(comment => comment.ref === commentRef)));
+  if (!segment) return undefined;
+  const parallelRefs = (segment.commentary?.["Mesorat Hashas"]?.comments ?? [])
+    .map(comment => comment.ref);
+  return {...segmentEntry(segment), parallelRefs};
+}
+
+export const MAX_SEARCH_MATCHES = 15;
+const MAX_SEARCH_RANGE_PAGES = 6;
+const SEARCHED_COMMENTARIES = ["Rashi", "Tosafot"];
+const SNIPPET_RADIUS = 40;
+
+export interface SearchMatch {
+  ref: string;
+  snippet: string;
+}
+
+export interface SearchResult {
+  matches: SearchMatch[];
+  truncated?: boolean;
+  error?: string;
+}
+
+function plainText(text: string): string {
+  return stripHebrewNonletters(text.replace(/<[^>]*>/g, "")).replace(/\s+/g, " ").trim();
+}
+
+/**
+ * Finds a word or phrase in one page or one segment range (e.g. a Mesorat Hashas parallel or a
+ * sugya) — the Gemara segments plus their Rashi and Tosafot — ignoring vowels and punctuation.
+ * Hebrew queries search Hebrew text; anything else searches English. Bounded to a page or a
+ * short range so a search can't turn into a corpus-wide crawl.
+ */
+export function searchPage(pageOrRange: string, query: string): SearchResult {
+  let segments: Segment[];
+  if (RANGE_REF.test(pageOrRange)) {
+    const range = rangeSegments(pageOrRange, MAX_SEARCH_RANGE_PAGES);
+    if (!range.segments) return {matches: [], error: range.error};
+    segments = range.segments;
+  } else {
+    const location = parseRefLocation(pageOrRange);
+    if (!location) {
+      return {matches: [], error: "could not determine which book/page this belongs to"};
+    }
+    const amud = loadAmud(location.book, location.page);
+    if (!amud) return {matches: [], error: "page not cached"};
+    segments = amud.sections;
+  }
+  const regex = hebrewSearchRegex(query.trim(), false);
+  if (!regex || !query.trim()) return {matches: [], error: "invalid search query"};
+  const field = /[א-ת]/.test(query) ? "he" : "en";
+
+  const texts: {ref: string; text: string}[] = [];
+  for (const segment of segments) {
+    texts.push({ref: segment.ref, text: toFlatArray(segment[field]).join(" ")});
+    for (const commentator of SEARCHED_COMMENTARIES) {
+      for (const comment of segment.commentary?.[commentator]?.comments ?? []) {
+        texts.push({ref: comment.ref, text: toFlatArray(comment[field]).join(" ")});
+      }
+    }
+  }
+
+  const matches: SearchMatch[] = [];
+  for (const {ref, text} of texts) {
+    const plain = plainText(text);
+    regex.lastIndex = 0;
+    const match = regex.exec(plain);
+    if (!match) continue;
+    if (matches.length === MAX_SEARCH_MATCHES) return {matches, truncated: true};
+    const start = Math.max(0, match.index - SNIPPET_RADIUS);
+    const end = Math.min(plain.length, match.index + match[0].length + SNIPPET_RADIUS);
+    matches.push({
+      ref,
+      snippet: `${start > 0 ? "…" : ""}${plain.slice(start, end)}${end < plain.length ? "…" : ""}`,
+    });
+  }
+  return {matches};
 }
 
 export interface SugyaRange {
@@ -219,8 +407,18 @@ function readSugyot(book: Book): SugyaRange[] {
   return JSON.parse(readUtf8(filePath)) as SugyaRange[];
 }
 
+/** "Arakhin 8b:17" + "Arakhin 10a:1" -> "Arakhin 8b:17-10a:1", usable by get-refs and search. */
+function segmentRangeRef(start: string, end: string): string {
+  const startPage = start.slice(0, start.lastIndexOf(":"));
+  const endPage = end.slice(0, end.lastIndexOf(":"));
+  const endSegment = end.slice(end.lastIndexOf(":") + 1);
+  return startPage === endPage
+    ? `${start}-${endSegment}`
+    : `${start}-${endPage.slice(endPage.lastIndexOf(" ") + 1)}:${endSegment}`;
+}
+
 export interface PriorSugyaResult {
-  sugyot: SugyaRange[];
+  sugyot: (SugyaRange & {range: string})[];
   error?: string;
 }
 
@@ -242,7 +440,10 @@ export function getPriorSugyaSkeleton(ref: string, count = 2): PriorSugyaResult 
   if (index === -1) {
     return {sugyot: [], error: "could not find this page in the sugya index"};
   }
-  return {sugyot: sugyot.slice(Math.max(0, index - count), index)};
+  return {
+    sugyot: sugyot.slice(Math.max(0, index - count), index)
+      .map(sugya => ({...sugya, range: segmentRangeRef(sugya.start, sugya.end)})),
+  };
 }
 
 /**
@@ -257,7 +458,7 @@ export function extractRequestedRefs(toolUses: ToolUseRecord[]): string[] {
     const input = use.input as {command?: string; CommandLine?: string} | undefined;
     const command = input?.command ?? input?.CommandLine;
     if (!command || !command.includes("context_fetch_cli")) continue;
-    if (/\bwikipedia\b/.test(command)) continue;
+    if (/context_fetch_cli\S*\s+(wikipedia|search)\b/.test(command)) continue;
     const arrayMatch = command.match(/\[[^\]]*]/);
     if (arrayMatch) {
       try {

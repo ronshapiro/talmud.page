@@ -7,13 +7,16 @@ import {writeJson} from "../util/json_files";
 import {
   extractRequestedRefs,
   fetchWikipedia,
+  findBaseSegment,
   getNeighborSegments,
   getPriorSugyaSkeleton,
   getRefs,
   MAX_CHARS_PER_CALL,
+  MAX_SEARCH_MATCHES,
   MAX_REFS_PER_CALL,
   parseRefLocation,
   resetPageIndexCacheForTests,
+  searchPage,
 } from "./context_fetch";
 
 const TEST_BOOK = {canonicalName: "Zevachim"} as unknown as Book; // a real, registered book name
@@ -58,21 +61,28 @@ function amud(): Amud {
 }
 
 const filePath = cachedOutputFilePath(TEST_BOOK, SECTION);
-let preexistingContent: string | undefined;
+const NEXT_SECTION = "2b";
+const nextFilePath = cachedOutputFilePath(TEST_BOOK, NEXT_SECTION);
+const preexistingContent = new Map<string, string>();
 
 beforeAll(() => {
   fs.mkdirSync(path.dirname(filePath), {recursive: true});
   // Preserve whatever's really there (if anything — a local `cache_all_api_requests.ts` run would
-  // populate this exact path) rather than assuming it's safe to overwrite/delete. See the comment
-  // on SECTION above for why this test can no longer use a made-up path.
-  if (fs.existsSync(filePath)) preexistingContent = fs.readFileSync(filePath, "utf-8");
+  // populate these exact paths) rather than assuming it's safe to overwrite/delete. See the
+  // comment on SECTION above for why this test can no longer use a made-up path.
+  for (const p of [filePath, nextFilePath]) {
+    if (fs.existsSync(p)) preexistingContent.set(p, fs.readFileSync(p, "utf-8"));
+  }
 });
 
 afterAll(() => {
-  if (preexistingContent !== undefined) {
-    fs.writeFileSync(filePath, preexistingContent);
-  } else {
-    fs.rmSync(filePath, {force: true});
+  for (const p of [filePath, nextFilePath]) {
+    const content = preexistingContent.get(p);
+    if (content !== undefined) {
+      fs.writeFileSync(p, content);
+    } else {
+      fs.rmSync(p, {force: true});
+    }
   }
 });
 
@@ -84,7 +94,45 @@ beforeEach(() => {
 // content, if any, is restored once by afterAll above, not on every test.
 afterEach(() => {
   fs.rmSync(filePath, {force: true});
+  fs.rmSync(nextFilePath, {force: true});
 });
+
+function nextAmud(): Amud {
+  return {
+    id: `Zevachim ${NEXT_SECTION}`,
+    sections: [
+      {
+        ref: `Zevachim ${NEXT_SECTION}:1`,
+        he: "רְבִיעִי",
+        en: "fourth",
+        commentary: {
+          "Mesorat Hashas": {comments: [{
+            ref: "Sukkah 53b:7-9",
+            he: "מקביל",
+            en: "parallel",
+            sourceRef: "Sukkah 53b",
+            sourceHeRef: "Sukkah 53b",
+          }]},
+          Rashi: {comments: [{
+            ref: `Rashi on Zevachim ${NEXT_SECTION}:1:1`,
+            he: "<b>רביעי</b> - כדאמרן לעיל:",
+            en: "as we said above",
+            sourceRef: `Zevachim ${NEXT_SECTION}:1`,
+            sourceHeRef: `Zevachim ${NEXT_SECTION}:1`,
+          }]},
+          Steinsaltz: {comments: [{
+            ref: `Steinsaltz on Zevachim ${NEXT_SECTION}:1`,
+            he: "כדאמרן",
+            en: "",
+            sourceRef: `Zevachim ${NEXT_SECTION}:1`,
+            sourceHeRef: `Zevachim ${NEXT_SECTION}:1`,
+          }]},
+        },
+      },
+      {ref: `Zevachim ${NEXT_SECTION}:2`, he: "חמישי", en: "fifth"},
+    ],
+  };
+}
 
 describe("parseRefLocation", () => {
   test("parses a base segment ref", () => {
@@ -191,10 +239,34 @@ describe("getNeighborSegments", () => {
     ]);
   });
 
-  test("clamps at the start of the page", () => {
+  test("clamps at the start of the book", () => {
     writeJson(filePath, amud());
     const result = getNeighborSegments(`Zevachim ${SECTION}:1`, 5, 0);
     expect(result.entries.map(e => e.ref)).toEqual([`Zevachim ${SECTION}:1`]);
+  });
+
+  test("continues into the previous amud's last segments", () => {
+    writeJson(filePath, amud());
+    writeJson(nextFilePath, nextAmud());
+    const result = getNeighborSegments(`Zevachim ${NEXT_SECTION}:1`, 2, 0);
+    expect(result.entries.map(e => e.ref)).toEqual([
+      `Zevachim ${SECTION}:2`, `Zevachim ${SECTION}:3`, `Zevachim ${NEXT_SECTION}:1`,
+    ]);
+  });
+
+  test("continues into the next amud's first segments", () => {
+    writeJson(filePath, amud());
+    writeJson(nextFilePath, nextAmud());
+    const result = getNeighborSegments(`Zevachim ${SECTION}:3`, 0, 2);
+    expect(result.entries.map(e => e.ref)).toEqual([
+      `Zevachim ${SECTION}:3`, `Zevachim ${NEXT_SECTION}:1`, `Zevachim ${NEXT_SECTION}:2`,
+    ]);
+  });
+
+  test("stops at an adjacent amud that isn't cached", () => {
+    writeJson(filePath, amud());
+    const result = getNeighborSegments(`Zevachim ${SECTION}:3`, 0, 2);
+    expect(result.entries.map(e => e.ref)).toEqual([`Zevachim ${SECTION}:3`]);
   });
 
   test("errors when given a commentary ref instead of a base segment", () => {
@@ -222,6 +294,138 @@ describe("getNeighborSegments", () => {
   });
 });
 
+describe("findBaseSegment", () => {
+  test("returns the Gemara segment a comment is attached to", () => {
+    writeJson(filePath, amud());
+    expect(findBaseSegment(`Rashi on Zevachim ${SECTION}:1:1`)).toEqual({
+      ref: `Zevachim ${SECTION}:1`, he: "ראשון", en: "first", parallelRefs: [],
+    });
+  });
+
+  test("lists the segment's Mesorat Hashas parallels", () => {
+    writeJson(nextFilePath, nextAmud());
+    expect(findBaseSegment(`Rashi on Zevachim ${NEXT_SECTION}:1:1`)?.parallelRefs)
+      .toEqual(["Sukkah 53b:7-9"]);
+  });
+
+  test("returns undefined when the page isn't cached", () => {
+    expect(findBaseSegment(`Rashi on Zevachim ${SECTION}:1:1`)).toBeUndefined();
+  });
+});
+
+describe("getRefs with segment ranges", () => {
+  test("joins a range on one page", () => {
+    writeJson(filePath, amud());
+    expect(getRefs([`Zevachim ${SECTION}:2-3`]).entries).toEqual([
+      {ref: `Zevachim ${SECTION}:2-3`, he: "שני שלישי", en: "second third"},
+    ]);
+  });
+
+  test("joins a range that crosses into the next amud", () => {
+    writeJson(filePath, amud());
+    writeJson(nextFilePath, nextAmud());
+    expect(getRefs([`Zevachim ${SECTION}:3-${NEXT_SECTION}:1`]).entries).toEqual([
+      {ref: `Zevachim ${SECTION}:3-${NEXT_SECTION}:1`, he: "שלישי רְבִיעִי", en: "third fourth"},
+    ]);
+  });
+
+  test("suggests --lang and search for a range that's over the size cap", () => {
+    writeJson(filePath, {
+      ...amud(),
+      sections: amud().sections.map(segment => ({...segment, en: "a".repeat(MAX_CHARS_PER_CALL)})),
+    });
+    const {error} = getRefs([`Zevachim ${SECTION}:1-2`]);
+    expect(error).toMatch(/--lang he/);
+    expect(error).toMatch(/search the range/);
+  });
+
+  test("--lang he fits a range whose English is over the size cap", () => {
+    writeJson(filePath, {
+      ...amud(),
+      sections: amud().sections.map(segment => ({...segment, en: "a".repeat(MAX_CHARS_PER_CALL)})),
+    });
+    expect(getRefs([`Zevachim ${SECTION}:2-3`], "he").entries).toEqual([
+      {ref: `Zevachim ${SECTION}:2-3`, he: "שני שלישי"},
+    ]);
+  });
+
+  test("errors when a page in the range isn't cached", () => {
+    writeJson(filePath, amud());
+    expect(getRefs([`Zevachim ${SECTION}:3-${NEXT_SECTION}:1`]).entries[0].error)
+      .toMatch(/not cached/);
+  });
+});
+
+describe("getRefs --lang", () => {
+  test("returns only the requested language", () => {
+    writeJson(filePath, amud());
+    expect(getRefs([`Zevachim ${SECTION}:2`], "he").entries).toEqual([
+      {ref: `Zevachim ${SECTION}:2`, he: "שני"},
+    ]);
+    expect(getRefs([`Zevachim ${SECTION}:2`], "en").entries).toEqual([
+      {ref: `Zevachim ${SECTION}:2`, en: "second"},
+    ]);
+  });
+
+  test("keeps per-ref errors", () => {
+    writeJson(filePath, amud());
+    expect(getRefs([`Zevachim ${SECTION}:99`], "he").entries[0].error).toMatch(/not found/);
+  });
+});
+
+describe("searchPage", () => {
+  test("finds Hebrew in segments and Rashi/Tosafot, ignoring vowels and HTML", () => {
+    writeJson(nextFilePath, nextAmud());
+    expect(searchPage(`Zevachim ${NEXT_SECTION}`, "רביעי").matches.map(m => m.ref)).toEqual([
+      `Zevachim ${NEXT_SECTION}:1`, `Rashi on Zevachim ${NEXT_SECTION}:1:1`,
+    ]);
+  });
+
+  test("skips commentaries other than Rashi and Tosafot", () => {
+    writeJson(nextFilePath, nextAmud());
+    expect(searchPage(`Zevachim ${NEXT_SECTION}`, "כדאמרן").matches).toEqual([
+      {ref: `Rashi on Zevachim ${NEXT_SECTION}:1:1`, snippet: "רביעי - כדאמרן לעיל:"},
+    ]);
+  });
+
+  test("searches English for a non-Hebrew query", () => {
+    writeJson(nextFilePath, nextAmud());
+    expect(searchPage(`Zevachim ${NEXT_SECTION}`, "FIFTH").matches.map(m => m.ref))
+      .toEqual([`Zevachim ${NEXT_SECTION}:2`]);
+  });
+
+  test("truncates long result lists", () => {
+    const many: Amud = {
+      id: `Zevachim ${NEXT_SECTION}`,
+      sections: Array.from({length: MAX_SEARCH_MATCHES + 5}, (_, i) => ({
+        ref: `Zevachim ${NEXT_SECTION}:${i + 1}`, he: "מילה", en: "word",
+      })),
+    };
+    writeJson(nextFilePath, many);
+    const result = searchPage(`Zevachim ${NEXT_SECTION}`, "מילה");
+    expect(result.matches).toHaveLength(MAX_SEARCH_MATCHES);
+    expect(result.truncated).toBe(true);
+  });
+
+  test("errors for an uncached page", () => {
+    expect(searchPage(`Zevachim ${NEXT_SECTION}`, "מילה").error).toMatch(/not cached/);
+  });
+
+  test("searches only within a segment range, across amudim", () => {
+    writeJson(filePath, amud());
+    writeJson(nextFilePath, nextAmud());
+    expect(searchPage(`Zevachim ${SECTION}:3-${NEXT_SECTION}:1`, "רביעי").matches.map(m => m.ref))
+      .toEqual([`Zevachim ${NEXT_SECTION}:1`, `Rashi on Zevachim ${NEXT_SECTION}:1:1`]);
+    expect(searchPage(`Zevachim ${SECTION}:3-${NEXT_SECTION}:1`, "שני").matches).toEqual([]);
+  });
+
+  test("errors when a page in the range isn't cached", () => {
+    writeJson(filePath, amud());
+    expect(searchPage(`Zevachim ${SECTION}:3-${NEXT_SECTION}:1`, "רביעי").error)
+      .toMatch(/not cached/);
+  });
+});
+
 describe("getPriorSugyaSkeleton", () => {
   test("returns an error when there's no sugya data for the book", () => {
     // Sugyot are only precomputed for Talmud masechtot — Genesis is a real registered book with
@@ -229,6 +433,12 @@ describe("getPriorSugyaSkeleton", () => {
     const result = getPriorSugyaSkeleton("Genesis 1:1");
     expect(result.sugyot).toEqual([]);
     expect(result.error).toBeDefined();
+  });
+
+  test("gives each prior sugya a range ref usable by get-refs and search", () => {
+    // Real precomputed/sugyot/Arakhin.json data: one sugya within 8b, one spanning 8b-10a.
+    expect(getPriorSugyaSkeleton("Arakhin 10a:2", 2).sugyot.map(sugya => sugya.range))
+      .toEqual(["Arakhin 8b:15-16", "Arakhin 8b:17-10a:1"]);
   });
 
   test("returns the sugyot immediately before the given page, for a real book", () => {
@@ -305,6 +515,13 @@ describe("extractRequestedRefs", () => {
       },
     ]);
     expect(refs).toEqual(["Zevachim 2a:1"]);
+  });
+
+  test("ignores search commands when extracting refs", () => {
+    expect(extractRequestedRefs([{
+      name: "Bash",
+      input: {command: "npx ts-node rsi_orchestrator/context_fetch_cli.ts search \"Sukkah 53b\" \"חליל\""},
+    }])).toEqual([]);
   });
 
   test("ignores wikipedia commands when extracting refs", () => {

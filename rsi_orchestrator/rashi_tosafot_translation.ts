@@ -19,7 +19,7 @@ import {
   StalenessStatus,
 } from "../precomputed/rsi_state/staleness";
 import {toFlatArray} from "../sefariaTextType";
-import {extractRequestedRefs} from "./context_fetch";
+import {extractRequestedRefs, findBaseSegment} from "./context_fetch";
 import {AgentError, AgentBackend, getAgentRunner} from "./agent_runner";
 import {
   extractBase64Images,
@@ -582,6 +582,22 @@ function formatWorkedExamples(examples: WorkedExample[]): string {
   ].filter((line): line is string => line !== undefined).join("\n")).join("\n\n");
 }
 
+/** Shared by the first-turn and long-thread continuation prompts. */
+export function targetCommentLines(
+  candidate: TranslationCandidate, hebrewSource: string,
+): string[] {
+  const segment = findBaseSegment(candidate.ref);
+  return [
+    segment ? `Attached Gemara segment (${segment.ref}): ${segment.he}` : "",
+    segment?.en ? `Existing English of that segment: ${segment.en}` : "",
+    segment?.parallelRefs.length
+      ? `Parallel passages (Mesorat Hashas): ${segment.parallelRefs.join(", ")}` : "",
+    `Comment ref: ${candidate.ref}`,
+    `Commentator: ${candidate.commentator}`,
+    `Current Hebrew text: ${hebrewSource}`,
+  ].filter(line => line !== "");
+}
+
 export function generationPrompt(candidate: TranslationCandidate, priorFeedback?: string): string {
   const book = books.byCanonicalName[candidate.book] as Book | undefined;
   if (!book) {
@@ -626,17 +642,51 @@ export function generationPrompt(candidate: TranslationCandidate, priorFeedback?
     "- Wikipedia checks ARE permitted (via `npx ts-node rsi_orchestrator/context_fetch_cli.ts wikipedia ...` or curl to wikipedia.org) if needed for realia, botanical/zoological terms, historical figures, or French loanwords.",
     "- If context_fetch_cli or Wikipedia does not provide what you need, do not seek it elsewhere — translate based on the provided text and your own knowledge.",
     "",
-    "If you need the actual text of something beyond what's given above — a neighboring segment,",
-    "another commentary on this segment, or a prior sugya — you can use context_fetch_cli:",
-    "  npx ts-node rsi_orchestrator/context_fetch_cli.ts get-refs '[\"<ref>\", ...]'",
+    "Context lookups:",
+    "The Gemara segment this comment is attached to is given below with the comment. For most",
+    "comments, that is all the context you need. Fetch more only when a specific question about",
+    "THIS comment's meaning can't be answered without it. Fetched refs are recorded as",
+    "dependencies of your translation, so unneeded fetches trigger needless re-translation later.",
+    "Typical reasons to fetch, and how to find the right ref:",
+    "- The comment continues the previous comment on the same segment (it starts mid-thought,",
+    "  or with כלומר / והכי קאמר) -> get-refs on that comment. Comment refs are the segment ref",
+    "  plus :N, numbered in order (e.g. \"Rashi on X 10a:3:2\" follows \"Rashi on X 10a:3:1\").",
+    "- The comment points back to something said earlier (לעיל, כדאמרן, כדפרישית, מתניתין, etc.)",
+    "  -> get-neighbors on the attached segment with --before N, starting small (N=3) and widening",
+    "  only if you haven't found it yet. It continues into the previous amud automatically, so you",
+    "  never need to guess how many segments an adjacent amud has. To see where the current",
+    "  discussion began, use get-prior-sugyot. Each sugya it returns has a `range` you can",
+    "  search without fetching its text.",
+    "- The comment explains a phrase that comes after its own segment -> get-neighbors --after N.",
+    "- The comment refers to a passage on another page, and you can't translate it without seeing",
+    "  that passage:",
+    "  1. First check the parallel passages (Mesorat Hashas) listed with the attached segment.",
+    "     Ranges like \"Sukkah 53b:7-9\" work as-is in both get-refs and search.",
+    "  2. If the comment gives a citation (e.g. \"(סוכה דף נג:)\" = Sukkah 53b, \"נג.\" = 53a)",
+    "     that no parallel covers, that page is where to look.",
+    "  3. With no parallel and no citation, rely on your own knowledge. Don't search pages on a",
+    "     guess.",
+    "- Realia, plants, animals, historical figures, Old French glosses (לע\"ז) -> wikipedia.",
+    "Prefer search over fetching long passages. When you're looking for where a particular word,",
+    "phrase, or dibbur hamatchil appears (in a parallel, a sugya range, or a page), search for it",
+    "and then get-refs only the segment that matches. Fetch a whole passage only when you need to",
+    "follow its argument. Pass --lang he when the Hebrew wording is enough: the English is often",
+    "several times longer.",
+    "Do NOT fetch other comments to calibrate style or to see how comments are usually punctuated",
+    "or translated. The worked examples below are the style reference, and comments from elsewhere",
+    "in the tractate (e.g. its first comments on 2a) say nothing about this one. Never guess at",
+    "refs. Use a ref from the page index below, one returned by an earlier fetch, or get-neighbors.",
+    "",
+    "context_fetch_cli commands (each call is size-capped):",
+    "  npx ts-node rsi_orchestrator/context_fetch_cli.ts get-refs '[\"<ref>\", ...]' "
+      + "[--lang he|en|both]",
     "  npx ts-node rsi_orchestrator/context_fetch_cli.ts get-neighbors \"<segment ref>\" "
       + "[--before N] [--after N]",
     "  npx ts-node rsi_orchestrator/context_fetch_cli.ts get-prior-sugyot \"<any ref on this "
       + "page>\" [--count N]",
+    "  npx ts-node rsi_orchestrator/context_fetch_cli.ts search \"<page or segment range, e.g. "
+      + "Sukkah 53b or Sukkah 53b:7-54a:2>\" \"<word or phrase>\"",
     "  npx ts-node rsi_orchestrator/context_fetch_cli.ts wikipedia \"<topic>\" [--lang en|he]",
-    "Use your own judgment about whether you need any of this — most comments don't need extra",
-    "context beyond what's already above. Each call is capped in size, so ask for specific refs",
-    "rather than trying to pull in everything at once.",
     "",
     'Respond with ONLY a JSON object matching {"hebrew"?: string, "english"?: string} — include '
       + "a key only if you're proposing a change to it. No other text before or after the JSON.",
@@ -646,13 +696,11 @@ export function generationPrompt(candidate: TranslationCandidate, priorFeedback?
     "",
     formatWorkedExamples(workedExamples),
     "",
-    "This page's segments and commentary, for orientation (not full text):",
+    "Page index (segment refs and comment counts, not text):",
     formatPageSkeleton(skeleton),
     "",
     "Target commentary comment to translate:",
-    `Comment ref: ${candidate.ref}`,
-    `Commentator: ${candidate.commentator}`,
-    `Current Hebrew text: ${hebrewSourceWithPlaceholders}`,
+    ...targetCommentLines(candidate, hebrewSourceWithPlaceholders),
     imageNote,
     "",
     priorFeedback

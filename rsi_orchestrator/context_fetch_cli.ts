@@ -1,6 +1,8 @@
 import * as yargs from "yargs";
 import {hideBin} from "yargs/helpers";
-import {fetchWikipedia, getNeighborSegments, getPriorSugyaSkeleton, getRefs} from "./context_fetch";
+import {
+  fetchWikipedia, getNeighborSegments, getPriorSugyaSkeleton, getRefs, searchPage,
+} from "./context_fetch";
 
 /**
  * CLI entrypoint for context_fetch.ts, invoked by a headless task-type call via
@@ -15,11 +17,15 @@ async function main(): Promise<void> {
     .command(
       "get-refs <refsJson>",
       "Fetch specific refs' Hebrew/English text",
-      y => y.positional("refsJson", {
-        type: "string",
-        demandOption: true,
-        describe: 'JSON array of ref strings, e.g. \'["ref1", "ref2"]\'',
-      }),
+      y => y
+        .positional("refsJson", {
+          type: "string",
+          demandOption: true,
+          describe: 'JSON array of ref strings, e.g. \'["ref1", "ref2"]\'',
+        })
+        .options({
+          lang: {choices: ["he", "en", "both"] as const, default: "both" as const},
+        }),
       argv => {
         let refs: string[];
         try {
@@ -29,12 +35,12 @@ async function main(): Promise<void> {
           process.exitCode = 1;
           return;
         }
-        console.log(JSON.stringify(getRefs(refs)));
+        console.log(JSON.stringify(getRefs(refs, argv.lang)));
       },
     )
     .command(
       "get-neighbors <ref>",
-      "Fetch the Gemara segments immediately before/after a given segment ref",
+      "Fetch the Gemara segments immediately before/after a given segment ref, crossing into adjacent amudim as needed",
       y => y
         .positional("ref", {type: "string", demandOption: true})
         .options({
@@ -53,6 +59,19 @@ async function main(): Promise<void> {
         .options({count: {type: "number", default: 2, describe: "how many prior sugyot"}}),
       argv => {
         console.log(JSON.stringify(getPriorSugyaSkeleton(argv.ref, argv.count)));
+      },
+    )
+    .command(
+      "search <page> <query>",
+      "Find a word or phrase in one page or segment range (Gemara + Rashi + Tosafot), ignoring "
+        + "vowels/punctuation",
+      y => y
+        .positional("page", {
+          type: "string", demandOption: true, describe: 'e.g. "Sukkah 53b" or "Sukkah 53b:7-54a:2"',
+        })
+        .positional("query", {type: "string", demandOption: true}),
+      argv => {
+        console.log(JSON.stringify(searchPage(argv.page, argv.query)));
       },
     )
     .command(
