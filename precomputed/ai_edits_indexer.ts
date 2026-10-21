@@ -1,7 +1,7 @@
 import * as fs from "fs";
 import {readUtf8, writeUtf8} from "../files";
 import {jsonStringify} from "../util/json_stringify";
-import {Edit, OUTPUT_DIR} from "./ai_edits";
+import {aiEditsPath, Edit} from "./ai_edits";
 
 const SUGYA_REWRITING_INPUT_DIR = "precomputed/sugya_rewriting_temp/v1-flash";
 const outputsByAmud: Record<string, Record<string, Edit>> = {};
@@ -24,5 +24,10 @@ for (const name of fs.readdirSync(SUGYA_REWRITING_INPUT_DIR)) {
 
 
 for (const [amud, amudOutput] of Object.entries(outputsByAmud)) {
-  writeUtf8(`${OUTPUT_DIR}/${amud}.json`, jsonStringify(amudOutput));
+  const filePath = aiEditsPath(amud);
+  const directory = filePath.slice(0, filePath.lastIndexOf("/"));
+  if (!fs.existsSync(directory)) {
+    fs.mkdirSync(directory, {recursive: true});
+  }
+  writeUtf8(filePath, jsonStringify(amudOutput));
 }

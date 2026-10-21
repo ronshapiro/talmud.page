@@ -24,7 +24,7 @@ billing.
   drifted (via `precomputed/rsi_state/staleness.ts` + `generation_record.ts`), and for each one:
   asks Claude to punctuate and translate it, then runs a bounded self-critique pass (generate →
   critique → at most one retry with feedback → give up) before writing to
-  `precomputed/ai_additions/<Book Page>.json` and recording a generation record. Requires
+  `precomputed/ai_additions/<Book>/<Page>.json` and recording a generation record. Requires
   `cached_outputs/api_request_handler/` to be populated for that book first
   (`npx ts-node cache_all_api_requests.ts`).
 - `context_fetch.ts` + `context_fetch_cli.ts` — the only tool a task-type headless call may use

@@ -65,17 +65,17 @@ export function mergeFileContent(
 
 export function extractPagesFromPaths(paths: string[]): string[] {
   const pages = new Set<string>();
-  for (const p of paths) {
+  for (const filePath of paths) {
     let candidate: string | undefined;
-    const aiMatch = p.match(/^precomputed\/ai_additions\/(.+)\.json$/);
+    const aiMatch = filePath.match(/^precomputed\/ai_additions\/(?:([^/]+)\/)?([^/]+)\.json$/);
     if (aiMatch) {
-      [, candidate] = aiMatch;
+      candidate = aiMatch[1] ? `${aiMatch[1]} ${aiMatch[2]}` : aiMatch[2];
     } else {
-      const genMatch = p.match(/^precomputed\/rsi_state\/generation_records\/[^/]+\/(.+)\.json$/);
-      if (genMatch) {
-        [, candidate] = genMatch;
+      const generationMatch = filePath.match(/^precomputed\/rsi_state\/generation_records\/[^/]+\/(.+)\.json$/);
+      if (generationMatch) {
+        [, candidate] = generationMatch;
       } else {
-        const logMatch = p.match(/^precomputed\/rsi_state\/context_usage_log\/[^/]+\/(.+)\.jsonl$/);
+        const logMatch = filePath.match(/^precomputed\/rsi_state\/context_usage_log\/[^/]+\/(.+)\.jsonl$/);
         if (logMatch) {
           [, candidate] = logMatch;
         }

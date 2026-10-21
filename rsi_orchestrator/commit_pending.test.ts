@@ -84,13 +84,16 @@ describe("mergeFileContent", () => {
 describe("extractPagesFromPaths", () => {
   test("extracts unique pages from ai_additions, generation_records, and context_usage_log", () => {
     const paths = [
+      "precomputed/ai_additions/Menachot/90a.json",
+      "precomputed/ai_additions/Rosh Hashanah/10a.json",
       "precomputed/ai_additions/Menachot 90a.json",
       "precomputed/rsi_state/generation_records/rashi_tosafot_translation/Menachot 90a.json",
       "precomputed/rsi_state/context_usage_log/rashi_tosafot_translation/Chullin 2b.jsonl",
       "precomputed/rsi_state/context_usage_log.jsonl",
+      "precomputed/ai_additions/UnknownBook/1a.json",
       "precomputed/ai_additions/UnknownBook 1a.json",
     ];
-    expect(extractPagesFromPaths(paths)).toEqual(["Menachot 90a", "Chullin 2b"]);
+    expect(extractPagesFromPaths(paths)).toEqual(["Menachot 90a", "Rosh Hashanah 10a", "Chullin 2b"]);
   });
 });
 
