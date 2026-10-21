@@ -719,7 +719,7 @@ describe("critiquePrompt", () => {
   test("places static rules and format requirements before dynamic candidate content for prefix caching", () => {
     const prompt = critiquePrompt(candidate(), {hebrew: "מקור:", english: "source."});
     const rulesIndex = prompt.indexOf("Be extremely terse to minimize token usage.");
-    const targetIndex = prompt.indexOf("Target comment to check:");
+    const targetIndex = prompt.indexOf("## Target comment to check");
     expect(rulesIndex).toBeGreaterThan(-1);
     expect(targetIndex).toBeGreaterThan(-1);
     expect(rulesIndex).toBeLessThan(targetIndex);
@@ -747,10 +747,10 @@ describe("generationPrompt", () => {
         hebrewSource: "מקור הבדיקה",
       });
       const prompt = generationPrompt(testCandidate, "previous error message");
-      const tasksIndex = prompt.indexOf("Tasks:");
-      const rulesIndex = prompt.indexOf("Rules on tools and external lookups:");
+      const tasksIndex = prompt.indexOf("## Tasks");
+      const rulesIndex = prompt.indexOf("## Rules on tools and external lookups");
       const skeletonIndex = prompt.indexOf("Page index (segment refs");
-      const targetIndex = prompt.indexOf("Target commentary comment to translate:");
+      const targetIndex = prompt.indexOf("## Target commentary comment to translate");
       const feedbackIndex = prompt.indexOf("Your previous attempt was rejected for this reason");
 
       expect(tasksIndex).toBeGreaterThan(-1);

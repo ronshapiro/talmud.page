@@ -208,7 +208,12 @@ function getRangeEntry(ref: string, segmentRefs: string[]): GetRefsResultEntry {
   return {ref, he: entries.map(e => e.he).join(" "), en: entries.map(e => e.en).join(" ")};
 }
 
-export function getRefs(refs: string[], lang: RefLang = "both"): GetRefsResult {
+/**
+ * `onPage` (any ref on a page, e.g. a segment) looks refs up among that page's comments first: a
+ * comment's ref often points into another work ("Numbers 10:5"), while its text lives on the page
+ * it's attached to.
+ */
+export function getRefs(refs: string[], lang: RefLang = "both", onPage?: string): GetRefsResult {
   if (refs.length > MAX_REFS_PER_CALL) {
     return {
       entries: [],
@@ -216,7 +221,14 @@ export function getRefs(refs: string[], lang: RefLang = "both"): GetRefsResult {
         + "Split this into multiple smaller calls.",
     };
   }
+  const onLocation = onPage ? parseRefLocation(onPage) : undefined;
+  if (onPage && !onLocation) {
+    return {entries: [], error: `could not determine which book/page --on "${onPage}" refers to`};
+  }
+  const onIndex = onLocation && getPageIndex(onLocation.book, onLocation.page);
   const entries: GetRefsResultEntry[] = refs.map((ref): GetRefsResultEntry => {
+    const onEntry = onIndex?.get(ref);
+    if (onEntry) return {ref, he: onEntry.he, en: onEntry.en};
     const segmentRefs = rangeSegmentRefs(ref);
     if (segmentRefs) return getRangeEntry(ref, segmentRefs);
     const location = parseRefLocation(ref);
@@ -303,22 +315,58 @@ export function getNeighborSegments(
   return {entries: segments.map(segmentEntry)};
 }
 
-export interface BaseSegment extends GetRefsResultEntry {
-  // Mesorat Hashas refs (often ranges like "Sukkah 53b:7-9") for passages parallel to this one.
-  parallelRefs: string[];
-}
-
 /** The base Gemara segment a top-level commentary comment is attached to. */
-export function findBaseSegment(commentRef: string): BaseSegment | undefined {
+export function findBaseSegment(commentRef: string): GetRefsResultEntry | undefined {
   const location = parseRefLocation(commentRef);
   if (!location) return undefined;
   const amud = loadAmud(location.book, location.page);
   const segment = amud?.sections.find(candidate => Object.values(candidate.commentary ?? {})
     .some(commentary => commentary.comments.some(comment => comment.ref === commentRef)));
-  if (!segment) return undefined;
-  const parallelRefs = (segment.commentary?.["Mesorat Hashas"]?.comments ?? [])
-    .map(comment => comment.ref);
-  return {...segmentEntry(segment), parallelRefs};
+  return segment && segmentEntry(segment);
+}
+
+export interface CommentRefsResult {
+  commentary: Record<string, string[]>; // commentary name -> refs of its comments, in order
+  error?: string;
+}
+
+type CommentaryNode = Pick<ApiComment, "ref" | "commentary">;
+
+function findNode(nodes: CommentaryNode[], ref: string): CommentaryNode | undefined {
+  for (const node of nodes) {
+    if (node.ref === ref) return node;
+    for (const commentary of Object.values(node.commentary ?? {})) {
+      const found = findNode(commentary.comments, ref);
+      if (found) return found;
+    }
+  }
+  return undefined;
+}
+
+/**
+ * Lists the refs of the comments attached to a segment, or to a comment (e.g. the verses a Rashi
+ * quotes). Most commentaries' refs point into other works ("Numbers 10:5", "Sukkah 53b:7-9") and
+ * can't be derived from the segment ref, so this is how they're discovered. Fetch their text with
+ * get-refs --on <this page>.
+ */
+export function getCommentRefs(ref: string, commentaryName?: string): CommentRefsResult {
+  const location = parseRefLocation(ref);
+  if (!location) {
+    return {commentary: {}, error: "could not determine which book/page this ref belongs to"};
+  }
+  const amud = loadAmud(location.book, location.page);
+  if (!amud) return {commentary: {}, error: "page not cached"};
+  const node = findNode(amud.sections, ref);
+  if (!node) return {commentary: {}, error: "ref not found on its page"};
+  const commentary: Record<string, string[]> = {};
+  for (const [name, entry] of Object.entries(node.commentary ?? {})) {
+    if (commentaryName && name !== commentaryName) continue;
+    commentary[name] = entry.comments.map(comment => comment.ref);
+  }
+  if (commentaryName && !commentary[commentaryName]) {
+    return {commentary, error: `no ${commentaryName} comments on ${ref}`};
+  }
+  return {commentary};
 }
 
 export const MAX_SEARCH_MATCHES = 15;
@@ -447,7 +495,7 @@ export function extractRequestedRefs(toolUses: ToolUseRecord[]): string[] {
     const input = use.input as {command?: string; CommandLine?: string} | undefined;
     const command = input?.command ?? input?.CommandLine;
     if (!command || !command.includes("context_fetch_cli")) continue;
-    if (/context_fetch_cli\S*\s+(wikipedia|search)\b/.test(command)) continue;
+    if (/context_fetch_cli\S*\s+(wikipedia|search|get-comment-refs)\b/.test(command)) continue;
     const arrayMatch = command.match(/\[[^\]]*]/);
     if (arrayMatch) {
       try {

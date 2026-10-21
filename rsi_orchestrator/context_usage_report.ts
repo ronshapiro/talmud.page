@@ -48,7 +48,9 @@ function commandText(input: unknown): string | undefined {
   return command ?? CommandLine;
 }
 
-const SUBCOMMANDS = new Set(["get-refs", "get-neighbors", "get-prior-sugyot", "search", "wikipedia"]);
+const SUBCOMMANDS = new Set([
+  "get-refs", "get-comment-refs", "get-neighbors", "get-prior-sugyot", "search", "wikipedia",
+]);
 
 function subcommandOf(command: string): string | undefined {
   const match = /context_fetch_cli\S*\s+([a-z-]+)/.exec(command);

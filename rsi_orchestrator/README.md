@@ -70,6 +70,10 @@ billing.
   generate calls (`context_usage_report.ts`): how often calls fetch, refs per fetch, and how many
   refs land off the target's page, off its book, or on the tractate's first pages. Run it with
   `--since` set to the date of a prompt change to see whether the change reduced wasted fetches.
+- `prompts/*.md` — the translation task's prompts, as markdown templates rendered by
+  `prompt_template.ts`. Each line break in a file is a line break in the prompt, `{{param}}` is
+  filled in by the caller, and a line holding only an empty param is dropped. Edit these to change
+  what the agent is told; the leading `<!-- -->` comment in each lists its params.
 - `schedule_runner.ts` — the actual scheduled-run entrypoint. Each invocation ("tick") reads
   `budget_config.json`, and for every enabled/under-cap/unpaused task type runs one bounded batch
   (capped by `maxCallsPerRun` and the remaining daily budget), then stops — never an open-ended

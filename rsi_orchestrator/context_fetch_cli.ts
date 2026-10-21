@@ -1,7 +1,7 @@
 import * as yargs from "yargs";
 import {hideBin} from "yargs/helpers";
 import {
-  fetchWikipedia, getNeighborSegments, getPriorSugyaSkeleton, getRefs, searchPage,
+  fetchWikipedia, getCommentRefs, getNeighborSegments, getPriorSugyaSkeleton, getRefs, searchPage,
 } from "./context_fetch";
 
 /**
@@ -25,6 +25,7 @@ async function main(): Promise<void> {
         })
         .options({
           lang: {choices: ["he", "en", "both"] as const, default: "both" as const},
+          on: {type: "string", describe: "a ref on the page whose comments to look the refs up in"},
         }),
       argv => {
         let refs: string[];
@@ -35,7 +36,17 @@ async function main(): Promise<void> {
           process.exitCode = 1;
           return;
         }
-        console.log(JSON.stringify(getRefs(refs, argv.lang)));
+        console.log(JSON.stringify(getRefs(refs, argv.lang, argv.on)));
+      },
+    )
+    .command(
+      "get-comment-refs <ref>",
+      "List the refs of the comments on a segment (or on a comment), by commentary",
+      y => y
+        .positional("ref", {type: "string", demandOption: true})
+        .options({commentary: {type: "string", describe: 'only this commentary, e.g. "Verses"'}}),
+      argv => {
+        console.log(JSON.stringify(getCommentRefs(argv.ref, argv.commentary)));
       },
     )
     .command(

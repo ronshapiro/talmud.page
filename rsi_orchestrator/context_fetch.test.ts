@@ -8,6 +8,7 @@ import {
   extractRequestedRefs,
   fetchWikipedia,
   findBaseSegment,
+  getCommentRefs,
   getNeighborSegments,
   getPriorSugyaSkeleton,
   getRefs,
@@ -298,14 +299,52 @@ describe("findBaseSegment", () => {
   test("returns the Gemara segment a comment is attached to", () => {
     writeJson(filePath, amud());
     expect(findBaseSegment(`Rashi on Zevachim ${SECTION}:1:1`)).toEqual({
-      ref: `Zevachim ${SECTION}:1`, he: "ראשון", en: "first", parallelRefs: [],
+      ref: `Zevachim ${SECTION}:1`, he: "ראשון", en: "first",
     });
   });
+});
 
-  test("lists the segment's Mesorat Hashas parallels", () => {
+describe("getCommentRefs", () => {
+  test("lists a segment's comment refs by commentary", () => {
     writeJson(nextFilePath, nextAmud());
-    expect(findBaseSegment(`Rashi on Zevachim ${NEXT_SECTION}:1:1`)?.parallelRefs)
-      .toEqual(["Sukkah 53b:7-9"]);
+    expect(getCommentRefs(`Zevachim ${NEXT_SECTION}:1`)).toEqual({commentary: {
+      "Mesorat Hashas": ["Sukkah 53b:7-9"],
+      Rashi: [`Rashi on Zevachim ${NEXT_SECTION}:1:1`],
+      Steinsaltz: [`Steinsaltz on Zevachim ${NEXT_SECTION}:1`],
+    }});
+  });
+
+  test("filters to one commentary", () => {
+    writeJson(nextFilePath, nextAmud());
+    expect(getCommentRefs(`Zevachim ${NEXT_SECTION}:1`, "Mesorat Hashas"))
+      .toEqual({commentary: {"Mesorat Hashas": ["Sukkah 53b:7-9"]}});
+    expect(getCommentRefs(`Zevachim ${NEXT_SECTION}:1`, "Verses").error).toMatch(/no Verses/);
+  });
+
+  test("lists the comments nested on a comment", () => {
+    writeJson(filePath, amud());
+    expect(getCommentRefs(`Rashi on Zevachim ${SECTION}:1:1`))
+      .toEqual({commentary: {Rashi: [`Rashi on Zevachim ${SECTION}:1:1:1`]}});
+  });
+
+  test("errors for a ref that isn't on its page", () => {
+    writeJson(filePath, amud());
+    expect(getCommentRefs(`Zevachim ${SECTION}:99`).error).toMatch(/not found/);
+  });
+});
+
+describe("getRefs --on", () => {
+  test("finds a comment whose ref points into another work on the given page", () => {
+    writeJson(nextFilePath, nextAmud());
+    expect(getRefs(["Sukkah 53b:7-9"], "both", `Zevachim ${NEXT_SECTION}:1`).entries)
+      .toEqual([{ref: "Sukkah 53b:7-9", he: "מקביל", en: "parallel"}]);
+  });
+
+  test("falls back to the ref's own page", () => {
+    writeJson(filePath, amud());
+    writeJson(nextFilePath, nextAmud());
+    expect(getRefs([`Zevachim ${SECTION}:2`], "he", `Zevachim ${NEXT_SECTION}:1`).entries)
+      .toEqual([{ref: `Zevachim ${SECTION}:2`, he: "שני"}]);
   });
 
   test("returns undefined when the page isn't cached", () => {
@@ -515,6 +554,13 @@ describe("extractRequestedRefs", () => {
       },
     ]);
     expect(refs).toEqual(["Zevachim 2a:1"]);
+  });
+
+  test("ignores get-comment-refs commands when extracting refs", () => {
+    expect(extractRequestedRefs([{
+      name: "Bash",
+      input: {command: "npx ts-node rsi_orchestrator/context_fetch_cli.ts get-comment-refs \"Zevachim 2a:1\""},
+    }])).toEqual([]);
   });
 
   test("ignores search commands when extracting refs", () => {
