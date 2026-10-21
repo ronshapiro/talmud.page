@@ -43,16 +43,26 @@ export function listPagesWithGenerationRecords(taskType: string): string[] {
   const taskDirectory = `${GENERATION_RECORD_DIR}/${taskType}`;
   if (!fs.existsSync(taskDirectory)) return [];
   const pages: string[] = [];
-  for (const entry of fs.readdirSync(taskDirectory)) {
-    const entryPath = `${taskDirectory}/${entry}`;
-    if (fs.statSync(entryPath).isDirectory()) {
-      for (const fileName of fs.readdirSync(entryPath)) {
-        if (fileName.endsWith(".json")) {
-          const pageName = fileName.slice(0, -".json".length);
-          pages.push(`${entry} ${pageName}`);
+  try {
+    const entries = fs.readdirSync(taskDirectory, {withFileTypes: true});
+    for (const entry of entries) {
+      if (entry.isDirectory()) {
+        const entryPath = `${taskDirectory}/${entry.name}`;
+        try {
+          const files = fs.readdirSync(entryPath);
+          for (const fileName of files) {
+            if (fileName.endsWith(".json")) {
+              const pageName = fileName.slice(0, -".json".length);
+              pages.push(`${entry.name} ${pageName}`);
+            }
+          }
+        } catch {
+          // Directory may have been deleted concurrently
         }
       }
     }
+  } catch {
+    // Task directory may have been modified or deleted
   }
   return pages;
 }
