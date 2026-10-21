@@ -13,7 +13,6 @@ const MANAGED_PATHS = [
   "precomputed/ai_additions",
   "precomputed/rsi_state/generation_records",
   "precomputed/rsi_state/context_usage_log",
-  "precomputed/rsi_state/context_usage_log.jsonl",
 ];
 
 export interface CommitPendingDeps {
