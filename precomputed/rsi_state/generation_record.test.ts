@@ -3,6 +3,7 @@ import {
   findDependentsOnPage,
   findGenerationRecord,
   GenerationRecord,
+  generationRecordPath,
   listPagesWithGenerationRecords,
   readGenerationRecord,
   readGenerationRecordsForPage,
@@ -26,6 +27,15 @@ function record(overrides: Partial<GenerationRecord> = {}): GenerationRecord {
 
 afterEach(() => {
   fs.rmSync(`precomputed/rsi_state/generation_records/${TASK_TYPE}`, {recursive: true, force: true});
+});
+
+test("generationRecordPath splits page ref into book directory and page filename", () => {
+  expect(generationRecordPath("translation", "Berakhot 2a"))
+    .toBe("precomputed/rsi_state/generation_records/translation/Berakhot/2a.json");
+  expect(generationRecordPath("translation", "Rosh Hashanah 10a"))
+    .toBe("precomputed/rsi_state/generation_records/translation/Rosh Hashanah/10a.json");
+  expect(generationRecordPath("translation", "NoSpace"))
+    .toBe("precomputed/rsi_state/generation_records/translation/NoSpace.json");
 });
 
 test("readGenerationRecordsForPage returns an empty object when nothing has been written", () => {

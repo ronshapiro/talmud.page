@@ -2,6 +2,8 @@ import * as fs from "fs";
 import {readUtf8} from "../files";
 import {writeJson} from "../util/json_files";
 
+import {splitOnBookName} from "../refs";
+
 export interface Edit {
   hebrew?: string;
   english?: string;
@@ -15,8 +17,16 @@ export interface Edit {
 
 export const OUTPUT_DIR = "precomputed/ai_additions";
 
+export function aiEditsPath(page: string): string {
+  if (!page.includes(" ")) {
+    return `${OUTPUT_DIR}/${page}.json`;
+  }
+  const [book, pageName] = splitOnBookName(page);
+  return `${OUTPUT_DIR}/${book}/${pageName}.json`;
+}
+
 export function aiEditsForPage(page: string): Record<string, Edit> | undefined {
-  const fileName = `${OUTPUT_DIR}/${page}.json`;
+  const fileName = aiEditsPath(page);
   if (!fs.existsSync(fileName)) return undefined;
   return JSON.parse(readUtf8(fileName)) as Record<string, Edit>;
 }
@@ -25,5 +35,10 @@ export function aiEditsForPage(page: string): Record<string, Edit> | undefined {
 export function writeAiEdit(page: string, ref: string, edit: Edit): void {
   const edits = aiEditsForPage(page) ?? {};
   edits[ref] = edit;
-  writeJson(`${OUTPUT_DIR}/${page}.json`, edits);
+  const fileName = aiEditsPath(page);
+  const directory = fileName.slice(0, fileName.lastIndexOf("/"));
+  if (!fs.existsSync(directory)) {
+    fs.mkdirSync(directory, {recursive: true});
+  }
+  writeJson(fileName, edits);
 }
