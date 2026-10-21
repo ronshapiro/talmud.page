@@ -3,6 +3,7 @@ import * as modelRouting from "../precomputed/rsi_state/model_routing";
 import * as pageSkeleton from "../precomputed/rsi_state/page_skeleton";
 import {Edit} from "../precomputed/ai_edits";
 import * as agentRunner from "./agent_runner";
+import * as contextFetch from "./context_fetch";
 import {AgentError} from "./agent_runner";
 import {
   CritiqueOutcome,
@@ -10,6 +11,7 @@ import {
   critiquePrompt,
   critiqueViaAgent,
   generationPrompt,
+  targetComment,
   GeneratedEdit,
   generateViaAgent,
   generateWithSelfCritique,
@@ -719,10 +721,35 @@ describe("critiquePrompt", () => {
   test("places static rules and format requirements before dynamic candidate content for prefix caching", () => {
     const prompt = critiquePrompt(candidate(), {hebrew: "מקור:", english: "source."});
     const rulesIndex = prompt.indexOf("Be extremely terse to minimize token usage.");
-    const targetIndex = prompt.indexOf("Target comment to check:");
+    const targetIndex = prompt.indexOf("## Target comment to check");
     expect(rulesIndex).toBeGreaterThan(-1);
     expect(targetIndex).toBeGreaterThan(-1);
     expect(rulesIndex).toBeLessThan(targetIndex);
+  });
+});
+
+describe("targetComment", () => {
+  test("lists the commentary nested on the comment, e.g. Otzar La'azei Rashi", () => {
+    const refsSpy = jest.spyOn(contextFetch, "getCommentRefs").mockReturnValue({commentary: {
+      "Otzar Laazei Rashi": ["Otzar La'azei Rashi, Talmud, Bava Kamma 14"],
+      Verses: ["Exodus 21:35"],
+    }});
+    try {
+      const text = targetComment(candidate(), "מקור", undefined);
+      expect(text).toContain("Commentary on this comment: Otzar Laazei Rashi: "
+        + "Otzar La'azei Rashi, Talmud, Bava Kamma 14; Verses: Exodus 21:35");
+    } finally {
+      refsSpy.mockRestore();
+    }
+  });
+
+  test("omits the line when nothing is nested on the comment", () => {
+    const refsSpy = jest.spyOn(contextFetch, "getCommentRefs").mockReturnValue({commentary: {}});
+    try {
+      expect(targetComment(candidate(), "מקור", undefined)).not.toContain("Commentary on this comment");
+    } finally {
+      refsSpy.mockRestore();
+    }
   });
 });
 
@@ -733,7 +760,6 @@ describe("generationPrompt", () => {
       segments: [
         {
           ref: "Menachot 80a:1",
-          preview: "מקור הבדיקה",
           commentary: {Rashi: 1},
         },
       ],
@@ -748,10 +774,10 @@ describe("generationPrompt", () => {
         hebrewSource: "מקור הבדיקה",
       });
       const prompt = generationPrompt(testCandidate, "previous error message");
-      const tasksIndex = prompt.indexOf("Tasks:");
-      const rulesIndex = prompt.indexOf("Rules on tools and external lookups:");
-      const skeletonIndex = prompt.indexOf("This page's segments and commentary, for orientation");
-      const targetIndex = prompt.indexOf("Target commentary comment to translate:");
+      const tasksIndex = prompt.indexOf("## Tasks");
+      const rulesIndex = prompt.indexOf("## Rules on tools and external lookups");
+      const skeletonIndex = prompt.indexOf("Page index (segment refs");
+      const targetIndex = prompt.indexOf("## Target commentary comment to translate");
       const feedbackIndex = prompt.indexOf("Your previous attempt was rejected for this reason");
 
       expect(tasksIndex).toBeGreaterThan(-1);
@@ -808,7 +834,6 @@ describe("base64 image decoding, placeholders, and restoration", () => {
       segments: [
         {
           ref: "Menachot 98a:1",
-          preview: "מקור הבדיקה",
           commentary: {Rashi: 1},
         },
       ],
@@ -874,7 +899,7 @@ describe("base64 image decoding, placeholders, and restoration", () => {
   test("generateViaAgent and critiqueViaAgent pass decoded images to runner and restore placeholders", async () => {
     const buildPageSkeletonSpy = jest.spyOn(pageSkeleton, "buildPageSkeleton").mockReturnValue({
       page: "Menachot 98a",
-      segments: [{ref: "Menachot 98a:1", preview: "מקור", commentary: {Rashi: 1}}],
+      segments: [{ref: "Menachot 98a:1", commentary: {Rashi: 1}}],
     });
     const recordContextUsageSpy = jest
       .spyOn(contextUsageLog, "recordContextUsage")

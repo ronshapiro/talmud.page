@@ -19,7 +19,8 @@ import {
   StalenessStatus,
 } from "../precomputed/rsi_state/staleness";
 import {toFlatArray} from "../sefariaTextType";
-import {extractRequestedRefs} from "./context_fetch";
+import {extractRequestedRefs, findBaseSegment, getCommentRefs} from "./context_fetch";
+import {renderPrompt} from "./prompt_template";
 import {AgentError, AgentBackend, getAgentRunner} from "./agent_runner";
 import {
   extractBase64Images,
@@ -582,6 +583,24 @@ function formatWorkedExamples(examples: WorkedExample[]): string {
   ].filter((line): line is string => line !== undefined).join("\n")).join("\n\n");
 }
 
+/** Shared by the first-turn and long-thread continuation prompts. */
+export function targetComment(
+  candidate: TranslationCandidate, hebrewSource: string, imageNote: string | undefined,
+): string {
+  const segment = findBaseSegment(candidate.ref);
+  const nested = Object.entries(getCommentRefs(candidate.ref).commentary)
+    .map(([name, refs]) => `${name}: ${refs.join(", ")}`);
+  return renderPrompt("target_comment.md", {
+    segmentLine: segment && `Attached Gemara segment (${segment.ref}): ${segment.he}`,
+    segmentEnglishLine: segment?.en && `Existing English of that segment: ${segment.en}`,
+    nestedLine: nested.length > 0 ? `Commentary on this comment: ${nested.join("; ")}` : undefined,
+    commentRef: candidate.ref,
+    commentator: candidate.commentator,
+    hebrewSource,
+    imageNote,
+  });
+}
+
 export function generationPrompt(candidate: TranslationCandidate, priorFeedback?: string): string {
   const book = books.byCanonicalName[candidate.book] as Book | undefined;
   if (!book) {
@@ -602,63 +621,13 @@ export function generationPrompt(candidate: TranslationCandidate, priorFeedback?
   const hebrewSourceWithPlaceholders = extractedImages.textWithPlaceholders;
   const imageNote = formatGenerationImagePlaceholderNote(extractedImages.images);
 
-  return [
-    "Instructions (ID: TRANSLATION_TASK):",
-    "You're translating and punctuating a single commentary comment on the Talmud, for",
-    "talmud.page (an interactive study tool).",
-    "",
-    "Tasks:",
-    "1. Add punctuation to the Hebrew comment if it doesn't already have it (Rashi/Tosafot",
-    "   style: a hyphen separates the dibbur hamatchil from the comment body, and the comment",
-    "   ends with a colon, not a period). Expand abbreviations only if you're confident what",
-    "   they stand for. Don't change the source text otherwise. Preserve existing HTML tags",
-    "   around the same words. Omit the Hebrew field entirely if it would be identical to the",
-    "   source.",
-    "2. Write an accurate, readable English translation.",
-    "3. If the existing translation is in French, German, or Spanish rather than English,",
-    "   translate that into English instead of writing a fresh translation.",
-    "",
-    "Rules on tools and external lookups:",
-    "- The ONLY permitted CLI tool is context_fetch_cli (`npx ts-node rsi_orchestrator/context_fetch_cli.ts ...`).",
-    "- You must NOT execute `git`, `python`, arbitrary node execution (such as `node -e`), or arbitrary bash commands/scripts (e.g. cat, diff, echo to file). Any attempt to run git, python, or other unapproved commands is blocked and will abort your attempt.",
-    "- Do NOT attempt to output your response via `node` or bash. Output your JSON response directly as text in your message.",
-    "- You must NOT make any lookups to Sefaria (sefaria.org). External lookups to sefaria.org are strictly forbidden and blocked.",
-    "- Wikipedia checks ARE permitted (via `npx ts-node rsi_orchestrator/context_fetch_cli.ts wikipedia ...` or curl to wikipedia.org) if needed for realia, botanical/zoological terms, historical figures, or French loanwords.",
-    "- If context_fetch_cli or Wikipedia does not provide what you need, do not seek it elsewhere — translate based on the provided text and your own knowledge.",
-    "",
-    "If you need the actual text of something beyond what's given above — a neighboring segment,",
-    "another commentary on this segment, or a prior sugya — you can use context_fetch_cli:",
-    "  npx ts-node rsi_orchestrator/context_fetch_cli.ts get-refs '[\"<ref>\", ...]'",
-    "  npx ts-node rsi_orchestrator/context_fetch_cli.ts get-neighbors \"<segment ref>\" "
-      + "[--before N] [--after N]",
-    "  npx ts-node rsi_orchestrator/context_fetch_cli.ts get-prior-sugyot \"<any ref on this "
-      + "page>\" [--count N]",
-    "  npx ts-node rsi_orchestrator/context_fetch_cli.ts wikipedia \"<topic>\" [--lang en|he]",
-    "Use your own judgment about whether you need any of this — most comments don't need extra",
-    "context beyond what's already above. Each call is capped in size, so ask for specific refs",
-    "rather than trying to pull in everything at once.",
-    "",
-    'Respond with ONLY a JSON object matching {"hebrew"?: string, "english"?: string} — include '
-      + "a key only if you're proposing a change to it. No other text before or after the JSON.",
-    "",
-    "Worked example(s) of the expected output — punctuation style, and how literal vs. free the",
-    "English translation should be:",
-    "",
-    formatWorkedExamples(workedExamples),
-    "",
-    "This page's segments and commentary, for orientation (not full text):",
-    formatPageSkeleton(skeleton),
-    "",
-    "Target commentary comment to translate:",
-    `Comment ref: ${candidate.ref}`,
-    `Commentator: ${candidate.commentator}`,
-    `Current Hebrew text: ${hebrewSourceWithPlaceholders}`,
-    imageNote,
-    "",
-    priorFeedback
-      ? `Your previous attempt was rejected for this reason — fix it: ${priorFeedback}`
-      : "",
-  ].filter(line => line !== "").join("\n");
+  return renderPrompt("translation_generation.md", {
+    workedExamples: formatWorkedExamples(workedExamples),
+    pageIndex: formatPageSkeleton(skeleton),
+    targetComment: targetComment(candidate, hebrewSourceWithPlaceholders, imageNote),
+    priorFeedback: priorFeedback
+      && `Your previous attempt was rejected for this reason — fix it: ${priorFeedback}`,
+  });
 }
 
 export function critiquePrompt(candidate: TranslationCandidate, edit: Edit): string {
@@ -670,26 +639,12 @@ export function critiquePrompt(candidate: TranslationCandidate, edit: Edit): str
   } = extractBase64ImagesForCritique(candidate.hebrewSource, edit, candidate.ref);
   const imageNote = formatCritiqueImagePlaceholderNote(images);
 
-  return [
-    "Instructions (ID: CRITIQUE_TASK):",
-    "You proposed this edit to a Talmud commentary comment. Check it before it ships.",
-    "",
-    "Does the proposed Hebrew preserve the exact wording (only punctuation/HTML changed, no",
-    "words added, removed, or changed)? Is the English translation accurate to the Hebrew?",
-    "",
-    "No lookups to sefaria.org or arbitrary bash/scripts (e.g. no python, no node, no cat/diff/file creation) are permitted. All text comparison must be performed directly in your own reasoning. Wikipedia lookups are permitted if needed.",
-    "",
-    "Be extremely terse to minimize token usage. Output ONLY a concise JSON decision with no preamble or commentary:",
-    '- If valid: {"valid": true}',
-    '- If invalid: {"valid": false, "reason": "<brief one-sentence reason>"} so generation can retry.',
-    "Keep any rejection reason to a single brief sentence. Do not include verbose commentary, apologies, or full rewrites.",
-    "",
-    "Target comment to check:",
-    `Original Hebrew: ${originalHebrewWithPlaceholders}`,
-    `Proposed Hebrew: ${proposedHebrewWithPlaceholders}`,
-    `Proposed English: ${proposedEnglishWithPlaceholders}`,
-    ...(imageNote ? [imageNote] : []),
-  ].join("\n");
+  return renderPrompt("translation_critique.md", {
+    originalHebrew: originalHebrewWithPlaceholders,
+    proposedHebrew: proposedHebrewWithPlaceholders,
+    proposedEnglish: proposedEnglishWithPlaceholders,
+    imageNote,
+  });
 }
 
 export function parseJsonResponse<T>(text: string): T {

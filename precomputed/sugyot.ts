@@ -1,43 +1,12 @@
 import * as fs from "fs";
 import {Amud, Section} from "../apiTypes";
-import {books, Book} from "../books";
+import {books} from "../books";
 import {cachedOutputFilePath} from "../cached_outputs";
 import {stripHebrewNonletters} from "../hebrew";
 import {mishnaReferencePath} from "../precomputed";
+import {refRange} from "../refs";
 import {sanitizeHtml} from "../source_formatting/html_sanitization_node";
 import {writeJson} from "../util/json_files";
-
-function canonicalizeToRefRange(ref: string): [[string, string], [string, string]] {
-  if (ref.includes("-")) {
-    const [start, end] = ref.split("-");
-    const [startPage, startSegment] = start.split(":");
-    const endParts = end.split(":");
-    if (endParts.length === 1) {
-      return [[startPage, startSegment], [startPage, endParts[0]]];
-    } else {
-      return [[startPage, startSegment], [endParts[0], endParts[1]]];
-    }
-  }
-  const [page, segment] = ref.split(":");
-  return [[page, segment], [page, segment]];
-}
-
-function mergeRefs(book: Book, first: string, second: string): string {
-  if (first === second) return first;
-
-  const bookPrefix = book.canonicalName + " ";
-  first = first.replace(bookPrefix, "");
-  second = second.replace(bookPrefix, "");
-
-  const [startPage, startSegment] = canonicalizeToRefRange(first)[0];
-  const [endPage, endSegment] = canonicalizeToRefRange(second)[1];
-
-  if (startPage === endPage) {
-    return `${bookPrefix}${startPage}:${startSegment}-${endSegment}`;
-  } else {
-    return `${bookPrefix}${startPage}:${startSegment}-${endPage}:${endSegment}`;
-  }
-}
 
 function startsWithHeading(text: string, prefix: string): boolean {
   const stripped = stripHebrewNonletters(text);
@@ -123,7 +92,7 @@ for (const book of books.allBooks) {
       sugyaEndpoints.push({start, end, length: refsInSugya.length});
 
       for (const ref of refsInSugya) {
-        const sugyaRef = mergeRefs(book, start, end);
+        const sugyaRef = refRange(start, end);
         refPointers[ref] = sugyaRef;
         if (refsInSugya.length > 1) {
           refPointersToSerialize[ref] = sugyaRef;
@@ -189,7 +158,7 @@ for (const book of books.allBooks) {
         if (lastMishnaEnd && !pointerEnd) {
           throw new Error([lastMishnaEnd, pointerEnd, pointerStart, lastMishna].join(" - "));
         }
-        const pointer = lastMishnaEnd ? mergeRefs(book, pointerStart, pointerEnd!) : pointerStart;
+        const pointer = lastMishnaEnd ? refRange(pointerStart, pointerEnd!) : pointerStart;
         if (pointer === undefined) {
           throw new Error([segment.ref, lastMishna + ""].join(" "));
         }

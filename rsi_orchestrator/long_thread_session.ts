@@ -1,13 +1,16 @@
 import {v4 as uuid} from "uuid";
 import {Edit} from "../precomputed/ai_edits";
 import {AgentBackend} from "./agent_runner";
+import {renderPrompt} from "./prompt_template";
 import {
   extractBase64Images,
   extractBase64ImagesForCritique,
   formatCritiqueImagePlaceholderNote,
   formatGenerationImagePlaceholderNote,
 } from "./base64_images";
-import {CritiqueOutcome, TranslationCandidate} from "./rashi_tosafot_translation";
+import {
+  CritiqueOutcome, targetComment, TranslationCandidate,
+} from "./rashi_tosafot_translation";
 
 export const DEFAULT_MAX_THREAD_TOKENS = 128 * 1024;
 export const DEFAULT_MAX_THREAD_TURNS = 10;
@@ -28,15 +31,9 @@ export function continuationGenerationPrompt(candidate: TranslationCandidate): s
     {ref: candidate.ref},
   );
   const imageNote = formatGenerationImagePlaceholderNote(images);
-  return [
-    "Next commentary comment to translate and punctuate on this page:",
-    `Comment ref: ${candidate.ref}`,
-    `Commentator: ${candidate.commentator}`,
-    `Current Hebrew text: ${textWithPlaceholders}`,
-    ...(imageNote ? [imageNote] : []),
-    "",
-    "Follow TRANSLATION_TASK instructions and format established above.",
-  ].join("\n");
+  return renderPrompt("translation_continuation.md", {
+    targetComment: targetComment(candidate, textWithPlaceholders, imageNote),
+  });
 }
 
 export function continuationCritiquePrompt(
@@ -50,16 +47,13 @@ export function continuationCritiquePrompt(
     images,
   } = extractBase64ImagesForCritique(candidate.hebrewSource, edit, candidate.ref);
   const imageNote = formatCritiqueImagePlaceholderNote(images);
-  return [
-    "Target comment to check:",
-    `Comment ref: ${candidate.ref}`,
-    `Original Hebrew: ${originalHebrewWithPlaceholders}`,
-    `Proposed Hebrew: ${proposedHebrewWithPlaceholders}`,
-    `Proposed English: ${proposedEnglishWithPlaceholders}`,
-    ...(imageNote ? [imageNote] : []),
-    "",
-    "Evaluate according to CRITIQUE_TASK instructions and format established above.",
-  ].join("\n");
+  return renderPrompt("critique_continuation.md", {
+    commentRef: candidate.ref,
+    originalHebrew: originalHebrewWithPlaceholders,
+    proposedHebrew: proposedHebrewWithPlaceholders,
+    proposedEnglish: proposedEnglishWithPlaceholders,
+    imageNote,
+  });
 }
 
 export interface LongThreadSessionOptions {
