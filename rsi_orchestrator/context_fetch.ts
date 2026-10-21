@@ -3,6 +3,7 @@ import {Amud, ApiComment} from "../apiTypes";
 import {Book, books} from "../books";
 import {hebrewSearchRegex, stripHebrewNonletters} from "../hebrew";
 import {expandRef} from "../ref_expander";
+import {refRange} from "../refs";
 import {cachedOutputFilePath} from "../cached_outputs";
 import {readUtf8} from "../files";
 import {ToolUseRecord} from "../precomputed/rsi_state/context_usage_log";
@@ -405,16 +406,6 @@ function readSugyot(book: Book): SugyaRange[] {
   return JSON.parse(readUtf8(filePath)) as SugyaRange[];
 }
 
-/** "Arakhin 8b:17" + "Arakhin 10a:1" -> "Arakhin 8b:17-10a:1", usable by get-refs and search. */
-function segmentRangeRef(start: string, end: string): string {
-  const startPage = start.slice(0, start.lastIndexOf(":"));
-  const endPage = end.slice(0, end.lastIndexOf(":"));
-  const endSegment = end.slice(end.lastIndexOf(":") + 1);
-  return startPage === endPage
-    ? `${start}-${endSegment}`
-    : `${start}-${endPage.slice(endPage.lastIndexOf(" ") + 1)}:${endSegment}`;
-}
-
 export interface PriorSugyaResult {
   sugyot: (SugyaRange & {range: string})[];
   error?: string;
@@ -440,7 +431,7 @@ export function getPriorSugyaSkeleton(ref: string, count = 2): PriorSugyaResult 
   }
   return {
     sugyot: sugyot.slice(Math.max(0, index - count), index)
-      .map(sugya => ({...sugya, range: segmentRangeRef(sugya.start, sugya.end)})),
+      .map(sugya => ({...sugya, range: refRange(sugya.start, sugya.end)})),
   };
 }
 
