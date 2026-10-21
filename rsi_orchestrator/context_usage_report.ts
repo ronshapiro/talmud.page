@@ -1,5 +1,6 @@
 import {ContextUsageEntry} from "../precomputed/rsi_state/context_usage_log";
 import {books} from "../books";
+import {splitOnBookName} from "../refs";
 import {extractRequestedRefs, parseRefLocation} from "./context_fetch";
 
 interface PageLocation {
@@ -64,11 +65,8 @@ export function computeContextReport(
   const slowLocations = new Map<string, PageLocation | undefined>();
   const locate = (ref: string): PageLocation | undefined => {
     const pageKey = ref.replace(/^.*? on /, "").split(":")[0];
-    const lastSpace = pageKey.lastIndexOf(" ");
-    const book = pageKey.slice(0, lastSpace);
-    if (lastSpace !== -1 && books.byCanonicalName[book]) {
-      return {book, page: pageKey.slice(lastSpace + 1)};
-    }
+    const [book, page] = splitOnBookName(pageKey);
+    if (books.byCanonicalName[book]) return {book, page};
     if (!slowLocations.has(pageKey)) {
       const location = parseRefLocation(pageKey);
       slowLocations.set(pageKey, location && {

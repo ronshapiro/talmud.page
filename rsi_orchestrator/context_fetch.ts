@@ -2,6 +2,7 @@ import * as fs from "fs";
 import {Amud, ApiComment} from "../apiTypes";
 import {Book, books} from "../books";
 import {hebrewSearchRegex, stripHebrewNonletters} from "../hebrew";
+import {expandRef} from "../ref_expander";
 import {cachedOutputFilePath} from "../cached_outputs";
 import {readUtf8} from "../files";
 import {ToolUseRecord} from "../precomputed/rsi_state/context_usage_log";
@@ -160,39 +161,34 @@ function adjacentPage(book: Book, page: string, direction: "previous" | "next"):
   }
 }
 
-// e.g. "Sukkah 53b:7-9" or "Sukkah 53b:10-54a:2" — the shape Mesorat Hashas parallels use.
-const RANGE_REF = /^(.+) (\d+[ab]):(\d+)-(?:(\d+[ab]):)?(\d+)$/;
 const MAX_RANGE_PAGES = 3;
 
-function segmentNumber(segmentRef: string): number {
-  return parseInt(segmentRef.slice(segmentRef.lastIndexOf(":") + 1), 10);
+/** The segment refs a range like "Sukkah 53b:10-54a:2" covers, or undefined if not a range. */
+function rangeSegmentRefs(ref: string): string[] | undefined {
+  try {
+    const expanded = expandRef(ref);
+    return expanded && !(expanded.length === 1 && expanded[0] === ref) ? expanded : undefined;
+  } catch {
+    return undefined; // not a plain segment range, e.g. a commentary ref
+  }
 }
 
 type RangeSegments =
   | {segments: Segment[]; error?: undefined}
   | {segments?: undefined; error: string};
 
-/** The base segments of a range ref, in order, walking forward across at most `maxPages` amudim. */
-function rangeSegments(ref: string, maxPages: number): RangeSegments {
-  const [, bookName, startPage, startSegment, endPageOrSame, endSegment] = RANGE_REF.exec(ref)!;
-  const location = parseRefLocation(`${bookName} ${startPage}`);
-  if (!location) return {error: "could not determine which book/page this ref belongs to"};
-  const endPage = endPageOrSame ?? startPage;
+function rangeSegments(segmentRefs: string[], maxPages: number): RangeSegments {
+  const pageRefs = Array.from(new Set(segmentRefs.map(ref => ref.slice(0, ref.lastIndexOf(":")))));
+  if (pageRefs.length > maxPages) return {error: `range spans more than ${maxPages} pages`};
+  const wanted = new Set(segmentRefs);
   const segments: Segment[] = [];
-  let page: string | undefined = startPage;
-  for (let pagesRead = 0; page && pagesRead < maxPages; pagesRead++) {
-    const amud = loadAmud(location.book, page);
-    if (!amud) return {error: `${bookName} ${page} is not cached`};
-    for (const segment of amud.sections) {
-      const n = segmentNumber(segment.ref);
-      if (page === startPage && n < parseInt(startSegment, 10)) continue;
-      if (page === endPage && n > parseInt(endSegment, 10)) continue;
-      segments.push(segment);
-    }
-    if (page === endPage) return {segments};
-    page = adjacentPage(location.book, page, "next");
+  for (const pageRef of pageRefs) {
+    const location = parseRefLocation(pageRef);
+    const amud = location && loadAmud(location.book, location.page);
+    if (!amud) return {error: `${pageRef} is not cached`};
+    segments.push(...amud.sections.filter(segment => wanted.has(segment.ref)));
   }
-  return {error: `range spans more than ${maxPages} pages, or its end isn't in the book`};
+  return {segments};
 }
 
 export type RefLang = "he" | "en" | "both";
@@ -204,8 +200,8 @@ function withLang(entry: GetRefsResultEntry, lang: RefLang): GetRefsResultEntry 
 }
 
 /** A segment range, returned as one entry whose text is the range's segments joined in order. */
-function getRangeEntry(ref: string): GetRefsResultEntry {
-  const {segments, error} = rangeSegments(ref, MAX_RANGE_PAGES);
+function getRangeEntry(ref: string, segmentRefs: string[]): GetRefsResultEntry {
+  const {segments, error} = rangeSegments(segmentRefs, MAX_RANGE_PAGES);
   if (!segments) return {ref, error};
   const entries = segments.map(segmentEntry);
   return {ref, he: entries.map(e => e.he).join(" "), en: entries.map(e => e.en).join(" ")};
@@ -220,7 +216,8 @@ export function getRefs(refs: string[], lang: RefLang = "both"): GetRefsResult {
     };
   }
   const entries: GetRefsResultEntry[] = refs.map((ref): GetRefsResultEntry => {
-    if (RANGE_REF.test(ref)) return getRangeEntry(ref);
+    const segmentRefs = rangeSegmentRefs(ref);
+    if (segmentRefs) return getRangeEntry(ref, segmentRefs);
     const location = parseRefLocation(ref);
     if (!location) {
       return {ref, error: "could not determine which book/page this ref belongs to"};
@@ -238,7 +235,7 @@ export function getRefs(refs: string[], lang: RefLang = "both"): GetRefsResult {
         + "character limit per call. Request fewer refs at once"
         + (lang === "both" ? ", or pass --lang he if you only need the Hebrew wording" : "")
         + "."
-        + (refs.some(ref => RANGE_REF.test(ref))
+        + (refs.some(ref => rangeSegmentRefs(ref))
           ? " To find one spot in a long range, search the range instead, then get-refs only "
             + "the matching segment."
           : ""),
@@ -351,8 +348,9 @@ function plainText(text: string): string {
  */
 export function searchPage(pageOrRange: string, query: string): SearchResult {
   let segments: Segment[];
-  if (RANGE_REF.test(pageOrRange)) {
-    const range = rangeSegments(pageOrRange, MAX_SEARCH_RANGE_PAGES);
+  const segmentRefs = rangeSegmentRefs(pageOrRange);
+  if (segmentRefs) {
+    const range = rangeSegments(segmentRefs, MAX_SEARCH_RANGE_PAGES);
     if (!range.segments) return {matches: [], error: range.error};
     segments = range.segments;
   } else {
