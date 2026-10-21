@@ -1,5 +1,6 @@
 import * as fs from "fs";
 import {readUtf8} from "../../files";
+import {splitOnBookName} from "../../refs";
 import {writeJson} from "../../util/json_files";
 
 /**
@@ -28,18 +29,32 @@ export type PageGenerationRecords = Record<string, GenerationRecord>; // keyed b
 
 const GENERATION_RECORD_DIR = "precomputed/rsi_state/generation_records";
 
-function generationRecordPath(taskType: string, page: string): string {
-  return `${GENERATION_RECORD_DIR}/${taskType}/${page}.json`;
+export function generationRecordPath(taskType: string, page: string): string {
+  if (!page.includes(" ")) {
+    return `${GENERATION_RECORD_DIR}/${taskType}/${page}.json`;
+  }
+  const [book, pageName] = splitOnBookName(page);
+  return `${GENERATION_RECORD_DIR}/${taskType}/${book}/${pageName}.json`;
 }
 
 /** Every page with at least one generation record for this task type — used to find worked
  * examples of past accepted output (see rashi_tosafot_translation.ts's generationPrompt). */
 export function listPagesWithGenerationRecords(taskType: string): string[] {
-  const dir = `${GENERATION_RECORD_DIR}/${taskType}`;
-  if (!fs.existsSync(dir)) return [];
-  return fs.readdirSync(dir)
-    .filter(name => name.endsWith(".json"))
-    .map(name => name.slice(0, -".json".length));
+  const taskDirectory = `${GENERATION_RECORD_DIR}/${taskType}`;
+  if (!fs.existsSync(taskDirectory)) return [];
+  const pages: string[] = [];
+  for (const entry of fs.readdirSync(taskDirectory)) {
+    const entryPath = `${taskDirectory}/${entry}`;
+    if (fs.statSync(entryPath).isDirectory()) {
+      for (const fileName of fs.readdirSync(entryPath)) {
+        if (fileName.endsWith(".json")) {
+          const pageName = fileName.slice(0, -".json".length);
+          pages.push(`${entry} ${pageName}`);
+        }
+      }
+    }
+  }
+  return pages;
 }
 
 export function readGenerationRecordsForPage(
@@ -54,7 +69,10 @@ export function writeGenerationRecordsForPage(
   taskType: string, page: string, records: PageGenerationRecords,
 ): void {
   const fileName = generationRecordPath(taskType, page);
-  fs.mkdirSync(`${GENERATION_RECORD_DIR}/${taskType}`, {recursive: true});
+  const directory = fileName.slice(0, fileName.lastIndexOf("/"));
+  if (!fs.existsSync(directory)) {
+    fs.mkdirSync(directory, {recursive: true});
+  }
   writeJson(fileName, records);
 }
 

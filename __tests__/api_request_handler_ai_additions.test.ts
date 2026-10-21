@@ -11,7 +11,10 @@ import {AbstractApiRequestHandler, Comment, InternalSegment} from "../api_reques
 import {FakeRequestMaker, TEST_DATA_ROOT} from "../request_makers";
 import {NoopLogger} from "../logger";
 import {aiEditsPath, writeAiEdit} from "../precomputed/ai_edits";
-import {upsertGenerationRecord} from "../precomputed/rsi_state/generation_record";
+import {
+  generationRecordPath,
+  upsertGenerationRecord,
+} from "../precomputed/rsi_state/generation_record";
 
 const TEST_PAGE = "__Test_Ai_Page__ 2a";
 const TEST_TASK_TYPE = "rashi_tosafot_translation";
@@ -35,7 +38,8 @@ function createHandler(): TestHandler {
 afterEach(() => {
   fs.rmSync(aiEditsPath(TEST_PAGE), {force: true});
   fs.rmSync("precomputed/ai_additions/__Test_Ai_Page__", {force: true, recursive: true});
-  fs.rmSync(`precomputed/rsi_state/generation_records/${TEST_TASK_TYPE}/${TEST_PAGE}.json`, {force: true});
+  fs.rmSync(generationRecordPath(TEST_TASK_TYPE, TEST_PAGE), {force: true});
+  fs.rmSync(`precomputed/rsi_state/generation_records/${TEST_TASK_TYPE}/__Test_Ai_Page__`, {force: true, recursive: true});
 });
 
 test("pending RSI comment gets Model subcomment from generation record", () => {

@@ -67,13 +67,15 @@ export function extractPagesFromPaths(paths: string[]): string[] {
   const pages = new Set<string>();
   for (const filePath of paths) {
     let candidate: string | undefined;
-    const aiMatch = filePath.match(/^precomputed\/ai_additions\/(?:([^/]+)\/)?([^/]+)\.json$/);
+    const aiMatch = filePath.match(/^precomputed\/ai_additions\/([^/]+)\/([^/]+)\.json$/);
     if (aiMatch) {
-      candidate = aiMatch[1] ? `${aiMatch[1]} ${aiMatch[2]}` : aiMatch[2];
+      candidate = `${aiMatch[1]} ${aiMatch[2]}`;
     } else {
-      const generationMatch = filePath.match(/^precomputed\/rsi_state\/generation_records\/[^/]+\/(.+)\.json$/);
+      const generationMatch = filePath.match(
+        /^precomputed\/rsi_state\/generation_records\/[^/]+\/([^/]+)\/([^/]+)\.json$/,
+      );
       if (generationMatch) {
-        [, candidate] = generationMatch;
+        candidate = `${generationMatch[1]} ${generationMatch[2]}`;
       } else {
         const logMatch = filePath.match(/^precomputed\/rsi_state\/context_usage_log\/[^/]+\/(.+)\.jsonl$/);
         if (logMatch) {

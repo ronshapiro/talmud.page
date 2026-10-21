@@ -86,14 +86,19 @@ describe("extractPagesFromPaths", () => {
     const paths = [
       "precomputed/ai_additions/Menachot/90a.json",
       "precomputed/ai_additions/Rosh Hashanah/10a.json",
-      "precomputed/ai_additions/Menachot 90a.json",
-      "precomputed/rsi_state/generation_records/rashi_tosafot_translation/Menachot 90a.json",
+      "precomputed/rsi_state/generation_records/rashi_tosafot_translation/Berakhot/2a.json",
       "precomputed/rsi_state/context_usage_log/rashi_tosafot_translation/Chullin 2b.jsonl",
       "precomputed/rsi_state/context_usage_log.jsonl",
       "precomputed/ai_additions/UnknownBook/1a.json",
-      "precomputed/ai_additions/UnknownBook 1a.json",
+      "precomputed/ai_additions/Menachot 90a.json",
+      "precomputed/rsi_state/generation_records/rashi_tosafot_translation/Menachot 90a.json",
     ];
-    expect(extractPagesFromPaths(paths)).toEqual(["Menachot 90a", "Rosh Hashanah 10a", "Chullin 2b"]);
+    expect(extractPagesFromPaths(paths)).toEqual([
+      "Menachot 90a",
+      "Rosh Hashanah 10a",
+      "Berakhot 2a",
+      "Chullin 2b",
+    ]);
   });
 });
 
@@ -361,7 +366,7 @@ describe("formatDiffStatsTable", () => {
 
 function fakeDeps(overrides: Partial<CommitPendingDeps> = {}): CommitPendingDeps {
   return {
-    gitStatusPorcelain: async () => " M precomputed/ai_additions/Zevachim 16a.json",
+    gitStatusPorcelain: async () => " M precomputed/ai_additions/Zevachim/16a.json",
     currentBranch: async () => "rsi-feature-branch",
     findOpenPr: async () => undefined,
     commitPendingState: async (_message: string) => true,
@@ -403,9 +408,9 @@ describe("commitAndPushPendingCandidates", () => {
       .mockResolvedValueOnce("sha2");
     const getDiffStats = jest.fn(async () => ({
       diff: [
-        "diff --git a/precomputed/ai_additions/Zevachim 16a.json b/precomputed/ai_additions/Zevachim 16a.json",
-        "--- a/precomputed/ai_additions/Zevachim 16a.json",
-        "+++ b/precomputed/ai_additions/Zevachim 16a.json",
+        "diff --git a/precomputed/ai_additions/Zevachim/16a.json b/precomputed/ai_additions/Zevachim/16a.json",
+        "--- a/precomputed/ai_additions/Zevachim/16a.json",
+        "+++ b/precomputed/ai_additions/Zevachim/16a.json",
         "@@ -1,2 +1,10 @@",
         "-old1",
         "-old2",
@@ -420,7 +425,7 @@ describe("commitAndPushPendingCandidates", () => {
         "+new9",
         "+new10",
       ].join("\n"),
-      nameStatus: "M\tprecomputed/ai_additions/Zevachim 16a.json\n",
+      nameStatus: "M\tprecomputed/ai_additions/Zevachim/16a.json\n",
     }));
     const addPrComment = jest.fn();
 
@@ -448,7 +453,7 @@ describe("commitAndPushPendingCandidates", () => {
     );
     expect(addPrComment).toHaveBeenCalledWith(
       123,
-      expect.stringContaining("| `precomputed/ai_additions/Zevachim 16a.json` | modify | +8 | ~2 | -0 |"),
+      expect.stringContaining("| `precomputed/ai_additions/Zevachim/16a.json` | modify | +8 | ~2 | -0 |"),
     );
   });
 
@@ -461,8 +466,8 @@ describe("commitAndPushPendingCandidates", () => {
       .mockResolvedValueOnce("sha1")
       .mockResolvedValueOnce("sha2");
     const getDiffStats = jest.fn(async () => ({
-      numstat: "5\t1\tprecomputed/ai_additions/Zevachim 16a.json\n",
-      nameStatus: "M\tprecomputed/ai_additions/Zevachim 16a.json\n",
+      numstat: "5\t1\tprecomputed/ai_additions/Zevachim/16a.json\n",
+      nameStatus: "M\tprecomputed/ai_additions/Zevachim/16a.json\n",
     }));
     const addPrComment = jest.fn();
 
@@ -489,7 +494,7 @@ describe("commitAndPushPendingCandidates", () => {
     );
     expect(addPrComment).toHaveBeenCalledWith(
       42,
-      expect.stringContaining("| `precomputed/ai_additions/Zevachim 16a.json` | modify | +5 | ~0 | -1 |"),
+      expect.stringContaining("| `precomputed/ai_additions/Zevachim/16a.json` | modify | +5 | ~0 | -1 |"),
     );
   });
 
