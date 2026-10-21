@@ -1,0 +1,141 @@
+{
+  "Rashi on Shabbat 8a:1:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 8a:1:2",
+      "Shabbat 8a:1",
+      "Rashi on Shabbat 7b:10:1",
+      "Rashi on Shabbat 7b:10:2"
+    ],
+    "generatedAt": "2026-10-21T12:38:34.727Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 8a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונופו נוטה לרה\"ר וזרק</strong> - מתחילת ד' לסוף ד' ונח אנופו:"
+  },
+  "Rashi on Shabbat 8a:1:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 8a:1:1",
+      "Shabbat 8a:1",
+      "Chokhmat Shlomo on Shabbat 8a:1",
+      "Chokhmat Shlomo on Shabbat 8a:2",
+      "Tosafot on Shabbat 8a:1:1",
+      "Rashi on Shabbat 7b:10:1",
+      "Rashi on Shabbat 8a:2:1",
+      "Rashi on Shabbat 8a:2:2",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Shabbat 2a:1:3",
+      "Rashi on Shabbat 2a:3:5"
+    ],
+    "generatedAt": "2026-10-21T12:51:41.606Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 8a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שדי נופו כו'</strong> - דחשיב אגב עיקרו דאית ביה ד' ודרב חסדא דלא כרבי ודלא כרבנן לישנא אחרינא אמר אביי בדרב חסדא דהוי ברה\"י אפי' רבנן מודו וכי פליגי רבנן בשדי נופו בתר עיקרו הוא דפליגי:"
+  },
+  "Rashi on Shabbat 8a:2:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 8a:2:2",
+      "Rashi on Shabbat 8a:2:3",
+      "Steinsaltz on Shabbat 8a:2",
+      "Rashi on Shabbat 8a:1:1",
+      "Rashi on Shabbat 8a:1:2"
+    ],
+    "generatedAt": "2026-10-21T12:56:46.532Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 8a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כוורת</strong> - עגולה היא:"
+  },
+  "Rashi on Shabbat 8a:2:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 8a:2:1",
+      "Rashi on Shabbat 8a:2:3"
+    ],
+    "generatedAt": "2026-10-21T13:00:55.983Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 8a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גבוהה י'</strong> - כלומר אפי' גבוהה י' אם אינה רחבה ו' באמצעיתה חייב דאכתי חפץ בעלמא הוא ואינה רשות לעצמה דלא הוי רשות דאוריי' אלא גבוהה י' ורחבה ד' על ד' כדאמרי' בעירובין <span class=\"parenthesized\">(דף נא.)</span> דכל שיעורין דשבת צריך הן ואלכסונן ודבר עגול כי מרבעת לה מתוכו ומפקע עיגול שסביב הריבוע לא משכחת ביה ד' מרובעים אי לא הוי עיגולו קרוב לששה כדאמרינן גבי סוכה העשויה ככבשן <span class=\"parenthesized\">(סוכה פ\"א דף ז:)</span> דעל כרחיך צריך שתמצא בתוכו אלכסון של ד' על ד' וכל טפח בריבועו טפח ותרי חומשי באלכסונו הרי ה' טפחים וג' חומשין ואביי לא דק ולחומרא הוא דלא דק ולהפרישו מאיסור שבת אף ע\"ג דיש כאן אלכסון באינה רחבה ששה מחייב ליה מדרבנן עד דאיכא ששה אבל ודאי לענין קרבן לא מייתי אי הויא ה' טפחים וג' חומשין דהוי כזורק רשות:"
+  },
+  "Rashi on Shabbat 8a:2:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 8a:2:1",
+      "Rashi on Shabbat 8a:2:2"
+    ],
+    "generatedAt": "2026-10-21T13:03:08.594Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 8a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רחבה ו' פטור</strong> - דהוי רשות לעצמה ואנן ממשכן גמרינן שהיו זורקין מחטיהן במלאכתן זה לזה ולא היו זורקין רשויות וא\"ת בדלא גבוהה עשרה נמי רשות לעצמה היא דהא שמה כרמלית ההיא לאו מדאורייתא הוה רשות אלא מדרבנן ולא להקל על דברי תורה בא כגון זו שיפטר מחטאת:"
+  },
+  "Tosafot on Shabbat 8a:1:1": {
+    "dependsOn": [
+      "Shabbat 8a:1",
+      "Rashi on Shabbat 8a:1:1",
+      "Chokhmat Shlomo on Shabbat 8a:1"
+    ],
+    "generatedAt": "2026-10-21T12:54:44.582Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 8a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר אביי הכא באילן העומד כו'</strong> - תימה לר\"י דטפי ניחא ליה למימר דפליגי בדרב חסדא ורב חסדא כרבי דלשנויא דאביי דלא שייכא פלוגתייהו בדרב חסדא כ\"ש דקשה לרב חסדא דהא איכא ברייתא לקמן בהזורק <span class=\"parenthesized\">(שבת דף ק. ושם)</span> דלא כרב חסדא דפליגי רבנן ורבי מאיר בזרק למעלה מעשרה ונח בחור כל שהוא דר\"מ מחייב משום דאמרי' חוקקין להשלים והוי כמונח ע\"ג מקום ד' וחכמים פוטרין אלמא כולהו מודו דבעינן מקום ד' ברה\"י ושמא י\"ל דטעמא דרב חסדא דלא בעי' מקום ד' ברה\"י משום דאמרי' ביתא כמליא דמי וחשיב כמונח על גבי מקום ארבעה אבל בכותל בעינן שיהא בחור ד' על ד':"
+  },
+  "Tosafot on Shabbat 8a:2:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 8a:2:1",
+      "Rashi on Shabbat 8a:2:2",
+      "Rashi on Shabbat 8a:2:3",
+      "Rabbeinu Chananel on Shabbat 8a:2",
+      "Tosafot on Eruvin 93b:1:1"
+    ],
+    "generatedAt": "2026-10-21T13:08:10.913Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 8a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רחבה ששה פטור</strong> - פר\"ח דדוקא נקט ששה דדופני הכוורת יש בהן שני חומשין וצריך שיהא אויר ד' בתוך הכוורת וגבוה י' אף ע\"ג דאין אויר גבוה י' אלא עם השולים מצטרפין עם האויר לענין גובה דהלכתא גידוד ה' ומחיצה ה' מצטרפין <span class=\"parenthesized\">(עירובין דף צג. ושם)</span> אף על גב דרש\"י פי' דגידוד ה' ומחיצה ה' היינו שעשה מחיצה ה' על בור עמוק ה' אין פירושו נראה דהא תנן <span class=\"parenthesized\">(שם פ\"י דף צט: ולקמן שבת דף צט.)</span> בור וחוליתו מצטרפין ואם כן היכי פליג רב חסדא לומר אין מצטרפין כיון דמתניתין היא ובכל גגות <span class=\"parenthesized\">(עירובין צג:)</span> אמרינן בהדיא דמודה רב חסדא בתחתונה הואיל ורואה פני י' אלא צריך לפרש דגידוד ה' ומחיצה ה' היינו שעשה מחיצה ה' על תל גבוה ה' ואין נראה פירוש ר\"ח דהא עובי חוליות הבור מצטרף נמי לחלל הבור לארבעה משום דחזי למינח עליה מידי ולהשתמש כדאמר בפ' חלון <span class=\"parenthesized\">(עירובין דף עח.)</span> גבי מלאו כולו ביתדות אלא צ\"ל הא דנקט הכא ששה לא דק כדפירש\"י:"
+  },
+  "Tosafot on Shabbat 8a:2:2": {
+    "dependsOn": [
+      "Tosafot on Shabbat 8a:2:1",
+      "Rashi on Shabbat 8a:2:1",
+      "Rashi on Shabbat 8a:2:2",
+      "Rashi on Shabbat 8a:2:3",
+      "Shabbat 100a:1",
+      "Shabbat 100a:2",
+      "Shabbat 100a:3",
+      "Shabbat 99b:9",
+      "Shabbat 99b:10",
+      "Shabbat 99b:11",
+      "Shabbat 99b:7",
+      "Shabbat 99b:8",
+      "Maharsha on Shabbat 8a:4",
+      "Maharsha on Shabbat 8a:5",
+      "Chidushei Halachot on Shabbat 8a:4",
+      "Chidushei Halachot on Shabbat 8a:5",
+      "Maharam on Shabbat 8a:6",
+      "Rashba on Shabbat 8a:2:1"
+    ],
+    "generatedAt": "2026-10-21T13:12:36.233Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 8a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רחבה ששה פטור</strong> - שהכוורת עצמה נעשית רה\"י כשתנוח והוי כזורק מרשות היחיד לרה\"י דרך רה\"ר דפטור כדאמר לעיל <span class=\"parenthesized\">(שבת דף ד.)</span> דלא יליף זורק ממושיט ואפילו לר' עקיבא דאמר קלוטה כמי שהונחה דמיא הכא פטור דכל מקום שהיא מונחת חשיב רה\"י השתא משמע דפשיטא ליה לאביי דחשיבא כאילו נחה אחר שנעשה רה\"י ובפ' הזורק <span class=\"parenthesized\">(לקמן שבת צט:)</span> בעי ר' יוחנן בור ט' ועקר ממנו חוליא והשלימו לי' והניחו ברה\"ר עקירת חפץ ועשיית מחיצה בהדי הדדי קאתו ומיחייב או לא ואת\"ל כיון דלא הויא מחיצה י' מעיקרא לא מיחייב בור י' ונתן לתוכו חוליא ומעטו מהו הנחת חפץ וסילוק מחיצה כו' וא\"כ אביי דפשיטא ליה במחצלת דמבטל מחיצתה דקאמר התם בור ברה\"ר עמוק י' ורוחב ח' וזרק לתוכו מחצלת וחלקו פטור משום דהשתא לא הויא רוחב ד' וכ\"ש דפטור בעשיית מחיצה משום דכיון דלא הויא מחיצה עשרה מעיקרא לא מיחייב וא\"כ הכא הוי ליה לחיובי מהאי טעמא כיון דלא הויא מחיצה מעיקרא הרי נח ברשות הרבים וחייב וי\"ל דטעמא דאביי משום דלא חשיב לא עקירה ולא הנחה כי אתי בהדי הדדי והכא נמי לא חשיבה הנחה כיון דהנחה ועשיית מחיצה בהדי הדדי קאתו והא דפשיטא ליה לרבי יוחנן טפי בעשיית מחיצה מבסילוק מחיצה היינו משום דדילמא עקירה בעינן שתהא חשובה אבל בהנחה לא:"
+  }
+}

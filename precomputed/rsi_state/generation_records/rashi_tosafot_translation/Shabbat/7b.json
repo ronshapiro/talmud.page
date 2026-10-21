@@ -1,4 +1,34 @@
 {
+  "Rashi on Shabbat 7b:10:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 7b:10:1",
+      "Rashi on Shabbat 7b:10:2",
+      "Rashi on Shabbat 7b:1:1",
+      "Rashi on Shabbat 7b:4:1",
+      "Rashi on Shabbat 7b:8:1"
+    ],
+    "generatedAt": "2026-10-21T12:30:44.422Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 7b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאמר כרבי</strong> - דלא בעי הנחה על גבי מקום ד':"
+  },
+  "Rashi on Shabbat 7b:10:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 7b:10:1",
+      "Shabbat 7b:10",
+      "Steinsaltz on Shabbat 7b:10"
+    ],
+    "generatedAt": "2026-10-21T12:35:56.991Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 7b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זרק ונח כו'</strong> - קס\"ד מרה\"ר לרה\"י:"
+  },
   "Rashi on Shabbat 7b:1:1": {
     "dependsOn": [
       "Shabbat 7b:1",
@@ -403,6 +433,74 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">והא לא נח</strong> - וכי חזרה נפלה לתוך ד' אמות דעל כרחך כשמכה בכותל קופצת לאחוריה:"
   },
+  "Rashi on Shabbat 7b:8:1": {
+    "dependsOn": [
+      "Shabbat 7b:8",
+      "Rashi on Shabbat 7b:8:1",
+      "Rashi on Shabbat 7b:8:2"
+    ],
+    "generatedAt": "2026-10-21T12:17:01.759Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 7b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושאני צרור וחפץ גרסינן</strong> - כלומר בכותל דאית ביה חור ואפילו הכי לא אוקמיה ר' יוחנן בדנח בחור משום דלאו אורחייהו דצרור וחפץ לנוח ע\"י זריקה במקום שנופלין שם:"
+  },
+  "Rashi on Shabbat 7b:8:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 7b:8:1",
+      "Rashi on Shabbat 7b:8:2",
+      "Rashi on Shabbat 7b:4:1",
+      "Rashi on Shabbat 7b:4:2",
+      "Rashi on Shabbat 7b:4:3",
+      "Rashi on Shabbat 7b:4:4",
+      "Rashi on Shabbat 7a:1:1",
+      "Rashi on Shabbat 7a:2:1",
+      "Rashi on Shabbat 7a:3:1",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Shabbat 7b:8",
+      "Rashi on Shabbat 7b:9:1",
+      "Rashi on Shabbat 7b:9:2",
+      "Rashi on Shabbat 7b:6:1",
+      "Rashi on Shabbat 7b:1:4",
+      "Rashi on Shabbat 7b:1:5"
+    ],
+    "generatedAt": "2026-10-21T12:21:00.902Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 7b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמאי כזורק באויר</strong> - הא ה\"ל מרה\"ר לרה\"י דהוה ליה גבוה י' ורשות לעצמו:"
+  },
+  "Rashi on Shabbat 7b:9:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 7b:9:2"
+    ],
+    "generatedAt": "2026-10-21T12:21:46.777Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 7b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי מאיר ורבנן</strong> - במסכת יומא גבי מזוזה:"
+  },
+  "Rashi on Shabbat 7b:9:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 7b:9:1",
+      "Rashi on Shabbat 7b:8:1",
+      "Rashi on Shabbat 7b:8:2"
+    ],
+    "generatedAt": "2026-10-21T12:26:17.171Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Shabbat 7b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי מאיר סבר</strong> - דבר שאין בו שיעור ויש שם עובי ורחב לחקוק ולהשלים לכשיעור אמרינן כמאן דחקוק דמי והכא נמי לרבי מאיר חוקקין להשלים וחייב וסתם משנה ר' מאיר:"
+  },
   "Tosafot on Shabbat 7b:4:1": {
     "dependsOn": [
       "Shabbat 7b:4",
@@ -460,5 +558,26 @@
       "Tosafot on Shabbat 7b:5:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">התם לא ניחא תשמישתיה</strong> - וצדי רה\"ר לרבנן לאו כרה\"ר דמי אע\"ג דניחא תשמישתיה טפי מקרן זוית דהא אפילו ר\"א דפליג בצדי רה\"ר מודה בקרן זוית כדפריש' לעיל אפ\"ה לא הוי כחורי רה\"ר דחורי רה\"ר ניחא תשמישתיה טפי:"
+  },
+  "Tosafot on Shabbat 7b:9:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 7b:9:1",
+      "Rashi on Shabbat 7b:9:2",
+      "Shabbat 7b:9",
+      "Eruvin 11b:15",
+      "Eruvin 11b:16",
+      "Chidushei Halachot on Shabbat 7b:2",
+      "Chidushei Halachot on Shabbat 7b:3",
+      "Maharam on Shabbat 7b:4",
+      "Maharam on Shabbat 7b:5",
+      "Gilyon HaShas on Shabbat 7b:3"
+    ],
+    "generatedAt": "2026-10-21T12:28:51.319Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Shabbat 7b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והלכה ונחה בחור כל שהוא באנו למחלוקת רבי מאיר ורבנן</strong> - תימה לר\"י דבפרק קמא דעירובין <span class=\"parenthesized\">(דף יא: ושם)</span> בכיפה דפליגי בה ר\"מ ורבנן אמרינן התם דלא אמרינן חוקקין להשלים לר\"מ אלא ביש ברגליה ג' וגובהה י' פי' גבוה ג' טפחים שיש בהן רחב ד' אבל אין ברגליה ג' או שאינה גבוה מי' לא אמרינן וא\"כ היכי אמרינן הכא חוקקים להשלים לר\"מ בחור כל שהוא ואומר ר\"י דאיירי בחורין שדרכן לעשות בשעת הבנין שמפולשין לרה\"ר ובצד רה\"י הם רחבים ד' אבל לא מצד רה\"ר ולכ\"ע הוי חור רה\"י דהא חורי רה\"י כרה\"י דמי ולא פליגי אלא לשוויה מקום ד' על ד' דלרבי מאיר חוקקין להשלים והוי כד' על ד' אבל ממש בחור כל שהוא אפילו ר\"מ מודה דלא אמרינן חוקקין להשלים וכן משמע בירושלמי דגרסינן התם על דעתיה דר\"מ בין שיש שם ד' בין שאין שם ד' רואין את הכותל כגמום ודוקא אותם שלמעלה מי' חשיבי חורי רה\"י אבל שלמטה מעשרה אין בני רה\"י משתמשין שם מפני בני רשות הרבים שמשתמשין בהן וה\"פ וכ\"ת דלית ביה ד' ואע\"ג שהם חורי רה\"י הוי כזורק באויר לפי שלא נח על מקום ד' והאמר רב יהודה כו' והא דלא מוקמינן מתני' בחור כל שהו ממש דלא אמרי' חוקקין לכ\"ע היינו משום דסתם חורים כך הם ועוד דע\"כ הוצרך לאוקמי בדביל' שמינ' דבחור כל שהוא ממש דלא אמר ביה חוקקין להשלים ליכא לאוקמי' דא\"כ למטה מי' אמאי כזורק בארץ והא לא נח ע\"ג מקום ד' ואצ\"ל כפרש\"י דפריך מכח דסתם מתני' ר\"מ היא אלא ע\"כ אי מיירי בחור כל שהוא שאינו רחב ד' צריך לאוקמה כר\"מ דאמר חוקקין להשלים דלרבנן אמאי למטה מי' כזורק בארץ ויש ליישב פירש\"י דהוצרך לפ' משום דסתם מתני' ר\"מ קפריך דאי לאו הכי הוה ליה למפרך בהדיא וכ\"ת דלית ביה ד' למטה מי' אמאי כזורק בארץ:"
   }
 }
