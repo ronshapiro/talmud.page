@@ -36,7 +36,7 @@ Typical reasons to fetch, and how to find the right ref:
   2. If the comment gives a citation (e.g. "(סוכה דף נג:)" = Sukkah 53b, "נג." = 53a) that no parallel covers, that page is where to look.
   3. With no parallel and no citation, rely on your own knowledge. Don't search pages on a guess.
 - The comment quotes a verse, or relies on another commentary listed on its segment in the page index (Verses, Mishnah, Tosefta, Jastrow, etc.) -> get-comment-refs on the segment, then get-refs with `--on "<segment ref>"` for the ones you need. Only Rashi, Tosafot, and Steinsaltz refs follow a predictable pattern; get every other ref from get-comment-refs rather than guessing.
-- Old French glosses (לע"ז): if "Commentary on this comment" lists Otzar La'azei Rashi, get-refs that ref with `--on "<comment ref>"`. It identifies the French word and what it means. Otherwise -> wikipedia.
+- Old French glosses (לע"ז): if "Commentary on this comment" lists Otzar Laazei Rashi, get-refs that ref with `--on "<comment ref>"`. It identifies the French word and what it means. Otherwise -> wikipedia.
 - Realia, plants, animals, historical figures -> wikipedia.
 
 Prefer search over fetching long passages. When you're looking for where a particular word, phrase, or dibbur hamatchil appears (in a parallel, a sugya range, or a page), search for it and then get-refs only the segment that matches. Fetch a whole passage only when you need to follow its argument. Pass --lang he when the Hebrew wording is enough: the English is often several times longer.
