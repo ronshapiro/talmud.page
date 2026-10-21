@@ -19,7 +19,7 @@ import {
   StalenessStatus,
 } from "../precomputed/rsi_state/staleness";
 import {toFlatArray} from "../sefariaTextType";
-import {extractRequestedRefs, findBaseSegment} from "./context_fetch";
+import {extractRequestedRefs, findBaseSegment, getCommentRefs} from "./context_fetch";
 import {renderPrompt} from "./prompt_template";
 import {AgentError, AgentBackend, getAgentRunner} from "./agent_runner";
 import {
@@ -588,9 +588,12 @@ export function targetComment(
   candidate: TranslationCandidate, hebrewSource: string, imageNote: string | undefined,
 ): string {
   const segment = findBaseSegment(candidate.ref);
+  const nested = Object.entries(getCommentRefs(candidate.ref).commentary)
+    .map(([name, refs]) => `${name}: ${refs.join(", ")}`);
   return renderPrompt("target_comment.md", {
     segmentLine: segment && `Attached Gemara segment (${segment.ref}): ${segment.he}`,
     segmentEnglishLine: segment?.en && `Existing English of that segment: ${segment.en}`,
+    nestedLine: nested.length > 0 ? `Commentary on this comment: ${nested.join("; ")}` : undefined,
     commentRef: candidate.ref,
     commentator: candidate.commentator,
     hebrewSource,

@@ -3,6 +3,7 @@ import * as modelRouting from "../precomputed/rsi_state/model_routing";
 import * as pageSkeleton from "../precomputed/rsi_state/page_skeleton";
 import {Edit} from "../precomputed/ai_edits";
 import * as agentRunner from "./agent_runner";
+import * as contextFetch from "./context_fetch";
 import {AgentError} from "./agent_runner";
 import {
   CritiqueOutcome,
@@ -10,6 +11,7 @@ import {
   critiquePrompt,
   critiqueViaAgent,
   generationPrompt,
+  targetComment,
   GeneratedEdit,
   generateViaAgent,
   generateWithSelfCritique,
@@ -723,6 +725,31 @@ describe("critiquePrompt", () => {
     expect(rulesIndex).toBeGreaterThan(-1);
     expect(targetIndex).toBeGreaterThan(-1);
     expect(rulesIndex).toBeLessThan(targetIndex);
+  });
+});
+
+describe("targetComment", () => {
+  test("lists the commentary nested on the comment, e.g. Otzar La'azei Rashi", () => {
+    const refsSpy = jest.spyOn(contextFetch, "getCommentRefs").mockReturnValue({commentary: {
+      "Otzar Laazei Rashi": ["Otzar La'azei Rashi, Talmud, Bava Kamma 14"],
+      Verses: ["Exodus 21:35"],
+    }});
+    try {
+      const text = targetComment(candidate(), "מקור", undefined);
+      expect(text).toContain("Commentary on this comment: Otzar Laazei Rashi: "
+        + "Otzar La'azei Rashi, Talmud, Bava Kamma 14; Verses: Exodus 21:35");
+    } finally {
+      refsSpy.mockRestore();
+    }
+  });
+
+  test("omits the line when nothing is nested on the comment", () => {
+    const refsSpy = jest.spyOn(contextFetch, "getCommentRefs").mockReturnValue({commentary: {}});
+    try {
+      expect(targetComment(candidate(), "מקור", undefined)).not.toContain("Commentary on this comment");
+    } finally {
+      refsSpy.mockRestore();
+    }
   });
 });
 
