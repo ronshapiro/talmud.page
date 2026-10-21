@@ -39,7 +39,7 @@ Typical reasons to fetch, and how to find the right ref:
 - Old French glosses (לע"ז): if "Commentary on this comment" lists Otzar Laazei Rashi, get-refs that ref with `--on "<comment ref>"`. It identifies the French word and what it means. Otherwise -> wikipedia.
 - Realia, plants, animals, historical figures -> wikipedia.
 
-Prefer search over fetching long passages. When you're looking for where a particular word, phrase, or dibbur hamatchil appears (in a parallel, a sugya range, or a page), search for it and then get-refs only the segment that matches. Fetch a whole passage only when you need to follow its argument. Pass --lang he when the Hebrew wording is enough: the English is often several times longer.
+Prefer search over fetching long passages. When you're looking for where a particular word, phrase, or dibbur hamatchil appears (in a parallel, a sugya range, or a page), search for it and then get-refs only the segment that matches. Search covers the Gemara plus Rashi and Tosafot by default; pass --commentary to search other commentaries listed in the page index instead (e.g. `--commentary Ritva Rashba`). Fetch a whole passage only when you need to follow its argument. Pass --lang he when the Hebrew wording is enough: the English is often several times longer.
 
 Do NOT fetch other comments to calibrate style or to see how comments are usually punctuated or translated. The worked examples below are the style reference, and comments from elsewhere in the tractate (e.g. its first comments on 2a) say nothing about this one. Never guess at refs. Use a ref from the page index below, one returned by an earlier fetch, or get-neighbors.
 
@@ -50,7 +50,7 @@ npx ts-node rsi_orchestrator/context_fetch_cli.ts get-refs '["<ref>", ...]' [--l
 npx ts-node rsi_orchestrator/context_fetch_cli.ts get-comment-refs "<segment ref>" [--commentary "<name>"]
 npx ts-node rsi_orchestrator/context_fetch_cli.ts get-neighbors "<segment ref>" [--before N] [--after N]
 npx ts-node rsi_orchestrator/context_fetch_cli.ts get-prior-sugyot "<any ref on this page>" [--count N]
-npx ts-node rsi_orchestrator/context_fetch_cli.ts search "<page or segment range, e.g. Sukkah 53b or Sukkah 53b:7-54a:2>" "<word or phrase>"
+npx ts-node rsi_orchestrator/context_fetch_cli.ts search "<page or segment range, e.g. Sukkah 53b or Sukkah 53b:7-54a:2>" "<word or phrase>" [--commentary <name> ...]
 npx ts-node rsi_orchestrator/context_fetch_cli.ts wikipedia "<topic>" [--lang en|he]
 ```
 

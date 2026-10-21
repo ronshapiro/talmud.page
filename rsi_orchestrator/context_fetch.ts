@@ -371,7 +371,7 @@ export function getCommentRefs(ref: string, commentaryName?: string): CommentRef
 
 export const MAX_SEARCH_MATCHES = 15;
 const MAX_SEARCH_RANGE_PAGES = 6;
-const SEARCHED_COMMENTARIES = ["Rashi", "Tosafot"];
+export const DEFAULT_SEARCHED_COMMENTARIES = ["Rashi", "Tosafot"];
 const SNIPPET_RADIUS = 40;
 
 export interface SearchMatch {
@@ -391,11 +391,14 @@ function plainText(text: string): string {
 
 /**
  * Finds a word or phrase in one page or one segment range (e.g. a Mesorat Hashas parallel or a
- * sugya) — the Gemara segments plus their Rashi and Tosafot — ignoring vowels and punctuation.
+ * sugya) — the Gemara segments plus the given commentaries on them — ignoring vowels and
+ * punctuation.
  * Hebrew queries search Hebrew text; anything else searches English. Bounded to a page or a
  * short range so a search can't turn into a corpus-wide crawl.
  */
-export function searchPage(pageOrRange: string, query: string): SearchResult {
+export function searchPage(
+  pageOrRange: string, query: string, commentaries = DEFAULT_SEARCHED_COMMENTARIES,
+): SearchResult {
   let segments: Segment[];
   const segmentRefs = rangeSegmentRefs(pageOrRange);
   if (segmentRefs) {
@@ -418,7 +421,7 @@ export function searchPage(pageOrRange: string, query: string): SearchResult {
   const texts: {ref: string; text: string}[] = [];
   for (const segment of segments) {
     texts.push({ref: segment.ref, text: toFlatArray(segment[field]).join(" ")});
-    for (const commentator of SEARCHED_COMMENTARIES) {
+    for (const commentator of commentaries) {
       for (const comment of segment.commentary?.[commentator]?.comments ?? []) {
         texts.push({ref: comment.ref, text: toFlatArray(comment[field]).join(" ")});
       }

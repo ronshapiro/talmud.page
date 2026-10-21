@@ -427,6 +427,18 @@ describe("searchPage", () => {
     ]);
   });
 
+  test("searches the given commentaries instead of the defaults", () => {
+    writeJson(nextFilePath, nextAmud());
+    expect(searchPage(`Zevachim ${NEXT_SECTION}`, "כדאמרן", ["Steinsaltz"]).matches.map(m => m.ref))
+      .toEqual([`Steinsaltz on Zevachim ${NEXT_SECTION}:1`]);
+  });
+
+  test("searches only the Gemara when given no commentaries", () => {
+    writeJson(nextFilePath, nextAmud());
+    expect(searchPage(`Zevachim ${NEXT_SECTION}`, "רביעי", []).matches.map(m => m.ref))
+      .toEqual([`Zevachim ${NEXT_SECTION}:1`]);
+  });
+
   test("searches English for a non-Hebrew query", () => {
     writeJson(nextFilePath, nextAmud());
     expect(searchPage(`Zevachim ${NEXT_SECTION}`, "FIFTH").matches.map(m => m.ref))

@@ -1,7 +1,13 @@
 import * as yargs from "yargs";
 import {hideBin} from "yargs/helpers";
 import {
-  fetchWikipedia, getCommentRefs, getNeighborSegments, getPriorSugyaSkeleton, getRefs, searchPage,
+  DEFAULT_SEARCHED_COMMENTARIES,
+  fetchWikipedia,
+  getCommentRefs,
+  getNeighborSegments,
+  getPriorSugyaSkeleton,
+  getRefs,
+  searchPage,
 } from "./context_fetch";
 
 /**
@@ -74,15 +80,23 @@ async function main(): Promise<void> {
     )
     .command(
       "search <page> <query>",
-      "Find a word or phrase in one page or segment range (Gemara + Rashi + Tosafot), ignoring "
-        + "vowels/punctuation",
+      "Find a word or phrase in one page or segment range (the Gemara plus the given "
+        + "commentaries), ignoring vowels/punctuation",
       y => y
         .positional("page", {
           type: "string", demandOption: true, describe: 'e.g. "Sukkah 53b" or "Sukkah 53b:7-54a:2"',
         })
-        .positional("query", {type: "string", demandOption: true}),
+        .positional("query", {type: "string", demandOption: true})
+        .options({
+          commentary: {
+            type: "string",
+            array: true,
+            default: DEFAULT_SEARCHED_COMMENTARIES,
+            describe: "commentaries to search besides the Gemara",
+          },
+        }),
       argv => {
-        console.log(JSON.stringify(searchPage(argv.page, argv.query)));
+        console.log(JSON.stringify(searchPage(argv.page, argv.query, argv.commentary)));
       },
     )
     .command(
