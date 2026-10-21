@@ -155,7 +155,8 @@ function llmGeneratedTopicForLink(link: sefaria.TextLink): LlmGeneratedTopic | u
 }
 
 function normalizeHebrewForVersionUniqueness(text: string): string {
-  return stripHebrewNonletters(sanitizeHtml(text))
+  const withoutExplanations = text.replace(/<span\s+class=["']explanation["']>[\S\s]*?<\/span>/gi, "");
+  return stripHebrewNonletters(sanitizeHtml(withoutExplanations))
     .replace(/[-—–"'״׳,.:;?!]/g, "") // eslint-disable-line unicorn/better-regex
     .replace(/\s\s+/g, " ");
 }

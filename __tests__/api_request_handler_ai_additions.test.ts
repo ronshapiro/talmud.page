@@ -233,3 +233,39 @@ test("approved AI comment with approved username does not get pendingReview or M
   expect(aiVersion.pendingReview).toBeUndefined();
   expect(aiVersion.commentary?.Model).toBeUndefined();
 });
+
+test("AI comment with abbreviation expansion and explanation retains canReplaceParent true", () => {
+  const commentRef = "Rashi on __Test_Ai_Page__ 2a:1:1";
+  const sourceHebrew = 'מתני\' כ"א תקיעות מפרש להו בפ\' החליל';
+  const punctuatedHebrew = '<strong class="dibur-hamatchil"><abbr title="מתניתין">מתני\'</abbr></strong> - '
+    + '<abbr title="עשרים ואחת">כ"א</abbr> תקיעות, <span class="explanation">הגמרא</span> '
+    + 'מפרש להו <abbr title="בפרק">בפ\'</abbr> החליל:';
+
+  writeAiEdit(TEST_PAGE, commentRef, {
+    hebrew: punctuatedHebrew,
+    english: "The Mishnah explains",
+    status: "pending",
+  });
+
+  const handler = createHandler();
+  const segment = new InternalSegment({
+    hebrew: "עברית של קטע",
+    english: "segment english",
+    ref: `${TEST_PAGE}:1`,
+  });
+  const rashi = new Comment(
+    "Rashi",
+    sourceHebrew,
+    "",
+    commentRef,
+    commentRef,
+    'רש"י',
+  );
+  segment.commentary.addComment(rashi);
+
+  (handler as any).addAiAdditions([segment]);
+
+  const json = segment.toJson();
+  const aiVersion = json.commentary!.Rashi.comments[0].commentary!.Versions.comments[0];
+  expect(aiVersion.canReplaceParent).toBe(true);
+});

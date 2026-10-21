@@ -119,6 +119,65 @@ function sumCost(...costs: (number | undefined)[]): number | undefined {
 // as "stop the whole run," not "give up on this candidate" — see translateRashiTosafotComments.
 export const MAX_GENERATION_ATTEMPTS = 5;
 
+export interface HebrewVerificationResult {
+  valid: boolean;
+  reason?: string;
+}
+
+export function extractHebrewLettersOnly(text: string): string {
+  return text
+    .replace(/<span\s+class=["']explanation["']>[\S\s]*?<\/span>/gi, "")
+    .replace(/<[^>]+>/g, "")
+    .replace(/IMAGE_PLACEHOLDER_\d+/g, "")
+    .replace(/&[\d#a-z]+;/gi, " ")
+    .replace(/[^\d\u05D0-\u05EA]/g, "");
+}
+
+export function verifyProposedHebrewWording(
+  sourceHebrew: string,
+  proposedHebrew: string,
+): HebrewVerificationResult {
+  const withoutExplanations = proposedHebrew.replace(
+    /<span\s+class=["']explanation["']>[\S\s]*?<\/span>/gi, "");
+  if (/<span\s+class=["']explanation["']>/i.test(withoutExplanations)) {
+    return {
+      valid: false,
+      reason: 'Unclosed <span class="explanation"> tag in proposed Hebrew.',
+    };
+  }
+
+  const openingAbbreviationCount = (proposedHebrew.match(/<abbr\b[^>]*>/gi) ?? []).length;
+  const closingAbbreviationCount = (proposedHebrew.match(/<\/abbr>/gi) ?? []).length;
+  if (openingAbbreviationCount !== closingAbbreviationCount) {
+    return {
+      valid: false,
+      reason: `Mismatched <abbr> tags in proposed Hebrew (${openingAbbreviationCount} opening, ${closingAbbreviationCount} closing).`,
+    };
+  }
+
+  const abbreviationWithoutTitleMatch = proposedHebrew.match(/<abbr(?!\s+title=)[^>]*>/gi);
+  if (abbreviationWithoutTitleMatch) {
+    return {
+      valid: false,
+      reason: 'Missing title attribute in <abbr> tag. Use <abbr title="expansion">abbreviation</abbr>.',
+    };
+  }
+
+  const sourceLetters = extractHebrewLettersOnly(sourceHebrew);
+  const proposedLetters = extractHebrewLettersOnly(proposedHebrew);
+
+  if (sourceLetters !== proposedLetters) {
+    return {
+      valid: false,
+      reason: 'Proposed Hebrew modified the source text outside of <span class="explanation">. '
+        + 'Original abbreviations must be preserved inside <abbr title="expansion">abbreviation</abbr>, '
+        + 'and any added explanatory words must be wrapped in <span class="explanation">...</span>.',
+    };
+  }
+
+  return {valid: true};
+}
+
 /**
  * Generate, critique, and retry with feedback — across up to MAX_GENERATION_ATTEMPTS attempts —
  * until the critique accepts the result. A malformed (non-JSON) response from `generate` is
@@ -154,6 +213,16 @@ export async function generateWithSelfCritique(
       }
       if (deps.shouldStop?.()) {
         return undefined;
+      }
+      if (generated.edit.hebrew) {
+        const hebrewVerification = verifyProposedHebrewWording(
+          candidate.hebrewSource, generated.edit.hebrew);
+        if (!hebrewVerification.valid) {
+          totalCost = sumCost(totalCost, generated.costUsd);
+          lastReason = hebrewVerification.reason!;
+          feedback = lastReason;
+          continue;
+        }
       }
       // eslint-disable-next-line no-await-in-loop
       outcome = await deps.critique(candidate, generated.edit);
@@ -531,15 +600,19 @@ const MAX_WORKED_EXAMPLES = 2;
 // Used only until real accepted generations exist to draw examples from — see findWorkedExamples.
 const FALLBACK_WORKED_EXAMPLE: Record<Commentator, WorkedExample> = {
   Rashi: {
-    hebrewSource: "ואם תמצי לומר דבר זה קשה",
-    hebrew: "<strong class=\"dibur-hamatchil\">ואם תמצי לומר</strong> - דבר זה קשה:",
-    english: "<strong class=\"dibur-hamatchil\">And if you should say:</strong> "
-      + "This matter is difficult.",
+    hebrewSource: "מתני' כ\"א תקיעות מפרש להו בפ' החליל",
+    hebrew: "<strong class=\"dibur-hamatchil\"><abbr title=\"מתניתין\">מתני'</abbr></strong> - "
+      + "<abbr title=\"עשרים ואחת\">כ\"א</abbr> תקיעות, <span class=\"explanation\">הגמרא</span> "
+      + "מפרש להו <abbr title=\"בפרק\">בפ'</abbr> החליל:",
+    english: "<strong class=\"dibur-hamatchil\">The Mishnah:</strong> Twenty-one blasts — "
+      + "[the Gemara] explains them in the chapter [entitled] Hechalil:",
   },
   Tosafot: {
-    hebrewSource: "וכן משמע בכל דוכתא",
-    hebrew: "<strong class=\"dibur-hamatchil\">וכן משמע</strong> - בכל דוכתא:",
-    english: "<strong class=\"dibur-hamatchil\">And so it implies:</strong> in every place.",
+    hebrewSource: "וכן משמע בכל דוכתא אא\"כ פירש",
+    hebrew: "<strong class=\"dibur-hamatchil\">וכן משמע</strong> - בכל דוכתא, "
+      + "<abbr title=\"אלא אם כן\">אא\"כ</abbr> פירש <span class=\"explanation\">רבו</span>:",
+    english: "<strong class=\"dibur-hamatchil\">And so it implies:</strong> in every place, "
+      + "unless [his teacher] explained otherwise.",
   },
 };
 

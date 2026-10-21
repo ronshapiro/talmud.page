@@ -213,9 +213,14 @@ items. */
     font-family: "Taamey David", "Times New Roman", serif;
     line-height: calc(1.7em * var(--font-size-multiplier));
 }
-.hebrew-emphasis, .commentaryRow .parenthesized {
+.hebrew-emphasis, .commentaryRow .parenthesized, .commentaryRow .explanation {
     font-family: "Fira Light";
     font-size: 14px;
+}
+
+abbr[title] {
+    text-decoration: underline dotted;
+    cursor: help;
 }
 
 .rashi-quotation {
