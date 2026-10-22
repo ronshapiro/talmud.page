@@ -19,6 +19,8 @@ import {
   StalenessStatus,
 } from "../precomputed/rsi_state/staleness";
 import {toFlatArray} from "../sefariaTextType";
+import {stripHebrewNonletters} from "../hebrew";
+import {stripAbbreviationMarkup, stripExplanations} from "../js/rashi_tosafot_formatting";
 import {extractRequestedRefs, findBaseSegment, getCommentRefs} from "./context_fetch";
 import {renderPrompt} from "./prompt_template";
 import {AgentError, AgentBackend, getAgentRunner} from "./agent_runner";
@@ -51,8 +53,7 @@ export {LongThreadSessionManager, isLongThreadBackend};
  * file access.
  */
 
-export const ORIGINAL_TASK_TYPE = "rashi_tosafot_translation";
-export const TASK_TYPE = "rashi_tosafot_translation_v2";
+export const TASK_TYPE = "rashi_tosafot_translation";
 const PROMPT_VERSION = "v2";
 // The only tool this task type's headless calls may use — see the module doc above. Scoped to
 // this exact command so it can't fall back to arbitrary Bash use.
@@ -125,13 +126,18 @@ export interface HebrewVerificationResult {
   reason?: string;
 }
 
-export function extractHebrewLettersOnly(text: string): string {
-  return text
-    .replace(/<span\s+class=["']explanation["']>[\S\s]*?<\/span>/gi, "")
-    .replace(/<[^>]+>/g, "")
+export function extractHebrewWordsForVerification(text: string): string {
+  const withoutExplanations = stripExplanations(text);
+  const withoutAbbreviationMarkup = stripAbbreviationMarkup(withoutExplanations);
+  return stripHebrewNonletters(withoutAbbreviationMarkup)
     .replace(/IMAGE_PLACEHOLDER_\d+/g, "")
+    .replace(/<[^>]+>/g, " ")
     .replace(/&[\d#a-z]+;/gi, " ")
-    .replace(/[^\d\u05D0-\u05EA]/g, "");
+    .replace(/[!(),.:;?[\]{}־–—-]/g, " ")
+    .replace(/["'׳״]/g, "")
+    .replace(/[^\d\s\u05D0-\u05EA]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 export function verifyProposedHebrewWording(
@@ -164,10 +170,10 @@ export function verifyProposedHebrewWording(
     };
   }
 
-  const sourceLetters = extractHebrewLettersOnly(sourceHebrew);
-  const proposedLetters = extractHebrewLettersOnly(proposedHebrew);
+  const sourceWords = extractHebrewWordsForVerification(sourceHebrew);
+  const proposedWords = extractHebrewWordsForVerification(proposedHebrew);
 
-  if (sourceLetters !== proposedLetters) {
+  if (sourceWords !== proposedWords) {
     return {
       valid: false,
       reason: 'Proposed Hebrew modified the source text outside of <span class="explanation">. '
@@ -584,21 +590,11 @@ export function listCandidatesForAllBooks(
 
 export function isFreshTranslation(
   candidate: TranslationCandidate,
-  options?: {backfill?: boolean},
 ): boolean {
-  const v2Record = readGenerationRecord(TASK_TYPE, candidate.page, candidate.ref);
-  if (v2Record) {
-    const result = checkTextStaleness(
-      v2Record.sourceText, candidate.hebrewSource, DEFAULT_STALENESS_THRESHOLDS);
-    return result.status === StalenessStatus.Fresh;
-  }
-  if (options?.backfill) {
-    return false;
-  }
-  const originalRecord = readGenerationRecord(ORIGINAL_TASK_TYPE, candidate.page, candidate.ref);
-  if (!originalRecord) return false;
+  const record = readGenerationRecord(TASK_TYPE, candidate.page, candidate.ref);
+  if (!record) return false;
   const result = checkTextStaleness(
-    originalRecord.sourceText, candidate.hebrewSource, DEFAULT_STALENESS_THRESHOLDS);
+    record.sourceText, candidate.hebrewSource, DEFAULT_STALENESS_THRESHOLDS);
   return result.status === StalenessStatus.Fresh;
 }
 
@@ -637,27 +633,24 @@ const FALLBACK_WORKED_EXAMPLE: Record<Commentator, WorkedExample> = {
  */
 function findWorkedExamples(commentator: Commentator, excludeRef: string): WorkedExample[] {
   const examples: WorkedExample[] = [];
-  const candidateTaskTypes = [TASK_TYPE, ORIGINAL_TASK_TYPE];
-  for (const candidateTaskType of candidateTaskTypes) {
-    for (const page of listPagesWithGenerationRecords(candidateTaskType)) {
-      const edits = aiEditsForPage(page);
-      if (!edits) continue;
-      const records = readGenerationRecordsForPage(candidateTaskType, page);
-      for (const [ref, record] of Object.entries(records)) {
-        if (ref === excludeRef || !ref.startsWith(`${commentator} on `)) continue;
-        const edit = edits[ref];
-        if (!edit) continue;
-        examples.push({
-          hebrewSource: replaceBase64ImagesWithTempFileLocations(record.sourceText, {ref}),
-          hebrew: edit.hebrew !== undefined
-            ? replaceBase64ImagesWithTempFileLocations(edit.hebrew, {ref})
-            : undefined,
-          english: edit.english !== undefined
-            ? replaceBase64ImagesWithTempFileLocations(edit.english, {ref})
-            : undefined,
-        });
-        if (examples.length >= MAX_WORKED_EXAMPLES) return examples;
-      }
+  for (const page of listPagesWithGenerationRecords(TASK_TYPE)) {
+    const edits = aiEditsForPage(page);
+    if (!edits) continue;
+    const records = readGenerationRecordsForPage(TASK_TYPE, page);
+    for (const [ref, record] of Object.entries(records)) {
+      if (ref === excludeRef || !ref.startsWith(`${commentator} on `)) continue;
+      const edit = edits[ref];
+      if (!edit) continue;
+      examples.push({
+        hebrewSource: replaceBase64ImagesWithTempFileLocations(record.sourceText, {ref}),
+        hebrew: edit.hebrew !== undefined
+          ? replaceBase64ImagesWithTempFileLocations(edit.hebrew, {ref})
+          : undefined,
+        english: edit.english !== undefined
+          ? replaceBase64ImagesWithTempFileLocations(edit.english, {ref})
+          : undefined,
+      });
+      if (examples.length >= MAX_WORKED_EXAMPLES) return examples;
     }
   }
   return examples;
@@ -982,7 +975,6 @@ export function recordGenerationForCandidate(
     sourceText: candidate.hebrewSource,
     model: generated.model ?? "unknown",
     promptVersion: PROMPT_VERSION,
-    taskVersion: "v2",
     generatedAt: new Date().toISOString(),
     // Auto-populated from what context_fetch_cli actually served during the accepted generate +
     // critique calls (see generateWithSelfCritique) — not self-reported by the model. This is

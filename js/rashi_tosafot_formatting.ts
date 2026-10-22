@@ -45,7 +45,7 @@ export function stripAddedPunctuation(hebrewHtml: string): string {
 
 /**
  * Formats Rashi/Tosafot Hebrew text according to user preference:
- * - "as-is": Displays the original Vilna Hebrew text if available, or strips added markup.
+ * - "vilna": Displays the original Vilna Hebrew text if available, or strips added markup.
  * - "punctuated-only": Displays punctuated Hebrew without abbreviation expansion or inline notes.
  * - "punctuated-expanded": Displays punctuated Hebrew with abbreviations expanded.
  */
@@ -57,7 +57,7 @@ export function formatRashiTosafotHebrew(parameters: {
   const {rawHebrew, originalHebrew, option} = parameters;
   const withoutExplanations = stripExplanations(rawHebrew);
 
-  if (option === "as-is") {
+  if (option === "vilna") {
     if (originalHebrew) {
       return originalHebrew;
     }

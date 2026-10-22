@@ -11,14 +11,13 @@ import {
   CritiqueVerdict,
   critiquePrompt,
   critiqueViaAgent,
-  extractHebrewLettersOnly,
+  extractHebrewWordsForVerification,
   generationPrompt,
   targetComment,
   GeneratedEdit,
   generateViaAgent,
   generateWithSelfCritique,
   isFreshTranslation,
-  ORIGINAL_TASK_TYPE,
   TASK_TYPE,
   recordGenerationForCandidate,
   compareAmudim,
@@ -323,13 +322,29 @@ describe("verifyProposedHebrewWording", () => {
     expect(verification.reason).toContain(
       "Proposed Hebrew modified the source text outside of <span class=\"explanation\">");
   });
+
+  test("rejects when space between words is dropped", () => {
+    const proposedHebrew = '<strong class="dibur-hamatchil">מתני\'</strong> - כ"אתקיעות, מפרש להו בפ\' החליל:';
+    const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
+    expect(verification.valid).toBe(false);
+    expect(verification.reason).toContain(
+      "Proposed Hebrew modified the source text outside of <span class=\"explanation\">");
+  });
+
+  test("rejects when an extra space is inserted within a word", () => {
+    const proposedHebrew = '<strong class="dibur-hamatchil">מתני\'</strong> - כ"א תקי עות, מפרש להו בפ\' החליל:';
+    const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
+    expect(verification.valid).toBe(false);
+    expect(verification.reason).toContain(
+      "Proposed Hebrew modified the source text outside of <span class=\"explanation\">");
+  });
 });
 
-describe("extractHebrewLettersOnly", () => {
-  test("strips HTML tags and explanations while keeping Hebrew letters and numerals", () => {
+describe("extractHebrewWordsForVerification", () => {
+  test("strips HTML tags and explanations while preserving space-delimited Hebrew words", () => {
     const markup = '<strong class="dibur-hamatchil"><abbr title="מתניתין">מתני\'</abbr></strong> - '
       + 'כ"א תקיעות, <span class="explanation">הגמרא</span> מפרש להו <abbr title="בפרק">בפ\'</abbr> החליל:';
-    expect(extractHebrewLettersOnly(markup)).toBe("מתניכאתקיעותמפרשלהובפהחליל");
+    expect(extractHebrewWordsForVerification(markup)).toBe("מתני כא תקיעות מפרש להו בפ החליל");
   });
 });
 
@@ -1086,13 +1101,12 @@ describe("base64 image decoding, placeholders, and restoration", () => {
     }
   });
 
-  describe("isFreshTranslation and task versioning", () => {
-    test("TASK_TYPE is v2 while preserving ORIGINAL_TASK_TYPE", () => {
-      expect(TASK_TYPE).toBe("rashi_tosafot_translation_v2");
-      expect(ORIGINAL_TASK_TYPE).toBe("rashi_tosafot_translation");
+  describe("isFreshTranslation and task records", () => {
+    test("TASK_TYPE is rashi_tosafot_translation", () => {
+      expect(TASK_TYPE).toBe("rashi_tosafot_translation");
     });
 
-    test("recognizes freshness from v2 record", () => {
+    test("recognizes freshness from generation record", () => {
       const readSpy = jest.spyOn(generationRecordModule, "readGenerationRecord")
         .mockImplementation((taskType: string) => {
           if (taskType === TASK_TYPE) {
@@ -1101,7 +1115,6 @@ describe("base64 image decoding, placeholders, and restoration", () => {
               sourceText: "מקור",
               model: "claude-sonnet-5",
               promptVersion: "v2",
-              taskVersion: "v2",
               generatedAt: "2026-10-22T00:00:00.000Z",
               dependsOn: [],
             };
@@ -1112,38 +1125,12 @@ describe("base64 image decoding, placeholders, and restoration", () => {
       try {
         const testCandidate = candidate({hebrewSource: "מקור"});
         expect(isFreshTranslation(testCandidate)).toBe(true);
-        expect(isFreshTranslation(testCandidate, {backfill: true})).toBe(true);
       } finally {
         readSpy.mockRestore();
       }
     });
 
-    test("recognizes freshness from v1 record on normal runs, but flags stale on backfill", () => {
-      const readSpy = jest.spyOn(generationRecordModule, "readGenerationRecord")
-        .mockImplementation((taskType: string) => {
-          if (taskType === ORIGINAL_TASK_TYPE) {
-            return {
-              sourceRefs: ["Rashi on Zevachim 2a:1:1"],
-              sourceText: "מקור",
-              model: "claude-sonnet-5",
-              promptVersion: "v2",
-              generatedAt: "2026-09-01T00:00:00.000Z",
-              dependsOn: [],
-            };
-          }
-          return undefined;
-        });
-
-      try {
-        const testCandidate = candidate({hebrewSource: "מקור"});
-        expect(isFreshTranslation(testCandidate)).toBe(true);
-        expect(isFreshTranslation(testCandidate, {backfill: true})).toBe(false);
-      } finally {
-        readSpy.mockRestore();
-      }
-    });
-
-    test("recordGenerationForCandidate records taskVersion v2 under TASK_TYPE", () => {
+    test("recordGenerationForCandidate records promptVersion v2 under TASK_TYPE", () => {
       const upsertSpy = jest.spyOn(generationRecordModule, "upsertGenerationRecord")
         .mockImplementation(() => {});
 
@@ -1159,10 +1146,9 @@ describe("base64 image decoding, placeholders, and restoration", () => {
 
         expect(upsertSpy).toHaveBeenCalledTimes(1);
         const [taskType, page, ref, record] = upsertSpy.mock.calls[0];
-        expect(taskType).toBe("rashi_tosafot_translation_v2");
+        expect(taskType).toBe("rashi_tosafot_translation");
         expect(page).toBe(testCandidate.page);
         expect(ref).toBe(testCandidate.ref);
-        expect(record.taskVersion).toBe("v2");
         expect(record.promptVersion).toBe("v2");
       } finally {
         upsertSpy.mockRestore();

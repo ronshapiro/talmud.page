@@ -13,7 +13,6 @@ import {
   generateAndRecord,
   isFreshTranslation,
   listCandidatesForBook,
-  ORIGINAL_TASK_TYPE,
   recordGenerationForCandidate,
   TASK_TYPE as RASHI_TOSAFOT_TRANSLATION,
   translateRashiTosafotComments,
@@ -55,7 +54,6 @@ async function runRashiTosafotTranslation(maxCalls: number): Promise<void> {
 // below move on to try another task type against the same wall.
 export const TASK_RUNNERS: Record<string, TaskRunner> = {
   [RASHI_TOSAFOT_TRANSLATION]: runRashiTosafotTranslation,
-  [ORIGINAL_TASK_TYPE]: runRashiTosafotTranslation,
 };
 
 export interface ScheduledTickDeps {

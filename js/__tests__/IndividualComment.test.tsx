@@ -554,8 +554,8 @@ describe("Rashi and Tosafot Hebrew formatting and explanation synthetic comments
     expect(mainHebrew.textContent).not.toContain("הגמרא");
   });
 
-  test("as-is preference displays originalHebrew when present", () => {
-    localStorage.rashiTosafotHebrew = "as-is";
+  test("vilna preference displays originalHebrew when present", () => {
+    localStorage.rashiTosafotHebrew = "vilna";
     const originalVilna = "מתני' כ\"א תקיעות מפרש להו";
     const root = renderComment({
       ...commentWithExplanation,

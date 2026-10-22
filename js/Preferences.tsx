@@ -284,9 +284,9 @@ function preferenceOptions(
           displayTextHebrew: "מפוסק בלבד (ברירת מחדל)",
         },
         {
-          value: "as-is",
-          displayText: "As-is (Vilna)",
-          displayTextHebrew: "כפי שהוא (וילנא)",
+          value: "vilna",
+          displayText: "Vilna",
+          displayTextHebrew: "וילנא",
         },
         {
           value: "punctuated-expanded",

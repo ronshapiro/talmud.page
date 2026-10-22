@@ -74,11 +74,11 @@ export const layoutOptionPreference = preference<LayoutOption>("layoutOption");
 
 /**
  * Display option for Rashi and Tosafot Hebrew text:
- * - "as-is": Unpunctuated Vilna Shas text
+ * - "vilna": Unpunctuated Vilna Shas text
  * - "punctuated-only": Hebrew text with AI punctuation, without abbreviation expansions (default)
  * - "punctuated-expanded": Hebrew text with AI punctuation and abbreviations expanded
  */
-export type RashiTosafotHebrewOption = "as-is" | "punctuated-only" | "punctuated-expanded";
+export type RashiTosafotHebrewOption = "vilna" | "punctuated-only" | "punctuated-expanded";
 export const rashiTosafotHebrewPreference = preference<RashiTosafotHebrewOption>("rashiTosafotHebrew");
 
 export function rashiTosafotHebrewOption(): RashiTosafotHebrewOption {

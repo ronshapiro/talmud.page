@@ -78,20 +78,20 @@ describe("rashi_tosafot_formatting", () => {
       );
     });
 
-    test("formats as as-is using originalHebrew when provided", () => {
+    test("formats as vilna using originalHebrew when provided", () => {
       const originalVilna = "מתני' כ\"א תקיעות מפרש להו";
       const result = formatRashiTosafotHebrew({
         rawHebrew: rawWithMarkup,
         originalHebrew: originalVilna,
-        option: "as-is",
+        option: "vilna",
       });
       expect(result).toBe(originalVilna);
     });
 
-    test("formats as as-is by stripping added punctuation and markup when originalHebrew is absent", () => {
+    test("formats as vilna by stripping added punctuation and markup when originalHebrew is absent", () => {
       const result = formatRashiTosafotHebrew({
         rawHebrew: rawWithMarkup,
-        option: "as-is",
+        option: "vilna",
       });
       expect(result).toBe("<b>מתני׳</b> כ״א תקיעות מפרש להו");
     });

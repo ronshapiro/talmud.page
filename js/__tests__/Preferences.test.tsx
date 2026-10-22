@@ -271,7 +271,7 @@ describe("preferences ask the page to re-render", () => {
       name: "rashi and tosafot hebrew",
       sectionIndex: 4,
       key: "rashiTosafotHebrew",
-      value: "as-is",
+      value: "vilna",
     },
     {
       name: "hide gemara translation",
