@@ -72,6 +72,19 @@ export const translationOptionPreference = preference<TranslationOption>("transl
 export type LayoutOption = "by-segment" | "compact";
 export const layoutOptionPreference = preference<LayoutOption>("layoutOption");
 
+/**
+ * Display option for Rashi and Tosafot Hebrew text:
+ * - "vilna": Unpunctuated Vilna Shas text
+ * - "punctuated-only": Hebrew text with AI punctuation, without abbreviation expansions (default)
+ * - "punctuated-expanded": Hebrew text with AI punctuation and abbreviations expanded
+ */
+export type RashiTosafotHebrewOption = "vilna" | "punctuated-only" | "punctuated-expanded";
+export const rashiTosafotHebrewPreference = preference<RashiTosafotHebrewOption>("rashiTosafotHebrew");
+
+export function rashiTosafotHebrewOption(): RashiTosafotHebrewOption {
+  return rashiTosafotHebrewPreference.get() ?? "punctuated-only";
+}
+
 /** Whether the standalone "Translation"/Steinsaltz commentary button is shown at all. */
 export type YesNo = "yes" | "no";
 export const showTranslationButtonPreference = preference<YesNo>("showTranslationButton");

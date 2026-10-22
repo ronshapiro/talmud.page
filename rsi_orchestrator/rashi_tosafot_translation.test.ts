@@ -1,4 +1,5 @@
 import * as contextUsageLog from "../precomputed/rsi_state/context_usage_log";
+import * as generationRecordModule from "../precomputed/rsi_state/generation_record";
 import * as modelRouting from "../precomputed/rsi_state/model_routing";
 import * as pageSkeleton from "../precomputed/rsi_state/page_skeleton";
 import {Edit} from "../precomputed/ai_edits";
@@ -10,11 +11,15 @@ import {
   CritiqueVerdict,
   critiquePrompt,
   critiqueViaAgent,
+  extractHebrewWordsForVerification,
   generationPrompt,
   targetComment,
   GeneratedEdit,
   generateViaAgent,
   generateWithSelfCritique,
+  isFreshTranslation,
+  TASK_TYPE,
+  recordGenerationForCandidate,
   compareAmudim,
   filterSectionsFromStartPage,
   MAX_GENERATION_ATTEMPTS,
@@ -23,6 +28,7 @@ import {
   TranslationCandidate,
   TranslationDeps,
   translateRashiTosafotComments,
+  verifyProposedHebrewWording,
 } from "./rashi_tosafot_translation";
 
 function candidate(overrides: Partial<TranslationCandidate> = {}): TranslationCandidate {
@@ -79,7 +85,7 @@ describe("generateWithSelfCritique", () => {
 
   test("retries once with feedback when the first critique fails, then succeeds", async () => {
     const generate = jest.fn<Promise<GeneratedEdit>, [TranslationCandidate, string?]>()
-      .mockResolvedValueOnce(generated({edit: {hebrew: "wrong", english: "wrong"}, costUsd: 0.01}))
+      .mockResolvedValueOnce(generated({edit: {hebrew: "מקור.", english: "wrong"}, costUsd: 0.01}))
       .mockResolvedValueOnce(generated({costUsd: 0.01}));
     const critique = jest.fn<Promise<CritiqueOutcome>, [TranslationCandidate, Edit]>()
       .mockResolvedValueOnce(outcome({verdict: invalidVerdict, costUsd: 0.002}))
@@ -104,7 +110,7 @@ describe("generateWithSelfCritique", () => {
   test("only counts the final accepted attempt's contextRefsUsed, not the rejected one's", async () => {
     const generate = jest.fn<Promise<GeneratedEdit>, [TranslationCandidate, string?]>()
       .mockResolvedValueOnce(generated({
-        edit: {hebrew: "wrong"}, contextRefsUsed: ["Zevachim 2a:99"],
+        edit: {hebrew: "מקור.", english: "wrong"}, contextRefsUsed: ["Zevachim 2a:99"],
       }))
       .mockResolvedValueOnce(generated({contextRefsUsed: ["Zevachim 2a:1"]}));
     const critique = jest.fn<Promise<CritiqueOutcome>, [TranslationCandidate, Edit]>()
@@ -117,7 +123,7 @@ describe("generateWithSelfCritique", () => {
   });
 
   test(`retries up to ${MAX_GENERATION_ATTEMPTS} times, then gives up`, async () => {
-    const generate = jest.fn(async () => generated({edit: {hebrew: "wrong"}}));
+    const generate = jest.fn(async () => generated({edit: {hebrew: "מקור.", english: "wrong"}}));
     const critique = jest.fn(async () => invalidOutcome);
 
     const result = await generateWithSelfCritique(candidate(), {generate, critique});
@@ -128,7 +134,7 @@ describe("generateWithSelfCritique", () => {
   });
 
   test("succeeds on the final allowed attempt rather than giving up early", async () => {
-    const generate = jest.fn(async () => generated({edit: {hebrew: "wrong"}}));
+    const generate = jest.fn(async () => generated({edit: {hebrew: "מקור.", english: "wrong"}}));
     const critique = jest.fn<Promise<CritiqueOutcome>, [TranslationCandidate, Edit]>();
     for (let i = 0; i < MAX_GENERATION_ATTEMPTS - 1; i++) {
       critique.mockResolvedValueOnce(invalidOutcome);
@@ -176,7 +182,7 @@ describe("generateWithSelfCritique", () => {
 
   test("retries with fallback reason when terse rejection omits reason", async () => {
     const generate = jest.fn<Promise<GeneratedEdit>, [TranslationCandidate, string?]>()
-      .mockResolvedValueOnce(generated({edit: {hebrew: "wrong"}}))
+      .mockResolvedValueOnce(generated({edit: {hebrew: "מקור.", english: "wrong"}}))
       .mockResolvedValueOnce(generated());
     const critique = jest.fn<Promise<CritiqueOutcome>, [TranslationCandidate, Edit]>()
       .mockResolvedValueOnce(outcome({verdict: {valid: false}}))
@@ -209,6 +215,136 @@ describe("generateWithSelfCritique", () => {
     });
     expect(result).toBeUndefined();
     expect(generate).not.toHaveBeenCalled();
+  });
+
+  test("skips critique and retries on CPU check rejection when Hebrew wording is modified", async () => {
+    const generate = jest.fn<Promise<GeneratedEdit>, [TranslationCandidate, string?]>()
+      .mockResolvedValueOnce(generated({edit: {hebrew: "מילה אחרת", english: "different"}, costUsd: 0.01}))
+      .mockResolvedValueOnce(generated({edit: {hebrew: "מקור:", english: "source"}, costUsd: 0.01}));
+    const critique = jest.fn<Promise<CritiqueOutcome>, [TranslationCandidate, Edit]>()
+      .mockResolvedValueOnce(validOutcome);
+
+    const result = await generateWithSelfCritique(
+      candidate({hebrewSource: "מקור"}), {generate, critique});
+
+    expect(result).not.toBeUndefined();
+    expect(generate).toHaveBeenCalledTimes(2);
+    // Critique should only be called once, for the second attempt, not the CPU-rejected first
+    expect(critique).toHaveBeenCalledTimes(1);
+    expect(generate.mock.calls[1][1]).toContain(
+      "Proposed Hebrew modified the source text outside of <span class=\"explanation\">");
+  });
+
+  test("accepts valid abbreviation expansions and explanations through CPU check", async () => {
+    const sourceHebrew = 'מתני\' כ"א תקיעות מפרש להו בפ\' החליל';
+    const proposedHebrew = '<strong class="dibur-hamatchil"><abbr title="מתניתין">מתני\'</abbr></strong> - '
+      + '<abbr title="עשרים ואחת">כ"א</abbr> תקיעות, <span class="explanation">הגמרא</span> '
+      + 'מפרש להו <abbr title="בפרק">בפ\'</abbr> החליל:';
+    const generate = jest.fn(async () => generated({
+      edit: {hebrew: proposedHebrew, english: "The Mishnah explains"},
+    }));
+    const critique = jest.fn(async () => validOutcome);
+
+    const result = await generateWithSelfCritique(
+      candidate({hebrewSource: sourceHebrew}), {generate, critique});
+
+    expect(result).not.toBeUndefined();
+    expect(generate).toHaveBeenCalledTimes(1);
+    expect(critique).toHaveBeenCalledTimes(1);
+  });
+});
+
+describe("verifyProposedHebrewWording", () => {
+  const sourceHebrew = 'מתני\' כ"א תקיעות מפרש להו בפ\' החליל';
+
+  test("accepts valid punctuation additions with unchanged Hebrew wording", () => {
+    const proposedHebrew = '<strong class="dibur-hamatchil">מתני\'</strong> - כ"א תקיעות, מפרש להו בפ\' החליל:';
+    const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
+    expect(verification.valid).toBe(true);
+  });
+
+  test("accepts valid <abbr title=\"...\"> abbreviation expansions", () => {
+    const proposedHebrew = '<strong class="dibur-hamatchil"><abbr title="מתניתין">מתני\'</abbr></strong> - '
+      + '<abbr title="עשרים ואחת">כ"א</abbr> תקיעות, מפרש להו <abbr title="בפרק">בפ\'</abbr> החליל:';
+    const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
+    expect(verification.valid).toBe(true);
+  });
+
+  test("accepts valid <span class=\"explanation\">...</span> contextual additions", () => {
+    const proposedHebrew = '<strong class="dibur-hamatchil">מתני\'</strong> - '
+      + 'כ"א תקיעות, <span class="explanation">הגמרא</span> מפרש להו בפ\' החליל:';
+    const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
+    expect(verification.valid).toBe(true);
+  });
+
+  test("accepts valid combination of <abbr> and <span class=\"explanation\">", () => {
+    const proposedHebrew = '<strong class="dibur-hamatchil"><abbr title="מתניתין">מתני\'</abbr></strong> - '
+      + '<abbr title="עשרים ואחת">כ"א</abbr> תקיעות, <span class="explanation">הגמרא</span> '
+      + 'מפרש להו <abbr title="בפרק">בפ\'</abbr> החליל:';
+    const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
+    expect(verification.valid).toBe(true);
+  });
+
+  test("rejects when Hebrew words are modified outside of explanations", () => {
+    // Replaced בפ' with בפרק directly without keeping abbreviation inside <abbr>
+    const proposedHebrew = '<strong class="dibur-hamatchil">מתני\'</strong> - כ"א תקיעות, מפרש להו בפרק החליל:';
+    const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
+    expect(verification.valid).toBe(false);
+    expect(verification.reason).toContain(
+      "Proposed Hebrew modified the source text outside of <span class=\"explanation\">");
+  });
+
+  test("rejects unclosed <span class=\"explanation\"> tags", () => {
+    const proposedHebrew = 'מתני\' כ"א תקיעות <span class="explanation">הגמרא מפרש להו בפ\' החליל:';
+    const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
+    expect(verification.valid).toBe(false);
+    expect(verification.reason).toContain('Unclosed <span class="explanation"> tag');
+  });
+
+  test("rejects mismatched <abbr> tags", () => {
+    const proposedHebrew = '<abbr title="מתניתין">מתני\' כ"א תקיעות מפרש להו בפ\' החליל:';
+    const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
+    expect(verification.valid).toBe(false);
+    expect(verification.reason).toContain("Mismatched <abbr> tags");
+  });
+
+  test("rejects <abbr> tags missing a title attribute", () => {
+    const proposedHebrew = '<abbr>מתני\'</abbr> כ"א תקיעות מפרש להו בפ\' החליל:';
+    const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
+    expect(verification.valid).toBe(false);
+    expect(verification.reason).toContain("Missing title attribute in <abbr> tag");
+  });
+
+  test("rejects bracketed explanations [...] that add Hebrew letters outside of explanation span", () => {
+    const proposedHebrew = 'מתני\' כ"א תקיעות [הגמרא] מפרש להו בפ\' החליל:';
+    const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
+    expect(verification.valid).toBe(false);
+    expect(verification.reason).toContain(
+      "Proposed Hebrew modified the source text outside of <span class=\"explanation\">");
+  });
+
+  test("rejects when space between words is dropped", () => {
+    const proposedHebrew = '<strong class="dibur-hamatchil">מתני\'</strong> - כ"אתקיעות, מפרש להו בפ\' החליל:';
+    const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
+    expect(verification.valid).toBe(false);
+    expect(verification.reason).toContain(
+      "Proposed Hebrew modified the source text outside of <span class=\"explanation\">");
+  });
+
+  test("rejects when an extra space is inserted within a word", () => {
+    const proposedHebrew = '<strong class="dibur-hamatchil">מתני\'</strong> - כ"א תקי עות, מפרש להו בפ\' החליל:';
+    const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
+    expect(verification.valid).toBe(false);
+    expect(verification.reason).toContain(
+      "Proposed Hebrew modified the source text outside of <span class=\"explanation\">");
+  });
+});
+
+describe("extractHebrewWordsForVerification", () => {
+  test("strips HTML tags and explanations while preserving space-delimited Hebrew words", () => {
+    const markup = '<strong class="dibur-hamatchil"><abbr title="מתניתין">מתני\'</abbr></strong> - '
+      + 'כ"א תקיעות, <span class="explanation">הגמרא</span> מפרש להו <abbr title="בפרק">בפ\'</abbr> החליל:';
+    expect(extractHebrewWordsForVerification(markup)).toBe("מתני כא תקיעות מפרש להו בפ החליל");
   });
 });
 
@@ -963,5 +1099,60 @@ describe("base64 image decoding, placeholders, and restoration", () => {
       recordContextUsageSpy.mockRestore();
       getAgentRunnerSpy.mockRestore();
     }
+  });
+
+  describe("isFreshTranslation and task records", () => {
+    test("TASK_TYPE is rashi_tosafot_translation", () => {
+      expect(TASK_TYPE).toBe("rashi_tosafot_translation");
+    });
+
+    test("recognizes freshness from generation record", () => {
+      const readSpy = jest.spyOn(generationRecordModule, "readGenerationRecord")
+        .mockImplementation((taskType: string) => {
+          if (taskType === TASK_TYPE) {
+            return {
+              sourceRefs: ["Rashi on Zevachim 2a:1:1"],
+              sourceText: "מקור",
+              model: "claude-sonnet-5",
+              promptVersion: "v2",
+              generatedAt: "2026-10-22T00:00:00.000Z",
+              dependsOn: [],
+            };
+          }
+          return undefined;
+        });
+
+      try {
+        const testCandidate = candidate({hebrewSource: "מקור"});
+        expect(isFreshTranslation(testCandidate)).toBe(true);
+      } finally {
+        readSpy.mockRestore();
+      }
+    });
+
+    test("recordGenerationForCandidate records promptVersion v3 under TASK_TYPE", () => {
+      const upsertSpy = jest.spyOn(generationRecordModule, "upsertGenerationRecord")
+        .mockImplementation(() => {});
+
+      try {
+        const testCandidate = candidate({hebrewSource: "מקור"});
+        const generatedEdit: GeneratedEdit = {
+          edit: {hebrew: "מקור.", english: "source"},
+          model: "claude-sonnet-5",
+          costUsd: 0.015,
+          contextRefsUsed: ["Zevachim 2a:1"],
+        };
+        recordGenerationForCandidate(testCandidate, generatedEdit);
+
+        expect(upsertSpy).toHaveBeenCalledTimes(1);
+        const [taskType, page, ref, record] = upsertSpy.mock.calls[0];
+        expect(taskType).toBe("rashi_tosafot_translation");
+        expect(page).toBe(testCandidate.page);
+        expect(ref).toBe(testCandidate.ref);
+        expect(record.promptVersion).toBe("v3");
+      } finally {
+        upsertSpy.mockRestore();
+      }
+    });
   });
 });

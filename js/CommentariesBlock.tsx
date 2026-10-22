@@ -22,6 +22,9 @@ const {
 const JSX_NOOP = null;
 
 function shouldHide(commentaryKind: CommentaryType): boolean {
+  if (commentaryKind.className === "explanation") {
+    return true;
+  }
   return showTranslationButtonPreference.get() !== "yes"
     && commentaryKind.className === "translation";
 }
@@ -302,9 +305,9 @@ export function CommentariesBlock({
 
   const renderButton = (
     commentaryKind: CommentaryType, isShowing: boolean, commentary: Commentary,
-  ): React.ReactElement | null => {
+  ): React.ReactElement => {
     if (shouldHide(commentaryKind)) {
-      return JSX_NOOP;
+      return <>{JSX_NOOP}</>;
     }
 
     const onClick = () => {
@@ -448,7 +451,7 @@ export function CommentariesBlock({
       <InternalTableRow
         id={`${segmentLabel} ${commentaryKind.englishName}`}
         key={commentaryKind.englishName + " close button"}
-        hebrew={renderButton(commentaryKind, true, commentary)!} />);
+        hebrew={renderButton(commentaryKind, true, commentary)} />);
 
     if (commentaryKind.renderCommentsAsNestedCommentaries && !syntheticCommentaryKinds) {
       output.push(renderCommentsAsNestedCommentaries(commentary, commentaryKind.className));
@@ -461,6 +464,7 @@ export function CommentariesBlock({
             comment={comment}
             commentaryKind={commentaryKind}
             parentComment={parentComment}
+            toggleExplanation={() => toggleShowing(nestedSegmentLabel, "explanation")}
             />,
           renderNestedCommentariesBlock({
             commentaries: comment.commentary || {},

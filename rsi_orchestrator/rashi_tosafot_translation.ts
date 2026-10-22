@@ -19,6 +19,8 @@ import {
   StalenessStatus,
 } from "../precomputed/rsi_state/staleness";
 import {toFlatArray} from "../sefariaTextType";
+import {stripHebrewNonletters} from "../hebrew";
+import {stripAbbreviationMarkup, stripExplanations} from "../js/rashi_tosafot_formatting";
 import {extractRequestedRefs, findBaseSegment, getCommentRefs} from "./context_fetch";
 import {renderPrompt} from "./prompt_template";
 import {AgentError, AgentBackend, getAgentRunner} from "./agent_runner";
@@ -52,7 +54,7 @@ export {LongThreadSessionManager, isLongThreadBackend};
  */
 
 export const TASK_TYPE = "rashi_tosafot_translation";
-const PROMPT_VERSION = "v2";
+const PROMPT_VERSION = "v3";
 // The only tool this task type's headless calls may use — see the module doc above. Scoped to
 // this exact command so it can't fall back to arbitrary Bash use.
 const CONTEXT_FETCH_ALLOWED_TOOLS = [
@@ -119,6 +121,87 @@ function sumCost(...costs: (number | undefined)[]): number | undefined {
 // as "stop the whole run," not "give up on this candidate" — see translateRashiTosafotComments.
 export const MAX_GENERATION_ATTEMPTS = 5;
 
+export interface HebrewVerificationResult {
+  valid: boolean;
+  reason?: string;
+}
+
+export function extractHebrewWordsForVerification(text: string): string {
+  // Strip explanatory notes added in proposed text (<span class="explanation">...</span>).
+  const withoutExplanations = stripExplanations(text);
+  // Unwrap <abbr title="expansion">abbreviation</abbr> to just the original abbreviation text,
+  // so the abbreviation itself can be checked against the source text.
+  const withoutAbbreviationMarkup = stripAbbreviationMarkup(withoutExplanations);
+  // Strip vowels (nikkud) and cantillation marks (U+0591-U+05C7) so vocalization differences
+  // are ignored.
+  return stripHebrewNonletters(withoutAbbreviationMarkup)
+    // Strip image placeholder tokens (e.g. IMAGE_PLACEHOLDER_0) used when diagrams are extracted.
+    .replace(/IMAGE_PLACEHOLDER_\d+/g, "")
+    // Replace remaining HTML tags (e.g. <strong class="dibur-hamatchil">) with a space to
+    // prevent concatenating words across tags.
+    .replace(/<[^>]+>/g, " ")
+    // Replace HTML entities (e.g. &nbsp;) with a space.
+    .replace(/&[\d#a-z]+;/gi, " ")
+    // Replace sentence and clause punctuation (colons, periods, commas, brackets, hyphens,
+    // dashes, and Hebrew maqaf) with spaces so word boundaries around punctuation are maintained.
+    .replace(/[!(),.:;?[\]{}־–—-]/g, " ")
+    // Strip single/double quotes and Hebrew geresh/gershayim (U+05F3, U+05F4) without inserting
+    // spaces, so abbreviations and numerals normalize consistently (e.g. both כ"א and כ״א
+    // become כא).
+    .replace(/["'׳״]/g, "")
+    // Strip any remaining characters that are not Hebrew letters (U+05D0-U+05EA), digits, or
+    // whitespace.
+    .replace(/[^\d\s\u05D0-\u05EA]/g, "")
+    // Collapse all runs of whitespace into a single space and trim edges, yielding space-delimited
+    // words.
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+export function verifyProposedHebrewWording(
+  sourceHebrew: string,
+  proposedHebrew: string,
+): HebrewVerificationResult {
+  const withoutExplanations = stripExplanations(proposedHebrew);
+  if (/<span\s+class=["']explanation["']>/i.test(withoutExplanations)) {
+    return {
+      valid: false,
+      reason: 'Unclosed <span class="explanation"> tag in proposed Hebrew.',
+    };
+  }
+
+  const openingAbbreviationCount = (proposedHebrew.match(/<abbr\b[^>]*>/gi) ?? []).length;
+  const closingAbbreviationCount = (proposedHebrew.match(/<\/abbr>/gi) ?? []).length;
+  if (openingAbbreviationCount !== closingAbbreviationCount) {
+    return {
+      valid: false,
+      reason: `Mismatched <abbr> tags in proposed Hebrew (${openingAbbreviationCount} opening, ${closingAbbreviationCount} closing).`,
+    };
+  }
+
+  const abbreviationWithoutTitleMatch = proposedHebrew.match(/<abbr(?!\s+title=)[^>]*>/gi);
+  if (abbreviationWithoutTitleMatch) {
+    return {
+      valid: false,
+      reason: 'Missing title attribute in <abbr> tag. Use <abbr title="expansion">abbreviation</abbr>.',
+    };
+  }
+
+  const sourceWords = extractHebrewWordsForVerification(sourceHebrew);
+  const proposedWords = extractHebrewWordsForVerification(proposedHebrew);
+
+  if (sourceWords !== proposedWords) {
+    return {
+      valid: false,
+      reason: 'Proposed Hebrew modified the source text outside of <span class="explanation">. '
+        + 'Original abbreviations must be preserved inside <abbr title="expansion">abbreviation</abbr>, '
+        + 'and any added explanatory words must be wrapped in <span class="explanation">...</span>.',
+    };
+  }
+
+  return {valid: true};
+}
+
 /**
  * Generate, critique, and retry with feedback — across up to MAX_GENERATION_ATTEMPTS attempts —
  * until the critique accepts the result. A malformed (non-JSON) response from `generate` is
@@ -154,6 +237,16 @@ export async function generateWithSelfCritique(
       }
       if (deps.shouldStop?.()) {
         return undefined;
+      }
+      if (generated.edit.hebrew) {
+        const hebrewVerification = verifyProposedHebrewWording(
+          candidate.hebrewSource, generated.edit.hebrew);
+        if (!hebrewVerification.valid) {
+          totalCost = sumCost(totalCost, generated.costUsd);
+          lastReason = hebrewVerification.reason!;
+          feedback = lastReason;
+          continue;
+        }
       }
       // eslint-disable-next-line no-await-in-loop
       outcome = await deps.critique(candidate, generated.edit);
@@ -531,15 +624,19 @@ const MAX_WORKED_EXAMPLES = 2;
 // Used only until real accepted generations exist to draw examples from — see findWorkedExamples.
 const FALLBACK_WORKED_EXAMPLE: Record<Commentator, WorkedExample> = {
   Rashi: {
-    hebrewSource: "ואם תמצי לומר דבר זה קשה",
-    hebrew: "<strong class=\"dibur-hamatchil\">ואם תמצי לומר</strong> - דבר זה קשה:",
-    english: "<strong class=\"dibur-hamatchil\">And if you should say:</strong> "
-      + "This matter is difficult.",
+    hebrewSource: "מתני' כ\"א תקיעות מפרש להו בפ' החליל",
+    hebrew: "<strong class=\"dibur-hamatchil\"><abbr title=\"מתניתין\">מתני'</abbr></strong> - "
+      + "<abbr title=\"עשרים ואחת\">כ\"א</abbr> תקיעות, <span class=\"explanation\">הגמרא</span> "
+      + "מפרש להו <abbr title=\"בפרק\">בפ'</abbr> החליל:",
+    english: "<strong class=\"dibur-hamatchil\">The Mishnah:</strong> Twenty-one blasts — "
+      + "[the Gemara] explains them in the chapter [entitled] Hechalil:",
   },
   Tosafot: {
-    hebrewSource: "וכן משמע בכל דוכתא",
-    hebrew: "<strong class=\"dibur-hamatchil\">וכן משמע</strong> - בכל דוכתא:",
-    english: "<strong class=\"dibur-hamatchil\">And so it implies:</strong> in every place.",
+    hebrewSource: "וכן משמע בכל דוכתא אא\"כ פירש",
+    hebrew: "<strong class=\"dibur-hamatchil\">וכן משמע</strong> - בכל דוכתא, "
+      + "<abbr title=\"אלא אם כן\">אא\"כ</abbr> פירש <span class=\"explanation\">רבו</span>:",
+    english: "<strong class=\"dibur-hamatchil\">And so it implies:</strong> in every place, "
+      + "unless [his teacher] explained otherwise.",
   },
 };
 

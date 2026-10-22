@@ -9,7 +9,11 @@ import {postCorrection} from "./corrections";
 import {useHtmlRef} from "./hooks";
 import {flatten} from "../sefariaTextType";
 import componentHandler from "./componentHandler";
-import {hideGemaraTranslationByDefaultPreference} from "./settings";
+import {
+  hideGemaraTranslationByDefaultPreference,
+  rashiTosafotHebrewOption,
+} from "./settings";
+import {formatRashiTosafotHebrew} from "./rashi_tosafot_formatting";
 import {RsiReviewControls} from "./RsiReviewControls";
 
 const {
@@ -30,17 +34,20 @@ function InternalTableRow({
   commentaryKind,
   extraClasses,
   overrideRef,
+  toggleExplanation,
 }: {
-  hebrew?: string;
+  hebrew?: string | React.ReactElement;
   english?: string;
   comment: ApiComment;
   commentaryKind: CommentaryType;
   extraClasses?: string[];
   overrideRef?: string;
+  toggleExplanation?: () => unknown;
 }): React.ReactElement {
   const [englishSteinsaltzWithHebrew, setEnglishSteinsaltzWithHebrew] = useState(false);
   const toggleEnglishSteinsaltzWithHebrew = (
     () => setEnglishSteinsaltzWithHebrew(old => !old));
+
   const context = useConfiguration();
   if (commentaryKind.englishName === "Vilna Shas") {
     english = undefined;
@@ -53,16 +60,39 @@ function InternalTableRow({
       && hideGemaraTranslationByDefaultPreference.get() === "true"
       && commentaryKind.englishName === "Translation");
 
+  let renderedHebrew: string | React.ReactElement | undefined = hebrew;
+  const isRashiOrTosafot = (
+    commentaryKind.englishName === "Rashi" || commentaryKind.englishName === "Tosafot"
+  );
+  if (isRashiOrTosafot) {
+    renderedHebrew = formatRashiTosafotHebrew({
+      rawHebrew: hebrew as string,
+      originalHebrew: comment.originalHebrew as string,
+      option: rashiTosafotHebrewOption(),
+    });
+  }
+
   const classes = extraClasses || [];
   classes.push(
     "commentaryRow", "IndividualComment",
     // Used in CSS and ref_selection_snackbar.js
     commentaryKind.className.replace(/ /g, "_"));
 
-  const createRow = (key: string, _hebrew: string | undefined, _english: string | undefined) => (
+  const hebrewDoubleClickListener = (() => {
+    if (expandableTranslations) return () => toggleEnglishSteinsaltzWithHebrew();
+    if (comment.commentary?.Explanation) return toggleExplanation;
+    return undefined;
+  })();
+
+  const createRow = (
+    key: string,
+    _hebrew: string | React.ReactElement | undefined,
+    _english: string | undefined,
+    doubleClickListener?: () => void,
+  ) => (
     <TableRow
       key={key}
-      hebrew={_hebrew}
+      hebrew={_hebrew as any}
       english={_english}
       sefaria-ref={ref}
       link={comment.link} // eslint-disable-line react/prop-types
@@ -71,29 +101,31 @@ function InternalTableRow({
         // eslint-disable-next-line react/prop-types
         commentaryKind.englishName === "Translation" && context.expandEnglishByDefault()
       }
-      hebrewDoubleClickListener={
-        expandableTranslations
-          ? () => toggleEnglishSteinsaltzWithHebrew()
-          : undefined
-      }
+      hebrewDoubleClickListener={doubleClickListener}
     />
   );
 
   return (
     <>
-      {createRow("main", hebrew, expandableTranslations ? "" : english)}
+      {createRow(
+        "main",
+        renderedHebrew,
+        expandableTranslations ? "" : english,
+        hebrewDoubleClickListener,
+      )}
       {expandableTranslations && englishSteinsaltzWithHebrew
        && createRow("main-translation", "", english)}
     </>
   );
 }
 InternalTableRow.propTypes = {
-  hebrew: PropTypes.string,
+  hebrew: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
   english: PropTypes.string,
   comment: PropTypes.object.isRequired,
   commentaryKind: PropTypes.object.isRequired,
   extraClasses: PropTypes.arrayOf(PropTypes.string),
   overrideRef: PropTypes.string,
+  toggleExplanation: PropTypes.func,
 };
 
 
@@ -130,10 +162,12 @@ export function IndividualComment({
   comment,
   commentaryKind,
   parentComment,
+  toggleExplanation,
 }: {
   comment: ApiComment;
   commentaryKind: CommentaryType;
   parentComment?: ApiComment;
+  toggleExplanation?: () => unknown;
 }): React.ReactElement {
   const output = [];
 
@@ -238,6 +272,7 @@ export function IndividualComment({
         comment={comment}
         commentaryKind={commentaryKind}
         extraClasses={extraClasses}
+        toggleExplanation={toggleExplanation}
         />);
   }
 
@@ -262,4 +297,5 @@ IndividualComment.propTypes = {
   comment: PropTypes.object.isRequired,
   commentaryKind: PropTypes.object.isRequired,
   parentComment: PropTypes.object,
+  toggleExplanation: PropTypes.func,
 };
