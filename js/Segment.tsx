@@ -12,6 +12,7 @@ import {mergeCommentaries} from "./mergeCommentaries";
 import {Section, Commentary} from "../apiTypes";
 import {showTranslationButtonPreference} from "./settings";
 import {onClickKeyListener} from "./key_clicks";
+import {DoubleClickHintSurfaceType} from "./DoubleClickVisualHint";
 
 const {useState} = React;
 
@@ -265,12 +266,22 @@ export function Segment({
     return <span>{elements}</span>;
   };
 
+  const hasSteinsaltzTranslation = segments.some(
+    segment => Boolean(segment?.commentary?.Translation || segment?.commentary?.Steinsaltz),
+  );
+  const doubleClickHintSurfaceType = (
+    hebrews.length === 1 && hasSteinsaltzTranslation && !isSteinsaltzCommentRendered
+      ? DoubleClickHintSurfaceType.STEINSALTZ
+      : undefined
+  );
+
   segmentContents.push(
     <TableRow
       key="gemara"
       id={`${segmentLabel}-gemara`}
       hebrew={createText(hebrews, "hebrew-ref-text", getSteinsaltzIndicatorsForSegment)}
       hebrewDoubleClickListener={hebrews.length === 1 ? hebrewDoubleClickListener : undefined}
+      doubleClickHintSurfaceType={doubleClickHintSurfaceType}
       english={createText(englishes, "english-ref-text")}
       expandEnglishByDefault={context.expandEnglishByDefault()}
       classes={gemaraContainerClasses}

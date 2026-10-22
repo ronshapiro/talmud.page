@@ -9,6 +9,12 @@ import {onClickKeyListener} from "./key_clicks";
 import {useConfiguration, useHiddenHost} from "./context";
 import {SwipeableBackground} from "./SwipeableBackground";
 import {isSiteLanguageHebrew} from "./settings";
+import {
+  DoubleClickHintSurfaceType,
+  DoubleClickVisualHint,
+  claimDoubleClickVisualHint,
+  recordDoubleClickInteraction,
+} from "./DoubleClickVisualHint";
 
 const {
   useEffect,
@@ -156,6 +162,7 @@ interface BaseCellProps {
   style?: React.CSSProperties;
   text: StringOrElement | undefined;
   doubleClickListener?: () => void;
+  doubleClickHintSurfaceType?: DoubleClickHintSurfaceType;
 }
 
 function BaseCell({
@@ -164,18 +171,87 @@ function BaseCell({
   style,
   text,
   doubleClickListener,
+  doubleClickHintSurfaceType,
 }: BaseCellProps): React.ReactElement | null {
+  const context = useConfiguration();
   const className = ["table-cell"].concat(classes).join(" ");
   const sanitizedText = useSearchableText(useSanitizedText(typeof text === "string" ? text : ""));
 
-  const childrenProp = (typeof text === "string")
-    ? {dangerouslySetInnerHTML: {__html: sanitizedText}}
-    : {children: text};
+  const hasDoubleClickListener = Boolean(doubleClickListener);
+  const effectiveSurfaceType = hasDoubleClickListener ? doubleClickHintSurfaceType : undefined;
+
+  const [isVisualHintActive, setIsVisualHintActive] = useState(() => {
+    if (context.isFake || !effectiveSurfaceType) {
+      return false;
+    }
+    return claimDoubleClickVisualHint(effectiveSurfaceType);
+  });
+
+  useEffect(() => {
+    if (!effectiveSurfaceType || !isVisualHintActive) {
+      return undefined;
+    }
+    const handleInteraction = (event: Event) => {
+      const customEvent = event as CustomEvent<{surfaceType: string}>;
+      if (customEvent.detail?.surfaceType === effectiveSurfaceType) {
+        setIsVisualHintActive(false);
+      }
+    };
+    window.addEventListener("doubleClickInteraction", handleInteraction);
+    return () => {
+      window.removeEventListener("doubleClickInteraction", handleInteraction);
+    };
+  }, [effectiveSurfaceType, isVisualHintActive]);
+
+  const wrappedDoubleClickListener = useMemo(() => {
+    if (!doubleClickListener && !effectiveSurfaceType) {
+      return undefined;
+    }
+    return () => {
+      if (effectiveSurfaceType) {
+        recordDoubleClickInteraction(effectiveSurfaceType);
+        setIsVisualHintActive(false);
+      }
+      doubleClickListener?.();
+    };
+  }, [doubleClickListener, effectiveSurfaceType]);
+
   const ref = useHtmlRef<HTMLDivElement>();
 
   useEffect(() => {
-    $(ref.current!).betterDoubleClick(doubleClickListener);
+    $(ref.current!).betterDoubleClick(wrappedDoubleClickListener);
   });
+
+  const visualHintElement = isVisualHintActive && effectiveSurfaceType ? (
+    <DoubleClickVisualHint surfaceType={effectiveSurfaceType} />
+  ) : null;
+
+  /* eslint-disable react/no-danger */
+  if (typeof text === "string") {
+    if (!visualHintElement) {
+      return (
+        <div
+          dir={direction}
+          className={className}
+          ref={ref}
+          style={style}
+          dangerouslySetInnerHTML={{__html: sanitizedText}}
+        />
+      );
+    }
+    return (
+      <div
+        dir={direction}
+        className={className}
+        ref={ref}
+        style={style}
+      >
+        <span dangerouslySetInnerHTML={{__html: sanitizedText}} />
+        {visualHintElement}
+      </div>
+    );
+  }
+  /* eslint-enable react/no-danger */
 
   return (
     <div
@@ -183,8 +259,10 @@ function BaseCell({
       className={className}
       ref={ref}
       style={style}
-      {...childrenProp} // eslint-disable-line react/jsx-props-no-spreading
-      />
+    >
+      {text}
+      {visualHintElement}
+    </div>
   );
 }
 
@@ -197,6 +275,7 @@ interface HebrewCellProps extends CellProps {
   isEnglishExpanded: boolean;
   shouldWrap: boolean;
   hebrewDoubleClickListener?: () => void;
+  doubleClickHintSurfaceType?: DoubleClickHintSurfaceType;
 }
 
 function HebrewCell({
@@ -205,6 +284,7 @@ function HebrewCell({
   isEnglishExpanded,
   shouldWrap,
   hebrewDoubleClickListener,
+  doubleClickHintSurfaceType,
 }: HebrewCellProps): React.ReactElement | null {
   const context = useConfiguration();
   const siblingExpandedClass = (
@@ -217,6 +297,7 @@ function HebrewCell({
       classes={["hebrew", siblingExpandedClass].concat(classes)}
       text={text}
       doubleClickListener={hebrewDoubleClickListener}
+      doubleClickHintSurfaceType={doubleClickHintSurfaceType}
       />
   );
 }
@@ -341,6 +422,7 @@ interface TableRowProps {
   id?: string;
   classes: string[];
   hebrewDoubleClickListener?: () => void;
+  doubleClickHintSurfaceType?: DoubleClickHintSurfaceType;
   "sefaria-ref"?: string;
   link?: string;
   overrideFullRow?: boolean;
@@ -437,6 +519,7 @@ function TableRow(props: TableRowProps): React.ReactElement {
         text={contents}
         classes={cellClasses}
         hebrewDoubleClickListener={hebrewDoubleClickListener}
+        doubleClickHintSurfaceType={props.doubleClickHintSurfaceType}
         isEnglishExpanded={isEnglishExpanded}
         shouldWrap={shouldWrap}
         />);
@@ -496,6 +579,7 @@ TableRow.propTypes = {
   id: PropTypes.string,
   classes: PropTypes.arrayOf(PropTypes.string).isRequired,
   hebrewDoubleClickListener: PropTypes.func,
+  doubleClickHintSurfaceType: PropTypes.string,
   "sefaria-ref": PropTypes.string,
   link: PropTypes.string,
   overrideFullRow: PropTypes.bool,
