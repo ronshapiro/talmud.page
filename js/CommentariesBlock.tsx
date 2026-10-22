@@ -21,9 +21,9 @@ const {
 
 const JSX_NOOP = null;
 
-function shouldHide(commentaryKind: CommentaryType, isShowing: boolean): boolean {
+function shouldHide(commentaryKind: CommentaryType): boolean {
   if (commentaryKind.className === "explanation") {
-    return !isShowing;
+    return true;
   }
   return showTranslationButtonPreference.get() !== "yes"
     && commentaryKind.className === "translation";
@@ -306,7 +306,7 @@ export function CommentariesBlock({
   const renderButton = (
     commentaryKind: CommentaryType, isShowing: boolean, commentary: Commentary,
   ): React.ReactElement | null => {
-    if (shouldHide(commentaryKind, isShowing)) {
+    if (shouldHide(commentaryKind)) {
       return JSX_NOOP;
     }
 
