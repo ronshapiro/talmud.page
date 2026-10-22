@@ -1,0 +1,422 @@
+{
+  "Rashi on Pesachim 3a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T21:47:19.510Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 3a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי טעמא לא תני לילי</strong> - כדתנא דבי שמואל ומשני אלישנא מעליא קא מיהדר שמצוה ודרך נקיי הדעת לספר בלשון נקיה:"
+  },
+  "Rashi on Pesachim 3a:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T21:51:04.588Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 3a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דבר מגונה</strong> - לאו משום דלילי דבר מגונה הוא והא דר' יהושע בן לוי בעלמא איתמר ומיהו שמעינן מינה לשון חכמים לחזר אחר לשון צח ונקי:"
+  },
+  "Rashi on Pesachim 3a:10:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 3a:10:3",
+      "Rashi on Pesachim 3a:10:1",
+      "Rashi on Pesachim 3a:10:2"
+    ],
+    "generatedAt": "2026-10-21T21:54:50.822Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 3a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אשר איננה טהורה</strong> - ולא כתיב הבהמה הטמאה כי אורחיה הרי שמונה אותיות עקם הטמאה חמש אותיות הן אשר איננה טהורה שלש עשרה אותיות ואע\"ג דבאורייתא כתיב טמא שני אורחיה בחד דוכתא ללמדך לחזר על לשון נקיה:"
+  },
+  "Rashi on Pesachim 3a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T21:56:00.362Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 3a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אשר לא יהיה טהור</strong> - הוה ליה למיכתב איש טמא וכי נמי משוית לטהור חסר ו' איכא עיקום תשע שהרי שתים עשרה יש וטמא אינו אלא שלש:"
+  },
+  "Rashi on Pesachim 3a:11:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 3a:11:1",
+      "Rashi on Pesachim 3a:11:2",
+      "Rashi on Pesachim 3a:11:3",
+      "Rashi on Pesachim 3a:9:1",
+      "Rashi on Pesachim 3a:10:1"
+    ],
+    "generatedAt": "2026-10-21T21:57:31.653Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 3a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ו' דטהור</strong> - דהא לא חסר הוא:"
+  },
+  "Rashi on Pesachim 3a:11:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 3a:11:1",
+      "Rashi on Pesachim 3a:11:2",
+      "Rashi on Pesachim 3a:1:1",
+      "Rashi on Pesachim 3a:10:1"
+    ],
+    "generatedAt": "2026-10-21T22:00:09.930Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 3a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי אמר מקרה</strong> - טמא הוא לכתוב ולשתוק ויש כאן עיקום י\"ו אותיות:"
+  },
+  "Rashi on Pesachim 3a:12:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 3a:12:1",
+      "Rashi on Pesachim 3a:12:2",
+      "Rashi on Pesachim 3a:12:3",
+      "Chokhmat Shlomo on Pesachim 3a:3",
+      "Tosafot on Pesachim 3a:12:1",
+      "Rashi on Pesachim 3a:10:1",
+      "Rashi on Pesachim 3a:10:2",
+      "Rashi on Pesachim 3a:10:3",
+      "Rashi on Pesachim 3a:11:1",
+      "Rashi on Pesachim 3a:11:2",
+      "Rashi on Pesachim 3a:11:3",
+      "Rashi on Pesachim 3a:1:1",
+      "Rashi on Pesachim 3a:1:2",
+      "Rashi on Pesachim 3a:2:1",
+      "Rashi on Pesachim 3a:2:2",
+      "Rashi on Pesachim 3a:3:1",
+      "Rashi on Pesachim 3a:3:2",
+      "Rashi on Pesachim 3a:4:1",
+      "Rashi on Pesachim 3a:5:1",
+      "Rashi on Pesachim 3a:5:2",
+      "Rashi on Pesachim 3a:6:1",
+      "Rashi on Pesachim 3a:9:1"
+    ],
+    "generatedAt": "2026-10-21T22:05:04.678Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 3a:12:1"
+    ],
+    "sourceText": "בזב כתיב <span class=\"parenthesized\">(ויקרא ט״ו:ט׳)</span> וכל המרכב אשר ירכב ובאשה כתיב <span class=\"parenthesized\">(שם)</span> או על הכלי אשר היא יושבת לפי שאין הגון להזכיר רכיבה ופיסוק רגלים באשה ואע\"פ שהמרכב והמושב שוין בשניהם:"
+  },
+  "Rashi on Pesachim 3a:12:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 3a:12:1",
+      "Rashi on Pesachim 3a:12:2",
+      "Rashi on Pesachim 3a:12:3"
+    ],
+    "generatedAt": "2026-10-21T22:06:17.903Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 3a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותבחר לשון ערומים</strong> - מצוה עליך כך:"
+  },
+  "Rashi on Pesachim 3a:12:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 3a:12:3",
+      "Rashi on Pesachim 3a:12:1",
+      "Rashi on Pesachim 3a:12:2",
+      "Steinsaltz on Pesachim 3a:12",
+      "Rashi on Pesachim 3a:11:1",
+      "Rashi on Pesachim 3a:11:2",
+      "Rashi on Pesachim 3a:13:1"
+    ],
+    "generatedAt": "2026-10-21T22:12:25.253Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 3a:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ברור מללו</strong> - ל' נקי ומבורר:"
+  },
+  "Rashi on Pesachim 3a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T22:16:05.803Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 3a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי ואומר</strong> - למה לו ואומר הא נפקא ליה מקמא:"
+  },
+  "Rashi on Pesachim 3a:13:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 3a:13:1",
+      "Rashi on Pesachim 3a:13:3",
+      "Rashi on Pesachim 3a:1:1",
+      "Rashi on Pesachim 3a:1:2",
+      "Rashi on Pesachim 3a:10:1",
+      "Rashi on Pesachim 3a:10:2",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 2a:1:2",
+      "Rashi on Pesachim 2b:1:1"
+    ],
+    "generatedAt": "2026-10-21T22:18:24.783Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 3a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ק וכי תימא ה\"מ בדאורייתא</strong> - תורה הקפידה בלשונה שיצאתה מפי הגבורה אבל חכמים במשנה וברייתא אין להקפיד על לשונם:"
+  },
+  "Rashi on Pesachim 3a:13:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 3a:13:1",
+      "Rashi on Pesachim 3a:13:2",
+      "Steinsaltz on Pesachim 3a:13",
+      "Rashi on Pesachim 3a:1:1",
+      "Rashi on Pesachim 3a:1:2"
+    ],
+    "generatedAt": "2026-10-21T22:20:54.191Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 3a:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ש ותבחר לשון ערומים</strong> - שמענו שהערומים בוחרי לשון הם:"
+  },
+  "Rashi on Pesachim 3a:14:1": {
+    "dependsOn": [
+      "Steinsaltz on Pesachim 3a:14"
+    ],
+    "generatedAt": "2026-10-21T22:22:14.950Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 3a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום ביעתותא דגמלים</strong> - שהוא גבוה ומתיירא שלא תפול אורחה דאשה לרכוב כדי שתהא מחזקת בו בידים ורגלים:"
+  },
+  "Rashi on Pesachim 3a:1:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 3a:1:1",
+      "Rashi on Pesachim 3a:1:2",
+      "Keritot 7b:10-12"
+    ],
+    "generatedAt": "2026-10-21T20:57:36.516Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 3a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המפלת אור לשמנים ואחד</strong> - בכריתות בפרק קמא דקיימא לן זאת תורת היולדת מלמד שמביאה קרבן אחד על ולדות הרבה יכול שתביא על הלידה שלפני מלאות ועל הלידה שלאחר מלאות קרבן אחד ולא יותר תלמוד לומר זאת שאם ילדה לאחר מלאות כגון שטבלה לסוף שבועיים של נקבה ונתעברה והפילה אם תוך מלאות הפילה נפטרת בקרבן אחד ואם לאחר מלאות הפילה כבר נתחייב' בקרבן הראשון קודם לידה שניה ולבסוף מלאות של לידה שניה תביא שתי קרבנות ואם הפילה ליל של כניסת שמונים ואחד שכבר עברה מלאות שלה אבל עדיין אינה ראויה להבאת קרבן שאין קרבן נשחט בלילה:"
+  },
+  "Rashi on Pesachim 3a:1:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 3a:1:2",
+      "Rashi on Pesachim 3a:1:1",
+      "Pesachim 3a:1"
+    ],
+    "generatedAt": "2026-10-21T20:59:25.361Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 3a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בית הלל מחייבי</strong> - שתי קרבנות דלאחר מלאות קרינא ביה ובית שמאי פוטרין אותה בקרבן אחד כדמפרש טעמייהו:"
+  },
+  "Rashi on Pesachim 3a:2:1": {
+    "dependsOn": [
+      "Pesachim 3a:2",
+      "Rashi on Pesachim 3a:2:2"
+    ],
+    "generatedAt": "2026-10-21T21:03:55.416Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 3a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי שנא אור שמונים ואחד מיום שמונים וא'</strong> - הלא אתם מודים לנו שאם לא הפילה הלילה והפילה למחר שחייבת אף כשהפילה אור לשמונים ואחד תתחייב שהרי לכל דבר זמן היום והלילה שוים:"
+  },
+  "Rashi on Pesachim 3a:2:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 3a:2:1",
+      "Mishnah Keritot 1:6",
+      "Rashi on Pesachim 2a:1:1"
+    ],
+    "generatedAt": "2026-10-21T21:06:37.467Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 3a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם שיוה לו לטומאה לא ישוה לו לקרבן</strong> - בתמיה ועוד ראיה אחרת דהואיל ושוה לו לטומאה שעד שקיעת החמה של שמונים דמיה טהורים ואם תראה לאחר שקיעת החמה דמיה טמאין כאילו היא רואה למחר ולמה לא ישוה לו אף לקרבן שכשם שאם תפיל למחר תתחייב כך תתחייב על הוולד של לילו ותשובת בית שמאי במסכת כריתות היא שנויה לא אם אמרתם ביום שמונים ואחד שכן יצתה לשעה הראויה להביא בה קרבן לפיכך נתחייבה בקרבן הראשון ושוב אין לידה השניה נפטרת בו תאמרו במפלת אור לשמונים ואחד שלא יצתה מידי וולד הראשון לשעה הראויה לקרבן והדמים שאתם אומרים אינן מוכיחים שהרי הפילה תוך מלאות דמיה של לידה טמאין ופטורה מן הקרבן:"
+  },
+  "Rashi on Pesachim 3a:3:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 3a:3:2",
+      "Steinsaltz on Pesachim 3a:3:1",
+      "Pesachim 3a:3",
+      "Steinsaltz on Pesachim 3a:3",
+      "Rashi on Pesachim 3a:4:1",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 2a:1:2"
+    ],
+    "generatedAt": "2026-10-21T21:15:44.908Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 3a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אור לשלישי</strong> - לאור כניסתו של שלישי ה\"נ גרסינן אור לשלישי ואשלמים קאי דכתיב בהו ביום זבחכם יאכל וממחרת וצוה לשורפו לבוקרו של שלישי יכול יהא נאכל ליל שלפניו:"
+  },
+  "Rashi on Pesachim 3a:3:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 3a:3:1",
+      "Meir Lublin on Pesachim 3a:2",
+      "Rashi on Pesachim 3a:1:1"
+    ],
+    "generatedAt": "2026-10-21T21:17:47.415Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 3a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זבחים נאכלים ליום אחד</strong> - תודה דכתיב ביום קרבנו יאכל ושלמים נאכלים לשני ימים מה להלן לילה אחר היום דכתיב בגופיה דקרא לא יניח ממנו עד בוקר הא כל הלילה אוכל וכן פסח לא תותירו ממנו עד בוקר אף כאן לילה אחר הימים הכתובים בה:"
+  },
+  "Rashi on Pesachim 3a:4:1": {
+    "dependsOn": [
+      "Pesachim 3a:4",
+      "Rashi on Pesachim 3a:3:1",
+      "Rashi on Pesachim 3a:3:2",
+      "Rashi on Pesachim 3a:5:1"
+    ],
+    "generatedAt": "2026-10-21T21:27:05.281Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 3a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ל וממחרת והנותר עד יום</strong> - בעוד שהוא יום ממחרת אכול ולא משתחשך:"
+  },
+  "Rashi on Pesachim 3a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T21:29:17.734Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 3a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה להלן תיכף לאכילה שריפה</strong> - כשכלה זמן אכילתן מתחיל זמן שריפתו כדכתיב והנותר ממנו עד בקר באש תשרופו:"
+  },
+  "Rashi on Pesachim 3a:5:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 3a:5:1",
+      "Rashi on Pesachim 3a:5:2",
+      "Pesachim 3a:5",
+      "Rashi on Pesachim 3a:1:1",
+      "Rashi on Pesachim 3a:1:2",
+      "Rashi on Pesachim 3a:2:1",
+      "Rashi on Pesachim 3a:2:2",
+      "Rashi on Pesachim 3a:4:1",
+      "Rashi on Pesachim 3a:6:1",
+      "Rashi on Pesachim 2a:1:1"
+    ],
+    "generatedAt": "2026-10-21T21:35:47.462Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 3a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף כאן</strong> - זמן אכילתו כלה ערבית כדאמר וישרף בלילה:"
+  },
+  "Rashi on Pesachim 3a:6:1": {
+    "dependsOn": [
+      "Pesachim 3a:6",
+      "Chokhmat Shlomo on Pesachim 3a:2",
+      "Rashi on Pesachim 3a:4:1",
+      "Rashi on Pesachim 3a:1:1",
+      "Rashi on Pesachim 3a:1:2",
+      "Rashi on Pesachim 3a:2:1",
+      "Rashi on Pesachim 3a:3:1",
+      "Rashi on Pesachim 3a:5:1",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 2a:1:2",
+      "Rashi on Pesachim 2b:2:1"
+    ],
+    "generatedAt": "2026-10-21T21:38:20.687Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 3a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תלמוד לומר</strong> - בצו את אהרן ביום השלישי באש ישרף כאן לא נאמר עד יום אלא ביום משום דהאי קרא לא איירי בזמן אכילה אלא בשריפה להורות שביום הוא נשרף ולא בלילה וקרא דלעיל בקדושים תהיו:"
+  },
+  "Rashi on Pesachim 3a:9:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 3a:9:1"
+    ],
+    "generatedAt": "2026-10-21T21:46:06.899Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 3a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באתריה דרב הונא קרו</strong> - לאורתא נגהי:"
+  },
+  "Tosafot on Pesachim 3a:12:1": {
+    "dependsOn": [
+      "Pesachim 3a:12",
+      "Mishnah Kelim 1:3",
+      "Rashi on Pesachim 3a:12:1",
+      "Rashi on Pesachim 3a:12:2",
+      "Rashi on Pesachim 3a:12:3"
+    ],
+    "generatedAt": "2026-10-21T22:14:59.717Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Pesachim 3a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהרי בזב קראו מרכב וכו'</strong> - מרכב ומושב אין דינו שוה דנוגע במרכב אין טעון כבוס בגדים כדמוכח בתורת כהנים ובריש מסכת כלים והשתא קשה לר\"י היכי קאמר דבאשה קרוי מושב אם ר\"ל אפי' אוכף שיש לו דין מרכב אף באשה שינה הכתוב לקרותו מושב לדבר דרך כבוד דהא לקמן משני משום ביעתותא דגמלא אורחא הוא אלמא לשנות הדבר ממה שהוא אין לכתוב דרך כבוד ונראה לר\"י דה\"פ ובאשה קראו מושב מרבויא דקרא דמושב דהכי איתא בתורת כהנים אשר היא יושבת עליו זה מושב כלי זה מרכב לימדנו הכתוב לספר בלשון נקיה שלא כתבו בהדיא כמו בזב:"
+  },
+  "Tosafot on Pesachim 3a:2:1": {
+    "dependsOn": [
+      "Keritot 8a:3",
+      "Keritot 8a:4",
+      "Keritot 8a:5",
+      "Pesachim 3a:2",
+      "Keritot 7b:15",
+      "Keritot 7b:16",
+      "Keritot 7b:21",
+      "Keritot 7b:22",
+      "Keritot 7b:23",
+      "Keritot 7b:24",
+      "Keritot 7b:25",
+      "Keritot 7b:26",
+      "Rashi on Pesachim 3a:2:1",
+      "Rashi on Pesachim 3a:2:2"
+    ],
+    "generatedAt": "2026-10-21T21:10:21.981Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Pesachim 3a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם שיוה לו לטומאה</strong> - חזרו ב\"ה מזה הטעם מתשובתם של ב\"ש וטעמייהו כדתניא פ\"ק דכריתות <span class=\"parenthesized\">(דף ח.)</span> או לבת לרבות אור לשמונים ואחד:"
+  },
+  "Tosafot on Pesachim 3a:6:1": {
+    "dependsOn": [
+      "Pesachim 3a:6",
+      "Maharsha on Pesachim 3a:1",
+      "Tosafot on Pesachim 3a:2:1"
+    ],
+    "generatedAt": "2026-10-21T21:44:57.248Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Pesachim 3a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תלמוד לומר ביום</strong> - תימה אמאי איצטריך עד יום תיפוק ליה דאינו נאכל אור לשלישי מדאיצטריך ביום דאי ס\"ד דנאכל פשיטא דאינה נשרפת באותו לילה דתיכף לאכילה שריפה ויש לומר דאי לאו עד יום ה\"א נאכל ואיצטריך ביום למעוטי שלא ישרף בלילה של אחרי כן:"
+  }
+}

@@ -1,0 +1,454 @@
+{
+  "Rashi on Pesachim 2b:10:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 2b:10:1",
+      "Rashi on Pesachim 2b:10:2",
+      "Rashi on Pesachim 2b:9:1",
+      "Rashi on Pesachim 2b:9:2",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 2a:1:2"
+    ],
+    "generatedAt": "2026-10-21T20:36:11.854Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמינא לך אנא דרבנן</strong> - היכן הורגלו לעשות כן דנימא דהכא נמי כך גזרו:"
+  },
+  "Rashi on Pesachim 2b:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T20:36:54.698Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואת אמרת לי</strong> - ראיה במילי דאורייתא שגזירת הכתוב כך היא ואין זו מדת חכמים:"
+  },
+  "Rashi on Pesachim 2b:11:1": {
+    "dependsOn": [
+      "Pesachim 2b:11",
+      "Rashi on Pesachim 2b:10:1",
+      "Rashi on Pesachim 2b:10:2",
+      "Rashi on Pesachim 2a:1:1"
+    ],
+    "generatedAt": "2026-10-21T20:40:38.681Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שעות דרבנן</strong> - לבד איסור של תורה שהוא משש שעות ולמעלה כדלקמן <span class=\"parenthesized\">(פסחים ד' יא:)</span> הוסיפו חכמים שתי שעות כדתנן אוכלין כל ארבע ותולין כל חמש ושורפין בתחלת שש הרי לך בשל דבריהם שתי שעות אסורות והארבע ראשונות לא אסרו:"
+  },
+  "Rashi on Pesachim 2b:12:1": {
+    "dependsOn": [
+      "Pesachim 2b:12",
+      "Rashi on Pesachim 2b:12:1"
+    ],
+    "generatedAt": "2026-10-21T20:42:29.938Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואידך</strong> - ההוא לא דמי להכא דהרחקה עבוד רבנן לדאורייתא משום יום המעונן ובני אדם שאינן בקיאין בשעות ויטעו בין שש לשבע אבל באיסור זה כוליה דרבנן אחר שגזרו איסור כל היום גזרו:"
+  },
+  "Rashi on Pesachim 2b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T20:43:51.361Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין משיאין משואות</strong> - אבוקות בראשי הרים היו שלוחי בית דין עושין להודיע שהיום קידשו בית דין את החדש:"
+  },
+  "Rashi on Pesachim 2b:13:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 2b:13:1",
+      "Rashi on Pesachim 2b:13:3"
+    ],
+    "generatedAt": "2026-10-21T20:45:44.058Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא על החדש שנראה בזמנו לקדשו</strong> - ביום שלשים שנראה לקדש דאילו כשהחדש מעובר ועושין ראש חדש ביום שלשים ואחד אין מקדשין אותו שכבר קדשוהו שמים ואשמעינן האי תנא דאחסר עבדינן משואות ואמלא לא עבדינן משואות וכשאין רואין משואות יודעין שהחדש מעובר:"
+  },
+  "Rashi on Pesachim 2b:13:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 2b:13:1",
+      "Rashi on Pesachim 2b:13:2",
+      "Rashi on Pesachim 2b:13:4",
+      "Chokhmat Shlomo on Pesachim 2b:4",
+      "Chidushei Halachot on Pesachim 2b:4"
+    ],
+    "generatedAt": "2026-10-21T20:47:49.399Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2b:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאור עבורו</strong> - ליל שעבר שלשים להודיע שהיום נתקדש <span class=\"parenthesized\">(ליל)</span> שלשים [ואחד] קרי <span class=\"parenthesized\">(אור)</span> עבורו על שם שבו נעשה החדש מעובר כשאין קובעין בו את ראש חדש:"
+  },
+  "Rashi on Pesachim 2b:13:4": {
+    "dependsOn": [
+      "Rashi on Pesachim 2b:13:1",
+      "Rashi on Pesachim 2b:13:2",
+      "Rashi on Pesachim 2b:13:3"
+    ],
+    "generatedAt": "2026-10-21T20:48:59.528Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2b:13:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלמא אור אורתא הוא</strong> - דהא ביום אין משואות של אור נראין מרחוק:"
+  },
+  "Rashi on Pesachim 2b:14:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 2b:14:2",
+      "Rashi on Pesachim 2b:13:1",
+      "Rashi on Pesachim 2b:13:2",
+      "Rashi on Pesachim 2b:13:3",
+      "Rashi on Pesachim 2b:13:4",
+      "Steinsaltz on Pesachim 2b:14",
+      "Zevachim 19b:16",
+      "Rashi on Zevachim 19b:16:2",
+      "Rashi on Pesachim 2b:10:1",
+      "Rashi on Pesachim 2b:10:2"
+    ],
+    "generatedAt": "2026-10-21T20:53:04.703Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עומד ומקריב כל הלילה לאורה טעון קידוש ידים ורגלים</strong> - דקסבר רבי לינה פוסלת בקידוש ידים ורגלים וטעמא מפרש בזבחים:"
+  },
+  "Rashi on Pesachim 2b:14:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 2b:14:1"
+    ],
+    "generatedAt": "2026-10-21T20:54:18.866Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אורה שאני</strong> - היכא דתני אורה לא פליג רב יהודה דהוא לשון יום:"
+  },
+  "Rashi on Pesachim 2b:1:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 2b:1:1"
+    ],
+    "generatedAt": "2026-10-21T19:44:56.922Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדקאמר ובלילה יהי כגנב</strong> - מכלל דאור דרישיה דקרא יממא הוא והכי קאמר ביום כשעוברי דרכים הולכים עומד רוצח באם הדרכים והורגן ונוטל את ממונם ובלילה הוא נעשה כגנב לחתור בתים ולגנוב:"
+  },
+  "Rashi on Pesachim 2b:1:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 2b:1:1"
+    ],
+    "generatedAt": "2026-10-21T19:46:48.873Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכי קאמר</strong> - מה שנתנה לך תורה רשות על הבא במחתרת להורגו כדכתיב <span class=\"parenthesized\">(שמות כ״ב:א׳-ב׳)</span> אם במחתרת ימצא הגנב והוכה ומת אין לו דמים אם ברור לך הדבר כאור שהוא בא על עסקי נפשות דהיינו כל אדם חוץ מאב על הבן וכיוצא בו שמכיר בו שהוא אוהבו מאד אבל שאר כל אדם אם היה בעל הממון עומד כנגדו להציל ממנו ממונו זה עומד עליו והורגו רוצח הוא וניתן רשות לכל הקודם להציל את בעל הממון בנפשו של בא במחתרת ובלילה אם מספקא לך כלילה כגון שאדם אוהבך שהוא אביך ורחמיו עליך ואם היית עומד כנגדו להציל ממונך אינו הורגך יהי בעיניך כגנב ולא ניתן להורגו והכי אמרינן בסנהדרין <span class=\"parenthesized\">(דף עב:)</span> דאב על הבן אינו נהרג במחתרת:"
+  },
+  "Rashi on Pesachim 2b:2:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 2b:2:1",
+      "Rashi on Pesachim 2b:2:2",
+      "Rashi on Pesachim 2b:2:3",
+      "Rashi on Pesachim 2b:2:4"
+    ],
+    "generatedAt": "2026-10-21T19:50:53.604Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כוכבי נשפו</strong> - כוכבי לילו:"
+  },
+  "Rashi on Pesachim 2b:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T19:52:02.586Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יקו לאור</strong> - יצפה ליום:"
+  },
+  "Rashi on Pesachim 2b:2:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 2b:2:1",
+      "Rashi on Pesachim 2b:2:2",
+      "Rashi on Pesachim 2b:2:3",
+      "Rashi on Pesachim 2b:2:4",
+      "Steinsaltz on Pesachim 2b:2"
+    ],
+    "generatedAt": "2026-10-21T19:54:18.198Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עפעפי</strong> - זיהור:"
+  },
+  "Rashi on Pesachim 2b:2:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T19:55:24.802Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2b:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לנהורא</strong> - לדבר המאיר ולא שיהיה שם היום אור ולא קאמר יקו ליום אלא יקו שיאיר ואין:"
+  },
+  "Rashi on Pesachim 2b:3:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 2b:3:2",
+      "Rashi on Pesachim 2b:3:1",
+      "Chokhmat Shlomo on Pesachim 2b:2",
+      "Torah Temimah on Psalms 139:11:1",
+      "Steinsaltz on Pesachim 2b:3",
+      "Rashi on Pesachim 2b:1:1",
+      "Rashi on Pesachim 2b:2:1"
+    ],
+    "generatedAt": "2026-10-21T19:59:57.769Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואומר אך חושך ישופני</strong> - ואומר סבור הייתי בעוניי כשהייתי נרדף אך בחשך זה אמות והוא ישופני והוא יחשיך תמיד עלי לשון נשף ולילה וחשך שהייתי שרוי בו נעשה אור בעדני אצלי וגבי לילה שייך למימר יום אלמא הכי קאמר דוד הלילה נעשה לי יום:"
+  },
+  "Rashi on Pesachim 2b:3:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 2b:3:1",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 2b:2:1"
+    ],
+    "generatedAt": "2026-10-21T20:04:02.473Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אני אמרתי</strong> - מפני חטאי שאף מן העולם הבא אטרד ועכשיו שמחל לי על אותו עון אף מן העולם הזה שהייתי שרוי בו בחשך ובחרפה האיר בעדני שהודיע הקב\"ה לשונאי דוד בימי שלמה שמחל לדוד כשבקש להכניס ארון לבית קדשי הקדשים ודבקו שערים זה בזה במועד קטן <span class=\"parenthesized\">(דף ט.)</span>:"
+  },
+  "Rashi on Pesachim 2b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T20:04:35.819Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בודקין</strong> - חמץ:"
+  },
+  "Rashi on Pesachim 2b:4:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 2b:4:1",
+      "Rashi on Pesachim 2b:4:2",
+      "Rashi on Pesachim 2b:2:1",
+      "Rashi on Pesachim 2b:2:2",
+      "Rashi on Pesachim 2b:2:3",
+      "Rashi on Pesachim 2b:2:4",
+      "Tosafot on Pesachim 2a:1:1",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 2a:1:2",
+      "Rashi on Pesachim 2a:1:3"
+    ],
+    "generatedAt": "2026-10-21T20:07:23.930Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדקאמר ובי\"ד שחרית מכלל דאור אורתא הוא</strong> - וטעמא דר' יהודה מפרש לקמן בפירקין:"
+  },
+  "Rashi on Pesachim 2b:5:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 2b:5:1"
+    ],
+    "generatedAt": "2026-10-21T20:09:45.609Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסור בעשיית מלאכה</strong> - במקום שנהגו בו לנהוג איסור דאמרינן לקמן <span class=\"parenthesized\">(פסחים דף נ.)</span> מקום שנהגו שלא לעשות מלאכה אין עושין:"
+  },
+  "Rashi on Pesachim 2b:5:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 2b:5:1",
+      "Steinsaltz on Pesachim 2b:5",
+      "Rashi on Pesachim 2b:5:2"
+    ],
+    "generatedAt": "2026-10-21T20:11:15.930Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משעת האור</strong> - אבל קודם לכן אפילו נהגו בטלה דעתן:"
+  },
+  "Rashi on Pesachim 2b:6:1": {
+    "dependsOn": [
+      "Pesachim 11b:1",
+      "Pesachim 11b:2",
+      "Pesachim 11b:3",
+      "Pesachim 11b:7",
+      "Steinsaltz on Pesachim 2b:6"
+    ],
+    "generatedAt": "2026-10-21T20:26:11.355Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מותר באכילת חמץ</strong> - עד שש שעות כדלקמן בפרקין <span class=\"parenthesized\">(פסחים ד' יא:)</span>:"
+  },
+  "Rashi on Pesachim 2b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T20:27:10.520Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אורתא הוא</strong> - משחשיכה ושקעה חמה של שלשה עשר:"
+  },
+  "Rashi on Pesachim 2b:8:1": {
+    "dependsOn": [
+      "Pesachim 2b:8",
+      "Rashi on Pesachim 2b:8:1",
+      "Rashi on Pesachim 2b:5:1",
+      "Rashi on Pesachim 2b:6:1",
+      "Rashi on Pesachim 2b:7:1"
+    ],
+    "generatedAt": "2026-10-21T20:28:35.123Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נימא איהו לנפשיה</strong> - היכן מצינו שהיום אסור והלילה מותר:"
+  },
+  "Rashi on Pesachim 2b:9:1": {
+    "dependsOn": [
+      "Pesachim 2b:9",
+      "Rashi on Pesachim 2b:9:2",
+      "Rashi on Pesachim 2b:8:1"
+    ],
+    "generatedAt": "2026-10-21T20:32:53.806Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכי קאמר ליה</strong> - הך איסורא דרבנן היא ולאו דאורייתא ובשלמא לדידי דאמינא משעת עמוד השחר אשכחן בעלמא במידי דרבנן דהלילה מותר והיום אסור:"
+  },
+  "Rashi on Pesachim 2b:9:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 2b:9:1",
+      "Steinsaltz on Pesachim 2b:9",
+      "Pesachim 2b:10"
+    ],
+    "generatedAt": "2026-10-21T20:34:09.549Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דפלגי ביה רבנן</strong> - שנתנו חילוק בשיעורים זה לאיסור וזה להיתר:"
+  },
+  "Tosafot on Pesachim 2b:1:1": {
+    "dependsOn": [
+      "Tosafot on Pesachim 2b:1:1",
+      "Sanhedrin 72a:15",
+      "Sanhedrin 72a:16",
+      "Sanhedrin 72b:1"
+    ],
+    "generatedAt": "2026-10-21T19:49:57.187Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Pesachim 2b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי פשיטא לך דאנפשות קאתי</strong> - אומר ר\"י וריב\"א דהאי קרא באב על הבן מיירי דסתם אב מרחם על הבן ולא יהרגנו אם יעמוד נגדו להציל ממונו ולכך לא ניתן להצילו בנפשו אלא כשיודע בברור שלהורגו בא כדמוכח בפרק בן סורר <span class=\"parenthesized\">(סנהדרין דף עב: ושם)</span> דמוקי הברייתא דתניא אם זרחה עליו השמש וכי עליו בלבד זרחה אלא אם ברור לך כשמש שאין לו שלום עמך הרגהו ואם לאו אל תהרגהו באב על הבן וההיא דתניא אם ברור לך שיש לו שלום עמך אל תהרגהו מוקי בבן על האב:"
+  },
+  "Tosafot on Pesachim 2b:5:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 2b:5:1",
+      "Rashi on Pesachim 2b:5:2",
+      "Pesachim 55a:7",
+      "Pesachim 55a:8",
+      "Pesachim 2b:5",
+      "Chokhmat Shlomo on Pesachim 2b:5",
+      "Chidushei Halachot on Pesachim 2b:2",
+      "Tosafot on Pesachim 55a:7:2",
+      "Tosafot on Pesachim 2a:1:1"
+    ],
+    "generatedAt": "2026-10-21T20:16:06.464Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Pesachim 2b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאימתי י\"ד אסור בעשיית מלאכה</strong> - פירש רש\"י אסור בעשיית מלאכה במקום שנהגו ואין נראה לר\"י דבפ' מקום שנהגו <span class=\"parenthesized\">(פסחים דף נה.)</span> מוכח בהדיא דרבי יהודה אית ליה איסורא ולא מנהגא ועוד תני תנא איסורא ואת אמרת מנהגא ועוד ניחזי היכי נהוג לכך נראה דבאיסור ודאי פליגי ובגליל כי היכי דפליגי התם במתני' ב\"ש וב\"ה:"
+  },
+  "Tosafot on Pesachim 2b:5:2": {
+    "dependsOn": [
+      "Tosafot on Pesachim 2b:5:1",
+      "Pesachim 2b:5",
+      "Pesachim 2b:7",
+      "Pesachim 2b:9",
+      "Maharsha on Pesachim 2b:3",
+      "Rashi on Pesachim 2b:5:1",
+      "Rashi on Pesachim 2b:5:2",
+      "Bava Metzia 83b:1",
+      "Tosafot on Bava Metzia 83b:1:1",
+      "Tosafot on Pesachim 55a:7:1",
+      "Pesachim 55a:5",
+      "Pesachim 55a:6",
+      "Pesachim 55a:7",
+      "Tosefta Pesachim (Lieberman) 3:18",
+      "Tosefta Pesachim 3:13",
+      "Ritva on Pesachim 2b:1",
+      "Chidushei Halachot on Pesachim 2b:3"
+    ],
+    "generatedAt": "2026-10-21T20:23:40.759Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Pesachim 2b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי אליעזר ב\"י אומר משעת האור</strong> - למאי דמסקינן אור ממש נקט ר' אליעזר בן יעקב שיעור למילתיה בתחלת היום ור' יהודה נקט הנץ החמה משעת כניסת פועלים למלאכה שהוא אחר זריחת השמש כדאמר בהשוכר את הפועלים <span class=\"parenthesized\">(דף פג: ושם)</span> פועל בכניסתו משלו ביציאתו משל בעה\"ב פי' ביציאתו מביתו למלאכה כדכתיב <span class=\"parenthesized\">(תהילים ק״ד:כ״ב)</span> תזרח השמש יאספון וגו' יצא אדם לפעלו ולא הוי ר\"א בן יעקב לא כב\"ש ולא כב\"ה דבית שמאי אוסרין הלילה וב\"ה מתירין עד הנץ ולמאי דס\"ד דאור אורתא כב\"ש יאמר רבי אליעזר בן יעקב לא נחלקו ב\"ש וב\"ה בדבר הזה:"
+  },
+  "Tosafot on Pesachim 2b:8:1": {
+    "dependsOn": [
+      "Pesachim 2b:8",
+      "Tosafot on Pesachim 2b:5:1",
+      "Tosafot on Pesachim 2b:5:2"
+    ],
+    "generatedAt": "2026-10-21T20:30:55.935Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Pesachim 2b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היכן מצינו יום שמקצתו מות' ומקצתו אסו'</strong> - פי' היכא דליכא סברא כי הכא וכן חמץ דאקשי ליה מיניה אבל היכא דאיכא סברא כגון לא יאכל אדם מן המנחה ולמעלה משום תיאבון וכיוצא בו לא מיירי:"
+  }
+}
