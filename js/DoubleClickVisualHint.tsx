@@ -11,8 +11,8 @@ export type DoubleClickHintSurfaceType =
 
 export const ONE_MONTH_IN_MILLISECONDS = 30 * 24 * 60 * 60 * 1000;
 export const VISUAL_HINT_INITIAL_DELAY_MILLISECONDS = 1000;
-export const VISUAL_HINT_PULSE_DURATION_MILLISECONDS = 1400;
-export const VISUAL_HINT_PAUSE_DURATION_MILLISECONDS = 600;
+export const VISUAL_HINT_PULSE_DURATION_MILLISECONDS = 650;
+export const VISUAL_HINT_PAUSE_DURATION_MILLISECONDS = 2200;
 export const VISUAL_HINT_PULSE_CYCLE_COUNT = 3;
 
 function getLastDoubleTapStorageKey(surfaceType: string): string {

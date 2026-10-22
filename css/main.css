@@ -969,7 +969,6 @@ h2, .title, .titleHebrew {
     justify-content: center;
     user-select: none;
     opacity: 0;
-    transition: opacity 0.25s ease-in-out;
 }
 
 .double-click-hint-overlay.is-pulsating {
@@ -993,7 +992,7 @@ h2, .title, .titleHebrew {
 }
 
 .double-click-hint-overlay.is-pulsating .double-click-hint-dot {
-    animation: double-tap-dot-pulse 1.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation: double-tap-dot-pulse 0.65s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 .double-click-hint-core {
@@ -1015,67 +1014,75 @@ h2, .title, .titleHebrew {
 }
 
 .double-click-hint-overlay.is-pulsating .double-click-hint-ripple {
-    animation: double-tap-ripple-expand 1.4s cubic-bezier(0.2, 0.8, 0.4, 1) forwards;
+    animation: double-tap-ripple-expand 0.65s cubic-bezier(0.2, 0.8, 0.4, 1) forwards;
 }
 
 @keyframes double-tap-dot-pulse {
     0% {
-        transform: scale(0.85);
+        transform: scale(0.6);
         opacity: 0;
     }
-    15% {
+    10% {
         transform: scale(1);
-        opacity: 0.95;
+        opacity: 1;
+    }
+    20% {
+        transform: scale(0.78);
+        opacity: 1;
     }
     30% {
-        transform: scale(0.82);
+        transform: scale(1.05);
         opacity: 1;
     }
-    42% {
-        transform: scale(1.06);
-        opacity: 0.95;
-    }
-    55% {
-        transform: scale(0.82);
+    43% {
+        transform: scale(0.78);
         opacity: 1;
     }
-    68% {
-        transform: scale(1.02);
-        opacity: 0.95;
+    53% {
+        transform: scale(1.03);
+        opacity: 1;
     }
-    82% {
+    70% {
         transform: scale(1);
-        opacity: 0.9;
+        opacity: 0.95;
     }
     100% {
-        transform: scale(0.9);
+        transform: scale(0.85);
         opacity: 0;
     }
 }
 
 @keyframes double-tap-ripple-expand {
     0% {
-        transform: scale(1);
+        transform: scale(0.85);
         opacity: 0;
     }
-    28% {
-        transform: scale(1);
-        opacity: 0.7;
+    18% {
+        transform: scale(0.85);
+        opacity: 0;
     }
-    45% {
+    20% {
+        transform: scale(0.85);
+        opacity: 0.85;
+    }
+    36% {
         transform: scale(1.85);
         opacity: 0;
     }
-    53% {
-        transform: scale(1);
-        opacity: 0.7;
+    41% {
+        transform: scale(0.85);
+        opacity: 0;
     }
-    70% {
+    43% {
+        transform: scale(0.85);
+        opacity: 0.85;
+    }
+    59% {
         transform: scale(1.85);
         opacity: 0;
     }
     100% {
-        transform: scale(1);
+        transform: scale(1.85);
         opacity: 0;
     }
 }
