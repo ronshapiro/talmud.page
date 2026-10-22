@@ -11,8 +11,8 @@ export type DoubleClickHintSurfaceType =
 
 export const ONE_MONTH_IN_MILLISECONDS = 30 * 24 * 60 * 60 * 1000;
 export const VISUAL_HINT_INITIAL_DELAY_MILLISECONDS = 1000;
-export const VISUAL_HINT_PULSE_DURATION_MILLISECONDS = 650;
-export const VISUAL_HINT_PAUSE_DURATION_MILLISECONDS = 2200;
+export const VISUAL_HINT_PULSE_DURATION_MILLISECONDS = 950;
+export const VISUAL_HINT_PAUSE_DURATION_MILLISECONDS = 2000;
 export const VISUAL_HINT_PULSE_CYCLE_COUNT = 3;
 
 function getLastDoubleTapStorageKey(surfaceType: string): string {
@@ -235,7 +235,8 @@ export function DoubleClickVisualHint({
     >
       <div key={currentCycle} className="double-click-hint-dot">
         <span className="double-click-hint-core" />
-        <span className="double-click-hint-ripple" />
+        <span className="double-click-hint-ripple ripple-first" />
+        <span className="double-click-hint-ripple ripple-second" />
       </div>
     </div>
   );

@@ -992,7 +992,7 @@ h2, .title, .titleHebrew {
 }
 
 .double-click-hint-overlay.is-pulsating .double-click-hint-dot {
-    animation: double-tap-dot-pulse 0.65s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation: double-tap-dot-pulse 0.95s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 .double-click-hint-core {
@@ -1013,8 +1013,13 @@ h2, .title, .titleHebrew {
     opacity: 0;
 }
 
-.double-click-hint-overlay.is-pulsating .double-click-hint-ripple {
-    animation: double-tap-ripple-expand 0.65s cubic-bezier(0.2, 0.8, 0.4, 1) forwards;
+.double-click-hint-overlay.is-pulsating .double-click-hint-ripple.ripple-first,
+.double-click-hint-overlay.is-pulsating .double-click-hint-ripple:not(.ripple-second) {
+    animation: double-tap-ripple-first 0.95s cubic-bezier(0.2, 0.8, 0.4, 1) forwards;
+}
+
+.double-click-hint-overlay.is-pulsating .double-click-hint-ripple.ripple-second {
+    animation: double-tap-ripple-second 0.95s cubic-bezier(0.2, 0.8, 0.4, 1) forwards;
 }
 
 @keyframes double-tap-dot-pulse {
@@ -1026,20 +1031,24 @@ h2, .title, .titleHebrew {
         transform: scale(1);
         opacity: 1;
     }
-    20% {
-        transform: scale(0.78);
+    16% {
+        transform: scale(0.76);
         opacity: 1;
     }
-    30% {
+    28% {
         transform: scale(1.05);
         opacity: 1;
     }
-    43% {
-        transform: scale(0.78);
+    38% {
+        transform: scale(1);
         opacity: 1;
     }
-    53% {
-        transform: scale(1.03);
+    48% {
+        transform: scale(0.76);
+        opacity: 1;
+    }
+    60% {
+        transform: scale(1.05);
         opacity: 1;
     }
     70% {
@@ -1052,37 +1061,48 @@ h2, .title, .titleHebrew {
     }
 }
 
-@keyframes double-tap-ripple-expand {
+@keyframes double-tap-ripple-first {
     0% {
         transform: scale(0.85);
         opacity: 0;
     }
-    18% {
+    15% {
         transform: scale(0.85);
         opacity: 0;
     }
-    20% {
+    16% {
         transform: scale(0.85);
         opacity: 0.85;
     }
-    36% {
-        transform: scale(1.85);
-        opacity: 0;
-    }
-    41% {
-        transform: scale(0.85);
-        opacity: 0;
-    }
-    43% {
-        transform: scale(0.85);
-        opacity: 0.85;
-    }
-    59% {
-        transform: scale(1.85);
+    42% {
+        transform: scale(2.2);
         opacity: 0;
     }
     100% {
-        transform: scale(1.85);
+        transform: scale(2.2);
+        opacity: 0;
+    }
+}
+
+@keyframes double-tap-ripple-second {
+    0% {
+        transform: scale(0.85);
+        opacity: 0;
+    }
+    47% {
+        transform: scale(0.85);
+        opacity: 0;
+    }
+    48% {
+        transform: scale(0.85);
+        opacity: 0.85;
+    }
+    74% {
+        transform: scale(2.2);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(2.2);
         opacity: 0;
     }
 }
