@@ -1,0 +1,69 @@
+{
+  "Rashi on Pesachim 3b:1:1": {
+    "dependsOn": [
+      "Pesachim 3b:1"
+    ],
+    "generatedAt": "2026-10-21T22:23:16.263Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 3b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום בניו</strong> - שהן זכרים כתב לשון רכיבה:"
+  },
+  "Rashi on Pesachim 3b:3:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 3b:3:1",
+      "Rashi on Pesachim 3b:4:1",
+      "Rashi on Pesachim 3b:4:2"
+    ],
+    "generatedAt": "2026-10-21T22:25:48.330Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 3b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכי הדדי נינהו</strong> - שאין אורך בלשון צח מן המגונה משתעי בלשון כבוד:"
+  },
+  "Rashi on Pesachim 3b:4:1": {
+    "dependsOn": [
+      "Pesachim 3b:4",
+      "Rashi on Pesachim 3b:3:1",
+      "Rashi on Pesachim 3b:4:2",
+      "Maharsha on Pesachim 3b:1"
+    ],
+    "generatedAt": "2026-10-21T22:28:02.662Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 3b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכל היכא כו'</strong> - והני דלעיל עיקם ללמדך שצריך לחזר אחר לשון נקי ובשאר מקומות כתיב לשון מגונה וקצר ללמדך שישנה אדם לתלמידו לשון קצרה לפי שמתקיימת גירסא שלה יותר מן הארוכה:"
+  },
+  "Rashi on Pesachim 3b:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T22:30:56.843Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 3b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רכבת כתיב</strong> - ואע\"ג דמצי למיכתב נמי ישבת חסר מיהו כל חסירות שבתורה לדרוש הן באין וכאן למדך בחסרון זה שתתפוס לשון קצרה ואפילו הוא מגונה שהרי כאן תפס לשון מגונה וקצר:"
+  },
+  "Tosafot on Pesachim 3b:4:1": {
+    "dependsOn": [
+      "Maharsha on Pesachim 3b:2",
+      "Rashi on Pesachim 3b:4:1",
+      "Rashi on Pesachim 3b:4:2",
+      "Tosafot on Pesachim 3b:6:1",
+      "Tosafot on Pesachim 3b:7:1"
+    ],
+    "generatedAt": "2026-10-21T22:33:37.476Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Pesachim 3b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רכבת כתיב</strong> - וא\"ת לכתוב נמי ישבת ואומר ר\"י דלא מצי למיכתב ישבת דכל היכא דכתב ישב בלא וי\"ו אתא לדרשה כדדרשינן ולוט ישב בשער סדום אותו היום מינוהו שופט <span class=\"parenthesized\">(בראשית רבה פרשה נ)</span>:"
+  }
+}
