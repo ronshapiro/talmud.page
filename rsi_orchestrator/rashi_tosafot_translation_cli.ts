@@ -79,6 +79,11 @@ async function main(): Promise<void> {
         default: 60,
         describe: "interval in minutes to wait before re-checking quota when exhausted (default: 60)",
       },
+      backfill: {
+        type: "boolean",
+        default: false,
+        describe: "re-generate translations for candidates that only have v1 generation records",
+      },
     })
     .parseSync();
 
@@ -173,7 +178,7 @@ async function main(): Promise<void> {
   const performCommitAndPush = async () => {
     console.log("\nCommitting and pushing pending candidates...");
     await commitAndPushPendingCandidates({
-      task: "rashi_tosafot_translation",
+      task: TASK_TYPE,
       backend: effectiveBackend,
       message: `New pending translation candidates (${scopeLabel})`,
     }, makeRealCommitPendingDeps({debug: FLAGS.debug}));
@@ -205,7 +210,8 @@ async function main(): Promise<void> {
     `[Signal] Process PID: ${process.pid}. Send SIGINT, SIGTERM, SIGUSR1, or SIGUSR2 to stop agents and create PR.`);
 
   const sharedDeps = {
-    isFresh: isFreshTranslation,
+    isFresh: (candidate: TranslationCandidate) => isFreshTranslation(
+      candidate, {backfill: FLAGS.backfill}),
     generate: (candidate: TranslationCandidate) => {
       if (FLAGS.debug) {
         console.log(`\n[Candidate] ${candidate.ref}`);
@@ -237,7 +243,8 @@ async function main(): Promise<void> {
     // already-fresh candidates at the start of the page silently does nothing (found the hard
     // way: a real --limit 1 run picked an already-generated candidate, skipped it, and exited
     // with zero output and zero work done).
-    candidates = candidates.filter(candidate => !isFreshTranslation(candidate));
+    candidates = candidates.filter(candidate => !isFreshTranslation(
+      candidate, {backfill: FLAGS.backfill}));
     const sliced = FLAGS.limit !== undefined ? candidates.slice(0, FLAGS.limit) : candidates;
     if (FLAGS.debug) {
       console.log(

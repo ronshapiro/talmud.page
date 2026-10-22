@@ -23,6 +23,7 @@ export interface GenerationRecord {
   // sugya depends on every ref in that sugya, not just the one it's attached to).
   dependsOn: string[];
   confidence?: number;
+  taskVersion?: string;
 }
 
 export type PageGenerationRecords = Record<string, GenerationRecord>; // keyed by ref

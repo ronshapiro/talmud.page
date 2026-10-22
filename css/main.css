@@ -180,11 +180,13 @@ items. */
 }
 
 .commentary_header.has-nested-commentaries::after,
-.steinsaltz-inline-plus {
+.steinsaltz-inline-plus,
+.explanation-inline-plus {
     font-size: smaller;
 }
 
-.steinsaltz-inline-indicators {
+.steinsaltz-inline-indicators,
+.explanation-inline-indicators {
     user-select: none;
     margin-inline-start: 4px;
     display: inline-flex;
@@ -193,7 +195,8 @@ items. */
     cursor: pointer;
 }
 
-.steinsaltz-inline-plus {
+.steinsaltz-inline-plus,
+.explanation-inline-plus {
     margin-inline-end: 2px;
 }
 

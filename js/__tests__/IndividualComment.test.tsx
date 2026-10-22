@@ -5,6 +5,8 @@ import {TestContext} from "./testing/configuration";
 import {
   attributes,
   classesOf,
+  click,
+  doubleClick,
   mount,
   query,
   queryAll,
@@ -500,5 +502,75 @@ describe("duplicate reporting", () => {
     const root = renderComment({he: "עברית", duplicateRefs: []});
 
     expect(queryAll(root, "button")).toHaveLength(0);
+  });
+});
+
+describe("Rashi and Tosafot Hebrew formatting and explanation synthetic comments", () => {
+  const commentWithExplanation = {
+    ref: "Rashi on Berakhot 2a:1:1",
+    he: '<b>מתני׳</b>: <abbr title="עשרים ואחת">כ״א</abbr> תקיעות, '
+      + '<span class="explanation">הגמרא</span> מפרש להו.',
+    en: "twenty-one blasts, the Gemara explains them.",
+  };
+
+  test("by default, explanation is omitted from the main text and indicator is shown", () => {
+    const root = renderComment(commentWithExplanation);
+    const mainHebrew = query(root, ".table-row:not(.synthetic-comment) .table-cell.hebrew");
+    expect(mainHebrew.textContent).not.toContain("הגמרא");
+    expect(mainHebrew.textContent).toContain("כ״א");
+
+    const indicator = query(root, ".explanation-inline-indicators");
+    expect(indicator).toBeTruthy();
+    expect(query(indicator, ".explanation-inline-plus")?.textContent).toBe("+");
+    expect(queryAll(root, ".synthetic-comment")).toHaveLength(0);
+  });
+
+  test("double-clicking the Hebrew cell opens the synthetic explanation comment row", () => {
+    const root = renderComment(commentWithExplanation);
+    const mainHebrew = query(root, ".table-row:not(.synthetic-comment) .table-cell.hebrew");
+
+    doubleClick(mainHebrew);
+
+    const syntheticRow = query(root, ".synthetic-comment");
+    expect(syntheticRow).toBeTruthy();
+    expect(syntheticRow.textContent).toContain("הגמרא");
+    expect(queryOrNull(root, ".explanation-inline-indicators")).toBeNull();
+
+    // Double-clicking again closes it
+    doubleClick(query(root, ".table-row:not(.synthetic-comment) .table-cell.hebrew"));
+    expect(queryAll(root, ".synthetic-comment")).toHaveLength(0);
+    expect(query(root, ".explanation-inline-indicators")).toBeTruthy();
+  });
+
+  test("clicking the explanation indicator opens the synthetic explanation comment", () => {
+    const root = renderComment(commentWithExplanation);
+    const indicator = query(root, ".explanation-inline-indicators");
+
+    click(indicator);
+
+    const syntheticRow = query(root, ".synthetic-comment");
+    expect(syntheticRow).toBeTruthy();
+    expect(syntheticRow.textContent).toContain("הגמרא");
+  });
+
+  test("punctuated-expanded preference expands abbreviations in the main cell", () => {
+    localStorage.rashiTosafotHebrew = "punctuated-expanded";
+    const root = renderComment(commentWithExplanation);
+    const mainHebrew = query(root, ".table-row:not(.synthetic-comment) .table-cell.hebrew");
+
+    expect(mainHebrew.textContent).toContain("עשרים ואחת");
+    expect(mainHebrew.textContent).not.toContain("הגמרא");
+  });
+
+  test("as-is preference displays originalHebrew when present", () => {
+    localStorage.rashiTosafotHebrew = "as-is";
+    const originalVilna = "מתני' כ\"א תקיעות מפרש להו";
+    const root = renderComment({
+      ...commentWithExplanation,
+      originalHebrew: originalVilna,
+    });
+    const mainHebrew = query(root, ".table-row:not(.synthetic-comment) .table-cell.hebrew");
+
+    expect(mainHebrew.textContent).toContain(originalVilna);
   });
 });

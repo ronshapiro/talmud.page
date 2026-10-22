@@ -1,4 +1,5 @@
 import * as contextUsageLog from "../precomputed/rsi_state/context_usage_log";
+import * as generationRecordModule from "../precomputed/rsi_state/generation_record";
 import * as modelRouting from "../precomputed/rsi_state/model_routing";
 import * as pageSkeleton from "../precomputed/rsi_state/page_skeleton";
 import {Edit} from "../precomputed/ai_edits";
@@ -16,6 +17,10 @@ import {
   GeneratedEdit,
   generateViaAgent,
   generateWithSelfCritique,
+  isFreshTranslation,
+  ORIGINAL_TASK_TYPE,
+  TASK_TYPE,
+  recordGenerationForCandidate,
   compareAmudim,
   filterSectionsFromStartPage,
   MAX_GENERATION_ATTEMPTS,
@@ -1079,5 +1084,89 @@ describe("base64 image decoding, placeholders, and restoration", () => {
       recordContextUsageSpy.mockRestore();
       getAgentRunnerSpy.mockRestore();
     }
+  });
+
+  describe("isFreshTranslation and task versioning", () => {
+    test("TASK_TYPE is v2 while preserving ORIGINAL_TASK_TYPE", () => {
+      expect(TASK_TYPE).toBe("rashi_tosafot_translation_v2");
+      expect(ORIGINAL_TASK_TYPE).toBe("rashi_tosafot_translation");
+    });
+
+    test("recognizes freshness from v2 record", () => {
+      const readSpy = jest.spyOn(generationRecordModule, "readGenerationRecord")
+        .mockImplementation((taskType: string) => {
+          if (taskType === TASK_TYPE) {
+            return {
+              sourceRefs: ["Rashi on Zevachim 2a:1:1"],
+              sourceText: "מקור",
+              model: "claude-sonnet-5",
+              promptVersion: "v2",
+              taskVersion: "v2",
+              generatedAt: "2026-10-22T00:00:00.000Z",
+              dependsOn: [],
+            };
+          }
+          return undefined;
+        });
+
+      try {
+        const testCandidate = candidate({hebrewSource: "מקור"});
+        expect(isFreshTranslation(testCandidate)).toBe(true);
+        expect(isFreshTranslation(testCandidate, {backfill: true})).toBe(true);
+      } finally {
+        readSpy.mockRestore();
+      }
+    });
+
+    test("recognizes freshness from v1 record on normal runs, but flags stale on backfill", () => {
+      const readSpy = jest.spyOn(generationRecordModule, "readGenerationRecord")
+        .mockImplementation((taskType: string) => {
+          if (taskType === ORIGINAL_TASK_TYPE) {
+            return {
+              sourceRefs: ["Rashi on Zevachim 2a:1:1"],
+              sourceText: "מקור",
+              model: "claude-sonnet-5",
+              promptVersion: "v2",
+              generatedAt: "2026-09-01T00:00:00.000Z",
+              dependsOn: [],
+            };
+          }
+          return undefined;
+        });
+
+      try {
+        const testCandidate = candidate({hebrewSource: "מקור"});
+        expect(isFreshTranslation(testCandidate)).toBe(true);
+        expect(isFreshTranslation(testCandidate, {backfill: true})).toBe(false);
+      } finally {
+        readSpy.mockRestore();
+      }
+    });
+
+    test("recordGenerationForCandidate records taskVersion v2 under TASK_TYPE", () => {
+      const upsertSpy = jest.spyOn(generationRecordModule, "upsertGenerationRecord")
+        .mockImplementation(() => {});
+
+      try {
+        const testCandidate = candidate({hebrewSource: "מקור"});
+        const generatedEdit: GeneratedEdit = {
+          edit: {hebrew: "מקור.", english: "source"},
+          model: "claude-sonnet-5",
+          costUsd: 0.015,
+          contextRefsUsed: ["Zevachim 2a:1"],
+        };
+        recordGenerationForCandidate(testCandidate, generatedEdit);
+
+        expect(upsertSpy).toHaveBeenCalledTimes(1);
+        const [taskType, page, ref, record] = upsertSpy.mock.calls[0];
+        expect(taskType).toBe("rashi_tosafot_translation_v2");
+        expect(page).toBe(testCandidate.page);
+        expect(ref).toBe(testCandidate.ref);
+        expect(record.taskVersion).toBe("v2");
+        expect(record.promptVersion).toBe("v2");
+      } finally {
+        upsertSpy.mockRestore();
+      }
+    });
   });
 });

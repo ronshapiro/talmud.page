@@ -9,7 +9,13 @@ import {postCorrection} from "./corrections";
 import {useHtmlRef} from "./hooks";
 import {flatten} from "../sefariaTextType";
 import componentHandler from "./componentHandler";
-import {hideGemaraTranslationByDefaultPreference} from "./settings";
+import {onClickKeyListener} from "./key_clicks";
+import {
+  hideGemaraTranslationByDefaultPreference,
+  isSiteLanguageHebrew,
+  rashiTosafotHebrewOption,
+} from "./settings";
+import {formatRashiTosafotHebrew} from "./rashi_tosafot_formatting";
 import {RsiReviewControls} from "./RsiReviewControls";
 
 const {
@@ -41,6 +47,10 @@ function InternalTableRow({
   const [englishSteinsaltzWithHebrew, setEnglishSteinsaltzWithHebrew] = useState(false);
   const toggleEnglishSteinsaltzWithHebrew = (
     () => setEnglishSteinsaltzWithHebrew(old => !old));
+
+  const [showExplanation, setShowExplanation] = useState(false);
+  const toggleExplanation = () => setShowExplanation(previous => !previous);
+
   const context = useConfiguration();
   if (commentaryKind.englishName === "Vilna Shas") {
     english = undefined;
@@ -53,37 +63,114 @@ function InternalTableRow({
       && hideGemaraTranslationByDefaultPreference.get() === "true"
       && commentaryKind.englishName === "Translation");
 
+  const isRashiOrTosafot = (
+    commentaryKind.englishName === "Rashi"
+    || commentaryKind.englishName === "Tosafot"
+    || comment.ref?.startsWith("Rashi on ")
+    || comment.ref?.startsWith("Tosafot on ")
+  );
+
+  const originalHebrew = typeof comment.originalHebrew === "string"
+    ? comment.originalHebrew
+    : (Array.isArray(comment.originalHebrew) ? comment.originalHebrew[0] : undefined);
+
+  const formattedHebrew = (isRashiOrTosafot && hebrew)
+    ? formatRashiTosafotHebrew({
+      rawHebrew: hebrew,
+      originalHebrew,
+      option: rashiTosafotHebrewOption(),
+    })
+    : undefined;
+
+  const hasExplanations = Boolean(formattedHebrew && formattedHebrew.explanations.length > 0);
+
   const classes = extraClasses || [];
   classes.push(
     "commentaryRow", "IndividualComment",
     // Used in CSS and ref_selection_snackbar.js
     commentaryKind.className.replace(/ /g, "_"));
 
-  const createRow = (key: string, _hebrew: string | undefined, _english: string | undefined) => (
+  const hebrewDoubleClickListener = (
+    expandableTranslations
+      ? () => toggleEnglishSteinsaltzWithHebrew()
+      : (hasExplanations ? () => toggleExplanation() : undefined)
+  );
+
+  const createRow = (
+    key: string,
+    _hebrew: string | React.ReactElement | undefined,
+    _english: string | undefined,
+    rowClasses?: string[],
+    doubleClickListener?: () => void,
+  ) => (
     <TableRow
       key={key}
-      hebrew={_hebrew}
+      hebrew={_hebrew as any}
       english={_english}
       sefaria-ref={ref}
       link={comment.link} // eslint-disable-line react/prop-types
-      classes={classes}
+      classes={rowClasses ?? classes}
       expandEnglishByDefault={
         // eslint-disable-next-line react/prop-types
         commentaryKind.englishName === "Translation" && context.expandEnglishByDefault()
       }
-      hebrewDoubleClickListener={
-        expandableTranslations
-          ? () => toggleEnglishSteinsaltzWithHebrew()
-          : undefined
-      }
+      hebrewDoubleClickListener={doubleClickListener}
     />
   );
 
+  const renderedMainHebrew = (() => {
+    if (!formattedHebrew) {
+      return hebrew;
+    }
+    if (hasExplanations) {
+      return (
+        <span>
+          <span dangerouslySetInnerHTML={{__html: formattedHebrew.mainHebrew}} />
+          {!showExplanation && (
+            <span
+              className="explanation-inline-indicators"
+              role="button"
+              tabIndex={0}
+              title={isSiteLanguageHebrew() ? "הצג ביאור" : "Show explanation"}
+              onClick={(event) => {
+                event.stopPropagation();
+                toggleExplanation();
+              }}
+              onKeyUp={onClickKeyListener(toggleExplanation)}
+            >
+              <span className="explanation-inline-plus">+</span>
+            </span>
+          )}
+        </span>
+      );
+    }
+    return formattedHebrew.mainHebrew;
+  })();
+
   return (
     <>
-      {createRow("main", hebrew, expandableTranslations ? "" : english)}
+      {createRow(
+        "main",
+        renderedMainHebrew,
+        expandableTranslations ? "" : english,
+        classes,
+        hebrewDoubleClickListener,
+      )}
       {expandableTranslations && englishSteinsaltzWithHebrew
        && createRow("main-translation", "", english)}
+      {hasExplanations && showExplanation
+       && createRow(
+         "synthetic-explanation",
+         <span
+           className="explanation synthetic-explanation"
+           dangerouslySetInnerHTML={{
+             __html: formattedHebrew!.explanations.join(" "),
+           }}
+         />,
+         "",
+         [...classes, "synthetic-comment", "explanation-comment"],
+         toggleExplanation,
+       )}
     </>
   );
 }

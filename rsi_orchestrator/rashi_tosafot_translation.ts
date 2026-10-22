@@ -51,7 +51,8 @@ export {LongThreadSessionManager, isLongThreadBackend};
  * file access.
  */
 
-export const TASK_TYPE = "rashi_tosafot_translation";
+export const ORIGINAL_TASK_TYPE = "rashi_tosafot_translation";
+export const TASK_TYPE = "rashi_tosafot_translation_v2";
 const PROMPT_VERSION = "v2";
 // The only tool this task type's headless calls may use — see the module doc above. Scoped to
 // this exact command so it can't fall back to arbitrary Bash use.
@@ -581,11 +582,23 @@ export function listCandidatesForAllBooks(
   return all;
 }
 
-export function isFreshTranslation(candidate: TranslationCandidate): boolean {
-  const record = readGenerationRecord(TASK_TYPE, candidate.page, candidate.ref);
-  if (!record) return false;
+export function isFreshTranslation(
+  candidate: TranslationCandidate,
+  options?: {backfill?: boolean},
+): boolean {
+  const v2Record = readGenerationRecord(TASK_TYPE, candidate.page, candidate.ref);
+  if (v2Record) {
+    const result = checkTextStaleness(
+      v2Record.sourceText, candidate.hebrewSource, DEFAULT_STALENESS_THRESHOLDS);
+    return result.status === StalenessStatus.Fresh;
+  }
+  if (options?.backfill) {
+    return false;
+  }
+  const originalRecord = readGenerationRecord(ORIGINAL_TASK_TYPE, candidate.page, candidate.ref);
+  if (!originalRecord) return false;
   const result = checkTextStaleness(
-    record.sourceText, candidate.hebrewSource, DEFAULT_STALENESS_THRESHOLDS);
+    originalRecord.sourceText, candidate.hebrewSource, DEFAULT_STALENESS_THRESHOLDS);
   return result.status === StalenessStatus.Fresh;
 }
 
@@ -624,24 +637,27 @@ const FALLBACK_WORKED_EXAMPLE: Record<Commentator, WorkedExample> = {
  */
 function findWorkedExamples(commentator: Commentator, excludeRef: string): WorkedExample[] {
   const examples: WorkedExample[] = [];
-  for (const page of listPagesWithGenerationRecords(TASK_TYPE)) {
-    const edits = aiEditsForPage(page);
-    if (!edits) continue;
-    const records = readGenerationRecordsForPage(TASK_TYPE, page);
-    for (const [ref, record] of Object.entries(records)) {
-      if (ref === excludeRef || !ref.startsWith(`${commentator} on `)) continue;
-      const edit = edits[ref];
-      if (!edit) continue;
-      examples.push({
-        hebrewSource: replaceBase64ImagesWithTempFileLocations(record.sourceText, {ref}),
-        hebrew: edit.hebrew !== undefined
-          ? replaceBase64ImagesWithTempFileLocations(edit.hebrew, {ref})
-          : undefined,
-        english: edit.english !== undefined
-          ? replaceBase64ImagesWithTempFileLocations(edit.english, {ref})
-          : undefined,
-      });
-      if (examples.length >= MAX_WORKED_EXAMPLES) return examples;
+  const candidateTaskTypes = [TASK_TYPE, ORIGINAL_TASK_TYPE];
+  for (const candidateTaskType of candidateTaskTypes) {
+    for (const page of listPagesWithGenerationRecords(candidateTaskType)) {
+      const edits = aiEditsForPage(page);
+      if (!edits) continue;
+      const records = readGenerationRecordsForPage(candidateTaskType, page);
+      for (const [ref, record] of Object.entries(records)) {
+        if (ref === excludeRef || !ref.startsWith(`${commentator} on `)) continue;
+        const edit = edits[ref];
+        if (!edit) continue;
+        examples.push({
+          hebrewSource: replaceBase64ImagesWithTempFileLocations(record.sourceText, {ref}),
+          hebrew: edit.hebrew !== undefined
+            ? replaceBase64ImagesWithTempFileLocations(edit.hebrew, {ref})
+            : undefined,
+          english: edit.english !== undefined
+            ? replaceBase64ImagesWithTempFileLocations(edit.english, {ref})
+            : undefined,
+        });
+        if (examples.length >= MAX_WORKED_EXAMPLES) return examples;
+      }
     }
   }
   return examples;
@@ -966,6 +982,7 @@ export function recordGenerationForCandidate(
     sourceText: candidate.hebrewSource,
     model: generated.model ?? "unknown",
     promptVersion: PROMPT_VERSION,
+    taskVersion: "v2",
     generatedAt: new Date().toISOString(),
     // Auto-populated from what context_fetch_cli actually served during the accepted generate +
     // critique calls (see generateWithSelfCritique) — not self-reported by the model. This is

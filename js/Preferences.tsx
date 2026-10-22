@@ -24,6 +24,7 @@ import {
   offlineModePreference,
   Preference,
   preferredVersionPreference,
+  rashiTosafotHebrewPreference,
   showAlternateVersionsPreference,
   showPageMetadataPreference,
   showTranslationButtonPreference,
@@ -273,6 +274,28 @@ function preferenceOptions(
       rerender={rerender}
       preference={darkModePreference}
       extraItems={[createNewThemeItem]} />,
+    <PreferenceSection
+      title="Rashi & Tosafot Hebrew text"
+      titleHebrew="נוסח עברית של רש״י ותוספות"
+      items={[
+        {
+          value: "punctuated-only",
+          displayText: "Punctuated only (default)",
+          displayTextHebrew: "מפוסק בלבד (ברירת מחדל)",
+        },
+        {
+          value: "as-is",
+          displayText: "As-is (Vilna)",
+          displayTextHebrew: "כפי שהוא (וילנא)",
+        },
+        {
+          value: "punctuated-expanded",
+          displayText: "Punctuated with abbreviations expanded",
+          displayTextHebrew: "מפוסק עם פתיחת ראשי תיבות",
+        },
+      ]}
+      rerender={rerender}
+      preference={rashiTosafotHebrewPreference} />,
 
     <PreferenceSection
       ignoreInHebrew

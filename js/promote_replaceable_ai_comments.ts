@@ -52,6 +52,7 @@ function promoteReplaceableAiCommentsForCommentary(commentaryMap: CommentaryMap 
         originalTextComment.sourceRef = "Original Text";
         originalTextComment.sourceHeRef = "מקורי";
 
+        comment.originalHebrew = comment.he;
         comment.he = aiCommentCopy.he;
         if (!isEmptyText(aiCommentCopy.en)) {
           comment.en = aiCommentCopy.en;

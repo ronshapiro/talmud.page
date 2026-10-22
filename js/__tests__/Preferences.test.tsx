@@ -268,22 +268,28 @@ describe("preferences ask the page to re-render", () => {
     {name: "layout", sectionIndex: 2, key: "layoutOption", value: "compact"},
     {name: "display theme", sectionIndex: 3, key: "darkMode", value: "true"},
     {
-      name: "hide gemara translation",
+      name: "rashi and tosafot hebrew",
       sectionIndex: 4,
+      key: "rashiTosafotHebrew",
+      value: "as-is",
+    },
+    {
+      name: "hide gemara translation",
+      sectionIndex: 5,
       key: "hideGemaraTranslationByDefault",
       value: "true",
     },
-    {name: "wrap translations", sectionIndex: 5, key: "wrapTranslations", value: "false"},
-    {name: "show translation button", sectionIndex: 6, key: "showTranslationButton", value: "yes"},
+    {name: "wrap translations", sectionIndex: 6, key: "wrapTranslations", value: "false"},
+    {name: "show translation button", sectionIndex: 7, key: "showTranslationButton", value: "yes"},
     {
       name: "expand english by default",
-      sectionIndex: 7,
+      sectionIndex: 8,
       key: "expandEnglishByDefault",
       value: "true",
     },
-    {name: "show page metadata", sectionIndex: 8, key: "showPageMetadata", value: "true"},
-    {name: "offline mode", sectionIndex: 9, key: "offlineMode", value: "true"},
-    {name: "keyboard shortcuts", sectionIndex: 10, key: "keyboardShortcuts", value: "true"},
+    {name: "show page metadata", sectionIndex: 9, key: "showPageMetadata", value: "true"},
+    {name: "offline mode", sectionIndex: 10, key: "offlineMode", value: "true"},
+    {name: "keyboard shortcuts", sectionIndex: 11, key: "keyboardShortcuts", value: "true"},
   ];
 
   for (const {name, sectionIndex, key, value} of CASES) {
