@@ -174,8 +174,6 @@ function BaseCell({
   doubleClickHintSurfaceType,
 }: BaseCellProps): React.ReactElement | null {
   const context = useConfiguration();
-  const className = ["table-cell"].concat(classes).join(" ");
-  const sanitizedText = useSearchableText(useSanitizedText(typeof text === "string" ? text : ""));
 
   const hasDoubleClickListener = Boolean(doubleClickListener);
   const effectiveSurfaceType = hasDoubleClickListener ? doubleClickHintSurfaceType : undefined;
@@ -186,6 +184,10 @@ function BaseCell({
     }
     return claimDoubleClickVisualHint(effectiveSurfaceType);
   });
+
+  const cellClasses = isVisualHintActive ? classes.concat("has-double-click-hint") : classes;
+  const className = ["table-cell"].concat(cellClasses).join(" ");
+  const sanitizedText = useSearchableText(useSanitizedText(typeof text === "string" ? text : ""));
 
   useEffect(() => {
     if (!effectiveSurfaceType || !isVisualHintActive) {
@@ -223,7 +225,10 @@ function BaseCell({
   });
 
   const visualHintElement = isVisualHintActive && effectiveSurfaceType ? (
-    <DoubleClickVisualHint surfaceType={effectiveSurfaceType} />
+    <DoubleClickVisualHint
+      surfaceType={effectiveSurfaceType}
+      onFinished={() => setIsVisualHintActive(false)}
+    />
   ) : null;
 
   /* eslint-disable react/no-danger */

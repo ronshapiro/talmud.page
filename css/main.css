@@ -953,80 +953,103 @@ h2, .title, .titleHebrew {
     margin-top: 2px;
 }
 
-.double-click-hint-container {
-    display: inline-flex;
+.table-cell.has-double-click-hint {
+    position: relative;
+}
+
+.double-click-hint-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 5;
+    display: flex;
     align-items: center;
     justify-content: center;
-    vertical-align: middle;
-    position: relative;
-    margin-inline-start: 6px;
-    margin-inline-end: 2px;
     user-select: none;
-    cursor: pointer;
-    width: 16px;
-    height: 16px;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+
+.double-click-hint-overlay.is-pulsating {
+    opacity: 1;
 }
 
 .double-click-hint-dot {
     position: relative;
-    width: 14px;
-    height: 14px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     background: var(--double-click-hint-glass-bg);
-    border: 1px solid var(--double-click-hint-glass-border);
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
-    box-shadow: 0 1px 3px var(--double-click-hint-shadow), inset 0 1px 1px rgba(255, 255, 255, 0.6);
+    border: 1.5px solid var(--double-click-hint-glass-border);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 0 2px 8px var(--double-click-hint-shadow), inset 0 1px 1px rgba(255, 255, 255, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    animation: double-tap-dot-pulse 3.5s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+}
+
+.double-click-hint-overlay.is-pulsating .double-click-hint-dot {
+    animation: double-tap-dot-pulse 1.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 .double-click-hint-core {
-    width: 5px;
-    height: 5px;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
     background: var(--double-click-hint-core-bg);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
 }
 
 .double-click-hint-ripple {
     position: absolute;
-    inset: -1px;
+    inset: -2px;
     border-radius: 50%;
     border: 1.5px solid var(--double-click-hint-ripple);
     pointer-events: none;
     box-sizing: border-box;
     opacity: 0;
-    animation: double-tap-ripple-expand 3.5s cubic-bezier(0.2, 0.8, 0.4, 1) infinite;
+}
+
+.double-click-hint-overlay.is-pulsating .double-click-hint-ripple {
+    animation: double-tap-ripple-expand 1.4s cubic-bezier(0.2, 0.8, 0.4, 1) forwards;
 }
 
 @keyframes double-tap-dot-pulse {
-    0%, 100% {
+    0% {
+        transform: scale(0.85);
+        opacity: 0;
+    }
+    15% {
         transform: scale(1);
-        opacity: 0.85;
+        opacity: 0.95;
     }
-    6% {
-        transform: scale(0.84);
+    30% {
+        transform: scale(0.82);
         opacity: 1;
     }
-    12% {
-        transform: scale(1.04);
-        opacity: 0.9;
+    42% {
+        transform: scale(1.06);
+        opacity: 0.95;
     }
-    18% {
-        transform: scale(0.84);
+    55% {
+        transform: scale(0.82);
         opacity: 1;
     }
-    24% {
+    68% {
         transform: scale(1.02);
+        opacity: 0.95;
+    }
+    82% {
+        transform: scale(1);
         opacity: 0.9;
     }
-    32% {
-        transform: scale(1);
-        opacity: 0.85;
+    100% {
+        transform: scale(0.9);
+        opacity: 0;
     }
 }
 
@@ -1035,37 +1058,37 @@ h2, .title, .titleHebrew {
         transform: scale(1);
         opacity: 0;
     }
-    6% {
+    28% {
         transform: scale(1);
         opacity: 0.7;
     }
-    14% {
-        transform: scale(1.65);
+    45% {
+        transform: scale(1.85);
         opacity: 0;
     }
-    18% {
+    53% {
         transform: scale(1);
         opacity: 0.7;
     }
-    26% {
-        transform: scale(1.65);
+    70% {
+        transform: scale(1.85);
         opacity: 0;
     }
-    27%, 100% {
+    100% {
         transform: scale(1);
         opacity: 0;
     }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .double-click-hint-dot,
-    .double-click-hint-ripple {
+    .double-click-hint-overlay.is-pulsating .double-click-hint-dot,
+    .double-click-hint-overlay.is-pulsating .double-click-hint-ripple {
         animation: none !important;
     }
     .double-click-hint-ripple {
         display: none;
     }
     .double-click-hint-dot {
-        opacity: 0.8;
+        opacity: 0.85;
     }
 }

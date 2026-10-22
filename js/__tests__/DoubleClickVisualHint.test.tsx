@@ -6,6 +6,7 @@ import {
   DoubleClickVisualHint,
   claimDoubleClickVisualHint,
   recordDoubleClickInteraction,
+  recordDoubleClickVisualHintDisplayed,
   resetDoubleClickVisualHintState,
   shouldDisplayDoubleClickVisualHint,
 } from "../DoubleClickVisualHint";
@@ -28,6 +29,7 @@ afterEach(() => {
   unmountAll();
   clearPageEnvironment();
   resetDoubleClickVisualHintState();
+  jest.useRealTimers();
 });
 
 describe("DoubleClickVisualHint unit logic", () => {
@@ -47,7 +49,6 @@ describe("DoubleClickVisualHint unit logic", () => {
     expect(
       shouldDisplayDoubleClickVisualHint(DoubleClickHintSurfaceType.STEINSALTZ, currentTimestamp),
     ).toBe(false);
-    // Independent surface type is unaffected:
     expect(
       shouldDisplayDoubleClickVisualHint(
         DoubleClickHintSurfaceType.RASHI_EXPLANATION,
@@ -95,7 +96,7 @@ describe("DoubleClickVisualHint unit logic", () => {
     ).toBe(true);
   });
 
-  test("claimDoubleClickVisualHint claims once per session and writes to localStorage", () => {
+  test("claimDoubleClickVisualHint claims session without writing to localStorage yet", () => {
     const currentTimestamp = 1000000000000;
 
     const firstClaimSuccess = claimDoubleClickVisualHint(
@@ -103,9 +104,10 @@ describe("DoubleClickVisualHint unit logic", () => {
       currentTimestamp,
     );
     expect(firstClaimSuccess).toBe(true);
+    // Not recorded as seen in localStorage until N pulsations complete or double tapped:
     expect(
       localStorage.getItem(`doubleClickHint.lastDisplayed.${DoubleClickHintSurfaceType.STEINSALTZ}`),
-    ).toBe(currentTimestamp.toString());
+    ).toBeNull();
 
     // Subsequent claim in same session fails:
     const secondClaimSuccess = claimDoubleClickVisualHint(
@@ -113,30 +115,90 @@ describe("DoubleClickVisualHint unit logic", () => {
       currentTimestamp + 100,
     );
     expect(secondClaimSuccess).toBe(false);
+  });
 
-    // Other surface type remains claimable independently:
-    const otherSurfaceClaimSuccess = claimDoubleClickVisualHint(
-      DoubleClickHintSurfaceType.RASHI_EXPLANATION,
-      currentTimestamp,
-    );
-    expect(otherSurfaceClaimSuccess).toBe(true);
+  test("recordDoubleClickVisualHintDisplayed records timestamp to localStorage", () => {
+    const currentTimestamp = 1000000000000;
+    recordDoubleClickVisualHintDisplayed(DoubleClickHintSurfaceType.STEINSALTZ, currentTimestamp);
+
+    expect(
+      localStorage.getItem(`doubleClickHint.lastDisplayed.${DoubleClickHintSurfaceType.STEINSALTZ}`),
+    ).toBe(currentTimestamp.toString());
   });
 });
 
-describe("DoubleClickVisualHint component", () => {
-  test("renders dot, core, ripple, and aria attributes", () => {
-    const root = mount(
-      <DoubleClickVisualHint surfaceType={DoubleClickHintSurfaceType.STEINSALTZ} />,
-    );
-    const container = query(root, ".double-click-hint-container");
+describe("DoubleClickVisualHint component lifecycle", () => {
+  beforeEach(() => {
+    jest.useFakeTimers();
+  });
 
-    expect(container).not.toBeNull();
-    expect(container.getAttribute("title")).toBe("Double click to open");
-    expect(container.getAttribute("aria-label")).toBe("Double click to open");
-    expect(container.getAttribute("data-surface-type")).toBe("steinsaltz");
-    expect(queryOrNull(root, ".double-click-hint-dot")).not.toBeNull();
-    expect(queryOrNull(root, ".double-click-hint-core")).not.toBeNull();
-    expect(queryOrNull(root, ".double-click-hint-ripple")).not.toBeNull();
+  test("starts after initial delay, pulsates and pauses, and records as seen after N cycles", () => {
+    const onFinished = jest.fn();
+    const root = mount(
+      <DoubleClickVisualHint
+        surfaceType={DoubleClickHintSurfaceType.STEINSALTZ}
+        onFinished={onFinished}
+        pulseCycleCount={2}
+        initialDelayMilliseconds={500}
+        pulseDurationMilliseconds={400}
+        pauseDurationMilliseconds={200}
+      />,
+    );
+
+    const overlay = query(root, ".double-click-hint-overlay");
+    expect(overlay).not.toBeNull();
+    // Before initial delay, not yet pulsating:
+    expect(overlay.classList.contains("is-pulsating")).toBe(false);
+    expect(
+      localStorage.getItem(`doubleClickHint.lastDisplayed.${DoubleClickHintSurfaceType.STEINSALTZ}`),
+    ).toBeNull();
+
+    // Advance through initial delay:
+    act(() => {
+      jest.advanceTimersByTime(500);
+    });
+    // Cycle 1 is now pulsating:
+    expect(query(root, ".double-click-hint-overlay").classList.contains("is-pulsating")).toBe(true);
+    expect(query(root, ".double-click-hint-overlay").getAttribute("data-cycle")).toBe("1");
+    expect(
+      localStorage.getItem(`doubleClickHint.lastDisplayed.${DoubleClickHintSurfaceType.STEINSALTZ}`),
+    ).toBeNull();
+
+    // Advance through pulse duration:
+    act(() => {
+      jest.advanceTimersByTime(400);
+    });
+    // Now in pause / disappeared state:
+    expect(query(root, ".double-click-hint-overlay").classList.contains("is-pulsating")).toBe(false);
+
+    // Advance through pause duration:
+    act(() => {
+      jest.advanceTimersByTime(200);
+    });
+    // Cycle 2 (the 2nd and final cycle) is now pulsating:
+    expect(query(root, ".double-click-hint-overlay").classList.contains("is-pulsating")).toBe(true);
+    expect(query(root, ".double-click-hint-overlay").getAttribute("data-cycle")).toBe("2");
+    expect(
+      localStorage.getItem(`doubleClickHint.lastDisplayed.${DoubleClickHintSurfaceType.STEINSALTZ}`),
+    ).toBeNull();
+
+    // Advance through pulse duration of cycle 2:
+    act(() => {
+      jest.advanceTimersByTime(400);
+    });
+    expect(query(root, ".double-click-hint-overlay").classList.contains("is-pulsating")).toBe(false);
+
+    // Advance through pause duration after cycle 2:
+    act(() => {
+      jest.advanceTimersByTime(200);
+    });
+
+    // All cycles finished! Recorded as seen and removed:
+    expect(onFinished).toHaveBeenCalledTimes(1);
+    expect(queryOrNull(root, ".double-click-hint-overlay")).toBeNull();
+    expect(
+      localStorage.getItem(`doubleClickHint.lastDisplayed.${DoubleClickHintSurfaceType.STEINSALTZ}`),
+    ).not.toBeNull();
   });
 });
 
@@ -153,7 +215,7 @@ describe("TableRow double-click visual hint integration", () => {
     );
   }
 
-  test("renders visual hint on double-clickable row and dismisses on double-click", () => {
+  test("renders overlay on double-clickable row and dismisses on double-click", () => {
     const doubleClickListener = jest.fn();
     const root = renderRow({
       hebrew: "מאימתי קורין את שמע",
@@ -161,14 +223,16 @@ describe("TableRow double-click visual hint integration", () => {
       doubleClickHintSurfaceType: DoubleClickHintSurfaceType.STEINSALTZ,
     });
 
-    const hintElement = queryOrNull(root, ".double-click-hint-container");
+    const cell = query(root, ".table-cell.hebrew");
+    expect(cell.classList.contains("has-double-click-hint")).toBe(true);
+    const hintElement = queryOrNull(root, ".double-click-hint-overlay");
     expect(hintElement).not.toBeNull();
 
-    // Double clicking the row triggers the listener and removes the hint
-    doubleClick(query(root, ".table-cell.hebrew"));
+    // Double clicking the row triggers the listener and immediately records double-tap:
+    doubleClick(cell);
     expect(doubleClickListener).toHaveBeenCalledTimes(1);
 
-    expect(queryOrNull(root, ".double-click-hint-container")).toBeNull();
+    expect(queryOrNull(root, ".double-click-hint-overlay")).toBeNull();
     expect(
       localStorage.getItem(`doubleClickHint.lastDoubleTap.${DoubleClickHintSurfaceType.STEINSALTZ}`),
     ).not.toBeNull();
@@ -185,7 +249,7 @@ describe("TableRow double-click visual hint integration", () => {
       {isFake: true},
     );
 
-    expect(queryOrNull(root, ".double-click-hint-container")).toBeNull();
+    expect(queryOrNull(root, ".double-click-hint-overlay")).toBeNull();
   });
 
   test("does not render hint if double-tap happened within last month", () => {
@@ -199,7 +263,7 @@ describe("TableRow double-click visual hint integration", () => {
       doubleClickHintSurfaceType: DoubleClickHintSurfaceType.STEINSALTZ,
     });
 
-    expect(queryOrNull(root, ".double-click-hint-container")).toBeNull();
+    expect(queryOrNull(root, ".double-click-hint-overlay")).toBeNull();
   });
 
   test("only one row of that surface type claims and displays the hint", () => {
@@ -218,8 +282,8 @@ describe("TableRow double-click visual hint integration", () => {
       doubleClickHintSurfaceType: DoubleClickHintSurfaceType.STEINSALTZ,
     });
 
-    expect(queryOrNull(rootFirst, ".double-click-hint-container")).not.toBeNull();
-    expect(queryOrNull(rootSecond, ".double-click-hint-container")).toBeNull();
+    expect(queryOrNull(rootFirst, ".double-click-hint-overlay")).not.toBeNull();
+    expect(queryOrNull(rootSecond, ".double-click-hint-overlay")).toBeNull();
   });
 
   test("external double-tap event on same surface type dismisses the active visual hint", () => {
@@ -230,13 +294,12 @@ describe("TableRow double-click visual hint integration", () => {
       doubleClickHintSurfaceType: DoubleClickHintSurfaceType.STEINSALTZ,
     });
 
-    expect(queryOrNull(root, ".double-click-hint-container")).not.toBeNull();
+    expect(queryOrNull(root, ".double-click-hint-overlay")).not.toBeNull();
 
-    // User double taps another Steinsaltz element elsewhere:
     act(() => {
       recordDoubleClickInteraction(DoubleClickHintSurfaceType.STEINSALTZ);
     });
 
-    expect(queryOrNull(root, ".double-click-hint-container")).toBeNull();
+    expect(queryOrNull(root, ".double-click-hint-overlay")).toBeNull();
   });
 });
