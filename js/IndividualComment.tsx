@@ -10,6 +10,7 @@ import {useHtmlRef} from "./hooks";
 import {flatten} from "../sefariaTextType";
 import componentHandler from "./componentHandler";
 import {onClickKeyListener} from "./key_clicks";
+import {extractExplanationSyntheticComment} from "./promote_replaceable_ai_comments";
 import {
   hideGemaraTranslationByDefaultPreference,
   isSiteLanguageHebrew,
@@ -36,20 +37,31 @@ function InternalTableRow({
   commentaryKind,
   extraClasses,
   overrideRef,
+  segmentLabel,
+  nestedSegmentLabel,
+  toggleShowing,
+  isExplanationOpen,
 }: {
-  hebrew?: string;
+  hebrew?: string | React.ReactElement;
   english?: string;
   comment: ApiComment;
   commentaryKind: CommentaryType;
   extraClasses?: string[];
   overrideRef?: string;
+  segmentLabel?: string;
+  nestedSegmentLabel?: string;
+  toggleShowing?: (segmentLabel: string, className: string, force?: boolean) => boolean;
+  isExplanationOpen?: boolean;
 }): React.ReactElement {
   const [englishSteinsaltzWithHebrew, setEnglishSteinsaltzWithHebrew] = useState(false);
   const toggleEnglishSteinsaltzWithHebrew = (
     () => setEnglishSteinsaltzWithHebrew(old => !old));
 
-  const [showExplanation, setShowExplanation] = useState(false);
-  const toggleExplanation = () => setShowExplanation(previous => !previous);
+  if (!comment.commentary?.Explanation
+      && typeof comment.he === "string"
+      && comment.he.includes('class="explanation"')) {
+    extractExplanationSyntheticComment(comment);
+  }
 
   const context = useConfiguration();
   if (commentaryKind.englishName === "Vilna Shas") {
@@ -74,7 +86,7 @@ function InternalTableRow({
     ? comment.originalHebrew
     : (Array.isArray(comment.originalHebrew) ? comment.originalHebrew[0] : undefined);
 
-  const formattedHebrew = (isRashiOrTosafot && hebrew)
+  const formattedHebrew = (isRashiOrTosafot && typeof hebrew === "string")
     ? formatRashiTosafotHebrew({
       rawHebrew: hebrew,
       originalHebrew,
@@ -82,7 +94,19 @@ function InternalTableRow({
     })
     : undefined;
 
-  const hasExplanations = Boolean(formattedHebrew && formattedHebrew.explanations.length > 0);
+  const hasNestedExplanation = Boolean(comment.commentary?.Explanation);
+  const isExplanationKind = commentaryKind.englishName === "Explanation";
+
+  const toggleExplanation = (() => {
+    if (!toggleShowing) return undefined;
+    if (isExplanationKind && segmentLabel) {
+      return () => toggleShowing(segmentLabel, "explanation");
+    }
+    if (hasNestedExplanation && nestedSegmentLabel) {
+      return () => toggleShowing(nestedSegmentLabel, "explanation");
+    }
+    return undefined;
+  })();
 
   const classes = extraClasses || [];
   classes.push(
@@ -90,11 +114,15 @@ function InternalTableRow({
     // Used in CSS and ref_selection_snackbar.js
     commentaryKind.className.replace(/ /g, "_"));
 
-  const hebrewDoubleClickListener = (
-    expandableTranslations
-      ? () => toggleEnglishSteinsaltzWithHebrew()
-      : (hasExplanations ? () => toggleExplanation() : undefined)
-  );
+  const hebrewDoubleClickListener = (() => {
+    if (expandableTranslations) {
+      return () => toggleEnglishSteinsaltzWithHebrew();
+    }
+    if (hasNestedExplanation || isExplanationKind) {
+      return toggleExplanation;
+    }
+    return undefined;
+  })();
 
   const createRow = (
     key: string,
@@ -122,25 +150,23 @@ function InternalTableRow({
     if (!formattedHebrew) {
       return hebrew;
     }
-    if (hasExplanations) {
+    if (hasNestedExplanation && !isExplanationOpen) {
       return (
         <span>
           <span dangerouslySetInnerHTML={{__html: formattedHebrew.mainHebrew}} />
-          {!showExplanation && (
-            <span
-              className="explanation-inline-indicators"
-              role="button"
-              tabIndex={0}
-              title={isSiteLanguageHebrew() ? "הצג ביאור" : "Show explanation"}
-              onClick={(event) => {
-                event.stopPropagation();
-                toggleExplanation();
-              }}
-              onKeyUp={onClickKeyListener(toggleExplanation)}
-            >
-              <span className="explanation-inline-plus">+</span>
-            </span>
-          )}
+          <span
+            className="explanation-inline-indicators"
+            role="button"
+            tabIndex={0}
+            title={isSiteLanguageHebrew() ? "הצג ביאור" : "Show explanation"}
+            onClick={(event) => {
+              event.stopPropagation();
+              toggleExplanation?.();
+            }}
+            onKeyUp={onClickKeyListener(() => toggleExplanation?.())}
+          >
+            <span className="explanation-inline-plus">+</span>
+          </span>
         </span>
       );
     }
@@ -158,29 +184,20 @@ function InternalTableRow({
       )}
       {expandableTranslations && englishSteinsaltzWithHebrew
        && createRow("main-translation", "", english)}
-      {hasExplanations && showExplanation
-       && createRow(
-         "synthetic-explanation",
-         <span
-           className="explanation synthetic-explanation"
-           dangerouslySetInnerHTML={{
-             __html: formattedHebrew!.explanations.join(" "),
-           }}
-         />,
-         "",
-         [...classes, "synthetic-comment", "explanation-comment"],
-         toggleExplanation,
-       )}
     </>
   );
 }
 InternalTableRow.propTypes = {
-  hebrew: PropTypes.string,
+  hebrew: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
   english: PropTypes.string,
   comment: PropTypes.object.isRequired,
   commentaryKind: PropTypes.object.isRequired,
   extraClasses: PropTypes.arrayOf(PropTypes.string),
   overrideRef: PropTypes.string,
+  segmentLabel: PropTypes.string,
+  nestedSegmentLabel: PropTypes.string,
+  toggleShowing: PropTypes.func,
+  isExplanationOpen: PropTypes.bool,
 };
 
 
@@ -217,10 +234,18 @@ export function IndividualComment({
   comment,
   commentaryKind,
   parentComment,
+  segmentLabel,
+  nestedSegmentLabel,
+  toggleShowing,
+  isExplanationOpen,
 }: {
   comment: ApiComment;
   commentaryKind: CommentaryType;
   parentComment?: ApiComment;
+  segmentLabel?: string;
+  nestedSegmentLabel?: string;
+  toggleShowing?: (segmentLabel: string, className: string, force?: boolean) => boolean;
+  isExplanationOpen?: boolean;
 }): React.ReactElement {
   const output = [];
 
@@ -235,6 +260,10 @@ export function IndividualComment({
         english={includeEnglishTitle ? comment.sourceRef : ""}
         comment={comment}
         commentaryKind={commentaryKind}
+        segmentLabel={segmentLabel}
+        nestedSegmentLabel={nestedSegmentLabel}
+        toggleShowing={toggleShowing}
+        isExplanationOpen={isExplanationOpen}
         />);
     output.push(<strong key="title">{titleRow}</strong>);
   }
@@ -272,6 +301,10 @@ export function IndividualComment({
             comment={comment}
             commentaryKind={commentaryKind}
             extraClasses={["commentFullRowImage"]}
+            segmentLabel={segmentLabel}
+            nestedSegmentLabel={nestedSegmentLabel}
+            toggleShowing={toggleShowing}
+            isExplanationOpen={isExplanationOpen}
             />);
       }
       if (row.hebrew || row.english) {
@@ -289,6 +322,10 @@ export function IndividualComment({
             }
             comment={comment}
             commentaryKind={commentaryKind}
+            segmentLabel={segmentLabel}
+            nestedSegmentLabel={nestedSegmentLabel}
+            toggleShowing={toggleShowing}
+            isExplanationOpen={isExplanationOpen}
             />);
         i++;
       }
@@ -314,6 +351,10 @@ export function IndividualComment({
           extraClasses={extraClasses.concat(isDirectlyReferenced ? ["directlyReferencedLine"] : [])}
           comment={comment}
           commentaryKind={commentaryKind}
+          segmentLabel={segmentLabel}
+          nestedSegmentLabel={nestedSegmentLabel}
+          toggleShowing={toggleShowing}
+          isExplanationOpen={isExplanationOpen}
           />);
     }
   } else {
@@ -325,6 +366,10 @@ export function IndividualComment({
         comment={comment}
         commentaryKind={commentaryKind}
         extraClasses={extraClasses}
+        segmentLabel={segmentLabel}
+        nestedSegmentLabel={nestedSegmentLabel}
+        toggleShowing={toggleShowing}
+        isExplanationOpen={isExplanationOpen}
         />);
   }
 
@@ -349,4 +394,8 @@ IndividualComment.propTypes = {
   comment: PropTypes.object.isRequired,
   commentaryKind: PropTypes.object.isRequired,
   parentComment: PropTypes.object,
+  segmentLabel: PropTypes.string,
+  nestedSegmentLabel: PropTypes.string,
+  toggleShowing: PropTypes.func,
+  isExplanationOpen: PropTypes.bool,
 };

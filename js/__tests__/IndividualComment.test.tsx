@@ -39,6 +39,12 @@ function renderComment(
   commentaryKind: CommentaryType = RASHI,
   contextOverrides = {},
   parentComment?: ApiComment,
+  extraProps: {
+    segmentLabel?: string;
+    nestedSegmentLabel?: string;
+    toggleShowing?: (segmentLabel: string, className: string, force?: boolean) => boolean;
+    isExplanationOpen?: boolean;
+  } = {},
 ): HTMLElement {
   return mount(
     <TestContext overrides={contextOverrides}>
@@ -46,6 +52,10 @@ function renderComment(
         comment={comment(overrides)}
         commentaryKind={commentaryKind}
         parentComment={parentComment}
+        segmentLabel={extraProps.segmentLabel}
+        nestedSegmentLabel={extraProps.nestedSegmentLabel}
+        toggleShowing={extraProps.toggleShowing}
+        isExplanationOpen={extraProps.isExplanationOpen}
         />
     </TestContext>,
   );
@@ -513,44 +523,80 @@ describe("Rashi and Tosafot Hebrew formatting and explanation synthetic comments
     en: "twenty-one blasts, the Gemara explains them.",
   };
 
-  test("by default, explanation is omitted from the main text and indicator is shown", () => {
-    const root = renderComment(commentWithExplanation);
-    const mainHebrew = query(root, ".table-row:not(.synthetic-comment) .table-cell.hebrew");
+  test("by default, explanation is extracted into comment.commentary.Explanation and indicator is shown", () => {
+    const testComment = comment(commentWithExplanation);
+    const root = mount(
+      <TestContext>
+        <IndividualComment
+          comment={testComment}
+          commentaryKind={RASHI}
+        />
+      </TestContext>,
+    );
+    const mainHebrew = query(root, ".table-row .table-cell.hebrew");
     expect(mainHebrew.textContent).not.toContain("הגמרא");
     expect(mainHebrew.textContent).toContain("כ״א");
+
+    expect(testComment.commentary?.Explanation).toBeDefined();
+    expect(testComment.commentary!.Explanation!.comments[0].he).toContain("הגמרא");
 
     const indicator = query(root, ".explanation-inline-indicators");
     expect(indicator).toBeTruthy();
     expect(query(indicator, ".explanation-inline-plus")?.textContent).toBe("+");
-    expect(queryAll(root, ".synthetic-comment")).toHaveLength(0);
   });
 
-  test("double-clicking the Hebrew cell opens the synthetic explanation comment row", () => {
-    const root = renderComment(commentWithExplanation);
-    const mainHebrew = query(root, ".table-row:not(.synthetic-comment) .table-cell.hebrew");
+  test("double-clicking Hebrew cell calls toggleShowing with nestedSegmentLabel and explanation", () => {
+    const toggleShowing = jest.fn();
+    const root = renderComment(
+      commentWithExplanation,
+      RASHI,
+      {},
+      undefined,
+      {
+        nestedSegmentLabel: "test-nested-label",
+        toggleShowing,
+        isExplanationOpen: false,
+      },
+    );
+    const mainHebrew = query(root, ".table-row .table-cell.hebrew");
 
     doubleClick(mainHebrew);
 
-    const syntheticRow = query(root, ".synthetic-comment");
-    expect(syntheticRow).toBeTruthy();
-    expect(syntheticRow.textContent).toContain("הגמרא");
-    expect(queryOrNull(root, ".explanation-inline-indicators")).toBeNull();
-
-    // Double-clicking again closes it
-    doubleClick(query(root, ".table-row:not(.synthetic-comment) .table-cell.hebrew"));
-    expect(queryAll(root, ".synthetic-comment")).toHaveLength(0);
-    expect(query(root, ".explanation-inline-indicators")).toBeTruthy();
+    expect(toggleShowing).toHaveBeenCalledWith("test-nested-label", "explanation");
   });
 
-  test("clicking the explanation indicator opens the synthetic explanation comment", () => {
-    const root = renderComment(commentWithExplanation);
+  test("clicking the explanation indicator calls toggleShowing", () => {
+    const toggleShowing = jest.fn();
+    const root = renderComment(
+      commentWithExplanation,
+      RASHI,
+      {},
+      undefined,
+      {
+        nestedSegmentLabel: "test-nested-label",
+        toggleShowing,
+        isExplanationOpen: false,
+      },
+    );
     const indicator = query(root, ".explanation-inline-indicators");
 
     click(indicator);
 
-    const syntheticRow = query(root, ".synthetic-comment");
-    expect(syntheticRow).toBeTruthy();
-    expect(syntheticRow.textContent).toContain("הגמרא");
+    expect(toggleShowing).toHaveBeenCalledWith("test-nested-label", "explanation");
+  });
+
+  test("when isExplanationOpen is true, indicator is hidden", () => {
+    const root = renderComment(
+      commentWithExplanation,
+      RASHI,
+      {},
+      undefined,
+      {
+        nestedSegmentLabel: "test-nested-label",
+        isExplanationOpen: true,
+      },
+    );
+    expect(queryOrNull(root, ".explanation-inline-indicators")).toBeNull();
   });
 
   test("punctuated-expanded preference expands abbreviations in the main cell", () => {

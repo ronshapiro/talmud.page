@@ -446,4 +446,29 @@ describe("when the site language is Hebrew", () => {
     expect(rashiOf(target).he).toBe("עברית של הבינה");
     expect(rashiOf(target).didModifyUiWithAiVersion).toBe(true);
   });
+
+  test("an AI version with explanation markup extracts explanation into comment.commentary.Explanation", () => {
+    const target = pageWithRashi({
+      commentary: {
+        Versions: {
+          comments: [
+            aiVersion({
+              he: 'מתני׳ כ״א תקיעות, <span class="explanation">הגמרא</span> מפרש להו.',
+            }),
+          ],
+        },
+      },
+    });
+
+    promoteReplaceableAiComments(target);
+
+    const rashi = rashiOf(target);
+    expect(rashi.he).toBe("מתני׳ כ״א תקיעות, מפרש להו.");
+    expect(rashi.originalHebrew).toBe("עברית מקורית");
+    expect(rashi.commentary?.Explanation).toBeDefined();
+    expect(rashi.commentary!.Explanation!.comments[0].ref).toBe("Rashi 1:explanation");
+    expect(rashi.commentary!.Explanation!.comments[0].he).toBe("הגמרא");
+    expect(rashi.commentary!.Explanation!.comments[0].sourceRef).toBe("Explanation");
+    expect(rashi.commentary!.Explanation!.comments[0].sourceHeRef).toBe("ביאור");
+  });
 });

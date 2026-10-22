@@ -216,7 +216,7 @@ items. */
     font-family: "Taamey David", "Times New Roman", serif;
     line-height: calc(1.7em * var(--font-size-multiplier));
 }
-.hebrew-emphasis, .commentaryRow .parenthesized, .commentaryRow .explanation {
+.hebrew-emphasis, .commentaryRow .parenthesized, .commentaryRow .explanation, .commentaryRow.explanation {
     font-family: "Fira Light";
     font-size: 14px;
 }

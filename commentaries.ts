@@ -30,7 +30,7 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
   },
   {
     englishName: "Explanation",
-    hebrewName: "הכנות",
+    hebrewName: "ביאור",
     className: "explanation",
   },
   {

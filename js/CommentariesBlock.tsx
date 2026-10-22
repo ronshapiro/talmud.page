@@ -21,7 +21,10 @@ const {
 
 const JSX_NOOP = null;
 
-function shouldHide(commentaryKind: CommentaryType): boolean {
+function shouldHide(commentaryKind: CommentaryType, isShowing: boolean): boolean {
+  if (commentaryKind.className === "explanation") {
+    return !isShowing;
+  }
   return showTranslationButtonPreference.get() !== "yes"
     && commentaryKind.className === "translation";
 }
@@ -303,7 +306,7 @@ export function CommentariesBlock({
   const renderButton = (
     commentaryKind: CommentaryType, isShowing: boolean, commentary: Commentary,
   ): React.ReactElement | null => {
-    if (shouldHide(commentaryKind)) {
+    if (shouldHide(commentaryKind, isShowing)) {
       return JSX_NOOP;
     }
 
@@ -382,7 +385,7 @@ export function CommentariesBlock({
     const buttons = [];
     let wouldAnyButtonBeHidden = false;
     for (const [commentary, commentaryKind] of commentariesToShow) {
-      if (shouldHide(commentaryKind)) continue;
+      if (shouldHide(commentaryKind, false)) continue;
       const wouldThisButtonBeHidden = (
         buttons.length > MAX_BUTTONS_TO_SHOW_BEFORE_SHOWING_MORE
           && commentariesToShow.length > (MAX_BUTTONS_TO_SHOW_BEFORE_SHOWING_MORE + 2)
@@ -398,11 +401,16 @@ export function CommentariesBlock({
       buttons.push(renderButton(showMoreCommentaryKind(showAll), false, {comments: []}));
     }
 
+    const filteredButtons = buttons.filter(x => x);
+    if (depth! > 0 && filteredButtons.length === 0) {
+      return JSX_NOOP;
+    }
+
     return (
       <InternalTableRow
         id={`${segmentLabel} show buttons`}
         key="show buttons"
-        hebrew={<>{buttons.filter(x => x)}</>}
+        hebrew={<>{filteredButtons}</>}
         extraClasses={["show-buttons"]} />
     );
   };
@@ -444,11 +452,14 @@ export function CommentariesBlock({
   const output = [];
   for (const [commentary, commentaryKind] of getOpenCommentariesInOrder(
     kindsByClassName)) {
-    output.push(
-      <InternalTableRow
-        id={`${segmentLabel} ${commentaryKind.englishName}`}
-        key={commentaryKind.englishName + " close button"}
-        hebrew={renderButton(commentaryKind, true, commentary)!} />);
+    const closeButton = renderButton(commentaryKind, true, commentary);
+    if (closeButton) {
+      output.push(
+        <InternalTableRow
+          id={`${segmentLabel} ${commentaryKind.englishName}`}
+          key={commentaryKind.englishName + " close button"}
+          hebrew={closeButton} />);
+    }
 
     if (commentaryKind.renderCommentsAsNestedCommentaries && !syntheticCommentaryKinds) {
       output.push(renderCommentsAsNestedCommentaries(commentary, commentaryKind.className));
@@ -461,6 +472,10 @@ export function CommentariesBlock({
             comment={comment}
             commentaryKind={commentaryKind}
             parentComment={parentComment}
+            segmentLabel={segmentLabel}
+            nestedSegmentLabel={nestedSegmentLabel}
+            toggleShowing={toggleShowing}
+            isExplanationOpen={(getOrdering(nestedSegmentLabel) || []).includes("explanation")}
             />,
           renderNestedCommentariesBlock({
             commentaries: comment.commentary || {},
@@ -472,7 +487,13 @@ export function CommentariesBlock({
     }
   }
 
-  output.push(renderShowButtons());
+  const showButtons = renderShowButtons();
+  if (showButtons) {
+    output.push(showButtons);
+  }
+  if (output.length === 0) {
+    return JSX_NOOP;
+  }
   return <>{output}</>;
 }
 CommentariesBlock.propTypes = {

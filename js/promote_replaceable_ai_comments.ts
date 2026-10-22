@@ -6,7 +6,47 @@ import {
 } from "../apiTypes";
 import {AI_EDIT_COMMENT_NAME} from "./commentary_constants";
 import isEmptyText from "./is_empty_text";
+import {extractExplanations} from "./rashi_tosafot_formatting";
 import {isSiteLanguageHebrew} from "./settings";
+
+export function extractExplanationSyntheticComment(comment: ApiComment): void {
+  if (comment.sourceRef === "Explanation" || comment.ref.endsWith(":explanation")) {
+    return;
+  }
+  const collectedExplanations: string[] = [];
+
+  const processText = (text: sefaria.TextType): sefaria.TextType => {
+    if (typeof text === "string") {
+      if (text.includes('class="explanation"')) {
+        const {withoutExplanations, explanations} = extractExplanations(text);
+        collectedExplanations.push(...explanations);
+        return withoutExplanations;
+      }
+      return text;
+    }
+    if (Array.isArray(text)) {
+      return text.map(processText) as any;
+    }
+    return text;
+  };
+
+  comment.he = processText(comment.he);
+
+  if (collectedExplanations.length > 0) {
+    comment.commentary = comment.commentary || {};
+    comment.commentary.Explanation = {
+      comments: [
+        {
+          ref: `${comment.ref}:explanation`,
+          he: collectedExplanations.join(" "),
+          en: "",
+          sourceRef: "Explanation",
+          sourceHeRef: "ביאור",
+        },
+      ],
+    };
+  }
+}
 
 function getAiVersionComment(parent: Section | ApiComment): ApiComment | undefined {
   for (const comment of parent.commentary?.Versions?.comments ?? []) {
@@ -115,6 +155,11 @@ function promoteReplaceableAiCommentsForCommentary(commentaryMap: CommentaryMap 
           delete comment.commentary;
         }
       }
+
+      for (const versionComment of comment.commentary?.Versions?.comments ?? []) {
+        extractExplanationSyntheticComment(versionComment);
+      }
+      extractExplanationSyntheticComment(comment);
 
       promoteReplaceableAiCommentsForCommentary(comment.commentary);
     }

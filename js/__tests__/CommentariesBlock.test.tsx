@@ -6,6 +6,7 @@ import {TestConfiguration, TestContext} from "./testing/configuration";
 import {
   classesOf,
   click,
+  doubleClick,
   mount,
   query,
   queryAll,
@@ -621,5 +622,63 @@ describe("nested commentaries", () => {
 
     // Modal should STILL be open!
     expect(query(root, ".modal textarea")).toBeTruthy();
+  });
+
+  test("nested Explanation synthetic comment toggles via double-click and inline indicator", () => {
+    const EXPLANATION = kind("Explanation", "explanation", {hebrewName: "ביאור"});
+    const root = render(
+      commentaries({
+        Rashi: [{
+          ref: "Rashi on Berakhot 2a:1:1",
+          he: 'מתני׳ כ״א תקיעות',
+          commentary: commentaries({
+            Explanation: [{
+              ref: "Rashi on Berakhot 2a:1:1:explanation",
+              he: "הגמרא",
+              sourceRef: "Explanation",
+              sourceHeRef: "ביאור",
+            }],
+          }),
+        }],
+      }),
+      {
+        commentaryTypes: [RASHI, TOSAFOT, EXPLANATION],
+        initiallyOpen: ["rashi"],
+      },
+    );
+
+    // Explanation should NOT be in the show-buttons toolbar
+    expect(queryAll(root, ".show-buttons a.explanation")).toHaveLength(0);
+
+    // Rashi cell should have the + indicator
+    const indicator = query(root, ".explanation-inline-indicators");
+    expect(indicator).toBeTruthy();
+    expect(query(indicator, ".explanation-inline-plus")?.textContent).toBe("+");
+    expect(commentTexts(root)).toEqual(["מתני׳ כ״א תקיעות+"]);
+
+    // Clicking the + indicator opens the nested explanation
+    click(indicator);
+
+    // Indicator is hidden when open
+    expect(queryAll(root, ".explanation-inline-indicators")).toHaveLength(0);
+    // Header close button is rendered with ביאור
+    expect(query(root, "a.commentary_header.explanation").textContent).toBe("ביאור");
+    // Both Rashi and Explanation comments are visible
+    expect(commentTexts(root)).toContain("הגמרא");
+
+    // Clicking the header close button closes the explanation
+    click(query(root, "a.commentary_header.explanation"));
+    expect(commentTexts(root)).not.toContain("הגמרא");
+    expect(query(root, ".explanation-inline-indicators")).toBeTruthy();
+
+    // Clicking the + indicator opens the explanation again
+    click(query(root, ".explanation-inline-indicators"));
+    expect(commentTexts(root)).toContain("הגמרא");
+    expect(queryAll(root, ".explanation-inline-indicators")).toHaveLength(0);
+
+    // Double-clicking the Rashi cell again closes it
+    doubleClick(query(root, ".IndividualComment:not(.explanation) .table-cell.hebrew"));
+    expect(commentTexts(root)).not.toContain("הגמרא");
+    expect(query(root, ".explanation-inline-indicators")).toBeTruthy();
   });
 });
