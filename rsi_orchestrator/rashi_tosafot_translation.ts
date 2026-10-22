@@ -188,12 +188,32 @@ export function verifyProposedHebrewWording(
   }
 
   const untouchableAbbreviationMatch = proposedHebrew.match(
-    /<abbr\b[^>]*>\s*(?:וגו|וכו|כו)["'׳״]*\s*<\/abbr>/i,
+    /<abbr\b[^>]*>\s*(?:וגו|וכו|כו|הקב["״]ה|רש["״]י|חז["״]ל)["'׳״]*\s*<\/abbr>/i,
   );
   if (untouchableAbbreviationMatch) {
     return {
       valid: false,
-      reason: "Do not wrap וגו' or וכו' in <abbr> tags. Leave them untouched without <abbr> as they are recognized solely by their abbreviation.",
+      reason: "Do not wrap וגו', וכו', הקב\"ה, רש\"י, or חז\"ל in <abbr> tags. Leave them untouched without <abbr> as they are recognized solely by their abbreviation.",
+    };
+  }
+
+  const openingHeaderAbbreviationMatch = proposedHebrew.match(
+    /<strong\s+class=["']dibur-hamatchil["']>\s*<abbr\b[^>]*>\s*(?:מתני|מתניתין|גמ|גמרא)["'׳״]*\s*<\/abbr>/i,
+  );
+  if (openingHeaderAbbreviationMatch) {
+    return {
+      valid: false,
+      reason: "Do not wrap מתני' or גמ' in <abbr> tags when they serve as the opening section header / dibbur hamatchil.",
+    };
+  }
+
+  const numeralAbbreviationMatch = proposedHebrew.match(
+    /<abbr\s+title=["']\s*ב?(?:אחד|אחת|שני|שתי|שלש|ארבע|חמש|שש|שבע|שמנ|תשע|עשר|מאה)[^"']*["']>\s*ב?[א-ת]["'׳״]+[א-ת]?\s*<\/abbr>/i,
+  );
+  if (numeralAbbreviationMatch) {
+    return {
+      valid: false,
+      reason: "Do not wrap Hebrew numerals in <abbr> tags. Numerals should be left as standard Hebrew characters (e.g. ג', ד', ז', כ\"א).",
     };
   }
 
@@ -635,8 +655,8 @@ const MAX_WORKED_EXAMPLES = 2;
 const FALLBACK_WORKED_EXAMPLE: Record<Commentator, WorkedExample> = {
   Rashi: {
     hebrewSource: "מתני' כ\"א תקיעות מפרש להו בפ' החליל",
-    hebrew: "<strong class=\"dibur-hamatchil\"><abbr title=\"מתניתין\">מתני'</abbr></strong> - "
-      + "<abbr title=\"עשרים ואחת\">כ\"א</abbr> תקיעות, <span class=\"explanation\">הגמרא</span> "
+    hebrew: "<strong class=\"dibur-hamatchil\">מתני'</strong> - "
+      + "כ\"א תקיעות, <span class=\"explanation\">הגמרא</span> "
       + "מפרש להו <abbr title=\"בפרק\">בפ'</abbr> החליל:",
     english: "<strong class=\"dibur-hamatchil\">The Mishnah:</strong> Twenty-one blasts — "
       + "[the Gemara] explains them in the chapter [entitled] Hechalil:",
