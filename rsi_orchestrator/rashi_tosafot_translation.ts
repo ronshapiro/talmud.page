@@ -162,8 +162,7 @@ export function verifyProposedHebrewWording(
   sourceHebrew: string,
   proposedHebrew: string,
 ): HebrewVerificationResult {
-  const withoutExplanations = proposedHebrew.replace(
-    /<span\s+class=["']explanation["']>[\S\s]*?<\/span>/gi, "");
+  const withoutExplanations = stripExplanations(proposedHebrew);
   if (/<span\s+class=["']explanation["']>/i.test(withoutExplanations)) {
     return {
       valid: false,
