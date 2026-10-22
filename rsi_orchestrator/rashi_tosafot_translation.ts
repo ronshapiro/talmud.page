@@ -127,15 +127,33 @@ export interface HebrewVerificationResult {
 }
 
 export function extractHebrewWordsForVerification(text: string): string {
+  // Strip explanatory notes added in proposed text (<span class="explanation">...</span>).
   const withoutExplanations = stripExplanations(text);
+  // Unwrap <abbr title="expansion">abbreviation</abbr> to just the original abbreviation text,
+  // so the abbreviation itself can be checked against the source text.
   const withoutAbbreviationMarkup = stripAbbreviationMarkup(withoutExplanations);
+  // Strip vowels (nikkud) and cantillation marks (U+0591-U+05C7) so vocalization differences
+  // are ignored.
   return stripHebrewNonletters(withoutAbbreviationMarkup)
+    // Strip image placeholder tokens (e.g. IMAGE_PLACEHOLDER_0) used when diagrams are extracted.
     .replace(/IMAGE_PLACEHOLDER_\d+/g, "")
+    // Replace remaining HTML tags (e.g. <strong class="dibur-hamatchil">) with a space to
+    // prevent concatenating words across tags.
     .replace(/<[^>]+>/g, " ")
+    // Replace HTML entities (e.g. &nbsp;) with a space.
     .replace(/&[\d#a-z]+;/gi, " ")
+    // Replace sentence and clause punctuation (colons, periods, commas, brackets, hyphens,
+    // dashes, and Hebrew maqaf) with spaces so word boundaries around punctuation are maintained.
     .replace(/[!(),.:;?[\]{}־–—-]/g, " ")
+    // Strip single/double quotes and Hebrew geresh/gershayim (U+05F3, U+05F4) without inserting
+    // spaces, so abbreviations and numerals normalize consistently (e.g. both כ"א and כ״א
+    // become כא).
     .replace(/["'׳״]/g, "")
+    // Strip any remaining characters that are not Hebrew letters (U+05D0-U+05EA), digits, or
+    // whitespace.
     .replace(/[^\d\s\u05D0-\u05EA]/g, "")
+    // Collapse all runs of whitespace into a single space and trim edges, yielding space-delimited
+    // words.
     .replace(/\s+/g, " ")
     .trim();
 }
