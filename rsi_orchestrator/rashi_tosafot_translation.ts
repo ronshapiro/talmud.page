@@ -187,6 +187,16 @@ export function verifyProposedHebrewWording(
     };
   }
 
+  const untouchableAbbreviationMatch = proposedHebrew.match(
+    /<abbr\b[^>]*>\s*(?:וגו|וכו|כו)["'׳״]*\s*<\/abbr>/i,
+  );
+  if (untouchableAbbreviationMatch) {
+    return {
+      valid: false,
+      reason: "Do not wrap וגו' or וכו' in <abbr> tags. Leave them untouched without <abbr> as they are recognized solely by their abbreviation.",
+    };
+  }
+
   const sourceWords = extractHebrewWordsForVerification(sourceHebrew);
   const proposedWords = extractHebrewWordsForVerification(proposedHebrew);
 

@@ -315,6 +315,38 @@ describe("verifyProposedHebrewWording", () => {
     expect(verification.reason).toContain("Missing title attribute in <abbr> tag");
   });
 
+  test("rejects <abbr> tags around וגו' and וכו' and כו'", () => {
+    const proposedWithVego = 'מתני\' וגו\' מפרש להו בפ\' החליל';
+    const invalidVego = '<abbr title="וגומר">וגו\'</abbr>';
+    const verificationVego = verifyProposedHebrewWording(
+      proposedWithVego, `מתני' ${invalidVego} מפרש להו בפ' החליל`);
+    expect(verificationVego.valid).toBe(false);
+    expect(verificationVego.reason).toContain("Do not wrap וגו' or וכו' in <abbr> tags");
+
+    const proposedWithVechehu = 'מתני\' וכו\' מפרש להו בפ\' החליל';
+    const invalidVechehu = '<abbr title="וכולי">וכו\'</abbr>';
+    const verificationVechehu = verifyProposedHebrewWording(
+      proposedWithVechehu, `מתני' ${invalidVechehu} מפרש להו בפ' החליל`);
+    expect(verificationVechehu.valid).toBe(false);
+    expect(verificationVechehu.reason).toContain("Do not wrap וגו' or וכו' in <abbr> tags");
+
+    const proposedWithChehu = 'מתני\' כו\' מפרש להו בפ\' החליל';
+    const invalidChehu = '<abbr title="כולי">כו\'</abbr>';
+    const verificationChehu = verifyProposedHebrewWording(
+      proposedWithChehu, `מתני' ${invalidChehu} מפרש להו בפ' החליל`);
+    expect(verificationChehu.valid).toBe(false);
+    expect(verificationChehu.reason).toContain("Do not wrap וגו' or וכו' in <abbr> tags");
+  });
+
+  test("accepts וגו' and וכו' untouched without <abbr> tags", () => {
+    const sourceWithTruncation = "שנאמר ופתח אהל מועד תשבו יומם ולילה וגו' וכו'";
+    const proposedWithTruncation = '<strong class="dibur-hamatchil">שנאמר</strong> - '
+      + "ופתח אהל מועד תשבו יומם ולילה וגו' וכו':";
+    const verification = verifyProposedHebrewWording(
+      sourceWithTruncation, proposedWithTruncation);
+    expect(verification.valid).toBe(true);
+  });
+
   test("rejects bracketed explanations [...] that add Hebrew letters outside of explanation span", () => {
     const proposedHebrew = 'מתני\' כ"א תקיעות [הגמרא] מפרש להו בפ\' החליל:';
     const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
