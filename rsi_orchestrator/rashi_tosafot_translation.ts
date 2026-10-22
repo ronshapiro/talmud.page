@@ -54,7 +54,7 @@ export {LongThreadSessionManager, isLongThreadBackend};
  */
 
 export const TASK_TYPE = "rashi_tosafot_translation";
-const PROMPT_VERSION = "v2";
+const PROMPT_VERSION = "v3";
 // The only tool this task type's headless calls may use — see the module doc above. Scoped to
 // this exact command so it can't fall back to arbitrary Bash use.
 const CONTEXT_FETCH_ALLOWED_TOOLS = [
@@ -606,9 +606,7 @@ export function listCandidatesForAllBooks(
   return all;
 }
 
-export function isFreshTranslation(
-  candidate: TranslationCandidate,
-): boolean {
+export function isFreshTranslation(candidate: TranslationCandidate): boolean {
   const record = readGenerationRecord(TASK_TYPE, candidate.page, candidate.ref);
   if (!record) return false;
   const result = checkTextStaleness(

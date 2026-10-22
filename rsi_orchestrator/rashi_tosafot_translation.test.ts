@@ -1130,7 +1130,7 @@ describe("base64 image decoding, placeholders, and restoration", () => {
       }
     });
 
-    test("recordGenerationForCandidate records promptVersion v2 under TASK_TYPE", () => {
+    test("recordGenerationForCandidate records promptVersion v3 under TASK_TYPE", () => {
       const upsertSpy = jest.spyOn(generationRecordModule, "upsertGenerationRecord")
         .mockImplementation(() => {});
 
@@ -1149,7 +1149,7 @@ describe("base64 image decoding, placeholders, and restoration", () => {
         expect(taskType).toBe("rashi_tosafot_translation");
         expect(page).toBe(testCandidate.page);
         expect(ref).toBe(testCandidate.ref);
-        expect(record.promptVersion).toBe("v2");
+        expect(record.promptVersion).toBe("v3");
       } finally {
         upsertSpy.mockRestore();
       }
