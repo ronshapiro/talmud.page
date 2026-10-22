@@ -1,0 +1,513 @@
+{
+  "Rashi on Keritot 7a:10:1": {
+    "dependsOn": [
+      "Rashi on Keritot 7a:10:1",
+      "Keritot 7a:10"
+    ],
+    "generatedAt": "2026-10-22T05:16:22.719Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במבעט</strong> - ביוה\"כ דאמר לא תכפר עליו משום הכי לא תני ליה:"
+  },
+  "Rashi on Keritot 7a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T05:16:55.363Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודין הוא</strong> - שלא יכפר:"
+  },
+  "Rashi on Keritot 7a:12:2": {
+    "dependsOn": [
+      "Rashi on Keritot 7a:12:1",
+      "Keritot 7a:10",
+      "Keritot 7a:11",
+      "Keritot 7a:12",
+      "Steinsaltz on Keritot 7a:12:1"
+    ],
+    "generatedAt": "2026-10-22T05:19:55.631Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא על השבין</strong> - דלרצונו בעינן:"
+  },
+  "Rashi on Keritot 7a:13:1": {
+    "dependsOn": [
+      "Rashi on Keritot 7a:13:1",
+      "Rashi on Keritot 7a:13:2",
+      "Rashi on Keritot 7a:12:1",
+      "Rashi on Keritot 7a:13:3"
+    ],
+    "generatedAt": "2026-10-22T05:25:05.521Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:13:1"
+    ],
+    "sourceText": "אשם לאו דוקא נקט דהא אשכחן אשם אמזיד בפרק שני <span class=\"parenthesized\">(לקמן כריתות ח:)</span> ד' מביאין על הזדון:"
+  },
+  "Rashi on Keritot 7a:13:2": {
+    "dependsOn": [
+      "Rashi on Keritot 7a:13:1",
+      "Rashi on Keritot 7a:13:2",
+      "Rashi on Keritot 7a:13:3"
+    ],
+    "generatedAt": "2026-10-22T05:27:20.759Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אך</strong> - בעשור לחדש יוה\"כ הוא:"
+  },
+  "Rashi on Keritot 7a:13:3": {
+    "dependsOn": [
+      "Rashi on Keritot 7a:13:1",
+      "Rashi on Keritot 7a:13:2"
+    ],
+    "generatedAt": "2026-10-22T05:28:22.323Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חלק</strong> - יום כפור לשבין ולא לשאינן שבין:"
+  },
+  "Rashi on Keritot 7a:14:1": {
+    "dependsOn": [
+      "Keritot 7a:14",
+      "Rashi on Keritot 7a:14:2",
+      "Keritot 7a:12",
+      "Rashi on Keritot 7a:20:1"
+    ],
+    "generatedAt": "2026-10-22T05:31:03.409Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי שבין</strong> - דקתני אין מכפרין אלא על השבין:"
+  },
+  "Rashi on Keritot 7a:14:2": {
+    "dependsOn": [
+      "Rashi on Keritot 7a:14:1",
+      "Rashi on Keritot 7a:13:1",
+      "Rashi on Keritot 7a:13:2",
+      "Rashi on Keritot 7a:13:3",
+      "Keritot 7a:12",
+      "Keritot 7a:13",
+      "Keritot 7a:14",
+      "Rashi on Keritot 2a:1:1",
+      "Rashi on Keritot 2a:1:2",
+      "Rashi on Keritot 2a:1:3"
+    ],
+    "generatedAt": "2026-10-22T05:41:29.351Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא קתני לא אם אמרת כו'</strong> - וא\"כ מאי קאמר היינו הך:"
+  },
+  "Rashi on Keritot 7a:15:1": {
+    "dependsOn": [
+      "Keritot 7a:15"
+    ],
+    "generatedAt": "2026-10-22T05:44:27.007Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא כי הא כו'</strong> - והיינו דקאמר חטאת אינו מכפר אלא על השבין ששבין משעת הפרשה עד שעת הקרבה ולא שהמיר דתו בינתיים והתם בעי למילף יוה\"כ דאם המיר דת קודם יוה\"כ וחזר בו אחר יוה\"כ תו לא מכפר עליה יום הכפורים אחר על עבירותיו שמקמי המרתו:"
+  },
+  "Rashi on Keritot 7a:16:1": {
+    "dependsOn": [
+      "Keritot 7a:16",
+      "Rashi on Keritot 7a:15:1"
+    ],
+    "generatedAt": "2026-10-22T05:46:03.362Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמאי נהי</strong> - דבקרבן אמרינן הואיל ונדחה לאחר הפרשה ידחה מעל המזבח אבל גברא לגבי יוה\"כ בר כפרה הוא כישראל מעליא:"
+  },
+  "Rashi on Keritot 7a:17:1": {
+    "dependsOn": [
+      "Keritot 7a:17",
+      "Keritot 7a:12",
+      "Keritot 7a:13",
+      "Rashi on Keritot 7a:17:2",
+      "Rashi on Keritot 7a:14:1"
+    ],
+    "generatedAt": "2026-10-22T05:49:07.244Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורמינהו</strong> - אהא דתני לעיל יוה\"כ אינו מכפר אלא על השבין:"
+  },
+  "Rashi on Keritot 7a:17:2": {
+    "dependsOn": [
+      "Rashi on Keritot 7a:17:1",
+      "Steinsaltz on Keritot 7a:17",
+      "Rashi on Shevuot 13a:12:1",
+      "Rashi on Keritot 7a:1:1",
+      "Rashi on Keritot 7a:2:1"
+    ],
+    "generatedAt": "2026-10-22T05:54:35.944Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקרא קדש</strong> - בתקון סדר התפלה:"
+  },
+  "Rashi on Keritot 7a:18:1": {
+    "dependsOn": [
+      "Keritot 7a:18"
+    ],
+    "generatedAt": "2026-10-22T05:57:35.073Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:18:1"
+    ],
+    "sourceText": "ה\"ג לא קשיא הא ר' יהודה הא רבי:"
+  },
+  "Rashi on Keritot 7a:19:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T05:58:59.822Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פורק עול</strong> - של כל המצות:"
+  },
+  "Rashi on Keritot 7a:19:2": {
+    "dependsOn": [
+      "Rashi on Keritot 7a:19:2",
+      "Sanhedrin 99b:4",
+      "Sanhedrin 99b:5",
+      "Rashi on Shevuot 13a:1:3",
+      "Rashi on Sanhedrin 99b:15:3"
+    ],
+    "generatedAt": "2026-10-22T06:04:38.400Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מגלה פנים</strong> - דורש באגדות של דופי כגון מנשה שהיה אומר מה היה לו למשה לומר ותמנע היתה פילגש:"
+  },
+  "Rashi on Keritot 7a:1:1": {
+    "dependsOn": [
+      "Rashi on Keritot 7a:1:2",
+      "Keritot 7a:1"
+    ],
+    "generatedAt": "2026-10-22T04:41:07.547Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנשאת לישראל. ואינה משלמת חומש</strong> - דלא זרה שהרי לא נתחללה שאם ימות בעלה ותנשא לכהן אוכלת או אם זרע אין לה הדרא לתרומה:"
+  },
+  "Rashi on Keritot 7a:1:2": {
+    "dependsOn": [
+      "Keritot 7a:1",
+      "Rashi on Keritot 7a:1:1",
+      "Rashi on Keritot 7a:1:2",
+      "Mishnah Terumot 7:2",
+      "Versions",
+      "Steinsaltz on Keritot 7a:1",
+      "Keritot 7a:2",
+      "Keritot 7a:3",
+      "Tosefta Kifshutah on Terumot 7:3:1"
+    ],
+    "generatedAt": "2026-10-22T04:49:07.595Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משלמת כו'</strong> - אשם ל\"ג:"
+  },
+  "Rashi on Keritot 7a:20:1": {
+    "dependsOn": [
+      "Rashi on Keritot 7a:20:1",
+      "Rashi on Keritot 7a:20:2",
+      "Rashi on Keritot 7a:20:3",
+      "Rashi on Keritot 7a:20:4",
+      "Keritot 7a:20",
+      "Rashi on Keritot 7a:18:1",
+      "Rashi on Keritot 7a:19:1",
+      "Rashi on Keritot 7a:19:2",
+      "Keritot 7a:18",
+      "Rashi on Keritot 7a:1:1",
+      "Rashi on Keritot 7a:1:2",
+      "Rashi on Keritot 7a:2:1",
+      "Rashi on Keritot 7a:3:1",
+      "Rashi on Keritot 7a:3:2",
+      "Steinsaltz on Keritot 7a:20:1",
+      "Steinsaltz comment #1 on Keritot 7a:20",
+      "Versions on Keritot 7a:20",
+      "Rashi on Keritot 2a:1:1",
+      "Rashi on Keritot 2a:1:2"
+    ],
+    "generatedAt": "2026-10-22T06:09:30.486Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:20:1"
+    ],
+    "sourceText": "ברייתא דקתני יוה\"כ מ\"מ רבי היא:"
+  },
+  "Rashi on Keritot 7a:20:2": {
+    "dependsOn": [
+      "Keritot 7a:20",
+      "Rashi on Keritot 7a:20:1",
+      "Keritot 7a:13"
+    ],
+    "generatedAt": "2026-10-22T06:13:51.403Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:20:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מודה רבי בעבירות דיוה\"כ</strong> - דהא דקתני לא התענה בו מכפר אעבירות דכל השנה אבל ההיא עבירה דעינוי לא מכפר ואך חלק נמי דקתני לעיל בעבירות דיומיה קאמר:"
+  },
+  "Rashi on Keritot 7a:20:3": {
+    "dependsOn": [
+      "Rashi on Keritot 7a:20:1",
+      "Rashi on Keritot 7a:20:2",
+      "Rashi on Keritot 7a:20:3",
+      "Rashi on Keritot 7a:20:4",
+      "Keritot 7a:20",
+      "Rashi on Keritot 7a:22:1",
+      "Rashi on Keritot 7a:22:2",
+      "Rashi on Shevuot 13a:15:2",
+      "Rashi on Keritot 7a:1:1",
+      "Rashi on Keritot 7a:4:1",
+      "Rashi on Keritot 7a:4:2"
+    ],
+    "generatedAt": "2026-10-22T06:18:25.622Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:20:3"
+    ],
+    "sourceText": "יום הכפורים אינו מכפר אלא היום כדכתיב <span class=\"parenthesized\">(ויקרא ט״ז:ל׳)</span> כי ביום הזה:"
+  },
+  "Rashi on Keritot 7a:20:4": {
+    "dependsOn": [
+      "Rashi on Keritot 7a:20:1",
+      "Rashi on Keritot 7a:20:2",
+      "Rashi on Keritot 7a:20:3",
+      "Rashi on Keritot 7a:2:1",
+      "Rashi on Keritot 7a:3:1",
+      "Rashi on Keritot 7a:4:1",
+      "Rashi on Keritot 7a:5:1"
+    ],
+    "generatedAt": "2026-10-22T06:20:53.604Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:20:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרת</strong> - הולך ערירי בלא בנים ואם יש לו מתים:"
+  },
+  "Rashi on Keritot 7a:22:1": {
+    "dependsOn": [
+      "Rashi on Keritot 7a:22:1",
+      "Rashi on Keritot 7a:22:2",
+      "Rashi on Keritot 7a:20:1"
+    ],
+    "generatedAt": "2026-10-22T06:22:40.523Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי נמי דעביד עבידתא סמוך לשקיעת החמה</strong> - דלא הוה שהות לכפורי:"
+  },
+  "Rashi on Keritot 7a:22:2": {
+    "dependsOn": [
+      "Rashi on Keritot 7a:22:1",
+      "Rashi on Keritot 7a:20:1",
+      "Rashi on Keritot 7a:20:2"
+    ],
+    "generatedAt": "2026-10-22T06:26:01.055Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:22:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"נ בהדי דעביד עבידתא פסקיה מרא דרפיק בה לשקיה ומית</strong> - מיד דלא הוה שהות לכפורי:"
+  },
+  "Rashi on Keritot 7a:23:1": {
+    "dependsOn": [
+      "Rashi on Keritot 7a:23:1",
+      "Keritot 7a:23",
+      "Rashi on Keritot 7a:18:1",
+      "Steinsaltz on Keritot 7a:23"
+    ],
+    "generatedAt": "2026-10-22T06:35:08.788Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:23:1"
+    ],
+    "sourceText": "ה\"ג מאי אף המגדף:"
+  },
+  "Rashi on Keritot 7a:24:1": {
+    "dependsOn": [
+      "Keritot 7a:24",
+      "Keritot 3b:15",
+      "Keritot 3b:16",
+      "Steinsaltz on Keritot 7a:24",
+      "Steinsaltz comment #1 on Keritot 7a:24",
+      "Rashi on Keritot 7a:23:1",
+      "Rashi on Keritot 7a:20:1",
+      "Rashi on Keritot 7a:20:2",
+      "Rashi on Keritot 2a:1:1"
+    ],
+    "generatedAt": "2026-10-22T06:42:01.169Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמעו לר' עקיבא</strong> - דמתני' ר\"ע היא כדמפרש לקמן מגדף מביא קרבן דברי ר' עקיבא ואמרי אף מגדף נמי כידעוני. תימה לי ולר' יוחנן דאמר לעיל <span class=\"parenthesized\">(כריתות דף ג:)</span> הואיל ושניהם בלאו אחד נאמרו מאי אף דקתני במתניתין:"
+  },
+  "Rashi on Keritot 7a:25:1": {
+    "dependsOn": [
+      "Keritot 7a:25"
+    ],
+    "generatedAt": "2026-10-22T06:44:15.952Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:25:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואומר חטאו ישא</strong> - מפרש לקמן דכרת דמגדף איירי בקרבן עבודת כוכבים:"
+  },
+  "Rashi on Keritot 7a:2:1": {
+    "dependsOn": [
+      "Keritot 7a:2",
+      "Rashi on Keritot 7a:1:1",
+      "Rashi on Keritot 7a:1:2",
+      "Rashi on Keritot 7a:3:1",
+      "Rashi on Keritot 7a:3:2"
+    ],
+    "generatedAt": "2026-10-22T04:53:44.867Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומיתתה בחנק</strong> - ורבי מאיר לטעמיה דאע\"ג דמעיקרא לאו זרה היא השתא מיהא זרה הויא:"
+  },
+  "Rashi on Keritot 7a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T04:54:29.528Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחכמים</strong> - היינו רבי יהודה בר פלוגתיה:"
+  },
+  "Rashi on Keritot 7a:3:2": {
+    "dependsOn": [
+      "Rashi on Keritot 7a:3:1",
+      "Keritot 7a:1",
+      "Keritot 7a:2",
+      "Keritot 7a:4",
+      "Keritot 7a:5",
+      "Keritot 7a:6",
+      "Rashi on Keritot 6b:27:1",
+      "Rashi on Keritot 6b:27:2"
+    ],
+    "generatedAt": "2026-10-22T04:56:24.585Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחת זו כו'</strong> - דבעינן זר מתחלתו:"
+  },
+  "Rashi on Keritot 7a:4:1": {
+    "dependsOn": [
+      "Keritot 7a:4"
+    ],
+    "generatedAt": "2026-10-22T04:59:52.879Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובשנויי דשנינן</strong> - דטעמיה דר\"מ משום דאיתקש לסיכה:"
+  },
+  "Rashi on Keritot 7a:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T05:01:43.544Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל נתינה דעלמא</strong> - כגון לא יתן עליה לבונה דמנחת חוטא בכזית דילפינן מונתן לכהן את הקדש <span class=\"parenthesized\">(ויקרא כ״ב:י״ד)</span> והכי מפרשא בפרק כל המנחות באות מצה <span class=\"parenthesized\">(מנחות נט:)</span>:"
+  },
+  "Rashi on Keritot 7a:5:1": {
+    "dependsOn": [
+      "Keritot 7a:5",
+      "Keritot 6b:23",
+      "Rashi on Keritot 6b:23:1",
+      "Keritot 6b:21",
+      "Keritot 6b:22"
+    ],
+    "generatedAt": "2026-10-22T05:05:24.104Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא ייסך כתיב</strong> - בשני יודין שדי חדא לתוך התיבה וקרי לא יסיך דמשמע מי שמצווה שלא יסיך לא לעצמו ולא לאחרים מצווה אחר עליו שלא לסוכו ועובד כוכבים לאו בר מצוה הוא:"
+  },
+  "Rashi on Keritot 7a:6:1": {
+    "dependsOn": [
+      "Rashi on Keritot 7a:6:1"
+    ],
+    "generatedAt": "2026-10-22T05:09:13.128Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כהן שסך בן בתו ישראל מתעגל בו כו'</strong> - ופי' כהן שסך את עצמו שמן יכול בן בתו ישראל לבא להתעגל בו ואפילו גדול ושף עצמו באבי אמו ואינו חושש אלמא כיון דבטלה בהתירא בטלה והכי תניא בהדיא בתוספתא דמסכת תרומות <span class=\"parenthesized\">(פ\"י ה\"י)</span> סך כהן את עצמו שמן של תרומה ומביא בן בתו ישראל ומעגלו על גביו. ובן בתו ישראל דנקט משום דרגיל אצלו והוא הדין לאחריני:"
+  },
+  "Rashi on Keritot 7a:8:1": {
+    "dependsOn": [
+      "Rashi on Keritot 7a:8:1"
+    ],
+    "generatedAt": "2026-10-22T05:12:04.803Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Keritot 7a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאינו מביא אשם תלוי</strong> - שאין אשם תלוי בא אלא על ספק חטאת קבועה כדמפרש בפ' בתרא <span class=\"parenthesized\">(לקמן כריתות כה.)</span>:"
+  }
+}
