@@ -447,7 +447,7 @@ describe("when the site language is Hebrew", () => {
     expect(rashiOf(target).didModifyUiWithAiVersion).toBe(true);
   });
 
-  test("an AI version with explanation markup extracts explanation into comment.commentary.Explanation", () => {
+  test("an AI version with explanation markup extracts explanation into comment.commentary.SyntheticExplanation", () => {
     const target = pageWithRashi({
       commentary: {
         Versions: {
@@ -465,12 +465,12 @@ describe("when the site language is Hebrew", () => {
     const rashi = rashiOf(target);
     expect(rashi.he).toBe("מתני׳ כ״א תקיעות, מפרש להו.");
     expect(rashi.originalHebrew).toBe("עברית מקורית");
-    expect(rashi.commentary?.Explanation).toBeDefined();
-    expect(rashi.commentary!.Explanation!.comments[0].ref).toBe("Rashi 1:explanation");
+    expect(rashi.commentary?.SyntheticExplanation).toBeDefined();
+    expect(rashi.commentary!.SyntheticExplanation!.comments[0].ref).toBe("Rashi 1:explanation");
     expect(
-      rashi.commentary!.Explanation!.comments[0].he,
+      rashi.commentary!.SyntheticExplanation!.comments[0].he,
     ).toBe('מתני׳ כ״א תקיעות, <span class="explanation">הגמרא</span> מפרש להו.');
-    expect(rashi.commentary!.Explanation!.comments[0].sourceRef).toBe("Explanation");
-    expect(rashi.commentary!.Explanation!.comments[0].sourceHeRef).toBe("ביאור");
+    expect(rashi.commentary!.SyntheticExplanation!.comments[0].sourceRef).toBe("Explanation");
+    expect(rashi.commentary!.SyntheticExplanation!.comments[0].sourceHeRef).toBe("ביאור");
   });
 });

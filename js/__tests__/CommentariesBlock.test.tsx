@@ -648,19 +648,19 @@ describe("nested commentaries", () => {
     );
 
     // Explanation should NOT be in the show-buttons toolbar
-    expect(queryAll(root, ".show-buttons a.explanation")).toHaveLength(0);
+    expect(queryAll(root, ".show-buttons a.synthetic-explanation")).toHaveLength(0);
 
     // Double click to open
-    doubleClick(query(root, ".IndividualComment:not(.explanation) .table-cell.hebrew"));
+    doubleClick(query(root, ".IndividualComment:not(.synthetic-explanation) .table-cell.hebrew"));
     // Both Rashi and Explanation comments are visible
     expect(commentTexts(root)).toContain("הגמרא");
 
     // Double click to close
-    doubleClick(query(root, ".IndividualComment:not(.explanation) .table-cell.hebrew"));
+    doubleClick(query(root, ".IndividualComment:not(.synthetic-explanation) .table-cell.hebrew"));
     expect(commentTexts(root)).not.toContain("הגמרא");
 
     // Double click to open again
-    doubleClick(query(root, ".IndividualComment:not(.explanation) .table-cell.hebrew"));
+    doubleClick(query(root, ".IndividualComment:not(.synthetic-explanation) .table-cell.hebrew"));
     expect(commentTexts(root)).toContain("הגמרא");
   });
 });

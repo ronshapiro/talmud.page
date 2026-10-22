@@ -30,8 +30,13 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
   },
   {
     englishName: "Explanation",
-    hebrewName: "ביאור",
+    hebrewName: "הכנות",
     className: "explanation",
+  },
+  {
+    englishName: "SyntheticExplanation",
+    hebrewName: "הסבר",
+    className: "synthetic-explanation",
   },
   {
     englishName: "Footnotes",

@@ -18,7 +18,7 @@ function extractExplanationSyntheticComment(comment: ApiComment): void {
     const withoutExplanations = stripExplanations(comment.he);
 
     comment.commentary = comment.commentary || {};
-    comment.commentary.Explanation = {
+    comment.commentary.SyntheticExplanation = {
       comments: [
         {
           ref: `${comment.ref}:explanation`,
