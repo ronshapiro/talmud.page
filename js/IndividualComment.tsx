@@ -60,7 +60,7 @@ function InternalTableRow({
       && hideGemaraTranslationByDefaultPreference.get() === "true"
       && commentaryKind.englishName === "Translation");
 
-  let renderedHebrew: string | React.ReactElement = hebrew;
+  let renderedHebrew: string | React.ReactElement | undefined = hebrew;
   const isRashiOrTosafot = (
     commentaryKind.englishName === "Rashi" || commentaryKind.englishName === "Tosafot"
   );
@@ -69,7 +69,7 @@ function InternalTableRow({
       rawHebrew: hebrew as string,
       originalHebrew: comment.originalHebrew as string,
       option: rashiTosafotHebrewOption(),
-    }).mainHebrew;
+    });
   }
 
   const classes = extraClasses || [];

@@ -1,32 +1,29 @@
 import {
   expandAbbreviations,
-  extractExplanations,
+  stripExplanations,
   formatRashiTosafotHebrew,
   stripAbbreviationMarkup,
   stripAddedPunctuation,
 } from "../rashi_tosafot_formatting";
 
 describe("rashi_tosafot_formatting", () => {
-  describe("extractExplanations", () => {
+  describe("stripExplanations", () => {
     test("extracts single explanation span and cleans Hebrew text", () => {
       const input = "מתני׳ כ״א תקיעות, <span class=\"explanation\">הגמרא</span> מפרש להו:";
-      const result = extractExplanations(input);
-      expect(result.explanations).toEqual(["הגמרא"]);
-      expect(result.withoutExplanations).toBe("מתני׳ כ״א תקיעות, מפרש להו:");
+      const result = stripExplanations(input);
+      expect(result).toBe("מתני׳ כ״א תקיעות, מפרש להו:");
     });
 
     test("extracts multiple explanation spans", () => {
       const input = "רש״י <span class=\"explanation\">פירש</span> אמר <span class=\"explanation\">רבו</span> סוף.";
-      const result = extractExplanations(input);
-      expect(result.explanations).toEqual(["פירש", "רבו"]);
-      expect(result.withoutExplanations).toBe("רש״י אמר סוף.");
+      const result = stripExplanations(input);
+      expect(result).toBe("רש״י אמר סוף.");
     });
 
     test("returns empty explanations when none present", () => {
       const input = "שלום עליכם חברים.";
-      const result = extractExplanations(input);
-      expect(result.explanations).toEqual([]);
-      expect(result.withoutExplanations).toBe("שלום עליכם חברים.");
+      const result = stripExplanations(input);
+      expect(result).toBe("שלום עליכם חברים.");
     });
   });
 
@@ -66,10 +63,9 @@ describe("rashi_tosafot_formatting", () => {
         rawHebrew: rawWithMarkup,
         option: "punctuated-only",
       });
-      expect(result.mainHebrew).toBe(
+      expect(result).toBe(
         "<b>מתני׳</b>: <abbr title=\"עשרים ואחת\">כ״א</abbr> תקיעות, מפרש להו.",
       );
-      expect(result.explanations).toEqual(["הגמרא"]);
     });
 
     test("formats as punctuated-expanded with expanded abbreviations", () => {
@@ -77,10 +73,9 @@ describe("rashi_tosafot_formatting", () => {
         rawHebrew: rawWithMarkup,
         option: "punctuated-expanded",
       });
-      expect(result.mainHebrew).toBe(
+      expect(result).toBe(
         "<b>מתני׳</b>: <abbr title=\"כ״א\" class=\"expanded-abbr\">עשרים ואחת</abbr> תקיעות, מפרש להו.",
       );
-      expect(result.explanations).toEqual(["הגמרא"]);
     });
 
     test("formats as as-is using originalHebrew when provided", () => {
@@ -90,8 +85,7 @@ describe("rashi_tosafot_formatting", () => {
         originalHebrew: originalVilna,
         option: "as-is",
       });
-      expect(result.mainHebrew).toBe(originalVilna);
-      expect(result.explanations).toEqual(["הגמרא"]);
+      expect(result).toBe(originalVilna);
     });
 
     test("formats as as-is by stripping added punctuation and markup when originalHebrew is absent", () => {
@@ -99,8 +93,7 @@ describe("rashi_tosafot_formatting", () => {
         rawHebrew: rawWithMarkup,
         option: "as-is",
       });
-      expect(result.mainHebrew).toBe("<b>מתני׳</b> כ״א תקיעות מפרש להו");
-      expect(result.explanations).toEqual(["הגמרא"]);
+      expect(result).toBe("<b>מתני׳</b> כ״א תקיעות מפרש להו");
     });
   });
 });

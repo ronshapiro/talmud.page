@@ -5,7 +5,6 @@ import {TestContext} from "./testing/configuration";
 import {
   attributes,
   classesOf,
-  click,
   doubleClick,
   mount,
   query,
@@ -40,10 +39,7 @@ function renderComment(
   contextOverrides = {},
   parentComment?: ApiComment,
   extraProps: {
-    segmentLabel?: string;
-    nestedSegmentLabel?: string;
-    toggleShowing?: (segmentLabel: string, className: string, force?: boolean) => boolean;
-    isExplanationOpen?: boolean;
+    toggleExplanation?: () => void;
   } = {},
 ): HTMLElement {
   return mount(
@@ -52,10 +48,7 @@ function renderComment(
         comment={comment(overrides)}
         commentaryKind={commentaryKind}
         parentComment={parentComment}
-        segmentLabel={extraProps.segmentLabel}
-        nestedSegmentLabel={extraProps.nestedSegmentLabel}
-        toggleShowing={extraProps.toggleShowing}
-        isExplanationOpen={extraProps.isExplanationOpen}
+        toggleExplanation={extraProps.toggleExplanation}
         />
     </TestContext>,
   );
@@ -521,82 +514,35 @@ describe("Rashi and Tosafot Hebrew formatting and explanation synthetic comments
     he: '<b>מתני׳</b>: <abbr title="עשרים ואחת">כ״א</abbr> תקיעות, '
       + '<span class="explanation">הגמרא</span> מפרש להו.',
     en: "twenty-one blasts, the Gemara explains them.",
+    commentary: {
+      Explanation: {
+        comments: [{
+          ref: "explanation 1",
+          he: "hebrew",
+          en: "english",
+          sourceRef: "Explanation",
+          sourceHeRef: "ביאור",
+        }],
+      },
+    },
   };
 
-  test("by default, explanation is extracted into comment.commentary.Explanation and indicator is shown", () => {
-    const testComment = comment(commentWithExplanation);
-    const root = mount(
-      <TestContext>
-        <IndividualComment
-          comment={testComment}
-          commentaryKind={RASHI}
-        />
-      </TestContext>,
-    );
-    const mainHebrew = query(root, ".table-row .table-cell.hebrew");
-    expect(mainHebrew.textContent).not.toContain("הגמרא");
-    expect(mainHebrew.textContent).toContain("כ״א");
-
-    expect(testComment.commentary?.Explanation).toBeDefined();
-    expect(testComment.commentary!.Explanation!.comments[0].he).toContain("הגמרא");
-
-    const indicator = query(root, ".explanation-inline-indicators");
-    expect(indicator).toBeTruthy();
-    expect(query(indicator, ".explanation-inline-plus")?.textContent).toBe("+");
-  });
-
-  test("double-clicking Hebrew cell calls toggleShowing with nestedSegmentLabel and explanation", () => {
-    const toggleShowing = jest.fn();
+  test("double-clicking Hebrew cell calls toggleExplanation", () => {
+    const toggleExplanation = jest.fn();
     const root = renderComment(
       commentWithExplanation,
       RASHI,
       {},
       undefined,
       {
-        nestedSegmentLabel: "test-nested-label",
-        toggleShowing,
-        isExplanationOpen: false,
+        toggleExplanation,
       },
     );
     const mainHebrew = query(root, ".table-row .table-cell.hebrew");
 
     doubleClick(mainHebrew);
 
-    expect(toggleShowing).toHaveBeenCalledWith("test-nested-label", "explanation");
-  });
-
-  test("clicking the explanation indicator calls toggleShowing", () => {
-    const toggleShowing = jest.fn();
-    const root = renderComment(
-      commentWithExplanation,
-      RASHI,
-      {},
-      undefined,
-      {
-        nestedSegmentLabel: "test-nested-label",
-        toggleShowing,
-        isExplanationOpen: false,
-      },
-    );
-    const indicator = query(root, ".explanation-inline-indicators");
-
-    click(indicator);
-
-    expect(toggleShowing).toHaveBeenCalledWith("test-nested-label", "explanation");
-  });
-
-  test("when isExplanationOpen is true, indicator is hidden", () => {
-    const root = renderComment(
-      commentWithExplanation,
-      RASHI,
-      {},
-      undefined,
-      {
-        nestedSegmentLabel: "test-nested-label",
-        isExplanationOpen: true,
-      },
-    );
-    expect(queryOrNull(root, ".explanation-inline-indicators")).toBeNull();
+    expect(toggleExplanation).toHaveBeenCalled();
   });
 
   test("punctuated-expanded preference expands abbreviations in the main cell", () => {

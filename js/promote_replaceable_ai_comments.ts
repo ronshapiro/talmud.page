@@ -6,45 +6,31 @@ import {
 } from "../apiTypes";
 import {AI_EDIT_COMMENT_NAME} from "./commentary_constants";
 import isEmptyText from "./is_empty_text";
-import {extractExplanations} from "./rashi_tosafot_formatting";
+import {stripExplanations} from "./rashi_tosafot_formatting";
 import {isSiteLanguageHebrew} from "./settings";
 
-export function extractExplanationSyntheticComment(comment: ApiComment): void {
+function extractExplanationSyntheticComment(comment: ApiComment): void {
   if (comment.sourceRef === "Explanation" || comment.ref.endsWith(":explanation")) {
     return;
   }
-  const collectedExplanations: string[] = [];
 
-  const processText = (text: sefaria.TextType): sefaria.TextType => {
-    if (typeof text === "string") {
-      if (text.includes('class="explanation"')) {
-        const {withoutExplanations, explanations} = extractExplanations(text);
-        collectedExplanations.push(...explanations);
-        return withoutExplanations;
-      }
-      return text;
-    }
-    if (Array.isArray(text)) {
-      return text.map(processText) as any;
-    }
-    return text;
-  };
+  if (typeof comment.he === "string" && comment.he.includes('class="explanation"')) {
+    const withoutExplanations = stripExplanations(comment.he);
 
-  comment.he = processText(comment.he);
-
-  if (collectedExplanations.length > 0) {
     comment.commentary = comment.commentary || {};
     comment.commentary.Explanation = {
       comments: [
         {
           ref: `${comment.ref}:explanation`,
-          he: collectedExplanations.join(" "),
+          he: comment.he,
           en: "",
           sourceRef: "Explanation",
           sourceHeRef: "ביאור",
         },
       ],
     };
+
+    comment.he = withoutExplanations;
   }
 }
 

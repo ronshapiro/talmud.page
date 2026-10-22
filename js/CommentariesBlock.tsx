@@ -305,9 +305,9 @@ export function CommentariesBlock({
 
   const renderButton = (
     commentaryKind: CommentaryType, isShowing: boolean, commentary: Commentary,
-  ): React.ReactElement | null => {
+  ): React.ReactElement => {
     if (shouldHide(commentaryKind)) {
-      return JSX_NOOP;
+      return <>{JSX_NOOP}</>;
     }
 
     const onClick = () => {

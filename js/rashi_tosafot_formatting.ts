@@ -1,34 +1,16 @@
 import {RashiTosafotHebrewOption} from "./settings";
 
-export interface FormattedRashiTosafotHebrew {
-  mainHebrew: string;
-  explanations: string[];
-}
 
 /**
- * Extracts all `<span class="explanation">...</span>` elements from Hebrew markup,
- * returning the cleaned Hebrew text and an array of explanation strings.
+ * Strips all `<span class="explanation">...</span>` elements from Hebrew markup,
+ * returning the cleaned Hebrew text.
  */
-export function extractExplanations(hebrewHtml: string): {
-  withoutExplanations: string;
-  explanations: string[];
-} {
-  const explanations: string[] = [];
-  const explanationRegex = /<span\s+class=["']explanation["']>([\S\s]*?)<\/span>/gi;
-  let match: RegExpExecArray | null = explanationRegex.exec(hebrewHtml);
-  while (match !== null) {
-    const content = match[1].trim();
-    if (content) {
-      explanations.push(content);
-    }
-    match = explanationRegex.exec(hebrewHtml);
-  }
-  const withoutExplanations = hebrewHtml
+export function stripExplanations(hebrewHtml: string): string {
+  return hebrewHtml
     .replace(/<span\s+class=["']explanation["']>[\S\s]*?<\/span>/gi, "")
     .replace(/[\t ]{2,}/g, " ")
     .replace(/\s+([!,.:;?])/g, "$1")
     .trim();
-  return {withoutExplanations, explanations};
 }
 
 /**
@@ -71,35 +53,21 @@ export function formatRashiTosafotHebrew(parameters: {
   rawHebrew: string;
   originalHebrew?: string;
   option: RashiTosafotHebrewOption;
-}): FormattedRashiTosafotHebrew {
+}): string {
   const {rawHebrew, originalHebrew, option} = parameters;
-  const {withoutExplanations, explanations} = extractExplanations(rawHebrew);
+  const withoutExplanations = stripExplanations(rawHebrew);
 
   if (option === "as-is") {
     if (originalHebrew) {
-      return {
-        mainHebrew: originalHebrew,
-        explanations,
-      };
+      return originalHebrew;
     }
-    const unexpanded = stripAbbreviationMarkup(withoutExplanations);
-    const unpunctuated = stripAddedPunctuation(unexpanded);
-    return {
-      mainHebrew: unpunctuated,
-      explanations,
-    };
+    return stripAddedPunctuation(stripAbbreviationMarkup(withoutExplanations));
   }
 
   if (option === "punctuated-expanded") {
-    return {
-      mainHebrew: expandAbbreviations(withoutExplanations),
-      explanations,
-    };
+    return expandAbbreviations(withoutExplanations);
   }
 
   // Default: "punctuated-only"
-  return {
-    mainHebrew: withoutExplanations,
-    explanations,
-  };
+  return withoutExplanations;
 }
