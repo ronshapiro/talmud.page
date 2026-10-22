@@ -385,7 +385,7 @@ export function CommentariesBlock({
     const buttons = [];
     let wouldAnyButtonBeHidden = false;
     for (const [commentary, commentaryKind] of commentariesToShow) {
-      if (shouldHide(commentaryKind, false)) continue;
+      if (shouldHide(commentaryKind)) continue;
       const wouldThisButtonBeHidden = (
         buttons.length > MAX_BUTTONS_TO_SHOW_BEFORE_SHOWING_MORE
           && commentariesToShow.length > (MAX_BUTTONS_TO_SHOW_BEFORE_SHOWING_MORE + 2)
@@ -401,16 +401,11 @@ export function CommentariesBlock({
       buttons.push(renderButton(showMoreCommentaryKind(showAll), false, {comments: []}));
     }
 
-    const filteredButtons = buttons.filter(x => x);
-    if (depth! > 0 && filteredButtons.length === 0) {
-      return JSX_NOOP;
-    }
-
     return (
       <InternalTableRow
         id={`${segmentLabel} show buttons`}
         key="show buttons"
-        hebrew={<>{filteredButtons}</>}
+        hebrew={<>{buttons.filter(x => x)}</>}
         extraClasses={["show-buttons"]} />
     );
   };
@@ -452,14 +447,11 @@ export function CommentariesBlock({
   const output = [];
   for (const [commentary, commentaryKind] of getOpenCommentariesInOrder(
     kindsByClassName)) {
-    const closeButton = renderButton(commentaryKind, true, commentary);
-    if (closeButton) {
-      output.push(
-        <InternalTableRow
-          id={`${segmentLabel} ${commentaryKind.englishName}`}
-          key={commentaryKind.englishName + " close button"}
-          hebrew={closeButton} />);
-    }
+    output.push(
+      <InternalTableRow
+        id={`${segmentLabel} ${commentaryKind.englishName}`}
+        key={commentaryKind.englishName + " close button"}
+        hebrew={renderButton(commentaryKind, true, commentary)} />);
 
     if (commentaryKind.renderCommentsAsNestedCommentaries && !syntheticCommentaryKinds) {
       output.push(renderCommentsAsNestedCommentaries(commentary, commentaryKind.className));
@@ -472,10 +464,7 @@ export function CommentariesBlock({
             comment={comment}
             commentaryKind={commentaryKind}
             parentComment={parentComment}
-            segmentLabel={segmentLabel}
-            nestedSegmentLabel={nestedSegmentLabel}
-            toggleShowing={toggleShowing}
-            isExplanationOpen={(getOrdering(nestedSegmentLabel) || []).includes("explanation")}
+            toggleExplanation={() => toggleShowing(nestedSegmentLabel, "explanation")}
             />,
           renderNestedCommentariesBlock({
             commentaries: comment.commentary || {},
@@ -487,13 +476,7 @@ export function CommentariesBlock({
     }
   }
 
-  const showButtons = renderShowButtons();
-  if (showButtons) {
-    output.push(showButtons);
-  }
-  if (output.length === 0) {
-    return JSX_NOOP;
-  }
+  output.push(renderShowButtons());
   return <>{output}</>;
 }
 CommentariesBlock.propTypes = {
