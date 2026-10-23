@@ -185,17 +185,21 @@ function BaseCell({
     ? {dangerouslySetInnerHTML: {__html: sanitizedText}}
     : {children: text};
 
-  /* eslint-disable react/jsx-props-no-spreading */
   const visualIndicatorProp = visualIndicator
     ? {
       children: (
         <>
-          <span {...childrenProp} />{visualIndicator}
+          {typeof text === "string" ? (
+            // eslint-disable-next-line react/no-danger
+            <span dangerouslySetInnerHTML={{__html: sanitizedText}} />
+          ) : (
+            <span>{text}</span>
+          )}
+          {visualIndicator}
         </>
       ),
     }
     : childrenProp;
-  /* eslint-enable react/jsx-props-no-spreading */
 
   const ref = useHtmlRef<HTMLDivElement>();
 

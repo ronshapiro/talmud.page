@@ -267,7 +267,7 @@ export function Segment({
   };
 
   const hasSteinsaltzTranslation = segments.some(
-    segment => Boolean(segment?.commentary?.Translation || segment?.commentary?.Steinsaltz),
+    segment => segment?.commentary?.Translation || segment?.commentary?.Steinsaltz,
   );
   const doubleClickHintSurfaceType = (
     hebrews.length === 1 && hasSteinsaltzTranslation && !isSteinsaltzCommentRendered

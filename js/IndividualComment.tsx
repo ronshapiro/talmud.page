@@ -85,19 +85,11 @@ function InternalTableRow({
     return undefined;
   })();
 
-  const doubleClickHintSurfaceType = (() => {
-    if (commentaryKind.englishName === "Rashi" && comment.commentary?.Explanation && toggleExplanation) {
-      return DoubleClickHintSurfaceType.RASHI_EXPLANATION;
-    }
-    return undefined;
-  })();
-
   const createRow = (
     key: string,
     _hebrew: string | React.ReactElement | undefined,
     _english: string | undefined,
     doubleClickListener?: () => void,
-    rowDoubleClickHintSurfaceType?: DoubleClickHintSurfaceType,
   ) => (
     <TableRow
       key={key}
@@ -111,7 +103,11 @@ function InternalTableRow({
         commentaryKind.englishName === "Translation" && context.expandEnglishByDefault()
       }
       hebrewDoubleClickListener={doubleClickListener}
-      doubleClickHintSurfaceType={rowDoubleClickHintSurfaceType}
+      doubleClickHintSurfaceType={
+        commentaryKind.englishName === "Rashi" && comment.commentary?.Explanation && toggleExplanation
+          ? DoubleClickHintSurfaceType.RASHI_EXPLANATION
+          : undefined
+      }
     />
   );
 
@@ -122,7 +118,6 @@ function InternalTableRow({
         renderedHebrew,
         expandableTranslations ? "" : english,
         hebrewDoubleClickListener,
-        doubleClickHintSurfaceType,
       )}
       {expandableTranslations && englishSteinsaltzWithHebrew
        && createRow("main-translation", "", english)}

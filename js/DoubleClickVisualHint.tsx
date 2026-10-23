@@ -1,6 +1,13 @@
 import * as React from "react";
+import {
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import * as PropTypes from "prop-types";
 import {useConfiguration} from "./context";
+import {LocalStorageInt} from "./localStorage";
 
 export const DoubleClickHintSurfaceType = {
   STEINSALTZ: "steinsaltz",
@@ -16,24 +23,12 @@ export const VISUAL_HINT_PULSE_DURATION_MILLISECONDS = 950;
 export const VISUAL_HINT_PAUSE_DURATION_MILLISECONDS = 2000;
 export const VISUAL_HINT_PULSE_CYCLE_COUNT = 3;
 
-function getLastDoubleTapStorageKey(surfaceType: string): string {
-  return `doubleClickHint.lastDoubleTap.${surfaceType}`;
+function getLastDoubleTapStorage(surfaceType: string): LocalStorageInt {
+  return new LocalStorageInt(`doubleClickHint.lastDoubleTap.${surfaceType}`);
 }
 
-function getLastDisplayedStorageKey(surfaceType: string): string {
-  return `doubleClickHint.lastDisplayed.${surfaceType}`;
-}
-
-function readStoredTimestamp(storageKey: string): number | undefined {
-  if (typeof window === "undefined" || !window.localStorage) {
-    return undefined;
-  }
-  const storedValue = window.localStorage.getItem(storageKey);
-  if (!storedValue) {
-    return undefined;
-  }
-  const parsedTimestamp = parseInt(storedValue, 10);
-  return Number.isNaN(parsedTimestamp) ? undefined : parsedTimestamp;
+function getLastDisplayedStorage(surfaceType: string): LocalStorageInt {
+  return new LocalStorageInt(`doubleClickHint.lastDisplayed.${surfaceType}`);
 }
 
 const claimedHintsInCurrentSession = new Set<string>();
@@ -42,7 +37,7 @@ export function shouldDisplayDoubleClickVisualHint(
   surfaceType: DoubleClickHintSurfaceType,
   currentTimestamp: number = Date.now(),
 ): boolean {
-  if (typeof window === "undefined" || !window.localStorage) {
+  if (!window?.localStorage) {
     return false;
   }
 
@@ -50,7 +45,7 @@ export function shouldDisplayDoubleClickVisualHint(
     return false;
   }
 
-  const lastDoubleTapTimestamp = readStoredTimestamp(getLastDoubleTapStorageKey(surfaceType));
+  const lastDoubleTapTimestamp = getLastDoubleTapStorage(surfaceType).get();
   if (lastDoubleTapTimestamp !== undefined) {
     const elapsedSinceLastDoubleTap = currentTimestamp - lastDoubleTapTimestamp;
     if (elapsedSinceLastDoubleTap >= 0 && elapsedSinceLastDoubleTap < ONE_MONTH_IN_MILLISECONDS) {
@@ -58,7 +53,7 @@ export function shouldDisplayDoubleClickVisualHint(
     }
   }
 
-  const lastDisplayedTimestamp = readStoredTimestamp(getLastDisplayedStorageKey(surfaceType));
+  const lastDisplayedTimestamp = getLastDisplayedStorage(surfaceType).get();
   if (lastDisplayedTimestamp !== undefined) {
     const elapsedSinceLastDisplayed = currentTimestamp - lastDisplayedTimestamp;
     if (elapsedSinceLastDisplayed >= 0 && elapsedSinceLastDisplayed < ONE_MONTH_IN_MILLISECONDS) {
@@ -73,37 +68,31 @@ export function claimDoubleClickVisualHint(
   surfaceType: DoubleClickHintSurfaceType,
   currentTimestamp: number = Date.now(),
 ): boolean {
-  if (!shouldDisplayDoubleClickVisualHint(surfaceType, currentTimestamp)) {
-    return false;
+  if (shouldDisplayDoubleClickVisualHint(surfaceType, currentTimestamp)) {
+    claimedHintsInCurrentSession.add(surfaceType);
+    return true;
   }
-  claimedHintsInCurrentSession.add(surfaceType);
-  return true;
+  return false;
 }
 
 export function recordDoubleClickVisualHintDisplayed(
   surfaceType: DoubleClickHintSurfaceType,
   currentTimestamp: number = Date.now(),
 ): void {
-  if (typeof window === "undefined" || !window.localStorage) {
+  if (!window?.localStorage) {
     return;
   }
-  window.localStorage.setItem(
-    getLastDisplayedStorageKey(surfaceType),
-    currentTimestamp.toString(),
-  );
+  getLastDisplayedStorage(surfaceType).set(currentTimestamp);
 }
 
 export function recordDoubleClickInteraction(
   surfaceType: DoubleClickHintSurfaceType,
   currentTimestamp: number = Date.now(),
 ): void {
-  if (typeof window === "undefined" || !window.localStorage) {
+  if (!window?.localStorage) {
     return;
   }
-  window.localStorage.setItem(
-    getLastDoubleTapStorageKey(surfaceType),
-    currentTimestamp.toString(),
-  );
+  getLastDoubleTapStorage(surfaceType).set(currentTimestamp);
   window.dispatchEvent(
     new CustomEvent("doubleClickInteraction", {
       detail: {surfaceType},
@@ -113,10 +102,10 @@ export function recordDoubleClickInteraction(
 
 export function resetDoubleClickVisualHintState(): void {
   claimedHintsInCurrentSession.clear();
-  if (typeof window !== "undefined" && window.localStorage) {
+  if (window?.localStorage) {
     for (const surfaceType of Object.values(DoubleClickHintSurfaceType)) {
-      window.localStorage.removeItem(getLastDoubleTapStorageKey(surfaceType));
-      window.localStorage.removeItem(getLastDisplayedStorageKey(surfaceType));
+      window.localStorage.removeItem(`doubleClickHint.lastDoubleTap.${surfaceType}`);
+      window.localStorage.removeItem(`doubleClickHint.lastDisplayed.${surfaceType}`);
     }
   }
 }
@@ -138,13 +127,13 @@ export function DoubleClickVisualHint({
   pulseDurationMilliseconds = VISUAL_HINT_PULSE_DURATION_MILLISECONDS,
   pauseDurationMilliseconds = VISUAL_HINT_PAUSE_DURATION_MILLISECONDS,
 }: DoubleClickVisualHintProps): React.ReactElement | null {
-  const containerRef = React.useRef<HTMLDivElement>(null);
-  const [isVisibleOnScreen, setIsVisibleOnScreen] = React.useState(false);
-  const [currentCycle, setCurrentCycle] = React.useState(0);
-  const [isPulsating, setIsPulsating] = React.useState(false);
-  const [isFinished, setIsFinished] = React.useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [isVisibleOnScreen, setIsVisibleOnScreen] = useState(false);
+  const [currentCycle, setCurrentCycle] = useState(0);
+  const [isPulsating, setIsPulsating] = useState(false);
+  const [isFinished, setIsFinished] = useState(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (typeof IntersectionObserver === "undefined") {
       setIsVisibleOnScreen(true);
       return undefined;
@@ -167,7 +156,7 @@ export function DoubleClickVisualHint({
     };
   }, []);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (!isVisibleOnScreen || currentCycle > 0 || isFinished) {
       return undefined;
     }
@@ -181,7 +170,7 @@ export function DoubleClickVisualHint({
     };
   }, [isVisibleOnScreen, currentCycle, isFinished, initialDelayMilliseconds]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (currentCycle === 0 || isFinished) {
       return undefined;
     }
@@ -264,17 +253,16 @@ export function useDoubleClickVisualHint(
 ): UseDoubleClickVisualHintResult {
   const configuration = useConfiguration();
 
-  const hasDoubleClickListener = Boolean(doubleClickListener);
-  const effectiveSurfaceType = hasDoubleClickListener ? surfaceType : undefined;
+  const effectiveSurfaceType = doubleClickListener ? surfaceType : undefined;
 
-  const [isVisualHintActive, setIsVisualHintActive] = React.useState(() => {
+  const [isVisualHintActive, setIsVisualHintActive] = useState(() => {
     if (configuration.isFake || !effectiveSurfaceType) {
       return false;
     }
     return claimDoubleClickVisualHint(effectiveSurfaceType);
   });
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (!effectiveSurfaceType || !isVisualHintActive) {
       return undefined;
     }
@@ -290,7 +278,7 @@ export function useDoubleClickVisualHint(
     };
   }, [effectiveSurfaceType, isVisualHintActive]);
 
-  const wrappedDoubleClickListener = React.useMemo(() => {
+  const wrappedDoubleClickListener = useMemo(() => {
     if (!doubleClickListener && !effectiveSurfaceType) {
       return undefined;
     }
