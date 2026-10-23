@@ -197,25 +197,6 @@ export function verifyProposedHebrewWording(
     };
   }
 
-  const openingHeaderAbbreviationMatch = proposedHebrew.match(
-    /<strong\s+class=["']dibur-hamatchil["']>\s*<abbr\b[^>]*>\s*(?:מתני|מתניתין|גמ|גמרא)["'׳״]*\s*<\/abbr>/i,
-  );
-  if (openingHeaderAbbreviationMatch) {
-    return {
-      valid: false,
-      reason: "Do not wrap מתני' or גמ' in <abbr> tags when they serve as the opening section header / dibbur hamatchil.",
-    };
-  }
-
-  const pageOrChapterNumeralMatch = proposedHebrew.match(
-    /(?:\s|^|[^\u05D0-\u05EA])(?:[בוש]?[בד])?(?:דף|פרק|בפ['׳])(?:<\/abbr>)?\s*["'״]?\s*<abbr\s+title=["'][^"']+["']>\s*ב?[\d"'.:א-ת׳״]{1,5}\s*<\/abbr>/i,
-  );
-  if (pageOrChapterNumeralMatch) {
-    return {
-      valid: false,
-      reason: "Do not wrap Hebrew numerals in <abbr> tags when they refer to page, daf, or chapter numbers (e.g. דף ב', פרק ד').",
-    };
-  }
 
   const sourceWords = extractHebrewWordsForVerification(sourceHebrew);
   const proposedWords = extractHebrewWordsForVerification(proposedHebrew);

@@ -265,7 +265,7 @@ describe("verifyProposedHebrewWording", () => {
 
   test("accepts valid <abbr title=\"...\"> abbreviation expansions", () => {
     const proposedHebrew = '<strong class="dibur-hamatchil">מתני\'</strong> - '
-      + 'כ"א תקיעות, מפרש להו <abbr title="בפרק">בפ\'</abbr> החליל:';
+      + '<abbr title="עשרים ואחת">כ"א</abbr> תקיעות, מפרש להו <abbr title="בפרק">בפ\'</abbr> החליל:';
     const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
     expect(verification.valid).toBe(true);
   });
@@ -338,38 +338,40 @@ describe("verifyProposedHebrewWording", () => {
     expect(verificationChulei.reason).toContain("Do not wrap וגו', וכו'");
   });
 
-  test("rejects <abbr> tags around opening section headers like מתני' or גמ'", () => {
+  test("accepts <abbr> tags around opening section headers like מתני' or גמ' on cpu", () => {
     const sourceWithOpeningMishnah = "מתני' כ\"א תקיעות";
-    const invalidOpeningMishnah = '<strong class="dibur-hamatchil"><abbr title="מתניתין">מתני\'</abbr></strong> - כ"א תקיעות:';
+    const proposedOpeningMishnah = '<strong class="dibur-hamatchil"><abbr title="מתניתין">מתני\'</abbr></strong> - <abbr title="עשרים ואחת">כ"א</abbr> תקיעות:';
     const verificationOpeningMishnah = verifyProposedHebrewWording(
-      sourceWithOpeningMishnah, invalidOpeningMishnah);
-    expect(verificationOpeningMishnah.valid).toBe(false);
-    expect(verificationOpeningMishnah.reason).toContain("Do not wrap מתני' or גמ' in <abbr> tags");
+      sourceWithOpeningMishnah, proposedOpeningMishnah);
+    expect(verificationOpeningMishnah.valid).toBe(true);
 
     const sourceWithOpeningGemara = "גמ' מנא הני מילי";
-    const invalidOpeningGemara = '<strong class="dibur-hamatchil"><abbr title="גמרא">גמ\'</abbr></strong> - מנא הני מילי:';
+    const proposedOpeningGemara = '<strong class="dibur-hamatchil"><abbr title="גמרא">גמ\'</abbr></strong> - מנא הני מילי:';
     const verificationOpeningGemara = verifyProposedHebrewWording(
-      sourceWithOpeningGemara, invalidOpeningGemara);
-    expect(verificationOpeningGemara.valid).toBe(false);
-    expect(verificationOpeningGemara.reason).toContain("Do not wrap מתני' or גמ' in <abbr> tags");
+      sourceWithOpeningGemara, proposedOpeningGemara);
+    expect(verificationOpeningGemara.valid).toBe(true);
   });
 
-  test("rejects <abbr> tags around page or chapter reference numerals", () => {
+  test("accepts <abbr> tags around page or chapter reference numerals on cpu", () => {
     const sourceWithChapterNumeral = "כמו בההיא דפרק ד' אחין";
-    const invalidChapterNumeral = 'כמו בההיא דפרק <abbr title="ארבעה">ד\'</abbr> אחין';
+    const proposedChapterNumeral = 'כמו בההיא דפרק <abbr title="ארבעה">ד\'</abbr> אחין';
     const verificationChapterNumeral = verifyProposedHebrewWording(
-      sourceWithChapterNumeral, invalidChapterNumeral);
-    expect(verificationChapterNumeral.valid).toBe(false);
-    expect(verificationChapterNumeral.reason).toContain(
-      "Do not wrap Hebrew numerals in <abbr> tags when they refer to page, daf, or chapter numbers");
+      sourceWithChapterNumeral, proposedChapterNumeral);
+    expect(verificationChapterNumeral.valid).toBe(true);
 
     const sourceWithPageNumeral = "כדאמרינן לקמן דף ב. ושם";
-    const invalidPageNumeral = 'כדאמרינן לקמן דף <abbr title="שתים">ב.</abbr> ושם';
+    const proposedPageNumeral = 'כדאמרינן לקמן דף <abbr title="שתים">ב.</abbr> ושם';
     const verificationPageNumeral = verifyProposedHebrewWording(
-      sourceWithPageNumeral, invalidPageNumeral);
-    expect(verificationPageNumeral.valid).toBe(false);
-    expect(verificationPageNumeral.reason).toContain(
-      "Do not wrap Hebrew numerals in <abbr> tags when they refer to page, daf, or chapter numbers");
+      sourceWithPageNumeral, proposedPageNumeral);
+    expect(verificationPageNumeral.valid).toBe(true);
+  });
+
+  test("accepts <abbr> tags around ע\"ה for עליו השלום", () => {
+    const sourceWithAlavHashalom = 'משה רבינו ע"ה אמר';
+    const proposedWithAlavHashalom = 'משה רבינו <abbr title="עליו השלום">ע"ה</abbr> אמר:';
+    const verification = verifyProposedHebrewWording(
+      sourceWithAlavHashalom, proposedWithAlavHashalom);
+    expect(verification.valid).toBe(true);
   });
 
   test("accepts <abbr> tags around regular numbers representing counts or quantities", () => {
