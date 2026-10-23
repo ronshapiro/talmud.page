@@ -187,6 +187,17 @@ export function verifyProposedHebrewWording(
     };
   }
 
+  const untouchableAbbreviationMatch = proposedHebrew.match(
+    /<abbr\b[^>]*>\s*(?:וגו|וכו|כו|הקב["״]ה|רש["״]י|חז["״]ל)["'׳״]*\s*<\/abbr>/i,
+  );
+  if (untouchableAbbreviationMatch) {
+    return {
+      valid: false,
+      reason: "Do not wrap וגו', וכו', הקב\"ה, רש\"י, or חז\"ל in <abbr> tags. Leave them untouched without <abbr> as they are recognized solely by their abbreviation.",
+    };
+  }
+
+
   const sourceWords = extractHebrewWordsForVerification(sourceHebrew);
   const proposedWords = extractHebrewWordsForVerification(proposedHebrew);
 
@@ -625,7 +636,7 @@ const MAX_WORKED_EXAMPLES = 2;
 const FALLBACK_WORKED_EXAMPLE: Record<Commentator, WorkedExample> = {
   Rashi: {
     hebrewSource: "מתני' כ\"א תקיעות מפרש להו בפ' החליל",
-    hebrew: "<strong class=\"dibur-hamatchil\"><abbr title=\"מתניתין\">מתני'</abbr></strong> - "
+    hebrew: "<strong class=\"dibur-hamatchil\">מתני'</strong> - "
       + "<abbr title=\"עשרים ואחת\">כ\"א</abbr> תקיעות, <span class=\"explanation\">הגמרא</span> "
       + "מפרש להו <abbr title=\"בפרק\">בפ'</abbr> החליל:",
     english: "<strong class=\"dibur-hamatchil\">The Mishnah:</strong> Twenty-one blasts — "
