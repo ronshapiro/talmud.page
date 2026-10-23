@@ -2,9 +2,9 @@
 First-turn prompt for checking a proposed translation (rashi_tosafot_translation.ts's
 critiquePrompt). Everything before "Target comment to check" is static, so it stays a cacheable
 prefix.
-Params: originalHebrew, proposedHebrew, proposedEnglish, imageNote (optional).
+Params: commentRef, originalHebrew, proposedHebrew, proposedEnglish, imageNote (optional).
 -->
-# Instructions (ID: CRITIQUE_TASK)
+# Instructions
 
 You proposed this edit to a Talmud commentary comment. Check it before it ships.
 
@@ -20,6 +20,7 @@ Keep any rejection reason to a single brief sentence. Do not include verbose com
 
 ## Target comment to check
 
+Comment ref: {{commentRef}}
 Original Hebrew: {{originalHebrew}}
 Proposed Hebrew: {{proposedHebrew}}
 Proposed English: {{proposedEnglish}}

@@ -58,7 +58,8 @@ describe("continuation prompts", () => {
     const prompt = continuationGenerationPrompt(candidate);
     expect(prompt).toContain("Next commentary comment to translate and punctuate on this page:");
     expect(prompt).toContain("Comment ref: Rashi on Menachot 80a:1:1");
-    expect(prompt).toContain("Follow TRANSLATION_TASK instructions and format established above.");
+    expect(prompt).toContain("Follow the translation instructions and format established above.");
+    expect(prompt).toContain('Respond with ONLY a JSON object matching {"hebrew"?: string, "english"?: string}.');
   });
 
   test("formats concise continuation critique prompt", () => {
@@ -67,9 +68,12 @@ describe("continuation prompts", () => {
       hebrew: "טקסט:",
       english: "translated text.",
     });
-    expect(prompt).toContain("Target comment to check:");
+    expect(prompt).toContain("## Target comment to check");
     expect(prompt).toContain("Comment ref: Rashi on Menachot 80a:1:1");
-    expect(prompt).toContain("Evaluate according to CRITIQUE_TASK instructions and format established above.");
+    expect(prompt).toContain("Evaluate whether this proposed edit is valid according to the critique criteria:");
+    expect(prompt).toContain('{"valid": true}');
+    expect(prompt).toContain('{"valid": false, "reason": "<brief one-sentence reason>"}');
+    expect(prompt).toContain("No lookups or arbitrary scripts/tools are permitted.");
   });
 
   test("replaces base64 images with placeholders in continuation generation and critique prompts", () => {
