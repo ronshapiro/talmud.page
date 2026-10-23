@@ -848,6 +848,7 @@ describe("parseJsonResponse", () => {
 describe("critiquePrompt", () => {
   test("instructs terse output and compact JSON format", () => {
     const prompt = critiquePrompt(candidate(), {hebrew: "מקור:", english: "source."});
+    expect(prompt).toContain("Comment ref: Rashi on Zevachim 2a:1:1");
     expect(prompt).toContain("Be extremely terse to minimize token usage.");
     expect(prompt).toContain('{"valid": true}');
     expect(prompt).toContain('{"valid": false, "reason": "<brief one-sentence reason>"}');
