@@ -9,6 +9,10 @@ import {onClickKeyListener} from "./key_clicks";
 import {useConfiguration, useHiddenHost} from "./context";
 import {SwipeableBackground} from "./SwipeableBackground";
 import {isSiteLanguageHebrew} from "./settings";
+import {
+  DoubleClickHintSurfaceType,
+  useDoubleClickVisualHint,
+} from "./DoubleClickVisualHint";
 
 const {
   useEffect,
@@ -156,6 +160,7 @@ interface BaseCellProps {
   style?: React.CSSProperties;
   text: StringOrElement | undefined;
   doubleClickListener?: () => void;
+  doubleClickHintSurfaceType?: DoubleClickHintSurfaceType;
 }
 
 function BaseCell({
@@ -164,17 +169,38 @@ function BaseCell({
   style,
   text,
   doubleClickListener,
+  doubleClickHintSurfaceType,
 }: BaseCellProps): React.ReactElement | null {
-  const className = ["table-cell"].concat(classes).join(" ");
+  const {
+    visualIndicator,
+    doubleClickListener: effectiveDoubleClickListener,
+    isVisualHintActive,
+  } = useDoubleClickVisualHint(doubleClickHintSurfaceType, doubleClickListener);
+
+  const cellClasses = isVisualHintActive ? classes.concat("has-double-click-hint") : classes;
+  const className = ["table-cell"].concat(cellClasses).join(" ");
   const sanitizedText = useSearchableText(useSanitizedText(typeof text === "string" ? text : ""));
 
   const childrenProp = (typeof text === "string")
     ? {dangerouslySetInnerHTML: {__html: sanitizedText}}
     : {children: text};
+
+  /* eslint-disable react/jsx-props-no-spreading */
+  const visualIndicatorProp = visualIndicator
+    ? {
+      children: (
+        <>
+          <span {...childrenProp} />{visualIndicator}
+        </>
+      ),
+    }
+    : childrenProp;
+  /* eslint-enable react/jsx-props-no-spreading */
+
   const ref = useHtmlRef<HTMLDivElement>();
 
   useEffect(() => {
-    $(ref.current!).betterDoubleClick(doubleClickListener);
+    $(ref.current!).betterDoubleClick(effectiveDoubleClickListener);
   });
 
   return (
@@ -183,7 +209,7 @@ function BaseCell({
       className={className}
       ref={ref}
       style={style}
-      {...childrenProp} // eslint-disable-line react/jsx-props-no-spreading
+      {...visualIndicatorProp} // eslint-disable-line react/jsx-props-no-spreading
       />
   );
 }
@@ -197,6 +223,7 @@ interface HebrewCellProps extends CellProps {
   isEnglishExpanded: boolean;
   shouldWrap: boolean;
   hebrewDoubleClickListener?: () => void;
+  doubleClickHintSurfaceType?: DoubleClickHintSurfaceType;
 }
 
 function HebrewCell({
@@ -205,6 +232,7 @@ function HebrewCell({
   isEnglishExpanded,
   shouldWrap,
   hebrewDoubleClickListener,
+  doubleClickHintSurfaceType,
 }: HebrewCellProps): React.ReactElement | null {
   const context = useConfiguration();
   const siblingExpandedClass = (
@@ -217,6 +245,7 @@ function HebrewCell({
       classes={["hebrew", siblingExpandedClass].concat(classes)}
       text={text}
       doubleClickListener={hebrewDoubleClickListener}
+      doubleClickHintSurfaceType={doubleClickHintSurfaceType}
       />
   );
 }
@@ -341,6 +370,7 @@ interface TableRowProps {
   id?: string;
   classes: string[];
   hebrewDoubleClickListener?: () => void;
+  doubleClickHintSurfaceType?: DoubleClickHintSurfaceType;
   "sefaria-ref"?: string;
   link?: string;
   overrideFullRow?: boolean;
@@ -437,6 +467,7 @@ function TableRow(props: TableRowProps): React.ReactElement {
         text={contents}
         classes={cellClasses}
         hebrewDoubleClickListener={hebrewDoubleClickListener}
+        doubleClickHintSurfaceType={props.doubleClickHintSurfaceType}
         isEnglishExpanded={isEnglishExpanded}
         shouldWrap={shouldWrap}
         />);
@@ -496,6 +527,7 @@ TableRow.propTypes = {
   id: PropTypes.string,
   classes: PropTypes.arrayOf(PropTypes.string).isRequired,
   hebrewDoubleClickListener: PropTypes.func,
+  doubleClickHintSurfaceType: PropTypes.string,
   "sefaria-ref": PropTypes.string,
   link: PropTypes.string,
   overrideFullRow: PropTypes.bool,
