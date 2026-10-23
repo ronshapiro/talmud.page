@@ -207,13 +207,13 @@ export function verifyProposedHebrewWording(
     };
   }
 
-  const numeralAbbreviationMatch = proposedHebrew.match(
-    /<abbr\s+title=["']\s*ב?(?:אחד|אחת|שני|שתי|שלש|ארבע|חמש|שש|שבע|שמנ|תשע|עשר|מאה)[^"']*["']>\s*ב?[א-ת]["'׳״]+[א-ת]?\s*<\/abbr>/i,
+  const pageOrChapterNumeralMatch = proposedHebrew.match(
+    /(?:\s|^|[^\u05D0-\u05EA])(?:[בוש]?[בד])?(?:דף|פרק|בפ['׳])(?:<\/abbr>)?\s*["'״]?\s*<abbr\s+title=["'][^"']+["']>\s*ב?[\d"'.:א-ת׳״]{1,5}\s*<\/abbr>/i,
   );
-  if (numeralAbbreviationMatch) {
+  if (pageOrChapterNumeralMatch) {
     return {
       valid: false,
-      reason: "Do not wrap Hebrew numerals in <abbr> tags. Numerals should be left as standard Hebrew characters (e.g. ג', ד', ז', כ\"א).",
+      reason: "Do not wrap Hebrew numerals in <abbr> tags when they refer to page, daf, or chapter numbers (e.g. דף ב', פרק ד').",
     };
   }
 
@@ -656,7 +656,7 @@ const FALLBACK_WORKED_EXAMPLE: Record<Commentator, WorkedExample> = {
   Rashi: {
     hebrewSource: "מתני' כ\"א תקיעות מפרש להו בפ' החליל",
     hebrew: "<strong class=\"dibur-hamatchil\">מתני'</strong> - "
-      + "כ\"א תקיעות, <span class=\"explanation\">הגמרא</span> "
+      + "<abbr title=\"עשרים ואחת\">כ\"א</abbr> תקיעות, <span class=\"explanation\">הגמרא</span> "
       + "מפרש להו <abbr title=\"בפרק\">בפ'</abbr> החליל:",
     english: "<strong class=\"dibur-hamatchil\">The Mishnah:</strong> Twenty-one blasts — "
       + "[the Gemara] explains them in the chapter [entitled] Hechalil:",

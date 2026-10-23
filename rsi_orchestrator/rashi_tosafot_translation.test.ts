@@ -279,7 +279,7 @@ describe("verifyProposedHebrewWording", () => {
 
   test("accepts valid combination of <abbr> and <span class=\"explanation\">", () => {
     const proposedHebrew = '<strong class="dibur-hamatchil">מתני\'</strong> - '
-      + 'כ"א תקיעות, <span class="explanation">הגמרא</span> '
+      + '<abbr title="עשרים ואחת">כ"א</abbr> תקיעות, <span class="explanation">הגמרא</span> '
       + 'מפרש להו <abbr title="בפרק">בפ\'</abbr> החליל:';
     const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
     expect(verification.valid).toBe(true);
@@ -354,19 +354,33 @@ describe("verifyProposedHebrewWording", () => {
     expect(verificationOpeningGemara.reason).toContain("Do not wrap מתני' or גמ' in <abbr> tags");
   });
 
-  test("rejects <abbr> tags around Hebrew numerals", () => {
-    const sourceWithNumeral = "שבעת ימים קודם ז' ימים כ\"א תקיעות";
-    const invalidNumeral = '<strong class="dibur-hamatchil">שבעת ימים</strong> - קודם <abbr title="שבעת">ז\'</abbr> ימים כ"א תקיעות:';
-    const verificationNumeral = verifyProposedHebrewWording(sourceWithNumeral, invalidNumeral);
-    expect(verificationNumeral.valid).toBe(false);
-    expect(verificationNumeral.reason).toContain("Do not wrap Hebrew numerals in <abbr> tags");
+  test("rejects <abbr> tags around page or chapter reference numerals", () => {
+    const sourceWithChapterNumeral = "כמו בההיא דפרק ד' אחין";
+    const invalidChapterNumeral = 'כמו בההיא דפרק <abbr title="ארבעה">ד\'</abbr> אחין';
+    const verificationChapterNumeral = verifyProposedHebrewWording(
+      sourceWithChapterNumeral, invalidChapterNumeral);
+    expect(verificationChapterNumeral.valid).toBe(false);
+    expect(verificationChapterNumeral.reason).toContain(
+      "Do not wrap Hebrew numerals in <abbr> tags when they refer to page, daf, or chapter numbers");
 
-    const invalidCompoundNumeral = '<strong class="dibur-hamatchil">שבעת ימים</strong> - קודם ז\' ימים <abbr title="עשרים ואחת">כ"א</abbr> תקיעות:';
-    const verificationCompoundNumeral = verifyProposedHebrewWording(
-      sourceWithNumeral, invalidCompoundNumeral);
-    expect(verificationCompoundNumeral.valid).toBe(false);
-    expect(verificationCompoundNumeral.reason).toContain(
-      "Do not wrap Hebrew numerals in <abbr> tags");
+    const sourceWithPageNumeral = "כדאמרינן לקמן דף ב. ושם";
+    const invalidPageNumeral = 'כדאמרינן לקמן דף <abbr title="שתים">ב.</abbr> ושם';
+    const verificationPageNumeral = verifyProposedHebrewWording(
+      sourceWithPageNumeral, invalidPageNumeral);
+    expect(verificationPageNumeral.valid).toBe(false);
+    expect(verificationPageNumeral.reason).toContain(
+      "Do not wrap Hebrew numerals in <abbr> tags when they refer to page, daf, or chapter numbers");
+  });
+
+  test("accepts <abbr> tags around regular numbers representing counts or quantities", () => {
+    const sourceWithRegularNumeral = "שבעת ימים קודם ז' ימים כ\"א תקיעות ד' ראשי שנים";
+    const validRegularNumeral = '<strong class="dibur-hamatchil">שבעת ימים</strong> - '
+      + 'קודם <abbr title="שבעת">ז\'</abbr> ימים '
+      + '<abbr title="עשרים ואחת">כ"א</abbr> תקיעות '
+      + '<abbr title="ארבעה">ד\'</abbr> ראשי שנים:';
+    const verificationRegularNumeral = verifyProposedHebrewWording(
+      sourceWithRegularNumeral, validRegularNumeral);
+    expect(verificationRegularNumeral.valid).toBe(true);
   });
 
   test("rejects <abbr> tags around הקב\"ה, רש\"י, or חז\"ל", () => {

@@ -10,11 +10,13 @@ You're translating and punctuating a single commentary comment on the Talmud, fo
 ## Tasks
 
 1. Add punctuation to the Hebrew comment if it doesn't already have it (Rashi/Tosafot style: a hyphen separates the dibbur hamatchil from the comment body, and the comment ends with a colon, not a period).
-   - **Abbreviations**: When confident what an abbreviation stands for, expand it using `<abbr title="expansion">abbreviation</abbr>`. Keep the exact original abbreviation text inside the tag and put the expanded meaning in the `title` attribute. Example: `<abbr title="בפרק">בפ'</abbr>`, `<abbr title="אלא אם כן">אא"כ</abbr>`. Do NOT alter the abbreviation text itself. Leave the following untouched without `<abbr>` tags:
-     - Truncation markers: וגו' and וכו' (or כו').
-     - Opening section headers: מתני' and גמ' when they appear as the first word / dibbur hamatchil of a comment.
-     - Hebrew numerals: single letters or gematria combinations representing numbers (e.g. ג', ד', ז', י', כ"א, etc.).
-     - Universal divine names, standard acronyms, and honorifics: הקב"ה, ה'/'ד, רש"י, חז"ל, ז"ל, זצ"ל, ע"ה.
+   - **Abbreviations**: When confident what an abbreviation stands for, expand it using `<abbr title="expansion">abbreviation</abbr>`. Keep the exact original abbreviation text inside the tag and put the expanded meaning in the `title` attribute. Example: `<abbr title="בפרק">בפ'</abbr>`, `<abbr title="אלא אם כן">אא"כ</abbr>`, `<abbr title="עשרים ואחת">כ"א</abbr>`, `<abbr title="שבעה">ז'</abbr>`. Do NOT alter the abbreviation text itself.
+     - **Numerals**: Add `<abbr>` tags for regular numbers in text that represent counts or quantities (e.g. `<abbr title="שבעת">ז'</abbr> ימים`, `<abbr title="ארבעה">ד'</abbr> אבות`, `<abbr title="עשרים ואחת">כ"א</abbr> תקיעות`). Do NOT add `<abbr>` tags to Hebrew numerals that refer to page, daf, or chapter numbers (e.g. leave `דף ב.`, `פרק ד'`, `בפ' ד' אחין` as-is).
+     - **Leave untouched without `<abbr>` tags**:
+       - Truncation markers: וגו' and וכו' (or כו').
+       - Opening section headers: מתני' and גמ' when they appear as the first word / dibbur hamatchil of a comment.
+       - Page, daf, and chapter reference numbers (e.g. דף י"ב, פרק ד').
+       - Universal divine names, standard acronyms, and honorifics: הקב"ה, ה'/'ד, רש"י, חז"ל, ז"ל, זצ"ל, ע"ה.
    - **Explanations**: If brief explanatory or contextual words are needed in the Hebrew to make the thought coherent (e.g. an implied subject or verb), wrap them in `<span class="explanation">...</span>`. Do NOT use brackets (`[...]`) for explanations, because brackets are used in printed editions for textual emendations.
    - **Fidelity**: Outside of `<span class="explanation">...</span>`, preserve the exact source text wording without adding, removing, or changing any words. Preserve existing HTML tags around the same words.
    - Omit the Hebrew field entirely if it would be identical to the source.
@@ -69,7 +71,7 @@ Respond with ONLY a JSON object matching {"hebrew"?: string, "english"?: string}
 ### Hebrew markup and formatting example
 
 - Source Hebrew: `מתני' כ"א תקיעות מפרש להו בפ' החליל`
-- Punctuated Hebrew: `<strong class="dibur-hamatchil">מתני'</strong> - כ"א תקיעות, <span class="explanation">הגמרא</span> מפרש להו <abbr title="בפרק">בפ'</abbr> החליל:`
+- Punctuated Hebrew: `<strong class="dibur-hamatchil">מתני'</strong> - <abbr title="עשרים ואחת">כ"א</abbr> תקיעות, <span class="explanation">הגמרא</span> מפרש להו <abbr title="בפרק">בפ'</abbr> החליל:`
 - English translation: `<strong class="dibur-hamatchil">The Mishnah:</strong> Twenty-one blasts — [the Gemara] explains them in the chapter [entitled] Hechalil:`
 
 ## Worked examples
