@@ -1,5 +1,6 @@
 import * as React from "react";
 import * as PropTypes from "prop-types";
+import {useConfiguration} from "./context";
 
 export const DoubleClickHintSurfaceType = {
   STEINSALTZ: "steinsaltz",
@@ -250,3 +251,70 @@ DoubleClickVisualHint.propTypes = {
   pulseDurationMilliseconds: PropTypes.number,
   pauseDurationMilliseconds: PropTypes.number,
 };
+
+export interface UseDoubleClickVisualHintResult {
+  visualIndicator: React.ReactElement | null;
+  doubleClickListener?: () => void;
+  isVisualHintActive: boolean;
+}
+
+export function useDoubleClickVisualHint(
+  surfaceType?: DoubleClickHintSurfaceType,
+  doubleClickListener?: () => void,
+): UseDoubleClickVisualHintResult {
+  const configuration = useConfiguration();
+
+  const hasDoubleClickListener = Boolean(doubleClickListener);
+  const effectiveSurfaceType = hasDoubleClickListener ? surfaceType : undefined;
+
+  const [isVisualHintActive, setIsVisualHintActive] = React.useState(() => {
+    if (configuration.isFake || !effectiveSurfaceType) {
+      return false;
+    }
+    return claimDoubleClickVisualHint(effectiveSurfaceType);
+  });
+
+  React.useEffect(() => {
+    if (!effectiveSurfaceType || !isVisualHintActive) {
+      return undefined;
+    }
+    const handleInteraction = (event: Event) => {
+      const customEvent = event as CustomEvent<{surfaceType: string}>;
+      if (customEvent.detail?.surfaceType === effectiveSurfaceType) {
+        setIsVisualHintActive(false);
+      }
+    };
+    window.addEventListener("doubleClickInteraction", handleInteraction);
+    return () => {
+      window.removeEventListener("doubleClickInteraction", handleInteraction);
+    };
+  }, [effectiveSurfaceType, isVisualHintActive]);
+
+  const wrappedDoubleClickListener = React.useMemo(() => {
+    if (!doubleClickListener && !effectiveSurfaceType) {
+      return undefined;
+    }
+    return () => {
+      if (effectiveSurfaceType) {
+        recordDoubleClickInteraction(effectiveSurfaceType);
+        setIsVisualHintActive(false);
+      }
+      doubleClickListener?.();
+    };
+  }, [doubleClickListener, effectiveSurfaceType]);
+
+  const visualIndicator = isVisualHintActive && effectiveSurfaceType ? (
+    <DoubleClickVisualHint
+      surfaceType={effectiveSurfaceType}
+      onFinished={() => setIsVisualHintActive(false)}
+    />
+  ) : null;
+
+  return {
+    visualIndicator,
+    doubleClickListener: wrappedDoubleClickListener,
+    isVisualHintActive,
+  };
+}
+
+export const useDoubleClickVisualIndicator = useDoubleClickVisualHint;

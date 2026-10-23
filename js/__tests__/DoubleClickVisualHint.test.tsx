@@ -9,6 +9,7 @@ import {
   recordDoubleClickVisualHintDisplayed,
   resetDoubleClickVisualHintState,
   shouldDisplayDoubleClickVisualHint,
+  useDoubleClickVisualHint,
 } from "../DoubleClickVisualHint";
 import {TestContext} from "./testing/configuration";
 import {
@@ -124,6 +125,58 @@ describe("DoubleClickVisualHint unit logic", () => {
     expect(
       localStorage.getItem(`doubleClickHint.lastDisplayed.${DoubleClickHintSurfaceType.STEINSALTZ}`),
     ).toBe(currentTimestamp.toString());
+  });
+});
+
+describe("useDoubleClickVisualHint hook", () => {
+  function TestHookComponent({
+    surfaceType,
+    onDoubleClick,
+  }: {
+    surfaceType?: DoubleClickHintSurfaceType;
+    onDoubleClick?: () => void;
+  }) {
+    const {visualIndicator, doubleClickListener, isVisualHintActive} = useDoubleClickVisualHint(
+      surfaceType,
+      onDoubleClick,
+    );
+    return (
+      <div data-active={isVisualHintActive}>
+        <button
+          type="button"
+          onClick={doubleClickListener}
+          className="test-trigger"
+        >
+          Click
+        </button>
+        {visualIndicator}
+      </div>
+    );
+  }
+
+  test("returns visual indicator and wraps double-click listener", () => {
+    const listener = jest.fn();
+    const root = mount(
+      <TestContext>
+        <TestHookComponent
+          surfaceType={DoubleClickHintSurfaceType.STEINSALTZ}
+          onDoubleClick={listener}
+        />
+      </TestContext>,
+    );
+
+    expect(queryOrNull(root, ".double-click-hint-overlay")).not.toBeNull();
+    const button = query(root, ".test-trigger");
+
+    act(() => {
+      button.click();
+    });
+
+    expect(listener).toHaveBeenCalledTimes(1);
+    expect(queryOrNull(root, ".double-click-hint-overlay")).toBeNull();
+    expect(
+      localStorage.getItem(`doubleClickHint.lastDoubleTap.${DoubleClickHintSurfaceType.STEINSALTZ}`),
+    ).not.toBeNull();
   });
 });
 

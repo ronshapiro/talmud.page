@@ -11,9 +11,7 @@ import {SwipeableBackground} from "./SwipeableBackground";
 import {isSiteLanguageHebrew} from "./settings";
 import {
   DoubleClickHintSurfaceType,
-  DoubleClickVisualHint,
-  claimDoubleClickVisualHint,
-  recordDoubleClickInteraction,
+  useDoubleClickVisualHint,
 } from "./DoubleClickVisualHint";
 
 const {
@@ -173,90 +171,37 @@ function BaseCell({
   doubleClickListener,
   doubleClickHintSurfaceType,
 }: BaseCellProps): React.ReactElement | null {
-  const context = useConfiguration();
-
-  const hasDoubleClickListener = Boolean(doubleClickListener);
-  const effectiveSurfaceType = hasDoubleClickListener ? doubleClickHintSurfaceType : undefined;
-
-  const [isVisualHintActive, setIsVisualHintActive] = useState(() => {
-    if (context.isFake || !effectiveSurfaceType) {
-      return false;
-    }
-    return claimDoubleClickVisualHint(effectiveSurfaceType);
-  });
+  const {
+    visualIndicator,
+    doubleClickListener: effectiveDoubleClickListener,
+    isVisualHintActive,
+  } = useDoubleClickVisualHint(doubleClickHintSurfaceType, doubleClickListener);
 
   const cellClasses = isVisualHintActive ? classes.concat("has-double-click-hint") : classes;
   const className = ["table-cell"].concat(cellClasses).join(" ");
   const sanitizedText = useSearchableText(useSanitizedText(typeof text === "string" ? text : ""));
 
-  useEffect(() => {
-    if (!effectiveSurfaceType || !isVisualHintActive) {
-      return undefined;
-    }
-    const handleInteraction = (event: Event) => {
-      const customEvent = event as CustomEvent<{surfaceType: string}>;
-      if (customEvent.detail?.surfaceType === effectiveSurfaceType) {
-        setIsVisualHintActive(false);
-      }
-    };
-    window.addEventListener("doubleClickInteraction", handleInteraction);
-    return () => {
-      window.removeEventListener("doubleClickInteraction", handleInteraction);
-    };
-  }, [effectiveSurfaceType, isVisualHintActive]);
+  const childrenProp = (typeof text === "string")
+    ? {dangerouslySetInnerHTML: {__html: sanitizedText}}
+    : {children: text};
 
-  const wrappedDoubleClickListener = useMemo(() => {
-    if (!doubleClickListener && !effectiveSurfaceType) {
-      return undefined;
+  /* eslint-disable react/jsx-props-no-spreading */
+  const visualIndicatorProp = visualIndicator
+    ? {
+      children: (
+        <>
+          <span {...childrenProp} />{visualIndicator}
+        </>
+      ),
     }
-    return () => {
-      if (effectiveSurfaceType) {
-        recordDoubleClickInteraction(effectiveSurfaceType);
-        setIsVisualHintActive(false);
-      }
-      doubleClickListener?.();
-    };
-  }, [doubleClickListener, effectiveSurfaceType]);
+    : childrenProp;
+  /* eslint-enable react/jsx-props-no-spreading */
 
   const ref = useHtmlRef<HTMLDivElement>();
 
   useEffect(() => {
-    $(ref.current!).betterDoubleClick(wrappedDoubleClickListener);
+    $(ref.current!).betterDoubleClick(effectiveDoubleClickListener);
   });
-
-  const visualHintElement = isVisualHintActive && effectiveSurfaceType ? (
-    <DoubleClickVisualHint
-      surfaceType={effectiveSurfaceType}
-      onFinished={() => setIsVisualHintActive(false)}
-    />
-  ) : null;
-
-  /* eslint-disable react/no-danger */
-  if (typeof text === "string") {
-    if (!visualHintElement) {
-      return (
-        <div
-          dir={direction}
-          className={className}
-          ref={ref}
-          style={style}
-          dangerouslySetInnerHTML={{__html: sanitizedText}}
-        />
-      );
-    }
-    return (
-      <div
-        dir={direction}
-        className={className}
-        ref={ref}
-        style={style}
-      >
-        <span dangerouslySetInnerHTML={{__html: sanitizedText}} />
-        {visualHintElement}
-      </div>
-    );
-  }
-  /* eslint-enable react/no-danger */
 
   return (
     <div
@@ -264,10 +209,8 @@ function BaseCell({
       className={className}
       ref={ref}
       style={style}
-    >
-      {text}
-      {visualHintElement}
-    </div>
+      {...visualIndicatorProp} // eslint-disable-line react/jsx-props-no-spreading
+      />
   );
 }
 
