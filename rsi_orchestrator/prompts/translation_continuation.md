@@ -6,4 +6,4 @@ Params: targetComment.
 Next commentary comment to translate and punctuate on this page:
 {{targetComment}}
 
-Follow TRANSLATION_TASK instructions and format established above.
+Follow the translation instructions and format established above. Respond with ONLY a JSON object matching {"hebrew"?: string, "english"?: string}.

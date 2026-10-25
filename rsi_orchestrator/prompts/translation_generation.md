@@ -3,7 +3,7 @@ First-turn prompt for translating one Rashi/Tosafot comment (rashi_tosafot_trans
 generationPrompt). Everything before "Worked examples" is static, so it stays a cacheable prefix.
 Params: workedExamples, pageIndex, targetComment, priorFeedback (optional).
 -->
-# Instructions (ID: TRANSLATION_TASK)
+# Instructions
 
 You're translating and punctuating a single commentary comment on the Talmud, for talmud.page (an interactive study tool).
 

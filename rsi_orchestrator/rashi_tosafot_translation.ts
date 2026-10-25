@@ -737,6 +737,7 @@ export function critiquePrompt(candidate: TranslationCandidate, edit: Edit): str
   const imageNote = formatCritiqueImagePlaceholderNote(images);
 
   return renderPrompt("translation_critique.md", {
+    commentRef: candidate.ref,
     originalHebrew: originalHebrewWithPlaceholders,
     proposedHebrew: proposedHebrewWithPlaceholders,
     proposedEnglish: proposedEnglishWithPlaceholders,
