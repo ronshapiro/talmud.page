@@ -1,0 +1,631 @@
+{
+  "Rashi on Eruvin 16a:12:1": {
+    "dependsOn": [
+      "Eruvin 16a:12",
+      "Eruvin 15b:17",
+      "Eruvin 15b:18",
+      "Eruvin 16a:1",
+      "Rashi on Eruvin 16a:12:2",
+      "Eruvin 16a:6",
+      "Rashi on Eruvin 16a:6:1",
+      "Rashi on Eruvin 16a:8:1",
+      "Eruvin 16a:7",
+      "Eruvin 16a:8",
+      "Rashi on Eruvin 16a:13:1",
+      "Rashi on Eruvin 16a:13:2",
+      "Rashi on Eruvin 16a:14:1",
+      "Rashi on Eruvin 16a:14:2"
+    ],
+    "generatedAt": "2026-10-21T16:11:33.102Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איידי דתנא רישא פרוץ מרובה על העומד</strong> - אסור דלא סגיא דלא קתני לה לגלויי אמלואו דלאו מצומצם קאמר דקמ\"ל הא כעומד מותר אף כנגד הפרוץ:"
+  },
+  "Rashi on Eruvin 16a:12:2": {
+    "dependsOn": [
+      "Eruvin 16a:12",
+      "Rashi on Eruvin 16a:12:1",
+      "Eruvin 16a:6",
+      "Eruvin 16a:7",
+      "Eruvin 16a:8",
+      "Eruvin 16a:9",
+      "Rashi on Eruvin 16a:13:1",
+      "Rashi on Eruvin 16a:13:2",
+      "Rashi on Eruvin 16a:14:1",
+      "Maharsha: Chidushei Halachot on Eruvin 16a:2"
+    ],
+    "generatedAt": "2026-10-21T16:13:42.590Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנא סיפא עומד מרובה על הפרוץ</strong> - אע\"ג דלא איצטריך ליה דהא מגופה שמעת מינה דאפי' יש עומד כפרוץ שרי מדתנא ליה שלא יהא פרוץ כעומד ותרצינן לה בנכנס ויוצא הא בצמצום שרי וכ\"ש עומד מרובה על הפרוץ אלא משום רישא תנא סיפא ולא משום למידק מינה הא כפרוץ אסור:"
+  },
+  "Rashi on Eruvin 16a:13:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 16a:13:1",
+      "Eruvin 16a:13",
+      "Rashi on Eruvin 16a:12:1",
+      "Rashi on Eruvin 16a:12:2",
+      "Rashi on Eruvin 16a:13:2",
+      "Eruvin 16a:11",
+      "Rashi on Eruvin 16a:1:1",
+      "Rashi on Eruvin 16a:3:1",
+      "Rashi on Eruvin 16a:4:1",
+      "Rashi on Eruvin 16a:5:1",
+      "Eruvin 16a",
+      "Rashi on Eruvin 15b:12:1"
+    ],
+    "generatedAt": "2026-10-21T16:17:20.841Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רישא לרב הונא לא קשיא איידי דבעי למיתני סיפא עומד מרובה על הפרוץ</strong> - מותר דלא סגי דלא קתני לה דקמ\"ל הא כפרוץ אסור:"
+  },
+  "Rashi on Eruvin 16a:13:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 16a:13:1",
+      "Rashi on Eruvin 16a:12:1",
+      "Rashi on Eruvin 16a:12:2",
+      "Rashi on Eruvin 16a:14:1",
+      "Rashi on Eruvin 16a:14:2",
+      "Rashi on Eruvin 16a:6:1",
+      "Rashi on Eruvin 16a:6:2",
+      "Rashi on Eruvin 16a:6:3",
+      "Rashi on Eruvin 15b:1:1",
+      "Rashi on Eruvin 15b:2:1",
+      "Tosafot on Eruvin 15a:4:1",
+      "Eruvin 16a:13",
+      "Rashi on Eruvin 2a:4:2",
+      "Rashi on Eruvin 2a:1:1",
+      "Rashi on Eruvin 2a:1:2",
+      "Rashi on Eruvin 2a:2:1",
+      "Tosafot on Eruvin 2b:12:1",
+      "Rashi on Eruvin 2a:3:1"
+    ],
+    "generatedAt": "2026-10-21T16:21:38.989Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תני נמי רישא פרוץ מרובה על העומד</strong> - אע\"ג דלא איצטריך דהא אפי' כעומד נמי אסור:"
+  },
+  "Rashi on Eruvin 16a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T16:22:19.674Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשלמא לרב פפא</strong> - דאמר פרוץ כעומד מותר:"
+  },
+  "Rashi on Eruvin 16a:14:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 16a:14:1",
+      "Eruvin 16a:14",
+      "Eruvin 16a:3",
+      "Eruvin 16a:4",
+      "Eruvin 16a:5",
+      "Chokhmat Shlomo on Eruvin 16a:2",
+      "Rashi on Eruvin 15b:18:1",
+      "Rashi on Eruvin 16a:4:1",
+      "Rashi on Eruvin 16a:4:2",
+      "Rashi on Eruvin 16a:12:1",
+      "Rashi on Eruvin 16a:13:1",
+      "Rashi on Eruvin 16a:15:1",
+      "Rashi on Eruvin 16a:16:1",
+      "Rashi on Eruvin 16a:1:1",
+      "Rashi on Eruvin 16a:1:2",
+      "Rashi on Eruvin 16a:1:3",
+      "Rashi on Eruvin 16a:8:1",
+      "Rashi on Eruvin 16a:15:2"
+    ],
+    "generatedAt": "2026-10-21T16:26:11.797Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום הכי לא עריב</strong> - ג' בהדי פחות מג' ולמיתני כל שהוא פחות מג' וג' צריך שלא יהא בין זה לזה ג' דלא מצי למימר צריך שלא יהא בין זה לזה ג' דכיון דעומד ג' לא איכפת לן אי פרוץ נמי ג' דהא פרוץ כעומד מותר ומשום הכי אפסקיה לאתנייה גבי פחות מד' למיתנא ביה כמלואו דליהוי משמע בנכנס ויוצא:"
+  },
+  "Rashi on Eruvin 16a:15:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 16a:15:1",
+      "Rashi on Eruvin 16a:15:2",
+      "Eruvin 16a:15",
+      "Rashi on Eruvin 16a:14:1",
+      "Rashi on Eruvin 16a:14:2",
+      "Steinsaltz on Eruvin 16a:15",
+      "Eruvin 16a:3",
+      "Eruvin 16a:4",
+      "Eruvin 16a:5"
+    ],
+    "generatedAt": "2026-10-21T16:42:48.750Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לרב הונא</strong> - דאמר פרוץ כעומד אסור אפי' כנגד העומד:"
+  },
+  "Rashi on Eruvin 16a:15:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 16a:15:1",
+      "Eruvin 16a:15",
+      "Rashi on Eruvin 16a:14:1",
+      "Rashi on Eruvin 16a:14:2"
+    ],
+    "generatedAt": "2026-10-21T16:44:51.164Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליערב</strong> - ג' בהדי פחות מג' וליתני צריך שלא יהא בין זה לזה ג' טפחים:"
+  },
+  "Rashi on Eruvin 16a:16:1": {
+    "dependsOn": [
+      "Eruvin 16a:16",
+      "Rashi on Eruvin 16a:14:1",
+      "Rashi on Eruvin 16a:14:2",
+      "Rashi on Eruvin 16a:15:1",
+      "Rashi on Eruvin 16a:15:2",
+      "Rashi on Eruvin 16a:16:2",
+      "Eruvin 16a:12",
+      "Eruvin 16a:13",
+      "Eruvin 16a:5",
+      "Eruvin 16a:6",
+      "Eruvin 16a:3",
+      "Eruvin 16a:4",
+      "Rashi on Eruvin 16a:16:1",
+      "Rashi on Eruvin 16a:17:1"
+    ],
+    "generatedAt": "2026-10-21T16:54:37.466Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום דלא דמי</strong> - פסולא דפחות מג' לפסולא דג' דפסולא דפחות מג' לא הוי מצי למיתלי בפרוץ מרובה על העומד דכל כמה דלא הוי פרוץ ג' אע\"ג דעומד טפח ופרוץ טפחיים כשר ומכי מטא פרוץ לשלשה אשמעי' דבהכי מקרי פרוץ משום יזדקר גדי:"
+  },
+  "Rashi on Eruvin 16a:16:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 16a:16:1",
+      "Eruvin 16a:16"
+    ],
+    "generatedAt": "2026-10-21T16:56:04.182Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פסולא דסיפא</strong> - היכא דעומד ג' לא מיפסל משום דיקור גדי דאי הוה עומד מרובה לא הוה חיישינן לגדי אלא משום מאי מיפסיל בפרוץ ג' משום דהוי פרוץ כעומד ותנא לאגמורי מדות דמחיצה קאתי ומכי מצי לחדושי טעמיה ומתלייה בפסולא אחרינא תנייה:"
+  },
+  "Rashi on Eruvin 16a:17:1": {
+    "dependsOn": [
+      "Eruvin 16a:17",
+      "Rashi on Eruvin 16a:16:1",
+      "Rashi on Eruvin 16a:18:1",
+      "Rashi on Eruvin 15b:1:1",
+      "Rashi on Eruvin 15b:2:1",
+      "Rashi on Eruvin 16a:5:1",
+      "Rashi on Eruvin 16a:6:1",
+      "Eruvin 16a:3"
+    ],
+    "generatedAt": "2026-10-21T16:58:23.721Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פחות מג' מני רבנן היא</strong> - מדקא מפליג בין פחות מג' לג' ש\"מ רבנן היא דמפלגי נמי בין פחות מג' לג':"
+  },
+  "Rashi on Eruvin 16a:18:1": {
+    "dependsOn": [
+      "Eruvin 16a:18",
+      "Eruvin 16a:15",
+      "Eruvin 16a:6",
+      "Rashi on Eruvin 16a:17:1",
+      "Tosafot on Eruvin 16a:18:1",
+      "Steinsaltz on Eruvin 16a:18",
+      "Rashi on Eruvin 16b:1:1",
+      "Rashi on Eruvin 16b:1:2",
+      "Steinsaltz on Eruvin 16b:1",
+      "Rashi on Eruvin 16a:4:1",
+      "Rashi on Eruvin 16a:4:2",
+      "Rashi on Eruvin 16a:4:3",
+      "Rashi on Eruvin 16a:4:4",
+      "Rashi on Eruvin 16a:5:1",
+      "Rashi on Eruvin 16a:5:2",
+      "Rashi on Eruvin 16a:5:3",
+      "Rashi on Eruvin 16a:1:1",
+      "Rashi on Eruvin 16a:3:1"
+    ],
+    "generatedAt": "2026-10-21T17:02:01.315Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אימא סיפא כל שהוא ג' ומג' ועד ד'</strong> - מדקא מפליג בין פחות מד' לד' דקאמר פחות מד' אם פרוץ יתר עליו אף כנגד העומד אסור וד' גופיה קתני סיפא דמתיר כנגדו ואף על גב דפרוץ יתר עליו ש\"מ רבן שמעון בן גמליאל היא:"
+  },
+  "Rashi on Eruvin 16a:1:1": {
+    "dependsOn": [
+      "Jastrow, עָבִיט 1",
+      "Sefer HeArukh, Letter Ayin 12",
+      "Steinsaltz on Eruvin 16a:1",
+      "Rashi on Eruvin 16a:1:2",
+      "Rashi on Eruvin 16a:1:3"
+    ],
+    "generatedAt": "2026-10-21T14:57:47.196Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עביטין</strong> - כר שתחת אוכף הגמל כדמתרגמינן <span class=\"parenthesized\">(בראשית ל״א:ל״ד)</span> בכר הגמל בעביטא דגמלא:"
+  },
+  "Rashi on Eruvin 16a:1:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 16a:1:1",
+      "Rashi on Eruvin 16a:1:2",
+      "Rashi on Eruvin 16a:1:3",
+      "Steinsaltz on Eruvin 16a:1",
+      "Eruvin 16a:1",
+      "Rabbeinu Chananel on Eruvin 16a:1",
+      "Tosefta Eruvin 2:1",
+      "Rashi on Eruvin 15b:22:1",
+      "Rashi on Eruvin 16a:5:1",
+      "Rashi on Eruvin 16a:6:1",
+      "Steinsaltz comment #1 on Eruvin 16a:1",
+      "Steinsaltz comment #2 on Eruvin 16a:1"
+    ],
+    "generatedAt": "2026-10-21T15:00:53.857Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שליפין</strong> - משואות:"
+  },
+  "Rashi on Eruvin 16a:1:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T15:01:46.053Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קולחות</strong> - קלחי ירקות:"
+  },
+  "Rashi on Eruvin 16a:3:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 16a:3:1",
+      "Rashi on Eruvin 16a:3:2",
+      "Rashi on Eruvin 16a:3:3"
+    ],
+    "generatedAt": "2026-10-21T15:05:51.098Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נמצאת אתה אומר כו'</strong> - רישא במס' כלאים <span class=\"parenthesized\">(פ\"ד משנה ד)</span> תנינן לה:"
+  },
+  "Rashi on Eruvin 16a:3:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 16a:3:1",
+      "Rashi on Eruvin 16a:3:2",
+      "Rashi on Eruvin 16a:3:3",
+      "Eruvin 16a:3",
+      "Rashi on Eruvin 16a:4:1",
+      "Rashi on Eruvin 16a:4:2",
+      "Rashi on Eruvin 16a:4:3",
+      "Rashi on Eruvin 16a:4:4",
+      "Mishneh Torah, Diverse Species 7:15",
+      "Steinsaltz on Eruvin 16a:3",
+      "Steinsaltz comment #1 on Eruvin 16a:3",
+      "Rashba on Eruvin 16a:1",
+      "Tosefta Kilayim 4:3",
+      "Tosefta Kilayim (Lieberman) 4:6",
+      "Tosefta Kifshutah on Kilayim 4:6:1",
+      "Rashi on Eruvin 15b:1:1",
+      "Rashi on Eruvin 15b:2:1",
+      "Rashi on Eruvin 15b:3:1",
+      "Rashi on Eruvin 15b:4:1",
+      "Rashi on Eruvin 15b:5:1"
+    ],
+    "generatedAt": "2026-10-21T15:11:52.246Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל שהוא פחות מג'</strong> - כל גדר העשוי בקנים עומדין פחות מרוחב ג':"
+  },
+  "Rashi on Eruvin 16a:3:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 16a:3:1",
+      "Rashi on Eruvin 16a:3:2",
+      "Steinsaltz on Eruvin 16a:3",
+      "Jastrow, בַּת II 1",
+      "Rashi on Eruvin 15b:14:1",
+      "Rashi on Eruvin 15b:17:1",
+      "Eruvin 16a:17"
+    ],
+    "generatedAt": "2026-10-21T15:20:10.011Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צריך שלא יהא בין זה לזה ג' כדי שלא יזדקר הגדי בבת ראש</strong> - כלומר להדיא בלא עכוב דדקירת גדי מבטל לה מתורת לבוד ואם אין בין זה לזה שלשה אפילו פרוץ מרובה על העומד כגון קנים של שתי אצבעות וריוח ב' טפחים בין זה לזה כשר דכל ריוח פחות מג' אמרי' לבוד וכולו הוי עומד:"
+  },
+  "Rashi on Eruvin 16a:4:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 16a:4:1",
+      "Rashi on Eruvin 16a:4:2",
+      "Rashi on Eruvin 16a:4:3",
+      "Rashi on Eruvin 16a:4:4",
+      "Eruvin 16a:3",
+      "Eruvin 16a:5"
+    ],
+    "generatedAt": "2026-10-21T15:21:45.161Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומג' ועד ד'</strong> - ולא ד' בכלל:"
+  },
+  "Rashi on Eruvin 16a:4:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 16a:4:2",
+      "Rashi on Eruvin 16a:4:1",
+      "Rashi on Eruvin 16a:4:3",
+      "Rashi on Eruvin 16a:4:4",
+      "Eruvin 16a:3",
+      "Eruvin 16a:5",
+      "Rashi on Eruvin 16a:1:1",
+      "Rashi on Eruvin 16a:1:2",
+      "Rashi on Eruvin 16a:6:1",
+      "Rashi on Eruvin 15b:1:1",
+      "Rashi on Eruvin 15b:2:1",
+      "Rashi on Eruvin 2a:1:1"
+    ],
+    "generatedAt": "2026-10-21T15:28:29.597Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צריך שלא יהא בין זה לזה כמלואו</strong> - וכל כמה דלא הוי כמלואו אע\"ג דהוי ריוח שלשה כיון דעומד רבה עליו ליכא למימר אתי אוירא דהאי גיסא ודהאי גיסא ומבטל ליה והוו להו פתחים:"
+  },
+  "Rashi on Eruvin 16a:4:3": {
+    "dependsOn": [
+      "Eruvin 16a:4",
+      "Eruvin 16a:7",
+      "Rashi on Eruvin 16a:4:1",
+      "Rashi on Eruvin 16a:4:2",
+      "Rashi on Eruvin 16a:4:3",
+      "Rashi on Eruvin 16a:4:4",
+      "Rashi on Eruvin 16a:13:1",
+      "Rashi on Eruvin 16a:13:2",
+      "Rashi on Eruvin 16a:5:2",
+      "Rashi on Eruvin 16a:1:1",
+      "Rashi on Eruvin 16a:1:2",
+      "Rashi on Eruvin 16a:1:3",
+      "Rashi on Eruvin 15b:1:1",
+      "Rashi on Eruvin 15b:1:2",
+      "Rashi on Eruvin 15b:2:1"
+    ],
+    "generatedAt": "2026-10-21T15:34:08.480Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם היה פרוץ כו'</strong> - לקמן מתרץ לה אם היה פרוץ כעומד הוה ליה למיתני:"
+  },
+  "Rashi on Eruvin 16a:4:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 16a:4:1",
+      "Rashi on Eruvin 16a:4:2",
+      "Rashi on Eruvin 16a:4:3"
+    ],
+    "generatedAt": "2026-10-21T15:34:56.721Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16a:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף כנגד העומד אסור</strong> - לזרוע דלא אלים עומד בפחות מד' למישרי כנגדו היכא דפרוץ רבה עליו:"
+  },
+  "Rashi on Eruvin 16a:5:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 16a:5:2",
+      "Rashi on Eruvin 16a:5:3",
+      "Eruvin 16a:5",
+      "Rashi on Eruvin 16a:4:1",
+      "Rashi on Eruvin 16a:4:2"
+    ],
+    "generatedAt": "2026-10-21T15:37:54.721Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועד עשר</strong> - ועשר בכלל אבל יותר מי' כגון עומד י\"ב או ט\"ו לא מצי למיתני שיעור פירצתו במלואו דאפילו בציר ממלואו דאיכא פירצה יותר מעשרה מיתסר כולו כדתני סיפא:"
+  },
+  "Rashi on Eruvin 16a:5:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 16a:5:1",
+      "Rashi on Eruvin 16a:5:2",
+      "Rashi on Eruvin 16a:5:3",
+      "Eruvin 16a:4",
+      "Eruvin 16a:5",
+      "Eruvin 16a:6",
+      "Eruvin 16a:3",
+      "Rashi on Eruvin 16a:4:1",
+      "Rashi on Eruvin 16a:4:2",
+      "Rashi on Eruvin 16a:4:3",
+      "Rashi on Eruvin 16a:4:4",
+      "Eruvin 16a:7",
+      "Eruvin 16a:8",
+      "Eruvin 16a:9",
+      "Eruvin 16a:10",
+      "Eruvin 16a:11",
+      "Eruvin 16a:12",
+      "Eruvin 16a:13",
+      "Eruvin 16a:14",
+      "Eruvin 16a:15",
+      "Eruvin 16a:16",
+      "Eruvin 16a:17"
+    ],
+    "generatedAt": "2026-10-21T15:44:57.311Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כנגד העומד מותר</strong> - הואיל והיקף חשוב הוא וה\"ה אם היה פרוץ מרובה ולקמן מתרץ לה הרי כאן שלש מדות במדה ראשונה דקנים פחותים מג' לא קפדינן אמלואו כיון דמלואו לא הוי פירצה שלשה ואפי' איותר ממלואו לא קפדינן עד דאיכא פירצה שלשה ובמדה שניה קפדינן אמלואו דהא איכא שיעור פירצה למיהוי קרוי אויר ואתי אויר המרובה ומבטל לעומד דאפילו כנגדו אינו מתיר ובמדה שלישית דאיכא עומד חשוב אויר לא מבטל לה לגמרי ומתיר מיהא כנגדה:"
+  },
+  "Rashi on Eruvin 16a:5:3": {
+    "dependsOn": [
+      "Eruvin 16a:5",
+      "Rashi on Eruvin 16a:5:1",
+      "Rashi on Eruvin 16a:5:2",
+      "Rashi on Eruvin 16a:5:3"
+    ],
+    "generatedAt": "2026-10-21T15:46:21.238Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם היה עומד מרובה כו'</strong> - אכולה קאי ואפילו אעומד מג' ועד ד' דהא קתני בה נמי צריך שלא יהא בין זה לזה כמלואו הא בציר ממלואו שרי:"
+  },
+  "Rashi on Eruvin 16a:6:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 16a:6:1",
+      "Eruvin 16a:6",
+      "Rashi on Eruvin 16a:6:2",
+      "Rashi on Eruvin 16a:6:3",
+      "Steinsaltz on Eruvin 16a:6:1",
+      "Steinsaltz on Eruvin 16a:6"
+    ],
+    "generatedAt": "2026-10-21T15:58:54.353Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נפרצה ביותר מי' אסור</strong> - ואפי' כולו עומד:"
+  },
+  "Rashi on Eruvin 16a:6:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 16a:6:2",
+      "Rashi on Eruvin 16a:6:1",
+      "Rashi on Eruvin 16a:6:3",
+      "Jastrow, דּוֹקְרָן 1",
+      "Rashi on Eruvin 11b:6:1",
+      "Rashi on Eruvin 11b:6:2",
+      "Steinsaltz on Eruvin 16a:6",
+      "Jastrow, דָּקַר 1",
+      "Sefer HeArukh, Letter Daled 235",
+      "Rashi on Eruvin 16a:3:1",
+      "Rashi on Eruvin 16a:4:1",
+      "Rashi on Eruvin 16a:5:1",
+      "Tosefta Kifshutah on Kilayim 4:6:9",
+      "Rashi on Eruvin 16a:8:1",
+      "Rashi on Eruvin 16a:12:1"
+    ],
+    "generatedAt": "2026-10-21T16:02:58.279Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היו שם קנים הדוקרנין</strong> - משופין כדקר נעוצין בארץ ועשה להן פאה קלועה מלמעלה מזה לזה:"
+  },
+  "Rashi on Eruvin 16a:6:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 16a:6:1",
+      "Rashi on Eruvin 16a:6:2",
+      "Steinsaltz on Eruvin 16a:6"
+    ],
+    "generatedAt": "2026-10-21T16:06:06.477Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפי' ביותר מעשר אמות מותר</strong> - דצורת הפתח מהניא בכלאים אף ליותר מעשר:"
+  },
+  "Rashi on Eruvin 16a:8:1": {
+    "dependsOn": [
+      "Eruvin 16a:8",
+      "Eruvin 16a:3",
+      "Eruvin 16a:4",
+      "Rashi on Eruvin 16a:4:1",
+      "Rashi on Eruvin 16a:4:2",
+      "Rashi on Eruvin 16a:4:3",
+      "Rashi on Eruvin 16a:4:4",
+      "Rashi on Eruvin 16a:5:1",
+      "Rashi on Eruvin 16a:5:2",
+      "Rashi on Eruvin 16a:5:3",
+      "Steinsaltz on Eruvin 16a:8",
+      "Steinsaltz on Eruvin 16a:9"
+    ],
+    "generatedAt": "2026-10-21T16:09:03.906Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי מלואו נכנס ויוצא</strong> - והכי משמע ברייתא כל שהוא ג' ומג' ועד ד' צריך שלא יהא בין זה לזה מילואו נכנס ויוצא שלא יהא פרוץ כעומד בנכנס ויוצא דהוה ליה פרוץ מרובה ואם היה פרוץ מרובה על העומד אף כנגד העומד אסור הואיל והוקף בדבר שאינו חשוב שאין בו רוחב ד':"
+  },
+  "Tosafot on Eruvin 16a:18:1": {
+    "dependsOn": [
+      "Eruvin 16a:18",
+      "Eruvin 16a:3",
+      "Eruvin 16a:4",
+      "Tosafot on Shabbat 39b:2:2",
+      "Rashi on Eruvin 16b:1:1",
+      "Rashi on Eruvin 16b:1:2",
+      "Rashba on Eruvin 16b:1",
+      "Ritva on Eruvin 16b:1",
+      "Eruvin 16a:5"
+    ],
+    "generatedAt": "2026-10-21T17:05:06.326Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 16a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אימא סיפא כל שהוא שלשה ומג' ועד ד' כו'</strong> - סיפא גופה היה יכול להקשות דלא אתיא כרבנן כדקאמר הש\"ס מדלא מתיר עומד שלשה כנגדו וכרשב\"ג נמי לא אתיא מדקאמר וצריך שלא יהא בין זה לזה כמלואו ולרשב\"ג אפי' יותר ממלואו אין בכך כלום כיון דליכא ד' כלבוד דמי אלא כך דרך הש\"ס שמתחיל קושיא מרישא כשיכול וכה\"ג איכא פ' כירה <span class=\"parenthesized\">(שבת ד' לט:)</span> גבי חמין שהוחמו בשבת:"
+  },
+  "Tosafot on Eruvin 16a:5:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 16a:5:1",
+      "Rashi on Eruvin 16a:5:2",
+      "Rashi on Eruvin 16a:5:3",
+      "Eruvin 16a:5"
+    ],
+    "generatedAt": "2026-10-21T15:51:52.726Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 16a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מארבעה עד עשר</strong> - גרסי' ולא גרסינן עד ארבע אמות:"
+  }
+}
