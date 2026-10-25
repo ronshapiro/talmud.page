@@ -236,10 +236,10 @@ describe("generateWithSelfCritique", () => {
   });
 
   test("accepts valid abbreviation expansions and explanations through CPU check", async () => {
-    const sourceHebrew = 'מתני\' כ"א תקיעות מפרש להו בפ\' החליל';
-    const proposedHebrew = '<strong class="dibur-hamatchil"><abbr title="מתניתין">מתני\'</abbr></strong> - '
-      + '<abbr title="עשרים ואחת">כ"א</abbr> תקיעות, <span class="explanation">הגמרא</span> '
-      + 'מפרש להו <abbr title="בפרק">בפ\'</abbr> החליל:';
+    const sourceHebrew = 'מתני\' כ"א תקיעות מפרש להו בפ\' החליל אא"כ פירש';
+    const proposedHebrew = '<strong class="dibur-hamatchil">מתני\'</strong> - '
+      + 'כ"א תקיעות, <span class="explanation">הגמרא</span> '
+      + 'מפרש להו <abbr title="בפרק">בפ\'</abbr> החליל, <abbr title="אלא אם כן">אא"כ</abbr> פירש:';
     const generate = jest.fn(async () => generated({
       edit: {hebrew: proposedHebrew, english: "The Mishnah explains"},
     }));
@@ -264,7 +264,7 @@ describe("verifyProposedHebrewWording", () => {
   });
 
   test("accepts valid <abbr title=\"...\"> abbreviation expansions", () => {
-    const proposedHebrew = '<strong class="dibur-hamatchil"><abbr title="מתניתין">מתני\'</abbr></strong> - '
+    const proposedHebrew = '<strong class="dibur-hamatchil">מתני\'</strong> - '
       + '<abbr title="עשרים ואחת">כ"א</abbr> תקיעות, מפרש להו <abbr title="בפרק">בפ\'</abbr> החליל:';
     const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
     expect(verification.valid).toBe(true);
@@ -278,7 +278,7 @@ describe("verifyProposedHebrewWording", () => {
   });
 
   test("accepts valid combination of <abbr> and <span class=\"explanation\">", () => {
-    const proposedHebrew = '<strong class="dibur-hamatchil"><abbr title="מתניתין">מתני\'</abbr></strong> - '
+    const proposedHebrew = '<strong class="dibur-hamatchil">מתני\'</strong> - '
       + '<abbr title="עשרים ואחת">כ"א</abbr> תקיעות, <span class="explanation">הגמרא</span> '
       + 'מפרש להו <abbr title="בפרק">בפ\'</abbr> החליל:';
     const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
@@ -313,6 +313,99 @@ describe("verifyProposedHebrewWording", () => {
     const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
     expect(verification.valid).toBe(false);
     expect(verification.reason).toContain("Missing title attribute in <abbr> tag");
+  });
+
+  test("rejects <abbr> tags around וגו' and וכו' and כו'", () => {
+    const proposedWithVegomer = 'מתני\' וגו\' מפרש להו בפ\' החליל';
+    const invalidVegomer = '<abbr title="וגומר">וגו\'</abbr>';
+    const verificationVegomer = verifyProposedHebrewWording(
+      proposedWithVegomer, `מתני' ${invalidVegomer} מפרש להו בפ' החליל`);
+    expect(verificationVegomer.valid).toBe(false);
+    expect(verificationVegomer.reason).toContain("Do not wrap וגו', וכו'");
+
+    const proposedWithVechulei = 'מתני\' וכו\' מפרש להו בפ\' החליל';
+    const invalidVechulei = '<abbr title="וכולי">וכו\'</abbr>';
+    const verificationVechulei = verifyProposedHebrewWording(
+      proposedWithVechulei, `מתני' ${invalidVechulei} מפרש להו בפ' החליל`);
+    expect(verificationVechulei.valid).toBe(false);
+    expect(verificationVechulei.reason).toContain("Do not wrap וגו', וכו'");
+
+    const proposedWithChulei = 'מתני\' כו\' מפרש להו בפ\' החליל';
+    const invalidChulei = '<abbr title="כולי">כו\'</abbr>';
+    const verificationChulei = verifyProposedHebrewWording(
+      proposedWithChulei, `מתני' ${invalidChulei} מפרש להו בפ' החליל`);
+    expect(verificationChulei.valid).toBe(false);
+    expect(verificationChulei.reason).toContain("Do not wrap וגו', וכו'");
+  });
+
+  test("accepts <abbr> tags around opening section headers like מתני' or גמ' on cpu", () => {
+    const sourceWithOpeningMishnah = "מתני' כ\"א תקיעות";
+    const proposedOpeningMishnah = '<strong class="dibur-hamatchil"><abbr title="מתניתין">מתני\'</abbr></strong> - <abbr title="עשרים ואחת">כ"א</abbr> תקיעות:';
+    const verificationOpeningMishnah = verifyProposedHebrewWording(
+      sourceWithOpeningMishnah, proposedOpeningMishnah);
+    expect(verificationOpeningMishnah.valid).toBe(true);
+
+    const sourceWithOpeningGemara = "גמ' מנא הני מילי";
+    const proposedOpeningGemara = '<strong class="dibur-hamatchil"><abbr title="גמרא">גמ\'</abbr></strong> - מנא הני מילי:';
+    const verificationOpeningGemara = verifyProposedHebrewWording(
+      sourceWithOpeningGemara, proposedOpeningGemara);
+    expect(verificationOpeningGemara.valid).toBe(true);
+  });
+
+  test("accepts <abbr> tags around page or chapter reference numerals on cpu", () => {
+    const sourceWithChapterNumeral = "כמו בההיא דפרק ד' אחין";
+    const proposedChapterNumeral = 'כמו בההיא דפרק <abbr title="ארבעה">ד\'</abbr> אחין';
+    const verificationChapterNumeral = verifyProposedHebrewWording(
+      sourceWithChapterNumeral, proposedChapterNumeral);
+    expect(verificationChapterNumeral.valid).toBe(true);
+
+    const sourceWithPageNumeral = "כדאמרינן לקמן דף ב. ושם";
+    const proposedPageNumeral = 'כדאמרינן לקמן דף <abbr title="שתים">ב.</abbr> ושם';
+    const verificationPageNumeral = verifyProposedHebrewWording(
+      sourceWithPageNumeral, proposedPageNumeral);
+    expect(verificationPageNumeral.valid).toBe(true);
+  });
+
+  test("accepts <abbr> tags around ע\"ה for עליו השלום", () => {
+    const sourceWithAlavHashalom = 'משה רבינו ע"ה אמר';
+    const proposedWithAlavHashalom = 'משה רבינו <abbr title="עליו השלום">ע"ה</abbr> אמר:';
+    const verification = verifyProposedHebrewWording(
+      sourceWithAlavHashalom, proposedWithAlavHashalom);
+    expect(verification.valid).toBe(true);
+  });
+
+  test("accepts <abbr> tags around regular numbers representing counts or quantities", () => {
+    const sourceWithRegularNumeral = "שבעת ימים קודם ז' ימים כ\"א תקיעות ד' ראשי שנים";
+    const validRegularNumeral = '<strong class="dibur-hamatchil">שבעת ימים</strong> - '
+      + 'קודם <abbr title="שבעת">ז\'</abbr> ימים '
+      + '<abbr title="עשרים ואחת">כ"א</abbr> תקיעות '
+      + '<abbr title="ארבעה">ד\'</abbr> ראשי שנים:';
+    const verificationRegularNumeral = verifyProposedHebrewWording(
+      sourceWithRegularNumeral, validRegularNumeral);
+    expect(verificationRegularNumeral.valid).toBe(true);
+  });
+
+  test("rejects <abbr> tags around הקב\"ה, רש\"י, or חז\"ל", () => {
+    const sourceWithSacredName = 'שאמר להם הקב"ה ורש"י פירש';
+    const invalidSacredName = 'שאמר להם <abbr title="הקדוש ברוך הוא">הקב"ה</abbr> ורש"י פירש:';
+    const verificationSacredName = verifyProposedHebrewWording(
+      sourceWithSacredName, invalidSacredName);
+    expect(verificationSacredName.valid).toBe(false);
+    expect(verificationSacredName.reason).toContain("Do not wrap וגו', וכו'");
+
+    const invalidRashi = 'שאמר להם הקב"ה ו<abbr title="רבי שלמה יצחקי">רש"י</abbr> פירש:';
+    const verificationRashi = verifyProposedHebrewWording(sourceWithSacredName, invalidRashi);
+    expect(verificationRashi.valid).toBe(false);
+    expect(verificationRashi.reason).toContain("Do not wrap וגו', וכו'");
+  });
+
+  test("accepts וגו' and וכו' and numerals untouched without <abbr> tags", () => {
+    const sourceWithTruncation = "שנאמר ופתח אהל מועד תשבו יומם ולילה ז' ימים וגו' וכו'";
+    const proposedWithTruncation = '<strong class="dibur-hamatchil">שנאמר</strong> - '
+      + "ופתח אהל מועד תשבו יומם ולילה ז' ימים וגו' וכו':";
+    const verification = verifyProposedHebrewWording(
+      sourceWithTruncation, proposedWithTruncation);
+    expect(verification.valid).toBe(true);
   });
 
   test("rejects bracketed explanations [...] that add Hebrew letters outside of explanation span", () => {
