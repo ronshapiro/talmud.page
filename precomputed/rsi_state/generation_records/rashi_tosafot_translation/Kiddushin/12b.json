@@ -1,0 +1,78 @@
+{
+  "Rashi on Kiddushin 12b:11:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 12b:11:1",
+      "Rashi on Kiddushin 12b:11:2",
+      "Rashi on Kiddushin 12b:11:3",
+      "Rashi on Kiddushin 12b:11:4"
+    ],
+    "generatedAt": "2026-10-22T02:53:13.595Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 12b:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שקלתא</strong> - כלומר נקטא לה ולא השלכתה ואישתיקה:"
+  },
+  "Rashi on Kiddushin 12b:11:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 12b:11:1",
+      "Rashi on Kiddushin 12b:11:2",
+      "Rashi on Kiddushin 12b:11:3",
+      "Rashi on Kiddushin 12b:11:4"
+    ],
+    "generatedAt": "2026-10-22T02:54:36.282Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 12b:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הויא שתיקה דלאחר מתן מעות</strong> - שמתחילה כשקיבלתה והמעות היו בתוכה לא ידעה בהן וכשידעה אחר כן ושתקה שתיקה דלאחר מתן מעות היא ולאו כלום היא דהאי דשתקה משום דלא איכפת לה מימר אמרה מעיקרא לאו אדעתיה דהכי קבילתינהו:"
+  },
+  "Rashi on Kiddushin 12b:12:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 12b:12:1",
+      "Kiddushin 12b:11"
+    ],
+    "generatedAt": "2026-10-22T02:55:44.317Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 12b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנא אמינא לה</strong> - דשתיקה דלאחר מתן מעות לאו כלום היא:"
+  },
+  "Rashi on Kiddushin 12b:12:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T02:56:51.618Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 12b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשעת מתן מעות</strong> - אם קודם שקבלתן אמר לה התקדשי לי בו מקודשת דכי קבילתיה אדעתא דהכי קבילתיה:"
+  },
+  "Rashi on Kiddushin 12b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T03:01:50.547Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 12b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכלל דרישא</strong> - דלא פליג בין רצתה ללא רצתה:"
+  },
+  "Tosafot on Kiddushin 12b:12:1": {
+    "dependsOn": [
+      "Kiddushin 13a:7",
+      "Rashi on Kiddushin 13a:7:2"
+    ],
+    "generatedAt": "2026-10-22T02:59:47.847Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 12b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשעת מתן מעות מקודשת</strong> - ה\"ג ולא גרסינן בין רצתה בין לא רצתה כדאמר לקמן <span class=\"parenthesized\">(קידושין דף יג.)</span> ליתני מקודשת סתם כי התם:"
+  }
+}
