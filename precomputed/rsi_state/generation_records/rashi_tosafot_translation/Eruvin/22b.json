@@ -1,0 +1,461 @@
+{
+  "Rashi on Eruvin 22b:10:1": {
+    "dependsOn": [
+      "Eruvin 22b:10"
+    ],
+    "generatedAt": "2026-10-22T05:12:13.603Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 22b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לאו ר' יהודה</strong> - ואשמעינן דהיכא דלא ניחא תשמישתיה מודי:"
+  },
+  "Rashi on Eruvin 22b:13:1": {
+    "dependsOn": [
+      "Eruvin 22b:13",
+      "Rashi on Eruvin 22b:13:2"
+    ],
+    "generatedAt": "2026-10-22T05:26:56.928Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 22b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בבורות סלקא דעתך</strong> - היכי הוי מבוי בתוך הבור:"
+  },
+  "Rashi on Eruvin 22b:13:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 22b:13:1",
+      "Eruvin 22b:13",
+      "Steinsaltz on Eruvin 22b:13"
+    ],
+    "generatedAt": "2026-10-22T05:29:00.725Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 22b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לבורות</strong> - שיש בור בראשו אחד ובשפה אחת קצרה מהלכין שם עד שעוברין:"
+  },
+  "Rashi on Eruvin 22b:17:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 22b:17:1"
+    ],
+    "generatedAt": "2026-10-22T05:30:11.616Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 22b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שבילי בית גילגול</strong> - מעלה גבוהה וזקופה היא בארץ ישראל:"
+  },
+  "Rashi on Eruvin 22b:19:1": {
+    "dependsOn": [
+      "Eruvin 22b:19",
+      "Eruvin 22b:13",
+      "Eruvin 22b:14",
+      "Eruvin 22b:15",
+      "Eruvin 22b:16",
+      "Rashi on Eruvin 22b:17:1",
+      "Eruvin 22b:4"
+    ],
+    "generatedAt": "2026-10-22T05:36:30.494Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 22b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יהושע אוהב ישראל היה</strong> - ובמעלות ומורדות דארץ ישראל מודינא לך דאין חייבין עליהן וכי אמינא לך דחייבין בשאר ארצות קאמינא:"
+  },
+  "Rashi on Eruvin 22b:1:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 22b:1:1",
+      "Rashi on Eruvin 22b:1:2",
+      "Rashi on Eruvin 22b:1:3",
+      "Chokhmat Shlomo on Eruvin 22b:3",
+      "Steinsaltz on Eruvin 22b:1"
+    ],
+    "generatedAt": "2026-10-22T04:15:59.581Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 22b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סולמא דצור</strong> - סלע הר גבוה סביב [לעלות בו לא\"י והוא גבוה י' טפחים]:"
+  },
+  "Rashi on Eruvin 22b:1:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 22b:1:1",
+      "Rashi on Eruvin 22b:1:3",
+      "Chokhmat Shlomo on Eruvin 22b:4",
+      "Eruvin 22b:1"
+    ],
+    "generatedAt": "2026-10-22T04:21:41.711Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 22b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[ומחתנא</strong> - מורד חריץ עמוק י' טפחים ורחב ד' סביב א\"י מאידך גיסא] והוי לה מחיצה ונהי דאסור לטלטולי מדרבנן מיהו לאו רה\"ר דאורייתא היא לאחיובי עליה:"
+  },
+  "Rashi on Eruvin 22b:1:3": {
+    "dependsOn": [
+      "Eruvin 22b:1"
+    ],
+    "generatedAt": "2026-10-22T04:29:22.239Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 22b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעלות ומורדות שבה קאמרת</strong> - שאין חייבין עליהם משום רה\"ר דלא ניחא דריסה דידהו ולא הוי רה\"ר:"
+  },
+  "Rashi on Eruvin 22b:20:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 22b:20:1",
+      "Rashi on Eruvin 22b:20:2",
+      "Eruvin 22b:20",
+      "Eruvin 23a:1",
+      "Eruvin 23a:2",
+      "Eruvin 23a:3"
+    ],
+    "generatedAt": "2026-10-22T05:44:02.793Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 22b:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בור הרבים</strong> - אי פסקי מיא מדכרי אהדדי:"
+  },
+  "Rashi on Eruvin 22b:20:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 22b:20:1",
+      "Eruvin 22b:20",
+      "Eruvin 23a:1",
+      "Eruvin 23a:2",
+      "Eruvin 23a:3"
+    ],
+    "generatedAt": "2026-10-22T05:46:44.308Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 22b:20:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באר היחיד</strong> - נמי שרי דהא לא פסקי מיא:"
+  },
+  "Rashi on Eruvin 22b:22:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 22b:22:2",
+      "Steinsaltz on Eruvin 22b:22",
+      "Eruvin 22b:22",
+      "Rashi on Eruvin 22b:20:1",
+      "Rashi on Eruvin 22b:20:2"
+    ],
+    "generatedAt": "2026-10-22T05:49:30.777Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 22b:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לבאר הרבים</strong> - דאיכא תרתי למעליותא:"
+  },
+  "Rashi on Eruvin 22b:22:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T05:50:04.562Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 22b:22:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חגורה</strong> - היקף של חבלים:"
+  },
+  "Rashi on Eruvin 22b:2:1": {
+    "dependsOn": [
+      "Eruvin 22b:2",
+      "Rashi on Eruvin 22b:2:2",
+      "Sefer HeArukh, Letter Kof 596",
+      "Steinsaltz on Eruvin 22b:2",
+      "Chokhmat Shlomo on Eruvin 22b:1"
+    ],
+    "generatedAt": "2026-10-22T04:40:22.566Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 22b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קרקפנא</strong> - בעל הגולגולת כלומר אדם חשוב:"
+  },
+  "Rashi on Eruvin 22b:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T04:42:23.924Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 22b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עמודי</strong> - של בית מדרש של ר' יוחנן:"
+  },
+  "Rashi on Eruvin 22b:3:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 22b:3:1",
+      "Rashi on Eruvin 22b:1:1",
+      "Rashi on Eruvin 22b:2:1"
+    ],
+    "generatedAt": "2026-10-22T04:48:47.914Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 22b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאינן כדגלי מדבר</strong> - דארץ חלקה היתה שהענן משוה אותה:"
+  },
+  "Rashi on Eruvin 22b:7:1": {
+    "dependsOn": [
+      "Eruvin 22b:7",
+      "Rashi on Eruvin 22b:7:2",
+      "Rashi on Eruvin 22b:2:1",
+      "Rashi on Eruvin 22b:2:2",
+      "Rashi on Eruvin 22b:1:1"
+    ],
+    "generatedAt": "2026-10-22T04:57:42.177Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 22b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואפי' עולין לו בחבל</strong> - בעיא היא ורחבה קאמר לה:"
+  },
+  "Rashi on Eruvin 22b:7:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 22b:7:2",
+      "Rashi on Eruvin 22b:7:1",
+      "Rashi on Eruvin 22b:8:1",
+      "Rosh Hashanah 18a:11",
+      "Rosh Hashanah 18a:12",
+      "Rosh Hashanah 18a:13",
+      "Rashi on Rosh Hashanah 18a:13:2",
+      "Rashi on Eruvin 22b:1:1",
+      "Rashi on Eruvin 22b:2:1",
+      "Rashi on Eruvin 22b:3:1",
+      "Rashi on Eruvin 2a:1:1",
+      "Rashi on Eruvin 2a:1:2"
+    ],
+    "generatedAt": "2026-10-22T05:02:43.286Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 22b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעלות בית מרון</strong> - זקופין מאד ומעלה קצרה ומהלכין בה בזה אחר זה ולא שנים יחד כדאמרי' בר\"ה <span class=\"parenthesized\">(ד' יח.)</span> כבני מרון כמעלות בית מרון:"
+  },
+  "Rashi on Eruvin 22b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T05:03:46.545Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 22b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חצר שהרבים נכנסין לה</strong> - דרך פתחים או פרצות של עשר:"
+  },
+  "Rashi on Eruvin 22b:9:1": {
+    "dependsOn": [
+      "Eruvin 22b:9",
+      "Rashi on Eruvin 22b:8:1",
+      "Steinsaltz on Eruvin 22b:9",
+      "Tosafot on Eruvin 22b:9:1",
+      "Eruvin 22b:16",
+      "Eruvin 22b:20"
+    ],
+    "generatedAt": "2026-10-22T05:07:33.522Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 22b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלא ניחא תשמישתי'</strong> - לרבים לדריסה שהפתחין קצרין וגידודין יש באסקופה ופשיטא דלא מבטלה בקיעת רבים למחיצות:"
+  },
+  "Tosafot on Eruvin 22b:10:1": {
+    "dependsOn": [
+      "Eruvin 22b:10",
+      "Tosafot on Eruvin 22b:9:1",
+      "Rashi on Eruvin 22b:9:1",
+      "Rashi on Eruvin 22b:10:1",
+      "Eruvin 22b:7",
+      "Chidushei Halachot on Eruvin 22b:2"
+    ],
+    "generatedAt": "2026-10-22T05:16:07.444Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 22b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לאו ר' יהודה</strong> - וא\"ת ולוקמא כגון שיש שתי מחיצות גמורות דבההיא ודאי מודה ר' יהודה וי\"ל דע\"כ בשנפרצה מד' רוחות דאי בנפרצה מב' רוחות מאי איריא דלא ניחא תשמישתיה אפי' ניחא תשמישתיה נמי כדפריך לרבנן:"
+  },
+  "Tosafot on Eruvin 22b:12:1": {
+    "dependsOn": [
+      "Eruvin 22b:12",
+      "Rabbeinu Chananel on Eruvin 22b:6",
+      "Mishnah Tahorot 6:6",
+      "Rashi on Eruvin 22b:13:1",
+      "Rashi on Eruvin 22b:13:2",
+      "Ritva on Eruvin 22b:13:1",
+      "Ritva on Eruvin 22b:6",
+      "Eruvin 22b:7",
+      "Eruvin 22b:8",
+      "Eruvin 22b:9",
+      "Eruvin 22b:10",
+      "Eruvin 22b:11",
+      "Steinsaltz on Eruvin 22b:12",
+      "Bartenura on Mishnah Tahorot 6:6:3",
+      "Bartenura on Mishnah Tahorot 6:6:2",
+      "Sefer HeArukh, Letter Gimel 164",
+      "Rashba on Eruvin 22b:5",
+      "Rabbeinu Chananel on Pesachim 19b:1"
+    ],
+    "generatedAt": "2026-10-22T05:24:57.071Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 22b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תא שמע מבואות המפולשות</strong> - במסכת טהרות <span class=\"parenthesized\">(פ\"ו מ\"ו)</span> גרסי' בגיתות והיינו בורות שתחת הגיתות פי' רבינו חננאל וכגון שהבור רחוק מן הכותל ג' טפחים מכל צד והולכין דרך כאן וכאן וקא משמע לן דאפי' הכי לא בטלי מחיצה דאי בור הולך מכותל לכותל פשיטא דהוי רה\"י והא דנקט בור ולא נקט מחיצה מופלגת ג' מן הכותל משום דבבור הוי חדוש טפי דאע\"ג שרשות הרבים נמי מהלכת בתוכו אפי' הכי הוי רשות היחיד לשבת:"
+  },
+  "Tosafot on Eruvin 22b:17:1": {
+    "dependsOn": [
+      "Eruvin 22b:17",
+      "Rashi on Eruvin 22b:17:1",
+      "Eruvin 89b:6"
+    ],
+    "generatedAt": "2026-10-22T05:33:09.082Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 22b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיזהו שבילי בית גלגול כו'</strong> - ואם תאמר והא ע\"כ שבילי בית גלגול היו מתלקטים עשרה מתוך ארבע הואיל והוי רשות היחיד לשבת וא\"כ מה צריך הכא לאתויי דר' ינאי ועוד קשיא דאמאי לא משני רשות הרבים לטומאה איצטריכא ליה כדמשני לעיל ויש לומר דמשום הכי מייתי מדר' ינאי דמשמע דעיקר חידושא הוי שהוא רשות היחיד לשבת מדלא אמרינן אפילו אין העבד יכול לרוץ כו' אפ\"ה הוי רשות הרבים ואם תאמר ולמה לי אין העבד יכול לרוץ אפי' יכול נמי הוי רשות היחיד כיון שמתלקט עשרה מתוך ארבע ויש לומר דבעינן שלא יהא ניחא תשמישתיה שלא יהא עשוי כעין מדרגה דלא תהוי מחיצתא נדרסת דאמר בפרק כל גגות <span class=\"parenthesized\">(לקמן עירובין ד' פט:)</span> דלא הויא מחיצתא:"
+  },
+  "Tosafot on Eruvin 22b:19:1": {
+    "dependsOn": [
+      "Eruvin 22b:19",
+      "Eruvin 22b:14",
+      "Eruvin 22b:9",
+      "Rashi on Eruvin 22b:19:1",
+      "Tosafot on Eruvin 22b:10:1",
+      "Rashba on Eruvin 22b:7",
+      "Rabbeinu Chananel on Eruvin 22b:8",
+      "Steinsaltz comment #1 on Eruvin 22b:19",
+      "Steinsaltz on Eruvin 22b:19",
+      "Ritva on Eruvin 22b:8",
+      "Ritva on Eruvin 22b:13",
+      "Maharsha on Eruvin 22b:3"
+    ],
+    "generatedAt": "2026-10-22T05:42:04.328Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 22b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יהושע אוהב ישראל היה</strong> - דוקא שבילי בית גלגול דלא ניחא תשמישתיה כלל כדמפרש ר' ינאי שאין העבד יכול לרוץ אבל מבוי מפולש לבורות וחצר שרבים נכנסים לה בזו ויוצאין בזו הוי רה\"ר לר\"י אע\"ג דהוו של יחיד הואיל וניחא תשמישתיה וראוי למוסרו לרבים הוו רה\"ר לר' יהודה ע\"י בקיעת רבים ולהכי לא קאמר אלא דמשמע דצריך עדיין לשנויא דלעיל:"
+  },
+  "Tosafot on Eruvin 22b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T04:32:11.782Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 22b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אילימא משום דמקיף סולמא דצור</strong> - הוה מצי לאקשויי מר' יוחנן גופיה דאמר לעיל ירושלים אלמלא דלתותיה נעולות בלילה חייבין עליה משום רה\"ר ושמא התם הוי אליבא דר' יהודה דאית ליה דאתו רבים ומבטלי מחיצה והכא אליבא דרבנן:"
+  },
+  "Tosafot on Eruvin 22b:1:2": {
+    "dependsOn": [
+      "Eruvin 22b:1",
+      "Tosafot on Eruvin 22b:1:1",
+      "Eruvin 22b:19",
+      "Maharsha on Eruvin 22b:2"
+    ],
+    "generatedAt": "2026-10-22T04:35:42.216Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 22b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דילמא מעלות ומורדות קאמרת</strong> - ודווקא בארץ ישראל כדמפרש טעמא בסמוך יהושע אוהב ישראל היה אבל בחוצה לארץ חייב ואליבא דר' יהודה אבל לרבנן אפי' בחוצה לארץ פטור דלא אתו רבים ומבטלי מחיצה ותימה דלרבנן כל ארץ ישראל תעשה רה\"י ע\"י סולמא דצור ומחתנא דגדר ובבל נמי דמקיף לה דיגלת ולא אתו רבים ומבטלי מחיצתן ולר' יוחנן דאמר בפרק הדר <span class=\"parenthesized\">(לקמן עירובין ד' סז:)</span> קרפף יותר מבית סאתים שלא הוקף לדירה אפי' כור ואפי' כוריים הזורק לתוכו חייב והוא הדין אפי' לאלף כורים דמה שיעור יהיה וי\"ל דמחיצה שאינה עשויה בידי אדם לא חשיבא מחיצה כולי האי ואפי' רבנן מודו דאתו רבים ומבטלי מחיצה:"
+  },
+  "Tosafot on Eruvin 22b:22:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 22b:22:1",
+      "Rashi on Eruvin 22b:22:1",
+      "Rashi on Eruvin 22b:22:2",
+      "Tosafot on Eruvin 22b:1:1",
+      "Tosafot on Eruvin 22b:2:1"
+    ],
+    "generatedAt": "2026-10-22T05:52:43.405Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 22b:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חגורה</strong> - פירוש מחיצה:"
+  },
+  "Tosafot on Eruvin 22b:2:1": {
+    "dependsOn": [
+      "Eruvin 22b:2",
+      "Eruvin 22b:1",
+      "Rashi on Eruvin 22b:2:1",
+      "Rashi on Eruvin 22b:2:2",
+      "Chokhmat Shlomo on Eruvin 22b:6",
+      "Shabbat 55a:4",
+      "Shabbat 55a:5",
+      "Shabbat 55a:6",
+      "Ketubot 111a:24",
+      "Ketubot 111a:25",
+      "Ketubot 111a:26",
+      "Ketubot 111a:27",
+      "Ketubot 111b:1"
+    ],
+    "generatedAt": "2026-10-22T04:46:47.371Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 22b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קרקפנא חזיתיה לרישך</strong> - רישך היינו רבה שהיה רבו של אביי והוי כמו רישך בקרירי ורישא דרישך בחמימי <span class=\"parenthesized\">(שבת ד' נה.)</span> ומצינו שהלך רבה לארץ ישראל ללמוד תורה לפני ר' יוחנן בסוף פרק שני דייני גזירות <span class=\"parenthesized\">(כתובות ד' קיא.)</span> אבל אביי עצמו לא מצינו שהלך ללמוד תורה שם [ועוד שלא ראה אביי את ר' יוחנן אבל רבה תלמידו של רבי יוחנן הוה]:"
+  },
+  "Tosafot on Eruvin 22b:4:1": {
+    "dependsOn": [
+      "Eruvin 22b:4",
+      "Eruvin 22b:1",
+      "Rashba on Eruvin 22b:4",
+      "Ritva on Eruvin 22b:4",
+      "Tosafot on Eruvin 22b:1:1",
+      "Tosafot on Eruvin 22b:2:1",
+      "Tosafot on Eruvin 22b:9:1",
+      "Tosafot on Eruvin 22b:10:1",
+      "Steinsaltz on Eruvin 22b:4"
+    ],
+    "generatedAt": "2026-10-22T04:52:59.175Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 22b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תל המתלקט כו'</strong> - לא הוה שמיע ליה הא דא\"ר יוחנן מעלות ומורדות שבארץ ישראל כו' אבל בחוצה לארץ חייבין:"
+  },
+  "Tosafot on Eruvin 22b:9:1": {
+    "dependsOn": [
+      "Eruvin 22b:9",
+      "Rashi on Eruvin 22b:9:1",
+      "Tosafot on Eruvin 22b:4:1"
+    ],
+    "generatedAt": "2026-10-22T05:10:38.023Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 22b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מני אילימא רבנן</strong> - וא\"ת לימא לעולם רבנן וקמשמע לן דאפילו לטלטל שרי דמפסי ביראות לא שמעינן דבעולי רגלים הקילו וי\"ל דעדיפא קא משני:"
+  }
+}

@@ -1,0 +1,357 @@
+{
+  "Rashi on Eruvin 23a:10:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 23a:10:2",
+      "Jastrow, עַרְקַבְלִין 1",
+      "Rashi on Eruvin 23a:9:1"
+    ],
+    "generatedAt": "2026-10-22T06:19:23.135Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 23a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בערקבלין</strong> - שם מרור:"
+  },
+  "Rashi on Eruvin 23a:10:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 23a:10:1",
+      "Rashi on Eruvin 23a:10:2",
+      "Eruvin 23a:10",
+      "Eruvin 23a:5",
+      "Eruvin 23a:6"
+    ],
+    "generatedAt": "2026-10-22T06:30:46.322Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 23a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובקשתי לי חבר</strong> - לשלשה דברים הללו אם שמען מפיו ולא מצאתי ובגמרא מפרש דגבי גינה וקרפף לא שרו יותר מבית סאתים וגבי אנשי חצר סברי דאף להם אסור ביתו אבל מבתיהן לחצר מותר ובגמ' מפרש פלוגתייהו ובערקבלין סברי דלאו מרור הוא:"
+  },
+  "Rashi on Eruvin 23a:11:1": {
+    "dependsOn": [
+      "Eruvin 23a:11",
+      "Eruvin 23a:5",
+      "Eruvin 23a:6",
+      "Eruvin 23a:7",
+      "Eruvin 23a:8",
+      "Rashi on Eruvin 23a:11:2",
+      "Eruvin 23a",
+      "Eruvin 23a:14",
+      "Eruvin 17b:1",
+      "Eruvin 17b:2",
+      "Eruvin 17b:3",
+      "Steinsaltz on Eruvin 23a:11",
+      "Steinsaltz comment #1 on Eruvin 23a:11",
+      "Rashi on Eruvin 23a:2:1",
+      "Rashi on Eruvin 23a:5:1"
+    ],
+    "generatedAt": "2026-10-22T06:42:20.559Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 23a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי תנא</strong> - רבי יהודה בן בבא בגינה וקרפף דלעיל:"
+  },
+  "Rashi on Eruvin 23a:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T06:43:31.999Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 23a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דקאמר ועוד</strong> - דמשמע דאמר לעיל בה חומרא אחריתי:"
+  },
+  "Rashi on Eruvin 23a:12:1": {
+    "dependsOn": [
+      "Eruvin 23a:12",
+      "Rashi on Eruvin 23a:11:1",
+      "Rashi on Eruvin 23a:12:2"
+    ],
+    "generatedAt": "2026-10-22T06:46:36.288Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 23a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אילימא משום דאמר חדא לחומרא</strong> - גבי פסין דאמר דאין עושין אותן אלא לבאר הרבים והשתא קאמר חומרא אחריתי דאע\"ג דהוקף לדירה לא שרי טפי מבית סאתים:"
+  },
+  "Rashi on Eruvin 23a:12:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 23a:12:1",
+      "Eruvin 23a:12",
+      "Tosafot on Eruvin 23a:12:1",
+      "Rashi on Eruvin 23a:11:1",
+      "Rashi on Eruvin 23a:11:2",
+      "Eruvin 23a:5",
+      "Eruvin 23a:9",
+      "Eruvin 18a:1",
+      "Eruvin 18a:2",
+      "Eruvin 18a:3",
+      "Eruvin 18a:4",
+      "Rashi on Eruvin 23a:13:1",
+      "Rashi on Eruvin 23a:2:1",
+      "Rashi on Eruvin 23a:5:1"
+    ],
+    "generatedAt": "2026-10-22T06:53:54.929Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 23a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא רבי יהודה בר אלעאי דתנא לעיל חדא לחומרא</strong> - דאמר עד בית סאתים אין טפי לא והדר תנא אחריתי יסלקנה לצדדין ולא תנא ועוד משום דלאו בחדא מלתא היא דרישא איירי במדת היקף וסיפא איירי בביטול מחיצות:"
+  },
+  "Rashi on Eruvin 23a:13:1": {
+    "dependsOn": [
+      "Eruvin 23a:13",
+      "Rashi on Eruvin 23a:12:1",
+      "Rashi on Eruvin 23a:12:2",
+      "Rashi on Eruvin 23a:2:1",
+      "Rashi on Eruvin 23a:5:1",
+      "Rashi on Eruvin 23a:9:1"
+    ],
+    "generatedAt": "2026-10-22T07:08:54.337Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 23a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפסקוה רבנן</strong> - דקא תני אמרו לו לא אמרו בית סאתים אלא לגינה כו':"
+  },
+  "Rashi on Eruvin 23a:14:1": {
+    "dependsOn": [
+      "Eruvin 23a:14",
+      "Rashi on Eruvin 23a:14:2",
+      "Rashi on Eruvin 23a:12:1",
+      "Rashi on Eruvin 23a:12:2"
+    ],
+    "generatedAt": "2026-10-22T07:11:38.669Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 23a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכל היכא דאפסקוה רבנן לא הוה תני בה ועוד</strong> - אי שייך למימר בה כגון היכא דרישא וסיפא בחדא מילתא:"
+  },
+  "Rashi on Eruvin 23a:14:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 23a:14:1",
+      "Eruvin 23a:14",
+      "Rashi on Eruvin 23a:12:1",
+      "Rashi on Eruvin 23a:12:2"
+    ],
+    "generatedAt": "2026-10-22T07:19:54.251Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 23a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא ר' אליעזר דסוכה</strong> - דתנן במסכת <span class=\"parenthesized\">(סוכה ד' כז.)</span> ר' אליעזר אומר י\"ד סעודות חייב אדם לאכול בסוכה וחכמים אומרים אין לדבר קצבה ועוד אמר ר' אליעזר מי שלא אכל לילי יו\"ט הראשון ישלים לילי יום טוב האחרון אלמא משום דרישא וסיפא בסעודה דסוכה ובחשבונן איירי תנא ועוד אע\"ג דאפסקוה ושמע מינה האי דלא תנא בדרבי יהודה ועוד. משום דלא דמי הוא ובדרבי יהודה בן בבא למה לי דתני ליה:"
+  },
+  "Rashi on Eruvin 23a:15:1": {
+    "dependsOn": [
+      "Eruvin 23a:15",
+      "Eruvin 18a:1",
+      "Eruvin 18a:2"
+    ],
+    "generatedAt": "2026-10-22T07:28:50.392Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 23a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם</strong> - גבי סוכה במלתיה אפסקוה לא אהדרו ליה רבנן אלא בסעודות אבל רבי יהודה דמתני' לא איירי אלא בפסי ביראות בית סאתים ואהדרו רבנן בגינה וקרפף ודיר וסהר ולעולם טעמיה משום הפסקה ולר' יהודה בן בבא דלא אפסקיה תנא ועוד:"
+  },
+  "Rashi on Eruvin 23a:2:1": {
+    "dependsOn": [
+      "Eruvin 23a:2"
+    ],
+    "generatedAt": "2026-10-22T05:55:09.493Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 23a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוה אמינא דרבים אפי' מכונסין</strong> - שרי ר\"י בן בבא והאי דקאמר באר הרבים משום ר' עקיבא דאמר באר היחיד שרי ואתא איהו למימר אע\"ג דמים חיים נינהו דרבים אין דיחיד לא והכי קאמר אין עושין פסין אפילו לבאר אלא של רבים:"
+  },
+  "Rashi on Eruvin 23a:5:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 23a:5:1",
+      "Rashi on Eruvin 23a:5:2",
+      "Eruvin 23a:6"
+    ],
+    "generatedAt": "2026-10-22T06:03:24.212Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 23a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שומירה</strong> - סוכת שומרין ואע\"ג דהוקף לדירה בית סאתים הוא דשרי טפי לא:"
+  },
+  "Rashi on Eruvin 23a:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T06:04:06.272Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 23a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סמוכה לעיר</strong> - דהואיל וקרובה לביתו דעתו להשתמש בה תמיד וכהוקף לדירה דמי:"
+  },
+  "Rashi on Eruvin 23a:6:1": {
+    "dependsOn": [
+      "Eruvin 23a:6",
+      "Eruvin 23a:8",
+      "Eruvin 23a:10"
+    ],
+    "generatedAt": "2026-10-22T06:12:39.925Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 23a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובלבד שתהא שבעים אמה ושיריים על שבעים אמה ושיריים</strong> - ולא יותר ובגמרא פריך תנא קמא נמי הכי קאמר:"
+  },
+  "Rashi on Eruvin 23a:7:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 23a:7:1"
+    ],
+    "generatedAt": "2026-10-22T06:14:33.628Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 23a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם היה ארכה יותר על רחבה אפילו אמה אחת</strong> - אע\"ג דמיעט רחבה והוסיף בארכה ואין בכולה אלא בית סאתים אין מטלטלין דמרובע הוא דשרו רבנן היכא דלא הוקף לדירה:"
+  },
+  "Rashi on Eruvin 23a:9:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 23a:9:1",
+      "Rashi on Eruvin 23a:9:2",
+      "Rashi on Eruvin 23a:9:3"
+    ],
+    "generatedAt": "2026-10-22T06:15:40.775Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 23a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אנשי חצר ששכח כו'</strong> - ולמחר ביטל רשותו לחברו שהיא אוסרת עליהן מלהוציא מבתיהן לחצר:"
+  },
+  "Rashi on Eruvin 23a:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T06:16:44.811Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 23a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ביתו אסור להכניס ולהוציא</strong> - לחצר לצרכו:"
+  },
+  "Rashi on Eruvin 23a:9:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 23a:9:1",
+      "Rashi on Eruvin 23a:9:2",
+      "Rashi on Eruvin 23a:9:3"
+    ],
+    "generatedAt": "2026-10-22T06:17:39.523Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 23a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל להן מותר</strong> - להביא כלי בתיהן לביתו דרך חצר:"
+  },
+  "Tosafot on Eruvin 23a:12:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 23a:12:1",
+      "Rashi on Eruvin 23a:12:2"
+    ],
+    "generatedAt": "2026-10-22T07:06:41.700Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 23a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אילימא משום דתני חדא לחומרא</strong> - פירוש דשייך למיתני ועוד אע\"ג דלא הוו תרוייהו מענין א' וכ\"ש היכא דהוו תרוייהו מענין א' אף על גב דלא הוו תרוייהו לחומרא כמו בסוכה <span class=\"parenthesized\">(דף כז.)</span> ובפרק רביעי דמגילה <span class=\"parenthesized\">(דף כח.)</span> כדפ\"ה:"
+  },
+  "Tosafot on Eruvin 23a:15:1": {
+    "dependsOn": [
+      "Eruvin 23a:15",
+      "Beitzah 33a:8"
+    ],
+    "generatedAt": "2026-10-22T07:30:42.319Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 23a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא במלתא אחריתי אפסקוה</strong> - תימה דבפרק המביא כדי יין <span class=\"parenthesized\">(ביצה דף לד. ושם)</span> קתני ועוד ואע\"ג דאפסיק במילתא אחריתי דקתני ר' אליעזר אומר נוטל אדם קיסם משלפניו [לחצוץ בו שיניו] ומגבב מן החצר ומדליק וחכ\"א מגבב משלפניו ומדליק וקתני בתר הכי אין מוציאין את האור לא מן העצים כו' ומפסיק בבא שלימה וקתני בתר הכי ועוד א\"ר אליעזר עומד אדם על המוקצה כו' ומיהו רש\"י מהפך שם המשנה והגמ' אך לר\"ת שאומר שאין צריך להפך דמילתא דאור קא מסיים ואזיל קשה וי\"ל דהתם הוו תרי קולי ושייך למיתני ועוד אע\"ג דאפסיק במילתא אחריתי דכח דהיתירא עדיף:"
+  },
+  "Tosafot on Eruvin 23a:3:1": {
+    "dependsOn": [
+      "Eruvin 23a:3",
+      "Rashi on Eruvin 23a:2:1",
+      "Eruvin 23a:1",
+      "Steinsaltz on Eruvin 23a:3:1"
+    ],
+    "generatedAt": "2026-10-22T05:57:48.823Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 23a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא דנקט באר הרבים לאפוקי מר' עקיבא</strong> - וא\"ת א\"כ הוה ליה למימר בור הרבים וע\"כ באר היחיד לא דא\"כ היינו רבי עקיבא וי\"ל דאורחא דמלתא למיתני מענין שממעט דהיינו באר היחיד אי נמי הא דקאמר דרבים אפילו מכונסין לאו אר\"י בן בבא קאי אלא אשמואל:"
+  },
+  "Tosafot on Eruvin 23a:4:1": {
+    "dependsOn": [
+      "Eruvin 23a:4",
+      "Chidushei Halachot on Eruvin 23a:1",
+      "Tosafot on Eruvin 23a:3:1"
+    ],
+    "generatedAt": "2026-10-22T06:00:49.414Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 23a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שנא דרבים ולא שנא כו'</strong> - יכול להיות דהוי כר' יהודה בן בבא והא דנקט ר' יהודה בן בבא באר הרבים היינו לאפוקי בור הרבים:"
+  },
+  "Tosafot on Eruvin 23a:5:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 23a:5:2",
+      "Tosafot on Eruvin 23a:3:1",
+      "Tosafot on Eruvin 23a:4:1"
+    ],
+    "generatedAt": "2026-10-22T06:06:46.964Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 23a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהוא ע' אמה ושיריים</strong> - וא\"ת ולילף מהר הבית ועזרת נשים שהיה קל\"ה אמה ועזרת ישראל היה קפ\"ז וי\"ל דכל מילי דשבת ממשכן גמרינן להו אי נמי העזרות חשיבי מוקפין לדירה שהיו שומרים בה כל הלילה:"
+  },
+  "Tosafot on Eruvin 23a:5:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 23a:5:1",
+      "Rashi on Eruvin 23a:5:2",
+      "Tosafot on Eruvin 23a:5:1",
+      "Eruvin 23a:5",
+      "Eruvin 23a:10",
+      "Eruvin 23a:15",
+      "Rashi on Eruvin 23b:1:1",
+      "Rabbeinu Chananel on Eruvin 23a:1",
+      "Tosafot on Eruvin 23b:1:1"
+    ],
+    "generatedAt": "2026-10-22T06:10:32.378Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 23a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובלבד שיהא בה שומירה</strong> - נראה לפרש דפחות מע' אמה נמי צריך שומירה או בית דירה וביתר מבית סאתים לא סגי בשומירה ובית דירה אלא פתח ולבסוף הוקף הקרפף לצורך הבית אבל אין לומר דבשבעים אמה דוקא צריך שומירה אבל בפחות א\"צ כלום וביתר אין סגי בשומירה דאין סברא שיהא ג' חלוקים בג' משהויין והא נמי אין לומר דביתר מע' נמי סגי בשומירה ולא אתא למימר אלא דבציר משבעים אמה ושיריים לא צריך כלל דאם כן במאי פליג ר' עקיבא לפירוש ר\"ח דפירש דר' יהודה בן בבא איירי בדבר מועט ור' עקיבא לא איירי דלתרוייהו בע' אמה ושיריים ודבר מועט צריך שומירה ובפחות מכאן לא צריך ואפי' לפי' רש\"י דפי' היינו תנא קמא דאמרו לו לר' יהודה מ\"מ גם לפי' נראה דרבי יהודה בן בבא נמי אית ליה דבר מועט כמו תנא קמא דמשום הכי איצטריך לרבי עקיבא לחזור ולשנות ובלבד שיהא בה ע' אמה כו' ועוד אי ביתר מבית סאתים נמי איירי ר\"י בן בבא א\"כ היכי קאמר ר\"י אפילו אין בה אלא בור ושיח ומערה משמע דלר\"י נמי אין חילוק בין סאתים ליתר ורבי יהודה גופיה קאמר לעיל גבי פסין עד בית סאתים ועוד לר\"ח דפי' היינו תנא קמא היינו ר\"י בן בבא כלומר ואמאי הוצרך לשנות ובלבד כו' כיון דקאי ארבי יהודה בן בבא והא אצטריך דלא נימא דשרי אפילו ביתר מבית סאתים כיון דר' יהודה בן בבא איירי ביתר מבית סאתים לכך נראה כדפרישית ומה שפירש רש\"י אפילו בהוקף לדירה לא שרי רבי יהודה בן בבא ביתר מבית סאתים אין נראה אלא בפתח ולבסוף הוקף מהני אפי' ביתר מבית סאתים דהא שרו רבנן לעיל בדיר וסהר ומוקצה אפי' בי' כורים וכמה חצירות ומבואות שהיו בירושלים יתרות על בית סאתים וכי יאסור ר' יהודה בן בבא בכולם לטלטל ודווקא בשומירה הוא דקאמר דלא מהני ביתר מבית סאתים אבל פתח ולבסוף הוקף מהני אפי' יותר ולרש\"י שמא יש לחלק דבדיר וסהר ומוקצה וחצר לפי שתשמישתן רב יותר אפי' י' כורין אבל קרפף אפי' פתח ולבסוף הוקף לא מהני ביתר מבית סאתים:"
+  }
+}
