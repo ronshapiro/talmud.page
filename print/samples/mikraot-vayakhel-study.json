@@ -1,0 +1,253 @@
+{
+  "id": "mikraot-vayakhel-study",
+  "name": "Parashat Vayakhel: Rashi, then in depth",
+  "kind": "mikraot",
+  "schemaVersion": 1,
+  "createdAt": 1790812800000,
+  "updatedAt": 1790812800000,
+  "page": {
+    "preset": "crown-quarto",
+    "unit": "in",
+    "width": 7.44,
+    "height": 9.69,
+    "margins": {
+      "top": 0.55,
+      "bottom": 0.55,
+      "inner": 0.65,
+      "outer": 0.5
+    },
+    "binding": "rtl"
+  },
+  "book": "Exodus",
+  "sections": [
+    {
+      "id": "section-muu9edz3-ev1hjw",
+      "range": {
+        "kind": "parsha",
+        "parsha": "Vayakhel"
+      },
+      "showMainText": true,
+      "commentators": [
+        {
+          "id": "onkelos",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "rashi",
+          "tier": 1,
+          "english": "side-by-side",
+          "wrap": true
+        },
+        {
+          "id": "ramban",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "ibn-ezra",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "rashbam",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "sforno",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "radak",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "or-hachaim",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "baal-haturim",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "siftei-chakhamim",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "chizkuni",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "kli-yakar",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "malbim",
+          "tier": 0,
+          "english": "none"
+        }
+      ],
+      "title": "ויקהל עם רש״י",
+      "mainEnglish": "side-by-side"
+    },
+    {
+      "id": "section-study",
+      "range": {
+        "kind": "parsha",
+        "parsha": "Vayakhel"
+      },
+      "showMainText": false,
+      "commentators": [
+        {
+          "id": "onkelos",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "rashi",
+          "tier": 0,
+          "english": "footnote"
+        },
+        {
+          "id": "ramban",
+          "tier": 1,
+          "english": "none"
+        },
+        {
+          "id": "ibn-ezra",
+          "tier": 2,
+          "english": "none"
+        },
+        {
+          "id": "rashbam",
+          "tier": 2,
+          "english": "none"
+        },
+        {
+          "id": "sforno",
+          "tier": 2,
+          "english": "none"
+        },
+        {
+          "id": "radak",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "or-hachaim",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "baal-haturim",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "siftei-chakhamim",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "chizkuni",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "kli-yakar",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "malbim",
+          "tier": 0,
+          "english": "none"
+        }
+      ],
+      "title": "ויקהל: עיון"
+    }
+  ],
+  "hebrewOnly": false,
+  "englishLabels": {
+    "runningHead": true,
+    "chapterHeadings": true,
+    "sectionTitles": true,
+    "continuations": true,
+    "notes": true
+  },
+  "showAliyot": true,
+  "commentOverrides": {},
+  "typography": {
+    "mainFont": "keter-yg",
+    "commentaryFont": "noto-rashi",
+    "notesFont": "eb-garamond",
+    "englishFont": "eb-garamond",
+    "englishSizePt": 8.6,
+    "mainSizePt": 15,
+    "tier1SizePt": 9.6,
+    "tier2SizePt": 8.6,
+    "targumSizePt": 10,
+    "notesSizePt": 7.6,
+    "lineHeight": 1.45,
+    "mainLineHeight": 1.62,
+    "targumLineHeight": 1.5,
+    "mainEnglishLineHeight": 1.45,
+    "alignMainLines": true,
+    "commentaryEnglishLineHeight": 1.32,
+    "notesLineHeight": 1.3,
+    "headingLineHeight": 1.6,
+    "showTrope": true,
+    "verseLabel": {
+      "scale": 0.56,
+      "color": "#7a1f1f",
+      "bold": true,
+      "superscript": true,
+      "prefix": "",
+      "suffix": "",
+      "numerals": "hebrew"
+    },
+    "commentLabel": {
+      "scale": 0.92,
+      "color": "#7a1f1f",
+      "bold": true,
+      "superscript": false,
+      "prefix": "",
+      "suffix": "",
+      "numerals": "hebrew"
+    },
+    "chapterLabel": {
+      "scale": 0.82,
+      "color": "#7a1f1f",
+      "bold": false,
+      "superscript": false,
+      "prefix": "פרק ",
+      "suffix": "",
+      "numerals": "hebrew"
+    }
+  },
+  "layout": {
+    "tier1Columns": 2,
+    "tier2Columns": 3,
+    "notesColumns": 2,
+    "columnGapPt": 14,
+    "regionGapPt": 10,
+    "maxNotesFraction": 0.3,
+    "maxMainFraction": 0.45,
+    "maxCommentaryLag": 3,
+    "minPageFill": 0.88,
+    "showTargum": false,
+    "mainEnglish": "notes",
+    "columnRules": true,
+    "maxCommentLines": 18,
+    "continuationTranslationRefs": false,
+    "continuationHeading": "{n}. {name}, {ref} (מעמ׳ {page})"
+  }
+}
