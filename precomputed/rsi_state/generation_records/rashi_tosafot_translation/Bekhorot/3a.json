@@ -1,0 +1,298 @@
+{
+  "Rashi on Bekhorot 3a:11:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 3a:11:2",
+      "Rashi on Bekhorot 2a:2:1",
+      "Rashi on Bekhorot 3a:1:1"
+    ],
+    "generatedAt": "2026-10-21T22:27:27.297Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למלויי אתא</strong> - עד דליהוי כוליה דישראל:"
+  },
+  "Rashi on Bekhorot 3a:11:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 3a:11:1",
+      "Rashi on Bekhorot 3a:1:1",
+      "Rashi on Bekhorot 3a:1:2",
+      "Rashi on Bekhorot 3a:4:1",
+      "Rashi on Bekhorot 3a:4:2",
+      "Rashi on Bekhorot 3a:8:1",
+      "Rashi on Bekhorot 3a:8:2",
+      "Rashi on Bekhorot 2a:1:1",
+      "Rashi on Bekhorot 2a:2:1",
+      "Rashi on Bekhorot 2a:3:1",
+      "Rashi on Bekhorot 2a:4:1",
+      "Steinsaltz on Bekhorot 3a:11"
+    ],
+    "generatedAt": "2026-10-21T22:30:21.446Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לגרועי</strong> - דכל משמע כל דהו כמו לשפחתך אין כל בבית <span class=\"parenthesized\">(מלכים ב ד)</span>:"
+  },
+  "Rashi on Bekhorot 3a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T22:31:55.788Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפי' אזנו</strong> - אפי' אין שותפות לעובד כוכבים אלא באוזן הבכור אינו קדוש:"
+  },
+  "Rashi on Bekhorot 3a:12:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 3a:12:1"
+    ],
+    "generatedAt": "2026-10-21T22:33:04.077Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולימא ליה</strong> - כהן לעובד כוכבים:"
+  },
+  "Rashi on Bekhorot 3a:12:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T22:33:31.699Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3a:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שקיל אזנך וזיל</strong> - דאי נמי הוי בכור בעל מום ניתן לכהן:"
+  },
+  "Rashi on Bekhorot 3a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T22:34:20.181Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נבילה</strong> - כגון שיש חלק לעובד כוכבים בוושט או בגרגרת שלו הואיל וחיותא בידיה דעובד כוכבים חשיב כמאן דהוי כוליה דעובד כוכבים:"
+  },
+  "Rashi on Bekhorot 3a:13:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T22:35:35.794Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טריפה</strong> - כגון מן הארכובה ולמעלה:"
+  },
+  "Rashi on Bekhorot 3a:1:1": {
+    "dependsOn": [
+      "Bekhorot 3a:1",
+      "Rashi on Bekhorot 3a:1:2",
+      "Rashi on Bekhorot 3a:2:1",
+      "Rashi on Bekhorot 3a:4:1"
+    ],
+    "generatedAt": "2026-10-21T21:42:49.265Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי לאו אבהמה</strong> - קאי האי דקתני קונסין אותו דקנסינן ליה לפדות הבהמה אלמא מכר את הבהמה לעובריה דקבלה אינה אלא לעוברין קנסינן ליה בין לרבי יהודה בין לרבנן דרבנן לא פליגי עליה דר' יהודה אלא לענין בכורה:"
+  },
+  "Rashi on Bekhorot 3a:1:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 3a:1:1",
+      "Bekhorot 3a:1"
+    ],
+    "generatedAt": "2026-10-21T21:44:29.262Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא אעובר</strong> - קנסינן ליה שכבר היה במעיה ומכרו לגמרי אבל עוברין שעתידה להתעבר לא איכפת לן:"
+  },
+  "Rashi on Bekhorot 3a:2:1": {
+    "dependsOn": [
+      "Bekhorot 3a:2",
+      "Bekhorot 3a:1",
+      "Chidushei Halachot on Bekhorot 3a:2",
+      "Steinsaltz on Bekhorot 3a:2",
+      "Rashi on Bekhorot 2b:2:1",
+      "Bekhorot 2b:2"
+    ],
+    "generatedAt": "2026-10-21T21:51:38.143Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דיקא נמי</strong> - דאעובר קאי מדקתני נותן כל דמיו לכהן ואי אבהמה כהן מאי עבידתיה:"
+  },
+  "Rashi on Bekhorot 3a:3:1": {
+    "dependsOn": [
+      "Bekhorot 3a:3",
+      "Chidushei Halachot on Bekhorot 3a:2:1"
+    ],
+    "generatedAt": "2026-10-21T21:53:21.990Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מסייע ליה</strong> - האי דקתני קונסין:"
+  },
+  "Rashi on Bekhorot 3a:4:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 3a:4:2",
+      "Rashi on Bekhorot 3a:4:3",
+      "Rashi on Bekhorot 3a:4:4"
+    ],
+    "generatedAt": "2026-10-21T21:55:12.829Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או לאו דוקא</strong> - דלא קנסינן ליה כולי האי. אי נמי טפי מהכי קנסינן ליה אם אין העובד כוכבים מתרצה בכך:"
+  },
+  "Rashi on Bekhorot 3a:4:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 3a:4:1",
+      "Rashi on Bekhorot 3a:4:2",
+      "Rashi on Bekhorot 3a:4:3",
+      "Bekhorot 3a:4",
+      "Rashi on Bekhorot 3a:4:4"
+    ],
+    "generatedAt": "2026-10-21T21:59:00.626Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ש</strong> - מדגבי עבד תני מאה והכא עשרה שמע מינה דוקא קאמר דאי לאו דוקא ליתני תרוייהו מאה או תרוייהו עשרה:<br> לעולם בהמה לאו דוקא דלא קנסינן ליה כולי האי אבל גבי עבד משום דכל יומא ויומא כו':"
+  },
+  "Rashi on Bekhorot 3a:4:3": {
+    "dependsOn": [
+      "Rashi on Bekhorot 3a:4:1",
+      "Rashi on Bekhorot 3a:4:2",
+      "Rashi on Bekhorot 3a:4:3",
+      "Rashi on Bekhorot 3a:4:4",
+      "Bekhorot 3a:4",
+      "Bekhorot 3a:5"
+    ],
+    "generatedAt": "2026-10-21T22:04:04.596Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דוקא</strong> - מאה או לא דוקא. בלישנא בתרא גרסי' בעבד עד עשרה בדמיו אלמא מאה דבהמה לאו דוקא דהא עבד דמפקע ליה ממצותיו ולא קנסינן אלא עשרה:"
+  },
+  "Rashi on Bekhorot 3a:4:4": {
+    "dependsOn": [
+      "Rashi on Bekhorot 3a:4:1",
+      "Rashi on Bekhorot 3a:4:2",
+      "Rashi on Bekhorot 3a:4:3",
+      "Rashi on Bekhorot 3a:4:4",
+      "Rashi on Bekhorot 2a:1:1",
+      "Rashi on Bekhorot 2a:1:2",
+      "Rashi on Bekhorot 2a:2:1",
+      "Rashi on Bekhorot 2b:1:1",
+      "Rashi on Gittin 43b:7:1",
+      "Gittin 43b:8"
+    ],
+    "generatedAt": "2026-10-21T22:10:03.033Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3a:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאני עבד</strong> - להכי לא קנסינן ליה טפי משום דכי פריק ליה לא הדר ליה למריה דקיי\"ל במסכת גיטין <span class=\"parenthesized\">(דף מג:)</span> המוכר עבדו לעובד כוכבים יצא לחירות:"
+  },
+  "Rashi on Bekhorot 3a:8:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 3a:8:1",
+      "Rashi on Bekhorot 3a:8:2",
+      "Bekhorot 3a:8",
+      "Rashi on Bekhorot 3a:4:1",
+      "Rashi on Bekhorot 3a:4:2",
+      "Rashi on Bekhorot 3a:4:3",
+      "Rashi on Bekhorot 3a:4:4"
+    ],
+    "generatedAt": "2026-10-21T22:13:21.788Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקפריך בהמה מ\"ט</strong> - קנסינן ליה טפי משום דהדרא ליה:"
+  },
+  "Rashi on Bekhorot 3a:8:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 3a:8:1",
+      "Rashi on Bekhorot 3a:8:2",
+      "Versions on Bekhorot 3a:8",
+      "Steinsaltz on Bekhorot 3a:8"
+    ],
+    "generatedAt": "2026-10-21T22:16:32.590Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג אי הכי א\"כ ליקנסיה טפי חד</strong> - כדי שיעור דמיה ליקנסיה יותר מעשרה דהא במאי דהדרא ליה אינו נשכר אלא כדי דמיה וקנסא לא הוי אלא י' הלכך ליתני י\"א בדמיה ותו לא:"
+  },
+  "Rashi on Bekhorot 3a:9:1": {
+    "dependsOn": [
+      "Bekhorot 3a:9",
+      "Chidushei Halachot on Bekhorot 3a:1",
+      "Steinsaltz on Bekhorot 3a:9",
+      "Tosafot on Bekhorot 3a:10:1"
+    ],
+    "generatedAt": "2026-10-21T22:18:56.749Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל בכור</strong> - בישראל. רבנן סברי אי הוה כתיב בכור בישראל הוה משמע אפילו מקצת בכור דישראל הוי חייב בבכורה:"
+  },
+  "Tosafot on Bekhorot 3a:10:1": {
+    "dependsOn": [
+      "Chullin 88a:10",
+      "Tosafot on Chullin 88a:6:2"
+    ],
+    "generatedAt": "2026-10-21T22:24:55.919Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 3a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי יהודה סבר כוליה בכור משמע</strong> - תימה פ' כסוי הדם <span class=\"parenthesized\">(חולין דף פח. ושם)</span> אמר איפכא רבי יהודה אומר דמו מקצת דמו ורבנן סברי כל דמו ופר\"ת ההיא משום דדם כולו דם משמע כתב רחמנא דמו מקצת דמו כדאמר הכא כתב כל דאפי' כל דהו וקשה דהתם דריש ר\"י דמו לחלק ועוד לפי מה שפסק ר\"ת כר' יהודה כדפרישית פ\"ק דגיטין <span class=\"parenthesized\">(דף ז: ושם ד\"ה אמר)</span> קשה הלכתא אהלכתא דאין הלכה כר' יהודה דהכא כדאמר בסמוך לית דחש להא דר' יהודה דאמר שותפות עובד כוכבים חייבת על כן יתכן לפרש דאין לדמות אלא מה שהש\"ס מדמה כההיא דבתולה אפי מקצת בתולים דפ' הבא על יבמתו <span class=\"parenthesized\">(יבמות דף נט.)</span> ובפרק אלמנה ניזונת <span class=\"parenthesized\">(כתובות דף צז:)</span> מדמה להו לפלוגתא דמקצת כסף ככל כסף דהנהו דמו אהדדי זהו ענין אחר כשנתמעטו בתולים ונשתיירו מקצתם כאילו נשתיירו כולן וכן כסף כתובה נשאר מקצת יש לה מזונות כאילו נשאר כולו ויש הרבה דרשות שאין להשוותן שה אפי' מקצת שה דפליגי ר' אלעזר ורבנן פ' אותו ואת בנו <span class=\"parenthesized\">(חולין דף עט:)</span> ופ' הזרוע <span class=\"parenthesized\">(חולין דף קלב.)</span> וגתא דרבי יהודה בן בתירא ורבנן אכל נפש ואפי' נשוה ההיא דדמו להך דהכא לא תקשה הא דפסיק הכא דלא כר' יהודה והתם קאמר לית דחש להא דר' שמעון דאמר לא אמרינן מקצת כסף ככל כסף דאדרבה סייעתא דהלכתא כרבנן דבכור מקצת בכור משמע אי לאו כל והתם נמי בתולה מקצת בתולים במשמע עוד י\"ל דלא תקשה דר' יהודה אדרבי יהודה משום דסתמא דקרא איירי בסתם בהמה שהן שלהן ואין לעובד כוכבים שותפות בהן הלכך אי לאו כל מוקמי ליה לקרא בכוליה בכור אי נמי משום דכתיב <span class=\"parenthesized\">(במדבר ג׳:י״ג)</span> כל בכור בישראל ובישראל משמע כוליה כדאמר פרק מצות חליצה <span class=\"parenthesized\">(יבמות דף קב.)</span> ולענין חליצה עד שיהא אביו ואמו מישראל אבל בעלמא משמע שפיר מקצת:"
+  },
+  "Tosafot on Bekhorot 3a:13:1": {
+    "dependsOn": [
+      "Temurah 11b:5",
+      "Temurah 11b:6",
+      "Tosafot on Niddah 23b:15:1",
+      "Niddah 23b:16",
+      "Niddah 24a:1",
+      "Chidushei Halachot on Bekhorot 3a:5",
+      "Tosafot on Temurah 11b:6:1",
+      "Rashi on Bekhorot 3a:13:1",
+      "Rashi on Bekhorot 3a:13:2"
+    ],
+    "generatedAt": "2026-10-21T22:40:29.572Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 3a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב חסדא אמר דבר שעושה אותה נבלה רבא אמר דבר שעושה אותה טריפה</strong> - פ\"ק דתמורה <span class=\"parenthesized\">(דף יא:)</span> גריס איפכא גבי אומר רגלה של זו עולה ומהגרסות הפוכות היא זו וההיא דהתם עיקר דאמר רב חסדא מודה רבי יהודה בדבר שעושה אותה טריפה רבא אמר בדבר שעושה אותה נבילה רב ששת אמר בדבר שמתה בו כו מר מוסיף אדחבריה ובענין זה יתכן דאמר הכא רב הונא אזנו רב חסדא מוסיף טרפה רבא מוסיף נבילה וכה\"ג פ' המפלת <span class=\"parenthesized\">(נדה כג:)</span> גבי גוף אטום עד לארכובה וחד מוסיף עד טבורו והא דאמר רבא התם ושטו נקוב אמו טמאה לידה אפי' גרס רבא בשמעתא לפי שהוא בתר רב חסדא לא קשה דרבא אדרבא התם דאע\"ג דושטו נקוב טריפה <span class=\"parenthesized\">(וחיה)</span> לא מדמו לחסרון עד לארכובה:"
+  }
+}
