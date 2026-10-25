@@ -1,0 +1,259 @@
+{
+  "Rashi on Kiddushin 14b:1:1": {
+    "dependsOn": [
+      "[",
+      "Kiddushin 14b:1",
+      "Yevamot 101a:9",
+      "Yevamot 101a:10",
+      "Rashi on Yevamot 101a:9:4",
+      "Rashi on Yevamot 101a:9:5",
+      "Rashi on Yevamot 101a:9:6",
+      "Steinsaltz on Kiddushin 14b:1:1",
+      "Steinsaltz on Kiddushin 14b:1",
+      "Steinsaltz comment #1 on Kiddushin 14b:1"
+    ],
+    "generatedAt": "2026-10-22T07:39:53.325Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מסולייא</strong> - נפחת כדמסיים ואזיל שאין לו עקב שול\"א <span class=\"parenthesized\">(סוליה)</span> בלע\"ז:"
+  },
+  "Rashi on Kiddushin 14b:2:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Kiddushin 14b:2:1",
+      "Rashi on Kiddushin 14b:2:2",
+      "Rashi on Kiddushin 14b:2:3"
+    ],
+    "generatedAt": "2026-10-22T07:43:14.128Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נקנה בכסף ובשטר</strong> - בגמרא יליף לה:"
+  },
+  "Rashi on Kiddushin 14b:2:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14b:2:2",
+      "Rashi on Kiddushin 14b:2:1",
+      "Rashi on Kiddushin 14b:2:3",
+      "Rashi on Kiddushin 14b:2:4"
+    ],
+    "generatedAt": "2026-10-22T07:44:39.485Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשנים</strong> - לסוף שש שנים יוצא חפשי:"
+  },
+  "Rashi on Kiddushin 14b:2:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14b:2:3",
+      "Translation on Rashi on Kiddushin 14b:2:3"
+    ],
+    "generatedAt": "2026-10-22T07:47:42.406Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וביובל</strong> - אם פגע בו יובל בתוך שש:"
+  },
+  "Rashi on Kiddushin 14b:2:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14b:2:4",
+      "Translation on Rashi on Kiddushin 14b:2:4",
+      "Rashi on Kiddushin 14b:2:1",
+      "Rashi on Kiddushin 14b:2:2",
+      "Rashi on Kiddushin 14b:2:3"
+    ],
+    "generatedAt": "2026-10-22T07:50:07.665Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14b:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובגרעון כסף</strong> - פודה את עצמו ומגרע לו אדונו מפדיונו דמי שיעבוד השנים שעברו והכל לפי חשבון דמי מקנתו כדכתיב <span class=\"parenthesized\">(ויקרא כ״ה:נ׳)</span> והיה כסף ממכרו במספר שנים קנאו בשש מנים ועתיד לצאת בסוף שש נמצא קונה עבודת כל שנה במנה:"
+  },
+  "Rashi on Kiddushin 14b:2:5": {
+    "dependsOn": [
+      "Translation on Rashi on Kiddushin 14b:2:5",
+      "Rashi on Kiddushin 14b:2:1",
+      "Rashi on Kiddushin 14b:2:2",
+      "Rashi on Kiddushin 14b:2:3",
+      "Rashi on Kiddushin 14b:2:4",
+      "Rashi on Kiddushin 14b:2:6"
+    ],
+    "generatedAt": "2026-10-22T07:51:41.050Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14b:2:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יתירה עליו</strong> - שקונה עצמה בכל אלה ובסימני נערות כדילפינן לעיל <span class=\"parenthesized\">(קידושין דף ד.)</span> מויצאה חנם:"
+  },
+  "Rashi on Kiddushin 14b:2:6": {
+    "dependsOn": [
+      "Translation on Rashi on Kiddushin 14b:2:6",
+      "Rashi on Kiddushin 14b:2:1",
+      "Rashi on Kiddushin 14b:2:2",
+      "Rashi on Kiddushin 14b:2:3",
+      "Rashi on Kiddushin 14b:2:4",
+      "Rashi on Kiddushin 14b:2:5"
+    ],
+    "generatedAt": "2026-10-22T07:52:57.183Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14b:2:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובמיתת האדון</strong> - ואינו עובד את יורשיו אבל עבד הנמכר בתחילתו ומת האדון בתוך שש משלימן ליורשיו וכולהו יליף בגמ':"
+  },
+  "Rashi on Kiddushin 14b:3:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14b:3:1"
+    ],
+    "generatedAt": "2026-10-22T07:54:38.322Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכסף מקנתו</strong> - בעבד עברי הנמכר לעובד כוכבים הכתוב מדבר וכי תשיג יד גר ותושב:"
+  },
+  "Rashi on Kiddushin 14b:3:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14b:3:2",
+      "Translation on Rashi on Kiddushin 14b:3:2",
+      "Rashi on Kiddushin 14b:3:1",
+      "Rashi on Kiddushin 14a:2:1",
+      "Rashi on Kiddushin 14a:2:2",
+      "Rashi on Kiddushin 14b:1:1",
+      "Rashi on Kiddushin 14b:2:1"
+    ],
+    "generatedAt": "2026-10-22T07:57:39.213Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הואיל וכל קנינו</strong> - של עובד כוכבים בכסף שלא נאמרה בו משיכה במטלטלין אלא בישראל כתיב <span class=\"parenthesized\">(ויקרא כ״ה:י״ד)</span> מיד עמיתך עד שימשוך מיד ליד לפיכך עבד נקנה לו בכסף:"
+  },
+  "Rashi on Kiddushin 14b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T08:00:37.539Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמגרעת פדיונה</strong> - מדלא כתיב ונפדה משמע והפדה שאף הבעל מסייע בפדיונה אלמא בכסף נקנה דאי לא קנאה בדמים מאי מגרעה:"
+  },
+  "Rashi on Kiddushin 14b:5:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14b:5:1",
+      "Kiddushin 14b:5",
+      "Rashi on Kiddushin 14b:2:1",
+      "Rashi on Kiddushin 14b:2:2",
+      "Rashi on Kiddushin 14b:2:3",
+      "Rashi on Kiddushin 14b:6:1",
+      "Rashi on Kiddushin 14a:1:1"
+    ],
+    "generatedAt": "2026-10-22T08:04:05.096Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אשכחן אמה העבריה דמקניא בכסף</strong> - והדין נותן הואיל וקידושיה בכסף קנינה בכסף:"
+  },
+  "Rashi on Kiddushin 14b:6:1": {
+    "dependsOn": [
+      "Kiddushin 14b:5",
+      "Kiddushin 14b:6",
+      "Rashi on Kiddushin 14b:5:1",
+      "Kiddushin 14b:1",
+      "Kiddushin 14b:2"
+    ],
+    "generatedAt": "2026-10-22T08:08:48.784Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכרוהו ב\"ד</strong> - בגניבתו דכי ימכר ע\"י אחרים משמע והדין נותן שיהא נקנה בכסף בלא חזקה הואיל ויש בו צד קל שנמכר בעל כרחו:"
+  },
+  "Rashi on Kiddushin 14b:7:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14b:7:1"
+    ],
+    "generatedAt": "2026-10-22T08:16:29.409Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שכיר שכיר</strong> - נאמר במוכר עצמו <span class=\"parenthesized\">(שם)</span> כי ימוך אחיך ונמכר וגו' כשכיר כתושב יהיה עמך ונאמר במכרוהו ב\"ד כי משנה שכר שכיר וגו' בפרשת כי ימכר כתיב <span class=\"parenthesized\">(דברים ט״ו:י״ח)</span>:"
+  },
+  "Rashi on Kiddushin 14b:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T08:17:12.220Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למאן דלא יליף</strong> - דלית ליה הך גזירה שוה ולקמיה מפרש מאן ניהו:"
+  },
+  "Rashi on Kiddushin 14b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T08:18:13.993Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי תשיג</strong> - במוכר עצמו לעובד כוכבים וסמכוה לפרשת מוכר עצמו לישראל וילמד נמכר לישראל מנמכר לעובד כוכבים בהיקישא ובנמכר לעובד כוכבים כתיב מכסף מקנתו:"
+  },
+  "Rashi on Kiddushin 14b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T08:18:55.119Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויתר על שש</strong> - אם התנה לימכר לעשר שנים:"
+  },
+  "Tosafot on Kiddushin 14b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T07:59:18.484Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 14b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הואיל וכל קנינו בכסף</strong> - פ\"ה הואיל ולא נאמר בו משיכה כישראל דכתיב או קנה מיד עמיתך דבר הנקנה מיד ליד דהיינו משיכה וקשה לר\"ת לפי שיהא סתמא דגמרא כדר\"ל דלר' יוחנן דאמר בפ' הזהב <span class=\"parenthesized\">(ב\"מ דף מז:)</span> דבר תורה מעות קונות דרשינן בפ\"ב דבכורות <span class=\"parenthesized\">(דף יג:)</span> מיד עמיתך בכסף הא לעובד כוכבים במשיכה וקי\"ל כר' יוחנן לגבי ריש לקיש ועוד דבמס' ע\"ז <span class=\"parenthesized\">(דף עב.)</span> אמרינן דלכ\"ע משיכה בעובד כוכבים קונה לכך נראה לר\"ת דה\"פ הואיל וכל קניינו דעובד כוכבים בעבד עברי בכסף דכתיב ביה מכסף מקנתו לאפוקי שאינו קונה בשטר דישראל גופיה לא קני ע\"ע בשטר אלא משום דאיתקש לאמה ואמה לאחרת דדרשינן <span class=\"parenthesized\">(לקמן קידושין דף טז.)</span> מה אחרת מקניא בשטר אף זו וכו' ובעובד כוכבים לא שייך האי טעמא שהרי אינו בתורת גיטין וקידושין ועוד נראה לר\"ת דאפילו בקרקעות עובד כוכבים אינו קונה בשטר כדאמר בחזקת הבתים <span class=\"parenthesized\">(ב\"ב דף נד.)</span> עובד כוכבים מכי מטא זוזי לידיה איסתלק ליה וישראל לא קני עד דמטא שטרא לידיה משמע דאין קנין שטר לעובד כוכבים וא\"ת לאו ק\"ו הוא ומה עובד כוכבים שאינו קונה ע\"ע בשטר קונה בכסף ישראל כו' וי\"ל דמסתברא דלכל אחד יש קנין לעצמו כדאשכחן בפ\"ב דבכורות <span class=\"parenthesized\">(דף יג.)</span> גבי מטלטלין מדישראל בחדא עובד כוכבים נמי בחדא:"
+  },
+  "Tosafot on Kiddushin 14b:6:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14b:6:1",
+      "Kiddushin 14b:6",
+      "Rashi on Kiddushin 14b:7:1",
+      "Rashi on Kiddushin 14b:7:2",
+      "Kiddushin 14b:2",
+      "Kiddushin 14b:3",
+      "Maharsha: Chidushei Halachot on Kiddushin 14b:4"
+    ],
+    "generatedAt": "2026-10-22T08:13:03.836Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 14b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מוכר עצמו מנ\"ל יליף שכיר שכיר</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> נאמר במוכר עצמו כשכיר כתושב יהיה עמך ונאמר במכרוהו ב\"ד כי משנה שכר שכיר וא\"ת כיון דיליף שכיר שכיר למה איצטריך מכסף מקנתו גבי עובד כוכבים נילף שכיר דכתיב גבי עובד כוכבים <span class=\"parenthesized\">(ויקרא כ״ה:נ״ג)</span> כשכיר שנה בשנה וגו' מנמכר לישראל ונמכר לישראל מאמה כדמפרש גמ' לעיל וי\"ל דאיצטריך ליה לכדדרשינן לעיל <span class=\"parenthesized\">(קידושין דף ח.)</span> בכסף הוא נקנה ואינו נקנה בתבואה וכלים וא\"ת אמאי איצטריך והפדה לענין כסף לישתוק מיניה ונילף עבריה מע\"ע הנמכר לישראל ועברי הנמכר לישראל מעברי הנמכר לעובד כוכבים מג\"ש דשכיר שכיר וי\"ל אה\"נ אלא איצטריך לדרשה אחרינא לגרעון כסף וא\"ת אמאי איצטריך היקישא דע\"ע ועבריה לקנין כסף נילף שכיר שכיר מנמכר לעובד כוכבים וי\"ל דהיקישא דע\"ע לעבריה איצטריך למימר מה עבריה אינה יוצאה בראשי איברים אף עברי אינו יוצא ומה עברי יוצא בשש ויובל אף עבריה כו':"
+  }
+}
