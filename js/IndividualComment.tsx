@@ -15,6 +15,7 @@ import {
 } from "./settings";
 import {formatRashiTosafotHebrew} from "./rashi_tosafot_formatting";
 import {RsiReviewControls} from "./RsiReviewControls";
+import {DoubleClickHintSurfaceType} from "./DoubleClickVisualHint";
 
 const {
   useEffect,
@@ -102,6 +103,11 @@ function InternalTableRow({
         commentaryKind.englishName === "Translation" && context.expandEnglishByDefault()
       }
       hebrewDoubleClickListener={doubleClickListener}
+      doubleClickHintSurfaceType={
+        commentaryKind.englishName === "Rashi" && comment.commentary?.Explanation && toggleExplanation
+          ? DoubleClickHintSurfaceType.RASHI_EXPLANATION
+          : undefined
+      }
     />
   );
 
