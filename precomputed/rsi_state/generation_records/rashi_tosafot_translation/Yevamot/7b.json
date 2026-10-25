@@ -1,0 +1,323 @@
+{
+  "Rashi on Yevamot 7b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T20:14:04.436Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 7b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרי איסורי</strong> - אשת אח ואחות אשה:"
+  },
+  "Rashi on Yevamot 7b:4:2": {
+    "dependsOn": [
+      "Rashi on Yevamot 7b:4:2",
+      "Rashi on Yevamot 7b:4:1"
+    ],
+    "generatedAt": "2026-10-21T20:16:11.354Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 7b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הואיל ואישתרי</strong> - איסור אשת אח שהיה עליה כשמת אחיו בלא בנים אישתרי נמי איסור אחות אשה:"
+  },
+  "Rashi on Yevamot 7b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T20:17:23.981Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 7b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמיני שלו</strong> - שהוא יום הבאת קרבנותיו וצריך לבא בהר הבית ולעמוד בשער נקנור ולהכניס ידיו לעזרה ליתן מן הדם לבהונות:"
+  },
+  "Rashi on Yevamot 7b:5:2": {
+    "dependsOn": [
+      "Rashi on Yevamot 7b:5:1",
+      "Rashi on Yevamot 7b:5:3",
+      "Rashi on Yevamot 7b:4:1",
+      "Rashi on Yevamot 7b:4:2",
+      "Rashi on Yevamot 7b:5:4",
+      "Rashi on Yevamot 7b:5:5",
+      "Tosafot on Yevamot 7b:5:1",
+      "Rashi on Yevamot 7b:6:1",
+      "Rashi on Yevamot 7b:6:2"
+    ],
+    "generatedAt": "2026-10-21T20:22:51.982Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 7b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וראה קרי</strong> - להכי נקט קרי ולא טומאת שרץ ונבלה דטמא שרץ ואפי' טמא מת נכנסין להר הבית כדמפרש באלו דברים <span class=\"parenthesized\">(פסחים דף סז.)</span> שנאמר ויקח משה את עצמות יוסף עמו ושערי נקנור לא נתקדשו בקדושת עזרה כדאמרינן בכיצד צולין <span class=\"parenthesized\">(שם דף פה:)</span> והרי הן כהר הבית ויכול טמא מת ליכנס לשם אבל בעל קרי משתלח חוץ לשני מחנות כזב כדמפרש באלו דברים זב וכל זב לרבות בעל קרי:"
+  },
+  "Rashi on Yevamot 7b:5:3": {
+    "dependsOn": [
+      "Rashi on Yevamot 7b:5:1",
+      "Rashi on Yevamot 7b:5:2",
+      "Rashi on Yevamot 7b:5:4",
+      "Rashi on Yevamot 7b:5:5"
+    ],
+    "generatedAt": "2026-10-21T20:23:38.063Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 7b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וטבל</strong> - לקרויו:"
+  },
+  "Rashi on Yevamot 7b:5:4": {
+    "dependsOn": [
+      "Rashi on Yevamot 7b:5:1",
+      "Rashi on Yevamot 7b:5:2",
+      "Rashi on Yevamot 7b:5:3",
+      "Rashi on Yevamot 7b:5:4",
+      "Rashi on Yevamot 7b:5:5",
+      "Yevamot 7b:5",
+      "Rashi on Yevamot 7b:6:1",
+      "Rashi on Yevamot 7b:6:2",
+      "Tosafot on Yevamot 7b:5:1",
+      "Tosafot on Yevamot 7b:5:2",
+      "Steinsaltz on Yevamot 7b:5",
+      "Rashi on Yevamot 7b:4:1",
+      "Rashi on Yevamot 7b:4:2"
+    ],
+    "generatedAt": "2026-10-21T20:37:57.190Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 7b:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אע\"פ</strong> - דטבול יום אחר דקרי אינו נכנס להר הבית דכל טבול יום הרי הוא בטומאה עדיין לתרומה ולקדשים ולמקדש:"
+  },
+  "Rashi on Yevamot 7b:5:5": {
+    "dependsOn": [
+      "Rashi on Yevamot 7b:5:1",
+      "Rashi on Yevamot 7b:5:2",
+      "Rashi on Yevamot 7b:5:3",
+      "Rashi on Yevamot 7b:5:4",
+      "Steinsaltz on Yevamot 7b:5:1",
+      "Rashi on Yevamot 7b:6:1",
+      "Rashi on Yevamot 7b:6:2",
+      "Pesachim 85b:11"
+    ],
+    "generatedAt": "2026-10-21T20:40:53.673Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 7b:5:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זה</strong> - יבא להר הבית ויכניס ידיו לבהונות ויטהר לאכול פסחו לערב:"
+  },
+  "Rashi on Yevamot 7b:6:1": {
+    "dependsOn": [
+      "Yevamot 7b:6"
+    ],
+    "generatedAt": "2026-10-21T20:48:43.058Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 7b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיבא עשה דפסח שיש בו כרת</strong> - דאם לא יכניס ידיו לבהונות לא יטהר לאכול פסחו לערב:"
+  },
+  "Rashi on Yevamot 7b:6:2": {
+    "dependsOn": [
+      "Rashi on Yevamot 7b:6:1",
+      "Yevamot 7b:6",
+      "Rashi on Yevamot 7b:4:1",
+      "Rashi on Yevamot 7b:5:1",
+      "Rashi on Yevamot 7b:5:2"
+    ],
+    "generatedAt": "2026-10-21T20:51:24.546Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 7b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וידחה עשה</strong> - דוישלחו מן המחנה שאין בו כרת שאין ענוש כרת אלא על ביאת עזרה וזה לא יכנס לעזרה אלא לשערי ניקנור שלא נתקדשו ויכניס ידיו לבהונות ויטהר מצרעתו וישלח פסחו לעזרה לשחוט ולערב יערב שמשו ויטהר מקרויו:"
+  },
+  "Rashi on Yevamot 7b:7:1": {
+    "dependsOn": [
+      "Rashi on Yevamot 7b:7:2",
+      "Yevamot 7b:7",
+      "Rashi on Pesachim 92a:16:1",
+      "Rashi on Pesachim 92a:16:2",
+      "Rashi on Zevachim 32b:6:1",
+      "Tosafot on Yevamot 7b:7:1",
+      "Steinsaltz on Yevamot 7b:7",
+      "Steinsaltz comment #1 on Yevamot 7b:7",
+      "Steinsaltz comment #2 on Yevamot 7b:7",
+      "Horayot 5b:14",
+      "Horayot 5b:15",
+      "Horayot 5b:16",
+      "Rashi on Horayot 5b:14:1",
+      "II Chronicles 20:1-20:15",
+      "Kessef Mishneh on Mishneh Torah, Admission into the Sanctuary 3:6:2"
+    ],
+    "generatedAt": "2026-10-21T21:01:39.463Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 7b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויעמוד יהושפט</strong> - אותו היום נטהרו ישראל מטומאה שבידיהם בדברי הימים:"
+  },
+  "Rashi on Yevamot 7b:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T21:02:08.050Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 7b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למחנה לויה</strong> - להר הבית:"
+  },
+  "Rashi on Yevamot 7b:8:1": {
+    "dependsOn": [
+      "Yevamot 7b:8",
+      "Yevamot 7b:5",
+      "Zevachim 32b:7",
+      "Zevachim 32b:8",
+      "Rashi on Zevachim 32b:7:1",
+      "Rashi on Zevachim 32b:8:1"
+    ],
+    "generatedAt": "2026-10-21T21:11:06.216Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 7b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמר עולא</strong> - במסכת זבחים <span class=\"parenthesized\">(דף לב:)</span> דאמר עולא ביאה במקצת שמה ביאה ואותיבניה מהא דקתני זה נכנס ומכניס ידו לבהונות ואי אמרת ביאה במקצת שמה ביאה נהי נמי דנכנס להר הבית משום דעשה שאין בו כרת הוא לבהונות היכי מצי מעייל ידיה אידי ואידי עשה שיש בו כרת הוא דקיימא לן במנחות בהקומץ רבה <span class=\"parenthesized\">(מנחות דף כז:)</span> מחוסר כפורים שנכנס למקדש ענוש כרת ואין צריך לומר טבול יום ושאר כל הטמאים ושני עולא שאני מצורע הואיל והותרה לו ביאה במקצת לצרעתו שהרי עדיין מחוסר כפורים הוא ובכרת והותרה לו מן התורה ביאה זו במקצת הותר נמי לקרויו. אלמא הואיל ואישתראי חד איסורא אישתראי נמי אידך דהוה גביה:"
+  },
+  "Tosafot on Yevamot 7b:1:1": {
+    "dependsOn": [
+      "Yevamot 7b:1",
+      "Zevachim 49a:10",
+      "Zevachim 49a:11",
+      "Zevachim 49a:12",
+      "Zevachim 49a:13",
+      "Zevachim 49a:14",
+      "Zevachim 49a:15",
+      "Zevachim 49a:16",
+      "Zevachim 49a:17",
+      "Zevachim 49a:18",
+      "Rashi on Zevachim 49a:11:1",
+      "Zevachim 49b:1",
+      "Zevachim 49b:2",
+      "Tosafot on Zevachim 49a:8:1",
+      "Tosafot on Yevamot 7b:1:1"
+    ],
+    "generatedAt": "2026-10-21T20:10:30.612Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 7b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ל כי כחטאת האשם הוא</strong> - והשתא לא צריך קרא דושחט את הכבש דכולה מילתא מיניה גמר מהיקשא ובריש איזהו מקומן <span class=\"parenthesized\">(זבחים דף מט.)</span> מוקי ליה לעכב:"
+  },
+  "Tosafot on Yevamot 7b:2:1": {
+    "dependsOn": [
+      "Yevamot 7b:2",
+      "Tosafot on Yevamot 7b:1:1",
+      "Rashi on Yevamot 7a:15:1",
+      "Rashi on Yevamot 7a:15:2"
+    ],
+    "generatedAt": "2026-10-21T20:13:02.203Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 7b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למאי דנפק נפק</strong> - דהיינו מתן בהונות ושחיטת צפון שכתוב בהדיא ולמאי דלא נפק כגון מתן דמים ואימורים לא נפק ולא יהיה בו מתן דמים ואימורים עד שיכתב בהדיא:"
+  },
+  "Tosafot on Yevamot 7b:5:1": {
+    "dependsOn": [
+      "Rashi on Yevamot 7b:5:1",
+      "Rashi on Yevamot 7b:5:2",
+      "Rashi on Yevamot 7b:5:3",
+      "Yevamot 7b:6",
+      "Chokhmat Shlomo on Yevamot 7b:1",
+      "Chokhmat Shlomo on Yevamot 7b:2",
+      "Mishnah Kelim 1:8",
+      "Sotah 20b:10",
+      "Sotah 20b:11"
+    ],
+    "generatedAt": "2026-10-21T20:44:49.227Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 7b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וראה קרי בו ביום וטבל</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> דלהכי נקט קרי ולא טמא שרץ ונבילה דטמא שרץ ואפי' טמא מת נכנסים במחנה לויה כדאמר בפר' אלו דברים <span class=\"parenthesized\">(פסחים דף סז.)</span> דאפי' מת עצמו נכנס שנאמר ויקח משה את עצמות יוסף עמו עמו במחיצתו ואין נראה לר\"י דהא דאמר וידחה עשה שאין בו כרת היינו עשה דרבנן [כדמפרש ר' יוחנן וטמא מת אין נכנס בחיל נמי מדרבנן] כדתנן במסכת כלים <span class=\"parenthesized\">(פ\"א מ\"ח)</span> החיל מקודש הימנו שאין עובדי כוכבים וטמאי מתים נכנסים לשם עזרת נשים מקודשת הימנו שאין טבול יום נכנס לשם ובכל טבול יום איירי בין דבעל קרי בין דטמא מת שרץ ונבילה דקא איירי בהו התם לעיל ואר\"י דנקט בעל קרי לרבותא דאע\"ג דאשתלח חוץ לב' מחנות התירו לו חכמים ליכנס דבמקום כרת לא העמידו דבריהם וא\"ת בפ' היה נוטל <span class=\"parenthesized\">(סוטה דף כ: ושם)</span> דקתני גבי סוטה והם אומרים הוציאוה הוציאוה שלא תטמא העזרה ופריך מהא דאפילו מת עצמו שרי ומאי קושיא והא מדרבנן אסור ותירץ ר\"ת שלא גזרו אלא שלא יכנס אבל אם הוא כבר שם לא גזרו עליו שיצא כיון דמדאורייתא שרי ליכנס שם ודקדק מהא דאמרינן בפרק הנשרפים <span class=\"parenthesized\">(סנהדרין דף פא:)</span> כהן ששימש בטומאה אחיו הכהנים מוציאין אותו חוץ לעזרה ומפצעין מוחו בגיזרין משמע דאין מוציאין אלא מחוץ לעזרה שהוא מחנה שכינה וממיתין אותו בעזרת נשים כיון שכבר היה שם ור\"י מפרש דבסוטה דייק מדקתני הוציאוה הוציאוה תרי זימני דאי לאו דהוי איסור דאורייתא לא היו ממהרין כל כך ואין להאריך כאן:"
+  },
+  "Tosafot on Yevamot 7b:5:2": {
+    "dependsOn": [
+      "Tosafot on Yevamot 7b:5:1",
+      "Pesachim 85b:11"
+    ],
+    "generatedAt": "2026-10-21T20:47:22.813Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 7b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זה נכנס</strong> - שהיה צריך לבא להר הבית לעמוד בשער נקנור ולהכניס ידיו לעזרה וליתן לו מן הדם בבהונות ושערי נקנור לא נתקדשו כדאמרינן בכיצד צולין <span class=\"parenthesized\">(פסחים דף פה: ושם)</span> שכל השערים נתקדשו חוץ משערי נקנור ששם מצורע עומד ומכניס ידיו לבהונות וא\"ת למה נמנעו בשביל כך מלקדשם יעמוד בעזרת נשים ויכניס ידיו לשער נקנור ופירש ריב\"ן דאין זה לפני ה' דלא הוי באויר העזרה ואין נראה דאי הוה קדוש כקדושת העזרה הוי שפיר לפני ה' ואומר רבינו תם דעשוי בשביל תקנת מצורעים שיעמדו שם שיגין עליהם השער בחמה מפני החמה ובגשמים מפני הגשמים:"
+  },
+  "Tosafot on Yevamot 7b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T20:52:22.002Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 7b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מוטב יבא עשה שיש בו כרת כו'</strong> - לאו מילתא דפסיקא היא דיש מקומות שהעמידו דבריהם במקום כרת כדאמרינן בפסחים בפרק האשה <span class=\"parenthesized\">(דף צב.)</span> אלא כאן לא היה נראה לחכמים להחמיר:"
+  },
+  "Tosafot on Yevamot 7b:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T20:54:38.197Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 7b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי יוחנן אמר דבר תורה אפילו עשה אין בו</strong> - רבי יוחנן לא אתא לפלוגי אברייתא דלאו תנא הוא כדמוכח בפרק קמא דכתובות <span class=\"parenthesized\">(דף ח.)</span> דמשני ארב תנא הוא ופליג ולא בעי לשנויי הכי לר' יוחנן אע\"ג דיש לדחות דר' יוחנן כמתני' דכלים <span class=\"parenthesized\">(פ\"א מ\"ח)</span> דתנן עזרת נשים מקודשת הימנו שאין טבול יום נכנס לשם אבל בהר הבית וחיל שרי והיינו מדרבנן דאי מדאורייתא אסור ליכנס במחנה לויה אם כן בהר הבית נמי ליתסר דמפתח הר הבית עד שער נקנור מחנה לויה כדתניא בתוספתא ובספרי מכל מקום אין נראה דפליגי ברייתא דהכא אמתני' דכלים אלא רבי יוחנן לפרושי ברייתא אתא דעשה דקתני לאו דוקא ולאו משום דסבר רבי יוחנן טבול יום דזב לאו כזב דמי דהא רבא אית ליה דרבי יוחנן בסוף האשה <span class=\"parenthesized\">(פסחים צב.)</span> ורבא אית ליה בפ\"ב דכריתות <span class=\"parenthesized\">(דף י.)</span> דמחוסר כפורים דזב כזב דמי אלא דוקא לענין פסח הבא בטומאה דלא יאכלו ממנו זבין וזבות ונדות ויולדות קאמר דכזב דמי להכי מייתי לה בכריתות אבל לענין ביאת מקדש לאו כזב דמי וניחא השתא בריש פ\"ב דזבחים <span class=\"parenthesized\">(דף יז:)</span> מסיק לכ\"ע דמחוסר כפורים דזב כזב דמי ובפרק ג' מינים <span class=\"parenthesized\">(נזיר דף מה.)</span> מסיק דאפילו טבול יום דזב לאו כזב דמי אלא ההיא דזבחים לענין פסח הבא בטומאה וההיא דנזיר לענין ביאת מקדש והא דמשמע בההיא סוגיא דג' מינים דאפילו נאמר טבול יום דזב לאו כזב דמי אסור ליכנס למחנה לויה ומקרא דריש התם אר\"י דהתם בזב בעל ג' ראיות דאיכא תרתי שהוא טבול יום ומחוסר כפורים ואע\"ג דבשמעתין נמי בראה קרי בו ביום דהוי טבול יום ומחוסר כפורים שרי מדאורייתא היינו משום דאינו על טומאה אחת אלא על טבול יום משום קריו ומחוסר כפורים משום צרעתו: [וע\"ע תוספות זבחים לב: ד\"ה ור\"י]:"
+  },
+  "Tosafot on Yevamot 7b:7:1": {
+    "dependsOn": [
+      "Rashi on Yevamot 7b:7:1",
+      "Rashi on Yevamot 7b:7:2",
+      "Steinsaltz on Yevamot 7b:7",
+      "Steinsaltz comment #1 on Yevamot 7b:7",
+      "Steinsaltz comment #2 on Yevamot 7b:7",
+      "Horayot 5b:14",
+      "Horayot 5b:15",
+      "Horayot 5b:16",
+      "Tosafot on Yevamot 7b:1:1",
+      "Tosafot on Yevamot 7b:5:1",
+      "Tosafot on Yevamot 7b:6:1"
+    ],
+    "generatedAt": "2026-10-21T21:08:23.609Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 7b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שחדשו בה דברים ואמרו טבול יום אל יכנס למחנה לויה</strong> - וא\"ת מנא ליה שחדשו מטבול יום דלמא חדשו מטמא מת עצמו ויש לומר דמשמע ליה שלא חדשו אלא על החצר וחצר היינו עזרת נשים כדמוכח ביחזקאל <span class=\"parenthesized\">(מד)</span> ואילו טמא מת אסור אפי' בחיל:"
+  },
+  "Tosafot on Yevamot 7b:8:1": {
+    "dependsOn": [
+      "Yevamot 7b:8",
+      "Rashi on Yevamot 7b:8:1"
+    ],
+    "generatedAt": "2026-10-21T21:13:00.125Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 7b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמר עולא מה טעם כו'</strong> - פירוש כיון דביאה במקצת שמה ביאה מה טעם התירו חכמים להכניס ידיו לבהונות ואם תאמר וכיון דשמה ביאה ואפילו הכי שרי מקצתו משום דאי אפשר בענין אחר א\"כ כולו נמי לישתרי וי\"ל דלא ניחא שידחה ביאת כולו דכתיב בהדיא ואל המקדש לא תבא אבל ביאה במקצת לא כתיב בהדיא אלא מהיקשא גמר לה עולא התם מה נגיעה במקצת שמה נגיעה אף ביאה במקצת כו' ועוד יש לומר כיון דאפשר על ידי ביאה במקצת אם יכנס כולו חייב מידי דהוה אהיה לו דרך קצרה ובא לו בארוכה:"
+  }
+}
