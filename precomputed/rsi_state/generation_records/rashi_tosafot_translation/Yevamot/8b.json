@@ -1,0 +1,153 @@
+{
+  "Rashi on Yevamot 8b:1:1": {
+    "dependsOn": [
+      "Yevamot 8b:1",
+      "Rashi on Yevamot 8b:1:2",
+      "Rashi on Yevamot 8b:1:3"
+    ],
+    "generatedAt": "2026-10-21T22:28:53.960Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 8b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למישרי צרה שלא במקום מצוה</strong> - דאי לא כתיב עליה הוה ילפינן מלצרור דצרת אחות אשה אסורה בכל מקום:"
+  },
+  "Rashi on Yevamot 8b:1:2": {
+    "dependsOn": [
+      "Rashi on Yevamot 8b:1:1",
+      "Rashi on Yevamot 8b:1:3"
+    ],
+    "generatedAt": "2026-10-21T22:30:38.387Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 8b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי טעמא</strong> - כלומר היכי מידרשא היתר מהכא:"
+  },
+  "Rashi on Yevamot 8b:1:3": {
+    "dependsOn": [
+      "Rashi on Yevamot 8b:1:1",
+      "Rashi on Yevamot 8b:1:2",
+      "Yevamot 8b:1",
+      "Rashi on Yevamot 3b:6:2"
+    ],
+    "generatedAt": "2026-10-21T22:32:52.703Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 8b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במקום עליה הוא</strong> - דכתיב לצרור למיסר צרה ולא במקום אחר:"
+  },
+  "Rashi on Yevamot 8b:2:1": {
+    "dependsOn": [
+      "Yevamot 8b:2",
+      "Rashi on Yevamot 8b:1:1",
+      "Rashi on Yevamot 8b:1:2"
+    ],
+    "generatedAt": "2026-10-21T22:35:38.308Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 8b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אימא ערוה גופה שלא במקום מצוה תשתרי</strong> - מדכתיב עליה דקאי נמי אאחות אשה:"
+  },
+  "Rashi on Yevamot 8b:3:1": {
+    "dependsOn": [
+      "Yevamot 8b:3",
+      "Steinsaltz on Yevamot 8b:3",
+      "Rashi on Yevamot 8b:2:1",
+      "Yevamot 8b:5"
+    ],
+    "generatedAt": "2026-10-21T22:39:05.414Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 8b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל שבחייה</strong> - אשתך לא תשא את אחותה:"
+  },
+  "Rashi on Yevamot 8b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T22:40:13.113Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 8b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרי קראי כתיבי</strong> - מעיקרא כתיב לצרור דמשמע לא היא ולא צרתה והדר כתיב לגלות ערותה דמשמע חדא הוא דאסירא:"
+  },
+  "Rashi on Yevamot 8b:6:2": {
+    "dependsOn": [
+      "Rashi on Yevamot 8b:6:1",
+      "Rashi on Yevamot 8b:6:2",
+      "Yevamot 3b:6",
+      "Rashi on Yevamot 3b:6:2",
+      "Yevamot 3b:7",
+      "Yevamot 8b:7",
+      "Rashi on Yevamot 8b:7:1",
+      "Rashi on Yevamot 8b:7:2",
+      "Steinsaltz on Yevamot 8b:6:1",
+      "Rashi on Yevamot 8a:1:1",
+      "Rashi on Yevamot 8a:2:1"
+    ],
+    "generatedAt": "2026-10-25T09:57:58.968Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 8b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במקום מצוה שתיהן אסורין</strong> - כדכתיב עליה דמשמע במקום עליה:"
+  },
+  "Rashi on Yevamot 8b:7:1": {
+    "dependsOn": [
+      "Yevamot 8b:7",
+      "Rashi on Yevamot 8b:7:2"
+    ],
+    "generatedAt": "2026-10-25T10:01:53.155Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 8b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיפוך אנא במקום מצוה היא אסורה וצרתה מותרת</strong> - דהא עליה אלגלות ערותה סמיך דמשמע חדא למדרש הכי במקו' עליה הוא דלא אסיר לן אלא חדא וקרא דלצרור אשלא במקום מצוה:"
+  },
+  "Rashi on Yevamot 8b:7:2": {
+    "dependsOn": [
+      "Rashi on Yevamot 8b:7:1",
+      "Yevamot 8b:6",
+      "Rashi on Yevamot 8b:1:1",
+      "Rashi on Yevamot 8b:2:1",
+      "Rashi on Yevamot 8b:3:1",
+      "Rashi on Yevamot 8b:6:1",
+      "Rashi on Yevamot 8b:6:2",
+      "Rashi on Yevamot 8b:8:1",
+      "Rashi on Yevamot 8b:11:1",
+      "Rashi on Yevamot 8b:12:1",
+      "Rashi on Yevamot 8b:14:1"
+    ],
+    "generatedAt": "2026-10-25T10:05:42.158Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 8b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"כ לא יאמר עליה</strong> - דבלא עליה נמי כי קשו לן קראי אהדדי משנינן להו מסברא הכי היתירא למצוה ואיסורא שלא במקום מצוה הלכך עליה לחדושי אתא למדרשיה אלצרור ולמיסר צרה במקום מצוה כערוה:"
+  },
+  "Tosafot on Yevamot 8b:1:1": {
+    "dependsOn": [
+      "Yevamot 8b:1",
+      "Yevamot 8a:17"
+    ],
+    "generatedAt": "2026-10-21T22:34:20.511Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 8b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למישרי צרה שלא במקום מצוה</strong> - וא\"ת להנהו שינויי דלעיל דמצרכי קרא לערוה גופה מנא להו למישרי צרה שלא במקום מצוה וי\"ל דנפקא להו מהיכא דנפקא ליה לרבי:"
+  }
+}
