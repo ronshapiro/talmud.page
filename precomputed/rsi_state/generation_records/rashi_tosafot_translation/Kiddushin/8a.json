@@ -1,0 +1,445 @@
+{
+  "Rashi on Kiddushin 8a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T21:12:38.265Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 8a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לדידי שוי לי</strong> - אני שם אותו לעצמי ואקבלו בכך:"
+  },
+  "Rashi on Kiddushin 8a:11:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 8a:11:1",
+      "Rashi on Kiddushin 8a:11:2"
+    ],
+    "generatedAt": "2026-10-21T21:20:15.115Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 8a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דגברא רבה הוא</strong> - ולא אזיל בגילוי הראש:"
+  },
+  "Rashi on Kiddushin 8a:11:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 8a:11:1",
+      "Rashi on Kiddushin 8a:11:2"
+    ],
+    "generatedAt": "2026-10-21T21:21:57.128Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 8a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקובי</strong> - שם מקום:"
+  },
+  "Rashi on Kiddushin 8a:12:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 8a:11:1",
+      "Rashi on Kiddushin 8a:11:2",
+      "Rashi on Kiddushin 8a:14:1"
+    ],
+    "generatedAt": "2026-10-21T21:27:54.025Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 8a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונתן לה דינר</strong> - מיד מקודשת דקיבלה ליה לשם קידושין וע\"מ שישלים תנאו:"
+  },
+  "Rashi on Kiddushin 8a:14:1": {
+    "dependsOn": [
+      "Kiddushin 8a:14",
+      "Rashi on Kiddushin 8a:12:1",
+      "Rashi on Kiddushin 8a:2:1",
+      "Rashi on Kiddushin 8a:6:1",
+      "Rashi on Kiddushin 8a:6:2"
+    ],
+    "generatedAt": "2026-10-21T21:30:26.953Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 8a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרשות בידו</strong> - שאין הקידושין חלין עד שתקבל את כולו ואת אמרת מקודשת:"
+  },
+  "Rashi on Kiddushin 8a:15:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 8a:15:1",
+      "Kiddushin 8a:15",
+      "Rashi on Kiddushin 8a:14:1",
+      "Rashi on Kiddushin 8a:16:1",
+      "Rashi on Kiddushin 8a:17:1",
+      "Rashi on Kiddushin 8a:18:2",
+      "Rashi on Kiddushin 8a:18:3",
+      "Rashi on Kiddushin 8a:20:1",
+      "Steinsaltz on Kiddushin 8a:15"
+    ],
+    "generatedAt": "2026-10-21T21:34:04.240Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 8a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במנה זו</strong> - דדעתה אכולה:"
+  },
+  "Rashi on Kiddushin 8a:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T21:34:39.285Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 8a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דינר רע</strong> - לקמן מפרש:"
+  },
+  "Rashi on Kiddushin 8a:17:1": {
+    "dependsOn": [
+      "Kiddushin 8a:17",
+      "Rashi on Kiddushin 8a:16:1",
+      "Rashi on Kiddushin 8a:15:1"
+    ],
+    "generatedAt": "2026-10-21T21:38:56.987Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 8a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיצד דאמר במנה זו</strong> - ונמצא חסר דינר אינה מקודשת והיינו דקאמר רצה אחד לחזור הרשות בידו:"
+  },
+  "Rashi on Kiddushin 8a:18:1": {
+    "dependsOn": [
+      "Kiddushin 8a:18"
+    ],
+    "generatedAt": "2026-10-21T21:40:38.166Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 8a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מסתברא</strong> - דפרושי מפרש:"
+  },
+  "Rashi on Kiddushin 8a:18:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 8a:18:1",
+      "Rashi on Kiddushin 8a:18:2",
+      "Rashi on Kiddushin 8a:18:3",
+      "Kiddushin 8a:16",
+      "Kiddushin 8a:17",
+      "Kiddushin 8a:14",
+      "Kiddushin 8a:15",
+      "Rashi on Kiddushin 8a:14:1",
+      "Rashi on Kiddushin 8a:15:1",
+      "Rashi on Kiddushin 8a:16:1",
+      "Rashi on Kiddushin 8a:17:1"
+    ],
+    "generatedAt": "2026-10-21T21:44:28.292Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 8a:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השתא במנה סתם</strong> - תנא ליה דיכולים לחזור כל זמן שלא קבלה את כולה:"
+  },
+  "Rashi on Kiddushin 8a:18:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 8a:18:1",
+      "Rashi on Kiddushin 8a:18:2",
+      "Rashi on Kiddushin 8a:18:3"
+    ],
+    "generatedAt": "2026-10-21T21:50:09.550Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 8a:18:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במנה זו</strong> - ונמצא חסר דהשתא לא קבלה כולה מיבעי' דמצי הדרא:"
+  },
+  "Rashi on Kiddushin 8a:20:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T21:55:22.049Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 8a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מונה והולך שאני</strong> - ואע\"ג דאמר במנה סתם כיון דחזיתיה מונה והולך דעתה אכולה אבל כי לא נתן לה אלא דינר וקבילתיה ודאי לשם קידושין קבילתיה ועל מנת שישלים:"
+  },
+  "Rashi on Kiddushin 8a:21:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T21:56:41.959Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 8a:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאישתכח ביני זוזי</strong> - ולא הכירה בו מתחילה שהיה מעורב ביניהם:"
+  },
+  "Rashi on Kiddushin 8a:22:1": {
+    "dependsOn": [
+      "Kiddushin 8a:22",
+      "Kiddushin 8a:18",
+      "Rashi on Kiddushin 8a:21:1",
+      "Rashi on Kiddushin 8a:16:1"
+    ],
+    "generatedAt": "2026-10-21T21:59:48.278Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 8a:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היינו דינר של נחשת</strong> - ואמאי מקודשת:"
+  },
+  "Rashi on Kiddushin 8a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T20:36:35.400Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 8a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכסף מקנתו</strong> - בעבד עברי כתיב:"
+  },
+  "Rashi on Kiddushin 8a:3:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 8a:2:1"
+    ],
+    "generatedAt": "2026-10-21T20:37:57.417Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 8a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ישיב גאולתו</strong> - ישיב קרא יתירא הוא דמצי למכתב לפיהן גאולתו לרבות שוה כסף לענין פדיון וכיון דמיפרוק ביה איקנויי נמי מקנה ביה דכתיב גאולתו מכסף מקנתו:"
+  },
+  "Rashi on Kiddushin 8a:4:1": {
+    "dependsOn": [
+      "Kiddushin 8a:4",
+      "Rashi on Kiddushin 8a:6:1",
+      "Rashi on Kiddushin 8a:7:1",
+      "Rashi on Kiddushin 8a:9:1"
+    ],
+    "generatedAt": "2026-10-21T20:45:14.065Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 8a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכיון דלא קייץ לא</strong> - וה\"ק ואינו נקנה בתבואה וכלים אלא א\"כ קצץ דמיה:"
+  },
+  "Rashi on Kiddushin 8a:5:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 8a:5:1",
+      "Kiddushin 8a:5",
+      "Rashi on Kiddushin 8a:2:1",
+      "Rashi on Kiddushin 8a:3:1",
+      "Rashi on Kiddushin 7b:1:1",
+      "Rashi on Kiddushin 7b:2:1"
+    ],
+    "generatedAt": "2026-10-21T20:47:16.671Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 8a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתורת כסף וכו'</strong> - בתורת דמים הוא נקנה בין שנותנין עליו כסף בין שוה כסף בתורת דמים אקנו ולא בתורת חליפין שדרך לעשות חליפין בתבואה וכלים כלים שנאמר <span class=\"parenthesized\">(רות ד׳:ז׳)</span> שלף איש נעלו ותבואה נמי דכתיב <span class=\"parenthesized\">(שם)</span> כל דבר:"
+  },
+  "Rashi on Kiddushin 8a:6:1": {
+    "dependsOn": [
+      "Kiddushin 8a:6"
+    ],
+    "generatedAt": "2026-10-21T20:54:37.160Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 8a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולרב נחמן דאמר</strong> - בפרק הזהב פירי לא עבדי חליפין אם נתן תבואה בתורת חליפין כמו סודר לקנות בהן שדה או שום דבר בחליפין לא קנו והאי כל דבר מפרש ליה דהכל נקנה במנעל השתא ליכא למימר תורת תבואה וכלים היינו חליפין מאי איכא למימר:"
+  },
+  "Rashi on Kiddushin 8a:6:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 8a:6:1",
+      "Rashi on Kiddushin 8a:6:2",
+      "Kiddushin 8a:6"
+    ],
+    "generatedAt": "2026-10-21T20:56:16.112Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 8a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לעולם</strong> - ואינו נקנה בתבואה וכלים דקאמר בדלית בהו שוה פרוטה:"
+  },
+  "Rashi on Kiddushin 8a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T20:56:51.273Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 8a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקרבא הנאתייהו</strong> - מזומנין ליהנות מהם:"
+  },
+  "Rashi on Kiddushin 8a:8:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 8a:8:1",
+      "Rashi on Kiddushin 8a:8:2",
+      "Rashi on Kiddushin 8a:2:1",
+      "Rashi on Kiddushin 8a:3:1"
+    ],
+    "generatedAt": "2026-10-21T20:58:44.188Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 8a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לפדיון בני</strong> - לחמש סלעים של פדיון הבכור דכתיב <span class=\"parenthesized\">(במדבר י״ח:ט״ו-ט״ז)</span> ופדויו מבן חדש תפדה בערכך כסף חמשת שקלים:"
+  },
+  "Rashi on Kiddushin 8a:8:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 8a:8:1"
+    ],
+    "generatedAt": "2026-10-21T21:02:21.420Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 8a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא אמר כלום</strong> - אפי' נתנו לכהן:"
+  },
+  "Rashi on Kiddushin 8a:9:1": {
+    "dependsOn": [
+      "Kiddushin 8a:9",
+      "Rashi on Kiddushin 8a:9:2"
+    ],
+    "generatedAt": "2026-10-21T21:08:14.281Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 8a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל כמיניה</strong> - כי אמר בחמש סלעים בתמיה:"
+  },
+  "Rashi on Kiddushin 8a:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T21:11:35.506Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 8a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דשוי</strong> - ואפי' הכי קתני רישא לא אמר כלום הואיל ולא נישומו:"
+  },
+  "Tosafot on Kiddushin 8a:10:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Tosafot on Kiddushin 8a:10:1"
+    ],
+    "generatedAt": "2026-10-21T21:16:28.712Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 8a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב כהנא שקל סודרא בפדיון הבן</strong> - משמע הכא דרב כהנא היה כהן ותימה דבסוף אלו עוברין <span class=\"parenthesized\">(פסחים דף מט.)</span> משמע דלא היה כהן דקאמר אי לאו דנסיבי כהנתא לא גלאי וי\"ל דתרי רב כהנא הוו אי נמי י\"ל דבשביל אשתו היה לוקח כדאשכחן בפרק הזרוע <span class=\"parenthesized\">(חולין דף קלב.)</span> רב כהנא אכל בשביל אשתו:"
+  },
+  "Tosafot on Kiddushin 8a:11:1": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 8a:11:1",
+      "Translation on Tosafot on Kiddushin 8a:11:1",
+      "Kiddushin 8a:11",
+      "Kiddushin 8a:10"
+    ],
+    "generatedAt": "2026-10-21T21:26:14.021Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 8a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל כולי עלמא לא</strong> - וא\"ת מאי טעמא דלא מהני מי גרע ממתנה ע\"מ להחזיר דאמרינן לעיל <span class=\"parenthesized\">(קידושין דף ו:)</span> דשמה מתנה וי\"ל דאין הכי נמי דמיגרע גרע דהתם איכא דבר חשוב דהוי מתנה אע\"פ שנתן ע\"מ להחזיר אבל הכא גבי פדיון לא היה שוה אותו סודר חמש סלעים ומתחילה כשנתן לו לא יצא ידי נתינה:"
+  },
+  "Tosafot on Kiddushin 8a:18:1": {
+    "dependsOn": [
+      "Translation on Tosafot on Kiddushin 8a:18:1",
+      "Tosafot on Kiddushin 8a:1:1",
+      "Tosafot on Kiddushin 8a:5:1",
+      "Tosafot on Kiddushin 8a:10:1",
+      "Chidushei Halachot on Kiddushin 8a:3",
+      "Tosafot on Kiddushin 8a:8:1"
+    ],
+    "generatedAt": "2026-10-21T21:53:02.836Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 8a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השתא במנה סתם לא הוו קידושין במנה זו מיבעיא</strong> - וא\"ת דלמא הא קמ\"ל דבמנה זו אע\"ג דלא חזרה בה לא הוי קידושין כיון שנמצא חסר ויש לומר דמרישא שמעת מינה כיון דבמנה סתם יכולה לחזור בה ולא אמרינן ישלים אלמא לא חלו הקידושין כלל עד שישלים הכי נמי כי אמר לה במנה זו ונמצא חסר לא חלו הקידושין ואף ההשלמה לא מהניא שהרי לא סמכה דעתה להשלמתו אלא למנה שמראה לה והרי הוא חסר:"
+  },
+  "Tosafot on Kiddushin 8a:1:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Tosafot on Kiddushin 8a:1:1",
+      "Kiddushin 8a:1",
+      "Kiddushin 12a:14"
+    ],
+    "generatedAt": "2026-10-21T20:36:07.423Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 8a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף שוה כסף דקיץ</strong> - הא דאמרינן לקמן <span class=\"parenthesized\">(קידושין דף יב.)</span> ההוא גברא דקדיש בזוודא דאורדי יתיב רב שימי בר חייא וקא מעיין בה אי אית בה שוה פרוטה אין אי לא לא לכאורה דומה דלא כרב יוסף:"
+  },
+  "Tosafot on Kiddushin 8a:5:1": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 8a:5:1",
+      "Translation on Tosafot on Kiddushin 8a:5:1",
+      "Kiddushin 8a:5",
+      "Chidushei Halachot on Kiddushin 8a:1",
+      "Gittin 39b:1",
+      "Gittin 39b:2",
+      "Gittin 39b:3",
+      "Gittin 39b:4",
+      "Gittin 39b:5",
+      "Gittin 39b:6",
+      "Gittin 39b:7",
+      "Gittin 39b:8",
+      "Gittin 39b:9",
+      "Gittin 39b:10",
+      "Gittin 39b:11",
+      "Gittin 39b:12",
+      "Gittin 39b:13",
+      "Gittin 39b:14",
+      "Gittin 39b:15",
+      "Gittin 39b:16",
+      "Gittin 39b:17",
+      "Gittin 40a:1",
+      "Gittin 40a:2",
+      "Gittin 40a:3"
+    ],
+    "generatedAt": "2026-10-21T20:52:51.221Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 8a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומאי ניהו חליפין</strong> - אין עבד עברי נקנה בחליפין ולא קונה עצמו בחליפין דמה שהוא קונה בכסף נפקא לן מהאי קרא דמכסף מקנתו לקמן <span class=\"parenthesized\">(קידושין דף יד:)</span> אבל עבד כנעני נקנה בחליפין. כדתני בפ' השולח <span class=\"parenthesized\">(גיטין <span class=\"parenthesized\">(דף לט:)</span> גבי שקל כומתא ושדא בה אמר לה קני האי וקנה נפשך ומשמע משום דהויא ליה כליו של מקנה לא עשה ולא כלום אבל בכליו של קונה קנתה ומתורת חליפין משמע ולא בתורת כסף וכך פירש רבינו חננאל שם:"
+  },
+  "Tosafot on Kiddushin 8a:8:1": {
+    "dependsOn": [
+      "Translation on Tosafot on Kiddushin 8a:8:1",
+      "Kiddushin 8a:8",
+      "Kiddushin 8a:1",
+      "Maharsha on Kiddushin 8a:2",
+      "Tosafot on Kiddushin 8a:1:1",
+      "Tosafot on Kiddushin 8a:5:1"
+    ],
+    "generatedAt": "2026-10-21T21:06:07.326Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 8a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנא אמינא לה דתניא עגל זה</strong> - ללישנא קמא מייתי ראיה:"
+  }
+}

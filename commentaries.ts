@@ -34,6 +34,11 @@ export const ALL_COMMENTARIES: CommentaryType[] = [
     className: "explanation",
   },
   {
+    englishName: "SyntheticExplanation",
+    hebrewName: "הסבר",
+    className: "synthetic-explanation",
+  },
+  {
     englishName: "Footnotes",
     hebrewName: "הערות",
     className: "tp-footnote",

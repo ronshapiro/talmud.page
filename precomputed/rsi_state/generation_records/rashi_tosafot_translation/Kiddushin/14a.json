@@ -1,0 +1,496 @@
+{
+  "Rashi on Kiddushin 14a:10:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14a:10:1",
+      "Translation on Rashi on Kiddushin 14a:10:1",
+      "Rashi on Kiddushin 14a:11:1",
+      "Rashi on Kiddushin 14a:11:2",
+      "Rashi on Kiddushin 14a:12:1",
+      "Deuteronomy 25:9",
+      "Rashi on Kiddushin 14a:6:1",
+      "Rashi on Kiddushin 14a:7:1"
+    ],
+    "generatedAt": "2026-10-22T06:31:03.093Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ככה</strong> - יעשה אשר לא יבנה וגו':"
+  },
+  "Rashi on Kiddushin 14a:11:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14a:11:1"
+    ],
+    "generatedAt": "2026-10-22T06:38:55.408Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכתיב גורל</strong> - על השעירים:"
+  },
+  "Rashi on Kiddushin 14a:11:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14a:11:2",
+      "Rashi on Kiddushin 14a:11:1",
+      "Kiddushin 14a:10",
+      "Rashi on Kiddushin 14a:1:1",
+      "Rashi on Kiddushin 14a:2:1",
+      "Rashi on Kiddushin 14a:3:1",
+      "Rashi on Kiddushin 14a:4:1"
+    ],
+    "generatedAt": "2026-10-22T06:40:58.447Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכתיב חוקה</strong> - בפרשה וכל חוקה עיכובא הוא:"
+  },
+  "Rashi on Kiddushin 14a:12:1": {
+    "dependsOn": [
+      "Translation on Rashi on Kiddushin 14a:12:1",
+      "Rashi on Kiddushin 14a:12:2",
+      "Kiddushin 14a:11",
+      "Kiddushin 14a:13"
+    ],
+    "generatedAt": "2026-10-22T06:45:12.029Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הגורל עושה חטאת</strong> - שעיר שגורל השם עולה עליו עושה חטאת:"
+  },
+  "Rashi on Kiddushin 14a:12:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14a:12:2",
+      "Translation on Rashi on Kiddushin 14a:12:2",
+      "Rashi on Kiddushin 14a:12:1",
+      "Kiddushin 14a:12"
+    ],
+    "generatedAt": "2026-10-22T06:47:41.886Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין השם</strong> - אם קרא עליו שם חטאת אינו נקבע בכך ויפיל עליהם גורלות ואם יפול הגורל על חבירו יהא זה לעזאזל:"
+  },
+  "Rashi on Kiddushin 14a:13:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14a:13:1",
+      "Translation on Rashi on Kiddushin 14a:13:1",
+      "Rashi on Kiddushin 14a:13:2",
+      "Rashi on Kiddushin 14a:13:3",
+      "Rashi on Kiddushin 14a:11:1",
+      "Rashi on Kiddushin 14a:12:1"
+    ],
+    "generatedAt": "2026-10-22T06:50:51.997Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיכול</strong> - כלומר להכי איצטריך האי קרא שהייתי יכול לומר ומה במקום שלא קידש הגורל כגון גבי קנין דכתיב בהם <span class=\"parenthesized\">(ויקרא ה׳:ז׳)</span> אחד לחטאת ואחד לעולה ואם הטיל עליהם גורל אינם נקבעים בכך ויכול לשנותם דקי\"ל בסדר יומא <span class=\"parenthesized\">(דף מא.)</span> אין הקנין מתפרשות אלא או בלקיחת בעלים או בעשיית כהן:"
+  },
+  "Rashi on Kiddushin 14a:13:2": {
+    "dependsOn": [
+      "Translation on Rashi on Kiddushin 14a:13:2"
+    ],
+    "generatedAt": "2026-10-22T06:52:28.577Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קידש השם</strong> - אם אמר בשעת לקיחה זו לחטאת וזו לעולה הוקבעו ואם שינה פסול:"
+  },
+  "Rashi on Kiddushin 14a:13:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14a:13:1",
+      "Rashi on Kiddushin 14a:13:2",
+      "Rashi on Kiddushin 14a:13:3",
+      "Translation on Rashi on Kiddushin 14a:13:3",
+      "Kiddushin 14a:13"
+    ],
+    "generatedAt": "2026-10-22T06:55:42.985Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14a:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כאן שקידש הגורל</strong> - דכתיב <span class=\"parenthesized\">(ויקרא ט״ז:ח׳)</span> ונתן אהרן וגו' אין דין כו':"
+  },
+  "Rashi on Kiddushin 14a:14:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14a:14:1",
+      "Translation on Rashi on Kiddushin 14a:14:1",
+      "Rashi on Kiddushin 14a:14:2",
+      "Kiddushin 14a:14",
+      "Rashi on Yoma 40b:10:1",
+      "Steinsaltz on Kiddushin 14a:14",
+      "Tosafot on Kiddushin 14a:14:1",
+      "Yoma 40b:10",
+      "Yoma 40b:11",
+      "Yoma 40b:12",
+      "Yoma 41a:1",
+      "Kiddushin 14a:10",
+      "Kiddushin 14a:11",
+      "Rashi on Kiddushin 14a:11:1",
+      "Rashi on Kiddushin 14a:11:2"
+    ],
+    "generatedAt": "2026-10-22T07:02:05.293Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ל</strong> - שנה עליו לעכב:"
+  },
+  "Rashi on Kiddushin 14a:14:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14a:14:1",
+      "Rashi on Kiddushin 14a:14:2",
+      "Rashi on Kiddushin 14a:11:2"
+    ],
+    "generatedAt": "2026-10-22T07:13:21.546Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוה דרשינן קל וחומר</strong> - להביא מה שלא נכתב בפרשה ואע\"ג דכתיב עיכובא:"
+  },
+  "Rashi on Kiddushin 14a:15:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14a:15:1",
+      "Translation on Rashi on Kiddushin 14a:15:1",
+      "Rashi on Kiddushin 14a:1:1",
+      "Rashi on Kiddushin 14a:4:1",
+      "Rashi on Kiddushin 14a:11:1",
+      "Rashi on Kiddushin 14a:12:1",
+      "Deuteronomy 24:1",
+      "Deuteronomy 24:3",
+      "Kiddushin 14a:14"
+    ],
+    "generatedAt": "2026-10-22T07:19:15.751Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לה</strong> - דכתיב וכתב לה:"
+  },
+  "Rashi on Kiddushin 14a:16:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14a:16:1",
+      "Rashi on Kiddushin 14a:16:2"
+    ],
+    "generatedAt": "2026-10-22T07:21:08.708Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרי לה כתיבי</strong> - ושנאה האיש האחרון וגו':"
+  },
+  "Rashi on Kiddushin 14a:16:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14a:16:2",
+      "Translation on Rashi on Kiddushin 14a:16:2",
+      "Rashi on Kiddushin 14a:16:1",
+      "Steinsaltz on Kiddushin 14a:16:1",
+      "Ritva on Kiddushin 14a:16:1",
+      "Steinsaltz on Kiddushin 14a:16",
+      "Torah Temimah on Torah, Deuteronomy 24:1:22",
+      "Gittin 87a:6",
+      "Rashi on Gittin 87a:6:1",
+      "Kiddushin 14a:16",
+      "Steinsaltz comment #1 on Kiddushin 14a:16",
+      "Gittin 24b:8",
+      "Gittin 24b:9",
+      "Gittin 24b:10",
+      "Kiddushin 14a:15",
+      "Rashi on Kiddushin 14a:15:1",
+      "Kiddushin 14a:17",
+      "Rashi on Kiddushin 14a:17:1",
+      "Rashi on Kiddushin 14a:1:1",
+      "Rashi on Kiddushin 14a:1:2"
+    ],
+    "generatedAt": "2026-10-22T07:27:49.561Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא לה ולחבירתה</strong> - ששמותן שוין שאין שתי נשים מתגרשות בגט אחד אם כתב פלוני מגרש פלונית ופלונית נשיו:"
+  },
+  "Rashi on Kiddushin 14a:17:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14a:17:1",
+      "Rashi on Kiddushin 14a:16:1",
+      "Rashi on Kiddushin 14a:16:2",
+      "Rashi on Kiddushin 14a:15:1",
+      "Rashi on Kiddushin 14a:14:1",
+      "Steinsaltz on Kiddushin 14a:17:1"
+    ],
+    "generatedAt": "2026-10-22T07:29:45.796Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר קרא נעל</strong> - קרא יתירא בית חלוץ הנעל דמצי למיכתב בית החלוץ:"
+  },
+  "Rashi on Kiddushin 14a:19:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14a:19:1",
+      "Translation on Rashi on Kiddushin 14a:19:1",
+      "Kiddushin 14a:19",
+      "Versions on Kiddushin 14a:19:1",
+      "Mesorat Hashas on Kiddushin 14a:19:1"
+    ],
+    "generatedAt": "2026-10-22T07:32:35.771Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פרט</strong> - לנעל גדול שאין יכול להלוך בו:"
+  },
+  "Rashi on Kiddushin 14a:1:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14a:1:1",
+      "Rashi on Kiddushin 14a:1:2",
+      "Rashi on Kiddushin 14a:1:3",
+      "Rashi on Kiddushin 2a:1:1"
+    ],
+    "generatedAt": "2026-10-22T05:37:36.485Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יבא עליה ולקחה לו</strong> - כלומר ביאתה הן ליקוחיה:"
+  },
+  "Rashi on Kiddushin 14a:1:2": {
+    "dependsOn": [
+      "Translation on Rashi on Kiddushin 14a:1:2",
+      "Rashi on Kiddushin 14a:1:1",
+      "Rashi on Kiddushin 14a:1:3"
+    ],
+    "generatedAt": "2026-10-22T05:41:28.511Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודילמא כאשה</strong> - מה אשה כסף ושטר כי ביאה אף יבמה כסף ושטר כי ביאה דהא כתיב לאשה:"
+  },
+  "Rashi on Kiddushin 14a:1:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14a:1:3",
+      "Translation on Rashi on Kiddushin 14a:1:3",
+      "Rashi on Kiddushin 14a:1:1",
+      "Rashi on Kiddushin 14a:1:2"
+    ],
+    "generatedAt": "2026-10-22T05:43:35.323Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויבמה</strong> - ביאה משמע שנה עליה הכתוב לעכב:"
+  },
+  "Rashi on Kiddushin 14a:2:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14a:2:1",
+      "Translation on Rashi on Kiddushin 14a:2:1",
+      "Kiddushin 14a:2",
+      "Rashi on Kiddushin 14a:2:2"
+    ],
+    "generatedAt": "2026-10-22T05:47:54.185Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג האי מיבעי ליה ויבמה בעל כרחה</strong> - דלהכי דרשינן לה ביבמות <span class=\"parenthesized\">(דף ח:)</span>:"
+  },
+  "Rashi on Kiddushin 14a:2:2": {
+    "dependsOn": [
+      "Translation on Rashi on Kiddushin 14a:2:2"
+    ],
+    "generatedAt": "2026-10-22T05:54:45.923Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם כן</strong> - דלביאה גומרת אותה נימא ויבם מאי ויבמה למילף נמי בעל כרחה והכי תניא ליה בהדיא ביבמות בפ' הבא על יבמתו <span class=\"parenthesized\">(יבמות דף נד.)</span> ויבם ביאה גומרת בה ואין כסף ושטר גומרין בה ויבמה בעל כרחה:"
+  },
+  "Rashi on Kiddushin 14a:3:1": {
+    "dependsOn": [
+      "Translation on Rashi on Kiddushin 14a:3:1"
+    ],
+    "generatedAt": "2026-10-22T05:58:58.824Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנלן</strong> - דחלוצה מותרת להנשא דילמא מצות חליצה הוא דרמא רחמנא עלה ולעולם לא משתריא:"
+  },
+  "Rashi on Kiddushin 14a:3:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14a:3:1",
+      "Translation on Rashi on Kiddushin 14a:3:2"
+    ],
+    "generatedAt": "2026-10-22T06:03:31.884Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בישראל בית חלוץ</strong> - הכי משמע בישראל ראויה להביא לבית משחלצה:"
+  },
+  "Rashi on Kiddushin 14a:4:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14a:4:1",
+      "Translation on Rashi on Kiddushin 14a:4:1",
+      "Rashi on Kiddushin 14a:1:1",
+      "Rashi on Kiddushin 14a:2:1",
+      "Rashi on Kiddushin 14a:3:1"
+    ],
+    "generatedAt": "2026-10-22T06:05:29.863Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרי בישראל</strong> - להקים לאחיו שם בישראל:"
+  },
+  "Rashi on Kiddushin 14a:6:1": {
+    "dependsOn": [
+      "Translation on Rashi on Kiddushin 14a:6:1",
+      "Steinsaltz on Kiddushin 14a:6",
+      "Deuteronomy 25:5"
+    ],
+    "generatedAt": "2026-10-22T06:08:22.378Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהיא בלאו</strong> - לשוק לא תהיה אשת המת החוצה לאיש זר:"
+  },
+  "Rashi on Kiddushin 14a:7:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14a:7:1"
+    ],
+    "generatedAt": "2026-10-22T06:13:08.925Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה לאשת איש</strong> - הנתרת ע\"י מיתת הבעל:"
+  },
+  "Rashi on Kiddushin 14a:8:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14a:8:1"
+    ],
+    "generatedAt": "2026-10-22T06:15:50.264Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שכן אוסרה מתירה</strong> - שהרי בעלה הוא האוסרה לפיכך הוא מתירה במיתתו אבל יבמה דקידושי דבעל קאסרי לה היאך תהא מיתת היבם מתירתה:"
+  },
+  "Rashi on Kiddushin 14a:8:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14a:8:1",
+      "Rashi on Kiddushin 14a:8:2"
+    ],
+    "generatedAt": "2026-10-22T06:18:56.971Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא נמי</strong> - כשמת יבם נמצא אוסרה מתירה דאי לאו יבם מכי מיית הבעל אישתריא לה:"
+  },
+  "Tosafot on Kiddushin 14a:10:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14a:10:1",
+      "Tosafot on Kiddushin 14a:10:2",
+      "Steinsaltz on Kiddushin 14a:10"
+    ],
+    "generatedAt": "2026-10-22T06:34:56.918Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 14a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותהא יבמה יוצאת בגט מק\"ו</strong> - תימה מה לאשת איש שכן נקנית בשטר ולכך דין הוא שתצא בשטר אבל יבמה לא וכי תימא דלא פרכינן מהכנסה להוצאה הא לעיל <span class=\"parenthesized\">(קידושין דף ה:)</span> פרכינן מה לשטר שכן מוציא ומש\"ה דין הוא שמכניס וכמו כן נאמר עתה להפך דכיון שמכניס דין הוא שמוציא ואומר הר\"מ דעביד ק\"ו מיבם ויבמתו וקורא לה אשת איש דכתיב <span class=\"parenthesized\">(דברים כ״ה:ה׳)</span> ולקחה לו לאשה כיון שלקחה נעשית כאשתו לכל דבר להיות יוצאה בגט אע\"פ שאינה נקנית בשטר:"
+  },
+  "Tosafot on Kiddushin 14a:10:2": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 14a:10:1"
+    ],
+    "generatedAt": "2026-10-22T06:37:54.266Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 14a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר קרא ככה עיכובא</strong> - וא\"ת מנא לן דאתיא ככה למעוטי יבמה מגט דילמא אתי למעוטי מיתת היבם שלא תהא מותרת במיתת היבם וי\"ל דסברא הוא דככה יעשה לא ממעט אלא יציאות דבידי אדם דהיינו גט דומיא דחליצה דתלו בעשיה אבל יציאה דבידי שמים דהוי ממילא כגון מיתה לא ממעט:"
+  },
+  "Tosafot on Kiddushin 14a:14:1": {
+    "dependsOn": [
+      "Kiddushin 14a:14",
+      "Tosafot on Yoma 40b:10:1",
+      "Yoma 60a:11",
+      "Yoma 60a:12",
+      "Yoma 60b:1",
+      "Yoma 60b:2",
+      "Yoma 60b:3"
+    ],
+    "generatedAt": "2026-10-22T07:16:57.469Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 14a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא לאו הכי דרשינן ק\"ו אע\"ג דכתיב ביה חוקה</strong> - תימה הא בפרק טרף בקלפי <span class=\"parenthesized\">(יומא דף מא.)</span> מוקמי הא ברייתא כרבי יהודה משום דסתם סיפרא רבי יהודה ושמעינן ליה לר' יהודה בפרק הוציאו לו <span class=\"parenthesized\">(יומא דף ס:)</span> דאמר לא כתיב חוקה אלא בדברים הנעשים בבגדי לבן בפנים והגרלה הוי בדברים הנעשים בבגדי לבן בחוץ א\"כ מאי פריך לעיל והרי יוה\"כ דכתיב ביה גורל וחוקה והא לא כתיב חוקה בהגרלה כדפי' וי\"ל דפריך הכא משום דכתיב אשר עלה תרי זמני אלמא דריש ק\"ו אע\"ג דכתיב עיכובא והרב רבינו שמשון מקוצי תירץ מדאיצטריך ליה לר' יהודה וזאת לגלות דלא קיימא חוקה אלא אדברים הנעשים בבגדי לבן בפנים ש\"מ דדרשינן ק\"ו אע\"ג <span class=\"parenthesized\">(היכא)</span> דכתיב חוקה דאי לא דרשינן ק\"ו היכא דכתיב חוקה לישתוק מזאת ואנא ידענא דחוקה לא כתיב אדברים הנעשים בחוץ דהיינו הגרלה מדאצטריך ועשהו חטאת למידרש הגורל עושהו חטאת ואין השם עושהו חטאת מכלל דלא קיימא חוקה אדברים הנעשים בחוץ דהיינו הגרלה דאי קאי חוקה על דברים הנעשים בבגדי לבן בחוץ אמאי איצטריך ועשהו חטאת למעוטי קריאת שם הא לא דרשינן ק\"ו היכא דכתיב עיכובא והיכי תיסק אדעתין לרבות קריאת שם מק\"ו אלא ש\"מ דדרשינן ק\"ו אפילו היכא דכתיב חוקה ולהכי איצטריך ועשהו ואפילו אי כתיבה חוקה בחוץ ואיצטריך נמי וזאת לגלויי דלא כתיבה חוקה בדברים הנעשים בבגדי לבן בחוץ דליכא למימר מדאיצטריך ועשהו ידעינן ליה כיון דדרשינן ק\"ו אפילו היכא דכתיב חוקה:"
+  },
+  "Tosafot on Kiddushin 14a:7:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 14a:7:1"
+    ],
+    "generatedAt": "2026-10-22T06:14:42.459Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 14a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא נמי יוצאה בחליצה</strong> - כיון דחליצה במקום גט לא חשיב לה פירכא:"
+  },
+  "Tosafot on Kiddushin 14a:9:1": {
+    "dependsOn": [
+      "Kiddushin 14a:9",
+      "Chidushei Halachot on Kiddushin 14a:4",
+      "Chokhmat Shlomo on Kiddushin 14a:1"
+    ],
+    "generatedAt": "2026-10-22T06:27:09.122Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 14a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותהא אשת איש יוצאה בחליצה</strong> - וא\"ת איכא למיפרך מה ליבמה שכן בלאו ולכן דין הוא שתצא בקל תאמר באשת איש שהיא במיתה וי\"ל כיון שמצינו שחליצה מפקע' איסורא אין לחלק בין חמור לקל והכי נמי אמרינן ביבמות <span class=\"parenthesized\">(דף קיט.)</span> וכי מאחר שהתרתה מה לי איסור לאו מה לי איסור כרת ואע\"ג דעבדינן מינה לעיל ק\"ו ומה אשת איש שהיא במיתה כו' לא דמי דהתם אנו רוצים להשוותם זה לזה ולימא דבכולהו אשה מותרת לאחר מיתה בין דבעל בין דיבם אבל אין לומר כשמפקיע את הקל לא יפקיע את החמור דאדרבה נאמר עתה להפך הוא הדין את החמור דאין לחלק בין לחמור בין לקל כדפירשתי:"
+  }
+}

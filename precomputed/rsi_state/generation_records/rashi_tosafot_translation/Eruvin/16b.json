@@ -1,0 +1,537 @@
+{
+  "Rashi on Eruvin 16b:10:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 16b:10:1",
+      "Eruvin 16b:8",
+      "Eruvin 16b:9",
+      "Eruvin 16b:11",
+      "Eruvin 16b:12",
+      "Rashi on Eruvin 16b:8:1",
+      "Rashi on Eruvin 16b:12:1",
+      "Chokhmat Shlomo on Eruvin 16b:3",
+      "Eruvin 16b:13"
+    ],
+    "generatedAt": "2026-10-21T17:22:23.789Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומקיפין בקנים</strong> - נעוצים ועומדים זו היא מחיצה של שתי אבל של חבלים הויא מחיצה של ערב:"
+  },
+  "Rashi on Eruvin 16b:11:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 16b:11:1",
+      "Eruvin 16b:8",
+      "Eruvin 16b:9",
+      "Eruvin 16b:10",
+      "Steinsaltz on Eruvin 16b:11:1",
+      "Steinsaltz on Eruvin 16b:11"
+    ],
+    "generatedAt": "2026-10-21T17:24:56.131Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשיירא דברו</strong> - הקילו אצלו שאינן צריכים אלא או שתי או ערב שתי כגון קנים ערב כגון חבלים אבל ליחיד לא הקילו עד שיהא בה שתי וערב:"
+  },
+  "Rashi on Eruvin 16b:12:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 16b:12:1",
+      "Eruvin 16b:8",
+      "Eruvin 16b:12",
+      "Rashi on Eruvin 16b:12:2",
+      "Rashi on Eruvin 16b:11:1",
+      "Rashi on Eruvin 16b:3:1",
+      "Steinsaltz on Eruvin 16b:12"
+    ],
+    "generatedAt": "2026-10-21T17:27:32.633Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל מחיצה שאינה כו'</strong> - רבי יוסי פליג עליה דאבוה דמתניתין וקאמר דאפילו לשיירא בעינן שתי וערב:"
+  },
+  "Rashi on Eruvin 16b:12:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 16b:12:2",
+      "Rashi on Eruvin 16b:12:1"
+    ],
+    "generatedAt": "2026-10-21T17:28:32.901Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחד משני דברים</strong> - או שתי או ערב:"
+  },
+  "Rashi on Eruvin 16b:13:1": {
+    "dependsOn": [
+      "Eruvin 16b:8",
+      "Eruvin 16b:9",
+      "Eruvin 16b:10",
+      "Eruvin 16b:11",
+      "Eruvin 16b:12",
+      "Eruvin 15b:10",
+      "Rashi on Eruvin 15b:10:1",
+      "Rashi on Eruvin 16b:13:2",
+      "Rashi on Eruvin 16a:12:2",
+      "Rashi on Eruvin 16a:13:2"
+    ],
+    "generatedAt": "2026-10-21T17:32:20.026Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי אמרו עומד מרובה על הפרוץ בשתי הוי עומד</strong> - אע\"ג דאיכא פרצות כדתנן לעיל ולא יהו פרצות יתירות על הבנין וסתם כלי בהמה של שתי הוא שעומד על גבי קרקע:"
+  },
+  "Rashi on Eruvin 16b:13:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 16b:13:1",
+      "Rashi on Eruvin 16b:13:2",
+      "Eruvin 16b:15",
+      "Rashi on Eruvin 16b:8:1",
+      "Rashi on Eruvin 16b:8:2",
+      "Rashi on Eruvin 16b:10:1"
+    ],
+    "generatedAt": "2026-10-21T17:34:49.560Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בערב מאי</strong> - מחבלים דמתני' ליכא למילף הכשירה דהתם כולו עומד הוא דכלבוד דמי:"
+  },
+  "Rashi on Eruvin 16b:15:1": {
+    "dependsOn": [
+      "Eruvin 16b:15"
+    ],
+    "generatedAt": "2026-10-21T17:36:04.792Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעביד</strong> - אויר האחד פחות משלשה וחבל משהו וכן שני דהוי להו ששה עומד והאויר השלישי פחות מארבעה וחבל משהו ותיתכשר פירצת הד' בעומד של ששה:"
+  },
+  "Rashi on Eruvin 16b:16:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 16b:16:1",
+      "Eruvin 16b:16",
+      "Rashi on Eruvin 16b:15:1",
+      "Rashi on Eruvin 16b:17:1",
+      "Rashi on Eruvin 16b:1:1",
+      "Rashi on Eruvin 16b:1:2",
+      "Rashi on Eruvin 16b:8:1",
+      "Ritva on Eruvin 16b:16:1",
+      "Eruvin 16b:3",
+      "Rashi on Eruvin 16b:3:1"
+    ],
+    "generatedAt": "2026-10-21T17:39:54.517Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהגדיים בוקעין בה</strong> - ואפילו למעלה ממנו עומד י' טפחים שלימין הא קיימא לן מחיצה תלויה אינה מתרת:"
+  },
+  "Rashi on Eruvin 16b:17:1": {
+    "dependsOn": [
+      "Eruvin 16b:17",
+      "Rashi on Eruvin 16b:17:1",
+      "Rashi on Eruvin 16b:17:2",
+      "Rashi on Eruvin 16b:17:3",
+      "Rashi on Eruvin 16b:16:1",
+      "Rashi on Eruvin 16b:15:1",
+      "Rashi on Eruvin 16b:8:2"
+    ],
+    "generatedAt": "2026-10-21T17:41:54.927Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עילאי</strong> - באויר השלישי שהוא עליון:"
+  },
+  "Rashi on Eruvin 16b:17:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 16b:17:1",
+      "Rashi on Eruvin 16b:17:2",
+      "Rashi on Eruvin 16b:17:3",
+      "Rashi on Eruvin 16b:15:1",
+      "Eruvin 16b:16",
+      "Rashi on Eruvin 16b:16:1"
+    ],
+    "generatedAt": "2026-10-21T17:43:39.021Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אתי אוירא</strong> - דמן החבל ולרקיע:"
+  },
+  "Rashi on Eruvin 16b:17:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 16b:17:1",
+      "Rashi on Eruvin 16b:17:2",
+      "Rashi on Eruvin 16b:17:3",
+      "Eruvin 16b:17",
+      "Rashi on Eruvin 16b:8:1",
+      "Rashi on Eruvin 16b:8:2",
+      "Rashi on Eruvin 16b:10:1",
+      "Rashi on Eruvin 16b:12:1"
+    ],
+    "generatedAt": "2026-10-21T17:45:11.384Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:17:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודהאי גיסא</strong> - שממנו ולאמצעי דהוי נמי אויר כיון דהוי יותר משלשה ומבטיל ליה לחבל ואין כאן אלא ו' תחתונים:"
+  },
+  "Rashi on Eruvin 16b:18:1": {
+    "dependsOn": [
+      "Eruvin 16b:18",
+      "Rashi on Eruvin 16b:16:1",
+      "Rashi on Eruvin 16b:17:1",
+      "Rashi on Eruvin 16b:17:2",
+      "Rashi on Eruvin 16b:17:3",
+      "Tosafot on Eruvin 16b:18:1"
+    ],
+    "generatedAt": "2026-10-21T17:46:37.372Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי מוקי לה באמצעי</strong> - אין כאן עומד מרובה על הפרוץ אלא אם כן תצרף שתי רוחות לבטלו:"
+  },
+  "Rashi on Eruvin 16b:19:1": {
+    "dependsOn": [
+      "Eruvin 16b:19",
+      "Rashi on Eruvin 16b:19:1",
+      "Rashi on Eruvin 16b:19:2",
+      "Rashi on Eruvin 16b:19:3",
+      "Rashi on Eruvin 16b:18:1",
+      "Rashi on Eruvin 16b:17:1",
+      "Rashi on Eruvin 16b:17:2",
+      "Rashi on Eruvin 16b:17:3"
+    ],
+    "generatedAt": "2026-10-21T17:50:41.269Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא</strong> - כיון דלא משכחת לה רב המנונא הכי קמיבעיא ליה:"
+  },
+  "Rashi on Eruvin 16b:19:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 16b:19:1",
+      "Rashi on Eruvin 16b:19:2",
+      "Rashi on Eruvin 16b:19:3"
+    ],
+    "generatedAt": "2026-10-21T17:53:02.050Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושבק בה ד'</strong> - שלימין למעלה ומשהו למטה:"
+  },
+  "Rashi on Eruvin 16b:19:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 16b:19:1",
+      "Rashi on Eruvin 16b:19:2",
+      "Eruvin 16b:19",
+      "Rashi on Eruvin 16b:17:1",
+      "Rashi on Eruvin 16b:17:2",
+      "Rashi on Eruvin 16b:17:3",
+      "Steinsaltz on Eruvin 16b:19",
+      "Rashba on Eruvin 16b:5",
+      "Eruvin 16b:16",
+      "Rashi on Eruvin 16b:20:1",
+      "Rashi on Eruvin 16b:18:1"
+    ],
+    "generatedAt": "2026-10-21T17:56:43.805Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:19:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואוקמיה</strong> - להך גיסא דמשהו פחות מג' סמוך לקרקע דהשתא הוה ליה עומד מרובה על הפרוץ מרוח אחת ואוירא דהאי גיסא ודהאי גיסא נמי ליכא למימר הואיל ועומד מרובה על האויר דתותיה מיניה:"
+  },
+  "Rashi on Eruvin 16b:1:1": {
+    "dependsOn": [
+      "Eruvin 16b:1",
+      "Rashi on Eruvin 16b:1:2",
+      "Rashi on Eruvin 16a:17:1",
+      "Rashi on Eruvin 16a:17:2",
+      "Eruvin 16b:8",
+      "Rashi on Eruvin 16a:18:1",
+      "Rashi on Eruvin 16a:8:1",
+      "Eruvin 16a:4",
+      "Eruvin 16a:5",
+      "Rashi on Eruvin 16b:8:1",
+      "Rashi on Eruvin 16b:8:2"
+    ],
+    "generatedAt": "2026-10-21T17:08:40.058Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אתאן לרשב\"ג וכו'</strong> - כלומר עד ד' ולא ד' בכלל דהא תנא בבא אחריתי כל שהוא ד' ומד' עד י' אמות. אתאן לרשב\"ג דקא מפליג נמי בין פחות מד' לד':"
+  },
+  "Rashi on Eruvin 16b:1:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 16b:1:1",
+      "Eruvin 16b:1",
+      "Rashi on Eruvin 16b:8:1",
+      "Rashi on Eruvin 16b:8:2"
+    ],
+    "generatedAt": "2026-10-21T17:11:23.940Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג דאי רבנן מג' ועד ד' ג' וד' חד הוא</strong> - מג' ועד ד' בתמיה היכי מפליג ד' מג' דקתני עד ולא עד בכלל דתני סיפא כל שהוא ד' כו' הא לרבנן ג' וד' חד הוא:"
+  },
+  "Rashi on Eruvin 16b:20:1": {
+    "dependsOn": [
+      "Eruvin 16b:20",
+      "Rashi on Eruvin 16b:20:2",
+      "Eruvin 16b:18",
+      "Eruvin 16b:13",
+      "Rashi on Eruvin 16b:19:1",
+      "Steinsaltz on Eruvin 16b:20"
+    ],
+    "generatedAt": "2026-10-21T17:59:52.125Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחיצה תלויה מיבעיא ליה</strong> - מחצלת עשרה שהגביהה מן הקרקע שלשה או יותר מיבעיא ליה לרב המנונא אי מבטל העומד לפרוץ שמתחתיו הואיל ופחות ממנו או לא:"
+  },
+  "Rashi on Eruvin 16b:20:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 16b:20:1",
+      "Rashi on Eruvin 16b:19:1",
+      "Rashi on Eruvin 16b:19:2",
+      "Rashi on Eruvin 16b:19:3"
+    ],
+    "generatedAt": "2026-10-21T18:03:52.377Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:20:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא במים</strong> - להתיר למלאות כגון גזוזטרא שהיא למעלה מן המים בפרק כיצד משתתפין <span class=\"parenthesized\">(לקמן עירובין ד' פז:)</span>:"
+  },
+  "Rashi on Eruvin 16b:21:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 16b:21:1",
+      "Rashi on Eruvin 16b:21:2",
+      "Eruvin 16b:21",
+      "Rashi on Eruvin 16a:1:1",
+      "Rashi on Eruvin 16a:2:1"
+    ],
+    "generatedAt": "2026-10-21T18:06:23.371Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל מחיצות שבת</strong> - בהנך מחיצות רעועות שהן דשתי או דערב קאמר שהתירום לרבים ע\"י הדחק:"
+  },
+  "Rashi on Eruvin 16b:21:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 16b:21:1"
+    ],
+    "generatedAt": "2026-10-21T18:07:51.543Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:21:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא התירום ליחיד</strong> - אי הקיף בהן יותר מבית סאתים ואף על גב שהוקף לדירה שהרי לדור בהן בלילי שבת הקיפום מערב שבת הא בית סאתים מיהא שרי:"
+  },
+  "Rashi on Eruvin 16b:22:1": {
+    "dependsOn": [
+      "Eruvin 16b:22",
+      "Rashi on Eruvin 16b:21:1",
+      "Rashi on Eruvin 16b:21:2",
+      "Eruvin 16b:8",
+      "Rashi on Eruvin 16b:17:1",
+      "Rashi on Eruvin 16b:18:1",
+      "Rashi on Eruvin 16b:19:1",
+      "Rashi on Eruvin 16b:11:1",
+      "Rashi on Eruvin 16b:12:1",
+      "Rashi on Eruvin 16b:22:1",
+      "Rashi on Eruvin 16b:1:1",
+      "Rashi on Eruvin 16b:8:1"
+    ],
+    "generatedAt": "2026-10-21T18:11:05.913Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליתן להן כל צרכן</strong> - דהא דקאמר רבי יהודה בשיירא דברו ולא ליחיד ליתן לו כל צרכו בהנך מחיצות קאמר אבל בית סאתים ודאי יהבינן ליה הואיל ולדירה הקיפה ובהא שיירא עדיפא. דיהבינן להו כל צרכן:"
+  },
+  "Rashi on Eruvin 16b:24:1": {
+    "dependsOn": [
+      "Eruvin 16b:24",
+      "Rashi on Eruvin 16b:24:1",
+      "Rashi on Eruvin 16b:24:2",
+      "Steinsaltz on Eruvin 16b:24",
+      "Rashi on Eruvin 16b:8:1",
+      "Rashi on Eruvin 16b:8:2"
+    ],
+    "generatedAt": "2026-10-21T18:19:05.631Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לחבלים</strong> - מותר בהיקף חבלים אע\"פ שאין כאן אלא ערב:"
+  },
+  "Rashi on Eruvin 16b:24:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 16b:24:2",
+      "Rashi on Eruvin 16b:24:1"
+    ],
+    "generatedAt": "2026-10-21T18:20:39.341Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:24:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נותנים לו בית סאתים</strong> - במחיצה זו אבל במחיצה מעלייתא כמה דבעי:"
+  },
+  "Rashi on Eruvin 16b:25:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 16b:25:1"
+    ],
+    "generatedAt": "2026-10-21T18:21:56.363Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:25:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא יהא בית סאתים פנוי</strong> - שלא יקיפו יותר מכדי צרכן בית סאתים:"
+  },
+  "Rashi on Eruvin 16b:26:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 16b:26:1",
+      "Eruvin 16b:26",
+      "Rashi on Eruvin 16b:24:2",
+      "Rashi on Eruvin 16b:25:1",
+      "Rashi on Eruvin 16b:21:2",
+      "Rashi on Eruvin 16b:22:1"
+    ],
+    "generatedAt": "2026-10-21T18:29:50.092Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:26:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליתן להם כל צרכן</strong> - הא דקאמר רבי יוסי דמתני' דאינה מחיצה אינה מחיצה לכל צרכן אבל מחיצה היא לבית סאתים לאחד ולבית שש לשיירא:"
+  },
+  "Rashi on Eruvin 16b:3:1": {
+    "dependsOn": [
+      "Eruvin 16b:3",
+      "Rashi on Eruvin 16b:1:1",
+      "Rashi on Eruvin 16b:1:2",
+      "Rashi on Eruvin 16b:8:1",
+      "Rashi on Eruvin 16b:11:1"
+    ],
+    "generatedAt": "2026-10-21T17:12:54.562Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הני מילי למעלה</strong> - כעין קורה:"
+  },
+  "Rashi on Eruvin 16b:8:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 16b:8:1",
+      "Eruvin 16b:8",
+      "Rashi on Eruvin 16b:8:2",
+      "Eruvin 15b:10"
+    ],
+    "generatedAt": "2026-10-21T17:17:09.789Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקיפין ג' חבלים</strong> - אשיירא שחנתה בבקעה קאי:"
+  },
+  "Rashi on Eruvin 16b:8:2": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Eruvin 16b:2",
+      "Rashi on Eruvin 16b:8:1",
+      "Eruvin 16b:9"
+    ],
+    "generatedAt": "2026-10-21T17:18:42.339Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זה למעלה מזה</strong> - על גבי יתדות סביב מן התחתון לקרקע פחות מג' והוי כולו עומד דכלבוד דמי וממנו לאמצעי פחות מג' הרי ששה עומד פחות ב' משהויין בשני האוירין ומאמצעי לעליון פחות משלשה הרי בשלשה אוירין תשעה עומד פחות שלשה משהויין:"
+  },
+  "Rashi on Eruvin 16b:9:1": {
+    "dependsOn": [
+      "Eruvin 16b:9",
+      "Rashi on Eruvin 16b:8:1",
+      "Rashi on Eruvin 16b:8:2",
+      "Rashi on Eruvin 16b:15:1"
+    ],
+    "generatedAt": "2026-10-21T17:20:16.981Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 16b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיעור עובי החבלים יותר על טפח</strong> - שלשה משהויין כדי שיהו הכל עשרה טפחים:"
+  },
+  "Tosafot on Eruvin 16b:18:1": {
+    "dependsOn": [
+      "Eruvin 16b:18",
+      "Eruvin 16b:15",
+      "Rashi on Eruvin 16b:18:1",
+      "Chidushei Halachot on Eruvin 16b:1",
+      "Maharam on Eruvin 16b:1"
+    ],
+    "generatedAt": "2026-10-21T17:48:53.012Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 16b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי מוקי לה בי מיצעי הוה ליה עומד מרובה על הפרוץ מב' רוחות</strong> - ולא הוה ליה עומד משום דאתי אוירא דהאי גיסא ודהאי גיסא ומבטל ליה לעילאי וקשה להשר מקוצי דאכתי נעביד פחות מג' וחבל משהו ופחות מג' וחצי וחבל משהו ופחות מג' וחבל חצי טפח ומשהו ולמה לי עוביו יתר על טפח ושמא בענין זה אתי למיטעי:"
+  },
+  "Tosafot on Eruvin 16b:6:1": {
+    "dependsOn": [
+      "Chullin 29a:1-15",
+      "Tosafot on Chullin 29a:6:1",
+      "Chullin 28b:16",
+      "Eruvin 15b:12"
+    ],
+    "generatedAt": "2026-10-21T17:15:13.045Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 16b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והלכתא כרב פפא</strong> - אין לתמוה דהכא קי\"ל פרוץ כעומד מותר ובפ\"ב דחולין <span class=\"parenthesized\">(ד' כט.)</span> מסיק לכ\"ע מחצה על מחצה אינו כרוב ומייתי עלה ההיא דתנור והכא לא מייתי לה ושמא יש לחלק בין מחיצות לאיסור וטומאה:"
+  }
+}

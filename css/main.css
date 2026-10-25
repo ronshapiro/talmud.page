@@ -39,6 +39,11 @@
     --commentary-header-orange: rgb(255, 110, 64);
     --commentary-header-blue: rgb(68,138,255);
     --commentary-header-gray: gray;
+    --double-click-hint-glass-bg: rgba(70, 90, 120, 0.12);
+    --double-click-hint-glass-border: rgba(70, 90, 120, 0.28);
+    --double-click-hint-core-bg: rgba(60, 80, 110, 0.45);
+    --double-click-hint-ripple: rgba(70, 90, 120, 0.25);
+    --double-click-hint-shadow: rgba(0, 0, 0, 0.08);
 }
 
 @media only screen and (min-width: 720px) {
@@ -213,9 +218,13 @@ items. */
     font-family: "Taamey David", "Times New Roman", serif;
     line-height: calc(1.7em * var(--font-size-multiplier));
 }
-.hebrew-emphasis, .commentaryRow .parenthesized {
+.hebrew-emphasis, .commentaryRow .parenthesized, .commentaryRow .explanation {
     font-family: "Fira Light";
     font-size: 14px;
+}
+
+abbr[title] {
+    cursor: help;
 }
 
 .rashi-quotation {
@@ -942,4 +951,171 @@ h2, .title, .titleHebrew {
     display: flex;
     gap: 8px;
     margin-top: 2px;
+}
+
+.table-cell.has-double-click-hint {
+    position: relative;
+}
+
+.double-click-hint-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    opacity: 0;
+}
+
+.double-click-hint-overlay.is-pulsating {
+    opacity: 1;
+}
+
+.double-click-hint-dot {
+    position: relative;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--double-click-hint-glass-bg);
+    border: 1.5px solid var(--double-click-hint-glass-border);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 0 2px 8px var(--double-click-hint-shadow), inset 0 1px 1px rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.double-click-hint-overlay.is-pulsating .double-click-hint-dot {
+    animation: double-tap-dot-pulse 0.95s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.double-click-hint-core {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--double-click-hint-core-bg);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+}
+
+.double-click-hint-ripple {
+    position: absolute;
+    inset: -2px;
+    border-radius: 50%;
+    border: 1.5px solid var(--double-click-hint-ripple);
+    pointer-events: none;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+.double-click-hint-overlay.is-pulsating .double-click-hint-ripple.ripple-first,
+.double-click-hint-overlay.is-pulsating .double-click-hint-ripple:not(.ripple-second) {
+    animation: double-tap-ripple-first 0.95s cubic-bezier(0.2, 0.8, 0.4, 1) forwards;
+}
+
+.double-click-hint-overlay.is-pulsating .double-click-hint-ripple.ripple-second {
+    animation: double-tap-ripple-second 0.95s cubic-bezier(0.2, 0.8, 0.4, 1) forwards;
+}
+
+@keyframes double-tap-dot-pulse {
+    0% {
+        transform: scale(0.6);
+        opacity: 0;
+    }
+    10% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    16% {
+        transform: scale(0.76);
+        opacity: 1;
+    }
+    28% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    38% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    48% {
+        transform: scale(0.76);
+        opacity: 1;
+    }
+    60% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    70% {
+        transform: scale(1);
+        opacity: 0.95;
+    }
+    100% {
+        transform: scale(0.85);
+        opacity: 0;
+    }
+}
+
+@keyframes double-tap-ripple-first {
+    0% {
+        transform: scale(0.85);
+        opacity: 0;
+    }
+    15% {
+        transform: scale(0.85);
+        opacity: 0;
+    }
+    16% {
+        transform: scale(0.85);
+        opacity: 0.85;
+    }
+    42% {
+        transform: scale(2.2);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(2.2);
+        opacity: 0;
+    }
+}
+
+@keyframes double-tap-ripple-second {
+    0% {
+        transform: scale(0.85);
+        opacity: 0;
+    }
+    47% {
+        transform: scale(0.85);
+        opacity: 0;
+    }
+    48% {
+        transform: scale(0.85);
+        opacity: 0.85;
+    }
+    74% {
+        transform: scale(2.2);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(2.2);
+        opacity: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .double-click-hint-overlay.is-pulsating .double-click-hint-dot,
+    .double-click-hint-overlay.is-pulsating .double-click-hint-ripple {
+        animation: none !important;
+    }
+    .double-click-hint-ripple {
+        display: none;
+    }
+    .double-click-hint-dot {
+        opacity: 0.85;
+    }
 }

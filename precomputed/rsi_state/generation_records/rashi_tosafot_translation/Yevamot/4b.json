@@ -1,4 +1,123 @@
 {
+  "Rashi on Yevamot 4b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T12:56:07.468Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 4b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותכלת עמרא</strong> - מדשש כיתנא דכתי' <span class=\"parenthesized\">(שמות ל״ט:כ״ח)</span> מכנסי בד שש משזר ובד היינו פשתים כדמפרש בבא לו כ\"ג במסכת יומא <span class=\"parenthesized\">(דף עא:)</span> בד דבר העולה בד בבד תכלת עמרא וכן שאר צבעים האמורים בבגדי כהונה ארגמן ותולעת שני שאין בגדי כהונה אלא מצמר ופשתים דכתיב בספר יחזקאל <span class=\"parenthesized\">(מד)</span> ביוה\"כ בגדי פשתים ילבשו ולא יעלה עליהם צמר ש\"מ שעבודות החיצונות יש בהם צמר עם פשתן ולא מין אחר ומדמפרש קרא שש באחד מן המינין שמע מינה שאר המינין צמר היו:"
+  },
+  "Rashi on Yevamot 4b:11:1": {
+    "dependsOn": [
+      "Rashi on Yevamot 4b:11:2",
+      "Yevamot 4b:10",
+      "Yevamot 4b:12",
+      "Yevamot 4b:13",
+      "Yevamot 4b:14",
+      "Rashi on Yevamot 4b:1:1",
+      "Rashi on Yevamot 4b:2:1",
+      "Rashi on Yevamot 4b:6:1",
+      "Rashi on Yevamot 4b:7:1",
+      "Rashi on Yevamot 4b:9:1",
+      "Yevamot 4b:11",
+      "Tosafot on Yevamot 4b:11:1",
+      "Rashi on Yevamot 2b:1:1",
+      "Rashi on Yevamot 3a:1:1",
+      "Rashi on Yevamot 3b:1:1",
+      "Rashi on Yevamot 4a:1:1"
+    ],
+    "generatedAt": "2026-10-21T13:15:51.921Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 4b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סד\"א כדרבא</strong> - אי לא כתב רחמנא צמר ופשתים הוה דרשי' הכנף מין כנף כרבא למימר דלבגד פשתים עשה פשתן ולצמר עשה צמר וצבעי' תכלת אבל כלאים לא קמ\"ל דרשא דסמוכין דאפילו כלאים והכי הוי מסקנא דמילתא אלא דקא מפרש ואזיל מילתי' דרבא:"
+  },
+  "Rashi on Yevamot 4b:11:2": {
+    "dependsOn": [
+      "Rashi on Yevamot 4b:11:1",
+      "Rashi on Yevamot 4b:6:1",
+      "Rashi on Yevamot 4b:7:1",
+      "Rashi on Yevamot 4a:2:1",
+      "Rashi on Yevamot 4b:1:1",
+      "Rashi on Yevamot 4b:2:1",
+      "Rashi on Yevamot 4b:3:1",
+      "Yevamot 4b:11",
+      "Tosafot on Yevamot 4b:11:1",
+      "Steinsaltz on Yevamot 4b:11"
+    ],
+    "generatedAt": "2026-10-21T13:18:27.150Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 4b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כתיב הכנף</strong> - עשה ציצית ממין הכנף ואם טלית של משי עשה ציצית של משי וכתיב צמר ופשתים גדילים תעשה לך דמשמע עשה ציצית מצמר ופשתים:"
+  },
+  "Rashi on Yevamot 4b:13:1": {
+    "dependsOn": [
+      "Yevamot 4b:13",
+      "Rashi on Yevamot 4b:11:1",
+      "Rashi on Yevamot 4b:11:2",
+      "Rashi on Yevamot 4b:1:1",
+      "Rashi on Yevamot 4b:5:1",
+      "Rashi on Yevamot 2a:1:1"
+    ],
+    "generatedAt": "2026-10-21T13:23:10.084Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 4b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא תנא דבי ר' ישמעאל לית ליה דרבא</strong> - דדריש הכנף מין כנף דהא לתנא דבי רבי ישמעאל טלית של שאר מינין אינה חייבת בציצית דהא בגד כתיב ותנא דבי רבי ישמעאל קאמר כל בגד צמר ופשתים:"
+  },
+  "Rashi on Yevamot 4b:14:1": {
+    "dependsOn": [
+      "Yevamot 4b:14",
+      "Rashi on Yevamot 4b:13:1",
+      "Rashi on Yevamot 4b:14:1",
+      "Rashi on Yevamot 4b:14:2",
+      "Rashi on Yevamot 4b:14:3"
+    ],
+    "generatedAt": "2026-10-21T13:29:18.911Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 4b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איצטריך</strong> - צמר ופשתים אע\"ג דלא דריש תנא דבי ר' ישמעאל מין כנף לשאר מינין:"
+  },
+  "Rashi on Yevamot 4b:14:2": {
+    "dependsOn": [
+      "Yevamot 4b:14",
+      "Rashi on Yevamot 4b:14:1",
+      "Rashi on Yevamot 4b:14:2",
+      "Rashi on Yevamot 4b:14:3"
+    ],
+    "generatedAt": "2026-10-21T13:31:42.050Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 4b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סד\"א</strong> - לגבי טלית של צמר ופשתים דריש כי דיוקא דרבא דדריש ציצית מין כנף:"
+  },
+  "Rashi on Yevamot 4b:14:3": {
+    "dependsOn": [
+      "Rashi on Yevamot 4b:14:1",
+      "Rashi on Yevamot 4b:14:2"
+    ],
+    "generatedAt": "2026-10-21T13:34:13.777Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 4b:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והכי אמר רחמנא כו'</strong> - קמ\"ל דרשא דסמוכין למישרי כלאים בציצית:"
+  },
   "Rashi on Yevamot 4b:1:1": {
     "dependsOn": [
       "Yevamot 4b:1",
@@ -68,5 +187,313 @@
       "Rashi on Yevamot 4b:2:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">לא תלבש שעטנז למה לי</strong> - שמע מינה לאפנויי ולמדרש סמוכים:"
+  },
+  "Rashi on Yevamot 4b:3:1": {
+    "dependsOn": [
+      "Rashi on Yevamot 4b:2:1",
+      "Rashi on Yevamot 4b:5:1",
+      "Rashi on Yevamot 4a:1:1",
+      "Rashi on Yevamot 4a:2:1",
+      "Rashi on Yevamot 4a:3:1"
+    ],
+    "generatedAt": "2026-10-21T12:22:53.769Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 4b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואפי' מוכרי כסות</strong> - שאין מתכוונים להנאת חימום:"
+  },
+  "Rashi on Yevamot 4b:5:1": {
+    "dependsOn": [
+      "Yevamot 4b:5",
+      "Rashi on Yevamot 4b:2:1",
+      "Rashi on Yevamot 4b:3:1",
+      "Rashi on Yevamot 4b:6:1",
+      "Rashi on Yevamot 4a:1:1",
+      "Rashi on Yevamot 4a:2:1",
+      "Rashi on Yevamot 4a:3:1",
+      "Rashi on Yevamot 4a:4:1"
+    ],
+    "generatedAt": "2026-10-21T12:28:17.841Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 4b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צמר ופשתים למה לי</strong> - אי לאשמועינן דכלאים צמר ופשתים הוא דקאסר לא צריך דמכדי בכלאים כתיב בגד ותנא דבי ר' ישמעאל כו':"
+  },
+  "Rashi on Yevamot 4b:6:1": {
+    "dependsOn": [
+      "Rashi on Yevamot 4b:6:1",
+      "Rashi on Yevamot 4b:1:1",
+      "Rashi on Yevamot 4b:2:1",
+      "Rashi on Yevamot 4b:5:1",
+      "Rashi on Yevamot 4a:1:1",
+      "Rashi on Yevamot 4a:2:1",
+      "Rashi on Yevamot 4a:3:1"
+    ],
+    "generatedAt": "2026-10-21T12:29:58.613Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 4b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באחד מהם</strong> - גבי נגעים בבגד צמר או בבגד פשתים <span class=\"parenthesized\">(ויקרא יג)</span>:"
+  },
+  "Rashi on Yevamot 4b:7:1": {
+    "dependsOn": [
+      "Rashi on Yevamot 4b:7:1",
+      "Yevamot 4b:7"
+    ],
+    "generatedAt": "2026-10-21T12:31:55.509Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 4b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואכתי איצטריך</strong> - למכתב צמר ופשתים הכא גבי לבישה ואע\"ג דכתיב בגד בהעלאה דמשמע צמר ופשתים דס\"ד כו':"
+  },
+  "Rashi on Yevamot 4b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T12:44:37.332Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 4b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותנא דבי רבי ישמעאל</strong> - דילפינן אליביה כלאים בציצית מדאייתר צמר ופשתים למיסמכיה לגדילים תעשה לך:"
+  },
+  "Rashi on Yevamot 4b:9:2": {
+    "dependsOn": [
+      "Rashi on Yevamot 4b:9:1",
+      "Yevamot 4b:9",
+      "Steinsaltz on Yevamot 4b:9",
+      "Steinsaltz on Yevamot 4b:10",
+      "Rashi on Yevamot 4b:6:1",
+      "Rashi on Yevamot 4b:7:1",
+      "Rashi on Yevamot 4b:2:1",
+      "Rashi on Yevamot 4b:3:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Yevamot 4a:11:1",
+      "Rashi on Yevamot 4a:11:2"
+    ],
+    "generatedAt": "2026-10-21T12:48:15.680Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 4b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טעמא דכתב רחמנא כו' כל בגדים צמר ופשתים הם</strong> - והאי בגדיהם דציצית משמע בין של צמר בין של פשתים ואמר רחמנא עביד ותכלת נמי לפשתים:"
+  },
+  "Tosafot on Yevamot 4b:10:1": {
+    "dependsOn": [
+      "Yevamot 4b:10",
+      "Tosafot on Yevamot 4b:10:1",
+      "Rashi on Yevamot 4b:10:1",
+      "Tosafot on Yevamot 4b:2:1",
+      "Tosafot on Yevamot 4b:7:1",
+      "Tosafot on Yevamot 4b:8:1",
+      "Tosafot on Yevamot 4b:10:2",
+      "Steinsaltz comment #1 on Yevamot 4b:10",
+      "Steinsaltz comment #2 on Yevamot 4b:10",
+      "Steinsaltz on Yevamot 4b:10",
+      "Tosafot on Yevamot 4a:1:1",
+      "Tosafot on Yevamot 4a:2:1"
+    ],
+    "generatedAt": "2026-10-21T12:58:51.278Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 4b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותנא דבי ר' ישמעאל וכו'</strong> - וא\"ת בלא תנא דבי ר' ישמעאל נמי יוכל לדקדק דבגדים משמע כל בגדים דלכולהו אמר רחמנא עביד להו תכלת אלמא בבגדי פשתן נמי שרי תכלת וכ\"ת דה\"א דלאו אכולהו אמר רחמנא דליעבד תכלת השתא נמי נימא דאצמר דוקא אמר רחמנא דליעבד תכלת ולא אפשתים וי\"ל דודאי אי לאו תנא דבי רבי ישמעאל ה\"א דשאר מיני אמר רחמנא דליעבד תכלת ולא אפשתים אבל לתנא דבי רבי ישמעאל דכל בגדים צמר ופשתים משמע דאתרוייהו קאי דאפי' נימא בעלמא דבגד הוי או צמר או פשתים הכא בגדיהם כתב דמשמע תרי:"
+  },
+  "Tosafot on Yevamot 4b:10:2": {
+    "dependsOn": [
+      "Maharam on Yevamot 4b:1"
+    ],
+    "generatedAt": "2026-10-21T13:02:31.332Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 4b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמר רחמנא עביד להו תכלת</strong> - וא\"ת והיכי משמע מהכא דשרי כלאים בציצית נימא דעביד להו תכלת בלא שוע טווי ונוז וי\"ל דחוטי ציצית בעינן שיהא שוע טווי ונוז דדריש בספרי פתיל תכלת טווי ושזור וה\"ה שוע דבעינן ויליף התם לבן מתכלת וסתם בגדים שלהן היו נמי שוע טווי וגם נוזין פירוש שזורים כמו שפי' ר\"ת לקמן <span class=\"parenthesized\">(יבמות ד' ה: ד\"ה עד)</span> נוז שזורי היינו שזורים בסוף הטלית מקום הנחת ציצית כדאמרינן בריש המוצא תפילין <span class=\"parenthesized\">(עירובין צו:)</span> ודלמא אדעתא דשיפתא דגלימא עייפינהו אבל קשיא דאכתי נימא דאמר רחמנא לעביד להו תכלת בלא קשירה דלא הוי כלאים דתוכף תכיפה אחת אין חיבור ובמנחות <span class=\"parenthesized\">(דף לט.)</span> דקדק דקשר עליון דאורייתא מדשרי רחמנא כלאים בציצית ושמעתי בשם ר\"י קלנו' דע\"כ אמר רחמנא ליעביד להו תכלת בענין דהוי כלאים דאי דוקא בלא כלאים א\"כ לישתוק קרא מיחדו ומדאמר רחמנא עביד להו תכלת ידעי דתוכף תכיפה אחת אינו חיבור אלא ודאי בענין דהוי כלאים אמר רחמנא ליעביד תכלת ולא שמעינן להו מהכא מידי אי תוכף תכיפה אחת חיבור אי לא להכי איצטריך יחדו:"
+  },
+  "Tosafot on Yevamot 4b:10:3": {
+    "dependsOn": [
+      "Tosafot on Yevamot 4b:10:2",
+      "Tosafot on Yevamot 4b:10:4",
+      "Tosafot on Yevamot 4b:10:1",
+      "Rashi on Yevamot 4b:10:1",
+      "Chidushei Halachot on Yevamot 4b:2",
+      "Steinsaltz on Yevamot 4b:10",
+      "Tosafot on Yevamot 4b:11:1"
+    ],
+    "generatedAt": "2026-10-21T13:06:17.235Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 4b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותכלת עמרא הוא</strong> - לא היה צריך לכך דבין הוא כיתנא ובין הוא עמרא יכול לדקדק דכלאים בציצית שרי דאמר רחמנא לבגדיהם דהוו צמר ופשתים ליעביד תכלת שהוא או כיתנא או עמרא שאין בבגדי כהונה אלא צמר ופשתים מדכתב בהו בגדיהם אלא האמת אומר:"
+  },
+  "Tosafot on Yevamot 4b:10:4": {
+    "dependsOn": [
+      "Tosafot on Yevamot 4b:10:1",
+      "Tosafot on Yevamot 4b:10:2",
+      "Tosafot on Yevamot 4b:10:3",
+      "Tosafot on Yevamot 4b:10:4",
+      "Rashi on Yevamot 4b:10:1",
+      "Chidushei Halachot on Yevamot 4b:2",
+      "Tosafot on Yevamot 4b:2:1",
+      "Tosafot on Yevamot 4b:7:1",
+      "Tosafot on Yevamot 4b:8:1",
+      "Tosafot on Yevamot 2a:1:1",
+      "Tosafot on Yevamot 3b:1:1",
+      "Steinsaltz comment #3 on Yevamot 4b:10",
+      "Steinsaltz comment #4 on Yevamot 4b:10",
+      "Torah Temimah on Torah, Numbers 15:38:11"
+    ],
+    "generatedAt": "2026-10-21T13:12:07.423Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 4b:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדשש כיתנא תכלת עמרא</strong> - וליכא למימר דתכלת נמי כיתנא אלא צבוע הוא תכלת וארגמן ותולעת שני עמרא דסברא הוא דכל הצבועים מין אחד הוא מדלא חילק בהן אלא בצבע:"
+  },
+  "Tosafot on Yevamot 4b:11:1": {
+    "dependsOn": [
+      "Yevamot 4b:11",
+      "Rashi on Yevamot 4b:11:1",
+      "Rashi on Yevamot 4b:11:2",
+      "Tosafot on Yevamot 4b:13:1"
+    ],
+    "generatedAt": "2026-10-21T13:21:04.805Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 4b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סלקא דעתך אמינא כדרבא</strong> - לאו דוקא דרבא איירי בתר דכתיב צמר ופשתים והשתא איירי אי לא כתב צמר ופשתים אלא כלומר כדיוקא דרבא וה\"ק קרא ועשו להם ציצית על כנפי בגדיהם דלבגדיהם שהם צמר ופשתים עביד ציצית אבל תכלת דבתר הכי לא קאי אבגדים אלא אהכנף מין כנף והמקשה דפריך והא תנא דבי ר' ישמעאל לית ליה דרבא וסבור דכרבא ממש קאמר היה יכול להקשות והא רבא לבתר דכתיב צמר ופשתים קאמר:"
+  },
+  "Tosafot on Yevamot 4b:13:1": {
+    "dependsOn": [
+      "Yevamot 4b:13",
+      "Shabbat 27a:7",
+      "Shabbat 27a:8",
+      "Shabbat 27a:9",
+      "Shabbat 27a:10",
+      "Rashi on Yevamot 4b:13:1",
+      "Gilyon HaShas on Yevamot 4b:1",
+      "Chidushei Halachot on Yevamot 4b:4",
+      "Tosafot on Yevamot 4b:8:1"
+    ],
+    "generatedAt": "2026-10-21T13:26:03.812Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 4b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא תנא דבי ר' ישמעאל לית ליה דרבא</strong> - דליכא למימר דמהכנף מרבה שאר בגדים כדאשכחן בפ' במה מדליקין <span class=\"parenthesized\">(שבת כז. ושם)</span> דמרבה שאר בגדים גבי שרצים מאו בגד דהכנף לאו ריבויא הוא:"
+  },
+  "Tosafot on Yevamot 4b:14:1": {
+    "dependsOn": [
+      "Shabbat 27a:9",
+      "Rashi on Shabbat 27a:9:1",
+      "Tosafot on Shabbat 27a:9:1",
+      "Yevamot 4b:14",
+      "Tosafot on Yevamot 4b:14:2",
+      "Chidushei Halachot on Yevamot 4b:4",
+      "Shabbat 27a:12",
+      "Tosafot on Yevamot 4b:7:1",
+      "Tosafot on Yevamot 4b:8:1"
+    ],
+    "generatedAt": "2026-10-21T13:37:53.108Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 4b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואפילו צמר לפשתים ופשתים לצמר</strong> - משמע הכא דתנא דבי ר' ישמעאל לית ליה דרבא וקשה דבפ' במה מדליקין <span class=\"parenthesized\">(כ\"ז. שם)</span> קאמר הש\"ס הדר ביה רבא מההיא וסבר דאף כל לאתויי שרצים וסבר שפיר כתנא דבי ר' ישמעאל וצ\"ל דסוגיא דהכא כר\"נ בר יצחק דהתם דקאי אף כל לאיתויי ציצית א\"כ הוי דלא כרבא:"
+  },
+  "Tosafot on Yevamot 4b:14:2": {
+    "dependsOn": [
+      "Menachot 40a:5",
+      "Menachot 40a:6",
+      "Tosafot on Menachot 40a:6:1",
+      "Tosafot on Menachot 40a:6:2",
+      "Tosafot on Yevamot 4b:14:1",
+      "Menachot 39b:4",
+      "Rashi on Menachot 39b:4:1",
+      "Chidushei Halachot on Yevamot 4b:4",
+      "Steinsaltz comment #1 on Yevamot 4b:14",
+      "Steinsaltz comment #2 on Yevamot 4b:14",
+      "Rashi on Yevamot 4b:14:1",
+      "Rashi on Yevamot 4b:14:2",
+      "Rashi on Yevamot 4b:14:3",
+      "Tosafot on Yevamot 4b:2:1",
+      "Tosafot on Yevamot 4b:7:1",
+      "Tosafot on Yevamot 4b:8:1",
+      "Tosafot on Yevamot 4b:10:1",
+      "Tosafot on Yevamot 4b:10:2"
+    ],
+    "generatedAt": "2026-10-21T13:47:05.644Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 4b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאפילו צמר לפשתן ופשתן לצמר כו'</strong> - נראה דאפילו שני חוטין לבן של צמר שרי בפשתים כדאמר במנחות אף על גב דאפשר במינו כדקאמר התם מגו דתכלת פטרה לבן נמי פוטר ולבן של פשתים נמי פוטר הצמר על מגו דמגו דלבן של צמר פוטר בפשתים לבן של פשתים נמי פוטר בצמר ודוקא במקום תכלת אבל במקום שאין תכלת אסור כיון דלא כשר במינו דהא במנחות <span class=\"parenthesized\">(דף מ.)</span> אסר סדין בציצית משום קלא אילן ופריך ולא יהא אלא לבן ומשני משום דאפשר במינן כדר\"ל:"
+  },
+  "Tosafot on Yevamot 4b:2:1": {
+    "dependsOn": [
+      "Yevamot 5b:1",
+      "Yevamot 5b:2",
+      "Yevamot 5b:3"
+    ],
+    "generatedAt": "2026-10-21T12:20:46.657Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 4b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכדי כתיב ובגד כלאים וגו'</strong> - ההוא קרא דגדילים לא מצית לאייתורי ולמימר מכדי כתיב פרשת ציצית למאי הילכתא כתביה דכולה איצטריך כדדרשינן לקמן <span class=\"parenthesized\">(יבמות דף ה:)</span> גדילים ארבעה ודרשינן נמי על ד' כנפות ולא על ג' וה' כסותך ולא של אחרים אשר תכסה בה פרט לכסות סומא ולמעט שאין מכסה רובו:"
+  },
+  "Tosafot on Yevamot 4b:7:1": {
+    "dependsOn": [
+      "Tosafot on Yevamot 4b:7:1",
+      "Tosafot on Yevamot 4b:2:1",
+      "Tosafot on Yevamot 4b:8:1",
+      "Rashi on Yevamot 4b:7:1"
+    ],
+    "generatedAt": "2026-10-21T12:39:27.775Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 4b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל לבישה כל תרי מיני אסר רחמנא</strong> - וא\"ת אפילו חד מינא ה\"א דאסור ובלבד שיהא שוע טווי ונוז וי\"ל דשעטנז משמע נמי תערובות:"
+  },
+  "Tosafot on Yevamot 4b:8:1": {
+    "dependsOn": [
+      "Yevamot 4b:8",
+      "Tosafot on Shabbat 27a:11:1",
+      "Shabbat 27a:10",
+      "Shabbat 27a:11",
+      "Chidushei Halachot on Yevamot 4b:1",
+      "Tosafot on Yevamot 4b:2:1",
+      "Tosafot on Yevamot 4b:7:1",
+      "Steinsaltz on Yevamot 4b:8"
+    ],
+    "generatedAt": "2026-10-21T12:43:07.390Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 4b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם כן לשתוק קרא מיניה ותיתי שעטנז שעטנז מהעלא'</strong> - וא\"ת בפ' במה מדליקין <span class=\"parenthesized\">(שבת כז: ושם)</span> קאמר רב פפא אף כל צמר ופשתים דקאמר רבי ישמעאל לאיתויי כלאים וקאמר התם דהא דרב פפא בדותא היא דכלאים צמר ופשתים בהדיא כתב בהו ומאי קושיא והא איצטריך אף כל לאפנויי צמר ופשתים כדקאמר הכא וי\"ל דבמסקנא דנפקא לן הפנאה לרבנן משעטנז לר' ישמעאל נמי תיפוק מהתם ותו לא איצטריך אף כל לאפנויי צמר ופשתים דכלאים:"
   }
 }

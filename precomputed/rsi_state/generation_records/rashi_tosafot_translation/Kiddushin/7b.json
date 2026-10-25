@@ -1,0 +1,278 @@
+{
+  "Rashi on Kiddushin 7b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T20:24:18.868Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 7b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא צריכי שומא</strong> - שישומו אותן שמאים קודם שתקבלם:"
+  },
+  "Rashi on Kiddushin 7b:10:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 7b:10:2",
+      "Rashi on Kiddushin 7b:10:1",
+      "Rashi on Kiddushin 7b:10:3"
+    ],
+    "generatedAt": "2026-10-21T20:25:25.337Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 7b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צריכי שומא</strong> - וכיון שלא שמאום תחלה אינה מקודשת כדמפרש ואזיל:"
+  },
+  "Rashi on Kiddushin 7b:10:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T20:26:36.567Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 7b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכל דהו</strong> - התקדשי לי בהן כמו שהן דלא צריכי שומא דבציר מפרוטה לא שוו:"
+  },
+  "Rashi on Kiddushin 7b:11:1": {
+    "dependsOn": [
+      "Kiddushin 7b:11",
+      "Rashi on Kiddushin 7b:11:1",
+      "Rashi on Kiddushin 7b:11:2"
+    ],
+    "generatedAt": "2026-10-21T20:31:45.048Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 7b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי דאמר</strong> - התקדשי לי בחמשים זוז והרי לך אלו בדמיהם:"
+  },
+  "Rashi on Kiddushin 7b:11:2": {
+    "dependsOn": [
+      "Kiddushin 7b:11",
+      "Rashi on Kiddushin 7b:11:1"
+    ],
+    "generatedAt": "2026-10-21T20:32:48.062Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 7b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושוו חמשין</strong> - מיהו לא שמאוה בקיאים קודם לכך:"
+  },
+  "Rashi on Kiddushin 7b:12:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 7b:12:1"
+    ],
+    "generatedAt": "2026-10-21T20:33:57.683Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 7b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שוה כסף ככסף</strong> - גבי קידושין כסף כתיב ושוה כסף איתרבי ככסף כדאמרינן לקמן ישיב לרבות שוה כסף הלכך כי כסף בעינן דקייץ:"
+  },
+  "Rashi on Kiddushin 7b:1:1": {
+    "dependsOn": [
+      "Kiddushin 7b:1",
+      "Kiddushin 7a:15",
+      "Kiddushin 7a:16"
+    ],
+    "generatedAt": "2026-10-21T19:37:33.481Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 7b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעלי חיים נדחים</strong> - אם נדחו ידחו לעולם ואיכא למ\"ד <span class=\"parenthesized\">(ביומא דף סד.)</span> אין דיחוי אלא בשחוטין אבל בעלי חיים שנדחו חוזרים ונראין ולדידיה קריבה הך בהמה כשחזר ולקח חציה:"
+  },
+  "Rashi on Kiddushin 7b:2:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 7b:2:2",
+      "Rashi on Kiddushin 7b:1:1"
+    ],
+    "generatedAt": "2026-10-21T19:47:32.130Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 7b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דיחוי מעיקרא</strong> - כגון זו שמתחילת הקדישה לא נראית ליקרב ואיכא למ\"ד <span class=\"parenthesized\">(בסוכה דף לג:)</span> דפליג ואמר אין דיחוי אלא בנראה ונדחה:"
+  },
+  "Rashi on Kiddushin 7b:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T19:51:47.727Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 7b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יש דיחוי בדמים</strong> - יש תורת דיחוי בדבר שאינו קדוש אלא לדמיו כגון זו שמתחלה לא הקדישה אלא לדמיה שתמכר ויקדשו דמי חציה שהרי ליקרב לחצאין לא היתה ראויה ואפ\"ה חל עלה תורת דיחוי לדחות מעל המזבח לעולם ולא אמרינן אין דיחוי אלא בדבר שהוקדש לגופו ליקרב:"
+  },
+  "Rashi on Kiddushin 7b:3:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 7b:3:2"
+    ],
+    "generatedAt": "2026-10-21T19:59:09.474Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 7b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פסקה</strong> - והוה ליה כמקדש לחצאין:"
+  },
+  "Rashi on Kiddushin 7b:3:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 7b:3:1",
+      "Rashi on Kiddushin 7b:2:1",
+      "Rashi on Kiddushin 7b:2:2",
+      "Rashi on Kiddushin 7b:4:1",
+      "Rashi on Kiddushin 7b:4:2",
+      "Steinsaltz on Kiddushin 7b:3"
+    ],
+    "generatedAt": "2026-10-21T20:01:47.437Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 7b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מונה והולך הוא</strong> - ורישא דמילתא אמסקנא נמי קאי ולאו לחצאין הוא דהא חצי פרוטה לאו בר תפיסה הוא:"
+  },
+  "Rashi on Kiddushin 7b:4:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 7b:4:2",
+      "Kiddushin 7b:4",
+      "Rashi on Kiddushin 7b:3:1",
+      "Rashi on Kiddushin 7b:3:2"
+    ],
+    "generatedAt": "2026-10-21T20:03:03.370Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 7b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיון דאמר בפרוטה פסקה</strong> - ולא היה תחילת דבורו אלא לחציה וטעה לומר שמקדשין לחצאין:"
+  },
+  "Rashi on Kiddushin 7b:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T20:03:58.608Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 7b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל ביומיה</strong> - הואיל ובדעתיה לגומרו היום:"
+  },
+  "Rashi on Kiddushin 7b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T20:18:05.695Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 7b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשני בני</strong> - והם גדולים ועשאוהו שליח לקדש:"
+  },
+  "Rashi on Kiddushin 7b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T20:21:25.856Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 7b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או דילמא בתך בפרוטה</strong> - דמידע ידע דבבציר מפרוטה לא מקדשה ופרתו לא אמר על פרוטה אלא שתקנה לו כשימשכנה:"
+  },
+  "Rashi on Kiddushin 7b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T20:23:42.529Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 7b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קרקעך בחזקה</strong> - כשאחזיק בה:"
+  },
+  "Tosafot on Kiddushin 7b:10:1": {
+    "dependsOn": [
+      "Translation on Tosafot on Kiddushin 7b:10:1",
+      "Rashi on Kiddushin 7b:10:1",
+      "Rashi on Kiddushin 7b:10:2",
+      "Rashi on Kiddushin 7b:10:3",
+      "Kiddushin 7b:10",
+      "Tosafot on Kiddushin 48a:5:1",
+      "Chidushei Halachot on Kiddushin 7b:4"
+    ],
+    "generatedAt": "2026-10-21T20:29:37.678Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 7b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורב יוסף אמר צריכי שומא</strong> - קודם קידושין קאמר <span class=\"rashi-quotation\">כדפי' בקונטרס</span> ותימה דלקמן פ\"ב <span class=\"parenthesized\">(קידושין דף מח.)</span> תניא גבי התקדשי לי בשטר חוב וחכמים אומרים שמין את הנייר אם יש בו שוה פרוטה מקודשת ומשמע שמין את הנייר אחר קידושין ואע\"ג דמתחלה שומת הנייר לא היתה ידועה ויש לומר דללישנא דאמר בכל דהו כולי עלמא לא פליגי איירי דאמר לה כל דהו וללישנא דבכל דהו נמי פליגי הכי קאמר ואם רוצה לקדשה בשטר שמין את הנייר מתחילה אם יש בו שוה פרוטה מקודשת כלומר אם שמוהו תחילה לאפוקי ממ\"ד מקודשת אע\"פ שאין בו שוה פרוטה מטעם שטר:"
+  },
+  "Tosafot on Kiddushin 7b:1:1": {
+    "dependsOn": [
+      "Translation on Tosafot on Kiddushin 7b:1:1",
+      "Rashi on Kiddushin 7b:1:1",
+      "Kiddushin 7b:1"
+    ],
+    "generatedAt": "2026-10-21T19:43:09.566Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 7b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמע מינה בעלי חיים</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> אם נדחו ידחו לעולם דאיכא למ\"ד אין דיחוי אלא בשחוטין אבל בעלי חיים שנדחו חוזרים ונראים ולדידיה קרבה הך בהמה כשחזר ולקח חציה וש\"מ דיחוי מעיקרא הוי דיחוי פי' כגון זו שמתחילת הקדישה לא נראית ליקרב דאיכא מאן דפליג דאין דיחוי אלא בנראה ונדחה וש\"מ יש דיחוי בדמים פי' יש תורת דיחוי בדבר שאין קדוש אלא לדמיו כגון זו שמתחילה לא הקדישה אלא לדמיה שתמכר ויקדשו דמי חציה שהרי ליקרב לחצאין לא היתה ראויה ואפ\"ה חל עלה תורת דיחוי לדחות מעל המזבח לעולם ולא אמרינן אין דיחוי אלא בדבר שהוקדש לגופו ליקרב וא\"ת למה לי למימר הני תרתי ש\"מ יש דיחוי בדמים ודיחוי מעיקרא והלא אי אפשר לדיחוי מעיקרא שלא יהא דיחוי בדמים ויש לומר דאשכחן דיחוי מעיקרא אע\"ג שקדוש קדושת הגוף כדאמר ר' יוחנן פ' נגמר הדין <span class=\"parenthesized\">(סנהדרין דף מז.)</span> כגון אכל חלב והפריש קרבן ועבד עבודת כוכבים וחזר בו והואיל ונדחה כשעבד עבודת כוכבים משום דזבח רשעים תועבה ידחה ולאו דוקא נקט התם והפריש קרבן תחלה דה\"ה עבד עבודת כוכבים ואח\"כ הפריש קרבן דהשתא הוי דיחוי מעיקרא דהא ר\"י הוא דאית ליה דיחוי מעיקרא הוי דיחוי אלא משום אידך מילתא דרבי יוחנן דמייתי התם אכל חלב והפריש קרבן ונשתטה וחזר ונשתפה דלא מצי למימר דנשתטה תחילה כיון דשוטה הוא לאו בר הפרשה הוא נקט נמי הפריש קרבן ועבד עבודת כוכבים ואשכחן נמי קדושת דמים אע\"ג דלא הוי דיחוי מעיקרא כגון המפריש נקבה לפסחו וילדה זכר והוי קדושת דמים דאין פסח בא מנקבה ולא הוי דיחוי מעיקרא שהרי הולד ראוי להקריב ויש ספרים דגרסינן ש\"מ קדושת דמים מדחה ומפרש דוחה תמורתה מליקרב מדקתני ותמורתה כיוצא בה ולא נהירא דהא בכריתות <span class=\"parenthesized\">(דף כח.)</span> גבי מטמא מקדש עשיר שהפריש קן לכבשתו והעני הואיל ונדחה ידחה גרסינן נמי ש\"מ תלת כמו בשמעתין והתם ע\"כ אין לפרש קדושת דמים מדחה התמורה דאין תמורה בעופות אלא ע\"כ היינו קדושה ואינה קריבה וא\"ת למה ליה לרבי יוחנן לאשמועינן הני תלת מילי הא שמעינן לה בפרק מי שהיה טמא <span class=\"parenthesized\">(פסחים דף צח.)</span> ויש לומר משום דפלוגתא היא בפרק בתרא דכריתות <span class=\"parenthesized\">(שם)</span> דפליגי בה רבי שמעון בן יוחאי ורבנן מייתי דברי האמוראים ויש לתמוה אמאי לא פריך עלה דרבי יוחנן כי היכי דפריך בסוף כריתות <span class=\"parenthesized\">(שם)</span> עלה דרבי אושעיא דאמר מטמא מקדש עשיר שהפריש קן לכבשתו והעני הואיל ונדחה ידחה דפריך עלה מרבי שמעון מההיא דאמר המפריש נקבה [לפסחו קודם הפסח תרעה עד שתסתאב ותמכר ויביא בדמיה פסח] ילדה זכר ירעה עד שיסתאב וימכר [ויביא בדמיו פסח] ורבי שמעון אומר הוא עצמו יקרב פסח ועוד אדפריך עלה מרבי שמעון לסייעה עלה מדרבנן דקאמרי ברישא ירעה עד שיסתאב ועוד כיון דפריך מיחידאה אדפריך מרבי שמעון דברייתא לפרוך מרבי אליעזר דמתני' דתמורה דתנן פרק אלו קדשים <span class=\"parenthesized\">(תמורה דף יח:)</span> גבי מפריש נקבה לעולה וילדה זכר רבי אליעזר אומר הוא עצמו יקרב עולה ויש לומר היינו טעמא דפריך מרבי שמעון משום דבההיא אפילו רבנן מודו דעד כאן לא פליגי רבנן עליה אלא בדבר דשייך ביה קדושת דמים סברי מיגו דנחתא ביה קדושת דמים נחתא ביה נמי קדושת הגוף וקדושת הגוף לא הוי שהרי אין פסח בא מן הנקבה אבל גבי קן אפילו רבנן מודו שהרי אין קדושת דמים חלה בעופות ולמילתא דרבי יוחנן דהכא לא מצי לאותובי משום דהוה כי ההוא דהמפריש נקבה לפסחו ואי הוה מותיב מרבי שמעון הוה אמינא לסיועיה מדרבנן וממילתא דר' אליעזר נמי לא מצי לאותביה משום דהוה יחידאה:"
+  },
+  "Tosafot on Kiddushin 7b:4:1": {
+    "dependsOn": [
+      "Translation on Tosafot on Kiddushin 7b:4:1"
+    ],
+    "generatedAt": "2026-10-21T20:16:04.670Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 7b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חצייך בפרוטה וחצייך בפרוטה</strong> - ואם תאמר אמאי לא יועיל והא לא אמר לעיל דלא פשטו קידושין בכולה אלא משום דאיכא דעת אחרת ואינה מתרצה אלא למה ששומעת אבל אם היינו יודעים שמתרצה בכולה פשטו קידושין בכולה והכא גלי דעתה שמתרצה בכולה וי\"ל דאי הוי מיירי דאמר לה בלשון קידושין אין ה\"נ דהוו פשטו קידושין בכולה אבל הכא איירי דאמר לה הרי את מאורסת לי או בחד מהני לישני דלעיל <span class=\"parenthesized\">(קידושין דף ו.)</span>:"
+  },
+  "Tosafot on Kiddushin 7b:5:1": {
+    "dependsOn": [
+      "Translation on Tosafot on Kiddushin 7b:5:1"
+    ],
+    "generatedAt": "2026-10-21T20:17:11.638Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 7b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חצייך בפרוטה היום וחצייך בפרוטה למחר</strong> - כך אמר לה בפעם אחת:"
+  },
+  "Tosafot on Kiddushin 7b:7:1": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 7b:7:1",
+      "Translation on Tosafot on Kiddushin 7b:7:1"
+    ],
+    "generatedAt": "2026-10-21T20:20:34.704Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 7b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתי בנותיך לשני בני</strong> - אומר ר\"י דמיירי בבנות קטנות דקידושין דאב נינהו דאי בגדולות ואב מקבל קידושין בתורת שליחות פשיטא דבעי פרוטה לכל אחת דשליח לא עדיף ממשלחו דבתר נותן דקאמר לאו דוקא שהרי הנותן ע\"כ בתורת שליחות בניו הוא בא ואי בתר נותן אזלינן הוי בעי שתי פרוטות כאילו הבנים בעצמם מקדשין אבל הבעיא היא אי בתר מקבל אזלינן לגמרי דשמא אין לחוש אלא שיקבל המקבל שוה פרוטה וצ\"ל שבירר לאיזה מהם כגון רחל לראובן ולאה לשמעון דאל\"כ הוי קידושין שלא נמסרו לביאה:"
+  },
+  "Tosafot on Kiddushin 7b:8:1": {
+    "dependsOn": [
+      "Translation on Tosafot on Kiddushin 7b:8:1",
+      "Kiddushin 7b:8"
+    ],
+    "generatedAt": "2026-10-21T20:23:10.287Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 7b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתך ופרתך בפרוטה</strong> - כיון דפרה אין נקנית בכסף שדינא להו בתר בתו והדר בעי בתך וקרקעך דקרקע נקנה בכסף:"
+  }
+}

@@ -22,6 +22,12 @@
     --modal-button-color: var(--mdl-accent-color);
 
     --selection-background-color: #101010cc;
+
+    --double-click-hint-glass-bg: rgba(255, 255, 255, 0.16);
+    --double-click-hint-glass-border: rgba(255, 255, 255, 0.35);
+    --double-click-hint-core-bg: rgba(255, 255, 255, 0.65);
+    --double-click-hint-ripple: rgba(255, 255, 255, 0.4);
+    --double-click-hint-shadow: rgba(0, 0, 0, 0.4);
 }
 
 ::selection {

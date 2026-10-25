@@ -1,0 +1,488 @@
+{
+  "Rashi on Eruvin 15b:10:1": {
+    "dependsOn": [
+      "Eruvin 15b:10",
+      "Rashi on Eruvin 15b:11:1",
+      "Rashi on Eruvin 15b:11:2",
+      "Rashi on Eruvin 15b:10:1",
+      "Steinsaltz on Eruvin 15b:10"
+    ],
+    "generatedAt": "2026-10-21T14:20:39.953Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא יהו פרצות יתירות על הבנין</strong> - ואפילו הן פרצות קטנות פחותות מעשר:"
+  },
+  "Rashi on Eruvin 15b:11:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 15b:11:1",
+      "Rashi on Eruvin 15b:11:2",
+      "Eruvin 15b:11",
+      "Rashi on Eruvin 15b:10:1",
+      "Steinsaltz on Eruvin 15b:11"
+    ],
+    "generatedAt": "2026-10-21T14:23:00.608Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל פרצה שהיא כעשר מותרת מפני שהיא כפתח</strong> - ושיהא בעומד רב עליהן:"
+  },
+  "Rashi on Eruvin 15b:11:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 15b:11:1",
+      "Rashi on Eruvin 16a:6:1"
+    ],
+    "generatedAt": "2026-10-21T14:24:47.853Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יתר מכאן אסורה</strong> - פרצה אחת אוסרת כל ההיקף אפילו כולו עומד כדמפרש בברייתא לקמן:"
+  },
+  "Rashi on Eruvin 15b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T14:25:39.773Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פרוץ כעומד</strong> - כל ההיקף כולו עשוי כן:"
+  },
+  "Rashi on Eruvin 15b:13:1": {
+    "dependsOn": [
+      "Eruvin 15b:13",
+      "Rashi on Eruvin 15b:17:1",
+      "Rashi on Eruvin 15b:17:2",
+      "Rashi on Eruvin 15b:5:1",
+      "Rashi on Eruvin 15b:7:1",
+      "Rashi on Eruvin 15b:11:1",
+      "Rashi on Eruvin 15b:6:1",
+      "Rashi on Eruvin 15b:18:1",
+      "Rashi on Eruvin 15b:19:1",
+      "Eruvin 15b:17",
+      "Eruvin 4a:2",
+      "Eruvin 4a:10",
+      "Sukkah 11a:10"
+    ],
+    "generatedAt": "2026-10-21T14:39:59.088Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אגמריה רחמנא למשה</strong> - כדאמר בריש פירקין <span class=\"parenthesized\">(עירובין דף ד.)</span> מחיצות והלכותיהן הלכה למשה מסיני: שפודין וארוכות המטה פסולין לסכך בהן לפי שכלים הן ומקבלין טומאה ותנן <span class=\"parenthesized\">(סוכה דף יא.)</span> כל דבר המקבל טומאה אין מסככין בו:"
+  },
+  "Rashi on Eruvin 15b:17:1": {
+    "dependsOn": [
+      "[",
+      "Rashi on Eruvin 15b:17:2"
+    ],
+    "generatedAt": "2026-10-21T14:42:01.862Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ארוכות</strong> - אשפונד\"ש:"
+  },
+  "Rashi on Eruvin 15b:17:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 15b:17:1",
+      "Eruvin 15b:17"
+    ],
+    "generatedAt": "2026-10-21T14:43:47.422Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15b:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם יש ריוח ביניהן כמותן</strong> - לסכך שם בסכך כשר אלמא פרוץ כעומד מותר דהא הכא פסול ככשר הוא ושרי וקשיא נמי הא לרב הונא:"
+  },
+  "Rashi on Eruvin 15b:18:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 15b:18:1"
+    ],
+    "generatedAt": "2026-10-21T14:44:38.950Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בנכנס ויוצא</strong> - שיהא שפוד יכול ליכנס וליצא בריוח שבינתים דהשתא הוי ריוח טפי משיעור שפוד ואינו מצומצם:"
+  },
+  "Rashi on Eruvin 15b:19:1": {
+    "dependsOn": [
+      "Eruvin 15b:19",
+      "Rashi on Eruvin 15b:18:1",
+      "Rashi on Eruvin 15b:6:1",
+      "Rashi on Eruvin 15b:11:1"
+    ],
+    "generatedAt": "2026-10-21T14:47:57.792Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא אפשר לצמצם</strong> - דקס\"ד דהאי דקא מתרץ בנכנס ויוצא הכי קמתרץ דכל כמותן בנכנס ויוצא הוא דאין דרך לצמצם לכך פריך והא אפשר לצמצם ולכוין שלא יהא לו ריוח יותר ואנן כמותן תנן:"
+  },
+  "Rashi on Eruvin 15b:1:1": {
+    "dependsOn": [
+      "Eruvin 15b:1"
+    ],
+    "generatedAt": "2026-10-21T13:41:06.774Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי מאיר מטהר</strong> - וטעמא דרבי מאיר מפרש במסכת סוכה בכולהו משום דקסבר כל מחיצה העומדת ברוח חיים אינה מחיצה:"
+  },
+  "Rashi on Eruvin 15b:20:1": {
+    "dependsOn": [
+      "Eruvin 15b:20",
+      "Rashi on Eruvin 15b:18:1",
+      "Rashi on Eruvin 15b:19:1"
+    ],
+    "generatedAt": "2026-10-21T14:53:34.787Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15b:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ר' אמי</strong> - מתניתין בלא צמצם אלא במעדיף ריוח יותר משיעור שפודין וכמותן דקתני כשיעור שפודין בנכנס ויוצא:"
+  },
+  "Rashi on Eruvin 15b:21:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 15b:21:1",
+      "Eruvin 15b:21",
+      "Rashi on Eruvin 15b:20:1",
+      "Rashi on Eruvin 15b:17:1",
+      "Rashi on Eruvin 15b:17:2",
+      "Rashi on Eruvin 15b:18:1"
+    ],
+    "generatedAt": "2026-10-21T14:55:15.706Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15b:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם היו</strong> - שפודין נתונין שתי נותן לסכך כשר ערב דאפילו לא העדיף הריוח איכא סכך כשר טפי דכיון דנותנו ערב אי אפשר לעמוד אלא אם כן ראשו אחד מונח על השפוד מכאן וראשו אחד מונח על השפוד מכאן:"
+  },
+  "Rashi on Eruvin 15b:2:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 15b:2:1",
+      "Jastrow, גּוֹלֵל 1",
+      "Steinsaltz on Eruvin 15b:2",
+      "Rashi on Sukkah 23a:7:2",
+      "Rashi on Eruvin 15b:5:1",
+      "Rashi on Eruvin 15b:7:1",
+      "Rashi on Sanhedrin 47b:5:1",
+      "Tosafot on Sanhedrin 47b:5:1",
+      "Rashi on Eruvin 15a:1:1",
+      "Sukkah 23a:7",
+      "Chullin 72a:7"
+    ],
+    "generatedAt": "2026-10-21T13:45:15.961Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא גולל לקבר</strong> - כלומר אם עשאו גולל אין שם גולל חל עליו לטמא. גולל הוא כיסוי שנותנין דף על המת:"
+  },
+  "Rashi on Eruvin 15b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T13:47:20.726Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ספר</strong> - וכתב לה ספר כריתות ספר משמע קלף כדכתיב ואני כותב על הספר בדיו והדר קרי ליה מגילה כדכתיב <span class=\"parenthesized\">(ירמיהו ל״ו:כ״ה)</span> אחרי שרף [המלך] את המגילה:"
+  },
+  "Rashi on Eruvin 15b:3:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 15b:3:1",
+      "Rashi on Eruvin 15b:1:1",
+      "Rashi on Eruvin 15b:2:1",
+      "Rashi on Eruvin 15a:2:1",
+      "Rashi on Eruvin 15a:3:1",
+      "Rashi on Eruvin 15a:5:1",
+      "Rashi on Eruvin 14b:5:1",
+      "Rashi on Eruvin 14b:7:1"
+    ],
+    "generatedAt": "2026-10-21T13:49:57.757Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מניין לרבות כל דבר</strong> - שיכתוב הגט עליו: אי הוה כתיב וכתב לה כריתות בספר הוה משמע מגילה אבל השתא דכתיב ספר האי ספר ספירות דברים הוא והכי משמע וכתב לה דברי כריתות אבל לא קבע לו מקום לכותבו וממילא משמע בכל מקום שירצה יכתבנו:"
+  },
+  "Rashi on Eruvin 15b:5:1": {
+    "dependsOn": [
+      "Eruvin 15b:5",
+      "Rashi on Eruvin 15b:5:2",
+      "Rashi on Eruvin 15b:5:3",
+      "Rashi on Eruvin 15b:5:4",
+      "Rashi on Eruvin 15b:5:1",
+      "Rashi on Eruvin 15b:3:1",
+      "Rashi on Eruvin 15b:3:2",
+      "Rashi on Eruvin 15b:1:1",
+      "Rashi on Eruvin 15b:2:1",
+      "Rashi on Eruvin 15b:6:1"
+    ],
+    "generatedAt": "2026-10-21T14:00:39.886Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכתב לה מאי דרשי ביה</strong> - כיון דספר לאו קלף משמע ממילא הא לא קבע ליה קלף ובכל דבר משמע ולמה ליה למיכתב וכתב לרבות כל דבר לכתוב ונתן לה ספר כריתות:"
+  },
+  "Rashi on Eruvin 15b:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T14:02:10.353Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואינה מתגרשת בכסף</strong> - אם נתן לה כסף ואמר התגרשי בו:"
+  },
+  "Rashi on Eruvin 15b:5:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 15b:5:1",
+      "Rashi on Eruvin 15b:5:2",
+      "Rashi on Eruvin 15b:5:3",
+      "Rashi on Eruvin 15b:5:4"
+    ],
+    "generatedAt": "2026-10-21T14:02:47.951Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והיתה לאיש אחר</strong> - היינו קדושין:"
+  },
+  "Rashi on Eruvin 15b:5:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T14:04:43.097Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15b:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה הויה בכסף</strong> - דגמרינן במסכת קידושין <span class=\"parenthesized\">(דף ב.)</span> קיחה קיחה משדה עפרון:"
+  },
+  "Rashi on Eruvin 15b:6:1": {
+    "dependsOn": [
+      "Eruvin 15b:6",
+      "Rashi on Eruvin 15b:5:1",
+      "Rashi on Eruvin 15b:5:2",
+      "Rashi on Eruvin 15b:5:3"
+    ],
+    "generatedAt": "2026-10-21T14:09:57.753Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מספר כריתות</strong> - מדכתיב כריתות סמוך לספר:"
+  },
+  "Rashi on Eruvin 15b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T14:10:34.333Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לדבר הכורת בינו לבינה</strong> - שלא יטיל תנאי בגט שיקשרם יחד אלא דברי הבדלה יהו:"
+  },
+  "Rashi on Eruvin 15b:7:2": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Eruvin 15b:2"
+    ],
+    "generatedAt": "2026-10-21T14:11:41.208Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעולם אין זה כריתות</strong> - דהא כל ימיה קשורה בו שמחמתו היא נמנעת מלשתות יין ותנאי זה תלוי והולך לעולם ואין זה הבדלה אבל מכאן ועד שלשים יום הרי זה כריתות מיד שהרי דברי הבדלה הן לסוף שלשים יום ומותרת מיד לאיש אחר:"
+  },
+  "Tosafot on Eruvin 15b:12:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 15b:3:1",
+      "Tosafot on Eruvin 15b:3:2",
+      "Rashi on Eruvin 15b:12:1",
+      "Tosafot on Chullin 38b:3:1",
+      "Chullin 70a:1",
+      "Chullin 70a:2",
+      "Chullin 70a:3",
+      "Chullin 70a:4",
+      "Chullin 70a:5",
+      "Chullin 70a:6",
+      "Chullin 70a:7",
+      "Chullin 70a:8",
+      "Chullin 70a:9",
+      "Chullin 70a:10",
+      "Tosafot on Bekhorot 17b:2:1",
+      "Tosafot on Eruvin 5b:10:1"
+    ],
+    "generatedAt": "2026-10-21T14:34:53.886Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 15b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פרוץ כעומד</strong> - מכאן משמע דאפשר לצמצם כדפירש' לעיל ומפרק שני דחולין <span class=\"parenthesized\">(ד' לח:)</span> דמוקי קרא דתחת אמו פרט ליתום זה פירש למיתה וזה פירש לחיים ואם אי אפשר לצמצם אמאי איצטריך למעוטי מספיקא הייתי אוסר דילמא מתה אמו והדר ילדתו והוה ליה יוצא דופן אין לדקדק דשבקינן לקרא דדחיק ואיצטריך לשאם יבא אליהו ויאמר ויש להביא ראיה מפרק בהמה המקשה <span class=\"parenthesized\">(חולין דף ע)</span> גבי בעיא דהלכו באיברים אחר הרוב דמוקי לה כגון שיצא חציו ברוב אבר ואם אי אפשר לצמצם מאי קמיבעי ליה ממה נפשך טעון קבורה שמא יצא רובו:"
+  },
+  "Tosafot on Eruvin 15b:19:1": {
+    "dependsOn": [
+      "Eruvin 15b:19",
+      "Rashi on Eruvin 15b:19:1",
+      "Rashi on Eruvin 15b:20:1",
+      "Rashi on Eruvin 15b:21:1",
+      "Rabbeinu Chananel on Eruvin 15b:5",
+      "Rabbeinu Chananel on Eruvin 15b:4",
+      "Sukkah 15a:13",
+      "Sukkah 15a:14",
+      "Sukkah 15a:15",
+      "Tosafot on Sukkah 15a:14:1",
+      "Chidushei Halachot on Eruvin 15b:4",
+      "Maharam on Eruvin 15b:4",
+      "Chokhmat Shlomo on Eruvin 16a:3",
+      "Sukkah 15a:16",
+      "Sukkah 15a:17",
+      "Sukkah 15a:18",
+      "Sukkah 15b:1",
+      "Sukkah 15b:2",
+      "Sukkah 15b:3"
+    ],
+    "generatedAt": "2026-10-21T14:52:20.513Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 15b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רש\"י גריס והא אפשר לצמצם</strong> - פירוש כיון דאפשר לצמצם אית לן למימר כמותו דווקא קאמר אמר רבי אמי במעדיף כלומר מתניתין בלא צמצם וכמותו דקתני ביוצא ונכנס ותימה דאין זה סוגיית הש\"ס דמשני במעדיף ואינו חושש על קושייתו ועוד קשה דפי' בדרבא אם היו נתונין שתי נותנן ערב ואיכא סכך כשר טפי ובפ\"ק דסוכה <span class=\"parenthesized\">(ד' ט:)</span> תנן גבי העושה סוכתו תחת האילן אם היה הסיכוך הרבה מהן או שקצצן כשירה ומוקי לה בגמרא כשחבטן ופ\"ה שם כשעירבן ואין ניכר איזהו פסול ואיזהו כשר ועוד דדוחק הוא דאמוראי מסקי אליבא דמ\"ד פרוץ כעומד אסור דלא קי\"ל הכי ועוד דלא פריך בסמוך כי מוקי נמי ביוצא ונכנס גבי שיירא והא אפשר לצמצם והתם ליכא לשנויי לרבא כי הכא ונראה כגירסת ר\"ח דגריס והא אי אפשר לצמצם שיסתום כל האויר ונמצא שאין הכשר מרובה על האויר ועל הפסול או אפי' כמוהו ופריך לכולי עלמא ומשני ר' אמי במעדיף שבודאי יסתום כל האויר ורבא אמר אפי' תימא שאינו מעדיף אם היו נתונין שתי נותנו ערב ואז נסתם כל האויר אבל אין לפרש דדווקא כעניין זה אהני לרבא ולא במעדיף דגזר דילמא לא יעדיף דבכל הספרים גרסי' בפ\"ק דסוכה <span class=\"parenthesized\">(ד' טו:)</span> רבא אמר אפי' תימא בשאינו מעדיף:"
+  },
+  "Tosafot on Eruvin 15b:3:1": {
+    "dependsOn": [
+      "Kiddushin 21b:5",
+      "Kiddushin 21b:7",
+      "Tosafot on Eruvin 15b:3:2",
+      "Tosafot on Eruvin 15b:4:1",
+      "Tosafot on Eruvin 15b:5:1"
+    ],
+    "generatedAt": "2026-10-21T13:52:05.366Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 15b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תלמוד לומר וכתב לה מכל מקום</strong> - וא\"ת ואימא וכתב לה כלל ספר פרט אין בכלל אלא מה שבפרט ספר אין מידי אחרינא לא וי\"ל ונתן בידה חזר וכלל אף על גב דלא מייתי בברייתא אלא כללא קמא אין לחוש דכה\"ג איכא בקדושין בפ\"ק <span class=\"parenthesized\">(ד' כא:)</span> דקתני בברייתא אין לי אלא מרצע הסול והסירא מנין ת\"ל ולקחת כל דבר הנקח ביד ומשמע בתר הכי דמכלל ופרט וכלל דריש דקאמר ונתת באזנו חזר וכלל:"
+  },
+  "Tosafot on Eruvin 15b:3:2": {
+    "dependsOn": [
+      "Tosafot on Eruvin 15b:3:1",
+      "Chokhmat Shlomo on Eruvin 15b:3",
+      "Tosafot on Eruvin 28a:4:1",
+      "Eruvin 27b:15",
+      "Sukkah 11b:16",
+      "Tosafot on Gittin 21b:3:2"
+    ],
+    "generatedAt": "2026-10-21T13:54:54.542Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 15b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה ספר דבר שאין בו רוח חיים</strong> - בפ' בכל מערבין <span class=\"parenthesized\">(לקמן עירובין ד' כז:)</span> גבי מעשר שני [בבקר ובצאן] נקט צד של פרי מפרי וגדולי קרקע ובפרק קמא דסוכה <span class=\"parenthesized\">(ד' יא:)</span> גבי חגיגה נקט מה חגיגה דבר שאינו מקבל טומאה וגדולו מן הארץ הכל לפי מה שדומה לחכמים:"
+  },
+  "Tosafot on Eruvin 15b:4:1": {
+    "dependsOn": [
+      "Eruvin 15b:4",
+      "Chidushei Halachot on Eruvin 15b:1",
+      "Gittin 87a:6",
+      "Tosafot on Sukkah 24b:5:1"
+    ],
+    "generatedAt": "2026-10-21T13:57:34.801Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 15b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבנן האי וכתב לה מאי עבדי</strong> - אע\"ג דאיצטריך למדרש וכתב לה לשמה תרי וכתב לה כתיבי והא דדרשינן בהמגרש <span class=\"parenthesized\">(גיטין ד' פז.)</span> וכתב לה ולא לה ולחברתה התם דריש מלה דוכתב דהכא:"
+  },
+  "Tosafot on Eruvin 15b:5:1": {
+    "dependsOn": [
+      "Eruvin 15b:5",
+      "Kiddushin 3b:2",
+      "Kiddushin 3b:3",
+      "Kiddushin 5a:3",
+      "Kiddushin 5a:4",
+      "Kiddushin 5a:5",
+      "Kiddushin 5a:6",
+      "Kiddushin 5a:7",
+      "Bava Kamma 87a:13",
+      "Kiddushin 3b:7",
+      "Kiddushin 3b:8",
+      "Kiddushin 3b:9"
+    ],
+    "generatedAt": "2026-10-21T14:08:52.324Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 15b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכתיבה מתגרשת ולא בכסף</strong> - הך דרשה לא אתיא אלא לרבא אבל לאביי נפקא ליה בפרק קמא דקדושין <span class=\"parenthesized\">(ד' ה.)</span> מסברא דאין סניגור נעשה קטיגור ומכל מקום לאביי נמי איצטריך וכתב בכתיבה מתגרשת ולא בחליצה והא דדריש לה בריש קדושין <span class=\"parenthesized\">(ד' ג:)</span> דאינה יוצאה בחליצה מספר כורתה ההיא דרשה כר' יוסי הגלילי כדמשמע הכא ונקט לה משום דהויא דרשה פשוטה טפי וכן דרך הש\"ס כדאשכחן בהחובל <span class=\"parenthesized\">(ב\"ק ד' פז.)</span> דמייתי קרא דבנעוריה בית אביה לגבי חבלה ובריש קדושין <span class=\"parenthesized\">(ד' ג:)</span> קאמר דבהפרת נדרים הוא דכתיב ובריש פרק אחד דיני ממונות <span class=\"parenthesized\">(סנהדרין ד' לד:)</span> דריש דראיית נגעים ביום מוביום הראות בו דהיינו כאביי דפ\"ק דמועד קטן <span class=\"parenthesized\">(ד' ח.)</span> ושביק דרשה דרבא דדריש התם מדכתיב לי ולא לאורי:"
+  },
+  "Tosafot on Eruvin 15b:7:1": {
+    "dependsOn": [
+      "Maharsha on Eruvin 15b:2",
+      "Maharam on Eruvin 15b:2",
+      "Chidushei Halachot on Eruvin 15b:2",
+      "Chidushei Halachot on Sukkah 24b:2",
+      "Tosafot on Sukkah 24b:2"
+    ],
+    "generatedAt": "2026-10-21T14:14:19.730Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 15b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על מנת שלא תלכי לבית אביך</strong> - תימה דהא אם מת אביה לא חשיב תו בית אביה כדתניא בנדרים בהשותפין <span class=\"parenthesized\">(ד' מו.)</span> קונם לביתך שאני נכנס שדך שאני לוקח מת או מכרו לאחר מיד מותר וי\"ל דבית אביה קרויים כל יוצאי חלציו כדכתיב בתמר <span class=\"parenthesized\">(בראשית ל״ח:י״א)</span> שבי אלמנה בית אביך אע\"ג דקראי מוכחי שכבר מת שם:"
+  },
+  "Tosafot on Eruvin 15b:8:1": {
+    "dependsOn": [
+      "Eruvin 15b:8",
+      "Tosafot on Gittin 83b:17:1",
+      "Gittin 83b:16",
+      "Gittin 83b:17",
+      "Tosafot on Eruvin 15b:3:1",
+      "Tosafot on Eruvin 15b:3:2",
+      "Tosafot on Eruvin 15b:5:1",
+      "Tosafot on Eruvin 15b:4:1",
+      "Tosafot on Eruvin 15b:7:1",
+      "Tosafot on Eruvin 15b:12:1",
+      "Tosafot on Berakhot 2a:13:1",
+      "Tosafot on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-10-21T14:18:34.423Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 15b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי יוסי הגלילי מכרת כריתות</strong> - קשה לר\"י דבגיטין בריש המגרש <span class=\"parenthesized\">(גיטין ד' פג:)</span> קאמר על רבנן דרבי אלעזר בן עזריה דכרת כריתות לא דרשי ורבי יוסי הגלילי הוא בכלל הנהו רבנן וי\"ל דהתם קאמר דלא דרשי לההיא דרשה ולא בעי למימר דלא דרשי ליה כלל:"
+  }
+}

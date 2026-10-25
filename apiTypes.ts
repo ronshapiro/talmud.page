@@ -24,6 +24,7 @@ export interface Section extends Highlightable {
   he: sefaria.TextType;
   en: sefaria.TextType;
   commentary?: CommentaryMap;
+  originalHebrew?: sefaria.TextType;
 
   hadran?: true;
   steinsaltz_start_of_sugya?: true; // eslint-disable-line camelcase
@@ -52,6 +53,7 @@ export interface ApiComment extends Highlightable {
   sourceHeRef: string;
   link?: string;
   commentary?: CommentaryMap;
+  originalHebrew?: sefaria.TextType;
   originalRefsBeforeRewriting?: string[];
   expandedRefsAfterRewriting?: string[];
   duplicateRefs?: string[];

@@ -1,0 +1,533 @@
+{
+  "Rashi on Bekhorot 7b:10:1": {
+    "dependsOn": [
+      "Bekhorot 7b:10",
+      "Rashi on Bekhorot 7b:10:1",
+      "Rashi on Bekhorot 7b:10:2"
+    ],
+    "generatedAt": "2026-10-22T04:14:22.815Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טהור אלמא בעי מחשבה</strong> - בניחותא:"
+  },
+  "Rashi on Bekhorot 7b:10:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 7b:10:1"
+    ],
+    "generatedAt": "2026-10-22T04:15:17.366Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דבש בכוורתו</strong> - ואכתי לא חשיב עליה שהרי הוא בכוורתו. ובדבש דבורים מיירי דאין כוורת אלא לדבורים:"
+  },
+  "Rashi on Bekhorot 7b:11:1": {
+    "dependsOn": [
+      "Jastrow, חַלָּא 1",
+      "Sefer HeArukh, Letter Chet 166",
+      "Rashi on Bekhorot 7b:11:1",
+      "Rashi on Bekhorot 7b:11:2",
+      "Jastrow, חֲלִי 1"
+    ],
+    "generatedAt": "2026-10-22T04:29:01.218Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חלי דיחמורתא</strong> - כעין ביצי זכר שהיחמורו' מוציאות מרחמן:"
+  },
+  "Rashi on Bekhorot 7b:11:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 7b:11:1",
+      "Rashi on Bekhorot 7b:11:3"
+    ],
+    "generatedAt": "2026-10-22T04:29:54.143Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואסורין</strong> - משום אבר מן החי שנעקרו מן הזכר ברחם:"
+  },
+  "Rashi on Bekhorot 7b:11:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T04:30:27.500Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאזיל בתר איילתא</strong> - להיזקק לה:"
+  },
+  "Rashi on Bekhorot 7b:11:4": {
+    "dependsOn": [
+      "Rashi on Bekhorot 7b:11:1",
+      "Rashi on Bekhorot 7b:11:2",
+      "Rashi on Bekhorot 7b:11:3",
+      "Steinsaltz on Bekhorot 7b:11"
+    ],
+    "generatedAt": "2026-10-22T04:32:33.057Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונתרי</strong> - שופך זרע הרבה ונקרש:"
+  },
+  "Rashi on Bekhorot 7b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T04:33:16.258Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עור הבא כנגד פני חמור</strong> - כעין שליא שהחמור נולד בו:"
+  },
+  "Rashi on Bekhorot 7b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T04:42:17.374Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טהור</strong> - מלטמא במגע ובמשא:"
+  },
+  "Rashi on Bekhorot 7b:13:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 7b:13:1",
+      "Bekhorot 7b:12"
+    ],
+    "generatedAt": "2026-10-22T04:47:07.783Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי לאו</strong> - אפילו הולד והאם מתים אפ\"ה העור אין מטמא אלמא דאמר שליא לא מן הולד ולא מן האם אלא פירשא בעלמא היא:"
+  },
+  "Rashi on Bekhorot 7b:14:1": {
+    "dependsOn": [
+      "Bekhorot 7b:14",
+      "Rashi on Bekhorot 7b:13:1",
+      "Rashi on Bekhorot 7b:13:2",
+      "Tosafot on Bekhorot 7b:14:1",
+      "Rashi on Bekhorot 7b:10:1",
+      "Rashi on Bekhorot 7b:10:2",
+      "Rashi on Bekhorot 7b:11:1",
+      "Maharsha on Bekhorot 7b:14:1"
+    ],
+    "generatedAt": "2026-10-22T05:26:55.036Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג לא בין הוא חי ואמו חיה בין הוא מת ואמו חיה</strong> - שמגוף האם הוא והרי היא חיה אבל לגבי אכילה כי שדית ליה בתר אם נמי אסור:"
+  },
+  "Rashi on Bekhorot 7b:15:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 7b:15:2",
+      "Bekhorot 7b:16"
+    ],
+    "generatedAt": "2026-10-22T05:33:18.102Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שבלע</strong> - משמע דידעי ודאי שבלעו:"
+  },
+  "Rashi on Bekhorot 7b:15:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 7b:15:1",
+      "Bekhorot 7b:16",
+      "Bekhorot 7b:17",
+      "Rashi on Bekhorot 7b:15:2"
+    ],
+    "generatedAt": "2026-10-22T05:35:49.319Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לפי שאינו גידוליו</strong> - אלא כשהוא חי בלעו אבל גידוליו שרי שהיוצא מן הטהור טהור:"
+  },
+  "Rashi on Bekhorot 7b:16:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 7b:16:1",
+      "Bekhorot 7b:16"
+    ],
+    "generatedAt": "2026-10-22T05:40:29.906Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אשרוצי אשריץ</strong> - דג טהור זה שנמצא בתוך הטמא נשרץ בגופו ועוברו הוא ואסור:"
+  },
+  "Rashi on Bekhorot 7b:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T05:44:20.490Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דג טמא משריץ</strong> - בגופו עוברו כשאר בהמה וחיה:"
+  },
+  "Rashi on Bekhorot 7b:17:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 7b:17:2",
+      "Rashi on Bekhorot 7b:17:1",
+      "Rashi on Bekhorot 7b:17:3",
+      "Rashi on Bekhorot 7b:11:1",
+      "Rashi on Bekhorot 7b:11:2",
+      "Steinsaltz on Bekhorot 7b:17"
+    ],
+    "generatedAt": "2026-10-22T05:46:34.916Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דג טהור מטיל ביצים</strong> - ויושב עליהן ומחממן עד שיוציאם מן הקליפה כעופות:"
+  },
+  "Rashi on Bekhorot 7b:17:3": {
+    "dependsOn": [
+      "Rashi on Bekhorot 7b:17:1",
+      "Rashi on Bekhorot 7b:17:2"
+    ],
+    "generatedAt": "2026-10-22T05:48:46.222Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:17:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הכי</strong> - דדג טמא משריץ האי דבלע איעכל והוי ריעי וזה שנמצא בתוכו אשרוצי אשריציה ועוברו הוא וליתסר:"
+  },
+  "Rashi on Bekhorot 7b:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T05:49:26.508Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דרך בית הריעי</strong> - ואי עוברו הוא בבית הרחם מיבעי ליה לאישתכוחי:"
+  },
+  "Rashi on Bekhorot 7b:18:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 7b:18:1",
+      "Rashi on Bekhorot 7b:18:2",
+      "Rashi on Bekhorot 7b:17:1",
+      "Rashi on Bekhorot 7b:17:2",
+      "Rashi on Bekhorot 7b:17:3"
+    ],
+    "generatedAt": "2026-10-22T05:51:21.862Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמצאו שלם</strong> - שנגמרה כל צורתו וגדול הוא ואי עוברו לא הוי משתהי ברחם כולי האי:"
+  },
+  "Rashi on Bekhorot 7b:19:1": {
+    "dependsOn": [
+      "Bekhorot 7b:19",
+      "Tosafot on Bekhorot 7b:19:1"
+    ],
+    "generatedAt": "2026-10-22T05:53:27.471Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב אשי אמר</strong> - מתני' לאו כדחזיניה דבלע אלא שנמצא בתוכו והאי דקתני שבלע כיון דרוב דגים במינן משריצים וזה השריץ מין אחר כמו שבלע בפנינו דמי:"
+  },
+  "Rashi on Bekhorot 7b:1:1": {
+    "dependsOn": [
+      "Bekhorot 7b:1"
+    ],
+    "generatedAt": "2026-10-22T03:30:12.102Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והני נמי</strong> - מטמא קאתו שבתוך הטמא היו ואע\"ג דלאו מגופיה מימצן אסירי:"
+  },
+  "Rashi on Bekhorot 7b:20:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 7b:20:2",
+      "Rashi on Bekhorot 7b:20:3",
+      "Steinsaltz on Bekhorot 7b:20"
+    ],
+    "generatedAt": "2026-10-22T06:00:33.301Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל המוליד</strong> - שיולד עובר ממש:"
+  },
+  "Rashi on Bekhorot 7b:20:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T06:01:22.393Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:20:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מניק</strong> - שיש לו דדים וכל המטיל ביצים אין לו דדים ומלקט פירורים ומפרנס בניו:"
+  },
+  "Rashi on Bekhorot 7b:20:3": {
+    "dependsOn": [
+      "[",
+      "Rashi on Bekhorot 7b:20:1",
+      "Rashi on Bekhorot 7b:20:2",
+      "Rashi on Bekhorot 7b:20:3",
+      "Rashi on Bekhorot 7b:14:1",
+      "Rashi on Bekhorot 7b:16:1",
+      "Rashi on Bekhorot 7b:18:1",
+      "Rashi on Bekhorot 7b:10:2",
+      "Rashi on Bekhorot 7b:11:1",
+      "Rashi on Bekhorot 7b:11:2",
+      "Rashi on Bekhorot 7b:13:2",
+      "Rashi on Bekhorot 7a:24:1"
+    ],
+    "generatedAt": "2026-10-22T06:06:54.279Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:20:3"
+    ],
+    "sourceText": "עטלף קלב\"א שורי\"ץ דומה לעכבר ויש לו כנפים:"
+  },
+  "Rashi on Bekhorot 7b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T03:33:46.434Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמכניסות אותן לגופן</strong> - שאוכלין מפרחי האילן ומהן נעשה הדבש במעיהן:"
+  },
+  "Rashi on Bekhorot 7b:4:2": {
+    "dependsOn": [
+      "Bekhorot 7b:4",
+      "Bekhorot 7b:5",
+      "Rashi on Bekhorot 7b:4:1"
+    ],
+    "generatedAt": "2026-10-22T03:40:45.324Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין ממצים אותו</strong> - דובשנו מגופו וקשיא לרב ששת דהא הכא כיון דלאו מגופייהו מימצו שרי: רב ששת אמר כל שהיה בתוך הטמא דאמר כר' יעקב בטעמא דדבש לאו משום שמכניסות אותן לגופן הוא אלא דרחמנא שרייה בהדיא וגזירת הכתוב היא:"
+  },
+  "Rashi on Bekhorot 7b:7:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 7b:7:2",
+      "Rashi on Bekhorot 7b:4:1",
+      "Rashi on Bekhorot 7b:4:2",
+      "Rashi on Bekhorot 2a:1:1",
+      "Bekhorot 7b:6"
+    ],
+    "generatedAt": "2026-10-22T03:43:08.144Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שרץ העוף טמא</strong> - הוולד ממש בהדיא כתיב בו <span class=\"parenthesized\">(ויקרא י״א:י״ג)</span> את אלה תשקצו מן העוף:"
+  },
+  "Rashi on Bekhorot 7b:7:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 7b:7:1",
+      "Bekhorot 7b:7",
+      "Steinsaltz on Bekhorot 7b:7",
+      "Steinsaltz comment #1 on Bekhorot 7b:7",
+      "Versions on Bekhorot 7b:7",
+      "Torah Temimah on Torah, Leviticus 11:21:1"
+    ],
+    "generatedAt": "2026-10-22T03:55:17.502Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא שרץ עוף טמא שאתה אין אוכל</strong> - דלהכי דייקא ואי אתה דתיהדר ותידוק מיניה אבל אתה אוכל מה שעוף טמא משריץ שאינו ולד דוגמתו כגון דבש. ל\"א אלא שרץ עוף טמא אי אתה אוכל ומאידך קרא נסיב לה מכל שרץ העוף וגו':"
+  },
+  "Rashi on Bekhorot 7b:8:1": {
+    "dependsOn": [
+      "Jastrow, חָגָז 1",
+      "Rashi on Bekhorot 7b:8:2",
+      "Steinsaltz on Bekhorot 7b:8",
+      "Steinsaltz comment #1 on Bekhorot 7b:8",
+      "Steinsaltz comment #2 on Bekhorot 7b:8",
+      "Rashi on Bekhorot 7b:7:1",
+      "Rashi on Bekhorot 7b:7:2",
+      "Tosafot on Bekhorot 7b:8:1",
+      "Rashi on Bekhorot 7b:4:1",
+      "Rashi on Bekhorot 7b:4:2",
+      "Rashi on Bekhorot 7b:11:1"
+    ],
+    "generatedAt": "2026-10-22T03:58:25.354Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הגזין והצירעין</strong> - מין ארבה:"
+  },
+  "Rashi on Bekhorot 7b:8:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 7b:8:1",
+      "Rashi on Bekhorot 7b:4:1",
+      "Rashi on Bekhorot 7b:7:1"
+    ],
+    "generatedAt": "2026-10-22T04:00:00.845Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דבש דבורים</strong> - דבש סתמא <span class=\"parenthesized\">(הוו)</span> קרו ליה. דבש הגזין הכי הוא דמיקרו:"
+  },
+  "Rashi on Bekhorot 7b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T04:12:49.809Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טהור</strong> - מלקבל טומאת אוכלין דסתמיה לאו לאכילה עד שיחשב עליו:"
+  },
+  "Tosafot on Bekhorot 7b:12:1": {
+    "dependsOn": [
+      "Tosafot on Bekhorot 7b:8:1",
+      "Tosafot on Bekhorot 7b:3:1",
+      "Rashi on Bekhorot 7b:12:1",
+      "Bekhorot 7b:12",
+      "Rashi on Bekhorot 7b:11:1",
+      "Rashi on Bekhorot 7b:11:2",
+      "Rashi on Bekhorot 7b:11:3",
+      "Rashi on Bekhorot 7b:11:4",
+      "Tosafot on Bekhorot 7b:13:1",
+      "Tosafot on Bekhorot 7b:14:1",
+      "Tosafot on Bekhorot 7b:15:1"
+    ],
+    "generatedAt": "2026-10-22T04:41:39.321Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 7b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עור הבא נגד פניו של חמור</strong> - פי' כדלעיל:"
+  },
+  "Tosafot on Bekhorot 7b:14:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 7b:14:1",
+      "Bekhorot 7b:12",
+      "Bekhorot 7b:13",
+      "Bekhorot 7b:14"
+    ],
+    "generatedAt": "2026-10-22T05:32:16.530Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 7b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא בין הוא חי ואמו מתה בין הוא מת ואמו חיה</strong> - שהעור בא בין שניהם מן האם ומן הולד ולפיכך טהור עד שימותו שניהם <span class=\"rashi-quotation\">ובקונטרס פירש</span> כך בין הוא ואמו חיה בין הוא מת ואמו חיה [אבל] אמו חיה לעולם בעינן וכמו שפיר' נראה דמדנקט רב חסדא בין הוא מת ואמו מתה משמע דאין לו סייעתא אלא מהא דמטהרינן בשניהם מתים אבל אם האחד חי אין כאן סייעתא:"
+  },
+  "Tosafot on Bekhorot 7b:15:1": {
+    "dependsOn": [
+      "Bekhorot 7b:15",
+      "Mishnah Oholot 11:7",
+      "Tosafot on Bekhorot 7b:15:1"
+    ],
+    "generatedAt": "2026-10-22T05:38:56.660Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 7b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דג טהור שבלע דג טמא אסור באכילה</strong> - תימה במסכת אהלות <span class=\"parenthesized\">(פי\"א מ\"ז)</span> תנו כלב שאכל בשר המת כמה תשהה במעיו שלשה ימים מעת לעת ובעופות ובדגים כדי שתפול לאור ותשרף אלמא חשיב עכול והכא נמי לישתרי ולא מסתבר לחלק בין בשר המת לשאר דברים דשלשה ימים דכלב משמע בכל דבר דמדמייתי עלה במסכת שבת פרק השואל <span class=\"parenthesized\">(דף קנה:)</span> יודע הקב\"ה בכלב שמזונותיו מועטות לפיכך משהה אכילתו במעיו שלשה ימים ויש לחלק בין איסור לטומאה ויש רוצים להתיר מתוך משנה זו חטה שנמצאת בפסח במעי תרנגולת ולפי מה שחלקתי בין איסור לטומאה אין זה ראיה עוד פירש ר\"ת דשמא יש להחמיר כר' יהודה בן בתירה דבעי מעת לעת ואם באנו לומר דאין חילוק בין איסור לטומאה צ\"ל דשמעתא אתיא בלא שהה כדי עיכול וא\"ת אי לא שהה כדי עיכול היכי פריך בגמ' כי חזינא דבלע נימא האי איעכל והאי אשרוצי אשריץ י\"ל פעם ממהר להתעכל קודם ולא הוי ככלב דלעולם ג' ימים:"
+  },
+  "Tosafot on Bekhorot 7b:19:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 7b:19:1",
+      "Steinsaltz on Bekhorot 7b:19",
+      "Bekhorot 7b:20",
+      "Bekhorot 7b:15",
+      "Chidushei Halachot on Bekhorot 7b:7",
+      "Rosh on Bekhorot 1:8:1",
+      "Rosh on Bekhorot 1:8:2",
+      "["
+    ],
+    "generatedAt": "2026-10-22T05:57:34.471Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 7b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רוב דגים במינם משריצים</strong> - הלכתא כרב אשי דהוא בתראה ויש להתיר אותן דגים שקורין מרנ\"ש הנמצא תוך דג בלינ\"א ואע\"ג דלא חזינן דבלע ואין להקשות ממתני' דשריא דג טמא שבלע דג טהור לרב ששת דאסר מי רגלים של חמור דאפי' ללישנא בתרא דרב ששת דאסר אף של סוסים וגמל לא דמי חדא דמתני' לא איירי אלא נמצא תוכו דג טהור ואפילו יצאו הכא פשיטא דדגים עייל דגים נפיק אבל מים שהבהמה שותה לחלוחית הגוף מתערב עמהם ובת\"כ תני גבי דגים תאכלו לרבות הטהור שבמעי טמא יכול אף הטמא שבמעי טהור ת\"ל אותם מה ראית לומר בבהמה שבמעי טמא טמא ושבמעי טהור טהור <span class=\"parenthesized\">(מטמא שבמעי הטהור טהור)</span> ובדגים אינו כן לפי שאין גדוליו ואין ראיה משם לאסור דג טמא שבלע דג טהור אחר שיצא משום דנקט שבמעי הטמא דלאו דוקא אלא משום טמא שבמעי טהור דדילמא ההיא דשרינן ביצא לחוץ משום דחשיב עיכול:"
+  },
+  "Tosafot on Bekhorot 7b:20:1": {
+    "dependsOn": [
+      "Tosafot on Bekhorot 7b:8:1"
+    ],
+    "generatedAt": "2026-10-22T06:09:09.317Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 7b:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דג טמא משריץ דג טהור מטיל ביצים</strong> - בע\"ז פרק אין מעמידין <span class=\"parenthesized\">(עבודה זרה דף מ.)</span> מפרש תרוייהו מטילי ביצים נינהו זה משריץ מבחוץ וזה משריץ מבפנים:"
+  },
+  "Tosafot on Bekhorot 7b:3:1": {
+    "dependsOn": [
+      "Tosafot on Bekhorot 6a:20:2",
+      "Bekhorot 7b:3",
+      "Bekhorot 6a:20"
+    ],
+    "generatedAt": "2026-10-22T03:33:09.719Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 7b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תניתוה היוצא מן הטמא טמא</strong> - הא דמשמע לסימן נקטיה לא קשה מידי כדפרישי' לעיל <span class=\"parenthesized\">(בכורות דף ו. ד\"ה למה)</span>:"
+  },
+  "Tosafot on Bekhorot 7b:8:1": {
+    "dependsOn": [
+      "Niddah 17a:11",
+      "Niddah 17a:12",
+      "Niddah 17a:13",
+      "Niddah 17a:3",
+      "Tosafot on Niddah 17a:3:1",
+      "Rashi on Bekhorot 7b:8:1",
+      "Rashi on Bekhorot 7b:8:2",
+      "Jastrow, חָגָז 1",
+      "Maharsha on Bekhorot 7b:3",
+      "Chidushei Halachot on Bekhorot 7b:3"
+    ],
+    "generatedAt": "2026-10-22T04:12:00.132Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 7b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הגזין וצרעין</strong> - גרסינן ולא גרסינן חגבים שזה עוף כמו גזי דכלתא דנדה <span class=\"parenthesized\">(דף יז.)</span> לפי' ר\"ת:"
+  }
+}

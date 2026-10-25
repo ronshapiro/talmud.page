@@ -19,6 +19,12 @@
     --commentary-header-blue: rgb(82, 129, 209);
     --commentary-header-blue: rgb(104, 152, 232);
     --commentary-header-orange: rgb(232, 121, 86);
+
+    --double-click-hint-glass-bg: rgba(255, 255, 255, 0.18);
+    --double-click-hint-glass-border: rgba(255, 255, 255, 0.35);
+    --double-click-hint-core-bg: rgba(255, 255, 255, 0.7);
+    --double-click-hint-ripple: rgba(255, 255, 255, 0.4);
+    --double-click-hint-shadow: rgba(0, 0, 0, 0.3);
 }
 
 ::selection {
