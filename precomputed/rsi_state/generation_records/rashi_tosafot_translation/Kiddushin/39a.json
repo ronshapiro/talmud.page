@@ -95,6 +95,126 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">לא קי\"ל כר' יאשיה</strong> - בתמיה וטעמיה דר' יאשיה לא ידענא מהיכא נפקא ליה דבעינן ב' מיני זרעים וחרצן שלישי ומפולת יד נפקא ליה <span class=\"parenthesized\">(דברים כ״ב:ט׳)</span> מלא תזרע כרמך כלאים משמע שזריעת הכרם עצמה תהיה בכלאים:"
   },
+  "Rashi on Kiddushin 39a:13:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 39a:13:1",
+      "Rashi on Kiddushin 39a:13:2",
+      "Rashi on Kiddushin 39a:13:3",
+      "Rashi on Kiddushin 39a:12:1",
+      "Rashi on Kiddushin 39a:12:2",
+      "Rashi on Kiddushin 39a:1:1",
+      "Rashi on Kiddushin 39a:2:1",
+      "Rashi on Kiddushin 38b:10:1",
+      "Rashi on Kiddushin 38b:10:2",
+      "Rashi on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-10-25T11:10:18.720Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 39a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מערב בזרני וזרע</strong> - ולא בכרם:"
+  },
+  "Rashi on Kiddushin 39a:13:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 39a:13:1",
+      "Rashi on Kiddushin 39a:13:2",
+      "Rashi on Kiddushin 39a:13:3"
+    ],
+    "generatedAt": "2026-10-25T11:12:58.608Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 39a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא אנן תנן כו'</strong> - וקס\"ד אפי' כלאי זרעים נמי אסרו ביה כי היכי דבא\"י אסירי מדאורייתא:"
+  },
+  "Rashi on Kiddushin 39a:13:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 39a:13:1",
+      "Rashi on Kiddushin 39a:13:2",
+      "Rashi on Kiddushin 39a:3:1",
+      "Rashi on Kiddushin 39a:5:1",
+      "Rashi on Kiddushin 39a:10:1",
+      "Rashi on Kiddushin 2a:1:1",
+      "Rashi on Kiddushin 2a:1:2",
+      "Kiddushin 56b:5",
+      "Rashi on Kiddushin 36b:2:6",
+      "Rashi on Kiddushin 39a:12:1",
+      "Rashi on Kiddushin 39a:12:2",
+      "Rashi on Kiddushin 39a:14:1"
+    ],
+    "generatedAt": "2026-10-25T11:16:33.372Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 39a:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כלאי זרעים</strong> - לא כתיב בהם פן תקדש דמשדך לא תזרע כלאים נפקו:"
+  },
+  "Rashi on Kiddushin 39a:14:1": {
+    "dependsOn": [
+      "Kiddushin 39a:14",
+      "Rashi on Kiddushin 39a:13:1",
+      "Rashi on Kiddushin 39a:13:2",
+      "Rashi on Kiddushin 39a:13:3",
+      "Rashi on Kiddushin 39a:14:2",
+      "Rashi on Kiddushin 39a:14:3",
+      "Rashi on Kiddushin 38b:1:1",
+      "Rashi on Kiddushin 38b:1:2"
+    ],
+    "generatedAt": "2026-10-25T11:19:55.476Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 39a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאו מילתא היא דאמרי</strong> - דלא גזרו על כלאי זרעים בח\"ל:"
+  },
+  "Rashi on Kiddushin 39a:14:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 39a:14:1",
+      "Rashi on Kiddushin 39a:14:2",
+      "Rashi on Kiddushin 39a:14:3",
+      "Steinsaltz on Kiddushin 39a:14",
+      "Rashi on Kiddushin 39a:1:1",
+      "Rashi on Kiddushin 39a:2:1",
+      "Rashi on Kiddushin 39a:3:1",
+      "Rashi on Kiddushin 39a:5:1",
+      "Rashi on Kiddushin 38b:1:1",
+      "Rashi on Kiddushin 38a:1:1",
+      "Kiddushin 39a:14",
+      "Rashi on Kiddushin 39b:1:1",
+      "Rashi on Kiddushin 39b:1:2",
+      "Rashi on Kiddushin 39b:1:3"
+    ],
+    "generatedAt": "2026-10-25T11:23:07.617Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 39a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לגינתא דבי רב</strong> - שהיתה לצורך התלמידים לאכול ירק שבה:"
+  },
+  "Rashi on Kiddushin 39a:14:3": {
+    "dependsOn": [
+      "Jastrow, מֵישָׁרָא 1",
+      "Rashi on Kiddushin 39a:14:1",
+      "Rashi on Kiddushin 39a:14:2",
+      "Steinsaltz on Kiddushin 39a:14",
+      "Rashi on Kiddushin 39a:5:1",
+      "Rashi on Kiddushin 39a:6:1",
+      "Rashi on Kiddushin 39a:7:1"
+    ],
+    "generatedAt": "2026-10-25T11:25:09.223Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 39a:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משארי משארי</strong> - ערוגות ערוגות:"
+  },
   "Rashi on Kiddushin 39a:1:1": {
     "dependsOn": [
       "Kiddushin 39a:1",
