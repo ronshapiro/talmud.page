@@ -19,7 +19,6 @@ jobs:
     permissions:
       contents: 'read'
       id-token: 'write'
-      pull-requests: 'read'
 
     steps:
     - id: 'auth'
@@ -49,30 +48,3 @@ jobs:
         else
           echo "No inactive versions older than ${DAYS} days found."
         fi
-
-    - name: Clean up preview versions for closed pull requests
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        echo "Looking for inactive pull request preview versions..."
-        PULL_REQUEST_VERSIONS=$(gcloud app versions list \
-          --service=default \
-          --filter="id ~ ^pr- AND traffic_split=0" \
-          --format="value(id)")
-
-        if [ -z "$PULL_REQUEST_VERSIONS" ]; then
-          echo "No pull request preview versions found."
-          exit 0
-        fi
-
-        for VERSION_IDENTIFIER in $PULL_REQUEST_VERSIONS; do
-          PULL_REQUEST_NUMBER="${VERSION_IDENTIFIER#pr-}"
-          PULL_REQUEST_STATE=$(gh pr view "$PULL_REQUEST_NUMBER" --json state --jq .state -R "${{ github.repository }}" 2>/dev/null || true)
-          echo "Version ${VERSION_IDENTIFIER}: Pull Request #${PULL_REQUEST_NUMBER} state is '${PULL_REQUEST_STATE}'."
-
-          if [ "$PULL_REQUEST_STATE" = "CLOSED" ] || [ "$PULL_REQUEST_STATE" = "MERGED" ]; then
-            echo "Deleting preview version ${VERSION_IDENTIFIER} for closed/merged pull request #${PULL_REQUEST_NUMBER}..."
-            gcloud app versions delete "$VERSION_IDENTIFIER" --service=default --quiet
-            echo "Successfully deleted ${VERSION_IDENTIFIER}."
-          fi
-        done
