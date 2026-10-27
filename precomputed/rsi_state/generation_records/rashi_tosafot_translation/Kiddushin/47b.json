@@ -1,0 +1,413 @@
+{
+  "Rashi on Kiddushin 47b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-26T08:27:01.252Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נימא כתנאי</strong> - הא דרב דאמר המקדש במלוה אינה מקודשת:"
+  },
+  "Rashi on Kiddushin 47b:10:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 47b:10:1",
+      "Rashi on Kiddushin 47b:10:2",
+      "Steinsaltz on Kiddushin 47b:10",
+      "Rashi on Bava Kamma 70a:2:1",
+      "Bava Kamma 70a:2"
+    ],
+    "generatedAt": "2026-10-26T08:28:56.430Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והירשה עליהן</strong> - כתב לה הרשאה עליהן:"
+  },
+  "Rashi on Kiddushin 47b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-26T08:32:30.533Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נקנות במסירה</strong> - אינו צריך לכתוב שטר מכירה על השטר שהוא מוכר לו אלא משמסר לו שטר שיש לו על אחרים לזכות בו נתחייב הלוה לפורעם לזה:"
+  },
+  "Rashi on Kiddushin 47b:12:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 47b:12:1",
+      "Kiddushin 47b:12"
+    ],
+    "generatedAt": "2026-10-26T08:33:50.520Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בין שכתב</strong> - לו שטר מכירה עליו ולא מסר לו שטר החוב ובין שמסר לו שטר החוב ולא כתב לו שטר מכירה עליו לא קנה וה\"נ שמסר לה שטר החוב אע\"פ שלא כתב לה שטר מכירה עליו מ\"ד מקודשת אית ליה דרבי ומר לית ליה דרבי:"
+  },
+  "Rashi on Kiddushin 47b:14:1": {
+    "dependsOn": [
+      "Kiddushin 47b:14"
+    ],
+    "generatedAt": "2026-10-26T08:35:30.685Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיבעית אימא דכ\"ע לית להו דרבי</strong> - והכא בשמסר וכתב מיירי אלא שכתב לה קני לך האי שטר ולא כתב לה קני לך כל שעבודא דאית ביה מאן דאמר אינה מקודשת כרב פפא:"
+  },
+  "Rashi on Kiddushin 47b:15:1": {
+    "dependsOn": [
+      "Kiddushin 47b:15",
+      "Rashi on Kiddushin 47b:14:1",
+      "Rashi on Kiddushin 47b:15:1",
+      "Rashi on Kiddushin 47b:15:2",
+      "Rashi on Kiddushin 47b:1:2",
+      "Kiddushin 47b:13"
+    ],
+    "generatedAt": "2026-10-26T08:43:29.873Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיבעית אימא דכ\"ע לית להו דרבי</strong> - והכא בשמסר וכתב מיירי אלא שכתב לה קני לך האי שטר ולא כתב לה קני לך כל שעבודא דאית ביה מאן דאמר אינה מקודשת כרב פפא:"
+  },
+  "Rashi on Kiddushin 47b:15:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 47b:15:1",
+      "Kiddushin 47b:15"
+    ],
+    "generatedAt": "2026-10-26T08:46:00.259Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכולי עלמא אית להו דרב פפא</strong> - וכי אמר ר\"מ מקודשת בשכתב לה כו' והכא בדשמואל קא מיפלגי:"
+  },
+  "Rashi on Kiddushin 47b:1:1": {
+    "dependsOn": [
+      "Kiddushin 47b:1",
+      "Rashi on Kiddushin 47b:1:2",
+      "Rashi on Kiddushin 47a:14:1"
+    ],
+    "generatedAt": "2026-10-26T07:44:28.948Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי היא כפקדון</strong> - דאם נשתייר אין לא נשתייר לא:"
+  },
+  "Rashi on Kiddushin 47b:1:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 47b:1:1",
+      "Rashi on Kiddushin 47b:1:2",
+      "Kiddushin 47b:1",
+      "Rashi on Kiddushin 47a:10:1",
+      "Rashi on Kiddushin 47a:12:1",
+      "Rashi on Kiddushin 46b:1:1",
+      "Rashi on Kiddushin 46b:2:1",
+      "Rashi on Kiddushin 47a:1:1",
+      "Steinsaltz on Kiddushin 47a:10",
+      "Steinsaltz on Kiddushin 47b:1"
+    ],
+    "generatedAt": "2026-10-26T07:49:23.595Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל דכ\"ע המקדש במלוה</strong> - שישנה בעין מקודשת:"
+  },
+  "Rashi on Kiddushin 47b:2:1": {
+    "dependsOn": [
+      "Kiddushin 47b:2",
+      "Rashi on Kiddushin 47b:1:1",
+      "Rashi on Kiddushin 47b:1:2",
+      "Rashi on Kiddushin 47b:3:1",
+      "Steinsaltz on Kiddushin 47b:2",
+      "Kiddushin 47a:14",
+      "Rashi on Kiddushin 47a:14:1",
+      "Rashi on Kiddushin 47b:5:1",
+      "Rashi on Kiddushin 47b:5:2",
+      "Rashi on Kiddushin 47b:5:3",
+      "Rashi on Kiddushin 47b:8:1",
+      "Rashi on Berakhot 2a:5:9",
+      "Rashi on Berakhot 2b:4:1",
+      "Rashi on Berakhot 2b:6:1"
+    ],
+    "generatedAt": "2026-10-26T07:53:50.984Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותסברא מתרצתא היא</strong> - דקתני במלוה אע\"פ שלא נשתייר מקודשת:"
+  },
+  "Rashi on Kiddushin 47b:3:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 47b:3:1",
+      "Rashi on Kiddushin 47b:3:2",
+      "Kiddushin 47b:3"
+    ],
+    "generatedAt": "2026-10-26T07:56:40.571Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי דקביל עליה אחריות</strong> - שאם יגנב תשלמנו לו:"
+  },
+  "Rashi on Kiddushin 47b:3:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 47b:3:1",
+      "Rashi on Kiddushin 47b:5:1",
+      "Rashi on Kiddushin 47b:5:2"
+    ],
+    "generatedAt": "2026-10-26T07:58:46.515Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היינו מלוה</strong> - כיון שנגנב ונתחייבה בו נמצא מלוה אצלה וכיון דתנא במלוה אע\"פ שלא נשתייר מקודשת פקדון נמי שלא נשתייר תתקדש ביה:"
+  },
+  "Rashi on Kiddushin 47b:3:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 47b:3:1",
+      "Rashi on Kiddushin 47b:3:2",
+      "Rashi on Kiddushin 47b:3:3",
+      "Rashi on Kiddushin 47b:3:4",
+      "Kiddushin 47b:3"
+    ],
+    "generatedAt": "2026-10-26T08:00:32.302Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא דלא קביל עליה אחריות</strong> - וכי איגנוב לא אחייבא ביה אבל קבלה עליה אחריות מקודשת:"
+  },
+  "Rashi on Kiddushin 47b:3:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 47b:3:1",
+      "Rashi on Kiddushin 47b:3:2",
+      "Rashi on Kiddushin 47b:3:3",
+      "Rashi on Kiddushin 47b:3:4"
+    ],
+    "generatedAt": "2026-10-26T08:02:11.911Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47b:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אדתני</strong> - במלוה נפלוג בפקדון גופיה דיש פקדון שאפי' לא נשתייר כלום מקודשת:"
+  },
+  "Rashi on Kiddushin 47b:4:1": {
+    "dependsOn": [
+      "Kiddushin 47b:4",
+      "Rashi on Kiddushin 47b:3:1",
+      "Rashi on Kiddushin 47b:3:2",
+      "Rashi on Kiddushin 47b:3:3",
+      "Rashi on Kiddushin 47b:3:4",
+      "Rashi on Kiddushin 47a:1:1",
+      "Rashi on Kiddushin 47a:1:2",
+      "Rashi on Kiddushin 47a:2:1",
+      "Rashi on Kiddushin 46b:1:1"
+    ],
+    "generatedAt": "2026-10-26T08:03:57.527Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא</strong> - על כרחך בדקבלה עליה אחריות קתני דאם לא נשתייר אינה מקודשת דמלוה היא והמקדש במלוה אינה מקודשת וכי נשתייר מקודשת בההיא שיור וגבי מלוה תריץ הכי אע\"פ שנשתייר אינה מקודשת משום דלהוצאה ניתנה:"
+  },
+  "Rashi on Kiddushin 47b:5:1": {
+    "dependsOn": [
+      "Kiddushin 47b:5",
+      "Rashi on Kiddushin 47b:5:1",
+      "Rashi on Kiddushin 47b:5:2",
+      "Rashi on Kiddushin 47b:5:3",
+      "Kiddushin 47b:1",
+      "Rashba on Kiddushin 47b:1",
+      "Rashi on Kiddushin 47a:13:1",
+      "Rashi on Kiddushin 47a:11:1",
+      "Rashi on Kiddushin 47a:10:1",
+      "Rashi on Kiddushin 47a:10:2",
+      "Ritva on Kiddushin 47b:1",
+      "Rashi on Kiddushin 47b:12:1",
+      "Rashi on Kiddushin 47b:12:2"
+    ],
+    "generatedAt": "2026-10-26T08:09:02.187Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במאי קמיפלגי</strong> - אי בלהוצאה ניתנה פליגי סוף סוף כתנאי אמרה רב לשמעתיה:"
+  },
+  "Rashi on Kiddushin 47b:5:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 47b:5:1",
+      "Rashi on Kiddushin 47b:5:2",
+      "Rashi on Kiddushin 47b:5:3",
+      "Steinsaltz on Kiddushin 47b:5",
+      "Steinsaltz comment #1 on Kiddushin 47b:5",
+      "Steinsaltz comment #2 on Kiddushin 47b:5",
+      "Rashi on Kiddushin 47b:1:1",
+      "Rashi on Kiddushin 47b:1:2",
+      "Rashi on Kiddushin 47b:3:1",
+      "Rashi on Kiddushin 47a:1:1",
+      "Rashi on Kiddushin 47a:1:2"
+    ],
+    "generatedAt": "2026-10-26T08:12:11.100Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אשכחתינהו לרבנן בבי רב</strong> - מצאתי התלמידים בבית המדרש דכל היכא דמיירי בבי רב לאו רב ממש הוא אלא בבית המדרש הוא:"
+  },
+  "Rashi on Kiddushin 47b:5:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 47b:5:1",
+      "Rashi on Kiddushin 47b:5:2",
+      "Kiddushin 47b:5"
+    ],
+    "generatedAt": "2026-10-26T08:13:29.835Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקאמרי</strong> - לעולם להוצאה ניתנה דברי הכל ואם שלח בה יד להוציא ממנה שוה פרוטה הרי החזיק בהם ואין הבעלים יכולין לחזור והויא ליה מלוה ואינה מקודשת ואפילו רובה בעין והכא בשלא הוציא ממנה כלום ולהכי אמר ר\"ש בן אלעזר מקודשת דקסבר מלוה שהיא כולה בעין ברשות בעלים היא לחזרה אם בא מלוה לחזור בו ולתובעה חוזר הילכך השתא הוא דיהבה ניהליה והוא הדין לאונסין קיימא נמי ברשותיה דאי מתאנסי פטור הלוה:"
+  },
+  "Rashi on Kiddushin 47b:8:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 47b:8:1",
+      "Rashi on Kiddushin 47b:8:2",
+      "Rashi on Kiddushin 47b:8:3",
+      "Tosafot on Kiddushin 47b:8:1"
+    ],
+    "generatedAt": "2026-10-26T08:17:27.920Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השואל קורדום</strong> - לעשרה ימים:"
+  },
+  "Rashi on Kiddushin 47b:8:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 47b:8:1",
+      "Rashi on Kiddushin 47b:8:3"
+    ],
+    "generatedAt": "2026-10-26T08:18:30.855Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ביקע בו</strong> - הויא חזקה להשתמש בו ימי שאילתו ואין המשאיל יכול לחזור בו:"
+  },
+  "Rashi on Kiddushin 47b:8:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 47b:8:1",
+      "Rashi on Kiddushin 47b:8:2",
+      "Kiddushin 47b:8",
+      "Kiddushin 47b:5"
+    ],
+    "generatedAt": "2026-10-26T08:22:22.416Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לימא כתנאי אמרה</strong> - דלר' מאיר אם ביקע בו קנאו לא ביקע בו לא קנאו ולת\"ק אפילו לא ביקע בו נמי דמלוה אינו ברשות בעלים לחזרה:"
+  },
+  "Rashi on Kiddushin 47b:9:1": {
+    "dependsOn": [
+      "Kiddushin 47b:9"
+    ],
+    "generatedAt": "2026-10-26T08:24:48.469Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלא הדרה בעינא</strong> - הילכך כיון דרשאי הלוה ליקח בהן סחורה מיד הויא ליה ברשותיה ואין המלוה יכול לחזור שהרי לא לכך הלוהו לקבל מעות הללו עצמן אלא מעות אחרים:"
+  },
+  "Tosafot on Kiddushin 47b:11:1": {
+    "dependsOn": [
+      "Kiddushin 47b:11",
+      "Steinsaltz on Kiddushin 47b:11",
+      "Ritva on Kiddushin 47b:3",
+      "Rashba on Kiddushin 47b:2"
+    ],
+    "generatedAt": "2026-10-26T08:31:16.329Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 47b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעולם שטר חוב דאחרים</strong> - אבל שטר חוב דידה אינה מקודשת וא\"ת ומאי שנא והא אידי ואידי מלוה היא וי\"ל דודאי מלוה דידה שקנאתו כבר ואינו נותן לה שום דבר חדש שהרי אותם המעות היו שלה קודם הקידושין דין הוא דאינה מקודשת אבל כשנתן לה המלוה דאחרים נותן לה דבר חדש שלא היה בידה קודם אמר דמקודשת דנהי דאין המלוה בעין מ\"מ זכות הוא לו כאילו היה בעין:"
+  },
+  "Tosafot on Kiddushin 47b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-26T08:40:47.268Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 47b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכ\"ע לית להו דרבי</strong> - מכאן יש להוכיח דאין הלכה כרבי מדהוה מצי למימר דכ\"ע אית להו דרבי דמסירת אותיות לחודה מהני והכא גבי אשה נמי מיירי שמסר לה את השטר והיינו טעמא דחכמים דאמרי אינה מקודשת משום דקסברי דצריך לומר בפה כשמוסר לו השטר קני לך איהו וכל שיעבודיה והוא לא אמר לה כך ופליגי בדרב פפא דכי היכי דאמר רב פפא דבעי למיכתב ליה קני לך איהו וכל שיעבודיה כמו כן צריך לומר הכי בפה למ\"ד אותיות במסירה נקנות ומדקאמר גמרא דכ\"ע לית להו דרבי שמע מינה דלית הלכתא כוותיה דרבי ובפרק המוכר את הספינה <span class=\"parenthesized\">(ב\"ב דף עז.)</span> יש ספרים חלוקין אית דגרסי דהלכה דאותיות נקנות במסירה ואית דגרסי דהלכה דאין אותיות נקנות במסירה ומשמע הכא כההיא גירסא דאין אותיות נקנות במסירה:"
+  },
+  "Tosafot on Kiddushin 47b:7:1": {
+    "dependsOn": [
+      "Kiddushin 47b:7",
+      "Kiddushin 47a:14",
+      "Maharsha: Chidushei Halachot on Kiddushin 47b:1",
+      "Kiddushin 47a:10",
+      "Kiddushin 47a:11",
+      "Kiddushin 47a:12",
+      "Kiddushin 47a:13"
+    ],
+    "generatedAt": "2026-10-26T08:16:12.056Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 47b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא מלוה ברשות בעלים לחזרה איכא בינייהו</strong> - פ' דלת\"ק דר\"ש אינה מקודשת משום דמלוה ברשות לוה קיימא ור\"ש בן אלעזר דאמר מקודשת משום דמלוה ברשות מלוה קיימא וא\"ת אכתי נימא רב כתנאי אמרה לשמעתיה דהא איהו דאמר המקדש במלוה אינה מקודשת לא מצי סבר כר\"ש בן אלעזר וי\"ל דרב נמי סבר כוותיה ולא תיקשי מידי דהא דאמר רב אינה מקודשת מיירי במלוה שהתחיל להוציאה ובהא קאמר דאינה מקודשת אפילו נשתייר שוה פרוטה ור\"ש בן אלעזר לא איירי אלא במלוה שהיא עדיין בעין ואע\"ג דאמר במילתיה דר\"ש אם נשתייר ש\"פ מקודשת דמשמע אע\"פ שהתחיל להוציאה י\"ל דר\"ש בן אלעזר מיירי שנגנבו או שאבדו שלא שלח בהן יד אבל אם התחיל להוציאה אינה מקודשת:"
+  },
+  "Tosafot on Kiddushin 47b:8:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 47b:8:1",
+      "Rashi on Kiddushin 47b:8:2",
+      "Rashi on Kiddushin 47b:8:3",
+      "Bava Metzia 99a:10",
+      "Bava Metzia 99a:11",
+      "Bava Metzia 99a:12",
+      "Bava Metzia 99a:13",
+      "Bava Metzia 99a:1",
+      "Bava Metzia 99a:2",
+      "Bava Metzia 99a:3",
+      "Bava Metzia 99a:4",
+      "Bava Metzia 99a:5"
+    ],
+    "generatedAt": "2026-10-26T08:24:02.763Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 47b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא הא דאמר רב הונא השואל קורדום מחבירו ביקע בו קנאו</strong> - לענין שלא יוכל המשאיל לחזור בו קאמר אבל לענין להתחייב באונסין כי לא ביקע בו נמי חייב באונסין כדאמר בפרק השואל <span class=\"parenthesized\">(ב\"מ דף צט.)</span> דמשעת משיכה חייב באונסיה:"
+  }
+}

@@ -1,0 +1,353 @@
+{
+  "Rashi on Kiddushin 47a:10:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 47a:10:2",
+      "Steinsaltz on Kiddushin 47a:10"
+    ],
+    "generatedAt": "2026-10-26T07:28:40.659Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינה מקודשת</strong> - אפילו ישנה בעין:"
+  },
+  "Rashi on Kiddushin 47a:10:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 47a:10:1",
+      "Steinsaltz on Kiddushin 47a:10",
+      "Ritva on Kiddushin 47a:7",
+      "Rashi on Kiddushin 47a:11:1"
+    ],
+    "generatedAt": "2026-10-26T07:30:33.197Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להוצאה ניתנה</strong> - הלוה רשאי להוציאה בהוצאה ואינו חייב להעמידה בעיסקא שתהא מצויה בכל עת שיתבענו וכיון דלהוצאה ניתנה הויא לה כי דידה ולא יהיב לה מידי:"
+  },
+  "Rashi on Kiddushin 47a:11:1": {
+    "dependsOn": [
+      "Kiddushin 47a:11",
+      "Rashi on Kiddushin 47a:10:1",
+      "Rashi on Kiddushin 47a:10:2",
+      "Rashi on Kiddushin 47a:12:1",
+      "Steinsaltz on Kiddushin 47a:11",
+      "Rashba on Kiddushin 47a:3",
+      "Tosafot on Kiddushin 47a:7:1",
+      "Tosafot on Kiddushin 47a:9:1",
+      "Hasagot HaRa'avad on Mishneh Torah, Sales 7:4:1",
+      "Lechem Mishneh on Mishneh Torah, Sales 5:4:2",
+      "Rashi on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-10-26T07:33:33.421Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושוין במכר</strong> - אם מכר לו קרקע שנקנה בכסף אם אמר ליה מלוה שיש לי עליך יהא לך בשביל המכר ונתרצה לו קנה הלוקח אם ישנה בעין:"
+  },
+  "Rashi on Kiddushin 47a:12:1": {
+    "dependsOn": [
+      "Kiddushin 47a:12"
+    ],
+    "generatedAt": "2026-10-26T07:36:08.670Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במילי אוחרי</strong> - בדבר אחר דהך מלוה לא במלוה שיש לו עליה קאמר אלא שאמר לה התקדשי לי במנה ונמצא מנה חסר דינר ואמר לה הרי הוא עלי מלוה:"
+  },
+  "Rashi on Kiddushin 47a:12:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 47a:12:1",
+      "Rashi on Kiddushin 47a:12:2",
+      "Rashi on Kiddushin 47a:12:3",
+      "Steinsaltz on Kiddushin 47a:12",
+      "Rashi on Kiddushin 47a:1:1",
+      "Rashi on Kiddushin 47a:2:1",
+      "Rashi on Kiddushin 47a:10:1"
+    ],
+    "generatedAt": "2026-10-26T07:37:50.972Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כסיפא לה מילתא למיתבעיה</strong> - ולא סמכה דעתה הילכך אינה מקודשת:"
+  },
+  "Rashi on Kiddushin 47a:12:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 47a:12:1",
+      "Rashi on Kiddushin 47a:12:2",
+      "Steinsaltz on Kiddushin 47a:12",
+      "Rashi on Kiddushin 47a:13:1",
+      "Rashi on Kiddushin 47a:1:1",
+      "Rashi on Kiddushin 47a:2:1",
+      "Rashi on Kiddushin 2a:1:1"
+    ],
+    "generatedAt": "2026-10-26T07:39:54.983Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47a:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כסיפא לה מילתא</strong> - דדבר מועט הוא דינר ממנה:"
+  },
+  "Rashi on Kiddushin 47a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-26T07:40:51.811Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דר\"א</strong> - שלא קבלה מכל המנה אלא דינר לא כסיפא לה מילתא למיתבעיה את המנה:"
+  },
+  "Rashi on Kiddushin 47a:14:1": {
+    "dependsOn": [
+      "Kiddushin 47a:14",
+      "Steinsaltz on Kiddushin 47a:14"
+    ],
+    "generatedAt": "2026-10-26T07:42:57.722Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפילו לא נשתייר כו'</strong> - מקודשת בההיא הנאה דמחיל לה גבה:"
+  },
+  "Rashi on Kiddushin 47a:1:1": {
+    "dependsOn": [
+      "Kiddushin 47a:1",
+      "Rashi on Kiddushin 47a:1:1",
+      "Rashi on Kiddushin 47a:1:2",
+      "Rashi on Kiddushin 47a:1:3",
+      "Kiddushin 46a:5",
+      "Steinsaltz on Kiddushin 47a:1",
+      "Rashi on Kiddushin 46a:5:1",
+      "Rashi on Kiddushin 46a:11:1",
+      "Rashi on Kiddushin 46a:5:3",
+      "Rashi on Kiddushin 2a:1:1",
+      "Rashi on Kiddushin 2a:1:2"
+    ],
+    "generatedAt": "2026-10-26T06:35:42.484Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שנו</strong> - היכא דאוכלת ראשונה ראשונה דאין מצטרפת לפרוטה:"
+  },
+  "Rashi on Kiddushin 47a:1:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 47a:1:1",
+      "Rashi on Kiddushin 47a:1:3",
+      "Rashi on Kiddushin 47a:2:1",
+      "Rashi on Kiddushin 47a:2:2"
+    ],
+    "generatedAt": "2026-10-26T06:37:08.858Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא דאמר לה בזו ובזו ובזו</strong> - דלא גמרי קידושין ולא נקנה לה עד נתינה אחרונה שהיא גמר דבורו וכבר היו הראשונות מלוה:"
+  },
+  "Rashi on Kiddushin 47a:1:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 47a:1:1",
+      "Rashi on Kiddushin 47a:1:2",
+      "Rashi on Kiddushin 47a:1:3",
+      "Kiddushin 47a:1",
+      "Kiddushin 46a:5",
+      "Ritva on Kiddushin 47a:1",
+      "Steinsaltz on Kiddushin 47a:1",
+      "Rashi on Kiddushin 46b:1:1",
+      "Rashi on Kiddushin 46a:5:1"
+    ],
+    "generatedAt": "2026-10-26T06:39:47.391Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל באלו</strong> - מקבלת הראשונה לא באתה לידה בתורת מלוה דמשנגמר הדיבור הקנה לה בתורת קידושין וכי אכלה מדידה קא אכלה ואפילו אכלה ראשונה ראשונה מקודשת אם יש בכולן שוה פרוטה:"
+  },
+  "Rashi on Kiddushin 47a:2:1": {
+    "dependsOn": [
+      "Kiddushin 47a:2",
+      "Kiddushin 47a:4",
+      "Rashi on Kiddushin 47a:2:1",
+      "Rashi on Kiddushin 47a:2:2",
+      "Rashi on Kiddushin 47a:2:3",
+      "Rashi on Kiddushin 47a:2:4",
+      "Rashi on Kiddushin 47a:7:1",
+      "Kiddushin 47a:1",
+      "Kiddushin 47a:8",
+      "Chokhmat Shlomo on Kiddushin 47a:1"
+    ],
+    "generatedAt": "2026-10-26T06:51:46.590Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הניחא כו'</strong> - לאו לרבא פרכינן אלא לעיל קאי דמתרצינן היתה אוכלת דמתני' לרב ושמואל ארישא ולרבי אמי אסיפא הניחא לר' אמי דאוקמה להיתה אוכלת דמתניתין אסיפא דהוי כללא ומאי באחת באחרונה הכא נמי היתה אוכלת דברייתא קאי נמי אכללא כדתני בה בזו ובזו אם יש בכולן שוה פרוטה מקודשת ותנא פלוגתא גבי נטלתו ואכלתו למימר עד שיהא באחת מהן מצינו נמי לתרוצי עד שיהא באחרונה אלא לרב ושמואל דאמרי באחת אפילו אחדא מקמייתא נמי אמר ואפרטא דהתקדשי התקדשי קאי ואוכלת איצטריכא ליה האי באחת דברייתא היכי מיתרצי הא בהך ברייתא לא תנא שום פרטא דהא בזו ובזו ובזו כללא חשיב לה וכ\"ש היכא דקתני ועוד בזו ועוד בזו ועוד בזו וקתני גבי אוכלת עד שיהא באחת מהן ואי אקמייתא דאכלתנהו מיד נמי קאמר דאי איכא בחדא שוה פרוטה מקודשת קשיא הא הוה ליה מלוה: ה\"ג הא מני רבי היא דאמר ל\"ש כזית כזית ול\"ש כזית וכזית פרטא הוי. והך סיפא דקתני בזו נטלתו ואכלתו ועוד בזו ועוד בזו תנא אחרינא הוא ולאו היינו תנא דרישא ומציעתא וס\"ל כרבי ותנא אוכלת והוא הדין למנחת ואוכלת איצטריכא ליה לאשמועינן דאע\"ג דמקרבה הנייתה לא מקדשה בפחות מש\"פ ולהכי תנא בזו בזו תרי זימני גבי נטלתו ואכלתו ועוד בזו ועוד בזו ותנא אם יש באחת מכולן שוה פרוטה מקודשת משום דס\"ל התקדשי אכל חדא קאי התקדשי בזו התקדשי בזו ועוד בזו התקדשי והך דרבי בזבחים בפ\"ב במחשב בשחיטת הזבח בין ששחט ע\"מ לאכול כזית למחר כזית בחוץ בין שאמר כזית למחר וכזית בחוץ הוו להו שתי מחשבות ולרבי יהודה דאזיל בתר לשון ראשון הוי פיגול וחייבין עליו כרת:"
+  },
+  "Rashi on Kiddushin 47a:2:2": {
+    "dependsOn": [
+      "[",
+      "Rashi on Kiddushin 47a:2:2"
+    ],
+    "generatedAt": "2026-10-26T06:55:34.515Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באלון ברמון באגוז</strong> - אלון אגלנ\"ט בלע\"ז והוא מאכל חזיר יער ובלשון אשכנז אייכל\"ן וגם בני אדם אוכלין וצולין אותם באש כמו ערמונים:"
+  },
+  "Rashi on Kiddushin 47a:2:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 47a:2:1",
+      "Rashi on Kiddushin 47a:2:2",
+      "Rashi on Kiddushin 47a:2:3",
+      "Rashi on Kiddushin 47a:2:4",
+      "Kiddushin 47a:2",
+      "Rashi on Kiddushin 47a:1:1",
+      "Rashi on Kiddushin 47a:1:2",
+      "Rashi on Kiddushin 47a:1:3",
+      "Steinsaltz on Kiddushin 47a:2",
+      "Tosafot on Kiddushin 47a:2:1",
+      "Kiddushin 46a:5",
+      "Rashi on Kiddushin 46a:5:1",
+      "Rashi on Kiddushin 46a:5:2",
+      "Rashi on Kiddushin 46a:5:3"
+    ],
+    "generatedAt": "2026-10-26T06:58:39.767Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינה מקודשת</strong> - אפילו ישנה בעין:"
+  },
+  "Rashi on Kiddushin 47a:2:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 47a:2:1",
+      "Rashi on Kiddushin 47a:2:2",
+      "Rashi on Kiddushin 47a:2:3",
+      "Rashi on Kiddushin 47a:2:4",
+      "Kiddushin 47a:2",
+      "Chidushei Halachot on Kiddushin 47a:1",
+      "Steinsaltz on Kiddushin 47a:2",
+      "Tosafot on Kiddushin 47a:2:1",
+      "Kiddushin 47a:5",
+      "Kiddushin 47a:6"
+    ],
+    "generatedAt": "2026-10-26T07:09:34.487Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47a:2:4"
+    ],
+    "sourceText": "ה\"ג בזו ובזו אם יש בכולן כו' בזו נטלתו ואכלתו ועוד בזו ועוד בזו וכו'. והאי דפלגינהו לתרי בבי דרישא ומציעתא ותנא בתרוייהו אם יש בכולן משום דבעי איפלוגי במציעתא בין אוכלת למנחת כדמפרש ואזיל:"
+  },
+  "Rashi on Kiddushin 47a:7:1": {
+    "dependsOn": [
+      "Kiddushin 47a:7"
+    ],
+    "generatedAt": "2026-10-26T07:13:51.442Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הניחא כו'</strong> - לאו לרבא פרכינן אלא לעיל קאי דמתרצינן היתה אוכלת דמתני' לרב ושמואל ארישא ולרבי אמי אסיפא הניחא לר' אמי דאוקמה להיתה אוכלת דמתניתין אסיפא דהוי כללא ומאי באחת באחרונה הכא נמי היתה אוכלת דברייתא קאי נמי אכללא כדתני בה בזו ובזו אם יש בכולן שוה פרוטה מקודשת ותנא פלוגתא גבי נטלתו ואכלתו למימר עד שיהא באחת מהן מצינו נמי לתרוצי עד שיהא באחרונה אלא לרב ושמואל דאמרי באחת אפילו אחדא מקמייתא נמי אמר ואפרטא דהתקדשי התקדשי קאי ואוכלת איצטריכא ליה האי באחת דברייתא היכי מיתרצי הא בהך ברייתא לא תנא שום פרטא דהא בזו ובזו ובזו כללא חשיב לה וכ\"ש היכא דקתני ועוד בזו ועוד בזו ועוד בזו וקתני גבי אוכלת עד שיהא באחת מהן ואי אקמייתא דאכלתנהו מיד נמי קאמר דאי איכא בחדא שוה פרוטה מקודשת קשיא הא הוה ליה מלוה:"
+  },
+  "Rashi on Kiddushin 47a:9:1": {
+    "dependsOn": [
+      "Kiddushin 47a:9",
+      "Kiddushin 47a:7",
+      "Rashi on Kiddushin 47a:7:1",
+      "Rashi on Shevuot 38a:13:1",
+      "Tosafot on Kiddushin 47a:9:1",
+      "Chokhmat Shlomo on Kiddushin 47a:1",
+      "Rashi on Kiddushin 47a:1:1",
+      "Rashi on Kiddushin 47a:2:1",
+      "Rashi on Kiddushin 47a:2:2",
+      "Rashi on Kiddushin 47a:2:3",
+      "Rashi on Kiddushin 47a:2:4",
+      "Rashi on Kiddushin 46b:11:1",
+      "Rashi on Kiddushin 46b:11:2",
+      "Rashi on Kiddushin 47a:10:1",
+      "Rashi on Kiddushin 47a:10:2",
+      "Tosafot on Kiddushin 2a:1:3"
+    ],
+    "generatedAt": "2026-10-26T07:25:05.864Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 47a:9:1"
+    ],
+    "sourceText": "ה\"ג הא מני רבי היא דאמר ל\"ש כזית כזית ול\"ש כזית וכזית פרטא הוי. והך סיפא דקתני בזו נטלתו ואכלתו ועוד בזו ועוד בזו תנא אחרינא הוא ולאו היינו תנא דרישא ומציעתא וס\"ל כרבי ותנא אוכלת והוא הדין למנחת ואוכלת איצטריכא ליה לאשמועינן דאע\"ג דמקרבה הנייתה לא מקדשה בפחות מש\"פ ולהכי תנא בזו בזו תרי זימני גבי נטלתו ואכלתו ועוד בזו ועוד בזו ותנא אם יש באחת מכולן שוה פרוטה מקודשת משום דס\"ל התקדשי אכל חדא קאי התקדשי בזו התקדשי בזו ועוד בזו התקדשי והך דרבי בזבחים בפ\"ב במחשב בשחיטת הזבח בין ששחט ע\"מ לאכול כזית למחר כזית בחוץ בין שאמר כזית למחר וכזית בחוץ הוו להו שתי מחשבות ולרבי יהודה דאזיל בתר לשון ראשון הוי פיגול וחייבין עליו כרת:"
+  },
+  "Tosafot on Kiddushin 47a:2:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 47a:2:1",
+      "Rashi on Kiddushin 47a:2:2",
+      "Rashi on Kiddushin 47a:2:3",
+      "Rashi on Kiddushin 47a:2:4",
+      "Chokhmat Shlomo on Kiddushin 47a:5",
+      "Kiddushin 47a:2",
+      "Tosafot on Kiddushin 47a:7:1",
+      "Tosafot on Kiddushin 47a:9:1"
+    ],
+    "generatedAt": "2026-10-26T07:11:58.922Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 47a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשון רש\"י ה\"ג בזו ובזו אם יש בכולן ש\"פ כו'</strong> - והאי דפלגינהו לתרי בבי רישא דקתני באלו ומציעתא דקתני בזו ובזו אע\"ג דתנא בתרוייהו אם יש בכולן כו' משום דקבעי לפלוגי במציעתא בין אוכלת למנחת כדמפרש ואזיל:"
+  },
+  "Tosafot on Kiddushin 47a:7:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 47a:7:1",
+      "Tosafot on Kiddushin 47a:2:1",
+      "Tosafot on Kiddushin 47a:9:1",
+      "Kiddushin 47a:7",
+      "Steinsaltz on Kiddushin 47a:7",
+      "Tosafot on Kiddushin 47a:7:1"
+    ],
+    "generatedAt": "2026-10-26T07:17:58.368Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 47a:7:1"
+    ],
+    "sourceText": "לשון רש\"י הניחא לאו לרבא פרכינן אלא לעיל קאי דמתרצינן דהיתה אוכלת דמתניתין לרב ושמואל קאי ארישא ולר' אמי אסיפא:"
+  },
+  "Tosafot on Kiddushin 47a:9:1": {
+    "dependsOn": [
+      "Kiddushin 47a:9",
+      "Rashi on Kiddushin 47a:9:1",
+      "Zevachim 30b:1",
+      "Zevachim 30b:2",
+      "Kiddushin 47a:4",
+      "Kiddushin 47a:5",
+      "Kiddushin 47a:3"
+    ],
+    "generatedAt": "2026-10-26T07:27:42.099Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 47a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא מני רבי היא דאמר ל\"ש כזית כזית לא שנא כזית וכזית פרטא הוי</strong> - והך סיפא דקתני בזו נטלתו ואכלתו ועוד בזו ועוד בזו הוה פרטא כמו התקדשי התקדשי ותנא אוכלת דבעינן ש\"פ וה\"ה מנחת ואוכלת איצטריכא ליה לאשמועינן דאע\"ג דמקרבא הנייתה לא מקדשה בפחות משוה פרוטה ולאו היינו ת\"ק דמציעתא דתנא בזו ובזו אם יש לו בכולן שוה פרוטה מקודשת דלרבי פרטא הוה ובעינן ש\"פ באחת מהן אלא תרי תנאי הוו ומי ששנה זו לא שנה זו מילתא דרבי בפ\"ב דזבחים <span class=\"parenthesized\">(דף ל:)</span>:"
+  }
+}
