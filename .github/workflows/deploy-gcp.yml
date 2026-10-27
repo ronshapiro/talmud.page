@@ -134,6 +134,43 @@ jobs:
     - id: 'verify-auth'
       run: 'gcloud auth list'
 
+    - id: 'cleanup-versions-before-deploy'
+      name: 'Clean up old versions before deployment'
+      run: |
+        CUTOFF_DATE=$(date -u -d '30 days ago' '+%Y-%m-%d' 2>/dev/null || date -u -v-30d '+%Y-%m-%d')
+        echo "Looking for inactive versions older than 30 days (created before ${CUTOFF_DATE})..."
+        OLD_VERSIONS=$(gcloud app versions list \
+          --service=default \
+          --filter="traffic_split=0 AND version.createTime < '${CUTOFF_DATE}'" \
+          --format="value(id)")
+
+        if [ -n "$OLD_VERSIONS" ]; then
+          echo "Found $(echo "$OLD_VERSIONS" | wc -w) inactive version(s) older than 30 days to delete."
+          echo "$OLD_VERSIONS" | xargs -n 20 gcloud app versions delete --service=default --quiet
+        fi
+
+        CURRENT_VERSION_COUNT=$(gcloud app versions list --service=default --format="value(id)" | wc -l)
+        echo "Current App Engine version count: ${CURRENT_VERSION_COUNT}"
+
+        # If still approaching the maximum 210 version limit, delete the oldest inactive versions to make room
+        while [ "$CURRENT_VERSION_COUNT" -ge 205 ]; do
+          OLDEST_INACTIVE_VERSION=$(gcloud app versions list \
+            --service=default \
+            --filter="traffic_split=0" \
+            --sort-by="version.createTime" \
+            --format="value(id)" \
+            --limit=1)
+
+          if [ -z "$OLDEST_INACTIVE_VERSION" ]; then
+            echo "No inactive versions available to delete."
+            break
+          fi
+
+          echo "Capacity safeguard: deleting oldest inactive version ${OLDEST_INACTIVE_VERSION}..."
+          gcloud app versions delete "$OLDEST_INACTIVE_VERSION" --service=default --quiet
+          CURRENT_VERSION_COUNT=$((CURRENT_VERSION_COUNT - 1))
+        done
+
     - id: 'deploy'
       uses: 'google-github-actions/deploy-appengine@v2'
       with:

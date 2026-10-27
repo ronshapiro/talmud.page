@@ -1,0 +1,78 @@
+name: Cleanup Old App Engine Versions
+
+on:
+  schedule:
+    # Run daily at 03:00 UTC
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+    inputs:
+      days:
+        description: 'Delete inactive versions older than this many days'
+        required: false
+        default: '30'
+
+jobs:
+  cleanup_old_versions:
+    runs-on: ubuntu-latest
+    if: github.repository == 'ronshapiro/talmud.page'
+
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+      pull-requests: 'read'
+
+    steps:
+    - id: 'auth'
+      uses: 'google-github-actions/auth@v2'
+      with:
+        project_id: 'talmud'
+        credentials_json: '${{ secrets.GCP_DEPLOY_SERVICE_ACCOUNT }}'
+
+    - name: Clean up inactive versions older than threshold
+      env:
+        DAYS: ${{ github.event.inputs.days || '30' }}
+      run: |
+        CUTOFF_DATE=$(date -u -d "${DAYS} days ago" '+%Y-%m-%d' 2>/dev/null || date -u -v-"${DAYS}"d '+%Y-%m-%d')
+        echo "Looking for inactive versions older than ${DAYS} days (created before ${CUTOFF_DATE})..."
+
+        OLD_VERSIONS=$(gcloud app versions list \
+          --service=default \
+          --filter="traffic_split=0 AND version.createTime < '${CUTOFF_DATE}'" \
+          --format="value(id)")
+
+        if [ -n "$OLD_VERSIONS" ]; then
+          VERSION_COUNT=$(echo "$OLD_VERSIONS" | wc -w)
+          echo "Found ${VERSION_COUNT} inactive version(s) older than ${DAYS} days to delete:"
+          echo "$OLD_VERSIONS"
+          echo "$OLD_VERSIONS" | xargs -n 20 gcloud app versions delete --service=default --quiet
+          echo "Successfully deleted ${VERSION_COUNT} old versions."
+        else
+          echo "No inactive versions older than ${DAYS} days found."
+        fi
+
+    - name: Clean up preview versions for closed pull requests
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        echo "Looking for inactive pull request preview versions..."
+        PULL_REQUEST_VERSIONS=$(gcloud app versions list \
+          --service=default \
+          --filter="id ~ ^pr- AND traffic_split=0" \
+          --format="value(id)")
+
+        if [ -z "$PULL_REQUEST_VERSIONS" ]; then
+          echo "No pull request preview versions found."
+          exit 0
+        fi
+
+        for VERSION_IDENTIFIER in $PULL_REQUEST_VERSIONS; do
+          PULL_REQUEST_NUMBER="${VERSION_IDENTIFIER#pr-}"
+          PULL_REQUEST_STATE=$(gh pr view "$PULL_REQUEST_NUMBER" --json state --jq .state -R "${{ github.repository }}" 2>/dev/null || true)
+          echo "Version ${VERSION_IDENTIFIER}: Pull Request #${PULL_REQUEST_NUMBER} state is '${PULL_REQUEST_STATE}'."
+
+          if [ "$PULL_REQUEST_STATE" = "CLOSED" ] || [ "$PULL_REQUEST_STATE" = "MERGED" ]; then
+            echo "Deleting preview version ${VERSION_IDENTIFIER} for closed/merged pull request #${PULL_REQUEST_NUMBER}..."
+            gcloud app versions delete "$VERSION_IDENTIFIER" --service=default --quiet
+            echo "Successfully deleted ${VERSION_IDENTIFIER}."
+          fi
+        done

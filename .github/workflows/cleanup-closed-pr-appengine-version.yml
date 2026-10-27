@@ -1,0 +1,41 @@
+name: Cleanup Closed PR App Engine Version
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  delete_closed_pr_version:
+    runs-on: ubuntu-latest
+    if: github.repository == 'ronshapiro/talmud.page'
+
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+
+    steps:
+    - id: 'auth'
+      uses: 'google-github-actions/auth@v2'
+      with:
+        project_id: 'talmud'
+        credentials_json: '${{ secrets.GCP_DEPLOY_SERVICE_ACCOUNT }}'
+
+    - name: Delete closed pull request preview version
+      env:
+        PULL_REQUEST_NUMBER: ${{ github.event.pull_request.number }}
+      run: |
+        VERSION_IDENTIFIER="pr-${PULL_REQUEST_NUMBER}"
+        echo "Checking if App Engine preview version ${VERSION_IDENTIFIER} exists..."
+
+        if gcloud app versions describe "${VERSION_IDENTIFIER}" --service=default >/dev/null 2>&1; then
+          TRAFFIC_SPLIT=$(gcloud app versions describe "${VERSION_IDENTIFIER}" --service=default --format="value(traffic_split)")
+          if [ "$TRAFFIC_SPLIT" = "0.0" ] || [ "$TRAFFIC_SPLIT" = "0" ] || [ -z "$TRAFFIC_SPLIT" ]; then
+            echo "Deleting preview version ${VERSION_IDENTIFIER}..."
+            gcloud app versions delete "${VERSION_IDENTIFIER}" --service=default --quiet
+            echo "Successfully deleted ${VERSION_IDENTIFIER}."
+          else
+            echo "Safety warning: version ${VERSION_IDENTIFIER} has active traffic (${TRAFFIC_SPLIT}). Skipping deletion."
+          fi
+        else
+          echo "Version ${VERSION_IDENTIFIER} does not exist. Nothing to delete."
+        fi
