@@ -15,7 +15,7 @@ You're translating and punctuating a single commentary comment on the Talmud, fo
      - **Leave untouched without `<abbr>` tags**:
        - Truncation markers: וגו' and וכו' (or כו').
        - Opening section headers: מתני' and גמ' when they appear as the first word / dibbur hamatchil of a comment.
-       - Page, daf, and chapter reference numbers (e.g. דף י"ב, פרק ד').
+       - Page, daf, and chapter reference numbers (e.g. דף י"ב, פרק ד'; note that פ"ק for פרק קמא is not actually a chapter name and may be expanded with an `<abbr>` tag).
        - Universal divine names, standard acronyms, and honorifics: הקב"ה, ה'/'ד, רש"י, חז"ל, ז"ל, זצ"ל.
    - **Explanations**: If brief explanatory or contextual words are needed in the Hebrew to make the thought coherent (e.g. an implied subject or verb), wrap them in `<span class="explanation">...</span>`. Do NOT use brackets (`[...]`) for explanations, because brackets are used in printed editions for textual emendations.
    - **Fidelity**: Outside of `<span class="explanation">...</span>`, preserve the exact source text wording without adding, removing, or changing any words. Preserve existing HTML tags around the same words.
