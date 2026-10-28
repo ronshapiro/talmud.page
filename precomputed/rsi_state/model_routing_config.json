@@ -1,23 +1,15 @@
 {
   "agy": {
     "default": {
-      "generateModel": "gemini-3.8-flash-high",
+      "generateModel": "gemini-3.8-flash-medium",
       "critiqueModel": "gemini-3.8-flash-medium"
     },
     "flash-argon": {
-      "generateModel": "gemini-3.8-flash-high",
+      "generateModel": "gemini-3.8-flash-medium",
       "critiqueModel": "gemini-4-argon-medium"
     },
-    "sonnet-4.6": {
-      "generateModel": "claude-sonnet-4-6",
-      "critiqueModel": "gemini-3.8-flash-medium"
-    },
-    "opus-4.6": {
-      "generateModel": "claude-opus-4-6-thinking",
-      "critiqueModel": "claude-opus-4-6-thinking"
-    },
-    "sonnet-5.5": {
-      "generateModel": "claude-sonnet-5-5-high",
+    "sonnet": {
+      "generateModel": "claude-sonnet-5-5-medium",
       "critiqueModel": "gemini-3.8-flash-medium"
     }
   },
@@ -55,24 +47,12 @@
   },
   "claude": {
     "default": {
-      "generateModel": "claude-sonnet-5",
-      "critiqueModel": "claude-sonnet-5"
-    },
-    "sonnet-5.5": {
       "generateModel": "claude-sonnet-5-5",
       "critiqueModel": "claude-sonnet-5-5"
     },
-    "haiku-5.5": {
+    "haiku": {
       "generateModel": "claude-haiku-5-5",
       "critiqueModel": "claude-sonnet-5-5"
     },
-    "haiku-sonnet-5.5": {
-      "generateModel": "claude-haiku-5-5",
-      "critiqueModel": "claude-sonnet-5-5"
-    },
-    "haiku-5.5-sonnet-5.5": {
-      "generateModel": "claude-haiku-5-5",
-      "critiqueModel": "claude-sonnet-5-5"
-    }
   }
 }
