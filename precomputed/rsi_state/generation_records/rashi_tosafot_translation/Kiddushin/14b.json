@@ -1,4 +1,92 @@
 {
+  "Rashi on Kiddushin 14b:10:1": {
+    "costUsd": 0.08583559999999998,
+    "dependsOn": [],
+    "generatedAt": "2026-10-27T15:06:02.388Z",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבו מוסר לו שפחה כנענית</strong> - שיהו לו ולדות ממנה:"
+  },
+  "Rashi on Kiddushin 14b:10:2": {
+    "costUsd": 0.052448400000000006,
+    "dependsOn": [],
+    "generatedAt": "2026-10-27T15:06:15.447Z",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין רבו מוסר לו שפחה כנענית</strong> - ואסורה לו אבל במכרוהו ב\"ד כתיב <span class=\"parenthesized\">(שמות כ״א:ד׳)</span> אם אדוניו יתן לו אשה:"
+  },
+  "Rashi on Kiddushin 14b:11:1": {
+    "costUsd": 0.1613092,
+    "dependsOn": [],
+    "generatedAt": "2026-10-27T15:06:53.798Z",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא יליף שכיר שכיר</strong> - הילכך דלא כתיב ביה לא כתיב ביה:"
+  },
+  "Rashi on Kiddushin 14b:12:1": {
+    "costUsd": 0.0530284,
+    "dependsOn": [],
+    "generatedAt": "2026-10-27T15:07:10.648Z",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכולי עלמא יליף שכיר שכיר</strong> - לשאר מילי והני לת\"ק בהדיא כתיב מיעוטייהו ולא אהני ליה גזירה שוה:"
+  },
+  "Rashi on Kiddushin 14b:13:1": {
+    "costUsd": 0.0510164,
+    "dependsOn": [],
+    "generatedAt": "2026-10-27T15:07:27.792Z",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא ליורשין</strong> - דאינו עובד לא את הבת ולא את האח אם אין לו בן אבל עובד הוא את הבן כדלקמן <span class=\"parenthesized\">(קידושין דף יז:)</span>:"
+  },
+  "Rashi on Kiddushin 14b:14:1": {
+    "costUsd": 0.0544904,
+    "dependsOn": [],
+    "generatedAt": "2026-10-27T15:07:57.293Z",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועבדך אחרינא כתיב</strong> - כי משנה שכר שכיר עבדך:"
+  },
+  "Rashi on Kiddushin 14b:14:2": {
+    "costUsd": 0.050368399999999994,
+    "dependsOn": [],
+    "generatedAt": "2026-10-27T15:08:09.936Z",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להרצאת אדון</strong> - להרצות על הענקו שלא יקשה בעיניו כדמפרש קרא:"
+  },
+  "Rashi on Kiddushin 14b:15:1": {
+    "costUsd": 0.10313080000000001,
+    "dependsOn": [],
+    "generatedAt": "2026-10-27T15:08:38.510Z",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אזנו</strong> - מיעוט הוא דקרא יתירא לדרשה דהא כתיב ונתת באזנו:"
+  },
   "Rashi on Kiddushin 14b:1:1": {
     "dependsOn": [
       "[",
@@ -227,6 +315,39 @@
       "Rashi on Kiddushin 14b:9:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">ויתר על שש</strong> - אם התנה לימכר לעשר שנים:"
+  },
+  "Rashi on Kiddushin 14b:9:2": {
+    "costUsd": 0.0528304,
+    "dependsOn": [],
+    "generatedAt": "2026-10-27T15:05:43.237Z",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 14b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכרוהו ב\"ד</strong> - דכתיב <span class=\"parenthesized\">(שם)</span> ועבדך שש שנים אבל במוכר עצמו לא כתיב שש דכי תקנה עבד עברי מיד אחרים משמע ורציעה במכרוהו ב\"ד כתיבא וכן הענקה דגבי ימכר לך כתיבי:"
+  },
+  "Tosafot on Kiddushin 14b:13:1": {
+    "costUsd": 0.0527904,
+    "dependsOn": [],
+    "generatedAt": "2026-10-27T15:07:40.158Z",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 14b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לך ולא ליורש</strong> - פי' כגון בת ואח אבל עובד הוא את הבן כדלקמן <span class=\"parenthesized\">(קידושין דף יז:)</span>:"
+  },
+  "Tosafot on Kiddushin 14b:15:1": {
+    "costUsd": 0.10660359999999999,
+    "dependsOn": [],
+    "generatedAt": "2026-10-27T15:09:06.255Z",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 14b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא אזנו של מוכר עצמו</strong> - וא\"ת למ\"ל אזנו למעוטי דמוכר עצמו אינו נרצע תיפוק ליה דמוכר עצמו אינו נרצע דאין רבו מוסר לו שפחה כנענית כדלקמן <span class=\"parenthesized\">(קידושין דף כא:)</span> דבעינן אהבתי את אשתי ואת בני וי\"ל דאי לאו אזנו הוה ילפינן מג\"ש דשכיר שכיר ממכרוהו ב\"ד דאף על גב דלא מצי אמר אהבתי את אשתי ה\"א דנרצע קמ\"ל אזנו דאין נרצע:"
   },
   "Tosafot on Kiddushin 14b:3:1": {
     "dependsOn": [],

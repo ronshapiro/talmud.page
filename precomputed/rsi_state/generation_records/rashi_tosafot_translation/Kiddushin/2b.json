@@ -188,33 +188,15 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">וניתני הכא האיש קונה</strong> - כי היכי דתני בלישנא דרבנן האיש מקדש:"
   },
   "Rashi on Kiddushin 2b:4:1": {
-    "dependsOn": [
-      "Kiddushin 2b:3",
-      "Kiddushin 2b:4",
-      "Rashi on Kiddushin 2b:4:1",
-      "Rashi on Kiddushin 2b:4:2",
-      "Rashi on Kiddushin 2a:1:1",
-      "Rashi on Kiddushin 2a:1:2",
-      "Rashi on Kiddushin 2b:3:1",
-      "Rashi on Kiddushin 2b:10:1",
-      "Rashi on Kiddushin 2b:7:1",
-      "Rashi on Kiddushin 2b:10:2",
-      "Rashi on Kiddushin 2b:12:1",
-      "Rashi on Kiddushin 2b:13:1",
-      "Rashi on Kiddushin 2b:13:2",
-      "Rashi on Kiddushin 2b:15:1",
-      "Rashi on Kiddushin 2b:15:2",
-      "Rashi on Berakhot 2a:1:1",
-      "Rashi on Berakhot 2a:1:2",
-      "Rashi on Berakhot 2a:2:1"
-    ],
-    "generatedAt": "2026-10-20T11:25:02.582Z",
-    "model": "gemini-3.8-flash-high",
-    "promptVersion": "v2",
+    "costUsd": 0.0537382,
+    "dependsOn": [],
+    "generatedAt": "2026-10-27T09:26:05.510Z",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 2b:4:1"
     ],
-    "sourceText": "<strong class=\"dibur-hamatchil\">וניתני</strong> - הכא האיש קונה בג' דרכים:"
+    "sourceText": "<strong class=\"dibur-hamatchil\">וניתני</strong> - הכא האיש קונה בג' דרכים. ומקנה אותה לעצמה בשתי דרכים. ומשני משום דאיכא בהנהו ב' דרכים מיתת הבעל."
   },
   "Rashi on Kiddushin 2b:4:2": {
     "dependsOn": [
