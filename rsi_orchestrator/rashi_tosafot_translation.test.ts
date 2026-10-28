@@ -374,6 +374,25 @@ describe("verifyProposedHebrewWording", () => {
     expect(verification.valid).toBe(true);
   });
 
+  test("accepts <abbr> tags around פ\"ק for פרק קמא", () => {
+    const sourceWithPerekKama = 'דתנן בפ"ק דמגילה';
+    const proposedWithPerekKama = 'דתנן ב<abbr title="פרק קמא">פ"ק</abbr> דמגילה:';
+    const verificationWithPerekKama = verifyProposedHebrewWording(
+      sourceWithPerekKama, proposedWithPerekKama);
+    expect(verificationWithPerekKama.valid).toBe(true);
+
+    const sourcePerekKamaAlone = 'כדאיתא פ"ק דפסחים';
+    const proposedPerekKamaAlone = 'כדאיתא <abbr title="פרק קמא">פ"ק</abbr> דפסחים:';
+    const verificationAlone = verifyProposedHebrewWording(
+      sourcePerekKamaAlone, proposedPerekKamaAlone);
+    expect(verificationAlone.valid).toBe(true);
+
+    const proposedWithPrefixInside = 'דתנן <abbr title="בפרק קמא">בפ"ק</abbr> דמגילה:';
+    const verificationWithPrefixInside = verifyProposedHebrewWording(
+      sourceWithPerekKama, proposedWithPrefixInside);
+    expect(verificationWithPrefixInside.valid).toBe(true);
+  });
+
   test("accepts <abbr> tags around regular numbers representing counts or quantities", () => {
     const sourceWithRegularNumeral = "שבעת ימים קודם ז' ימים כ\"א תקיעות ד' ראשי שנים";
     const validRegularNumeral = '<strong class="dibur-hamatchil">שבעת ימים</strong> - '
@@ -946,6 +965,7 @@ describe("critiquePrompt", () => {
     expect(prompt).toContain('{"valid": true}');
     expect(prompt).toContain('{"valid": false, "reason": "<brief one-sentence reason>"}');
     expect(prompt).toContain("Keep any rejection reason to a single brief sentence.");
+    expect(prompt).toContain('פ"ק for פרק קמא (not actually a chapter name)');
   });
 
   test("places static rules and format requirements before dynamic candidate content for prefix caching", () => {
@@ -1015,6 +1035,8 @@ describe("generationPrompt", () => {
       expect(skeletonIndex).toBeGreaterThan(rulesIndex);
       expect(targetIndex).toBeGreaterThan(skeletonIndex);
       expect(feedbackIndex).toBeGreaterThan(targetIndex);
+      expect(prompt).toContain('<abbr title="פרק קמא">פ"ק</abbr>');
+      expect(prompt).toContain("not actually a chapter name");
     } finally {
       buildPageSkeletonSpy.mockRestore();
     }
