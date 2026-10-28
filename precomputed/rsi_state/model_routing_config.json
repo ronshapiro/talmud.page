@@ -50,9 +50,13 @@
       "generateModel": "claude-sonnet-5-5",
       "critiqueModel": "claude-sonnet-5-5"
     },
+    "sonnet": {
+      "generateModel": "claude-sonnet-5-5",
+      "critiqueModel": "claude-sonnet-5-5"
+    },
     "haiku": {
       "generateModel": "claude-haiku-5-5",
       "critiqueModel": "claude-sonnet-5-5"
-    },
+    }
   }
 }

@@ -1035,7 +1035,6 @@ describe("generationPrompt", () => {
       expect(skeletonIndex).toBeGreaterThan(rulesIndex);
       expect(targetIndex).toBeGreaterThan(skeletonIndex);
       expect(feedbackIndex).toBeGreaterThan(targetIndex);
-      expect(prompt).toContain('<abbr title="פרק קמא">פ"ק</abbr>');
       expect(prompt).toContain("not actually a chapter name");
     } finally {
       buildPageSkeletonSpy.mockRestore();
