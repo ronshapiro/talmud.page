@@ -9,25 +9,26 @@ export function extractErrorMessage(errorResponse: unknown): string | undefined 
     return errorResponse;
   }
   const errorObject = errorResponse as Record<string, any>;
-  if (errorObject.responseJSON?.error && typeof errorObject.responseJSON.error === "string") {
-    return errorObject.responseJSON.error;
+  const {responseJSON} = errorObject;
+  if (typeof responseJSON?.error === "string") {
+    return responseJSON.error;
   }
-  if (errorObject.responseJSON?.reason && typeof errorObject.responseJSON.reason === "string") {
-    return errorObject.responseJSON.reason;
+  if (typeof responseJSON?.reason === "string") {
+    return responseJSON.reason;
   }
-  if (errorObject.responseJSON?.message && typeof errorObject.responseJSON.message === "string") {
-    return errorObject.responseJSON.message;
+  if (typeof responseJSON?.message === "string") {
+    return responseJSON.message;
   }
-  if (errorObject.responseText && typeof errorObject.responseText === "string") {
+  if (typeof errorObject.responseText === "string") {
     const trimmedText = errorObject.responseText.trim();
     if (trimmedText && !trimmedText.startsWith("<")) {
       return trimmedText;
     }
   }
-  if (errorObject.statusText && typeof errorObject.statusText === "string" && errorObject.statusText !== "error") {
+  if (typeof errorObject.statusText === "string" && errorObject.statusText !== "error") {
     return errorObject.statusText;
   }
-  if (errorObject.message && typeof errorObject.message === "string") {
+  if (typeof errorObject.message === "string") {
     return errorObject.message;
   }
   if (errorObject.status) {
