@@ -567,6 +567,112 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">למשמר היוצא</strong> – שהמשמרות מתחלפות ביום השבת כדאמרינן במסכת סוכה <span class=\"parenthesized\">(דף נו:)</span> משמר היוצא עושה תמיד של שחר ומוספין ומשמר הנכנס עושה תמיד של בין הערבים ובזיכין:"
   },
+  "Rashi on Berakhot 11b:21:1": {
+    "dependsOn": [
+      "Berakhot 11b:20",
+      "Rashi on Berakhot 11b:20:1",
+      "Rashi on Berakhot 11b:20:2",
+      "Rashi on Berakhot 11b:20:3",
+      "Rashi on Berakhot 11b:20:4",
+      "Rashi on Berakhot 11b:20:5",
+      "Rashi on Berakhot 11b:20:6",
+      "Rashi on Berakhot 11b:20:7",
+      "Rashi on Berakhot 11b:20:8",
+      "Berakhot 11b:22",
+      "Rashi on Berakhot 11b:10:1",
+      "Rashi on Berakhot 11b:14:1",
+      "Rashi on Berakhot 11b:15:1",
+      "Rashi on Berakhot 11b:23:1"
+    ],
+    "generatedAt": "2026-10-28T08:02:49.123Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 11b:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי ברכה אחת</strong> – דקתני רישא איזו מן הברכות הוא אומר:"
+  },
+  "Rashi on Berakhot 11b:22:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 11b:22:1",
+      "Rashi on Berakhot 11b:22:2",
+      "Rashi on Berakhot 11b:22:3",
+      "Berakhot 11b:22",
+      "Rashi on Berakhot 11b:20:1",
+      "Rashi on Berakhot 11b:20:2",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:11:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:6:1",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 2a:7:1",
+      "Rashi on Berakhot 2a:8:1",
+      "Rashi on Berakhot 11b:3:1"
+    ],
+    "generatedAt": "2026-10-28T08:07:29.536Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 11b:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאו בפירוש אתמר</strong> – לא שמע מפי ר\"ל שאמ' בפירוש מאי ברכה אחת יוצר אור:"
+  },
+  "Rashi on Berakhot 11b:22:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 11b:22:2",
+      "Rashi on Berakhot 11b:22:1",
+      "Rashi on Berakhot 11b:22:3",
+      "Rashi on Berakhot 11b:20:3",
+      "Rashi on Berakhot 11b:10:1",
+      "Rashi on Berakhot 11b:11:1",
+      "Rashi on Berakhot 11b:20:1",
+      "Rashi on Berakhot 11b:20:7",
+      "Rashi on Berakhot 11b:15:1"
+    ],
+    "generatedAt": "2026-10-28T08:13:33.843Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 11b:22:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זאת אומרת</strong> – דקתני ברכו ברכה אחת:"
+  },
+  "Rashi on Berakhot 11b:22:3": {
+    "dependsOn": [
+      "Rashi on Berakhot 11b:22:1",
+      "Rashi on Berakhot 11b:22:2",
+      "Berakhot 11b:23",
+      "Rashi on Berakhot 11b:20:1",
+      "Rashi on Berakhot 11b:20:2"
+    ],
+    "generatedAt": "2026-10-28T08:17:34.146Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 11b:22:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ברכות אין מעכבות זו את זו</strong> – בירך את האחת ולא בירך את השניה נפקא מיהא ידי חובתו בההיא שבירך ואין חברתה מעכבת לומר שאין זו מועלת בלא זו. ומהכא שמע ר' זריקא דס\"ל לר\"ל דהך ברכה אחת יוצר אור היא:"
+  },
+  "Rashi on Berakhot 11b:23:1": {
+    "dependsOn": [
+      "Berakhot 11b:23",
+      "Rashi on Berakhot 11b:22:1",
+      "Rashi on Berakhot 11b:22:2",
+      "Rashi on Berakhot 11b:22:3",
+      "Rashi on Berakhot 12a:1:1",
+      "Rashi on Berakhot 11b:20:1",
+      "Rashi on Berakhot 11b:21:1",
+      "Tosafot on Berakhot 11b:9:1",
+      "Rashi on Berakhot 11b:10:1"
+    ],
+    "generatedAt": "2026-10-28T08:21:21.992Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 11b:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי אמרת בשלמא יוצר אור הוו אמרי</strong> – ולא אהבה רבה ואע\"ג דמטא ליה זמנא שאף בלילה ראוי לומר כל שכן דכיון דאמרי יוצר אור ודאי מטיא זמנה ואפ\"ה לא אמרי אלא יוצר אור ותו לא אמרי לה היינו דקאמר שמע מינה ברכות אין מעכבות זו את זו:"
+  },
   "Rashi on Berakhot 11b:3:1": {
     "dependsOn": [
       "Berakhot 11b:2",
@@ -629,6 +735,18 @@
       "Tosafot on Berakhot 11b:17:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג ברוך אתה ה' המלמד תורה לעמו ישראל</strong> - אבל לא גרס למדני חקיך שאין זו ברכה אלא בקשה שאמר דוד:"
+  },
+  "Tosafot on Berakhot 11b:20:1": {
+    "dependsOn": [
+      "Chidushei Halachot on Berakhot 11b:2"
+    ],
+    "generatedAt": "2026-10-28T08:00:23.750Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 11b:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וברכת כהנים</strong> - ואין זה דוכן שהרי לא היו עומדים לדוכן עד לאחר הקטרת אמורים דאמרי' בתענית <span class=\"parenthesized\">(פ\"ד ד' כו:)</span> שלשה פעמים ביום הכהנים נושאין כפיהם וכו' וא\"כ הוה ליה למתני ד' פעמים אחד לפני הקטרה ואחד לאחר הקטרה אלא בלא נשיאות כפים אמרו ברכת כהנים כמו שאנו אומרים:"
   },
   "Tosafot on Berakhot 11b:9:1": {
     "dependsOn": [

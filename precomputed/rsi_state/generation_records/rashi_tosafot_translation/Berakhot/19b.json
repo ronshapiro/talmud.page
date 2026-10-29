@@ -1,4 +1,174 @@
 {
+  "Rashi on Berakhot 19b:10:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 19b:9:1",
+      "Rashi on Berakhot 19b:6:1",
+      "Steinsaltz on Berakhot 19b:10",
+      "Steinsaltz comment #1 on Berakhot 19b:10",
+      "Berakhot 19b:10",
+      "Rashi on Berakhot 19b:11:1",
+      "Rashi on Berakhot 19b:2:1",
+      "Rashi on Berakhot 19b:3:1",
+      "Rashi on Berakhot 19b:5:1",
+      "Rashi on Berakhot 19b:10:1"
+    ],
+    "generatedAt": "2026-10-28T16:12:00.248Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 19b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בלאו דלא תסור וגו'. אחיכו עליה</strong> – אינהו סבור דאפי' אמרו לו דבר תורה והוא עומד בפני הכבוד יעבור עליו והא האי נמי דאורייתא הוא:"
+  },
+  "Rashi on Berakhot 19b:11:1": {
+    "dependsOn": [
+      "Berakhot 19b:11",
+      "Rashi on Berakhot 19b:10:1",
+      "Rashi on Berakhot 19b:1:1",
+      "Rashi on Berakhot 19b:1:2",
+      "Menachot 37b:19"
+    ],
+    "generatedAt": "2026-10-28T16:15:49.631Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 19b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל מילי דרבנן וכו'</strong> – והכי קאמר להו דבר שהוא מדברי סופרים נדחה מפני כבוד הבריות וקרי ליה ל\"ת משום דכתיב לא תסור. ודקא קשיא לכו דאורייתא הוא. רבנן אחלוה ליקרייהו לעבור על דבריהם היכא דאיכא כבוד הבריות כגון לטלטל בשבת אבנים של בית הכסא לקנוח <span class=\"parenthesized\">(שבת דף פא:)</span> או מי שנפסקה ציצית טליתו בכרמלית לא הצריכו להניח טליתו שם וליכנס לביתו ערום <span class=\"parenthesized\">(מנחות דף לח.)</span>:"
+  },
+  "Rashi on Berakhot 19b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T16:19:04.218Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 19b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והיא בבית הקברות</strong> – האבדה:"
+  },
+  "Rashi on Berakhot 19b:13:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 19b:13:1",
+      "Rashi on Berakhot 19b:13:2",
+      "Rashi on Berakhot 19b:13:3",
+      "Rashi on Berakhot 19b:1:1",
+      "Rashi on Berakhot 19b:2:1",
+      "Rashi on Berakhot 19b:4:1",
+      "Rashi on Berakhot 19b:5:1",
+      "Rashi on Berakhot 18b:1:1",
+      "Rashi on Berakhot 18b:2:1",
+      "Rashi on Berakhot 18b:3:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Bava Metzia 30b:2"
+    ],
+    "generatedAt": "2026-10-28T16:24:09.776Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 19b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואינה לפי כבודו</strong> – אין האבדה חשובה לפי כבודו להשיבה:"
+  },
+  "Rashi on Berakhot 19b:13:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T16:25:26.446Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 19b:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או שהיתה מלאכתו מרובה</strong> – שדמי בטול מלאכתו לרדוף אחריה יתרים על דמי האבדה ולא ירצו הבעלים להשיב לו יותר ממה שמשיב להם ונמצא הוא מפסיד:"
+  },
+  "Rashi on Berakhot 19b:14:1": {
+    "dependsOn": [
+      "Berakhot 19b:6",
+      "Berakhot 19b:2",
+      "Rashi on Berakhot 19b:14:2"
+    ],
+    "generatedAt": "2026-10-28T16:27:34.452Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 19b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונגמר מינה</strong> – לגבי כלאים דאמרן פושטן אפילו בשוק:"
+  },
+  "Rashi on Berakhot 19b:14:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 19b:14:1",
+      "Rashi on Berakhot 19b:14:2",
+      "Rashi on Berakhot 19b:13:1",
+      "Rashi on Berakhot 19b:13:2",
+      "Rashi on Berakhot 19b:13:3",
+      "Rashi on Berakhot 19b:16:1",
+      "Rashi on Berakhot 19b:16:2",
+      "Rashi on Berakhot 19b:16:3"
+    ],
+    "generatedAt": "2026-10-28T16:29:42.976Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 19b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ממונא</strong> – קל מאיסורא:"
+  },
+  "Rashi on Berakhot 19b:16:1": {
+    "dependsOn": [
+      "Berakhot 19b:16",
+      "Rashi on Berakhot 19b:16:1",
+      "Rashi on Berakhot 19b:16:2",
+      "Rashi on Berakhot 19b:16:3",
+      "Rashi on Berakhot 19b:2:1",
+      "Rashi on Berakhot 19b:6:1"
+    ],
+    "generatedAt": "2026-10-28T16:35:51.525Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 19b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולאחותו מה תלמוד לומר</strong> – בנזיר כתיב כל ימי הזירו לה' על נפש מת לא יבא וסמיך ליה לאביו ולאמו לאחיו ולאחותו לא יטמא להם דהא כולהו בכלל על נפש מת לא יבא היו ולמה יצאו לאביו פרט למת מצוה לאמו מה תלמוד לומר משום מת מצוה לא איצטריך דמלאביו נפקא ודרשי ליה בספרי ללמוד שאם היה נזיר זה כהן דהוו עליה שתי קדושות אף הוא לאמו הוא דלא יטמא אבל מטמא הוא למת מצוה לאחיו מה תלמוד לומר הרי שהיה כ\"ג והוא נזיר אף הוא לאחיו לא יטמא אבל מטמא למת מצוה ולאחותו מה תלמוד לומר אם אינו ענין לזה תנהו ענין למי שהולך לשחוט את פסחו ולמול את בנו שמטמא למת מצוה:"
+  },
+  "Rashi on Berakhot 19b:16:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 19b:16:1",
+      "Rashi on Berakhot 19b:16:2",
+      "Rashi on Berakhot 19b:16:3",
+      "Megillah 3b:8",
+      "Versions on Berakhot 19b:16",
+      "Berakhot 19b:17"
+    ],
+    "generatedAt": "2026-10-28T16:39:52.886Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 19b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושמע שמת לו מת</strong> – מקרוביו יכול יטמא להם:"
+  },
+  "Rashi on Berakhot 19b:16:3": {
+    "dependsOn": [
+      "Rashi on Berakhot 19b:16:1",
+      "Rashi on Berakhot 19b:16:2",
+      "Tosafot on Berakhot 19b:16:1",
+      "Tosafot on Berakhot 19b:16:2",
+      "Megillah 3b:8",
+      "Megillah 3b:9",
+      "Megillah 3b:10",
+      "Rashi on Megillah 3b:9:1",
+      "Rashi on Sanhedrin 35a:13:1",
+      "Steinsaltz on Berakhot 19b:16",
+      "Rashba on Berakhot 19b:3"
+    ],
+    "generatedAt": "2026-10-28T16:44:39.117Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 19b:16:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרת לא יטמא</strong> – הואיל ועונת שחיטת הפסח היא וחלה עליו חובת הפסח שהוא בכרת אם יטמא בטל מלעשות פסח ולמול את בנו נמי מצות כרת היא. ואית דאמרי בערבי פסחים נמי קאמר דמילת זכריו מעכב הפסח:"
+  },
   "Rashi on Berakhot 19b:1:1": {
     "dependsOn": [
       "Berakhot 19b:1",
@@ -294,6 +464,80 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">לקראת מלכי ישראל</strong> – הרי לכבוד הבריות עוברים על נפש לא יטמא <span class=\"parenthesized\">(ויקרא כ״א:א׳)</span> דהא ר' אלעזר בר צדוק כהן הוה כדאמרינן בבכורות <span class=\"parenthesized\">(דף לו.)</span>:"
   },
+  "Rashi on Berakhot 19b:7:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 19b:7:1",
+      "Rashi on Berakhot 19b:7:2",
+      "Rashi on Berakhot 19b:6:1",
+      "Rashi on Berakhot 19a:1:1",
+      "Steinsaltz on Berakhot 19b:7",
+      "Rashi on Berakhot 18b:10:1",
+      "Sukkah 5b:13"
+    ],
+    "generatedAt": "2026-10-28T15:56:01.813Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 19b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דבר תורה</strong> – הלכה למשה מסיני:"
+  },
+  "Rashi on Berakhot 19b:7:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 19b:7:1",
+      "Rashi on Berakhot 19b:6:1",
+      "Rashi on Berakhot 19b:6:2",
+      "Rashi on Berakhot 19b:5:1",
+      "Rashi on Berakhot 19b:5:2",
+      "Rashi on Berakhot 19b:1:1",
+      "Rashi on Berakhot 19b:2:1",
+      "Rashi on Berakhot 19b:3:1"
+    ],
+    "generatedAt": "2026-10-28T15:57:45.676Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 19b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינו חוצץ בפני הטומאה</strong> – דנקראת טומא' רצוצה ובוקעת ועולה:"
+  },
+  "Rashi on Berakhot 19b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T16:03:51.676Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 19b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">את לא תעשה</strong> – קס\"ד כל ל\"ת קאמר:"
+  },
+  "Tosafot on Berakhot 19b:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T16:51:25.544Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 19b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולאחותו מה ת\"ל</strong> - גבי נזיר כתיב על <span class=\"parenthesized\">(כל נפשות)</span> [נפש] מת לא יבא וכתיב בתריה לאביו ולאמו לאחיו ולאחותו לא יטמא וכולהו יתירי נינהו דמנפש מת נפקא ודרשינן לאביו מה תלמוד לומר לגופיה לא איצטריך דהא מנפש מת נפקא כולהו ולא בא אלא להוציא מת מצוה שמותר לטמא בו לאמו מה תלמוד לומר לגופיה לא איצטריך ולהתיר מת מצוה דמלאביו נפקא אלא להביא שאם היה נזיר וכהן שיש עליו שתי קדושות אין הכתוב מזהירו מלטמא אלא לאמו אבל מטמא הוא למת מצוה לאחיו מה תלמוד לומר שאם היה כהן גדול ונזיר דקדושתו חמור דגם בלא נזירות אסור לטמא לקרוביו אעפ\"כ לאחיו הוא דאינו מטמא אבל מטמא הוא למת מצוה ואם אינו ענין לנזיר גרידא ולא לכהן הדיוט נזיר תנהו ענין לכ\"ג נזיר ולאחותו מה תלמוד לומר הרי שאם היה כ\"ג ונזיר והלך לשחוט פסחו ולמול את בנו דאיכא מצות טובא אפ\"ה לאחותו הוא דאינו מטמא אבל מטמא למת מצוה:"
+  },
+  "Tosafot on Berakhot 19b:16:2": {
+    "dependsOn": [
+      "Translation on Tosafot on Berakhot 19b:16:2",
+      "Translation on Tosafot on Berakhot 19b:16:2:1",
+      "Rashi on Berakhot 19b:16:1",
+      "Rashi on Berakhot 19b:16:2",
+      "Rashi on Berakhot 19b:16:3",
+      "Tosafot on Berakhot 19b:16:1"
+    ],
+    "generatedAt": "2026-10-28T16:55:02.703Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 19b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרת לא יטמא</strong> - מפני שקאי על אדם שהוא נזיר וכהן גדול ועושה פסח משמע דעושה פסח גרידא רשאי לטמא לקרובים ותימה דבזבחים <span class=\"parenthesized\">(פי\"ב דף ק.)</span> גבי מעשה דיוסף הכהן שמתה אשתו בערב פסח וטמאוהו אחיו בע\"כ ופריך מהא ברייתא דהכא דקאמר לא יטמא ומאי פריך דילמא שאני הכא דמיירי דכל קדושות האלו בו כדפרישי' אבל עושה פסחו גרידא אימא רשאי לטמא על כן נראה לפרש אמרת לא יטמא אפי' עושה פסחו גרידא וא\"ת מהיכא פשיטא ליה אמרת לא יטמא וי\"ל כדפירש\"י דלא אתי עשה שאין בו כרת כטומאת קרובים וידחה עשה שיש בו כרת כגון עושה פסח וגם מילה שייך בה כרת וא\"ת התם דפריך על מעשה דיוסף הכהן מנ\"ל [לתלמודא] דהכא מיירי בעושה פסחו לחוד וי\"ל מדלא כייל גבי עושה פסחו כמו גבי אחרים מי שהיה נזיר וכהן הדיוט דמעיקרא נקט נזיר לחוד ואח\"כ נזיר וכהן הדיוט וכו' וא\"ת מנא ליה <span class=\"parenthesized\">(לתלמודא)</span> דהאי קרא בעושה פסחו ולמול את בנו הא קרא כתיב בנזיר וי\"ל אם אינו ענין בנזיר דהא כתיבי פסוקים אחרים דמטמא במת מצוה תנהו ענין להולך לשחוט פסחו וכו'. והשר מקוצי מיישב פירש\"י דמיירי הכא דיש בו כל הקדושות הללו כו' ומ\"מ פריך התם גבי יוסף הכהן דע\"כ אף בעושה פסח גרידא אינו רשאי לטמא דאי ס\"ד עושה פסח מטמא לקרובים. ולאחותו למה לי למימר דמטמא למת מצוה כיון דמטמא לקרובים אלמא עושה פסחו אינו מעלה עליו שום חומרא טפי א\"כ פשיטא דמטמא למת מצוה וכי תימא מכל מקום צריך קרא דמטמא למת מצוה מפני שיש בו ג' קדושות נזיר וכהן ועושה פסח ולעולם אימא לך דעושה פסח גרידא מטמא לקרובים לא היא דהא כבר שמעינן מלאביו ולאמו ולאחיו דנזיר וכ\"ג לא מהני מידי למת מצוה א\"כ ע\"כ קראי לא אצטריכו אלא למעלה דפסח ולמה לי פשיטא דאי מטמא לקרובים כ\"ש למת מצוה ואע\"ג דאצטריך קרא דלאמו לכהן הדיוט ונזיר דמטמא למת מצוה אע\"ג דכתב קרא דמטמא לקרובים ואצטריך קרא שהן ב' קדושות אע\"ג דשמעינן כבר דמעלה דנזיר לא מהני מידי למת מצוה מלאביו ה\"מ כהן דקדושתו קדושת עולם ומשום הכי יש לנו לומר כי יש לו שתי קדושות דטפי קדושה ולכך אצטריך קרא אבל עושה פסח שקדושתו לפי שעה אם אתה מתיר לו לקרובים ה\"ה למת מצוה מכ\"ש דמאי חזית ליתן לו קדושה טפי גבי מת מצוה יותר מן הקרובים. א\"נ יש לפרש בקוצר הברייתא מדתניא גרידא על ישראל נזיר ואח\"כ נזיר וכהן הדיוט ואח\"כ נזיר וכ\"ג וא\"כ מסברא יש לנו לומר <span class=\"parenthesized\">(כי יש)</span> דאינו מטמא לקרובים כמו נזיר וכלהו אינך ודוק מעצמך:"
+  },
   "Tosafot on Berakhot 19b:6:1": {
     "dependsOn": [
       "Berakhot 19b:6",
@@ -325,5 +569,20 @@
       "Tosafot on Berakhot 19b:6:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">מדלגין היינו על גבי ארונות</strong> – תימה לפ\"ה דפי' גולל כיסוי של ארון דתני' כל אשר יגע על פני השדה לרבות גולל ודופק וא\"כ גם הגולל מטמא באהל והיאך היו מדלגין עליו וי\"ל דלא קשה דהא תני' בשמחות <span class=\"parenthesized\">(פ\"ד הלכה כא)</span> כל טומאה שאין הנזיר מגלח עליה אין כהן מוזהר עליה וגולל ודופק אין נזיר מגלח עליהן כדתנן במס' נזיר פרק כהן גדול <span class=\"parenthesized\">(נזיר דף נד.)</span> והיה אומר ר\"ת דליתי' להני כללי דהא אמר התם רביעית דם אין הנזיר מגלח עליו עד שיהא חצי לוג ואפילו הכי כהן מוזהר עליו כדאמרינן בפרק בהמה המקשה <span class=\"parenthesized\">(חולין דף עב.)</span> דרביעית דם הבא מב' מתים טמא ומפקינן ליה מעל כל נפשות מת לא יבא וי\"ל דהתם מכל מקום הוי שם טומאה שהנזיר מגלח עליה אבל גולל ודופק אינו כלל בנזיר ולכך אין כהן מוזהר עליו אי נמי הא ברייתא סברה כזקנים הראשונים [נזיר נג.] שהיו אומרי' רביעית דם גם בתגלחת נזיר ומיהו תימא אמאי אין המת מטמא באהל כיון שהכסוי עצמו מקבל טומאה דכל דבר המקבל טומאה אינו חוצץ בפני הטומאה אם כן מטמא באהל וי\"ל דאין מטמא אלא צד חיצון שבו אבל צד פנימי טהור כדתנן במסכת אהלות בפט\"ו <span class=\"parenthesized\">(משנה ט)</span> חבית שהיא מלאה משקין טהורים ומוקפת צמיד פתיל ועשאה גולל לקבר הנוגע בה מטמא טומאת שבעה והחבית והמשקין טהורין לפי שצד פנימי כולו טהור ומיהו תימה לפ\"ה דפירש בפ\"ק דערובין <span class=\"parenthesized\">(דף טו)</span> גבי אין עושין מבעלי חיים גולל ודופק לקבר ואי גולל היינו כסוי הארון וכי עושין מבעלי חיים כסוי לארון ע\"כ פר\"ת דגולל היינו מצבה וכן דרך בני אדם ליתן בהמה על הקבר לסימן עד שיתנו עליו מצבה:"
+  },
+  "Tosafot on Berakhot 19b:8:1": {
+    "dependsOn": [
+      "Translation on Tosafot on Berakhot 19b:8:1",
+      "Chokhmat Shlomo on Berakhot 19b:2",
+      "Mishnah Oholot 7:1",
+      "Tosafot on Bava Batra 100b:10:2"
+    ],
+    "generatedAt": "2026-10-28T16:01:23.009Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 19b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רוב ארונות יש להם חלל טפח</strong> - וצ\"ל שראש הארון פתוח שאם היה סתום אדרבה כי יש בו פותח טפח מטמא ואפילו בצד הריקן שבו כדאמרינן במסכת אהלות בפ\"ז <span class=\"parenthesized\">(מ\"א)</span> נפש אטומה הנוגע בה מן הצדדין טהור פי' בצד הריקן מפני שטומאה בוקעת ועולה בוקעת ויורדת ואם היה מקום הטומאה טפח ע\"ט על רום טפח הנוגע בה מכל מקום טמא מפני שהוא כקבר סתום אלמא בקבר סתום אינו מטמא כל סביביו אלא כשיש עליו טפח אבל בטומאה רצוצה אינו מטמא אלא כנגד הטומאה ולא מצד הריקן ובפרק המוכר פירות <span class=\"parenthesized\">(ב\"ב דף ק:)</span> יש להאריך:"
   }
 }
