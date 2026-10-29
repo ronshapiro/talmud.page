@@ -99,7 +99,7 @@ export class RetryMethodFactory {
             this.errorLogger(errorResponse);
             this.errorLogger(options);
             if (options.createError) {
-              const userVisibleMessage = options.createError(...args);
+              const userVisibleMessage = options.createError(...args, errorResponse);
               if (userVisibleMessage) {
                 this.errorsDelegate.add(retryState.id, userVisibleMessage);
                 this.onErrorStateChange();

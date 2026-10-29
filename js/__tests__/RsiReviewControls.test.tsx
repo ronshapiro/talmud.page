@@ -11,7 +11,10 @@ import {rsiReviewerIdentityPreference, rsiReviewKeyPreference, rsiReviewPrNumber
 import {click, flushAsync, mount, query, queryAll, unmountAll} from "./testing/dom";
 import {comment, resetFixtureCounter} from "./testing/fixtures";
 
-jest.mock("../post", () => ({postWithRetry: jest.fn()}));
+jest.mock("../post", () => ({
+  ...jest.requireActual<Record<string, unknown>>("../post"),
+  postWithRetry: jest.fn(),
+}));
 
 const IDENTITY = "ron@example.com";
 
@@ -62,7 +65,7 @@ describe("RsiReviewControls", () => {
       expect(rsiReviewerIdentityPreference.get()).toEqual(IDENTITY);
       expect(postWithRetry).toHaveBeenCalledWith("/api/rsi-review-decision", expect.objectContaining({
         reviewerIdentity: IDENTITY,
-      }));
+      }), expect.anything());
     });
 
     test("does not prompt again once an identity is already stored", async () => {
@@ -78,7 +81,7 @@ describe("RsiReviewControls", () => {
       expect(query(root, ".rsi-review-controls")).toBeTruthy();
       expect(postWithRetry).toHaveBeenCalledWith("/api/rsi-review-decision", expect.objectContaining({
         reviewerIdentity: IDENTITY,
-      }));
+      }), expect.anything());
     });
   });
 
@@ -105,7 +108,7 @@ describe("RsiReviewControls", () => {
         reviewerIdentity: IDENTITY,
         fallbackHebrew: "hebrew of Zevachim 2a:1",
         fallbackEnglish: "english of Zevachim 2a:1",
-      });
+      }, expect.anything());
     });
 
     test("includes the last-known PR number, and remembers whatever comes back", async () => {
@@ -120,7 +123,8 @@ describe("RsiReviewControls", () => {
       await flushAsync(() => click(query(root, "button")));
 
       expect(postWithRetry).toHaveBeenCalledWith("/api/rsi-review-decision",
-        expect.objectContaining({knownPrNumber: 7}));
+        expect.objectContaining({knownPrNumber: 7}),
+        expect.anything());
       expect(rsiReviewPrNumberPreference.get()).toEqual("9");
     });
 
@@ -146,7 +150,7 @@ describe("RsiReviewControls", () => {
         english: "a",
         fallbackHebrew: "א",
         fallbackEnglish: "a",
-      });
+      }, expect.anything());
     });
 
     test("approve strips highlights from fallbackHebrew and fallbackEnglish", async () => {
@@ -175,7 +179,7 @@ describe("RsiReviewControls", () => {
         reviewerIdentity: IDENTITY,
         fallbackHebrew: "שלום עולם",
         fallbackEnglish: "hello world",
-      });
+      }, expect.anything());
     });
 
     test("edit reveals unhighlighted text and submits it", async () => {
@@ -210,7 +214,7 @@ describe("RsiReviewControls", () => {
         english: "hello world",
         fallbackHebrew: "שלום עולם",
         fallbackEnglish: "hello world",
-      });
+      }, expect.anything());
     });
 
     test("reject shows a modal for the reason", async () => {
@@ -226,7 +230,7 @@ describe("RsiReviewControls", () => {
 
       expect(postWithRetry).toHaveBeenCalledWith("/api/rsi-review-decision", expect.objectContaining({
         decision: "reject", reason: "mistranslated",
-      }));
+      }), expect.anything());
     });
 
     test("canceling the reject modal submits nothing", () => {
@@ -358,11 +362,93 @@ describe("RsiReviewControls", () => {
       jest.useRealTimers();
     });
 
-    test("submission failure shows error snackbar with dismiss button and auto-dismisses after 10s", async () => {
+    test("appends error to original snackbar on failure and updates in place without using errors snackbar", async () => {
       jest.useFakeTimers();
       const consoleErrorSpy = jest.spyOn(console, "error").mockImplementation(() => {});
-      const errorShowSpy = jest.spyOn(snackbars.errors, "show");
-      const errorHideSpy = jest.spyOn(snackbars.errors, "hide");
+      const showSpy = jest.spyOn(snackbars.reportedIssueSent, "show");
+      const updateSpy = jest.spyOn(snackbars.reportedIssueSent, "update");
+      const errorsShowSpy = jest.spyOn(snackbars.errors, "show");
+      const hideSpy = jest.spyOn(snackbars.reportedIssueSent, "hide");
+
+      let capturedOnError: (
+        (errorMessage: string | undefined, errorResponse: unknown) => void
+      ) | undefined;
+      (postWithRetry as jest.Mock).mockImplementation((_endpoint, _data, options) => {
+        capturedOnError = options?.onError;
+        return new Promise(() => {});
+      });
+
+      const root = mount(<RsiReviewControls comment={
+        comment({pendingReview: "Zevachim 2a", ref: "Zevachim 2a:1"})
+      } />);
+
+      await flushAsync(() => click(query(root, "button")));
+
+      expect(showSpy).toHaveBeenCalledWith(
+        "Submitting approve for Zevachim 2a:1…",
+        expect.anything(),
+      );
+      const initialButtons = showSpy.mock.calls[0][1] as Button[];
+      expect(initialButtons.length).toBe(1);
+      expect(initialButtons[0].text).toBe("Dismiss");
+
+      expect(capturedOnError).toBeDefined();
+      capturedOnError!("Forbidden", {status: 403});
+
+      expect(updateSpy).toHaveBeenCalledWith(
+        "Submitting approve for Zevachim 2a:1…<br>Forbidden",
+        expect.anything(),
+      );
+      expect(errorsShowSpy).not.toHaveBeenCalled();
+
+      consoleErrorSpy.mockRestore();
+      showSpy.mockRestore();
+      updateSpy.mockRestore();
+      errorsShowSpy.mockRestore();
+      hideSpy.mockRestore();
+      jest.useRealTimers();
+    });
+
+    test("dismissing the original snackbar hides it and prevents subsequent retry errors from reshowing snackbar", async () => {
+      const showSpy = jest.spyOn(snackbars.reportedIssueSent, "show");
+      const updateSpy = jest.spyOn(snackbars.reportedIssueSent, "update");
+      const hideSpy = jest.spyOn(snackbars.reportedIssueSent, "hide");
+
+      let capturedOnError: (
+        (errorMessage: string | undefined, errorResponse: unknown) => void
+      ) | undefined;
+      (postWithRetry as jest.Mock).mockImplementation((_endpoint, _data, options) => {
+        capturedOnError = options?.onError;
+        return new Promise(() => {});
+      });
+
+      const root = mount(<RsiReviewControls comment={
+        comment({pendingReview: "Zevachim 2a", ref: "Zevachim 2a:1"})
+      } />);
+
+      await flushAsync(() => click(query(root, "button")));
+
+      const buttons = showSpy.mock.calls[0][1] as Button[];
+      buttons[0].onClick();
+
+      expect(hideSpy).toHaveBeenCalledTimes(1);
+
+      expect(capturedOnError).toBeDefined();
+      capturedOnError!("Forbidden", {status: 403});
+
+      expect(updateSpy).not.toHaveBeenCalled();
+
+      showSpy.mockRestore();
+      updateSpy.mockRestore();
+      hideSpy.mockRestore();
+    });
+
+    test("submission failure on rejection updates original snackbar and auto-dismisses after 10s", async () => {
+      jest.useFakeTimers();
+      const consoleErrorSpy = jest.spyOn(console, "error").mockImplementation(() => {});
+      const updateSpy = jest.spyOn(snackbars.reportedIssueSent, "update");
+      const errorsShowSpy = jest.spyOn(snackbars.errors, "show");
+      const hideSpy = jest.spyOn(snackbars.reportedIssueSent, "hide");
       (postWithRetry as jest.Mock).mockRejectedValue(new Error("Network failure"));
       const root = mount(<RsiReviewControls comment={
         comment({pendingReview: "Zevachim 2a", ref: "Zevachim 2a:1"})
@@ -370,21 +456,20 @@ describe("RsiReviewControls", () => {
 
       await flushAsync(() => click(query(root, "button")));
 
-      expect(errorShowSpy).toHaveBeenCalledWith(
-        expect.stringContaining("Failed to submit review decision"),
+      expect(updateSpy).toHaveBeenCalledWith(
+        expect.stringContaining("Submitting approve for Zevachim 2a:1…<br>Network failure"),
         expect.anything(),
       );
-      const buttons = errorShowSpy.mock.calls[0][1] as Button[];
-      expect(buttons.length).toBe(1);
-      expect(buttons[0].text).toBe("Dismiss");
+      expect(errorsShowSpy).not.toHaveBeenCalled();
 
-      expect(errorHideSpy).not.toHaveBeenCalled();
+      expect(hideSpy).not.toHaveBeenCalled();
       jest.advanceTimersByTime(AUTO_DISMISS_DELAY_MILLISECONDS);
-      expect(errorHideSpy).toHaveBeenCalledTimes(1);
+      expect(hideSpy).toHaveBeenCalledTimes(1);
 
       consoleErrorSpy.mockRestore();
-      errorShowSpy.mockRestore();
-      errorHideSpy.mockRestore();
+      updateSpy.mockRestore();
+      errorsShowSpy.mockRestore();
+      hideSpy.mockRestore();
       jest.useRealTimers();
     });
 
