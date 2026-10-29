@@ -1,0 +1,248 @@
+{
+  "Rashi on Nedarim 2b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T15:54:19.787Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 2b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלין</strong> - פתח ברישא משום דאוושו ליה קתני דיש נוחלין ומנחילין נפישין מהני דלא מנחילין וכן כל הני משום הכי מפרש להו לאלתר אע\"ג דפתח בהו ברישא אבל הכא גבי נדרים וכן במה מדליקין דלא נפישי ההוא דסליק מיניה פתח ברישא ל\"א אוושו דקתני ארבעה דברי' כגון יש נוחלין ומנחילין נוחלין ולא מנחילין מנחילין ולא נוחלין לא נוחלין ולא מנחילין וכן בכולהו יש מותרות לבעליהן ואסורות ליבמיהן כו' הואיל ותני כל הני מתחיל בההוא דפתח ברישא ומפרש יתיה דאם היה מפרש בההוא דסליק מיניה ברישא שמא ישכח את הראשונות אלא פתח בראשון ומפרש להו כסדרן אבל היכא דלא אוושו כגון הני במה מדליקין וכו' ליכא למיחש להו ובמתניתין נמי ליכא למיחש דלא מפרש אלא כינויי וידות והני חרמים ושבועות ונזיר בהני ליכא למימר דאוושן דהא לא צריך להו למיתני אלא אגב גררא נסיב להו ומשום הכי לא שכח לקמייתא דלא צריך הכא כל כך דלא הויא עיקר אלא כינוי וידות בלבד וכמאן דלא תני להו לאחריני דמי:"
+  },
+  "Rashi on Nedarim 2b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T15:17:21.661Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 2b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מ\"ש גבי גזיר דלא קתני לכולהו</strong> - דהתם קתני כל כינויי נזירות ותו לא מידי ולא קתני לכל הני דנדרים ושבועות:"
+  },
+  "Rashi on Nedarim 2b:2:1": {
+    "dependsOn": [
+      "Ran on Nedarim 2b:2:1",
+      "Nedarim 2b:2",
+      "Rashi on Nedarim 2b:1:1",
+      "Rashi on Nedarim 2b:3:1",
+      "Rashi on Nedarim 2b:3:2",
+      "Steinsaltz on Nedarim 2b:2"
+    ],
+    "generatedAt": "2026-10-29T15:22:08.502Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 2b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כתיבין בהדי הדדי</strong> - כל נדר ובל שבועת איסר וכיון דאגב דקתני שבועות קתני לכולהו:"
+  },
+  "Rashi on Nedarim 2b:3:1": {
+    "dependsOn": [
+      "Rashi on Nedarim 2b:3:2"
+    ],
+    "generatedAt": "2026-10-29T15:22:57.118Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 2b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וליתני שבועות בתר נדרים</strong> - כדכתיבי והדר ליתני לכולהו:"
+  },
+  "Rashi on Nedarim 2b:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T15:25:54.649Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 2b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמיתסר חפצא</strong> - דכי אמר דבר זה עלי בקרבן או בחרם אסר ליה לחפץ עליו ומשום הכי תני להו בהדי הדדי אבל כי אמר שבועה שלא אוכל דבר זה או שאיני נהנה מדבר זה איהו לא אסר לחפצא עליה אלא נפשיה אסר מההוא חפצא:"
+  },
+  "Rashi on Nedarim 2b:4:1": {
+    "dependsOn": [
+      "Rashi on Nedarim 2b:4:2",
+      "Ran on Nedarim 2b:9:1",
+      "Rashi on Nedarim 2b:1:1",
+      "Rashi on Nedarim 2b:2:1",
+      "Rashi on Nedarim 2b:3:1"
+    ],
+    "generatedAt": "2026-10-29T15:31:09.965Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 2b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פתח בכינוי ומפרש ידות</strong> - לאלתר מודר אני ממך וכו' דהיינו ידות ולכתחילה ה\"ל למתני' לפרש כינויין כגון קונם והדר ליתני ידות:"
+  },
+  "Rashi on Nedarim 2b:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T15:32:10.040Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 2b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותו</strong> - אכתי איכא למיפרך ידות אינשי היכי שכחם התנא דלא קתני וידות נדרים כנדרים:"
+  },
+  "Rashi on Nedarim 2b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T15:34:15.151Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 2b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איירי בהו</strong> - דודאי לא שכח להו לידות וחסורי מיחסרא וכו':"
+  },
+  "Rashi on Nedarim 2b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T15:35:02.494Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 2b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וליפרוש</strong> - אכתי אי בכינויים איירי ברישא ליפרוש נמי ברישא קודם דפריש ידות:"
+  },
+  "Rashi on Nedarim 2b:7:1": {
+    "dependsOn": [
+      "Rashi on Nedarim 2b:7:1"
+    ],
+    "generatedAt": "2026-10-29T15:41:44.618Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 2b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ההוא דסליק מיניה</strong> - כגון ידות דסליק מינייהו ומפרש להו לאלתר ברישא כדתנן במה מדליקין ונקיט במה אין מדליקין דסליק מיניה וכן כל הני:"
+  },
+  "Rashi on Nedarim 2b:9:1": {
+    "dependsOn": [
+      "Rashi on Nedarim 2b:9:1",
+      "Nedarim 2b:9",
+      "Ran on Nedarim 2b:9:1",
+      "Rashi on Nedarim 2b:6:1",
+      "Rashi on Nedarim 2b:7:1",
+      "Rashi on Nedarim 2a:1:1",
+      "Rashi on Nedarim 2a:1:2",
+      "Rashi on Nedarim 2b:1:1",
+      "Rashi on Nedarim 2b:2:1",
+      "Rashi on Nedarim 2b:3:1",
+      "Rashi on Nedarim 2b:3:2",
+      "Rashi on Nedarim 2b:4:1",
+      "Nedarim 2b:4",
+      "Rashi on Nedarim 2b:13:1",
+      "Rashi on Nedarim 2a:2:1",
+      "Rashi on Nedarim 2a:3:1"
+    ],
+    "generatedAt": "2026-10-29T15:47:15.270Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 2b:9:1"
+    ],
+    "sourceText": "וכל היכא דפתח ביה לא מפרש ברישא והתנן יש נוחלין כו' ומפרש ברישא אלו נוחלין ומנחילין:"
+  },
+  "Tosafot on Nedarim 2b:10:1": {
+    "dependsOn": [
+      "Nedarim 2b:10",
+      "Tosafot on Shabbat 51b:7:1",
+      "Nazir 2a:11",
+      "Nazir 2a:12",
+      "Nazir 2a:13",
+      "Nazir 2a:14",
+      "Nedarim 2b:6",
+      "Nedarim 2b:7",
+      "Nedarim 2b:12",
+      "Ran on Nedarim 2b:10:1",
+      "Tosafot on Nedarim 2b:6:1",
+      "Tosafot on Nedarim 2b:7:1",
+      "Tosafot on Nazir 2a:13:1",
+      "Rashi on Nedarim 2b:13:1"
+    ],
+    "generatedAt": "2026-10-29T15:52:44.432Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 2b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יש מותרות לבעליהן</strong> - הך בבא ביבמות מפרש לה ומשני הני משום דאוושן מפרש ההוא דכתיב ברישא ודאג פן יטעה בהן לכך מפרש ההוא דכתיב ברישא ובנזיר נמי איכא כי האי סוגיא ומשני בבמה בהמה באידך ענין בהמה באיסורא איירי מפרש היתר ברישא:"
+  },
+  "Tosafot on Nedarim 2b:1:1": {
+    "dependsOn": [
+      "Nedarim 2b:1",
+      "Nazir 2a:1",
+      "Nazir 2a:2",
+      "Nazir 2a:3",
+      "Ran on Nedarim 2b:1:1"
+    ],
+    "generatedAt": "2026-10-29T15:20:19.080Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 2b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומ\"ש גבי נזיר דלא תני כולהו</strong> - פי' חרמים ושבועות ונדרים ומשני משום דנדר ושבועות גבי הדדי כתיבי דכתי' איש כי ידור נדר או השבע שבועה אע\"ג דגבי נזיר כתיב כי יפליא לנדור נדר נזיר להזיר מ\"מ עיקר פרשת נדרים לאו התם כתיב אבל עיקר פ' שבועות ונדר כתיבן גבי הדדי תימה גבי שבועות ליפרוך כי האי ולימא כינוי שבועות כשבועות כי האי דגבי נזיר דמהדר ונקט כל כינוי נזירות כנזירות וי\"ל דכיון דלית ביה ידות לא חשו להזכירם:"
+  },
+  "Tosafot on Nedarim 2b:3:1": {
+    "dependsOn": [
+      "Rashi on Nedarim 2b:3:1",
+      "Rashi on Nedarim 2b:3:2",
+      "Ran on Nedarim 2b:3:1"
+    ],
+    "generatedAt": "2026-10-29T15:28:04.896Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 2b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נדרים דמתסר חפצא עילויה</strong> - דאמר ככר זה קונם עלי שעושה הככר עליו הקדש גבי חרמים נמי אסר חפצא על נפשיה דגלי קרא אשר יחרים [איש לה'] מכל אשר לו <span class=\"parenthesized\">(ויקרא כז)</span> משמע דהחפץ יהיה חרם גבי נדרי' אע\"ג דכתיב כי ידור דמשמע לה דר\"ל אגברא מ\"מ כתיב כי ידור נדר דר\"ל דמתפי' בנדור וזהו החפץ ואע\"ג דגבי שבועה כתיב או השבע שבועה מ\"מ גלי קרא לא תשבעו דמזהר אגברא וא\"ת ומנ\"מ אי אסר חפצא עילויה או איהו אחפצא י\"ל דלענין זה שאם היה אומר קונם שלא אוכל ככר זה לא אמר כלום וכן אמר גבי שבועה להפך:"
+  },
+  "Tosafot on Nedarim 2b:4:1": {
+    "dependsOn": [
+      "Nedarim 2b:4",
+      "Rashi on Nedarim 2b:4:1",
+      "Rashi on Nedarim 2b:4:2",
+      "Ran on Nedarim 2b:4:1"
+    ],
+    "generatedAt": "2026-10-29T15:33:33.899Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 2b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותו ידות אנשי</strong> - פי' ברישא ליתני ידות נדרים כנדרים ומשני לא אנשי איירי בהון וחסורי מחסרא:"
+  },
+  "Tosafot on Nedarim 2b:6:1": {
+    "dependsOn": [
+      "Tosafot on Nedarim 2b:1:1",
+      "Tosafot on Nedarim 2b:3:1",
+      "Tosafot on Nedarim 2b:4:1",
+      "Tosafot on Nedarim 2b:7:1",
+      "Tosafot on Nedarim 2b:10:1",
+      "Rashi on Nedarim 2b:6:1",
+      "Ran on Nedarim 2b:6:1"
+    ],
+    "generatedAt": "2026-10-29T15:38:05.213Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 2b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וליפרוש כינויין ברישא</strong> - דהא קאמרת דתני ידות בתר כינויין ולא משמע ליה להגיה המשנה ולומר תני רישא ידות קודם כינויין דלא רצה לשבש המסכתא:"
+  },
+  "Tosafot on Nedarim 2b:7:1": {
+    "dependsOn": [
+      "Nedarim 10a:1",
+      "Nedarim 10a:2",
+      "Nedarim 2b:7"
+    ],
+    "generatedAt": "2026-10-29T15:43:53.280Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 2b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ההוא דסליק מיניה פתח ברישא</strong> - ואם תאמר תקשי ליה מתניתין גופיה דקתני <span class=\"parenthesized\">(דף י)</span> כנוי נדרים קודם הוי ליה למתני כנוי [נזירות] קודם דסליק מיניה וי\"ל דסליק מקרבן דקתני נדר בנזיר וכו':"
+  }
+}

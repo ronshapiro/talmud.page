@@ -1,0 +1,267 @@
+{
+  "Rashi on Nedarim 5a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T19:43:21.229Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 5a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל אמר מודרני הימך לחוד</strong> - דלא אמר שאני אוכל לך:"
+  },
+  "Rashi on Nedarim 5a:1:2": {
+    "dependsOn": [
+      "Rashi on Nedarim 5a:1:1",
+      "Nedarim 5a:1"
+    ],
+    "generatedAt": "2026-10-29T19:46:11.151Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 5a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שניהן אסורין</strong> - דכיון דאמר שאני אוכל לך משמע דאסר נפשיה בלבד שאינו אוכל מחבירו אבל כי אמר מודרני הימך סתם משמע דמדיר נמי חבריה מיניה מכל וכל:"
+  },
+  "Rashi on Nedarim 5a:2:1": {
+    "dependsOn": [
+      "Rashi on Nedarim 5a:2:1",
+      "Rashi on Nedarim 5a:2:2",
+      "Rashi on Nedarim 5a:2:3"
+    ],
+    "generatedAt": "2026-10-29T19:47:34.970Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 5a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנן</strong> - בפ' השותפין <span class=\"parenthesized\">(לקמן מז:)</span>:"
+  },
+  "Rashi on Nedarim 5a:2:2": {
+    "dependsOn": [
+      "Rashi on Nedarim 5a:2:1",
+      "Nedarim 5a:1",
+      "Rashi on Nedarim 5a:2:3"
+    ],
+    "generatedAt": "2026-10-29T19:53:20.002Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 5a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הריני עליך חרם המודר אסור</strong> - והא הכא דלא אמר שאני אוכל לך חרם ולא הוי אסור אלא המודר ולא שניהן:"
+  },
+  "Rashi on Nedarim 5a:2:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T19:53:59.958Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 5a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כגון דמפריש</strong> - בהדיא אבל את עלי לא:"
+  },
+  "Rashi on Nedarim 5a:4:1": {
+    "dependsOn": [
+      "Rashi on Nedarim 5a:4:1",
+      "Rashi on Nedarim 5a:4:2",
+      "Nedarim 5a:4",
+      "Rashi on Nedarim 5a:2:1",
+      "Rashi on Nedarim 5a:2:2",
+      "Rashi on Nedarim 5a:2:3",
+      "Rashi on Nedarim 2a:1:1",
+      "Rashi on Nedarim 2a:1:2",
+      "Rashi on Nedarim 2b:1:1"
+    ],
+    "generatedAt": "2026-10-29T20:02:07.126Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 5a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל סתמא</strong> - דלא פריש ואת עלי לא מאי שניהן אסורין:"
+  },
+  "Rashi on Nedarim 5a:4:2": {
+    "dependsOn": [
+      "Rashi on Nedarim 5a:4:1",
+      "Rashi on Nedarim 5a:2:1",
+      "Rashi on Nedarim 5a:2:2",
+      "Rashi on Nedarim 5a:2:3",
+      "Rashi on Nedarim 2a:1:1",
+      "Rashi on Nedarim 2a:1:2",
+      "Rashi on Nedarim 5a:4:2"
+    ],
+    "generatedAt": "2026-10-29T20:04:58.921Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 5a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הדין הוא דשניהן אסורין</strong> - דאמר בפירוש הריני עליך ואת עלי אבל סתמא דאמר הריני עליך ולא אמר ואת עלי לא הוו שניהן אסורין אלא חד בלבד:"
+  },
+  "Rashi on Nedarim 5a:5:1": {
+    "dependsOn": [
+      "Nedarim 5a:5"
+    ],
+    "generatedAt": "2026-10-29T20:08:46.299Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 5a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא הכי איתמר אמר ר' יוסי בר' חנינא מודרני ממך הוא אסור וכו'</strong> - דהיינו כמתניתין הריני עליך חרם וכו':"
+  },
+  "Rashi on Nedarim 5a:6:1": {
+    "dependsOn": [
+      "Rashi on Nedarim 5a:5:1"
+    ],
+    "generatedAt": "2026-10-29T20:15:51.567Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 5a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא מתני' מודרני הימך</strong> - קתני ואוקמא שמואל דאמר בכולן עם כל אחד ואחד שאני אוכל דאהכי איהו אסור וחבירו מותר אבל אמר מודרני הימך בלבד ולא אמר שאני אוכל שניהן אסורין והיינו דלא כרבי יוסי בר' חנינא:"
+  },
+  "Rashi on Nedarim 5a:7:1": {
+    "dependsOn": [
+      "Nedarim 5a:7"
+    ],
+    "generatedAt": "2026-10-29T20:20:42.000Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 5a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא מעיקרא דשמואל הכי איתמר</strong> - הכי מתרץ לה למתניתין ולא כדאוקימנא דתיקשי לר' יוסי:"
+  },
+  "Rashi on Nedarim 5a:7:2": {
+    "dependsOn": [
+      "Rashi on Nedarim 5a:7:1"
+    ],
+    "generatedAt": "2026-10-29T20:21:33.937Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 5a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא אמר מודרני הימך</strong> - דלא מפרש כלום ודאי מכולה מילתא מדיר ואסור אפי' בהנאה:"
+  },
+  "Rashi on Nedarim 5a:8:1": {
+    "dependsOn": [
+      "Nedarim 5a:8",
+      "Nedarim 4b:10",
+      "Nedarim 4b:6",
+      "Ran on Nedarim 5a:8:1",
+      "Tosafot on Nedarim 5a:8:1",
+      "Steinsaltz on Nedarim 5a:8"
+    ],
+    "generatedAt": "2026-10-29T20:26:45.003Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 5a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ה לימא שמואל הכי</strong> - למה ליה אפושי למימריה כולי האי לימא הכי אמר שמואל ואם לא אמר שאני אוכל לך דלא אמר אלא מודרני הימך אסור אפילו בהנאה:"
+  },
+  "Rashi on Nedarim 5a:9:1": {
+    "dependsOn": [
+      "Rashi on Nedarim 5a:7:1",
+      "Rashi on Nedarim 5a:8:1"
+    ],
+    "generatedAt": "2026-10-29T20:33:17.577Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 5a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא הכי אתמר</strong> - אמר שמואל טעמא דאמר שאני אוכל לך דכיון דאמר בפירוש אכילה אסור אבל לא אמר בפירוש אכילה לא אסור למיכל מדידיה דדילמא הא דאמר מודר אני ממך אדיבוריה קאמר דלא מישתעי בהדיה אבל לא למיכל מיניה וכן כי אמר מופרשני ממך דלא אמר שאני אוכל דדילמא ממשא ומתן קא פריש מיניה מרוחקני ממך נמי דלא ליקרב בארבע אמות דיליה משמע ולא דמדיר מאכילתו:"
+  },
+  "Tosafot on Nedarim 5a:2:1": {
+    "dependsOn": [
+      "Nedarim 5a:2"
+    ],
+    "generatedAt": "2026-10-29T19:55:33.299Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 5a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנן הריני עליך חרם המודר אסור אבל לא המדיר</strong> - ולשמואל דאמר מודרני ממך משמע תרוייהו הכי נמי נימא הריני עליך חרם משמע הריני על ממונך חרם וגם מדיר נמי ליתסר ומשני דפריש ואת עלי לא ועתה פריך הרי את עלי חרם אסור ומודר מותר ואמאי נימא דה\"ק הרי את עלי וממוני חרם ואסור גם מודר:"
+  },
+  "Tosafot on Nedarim 5a:5:1": {
+    "dependsOn": [
+      "Nedarim 5a:5",
+      "Nedarim 4b:10",
+      "Tosafot on Nedarim 4b:10:1"
+    ],
+    "generatedAt": "2026-10-29T20:10:36.901Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 5a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אי איתמר דרבי יוסי בר חנינא הכי אתמר מודר אני ממך הוא אסור וחבירו מותר</strong> - תימה מאי אתא לאשמעי' הא תנא בברייתא הכי וי\"ל דאשמעי' דמודרני ממך לא משמע מודר ממונו אע\"ג דהריני חרם ר\"ל מודר ממונו זה לא אמר הכי:"
+  },
+  "Tosafot on Nedarim 5a:6:1": {
+    "dependsOn": [
+      "Tosafot on Nedarim 5a:5:1",
+      "Tosafot on Nedarim 5a:7:1",
+      "Nedarim 5a:6",
+      "Rashi on Nedarim 5a:6:1",
+      "Ran on Nedarim 5a:6:1",
+      "Nedarim 5a:4",
+      "Chidushei Halachot on Nedarim 5a:3",
+      "Rosh on Nedarim 5a:5:1"
+    ],
+    "generatedAt": "2026-10-29T20:18:04.573Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 5a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא מתני' דממך תנן</strong> - כלומר אכתי [קשה] דשמואל קאמר דאמר דמודרני ממך דשניהם אסורים:"
+  },
+  "Tosafot on Nedarim 5a:7:1": {
+    "dependsOn": [
+      "Nedarim 5a:7",
+      "Nedarim 4b:6",
+      "Tosafot on Nedarim 4b:6:1",
+      "Nedarim 4b:10",
+      "Nedarim 4b:7"
+    ],
+    "generatedAt": "2026-10-29T20:23:34.225Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 5a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא שמואל הכי אתמר טעמא דאמר שאני אוכל הוא דאין אסור אלא באכילה</strong> - דלישנא דאסור במתני' משמע ליה אסור באכילה ולא בהנאה אבל מודרני ממך אסור בהנאה ומודרני דקתני בברייתא אסור בהנאה וה\"ק שמואל וכולן אסור בהנאה עד שיאמר שאני טועם לך:"
+  },
+  "Tosafot on Nedarim 5a:8:1": {
+    "dependsOn": [
+      "Nedarim 5a:8",
+      "Nedarim 5a:6",
+      "Rashi on Nedarim 5a:8:1",
+      "Tosafot on Nedarim 5a:7:1"
+    ],
+    "generatedAt": "2026-10-29T20:28:28.943Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 5a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הכי לימא שמואל הכי אם לא אמר שאני טועם לך אסור [אפי'] בהנאה</strong> - דלישנא עד שיאמר שאני טועם לך משמע כשאני טועם אסר עצמו טפי ממודרני והא ליתא דאדרבה מודרני חמור טפי ויש ספרים דגרסי לימא שמואל ואם לא אמר אלא שאני אוכל לך אינו אסור אלא באכילה וקשה ליישבו. וה\"ה דלעיל דשמואל קאמר אבל מודרני שניהם אסורים מצי למפרך לימא שמואל אם לא אמר שאני אוכל לך שניהם אסורים:"
+  },
+  "Tosafot on Nedarim 5a:9:1": {
+    "dependsOn": [
+      "Nedarim 5a:9"
+    ],
+    "generatedAt": "2026-10-29T20:35:01.948Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 5a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא הכי איתמר</strong> - לעולם כדאמר מעיקרא דלשמואל מודרני לחודיה לא אסר כלל דלמא לא משתעי בהדך קאמר וקשה מברייתא דלעיל דמודרני אסור בלא שאני טועם לך וי\"ל דהאי אסור ר\"ל דלא מישתעי בהדיה א\"נ מעתה נחית לומר תנאי היא דברייתא דלעיל ס\"ל כרבנן דידים שאינם מוכיחות הויין ידים ושמואל סבר דמתני' כרבי יהודה דאמר לא הויין ידים:"
+  }
+}

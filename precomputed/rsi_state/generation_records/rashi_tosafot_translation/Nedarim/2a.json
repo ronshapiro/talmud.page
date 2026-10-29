@@ -1,0 +1,184 @@
+{
+  "Rashi on Nedarim 2a:1:1": {
+    "dependsOn": [
+      "Rashi on Nedarim 2a:3:1",
+      "Rashi on Nedarim 2a:4:1"
+    ],
+    "generatedAt": "2026-10-29T14:33:57.509Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 2a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל כנויי נדרים כנדרים</strong> - דעיקר נדר דכתיב בתורה <span class=\"parenthesized\">(במדבר ל׳:ג׳)</span> איש כי ידור נדר דאמר קרבן שאני אוכל לך או קרבן שאני נהנה לך ואם אמר בלשון אחר בכינוי נדר כדקתני לקמן קונם שאני נהנה לך או קונם שאיני נהנה לך דאם כינה לקרבן בהני לשונות נמי מיתסר בהו בנדרים כמו שאסור גבי קרבן וכן כנויי חרמים כחרמים וכן כנויי שבועות כו' מפרש לקמן:"
+  },
+  "Rashi on Nedarim 2a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T14:52:04.570Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 2a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מודר אני ממך</strong> - כלומר הרי עלי כנדר מה שאני נהנה ממך או א\"ל מופרשני ממך בהאי לשון או אמר מרוחק אני ממך דמשמע דמיתסר נפשיה ולא מיתהני מיניה וכל הני כיון דלא מפרש ממש לנדר דלא מידכר ביה שום לשון קרבן הויין ידות:"
+  },
+  "Rashi on Nedarim 2a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T15:10:30.602Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 2a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנודה אני לך</strong> - כמו שאם היה בנידוי דאסור ליה לישא וליתן בהדיה כך אסר נפשיה עליה:"
+  },
+  "Rashi on Nedarim 2a:4:2": {
+    "dependsOn": [
+      "Rashi on Nedarim 2a:4:1",
+      "Rashi on Nedarim 2a:4:3",
+      "Rashi on Nedarim 2a:4:4"
+    ],
+    "generatedAt": "2026-10-29T15:12:01.814Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 2a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר\"ע היה חוכך בזה להחמיר</strong> - הוה מחכך להחמיר דאסור נמי דענין נדר הוא ולא בריר ליה:"
+  },
+  "Rashi on Nedarim 7a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T15:02:01.748Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 7a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנודה אני לך</strong> - כלומר כמנודה שאסור לההנותו כך אהא אסור ליהנות ממך:"
+  },
+  "Rashi on Nedarim 7a:9:2": {
+    "dependsOn": [
+      "Rashi on Nedarim 7a:9:2",
+      "Rashi on Nedarim 7a:9:1"
+    ],
+    "generatedAt": "2026-10-29T15:07:31.014Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 7a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר׳ עקיבא היה חוכך בזה להחמיר</strong> - כאדם שמתחכך אילך ואילך כך איהו לא בריר ליה שיהא ודאי אסור:"
+  },
+  "Tosafot on Nedarim 2a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T14:36:28.800Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 2a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל כנויי נדרים כנדרים וחרמים כחרמים</strong> - כינוי זהו שם שפל <span class=\"parenthesized\">(נ\"א טפל)</span> כדאמרי' המכנה שם לחברו ה\"נ כנויי נדרים דעיקר הנדר הוא כשמתפיס החפץ בדבר הנדור כמו דאמר הרי עלי ככר זה כהקדש ועל ככר אחר אומר יהא כזה זהו נדר כדאמר פרק ג' דשבועות <span class=\"parenthesized\">(ד' כ)</span> עד שידור בדבר הנדור והני לישני כעין נדר הן ולקמן בשילהי פירקין קאמר ר\"ל לשון שבדו חכמי' ולהכי תקינו כנויי דלא לימא קרבן לה' דזימנין דאמר לה' ולא אמר לקרבן ומפיק שם שמים לבטלה ור' יוחנן אמר לשון נכרים דבלשונם כשנודרין נדר אומרים הכי וקשה למ\"ד לשון נכרים אמאי נקט הני לישני לימא בכל הלשונות שהם נודרים בלשונם יהא נדר ואומר ר\"י ודאי אם יהא כלשונם יהא נדר אחרי שהם מבינים והני דמתני' אפי' לא יבינו האי לשון הרי הוא נדר ולמ\"ד לשון שבדו חכמים קשה דה\"נ כנויי דנזיר בדו חכמים והיכי יביא קרבן על לשון חכמים ובנדרים לא קשה אי עבר בבל תאחר על לשון חכמים וי\"ל דהא דאמר ל' בדו לא קאמר אלא גבי נדרים אבל לא גבי נזיר וכן מוכח בגמרא דפריך הניחא למ\"ד לשון נכרים אלא למ\"ד לשון שבדו חכמים מאי איכא למימר ובמס' נזיר דקאמר כל כנויי נזירות כנזירות לא פריך כה\"ג בגמ' ואור\"י דאין זו ראיה דרגילות הוא להאריך במקום אחד ולקצר במקום אחר ועל לשון שבדו חכמים נמי הוי נזיר דכיון דתקינו חכמים שנודרין בהני לישני הוי כעיקר נזירות ויש - כח בידיהם לעשות תקנתן כעיקר נזירות ועוד י\"ל כיון שתיקנו חכמים הני לישני כוונת הנודר לנדר גמור וגמר בלבו לעשותו כעיקר הלשון:"
+  },
+  "Tosafot on Nedarim 2a:1:2": {
+    "dependsOn": [
+      "Tosafot on Nedarim 2a:1:1",
+      "Tosafot on Nedarim 2a:1:2",
+      "Tosafot on Nedarim 2a:2:1"
+    ],
+    "generatedAt": "2026-10-29T14:40:31.817Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 2a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל כנויי נדרים כנדרים וחרמים כחרמים</strong> - כינוי זהו שם שפל <span class=\"parenthesized\">(נ\"א טפל)</span> כדאמרי' המכנה שם לחברו ה\"נ כנויי נדרים דעיקר הנדר הוא כשמתפיס החפץ בדבר הנדור כמו דאמר הרי עלי ככר זה כהקדש ועל ככר אחר אומר יהא כזה זהו נדר כדאמר פרק ג' דשבועות <span class=\"parenthesized\">(ד' כ)</span> עד שידור בדבר הנדור והני לישני כעין נדר הן ולקמן בשילהי פירקין קאמר ר\"ל לשון שבדו חכמי' ולהכי תקינו כנויי דלא לימא קרבן לה' דזימנין דאמר לה' ולא אמר לקרבן ומפיק שם שמים לבטלה ור' יוחנן אמר לשון נכרים דבלשונם כשנודרין נדר אומרים הכי וקשה למ\"ד לשון נכרים אמאי נקט הני לישני לימא בכל הלשונות שהם נודרים בלשונם יהא נדר ואומר ר\"י ודאי אם יהא כלשונם יהא נדר אחרי שהם מבינים והני דמתני' אפי' לא יבינו האי לשון הרי הוא נדר ולמ\"ד לשון שבדו חכמים קשה דה\"נ כנויי דנזיר בדו חכמים והיכי יביא קרבן על לשון חכמים ובנדרים לא קשה אי עבר בבל תאחר על לשון חכמים וי\"ל דהא דאמר ל' בדו לא קאמר אלא גבי נדרים אבל לא גבי נזיר וכן מוכח בגמרא דפריך הניחא למ\"ד לשון נכרים אלא למ\"ד לשון שבדו חכמים מאי איכא למימר ובמס' נזיר דקאמר כל כנויי נזירות כנזירות לא פריך כה\"ג בגמ' ואור\"י דאין זו ראיה דרגילות הוא להאריך במקום אחד ולקצר במקום אחר ועל לשון שבדו חכמים נמי הוי נזיר דכיון דתקינו חכמים שנודרין בהני לישני הוי כעיקר נזירות ויש כח בידיהם לעשות תקנתן כעיקר נזירות ועוד י\"ל כיון שתיקנו חכמים הני לישני כוונת הנודר לנדר גמור וגמר בלבו לעשותו כעיקר הלשון:"
+  },
+  "Tosafot on Nedarim 2a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T14:42:58.093Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 2a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחרמים כחרמים</strong> - תימה למ\"ד סתם חרמים לכהנים אם ירצה להחרים לבדק הבית יצטרך לומר חרם לה' וא\"כ מה הועילו חכמים בתקנתם והא כל הכנויים אינם אלא משום שלא יזכיר שם שמים לבטלה שאחרי הכנויים אלו אינו רהוט לומר לה' כמו אם יאמר קרבן דאז הוא רהוט לומר לה' וי\"ל שאם ירצה להחרים לבדק הבית יאמר חרם לבדק הבית:"
+  },
+  "Tosafot on Nedarim 2a:2:2": {
+    "dependsOn": [
+      "Tosafot on Nedarim 2a:2:1",
+      "Tosafot on Nedarim 2a:2:3",
+      "Shevuot 38b:20",
+      "Shevuot 38b:21",
+      "Shevuot 38b:22"
+    ],
+    "generatedAt": "2026-10-29T14:45:43.753Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 2a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושבועות כשבועות</strong> - שבותה שבוקה מפרש לקמן וקשה דשילהי פ' שבועת העדות <span class=\"parenthesized\">(שבועות דף לה)</span> קאמר יתן ה' אותך לאלה ולשבועה נאמר כאן אלה ונאמר להלן אלה מה להלן בשם אף כאן בשם וכן ריש פ' שבועת הדיינין <span class=\"parenthesized\">(שבועות דף לח)</span> קאמר כמאן כר' חנינא דאמר בעינן שם אפי' תימא רבנן דאמרי בכינויין אבל <span class=\"parenthesized\">(לא)</span> בלא כינוי דשם לא מחייב וכן קשה התם דאמרי' במס' שבועות <span class=\"parenthesized\">(דף יט)</span> שבועה שלא אוכל שבועה שאוכל לך אסור ואור״ת הא דבעינן שם או כינוי במושבע מפי אחרים אבל מושבע מפי עצמו מצי אסר נפשיה בלא שום כינוי:"
+  },
+  "Tosafot on Nedarim 2a:2:3": {
+    "dependsOn": [
+      "Tosafot on Nedarim 2a:2:3"
+    ],
+    "generatedAt": "2026-10-29T14:50:16.329Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 2a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונזירות כנזירות</strong> - תימה אמאי לא תנא איסורי כאיסורי והקדשות כהקדשות וכו' וי\"ל דלמ\"ד לשון נכרים לא נמצא להם לשון נכרים אלא בהני דתנא ולמ\"ד לשון שבדו חכמים צ\"ל דלהכי לא תנא דלא כתב ערך לה' איסור לה' הקדש לה' כמו דכתיב חרם לה' וקרבן לה':"
+  },
+  "Tosafot on Nedarim 2a:3:1": {
+    "dependsOn": [
+      "Nedarim 2a:3",
+      "Nedarim 2a:4",
+      "Nedarim 2b:3"
+    ],
+    "generatedAt": "2026-10-29T14:53:33.778Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 2a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האומר לחבירו מודר אני ממך</strong> - הני ידות מיקרו שאינו גומר דבריו אלא מתחיל והוי ידות כמו יד לכלי ומפרש בגמ' אמאי שבק בכינויין דמיירי בהון ומפרש ידות דלא איירי בהון:"
+  },
+  "Tosafot on Nedarim 2a:3:2": {
+    "dependsOn": [
+      "Tosafot on Nedarim 2a:3:1",
+      "Nedarim 13b:4",
+      "Nedarim 13b:5",
+      "Nedarim 14a:1",
+      "Nedarim 14a:2",
+      "Rashi on Nedarim 2a:3:1",
+      "Ran on Nedarim 2a:3:1",
+      "Ran on Nedarim 2a:3:2",
+      "Rosh on Nedarim 2a:3:1",
+      "Nedarim 4b:10",
+      "Tosafot on Nedarim 4b:10:1",
+      "Ran on Nedarim 4b:10:1",
+      "Tosafot on Nedarim 2a:1:1",
+      "Tosafot on Nedarim 2a:2:1",
+      "Tosafot on Nedarim 2a:2:2",
+      "Nedarim 8a:1",
+      "Nedarim 8a:2",
+      "Nedarim 8a:3",
+      "Nedarim 8a:4",
+      "Nedarim 8a:5",
+      "Shevuot 19b:15",
+      "Shevuot 19b:16",
+      "Shevuot 19b:17",
+      "Shevuot 19b:18",
+      "Tosafot on Shevuot 19b:15:1"
+    ],
+    "generatedAt": "2026-10-29T15:00:27.012Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 2a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאני אוכל לך</strong> - יש דגורסין ביו\"ד שאיני אוכל לך וקשה דהא אין נדרים חלין אלא על דבר שיש בו ממש ושמא מיירי דמסרבין בו לאכול ואומר שאיני והוי כמו קונם שאני אין אור\"י דבגמ' משמע דבמידי דמאכל אף שאיני ביו\"ד לא קרי בזה דבר שאין בו ממש ולא דמי לשאיני ישן דאמר לקמן <span class=\"parenthesized\">(נדרים דף יד)</span> [דהוי] דבר שאין בו ממש דהתם אין בו ממש לא בדבור ולא בשינה אבל הכא מ\"מ במאכל שהוא מזכיר יש בו ממש והוא קונם המאכל עצמו ענין זה שאני אוכל וא\"ת מהו עיקר הנדר בשלמא חרמים הוא עיקר מן החרם ושבועות מן השבועה וי\"ל שנדר עצמו הוא עיקר דאמר ככר זה עלי נדר וכן משמע מתני' כינוי נדרים כנדרים וקרא נמי מוכח כי ידור נדר ולא נראה דא\"כ מאי קאמר התם מודר אני ממך אדרבה הוא עיקר הנדר ועוד קשה דקאמר קונם קונח קונס הרי זה כינוי לקרבן הוה ליה למימר לנדרים לכך נראה לפרש דעיקר הנדר כשהוא אומר ככר זה עלי קרבן וכי ידור נדר אתי למימר דבעינן שידור בדבר הנדור:"
+  }
+}
