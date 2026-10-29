@@ -88,6 +88,115 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">טריפה</strong> - כגון מן הארכובה ולמעלה:"
   },
+  "Rashi on Bekhorot 3a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T04:29:00.376Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במאי קמיפלגי</strong> - רב חסדא ורבא:"
+  },
+  "Rashi on Bekhorot 3a:14:2": {
+    "dependsOn": [
+      "Bekhorot 3a:14",
+      "Rashi on Bekhorot 3a:14:1",
+      "Rashi on Bekhorot 3a:14:3"
+    ],
+    "generatedAt": "2026-10-29T04:30:09.264Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבא סבר טריפה אינה חיה</strong> - הלכך כמאן דהוי כולה דעובד כוכבים דמי:"
+  },
+  "Rashi on Bekhorot 3a:14:3": {
+    "dependsOn": [
+      "Rashi on Bekhorot 3a:14:1",
+      "Rashi on Bekhorot 3a:14:2",
+      "Bekhorot 3a:14"
+    ],
+    "generatedAt": "2026-10-29T04:32:54.368Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3a:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורב חסדא סבר טריפה חיה</strong> - הלכך לא חשיב אלא דבר שעושה אותה נבילה:"
+  },
+  "Rashi on Bekhorot 3a:15:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 3a:15:1",
+      "Rashi on Bekhorot 3a:15:2",
+      "Rashi on Bekhorot 3a:15:3"
+    ],
+    "generatedAt": "2026-10-29T04:33:39.921Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא פליגי</strong> - רב חסדא ורבא עליה דרב הונא אבל רב חסדא ורבא פליגי:"
+  },
+  "Rashi on Bekhorot 3a:15:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 3a:15:1",
+      "Rashi on Bekhorot 3a:15:2",
+      "Rashi on Bekhorot 3a:15:3",
+      "Bekhorot 3a:15",
+      "Rashi on Bekhorot 3a:12:1",
+      "Rashi on Bekhorot 3a:12:2",
+      "Rashi on Bekhorot 3a:12:3"
+    ],
+    "generatedAt": "2026-10-29T04:34:45.658Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[הא בו</strong> - ] אם יש חלק לעובד כוכבים בבכור עצמו אפי' באזנו אינו קדוש:"
+  },
+  "Rashi on Bekhorot 3a:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T04:43:13.516Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל מקנך תזכר</strong> - אם כל המקנה שלך תזכר אם יהא שלך זכר תקדישנו כדמתרגמינן דיכרין תקדיש:"
+  },
+  "Rashi on Bekhorot 3a:17:1": {
+    "dependsOn": [
+      "Bekhorot 3a:17",
+      "Rashi on Bekhorot 3a:17:1",
+      "Rashi on Bekhorot 3a:17:2"
+    ],
+    "generatedAt": "2026-10-29T04:44:04.247Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתקיף לה</strong> - אכולהו:"
+  },
+  "Rashi on Bekhorot 3a:17:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 3a:17:1",
+      "Bekhorot 3a:16",
+      "Bekhorot 3a:14",
+      "Bekhorot 3a:15"
+    ],
+    "generatedAt": "2026-10-29T04:45:30.091Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3a:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שגר בהמה שגר בבהמה</strong> - שגר במעי בהמה שעדיין לא הגיע זמנו לצאת. ל\"א שגר בהמה מה שבהמה משגרת ומשכלת. אלמא אע\"ג דלאו בני חיותא נינהו קדשי הכא נמי אי נמי הוה ליה לעובד כוכבים ביה דבר שעושה אותו נבילה ליקדוש חלק הישראל אע\"ג דלאו בר חיותא הוא:"
+  },
   "Rashi on Bekhorot 3a:1:1": {
     "dependsOn": [
       "Bekhorot 3a:1",
@@ -294,5 +403,34 @@
       "Tosafot on Bekhorot 3a:13:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">רב חסדא אמר דבר שעושה אותה נבלה רבא אמר דבר שעושה אותה טריפה</strong> - פ\"ק דתמורה <span class=\"parenthesized\">(דף יא:)</span> גריס איפכא גבי אומר רגלה של זו עולה ומהגרסות הפוכות היא זו וההיא דהתם עיקר דאמר רב חסדא מודה רבי יהודה בדבר שעושה אותה טריפה רבא אמר בדבר שעושה אותה נבילה רב ששת אמר בדבר שמתה בו כו מר מוסיף אדחבריה ובענין זה יתכן דאמר הכא רב הונא אזנו רב חסדא מוסיף טרפה רבא מוסיף נבילה וכה\"ג פ' המפלת <span class=\"parenthesized\">(נדה כג:)</span> גבי גוף אטום עד לארכובה וחד מוסיף עד טבורו והא דאמר רבא התם ושטו נקוב אמו טמאה לידה אפי' גרס רבא בשמעתא לפי שהוא בתר רב חסדא לא קשה דרבא אדרבא התם דאע\"ג דושטו נקוב טריפה <span class=\"parenthesized\">(וחיה)</span> לא מדמו לחסרון עד לארכובה:"
+  },
+  "Tosafot on Bekhorot 3a:15:1": {
+    "dependsOn": [
+      "Tosafot on Bekhorot 3a:15:1"
+    ],
+    "generatedAt": "2026-10-29T04:42:01.843Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 3a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא דרב הונא ורב חסדא ורבא לא פליגי</strong> - הא פשיטא דרב חסדא ורבא פליגי אלא ה\"ק הא דרב הונא לא פליגא אדרב חסדא ורבא:"
+  },
+  "Tosafot on Bekhorot 3a:17:1": {
+    "dependsOn": [
+      "Bekhorot 3a:17",
+      "Tosafot on Bekhorot 3a:13:1",
+      "Tosafot on Bekhorot 3a:15:1",
+      "Rashi on Bekhorot 3a:17:1",
+      "Rashi on Bekhorot 3a:17:2",
+      "Chidushei Halachot on Bekhorot 3a:6"
+    ],
+    "generatedAt": "2026-10-29T04:47:28.497Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 3a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מ\"ש מנפלים</strong> - אע\"ג דהתם כתב קרא הוה לן למילף מהתם או נפלים נילף משותפות דכתיב כל בכור ונשוה כל הדרשות בענין אחד:"
   }
 }

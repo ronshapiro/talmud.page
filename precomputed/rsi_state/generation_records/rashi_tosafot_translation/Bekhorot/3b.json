@@ -1,0 +1,269 @@
+{
+  "Rashi on Bekhorot 3b:10:1": {
+    "dependsOn": [
+      "Bekhorot 3b:10",
+      "Rashi on Bekhorot 3b:10:1",
+      "Rashi on Bekhorot 3b:10:2",
+      "Rashi on Bekhorot 3b:11:1",
+      "Rashi on Bekhorot 3b:11:2",
+      "Rashi on Bekhorot 3b:11:3",
+      "Steinsaltz on Bekhorot 3b:10",
+      "Rosh on Bekhorot 1:2:1"
+    ],
+    "generatedAt": "2026-10-29T05:22:52.184Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחי</strong> - עובדי כוכבים הוו:"
+  },
+  "Rashi on Bekhorot 3b:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T05:23:51.835Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אתאי לקמיה דרבא</strong> - למיבעי אי מיחייבא בבכורה:"
+  },
+  "Rashi on Bekhorot 3b:11:1": {
+    "dependsOn": [
+      "Bekhorot 3b:11"
+    ],
+    "generatedAt": "2026-10-29T05:27:31.754Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקנה לאודנייהו לעובד כוכבים</strong> - לאפקועינהו מבכורה:"
+  },
+  "Rashi on Bekhorot 3b:11:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 3b:11:1",
+      "Rashi on Bekhorot 3b:11:2",
+      "Rashi on Bekhorot 3b:11:3"
+    ],
+    "generatedAt": "2026-10-29T05:28:32.390Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואסר להו</strong> - לבכורות בגיזה ועבודה כבכורים גמורים ויהיב להו לכהנים:"
+  },
+  "Rashi on Bekhorot 3b:11:3": {
+    "dependsOn": [
+      "Rashi on Bekhorot 3b:11:1",
+      "Rashi on Bekhorot 3b:11:2"
+    ],
+    "generatedAt": "2026-10-29T05:29:07.751Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3b:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכלאי חיותא</strong> - מתה מקנהו:"
+  },
+  "Rashi on Bekhorot 3b:12:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 3b:12:2",
+      "Bekhorot 3b:12"
+    ],
+    "generatedAt": "2026-10-29T05:30:49.858Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לידי תקלה</strong> - שלא יגוז ויעבוד בהן:"
+  },
+  "Rashi on Bekhorot 3b:12:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T05:32:47.585Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הכי</strong> - דלטובה נתכוון אמאי כלאי חיותיה:"
+  },
+  "Rashi on Bekhorot 3b:1:1": {
+    "dependsOn": [
+      "Bekhorot 3b:1",
+      "Rashi on Bekhorot 3b:1:2"
+    ],
+    "generatedAt": "2026-10-29T04:52:09.144Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכי אמר רבי יוחנן</strong> - בי מדרשא דהאי חייב דקתני חייב ליתנו לכהן קאמר אבל למזבח לא קרב דהאי דאישתני הוי מום קבוע לשחוט עליו בחוץ כבכור בעל מום ששוחטו כהן ואוכלו:"
+  },
+  "Rashi on Bekhorot 3b:1:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 3b:1:1"
+    ],
+    "generatedAt": "2026-10-29T04:53:28.908Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפי' מום קל</strong> - ואפי' אין לעובד כוכבים שותפות אלא באזנה שאם היה נוטל חלקו אינה לא נבלה ולא טרפה אלא מום קל בעלמא פטורה מן הבכורה:"
+  },
+  "Rashi on Bekhorot 3b:2:1": {
+    "dependsOn": [
+      "Bekhorot 3b:2"
+    ],
+    "generatedAt": "2026-10-29T04:54:37.144Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדרב הונא</strong> - דאמר אפי' אזנו:"
+  },
+  "Rashi on Bekhorot 3b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T04:56:11.621Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנינא</strong> - לקמן בפ' על אלו מומין שוחטין את הבכור <span class=\"parenthesized\">(דף מ.)</span>:"
+  },
+  "Rashi on Bekhorot 3b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T04:57:00.727Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא נשתנה כו'</strong> - ולהכי איצטריך לר' יוחנן לאשמועינן דמום הוא:"
+  },
+  "Rashi on Bekhorot 3b:4:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 3b:4:1"
+    ],
+    "generatedAt": "2026-10-29T04:58:25.700Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או אחת גדולה</strong> - כשל עגל או אחת קטנה כשל אווז:"
+  },
+  "Rashi on Bekhorot 3b:5:1": {
+    "dependsOn": [
+      "Bekhorot 3b:5"
+    ],
+    "generatedAt": "2026-10-29T04:59:24.326Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יש במינו קדוש בבכורה</strong> - ואפי' הכי הוי מומא ואמאי איצטריך לרבי יוחנן למימר:"
+  },
+  "Rashi on Bekhorot 3b:6:1": {
+    "dependsOn": [
+      "Bekhorot 3b:6",
+      "Bekhorot 3b:4"
+    ],
+    "generatedAt": "2026-10-29T05:00:27.167Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא משום דהוה ליה שרוע</strong> - דשרוע האמור בתורה זו היא שאברו אחד גדול מחבירו אבל שינוי אחר כגון שבצמרו דומה לעז לא שמעינן דמום הוא הלכך איצטריך לרבי יוחנן לאשמועינן:"
+  },
+  "Rashi on Bekhorot 3b:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T05:00:52.529Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מומין אלו</strong> - שפירשו חכמים בבכור:"
+  },
+  "Rashi on Bekhorot 3b:6:3": {
+    "dependsOn": [
+      "Rashi on Bekhorot 3b:6:1",
+      "Rashi on Bekhorot 3b:6:2",
+      "Mishnah Bekhorot 6:12",
+      "Bekhorot 43a:1"
+    ],
+    "generatedAt": "2026-10-29T05:01:58.078Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בין עוברין בין קבועין פוסלין</strong> - באדם בכהן כל זמן שמום בו לא יעבוד:"
+  },
+  "Rashi on Bekhorot 3b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T05:02:27.330Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שוה בזרעו</strong> - שדומה לבני אדם:"
+  },
+  "Rashi on Bekhorot 3b:9:1": {
+    "dependsOn": [
+      "Bekhorot 3b:9",
+      "Rashi on Bekhorot 3b:9:1",
+      "Rashi on Bekhorot 3b:9:2",
+      "Rashi on Bekhorot 3b:6:1",
+      "Rashi on Bekhorot 3b:6:2",
+      "Rashi on Bekhorot 3b:6:3",
+      "Rashi on Bekhorot 3b:7:1",
+      "Bekhorot 3b:5",
+      "Rashi on Bekhorot 3b:4:1",
+      "Rashi on Bekhorot 3b:4:2",
+      "Rashi on Bekhorot 3b:5:1",
+      "Bekhorot 3b:1"
+    ],
+    "generatedAt": "2026-10-29T05:10:33.467Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעולם אימא לך כו'</strong> - ומהכא לא תסתבר משום שרוע:"
+  },
+  "Rashi on Bekhorot 3b:9:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 3b:9:2",
+      "Bekhorot 3b:9",
+      "Rashi on Bekhorot 3b:9:1"
+    ],
+    "generatedAt": "2026-10-29T05:17:45.048Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרוייהו בעו</strong> - והא ודאי משונה הוא. ואי קשיא אמאי איצטריך לר' יוחנן למימר הא אוקימנא דשינוי הוי מומא תריץ כיון דאיכא למימר נמי דלאו משום שינוי הוא אלא משום שרוע איצטריך לר' יוחנן למימר:"
+  },
+  "Tosafot on Bekhorot 3b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T05:06:02.113Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 3b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לאו משום דהוה ליה שרוע</strong> - ושינוי לא הוי מומא וא\"ת אם כן קשה טפי לר' יוחנן דאמר לעיל כיון דאישתני הוי מומא דהכא דייקינן שתיהן גדולות הוי שינוי ולא חשיב מומא ויש לומר ההיא דלעיל שינוי חמור טפי משתיהן גדולות או שתיהן קטנות:"
+  }
+}
