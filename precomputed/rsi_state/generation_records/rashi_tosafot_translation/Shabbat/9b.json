@@ -1,0 +1,584 @@
+{
+  "Rashi on Shabbat 9b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T11:04:22.566Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא ישב אדם לפני הספר</strong> - להסתפר:"
+  },
+  "Rashi on Shabbat 9b:1:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 9b:1:1",
+      "Rashi on Shabbat 9b:1:2",
+      "Rashi on Shabbat 9b:1:3",
+      "Rashi on Shabbat 9b:2:1",
+      "Rashi on Shabbat 9a:1:1",
+      "Rashi on Shabbat 9a:1:2",
+      "Rashi on Pesachim 107b:1:1",
+      "Rashi on Pesachim 107b:1:2",
+      "Rashi on Pesachim 99b:1:1"
+    ],
+    "generatedAt": "2026-10-28T11:06:57.532Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סמוך למנחה</strong> - קודם למנחה:"
+  },
+  "Rashi on Shabbat 9b:1:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 9b:1:1",
+      "Rashi on Shabbat 9b:1:2",
+      "Rashi on Shabbat 9b:1:4",
+      "Rashi on Shabbat 9b:1:5",
+      "Rashi on Shabbat 9b:1:6",
+      "Steinsaltz comment #1 on Shabbat 9b:1",
+      "Steinsaltz comment #2 on Shabbat 9b:1",
+      "Tosafot on Shabbat 9b:1:1"
+    ],
+    "generatedAt": "2026-10-28T11:09:09.839Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד שיתפלל</strong> - שמא ישכח ולא יתפלל והא אפילו בחול נמי והא דתני הכא משום דדמי להא דתני גבה לא יצא החייט במחטו ע\"ש עם חשכה שמא ישכח ויצא משתחשך:"
+  },
+  "Rashi on Shabbat 9b:1:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T11:10:17.084Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא יכנס</strong> - סמוך למנחה:"
+  },
+  "Rashi on Shabbat 9b:1:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 9b:1:4",
+      "Rashi on Shabbat 9b:1:5",
+      "Rashi on Shabbat 9b:1:6",
+      "Rashi on Shabbat 9b:1:1",
+      "Rashi on Shabbat 9b:1:2",
+      "Rashi on Shabbat 9b:1:3",
+      "Shabbat 9b:2"
+    ],
+    "generatedAt": "2026-10-28T11:11:54.364Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:1:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא למרחץ כו'</strong> - וטעמא דכולהו משום שמא ימשך עד שיעבור זמן תפלה:"
+  },
+  "Rashi on Shabbat 9b:1:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T11:12:37.384Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:1:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם התחילו</strong> - אחת מכל אלו:"
+  },
+  "Rashi on Shabbat 9b:1:7": {
+    "dependsOn": [
+      "Rashi on Shabbat 9b:1:6",
+      "Rashi on Shabbat 9b:1:8",
+      "Rashi on Shabbat 9b:1:7",
+      "Rashi on Shabbat 9b:1:1",
+      "Rashi on Shabbat 9b:1:2",
+      "Rashi on Shabbat 9b:1:3"
+    ],
+    "generatedAt": "2026-10-28T11:14:39.021Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:1:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מפסיקין</strong> - אלא יגמור ואח\"כ מתפלל ובגמרא <span class=\"parenthesized\">(דף י.)</span> מפרש בדאיכא שהות לגמור קודם שיעבור הזמן:"
+  },
+  "Rashi on Shabbat 9b:1:8": {
+    "dependsOn": [
+      "Rashi on Shabbat 9b:1:7",
+      "Rashi on Shabbat 9b:1:8",
+      "Rashi on Shabbat 9b:1:9",
+      "Rashi on Shabbat 9b:1:1",
+      "Rashi on Shabbat 9b:1:2",
+      "Rashi on Shabbat 9b:1:3",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:6:1",
+      "Tosafot on Pesachim 2a:1:1",
+      "Tosafot on Berakhot 2a:10:1"
+    ],
+    "generatedAt": "2026-10-28T11:17:51.672Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:1:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפסיקין לק\"ש</strong> - דאיתא מדאורייתא:"
+  },
+  "Rashi on Shabbat 9b:1:9": {
+    "dependsOn": [
+      "Rashi on Shabbat 9b:1:7",
+      "Rashi on Shabbat 9b:1:8",
+      "Rashi on Shabbat 9b:1:1",
+      "Rashi on Shabbat 9b:1:2",
+      "Rashi on Shabbat 9b:1:3",
+      "Rashi on Shabbat 9b:1:4",
+      "Rashi on Shabbat 9b:1:5",
+      "Rashi on Shabbat 9b:1:6"
+    ],
+    "generatedAt": "2026-10-28T11:20:39.920Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:1:9"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין מפסיקין לתפלה</strong> - ובגמרא <span class=\"parenthesized\">(דף יא.)</span> פריך הא תנא ליה רישא:"
+  },
+  "Rashi on Shabbat 9b:2:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 9b:2:2",
+      "Steinsaltz on Shabbat 9b:2",
+      "Rashi on Pesachim 58a:5:1",
+      "Rashi on Shabbat 9b:1:1",
+      "Rashi on Shabbat 9b:1:2",
+      "Rashi on Shabbat 9b:1:3"
+    ],
+    "generatedAt": "2026-10-28T11:27:30.652Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנחה גדולה</strong> - התחלת זמן תמיד של בין הערבים מכי מתחיל להעריב דהיינו מחצי שבע ולמעלה דהא חצי שש וחצי שבע חמה עומדת בראש כל אדם וקודרת כנגדה למטה ואינה נוטה לשום צד ומחצי ז' ולמעלה נוטה ברקיע למערב סמוך למנחה מהתחלת שבע:"
+  },
+  "Rashi on Shabbat 9b:2:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 9b:2:1",
+      "Pesachim 58a:1",
+      "Rashi on Shabbat 9b:1:1"
+    ],
+    "generatedAt": "2026-10-28T11:30:33.678Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנחה קטנה</strong> - בט' ומחצה שהיו רגילין שלא לאחרו יותר מכן כדאמרי' בתמיד נשחט סמוך לה מתחילת י':"
+  },
+  "Rashi on Shabbat 9b:3:1": {
+    "dependsOn": [
+      "Shabbat 9b:3",
+      "Tosafot on Shabbat 9b:3:1",
+      "Steinsaltz on Shabbat 9b:3",
+      "Tosafot on Shabbat 9b:3:2",
+      "Rashi on Shabbat 9b:1:6",
+      "Rashi on Shabbat 9b:1:7",
+      "Rashi on Shabbat 9b:1:8",
+      "Rashi on Shabbat 9b:1:9",
+      "Shabbat 9b:7",
+      "Berakhot 28b:2",
+      "Chokhmat Shlomo on Berakhot 28b:1",
+      "Rosh on Berakhot 4:11:1"
+    ],
+    "generatedAt": "2026-10-28T11:36:06.597Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם התחילו אין מפסיקין</strong> - בתמיה ויעבור הזמן לימא תהוי תיובתא כו' דקתני הכא יגמרו סעודתם:"
+  },
+  "Rashi on Shabbat 9b:4:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 9b:4:2",
+      "Rashi on Shabbat 9b:4:3",
+      "Nedarim 51a:6",
+      "Rashi on Nedarim 51a:6:2",
+      "Sanhedrin 22b:20",
+      "Sanhedrin 22b:21",
+      "Rashi on Sanhedrin 22b:21:1",
+      "Rashi on Sanhedrin 22b:21:2",
+      "Sanhedrin 22b:22",
+      "Rashi on Sanhedrin 22b:22:1"
+    ],
+    "generatedAt": "2026-10-28T11:47:28.405Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בן אלעשה</strong> - חתנו של רבי היה ופזר מעות ללמוד תספורת של כ\"ג [נדרי' נא.] שהיה מספר כל ראשו ולא לגמרי אלא מניח כל השערות קצת כדי שיהא ראשו של זה בצד עיקרו של זה והיינו כסום יכסמו [את ראשיהם] <span class=\"parenthesized\">(יחזקאל מ״ד:כ׳)</span> ומימשיך טובא:"
+  },
+  "Rashi on Shabbat 9b:4:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 9b:4:1",
+      "Rashi on Shabbat 9b:4:2",
+      "Rashi on Shabbat 9b:4:3",
+      "Shabbat 9b:4",
+      "Rashi on Shabbat 9b:5:2"
+    ],
+    "generatedAt": "2026-10-28T11:49:06.148Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לכולא מילתא דמרחץ</strong> - לחוף ראשו ולהשתטף בחמין ובצונן ולהזיע:"
+  },
+  "Rashi on Shabbat 9b:4:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 9b:4:1",
+      "Rashi on Shabbat 9b:4:2",
+      "Rashi on Shabbat 9b:4:3",
+      "Rashi on Shabbat 9b:5:1",
+      "Rashi on Shabbat 9b:5:2",
+      "Shabbat 9b:6",
+      "Rashi on Shabbat 9b:6:3",
+      "Rashi on Shabbat 9b:6:4"
+    ],
+    "generatedAt": "2026-10-28T11:50:54.780Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בורסקי גדולה</strong> - עורות הרבה ובתחלת תקונן:"
+  },
+  "Rashi on Shabbat 9b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T12:01:37.266Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמא ישבר הזוג</strong> - של מספרים ויהא צריך לחזר אחר זוג אחר:"
+  },
+  "Rashi on Shabbat 9b:5:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 9b:5:1",
+      "Shabbat 9b:5",
+      "Rashi on Shabbat 9b:5:3",
+      "Rashi on Shabbat 9b:5:4",
+      "Rashi on Shabbat 9b:4:2"
+    ],
+    "generatedAt": "2026-10-28T12:04:01.120Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למרחץ</strong> - נמי לא תימא לכולא מילתא דמרחץ אלא להזיע בעלמא:"
+  },
+  "Rashi on Shabbat 9b:5:3": {
+    "dependsOn": [
+      "["
+    ],
+    "generatedAt": "2026-10-28T12:07:39.407Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יתעלפה</strong> - פשמי\"ר בלע\"ז:"
+  },
+  "Rashi on Shabbat 9b:5:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 9b:5:1",
+      "Rashi on Shabbat 9b:5:2",
+      "Rashi on Shabbat 9b:5:3",
+      "Rashi on Shabbat 9b:5:4",
+      "Rashi on Shabbat 9b:4:3",
+      "Steinsaltz on Shabbat 9b:5",
+      "Rashi on Shabbat 9b:5:5",
+      "Rashi on Shabbat 9b:5:6",
+      "Rashi on Shabbat 9b:5:7",
+      "Rashi on Shabbat 9b:6:1",
+      "Rashi on Shabbat 9b:6:2"
+    ],
+    "generatedAt": "2026-10-28T12:09:46.987Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעיוני בעלמא</strong> - שאין זה תחלת עשייתה ואפ\"ה לכתחלה לא יכנס לה סמוך למנחה גדולה:"
+  },
+  "Rashi on Shabbat 9b:5:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T12:11:25.283Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:5:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דילמא חזי פסידא בזביניה</strong> - שמא נתקלקלו בתוכה העורות:"
+  },
+  "Rashi on Shabbat 9b:5:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T12:12:37.932Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:5:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומטריד</strong> - יצטער ויהא טרוד בצערו ולא יתפלל:"
+  },
+  "Rashi on Shabbat 9b:5:7": {
+    "dependsOn": [
+      "Rashi on Shabbat 9b:5:6",
+      "Rashi on Shabbat 9b:5:7"
+    ],
+    "generatedAt": "2026-10-28T12:14:06.410Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:5:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וסתרו דינא</strong> - יסתרו מה שפסקו ויחזרו בהן וחוזר להיות תחלת הדין:"
+  },
+  "Rashi on Shabbat 9b:6:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 9b:6:2",
+      "Rashi on Shabbat 9b:6:3",
+      "Rashi on Shabbat 9b:6:4",
+      "Rashi on Shabbat 9b:1:1",
+      "Rashi on Shabbat 9b:1:2",
+      "Rashi on Shabbat 9b:1:3",
+      "Rashi on Shabbat 9b:5:1",
+      "Rashi on Shabbat 9b:7:1",
+      "Rashi on Shabbat 9b:8:1",
+      "Tosafot on Pesachim 2a:8:1"
+    ],
+    "generatedAt": "2026-10-28T12:16:24.922Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאימתי התחלת תספורת</strong> - דנימא שוב אין מפסיק כדתנן אם התחילו כו':"
+  },
+  "Rashi on Shabbat 9b:6:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 9b:6:2",
+      "Rashi on Shabbat 9b:6:1",
+      "Rashi on Shabbat 9b:6:3",
+      "Rashi on Shabbat 9b:6:4",
+      "Rashi on Shabbat 9a:1:1",
+      "Rashi on Shabbat 9a:2:1",
+      "Jastrow, מַעֲפוֹרֶת 1"
+    ],
+    "generatedAt": "2026-10-28T12:18:24.246Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעפורת</strong> - סודר ונותנו על ברכיו שלא יפול השער על בגדיו:"
+  },
+  "Rashi on Shabbat 9b:6:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 9b:6:1",
+      "Rashi on Shabbat 9b:6:2",
+      "Rashi on Shabbat 9b:6:3",
+      "Rashi on Shabbat 9b:6:4",
+      "Rashi on Shabbat 9b:5:1",
+      "Rashi on Shabbat 9b:5:2",
+      "Rashi on Shabbat 9b:5:3",
+      "Jastrow, מַעֲפוֹרֶת 1",
+      "Steinsaltz on Shabbat 9b:6"
+    ],
+    "generatedAt": "2026-10-28T12:23:47.198Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משיערה מעפרתו הימנו</strong> - סודרו הוא ראשון להפשטת בגדיו:"
+  },
+  "Rashi on Shabbat 9b:6:4": {
+    "dependsOn": [
+      "[",
+      "Rashi on Shabbat 9b:6:1",
+      "Rashi on Shabbat 9b:6:2",
+      "Rashi on Shabbat 9b:6:3",
+      "Steinsaltz on Shabbat 9b:6"
+    ],
+    "generatedAt": "2026-10-28T12:27:19.281Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משיקשור בין כתפיו</strong> - את בתי זרועותיו שקורין ברצייר\"א:"
+  },
+  "Rashi on Shabbat 9b:7:1": {
+    "dependsOn": [
+      "Shabbat 9b:7"
+    ],
+    "generatedAt": "2026-10-28T12:30:52.554Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא לן והא להו</strong> - בני בבל היו חוגרין את עצמן בחוזק וכשאוכלין צריכין להתירם ובני ארץ ישראל לא היו נוהגין כן בהתרת חגורה קודם נטילת ידים:"
+  },
+  "Rashi on Shabbat 9b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T12:34:30.409Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למאן דאמר תפלת ערבית רשות</strong> - במסכת ברכות <span class=\"parenthesized\">(דף כז:)</span> מפני שהיא כנגד הקטר חלבים ואימורים שאין מעכבין כפרתן:"
+  },
+  "Rashi on Shabbat 9b:8:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 9b:8:1",
+      "Rashi on Shabbat 9b:8:2",
+      "Rashi on Shabbat 9b:8:3"
+    ],
+    "generatedAt": "2026-10-28T12:35:21.822Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא מטרחינן ליה</strong> - להפסיק אלא יגמור ואחר כך יתפלל:"
+  },
+  "Rashi on Shabbat 9b:8:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 9b:8:1",
+      "Rashi on Shabbat 9b:8:2",
+      "Rashi on Shabbat 9b:3:1"
+    ],
+    "generatedAt": "2026-10-28T12:39:49.508Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 9b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולמאן דאמר חובה כו'</strong> - בתמיה:"
+  },
+  "Tosafot on Shabbat 9b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T11:22:08.907Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 9b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא ישב אדם לפני הספר סמוך למנחה עד שיתפלל</strong> - והא דאמר בערבי פסחים <span class=\"parenthesized\">(דף צפ: ושם)</span> ערבי שבתות וערבי ימים טובים לא יאכל עד שתחשך היינו אפילו התפלל לא יאכל כדמפרש התם כדי שיכנס לשבת כשהוא בתאוה אבל לא התפלל אפילו בשאר ימים נמי אסור כדאמר הכא:"
+  },
+  "Tosafot on Shabbat 9b:1:2": {
+    "dependsOn": [
+      "Shabbat 9b:1",
+      "Shabbat 9b:4",
+      "Sukkah 38a:2",
+      "Sukkah 38a:3",
+      "Sukkah 38a:4",
+      "Maharsha: Chidushei Halachot on Shabbat 9b:3"
+    ],
+    "generatedAt": "2026-10-28T11:24:21.932Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 9b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם התחילו אין מפסיקין</strong> - אפילו התחילו באיסור כדמוכח בסוכה <span class=\"parenthesized\">(דף לח.)</span> גבי מי שבא בדרך ואין בידו לולב נוטלו על שולחנו ופריך למימרא דמפסיקין והא תנן אם התחילו אין מפסיקין ולא משני דהכא בהתחילו בהיתר וגבי לולב התחילו באיסור דמצפרא זמניה הוא וה\"נ משמע בגמ' דקאמר כיון דשרי המייניה לא מטרחינן ליה ויתיישב נמי הא דקשה בגמרא גבי לימא תהוי תיובתא דריב\"ל:"
+  },
+  "Tosafot on Shabbat 9b:3:1": {
+    "dependsOn": [
+      "Shabbat 9b:3",
+      "Tosafot on Shabbat 9b:1:1",
+      "Tosafot on Shabbat 9b:1:2",
+      "Shabbat 9b:4",
+      "Shabbat 9b:8",
+      "Tosafot on Shabbat 2a:1:1"
+    ],
+    "generatedAt": "2026-10-28T11:39:46.300Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 9b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מפסיקין</strong> - ודוקא בדאיכא שהות ביום להתפלל כדמשמע בגמרא דקאמר במנחה לא שכיח שכרות משמע דאין לו להפסיד תפלת מנחה ובסוכה <span class=\"parenthesized\">(ג\"' שם)</span> בהדיא מוקי מתני' בדאיכא שהות דמשני אמה שהבאתי לעיל הא דאיכא שהות והא דליכא שהות:"
+  },
+  "Tosafot on Shabbat 9b:3:2": {
+    "dependsOn": [
+      "Tosafot on Shabbat 9b:3:1",
+      "Tosafot on Shabbat 9b:3:2",
+      "Tosafot on Shabbat 9b:1:1",
+      "Tosafot on Shabbat 9b:1:2",
+      "Tosafot on Shabbat 9b:7:1",
+      "Tosafot on Shabbat 9b:8:1",
+      "Tosafot on Shabbat 9b:4:1",
+      "Rashi on Shabbat 9b:3:1",
+      "Tosafot on Shabbat 2a:1:1"
+    ],
+    "generatedAt": "2026-10-28T11:44:34.347Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 9b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לימא תהוי תיובתא דר' יהושע בן לוי</strong> - משמע ליה דאפילו התחיל מפסיק מדאמר אסור לטעום וא\"ת לוקי מתניתין בהתחיל בהיתר דאשכחן גבי הבדלה <span class=\"parenthesized\">(ע\"פ דף ק'.)</span> דקאמר נמי כי האי לישנא אסור לאדם לטעום כלום קודם שיבדיל ואפ\"ה משמע אם התחילו בהיתר אין מפסיקין דקאמר התם הכי אמר רב הבדלה אינה קובעת וה\"מ דקבעי ואכלי אבל אתחולי מעיקרא לא מתחלינן ויש לומר דאם התחילו אין מפסיקין משמע ליה אפילו התחילו באיסור כדפירש במתני':"
+  },
+  "Tosafot on Shabbat 9b:4:1": {
+    "dependsOn": [
+      "Shabbat 9b:4",
+      "Tosafot on Shabbat 9b:3:1",
+      "Tosafot on Shabbat 9b:3:2"
+    ],
+    "generatedAt": "2026-10-28T12:00:57.276Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 9b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתספורת של בן אלעשה כו'</strong> - נראה דהכי הלכתא ושרי סעודה קטנה במנחה גדולה עד זמן תפלה ודוקא סעודה גדולה כגון סעודת אירוסין ונשואין וסעודת מילה אסור ודלא כרב אחא בר יעקב דאסר אפילו סעודה קטנה סמוך למנחה גדולה דהלכה כלישנא קמא דסתם לן הש\"ס ורב אשי שהוא בתראה סידר את הש\"ס והלכתא כותיה לגבי רב אחא בר יעקב ואמאי דאמר לקמן מאימתי התחלת דין אין להוכיח דמתניתין איירי בתחלת הדין דלא כרב אחא דאיכא למימר דקאי אאם התחילו אין מפסיקין ומיהו סמוך למנחה קטנה אסור אפילו סעודה קטנה ואם התחילו מפסיקין ואע\"ג דהש\"ס אי לאו דר' יהושע בן לוי הוה מוקי לה בסעודה קטנה וסמוך למנחה קטנה ואם התחילו אין מפסיקין ולא קי\"ל כר' יהושע בן לוי כדאמר בפרק תפלת השחר <span class=\"parenthesized\">(ברכות כח:)</span> מ\"מ כיון דמסיק סתם הש\"ס הכי משמע דבהא דאם התחילו מפסיקין קיימא לן כוותיה ודוקא בהא דאמר דאסור לטעום אפילו פירות לא קיימא לן כוותיה:"
+  },
+  "Tosafot on Shabbat 9b:7:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 9b:7:1",
+      "Shabbat 9b:8",
+      "Berakhot 44a:16",
+      "Berakhot 44a:17",
+      "Gilyon HaShas on Shabbat 9b:2"
+    ],
+    "generatedAt": "2026-10-28T12:33:14.632Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 9b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא לן והא לאו</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> בני בבל היו חוגרים עצמם בחוזק וכ\"מ בסמוך מדקאמר הני חברין בבלאי למ\"ד תפלת ערבית רשות מכי שרא המייניה לא מטרחינן ליה ורבי חנינא שהיה בא\"י היה אומר לתלמידיו שהיו מבבל ורב שהיה מבבל אומר לתלמידיו שהיו מא\"י לפי שדרכן היה להתרחק שלא היו יכולין לעסוק כל כך בביתם וקשה דבפרק כיצד מברכין <span class=\"parenthesized\">(ברכות דף מד.)</span> בסופו קאמר רב חסדא אמר על הארץ ועל פירותיה ור' יוחנן אמר על הארץ ועל הפירות ואמר התם לא פליגי הא לן והא להו מתקיף לה רב נחמן ארב חסדא אינהו אכלי ואנן מברכינן ומאי פריך לימא רב חסדא אומר לתלמידיו שהיו מארץ ישראל וי\"ל דקים ליה שבאותה שעה לא היו לפניו תלמידים מארץ ישראל:"
+  },
+  "Tosafot on Shabbat 9b:8:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 9b:1:1",
+      "Tosafot on Shabbat 9b:1:2",
+      "Tosafot on Shabbat 9b:3:1",
+      "Tosafot on Berakhot 2a:1:1",
+      "Tosafot on Berakhot 2a:2:1"
+    ],
+    "generatedAt": "2026-10-28T12:43:36.907Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 9b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למ\"ד תפלת ערבית רשות לא מטרחינן ליה</strong> - וא\"ת תיפוק ליה משום ק\"ש וי\"ל כגון שקרא ק\"ש ונראה לר\"י אפילו למאן דאמר תפלת ערבית רשות אין לבטלה בחנם אלא בשביל שום צורך כמו בשרא המייניה דהכא או אם יש שום מצוה שאינה עוברת יעשה המצוה ולא יתפלל אע\"פ שהמצוה אינה עוברת אבל בחנם אין לבטלה תדע שהרי יעקב תקנה ולמה יש לבטלה בחנם ועוד דאמרינן בפרק תפלת השחר <span class=\"parenthesized\">(שם כי: ושם)</span> שהיא כנגד הקטרת אברים שהיא כל הלילה דלא מעכבי כפרה אלא מצוה ה\"נ תפלת ערבית מצוה ואין להאריך:"
+  }
+}

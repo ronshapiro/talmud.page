@@ -1,0 +1,714 @@
+{
+  "Rashi on Shabbat 17b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T17:27:04.595Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 17b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טבי</strong> - שם האיש:"
+  },
+  "Rashi on Shabbat 17b:1:2": {
+    "dependsOn": [
+      "Jastrow, טָבִי I 1",
+      "Rashi on Shabbat 17b:1:1",
+      "Rashi on Shabbat 17a:1:1",
+      "Rashi on Shabbat 17a:2:1"
+    ],
+    "generatedAt": "2026-10-28T17:28:46.723Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 17b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רישבא</strong> - פורס נשבין לצוד חיה ועוף:"
+  },
+  "Rashi on Shabbat 17b:1:3": {
+    "dependsOn": [
+      "Shabbat 17b:1",
+      "Rashi on Shabbat 17b:1:4",
+      "Rashi on Shabbat 17b:1:1",
+      "Rashi on Shabbat 17b:1:2",
+      "Steinsaltz on Shabbat 17b:1",
+      "Steinsaltz comment #1 on Shabbat 17b:1"
+    ],
+    "generatedAt": "2026-10-28T17:30:36.359Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 17b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גידולי תרומה</strong> - אם זרעה ואפי' דבר שזרעו כלה כגון תבואה וקטנית:"
+  },
+  "Rashi on Shabbat 17b:1:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 17b:1:1",
+      "Rashi on Shabbat 17b:1:2",
+      "Rashi on Shabbat 17b:1:3",
+      "Rashi on Shabbat 17b:1:4",
+      "Shabbat 17b:2",
+      "Steinsaltz on Shabbat 17b:1",
+      "Steinsaltz comment #1 on Shabbat 17b:1",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2"
+    ],
+    "generatedAt": "2026-10-28T17:33:37.455Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 17b:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרומה טהורה ביד ישראל</strong> - ועינו צרה ליתנה לכהן וזורעה לבטלה מתורת תרומה:"
+  },
+  "Rashi on Shabbat 17b:2:1": {
+    "dependsOn": [
+      "Shabbat 17b:2",
+      "Rashi on Shabbat 17b:2:2",
+      "Rashi on Shabbat 17b:1:3",
+      "Rashi on Shabbat 17b:1:4",
+      "Rashi on Shabbat 17a:1:1",
+      "Rashi on Shabbat 17b:1:1"
+    ],
+    "generatedAt": "2026-10-28T17:36:00.356Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 17b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי דחשידי להכי אפרושי נמי לא ליפרשו</strong> - אלא חטה אחת מן הכרי כדשמואל ומדאפרשו ש\"מ לא חשידי:"
+  },
+  "Rashi on Shabbat 17b:2:2": {
+    "dependsOn": [
+      "Shabbat 17b:2",
+      "Rashi on Shabbat 17b:2:1",
+      "Rashi on Shabbat 17b:2:2",
+      "Rashi on Shabbat 17b:1:1",
+      "Rashi on Shabbat 17b:1:2",
+      "Rashi on Shabbat 17b:1:3",
+      "Rashi on Shabbat 17b:1:4",
+      "Tosafot on Shabbat 17b:2:1",
+      "Tosafot on Shabbat 17b:2:2"
+    ],
+    "generatedAt": "2026-10-28T17:38:28.177Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 17b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום תרומה טמאה ביד כהן</strong> - שאסורה באכילה ובא לזורעה וגזור שתהא בשמה הראשון והרי היא תרומה טמאה דחיישינן דילמא משהי לה עד זמן זריעה ואתי למיכל בטומאתה:"
+  },
+  "Rashi on Shabbat 17b:3:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 153b:5:1",
+      "Rashi on Shabbat 17b:2:1",
+      "Rashi on Shabbat 17b:2:2",
+      "Rashi on Shabbat 17b:4:1",
+      "Rashi on Shabbat 17b:4:2",
+      "Rashi on Shabbat 153a:11:1",
+      "Rashi on Shabbat 17a:1:1",
+      "Rashi on Shabbat 17a:2:1",
+      "Shabbat 153b:4"
+    ],
+    "generatedAt": "2026-10-28T18:04:29.117Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 17b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נותן כיסו לנכרי</strong> - ולא יטלטלנו פחות פחות מד' אמות:"
+  },
+  "Rashi on Shabbat 17b:4:1": {
+    "dependsOn": [
+      "Jastrow, סְנַוְותָּאָה 1",
+      "Rashi on Shabbat 17b:4:2",
+      "Rashi on Shabbat 17b:4:3",
+      "Rashi on Shabbat 17b:4:4",
+      "Rashi on Shabbat 17b:4:5",
+      "Rashi on Shabbat 17b:1:1",
+      "Rashi on Shabbat 17b:2:1",
+      "Rashi on Shabbat 17b:3:1",
+      "Steinsaltz on Shabbat 17b:4"
+    ],
+    "generatedAt": "2026-10-28T18:07:48.758Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 17b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סנוותאה</strong> - שם מקום:"
+  },
+  "Rashi on Shabbat 17b:4:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 17b:4:1",
+      "Rashi on Shabbat 17b:4:2",
+      "Rashi on Shabbat 17b:4:3",
+      "Avodah Zarah 36b:5"
+    ],
+    "generatedAt": "2026-10-28T18:10:23.565Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 17b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובנותיהן</strong> - במס' ע\"ז פרכינן בנותיהן דאורייתא נינהו:"
+  },
+  "Rashi on Shabbat 17b:4:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 17b:4:1",
+      "Rashi on Shabbat 17b:4:2",
+      "Rashi on Shabbat 17b:4:3",
+      "Rashi on Shabbat 17b:4:4",
+      "Rashi on Shabbat 17b:4:5",
+      "Steinsaltz on Shabbat 17b:4",
+      "Steinsaltz In-Depth on Shabbat 17b:4:1",
+      "Steinsaltz In-Depth on Shabbat 17b:4:2",
+      "Rashi on Shabbat 17a:1:1",
+      "Rashi on Shabbat 17a:2:1",
+      "Rashi on Shabbat 17a:3:1",
+      "Rashi on Shabbat 17a:4:1",
+      "Rashi on Shabbat 17a:5:1",
+      "Tosafot on Shabbat 17b:4:1"
+    ],
+    "generatedAt": "2026-10-28T18:12:37.407Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 17b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כולן מי\"ח דברים הן</strong> - והא כולהו חדא היא דגזרו על פיתן משום שמנן ועל שמנן כו' כדלקמן:"
+  },
+  "Rashi on Shabbat 17b:4:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 17b:4:3",
+      "Rashi on Shabbat 17b:4:4",
+      "Rashi on Shabbat 17b:4:5",
+      "Shabbat 17a:7",
+      "Shabbat 17a:8",
+      "Shabbat 16b:10",
+      "Shabbat 17a:1",
+      "Shabbat 15a:5",
+      "Shabbat 15a:6",
+      "Shabbat 15b:1",
+      "Shabbat 17b:1",
+      "Shabbat 17b:2",
+      "Shabbat 17b:3",
+      "Shabbat 15a:1",
+      "Shabbat 15a:2",
+      "Shabbat 15a:3",
+      "Shabbat 15a:4",
+      "Tosafot on Shabbat 17b:4:1",
+      "Shabbat 16b:7",
+      "Shabbat 16b:8",
+      "Shabbat 16b:9",
+      "Rashi on Shabbat 17b:1:1",
+      "Rashi on Shabbat 17b:2:1",
+      "Rashi on Shabbat 16b:7:1"
+    ],
+    "generatedAt": "2026-10-28T18:17:13.496Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 17b:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הניחא לר\"מ</strong> - דמנו להו להא דמניח כלים תחת הצינור הוו להו י\"ח ט' דפסלי תרומה ואין קורין ואין פולין הא חדסר פשו להו ז' צינור ומרדע ובנות כותים ובוצר וגידולי תרומה ונותן כיסו ופיתן ושמנן חדא:"
+  },
+  "Rashi on Shabbat 17b:4:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 17b:4:1",
+      "Rashi on Shabbat 17b:4:2",
+      "Rashi on Shabbat 17b:4:3",
+      "Rashi on Shabbat 17b:4:4",
+      "Shabbat 17b:5",
+      "Rashi on Shabbat 17b:5:1",
+      "Versions on Shabbat 17b:4",
+      "Tosafot on Shabbat 17b:4:1",
+      "Steinsaltz on Shabbat 17b:4",
+      "Steinsaltz comment #1 on Shabbat 17b:4",
+      "Steinsaltz comment #2 on Shabbat 17b:4",
+      "Rashi on Shabbat 17a:1:1",
+      "Rashi on Shabbat 17a:2:1",
+      "Rashi on Shabbat 17a:3:1",
+      "Rashi on Shabbat 17b:1:1",
+      "Rashi on Shabbat 17b:2:1",
+      "Rashi on Shabbat 17b:2:2",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 2a:1:2",
+      "Rashi on Pesachim 2a:2:1",
+      "Rashi on Pesachim 2a:3:1",
+      "Rashi on Pesachim 2a:4:1",
+      "Rashi on Pesachim 2a:5:1"
+    ],
+    "generatedAt": "2026-10-28T18:20:46.308Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 17b:4:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איכא הא</strong> - דמוסיף רב יצחק אדאבימי על דבר אחר משום ד\"א:"
+  },
+  "Rashi on Shabbat 17b:5:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 17b:5:1",
+      "Rashi on Shabbat 17b:5:2",
+      "Rashi on Shabbat 17b:5:3",
+      "Tosafot on Shabbat 17b:5:1",
+      "Tosafot on Shabbat 17b:5:2",
+      "Rashi on Avodah Zarah 36b:4:2",
+      "Rashi on Avodah Zarah 36b:4:3",
+      "Rashi on Shabbat 17a:1:1",
+      "Rashi on Shabbat 17a:1:2",
+      "Rashi on Shabbat 17a:1:3"
+    ],
+    "generatedAt": "2026-10-28T18:27:50.388Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 17b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועל בנותיהן משום ד\"א</strong> - ע\"ז ועוד גזרו על ד\"א שלא הוזכר כאן:"
+  },
+  "Rashi on Shabbat 17b:5:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 17b:5:2",
+      "Rashi on Shabbat 17b:5:1",
+      "Rashi on Shabbat 17b:5:3"
+    ],
+    "generatedAt": "2026-10-28T18:29:02.847Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 17b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמטמא בזיבה</strong> - ואפילו אינו זב:"
+  },
+  "Rashi on Shabbat 17b:5:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 17b:5:1",
+      "Rashi on Shabbat 17b:5:2",
+      "Rashi on Shabbat 17b:5:3",
+      "Maharam on Shabbat 17b:3",
+      "Shabbat 17b:5",
+      "Tosafot on Shabbat 17b:5:1",
+      "Tosafot on Shabbat 17b:5:2",
+      "Tosafot on Shabbat 17b:4:1",
+      "Steinsaltz on Shabbat 17b:5",
+      "Avodah Zarah 36b:4",
+      "Rashi on Shabbat 17b:6:1",
+      "Shabbat 13b:9",
+      "Rashi on Shabbat 13b:9:7"
+    ],
+    "generatedAt": "2026-10-28T18:34:37.611Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 17b:5:3"
+    ],
+    "sourceText": "אוכלין וכלים שנטמאו במשקין חדא חשיב להו:"
+  },
+  "Rashi on Shabbat 17b:6:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 17b:6:1",
+      "Rashi on Shabbat 17b:6:2",
+      "Rashi on Shabbat 17b:6:3",
+      "Steinsaltz on Shabbat 17b:6:1"
+    ],
+    "generatedAt": "2026-10-28T18:43:36.237Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 17b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סמנין</strong> - לצבע:"
+  },
+  "Rashi on Shabbat 17b:6:2": {
+    "dependsOn": [
+      "[",
+      "Jastrow, כַּרְשִׁינָה I 1",
+      "Steinsaltz on Shabbat 17b:6",
+      "Rashi on Shabbat 17b:6:1",
+      "Rashi on Shabbat 17b:6:2",
+      "Rashi on Shabbat 17b:6:3"
+    ],
+    "generatedAt": "2026-10-28T18:49:08.027Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 17b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרשינין</strong> - למאכל בהמה בינ\"א בלע\"ז:"
+  },
+  "Rashi on Shabbat 17b:6:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 17b:6:1",
+      "Rashi on Shabbat 17b:6:2",
+      "Rashi on Shabbat 17b:6:3",
+      "Rashi on Shabbat 17b:6:4",
+      "Rashi on Shabbat 17b:7:1",
+      "Rashi on Shabbat 17b:7:2",
+      "Rashi on Shabbat 17b:7:3",
+      "Rashi on Shabbat 17b:1:1",
+      "Rashi on Shabbat 17b:1:2",
+      "Rashi on Shabbat 17b:1:3",
+      "Rashi on Shabbat 17b:1:4",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Shabbat 17b:6",
+      "Shabbat 18a:1",
+      "Rashi on Shabbat 18a:1:1",
+      "Rashi on Shabbat 18a:1:2",
+      "Rashi on Shabbat 18a:1:3",
+      "Steinsaltz on Shabbat 17b:6",
+      "Tosafot on Shabbat 17b:6:1"
+    ],
+    "generatedAt": "2026-10-28T18:53:33.216Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 17b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וב\"ה מתירין</strong> - משנתן את המים מבעוד יום:"
+  },
+  "Rashi on Shabbat 17b:6:4": {
+    "dependsOn": [
+      "[",
+      "Rashi on Shabbat 17b:6:4",
+      "Rashi on Shabbat 17b:6:1",
+      "Rashi on Shabbat 17b:6:2",
+      "Rashi on Shabbat 17b:6:3",
+      "Rashi on Shabbat 17b:6:5",
+      "Rashi on Shabbat 17b:6:6",
+      "Rashi on Shabbat 17b:6:7"
+    ],
+    "generatedAt": "2026-10-28T18:57:45.427Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 17b:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אונין</strong> - ארישב\"א והן אגודות של פשתן מנופץ ונותנין אותו בקדרה לתנור ומתלבן:"
+  },
+  "Rashi on Shabbat 17b:6:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T18:58:57.019Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 17b:6:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיהבילו</strong> - שיתחממו:"
+  },
+  "Rashi on Shabbat 17b:6:6": {
+    "dependsOn": [
+      "Rashi on Shabbat 17b:6:5",
+      "Rashi on Shabbat 17b:6:6",
+      "Rashi on Shabbat 17b:6:7",
+      "Steinsaltz on Shabbat 17b:6",
+      "Rashi on Shabbat 17b:1:1",
+      "Rashi on Shabbat 17b:4:1",
+      "Sefer HeArukh, Letter Heh 12",
+      "Steinsaltz comment #1 on Shabbat 17b:6"
+    ],
+    "generatedAt": "2026-10-28T19:03:18.856Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 17b:6:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">העין</strong> - הצבע שיקלוט מבעוד יום:"
+  },
+  "Rashi on Shabbat 17b:6:7": {
+    "dependsOn": [
+      "Rashi on Shabbat 17b:6:5",
+      "Rashi on Shabbat 17b:6:6",
+      "Rashi on Shabbat 17b:6:7",
+      "Steinsaltz on Shabbat 17b:6",
+      "Rashi on Shabbat 17b:6:1",
+      "Rashi on Shabbat 17b:6:2",
+      "Rashi on Shabbat 17b:6:3",
+      "Rashi on Shabbat 17b:6:4",
+      "Shabbat 17b:7",
+      "Rashi on Shabbat 18b:3:1",
+      "Rashi on Shabbat 18b:3:2",
+      "Rashi on Shabbat 18b:3:3",
+      "Rashi on Shabbat 18b:3:4",
+      "Rashi on Shabbat 18b:3:5",
+      "Rashi on Shabbat 18b:3:6",
+      "Rashba on Shabbat 17b:6:1",
+      "Rashi on Shabbat 17b:1:1",
+      "Rashi on Shabbat 17b:1:2",
+      "Rashi on Shabbat 17b:2:1",
+      "Rashi on Shabbat 18a:1:1",
+      "Rashi on Shabbat 18a:2:1"
+    ],
+    "generatedAt": "2026-10-28T19:07:02.040Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 17b:6:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתירין</strong> - לתתה מבעו\"י והיא קולטת כל הלילה:"
+  },
+  "Rashi on Shabbat 17b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T19:11:50.964Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 17b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא טוענין עמו</strong> - על החמור:"
+  },
+  "Rashi on Shabbat 17b:7:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 17b:7:1",
+      "Rashi on Shabbat 17b:7:3",
+      "Rashi on Shabbat 17b:6:1",
+      "Rashi on Shabbat 17b:6:2"
+    ],
+    "generatedAt": "2026-10-28T19:12:40.458Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 17b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא מגביהין עליו</strong> - משאוי על כתיפו דנראה כמסייעו להוליך בשבת:"
+  },
+  "Rashi on Shabbat 17b:7:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 17b:7:1",
+      "Rashi on Shabbat 17b:7:2",
+      "Steinsaltz on Shabbat 17b:7"
+    ],
+    "generatedAt": "2026-10-28T19:13:44.521Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 17b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא כדי שיגיע למקום קרוב</strong> - כלומר שיהא המקום קרוב שיוליכנו שם מבעו\"י:"
+  },
+  "Tosafot on Shabbat 17b:2:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 17b:2:1",
+      "Shabbat 17b:2",
+      "Rashi on Shabbat 17b:2:1",
+      "Rashi on Shabbat 17b:2:2",
+      "Tosafot on Shabbat 17b:2:2",
+      "Chokhmat Shlomo on Shabbat 17b:1"
+    ],
+    "generatedAt": "2026-10-28T17:51:41.014Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 17b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיון דאפשר למיעבד כשמואל מהימני</strong> - הקשה ריב\"א תרומת מעשר דלא אפשר להו למיעבד כשמואל ליגזור ותירץ ר\"י דמ\"מ אמת הוא שגזרו אף על גידולי תרומה גדולה ורוצה לפרש טעם בכולן: ומהר\"ם אמר דתרומת מעשר מהימני הלוים דאין נותנין מעשר אלא לחברים וריב\"א תירץ דאותן שהיו חשודים לא היו מפרישין כלל כדאמ' בסוטה וחברים שהיו מפרישים מהימני [תוס ישנים]:"
+  },
+  "Tosafot on Shabbat 17b:2:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 17b:2:1",
+      "Rashi on Shabbat 17b:2:2",
+      "Tosafot on Shabbat 17b:2:1",
+      "Tosafot on Shabbat 17b:4:1",
+      "Tosafot on Shabbat 17b:5:1",
+      "Tosafot on Shabbat 17b:5:2",
+      "Tosafot on Shabbat 17a:1:1",
+      "Tosafot on Shabbat 17a:2:1",
+      "Tosafot on Shabbat 16b:1:1",
+      "Pesachim 34a:2",
+      "Pesachim 34a:3",
+      "Pesachim 34a:4",
+      "Pesachim 20b:22",
+      "Pesachim 20b:23",
+      "Maharsha: Chidushei Halachot on Shabbat 17b:3",
+      "Maharshal: Chokhmat Shlomo on Shabbat 17b:3",
+      "Steinsaltz comment #1 on Shabbat 17b:2",
+      "Steinsaltz comment #2 on Shabbat 17b:2",
+      "Tosafot on Pesachim 2a:1:1",
+      "Rashi on Pesachim 20b:24:1",
+      "Tosafot on Berakhot 2a:1:1",
+      "Tosafot on Berakhot 2a:1:2"
+    ],
+    "generatedAt": "2026-10-28T18:01:10.875Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 17b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דילמא משהי ליה גביה ואתי ביה לידי תקלה</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> ולכך גזרו דאפי' יזרענה דהוי טמאה וקשה לר\"י דאמר בהדיא בפרק כל שעה <span class=\"parenthesized\">(פסח. ם דף לד. ושם)</span> שתילי תרומה טמאה טהורים מלטמא ואסורין מלאכול פי' לזרים כדמפרש התם אלמא לכהנים שרי וי\"ל כיון דאין נאכלין לזרים משום ריוח פורתא שמטהרין לא משהי גביה והא דהכא חיישינן לתקלה ובספ\"ק דפסחים <span class=\"parenthesized\">(דף כ:)</span> אמרי ב\"ה תעשה זילוף איכא למימר דהכא מודו ב\"ה דפעמים שצריך להשהות שנה שלימה עד זמן זריעה:"
+  },
+  "Tosafot on Shabbat 17b:4:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 17b:4:1",
+      "Rashi on Shabbat 17b:4:2",
+      "Rashi on Shabbat 17b:4:3",
+      "Rashi on Shabbat 17b:4:4",
+      "Rashi on Shabbat 17b:4:5",
+      "Shabbat 17b:4",
+      "Shabbat 16b:10",
+      "Shabbat 17a:1",
+      "Shabbat 17a:2",
+      "Shabbat 17a:3",
+      "Maharsha on Shabbat 17b:4:1",
+      "Chidushei Halachot on Shabbat 17b:4",
+      "Shabbat 12a:7",
+      "Shabbat 12a:8",
+      "Shabbat 12a:9"
+    ],
+    "generatedAt": "2026-10-28T18:24:21.817Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 17b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הניחא לר' מאיר אלא לרבי יוסי שבסרי הויין</strong> - ה\"מ נמי למימר אלא לר' טרפון מאי איכא למימ' רש\"י חשיב אין פולין ואין קורין בתרתי וכן משמע מדקתני בברייתא אלו מן ההלכות ולא קתני בברייתא אלא הנהו תרתי והא דלא חשיב מבחין בין בגדו לבגדי אשתו ושמש הבודק כוסות וקערות לאור הנר הנך. נפקו מכלל הני תרתי שהן עיקר מיהו קשה דלא מני רש\"י הך דלא יאכל הזב עם הזבה דודאי מי\"ח דבר הוה דקתני לה במתניתין בהדיא ולפי זה אוכל ראשון ואוכל שני חדא חשיב להו א\"נ הבא ראשו ורובו במים שאובין וטהור שנפלו כו' חשיב חדא משום דאי לא הא לא קיימא הא כי היכי דפתן ושמנן ויינן ובנותיהן חשיב גזירה אחת וההיא דלא יאכל זב פרוש עם זב עם הארץ דקתני עלה בתוספתא אלו מן ההלכות איכא למימר דהוי בכלל לא יאכל הזב עם הזבה:"
+  },
+  "Tosafot on Shabbat 17b:5:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 17b:5:1",
+      "Tosafot on Shabbat 17b:2:1",
+      "Maharam on Shabbat 17b:6"
+    ],
+    "generatedAt": "2026-10-28T18:38:33.068Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 17b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על פתן ושמנן משום יינן</strong> - הקשה ריב\"א מ\"ש שהחמירו טפי ביין לאסור בהנאה מפת ושמן ותירץ מפני שהיין משמח אלהים ואנשים והיו רגילין לנסכו אפי' שלא בפני ע\"ז הואיל והוצרכו לאוסרו משום בנותיהם נתנו בו חכמים דין וחומר יין נסך ממש כיון דפעמים היו מנסכין אותו אפי' שלא בפני ע\"ז:"
+  },
+  "Tosafot on Shabbat 17b:5:2": {
+    "dependsOn": [
+      "Tosafot on Shabbat 17b:5:1",
+      "Tosafot on Shabbat 17b:2:1",
+      "Tosafot on Shabbat 17b:2:2",
+      "Tosafot on Shabbat 17a:4:1",
+      "Tosafot on Shabbat 17a:4:2",
+      "Tosafot on Shabbat 17a:6:1",
+      "Rashi on Shabbat 17b:5:1",
+      "Rashi on Shabbat 17b:5:2",
+      "Rashi on Shabbat 17b:5:3",
+      "Avodah Zarah 36b:18",
+      "Avodah Zarah 36b:19",
+      "Avodah Zarah 36b:20",
+      "Avodah Zarah 36b:14",
+      "Avodah Zarah 36b:15",
+      "Avodah Zarah 36b:16",
+      "Avodah Zarah 36b:17",
+      "Avodah Zarah 36b:10",
+      "Avodah Zarah 36b:11",
+      "Avodah Zarah 36b:12",
+      "Avodah Zarah 36b:13",
+      "Avodah Zarah 36b:5",
+      "Avodah Zarah 36b:6",
+      "Avodah Zarah 36b:7",
+      "Avodah Zarah 36b:8",
+      "Avodah Zarah 36b:9",
+      "Avodah Zarah 36b:2",
+      "Avodah Zarah 36b:3",
+      "Avodah Zarah 36b:4"
+    ],
+    "generatedAt": "2026-10-28T18:42:12.396Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 17b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועל בנותיהם משום דבר אחר</strong> - ואם תאמר הניחא למ\"ד דמפרש בפרק ב' דמסכתא ע\"ז <span class=\"parenthesized\">(דף לו:)</span> דעל בנותיהם גזרו יחוד דשייך למיגזר משום ע\"ז אלא למ\"ד דעל בנותיהם גזרו נדות מה שייך הך גזירה לע\"ז וי\"ל דע\"י שגזרו עליהם נדות יפרשו ממגען ולא יטמעו בהם כ\"כ:"
+  },
+  "Tosafot on Shabbat 17b:6:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 17b:6:1",
+      "Rashi on Shabbat 17b:6:2",
+      "Rashi on Shabbat 17b:6:3",
+      "Rashi on Shabbat 17b:6:4",
+      "Rashi on Shabbat 17b:6:5",
+      "Rashi on Shabbat 17b:6:6",
+      "Rashi on Shabbat 17b:6:7"
+    ],
+    "generatedAt": "2026-10-28T19:10:56.266Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 17b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אונין</strong> - פי' בקונ' נותנים בתנור ומתלבן וכן משמע בפ\"ב <span class=\"parenthesized\">(דף כז:)</span> דאמרי' האונין של פשתן משיתלבנו:"
+  },
+  "Tosafot on Shabbat 17b:7:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 17b:7:1",
+      "Tosafot on Shabbat 17b:7:2",
+      "Shabbat 17b:7",
+      "Tosafot on Shabbat 18a:8:2",
+      "Tosefta Shabbat 1:10",
+      "Rashba on Shabbat 17b:1",
+      "Steinsaltz comment #1 on Shabbat 17b:7"
+    ],
+    "generatedAt": "2026-10-28T19:16:51.700Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 17b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין פורסין מצודות כו'</strong> - אע\"ג דבשבת נמי אם פירש מצודה אינו חייב חטאת שאינו יודע אם יצוד אם לאו מ\"מ גזרו לפרוש מצודה דפעמים אתי לידי חיוב חטאת כגון שבשעת פריסתו ילכוד דהכי. קתני בתוספתא הפורס מצודה לבהמה או לעוף ונכנס לתוכה חייב:"
+  },
+  "Tosafot on Shabbat 17b:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T19:19:24.116Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 17b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא בכדי שיצודו</strong> - וא\"ת מנא ידע מתי יבא החיה וי\"ל דבירושלמי מוקי לה בפורש בחורשין דמצוין שם חיותא ומיירי בענין זה שלא יוכל ללכוד במצודה אלא א' או ב' דהא מה מועיל שיצודו מבעוד יום אם יכול לצוד גם משחשכה:"
+  },
+  "Tosafot on Shabbat 17b:7:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 17b:7:1",
+      "Rashi on Shabbat 17b:7:2",
+      "Rashi on Shabbat 17b:7:3",
+      "Tosafot on Shabbat 17b:7:1",
+      "Tosafot on Shabbat 17b:7:2",
+      "Shabbat 17b:7",
+      "Shabbat 18b:7",
+      "Rashi on Shabbat 18b:7:1",
+      "Rashi on Shabbat 18b:7:2",
+      "Rashi on Shabbat 18b:7:3",
+      "Rashi on Shabbat 18b:7:4",
+      "Rashi on Shabbat 18b:7:5",
+      "Maharsha on Shabbat 17b:2",
+      "Meir Lublin on Shabbat 17b:9",
+      "Tosafot on Shabbat 17b:7:4",
+      "Steinsaltz comment #1 on Shabbat 17b:7",
+      "Steinsaltz comment #2 on Shabbat 17b:7",
+      "Tosafot on Shabbat 17b:2:2"
+    ],
+    "generatedAt": "2026-10-28T19:24:14.162Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 17b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מוכרים לנכרי</strong> - אף על גב דאי עביד להו בשבת לא מיחייב חטאת מ\"מ מאחר שהנכרי מחמר או עושה בשבת בידים דבר שישראל אסור מן התורה גזרו רבנן עם חשכה <span class=\"rashi-quotation\">כדפירש בקונטרס</span> משום דמיחלף בשלוחו אבל בהנך דברים דרישא שאינו עושה בשבת איסור בידים לא גזרו אי לאו דמיחייב חטאת והיינו טעמא דאין נותנין עורות לעבדן:"
+  },
+  "Tosafot on Shabbat 17b:7:4": {
+    "dependsOn": [
+      "Tosafot on Shabbat 17b:7:1",
+      "Tosafot on Shabbat 17b:7:2",
+      "Tosafot on Shabbat 17b:7:3",
+      "Tosafot on Shabbat 17b:2:1",
+      "Tosafot on Shabbat 17b:5:1",
+      "Rashi on Shabbat 17b:7:1",
+      "Maharsha on Shabbat 17b:6"
+    ],
+    "generatedAt": "2026-10-28T19:27:40.709Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 17b:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין נותנין עורות לעבדן וב\"ה מתירין</strong> - מכאן היה נראה לר\"ת להתיר על ידי קבלנות נכרי לבנות בשבת ועוד מביא ראיה מריחים דשרי ב\"ה אליבא דרב יוסף בגמ' דמתירין להניח שם חיטין מבעוד יום ויניחנו כל השבת כל שכן קבלנות על ידי נכרים דשרי ואינו ראיה דידעי כ\"ע שהריחים טוחנות מעצמם וידעי נמי שהחטין הושמו שם. מע\"ש אבל קבלנות יאמרו שצוה להם בשבת לעשות ועוד מביא ראיה מסוף פ\"ק דע\"ז <span class=\"parenthesized\">(דף כא: ושם)</span> דאמר רשב\"ג משכיר אדם שדהו לנכרי מ\"ט אריס אריסותיה קעביד וה\"נ קבלנותיה קעביד ואף על גב דר\"ש בן אלעזר פליג עליה קיימא לן כרשב\"ג דסתם מתני' כוותיה והא דאמרינן במ\"ק <span class=\"parenthesized\">(דף יב. ושם)</span> מקבלי קבולת בתוך התחום אסור חוץ לתחום מותר מוקי ר\"ת התם כולה שמעתיה באבל ולכך החמיר ול\"נ דהתם איכא דמחמרי בחול המועד טפי מבאבל ואפילו למאן דמחמרי טפי באבל מבחול המועד מודה בשבת דחמיר טפי ונראה לר\"י דהא דשרי בשמעתין עורות לעבדן היינו בתלוש דלא מפרסמא מילתא שהנכרי עושה מלאכה בביתו ולא ידעי שהוא של ישראל וכן נמי אמר במ\"ק <span class=\"parenthesized\">(דף יא: ושם)</span> גבי אבל מלאכתו ביד אחרים בביתו לא יעשו בבית אחרים יעשו אבל קבלנות דמחובר דהוי ברשות ישראל דמפרסמא מלתא אסור בתוך התחום דהרואה יאמר שכירי יום נינהו והכי משמע בירושלמי דפירקין דקאמר התם אומני נכרים שהן עושים עם ישראל בתוך ביתו אסור בתוך ביתם מותר אמר ר' שמעון בן אלעזר בד\"א בקבולת אבל בשכר אסור פירוש שכיר יום בד\"א בתלוש אבל במחובר אסור ובעיר אחרת בין בתלוש בין במחובר מותר אמר ר\"ש בר כהנא בשם רבי אחא בשבת ובאבל ובע\"ז הלכה כר\"ש בן אלעזר ורבינו תם נמי כשבנה את ביתו לא סמך על תשובתו ולא רצה להתיר: ומיהו בשדה מותר כרשב\"ג דבשדה רגילות לעשות באריסות ולא. בשכירות יום וכשישראל אומר לנכרי לתקן מנעלים או לקנות אל יאמר תעשה למחר דא\"כ הוי כשכיר יום אלא תעשה לכשתרצה ואם הביא לו נכרי כליו ויודע שכבסן בשבת אסור ללובשן בשבת דאמר לקמן <span class=\"parenthesized\">(שבת קכב.)</span> נכרי שהדליק נר בשביל ישראל אסור להשתמש לאורה <span class=\"parenthesized\">(תוספות ישנים)</span>:"
+  }
+}

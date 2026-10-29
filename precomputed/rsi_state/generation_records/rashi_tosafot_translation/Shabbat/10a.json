@@ -115,6 +115,18 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">בחדתי</strong> - שלא רחץ בו אדם מעולם אלא שהזמינו לכך:"
   },
+  "Rashi on Shabbat 10a:1:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 10a:1:2"
+    ],
+    "generatedAt": "2026-10-28T12:44:30.493Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 10a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שכיחא שכרות</strong> - אין דרך להשתכר מבע\"י לפיכך גומר ויתפלל אבל בלילה עשוי להשתכר בסעודתן:"
+  },
   "Rashi on Shabbat 10a:1:2": {
     "dependsOn": [
       "Shabbat 10a:1",

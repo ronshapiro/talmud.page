@@ -600,6 +600,51 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">איכא בינייהו דרב ברונא</strong> - דאמר צריך לתת לתוכו שמן כל שהוא אי נמי דאכשר חלב מהותך בתערובת שמן כל שהוא חד מהנך תנאי סבר לדרב ברונא דחלב ניתר בתערובת אבל שמן דגים אפילו בעיניה וחד סבר שמן דגים על ידי תערובת אבל חלב כלל וכלל לא:"
   },
+  "Rashi on Shabbat 26a:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T02:06:50.341Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 26a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יוצא מן העץ</strong> - כמו קנבוס וצמר גפן:"
+  },
+  "Rashi on Shabbat 26a:9:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T02:10:58.644Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 26a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומסככים בו</strong> - סוכה הואיל ואינו מקבל טומאה דאין מסככין בדבר המקבל טומאה כדילפינן במסכ' סוכה <span class=\"parenthesized\">(דף יב:)</span> מגרנך ומיקבך:"
+  },
+  "Rashi on Shabbat 26a:9:4": {
+    "dependsOn": [
+      "Shabbat 26a:9",
+      "Rashi on Shabbat 26a:9:1",
+      "Rashi on Shabbat 26a:9:2",
+      "Rashi on Shabbat 26a:9:3",
+      "Rashi on Shabbat 26a:9:4",
+      "Rashi on Shabbat 27b:5:2",
+      "Rashi on Shabbat 27b:6:1",
+      "Shabbat 27b:6",
+      "Rashi on Shabbat 26a:8:1",
+      "Rashi on Shabbat 26a:8:2",
+      "Rashi on Shabbat 27b:6:2",
+      "Rashi on Shabbat 27b:6:3",
+      "Rashi on Shabbat 27b:6:4",
+      "Steinsaltz on Shabbat 27b:6"
+    ],
+    "generatedAt": "2026-10-29T02:13:50.148Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 26a:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חוץ מפשתן</strong> - דילפינן לקמן דאיקרי עץ ומקבל טומאת נגעים אפילו אונין שבו כדלקמן הלכך אין מסככין באונין:"
+  },
   "Tosafot on Shabbat 26a:1:1": {
     "dependsOn": [
       "Shabbat 26a:1",
@@ -762,5 +807,20 @@
       "Tosafot on Shabbat 26a:8:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">רבי שמעון שזורי אומר מדליקין בשמן פקועות ובנפט</strong> - קשה לרשב\"א מה בא לומר רבי שמעון שזורי דהא לרבי יוחנן בן נורי נמי מדליקין בהן מדקאמר אין לך אלא מה שאמרו חכמים אין מדליקין משמע דוקא הנהו אבל שמן פקועות ונפט מכשיר ועוד דנפט מכשיר בהדיא רבי יוחנן ואין לומר דרבי שמעון שזורי איירי בנפט לבן דהא אפי' בחול אמר לעיל אין מדליקין בו ואי גרסינן אין מדליקין במילתיה דרבי שמעון שזורי אתי שפיר:"
+  },
+  "Tosafot on Shabbat 26a:9:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 26a:9:1",
+      "Rashi on Shabbat 26a:9:2",
+      "Rashi on Shabbat 26a:9:3",
+      "Rashi on Shabbat 26a:9:4"
+    ],
+    "generatedAt": "2026-10-29T02:17:11.069Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 26a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין בו משום שלש על שלש ומסככין בו חוץ מפשתן</strong> - קשה לריב\"א דמשמע דפחות משלש על שלש מסככין אפי' בשל פשתן ובפ\"ק דסוכה <span class=\"parenthesized\">(דף מז.)</span> אמרינן סיככה במטלניות שאין בהן שלש על שלש פסולה ותירץ דהתם איירי דבאות מבגד גדול שכבר היו ראויות לקבל טומאה אבל הכא מיירי בהנהו שלא היה בהם מעולם שלש על שלש וקשה לרשב\"א דאפי' אם לא נארג בו מעולם שלש על שלש מקבל טומאה כדאמר בפרק במה אשה <span class=\"parenthesized\">(לקמן שבת דף סג:)</span> אריג כל שהוא טמא ואין מסככין בו וי\"ל דהתם מיירי כשאין בדעתו לארוג בו יותר והכא מיירי כשיש בדעתו לארוג בו יותר הלכך אם אין בו שלש על שלש טהור:"
   }
 }

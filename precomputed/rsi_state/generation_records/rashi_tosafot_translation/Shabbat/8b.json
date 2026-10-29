@@ -1,0 +1,459 @@
+{
+  "Rashi on Shabbat 8b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T09:42:19.844Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסקופת רשות הרבים</strong> - כגון אסקופת מבוי שאין עליה תקרה ואין גבוה ג' מן הקרקע ולחי של מבוי לפנים הימנה:"
+  },
+  "Rashi on Shabbat 8b:12:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 8b:12:1",
+      "Shabbat 8b:12",
+      "Rashi on Shabbat 8b:11:1"
+    ],
+    "generatedAt": "2026-10-28T09:44:08.841Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רשות היחיד</strong> - כגון עומדת תחת התקרה או לפנים מן הלחי או גבוהה י' ורחבה ד':"
+  },
+  "Rashi on Shabbat 8b:13:1": {
+    "dependsOn": [
+      "Shabbat 8b:13",
+      "Rashi on Shabbat 8b:11:1",
+      "Rashi on Shabbat 8b:12:1",
+      "Rashi on Shabbat 8b:1:1",
+      "Rashi on Shabbat 8b:1:2",
+      "Rashi on Shabbat 8b:6:1"
+    ],
+    "generatedAt": "2026-10-28T09:45:51.961Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסקופת כרמלית</strong> - אינה גבוהה י' אלא רחבה ד' היכי קתני נוטל לכתחילה סוף סוף איסור דרבנן איכא:"
+  },
+  "Rashi on Shabbat 8b:14:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 8b:14:2",
+      "Eruvin 101b:12",
+      "Rashi on Eruvin 101b:12:1",
+      "Rashi on Eruvin 101b:12:2",
+      "Eruvin 87a:18",
+      "Rashi on Eruvin 87a:19:1",
+      "Eruvin 33a:1",
+      "Eruvin 33a:2",
+      "Eruvin 33a:3",
+      "Tosafot on Eruvin 33a:2:1",
+      "Tosafot on Shabbat 8b:15:1",
+      "Shabbat 8b:14",
+      "Rashi on Shabbat 8b:13:1",
+      "Eruvin 77a:1",
+      "Eruvin 77a:2",
+      "Eruvin 77a:3",
+      "Eruvin 77a:4",
+      "Eruvin 77a:5",
+      "Eruvin 77a:6",
+      "Rashi on Eruvin 77a:4:1",
+      "Rashi on Eruvin 77a:4:2",
+      "Eruvin 85b:6",
+      "Eruvin 9a:8",
+      "Rashi on Eruvin 9a:9:1",
+      "Rashi on Shabbat 8b:6:1",
+      "Rashi on Shabbat 8b:6:2",
+      "Rashi on Shabbat 8b:6:3",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Shabbat 6a:13:5"
+    ],
+    "generatedAt": "2026-10-28T09:54:06.421Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומקום פטור</strong> - מקום שאין בו ארבע על ארבע הוא מקום מסויים שיש לו ראש רחב קצת וגבוה ג' ועומד סמוך לרשות היחיד ולרה\"ר והכי מוקים לה בעירובין בגבוה ג':"
+  },
+  "Rashi on Shabbat 8b:14:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 8b:14:1",
+      "Rashi on Shabbat 8b:6:1",
+      "Rashi on Shabbat 8b:6:2"
+    ],
+    "generatedAt": "2026-10-28T09:55:33.940Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובלבד שלא יחליפו</strong> - והכי נמי קתני לעיל ובלבד שלא יטול מן העני ויתן לבעל הבית:"
+  },
+  "Rashi on Shabbat 8b:1:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 8b:1:2",
+      "Shabbat 8b:1",
+      "Rashi on Shabbat 8b:2:1",
+      "Rashi on Shabbat 8b:2:2",
+      "Rashi on Shabbat 8b:2:3",
+      "Rashi on Shabbat 8a:1:1"
+    ],
+    "generatedAt": "2026-10-28T08:50:55.026Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתכוין לשבות ברה\"ר</strong> - המערב עירובי תחומין עירובו קונה לו שביתתו שם שיוכל לילך משם לכל רוח אלפים כאילו שבת שם וצריך שיתכוון לקנות שביתתו במקום שיכול לאכול שם עירובו אם היה רוצה לאוכלו שמתוך כן מועיל לו עירובו לקנות שביתה דמקום פיתא גורם דהתם שייך איניש ואע\"פ שהוא בתוך העיר כשקדש היום:"
+  },
+  "Rashi on Shabbat 8b:1:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 8b:1:1",
+      "Rashi on Shabbat 8b:1:2",
+      "Shabbat 8b:1",
+      "Rashi on Pesachim 2a:3:1",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Shabbat 2a:1:3",
+      "Rashi on Shabbat 8b:2:1",
+      "Rashi on Shabbat 8b:2:2",
+      "Rashi on Shabbat 8b:2:3"
+    ],
+    "generatedAt": "2026-10-28T08:53:46.468Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למעלה מי' טפחים עירובו עירוב</strong> - קס\"ד דיכול ליטלו בשבת:"
+  },
+  "Rashi on Shabbat 8b:2:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 8b:2:1",
+      "Rashi on Shabbat 8b:2:2",
+      "Rashi on Shabbat 8b:2:3",
+      "Rashi on Shabbat 8a:1:1",
+      "Rashi on Shabbat 8a:2:1",
+      "Rashi on Shabbat 8b:1:1",
+      "Rashi on Shabbat 8b:1:2",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 2a:1:2",
+      "Rashi on Pesachim 2a:2:1"
+    ],
+    "generatedAt": "2026-10-28T08:55:43.499Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי נימא בבור דאית ביה י'</strong> - עמוק:"
+  },
+  "Rashi on Shabbat 8b:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T08:56:58.373Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומאי למעלה דדלאי ואותביה</strong> - שהגביהו והניחו למעלה מי' מקרקעיתו של בור:"
+  },
+  "Rashi on Shabbat 8b:2:3": {
+    "dependsOn": [
+      "Shabbat 8b:2",
+      "Rashi on Shabbat 8b:2:1",
+      "Rashi on Shabbat 8b:2:2",
+      "Rashi on Shabbat 8b:2:3"
+    ],
+    "generatedAt": "2026-10-28T08:59:54.956Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומאי למטה דתתאי ואותביה</strong> - שהשפילו והניחו למטה מי' התחתונים אמאי עירובו עירוב הרי הבור רה\"י הוא משפת אוגנו ולמטה וכל שמונח בו ברה\"י הוא מונח וכיון דנתכוין שתהא שביתתו ברה\"ר ולא הניח עירובו על שפת הבור נמצא הוא במקום אחד ועירובו במקום אחר ואינו יכול להוציאו מרה\"י לרה\"ר לאוכלו':"
+  },
+  "Rashi on Shabbat 8b:3:1": {
+    "dependsOn": [
+      "Shabbat 8b:3",
+      "Rashi on Shabbat 8b:2:1",
+      "Rashi on Shabbat 8b:2:2",
+      "Rashi on Shabbat 8b:2:3",
+      "Steinsaltz on Shabbat 8b:3",
+      "Steinsaltz In-Depth comment #1 on Shabbat 8b:3",
+      "Chokhmat Shlomo on Shabbat 8b:3",
+      "Maharam on Shabbat 8b:2",
+      "Rashi on Shabbat 8b:1:1",
+      "Rashi on Shabbat 8b:1:2"
+    ],
+    "generatedAt": "2026-10-28T09:04:52.328Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לאו</strong> - האי למעלה מי' דקתני בבור דלית ביה י' וה\"ק אם קרקעיתו של בור למטה מי' דהוי הבור חללו י' והוי רה\"י אין עירובו עירוב כל מקום שהונח שם ואם קרקעיתו של בור למעלה מי' דה\"ל חללו פחות מעשרה עירובו עירוב ולא חשיב ליה כמונח בכרמלית אלמא תשמיש לרבים חשיב ליה:"
+  },
+  "Rashi on Shabbat 8b:4:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 8b:4:2",
+      "Rashi on Shabbat 8b:4:3",
+      "Steinsaltz on Shabbat 8b:4",
+      "Shabbat 8b:2",
+      "Shabbat 8b:3",
+      "Rashi on Shabbat 8b:1:1",
+      "Rashi on Shabbat 8b:1:2",
+      "Rashi on Shabbat 8b:2:1",
+      "Rashi on Shabbat 8a:1:1",
+      "Rashi on Shabbat 7a:1:1",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 2a:1:2",
+      "Shabbat 6a:12"
+    ],
+    "generatedAt": "2026-10-28T09:08:08.317Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוא ועירובו בכרמלית</strong> - כגון שהיה בור זה בבקעה ונתכוון לשבות על שפתו ובור נמי כיון דלא עמוק י' כרמלית הוא:"
+  },
+  "Rashi on Shabbat 8b:4:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 8b:4:1",
+      "Rashi on Shabbat 8b:4:2",
+      "Rashi on Shabbat 8b:4:3",
+      "Shabbat 8b:4",
+      "Shabbat 8b:1",
+      "Steinsaltz on Shabbat 8b:4"
+    ],
+    "generatedAt": "2026-10-28T09:10:53.460Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמאי קרי ליה</strong> - נתכוון לשבות ברה\"ר:"
+  },
+  "Rashi on Shabbat 8b:4:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 8b:4:1",
+      "Rashi on Shabbat 8b:4:2",
+      "Rashi on Shabbat 8b:4:3",
+      "Shabbat 8b:4",
+      "Rashi on Shabbat 8b:2:1",
+      "Rashi on Shabbat 8b:2:2",
+      "Rashi on Shabbat 8b:2:3",
+      "Rashi on Shabbat 8b:3:1"
+    ],
+    "generatedAt": "2026-10-28T09:12:55.145Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לפי שאינה רה\"י</strong> - דאילו הואי האי בור בחצר אפילו עמוק י' עירובו עירוב:"
+  },
+  "Rashi on Shabbat 8b:5:1": {
+    "dependsOn": [
+      "Shabbat 8b:5",
+      "Rashi on Shabbat 8b:5:2",
+      "Shabbat 8b:3"
+    ],
+    "generatedAt": "2026-10-28T09:14:49.106Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וזמנין משני ליה</strong> - רה\"ר דוקא קתני ובור שהוא פחות מי' כרמלית הואי כדאמרינן דלא שמיה תשמיש ודקשיא לך היכי מצי מפיק ליה על כרחיך קניית עירוב בין השמשות איתא כשקדש היום והוא ספק יום ספק לילה:"
+  },
+  "Rashi on Shabbat 8b:5:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 8b:5:1",
+      "Eruvin 34b:3"
+    ],
+    "generatedAt": "2026-10-28T09:18:02.220Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור' היא דאמר</strong> - בעירובין <span class=\"parenthesized\">(דף לד:)</span> דשבות שגזרו חכמים באיסורי שבת לא גזרו עליה אלא בשבת ודאי ולא בין השמשות הלכך מכרמלית לרשות הרבים שבות בעלמא הוא ובין השמשות ראוי ליטלו משם ולאוכלו לפיכך קנה עירוב:"
+  },
+  "Rashi on Shabbat 8b:6:1": {
+    "dependsOn": [
+      "Shabbat 8b:6",
+      "Rashi on Shabbat 8b:6:1",
+      "Rashi on Shabbat 8b:6:2",
+      "Rashi on Shabbat 8b:6:3",
+      "Rashi on Shabbat 8b:6:4",
+      "Rashi on Shabbat 8b:6:5",
+      "Rashi on Shabbat 8b:3:1",
+      "Rashi on Shabbat 8b:5:1",
+      "Rashi on Shabbat 8b:8:1"
+    ],
+    "generatedAt": "2026-10-28T09:21:17.279Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא דחויי קא מדחינא לך אלא דוקא קאמינא לך</strong> - דלא שמיה תשמיש לרבים:"
+  },
+  "Rashi on Shabbat 8b:6:2": {
+    "dependsOn": [
+      "[",
+      "Rashi on Shabbat 8b:6:1",
+      "Rashi on Shabbat 8b:6:3",
+      "Rashi on Shabbat 100b:2:2",
+      "Rashi on Shabbat 8b:4:1",
+      "Rashi on Shabbat 8b:5:1",
+      "Rashi on Pesachim 2a:1:1",
+      "Steinsaltz on Shabbat 8b:6",
+      "Mishnah Shabbat 11:4"
+    ],
+    "generatedAt": "2026-10-28T09:28:03.674Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רקק</strong> - גרוויל\"א ומים צפין עליו:"
+  },
+  "Rashi on Shabbat 8b:6:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 8b:6:1",
+      "Rashi on Shabbat 8b:6:2",
+      "Rashi on Shabbat 8b:6:3",
+      "Steinsaltz on Shabbat 8b:6"
+    ],
+    "generatedAt": "2026-10-28T09:29:15.344Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורשות הרבים מהלכת בו</strong> - שעוברין באותו רקק ברגליהם:"
+  },
+  "Rashi on Shabbat 8b:6:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 8b:6:1",
+      "Rashi on Shabbat 8b:6:2",
+      "Rashi on Shabbat 8b:6:3",
+      "Rashi on Shabbat 8b:6:5",
+      "Rashi on Shabbat 8a:8:2"
+    ],
+    "generatedAt": "2026-10-28T09:31:08.683Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8b:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פחות מי'</strong> - שאין המים עמוקים י':"
+  },
+  "Rashi on Shabbat 8b:6:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T09:31:56.460Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8b:6:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חייב</strong> - שהוא כרשות הרבים גמורה:"
+  },
+  "Rashi on Shabbat 8b:8:1": {
+    "dependsOn": [
+      "Shabbat 8b:8",
+      "Rashi on Shabbat 8b:6:1",
+      "Rashi on Shabbat 8b:6:2",
+      "Rashi on Shabbat 8b:6:3",
+      "Rashi on Shabbat 8b:6:4",
+      "Rashi on Shabbat 8b:6:5",
+      "Rashi on Shabbat 8b:4:1",
+      "Rashi on Shabbat 8b:4:2",
+      "Rashi on Shabbat 8b:4:3",
+      "Rashi on Shabbat 8a:1:1",
+      "Rashi on Shabbat 8a:2:1"
+    ],
+    "generatedAt": "2026-10-28T09:36:16.712Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא הילוך תרי זימני למה לי</strong> - ליתני בסיפא ורקק מים שברה\"ר הזורק לתוכו חייב רה\"ר מהלכת בו לאשמועינן דבעינן שיהא צורך לרבים למה לי הא מרישא שמעינן ליה אלא להכי הדר תנייה דוקא שיהא הילוך לרבים דאף על גב דע\"י הדחק הוא שמיה הילוך אבל אם היה צורך רבים לתשמיש לא חשיב רשות לרבים:"
+  },
+  "Rashi on Shabbat 8b:9:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 8b:9:2"
+    ],
+    "generatedAt": "2026-10-28T09:36:49.067Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זירזא דקני</strong> - חבילה של קנים ארוכים:"
+  },
+  "Rashi on Shabbat 8b:9:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 8b:9:1"
+    ],
+    "generatedAt": "2026-10-28T09:37:51.610Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רמא וזקפיה רמא וזקפיה</strong> - הוליכו אמות הרבה ברשות הרבים כענין הזה שלא נטלו כולו מן הקרקע אלא זקפו והשליכו וחזר וזקפו והשליכו אין זו עקירה:"
+  },
+  "Tosafot on Shabbat 8b:15:1": {
+    "dependsOn": [
+      "Shabbat 8b:15",
+      "Rashi on Shabbat 9a:1:1",
+      "Rashi on Shabbat 9a:1:2",
+      "Rashi on Shabbat 9a:1:3",
+      "Rabbeinu Chananel on Shabbat 8b:3",
+      "Maharsha: Chidushei Halachot on Shabbat 8b:2",
+      "Maharshal: Chokhmat Shlomo on Shabbat 8b:5",
+      "Meir Lublin: Maharam on Shabbat 8b:4"
+    ],
+    "generatedAt": "2026-10-28T09:59:58.793Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 8b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לימא תהוי תיובתא דרבא כו'</strong> - פרש\"י אע\"פ שהעבירו למעלה מי' דהוי מקום פטור ולא נהירא דא\"כ ה\"ל למיפרך מרבנן דאמרי <span class=\"parenthesized\">(לעיל שבת דף ה:)</span> המוציא מחנות לפלטיא דרך סטיו חייב ומאי פריך נמי לימא תהוי תיובתא דרבא לימא הא רבנן קיימי כוותיה ועוד דבהמוצא תפילין <span class=\"parenthesized\">(עירובין דף צח:)</span> תנן עומד אדם ברה\"י ומטלטל ברה\"ר ובלבד שלא יוציא חוץ לד' אמות ודייק בגמרא הא הוציא חייב חטאת לימא מסייע ליה לרבא דאמר רבא המעביר כו' ולפי' הקו' מה ענין זה לזה לכך נראה כפי' ר\"ח דמפ' שהעבירו דרך עליו שהעבירו לפניו נגד גופו דה\"א כיון שהגיע כנגדו הוי כמונח ונמצא שלא העביר ד' אמות יחד ומשני התם לא נח דאין זה הנחה [דרך עצמו]:"
+  },
+  "Tosafot on Shabbat 8b:7:1": {
+    "dependsOn": [
+      "Shabbat 8b:7"
+    ],
+    "generatedAt": "2026-10-28T09:33:11.948Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 8b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי אשמועינן בימות הגשמים כו'</strong> - בצריכותא חדא סגיא דאי תנא חדא זימנא רקק הוה מוקמינא ליה בדדמי ליה להכי תנא תרי זימני רקק אלא כיון דמשכחת צריכותא עביד כאילו תנא בברייתא בהדיא רקק בימות החמה ורקק בימות הגשמים:"
+  },
+  "Tosafot on Shabbat 8b:9:1": {
+    "dependsOn": [
+      "Shabbat 8b:9"
+    ],
+    "generatedAt": "2026-10-28T09:41:37.862Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 8b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא מיחייב עד דעקר לי' ממקומו</strong> - תימה מאי קמ\"ל פשיטא דלא מיחייב כיון דלא עקר ועוד מה שייך הכא הך מילתא וי\"ל דקמ\"ל דאע\"ג דדרך להוליכם בענין זה שאינן קלין לנושאן והוי כמו עומד לכתף דאמרי' לעיל <span class=\"parenthesized\">(שבת דף ה:)</span> דחייב אפ\"ה פטור ומשום דלעיל איירי בכיתוף עמוד ט' ברה\"ר ורבים מכתפים עליו נקט ליה הכא ודוקא רמא וזקפיה דכשהניח ראשו האחד חוץ לד' אמות עדיין ראשו השני מונח בתוך ד' וכשחזר ומשליך ראשו [הב'] חוץ לד' אמות עדיין אינו מתחייב דהוי כמגרר החפץ עד שהוציא ראש החפץ חוץ לד' אמות והניחו דאע\"פ שחוזר ומושכו לחוץ פטור שלא נעשית המלאכה בבת אחת אבל אם מגרר זירזא דקני בבת אחת עד חוץ לד' אמות או מרה\"י לרה\"ר חייב כדאמרינן <span class=\"parenthesized\">(לקמן המצניע דף צא:)</span> בגונב כיס בשבת היה מגרר ויוצא פטור משום דאיסור שבת ואיסור גניבה באין כאחד ואומר ר\"י דאם מגלגל חבית ד' אמות ברה\"ר או מרה\"י לרה\"ר חייב דהוי כמו מגרר דאינו נח כלל אבל מגלגל תיבה שהיא מרובעת פטור דהוי כמו רמא וזקפיה דא\"א שלא תהא נחה קצת:"
+  }
+}
