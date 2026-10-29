@@ -99,6 +99,115 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">אם איתא לדר' חייא</strong> - אם הלכה כמותו:"
   },
+  "Rashi on Bava Metzia 5a:15:1": {
+    "dependsOn": [
+      "Rashi on Bava Metzia 5a:15:1",
+      "Bava Metzia 5a:15",
+      "Rashi on Bava Metzia 5a:15:2",
+      "Rashi on Bava Metzia 5a:15:3",
+      "Rashi on Bava Metzia 5a:14:1",
+      "Tosafot on Bava Metzia 5a:15:1",
+      "Rashi on Bava Metzia 5a:1:1",
+      "Rashi on Bava Metzia 5a:2:1",
+      "Rashi on Bava Metzia 5a:4:1"
+    ],
+    "generatedAt": "2026-10-29T21:39:37.316Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 5a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ליה אביי ואם איתא לדר' חייא משתבע האי</strong> - בתמיה:"
+  },
+  "Rashi on Bava Metzia 5a:15:2": {
+    "dependsOn": [
+      "Rashi on Bava Metzia 5a:15:1",
+      "Rashi on Bava Metzia 5a:15:3",
+      "Steinsaltz on Bava Metzia 5a:15"
+    ],
+    "generatedAt": "2026-10-29T21:44:00.829Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 5a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא גזלן הוא</strong> - וכי אמר ר' חייא במלוה אי נמי בפקדון שלא שלח בו יד ואבד ממנו דאיכא למימר אשתמוטי משתמיט:"
+  },
+  "Rashi on Bava Metzia 5a:15:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T21:48:04.307Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 5a:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשכנגדו קאמינא</strong> - אם שבועה מוטלת עליו נשבע שכנגדו ונוטל כדאמרינן בשבועות <span class=\"parenthesized\">(דף מד:)</span> שהחשוד על השבועה תקנו חכמים שכנגדו נשבע:"
+  },
+  "Rashi on Bava Metzia 5a:16:1": {
+    "dependsOn": [
+      "Bava Metzia 5a:15",
+      "Bava Metzia 5a:16",
+      "Rashi on Bava Metzia 5a:16:1",
+      "Rashi on Bava Metzia 5a:16:2",
+      "Rashi on Bava Metzia 5a:15:1",
+      "Rashi on Bava Metzia 5a:15:2",
+      "Rashi on Bava Metzia 5a:15:3",
+      "Tosafot on Bava Metzia 2a:1:1",
+      "Rashi on Bava Metzia 3a:14:1",
+      "Rashi on Bava Metzia 3b:1:1",
+      "Rashi on Bava Metzia 4a:1:1",
+      "Rashi on Bava Metzia 4b:1:1"
+    ],
+    "generatedAt": "2026-10-29T21:56:48.606Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 5a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השתא נמי</strong> - כי ליתא לדר' חייא ואין כאן הודאה במקצת:"
+  },
+  "Rashi on Bava Metzia 5a:16:2": {
+    "dependsOn": [
+      "Rashi on Bava Metzia 5a:16:1"
+    ],
+    "generatedAt": "2026-10-29T21:57:28.098Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 5a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נחייביה</strong> - שבועת היסת מדרב נחמן וישבע שכנגדו ויטול:"
+  },
+  "Rashi on Bava Metzia 5a:17:1": {
+    "dependsOn": [
+      "Jastrow, הֶיסֵּת 1",
+      "Steinsaltz on Bava Metzia 5a:17",
+      "Shevuot 40b:18",
+      "Rashi on Shevuot 40b:18:1",
+      "Rashi on Bava Metzia 5a:16:1",
+      "Rashi on Bava Metzia 5a:1:1",
+      "Rashi on Bava Metzia 2a:1:1"
+    ],
+    "generatedAt": "2026-10-29T22:00:58.162Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 5a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היסת</strong> - שבועה שהסיתו חכמים לכך להסיתו להודות וטעמא מפרש בשבועות <span class=\"parenthesized\">(דף מ:)</span>: חזקה אין אדם טוען אא\"כ יש לו בידו:"
+  },
+  "Rashi on Bava Metzia 5a:18:1": {
+    "dependsOn": [
+      "Bava Metzia 5a:18"
+    ],
+    "generatedAt": "2026-10-29T22:08:04.462Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 5a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דר\"נ תקנתא היא</strong> - דהא מדאורייתא לא רמי שבועה עליה:"
+  },
   "Rashi on Bava Metzia 5a:1:1": {
     "dependsOn": [
       "Bava Metzia 5a:1",
@@ -510,6 +619,37 @@
       "Tosafot on Bava Metzia 5a:14:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">מסרי ליה בסהדי</strong> - ומיירי דאמרי ליה אל תחזיר אלא בעדים דאל\"כ הא קי\"ל <span class=\"parenthesized\">(כתובות יח.)</span> המלוה את חבירו בעדים א\"צ לפרעו בעדים:"
+  },
+  "Tosafot on Bava Metzia 5a:15:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Tosafot on Bava Metzia 5a:15:1"
+    ],
+    "generatedAt": "2026-10-29T21:54:22.033Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bava Metzia 5a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שכנגדו קאמינא</strong> - וא\"ת מאי שנא דבחשוד על השבועה שכנגדו נשבע ונוטל אמאי לא אמרינן מתוך שא\"י לישבע משלם כדאמר גבי חמשין ידענא וחמשין לא ידענא <span class=\"parenthesized\">(לקמן בבא מציעא דף צח.)</span> ובנסכא דר' אבא <span class=\"parenthesized\">(שבועות דף.)</span> וי\"ל הכא אי אמרי' משלם לא שבקת ליה חיי דכל העולם יביאוהו לידי שבועה ויטלו כל אשר לו ועוד דהתם אמר ליה שבועה דאורייתא אית לי עליך או תשבע או תשלם אבל הכא הוא ברצון ישבע אם נניחנו ולכך לא ישלם:"
+  },
+  "Tosafot on Bava Metzia 5a:17:1": {
+    "dependsOn": [
+      "Translation on Tosafot on Bava Metzia 5a:17:1",
+      "Tosafot on Bava Metzia 5a:1:1",
+      "Tosafot on Bava Metzia 5a:3:1",
+      "Tosafot on Bava Metzia 2a:1:1",
+      "Tosafot on Bava Metzia 2b:1:1",
+      "Tosafot on Shevuot 41a:2:1",
+      "Tosafot on Shevuot 41a:3:1",
+      "Tosafot on Shevuot 41a:1:1"
+    ],
+    "generatedAt": "2026-10-29T22:06:02.314Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bava Metzia 5a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין לך בידי פטור וא\"ר נחמן</strong> - מהכא משמע דהלכה כלישנא קמא דפ' שבועת הדיינים <span class=\"parenthesized\">(שבועות דף מא. ושם ד\"ה מאן)</span> דלא בעי דררא דממונא אלא אפי' כופר הכל חייב שבועת היסת מדלא מייתי הכא סיפא דנתתיו לך פטור וכן פירש בשערים דרב האי ואי טעין איני יודע בכל ישבע שאינו יודע :"
   },
   "Tosafot on Bava Metzia 5a:1:1": {
     "dependsOn": [

@@ -1,0 +1,118 @@
+{
+  "Rashi on Bava Metzia 7b:1:1": {
+    "dependsOn": [
+      "Bava Metzia 7b:1"
+    ],
+    "generatedAt": "2026-10-29T22:45:16.271Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 7b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי שנא ליד דיין</strong> - מאיש אחר:"
+  },
+  "Rashi on Bava Metzia 7b:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T22:47:55.404Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 7b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכי קאמר ואחר</strong> - שאינו לא לוה ולא מלוה:"
+  },
+  "Rashi on Bava Metzia 7b:1:3": {
+    "dependsOn": [
+      "Rashi on Bava Metzia 7b:1:1",
+      "Rashi on Bava Metzia 7b:1:2",
+      "Rashi on Bava Metzia 7b:1:3",
+      "Rashi on Bava Metzia 7b:1:4"
+    ],
+    "generatedAt": "2026-10-29T22:48:55.773Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 7b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמצא שטר שנפל</strong> - כבר ליד הדיין ומאי ניהו הך נפילה דכתיב ביה הנפק:"
+  },
+  "Rashi on Bava Metzia 7b:1:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T22:49:49.551Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 7b:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא יוציאוהו מידו</strong> - לא לוה ולא מלוה עד שיבא אליהו או עדים שראו מיד מי נפל:"
+  },
+  "Rashi on Bava Metzia 7b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T22:59:46.288Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 7b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לפירעון</strong> - שמא אמת טוען הלוה שפרעו:"
+  },
+  "Rashi on Bava Metzia 7b:3:1": {
+    "dependsOn": [
+      "Bava Metzia 7b:3"
+    ],
+    "generatedAt": "2026-10-29T23:00:29.264Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 7b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי יוסי לא חייש לפירעון</strong> - דמאן דמהדרי ליה שטר פרוע לאלתר זהיר ביה לקורעו ולא משהי ליה:"
+  },
+  "Rashi on Bava Metzia 7b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T23:01:20.012Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 7b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהבעל מודה</strong> - שלא נתן לה כתובתה:"
+  },
+  "Rashi on Bava Metzia 7b:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T23:02:43.542Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 7b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין הבעל מודה</strong> - שאמר פרעתי ומידי נפל:"
+  },
+  "Tosafot on Bava Metzia 7b:1:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Tosafot on Bava Metzia 7b:1:1"
+    ],
+    "generatedAt": "2026-10-29T22:58:09.844Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bava Metzia 7b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי שנא ליד דיין</strong> - לספרים דגרסי בשנויא והיכי דמי כגון דכתוב ביה הנפק השתא לא ידע דנפל ליד דיין דהיינו הנפק אלא סבור דהיינו שהדיין מצאו ולכך בעי מאי שנא דיין מאיש אחר ולספרים דלא גרסי בתר הכי והיכי דמי כגון דכתוב ביה הנפק ידע שפיר השתא דנפל ליד דיין היינו שכתוב בו הנפק ומיבעיא ליה מאי שנא כתוב בו הנפק דלא יוציאו לעולם הלא אם אין כתוב בו הנפק נראה דכ\"ש הוא שלא יוציאו עולמית דאיכא למימר שמא כתב ללות ולא לוה ומשני דלא מיבעיא קאמר:"
+  },
+  "Tosafot on Bava Metzia 7b:4:1": {
+    "dependsOn": [
+      "Tosafot on Bava Metzia 7b:4:1",
+      "Rashi on Bava Metzia 7b:4:1",
+      "Rashi on Bava Metzia 7b:4:2",
+      "Bava Metzia 7b:4"
+    ],
+    "generatedAt": "2026-10-29T23:07:58.504Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bava Metzia 7b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בזמן שהבעל מודה יחזיר לאשה</strong> - דלא חיישינן לקנוניא וליכא למיחש לשמא כתב בניסן ולא נשא עד תשרי דמנה ומאתים משתעבדי מן האירוסין אף בלא כתובה דאירוסין קלא אית להו ולקודם אירוסין ליכא למיחש דכתב לה ותוספת נמי לאביי דאמר עדיו בחתומיו זכין לו א\"ש ור' אסי יעמיד כשהקנה לה:"
+  }
+}
