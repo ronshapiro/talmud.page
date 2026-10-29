@@ -30,6 +30,7 @@ const entryFiles = [
   "./templates/siddur_page.html",
   "./templates/talmud_page.html",
   "./templates/tanakh.html",
+  "./templates/translation_progress.html",
 ];
 
 const isProd = (() => {

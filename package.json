@@ -40,8 +40,9 @@
   },
   "scripts": {
     "test": "jest --colors",
+    "compute-translation-progress": "ts-node --compiler-options '{\"lib\":[\"es2022\",\"dom\"]}' precomputed/translation_progress_data.ts",
     "dev": "nodemon --watch parcel.ts parcel.ts dev",
-    "parcel-prod": "ts-node parcel.ts prod",
+    "parcel-prod": "npm run compute-translation-progress && ts-node parcel.ts prod",
     "deploy": "npm run parcel-prod && yes | gcloud --configuration talmud-page app deploy",
     "start": "node ./express_main.js",
     "gcp-build": "tsc --lib es2022,dom --downlevelIteration express_main.ts",
