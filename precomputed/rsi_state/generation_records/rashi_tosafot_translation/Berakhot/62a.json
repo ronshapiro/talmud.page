@@ -1,0 +1,219 @@
+{
+  "Rashi on Berakhot 62a:1:1": {
+    "dependsOn": [
+      "Berakhot 62a:1",
+      "Rashi on Berakhot 62a:1:2"
+    ],
+    "generatedAt": "2026-10-29T22:47:54.947Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחר רבי יהושע וכו'</strong> – וביהודה הוה:"
+  },
+  "Rashi on Berakhot 62a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T22:48:58.659Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד כאן</strong> – כלומר כל זה העזת פניך בפני רבך שנסתכלת בכל אלו:"
+  },
+  "Rashi on Berakhot 62a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T22:49:39.121Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דשח ושחק</strong> – עם אשתו שיחה בטלה של ריצוי תשמיש:"
+  },
+  "Rashi on Berakhot 62a:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T22:50:05.912Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועשה צרכיו</strong> – ושימש מטתו:"
+  },
+  "Rashi on Berakhot 62a:3:3": {
+    "dependsOn": [
+      "Jastrow, שְׂרַף ² 1",
+      "Rashi on Berakhot 62a:3:1",
+      "Rashi on Berakhot 62a:3:2",
+      "Rashi on Berakhot 62a:3:4"
+    ],
+    "generatedAt": "2026-10-29T22:51:01.593Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדלא שריף תבשילא</strong> – כאדם רעב כמו שלא שמשת מטתך מעולם שאתה נוהג קלות ראש זה לתאותך:"
+  },
+  "Rashi on Berakhot 62a:3:4": {
+    "dependsOn": [
+      "Jastrow, שְׂרַף ² 1",
+      "Rashi on Pesachim 44a:9:2",
+      "Rashi on Pesachim 44a:9:4",
+      "Rashi on Pesachim 44a:9:5",
+      "Rashi on Berakhot 62a:3:3"
+    ],
+    "generatedAt": "2026-10-29T22:53:28.948Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שריף</strong> – הומי\"ר בלע\"ז:"
+  },
+  "Rashi on Berakhot 62a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T22:53:58.691Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שקרובה לפה</strong> – רגילין להושיטה לפה:"
+  },
+  "Rashi on Berakhot 62a:4:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 62a:4:1",
+      "Rashi on Berakhot 62a:4:2",
+      "Rashi on Berakhot 62a:4:3",
+      "Rashi on Berakhot 23a:9:1"
+    ],
+    "generatedAt": "2026-10-29T22:55:40.267Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שקושר בה תפילין</strong> – בזרוע שמאלו:"
+  },
+  "Rashi on Berakhot 62a:4:3": {
+    "dependsOn": [
+      "Rashi on Berakhot 62a:4:1",
+      "Rashi on Berakhot 62a:4:2",
+      "Steinsaltz on Berakhot 62a:4"
+    ],
+    "generatedAt": "2026-10-29T22:56:49.787Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טעמי תורה</strong> – נגינות טעמי מקרא של תורה נביאים וכתובים בין בניקוד שבספר בין בהגבהת קול ובצלצול נעימות הנגינה של פשטא ודרגא ושופר מהפך מוליך ידו לפי טעם הנגינה ראיתי בקוראים הבאים מארץ ישראל:"
+  },
+  "Rashi on Berakhot 62a:6:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 62a:6:2",
+      "Steinsaltz on Berakhot 62a:6",
+      "Jastrow, צָנוּעַ 1",
+      "Chidushei Agadot on Berakhot 62a:5"
+    ],
+    "generatedAt": "2026-10-29T22:57:58.843Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מן הנחשים ומן העקרבים ומן המזיקין</strong> – דמתוך צניעתו מתנהג בנחת ובשתיקה ואין הנחשים מרגישים להתקנאות בו ואף המזיקין חסין עליו:"
+  },
+  "Rashi on Berakhot 62a:6:2": {
+    "dependsOn": [
+      "Berakhot 62a:6",
+      "Rashi on Berakhot 62a:6:1"
+    ],
+    "generatedAt": "2026-10-29T22:59:07.649Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חלומותיו מיושבין עליו</strong> – שאין המזיקין מבהילין אותו:"
+  },
+  "Rashi on Berakhot 62a:7:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 62a:7:1"
+    ],
+    "generatedAt": "2026-10-29T22:59:44.339Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קבלה</strong> – מסורת ומנהג שקבלנו מרבותינו בבית הכסא:"
+  },
+  "Rashi on Berakhot 62a:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T23:01:18.192Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קבלה דיסורי שתיקותא</strong> – שלא יבעט ביסורין הבאים עליו:"
+  },
+  "Rashi on Berakhot 62a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T23:01:57.665Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מרביה ליה אימרא</strong> – מגדלת לו שה ומלמדתו שהולך עמו תמיד:"
+  },
+  "Rashi on Berakhot 62a:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T23:03:37.260Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שעיר</strong> – שד של בית הכסא דומה לשעיר ועליהם נאמר <span class=\"parenthesized\">(ישעיהו י״ג:כ״א)</span> ושעירים ירקדו שם:"
+  },
+  "Rashi on Berakhot 62a:9:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 62a:9:1",
+      "Rashi on Berakhot 62a:9:2",
+      "Rashi on Berakhot 62a:9:3"
+    ],
+    "generatedAt": "2026-10-29T23:04:53.814Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמגוזא בלקנא</strong> – נותנת אגוז בספל של נחשת ומקרקשת בו מבית והוא נפנה כנגדה מבחוץ:"
+  },
+  "Rashi on Berakhot 62a:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T23:05:41.235Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתר דמלך</strong> – ונעשה ראש ישיבה צריך שימור טפי מפני המזיקים שמתקנאים השדים בתלמידי חכמים יותר משאר בני אדם:"
+  },
+  "Rashi on Berakhot 62a:9:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T23:06:13.897Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כוותא</strong> – חלון כנגד מקום שהוא נפנה שם אחורי הבית:"
+  }
+}

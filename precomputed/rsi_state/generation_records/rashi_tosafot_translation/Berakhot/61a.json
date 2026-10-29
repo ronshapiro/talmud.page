@@ -1,4 +1,73 @@
 {
+  "Rashi on Berakhot 61a:14:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 61a:14:1",
+      "Rashi on Berakhot 61a:4:1",
+      "Rashi on Berakhot 61a:4:2",
+      "Rashi on Berakhot 61a:5:1",
+      "Rashi on Berakhot 61a:5:2",
+      "Rashi on Berakhot 61a:16:1",
+      "Rashi on Berakhot 60b:13:1",
+      "Rashi on Berakhot 60b:11:1"
+    ],
+    "generatedAt": "2026-10-29T21:10:53.778Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 61a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זכר ונקבה בראם</strong> – משמע מתחלת ברייתם תרי הוו:"
+  },
+  "Rashi on Berakhot 61a:16:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 61a:16:1",
+      "Rashi on Berakhot 61a:16:2",
+      "Rashi on Berakhot 61a:4:1",
+      "Rashi on Berakhot 61a:4:2",
+      "Rashi on Berakhot 61a:1:1",
+      "Steinsaltz on Berakhot 61a:16:1",
+      "Steinsaltz on Berakhot 61a:16"
+    ],
+    "generatedAt": "2026-10-29T21:12:40.354Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 61a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היינו דכתיב ויבן</strong> – שהיה צריך בנין:"
+  },
+  "Rashi on Berakhot 61a:16:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 61a:16:1"
+    ],
+    "generatedAt": "2026-10-29T21:13:38.243Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 61a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי ויבן</strong> – והלא כבר נבנה:"
+  },
+  "Rashi on Berakhot 61a:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T21:14:12.001Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 61a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדי לקבל את הפירות</strong> – שאם יהיה קצר מלמטה ורחב מלמעלה תהא התבואה דוחפת את הכתלים מלמעלה לכאן ולכאן שהמשא מכביד עליהם:"
+  },
+  "Rashi on Berakhot 61a:19:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T21:17:05.891Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 61a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שושבין</strong> – משתדל בחופתו ובזיווגו:"
+  },
   "Rashi on Berakhot 61a:1:1": {
     "dependsOn": [
       "Berakhot 61a:1",
@@ -39,5 +108,314 @@
       "Rashi on Berakhot 61a:1:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">הכל לטובה</strong> – אילו היה נר דלוק היה הגייס רואה אותי ואילו היה החמור נוער או התרנגול קורא היה הגייס בא ושובה אותי:"
+  },
+  "Rashi on Berakhot 61a:20:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T21:17:48.243Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 61a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולמ\"ד פרצוף</strong> – ומתחלתו היה מצד אחד זכר ונקבה מצד אחר:"
+  },
+  "Rashi on Berakhot 61a:20:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 61a:20:1",
+      "Rashi on Berakhot 61a:20:2",
+      "Rashi on Berakhot 61a:16:1",
+      "Rashi on Berakhot 61a:16:2",
+      "Rashi on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-10-29T21:18:49.835Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 61a:20:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הי מינייהו סגי ברישא</strong> – איזהו פרצוף היה מהלך לפנים:"
+  },
+  "Rashi on Berakhot 61a:20:3": {
+    "dependsOn": [
+      "Rashi on Berakhot 61a:20:2",
+      "Rashi on Berakhot 61a:20:4"
+    ],
+    "generatedAt": "2026-10-29T21:19:38.910Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 61a:20:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפי' היא אשתו</strong> – גנאי הדבר:"
+  },
+  "Rashi on Berakhot 61a:20:4": {
+    "dependsOn": [
+      "Rashi on Berakhot 61a:20:3",
+      "Rashi on Berakhot 61a:20:4",
+      "Rashi on Berakhot 61a:20:5",
+      "Chidushei Agadot on Berakhot 61a:13",
+      "Steinsaltz on Berakhot 61a:20",
+      "Rashi on Berakhot 61a:16:1",
+      "Rashi on Berakhot 61a:16:2",
+      "Rashi on Berakhot 61a:20:1",
+      "Rashi on Berakhot 61a:20:2"
+    ],
+    "generatedAt": "2026-10-29T21:21:12.125Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 61a:20:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נזדמנה לו על הגשר</strong> – אשת איש והיא לפניו:"
+  },
+  "Rashi on Berakhot 61a:20:5": {
+    "dependsOn": [
+      "Rashi on Berakhot 61a:20:1",
+      "Rashi on Berakhot 61a:20:2",
+      "Rashi on Berakhot 61a:20:3",
+      "Rashi on Berakhot 61a:20:4",
+      "Rashi on Berakhot 61a:20:6"
+    ],
+    "generatedAt": "2026-10-29T21:22:12.464Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 61a:20:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יסלקנה לצדדין</strong> – עד שיעבור לפניה:"
+  },
+  "Rashi on Berakhot 61a:20:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T21:25:51.613Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 61a:20:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחורי אשה בנהר</strong> – אחורי אשת איש מגבהת בגדיה מפני המים וזה מסתכל בה:"
+  },
+  "Rashi on Berakhot 61a:21:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 18b:4:2",
+      "Tosafot on Eruvin 18b:4:1",
+      "Steinsaltz on Berakhot 61a:21",
+      "Chidushei Agadot on Berakhot 61a:14"
+    ],
+    "generatedAt": "2026-10-29T21:28:37.751Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 61a:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יד ליד לא ינקה רע</strong> – אפילו כמשה רבינו שקבל תורה מימינו של הקב\"ה לא ינקה רע וקרא באשה משתעי:"
+  },
+  "Rashi on Berakhot 61a:22:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T21:30:51.951Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 61a:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עם הארץ</strong> – לא שמש תלמידי חכמים שלא למד משנה זו ששנינו לא יהלך אדם אחורי אשה ואפילו היא אשתו:"
+  },
+  "Rashi on Berakhot 61a:24:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T21:34:16.887Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 61a:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולמאי דקאמר רב נחמן</strong> – שהלך אחריה ממש אם כן אפילו בי רב עם תינוקות של בית רבן נמי לא קרא:"
+  },
+  "Rashi on Berakhot 61a:25:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T21:34:54.126Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 61a:25:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשעה שהצבור מתפללים</strong> – דכיון שאינו נכנס נראה כפורק עול ומבזה בית הכנסת:"
+  },
+  "Rashi on Berakhot 61a:26:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T21:36:03.117Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 61a:26:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי דרי מידי</strong> – אין כאן גנאי דמוכחא מילתא דהאי דלא נכנס מפני המשוי:"
+  },
+  "Rashi on Berakhot 61a:26:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T21:36:34.272Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 61a:26:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי איכא פתחא אחרינא</strong> – אין כאן בזוי דמאן דחזי סבר בפתחא אחרינא ליעול:"
+  },
+  "Rashi on Berakhot 61a:27:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T21:37:13.847Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 61a:27:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יביע</strong> – לשון אבעבועות כל משקה מסריח מעלה רתיחה ואבעבועות:"
+  },
+  "Rashi on Berakhot 61a:27:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 61a:27:2",
+      "Rashi on Berakhot 61a:27:1",
+      "Rashi on Berakhot 61a:14:1",
+      "Rashi on Berakhot 61a:20:2",
+      "Rashi on Berakhot 61a:20:5"
+    ],
+    "generatedAt": "2026-10-29T21:40:23.992Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 61a:27:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חטאת</strong> – לשון חטה דריש ליה:"
+  },
+  "Rashi on Berakhot 61a:29:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 61a:29:2",
+      "Rashi on Berakhot 61a:29:3",
+      "Rashi on Berakhot 61a:29:4"
+    ],
+    "generatedAt": "2026-10-29T21:41:27.981Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 61a:29:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כליות יועצות</strong> – את הלב עשה כן:"
+  },
+  "Rashi on Berakhot 61a:29:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 61a:29:1",
+      "Rashi on Berakhot 61a:29:3",
+      "Rashi on Berakhot 61a:29:4",
+      "Rashi on Berakhot 61a:20:1",
+      "Rashi on Berakhot 61a:20:2",
+      "Rashi on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-10-29T21:44:50.767Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 61a:29:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והלב מבין</strong> – מה יש לו לעשות אם ישמע לעצת הכליות אם לאו ומנין שהכליות יועצות שנאמר <span class=\"parenthesized\">(תהילים ט״ז:ז׳)</span> אברך את ה' אשר יעצני אף לילות יסרוני כליותי ומנין שהלב מבין שנאמר <span class=\"parenthesized\">(ישעיהו ו)</span> ולבבו יבין:"
+  },
+  "Rashi on Berakhot 61a:29:3": {
+    "dependsOn": [
+      "Rashi on Berakhot 61a:29:1",
+      "Rashi on Berakhot 61a:29:2",
+      "Rashi on Berakhot 61a:29:3",
+      "Rashi on Berakhot 61a:29:4",
+      "Steinsaltz on Berakhot 61a:29:1"
+    ],
+    "generatedAt": "2026-10-29T21:46:30.792Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 61a:29:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשון מחתך</strong> – הדבור להוציא מפיו:"
+  },
+  "Rashi on Berakhot 61a:29:4": {
+    "dependsOn": [
+      "Rashi on Berakhot 61a:29:1",
+      "Rashi on Berakhot 61a:29:2",
+      "Rashi on Berakhot 61a:29:3",
+      "Rashi on Berakhot 61a:29:4"
+    ],
+    "generatedAt": "2026-10-29T21:47:15.673Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 61a:29:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והפה</strong> – הם השפתים גומר ומוציאו:"
+  },
+  "Rashi on Berakhot 61a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T21:04:25.852Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 61a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא קחזינן דמזקא</strong> – שמזקת:"
+  },
+  "Rashi on Berakhot 61a:4:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 61a:4:1",
+      "Steinsaltz on Berakhot 61a:4"
+    ],
+    "generatedAt": "2026-10-29T21:06:32.263Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 61a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אוי לי מיוצרי</strong> – אם אלך אחרי יצרי ואם לא אלך אחריו אוי לי מיצרי המיגעני בהרהורים:"
+  },
+  "Rashi on Berakhot 61a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T21:08:19.012Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 61a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דו פרצופין</strong> – שני פרצופין בראו תחלה אחד מלפניו ואחד מאחריו וצלחו לשנים ועשה מן האחד חוה:"
+  },
+  "Rashi on Berakhot 61a:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T21:08:58.612Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 61a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחור וקדם צרתני</strong> – לשון צורה דהיינו שני פרצופין:"
+  },
+  "Tosafot on Berakhot 61a:20:1": {
+    "dependsOn": [
+      "Tosafot on Berakhot 61a:20:1",
+      "Rashi on Berakhot 61a:20:5",
+      "Rashi on Berakhot 61a:20:6"
+    ],
+    "generatedAt": "2026-10-29T21:27:13.180Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 61a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכל העובר אחורי אשה בנהר אין לו חלק לעוה\"ב</strong> - פי' אם רגיל בכך לפי שיבא לידי נאוף וסופו יורד לגיהנם:"
+  },
+  "Tosafot on Berakhot 61a:23:1": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Berakhot 61a:1",
+      "Steinsaltz on Berakhot 61a:23",
+      "Steinsaltz comment #1 on Berakhot 61a:23"
+    ],
+    "generatedAt": "2026-10-29T21:32:05.915Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 61a:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא מעתה גבי אלקנה דכתיב וילך אלקנה אחרי אשתו וגו'</strong> - שבוש הוא שאין פסוק זה בכל המקרא ול\"ג ליה:"
   }
 }

@@ -1,0 +1,372 @@
+{
+  "Rashi on Berakhot 33a:11:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 33a:11:1",
+      "Rashi on Berakhot 33a:11:2",
+      "Rashi on Berakhot 33a:11:3"
+    ],
+    "generatedAt": "2026-10-29T17:50:51.019Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מזכירין גבורות גשמים</strong> – משיב הרוח שאינו לשון בקשה אלא לשון הזכרה ושבח:"
+  },
+  "Rashi on Berakhot 33a:11:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 33a:11:1",
+      "Rashi on Berakhot 33a:11:3"
+    ],
+    "generatedAt": "2026-10-29T17:51:35.805Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושואלין</strong> – ותן טל ומטר לשון בקשה:"
+  },
+  "Rashi on Berakhot 33a:11:3": {
+    "dependsOn": [
+      "Rashi on Berakhot 33a:11:1",
+      "Rashi on Berakhot 33a:11:2",
+      "Rashi on Berakhot 29a:18:1",
+      "Rashi on Berakhot 2a:11:1",
+      "Rashi on Berakhot 33a:4:1",
+      "Rashi on Berakhot 33a:4:2",
+      "Steinsaltz on Berakhot 33a:11"
+    ],
+    "generatedAt": "2026-10-29T17:54:23.938Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והבדלה בחונן הדעת</strong> – במוצאי שבת אתה חוננתנו:"
+  },
+  "Rashi on Berakhot 33a:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T17:55:14.559Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתוך שהיא חכמה</strong> – החכם יודע להבדיל בין קדש לחול ובין טמא לטהור:"
+  },
+  "Rashi on Berakhot 33a:19:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T17:56:33.854Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בין שתי אותיות</strong> – בין שתי הזכרות:"
+  },
+  "Rashi on Berakhot 33a:23:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T17:57:11.622Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33a:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במילתה מיהא גדולה היא</strong> – במקום שצריכה נקמה דבר גדול הוא:"
+  },
+  "Rashi on Berakhot 33a:23:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 33a:23:1",
+      "Rashi on Berakhot 33a:23:2",
+      "Rashi on Berakhot 33a:23:3",
+      "Rashi on Berakhot 33a:23:4"
+    ],
+    "generatedAt": "2026-10-29T18:01:16.764Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33a:23:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתי נקמות הללו למה</strong> – אחת לרעה להנקם מן העכו\"ם שלא קבלו את התורה:"
+  },
+  "Rashi on Berakhot 33a:23:3": {
+    "dependsOn": [
+      "Rashi on Berakhot 33a:23:2",
+      "Rashi on Berakhot 33a:4:1",
+      "Rashi on Berakhot 33a:6:1",
+      "Rashi on Berakhot 33a:7:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:5:9"
+    ],
+    "generatedAt": "2026-10-29T18:04:31.219Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33a:23:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואחת לטובה</strong> – כדאמרינן בב\"ק <span class=\"parenthesized\">(דף לח.)</span> מפארן הופיע והפקיר ממונן לישראל שור של ישראל שנגח שור של עכו\"ם פטור:"
+  },
+  "Rashi on Berakhot 33a:23:4": {
+    "dependsOn": [
+      "Rashi on Berakhot 33a:23:1",
+      "Rashi on Berakhot 33a:23:2",
+      "Rashi on Berakhot 33a:23:3",
+      "Rashi on Berakhot 33a:23:4"
+    ],
+    "generatedAt": "2026-10-29T18:05:44.174Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33a:23:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הופיע</strong> – גלה והפקיר כשלא קבלו את התורה:"
+  },
+  "Rashi on Berakhot 33a:25:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T18:06:32.244Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33a:25:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קדושות</strong> – קדוש היום:"
+  },
+  "Rashi on Berakhot 33a:26:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T18:07:09.432Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33a:26:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתחלה</strong> – כשעלו מן הגולה והיו דחוקים:"
+  },
+  "Rashi on Berakhot 33a:26:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T18:07:55.330Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33a:26:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">העשירו</strong> – לקנות יין:"
+  },
+  "Rashi on Berakhot 33a:26:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T18:10:42.111Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33a:26:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קבעוה על הכוס</strong> – ואז נשתכח תקנת עזרא וכשחזרו והענו קבעוה בתפלה ונחלקו היאך יאמרוה:"
+  },
+  "Rashi on Berakhot 33a:29:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T18:11:37.978Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33a:29:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני שיכול</strong> – משמע אם ירצה שלא לחזור ולהתפלל הא אם אמרה בתפלה א\"צ לאומרה על הכוס:"
+  },
+  "Rashi on Berakhot 33a:31:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 33a:31:1",
+      "Rashi on Berakhot 33a:4:1",
+      "Rashi on Berakhot 33a:4:2",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2"
+    ],
+    "generatedAt": "2026-10-29T18:12:50.584Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33a:31:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואנא שמעית</strong> – אני שמעתי:"
+  },
+  "Rashi on Berakhot 33a:37:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T18:13:48.704Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33a:37:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חוזר לראש</strong> – לתפלה ולכוס:"
+  },
+  "Rashi on Berakhot 33a:3:1": {
+    "dependsOn": [
+      "Steinsaltz on Berakhot 33a:3:1",
+      "Steinsaltz on Berakhot 33a:3",
+      "Tosafot on Berakhot 33a:3:1",
+      "Shulchan Arukh, Orach Chayim 104:3",
+      "Rashi on Berakhot 33a:4:2"
+    ],
+    "generatedAt": "2026-10-29T17:33:47.715Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל עקרב פוסק</strong> – ונוטלו לפי שהעקרב מסוכן לעקוץ יותר משנחש מוכן לישוך:"
+  },
+  "Rashi on Berakhot 33a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T17:37:36.976Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מעידין עליו</strong> – לומר לאשתו מת בעליך להתירה לינשא פעמים שאין האריות רעבים ואין אוכלין אותו:"
+  },
+  "Rashi on Berakhot 33a:4:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 33a:4:1",
+      "Berakhot 33a:3",
+      "Berakhot 33a:5"
+    ],
+    "generatedAt": "2026-10-29T17:38:35.617Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נחשים ועקרבים</strong> – או זה או זה מעידים עליו שמת אלמא מועד הנחש לישוך:"
+  },
+  "Rashi on Berakhot 33a:5:1": {
+    "dependsOn": [
+      "Berakhot 33a:5"
+    ],
+    "generatedAt": "2026-10-29T17:39:10.009Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אגב איצצא</strong> – כשנפל עליהם ודחקם הזיקוהו:"
+  },
+  "Rashi on Berakhot 33a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T17:39:55.171Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שור תם</strong> – שלא נגח אדם:"
+  },
+  "Rashi on Berakhot 33a:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T17:40:49.497Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מועד</strong> – שנגח ג' פעמים:"
+  },
+  "Rashi on Berakhot 33a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T17:41:30.302Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בדקולא</strong> – סל שתולין בו תבן בראשו ואוכל:"
+  },
+  "Rashi on Berakhot 33a:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T17:42:02.627Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושדי דרגא</strong> – לאו דוקא אלא כלומר הזהר ממנו הרבה:"
+  },
+  "Rashi on Berakhot 33a:7:3": {
+    "dependsOn": [
+      "Rashi on Berakhot 33a:7:3",
+      "Rashi on Berakhot 33a:7:1",
+      "Rashi on Berakhot 33a:7:2"
+    ],
+    "generatedAt": "2026-10-29T17:42:59.283Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ביומי ניסן</strong> – מתוך שעברו ימי הסתיו שהארץ יבשה ועכשיו רואה אותה מלאה דשאים זחה דעתו עליו ונכנס בו יצר הרע:"
+  },
+  "Rashi on Berakhot 33a:8:1": {
+    "dependsOn": [
+      "Jastrow, עָרוֹד II 1",
+      "Steinsaltz In-Depth comment #1 on Berakhot 33a:8",
+      "Steinsaltz on Berakhot 33a:8",
+      "Chullin 127a:16",
+      "Rashi on Chullin 127a:9:1",
+      "Rashi on Berakhot 33a:8:2",
+      "Rashi on Berakhot 33a:8:3",
+      "Rashi on Berakhot 33a:4:1",
+      "Rashi on Berakhot 33a:6:1",
+      "Rashi on Berakhot 33a:7:1",
+      "Steinsaltz comment #1 on Berakhot 33a:8",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2"
+    ],
+    "generatedAt": "2026-10-29T17:45:06.227Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ערוד</strong> – מן הנחש והצב בא שנזקקין זה עם זה ויוצא משניהם ערוד:"
+  },
+  "Rashi on Berakhot 33a:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T17:48:07.654Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">את חורו</strong> – שהוא יוצא משם:"
+  },
+  "Rashi on Berakhot 33a:8:3": {
+    "dependsOn": [
+      "Rashi on Berakhot 33a:8:1",
+      "Rashi on Berakhot 33a:8:2",
+      "Rashi on Berakhot 33a:7:1",
+      "Rashi on Berakhot 33a:7:2",
+      "Rashi on Berakhot 33a:7:3"
+    ],
+    "generatedAt": "2026-10-29T17:50:01.459Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומת הערוד</strong> – מצאתי בה\"ג אמרי במערבא כשהערוד נושך את האדם אם הערוד קודם למים מת האדם ואם האדם קודם למים מת הערוד ונעשה נס לר' חנינא ונקבע מעין מתחת עקבו:"
+  },
+  "Tosafot on Berakhot 33a:3:1": {
+    "dependsOn": [
+      "Tosafot on Berakhot 33a:3:1",
+      "Rashba on Berakhot 33a:3:1",
+      "Rosh on Berakhot 5:11:1",
+      "Rosh on Berakhot 5:13:1",
+      "Steinsaltz comment #1 on Berakhot 33a:3"
+    ],
+    "generatedAt": "2026-10-29T17:35:50.147Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 33a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל עקרב פוסק</strong> - בירושלמי קאמר דאם היה נחש מרתיע לבא כנגדו פוסק לפי שבא כנגדו בכעס מתכוין להזיקו ומיהו לא מצינו אם פסק שיחזור לראש מדלא קאמר ואם פסק חוזר לראש אבל לתחלת ברכה מיהא יחזור ואם טעה בג' ראשונות או בג' אחרונות חוזר לתחלת הג' באבות בראשונות ובעבודה באחרונות כדאמרינן לקמן בפרקין <span class=\"parenthesized\">(ברכות דף לד.)</span>:"
+  }
+}

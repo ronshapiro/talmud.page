@@ -1,4 +1,26 @@
 {
+  "Rashi on Berakhot 34b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T20:06:47.203Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 34b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם שגורה</strong> – אם סדורה תפלתי בפי במרוצה ואיני נכשל ותחנתי נובעת מלבי אל פי כל מה שאני חפץ להאריך בתחנונים:"
+  },
+  "Rashi on Berakhot 34b:12:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 34b:12:1"
+    ],
+    "generatedAt": "2026-10-29T20:08:17.892Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 34b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהוא מטורף</strong> – החולה לשון אחר [לשון] טורפין לו תפלתו בפניו כלומר התפלה שהתפללו עליו מטורפת וטרודה ממנו ואינה מקובלת:"
+  },
   "Rashi on Berakhot 34b:13:1": {
     "dependsOn": [
       "Berakhot 34b:12",
@@ -136,6 +158,16 @@
       "Rashi on Berakhot 34b:18:2"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">עין לא ראתה</strong> – לא נראית ולא נגלית לשום נביא:"
+  },
+  "Rashi on Berakhot 34b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T19:57:38.621Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 34b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כהן גדול בסוף כל ברכה</strong> – כל מה שהוא גדול ביותר צריך להכניע ולהשפיל עצמו:"
   },
   "Rashi on Berakhot 34b:23:1": {
     "dependsOn": [
@@ -391,6 +423,26 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">חלונות</strong> – שגורמין לו שיכוין לבו שהוא מסתכל כלפי שמים ולבו נכנע:"
   },
+  "Rashi on Berakhot 34b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T19:58:09.876Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 34b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינו זוקף</strong> – עד שיגמור:"
+  },
+  "Rashi on Berakhot 34b:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T19:59:03.405Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 34b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קם מלפני מזבח ה' מכרוע</strong> – רישיה דקרא ויהי ככלות שלמה להתפלל והדר קם מכרוע:"
+  },
   "Rashi on Berakhot 34b:30:1": {
     "dependsOn": [
       "Rashi on Berakhot 34b:30:1",
@@ -430,6 +482,70 @@
       "Rashi on Berakhot 34b:30:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">דמצלי בבקתא</strong> – בבקעה שכשהוא במקום צניעות חלה עליו אימת מלך ולבו נשבר:"
+  },
+  "Rashi on Berakhot 34b:3:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 34b:3:1",
+      "Tosafot on Berakhot 34b:3:1"
+    ],
+    "generatedAt": "2026-10-29T19:59:59.706Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 34b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ארצה</strong> – לשון משתטח משמע:"
+  },
+  "Rashi on Berakhot 34b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T20:01:59.709Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 34b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמצלו אצלויי</strong> – כשנופלין על פניהם אין פושטין ידיהם ורגליהם אלא מטין על צדיהן:"
+  },
+  "Rashi on Berakhot 34b:6:1": {
+    "dependsOn": [
+      "Berakhot 34b:6"
+    ],
+    "generatedAt": "2026-10-29T20:03:43.088Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 34b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתחלה</strong> – כורע:"
+  },
+  "Rashi on Berakhot 34b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T20:04:18.630Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 34b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חזינא לרב נחמן דכרע</strong> – תחלה וסוף:"
+  },
+  "Rashi on Berakhot 34b:9:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 34b:7:1",
+      "Rashi on Berakhot 34b:12:1",
+      "Rashi on Berakhot 34a:14:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 34b:1:1",
+      "Rashi on Berakhot 34b:2:1",
+      "Rashi on Berakhot 34b:2:2",
+      "Rashi on Berakhot 34a:1:1"
+    ],
+    "generatedAt": "2026-10-29T20:06:09.808Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 34b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בהודאה דהלל</strong> – הודו לה' כי טוב:"
   },
   "Tosafot on Berakhot 34b:15:1": {
     "dependsOn": [
@@ -527,5 +643,31 @@
       "Tosafot on Berakhot 34b:31:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">כסוי חטאה</strong> - וטעמא לפי שאז מתבייש על חטאו אבל אם מפרש חטאיו דומה שאינו מתבייש עליו ואמרינן לעיל פרק קמא <span class=\"parenthesized\">(ברכות ד' יב:)</span> כל העושה דבר ומתבייש מוחלים לו מיד:"
+  },
+  "Tosafot on Berakhot 34b:3:1": {
+    "dependsOn": [
+      "Tosafot on Berakhot 34b:3:1",
+      "Tosafot on Shevuot 16b:9:1"
+    ],
+    "generatedAt": "2026-10-29T20:01:26.093Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 34b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קידה על אפים</strong> - ומייתי קרא אע\"ג דאשכחן נמי בענין אחר יש לומר דקים ליה מקבלה דקידה על אפים ומייתי קרא דמסייעו:"
+  },
+  "Tosafot on Berakhot 34b:4:1": {
+    "dependsOn": [
+      "Translation on Tosafot on Berakhot 34b:4:1",
+      "Tosafot on Berakhot 34b:3:1"
+    ],
+    "generatedAt": "2026-10-29T20:02:59.452Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 34b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חזינא לאביי ורבא דמצלו אצלויי</strong> - פירוש שהיו מטין על צדיהן:"
   }
 }

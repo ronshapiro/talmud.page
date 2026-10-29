@@ -135,6 +135,32 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">צניתא</strong> – דקלים:"
   },
+  "Rashi on Berakhot 31a:15:1": {
+    "dependsOn": [
+      "Berakhot 31a:15"
+    ],
+    "generatedAt": "2026-10-29T14:54:44.286Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 31a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אדכרתן מילתא כו'</strong> – וזה שאומרים מימות אדם הראשון הם שהוא גזר על אותו מקום לישוב דקלים:"
+  },
+  "Rashi on Berakhot 31a:17:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 31a:17:1",
+      "Torah Temimah on Psalms 10:17:1",
+      "Steinsaltz on Berakhot 31a:17"
+    ],
+    "generatedAt": "2026-10-29T14:56:04.873Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 31a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם תכין לבם</strong> – אז תקשיב אזנך:"
+  },
   "Rashi on Berakhot 31a:1:1": {
     "dependsOn": [
       "Translation on Rashi on Berakhot 31a:1:1",
@@ -153,6 +179,114 @@
       "Rashi on Berakhot 31a:1:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">כסא דמוקרא</strong> – כוס של זכוכית לבנה:"
+  },
+  "Rashi on Berakhot 31a:20:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T14:59:55.134Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 31a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זמנין תלתא</strong> – שחרית מנחה וערבית:"
+  },
+  "Rashi on Berakhot 31a:21:1": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Berakhot 31a:5:1",
+      "Steinsaltz on Berakhot 31a:21",
+      "Rashi on Berakhot 31a:10:1",
+      "Rashi on Berakhot 31a:10:2",
+      "Rashi on Berakhot 31a:11:1",
+      "Rashi on Berakhot 30b:2:1",
+      "Rashi on Berakhot 30b:3:1",
+      "Rashi on Berakhot 30b:13:1"
+    ],
+    "generatedAt": "2026-10-29T15:02:32.039Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 31a:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יכול משבא לגולה הוחלה</strong> – התפלה הזאת הוחלה כמו נתחלה אבל קודם לכן לא היה רגיל בכך:"
+  },
+  "Rashi on Berakhot 31a:23:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T15:03:12.271Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 31a:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יכול יהא כוללן</strong> – לשלש תפלות הללו בשעה אחת:"
+  },
+  "Rashi on Berakhot 31a:25:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Berakhot 31a:25:1",
+      "Rashi on Berakhot 31a:25:1",
+      "Rashi on Berakhot 31a:25:2",
+      "Berakhot 29a:22",
+      "Rashi on Berakhot 29a:13:2",
+      "Rashi on Berakhot 31a:1:1",
+      "Rashi on Berakhot 31a:3:1"
+    ],
+    "generatedAt": "2026-10-29T15:05:47.921Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 31a:25:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יכול ישאל צרכיו</strong> – כגון ברכות דאתה חונן עד ש\"ת ואח\"כ יתפלל שלש ברכות ראשונות שהן של שבח:"
+  },
+  "Rashi on Berakhot 31a:25:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 31a:25:1",
+      "Rashi on Berakhot 31a:25:2",
+      "Rashi on Berakhot 31a:25:3",
+      "Rashi on Berakhot 31a:25:4",
+      "Rashi on Berakhot 31a:20:1",
+      "Rashi on Berakhot 31a:21:1",
+      "Rashi on Berakhot 31a:23:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:2:1",
+      "Tosafot on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-10-29T15:07:20.794Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 31a:25:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רנה זו תפלה</strong> – של שבח:"
+  },
+  "Rashi on Berakhot 31a:25:3": {
+    "dependsOn": [
+      "Rashi on Berakhot 31a:25:1",
+      "Rashi on Berakhot 31a:25:2",
+      "Rashi on Berakhot 31a:25:4"
+    ],
+    "generatedAt": "2026-10-29T15:08:10.743Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 31a:25:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בקשה</strong> – שאלת צרכיו:"
+  },
+  "Rashi on Berakhot 31a:25:4": {
+    "dependsOn": [
+      "Rashi on Berakhot 31a:25:1",
+      "Rashi on Berakhot 31a:25:2",
+      "Rashi on Berakhot 31a:25:3",
+      "Rashi on Berakhot 31a:25:4"
+    ],
+    "generatedAt": "2026-10-29T15:08:58.625Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 31a:25:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחר אמת ויציב</strong> – קודם ג' ראשונות:"
   },
   "Rashi on Berakhot 31a:3:1": {
     "dependsOn": [
@@ -300,6 +434,37 @@
       "Tosafot on Berakhot 31a:12:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">שכן מצינו בנביאים הראשונים שסיימו דבריהם בדברי שבח ותנחומין</strong> - ומקשה בירושלמי חוץ מירמיה וכו' והא כתיב כי אם מאס מאסתנו <span class=\"parenthesized\">(איכה ה׳:כ״ב)</span> מיהו מההוא קראי דסוף תרי עשר וקהלת לא פריך מידי שחושבו בטוב בדברי תנחומין ולא מיירי בפורענות דישראל:"
+  },
+  "Tosafot on Berakhot 31a:18:1": {
+    "dependsOn": [
+      "Tosafot on Berakhot 31a:18:1",
+      "Steinsaltz comment #1 on Berakhot 31a:18",
+      "Steinsaltz comment #2 on Berakhot 31a:18"
+    ],
+    "generatedAt": "2026-10-29T14:58:17.245Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 31a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומוצאו בזוית אחרת</strong> - תימה דאמר לקמן <span class=\"parenthesized\">(ברכות דף לד.)</span> הבא לשחות בסוף כל ברכה וברכה מלמדין אותו שלא ישחה ותירץ הר\"ר יוסף דהכא מיירי בתחנונים שהיה אומר אחר י\"ח ברכות ולא נהירא דהא מי\"ח קאמר ונראה להר\"י דודאי בסוף כל ברכה אסור לשחות אבל באמצע הברכה מיהא מותר לשחות ובהכי מיירי הכא וכשהיה מגיע לסוף הברכה היה זוקף ולכך נהגו העולם בראש השנה וביום הכפורים שמתפללין זכרנו ובכן תן ותמלוך ששוחים כשמגיעים לפסוקים ובסוף ברכה זוקפין שאין לשחות בסוף ברכות אלא היכא דתקון:"
+  },
+  "Tosafot on Berakhot 31a:27:1": {
+    "dependsOn": [
+      "Tosafot on Berakhot 31a:27:1",
+      "Tosafot on Berakhot 31a:2:1",
+      "Tosafot on Berakhot 31a:9:1",
+      "Tosafot on Berakhot 31a:10:1",
+      "Tosafot on Berakhot 31a:12:1",
+      "Tosafot on Berakhot 31a:18:1"
+    ],
+    "generatedAt": "2026-10-29T15:11:18.085Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 31a:27:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכאן ששכור אסור להתפלל</strong> - ירושלמי במסכת תרומות פרק קמא רבי זירא בעי קמיה דרבי אמי שכור מהו שיברך א\"ל ואכלת ושבעת וברכת ואפילו מדומדם. פירוש ואפי' הוא שתוי ושכור כל כך שאינו יכול לדבר כראוי דהכי משמע ושבעת וברכת:"
   },
   "Tosafot on Berakhot 31a:2:1": {
     "dependsOn": [

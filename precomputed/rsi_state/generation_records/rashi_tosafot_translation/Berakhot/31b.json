@@ -1,0 +1,376 @@
+{
+  "Rashi on Berakhot 31b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T15:15:42.282Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 31b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואסתתר</strong> – אתייחד עם אחרים ויחשדני בעלי:"
+  },
+  "Rashi on Berakhot 31b:10:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 31b:10:1",
+      "Rashi on Berakhot 31b:3:1",
+      "Rashi on Berakhot 31b:4:1",
+      "Rashi on Berakhot 31a:1:1",
+      "Jastrow, פְּלַסְטִיר 1"
+    ],
+    "generatedAt": "2026-10-29T15:17:43.772Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 31b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פלסתר</strong> – שקר:"
+  },
+  "Rashi on Berakhot 31b:15:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 31b:15:2",
+      "Rashi on Berakhot 31b:15:3"
+    ],
+    "generatedAt": "2026-10-29T15:18:52.720Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 31b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלש אמתות</strong> – דריש להו לשון מיתה:"
+  },
+  "Rashi on Berakhot 31b:15:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 31b:15:1",
+      "Rashi on Berakhot 31b:15:3"
+    ],
+    "generatedAt": "2026-10-29T15:19:49.765Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 31b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בדקי מיתה</strong> – שהאשה נבדקת בהן בשעת הסכנה שאם ימצא בה אחד מהם תמות:"
+  },
+  "Rashi on Berakhot 31b:15:3": {
+    "dependsOn": [
+      "Rashi on Berakhot 31b:15:1",
+      "Rashi on Berakhot 31b:15:2",
+      "Tosafot on Berakhot 30b:18:1"
+    ],
+    "generatedAt": "2026-10-29T15:22:23.411Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 31b:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נדה וחלה והדלקת נר</strong> – של שבת על ג' עברות הללו נשים מתות וטעמא יליף במסכת שבת <span class=\"parenthesized\">(ד' לא:)</span>:"
+  },
+  "Rashi on Berakhot 31b:17:1": {
+    "dependsOn": [
+      "Berakhot 31b:17",
+      "Rashi on Berakhot 31b:15:1",
+      "Rashi on Berakhot 31b:18:1"
+    ],
+    "generatedAt": "2026-10-29T15:23:41.564Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 31b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמובלע בין אנשים</strong> – רב דימי מפרש לה לא ארוך ולא גוץ וכו':"
+  },
+  "Rashi on Berakhot 31b:18:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 31b:18:1",
+      "Rashi on Berakhot 31b:18:2",
+      "Steinsaltz on Berakhot 31b:18",
+      "Rashi on Berakhot 31b:15:1",
+      "Rashi on Berakhot 31b:15:2",
+      "Rashi on Berakhot 31b:15:3"
+    ],
+    "generatedAt": "2026-10-29T15:28:28.849Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 31b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלם</strong> – פי' עב:"
+  },
+  "Rashi on Berakhot 31b:18:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 31b:18:1",
+      "Rashi on Berakhot 31b:18:2",
+      "Rashi on Berakhot 31b:18:3",
+      "Rashi on Berakhot 31b:18:4",
+      "Jastrow, צָחוֹר 1",
+      "Sefer HeArukh, Letter Tzadi 54",
+      "Chokhmat Shlomo on Berakhot 31b:1",
+      "Steinsaltz on Berakhot 31b:18",
+      "Rashi on Berakhot 31b:3:1",
+      "Rashi on Berakhot 31b:4:1",
+      "Rashi on Berakhot 31b:10:1",
+      "Rashi on Berakhot 31b:10:2",
+      "Rashi on Berakhot 31b:15:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2"
+    ],
+    "generatedAt": "2026-10-29T15:41:10.729Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 31b:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צחור</strong> – רו\"ש בלע\"ז:"
+  },
+  "Rashi on Berakhot 31b:18:3": {
+    "dependsOn": [
+      "Rashi on Berakhot 31b:18:1",
+      "Rashi on Berakhot 31b:18:2",
+      "Rashi on Berakhot 31b:18:3",
+      "Rashi on Berakhot 31b:18:4",
+      "Chokhmat Shlomo on Berakhot 31b:1",
+      "Steinsaltz on Berakhot 31b:18",
+      "Rashi on Berakhot 31b:10:1",
+      "Rashi on Berakhot 31b:15:1",
+      "Rashi on Berakhot 31b:3:1",
+      "Rashi on Berakhot 31b:4:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Jastrow, צָחוֹר 1",
+      "Sefer HeArukh, Letter Tzadi 54"
+    ],
+    "generatedAt": "2026-10-29T15:45:57.855Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 31b:18:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גיחור</strong> – שהוא לבן יותר מדאי:"
+  },
+  "Rashi on Berakhot 31b:18:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T15:47:10.382Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 31b:18:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא חכם</strong> – יותר מדאי שלא יהיה תימה בעיני הבריות ומתוך שנדברין בו שולטת בו עין הרע:"
+  },
+  "Rashi on Berakhot 31b:19:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 31b:18:1",
+      "Rashi on Berakhot 31b:18:2",
+      "Rashi on Berakhot 31b:20:1",
+      "Rashi on Berakhot 31b:3:1",
+      "Rashi on Berakhot 31b:4:1",
+      "Rashi on Berakhot 31b:10:1",
+      "Rashi on Berakhot 31b:10:2",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 10a:1:1",
+      "Tosafot on Berakhot 31b:19:1",
+      "Tosafot on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-10-29T15:48:56.126Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 31b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הנצבת עמכה</strong> – משמע אף הוא עמה בעמידה:"
+  },
+  "Rashi on Berakhot 31b:20:1": {
+    "dependsOn": [
+      "Berakhot 31b:20"
+    ],
+    "generatedAt": "2026-10-29T15:54:27.139Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 31b:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אל הנער הזה</strong> – על זה ולא לאחר מכאן שחטא לעלי ורצה לענשו ולהתפלל שינתן לה בן אחר:"
+  },
+  "Rashi on Berakhot 31b:21:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 31b:21:1",
+      "Rashi on Berakhot 31a:9:1",
+      "Rashi on Berakhot 31b:3:1",
+      "Rashi on Berakhot 31b:4:1",
+      "Rashi on Berakhot 31b:10:1"
+    ],
+    "generatedAt": "2026-10-29T15:56:52.711Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 31b:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והקריבו הכהנים</strong> – אמרו בפרק קמא דחגיגה <span class=\"parenthesized\">(ד' יא.)</span> והקריבו זה קבלת הדם:"
+  },
+  "Rashi on Berakhot 31b:24:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T15:59:15.407Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 31b:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">של שבעים שנה</strong> – כלומר אפילו נגזר עליו מנעוריו לפי שתענית קשה בשבת לפי שהכל מתענגים בו והוא מתענה:"
+  },
+  "Rashi on Berakhot 31b:25:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 31b:25:1",
+      "Steinsaltz on Berakhot 31b:25:1"
+    ],
+    "generatedAt": "2026-10-29T16:07:29.383Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 31b:25:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תעניתא לתעניתא</strong> – יתענה למחר:"
+  },
+  "Rashi on Berakhot 31b:26:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 31b:25:1",
+      "Rashi on Berakhot 31b:27:1",
+      "Rashi on Berakhot 31b:3:1",
+      "Rashi on Berakhot 31b:4:1",
+      "Rashi on Berakhot 31b:10:1",
+      "Rashi on Berakhot 31a:2:1",
+      "Rashi on Berakhot 31a:4:1",
+      "Rashi on Berakhot 31a:10:1"
+    ],
+    "generatedAt": "2026-10-29T16:09:04.379Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 31b:26:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותתפלל על ה'</strong> – כך כתוב הוא במקרא ולא גרסינן הכא אל תקרי:"
+  },
+  "Rashi on Berakhot 31b:27:1": {
+    "dependsOn": [
+      "Berakhot 31b:27"
+    ],
+    "generatedAt": "2026-10-29T16:09:56.120Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 31b:27:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שחזר והודה לאליהו</strong> – לדבריו הודה לאחר זמן בנבואת נביאים אחרים:"
+  },
+  "Rashi on Berakhot 31b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T15:12:46.789Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 31b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שצריך להודיעו</strong> – הנחשד צריך לנקות את עצמו ולהודיע את חושדו שאין בו אותו דבר מגונה:"
+  },
+  "Rashi on Berakhot 31b:4:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 31b:4:1",
+      "Rashi on Berakhot 31b:3:1",
+      "Rashi on Berakhot 31b:10:1",
+      "Rashi on Berakhot 31b:10:2",
+      "Rashi on Berakhot 31a:1:1",
+      "Rashi on Berakhot 31a:2:1"
+    ],
+    "generatedAt": "2026-10-29T15:15:11.316Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 31b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לפני בת בליעל</strong> – אל תתנני כבת בליעל לחשדני בשכרות:"
+  },
+  "Tosafot on Berakhot 31b:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T15:24:58.530Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 31b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גברא בגוברין</strong> - פי' אדם שיהא חשוב לימנות בין אנשים:"
+  },
+  "Tosafot on Berakhot 31b:19:1": {
+    "dependsOn": [
+      "Tosafot on Berakhot 31b:19:1",
+      "Tosafot on Berakhot 31b:19:2",
+      "Rashi on Berakhot 31b:19:1",
+      "Steinsaltz In-Depth on Berakhot 31b:19",
+      "Steinsaltz on Berakhot 31b:19",
+      "Rashba on Berakhot 31b:1"
+    ],
+    "generatedAt": "2026-10-29T15:51:08.468Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 31b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[עמכה]</strong> - עמך משמע בתוך ארבע אמות משום דכתיב עמכה מלא בה\"א כלומר שלא היה יושב בתוך ארבע אמות שלה כי אם בחמישית:"
+  },
+  "Tosafot on Berakhot 31b:19:2": {
+    "dependsOn": [
+      "Community Translation: Translation on Tosafot on Berakhot 31b:19:2",
+      "Tosafot on Berakhot 31b:19:1",
+      "Maharshal on Berakhot 31b:2",
+      "Maharsha on Berakhot 31b:1",
+      "Shulchan Arukh, Orach Chayim 102:1",
+      "Rashba on Berakhot 31b:1",
+      "Tosafot on Berakhot 31b:17:1",
+      "Tosafot on Berakhot 31b:22:1",
+      "Tosafot on Berakhot 31b:24:1"
+    ],
+    "generatedAt": "2026-10-29T15:53:34.287Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 31b:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכאן שאסור לישב בד' אמות של תפלה</strong> - בין מלפניו <span class=\"parenthesized\">(בין מלאחריו)</span> ובין מן הצדדין ופירשו תשובת הגאונים דוקא ביושב ובטל אבל אם היה עוסק בק\"ש ובברכותיה וכיוצא בהם אפילו יושב שפיר דמי:"
+  },
+  "Tosafot on Berakhot 31b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T15:12:01.570Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 31b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דבר שאינו הגון</strong> - פירוש אע\"ג דליכא איסורא דאורייתא דאי איכא איסורא דאורייתא פשיטא הוכח תוכיח כתיב <span class=\"parenthesized\">(ויקרא י״ט:י״ז)</span>:"
+  },
+  "Tosafot on Berakhot 31b:22:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T15:58:41.162Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 31b:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מורה הלכה בפני רבך את</strong> - ואף ע\"פ שלא למד עדיין בפניו מ\"מ גדול הדור היה ובא ללמוד לפניו:"
+  },
+  "Tosafot on Berakhot 31b:24:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 31b:24:1",
+      "Rosh on Shabbat 1:24:1",
+      "Shulchan Arukh, Orach Chayim 288:4",
+      "Maharshal: Chokhmat Shlomo on Berakhot 31b:4",
+      "Steinsaltz comment #1 on Berakhot 31b:24",
+      "Steinsaltz comment #2 on Berakhot 31b:24"
+    ],
+    "generatedAt": "2026-10-29T16:06:33.672Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 31b:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל היושב בתענית בשבת</strong> - פירש ר\"ח בתענית חלום וכן איתא במדרש תהלים וכשיושב בתענית חלום בשבת פי' בה\"ג שאומר עננו באלהי נצור ואפילו קובע ברכה לעצמו כיון שאינו בתוך י\"ח:"
+  }
+}

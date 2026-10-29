@@ -1,0 +1,334 @@
+{
+  "Rashi on Berakhot 33b:10:1": {
+    "dependsOn": [
+      "Berakhot 33b:10",
+      "Rashi on Berakhot 33b:11:1"
+    ],
+    "generatedAt": "2026-10-29T18:26:47.502Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלכה</strong> – מ\"ד הלכה דרשינן לה בפרקין ומ\"ד מטין מדרש לא דרשינן ברבים אבל אורויי מורינן ליחיד לעשות כר\"א בי\"ט שחל להיות בא' בשבת ומ\"ד נראין אורויי נמי לא מורינן ואי עביד לא מהדרינן עובדא:"
+  },
+  "Rashi on Berakhot 33b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T18:27:27.990Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מודים</strong> – חכמים לר\"א בי\"ט שחל להיות אחר השבת:"
+  },
+  "Rashi on Berakhot 33b:12:1": {
+    "dependsOn": [
+      "Berakhot 33b:12",
+      "Rashi on Berakhot 33b:12:2",
+      "Rashi on Berakhot 33b:1:1",
+      "Rashi on Berakhot 33b:8:1",
+      "Rashi on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-10-29T18:29:35.211Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נקוט דר' חייא בר אבא בידך</strong> – שהוא מדקדק בלשון רבו וקובע בו סימנים שלא יתחלף לו נראין במטין או במודים:"
+  },
+  "Rashi on Berakhot 33b:12:2": {
+    "dependsOn": [
+      "Pesachim 52b:5",
+      "Pesachim 52b:6",
+      "Pesachim 52b:7",
+      "Pesachim 52b:8",
+      "Rashi on Berakhot 33b:7:1",
+      "Rashi on Berakhot 33b:12:1",
+      "Berakhot 33b:13",
+      "Chokhmat Shlomo on Berakhot 33b:6",
+      "Chokhmat Shlomo on Berakhot 33b:7",
+      "Rashi on Pesachim 52b:8:1",
+      "Rashi on Pesachim 52b:8:2",
+      "Rashi on Pesachim 52b:8:3"
+    ],
+    "generatedAt": "2026-10-29T18:32:54.444Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרחבא</strong> – שהיה מדקדק בלשון רבו ואומר סטיו כפול היה ואע\"פ שבלשון משנה קורהו אצטבא בפסחים ובסוכה על גב האצטבא הוא דקדק בלשון רבו ולא אמר אצטבא כפולה היתה יש פותרין הא דרחבא מדאמר ר' יהודה דדייק ספיקי דרבוותיה אי מדרבי יהודה אי מדרב יהודה וקשיא לי בגוה טובא חדא דרחבא לא ראה רבי יהודה מימיו לא רבי יהודה ברבי אלעאי ולא ר' יהודה נשיאה ועוד כולהו אמוראי נמי דייקו לומר דבר בשם אומרו ועוד ליכא למימר מהא דדייק לישנא דשמעתא אלא ספיקי דרבוותא:"
+  },
+  "Rashi on Berakhot 33b:13:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 33b:13:1",
+      "Berakhot 33b:12",
+      "Rashi on Berakhot 33b:12:1",
+      "Rashi on Berakhot 33b:12:2",
+      "Steinsaltz on Berakhot 33b:13",
+      "Steinsaltz comment #1 on Berakhot 33b:13"
+    ],
+    "generatedAt": "2026-10-29T18:34:31.283Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סטיו כפול</strong> – אצטבאות זו לפנים מזו בהיקף עגול לישב שם:"
+  },
+  "Rashi on Berakhot 33b:14:1": {
+    "dependsOn": [
+      "Berakhot 33b:14",
+      "Berakhot 33b:10",
+      "Steinsaltz on Berakhot 33b:14:1",
+      "Steinsaltz on Berakhot 33b:14"
+    ],
+    "generatedAt": "2026-10-29T18:36:04.621Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא האי ידענא כו'</strong> – לא נראין ולא מודים ולא מטים:"
+  },
+  "Rashi on Berakhot 33b:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T18:37:11.695Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותודיענו</strong> – לומר במקום ותתן לנו ולכשיגיע בין קדושת שבת לקדושת י\"ט וכו' הבדלת וקדשת את עמך ישראל בקדושתך יאמר ותתן לנו ה' אלהינו מועדים לשמחה וכו' ומסיים מקדש ישראל והזמנים:"
+  },
+  "Rashi on Berakhot 33b:16:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Berakhot 33b:16:1"
+    ],
+    "generatedAt": "2026-10-29T18:37:47.125Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האומר</strong> – בתפלתו:"
+  },
+  "Rashi on Berakhot 33b:16:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 33b:16:2",
+      "Rashi on Berakhot 33b:16:1",
+      "Rashi on Berakhot 33b:3:1",
+      "Rashi on Berakhot 33b:7:1",
+      "Rashi on Berakhot 33b:18:1",
+      "Rashi on Berakhot 33b:18:2",
+      "Rashi on Berakhot 33b:22:1",
+      "Rashi on Berakhot 33b:22:2",
+      "Rashi on Berakhot 33a:1:1",
+      "Rashi on Berakhot 33a:2:1",
+      "Rashi on Berakhot 32b:1:1"
+    ],
+    "generatedAt": "2026-10-29T18:39:30.836Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על קן צפור יגיעו רחמיך</strong> – אנשים שהיו מראים עצמם כמתכונים להעמיק בלשון תחנונים ואומרים רחום וחנון אתה ועל קן צפור יגיעו רחמיך שאמרת לשלח את האם או שאומר על טוב שאתה עושה לנו יזכר שמך או שאומר מודים מודים משתקין אותו:"
+  },
+  "Rashi on Berakhot 33b:18:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 33b:18:1",
+      "Translation on Rashi on Berakhot 33b:18:1",
+      "Rashi on Berakhot 33b:18:2",
+      "Rashi on Berakhot 33b:1:1",
+      "Rashi on Berakhot 33b:3:1",
+      "Rashi on Berakhot 33b:4:1",
+      "Rashi on Berakhot 33a:1:1",
+      "Rashi on Berakhot 33a:2:1",
+      "Rashi on Berakhot 33a:3:1"
+    ],
+    "generatedAt": "2026-10-29T18:42:03.422Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמטיל קנאה</strong> – לומר על אלה חס ולא על שאר בריותיו:"
+  },
+  "Rashi on Berakhot 33b:18:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 33b:18:2",
+      "Rashi on Berakhot 33b:18:1",
+      "Rashi on Berakhot 33b:12:1",
+      "Rashi on Berakhot 33b:12:2",
+      "Rashi on Berakhot 33b:16:1",
+      "Rashi on Berakhot 33b:16:2",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3"
+    ],
+    "generatedAt": "2026-10-29T18:44:39.787Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33b:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדותיו</strong> – מצותיו והוא לא לרחמים עשה אלא להטיל על ישראל חקי גזרותיו להודיע שהם עבדיו ושומרי מצותיו וגזרות חקותיו אף בדברי' שיש לשטן ולעכו\"ם להשיב עליהם ולומר מה צורך במצוה זו:"
+  },
+  "Rashi on Berakhot 33b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T18:14:31.635Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלכתא מאי</strong> – המבדיל בתפילה צריך שיבדיל על הכוס או לא:"
+  },
+  "Rashi on Berakhot 33b:20:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T18:45:11.946Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33b:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבה נמי לחדודי לאביי הוא דבעי</strong> – שישיב לו מה שהשיב:"
+  },
+  "Rashi on Berakhot 33b:22:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 33b:22:2"
+    ],
+    "generatedAt": "2026-10-29T18:46:13.670Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33b:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי לאו דאמרינהו משה</strong> – האל הגדול הגבור והנורא אשר לא ישא פנים ולא יקח שוחד <span class=\"parenthesized\">(דברים י׳:י״ז)</span>:"
+  },
+  "Rashi on Berakhot 33b:22:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 33b:22:1",
+      "Rashi on Berakhot 33b:22:2",
+      "Steinsaltz on Berakhot 33b:22"
+    ],
+    "generatedAt": "2026-10-29T18:47:31.235Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33b:22:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותקנינהו בתפלה</strong> – כשהתפלל עזרא על מעל הגולה בספר עזרא <span class=\"parenthesized\">(נחמיה ט)</span>:"
+  },
+  "Rashi on Berakhot 33b:23:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 33b:23:1"
+    ],
+    "generatedAt": "2026-10-29T18:48:32.937Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33b:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכל בידי שמים</strong> – כל הבא על האדם ביד הקב\"ה כגון ארוך קצר עני עשיר חכם שוטה לבן שחור הכל בידי שמים הוא אבל צדיק ורשע אינו בא על ידי שמים את זו מסר בידו של אדם ונתן לפניו שני דרכים והוא יבחר לו יראת שמים:"
+  },
+  "Rashi on Berakhot 33b:29:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T18:53:38.553Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33b:29:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מילתא מילתא ותני לה</strong> – כל תיבה ותיבה חוזר ושונה מגונה הוי שתוקי לא משתקינן ליה שאין זה דומה למקבל עליו שתי מלכיות אלא למתלוצץ אמר פסוק שלם ותני ליה משתקינן ליה דמחזי כשתי רשויות:"
+  },
+  "Rashi on Berakhot 33b:3:1": {
+    "dependsOn": [
+      "Berakhot 33b:3"
+    ],
+    "generatedAt": "2026-10-29T18:15:21.248Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ביום טוב שחל להיות אחר השבת</strong> – שאין מתפללין אתה חונן:"
+  },
+  "Rashi on Berakhot 33b:4:1": {
+    "dependsOn": [
+      "Berakhot 33b:4",
+      "Chokhmat Shlomo on Berakhot 33b:4",
+      "Berakhot 33b:7",
+      "Rashi on Berakhot 33b:3:1",
+      "Rashi on Berakhot 33b:7:1",
+      "Rashi on Berakhot 33b:8:1",
+      "Rashi on Berakhot 33b:1:1",
+      "Rashi on Berakhot 33b:10:1",
+      "Rashi on Berakhot 33b:11:1",
+      "Rashi on Berakhot 33b:12:1"
+    ],
+    "generatedAt": "2026-10-29T18:19:36.047Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג הלכה מכלל דפליגי ולא פליגי והא פליגי רבנן אימר דפליגי רבנן בשאר ימות השנה בי\"ט שחל להיות אחר השבת מי פליגי והא פליג ר\"ע אטו כל השנה מי עבדינן כר\"ע דהשתא נעביד וכו'</strong> – והכי פריך א\"ל רבי זירא הלכה מכלל דפליגי בתמיה ופריך הגמרא ולא פליגי והא פליגי רבנן וכו':"
+  },
+  "Rashi on Berakhot 33b:7:1": {
+    "dependsOn": [
+      "Berakhot 33b:7"
+    ],
+    "generatedAt": "2026-10-29T18:20:36.147Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא פליג ר' עקיבא</strong> – לומרה ברכה רביעית לעצמה ואצטרי' למימר הלכה כר\"א לאפוקי מדר\"ע:"
+  },
+  "Rashi on Berakhot 33b:8:1": {
+    "dependsOn": [
+      "Berakhot 33b:8",
+      "Berakhot 33b:6"
+    ],
+    "generatedAt": "2026-10-29T18:24:50.657Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 33b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אטו כל השנה כולה מי עבדינן כר\"ע דהשתא נעביד כותיה</strong> – דאצטריך למימר הלכה כר\"א:"
+  },
+  "Tosafot on Berakhot 33b:16:1": {
+    "dependsOn": [
+      "Tosafot on Berakhot 33b:16:1"
+    ],
+    "generatedAt": "2026-10-29T18:40:25.301Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 33b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר מודים מודים משתקין אותו</strong> - ירושלמי הדא דתימא בצבור אבל ביחיד תחנונים הם:"
+  },
+  "Tosafot on Berakhot 33b:29:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 33b:29:1",
+      "Rashba on Berakhot 33b:3",
+      "Ritva on Berakhot 33b:9",
+      "Chokhmat Shlomo on Berakhot 33b:3",
+      "Tosafot on Berakhot 33b:16:1"
+    ],
+    "generatedAt": "2026-10-29T18:58:34.276Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 33b:29:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר פסוקא פסוקא וכפליה</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> משתקין אותו דמחזי כעושה ב' רשויות ובה\"ג ובפר\"ח מפרש איפכא פסוקא אין משתקין אותו מיהו מגונה הוי אך לשון הגמרא לא משמע כפי' ואותן בני אדם שאומרים ב' או ג' פעמים שמע ישראל ביוה\"כ משתקין אותם לפירש\"י ולפר\"ח מגונה מיהא הוי או שמא אין לחוש רק כשקורא ק\"ש בעונתה ומקבל עליו עול מלכות שמים ומ\"מ טוב שלא לומר אך מה שאומרים ה' הוא האלהים ז' פעמים ביוה\"כ ויום ערבה כנגד ז' רקיעים משבחים לבורא שהוא דר למעלה מז' מנהג כשר הוא וגם מצינו בקרא שתי פעמים ה' הוא האלהים גבי אליהו <span class=\"parenthesized\">(מלכים א י״ח:ל״ט-מ׳)</span>:"
+  }
+}
