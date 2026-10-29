@@ -1,0 +1,38 @@
+{
+  "Rashi on Shevuot 3a:1:1": {
+    "dependsOn": [
+      "Shevuot 3a:1",
+      "Rashi on Shevuot 3a:1:2",
+      "Rashi on Shevuot 2b:12:1",
+      "Rashi on Makkot 20a:10:1",
+      "Rashi on Makkot 20a:10:2",
+      "Tosafot on Shevuot 3a:1:1",
+      "Steinsaltz on Shevuot 3a:1",
+      "Steinsaltz comment #1 on Shevuot 3a:1",
+      "Steinsaltz comment #2 on Shevuot 3a:1",
+      "Ritva on Shevuot 3a:2:1",
+      "Mishneh Torah, Foreign Worship and Customs of the Nations 12:7"
+    ],
+    "generatedAt": "2026-10-29T13:08:44.840Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shevuot 3a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועל הזקן שתים</strong> - מכל צד ב' צדעים לפי שהלחי רחב כנגד הצדעים ויש לכל דבר רחב קצה לשני צדדין בראשו:"
+  },
+  "Rashi on Shevuot 3a:1:2": {
+    "dependsOn": [
+      "Rashi on Shevuot 3a:1:1",
+      "Steinsaltz on Shevuot 3a:1",
+      "Steinsaltz comment #2 on Shevuot 3a:1"
+    ],
+    "generatedAt": "2026-10-29T13:11:31.165Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shevuot 3a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וא' מלמטה</strong> - בסנטר שהלחיים מחוברין שם והעצם קצר מלמטה בסנטר שקורין מונטו\"ן בלע\"ז:"
+  }
+}
