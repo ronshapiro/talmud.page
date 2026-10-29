@@ -376,6 +376,23 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">הניתזין</strong> - למרחוק:"
   },
+  "Rashi on Shabbat 12a:2:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 12a:2:2",
+      "Rashi on Shabbat 12a:2:3",
+      "Rashi on Shabbat 12a:2:4",
+      "Rashi on Shabbat 12a:2:5",
+      "Steinsaltz on Shabbat 12a:2",
+      "Mishnah Makhshirin 4:5"
+    ],
+    "generatedAt": "2026-10-28T12:46:21.016Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 12a:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והצפין</strong> - מלמעלה כשהיא מלאה:"
+  },
   "Rashi on Shabbat 12a:2:5": {
     "dependsOn": [
       "Shabbat 12a:2",

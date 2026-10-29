@@ -79,6 +79,259 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">רחבה ו' פטור</strong> - דהוי רשות לעצמה ואנן ממשכן גמרינן שהיו זורקין מחטיהן במלאכתן זה לזה ולא היו זורקין רשויות וא\"ת בדלא גבוהה עשרה נמי רשות לעצמה היא דהא שמה כרמלית ההיא לאו מדאורייתא הוה רשות אלא מדרבנן ולא להקל על דברי תורה בא כגון זו שיפטר מחטאת:"
   },
+  "Rashi on Shabbat 8a:3:1": {
+    "dependsOn": [
+      "Shabbat 8a:3",
+      "Tosafot on Shabbat 8a:3:1"
+    ],
+    "generatedAt": "2026-10-28T08:02:18.958Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי איפשר</strong> - הואיל וגבוהה י' שלא יהא בה קרומיות מן השתי שגבוהים מחבריהם של ערב ועולין למעלה מי' שהוא אויר מקום פטור וכיון דלא ניחא כולה ברה\"ר לא הויא הנחה לאיחיובי:"
+  },
+  "Rashi on Shabbat 8a:4:1": {
+    "dependsOn": [
+      "Shabbat 8a:4",
+      "Rashi on Shabbat 8a:4:1",
+      "Rashi on Shabbat 8a:4:2",
+      "Rashi on Shabbat 8a:2:1",
+      "Rashi on Shabbat 8a:2:2",
+      "Rashi on Shabbat 8a:2:3",
+      "Rashi on Shabbat 8a:3:1",
+      "Tosafot on Shabbat 8a:4:1"
+    ],
+    "generatedAt": "2026-10-28T08:07:57.813Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כפאה על פיה</strong> - וזרקה אאינה רחבה ו' קאי:"
+  },
+  "Rashi on Shabbat 8a:4:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 8a:4:1",
+      "Rashi on Shabbat 8a:5:1",
+      "Rashi on Shabbat 8a:2:1",
+      "Rashi on Shabbat 8a:2:2",
+      "Rashi on Shabbat 8a:2:3"
+    ],
+    "generatedAt": "2026-10-28T08:11:42.594Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ז' ומשהו חייב</strong> - אם גבוהה ז' ומשהו עדיין חייב וכ\"ש פחותה מכן אלא אפילו גבוהה ז' ומשהו דאיכא למימר הואיל ומחיצותיה למטה וקיי\"ל הלכה למשה מסיני דאמרינן לבוד אכתי כולה ניחא ברה\"ר דכי מטיא פחות מג' סמוך לקרקע ואמר בהן לבוד והויא הנחה אכתי כולה באויר רה\"ר היא וחייב:"
+  },
+  "Rashi on Shabbat 8a:5:1": {
+    "dependsOn": [
+      "Shabbat 8a:5",
+      "Rashi on Shabbat 8a:4:1",
+      "Rashi on Shabbat 8a:4:2",
+      "Rashi on Shabbat 8a:5:1",
+      "Rashi on Shabbat 8a:5:2",
+      "Steinsaltz on Shabbat 8a:4:1",
+      "Steinsaltz on Shabbat 8a:5:1",
+      "Steinsaltz on Shabbat 8a:4",
+      "Tosafot on Shabbat 8a:4:1",
+      "Tosafot on Shabbat 8a:4:2",
+      "Rashi on Shabbat 8a:2:1",
+      "Rashi on Shabbat 8a:2:2",
+      "Rashi on Shabbat 8a:2:3",
+      "Rashi on Shabbat 8a:3:1"
+    ],
+    "generatedAt": "2026-10-28T08:21:06.656Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל גבוה ז' ומחצה</strong> - וה\"ה לשני משהויין פטור דמכי מטא לפחות משלשה סמוך לקרקע אמרינן לבוד במחיצותיה והרי היא כמונחת נמצאו שוליה למעלה מעשרה ואינה נוחה כולה ברה\"ר ובשלא כפאה ליכא למימר לבוד דלא אמרינן לבוד אלא במחיצות והא מילתא בין לאביי בין לרבא דאביי נמי מודה דבעינן הנחה כולה ברשות הרבים אלא דאביי לא חשיב קרומיות אבל בהא מודה דבלא קרומיות איתא למעלה מי':"
+  },
+  "Rashi on Shabbat 8a:5:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 8a:5:1",
+      "Shabbat 8a:4",
+      "Rashi on Shabbat 8a:4:1",
+      "Rashi on Shabbat 8a:4:2"
+    ],
+    "generatedAt": "2026-10-28T08:22:01.652Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לתוכן עשויות</strong> - להניח בהן דבש ולא לכופן כלפי מטה הלכך אין כאן תורת לבוד:"
+  },
+  "Rashi on Shabbat 8a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T08:22:56.692Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תשעה</strong> - דוקא נקט דחזי לכתופי דאינו לא גבוה ולא נמוך:"
+  },
+  "Rashi on Shabbat 8a:6:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 8a:6:1",
+      "Rashi on Shabbat 8a:6:2",
+      "Rashi on Shabbat 8a:6:3",
+      "Rashi on Shabbat 6a:3:1",
+      "Rashi on Shabbat 8a:1:1",
+      "Rashi on Shabbat 8a:1:2"
+    ],
+    "generatedAt": "2026-10-28T08:25:21.468Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וזרק</strong> - מתחלת ד' לסוף ד':"
+  },
+  "Rashi on Shabbat 8a:6:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 8a:6:1",
+      "Rashi on Shabbat 8a:6:2",
+      "Rashi on Shabbat 8a:6:3",
+      "Jastrow, כְּתַף 1",
+      "Gilyon HaShas on Shabbat 8a:2",
+      "Rashi on Shabbat 8a:1:1",
+      "Rashi on Shabbat 8a:2:1",
+      "Rashba on Shabbat 8a:5"
+    ],
+    "generatedAt": "2026-10-28T08:27:31.778Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכתפי עילויה</strong> - וכיון דצריך לרבים רה\"ר הוא בין רחב בין קצר:"
+  },
+  "Rashi on Shabbat 8a:7:1": {
+    "dependsOn": [
+      "Shabbat 8a:7",
+      "Rashi on Shabbat 8a:7:1",
+      "Rashi on Shabbat 8a:7:2",
+      "Rashi on Shabbat 8a:7:3"
+    ],
+    "generatedAt": "2026-10-28T08:28:21.147Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גומא</strong> - עמוקה ט':"
+  },
+  "Rashi on Shabbat 8a:7:2": {
+    "dependsOn": [
+      "Shabbat 8a:7",
+      "Rashi on Shabbat 8a:7:1",
+      "Rashi on Shabbat 8a:7:2",
+      "Rashi on Shabbat 8a:7:3",
+      "Rashi on Shabbat 8a:6:1",
+      "Rashi on Shabbat 8a:6:2",
+      "Rashi on Shabbat 6a:1:1",
+      "Rashi on Shabbat 7b:1:1"
+    ],
+    "generatedAt": "2026-10-28T08:30:33.802Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי</strong> - גבי רה\"י דעשרה תניא לעיל <span class=\"parenthesized\">(שבת דף ו.)</span> עומקה כגובהה דקתני חריץ עמוק י' ורחב ד' רשות היחיד הכא מאי אי אמרי' מנחי ביה בני רה\"ר חפצים שבידם עד דהדרי ואתו דרך שם ושקלי ליה ונמצא שצריכים לו רבים הלכך רשות הרבים הוא:"
+  },
+  "Rashi on Shabbat 8a:7:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 8a:7:1",
+      "Rashi on Shabbat 8a:7:2",
+      "Rashi on Shabbat 8a:2:1",
+      "Rashi on Shabbat 8a:2:2",
+      "Rashi on Shabbat 8a:2:3",
+      "Tosafot on Shabbat 8a:7:1",
+      "Steinsaltz on Shabbat 8a:7",
+      "Rashi on Pesachim 2a:2:1",
+      "Jastrow, תַּשְׁמִישׁ 1"
+    ],
+    "generatedAt": "2026-10-28T08:34:48.332Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג רבא אמר גומא לא מ\"ט תשמיש ע\"י הדחק לא שמיה תשמיש</strong> - הלכך לאו צורך רבים הוא אלא כרמלית הוא:"
+  },
+  "Rashi on Shabbat 8a:8:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 8a:8:2",
+      "Rashi on Shabbat 8a:8:3",
+      "Rashi on Shabbat 8a:8:4",
+      "Rashi on Shabbat 8a:1:1",
+      "Rashi on Shabbat 8a:2:1",
+      "Rashi on Shabbat 8a:6:1",
+      "Rashi on Shabbat 8a:7:1",
+      "Steinsaltz on Shabbat 8a:8"
+    ],
+    "generatedAt": "2026-10-28T08:40:52.768Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מטלטלין</strong> - דהוי רה\"י לעצמה:"
+  },
+  "Rashi on Shabbat 8a:8:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 8a:8:1",
+      "Rashi on Shabbat 8a:8:2",
+      "Rashi on Shabbat 8a:8:3",
+      "Rashi on Shabbat 8a:8:4",
+      "Tosafot on Shabbat 8a:7:1",
+      "Rashi on Shabbat 8a:2:3",
+      "Rashi on Shabbat 2a:5:3",
+      "Tosafot on Shabbat 2a:4:1",
+      "Rashi on Shabbat 6a:12:3",
+      "Shabbat 6a:9"
+    ],
+    "generatedAt": "2026-10-28T08:44:30.621Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פחות מכן</strong> - או בגובה או ברוחב מטלטלין וא\"ת פחות מי' ורחבה ד' כרמלית היא לא גזור רבנן לבטולי מתורת כלים הואיל וכלי הוא:"
+  },
+  "Rashi on Shabbat 8a:8:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 8a:8:1",
+      "Rashi on Shabbat 8a:8:2",
+      "Rashi on Shabbat 8a:8:4",
+      "Shabbat 8a:8"
+    ],
+    "generatedAt": "2026-10-28T08:46:39.515Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי לאו</strong> - האי וכן אסיפא נמי קאי דפחות מכן מטלטל לכתחלה אלמא רה\"ר חשיב ליה ואוקמא בעמוק ט' דמשתמשין בו קצת:"
+  },
+  "Rashi on Shabbat 8a:8:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T08:48:38.608Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 8a:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא ארישא</strong> - אגבוהה י' ורחבה ד' דהוי רה\"י קתני וכן בגומא:"
+  },
   "Tosafot on Shabbat 8a:1:1": {
     "dependsOn": [
       "Shabbat 8a:1",
@@ -137,5 +390,79 @@
       "Tosafot on Shabbat 8a:2:2"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">רחבה ששה פטור</strong> - שהכוורת עצמה נעשית רה\"י כשתנוח והוי כזורק מרשות היחיד לרה\"י דרך רה\"ר דפטור כדאמר לעיל <span class=\"parenthesized\">(שבת דף ד.)</span> דלא יליף זורק ממושיט ואפילו לר' עקיבא דאמר קלוטה כמי שהונחה דמיא הכא פטור דכל מקום שהיא מונחת חשיב רה\"י השתא משמע דפשיטא ליה לאביי דחשיבא כאילו נחה אחר שנעשה רה\"י ובפ' הזורק <span class=\"parenthesized\">(לקמן שבת צט:)</span> בעי ר' יוחנן בור ט' ועקר ממנו חוליא והשלימו לי' והניחו ברה\"ר עקירת חפץ ועשיית מחיצה בהדי הדדי קאתו ומיחייב או לא ואת\"ל כיון דלא הויא מחיצה י' מעיקרא לא מיחייב בור י' ונתן לתוכו חוליא ומעטו מהו הנחת חפץ וסילוק מחיצה כו' וא\"כ אביי דפשיטא ליה במחצלת דמבטל מחיצתה דקאמר התם בור ברה\"ר עמוק י' ורוחב ח' וזרק לתוכו מחצלת וחלקו פטור משום דהשתא לא הויא רוחב ד' וכ\"ש דפטור בעשיית מחיצה משום דכיון דלא הויא מחיצה עשרה מעיקרא לא מיחייב וא\"כ הכא הוי ליה לחיובי מהאי טעמא כיון דלא הויא מחיצה מעיקרא הרי נח ברשות הרבים וחייב וי\"ל דטעמא דאביי משום דלא חשיב לא עקירה ולא הנחה כי אתי בהדי הדדי והכא נמי לא חשיבה הנחה כיון דהנחה ועשיית מחיצה בהדי הדדי קאתו והא דפשיטא ליה לרבי יוחנן טפי בעשיית מחיצה מבסילוק מחיצה היינו משום דדילמא עקירה בעינן שתהא חשובה אבל בהנחה לא:"
+  },
+  "Tosafot on Shabbat 8a:3:1": {
+    "dependsOn": [
+      "Shabbat 8a:3",
+      "Rashi on Shabbat 8a:3:1",
+      "Rashba on Shabbat 8a:3",
+      "Tosafot on Shabbat 8a:2:1",
+      "Tosafot on Shabbat 8a:2:2"
+    ],
+    "generatedAt": "2026-10-28T08:05:31.337Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 8a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי אפשר לקרומיות של קנה שלא יעלו למעלה מי'</strong> - ואביי לא חשיב קרומית ליחשב אגודו במקום פטור:"
+  },
+  "Tosafot on Shabbat 8a:4:1": {
+    "dependsOn": [
+      "Shabbat 8a:4",
+      "Rashi on Shabbat 8a:4:1",
+      "Rashi on Shabbat 8a:4:2",
+      "Tosafot on Shabbat 8a:4:2",
+      "Tosafot on Shabbat 8a:2:1",
+      "Tosafot on Shabbat 8a:2:2",
+      "Chokhmat Shlomo on Shabbat 8a:5",
+      "Maharam on Shabbat 8a:7",
+      "Tosafot on Shabbat 2a:1:1",
+      "Rashi on Shabbat 8a:2:1",
+      "Rashi on Shabbat 8a:2:2",
+      "Rashi on Shabbat 8a:2:3",
+      "Rashi on Pesachim 2a:1:1",
+      "Tosafot on Pesachim 2a:1:1"
+    ],
+    "generatedAt": "2026-10-28T08:16:04.685Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 8a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כפאה על פיה</strong> - נראה לריב\"א דארחב ששה קאי וכי איכא שבעה ומשהו חייב דכשמגיעות המחיצות תוך שלש אין המחיצות גבוהות י' ועובי השולים אין מצטרפין דבעינן מחיצה הרואה את אויר הכלי שיהא גבוה י' ואע\"ג דהיכא דכוורת גבוה י' מצטרפין השולים להיות על גבו רה\"י כדאמר לעיל גבי בית שאין תוכו י' כו' וכיון דעל גבו רה\"י פטור הזורק מ\"מ כיון דאין גבוה י' אלא מחמת לבוד אין אויר פחות מג' מצטרף אלא א\"כ יהיו המחיצות גבוהות י' לבד השולים דלא אמרינן לבוד אלא במחיצות <span class=\"rashi-quotation\">כדפירש בקונטרס</span> תדע דבשולים למטה לא אמרי' לבוד:"
+  },
+  "Tosafot on Shabbat 8a:4:2": {
+    "dependsOn": [
+      "Shabbat 8a:4",
+      "Rashi on Shabbat 8a:4:1",
+      "Tosafot on Shabbat 8a:4:1",
+      "Rashi on Shabbat 8a:4:2",
+      "Tosafot on Shabbat 8a:2:1",
+      "Tosafot on Shabbat 8a:2:2",
+      "Tosafot on Shabbat 8a:3:1"
+    ],
+    "generatedAt": "2026-10-28T08:18:38.623Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 8a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שבעה ומחצה פטור</strong> - דכשמגיעות המחיצות תוך ג' יש שם מחיצות עשרה לבד השולים והרי הוא רשות היחיד וחשיב כנח באותה שעה ושוב אינו מתחייב אע\"ג דלאחר מכן נופל לארץ ובטל ממנה רה\"י ונעשה כמונח ברה\"ר אבל אינו רחב ו' אפי' ז' ומחצה חייב דלא אמרי' לבוד אלא במחיצות ומחיצות לא חשיבי אלא כשיש שם רחב ד' אבל כשאינו רחב ד' הרי הוא כשאר חפצים דעלמא ולא אמרינן לבוד:"
+  },
+  "Tosafot on Shabbat 8a:7:1": {
+    "dependsOn": [
+      "Shabbat 8a:7",
+      "Rashi on Shabbat 8a:7:1",
+      "Rashi on Shabbat 8a:7:2",
+      "Rashi on Shabbat 8a:7:3"
+    ],
+    "generatedAt": "2026-10-28T08:36:39.828Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 8a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ליה וכן בגומא</strong> - נוכל לומר דוכן בגומא היינו כלומר אפי' גבוה ט' הוי רה\"ר דמכתפין בה ע\"י הדחק וכ\"ש פחות מתשעה דיותר נוח להשתמש בה וכן משמע בסמוך דקאמר אברייתא דמייתי מאי לאו וכן בגומא אסיפא משמע דכל פחות מי' מטלטלין כמו בקופה:"
   }
 }
