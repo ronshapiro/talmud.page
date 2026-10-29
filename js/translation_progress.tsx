@@ -28,14 +28,14 @@ function BackButton({onClick}: {onClick: () => void}): React.ReactElement {
   const useHebrew = isSiteLanguageHebrew();
   const positionStyle: React.CSSProperties = {
     position: "fixed",
-    top: useHebrew ? "10px" : "50px",
+    top: useHebrew ? "12px" : "50px",
     padding: "30px",
     zIndex: 10,
   };
   if (useHebrew) {
-    positionStyle.right = "10px";
+    positionStyle.right = "12px";
   } else {
-    positionStyle.left = "10px";
+    positionStyle.left = "12px";
   }
 
   return (
@@ -69,52 +69,70 @@ function SummaryCards({
   return (
     <div className="metrics-grid">
       <div className="metric-card card-complete">
-        <span className="metric-label">
-          {isHebrew ? "דפים שהושלמו" : "Complete Pages"}
-        </span>
+        <div className="metric-card-top-bar" />
+        <div className="metric-header">
+          <span className="metric-label">
+            {isHebrew ? "דפים שהושלמו" : "Complete Pages"}
+          </span>
+          <span className="metric-pill" />
+        </div>
         <span className="metric-value">
           {summary.completePages.toLocaleString()}
         </span>
         <span className="metric-subtext">
-          {completePercentage}% {isHebrew ? "מכלל הדפים בש״ס" : "of all Talmud pages"}
+          <span className="metric-subtext-highlight">{completePercentage}%</span>{" "}
+          {isHebrew ? "מכלל הדפים בש״ס" : "of all Talmud pages"}
         </span>
       </div>
 
       <div className="metric-card card-partial">
-        <span className="metric-label">
-          {isHebrew ? "דפים בתהליך" : "Partially Complete"}
-        </span>
+        <div className="metric-card-top-bar" />
+        <div className="metric-header">
+          <span className="metric-label">
+            {isHebrew ? "דפים בתהליך" : "Partially Complete"}
+          </span>
+          <span className="metric-pill" />
+        </div>
         <span className="metric-value">
           {summary.partialPages.toLocaleString()}
         </span>
         <span className="metric-subtext">
-          {partialPercentage}% {isHebrew ? "עם תרגום חלקי" : "with partial translation"}
+          <span className="metric-subtext-highlight">{partialPercentage}%</span>{" "}
+          {isHebrew ? "עם תרגום חלקי" : "in active translation"}
         </span>
       </div>
 
       <div className="metric-card card-to-go">
-        <span className="metric-label">
-          {isHebrew ? "דפים שנותרו" : "Others To Go"}
-        </span>
+        <div className="metric-card-top-bar" />
+        <div className="metric-header">
+          <span className="metric-label">
+            {isHebrew ? "דפים שנותרו" : "Not Started Yet"}
+          </span>
+          <span className="metric-pill" />
+        </div>
         <span className="metric-value">
           {summary.notStartedPages.toLocaleString()}
         </span>
         <span className="metric-subtext">
-          {notStartedPercentage}% {isHebrew ? "טרם תורגמו" : "not yet started"}
+          {notStartedPercentage}% {isHebrew ? "טרם תורגמו" : "to be translated"}
         </span>
       </div>
 
       <div className="metric-card card-comments">
-        <span className="metric-label">
-          {isHebrew ? "פירושים שתורגמו" : "Translated Comments"}
-        </span>
+        <div className="metric-card-top-bar" />
+        <div className="metric-header">
+          <span className="metric-label">
+            {isHebrew ? "פירושים שתורגמו" : "Translated Comments"}
+          </span>
+          <span className="metric-pill" />
+        </div>
         <span className="metric-value">
           {summary.translatedComments.toLocaleString()}
         </span>
         <span className="metric-subtext">
-          {isHebrew
-            ? `מתוך ${summary.totalComments.toLocaleString()} (${summary.percentTranslatedComments}%)`
-            : `out of ${summary.totalComments.toLocaleString()} (${summary.percentTranslatedComments}%)`}
+          {isHebrew ? "מתוך " : "out of "}
+          {summary.totalComments.toLocaleString()} (
+          <span className="metric-subtext-highlight">{summary.percentTranslatedComments}%</span>)
         </span>
       </div>
     </div>
@@ -135,9 +153,12 @@ function OverallProgressBar({
   return (
     <div className="overall-progress-section">
       <div className="overall-progress-title">
-        <span>{isHebrew ? "התקדמות כוללת בש״ס" : "Overall Shas Progress"}</span>
-        <span>
-          {summary.completePages.toLocaleString()} / {summary.totalPages.toLocaleString()} {isHebrew ? "דפים" : "pages"} ({summary.percentCompletePages}%)
+        <span className="overall-progress-heading">
+          {isHebrew ? "התקדמות כוללת בש״ס" : "Overall Talmud Bavli Progress"}
+        </span>
+        <span className="overall-progress-stats">
+          {summary.completePages.toLocaleString()} / {summary.totalPages.toLocaleString()}{" "}
+          {isHebrew ? "דפים" : "pages"} ({summary.percentCompletePages}%)
         </span>
       </div>
 
@@ -161,15 +182,15 @@ function OverallProgressBar({
 
       <div className="progress-legend">
         <div className="legend-item">
-          <span className="legend-swatch progress-segment-complete" />
+          <span className="legend-swatch legend-swatch-complete" />
           <span>{isHebrew ? "הושלם (100%)" : "Complete (100%)"}</span>
         </div>
         <div className="legend-item">
-          <span className="legend-swatch progress-segment-partial" />
-          <span>{isHebrew ? "חלקי (1-99%)" : "Partially Complete (1-99%)"}</span>
+          <span className="legend-swatch legend-swatch-partial" />
+          <span>{isHebrew ? "חלקי (1-99%)" : "In Progress (1-99%)"}</span>
         </div>
-        <div className="legend-item">
-          <span className="legend-swatch progress-segment-to-go" />
+        <div className="legend-item legend-item-to-go">
+          <span className="legend-swatch legend-swatch-to-go" />
           <span>{isHebrew ? "טרם החל (0%)" : "Not Started (0%)"}</span>
         </div>
       </div>
@@ -210,11 +231,11 @@ function TranslationTimelineChart({
   }
 
   const chartViewBoxWidth = 840;
-  const chartViewBoxHeight = 280;
-  const paddingLeft = 65;
-  const paddingRight = 35;
-  const paddingTop = 25;
-  const paddingBottom = 45;
+  const chartViewBoxHeight = 260;
+  const paddingLeft = 55;
+  const paddingRight = 25;
+  const paddingTop = 20;
+  const paddingBottom = 40;
 
   const plotWidth = chartViewBoxWidth - paddingLeft - paddingRight;
   const plotHeight = chartViewBoxHeight - paddingTop - paddingBottom;
@@ -224,7 +245,6 @@ function TranslationTimelineChart({
   ));
 
   const maxDataValue = Math.max(...values, 100);
-  // Round up to nice number for Y axis
   const niceMultiplier = 10 ** Math.floor(Math.log10(maxDataValue));
   const yAxisMaximum = Math.ceil(maxDataValue / niceMultiplier) * niceMultiplier;
 
@@ -236,8 +256,8 @@ function TranslationTimelineChart({
     return {x, y, value, point};
   });
 
-  const pathCommands = coordinates.map((coord, index) => (
-    `${index === 0 ? "M" : "L"} ${coord.x.toFixed(1)} ${coord.y.toFixed(1)}`
+  const pathCommands = coordinates.map((coordinate, index) => (
+    `${index === 0 ? "M" : "L"} ${coordinate.x.toFixed(1)} ${coordinate.y.toFixed(1)}`
   )).join(" ");
 
   const areaCommands = (
@@ -257,7 +277,6 @@ function TranslationTimelineChart({
     });
   }
 
-  // Pick up to 5 evenly spaced dates for X axis
   const xGridLines = [];
   const xLabelSteps = Math.min(5, pointsCount);
   for (let step = 0; step < xLabelSteps; step++) {
@@ -285,10 +304,11 @@ function TranslationTimelineChart({
     }
   };
 
+  const latestCoordinate = coordinates[coordinates.length - 1];
   const activeCoordinate = (
     hoveredIndex !== undefined && hoveredIndex < coordinates.length
       ? coordinates[hoveredIndex]
-      : coordinates[coordinates.length - 1]
+      : undefined
   );
 
   return (
@@ -296,13 +316,41 @@ function TranslationTimelineChart({
       <div className="timeline-header-row">
         <div className="timeline-title-group">
           <h2>
-            {isHebrew ? "התקדמות התרגום לאורך זמן" : "Translation Progress Over Time"}
+            {isHebrew ? "קצב התרגום לאורך זמן" : "Translation Velocity Over Time"}
           </h2>
           <p className="timeline-subtitle">
             {isHebrew
-              ? "מעקב אחר קצב התרגום המצטבר והיומי מאז תחילת הפרויקט"
-              : "Tracking cumulative and daily translation velocity across Talmud Bavli"}
+              ? "מעקב אחר צמיחת התרגומים מאז תחילת הפרויקט"
+              : "Tracking cumulative and daily translation milestones"}
           </p>
+        </div>
+
+        {/* Dynamic header readout: NEVER overlays or blocks chart data */}
+        <div className="timeline-live-stat">
+          {activeCoordinate ? (
+            <>
+              <span className="live-stat-date">
+                {formatDateLabel(activeCoordinate.point.date, isHebrew)}
+              </span>
+              <span className="live-stat-divider" />
+              <span className="live-stat-value">
+                {displayMode === "cumulative"
+                  ? `${activeCoordinate.point.cumulativeCount.toLocaleString()} ${isHebrew ? "פירושים" : "comments"}`
+                  : `+${activeCoordinate.point.dailyCount.toLocaleString()} ${isHebrew ? "ביום זה" : "on this day"}`}
+              </span>
+            </>
+          ) : (
+            <>
+              <span className="live-stat-date">
+                {isHebrew ? "סך הכל עד כה" : "Current total"}
+              </span>
+              <span className="live-stat-divider" />
+              <span className="live-stat-value">
+                {latestCoordinate.point.cumulativeCount.toLocaleString()}{" "}
+                {isHebrew ? "פירושים" : "comments"}
+              </span>
+            </>
+          )}
         </div>
 
         <div className="timeline-toggle-group">
@@ -310,31 +358,18 @@ function TranslationTimelineChart({
             type="button"
             className={`timeline-toggle-button ${displayMode === "cumulative" ? "active" : ""}`}
             onClick={() => setDisplayMode("cumulative")}>
-            {isHebrew ? "סך הכל מצטבר" : "Cumulative Total"}
+            {isHebrew ? "מצטבר" : "Cumulative"}
           </button>
           <button
             type="button"
             className={`timeline-toggle-button ${displayMode === "daily" ? "active" : ""}`}
             onClick={() => setDisplayMode("daily")}>
-            {isHebrew ? "תוספת יומית" : "Daily Volume"}
+            {isHebrew ? "יומי" : "Daily Pace"}
           </button>
         </div>
       </div>
 
       <div className="timeline-svg-container">
-        {activeCoordinate && (
-          <div className="chart-tooltip-panel">
-            <div className="chart-tooltip-date">
-              {formatDateLabel(activeCoordinate.point.date, isHebrew)}
-            </div>
-            <div className="chart-tooltip-metric">
-              {displayMode === "cumulative"
-                ? `${activeCoordinate.point.cumulativeCount.toLocaleString()} ${isHebrew ? "פירושים סה״כ" : "comments translated"}`
-                : `+${activeCoordinate.point.dailyCount.toLocaleString()} ${isHebrew ? "פירושים באותו יום" : "comments translated"}`}
-            </div>
-          </div>
-        )}
-
         <svg
           viewBox={`0 0 ${chartViewBoxWidth} ${chartViewBoxHeight}`}
           className="timeline-svg"
@@ -342,8 +377,8 @@ function TranslationTimelineChart({
           onMouseLeave={() => setHoveredIndex(undefined)}>
           <defs>
             <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="var(--dashboard-chart-line)" stopOpacity="0.35" />
-              <stop offset="100%" stopColor="var(--dashboard-chart-line)" stopOpacity="0.0" />
+              <stop offset="0%" stopColor="var(--chart-line)" stopOpacity="0.18" />
+              <stop offset="100%" stopColor="var(--chart-line)" stopOpacity="0.0" />
             </linearGradient>
           </defs>
 
@@ -395,9 +430,9 @@ function TranslationTimelineChart({
               <circle
                 cx={activeCoordinate.x}
                 cy={activeCoordinate.y}
-                r="6"
-                fill="var(--dashboard-chart-line)"
-                stroke="var(--dashboard-card-background)"
+                r="5"
+                fill="var(--chart-line)"
+                stroke="var(--surface-background)"
                 strokeWidth="2.5"
               />
             </g>
@@ -409,15 +444,15 @@ function TranslationTimelineChart({
             y1={paddingTop + plotHeight}
             x2={paddingLeft + plotWidth}
             y2={paddingTop + plotHeight}
-            stroke="var(--dashboard-chart-axis)"
-            strokeWidth="1.5"
+            stroke="var(--surface-border)"
+            strokeWidth="1"
           />
 
           {xGridLines.map(gridLine => (
             <text
               key={gridLine.date}
               x={gridLine.x}
-              y={paddingTop + plotHeight + 24}
+              y={paddingTop + plotHeight + 22}
               textAnchor="middle"
               className="chart-axis-text">
               {formatDateLabel(gridLine.date, isHebrew)}
@@ -489,7 +524,7 @@ function MasechetRow({
 
   if (masechet.completePages === masechet.totalPages && masechet.totalPages > 0) {
     badgeClass = "masechet-completion-badge badge-complete";
-    badgeText = isHebrew ? "הושלם 100%" : "100% Complete";
+    badgeText = isHebrew ? "100% הושלם" : "100% Complete";
   } else if (masechet.completePages > 0 || masechet.partialPages > 0) {
     badgeClass = "masechet-completion-badge badge-in-progress";
     badgeText = `${masechet.percentCompletePages}%`;
@@ -533,21 +568,23 @@ function MasechetRow({
           <span className="page-count-complete">
             {masechet.completePages} {isHebrew ? "הושלמו" : "complete"}
           </span>
-          <span>&bull;</span>
+          <span className="page-count-divider">&bull;</span>
           <span className="page-count-partial">
             {masechet.partialPages} {isHebrew ? "חלקי" : "partial"}
           </span>
-          <span>&bull;</span>
+          <span className="page-count-divider">&bull;</span>
           <span className="page-count-to-go">
             {masechet.notStartedPages} {isHebrew ? "נותרו" : "to go"}
           </span>
-          <span>&bull;</span>
+          <span className="page-count-divider">&bull;</span>
           <span>
-            {masechet.totalPages} {isHebrew ? "דפים סה״כ" : "total pages"}
+            {masechet.totalPages} {isHebrew ? "דפים סה״כ" : "pages total"}
           </span>
-          <span>&bull;</span>
+          <span className="page-count-divider">&bull;</span>
           <span>
-            {masechet.translatedComments.toLocaleString()} / {masechet.totalComments.toLocaleString()} {isHebrew ? "פירושים" : "comments"} ({masechet.percentTranslatedComments}%)
+            {masechet.translatedComments.toLocaleString()} /{" "}
+            {masechet.totalComments.toLocaleString()}{" "}
+            {isHebrew ? "פירושים" : "comments"} ({masechet.percentTranslatedComments}%)
           </span>
         </div>
 
@@ -694,13 +731,17 @@ function TranslationProgressDashboard({
 
       <div className={`translation-dashboard-container ${containerThemeClass}`} dir={isHebrew ? "rtl" : "ltr"}>
         <div className="translation-dashboard-header">
+          <div className="translation-dashboard-badge">
+            <span className="metric-pill" />
+            <span>Talmud Bavli Project</span>
+          </div>
           <h1 className="translation-dashboard-title">
             {isHebrew ? "התקדמות תרגום רש״י ותוספות" : "Rashi & Tosafot Translation Progress"}
           </h1>
           <p className="translation-dashboard-subtitle">
             {isHebrew
-              ? "מעקב אחר התקדמות תרגום פירושי רש״י ותוספות לתלמוד בבלי לאנגלית"
-              : "Tracking English translation completion across Talmud Bavli"}
+              ? "מעקב מקיף אחר השלמת תרגום פירושי רש״י ותוספות לש״ס בבלי לאנגלית"
+              : "Comprehensive tracking of English translations across Talmud Bavli"}
           </p>
         </div>
 
@@ -730,7 +771,7 @@ function TranslationProgressDashboard({
               <input
                 type="text"
                 className="search-input"
-                placeholder={isHebrew ? "חפש מסכת..." : "Search tractate..."}
+                placeholder={isHebrew ? "חפש מסכת..." : "Search tractate by name..."}
                 value={searchQuery}
                 onChange={event => setSearchQuery(event.target.value)}
               />
