@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Translation Progress | talmud.page</title>
+  {% include "header_common.html" %}
+  <link rel="stylesheet" href="../css/translation_progress.css" />
+  <script id="translation-progress-data" type="application/json">
+    {{ translationProgressJson | safe }}
+  </script>
+  <script src="../js/translation_progress.tsx"></script>
+</head>
+<body>
+  <div id="main-contents">
+  </div>
+</body>
+</html>

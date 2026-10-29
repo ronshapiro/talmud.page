@@ -33,6 +33,7 @@ import {getWeekdayReading} from "./weekday_parshiot";
 import {registerCalendarRoutes} from "./calendars";
 import {formatListEnglish, formatListHebrew} from "./util/formatting";
 import {openReviewDecisionPr} from "./rsi_review_pr";
+import {getTranslationProgress} from "./precomputed/translation_progress_data";
 
 const app = express();
 const debug = app.settings.env === "development";
@@ -265,6 +266,18 @@ for (const alias of ["/mishna-yomi", "/mishnah-yomi", "/mishnah-yomit"]) {
 }
 app.get("/yomi", (req, res) => res.redirectWithQueryParameters("/daf-yomi"));
 app.get("/last", (req, res) => res.render("last_redirecter.html"));
+app.get("/translation-progress", (request, response) => {
+  const progressData = getTranslationProgress();
+  return response.render("translation_progress.html", {
+    translationProgressJson: JSON.stringify(progressData),
+  });
+});
+app.get("/translation-dashboard", (request, response) => {
+  return response.redirectWithQueryParameters("/translation-progress");
+});
+app.get("/api/translation-progress", (request, response) => {
+  return response.json(getTranslationProgress());
+});
 
 class PagesDontExistError extends Error {
   messageHebrew: string;
