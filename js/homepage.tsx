@@ -54,12 +54,10 @@ function FooterInfo() {
       <p style={{textAlign: "center", marginTop: "40px"}}>
         <span className="lang-english">
           <a href="/browse">Browse Titles</a> &bull;&nbsp;
-          <a href="/translation-progress">Translation Progress</a> &bull;&nbsp;
           <a href="mailto:feedback@talmud.page">Feedback</a>
         </span>
         <span className="lang-hebrew">
           <a href="/browse">חפש ספר</a> &bull;&nbsp;
-          <a href="/translation-progress">התקדמות התרגום</a> &bull;&nbsp;
           <a href="mailto:feedback@talmud.page">משוב</a>
         </span>
       </p>
