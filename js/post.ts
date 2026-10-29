@@ -9,7 +9,7 @@ export function extractErrorMessage(errorResponse: unknown): string | undefined 
     return errorResponse;
   }
   const errorObject = errorResponse as Record<string, any>;
-  const {responseJSON} = errorObject;
+  const {responseJSON, responseText, statusText, message, status} = errorObject;
   if (typeof responseJSON?.error === "string") {
     return responseJSON.error;
   }
@@ -19,20 +19,20 @@ export function extractErrorMessage(errorResponse: unknown): string | undefined 
   if (typeof responseJSON?.message === "string") {
     return responseJSON.message;
   }
-  if (typeof errorObject.responseText === "string") {
-    const trimmedText = errorObject.responseText.trim();
+  if (typeof responseText === "string") {
+    const trimmedText = responseText.trim();
     if (trimmedText && !trimmedText.startsWith("<")) {
       return trimmedText;
     }
   }
-  if (typeof errorObject.statusText === "string" && errorObject.statusText !== "error") {
-    return errorObject.statusText;
+  if (typeof statusText === "string" && statusText !== "error") {
+    return statusText;
   }
-  if (typeof errorObject.message === "string") {
-    return errorObject.message;
+  if (typeof message === "string") {
+    return message;
   }
-  if (errorObject.status) {
-    return `HTTP ${errorObject.status}`;
+  if (status) {
+    return `HTTP ${status}`;
   }
   return undefined;
 }
