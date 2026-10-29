@@ -1,0 +1,445 @@
+{
+  "Rashi on Berakhot 12a:10:1": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Berakhot 12a:2",
+      "Rashi on Berakhot 12a:5:1",
+      "Rashi on Berakhot 12a:13:1",
+      "Rashi on Berakhot 12a:18:1",
+      "Rashi on Berakhot 12a:20:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 12a:10:1",
+      "Rashi on Berakhot 11b:10:1",
+      "Rashi on Berakhot 11b:20:5",
+      "Berakhot 40a:12"
+    ],
+    "generatedAt": "2026-10-28T08:53:57.193Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 12a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פתח בדשכרא וסיים בדחמרא</strong> – תחלת הברכה אמר ע\"מ שהכל וכיון שהגיע למלך העולם נזכר שהוא יין ואמר פרי הגפן פשיטא לן דיצא דהא אפילו סיים כל הברכה כדעת פתיחתה ואמר שהכל יצא על היין דתנן וכו':"
+  },
+  "Rashi on Berakhot 12a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T08:55:26.475Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 12a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא</strong> – קא מבעיא לן פתח אדעתא דחמרא כדי לסיים בפה\"ג וכשהגיע למלך העולם נזכר שהוא שכר וסיים שהכל מהו:"
+  },
+  "Rashi on Berakhot 12a:12:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 12a:12:1",
+      "Rashi on Berakhot 12a:11:1",
+      "Rashi on Berakhot 12a:13:1",
+      "Steinsaltz on Berakhot 12a:12:1",
+      "Steinsaltz on Berakhot 12a:12"
+    ],
+    "generatedAt": "2026-10-28T09:02:53.468Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 12a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתר עיקר ברכה אזלינן</strong> – ועיקר ברכה אדעתא דיין נאמרה והוי כמו שסיים ביין ואין ברכת היין מוציאה ידי ברכת שכר שאין השכר מן הגפן:"
+  },
+  "Rashi on Berakhot 12a:13:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 12a:13:1",
+      "Rashi on Berakhot 12a:13:2",
+      "Rashi on Berakhot 12a:16:1"
+    ],
+    "generatedAt": "2026-10-28T09:05:22.088Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 12a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פתח ביוצר אור</strong> – כלומר אדעתא דלימא יוצר אור:"
+  },
+  "Rashi on Berakhot 12a:13:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 12a:13:1",
+      "Berakhot 12a:10",
+      "Berakhot 12a:11",
+      "Berakhot 12a:12",
+      "Rashi on Berakhot 12a:11:1",
+      "Berakhot 12a:14",
+      "Berakhot 12a:15",
+      "Berakhot 12a:16",
+      "Rashi on Berakhot 12a:16:1",
+      "Steinsaltz on Berakhot 12a:13",
+      "Shulchan Arukh, Orach Chayim 59:2",
+      "Rashi on Berakhot 12a:1:1",
+      "Rashi on Berakhot 12a:5:1",
+      "Rashi on Berakhot 12a:5:2",
+      "Rashi on Berakhot 12a:5:3",
+      "Rashi on Berakhot 12a:10:1",
+      "Tosafot on Berakhot 12a:11:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 11b:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:4:1",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Berakhot 3a:1:1"
+    ],
+    "generatedAt": "2026-10-28T09:09:22.593Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 12a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וסיים במעריב ערבים</strong> – כשאמר מלך העולם נזכר וסיים אשר בדברו מעריב ערבים:"
+  },
+  "Rashi on Berakhot 12a:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T09:12:37.168Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 12a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאני התם וכו'</strong> – כלומר דלמא פתיחה אינה כלום והא דקתני יצא לפי שחוזר וחותם בה בברוך יוצר המאורות וע\"י חתימתה קאמר דיצא אלא שהכל שאין חותם בה בברוך ופתיחתה אדעתא דבורא פרי הגפן הוא אימא דלא יצא:"
+  },
+  "Rashi on Berakhot 12a:17:1": {
+    "dependsOn": [
+      "Berakhot 12a:17",
+      "Rashi on Berakhot 12a:16:1",
+      "Rashi on Berakhot 12a:1:1"
+    ],
+    "generatedAt": "2026-10-28T09:15:17.056Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 12a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי איכא למימר</strong> – היכי נפיק משום חתימתה הא אין מלכות בחתימתה:"
+  },
+  "Rashi on Berakhot 12a:18:1": {
+    "dependsOn": [
+      "Berakhot 12a:18",
+      "Rashi on Berakhot 12a:16:1",
+      "Rashi on Berakhot 12a:17:1",
+      "Rashi on Berakhot 12a:18:1",
+      "Rashi on Pesachim 2a:2:1",
+      "Rashi on Berakhot 12a:10:1",
+      "Rashi on Berakhot 12a:12:1",
+      "Rashi on Berakhot 12a:13:1",
+      "Rashi on Berakhot 12a:13:2",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3"
+    ],
+    "generatedAt": "2026-10-28T09:23:30.856Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 12a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג אלא כיון דאמר כו'</strong> – אלא לא תימא משום חתימתה יצא אלא פתיחתה נמי מעלייתא היא ולא תפשוט מיניה לחמרא ושכרא דלגבי ברכות ערבית ושחרית הוא דמצי למימר דכי פתח בזו וסיים בזו יצא דהא כי פתח בשחרית אדעתא דמעריב ערבים הוה דעתיה לאדכורי בה מדת היום בלילה כגון גולל אור וכי פתח ערבית אדעתא דיוצר אור הוה דעתיה לאדכורי בה מדת לילה כגון ובורא חשך הלכך אדעתא דתרוייהו הויא:"
+  },
+  "Rashi on Berakhot 12a:19:1": {
+    "dependsOn": [
+      "Berakhot 12a:19",
+      "Berakhot 12a:14",
+      "Rashi on Berakhot 12a:19:1",
+      "Rashi on Berakhot 12a:18:1",
+      "Rashi on Berakhot 12a:20:1",
+      "Rashi on Berakhot 12a:3:1"
+    ],
+    "generatedAt": "2026-10-28T09:27:19.328Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 12a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאו לאתויי הא דאמרן</strong> – כגון שכרא וחמרא:"
+  },
+  "Rashi on Berakhot 12a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T08:24:45.524Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 12a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אי אמרת</strong> – הך ברכה דקאמרי אהבה רבה היכי ש\"מ דאין מעכבות זו את זו דלמא האי דלא אמרי יוצר אור משום דלא מטא זמניה הוא וכי מטא זמניה אמרי לה ואע\"ג דקרו אינהו ק\"ש לא מטא זמניה כדאמרינן בעלמא <span class=\"parenthesized\">(יומא לז:)</span> הקורא את שמע עם אנשי משמר לא יצא שאנשי משמר מקדימין:"
+  },
+  "Rashi on Berakhot 12a:20:1": {
+    "dependsOn": [
+      "Berakhot 12a:20"
+    ],
+    "generatedAt": "2026-10-28T09:29:49.684Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 12a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היינו בעיין</strong> – דהא ברכת התמרים על העץ ועל פרי העץ אינה עולה לברכת הלחם ואי בהא פשטת דהכל הולך אחר חתום ברכות הוא הדין לחמרא ושכרא:"
+  },
+  "Rashi on Berakhot 12a:23:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 12a:23:2",
+      "Berakhot 12a:23",
+      "Tosafot on Berakhot 12a:23:1",
+      "Steinsaltz on Berakhot 12a:23"
+    ],
+    "generatedAt": "2026-10-28T09:38:31.411Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 12a:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל מי</strong> – שלא אמר ברכת אמת ויציב כמו שתקנוה וכן אמת ואמונה בערבית לא יצא:"
+  },
+  "Rashi on Berakhot 12a:23:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 12a:23:1",
+      "Steinsaltz on Berakhot 12a:23",
+      "Tosafot on Berakhot 12a:23:1",
+      "Tosafot on Berakhot 12a:23:2"
+    ],
+    "generatedAt": "2026-10-28T09:43:53.286Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 12a:23:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנא' להגיד בבקר חסדך</strong> – וברכת אמת ויציב כולה על חסד שעשה עם אבותינו היא שהוציאם ממצרים ובקע להם הים והעבירם וברכת אמת ואמונה מדבר בה אף על העתידות שאנו מצפים שיקיים לנו הבטחתו ואמונתו לגאלנו מיד מלכים ומיד עריצים ולשום נפשנו בחיים ולהדריכנו על במות אויבינו כל אלה הנסים התדירים תמיד:"
+  },
+  "Rashi on Berakhot 12a:24:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 12a:24:1",
+      "Berakhot 12a:24",
+      "Rashi on Berakhot 12a:26:1",
+      "Rashi on Berakhot 12a:1:1",
+      "Rashi on Berakhot 12a:2:1",
+      "Rashi on Berakhot 12a:3:1",
+      "Rashi on Berakhot 12a:5:1"
+    ],
+    "generatedAt": "2026-10-28T09:53:59.417Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 12a:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשהוא כורע</strong> – באבות ובהודאה כורע בברוך וזוקף את עצמו כשהוא מזכיר את השם על שם ה' זוקף כפופים <span class=\"parenthesized\">(תהילים קמ״ו:ח׳)</span>:"
+  },
+  "Rashi on Berakhot 12a:26:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T09:55:19.985Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 12a:26:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נחת</strong> – לשון הכנעה:"
+  },
+  "Rashi on Berakhot 12a:2:1": {
+    "dependsOn": [
+      "Berakhot 12a:2",
+      "Berakhot 12a:1",
+      "Steinsaltz on Berakhot 12a:2"
+    ],
+    "generatedAt": "2026-10-28T08:32:19.652Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 12a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי מכללא מאי</strong> – וכי אמר ליה מכללא מאי גריעותא איכא. דאמר לאו בפירוש אתמר הא שפיר מצי למשמע מכללא דיוצר אור קא אמרי ומשנינן ליכא למשמע מהכא דילמא לעולם אימא לך אהבה רבה וכו':"
+  },
+  "Rashi on Berakhot 12a:3:1": {
+    "dependsOn": [
+      "Berakhot 12a:3",
+      "Rashi on Berakhot 12a:3:1",
+      "Rashi on Berakhot 12a:1:1",
+      "Steinsaltz on Berakhot 12a:3"
+    ],
+    "generatedAt": "2026-10-28T08:35:22.739Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 12a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סדר ברכות</strong> – אם הקדים המאוחרות:"
+  },
+  "Rashi on Berakhot 12a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T08:35:57.612Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 12a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בקשו</strong> – לקבוע עשרת הדברות בקריאת שמע:"
+  },
+  "Rashi on Berakhot 12a:5:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 12a:5:2",
+      "Rashi on Berakhot 12a:5:1",
+      "Rashi on Berakhot 12a:5:3",
+      "Rashi on Berakhot 12a:2:1",
+      "Rashi on Berakhot 12a:3:1",
+      "Rashi on Berakhot 12a:10:1",
+      "Rashi on Berakhot 11b:1:1",
+      "Rashi on Berakhot 11b:2:1"
+    ],
+    "generatedAt": "2026-10-28T08:41:27.173Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 12a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני תרעומת המינין</strong> – שלא יאמרו לעמי הארץ אין שאר תורה אמת ותדעו שאין קורין אלא מה שאמר הקדוש ב\"ה ושמעו מפיו בסיני:"
+  },
+  "Rashi on Berakhot 12a:5:3": {
+    "dependsOn": [
+      "Rashi on Berakhot 12a:5:1",
+      "Rashi on Berakhot 12a:5:2",
+      "Rashi on Berakhot 12a:5:3",
+      "Berakhot 12a:5",
+      "Jastrow, תַּרְעוֹמֶת 1",
+      "Steinsaltz on Berakhot 12a:5"
+    ],
+    "generatedAt": "2026-10-28T08:44:10.184Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 12a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המינין</strong> – עכו\"ם:"
+  },
+  "Tosafot on Berakhot 12a:11:1": {
+    "dependsOn": [
+      "Tosafot on Berakhot 12a:11:1",
+      "Rashi on Berakhot 12a:11:1",
+      "Chokhmat Shlomo on Berakhot 12a:1",
+      "Tosafot on Berakhot 12a:9:1",
+      "Tosafot on Berakhot 12a:20:1",
+      "Rashba on Berakhot 12a:10:1",
+      "Ritva on Berakhot 12a:10:1",
+      "Steinsaltz on Berakhot 12a:11",
+      "Steinsaltz comment #1 on Berakhot 12a:11",
+      "Tosafot on Berakhot 12a:1:1",
+      "Tosafot on Berakhot 12a:23:1",
+      "Tosafot on Berakhot 12a:23:2",
+      "Berakhot 12a:11",
+      "Berakhot 12a:10",
+      "Berakhot 12a:17"
+    ],
+    "generatedAt": "2026-10-28T09:01:02.337Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 12a:11:1"
+    ],
+    "sourceText": "פתח ואמר בא\"י אלהינו מלך העולם והיה סבור שהיה יין והבין שהיה שכר ואחר שהבין שהיה שכר סיים שהכל:"
+  },
+  "Tosafot on Berakhot 12a:1:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 12a:1:1",
+      "Berakhot 12a:1",
+      "Rashi on Berakhot 11b:22:1",
+      "Rashi on Berakhot 11b:22:2",
+      "Rashi on Berakhot 11b:22:3",
+      "Torah Temimah on Torah, Exodus 30:7:4",
+      "Rashi on Yoma 37b:3:1",
+      "Tosafot on Berakhot 9b:13:1",
+      "Ritva on Berakhot 12a:1",
+      "Rosh on Berakhot 12a:1",
+      "Steinsaltz on Berakhot 12a:1",
+      "Versions on Berakhot 12a:1",
+      "Yoma 37b:3",
+      "Yoma 37b:4",
+      "Yoma 37b:5",
+      "Yoma 37b:1",
+      "Yoma 37b:2",
+      "Rashi on Berakhot 11b:20:2",
+      "Rashi on Berakhot 11b:20:3",
+      "Rashi on Berakhot 11b:20:4",
+      "Rashi on Berakhot 11b:20:5"
+    ],
+    "generatedAt": "2026-10-28T08:30:20.126Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 12a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום דלא מטא זמן יוצר אור</strong> - דנהי דשחיטת התמיד משיעלה עמוד השחר פי' רש\"י מיהו לא הוה שעה לומר יוצר אור כדאמרי' הקורא כו' ויכול לסבור הברייתא כותיקין:"
+  },
+  "Tosafot on Berakhot 12a:20:1": {
+    "dependsOn": [
+      "Berakhot 12a:20",
+      "Berakhot 12a:17",
+      "Tosafot on Berakhot 12a:11:1",
+      "Gilyon HaShas on Berakhot 12a:1",
+      "Gilyon HaShas on Berakhot 12a:2",
+      "Tosafot on Berakhot 12a:1:1",
+      "Tosafot on Berakhot 12a:9:1",
+      "Tosafot on Berakhot 12a:23:1",
+      "Tosafot on Berakhot 12a:23:2",
+      "Tosafot on Berakhot 11b:10:1",
+      "Tosafot on Berakhot 2a:1:1",
+      "Rosh on Berakhot 12a:24:1",
+      "Rosh on Berakhot 1:15:1",
+      "Rosh on Berakhot 1:14:1",
+      "Rashba on Berakhot 12a:1"
+    ],
+    "generatedAt": "2026-10-28T09:36:41.104Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 12a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא לאתויי נהמא</strong> - ופירש רב אלפס השתא דלא אפשיטא בעיין אזלינן לקולא ואפילו פתח בחמרא וסיים בשכרא יצא. ור\"י הי' אומר לחומרא דצריך לברך פעם אחרת. ומיהו היה אומר ר\"ח אם היה יודע בבירור שטעה בדבורו שאמר בורא פרי העץ תחת <span class=\"parenthesized\">(בורא)</span> פרי הגפן דבתוך כדי דבור יכול לחזור בו. וכן בי\"ט בחתימה של יום טוב אם טעה בין מקדש ישראל והזמנים ואמר מקדש השבת וחזר בתוך כדי דבור יצא אחרי שהוא יודע שהוא י\"ט. והקשה הר\"ר יעקב מקינון מאי קא מבעיא ליה והא ודאי מצות אינן צריכות כוונה. והיה אומר הר\"י דהיינו בשומע תפלה אחורי בית הכנסת ולא נתכוין לצאת. אבל היכא דנתכוין לברך על היין ונמצא שכר לא מהני:"
+  },
+  "Tosafot on Berakhot 12a:23:1": {
+    "dependsOn": [
+      "Tosafot on Berakhot 12a:23:2",
+      "Steinsaltz comment #1 on Berakhot 12a:23",
+      "Steinsaltz comment #2 on Berakhot 12a:23",
+      "Shulchan Arukh, Orach Chayim 66:10"
+    ],
+    "generatedAt": "2026-10-28T09:48:53.058Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 12a:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמת ויציב וכו'</strong> - לא קאי על השכינה אלא קאי אהדבר הזה וכו'. וכן איתא בהר\"ם. ואיתא בירושלמי האי מרגניתא דלית ביה טימא פירוש שאין לה שומא כל מה שמשבח מתגני לה כדאמר לקמן <span class=\"parenthesized\">(ברכות ד' לג ב)</span> בחד דפתח ואמר האל הגדול הגבור והנורא והיה מאריך הרבה וא\"ל ר' חנינא סיימת לשבחי דמרך כי כל פה לא יוכל לספר שבחו:"
+  },
+  "Tosafot on Berakhot 12a:23:2": {
+    "dependsOn": [
+      "Tosafot on Berakhot 12a:23:1"
+    ],
+    "generatedAt": "2026-10-28T09:51:26.772Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 12a:23:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להגיד בבקר חסדך</strong> - חסד שהקדוש ב\"ה עשה לנו במצרים. ואמונתך פי' מדבר על העתיד שאנו מצפים שישמור הבטחתו ואמונתו ויגאלנו מיד המלכים ובסוף ברכה חוזר לגאולה דפרעה כדי לסמוך לגאל ישראל. א\"נ ע\"ד המדר' <span class=\"parenthesized\">(רבה איכה ג)</span> חדשים לבקרים רבה אמונתך שאדם מאמין ומפקיד רוחו בידו ומחזירה בלא יגיעה:"
+  },
+  "Tosafot on Berakhot 12a:9:1": {
+    "dependsOn": [
+      "Steinsaltz comment #1 on Berakhot 12a:9",
+      "Chidushei Agadot on Berakhot 12a:1",
+      "Steinsaltz on Berakhot 12a:9",
+      "Tosafot on Berakhot 12a:1:1",
+      "Berakhot 12a:17"
+    ],
+    "generatedAt": "2026-10-28T08:50:00.920Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 12a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ברכה אחת למשמר היוצא וכו'</strong> - תימא קצת מאי היא הואיל ולית בה לא שם ולא מלכות:"
+  }
+}

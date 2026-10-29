@@ -43,6 +43,47 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">לדידי לא סבירא לי</strong> – לא הייתי מזקיקו להפסיק:"
   },
+  "Rashi on Berakhot 24b:1:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 24b:1:1",
+      "Berakhot 24b:1",
+      "Rashi on Berakhot 24b:1:2",
+      "Rashi on Berakhot 24b:1:3"
+    ],
+    "generatedAt": "2026-10-29T05:08:29.573Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 24b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וממשמש בבגדו</strong> – להעביר הכינה העוקצתו:"
+  },
+  "Rashi on Berakhot 24b:1:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 24b:1:2"
+    ],
+    "generatedAt": "2026-10-29T05:09:12.416Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 24b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל לא היה מתעטף</strong> – אם נפלה טליתו כשהוא מתפלל לא היה נוטלה ומתעטף שלא להפסיק:"
+  },
+  "Rashi on Berakhot 24b:1:3": {
+    "dependsOn": [
+      "[",
+      "Rashi on Berakhot 24a:23:1",
+      "Rashi on Berakhot 24a:23:2"
+    ],
+    "generatedAt": "2026-10-29T05:12:05.223Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 24b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על סנטרו</strong> – מנטו\"ן בלע\"ז שלא תראה פתיחת פיו:"
+  },
   "Rashi on Berakhot 24b:20:1": {
     "dependsOn": [
       "Berakhot 24b:20",
@@ -114,6 +155,170 @@
       "Rashi on Berakhot 24b:22:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">היתה טליתו חגורה על מתניו</strong> – לכסותו ממתניו ולמטה אע\"פ שממתניו ולמעלה הוא ערום קורא ק\"ש:"
+  },
+  "Rashi on Berakhot 24b:2:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 24b:2:1",
+      "Rashi on Berakhot 24b:2:2",
+      "Berakhot 24b:2",
+      "Steinsaltz on Berakhot 24b:2",
+      "Chidushei Agadot on Sotah 32b:1",
+      "Berakhot 24b:1",
+      "Peninei Halakhah, Prayer 17:7:5",
+      "Rashi on Berakhot 24b:1:1",
+      "Rashi on Berakhot 24b:1:2",
+      "Rashi on Berakhot 24b:1:3",
+      "Rashi on Berakhot 24b:3:1",
+      "Rashi on Berakhot 24b:4:1",
+      "Rashi on Berakhot 24b:5:1",
+      "Rashi on Berakhot 24b:5:2",
+      "Rashi on Berakhot 24b:5:3",
+      "Rashi on Berakhot 24b:5:4"
+    ],
+    "generatedAt": "2026-10-29T05:21:38.363Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 24b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי זה מקטני אמנה</strong> – כאילו אין הקב\"ה שומע תפלת לחש ומגביה הרבה:"
+  },
+  "Rashi on Berakhot 24b:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T05:22:59.825Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 24b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי זה מנביאי השקר</strong> – דכתיב ויקראו בקול גדול <span class=\"parenthesized\">(מלכים א י״ח:כ״ח)</span>:"
+  },
+  "Rashi on Berakhot 24b:3:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 24b:3:1",
+      "Berakhot 24b:3",
+      "Steinsaltz on Berakhot 24b:3",
+      "Berakhot 24b:5",
+      "Rashi on Berakhot 24b:4:1",
+      "Rashi on Berakhot 24b:5:1",
+      "Rashi on Berakhot 24b:5:2",
+      "Rashi on Berakhot 24b:5:3",
+      "Rashi on Berakhot 24b:1:1",
+      "Rashi on Berakhot 24b:1:2",
+      "Rashi on Berakhot 24b:1:3",
+      "Sefer HeArukh, Letter Peh 53",
+      "Rashi on Pesachim 2a:2:2",
+      "Pesachim 2a:2",
+      "Rashi on Berakhot 24a:1:1",
+      "Rashi on Berakhot 24a:2:1",
+      "Rashi on Berakhot 24a:3:1",
+      "Rashi on Berakhot 24a:4:1",
+      "Rashi on Berakhot 24a:5:1"
+    ],
+    "generatedAt": "2026-10-29T05:32:25.188Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 24b:3:1"
+    ],
+    "sourceText": "המגהק והמפהק הרי זה מגסי הרוח וי\"א ניכר שהוא מכוער גרסינן:"
+  },
+  "Rashi on Berakhot 24b:4:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 24b:4:1",
+      "Rashi on Berakhot 24b:1:1",
+      "Rashi on Berakhot 24b:2:1"
+    ],
+    "generatedAt": "2026-10-29T05:35:12.558Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 24b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא עטוש אעטוש קשיא</strong> – דאין עטוש אלא לאונסו:"
+  },
+  "Rashi on Berakhot 24b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T05:38:14.146Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 24b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למטה</strong> – מפיח בקול:"
+  },
+  "Rashi on Berakhot 24b:5:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 24b:5:1",
+      "Rashi on Berakhot 24b:5:2",
+      "Rashi on Berakhot 24b:5:3",
+      "Rashi on Berakhot 24b:5:4"
+    ],
+    "generatedAt": "2026-10-29T05:39:49.465Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 24b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותקילא לי כי כולי תלמודאי</strong> – שקולה עלי וחביבה לפי שהיה רגיל להתעטש:"
+  },
+  "Rashi on Berakhot 24b:5:3": {
+    "dependsOn": [
+      "Rashi on Berakhot 24b:5:1",
+      "Rashi on Berakhot 24b:5:2",
+      "Rashi on Berakhot 24b:5:3",
+      "Rashi on Berakhot 24b:5:4",
+      "Rashi on Berakhot 24a:1:1",
+      "Rashi on Berakhot 24a:2:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Steinsaltz on Berakhot 24b:5",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:4:1",
+      "Shulchan Arukh, Orach Chayim 103:3",
+      "Sefer HeArukh, Letter Ayin 101"
+    ],
+    "generatedAt": "2026-10-29T05:42:16.124Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 24b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשם שעושים לו נחת רוח</strong> – שהעטוש נחת רוח לאדם:"
+  },
+  "Rashi on Berakhot 24b:5:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T05:43:10.213Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 24b:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כך עושים לו נחת רוח מלמעלה</strong> – מן השמים למלאת שאלתו:"
+  },
+  "Rashi on Berakhot 24b:6:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 24b:6:1",
+      "Rashi on Berakhot 24b:6:2",
+      "Steinsaltz on Berakhot 24b:6",
+      "Steinsaltz comment #1 on Berakhot 24b:6",
+      "Steinsaltz comment #2 on Berakhot 24b:6",
+      "Berakhot 24b:6",
+      "Berakhot 24b:1",
+      "Rashi on Berakhot 24b:8:1",
+      "Rashi on Berakhot 24b:8:2",
+      "Rashi on Berakhot 24a:1:1",
+      "Rashi on Berakhot 24a:2:1",
+      "Rashi on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-10-29T05:49:58.637Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 24b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפשר כדרבי יהודה</strong> – להבליע באפרקסותו סודר שבראשו ושני ראשין תלויין בפניו:"
   },
   "Rashi on Berakhot 24b:6:2": {
     "dependsOn": [
@@ -445,6 +650,21 @@
       "Tosafot on Berakhot 24b:17:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">אמר ליה לדידי לא סבירא לי</strong> - פירוש משום תרתי מילי חדא דסבירנא דאינו חוזר לראש דאמר רבי יוחנן <span class=\"parenthesized\">(ר\"ה דף ל\"ד:)</span> שמע תשע תקיעות בתשע שעות יצא ועוד דסבירא לי מניח ידו על פיו ואם כן הוי ליה ראוי אלא לדידך דסבירא לך דחייב להפסיק וכו':"
+  },
+  "Tosafot on Berakhot 24b:1:1": {
+    "dependsOn": [
+      "Tosafot on Berakhot 24b:1:1",
+      "Rashi on Berakhot 24b:1:1",
+      "Rashi on Berakhot 24b:1:2",
+      "Berakhot 24b:1"
+    ],
+    "generatedAt": "2026-10-29T05:16:06.741Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 24b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וממשמש בבגדו</strong> - פרש\"י להעביר הכינה העוקצתו אבל לא מתעטף אם נפלה טליתו ותרי מילי נינהו. ור\"ח פי' דחדא מילתא היא פי' ממשמש בבגדו תקן שלא יפול מעל ראשו אבל אם נפל מעל ראשו לא היה מתעטף שהרי היא הפסקה אם מתעטף כיון שנפל לגמרי אבל לתקן קצת שלא יפול לא הוי הפסקה:"
   },
   "Tosafot on Berakhot 24b:20:1": {
     "dependsOn": [

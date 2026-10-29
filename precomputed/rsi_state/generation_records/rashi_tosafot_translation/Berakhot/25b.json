@@ -537,6 +537,16 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">תחת המטה</strong> – כאילו היו טמונים בארץ:"
   },
+  "Rashi on Berakhot 25b:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T05:54:04.360Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 25b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היכי קאמר</strong> – רשב\"ג:"
+  },
   "Rashi on Berakhot 25b:19:1": {
     "dependsOn": [
       "Berakhot 25b:16",
@@ -749,6 +759,16 @@
       "Rashi on Berakhot 25b:24:2"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">סכנתון לברי</strong> – כמעט סכנתם את בני למות בעונש העון:"
+  },
+  "Rashi on Berakhot 25b:25:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T05:54:49.655Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 25b:25:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפילו עשרה מאני</strong> – וכולן כליין כחד מאנא דמי:"
   },
   "Rashi on Berakhot 25b:2:1": {
     "dependsOn": [
@@ -984,6 +1004,27 @@
       "Rashi on Berakhot 25b:9:2"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">בכסוי תליא מילתא</strong> – וכסית את צאתך:"
+  },
+  "Tosafot on Berakhot 25b:16:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 25b:16:1",
+      "Translation on Tosafot on Berakhot 25b:16:1",
+      "Chidushei Halachot on Berakhot 25b:2",
+      "Rosh on Berakhot 3:54:1",
+      "Chokhmat Shlomo on Berakhot 25b:1",
+      "Tosafot on Berakhot 25b:16:2",
+      "Ritva on Berakhot 25b:6",
+      "Shulchan Arukh, Orach Chayim 87:1",
+      "Berakhot 25b:16",
+      "Steinsaltz comment #1 on Berakhot 25b:16"
+    ],
+    "generatedAt": "2026-10-29T05:53:12.311Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 25b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גרף של רעי</strong> - פי' רש\"י של חרס בלוע משמע לפירושו אבל כלי דלא בלע כגון זכוכית אפשר דשרי:"
   },
   "Tosafot on Berakhot 25b:16:2": {
     "dependsOn": [

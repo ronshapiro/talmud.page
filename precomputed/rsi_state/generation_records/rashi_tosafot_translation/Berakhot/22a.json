@@ -1,0 +1,669 @@
+{
+  "Rashi on Berakhot 22a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T21:28:34.524Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי הנך תלת סבי</strong> – וכולהו לקולא:"
+  },
+  "Rashi on Berakhot 22a:12:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 22a:11:1",
+      "Rashi on Berakhot 22a:13:1",
+      "Rashi on Berakhot 22a:4:1",
+      "Rashi on Berakhot 22a:8:1",
+      "Steinsaltz on Berakhot 22a:12"
+    ],
+    "generatedAt": "2026-10-28T21:31:18.118Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינו נוהג אלא בארץ</strong> – בשחיטת חולין יליף טעמא בפרק הזרוע:"
+  },
+  "Rashi on Berakhot 22a:13:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 22a:13:1"
+    ],
+    "generatedAt": "2026-10-28T21:32:22.861Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חטה ושעורה וחרצן</strong> – שלשתן במפולת יד דהוו להו כלאי זרעים וכלאי הכרם כאחת:"
+  },
+  "Rashi on Berakhot 22a:15:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 22a:15:1",
+      "Rashi on Berakhot 22a:9:2"
+    ],
+    "generatedAt": "2026-10-28T21:34:57.284Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לטבילותא</strong> – דבעלי קריין:"
+  },
+  "Rashi on Berakhot 22a:16:1": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Berakhot 22a:1"
+    ],
+    "generatedAt": "2026-10-28T21:36:03.871Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חד תני</strong> – בבן עזאי לחשה לתלמידים:"
+  },
+  "Rashi on Berakhot 22a:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T21:36:45.240Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום בטול פריה ורביה</strong> – שהיו נמנעים מתשמיש מפני טורח הטבילה:"
+  },
+  "Rashi on Berakhot 22a:18:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 22a:18:2",
+      "Berakhot 22a:18",
+      "Rashi on Berakhot 22a:16:1",
+      "Rashi on Berakhot 22a:19:1",
+      "Rashi on Berakhot 22a:21:2"
+    ],
+    "generatedAt": "2026-10-28T21:38:31.776Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמקילין בה</strong> – במרחצאות או בנתינת תשעה קבין:"
+  },
+  "Rashi on Berakhot 22a:18:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 22a:18:1",
+      "Rashi on Berakhot 22a:15:1",
+      "Rashi on Berakhot 22a:16:1",
+      "Rashi on Berakhot 22a:17:1",
+      "Berakhot 22b:3",
+      "Steinsaltz on Berakhot 22a:18",
+      "Steinsaltz comment #1 on Berakhot 22a:18",
+      "Steinsaltz comment #2 on Berakhot 22a:18",
+      "Ritva on Berakhot 22a:10"
+    ],
+    "generatedAt": "2026-10-28T21:41:53.057Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמחמירין בה</strong> – בארבעים סאה:"
+  },
+  "Rashi on Berakhot 22a:19:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 22a:19:1",
+      "Rashi on Berakhot 22a:19:2",
+      "Rashi on Berakhot 22a:19:3",
+      "Rashi on Berakhot 22a:18:2",
+      "Steinsaltz on Berakhot 22a:19"
+    ],
+    "generatedAt": "2026-10-28T21:44:38.493Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">של טובלי שחרין</strong> – בעלי קריין הטובלין שחרית:"
+  },
+  "Rashi on Berakhot 22a:19:2": {
+    "dependsOn": [
+      "Berakhot 22a:19",
+      "Rashi on Berakhot 22a:19:1",
+      "Rashi on Berakhot 22a:19:3",
+      "Steinsaltz on Berakhot 22a:19"
+    ],
+    "generatedAt": "2026-10-28T21:51:05.484Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא איהו אמר כו'</strong> – לעיל בריש שמעתין:"
+  },
+  "Rashi on Berakhot 22a:19:3": {
+    "dependsOn": [
+      "Rashi on Berakhot 22a:19:1",
+      "Rashi on Berakhot 22a:19:2",
+      "Berakhot 22a:19",
+      "Rashi on Berakhot 22a:18:1",
+      "Rashi on Berakhot 22a:18:2",
+      "Rashi on Berakhot 22a:20:1",
+      "Rashi on Berakhot 22a:20:2",
+      "Rashi on Berakhot 22a:6:1",
+      "Rashi on Berakhot 22a:6:2",
+      "Rashi on Berakhot 22a:8:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Steinsaltz on Berakhot 22a:19:1"
+    ],
+    "generatedAt": "2026-10-28T21:54:28.557Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:19:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפשר בנתינה</strong> – תשעה קבין ואף על גב דלא תנא לקמן אלא בחולה סתם תלמידי חכמים חולים הם כדאמר במסכת נדרים <span class=\"parenthesized\">(דף מט:)</span> כמאן מצלינן אקצירי ואמריעי כרבי יוסי. קצירי חולין מריעי רבנן:"
+  },
+  "Rashi on Berakhot 22a:1:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 22a:1:1",
+      "Berakhot 22a:1",
+      "Berakhot 20b:16"
+    ],
+    "generatedAt": "2026-10-28T20:50:16.086Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא תימא</strong> – במתני' מברך אלא מהרהר:"
+  },
+  "Rashi on Berakhot 22a:20:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 22a:20:1",
+      "Rashi on Berakhot 22a:20:2",
+      "Rashi on Berakhot 22a:19:1",
+      "Rashi on Berakhot 22a:18:1",
+      "Rashi on Berakhot 22a:17:1",
+      "Rashi on Berakhot 22a:1:1",
+      "Rashi on Berakhot 22a:3:1",
+      "Rashi on Berakhot 22a:4:1",
+      "Rashi on Berakhot 22a:5:1",
+      "Rashi on Berakhot 21b:1:1",
+      "Rashi on Berakhot 21b:2:1"
+    ],
+    "generatedAt": "2026-10-28T21:56:30.520Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גדר גדול גדרו</strong> – במה שהצריכו בארבעים סאה:"
+  },
+  "Rashi on Berakhot 22a:20:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 22a:20:1",
+      "Rashi on Berakhot 22a:20:2",
+      "Steinsaltz on Berakhot 22a:20"
+    ],
+    "generatedAt": "2026-10-28T21:58:00.096Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:20:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתבע אשה</strong> – אותה אשה פנויה היתה וחכמים גזרו על היחוד אף על הפנויה:"
+  },
+  "Rashi on Berakhot 22a:21:1": {
+    "dependsOn": [
+      "Berakhot 22a:21",
+      "Rashi on Berakhot 22a:21:1",
+      "Rashi on Berakhot 22a:21:2",
+      "Rashi on Berakhot 22a:3:1",
+      "Rashi on Berakhot 22a:4:1",
+      "Rashi on Berakhot 22a:5:1",
+      "Rashi on Berakhot 22a:1:1",
+      "Rashi on Berakhot 22a:6:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Berakhot 22a:15",
+      "Berakhot 22a:16",
+      "Rashi on Berakhot 22a:15:1",
+      "Berakhot 22a:17",
+      "Rashi on Berakhot 22a:17:1",
+      "Steinsaltz on Berakhot 22a:21",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:4:1",
+      "Rashi on Berakhot 2a:5:1",
+      "Rashi on Berakhot 2a:7:1",
+      "Rashi on Berakhot 2a:9:1"
+    ],
+    "generatedAt": "2026-10-28T22:01:44.784Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אתם מזלזלים</strong> – לנהוג כרבי יהודה בן בתירא:"
+  },
+  "Rashi on Berakhot 22a:21:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 22a:21:2",
+      "Rashi on Berakhot 22a:21:1",
+      "Steinsaltz on Berakhot 22a:21"
+    ],
+    "generatedAt": "2026-10-28T22:04:18.700Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:21:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפשר במרחצאות</strong> – חמין:"
+  },
+  "Rashi on Berakhot 22a:22:1": {
+    "dependsOn": [
+      "Berakhot 22a:22",
+      "Rashi on Berakhot 22a:21:1",
+      "Rashi on Berakhot 22a:21:2",
+      "Rashi on Berakhot 22a:22:1",
+      "Rashi on Berakhot 22a:20:1",
+      "Rashi on Berakhot 22a:20:2",
+      "Rashi on Berakhot 22a:23:1",
+      "Rashi on Berakhot 22a:1:1",
+      "Rashi on Berakhot 22a:3:1",
+      "Rashi on Berakhot 22a:3:2",
+      "Rashi on Berakhot 20b:12:1",
+      "Rashi on Pesachim 2a:1:2",
+      "Steinsaltz on Berakhot 22a:22",
+      "Steinsaltz comment #1 on Berakhot 22a:22"
+    ],
+    "generatedAt": "2026-10-28T22:08:38.245Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קאי כוותך</strong> – דבעי טבילה זו במקוה כשאר טבילות:"
+  },
+  "Rashi on Berakhot 22a:23:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 22a:23:1",
+      "Rashi on Berakhot 22a:23:2",
+      "Rashi on Berakhot 22a:1:1",
+      "Rashi on Berakhot 22a:3:1",
+      "Rashi on Berakhot 22a:3:2",
+      "Rashi on Berakhot 22a:4:1",
+      "Rashi on Berakhot 22a:5:1",
+      "Rashi on Berakhot 21b:1:1",
+      "Rashi on Berakhot 21b:2:1",
+      "Rashi on Berakhot 21b:3:1",
+      "Rashi on Berakhot 21b:19:3",
+      "Rashi on Berakhot 22a:9:2",
+      "Rashi on Berakhot 22a:8:1",
+      "Rashi on Berakhot 22a:24:1",
+      "Rashi on Berakhot 22a:24:2",
+      "Rashi on Berakhot 22a:24:3",
+      "Steinsaltz on Berakhot 22a:23"
+    ],
+    "generatedAt": "2026-10-28T22:13:54.028Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באגנא דמיא</strong> – גיגית:"
+  },
+  "Rashi on Berakhot 22a:23:2": {
+    "dependsOn": [
+      "Berakhot 22a:23",
+      "Rashi on Berakhot 22a:23:1",
+      "Rashi on Berakhot 22a:23:2",
+      "Rashi on Berakhot 22a:24:1",
+      "Berakhot 22a:9",
+      "Rashi on Berakhot 22a:9:1",
+      "Rashi on Berakhot 22a:9:2",
+      "Berakhot 22a:11",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3"
+    ],
+    "generatedAt": "2026-10-28T22:17:43.381Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:23:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נראה בעיני דה\"ג א\"ר אלעאי הלכה כו'</strong> – ולא גרסינן מסייע ליה:"
+  },
+  "Rashi on Berakhot 22a:24:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 22a:24:1",
+      "Rashi on Berakhot 22a:24:2",
+      "Rashi on Berakhot 22a:24:3",
+      "Rashi on Berakhot 22a:1:1",
+      "Rashi on Berakhot 22a:3:1",
+      "Rashi on Berakhot 21b:1:1",
+      "Rashi on Berakhot 21b:1:2",
+      "Rashi on Berakhot 21b:2:1"
+    ],
+    "generatedAt": "2026-10-28T22:19:39.549Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תקן חצבא</strong> – ליתן מים לתלמידים עליהם שחרית קודם קריאת התורה:"
+  },
+  "Rashi on Berakhot 22a:24:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T22:21:29.704Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:24:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שנו</strong> – דסגי בנתינה אלא בחולה שראה קרי לאונסו:"
+  },
+  "Rashi on Berakhot 22a:24:3": {
+    "dependsOn": [
+      "Rashi on Berakhot 22a:24:1",
+      "Rashi on Berakhot 22a:24:2",
+      "Rashi on Berakhot 22a:24:3",
+      "Sefer HeArukh, Letter Resh 36",
+      "Steinsaltz on Berakhot 22a:24"
+    ],
+    "generatedAt": "2026-10-28T22:23:38.317Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:24:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המרגיל</strong> – וממשיך את הקרי עליו שמשמש מטתו:"
+  },
+  "Rashi on Berakhot 22a:25:1": {
+    "dependsOn": [
+      "Berakhot 22a:25",
+      "Rashi on Berakhot 22a:24:1",
+      "Rashi on Berakhot 22a:24:2",
+      "Rashi on Berakhot 22a:24:3",
+      "Rashi on Berakhot 22b:1:1",
+      "Rashi on Berakhot 22b:1:2",
+      "Rashi on Berakhot 22a:3:1",
+      "Rashi on Berakhot 22a:3:2",
+      "Rashi on Berakhot 22a:4:1",
+      "Rashi on Berakhot 22a:5:1"
+    ],
+    "generatedAt": "2026-10-28T22:27:25.988Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:25:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אתבר חצביה</strong> – אינו צריך לנו דחולה לאונסו לא שכיח:"
+  },
+  "Rashi on Berakhot 22a:3:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 22a:3:1",
+      "Rashi on Berakhot 22a:3:2",
+      "Berakhot 22a:3",
+      "Rashi on Berakhot 22a:5:1",
+      "Rashi on Berakhot 22a:6:1",
+      "Rashi on Berakhot 22a:8:1"
+    ],
+    "generatedAt": "2026-10-28T20:52:42.596Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עשאן ר' יהודה</strong> – לברכת המזון:"
+  },
+  "Rashi on Berakhot 22a:3:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 22a:3:1",
+      "Rashi on Berakhot 22a:3:2",
+      "Berakhot 22a:3",
+      "Berakhot 22a:6",
+      "Rashi on Berakhot 22a:6:1",
+      "Rashi on Berakhot 22a:6:2",
+      "Rashi on Berakhot 22a:6:3",
+      "Rashi on Berakhot 22a:6:4",
+      "Rashi on Berakhot 22a:6:5",
+      "Rashi on Berakhot 22a:6:6",
+      "Rashi on Berakhot 21b:1:1"
+    ],
+    "generatedAt": "2026-10-28T20:55:26.352Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כהלכות ד\"א</strong> – שמותר לשנותה בעל קרי כדבריו:"
+  },
+  "Rashi on Berakhot 22a:4:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 22a:4:1",
+      "Exodus 20:15"
+    ],
+    "generatedAt": "2026-10-28T20:57:32.232Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה להלן באימה</strong> – דכתיב וירא העם וינועו וגו' <span class=\"parenthesized\">(שמות כ)</span>:"
+  },
+  "Rashi on Berakhot 22a:5:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 22a:5:1",
+      "Rashi on Berakhot 22a:5:2",
+      "Berakhot 22a:4"
+    ],
+    "generatedAt": "2026-10-28T20:59:03.219Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכאן אמרו</strong> – כל הטמאים מותרים בתורה שאף הם יכולים להיות באימה וברתת אבל בעל קרי אינו אלא מתוך קלות ראש וזחות הדעת:"
+  },
+  "Rashi on Berakhot 22a:5:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 22a:5:1",
+      "Rashi on Berakhot 22a:3:1",
+      "Rashi on Berakhot 22a:3:2",
+      "Rashi on Berakhot 22a:6:1"
+    ],
+    "generatedAt": "2026-10-28T21:00:44.768Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובועלי נדות</strong> – אם טבלו לקריין לדברי תורה הטבילה אינה עולה להם לטהרם מטומאת בועל נדה שהיא שבעת ימים אבל לתקנת עזרא עולה להם כדתנן במתניתין זב שראה קרי ונדה כו' צריכין טבילה:"
+  },
+  "Rashi on Berakhot 22a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T21:01:51.195Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ברגיליות</strong> – במשניות השגורות בפיו שהוא מוציאן מפיו במרוצה ואין צריך להאריך בהן:"
+  },
+  "Rashi on Berakhot 22a:6:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 22a:6:1",
+      "Rashi on Berakhot 22a:6:2",
+      "Rashi on Berakhot 22a:6:3",
+      "Rashi on Berakhot 22a:4:1",
+      "Rashi on Berakhot 22a:5:1",
+      "Rashi on Berakhot 22a:5:2",
+      "Rashi on Berakhot 21b:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 22a:6:4",
+      "Rashi on Berakhot 22a:6:5",
+      "Rashi on Berakhot 22a:6:6",
+      "Jastrow, יָצַע 1",
+      "Steinsaltz on Berakhot 22a:6",
+      "Steinsaltz comment #1 on Berakhot 22a:6",
+      "Rashi on Berakhot 2a:4:1",
+      "Rashi on Berakhot 2a:5:1",
+      "Rashi on Berakhot 2a:6:1",
+      "Ritva on Berakhot 22a:5"
+    ],
+    "generatedAt": "2026-10-28T21:05:53.297Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא יציע</strong> – בטעמי פירושיהן:"
+  },
+  "Rashi on Berakhot 22a:6:3": {
+    "dependsOn": [
+      "Rashi on Berakhot 22a:6:1",
+      "Rashi on Berakhot 22a:6:2",
+      "Rashi on Berakhot 22a:6:3",
+      "Rashi on Berakhot 22a:6:4",
+      "Rashi on Berakhot 22a:3:1",
+      "Rashi on Berakhot 22a:4:1",
+      "Rashi on Berakhot 22a:5:1",
+      "Rashi on Berakhot 21b:1:1",
+      "Rashi on Berakhot 21b:2:1",
+      "Rashi on Berakhot 21b:3:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 22a:6:5",
+      "Rashi on Berakhot 22a:6:6",
+      "Rashi on Berakhot 22a:9:1"
+    ],
+    "generatedAt": "2026-10-28T21:08:59.455Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואינו מציע את המדרש גרסינן</strong> – מפני שצריך הוא תמיד להזכיר בו את הפסוקים שהוא דורש:"
+  },
+  "Rashi on Berakhot 22a:6:4": {
+    "dependsOn": [
+      "Rashi on Berakhot 22a:6:1",
+      "Rashi on Berakhot 22a:6:2",
+      "Rashi on Berakhot 22a:6:3",
+      "Rashi on Berakhot 22a:6:4",
+      "Rashi on Berakhot 22a:6:5",
+      "Rashi on Berakhot 22a:6:6",
+      "Rashi on Berakhot 22a:1:1",
+      "Rashi on Berakhot 22a:3:1",
+      "Rashi on Berakhot 22a:4:1",
+      "Rashi on Berakhot 21b:16:2",
+      "Rashi on Berakhot 21b:19:3",
+      "Rashi on Berakhot 21a:12:1",
+      "Rashi on Berakhot 21a:5:3"
+    ],
+    "generatedAt": "2026-10-28T21:11:46.531Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אזכרות</strong> – שבמקראות הנדרשים:"
+  },
+  "Rashi on Berakhot 22a:6:5": {
+    "dependsOn": [
+      "Rashi on Berakhot 22a:6:4",
+      "Rashi on Berakhot 22a:6:5",
+      "Rashi on Berakhot 22a:6:6",
+      "Rashi on Berakhot 22a:6:1",
+      "Rashi on Berakhot 22a:6:2",
+      "Rashi on Berakhot 22a:6:3",
+      "Rashi on Berakhot 22a:5:1",
+      "Rashi on Berakhot 22a:5:2",
+      "Rashi on Berakhot 22a:4:1",
+      "Rashi on Berakhot 21a:1:1",
+      "Rashi on Berakhot 21b:1:1",
+      "Tosafot on Sukkah 28a:7:1",
+      "Rashi on Sukkah 2a:1:1"
+    ],
+    "generatedAt": "2026-10-28T21:14:21.872Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:6:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא יכנס למדרש כל עיקר</strong> – לא להציע ולא לשנות אבל לבית המדרש הוא נכנס ושותק:"
+  },
+  "Rashi on Berakhot 22a:6:6": {
+    "dependsOn": [
+      "Rashi on Berakhot 22a:6:6",
+      "Steinsaltz on Berakhot 22a:6",
+      "Steinsaltz comment #1 on Berakhot 22a:6",
+      "Rashi on Berakhot 22a:6:1",
+      "Rashi on Berakhot 22a:6:2",
+      "Rashi on Berakhot 22a:6:3",
+      "Rashi on Berakhot 22a:6:4",
+      "Rashi on Berakhot 22a:6:5",
+      "Rashi on Berakhot 22a:1:1",
+      "Rashi on Berakhot 22a:4:1",
+      "Rashi on Berakhot 22a:5:1",
+      "Rashi on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-10-28T21:17:02.568Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:6:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלכות דרך ארץ</strong> – כגון דרכן של ת\"ח שהיא ברייתא ופרק בן עזאי הנותן ארבעה דברים אל לבו:"
+  },
+  "Rashi on Berakhot 22a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T21:19:07.867Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מגמגם וקורא</strong> – בעל קרי היה:"
+  },
+  "Rashi on Berakhot 22a:9:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 22a:9:2",
+      "Berakhot 22a:9",
+      "Rashi on Berakhot 22a:6:1",
+      "Rashi on Berakhot 22a:6:2",
+      "Rashi on Berakhot 22a:6:3",
+      "Rashi on Berakhot 22a:6:4",
+      "Rashi on Berakhot 22a:23:2",
+      "Berakhot 22a:23",
+      "Steinsaltz on Berakhot 22a:9",
+      "Steinsaltz comment #1 on Berakhot 22a:9",
+      "Ritva on Berakhot 22a:7",
+      "Tosafot on Berakhot 17b:2:1",
+      "Tosafot on Berakhot 15a:4:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3"
+    ],
+    "generatedAt": "2026-10-28T21:24:16.787Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נראה בעיני דה\"ג א\"ר אלעאי הלכה כו'</strong> – ולא גרסינן מסייע ליה:"
+  },
+  "Rashi on Berakhot 22a:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T21:27:58.564Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 22a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום רבינו</strong> – רב:"
+  }
+}

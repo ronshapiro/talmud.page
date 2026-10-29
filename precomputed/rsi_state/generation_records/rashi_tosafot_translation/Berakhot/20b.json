@@ -1,0 +1,614 @@
+{
+  "Rashi on Berakhot 20b:10:1": {
+    "dependsOn": [
+      "Translation on Rashi on Berakhot 20b:10:1",
+      "Rashi on Berakhot 20b:10:2",
+      "Rashi on Berakhot 20b:4:1",
+      "Rashi on Berakhot 20b:5:1",
+      "Rashi on Berakhot 20b:6:1",
+      "Rashi on Berakhot 20b:11:1",
+      "Rashi on Berakhot 20b:11:2",
+      "Rashi on Berakhot 20b:1:1",
+      "Rashi on Berakhot 20b:1:2",
+      "Rashi on Berakhot 20a:1:1",
+      "Rashi on Berakhot 20a:2:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Steinsaltz on Berakhot 20b:10",
+      "Rashi on Shevuot 20b:10:1"
+    ],
+    "generatedAt": "2026-10-28T17:34:12.184Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 20b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשמירה</strong> – דלא תעשה מלאכה <span class=\"parenthesized\">(שם)</span>:"
+  },
+  "Rashi on Berakhot 20b:10:2": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Berakhot 20b:10:2",
+      "Rashi on Berakhot 20b:10:1",
+      "Rashi on Berakhot 20b:11:1",
+      "Rashi on Berakhot 20b:11:2",
+      "Rashi on Berakhot 20b:1:1",
+      "Rashi on Berakhot 20b:8:1",
+      "Rashi on Berakhot 20b:14:1",
+      "Rashi on Berakhot 20b:15:1"
+    ],
+    "generatedAt": "2026-10-28T17:37:23.631Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 20b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והני נשי איתנהו בשמירה</strong> – דתנן <span class=\"parenthesized\">(קדושין דף כט.)</span> כל מצות לא תעשה בין שהזמן גרמא בין שאין הזמן גרמא נשים חייבות דהשוה הכתוב אשה לאיש לכל עונשים שבתורה:"
+  },
+  "Rashi on Berakhot 20b:11:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 20b:11:2",
+      "Rashi on Berakhot 20b:10:1",
+      "Rashi on Berakhot 20b:10:2",
+      "Rashi on Berakhot 20b:12:1",
+      "Rashi on Berakhot 20b:4:1",
+      "Rashi on Berakhot 20b:5:1",
+      "Rashi on Berakhot 20b:6:1",
+      "Berakhot 20b:10"
+    ],
+    "generatedAt": "2026-10-28T17:39:27.868Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 20b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נשים בברכת המזון דאורייתא</strong> – דכתיב ואכלת ושבעת <span class=\"parenthesized\">(דברים ח׳:י׳)</span> והוה ליה מצות עשה שאין הזמן גרמא:"
+  },
+  "Rashi on Berakhot 20b:11:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 20b:11:1",
+      "Rashi on Berakhot 20b:10:1",
+      "Rashi on Berakhot 20b:10:2",
+      "Rashi on Berakhot 20a:1:1",
+      "Rashi on Berakhot 20a:2:1"
+    ],
+    "generatedAt": "2026-10-28T17:41:42.058Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 20b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או דרבנן</strong> – דכתיב על הארץ הטובה אשר נתן לך <span class=\"parenthesized\">(שם)</span> והארץ לא נתנה לנקבות להתחלק ואי משום בנות צלפחד חלק אביהם הם דנטלו שהיה מיוצאי מצרים:"
+  },
+  "Rashi on Berakhot 20b:12:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 20b:12:1",
+      "Rashi on Berakhot 20b:12:2",
+      "Rashi on Berakhot 20b:1:1",
+      "Rashi on Berakhot 20b:4:1",
+      "Rashi on Berakhot 20b:10:1",
+      "Rashi on Berakhot 20b:11:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:3:2",
+      "Rashi on Berakhot 2a:4:1",
+      "Rashi on Berakhot 20b:14:1",
+      "Rashi on Berakhot 20b:16:1",
+      "Rashi on Berakhot 20b:16:2",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Berakhot 2b:2:1",
+      "Berakhot 20b:13",
+      "Berakhot 20b:14"
+    ],
+    "generatedAt": "2026-10-28T17:51:09.903Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 20b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בן</strong> – קטן:"
+  },
+  "Rashi on Berakhot 20b:12:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 20b:12:1",
+      "Rashi on Berakhot 20b:11:1",
+      "Rashi on Berakhot 20b:11:2",
+      "Rashi on Berakhot 20b:10:1",
+      "Rashi on Berakhot 20a:1:1",
+      "Rashi on Berakhot 20a:2:1",
+      "Berakhot 20b:11"
+    ],
+    "generatedAt": "2026-10-28T17:52:42.105Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 20b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מברך</strong> – ברכת המזון לאביו אם אין אביו יודע לברך:"
+  },
+  "Rashi on Berakhot 20b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T17:53:51.487Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 20b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיעורא דרבנן</strong> – כגון כזית לר\"מ וכביצה לרבי יהודה דמדאורייתא ואכלת ושבעת וברכת כתיב אבל בשיעור כי האי לא מחייב אלא מדרבנן והלכך אתי קטן דרבנן ומפיק גדול:"
+  },
+  "Rashi on Berakhot 20b:15:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 20b:15:1",
+      "Rashi on Berakhot 20b:1:1",
+      "Rashi on Berakhot 20b:4:1",
+      "Rashi on Berakhot 20b:10:1",
+      "Rashi on Berakhot 20b:11:1",
+      "Mishnah Berakhot 7:2",
+      "Berakhot 45a:1",
+      "Rashi on Berakhot 45a:5:1",
+      "Tosafot on Berakhot 45a:5:2"
+    ],
+    "generatedAt": "2026-10-28T17:55:58.812Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 20b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד כזית עד כביצה</strong> – עד כזית לר\"מ עד כביצה לר' יהודה דתנן <span class=\"parenthesized\">(לקמן ברכות דף מה.)</span> עד כמה מזמנין ר\"מ אומר עד כזית ר' יהודה אומר עד כביצה:"
+  },
+  "Rashi on Berakhot 20b:16:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 20b:16:2"
+    ],
+    "generatedAt": "2026-10-28T18:01:18.697Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 20b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעל קרי</strong> – מתקנת עזרא ואילך שתקן טבילה לבעלי קריין לעסוק בתורה כדאמרינן בב\"ק בפרק מרובה <span class=\"parenthesized\">(בבא קמא דף פב:)</span>:"
+  },
+  "Rashi on Berakhot 20b:16:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 20b:16:1",
+      "Rashi on Berakhot 20b:16:2",
+      "Rashi on Berakhot 20b:16:3",
+      "Rashi on Berakhot 20b:15:1",
+      "Rashi on Berakhot 20b:17:1"
+    ],
+    "generatedAt": "2026-10-28T18:02:42.197Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 20b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהרהר</strong> – ק\"ש בלבו כשמגיע זמן המקרא:"
+  },
+  "Rashi on Berakhot 20b:16:3": {
+    "dependsOn": [
+      "Rashi on Berakhot 20b:16:1",
+      "Rashi on Berakhot 20b:16:2",
+      "Rashi on Berakhot 20b:16:3",
+      "Rashi on Berakhot 20b:16:4",
+      "Steinsaltz on Berakhot 20b:16:1",
+      "Berakhot 20b:17",
+      "Rashi on Berakhot 20b:17:1"
+    ],
+    "generatedAt": "2026-10-28T18:03:55.128Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 20b:16:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואינו מברך</strong> – אפילו בהרהור:"
+  },
+  "Rashi on Berakhot 20b:16:4": {
+    "dependsOn": [
+      "Rashi on Berakhot 20b:16:1",
+      "Rashi on Berakhot 20b:16:2",
+      "Rashi on Berakhot 20b:16:3",
+      "Rashi on Berakhot 20b:16:4",
+      "Rashi on Berakhot 20b:16:5",
+      "Rashi on Berakhot 20b:10:1",
+      "Rashi on Berakhot 20b:14:1"
+    ],
+    "generatedAt": "2026-10-28T18:05:37.166Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 20b:16:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא לפניה ולא לאחריה</strong> – כיון דברכות לאו מדאורייתא מחייב לא אצרכוהו רבנן:"
+  },
+  "Rashi on Berakhot 20b:16:5": {
+    "dependsOn": [
+      "Rashi on Berakhot 20b:16:5",
+      "Rashi on Berakhot 20b:16:1",
+      "Rashi on Berakhot 20b:16:2",
+      "Rashi on Berakhot 20b:16:3",
+      "Rashi on Berakhot 20b:16:4",
+      "Rashi on Berakhot 20b:16:6",
+      "Rashi on Berakhot 20b:16:7",
+      "Rashi on Berakhot 20b:1:1",
+      "Rashi on Berakhot 20b:10:1",
+      "Rashi on Berakhot 20b:11:1",
+      "Rashi on Berakhot 20a:1:1",
+      "Rashi on Berakhot 20a:2:1",
+      "Rashi on Berakhot 20a:3:1",
+      "Rashi on Berakhot 20b:14:1",
+      "Rashi on Berakhot 20b:15:1",
+      "Rashi on Berakhot 20b:12:1"
+    ],
+    "generatedAt": "2026-10-28T18:08:38.172Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 20b:16:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועל המזון מברך לאחריו</strong> – דחיובא דאורייתא הוא:"
+  },
+  "Rashi on Berakhot 20b:16:6": {
+    "dependsOn": [
+      "Rashi on Berakhot 20b:16:5",
+      "Rashi on Berakhot 20b:16:6",
+      "Rashi on Berakhot 20b:16:1",
+      "Rashi on Berakhot 20b:16:2",
+      "Rashi on Berakhot 20b:16:3",
+      "Rashi on Berakhot 20b:16:4",
+      "Rashi on Berakhot 20b:16:7"
+    ],
+    "generatedAt": "2026-10-28T18:10:41.972Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 20b:16:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואינו מברך לפניו</strong> – דלאו דאורייתא הוא:"
+  },
+  "Rashi on Berakhot 20b:16:7": {
+    "dependsOn": [
+      "Rashi on Berakhot 20b:16:6",
+      "Rashi on Berakhot 20b:16:1",
+      "Rashi on Berakhot 20b:16:2",
+      "Rashi on Berakhot 20b:16:3",
+      "Berakhot 20b:16",
+      "Berakhot 21a:1",
+      "Berakhot 20b:19",
+      "Berakhot 20b:20",
+      "Berakhot 20b:21",
+      "Berakhot 20b:22",
+      "Berakhot 21a:2",
+      "Berakhot 21a:3",
+      "Berakhot 21a:4",
+      "Berakhot 21a:5",
+      "Berakhot 21a:6",
+      "Berakhot 21a:7",
+      "Berakhot 21a:8",
+      "Rashi on Berakhot 21a:6:1",
+      "Berakhot 22a:1",
+      "Berakhot 22a:2",
+      "Berakhot 22a:3",
+      "Tosafot on Berakhot 2a:1:1",
+      "Tosafot on Berakhot 2a:10:2",
+      "Rashi on Berakhot 20b:16:4",
+      "Rashi on Berakhot 20b:16:5",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3",
+      "Rashi on Berakhot 2a:1:4",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:3",
+      "Rashi on Shabbat 2a:3:5"
+    ],
+    "generatedAt": "2026-10-28T18:17:02.980Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 20b:16:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי יהודה אומר וכו'</strong> – בגמרא מפרש לה:"
+  },
+  "Rashi on Berakhot 20b:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T18:21:59.377Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 20b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדבור דמי</strong> – וכל אדם נמי יוצא ידי חובתו בהרהור:"
+  },
+  "Rashi on Berakhot 20b:17:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 20b:17:1",
+      "Rashi on Berakhot 20b:17:2",
+      "Rashi on Berakhot 20b:16:1",
+      "Rashi on Berakhot 20b:16:2",
+      "Rashi on Berakhot 20b:16:3",
+      "Rashi on Berakhot 20b:1:1",
+      "Rashi on Berakhot 20b:1:2",
+      "Rashi on Berakhot 20b:12:1",
+      "Rashi on Berakhot 20b:16:7",
+      "Steinsaltz on Berakhot 20b:17"
+    ],
+    "generatedAt": "2026-10-28T18:24:33.020Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 20b:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למה מהרהר</strong> – מה מועיל:"
+  },
+  "Rashi on Berakhot 20b:19:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T18:29:06.094Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 20b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדאשכחן בסיני</strong> – שהפרישן מאשה דכתיב אל תגשו אל אשה <span class=\"parenthesized\">(שמות י״ט:ט״ו)</span> ועל פרישה זו סמך עזרא לתקן טבילה לבעלי קריין קודם שיעסקו בתורה דכתיב <span class=\"parenthesized\">(דברים ד׳:י׳)</span> והודעתם לבניך וסמיך ליה יום אשר עמדת לפני ה' אלהיך בחורב כדאמרינן לקמן בפרקין <span class=\"parenthesized\">(ברכות דף כא:)</span>:"
+  },
+  "Rashi on Berakhot 20b:1:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 20b:1:1",
+      "Berakhot 20b:1",
+      "Rashi on Berakhot 20b:1:2",
+      "Rashi on Berakhot 20b:1:3",
+      "Rashi on Berakhot 20b:1:4",
+      "Rashi on Berakhot 20a:10:1",
+      "Rashi on Berakhot 20b:2:1",
+      "Rashi on Berakhot 20b:4:1",
+      "Rashi on Berakhot 20b:5:1",
+      "Berakhot 20b:4",
+      "Rashi on Berakhot 14b:13:1",
+      "Rashi on Berakhot 14b:19:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Shabbat 49a:6",
+      "Berakhot 24b:9"
+    ],
+    "generatedAt": "2026-10-28T17:00:08.088Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 20b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומן התפלין</strong> – משום דסתם קטן אינו יודע לשמור גופו שלא יפיח בהן:"
+  },
+  "Rashi on Berakhot 20b:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T17:01:23.876Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 20b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחייבין בתפלה</strong> – דתפלה רחמי היא ומדרבנן היא ותקנוה אף לנשים ולחנוך קטנים:"
+  },
+  "Rashi on Berakhot 20b:1:3": {
+    "dependsOn": [
+      "Rashi on Berakhot 20b:1:1",
+      "Rashi on Berakhot 20b:1:2",
+      "Rashi on Berakhot 20b:1:4",
+      "Berakhot 20b:7",
+      "Berakhot 20b:8",
+      "Berakhot 20b:5",
+      "Berakhot 20b:6",
+      "Rashi on Berakhot 20b:6:1",
+      "Rashi on Berakhot 20b:7:1",
+      "Rashi on Berakhot 20a:1:1",
+      "Rashi on Berakhot 20a:2:1",
+      "Rashi on Berakhot 20b:4:1",
+      "Rashi on Berakhot 20b:8:1",
+      "Rashi on Berakhot 20b:5:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3"
+    ],
+    "generatedAt": "2026-10-28T17:10:02.079Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 20b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובמזוזה ובברכת המזון</strong> – מזוזה מצות עשה שלא הזמן גרמא ובגמרא פריך פשיטא:"
+  },
+  "Rashi on Berakhot 20b:1:4": {
+    "dependsOn": [
+      "Rashi on Berakhot 20b:1:1",
+      "Rashi on Berakhot 20b:1:2",
+      "Rashi on Berakhot 20b:1:3",
+      "Rashi on Berakhot 20b:1:4",
+      "Berakhot 20b:11",
+      "Rashi on Berakhot 20b:6:1"
+    ],
+    "generatedAt": "2026-10-28T17:13:23.368Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 20b:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ברכת המזון</strong> – בגמרא בעי לה דאורייתא או דרבנן:"
+  },
+  "Rashi on Berakhot 20b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-28T17:14:57.563Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 20b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהו דתימא נקיש תפלין למזוזה</strong> – דכתיב וקשרתם וכתבתם מה מזוזה נשים חייבות אף תפילין נשים חייבות קמשמע לן:"
+  },
+  "Rashi on Berakhot 20b:5:1": {
+    "dependsOn": [
+      "Berakhot 20b:5",
+      "Tosafot on Berakhot 20b:4:1",
+      "Steinsaltz on Berakhot 20b:5",
+      "Versions on Berakhot 20b:5",
+      "Rashi on Berakhot 20b:1:1",
+      "Rashi on Berakhot 20b:1:2",
+      "Rashi on Berakhot 20b:1:3",
+      "Rashi on Berakhot 20b:1:4",
+      "Rashi on Berakhot 20b:10:1",
+      "Rashi on Berakhot 20b:10:2",
+      "Rashi on Berakhot 20b:11:1",
+      "Rashi on Berakhot 20b:11:2"
+    ],
+    "generatedAt": "2026-10-28T17:21:38.100Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 20b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכי גרסינן תפלה דרחמי נינהו</strong> – ולא גרס פשיטא דהא לאו דאורייתא היא:"
+  },
+  "Rashi on Berakhot 20b:6:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 20b:4:1",
+      "Rashi on Berakhot 20b:5:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1"
+    ],
+    "generatedAt": "2026-10-28T17:24:26.820Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 20b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נקיש מזוזה לתלמוד תורה</strong> – דכתיב <span class=\"parenthesized\">(דברים יא)</span> ולמדתם אותם את בניכם וסמיך ליה וכתבתם מה תלמוד תורה נשים פטורות ואע\"ג דאין הזמן גרמא רחמנא פטרינהו דכתיב את בניכם ולא בנותיכם אף מזוזה נשים פטורות קמ\"ל דנשים חייבות דכתיב למען ירבו ימיכם גברי בעו חיי נשי לא בעי חיי בתמיה:"
+  },
+  "Rashi on Berakhot 20b:8:1": {
+    "dependsOn": [
+      "Translation on Rashi on Berakhot 20b:8:1",
+      "Rashi on Berakhot 20b:1:1",
+      "Rashi on Berakhot 20b:4:1",
+      "Rashi on Berakhot 20b:5:1",
+      "Rashi on Berakhot 20b:6:1"
+    ],
+    "generatedAt": "2026-10-28T17:29:42.712Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 20b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קדוש היום מ\"ע שהזמן גרמא הוא</strong> – זכור את יום השבת לקדשו <span class=\"parenthesized\">(שמות כ)</span> זכרהו על היין:"
+  },
+  "Tosafot on Berakhot 20b:11:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 20b:11:1",
+      "Rashi on Berakhot 20b:11:2",
+      "Berakhot 49a:15"
+    ],
+    "generatedAt": "2026-10-28T17:46:39.848Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 20b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נשים בברכת המזון דאורייתא או דרבנן</strong> - <span class=\"rashi-quotation\">פי' הקונטרס</span> דסלקא דעתך דלא מחייבי מדאורייתא משום דכתיב על הארץ הטובה ונשים לא נטלו חלק בארץ ומה שנטלו בנות צלפחד חלק אביהם נטלו. ותימה כהנים ולוים נמי תבעי שהרי לא נטלו חלק בארץ וא\"כ לא יוציאו אחרים ידי חובתן בברכת המזון אלא י\"ל דטעמא משום דכתיב על בריתך שחתמת בבשרנו ועל תורתך שלמדתנו ונשים ליתנהו לא בברית ולא בתורה ואמרינן לקמן <span class=\"parenthesized\">(ברכות דף מט.)</span> מי שלא אמר ברית ותורה בברכת המזון לא יצא ידי חובתו והשתא קא מבעיא ליה כיון דלא מצו למימר ברית ותורה לא הוו אלא מדרבנן או דלמא כיון דלא שייך בהו הוי שפיר דאורייתא והא דלקמן מיירי באנשים דשייכי בברית ותורה:"
+  },
+  "Tosafot on Berakhot 20b:16:1": {
+    "dependsOn": [
+      "Berakhot 20b:16",
+      "Berakhot 20b:19",
+      "Berakhot 21a:2",
+      "Berakhot 21a:5",
+      "Berakhot 21a:10",
+      "Rashi on Berakhot 20b:16:1",
+      "Rashi on Berakhot 20b:16:2",
+      "Rashi on Berakhot 20b:16:3",
+      "Tosafot on Berakhot 20b:16:1",
+      "Tosafot on Berakhot 20b:4:1"
+    ],
+    "generatedAt": "2026-10-28T18:20:16.568Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 20b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעל קרי מהרהר בלבו ואינו מברך לא לפניה ולא לאחריה</strong> - פי' אפילו בהרהור כדמשמע בגמ' והיינו טעמא דשרינא טפי בק\"ש מברכות משום דק\"ש דאורייתא וברכות דרבנן ואפי' למ\"ד ק\"ש דרבנן היינו היכא דהזכיר יציאת מצרים אבל מתניתין שלא הזכיר יציאת מצרים שלא התירו לו לומר אמת ויציב והוי ק\"ש דאורייתא ואמת ויציב דרבנן שהרי הזכיר יציאת מצרים בק\"ש ואין להקשות נתקן דלימא אמת ויציב ולא לימא ק\"ש דהא עדיף דלימא ק\"ש דאית ביה נמי מלכות שמים:"
+  },
+  "Tosafot on Berakhot 20b:18:1": {
+    "dependsOn": [
+      "Berakhot 20b:18",
+      "Chidushei Halachot on Berakhot 20b:3",
+      "Tosafot on Berakhot 20b:4:1",
+      "Tosafot on Berakhot 20b:5:1",
+      "Tosafot on Berakhot 20b:7:1",
+      "Tosafot on Berakhot 20b:11:1"
+    ],
+    "generatedAt": "2026-10-28T18:26:16.641Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 20b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יוציא בשפתיו</strong> - כיון דשרית ליה הרהור אע\"פ שהוא כדבור לענין לצאת ידי ק\"ש כמו כן מקרי דבור לענין דמקרי עוסק בתורה ומדשרית ליה להרהר אע\"פ שהוא בעל קרי תתיר לו גם דבור:"
+  },
+  "Tosafot on Berakhot 20b:19:1": {
+    "dependsOn": [
+      "Berakhot 20b:19",
+      "Rashi on Berakhot 20b:19:1",
+      "Tosafot on Berakhot 20b:4:1",
+      "Tosafot on Berakhot 20b:5:1",
+      "Tosafot on Berakhot 20b:7:1",
+      "Tosafot on Berakhot 20a:1:1"
+    ],
+    "generatedAt": "2026-10-28T18:31:39.758Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 20b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדאשכחן בסיני</strong> - פירוש אף ע\"ג דכדבור דמי לענין שיצא מ\"מ לאו כדבור דמי לענין שיהא בעל קרי אסור להרהר כדאשכחן בסיני דהיה שם דבור והיו צריכין לטבול ואע\"פ שהיו שותקין שומע כעונה [סוכה לח:]:"
+  },
+  "Tosafot on Berakhot 20b:20:1": {
+    "dependsOn": [
+      "Berakhot 20b:20",
+      "Steinsaltz on Berakhot 20b:20",
+      "Tosafot on Berakhot 20b:4:1",
+      "Tosafot on Berakhot 20b:11:1"
+    ],
+    "generatedAt": "2026-10-28T18:35:15.977Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 20b:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורב חסדא אמר לאו כדבור דמי</strong> - ר\"ח פירש דהלכה כרב חסדא מדתרצי רב אדא ורבי אלעזר למלתיה שמע מיניה כותיה קיימי ולא יצא בקריאת שמע בהרהור:"
+  },
+  "Tosafot on Berakhot 20b:4:1": {
+    "dependsOn": [
+      "Berakhot 20b:4",
+      "Rashi on Berakhot 20b:5:1",
+      "Chidushei Halachot on Berakhot 20b:1"
+    ],
+    "generatedAt": "2026-10-28T17:18:41.249Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 20b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתפילה פשיטא כיון דכתיב ערב ובקר וצהרים אשיחה ואהמה כמצות עשה שהזמן גרמא הוי קמ\"ל דרחמי נינהו</strong> - ורש\"י לא גריס ליה שהרי תפלה דרבנן היא ומאי מ\"ע שייכי ביה. ומ\"מ יש ליישב דהא הלל דרבנן ונשים פטורות מהאי טעמא דמצות עשה שהזמן גרמא הוא כדאמרינן בסוכה <span class=\"parenthesized\">(דף לח.)</span> מי שהיה עבד ואשה או קטן מקרין אותו עונה אחריהן מה שהם אומרים דאין השומע פטור מקריאתן כיון שהם פטורים:"
+  },
+  "Tosafot on Berakhot 20b:7:1": {
+    "dependsOn": [
+      "Gilyon HaShas on Berakhot 20b:3",
+      "Versions on Berakhot 20b:7",
+      "Berakhot 20b:7",
+      "Steinsaltz on Berakhot 20b:7",
+      "Tosafot on Berakhot 20b:11:1",
+      "Tosafot on Berakhot 20b:4:1"
+    ],
+    "generatedAt": "2026-10-28T17:28:19.660Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 20b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אית דגרסי בברכת המזון פשיטא</strong> - ומשני כיון דכתיב בתת ה' לכם בערב בשר לאכול ולחם בבקר לשבוע כמ\"ע שהזמן גרמא הוא קמ\"ל:"
+  }
+}
