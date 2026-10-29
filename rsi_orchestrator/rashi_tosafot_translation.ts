@@ -19,8 +19,19 @@ import {
   StalenessStatus,
 } from "../precomputed/rsi_state/staleness";
 import {toFlatArray} from "../sefariaTextType";
-import {extractRequestedRefs} from "./context_fetch";
+import {stripHebrewNonletters} from "../hebrew";
+import {stripAbbreviationMarkup, stripExplanations} from "../js/rashi_tosafot_formatting";
+import {extractRequestedRefs, findBaseSegment, getCommentRefs} from "./context_fetch";
+import {renderPrompt} from "./prompt_template";
 import {AgentError, AgentBackend, getAgentRunner} from "./agent_runner";
+import {
+  extractBase64Images,
+  extractBase64ImagesForCritique,
+  formatCritiqueImagePlaceholderNote,
+  formatGenerationImagePlaceholderNote,
+  replaceBase64ImagesWithTempFileLocations,
+  restoreBase64ImagesInEdit,
+} from "./base64_images";
 import {
   continuationCritiquePrompt,
   continuationGenerationPrompt,
@@ -43,7 +54,7 @@ export {LongThreadSessionManager, isLongThreadBackend};
  */
 
 export const TASK_TYPE = "rashi_tosafot_translation";
-const PROMPT_VERSION = "v2";
+const PROMPT_VERSION = "v3";
 // The only tool this task type's headless calls may use — see the module doc above. Scoped to
 // this exact command so it can't fall back to arbitrary Bash use.
 const CONTEXT_FETCH_ALLOWED_TOOLS = [
@@ -87,6 +98,8 @@ export interface GeneratedEdit {
   // full cost of producing the accepted edit, not just the last call.
   costUsd: number | undefined;
   contextRefsUsed: string[];
+  // Inference time of this call as reported by the backend, when it reports one (ollama does).
+  durationSeconds?: number;
 }
 
 export interface GenerationDeps {
@@ -108,6 +121,98 @@ function sumCost(...costs: (number | undefined)[]): number | undefined {
 // as "stop the whole run," not "give up on this candidate" — see translateRashiTosafotComments.
 export const MAX_GENERATION_ATTEMPTS = 5;
 
+export interface HebrewVerificationResult {
+  valid: boolean;
+  reason?: string;
+}
+
+export function extractHebrewWordsForVerification(text: string): string {
+  // Strip explanatory notes added in proposed text (<span class="explanation">...</span>).
+  const withoutExplanations = stripExplanations(text);
+  // Unwrap <abbr title="expansion">abbreviation</abbr> to just the original abbreviation text,
+  // so the abbreviation itself can be checked against the source text.
+  const withoutAbbreviationMarkup = stripAbbreviationMarkup(withoutExplanations);
+  // Strip vowels (nikkud) and cantillation marks (U+0591-U+05C7) so vocalization differences
+  // are ignored.
+  return stripHebrewNonletters(withoutAbbreviationMarkup)
+    // Strip image placeholder tokens (e.g. IMAGE_PLACEHOLDER_0) used when diagrams are extracted.
+    .replace(/IMAGE_PLACEHOLDER_\d+/g, "")
+    // Replace remaining HTML tags (e.g. <strong class="dibur-hamatchil">) with a space to
+    // prevent concatenating words across tags.
+    .replace(/<[^>]+>/g, " ")
+    // Replace HTML entities (e.g. &nbsp;) with a space.
+    .replace(/&[\d#a-z]+;/gi, " ")
+    // Replace sentence and clause punctuation (colons, periods, commas, brackets, hyphens,
+    // dashes, and Hebrew maqaf) with spaces so word boundaries around punctuation are maintained.
+    .replace(/[!(),.:;?[\]{}־–—-]/g, " ")
+    // Strip single/double quotes and Hebrew geresh/gershayim (U+05F3, U+05F4) without inserting
+    // spaces, so abbreviations and numerals normalize consistently (e.g. both כ"א and כ״א
+    // become כא).
+    .replace(/["'׳״]/g, "")
+    // Strip any remaining characters that are not Hebrew letters (U+05D0-U+05EA), digits, or
+    // whitespace.
+    .replace(/[^\d\s\u05D0-\u05EA]/g, "")
+    // Collapse all runs of whitespace into a single space and trim edges, yielding space-delimited
+    // words.
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+export function verifyProposedHebrewWording(
+  sourceHebrew: string,
+  proposedHebrew: string,
+): HebrewVerificationResult {
+  const withoutExplanations = stripExplanations(proposedHebrew);
+  if (/<span\s+class=["']explanation["']>/i.test(withoutExplanations)) {
+    return {
+      valid: false,
+      reason: 'Unclosed <span class="explanation"> tag in proposed Hebrew.',
+    };
+  }
+
+  const openingAbbreviationCount = (proposedHebrew.match(/<abbr\b[^>]*>/gi) ?? []).length;
+  const closingAbbreviationCount = (proposedHebrew.match(/<\/abbr>/gi) ?? []).length;
+  if (openingAbbreviationCount !== closingAbbreviationCount) {
+    return {
+      valid: false,
+      reason: `Mismatched <abbr> tags in proposed Hebrew (${openingAbbreviationCount} opening, ${closingAbbreviationCount} closing).`,
+    };
+  }
+
+  const abbreviationWithoutTitleMatch = proposedHebrew.match(/<abbr(?!\s+title=)[^>]*>/gi);
+  if (abbreviationWithoutTitleMatch) {
+    return {
+      valid: false,
+      reason: 'Missing title attribute in <abbr> tag. Use <abbr title="expansion">abbreviation</abbr>.',
+    };
+  }
+
+  const untouchableAbbreviationMatch = proposedHebrew.match(
+    /<abbr\b[^>]*>\s*(?:וגו|וכו|כו|הקב["״]ה|רש["״]י|חז["״]ל)["'׳״]*\s*<\/abbr>/i,
+  );
+  if (untouchableAbbreviationMatch) {
+    return {
+      valid: false,
+      reason: "Do not wrap וגו', וכו', הקב\"ה, רש\"י, or חז\"ל in <abbr> tags. Leave them untouched without <abbr> as they are recognized solely by their abbreviation.",
+    };
+  }
+
+
+  const sourceWords = extractHebrewWordsForVerification(sourceHebrew);
+  const proposedWords = extractHebrewWordsForVerification(proposedHebrew);
+
+  if (sourceWords !== proposedWords) {
+    return {
+      valid: false,
+      reason: 'Proposed Hebrew modified the source text outside of <span class="explanation">. '
+        + 'Original abbreviations must be preserved inside <abbr title="expansion">abbreviation</abbr>, '
+        + 'and any added explanatory words must be wrapped in <span class="explanation">...</span>.',
+    };
+  }
+
+  return {valid: true};
+}
+
 /**
  * Generate, critique, and retry with feedback — across up to MAX_GENERATION_ATTEMPTS attempts —
  * until the critique accepts the result. A malformed (non-JSON) response from `generate` is
@@ -121,6 +226,10 @@ export async function generateWithSelfCritique(
   let feedback: string | undefined;
   let totalCost: number | undefined;
   let lastReason = "unknown error";
+  const {images: candidateImages} = extractBase64Images(
+    candidate.hebrewSource,
+    {ref: candidate.ref},
+  );
 
   for (let attempt = 0; attempt < MAX_GENERATION_ATTEMPTS; attempt++) {
     if (deps.shouldStop?.()) {
@@ -131,8 +240,24 @@ export async function generateWithSelfCritique(
     try {
       // eslint-disable-next-line no-await-in-loop
       generated = await deps.generate(candidate, feedback);
+      if (candidateImages.length > 0) {
+        generated = {
+          ...generated,
+          edit: restoreBase64ImagesInEdit(generated.edit, candidateImages),
+        };
+      }
       if (deps.shouldStop?.()) {
         return undefined;
+      }
+      if (generated.edit.hebrew) {
+        const hebrewVerification = verifyProposedHebrewWording(
+          candidate.hebrewSource, generated.edit.hebrew);
+        if (!hebrewVerification.valid) {
+          totalCost = sumCost(totalCost, generated.costUsd);
+          lastReason = hebrewVerification.reason!;
+          feedback = lastReason;
+          continue;
+        }
       }
       // eslint-disable-next-line no-await-in-loop
       outcome = await deps.critique(candidate, generated.edit);
@@ -268,8 +393,11 @@ export async function runContinuousTranslation(
       resolve();
       return;
     }
-    const timer = setTimeout(resolve, ms);
     let interval: NodeJS.Timeout | undefined;
+    const timer = setTimeout(() => {
+      if (interval) clearInterval(interval);
+      resolve();
+    }, ms);
     const abortHandler = () => {
       clearTimeout(timer);
       if (interval) clearInterval(interval);
@@ -285,9 +413,6 @@ export async function runContinuousTranslation(
     }, 100);
     if (typeof (interval as any)?.unref === "function") {
       (interval as any).unref();
-    }
-    if (typeof (timer as any)?.unref === "function") {
-      (timer as any).unref();
     }
   }));
 
@@ -510,15 +635,19 @@ const MAX_WORKED_EXAMPLES = 2;
 // Used only until real accepted generations exist to draw examples from — see findWorkedExamples.
 const FALLBACK_WORKED_EXAMPLE: Record<Commentator, WorkedExample> = {
   Rashi: {
-    hebrewSource: "ואם תמצי לומר דבר זה קשה",
-    hebrew: "<strong class=\"dibur-hamatchil\">ואם תמצי לומר</strong> - דבר זה קשה:",
-    english: "<strong class=\"dibur-hamatchil\">And if you should say:</strong> "
-      + "This matter is difficult.",
+    hebrewSource: "מתני' כ\"א תקיעות מפרש להו בפ' החליל",
+    hebrew: "<strong class=\"dibur-hamatchil\">מתני'</strong> - "
+      + "<abbr title=\"עשרים ואחת\">כ\"א</abbr> תקיעות, <span class=\"explanation\">הגמרא</span> "
+      + "מפרש להו <abbr title=\"בפרק\">בפ'</abbr> החליל:",
+    english: "<strong class=\"dibur-hamatchil\">The Mishnah:</strong> Twenty-one blasts — "
+      + "[the Gemara] explains them in the chapter [entitled] Hechalil:",
   },
   Tosafot: {
-    hebrewSource: "וכן משמע בכל דוכתא",
-    hebrew: "<strong class=\"dibur-hamatchil\">וכן משמע</strong> - בכל דוכתא:",
-    english: "<strong class=\"dibur-hamatchil\">And so it implies:</strong> in every place.",
+    hebrewSource: "וכן משמע בכל דוכתא אא\"כ פירש",
+    hebrew: "<strong class=\"dibur-hamatchil\">וכן משמע</strong> - בכל דוכתא, "
+      + "<abbr title=\"אלא אם כן\">אא\"כ</abbr> פירש <span class=\"explanation\">רבו</span>:",
+    english: "<strong class=\"dibur-hamatchil\">And so it implies:</strong> in every place, "
+      + "unless [his teacher] explained otherwise.",
   },
 };
 
@@ -538,7 +667,15 @@ function findWorkedExamples(commentator: Commentator, excludeRef: string): Worke
       if (ref === excludeRef || !ref.startsWith(`${commentator} on `)) continue;
       const edit = edits[ref];
       if (!edit) continue;
-      examples.push({hebrewSource: record.sourceText, hebrew: edit.hebrew, english: edit.english});
+      examples.push({
+        hebrewSource: replaceBase64ImagesWithTempFileLocations(record.sourceText, {ref}),
+        hebrew: edit.hebrew !== undefined
+          ? replaceBase64ImagesWithTempFileLocations(edit.hebrew, {ref})
+          : undefined,
+        english: edit.english !== undefined
+          ? replaceBase64ImagesWithTempFileLocations(edit.english, {ref})
+          : undefined,
+      });
       if (examples.length >= MAX_WORKED_EXAMPLES) return examples;
     }
   }
@@ -552,6 +689,24 @@ function formatWorkedExamples(examples: WorkedExample[]): string {
     example.hebrew ? `  Punctuated Hebrew: ${example.hebrew}` : undefined,
     example.english ? `  English translation: ${example.english}` : undefined,
   ].filter((line): line is string => line !== undefined).join("\n")).join("\n\n");
+}
+
+/** Shared by the first-turn and long-thread continuation prompts. */
+export function targetComment(
+  candidate: TranslationCandidate, hebrewSource: string, imageNote: string | undefined,
+): string {
+  const segment = findBaseSegment(candidate.ref);
+  const nested = Object.entries(getCommentRefs(candidate.ref).commentary)
+    .map(([name, refs]) => `${name}: ${refs.join(", ")}`);
+  return renderPrompt("target_comment.md", {
+    segmentLine: segment && `Attached Gemara segment (${segment.ref}): ${segment.he}`,
+    segmentEnglishLine: segment?.en && `Existing English of that segment: ${segment.en}`,
+    nestedLine: nested.length > 0 ? `Commentary on this comment: ${nested.join("; ")}` : undefined,
+    commentRef: candidate.ref,
+    commentator: candidate.commentator,
+    hebrewSource,
+    imageNote,
+  });
 }
 
 export function generationPrompt(candidate: TranslationCandidate, priorFeedback?: string): string {
@@ -570,85 +725,35 @@ export function generationPrompt(candidate: TranslationCandidate, priorFeedback?
   const examples = findWorkedExamples(candidate.commentator, candidate.ref);
   const workedExamples = examples.length > 0
     ? examples : [FALLBACK_WORKED_EXAMPLE[candidate.commentator]];
+  const extractedImages = extractBase64Images(candidate.hebrewSource, {ref: candidate.ref});
+  const hebrewSourceWithPlaceholders = extractedImages.textWithPlaceholders;
+  const imageNote = formatGenerationImagePlaceholderNote(extractedImages.images);
 
-  return [
-    "Instructions (ID: TRANSLATION_TASK):",
-    "You're translating and punctuating a single commentary comment on the Talmud, for",
-    "talmud.page (an interactive study tool).",
-    "",
-    "Tasks:",
-    "1. Add punctuation to the Hebrew comment if it doesn't already have it (Rashi/Tosafot",
-    "   style: a hyphen separates the dibbur hamatchil from the comment body, and the comment",
-    "   ends with a colon, not a period). Expand abbreviations only if you're confident what",
-    "   they stand for. Don't change the source text otherwise. Preserve existing HTML tags",
-    "   around the same words. Omit the Hebrew field entirely if it would be identical to the",
-    "   source.",
-    "2. Write an accurate, readable English translation.",
-    "3. If the existing translation is in French, German, or Spanish rather than English,",
-    "   translate that into English instead of writing a fresh translation.",
-    "",
-    "Rules on tools and external lookups:",
-    "- The ONLY permitted CLI tool is context_fetch_cli (`npx ts-node rsi_orchestrator/context_fetch_cli.ts ...`).",
-    "- You must NOT execute `git`, `python`, arbitrary node execution (such as `node -e`), or arbitrary bash commands/scripts (e.g. cat, diff, echo to file). Any attempt to run git, python, or other unapproved commands is blocked and will abort your attempt.",
-    "- Do NOT attempt to output your response via `node` or bash. Output your JSON response directly as text in your message.",
-    "- You must NOT make any lookups to Sefaria (sefaria.org). External lookups to sefaria.org are strictly forbidden and blocked.",
-    "- Wikipedia checks ARE permitted (via `npx ts-node rsi_orchestrator/context_fetch_cli.ts wikipedia ...` or curl to wikipedia.org) if needed for realia, botanical/zoological terms, historical figures, or French loanwords.",
-    "- If context_fetch_cli or Wikipedia does not provide what you need, do not seek it elsewhere — translate based on the provided text and your own knowledge.",
-    "",
-    "If you need the actual text of something beyond what's given above — a neighboring segment,",
-    "another commentary on this segment, or a prior sugya — you can use context_fetch_cli:",
-    "  npx ts-node rsi_orchestrator/context_fetch_cli.ts get-refs '[\"<ref>\", ...]'",
-    "  npx ts-node rsi_orchestrator/context_fetch_cli.ts get-neighbors \"<segment ref>\" "
-      + "[--before N] [--after N]",
-    "  npx ts-node rsi_orchestrator/context_fetch_cli.ts get-prior-sugyot \"<any ref on this "
-      + "page>\" [--count N]",
-    "  npx ts-node rsi_orchestrator/context_fetch_cli.ts wikipedia \"<topic>\" [--lang en|he]",
-    "Use your own judgment about whether you need any of this — most comments don't need extra",
-    "context beyond what's already above. Each call is capped in size, so ask for specific refs",
-    "rather than trying to pull in everything at once.",
-    "",
-    'Respond with ONLY a JSON object matching {"hebrew"?: string, "english"?: string} — include '
-      + "a key only if you're proposing a change to it. No other text before or after the JSON.",
-    "",
-    "Worked example(s) of the expected output — punctuation style, and how literal vs. free the",
-    "English translation should be:",
-    "",
-    formatWorkedExamples(workedExamples),
-    "",
-    "This page's segments and commentary, for orientation (not full text):",
-    formatPageSkeleton(skeleton),
-    "",
-    "Target commentary comment to translate:",
-    `Comment ref: ${candidate.ref}`,
-    `Commentator: ${candidate.commentator}`,
-    `Current Hebrew text: ${candidate.hebrewSource}`,
-    "",
-    priorFeedback
-      ? `Your previous attempt was rejected for this reason — fix it: ${priorFeedback}`
-      : "",
-  ].filter(line => line !== "").join("\n");
+  return renderPrompt("translation_generation.md", {
+    workedExamples: formatWorkedExamples(workedExamples),
+    pageIndex: formatPageSkeleton(skeleton),
+    targetComment: targetComment(candidate, hebrewSourceWithPlaceholders, imageNote),
+    priorFeedback: priorFeedback
+      && `Your previous attempt was rejected for this reason — fix it: ${priorFeedback}`,
+  });
 }
 
 export function critiquePrompt(candidate: TranslationCandidate, edit: Edit): string {
-  return [
-    "Instructions (ID: CRITIQUE_TASK):",
-    "You proposed this edit to a Talmud commentary comment. Check it before it ships.",
-    "",
-    "Does the proposed Hebrew preserve the exact wording (only punctuation/HTML changed, no",
-    "words added, removed, or changed)? Is the English translation accurate to the Hebrew?",
-    "",
-    "No lookups to sefaria.org or arbitrary bash/scripts (e.g. no python, no node, no cat/diff/file creation) are permitted. All text comparison must be performed directly in your own reasoning. Wikipedia lookups are permitted if needed.",
-    "",
-    "Be extremely terse to minimize token usage. Output ONLY a concise JSON decision with no preamble or commentary:",
-    '- If valid: {"valid": true}',
-    '- If invalid: {"valid": false, "reason": "<brief one-sentence reason>"} so generation can retry.',
-    "Keep any rejection reason to a single brief sentence. Do not include verbose commentary, apologies, or full rewrites.",
-    "",
-    "Target comment to check:",
-    `Original Hebrew: ${candidate.hebrewSource}`,
-    `Proposed Hebrew: ${edit.hebrew ?? "(unchanged)"}`,
-    `Proposed English: ${edit.english ?? "(none)"}`,
-  ].join("\n");
+  const {
+    originalHebrewWithPlaceholders,
+    proposedHebrewWithPlaceholders,
+    proposedEnglishWithPlaceholders,
+    images,
+  } = extractBase64ImagesForCritique(candidate.hebrewSource, edit, candidate.ref);
+  const imageNote = formatCritiqueImagePlaceholderNote(images);
+
+  return renderPrompt("translation_critique.md", {
+    commentRef: candidate.ref,
+    originalHebrew: originalHebrewWithPlaceholders,
+    proposedHebrew: proposedHebrewWithPlaceholders,
+    proposedEnglish: proposedEnglishWithPlaceholders,
+    imageNote,
+  });
 }
 
 export function parseJsonResponse<T>(text: string): T {
@@ -669,6 +774,8 @@ export function parseJsonResponse<T>(text: string): T {
 
 export interface TaskExecutionOptions {
   backend?: AgentBackend;
+  // Backend used for critique, if different from `backend` (e.g. agy judging ollama output).
+  critiqueBackend?: AgentBackend;
   model?: string;
   critiqueModel?: string;
   modelConfig?: string;
@@ -688,13 +795,17 @@ export async function generateViaAgent(
     configName: options?.modelConfig,
     backend: options?.backend,
   });
-  const backend = options?.backend ?? modelConfig.backend ?? "claude";
+  const backend = options?.backend ?? modelConfig?.backend;
+  if (!backend) {
+    throw new Error("No backend configured for generation");
+  }
   const model = options?.model ?? modelConfig.generateModel;
   const runner = getAgentRunner(backend);
   if (options?.debug) {
     console.log(`  [generate] running ${backend} (${model ?? "default model"})...`);
   }
 
+  const {images} = extractBase64Images(candidate.hebrewSource, {ref: candidate.ref});
   const isLongThread = isLongThreadBackend(backend);
   let promptText = generationPrompt(candidate, priorFeedback);
   let sessionId: string | undefined;
@@ -713,6 +824,11 @@ export async function generateViaAgent(
       : generationPrompt(candidate, priorFeedback);
   }
 
+  if (backend === "ollama") {
+    promptText += "\n\nNo tools or lookups are available in this environment — ignore the tool "
+      + "instructions above and translate from the provided text and your own knowledge.";
+  }
+
   const result = await runner(
     promptText,
     {
@@ -722,6 +838,7 @@ export async function generateViaAgent(
       sessionId,
       resumeSession,
       signal: options?.signal,
+      images: images.length > 0 ? images : undefined,
       onToolUse: (toolUse) => {
         const command = (toolUse.input as {command?: string; CommandLine?: string})?.command
           ?? (toolUse.input as {command?: string; CommandLine?: string})?.CommandLine;
@@ -742,11 +859,13 @@ export async function generateViaAgent(
     costUsd: result.costUsd,
     model: finalModel,
   }, candidate.page);
+  const parsedEdit = parseJsonResponse<Edit>(result.text);
   return {
-    edit: parseJsonResponse<Edit>(result.text),
+    edit: restoreBase64ImagesInEdit(parsedEdit, images),
     model: finalModel,
     costUsd: result.costUsd,
     contextRefsUsed: extractRequestedRefs(result.toolUses),
+    durationSeconds: result.durationSeconds,
   };
 }
 
@@ -759,23 +878,35 @@ export async function critiqueViaAgent(
     configName: options?.modelConfig,
     backend: options?.backend,
   });
-  const backend = options?.backend ?? modelConfig.backend ?? "claude";
+  const critiqueBackend = options?.critiqueBackend
+    ?? modelConfig?.critiqueBackend
+    ?? options?.backend
+    ?? modelConfig?.backend;
+  if (!critiqueBackend) {
+    throw new Error("No backend configured for critique");
+  }
+  const critiqueBackendConfig = options?.critiqueBackend
+    ? getTaskModelConfig(TASK_TYPE, {backend: options.critiqueBackend})
+    : undefined;
   const model = options?.critiqueModel
+    ?? (modelConfig?.critiqueBackend ? modelConfig.critiqueModel : undefined)
+    ?? critiqueBackendConfig?.critiqueModel
     ?? (options?.modelConfig
       ? modelConfig.critiqueModel
       : (options?.model ?? modelConfig.critiqueModel));
-  const runner = getAgentRunner(backend);
+  const runner = getAgentRunner(critiqueBackend);
   if (options?.debug) {
-    console.log(`  [critique] running ${backend} (${model ?? "default model"})...`);
+    console.log(`  [critique] running ${critiqueBackend} (${model ?? "default model"})...`);
   }
 
-  const isLongThread = isLongThreadBackend(backend);
+  const {images} = extractBase64ImagesForCritique(candidate.hebrewSource, edit, candidate.ref);
+  const isLongThread = isLongThreadBackend(critiqueBackend);
   let promptText = critiquePrompt(candidate, edit);
   let sessionId: string | undefined;
   let resumeSession = false;
 
   if (isLongThread && options?.sessionManager) {
-    const sessionInfo = options.sessionManager.prepareCritiqueSession(backend);
+    const sessionInfo = options.sessionManager.prepareCritiqueSession(critiqueBackend);
     sessionId = sessionInfo.sessionId;
     resumeSession = sessionInfo.isResume;
     promptText = resumeSession
@@ -792,6 +923,7 @@ export async function critiqueViaAgent(
       sessionId,
       resumeSession,
       signal: options?.signal,
+      images: images.length > 0 ? images : undefined,
       onToolUse: (toolUse) => {
         const command = (toolUse.input as {command?: string; CommandLine?: string})?.command
           ?? (toolUse.input as {command?: string; CommandLine?: string})?.CommandLine;

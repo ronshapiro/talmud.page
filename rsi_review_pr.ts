@@ -1,4 +1,4 @@
-import {Edit} from "./precomputed/ai_edits";
+import {aiEditsPath, Edit} from "./precomputed/ai_edits";
 import {jsonStringify} from "./util/json_stringify";
 
 // Opens (or adds to) a PR against ai_edits.ts entries from plain HTTPS calls to the GitHub REST
@@ -100,7 +100,7 @@ export async function openReviewDecisionPr(
     page, ref, decision, hebrew, english, fallbackHebrew, fallbackEnglish,
     reason, knownPrNumber, reviewerIdentity, username,
   } = request;
-  const path = `precomputed/ai_additions/${page}.json`;
+  const path = aiEditsPath(page);
   const encodedPath = encodePath(path);
 
   const openPr = await findKnownOpenPr(fetchImpl, token, knownPrNumber);

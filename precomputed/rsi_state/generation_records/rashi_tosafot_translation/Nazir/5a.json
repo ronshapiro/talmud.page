@@ -1,0 +1,50 @@
+{
+  "Rashi on Nazir 5a:1:1": {
+    "dependsOn": [
+      "Rashi on Nazir 5a:2:1",
+      "Rashi on Nazir 5a:2:2"
+    ],
+    "generatedAt": "2026-10-21T22:32:09.465Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Nazir 5a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויליף מבתי ערי חומה</strong> - דכתיב בהו ימים תהיה גאולתו מה להלן י\"ב חדש כדמפרש ביה קרא ואם לא יגאל עד מלאת לו שנה תמימה:"
+  },
+  "Rashi on Nazir 5a:2:1": {
+    "dependsOn": [
+      "Rashi on Nazir 5a:2:1",
+      "Rashi on Nazir 5a:2:2",
+      "Rashi on Nazir 5a:1:1",
+      "Nazir 5a:1"
+    ],
+    "generatedAt": "2026-10-21T22:33:36.774Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Nazir 5a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי נהוראי אומר</strong> - אבשלום היה מגלח אחת לל' יום:"
+  },
+  "Rashi on Nazir 5a:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T22:34:10.430Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Nazir 5a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שכן מצינו בבני מלכים</strong> - שכן נוהגים:"
+  },
+  "Rashi on Nazir 5a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T22:39:13.568Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Nazir 5a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא רבי הוא דאמר</strong> - במס' ערכין <span class=\"parenthesized\">(דף לא.)</span> ימים תהיה גאולתו אין ימים פחותים משנים שאם בא לגאלה באותו יום שמשכנה לו אינו יכול לגאלה עד שיעברו עליו ב' ימים לפי שאין מקרא יוצא מידי פשוטו והכא נמי מאי חזא רבי מההוא ג\"ש מה להלן י\"ב חדש כו' נגמר מהאי טעמא ונימא נמי דאבשלום מגלח היה לשני ימים:"
+  }
+}

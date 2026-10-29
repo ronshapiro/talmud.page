@@ -6,7 +6,33 @@ import {
 } from "../apiTypes";
 import {AI_EDIT_COMMENT_NAME} from "./commentary_constants";
 import isEmptyText from "./is_empty_text";
+import {stripExplanations} from "./rashi_tosafot_formatting";
 import {isSiteLanguageHebrew} from "./settings";
+
+function extractExplanationSyntheticComment(comment: ApiComment): void {
+  if (comment.sourceRef === "Explanation" || comment.ref.endsWith(":explanation")) {
+    return;
+  }
+
+  if (typeof comment.he === "string" && comment.he.includes('class="explanation"')) {
+    const withoutExplanations = stripExplanations(comment.he);
+
+    comment.commentary = comment.commentary || {};
+    comment.commentary.SyntheticExplanation = {
+      comments: [
+        {
+          ref: `${comment.ref}:explanation`,
+          he: comment.he,
+          en: "",
+          sourceRef: "Explanation",
+          sourceHeRef: "ביאור",
+        },
+      ],
+    };
+
+    comment.he = withoutExplanations;
+  }
+}
 
 function getAiVersionComment(parent: Section | ApiComment): ApiComment | undefined {
   for (const comment of parent.commentary?.Versions?.comments ?? []) {
@@ -52,6 +78,7 @@ function promoteReplaceableAiCommentsForCommentary(commentaryMap: CommentaryMap 
         originalTextComment.sourceRef = "Original Text";
         originalTextComment.sourceHeRef = "מקורי";
 
+        comment.originalHebrew = comment.he;
         comment.he = aiCommentCopy.he;
         if (!isEmptyText(aiCommentCopy.en)) {
           comment.en = aiCommentCopy.en;
@@ -114,6 +141,11 @@ function promoteReplaceableAiCommentsForCommentary(commentaryMap: CommentaryMap 
           delete comment.commentary;
         }
       }
+
+      for (const versionComment of comment.commentary?.Versions?.comments ?? []) {
+        extractExplanationSyntheticComment(versionComment);
+      }
+      extractExplanationSyntheticComment(comment);
 
       promoteReplaceableAiCommentsForCommentary(comment.commentary);
     }

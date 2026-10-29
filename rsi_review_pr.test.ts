@@ -1,4 +1,5 @@
 import {openReviewDecisionPr} from "./rsi_review_pr";
+import {aiEditsPath} from "./precomputed/ai_edits";
 
 function jsonResponse(body: unknown): Response {
   return {
@@ -35,7 +36,7 @@ class FakeGitHub {
 
   constructor(basePages: Record<string, Record<string, unknown>> = {}) {
     for (const [page, edits] of Object.entries(basePages)) {
-      const path = `precomputed/ai_additions/${page}.json`;
+      const path = aiEditsPath(page);
       this.branches.base[path] = Buffer.from(JSON.stringify(edits)).toString("base64");
       this.shas.base[path] = "base-file-sha";
     }
@@ -55,13 +56,13 @@ class FakeGitHub {
   }
 
   contentOf(branch: string, page: string): Record<string, unknown> {
-    const path = `precomputed/ai_additions/${page}.json`;
+    const path = aiEditsPath(page);
     const encoded = this.branches[branch]?.[path] ?? this.branches.base[path];
     return JSON.parse(Buffer.from(encoded, "base64").toString("utf8"));
   }
 
   rawContentOf(branch: string, page: string): string {
-    const path = `precomputed/ai_additions/${page}.json`;
+    const path = aiEditsPath(page);
     const encoded = this.branches[branch]?.[path] ?? this.branches.base[path];
     return Buffer.from(encoded, "base64").toString("utf8");
   }

@@ -1,0 +1,482 @@
+{
+  "Rashi on Eruvin 15a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T12:34:50.786Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שבת בתל</strong> - קדש עליו היום וקנה שם שביתתו:"
+  },
+  "Rashi on Eruvin 15a:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T12:36:03.890Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גבוה עשרה</strong> - דאמרינן גוד אסיק מחיצותיו כל סביבותיו והרי הוא מוקף:"
+  },
+  "Rashi on Eruvin 15a:10:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 15a:10:3",
+      "Rashi on Eruvin 15a:10:1",
+      "Rashi on Eruvin 15a:10:2",
+      "Rashi on Eruvin 15a:10:4",
+      "Rashi on Eruvin 15a:10:5"
+    ],
+    "generatedAt": "2026-10-21T12:37:42.863Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן נקע</strong> - אחד מנקיקי הסלעים:"
+  },
+  "Rashi on Eruvin 15a:10:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 15a:10:1",
+      "Rashi on Eruvin 15a:10:2",
+      "Rashi on Eruvin 15a:10:3",
+      "Rashi on Eruvin 15a:10:5",
+      "Rashi on Eruvin 14b:1:1",
+      "Rashi on Eruvin 14b:2:1",
+      "Rashi on Eruvin 14b:3:1",
+      "Rashi on Eruvin 14b:7:1",
+      "Rashi on Eruvin 2a:1:1",
+      "Rashi on Eruvin 2a:1:2",
+      "Rashi on Eruvin 2b:1:1",
+      "Eruvin 41b:1",
+      "Eruvin 41b:2",
+      "Eruvin 41b:3",
+      "Eruvin 41b:4",
+      "Eruvin 41b:5"
+    ],
+    "generatedAt": "2026-10-21T12:40:01.593Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15a:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והוא מד' אמות עד בית סאתים</strong> - הואיל ושבת באויר מחיצותיו נעשית ביתו וכולו כארבע אמותיו הוא הלכך מהלך את כולו וחוצה לו אלפים אמה אבל אי הוה טפי מבית סאתים אין מחיצותיו מועילות לו שהיקף שאינו עשוי לדירה אינו מועיל אלא לבית סאתים להכי נקט מארבע אמות ואילך דאם היה פחות מד' אמות מאי מהלך את כולו איכא ומחיצותיו מאי מהני בלאו מחיצה נמי מקום לכל אדם ד' אמות בפרק מי שהוציאוהו <span class=\"parenthesized\">(לקמן עירובין ד' מא:)</span>:"
+  },
+  "Rashi on Eruvin 15a:10:5": {
+    "dependsOn": [
+      "Rashi on Eruvin 15a:10:1",
+      "Rashi on Eruvin 15a:10:2",
+      "Rashi on Eruvin 15a:10:3",
+      "Rashi on Eruvin 15a:10:4",
+      "Rashi on Eruvin 15a:10:5"
+    ],
+    "generatedAt": "2026-10-21T12:41:57.883Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15a:10:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושיבולות מקיפות אותה</strong> - שהניח גבוליה סביב מלקצור ושבלים גבוהין י' עסקינן:"
+  },
+  "Rashi on Eruvin 15a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T12:42:39.347Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תל ונקע מאי איכא למימר</strong> - מימות עולם הן:"
+  },
+  "Rashi on Eruvin 15a:13:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 15a:13:1",
+      "Rashi on Eruvin 15a:14:1",
+      "Steinsaltz on Eruvin 15a:13:1"
+    ],
+    "generatedAt": "2026-10-21T12:50:33.757Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היוצאות מן הגדר</strong> - זו למעלה מזו:"
+  },
+  "Rashi on Eruvin 15a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T12:51:29.759Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למיסר בניינא</strong> - שאם ירצה לעשות מחיצה מכותל זה לכותל שכנגדו יתקשר באבנים הללו שכן דרך הבנאין לעשות ובענין אחר אינו יכול לדבק בנין חדש בבנין ישן:"
+  },
+  "Rashi on Eruvin 15a:17:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 15a:17:1"
+    ],
+    "generatedAt": "2026-10-21T12:52:02.587Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לסמוך אדיקלא</strong> - דקל היה עומד אצל פתח המבוי:"
+  },
+  "Rashi on Eruvin 15a:18:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 15a:18:1",
+      "Rashi on Eruvin 15a:19:4"
+    ],
+    "generatedAt": "2026-10-21T12:54:45.273Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא סמכינן הוי לחי</strong> - אלמא הלכה כאביי:"
+  },
+  "Rashi on Eruvin 15a:19:1": {
+    "dependsOn": [
+      "Eruvin 15a:19",
+      "Rashi on Eruvin 15a:19:1",
+      "Rashi on Eruvin 15a:19:2",
+      "Rashi on Eruvin 15a:19:3",
+      "Rashi on Eruvin 15a:19:4",
+      "Steinsaltz on Eruvin 15a:19",
+      "Rashi on Eruvin 15a:18:1",
+      "Rabbeinu Chananel on Eruvin 15a:12",
+      "Steinsaltz comment #1 on Eruvin 15a:19",
+      "Eruvin 15a:1",
+      "Eruvin 15a:2",
+      "Rashba on Eruvin 15a:17",
+      "Tosafot on Eruvin 15a:17:1",
+      "Rashba on Eruvin 15a:5",
+      "Rashi on Eruvin 15a:2:1"
+    ],
+    "generatedAt": "2026-10-21T13:00:50.586Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לימא בדלא סמכינן עליה פליגי</strong> - ואביי דשרי קשיא ליה האי עובדא דרב לא סמך אדיקלא ואנן קים לן הלכתא כאביי בלחי העומד מאליו:"
+  },
+  "Rashi on Eruvin 15a:19:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 15a:19:1",
+      "Rashi on Eruvin 15a:19:2",
+      "Rashi on Eruvin 15a:19:3",
+      "Jastrow, *בַּרְקָא III 1"
+    ],
+    "generatedAt": "2026-10-21T13:02:20.612Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15a:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ברקא</strong> - יציע:"
+  },
+  "Rashi on Eruvin 15a:19:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 15a:19:1",
+      "Rashi on Eruvin 15a:19:2",
+      "Rashi on Eruvin 15a:19:3",
+      "Rashi on Eruvin 15a:19:4",
+      "Eruvin 15a:19"
+    ],
+    "generatedAt": "2026-10-21T13:03:16.972Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15a:19:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דהוה בי בר חבו</strong> - והיה עמוד הסומך את היציע עומד בראש מבוי אחר:"
+  },
+  "Rashi on Eruvin 15a:19:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 15a:19:1",
+      "Rashi on Eruvin 15a:19:2",
+      "Rashi on Eruvin 15a:19:3",
+      "Rashi on Bava Metzia 22b:7:1",
+      "Steinsaltz on Eruvin 15a:19:1",
+      "Bava Metzia 22b:7"
+    ],
+    "generatedAt": "2026-10-21T13:05:56.424Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15a:19:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואפליגו בה כולי שנייהו</strong> - אביי שרי למיסמך עליה ורבא אסר אלמא בדסמכינן עליה פליגי והלכתא כאביי בהא דזו היא אחת מיע\"ל קג\"ם שהלכה כאביי:"
+  },
+  "Rashi on Eruvin 15a:1:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 15a:1:1",
+      "Eruvin 15a:1",
+      "Rashi on Eruvin 14b:1:1",
+      "Rashi on Eruvin 14b:2:1",
+      "Rashi on Eruvin 14b:3:1",
+      "Rashi on Eruvin 14b:4:1",
+      "Rashi on Eruvin 15a:2:1",
+      "Rashi on Eruvin 2a:1:1",
+      "Rashi on Eruvin 2a:2:1",
+      "Rashi on Eruvin 11b:1:1",
+      "Rashi on Eruvin 12a:1:1",
+      "Rashi on Eruvin 15a:5:1"
+    ],
+    "generatedAt": "2026-10-20T16:08:03.907Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">העומד מאליו</strong> - שלא הוקבע שם לשם תיקון מבוי דלא הזמינוהו לכך:"
+  },
+  "Rashi on Eruvin 15a:20:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 15a:20:1",
+      "Rashi on Eruvin 15a:2:1",
+      "Rashi on Eruvin 15a:10:1"
+    ],
+    "generatedAt": "2026-10-25T10:00:32.491Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומטמא משום גולל</strong> - אם עשאו גולל לקבר מטמא לעולם באהל כמת עצמו ואפי' ניטל משם דתניא בפ' בהמה המקשה <span class=\"parenthesized\">(חולין עב.)</span> כל אשר יגע על פני השדה לרבות גולל ודופק:"
+  },
+  "Rashi on Eruvin 15a:2:1": {
+    "dependsOn": [
+      "Eruvin 15a:1",
+      "Eruvin 15a:2",
+      "Rashi on Eruvin 15a:2:1",
+      "Rashi on Eruvin 15a:1:1",
+      "Rashi on Eruvin 15a:4:1",
+      "Rashi on Eruvin 15a:5:1",
+      "Rashi on Eruvin 14b:1:1",
+      "Rashi on Eruvin 14b:2:1",
+      "Rashi on Eruvin 14b:3:1",
+      "Rashi on Eruvin 14b:4:1",
+      "Rashi on Eruvin 14b:5:1"
+    ],
+    "generatedAt": "2026-10-20T16:09:30.648Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היכא דלא סמכינן עליה מאתמול</strong> - שהיה שם לחי אחר ונפל בשבת:"
+  },
+  "Rashi on Eruvin 15a:4:1": {
+    "dependsOn": [
+      "Eruvin 15a:4",
+      "Rashi on Eruvin 15a:4:1",
+      "Tosafot on Eruvin 15a:4:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Beitzah 2a:1:1"
+    ],
+    "generatedAt": "2026-10-20T16:11:59.549Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאישתמושי באילן</strong> - ויעלה ויתלוש ביום טוב:"
+  },
+  "Rashi on Eruvin 15a:5:1": {
+    "dependsOn": [
+      "Eruvin 15a:5",
+      "Rashi on Eruvin 15a:5:1",
+      "Rashi on Eruvin 15a:5:2",
+      "Rashi on Eruvin 15a:5:3",
+      "Rashi on Eruvin 15a:1:1",
+      "Rashi on Eruvin 15a:2:1",
+      "Rashi on Eruvin 15a:4:1",
+      "Eruvin 19b:1",
+      "Eruvin 19b:2",
+      "Eruvin 19b:3",
+      "Eruvin 19b:4",
+      "Eruvin 19b:5",
+      "Mesorat Hashas on Eruvin 15a:5:1",
+      "Tosefta on Eruvin 15a:5:1",
+      "Rashi on Eruvin 14b:1:1",
+      "Rashi on Eruvin 14b:2:1",
+      "Rashi on Eruvin 14b:3:1",
+      "Rashi on Eruvin 14b:4:1",
+      "Jastrow on Eruvin 15a:5:1"
+    ],
+    "generatedAt": "2026-10-20T16:17:34.545Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היה שם</strong> - בפסי ביראות תניא בפרק שני:"
+  },
+  "Rashi on Eruvin 15a:5:2": {
+    "dependsOn": [
+      "Eruvin 15a:5",
+      "Rashi on Eruvin 15a:5:1",
+      "Rashi on Eruvin 15a:5:2",
+      "Rashi on Eruvin 15a:5:3",
+      "Rashi on Eruvin 15a:10:1",
+      "Rashi on Eruvin 15a:10:2",
+      "Rashi on Eruvin 15a:10:3",
+      "Eruvin 15a:1",
+      "Rashi on Eruvin 14b:17:1",
+      "Rashi on Eruvin 14b:18:1",
+      "Rashi on Eruvin 14b:19:1"
+    ],
+    "generatedAt": "2026-10-20T16:18:55.995Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חיצת הקנים</strong> - קנים מחוברים. חיצת שהיו נטועים כסדר מחיצה:"
+  },
+  "Rashi on Eruvin 15a:5:3": {
+    "dependsOn": [
+      "Eruvin 15a:5",
+      "Rashi on Eruvin 15a:5:1",
+      "Rashi on Eruvin 15a:5:2",
+      "Rashi on Eruvin 15a:5:3"
+    ],
+    "generatedAt": "2026-10-20T16:28:08.658Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דיומד</strong> - מפרש בפ' שני דיו עמודין עמוד אחד נראה כשנים שעשאו כמרזב ונוטה אחד ממחיצותיו לדרום ואחד למערב דכי עביד ד' דיומדין לד' הפיאות יש לכל מחיצה ב' אמות עומד אמה מכאן ואמה מכאן: <span class=\"image-ref-container\"><span class=\"image-ref-text\">(*):</span><span class=\"image-ref\"><img src=\"data:image/png;base64,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\"></span></span><span class=\"image-pointer\">(*)</span>"
+  },
+  "Rashi on Eruvin 15a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T12:16:45.460Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדבעא מיניה</strong> - בפרק שני:"
+  },
+  "Rashi on Eruvin 15a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T12:21:04.411Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המסיך</strong> - נופו נוטה סמוך לארץ ראש הנוף בפחות מג' לקרקע ועיקרו במקום שמחובר לאילן גבוה עשרה:"
+  },
+  "Rashi on Eruvin 15a:8:1": {
+    "dependsOn": [
+      "Eruvin 15a:8",
+      "Rashi on Eruvin 15a:8:1",
+      "Rashi on Eruvin 15a:5:1",
+      "Rashi on Eruvin 15a:5:2",
+      "Rashi on Eruvin 15a:10:1"
+    ],
+    "generatedAt": "2026-10-21T12:30:51.672Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מטלטלין בו</strong> - אם היה היקפו יותר מבית סאתים כחצר המשכן ושיעור זה נתנו חכמים לכל היקף המתוקן ואינו מתוקן כל צרכו כגון למחיצה שאין בה שתי וערב בהאי פירקא <span class=\"parenthesized\">(ד' טז:)</span> ולהיקף שלא הוקף לדירה בפ' שני <span class=\"parenthesized\">(ד' כד.)</span> והכא נמי אי בעומד מאליו מוקמת לה שפיר כו' הואיל ולאו להכי עבידא יהבו ביה רבנן האי שיעורא:"
+  },
+  "Rashi on Eruvin 15a:9:1": {
+    "dependsOn": [
+      "Eruvin 15a:9",
+      "Eruvin 22a:17",
+      "Eruvin 22a:18",
+      "Rashi on Eruvin 22a:18:1"
+    ],
+    "generatedAt": "2026-10-21T12:33:25.735Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Eruvin 15a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום דהוי דירה שתשמישה לאויר</strong> - לעולם שנטעו מתחילה לכך והיקף לדירה הוא אבל דירה זו אינה עשויה לצורך תוכה אלא לצורך אויר שחוצה לה לדור שם שומרי השדות ועשויי' להציל מן החמה ואין מטלטלין בדירה זו אלא בית סאתים כדתניא בפ' שני <span class=\"parenthesized\">(ד' כב.)</span> כלל אמר ר\"ש בן אלעזר כל אויר שתשמישו לדירה כגון דיר וסהר ומוקצה וחצר ואפילו י' כורים מותר וכל דירה שתשמישה לאויר כגון בורגנין שבשדות בית סאתים מותר יותר מבית סאתים אסור דלאו דירה הוא דעל כרחו הוא דר שם:"
+  },
+  "Tosafot on Eruvin 15a:11:1": {
+    "dependsOn": [
+      "Eruvin 15a:11",
+      "Maharsha: Chidushei Halachot on Eruvin 15a:2",
+      "Tosafot on Eruvin 15a:4:1",
+      "Tosafot on Sukkah 24b:12:1"
+    ],
+    "generatedAt": "2026-10-21T12:45:54.230Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 15a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תל ונקע מאי איכא למימר</strong> - ולא תקשי מכאן למ\"ד מחיצה שאינה עשויה בידי אדם לא שמה מחיצה דלא אתיא למעוטי אלא דבר שאינו ראוי להעשות בידי אדם כגון בעלי חיים:"
+  },
+  "Tosafot on Eruvin 15a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T12:48:46.469Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 15a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אביי לטעמיה</strong> - היינו לחד לישנא דלעיל גבי היה גבוה מכ' ובא למעטו <span class=\"parenthesized\">(ד' ה.)</span> דקסבר דאפילו קורה משום מחיצה וכל שכן לחי ואותו לשון תופס עיקר ורבא לטעמיה דאמר לעיל אחד זה ואחד זה משום היכר ור\"ח לא גרס לטעמיה אלא גרס בהדיא אביי אמר לחי משום מחיצה ורבא אמר לחי משום היכר:"
+  },
+  "Tosafot on Eruvin 15a:17:1": {
+    "dependsOn": [
+      "Eruvin 17a:10",
+      "Eruvin 17a:11"
+    ],
+    "generatedAt": "2026-10-21T12:53:46.369Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 15a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא סבר לה מר למסמך אדיקלא</strong> - אף על גב דרב הונא אית ליה בפירקין <span class=\"parenthesized\">(ד' יז)</span> שבת הואיל והותרה הותרה ולא צריך למסמך אדיקלא הא מסיק לקמן דמודה רב הונא היכא דליתנהו למחיצות דלא אמרינן הואיל והותרה הותרה אי נמי הכא לפי דברי רב היה מקשה:"
+  },
+  "Tosafot on Eruvin 15a:4:1": {
+    "dependsOn": [
+      "Eruvin 15a:4",
+      "Sukkah 24b:11",
+      "Sukkah 24b:12",
+      "Rashi on Eruvin 15a:4:1",
+      "Tosafot on Sukkah 24b:7:1",
+      "Tosafot on Sukkah 24b:8:1",
+      "Rashba on Eruvin 15a:4:1",
+      "Ritva on Eruvin 15a:4:1",
+      "Rabbeinu Chananel on Eruvin 15a:4:1"
+    ],
+    "generatedAt": "2026-10-20T16:15:04.715Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 15a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תא שמע העושה סוכתו</strong> - בפ' הישן <span class=\"parenthesized\">(סוכה דף כד:)</span> מוקי לה דעביד לה בהוצא ודפנא דלא תקשי לרב אחא בר יעקב דאמר כל מחיצה שאינה יכולה לעמוד ברוח פירוש שהרוח מנענעת' לכאן ולכאן אינה מחיצה ואמאי כשרה והא קאזיל ואתי ולפי זה לא פריך הכא מידי והוה מצי למימר ולטעמיך אי נמי משמע ליה דמיירי בכל ענין בין הוי רוב דופן מעובי האילן שאינו הולך ברוח בין דהוי רוב דופן מן הנוף:"
+  },
+  "Tosafot on Eruvin 15a:6:1": {
+    "dependsOn": [
+      "Eruvin 15a:6",
+      "Tosafot on Eruvin 15a:4:1",
+      "Maharsha: Chidushei Halachot on Eruvin 15a:1",
+      "Meir Lublin: Maharam on Eruvin 15a:2",
+      "Rashi on Eruvin 15a:6:1",
+      "Steinsaltz on Eruvin 15a:6"
+    ],
+    "generatedAt": "2026-10-21T12:19:42.531Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Eruvin 15a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הכי מאי למימרא</strong> - ולא סגי בשינויא דלעיל דלא הוה נקט תרתי אטו חדא:"
+  }
+}

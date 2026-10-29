@@ -1,0 +1,349 @@
+{
+  "Rashi on Nazir 11a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T05:23:54.095Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Nazir 11a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרו חכמים</strong> - כיון דשיכורה היא ואינה זקוקה לשתיה נראין הדברים שלא נתכוונה זו לקבל עליה זה לשם נזירות אלא לומר יאסר עלי כוס זה כקרבן ואינה אסורה אלא בכוס יין זה בלבד:"
+  },
+  "Rashi on Nazir 11a:3:1": {
+    "dependsOn": [
+      "Rashi on Nazir 11a:1:1",
+      "Rashi on Nazir 11a:4:1",
+      "Rashi on Nazir 11a:5:1",
+      "Nazir 11a:1",
+      "Nazir 11a:2",
+      "Tosafot on Nazir 11a:3:1",
+      "Steinsaltz on Nazir 11a:3"
+    ],
+    "generatedAt": "2026-10-22T05:32:18.859Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Nazir 11a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכ\"ת</strong> - אי לאו דנתכוונה לקבל עליה נזירות אלא להיות נידורה ממנו לימא הכי בהאי לישנא הרי הוא עלי קרבן להכי הוא דלא אמרה הכי דסברה אי אמינא הכי סבירא להו שלא אסרתי עלי אלא כוס זה בלבד ומייתו לי כוס אחרינא ואמרי לי אשתי וקא מצערין לי דשתויי אנא ולא מצינא למשתי לי אימא להו בהאי לישנא דפסיקנא להו מילתא דהואי אסירא נמי בכסא אחרינא ותו לא מייתין לי ומעשה נמי באשה כו':"
+  },
+  "Rashi on Nazir 11a:4:1": {
+    "dependsOn": [
+      "Rashi on Nazir 11a:4:1",
+      "Steinsaltz on Nazir 11a:4:1",
+      "Tosafot on Nazir 11a:4:1",
+      "Rashi on Nazir 11a:1:1",
+      "Rashi on Nazir 11a:3:1"
+    ],
+    "generatedAt": "2026-10-22T05:47:34.702Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Nazir 11a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הריני נזיר על מנת שאהא שותה יין</strong> - וקיבל עליו את השאר:"
+  },
+  "Rashi on Nazir 11a:5:1": {
+    "dependsOn": [
+      "Nazir 11a:5",
+      "Rashi on Nazir 11a:4:1",
+      "Rashi on Nazir 11a:5:2",
+      "Rashi on Nazir 11a:5:3"
+    ],
+    "generatedAt": "2026-10-22T05:51:39.078Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Nazir 11a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל אם אמר יודע אני שיש נזיר בעולם ואיני יודע שנזיר אסור ביין ואמר הריני נזיר הרי זה אסור בכולן</strong> - והיינו רבנן דאמרי אפילו לא נדר אלא מחד מינייהו הוי נזיר בכולם:"
+  },
+  "Rashi on Nazir 11a:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T05:56:53.127Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Nazir 11a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי שמעון מתיר</strong> - דהואיל שלא קיבל עליו אלא חצי הנזירות שלא היה יודע שהנזיר אסור ביין הרי זה מותר בכולן ור' שמעון לטעמיה דאמר אינו אסור עד שיזיר מכולן:"
+  },
+  "Rashi on Nazir 11a:5:3": {
+    "dependsOn": [
+      "Rashi on Nazir 11a:5:1",
+      "Rashi on Nazir 11a:5:2",
+      "Rashi on Nazir 11a:5:4",
+      "Rashi on Nazir 11a:5:5",
+      "Nazir 11a:1",
+      "Nazir 11a:4",
+      "Tosafot on Nazir 11a:5:2"
+    ],
+    "generatedAt": "2026-10-22T06:02:42.894Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Nazir 11a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם אמר יודע אני שנזיר אסור ביין אבל סבור הייתי</strong> - כשהזרתי מן היין שיהו חכמים מתירין לי מפני שאיני יכול לחיות בלא יין:"
+  },
+  "Rashi on Nazir 11a:5:4": {
+    "dependsOn": [
+      "Rashi on Nazir 11a:5:1",
+      "Rashi on Nazir 11a:5:2",
+      "Rashi on Nazir 11a:5:3",
+      "Rashi on Nazir 11a:5:4",
+      "Rashi on Nazir 11a:5:5",
+      "Steinsaltz on Nazir 11a:5",
+      "Nazir 11a:6",
+      "Nazir 11b:1",
+      "Nazir 11b:2",
+      "Nazir 11b:3",
+      "Rashi on Nazir 11b:2:1",
+      "Rashi on Nazir 11b:3:1",
+      "Rashi on Nazir 11a:4:1"
+    ],
+    "generatedAt": "2026-10-22T06:08:08.742Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Nazir 11a:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או יודע אני שהנזיר אסור לקבור מתים</strong> - וכשקבלתי עלי נזירות סבור הייתי שיהו חכמים מתירין לי מפני שאומנתי לקבור מתים הרי זה מותר דאיגלאי מילתא למפרע דמעיקרא לא קביל עילויה נזירות מיין ומטומאת מתים ולא קיבל עליו אלא חצי נזירות:"
+  },
+  "Rashi on Nazir 11a:5:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T06:10:15.835Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Nazir 11a:5:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור\"ש אוסר</strong> - וטעמא מפרש בגמ':"
+  },
+  "Rashi on Nazir 11a:6:1": {
+    "dependsOn": [
+      "Nazir 11a:6"
+    ],
+    "generatedAt": "2026-10-22T06:26:38.963Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Nazir 11a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וליפלוג נמי ר\"ש ברישא</strong> - כי היכי דפליג ר\"\"ש איודע אני שיש נזירות דלא חייל עליה נזירות משום דלא קיבל כל דקדוקי נזירות:"
+  },
+  "Rashi on Nazir 11a:7:1": {
+    "dependsOn": [
+      "Nazir 11a:7",
+      "Rashi on Nazir 11a:6:1",
+      "Rashi on Nazir 11a:7:1",
+      "Rashi on Nazir 11a:7:2",
+      "Rashi on Nazir 11a:7:3",
+      "Nazir 11a:5",
+      "Steinsaltz on Nazir 11a:7",
+      "Tosafot on Nazir 11a:7:1"
+    ],
+    "generatedAt": "2026-10-22T06:33:03.460Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Nazir 11a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חלוק היה ר\"ש אף בראשונה</strong> - דראשונה נמי קאמר ר\"ש כיון דאמר על מנת שאהא שותה ביין ומיטמא למת לא נדר אלא בתגלחת לבד ור\"ש לטעמיה דאמר אינו נזיר עד שיזיר מכולן:"
+  },
+  "Rashi on Nazir 11a:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T06:37:03.342Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Nazir 11a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבינא אמר ברישא ודאי לא פליג ר\"ש</strong> - דאילו התם כיון דאמר הריני נזיר קיבל עליו כל תורת נזיר והאי דאמר ע\"מ הוי ליה מתנה על מה שכתוב בתורה ואין בתנאו כלום והוה ליה נזיר גמור דהוי ליה כמי שאמר על מנת שאין לך עלי שאר כסות ועונה שאין בתנאו כלום ויתחייב לה בכולן:"
+  },
+  "Rashi on Nazir 11a:7:3": {
+    "dependsOn": [
+      "Rashi on Nazir 11a:7:1",
+      "Rashi on Nazir 11a:7:2"
+    ],
+    "generatedAt": "2026-10-22T06:44:26.319Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Nazir 11a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וריב\"ל אמר לך</strong> - ברישא נמי פליג ר\"ש דהאי ע\"מ כחוץ דמי כיון דקבל עליו נזירות במקצת לא הוי מתנה על מה שכתוב בתורה דאילו לגבי מאן דאמר ע\"מ שאין ליך עלי לא שאר ולא כסות ולא עונה לא קיבל עליו כלום אבל הכא קבל עליו במקצת ומשום הכי הוי תנאו קיים ואינו נזיר לפי שאין דבריו הראשונים כלום משום דלרבי שמעון לא הוי נזיר עד שיזיר בכולן:"
+  },
+  "Rashi on Nazir 11a:8:1": {
+    "dependsOn": [
+      "Nazir 11a:8",
+      "Rashi on Nazir 11a:7:1",
+      "Rashi on Nazir 11a:7:2",
+      "Rashi on Nazir 11a:7:3",
+      "Tosafot on Nazir 11a:8:1",
+      "Nazir 11a:1",
+      "Nazir 11a:4",
+      "Nazir 11a:5"
+    ],
+    "generatedAt": "2026-10-22T06:52:11.725Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Nazir 11a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תניא כוותיה דרבינא</strong> - דאפילו במקצת קא חשיב ליה מתנה:"
+  },
+  "Rashi on Nazir 11a:9:1": {
+    "dependsOn": [
+      "Nazir 11a:9",
+      "Nazir 11a:1",
+      "Nazir 11a:5",
+      "Rashi on Nazir 11a:6:1",
+      "Rashi on Nazir 11a:7:1",
+      "Rashi on Nazir 11a:5:1",
+      "Rashi on Nazir 11a:5:2"
+    ],
+    "generatedAt": "2026-10-22T06:57:22.629Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Nazir 11a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור\"ש אוסר והאמרת רישא ר\"ש מתיר</strong> - דחצי נזירות קיבל עליו ואין נודרין לחצאין:"
+  },
+  "Tosafot on Nazir 11a:1:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 11a:1:1",
+      "Tosafot on Nazir 11a:1:2",
+      "Rashi on Nazir 11a:1:1"
+    ],
+    "generatedAt": "2026-10-22T05:26:29.655Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Nazir 11a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הריני נזיר ממנו</strong> - פי' נזיר מן הכוס הרי זה נזיר פי' כל דין נזירות עליו:"
+  },
+  "Tosafot on Nazir 11a:1:2": {
+    "dependsOn": [
+      "Nazir 11a:1",
+      "Tosafot on Nazir 11a:1:1"
+    ],
+    "generatedAt": "2026-10-22T05:28:04.785Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Nazir 11a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעשה באשה אחת ואמרו חכמים לא נתכוונה זו אלא לומר הרי עלי כוס זה כקרבן</strong> - ולא נאסרה אלא באותו כוס בלבד ובגמ' פריך מעשה לסתור:"
+  },
+  "Tosafot on Nazir 11a:3:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 11a:3:1",
+      "Tosafot on Nazir 11a:4:1",
+      "Rashi on Nazir 11a:3:1",
+      "Tosafot on Nazir 11a:1:1"
+    ],
+    "generatedAt": "2026-10-22T05:45:22.498Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Nazir 11a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם שכור הוא הוה כאומר עלי בקרבן</strong> - פי' שדרך בני אדם להפציר בשכור שישתה ועתה אינו רוצה לשתות ואומר נזיר הוא לסלקם מעליו שאם לא יאמר נזיר הוא ירא שיביאו לו כוס אחר לכך אומר נזיר לסלקם לגמרי מעליו אבל כשאינו שכור אין דרך להפצירו ולכך אומר דנזיר מכולהו ומעשה נמי באשה אחת וכו':"
+  },
+  "Tosafot on Nazir 11a:4:1": {
+    "dependsOn": [
+      "Nazir 11a:4",
+      "Nazir 11a:8"
+    ],
+    "generatedAt": "2026-10-22T05:49:27.141Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Nazir 11a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על מנת שאשתה ביין כו' ה\"ז נזיר ואסור בכולן</strong> - איכא למ\"ד בגמ' משום דהוי מתנה על מה שכתוב בתורה [דכי אמר] הריני נזיר הוי נזיר לכל מילי וכי מטיל בה תנאי אין בתנאי כלום ואפי' ר\"ש מודה ברישא כההוא לישנא דתניא כוותיה:"
+  },
+  "Tosafot on Nazir 11a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T06:12:14.960Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Nazir 11a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל איני יודע שנזיר אסור ביין</strong> - כלומר שאר הלכות קבלתי עלי לבד מאיסור יין שלא קבלתי לפי שלא ידעתי שנזיר אסור ביין לרבנן הוי נזיר לטעמייהו דלעיל דאפי' לא נדר אלא מחד הוי נזיר ור\"ש מתיר ואזיל לטעמיה דאמר <span class=\"parenthesized\">(לעיל נזיר דף ג:)</span> עד שיזיר מכולן:"
+  },
+  "Tosafot on Nazir 11a:5:2": {
+    "dependsOn": [
+      "Nazir 11a:5",
+      "Tosafot on Nazir 11a:5:1",
+      "Nazir 11a:8",
+      "Rashi on Nazir 11a:5:1",
+      "Rashi on Nazir 11a:5:2",
+      "Rashi on Nazir 11a:5:3",
+      "Rashi on Nazir 11a:5:4",
+      "Rashi on Nazir 11a:5:5"
+    ],
+    "generatedAt": "2026-10-22T06:18:51.645Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Nazir 11a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יודע אני שהנזיר אסור ביין אבל אני סבור הייתי שהחכמים מתירין מפני שאיני יכול לחיות אלא ביין או מפני שאני קובר את המתים</strong> - כלומ' שאני צריך לטמאות בהם וליטפל בהן בשכר מחמת דוחקי ולכך לא היה בדעתי לקבל איסור יין או טומאת מתים <span class=\"parenthesized\">(ה\"ז מותר)</span> וכן הוא אומר שלא קבל עליו איסור יין או טומאת מתים ה\"ז מותר ור\"ש אוסר ובגמ' פריך דאיפכא הוה ליה למיתני:"
+  },
+  "Tosafot on Nazir 11a:6:1": {
+    "dependsOn": [
+      "Nazir 11a:1",
+      "Nazir 11a:6"
+    ],
+    "generatedAt": "2026-10-22T06:29:34.141Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Nazir 11a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף בראשונה</strong> - והא דקתני ר\"ש [מתיר] קאי בתרי [בבי]:"
+  },
+  "Tosafot on Nazir 11a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T06:46:14.827Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Nazir 11a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דהוי מתנה על מה שכתוב בתורה</strong> - דכשאמר הריני נזיר חייל עליו נזירות לכל מילי וכי אמר ע\"מ מטיל התנאי על מה שכתוב בתורה ובטל התנאי וא\"ת ותיפוק ליה דנזירות אי אפשר לקיים ע\"י שליח דאמר בהמדיר <span class=\"parenthesized\">(כתובות עד.)</span> דבעינן תנאי דומיא דבני גד ובני ראובן שנתקיים המעשה ע\"י יהושע שהיה שליח משה והתם מהני תנאה לבטל המעשה ולא בעלמא וי\"ל אחרי שאחרים יכולים להביא קרבנות תחתיו נחשב כאילו כל המעשה יכול לעשות ע\"י שליח וא\"ת הא אמרינן <span class=\"parenthesized\">(במנחות קט.)</span> הריני נזיר לגלח בבית חוניו יגלח בבית המקדש גילח בבית חוניו יצא ואמאי הא הוי מתנה על מה שכתוב בתורה והל\"ל בחוניו לא יצא וי\"ל דמשמעות לשונו הרי הוא שנים משמע מקדש ואז גילח בחוניו לא יצא ומשמע נמי שאינו מכוין כי אם לצעורי ואז גילח בחוניו יצא ובמקדש הוי חולין בעזרה ונזירות מתלא תליא וקאי אי מגלח במקדש גליא מלתא דלנזירות מעלייתא איכוין ועל מנת דאמר לא כלום הוא ואם גילח בחוניו גליא מילתא דלצעורי מכוין:"
+  },
+  "Tosafot on Nazir 11a:7:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 11a:7:1",
+      "Tosafot on Nazir 11a:7:2",
+      "Nazir 3b:10",
+      "Nazir 11a:1",
+      "Nazir 11a:4"
+    ],
+    "generatedAt": "2026-10-22T06:49:28.746Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Nazir 11a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האי ע\"מ כחוץ דמי</strong> - כאילו אמר הריני נזיר מכל מלתא חוץ מן היין דלא הוי נזיר לר\"ש דבעינן עד שידור מכולן וא\"ת והא מקדש את האשה ע\"מ שאין לה עליו שאר כסות ועונה הויא מקודשת והתנאי בטל <span class=\"parenthesized\">(קדושין דף יט:)</span> ולא אמר כחוץ דמי וי\"ל דגבי קדושין שאני דאפילו אמר בפירוש חוץ משאר לא מהניא ליה דבורו דאין קדושין לחצאין וכי אמר הרי את מקודשת [מקודשת] וכי אמר חוץ משאר לאו מידי קאמר ולכך חייב בכולן אבל גבי נזיר ילפינן לעיל <span class=\"parenthesized\">(נזיר דף ג:)</span> מקראי דצריך שיזיר מכולן דאם נדר מאחד מהם לא הוי נזיר:"
+  },
+  "Tosafot on Nazir 11a:8:1": {
+    "dependsOn": [
+      "Nazir 11a:8"
+    ],
+    "generatedAt": "2026-10-22T06:54:35.380Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Nazir 11a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תניא כוותיה דרבינא</strong> - דהא אמר על מנת חשבינן ליה תנאי ולא כאומר חוץ:"
+  }
+}

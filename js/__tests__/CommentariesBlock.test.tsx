@@ -6,6 +6,7 @@ import {TestConfiguration, TestContext} from "./testing/configuration";
 import {
   classesOf,
   click,
+  doubleClick,
   mount,
   query,
   queryAll,
@@ -18,7 +19,7 @@ import {
   installPageEnvironment,
 } from "./testing/page_environment";
 import {commentaries, resetFixtureCounter} from "./testing/fixtures";
-import {rsiReviewKeyPreference} from "../settings";
+import {rsiReviewKeyPreference, rsiReviewerIdentityPreference} from "../settings";
 
 let gtagCalls: GtagCall[];
 
@@ -556,5 +557,110 @@ describe("nested commentaries", () => {
       "Edit",
       "Reject",
     ]);
+  });
+
+  test("review controls in open Model subcomment survive parent re-render", () => {
+    rsiReviewKeyPreference.set("secret123");
+    const MODEL = kind("Model", "model");
+    const root = render(
+      commentaries({
+        Rashi: [{
+          he: "רש״י",
+          en: "translation",
+          pendingReview: "Shabbat 2b",
+          commentary: commentaries({
+            Model: [{he: "gemini-3.8-flash-high", en: "gemini-3.8-flash-high"}],
+          }),
+        }],
+        Tosafot: [{he: "תוספות"}],
+      }),
+      {
+        commentaryTypes: [RASHI, TOSAFOT, MODEL],
+        initiallyOpen: ["rashi"],
+      });
+
+    click(query(root, ".show-buttons a.model"));
+    expect(query(root, ".rsi-review-controls")).toBeTruthy();
+
+    click(query(root, ".rsi-review-button.rsi-review-edit"));
+    expect(queryAll(root, "textarea")).toHaveLength(2);
+
+    // Open Tosafot, causing CommentariesBlock to re-render
+    click(query(root, ".show-buttons a.tosafot"));
+
+    // Textareas should STILL be open!
+    expect(queryAll(root, "textarea")).toHaveLength(2);
+  });
+
+  test("reject modal in open Model subcomment survives parent re-render", () => {
+    rsiReviewKeyPreference.set("secret123");
+    rsiReviewerIdentityPreference.set("reviewer@example.com");
+    const MODEL = kind("Model", "model");
+    const root = render(
+      commentaries({
+        Rashi: [{
+          he: "רש״י",
+          en: "translation",
+          pendingReview: "Shabbat 2b",
+          commentary: commentaries({
+            Model: [{he: "gemini-3.8-flash-high", en: "gemini-3.8-flash-high"}],
+          }),
+        }],
+        Tosafot: [{he: "תוספות"}],
+      }),
+      {
+        commentaryTypes: [RASHI, TOSAFOT, MODEL],
+        initiallyOpen: ["rashi"],
+      });
+
+    click(query(root, ".show-buttons a.model"));
+    click(query(root, ".rsi-review-button.rsi-review-reject"));
+    expect(query(root, ".modal textarea")).toBeTruthy();
+
+    // Open Tosafot, causing CommentariesBlock to re-render
+    click(query(root, ".show-buttons a.tosafot"));
+
+    // Modal should STILL be open!
+    expect(query(root, ".modal textarea")).toBeTruthy();
+  });
+
+  test("nested Explanation synthetic comment toggles via double-click", () => {
+    const EXPLANATION = kind("Explanation", "explanation", {hebrewName: "ביאור"});
+    const root = render(
+      commentaries({
+        Rashi: [{
+          ref: "Rashi on Berakhot 2a:1:1",
+          he: 'מתני׳ כ״א תקיעות',
+          commentary: commentaries({
+            Explanation: [{
+              ref: "Rashi on Berakhot 2a:1:1:explanation",
+              he: "הגמרא",
+              sourceRef: "Explanation",
+              sourceHeRef: "ביאור",
+            }],
+          }),
+        }],
+      }),
+      {
+        commentaryTypes: [RASHI, TOSAFOT, EXPLANATION],
+        initiallyOpen: ["rashi"],
+      },
+    );
+
+    // Explanation should NOT be in the show-buttons toolbar
+    expect(queryAll(root, ".show-buttons a.synthetic-explanation")).toHaveLength(0);
+
+    // Double click to open
+    doubleClick(query(root, ".IndividualComment:not(.synthetic-explanation) .table-cell.hebrew"));
+    // Both Rashi and Explanation comments are visible
+    expect(commentTexts(root)).toContain("הגמרא");
+
+    // Double click to close
+    doubleClick(query(root, ".IndividualComment:not(.synthetic-explanation) .table-cell.hebrew"));
+    expect(commentTexts(root)).not.toContain("הגמרא");
+
+    // Double click to open again
+    doubleClick(query(root, ".IndividualComment:not(.synthetic-explanation) .table-cell.hebrew"));
+    expect(commentTexts(root)).toContain("הגמרא");
   });
 });

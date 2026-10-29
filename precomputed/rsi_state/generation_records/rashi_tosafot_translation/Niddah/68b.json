@@ -1,0 +1,841 @@
+{
+  "Rashi on Niddah 68b:10:1": {
+    "dependsOn": [
+      "Niddah 68b:10",
+      "Rashi on Niddah 68b:10:1",
+      "Steinsaltz on Niddah 68b:10:1",
+      "Steinsaltz In-Depth on Niddah 68b:10:1",
+      "Rashi on Niddah 68b:9:1",
+      "Rashi on Niddah 68b:13:1",
+      "Rashi on Niddah 68b:14:1",
+      "Niddah 68b:1",
+      "Niddah 68a:15",
+      "Rashi on Niddah 68b:2:1",
+      "Rashi on Niddah 68b:4:1",
+      "Rashi on Niddah 68b:4:2",
+      "Rashi on Niddah 68b:5:1"
+    ],
+    "generatedAt": "2026-10-19T10:50:51.392Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 68b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי איכא למאן דאמר כו'</strong> - והא אפילו רבנן בתראי בשני שלה הוא דקאמרי אבל בראשון דהוי פתיחת מעיינה ליכא למאן דאמר דאם בדקה בצהרים ומצאה טהור דתהוי הפרשה:"
+  },
+  "Rashi on Niddah 68b:13:1": {
+    "dependsOn": [
+      "Niddah 68b:13",
+      "Rashi on Niddah 68b:14:1",
+      "Rashi on Niddah 68b:10:1",
+      "Rashi on Niddah 68b:4:1",
+      "Rashi on Niddah 68b:6:1",
+      "Rashi on Niddah 68b:7:1",
+      "Rashi on Niddah 68b:9:1",
+      "Rashi on Niddah 68b:1:1",
+      "Rashi on Niddah 68b:2:1",
+      "Rashi on Niddah 68b:15:1",
+      "Rashi on Niddah 68a:1:1",
+      "Rashi on Niddah 68a:2:1",
+      "Rashi on Niddah 68a:3:1",
+      "Rashi on Niddah 68a:4:1"
+    ],
+    "generatedAt": "2026-10-19T10:59:12.840Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 68b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וטעיתי שלא שאלתי</strong> - שאילו שאלתי היו מטהרין:"
+  },
+  "Rashi on Niddah 68b:14:1": {
+    "dependsOn": [
+      "Niddah 68b:14",
+      "Rashi on Niddah 68b:13:1",
+      "Rashi on Niddah 68b:14:1",
+      "Rashi on Berakhot 12a:10:1",
+      "Rashba on Niddah 68b:14:1"
+    ],
+    "generatedAt": "2026-10-19T11:00:43.845Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 68b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעיקרא מאי סבר</strong> - שלא רצה לשאול:"
+  },
+  "Rashi on Niddah 68b:15:1": {
+    "dependsOn": [
+      "Niddah 68b:15",
+      "Rashi on Niddah 68b:15:1",
+      "Rashi on Niddah 68b:15:2",
+      "Rashi on Niddah 68b:14:1",
+      "Rashi on Niddah 68b:13:1",
+      "Rashi on Niddah 68b:10:1",
+      "Rashi on Niddah 68b:9:1",
+      "Rashi on Niddah 68b:17:1",
+      "Rashi on Niddah 68b:17:2",
+      "Rashi on Niddah 68b:18:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1",
+      "Steinsaltz on Niddah 68b:15:1",
+      "Steinsaltz In-Depth on Niddah 68b:15:1",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 3a:1:1",
+      "Rashi on Berakhot 3a:2:1",
+      "Rashi on Berakhot 4a:1:1",
+      "Rashi on Berakhot 4a:2:1",
+      "Rashi on Berakhot 4b:1:1",
+      "Rashi on Berakhot 5a:1:1",
+      "Rashi on Berakhot 5a:2:1",
+      "Rashi on Berakhot 5a:3:1",
+      "Rashi on Berakhot 5b:1:1",
+      "Rashi on Berakhot 6a:1:1",
+      "Rashi on Berakhot 6b:1:1",
+      "Rashi on Berakhot 7a:1:1",
+      "Rashi on Berakhot 7b:1:1"
+    ],
+    "generatedAt": "2026-10-19T11:04:05.589Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 68b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הזב והזבה</strong> - שפסקו והתחילו לספור ז' ובדקו יום ראשון ושביעי כו':"
+  },
+  "Rashi on Niddah 68b:15:2": {
+    "dependsOn": [
+      "Niddah 68b:15",
+      "Rashi on Niddah 68b:15:1",
+      "Rashi on Niddah 68b:15:2",
+      "Rashi on Niddah 68b:14:1",
+      "Rashi on Niddah 68b:17:1",
+      "Rashi on Niddah 68b:17:2",
+      "Rashi on Niddah 2a:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:8:1",
+      "Rashi on Berakhot 2a:9:1",
+      "Rashi on Berakhot 10b:2:1",
+      "Berakhot 2a:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:4:1",
+      "Niddah 68b:1"
+    ],
+    "generatedAt": "2026-10-19T11:06:20.208Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 68b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי עקיבא אומר אין להם אלא שביעי</strong> - שמא ראו בינתיים וסתרו ספירתן הראשונה:"
+  },
+  "Rashi on Niddah 68b:17:1": {
+    "dependsOn": [
+      "Niddah 68b:17",
+      "Rashi on Niddah 68b:17:1",
+      "Rashi on Niddah 68b:17:2",
+      "Rashi on Niddah 68b:15:1",
+      "Rashi on Niddah 68b:16:1",
+      "Rashi on Niddah 68b:18:1",
+      "Rashi on Niddah 68b:1:1",
+      "Rashi on Niddah 68b:2:1",
+      "Rashi on Niddah 68b:4:1",
+      "Rashi on Niddah 68b:6:1",
+      "Rashi on Niddah 68a:1:1",
+      "Rashi on Niddah 68a:2:1",
+      "Rashi on Niddah 68a:3:1",
+      "Rashi on Niddah 69a:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3"
+    ],
+    "generatedAt": "2026-10-19T11:13:08.162Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 68b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי אתה מודה בזב שראה קרי</strong> - בימי ספירו שאינו מונה אותו יום דקיימא לן דסותר יום א' ומונה לסירוגין:"
+  },
+  "Rashi on Niddah 68b:17:2": {
+    "dependsOn": [
+      "Niddah 68b:17",
+      "Rashi on Niddah 68b:17:1",
+      "Rashi on Niddah 68b:17:2",
+      "Rashi on Niddah 68b:18:1",
+      "Rashi on Niddah 68b:19:1",
+      "Rashi on Niddah 68b:19:2",
+      "Rashi on Niddah 68b:19:3"
+    ],
+    "generatedAt": "2026-10-19T11:14:33.028Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 68b:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונזיר שהילך סככות ופרעות</strong> - שהן ספק אהל אין אותו יום עולה למנין נזירותו ונמצא שמונה ל' יום של סתם נזירות בסירוגין:"
+  },
+  "Rashi on Niddah 68b:18:1": {
+    "dependsOn": [
+      "Niddah 68b:17",
+      "Niddah 68b:18",
+      "Rashi on Niddah 68b:18:1",
+      "Rashi on Niddah 68b:18:2",
+      "Rashi on Niddah 68b:18:3",
+      "Rashi on Niddah 68b:2:1",
+      "Rashi on Niddah 68b:4:1",
+      "Rashi on Niddah 68b:6:1",
+      "Rashi on Niddah 68b:7:1",
+      "Rashi on Niddah 68b:15:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3"
+    ],
+    "generatedAt": "2026-10-19T11:16:13.088Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 68b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם</strong> - זב שראה קרי:"
+  },
+  "Rashi on Niddah 68b:18:2": {
+    "dependsOn": [
+      "Niddah 68b:18",
+      "Rashi on Niddah 68b:18:1",
+      "Rashi on Niddah 68b:18:2",
+      "Rashi on Niddah 68b:18:3",
+      "Rashi on Niddah 68b:15:1",
+      "Rashi on Niddah 68b:15:2",
+      "Rashi on Niddah 68b:16:1",
+      "Rashi on Niddah 68b:17:1",
+      "Rashi on Niddah 68b:17:2",
+      "Rashi on Niddah 68a:1:1",
+      "Rashi on Niddah 68a:2:1",
+      "Rashi on Niddah 68b:2:1",
+      "Rashi on Niddah 68b:4:1",
+      "Rashi on Niddah 68b:7:1",
+      "Rashi on Niddah 67b:1:1",
+      "Rashi on Niddah 67b:3:1",
+      "Rashi on Niddah 67b:5:1",
+      "Rashi on Niddah 67b:7:1",
+      "Rashi on Niddah 67b:8:1"
+    ],
+    "generatedAt": "2026-10-19T11:21:30.111Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 68b:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לטמאה בה כתיב</strong> - זאת תורת הזב ואשר תצא ממנו שכבת זרע וגו' <span class=\"parenthesized\">(ויקרא טו)</span> מה זיבה סותרת אף קרי סותר אי מה זיבה סותרת הכל אף קרי סותר הכל ת\"ל לטמאה בה אין לך סתירה אלא בטומאתה האמור בה מה טומאת קרי יום אחד אף סתירתה יום אחד:"
+  },
+  "Rashi on Niddah 68b:18:3": {
+    "dependsOn": [
+      "Niddah 68b:18",
+      "Rashi on Niddah 68b:18:1",
+      "Rashi on Niddah 68b:18:2",
+      "Rashi on Niddah 68b:18:3",
+      "Rashi on Niddah 68b:1:1",
+      "Rashi on Niddah 68b:4:1",
+      "Rashi on Niddah 68b:6:1",
+      "Rashi on Niddah 68b:15:1",
+      "Rashi on Niddah 68a:1:1",
+      "Rashi on Niddah 67b:1:1"
+    ],
+    "generatedAt": "2026-10-19T11:23:09.831Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 68b:18:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי משום איחלופי</strong> - דלא ליתי למנות לסירוגין בזיבה גמורה:"
+  },
+  "Rashi on Niddah 68b:19:1": {
+    "dependsOn": [
+      "Niddah 68b:19",
+      "Pesachim 81b:14",
+      "Pesachim 81b:15",
+      "Pesachim 81b:16",
+      "Pesachim 81b:8",
+      "Rashi on Niddah 68b:19:1",
+      "Rashi on Niddah 68b:19:2",
+      "Rashi on Niddah 68b:19:3",
+      "Rashi on Niddah 68b:18:1",
+      "Rashi on Niddah 68b:18:2",
+      "Rashi on Niddah 68b:18:3",
+      "Rashi on Niddah 68b:1:1",
+      "Rashi on Niddah 68b:2:1",
+      "Rashi on Niddah 68b:4:1",
+      "Rashi on Niddah 68b:4:2",
+      "Rashi on Niddah 67b:1:1",
+      "Rashi on Niddah 67b:2:1",
+      "Rashi on Niddah 68a:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:4:1",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Niddah 2a:1:1",
+      "Rashi on Niddah 2a:2:1",
+      "Rashi on Niddah 2a:3:1",
+      "Rashi on Niddah 2a:4:1"
+    ],
+    "generatedAt": "2026-10-19T11:26:47.887Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 68b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אהל מעליא בעינן</strong> - אין נזיר מטמא אלא באהל מת ודאי כדכתיב <span class=\"parenthesized\">(במדבר ו׳:ט׳)</span> וכי ימות מת עליו במחוורת עליו כדאמר בכיצד צולין <span class=\"parenthesized\">(פסחים פא:)</span>:"
+  },
+  "Rashi on Niddah 68b:19:2": {
+    "dependsOn": [
+      "Niddah 68b:19",
+      "Rashi on Niddah 68b:19:1",
+      "Rashi on Niddah 68b:19:2",
+      "Rashi on Niddah 68b:19:3",
+      "Rashi on Niddah 68b:4:1",
+      "Rashi on Niddah 68b:6:1",
+      "Rashi on Niddah 68b:15:1",
+      "Niddah 68b:18",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:8:1",
+      "Rashi on Berakhot 2a:9:1",
+      "Rashi on Berakhot 2a:10:1"
+    ],
+    "generatedAt": "2026-10-19T11:35:57.045Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 68b:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבנן גזור ביה</strong> - לסתור אותו יום. וא\"ת אתי לאיחלופי באהל מת גמור ולא יסתור אלא יום א':"
+  },
+  "Rashi on Niddah 68b:19:3": {
+    "dependsOn": [
+      "Niddah 68b:19",
+      "Rashi on Niddah 68b:19:1",
+      "Rashi on Niddah 68b:19:2",
+      "Rashi on Niddah 68b:19:3",
+      "Rashi on Niddah 68b:18:1",
+      "Rashi on Niddah 68b:18:2",
+      "Rashi on Niddah 68b:18:3",
+      "Rashi on Niddah 68b:20:1"
+    ],
+    "generatedAt": "2026-10-19T11:37:32.152Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 68b:19:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דרבנן בדאורייתא</strong> - אהל ספק דרבנן באהל דאורייתא לא מיחלף:"
+  },
+  "Rashi on Niddah 68b:1:1": {
+    "dependsOn": [
+      "Niddah 68b:1",
+      "Niddah 67b:8",
+      "Niddah 67b:9",
+      "Niddah 68a:1",
+      "Niddah 68a:11",
+      "Niddah 68a:12",
+      "Niddah 68a:13",
+      "Niddah 68a:14",
+      "Niddah 68a:15",
+      "Niddah 67b:6",
+      "Niddah 67b:7",
+      "Niddah 67b:1",
+      "Niddah 67b:2",
+      "Niddah 67b:3",
+      "Niddah 67b:4",
+      "Niddah 67b:5",
+      "Niddah 68a:7",
+      "Niddah 68a:8",
+      "Niddah 68a:9",
+      "Niddah 68a:10",
+      "Rashi on Niddah 68a:11:1",
+      "Rashi on Niddah 68a:12:1",
+      "Rashi on Niddah 68a:13:1",
+      "Rashi on Niddah 68a:14:1",
+      "Rashi on Niddah 68a:15:1",
+      "Steinsaltz on Niddah 68b:1:1",
+      "Rashi on Niddah 68b:2:1",
+      "Rashi on Niddah 68b:4:1",
+      "Rashi on Niddah 68b:4:2",
+      "Rashi on Niddah 68b:6:1",
+      "Rashi on Niddah 68b:6:2",
+      "Rashi on Niddah 68b:7:1",
+      "Rashi on Niddah 68b:9:1",
+      "Rashi on Niddah 68b:10:1",
+      "Rashi on Niddah 68b:13:1",
+      "Rashi on Niddah 68b:14:1"
+    ],
+    "generatedAt": "2026-10-19T10:08:05.849Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 68b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן תנא לוי במתניתא</strong> - אסיפא דמתני' תני הכי בדקה ז' שחרית ומצאה טמאה ובין השמשות לא הפרישה ואחר הימים בין בדקה ומצאה טהורה בין בדקה ומצאה טמאה הרי זו ספק זבה:"
+  },
+  "Rashi on Niddah 68b:20:1": {
+    "dependsOn": [
+      "Niddah 68b:19",
+      "Niddah 68b:20",
+      "Rashi on Niddah 68b:18:1",
+      "Rashi on Niddah 68b:18:2",
+      "Rashi on Niddah 68b:18:3",
+      "Rashi on Niddah 68b:19:1",
+      "Rashi on Niddah 68b:19:2",
+      "Rashi on Niddah 68b:19:3",
+      "Rashi on Niddah 68b:1:1",
+      "Rashi on Niddah 68b:2:1",
+      "Rashi on Niddah 68b:4:1",
+      "Rashi on Niddah 68b:4:2",
+      "Rashi on Niddah 68b:5:1",
+      "Rashi on Niddah 68a:1:1",
+      "Rashi on Niddah 68a:2:1",
+      "Rashi on Niddah 68b:6:1",
+      "Rashi on Niddah 68b:7:1",
+      "Rashi on Niddah 68b:13:1",
+      "Rashi on Niddah 68b:15:1"
+    ],
+    "generatedAt": "2026-10-19T11:39:51.143Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 68b:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל הכא אי חיישינן</strong> - ולא תמנה יום שבינתיים משום דלמא חזאי בספק אתי למיחלף בודאי דאמרינן מדלא מנינן הני ימים ודאי חזאי בינתיים וקא מניא לראשון ואתיא למנות ודאי רואה בסירוגין:"
+  },
+  "Rashi on Niddah 68b:21:1": {
+    "dependsOn": [
+      "Niddah 68b:21",
+      "Niddah 68b:15",
+      "Rashi on Niddah 68b:21:2",
+      "Tosafot on Niddah 68b:21:1",
+      "Steinsaltz on Niddah 68b:21",
+      "Rashi on Niddah 68b:2:1",
+      "Rashi on Niddah 68b:4:1",
+      "Rashi on Niddah 68b:4:2",
+      "Rashi on Niddah 68b:15:1",
+      "Rashi on Berakhot 52b:1:1",
+      "Rashi on Ketubot 108b:1:1",
+      "Rashi on Gittin 64b:1:1",
+      "Rashi on Niddah 68b:20:1",
+      "Rashi on Niddah 68b:6:1",
+      "Rashi on Niddah 68b:7:1",
+      "Rashi on Niddah 68b:10:1"
+    ],
+    "generatedAt": "2026-10-19T11:42:07.101Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 68b:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נראין דברי ר\"א מדברי רבי יהושע</strong> - דכיון דחייש רבי יהושע לשמא ראה בינתיים היה לו לסתור אף הראשון:"
+  },
+  "Rashi on Niddah 68b:21:2": {
+    "dependsOn": [
+      "Niddah 68b:21",
+      "Rashi on Niddah 68b:21:1",
+      "Rashi on Niddah 68b:21:2",
+      "Niddah 68b:15",
+      "Tosafot on Niddah 68b:21:1",
+      "Steinsaltz on Niddah 68b:21:1",
+      "Steinsaltz In-Depth on Niddah 68b:21:1",
+      "Niddah 29b:1",
+      "Niddah 29b:2"
+    ],
+    "generatedAt": "2026-10-19T11:44:57.847Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 68b:21:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודברי ר\"ע מדברי כולן</strong> - דבעי ספורין ובדוקין:"
+  },
+  "Rashi on Niddah 68b:22:1": {
+    "dependsOn": [
+      "Niddah 68b:22",
+      "Niddah 69a:1"
+    ],
+    "generatedAt": "2026-10-19T11:49:13.622Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 68b:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יום שמיני</strong> - כבר עברו ימי הספירה ולא היה סופן בטהרה דלא בדקה יום ז':"
+  },
+  "Rashi on Niddah 68b:2:1": {
+    "dependsOn": [
+      "Niddah 68b:2",
+      "Rashi on Niddah 68b:2:1",
+      "Rashi on Niddah 68b:4:1",
+      "Rashi on Niddah 68b:4:2",
+      "Rashi on Niddah 68b:6:1",
+      "Rashi on Niddah 68b:6:2",
+      "Rashi on Niddah 68a:11:1",
+      "Rashi on Niddah 68a:8:1",
+      "Niddah 39a:1",
+      "Niddah 39a:2",
+      "Niddah 39a:3",
+      "Niddah 39a:4",
+      "Niddah 39a:5",
+      "Niddah 39a:6",
+      "Niddah 39a:7",
+      "Niddah 39a:8",
+      "Niddah 39a:9",
+      "Niddah 39a:10",
+      "Niddah 39a:11",
+      "Niddah 39a:12",
+      "Niddah 39a:13",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 10b:1:1",
+      "Tosafot on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-10-19T10:16:01.916Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 68b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לומר שאינה מטמאה מעת לעת</strong> - בפ' בנות כותים <span class=\"parenthesized\">(לעיל נדה לט.)</span> קתני כל אחד עשר בחזקת טהרה ואמרינן למאי הלכתא ואמר רבא לומר שאם תראה בתוך י\"א אינה מטמאה מעת לעת ומתניתין קתני מטמאה מעת לעת ארישא דקתני אחר הימים בדקה ומצאה טמאה ומתמה הש\"ס ולאו אותביניה בפ' בנות כותים <span class=\"parenthesized\">(שם)</span> ולא איפרוק:"
+  },
+  "Rashi on Niddah 68b:4:1": {
+    "dependsOn": [
+      "Niddah 68b:4",
+      "Rashi on Niddah 68b:4:1",
+      "Rashi on Niddah 68b:4:2",
+      "Rashi on Niddah 68b:1:1",
+      "Rashi on Niddah 68b:2:1",
+      "Steinsaltz on Niddah 68b:4:1",
+      "Steinsaltz on Niddah 68b:4:2",
+      "Versions on Niddah 68b:4:1",
+      "Rashi on Niddah 68a:11:1",
+      "Rashi on Niddah 68a:12:1",
+      "Rashi on Niddah 68a:14:1",
+      "Chokhmat Shlomo on Niddah 68b:1",
+      "Chokhmat Shlomo on Niddah 68b:2",
+      "Rashi on Menachot 87a:11:1",
+      "Rashi on Menachot 87a:18:1",
+      "Rashi on Niddah 67b:18:2",
+      "Rashi on Niddah 68a:1:2",
+      "Rashi on Niddah 68a:1:3"
+    ],
+    "generatedAt": "2026-10-19T10:22:20.518Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 68b:4:1"
+    ],
+    "sourceText": "כי קתני ומטמאה מעת לעת:"
+  },
+  "Rashi on Niddah 68b:4:2": {
+    "dependsOn": [
+      "Niddah 68b:4",
+      "Rashi on Niddah 68b:4:1",
+      "Rashi on Niddah 68b:4:2",
+      "Rashi on Niddah 68b:5:1",
+      "Niddah 64b:1",
+      "Niddah 64b:2",
+      "Niddah 68a:1",
+      "Niddah 68a:10",
+      "Rashi on Niddah 68b:6:1",
+      "Rashi on Niddah 68b:6:2",
+      "Rashi on Niddah 68b:7:1",
+      "Rashi on Niddah 68b:9:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Niddah 64b:7:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:4:1",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Niddah 68a:9:1",
+      "Rashi on Niddah 68a:10:1",
+      "Rashi on Niddah 68a:11:1",
+      "Rashi on Niddah 68a:14:1",
+      "Rashi on Niddah 68a:15:1",
+      "Rashi on Niddah 65a:1:1",
+      "Rashi on Niddah 65a:2:1",
+      "Rashi on Niddah 65b:1:1",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 2b:3:1",
+      "Rashi on Berakhot 2b:4:1",
+      "Rashi on Berakhot 2b:5:1",
+      "Rashi on Berakhot 3a:1:1",
+      "Rashi on Berakhot 3a:1:2",
+      "Rashi on Berakhot 3a:2:1",
+      "Rashi on Berakhot 3a:3:1",
+      "Rashi on Berakhot 3a:4:1",
+      "Rashi on Berakhot 3a:6:1",
+      "Rashi on Berakhot 3b:1:1",
+      "Rashi on Berakhot 3b:2:1"
+    ],
+    "generatedAt": "2026-10-19T10:26:10.167Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 68b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אריש פירקין קאי ראתה ועודה בבית אביה</strong> - ב\"ה אומרים כל הלילה שלה וקאמר דאם ראתה לאחר מכאן מטמאה מעת לעת:"
+  },
+  "Rashi on Niddah 68b:5:1": {
+    "dependsOn": [
+      "Niddah 68b:5",
+      "Rashi on Niddah 68b:5:1",
+      "Rashi on Niddah 68b:2:1",
+      "Rashi on Niddah 68b:4:1",
+      "Rashi on Niddah 68b:4:2",
+      "Rashi on Niddah 68b:6:1",
+      "Rashi on Niddah 68b:6:2",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:4:1",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Niddah 68a:7:1",
+      "Rashi on Niddah 68a:8:1",
+      "Rashi on Niddah 68a:9:1",
+      "Rashi on Niddah 68a:10:1",
+      "Rashi on Niddah 68a:11:1",
+      "Rashi on Niddah 7a:1:1",
+      "Rashi on Niddah 7a:2:1",
+      "Rashi on Niddah 7a:3:1",
+      "Rashi on Niddah 7a:4:1",
+      "Rashi on Niddah 7a:5:1",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 2b:3:1",
+      "Rashi on Berakhot 2b:4:1",
+      "Rashi on Berakhot 3a:1:1",
+      "Rashi on Berakhot 4b:1:1",
+      "Rashi on Berakhot 4b:2:1",
+      "Rashi on Berakhot 5a:1:1",
+      "Rashi on Berakhot 6a:1:1",
+      "Rashi on Berakhot 7a:1:1",
+      "Niddah 7a:6",
+      "Niddah 7b:1",
+      "Niddah 8b:1",
+      "Niddah 9a:1"
+    ],
+    "generatedAt": "2026-10-19T10:30:44.839Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 68b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כתחלת נדה</strong> - כבתולת דמים דקי\"ל <span class=\"parenthesized\">(לעיל נדה דף ז.)</span> דיה שעתה בראייה ראשונה:"
+  },
+  "Rashi on Niddah 68b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-19T10:33:22.787Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 68b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם יש לה וסת</strong> - קא סלקא דעתך אסיפא דמתני' קאי דקתני אחר הימים בדקה ומצאה טמאה מטמאה מעת לעת ואם יש לה וסת קבוע לאחר הימים דהיינו ימי זיבה וראתה בו דיה שעתה:"
+  },
+  "Rashi on Niddah 68b:6:2": {
+    "dependsOn": [
+      "Niddah 68b:6",
+      "Rashi on Niddah 68b:6:1",
+      "Rashi on Niddah 68b:6:2",
+      "Rashi on Niddah 68b:4:1",
+      "Rashi on Niddah 68b:4:2",
+      "Rashi on Niddah 68b:7:1",
+      "Rashi on Niddah 68b:9:1",
+      "Niddah 38b:1",
+      "Niddah 39a:1",
+      "Niddah 39b:1",
+      "Niddah 39b:5",
+      "Niddah 39b:13",
+      "Niddah 39a:5",
+      "Niddah 39a:11",
+      "Rashi on Niddah 68a:1:1",
+      "Rashi on Niddah 68a:2:1",
+      "Rashi on Niddah 67b:1:1",
+      "Rashi on Niddah 68b:15:1",
+      "Rashi on Niddah 68b:15:2",
+      "Rashi on Niddah 68b:18:1",
+      "Rashi on Niddah 68b:18:2",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3",
+      "Rashi on Berakhot 2a:11:1",
+      "Rashi on Berakhot 2a:13:1",
+      "Rashi on Berakhot 4b:1:1",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 2b:3:1",
+      "Rashi on Berakhot 3a:1:1"
+    ],
+    "generatedAt": "2026-10-19T10:43:01.563Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 68b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לומר שאינה קובעת</strong> - בפ' בנות כותים גבי כל י\"א בחזקת טהרה:"
+  },
+  "Rashi on Niddah 68b:7:1": {
+    "dependsOn": [
+      "Niddah 68b:7",
+      "Rashi on Niddah 68b:6:1",
+      "Rashi on Niddah 68b:6:2",
+      "Rashi on Niddah 68b:7:1",
+      "Rashi on Niddah 68b:4:1",
+      "Rashi on Niddah 68b:4:2",
+      "Rashi on Niddah 68b:5:1",
+      "Rashi on Niddah 68b:1:1",
+      "Rashi on Niddah 68b:2:1",
+      "Rashi on Niddah 68a:1:1",
+      "Rashi on Niddah 68a:2:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 4b:1:1",
+      "Rashi on Berakhot 5a:1:1"
+    ],
+    "generatedAt": "2026-10-19T10:47:44.417Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 68b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר לך שמואל</strong> - כי אמרי אנא לקולא דלא בעינן תלת זימני למיעקריה דהא קתני כל י\"א בחזקת טהרה דהיינו קולא דדמיה מסולקין אבל לענין דיה שעתה כל שכן דהוי וסת דהא דמיה מסולקין:"
+  },
+  "Rashi on Niddah 68b:9:1": {
+    "dependsOn": [
+      "Niddah 68b:9",
+      "Rashi on Niddah 68b:9:1",
+      "Rashi on Niddah 68b:10:1"
+    ],
+    "generatedAt": "2026-10-19T10:48:48.918Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Niddah 68b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עם סילוק ידיה ראתה</strong> - ואפילו הכי אמרת טהורה הלכך מה לי הפסיקה בטהרה בראשון כו':"
+  },
+  "Tosafot on Niddah 68b:12:1": {
+    "dependsOn": [
+      "Niddah 68b:10",
+      "Niddah 68b:11",
+      "Niddah 68b:12",
+      "Niddah 68b:13",
+      "Niddah 53a:10",
+      "Niddah 53a:11",
+      "Niddah 53a:1",
+      "Niddah 53a:2",
+      "Niddah 53a:3",
+      "Niddah 53a:4",
+      "Niddah 53a:5",
+      "Niddah 53a:6",
+      "Niddah 68b:8",
+      "Niddah 68b:9",
+      "Niddah 53b:1",
+      "Niddah 53b:2",
+      "Niddah 53b:3",
+      "Niddah 53b:4",
+      "Niddah 68b:1",
+      "Niddah 68a:11",
+      "Niddah 68a:12",
+      "Niddah 68a:13",
+      "Niddah 67b:13",
+      "Niddah 67b:14",
+      "Niddah 67b:15",
+      "Niddah 68a:1",
+      "Niddah 68a:2",
+      "Niddah 68a:3",
+      "Niddah 68a:4",
+      "Niddah 68a:5",
+      "Niddah 68a:6",
+      "Niddah 68a:7",
+      "Niddah 68a:8",
+      "Niddah 68a:9",
+      "Niddah 68a:10",
+      "Niddah 52b:1",
+      "Niddah 52b:2",
+      "Niddah 52b:3",
+      "Niddah 52b:4",
+      "Niddah 52b:11",
+      "Niddah 52b:12",
+      "Niddah 52b:13",
+      "Niddah 52b:14",
+      "Niddah 52b:15",
+      "Niddah 52b:16",
+      "Niddah 68b:20",
+      "Niddah 68b:21",
+      "Niddah 53a:7",
+      "Niddah 53a:8",
+      "Niddah 53a:9",
+      "Niddah 54a:1",
+      "Niddah 54a:2",
+      "Niddah 54a:3",
+      "Niddah 54a:4",
+      "Niddah 54a:5",
+      "Niddah 54a:6",
+      "Niddah 54a:7",
+      "Rashi on Niddah 68b:13:1",
+      "Rashi on Niddah 68b:14:1",
+      "Niddah 68b:16",
+      "Niddah 68b:17",
+      "Tosafot on Niddah 68b:21:1",
+      "Tosafot on Niddah 53a:1:1",
+      "Tosafot on Niddah 53a:2:1",
+      "Tosafot on Niddah 53a:3:1",
+      "Tosafot on Niddah 53a:4:1"
+    ],
+    "generatedAt": "2026-10-19T10:57:22.388Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Niddah 68b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרו ליה הרי זו בחזקת טהרה</strong> - וא\"ת תקשה דרבי יוסי דהכא דקאמר דסגי לה בהפרשה שחרית אדרבי יוסי דפרק בא סימן <span class=\"parenthesized\">(לעיל נדה דף נג.)</span> דקאמר ומה אילו נדה שלא הפרישה בטהרה מן המנחה ולמעלה לא תהא בחזקת טומאה אלמא בעי הפרשה מן המנחה ולמעלה ויש לומר דהתם מיירי כשהפרישה ביום שראתה בו שחרית והכא מיירי בבדקה שחרית ומצאה טהורה וקשה דאם כן כי פרכינן לרבי יהודה אילו ידיה בעיניה כל בין השמשות וכו' לימא ר' יוסי לנפשיה דהא איהו נמי מצריך הפרשה מן המנחה ולמעלה כשהפרישה ביום שראתה ומה מועיל עיכוב זה שמא עם סילוק ידיה ראתה וי\"ל דלנפשיה לא קשה דכיון דהוחזקה רואה שחרית דין הוא להצריכה הפרשה מן המנחה ולמעלה בלא חומרא אלא מן הדין ואין לנו להחמיר ולספק שמא עם סילוק ידיה ראתה להצריכה בדיקה בסוף היום אבל רבי יהודה שבא להחמיר ולספק דאפילו בשלא ראתה שחרית אלא בבדקה עצמה ומצאה טהורה הוא מצריך הפרשה גם בסוף היום היה לו להחמיר ולבדוק מספק שמא עם סילוק ידיה ראתה:"
+  },
+  "Tosafot on Niddah 68b:21:1": {
+    "dependsOn": [
+      "Niddah 68b:21",
+      "Niddah 7b:1",
+      "Niddah 7b:2",
+      "Niddah 7b:3",
+      "Niddah 7b:4",
+      "Niddah 7a:14",
+      "Niddah 7a:15",
+      "Niddah 7a:16",
+      "Niddah 7a:17",
+      "Tosafot on Niddah 7b:1:1",
+      "Tosafot on Niddah 7a:1:1",
+      "Niddah 7b:5",
+      "Niddah 7b:6",
+      "Niddah 7b:7",
+      "Niddah 7b:8",
+      "Niddah 7b:9",
+      "Niddah 7b:10",
+      "Niddah 7b:11",
+      "Tosafot on Niddah 68b:12:1",
+      "Tosafot on Niddah 2a:1:1",
+      "Tosafot on Berakhot 2a:1:1",
+      "Tosafot on Berakhot 2a:5:1"
+    ],
+    "generatedAt": "2026-10-19T11:47:43.808Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Niddah 68b:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל הלכה כרבי אליעזר</strong> - אע\"ג דאין למדין הלכה מפי הש\"ס הא פסקינן בפ\"ק לעיל <span class=\"parenthesized\">(נדה דף ז:)</span> כרבי אליעזר בארבע והא חד מינייהו:"
+  }
+}

@@ -5,6 +5,7 @@ import {TestContext} from "./testing/configuration";
 import {
   attributes,
   classesOf,
+  doubleClick,
   mount,
   query,
   queryAll,
@@ -37,6 +38,9 @@ function renderComment(
   commentaryKind: CommentaryType = RASHI,
   contextOverrides = {},
   parentComment?: ApiComment,
+  extraProps: {
+    toggleExplanation?: () => void;
+  } = {},
 ): HTMLElement {
   return mount(
     <TestContext overrides={contextOverrides}>
@@ -44,6 +48,7 @@ function renderComment(
         comment={comment(overrides)}
         commentaryKind={commentaryKind}
         parentComment={parentComment}
+        toggleExplanation={extraProps.toggleExplanation}
         />
     </TestContext>,
   );
@@ -500,5 +505,64 @@ describe("duplicate reporting", () => {
     const root = renderComment({he: "עברית", duplicateRefs: []});
 
     expect(queryAll(root, "button")).toHaveLength(0);
+  });
+});
+
+describe("Rashi and Tosafot Hebrew formatting and explanation synthetic comments", () => {
+  const commentWithExplanation = {
+    ref: "Rashi on Berakhot 2a:1:1",
+    he: '<b>מתני׳</b>: <abbr title="עשרים ואחת">כ״א</abbr> תקיעות, '
+      + '<span class="explanation">הגמרא</span> מפרש להו.',
+    en: "twenty-one blasts, the Gemara explains them.",
+    commentary: {
+      Explanation: {
+        comments: [{
+          ref: "explanation 1",
+          he: "hebrew",
+          en: "english",
+          sourceRef: "Explanation",
+          sourceHeRef: "ביאור",
+        }],
+      },
+    },
+  };
+
+  test("double-clicking Hebrew cell calls toggleExplanation", () => {
+    const toggleExplanation = jest.fn();
+    const root = renderComment(
+      commentWithExplanation,
+      RASHI,
+      {},
+      undefined,
+      {
+        toggleExplanation,
+      },
+    );
+    const mainHebrew = query(root, ".table-row .table-cell.hebrew");
+
+    doubleClick(mainHebrew);
+
+    expect(toggleExplanation).toHaveBeenCalled();
+  });
+
+  test("punctuated-expanded preference expands abbreviations in the main cell", () => {
+    localStorage.rashiTosafotHebrew = "punctuated-expanded";
+    const root = renderComment(commentWithExplanation);
+    const mainHebrew = query(root, ".table-row:not(.synthetic-comment) .table-cell.hebrew");
+
+    expect(mainHebrew.textContent).toContain("עשרים ואחת");
+    expect(mainHebrew.textContent).not.toContain("הגמרא");
+  });
+
+  test("vilna preference displays originalHebrew when present", () => {
+    localStorage.rashiTosafotHebrew = "vilna";
+    const originalVilna = "מתני' כ\"א תקיעות מפרש להו";
+    const root = renderComment({
+      ...commentWithExplanation,
+      originalHebrew: originalVilna,
+    });
+    const mainHebrew = query(root, ".table-row:not(.synthetic-comment) .table-cell.hebrew");
+
+    expect(mainHebrew.textContent).toContain(originalVilna);
   });
 });

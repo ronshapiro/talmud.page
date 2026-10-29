@@ -1,0 +1,42 @@
+{
+  "Rashi on Nazir 9b:10:1": {
+    "dependsOn": [
+      "Rashi on Nazir 9b:10:1",
+      "Rashi on Nazir 9b:10:2",
+      "Nazir 9b:10",
+      "Rashi on Nazir 9b:7:1",
+      "Rashi on Nazir 9b:7:2"
+    ],
+    "generatedAt": "2026-10-22T02:58:27.345Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Nazir 9b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלמא לא מיבעיא קאמר'</strong> - דלא תימא דכי אמר מן העדשים דמייתי מנחה מעלייתא משום דאיכא למימר דכי אמר הרי עלי מנחה מנחה מעלייתא קבל עילויה והא דאמר בתר הכי מן העדשים משום דקא בעי למיהדר ביה קאמר דמידע ידע דמן העדשים אין מביאים כלום והרי לפטור עצמו קאמר ותפוס לשון ראשון ויביא מן החיטין:"
+  },
+  "Rashi on Nazir 9b:10:2": {
+    "dependsOn": [
+      "Rashi on Nazir 9b:10:1",
+      "Rashi on Nazir 9b:9:1",
+      "Rashi on Nazir 9b:8:1"
+    ],
+    "generatedAt": "2026-10-22T03:04:29.170Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Nazir 9b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא כי אמר מן השעורין</strong> - ודאי דלית לך למימר הכי דהואיל ובמינו קריבין דלהקריב קאמר והכי קאמר אם אפשר דקדשה כמנחת העומר וכמנחת סוטה תקדוש ומייתינן לה מן השעורין ואי לא לא מייתינן כלל:"
+  },
+  "Tosafot on Nazir 9b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T03:09:01.776Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Nazir 9b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא כי קאמר מן השעורין</strong> - ה\"ק לא בא לסתור דבריו ראשונים דאמר הרי עלי מנחה [אלא] לפרש ולומר <span class=\"parenthesized\">(כיון)</span> שאמר מן השעורין ואפשר ליקדוש במנחת העומר ובמנחת סוטה תיקדוש ואי לא אפשר לה ליקדוש במנחה לא יתחייב במנחה אחרת קמשמע לן דמייתי חיטין ולעולם כבית שמאי ומשום דאין אדם מוציא דבריו לבטלה:"
+  }
+}

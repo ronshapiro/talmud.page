@@ -1,7 +1,16 @@
 import {v4 as uuid} from "uuid";
 import {Edit} from "../precomputed/ai_edits";
 import {AgentBackend} from "./agent_runner";
-import {CritiqueOutcome, TranslationCandidate} from "./rashi_tosafot_translation";
+import {renderPrompt} from "./prompt_template";
+import {
+  extractBase64Images,
+  extractBase64ImagesForCritique,
+  formatCritiqueImagePlaceholderNote,
+  formatGenerationImagePlaceholderNote,
+} from "./base64_images";
+import {
+  CritiqueOutcome, targetComment, TranslationCandidate,
+} from "./rashi_tosafot_translation";
 
 export const DEFAULT_MAX_THREAD_TOKENS = 128 * 1024;
 export const DEFAULT_MAX_THREAD_TURNS = 10;
@@ -10,36 +19,41 @@ export function isLongThreadBackend(backend?: string): boolean {
   return backend === "claude-long-thread" || backend === "agy-long-thread";
 }
 
-export function getBaseBackend(backend: AgentBackend): "claude" | "agy" {
+export function getBaseBackend(backend: AgentBackend): "claude" | "agy" | "ollama" {
   if (backend === "claude-long-thread") return "claude";
   if (backend === "agy-long-thread") return "agy";
   return backend;
 }
 
 export function continuationGenerationPrompt(candidate: TranslationCandidate): string {
-  return [
-    "Next commentary comment to translate and punctuate on this page:",
-    `Comment ref: ${candidate.ref}`,
-    `Commentator: ${candidate.commentator}`,
-    `Current Hebrew text: ${candidate.hebrewSource}`,
-    "",
-    "Follow TRANSLATION_TASK instructions and format established above.",
-  ].join("\n");
+  const {textWithPlaceholders, images} = extractBase64Images(
+    candidate.hebrewSource,
+    {ref: candidate.ref},
+  );
+  const imageNote = formatGenerationImagePlaceholderNote(images);
+  return renderPrompt("translation_continuation.md", {
+    targetComment: targetComment(candidate, textWithPlaceholders, imageNote),
+  });
 }
 
 export function continuationCritiquePrompt(
   candidate: TranslationCandidate,
   edit: Edit,
 ): string {
-  return [
-    "Target comment to check:",
-    `Comment ref: ${candidate.ref}`,
-    `Original Hebrew: ${candidate.hebrewSource}`,
-    `Proposed Hebrew: ${edit.hebrew ?? "(unchanged)"}`,
-    `Proposed English: ${edit.english ?? "(none)"}`,
-    "",
-    "Evaluate according to CRITIQUE_TASK instructions and format established above.",
-  ].join("\n");
+  const {
+    originalHebrewWithPlaceholders,
+    proposedHebrewWithPlaceholders,
+    proposedEnglishWithPlaceholders,
+    images,
+  } = extractBase64ImagesForCritique(candidate.hebrewSource, edit, candidate.ref);
+  const imageNote = formatCritiqueImagePlaceholderNote(images);
+  return renderPrompt("critique_continuation.md", {
+    commentRef: candidate.ref,
+    originalHebrew: originalHebrewWithPlaceholders,
+    proposedHebrew: proposedHebrewWithPlaceholders,
+    proposedEnglish: proposedEnglishWithPlaceholders,
+    imageNote,
+  });
 }
 
 export interface LongThreadSessionOptions {

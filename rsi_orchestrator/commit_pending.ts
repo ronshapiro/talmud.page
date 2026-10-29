@@ -1,3 +1,4 @@
+import * as fs from "fs";
 import {execFile} from "child_process";
 import {promisify} from "util";
 import {books} from "../books";
@@ -12,7 +13,6 @@ const MANAGED_PATHS = [
   "precomputed/ai_additions",
   "precomputed/rsi_state/generation_records",
   "precomputed/rsi_state/context_usage_log",
-  "precomputed/rsi_state/context_usage_log.jsonl",
 ];
 
 export interface CommitPendingDeps {
@@ -65,17 +65,19 @@ export function mergeFileContent(
 
 export function extractPagesFromPaths(paths: string[]): string[] {
   const pages = new Set<string>();
-  for (const p of paths) {
+  for (const filePath of paths) {
     let candidate: string | undefined;
-    const aiMatch = p.match(/^precomputed\/ai_additions\/(.+)\.json$/);
+    const aiMatch = filePath.match(/^precomputed\/ai_additions\/([^/]+)\/([^/]+)\.json$/);
     if (aiMatch) {
-      [, candidate] = aiMatch;
+      candidate = `${aiMatch[1]} ${aiMatch[2]}`;
     } else {
-      const genMatch = p.match(/^precomputed\/rsi_state\/generation_records\/[^/]+\/(.+)\.json$/);
-      if (genMatch) {
-        [, candidate] = genMatch;
+      const generationMatch = filePath.match(
+        /^precomputed\/rsi_state\/generation_records\/[^/]+\/([^/]+)\/([^/]+)\.json$/,
+      );
+      if (generationMatch) {
+        candidate = `${generationMatch[1]} ${generationMatch[2]}`;
       } else {
-        const logMatch = p.match(/^precomputed\/rsi_state\/context_usage_log\/[^/]+\/(.+)\.jsonl$/);
+        const logMatch = filePath.match(/^precomputed\/rsi_state\/context_usage_log\/[^/]+\/(.+)\.jsonl$/);
         if (logMatch) {
           [, candidate] = logMatch;
         }
@@ -388,7 +390,10 @@ async function findOpenPrViaGh(
 }
 
 async function commitPendingStateViaCli(message: string, debug = false): Promise<boolean> {
-  await runSubcommand("git", ["add", ...MANAGED_PATHS], debug);
+  const existingManagedPaths = MANAGED_PATHS.filter(managedPath => fs.existsSync(managedPath));
+  if (existingManagedPaths.length > 0) {
+    await runSubcommand("git", ["add", ...existingManagedPaths], debug);
+  }
   const {stdout: statusOut} = await runSubcommand(
     "git", ["status", "--porcelain", "--", ...MANAGED_PATHS], debug);
   if (!statusOut.trim()) {

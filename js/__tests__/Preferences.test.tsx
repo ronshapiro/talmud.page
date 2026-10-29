@@ -140,6 +140,26 @@ describe("the display language section", () => {
 
     expect(rerenders()).toBe(before);
   });
+
+  test("preference item identity and input IDs are preserved across parent re-renders", () => {
+    let forceParentRerender: () => void = () => {};
+    function Parent() {
+      const [, setCounter] = React.useState(0);
+      forceParentRerender = () => setCounter(count => count + 1);
+      return <Preferences rerender={() => {}} />;
+    }
+    const container = mount(<TestContext><Parent /></TestContext>);
+    click(query(container, "#showSettings"));
+
+    const initialRadios = radios(container);
+    const initialRadioIdentifiers = initialRadios.map(radio => radio.id);
+
+    flush(() => forceParentRerender());
+
+    const updatedRadios = radios(container);
+    const updatedRadioIdentifiers = updatedRadios.map(radio => radio.id);
+    expect(updatedRadioIdentifiers).toEqual(initialRadioIdentifiers);
+  });
 });
 
 describe("hebrew mode", () => {
@@ -248,22 +268,28 @@ describe("preferences ask the page to re-render", () => {
     {name: "layout", sectionIndex: 2, key: "layoutOption", value: "compact"},
     {name: "display theme", sectionIndex: 3, key: "darkMode", value: "true"},
     {
-      name: "hide gemara translation",
+      name: "rashi and tosafot hebrew",
       sectionIndex: 4,
+      key: "rashiTosafotHebrew",
+      value: "vilna",
+    },
+    {
+      name: "hide gemara translation",
+      sectionIndex: 5,
       key: "hideGemaraTranslationByDefault",
       value: "true",
     },
-    {name: "wrap translations", sectionIndex: 5, key: "wrapTranslations", value: "false"},
-    {name: "show translation button", sectionIndex: 6, key: "showTranslationButton", value: "yes"},
+    {name: "wrap translations", sectionIndex: 6, key: "wrapTranslations", value: "false"},
+    {name: "show translation button", sectionIndex: 7, key: "showTranslationButton", value: "yes"},
     {
       name: "expand english by default",
-      sectionIndex: 7,
+      sectionIndex: 8,
       key: "expandEnglishByDefault",
       value: "true",
     },
-    {name: "show page metadata", sectionIndex: 8, key: "showPageMetadata", value: "true"},
-    {name: "offline mode", sectionIndex: 9, key: "offlineMode", value: "true"},
-    {name: "keyboard shortcuts", sectionIndex: 10, key: "keyboardShortcuts", value: "true"},
+    {name: "show page metadata", sectionIndex: 9, key: "showPageMetadata", value: "true"},
+    {name: "offline mode", sectionIndex: 10, key: "offlineMode", value: "true"},
+    {name: "keyboard shortcuts", sectionIndex: 11, key: "keyboardShortcuts", value: "true"},
   ];
 
   for (const {name, sectionIndex, key, value} of CASES) {

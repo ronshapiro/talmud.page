@@ -1,13 +1,25 @@
+import * as contextUsageLog from "../precomputed/rsi_state/context_usage_log";
+import * as generationRecordModule from "../precomputed/rsi_state/generation_record";
+import * as modelRouting from "../precomputed/rsi_state/model_routing";
 import * as pageSkeleton from "../precomputed/rsi_state/page_skeleton";
 import {Edit} from "../precomputed/ai_edits";
+import * as agentRunner from "./agent_runner";
+import * as contextFetch from "./context_fetch";
 import {AgentError} from "./agent_runner";
 import {
   CritiqueOutcome,
   CritiqueVerdict,
   critiquePrompt,
+  critiqueViaAgent,
+  extractHebrewWordsForVerification,
   generationPrompt,
+  targetComment,
   GeneratedEdit,
+  generateViaAgent,
   generateWithSelfCritique,
+  isFreshTranslation,
+  TASK_TYPE,
+  recordGenerationForCandidate,
   compareAmudim,
   filterSectionsFromStartPage,
   MAX_GENERATION_ATTEMPTS,
@@ -16,6 +28,7 @@ import {
   TranslationCandidate,
   TranslationDeps,
   translateRashiTosafotComments,
+  verifyProposedHebrewWording,
 } from "./rashi_tosafot_translation";
 
 function candidate(overrides: Partial<TranslationCandidate> = {}): TranslationCandidate {
@@ -72,7 +85,7 @@ describe("generateWithSelfCritique", () => {
 
   test("retries once with feedback when the first critique fails, then succeeds", async () => {
     const generate = jest.fn<Promise<GeneratedEdit>, [TranslationCandidate, string?]>()
-      .mockResolvedValueOnce(generated({edit: {hebrew: "wrong", english: "wrong"}, costUsd: 0.01}))
+      .mockResolvedValueOnce(generated({edit: {hebrew: "מקור.", english: "wrong"}, costUsd: 0.01}))
       .mockResolvedValueOnce(generated({costUsd: 0.01}));
     const critique = jest.fn<Promise<CritiqueOutcome>, [TranslationCandidate, Edit]>()
       .mockResolvedValueOnce(outcome({verdict: invalidVerdict, costUsd: 0.002}))
@@ -97,7 +110,7 @@ describe("generateWithSelfCritique", () => {
   test("only counts the final accepted attempt's contextRefsUsed, not the rejected one's", async () => {
     const generate = jest.fn<Promise<GeneratedEdit>, [TranslationCandidate, string?]>()
       .mockResolvedValueOnce(generated({
-        edit: {hebrew: "wrong"}, contextRefsUsed: ["Zevachim 2a:99"],
+        edit: {hebrew: "מקור.", english: "wrong"}, contextRefsUsed: ["Zevachim 2a:99"],
       }))
       .mockResolvedValueOnce(generated({contextRefsUsed: ["Zevachim 2a:1"]}));
     const critique = jest.fn<Promise<CritiqueOutcome>, [TranslationCandidate, Edit]>()
@@ -110,7 +123,7 @@ describe("generateWithSelfCritique", () => {
   });
 
   test(`retries up to ${MAX_GENERATION_ATTEMPTS} times, then gives up`, async () => {
-    const generate = jest.fn(async () => generated({edit: {hebrew: "wrong"}}));
+    const generate = jest.fn(async () => generated({edit: {hebrew: "מקור.", english: "wrong"}}));
     const critique = jest.fn(async () => invalidOutcome);
 
     const result = await generateWithSelfCritique(candidate(), {generate, critique});
@@ -121,7 +134,7 @@ describe("generateWithSelfCritique", () => {
   });
 
   test("succeeds on the final allowed attempt rather than giving up early", async () => {
-    const generate = jest.fn(async () => generated({edit: {hebrew: "wrong"}}));
+    const generate = jest.fn(async () => generated({edit: {hebrew: "מקור.", english: "wrong"}}));
     const critique = jest.fn<Promise<CritiqueOutcome>, [TranslationCandidate, Edit]>();
     for (let i = 0; i < MAX_GENERATION_ATTEMPTS - 1; i++) {
       critique.mockResolvedValueOnce(invalidOutcome);
@@ -169,7 +182,7 @@ describe("generateWithSelfCritique", () => {
 
   test("retries with fallback reason when terse rejection omits reason", async () => {
     const generate = jest.fn<Promise<GeneratedEdit>, [TranslationCandidate, string?]>()
-      .mockResolvedValueOnce(generated({edit: {hebrew: "wrong"}}))
+      .mockResolvedValueOnce(generated({edit: {hebrew: "מקור.", english: "wrong"}}))
       .mockResolvedValueOnce(generated());
     const critique = jest.fn<Promise<CritiqueOutcome>, [TranslationCandidate, Edit]>()
       .mockResolvedValueOnce(outcome({verdict: {valid: false}}))
@@ -202,6 +215,248 @@ describe("generateWithSelfCritique", () => {
     });
     expect(result).toBeUndefined();
     expect(generate).not.toHaveBeenCalled();
+  });
+
+  test("skips critique and retries on CPU check rejection when Hebrew wording is modified", async () => {
+    const generate = jest.fn<Promise<GeneratedEdit>, [TranslationCandidate, string?]>()
+      .mockResolvedValueOnce(generated({edit: {hebrew: "מילה אחרת", english: "different"}, costUsd: 0.01}))
+      .mockResolvedValueOnce(generated({edit: {hebrew: "מקור:", english: "source"}, costUsd: 0.01}));
+    const critique = jest.fn<Promise<CritiqueOutcome>, [TranslationCandidate, Edit]>()
+      .mockResolvedValueOnce(validOutcome);
+
+    const result = await generateWithSelfCritique(
+      candidate({hebrewSource: "מקור"}), {generate, critique});
+
+    expect(result).not.toBeUndefined();
+    expect(generate).toHaveBeenCalledTimes(2);
+    // Critique should only be called once, for the second attempt, not the CPU-rejected first
+    expect(critique).toHaveBeenCalledTimes(1);
+    expect(generate.mock.calls[1][1]).toContain(
+      "Proposed Hebrew modified the source text outside of <span class=\"explanation\">");
+  });
+
+  test("accepts valid abbreviation expansions and explanations through CPU check", async () => {
+    const sourceHebrew = 'מתני\' כ"א תקיעות מפרש להו בפ\' החליל אא"כ פירש';
+    const proposedHebrew = '<strong class="dibur-hamatchil">מתני\'</strong> - '
+      + 'כ"א תקיעות, <span class="explanation">הגמרא</span> '
+      + 'מפרש להו <abbr title="בפרק">בפ\'</abbr> החליל, <abbr title="אלא אם כן">אא"כ</abbr> פירש:';
+    const generate = jest.fn(async () => generated({
+      edit: {hebrew: proposedHebrew, english: "The Mishnah explains"},
+    }));
+    const critique = jest.fn(async () => validOutcome);
+
+    const result = await generateWithSelfCritique(
+      candidate({hebrewSource: sourceHebrew}), {generate, critique});
+
+    expect(result).not.toBeUndefined();
+    expect(generate).toHaveBeenCalledTimes(1);
+    expect(critique).toHaveBeenCalledTimes(1);
+  });
+});
+
+describe("verifyProposedHebrewWording", () => {
+  const sourceHebrew = 'מתני\' כ"א תקיעות מפרש להו בפ\' החליל';
+
+  test("accepts valid punctuation additions with unchanged Hebrew wording", () => {
+    const proposedHebrew = '<strong class="dibur-hamatchil">מתני\'</strong> - כ"א תקיעות, מפרש להו בפ\' החליל:';
+    const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
+    expect(verification.valid).toBe(true);
+  });
+
+  test("accepts valid <abbr title=\"...\"> abbreviation expansions", () => {
+    const proposedHebrew = '<strong class="dibur-hamatchil">מתני\'</strong> - '
+      + '<abbr title="עשרים ואחת">כ"א</abbr> תקיעות, מפרש להו <abbr title="בפרק">בפ\'</abbr> החליל:';
+    const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
+    expect(verification.valid).toBe(true);
+  });
+
+  test("accepts valid <span class=\"explanation\">...</span> contextual additions", () => {
+    const proposedHebrew = '<strong class="dibur-hamatchil">מתני\'</strong> - '
+      + 'כ"א תקיעות, <span class="explanation">הגמרא</span> מפרש להו בפ\' החליל:';
+    const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
+    expect(verification.valid).toBe(true);
+  });
+
+  test("accepts valid combination of <abbr> and <span class=\"explanation\">", () => {
+    const proposedHebrew = '<strong class="dibur-hamatchil">מתני\'</strong> - '
+      + '<abbr title="עשרים ואחת">כ"א</abbr> תקיעות, <span class="explanation">הגמרא</span> '
+      + 'מפרש להו <abbr title="בפרק">בפ\'</abbr> החליל:';
+    const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
+    expect(verification.valid).toBe(true);
+  });
+
+  test("rejects when Hebrew words are modified outside of explanations", () => {
+    // Replaced בפ' with בפרק directly without keeping abbreviation inside <abbr>
+    const proposedHebrew = '<strong class="dibur-hamatchil">מתני\'</strong> - כ"א תקיעות, מפרש להו בפרק החליל:';
+    const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
+    expect(verification.valid).toBe(false);
+    expect(verification.reason).toContain(
+      "Proposed Hebrew modified the source text outside of <span class=\"explanation\">");
+  });
+
+  test("rejects unclosed <span class=\"explanation\"> tags", () => {
+    const proposedHebrew = 'מתני\' כ"א תקיעות <span class="explanation">הגמרא מפרש להו בפ\' החליל:';
+    const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
+    expect(verification.valid).toBe(false);
+    expect(verification.reason).toContain('Unclosed <span class="explanation"> tag');
+  });
+
+  test("rejects mismatched <abbr> tags", () => {
+    const proposedHebrew = '<abbr title="מתניתין">מתני\' כ"א תקיעות מפרש להו בפ\' החליל:';
+    const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
+    expect(verification.valid).toBe(false);
+    expect(verification.reason).toContain("Mismatched <abbr> tags");
+  });
+
+  test("rejects <abbr> tags missing a title attribute", () => {
+    const proposedHebrew = '<abbr>מתני\'</abbr> כ"א תקיעות מפרש להו בפ\' החליל:';
+    const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
+    expect(verification.valid).toBe(false);
+    expect(verification.reason).toContain("Missing title attribute in <abbr> tag");
+  });
+
+  test("rejects <abbr> tags around וגו' and וכו' and כו'", () => {
+    const proposedWithVegomer = 'מתני\' וגו\' מפרש להו בפ\' החליל';
+    const invalidVegomer = '<abbr title="וגומר">וגו\'</abbr>';
+    const verificationVegomer = verifyProposedHebrewWording(
+      proposedWithVegomer, `מתני' ${invalidVegomer} מפרש להו בפ' החליל`);
+    expect(verificationVegomer.valid).toBe(false);
+    expect(verificationVegomer.reason).toContain("Do not wrap וגו', וכו'");
+
+    const proposedWithVechulei = 'מתני\' וכו\' מפרש להו בפ\' החליל';
+    const invalidVechulei = '<abbr title="וכולי">וכו\'</abbr>';
+    const verificationVechulei = verifyProposedHebrewWording(
+      proposedWithVechulei, `מתני' ${invalidVechulei} מפרש להו בפ' החליל`);
+    expect(verificationVechulei.valid).toBe(false);
+    expect(verificationVechulei.reason).toContain("Do not wrap וגו', וכו'");
+
+    const proposedWithChulei = 'מתני\' כו\' מפרש להו בפ\' החליל';
+    const invalidChulei = '<abbr title="כולי">כו\'</abbr>';
+    const verificationChulei = verifyProposedHebrewWording(
+      proposedWithChulei, `מתני' ${invalidChulei} מפרש להו בפ' החליל`);
+    expect(verificationChulei.valid).toBe(false);
+    expect(verificationChulei.reason).toContain("Do not wrap וגו', וכו'");
+  });
+
+  test("accepts <abbr> tags around opening section headers like מתני' or גמ' on cpu", () => {
+    const sourceWithOpeningMishnah = "מתני' כ\"א תקיעות";
+    const proposedOpeningMishnah = '<strong class="dibur-hamatchil"><abbr title="מתניתין">מתני\'</abbr></strong> - <abbr title="עשרים ואחת">כ"א</abbr> תקיעות:';
+    const verificationOpeningMishnah = verifyProposedHebrewWording(
+      sourceWithOpeningMishnah, proposedOpeningMishnah);
+    expect(verificationOpeningMishnah.valid).toBe(true);
+
+    const sourceWithOpeningGemara = "גמ' מנא הני מילי";
+    const proposedOpeningGemara = '<strong class="dibur-hamatchil"><abbr title="גמרא">גמ\'</abbr></strong> - מנא הני מילי:';
+    const verificationOpeningGemara = verifyProposedHebrewWording(
+      sourceWithOpeningGemara, proposedOpeningGemara);
+    expect(verificationOpeningGemara.valid).toBe(true);
+  });
+
+  test("accepts <abbr> tags around page or chapter reference numerals on cpu", () => {
+    const sourceWithChapterNumeral = "כמו בההיא דפרק ד' אחין";
+    const proposedChapterNumeral = 'כמו בההיא דפרק <abbr title="ארבעה">ד\'</abbr> אחין';
+    const verificationChapterNumeral = verifyProposedHebrewWording(
+      sourceWithChapterNumeral, proposedChapterNumeral);
+    expect(verificationChapterNumeral.valid).toBe(true);
+
+    const sourceWithPageNumeral = "כדאמרינן לקמן דף ב. ושם";
+    const proposedPageNumeral = 'כדאמרינן לקמן דף <abbr title="שתים">ב.</abbr> ושם';
+    const verificationPageNumeral = verifyProposedHebrewWording(
+      sourceWithPageNumeral, proposedPageNumeral);
+    expect(verificationPageNumeral.valid).toBe(true);
+  });
+
+  test("accepts <abbr> tags around ע\"ה for עליו השלום", () => {
+    const sourceWithAlavHashalom = 'משה רבינו ע"ה אמר';
+    const proposedWithAlavHashalom = 'משה רבינו <abbr title="עליו השלום">ע"ה</abbr> אמר:';
+    const verification = verifyProposedHebrewWording(
+      sourceWithAlavHashalom, proposedWithAlavHashalom);
+    expect(verification.valid).toBe(true);
+  });
+
+  test("accepts <abbr> tags around פ\"ק for פרק קמא", () => {
+    const sourceWithPerekKama = 'דתנן בפ"ק דמגילה';
+    const proposedWithPerekKama = 'דתנן ב<abbr title="פרק קמא">פ"ק</abbr> דמגילה:';
+    const verificationWithPerekKama = verifyProposedHebrewWording(
+      sourceWithPerekKama, proposedWithPerekKama);
+    expect(verificationWithPerekKama.valid).toBe(true);
+
+    const sourcePerekKamaAlone = 'כדאיתא פ"ק דפסחים';
+    const proposedPerekKamaAlone = 'כדאיתא <abbr title="פרק קמא">פ"ק</abbr> דפסחים:';
+    const verificationAlone = verifyProposedHebrewWording(
+      sourcePerekKamaAlone, proposedPerekKamaAlone);
+    expect(verificationAlone.valid).toBe(true);
+
+    const proposedWithPrefixInside = 'דתנן <abbr title="בפרק קמא">בפ"ק</abbr> דמגילה:';
+    const verificationWithPrefixInside = verifyProposedHebrewWording(
+      sourceWithPerekKama, proposedWithPrefixInside);
+    expect(verificationWithPrefixInside.valid).toBe(true);
+  });
+
+  test("accepts <abbr> tags around regular numbers representing counts or quantities", () => {
+    const sourceWithRegularNumeral = "שבעת ימים קודם ז' ימים כ\"א תקיעות ד' ראשי שנים";
+    const validRegularNumeral = '<strong class="dibur-hamatchil">שבעת ימים</strong> - '
+      + 'קודם <abbr title="שבעת">ז\'</abbr> ימים '
+      + '<abbr title="עשרים ואחת">כ"א</abbr> תקיעות '
+      + '<abbr title="ארבעה">ד\'</abbr> ראשי שנים:';
+    const verificationRegularNumeral = verifyProposedHebrewWording(
+      sourceWithRegularNumeral, validRegularNumeral);
+    expect(verificationRegularNumeral.valid).toBe(true);
+  });
+
+  test("rejects <abbr> tags around הקב\"ה, רש\"י, or חז\"ל", () => {
+    const sourceWithSacredName = 'שאמר להם הקב"ה ורש"י פירש';
+    const invalidSacredName = 'שאמר להם <abbr title="הקדוש ברוך הוא">הקב"ה</abbr> ורש"י פירש:';
+    const verificationSacredName = verifyProposedHebrewWording(
+      sourceWithSacredName, invalidSacredName);
+    expect(verificationSacredName.valid).toBe(false);
+    expect(verificationSacredName.reason).toContain("Do not wrap וגו', וכו'");
+
+    const invalidRashi = 'שאמר להם הקב"ה ו<abbr title="רבי שלמה יצחקי">רש"י</abbr> פירש:';
+    const verificationRashi = verifyProposedHebrewWording(sourceWithSacredName, invalidRashi);
+    expect(verificationRashi.valid).toBe(false);
+    expect(verificationRashi.reason).toContain("Do not wrap וגו', וכו'");
+  });
+
+  test("accepts וגו' and וכו' and numerals untouched without <abbr> tags", () => {
+    const sourceWithTruncation = "שנאמר ופתח אהל מועד תשבו יומם ולילה ז' ימים וגו' וכו'";
+    const proposedWithTruncation = '<strong class="dibur-hamatchil">שנאמר</strong> - '
+      + "ופתח אהל מועד תשבו יומם ולילה ז' ימים וגו' וכו':";
+    const verification = verifyProposedHebrewWording(
+      sourceWithTruncation, proposedWithTruncation);
+    expect(verification.valid).toBe(true);
+  });
+
+  test("rejects bracketed explanations [...] that add Hebrew letters outside of explanation span", () => {
+    const proposedHebrew = 'מתני\' כ"א תקיעות [הגמרא] מפרש להו בפ\' החליל:';
+    const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
+    expect(verification.valid).toBe(false);
+    expect(verification.reason).toContain(
+      "Proposed Hebrew modified the source text outside of <span class=\"explanation\">");
+  });
+
+  test("rejects when space between words is dropped", () => {
+    const proposedHebrew = '<strong class="dibur-hamatchil">מתני\'</strong> - כ"אתקיעות, מפרש להו בפ\' החליל:';
+    const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
+    expect(verification.valid).toBe(false);
+    expect(verification.reason).toContain(
+      "Proposed Hebrew modified the source text outside of <span class=\"explanation\">");
+  });
+
+  test("rejects when an extra space is inserted within a word", () => {
+    const proposedHebrew = '<strong class="dibur-hamatchil">מתני\'</strong> - כ"א תקי עות, מפרש להו בפ\' החליל:';
+    const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
+    expect(verification.valid).toBe(false);
+    expect(verification.reason).toContain(
+      "Proposed Hebrew modified the source text outside of <span class=\"explanation\">");
+  });
+});
+
+describe("extractHebrewWordsForVerification", () => {
+  test("strips HTML tags and explanations while preserving space-delimited Hebrew words", () => {
+    const markup = '<strong class="dibur-hamatchil"><abbr title="מתניתין">מתני\'</abbr></strong> - '
+      + 'כ"א תקיעות, <span class="explanation">הגמרא</span> מפרש להו <abbr title="בפרק">בפ\'</abbr> החליל:';
+    expect(extractHebrewWordsForVerification(markup)).toBe("מתני כא תקיעות מפרש להו בפ החליל");
   });
 });
 
@@ -705,19 +960,46 @@ describe("parseJsonResponse", () => {
 describe("critiquePrompt", () => {
   test("instructs terse output and compact JSON format", () => {
     const prompt = critiquePrompt(candidate(), {hebrew: "מקור:", english: "source."});
+    expect(prompt).toContain("Comment ref: Rashi on Zevachim 2a:1:1");
     expect(prompt).toContain("Be extremely terse to minimize token usage.");
     expect(prompt).toContain('{"valid": true}');
     expect(prompt).toContain('{"valid": false, "reason": "<brief one-sentence reason>"}');
     expect(prompt).toContain("Keep any rejection reason to a single brief sentence.");
+    expect(prompt).toContain('פ"ק for פרק קמא (not actually a chapter name)');
   });
 
   test("places static rules and format requirements before dynamic candidate content for prefix caching", () => {
     const prompt = critiquePrompt(candidate(), {hebrew: "מקור:", english: "source."});
     const rulesIndex = prompt.indexOf("Be extremely terse to minimize token usage.");
-    const targetIndex = prompt.indexOf("Target comment to check:");
+    const targetIndex = prompt.indexOf("## Target comment to check");
     expect(rulesIndex).toBeGreaterThan(-1);
     expect(targetIndex).toBeGreaterThan(-1);
     expect(rulesIndex).toBeLessThan(targetIndex);
+  });
+});
+
+describe("targetComment", () => {
+  test("lists the commentary nested on the comment, e.g. Otzar La'azei Rashi", () => {
+    const refsSpy = jest.spyOn(contextFetch, "getCommentRefs").mockReturnValue({commentary: {
+      "Otzar Laazei Rashi": ["Otzar La'azei Rashi, Talmud, Bava Kamma 14"],
+      Verses: ["Exodus 21:35"],
+    }});
+    try {
+      const text = targetComment(candidate(), "מקור", undefined);
+      expect(text).toContain("Commentary on this comment: Otzar Laazei Rashi: "
+        + "Otzar La'azei Rashi, Talmud, Bava Kamma 14; Verses: Exodus 21:35");
+    } finally {
+      refsSpy.mockRestore();
+    }
+  });
+
+  test("omits the line when nothing is nested on the comment", () => {
+    const refsSpy = jest.spyOn(contextFetch, "getCommentRefs").mockReturnValue({commentary: {}});
+    try {
+      expect(targetComment(candidate(), "מקור", undefined)).not.toContain("Commentary on this comment");
+    } finally {
+      refsSpy.mockRestore();
+    }
   });
 });
 
@@ -728,7 +1010,6 @@ describe("generationPrompt", () => {
       segments: [
         {
           ref: "Menachot 80a:1",
-          preview: "מקור הבדיקה",
           commentary: {Rashi: 1},
         },
       ],
@@ -743,10 +1024,10 @@ describe("generationPrompt", () => {
         hebrewSource: "מקור הבדיקה",
       });
       const prompt = generationPrompt(testCandidate, "previous error message");
-      const tasksIndex = prompt.indexOf("Tasks:");
-      const rulesIndex = prompt.indexOf("Rules on tools and external lookups:");
-      const skeletonIndex = prompt.indexOf("This page's segments and commentary, for orientation");
-      const targetIndex = prompt.indexOf("Target commentary comment to translate:");
+      const tasksIndex = prompt.indexOf("## Tasks");
+      const rulesIndex = prompt.indexOf("## Rules on tools and external lookups");
+      const skeletonIndex = prompt.indexOf("Page index (segment refs");
+      const targetIndex = prompt.indexOf("## Target commentary comment to translate");
       const feedbackIndex = prompt.indexOf("Your previous attempt was rejected for this reason");
 
       expect(tasksIndex).toBeGreaterThan(-1);
@@ -754,8 +1035,239 @@ describe("generationPrompt", () => {
       expect(skeletonIndex).toBeGreaterThan(rulesIndex);
       expect(targetIndex).toBeGreaterThan(skeletonIndex);
       expect(feedbackIndex).toBeGreaterThan(targetIndex);
+      expect(prompt).toContain("not actually a chapter name");
     } finally {
       buildPageSkeletonSpy.mockRestore();
     }
+  });
+});
+
+describe("generateViaAgent and critiqueViaAgent backend validation", () => {
+  test("generateViaAgent throws when no backend is configured", async () => {
+    const getTaskModelConfigSpy = jest.spyOn(modelRouting, "getTaskModelConfig").mockReturnValue({
+      backend: undefined as any,
+      generateModel: "model",
+      critiqueModel: "model",
+    });
+    try {
+      await expect(generateViaAgent(candidate())).rejects.toThrow(
+        "No backend configured for generation",
+      );
+    } finally {
+      getTaskModelConfigSpy.mockRestore();
+    }
+  });
+
+  test("critiqueViaAgent throws when no backend is configured", async () => {
+    const getTaskModelConfigSpy = jest.spyOn(modelRouting, "getTaskModelConfig").mockReturnValue({
+      backend: undefined as any,
+      generateModel: "model",
+      critiqueModel: "model",
+    });
+    try {
+      await expect(critiqueViaAgent(candidate(), {hebrew: "מקור"})).rejects.toThrow(
+        "No backend configured for critique",
+      );
+    } finally {
+      getTaskModelConfigSpy.mockRestore();
+    }
+  });
+});
+
+describe("base64 image decoding, placeholders, and restoration", () => {
+  const sampleBase64 = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhg"
+    + "GAWjR9awAAAABJRU5ErkJggg==";
+  const sampleDataUri = `data:image/png;base64,${sampleBase64}`;
+
+  test("generationPrompt replaces base64 data URI with IMAGE_PLACEHOLDER_1 and adds instruction", () => {
+    const buildPageSkeletonSpy = jest.spyOn(pageSkeleton, "buildPageSkeleton").mockReturnValue({
+      page: "Menachot 98a",
+      segments: [
+        {
+          ref: "Menachot 98a:1",
+          commentary: {Rashi: 1},
+        },
+      ],
+    });
+    try {
+      const imageCandidate = candidate({
+        book: "Menachot",
+        section: "98a",
+        page: "Menachot 98a",
+        ref: "Rashi on Menachot 98a:1:1",
+        commentator: "Rashi",
+        hebrewSource: `הגה"ה <img src="${sampleDataUri}"> ע"כ`,
+      });
+      const prompt = generationPrompt(imageCandidate);
+      expect(prompt).not.toContain(sampleBase64);
+      expect(prompt).toContain('Current Hebrew text: הגה"ה <img src="IMAGE_PLACEHOLDER_1"> ע"כ');
+      expect(prompt).toContain("Note: Base64-encoded images in the source text have been decoded");
+    } finally {
+      buildPageSkeletonSpy.mockRestore();
+    }
+  });
+
+  test("critiquePrompt replaces base64 data URIs with consistent placeholders across original and proposed fields", () => {
+    const imageCandidate = candidate({
+      hebrewSource: `הגה"ה <img src="${sampleDataUri}"> ע"כ`,
+    });
+    const proposedEdit: Edit = {
+      hebrew: `<strong class="dibur-hamatchil">הגה"ה</strong> - <img src="${sampleDataUri}"> ע"כ:`,
+      english: `<strong class="dibur-hamatchil">Gloss:</strong> <img src="${sampleDataUri}">.`,
+    };
+    const prompt = critiquePrompt(imageCandidate, proposedEdit);
+    expect(prompt).not.toContain(sampleBase64);
+    expect(prompt).toContain('Original Hebrew: הגה"ה <img src="IMAGE_PLACEHOLDER_1"> ע"כ');
+    expect(prompt).toContain(
+      'Proposed Hebrew: <strong class="dibur-hamatchil">הגה"ה</strong> - <img src="IMAGE_PLACEHOLDER_1"> ע"כ:',
+    );
+    expect(prompt).toContain(
+      'Proposed English: <strong class="dibur-hamatchil">Gloss:</strong> <img src="IMAGE_PLACEHOLDER_1">.',
+    );
+    expect(prompt).toContain("Treat matching placeholders as preserving the original image.");
+  });
+
+  test("generateWithSelfCritique restores IMAGE_PLACEHOLDER_1 to original data URI in final edit", async () => {
+    const imageCandidate = candidate({
+      hebrewSource: `הגה"ה <img src="${sampleDataUri}"> ע"כ`,
+    });
+    const generate = jest.fn(async () => generated({
+      edit: {
+        hebrew: '<b>הגה"ה</b> - <img src="IMAGE_PLACEHOLDER_1"> ע"כ:',
+        english: '<b>Gloss:</b> <img src="IMAGE_PLACEHOLDER_1">.',
+      },
+    }));
+    const critique = jest.fn(async () => validOutcome);
+
+    const result = await generateWithSelfCritique(imageCandidate, {generate, critique});
+    expect(result).toBeDefined();
+    expect(result!.edit).toEqual({
+      hebrew: `<b>הגה"ה</b> - <img src="${sampleDataUri}"> ע"כ:`,
+      english: `<b>Gloss:</b> <img src="${sampleDataUri}">.`,
+    });
+  });
+
+  test("generateViaAgent and critiqueViaAgent pass decoded images to runner and restore placeholders", async () => {
+    const buildPageSkeletonSpy = jest.spyOn(pageSkeleton, "buildPageSkeleton").mockReturnValue({
+      page: "Menachot 98a",
+      segments: [{ref: "Menachot 98a:1", commentary: {Rashi: 1}}],
+    });
+    const recordContextUsageSpy = jest
+      .spyOn(contextUsageLog, "recordContextUsage")
+      .mockImplementation(() => {});
+    const mockRunner = jest.fn()
+      .mockResolvedValueOnce({
+        text: JSON.stringify({
+          hebrew: '<b>הגה"ה</b> - <img src="IMAGE_PLACEHOLDER_1"> ע"כ:',
+          english: '<b>Gloss:</b> <img src="IMAGE_PLACEHOLDER_1">.',
+        }),
+        model: "claude-sonnet-5",
+        costUsd: 0.01,
+        toolUses: [],
+      })
+      .mockResolvedValueOnce({
+        text: JSON.stringify({valid: true}),
+        model: "claude-sonnet-5",
+        costUsd: 0.002,
+        toolUses: [],
+      });
+    const getAgentRunnerSpy = jest.spyOn(agentRunner, "getAgentRunner").mockReturnValue(mockRunner);
+
+    try {
+      const imageCandidate = candidate({
+        book: "Menachot",
+        section: "98a",
+        page: "Menachot 98a",
+        ref: "Rashi on Menachot 98a:1:1",
+        commentator: "Rashi",
+        hebrewSource: `הגה"ה <img src="${sampleDataUri}"> ע"כ`,
+      });
+
+      const generatedResult = await generateViaAgent(imageCandidate, undefined, {backend: "claude"});
+      expect(mockRunner).toHaveBeenCalledTimes(1);
+      const [generatePromptText, generateAgentOptions] = mockRunner.mock.calls[0];
+      expect(generatePromptText).not.toContain(sampleBase64);
+      expect(generatePromptText).toContain("IMAGE_PLACEHOLDER_1");
+      expect(generateAgentOptions.images).toHaveLength(1);
+      expect(generateAgentOptions.images[0].placeholder).toBe("IMAGE_PLACEHOLDER_1");
+      expect(generateAgentOptions.images[0].base64Data).toBe(sampleBase64);
+
+      expect(generatedResult.edit).toEqual({
+        hebrew: `<b>הגה"ה</b> - <img src="${sampleDataUri}"> ע"כ:`,
+        english: `<b>Gloss:</b> <img src="${sampleDataUri}">.`,
+      });
+
+      const critiqueResult = await critiqueViaAgent(
+        imageCandidate,
+        generatedResult.edit,
+        {backend: "claude"},
+      );
+      expect(critiqueResult.verdict.valid).toBe(true);
+      expect(mockRunner).toHaveBeenCalledTimes(2);
+      const [critiquePromptText, critiqueAgentOptions] = mockRunner.mock.calls[1];
+      expect(critiquePromptText).not.toContain(sampleBase64);
+      expect(critiquePromptText).toContain("IMAGE_PLACEHOLDER_1");
+      expect(critiqueAgentOptions.images).toHaveLength(1);
+      expect(critiqueAgentOptions.images[0].placeholder).toBe("IMAGE_PLACEHOLDER_1");
+    } finally {
+      buildPageSkeletonSpy.mockRestore();
+      recordContextUsageSpy.mockRestore();
+      getAgentRunnerSpy.mockRestore();
+    }
+  });
+
+  describe("isFreshTranslation and task records", () => {
+    test("TASK_TYPE is rashi_tosafot_translation", () => {
+      expect(TASK_TYPE).toBe("rashi_tosafot_translation");
+    });
+
+    test("recognizes freshness from generation record", () => {
+      const readSpy = jest.spyOn(generationRecordModule, "readGenerationRecord")
+        .mockImplementation((taskType: string) => {
+          if (taskType === TASK_TYPE) {
+            return {
+              sourceRefs: ["Rashi on Zevachim 2a:1:1"],
+              sourceText: "מקור",
+              model: "claude-sonnet-5",
+              promptVersion: "v2",
+              generatedAt: "2026-10-22T00:00:00.000Z",
+              dependsOn: [],
+            };
+          }
+          return undefined;
+        });
+
+      try {
+        const testCandidate = candidate({hebrewSource: "מקור"});
+        expect(isFreshTranslation(testCandidate)).toBe(true);
+      } finally {
+        readSpy.mockRestore();
+      }
+    });
+
+    test("recordGenerationForCandidate records promptVersion v3 under TASK_TYPE", () => {
+      const upsertSpy = jest.spyOn(generationRecordModule, "upsertGenerationRecord")
+        .mockImplementation(() => {});
+
+      try {
+        const testCandidate = candidate({hebrewSource: "מקור"});
+        const generatedEdit: GeneratedEdit = {
+          edit: {hebrew: "מקור.", english: "source"},
+          model: "claude-sonnet-5",
+          costUsd: 0.015,
+          contextRefsUsed: ["Zevachim 2a:1"],
+        };
+        recordGenerationForCandidate(testCandidate, generatedEdit);
+
+        expect(upsertSpy).toHaveBeenCalledTimes(1);
+        const [taskType, page, ref, record] = upsertSpy.mock.calls[0];
+        expect(taskType).toBe("rashi_tosafot_translation");
+        expect(page).toBe(testCandidate.page);
+        expect(ref).toBe(testCandidate.ref);
+        expect(record.promptVersion).toBe("v3");
+      } finally {
+        upsertSpy.mockRestore();
+      }
+    });
   });
 });

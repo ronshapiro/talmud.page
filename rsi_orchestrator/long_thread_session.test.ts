@@ -1,3 +1,6 @@
+import * as fs from "fs";
+import * as path from "path";
+import {extractBase64Images} from "./base64_images";
 import {
   continuationCritiquePrompt,
   continuationGenerationPrompt,
@@ -55,7 +58,8 @@ describe("continuation prompts", () => {
     const prompt = continuationGenerationPrompt(candidate);
     expect(prompt).toContain("Next commentary comment to translate and punctuate on this page:");
     expect(prompt).toContain("Comment ref: Rashi on Menachot 80a:1:1");
-    expect(prompt).toContain("Follow TRANSLATION_TASK instructions and format established above.");
+    expect(prompt).toContain("Follow the translation instructions and format established above.");
+    expect(prompt).toContain('Respond with ONLY a JSON object matching {"hebrew"?: string, "english"?: string}.');
   });
 
   test("formats concise continuation critique prompt", () => {
@@ -64,9 +68,58 @@ describe("continuation prompts", () => {
       hebrew: "טקסט:",
       english: "translated text.",
     });
-    expect(prompt).toContain("Target comment to check:");
+    expect(prompt).toContain("## Target comment to check");
     expect(prompt).toContain("Comment ref: Rashi on Menachot 80a:1:1");
-    expect(prompt).toContain("Evaluate according to CRITIQUE_TASK instructions and format established above.");
+    expect(prompt).toContain("Evaluate whether this proposed edit is valid according to the critique criteria:");
+    expect(prompt).toContain('{"valid": true}');
+    expect(prompt).toContain('{"valid": false, "reason": "<brief one-sentence reason>"}');
+    expect(prompt).toContain("No lookups or arbitrary scripts/tools are permitted.");
+  });
+
+  test("replaces base64 images with placeholders in continuation generation and critique prompts", () => {
+    const sampleBase64 = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhg"
+      + "GAWjR9awAAAABJRU5ErkJggg==";
+    const sampleDataUri = `data:image/png;base64,${sampleBase64}`;
+    const candidate = makeCandidate({
+      hebrewSource: `הגה"ה <img src="${sampleDataUri}"> ע"כ`,
+    });
+
+    const generationText = continuationGenerationPrompt(candidate);
+    expect(generationText).not.toContain(sampleBase64);
+    expect(generationText).toContain('Current Hebrew text: הגה"ה <img src="IMAGE_PLACEHOLDER_1"> ע"כ');
+    expect(generationText).toContain("IMAGE_PLACEHOLDER_1");
+
+    const critiqueText = continuationCritiquePrompt(candidate, {
+      hebrew: `<b>הגה"ה</b> - <img src="${sampleDataUri}"> ע"כ:`,
+      english: `<b>Gloss:</b> <img src="${sampleDataUri}">.`,
+    });
+    expect(critiqueText).not.toContain(sampleBase64);
+    expect(critiqueText).toContain('Original Hebrew: הגה"ה <img src="IMAGE_PLACEHOLDER_1"> ע"כ');
+    expect(critiqueText).toContain('Proposed Hebrew: <b>הגה"ה</b> - <img src="IMAGE_PLACEHOLDER_1"> ע"כ:');
+    expect(critiqueText).toContain('Proposed English: <b>Gloss:</b> <img src="IMAGE_PLACEHOLDER_1">.');
+  });
+
+  test("uses a shared temp directory and ref-prefixed filenames across turns in a long conversation", () => {
+    const firstPayload = Buffer.from("turn-1-image").toString("base64");
+    const secondPayload = Buffer.from("turn-2-image").toString("base64");
+
+    const firstTurnExtraction = extractBase64Images(
+      `<img src="data:image/png;base64,${firstPayload}">`,
+      {ref: "Rashi on Menachot 80a:1:1"},
+    );
+    const secondTurnExtraction = extractBase64Images(
+      `<img src="data:image/png;base64,${secondPayload}">`,
+      {ref: "Rashi on Menachot 80a:1:2"},
+    );
+
+    const firstFilePath = firstTurnExtraction.images[0].filePath;
+    const secondFilePath = secondTurnExtraction.images[0].filePath;
+
+    expect(path.dirname(firstFilePath)).toBe(path.dirname(secondFilePath));
+    expect(path.basename(firstFilePath)).toBe("Rashi_on_Menachot_80a_1_1_IMAGE_PLACEHOLDER_1.png");
+    expect(path.basename(secondFilePath)).toBe("Rashi_on_Menachot_80a_1_2_IMAGE_PLACEHOLDER_1.png");
+    expect(fs.readFileSync(firstFilePath).toString("utf-8")).toBe("turn-1-image");
+    expect(fs.readFileSync(secondFilePath).toString("utf-8")).toBe("turn-2-image");
   });
 });
 

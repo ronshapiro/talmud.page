@@ -1,0 +1,330 @@
+{
+  "Rashi on Kiddushin 13a:10:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 13a:10:1",
+      "Rashi on Kiddushin 13a:1:1",
+      "Rashi on Kiddushin 13a:2:1"
+    ],
+    "generatedAt": "2026-10-22T03:39:20.333Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 13a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לנקוטינהו לשמעתתיה</strong> - נתקבצו לבהמ\"ד ואמרו כל ששמע שמועה חדשה מפיו יאמרנה באזני חביריו כדי לצרפם שלא ישתכחו:"
+  },
+  "Rashi on Kiddushin 13a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T03:42:28.966Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 13a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קונין</strong> - בחליפין שלף איש נעלו <span class=\"parenthesized\">(רות ד׳:ז׳)</span>:"
+  },
+  "Rashi on Kiddushin 13a:12:1": {
+    "dependsOn": [
+      "Kiddushin 13a:12",
+      "Rashi on Kiddushin 13a:12:2",
+      "Rashi on Kiddushin 13a:10:1",
+      "Rashi on Kiddushin 13a:9:1"
+    ],
+    "generatedAt": "2026-10-22T03:53:50.619Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 13a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הדר יתבי וקאמרי</strong> - בשמעתיה דר' אסי הא דאמר רב יהודה כו' א\"ר אסי עלה קשים לעולם דיינים המורים הוראה בעריות ואינם בקיאין יותר מדור המבול:"
+  },
+  "Rashi on Kiddushin 13a:12:2": {
+    "dependsOn": [
+      "Kiddushin 13a:12",
+      "Rashi on Kiddushin 13a:12:1",
+      "Rashi on Kiddushin 13a:13:1",
+      "Rashi on Kiddushin 13a:13:2",
+      "Rashi on Kiddushin 13a:7:1",
+      "Rashi on Kiddushin 13a:7:2"
+    ],
+    "generatedAt": "2026-10-22T03:57:20.684Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 13a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פרצו</strong> - כמו וכן יפרוץ <span class=\"parenthesized\">(שמות א)</span> מולדין בנין:"
+  },
+  "Rashi on Kiddushin 13a:13:1": {
+    "dependsOn": [
+      "Kiddushin 13a:13",
+      "Rashi on Kiddushin 13a:13:2",
+      "Steinsaltz on Kiddushin 13a:13",
+      "Steinsaltz comment #1 on Kiddushin 13a:13",
+      "Chidushei Agadot on Kiddushin 13a:1",
+      "Chidushei Agadot on Kiddushin 13a:2",
+      "Kiddushin 13a:15",
+      "Rashi on Kiddushin 13a:15:1",
+      "Rashi on Kiddushin 13a:1:1",
+      "Rashi on Kiddushin 13a:1:2",
+      "Rashi on Kiddushin 12b:1:1"
+    ],
+    "generatedAt": "2026-10-22T04:02:41.583Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 13a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי משמע</strong> - מהכא קשים לעולם דקאי על כן תאבל אאשת איש:"
+  },
+  "Rashi on Kiddushin 13a:13:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T04:04:05.171Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 13a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדמתרגם רב יוסף</strong> - דהוה בקי בתרגום נביאים שתרגם יונתן בן עוזיאל דהאי פרצו דמים בדמים נגעו באשת איש קאי:"
+  },
+  "Rashi on Kiddushin 13a:15:1": {
+    "dependsOn": [
+      "Kiddushin 13a:15"
+    ],
+    "generatedAt": "2026-10-22T04:05:12.618Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 13a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי מפני אלה אבלה הארץ</strong> - בעלמא כתיב מיהא שמעינן מינה דאכל חדא קאמר על כן תאבל דהא אלה חדא מהנך דקרא קמא היא:"
+  },
+  "Rashi on Kiddushin 13a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T03:02:36.265Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 13a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי אמרה לא נמי הוו קידושין</strong> - בתמיה:"
+  },
+  "Rashi on Kiddushin 13a:1:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 13a:1:1",
+      "Rashi on Kiddushin 13a:1:2",
+      "Rashi on Kiddushin 13a:1:3",
+      "Rashi on Kiddushin 13a:2:1",
+      "Rashi on Kiddushin 13a:3:1",
+      "Rashi on Kiddushin 13a:5:1",
+      "Rashi on Kiddushin 12b:1:1",
+      "Rashi on Kiddushin 12b:2:1",
+      "Rashi on Kiddushin 12b:3:1"
+    ],
+    "generatedAt": "2026-10-22T03:06:55.388Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 13a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דשתקה מישתקה</strong> - ולא רצתה דקאמר ה\"ק לא אמרה רוצה אני:"
+  },
+  "Rashi on Kiddushin 13a:1:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 13a:1:1",
+      "Rashi on Kiddushin 13a:1:2",
+      "Steinsaltz on Kiddushin 13a:1:1",
+      "Steinsaltz on Kiddushin 13a:1",
+      "Ritva on Kiddushin 13a:1",
+      "Kiddushin 13a:1"
+    ],
+    "generatedAt": "2026-10-22T03:10:31.402Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 13a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא כלום היא</strong> - דהאי דשתקה משום דלא איכפת לה הוא:"
+  },
+  "Rashi on Kiddushin 13a:2:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 13a:2:1"
+    ],
+    "generatedAt": "2026-10-22T03:11:31.724Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 13a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי דמי</strong> - שתיקה דהכא לשתיקה דהתם:"
+  },
+  "Rashi on Kiddushin 13a:2:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 13a:2:2",
+      "Rashi on Kiddushin 13a:2:1",
+      "Rashi on Kiddushin 12b:1:1",
+      "Rashi on Kiddushin 12b:2:1"
+    ],
+    "generatedAt": "2026-10-22T03:13:31.237Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 13a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם</strong> - גבי כנסי בפקדון מעיקרא בתורה שמירה קבילתיה כי הדר אמר התקדשי לי בו סברה אי שדינא ליה כו' הילכך לא שדתינהו והאי דלא מחאי משום דלא איכפת לה אבל גבי ציפתא מעיקרא בתורת קידושין קבלתיה ונהי דציפתא לית בה שוה פרוטה כי הדר ואמר תקדוש בזוזי דאית בה אי לא ניחא לה תשדינהו דהא לא נתחייבה בשמירתה ומדלא שדתינהו ש\"מ נתרצית בקידושין:"
+  },
+  "Rashi on Kiddushin 13a:3:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 13a:3:1",
+      "Rashi on Kiddushin 13a:3:2",
+      "Rashi on Kiddushin 13a:3:3",
+      "Kiddushin 13a:2",
+      "Rashi on Kiddushin 12b:1:1",
+      "Rashi on Kiddushin 12b:2:1"
+    ],
+    "generatedAt": "2026-10-22T03:16:00.456Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 13a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דינא גמירי</strong> - וידעה כיון דלא קבלה נטירותא עלה אי שדיא להו לא תחייב:"
+  },
+  "Rashi on Kiddushin 13a:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T03:16:41.153Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 13a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שמיע לן</strong> - לא הוא אמר לנו ולא אחר משמו:"
+  },
+  "Rashi on Kiddushin 13a:3:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T03:17:38.985Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 13a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חושו לה</strong> - ואצרכוה גיטא:"
+  },
+  "Rashi on Kiddushin 13a:4:1": {
+    "dependsOn": [
+      "[",
+      "Chokhmat Shlomo on Kiddushin 13a:1",
+      "Rashi on Kiddushin 13a:3:1",
+      "Rashi on Kiddushin 13a:3:2",
+      "Rashi on Kiddushin 13a:3:3",
+      "Jastrow, *וִורְשְׁכָא 1",
+      "Rashi on Kiddushin 13a:4:1"
+    ],
+    "generatedAt": "2026-10-22T03:23:11.940Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 13a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וורשכי</strong> - בינדלו\"ש <span class=\"parenthesized\">(בינדיל\"ש: אגדים, חגורות)</span> :"
+  },
+  "Rashi on Kiddushin 13a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T03:23:45.532Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 13a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גזל</strong> - דלא יהיב דמי:"
+  },
+  "Rashi on Kiddushin 13a:5:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 13a:5:2",
+      "Rashi on Kiddushin 13a:5:1",
+      "Rashi on Kiddushin 13a:5:3"
+    ],
+    "generatedAt": "2026-10-22T03:25:23.137Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 13a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חמסן</strong> - דיהיב דמי אבל לא נתרצו בעלים מעולם למכור:"
+  },
+  "Rashi on Kiddushin 13a:5:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T03:26:46.434Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 13a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בדשדיך</strong> - שדבר בה קודם לכן ונתרצית להתקדש לו דהתם כי שתקה משום דניחא לה הוא:"
+  },
+  "Rashi on Kiddushin 13a:7:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 13a:7:1",
+      "Kiddushin 13a:7"
+    ],
+    "generatedAt": "2026-10-22T03:28:43.882Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 13a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נימא מקודשת סתם</strong> - ולא איצטריך לפלוגי ולמימר דכי אמרה לא אינה מקודשת שאף הקטנים יודעים בו:"
+  },
+  "Rashi on Kiddushin 13a:7:2": {
+    "dependsOn": [
+      "Kiddushin 13a:7",
+      "Rashi on Kiddushin 13a:7:1"
+    ],
+    "generatedAt": "2026-10-22T03:30:46.565Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 13a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי התם</strong> - כדתנא בההיא דלעיל בשעת מתן מעות מקודשת:"
+  },
+  "Rashi on Kiddushin 13a:8:1": {
+    "dependsOn": [
+      "Kiddushin 13a:8",
+      "Rashi on Kiddushin 13a:7:1",
+      "Rashi on Kiddushin 13a:7:2",
+      "Rashi on Kiddushin 13a:5:1"
+    ],
+    "generatedAt": "2026-10-22T03:33:22.593Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 13a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא רצתה דאישתיקה</strong> - וקבילתיה ואפ\"ה אינה מקודשת דדידה שקלה ולאחר מתן מעות אפילו רצתה דאמרה אין לא מקדשה דמעיקרא קבלתיה בחובה וכי הדר אמרה אין לא קיהיב לה מידי:"
+  },
+  "Rashi on Kiddushin 13a:9:1": {
+    "dependsOn": [
+      "Kiddushin 13a:9"
+    ],
+    "generatedAt": "2026-10-22T03:35:32.648Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 13a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואלא קשיא הך כו'</strong> - מסקנא דמנא תימרא היא:"
+  },
+  "Tosafot on Kiddushin 13a:10:1": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 13a:10:1"
+    ],
+    "generatedAt": "2026-10-22T03:41:21.878Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 13a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשם שאין האשה נקנית בפחות משוה פרוטה כך אין הקרקע נקנית כו'</strong> - תימה דה\"ל למידק איפכא דהא קניני אשה לא ידעינן אלא משדה ושמא י\"ל דלית ליה ג\"ש דקיחה קיחה אלא נפקא ליה מויצאה חנם א\"נ י\"ל דאורחיה דגמ' למינקט הפשוט תחילה כדאי' בנדרים <span class=\"parenthesized\">(דף כה:)</span> כשם שנדרי שגגות מותרות כך שבועות שגגות מותרות ואע\"ג דנדר לא ידעינן אלא משבועות דכתיב האדם בשבועה פרט לאנוס <span class=\"parenthesized\">(שבועות דף כו:)</span>:"
+  }
+}

@@ -1,0 +1,842 @@
+{
+  "Rashi on Megillah 3b:10:1": {
+    "dependsOn": [
+      "Megillah 3b:9",
+      "Megillah 3b:10",
+      "Rashi on Megillah 3b:10:1",
+      "Rashi on Megillah 3b:6:1",
+      "Rashi on Megillah 3b:8:1",
+      "Rashi on Megillah 3b:8:2",
+      "Rashi on Megillah 3b:9:1",
+      "Rashi on Berakhot 19b:8:1",
+      "Rashi on Berakhot 19b:9:1",
+      "Rashi on Berakhot 19b:10:1",
+      "Rashi on Megillah 3a:1:1",
+      "Rashi on Megillah 3a:2:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Bava Kamma 2a:1:1",
+      "Rashi on Megillah 2a:1:1",
+      "Rashi on Megillah 2a:2:1",
+      "Rashi on Megillah 2a:3:1",
+      "Rashi on Megillah 2b:1:1",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 3a:3:1",
+      "Rashi on Berakhot 4b:1:1",
+      "Rashi on Berakhot 10b:1:1",
+      "Rashi on Berakhot 13a:1:1",
+      "Rashi on Berakhot 15a:1:1",
+      "Rashi on Berakhot 19b:3:1",
+      "Rashi on Berakhot 20a:1:1",
+      "Tosafot on Megillah 3b:7:1",
+      "Berakhot 19b:8",
+      "Bava Metzia 30a:1",
+      "Bava Metzia 30b:1",
+      "Berakhot 19b:12",
+      "Berakhot 19b:13",
+      "Berakhot 19b:14",
+      "Rashi on Bava Metzia 30a:2:1",
+      "Rashi on Bava Metzia 30a:3:1",
+      "Rashi on Bava Metzia 30b:1:1"
+    ],
+    "generatedAt": "2026-10-20T15:09:52.191Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Megillah 3b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">את לא תעשה</strong> - דכתיב לא תוכל להתעלם <span class=\"parenthesized\">(דברים כ״ב:ג׳)</span> וכתיב והתעלמת פעמים שאתה מתעלם כגון זקן ואינו לפי כבודו:"
+  },
+  "Rashi on Megillah 3b:12:1": {
+    "dependsOn": [
+      "Megillah 3b:11",
+      "Megillah 3b:12"
+    ],
+    "generatedAt": "2026-10-20T15:10:26.639Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Megillah 3b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בנחל</strong> - מקום נמוך:"
+  },
+  "Rashi on Megillah 3b:13:1": {
+    "dependsOn": [
+      "Megillah 3b:13",
+      "Rashi on Megillah 3b:13:1",
+      "Rashi on Megillah 3b:13:2",
+      "Tosafot on Megillah 3b:13:1",
+      "Rashi on Megillah 3b:8:1",
+      "Rashi on Megillah 3b:8:2",
+      "Rashi on Megillah 3b:12:1"
+    ],
+    "generatedAt": "2026-10-20T15:12:16.109Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Megillah 3b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שישב ולבסוף הוקף</strong> - שנתיישב תחלה בבתים ולבסוף הוקף חומה נידון ככפר לענין בתי ערי חומה:"
+  },
+  "Rashi on Megillah 3b:13:2": {
+    "dependsOn": [
+      "Megillah 3b:13",
+      "Rashi on Megillah 3b:13:1",
+      "Rashi on Megillah 3b:13:2",
+      "Steinsaltz on Megillah 3b:13:1",
+      "Steinsaltz In-Depth on Megillah 3b:13:1",
+      "Ritva on Megillah 3b:13:1",
+      "Rashba on Megillah 3b:13:1",
+      "Tosafot on Megillah 3b:13:1",
+      "Rashi on Leviticus 25:29:1",
+      "Arakhin 33b:1",
+      "Arakhin 33b:2",
+      "Shevuot 16a:1",
+      "Shevuot 16a:2",
+      "Shevuot 16a:3",
+      "Rashi on Shevuot 16a:2:1",
+      "Rashi on Shevuot 16a:3:1",
+      "Shevuot 16a:9",
+      "Shevuot 16a:10",
+      "Rashi on Shevuot 16a:9:1",
+      "Rashi on Shevuot 16a:10:1",
+      "Shevuot 16a:13",
+      "Shevuot 16a:14",
+      "Rashi on Shevuot 16a:13:1",
+      "Rashi on Shevuot 16a:14:1",
+      "Shevuot 16a:15",
+      "Rashi on Shevuot 16a:15:1",
+      "Rashi on Shevuot 16a:15:2",
+      "Shevuot 16a:16",
+      "Rashi on Shevuot 16a:16:1",
+      "Rashi on Megillah 3b:2:1",
+      "Rashi on Megillah 3b:3:1",
+      "Rashi on Megillah 3b:6:1",
+      "Rashi on Megillah 2a:1:1",
+      "Rashi on Megillah 2a:2:1",
+      "Rashi on Megillah 2b:1:1"
+    ],
+    "generatedAt": "2026-10-20T15:15:50.456Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Megillah 3b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בית מושב עיר חומה</strong> - בית מושב של עיר חומה:"
+  },
+  "Rashi on Megillah 3b:14:1": {
+    "dependsOn": [
+      "Megillah 3b:14",
+      "Rashi on Megillah 3b:14:1",
+      "Rashi on Megillah 3b:14:2",
+      "Rashi on Megillah 3b:14:3",
+      "Rashi on Megillah 3b:14:4",
+      "Rashi on Megillah 3b:8:1",
+      "Rashi on Megillah 3b:8:2",
+      "Rashi on Megillah 3b:10:1",
+      "Berakhot 6b:9",
+      "Berakhot 6b:10",
+      "Berakhot 6b:11",
+      "Berakhot 6b:1",
+      "Berakhot 6b:2",
+      "Berakhot 6b:3",
+      "Berakhot 6b:4",
+      "Berakhot 6b:5",
+      "Rashi on Megillah 2a:1:1",
+      "Rashi on Megillah 2a:1:2",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:5:1",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 3a:1:1",
+      "Rashi on Berakhot 3a:2:1",
+      "Rashi on Berakhot 3b:1:1",
+      "Rashi on Berakhot 6b:2:1",
+      "Rashi on Berakhot 6b:5:1",
+      "Rashi on Berakhot 4a:1:1",
+      "Rashi on Berakhot 4b:1:1",
+      "Rashi on Berakhot 5a:1:1"
+    ],
+    "generatedAt": "2026-10-20T15:25:03.097Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Megillah 3b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עשרה בטלנין</strong> - שבטלין ממלאכתן שיהו מצויין תמיד בבית הכנסת שחרית וערבית כדאמרינן במסכת ברכות <span class=\"parenthesized\">(דף ו:)</span> כיון שבא הקב\"ה בבית הכנסת ולא מצא שם עשרה וכו':"
+  },
+  "Rashi on Megillah 3b:14:2": {
+    "dependsOn": [
+      "Megillah 3b:14",
+      "Rashi on Megillah 3b:14:1",
+      "Rashi on Megillah 3b:14:2",
+      "Rashi on Megillah 3b:14:3",
+      "Rashi on Megillah 3b:14:4",
+      "Rashi on Megillah 2a:1:1",
+      "Rashi on Megillah 2a:2:1",
+      "Rashi on Megillah 3b:13:1",
+      "Rashi on Megillah 5a:1:1",
+      "Mishnah Megillah 1:3",
+      "Megillah 5a:2",
+      "Rashi on Megillah 2a:3:1",
+      "Rashi on Megillah 2a:4:1",
+      "Rashi on Megillah 4a:1:1",
+      "Rashi on Megillah 5a:2:1",
+      "Rashi on Megillah 5a:3:1"
+    ],
+    "generatedAt": "2026-10-20T15:28:42.813Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Megillah 3b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנינא</strong> - בפירקין במתני' <span class=\"parenthesized\">(ד' ה.)</span>:"
+  },
+  "Rashi on Megillah 3b:14:3": {
+    "dependsOn": [
+      "Megillah 3b:14",
+      "Rashi on Megillah 3b:14:1",
+      "Rashi on Megillah 3b:14:2",
+      "Rashi on Megillah 3b:14:3",
+      "Rashi on Megillah 3b:14:4",
+      "Rashi on Megillah 3b:11:1",
+      "Rashi on Megillah 3b:12:1",
+      "Rashi on Megillah 3b:13:1",
+      "Rashi on Megillah 3b:13:2",
+      "Tosafot on Megillah 3b:14:1",
+      "Steinsaltz on Megillah 3b:14:1"
+    ],
+    "generatedAt": "2026-10-20T15:30:30.228Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Megillah 3b:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרך איצטריכא ליה</strong> - דכל כרך אינו אלא מקום שווקין שנכנסים שם מכל צד וגדול הוא יותר מעיר גדולה:"
+  },
+  "Rashi on Megillah 3b:14:4": {
+    "dependsOn": [
+      "Megillah 3b:14",
+      "Rashi on Megillah 3b:14:1",
+      "Rashi on Megillah 3b:14:2",
+      "Rashi on Megillah 3b:14:3",
+      "Rashi on Megillah 3b:14:4",
+      "Rashi on Megillah 3b:2:1",
+      "Rashi on Megillah 3b:5:1",
+      "Rashi on Megillah 3b:6:1",
+      "Rashi on Megillah 3b:8:1",
+      "Rashi on Megillah 3b:8:2",
+      "Rashi on Megillah 3b:13:1",
+      "Rashi on Megillah 3b:13:2"
+    ],
+    "generatedAt": "2026-10-20T15:33:06.139Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Megillah 3b:14:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמיקלעי ליה מעלמא</strong> - אנשים הרבה ויש הרבה מהן בטלין ממלאכ' שאין עושין מלאכה אלא במקומן אפילו הכי בעינן קבועין דזמנין דלא משתכחין:"
+  },
+  "Rashi on Megillah 3b:15:1": {
+    "dependsOn": [
+      "Megillah 3b:13",
+      "Megillah 3b:14",
+      "Megillah 3b:15",
+      "Megillah 3b:16",
+      "Tosafot on Megillah 3b:15:1",
+      "Ritva on Megillah 3b:15:1",
+      "Rashi on Megillah 3b:13:1",
+      "Rashi on Megillah 3b:13:2",
+      "Rashi on Megillah 3b:14:1",
+      "Rashi on Megillah 3b:14:2",
+      "Rashi on Megillah 3b:14:3",
+      "Rashi on Megillah 3b:14:4",
+      "Rashi on Megillah 3b:15:1",
+      "Rashi on Megillah 3a:15:1",
+      "Rashi on Megillah 3a:16:1"
+    ],
+    "generatedAt": "2026-10-20T15:39:27.860Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Megillah 3b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ישב אין</strong> - שחזר והוקף:"
+  },
+  "Rashi on Megillah 3b:2:1": {
+    "dependsOn": [
+      "Megillah 3b:1",
+      "Megillah 3b:2",
+      "Megillah 3b:3",
+      "Megillah 3a:14",
+      "Megillah 3a:15",
+      "Megillah 3a:16",
+      "Megillah 3a:17",
+      "Megillah 3a:18",
+      "Rashi on Megillah 3b:2:1",
+      "Tosafot on Megillah 3b:1:1",
+      "Tosafot on Megillah 3b:3:1",
+      "Rashi on Megillah 3b:5:1"
+    ],
+    "generatedAt": "2026-10-20T14:25:29.505Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Megillah 3b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא דרבים</strong> - דהתם כל ישראל הוו:"
+  },
+  "Rashi on Megillah 3b:3:1": {
+    "dependsOn": [
+      "Megillah 3b:3",
+      "Rashi on Megillah 3b:3:1",
+      "Rashi on Megillah 3b:3:2",
+      "Rashi on Megillah 3b:3:3",
+      "Rashi on Megillah 3b:2:1",
+      "Rashi on Megillah 3b:5:1",
+      "Rashi on Megillah 3b:6:1",
+      "Rashi on Megillah 3a:1:1",
+      "Rashi on Megillah 2a:1:1",
+      "Rashi on Megillah 2a:2:1",
+      "Rashi on Megillah 2a:3:1",
+      "Rashi on Megillah 2b:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Moed Katan 27a:1:1",
+      "Rashi on Moed Katan 27b:1:1",
+      "Rashi on Moed Katan 28b:1:1",
+      "Mishnah Moed Katan 3:9",
+      "Mishnah Moed Katan 3:8",
+      "Rashi on Megillah 3a:2:1",
+      "Rashi on Megillah 3a:3:1",
+      "Rashi on Megillah 3a:4:1",
+      "Rashi on Berakhot 2b:1:1",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 2b:3:1"
+    ],
+    "generatedAt": "2026-10-20T14:28:25.464Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Megillah 3b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מענות</strong> - הספד על המת:"
+  },
+  "Rashi on Megillah 3b:3:2": {
+    "dependsOn": [
+      "Megillah 3b:3",
+      "Rashi on Megillah 3b:3:1",
+      "Rashi on Megillah 3b:3:2",
+      "Rashi on Megillah 3b:3:3",
+      "Moed Katan 27a:12",
+      "Moed Katan 27b:1",
+      "Rashi on Moed Katan 27b:1:1",
+      "Rashi on Moed Katan 27b:1:2",
+      "Rashi on Moed Katan 27b:1:3",
+      "Moed Katan 28b:1",
+      "Rashi on Moed Katan 28b:1:1",
+      "Rashi on Moed Katan 28b:1:2",
+      "Rashi on Moed Katan 28b:1:3",
+      "Moed Katan 28b:2",
+      "Moed Katan 28b:3",
+      "Moed Katan 28b:4",
+      "Moed Katan 28b:5",
+      "Steinsaltz on Megillah 3b:3",
+      "Ritva on Megillah 3b:3:1",
+      "Jastrow on Megillah 3b:3:1",
+      "Shabbat 153a:1",
+      "Rashi on Shabbat 153a:1:1",
+      "Rashi on Megillah 3a:1:1",
+      "Rashi on Megillah 3b:2:1",
+      "Rashi on Megillah 3b:5:1",
+      "Rashi on Megillah 2a:1:1",
+      "Rashi on Megillah 2a:2:1",
+      "Rashi on Megillah 2a:3:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Moed Katan 27b:11",
+      "Moed Katan 27b:12",
+      "Moed Katan 27b:13",
+      "Moed Katan 27b:14",
+      "Moed Katan 28b:6",
+      "Moed Katan 28b:7",
+      "Moed Katan 28b:8",
+      "Moed Katan 28b:9",
+      "Moed Katan 27a:6",
+      "Moed Katan 27a:7",
+      "Moed Katan 27a:8",
+      "Mishneh Torah, Mourning 11:4",
+      "Shulchan Arukh, Orach Chayim 547:3",
+      "Shulchan Arukh, Yoreh De\"ah 401:5",
+      "[\\",
+      "Rabbeinu Chananel on Megillah 3b:2:1",
+      "Rabbeinu Chananel on Megillah 3b:3:1"
+    ],
+    "generatedAt": "2026-10-20T14:34:21.537Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Megillah 3b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא מטפחות</strong> - על לבן:"
+  },
+  "Rashi on Megillah 3b:3:3": {
+    "dependsOn": [
+      "Megillah 3b:3",
+      "Rashi on Megillah 3b:3:1",
+      "Rashi on Megillah 3b:3:2",
+      "Rashi on Megillah 3b:3:3",
+      "Mishnah Moed Katan 3:9",
+      "Rashi on Megillah 3b:5:1",
+      "Rashi on Megillah 3b:6:1",
+      "Rashi on Megillah 2a:1:1",
+      "Rashi on Megillah 2a:2:1",
+      "Rashi on Megillah 3a:1:1"
+    ],
+    "generatedAt": "2026-10-20T14:36:40.663Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Megillah 3b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל לא מקוננות</strong> - והתם מפרש איזהו עינוי ואיזהו קינה עינוי שכולן עונות כאחת קינה. אחת אומרת וכולן עונות אחריה:"
+  },
+  "Rashi on Megillah 3b:5:1": {
+    "dependsOn": [
+      "Megillah 3b:4",
+      "Megillah 3b:5",
+      "Megillah 3b:6",
+      "Rashi on Megillah 3b:5:1",
+      "Megillah 3b:1",
+      "Megillah 3b:2",
+      "Megillah 3b:3",
+      "Rashi on Megillah 3b:2:1",
+      "Rashi on Megillah 3b:3:1",
+      "Rashi on Megillah 3b:3:2",
+      "Rashi on Megillah 3b:3:3",
+      "Rashi on Megillah 3b:8:1",
+      "Rashi on Megillah 3b:8:2",
+      "Rashi on Megillah 3b:9:1",
+      "Rashi on Megillah 3b:10:1",
+      "Rashi on Megillah 2a:1:1",
+      "Rashi on Megillah 2a:1:2",
+      "Rashi on Megillah 2a:2:1",
+      "Rashi on Megillah 3a:1:1"
+    ],
+    "generatedAt": "2026-10-20T14:51:24.218Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Megillah 3b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ת דיחיד</strong> - ביטול מלמודו קל מעבודה ופורים:"
+  },
+  "Rashi on Megillah 3b:6:1": {
+    "dependsOn": [
+      "Megillah 3b:6",
+      "Megillah 3a:10",
+      "Megillah 3a:11",
+      "Megillah 3a:12",
+      "Megillah 3a:13",
+      "Megillah 3a:14",
+      "Megillah 3a:1",
+      "Megillah 3a:2",
+      "Megillah 3a:3",
+      "Megillah 3a:4",
+      "Megillah 3a:5",
+      "Megillah 3a:6",
+      "Megillah 3a:7",
+      "Megillah 3a:8",
+      "Megillah 3a:9",
+      "Rabbeinu Chananel on Megillah 3b:6:1",
+      "Ritva on Megillah 3b:6:1",
+      "Steinsaltz on Megillah 3b:6:1",
+      "Steinsaltz In-Depth on Megillah 3b:6:1",
+      "Megillah 3b:1",
+      "Megillah 3b:2",
+      "Megillah 3b:3",
+      "Megillah 3a:15",
+      "Megillah 3a:16",
+      "Megillah 3a:17",
+      "Megillah 3a:18",
+      "Megillah 3a:19",
+      "Megillah 3a:20",
+      "Rashi on Megillah 3b:2:1",
+      "Rashi on Megillah 3b:5:1",
+      "Rashi on Megillah 3b:8:1",
+      "Rashi on Megillah 3b:8:2",
+      "Rashi on Megillah 3a:15:1",
+      "Rashi on Megillah 3a:16:1",
+      "Rashi on Megillah 3a:17:1",
+      "Rashi on Megillah 2a:1:1",
+      "Rashi on Megillah 2a:2:1",
+      "Rashi on Megillah 2a:3:1"
+    ],
+    "generatedAt": "2026-10-20T14:55:37.947Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Megillah 3b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדרבי יוסי בר חנינא</strong> - דדריש משפחה כו':"
+  },
+  "Rashi on Megillah 3b:8:1": {
+    "dependsOn": [
+      "Megillah 3b:8",
+      "Rashi on Megillah 3b:8:1",
+      "Rashi on Megillah 3b:8:2",
+      "Rashi on Megillah 3b:2:1",
+      "Rashi on Megillah 3b:3:1",
+      "Rashi on Megillah 3b:5:1",
+      "Rashi on Megillah 3a:1:1",
+      "Rashi on Megillah 3a:2:1",
+      "Rashi on Megillah 3a:3:1",
+      "Rashi on Megillah 3a:4:1",
+      "Rashi on Megillah 2a:1:1",
+      "Rashi on Megillah 2a:2:1"
+    ],
+    "generatedAt": "2026-10-20T15:02:03.504Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Megillah 3b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולאחותו מה ת\"ל</strong> - גבי נזיר כתיב על נפש מת לא יבא <span class=\"parenthesized\">(במדבר ו׳:ז׳)</span> הרי הכל במשמע הדר כתיב בתריה קרא יתירא לאביו ולאמו לאחיו ולאחותו כו' דריש לה בספרי לאביו לא יטמא אבל מיטמא הוא למת מצוה לאמו מה ת\"ל שאם היה כהן ונזיר אע\"פ שקדוש ב' קדושות לאמו לא יטמא אבל מיטמא הוא למת מצוה לאחיו שאם היה כהן גדול ונזיר לאחיו לא יטמא אבל מיטמא הוא למת מצוה דעל כרחך כולהו למעוטי מת מצוה אתו הלכך אם אינו ענין לו תנהו ענין לחבירו ולאחותו מה ת\"ל כו' ואם אינו ענין לאלו תנהו ענין לענין ביטול עבודה ומילה מפני מת מצוה:"
+  },
+  "Rashi on Megillah 3b:8:2": {
+    "dependsOn": [
+      "Megillah 3b:8",
+      "Rashi on Megillah 3b:8:1",
+      "Rashi on Megillah 3b:8:2",
+      "Rashi on Megillah 3b:2:1",
+      "Rashi on Megillah 3b:3:1",
+      "Rashi on Megillah 3b:5:1",
+      "Rashi on Megillah 2a:1:1",
+      "Rashi on Megillah 3a:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Pesachim 2a:1:1"
+    ],
+    "generatedAt": "2026-10-20T15:03:41.049Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Megillah 3b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמת לו מת</strong> - אח או אחות:"
+  },
+  "Rashi on Megillah 3b:9:1": {
+    "dependsOn": [
+      "Megillah 3b:8",
+      "Megillah 3b:9",
+      "Rashi on Megillah 3b:9:1",
+      "Rashi on Megillah 3b:8:1",
+      "Rashi on Megillah 3b:8:2",
+      "Rashi on Megillah 3a:1:1",
+      "Rashi on Megillah 3a:2:1",
+      "Rashi on Megillah 3a:3:1",
+      "Rashi on Megillah 2a:1:1"
+    ],
+    "generatedAt": "2026-10-20T15:05:39.561Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Megillah 3b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרת לא יטמא</strong> - כשם שאין נזיר מבטל נזירותו ליטמא לקרוביו כך הוא זה לא יבטל מפסחו:"
+  },
+  "Tosafot on Megillah 3b:13:1": {
+    "dependsOn": [
+      "Megillah 3b:13",
+      "Rashi on Megillah 3b:13:1",
+      "Rashi on Megillah 3b:13:2",
+      "Megillah 5b:19",
+      "Megillah 5b:20",
+      "Megillah 5b:21",
+      "Tosafot on Megillah 3b:4:1",
+      "Tosafot on Megillah 3b:7:1",
+      "Tosafot on Megillah 3b:7:2",
+      "Rashi on Megillah 3b:2:1",
+      "Rashi on Megillah 3b:8:1",
+      "Tosafot on Megillah 2a:1:1",
+      "Tosafot on Megillah 2a:2:1",
+      "Tosafot on Megillah 3b:1:1",
+      "Tosafot on Megillah 3b:3:1"
+    ],
+    "generatedAt": "2026-10-20T15:19:24.813Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Megillah 3b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרך שישב ולבסוף הוקף נדון ככפר</strong> - <span class=\"rashi-quotation\">פירש הקונטרס</span> דלענין בתי ערי חומה איירי וה\"נ משמע מדאייתי קרא דכי ימכור וקשה דאם כן בערכין <span class=\"parenthesized\">(דף לב.)</span> הו\"ל להש\"ס למתני גבי הא דתני שאר דיני דבתי ערי חומה ועוד קשה דאם כן הל\"ל נדון כערי החצרים דשייך גבייהו לכ\"נ דלענין מגילה מיירי מכל מקום מייתי קרא דכי ימכור לאשמועינן דחומה דמתנינן גבי מגילה בכה\"ג דמהני גבי ערי חומה דהיינו הוקף ולבסוף ישב כדכתיב בית מושב עיר חומה דמשמע שנתיישב בתוך החומה ואם תאמר לקמן <span class=\"parenthesized\">(מגילה דף ה:)</span> אמרינן דטבריא שימה חומתה אע\"ג דאין לה דין ערי חומה מ\"מ קורין את המגילה בט\"ו דהם מוקפין חומה כיון דמגניא מאויבים וה\"נ היה לנו לומר כשישב ולבסוף הוקף כיון דמכסיא ומגניא וי\"ל דשאני טבריא דכיון דחזינן דהיקף ים מהני כהיקף חומה לגבי מגילה גם כן דין הוא שיקראו המגילה בט\"ו שהרי היקף שלה קודם לישובה והוי כשאר היקף דמהני בבתי ערי חומה אבל ישב ולבסוף הוקף לא מצינו בשום מקום דחשיב חומה שלה וא\"ת לקמן בפרקין <span class=\"parenthesized\">(שם)</span> דקאמר אשר לו חומה פרט לשור אגר פי' שאגרות חומות שלה כגון שהבתים מדובקים יחד בעגול והוי כמו חומה סביב לעיר ולמה לי קרא תיפוק ליה דה\"ל ישב ולבסוף הוקף שהרי לא נגמרה חומת העיר עד שנגמרו כל הבתים ויש לומר דקרא אתא לאשמועינן דאפילו היכא דקים לן שלא דר אדם שם עד שנגמרו כל הבתים אפילו הכי לא חשיב היקף וצריך לומר דהא דקאמר נדון ככפר מיירי דליכא י' בטלנים דאי יש שם עשרה בטלנין אמאי גרע מעיירות גדולות דהוו בי\"ד:"
+  },
+  "Tosafot on Megillah 3b:14:1": {
+    "dependsOn": [
+      "Megillah 3b:14",
+      "Rashi on Megillah 3b:14:1",
+      "Rashi on Megillah 3b:14:2",
+      "Rashi on Megillah 3b:14:3",
+      "Rashi on Megillah 3b:14:4",
+      "Tosafot on Megillah 3b:13:1",
+      "Tosafot on Megillah 3b:15:1",
+      "Tosafot on Megillah 3b:16:1",
+      "Tosafot on Megillah 2a:1:1",
+      "Tosafot on Megillah 3b:4:1",
+      "Tosafot on Megillah 3b:7:1",
+      "Tosafot on Megillah 3b:7:2"
+    ],
+    "generatedAt": "2026-10-20T15:37:13.966Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Megillah 3b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרך שאין בו י' בטלנים נדון ככפר</strong> - וצ\"ל דמיירי בסתם כרכים האמורים בתלמוד. אבל המוקף חומה מימות יהושע בן נון אפילו אין בו י' בטלנים קורין בט\"ו וה\"נ משמע דפריך בסמוך מאי קמ\"ל תנינא איזו היא עיר גדולה כו' ומשני כרך איצטריך ליה אע\"ג דמקלעי ליה מעלמא ואי איתא דאפילו במוקף חומה מימות יהושע בן נון צריך י' בטלנין הוה ליה למימר מוקף מימות יהושע אצטריכא ליה אע\"ג דחשיב חומה דידהו שהגינו מן האויבים וגם מקלעי ליה מעלמא דהוי רבותא טפי אלא ש\"מ דבמוקף מימות יהושע לא צריך י':"
+  },
+  "Tosafot on Megillah 3b:15:1": {
+    "dependsOn": [
+      "Megillah 3b:15",
+      "Tosafot on Megillah 3b:15:1",
+      "Rashi on Megillah 3b:15:1",
+      "Ritva on Megillah 3b:15:1",
+      "Tosafot on Megillah 3b:13:1",
+      "Tosafot on Megillah 3b:14:1",
+      "Tosafot on Megillah 2a:1:1",
+      "Tosafot on Megillah 3b:3:1",
+      "Tosafot on Megillah 3b:4:1",
+      "Tosafot on Megillah 3b:7:1"
+    ],
+    "generatedAt": "2026-10-20T15:45:49.137Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Megillah 3b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והתניא רבי אליעזר ברבי יוסי אומר וכו'</strong> - וא\"ת אדמותבת ליה מרבי אליעזר לסייעיה מרבנן דפליגי עליה וסברי דקדושה ראשונה קדשה לשעתה ולא לעתיד לבא ויש לומר דע\"כ לא סבר רבי יהושע כרבנן דאי סבר כוותייהו מאי מהני <span class=\"parenthesized\">(. ישב ולבסוף הוקף)</span> אם לא קדשה קדושה שנייה:"
+  },
+  "Tosafot on Megillah 3b:16:1": {
+    "dependsOn": [
+      "Megillah 3b:16",
+      "Tosafot on Megillah 3b:13:1",
+      "Tosafot on Megillah 3b:14:1",
+      "Tosafot on Megillah 3b:15:1",
+      "Tosafot on Megillah 3b:16:1"
+    ],
+    "generatedAt": "2026-10-20T15:48:05.135Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Megillah 3b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא שחרב מעשרה בטלנים</strong> - וכשלא הוקף מימות יהושע איירי דביה לא צריך עשרה ואם תאמר מאי מהני מה שהיה כרך מתחילה הוה ליה כפר שנעשה כרך שנתישבו שם עשרה ויש לומר דלרבותא נקט הכי ולא מבעיא כפר שנעשה כרך דבסתמא ליכא למיחש שמא יחסרו דיורים אלא אפילו זה שפסקו דיורים כבר פעם אחת וסלקא דעתך אמינא דאיכא למיחש שמא יפסקו עוד פעם אחרת אפילו הכי קא משמע לן דלא חיישינן:"
+  },
+  "Tosafot on Megillah 3b:1:1": {
+    "dependsOn": [
+      "Megillah 3b:1",
+      "Megillah 3a:18",
+      "Megillah 3a:19",
+      "Megillah 3a:20",
+      "Megillah 3a:21",
+      "Megillah 3a:22",
+      "Megillah 3a:23",
+      "Eruvin 63b:15",
+      "Eruvin 63b:16",
+      "Eruvin 63b:17",
+      "Eruvin 63b:18",
+      "Eruvin 63b:19",
+      "Eruvin 63b:20",
+      "Eruvin 63b:21",
+      "Eruvin 63b:22",
+      "Eruvin 63b:23",
+      "Eruvin 63b:8",
+      "Eruvin 63b:9",
+      "Eruvin 63b:10",
+      "Eruvin 63b:11",
+      "Eruvin 63b:12",
+      "Eruvin 63b:13",
+      "Eruvin 63b:14",
+      "Eruvin 63b:1",
+      "Eruvin 63b:2",
+      "Eruvin 63b:3",
+      "Eruvin 63b:4",
+      "Eruvin 63b:5",
+      "Eruvin 63b:6",
+      "Eruvin 63b:7",
+      "Tosafot on Megillah 3b:4:1",
+      "Tosafot on Megillah 3b:7:1",
+      "Tosafot on Megillah 3b:1:1"
+    ],
+    "generatedAt": "2026-10-20T14:23:07.489Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Megillah 3b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מלמד שהלך ולן בעומקה של הלכה</strong> - כל זמן ששכינה וארון שרויין שלא במקומן אסורים בתשמיש המטה לא גרס ליה הכא דמה שייך כאן ובפרק הדר <span class=\"parenthesized\">(עירובין סג:)</span> גרס ליה דקאמר שנענש יהושע על שבטל ישראל מפריה ורביה י\"ל דמה שנענש שלא היה לו בן זכר היה על שבטל ישראל מתשמיש מדה כנגד מדה אבל שאר עונש בא לו על בטול תורה:"
+  },
+  "Tosafot on Megillah 3b:3:1": {
+    "dependsOn": [
+      "Megillah 3b:3",
+      "Tosafot on Megillah 3b:3:1",
+      "Rashi on Megillah 3b:3:1",
+      "Rashi on Megillah 3b:3:2",
+      "Rashi on Megillah 3b:3:3",
+      "Mishnah Moed Katan 3:8",
+      "Mishnah Moed Katan 3:9",
+      "Moed Katan 27b:1",
+      "Moed Katan 27b:2",
+      "Moed Katan 27b:3",
+      "Moed Katan 27b:4",
+      "Moed Katan 28b:1",
+      "Moed Katan 28b:2",
+      "Moed Katan 28b:3",
+      "Moed Katan 28b:4",
+      "Moed Katan 28b:5",
+      "Moed Katan 28b:6",
+      "Moed Katan 28b:7",
+      "Tosafot on Moed Katan 28b:1:1",
+      "Ritva on Megillah 3b:3:1",
+      "Tosafot on Megillah 3b:4:1",
+      "Tosafot on Megillah 3b:4:2",
+      "Tosafot on Megillah 3b:7:1",
+      "Tosafot on Megillah 3b:7:2",
+      "Megillah 3b:1",
+      "Tosafot on Megillah 3a:1:1",
+      "Tosafot on Megillah 3a:15:1",
+      "Tosafot on Megillah 3b:1:1",
+      "Rashi on Megillah 3b:1:1",
+      "Rashi on Megillah 3b:2:1",
+      "Tosafot on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3",
+      "Rashi on Berakhot 2a:1:4",
+      "Berakhot 2a:1"
+    ],
+    "generatedAt": "2026-10-20T14:40:55.910Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Megillah 3b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מענות</strong> - כולן עונות כאחת מקוננות אחת אומרת והשאר עונות מטפחות יד על יד או על ירך או על פנים:"
+  },
+  "Tosafot on Megillah 3b:4:1": {
+    "dependsOn": [
+      "Megillah 3b:3",
+      "Megillah 3b:4",
+      "Megillah 3b:5",
+      "Tosafot on Megillah 3b:4:1",
+      "Tosafot on Megillah 3b:4:2",
+      "Maharsha on Megillah 3b:4:1",
+      "Rashi on Megillah 3b:4:1",
+      "Ritva on Megillah 3b:4:1",
+      "Tosafot on Megillah 3b:3:1",
+      "Steinsaltz on Megillah 3b:4:1",
+      "Tosafot on Megillah 3a:1:1",
+      "Tosafot on Megillah 3a:2:1",
+      "Tosafot on Megillah 2a:1:1",
+      "Tosafot on Megillah 3b:1:1",
+      "Tosafot on Megillah 3b:7:1",
+      "Rashi on Megillah 3b:2:1",
+      "Rashi on Megillah 3b:3:1"
+    ],
+    "generatedAt": "2026-10-20T14:43:13.502Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Megillah 3b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מועד בפני תלמיד חכם</strong> - ויום שמועה כבפניו דמי:"
+  },
+  "Tosafot on Megillah 3b:4:2": {
+    "dependsOn": [
+      "Megillah 3b:4",
+      "Tosafot on Megillah 3b:4:1",
+      "Tosafot on Megillah 3b:4:2",
+      "Megillah 3b:2",
+      "Megillah 3b:3",
+      "Megillah 3b:5",
+      "Megillah 3b:6",
+      "Megillah 3b:7",
+      "Megillah 3b:1",
+      "Maharsha on Megillah 3b:4:1",
+      "Tosafot on Megillah 3b:1:1",
+      "Tosafot on Megillah 3b:3:1",
+      "Tosafot on Megillah 3b:7:1",
+      "Tosafot on Megillah 3a:15:1",
+      "Tosafot on Megillah 3a:1:1",
+      "Rashi on Megillah 3b:2:1",
+      "Rashi on Megillah 3b:3:1",
+      "Rashi on Megillah 3b:5:1",
+      "Rashi on Megillah 2a:1:1",
+      "Tosafot on Megillah 2a:1:1"
+    ],
+    "generatedAt": "2026-10-20T14:48:16.141Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Megillah 3b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל שכן חנוכה ופורים</strong> - שמותר להספידם אע\"ג דמבטל ממקרא מגילה אלמא ת\"ת חמור ממקרא מגילה:"
+  },
+  "Tosafot on Megillah 3b:7:1": {
+    "dependsOn": [
+      "Megillah 3b:7",
+      "Tosafot on Megillah 3b:7:1",
+      "Tosafot on Megillah 3b:7:2",
+      "Tosafot on Megillah 3b:3:1",
+      "Tosafot on Megillah 3b:4:1",
+      "Tosafot on Megillah 3b:4:2"
+    ],
+    "generatedAt": "2026-10-20T14:56:45.574Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Megillah 3b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מת מצוה עדיף</strong> - לאו דווקא מת מצוה והוא הדין לכל מתים שבעולם מבטלים תלמוד תורה להוציאם אלא איידי דנקט בסמוך גבי ולאחותו מת מצוה ה\"נ נקט תלמוד תורה ומת מצוה:"
+  },
+  "Tosafot on Megillah 3b:7:2": {
+    "dependsOn": [
+      "Megillah 3b:6",
+      "Megillah 3b:7",
+      "Megillah 3b:8",
+      "Tosafot on Megillah 3b:7:1",
+      "Ketubot 17a:1",
+      "Ketubot 17a:2",
+      "Ketubot 17a:3",
+      "Ketubot 17a:4",
+      "Ketubot 17a:5",
+      "Ketubot 17b:1",
+      "Ketubot 17a:6",
+      "Ketubot 17a:7",
+      "Ketubot 17a:8",
+      "Ketubot 17a:9",
+      "Ketubot 17a:10",
+      "Ketubot 17a:11",
+      "Ketubot 17a:12",
+      "Ketubot 17b:2",
+      "Ketubot 17b:3",
+      "Tosafot on Ketubot 17a:12:1",
+      "Tosafot on Ketubot 17b:1:1",
+      "Tosafot on Ketubot 17a:11:1",
+      "Maharsha on Megillah 3b:7:1",
+      "Rashba on Megillah 3b:7:1",
+      "Ritva on Megillah 3b:7:1",
+      "Rashba on Megillah 3b:7",
+      "Ritva on Megillah 3b:7",
+      "Tosafot on Megillah 3b:3:1",
+      "Tosafot on Megillah 3b:4:1",
+      "Tosafot on Megillah 3b:4:2"
+    ],
+    "generatedAt": "2026-10-20T14:59:20.681Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Megillah 3b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מת מצוה עדיף</strong> - הקשה הר\"ר אלחנן למה לי קרא תיפוק ליה מק\"ו ומה ת\"ת דחמירא מבטלין משום כבוד המת עבודה דקילא לא כל שכן דהא אפילו תלמוד תורה דרבים מבטלין משום כבוד המת כדאמר פ\"ב דכתובות <span class=\"parenthesized\">(דף יז ושם)</span> וי\"ל דה\"מ למאן דקרי ותני ומתני דצריך כולי האי אבל למאן דלא קרי ותני לא צריך כולי האי והכא מיירי במת מצוה דלא קרי ותני ומשום הכי צריך קרא דולאחותו:"
+  }
+}

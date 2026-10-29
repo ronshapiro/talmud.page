@@ -1,0 +1,369 @@
+{
+  "Rashi on Temurah 8b:10:1": {
+    "dependsOn": [
+      "Rashi on Temurah 8b:10:2",
+      "Steinsaltz on Temurah 8b:10"
+    ],
+    "generatedAt": "2026-10-22T07:52:03.066Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Temurah 8b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליכול מר דמברי</strong> - שבשר בכור בריאה לאכול משאר הבשר:"
+  },
+  "Rashi on Temurah 8b:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T07:54:14.261Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Temurah 8b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנא לכו הא</strong> - מי נתנו לכם הא אינכם כהנים:"
+  },
+  "Rashi on Temurah 8b:11:1": {
+    "dependsOn": [
+      "Rashi on Temurah 8b:11:1",
+      "Rashi on Temurah 8b:10:1",
+      "Rashi on Temurah 8b:10:2"
+    ],
+    "generatedAt": "2026-10-22T07:55:37.893Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Temurah 8b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא סבירא לכו</strong> - דאסור לקנות בשר בכור מכהן דלמא מוזיל גבייכו ונראה ככהן המסייע:"
+  },
+  "Rashi on Temurah 8b:11:2": {
+    "dependsOn": [
+      "Rashi on Temurah 8b:11:1"
+    ],
+    "generatedAt": "2026-10-22T07:58:03.689Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Temurah 8b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיזבן זבנינן</strong> - וליכא למיחש למסייע דהא לא יהיב לן במתנה:"
+  },
+  "Rashi on Temurah 8b:12:1": {
+    "dependsOn": [
+      "Rashi on Temurah 8b:12:1"
+    ],
+    "generatedAt": "2026-10-22T07:58:51.733Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Temurah 8b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליטפל</strong> - לטרוח בו לגדלו קודם שיתננו לכהן:"
+  },
+  "Rashi on Temurah 8b:12:2": {
+    "dependsOn": [
+      "Rashi on Temurah 8b:12:2",
+      "Rashi on Temurah 8b:12:1"
+    ],
+    "generatedAt": "2026-10-22T08:00:09.797Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Temurah 8b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ככהן המסייע</strong> - דהשתא הוי סיוע שמצילו מלטרוח בו בלבד שיתננו לו:"
+  },
+  "Rashi on Temurah 8b:13:1": {
+    "dependsOn": [
+      "Temurah 8b:13"
+    ],
+    "generatedAt": "2026-10-22T08:01:13.344Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Temurah 8b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מוכחא מילתא</strong> - דהא מסייע הוא שהרי מיד מצילו מן הטורח והמזונות:"
+  },
+  "Rashi on Temurah 8b:14:1": {
+    "dependsOn": [
+      "Rashi on Temurah 8b:14:2",
+      "Rashi on Temurah 8b:14:3"
+    ],
+    "generatedAt": "2026-10-22T08:02:21.956Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Temurah 8b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי אמרת דלמא מוזיל כהן</strong> - כי היכי דניתיב ליה בכורות דידן ולא לכהן אחר:"
+  },
+  "Rashi on Temurah 8b:14:2": {
+    "dependsOn": [
+      "Rashi on Temurah 8b:14:1",
+      "Rashi on Temurah 8b:14:2",
+      "Rashi on Temurah 8b:14:3",
+      "Steinsaltz on Temurah 8b:14",
+      "Temurah 8b:14",
+      "Rashi on Temurah 8b:11:1",
+      "Rashi on Temurah 8b:11:2"
+    ],
+    "generatedAt": "2026-10-22T08:11:18.779Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Temurah 8b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא</strong> - עביד הכי:"
+  },
+  "Rashi on Temurah 8b:14:3": {
+    "dependsOn": [
+      "Temurah 8b:14"
+    ],
+    "generatedAt": "2026-10-22T08:13:42.404Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Temurah 8b:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמסיק אדעתיה בוצינא</strong> - דהשתא טב מקרא דלמחר. בוצינא דלעת קטנה קרא דלעת גדולה. כלומר מוטב שאמכרנו בשויו דשמא אם אני מניח להם מן הדמים לא יועילו לי כלום ולא יתנו לי בכורות שלהן:"
+  },
+  "Rashi on Temurah 8b:1:2": {
+    "dependsOn": [
+      "Rashi on Temurah 8b:1:1",
+      "Rashi on Temurah 8b:1:2",
+      "Rashi on Temurah 8b:4:1",
+      "Rashi on Temurah 8b:6:1",
+      "Rashi on Temurah 8b:6:2",
+      "Temurah 21a:4"
+    ],
+    "generatedAt": "2026-10-22T06:30:51.075Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Temurah 8b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור' שמעון היא</strong> - דאמר לקמן בפ' אלו קדשים <span class=\"parenthesized\">(תמורה דף כא.)</span> אם באו בכורות תמימים מחוצה לארץ יקרבו אם באו אין לכתחילה לא:"
+  },
+  "Rashi on Temurah 8b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T06:37:27.074Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Temurah 8b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דומיא דחטאת ואשם קתני</strong> - והאי חטאת ואשם בתמימים קמיירי דקתני אין זוכין בהן הכהנים בחייהן אבל לאחר שחיטה זוכין אלמא בבני הקרבה עסקינן:"
+  },
+  "Rashi on Temurah 8b:4:1": {
+    "dependsOn": [
+      "Temurah 8b:4",
+      "Temurah 8b:2",
+      "Rashi on Temurah 8b:4:1",
+      "Rashi on Temurah 8a:16:1",
+      "Rashi on Temurah 8a:10:1"
+    ],
+    "generatedAt": "2026-10-22T06:41:20.215Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Temurah 8b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לימא כתנאי</strong> - אי זכי כהן בבכור תם מחיים בזמן בית המקדש אי לא:"
+  },
+  "Rashi on Temurah 8b:5:1": {
+    "dependsOn": [
+      "Temurah 8b:5",
+      "Steinsaltz on Temurah 8b:5"
+    ],
+    "generatedAt": "2026-10-22T06:44:05.091Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Temurah 8b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי לאו הכי קאמר</strong> - תנא קמא בבית כהן אינו עושה תמורה על ידי בעלים אלא על ידי כהן אבל כהן ממיר בו דאית ליה זכייה בגויה:"
+  },
+  "Rashi on Temurah 8b:6:1": {
+    "dependsOn": [
+      "Temurah 8b:6",
+      "Rashi on Temurah 8b:6:2",
+      "Steinsaltz on Temurah 8b:6"
+    ],
+    "generatedAt": "2026-10-22T06:50:47.369Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Temurah 8b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא</strong> - בפלוגתא דרבי יוחנן בן נורי ורבי עקיבא דמתני' קא מיפלגי וההיא הא אוקימנא בבכור בחוצה לארץ וקאמר תנא קמא כהן עושה בו תמורה משבא לידו דהא זכי ביה מחיים דסתמיה לאו להקרבה כרבי יוחנן בן נורי ור' שמעון כר' עקיבא דאע\"ג דאית ליה זכייה בגוויה אינו עושה תמורה על ידו דנפקא ליה מהקישא כדמפרש במתני' היכן קדושה חלה עליו כו'. <br>ע\"א עושה תמורה דישראל והכהן אינו עושה תמורה לא זה ולא זה:"
+  },
+  "Rashi on Temurah 8b:6:2": {
+    "dependsOn": [
+      "Temurah 8b:6",
+      "Rashi on Temurah 8b:6:1",
+      "Rashi on Temurah 8b:6:2",
+      "Rashi on Temurah 8b:4:1",
+      "Rashi on Temurah 8b:5:1",
+      "Tosafot on Temurah 8b:6:1",
+      "Steinsaltz on Temurah 8b:6",
+      "Temurah 7b:12",
+      "Temurah 7b:13"
+    ],
+    "generatedAt": "2026-10-22T07:09:57.664Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Temurah 8b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי שמעון בן אלעזר כו' זה וזה</strong> - כהן וישראל. מאי לאו דרב נחמן איכא בינייהו דהאי דקאמר תנא קמא אצל כהן אינו עושה תמורה דאית ביה זכייה בגוויה כרב נחמן ורבי שמעון לית ליה דרב נחמן לא דכולי עלמא לית להו דרב נחמן בבכור מעליא והכא בפלוגתא דרבי יוחנן בן נורי ורבי עקיבא פליגי ובבכור בחוצה לארץ ולהכי אמר ת\"ק דכהן אין עושה בו תמורה ור' שמעון כר' עקיבא.<br> ל\"א לימא כתנאי בכור אצל כהן אינו עושה תמורה לא ישראל ולא כהן ואמרי הכי מימר הוא דלא מימר הא זבוני מזבין ליה רבי שמעון בר אלעזר אומר כיון שבא ליד כהן זה וזה אינו עושה תמורה כלומר דאפילו זבוני לא מצי מזבין ליה דכל תנא בתרא לטפויי מילתא קאתי מאי לאו דרב נחמן איכא בינייהו דתנא קמא אית ליה דרב נחמן ור' אלעזר לית ליה דרב נחמן:"
+  },
+  "Rashi on Temurah 8b:7:1": {
+    "dependsOn": [
+      "Rashi on Temurah 8b:7:2",
+      "Rashi on Temurah 8b:1:1",
+      "Rashi on Temurah 8b:6:1"
+    ],
+    "generatedAt": "2026-10-22T07:19:07.480Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Temurah 8b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שנו אלא כהן לכהן</strong> - יכול למוכרו תמים:"
+  },
+  "Rashi on Temurah 8b:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T07:20:44.134Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Temurah 8b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכור זה נתן לי כהן במומו</strong> - אבל כהן לכהן ליכא למימר הכי דכהן המביא בכור להראותו לחכם צריך להביא עדים שנפל בו אותו מום מאליו דאמרינן בבכורות בפרק כל פסולי המוקדשין <span class=\"parenthesized\">(בכורות דף לה.)</span> כל מומין הראוין לבא בידי אדם רועי ישראל נאמנים רועי כהנים אינם נאמנים דנחשדו כהנים על הבכורות:"
+  },
+  "Rashi on Temurah 8b:8:2": {
+    "dependsOn": [
+      "Rashi on Temurah 8b:8:1",
+      "Temurah 8b:7",
+      "Steinsaltz on Temurah 8b:8:1"
+    ],
+    "generatedAt": "2026-10-22T07:44:26.331Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Temurah 8b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אם כן כהן עמו</strong> - דשמא כשידע זה שמום קבוע הוא דלא הוי קדשים בחוץ אכיל ליה ולא חייש לגזילה דכהן הלכך בעינן כהן בהדיה ולא מצי למימר בכור זה נתן לי כהן במומו דאמרינן ליה אייתי לי ההוא כהן דיהביה לך דכל כמה דלא אייתי ליה לא שרינן ליה הבכור אלא א\"כ יהיב ליה כהן:"
+  },
+  "Rashi on Temurah 8b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-22T07:46:28.447Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Temurah 8b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היינו טעמא דישראל אסור</strong> - לקנות בכור תם מן הכהן משום דסתם בכור תם בזמן הזה נמכר בזול דבעי לוקח לשהוייה עד שיומם הילכך הוה האי כהן דמוזיל גבי ישראל נראה ככהן המסייע בבית הגרנות לזרות ולעמר כדי שיתנו לו התרומות והוי חילול השם דמחזי כמאן דשקיל לתרומה בתורת שכירות והאי כהן נמי מיחזי דמשום הכי מוזיל לישראל כי היכי דליתיב ליה בכורות שיוולדו לו בעדרו:"
+  },
+  "Tosafot on Temurah 8b:14:1": {
+    "dependsOn": [
+      "Rashi on Temurah 8b:14:1",
+      "Rashi on Temurah 8b:14:2",
+      "Rashi on Temurah 8b:14:3",
+      "Temurah 8b:9",
+      "Rashi on Temurah 8b:9:1",
+      "Tosafot on Temurah 8b:9:1",
+      "Tosafot on Temurah 8b:1:1",
+      "Tosafot on Temurah 8b:6:1",
+      "Tosafot on Temurah 8b:7:1",
+      "Steinsaltz on Temurah 8b:9",
+      "Steinsaltz on Temurah 8b:14",
+      "["
+    ],
+    "generatedAt": "2026-10-22T08:17:54.978Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Temurah 8b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשון רש\"י היינו טעמא דנראה ככהן המסייע בבית הגרנות</strong> - דרגילות הוא דמוכר בכור דמוזיל גבי [ישראל] כדי שיתן לו בכור פעם אחרת וכל שכן דאסור לקבלו במתנה וצריך ליזהר שאם אמר ישראל לכהן הילך בכור זה אם אמר לו הכהן שלך יהא אז אסור לקבלו מפני שנראה ככהן המסייע בבית הגרנות:"
+  },
+  "Tosafot on Temurah 8b:1:1": {
+    "dependsOn": [
+      "Temurah 8b:1",
+      "Rashi on Temurah 8b:1:1",
+      "Rashi on Temurah 8b:1:2",
+      "Temurah 21b:3",
+      "Temurah 21a:12",
+      "Temurah 21a:4",
+      "Temurah 21a:5",
+      "Temurah 21b:1",
+      "Temurah 21b:2",
+      "Temurah 21a:13",
+      "Temurah 21a:14",
+      "Temurah 21b:4",
+      "Tosafot on Temurah 21b:4:1"
+    ],
+    "generatedAt": "2026-10-22T06:36:26.511Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Temurah 8b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי שמעון היא דאמר אם באו תמימים יקרבו</strong> - אבל לכתחילה לא וטעמא משום דיש להם פרנסה במקומם ורבי עקיבא פליג ואמר דאפילו דיעבד לא יקרבו ומפרש טעמא משום דאיתקש בכור למעשר בהמה ומעשר בהמה למעשר דגן מה מעשר דגן אינו בא מחוצה לארץ לארץ ישראל אף בכור ומעשר כו' וא\"ת אמאי לא אוקמא כר' עקיבא דלדידיה הוי טפי ממונו וי\"ל דלר' עקיבא לא הויא כל כך דומיא דשלמים:"
+  },
+  "Tosafot on Temurah 8b:6:1": {
+    "dependsOn": [
+      "Temurah 8b:6",
+      "Rashi on Temurah 8b:6:1",
+      "Rashi on Temurah 8b:6:2",
+      "Tosafot on Temurah 8b:6:1",
+      "Steinsaltz on Temurah 8b:6",
+      "Temurah 7b:12",
+      "Temurah 7b:13",
+      "Tosafot on Temurah 8b:1:1",
+      "Tosafot on Temurah 8b:7:1",
+      "Temurah 8a:14",
+      "Temurah 8a:15",
+      "Temurah 8b:1",
+      "Temurah 8b:2",
+      "Temurah 8b:3",
+      "Versions on Temurah 8b:6"
+    ],
+    "generatedAt": "2026-10-22T07:17:55.204Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Temurah 8b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא בפלוגתא דרבי יוחנן בן נורי ורבי עקיבא דמתני' קמפלגי</strong> - כלומר וההוא אוקימנא בבכור חוצה לארץ:"
+  },
+  "Tosafot on Temurah 8b:7:1": {
+    "dependsOn": [
+      "Temurah 8b:7"
+    ],
+    "generatedAt": "2026-10-22T07:25:17.713Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Temurah 8b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלמא אזיל ישראל ושדי ביה מומא וממטי ליה <span class=\"parenthesized\">(לחבריה)</span> [לחכם] ואמר בכור זה נתן לי כהן במומו</strong> - ואם תאמר מאי בכך והא לא שרו ליה כיון דנפק המום מיד כהן בלא עדים שהרי נחשדו הכהנים על זה ויש לומר דהכי קאמר נתן לי כהן במומו וקמי דידי נפל בו מום מאליו וא\"ת היכי חייש דלמא אזיל ישראל ושדי ביה מומא והרי לא נחשדו ישראל על כך כדאמרינן בבכורות <span class=\"parenthesized\">(דף לה.)</span> דבכור ביד ישראל הכל נאמנין עליו דכהנים הוא דחשידי אמומי אבל ישראל לא חשידי ואין לומר דה\"מ בודאי בכור היכא דסופו ליתנו לכהן דאין ישראל חוטא ולא לו דהא בפרק כל פסולי המוקדשין <span class=\"parenthesized\">(בכורות דף לה:)</span> אמר רב נחמן גבי ספק בכור בעליו מעידין עליו ויש לומר דלא דמי דה\"מ כשהיה תם תחילה ביד ישראל אז ירא להטיל בו מום מאחר שנולד ברשותו דאין לו להשמט בשום דבר אבל הכא דיש לו לתלות שנתן לו הכהן במומו יש לחשדו עליו ונראה דלכך לא רצה לומר בענין אחר דלמא אזיל ישראל ושדי ביה מומא ומראהו לחכם ואמר דמעצמו נפל ולא יאמר כהן נתנו לי דכה\"ג לא עביד דלמא יחשדוהו עליו ולומר מה לו לטרוח עליו ולהביאו לחכם כיון דלאו דידיה הוא ופריך והא אמר רב יהודה אין רואין בכור לישראל אלא אם כן כהן עמו והטעם שמא יעכבנו לעצמו ולא יתננו לכהן וכיון דצריך להביא הכהן לא מצי אמר בכור זה נתנו כהן במומו דאמרינן ליה אייתי <span class=\"parenthesized\">(ראייה)</span> ההוא כהן דיהבא לך דכל כמה דלא אייתי ליה לא שרינן ליה הבכור:"
+  },
+  "Tosafot on Temurah 8b:9:1": {
+    "dependsOn": [
+      "Rashi on Temurah 8b:9:1",
+      "Temurah 8b:9",
+      "[",
+      "Tosafot on Temurah 8b:14:1"
+    ],
+    "generatedAt": "2026-10-22T07:50:44.522Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Temurah 8b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשון רש\"י היינו טעמא דנראה ככהן המסייע בבית הגרנות</strong> - דרגילות הוא דמוכר בכור דמוזיל גבי [ישראל] כדי שיתן לו בכור פעם אחרת וכל שכן דאסור לקבלו במתנה וצריך ליזהר שאם אמר ישראל לכהן הילך בכור זה אם אמר לו הכהן שלך יהא אז אסור לקבלו מפני שנראה ככהן המסייע בבית הגרנות:"
+  }
+}

@@ -1,0 +1,442 @@
+{
+  "Rashi on Yevamot 5b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T15:39:01.943Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 5b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שכן צורך גבוה</strong> - למזבח. תאמר בעשה דייבום דליכא כל הני:"
+  },
+  "Rashi on Yevamot 5b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T15:39:30.487Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 5b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מילה ותמיד שכן ישנן לפני הדבור</strong> - לפני מתן תורה:"
+  },
+  "Rashi on Yevamot 5b:11:2": {
+    "dependsOn": [
+      "Rashi on Yevamot 5b:11:1",
+      "Rashi on Yevamot 5b:11:3",
+      "Rashi on Yevamot 5a:1:1",
+      "Rashi on Yevamot 5a:2:1",
+      "Rashi on Yevamot 5a:3:1",
+      "Rashi on Yevamot 5b:2:1"
+    ],
+    "generatedAt": "2026-10-21T15:42:11.894Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 5b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואליבא דמ\"ד</strong> - במס' חגיגה <span class=\"parenthesized\">(ד' ו.)</span>:"
+  },
+  "Rashi on Yevamot 5b:11:3": {
+    "dependsOn": [
+      "Rashi on Yevamot 5b:11:1",
+      "Rashi on Yevamot 5b:11:2",
+      "Rashi on Yevamot 5b:7:1",
+      "Rashi on Yevamot 5b:7:2"
+    ],
+    "generatedAt": "2026-10-21T15:45:21.345Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 5b:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עולה שהקריבו ישראל במדבר</strong> - דכתיב <span class=\"parenthesized\">(שמות כ״ד:ה׳)</span> ויעלו עולות עולת תמיד הוה:"
+  },
+  "Rashi on Yevamot 5b:12:1": {
+    "dependsOn": [
+      "Yevamot 5b:12",
+      "Rashi on Yevamot 5b:10:1"
+    ],
+    "generatedAt": "2026-10-21T15:56:18.712Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 5b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סד\"א</strong> - אי לא כתיב עליה לדרשא תיתי עשה ודחי לא תעש' שיש בו כרת מכיבוד אב ואם:"
+  },
+  "Rashi on Yevamot 5b:13:1": {
+    "dependsOn": [
+      "Rashi on Yevamot 5b:13:1",
+      "Rashi on Yevamot 5b:1:1",
+      "Rashi on Yevamot 5b:2:1",
+      "Rashi on Yevamot 5b:11:1",
+      "Tosafot on Yevamot 2a:1:2"
+    ],
+    "generatedAt": "2026-10-21T15:58:20.473Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 5b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כולכם</strong> - אתה ואביך ואמך חייבים בכבודי. מאני ה' דריש ליה:"
+  },
+  "Rashi on Yevamot 5b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T16:00:53.393Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 5b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שחוט לי</strong> - דהוי אב מלאכה שחייבין עליה כרת:"
+  },
+  "Rashi on Yevamot 5b:1:1": {
+    "dependsOn": [
+      "Yevamot 5b:1",
+      "Rashi on Yevamot 5b:1:2",
+      "Rashi on Yevamot 5b:1:1",
+      "Chokhmat Shlomo on Yevamot 5b:1",
+      "Rashi on Yevamot 5a:1:1",
+      "Rashi on Yevamot 5a:2:1",
+      "Rashi on Yevamot 5a:3:1",
+      "Rashi on Yevamot 5a:4:1",
+      "Steinsaltz on Yevamot 5b:1",
+      "Rashi on Yevamot 3b:12:1",
+      "Rashi on Yevamot 4a:1:1"
+    ],
+    "generatedAt": "2026-10-21T14:45:33.884Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 5b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקרא קמא</strong> - דכלאים בציצית. ודקאמרת לרבנן דלא אייתר להו צמר ופשתים מנא להו דכלאים בציצית שרי דליתי עשה ודחי לא תעשה:"
+  },
+  "Rashi on Yevamot 5b:1:2": {
+    "dependsOn": [
+      "Rashi on Yevamot 5b:1:1",
+      "Rashi on Yevamot 5b:2:1",
+      "Rashi on Yevamot 5b:2:2"
+    ],
+    "generatedAt": "2026-10-21T14:48:18.978Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 5b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"כ</strong> - דלאו לאפנויי לכתוב ציצית כו':"
+  },
+  "Rashi on Yevamot 5b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T14:48:56.360Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 5b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשיעורא אתא</strong> - למנין חוטין:"
+  },
+  "Rashi on Yevamot 5b:2:2": {
+    "dependsOn": [
+      "Rashi on Yevamot 5b:2:2",
+      "Rashi on Yevamot 5b:2:1",
+      "Rashi on Yevamot 5b:2:3",
+      "Rashi on Yevamot 5b:2:4"
+    ],
+    "generatedAt": "2026-10-21T14:50:08.101Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 5b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גדיל שנים</strong> - אי אפשר לעשות גדיל בפחות משני חוטין:"
+  },
+  "Rashi on Yevamot 5b:2:3": {
+    "dependsOn": [
+      "Rashi on Yevamot 5b:2:2",
+      "Rashi on Yevamot 5b:2:4",
+      "Rashi on Yevamot 5b:2:1",
+      "Rashi on Yevamot 5b:11:3",
+      "Yevamot 5a:8"
+    ],
+    "generatedAt": "2026-10-21T14:53:24.809Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 5b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גדילין ארבע</strong> - חוטין דמיעוט גדילין שנים וכתיב <span class=\"parenthesized\">(במדבר ט״ו:ל״ח)</span> ונתנו על ציצית הכנף פתיל אמרה תורה עשה מהנך ארבע חוטין גדיל אחד דהוו להו ח' חוטין כשתוחבן בכנף הבגד:"
+  },
+  "Rashi on Yevamot 5b:2:4": {
+    "dependsOn": [
+      "Rashi on Yevamot 5b:2:4",
+      "Rashi on Yevamot 5b:2:1",
+      "Rashi on Yevamot 5b:2:2",
+      "Rashi on Yevamot 5b:2:3",
+      "Rashi on Menachot 39b:3:3",
+      "Tosafot on Menachot 39b:3:2",
+      "Steinsaltz on Yevamot 5b:2",
+      "Rashi on Yevamot 5a:1:1",
+      "Rashi on Yevamot 5a:2:1",
+      "Rashi on Yevamot 4b:1:1",
+      "Jastrow, פָּתַל 1",
+      "Jastrow, גָּדִיל 1",
+      "Menachot 39a:8"
+    ],
+    "generatedAt": "2026-10-21T14:57:12.370Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 5b:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ופותלהו מתוכו</strong> - שיהיו תלויין פתילין שלא יעשה כולו גדיל אלא קצת גדיל וקצת ענף:"
+  },
+  "Rashi on Yevamot 5b:4:1": {
+    "dependsOn": [
+      "[",
+      "Rashi on Yevamot 5b:2:1",
+      "Rashi on Yevamot 5b:2:2",
+      "Rashi on Yevamot 5b:5:1",
+      "Rashi on Yevamot 5b:5:2",
+      "Rashi on Yevamot 5b:7:1",
+      "Tosafot on Yevamot 5b:4:1",
+      "Steinsaltz comment #1 on Yevamot 5b:4"
+    ],
+    "generatedAt": "2026-10-21T15:03:22.921Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 5b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תכיפה</strong> - פויינ\"ט שתוחב תחיבה אחת במחט וחיבר כלאים בגד צמר ובגד פשתים יחד אינו חיבור בפחות משתי תכיפות להכי כתיב יחדיו עד שיחברם יחד יפה:"
+  },
+  "Rashi on Yevamot 5b:5:1": {
+    "dependsOn": [
+      "Rashi on Yevamot 5b:5:1",
+      "Rashi on Yevamot 5b:5:2",
+      "Rashi on Yevamot 5b:5:3",
+      "Rashi on Yevamot 5b:5:4",
+      "Tosafot on Yevamot 5b:5:1",
+      "Tosafot on Yevamot 5b:5:2",
+      "Rashi on Niddah 61b:9:1",
+      "Tosafot on Niddah 61b:9:1",
+      "Steinsaltz on Yevamot 5b:5",
+      "Steinsaltz comment #1 on Yevamot 5b:5",
+      "Rashi on Yevamot 5b:4:1",
+      "Rashi on Yevamot 5b:7:1",
+      "Rashi on Yevamot 5b:7:2",
+      "Niddah 61b:9"
+    ],
+    "generatedAt": "2026-10-21T15:12:40.986Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 5b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שוע טווי ונוז</strong> - מן התורה אינו חייב עד שיהי' הצמר והפשתן מתוקן יחד היטב במסרק:"
+  },
+  "Rashi on Yevamot 5b:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T15:14:57.941Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 5b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שוע</strong> - לשון חלק שמתרגמינן שעיע <span class=\"parenthesized\">(בראשית כז)</span>:"
+  },
+  "Rashi on Yevamot 5b:5:3": {
+    "dependsOn": [
+      "Rashi on Yevamot 5b:5:1",
+      "Rashi on Yevamot 5b:5:2",
+      "Rashi on Yevamot 5b:5:4"
+    ],
+    "generatedAt": "2026-10-21T15:22:58.746Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 5b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נוז</strong> - ארוג:"
+  },
+  "Rashi on Yevamot 5b:5:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T15:24:24.328Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 5b:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כולה משעטנז נפקא</strong> - דאי לאפנויי לחוד נכתוב לא תלבש כלאים צמר ופשתים ומדאפיק רחמנא בלשון שעטנז דרוש ביה נמי הא:"
+  },
+  "Rashi on Yevamot 5b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T15:33:59.374Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 5b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ממילה</strong> - שדוחה עשה שלה לא תעשה דשבת שיש בה כרת:"
+  },
+  "Rashi on Yevamot 5b:7:2": {
+    "dependsOn": [
+      "Rashi on Yevamot 5b:7:1",
+      "Rashi on Yevamot 5b:7:2",
+      "Rashi on Yevamot 5a:1:1",
+      "Rashi on Yevamot 5a:1:2",
+      "Rashi on Yevamot 5a:2:1"
+    ],
+    "generatedAt": "2026-10-21T15:36:19.800Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 5b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלש עשר' בריתות</strong> - אמורים בפרשת מילה:"
+  },
+  "Rashi on Yevamot 5b:8:1": {
+    "dependsOn": [
+      "Yevamot 5b:8",
+      "Rashi on Yevamot 5b:7:1",
+      "Rashi on Yevamot 5b:7:2",
+      "Rashi on Yevamot 5b:5:1",
+      "Rashi on Yevamot 5b:5:2",
+      "Rashi on Yevamot 5b:4:1"
+    ],
+    "generatedAt": "2026-10-21T15:37:50.786Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Yevamot 5b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפסח</strong> - שדוחה שחיטתו את השבת:"
+  },
+  "Tosafot on Yevamot 5b:11:1": {
+    "dependsOn": [
+      "Rashi on Yevamot 5b:11:1",
+      "Rashi on Yevamot 5b:11:2",
+      "Rashi on Yevamot 5b:11:3",
+      "Steinsaltz comment #1 on Yevamot 5b:11",
+      "Pesachim 77a:3",
+      "Yevamot 5b:11",
+      "Chidushei Halachot on Yevamot; Alternate Version 5b:6",
+      "Pesachim 77a:8",
+      "Tosafot on Chagigah 6a:10:1",
+      "Chagigah 6a:10",
+      "Gilyon HaShas on Yevamot 5b:1",
+      "Ritva on Yevamot 5b:2",
+      "Ritva on Yevamot 5b:3",
+      "Tosafot on Yevamot 5b:5:1",
+      "Tosafot on Yevamot 5b:13:1"
+    ],
+    "generatedAt": "2026-10-21T15:51:18.564Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 5b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומכולהו נמי שכן ישנן לפני הדיבור</strong> - וא\"ת ונילף משאר קרבנות דדחי שבת כדדרשינן בפ' כיצד צולין <span class=\"parenthesized\">(פסחים עז. ושם)</span> מבמועדו ואפי' עומר ושתי הלחם כדדרשינן התם ואר\"י דחשיבי התם כולהו תדיר כיון דהוי בכל שנה ואיכא למיפרך על מילה ושאר קרבנות שכן תדיר ובש\"ס לא חש לדקדק כל כך דה\"נ לא מסיק מידי למ\"ד עולה שהקריבו ישראל במדבר עולת ראייה הוה:"
+  },
+  "Tosafot on Yevamot 5b:13:1": {
+    "dependsOn": [
+      "Tosafot on Yevamot 5b:5:1",
+      "Tosafot on Yevamot 5b:2:1",
+      "Tosafot on Yevamot 5b:4:1"
+    ],
+    "generatedAt": "2026-10-21T16:00:02.478Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 5b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כולכם חייבין בכבודי</strong> - מאני ה' דסיפא דקרא קדריש וא\"ת ומנלן דקאי טפי אשבתות מכבוד אב ואם וכן בסמוך גבי מקדש וי\"ל דכבוד הקב\"ה הוי טפי בשמירת שבת מבשאר מצות דמעיד על המקום שברא העולם כדאמר בעירובין <span class=\"parenthesized\">(דף סט:)</span> ובחולין <span class=\"parenthesized\">(דף ה.)</span> דמחלל שבת ככופר במעשה בראשית ועוד אני ה' משמע דקאי אמורא דכתיב באב ואם ובמקדש כלומר מוראי למעלה ממוראכם כדאמר במדרש והתקדשתם והייתם קדושים יכול כמוני ת\"ל כי קדוש אני קדושתי למעלה מקדושתכם וא\"ת ולמה לי קרא בכבוד אב ואם דלא דחי שבת דבלאו קרא נמי לא דחי שהוא ואביו מוזהרין על השבת כדאמר בפ\"ק דקידושין <span class=\"parenthesized\">(ד' לא.)</span> גבי אביו אומר השקני ואמו אמרה השקני הנח כיבוד אמך ועשה כבוד אביך שאתה ואמך חייבין בכבוד אביך וכן אביך אומר השקני ומצוה לעשות הנח כבוד אביך ועשה מצוה שאתה ואביך חייבין לעשות מצוה וי\"ל דמהכא ילפינן התם:"
+  },
+  "Tosafot on Yevamot 5b:14:1": {
+    "dependsOn": [
+      "Tosafot on Yevamot 5b:14:1",
+      "Yevamot 5b:14",
+      "Tosafot on Yevamot 5b:2:1",
+      "Tosafot on Yevamot 5b:4:1",
+      "Tosafot on Yevamot 5b:5:1",
+      "Tosafot on Yevamot 5b:5:2",
+      "Tosafot on Yevamot 3b:16:1",
+      "Chokhmat Shlomo on Yevamot 6a:3",
+      "Gilyon HaShas on Yevamot 5b:3",
+      "Rashi on Yevamot 5b:14:1"
+    ],
+    "generatedAt": "2026-10-21T16:05:03.604Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 5b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טעמא דכתב רחמנא את שבתותי תשמורו הא לאו הכי דחי</strong> - פירוש דמהכא ילפינן דבעלמא דחי דלא איצטריך הכא למכתב דלא דחי דמהיכא תיתי דמפסח ומילה ותמיד לא אתי דמה לכבוד אב ואם שכן הכשר מצוה ועוד דאדרבה נילף ממקדש והבערת בת כהן דלא דחי והא דקתני יכול יהא כיבוד אב ואם דוחה שבת דמשמע דאי לאו קרא ה\"א דדחי לאו דוקא אלא כלומר אפילו את\"ל דדחי הא כתיב אני ה' כדפי' לעיל גבי שומע אני ואם תאמר היכי מוכח מהכא דבעלמא דחי ואיצטריך עליה למיסר דהשתא קרא דהכא לא איצטריך לגופיה אלא לאשמועינן דבעלמא דחי נימא עליה להיתירא והשתא איצטריך קרא דהכא לגופיה ולא נילף מעשה דייבום וי\"ל דאפי' נימא דעליה להיתירא לא איצטריך קרא דהכא דלא מצינו למילף מעשה דייבום דמה לכבוד אב ואם שכן הכשר מצוה ועוד אדרבה ממקדש והבערת בת כהן הוה ילפי' דלא דחי ועוד מייבום ליכא למילף דבשבת איכא סקילה אע\"ג דבעריות נמי איכא בחמותו וכלתו שריפה וסקילה כי נימא עליה להיתירא לא נימא אלא באחות אשה ודכוות' דליכא סקילה ושריפה דלא הוקשו להיתירא אלא לאיסורא וכן סבר רבא לפר\"י <span class=\"parenthesized\">(לעיל יבמות ד' ג)</span> וא\"ת אכתי הא איצטריך לגופיה דסד\"א דהואיל והוקש כבודם לכבוד המקום לידחי כדאמר בסוף אלו מציאות <span class=\"parenthesized\">(ב\"מ דף לב.)</span> דה\"א אי לאו קרא לידחי ל\"ת ועשה מהאי טעמא וי\"ל דעשה ול\"ת דקיל ה\"א דלידחי אבל ל\"ת שיש בו כרת לא ה\"א דדחי ולהכי ל\"ת ועשה ליכא למידק הא בעלמא דחי כדדייק אלא תעשה שיש בו כרת דדוקא ל\"ת שיש בו כרת דבלאו קרא ה\"א דלא דחי איכא למידק הא בעלמא דחי וא\"ת וכיון דהשתא בעי למימר דבעלמא דחי ל\"ת שיש בו כרת כ\"ש דלידחי בעלמא ל\"ת ועשה וא\"ל דאה\"נ דא\"כ ה\"ל למיפרך אלא הא דקי\"ל דאין עשה דוחה ל\"ת ועשה נגמר מהכא דדחי כדפרי' לעיל <span class=\"parenthesized\">(יבמות דף ה.)</span> וי\"ל דהשתא דילפינן דבעלמא דוחה ל\"ת שיש בו כרת ע\"כ גרע מל\"ת ועשה דאי אפשר שידחה עשה ל\"ת ועשה דמאי אולמיה דהאי עשה מהאי עשה והא דהוה בעי למימר בסוף אלו מציאות <span class=\"parenthesized\">(ב\"מ דף לב.)</span> דעשה דכיבוד לידחי ל\"ת ועשה היינו משום דעדיף דהוקש כבודם לכבוד המקום וא\"ת אי בעלמא דחי א\"כ קרא דכלאים בציצית למה לי ויש לומר דאיצטריך לכדרבא ולתנא דבי רבי ישמעאל נמי איצטריך דלא נדרוש הכנף מין כנף דוקא צמר לצמר ופשתים לפשתים ועוד ס\"ד דלא לידחי עשה דציצית לאו דכלאים שאין שוה בנשים למ\"ד נשים פטורות מציצית ולעיל דהוה בעי למילף מעשה דמצורע דלידחי עשה את ל\"ת <span class=\"parenthesized\">(ועשה)</span> משמע דבעי למילף מהתם אפילו כלאים בציצית ע\"כ אכתי לא אסיק אדעתיה שיש חילוק בין שוה בכל עד דפריך ליה ובפ' שני נזירים <span class=\"parenthesized\">(נזיר ד' נח. ושם)</span> דיליף לגמרי בעלמא מראשו איכא למימר סבר דנשים חייבות בציצית וא\"ת ראשו למה לי כיון דדחי אפילו לאו שיש בו כרת וי\"ל דאיצטריך לאשמעינן דהקפת כל הראש שמה הקפה ומפסח ומילה ותמיד לא קשיא מידי אמאי איצטריך קרא כיון דבעלמא דחי דס\"ד למילף לענין שבת מכיבוד אב ואם דלא דחי וה\"א דבשבת לא דחי אע\"ג דבעלמא דחי:"
+  },
+  "Tosafot on Yevamot 5b:2:1": {
+    "dependsOn": [
+      "Rashi on Yevamot 5b:2:1",
+      "Rashi on Yevamot 5b:2:2",
+      "Rashi on Yevamot 5b:2:3",
+      "Rashi on Yevamot 5b:2:4",
+      "Tosafot on Menachot 42a:11:2"
+    ],
+    "generatedAt": "2026-10-21T14:59:14.218Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 5b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גדילים ארבעה</strong> - במנחות <span class=\"parenthesized\">(ד' מב.)</span> אמר דבעי תמניא חוטין ותימה מנלן שכופל כל אחד ואחד לשנים שמא יקשור כל אחד בראשו בטלית ואי הוה מפרשינן עשה גדיל ופותלהו מתוכו היינו שעושה אותו כעין פתילה וכופלין באמצע הוה ניחא אבל <span class=\"rashi-quotation\">בקונט'</span> פי' פותלהו מתוכו היינו שני שלישי ענף שלא יעשה הכל גדילים:"
+  },
+  "Tosafot on Yevamot 5b:4:1": {
+    "dependsOn": [
+      "Yevamot 5b:4",
+      "Rashi on Yevamot 5b:4:1",
+      "Steinsaltz comment #1 on Yevamot 5b:4",
+      "Steinsaltz comment #2 on Yevamot 5b:4",
+      "Steinsaltz comment #3 on Yevamot 5b:4",
+      "Rashba on Yevamot 5b:2",
+      "Tosafot on Yevamot 5b:5:1",
+      "Tosafot on Yevamot 5b:5:2",
+      "Ritva on Yevamot 5b:1",
+      "Chidushei Halachot on Yevamot; Alternate Version 5b:5"
+    ],
+    "generatedAt": "2026-10-21T15:08:16.874Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 5b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואכתי מיבעי לי' לתוכף תכיפה אחת דאין חיבור</strong> - בלאו הכי מיבעי לי' דאי לאו יחדו ה\"א דאסור ללבוש צמר ופשתים אע\"פ שאין מחוברים כלל זה עם זה:"
+  },
+  "Tosafot on Yevamot 5b:5:1": {
+    "dependsOn": [
+      "Rashi on Yevamot 5b:5:1",
+      "Rashi on Yevamot 5b:5:2",
+      "Rashi on Yevamot 5b:5:3",
+      "Rashi on Yevamot 5b:5:4"
+    ],
+    "generatedAt": "2026-10-21T15:29:35.222Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 5b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד שיהא שוע טווי ונוז</strong> - אין לפרש כמו שפי' ריב\"ן שוע וטווי יחד צמר ופשתים א\"כ כלאים בציצית היכי משכחת לה שהרי צריך שיהיו ב' חוטין של תכלת צמר לבדו בלא פשתן אלא שוע כל אחד לבדו ונוז נמי אר\"ת דאין לפרש דהיינו אריג <span class=\"rashi-quotation\">כדפי' בקונט'</span> דמאי שנא שוע וטווי דהוי כל אחד לבדו ונוז קאי אצמר ופשתים יחד ועוד דבנדה פרק האשה <span class=\"parenthesized\">(ד' סא:)</span> גבי האי מאן דרמי חוטא דכיתנא בגלימא דעמרא כו' ופריך ואימא או שוע או טווי או נוז ול<span class=\"rashi-quotation\">פי' הקונט'</span> בלא נוז אי אפשר שיהא כלאים ואין לומר דהכי פריך ואימא או שוע ונוז או טווי ונוז או נוז לחודיה דא\"כ דבנוז לחודיה סגי שוע וטווי דכתב רחמנא למה לי אלא נראה לר\"ת דנוז היינו שזור ונוז נמי כל אחד לבדו ועל שעטנז של צמר לבד ושל פשתים לבד הזהיר הכתוב שלא יעשה מהם בגד ביחד ומיחדו נפקא והר' רבי יצחק הלבן הקשה לו מהא דתנן במס' כלאים <span class=\"parenthesized\">(פ\"ט מ\"ח)</span> אין חייבין משום כלאים אלא על טווי וארוג שנאמר שעטנז שוע טווי ונוז אלמא דנוז היינו ארוג ואר\"ת דע\"כ לאו למדרש כל שעטנז קאתי מדלא קאמר אלא על שוע טווי וארוג ולא מייתי שעטנז אלא משום טווי ונוז לחודיה אבל אריג מיחדו נפקא:"
+  },
+  "Tosafot on Yevamot 5b:5:2": {
+    "dependsOn": [
+      "Tosafot on Yevamot 5b:5:1",
+      "Nazir 58a:6",
+      "Gilyon HaShas on Yevamot 5b:2"
+    ],
+    "generatedAt": "2026-10-21T15:33:12.299Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Yevamot 5b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כולה משעטנז נפקא</strong> - מדכתיב שעטנז ולא כתיב כלאים שמעינן שוע וטווי ונוז ומדלא כתיב שוע וטווי ונוז בהדיא שמעינן דלאפנויי קאתי למידרש סמוכין ואם תאמר ודלמא לכדרבא לחוד קאתי למדרש סמוכין דצמר ופשתים פוטרים אף שלא במינן ומנלן דאתא למישרי כלאים ויש לומר דהכי משמע דלא תלבש שעטנז צמר ופשתים יחדו גדילים תעשה לך מהם והכי איתא בפ' שני נזירים <span class=\"parenthesized\">(נזיר ד' נח. ושם)</span> וא\"ת והיכי ילפינן בעלמא מהכא שאני כלאים דהותרו מכללו אצל בגדי כהונה ואר\"י דהתם נמי משום דאתי עשה דבגדי כהונה ודחי לאו דכלאים ואין זה הותר מכללו ומיהו אי לאו כלאים מבגדי כהונה לא הוה מצי למילף בעלמא משום דמצותו בכך ובענין אחר אי אפשר לקיים מצותו כמו שפירשתי לעיל דלא ילפינן מאשת אח ועוד דצורך עבודה שאני וא\"ת אדילפינן מכלאים בציצית דדחי נילף משריפת קדשים דלא דחי כדדרשינן פ' כיצד צולין <span class=\"parenthesized\">(פסחים פג:)</span> דאין שריפת קדשים דוחה יו\"ט מוהנותר ממנו עד בקר <span class=\"parenthesized\">(שמות י״ב:י׳)</span> בא הכתוב ליתן בקר שני לשריפתו וי\"ל דשאני התם דלא בטלה מצותו בכך ויכול לשורפו אחר יו\"ט ומ\"מ אי לאו דבקר שני לא הייתי מחלק וה\"א דדחי ומיהו קשה לקמן <span class=\"parenthesized\">(יבמות דף ו:)</span> גבי שריפת בת כהן קאמר או אינו אלא בשבת דהוה גמרינן מכלאים בציצית דלדחי אי לאו לא תבערו אפי' לא תעשה שיש בו כרת דמה לי חומרא רבה ומה לי חומרא זוטא והתם כיון דיכול להמתין עד למחר נילף מיניה שריפת קדשים וי\"ל דהתם נמי אי אפשר להמתין שיש לה לידון מיד ולשרוף שלא יענו הדין ושלא ישתכחו הדברים וא\"ת ולמה לן קרא למילף מכלאים בציצית נילף משריפת קדשים מדאיצטריך התם לומר קרא דלא דחי משום דיכול להמתין מכלל דבעלמא דחי ואר\"י דהתם איצטריך קרא שלא תאמר דדחי משום דאפילו אוכל נפש שרי ולמ\"ד נדרים ונדבות אין קריבין בי\"ט לא איצטריך הכא קרא אלא אליבא דמ\"ד קריבין:"
+  }
+}

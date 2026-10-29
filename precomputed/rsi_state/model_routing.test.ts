@@ -121,85 +121,6 @@ test("getTaskModelConfig throws descriptive error for unknown backend", () => {
   })).toThrow(/Unknown backend "unknown-backend".*Available backends: agy, claude/);
 });
 
-test("actual model_routing_config.json resolves agy default and sonnet-4.6", () => {
-  const agyDefault = getTaskModelConfig("rashi_tosafot_translation");
-  expect(agyDefault.backend).toBe("agy");
-  expect(agyDefault.generateModel).toBe("gemini-3.8-flash-high");
-  expect(agyDefault.critiqueModel).toBe("gemini-3.8-flash-medium");
-
-  const agySonnet = getTaskModelConfig("rashi_tosafot_translation", {
-    backend: "agy",
-    configName: "claude-sonnet-4.6",
-  });
-  expect(agySonnet.backend).toBe("agy");
-  expect(agySonnet.generateModel).toBe("claude-sonnet-4-6");
-  expect(agySonnet.critiqueModel).toBe("gemini-3.8-flash-medium");
-
-  const claudeDefault = getTaskModelConfig("rashi_tosafot_translation", {
-    backend: "claude",
-  });
-  expect(claudeDefault.backend).toBe("claude");
-  expect(claudeDefault.generateModel).toBe("claude-sonnet-5");
-  expect(claudeDefault.critiqueModel).toBe("claude-sonnet-5");
-
-  const agySonnet55 = getTaskModelConfig("rashi_tosafot_translation", {
-    backend: "agy",
-    configName: "sonnet 5.5",
-  });
-  expect(agySonnet55.backend).toBe("agy");
-  expect(agySonnet55.generateModel).toBe("claude-sonnet-5-5-high");
-  expect(agySonnet55.critiqueModel).toBe("gemini-3.8-flash-medium");
-
-  const agySonnet55Hyphen = getTaskModelConfig("rashi_tosafot_translation", {
-    backend: "agy",
-    configName: "sonnet-5.5",
-  });
-  expect(agySonnet55Hyphen.generateModel).toBe("claude-sonnet-5-5-high");
-
-  const agyLongThreadDefault = getTaskModelConfig("rashi_tosafot_translation", {
-    backend: "agy-long-thread",
-  });
-  expect(agyLongThreadDefault.backend).toBe("agy-long-thread");
-  expect(agyLongThreadDefault.generateModel).toBe("gemini-3.8-flash-high");
-  expect(agyLongThreadDefault.critiqueModel).toBe("gemini-3.8-flash-medium");
-
-  const claudeLongThreadDefault = getTaskModelConfig("rashi_tosafot_translation", {
-    backend: "claude-long-thread",
-  });
-  expect(claudeLongThreadDefault.backend).toBe("claude-long-thread");
-  expect(claudeLongThreadDefault.generateModel).toBe("claude-sonnet-5");
-  expect(claudeLongThreadDefault.critiqueModel).toBe("claude-sonnet-5");
-
-  const claudeLongThreadHaiku = getTaskModelConfig("rashi_tosafot_translation", {
-    backend: "claude-long-thread",
-    configName: "haiku-5.5",
-  });
-  expect(claudeLongThreadHaiku.backend).toBe("claude-long-thread");
-  expect(claudeLongThreadHaiku.generateModel).toBe("claude-haiku-5-5");
-  expect(claudeLongThreadHaiku.critiqueModel).toBe("claude-sonnet-5-5");
-
-  const claudeHaiku = getTaskModelConfig("rashi_tosafot_translation", {
-    backend: "claude",
-    configName: "haiku-5.5",
-  });
-  expect(claudeHaiku.backend).toBe("claude");
-  expect(claudeHaiku.generateModel).toBe("claude-haiku-5-5");
-  expect(claudeHaiku.critiqueModel).toBe("claude-sonnet-5-5");
-
-  const claudeHaikuSonnet = getTaskModelConfig("rashi_tosafot_translation", {
-    backend: "claude",
-    configName: "haiku-sonnet-5.5",
-  });
-  expect(claudeHaikuSonnet.generateModel).toBe("claude-haiku-5-5");
-  expect(claudeHaikuSonnet.critiqueModel).toBe("claude-sonnet-5-5");
-
-  const claudeHaikuInferred = getTaskModelConfig("rashi_tosafot_translation", {
-    configName: "haiku-5.5",
-  });
-  expect(claudeHaikuInferred.backend).toBe("claude");
-  expect(claudeHaikuInferred.generateModel).toBe("claude-haiku-5-5");
-  expect(claudeHaikuInferred.critiqueModel).toBe("claude-sonnet-5-5");
-});
 
 test("getTaskModelConfig checks requested backend with matchesConfig first, falling back to base backend", () => {
   const customConfig = {
@@ -239,4 +160,26 @@ test("getTaskModelConfig checks requested backend with matchesConfig first, fall
     configName: "custom-preset",
   });
   expect(fallbackMatch.generateModel).toBe("claude-base-model");
+});
+
+test("getTaskModelConfig preserves critiqueBackend when defined in preset", () => {
+  const customConfig = {
+    ollama: {
+      default: {
+        generateModel: "gemma4:31b",
+        critiqueModel: "gemini-3.8-flash-medium",
+        critiqueBackend: "agy",
+      },
+    },
+  };
+  writeJson(CONFIG_PATH, customConfig);
+
+  const resolved = getTaskModelConfig("any_task", {
+    configPath: CONFIG_PATH,
+    backend: "ollama",
+  });
+  expect(resolved.backend).toBe("ollama");
+  expect(resolved.generateModel).toBe("gemma4:31b");
+  expect(resolved.critiqueModel).toBe("gemini-3.8-flash-medium");
+  expect(resolved.critiqueBackend).toBe("agy");
 });

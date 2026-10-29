@@ -2,8 +2,11 @@ import {ChildProcess, execFile} from "child_process";
 import * as fs from "fs";
 import * as os from "os";
 import * as path from "path";
+import {appendImageAttachmentsToPrompt, DecodedImage} from "./base64_images";
 
-export type AgentBackend = "claude" | "agy" | "claude-long-thread" | "agy-long-thread";
+export {appendImageAttachmentsToPrompt};
+
+export type AgentBackend = "claude" | "agy" | "claude-long-thread" | "agy-long-thread" | "ollama";
 
 export interface ToolUseRecord {
   name: string;
@@ -23,6 +26,7 @@ export interface AgentOptions {
   resumeSession?: boolean;
   signal?: AbortSignal;
   onChild?: (child: ChildProcess) => void;
+  images?: DecodedImage[];
 }
 
 export interface AgentResult {
@@ -495,6 +499,41 @@ process.on("exit", () => {
   cleanupIsolatedAgyHomeDirectory();
 });
 
+export interface PreparedPromptWithImages {
+  effectivePrompt: string;
+  imageDirectories: string[];
+}
+
+/**
+ * Ensures decoded image files exist on disk, appends `@<filePath>` references to the prompt for
+ * CLI agents (`claude` and `agy`), and returns the unique image directories so `claude` can grant
+ * access via `--add-dir`.
+ */
+export function preparePromptWithImages(
+  prompt: string,
+  images?: DecodedImage[],
+): PreparedPromptWithImages {
+  if (!images || images.length === 0) {
+    return {
+      effectivePrompt: prompt,
+      imageDirectories: [],
+    };
+  }
+  const imageDirectories = new Set<string>();
+  for (const image of images) {
+    const directoryPath = path.dirname(image.filePath);
+    imageDirectories.add(directoryPath);
+    if (!fs.existsSync(image.filePath)) {
+      fs.mkdirSync(directoryPath, {recursive: true});
+      fs.writeFileSync(image.filePath, image.buffer);
+    }
+  }
+  return {
+    effectivePrompt: appendImageAttachmentsToPrompt(prompt, images),
+    imageDirectories: Array.from(imageDirectories),
+  };
+}
+
 /**
  * Builds CLI arguments for headless Antigravity execution with slash commands disabled.
  */
@@ -527,15 +566,12 @@ export function buildAgyArgs(prompt: string, options: AgentOptions = {}): string
  * Invokes the Antigravity CLI in headless mode (`agy -p`).
  */
 export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
-  const args = buildAgyArgs(prompt, options);
-
   if (options.signal?.aborted) {
     throw new AgentError("Agent execution was cancelled", undefined, "agy", true);
   }
 
-  if (options.debug) {
-    console.log(`  [agent] Running agy${options.model ? ` (model: ${options.model})` : ""}...`);
-  }
+  const {effectivePrompt} = preparePromptWithImages(prompt, options.images);
+  const args = buildAgyArgs(effectivePrompt, options);
 
   let shims: ToolFilterShims | undefined;
   if (options.allowedTools && options.allowedTools.length > 0) {
@@ -734,7 +770,11 @@ const DEFAULT_CLAUDE_ALLOWED_TOOLS = ["Read", "Grep", "Glob"];
  * Builds CLI arguments for headless Claude execution with safe mode enabled,
  * slash commands disabled, strict MCP config enforced, and user/local settings excluded.
  */
-export function buildClaudeArgs(prompt: string, options: AgentOptions = {}): string[] {
+export function buildClaudeArgs(
+  prompt: string,
+  options: AgentOptions = {},
+  additionalDirectories: string[] = [],
+): string[] {
   const claudeArgs = [
     "-p", prompt,
     "--output-format", "stream-json",
@@ -746,6 +786,9 @@ export function buildClaudeArgs(prompt: string, options: AgentOptions = {}): str
     "--allowedTools", (options.allowedTools ?? DEFAULT_CLAUDE_ALLOWED_TOOLS).join(","),
     ...(options.model ? ["--model", options.model] : []),
   ];
+  for (const directory of additionalDirectories) {
+    claudeArgs.push("--add-dir", directory);
+  }
   if (options.sessionId) {
     if (options.resumeSession) {
       claudeArgs.push("--resume", options.sessionId);
@@ -761,11 +804,8 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
     throw new AgentError("Agent execution was cancelled", undefined, "claude", true);
   }
 
-  if (options.debug) {
-    console.log(`  [agent] Running claude${options.model ? ` (model: ${options.model})` : ""}...`);
-  }
-
-  const claudeArgs = buildClaudeArgs(prompt, options);
+  const {effectivePrompt, imageDirectories} = preparePromptWithImages(prompt, options.images);
+  const claudeArgs = buildClaudeArgs(effectivePrompt, options, imageDirectories);
 
   let shims: ToolFilterShims | undefined;
   if (options.allowedTools && options.allowedTools.length > 0) {
@@ -873,6 +913,82 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
 };
 
 /* ============================================================================
+ * Ollama Runner
+ * ============================================================================ */
+
+export const DEFAULT_OLLAMA_HOST = "http://localhost:11434";
+
+/* eslint-disable camelcase */
+interface OllamaChatResponse {
+  message?: {content?: string};
+  total_duration?: number; // nanoseconds
+  prompt_eval_count?: number;
+  eval_count?: number;
+}
+/* eslint-enable camelcase */
+
+/**
+ * Runs a prompt against a local Ollama server (`OLLAMA_HOST`, default localhost:11434). Local
+ * models have no tool access, so `allowedTools` is ignored and the model must answer from the
+ * prompt alone. Output is constrained to JSON, and `durationSeconds` is Ollama's own measured
+ * total inference time (load + prompt eval + generation) so callers can compare models.
+ */
+export const runOllama: AgentRunner = async (prompt, options = {}) => {
+  if (options.signal?.aborted) {
+    throw new AgentError("Agent execution was cancelled", undefined, "ollama", true);
+  }
+  if (!options.model) {
+    throw new AgentError("The ollama backend requires a model (e.g. gemma4:e4b)", undefined, "ollama");
+  }
+  const host = (process.env.OLLAMA_HOST ?? DEFAULT_OLLAMA_HOST).replace(/\/$/, "");
+  const baseUrl = /^https?:\/\//.test(host) ? host : `http://${host}`;
+  if (options.debug) {
+    console.log(`  [agent] Running ollama (model: ${options.model})...`);
+  }
+  const userMessage: {role: "user"; content: string; images?: string[]} = {
+    role: "user",
+    content: prompt,
+    ...(options.images && options.images.length > 0
+      ? {images: options.images.map(image => image.base64Data)}
+      : {}),
+  };
+  let response: Response;
+  try {
+    response = await fetch(`${baseUrl}/api/chat`, {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({
+        model: options.model,
+        messages: [userMessage],
+        stream: false,
+        format: "json",
+        think: false,
+        options: {temperature: 0},
+      }),
+      signal: options.signal,
+    });
+  } catch (e) {
+    if (options.signal?.aborted) {
+      throw new AgentError("Agent execution was cancelled", undefined, "ollama", true);
+    }
+    throw new AgentError(`Could not reach ollama at ${baseUrl}: ${e}`, undefined, "ollama");
+  }
+  if (!response.ok) {
+    throw new AgentError(
+      `Ollama returned ${response.status}: ${await response.text()}`, response.status, "ollama");
+  }
+  const body = await response.json() as OllamaChatResponse;
+  return {
+    text: body.message?.content ?? "",
+    model: options.model,
+    costUsd: 0,
+    toolUses: [],
+    durationSeconds: body.total_duration === undefined ? undefined : body.total_duration / 1e9,
+    totalTokens: (body.prompt_eval_count ?? 0) + (body.eval_count ?? 0),
+  };
+};
+
+/* ============================================================================
  * Runner Factory
  * ============================================================================ */
 
@@ -881,6 +997,8 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
  */
 export function getAgentRunner(backend: AgentBackend = "claude"): AgentRunner {
   switch (backend) {
+    case "ollama":
+      return runOllama;
     case "agy":
     case "agy-long-thread":
       return runHeadlessAgy;

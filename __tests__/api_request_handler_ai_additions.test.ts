@@ -10,8 +10,11 @@ import * as fs from "fs";
 import {AbstractApiRequestHandler, Comment, InternalSegment} from "../api_request_handler";
 import {FakeRequestMaker, TEST_DATA_ROOT} from "../request_makers";
 import {NoopLogger} from "../logger";
-import {writeAiEdit, OUTPUT_DIR as AI_OUTPUT_DIR} from "../precomputed/ai_edits";
-import {upsertGenerationRecord} from "../precomputed/rsi_state/generation_record";
+import {aiEditsPath, writeAiEdit} from "../precomputed/ai_edits";
+import {
+  generationRecordPath,
+  upsertGenerationRecord,
+} from "../precomputed/rsi_state/generation_record";
 
 const TEST_PAGE = "__Test_Ai_Page__ 2a";
 const TEST_TASK_TYPE = "rashi_tosafot_translation";
@@ -33,8 +36,10 @@ function createHandler(): TestHandler {
 }
 
 afterEach(() => {
-  fs.rmSync(`${AI_OUTPUT_DIR}/${TEST_PAGE}.json`, {force: true});
-  fs.rmSync(`precomputed/rsi_state/generation_records/${TEST_TASK_TYPE}/${TEST_PAGE}.json`, {force: true});
+  fs.rmSync(aiEditsPath(TEST_PAGE), {force: true});
+  fs.rmSync("precomputed/ai_additions/__Test_Ai_Page__", {force: true, recursive: true});
+  fs.rmSync(generationRecordPath(TEST_TASK_TYPE, TEST_PAGE), {force: true});
+  fs.rmSync(`precomputed/rsi_state/generation_records/${TEST_TASK_TYPE}/__Test_Ai_Page__`, {force: true, recursive: true});
 });
 
 test("pending RSI comment gets Model subcomment from generation record", () => {
@@ -227,4 +232,40 @@ test("approved AI comment with approved username does not get pendingReview or M
   const aiVersion = json.commentary!.Rashi.comments[0].commentary!.Versions.comments[0];
   expect(aiVersion.pendingReview).toBeUndefined();
   expect(aiVersion.commentary?.Model).toBeUndefined();
+});
+
+test("AI comment with abbreviation expansion and explanation retains canReplaceParent true", () => {
+  const commentRef = "Rashi on __Test_Ai_Page__ 2a:1:1";
+  const sourceHebrew = 'מתני\' כ"א תקיעות מפרש להו בפ\' החליל';
+  const punctuatedHebrew = '<strong class="dibur-hamatchil"><abbr title="מתניתין">מתני\'</abbr></strong> - '
+    + '<abbr title="עשרים ואחת">כ"א</abbr> תקיעות, <span class="explanation">הגמרא</span> '
+    + 'מפרש להו <abbr title="בפרק">בפ\'</abbr> החליל:';
+
+  writeAiEdit(TEST_PAGE, commentRef, {
+    hebrew: punctuatedHebrew,
+    english: "The Mishnah explains",
+    status: "pending",
+  });
+
+  const handler = createHandler();
+  const segment = new InternalSegment({
+    hebrew: "עברית של קטע",
+    english: "segment english",
+    ref: `${TEST_PAGE}:1`,
+  });
+  const rashi = new Comment(
+    "Rashi",
+    sourceHebrew,
+    "",
+    commentRef,
+    commentRef,
+    'רש"י',
+  );
+  segment.commentary.addComment(rashi);
+
+  (handler as any).addAiAdditions([segment]);
+
+  const json = segment.toJson();
+  const aiVersion = json.commentary!.Rashi.comments[0].commentary!.Versions.comments[0];
+  expect(aiVersion.canReplaceParent).toBe(true);
 });

@@ -1,0 +1,357 @@
+{
+  "Rashi on Kiddushin 42b:10:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 42b:10:2",
+      "Rashi on Kiddushin 42b:7:1",
+      "Rashi on Kiddushin 42b:7:2",
+      "Rashi on Kiddushin 42b:8:1",
+      "Rashi on Kiddushin 42b:1:1",
+      "Rashi on Kiddushin 42b:1:2",
+      "Rashi on Kiddushin 42b:2:1"
+    ],
+    "generatedAt": "2026-10-25T19:01:32.441Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 42b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונילף מינה</strong> - לכל דבר עבירה דיש שליח:"
+  },
+  "Rashi on Kiddushin 42b:10:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 42b:10:1",
+      "Rashi on Kiddushin 42b:10:2",
+      "Kiddushin 42b:10"
+    ],
+    "generatedAt": "2026-10-25T19:02:17.308Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 42b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שליחות יד</strong> - בפקדון:"
+  },
+  "Rashi on Kiddushin 42b:11:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 42b:11:2",
+      "Kiddushin 42b:11",
+      "Rashi on Kiddushin 42b:10:1",
+      "Rashi on Kiddushin 42b:10:2",
+      "Rashi on Kiddushin 42b:1:1",
+      "Rashi on Kiddushin 42b:1:2",
+      "Rashi on Kiddushin 42b:2:1",
+      "Rashi on Kiddushin 42b:9:1",
+      "Rashi on Kiddushin 42b:9:2",
+      "Rashi on Kiddushin 41a:1:1",
+      "Rashi on Kiddushin 41a:1:2",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2"
+    ],
+    "generatedAt": "2026-10-25T19:04:13.668Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 42b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על כל דבר פשע</strong> - בתר אם לא שלח ידו כתיב:"
+  },
+  "Rashi on Kiddushin 42b:11:2": {
+    "dependsOn": [
+      "Kiddushin 42b:11",
+      "Rashi on Kiddushin 42b:11:1"
+    ],
+    "generatedAt": "2026-10-25T19:05:19.109Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 42b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לחייב על המחשבה</strong> - או על הדיבור שאם אמר או חשב לשלוח יד בפקדון הרי הוא ברשותו מאותה שעה ואילך להתחייב בכל אונסין שיעלו בו אפילו הוי שומר חנם שלא היה חייב עד עכשיו אלא בפשיעה:"
+  },
+  "Rashi on Kiddushin 42b:12:1": {
+    "dependsOn": [
+      "Kiddushin 42b:12",
+      "Rashi on Kiddushin 42b:11:1",
+      "Rashi on Kiddushin 42b:11:2",
+      "Rashi on Kiddushin 42b:10:1",
+      "Rashi on Kiddushin 42b:10:2",
+      "Rashi on Kiddushin 42b:7:1",
+      "Rashi on Kiddushin 42b:8:1",
+      "Rashi on Kiddushin 42b:9:1",
+      "Bava Metzia 56b:5",
+      "Rashi on Bava Metzia 56b:5:1",
+      "Rashi on Kiddushin 42a:1:1",
+      "Rashi on Kiddushin 42a:2:1",
+      "Rashi on Kiddushin 42a:3:1",
+      "Rashi on Kiddushin 2a:1:1",
+      "Rashi on Kiddushin 2a:2:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Bava Metzia 93a:1",
+      "Steinsaltz on Kiddushin 42b:12"
+    ],
+    "generatedAt": "2026-10-25T19:11:24.023Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 42b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין לי</strong> - שנתחייב באונסין בשליחות יד אלא בזמן ששלח בה יד הוא עצמו:"
+  },
+  "Rashi on Kiddushin 42b:1:1": {
+    "dependsOn": [
+      "Kiddushin 42b:1",
+      "Rashi on Kiddushin 42b:1:2",
+      "Steinsaltz on Kiddushin 42b:1",
+      "Tosafot on Kiddushin 42b:1:1"
+    ],
+    "generatedAt": "2026-10-25T18:23:59.033Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 42b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא דטעו</strong> - הא דפיחת שתות או הותיר:"
+  },
+  "Rashi on Kiddushin 42b:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-25T18:25:57.898Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 42b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ברוחות</strong> - מי שנפל לו חלק בדרום אומר נוח לי חלק בצפון שהיתה לו שם שדה סמוכה לה שנפלה לו מאמו:"
+  },
+  "Rashi on Kiddushin 42b:2:1": {
+    "dependsOn": [
+      "Rashi on Bava Metzia 49b:1"
+    ],
+    "generatedAt": "2026-10-25T18:28:53.736Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 42b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי הן כלקוחות כו'</strong> - כך דינן של לקוחות קצוב בפרק הזהב <span class=\"parenthesized\">(ב\"מ דף מט:)</span>:"
+  },
+  "Rashi on Kiddushin 42b:4:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 42b:2:1",
+      "Rashi on Kiddushin 42b:5:1",
+      "Kiddushin 42b:4",
+      "Kiddushin 42b:1",
+      "Rashi on Kiddushin 42b:1:1",
+      "Rashi on Kiddushin 42b:1:2",
+      "Rashi on Kiddushin 42b:5:2",
+      "Rashi on Kiddushin 42b:5:3",
+      "Tosafot on Kiddushin 42b:4:1",
+      "Rashi on Kiddushin 42a:7:1",
+      "Rashi on Kiddushin 42a:8:1",
+      "Rashi on Kiddushin 42a:9:1",
+      "Rashi on Kiddushin 42a:10:1"
+    ],
+    "generatedAt": "2026-10-25T18:36:56.868Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 42b:4:1"
+    ],
+    "sourceText": "ה\"ג והא דאמרן יתר על שתות בטל מקח לא אמרן אלא דלא אמר נפלוג בשומא דבי דינא. הא דאמר יתר על שתות בטלה חלוקה לגמרי לא אמרן אלא שלא התנו מתחילה להיות שומת הנכסים בשלשה שהן ב\"ד אבל קבלו עליהם להיות חלוקתם כדין שום הדיינין אפי' יותר על שתות מכרן קיים דקי\"ל כרשב\"ג דאמר מכרן קיים במסכת כתובות פרק אלמנה ניזונית <span class=\"parenthesized\">(כתובות ד' צט:)</span> ולא ס\"ל לרבא הא דאמר רב נחמן לעיל הלכה כדברי חכמים:"
+  },
+  "Rashi on Kiddushin 42b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-25T18:41:35.828Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 42b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא דאמרן שתות צריך להחזיר אונאה לא אמרו אלא במטלטלי</strong> - דאונאה כתיבה בהן או קנה מיד עמיתך אל תונו דבר הנקנה מיד ליד:"
+  },
+  "Rashi on Kiddushin 42b:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-25T18:42:14.804Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 42b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעילויא</strong> - שלא חלקום בחבל ליטול כל אחד ברעה וביפה אלא העלום בדמים ונטל זה ברעה כפי דמים וזה ביפה כפי דמים:"
+  },
+  "Rashi on Kiddushin 42b:5:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 42b:5:1",
+      "Rashi on Kiddushin 42b:5:2",
+      "Rashi on Kiddushin 42b:4:1",
+      "Rashi on Kiddushin 42b:1:1",
+      "Rashi on Kiddushin 42b:1:2",
+      "Rashi on Kiddushin 42b:2:1",
+      "Rashi on Kiddushin 42b:7:1"
+    ],
+    "generatedAt": "2026-10-25T18:45:29.785Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 42b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חוזר</strong> - שאין זה כשאר אונאות דקי\"ל בהזהב <span class=\"parenthesized\">(ב\"מ דף מט:)</span> פחות משתות מחיל אינש דהתם אין כל אדם יכול לצמצם הדמים אבל טועה במדה טעות הוא ואדעתא דהכי לא עביד:"
+  },
+  "Rashi on Kiddushin 42b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-25T18:46:27.772Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 42b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נימא שלוחו של אדם כמותו</strong> - יתחייב שולחו ולא השליח:"
+  },
+  "Rashi on Kiddushin 42b:7:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 42b:7:1",
+      "Rashi on Kiddushin 42b:2:1",
+      "Rashi on Kiddushin 42b:4:1",
+      "Tosafot on Kiddushin 42b:8:1",
+      "Rashi on Kiddushin 42b:8:1"
+    ],
+    "generatedAt": "2026-10-25T18:48:05.239Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 42b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין שליח</strong> - חשוב שליח לדבר עבירה שיתחייב שולחו אלא הרי הוא כעושה מאיליו:"
+  },
+  "Rashi on Kiddushin 42b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-25T18:49:34.530Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 42b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שליח שלא עשה שליחותו</strong> - גבי הקדש קאי שהיו אצלו מעות הקדש וטעה כסבור שהן של חולין ומסרו לשליח ליקח בהן חלוק וקנה בהן טלית שליח מעל ולא השולחו שבדבר זה אינו שלוחו:"
+  },
+  "Rashi on Kiddushin 42b:8:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 42b:8:1",
+      "Steinsaltz on Kiddushin 42b:8",
+      "Rashi on Kiddushin 42b:9:1",
+      "Rashi on Kiddushin 42a:1:1"
+    ],
+    "generatedAt": "2026-10-25T18:51:52.280Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 42b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל אם עשה שליחותו בעל הבית מעל</strong> - ומביא קרבן מעילה:"
+  },
+  "Rashi on Kiddushin 42b:9:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 42b:9:2",
+      "Steinsaltz on Kiddushin 42b:9",
+      "Meilah 18b:4",
+      "Rashi on Meilah 18b:4:1",
+      "Rashi on Kiddushin 42b:5:1",
+      "Rashi on Kiddushin 42b:7:1",
+      "Rashi on Kiddushin 42b:8:1",
+      "Leviticus 22:9",
+      "Leviticus 22:14",
+      "Leviticus 22:15",
+      "Leviticus 22:16",
+      "Chokhmat Shlomo on Kiddushin 42b:2",
+      "Rashi on Kiddushin 42a:6:1",
+      "Leviticus 5:15"
+    ],
+    "generatedAt": "2026-10-25T18:57:56.178Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 42b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חטא חטא מתרומה</strong> - לרוב דברים היא למודה מתרומה במסכת מעילה <span class=\"parenthesized\">(דף יח:)</span> כתיב הכא וחטאה בשגגה מקדשי ה' וכתיב בתרומה באוכלה בשוגג ולא ישאו עליו חטא:"
+  },
+  "Rashi on Kiddushin 42b:9:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 42b:9:1",
+      "Rashi on Kiddushin 42b:7:1",
+      "Rashi on Kiddushin 42b:7:2",
+      "Steinsaltz on Kiddushin 42b:9:1",
+      "Steinsaltz on Kiddushin 42b:9",
+      "Rashi on Kiddushin 42b:2:1",
+      "Rashi on Kiddushin 42b:4:1",
+      "Rashi on Kiddushin 42b:5:1",
+      "Rashi on Kiddushin 41b:1:1",
+      "Rashi on Kiddushin 41b:2:1",
+      "Rashi on Kiddushin 41b:3:1",
+      "Rashi on Kiddushin 41a:1:1",
+      "Rashi on Kiddushin 42a:1:1",
+      "Rashi on Kiddushin 43a:1:1",
+      "Kiddushin 41b:11"
+    ],
+    "generatedAt": "2026-10-25T18:59:58.600Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 42b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משוי שליח</strong> - להרמתה:"
+  },
+  "Tosafot on Kiddushin 42b:1:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 42b:1:1",
+      "Rashi on Kiddushin 42b:1:2"
+    ],
+    "generatedAt": "2026-10-25T18:27:29.631Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 42b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא דטעו הא דלא טעו</strong> - ה\"ה דמצי למימר הא דטעו בשתות והא דטעו בפחות משתות ולא איצטריך לומר יכולין למחות ברוחות:"
+  },
+  "Tosafot on Kiddushin 42b:3:1": {
+    "dependsOn": [
+      "Ketubot 99b:13",
+      "Ketubot 99b:14",
+      "Ketubot 100a:1",
+      "Ketubot 100a:2",
+      "Ketubot 99b:7",
+      "Ketubot 99b:8",
+      "Ketubot 99b:1",
+      "Ketubot 99b:2",
+      "Chokhmat Shlomo on Kiddushin 42b:3"
+    ],
+    "generatedAt": "2026-10-25T18:31:53.936Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 42b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל שויה שליח מצי אמר ליה לתקוני שדרתיך כו'</strong> - וא\"ת הא אמרי' בפ' אלמנה ניזונת <span class=\"parenthesized\">(כתובות דף ק. ושם)</span> שליח כמאן רבא אמר רב נחמן שליח כדיינין משמע דפחות משתות המקח קיים כדיינים ורבא גופיה קאמר הכא דאי שוייה שליח מצי א\"ל לתקוני שדרתיך כו' משמע דהמקח בטל אף בפחות משתות ואומר רשב\"ם דהתם רבא משום דרב נחמן קאמר וליה לא ס\"ל והכא משמיה דנפשיה ור\"ת מפרש דהתם מיירי בשליח הדיינין דאלמוהו רבנן להיות כמותם והכא מיירי בשליח דשויה הלוקח בעצמו אי נמי י\"ל דנהי דקאמר התם שליח כדיינין והמקח קיים האונאה מיהא צריך להחזיר והכא נמי ה\"ק לתקוני שדרתיך כו' וצריך להחזיר האונאה ולא כשאר אדם דפחות משתות הויא מחילה:"
+  },
+  "Tosafot on Kiddushin 42b:4:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 42b:4:1",
+      "Kiddushin 42b:4"
+    ],
+    "generatedAt": "2026-10-25T18:40:30.726Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 42b:4:1"
+    ],
+    "sourceText": "ה\"ג <span class=\"rashi-quotation\">בקונטרס</span> הא דאמרן יתר משתות בטל מקח לא אמרן אלא דלא אמר נפלוג בשומא דבי דינא אבל אמר נפלוג בשומא דבי דינא לא. כלומר המקח קיים ולפי גירסא זו מייתי ראיה מרשב\"ג דאמר מכרן קיים ולא ס\"ל לרבא הא דאמר רב נחמן לעיל דהלכה כחכמים והא דאמרן שתות קנה ומחזיר אונאה לא אמרן אלא במטלטלים דהא כתוב בהן אונאה או קנה מיד עמיתך אל תונו דבר הנקנה מיד ליד עכ\"ל וקשה לר\"ת חדא מדנקט גבי שתות אין אונאה לקרקעות משמע דביתר משתות יש להן אונאה ובפרק המקבל <span class=\"parenthesized\">(ב\"מ דף קח.)</span> מסיק רב נחמן זבין שוה מאה במאתן אין להם אונאה ועוד קשה דפירש דרבא לא ס\"ל כר\"נ ודוחק הוא דהא רב נחמן רבו היה וע\"ק דל<span class=\"rashi-quotation\">פי' הקונטרס</span> גרס מעיקרא יתר משתות במילתיה ומייתי ראיה ממשנה דשום הדיינין שפחתו שתות או הותירו שתות כו' ואמאי מייתי ראיה מינה הא משנה זו לא מיירי כלל ביתר משתות מה יהא דינן וא\"כ לא הוי דומה בדומה לכך נראה לר\"ת דגרס איפכא וכן גרס ר\"ח וה\"ג הא דאמר שתות קנה ומחזיר אונאה לא אמרן אלא דלא אמר נפלוג בשומא דבי דינא אבל אמר נפלוג בשומא דבי דינא לא והוי המקח בטל והשתא מייתי ראיה מחכמים והא דאמר יתר משתות בטל המקח לא אמרן אלא במטלטלי אבל במקרקעי כו' והשתא ניחא שפיר זבין שוה מאה במאתן מיהו קשה דמשמע הכא לפי' רבינו תם דבקרקעות לא שייך ביטול מקח אליבא דרב נחמן ובפרק הזהב <span class=\"parenthesized\">(ב\"מ דף נז.)</span> אמר ר\"נ הדר אמר רב. חסדא אונאה אין להם ביטול מקח יש להם וי\"ל דביטול מקח דהתם היינו מפלגא וה\"נ איתא בירושלמי עד פלג יש להם אונאה אבל בציר מפלג לא הוי ביטול מקח וההוא דזבן מאה במאתן אי פלג דוקא לא הוי זבין מאה במאתן דוקא אלא פחות ממאתן פורתא ואי מאתן דוקא הא דקתני עד פלג לאו דוקא אלא ר\"ל יותר מפלג פורתא אבל מפלג המקח קיים:"
+  },
+  "Tosafot on Kiddushin 42b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-25T18:54:25.064Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 42b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמאי מעל נימא אין שליח לדבר עבירה</strong> - תימה הא ע\"כ מיירי בשוגג דאי במזיד ליכא מעילה דאין מעילה במזיד א\"כ יש שליח לדבר עבירה דלא שייך למימר דברי הרב ודברי תלמיד דברי מי שומעים כיון שהוא שוגג דהכי נמי משמע בפ' מרובה <span class=\"parenthesized\">(ב\"ק דף עט:)</span> דקאמר הרי שגנב טלה מן העדר ואמר לכהן טול טלה זה שהוא שלי או נתנו לכהן לבכורות בנו והראה לו בטלה של חבירו ומסיק דמיד שהוציאו הכהן מרשות בעלים נתחייב הגנב במשיכת הכהן והקשה ר\"י התם אמאי חייב הגנב נימא אין שליח לדבר עבירה ותירץ כיון שאין הכהן יודע שהוא בא מגניבה לא שייך למימר דברי מי שומעין ואומר ר\"י דהכא מיירי אפי' דנזכר השליח קאמר דמעל בעל הבית והשתא פריך אמאי מעל נימא אין שליח לדבר עבירה דדברי הרב ודברי התלמיד דברי מי שומעין ואע\"ג דנזכר השליח מעל בעל הבית כדמוכח במעילה <span class=\"parenthesized\">(דף כא.)</span> דתני נזכר בעל הבית ולא נזכר שליח השליח מעל נזכרו שניהם חנוני מעל והטעם לפי דמעילה אינו אלא בשוגג כדפרישית לפיכך מעל אותו שלא נזכר ואותו שנזכר מזיד הוא מ\"מ דוקא אם נזכרו שניהם הא אם נזכר השליח לבד בעל הבית מעל:"
+  }
+}

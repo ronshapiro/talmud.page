@@ -24,6 +24,7 @@ export interface Section extends Highlightable {
   he: sefaria.TextType;
   en: sefaria.TextType;
   commentary?: CommentaryMap;
+  originalHebrew?: sefaria.TextType;
 
   hadran?: true;
   steinsaltz_start_of_sugya?: true; // eslint-disable-line camelcase
@@ -52,6 +53,7 @@ export interface ApiComment extends Highlightable {
   sourceHeRef: string;
   link?: string;
   commentary?: CommentaryMap;
+  originalHebrew?: sefaria.TextType;
   originalRefsBeforeRewriting?: string[];
   expandedRefsAfterRewriting?: string[];
   duplicateRefs?: string[];
@@ -64,7 +66,7 @@ export interface ApiComment extends Highlightable {
   // yet approved via /api/rsi-review-decision. Visible to every reader (see
   // RsiReviewControls.tsx for why), but only a key-holder gets the controls.
   //
-  // Carries the *page* identifier (e.g. "Zevachim 2a" — matching ai_edits.ts's OUTPUT_DIR keying)
+  // Carries the *page* identifier (e.g. "Zevachim 2a" — matching ai_edits.ts's page keying)
   // rather than being a plain boolean, because that's the one piece RsiReviewControls.tsx cannot
   // otherwise recover: ApiComment only has this comment's own ref (e.g. "Rashi on Zevachim
   // 2a:1:1"), and parsing a page out of a ref string client-side would be fragile.

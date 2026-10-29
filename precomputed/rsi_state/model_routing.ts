@@ -10,6 +10,7 @@ import {AgentBackend} from "../../rsi_orchestrator/agent_runner";
 export interface ModelConfig {
   generateModel: string;
   critiqueModel: string;
+  critiqueBackend?: AgentBackend;
 }
 
 export interface TaskModelConfig extends ModelConfig {
@@ -65,6 +66,13 @@ function findMatchingConfig(
   return undefined;
 }
 
+function toTaskModelConfig(backend: AgentBackend, configuration: ModelConfig): TaskModelConfig {
+  return {
+    ...configuration,
+    backend,
+  };
+}
+
 /**
  * Resolves the generator and critique model configuration for a task type and backend/preset.
  */
@@ -85,7 +93,7 @@ export function getTaskModelConfig(
   let backends: Record<string, BackendConfigs> | undefined;
   if (rawObj[taskType] && typeof rawObj[taskType] === "object") {
     backends = rawObj[taskType] as Record<string, BackendConfigs>;
-  } else if ("agy" in raw || "claude" in raw) {
+  } else if ("agy" in raw || "claude" in raw || "ollama" in raw) {
     backends = raw;
   } else {
     throw new Error(`No model routing config for task type "${taskType}" in ${configPath}`);
@@ -111,11 +119,7 @@ export function getTaskModelConfig(
         ?? findMatchingConfig(baseConfigs, requestedConfig);
 
       if (matchedConfig) {
-        return {
-          backend: requestedBackend as AgentBackend,
-          generateModel: matchedConfig.generateModel,
-          critiqueModel: matchedConfig.critiqueModel,
-        };
+        return toTaskModelConfig(requestedBackend as AgentBackend, matchedConfig);
       }
 
       const allAvailableConfigs = {
@@ -149,22 +153,14 @@ export function getTaskModelConfig(
       throw new Error(
         `Backend "${requestedBackend}" has no default config. Available configs: ${available}`);
     }
-    return {
-      backend: requestedBackend as AgentBackend,
-      generateModel: defaultConfig.generateModel,
-      critiqueModel: defaultConfig.critiqueModel,
-    };
+    return toTaskModelConfig(requestedBackend as AgentBackend, defaultConfig);
   }
 
   if (requestedConfig) {
     for (const [backendName, backendConfigs] of Object.entries(backends)) {
       for (const [key, cfg] of Object.entries(backendConfigs)) {
         if (matchesConfig(key, requestedConfig, cfg)) {
-          return {
-            backend: backendName as AgentBackend,
-            generateModel: cfg.generateModel,
-            critiqueModel: cfg.critiqueModel,
-          };
+          return toTaskModelConfig(backendName as AgentBackend, cfg);
         }
       }
     }
@@ -183,9 +179,5 @@ export function getTaskModelConfig(
   if (!defaultCfg) {
     throw new Error(`No default model configuration found in ${configPath}`);
   }
-  return {
-    backend: defaultBackend,
-    generateModel: defaultCfg.generateModel,
-    critiqueModel: defaultCfg.critiqueModel,
-  };
+  return toTaskModelConfig(defaultBackend, defaultCfg);
 }

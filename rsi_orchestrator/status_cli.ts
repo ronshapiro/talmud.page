@@ -1,5 +1,6 @@
 import {BudgetConfig, isPaused, readBudgetConfig} from "../precomputed/rsi_state/budget";
 import {ContextUsageEntry, readContextUsageLog} from "../precomputed/rsi_state/context_usage_log";
+import {computeContextReport, formatContextReport} from "./context_usage_report";
 
 /**
  * `npx ts-node rsi_orchestrator/status_cli.ts` — the "control panel" half of the human-driven
@@ -7,6 +8,9 @@ import {ContextUsageEntry, readContextUsageLog} from "../precomputed/rsi_state/c
  * counts and cost per task type against the configured caps, and whether anything is currently
  * paused — read this before deciding whether to enable a task type, raise a cap, or pause
  * everything before doing unrelated Claude Code work.
+ *
+ * `status_cli.ts context [--since YYYY-MM-DD] [--task <taskType>]` instead prints per-model
+ * context_fetch usage (see context_usage_report.ts).
  */
 
 export interface TaskStatus {
@@ -72,7 +76,21 @@ export function formatStatus(
   return lines.join("\n");
 }
 
+function flagValue(args: string[], flag: string): string | undefined {
+  const index = args.indexOf(flag);
+  return index === -1 ? undefined : args[index + 1];
+}
+
 function main(): void {
+  const [subcommand, ...args] = process.argv.slice(2);
+  if (subcommand === "context") {
+    const since = flagValue(args, "--since");
+    console.log(formatContextReport(computeContextReport(readContextUsageLog(), {
+      since: since ? new Date(since) : undefined,
+      taskType: flagValue(args, "--task"),
+    })));
+    return;
+  }
   const config = readBudgetConfig();
   const log = readContextUsageLog();
   console.log(formatStatus(config, computeTaskStatuses(config, log)));

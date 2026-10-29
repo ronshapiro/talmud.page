@@ -1,0 +1,476 @@
+{
+  "Rashi on Kiddushin 5b:10:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 5b:10:1"
+    ],
+    "generatedAt": "2026-10-21T14:52:33.782Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 5b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי את מקודשת לי</strong> - או הרי את מאורסת לי:"
+  },
+  "Rashi on Kiddushin 5b:12:1": {
+    "dependsOn": [
+      "Translation on Rashi on Kiddushin 5b:12:1"
+    ],
+    "generatedAt": "2026-10-21T14:56:16.899Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 5b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותנא סיפא מילתא דסתרא לרישא</strong> - בתמיה וכי אמרינן בכל דוכתא כדי נסבה מידי דלא איצטריך למיתניה ותנייה בכדי אבל סיפא דסתרא לרישא לא תני תנא:"
+  },
+  "Rashi on Kiddushin 5b:13:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 5b:13:1",
+      "Kiddushin 5b:13",
+      "Kiddushin 5b:10",
+      "Rashi on Kiddushin 5b:13:2",
+      "Rashi on Kiddushin 5b:13:3",
+      "Rashi on Kiddushin 5b:13:4",
+      "Rashi on Kiddushin 5b:2:1",
+      "Rashi on Kiddushin 5b:5:1",
+      "Rashi on Kiddushin 5b:6:1",
+      "Rashi on Kiddushin 5b:7:1",
+      "Translation on Rashi on Kiddushin 5b:13:1",
+      "Kiddushin 2a:2",
+      "Kiddushin 4b:13",
+      "Kiddushin 4b:11",
+      "Kiddushin 2a:8"
+    ],
+    "generatedAt": "2026-10-21T15:00:26.898Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 5b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ק</strong> - סיפא אבל שינה ממה שאמרנו כגון שנתן הוא ואמרה היא נעשה כאילו נתנה היא ואמרה היא ואינה מקודשת דבעינן כי יקח איש:"
+  },
+  "Rashi on Kiddushin 5b:13:2": {
+    "dependsOn": [
+      "Translation on Rashi on Kiddushin 5b:13:2",
+      "Rashi on Kiddushin 5b:13:1",
+      "Rashi on Kiddushin 5b:13:3",
+      "Rashi on Kiddushin 5b:13:4",
+      "Kiddushin 5b:13",
+      "Rashi on Kiddushin 5b:2:1",
+      "Rashi on Kiddushin 5b:5:1",
+      "Rashi on Kiddushin 5b:6:1",
+      "Rashi on Kiddushin 2a:1:1",
+      "Rashi on Kiddushin 2a:1:2",
+      "Kiddushin 4b:9"
+    ],
+    "generatedAt": "2026-10-21T15:03:01.992Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 5b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתן הוא</strong> - דמי לכי יקח איש:"
+  },
+  "Rashi on Kiddushin 5b:13:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 5b:13:3",
+      "Rashi on Kiddushin 5b:13:1",
+      "Rashi on Kiddushin 5b:13:2",
+      "Rashi on Kiddushin 5b:13:4",
+      "Kiddushin 4b:9",
+      "Rashi on Kiddushin 4b:9:2",
+      "Rashi on Kiddushin 5b:2:1",
+      "Rashi on Kiddushin 5b:5:1",
+      "Rashi on Kiddushin 5b:7:1"
+    ],
+    "generatedAt": "2026-10-21T15:11:49.119Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 5b:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמרה היא</strong> - דמי לתקח אשה לאיש:"
+  },
+  "Rashi on Kiddushin 5b:13:4": {
+    "dependsOn": [
+      "Translation on Rashi on Kiddushin 5b:13:4",
+      "Rashi on Kiddushin 5b:13:1",
+      "Rashi on Kiddushin 5b:13:2",
+      "Rashi on Kiddushin 5b:13:3"
+    ],
+    "generatedAt": "2026-10-21T15:13:06.913Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 5b:13:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחיישינן מדרבנן</strong> - שאם בא אחר וקידשה צריכה גט משניהם שמא לא היו של הראשון קידושין וחלו קידושי שני או שמא של ראשון קידושין ולא של שני:"
+  },
+  "Rashi on Kiddushin 5b:14:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 5b:14:1",
+      "Kiddushin 5b:14",
+      "Chokhmat Shlomo on Kiddushin 5b:3",
+      "Rashi on Kiddushin 5b:14:2",
+      "Rashi on Kiddushin 5b:14:3",
+      "Ritva on Kiddushin 5b:4",
+      "Steinsaltz on Kiddushin 5b:14",
+      "Translation on Rashi on Kiddushin 5b:14:1"
+    ],
+    "generatedAt": "2026-10-21T15:15:58.430Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 5b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בקידושין נתן לה כו'</strong> - משום דקא בעי למימר סיפא בגירושין נתן לה כו' נקט כי האי לישנא <span class=\"parenthesized\">(נתן)</span>:"
+  },
+  "Rashi on Kiddushin 5b:14:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 5b:14:2",
+      "Translation on Rashi on Kiddushin 5b:14:2",
+      "Rashi on Kiddushin 5b:14:1",
+      "Rashi on Kiddushin 5b:14:3",
+      "Steinsaltz comment #1 on Kiddushin 5b:14",
+      "Steinsaltz comment #2 on Kiddushin 5b:14",
+      "Ritva on Kiddushin 5b:4",
+      "Steinsaltz on Kiddushin 5b:14"
+    ],
+    "generatedAt": "2026-10-21T15:18:12.509Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 5b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי את מקודשת</strong> - ולא גרסינן לי:"
+  },
+  "Rashi on Kiddushin 5b:14:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 5b:14:3",
+      "Translation on Rashi on Kiddushin 5b:14:3",
+      "Rashi on Kiddushin 5b:14:1",
+      "Rashi on Kiddushin 5b:14:2",
+      "Kiddushin 5b:15",
+      "Steinsaltz on Kiddushin 5b:14",
+      "Rashi on Kiddushin 5b:5:1",
+      "Rashi on Kiddushin 5b:5:2",
+      "Rashi on Kiddushin 4b:1:1",
+      "Rashi on Kiddushin 5a:1:1",
+      "Rashi on Kiddushin 5b:2:1",
+      "Rashi on Kiddushin 5b:6:1"
+    ],
+    "generatedAt": "2026-10-21T15:22:58.564Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 5b:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין כאן בית מיחוש</strong> - אין כאן אפי' ספק קידושין דכי יקח כתיב ולא שיקח עצמו לה ודגירושין אין כאן בית מיחוש אף לפוסלה לכהונה:"
+  },
+  "Rashi on Kiddushin 5b:16:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 5b:16:1",
+      "Translation on Rashi on Kiddushin 5b:16:1",
+      "Rashi on Kiddushin 5b:16:2",
+      "Steinsaltz on Kiddushin 5b:16",
+      "Rashi on Kiddushin 5b:5:1",
+      "Rashi on Kiddushin 5b:13:1"
+    ],
+    "generatedAt": "2026-10-21T15:28:18.535Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 5b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ידים שאין מוכיחות</strong> - בית יד אחיזת הדבר אע\"פ שאינו מוכיח אחיזת לשון גמור כי הכא דקאמר הרי את מקודשת ולא קאמר למאן:"
+  },
+  "Rashi on Kiddushin 5b:16:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 5b:16:1",
+      "Translation on Rashi on Kiddushin 5b:16:2",
+      "Steinsaltz on Kiddushin 5b:16:1",
+      "Tosafot on Kiddushin 5b:16:1"
+    ],
+    "generatedAt": "2026-10-21T15:31:01.707Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 5b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הויין ידים</strong> - ואמר דלדידיה קדשה:"
+  },
+  "Rashi on Kiddushin 5b:17:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 5b:17:1",
+      "Translation on Rashi on Kiddushin 5b:17:1",
+      "Rashi on Kiddushin 5b:17:2",
+      "Rashi on Kiddushin 5b:5:1",
+      "Rashi on Kiddushin 5b:6:1",
+      "Rashi on Kiddushin 5b:7:1",
+      "Rashi on Kiddushin 5b:10:1",
+      "Rashi on Kiddushin 5b:12:1",
+      "Rashi on Kiddushin 5b:13:1",
+      "Rashi on Kiddushin 2a:1:1",
+      "Rashi on Kiddushin 2a:1:2",
+      "Rashi on Kiddushin 2a:2:1",
+      "Steinsaltz on Kiddushin 5b:17",
+      "Nazir 2b:4",
+      "Nazir 2b:5",
+      "Rashi on Nazir 2b:4:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3",
+      "Rashi on Berakhot 2b:2:1",
+      "Rashi on Berakhot 2b:5:1",
+      "Rashi on Berakhot 3a:1:1",
+      "Rashi on Berakhot 10a:12:1",
+      "Jastrow on Kiddushin 5b:12:1"
+    ],
+    "generatedAt": "2026-10-21T15:40:40.509Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 5b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אהא</strong> - אהיה:"
+  },
+  "Rashi on Kiddushin 5b:17:2": {
+    "dependsOn": [
+      "Translation on Rashi on Kiddushin 5b:17:2",
+      "Steinsaltz on Kiddushin 5b:17:1"
+    ],
+    "generatedAt": "2026-10-21T15:42:01.227Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 5b:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהיה נזיר עובר לפניו</strong> - דודאי אהיה אף אני כזה קאמר אלמא בעינן הוכחה:"
+  },
+  "Rashi on Kiddushin 5b:18:1": {
+    "dependsOn": [
+      "Kiddushin 5b:18",
+      "Rashi on Kiddushin 5b:16:1",
+      "Rashi on Kiddushin 5b:16:2",
+      "Rashi on Kiddushin 5b:17:1",
+      "Rashi on Kiddushin 5b:17:2",
+      "Rashi on Kiddushin 5b:14:1",
+      "Rashi on Kiddushin 5b:14:2",
+      "Rashi on Kiddushin 5b:14:3",
+      "Rashi on Kiddushin 2a:1:1",
+      "Rashi on Kiddushin 2a:1:2",
+      "Rashi on Kiddushin 2a:1:3"
+    ],
+    "generatedAt": "2026-10-21T15:43:44.438Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 5b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לישני בתראי</strong> - דקאמר בהו אין כאן בית מיחוש בין דקידושין בין דגירושין:"
+  },
+  "Rashi on Kiddushin 5b:2:1": {
+    "dependsOn": [
+      "Translation on Rashi on Kiddushin 5b:2:1",
+      "Steinsaltz on Kiddushin 5b:2"
+    ],
+    "generatedAt": "2026-10-21T14:26:33.341Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 5b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף אני אביא חופה שקונה בעלמא</strong> - שגומרת ליורשה ולהפרת נדריה יקנה נמי כאן בלא אירוסין:"
+  },
+  "Rashi on Kiddushin 5b:5:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 5b:5:1",
+      "Community Translation: Translation on Rashi on Kiddushin 5b:5:1",
+      "Rashi on Kiddushin 5b:5:2",
+      "Rashi on Kiddushin 5b:2:1",
+      "Rashi on Kiddushin 5b:6:1",
+      "Rashi on Kiddushin 5b:7:1",
+      "Rashi on Kiddushin 5b:10:1",
+      "Rashi on Kiddushin 2a:1:1",
+      "Rashi on Kiddushin 2a:2:1"
+    ],
+    "generatedAt": "2026-10-21T14:32:15.518Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 5b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שכן ישנן בע\"כ</strong> - שקונה בעלמא ביאה ביבמה ושטר בגירושין וכסף באמה העבריה:"
+  },
+  "Rashi on Kiddushin 5b:5:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 5b:5:1",
+      "Translation on Rashi on Kiddushin 5b:5:2",
+      "Tosafot on Kiddushin 5b:5:1"
+    ],
+    "generatedAt": "2026-10-21T14:39:20.178Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 5b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כסף באישות מיהא לא אשכחן בעלמא בע\"כ</strong> - ואפ\"ה קונה כאן ואף על כרחה כגון אב מקבל קידושין לבת קטנה אף אני אביא חופה:"
+  },
+  "Rashi on Kiddushin 5b:6:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 5b:6:1",
+      "Translation on Rashi on Kiddushin 5b:6:1",
+      "Kiddushin 5b:6",
+      "Rashi on Kiddushin 5b:5:1",
+      "Rashi on Kiddushin 5b:5:2",
+      "Rashi on Kiddushin 5a:16:1",
+      "Rashi on Kiddushin 2a:1:1",
+      "Rashi on Kiddushin 2a:2:1",
+      "Tosafot on Kiddushin 5b:5:1"
+    ],
+    "generatedAt": "2026-10-21T14:45:27.582Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 5b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתי תשובות בדבר</strong> - להא דאמרת חופה קונה בלא כסף:"
+  },
+  "Rashi on Kiddushin 5b:7:1": {
+    "dependsOn": [
+      "Translation on Rashi on Kiddushin 5b:7:1",
+      "Rashi on Kiddushin 5b:5:1",
+      "Rashi on Kiddushin 5b:5:2",
+      "Rashi on Kiddushin 5b:6:1",
+      "Kiddushin 5b:6",
+      "Kiddushin 5a:16",
+      "Kiddushin 5b:1",
+      "Rashi on Kiddushin 2a:1:1",
+      "Rashi on Kiddushin 2a:2:1",
+      "Steinsaltz on Kiddushin 5b:7"
+    ],
+    "generatedAt": "2026-10-21T14:51:10.790Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Kiddushin 5b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועוד כלום חופה גומרת</strong> - דקאמרת חופה שגומרת כו' וכיון שאינה גומרת אלא לאחר קידושין היאך אתה בא לדון חופה שלא ע\"י קידושין מחופה שע\"י קידושין:"
+  },
+  "Tosafot on Kiddushin 5b:11:1": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 5b:11:1",
+      "Kiddushin 5b:11",
+      "Chidushei Halachot on Kiddushin 5b:2"
+    ],
+    "generatedAt": "2026-10-21T14:54:15.168Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 5b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא נתן הוא ואמרה היא כו'</strong> - מה שלא הזכיר כלל נתנה היא ואמר הוא משום דלא פסיקא ליה דפעמים מקודשת באדם חשוב כדאמר לקמן <span class=\"parenthesized\">(קידושין דף ז.)</span>:"
+  },
+  "Tosafot on Kiddushin 5b:16:1": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 5b:16:1",
+      "Community Translation: Translation on Tosafot on Kiddushin 5b:16:1",
+      "Kiddushin 5b:16",
+      "Rashi on Kiddushin 5b:16:1",
+      "Rashi on Kiddushin 5b:16:2",
+      "Steinsaltz on Kiddushin 5b:16"
+    ],
+    "generatedAt": "2026-10-21T15:34:56.934Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 5b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא לאו הכי לא אלמא קסבר ידים שאין מוכיחות לא הוויין ידים</strong> - וא\"ת אמאי לא משני דלעולם הוויין ידים והתם דקאמר אהא אפילו ידים שאין מוכיחות לא הוויין דדילמא אהא בתענית קאמר וי\"ל דטפי משמע אהא לשון נזירות מלשון תענית דאהא משמע מיד ופעמים שאכל ולא מצי למימר אהא בתענית עד למחר אבל גבי נזירות מיד יכול להתחיל נזירותו אם ירצה:"
+  },
+  "Tosafot on Kiddushin 5b:18:1": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 5b:18:1",
+      "Translation on Tosafot on Kiddushin 5b:18:1",
+      "Kiddushin 5b:18",
+      "Chidushei Halachot on Kiddushin 5b:4",
+      "Chokhmat Shlomo on Kiddushin 5b:4",
+      "Tosafot on Kiddushin 5b:11:1",
+      "Tosafot on Kiddushin 5b:16:1",
+      "Nazir 2b:4",
+      "Nazir 2b:5",
+      "Tosafot on Nazir 2b:5:1",
+      "Tosafot on Nazir 2b:5:2",
+      "Nedarim 5a:8",
+      "Nedarim 5a:9",
+      "Nedarim 5a:10",
+      "Nedarim 5a:11",
+      "Nedarim 5b:1",
+      "Nedarim 5b:2",
+      "Nedarim 5b:3",
+      "Nedarim 5b:4",
+      "Nedarim 5b:5",
+      "Nedarim 5b:6",
+      "Gittin 85a:27"
+    ],
+    "generatedAt": "2026-10-21T15:47:57.460Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 5b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא במאי עסקינן דאמר לי</strong> - משמע דמסיק הכא לשמואל דידים שאין מוכיחות לא הוויין ידים ותימה דבריש מסכת נדרים <span class=\"parenthesized\">(דף ב.)</span> אמר האומר לחבירו מודרני ממך מופרשני ממך מרוחקני ממך שאיני אוכל לך שאיני טועם לך אסור וקאמרי' עלה בגמרא <span class=\"parenthesized\">(שם דף ד:)</span> אמר שמואל בכולן עד שיאמר שאיני אוכל לך שאיני טועם לך ומסיק מאי טעמא דילמא מודרני ממך דלא משתעינא בהדך משמע מופרשני ממך דלא עבידנא משא ומתן בהדך משמע מרוחקני דלא קאימנא בד' אמות דילך משמע ופריך <span class=\"parenthesized\">(שם דף ה:)</span> לימא דסבר שמואל ידים שאין מוכיחות לא הוויין ידים ומשני שמואל מוקי מתני' כרבי יהודה דאמר ידים שאין מוכיחות לא הויין ידים ומדקאמר שמואל מוקי למתני' כרבי יהודה מכלל דאיהו לא סבירא ליה כוותיה אלא סבירא ליה דהויין ידים ואין לפרש דשמואל מוקי למתני' כרבי יהודה וסבר ליה כוותיה מדאמר בתר הכי ומאי דוחקיה דשמואל לאוקמא מתני' כרבי יהודה ומאי קשיא אמאי דחיק ומוקי מתני' כרבי יהודה משום דסבר ליה כוותיה לכך מוקי כרבי יהודה אלא ודאי קים ליה דהויין ידים ועוד דאמר בגיטין <span class=\"parenthesized\">(דף פה.)</span> גופו של גט הרי את מותרת לכל אדם רבי יהודה אומר ודן די יהוי ליכי מינאי הוא גופו של גט ופליגי רבנן עליה ושמואל סבר כרבנן וי\"ל דהרי את מקודשת ולא אמר לי לא משמע כלל דמקודשת לי קאמר דאדם עשוי לקדש אשה לחבירו וידים שאין מוכיחות כלל כי הני ודאי קאמר שמואל לא הויין ידים אבל בהאי דנדרים הוו מוכיחות טפי וכן ההוא דכותב טופסי גיטין הוו מוכיחות דאין אדם מגרש אשת חבירו אך בריש מסכת נזיר <span class=\"parenthesized\">(דף ב:)</span> יש ספרים דגרסי האומר אהא ה\"ז נזיר אמר שמואל והוא שהיה נזיר עובר לפניו וקא אמר לימא דקסבר שמואל ידים שאין מוכיחות לא הויין ידים אין מש\"ה כי נזיר עובר לפניו הוי ידים מוכיחות ומהני אבל אין נזיר עובר לפניו הוי ידים שאין מוכיחות ולא מהני ואית ספרים דגרסי לימא קסבר שמואל ידים שאין מוכיחות לא הויין ידים ומשני עובר לפניו הויין ידים שאין מוכיחות לכל הפחות אבל אין עובר לפניו אפילו שאין מוכיחות לא הוי:"
+  },
+  "Tosafot on Kiddushin 5b:1:1": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 5b:1:1",
+      "Translation on Tosafot on Kiddushin 5b:1:1",
+      "Kiddushin 5b:1",
+      "Chidushei Halachot on Kiddushin 5b:1",
+      "Tosafot on Kiddushin 5b:2:1",
+      "Tosafot on Kiddushin 2a:1:3"
+    ],
+    "generatedAt": "2026-10-21T14:25:05.419Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 5b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חופה שגומרת אינו דין שתקנה</strong> - וא\"ת נימא דיו אסוף דינא דמהיכא מייתית דחופה קונה משום דגומרת דיו לבא מן הדין להיות כנדון מה להלן אחר כסף אף כאן לאחר כסף וי\"ל דאתיא כרבי טרפון דאמר <span class=\"parenthesized\">(בב\"ק דף כה.)</span> היכא דמיפריך קל וחומר לא אמר דיו והכא אי אמר דיו מיפריך קל וחומר דלאחר כסף לא איצטריך וא\"ת לדידן דאמר דחופה אינה קונה נימא דכסף גומר אחר כסף מק\"ו דחופה מה חופה שאינה קונה גומרת כסף שקונה אינו דין שיגמור וי\"ל דלא מצי לאוכוחי שיגמור אלא אחר כסף כחופה ומאי אולמיה האי כסף מהאי כסף:"
+  },
+  "Tosafot on Kiddushin 5b:2:1": {
+    "dependsOn": [
+      "Translation on Tosafot on Kiddushin 5b:2:1",
+      "Kiddushin 5b:2",
+      "Kiddushin 5b:4",
+      "Torah Temimah on Torah, Exodus 21:8:2",
+      "Tosafot on Kiddushin 5b:5:1",
+      "Steinsaltz comment #1 on Kiddushin 5b:5",
+      "Steinsaltz comment #2 on Kiddushin 5b:5",
+      "Rashi on Kiddushin 5b:5:1",
+      "Rashi on Kiddushin 5b:5:2",
+      "Tosafot on Kiddushin 2a:1:1"
+    ],
+    "generatedAt": "2026-10-21T14:29:59.460Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 5b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף אני אביא חופה שקונה בעלמא וקונה כאן מה להצד השוה שבהן שכן קונין בע\"כ</strong> - ואע\"פ שמוסר בתו הקטנה לחופה בע\"כ כיון דבמקום בתו קאי לא חשיב בע\"כ וא\"ת אכתי אשכחנא חופה בעל כרחה דייעוד לאו נישואין עושה ונמצא שאחר ייעוד כונסה האדון לחופה על כרחו דאב וי\"ל אע\"פ שהייעוד יכול לעשות בעל כרחו דאב החופה צריך לעשות מדעת:"
+  },
+  "Tosafot on Kiddushin 5b:5:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Tosafot on Kiddushin 5b:5:1",
+      "Tosafot on Kiddushin 5a:14:1",
+      "Tosafot on Kiddushin 5b:2:1"
+    ],
+    "generatedAt": "2026-10-21T14:41:40.526Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 5b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורב הונא כסף באישות מיהא לא אשכחנא בע\"כ</strong> - אע\"פ שהאב מקדש בתו קטנה בעל כרחה מכל מקום כיון שהוא מדעת האב לא קרי בעל כרחה כדפרישית ועוד בחופה נמי אשכחנא כי האי גוונא <span class=\"parenthesized\">(כתובות מז.)</span> שהאב מוסר את בתו קטנה לחופה:"
+  }
+}

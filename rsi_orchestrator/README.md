@@ -24,7 +24,7 @@ billing.
   drifted (via `precomputed/rsi_state/staleness.ts` + `generation_record.ts`), and for each one:
   asks Claude to punctuate and translate it, then runs a bounded self-critique pass (generate →
   critique → at most one retry with feedback → give up) before writing to
-  `precomputed/ai_additions/<Book Page>.json` and recording a generation record. Requires
+  `precomputed/ai_additions/<Book>/<Page>.json` and recording a generation record. Requires
   `cached_outputs/api_request_handler/` to be populated for that book first
   (`npx ts-node cache_all_api_requests.ts`).
 - `context_fetch.ts` + `context_fetch_cli.ts` — the only tool a task-type headless call may use
@@ -65,7 +65,15 @@ billing.
 - `status_cli.ts` (`npx ts-node rsi_orchestrator/status_cli.ts`) — the read side of the budget
   loop: today's/this week's call counts and cost per task type against `budget_config.json`'s
   caps, and whether anything is currently paused. Check this before enabling a task type, raising
-  a cap, or pausing everything ahead of unrelated Claude Code work.
+  a cap, or pausing everything ahead of unrelated Claude Code work. `status_cli.ts context
+  [--since YYYY-MM-DD] [--task <taskType>]` instead prints per-model context_fetch usage for
+  generate calls (`context_usage_report.ts`): how often calls fetch, refs per fetch, and how many
+  refs land off the target's page, off its book, or on the tractate's first pages. Run it with
+  `--since` set to the date of a prompt change to see whether the change reduced wasted fetches.
+- `prompts/*.md` — the translation task's prompts, as markdown templates rendered by
+  `prompt_template.ts`. Each line break in a file is a line break in the prompt, `{{param}}` is
+  filled in by the caller, and a line holding only an empty param is dropped. Edit these to change
+  what the agent is told; the leading `<!-- -->` comment in each lists its params.
 - `schedule_runner.ts` — the actual scheduled-run entrypoint. Each invocation ("tick") reads
   `budget_config.json`, and for every enabled/under-cap/unpaused task type runs one bounded batch
   (capped by `maxCallsPerRun` and the remaining daily budget), then stops — never an open-ended
@@ -101,6 +109,7 @@ npx ts-node rsi_orchestrator/triage_suggestions.ts
 npx ts-node rsi_orchestrator/rashi_tosafot_translation_cli.ts Zevachim --section 2a --limit 2
 npx ts-node rsi_orchestrator/rashi_tosafot_translation_cli.ts Zevachim --start-page 10b --continuous --duration-hours 24
 npx ts-node rsi_orchestrator/status_cli.ts
+npx ts-node rsi_orchestrator/status_cli.ts context --since 2026-10-21
 npx ts-node rsi_orchestrator/schedule_runner.ts   # honors budget_config.json — no-ops if nothing
                                                    # is enabled/unpaused/under its daily cap
 ```

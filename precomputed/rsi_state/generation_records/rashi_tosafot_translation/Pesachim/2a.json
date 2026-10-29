@@ -1,0 +1,413 @@
+{
+  "Rashi on Pesachim 2a:1:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 2a:1:1",
+      "Translation on Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 2a:1:2",
+      "Rashi on Pesachim 2a:1:3",
+      "Rashi on Pesachim 2a:1:4",
+      "Rashi on Pesachim 2a:1:5",
+      "Rashi on Pesachim 2a:1:6",
+      "Rashi on Pesachim 2a:1:7",
+      "Rashi on Pesachim 2a:2:2",
+      "Ritva on Pesachim 2a:1"
+    ],
+    "generatedAt": "2026-10-21T18:39:56.312Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2a:1:1"
+    ],
+    "sourceText": "אור לארבעה עשר גרסי':"
+  },
+  "Rashi on Pesachim 2a:1:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 2a:1:2"
+    ],
+    "generatedAt": "2026-10-21T18:41:22.213Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאור הנר</strong> - בגמרא <span class=\"parenthesized\">(דף ז:)</span> מפרש טעמא:"
+  },
+  "Rashi on Pesachim 2a:1:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 2a:1:3"
+    ],
+    "generatedAt": "2026-10-21T18:42:25.437Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בודקין</strong> - שלא יעבור עליו בבל יראה ובבל ימצא:"
+  },
+  "Rashi on Pesachim 2a:1:4": {
+    "dependsOn": [
+      "Rashi on Pesachim 2a:1:3",
+      "Rashi on Pesachim 2a:1:4",
+      "Rashi on Pesachim 2a:1:5",
+      "Steinsaltz on Pesachim 2a:1",
+      "Ritva on Pesachim 2a:1",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 2a:1:2"
+    ],
+    "generatedAt": "2026-10-21T18:44:37.789Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2a:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובמה אמרו</strong> - לקמן במתניתין:"
+  },
+  "Rashi on Pesachim 2a:1:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T18:45:43.422Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2a:1:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתי שורות</strong> - של חביות הסדורות במרתף של יין צריך לבדוק ביניהם אחרי שאמרנו כל מקום שאין מכניסין בו חמץ אין צריך לבדוק למה הוצרכו לבודקן ומפרש לא אמרו אלא במרתף שמכניסין בו חמץ כגון מרתף שמסתפק ממנו יין לשולחנו ופעמים שהשמש עומד למזוג יין ופתו בידו וכשהיין כלה נכנס למרתף להביא יין:"
+  },
+  "Rashi on Pesachim 2a:1:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T18:49:19.290Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2a:1:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתי שורות על פני כל המרתף</strong> - בגמ' <span class=\"parenthesized\">(דף ח:)</span> מפרש מאי היא:"
+  },
+  "Rashi on Pesachim 2a:1:7": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T18:51:12.921Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2a:1:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתי שורות החיצונות כו'</strong> - מפרש בגמ' <span class=\"parenthesized\">(שם)</span>:"
+  },
+  "Rashi on Pesachim 2a:2:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 2a:2:1",
+      "Rashi on Pesachim 2a:2:2"
+    ],
+    "generatedAt": "2026-10-21T18:55:34.468Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג קא סלקא דעתך מאן דאמר נגהי נגהי ממש</strong> - כשיאיר השחר שחרית של י\"ד:"
+  },
+  "Rashi on Pesachim 2a:2:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 2a:2:1",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 2a:1:2"
+    ],
+    "generatedAt": "2026-10-21T18:57:29.945Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאן דאמר לילי לילי ממש</strong> - לא גרסינן דהא ודאי לילי הוא ממש:"
+  },
+  "Rashi on Pesachim 2a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T19:02:35.738Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הבקר אור</strong> - קס\"ד דה\"ק ולבקר דהיינו אור כלומר ששמו אור האנשים שולחו:"
+  },
+  "Rashi on Pesachim 2a:3:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 2a:3:1",
+      "Rashi on Pesachim 2a:3:2",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 2a:2:1"
+    ],
+    "generatedAt": "2026-10-21T19:04:43.548Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי כתיב האור בקר</strong> - דלשתמע ולאור דהיינו בקר דתימצי לומר דאור שם דבר הוא וקרי לבקר אור:"
+  },
+  "Rashi on Pesachim 2a:3:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T19:06:10.617Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הבקר אור כתיב</strong> - האי אור לאו שם דבר הוא אלא הבקר האיר והאנשים שולחו כמאן דאמר צפרא נהר ולפי דרכו לימדך הכתוב דרך ארץ מאחי יוסף שהמתינו עד שהאיר המזרח כדרב יהודה אבל אור שהוא שם דבר אינו אלא לילה:"
+  },
+  "Rashi on Pesachim 2a:3:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T19:07:26.272Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכי טוב</strong> - היוצא לדרך יכנס ערבית לבית מלון בעוד החמה זורחת ולמחר ימתין עד הנץ החמה ויצא ואז טוב לו שהאור טוב לו שנאמר באור כי טוב ומה היא טובתו מפני החיות ומפני הלסטים:"
+  },
+  "Rashi on Pesachim 2a:4:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 2a:4:1",
+      "Rashi on Pesachim 2a:4:2",
+      "Rashi on Pesachim 2a:4:3",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 2a:3:1"
+    ],
+    "generatedAt": "2026-10-21T19:14:10.854Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכאור בקר</strong> - השתא משמע לן דשם דבר הוא והכי קאמר דוד וכאור זה דהיינו בקר כן יזרח שמש לצדיקים שיצאו מאפילתן לעולם הבא:"
+  },
+  "Rashi on Pesachim 2a:4:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 2a:4:1",
+      "Rashi on Pesachim 2a:4:3",
+      "Steinsaltz on Pesachim 2a:4",
+      "Tosafot on Pesachim 2a:4:1",
+      "Maharsha on Pesachim 2a:4:1",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 2a:1:2",
+      "Rashi on Pesachim 2a:1:3"
+    ],
+    "generatedAt": "2026-10-21T19:17:47.402Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי כתיב אור בקר</strong> - דהיינו שם דבר ונימא אור הוא בקר וכן יזרח שמש:"
+  },
+  "Rashi on Pesachim 2a:4:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 2a:4:1",
+      "Rashi on Pesachim 2a:4:2",
+      "Rashi on Pesachim 2a:4:3"
+    ],
+    "generatedAt": "2026-10-21T19:19:49.480Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכאור בקר כתיב</strong> - ואין זה שם דבר אלא כמאיר של בקר יזרח שמש כשמתחיל הבקר להאיר בעולם הזה והוא חשך ואפל בעלות השחר נוגה כזריחת השמש של עכשיו תהיה אותה שעה לצדיקים לעתיד לבא לפי שיהא אור החמה גדול מאד ואפילו עלות השחר שלה יאיר כהנץ החמה של עכשיו:"
+  },
+  "Rashi on Pesachim 2a:5:1": {
+    "dependsOn": [
+      "Pesachim 2a:4",
+      "Rashi on Pesachim 2a:5:2",
+      "Rashi on Pesachim 2a:5:3",
+      "Pesachim 2a:3",
+      "Rashi on Pesachim 2a:3:1",
+      "Rashi on Pesachim 2a:3:2",
+      "Rashi on Pesachim 2a:3:3",
+      "Rashi on Pesachim 2a:3:4",
+      "Steinsaltz on Pesachim 2a:5:1"
+    ],
+    "generatedAt": "2026-10-21T19:22:56.525Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למאיר ובא קראו יום</strong> - משעה שמתחיל להאיר והאי אור לאו שם דבר הוא:"
+  },
+  "Rashi on Pesachim 2a:5:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 2a:5:2",
+      "Rashi on Pesachim 2a:5:1",
+      "Rashi on Pesachim 2a:5:3",
+      "Tosafot on Pesachim 2a:5:1"
+    ],
+    "generatedAt": "2026-10-21T19:26:12.046Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא קיימא לן</strong> - בשמעתא קמייתא דברכות:"
+  },
+  "Rashi on Pesachim 2a:5:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T19:28:32.858Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד צאת הכוכבים יממא</strong> - כדכתיב מעלות השחר ועד צאת הכוכבים דעזרא <span class=\"parenthesized\">(נחמיה ד׳:ט״ו)</span>:"
+  },
+  "Rashi on Pesachim 2a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T19:36:00.589Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא</strong> - תריץ הכי:"
+  },
+  "Rashi on Pesachim 2a:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T19:37:45.395Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קריה רחמנא לנהורא כו'</strong> - האי ויקרא לאו קריאת שם הוא דתימא שקרא את שם האור יום אלא קרא לבריאה המאירה שברא מהוד מעטה לבושו:"
+  },
+  "Rashi on Pesachim 2a:6:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 2a:6:1",
+      "Rashi on Pesachim 2a:6:2"
+    ],
+    "generatedAt": "2026-10-21T19:39:06.910Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ופקדיה אמצותא דיממא</strong> - צוהו לשמש ביום ולחושך צוה לשמש בלילה קרא כמלך שקרא לעבדו שיבא לפניו:"
+  },
+  "Rashi on Pesachim 2a:8:1": {
+    "dependsOn": [
+      "Pesachim 2a:8",
+      "Rashi on Pesachim 2a:7:1",
+      "Rashi on Pesachim 2a:6:1",
+      "Rashi on Pesachim 2a:5:1"
+    ],
+    "generatedAt": "2026-10-21T19:41:22.153Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Rashi on Pesachim 2a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא קמ\"ל דאור כוכבים נמי אור הוא</strong> - לעולם כוכבים המאירים קאמר ודקא קשיא לך הא שאינן מאירין לא הא דנקט כוכבי אור לאו למעוטי כוכבים שאינן מאירין דכל כוכבים יש להם אור וליכא למעוטי מידי וקרא אשמעינן דאור כוכבים קרוי אור ונפקא מינה לנודר הנאה מן האור שיאסר באורן של כוכבים:"
+  },
+  "Tosafot on Pesachim 2a:1:1": {
+    "dependsOn": [
+      "Translation on Tosafot on Pesachim 2a:1:1"
+    ],
+    "generatedAt": "2026-10-21T18:53:18.524Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Pesachim 2a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אור לארבעה עשר בודקין את החמץ</strong> - פ\"ה שלא לעבור עליו בבל יראה ובל ימצא וקשה לר\"י כיון דצריך ביטול כדאמר בגמ' <span class=\"parenthesized\">(דף ו:)</span> הבודק צריך שיבטל ומדאורייתא בביטול בעלמא סגי אמאי הצריכו חכמים בדיקה כלל ונראה לר\"י דאע\"ג דסגי בביטול בעלמא החמירו חכמים לבדוק חמץ ולבערו שלא יבא לאכלו וכן משמע לקמן <span class=\"parenthesized\">(פסחים דף י:)</span> דבעי רבא ככר בשמי קורה וכו' או דלמא זימנין דנפל ואתי למיכליה והטעם שהחמירו כאן טפי מבשאר איסורי הנאה שלא הצריכו לבערם משום דחמץ מותר כל השנה ולא נאסר רק בפסח ולא בדילי מיניה כדאמר לקמן <span class=\"parenthesized\">(פסחים דף יא.)</span> ולא דמי לבשר בחלב וערלה וכלאי הכרם שאיסורם נוהג איסור עולם ונזיר נמי איסוריה שרי לאחריני אי נמי שאני חמץ שהחמירה בו תורה לעבור בבל יראה ובל ימצא החמירו חכמים לבדוק ולבערו אפילו היכא דביטלו משום דילמא אתי למיכליה ונראה לרשב\"א דאפילו לפי טעם האחרון צ\"ל דהחמירו חכמים בכל חמץ אפי' בחמץ נוקשה ועל ידי תערובת אף על גב דליכא בל יראה לפר\"ת בריש אלו עוברין <span class=\"parenthesized\">(פסחים דף מב.)</span> דהא אמר שיאור ישרף והיינו חמץ נוקשה כדמוכח התם ואיכא למ\"ד נמי התם דכ\"ש חמץ גמור על ידי תערובת משמע דאסור להשהותו דאי מותר להשהותו אמאי ישרף ישהה אותו עד אחר הפסח ויהא מותר אפילו לרבי יהודה דלא אסר רבי יהודה חמץ אחר הפסח אלא בחמץ גמור דאיכא ג' קראי לתוך זמנו ולפני זמנו ולאחר זמנו <span class=\"parenthesized\">(לקמן פסחים דף כח:)</span> אבל בנוקשה דליכא אלא חד קרא אפי' ר' יהודה מודה:"
+  },
+  "Tosafot on Pesachim 2a:2:1": {
+    "dependsOn": [
+      "Tosafot on Pesachim 2a:2:1",
+      "Translation on Tosafot on Pesachim 2a:2:1",
+      "Gilyon HaShas on Pesachim 2a:1"
+    ],
+    "generatedAt": "2026-10-21T19:00:04.221Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Pesachim 2a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קא סלקא דעתך מ\"ד נגהי וכו'</strong> - לא נקט קס\"ד אלא משום מאן דאמר נגהי דלא קאי הכי ואגב אורחיה נקט נמי לילי ממש ומש\"ה אין לשבש הספרים:"
+  },
+  "Tosafot on Pesachim 2a:3:1": {
+    "dependsOn": [
+      "Tosafot on Pesachim 2a:3:1",
+      "Translation on Tosafot on Pesachim 2a:3:1",
+      "Tosafot on Pesachim 2a:1:1",
+      "Tosafot on Pesachim 2a:2:1",
+      "Tosafot on Pesachim 2a:3:2",
+      "Rashi on Pesachim 2a:3:1",
+      "Rashi on Pesachim 2a:3:2",
+      "Rashi on Pesachim 2a:3:3",
+      "Rashi on Pesachim 2a:3:4"
+    ],
+    "generatedAt": "2026-10-21T19:10:07.762Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Pesachim 2a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכדרב יהודה</strong> - לא קאי אמאי דמשני כדאמר צפרא נהר אלא מילתא באפי נפשה היא ומפרש מה השמיענו הפסוק לכ\"ע:"
+  },
+  "Tosafot on Pesachim 2a:3:2": {
+    "dependsOn": [
+      "Translation on Tosafot on Pesachim 2a:3:2"
+    ],
+    "generatedAt": "2026-10-21T19:12:36.486Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Pesachim 2a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יכנס בכי טוב</strong> - אור\"י דבפרק הכונס <span class=\"parenthesized\">(בבא קמא דף ס ושם:)</span> משמע דטעם הוי משום מזיקין דמפיק ליה התם מלא תצאו איש מפתח ביתו וקרא משום מזיקין קא מזהיר דמפקינן מיניה התם כיון שניתן רשות למשחית וכו' ולפי זה אפילו מעירו אדם צריך ליזהר שיצא בכי טוב והא דנקט כניסה תחלה היינו משום דאורחא דגמרא למינקט הכי כמו מטפס ועולה ומטפס ויורד בפרק עושין פסין <span class=\"parenthesized\">(עירובין דף כא.)</span> דנקט עליה תחלה ובפ' במה מדליקין <span class=\"parenthesized\">(שבת דף לד:)</span> בין השמשות כהרף עין זה נכנס וזה יוצא וקשה הא דריש רב יהודה הא דרשה גופה מקרא אחרינא דלא תצאו בפרק הכונס <span class=\"parenthesized\">(בבא קמא דף ס. ושם:)</span> ואומר רשב\"א דצריכי תרי קראי הבקר אור צריך לעיר אחרת ואפי' היכא דליכא למיחש למזיקין כגון אחי יוסף דהוו י\"א והטעם מפני הפחתים וקרא דלא תצאו איצטריך לעירו ומפני המזיקין:"
+  },
+  "Tosafot on Pesachim 2a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-21T19:20:59.782Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Pesachim 2a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכאור בקר בעולם הזה</strong> - פי' ר\"ת דהיינו עד חצי היום כדמוכח בפ' תמיד נשחט <span class=\"parenthesized\">(פסחים דף נח.)</span> דעד ו' שעות נקרא בקר כעין זה יהיה תחלת זריחת השמש דהיינו הנץ החמה לצדיקים לעתיד לבא:"
+  },
+  "Tosafot on Pesachim 2a:5:1": {
+    "dependsOn": [
+      "Shabbat 34b:6",
+      "Shabbat 34b:7",
+      "Shabbat 35a:1",
+      "Tosafot on Shabbat 35a:1:1",
+      "Rashi on Pesachim 2a:5:1",
+      "Rashi on Pesachim 2a:5:2",
+      "Rashi on Pesachim 2a:5:3",
+      "Chokhmat Shlomo on Pesachim 2a:3",
+      "Chidushei Halachot on Pesachim 2a:6",
+      "Chidushei Halachot on Pesachim 2a:7"
+    ],
+    "generatedAt": "2026-10-21T19:33:40.809Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Pesachim 2a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא קיימא לן עד צאת הכוכבים יממא הוא</strong> - אומר ר\"י דפשיטא ליה לגמרא דעד צאת הכוכבים יממא משום דמסקינן בספ\"ב דמגילה <span class=\"parenthesized\">(דף כ:)</span> דמעלות השחר יום הוא דכתיב ואנחנו עושים במלאכה מעלות השחר עד צאת הכוכבים ואומר והיה לנו הלילה משמר והיום מלאכה ומהתם נמי מוכח דעד צאת הכוכבים יום הוא ולא קשה מההוא קרא לתנאי דפרק במה מדליקין <span class=\"parenthesized\">(שבת דף לד: ולה.)</span> דקאמר ר' יהודה משתשקע החמה כל זמן שפני מזרח מאדימין ואיכא למאן דאמר התם שני חלקי מיל שהוא לפי הנראה שעה גדולה לפני צאת הכוכבים דאין אנו בקיאין בצאת הכוכבים כדאמר התם לא כוכבים גדולים הנראין ביום ולא כוכבים קטנים הנראין בלילה אלא בינונים:"
+  },
+  "Tosafot on Pesachim 2a:8:1": {
+    "dependsOn": [
+      "Arakhin 19b:1-19b:5",
+      "Arakhin 19b:6-19b:10",
+      "Tosafot on Pesachim 2a:1:1",
+      "Tosafot on Pesachim 2a:2:1"
+    ],
+    "generatedAt": "2026-10-21T19:43:43.833Z",
+    "model": "gemini-3.8-flash-high",
+    "promptVersion": "v2",
+    "sourceRefs": [
+      "Tosafot on Pesachim 2a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\"><span class=\"parenthesized\">(כדתנן)</span> הנודר מן האור</strong> - מיהו היכא דלשון בני אדם אינו כלשון המקרא אזלינן אחר לשון בני אדם כדאמרינן בערכין <span class=\"parenthesized\">(ד' יט:)</span> גבי האומר משקל ידי עלי מדאורייתא קיבורת כולה בנדרים הלך אחר לשון בני אדם דהיינו עד האציל:"
+  }
+}
