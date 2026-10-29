@@ -1,0 +1,40 @@
+{
+  "Rashi on Beitzah 2a:1:1": {
+    "dependsOn": [
+      "Rashi on Beitzah 2a:1:1",
+      "Rashi on Beitzah 2a:1:2",
+      "Rashi on Beitzah 2a:1:3"
+    ],
+    "generatedAt": "2026-10-29T12:49:56.741Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ביצה לא תאכל</strong> - בו ביום בגמרא מפרש טעמא:"
+  },
+  "Rashi on Beitzah 2a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T12:51:14.485Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאור בכזית</strong> - משום דהני תלת מילי הוו מקולי בית שמאי ומחומרי בית הלל גבי יו\"ט תנא להו גבי הדדי ובגמרא מפרש טעמייהו:"
+  },
+  "Rashi on Beitzah 2a:1:3": {
+    "dependsOn": [
+      "Rashi on Beitzah 2a:1:1",
+      "Rashi on Beitzah 2a:1:2",
+      "Steinsaltz on Beitzah 2a:1"
+    ],
+    "generatedAt": "2026-10-29T12:53:07.059Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בככותבת</strong> - תמרה:"
+  }
+}
