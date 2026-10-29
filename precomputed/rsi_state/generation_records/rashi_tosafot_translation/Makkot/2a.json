@@ -1,0 +1,73 @@
+{
+  "Rashi on Makkot 2a:1:1": {
+    "dependsOn": [
+      "Rashi on Makkot 2a:1:1",
+      "Makkot 2a:2",
+      "Makkot 2a:7",
+      "Makkot 2b:1",
+      "Makkot 2a:6",
+      "Rashi on Makkot 2a:1:4",
+      "Rashi on Makkot 2a:4:2"
+    ],
+    "generatedAt": "2026-10-29T04:29:52.712Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Makkot 2a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיצד העדים נעשין זוממין כו'</strong> - בגמרא מפרש מאי קאמר:"
+  },
+  "Rashi on Makkot 2a:1:2": {
+    "dependsOn": [
+      "Rashi on Makkot 2a:1:2",
+      "Translation on Rashi on Makkot 2a:1:2",
+      "Rashi on Makkot 2a:1:1",
+      "Rashi on Makkot 2a:1:3",
+      "Rashi on Makkot 2a:1:4",
+      "Rashi on Makkot 2a:6:1",
+      "Rashi on Makkot 2a:7:1"
+    ],
+    "generatedAt": "2026-10-29T04:32:49.294Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Makkot 2a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">את איש פלוני</strong> - כהן:"
+  },
+  "Rashi on Makkot 2a:1:3": {
+    "dependsOn": [
+      "Rashi on Makkot 2a:1:3",
+      "Translation on Rashi on Makkot 2a:1:3",
+      "Rashi on Makkot 2a:1:1",
+      "Rashi on Makkot 2a:1:2",
+      "Rashi on Makkot 2a:1:4"
+    ],
+    "generatedAt": "2026-10-29T04:35:35.005Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Makkot 2a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהוא בן גרושה</strong> - בפנינו נתגרשה אמו קודם שנולד והרי הוא חלל ופסול <span class=\"parenthesized\">(יבמות יב)</span>:"
+  },
+  "Rashi on Makkot 2a:1:4": {
+    "dependsOn": [
+      "Rashi on Makkot 2a:1:4",
+      "Rashi on Makkot 2a:1:1",
+      "Rashi on Makkot 2a:1:2",
+      "Rashi on Makkot 2a:1:3",
+      "Rashi on Makkot 2a:4:1",
+      "Rashi on Makkot 2a:4:2",
+      "Rashi on Makkot 2a:6:1",
+      "Rashi on Makkot 2a:6:2"
+    ],
+    "generatedAt": "2026-10-29T04:36:58.217Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Makkot 2a:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין אומרים</strong> - אם הוזמו והן כהנים יעשה זה בן גרשה וחלוצה לקיים בו כאשר זמם אלא סופג את הארבעים ובגמרא מפרש טעמא:"
+  }
+}
