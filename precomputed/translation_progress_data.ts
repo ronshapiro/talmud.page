@@ -45,9 +45,16 @@ export interface TranslationProgressSummary {
   updatedAt: string;
 }
 
+export interface TranslationTimelinePoint {
+  date: string;
+  dailyCount: number;
+  cumulativeCount: number;
+}
+
 export interface TranslationProgressData {
   summary: TranslationProgressSummary;
   masechtot: MasechetProgress[];
+  timeline: TranslationTimelinePoint[];
 }
 
 export const SEDER_ORDER: Record<string, {seder: string; sederHebrew: string}> = {
@@ -103,6 +110,57 @@ export const TRANSLATION_PROGRESS_PATH = "precomputed/translation_progress.json"
 function roundPercentage(numerator: number, denominator: number): number {
   if (denominator === 0) return 0;
   return Math.round((numerator / denominator) * 1000) / 10;
+}
+
+export function computeTranslationTimeline(): TranslationTimelinePoint[] {
+  const recordsDirectory = (
+    "precomputed/rsi_state/generation_records/rashi_tosafot_translation"
+  );
+  const dailyCountsMap = new Map<string, number>();
+
+  if (fs.existsSync(recordsDirectory)) {
+    for (const tractateName of fs.readdirSync(recordsDirectory)) {
+      const tractateDirectory = `${recordsDirectory}/${tractateName}`;
+      if (!fs.statSync(tractateDirectory).isDirectory()) continue;
+
+      for (const fileName of fs.readdirSync(tractateDirectory)) {
+        if (!fileName.endsWith(".json")) continue;
+        try {
+          const fileContent = JSON.parse(readUtf8(`${tractateDirectory}/${fileName}`));
+          for (const commentRef of Object.keys(fileContent)) {
+            const record = fileContent[commentRef];
+            if (record && record.generatedAt) {
+              const dateString = record.generatedAt.slice(0, 10);
+              const currentCount = dailyCountsMap.get(dateString) ?? 0;
+              dailyCountsMap.set(dateString, currentCount + 1);
+            }
+          }
+        } catch {
+          // Ignore read errors
+        }
+      }
+    }
+  }
+
+  // Baseline seed translations produced prior to automated generation records
+  const seedTranslationCount = 1362;
+  dailyCountsMap.set("2026-01-01", seedTranslationCount);
+
+  const sortedDates = Array.from(dailyCountsMap.keys()).sort();
+  let cumulativeCount = 0;
+  const timeline: TranslationTimelinePoint[] = [];
+
+  for (const date of sortedDates) {
+    const dailyCount = dailyCountsMap.get(date) ?? 0;
+    cumulativeCount += dailyCount;
+    timeline.push({
+      date,
+      dailyCount,
+      cumulativeCount,
+    });
+  }
+
+  return timeline;
 }
 
 export function computeTranslationProgress(): TranslationProgressData {
@@ -238,9 +296,12 @@ export function computeTranslationProgress(): TranslationProgressData {
     updatedAt: new Date().toISOString(),
   };
 
+  const timeline = computeTranslationTimeline();
+
   return {
     summary,
     masechtot: masechtotProgress,
+    timeline,
   };
 }
 

@@ -9,6 +9,7 @@ import {
   PageProgress,
   TranslationProgressData,
   TranslationProgressSummary,
+  TranslationTimelinePoint,
 } from "../precomputed/translation_progress_data";
 
 new FontCache().loadAll();
@@ -20,6 +21,8 @@ type SortOption =
   | "complete_pages_descending"
   | "total_pages_descending"
   | "alphabetical";
+
+type TimelineDisplayMode = "cumulative" | "daily";
 
 function BackButton({onClick}: {onClick: () => void}): React.ReactElement {
   const useHebrew = isSiteLanguageHebrew();
@@ -73,7 +76,7 @@ function SummaryCards({
           {summary.completePages.toLocaleString()}
         </span>
         <span className="metric-subtext">
-          {completePercentage}% {isHebrew ? "מכלל הדפים" : "of all pages"}
+          {completePercentage}% {isHebrew ? "מכלל הדפים בש״ס" : "of all Talmud pages"}
         </span>
       </div>
 
@@ -134,7 +137,7 @@ function OverallProgressBar({
       <div className="overall-progress-title">
         <span>{isHebrew ? "התקדמות כוללת בש״ס" : "Overall Shas Progress"}</span>
         <span>
-          {summary.completePages} / {summary.totalPages} {isHebrew ? "דפים" : "pages"} ({summary.percentCompletePages}%)
+          {summary.completePages.toLocaleString()} / {summary.totalPages.toLocaleString()} {isHebrew ? "דפים" : "pages"} ({summary.percentCompletePages}%)
         </span>
       </div>
 
@@ -169,6 +172,258 @@ function OverallProgressBar({
           <span className="legend-swatch progress-segment-to-go" />
           <span>{isHebrew ? "טרם החל (0%)" : "Not Started (0%)"}</span>
         </div>
+      </div>
+    </div>
+  );
+}
+
+function formatDateLabel(dateString: string, isHebrew: boolean): string {
+  const [year, month, day] = dateString.split("-");
+  const monthNamesEnglish = [
+    "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
+  ];
+  const monthNamesHebrew = [
+    "ינואר", "פברואר", "מרץ", "אפריל", "מאי", "יוני",
+    "יולי", "אוגוסט", "ספטמבר", "אוקטובר", "נובמבר", "דצמבר",
+  ];
+  const monthIndex = parseInt(month, 10) - 1;
+  const monthName = isHebrew ? monthNamesHebrew[monthIndex] : monthNamesEnglish[monthIndex];
+  if (day) {
+    return `${monthName} ${parseInt(day, 10)}, ${year}`;
+  }
+  return `${monthName} ${year}`;
+}
+
+function TranslationTimelineChart({
+  timeline,
+  isHebrew,
+}: {
+  timeline: TranslationTimelinePoint[];
+  isHebrew: boolean;
+}): React.ReactElement {
+  const [displayMode, setDisplayMode] = React.useState<TimelineDisplayMode>("cumulative");
+  const [hoveredIndex, setHoveredIndex] = React.useState<number | undefined>(undefined);
+
+  if (!timeline || timeline.length === 0) {
+    return <></>;
+  }
+
+  const chartViewBoxWidth = 840;
+  const chartViewBoxHeight = 280;
+  const paddingLeft = 65;
+  const paddingRight = 35;
+  const paddingTop = 25;
+  const paddingBottom = 45;
+
+  const plotWidth = chartViewBoxWidth - paddingLeft - paddingRight;
+  const plotHeight = chartViewBoxHeight - paddingTop - paddingBottom;
+
+  const values = timeline.map(point => (
+    displayMode === "cumulative" ? point.cumulativeCount : point.dailyCount
+  ));
+
+  const maxDataValue = Math.max(...values, 100);
+  // Round up to nice number for Y axis
+  const niceMultiplier = 10 ** Math.floor(Math.log10(maxDataValue));
+  const yAxisMaximum = Math.ceil(maxDataValue / niceMultiplier) * niceMultiplier;
+
+  const pointsCount = timeline.length;
+  const coordinates = timeline.map((point, index) => {
+    const value = displayMode === "cumulative" ? point.cumulativeCount : point.dailyCount;
+    const x = paddingLeft + (index / Math.max(pointsCount - 1, 1)) * plotWidth;
+    const y = paddingTop + plotHeight - (value / yAxisMaximum) * plotHeight;
+    return {x, y, value, point};
+  });
+
+  const pathCommands = coordinates.map((coord, index) => (
+    `${index === 0 ? "M" : "L"} ${coord.x.toFixed(1)} ${coord.y.toFixed(1)}`
+  )).join(" ");
+
+  const areaCommands = (
+    `${pathCommands} `
+    + `L ${coordinates[coordinates.length - 1].x.toFixed(1)} ${(paddingTop + plotHeight).toFixed(1)} `
+    + `L ${coordinates[0].x.toFixed(1)} ${(paddingTop + plotHeight).toFixed(1)} Z`
+  );
+
+  const yGridSteps = 4;
+  const yGridLines = [];
+  for (let step = 0; step <= yGridSteps; step++) {
+    const valueAtStep = Math.round((yAxisMaximum / yGridSteps) * step);
+    const yPosition = paddingTop + plotHeight - (step / yGridSteps) * plotHeight;
+    yGridLines.push({
+      value: valueAtStep,
+      y: yPosition,
+    });
+  }
+
+  // Pick up to 5 evenly spaced dates for X axis
+  const xGridLines = [];
+  const xLabelSteps = Math.min(5, pointsCount);
+  for (let step = 0; step < xLabelSteps; step++) {
+    const targetIndex = Math.min(
+      Math.round((step / (xLabelSteps - 1)) * (pointsCount - 1)),
+      pointsCount - 1,
+    );
+    const point = timeline[targetIndex];
+    const xPosition = paddingLeft + (targetIndex / Math.max(pointsCount - 1, 1)) * plotWidth;
+    xGridLines.push({
+      date: point.date,
+      x: xPosition,
+    });
+  }
+
+  const handleMouseMove = (event: React.MouseEvent<SVGSVGElement>) => {
+    const svgRect = event.currentTarget.getBoundingClientRect();
+    const mouseXRelative = (event.clientX - svgRect.left) / svgRect.width;
+    const mouseXInViewBox = mouseXRelative * chartViewBoxWidth;
+
+    if (mouseXInViewBox >= paddingLeft && mouseXInViewBox <= paddingLeft + plotWidth) {
+      const normalizedRatio = (mouseXInViewBox - paddingLeft) / plotWidth;
+      const closestIndex = Math.round(normalizedRatio * (pointsCount - 1));
+      setHoveredIndex(Math.max(0, Math.min(closestIndex, pointsCount - 1)));
+    }
+  };
+
+  const activeCoordinate = (
+    hoveredIndex !== undefined && hoveredIndex < coordinates.length
+      ? coordinates[hoveredIndex]
+      : coordinates[coordinates.length - 1]
+  );
+
+  return (
+    <div className="timeline-card">
+      <div className="timeline-header-row">
+        <div className="timeline-title-group">
+          <h2>
+            {isHebrew ? "התקדמות התרגום לאורך זמן" : "Translation Progress Over Time"}
+          </h2>
+          <p className="timeline-subtitle">
+            {isHebrew
+              ? "מעקב אחר קצב התרגום המצטבר והיומי מאז תחילת הפרויקט"
+              : "Tracking cumulative and daily translation velocity across Talmud Bavli"}
+          </p>
+        </div>
+
+        <div className="timeline-toggle-group">
+          <button
+            type="button"
+            className={`timeline-toggle-button ${displayMode === "cumulative" ? "active" : ""}`}
+            onClick={() => setDisplayMode("cumulative")}>
+            {isHebrew ? "סך הכל מצטבר" : "Cumulative Total"}
+          </button>
+          <button
+            type="button"
+            className={`timeline-toggle-button ${displayMode === "daily" ? "active" : ""}`}
+            onClick={() => setDisplayMode("daily")}>
+            {isHebrew ? "תוספת יומית" : "Daily Volume"}
+          </button>
+        </div>
+      </div>
+
+      <div className="timeline-svg-container">
+        {activeCoordinate && (
+          <div className="chart-tooltip-panel">
+            <div className="chart-tooltip-date">
+              {formatDateLabel(activeCoordinate.point.date, isHebrew)}
+            </div>
+            <div className="chart-tooltip-metric">
+              {displayMode === "cumulative"
+                ? `${activeCoordinate.point.cumulativeCount.toLocaleString()} ${isHebrew ? "פירושים סה״כ" : "comments translated"}`
+                : `+${activeCoordinate.point.dailyCount.toLocaleString()} ${isHebrew ? "פירושים באותו יום" : "comments translated"}`}
+            </div>
+          </div>
+        )}
+
+        <svg
+          viewBox={`0 0 ${chartViewBoxWidth} ${chartViewBoxHeight}`}
+          className="timeline-svg"
+          onMouseMove={handleMouseMove}
+          onMouseLeave={() => setHoveredIndex(undefined)}>
+          <defs>
+            <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="var(--dashboard-chart-line)" stopOpacity="0.35" />
+              <stop offset="100%" stopColor="var(--dashboard-chart-line)" stopOpacity="0.0" />
+            </linearGradient>
+          </defs>
+
+          {/* Horizontal Grid lines and Y labels */}
+          {yGridLines.map(gridLine => (
+            <g key={gridLine.value}>
+              <line
+                x1={paddingLeft}
+                y1={gridLine.y}
+                x2={paddingLeft + plotWidth}
+                y2={gridLine.y}
+                className="chart-grid-line"
+              />
+              <text
+                x={paddingLeft - 10}
+                y={gridLine.y + 4}
+                textAnchor="end"
+                className="chart-axis-text">
+                {gridLine.value >= 1000
+                  ? `${Math.round(gridLine.value / 1000)}k`
+                  : gridLine.value.toLocaleString()}
+              </text>
+            </g>
+          ))}
+
+          {/* Area under curve */}
+          {displayMode === "cumulative" && (
+            <path d={areaCommands} fill="url(#chartGradient)" />
+          )}
+
+          {/* Main trend line */}
+          <path
+            d={pathCommands}
+            className={
+              displayMode === "cumulative" ? "chart-line-path" : "chart-line-path-daily"
+            }
+          />
+
+          {/* Vertical Crosshair and Active Point on hover */}
+          {activeCoordinate && (
+            <g>
+              <line
+                x1={activeCoordinate.x}
+                y1={paddingTop}
+                x2={activeCoordinate.x}
+                y2={paddingTop + plotHeight}
+                className="chart-crosshair-line"
+              />
+              <circle
+                cx={activeCoordinate.x}
+                cy={activeCoordinate.y}
+                r="6"
+                fill="var(--dashboard-chart-line)"
+                stroke="var(--dashboard-card-background)"
+                strokeWidth="2.5"
+              />
+            </g>
+          )}
+
+          {/* X axis baseline and date labels */}
+          <line
+            x1={paddingLeft}
+            y1={paddingTop + plotHeight}
+            x2={paddingLeft + plotWidth}
+            y2={paddingTop + plotHeight}
+            stroke="var(--dashboard-chart-axis)"
+            strokeWidth="1.5"
+          />
+
+          {xGridLines.map(gridLine => (
+            <text
+              key={gridLine.date}
+              x={gridLine.x}
+              y={paddingTop + plotHeight + 24}
+              textAnchor="middle"
+              className="chart-axis-text">
+              {formatDateLabel(gridLine.date, isHebrew)}
+            </text>
+          ))}
+        </svg>
       </div>
     </div>
   );
@@ -345,6 +600,8 @@ function TranslationProgressDashboard({
   const isHebrew = isSiteLanguageHebrew();
   const rerender = useIncrementer()[1];
 
+  const isDarkMode = localStorage.darkMode === "true";
+
   const [progressData, setProgressData] = React.useState<TranslationProgressData | undefined>(
     initialData,
   );
@@ -427,13 +684,15 @@ function TranslationProgressDashboard({
     window.location.assign("/");
   };
 
+  const containerThemeClass = isDarkMode ? "theme-dark" : "theme-light";
+
   return (
     <>
       <BackButton onClick={handleBack} />
       <LanguageChooser rerender={rerender} padding="32px"><></></LanguageChooser>
       <Preferences rerender={rerender} />
 
-      <div className="translation-dashboard-container" dir={isHebrew ? "rtl" : "ltr"}>
+      <div className={`translation-dashboard-container ${containerThemeClass}`} dir={isHebrew ? "rtl" : "ltr"}>
         <div className="translation-dashboard-header">
           <h1 className="translation-dashboard-title">
             {isHebrew ? "התקדמות תרגום רש״י ותוספות" : "Rashi & Tosafot Translation Progress"}
@@ -448,6 +707,10 @@ function TranslationProgressDashboard({
         <SummaryCards summary={progressData.summary} isHebrew={isHebrew} />
 
         <OverallProgressBar summary={progressData.summary} isHebrew={isHebrew} />
+
+        {progressData.timeline && progressData.timeline.length > 0 && (
+          <TranslationTimelineChart timeline={progressData.timeline} isHebrew={isHebrew} />
+        )}
 
         <div className="controls-bar">
           <div className="seder-filter-tabs">

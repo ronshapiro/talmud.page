@@ -76,4 +76,24 @@ describe("translation_progress", () => {
     expect(berakhot!.partialPages).toBe(18);
     expect(berakhot!.notStartedPages).toBe(26);
   });
+
+  test("contains translation timeline over time", () => {
+    expect(progressData.timeline).toBeDefined();
+    expect(progressData.timeline.length).toBeGreaterThan(0);
+
+    const firstPoint = progressData.timeline[0];
+    const lastPoint = progressData.timeline[progressData.timeline.length - 1];
+
+    expect(firstPoint.date).toBeDefined();
+    expect(firstPoint.cumulativeCount).toBeGreaterThan(0);
+    expect(lastPoint.cumulativeCount).toBeGreaterThan(firstPoint.cumulativeCount);
+
+    // Verify chronological order
+    for (let i = 1; i < progressData.timeline.length; i++) {
+      expect(progressData.timeline[i].date >= progressData.timeline[i - 1].date).toBe(true);
+      expect(
+        progressData.timeline[i].cumulativeCount >= progressData.timeline[i - 1].cumulativeCount,
+      ).toBe(true);
+    }
+  });
 });

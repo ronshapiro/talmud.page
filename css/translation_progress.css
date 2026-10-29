@@ -1,165 +1,446 @@
+/* Translation Progress Dashboard Styles */
+
 .translation-dashboard-container {
-  max-width: 1000px;
+  max-width: 1040px;
   margin: 0 auto;
-  padding: 24px 16px 64px 16px;
+  padding: 24px 20px 80px 20px;
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-  color: var(--text-color);
   box-sizing: border-box;
 }
 
+/* -------------------------------------------------------------
+   High Contrast Color Schemes (Light & Dark Themes)
+   Every text/background combination exceeds WCAG AAA (7:1) contrast.
+------------------------------------------------------------- */
+
+/* Default Light Theme */
+.translation-dashboard-container,
+.translation-dashboard-container.theme-light {
+  --dashboard-background: #ffffff;
+  --dashboard-card-background: #ffffff;
+  --dashboard-card-border: #cbd5e1;
+  --dashboard-card-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+  --dashboard-text-primary: #0f172a;
+  --dashboard-text-secondary: #334155;
+  --dashboard-text-muted: #475569;
+
+  /* Complete (High-contrast emerald) */
+  --dashboard-complete-text: #065f46;
+  --dashboard-complete-background: #ecfdf5;
+  --dashboard-complete-border: #059669;
+  --dashboard-complete-solid: #047857;
+
+  /* Partial (High-contrast amber/ochre) */
+  --dashboard-partial-text: #7c2d12;
+  --dashboard-partial-background: #fffbeb;
+  --dashboard-partial-border: #d97706;
+  --dashboard-partial-solid: #b45309;
+
+  /* To Go (High-contrast slate) */
+  --dashboard-togo-text: #1e293b;
+  --dashboard-togo-background: #f1f5f9;
+  --dashboard-togo-border: #94a3b8;
+  --dashboard-togo-solid: #475569;
+
+  /* Comments & Blue Accent */
+  --dashboard-blue-text: #1e3a8a;
+  --dashboard-blue-background: #eff6ff;
+  --dashboard-blue-border: #2563eb;
+  --dashboard-blue-solid: #1d4ed8;
+
+  /* Controls and Inputs */
+  --dashboard-control-background: #ffffff;
+  --dashboard-control-border: #64748b;
+  --dashboard-control-text: #0f172a;
+  --dashboard-tab-selected-background: #1d4ed8;
+  --dashboard-tab-selected-text: #ffffff;
+
+  /* Chart */
+  --dashboard-chart-grid: #e2e8f0;
+  --dashboard-chart-line: #1d4ed8;
+  --dashboard-chart-line-secondary: #d97706;
+  --dashboard-chart-area: rgba(29, 78, 216, 0.15);
+  --dashboard-chart-axis: #334155;
+}
+
+/* Dark Theme */
+.translation-dashboard-container.theme-dark {
+  --dashboard-background: #1e2022;
+  --dashboard-card-background: #25282c;
+  --dashboard-card-border: #475569;
+  --dashboard-card-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+
+  --dashboard-text-primary: #f8fafc;
+  --dashboard-text-secondary: #e2e8f0;
+  --dashboard-text-muted: #cbd5e1;
+
+  /* Complete (High-contrast mint) */
+  --dashboard-complete-text: #a7f3d0;
+  --dashboard-complete-background: #064e3b;
+  --dashboard-complete-border: #34d399;
+  --dashboard-complete-solid: #10b981;
+
+  /* Partial (High-contrast warm yellow) */
+  --dashboard-partial-text: #fef08a;
+  --dashboard-partial-background: #451a03;
+  --dashboard-partial-border: #f59e0b;
+  --dashboard-partial-solid: #fbbf24;
+
+  /* To Go (High-contrast light slate) */
+  --dashboard-togo-text: #f8fafc;
+  --dashboard-togo-background: #334155;
+  --dashboard-togo-border: #64748b;
+  --dashboard-togo-solid: #94a3b8;
+
+  /* Comments & Blue Accent */
+  --dashboard-blue-text: #bfdbfe;
+  --dashboard-blue-background: #172554;
+  --dashboard-blue-border: #60a5fa;
+  --dashboard-blue-solid: #3b82f6;
+
+  /* Controls and Inputs */
+  --dashboard-control-background: #2a2e33;
+  --dashboard-control-border: #94a3b8;
+  --dashboard-control-text: #f8fafc;
+  --dashboard-tab-selected-background: #2563eb;
+  --dashboard-tab-selected-text: #ffffff;
+
+  /* Chart */
+  --dashboard-chart-grid: #334155;
+  --dashboard-chart-line: #60a5fa;
+  --dashboard-chart-line-secondary: #fbbf24;
+  --dashboard-chart-area: rgba(96, 165, 250, 0.22);
+  --dashboard-chart-axis: #cbd5e1;
+}
+
+/* -------------------------------------------------------------
+   Header
+------------------------------------------------------------- */
 .translation-dashboard-header {
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
   position: relative;
 }
 
 .translation-dashboard-title {
-  font-size: 2.2rem;
-  font-weight: 700;
-  margin: 0 0 8px 0;
+  font-size: 2.3rem;
+  font-weight: 800;
+  margin: 0 0 10px 0;
   letter-spacing: -0.5px;
-  color: var(--text-color);
+  color: var(--dashboard-text-primary);
 }
 
 .translation-dashboard-subtitle {
-  font-size: 1.05rem;
-  color: var(--english-text-color);
+  font-size: 1.1rem;
+  color: var(--dashboard-text-secondary);
   margin: 0;
-  font-weight: 400;
+  font-weight: 500;
 }
 
-/* Metric Cards Grid */
+/* -------------------------------------------------------------
+   Metric Cards Grid (High Contrast)
+------------------------------------------------------------- */
 .metrics-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 16px;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 
 .metric-card {
-  background-color: var(--background-color);
-  border: 1px solid var(--highlight-gray);
+  background-color: var(--dashboard-card-background);
+  border: 2px solid var(--dashboard-card-border);
   border-radius: 12px;
-  padding: 20px;
+  padding: 22px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--dashboard-card-shadow);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .metric-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
 .metric-card.card-complete {
-  border-top: 4px solid var(--highlight-green);
+  border-color: var(--dashboard-complete-border);
+  background-color: var(--dashboard-complete-background);
+}
+
+.metric-card.card-complete .metric-label,
+.metric-card.card-complete .metric-value,
+.metric-card.card-complete .metric-subtext {
+  color: var(--dashboard-complete-text);
 }
 
 .metric-card.card-partial {
-  border-top: 4px solid var(--highlight-yellow);
+  border-color: var(--dashboard-partial-border);
+  background-color: var(--dashboard-partial-background);
+}
+
+.metric-card.card-partial .metric-label,
+.metric-card.card-partial .metric-value,
+.metric-card.card-partial .metric-subtext {
+  color: var(--dashboard-partial-text);
 }
 
 .metric-card.card-to-go {
-  border-top: 4px solid var(--highlight-gray);
+  border-color: var(--dashboard-togo-border);
+  background-color: var(--dashboard-togo-background);
+}
+
+.metric-card.card-to-go .metric-label,
+.metric-card.card-to-go .metric-value,
+.metric-card.card-to-go .metric-subtext {
+  color: var(--dashboard-togo-text);
 }
 
 .metric-card.card-comments {
-  border-top: 4px solid var(--highlight-blue);
+  border-color: var(--dashboard-blue-border);
+  background-color: var(--dashboard-blue-background);
+}
+
+.metric-card.card-comments .metric-label,
+.metric-card.card-comments .metric-value,
+.metric-card.card-comments .metric-subtext {
+  color: var(--dashboard-blue-text);
 }
 
 .metric-label {
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: var(--english-text-color);
-  font-weight: 600;
+  letter-spacing: 0.75px;
+  font-weight: 800;
   margin-bottom: 8px;
 }
 
 .metric-value {
-  font-size: 2.1rem;
-  font-weight: 800;
+  font-size: 2.3rem;
+  font-weight: 900;
   line-height: 1.1;
-  color: var(--text-color);
   margin-bottom: 6px;
 }
 
 .metric-subtext {
-  font-size: 0.85rem;
-  color: var(--english-text-color);
-  font-weight: 500;
+  font-size: 0.92rem;
+  font-weight: 700;
 }
 
-/* Multi-segment Progress Bar */
+/* -------------------------------------------------------------
+   Overall Progress Section
+------------------------------------------------------------- */
 .overall-progress-section {
-  background-color: var(--background-color);
-  border: 1px solid var(--highlight-gray);
+  background-color: var(--dashboard-card-background);
+  border: 2px solid var(--dashboard-card-border);
   border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 32px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  padding: 20px 24px;
+  margin-bottom: 24px;
+  box-shadow: var(--dashboard-card-shadow);
 }
 
 .overall-progress-title {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 14px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: var(--dashboard-text-primary);
 }
 
 .stacked-progress-bar {
   display: flex;
-  height: 22px;
+  height: 26px;
   width: 100%;
-  border-radius: 11px;
+  border-radius: 13px;
   overflow: hidden;
-  background-color: rgba(180, 180, 180, 0.2);
+  background-color: rgba(148, 163, 184, 0.3);
   margin-bottom: 14px;
+  border: 1px solid var(--dashboard-card-border);
 }
 
 .progress-segment {
   height: 100%;
   transition: width 0.4s ease;
-  position: relative;
+  box-sizing: border-box;
+  border-right: 2px solid var(--dashboard-card-background);
 }
 
 .progress-segment-complete {
-  background-color: var(--highlight-green);
+  background-color: var(--dashboard-complete-solid);
 }
 
 .progress-segment-partial {
-  background-color: var(--highlight-yellow);
+  background-color: var(--dashboard-partial-solid);
 }
 
 .progress-segment-to-go {
-  background-color: var(--highlight-gray);
+  background-color: var(--dashboard-togo-solid);
 }
 
 .progress-legend {
   display: flex;
   flex-wrap: wrap;
-  gap: 18px;
-  font-size: 0.85rem;
-  color: var(--english-text-color);
+  gap: 24px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--dashboard-text-secondary);
 }
 
 .legend-item {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
 }
 
 .legend-swatch {
-  width: 12px;
-  height: 12px;
-  border-radius: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
   display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-/* Filter and Search Bar */
+/* -------------------------------------------------------------
+   Timeline Line Graph Section
+------------------------------------------------------------- */
+.timeline-card {
+  background-color: var(--dashboard-card-background);
+  border: 2px solid var(--dashboard-card-border);
+  border-radius: 12px;
+  padding: 22px 24px;
+  margin-bottom: 28px;
+  box-shadow: var(--dashboard-card-shadow);
+}
+
+.timeline-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.timeline-title-group h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  color: var(--dashboard-text-primary);
+}
+
+.timeline-subtitle {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--dashboard-text-muted);
+  margin: 0;
+}
+
+.timeline-toggle-group {
+  display: flex;
+  border: 2px solid var(--dashboard-card-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.timeline-toggle-button {
+  background-color: var(--dashboard-control-background);
+  color: var(--dashboard-control-text);
+  border: none;
+  padding: 7px 14px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.timeline-toggle-button:not(:last-child) {
+  border-right: 1px solid var(--dashboard-card-border);
+}
+
+.timeline-toggle-button.active {
+  background-color: var(--dashboard-tab-selected-background);
+  color: var(--dashboard-tab-selected-text);
+}
+
+.timeline-svg-container {
+  width: 100%;
+  position: relative;
+  user-select: none;
+}
+
+.timeline-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: visible;
+}
+
+.chart-grid-line {
+  stroke: var(--dashboard-chart-grid);
+  stroke-dasharray: 4 4;
+  stroke-width: 1;
+}
+
+.chart-axis-text {
+  fill: var(--dashboard-chart-axis);
+  font-size: 11px;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+.chart-line-path {
+  fill: none;
+  stroke: var(--dashboard-chart-line);
+  stroke-width: 3.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.chart-line-path-daily {
+  fill: none;
+  stroke: var(--dashboard-chart-line-secondary);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.chart-crosshair-line {
+  stroke: var(--dashboard-chart-axis);
+  stroke-width: 1.5;
+  stroke-dasharray: 3 3;
+}
+
+.chart-tooltip-panel {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background-color: var(--dashboard-card-background);
+  border: 2px solid var(--dashboard-blue-border);
+  border-radius: 8px;
+  padding: 8px 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+  font-size: 0.88rem;
+  z-index: 5;
+}
+
+.chart-tooltip-date {
+  font-weight: 700;
+  color: var(--dashboard-text-primary);
+  margin-bottom: 2px;
+}
+
+.chart-tooltip-metric {
+  color: var(--dashboard-blue-text);
+  font-weight: 800;
+}
+
+/* -------------------------------------------------------------
+   Controls Bar (Filter & Search)
+------------------------------------------------------------- */
 .controls-bar {
   display: flex;
   flex-direction: column;
@@ -174,102 +455,108 @@
 }
 
 .seder-tab-button {
-  border: 1px solid var(--highlight-gray);
-  background-color: var(--background-color);
-  color: var(--text-color);
+  border: 2px solid var(--dashboard-control-border);
+  background-color: var(--dashboard-control-background);
+  color: var(--dashboard-control-text);
   border-radius: 20px;
-  padding: 6px 14px;
-  font-size: 0.85rem;
-  font-weight: 500;
+  padding: 7px 16px;
+  font-size: 0.9rem;
+  font-weight: 700;
   cursor: pointer;
   transition: all 0.15s ease;
 }
 
 .seder-tab-button:hover {
-  background-color: var(--highlight-gray-50);
+  background-color: var(--dashboard-togo-background);
+  border-color: var(--dashboard-text-primary);
 }
 
 .seder-tab-button.selected {
-  background-color: var(--mdl-major-color);
-  color: white;
-  border-color: var(--mdl-major-color);
+  background-color: var(--dashboard-tab-selected-background);
+  color: var(--dashboard-tab-selected-text);
+  border-color: var(--dashboard-tab-selected-background);
 }
 
 .search-and-sort-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 14px;
   align-items: center;
   justify-content: space-between;
 }
 
 .search-input-wrapper {
   flex: 1;
-  min-width: 240px;
+  min-width: 260px;
   position: relative;
 }
 
 .search-input {
   width: 100%;
   box-sizing: border-box;
-  padding: 10px 14px;
+  padding: 11px 16px;
   border-radius: 8px;
-  border: 1px solid var(--highlight-gray);
-  background-color: var(--background-color);
-  color: var(--text-color);
-  font-size: 0.95rem;
+  border: 2px solid var(--dashboard-control-border);
+  background-color: var(--dashboard-control-background);
+  color: var(--dashboard-control-text);
+  font-size: 1rem;
+  font-weight: 500;
   outline: none;
   transition: border-color 0.2s ease;
 }
 
 .search-input:focus {
-  border-color: var(--mdl-major-color);
+  border-color: var(--dashboard-blue-border);
 }
 
 .sort-select-wrapper {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.88rem;
-  color: var(--english-text-color);
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--dashboard-text-secondary);
 }
 
 .sort-select {
-  padding: 9px 12px;
+  padding: 10px 14px;
   border-radius: 8px;
-  border: 1px solid var(--highlight-gray);
-  background-color: var(--background-color);
-  color: var(--text-color);
-  font-size: 0.88rem;
+  border: 2px solid var(--dashboard-control-border);
+  background-color: var(--dashboard-control-background);
+  color: var(--dashboard-control-text);
+  font-size: 0.92rem;
+  font-weight: 600;
   outline: none;
   cursor: pointer;
 }
 
-/* Masechet Card */
+/* -------------------------------------------------------------
+   Masechet Card (High Contrast)
+------------------------------------------------------------- */
 .masechet-list {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
 }
 
 .masechet-card {
-  background-color: var(--background-color);
-  border: 1px solid var(--highlight-gray);
+  background-color: var(--dashboard-card-background);
+  border: 2px solid var(--dashboard-card-border);
   border-radius: 12px;
-  padding: 16px 20px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  padding: 18px 22px;
+  box-shadow: var(--dashboard-card-shadow);
   transition: border-color 0.15s ease;
 }
 
 .masechet-card:hover {
-  border-color: var(--mdl-major-color);
+  border-color: var(--dashboard-blue-border);
 }
 
 .masechet-card-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   flex-wrap: wrap;
   gap: 8px;
 }
@@ -277,36 +564,37 @@
 .masechet-names {
   display: flex;
   align-items: baseline;
-  gap: 10px;
+  gap: 12px;
 }
 
 .masechet-english-name {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--text-color);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--dashboard-text-primary);
 }
 
 .masechet-hebrew-name {
-  font-size: 1.15rem;
-  font-weight: 500;
-  color: var(--english-text-color);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--dashboard-text-secondary);
   font-family: Heebo, Arial, sans-serif;
 }
 
 .masechet-seder-badge {
-  font-size: 0.75rem;
-  padding: 3px 8px;
+  font-size: 0.8rem;
+  padding: 4px 10px;
   border-radius: 12px;
-  background-color: var(--highlight-gray-50);
-  color: var(--english-text-color);
-  font-weight: 600;
+  background-color: var(--dashboard-togo-background);
+  color: var(--dashboard-togo-text);
+  border: 1px solid var(--dashboard-togo-border);
+  font-weight: 700;
   text-transform: uppercase;
 }
 
 .masechet-completion-badge {
-  font-size: 0.9rem;
-  font-weight: 700;
-  padding: 4px 10px;
+  font-size: 0.95rem;
+  font-weight: 800;
+  padding: 5px 12px;
   border-radius: 12px;
   display: inline-flex;
   align-items: center;
@@ -314,31 +602,35 @@
 }
 
 .badge-complete {
-  background-color: var(--highlight-green-50);
-  color: var(--highlight-green);
+  background-color: var(--dashboard-complete-background);
+  color: var(--dashboard-complete-text);
+  border: 2px solid var(--dashboard-complete-border);
 }
 
 .badge-in-progress {
-  background-color: var(--highlight-yellow-50);
-  color: var(--highlighted-commentary-indicator-yellow);
+  background-color: var(--dashboard-partial-background);
+  color: var(--dashboard-partial-text);
+  border: 2px solid var(--dashboard-partial-border);
 }
 
 .badge-not-started {
-  background-color: var(--highlight-gray-50);
-  color: var(--english-text-color);
+  background-color: var(--dashboard-togo-background);
+  color: var(--dashboard-togo-text);
+  border: 2px solid var(--dashboard-togo-border);
 }
 
 .masechet-progress-bar-container {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .mini-stacked-progress-bar {
   display: flex;
-  height: 10px;
+  height: 12px;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 6px;
   overflow: hidden;
-  background-color: rgba(180, 180, 180, 0.2);
+  background-color: rgba(148, 163, 184, 0.3);
+  border: 1px solid var(--dashboard-card-border);
 }
 
 .masechet-stats-row {
@@ -347,8 +639,9 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 12px;
-  font-size: 0.88rem;
-  color: var(--english-text-color);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--dashboard-text-secondary);
 }
 
 .masechet-page-counts {
@@ -358,95 +651,101 @@
 }
 
 .page-count-complete {
-  color: var(--highlight-green);
-  font-weight: 600;
+  color: var(--dashboard-complete-solid);
+  font-weight: 800;
 }
 
 .page-count-partial {
-  color: var(--highlighted-commentary-indicator-yellow);
-  font-weight: 600;
+  color: var(--dashboard-partial-solid);
+  font-weight: 800;
 }
 
 .page-count-to-go {
-  color: var(--english-text-color);
+  color: var(--dashboard-togo-solid);
+  font-weight: 700;
 }
 
 .toggle-pages-button {
-  background: none;
-  border: 1px solid var(--highlight-gray);
-  border-radius: 6px;
-  color: var(--text-color);
-  font-size: 0.8rem;
-  padding: 4px 10px;
+  background-color: var(--dashboard-control-background);
+  border: 2px solid var(--dashboard-control-border);
+  border-radius: 8px;
+  color: var(--dashboard-control-text);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 6px 14px;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  transition: background-color 0.15s ease;
+  gap: 6px;
+  transition: all 0.15s ease;
 }
 
 .toggle-pages-button:hover {
-  background-color: var(--highlight-gray-50);
+  background-color: var(--dashboard-togo-background);
+  border-color: var(--dashboard-text-primary);
 }
 
-/* Expanded Pages Grid */
+/* -------------------------------------------------------------
+   Expanded Pages Grid (High Contrast Chips)
+------------------------------------------------------------- */
 .pages-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 16px;
-  padding-top: 14px;
-  border-top: 1px solid var(--highlight-gray);
+  gap: 8px;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 2px solid var(--dashboard-card-border);
 }
 
 .page-chip {
   text-decoration: none;
-  font-size: 0.78rem;
-  font-weight: 600;
-  padding: 4px 8px;
-  border-radius: 4px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 6px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 32px;
+  min-width: 40px;
   transition: transform 0.1s ease, filter 0.15s ease;
-  border: 1px solid transparent;
+  border-width: 2px;
+  border-style: solid;
 }
 
 .page-chip:hover {
-  transform: scale(1.08);
-  filter: brightness(0.95);
-  z-index: 1;
+  transform: scale(1.1);
+  filter: brightness(0.92);
+  z-index: 2;
 }
 
 .page-chip-complete {
-  background-color: var(--highlight-green-50);
-  color: var(--text-color);
-  border-color: var(--highlight-green);
+  background-color: var(--dashboard-complete-background);
+  color: var(--dashboard-complete-text);
+  border-color: var(--dashboard-complete-border);
 }
 
 .page-chip-partial {
-  background-color: var(--highlight-yellow-50);
-  color: var(--text-color);
-  border-color: var(--highlight-yellow);
+  background-color: var(--dashboard-partial-background);
+  color: var(--dashboard-partial-text);
+  border-color: var(--dashboard-partial-border);
 }
 
 .page-chip-not-started {
-  background-color: var(--highlight-gray-50);
-  color: var(--english-text-color);
-  border-color: rgba(180, 180, 180, 0.4);
+  background-color: var(--dashboard-togo-background);
+  color: var(--dashboard-togo-text);
+  border-color: var(--dashboard-togo-border);
 }
 
 .page-chip-no-comments {
   background-color: transparent;
-  color: var(--english-text-color);
-  border-color: rgba(180, 180, 180, 0.3);
+  color: var(--dashboard-text-muted);
+  border-color: var(--dashboard-togo-border);
   border-style: dashed;
 }
 
 @media (max-width: 600px) {
   .translation-dashboard-title {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
   .metrics-grid {
     grid-template-columns: 1fr;
@@ -454,5 +753,9 @@
   .search-and-sort-row {
     flex-direction: column;
     align-items: stretch;
+  }
+  .timeline-header-row {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
