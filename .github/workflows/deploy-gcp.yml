@@ -148,13 +148,13 @@ jobs:
         PULL_REQUEST_NUMBER: ${{ needs.check_deployment.outputs.pull_request_number }}
         PREVIEW_URL: ${{ steps.deploy.outputs.version_url || format('https://{0}-dot-talmud.appspot.com', needs.check_deployment.outputs.version) }}
       run: |
-        COMMENT_BODY=$(printf '<!-- pr-preview-deployment -->\n🚀 Deployed preview to App Engine:\n%s\n' "$PREVIEW_URL")
-
         COMMENT_IDENTIFIER=$(gh api "repos/${{ github.repository }}/issues/${PULL_REQUEST_NUMBER}/comments" \
           --jq '.[] | select(.body | contains("<!-- pr-preview-deployment -->")) | .id' | head -n 1)
 
         if [ -n "$COMMENT_IDENTIFIER" ]; then
-          gh api -X PATCH "repos/${{ github.repository }}/issues/comments/${COMMENT_IDENTIFIER}" -f body="$COMMENT_BODY"
+          REDEPLOYMENT_COMMENT_BODY=$(printf '🚀 New deployment has completed:\n%s\n' "$PREVIEW_URL")
+          gh pr comment "$PULL_REQUEST_NUMBER" --body "$REDEPLOYMENT_COMMENT_BODY"
         else
-          gh pr comment "$PULL_REQUEST_NUMBER" --body "$COMMENT_BODY"
+          INITIAL_COMMENT_BODY=$(printf '<!-- pr-preview-deployment -->\n🚀 Deployed preview to App Engine:\n%s\n' "$PREVIEW_URL")
+          gh pr comment "$PULL_REQUEST_NUMBER" --body "$INITIAL_COMMENT_BODY"
         fi
