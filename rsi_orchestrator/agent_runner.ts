@@ -41,6 +41,8 @@ export interface AgentResult {
 
 export type AgentRunner = (prompt: string, options?: AgentOptions) => Promise<AgentResult>;
 
+export const DEFAULT_AGENT_TIMEOUT_MS = 10 * 60 * 1000;
+
 /**
  * Unified error thrown when an agent runner CLI fails.
  * `isRateLimited` flags whether the error is due to session limits, quotas, or 429 status.
@@ -119,14 +121,17 @@ export function clearActiveAgentRegistry(): void {
 export function isCancelledError(error: unknown): boolean {
   if (!error) return false;
   if (error instanceof AgentError && error.isCancelled) return true;
-  const err = error as {killed?: boolean; signal?: string; message?: string};
-  return Boolean(
-    err.killed
-    || err.signal === "SIGTERM"
-    || err.signal === "SIGKILL"
-    || err.signal === "SIGINT"
-    || (err.message && /cancelled|aborted|sigterm|sigkill|sigint/i.test(err.message)),
-  );
+  const err = error as {killed?: boolean; signal?: string; message?: string; code?: string};
+  if (err.code === "ETIMEDOUT" || (err.message && /etimedout|timed? ?out/i.test(err.message))) {
+    return false;
+  }
+  if (err.killed || err.signal === "SIGTERM" || err.signal === "SIGKILL" || err.signal === "SIGINT") {
+    return true;
+  }
+  if (err.message && /cancelled|aborted|sigterm|sigkill|sigint/i.test(err.message)) {
+    return true;
+  }
+  return false;
 }
 
 /* eslint-disable camelcase */
@@ -387,6 +392,7 @@ export interface ExecStreamingOptions {
   maxBuffer?: number;
   onStdoutLine?: (line: string) => void;
   onChild?: (child: ChildProcess) => void;
+  shouldTerminateOnStdoutLine?: (line: string) => boolean;
 }
 
 export function execFileWithStreaming(
@@ -395,51 +401,93 @@ export function execFileWithStreaming(
   options: ExecStreamingOptions,
 ): Promise<{stdout: string; stderr: string}> {
   return new Promise((resolve, reject) => {
-    let buffer = "";
+    let lineBuffer = "";
+    let accumulatedStdout = "";
+    let accumulatedStderr = "";
     let streamError: Error | undefined;
+    let terminatedDueToCompletion = false;
+    let forceKillTimer: NodeJS.Timeout | undefined;
+
     const child = execFile(file, args, {
       cwd: options.cwd,
       env: options.env,
       timeout: options.timeout,
       maxBuffer: options.maxBuffer,
     }, (error, stdout, stderr) => {
-      if (options.onStdoutLine && buffer.trim() && !streamError) {
-        try {
-          options.onStdoutLine(buffer);
-        } catch (e) {
-          streamError = e as Error;
-        }
-        buffer = "";
+      if (forceKillTimer) {
+        clearTimeout(forceKillTimer);
+        forceKillTimer = undefined;
       }
+      if (options.onStdoutLine && lineBuffer.trim() && !streamError) {
+        try {
+          options.onStdoutLine(lineBuffer);
+        } catch (lineError) {
+          streamError = lineError as Error;
+        }
+        lineBuffer = "";
+      }
+      const finalStdout = stdout || accumulatedStdout;
+      const finalStderr = stderr || accumulatedStderr;
+
       if (streamError) {
         reject(streamError);
+      } else if (terminatedDueToCompletion) {
+        resolve({stdout: finalStdout, stderr: finalStderr});
       } else if (error) {
-        const err = error as Error & {stdout?: string; stderr?: string};
-        err.stdout = stdout;
-        err.stderr = stderr;
-        reject(err);
+        const executionError = error as Error & {stdout?: string; stderr?: string};
+        executionError.stdout = finalStdout;
+        executionError.stderr = finalStderr;
+        reject(executionError);
       } else {
-        resolve({stdout, stderr});
+        resolve({stdout: finalStdout, stderr: finalStderr});
       }
     });
 
     options.onChild?.(child);
 
-    child.stdout?.on("data", (chunk: Buffer | string) => {
-      if (!options.onStdoutLine || streamError) return;
-      buffer += chunk.toString();
-      const lines = buffer.split("\n");
-      buffer = lines.pop() ?? "";
-      for (const line of lines) {
-        if (line.trim()) {
+    const handleStdoutLine = (line: string) => {
+      if (!line.trim()) return;
+      try {
+        options.onStdoutLine?.(line);
+      } catch (lineError) {
+        streamError = lineError as Error;
+        return;
+      }
+      if (options.shouldTerminateOnStdoutLine?.(line) && !terminatedDueToCompletion) {
+        terminatedDueToCompletion = true;
+        try {
+          child.kill("SIGTERM");
+        } catch {
+          // Process already ended
+        }
+        forceKillTimer = setTimeout(() => {
           try {
-            options.onStdoutLine(line);
-          } catch (e) {
-            streamError = e as Error;
-            break;
+            child.kill("SIGKILL");
+          } catch {
+            // Process already ended
           }
+        }, 1500);
+        if (typeof forceKillTimer?.unref === "function") {
+          forceKillTimer.unref();
         }
       }
+    };
+
+    child.stdout?.on("data", (chunk: Buffer | string) => {
+      const text = chunk.toString();
+      accumulatedStdout += text;
+      if (streamError) return;
+      lineBuffer += text;
+      const lines = lineBuffer.split("\n");
+      lineBuffer = lines.pop() ?? "";
+      for (const line of lines) {
+        handleStdoutLine(line);
+        if (streamError) break;
+      }
+    });
+
+    child.stderr?.on("data", (chunk: Buffer | string) => {
+      accumulatedStderr += chunk.toString();
     });
   });
 }
@@ -556,8 +604,9 @@ export function buildAgyArgs(prompt: string, options: AgentOptions = {}): string
       : options.model;
     args.push("--model", model);
   }
-  if (options.timeoutMs) {
-    args.push("--print-timeout", `${Math.ceil(options.timeoutMs / 1000)}s`);
+  const timeoutMilliseconds = options.timeoutMs ?? DEFAULT_AGENT_TIMEOUT_MS;
+  if (timeoutMilliseconds > 0) {
+    args.push("--print-timeout", `${Math.ceil(timeoutMilliseconds / 1000)}s`);
   }
   return args;
 }
@@ -572,6 +621,7 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
 
   const {effectivePrompt} = preparePromptWithImages(prompt, options.images);
   const args = buildAgyArgs(effectivePrompt, options);
+  const effectiveTimeoutMilliseconds = options.timeoutMs ?? DEFAULT_AGENT_TIMEOUT_MS;
 
   let shims: ToolFilterShims | undefined;
   if (options.allowedTools && options.allowedTools.length > 0) {
@@ -601,8 +651,16 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
     ({stdout} = await execFileWithStreaming("agy", args, {
       cwd: options.cwd,
       env: executionEnvironment,
-      timeout: options.timeoutMs,
+      timeout: effectiveTimeoutMilliseconds,
       maxBuffer: 1024 * 1024 * 32,
+      shouldTerminateOnStdoutLine: (line) => {
+        try {
+          const parsed = JSON.parse(line) as AgyStreamLine;
+          return parsed.event === "result" && parsed.result !== undefined;
+        } catch {
+          return false;
+        }
+      },
       onChild: (child) => {
         childProcess = child;
         unregisterChild = registerActiveChildProcess(child);
@@ -652,11 +710,22 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
         }
       },
     }));
-  } catch (e) {
-    if (isCancelledError(e) || options.signal?.aborted) {
+  } catch (error) {
+    if (options.signal?.aborted) {
       throw new AgentError("Agent execution was cancelled", undefined, "agy", true);
     }
-    throw asAgyCliError(e) ?? e;
+    const executionError = error as {code?: string; message?: string} | undefined;
+    if (executionError?.code === "ETIMEDOUT" || (executionError?.message && /timed? ?out/i.test(executionError.message))) {
+      throw new AgentError(
+        `Agent execution timed out after ${effectiveTimeoutMilliseconds / 1000}s`,
+        undefined,
+        "agy",
+      );
+    }
+    if (isCancelledError(error)) {
+      throw new AgentError("Agent execution was cancelled", undefined, "agy", true);
+    }
+    throw asAgyCliError(error) ?? error;
   } finally {
     if (options.signal) {
       options.signal.removeEventListener("abort", abortListener);
@@ -806,6 +875,7 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
 
   const {effectivePrompt, imageDirectories} = preparePromptWithImages(prompt, options.images);
   const claudeArgs = buildClaudeArgs(effectivePrompt, options, imageDirectories);
+  const effectiveTimeoutMilliseconds = options.timeoutMs ?? DEFAULT_AGENT_TIMEOUT_MS;
 
   let shims: ToolFilterShims | undefined;
   if (options.allowedTools && options.allowedTools.length > 0) {
@@ -835,7 +905,7 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
       {
         cwd: options.cwd,
         env: executionEnvironment,
-        timeout: options.timeoutMs,
+        timeout: effectiveTimeoutMilliseconds,
         maxBuffer: 1024 * 1024 * 32,
         onChild: (child) => {
           childProcess = child;
@@ -877,11 +947,22 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
         },
       },
     ));
-  } catch (e) {
-    if (isCancelledError(e) || options.signal?.aborted) {
+  } catch (error) {
+    if (options.signal?.aborted) {
       throw new AgentError("Agent execution was cancelled", undefined, "claude", true);
     }
-    throw asClaudeCliError(e) ?? e;
+    const executionError = error as {code?: string; message?: string} | undefined;
+    if (executionError?.code === "ETIMEDOUT" || (executionError?.message && /timed? ?out/i.test(executionError.message))) {
+      throw new AgentError(
+        `Agent execution timed out after ${effectiveTimeoutMilliseconds / 1000}s`,
+        undefined,
+        "claude",
+      );
+    }
+    if (isCancelledError(error)) {
+      throw new AgentError("Agent execution was cancelled", undefined, "claude", true);
+    }
+    throw asClaudeCliError(error) ?? error;
   } finally {
     if (options.signal) {
       options.signal.removeEventListener("abort", abortListener);

@@ -10,6 +10,7 @@ import {
   cleanupIsolatedAgyHomeDirectory,
   clearActiveAgentRegistry,
   createAgyToolFilterShims,
+  DEFAULT_AGENT_TIMEOUT_MS,
   execFileWithStreaming,
   getActiveAgentCount,
   getAgentRunner,
@@ -242,6 +243,8 @@ describe("active agent process registry and cancellation", () => {
     expect(isCancelledError({signal: "SIGTERM"})).toBe(true);
     expect(isCancelledError({signal: "SIGINT"})).toBe(true);
     expect(isCancelledError({message: "Command was aborted"})).toBe(true);
+    expect(isCancelledError({killed: true, code: "ETIMEDOUT"})).toBe(false);
+    expect(isCancelledError({killed: true, message: "Command timed out after 600s"})).toBe(false);
     expect(isCancelledError(new Error("random error"))).toBe(false);
     expect(isCancelledError(undefined)).toBe(false);
   });
@@ -400,6 +403,20 @@ describe("execFileWithStreaming", () => {
     expect(stdout).toContain("line1\nline2");
     expect(lines).toEqual(["line1", "line2"]);
   });
+
+  test("terminates child process and resolves when shouldTerminateOnStdoutLine matches", async () => {
+    const lines: string[] = [];
+    const {stdout} = await execFileWithStreaming(
+      "node",
+      ["-e", "console.log('first'); console.log('STOP'); setInterval(() => console.log('lingering'), 1000);"],
+      {
+        onStdoutLine: line => lines.push(line),
+        shouldTerminateOnStdoutLine: line => line === "STOP",
+      },
+    );
+    expect(stdout).toContain("first\nSTOP");
+    expect(lines).toContain("STOP");
+  });
 });
 
 describe("isCommandAllowed", () => {
@@ -548,6 +565,19 @@ describe("buildAgyArgs", () => {
     const args = buildAgyArgs("Prompt", {model: "claude-3-7-sonnet"});
     expect(args).toContain("--model");
     expect(args[args.indexOf("--model") + 1]).toBe("claude-3-7-sonnet-high");
+  });
+
+  test("includes default 10-minute print-timeout when timeoutMs is omitted", () => {
+    expect(DEFAULT_AGENT_TIMEOUT_MS).toBe(10 * 60 * 1000);
+    const args = buildAgyArgs("Prompt");
+    expect(args).toContain("--print-timeout");
+    expect(args[args.indexOf("--print-timeout") + 1]).toBe("600s");
+  });
+
+  test("uses specified timeoutMs for print-timeout", () => {
+    const args = buildAgyArgs("Prompt", {timeoutMs: 30000});
+    expect(args).toContain("--print-timeout");
+    expect(args[args.indexOf("--print-timeout") + 1]).toBe("30s");
   });
 });
 
