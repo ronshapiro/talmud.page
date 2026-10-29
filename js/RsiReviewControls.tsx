@@ -3,7 +3,7 @@ import {ApiComment} from "../apiTypes";
 import {flatten} from "../sefariaTextType";
 import {useHtmlRef} from "./hooks";
 import Modal from "./Modal";
-import {postWithRetry} from "./post";
+import {extractErrorMessage, postWithRetry} from "./post";
 import {getRsiReviewKey} from "./rsiReviewKey";
 import {
   isSiteLanguageHebrew,
@@ -82,26 +82,60 @@ async function postDecision(
   const knownPrNumberString = rsiReviewPrNumberPreference.get();
   const knownPrNumber = knownPrNumberString ? Number(knownPrNumberString) : undefined;
 
-  clearAutoDismissTimerAndIncrement();
-  snackbars.reportedIssueSent.show(`Submitting ${decision} for ${ref}…`, []);
+  let isDismissed = false;
+  const expectedToken = clearAutoDismissTimerAndIncrement();
+
+  const dismissButton: Button = {
+    text: isSiteLanguageHebrew() ? "סגור" : "Dismiss",
+    onClick: () => {
+      isDismissed = true;
+      if (activeSnackbarToken === expectedToken) {
+        clearAutoDismissTimerAndIncrement();
+      }
+      snackbars.reportedIssueSent.hide();
+    },
+  };
+
+  const initialMessage = `Submitting ${decision} for ${ref}…`;
+  snackbars.reportedIssueSent.show(initialMessage, [dismissButton]);
+
   try {
     const response = await postWithRetry("/api/rsi-review-decision", {
       page, ref, decision, key: getRsiReviewKey(), knownPrNumber, reviewerIdentity, ...extra,
+    }, {
+      onError: (errorText) => {
+        if (isDismissed || activeSnackbarToken !== expectedToken) {
+          return;
+        }
+        const messageWithPreviousError = errorText
+          ? `${initialMessage}<br>${errorText}`
+          : initialMessage;
+        snackbars.reportedIssueSent.update(messageWithPreviousError, [dismissButton]);
+      },
     }) as DecisionResponse;
+
+    if (isDismissed || activeSnackbarToken !== expectedToken) {
+      return;
+    }
+
     if (response?.prNumber !== undefined) {
       rsiReviewPrNumberPreference.set(String(response.prNumber));
     }
     const link = response?.url ? ` — <a href="${response.url}" target="_blank">view PR</a>` : "";
-    showSnackbarWithAutoDismiss(snackbars.reportedIssueSent, dismissButton => {
-      snackbars.reportedIssueSent.update(`${label} ${ref}${link}`, [dismissButton]);
+    showSnackbarWithAutoDismiss(snackbars.reportedIssueSent, dismissButtonForSuccess => {
+      snackbars.reportedIssueSent.update(`${label} ${ref}${link}`, [dismissButtonForSuccess]);
     });
   } catch (error) {
     console.error(error);
-    clearAutoDismissTimerAndIncrement();
-    snackbars.reportedIssueSent.hide();
-    showSnackbarWithAutoDismiss(snackbars.errors, dismissButton => {
-      snackbars.errors.show(`Failed to submit review decision for ${ref}`, [dismissButton]);
-    });
+    if (!isDismissed && activeSnackbarToken === expectedToken) {
+      const errorText = extractErrorMessage(error);
+      const messageWithPreviousError = errorText
+        ? `${initialMessage}<br>${errorText}`
+        : initialMessage;
+      showSnackbarWithAutoDismiss(snackbars.reportedIssueSent, dismissButtonForFailure => {
+        snackbars.reportedIssueSent.update(messageWithPreviousError, [dismissButtonForFailure]);
+      });
+    }
   }
 }
 

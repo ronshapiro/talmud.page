@@ -1,19 +1,15 @@
 import {$} from "../jquery";
 import {
-  POST_ERROR_AUTO_DISMISS_DELAY_MILLISECONDS,
   extractErrorMessage,
   postWithRetry,
-  resetPostErrorsForTesting,
 } from "../post";
-import {Button, snackbars} from "../snackbar";
+import {snackbars} from "../snackbar";
 
 beforeEach(() => {
   localStorage.clear();
-  resetPostErrorsForTesting();
 });
 
 afterEach(() => {
-  resetPostErrorsForTesting();
   jest.clearAllTimers();
 });
 
@@ -53,191 +49,55 @@ describe("postWithRetry", () => {
     userText: "Correction text",
   };
 
-  const sampleReviewData = {
-    page: "Shabbat 2a",
-    ref: "Shabbat 2a:1",
-    decision: "approve",
-    key: "invalid-key",
-  };
-
-  test("displays intermediate error and dismiss button on failure, continues retry, and hides error on success", async () => {
+  test("invokes onError callback with extracted message and does not use errors snackbar", async () => {
     jest.useFakeTimers();
     const errorShowSpy = jest.spyOn(snackbars.errors, "show").mockImplementation(() => Promise.resolve());
-    const errorHideSpy = jest.spyOn(snackbars.errors, "hide").mockImplementation(() => Promise.resolve());
+    const onErrorSpy = jest.fn();
 
     let attemptCount = 0;
     const ajaxSpy = jest.spyOn($, "ajax").mockImplementation((() => {
       attemptCount++;
       if (attemptCount === 1) {
-        return Promise.reject(Object.assign(new Error("Internal Server Error"), {
-          status: 500,
-          statusText: "Internal Server Error",
+        return Promise.reject(Object.assign(new Error("Forbidden"), {
+          status: 403,
+          statusText: "Forbidden",
+          responseText: "Forbidden",
         }));
       }
       return Promise.resolve({success: true});
     }) as any);
 
-    const promise = postWithRetry("/corrections", sampleCorrectionData);
+    const promise = postWithRetry("/api/rsi-review-decision", sampleCorrectionData, {
+      onError: onErrorSpy,
+    });
 
     await Promise.resolve();
 
-    expect(errorShowSpy).toHaveBeenCalledWith(
-      `Failed to post correction on ${sampleCorrectionData.ref}: Internal Server Error`,
-      expect.anything(),
-    );
-
-    const buttons = errorShowSpy.mock.calls[0][1] as Button[];
-    expect(buttons.length).toBe(1);
-    expect(buttons[0].text).toBe("Dismiss");
-
-    expect(errorHideSpy).not.toHaveBeenCalled();
+    expect(onErrorSpy).toHaveBeenCalledWith("Forbidden", expect.anything());
+    expect(errorShowSpy).not.toHaveBeenCalled();
 
     jest.advanceTimersByTime(200);
     await promise;
 
     expect(attemptCount).toBe(2);
-    expect(errorHideSpy).toHaveBeenCalled();
-
-    ajaxSpy.mockRestore();
-    errorShowSpy.mockRestore();
-    errorHideSpy.mockRestore();
-    jest.useRealTimers();
-  });
-
-  test("displays review decision failure in UI on 403 Forbidden", async () => {
-    jest.useFakeTimers();
-    const errorShowSpy = jest.spyOn(snackbars.errors, "show").mockImplementation(() => Promise.resolve());
-
-    const ajaxSpy = jest.spyOn($, "ajax").mockImplementation((() => {
-      return Promise.reject(Object.assign(new Error("Forbidden"), {
-        status: 403,
-        statusText: "Forbidden",
-        responseText: "Forbidden",
-      }));
-    }) as any);
-
-    postWithRetry("/api/rsi-review-decision", sampleReviewData);
-
-    await Promise.resolve();
-
-    expect(errorShowSpy).toHaveBeenCalledWith(
-      `Failed to submit review decision for ${sampleReviewData.ref}: Forbidden`,
-      expect.anything(),
-    );
 
     ajaxSpy.mockRestore();
     errorShowSpy.mockRestore();
     jest.useRealTimers();
   });
 
-  test("displays Hebrew error message when site language is Hebrew", async () => {
-    localStorage.languageOption = "hebrew";
-    jest.useFakeTimers();
-    const errorShowSpy = jest.spyOn(snackbars.errors, "show").mockImplementation(() => Promise.resolve());
-
+  test("succeeds without calling onError", async () => {
+    const onErrorSpy = jest.fn();
     const ajaxSpy = jest.spyOn($, "ajax").mockImplementation((() => {
-      return Promise.reject(Object.assign(new Error("Server down"), {
-        status: 500,
-        responseJSON: {error: "Server down"},
-      }));
+      return Promise.resolve({success: true});
     }) as any);
 
-    postWithRetry("/corrections", sampleCorrectionData);
+    await postWithRetry("/corrections", sampleCorrectionData, {
+      onError: onErrorSpy,
+    });
 
-    await Promise.resolve();
-
-    expect(errorShowSpy).toHaveBeenCalledWith(
-      `שגיאה בשליחת תיקון של ${sampleCorrectionData.ref}: Server down`,
-      expect.anything(),
-    );
-
-    const buttons = errorShowSpy.mock.calls[0][1] as Button[];
-    expect(buttons[0].text).toBe("סגור");
+    expect(onErrorSpy).not.toHaveBeenCalled();
 
     ajaxSpy.mockRestore();
-    errorShowSpy.mockRestore();
-    jest.useRealTimers();
-  });
-
-  test("displays Hebrew error message for review decision when site language is Hebrew", async () => {
-    localStorage.languageOption = "hebrew";
-    jest.useFakeTimers();
-    const errorShowSpy = jest.spyOn(snackbars.errors, "show").mockImplementation(() => Promise.resolve());
-
-    const ajaxSpy = jest.spyOn($, "ajax").mockImplementation((() => {
-      return Promise.reject(Object.assign(new Error("Forbidden"), {
-        status: 403,
-        statusText: "Forbidden",
-      }));
-    }) as any);
-
-    postWithRetry("/api/rsi-review-decision", sampleReviewData);
-
-    await Promise.resolve();
-
-    expect(errorShowSpy).toHaveBeenCalledWith(
-      `שגיאה בשליחת החלטת ביקורת של ${sampleReviewData.ref}: Forbidden`,
-      expect.anything(),
-    );
-
-    ajaxSpy.mockRestore();
-    errorShowSpy.mockRestore();
-    jest.useRealTimers();
-  });
-
-  test("dismiss button hides error snackbar and keeps it dismissed on subsequent retry attempts", async () => {
-    jest.useFakeTimers();
-    const errorShowSpy = jest.spyOn(snackbars.errors, "show").mockImplementation(() => Promise.resolve());
-    const errorHideSpy = jest.spyOn(snackbars.errors, "hide").mockImplementation(() => Promise.resolve());
-
-    const ajaxSpy = jest.spyOn($, "ajax").mockImplementation((() => {
-      return Promise.reject(new Error("Network failure"));
-    }) as any);
-
-    postWithRetry("/corrections", sampleCorrectionData);
-
-    await Promise.resolve();
-    expect(errorShowSpy).toHaveBeenCalledTimes(1);
-
-    const buttons = errorShowSpy.mock.calls[0][1] as Button[];
-    buttons[0].onClick();
-
-    expect(errorHideSpy).toHaveBeenCalledTimes(1);
-
-    // Advance time to trigger another retry attempt
-    jest.advanceTimersByTime(200);
-    await Promise.resolve();
-
-    // Error snackbar should NOT be re-shown because user dismissed this error
-    expect(errorShowSpy).toHaveBeenCalledTimes(1);
-
-    ajaxSpy.mockRestore();
-    errorShowSpy.mockRestore();
-    errorHideSpy.mockRestore();
-    jest.useRealTimers();
-  });
-
-  test("automatically dismisses error snackbar after delay", async () => {
-    jest.useFakeTimers();
-    const errorShowSpy = jest.spyOn(snackbars.errors, "show").mockImplementation(() => Promise.resolve());
-    const errorHideSpy = jest.spyOn(snackbars.errors, "hide").mockImplementation(() => Promise.resolve());
-
-    const ajaxSpy = jest.spyOn($, "ajax").mockImplementation((() => {
-      return Promise.reject(new Error("Network failure"));
-    }) as any);
-
-    postWithRetry("/corrections", sampleCorrectionData);
-
-    await Promise.resolve();
-    expect(errorShowSpy).toHaveBeenCalledTimes(1);
-    expect(errorHideSpy).not.toHaveBeenCalled();
-
-    jest.advanceTimersByTime(POST_ERROR_AUTO_DISMISS_DELAY_MILLISECONDS);
-    expect(errorHideSpy).toHaveBeenCalledTimes(1);
-
-    ajaxSpy.mockRestore();
-    errorShowSpy.mockRestore();
-    errorHideSpy.mockRestore();
-    jest.useRealTimers();
   });
 });
