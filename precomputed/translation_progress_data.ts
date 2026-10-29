@@ -163,8 +163,19 @@ export function computeTranslationTimeline(): TranslationTimelinePoint[] {
   return timeline;
 }
 
+export const RASHI_TOSAFOT_COMMENTS_PER_PAGE_PATH = (
+  "precomputed/rashiTosafotCommentsPerPage.json"
+);
+
 export function computeTranslationProgress(): TranslationProgressData {
   const masechtotProgress: MasechetProgress[] = [];
+
+  const commentaryIndex: Record<
+    string,
+    {refs: string[]; sefariaTranslatedRefs?: string[]}
+  > | undefined = fs.existsSync(RASHI_TOSAFOT_COMMENTS_PER_PAGE_PATH)
+    ? JSON.parse(readUtf8(RASHI_TOSAFOT_COMMENTS_PER_PAGE_PATH))
+    : undefined;
 
   let overallTotalPages = 0;
   let overallCompletePages = 0;
@@ -200,36 +211,54 @@ export function computeTranslationProgress(): TranslationProgressData {
       overallTotalPages++;
 
       const pageRef = `${book.canonicalName} ${section}`;
-      const outputFilePath = cachedOutputFilePath(book, section);
-
       let pageCommentCount = 0;
       let pageTranslatedCount = 0;
 
-      if (fs.existsSync(outputFilePath)) {
-        try {
-          const amudData = JSON.parse(readUtf8(outputFilePath));
-          const aiAdditions = aiEditsForPage(pageRef) ?? {};
+      if (commentaryIndex) {
+        const pageEntry = commentaryIndex[pageRef];
+        const pageRefs = pageEntry?.refs ?? [];
+        pageCommentCount = pageRefs.length;
 
-          for (const segment of amudData.sections) {
-            for (const commentator of ["Rashi", "Tosafot"]) {
-              const commentaryComments = segment.commentary?.[commentator]?.comments ?? [];
-              for (const comment of commentaryComments) {
-                pageCommentCount++;
-                const hasCachedTranslation = comment.en && comment.en.length > 0;
-                const aiAddition = aiAdditions[comment.ref];
-                const hasAiTranslation = (
-                  aiAddition
-                  && aiAddition.english
-                  && aiAddition.english.length > 0
-                );
-                if (hasCachedTranslation || hasAiTranslation) {
-                  pageTranslatedCount++;
+        const sefariaTranslatedSet = new Set(pageEntry?.sefariaTranslatedRefs ?? []);
+        pageTranslatedCount += sefariaTranslatedSet.size;
+
+        const aiAdditions = aiEditsForPage(pageRef) ?? {};
+        for (const ref of pageRefs) {
+          if (!sefariaTranslatedSet.has(ref)) {
+            const aiAddition = aiAdditions[ref];
+            if (aiAddition && aiAddition.english && aiAddition.english.length > 0) {
+              pageTranslatedCount++;
+            }
+          }
+        }
+      } else {
+        const outputFilePath = cachedOutputFilePath(book, section);
+        if (fs.existsSync(outputFilePath)) {
+          try {
+            const amudData = JSON.parse(readUtf8(outputFilePath));
+            const aiAdditions = aiEditsForPage(pageRef) ?? {};
+
+            for (const segment of amudData.sections) {
+              for (const commentator of ["Rashi", "Tosafot"]) {
+                const commentaryComments = segment.commentary?.[commentator]?.comments ?? [];
+                for (const comment of commentaryComments) {
+                  pageCommentCount++;
+                  const hasCachedTranslation = comment.en && comment.en.length > 0;
+                  const aiAddition = aiAdditions[comment.ref];
+                  const hasAiTranslation = (
+                    aiAddition
+                    && aiAddition.english
+                    && aiAddition.english.length > 0
+                  );
+                  if (hasCachedTranslation || hasAiTranslation) {
+                    pageTranslatedCount++;
+                  }
                 }
               }
             }
+          } catch {
+            // Keep count as 0 if file reading or parsing fails
           }
-        } catch {
-          // Keep count as 0 if file reading or parsing fails
         }
       }
 
