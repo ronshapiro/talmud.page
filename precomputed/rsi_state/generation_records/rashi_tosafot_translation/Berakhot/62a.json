@@ -1,4 +1,210 @@
 {
+  "Rashi on Berakhot 62a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T11:57:45.949Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחורי הגדר נפנה מיד</strong> – ואין צריך להתרחק כלום:"
+  },
+  "Rashi on Berakhot 62a:10:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 62a:10:1",
+      "Rashi on Berakhot 62a:10:3"
+    ],
+    "generatedAt": "2026-10-30T11:59:59.257Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובבקעה</strong> – צריך להתרחק כדי שלא ישמע חברו עטושים של מטה אבל אין צריך להתרחק עד כדי שלא יראנו:"
+  },
+  "Rashi on Berakhot 62a:10:3": {
+    "dependsOn": [
+      "Rashi on Berakhot 62a:10:1",
+      "Rashi on Berakhot 62a:10:2",
+      "Rashi on Berakhot 62a:10:3",
+      "Berakhot 62a:10",
+      "Berakhot 62a:14",
+      "Rashi on Berakhot 62a:14:1"
+    ],
+    "generatedAt": "2026-10-30T12:01:25.782Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב אשי אמר וכו'</strong> – לא גרסינן עד לקמן דמוקי לדאיסי בר נתן בהכי:"
+  },
+  "Rashi on Berakhot 62a:11:1": {
+    "dependsOn": [
+      "Berakhot 62a:11"
+    ],
+    "generatedAt": "2026-10-30T12:02:36.645Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יוצאין מפתח בית הבד</strong> – משמרי טהרות של שמן בית הבד אם הוצרכו לפנות יוצאים מפתח בית הבד ונפנין לאחורי הגדר שלפני הפתח ואין חוששין שמא בתוך כך יכנס עם הארץ ויגע אלמא נפנין לאחורי הגדר מיד:"
+  },
+  "Rashi on Berakhot 62a:12:1": {
+    "dependsOn": [
+      "Berakhot 62a:12",
+      "Rashi on Berakhot 62a:13:1",
+      "Rashi on Berakhot 62a:13:2",
+      "Rashi on Berakhot 62a:13:3"
+    ],
+    "generatedAt": "2026-10-30T12:03:40.726Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בטהרות הקלו</strong> – בשביל שמירת טהרות הקלו בבית הכסא:"
+  },
+  "Rashi on Berakhot 62a:13:1": {
+    "dependsOn": [
+      "Berakhot 62a:13",
+      "Rashi on Berakhot 62a:13:1",
+      "Rashi on Berakhot 62a:13:2",
+      "Rashi on Berakhot 62a:13:3"
+    ],
+    "generatedAt": "2026-10-30T12:04:26.367Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כמה ירחקו</strong> – שומרי טהרות:"
+  },
+  "Rashi on Berakhot 62a:13:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 62a:13:1",
+      "Rashi on Berakhot 62a:13:3",
+      "Berakhot 62a:13"
+    ],
+    "generatedAt": "2026-10-30T12:05:32.361Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדי שיהא רואהו</strong> – וכיון דאינו יכול להתרחק יותר על כרחך אם הוצרך לפנות יפנה תיובתא דאיסי דבעי שלא יראנו:"
+  },
+  "Rashi on Berakhot 62a:13:3": {
+    "dependsOn": [
+      "Rashi on Berakhot 62a:13:1",
+      "Rashi on Berakhot 62a:13:2",
+      "Rashi on Berakhot 62a:13:3",
+      "Berakhot 62a:13",
+      "Rashi on Berakhot 62a:12:1"
+    ],
+    "generatedAt": "2026-10-30T12:10:33.241Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאקילו בהו רבנן</strong> – בשביל שמירתן הקלו בבית הכסא:"
+  },
+  "Rashi on Berakhot 62a:14:1": {
+    "dependsOn": [
+      "Berakhot 62a:14",
+      "Berakhot 62a:12",
+      "Rashi on Berakhot 62a:10:1",
+      "Rashi on Berakhot 62a:10:2",
+      "Rashi on Berakhot 62a:10:3",
+      "Steinsaltz on Berakhot 62a:14:1",
+      "Steinsaltz on Berakhot 62a:13:1",
+      "Steinsaltz on Berakhot 62a:14",
+      "Shulchan Arukh, Orach Chayim 3:8",
+      "Rashi on Berakhot 62a:13:1",
+      "Rashi on Berakhot 62a:13:2",
+      "Rashi on Berakhot 62a:13:3",
+      "Steinsaltz comment #1 on Berakhot 62a:13",
+      "Rashi on Berakhot 62a:8:1",
+      "Rashi on Berakhot 62a:8:2",
+      "Rashi on Berakhot 61b:1:1",
+      "Rashi on Berakhot 61b:2:1"
+    ],
+    "generatedAt": "2026-10-30T12:14:04.220Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל לדידיה חזי ליה</strong> – אבל הוא עצמו את חברו יכול לראות ולא ירחיק:"
+  },
+  "Rashi on Berakhot 62a:17:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 62a:17:1",
+      "Rashi on Berakhot 62a:18:1",
+      "Rashi on Berakhot 62a:6:2"
+    ],
+    "generatedAt": "2026-10-30T12:16:50.907Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במקום שנפנה ביום</strong> – מתרחק מבני אדם בלילה כביום:"
+  },
+  "Rashi on Berakhot 62a:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T12:17:30.948Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ינהיג אדם עצמו</strong> – לפנות:"
+  },
+  "Rashi on Berakhot 62a:18:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 62a:18:1",
+      "Rashi on Berakhot 62a:18:2",
+      "Rashi on Berakhot 62a:18:3"
+    ],
+    "generatedAt": "2026-10-30T12:18:22.911Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שחרית</strong> – קודם היום:"
+  },
+  "Rashi on Berakhot 62a:18:3": {
+    "dependsOn": [
+      "Rashi on Berakhot 62a:18:2",
+      "Rashi on Berakhot 62a:18:3"
+    ],
+    "generatedAt": "2026-10-30T12:19:04.156Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:18:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וערבית</strong> – משחשכה:"
+  },
+  "Rashi on Berakhot 62a:18:4": {
+    "dependsOn": [
+      "Rashi on Berakhot 62a:18:1",
+      "Rashi on Berakhot 62a:18:2",
+      "Rashi on Berakhot 62a:18:3",
+      "Rashi on Berakhot 62a:18:5"
+    ],
+    "generatedAt": "2026-10-30T12:20:07.724Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:18:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדי שלא יהא צריך להתרחק</strong> – אלמא אין מתרחקין בלילה:"
+  },
   "Rashi on Berakhot 62a:1:1": {
     "dependsOn": [
       "Berakhot 62a:1",
@@ -215,5 +421,33 @@
       "Rashi on Berakhot 62a:9:3"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">כוותא</strong> – חלון כנגד מקום שהוא נפנה שם אחורי הבית:"
+  },
+  "Tosafot on Berakhot 62a:9:1": {
+    "dependsOn": [
+      "Tosafot on Berakhot 62a:9:1",
+      "Tosafot on Berakhot 62a:9:2",
+      "Maharsha on Berakhot 62a:1",
+      "Chidushei Agadot on Berakhot 62a:7"
+    ],
+    "generatedAt": "2026-10-30T11:56:21.205Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 62a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבא מקמי דהוה רישא כו' בתר דמלך עבדה ליה כוותא ומנחא ליה ידא כו'</strong> - תימה דע\"כ לא מלך רבא עד אחר פטירתו של אביי כדמשמע לעיל בעובדא דבר הדיא וכן בכתובות דקאמר חומה דביתהו דאביי אתיא לקמיה דרבא בסוף פרק אע\"פ <span class=\"parenthesized\">(כתובות ד' סה.)</span> וזהו תימה דלעיל <span class=\"parenthesized\">(ברכות ד' נו.)</span> משמע דראה בחלום פטירתה קודם פטירתו דאביי וי\"ל מכל מקום לא נפטרה עד אחר אביי:"
+  },
+  "Tosafot on Berakhot 62a:9:2": {
+    "dependsOn": [
+      "Tosafot on Berakhot 62a:9:1",
+      "Tosafot on Berakhot 62a:9:2"
+    ],
+    "generatedAt": "2026-10-30T11:57:05.918Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 62a:9:2"
+    ],
+    "sourceText": "סליקו תוספות דמסכת ברכות"
   }
 }
