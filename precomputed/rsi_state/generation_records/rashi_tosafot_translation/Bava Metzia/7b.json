@@ -1,4 +1,69 @@
 {
+  "Rashi on Bava Metzia 7b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T11:59:35.999Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 7b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צררי אתפסה</strong> - מעות צרורות או כספים מסר לה ליחוד כתובתה כשנשאה או לאחר מכאן שלא יטריחוה יורשים אם תתאלמן:"
+  },
+  "Rashi on Bava Metzia 7b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T12:01:27.047Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 7b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעולם איפוך קמייתא</strong> - ודקשיא לך דרבנן אדרבנן לא תיקשי דטעמייהו דרבנן בכתובה לאו משום דחיישינן לפירעון דמאן דפרע ואהדר ליה שטרא לאלתר קרע ליה אלא משום דחיישינן לשתי כתובות שמא חזר וכתב לה כתובה אחרת שניה לאחר שנפלה זאת מידה ואין הבעל מודה דקתני לאו באומר פרעתי אלא באומר אל תחזרו לה שיש בידה אחרת ותוציא על יורשי שטר אחר שטר:"
+  },
+  "Rashi on Bava Metzia 7b:13:1": {
+    "dependsOn": [
+      "Rashi on Bava Metzia 7b:13:1",
+      "Rashi on Bava Metzia 7b:1:1",
+      "Rashi on Bava Metzia 7b:1:2",
+      "Rashi on Bava Metzia 7b:12:1",
+      "Rashi on Bava Metzia 7b:13:2",
+      "Rashi on Bava Metzia 7b:13:3",
+      "Bava Metzia 7b:13"
+    ],
+    "generatedAt": "2026-10-30T12:10:30.115Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 7b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחלוקת</strong> - האי יחלוקו דקאמר ר\"ש [ב\"ג] דמשמע חולקין בשוה כך שמעתי משום ר' יצחק ב\"ר מנחם ונראה בעיני:"
+  },
+  "Rashi on Bava Metzia 7b:13:2": {
+    "dependsOn": [
+      "Rashi on Bava Metzia 7b:13:1",
+      "Rashi on Bava Metzia 7b:13:3",
+      "Jastrow, תּוֹרֵף 1",
+      "Jastrow, טוֹפֵס 1",
+      "Steinsaltz on Bava Metzia 7b:13",
+      "Sefer HeArukh, Letter Tet 160"
+    ],
+    "generatedAt": "2026-10-30T12:12:12.799Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 7b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושניהם אדוקים בתורף</strong> - כלומר או שניהם אדוקין בתורף ותורף גילוי של שטר מקום הלוה והמלוה והמעות והזמן טופס שאר כל לשון השטר:"
+  },
+  "Rashi on Bava Metzia 7b:13:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T12:15:16.898Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 7b:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זה נוטל כו'</strong> - דמאי דתפיס דידיה הוא כדקתני לעיל זה נוטל עד מקום שידו מגעת כו' ולקמן מפרש למאי מיבעי ליה:"
+  },
   "Rashi on Bava Metzia 7b:1:1": {
     "dependsOn": [
       "Bava Metzia 7b:1"
@@ -87,6 +152,67 @@
       "Rashi on Bava Metzia 7b:4:2"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">אין הבעל מודה</strong> - שאמר פרעתי ומידי נפל:"
+  },
+  "Rashi on Bava Metzia 7b:5:1": {
+    "dependsOn": [
+      "Rashi on Bava Metzia 7b:5:2"
+    ],
+    "generatedAt": "2026-10-30T11:54:38.154Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 7b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עודה תחת בעלה</strong> - שלא גרשה:"
+  },
+  "Rashi on Bava Metzia 7b:5:2": {
+    "dependsOn": [
+      "Rashi on Bava Metzia 7b:5:1",
+      "Rashi on Bava Metzia 7b:12:1"
+    ],
+    "generatedAt": "2026-10-30T11:56:46.891Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 7b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יחזיר לאשה</strong> - דלא עביד איניש ליתן כתובה קודם גירושין:"
+  },
+  "Tosafot on Bava Metzia 7b:12:1": {
+    "dependsOn": [
+      "Tosafot on Bava Metzia 7b:12:1",
+      "Translation on Tosafot on Bava Metzia 7b:12:1",
+      "Bava Metzia 7b:12",
+      "Rashi on Bava Metzia 7b:12:1",
+      "Bava Metzia 7b:9",
+      "Tosafot on Bava Metzia 7b:1:1"
+    ],
+    "generatedAt": "2026-10-30T12:04:04.255Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bava Metzia 7b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דחיישינן לשתי כתובות</strong> - ובלאו איפוך לא מצי לאוקמא דרבי יוסי חייש לשתי כתובות דא\"כ עודה תחת בעלה אמאי יחזיר לאשה כשאין הבעל מודה:"
+  },
+  "Tosafot on Bava Metzia 7b:13:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Tosafot on Bava Metzia 7b:13:1",
+      "Rashi on Bava Metzia 7b:13:1",
+      "Rashi on Bava Metzia 7b:13:2",
+      "Rashi on Bava Metzia 7b:13:3",
+      "Bava Metzia 7b:13",
+      "Tosafot on Bava Metzia 7b:1:1",
+      "Tosafot on Bava Metzia 7b:4:1",
+      "Tosafot on Bava Metzia 7b:12:1"
+    ],
+    "generatedAt": "2026-10-30T12:19:58.019Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bava Metzia 7b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחלוקת</strong> - פרש\"י דהיינו יחלוקו דקאמר רשב\"ג והדין עמו שלא רצה לפרש פלוגתא דרבי ורשב\"ג משום דהיכי קאמר אבל אחד אדוק בטופס כו' משמע דהתם לא פליגי וזה אינו דגם שם אם אינו מקוים לא שקיל לרבי מידי:"
   },
   "Tosafot on Bava Metzia 7b:1:1": {
     "dependsOn": [
