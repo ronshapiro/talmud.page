@@ -633,6 +633,19 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">אינה משנה</strong> – ואין זה ספק אלא ודאי:"
   },
+  "Rashi on Berakhot 36b:3:1": {
+    "dependsOn": [
+      "Berakhot 36b:3",
+      "Berakhot 36a:19"
+    ],
+    "generatedAt": "2026-10-29T20:09:51.832Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 36b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותיפוק ליה</strong> – דאי נמי ר' עקיבא דאמר לענין מעשר דלאו פירא נינהו לענין ערלה אסירי קפריסין דהוה ליה שומר:"
+  },
   "Rashi on Berakhot 36b:4:1": {
     "dependsOn": [
       "Berakhot 36b:3",

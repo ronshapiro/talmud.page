@@ -1,0 +1,324 @@
+{
+  "Rashi on Berakhot 32b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T17:11:42.141Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 32b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קוה</strong> – והתחזק ולא תמשוך ידך אלא חזור וקוה:"
+  },
+  "Rashi on Berakhot 32b:11:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 32b:11:1",
+      "Translation on Rashi on Berakhot 32b:11:1"
+    ],
+    "generatedAt": "2026-10-29T17:12:34.132Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 32b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צריכין חזוק</strong> – שיתחזק אדם בהן תמיד בכל כחו:"
+  },
+  "Rashi on Berakhot 32b:11:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 32b:11:2",
+      "Rashi on Berakhot 32b:11:1",
+      "Berakhot 32b:11",
+      "Berakhot 32b:13"
+    ],
+    "generatedAt": "2026-10-29T17:14:02.278Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 32b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דרך ארץ</strong> – אם אומן הוא לאומנתו אם סוחר הוא לסחורתו אם איש מלחמה הוא למלחמתו:"
+  },
+  "Rashi on Berakhot 32b:16:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 32b:16:2",
+      "Steinsaltz on Berakhot 32b:16"
+    ],
+    "generatedAt": "2026-10-29T17:15:28.565Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 32b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלשים חיל</strong> – ראשי גייסות וחבורות חלוקות:"
+  },
+  "Rashi on Berakhot 32b:16:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T17:16:14.492Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 32b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לגיון וקרטון וגסטרא</strong> – שמות של שררה כגון שלטון והגמון ודוכס ופחה:"
+  },
+  "Rashi on Berakhot 32b:17:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 32b:17:1",
+      "Rashi on Berakhot 32b:17:2"
+    ],
+    "generatedAt": "2026-10-29T17:20:24.582Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 32b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עולה</strong> – כמו עולות וקרבנות:"
+  },
+  "Rashi on Berakhot 32b:17:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T17:21:45.892Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 32b:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גם אלה</strong> – מעשה העגל שאמרו אלה אלהיך ישראל <span class=\"parenthesized\">(שמות ל״ב:ד׳)</span>:"
+  },
+  "Rashi on Berakhot 32b:19:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 32b:16:1",
+      "Rashi on Berakhot 32b:17:1",
+      "Rashi on Berakhot 32b:7:1",
+      "Rashi on Berakhot 32a:10:1",
+      "Rashi on Berakhot 32a:11:1"
+    ],
+    "generatedAt": "2026-10-29T17:23:41.502Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 32b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואנכי זה מעשה סיני</strong> – שנאמר בו אנכי ה' אלהיך <span class=\"parenthesized\">(שמות כ׳:ב׳)</span>:"
+  },
+  "Rashi on Berakhot 32b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T16:52:48.052Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 32b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עלה ראש הפסגה</strong> – בדבר תפלה זו נתרציתי להראותך אותה:"
+  },
+  "Rashi on Berakhot 32b:21:1": {
+    "dependsOn": [
+      "Berakhot 32b:20",
+      "Berakhot 32b:21",
+      "Berakhot 32b:22",
+      "Rashi on Berakhot 32b:22:1"
+    ],
+    "generatedAt": "2026-10-29T17:24:40.183Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 32b:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יושבי ביתך</strong> – והדר יהללוך:"
+  },
+  "Rashi on Berakhot 32b:22:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T17:25:33.572Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 32b:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יודו לשמך</strong> – והדר ישבו ישרים את פניך:"
+  },
+  "Rashi on Berakhot 32b:24:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T17:28:07.319Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 32b:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תשע שעות</strong> – לשלש תפלות:"
+  },
+  "Rashi on Berakhot 32b:25:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 32b:25:1"
+    ],
+    "generatedAt": "2026-10-29T17:28:46.649Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 32b:25:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תורתם משתמרת</strong> – בתוך לבם שאין תלמודם משתכח:"
+  },
+  "Rashi on Berakhot 32b:27:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 32b:27:1",
+      "Rashi on Berakhot 32b:29:1",
+      "Steinsaltz on Berakhot 32b:27"
+    ],
+    "generatedAt": "2026-10-29T17:31:13.818Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 32b:27:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל למלכי עכו\"ם פוסק</strong> – שלא יהרגנו:"
+  },
+  "Rashi on Berakhot 32b:29:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T17:31:53.331Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 32b:29:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא דאפשר בקצור</strong> – כגון שסמוך לגמור תפלתו:"
+  },
+  "Rashi on Berakhot 32b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T16:54:30.406Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 32b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובפרשכם כפיכם</strong> – אי לאו דגדולה תפלה כיון דאמר למה לי רוב זבחיכם למה לי תו ובפרשכם הא אפילו זבחיהם לא ניחא ליה:"
+  },
+  "Rashi on Berakhot 32b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T16:55:11.842Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 32b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אל תחרש</strong> – מדלא כתיב את דמעתי תראה ש\"מ נראית היא לפניו ואין צריך להתפלל אלא שתתקבל לפניו:"
+  },
+  "Rashi on Berakhot 32b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T17:04:17.467Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 32b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונתתה אותה קיר ברזל</strong> – סימן למחיצת ברזל המפסקת בינו לבינם:"
+  },
+  "Rashi on Berakhot 32b:9:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 32b:9:2",
+      "Rashi on Berakhot 32b:9:3",
+      "Berakhot 32b:9",
+      "Tosafot on Berakhot 32b:9:1",
+      "Rashi on Berakhot 32b:1:1",
+      "Rashi on Berakhot 32b:3:1",
+      "Rashi on Berakhot 32b:5:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1"
+    ],
+    "generatedAt": "2026-10-29T17:06:05.047Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 32b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומעיין בה</strong> – מצפה שתעשה בקשתו על ידי הארכתו סוף שאינה נעשית ונמצאת תוחלת ממושכה חנם והיא כאב לב כשאדם מצפה ואין תאותו באה:"
+  },
+  "Rashi on Berakhot 32b:9:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 32b:9:1",
+      "Rashi on Berakhot 32b:9:2",
+      "Rashi on Berakhot 32b:9:3"
+    ],
+    "generatedAt": "2026-10-29T17:07:05.757Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 32b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תוחלת</strong> – לשון חלוי ותחנה:"
+  },
+  "Rashi on Berakhot 32b:9:3": {
+    "dependsOn": [
+      "Rashi on Berakhot 32b:9:1",
+      "Rashi on Berakhot 32b:9:2",
+      "Rashi on Berakhot 32b:7:1",
+      "Rashi on Berakhot 32b:10:1",
+      "Rashi on Berakhot 32a:1:1",
+      "Rashi on Berakhot 32a:2:1"
+    ],
+    "generatedAt": "2026-10-29T17:08:34.265Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 32b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועץ חיים תאוה באה</strong> – סופו של מקרא הוא:"
+  },
+  "Tosafot on Berakhot 32b:1:1": {
+    "dependsOn": [
+      "Tosafot on Berakhot 32b:1:1"
+    ],
+    "generatedAt": "2026-10-29T16:53:45.119Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 32b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גדולה תפלה יותר ממעשים טובים</strong> - בלא תפלה שהרי משה רבינו ע\"ה אף על פי שהיו בידו מעשים טובים הוצרך לתפלה:"
+  },
+  "Tosafot on Berakhot 32b:23:1": {
+    "dependsOn": [
+      "Tosafot on Berakhot 32b:23:1",
+      "Chidushei Halachot on Berakhot 32b:2",
+      "Rashba on Berakhot 32b:1",
+      "Ritva on Berakhot 32b:3",
+      "Ritva on Berakhot 32b:4"
+    ],
+    "generatedAt": "2026-10-29T17:27:21.396Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 32b:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קודם תפלתו מנין שנא' אשרי יושבי ביתך</strong> - ולפיכך תקנו לומר זה הפסוק קודם תהלה לדוד לאפוקי מהנהו דאמרי אשרי הרבה:"
+  },
+  "Tosafot on Berakhot 32b:5:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 32b:5:1",
+      "Tosafot on Berakhot 32b:5:1",
+      "Tosafot on Berakhot 2a:13:1",
+      "Tosafot on Berakhot 32b:1:1",
+      "Tosafot on Berakhot 32b:9:1",
+      "Tosafot on Berakhot 32b:23:1"
+    ],
+    "generatedAt": "2026-10-29T17:03:34.888Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 32b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אל דמעתי אל תחרש</strong> - פרש\"י דדייק מדיוקא מדלא קאמר ודמעתי תראה ש\"מ שהיא נראית בכל פעם ואין להתפלל רק שתתקבל:"
+  },
+  "Tosafot on Berakhot 32b:9:1": {
+    "dependsOn": [
+      "Tosafot on Berakhot 32b:9:1",
+      "Rashi on Berakhot 32b:9:1",
+      "Rashi on Berakhot 32b:9:2",
+      "Rashi on Berakhot 32b:9:3"
+    ],
+    "generatedAt": "2026-10-29T17:11:08.654Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Berakhot 32b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל המאריך בתפלתו ומעיין בה</strong> - פירוש שמצפה שתבא בקשתו לפי שכוון בתפלתו. תימה דהכא משמע דעיון תפלה לאו מעליותא הוא וכן משמע פ' הרואה <span class=\"parenthesized\">(לקמן ברכות נה.)</span> ג' דברים מזכירין עונותיו של אדם וקאמר עיון תפלה. ולא כן משמע בפ' מפנין <span class=\"parenthesized\">(שבת קכז.)</span> דקאמר אדם אוכל פירותיהן בעוה\"ז וקא חשיב עיון תפלה אלמא מעליותא הוא וכן משמע בגט פשוט <span class=\"parenthesized\">(ב\"ב קסד:)</span> דקאמר משלשה דברים אין אדם ניצול בכל יום וקאמר עיון תפלה פירוש שאין אדם מעיין בה אם כן משמע שהוא טוב וי\"ל דתרי עיון תפלה יש עיון תפלה דהכא המצפה שתבא בקשתו ועיון תפלה דהתם שמכוין את לבו לתפלה:"
+  }
+}
