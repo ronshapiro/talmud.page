@@ -1,0 +1,352 @@
+{
+  "Rashi on Nedarim 6a:1:1": {
+    "dependsOn": [
+      "Nedarim 6a:1"
+    ],
+    "generatedAt": "2026-10-29T21:11:14.729Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 6a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאין אדם מגרש את אשת חבירו</strong> - דאי כתב הרי את מותרת לכל אדם משמע דלאשתו קאמר דאשת איניש דעלמא אינו מגרש ומוכחא מילתא ושפיר מגרש:"
+  },
+  "Rashi on Nedarim 6a:1:2": {
+    "dependsOn": [
+      "Rashi on Nedarim 6a:1:1"
+    ],
+    "generatedAt": "2026-10-29T21:12:04.178Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 6a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל בעלמא</strong> - דאי אפשר למימר הכי בעינן ידים מוכיחות:"
+  },
+  "Rashi on Nedarim 6a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T21:13:52.678Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 6a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל לא קאמר עלי לא</strong> - דהרי הוא לא משמע כלום דבעינן ידים מוכיחות:"
+  },
+  "Rashi on Nedarim 6a:3:1": {
+    "dependsOn": [
+      "Nedarim 6a:3"
+    ],
+    "generatedAt": "2026-10-29T21:16:58.291Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 6a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר לך אביי</strong> - לעולם לא בעינן ידים מוכיחות והכא היינו טעמא דאי לא אמר בלשון קרבן לא מיתסר דדלמא הרי הוא הפקר קאמר דמוכיחות הוא להפקר או לצדקה:"
+  },
+  "Rashi on Nedarim 6a:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T21:18:00.863Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 6a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא מפני שהוא יד לקרבן קאמר</strong> - דאסור כקרבן ולא מצית אמרת לצדקה או להפקר הוה משמע:"
+  },
+  "Rashi on Nedarim 6a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T21:28:40.679Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 6a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל אמר הרי הוא</strong> - ולא אמר עלי שניהם אסורין דכיון דלא אמר עלי אלא הוא משמע דחבירו נמי אסור דה\"ק הרי הוא כהקדש מה הקדש אסור אף אותו דבר נמי אסור:"
+  },
+  "Rashi on Nedarim 6a:5:1": {
+    "dependsOn": [
+      "Rashi on Nedarim 6a:5:1",
+      "Rashi on Nedarim 6a:1:1",
+      "Rashi on Nedarim 6a:1:2",
+      "Rashi on Nedarim 6a:2:1",
+      "Rashi on Nedarim 6a:3:1",
+      "Rashi on Nedarim 6a:4:1"
+    ],
+    "generatedAt": "2026-10-29T21:36:56.079Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 6a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אע\"ג דהוא מחויב חטאת ואשם לאו כלום הוא</strong> - דלא אמר עלי אלמא בעינן ידים מוכיחות:"
+  },
+  "Rashi on Nedarim 6a:5:2": {
+    "dependsOn": [
+      "Rashi on Nedarim 6a:5:2",
+      "Rashi on Nedarim 6a:5:1"
+    ],
+    "generatedAt": "2026-10-29T21:39:59.285Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 6a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם הוא מחויב</strong> - חטאת או אשם:"
+  },
+  "Rashi on Nedarim 6a:5:3": {
+    "dependsOn": [
+      "Rashi on Nedarim 6a:5:1",
+      "Rashi on Nedarim 6a:5:2"
+    ],
+    "generatedAt": "2026-10-29T21:41:20.819Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 6a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דבריו קיימין</strong> - הוא דאמר חטאתי אבל לא היה מחויב חטאת אינו כלום הואיל ולא אמר עלי שאם אמר הרי זו עלי חטאת אע\"ג דלא היה מחויב הואיל ואמר עלי דבריו קיימין:"
+  },
+  "Rashi on Nedarim 6a:6:1": {
+    "dependsOn": [
+      "Rashi on Nedarim 6a:6:1",
+      "Rashi on Nedarim 6a:6:2",
+      "Rashi on Nedarim 6a:6:3",
+      "Rashi on Nedarim 6a:5:1",
+      "Rashi on Nedarim 6a:5:2",
+      "Rashi on Nedarim 6a:5:3"
+    ],
+    "generatedAt": "2026-10-29T21:46:44.384Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 6a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא מני</strong> - הא ברייתא דאמרה לא אמר ולא כלום:"
+  },
+  "Rashi on Nedarim 6a:6:2": {
+    "dependsOn": [
+      "Rashi on Nedarim 6a:6:1",
+      "Rashi on Nedarim 6a:6:3"
+    ],
+    "generatedAt": "2026-10-29T21:47:50.650Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 6a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי יהודה היא</strong> - דאמר בעינן ידים מוכיחות ואנא דאמרי כרבנן דאמרי לא בעינן ידים מוכיחות:"
+  },
+  "Rashi on Nedarim 6a:6:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T21:54:48.950Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 6a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא אמר אביי אנא דאמרי אפי' לר' יהודה</strong> - דלא בעי ידים מוכיחות אלא גבי גט אבל בעלמא לא והיכי קאמר הכא ר' יהודה היא:"
+  },
+  "Rashi on Nedarim 6a:7:1": {
+    "dependsOn": [
+      "Nedarim 6a:7",
+      "Rashi on Nedarim 6a:6:1",
+      "Rashi on Nedarim 6a:6:2",
+      "Rashi on Nedarim 6a:6:3",
+      "Tosafot on Nedarim 6a:7:1",
+      "Tosafot on Nedarim 3a:3:1",
+      "Rashi on Nedarim 2a:1:1",
+      "Rashi on Nedarim 6a:7:1"
+    ],
+    "generatedAt": "2026-10-29T22:09:31.188Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 6a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא [לימא] רבא דאמר כר' יהודה</strong> - דכיון דאביי לא מתרץ טעמא אליבא דר' יהודה לימא נמי דרבא לא מתרץ טעמא אליבא דרבנן כדמתרץ לעיל וכר\"י קאמר דיחידאה היא:"
+  },
+  "Rashi on Nedarim 6a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T22:12:40.161Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 6a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא לעולם רבא אפילו לרבנן</strong> - כדקאמרינן ע\"כ לא קאמרי רבנן כו' דודאי רבנן סבירא להו בעלמא דידים שאין מוכיחות לא הוויין ידים כרבא:"
+  },
+  "Tosafot on Nedarim 6a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T21:14:45.355Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 6a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי הוא עלי הרי זה עלי אסור</strong> - פי' ככר מונח לפניו אמר הרי עלי אסור מפני שהוא יד לקרבן ואסר עליו הככר כקרבן שכך מתנדב אדם ואומר הרי עלי טעמא דאמר הרי עלי אסור אבל לא אמר עלי לא וקשה לאביי:"
+  },
+  "Tosafot on Nedarim 6a:3:1": {
+    "dependsOn": [
+      "Tosafot on Nedarim 6a:2:1",
+      "Tosafot on Nedarim 6a:3:2",
+      "Tosafot on Nedarim 6a:3:3",
+      "Rashi on Nedarim 6a:3:1",
+      "Rashi on Nedarim 6a:3:2"
+    ],
+    "generatedAt": "2026-10-29T21:19:07.097Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 6a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר לך</strong> - כלומר לכך אי לא אמר עלי לא הוי בכלל דהרי הוא הפקר קאמר:"
+  },
+  "Tosafot on Nedarim 6a:3:2": {
+    "dependsOn": [
+      "Tosafot on Nedarim 6a:3:1",
+      "Tosafot on Nedarim 6a:3:3",
+      "Nedarim 6a:3",
+      "Rashi on Nedarim 6a:3:1",
+      "Rashi on Nedarim 6a:3:2"
+    ],
+    "generatedAt": "2026-10-29T21:26:12.633Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 6a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא מפני שהוא יד לקרבן קתני</strong> - דמשמע דעלי הוי יד מעליא אסור אבל אי לא אמר עלי יד מיהא הוי וקשה לאביי דאמר כו':"
+  },
+  "Tosafot on Nedarim 6a:3:3": {
+    "dependsOn": [
+      "Tosafot on Nedarim 6a:3:1",
+      "Tosafot on Nedarim 6a:3:2",
+      "Tosafot on Nedarim 6a:3:3",
+      "Nedarim 6a:3",
+      "Rashi on Nedarim 6a:3:1",
+      "Rashi on Nedarim 6a:3:2",
+      "Tosafot on Nedarim 6a:2:1",
+      "Ran on Nedarim 6a:2:1",
+      "Ran on Nedarim 6a:4:1",
+      "Tosafot on Nedarim 6a:4:1"
+    ],
+    "generatedAt": "2026-10-29T21:27:56.859Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 6a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא מפני שהוא יד לקרבן</strong> - כלומר אינו אלא יד בעלמא ואינו עיקר הקדש ואינו אסור אלא לזה ולא לכ\"ע:"
+  },
+  "Tosafot on Nedarim 6a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T21:32:46.524Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 6a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אימא טעמא דאמר עלי הוא דאסור וחבירו מותר</strong> - דאי אמר הרי הוא אסור לכ\"ע ולאו דווקא שניהם אסורין כל אחד לדידיה לחודיה דהרי הוא עיקר הקדש קאמר:"
+  },
+  "Tosafot on Nedarim 6a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T21:43:15.709Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 6a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי זו חטאת הרי זו אשם</strong> - בהמת חולין עוברת לפניו אמר הרי זו חטאת לא אמר כלום משום דאין חטאת באה נדבה ולכך כי אמר חטאת ולא אמר חטאתי לא אמר ולא כלום דמשמע שמתנדב חטאת הלכך חולין הוי ואף על גב דאמרינן לקמן ככר לפניו ואמר הרי זה קרבן אסור יש לומר דהתם משום דיודע דאי אפשר לככר היותו קרבן ונתכוין לומר כקרבן אבל הכא הוא סבור שיכול להתפיס חטאת בנדבה ולא נתכוין לאסור בהמה כחטאת אלא נדבה הלכך לא אמר כלום:"
+  },
+  "Tosafot on Nedarim 6a:5:2": {
+    "dependsOn": [
+      "Tosafot on Nedarim 6a:5:1",
+      "Tosafot on Nedarim 6a:5:2"
+    ],
+    "generatedAt": "2026-10-29T21:44:20.919Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 6a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי זו חטאתי</strong> - אם מחויב חטאת דבריו קיימין ופריך מרישא דקאמר לא אמר כלום דידים שאין מוכיחות לא הויין ידים דאי הויין ידים כי אמר ה\"ז לחטאת היה לנו לאסור כאילו אמר חטאתי:"
+  },
+  "Tosafot on Nedarim 6a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T22:00:34.472Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 6a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא מני ר' יהודה היא</strong> - דאמר לא הויין ידים:"
+  },
+  "Tosafot on Nedarim 6a:7:1": {
+    "dependsOn": [
+      "Nedarim 6a:7"
+    ],
+    "generatedAt": "2026-10-29T22:10:21.125Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 6a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לימא רבא דאמר כרבי יהודה</strong> - כי היכי דאביי כרבנן ה\"נ רבא כרבי יהודה ולא כרבנן:"
+  },
+  "Tosafot on Nedarim 6a:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T22:11:18.716Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 6a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לימא רבא דאמר כר' יהודה</strong> - דס\"ד דכי היכי דהדר ביה אביי ה\"נ הדר ביה רבא:"
+  },
+  "Tosafot on Nedarim 6a:8:1": {
+    "dependsOn": [
+      "Tosafot on Nedarim 6a:8:1",
+      "Nedarim 6a:8",
+      "Nedarim 6a:1",
+      "Tosafot on Nedarim 6a:3:1",
+      "Tosafot on Nedarim 6a:5:1",
+      "Tosafot on Nedarim 6a:8:2",
+      "Tosafot on Nedarim 2a:1:1",
+      "Tosafot on Nedarim 2a:2:1",
+      "Tosafot on Nedarim 3a:1:1",
+      "Tosafot on Nedarim 4a:1:1",
+      "Tosafot on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:5:9",
+      "Rashi on Nedarim 6a:8:1",
+      "Tosafot on Nedarim 6a:7:2"
+    ],
+    "generatedAt": "2026-10-29T22:20:26.223Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 6a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר לך רבא ה\"נ אנא דאמרי אפי' לרבנן</strong> - כדאמר לעיל ופליגי רבא ואביי אליבא דרבנן:"
+  },
+  "Tosafot on Nedarim 6a:8:2": {
+    "dependsOn": [
+      "Tosafot on Nedarim 6a:8:2",
+      "Tosafot on Nedarim 6a:8:1",
+      "Rashi on Nedarim 6a:8:1",
+      "Ran on Nedarim 6a:8:1",
+      "Tosafot on Nedarim 2a:1:1",
+      "Tosafot on Nedarim 2a:2:1",
+      "Tosafot on Nedarim 3a:1:1",
+      "Tosafot on Gittin 85b:8:1"
+    ],
+    "generatedAt": "2026-10-29T22:26:54.189Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 6a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד כאן לא קאמרי רבנן התם אלא משום דאין אדם מגרש אשת חבירו</strong> - כאן משמע דמוכיחות הוי ממינאי ובגיטין משמע דהוה להוכיח שמגרשה בלא גט ותרוייהו תננהי וצ\"ע בתוס' ממילתיה דידים שאין מוכיחות:"
+  }
+}

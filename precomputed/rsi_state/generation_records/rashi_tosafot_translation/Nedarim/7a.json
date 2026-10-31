@@ -1,0 +1,84 @@
+{
+  "Rashi on Nedarim 7a:1:1": {
+    "dependsOn": [
+      "Rashi on Nedarim 7a:3:1",
+      "Rashi on Nedarim 6b:6:1",
+      "Rashi on Nedarim 6b:7:1",
+      "Rashi on Nedarim 2a:1:1",
+      "Rashi on Berakhot 2a:5:2"
+    ],
+    "generatedAt": "2026-10-30T12:05:09.921Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 7a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעמך</strong> - כי דרוש ידרשנו ה' אלהיך מעמך:"
+  },
+  "Rashi on Nedarim 7a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T12:09:16.109Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 7a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לנפקותא בעלמא</strong> - כלומר והדין זוז אחר ליהוי לי להוצאה ודבורא הוא דלא אסקיה דלא גמר דיבורו דאמר עלי לנפקותא:"
+  },
+  "Rashi on Nedarim 7a:3:1": {
+    "dependsOn": [
+      "Rashi on Nedarim 7a:3:1",
+      "Ran on Nedarim 7a:3:1"
+    ],
+    "generatedAt": "2026-10-30T12:11:22.639Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 7a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכתיב בפיך</strong> - כאשר דברת בפיך יצא מפי צדקה <span class=\"parenthesized\">(ישעיהו מ״ה:כ״ג)</span>:"
+  },
+  "Rashi on Nedarim 7a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T12:13:18.112Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 7a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או דלמא שאני צדקה</strong> - להכי אית לה יד דלא חזיא אלא לעניים אבל הפקר דהא נמי אפי' לעשירים חזי מי אמרת דיש להן יד:"
+  },
+  "Tosafot on Nedarim 7a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T12:15:55.509Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 7a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הפקר היינו צדקה</strong> - דסתם מפקיר בשביל שיזכו בה עניים ומסיק מ\"מ הפקר הוי לעניים ולעשירים:"
+  },
+  "Tosafot on Nedarim 7a:5:2": {
+    "dependsOn": [
+      "Nedarim 7a:5",
+      "Tosafot on Nedarim 7a:5:1"
+    ],
+    "generatedAt": "2026-10-30T12:18:23.824Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 7a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם תמצא לומר דאין היקש למחצה</strong> - וא\"ת שפיר קאמר דאין היקש למחצה ומאי מיבעיא ליה גבי צדקה י\"ל דשאני הכא דסברא הוא שלא לעשות ההיקש אלא לענין בל תאחר הכתוב שם שהרי כמה דברים הכתובים באותו פסוק שחלוקים זה מזה בכמה ענינים ולא נכתב שם אלא לענין בל תאחר:"
+  },
+  "Tosafot on Nedarim 7a:5:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T12:21:17.789Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 7a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הפקר היינו צדקה</strong> - דסתם מפקיר בשביל שיזכו בה עניים ומסיק מ\"מ הפקר הוי לעניים ולעשירים:"
+  }
+}

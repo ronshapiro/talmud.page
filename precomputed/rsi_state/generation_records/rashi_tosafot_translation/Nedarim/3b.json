@@ -1,0 +1,191 @@
+{
+  "Rashi on Nedarim 3b:1:1": {
+    "dependsOn": [
+      "Rashi on Nedarim 2a:1:1",
+      "Rashi on Nedarim 2a:2:1",
+      "Nedarim 3b:1",
+      "Rashi on Sukkah 2a:9:2",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Tosafot on Menachot 2a:1:1"
+    ],
+    "generatedAt": "2026-10-29T16:53:20.410Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 3b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהנזירות חל על הנזירות</strong> - שאם היה נזיר ואמר הריני נזיר חל עליה נזירות <span class=\"parenthesized\">(במס' נזיר בפ' מי שאמר הריני נזיר <span class=\"parenthesized\">(דף טז:)</span> מחלוקת ר' יוחנן וריש לקיש)</span> וכשישלמו אותן ימי נזירות צריך להיות נזיר עוד פעם אחרת:"
+  },
+  "Rashi on Nedarim 3b:3:1": {
+    "dependsOn": [
+      "Nedarim 2a:1",
+      "Nedarim 3a:6"
+    ],
+    "generatedAt": "2026-10-29T16:54:28.676Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 3b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמעת מינה תרתי</strong> - לעשות ידות נזירות כנזירות ונזירות חל על הנזירות:"
+  },
+  "Rashi on Nedarim 3b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T16:55:17.065Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 3b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אית תנא דמפיק לידות מלנדור נדר</strong> - דלא ס\"ל דברה תורה כלשון בני אדם:"
+  },
+  "Rashi on Nedarim 3b:4:2": {
+    "dependsOn": [
+      "Rashi on Nedarim 3b:4:1"
+    ],
+    "generatedAt": "2026-10-29T16:55:57.948Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 3b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מן ככל היוצא מפיו יעשה</strong> - דמשמע בכל ענין דנדר:"
+  },
+  "Rashi on Nedarim 3b:6:1": {
+    "dependsOn": [
+      "Numbers 6:4"
+    ],
+    "generatedAt": "2026-10-29T16:57:34.676Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 3b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קם ליה בבל יאכל</strong> - כדכתיב מחרצנים ועד זג לא יאכל <span class=\"parenthesized\">(במדבר ו׳:ד׳)</span>:"
+  },
+  "Rashi on Nedarim 3b:6:2": {
+    "dependsOn": [
+      "Rashi on Nedarim 3b:6:1",
+      "Rashi on Nedarim 3b:6:3",
+      "Rashi on Nedarim 3b:4:1",
+      "Rashi on Nedarim 3b:4:2"
+    ],
+    "generatedAt": "2026-10-29T16:58:48.018Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 3b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קם ליה בבל ישתה</strong> - כל משרת ענבים לא ישתה וליכא לא יחל דברו:"
+  },
+  "Rashi on Nedarim 3b:6:3": {
+    "dependsOn": [
+      "Rashi on Nedarim 3b:6:3",
+      "Rashi on Nedarim 3b:6:1",
+      "Rashi on Nedarim 3b:6:2"
+    ],
+    "generatedAt": "2026-10-29T16:59:58.434Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 3b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רבא</strong> - לעולם אית ביה כמי לא יחל לעבור עליו בשני לאוין לא יאכל ולא יחל:"
+  },
+  "Rashi on Nedarim 3b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T17:01:55.187Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 3b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קם ליה בלא יאכל</strong> - לא מאחר לנזריה בכך דאיהו הוי נזיר אלא דקם ליה בלא יאכל:"
+  },
+  "Rashi on Nedarim 3b:7:2": {
+    "dependsOn": [
+      "Rashi on Nedarim 3b:7:1",
+      "Rashi on Nedarim 3b:7:2",
+      "Rashi on Nedarim 3b:7:3",
+      "Rashi on Nedarim 3a:1:1",
+      "Rashi on Nedarim 3a:1:2",
+      "Rashi on Nedarim 3a:2:1"
+    ],
+    "generatedAt": "2026-10-29T17:03:12.071Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 3b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באומר לכשארצה אהא נזיר</strong> - דאי משהי ליה קם ליה בבל תאחר:"
+  },
+  "Rashi on Nedarim 3b:7:3": {
+    "dependsOn": [
+      "Rashi on Nedarim 3b:7:1",
+      "Rashi on Nedarim 3b:7:2",
+      "Rashi on Nedarim 3b:7:3"
+    ],
+    "generatedAt": "2026-10-29T17:03:58.839Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 3b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אכתי מאי בל תאחר איכא</strong> - כל אימת דבעי למיהוי מצי למיהוי ולית ביה משום בל תאחר:"
+  },
+  "Rashi on Nedarim 3b:8:1": {
+    "dependsOn": [
+      "Rashi on Nedarim 3b:8:1",
+      "Tosafot on Nedarim 3b:8:1",
+      "Steinsaltz on Nedarim 3b:8",
+      "Nedarim 3b:8"
+    ],
+    "generatedAt": "2026-10-29T17:18:23.727Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 3b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא נמי לאלתר הוי נזיר</strong> - דאי משהי ליה קים ליה בבל תאחר דאמרינן דילמא השתא מאית דאיהו אמר דלא ליפטר מן העולם עד דהוי נזיר מן אלתר באותה שעה כל אלתר דגרסינן היינו על אתר באותו מקום וכן מפרש בידות:"
+  },
+  "Tosafot on Nedarim 3b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T17:01:04.685Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 3b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא בל יחל דנזיר היכי משכחת לה</strong> - דעובר בבל יחל גרידא ומשני לעבור עליו בשתים:"
+  },
+  "Tosafot on Nedarim 3b:7:1": {
+    "dependsOn": [
+      "Nedarim 3b:7"
+    ],
+    "generatedAt": "2026-10-29T17:10:28.659Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 3b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בל תאחר בנזירו' היכי משכחת לה</strong> - בשלמא גבי נדרים משכחת לה אי אמר הרי עלי עולה ושהה ולא הקריבה עד אחר שלש רגלים אלא בנזירות היכי משכחת לה דאי אמר הריני נזיר מהשתא חל עליה נזירות ומשני - כגון דאמר לא אפטר מן העולם עד שאהיה נזיר דמההיא שעתא הוי נזיר כלומר דמיד יש לו להתחיל נזירותו ואם לא התחיל עובר בבל תאחר מידי דהוה לאומר לאשתו הרי זה גיטך וכל זה מן התירוץ ור\"ת מפרש לה בתמיה מהאי שעתא הוה ליה נזיר ומאי בל תאחר איכא מידי דהוה לאומר לאשתו הרי זה גיטך דהוה גט מיד ה\"נ הוה חל עליו הנזירות מיד וכל זה מן הקושיא ולפירוש זה צריך לגרוס אמר רב אחא בר יעקב דשינויא היא דשני ליה ולפירוש אחר רב אחא בר יעקב אמר:"
+  },
+  "Tosafot on Nedarim 3b:8:1": {
+    "dependsOn": [
+      "Nedarim 3b:8",
+      "Rashi on Nedarim 3b:8:1",
+      "Rashba on Nedarim 3b:8:1",
+      "Ran on Nedarim 3b:8:1",
+      "Tosafot on Nedarim 3b:6:1",
+      "Tosafot on Nedarim 3b:7:1"
+    ],
+    "generatedAt": "2026-10-29T17:21:54.367Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 3b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מידי דהוה לאומר לאשתו</strong> - נהי דלא דמי דהתם אסורה לאכול בתרומה מיד והכא לא חל נזירות מיד לדוגמא בעלמא מדמינן דחיישינן שמא ימות מיד ה\"נ ליחוש שמא ימות מיד וקא עבר אם לא יתחיל מיד הקשה הר\"ר יוסף שהלך בארץ הצבי אמאי לא משכחת בל תאחר בנזירות דאמר הרי עלי לקבל נזירות אחר שלשים יום ואי מאחר עובר בבל תאחר ושמא היינו כשינויא דשנינן לא אפטר מן העולם עד שאהיה נזיר כלומר עד שאקבל נזירות עוי\"ל דאי מאחר לשלם נדרו א\"כ לאו היינו בל תאחר דנזיר כ\"א בל תאחר דנדר שמאחר לנדור נדרו:"
+  }
+}
