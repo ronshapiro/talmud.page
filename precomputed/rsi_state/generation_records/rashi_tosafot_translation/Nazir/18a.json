@@ -1,0 +1,350 @@
+{
+  "Rashi on Nazir 18a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T05:04:02.859Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 18a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי טעמא דרבי</strong> - דאמר לא חיילא עליה נזירות דטהרה עד יום הבאת קרבנותיו:"
+  },
+  "Rashi on Nazir 18a:10:2": {
+    "dependsOn": [
+      "Rashi on Nazir 18a:10:1"
+    ],
+    "generatedAt": "2026-10-30T05:04:55.203Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 18a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאמר קרא וכפר עליו מאשר חטא על הנפש וגו'</strong> - דמשמע אימתי וקדש את ראשו שיתחיל למנות בו בזמן שכיפר עליו דהיינו בשמיני:"
+  },
+  "Rashi on Nazir 18a:1:1": {
+    "dependsOn": [
+      "Nazir 18a:1"
+    ],
+    "generatedAt": "2026-10-30T04:42:46.515Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 18a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאי סלקא דעתך תגלחת טומאה ימי חלוטו מי לא בעי תגלחת</strong> - והכתיב וכבס המטהר את בגדיו וגו' וההוא דינא דקא מייתי ומה נזיר בקבר כו' היכי קאתי והא זה וזה ראויין לתגלחת: לעולם אימא לך תגלחת דטומאה כיון שהוזה ושנה וטבל מתגלח בשביעי שלו והאי דקא פריך ימי חלוטו שאין שערו ראוי לתגלחת בתגלחת דנזירות קאמר דאילו נזירות בקבר כשהוא מגלח מעכשיו מתגלח על נזירות אבל נזיר מצורע כשמתגלח תחילה מתגלח על שנתרפא מצרעתו והכי קתני ימי חלוטו שאין ראוי לתגלחת טומאה דנזיר אלא לתגלחת דצרעת לא כל שכן שאין עולין מן המנין דנזירות דטהרה ולעולם אימא לך היכא דנזר והוא בבית הקברות טעון גילוח דטומאה:"
+  },
+  "Rashi on Nazir 18a:2:1": {
+    "dependsOn": [
+      "Rashi on Nazir 18a:2:1",
+      "Rashi on Nazir 18a:2:2",
+      "Rashi on Nazir 18a:1:1",
+      "Rashi on Nazir 18a:5:1",
+      "Rashi on Nazir 18a:7:1",
+      "Rashi on Nazir 18a:8:1",
+      "Rashi on Nazir 18a:8:2"
+    ],
+    "generatedAt": "2026-10-30T04:45:44.851Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 18a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תא שמע</strong> - וכי ימות מת עליו בפתע פתאום בטהור שנטמא כו':"
+  },
+  "Rashi on Nazir 18a:2:2": {
+    "dependsOn": [
+      "Rashi on Nazir 18a:2:1",
+      "Nazir 18a:1",
+      "Nazir 18a:4",
+      "Rashi on Nazir 18a:3:1",
+      "Tosafot on Nazir 18a:2:2"
+    ],
+    "generatedAt": "2026-10-30T04:47:12.840Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 18a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נזיר בקבר</strong> - שהיה טמא מתחילת נזירות:"
+  },
+  "Rashi on Nazir 18a:3:1": {
+    "dependsOn": [
+      "Nazir 18a:3",
+      "Rashi on Nazir 18a:2:1",
+      "Rashi on Nazir 18a:2:2",
+      "Rashi on Nazir 18a:1:1"
+    ],
+    "generatedAt": "2026-10-30T04:49:45.447Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 18a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינו דין כו'</strong> - מדקתני ולפטור את הנזיר בקבר שאין טעון העברת שער שמע מינה דאין טעון גילוח שער ש\"מ:"
+  },
+  "Rashi on Nazir 18a:5:1": {
+    "dependsOn": [
+      "Rashi on Nazir 18a:5:2"
+    ],
+    "generatedAt": "2026-10-30T04:51:39.223Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 18a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא טמא שנזר שביעי שלו</strong> - שטובל בו עולה לו מן המנין דהואיל ואינו בר קרבן מתחיל למנות מבו ביום:"
+  },
+  "Rashi on Nazir 18a:5:2": {
+    "dependsOn": [
+      "Rashi on Nazir 18a:5:1"
+    ],
+    "generatedAt": "2026-10-30T04:52:22.435Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 18a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונזיר טהור שנטמא אין שביעי שלו עולה לו מן המנין</strong> - דאין לו טהרה עד יום שמיני שמביא קרבנותיו כו':"
+  },
+  "Rashi on Nazir 18a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T04:52:48.323Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 18a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דתניא וקדש את ראשו</strong> - שיתחיל למנות לענין נזירות ביום הבאת קרבנותיו שהוא שמיני כדכתיב וביום השמיני יביא שתי תורים:"
+  },
+  "Rashi on Nazir 18a:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T04:53:16.971Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 18a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ביום תגלחתו</strong> - שהוא שביעי כדכתיב וגילח את ראשו ביום טהרתו ביום השביעי יגלחנו:"
+  },
+  "Rashi on Nazir 18a:8:1": {
+    "dependsOn": [
+      "Rashi on Nazir 18a:8:2",
+      "Rashi on Nazir 18a:8:3",
+      "Rashi on Nazir 18a:8:4"
+    ],
+    "generatedAt": "2026-10-30T04:56:08.828Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 18a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא דתנן נזיר שנטמא כו' מאן תנא</strong> - חשיב להו טומאות הרבה ואפ\"ה לא מייתי עלייהו אלא קרבן אחד:"
+  },
+  "Rashi on Nazir 18a:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T04:57:08.252Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 18a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רב חסדא ר' יוסי ברבי יהודה היא</strong> - דאמר נזירות טהרה משביעי שהוא יום תגלחתו חיילא עילויה:"
+  },
+  "Rashi on Nazir 18a:8:3": {
+    "dependsOn": [
+      "Rashi on Nazir 18a:8:1",
+      "Rashi on Nazir 18a:8:2",
+      "Rashi on Nazir 18a:8:3",
+      "Rashi on Nazir 18a:8:4"
+    ],
+    "generatedAt": "2026-10-30T04:58:36.780Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 18a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומשכחת לה</strong> - דתיהוי טומאות הרבה:"
+  },
+  "Rashi on Nazir 18a:8:4": {
+    "dependsOn": [
+      "Rashi on Nazir 18a:8:1",
+      "Rashi on Nazir 18a:8:2",
+      "Rashi on Nazir 18a:8:3"
+    ],
+    "generatedAt": "2026-10-30T04:59:52.401Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 18a:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כגון שנטמא</strong> - ומנה ששה כדי להזות עליה בשלישי ובשביעי וחזר ונטמא ביו' ז' דטומאה אחריתי איקרי הואיל וטבל בו ביום אבל בקרבן אינו חייב אלא אחד שכל זמן שלא יצתה שעה שראויה להביא קרבן שעדיין לא הגיע ליום ח' אינו חייב אלא קרבן אחד אבל אם נטמא וחזר ונטמא בששי אינו קורא לו טומאות הרבה לפי שעדיין לא חל עליו טהרה כלל ודמי לטומאה אריכתא דאי אליבא דרבי לא משכחת לה דמיקרי טומאות הרבה ולא ליחייב אלא קרבן אחד דאי אמרת משכחת לה כגון שנטמא בשביעי וחזר ונטמא בשביעי אינו חייב אלא קרבן אחד לסוף ימי טהרתו כיון דנזירות דטהרה לא חיילא עליה עד יום שמיני כולה חדא טומאה אריכתא היא וליכא בהו טומאות הרבה ואי אמרת כגון דנטמא בשמיני והויין להו טומאות הרבה הא נמי לא מיתרצתא דלא יביא אלא קרבן אחד דאי אליבא דרבי כיון דנטמא יום שמיני שיצתה שעה שראויה להביא בה קרבן נתחייב על כל אחד הילכך לא מיתוקמא אלא כרבי יוסי ברבי יהודה ש\"מ:"
+  },
+  "Tosafot on Nazir 18a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T05:05:19.585Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 18a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכתיב מאשר חטא על הנפש</strong> - וכתיב בההוא קרא לאלתר וקדש ראשו ביום ההוא פי' ביום שכיפר עליו דהיינו בשמיני:"
+  },
+  "Tosafot on Nazir 18a:10:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 18a:10:1",
+      "Rashi on Nazir 18a:10:1",
+      "Rashi on Nazir 18a:10:2",
+      "Nazir 18a:10"
+    ],
+    "generatedAt": "2026-10-30T05:06:09.992Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 18a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם כן לימא קרא וקדש את ראשו</strong> - ופשיטא דאשמיני דקיימינן ביה איירי ביום ההוא למה לי אם אינו ענין לשמיני תנהו לשביעי דאייתור למשדי אשביעי:"
+  },
+  "Tosafot on Nazir 18a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T04:43:29.345Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 18a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ימי חלוטו מי לא בעי תגלחת</strong> - בסוף ימי חלוטו כדכתיב וכבס המטהר את בגדיו וגלח את כל שערו אבל תגלחת דטהרה לית ביה במצורע דגם תגלחת שניה שמגלח אחר ימי ספרו מתוך טומאה הוא מגלחה שגם בימי ספרו מטמא אדם במגע:"
+  },
+  "Tosafot on Nazir 18a:1:2": {
+    "dependsOn": [
+      "Nazir 18a:1"
+    ],
+    "generatedAt": "2026-10-30T04:44:11.895Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 18a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא תגלחת טומאה דנזירות קתני</strong> - כלומר לעולם אימא לך תגלחת דטומאה ודקאמרת דבימי חלוטו נמי איכא תגלחת דטומאה לא תגלחת דנזירות קתני דנזיר בקבר ראוי שערו לתגלחת מחמת נזירות ובימי חלוטו לא בעי תגלחת דטומאה מחמת נזירות אלא מחמת צרעתו וזה אין שייך לנזירות כלל הילכך לא יעלו לו ימיו לנזירותו:"
+  },
+  "Tosafot on Nazir 18a:2:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 18a:2:2",
+      "Rashi on Nazir 18a:2:1",
+      "Rashi on Nazir 18a:2:2"
+    ],
+    "generatedAt": "2026-10-30T04:47:58.024Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 18a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בטהור שנטמא הכתוב מדבר</strong> - כלומר שהתחיל למנות נזירות בטהרה ואחרי כן נטמא כדכתיב והימים הראשונים יפלו:"
+  },
+  "Tosafot on Nazir 18a:2:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 18a:2:1"
+    ],
+    "generatedAt": "2026-10-30T04:48:44.639Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 18a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולפטור את הנזיר בקבר שאין טעון העברת שיער והבאת ציפרים</strong> - והוא הדין דממעט ליה מאשם דכתיב בההוא עניינא והיינו דקאמר במתני' בנזיר בקבר אינו מביא קרבן טומאה דמיעטיה קרא כדדרשינן הכא:"
+  },
+  "Tosafot on Nazir 18a:3:1": {
+    "dependsOn": [
+      "Nazir 18a:3",
+      "Rashi on Nazir 18a:3:1"
+    ],
+    "generatedAt": "2026-10-30T04:51:06.971Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 18a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והלא דברים ק\"ו</strong> - פירוש אי לא מיעטיה קרא ומה טהור שנטמא טעון כו' כלומר שטומאתו הזקיקתו לכך כל שכן היכא דנטמא מתחילתו שטמא ביותר שהזקיקתו טומאתו לכל ת\"ל וטמא ראש נזרו מיותר דמצי למימר וכי ימות מת [עליו] בפתע פתאום וגלח ראשו:"
+  },
+  "Tosafot on Nazir 18a:7:1": {
+    "dependsOn": [
+      "Nazir 18a:7",
+      "Tosafot on Nazir 18a:7:2",
+      "Rashi on Nazir 18a:7:1",
+      "Rashi on Nazir 18a:7:2",
+      "Nazir 18a:10",
+      "Nazir 18b:1"
+    ],
+    "generatedAt": "2026-10-30T04:54:53.819Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 18a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ביום הבאת קרבנותיו</strong> - דכך כתיב בקרא ביום השמיני יביא שתי תורים וכו' וכפר עליו מאשר חטא על הנפש וקדש ראשו ביום ההוא שמעינן ביום שמיני שהוא הבאת קרבנותיו כדמפרש לקמן בסמוך:"
+  },
+  "Tosafot on Nazir 18a:7:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 18a:7:1"
+    ],
+    "generatedAt": "2026-10-30T04:55:26.253Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 18a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ביום תגלחתו</strong> - הכתוב מדבר דהיינו בשביעי בסמוך מפרש טעמא:"
+  },
+  "Tosafot on Nazir 18a:8:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 18a:8:2"
+    ],
+    "generatedAt": "2026-10-30T05:00:48.964Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 18a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא דתנן</strong> - פ' קמא דכריתות <span class=\"parenthesized\">(דף ט.)</span>:"
+  },
+  "Tosafot on Nazir 18a:8:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 18a:8:1",
+      "Tosafot on Nazir 18a:8:2",
+      "Tosafot on Nazir 18a:8:3",
+      "Rashi on Nazir 18a:8:1",
+      "Rashi on Nazir 18a:8:2"
+    ],
+    "generatedAt": "2026-10-30T05:01:45.799Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 18a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משביעי הוא דחיילא</strong> - משביעי שמתחיל לימנות נזירות משביעי:"
+  },
+  "Tosafot on Nazir 18a:8:3": {
+    "dependsOn": [
+      "Tosafot on Nazir 18a:8:1",
+      "Tosafot on Nazir 18a:8:2"
+    ],
+    "generatedAt": "2026-10-30T05:02:49.405Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 18a:8:3"
+    ],
+    "sourceText": "ומשכחת טומאות הרבה כגון שנטמא ביום שביעי וחזר ונטמא בשביעי לסוף שביעי אחר שהזה ושנה וטבל דמיד כשהזה וטבל חל עליו באותו יום נזירות טהרה שיום שביעי הוי ממנין שלשים כי נטמא ביום שביעי כיון דחל עליה נזירות טהרה כבר חשיב ליה טומאה אחריתי ולא הוה כנטמא בששי דההיא ודאי טומאה אריכתא היא דאכתי לא חל עליה נזירות טהרה ומכל מקום פוטר עצמו מקרבן טומאה אחר כיון שנטמא בשביעי ולא יצא שעה אחת ליום שראוי הוא להביא קרבנות דהיינו ביום שמיני:"
+  },
+  "Tosafot on Nazir 18a:9:1": {
+    "dependsOn": [
+      "Nazir 18a:9"
+    ],
+    "generatedAt": "2026-10-30T05:03:37.302Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 18a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאי רבי</strong> - דאמר דאינו מתחיל למנות נזירות טהרה עד יום שמיני כולה טומאה אריכתא היא דלא נראה עדיין להתחיל נזירות והוי כאילו נטמא בששי ואמאי קרי ליה טומאות הרבה ואי דנטמא בשמיני כו' כיון דיצא לשעה שראוי להביא קרבנותיו והוי כנטמא אחר הבאת קרבנותיו דודאי צריך להביא קרבן טומאה אחר:"
+  }
+}

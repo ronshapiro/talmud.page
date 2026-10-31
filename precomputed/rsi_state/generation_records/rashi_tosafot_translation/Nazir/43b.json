@@ -1,0 +1,450 @@
+{
+  "Rashi on Nazir 43b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T13:04:37.130Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רב חסדא נקטע ראשו של אביו</strong> - אע\"פ שהראש בצד הגוף הואיל וכבר נקטע אינו מיטמא דאמר קרא לנפש לא יטמא בעמיו כי אם לשארו הקרוב אליו לאמו ולאביו בזמן שהוא שלם שלא נתפרדו אבריו זה מזה ולא בזמן שהוא חסר כגון זה שנקטע ראשו:"
+  },
+  "Rashi on Nazir 43b:1:2": {
+    "dependsOn": [
+      "Jastrow, פִּקְתָא 1",
+      "Rashi on Berakhot 54a:12:1"
+    ],
+    "generatedAt": "2026-10-31T13:05:37.090Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בפקתא</strong> - בבקעה:"
+  },
+  "Rashi on Nazir 43b:1:3": {
+    "dependsOn": [
+      "Rashi on Nazir 43b:1:2",
+      "Rashi on Nazir 43b:1:3",
+      "Rashi on Nazir 43b:1:4"
+    ],
+    "generatedAt": "2026-10-31T13:06:08.310Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דערבות</strong> - שגנבים ולסטין מצוין שם:"
+  },
+  "Rashi on Nazir 43b:1:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T13:06:32.893Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43b:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ופסקו גנבי לרישיה ה\"נ דלא יטמא</strong> - בשביל שהוא חסר:"
+  },
+  "Rashi on Nazir 43b:2:1": {
+    "dependsOn": [
+      "Nazir 43b:2",
+      "Rashi on Nazir 43b:2:1",
+      "Rashi on Nazir 43b:2:2",
+      "Tosafot on Nazir 43b:2:1"
+    ],
+    "generatedAt": "2026-10-31T13:12:07.048Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ל</strong> - ממת מצוה קא מייתית לי שאני התם כיון דלית בהדיה אלא הוא לחודיה קאי גביה כמת מצוה דמי:"
+  },
+  "Rashi on Nazir 43b:2:2": {
+    "dependsOn": [
+      "Rashi on Nazir 43b:2:1"
+    ],
+    "generatedAt": "2026-10-31T13:12:43.982Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והשתא י\"ל באחריני מיטמא</strong> - כדאמרינן לקמן לאחותו הוא דאינו מטמא אבל מטמא למת מצוה אביו לא כל שכן:"
+  },
+  "Rashi on Nazir 43b:3:1": {
+    "dependsOn": [
+      "Nazir 43b:3"
+    ],
+    "generatedAt": "2026-10-31T13:14:31.759Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא אית ליה ברא</strong> - ואילו הוה קורא ליה אב הא עני ליה איהו ולא הוי ליה מת מצוה:"
+  },
+  "Rashi on Nazir 43b:4:1": {
+    "dependsOn": [
+      "Rashi on Nazir 43b:4:2",
+      "Rashi on Nazir 43b:4:3"
+    ],
+    "generatedAt": "2026-10-31T13:17:03.755Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיתיבי ולאחותו הבתולה וגו' לה יטמא</strong> - כשהיא שלימה:"
+  },
+  "Rashi on Nazir 43b:4:2": {
+    "dependsOn": [
+      "Rashi on Nazir 43b:4:1",
+      "Rashi on Nazir 43b:4:2",
+      "Rashi on Nazir 43b:4:3",
+      "Rashi on Nazir 43b:6:2",
+      "Tosafot on Nazir 43b:4:1",
+      "Tosafot on Nazir 43b:4:2"
+    ],
+    "generatedAt": "2026-10-31T13:20:27.822Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואינו מיטמא לאבריה</strong> - שאם נפרד ממנה אבר בין בחייה בין במותה אינו מיטמא לה לפי שאין אדם מיטמא לא לה ולא על א' משאר קרובין על אבר מן החי' לפי שאינו יכול להחזירו לכמות הוא מתחילה וה\"ה נמי לאבר מן המת שאין בין אבר מן המת לאבר מן החי אלא בשר הפורש:"
+  },
+  "Rashi on Nazir 43b:4:3": {
+    "dependsOn": [
+      "Rashi on Nazir 43b:4:1",
+      "Rashi on Nazir 43b:4:2",
+      "Nazir 43b:5",
+      "Nazir 43b:6"
+    ],
+    "generatedAt": "2026-10-31T13:22:23.578Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל מחזיר הוא על עצם כשעורה ה\"ג מאי מחזיר הוא על עצם כשעורה דאילו מחסר פורתא</strong> - כלומר דבשעה שנגע בה ברישא הוה חסר להך עצם פורתא כשעורה ואפ\"ה היה מותר ליטמא לה וה\"ה לאביו אע\"ג דהוא חסר ואינו שלם וקשיא לרב חסדא דהא סתמא לדברי הכל היא:"
+  },
+  "Rashi on Nazir 43b:6:1": {
+    "dependsOn": [
+      "Nazir 43b:6",
+      "Rashi on Nazir 43b:6:1",
+      "Rashi on Nazir 43b:6:2",
+      "Rashi on Nazir 43b:4:1",
+      "Rashi on Nazir 43b:2:1",
+      "Rashi on Nazir 43b:1:1",
+      "Rashi on Nazir 43a:1:1",
+      "Rashi on Nazir 43a:2:1"
+    ],
+    "generatedAt": "2026-10-31T13:31:04.899Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא ההיא ר' יהודה היא</strong> - דסתם סיפרא רבי יהודה היא ושמעינן ליה לרבי יהודה דאמר נמי [בכהאי גוונא]:"
+  },
+  "Rashi on Nazir 43b:6:2": {
+    "dependsOn": [
+      "Rashi on Nazir 43b:6:1",
+      "Rashi on Nazir 43b:1:1",
+      "Rashi on Nazir 43b:2:1",
+      "Rashi on Nazir 43b:4:1",
+      "Nazir 43b:6",
+      "Rashi on Nazir 43a:1:1",
+      "Rashi on Nazir 42b:1:1"
+    ],
+    "generatedAt": "2026-10-31T13:33:13.880Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דתניא וה\"ג ר' יהודה אומר לה יטמא ואינו מיטמא לאבריה לפי שאין אדם מיטמא על עצם כשעורה מאביו אבל הוא חוזר על עצם כשעורה מאביו</strong> - כלומר לאיבריו הוא דאינו מיטמא בין בחייו בין במותו לפי שאין אדם מיטמא תחילה על עצם כשעורה מאביו לפי שלא התירה תורה ליטמא אלא בדבר שעיקר הגוף בו אבל מיטמא הוא לעיקר הגוף לכתחלה ואם נחסר הוא הולך ובודק אחריו ואפילו על עצם כשעורה ואנא אמינא לה כרבנן דפליגי עליה דר' יהודה דאמרי כיון שנחסר במקצת שוב אינו מותר ליטמא בו וספרים שכתוב בהן לפי שאינו מיטמא לאבר מן החי של אביו אבל מיטמא לאבר מן המת של אביו שבשתא היא מדתני רב כהנא בסמוך אף כל שכל גופו תלוי בו כגון רוב בנינו ורוב מנינו הוא דמיטמא אבל לא לאבר אחד ומוקימנא לה לההיא נמי כרבי יהודה ועוד לא אשכחן לה דנישנית משנה זו בשם ר' יהודה הכי דהא לא קתני לה הכי אלא כדגרסינן לה אנן לפי שאין אדם מיטמא על עצם כשעורה כו':"
+  },
+  "Rashi on Nazir 43b:7:1": {
+    "dependsOn": [
+      "Rashi on Nazir 43b:7:2",
+      "Rashi on Nazir 43b:7:3",
+      "Rashi on Nazir 43b:6:1",
+      "Rashi on Nazir 43b:4:1"
+    ],
+    "generatedAt": "2026-10-31T13:43:20.164Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והתני רב כהנא בר\"א</strong> - כלומר בברייתא דר' אליעזר בן יעקב:"
+  },
+  "Rashi on Nazir 43b:7:2": {
+    "dependsOn": [
+      "Nazir 50a:1",
+      "Rashi on Nazir 43b:7:1",
+      "Rashi on Nazir 43b:7:3"
+    ],
+    "generatedAt": "2026-10-31T13:45:18.010Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כזית נצל</strong> - נצל ליחה היוצא מן המת שפורש ממנו ואין נצל אלא לשון הפרשה כמו שמתרגמינן ויצל אלהים <span class=\"parenthesized\">(בראשית לא)</span> ואפרש יי' מפי רבי אליקום מפרש לקמן בשר המת שקרש בפ' כ\"ג ונזיר <span class=\"parenthesized\">(נזיר דף נ.)</span>:"
+  },
+  "Rashi on Nazir 43b:7:3": {
+    "dependsOn": [
+      "Rashi on Nazir 43b:7:1",
+      "Rashi on Nazir 43b:7:2",
+      "Rashi on Nazir 43b:7:3",
+      "Nazir 43b:7",
+      "Versions on Nazir 43b:7",
+      "Rashi on Nazir 43b:8:1",
+      "Rashi on Nazir 43b:6:1",
+      "Rashi on Nazir 43b:6:2",
+      "Rashi on Nazir 43b:8:2",
+      "Torah Temimah on Torah, Leviticus 21:3:6",
+      "Steinsaltz comment #1 on Nazir 43b:7",
+      "Steinsaltz on Nazir 43b:7",
+      "Tosafot on Nazir 43b:6:2"
+    ],
+    "generatedAt": "2026-10-31T13:48:01.983Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43b:7:3"
+    ],
+    "sourceText": "והתני רב כהנא בברייתא דר\"א בן יעקב לה מיטמא בגופה שלם ולא לאחד מאבריה פרט לכזית מן המת כו' שאינו מיטמא לה:"
+  },
+  "Rashi on Nazir 43b:8:1": {
+    "dependsOn": [
+      "Nazir 43b:8"
+    ],
+    "generatedAt": "2026-10-31T13:48:33.019Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יכול לא יטמא לשדרה ולגולגולת כו'</strong> - הואיל ואתה אומר כן שאינו מיטמא לאברים:"
+  },
+  "Rashi on Nazir 43b:8:2": {
+    "dependsOn": [
+      "Rashi on Nazir 43b:8:1"
+    ],
+    "generatedAt": "2026-10-31T13:49:40.456Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשהוא אומר</strong> - אמור אל הכהנים בני אהרן ואמרת אליהם הוסיף לך הכתוב טומאה אחרת דבשדרה ורוב בניינה כגון שתי שוקיים ירך אחת וברוב מניינה כגון קכ\"ה איברים הימנה שיכול ליטמא:"
+  },
+  "Tosafot on Nazir 43b:1:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 43b:1:1",
+      "Tosafot on Nazir 43b:1:2",
+      "Tosafot on Nazir 43b:2:1",
+      "Tosafot on Nazir 43a:1:1",
+      "Tosafot on Nazir 42b:1:1"
+    ],
+    "generatedAt": "2026-10-31T13:07:17.541Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 43b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נקטע ראשו של אביו אינו מיטמא</strong> - בכהן הדיוט מיירי שמותר ליטמא לאביו ולא בכהן גדול ונזיר:"
+  },
+  "Tosafot on Nazir 43b:1:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 43b:1:1",
+      "Rashi on Nazir 43b:1:1",
+      "Rashi on Nazir 43b:1:2",
+      "Rashi on Nazir 43b:1:3",
+      "Rashi on Nazir 43b:1:4",
+      "Nazir 43b:1",
+      "Tosafot on Nazir 43b:2:1",
+      "Tosafot on Nazir 43b:3:1",
+      "Versions on Nazir 43b:1",
+      "Steinsaltz comment #1 on Nazir 43b:1",
+      "Steinsaltz comment #2 on Nazir 43b:1",
+      "Steinsaltz comment #3 on Nazir 43b:1",
+      "Steinsaltz comment #4 on Nazir 43b:1",
+      "Steinsaltz comment #5 on Nazir 43b:1",
+      "Steinsaltz on Nazir 43b:1",
+      "["
+    ],
+    "generatedAt": "2026-10-31T13:10:35.026Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 43b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ליה רב המנונא ההוא דקא אזיל בפקתא דערבות</strong> - בקעה שמצויין בה גנבי ופסקוה גנבי לרישיה דאבוה ה\"נ לא ליטמא ליה צ\"ל מה ר\"ל:"
+  },
+  "Tosafot on Nazir 43b:2:1": {
+    "dependsOn": [
+      "Nazir 43b:2",
+      "Rashi on Nazir 43b:2:1",
+      "Rashi on Nazir 43b:2:2",
+      "Tosafot on Nazir 43b:3:1"
+    ],
+    "generatedAt": "2026-10-31T13:13:58.018Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 43b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ל מת מצוה קאמרת השתא [כהן] באחריני</strong> - שאינן קרובין מיחייב באביו לא כ\"ש:"
+  },
+  "Tosafot on Nazir 43b:3:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 43b:3:1",
+      "Tosafot on Nazir 43a:4:3"
+    ],
+    "generatedAt": "2026-10-31T13:16:24.665Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 43b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והאי מת מצוה הוא בתמיה והתניא איזהו מת מצוה כל שקורא ואין אחרים עונין אותו</strong> - כלומר שאם המת יכול לקרות ויש לו עונין קרובין אין זה מת מצוה והא יש לו לשכור אחרים מתעסקין בו כיון דקא אזיל באורחא כמי שאין לו קוברין דמי. דלא שכיחי אינשי התם פי' ר\"י הבא ליטפל במת מצוה אם יש שם ישראל שיכול לטפל אף כי אינן קרובין לא ליטפל בהן [כהנים] קרובים וראיה דאמר בפ' כ\"ג <span class=\"parenthesized\">(לקמן נזיר דף מז.)</span> גבי מת מצוה כ\"ג ונזיר יטמא נזיר ואל יטמא כהן וכ\"ש כהן וישראל יטמא ישראל ואל יטמא כהן וצ\"ע [מהאי] דפ' <span class=\"parenthesized\">(האשה רבה יבמות דף פט:)</span> גבי אשתו קטנה יורשה ומיטמא לה ואין כח לעקור דבר מן התורה [ואמאי] יטמא ומשני כיון דקרובין לא [ירתי לה קרי ולא עני] לה קרינן בה והשתא ה\"ד אי דליכא מתעסקים אחרים מאי איריא מטעם אשתו תיפוק ליה דאפילו אחריתי נמי מת מצוה גמור היא אלא דאיכא אחרים דיכולים להתעסק וחשוב כמת מצוה אלמא כהן ומת לפניו ויש שם ישראל ואינו חושש ליטפל חשיב מת מצוה ואר\"י דודאי מן הדין לאו מת מצוה התם רק לפי שקרוביה מתרשלים ממנה שויוה רבנן כמת מצוה ואף כי אין כח ביד חכמים לעקור דבר מן התורה בקום ועשה במקום שיש פנים וטעם בדבר ודאי לכ\"ע יש כח לעקור תדע דבכולי סוגיא דהתם <span class=\"parenthesized\">(לא)</span> מייתי מאשה שנאמנת לומר מת בעלי דהרי עוקרה דבר תורה בקום ועשה אלמא ודאי במקום שיש פנים וטעם יש כח לעקור ודייקא ומנסבא מתוך חומר שמחמירין בסופה:"
+  },
+  "Tosafot on Nazir 43b:4:1": {
+    "dependsOn": [
+      "Rashi on Nazir 43b:4:1",
+      "Rashi on Nazir 43b:4:2",
+      "Tosafot on Nazir 43b:4:1",
+      "Tosafot on Nazir 43b:4:2",
+      "Nazir 43b:4",
+      "Gilyon HaShas on Nazir 43b:1",
+      "Sifra, Emor, Section 1 13",
+      "Torah Temimah on Torah, Leviticus 21:3:6"
+    ],
+    "generatedAt": "2026-10-31T13:24:13.345Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 43b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיתיבי לה יטמא</strong> - גבי כהן הדיוט [כתיב] ואינו מטמא לה פרט לאבר מן החי של אחותו ואבר מן המת שאינו רשאי להטמאות בהן:"
+  },
+  "Tosafot on Nazir 43b:4:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 43b:4:2",
+      "Tosafot on Nazir 43b:4:1",
+      "Tosafot on Nazir 43b:4:3"
+    ],
+    "generatedAt": "2026-10-31T13:26:55.072Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 43b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לפי שאינו מיטמא לאבר מן החי של אביו</strong> - כלומר שאף באביו הקרוב יותר אינו רשאי לטמאות לאבר אביו וצ\"ע [דל\"ל] יטמא מלאביו נפקא:"
+  },
+  "Tosafot on Nazir 43b:4:3": {
+    "dependsOn": [
+      "Tosafot on Nazir 43b:4:1",
+      "Tosafot on Nazir 43b:4:2",
+      "Tosafot on Nazir 43b:4:3",
+      "Nazir 43b:4",
+      "Rashi on Nazir 43b:4:1",
+      "Rashi on Nazir 43b:4:2",
+      "Rashi on Nazir 43b:4:3",
+      "Rashi on Nazir 43b:5:1",
+      "Rosh on Nazir 43b:1",
+      "Versions on Nazir 43b:4",
+      "Steinsaltz comment #3 on Nazir 43b:4",
+      "Steinsaltz comment #4 on Nazir 43b:4",
+      "Steinsaltz comment #5 on Nazir 43b:4",
+      "Tosafot on Nazir 43b:6:1",
+      "Nazir 43b:1"
+    ],
+    "generatedAt": "2026-10-31T13:29:15.343Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 43b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל מחזיר הוא על עצם כשעורה</strong> - לקוברו פי' אם נטמא כבר לשאר הגוף מאי מחזיר [לאו] דחסר פורתא ה\"נ כי אביו חסר בערכו מיטמא לו:"
+  },
+  "Tosafot on Nazir 43b:6:1": {
+    "dependsOn": [
+      "Nazir 43b:6",
+      "Tosafot on Nazir 43b:4:1",
+      "Tosafot on Nazir 43b:4:2",
+      "Tosafot on Nazir 43b:4:3",
+      "Rashi on Nazir 43b:6:1",
+      "Rashi on Nazir 43b:6:2",
+      "Tosafot on Nazir 43b:6:2",
+      "Tosafot on Nazir 43b:8:1",
+      "Tosafot on Nazir 43b:8:2"
+    ],
+    "generatedAt": "2026-10-31T13:35:22.355Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 43b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי יהודה היא דתניא רבי יהודה אומר לה מיטמא ואינו מיטמא לאברים לפי שאינו מיטמא לאבר מן החי של אביו אבל מיטמא הוא לאבר מן המת של אביו</strong> - ע\"י [חזרה] אם נטמא אל שאר הגוף אבל לכתחילה ודאי מודה רבי יהודה דלא יטמא כברייתא דלעיל ובסיפא דההיא דלעיל תניא בתורת כהנים רבי אומר אינו מיטמא לעצם כשעורה מאביו אבל מחזיר הוא על עצם כשעורה ודבר תימה דאוקימנא כר' יהודה והרי מיירי בסיפא מכלל דרישא לאו ר' יהודה היא אם לא נאמר כולה ר' יהודה היא:"
+  },
+  "Tosafot on Nazir 43b:6:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 43b:6:1",
+      "Rashi on Nazir 43b:6:1",
+      "Rashi on Nazir 43b:6:2",
+      "Nazir 43b:7",
+      "Rashi on Nazir 43b:7:1",
+      "Rashi on Nazir 43b:7:2",
+      "Rashi on Nazir 43b:7:3",
+      "Tosafot on Nazir 43b:8:1",
+      "Tosafot on Nazir 43b:8:2"
+    ],
+    "generatedAt": "2026-10-31T13:36:44.135Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 43b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לה הוא מיטמא [ואינו מיטמא] לאבריה פרט לכזית מן המת וכזית נצל</strong> - ליחה היוצאה מן המת ומלא תרווד רקב מלא כף עפרורית ורקבון גוף המת:"
+  },
+  "Tosafot on Nazir 43b:8:1": {
+    "dependsOn": [
+      "Rashi on Nazir 43b:8:1",
+      "Rashi on Nazir 43b:8:2",
+      "Tosafot on Nazir 43b:8:2"
+    ],
+    "generatedAt": "2026-10-31T13:51:40.883Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 43b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יכול לא יטמא לשדרה וגולגולת ולרוב מניינה</strong> - לקמן פי' בהדיא ומפרש לה רוב מניינה מנין [קכ\"ה] אברים:"
+  },
+  "Tosafot on Nazir 43b:8:2": {
+    "dependsOn": [
+      "Nazir 43b:8",
+      "Tosafot on Nazir 43b:8:1",
+      "Tosafot on Nazir 43b:8:2",
+      "Nazir 44a:1",
+      "Rashi on Nazir 43b:8:1",
+      "Rashi on Nazir 43b:8:2",
+      "Nazir 43b:6",
+      "Nazir 43b:2"
+    ],
+    "generatedAt": "2026-10-31T13:57:19.187Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 43b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשהוא אומר אמור ואמרת</strong> - דכתיב אמור אל הכהנים ואמרת הוסיף הכתוב טומאה אחרת שתוכל ליטמא וסברא הוא להעמיד אמור ואמרת אאחותו דאיירי למעוטי אברים ולהוסיף שיוכל לטמאות לרוב בניינה ורוב מניינה יכול לא יטמא לשדרה וגולגולת ולרוב מניינו ולרוב בניינו של קרובים אחרים שבתורה דכתיב [לה יטמא] אמרת מה אחותו מיוחדת שגופה תלוי בו כלומר שהרי קרובתו ומוטלת עליו לקוברו ומן הדין הוה ליה למימר יכול יטמא למתים אחרים אף לאברים אי לא גמרינן מאחותו דכתיב בה לה ומשני ההיא נמי כר\"א ב\"ר יהודה ורב חסדא דאמר כי האי תנא:"
+  }
+}

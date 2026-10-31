@@ -1,0 +1,368 @@
+{
+  "Rashi on Nazir 27b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T15:16:15.735Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 27b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי מצית אמרת דהאיך דהויא חטאת תקרב עולה</strong> - הא ההיא דלשום חטאת הויא נקבה והאי דעולה הוי זכר:"
+  },
+  "Rashi on Nazir 27b:2:1": {
+    "dependsOn": [
+      "Rashi on Nazir 27b:1:1",
+      "Rashi on Nazir 27b:2:1",
+      "Rashi on Nazir 27b:2:2",
+      "Rashi on Nazir 27b:2:3",
+      "Steinsaltz on Nazir 27b:2",
+      "Tosafot on Nazir 27b:2:1",
+      "Nazir 27b:2"
+    ],
+    "generatedAt": "2026-10-30T15:19:15.315Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 27b:2:1"
+    ],
+    "sourceText": "מתיב רב המנונא ומי אמרינן דבהמה בעלת מום כסתומה דמיא והתניא כיצד אמרו האיש מגלח כו':"
+  },
+  "Rashi on Nazir 27b:2:2": {
+    "dependsOn": [
+      "Rashi on Nazir 27b:2:1",
+      "Rashi on Nazir 27b:2:2",
+      "Rashi on Nazir 27b:2:3",
+      "Rashi on Nazir 27b:1:1",
+      "Rashi on Nazir 27b:4:1",
+      "Rashi on Nazir 27b:4:2",
+      "Rashi on Nazir 27b:5:1",
+      "Versions on Nazir 27b:2",
+      "Steinsaltz on Nazir 27b:2",
+      "Steinsaltz comment #1 on Nazir 27b:2",
+      "Steinsaltz comment #2 on Nazir 27b:2",
+      "Tosafot on Nazir 27b:2:1"
+    ],
+    "generatedAt": "2026-10-30T15:24:59.339Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 27b:2:2"
+    ],
+    "sourceText": "ה\"ג כיצד אמרו האיש מגלח על נזירות אביו בזמן שהיה אביו נזיר והפריש אביו מעות לנזירות ומת כו':"
+  },
+  "Rashi on Nazir 27b:2:3": {
+    "dependsOn": [
+      "Rashi on Nazir 27b:2:1",
+      "Rashi on Nazir 27b:2:2",
+      "Nazir 27b:2",
+      "Rashi on Nazir 30a:5:1"
+    ],
+    "generatedAt": "2026-10-30T15:26:42.248Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 27b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הריני נזיר ע\"מ שאגלח על מעות אבא אין זה מגלח על מעות אביו היו לו מעות סתומין כו'</strong> - וסדר המשנה אינה כן דמעיקרא הוה ליה למיתני מגלח על נזירות אבא אלא רב המנונא דבעי לאיתויי פירכא מינה טריחא ליה מילתא למיתני כיצד הוא מגלח והוא מדלג בה ונקיט בסיפא משום דבעי פרוכי מינה אין זה מגלח על מעות אביו הואיל וכבר מת אביו קודם שקיבל עליו זה נזירות אבל בסיפא דברייתא מפרש כיצד מגלח על נזירות אביו כדמפרש בסיפא דמתני':"
+  },
+  "Rashi on Nazir 27b:3:1": {
+    "dependsOn": [
+      "Rashi on Nazir 27b:3:2",
+      "Nazir 27b:2",
+      "Tosafot on Nazir 27b:3:1",
+      "Steinsaltz on Nazir 27b:3:1"
+    ],
+    "generatedAt": "2026-10-30T15:29:41.739Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 27b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היתה לו בהמה מופרשת</strong> - כלומר שהפריש ג' בהמות אבל לא פי' איזו לחטאת ואיזו לעולה:"
+  },
+  "Rashi on Nazir 27b:3:2": {
+    "dependsOn": [
+      "Nazir 27b:3"
+    ],
+    "generatedAt": "2026-10-30T15:30:32.518Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 27b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי לאו אפי' בעלת מום</strong> - שהן בעלי מומין וקא חשיב להו כמפורשים דקאמר החטאת תמות והעולה תקרב כלומר תמכר ויביא בדמיה עולה וקשיא לר\"נ דאמר בעלת מום כסתומה דמיא ויפלו דמיה לנדבה כדין מעות סתומין:"
+  },
+  "Rashi on Nazir 27b:4:1": {
+    "dependsOn": [
+      "Nazir 27b:4",
+      "Rashi on Nazir 27b:4:2"
+    ],
+    "generatedAt": "2026-10-30T15:33:53.568Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 27b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא תמימה</strong> - הראויה ליקרב ומשום הכי הויין להו כמפורשין:"
+  },
+  "Rashi on Nazir 27b:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T15:34:20.476Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 27b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי איריא</strong> - דתני מעות כסתומין דמיין ליתני בהמה בעלת מום ואנא אמינא מדבהמה דמיא כסתומה כ\"ש מעות:"
+  },
+  "Rashi on Nazir 27b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T15:37:42.216Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 27b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכי נמי</strong> - קתני דבהמה בעלת מום למאי קדישא לדמי ודמי מעות נינהו וכיון דקתני מעות לא איצטריך למיתני בעלת מום:"
+  },
+  "Rashi on Nazir 27b:6:1": {
+    "dependsOn": [
+      "Rashi on Nazir 27b:6:1",
+      "Rashi on Nazir 27b:6:2",
+      "Rashi on Nazir 27b:6:3",
+      "Rashi on Nazir 27b:4:1",
+      "Rashi on Nazir 27b:4:2",
+      "Rashi on Nazir 27b:5:1",
+      "Steinsaltz on Nazir 27b:6",
+      "Tosafot on Nazir 27b:6:1",
+      "Rashi on Nazir 27b:2:1",
+      "Rashi on Nazir 27b:2:2",
+      "Rashi on Nazir 27b:3:1"
+    ],
+    "generatedAt": "2026-10-30T15:40:51.901Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 27b:6:1"
+    ],
+    "sourceText": "מתיב רבא אשר נשיא יחטא וגו' והביא את קרבנו בקרבנו הוא יוצא:"
+  },
+  "Rashi on Nazir 27b:6:2": {
+    "dependsOn": [
+      "Rashi on Nazir 27b:6:1",
+      "Rashi on Nazir 27b:6:2",
+      "Rashi on Nazir 27b:6:3"
+    ],
+    "generatedAt": "2026-10-30T15:41:32.139Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 27b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יכול לא [יצא] בקרבן אביו</strong> - שהפריש אביו מן עבירה קלה שעבר כגון שבועת העדות ושבועת ביטוי:"
+  },
+  "Rashi on Nazir 27b:6:3": {
+    "dependsOn": [
+      "Rashi on Nazir 27b:6:1",
+      "Rashi on Nazir 27b:6:2"
+    ],
+    "generatedAt": "2026-10-30T15:42:22.139Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 27b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על החמורה</strong> - שהבן חטא כגון שאכל חלב ודם או שנתחייב בחייבי מיתות בית דין:"
+  },
+  "Rashi on Nazir 27b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T15:44:25.424Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 27b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תלמוד לומר</strong> - ואם נפש אחת תחטא והביא <span class=\"parenthesized\">(את)</span> קרבנו:"
+  },
+  "Rashi on Nazir 27b:8:1": {
+    "dependsOn": [
+      "Rashi on Nazir 27b:8:2"
+    ],
+    "generatedAt": "2026-10-30T15:46:45.590Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 27b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יכול לא [יצא] בקרבן אביו</strong> - שהפריש אביו מן עבירה קלה שעבר כגון שבועת העדות ושבועת ביטוי:"
+  },
+  "Rashi on Nazir 27b:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T15:47:21.684Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 27b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהרי אין אדם מגלח על בהמת אביו בנזירות</strong> - כדתנן <span class=\"parenthesized\">(לקמן נזיר דף ל.)</span> מי שהיה הוא ואביו נזירין והפריש אביו מעות סתומין כו' מדקאמר מעות ולא אמר בהמה שמע מינה דעל מעות הוא דמגלח ולא על בהמה:"
+  },
+  "Tosafot on Nazir 27b:2:1": {
+    "dependsOn": [
+      "Nazir 27b:2",
+      "Rashi on Nazir 27b:2:1",
+      "Rashi on Nazir 27b:2:2",
+      "Rashi on Nazir 27b:2:3",
+      "Nazir 26b:4",
+      "Nazir 30a:5",
+      "Nazir 30a:6"
+    ],
+    "generatedAt": "2026-10-30T15:28:41.620Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 27b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתיב רב הונא</strong> - אמרת בעלת מום כסתומים דמיא לר\"נ דאמר לעיל הכי פריך והתניא כיצד האיש מגלח לנזירות אביו ה\"ג בזמן שאביו היה נזיר והפריש מעות לנזירותו פירוש סתומין ומת ואמר הבן הריני נזיר ע\"מ שאני מגלח על מעות אבי דהוא שמגלח על מעות אביו פירוש אע\"ג דלקמן מייתינן דאם אביו הפריש מעות לחטאתו שאכל חלב ומת ונתחייב הבן גם הוא חטאת חלב אינו מביא חטאתו ממעות שהפריש אביו חטאת ה\"נ הלכה היא בנזיר שמגלח על מעות שהפריש אביו לנזירותו ודוקא שלא נדר הבן בחיי אביו כדמסיק והולך אבל נדר בחיי אביו לא כדקתני אבל מי שהיה הוא ואביו נזירים והפריש אביו מעות פירוש בסתמא ומת ואמר הבן הריני מגלח על מעות אבי אינו מגלח עליהם אלא יפלו לנדבה דכך היא הלכה ואית ספרים דגרסי איפכא וגירסא זו עיקר:"
+  },
+  "Tosafot on Nazir 27b:3:1": {
+    "dependsOn": [
+      "Nazir 27b:3",
+      "Rashi on Nazir 27b:3:1",
+      "Rashi on Nazir 27b:3:2",
+      "Nazir 27b:1",
+      "Rashi on Nazir 27b:4:1",
+      "Tosafot on Nazir 27b:4:1",
+      "Tosafot on Nazir 27b:4:2"
+    ],
+    "generatedAt": "2026-10-30T15:33:00.837Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 27b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היתה לו בהמה מופרשת [חטאת] תמות עולה תקרב עולה ושלמים תקרב שלמים מאי לאו אפילו בהמה בעלת מום</strong> - כלומר מאי לאו אפי' הפריש אביו שלש בהמות בעלי מום ומת דניתן להן דין מפורשות בתערובת ימותו ולא ניתן להם דין מעות סתומין לפדותם ולהביא בדמיהן נדבה דבעלי מום [כמפורשין דמי]:"
+  },
+  "Tosafot on Nazir 27b:4:1": {
+    "dependsOn": [
+      "Nazir 27b:4",
+      "Tosafot on Nazir 27b:4:2",
+      "Tosafot on Nazir 27b:3:1",
+      "Tosafot on Nazir 27b:2:1"
+    ],
+    "generatedAt": "2026-10-30T15:35:20.027Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 27b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא תמימה</strong> - כלומר לא משכחת דין מפורשת אלא בבהמה תמימה אבל בעלת מום כסתומין דמיין במעורבין:"
+  },
+  "Tosafot on Nazir 27b:4:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 27b:4:1",
+      "Nazir 27b:2",
+      "Nazir 27b:3"
+    ],
+    "generatedAt": "2026-10-30T15:36:39.653Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 27b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי איריא דתני מעות כו'</strong> - [אמאי נקט ברישא מעות ה\"ל למיתני ברישא היתה לו בהמה בעלת מום דהכי הוי שפיר טפי למיתני דין סתומים ומפורש הכל בבהמות] וא\"ת ואמאי לא פריך ממתני' דקתני מעות סתומין יפלו לנדבה ואי בהמה בעלת מום כמעות סתומין ליתני בהמה בעלת מום וי\"ל דמברייתא פריך שפיר דמשמע דכולה ברייתא בסתומין מיירי וא\"כ ליתני כולה בבהמה וליפלוג וליתני בדידה הכל בין בעלת מום בין תמימה אבל במתני' קתני מעות מפורשין להכי קתני בתר הכי מעות סתומין ומחלק הכל במעות להכי ליכא למיפרך ליתני בהמה בעלת מום דהוי כסתומין במקום [מעות]:"
+  },
+  "Tosafot on Nazir 27b:6:1": {
+    "dependsOn": [
+      "Rashi on Nazir 27b:6:1",
+      "Rashi on Nazir 27b:6:2",
+      "Keritot 27b:2",
+      "Keritot 27b:3",
+      "Keritot 27b:4",
+      "Keritot 27b:5",
+      "Keritot 27b:6",
+      "Keritot 27b:7",
+      "Steinsaltz on Nazir 27b:6"
+    ],
+    "generatedAt": "2026-10-30T15:43:55.576Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 27b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתיב רבא קרבנו</strong> - בפרשת אם נשיא יחטא ושלשה קרבנות כתיבי חד בנשיא וחד בכבשה וחד בשעירה:"
+  },
+  "Tosafot on Nazir 27b:7:1": {
+    "dependsOn": [
+      "Nazir 27b:7",
+      "Tosafot on Nazir 27b:7:1",
+      "Steinsaltz comment #1 on Nazir 27b:7",
+      "Rashi on Nazir 27b:7:1",
+      "Tosafot on Nazir 27b:8:1"
+    ],
+    "generatedAt": "2026-10-30T15:46:07.396Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 27b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואינו יוצא בקרבן אביו</strong> - צ\"ע דמה איצטריך קרא הא ודאי דחטאת שמתו בעליה למיתה אזלא ומאי האי דקאמר נמי בתר הכי אבל יוצא הוא בקרבן אביו שהפריש מן הקלה על הקלה וכו':"
+  },
+  "Tosafot on Nazir 27b:8:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 27b:8:1",
+      "Tosafot on Nazir 27b:8:2",
+      "Tosafot on Nazir 27b:8:3",
+      "Nazir 27b:8",
+      "Rashi on Nazir 27b:8:1",
+      "Rashi on Nazir 27b:8:2",
+      "Zevachim 9b:16",
+      "Zevachim 9b:17",
+      "Tosafot on Nazir 26b:2:3",
+      "Tosafot on Nazir 26b:6:1"
+    ],
+    "generatedAt": "2026-10-30T15:50:15.205Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 27b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהרי אין אדם מגלח על בהמת אביו בנזירות</strong> - כדאמרינן בשילהי פירקין שאינו מגלח על אביו כי אם על מעות סתומין דלא הוזכר בלשון המשנה אלא מעות סתומים דהלכה נשנית במעות סתומין דוקא היה מדקדק הר\"ם דאמר בפ\"ק דזבחים <span class=\"parenthesized\">(דף ט:)</span> חטאת חלב ששחטו לשם חטאת דם כשרה והכא אמר דלא כיפר ויש לחלק דהתם מיירי שלא היה חייב שתיהם כי אם חטאת חלב ולכך עדיף אבל הכא שנתחייב שתיהן הוי עקירה יותר ועוד יש לומר דודאי לענין להתכפר בו בשביל חטאת חלב שהיתה עומדת לכך איכא מאן דאמר כשרה אבל הכא איירי להתכפר בו משום חטאת דם שרוצה לעוקרו ממה שהיה מתחילה לכך לא כיפר:"
+  },
+  "Tosafot on Nazir 27b:8:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 27b:8:1",
+      "Tosafot on Nazir 27b:8:2",
+      "Tosafot on Nazir 27b:8:3",
+      "Nazir 27b:8",
+      "Rashi on Nazir 28a:2:1",
+      "Rashi on Nazir 28a:2:2",
+      "Tosafot on Nazir 28a:2:1"
+    ],
+    "generatedAt": "2026-10-30T15:52:52.218Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 27b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ל קרבנו על חטאתו</strong> - בפרשת אם נפש תחטא וגו' והביא קרבנו שעירת עזים על חטאתו ואע\"פ שדרשנו כבר שלשה קרבנות עתה בא לדרוש על חטאתו עד שיהא קרבנו לשם חטאת ואפי' אדם אחד:"
+  },
+  "Tosafot on Nazir 27b:8:3": {
+    "dependsOn": [
+      "Tosafot on Nazir 27b:8:1",
+      "Tosafot on Nazir 27b:8:2",
+      "Tosafot on Nazir 27b:8:3",
+      "Nazir 27b:8",
+      "Tosafot on Nazir 28a:2:1",
+      "Rashi on Nazir 27b:6:1",
+      "Rashi on Nazir 27b:6:2",
+      "Rashi on Nazir 27b:8:1"
+    ],
+    "generatedAt": "2026-10-30T15:58:58.281Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 27b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יכול לא יצא</strong> - כשמפריש במזיד בהמה המפורשת לעבודה זו ומקריבה לחטאת אחר:"
+  }
+}

@@ -29,6 +29,230 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">אלא כי אמר מן השעורין</strong> - ודאי דלית לך למימר הכי דהואיל ובמינו קריבין דלהקריב קאמר והכי קאמר אם אפשר דקדשה כמנחת העומר וכמנחת סוטה תקדוש ומייתינן לה מן השעורין ואי לא לא מייתינן כלל:"
   },
+  "Rashi on Nazir 9b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T19:38:48.832Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 9b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ב\"ש</strong> - דסברי נדור מן הגרוגרות ונזיר מן היין סברי להו כר\"מ דאמר אין אדם מוציא דבריו לבטלה וכיון דאמר הריני נזיר ה\"ז נזיר והוי נמי נדור מן הגרוגרות דסברי לה כר' יהודה דאמר שאוסרין עליו כקרבן ומתני' קתני דב\"ש סברי נזיר ותו לא:"
+  },
+  "Rashi on Nazir 9b:1:2": {
+    "dependsOn": [
+      "Rashi on Nazir 9b:1:1",
+      "Nazir 9b:1",
+      "Rashi on Nazir 9a:1:2",
+      "Rashi on Nazir 2a:1:1"
+    ],
+    "generatedAt": "2026-10-29T19:40:25.968Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 9b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובה\"א נדור</strong> - מן הגרוגרות ודבילה ואינו נזיר מן היין משום דנדר ופתחו עמו הוא ומתניתין קתני דבית הלל אומרים אינו נזיר דבין לרבי יהודה בין לתנא קמא דידיה אליבא דבית הלל אינו נדור ואינו נזיר:"
+  },
+  "Rashi on Nazir 9b:2:1": {
+    "dependsOn": [
+      "Nazir 9b:2",
+      "Rashi on Nazir 9b:1:1",
+      "Rashi on Nazir 9b:1:2"
+    ],
+    "generatedAt": "2026-10-29T19:45:04.316Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 9b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לישנא אחרינא אמרי לה כו' נדור ואינו נזיר</strong> - ותנא קמא דר' יהודה אמר דנזיר אליבא דב\"ש והיינו דלא כרבי נתן:"
+  },
+  "Rashi on Nazir 9b:3:1": {
+    "dependsOn": [
+      "Nazir 9b:3",
+      "Rashi on Nazir 9b:3:1",
+      "Rashi on Nazir 9b:4:1",
+      "Rashi on Nazir 9b:1:1",
+      "Rashi on Nazir 9b:1:2",
+      "Rashi on Nazir 9b:2:1",
+      "Rashi on Nazir 9a:1:1",
+      "Rashi on Nazir 9a:2:1",
+      "Rashi on Nazir 8b:1:1"
+    ],
+    "generatedAt": "2026-10-29T19:46:35.680Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 9b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר הרי עלי מנחה להביא קמח מביא סולת</strong> - או שאמר הרי עלי מנחה בלא שמן ולבונה כו':"
+  },
+  "Rashi on Nazir 9b:4:1": {
+    "dependsOn": [
+      "Rashi on Nazir 9b:1:1"
+    ],
+    "generatedAt": "2026-10-29T19:50:21.643Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 9b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי לא אמרי ב\"ש</strong> - דאע\"ג דלא קביל להיות נזיר אלא מן הגרוגרות הוי נזיר מן היין הכא נמי כי אמר מן השעורין מייתי לה מסולת של חיטים כהלכתה:"
+  },
+  "Rashi on Nazir 9b:5:1": {
+    "dependsOn": [
+      "Rashi on Nazir 9b:5:1",
+      "Rashi on Nazir 9b:4:1",
+      "Rashi on Nazir 2a:1:1",
+      "Rashi on Nazir 2a:2:1",
+      "Rashi on Nazir 9a:1:1"
+    ],
+    "generatedAt": "2026-10-29T19:52:14.649Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 9b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור' יוחנן אמר אפילו תימא דברי הכל</strong> - דאפי' ב\"ה מודו בהא דיביא מן החיטים אע\"פ שלא התנדב אלא מן השעורים כגון שאמר לכך התנדבתי שעורין שהייתי סבור שמביאין מנחה מהן אבל אילו הייתי יודע שאין נודרין אלא חיטין לא נדרתי שעורין הלכך גמר בנפשיה לאיתויי מידי דבר חיובא להכי יביא מן החיטין:"
+  },
+  "Rashi on Nazir 9b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T19:54:25.875Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 9b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא בזמן שהתנדב מן השעורין</strong> - דהתם הוא הואיל ומנחת סוטה ומנחת העומר מן השעורים קמייתי להו דממינו קרב לגבי מזבח להכי הוא דאמר דחל עליה נדבת מנחה ויביא מן החיטים:"
+  },
+  "Rashi on Nazir 9b:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T19:54:48.020Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 9b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל אמר מנחה מן העדשים</strong> - שאין במינו קרב לגבי מזבח לא מייתי ולא כלום:"
+  },
+  "Rashi on Nazir 9b:7:1": {
+    "dependsOn": [
+      "Nazir 9b:7",
+      "Rashi on Nazir 9b:7:2",
+      "Rashi on Nazir 9b:7:3"
+    ],
+    "generatedAt": "2026-10-29T19:56:34.969Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 9b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכדי חזקיה כמאן מוקי ליה למתניתין</strong> - דמנחות כבית שמאי:"
+  },
+  "Rashi on Nazir 9b:7:2": {
+    "dependsOn": [
+      "Rashi on Nazir 9b:7:1",
+      "Rashi on Nazir 9b:7:3"
+    ],
+    "generatedAt": "2026-10-29T19:57:19.200Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 9b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא עדשים לגבי מזבח כגרוגרות לגבי נזיר דמו</strong> - וכי היכי דהתם אמרי בית שמאי דהוי נזיר הכא נמי כי אמר מן העדשים יביא מן החיטין:"
+  },
+  "Rashi on Nazir 9b:7:3": {
+    "dependsOn": [
+      "Rashi on Nazir 9b:7:1",
+      "Rashi on Nazir 9b:7:2",
+      "Nazir 9b:7",
+      "Rashi on Nazir 9b:8:1",
+      "Rashi on Nazir 9b:8:2",
+      "Rashi on Nazir 9b:3:1",
+      "Rashi on Nazir 9b:4:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Tosafot on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-10-29T19:59:51.075Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 9b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הדר ביה חזקיה</strong> - דאמר לעיל ב\"ש היא דלא אמרי ב\"ש מן הגרוגרות הוי נזיר אלא טעמא דמוקי לה כב\"ש דסבר לה כרבי נתן כלישנא בתרא דאית להו לב\"ש דנדור ואינו נזיר כר' יהודה דאמר באומר הרי הן עלי כקרבן דגרוגרות ודבילה כולהו בני נדר נינהו וכי היכי דלהלן אמרי ב\"ש דהוי נדור משום דבני נדר נינהו הכא נמי כי אמר מן השעורין הואיל דבני הקרבה נינהו במנחת העומר ובמנחת סוטה להכי הוא דאמרינן דמביא מן החיטין:"
+  },
+  "Rashi on Nazir 9b:8:1": {
+    "dependsOn": [
+      "Nazir 9b:8",
+      "Rashi on Nazir 9b:7:1",
+      "Rashi on Nazir 9b:7:2",
+      "Rashi on Nazir 9b:7:3"
+    ],
+    "generatedAt": "2026-10-29T20:04:44.168Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 9b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמאי הדר ביה</strong> - חזקיה מההיא לוקמא כמעיקרא כת\"ק דאמר האומר מן הגרוגרות הוי נזיר גמור אע\"ג דנזיר אין אסור בגרוגרות ולוקמא למתניתין דמנחות באומר הרי עלי עדשים מביא מן החיטין אע\"ג דעדשים אינן ראויים לגבי מזבח מידי דהוי אגרוגרות לגבי נזיר דהוי נזיר גמור:"
+  },
+  "Rashi on Nazir 9b:8:2": {
+    "dependsOn": [
+      "Rashi on Nazir 9b:8:1",
+      "Tosafot on Nazir 9a:2:1"
+    ],
+    "generatedAt": "2026-10-29T20:09:00.851Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 9b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתניתין</strong> - דמנחות קשיתיה אם איתא דלית להו לב\"ש נדור ואינו נזיר דלא סבירא להו כר' יהודה דאמר באומר הרי הן עלי קרבן דגרוגרות ודבילה בני נדר נינהו אלא נזיר הוי וכי היכי דלהלן אמרי ב\"ש דכי אמר הריני נזיר מן הגרוגרות הוי נזיר מן היין גבי מנחות מאי איריא דאמר מן השעורין דהוי דבר הראוי לגבי מזבח ליתני מן העדשים דהא עדשים לגבי מזבח כגרוגרות לגבי נזיר דמי אלא מתני' דמנחות כב\"ש ולא תני בה מן העדשים אלמא דלא הוי טעמא דיביא מן החיטין אלא משום דהתנדב מן השעורין דבני הקרבה נינהו ודכוותה נמי גבי נזיר כי אמר הריני נזיר מן הגרוגרות לא הוי נזיר אלא נדור משום דבני נדר נינהו לב\"ש אית להו כר' יהודה ומתני' דמנחות כב\"ש ולא כב\"ה כלל <span class=\"parenthesized\">(כלל)</span> דאי כב\"ה הא אמרי דאפילו נדור לא הוי משום דבלשון נזירות קא נדר הכא נמי כי אמר מן השעורים לא יביא מן החיטין שלא התנדב כדרך המתנדבין:"
+  },
+  "Rashi on Nazir 9b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T20:10:26.603Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 9b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור' יוחנן אמר אפילו מן העדשים</strong> - יביא מן החטין:"
+  },
+  "Rashi on Nazir 9b:9:2": {
+    "dependsOn": [
+      "Rashi on Nazir 9b:9:1",
+      "Rashi on Nazir 9b:9:2",
+      "Rashi on Nazir 9b:9:3",
+      "Nazir 9b:9"
+    ],
+    "generatedAt": "2026-10-29T20:11:25.628Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 9b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא א\"ר יוחנן כו'</strong> - וכדמוקים לה בכגון דקא טעי אלמא דבמידי דטעי בה כגון שעורין משום דבני הקרבה נינהו [קא מוקי] מתני' דמנחות אבל לא בעדשים דאע\"ג דאמר אילו הייתי יודע שאין נודרין כך לא משגחינן ביה דסתמא דמילתא דבשעורין הוא דקא טעי אבל לא בעדשים:"
+  },
+  "Rashi on Nazir 9b:9:3": {
+    "dependsOn": [
+      "Nazir 9b:9",
+      "Rashi on Nazir 9b:9:1",
+      "Rashi on Nazir 9b:9:2",
+      "Rashi on Nazir 9b:7:1",
+      "Rashi on Nazir 9b:8:1"
+    ],
+    "generatedAt": "2026-10-29T20:12:50.356Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 9b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לדבריו דחזקיה</strong> - קא\"ל ר' יוחנן והכי קא\"ל מ\"ט הדרת בך משום דלא קתני ביה עדשים:"
+  },
   "Tosafot on Nazir 9b:10:1": {
     "dependsOn": [],
     "generatedAt": "2026-10-22T03:09:01.776Z",
@@ -38,5 +262,172 @@
       "Tosafot on Nazir 9b:10:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">אלא כי קאמר מן השעורין</strong> - ה\"ק לא בא לסתור דבריו ראשונים דאמר הרי עלי מנחה [אלא] לפרש ולומר <span class=\"parenthesized\">(כיון)</span> שאמר מן השעורין ואפשר ליקדוש במנחת העומר ובמנחת סוטה תיקדוש ואי לא אפשר לה ליקדוש במנחה לא יתחייב במנחה אחרת קמשמע לן דמייתי חיטין ולעולם כבית שמאי ומשום דאין אדם מוציא דבריו לבטלה:"
+  },
+  "Tosafot on Nazir 9b:1:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 9b:1:2",
+      "Tosafot on Nazir 9a:1:1",
+      "Rashi on Nazir 9b:1:1",
+      "Rashi on Nazir 9b:1:2",
+      "Mishnah Nazir 2:1",
+      "Tosafot on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-10-29T19:42:49.159Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 9b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ב\"ש סברי כר\"מ</strong> - דאמר אין אדם מוציא דבריו לבטלה להכי הוי [נזיר וכרבי יהודה] דמתני' דאמר נדור הוי וב\"ה סברי כר' יהודה דמתני' דנדור מיהא הוי ודלא כר\"ש דפטר לגמרי:"
+  },
+  "Tosafot on Nazir 9b:1:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 9b:1:1",
+      "Rashi on Nazir 9b:1:1",
+      "Rashi on Nazir 9b:1:2",
+      "Nazir 9b:1",
+      "Tosafot on Nazir 2a:1:1"
+    ],
+    "generatedAt": "2026-10-29T19:44:14.103Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 9b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ב\"ש כר' יהודה</strong> - ונדור מיהא הוי וב\"ה כר\"ש ואפילו נדור לא הוי:"
+  },
+  "Tosafot on Nazir 9b:3:1": {
+    "dependsOn": [
+      "Versions on Nazir 9b:3",
+      "Rashi on Nazir 9b:3:1",
+      "Tosafot on Nazir 9b:3:2",
+      "Steinsaltz comment #1 on Nazir 9b:3",
+      "Steinsaltz comment #2 on Nazir 9b:3",
+      "Steinsaltz comment #3 on Nazir 9b:3",
+      "Steinsaltz on Nazir 9b:3",
+      "Gilyon HaShas on Nazir 9b:1"
+    ],
+    "generatedAt": "2026-10-29T19:48:13.935Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 9b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יביא מן החיטין</strong> - שאין מנחה באה שעורין אלא דחוטא ומנחת קנאות:"
+  },
+  "Tosafot on Nazir 9b:3:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 9b:3:1",
+      "Tosafot on Nazir 9b:3:2",
+      "Rashi on Nazir 9b:3:1",
+      "Menachot 103b:1",
+      "Menachot 103b:2",
+      "Nazir 9b:3"
+    ],
+    "generatedAt": "2026-10-29T19:49:36.665Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 9b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יביא עשרון שלם</strong> - שאין מנחה פחותה מעשרון והוי טעמא דכולהו:"
+  },
+  "Tosafot on Nazir 9b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T19:51:06.691Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 9b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאו אמרי ב\"ש מן הגרוגרות ומן הדבילה הוי נזיר</strong> - אע\"ג דגרוגרות לא שייכי לנזירות כלל מטעמא דפרישית לעיל משום דאין אדם מוציא דבריו לבטלה ה\"נ מן השעורין אע\"ג דלא שייכי שעורין למנחה יביא חיטין דאין אדם מוציא דבריו לבטלה:"
+  },
+  "Tosafot on Nazir 9b:5:1": {
+    "dependsOn": [
+      "Nazir 9b:5"
+    ],
+    "generatedAt": "2026-10-29T19:53:59.396Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 9b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באומר אילו הייתי יודע כו'</strong> - בבי\"ת גרסי' באומר כלו' באומר בפירוש אילו הייתי יודע שאין נודרים שעורין כו' אבל טעיתי לומר דנודרין שעורין כמנחת חוטא וקנאות ולולי זה הייתי נודר חטים להכי מייתי חטין וכן בקמח טעה במנחת קנאות ובשמן ובלבונה וכן בחצי עשרון לא ידע שצריך להביא עשרון שלם:"
+  },
+  "Tosafot on Nazir 9b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T19:55:19.344Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 9b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שנו אלא מן השעורים</strong> - דמצי למיתלי בטעות כיון דאיכא אוחרי דהויין משעורים אבל מן עדשים לא מייתי כלום דליכא למיתלי בטעותא דליכא של [עדשים]:"
+  },
+  "Tosafot on Nazir 9b:7:1": {
+    "dependsOn": [
+      "Rashi on Nazir 9b:7:1",
+      "Rashi on Nazir 9b:7:2",
+      "Rashi on Nazir 9b:7:3",
+      "Tosafot on Nazir 9b:7:1",
+      "Tosafot on Nazir 9b:7:2",
+      "Tosafot on Nazir 9a:1:1",
+      "Tosafot on Nazir 9a:2:1",
+      "Tosafot on Nazir 9b:1:1"
+    ],
+    "generatedAt": "2026-10-29T20:01:32.311Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 9b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכדי חזקיה כמאן מוקי לה מתני'</strong> - דמנחות כב\"ש כו' ואומרים ב\"ש דהוי נזיר מטעם דאמרי' אין אדם מוציא דבריו לבטלה א\"כ אפי' עדשים נייתו חיטין:"
+  },
+  "Tosafot on Nazir 9b:7:2": {
+    "dependsOn": [
+      "Nazir 9b:7",
+      "Tosafot on Nazir 9b:7:1",
+      "Tosafot on Nazir 9b:7:2",
+      "Tosafot on Nazir 9b:8:1",
+      "Tosafot on Nazir 9b:9:1",
+      "Nazir 9b:4",
+      "Nazir 9b:5",
+      "Rashi on Nazir 9b:7:3",
+      "Rashi on Nazir 9b:8:1",
+      "Tosafot on Nazir 2a:13:1",
+      "Tosafot on Nazir 2b:5:1",
+      "Tosafot on Nazir 2a:1:1",
+      "Tosafot on Nazir 2a:3:1"
+    ],
+    "generatedAt": "2026-10-29T20:03:43.133Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 9b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הדר ביה חזקיה מההיא</strong> - פי' ממאי דאוקי לה מתני' דמנחות כב\"ש ומוקי לה כרבי יוחנן ובאומר:"
+  },
+  "Tosafot on Nazir 9b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T20:09:47.171Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 9b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתניתין קשיתיה כו' ליתני מן העדשים</strong> - כלומר אי מתניתין כבית שמאי ומטעם דאין אדם מוציא דבריו לבטלה ליתני עדשים דהוי רבותא טפי:"
+  },
+  "Tosafot on Nazir 9b:9:1": {
+    "dependsOn": [
+      "Nazir 9b:9",
+      "Nazir 9b:7"
+    ],
+    "generatedAt": "2026-10-29T20:14:10.932Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 9b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם משום טעותא הוא ובאומר אילו הייתי יודע</strong> - הלכך כי אמר שעורים איכא למימר דטעה דיש מנחה באה שעורים אבל בעדשים ליכא למיטעי דאין מנחה באה מהם כלל ולא גרס הכא בספר קסבר חזקיה בית שמאי כר' יהודה ובמנחות פ' המנחות והנסכים <span class=\"parenthesized\">(מנחות דף קג.)</span> לא גרסינן ליה והתם גריס אלא ש\"מ משום דהוא בשעורים טעי בעדשים לא טעי ורבי יוחנן אמר [כו'] דאיכא למימר מיהדר הוא דקמיהדר ביה דדיבור האחרון סותר הראשון דכשאמר מנחה משמע מנחה כשרה מסולת וכי הדר אמר מעדשים הדר מדיבור ראשון ותפוס לשון ראשון:"
   }
 }

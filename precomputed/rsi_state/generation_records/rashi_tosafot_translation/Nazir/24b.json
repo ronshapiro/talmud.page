@@ -1,0 +1,474 @@
+{
+  "Rashi on Nazir 24b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T12:08:53.801Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 24b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היא מנא לה</strong> - הא בהמה הא קיימא לן מה שקנתה אשה קנה בעלה:"
+  },
+  "Rashi on Nazir 24b:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T12:09:36.172Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 24b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שקמצתה מעיסתה</strong> - כגון דהשרה לה מזונות על ידי שליש ותנן בפרק אע\"פ <span class=\"parenthesized\">(כתובות סד:)</span> דלא יפחות לה בשבוע משני קבין חיטין והלכה זו וקיפחה ממזונותיה על יד עד שלקחה בהן בהמה זו:"
+  },
+  "Rashi on Nazir 24b:2:3": {
+    "dependsOn": [
+      "Rashi on Nazir 24b:2:1",
+      "Rashi on Nazir 24b:2:2"
+    ],
+    "generatedAt": "2026-10-30T12:10:13.827Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 24b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איבעית אימא דאקני לה אחר</strong> - דאי קימצתה מעיסתה אמרינן נמי מה שקמצתה אשה קנה בעלה:"
+  },
+  "Rashi on Nazir 24b:3:1": {
+    "dependsOn": [
+      "Rashi on Nazir 24b:3:1",
+      "Nazir 24b:3",
+      "Rashi on Nazir 24b:4:1",
+      "Steinsaltz on Nazir 24b:3",
+      "Steinsaltz on Nazir 24b:4",
+      "Rashi on Nazir 24b:2:1",
+      "Rashi on Nazir 24b:2:2",
+      "Rashi on Nazir 24b:2:3",
+      "Rashi on Nazir 24a:2:1",
+      "Rashi on Nazir 24a:3:1",
+      "Rashi on Nazir 23b:1:1",
+      "Rashi on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-10-30T12:23:42.267Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 24b:3:1"
+    ],
+    "sourceText": "א\"ל שמואל לאבוה בר איהי כו' שלה [הא דאמרן] במשנתנו דאין טעונים לחם:"
+  },
+  "Rashi on Nazir 24b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T12:27:36.983Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 24b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גלח</strong> - בתוך ימי נזירותו:"
+  },
+  "Rashi on Nazir 24b:4:2": {
+    "dependsOn": [
+      "Rashi on Nazir 24b:4:1"
+    ],
+    "generatedAt": "2026-10-30T12:28:13.136Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 24b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או שגילחוהו הקרובים</strong> - בתוך ימי נזירותו או שמיחה אע\"פ שלא נתגלח בטלה נזירות:"
+  },
+  "Rashi on Nazir 24b:5:1": {
+    "dependsOn": [
+      "Nazir 24b:5"
+    ],
+    "generatedAt": "2026-10-30T12:33:50.403Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 24b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם היו לו מעות סתומין יפלו לנדבה</strong> - ויביאו מהן עולות לקיץ המזבח דאין חוששין לדמי חטאת שבהן כדלקמן שהלכה היא בנזיר כך:"
+  },
+  "Rashi on Nazir 24b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T12:34:14.067Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 24b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המפריש מעות לנזירותו</strong> - והיו סתומין:"
+  },
+  "Rashi on Nazir 24b:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T12:34:40.922Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 24b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא נהנין ולא מועלין בהן מפני שהן ראוין להביא בכולן שלמים</strong> - דבכל מעה ומעה שלהן יכול להביא בהן שלמים ובשלמים אמרינן <span class=\"parenthesized\">(מעילה דף ו:)</span> דליכא מעילה לפני זריקת דמים:"
+  },
+  "Rashi on Nazir 24b:7:1": {
+    "dependsOn": [
+      "Nazir 24b:7",
+      "Rashi on Nazir 24b:6:1",
+      "Rashi on Nazir 24b:6:2"
+    ],
+    "generatedAt": "2026-10-30T12:37:29.871Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 24b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעות מפורשין דמי עולה יביאו עולה</strong> - וה\"ה דהוה ליה למיתני דדמי חטאת ילכו לים המלח:"
+  },
+  "Rashi on Nazir 24b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T12:40:54.032Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 24b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלאחר כפרה</strong> - שאם הפריש בהמתו ואבדה או מעות ואבדן והפריש אחרים תחתיהן ואח\"כ נמצאו חטאת או דמי חטאת יוליך לים המלח והעולה תקרב עולה והשלמים לשלמים ונאכלים ליום אחד ואינן טעונין לחם דסברא הוא כו':"
+  },
+  "Rashi on Nazir 24b:9:1": {
+    "dependsOn": [
+      "Nazir 24b:9",
+      "Nazir 24b:6",
+      "Nazir 24b:1",
+      "Nazir 24b:4",
+      "Nazir 24b:5"
+    ],
+    "generatedAt": "2026-10-30T12:43:03.694Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 24b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותו ליכא</strong> - אלא הני ארבעה אילים שלא יהו טעונין לחם:"
+  },
+  "Rashi on Nazir 24b:9:2": {
+    "dependsOn": [
+      "Rashi on Nazir 24b:9:1",
+      "Rashi on Nazir 24b:9:2",
+      "Rashi on Nazir 24b:9:3",
+      "Rashi on Nazir 24b:9:4",
+      "Menachot 48b:4",
+      "Menachot 48b:5",
+      "Tosafot on Nazir 24b:9:1",
+      "Tosafot on Nazir 24b:9:2",
+      "Tosefta Nazir (Lieberman) 4:6",
+      "Rashi on Menachot 48b:9:1",
+      "Rashi on Nazir 24b:2:1",
+      "Rashi on Nazir 24b:4:1"
+    ],
+    "generatedAt": "2026-10-30T12:45:45.933Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 24b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא איכא</strong> - דתני לוי במתני' דאמר במס' מנחות <span class=\"parenthesized\">(מח:)</span> ובתוספתא דנזיר <span class=\"parenthesized\">(פ\"ד)</span>:"
+  },
+  "Rashi on Nazir 24b:9:3": {
+    "dependsOn": [
+      "Rashi on Nazir 24b:9:1",
+      "Rashi on Nazir 24b:9:2",
+      "Rashi on Nazir 24b:9:3",
+      "Rashi on Nazir 24b:9:4",
+      "Nazir 24b:9",
+      "Rashi on Menachot 48b:5:1",
+      "Tosefta Nazir 4:8",
+      "Tosefta Nazir (Lieberman) 4:9"
+    ],
+    "generatedAt": "2026-10-30T12:47:21.816Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 24b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושאר כל שלמי נזיר</strong> - לעיל איירי בשלמים:"
+  },
+  "Rashi on Nazir 24b:9:4": {
+    "dependsOn": [
+      "Rashi on Nazir 24b:9:1",
+      "Rashi on Nazir 24b:9:2",
+      "Rashi on Nazir 24b:9:3",
+      "Rashi on Nazir 24b:9:4"
+    ],
+    "generatedAt": "2026-10-30T12:47:58.491Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 24b:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ששחטן שלא כמצותן</strong> - דמצותן להביא בן שתי שנים לשם שלמי נזיר:"
+  },
+  "Tosafot on Nazir 24b:11:1": {
+    "dependsOn": [
+      "Nazir 24b:11",
+      "Tosafot on Nazir 24b:11:1",
+      "Tosafot on Nazir 24b:11:2",
+      "Nazir 24a:1",
+      "Nazir 24a:2",
+      "Nazir 24a:3",
+      "Nazir 24a:4",
+      "Mishnah Meilah 3:2"
+    ],
+    "generatedAt": "2026-10-30T12:54:43.912Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 24b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היו לו מעות סתומים</strong> - הכי גרסינן בספרים והיו לו ומשמע דקאי אמפריש מעות לנזירותו דמסכת מעילה ולא אמתני' [דהכא] דהיו לה מעות סתומים ונראה דלכך לא קשיא ליה אמתני' [דהכא] משום דאיכא לאוקומי דאמר לנזירות ולכך יפלו לנדבה דאי בעי מייתי בכולן עולה אבל אמתני' דהתם קשיא ליה דע\"כ מיירי היכא דאמר לקרבנות נזירותי דאם לא כן אמאי תנא מעות סתומות והא בסתומין איירי בהך דינא <span class=\"parenthesized\">(דלעיל)</span> אבל במתני' דעד השתא איירי בבהמות ועתה התחיל לשנות דין דמעות סתומין ולהכי פריך אהא דהתם סתומים יפלו:"
+  },
+  "Tosafot on Nazir 24b:11:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 24b:11:1",
+      "Nazir 24b:11"
+    ],
+    "generatedAt": "2026-10-30T12:57:04.247Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 24b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הגה\"ה יפלו לנדבה והלא דמי חטאת מעורבין בהן</strong> - ואיך יפלו לנדבה והוא הדין דהוה מצי לאותובי והלא דמי שלמים מעורבין שאינן כליל ואיך יפלו לנדבה לעולת קיץ למזבח דהוי כולה כליל אלא דעדיפא פריך מחטאת שאינו כלל בר הקרבה לאחר המיתה אלא לים המלח אזיל וא\"ת [וליתני] מפני שראוין להביא בכולן [עולה] כדאמר לעיל מפני שראוין להביא בכולן שלמים וי\"ל דהכא משום כשהוא חי שייך למימר מימליך אבל כשמת לא שייך למימר מימליך והרי הם כתחילת הפרשה והרי הם כמפורשים גם לחטאת ועי\"ל דהא דאמר שיכול לשנות להביאן כולן לשלמים היינו דווקא היכא דאמר אלו מעות לנזירותי דמשמע אם ארצה אביא בשליש עולה ובשליש חטאת ובשליש שלמים או אם ארצה אעשה מכולן חטאת או מכולן שלמים דלנזירות משמע שפיר למקצת נזירותו אבל היכא דמת והיו לו מעות סתומין דיפלו לנדבה דאיירי בהפריש מעות ואמר מעות הללו לקרבנות נזירותי לא יוכל להביא בכולן קרבן אחד דהא קרבנות קאמר הילכך יש במעות הללו דמי חטאת לכך פריך איך יהא בכולן נדבה והלא דמי חטאת מעורבין בהן ובזה מתיישב לשון מתני' דמעילה <span class=\"parenthesized\">(דף יא.)</span> המפריש [מעות] לנזירות אין מועלין בהן מפני שראויין לבא בכולן שלמים [ומיירי מתני'] ובתר הכי תני מת והיו לו מעות סתומין והא בסתומין איירינן והכי איבעי ליה למימר מת יפלו לנדבה אלא הכא [קא מיירי] דאמר דוקא לנזירותי דאז יכול להביא בכולן אחד מקרבנותיו דמשמע אכל קרבנותיו קאמר ולכך קתני בסיפא מת והיו לו מעות סתומין ואפילו נמי אמר אלו לקרבנות נזירותי כולן יפלו לנדבה וכן מוכח מההוא <span class=\"parenthesized\">(דלרבא)</span> [דלקמן] <span class=\"parenthesized\">(דף כו:)</span> אלו לחטאתי והשאר לשאר נזירותי ומת דמי חטאת ילכו לים המלח והשאר יביא בחציו עולה ובחציו שלמים ומשמע משום דאמר השאר לשאר נזירות דחשבינן ליה כאומר לקרבנות נזירותי אבל אמר והשאר לנזירותי ולא לשאר מכולן יעשה מהם עולה או שלמים מכולן כך פר\"י [ הגה\"ה]:"
+  },
+  "Tosafot on Nazir 24b:2:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 24b:2:1",
+      "Tosafot on Nazir 24b:2:2",
+      "Tosafot on Nazir 24b:2:3",
+      "Rashi on Nazir 24b:2:1"
+    ],
+    "generatedAt": "2026-10-30T12:11:50.175Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 24b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[האמרת]</strong> - ל\"ג תנן דהוי משמע כאילו בא להקשות והוא לא בא אלא לפרש והא אמרינן מה שקנתה אשה קנה בעלה לאו דווקא אלא כלומר הכי קיימא לן בעלמא:"
+  },
+  "Tosafot on Nazir 24b:2:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 24a:10:1"
+    ],
+    "generatedAt": "2026-10-30T12:14:49.672Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 24b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שקימצה מעיסתה</strong> - וא\"ת והא אמר בפרק אע\"פ <span class=\"parenthesized\">(כתובות נט.)</span> דמותר מזונות לבעל וי\"ל דהכא מיירי שאמר לה צאי מעשה ידיך במזונותיך ונתרצת בכך והותירה ממעשה ידיה והא ודאי דידה הוא ועוד תירץ הר\"ם דהא דאמרינן מותר מזונות לבעל כגון שקצבו לה כך וכך דינרין לשבת והוזלו המזונות שדי לה באותה קצבה כדי שבעה והותר אותו מותר לבעל אבל הכא מיירי שקימצה מעיסתה שלא הוזלו המזונות אלא קימצה ופיחתה מפיה שלא אכלה כדי שובע דההוא מותר הוי ודאי דידה:"
+  },
+  "Tosafot on Nazir 24b:2:3": {
+    "dependsOn": [
+      "Nedarim 88a:1",
+      "Nedarim 88a:2",
+      "Nedarim 88a:3",
+      "Nedarim 88a:4",
+      "Nedarim 88a:5",
+      "Nedarim 88b:1",
+      "Nedarim 88b:2"
+    ],
+    "generatedAt": "2026-10-30T12:17:05.567Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 24b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמר לה על מנת שאין לבעליך רשות בהן</strong> - ר\"ת פסק כרב דאמר פרק בתרא דנדרים <span class=\"parenthesized\">(דף פח.)</span> המודר הנאה מחתנו ורוצה ליתן מעות לבתו אומר הרי מעות נתונים ליך במתנה ובלבד שלא יהא לבעליך רשות בהן אלא מה שאת נושאת ונותנת בפיך ואמר רב עלה ל\"ש אלא מה שאת נושאת ונותנת לתוך פיך אבל אמר לה מה שתרצי תעשי קנה יתהון בעל ואע\"ג דשמואל פליג עליה התם והלכתא כוותיה בדיני מ\"מ כי איתשיל לענין איסורין איתשיל ובשמעתין קיצר הש\"ס וי\"ל שאמר לה מה שאת נושאת ונותנת לפיך:"
+  },
+  "Tosafot on Nazir 24b:3:1": {
+    "dependsOn": [
+      "Rashi on Nazir 24b:3:1",
+      "Tosafot on Nazir 24b:3:2",
+      "Steinsaltz on Nazir 24b:3",
+      "Steinsaltz comment #1 on Nazir 24b:3",
+      "Steinsaltz comment #2 on Nazir 24b:3",
+      "Steinsaltz comment #3 on Nazir 24b:3"
+    ],
+    "generatedAt": "2026-10-30T12:26:11.484Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 24b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר שמואל לאבוה בר איהי לא תיתיב</strong> - אלא עמוד על כרעיך על רגליך כמו מתותי כרעיה דר' חנינא בפרק קמא דחולין <span class=\"parenthesized\">(דף ז:)</span> עד דאמרת לי הדא מלתא:"
+  },
+  "Tosafot on Nazir 24b:3:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 24b:3:1",
+      "Nazir 24b:4"
+    ],
+    "generatedAt": "2026-10-30T12:27:10.328Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 24b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלו הן אילים שלו ושלה ושל אחר מיתה ושל אחר כפרה</strong> - אע\"ג דכולן משניות הם שמא שלאחר כפרה דלא תנינא בהדיא קמיבעיא ליה אי נמי כל זה מדברי שמואל שלה הא דאמרן עד [דפריך] ליה ותו ליכא והא איכא ושאר שלמי נזיר כל זה פריך שמואל לאבוה בר איהי והשיב שלא כמצותן לא קחשיב:"
+  },
+  "Tosafot on Nazir 24b:4:1": {
+    "dependsOn": [
+      "Nazir 24b:4",
+      "Tosafot on Nazir 24b:4:2",
+      "Rashi on Nazir 24b:4:1",
+      "Rashi on Nazir 24b:4:2",
+      "Nazir 24a:1",
+      "Steinsaltz on Nazir 24b:4",
+      "Tosafot on Nazir 24b:3:1",
+      "Tosafot on Nazir 24b:3:2",
+      "Tosafot on Nazir 24a:3:1"
+    ],
+    "generatedAt": "2026-10-30T12:31:00.924Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 24b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלה הא דאמרן</strong> - במתני' <span class=\"parenthesized\">(היינו בממונה)</span>:"
+  },
+  "Tosafot on Nazir 24b:4:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 24b:4:1",
+      "Tosafot on Nazir 24b:4:2",
+      "Nazir 24b:4",
+      "Nazir 28b:8",
+      "Nazir 28b:9",
+      "Nazir 28b:10",
+      "Nazir 28b:11",
+      "Nazir 28b:12",
+      "Nazir 28b:13",
+      "Nazir 28b:14",
+      "Nazir 29a:1",
+      "Nazir 29a:5",
+      "Rashi on Nazir 29a:5:1",
+      "Tosafot on Nazir 28b:8:1",
+      "Tosafot on Nazir 28b:8:2",
+      "Tosafot on Nazir 28b:8:3"
+    ],
+    "generatedAt": "2026-10-30T12:33:12.104Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 24b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלו דתנן האיש מדיר בנו בנזיר</strong> - מתני' היא בפירקין <span class=\"parenthesized\">(לקמן נזיר כח:)</span> ובשילהי פירקין מפרש ליה למר דהלכה היא דאיש מדיר בנו [והלכה] נתקבל דיכול למחות בין הוא בין קרוביו לפיכך גלח הוא ועשה מעשה בגופו לבטל נזירות אביו או שמיחה בדיבורו:"
+  },
+  "Tosafot on Nazir 24b:6:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 24b:6:2",
+      "Rashi on Nazir 24b:6:1",
+      "Rashi on Nazir 24b:6:2"
+    ],
+    "generatedAt": "2026-10-30T12:35:42.396Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 24b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלאחר מיתה</strong> - דתנן גרסינן דמשנה היא פ\"ג דמעילה <span class=\"parenthesized\">(דף יא.)</span> המפריש מעות לנזירותו לא נהנין ולא מועלין לא נהנין מדרבנן או שמא אפילו מדאורייתא אסור אע\"ג דקיימא לשלמים מידי דהוה אשלמים מחיים דנהי דמעילה ליכא איסור דאורייתא איכא:"
+  },
+  "Tosafot on Nazir 24b:6:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 24b:6:1",
+      "Tosafot on Nazir 24b:6:2"
+    ],
+    "generatedAt": "2026-10-30T12:36:28.459Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 24b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני שראוין כולם לבא שלמים</strong> - דכיון שלא פירש כלום אם [יתרמי לו בהמה] שמינה יביא בכולן שלמים אם ירצה והשאר יביא מביתו ולכך אין מועלין בהן:"
+  },
+  "Tosafot on Nazir 24b:7:1": {
+    "dependsOn": [
+      "Rashi on Nazir 24b:7:1",
+      "Tosafot on Nazir 24b:7:2",
+      "Tosafot on Nazir 24a:1:1",
+      "Tosafot on Nazir 24b:2:1"
+    ],
+    "generatedAt": "2026-10-30T12:38:29.396Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 24b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היו לו מעות סתומים יפלו לנדבה</strong> - נדבת צבור עולה הויא:"
+  },
+  "Tosafot on Nazir 24b:7:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 24b:7:1",
+      "Tosafot on Nazir 24b:8:1",
+      "Tosafot on Menachot 4b:12:1",
+      "Rashi on Nazir 24b:7:1",
+      "Steinsaltz on Nazir 24b:7"
+    ],
+    "generatedAt": "2026-10-30T12:40:08.030Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 24b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין טעונין לחם</strong> - במנחות <span class=\"parenthesized\">(דף ד: ד\"ה ואין)</span> פרשינן דבעי על כפי נזיר לתנופה וליכא:"
+  },
+  "Tosafot on Nazir 24b:8:1": {
+    "dependsOn": [
+      "Nazir 24b:8",
+      "Rashi on Nazir 24b:8:1"
+    ],
+    "generatedAt": "2026-10-30T12:41:51.020Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 24b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלאחר מיתה מאי טעמא</strong> - לא בעי שלמים לחם דלא חזיא לכפרה ואין כאן כפי נזיר שלאחר כפרה נמי כגון שנדר והפריש קרבנותיו ואבדו והביא אחרים ונתכפר בהן ואח\"כ נמצאו הראשונים אותן שלמים נמי קריבין בלא לחם:"
+  },
+  "Tosafot on Nazir 24b:9:1": {
+    "dependsOn": [
+      "Rashi on Nazir 24b:9:1"
+    ],
+    "generatedAt": "2026-10-30T12:49:09.072Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 24b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותו ליכא והאיכא ושאר שלמי נזיר ששחטן שלא כמצותן</strong> - פירש רש\"י במנחות <span class=\"parenthesized\">(דף מח:)</span> ששחטן שלא לשמן עוד פירש שם לישנא אחרינא שלא כמצותן דאיל כתיב ביה בן שתי שנים והביאם בני שנה [כשרים] לשלמי נדבה:"
+  },
+  "Tosafot on Nazir 24b:9:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 24b:9:1",
+      "Tosafot on Nazir 24b:9:3"
+    ],
+    "generatedAt": "2026-10-30T12:49:55.939Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 24b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונאכלין ליום אחד</strong> - כחומר שלמי נזיר דשאר שלמים נאכלין לשני ימים דדינן כתודה דאמר מר על זבח תודת שלמיו לרבות שלמי נזיר <span class=\"parenthesized\">(מנחות דף יט.)</span>:"
+  },
+  "Tosafot on Nazir 24b:9:3": {
+    "dependsOn": [
+      "Nazir 24b:9",
+      "Nazir 24b:2",
+      "Tosafot on Nazir 24b:9:1",
+      "Tosafot on Nazir 24b:9:2"
+    ],
+    "generatedAt": "2026-10-30T12:51:14.181Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 24b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין טעונין לא לחם ולא זרוע</strong> - הואיל ואין הנזיר ניתר בהן לכך אין טעונין זרוע להתבשל עם האיל ולעשות תנופה וה\"ה דבמתניתין הוה ליה למיתני ולא זרוע:"
+  }
+}

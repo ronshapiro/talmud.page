@@ -1,0 +1,388 @@
+{
+  "Rashi on Nazir 44a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T14:20:33.892Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 44a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומה טומאה שלא עשה מטמא כמיטמא</strong> - שהמטמא את הנזיר אינו עובר עליו וכדמוכח בסמוך:"
+  },
+  "Rashi on Nazir 44a:12:2": {
+    "dependsOn": [
+      "Nazir 44a:12",
+      "Rashi on Nazir 44a:12:1",
+      "Rashi on Nazir 44a:1:1"
+    ],
+    "generatedAt": "2026-10-31T14:22:13.351Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 44a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תגלחת שעשה בה מגלח כמתגלח</strong> - שהמגלח את הנזיר עובר בלאו כדלקמן תער לא יעבור על ראשו קרי ביה לא יעביר ליה אחר:"
+  },
+  "Rashi on Nazir 44a:15:1": {
+    "dependsOn": [
+      "Nazir 44a:15",
+      "Steinsaltz on Nazir 44a:15:1",
+      "Tosafot on Nazir 44a:15:1",
+      "Steinsaltz on Nazir 44a:15"
+    ],
+    "generatedAt": "2026-10-31T14:25:13.799Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 44a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר קרא וטמא ראש נזרו למטמא ראש נזרו</strong> - מדלא כתיב וטמא לו ראש נזרו:"
+  },
+  "Rashi on Nazir 44a:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T14:27:02.524Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 44a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רחמנא ראשו וזקנו</strong> - דמייתרי כדאמרינן לעיל להתיר למצורע נזיר לגלח:"
+  },
+  "Rashi on Nazir 44a:19:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T14:27:20.531Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 44a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעינן גידול שיער</strong> - כדי לקיים בו מצות גילוח ביום הבאת קרבנותיו וליכא:"
+  },
+  "Rashi on Nazir 44a:1:1": {
+    "dependsOn": [
+      "Nazir 44a:1",
+      "Rashi on Nazir 44a:1:2"
+    ],
+    "generatedAt": "2026-10-31T13:58:04.166Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 44a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יכול</strong> - באחותו שהוא מותר אבל לא בשל אחרים לא בשדרה ולא בגולגולת על שאר קרובים:"
+  },
+  "Rashi on Nazir 44a:1:2": {
+    "dependsOn": [
+      "Rashi on Nazir 44a:1:1",
+      "Nazir 44a:1",
+      "Nazir 43b:7"
+    ],
+    "generatedAt": "2026-10-31T13:59:16.322Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 44a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שגופה תלוי בה</strong> - בשדרה וגולגולת שבכך עיקר הגוף תלוי או בזה או בזה אף כל בשאר קרובים יכול ליטמא או בשדרה או בגולגולת או ברוב בניינו או ברוב מניינו ואע\"פ שהוא חסר משאר הגוף וש\"מ דמותר ליטמא לאביו אע\"פ שהוא חסר ותיקשה דרב חסדא דהאיכא ר\"א בן יעקב דקאמר נמי הכי ושמע מינה דלכולי עלמא לית להו דרב חסדא דאמר בזמן שהוא שלם ולא בזמן שהוא חסר:"
+  },
+  "Rashi on Nazir 44a:20:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T14:28:16.156Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 44a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מידי הוא טעמא</strong> - דתגלחת דסותר אלא משום דבעינן דתיהוי ליה גידול שיער ואילו הכא גבי יין למה ליה למיסתר הא קאי שערו דחזי לגילוח:"
+  },
+  "Rashi on Nazir 44a:2:1": {
+    "dependsOn": [
+      "Nazir 44a:2",
+      "Nazir 44a:1",
+      "Rashi on Nazir 44a:2:1",
+      "Rashi on Nazir 44a:2:2",
+      "Nazir 43b:7",
+      "Nazir 43b:3"
+    ],
+    "generatedAt": "2026-10-31T14:00:48.731Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 44a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא נמי ר\"י היא</strong> - כלומר הוא דאמר כר\"י ורב [חסדא] דאמר כי האי תנא:"
+  },
+  "Rashi on Nazir 44a:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T14:01:35.970Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 44a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דתניא מעשה שמת אביו של רבי יצחק הכהן בגינזק ובאו והודיעוהו לאחר שלש שנים ובא ושאל את רבי יהושע בן אלישע וד' זקנים שעמו</strong> - מהו ליטמא ולהביאו בקברי אבותיו:"
+  },
+  "Rashi on Nazir 44a:3:1": {
+    "dependsOn": [
+      "Nazir 44a:3"
+    ],
+    "generatedAt": "2026-10-31T14:05:45.878Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 44a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמרו לו לאביו בזמן שהוא שלם ולא בזמן שהוא חסר</strong> - ולאחר שלש שנים אי אפשר לו שאינו חסר:"
+  },
+  "Rashi on Nazir 44a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T14:09:10.218Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 44a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וטומאה ותגלחת הותרו</strong> - בתגלחת מצורע ובמת מצוה:"
+  },
+  "Rashi on Nazir 44a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T14:10:08.363Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 44a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהטומאה סותרת את הכל</strong> - אפילו בנזירות מרובה:"
+  },
+  "Rashi on Nazir 44a:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T14:10:27.455Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 44a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחייבין עליה קרבן</strong> - אשם ותורין או בני יונה:"
+  },
+  "Rashi on Nazir 44a:6:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T14:10:46.910Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 44a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותגלחת אינה סותרת אלא שלשים יום</strong> - ואפילו בנזירות מרובה:"
+  },
+  "Rashi on Nazir 44a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T14:11:13.514Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 44a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ל לאביו ולאמו לא יטמא</strong> - מכדי כתיב על כל נפשות מת לאביו למה לי אלא להכי הוא דאתא דלאביו לא יטמא אבל מיטמא הוא למת מצוה:"
+  },
+  "Rashi on Nazir 44a:9:1": {
+    "dependsOn": [
+      "Rashi on Nazir 44a:9:2",
+      "Rashi on Nazir 44a:8:1"
+    ],
+    "generatedAt": "2026-10-31T14:11:52.234Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 44a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויין יותר מכללו</strong> - כגון גבי יין מצוה שנשבע עליו לשתותו מק\"ו ומה טומאה כו':"
+  },
+  "Rashi on Nazir 44a:9:2": {
+    "dependsOn": [
+      "Nazir 3b:12",
+      "Nazir 3b:13",
+      "Nazir 3b:14",
+      "Nazir 4a:1",
+      "Rashi on Nazir 3b:13:1",
+      "Rashi on Nazir 44a:9:1",
+      "Tosafot on Nazir 44a:9:1",
+      "Tosafot on Nazir 44a:9:2",
+      "Tosafot on Nazir 3b:13:1"
+    ],
+    "generatedAt": "2026-10-31T14:13:58.466Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 44a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאסור יין מצוה</strong> - שנשבע עליו כיין רשות וכדר\"ש בפ\"ק דמסכתין <span class=\"parenthesized\">(דף ג:)</span> והאי דמותר בקידושא ואבדלתא דלא חשיב ליה הותר מכללו משום דלא חל עליו מעולם נזירות משום דנשבע ועומד מהר סיני הוא ומותר מכללו לא קחשיב ליה אלא היכא דחייל ואח\"כ מישתרי בהו:"
+  },
+  "Tosafot on Nazir 44a:11:1": {
+    "dependsOn": [
+      "Nazir 44a:11",
+      "Tosafot on Nazir 44a:11:1",
+      "Tosafot on Nazir 44a:9:1",
+      "Tosafot on Nazir 44a:9:2",
+      "Tosafot on Nazir 44a:12:1"
+    ],
+    "generatedAt": "2026-10-31T14:20:05.348Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 44a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי טמא</strong> - <span class=\"parenthesized\">(מעיקרו סותר כי טמא)</span> נזרו מיעוטא הוא:"
+  },
+  "Tosafot on Nazir 44a:12:1": {
+    "dependsOn": [
+      "Rashi on Nazir 44a:12:1",
+      "Tosafot on Nazir 44a:12:2"
+    ],
+    "generatedAt": "2026-10-31T14:23:10.815Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 44a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא עשה מטמא כמיטמא</strong> - מטמא הנזיר אינו לוקה:"
+  },
+  "Tosafot on Nazir 44a:12:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 44a:12:1"
+    ],
+    "generatedAt": "2026-10-31T14:23:56.363Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 44a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שעשו בה המגלח</strong> - את הנזיר כמתגלח כנזיר עצמו וילקו שניהן כדדרשינן בסמוך:"
+  },
+  "Tosafot on Nazir 44a:15:1": {
+    "dependsOn": [
+      "Nazir 44a:15",
+      "Rashi on Nazir 44a:15:1",
+      "Tosafot on Nazir 44a:15:1",
+      "Nazir 44a:18",
+      "Rashi on Nazir 44a:18:1",
+      "Tosafot on Nazir 44a:12:1",
+      "Tosafot on Nazir 44a:12:2",
+      "Tosafot on Nazir 44a:19:1",
+      "Tosafot on Nazir 44a:20:1"
+    ],
+    "generatedAt": "2026-10-31T14:26:41.448Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 44a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר קרא ראשו</strong> - גבי מצורע להתיר מצורע נזיר:"
+  },
+  "Tosafot on Nazir 44a:19:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T14:27:52.481Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 44a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תגלחת שהותרה מכללה אינו דין שלא תסתור</strong> - וא\"ת טומאה תוכיח וי\"ל מה לטומאה שכן סותרת את הכל:"
+  },
+  "Tosafot on Nazir 44a:20:1": {
+    "dependsOn": [
+      "Nazir 44a:20",
+      "Tosefta Kifshutah on Nazir 4:4:2"
+    ],
+    "generatedAt": "2026-10-31T14:29:22.730Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 44a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומה תגלחת שהותרה מכללה סותרת</strong> - וא\"ת מה לתגלחת שכן עשה בה מגלח כמתגלח תאמר [ביין] שלא עשה משקה כשותה וי\"ל דמהאי טעמא נעשה בו משקה [כשותה] אבל בתר דמשני דיין [אינו סותר] דין הוא דלא נעשה בו משקה כשותה הואיל דלא סותר:"
+  },
+  "Tosafot on Nazir 44a:2:1": {
+    "dependsOn": [
+      "Nazir 44a:2",
+      "Rashi on Nazir 44a:2:1",
+      "Rashi on Nazir 44a:2:2",
+      "Moed Katan 20a:16",
+      "Steinsaltz on Nazir 44a:2",
+      "Steinsaltz comment #1 on Nazir 44a:2",
+      "Steinsaltz comment #2 on Nazir 44a:2",
+      "Nazir 44a:1"
+    ],
+    "generatedAt": "2026-10-31T14:04:57.383Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 44a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובאו והודיעוהו לאחר ג' שנים ושאל את ר' יהושע בן [אלישע]</strong> - זקנו שהיה רוצה לקברו בקברי אבותיו ואמר לו לאביו בזמן שהוא שלם:"
+  },
+  "Tosafot on Nazir 44a:4:1": {
+    "dependsOn": [
+      "Nazir 44a:4"
+    ],
+    "generatedAt": "2026-10-31T14:07:39.470Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 44a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חומר בטומאה ובתגלחת שסותרין</strong> - טומאה בהדיא כתיב והימים הראשונים יפלו ותגלחת שסותרת שלשים כדאמרינן לקמן משום דבעינן גידול שיער כדי גידול שיער סתם נזירות שיהא השער בשעת תגלחת מצוה:"
+  },
+  "Tosafot on Nazir 44a:4:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 44a:4:1",
+      "Tosafot on Nazir 44a:4:2",
+      "Nazir 44a:4"
+    ],
+    "generatedAt": "2026-10-31T14:08:42.350Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 44a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והיוצא מן הגפן אינו סותר</strong> - בהדיא ממעטינן ליה בגמ':"
+  },
+  "Tosafot on Nazir 44a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T14:09:47.293Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 44a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חומר ביוצא מן הגפן שלא הותר מכללו</strong> - לאסור יין מצוה כיין הרשות שאם נשבע שאשתה ואח\"כ נדר בנזיר אסור [ביין] ותגלחת הותרה בתגלחת מצורע [כדאמרינן לקמן] <span class=\"parenthesized\">(דף נח.)</span> מראשו וטומאה הותרה במת מצוה:"
+  },
+  "Tosafot on Nazir 44a:9:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 44a:9:2",
+      "Rashi on Nazir 44a:9:1"
+    ],
+    "generatedAt": "2026-10-31T14:14:35.103Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 44a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויין יותר מכללו</strong> - למי שנשבע שאשתה:"
+  },
+  "Tosafot on Nazir 44a:9:2": {
+    "dependsOn": [
+      "Nazir 3b:15",
+      "Nazir 3b:16",
+      "Tosafot on Nazir 44a:9:1",
+      "Rashi on Nazir 44a:9:1",
+      "Rashi on Nazir 44a:9:2"
+    ],
+    "generatedAt": "2026-10-31T14:15:26.206Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 44a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר קרא מיין ושכר</strong> - דמיותר כדאמרינן בפ\"ק <span class=\"parenthesized\">(לעיל נזיר דף ג:)</span>:"
+  }
+}

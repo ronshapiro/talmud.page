@@ -1,0 +1,493 @@
+{
+  "Rashi on Nazir 15a:1:1": {
+    "dependsOn": [
+      "Nazir 15a:1",
+      "Rashi on Nazir 15a:1:2",
+      "Tosafot on Nazir 15a:1:1",
+      "Steinsaltz on Nazir 15a:1"
+    ],
+    "generatedAt": "2026-10-29T23:54:35.631Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 15a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאני הכא</strong> - גבי טומאה טעמא מאי הוא דלוקה דכתיב וטמא ראש נזרו מי שנזרו תלוי לו בראשו דמשמע שתלה הכתוב את הטומאה במי שעדיין לא נתגלח ואפי' לאחר שכלו לו ימיו כל זמן שלא גילח שערו שנזרו על ראשו מי שכבר כלו ימי נזירותו ואין נזרו תלוי אלא בראשו:"
+  },
+  "Rashi on Nazir 15a:1:2": {
+    "dependsOn": [
+      "Rashi on Nazir 15a:1:1",
+      "Nazir 15a:1",
+      "Rashi on Nazir 15a:2:1",
+      "Rashi on Nazir 15a:2:2",
+      "Rashi on Nazir 15a:2:3",
+      "Tosafot on Nazir 15a:1:1",
+      "Tosafot on Nazir 15a:1:2"
+    ],
+    "generatedAt": "2026-10-29T23:56:32.731Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 15a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם גילח ושתה יין ונטמא למתים סופג את הארבעים</strong> - אלמא דגמרי ימי ימי לרבות ימים שלאחר מלאת ותיובתא לר' יוסי בר' חנינא:"
+  },
+  "Rashi on Nazir 15a:2:1": {
+    "dependsOn": [
+      "Rashi on Nazir 15a:2:2",
+      "Rashi on Nazir 15a:2:3"
+    ],
+    "generatedAt": "2026-10-29T23:59:10.631Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 15a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הריני נזיר כשיהיה לי בן ונזיר מאה יום</strong> - והתחיל למנות את שלו אם נולד לו בן עד ע' יום צריך להניח את שלו ולמנות את של בנו:"
+  },
+  "Rashi on Nazir 15a:2:2": {
+    "dependsOn": [
+      "Rashi on Nazir 15a:2:1",
+      "Rashi on Nazir 15a:2:2",
+      "Rashi on Nazir 15a:2:3"
+    ],
+    "generatedAt": "2026-10-29T23:59:47.619Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 15a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא הפסיד כלום</strong> - דשלשים יום הוא דמייתרי ליה ממאה אלא מניח את שלו ומונה את של בנו ומגלח ומונה שלשים כדי להשלים מאה שלו ומגלח דבשלשים אית בהו כדי גידול שער:"
+  },
+  "Rashi on Nazir 15a:2:3": {
+    "dependsOn": [
+      "Rashi on Nazir 15a:2:1",
+      "Rashi on Nazir 15a:2:2",
+      "Rashi on Nazir 15a:1:1",
+      "Rashi on Nazir 15a:1:2"
+    ],
+    "generatedAt": "2026-10-30T00:01:37.932Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 15a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל אם נולד לו לאחר ע'</strong> - דלא מייתרי להו שלשים דלית בהו גידול שער שאין תגלחת פחות מל' יום הלכך סותר את הכל ומתחיל למנות את של בנו ומגלח ואחר כך מונה מאה שלו וה\"מ בנזירות מרובה אבל בנזירות מועטת אינו סותר כלל כדתנן לעיל מניח את שלו ומונה את של בנו ואחר כך משלים את שלו ואינו סותר וטעמא מאי כדאמרן שאין תגלחת בינתים וכחדא נזירות אריכא הוא:"
+  },
+  "Rashi on Nazir 15a:3:1": {
+    "dependsOn": [
+      "Nazir 15a:3",
+      "Rashi on Nazir 15a:3:1",
+      "Rashi on Nazir 15a:3:2",
+      "Rashi on Nazir 15a:3:3"
+    ],
+    "generatedAt": "2026-10-30T00:14:59.628Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 15a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רב</strong> - נולד לו בן ביום ע' עולה לו לכאן ולכאן אותו יום עולה לו למנין ע' ולמנין של בנו דשלשים דלבנו נמי מתחיל למנות בו ביום וכן כשבא להשלים מאה שלו שלאחר נזירות של בנו אין צריך למנות אלא כ\"ט:"
+  },
+  "Rashi on Nazir 15a:3:2": {
+    "dependsOn": [
+      "Rashi on Nazir 15a:3:1",
+      "Rashi on Nazir 15a:3:3",
+      "Rashi on Nazir 11a:1:1",
+      "Rashi on Nazir 11b:1:1",
+      "Rashi on Nazir 13a:1:1",
+      "Steinsaltz on Nazir 15a:3",
+      "Tosafot on Nazir 15a:3:1",
+      "Rashi on Nazir 15a:2:2",
+      "Tosafot on Nazir 15a:2:3"
+    ],
+    "generatedAt": "2026-10-30T00:17:38.688Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 15a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איתגורי מיתגר</strong> - דעולה לו לכאן ולכאן שאינו צריך להשלים אלא למאה בלבד ועוד שנזירות של בנו מתחיל מבו ביום צריכא למימר דלא הפסיד כלום:"
+  },
+  "Rashi on Nazir 15a:3:3": {
+    "dependsOn": [
+      "Rashi on Nazir 15a:3:1",
+      "Rashi on Nazir 15a:3:2"
+    ],
+    "generatedAt": "2026-10-30T00:19:40.935Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 15a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא בדין הוא דלא ליתני עד שבעים ומשום דקתני סיפא כו'</strong> - הך אלא נשתנה מכל אלא שבש\"ס והכי משמע אלא משום דקתני סיפא אחר ע' תנא ליה רישא עד ע' ובדין הוא דלא ליתנייה כלל דהא אמרינן דאפילו איתגורי מיתגר. ואית ספרים דכתיב בהו בדין ליתני עד ע' כו' אלא משום דקתני סיפא לישנא דהפסיד דקתני אחר ע' סותר תנא נמי רישא [עד ע'] דאינו סותר:"
+  },
+  "Rashi on Nazir 15a:4:1": {
+    "dependsOn": [
+      "Nazir 15a:4",
+      "Rashi on Nazir 15a:3:1",
+      "Rashi on Nazir 15a:3:2",
+      "Rashi on Nazir 15a:3:3",
+      "Rashi on Nazir 15a:4:2"
+    ],
+    "generatedAt": "2026-10-30T00:27:52.240Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 15a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ש נולד אחר שבעים סותר ע'</strong> - ואי איתא כדקאמרת אמאי סותר כיון דמתחיל למנות מבו ביום לבנו ויום שלשים דבנו עולה לו לכאן ולכאן אכתי פשו להו שלשים יום כדי גידול שיער:"
+  },
+  "Rashi on Nazir 15a:4:2": {
+    "dependsOn": [
+      "Rashi on Nazir 15a:4:1"
+    ],
+    "generatedAt": "2026-10-30T00:28:53.905Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 15a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי אחר</strong> - דקתני אאחר אחר דהיינו ע\"ב דאפילו אי אמרת דעולה לכאן ולכאן אכתי לא פשו להו אלא כ\"ט יום ואין תגלחת פחות משלשים יום:"
+  },
+  "Rashi on Nazir 15a:5:1": {
+    "dependsOn": [
+      "Rashi on Nazir 15a:5:2",
+      "Nazir 15a:4",
+      "Rashi on Nazir 15a:4:1",
+      "Rashi on Nazir 15a:4:2",
+      "Rashi on Nazir 15a:2:1",
+      "Rashi on Nazir 15a:3:1"
+    ],
+    "generatedAt": "2026-10-30T00:41:28.611Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 15a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי איריא דקתני</strong> - רישא עד ע' לא הפסיד כלום אפילו לאחר ע' ביום ע\"א נמי לא הפסיד דהא אמרת דלא סתר אלא ש\"מ אחר ממש ביום ע\"א דקתני סותר משום דלא אמרינן שהוא עולה לו לכאן ולכאן:"
+  },
+  "Rashi on Nazir 15a:5:2": {
+    "dependsOn": [
+      "Rashi on Nazir 15a:5:1",
+      "Steinsaltz on Nazir 15a:5",
+      "Nazir 15a:5"
+    ],
+    "generatedAt": "2026-10-30T00:42:40.684Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 15a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן מתניתין לרב</strong> - וכן לענין זה קשיא מתניתין לרב ש\"מ:"
+  },
+  "Rashi on Nazir 15a:6:1": {
+    "dependsOn": [
+      "Nazir 15a:6",
+      "Rashi on Nazir 5b:5:2"
+    ],
+    "generatedAt": "2026-10-30T00:49:12.698Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 15a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורב כמאן אמרה לשמעתיה</strong> - ואי קשיא למה לי מיבעיא הכי הא אשכחן בפ\"ק דתני יום שלשים עולה לכאן ולכאן דילמא מתני' דהתם לא מתרצא כרב מתנא אלא כבר פדא דאמר אין סתם נזירות אלא כ\"ט:"
+  },
+  "Rashi on Nazir 15a:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T00:49:50.233Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 15a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ג' ימים קודם לרגל בטלה ממנו גזירת שבעה</strong> - שאין צריך להשלים אחר הרגל ז' ימי אבילות דכיון דעיקר האבילות דהיינו ג' ימים ראשונים כדאמרינן במועד קטן הוו קודם לרגל ביטל הרגל את האחרונים:"
+  },
+  "Rashi on Nazir 15a:7:1": {
+    "dependsOn": [
+      "Nazir 15a:7"
+    ],
+    "generatedAt": "2026-10-30T00:55:07.230Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 15a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם קברו ח' ימים לפני הרגל</strong> - כיון דיום אחד של שלשים היה קודם הרגל ביטל הרגל ממנו גזירת שלשים:"
+  },
+  "Rashi on Nazir 15a:7:2": {
+    "dependsOn": [
+      "Rashi on Nazir 15a:7:1",
+      "Rashi on Nazir 15a:7:3"
+    ],
+    "generatedAt": "2026-10-30T00:55:37.209Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 15a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומותר לספר ערב הרגל</strong> - משום כבוד הרגל:"
+  },
+  "Rashi on Nazir 15a:7:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T00:56:33.570Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 15a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסור לספר אחר הרגל</strong> - עד שלשים:"
+  },
+  "Tosafot on Nazir 15a:1:1": {
+    "dependsOn": [
+      "Nazir 15a:1",
+      "Rashi on Nazir 15a:1:1",
+      "Rashi on Nazir 15a:1:2",
+      "Tosafot on Nazir 15a:1:2"
+    ],
+    "generatedAt": "2026-10-29T23:57:56.083Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 15a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאני הכא דאמר</strong> - לענין טומאה דאמר רחמנא וטמא ראש נזרו מי שנזרו תלוי לו בראשו שכבר שלמו אלא אין לו עדיין נזירות אלא בראשו שלא גילח אז לוקה על הטומאה דכתיב וטמא [ראש נזרו] ומיהא אם נטמא אחר שהביא קרבנותיו לא מחייב למ\"ד תגלחת לא מעכבא דהך דרשא לא מתוקמא אלא קודם הבאת קרבן ומיקרי שפיר נזירות תלוי בראשו אע\"פ שעדיין לא הביא קרבנותיו לפי שאין בגופו לעשות אלא תגלחת אבל אם שתה יין או גילח לא מחייב דהא ליכא בהו קרא כמו גבי טומאה:"
+  },
+  "Tosafot on Nazir 15a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T23:58:25.367Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 15a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסור לגלח</strong> - פי' קודם זריקת דמים שהרי מצותו לגלח על הדמים ואם גילח על אחד משלשתן אמרינן לקמן דיצא:"
+  },
+  "Tosafot on Nazir 15a:2:1": {
+    "dependsOn": [
+      "Nazir 15a:2",
+      "Rashi on Nazir 15a:2:1",
+      "Rashi on Nazir 15a:2:2",
+      "Rashi on Nazir 15a:2:3",
+      "Nazir 12b:10",
+      "Nazir 15a:6",
+      "Tosafot on Nazir 15a:2:2",
+      "Tosafot on Nazir 15a:2:3",
+      "Tosafot on Nazir 15a:2:4",
+      "Steinsaltz comment #1 on Nazir 15a:2",
+      "Steinsaltz comment #2 on Nazir 15a:2",
+      "Steinsaltz comment #3 on Nazir 15a:2",
+      "Steinsaltz on Nazir 15a:2"
+    ],
+    "generatedAt": "2026-10-30T00:07:02.076Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 15a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הריני נזיר כשיהיה לי בן</strong> - פירוש דסתם נזירות דהוי שלשים יום ונזיר מאה יום נזירות דנפשיה והשתא נמי קבל נזירות דבנו ברישא והתחיל למנות נזירות דנפשיה ק' יום ונולד לו בן עד שבעים ויום שבעים נמי בכלל לא הפסיד כלום פירוש אחרי שנזירות בנו של שלשים יום מובלעים תוך ק' יום עדיין דפירש ולא הני ק' יום עולים לנזירות דבנו וגם למאה יום דנפשיה דאף ע\"ג דמיד כשיוולד בנו צריך להניח את שלו ולמנות של בנו שהרי קיבלו תחילה כדאמר לעיל אפ\"ה כיון דשל בנו מובלעין בתוך המאה יום עולים לשל בנו ולשלו וישלים מאה יום ויגלח על שניהם ויביא שני קרבנות וה\"ה לעיל כי אמר הריני נזיר כשיהיה לי בן ונזיר והתחיל למנות את שלו אם נולד לו הבן למניינו ביום א' דאותן שלשים יום עולין היו לבנו ולעצמו כיון דשל בנו מובלע בשל עצמו דאידי ואידי ל' יום ודוקא כי קבל נזירות דבנו ברישא דמיד שנולד הוי זקוק למנות אותו מהני הבלעה אבל קבל נזירות דמאה יום ברישא אפי' נולד לו הבן קודם ע' יום צריך להשלים המאה יום ברישא כשקיבל עליו תחילה דלא חייל נזירות בנו עליו [עד] השלמת נזירותו אלא משלים נזירות ק' ויגלח ויביא קרבן לנזירותו ושוב יעשה נזירות דבנו ל' יום ויגלח לל' יום ויביא קרבן:"
+  },
+  "Tosafot on Nazir 15a:2:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 15a:2:1",
+      "Tosafot on Nazir 15a:2:2",
+      "Tosafot on Nazir 15a:2:3",
+      "Tosafot on Nazir 15a:2:4",
+      "Tosafot on Nazir 15a:3:2"
+    ],
+    "generatedAt": "2026-10-30T00:08:32.503Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 15a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נולד הבן עד ע'</strong> - עד ועד בכלל:"
+  },
+  "Tosafot on Nazir 15a:2:3": {
+    "dependsOn": [
+      "Nazir 15a:2",
+      "Tosafot on Nazir 15a:2:1",
+      "Tosafot on Nazir 15a:2:2",
+      "Tosafot on Nazir 15a:2:3",
+      "Tosafot on Nazir 15a:2:4"
+    ],
+    "generatedAt": "2026-10-30T00:10:10.578Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 15a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא הפסיד כלום</strong> - ואי ס\"ד עולה לו לכאן ולכאן איתגורי מיתגר והוי ליה למיתני במתניתין הרויח בריוח הבן דאי לא נולד לו הבן לא מגלח אלא עד יום ק\"א והשתא לפי דברי רב מגלח ביום ק' נמצא שהרויח בלידת הבן ומאי קאמר לא הפסיד:"
+  },
+  "Tosafot on Nazir 15a:2:4": {
+    "dependsOn": [
+      "Tosafot on Nazir 15a:2:1",
+      "Tosafot on Nazir 15a:2:2",
+      "Tosafot on Nazir 15a:2:3",
+      "Nazir 15a:3"
+    ],
+    "generatedAt": "2026-10-30T00:11:53.469Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 15a:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאחר שבעים</strong> - היינו ע\"א סותר ול\"ג סותר שבעים יום דהא אינו סותר ע' וה\"פ מניח את שלו ומונה את של בנו ולאו דוקא סותר כלומר מניח את מניינו ומונה שלשים דבנו שאין תגלחת פחות משלשים יום פי' לכך אין עולין שאר הימים שעד ק' ימים לנזירות דבנו לפי שאין נזירות דבנו פחות משלשים יום וליכא ל' יום עד גמר השלמת מאה ולכך זקוק להפסיק מניינו הואיל דנמשך דבנו על ימי נזירותו ולשון תגלחת אינו מכוון דטפי ה\"ל למימר שאין נזירות פחות משלשים יום ונקט שאין תגלחת למימר מכשישלים של בנו יחזיר למניינו וישלים נזירות הק' יום ויגלח בסוף כל המנין אח' לכולן אבל בסוף מנין דבנו אינו מגלח דאם כן לא יוכל להשלים אחר נזירות שלו דליכא שלשים יום מנזירות: הגה\"ה לכאורה משמע כדמפרש דאחר שישלים של בנו יחזור וישלים את שלו כי ימי בנו אין עולין לנזירות מאה יום שלו כמו ברישא דקתני מניח את שלו מיהא יש בירושלמי נולד ביום שמונים סותר עשרה נולד ביום תשעים סותר את עשרים ולפי שיטת הירושלמי מיד שנולד הבן מונה של בן לגמרי ואותו מנין בן עולה לו לנזירות דק' יום ושמא י\"ל הירושלמי דסותר כ' כלומר בשביל בנו קאמר דמונה עשרה של מאה וכ' אחר המאה ולעולם ה\"נ קאמר שאין עולה לנזירות דמאה כלל וחוזר וישלים המאה כמו שהיה לו למנות בלידת הבן ובגמרא מוכחא דאם נולד ע\"א דסותר אע\"ג דאיכא שלשים יום עד המאה מיום לידת הבן והטעם דיום לידת הבן נימנית ממנין שלו ולא תחשב לימי הבן וליכא אלא כ\"ט עד יום ק' וצ\"ע שפירש לעיל שאם נולד הבן ביום ראשון שהתחיל בו נזירותו שימנה ל' ועולין לשניהם וצריך ליתן חילוק בדבר דרישא הואיל וביום לידת הבן התחיל למנות נזירות של עצמו ימנה לשניהם אבל הכא שהתחיל זה ימים רבים של עצמו לא ימנה יום הלידה לבנו כי אם לעצמו. ע\"כ הגה\"ה:"
+  },
+  "Tosafot on Nazir 15a:3:1": {
+    "dependsOn": [
+      "Nazir 15a:2",
+      "Rashi on Nazir 15a:3:1",
+      "Rashi on Nazir 15a:3:2",
+      "Tosafot on Nazir 15a:3:2",
+      "Steinsaltz on Nazir 15a:3"
+    ],
+    "generatedAt": "2026-10-30T00:21:55.743Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 15a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רב יום שבעים עולה לו לכאן ולכאן</strong> - פי' נולד לו בן ביום ע' מקצת היום שקודם הלידה עולה למנין המאה והרי עשה ע' יום מן המאה <span class=\"parenthesized\">(שהוא יום ל\"א)</span> ומקצת היום שאחר הלידה עולה לתחילת הנזירות ולא ימנה נזירות בנו אלא עד כ\"ט יום הרי ביום צ\"ט דשלו ל' לבנו ונ\"מ השתא שיום ע' עולה לכאן ולכאן שיוכל לגלח ביום המאה שהוא יום ל\"א לבנו מתוך שאותו תגלחת עולה לנזירות בנו מן הדין שהוא יום [ל\"א] לבנו עולה נמי אותו תגלחת גם לנזירות דנפשיה שהוא מאה יום אע\"פ שאם לא נולד לו הבן לא היה יכול לגלח על נזירתו אלא ביום ק\"א השתא כשנולד הבן יכול לגלח ביום [ק'] כדפרישית וא\"ת ומאי סברא היא כיון דאם לא נולד לו בן לא יכול לגלח עד יום ק\"א דהא לא מצי לגלח עד יום ק\"א לנזיר נזירות דנפשיה השתא נמי לא יגלח עד יום ק\"א ויש לומר דהא [דלא] מצי לגלח ביום ק' לא הוי אלא מדרבנן כדפירשנו בפ\"ק <span class=\"parenthesized\">(דף ו.)</span> דמדאורייתא מצי לגלח ביום ק' דמקצת היום ככולו אלא דרבנן גזרו דלא מגלח עד יום ק\"א אטו היכא דאמר שלימים והכא אוקמיה אדין תורה כשנולד לו בן שיוכל לגלח ביום מאה כיון דלנזירות דבנו קא הוי יום ל\"א ויכול לגלח לנזירות דבנו ביום [ק'] הלכך גם לנזירות דנפשיה עולה התגלחת של יום ק':"
+  },
+  "Tosafot on Nazir 15a:3:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 15a:3:1",
+      "Tosafot on Nazir 15a:3:2",
+      "Tosafot on Nazir 15a:3:3"
+    ],
+    "generatedAt": "2026-10-30T00:22:39.512Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 15a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נולד הבן עד ע'</strong> - עד ועד בכלל:"
+  },
+  "Tosafot on Nazir 15a:3:3": {
+    "dependsOn": [
+      "Tosafot on Nazir 15a:3:2",
+      "Tosafot on Nazir 15a:3:4",
+      "Nazir 15a:2",
+      "Rashi on Nazir 15a:3:1",
+      "Rashi on Nazir 15a:3:2",
+      "Tosafot on Nazir 15a:3:1"
+    ],
+    "generatedAt": "2026-10-30T00:25:07.065Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 15a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא הפסיד כלום</strong> - ואי ס\"ד עולה לו לכאן ולכאן איתגורי מיתגר והוי ליה למיתני במתניתין הרויח בריוח הבן דאי לא נולד לו הבן לא מגלח אלא עד יום ק\"א והשתא לפי דברי רב מגלח ביום ק' נמצא שהרויח בלידת הבן ומאי קאמר לא הפסיד:"
+  },
+  "Tosafot on Nazir 15a:3:4": {
+    "dependsOn": [
+      "Rashi on Nazir 15a:3:3",
+      "Versions on Nazir 15a:3"
+    ],
+    "generatedAt": "2026-10-30T00:26:34.513Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 15a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא בדין הוא דלא ליתני עד ע' לא הפסיד כלל</strong> - כלומר מן הדין לא היה לו לשנות בזה הלשון לא הפסיד אלא אדרבה ה\"ל למיתני הרויח ומשום דקתני סיפא לאחר שבעים סותר פי' כי מפסיד בלידת הבן תני נמי רישא עד שבעים לא הפסיד כלום וה\"ה אפי' ברישא הרויח בלידת הבן ובמקצת ספרים אין כתוב אלא רק בדין הוא דלא ליתני עד שבעים ולא הפסיד והוי כמו וכו':"
+  },
+  "Tosafot on Nazir 15a:4:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 15a:3:1",
+      "Tosafot on Nazir 15a:3:2",
+      "Tosafot on Nazir 15a:3:3",
+      "Tosafot on Nazir 15a:3:4",
+      "Tosafot on Nazir 15a:1:1",
+      "Tosafot on Nazir 15a:2:1",
+      "Nazir 15a:3",
+      "Nazir 15a:4",
+      "Nazir 15a:5",
+      "Rashi on Nazir 15a:4:1",
+      "Rashi on Nazir 15a:4:2",
+      "Tosafot on Nazir 15a:4:2",
+      "Tosafot on Nazir 14b:7:1",
+      "Tosafot on Berakhot 2a:1:1",
+      "Tosafot on Berakhot 2a:1:2"
+    ],
+    "generatedAt": "2026-10-30T00:31:10.223Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 15a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ש מסיפא נולד לו לאחר שבעים סותר</strong> - פי' מפסיד וסבירא ליה דאחר שבעים הוי פי' ביום שבעים ואחד ואמאי מפסיד כלום לרב בלידת הבן והא יום הלידה עולה לכאן ולכאן עולה נמי לתחילת הנזירות דבן נמצא כי ל' יום דבן כלים ביום ק' ויכול השתא לגלח ביום ק\"א והשתא כי נולד הבן ביום ע\"א יגלח ביום ק\"א הרי לא הפסיד כלום:"
+  },
+  "Tosafot on Nazir 15a:5:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 15a:5:1",
+      "Tosafot on Nazir 15a:5:2",
+      "Nazir 15a:4",
+      "Rashi on Nazir 15a:5:1",
+      "Tosafot on Nazir 15a:3:1"
+    ],
+    "generatedAt": "2026-10-30T00:44:42.567Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 15a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל אחר ממש מאי</strong> - דהיינו ביום ע\"א הכי נמי לא סתר כו' אלא ש\"מ אחר ממש:"
+  },
+  "Tosafot on Nazir 15a:5:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 15a:5:1",
+      "Tosafot on Nazir 15a:2:1",
+      "Tosafot on Nazir 15a:3:1",
+      "Tosafot on Nazir 15a:4:1",
+      "Tosafot on Nazir 6a:1:1",
+      "Tosafot on Nazir 6a:2:1",
+      "Tosafot on Nazir 15a:2:2",
+      "Tosafot on Nazir 15a:2:3",
+      "Tosafot on Nazir 15a:2:4",
+      "Rashi on Nazir 15a:5:1",
+      "Rashi on Nazir 15a:5:2",
+      "Steinsaltz on Nazir 15a:5:1",
+      "Steinsaltz on Nazir 15a:5",
+      "Tosafot on Nazir 2a:1:1",
+      "Rashi on Nazir 2a:1:1"
+    ],
+    "generatedAt": "2026-10-30T00:48:00.556Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 15a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן מתני' לרב ש\"מ</strong> - פי' ממתני' יש להוכיח דלא כרב דסבירא ליה למתני' דיום הלידה אינו נחשב לנזירות הבן כמו דנחשב לנזירות דידיה למאה יום שהוא נגרר ונחשב אחר ימים שעברו דהיינו לנזירות דידיה ולא דמי למאי דפרשינן במתני' דאי נולד הבן ביום ראשון לנזירות דעולה לשניהם דודאי כיון שהוא תחילת נזירות לזה כמו לזה למה יעלה לאחד טפי מלשני אבל הכא דהוא התחיל לנזירותו כבר זה ימים רבים סברא הוא דיום לידה יהיה נחשב ונגרר אחר ימים שעברו דהיינו לנזירות דנפשיה ונזירות הבן יתחיל מיום שאחר הלידה ואם תאמר והא תנן לקמן ומייתינן לה בפ' קמא <span class=\"parenthesized\">(לעיל נזיר דף ו.)</span> דיום שלשים עולה מקצתו לראשון ומקצתו לנזירות שני אלמא דיום ל' עולה לכאן ולכאן וי\"ל דשאני התם דאותו יום בין שתי נזירות וראוי להחשיבו תחילתו <span class=\"parenthesized\">(לו)</span> לנזירות ראשון וסופו לנזירות שני משום דכיון דהביא קרבנותיו א\"כ נגמר נזירתו דין הוא שיתחיל נזירות השני מיד מידי דהוה אמקבל נזירות בחצי היום דאותו יום עצמו עולה למנין נזירות אבל הכא דיום לידה דהיינו ע\"א עומד באמצע נזירות דידיה ובהתחלת נזירות דבריה ראוי להחשיבו כולו לנזירות דידיה אחר ימים שעברו משום דגם הוא מחשבון ק' יום וכיון שאותו יום ע\"א נחשב אחר ק' שוב אין למנותו שיהיה חשוב כיום שלם להיות נחשב נזירות אחד לכך אינו עולה לבנו לתנא דמתני':"
+  },
+  "Tosafot on Nazir 15a:6:1": {
+    "dependsOn": [
+      "Nazir 15a:6"
+    ],
+    "generatedAt": "2026-10-30T00:50:27.012Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 15a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורב כמאן אמרה</strong> - כיון דתנא דמתניתין לא סבר לה כוותיה:"
+  },
+  "Tosafot on Nazir 15a:6:2": {
+    "dependsOn": [
+      "Moed Katan 19b:1",
+      "Moed Katan 20a:1",
+      "Moed Katan 20a:2",
+      "Rashi on Moed Katan 19a:7:4"
+    ],
+    "generatedAt": "2026-10-30T00:54:19.562Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 15a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אילימא כאבא שאול כו' בטלה הימנו גזרת שבעה</strong> - תוך ז' שיהיה אסור בנעילת סנדל ובתשמיש המטה ומיהו לאו הילכתא הכי דבמ\"ק <span class=\"parenthesized\">(דף כ.)</span> הכי מסקינן אפי' שעה אחת קודם לרגל בטלה הימנו [גזירת] שבעה [שמונה] ימים קודם לרגל בטלה הימנו גזירת שלשים לענין תספורת הואיל ומתחיל יום אחד מדין שלשים קודם לרגל ומותר לספר ערב הרגל משום כבוד הרגל ואי לא סיפר ערב הרגל אסור לספר אחר הרגל דלא ניתן לדחות אלא מפני כבוד הרגל והואיל ולא חילק כבוד לרגל לא יועיל לו הרגל להפסיק וישלים אחר הרגל:"
+  }
+}

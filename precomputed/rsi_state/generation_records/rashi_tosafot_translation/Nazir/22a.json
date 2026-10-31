@@ -1,0 +1,135 @@
+{
+  "Rashi on Nazir 22a:1:1": {
+    "dependsOn": [
+      "Nazir 22a:1"
+    ],
+    "generatedAt": "2026-10-30T08:59:35.735Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 22a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנא נמי רישא סופגת</strong> - את הארבעים דאינה צריכה:"
+  },
+  "Rashi on Nazir 22a:2:1": {
+    "dependsOn": [
+      "Nazir 22a:2",
+      "Rashi on Nazir 22a:2:1",
+      "Rashi on Nazir 22a:2:2",
+      "Tosafot on Nazir 22a:2:1",
+      "Steinsaltz on Nazir 22a:2",
+      "Steinsaltz comment #1 on Nazir 22a:2",
+      "Steinsaltz comment #2 on Nazir 22a:2",
+      "Steinsaltz comment #3 on Nazir 22a:2",
+      "Rashi on Nazir 22a:3:1",
+      "Rashi on Nazir 22a:3:2"
+    ],
+    "generatedAt": "2026-10-30T09:01:46.035Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 22a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האשה שנדרה בנזיר ונטמאת ואח\"כ הפר לה בעלה מביאה חטאת העוף</strong> - דאפילו אמרינן דתיהוי כחטאת שמתו בעליה כיון דבעל מיעקר עקר לה לא אשכחן בה דתיזיל למיתה:"
+  },
+  "Rashi on Nazir 22a:2:2": {
+    "dependsOn": [
+      "Rashi on Nazir 22a:2:1"
+    ],
+    "generatedAt": "2026-10-30T09:02:34.447Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 22a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ניתי נמי עולת העוף</strong> - ומאשם לא פריך דתייתי נמי אשם דאין אשם בא אלא במקום שצריך ליכנס בנזירות אחרת כי היכי דתיחול עליו נזירות בטהרה:"
+  },
+  "Rashi on Nazir 22a:3:1": {
+    "dependsOn": [
+      "Rashi on Nazir 22a:3:2",
+      "Nazir 22a:2"
+    ],
+    "generatedAt": "2026-10-30T09:05:24.927Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 22a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא מני</strong> - דתני אע\"ג דתיעקר ליה נזירות מייתי ליה חטאת העוף:"
+  },
+  "Rashi on Nazir 22a:3:2": {
+    "dependsOn": [
+      "Rashi on Nazir 22a:3:1",
+      "Nazir 19a:5"
+    ],
+    "generatedAt": "2026-10-30T09:06:23.715Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 22a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי אליעזר הקפר היא</strong> - דאמר דצריך כפרה על שציער עצמו מן היין:"
+  },
+  "Rashi on Nazir 22a:5:1": {
+    "dependsOn": [
+      "Nazir 22a:5"
+    ],
+    "generatedAt": "2026-10-30T09:11:44.867Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 22a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היא מותרת וחבירתה אסורה</strong> - דבעל מיגז גייז ומסיים הברייתא ר' שמעון אומר אם אמרה הריני כמותיך דמשמע אם נתקיים נזירותיך עלי לקיים ואם לאו לא וכיון שהפר לה בעלה לראשונה שתיהן מותרות:"
+  },
+  "Tosafot on Nazir 22a:2:1": {
+    "dependsOn": [
+      "Rashi on Nazir 22a:2:1",
+      "Rashi on Nazir 22a:2:2",
+      "Nazir 22a:2",
+      "Steinsaltz comment #2 on Nazir 22a:2",
+      "Tosafot on Nazir 22a:3:1",
+      "Tosafot on Nazir 22a:5:1"
+    ],
+    "generatedAt": "2026-10-30T09:04:06.145Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 22a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכי גרסי' ואי ס\"ד מיגז גייז תייתי עולת העוף</strong> - וה\"ה דאשם נמי איבעי לה לאתויי אלא נקט עולת העוף משום דחטאת העוף ועולת העוף בחד קרא כתיבי:"
+  },
+  "Tosafot on Nazir 22a:3:1": {
+    "dependsOn": [
+      "Nazir 22a:3",
+      "Tosafot on Nazir 22a:2:1",
+      "Nazir 22a:1",
+      "Tosafot on Nedarim 10a:8:1",
+      "Rashi on Nazir 22a:3:1",
+      "Rashi on Nazir 22a:3:2",
+      "Steinsaltz comment #1 on Nazir 22a:3",
+      "Steinsaltz comment #2 on Nazir 22a:3"
+    ],
+    "generatedAt": "2026-10-30T09:10:17.168Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 22a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא מני ר\"א הקפר בר רבי היא</strong> - פירוש לעולם מיעקר עקר ולכך אינה מביאה עולת העוף וחטאת העוף מייתא משום דאתיא על הספק והכי איתא בפ\"ק דנדרים <span class=\"parenthesized\">(דף י)</span> והשתא מסקינן דבעל מיעקר עקר וקשה מאי שנא הכא מייתי כולה מילתא דר' אלעזר הקפר ולעיל לא מייתי לה דקאמר לעולם מיעקר עקר וכיון דצריכה כפרה הוה [וכו' ע\"כ נראה דגרסי'] הכי וכיון דלא צריכה כפרה הוה ליה כחטאת שמתו בעליה והכי פירושו לעולם [מיעקר] עקר ומ\"מ כיון שהקדישתה לא נפקא לחולין וכי היפר לה הוה לה כחטאת שמתו בעליה אי נמי לגירסת הספרים נמי ניחא דלעיל לא עבדינן מכל וכל כר' אלעזר דאין קרב אבל הכא דקרב מייתי שפיר מילתא דרבי אלעזר דהוי כוותיה מכל וכל:"
+  },
+  "Tosafot on Nazir 22a:5:1": {
+    "dependsOn": [
+      "Nazir 22a:5",
+      "Tosefta Nazir (Lieberman) 3:9",
+      "Tosefta Nazir (Lieberman) 3:10"
+    ],
+    "generatedAt": "2026-10-30T09:13:52.000Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 22a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תא שמע דתניא בהדיא היא מותרת וחבירתה אסורה אלמא דבעל מיגז גייז</strong> - וקצת קשה דלעיל פשיט מדמביאה חטאת ולא עולה דמיעקר קעקר ועתה מהדר למיפשט דבעל מיגז גייז אין זה שיטת הש\"ס וי\"ל דההיא אוקימנא ליה כר' אלעזר הקפר והך רבנן ומייתי לזה דפלוגתא דתנאי היא דר\"ש אמר אם אמרה הריני כמותיך שתיהן מותרות דמשמע הריני כמותיך לכל דרכיך ולכשתותר אהיה גם אני מותרת ותימה כיון שקיבלה נזירות וחל עליה איך תהיה מותרת בהתרת חבירתה כיון דמיגז גייז הא אין נזירות לחצאין ואילו אמר הריני נזיר היום ולמחר איני נזיר הוי נזיר שלשים יום דאין נזירות פחות מל' יום כדתנן בפרק קמא <span class=\"parenthesized\">(לעיל נזיר ה.)</span> ואומר ר\"י דהכי איתא בתוספתא <span class=\"parenthesized\">(פ\"ג)</span> ולא נתכוונתי להיות אלא כמותיך שתיהן מותרות אם אמרה הכי משום דמשמע ליה לר\"ש דהכי קאמרה לה אם סופך שתהיה מותרת לא יחול עלי נזירות כל עיקר ור\"ש לא בא לפלוגי על מלתא דת\"ק אלא להוסיף עליה וגם ת\"ק מודה ליה ואומר מהר\"ף נ\"ע דלר\"ש אפי' ואני לבד מפרשינן למילתא הכי כאילו אמרה בפי' לא [נתכוונתי] אלא להיות [כמותיך] ובהא פליגי רבנן ור\"ש:"
+  }
+}

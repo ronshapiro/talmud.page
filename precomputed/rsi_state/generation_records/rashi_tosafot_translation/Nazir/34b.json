@@ -1,0 +1,522 @@
+{
+  "Rashi on Nazir 34b:10:1": {
+    "dependsOn": [
+      "Rashi on Nazir 34b:8:1",
+      "Rashi on Nazir 34b:9:1",
+      "Nazir 34b:10",
+      "Nazir 34b:7"
+    ],
+    "generatedAt": "2026-10-31T01:02:43.679Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 34b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד שיפרוט לך הכתוב</strong> - שלא תהא מרבה אלא כעין הפרט כדרך שפרט לך בנזיר שלאחר שכתב את הכלל בא וכתב לך פרט מחרצנים ועד זג ור\"א סבר כר\"א בן עזריה דמוקים ליה להאי מחרצנים ועד זג עד שיאכל שני חרצנים וזג:"
+  },
+  "Rashi on Nazir 34b:12:1": {
+    "dependsOn": [
+      "Jastrow, גּוּהַרְקָא II 1",
+      "Rashi on Nazir 34b:12:2",
+      "Rashi on Nazir 34b:1:1",
+      "Rashi on Nazir 34b:5:1",
+      "Rashi on Nazir 34b:12:3"
+    ],
+    "generatedAt": "2026-10-31T01:04:25.904Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 34b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גוהרקי</strong> - ענבים דקין שגדלין בין שאר גרעינין גדולים:"
+  },
+  "Rashi on Nazir 34b:12:2": {
+    "dependsOn": [
+      "Rashi on Nazir 34b:12:1",
+      "Rashi on Nazir 34b:12:3",
+      "Steinsaltz on Nazir 34b:12:1",
+      "Steinsaltz on Nazir 34b:12"
+    ],
+    "generatedAt": "2026-10-31T01:05:50.427Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 34b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ענבי דכרין</strong> - ענבים שהתליעו:"
+  },
+  "Rashi on Nazir 34b:12:3": {
+    "dependsOn": [
+      "Rashi on Nazir 34b:12:1",
+      "Rashi on Nazir 34b:12:2",
+      "Steinsaltz on Nazir 34b:12"
+    ],
+    "generatedAt": "2026-10-31T01:06:24.579Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 34b:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בין הבינים</strong> - אותו דבר הקרוש שבין הזג והחרצן שממנו נעשין שמרים:"
+  },
+  "Rashi on Nazir 34b:1:1": {
+    "dependsOn": [
+      "Rashi on Nazir 34b:1:2"
+    ],
+    "generatedAt": "2026-10-31T00:23:31.350Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 34b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במשנה ראשונה</strong> - היו שונין שאינו חייב עד שישתה רביעית יין בא ר\"ע ואמר אפי' שרה פיתו ביין ויש יין מובלע בתוך הפת כדי זית חייב:"
+  },
+  "Rashi on Nazir 34b:3:1": {
+    "dependsOn": [
+      "Steinsaltz on Nazir 34b:3",
+      "Rashi on Nazir 34b:5:1"
+    ],
+    "generatedAt": "2026-10-31T00:34:28.263Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 34b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עלין ולולבין</strong> - של גפן במשמע הכתוב שאמר מכל אשר יעשה מגפן היין לולבין אלו חוטין רכין שבגפן:"
+  },
+  "Rashi on Nazir 34b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T00:38:29.319Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 34b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיין ושכר יזיר מיעט</strong> - יין הראוי להשתכר בו אסור לו אבל מידי אחרינא לא:"
+  },
+  "Rashi on Nazir 34b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T00:40:18.507Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 34b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל מילי</strong> - ואפילו עלין ולולבין:"
+  },
+  "Rashi on Nazir 34b:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T00:40:47.982Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 34b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שבישתא</strong> - זמורות כדמתרגמינן שריגים שיבשין <span class=\"parenthesized\">(בראשית מ)</span>:"
+  },
+  "Rashi on Nazir 34b:7:1": {
+    "dependsOn": [
+      "Rashi on Nazir 34b:7:2"
+    ],
+    "generatedAt": "2026-10-31T00:42:30.583Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 34b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה הפרט מפורש פרי ופסולת פרי</strong> - כגון ענבים ויין וחומץ:"
+  },
+  "Rashi on Nazir 34b:7:2": {
+    "dependsOn": [
+      "Nazir 34b:7",
+      "Rashi on Nazir 34b:8:1",
+      "Rashi on Nazir 34b:8:2",
+      "Rashi on Nazir 34b:8:3",
+      "Rashi on Nazir 34b:8:4",
+      "Nazir 34b:12",
+      "Rashi on Nazir 34b:12:1",
+      "Rashi on Nazir 34b:12:2",
+      "Rashi on Nazir 34b:12:3"
+    ],
+    "generatedAt": "2026-10-31T00:43:53.914Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 34b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף כל פרי ופסולת</strong> - להביא גוהרקי ועינבין דיכרין כדלקמן בסמוך:"
+  },
+  "Rashi on Nazir 34b:8:1": {
+    "dependsOn": [
+      "Nazir 34b:8",
+      "Rashi on Nazir 34b:8:1",
+      "Rashi on Nazir 34b:8:2",
+      "Rashi on Nazir 34b:8:3",
+      "Rashi on Nazir 34b:8:4",
+      "Sefer HeArukh, Letter Gimel 393",
+      "Steinsaltz on Nazir 34b:8",
+      "Rashi on Nazir 34b:7:2",
+      "Rashi on Nazir 34b:9:1",
+      "Tosafot on Nazir 34b:12:1",
+      "Nazir 34b:12",
+      "Rashi on Nazir 34b:12:1",
+      "Rashi on Nazir 34b:12:2"
+    ],
+    "generatedAt": "2026-10-31T00:49:22.686Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 34b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף כל פרי גמור</strong> - ולא דבר אחר ולא גוהרקי ולא עינבין דיכרין:"
+  },
+  "Rashi on Nazir 34b:8:2": {
+    "dependsOn": [
+      "Rashi on Nazir 34b:8:1",
+      "Rashi on Nazir 34b:8:2",
+      "Rashi on Nazir 34b:8:3"
+    ],
+    "generatedAt": "2026-10-31T00:50:05.067Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 34b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם כן</strong> - שלא להביא בו אלא פרי גמור:"
+  },
+  "Rashi on Nazir 34b:8:3": {
+    "dependsOn": [
+      "Rashi on Nazir 34b:8:1",
+      "Rashi on Nazir 34b:8:2",
+      "Rashi on Nazir 34b:8:3",
+      "Rashi on Nazir 34b:8:4"
+    ],
+    "generatedAt": "2026-10-31T00:50:45.507Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 34b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה הניח לך הכתוב במשמעו שלא אמר</strong> - שתהא למד מן הפרט אם ענבים לחים ויבשים הא כתיב כו':"
+  },
+  "Rashi on Nazir 34b:8:4": {
+    "dependsOn": [
+      "Rashi on Nazir 34b:8:1",
+      "Rashi on Nazir 34b:8:2",
+      "Rashi on Nazir 34b:8:3"
+    ],
+    "generatedAt": "2026-10-31T00:51:37.207Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 34b:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא כלשון הראשון</strong> - אף כל פרי ופסולת פרי שאם אתה אומר אף כל פרי גמור נמצא דאינו מרבה שום דבר בעולם:"
+  },
+  "Rashi on Nazir 34b:9:1": {
+    "dependsOn": [
+      "Nazir 34b:9",
+      "Rashi on Nazir 34b:8:1",
+      "Rashi on Nazir 34b:8:2",
+      "Rashi on Nazir 34b:8:3",
+      "Rashi on Nazir 34b:8:4",
+      "Rashi on Nazir 34b:9:1",
+      "Rashi on Nazir 34b:9:2",
+      "Rashi on Nazir 34b:9:3",
+      "Versions on Nazir 34b:9",
+      "Steinsaltz on Nazir 34b:9",
+      "Tosafot on Nazir 34b:9:1",
+      "Rashi on Nazir 34b:5:1",
+      "Rashi on Nazir 34b:6:1",
+      "Rashi on Nazir 34b:6:2",
+      "Rashi on Nazir 34b:7:1",
+      "Rashi on Nazir 34b:7:2",
+      "Sefer HeArukh, Letter Peh 467",
+      "Nazir 34b:12",
+      "Rashi on Nazir 34b:12:1",
+      "Rashi on Nazir 34b:12:2",
+      "Rashi on Nazir 34b:12:3",
+      "Steinsaltz comment #1 on Nazir 34b:9",
+      "Tosafot on Nazir 34b:7:2"
+    ],
+    "generatedAt": "2026-10-31T00:55:15.823Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 34b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומאחר שסופינו לרבות כל דבר</strong> - יין וחומץ <span class=\"parenthesized\">(ענבים לחים ויבשים)</span> ומרבה יין גוהרקי ועינבין דיכרין מאף כל והיינו דהניח הכתוב במשמעו שלא אמר <span class=\"parenthesized\">(וענבים לחים ויבשים)</span>:"
+  },
+  "Rashi on Nazir 34b:9:2": {
+    "dependsOn": [
+      "Rashi on Nazir 34b:9:1",
+      "Rashi on Nazir 34b:9:2",
+      "Rashi on Nazir 34b:9:3",
+      "Nazir 34b:1"
+    ],
+    "generatedAt": "2026-10-31T00:56:45.188Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 34b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה ת\"ל</strong> - פרט האחרון דכתיב מחרצנים ועד זג לא יאכל אי משום דרבי אלעזר בן עזריה ליכתביה לגבי פרטי בתר כללא למה לי:"
+  },
+  "Rashi on Nazir 34b:9:3": {
+    "dependsOn": [
+      "Rashi on Nazir 34b:9:1",
+      "Rashi on Nazir 34b:9:2"
+    ],
+    "generatedAt": "2026-10-31T00:57:46.483Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 34b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לומר לך כל מקום שאתה מוצא</strong> - בכל התורה שיהא שם פרט וכלל בלבד אי אתה רשאי למושכו ולדונו כעין הפרט אלא שהכלל נעשה מוסף על הפרט ואיתרבו להו כל מילי:"
+  },
+  "Rashi on Sukkah 6a:3:2": {
+    "dependsOn": [
+      "Nazir 34b:12",
+      "Steinsaltz on Sukkah 6a:3",
+      "Steinsaltz comment #3 on Sukkah 6a:3",
+      "Rashi on Sukkah 6a:3:1",
+      "Tosafot on Sukkah 6a:3:1",
+      "Jastrow, ברץ",
+      "Chokhmat Shlomo on Shulchan Arukh, Orach Chayim 486:1"
+    ],
+    "generatedAt": "2026-10-31T00:27:10.898Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 6a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדי רביעית יין</strong> - בשאר איסורי נזיר דאיכא למאן דאמר במסכת נזיר <span class=\"parenthesized\">(דף לד:)</span> דחרצנים ולולבין ועליו מצטרפין לשיעור רביעית יין שאם יתנם לכוס מלא יין עד שיצא ממנו רביעית יין ואין דומה המשער בכוס מלא מים למשער ביין משום דיין עב הוא ואינו ממהר לצאת אלא נברץ ונגדש על שפת הכוס יותר מן המים:"
+  },
+  "Tosafot on Nazir 34b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T01:07:31.166Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 34b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גוהרקי</strong> - פי' בוסר וחבירו בפ' כל שעה <span class=\"parenthesized\">(פסחים ד' כה:)</span> הוה שייף לברתיה בגוהרקי דערלה:"
+  },
+  "Tosafot on Nazir 34b:12:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 34b:12:1",
+      "Tosafot on Nazir 34b:12:2",
+      "Tosafot on Nazir 34b:12:3",
+      "Rashi on Nazir 34b:12:2",
+      "Tosafot on Nazir 34b:1:1",
+      "Tosafot on Nazir 34b:2:1",
+      "Tosafot on Nazir 34b:3:1",
+      "Tosafot on Nazir 34a:1:1",
+      "Tosafot on Nazir 33a:1:1",
+      "Jastrow, גּוּהַרְקָא II 1"
+    ],
+    "generatedAt": "2026-10-31T01:09:09.763Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 34b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עינבין דכרין</strong> - ענבים שהתליעו:"
+  },
+  "Tosafot on Nazir 34b:12:3": {
+    "dependsOn": [
+      "Tosafot on Nazir 34b:12:1",
+      "Tosafot on Nazir 34b:12:2",
+      "Tosafot on Nazir 34b:12:3",
+      "Rashi on Nazir 34b:12:3",
+      "Steinsaltz on Nazir 34b:12",
+      "Steinsaltz comment #4 on Nazir 34b:12",
+      "Steinsaltz comment #1 on Nazir 34b:12",
+      "Steinsaltz comment #2 on Nazir 34b:12",
+      "Steinsaltz comment #3 on Nazir 34b:12"
+    ],
+    "generatedAt": "2026-10-31T01:11:17.636Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 34b:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[דבין הבינים]</strong> - דהיינו גוף הענב והכי משמע לישנא דקרא מחרצנים ועד זג פירוש מה שבין חרצן לזג וקשה דההיא גוף הענב וכבר כתב ענבים לכן פר\"ת דהיינו ענבים קטנים שבין הגדולים שאינם רואין פני החמה ואינם מתבשלין כל כך ולא יהיו גדולים לעולם וא\"ת אמאי איצטריך ועד לבין הביניים והלא כבר מרבינן אפי' בוסר מכעין הפרט ושמא י\"ל דה\"נ גריעי מבוסר לפי שבוסר יבא לכלל ענבים גדולים ועוד י\"ל דאי לאו ועד מרבין בין הביניים הוו מרבים מכעין הפרט בין הביניים ולא בוסר ועוד יש לקיים פירוש ראשון והכי פירושו אם ליקט האוכל שבין החרצן כדי כזית ואכלו לוקה ולא אמרי' דבטלה דעתו אצל כל אדם והא לא שמעינן ליה מענבים דקרא:"
+  },
+  "Tosafot on Nazir 34b:13:1": {
+    "dependsOn": [
+      "Nazir 34b:13",
+      "Tosafot on Nazir 34b:12:1",
+      "Tosafot on Nazir 34b:7:1",
+      "Tosafot on Nazir 33b:5:1",
+      "Tosafot on Nazir 33a:1:1",
+      "Rashi on Nazir 34b:1:1",
+      "Rashi on Nazir 34b:8:1",
+      "Steinsaltz on Nazir 34b:13",
+      "Nazir 38b:4"
+    ],
+    "generatedAt": "2026-10-31T01:14:02.024Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 34b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחרצנים ועד זג ל\"ל</strong> - וא\"ת והא שפיר איצטריך דאפי' חרצנים וזג אסר רחמנא דאע\"פ שאינן ראויין לאכילה וגם איצטריכו למלקות כדאמר לקמן <span class=\"parenthesized\">(נזיר ד' לח:)</span> אכל חרצן לוקה שתים זג לוקה שתים <span class=\"parenthesized\">(ויש לומר)</span> דהכי קאמר ל\"ל לכתביה מקמיה וקשה דהיאך סבור דלא יאמר נעשה כלל מוסיף על הפרט לכך נראה דה\"ק לכתוב חרצן וזג:"
+  },
+  "Tosafot on Nazir 34b:1:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 34b:1:1",
+      "Tosafot on Nazir 34b:3:1",
+      "Tosafot on Nazir 34b:3:2",
+      "Tosafot on Nazir 34b:7:1",
+      "Tosafot on Nazir 34b:7:2"
+    ],
+    "generatedAt": "2026-10-31T00:31:49.462Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 34b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחייב על היין בפני עצמו ועל הענבים בפני עצמן ועל הזגין בפני עצמן</strong> - ונראה דעיקר חידוש לת\"ק בא לומר חייב על הזגין בפני עצמן אם אכל לבד מן הזגין ואההיא אתא לאפלוגי ר\"א בן עזריה ואומר דאינו חייב עד שיאכל שני חרצנים וזג [דחרצנים הם] הגרעינין בענבין וזגין הם הקליפה שלהן ומרבה חרצנים בלשון רבים וזג בלשון יחיד כדמפרש הש\"ס ור\"א סבר כר' יוסי דאמר חרצנים אלו הגרעינים:"
+  },
+  "Tosafot on Nazir 34b:2:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 34b:2:1",
+      "Tosafot on Nazir 34b:1:1",
+      "Tosafot on Nazir 34b:3:1",
+      "Steinsaltz on Nazir 34b:2"
+    ],
+    "generatedAt": "2026-10-31T00:33:22.294Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 34b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[החרצנים אלו החיצונים]</strong> - קליפה שבחוץ [והזגין אלו הם] מבפנים ר' יוסי אומר. ולאפלוגי הוא דאתא ופירש המקרא להיפך אלו הקליפה החיצונה וסימן שלא תטעה כזוג של בהמה החיצון נקרא זוג כן בענבים החיצון נקרא זוג:"
+  },
+  "Tosafot on Nazir 34b:3:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 34b:3:2",
+      "Rashi on Nazir 34b:3:1",
+      "Nazir 34b:1",
+      "Nazir 34b:3",
+      "Nazir 34a:10",
+      "Versions on Nazir 34b:3",
+      "Steinsaltz on Nazir 34b:3",
+      "Steinsaltz comment #1 on Nazir 34b:3",
+      "Steinsaltz comment #2 on Nazir 34b:3",
+      "Steinsaltz comment #3 on Nazir 34b:3"
+    ],
+    "generatedAt": "2026-10-31T00:36:17.474Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 34b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גפן עצמו לא</strong> - כגון עלין ולולבין מדלא תנא [רבותא] גפן עצמו:"
+  },
+  "Tosafot on Nazir 34b:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T00:37:09.087Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 34b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפי' עלין ולולבין במשמע</strong> - כדדרשינן בסמוך:"
+  },
+  "Tosafot on Nazir 34b:4:1": {
+    "dependsOn": [
+      "Nazir 34b:4",
+      "Tosafot on Nazir 34b:3:1",
+      "Tosafot on Nazir 34b:3:2"
+    ],
+    "generatedAt": "2026-10-31T00:38:05.723Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 34b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איכא דאמרי אסיפא</strong> - אבל אדיוקא דרישא לא דמשמע שפיר בלישנא דהיוצא מן הגפן אפי' עלין ולולבין:"
+  },
+  "Tosafot on Nazir 34b:5:1": {
+    "dependsOn": [
+      "Nazir 34b:5"
+    ],
+    "generatedAt": "2026-10-31T00:39:53.659Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 34b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיין ושכר יזיר מיעט</strong> - אע\"ג דדרשי' לי' בפ\"ק <span class=\"parenthesized\">(לעיל נזיר ד.)</span> לאסור יין [של מצוה כיין של רשות] ושכר לילפי למקדש מ\"מ איכא מיעוטין טובא דכתיב מיין ושכר יזיר חומץ יין וחומץ שכר לא ישתה וענבים לחים ויבשים לא יאכל מכל אשר יעשה מגפן היין ריבה אבל מחרצנים ועד זג לא דריש ליה למעוטי כרבנן דאיצטריך ליה לכדר' אלעזר בן עזריה דבסמוך דאינו חייב עד שיאכל שני חרצנים וזג:"
+  },
+  "Tosafot on Nazir 34b:6:1": {
+    "dependsOn": [
+      "Rashi on Nazir 34b:6:1",
+      "Rashi on Nazir 34b:6:2",
+      "Tosafot on Nazir 34b:5:1",
+      "Tosafot on Nazir 34b:7:1",
+      "Nazir 34b:3"
+    ],
+    "generatedAt": "2026-10-31T00:42:01.158Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 34b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי ריבה ריבה כל מילי ואפי' עלין ולולבין ומאי מיעט שבישתא</strong> - זמורה כדמתרגמינן שלשה שריגים תלתא שיבשין:"
+  },
+  "Tosafot on Nazir 34b:7:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 34b:7:2"
+    ],
+    "generatedAt": "2026-10-31T00:44:26.931Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 34b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיין ושכר יזיר פרט</strong> - מדה זו ניתנה לידרש כעין כלל ופרט וכלל ויש חילוק קצת בין המדות כדכתב בסוף הסוגיא:"
+  },
+  "Tosafot on Nazir 34b:7:2": {
+    "dependsOn": [
+      "Nazir 34b:7",
+      "Tosafot on Nazir 34b:7:1",
+      "Rashi on Nazir 34b:7:1",
+      "Rashi on Nazir 34b:7:2",
+      "Rashi on Nazir 34b:8:1",
+      "Rashi on Nazir 34b:8:2",
+      "Rashi on Nazir 34b:8:3",
+      "Rashi on Nazir 34b:8:4",
+      "Tosafot on Nazir 34b:12:1",
+      "Tosafot on Nazir 34b:12:2",
+      "Steinsaltz comment #1 on Nazir 34b:8"
+    ],
+    "generatedAt": "2026-10-31T00:46:46.799Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 34b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה פרט מפורש בנזיר ענבים פרי אף <span class=\"parenthesized\">(על)</span> כל פרי</strong> - מפרש בסמוך לאיתויי בוסר ופסולת פרי ענבים שהתליעו ולמעט עלין ולולבין שאינו כעין הפרט אי מה פרט מפורש פרי גמור אף כל פרי גמור יש מפרשין דהכי פירושו ונמעט גם בוסר גם ענבים שהתליעו ולא נראה חדא דחומץ כתיב דהוי פסולת פרי ומאי שנא ענבים שהתליעו מחומץ וע\"ק דאם נמעט תרווייהו מה אנו מרויחין בכלל ופרט מה שלא נכתב בפירוש וגם לשון פרי גמור משמע דאתי למעוטי פרי שאינו גמור כמו בוסר לכן נראה למורי דה\"פ אף כל פרי גמור ולאפוקי בוסר אבל ענבים שהתליעו נרבה כעין הפרט ומשני א\"כ מה הניח לך שלא אמרו ענבים לחים ויבשים הא כתיבי יין וחומץ [הא כתיבי] הא אין עליך לדון כלשון אחרון אלא כלשון ראשון פי' אם כן דנמעט בוסר נמצא השאר מפורש ומה נרויח שאנו דורשין פרט וכלל ופרט ואם תאמר והא איכא ענבים שהתליעו שלא נכתבו ויש לומר דתרי פרטי כתיבי פרי דהיינו ענבים ופסולת פרי דהיינו חומץ ואין לך לרבויי מכל פרט כעין הפרט ולכך יש עליך לדון ולרבות גם בוסר מפרט ענבים גם ענבים שהתליעו מפרט דחומץ ולמעוטי עלין ולולבין שאינו כעין הפרט:"
+  },
+  "Tosafot on Nazir 34b:9:1": {
+    "dependsOn": [
+      "Nazir 34b:9",
+      "Rashi on Nazir 34b:9:1",
+      "Rashi on Nazir 34b:9:2",
+      "Rashi on Nazir 34b:9:3",
+      "Steinsaltz In-Depth comment #1 on Nazir 34b:9",
+      "Steinsaltz comment #1 on Nazir 34b:9"
+    ],
+    "generatedAt": "2026-10-31T00:59:30.369Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 34b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומאחר שסופינו לרבות כל דבר מה תלמוד לומר מחרצנים ועד זג</strong> - ואם תאמר והא איצטריך לפרט אחרון י\"ל דהכי פירושו לכתוב ליה קודם הכלל ומשני לומר לך כל מקום שאתה מוצא פרט וכלל פירוש בעלמא וכן הכא גבי נזיר לולא לא נכתב חרצן וזג שהוא פרט אחרון אי אתה רשאי לדונו ולישבו כעין הפרט אלא נעשה כלל מוסף על הפרט והיינו מרבינן עלין ולולבין נמי עד שיפרוט לך הכתוב פרט אחר הכלל כדרך שפרט לך בנזיר:"
+  }
+}

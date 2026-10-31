@@ -1,0 +1,177 @@
+{
+  "Rashi on Nazir 7b:1:1": {
+    "dependsOn": [
+      "Nazir 7b:1",
+      "Rashi on Nazir 7b:1:2"
+    ],
+    "generatedAt": "2026-10-29T17:45:32.415Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 7b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי תנא שעה אחת</strong> - התם הוא נמי הואיל דלא נחית לנזירות דוקא למהוי שלשים יום ושעה אחת לפי שאין נודרין לשעות להכי הוא דאמר דמחייב בשתי נזירות: אבל היכא דאמר נזירות אחת ומחצה דנזירות נחת לדוקא אימא דלא לימני תרתי אלא מ\"ה ימים בלבד:"
+  },
+  "Rashi on Nazir 7b:1:2": {
+    "dependsOn": [
+      "Rashi on Nazir 7b:1:1",
+      "Rashi on Nazir 7b:2:1"
+    ],
+    "generatedAt": "2026-10-29T17:46:36.028Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 7b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קמ\"ל</strong> - דבכולהו חייב תרתי והיכא דאמר ברישא הריני נזיר סתמא חיילא עליה נזירות וכי הדר ואמר או יום אחד או שעה אחת או נזירות ומחצה כיון דקיבל מקצתה כמי שקיבל את כולה דמי וחייב בב' נזירות:"
+  },
+  "Rashi on Nazir 7b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T17:47:57.827Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 7b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האומר הריני נזיר שלשים יום ושעה אחת</strong> - נעשה כאומר ל\"א יום ואינו חייב אלא ל\"א יום בלבד:"
+  },
+  "Rashi on Nazir 7b:3:1": {
+    "dependsOn": [
+      "Nazir 7b:3",
+      "Rashi on Nazir 7b:3:2"
+    ],
+    "generatedAt": "2026-10-29T17:51:27.432Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 7b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רב</strong> - האי דדייקי' ממתני' דכי אמר שלשים יום ושעה נעשה כמי שאמר ל\"א ואינו חייב בנזירות אלא ל\"א בלבד:"
+  },
+  "Rashi on Nazir 7b:3:2": {
+    "dependsOn": [
+      "Nazir 7b:3",
+      "Rashi on Nazir 7b:3:1",
+      "Rashi on Nazir 7b:5:1",
+      "Rashi on Nazir 7a:1:1",
+      "Rashi on Nazir 7b:1:1"
+    ],
+    "generatedAt": "2026-10-29T17:53:13.101Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 7b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שנו אלא דאמר ל\"א יום</strong> - אבל אמר הריני נזיר שלשים יום ויום אחד כיון דאמר לישנא יתירא הוי נזיר שתים דרב סבר לה כר\"ע דדריש לישנא יתירא דתנן המוכר בית לחברו והיה לו שם בור ודות לא מכר את הבור ואת הדות אע\"פ שכתב לו עומקא ורומא:"
+  },
+  "Rashi on Nazir 7b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T17:56:50.420Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 7b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וצריך</strong> - לו למוכר ליקח לו דרך לילך לבור ודות שלו או יפרח באויר דברי רבי עקיבא דקסבר בעין יפה הוא מוכר ולא שייר דרך לעצמו:"
+  },
+  "Rashi on Nazir 7b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T17:57:40.615Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 7b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחכמים אומרים אינו צריך ליקח לו דרך</strong> - דאמרינן כשם ששייר את הבור ואת הדות לעצמו כך שייר לו דרך:"
+  },
+  "Rashi on Nazir 7b:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T17:58:11.763Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 7b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בזמן שאמר לו</strong> - מוכר בפירוש חוץ מאלו בור ודות כיון דאמר לישנא יתירא דהא אפילו לא אמר חוץ לא הוו מכורין להכי אמר חוץ לשייר לו את הדרך:"
+  },
+  "Tosafot on Nazir 7b:1:1": {
+    "dependsOn": [
+      "Rashi on Nazir 7b:1:1",
+      "Rashi on Nazir 7b:1:2",
+      "Steinsaltz on Nazir 7b:1"
+    ],
+    "generatedAt": "2026-10-29T17:47:31.836Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 7b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי תנא שעה אחת משום דלא נחית לדוקא</strong> - פי' דבר שאינו יכול להיות שאין נודרין שעות וכיון שיש להוסיף על דבורו נוסיף נזירות שלם אבל אחת ומחצה דנחית לדוקא שיכול להיות נזיר אימא לא לימני תרתי אלא מ\"ה הוי קמ\"ל דבכולהו נזיר שתים:"
+  },
+  "Tosafot on Nazir 7b:2:1": {
+    "dependsOn": [
+      "Nazir 7b:2",
+      "Tosafot on Nazir 7b:3:1",
+      "Nazir 7a:14"
+    ],
+    "generatedAt": "2026-10-29T17:50:26.084Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 7b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הריני נזיר שלשים [יום] ושעה אחת</strong> - ומעתה לא קיימא דבור דנזיר אשעה והוי נזירות ל\"א יום שאין הנזירות לשעות ומאותה שעה נעשה יום והוי כאילו אמר הריני נזיר שלשים ואחד יום דודאי חייל עליה ל\"א יום דיום אחד מצטרף שפיר בהדי שלשים יום למיהוי נזיר כל ל\"א יום והוא הדין אם אמר הריני נזיר שלשים <span class=\"parenthesized\">(יום)</span> ויום אחד דלא הוה נזיר אלא ל\"א יום כיון שהפסיק בתיבת ל' דארישא קאי אלא דנקט אחד מן הדינין וממאי דסליק חילק דהיינו דקאמר לעיל הריני נזיר ושעה אחת והוא הדין שיש לחלק ארישא דמתניתין דקאמר הריני נזיר ויום אחד:"
+  },
+  "Tosafot on Nazir 7b:3:1": {
+    "dependsOn": [
+      "Nazir 7b:3",
+      "Nazir 7a:5",
+      "Nazir 7b:1",
+      "Rashi on Nazir 7b:3:1",
+      "Rashi on Nazir 7b:3:2"
+    ],
+    "generatedAt": "2026-10-29T17:56:13.771Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 7b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שנו אלא דאמר ל\"א יום</strong> - פי' [אז] לא הוי נזיר אלא ל\"א יום אבל אמר שלשים יום ויום אחד נזיר שתים לפי שייתר בלשונו ב' פעמים יום וכדמפרש ואזיל דסבר לה כר\"ע וק\"ק דבמתניתין לא קתני האי לישנא ל\"א יום אלא ל' ושעה אחת וי\"ל דבמתניתין פירש לישנא דסליק היינו הרייני נזיר [ושעה] אחת <span class=\"parenthesized\">(יום)</span> והוא הדין דברישא נמי כי אמר הריני נזיר ויום אחד דהוי נזיר שתים [אי אמר] הריני נזיר [ל'] ויום אחד דהפסיק בתיבת שלשים בינתיים דלא הוי נזיר אלא שלשים ואחד יום ואהא קאמר רב לא שנו שאינו מפרש להדיא ודייק ליה מדיוקא:"
+  },
+  "Tosafot on Nazir 7b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T17:57:17.348Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 7b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא את הבור כו'</strong> - שאינו בכלל בית וצריך מוכר זה ליקח לו דרך לבור מן הלוקח שמכר לו בעין יפה ולא שייר לעצמו:"
+  },
+  "Tosafot on Nazir 7b:6:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 7b:6:2"
+    ],
+    "generatedAt": "2026-10-29T17:58:47.591Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 7b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין צריך ליקח לו דרך</strong> - דבעין רעה מוכר ושייר לעצמו דרך:"
+  },
+  "Tosafot on Nazir 7b:6:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 7b:6:1",
+      "Rashi on Nazir 7b:6:1",
+      "Rashi on Nazir 7b:6:2"
+    ],
+    "generatedAt": "2026-10-29T17:59:25.648Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 7b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חוץ מאלו וכו'</strong> - שייתר בלשונו שבלאו הכי לא מכר את הבור אלא לשייר לעצמו דרך קמיכוין:"
+  }
+}

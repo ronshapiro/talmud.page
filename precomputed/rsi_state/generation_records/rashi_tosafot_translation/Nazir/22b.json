@@ -1,0 +1,296 @@
+{
+  "Rashi on Nazir 22b:1:1": {
+    "dependsOn": [
+      "Nazir 22b:1",
+      "Nazir 22a:4",
+      "Rashi on Nazir 22b:1:2",
+      "Tosafot on Nazir 22b:1:1"
+    ],
+    "generatedAt": "2026-10-30T09:16:01.836Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 22b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מר זוטרא בריה דרב מרי אמר</strong> - הא דמיבעיא לן הכא אשה שנדרה בנזיר ושמעה חבירתה ואמרה ואני ושמע בעלה של ראשונה והפר לה אפילו למ\"ד בעל מיגז גייז היינו דבעי רמי בר חמא בפ\"ק דמסכת נדרים:"
+  },
+  "Rashi on Nazir 22b:1:2": {
+    "dependsOn": [
+      "Rashi on Nazir 22b:1:1",
+      "Nazir 22b:1"
+    ],
+    "generatedAt": "2026-10-30T09:16:46.367Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 22b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי עלי כבשר זבחי שלמים</strong> - כגון שמונח לפניו בשר זבח שלמים ומחית נמי דהיתרא קמיה ואמר זה כזה מהו:"
+  },
+  "Rashi on Nazir 22b:2:1": {
+    "dependsOn": [
+      "Rashi on Nazir 22b:2:1",
+      "Rashi on Nazir 22b:2:2",
+      "Nazir 22b:2"
+    ],
+    "generatedAt": "2026-10-30T09:29:14.411Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 22b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי מתפיס איניש בעיקרא מתפיס</strong> - כדהויין הני זבחי שלמים קודם זריקה ואסירא:"
+  },
+  "Rashi on Nazir 22b:2:2": {
+    "dependsOn": [
+      "Rashi on Nazir 22b:2:1"
+    ],
+    "generatedAt": "2026-10-30T09:29:59.583Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 22b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או דילמא בצננא מתפיס</strong> - בהתירא דאית ביה והיינו לאחר זריקה שהותר בשר באכילה ושריא בצננא היינו לבסוף דכל דבר שהוא חם מצטנן לבסוף וה\"נ לגבי הך איתתא כי אמרה ואני אי אמרת דבעיקרא מתפיס הויא לה כקודם הפרה ואסירא ואי אמרת דמיתפסה בצננא הויא לה כלאחר הפרה ושריא:"
+  },
+  "Rashi on Nazir 22b:3:1": {
+    "dependsOn": [
+      "Nazir 22b:3",
+      "Rashi on Nazir 22b:3:1",
+      "Rashi on Nazir 22b:3:2",
+      "Rashi on Nazir 22b:3:3"
+    ],
+    "generatedAt": "2026-10-30T09:30:54.705Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 22b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי דמי התם כי אמר הרי עלי כבשר זבחי שלמים</strong> - אפי' אמרת דבצננא מיתפיס אפ\"ה אסור דזבחי שלמים לאחר זריקת דמים מיקדש קדיש דאינו נאכל אלא לשני ימים ולילה אחד דאיכא למימר הכי איתפיס בציננא דאם לא כן מאי אהני דיבוריה:"
+  },
+  "Rashi on Nazir 22b:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T09:31:22.101Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 22b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל הכא כו'</strong> - ולא דמי כלל ומהכא לא תפשוט:"
+  },
+  "Rashi on Nazir 22b:3:3": {
+    "dependsOn": [
+      "Nazir 22b:2",
+      "Rashi on Nazir 22b:3:1",
+      "Rashi on Nazir 22b:3:2",
+      "Rashi on Nazir 22b:3:3",
+      "Nazir 22b:4",
+      "Rashi on Nazir 22b:4:1",
+      "Steinsaltz comment #1 on Nazir 22b:3",
+      "Steinsaltz comment #2 on Nazir 22b:3",
+      "Steinsaltz comment #3 on Nazir 22b:3",
+      "Tosafot on Nazir 22b:3:1",
+      "Nazir 22b:3",
+      "Nazir 22b:1"
+    ],
+    "generatedAt": "2026-10-30T09:34:28.139Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 22b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איכא דאמרי היינו דרמי בר חמא</strong> - דאמר אע\"ג דלאחר זריקת דמים מיקדש קדיש כיון דמצי אכיל ליה חוץ לחומת עזרה בכל העיר אי אמרת בציננא תפיס ודאי שרי אלא הכי איבעיא לך <span class=\"parenthesized\">(ודאי)</span> אמרה לו:"
+  },
+  "Rashi on Nazir 22b:4:1": {
+    "dependsOn": [
+      "Nazir 22b:4",
+      "Rashi on Nazir 22b:4:2"
+    ],
+    "generatedAt": "2026-10-30T09:36:31.535Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 22b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הריני בעיקביך ובא בעלה של ראשונה והפר לה</strong> - אליבא דמ\"ד בעל מיגז גייז מהו אמרינן הא דקאמרה לה הריני בעיקביך בכולי מלתא משמע אם לנזירות לנזירות אם להיפר היפר וכיון דהיפר בעלה לראשונה מישתריא נמי חבירתה [והאי] בעיקביך משמע בסוף:"
+  },
+  "Rashi on Nazir 22b:4:2": {
+    "dependsOn": [
+      "Rashi on Nazir 22b:4:1"
+    ],
+    "generatedAt": "2026-10-30T09:37:22.384Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 22b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או דלמא כמיקמי דליפר לה בעלה</strong> - משמע דמשמע כמו דאמרה הריני נזירה כמותיך עד סוף נזירותיך דהיינו סמוך להפרה דבעל דנזירותה משכה ואזלה עד שהפר לה בעל וכשהפר לה בעל אזלה לה בסוף נזירותה ולעולם מיקמי דליפר לה בעל קאמרה וכי הפר לה בעלה לראשונה אסורה חבירתה:"
+  },
+  "Rashi on Nazir 22b:5:1": {
+    "dependsOn": [
+      "Nazir 22b:5",
+      "Rashi on Nazir 22b:4:1",
+      "Rashi on Nazir 22b:4:2",
+      "Rashi on Nazir 22b:7:1"
+    ],
+    "generatedAt": "2026-10-30T09:41:37.683Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 22b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ש האשה שנדרה בנזיר ושמע בעלה ואמר ואני אינו יכול להפר ואי ס\"ד דכי אמר לה הריני בעיקביך כמעיקרא</strong> - מקמי הפרה משמע וקיימא לן נמי דבעל מיגז גייז וכ\"ש היכא דאמר ואני סתם ולא אמר בעיקביך דמשמע דבעיקרא מיתפיס א\"כ אשתכח דכי קאמר לה ואני משמע דניחא ליה דתתקיים עילוה נזירות עד דלימא איהו ואני ולקביל עילוי' נזירות וליפר לה נזירות דידה ולקיים נזירות דידיה הא לאו איתפיס בנדרה אלא במקמי הפרה אלא לאו ש\"מ מדאינו יכול להפר לה דבכולה מילתא מיתפיס והלכך הוא לא מצי מיפר דאי מיפר את שלה נמצא מיפר את שלו הא אשה אחרת דאמרה לה הריני בעיקביך כיון דהיפר בעל לראשונה איהי נמי מותרת:"
+  },
+  "Rashi on Nazir 22b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T09:46:45.535Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 22b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא לעולם</strong> - אימא לך דבעיקרא מתפיס:"
+  },
+  "Rashi on Nazir 22b:7:2": {
+    "dependsOn": [
+      "Rashi on Nazir 22b:7:1",
+      "Rashi on Nazir 22b:3:1",
+      "Rashi on Nazir 22b:4:1"
+    ],
+    "generatedAt": "2026-10-30T09:47:52.124Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 22b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא</strong> - טעמא מאי הוא דלא מצי מיפר לה דכיון דאמר לה ואני כאומר קיים ליכי דמי:"
+  },
+  "Rashi on Nazir 22b:8:1": {
+    "dependsOn": [
+      "Rashi on Nazir 22b:8:2",
+      "Tosafot on Nazir 22b:8:1"
+    ],
+    "generatedAt": "2026-10-30T09:49:04.660Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 22b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הריני נזיר ואת ואמרה אמן מיפר את שלה</strong> - והאי דאמר לה ואת לא הוי קיום לפי שאין אדם יכול להזיר את אשתו בנזיר:"
+  },
+  "Rashi on Nazir 22b:8:2": {
+    "dependsOn": [
+      "Rashi on Nazir 22b:8:1",
+      "Rashi on Nazir 22b:7:1",
+      "Rashi on Nazir 22b:7:2",
+      "Rashi on Nazir 22a:1:1",
+      "Rashi on Nazir 22a:2:1"
+    ],
+    "generatedAt": "2026-10-30T09:50:06.104Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 22b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני שתלה נדרו בנדרה</strong> - דמשמע דקאמר הריני נזיר אם את תהא נזירה וכיון דלא אמרה אמן שניהם מותרין:"
+  },
+  "Rashi on Nazir 22b:9:1": {
+    "dependsOn": [
+      "Nazir 22b:9"
+    ],
+    "generatedAt": "2026-10-30T09:52:46.300Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 22b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אביי אמר אפי' תימא</strong> - שניהם מותרין ולא קשיא ובמאי עסקינן בברייתא כגון דאמר לה הריני נזיר ואת דמשמע דקאמר לה הריני נזיר אם תהא נזירה והלכך היכא דאמרה אמן שניהם אסורין וכי לא אמרה אמן שניהם מותרין שכן הוא תולה נזרו בנזרה:"
+  },
+  "Tosafot on Nazir 22b:3:1": {
+    "dependsOn": [
+      "Rashi on Nazir 22b:3:3"
+    ],
+    "generatedAt": "2026-10-30T09:35:26.691Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 22b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איכא דאמרי היינו דרמי בר חמא ודאי</strong> - איכא למיפשט בעיא דרמי מברייתא דלעיל ואין לדחות דחיה זו שבא לחלק ביניהם דודאי דמו אהדדי:"
+  },
+  "Tosafot on Nazir 22b:4:1": {
+    "dependsOn": [
+      "Rashi on Nazir 22b:4:1",
+      "Rashi on Nazir 22b:4:2",
+      "Steinsaltz comment #1 on Nazir 22b:4",
+      "Steinsaltz on Nazir 22b:4",
+      "Jastrow, עָקֵב 1"
+    ],
+    "generatedAt": "2026-10-30T09:38:51.664Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 22b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרה לה הריני בעיקביך</strong> - פירוש האשה שנדרה בנזיר ושמעה חבירתה ואמרה לה הריני בעיקביך כאילו אמרה הריני בסופך לשון ואתה תשופנו עקב <span class=\"parenthesized\">(בראשית ג׳:ט״ו)</span> כלומר בסוף דרכך אם תותר את גם אני אהיה מותרת שלא אקבל עלי נזירות ולא יחול עלי או דלמא כי מקמי דליפר לה בעלה ואסורה כי בעיקביך יש לפרשו כמו עקב אשר שמע אברהם בקולי וגו' <span class=\"parenthesized\">(שם כו)</span> ואפילו אם תותר הראשונה השניה אסורה דבדעתה להיות כמעיקרא קודם שיפר לה בעלה וכשאמרה בעיקביך כאילו אמרה ואני דאמרינן לעיל בברייתא היא מותרת וחבירתה אסורה דכיון דחל עליה נזירות לא פקע בהתרת הראשונה דבעל מיגז גייז:"
+  },
+  "Tosafot on Nazir 22b:5:1": {
+    "dependsOn": [
+      "Nazir 22b:5"
+    ],
+    "generatedAt": "2026-10-30T09:46:20.213Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 22b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי ס\"ד כי אמר בעיקביך בעיקרא קמתפיס</strong> - ואפילו תותר הראשונה השניה אסורה א\"כ במתניתין נמי אמאי אינו מיפר לה ליפר לה דידה ולוקים דידיה אלא ש\"מ בכולה מלתא מיתפיס ואותה שאמרה בעיקביך היא נמי מותרת ואריכות לשון בעלמא הוא וה\"נ דעת הבעל כי אמר לה ואני דעתיה אכולה מילתא אם תותר היא שגם הוא יהיה מותר ולא יחול הלכך לא מצי מיפר דקאי בלא יחל דברו ואם תאמר והא במתניתין לא אמר כ\"א ואני וי\"ל דהכי מדמי ליה דכי היכי דאשה דאמרה הריני בעיקביך בכולה מילתא ה\"נ בעל בכולה מילתא מיתפיס דנהי דודאי דאיניש בעלמא שאמר ואני דעתו כמעיקרא מפני שאין בידו להתיר ואינו נותן דעתו להתיר אבל בעל שבידו להתירה דעתו להתיר יותר משאר מתפיסים והוי כאילו אמר הריני בעיקביך ודחי לא לעולם כמעיקרא מתפיס ומ\"מ אינו יכול להפר הכא כיון דאמר ואני כאומר קיים ליכי דמי אי מיתשיל אהקמתו מיפר ואי לא לא:"
+  },
+  "Tosafot on Nazir 22b:8:1": {
+    "dependsOn": [
+      "Nazir 22b:8",
+      "Rashi on Nazir 22b:8:1",
+      "Rashi on Nazir 22b:8:2",
+      "Tosafot on Nazir 22b:9:1",
+      "Tosafot on Nazir 22b:9:2"
+    ],
+    "generatedAt": "2026-10-30T09:51:59.664Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 22b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורמינהו הריני נזיר ואת ואמרה אמן שניהם אסורין ואי לאו שניהם מותרים מפני שתלה נדרו בנדרה</strong> - וסבירא ליה דבעל מיעקר קא עקר ואי יפר לה גם שלו יותר [וקאי] בלא יחל דסבירא ליה לתנא דברייתא דהכי קאמר הריני נזיר אם את ואפילו לא אמר אם ולכך אם אמרה אמן שניהן אסורין והיינו דקפריך אמתני' דקתני כי אמר לה הריני נזיר ואת דמיפר שלה ושלו קיים ואם לאו שלא אמרה אמן שניהם מותרין מפני שתלה נדרו בנדרה ולא דינא להיות נזיר אם לא תהיה גם היא נזירה:"
+  },
+  "Tosafot on Nazir 22b:9:1": {
+    "dependsOn": [
+      "Nazir 22b:9",
+      "Rashi on Nazir 22b:9:1",
+      "Tosafot on Nazir 22b:9:2",
+      "Steinsaltz comment #1 on Nazir 22b:9",
+      "Steinsaltz on Nazir 22b:9",
+      "Tosafot on Nazir 22b:8:1",
+      "Steinsaltz comment #2 on Nazir 22b:9",
+      "Steinsaltz comment #3 on Nazir 22b:9",
+      "Tosefta Kifshutah on Nazir 3:4:2",
+      "Versions on Nazir 22b:9"
+    ],
+    "generatedAt": "2026-10-30T09:55:41.204Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 22b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רב יהודה תני</strong> - ברישא מיפר שלה ושלו קיים כמתני' ותני ברישא שניהם אסורין עד שלא יפר ולא כמו שהיינו סבורין מעיקרא שאינו יכול להפר את שלה דנהי דסיפא משמע שתלה נדרו בנדרה דקאמר ואם לאו שניהם מותרין אפ\"ה יכול להפר שלה משום דסבירא ליה להאי תנא דבעל מיגז גייז וזהו החידוש דאתא לאשמעינן אבל רישא דקתני אסורים כל זמן שלא הפר אין זה שום חידוש דפשיטא דשניהם אסורין כל זמן שלא הפר:"
+  },
+  "Tosafot on Nazir 22b:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T09:58:38.069Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 22b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אביי אמר אפי' תימא כדקתני ברייתא כגון דאמר ואם את דקא תלי נדרו בנדרה מתני' דקתני הריני נזיר ואת משום הכי מיפר שלה ושלו קיים</strong> - [פי'] ברייתא כגון דאמר לה הריני נזיר ואם את שתלה נדרו בנדרה כלומר אם את נזירה גם נזירותי יחול [לפיכך] שניהם אסורין ואינו יכול להפר כדמשמע לישנא דשניהם אסורין והיינו טעמא לפי שתלה נדרו בנדרה ואם יפר את שלה גם את שלו יתבטל וקאי בלא יחל דסבירא ליה דבעל מיעקר עקר ומתני' דקתני הריני נזיר ואת פירוש שאינו תולה נדרו בנדרה אלא הוא מקבל אנפשיה ממה נפשך ואת פי' שאינו תולה נדרו בנדרה אלא הוא מקבל נזירות אנפשיה ואת דקאמר ששאל לה אם גם היא מציא לקבל נזירות אנפשה ואת דקאמר ששאל בתמיה בלשון שאלה קאמר לה כלומר רוצה את להיות נודרת כמו כן:"
+  }
+}

@@ -1,0 +1,286 @@
+{
+  "Rashi on Nazir 5b:1:1": {
+    "dependsOn": [
+      "Nazir 5b:1",
+      "Rashi on Nazir 5b:1:2",
+      "Rashi on Nazir 5b:4:1",
+      "Rashi on Nazir 5b:4:2"
+    ],
+    "generatedAt": "2026-10-29T15:22:57.697Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובר פדא אמר לך</strong> - אטו מי ליכא חד מינייהו דלא אתא לדרשא:"
+  },
+  "Rashi on Nazir 5b:1:2": {
+    "dependsOn": [
+      "Rashi on Nazir 5b:1:1"
+    ],
+    "generatedAt": "2026-10-29T15:23:49.839Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5b:1:2"
+    ],
+    "sourceText": "אלא מדההוא למניינא הנהו נמי דלדרשא אתי להו למניינא:"
+  },
+  "Rashi on Nazir 5b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T15:30:01.107Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנן מי שאמר הריני נזיר מגלח לשלשים ואחד יום בשלמא לרב מתנא</strong> - דאמר שלשים היינו דקאמר שמגלח [יום] שלשים ואחד דהיינו לאחר מלאת ימי נזרו:"
+  },
+  "Rashi on Nazir 5b:4:2": {
+    "dependsOn": [
+      "Rashi on Nazir 5b:4:1"
+    ],
+    "generatedAt": "2026-10-29T15:31:52.095Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לבר פדא</strong> - דאמר עיקר נזירות לא הוי אלא כ\"ט בשלשים איבעי ליה לגלח:"
+  },
+  "Rashi on Nazir 5b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T15:32:28.037Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר לך בר פדא אימא סיפא אם גילח ביום שלשים כו'</strong> - אלמא דלא הוי עיקר נזירות אלא שלשים חסר אחד:"
+  },
+  "Rashi on Nazir 5b:5:2": {
+    "dependsOn": [
+      "Nazir 5b:5",
+      "Rashi on Nazir 5b:5:1",
+      "Rashi on Nazir 5b:5:2",
+      "Rashi on Nazir 5b:5:3",
+      "Rashi on Nazir 5b:5:4",
+      "Nazir 5b:3",
+      "Nazir 16a:4",
+      "Nazir 16a:5",
+      "Nazir 16a:6",
+      "Nazir 5b:7",
+      "Nazir 5b:8"
+    ],
+    "generatedAt": "2026-10-29T15:34:44.551Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא סיפא מסייעא ליה</strong> - לבר פדא מדקאמר שאם גילח את הראשונה ליום שלשים שפיר דמי ורישא דקתני שלשים ואחד נעשה כאומר שלימין אבל היכא דפריש הריני נזיר שלשים יום חסר אחד מגלח לכתחילה ליום שלשים דעיקר נזירות אינו אלא שלשים חסר אחד אבל לשתי נזירות לא אמרינן דליהוי יום אחד עולה למנין נזירות ראשונה ונזירות שניה קמשמע לן דעולה לכאן ולכאן:"
+  },
+  "Rashi on Nazir 5b:5:3": {
+    "dependsOn": [
+      "Rashi on Nazir 5b:5:1",
+      "Rashi on Nazir 5b:5:2",
+      "Rashi on Nazir 5b:5:4",
+      "Tosafot on Nazir 5b:5:1",
+      "Nazir 5b:5"
+    ],
+    "generatedAt": "2026-10-29T15:38:40.021Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5b:5:3"
+    ],
+    "sourceText": "הכי גרסינן אלא רישא נעשה כאומר שלימים:"
+  },
+  "Rashi on Nazir 5b:5:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T15:39:06.880Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5b:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נעשה כאומר שלשים יום שלימים</strong> - ולכתחילה מגלח ליום שלשים ואחד וכיון דלא אמר בהדיא שלימים אם גילח ליום שלשים יצא:"
+  },
+  "Rashi on Nazir 5b:6:1": {
+    "dependsOn": [
+      "Nazir 5b:6"
+    ],
+    "generatedAt": "2026-10-29T15:42:42.076Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דקסבר מקצת היום</strong> - שעבר מיום שלשים כמי שעבר כולו דמי והאי דמגלח לבתר הכי נעשה כמי שגילח ליום שלשים ואחד ואם תאמר הואיל ולבר פדא נמי צריך להמתין עד יום שלשים ואחד מאי איכא בין רב מתנא לבר פדא איכא דלבר פדא אם נטמא ביום שלשים אחר מלאת קרינא ביה ושוב אינו סותר את נדרו ולרב מתנא דאמר אין עיקר נזירות פחות משלשים יום תוך מלאת קרינא ביה וצריך למנות פעם שניה אי נמי היינו דאיכא בינייהו שאם אמר הריני נזיר כ\"ט ימים מגלח לכתחילה ליום שלשים אליבא דבר פדא ולרב מתנא הולך ומשלים כל ל' שאין שום נזירות פחות מל' יום ואינו מגלח עד ל' וא':"
+  },
+  "Rashi on Nazir 5b:7:1": {
+    "dependsOn": [
+      "Nazir 5b:7",
+      "Rashi on Nazir 5b:5:1",
+      "Rashi on Nazir 5b:5:2",
+      "Rashi on Nazir 5b:5:3",
+      "Rashi on Nazir 5b:5:4",
+      "Nazir 16a:4",
+      "Nazir 16a:5",
+      "Nazir 16a:6",
+      "Tosafot on Nazir 5b:7:1",
+      "Rashi on Nazir 5b:4:1",
+      "Rashi on Nazir 5b:4:2"
+    ],
+    "generatedAt": "2026-10-29T15:46:40.080Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא תנן גילח יום ל' לא יצא באומר שלימים</strong> - <span class=\"parenthesized\">(ממש)</span> דצריך לו להשלים כל מה שנזר ולגלח אחר מלאת דהוה ליה כמי שנודר לגלח מאה יום דמונה מאה יום מיום ליום והדר מגלח איכא דגרסי לה בלישנא אחרינא רישא באומר שלימין ומפרש לה רישא לבר פדא לא קשיא כגון דאמר הריני נזיר שלשים יום דצריך למנות לכתחילה שלשים ולגלח ביום שלשים ואחד הא סתמא אם גילח יום שלשים יצא וסיפא דקתני לא יצא באומר שלימין ופרושי מפרש לה לרישא מי שאומר הריני נזיר מגלח לשלשים ואחד ואימתי אמרו שצריך לגלח ביום שלשים ואחד בזמן שאמר הריני נזיר שלשים יום ואם אמר שלשים יום שלימין אם גילח ביום שלשים לא יצא:"
+  },
+  "Rashi on Nazir 5b:8:1": {
+    "dependsOn": [
+      "Rashi on Nazir 5b:8:2",
+      "Rashi on Nazir 5b:5:1",
+      "Rashi on Nazir 5b:5:2",
+      "Rashi on Nazir 5b:5:3",
+      "Rashi on Nazir 5b:5:4",
+      "Rashi on Nazir 5a:1:1",
+      "Rashi on Nazir 5a:2:1",
+      "Rashi on Nazir 4b:1:1",
+      "Rashi on Nazir 4a:1:1"
+    ],
+    "generatedAt": "2026-10-29T15:50:26.440Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנן מי שנזר שתי נזירות מגלח את הראשונה ליום שלשים ואחד והשניה ליום ס\"א</strong> - דלכי גילח ביום שלשים ואחד לראשונה לאלתר נכנסה לו נזירות שניה באותו יום עצמו ונמצא דכי מגלח נמי בשניה ביום ס\"א קאים ליה ביום שלשים ואחד:"
+  },
+  "Rashi on Nazir 5b:8:2": {
+    "dependsOn": [
+      "Rashi on Nazir 5b:8:1"
+    ],
+    "generatedAt": "2026-10-29T15:51:03.793Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשלמא לרב מתנא ניחא אלא לבר פדא</strong> - למה לי כולי האי בששים חסר אחד סגי:"
+  },
+  "Tosafot on Nazir 5b:1:1": {
+    "dependsOn": [
+      "Nazir 5b:1",
+      "Rashi on Nazir 5b:1:1",
+      "Rashi on Nazir 5b:1:2"
+    ],
+    "generatedAt": "2026-10-29T15:25:13.899Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 5b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הואיל ואיכא חד מינייהו דלאו לדרשא</strong> - או אחד או עשרה ולאו דוקא חד מדההוא למניינא כולהון למניינא ונהי דאיכא בהו דרשא מכל מקום אתו למניינא:"
+  },
+  "Tosafot on Nazir 5b:2:1": {
+    "dependsOn": [
+      "Nazir 5b:2",
+      "Tosafot on Nazir 5b:2:2",
+      "Tosafot on Nazir 5b:1:1",
+      "Steinsaltz on Nazir 5b:2:1",
+      "Steinsaltz on Nazir 5b:3:1",
+      "Steinsaltz on Nazir 5b:2",
+      "Rashi on Nazir 5b:4:1"
+    ],
+    "generatedAt": "2026-10-29T15:27:21.267Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 5b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנן סתם נזירות שלשים יום וכו' אלא לבר פדא קשיא</strong> - דמשמע שהתנא משך נזירות דאורייתא אתא לאשמועינן ומשני כיון דאיכא יום תלתין דמגלח ומייתי קרבנות ואסור לשתות ביין וליטמא למתים עד שמביא קרבנותיו משום הכי [תני] תלתין יומין דמשך הנזירות עד תלתין יומי כי לכתחילה אי אפשר להביא קרבנותיו בכ\"ט אפילו לבר פדא אלא ביום שלשים <span class=\"parenthesized\">(הויא ליה [כפרה] דאפילו נזיר טהור קצת חוטא הוא שציער עצמו מן היין)</span>:"
+  },
+  "Tosafot on Nazir 5b:2:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 5b:2:1",
+      "Nazir 5b:2",
+      "Tosafot on Nazir 5b:5:1",
+      "Tosafot on Nazir 2b:1:1"
+    ],
+    "generatedAt": "2026-10-29T15:29:07.880Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 5b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מגלח לשלשים וא' יום כו' אלא לבר פדא קשה</strong> - דהוה ליה לגלח ביום [ל'] דשלמו נזירות בכ\"ט יום:"
+  },
+  "Tosafot on Nazir 5b:5:1": {
+    "dependsOn": [
+      "Nazir 5b:5",
+      "Tosafot on Nazir 5b:8:1"
+    ],
+    "generatedAt": "2026-10-29T15:41:13.092Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 5b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר לך בר פדא אימא סיפא ואם גילח ביום שלשים יצא אלא סיפא מסייעא ליה</strong> - ורישא דקאמר לכתחילה כשיאמר שלשים יום שלימין להיות נזיר אי אפשר לו לגלח ביום שלשים וגזרו חכמים כשאומר נזיר סתם דלכתחילה לא יגלח אלא ביום שלשים וא' אבל בדיעבד אם גילח ביום ל' יצא שכן דינו דאורייתא דסתם נזיר יגלח ביום שלשים ואם תאמר אמאי איצטריך למימר גזירה אטו היכא דאמר שלימים לימא גזירה אטו היכא דאמר שלשים יום בלא שלימים דהכי מוכח בסמוך בפירכא שניה דלבר פדא דלית ליה . מקצת היום ככולו כי אמר שלשים דמדאורייתא צריך לגלח ביום ל' ואחד יש לומר דמשום דשני לקמן לרב מתנא באומר שלימים דהתם ליכא לשנויי בלישנא אחרינא דאשמועינן כשאמר לשון מיותר ל' יום כאילו אמר שלימין [דבזה] מקצת היום ככולו ואיצטריך דאומר שלימים קמשני נמי בהא לישנא לבר פדא:"
+  },
+  "Tosafot on Nazir 5b:6:1": {
+    "dependsOn": [
+      "Nazir 5a:20",
+      "Nazir 5b:1",
+      "Nazir 5b:5",
+      "Nazir 5b:6",
+      "Nazir 5b:7"
+    ],
+    "generatedAt": "2026-10-29T15:44:15.346Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 5b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולרב מתנא קשיא סיפא קסבר מקצת היום ככולו</strong> - הילכך אם גילח ביום שלשים יצא כיון שעשה מקצת היום בנזירות ומיהו לכתחילה לא יגלח אלא ביום שלשים ואחד ולבר פדא לית ליה מקצת היום ככולו דא\"כ אפילו ביום כ\"ט אם גילח יצא והתנא אמר ביום שלשים אם גילח יום שלשים יצא:"
+  },
+  "Tosafot on Nazir 5b:7:1": {
+    "dependsOn": [
+      "Nazir 5b:7"
+    ],
+    "generatedAt": "2026-10-29T15:48:39.393Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 5b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנן הריני נזיר שלשים יום אם גילח יום שלשים לא יצא</strong> - בשלמא אי דוקא יום שלשים לבר פדא דלית ליה מקצת היום ככולו ניחא אע\"ג דלעיל קאמר אם גילח יום שלשים יצא התם הוא דסתם נזירות קביל עליה דהוי כ\"ט אבל הכא דאמר שלשים יום משך נזירות כל שלשים יום הלכך אם גילח ביום שלשים לא יצא דלית ליה מקצת היום ככולו אלא לרב מתנא קשה דאע\"ג דאמר ל' יום הא סבירא ליה [דאמרינן] מקצת היום ככולו ואם גילח ביום שלשים אמאי לא יצא ומשני באומר שלימים פירוש אף על גב דמתניתין סתמא קתני [שלשים] יום אפילו הכי כיון דאמר שלשים יום לישנא יתירא הוא דאפילו סתם לרב מתנא הוי שלשים יום וכי אמר הריני שלשים יום הוי כאילו אמר שלימים וליכא למימר מקצת היום ככולו ולכך אם גילח ביום שלשים לא יצא:"
+  },
+  "Tosafot on Nazir 5b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T15:53:34.413Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 5b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואת השניה ביום ס\"א בשלמא לרב מתנא ניחא</strong> - כשיגלח הראשונה ביום שלשים ואחד נגמר נזירות ומתחיל נזירות שני בו ביום מידי דהוי אאדם שמקבל עליו נזירות בחצי היום שעולה לו אותו יום ליום שלם הלכך ביום ס' כלו ב' נזירות ובס\"א מגלח על השניה ונמצא דכל תגלחת ביום שלשים וא' וכ\"ת סוף סוף מאי קמ\"ל מתני' לרב מתנא הא ברישא קתני בהדיא דלכתחילה צריך לגלח ביום ל' ואחד הא לא קשיא דסיפא אתא לאשמועינן דיום ל' עולה לכאן ולכאן כדמסיק לקמן בשינוייא אליבא דרב מתנא והא לא שמעינן מרישא אלא לבר פדא קשה מרישא שמגלח על הראשונה ביום ל' [ואחד] ועל השניה ביום ס' [ואחד] ואע\"ג דאקשינן לבר פדא מרישא כי האי וכבר שני ליה מדרבנן גזרו דלכתחילה צריך לגלח ביום ל' ואחד ואם כן מאי [הדר] פריך ליה דרך הש\"ס כן להקשות כעין קושיא ראשונה ולתרצו כעין תירוץ ראשון ובלבד שישמיענו קצת חידוש מה שלא שמענו ברישא וה\"נ איכא קצת חידוש בסיפא לבר פדא שאין ברישא כדנפקא לן לקמן במסקנא דתירוצא דמשמיענו דמקצת היום ככולו לבר פדא בתחילת הנזירות כאדם שמקבל עליו נזירות בחצי היום אע\"פ שאותו חידוש לא נתפרש בסיפא לבר פדא צריכין אנו למימר שהש\"ס סומך על כך:"
+  },
+  "Tosafot on Nazir 5b:8:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 5b:8:1",
+      "Tosafot on Nazir 5b:8:2"
+    ],
+    "generatedAt": "2026-10-29T15:58:30.080Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 5b:8:2"
+    ],
+    "sourceText": "עוד סיגנון אחר בשלמא לרב מתנא ניחא <span class=\"parenthesized\">(הא)</span> כלומר הא דקתני שמגלח כל נזירות ביום שלשים ואחד דהיינו הראשונה ביום שלשים ואחד והשניה ביום ס\"א ואע\"ג דשמעינן מרישא דמגלח ביום שלשים ואחד סיפא איצטריכא ליה לאשמועינן דיום שלשים עולה לכאן ולכאן לב' נזירות כדמסיק לקמן אלא לבר פדא קשיא אף על גב דלבר פדא נמי צריך לגלח ביום שלשים ואחד מדרבנן כדשני לעיל מכל מקום תיקשי לבר פדא מייתור המשניות דאע\"ג [דחדשה] בסיפא דקתני ואם גילח הראשונה ליום שלשים מגלח השניה לכתחילה ליום ששים אלמא דסוף יום שלשים עולה לו למנין נזירות שני ומקצת יום חשיב כיום שלם והא לא שמעינן מרישא דאדרבה ס\"ל לבר פדא דלא אמר מקצת יום ככולו בסוף נזירות וחשבינן ליה כאדם המקבל נזירות בחצי היום הא לא חשיב חידוש למקשה דפשיטא שאדם מקבל נזירות בחצי היום [ומשני סד\"א ה\"מ] שלא היה עסוק בנזירות תחילה וניכר לכל נזירותיו אבל הכא דנהג נזירותיו עד חצי היום אימר לא יעלה לו דאינו ניכר נזירותו קמשמע לן דאפי' הכי עולה לו לכאן ולכאן:"
+  }
+}

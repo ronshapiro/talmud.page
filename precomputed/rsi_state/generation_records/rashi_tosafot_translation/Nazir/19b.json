@@ -1,0 +1,305 @@
+{
+  "Rashi on Nazir 19b:1:1": {
+    "dependsOn": [
+      "Nazir 19b:1",
+      "Rashi on Nazir 19b:1:2"
+    ],
+    "generatedAt": "2026-10-30T06:26:42.372Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 19b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רבא מאי טעמא דר' אליעזר</strong> - אליבא דעולא:"
+  },
+  "Rashi on Nazir 19b:1:2": {
+    "dependsOn": [
+      "Rashi on Nazir 19b:1:1",
+      "Nazir 19b:1",
+      "Nazir 6b:4",
+      "Rashi on Nazir 6b:4:2",
+      "Rashi on Nazir 19b:5:1",
+      "Rashi on Nazir 19b:6:1"
+    ],
+    "generatedAt": "2026-10-30T06:28:27.300Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 19b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר קרא והימים הראשונים מכלל דאיכא אחרונים וזה אין לו אחרונים</strong> - לפיכך אינו סותר כולן אלא שלשים ורבי אליעזר לטעמיה כדאמרינן בפירקא קמא <span class=\"parenthesized\">(לעיל נזיר דף ו:)</span> זאת תורת הנזיר:"
+  },
+  "Rashi on Nazir 19b:3:1": {
+    "dependsOn": [
+      "Nazir 19b:3",
+      "Tosafot on Nazir 19b:3:1",
+      "Steinsaltz on Nazir 19b:3:1",
+      "Steinsaltz on Nazir 19b:3"
+    ],
+    "generatedAt": "2026-10-30T06:32:52.845Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 19b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נטמא ביום מאה חסר אחת</strong> - דהשתא איכא תרי מקצת יום צ\"ט וכל יום מאה:"
+  },
+  "Rashi on Nazir 19b:4:1": {
+    "dependsOn": [
+      "Nazir 19b:4"
+    ],
+    "generatedAt": "2026-10-30T06:34:53.041Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 19b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומדקתני הריני נזיר מאה יום ונטמא בתחילת מאה</strong> - דהיינו בו ביום וקתני שיהו לו ימים הראשונים אלמא שמעינן מהא דבנזיר טהור שנטמא נמי אמר ר' אליעזר דבעינן ימים הראשונים ותיובתא דעולא:"
+  },
+  "Rashi on Nazir 19b:5:1": {
+    "dependsOn": [
+      "Rashi on Nazir 19b:5:2",
+      "Rashi on Nazir 19b:5:3"
+    ],
+    "generatedAt": "2026-10-30T06:36:55.479Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 19b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלין ימים דבעינן</strong> - אליבא דרבי אליעזר מפיק חד ומתחילין תרין שעומד ביום שני כשנטמא:"
+  },
+  "Rashi on Nazir 19b:5:2": {
+    "dependsOn": [
+      "Rashi on Nazir 19b:5:1"
+    ],
+    "generatedAt": "2026-10-30T06:37:26.691Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 19b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או נפקין תרין ומתחילין תלתא</strong> - דבעינן שני ימים שלימין:"
+  },
+  "Rashi on Nazir 19b:5:3": {
+    "dependsOn": [
+      "Rashi on Nazir 19b:5:1",
+      "Rashi on Nazir 19b:5:2",
+      "Tosafot on Nazir 19b:5:1",
+      "Steinsaltz on Nazir 19b:5"
+    ],
+    "generatedAt": "2026-10-30T06:39:01.727Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 19b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ליה יפלו כתיב</strong> - דמשמע דליהוון תרין בנפילה וכגון דנפקין תרין ועיילין תלת:"
+  },
+  "Rashi on Nazir 19b:6:1": {
+    "dependsOn": [
+      "Rashi on Nazir 19b:6:2",
+      "Nazir 19b:6",
+      "Rashi on Nazir 19b:5:1",
+      "Rashi on Nazir 19b:5:2",
+      "Rashi on Nazir 19b:5:3",
+      "Versions on Nazir 19b:6",
+      "Steinsaltz comment #1 on Nazir 19b:6",
+      "Steinsaltz comment #2 on Nazir 19b:6",
+      "Steinsaltz on Nazir 19b:6",
+      "Rashi on Nazir 19a:1:1",
+      "Rashi on Nazir 19a:2:1"
+    ],
+    "generatedAt": "2026-10-30T06:46:06.323Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 19b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי כתב רחמנא ימים ולא כתב יפלו</strong> - אלא והימים הראשונים יעזוב ה\"א האי דכתיב ימים משמע כגון דנפיק חד ועיילין תרין ואפילו הכי אקיים ימים דהא כבר עייל יום שני כתב רחמנא יפלו דמשמע ימים שלימים:"
+  },
+  "Rashi on Nazir 19b:6:2": {
+    "dependsOn": [
+      "Rashi on Nazir 19b:6:1",
+      "Nazir 19b:5",
+      "Steinsaltz on Nazir 19b:6:1",
+      "Steinsaltz on Nazir 19b:6",
+      "Steinsaltz comment #1 on Nazir 19b:6"
+    ],
+    "generatedAt": "2026-10-30T06:48:30.512Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 19b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי כתב יפלו ולא כתב ימים הוה אמינא אפילו חד</strong> - כלומר הוה אמינא דהאי דכתיב יפלו משמע אכולהו ימים שכבר מנה או ארבעה או תלתא או תרין או חד ואית דמפרשי אי כתב יפלו ולא כתב ימים ה\"א האי דכתיב יפלו אפילו חד משמע והאי דכתיב יפלו אנזירים דעלמא קאי כלומר ונפיק חד ועיילין תרין ואיקיים לו יפלו. לשון אחר דאי כתב רחמנא ימים ולא כתב יפלו הוה אמינא עד דנפקין תרין ועיילין תלת דב' ימים שלימין בעינן ואי כתב יפלו ולא כתב ימים הוה אמינא דאפילו חד דיפלו משמע נפילה והאיכא נפילה דחד יומא להכי כתב רחמנא ימים דבעינן דנפיק חד ועיילין תרין:"
+  },
+  "Rashi on Nazir 19b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T07:00:43.422Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 19b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לימא בהא קמיפלגי דב\"ש סברי משום גושה גזרו</strong> - ולא משום אוירא והויא קלישא טומאתה ומשום הכי סגי לה בשלשים יום:"
+  },
+  "Tosafot on Nazir 19b:2:1": {
+    "dependsOn": [
+      "Nazir 19b:2",
+      "Rashi on Nazir 19b:1:2",
+      "Steinsaltz on Nazir 19b:2",
+      "Nazir 16b:1",
+      "Nazir 16b:2"
+    ],
+    "generatedAt": "2026-10-30T06:31:13.304Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 19b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכי גרסינן ונטמא בתחילה</strong> - פירוש ביום ראשון וזה אין לו [ראשונים] הילכך יום שנטמא ממנין נזירותו הוא וימנה צ\"ט לזה ויגלח ביום מאה שהוא יום ק\"א למנינו נטמא בסוף מאה ביום אחרון יכול יהא סותר הכל ת\"ל והימים הראשונים יפלו מכלל דאיכא אחרונים לבא עליו כשנטמא ומסתמא שנים בעינן דומיא דראשונים ולכך אינו סותר הכל ואם תאמר והא תנן <span class=\"parenthesized\">(לעיל נזיר דף טז.)</span> במתניתין <span class=\"parenthesized\">(כו')</span> נטמא ביום מאה סותר שלשים לר\"א וי\"ל דהכי נמי קאמר יכול יסתור הכל ת\"ל והימים הראשונים יפלו וזה אין לו אחרונים ולכך לא יסתור הכל אבל שלשים מיהא סותר מדרשא דדרשינן בפ\"ק <span class=\"parenthesized\">(דף ו:)</span> וזאת תורת הנזיר ביום מלאת נטמא ביום מלאת תן לו תורת נזיר וצריכי הני תרי קראי דאי לאו זאת תורת הנזיר ה\"א דכי נטמא ביום אחרון שהוא יום מלאת לא יסתור כלל ואפילו שלשים יום כתב רחמנא זאת תורת הנזיר וא\"ת א\"כ לכתוב זאת תורת הנזיר ולשתוק מוהימים הראשונים יפלו וי\"ל א\"כ הוה אמינא דיום מלאת היינו יום ק\"א כמו ובמלאת ימי טהרה <span class=\"parenthesized\">(ויקרא י״ב:ו׳)</span> דהוי לאחר שמלאו ימי טהרה שהוא יום התגלחת שמלאו ימיו כבר וההוא סותר שלשים יום אבל נטמא יום מאה יסתור כולם כתב רחמנא והימים הראשונים יפלו דאפילו נטמא ביום מאה [אינו] סותר כולם ועוד דלא סגי דלא לכתוב והימים לאפוקי תחלת המאה שלא היו לו ראשונים:"
+  },
+  "Tosafot on Nazir 19b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T06:33:50.859Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 19b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג וזה יש לו אחרונים</strong> - יום טומאה ויום מאה שאחריו שהוא כולו ממנין הנזירות כל כמה שלא הביא קרבנותיו דאפילו לרב מתנא דאמר מקצת היום ככולו מצוה עליו להשלים לכתחלה כדאמר בפ\"ק <span class=\"parenthesized\">(דף ו.)</span>:"
+  },
+  "Tosafot on Nazir 19b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T06:35:20.395Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 19b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדקתני הריני נזיר ק' יום ונטמא</strong> - אלמא שנדר בטהרה והדר נטמא:"
+  },
+  "Tosafot on Nazir 19b:5:1": {
+    "dependsOn": [
+      "Nazir 19b:5"
+    ],
+    "generatedAt": "2026-10-30T06:43:46.660Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 19b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ליה רב פפא לאביי הלין ימים</strong> - הראשונים דקאמר ר' אליעזר דנפק חד ומתחילין תרין דהיינו ביום שני לנזירותו או דלמא דבעינן יום אחד שלם כי היכי דבימים אחרונים איכא חד יום שלם דהיינו יום המאה ה\"נ בימים הראשונים כי מתחיל תלת אבל כי נטמא ביום שני דפעמים אינו אלא שני חצאי ימים כגון דקבל נזירות אתמול בחצי היום והיום נטמא בחצי היום ואם תאמר ונפשוט ליה ממתניתין דקתני ר\"א [אומר] לא לבו ביום מכלל דיום שלאחריו סותר וי\"ל דלא חש ר' אליעזר להזכיר רק ממה דפליג אדרבנן דאמרי בו ביום מביא קרבן טומאה ואמר להו ר' אליעזר לא לבו ביום וה\"ה נמי לא ביום שני עד שלישי ואם תאמר ולפשוט ליה מברייתא דאייתי לעיל גופא נטמא בתחילת מאה יכול יהא סותר וכו' מכלל דכי נטמא ביום שני ודאי סותר וי\"ל תחילת מאה היינו נמי יום שני [קרא] תחילת מאה ועי\"ל דמשום דלרבנן סותר אפילו ביום ראשון קאמר להו ר\"א [דאינו] סותר וא\"ת ונפשוט ליה מסיפא דקאמר כי נטמא ביום מאה חסר אחת דסותר אלמא דבתרי יומי סגי ליה וה\"ה בתחילת נזירות דמסתמא אחרונים דומיא דראשונים וי\"ל דאחרונים פשיטא ליה דבתרי יומי סגי ליה לפי שיש שם יום שלם דהיינו יום מאה אבל בתחילת נזירות פעמים דליכא אלא שני חצאי ימים כגון אם נדר בחצי יום לכך מספקא ליה אי לכך בעינן דנפקא תרין וקאי בתלת אבל קשה דליפשוט ליה מברייתא דלעיל דמתחיל ומונה מיד פי' משביעי וכי נטמא בשמיני דליכא אלא ב' ימים מביא קרבן טומאה <span class=\"parenthesized\">(לו)</span> לר\"א וצריך לומר דלא שמיע ליה לההיא ברייתא דלעיל אי נמי שמיע ליה וקבעי טעמא מקרא א\"נ י\"ל כדפרישית לעיל דהא דבעינן דנפקא תרין וקאי אתלת משום דבעינן יום שלם שחל עליו נזירות דומיא דאחרונים אבל לעיל כיון דנזירות חל עליו משביעי דנטמא בשמיני יש כאן שביעי שלם ולכך כיון דנטמא בשמיני מביא קרבן טומאה וקצת קשה הא שביעי אינו שלם שצריך להזות ולטבול קודם שיחול הנזירות: לשון הג\"ה א\"ל יפלו כתיב משמע נפילה כל דהו לרבות שלא בא נמי יום שלם ואיצטריך למיכתב ימים ואיצטריך למיכתב יפלו דמצי למיכתב הכי וקדש ראש נזרו ביום ההוא מלבד ימים הראשונים ולשתוק מיפלו עד דנפקי תרין ועיילי תלת דימים משמע הכי דבעינן דומיא דאחרון דאיכא יום שלם כתב רחמנא יפלו דמשמע כל דהו דנפק חד וקאי בתרין ואי כתב רחמנא יפלו הראשונים ולא כתב ימים דמצי למיכתב והראשונים יפלו ה\"א ואפילו לבו ביום כת\"ק ולשון יפלו קאי אנזירות דעלמא כתב רחמנא ימים:"
+  },
+  "Tosafot on Nazir 19b:7:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 19b:7:1",
+      "Tosafot on Nazir 19b:7:2",
+      "Tosafot on Nazir 19b:7:3",
+      "Steinsaltz on Nazir 19b:7"
+    ],
+    "generatedAt": "2026-10-30T06:49:43.580Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 19b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי שנדר בחוצה לארץ נזירות הרבה מל' יום והשלים נזירותו בחוצה לארץ ואח\"כ בא לארץ</strong> - לאו דוקא במקרה בעלמא דלא סגי דלא אתי לארץ ישראל להקריב קרבנותיו ולהשלים נזירותו למר כדאית ליה ולמר כדאית ליה:"
+  },
+  "Tosafot on Nazir 19b:7:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 19b:7:1",
+      "Tosafot on Nazir 19b:7:3",
+      "Nazir 19b:7",
+      "Nazir 19b:9",
+      "Nazir 20a:1",
+      "Nazir 20a:2"
+    ],
+    "generatedAt": "2026-10-30T06:50:54.924Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 19b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נזיר שלשים יום</strong> - בגמרא מפרש דמדרבנן קנסא בעלמא הוא שגזרו בארץ העמים דגזרו עליהם טומאה ומן התורה ודאי טהור ויצא ידי נזירותו:"
+  },
+  "Tosafot on Nazir 19b:7:3": {
+    "dependsOn": [
+      "Tosafot on Nazir 19b:7:1",
+      "Tosafot on Nazir 19b:7:2"
+    ],
+    "generatedAt": "2026-10-30T06:51:26.112Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 19b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נזיר בתחילה</strong> - לחזור ולהתחיל כל מניינו גם דברי ב\"ה קנס ומדרבנן והכי מפורש בגמרא:"
+  },
+  "Tosafot on Nazir 19b:8:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 19b:8:1",
+      "Tosafot on Nazir 19b:8:2",
+      "Nazir 19b:8",
+      "Tosafot on Nazir 19b:7:1",
+      "Tosafot on Nazir 19b:7:2",
+      "Tosafot on Nazir 19b:7:3",
+      "Nazir 20a:2",
+      "Steinsaltz on Nazir 19b:8",
+      "Steinsaltz comment #1 on Nazir 19b:8",
+      "Nazir 20a:3",
+      "Nazir 20a:4",
+      "Rashi on Nazir 19b:9:1",
+      "Rashi on Nazir 20a:2:1",
+      "Rashi on Nazir 20a:2:2",
+      "Rashi on Nazir 20a:2:3"
+    ],
+    "generatedAt": "2026-10-30T06:56:14.244Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 19b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובסוף שבע שנים באה ואחר כך נטמאת</strong> - וי\"מ בגמרא דלא נבלעו [אלו] באלו [מדמנינן] אחת ועשרים שנה:"
+  },
+  "Tosafot on Nazir 19b:8:2": {
+    "dependsOn": [
+      "Nazir 19b:8",
+      "Tosafot on Nazir 19b:8:1",
+      "Nazir 20a:1",
+      "Nazir 20a:2",
+      "Nazir 20a:3",
+      "Tosafot on Nazir 19b:7:1",
+      "Tosafot on Nazir 19b:7:2",
+      "Tosafot on Nazir 19b:7:3"
+    ],
+    "generatedAt": "2026-10-30T06:59:13.303Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 19b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רבי יהודה לא היתה נזירה אלא י\"ד שנה</strong> - בגמ' מפרש לה:"
+  },
+  "Tosafot on Nazir 19b:9:1": {
+    "dependsOn": [
+      "Nazir 19b:9",
+      "Rashi on Nazir 19b:9:1",
+      "Steinsaltz on Nazir 19b:9",
+      "Tosafot on Nazir 19b:2:1",
+      "Tosafot on Nazir 19b:7:1",
+      "Steinsaltz comment #1 on Nazir 19b:9",
+      "Steinsaltz comment #2 on Nazir 19b:9",
+      "Steinsaltz comment #3 on Nazir 19b:9",
+      "Steinsaltz comment #4 on Nazir 19b:9"
+    ],
+    "generatedAt": "2026-10-30T07:03:24.404Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 19b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קתני רישא ב\"ש כו'</strong> - כל זה לא היה צריך דודאי ברישא קיימינן ולשון נזיר משונה:"
+  }
+}

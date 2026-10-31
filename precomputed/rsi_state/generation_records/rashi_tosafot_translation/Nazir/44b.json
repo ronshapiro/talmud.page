@@ -1,0 +1,43 @@
+{
+  "Rashi on Nazir 44b:1:1": {
+    "dependsOn": [
+      "Rashi on Nazir 44a:1:1",
+      "Rashi on Nazir 44a:2:1"
+    ],
+    "generatedAt": "2026-10-31T14:30:15.287Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 44b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תגלחת טומאה כיצד היה מזה בשלישי ובשביעי</strong> - ואח\"כ היה טובל שכך חובה על המזה מי חטאת כדמפרש בהו קרא בזאת חוקת התורה שלאחר הזאה טעונין טבילה והיה מגלח בו ביום דהיינו שביעי כדכתיב ביה וגילח ראשו ביום טהרתו ביום השביעי יגלחנו וביום השמיני יביא שתי תורים:"
+  },
+  "Rashi on Nazir 44b:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T14:30:35.430Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 44b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם גילח בשמיני מביא קרבנותיו בו ביום</strong> - השמיני עצמו:"
+  },
+  "Rashi on Nazir 44b:1:3": {
+    "dependsOn": [
+      "Rashi on Nazir 44b:1:1",
+      "Rashi on Nazir 44b:1:2",
+      "Nazir 44b:2",
+      "Rashi on Nazir 44b:2:1",
+      "Rashi on Nazir 44b:2:2",
+      "Rashi on Nazir 44b:2:3",
+      "Rashi on Nazir 44b:2:4"
+    ],
+    "generatedAt": "2026-10-31T14:33:39.890Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 44b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר לו רבי טרפון מה בין זה למצורע שאף כן</strong> - שנינו במצורע שאף הוא תגלחת שניה בשביעי כדמפרש ביה קרא <span class=\"parenthesized\">(ויקרא י״ד:ח׳-ט׳)</span> וגילח את כל שערו ורחץ במים וטהר וישב מחוץ לאהלו שבעת ימים וביום השביעי יגלח את כל שערו ומביא קרבנותיו בשמיני בת\"כ ואם גילח בשמיני מביא קרבנותיו בשמיני:"
+  }
+}

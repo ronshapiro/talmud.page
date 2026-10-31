@@ -1,4 +1,183 @@
 {
+  "Rashi on Nazir 5a:10:1": {
+    "dependsOn": [
+      "Nazir 5a:10"
+    ],
+    "generatedAt": "2026-10-29T14:52:50.869Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דילמא</strong> - האי דקאמר ד' ימים בשנה הכי הוי לסוף ד' ירחין חד זימנא ולתרין [ירחין] חד זימנא ולארבע ירחין חד זימנא ולתרין ירחין חד זימנא דהיינו נמי ארבע זימנין והילכך הואיל ואיכא למימר הכי ואיכא למימר הכי שבקינן ההוא קרא דלא מפרש וגמרינן מקרא דמפרש דהיינו מבתי ערי חומה:"
+  },
+  "Rashi on Nazir 5a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T14:53:13.088Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גבי כהנים</strong> - הדיוטים:"
+  },
+  "Rashi on Nazir 5a:11:2": {
+    "dependsOn": [
+      "Rashi on Nazir 5a:11:1"
+    ],
+    "generatedAt": "2026-10-29T14:53:53.729Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מידי הוא טעמא</strong> - דאמרינן דמגלחין בשלשים יום אלא משום דאיכא כובד שיער והוה ליה ניוול הכא נמי איכא כובד ומשום הכי היה אומר רבי נהוראי דאבשלום היה מגלח לאחר שלשים יום:"
+  },
+  "Rashi on Nazir 5a:12:1": {
+    "dependsOn": [
+      "Rashi on Nazir 5a:12:1",
+      "Rashi on Nazir 5a:12:2",
+      "Rashi on Nazir 5a:11:1",
+      "Rashi on Nazir 5a:11:2",
+      "Rashi on Nazir 5a:14:1",
+      "Tosafot on Nazir 5a:12:1",
+      "Rashi on Nazir 5a:1:1",
+      "Rashi on Nazir 5a:2:1",
+      "Rashi on Nazir 5a:2:2",
+      "Rashi on Nazir 5a:4:1",
+      "Rashi on Nazir 5a:4:2",
+      "Rashi on Nazir 5a:4:3",
+      "Rashi on Nazir 5a:14:2",
+      "Rashi on Nazir 5a:14:3",
+      "Steinsaltz on Nazir 5a:12:1",
+      "Steinsaltz on Nazir 5a:12",
+      "Nazir 5a:12",
+      "Rashi on Nazir 5a:5:1",
+      "Rashi on Nazir 5a:6:1",
+      "Rashi on Nazir 5a:7:1",
+      "Rashi on Nazir 5a:8:1",
+      "Rashi on Nazir 5a:9:1",
+      "Rashi on Nazir 5a:10:1",
+      "Rashi on Nazir 5b:1:1",
+      "Rashi on Nazir 5b:1:2",
+      "Rashi on Nazir 2a:1:1"
+    ],
+    "generatedAt": "2026-10-29T14:59:30.027Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5a:12:1"
+    ],
+    "sourceText": "לדברי רבי יוסי דאמר שמגלח מערב שבת לערב שבת מאי היכרא איכא בין דידיה דהוי נזיר לשאר אחין הא אינהו נמי נוהגין להסתפר בכך:"
+  },
+  "Rashi on Nazir 5a:12:2": {
+    "dependsOn": [
+      "Rashi on Nazir 5a:12:1",
+      "Rashi on Nazir 5a:12:2",
+      "Nazir 5a:12",
+      "Rashi on Nazir 5a:11:1",
+      "Rashi on Nazir 5a:11:2",
+      "Rashi on Nazir 5a:13:1",
+      "Rashi on Nazir 5a:14:1",
+      "Rashi on Nazir 5a:14:2",
+      "Rashi on Nazir 5a:14:3",
+      "Versions on Nazir 5a:12",
+      "Steinsaltz on Nazir 5a:12",
+      "Steinsaltz on Nazir 5a:13",
+      "Tosafot on Nazir 5a:12:1",
+      "Nazir 5a:1"
+    ],
+    "generatedAt": "2026-10-29T15:04:08.068Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5a:12:2"
+    ],
+    "sourceText": "איכא בינייהו בזמן שחל יו\"ט להיות באמצע שבת דאחין מגלחין בערב יום טוב והוא אינו מגלח עד ערב שבת ואי קשיא לך ולרבי מאי שנא אבשלום משאר נזירי עולם דמסתפרים אחת לל' יום משום דלגבי דידהו הוי כובד ורבי מתרץ לטעמיה דאבשלום הואיל ובעל כח הוה לא הוה כובד לדידיה עד שנים עשר חדש כי כאיש גבורתו ולרבי יוסי הואיל דאורחייהו דבני מלכים להסתפר מערב שבת לערב שבת הוה ליה כובד כשאר אחין אבל לשאר אינשי ליכא כובד עד ל':"
+  },
+  "Rashi on Nazir 5a:14:1": {
+    "dependsOn": [
+      "Rashi on Nazir 5a:14:2",
+      "Rashi on Nazir 5a:14:3",
+      "Rashi on Nazir 5a:1:1",
+      "Rashi on Nazir 4b:8:1",
+      "Rashi on Nazir 2a:1:1",
+      "Rashi on Nazir 2a:1:2"
+    ],
+    "generatedAt": "2026-10-29T15:07:15.216Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הני מ' שנה</strong> - דכתיב ויהי מקץ מ' שנה:"
+  },
+  "Rashi on Nazir 5a:14:2": {
+    "dependsOn": [
+      "Rashi on Nazir 5a:14:1",
+      "Rashi on Nazir 5a:14:3",
+      "Rashi on Nazir 4a:1:1",
+      "Rashi on Nazir 4b:1:1",
+      "Rashi on Nazir 3a:1:1",
+      "Rashi on Nazir 2a:1:1",
+      "Rashi on Nazir 5a:1:1",
+      "Rashi on Nazir 5a:2:1",
+      "Rashi on Nazir 5a:2:2",
+      "Rashi on Nazir 5a:4:1",
+      "Rashi on Nazir 5a:4:2",
+      "Rashi on Nazir 5a:4:3"
+    ],
+    "generatedAt": "2026-10-29T15:08:41.356Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי עבידתייהו</strong> - והלא לא היו למלכות בית דוד אלא ל\"ז:"
+  },
+  "Rashi on Nazir 5a:14:3": {
+    "dependsOn": [
+      "Rashi on Nazir 5a:14:1",
+      "Rashi on Nazir 5a:14:2",
+      "Nazir 5a:14",
+      "Tosafot on Nazir 5a:14:1",
+      "Steinsaltz on Nazir 5a:14"
+    ],
+    "generatedAt": "2026-10-29T15:11:01.099Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5a:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לקץ מ' שנה ששאלו להם מלך</strong> - היא שנת עשר לשמואל הרמתי שאבשלום היה יודע שעתיד דוד למלאות מ' שנה וכשנתמלאו מ' שנה ששאלו ישראל מלך מיום ליום אחר שמלכו שמואל ושאול דהיינו בתחילת המלכות ועלתה לשניהן לפי שעדיין לא יצא טיבעו של שאול בעולם ואף טיבעו של שמואל בעולם שהיה נקרא מלך לא פסק ושתים שמלך שאול בעצמו בחיי שמואל כמו שלמדנו [בסדר עולם] שלא מת שמואל לפני שאול אלא ד' חדשים ול\"ז שמלך דוד וטעה אבשלום ואמר עכשיו הגיע הקץ של אבא ואלכה לחברון להסב לי שם המלוכה ואם נפש אדם לומר מנין אתה אומר שאותה שנה שמלכו שמואל ושאול שהיתה בתחילת מלכות של שאול ושמואל לא מת לפני שאול אלא ד' חדשים מכאן אתה למד שבאותו יום שעלתה חנה לשילה דכתיב ועלי הכהן יושב על הכסא <span class=\"parenthesized\">(שמואל א א׳:ט׳)</span> באותו יום נתמנה לשופט והיינו דכתיב ישב על הכסא ולמדנו שבאותה שנה נתעברה חנה וילדה שמואל ונאמר בו בשמואל <span class=\"parenthesized\">(שם)</span> וישב שם עד עולם עד עולמו של יובל נ' שנים ושתי שנים שגמלתו אמו הרי לך שנים של שמואל נ\"ב שנים ועלי כמה שנים נתמנה על ישראל מ' שנה וכשהיה לו לעלי ארבעים שנה בן כמה שנים היה שמואל הוי אומר בן ל\"ט שנה שצריך אתה להוציא שנה אחת לעיבורו כמה נשתיירו לו משנותיו של שמואל י\"ג צא מהן עשר שמלך שמואל אחר מיתתו של עלי ונשתיירו להן ג' שנים זו היא שאמרו אחת שמלך שאול ושמואל ושתים שמלך שאול בעצמו:"
+  },
+  "Rashi on Nazir 5a:17:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 5a:17:1",
+      "Steinsaltz comment #1 on Nazir 5a:17",
+      "Steinsaltz comment #2 on Nazir 5a:17",
+      "Steinsaltz on Nazir 5a:17"
+    ],
+    "generatedAt": "2026-10-29T15:14:28.589Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בר פדא אמר כנגד נזיר נזרו ונדר נדרו</strong> - האמור בפ' נזיר שהן ל' חסר אחת לנדור נדר נזיר להזיר יזיר נזרו נדר נזרו יזיר הזירו נזרו נזרו והזיר נזרו נזרו הנזיר נזרו הנזיר נזרו נזרו הנזיר נזרו הנזיר הנזיר ידור נזרו נדרו ידור נזרו הרי ל' חסר אחת נזר אלהיו לא קחשיב לפי שאינו לשון נזירות אלא לשון עטרה כמו התרגום:"
+  },
+  "Rashi on Nazir 5a:19:1": {
+    "dependsOn": [
+      "Nazir 5a:19"
+    ],
+    "generatedAt": "2026-10-29T15:16:21.754Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נזיר להזיר מלמד שהנזירות חלה על נזירות</strong> - שאם אמר הריני נזיר אם אוכל ככר זו וחזר ואמר הריני נזיר אם אוכל ככר זו ואכלה מונה שתי נזירות דאף על גב דככר אחד הוא חלה נזירות על נזירות וכיון דהני אתו לדרשא ולא למניינא אחריני נמי לאו למניינא אתו:"
+  },
   "Rashi on Nazir 5a:1:1": {
     "dependsOn": [
       "Rashi on Nazir 5a:2:1",
@@ -46,5 +225,229 @@
       "Rashi on Nazir 5a:3:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">והא רבי הוא דאמר</strong> - במס' ערכין <span class=\"parenthesized\">(דף לא.)</span> ימים תהיה גאולתו אין ימים פחותים משנים שאם בא לגאלה באותו יום שמשכנה לו אינו יכול לגאלה עד שיעברו עליו ב' ימים לפי שאין מקרא יוצא מידי פשוטו והכא נמי מאי חזא רבי מההוא ג\"ש מה להלן י\"ב חדש כו' נגמר מהאי טעמא ונימא נמי דאבשלום מגלח היה לשני ימים:"
+  },
+  "Rashi on Nazir 5a:4:1": {
+    "dependsOn": [
+      "Nazir 5a:4",
+      "Rashi on Nazir 5a:4:1",
+      "Rashi on Nazir 5a:4:2",
+      "Rashi on Nazir 5a:4:3",
+      "Rashi on Nazir 4b:1:1",
+      "Rashi on Nazir 4b:2:1",
+      "Rashi on Nazir 4b:3:1",
+      "Rashi on Nazir 5a:1:1",
+      "Rashi on Nazir 5a:2:1"
+    ],
+    "generatedAt": "2026-10-29T14:43:09.345Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא ג\"ש</strong> - דגמיר מבתי ערי חומה:"
+  },
+  "Rashi on Nazir 5a:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T14:43:38.304Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום כובד הוא דקא גמיר</strong> - דכתיב ביה באבשלום כי כבד עליו וגילחו:"
+  },
+  "Rashi on Nazir 5a:4:3": {
+    "dependsOn": [
+      "Rashi on Nazir 5a:4:1",
+      "Rashi on Nazir 5a:4:2"
+    ],
+    "generatedAt": "2026-10-29T14:44:19.168Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובשני ימים ליכא כובד</strong> - ומשום הכי לא גמיר מיניה:"
+  },
+  "Rashi on Nazir 5a:5:1": {
+    "dependsOn": [
+      "Rashi on Nazir 5a:4:1",
+      "Rashi on Nazir 5a:4:2",
+      "Rashi on Nazir 5a:4:3",
+      "Steinsaltz on Nazir 5a:5",
+      "Rashi on Nazir 5a:6:1",
+      "Rashi on Nazir 3a:1:1",
+      "Rashi on Nazir 4a:1:1"
+    ],
+    "generatedAt": "2026-10-29T14:46:26.061Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולימא דשתי שנים</strong> - משמע האי מקץ ימים לימים אשר יגלח דשתי שנים נמי איקרו ימים כדכתיב ויהי מקץ שנתים ימים:"
+  },
+  "Rashi on Nazir 5a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T14:46:50.647Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואימא שלשים יום</strong> - דשלשים איקרו ימים כדכתיב עד חדש ימים:"
+  },
+  "Rashi on Nazir 5a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T14:47:49.912Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואימא מהכא מימים ימימה</strong> - תלכנה בנות ישראל לתנות לבת יפתח ד' ימים בשנה דהיינו יום א' לשלשה חדשים הכא נמי נימא דמגלח היה אבשלום לג' חדשים. לתנות לשון תאניה ואניה <span class=\"parenthesized\">(איכה ב)</span>:"
+  },
+  "Rashi on Nazir 5a:8:1": {
+    "dependsOn": [
+      "Nazir 5a:8",
+      "Steinsaltz on Nazir 5a:8",
+      "Rashi on Menachot 4a:11:1",
+      "Sifra, Metzora, Section 7 7"
+    ],
+    "generatedAt": "2026-10-29T14:49:46.174Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושב הכהן ובא הכהן זו היא שיבה זו היא ביאה</strong> - מה ביאה מביתו של כהן לבית המנוגע חולץ וקוצה וטח ונותן שבוע להסגירו אף כאן בשיבה אף ה\"נ כיון דכתיב מימים ימימה ליהוי נמי כמאן דאמר ימים:"
+  },
+  "Rashi on Nazir 5a:9:1": {
+    "dependsOn": [
+      "Nazir 5a:9",
+      "Rashi on Nazir 5a:8:1",
+      "Rashi on Nazir 5a:9:1",
+      "Rashi on Nazir 5a:10:1",
+      "Rashi on Nazir 5a:7:1",
+      "Rashi on Nazir 4b:5:1",
+      "Rashi on Nazir 4b:1:1",
+      "Rashi on Nazir 4b:2:1",
+      "Rashi on Nazir 4b:3:1",
+      "Rashi on Nazir 4b:4:1"
+    ],
+    "generatedAt": "2026-10-29T14:51:56.672Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 5a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ד</strong> - לא ילפינן מההוא קרא דכתיב בבת יפתח דמנא ידעינן דמתלתא ירחין לתלתא ירחין הוי חד זימנא:"
+  },
+  "Tosafot on Nazir 5a:11:1": {
+    "dependsOn": [
+      "Gilyon HaShas on Nazir 5a:1"
+    ],
+    "generatedAt": "2026-10-29T14:55:08.312Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 5a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מ\"ט גבי כהנים [דאיכא] כובד</strong> - וא\"ת והא כהני' עצמם ילפי' <span class=\"parenthesized\">(תענית יז.)</span> מסתם נזי' פרע פרע דמקילין אחת לשלשים יום וא\"כ נילף נזיר עולם מסתם נזיר דהוי שלשים יום וי\"ל דלא מיסתבר ליה ללמוד קדושת עולם מקדושת שעה ולהכי יליף מכהנים אע\"ג דלמד מן הלמד משום דכהנים נמי קדושת עולם הוו:"
+  },
+  "Tosafot on Nazir 5a:12:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 5a:12:1",
+      "Nazir 5a:12",
+      "Rashi on Nazir 5a:12:1",
+      "Rashi on Nazir 5a:12:2"
+    ],
+    "generatedAt": "2026-10-29T15:05:11.376Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 5a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי איכא ביניה לשאר אחוהי</strong> - וא\"ת ונימא דאיכא בינייהו קרבנות דהוא מביא ולא הן וי\"ל דה\"ק מאי איכא ביניה בתגלחת דקאמר קרא ויהי מקץ ימים אשר יגלח משום דבתגלחת היה מאחר:"
+  },
+  "Tosafot on Nazir 5a:14:1": {
+    "dependsOn": [
+      "Rashi on Nazir 5a:14:1",
+      "Rashi on Nazir 5a:14:2",
+      "Rashi on Nazir 5a:14:3"
+    ],
+    "generatedAt": "2026-10-29T15:12:23.712Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 5a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הני <span class=\"parenthesized\">(מקץ)</span> מ' שנה למאי</strong> - פי' דליכא למימר למ' שנה <span class=\"parenthesized\">(למאי)</span> למלכות בית דוד דאז מרד אבשלום דהא משמע קראי דהיה מלך ה' שנים אחר מעשה זה ג' של רעב ואחד שמנה ישראל ואחד שהעמיד משמרות ומשני מקץ מ' שנה ששאלו להם מלך <span class=\"parenthesized\">(אלו)</span> שמרדו במלכו של עולם תלה מרידת [אבשלום בשאלתם להם מלך שהיה שנת עשר] לשמואל ובחצי י\"א העמיד מלך ומלך חצי י\"א וב' שנים הרי ד' שנים לשאלה ובתחלת ל\"ו למלכות בית דוד היא שנת מ' לשאלה ואח\"כ מרד אבשלום והשנה ההיא היה שנת רעב וגם אותה שנת מ' לשאלה ואפי' מרד בתחלת שנת מ' לשאלה ולאו דוקא מקץ מ' שנה:"
+  },
+  "Tosafot on Nazir 5a:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T15:12:48.333Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 5a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סתם נזירות שלשים יום</strong> - ובגמרא מפרש טעמא:"
+  },
+  "Tosafot on Nazir 5a:17:1": {
+    "dependsOn": [
+      "Rashi on Nazir 5a:17:1"
+    ],
+    "generatedAt": "2026-10-29T15:15:32.476Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 5a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בר פדא אמר כנגד נזירות האמורין בתורה שהן ל' חסר אחת</strong> - פירוש כתובים בפרשת נזיר וכנגדן מושך סתם נזירות כ\"ט יום אע\"ג דתמצא שלשים וכשאתה יורד למניינם יש לומר דנזר אלהיו על ראשו לא הוי ממניינא דהוא לשון כתר כדמתרגמינן כלילא:"
+  },
+  "Tosafot on Nazir 5a:19:1": {
+    "dependsOn": [
+      "Nazir 5a:19",
+      "Tosafot on Nazir 5a:19:2",
+      "Rashi on Nazir 5a:19:1"
+    ],
+    "generatedAt": "2026-10-29T15:17:31.582Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 5a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הנהו לדרשא</strong> - וכיון דאתיין לדרשא לא מצטרפין למניינא ומנינן להו כ\"ט:"
+  },
+  "Tosafot on Nazir 5a:19:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 5a:19:1",
+      "Tosafot on Nazir 5a:19:2",
+      "Nazir 5a:19",
+      "Rashi on Nazir 5a:19:1",
+      "Tosafot on Nazir 5b:1:1",
+      "Rashi on Nazir 5b:1:1"
+    ],
+    "generatedAt": "2026-10-29T15:19:56.019Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 5a:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מלמד שהנזירות חל על הנזירות</strong> - דאי נראה דאם אמר הריני נזיר ונזיר לא איצטריך דמישתמע שפיר כשישלים נזירותו הראשון דמתחיל ומונה נזירות שני וכי איצטריך קרא להיכא דאמר הריני נזיר היום ונזיר דהוה לן למימר לא חייל עליה אלא חד נזירות כיון דאמר היום להכי איצטריך קרא מיותר שהנזירות חל על הנזירות: הואיל ואיכא חד מינייהו דלאו לדרשא או אחד או עשרה ולאו דוקא חד מדההוא למניינא כולהון למניינא ונהי דאיכא בהו דרשא מכל מקום אתו למניינא:"
+  },
+  "Tosafot on Nazir 5a:3:1": {
+    "dependsOn": [
+      "Nazir 5a:3",
+      "Rashi on Nazir 5a:3:1"
+    ],
+    "generatedAt": "2026-10-29T14:41:47.337Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 5a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין ימים פחותים משנים</strong> - דדריש מימים תהיה גאולתו שאין המוכר יכול לגאול בפחות משני ימים. <span class=\"parenthesized\">(והא א\"ר כו')</span> הכי נמי דבכל ב' ימים יקל שערו ומשני דבב' ימים ליכא כובד ומסתמא לא נתקבל ג\"ש אהני אלא ממשמעות דימים דהיינו שנה תהיה גאולתו שגואל אחרי ב' ימים כל השנה כדכתיב בתריה ואם לא יגאל עד מלאת לו שנה תמימה אלמא דכל השנה גואל:"
   }
 }

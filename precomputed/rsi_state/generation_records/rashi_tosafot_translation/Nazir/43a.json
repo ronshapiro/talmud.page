@@ -1,0 +1,609 @@
+{
+  "Rashi on Nazir 43a:11:1": {
+    "dependsOn": [
+      "Rashi on Nazir 43a:11:2",
+      "Rashi on Nazir 43a:11:3",
+      "Tosafot on Nazir 43a:11:1",
+      "Steinsaltz on Nazir 43a:11",
+      "Steinsaltz comment #1 on Nazir 43a:11",
+      "Chullin 121b:1",
+      "Chullin 121b:2",
+      "Chullin 121b:3",
+      "Chullin 121b:4"
+    ],
+    "generatedAt": "2026-10-31T12:52:48.588Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיתיבי אדם</strong> - הכי הויא רישא דברייתא בהעור והרוטב:"
+  },
+  "Rashi on Nazir 43a:11:2": {
+    "dependsOn": [
+      "Nazir 43a:11",
+      "Rashi on Nazir 43a:11:1",
+      "Rashi on Nazir 43a:11:3",
+      "Nazir 43a:5",
+      "Nazir 43a:6",
+      "Nazir 43a:7"
+    ],
+    "generatedAt": "2026-10-31T12:54:13.055Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מגוייד</strong> - חתוך לאיבריו ואפילו הכי אינו מטמא וקשיא לר\"ל דמשמע ליה מלהחלו דאפילו לגוסס אסור:"
+  },
+  "Rashi on Nazir 43a:11:3": {
+    "dependsOn": [
+      "Nazir 43a:11",
+      "Rashi on Nazir 43a:11:1",
+      "Rashi on Nazir 43a:11:2",
+      "Rashi on Nazir 43a:11:3",
+      "Nazir 43a:6",
+      "Rashi on Nazir 43a:5:1",
+      "Rashi on Nazir 43a:5:2",
+      "Tosafot on Nazir 43a:11:1",
+      "Tosafot on Nazir 43a:11:2",
+      "Steinsaltz on Nazir 43a:11:1",
+      "Steinsaltz comment #1 on Nazir 43a:11",
+      "Steinsaltz comment #2 on Nazir 43a:11"
+    ],
+    "generatedAt": "2026-10-31T12:57:12.453Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא קשיא לענין טמויי</strong> - הוא דלא מטמא עד שתצא נפשו ולא כשהוא גוסס אבל לענין אחולי מכיון דהוי גוסס קאי בלאו דלא יחלל:"
+  },
+  "Rashi on Nazir 43a:1:1": {
+    "dependsOn": [
+      "Nazir 43a:1"
+    ],
+    "generatedAt": "2026-10-31T12:04:55.362Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בבית</strong> - אמאי חייב שתים הא לא אתיין בהדדי דכיון דעייל ידיה דאורחיה דאיניש בהכי איטמי ליה דכמאן דנגע בטומאת המת שבפנים דמי וביאה לא הוי עד דעייל כוליה גופיה:"
+  },
+  "Rashi on Nazir 43a:2:1": {
+    "dependsOn": [
+      "Rashi on Nazir 43a:2:2",
+      "Rashi on Nazir 43a:2:3",
+      "Rashi on Nazir 43a:2:4",
+      "Nazir 43a:2",
+      "Tosafot on Nazir 43a:2:1",
+      "Steinsaltz on Nazir 43a:2"
+    ],
+    "generatedAt": "2026-10-31T12:09:55.266Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אמר ר\"א צירף ידו</strong> - כל היכא דהושיט ידו ליכנס תחלה:"
+  },
+  "Rashi on Nazir 43a:2:2": {
+    "dependsOn": [
+      "Rashi on Nazir 43a:2:1",
+      "Rashi on Nazir 43a:2:3"
+    ],
+    "generatedAt": "2026-10-31T12:10:39.734Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום טומאה איכא משום ביאה ליכא</strong> - ולא הוי כמאן דאתיין טומאה וביאה בהדי הדדי ואינו חייב אלא אחת שהרי כבר מחולל ועומד הוא אלא הכא במאי עסקינן דצירף גופו כלומר שהכניס כל גופו כאחד דטומאה וביאה בהדי הדדי קאתיין:"
+  },
+  "Rashi on Nazir 43a:2:3": {
+    "dependsOn": [
+      "Rashi on Nazir 43a:2:1",
+      "Rashi on Nazir 43a:2:2"
+    ],
+    "generatedAt": "2026-10-31T12:11:18.599Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צירף גופו</strong> - לאו דוקא אלא איידי דאמר צירף ידו קאמר צירף גופו:"
+  },
+  "Rashi on Nazir 43a:2:4": {
+    "dependsOn": [
+      "Rashi on Nazir 43a:2:2",
+      "Rashi on Nazir 43a:2:3",
+      "Steinsaltz on Nazir 43a:2",
+      "Nazir 43a:3"
+    ],
+    "generatedAt": "2026-10-31T12:12:31.746Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43a:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא לא אפשר דלא עייל חוטמו ברישא</strong> - משום דבולט מן הפרצוף דאורחיה דאינש לכי עייל בביתיה דשוחה ראשו ברישא ונחית ליה טומאה ולא הויא [ביאה] עד דעייל ליה כוליה וכי עייל כוליה גופיה הא מיטמי וקאי:"
+  },
+  "Rashi on Nazir 43a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T12:21:17.896Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אמר רבא הכניס ידו כו'</strong> - אלא היכי משכחת לה כגון דהכניס גופו שנכנס כשהוא זקוף דאתיין להו טומאה וביאה בהדדי וחייב שתים:"
+  },
+  "Rashi on Nazir 43a:3:2": {
+    "dependsOn": [
+      "Rashi on Nazir 43a:3:1",
+      "Rashi on Nazir 43a:3:2",
+      "Nazir 43a:4",
+      "Rashi on Nazir 43a:4:1",
+      "Tosafot on Nazir 43a:3:1",
+      "Tosafot on Nazir 43a:3:2"
+    ],
+    "generatedAt": "2026-10-31T12:22:28.570Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואכתי לא אפשר דלא עייל אצבעתא דכרעיה</strong> - כו':"
+  },
+  "Rashi on Nazir 43a:4:1": {
+    "dependsOn": [
+      "Rashi on Nazir 43a:4:1",
+      "Nazir 43a:4"
+    ],
+    "generatedAt": "2026-10-31T12:26:26.594Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כגון שנכנס</strong> - לבית שבתוכה טומאת מת בשידה תיבה ומגדל':"
+  },
+  "Rashi on Nazir 43a:5:1": {
+    "dependsOn": [
+      "Rashi on Nazir 43a:5:2"
+    ],
+    "generatedAt": "2026-10-31T12:34:34.970Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ר לא יטמא בעל בעמיו להחלו עד שעה שימות</strong> - מותר לעסוק בו ואינו עובר עליו משום לא יחלל עד שעה שימות והאי קרא קאי בכהן והוא הדין לנזיר:"
+  },
+  "Rashi on Nazir 43a:5:2": {
+    "dependsOn": [
+      "Rashi on Nazir 43a:5:1"
+    ],
+    "generatedAt": "2026-10-31T12:35:03.942Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי אומר לא יטמא להם במותם עד שימות</strong> - והאי קרא בנזיר קאי והוא הדין בכהן:"
+  },
+  "Rashi on Nazir 43a:6:1": {
+    "dependsOn": [
+      "Nazir 43a:6",
+      "Rashi on Nazir 43a:6:2"
+    ],
+    "generatedAt": "2026-10-31T12:38:21.327Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משמעות דורשין</strong> - דלמר משמע ליה מהאי קרא דעד שעה שימות אע\"ג דעסיק ביה לא הוי מחולל ולמר מהאי קרא דלהחלו:"
+  },
+  "Rashi on Nazir 43a:6:2": {
+    "dependsOn": [
+      "Rashi on Nazir 43a:6:1"
+    ],
+    "generatedAt": "2026-10-31T12:40:30.411Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור\"ל אמר גוסס איכא בינייהו</strong> - דלמאן דמשמע ליה מלהחלו אפילו בגוסס קאי בלא יחלל דכיון שהוא גוסס סופו להיות חלל דקי\"ל <span class=\"parenthesized\">(גיטין דף כח.)</span> רוב גוססין למיתה וקאמר דלא יחלל כו' ולמאן דמשמע ליה מבמותם עד שימות אינו עובר בלא יטמא לא כהן ולא נזיר אבל בגוסס לית לן בה:"
+  },
+  "Rashi on Nazir 43a:7:1": {
+    "dependsOn": [
+      "Rashi on Nazir 43a:6:1",
+      "Rashi on Nazir 43a:6:2",
+      "Rashi on Nazir 43a:8:1",
+      "Rashi on Nazir 43a:5:1",
+      "Rashi on Nazir 42b:1:1",
+      "Rashi on Nazir 42a:1:1",
+      "Rashi on Nazir 30a:1:1",
+      "Rashi on Nazir 38a:1:1"
+    ],
+    "generatedAt": "2026-10-31T12:43:35.635Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל מיטמא</strong> - בין נזיר בין כהן בנגעם ובזיבתם ואינם עוברים במגע הזב לא משום לא יחלל ולא משום לא יטמא:"
+  },
+  "Rashi on Nazir 43a:8:1": {
+    "dependsOn": [
+      "Nazir 43a:8",
+      "Rashi on Nazir 43a:8:2"
+    ],
+    "generatedAt": "2026-10-31T12:46:52.401Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא מיבעי ליה להאי סברא</strong> - במותם אין מטמאין אבל מטמאין בנגעם ובזיבתם:"
+  },
+  "Rashi on Nazir 43a:8:2": {
+    "dependsOn": [
+      "Nazir 43a:8",
+      "Rashi on Nazir 43a:8:1",
+      "Rashi on Nazir 43a:8:2",
+      "Nazir 43a:10",
+      "Tosafot on Nazir 43a:10:1",
+      "Rashi on Nazir 43a:5:1",
+      "Rashi on Nazir 43a:6:1",
+      "Rashi on Nazir 42b:1:1",
+      "Rashi on Nazir 42b:2:1",
+      "Rashi on Nazir 43a:7:1"
+    ],
+    "generatedAt": "2026-10-31T12:48:48.311Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 43a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"כ</strong> - דלא נדרוש ליה אלא חד טעמא נימא קרא להחל דמשמע לענין מי שאינו מחולל ומדקאמר להחלו שמע מינה תרתי:"
+  },
+  "Tosafot on Nazir 43a:10:1": {
+    "dependsOn": [
+      "Nazir 43a:10",
+      "Tosafot on Nazir 43a:11:1",
+      "Yevamot 120b:8-12",
+      "Yevamot 120b:1-7"
+    ],
+    "generatedAt": "2026-10-31T12:50:07.807Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 43a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם כן נימא קרא להחל מאי להחלו מיתיבי האדם אינו מטמא עד שתצא נפשו ואפילו מגוייד</strong> - פירוש לשון גודו אילנא <span class=\"parenthesized\">(דניאל ד)</span> מלא פצעים [ופגמים] והתם בפ' האשה <span class=\"parenthesized\">(יבמות דף קכ:)</span> [דייק] מהך ברייתא דמגוייד לא חיי טמויי לא מטמא הא מחייא לא ופליגי ביה תנאי התם:"
+  },
+  "Tosafot on Nazir 43a:11:1": {
+    "dependsOn": [
+      "Nazir 43a:11",
+      "Nazir 43a:5",
+      "Nazir 43a:6",
+      "Nazir 43a:7",
+      "Rashi on Nazir 43a:11:1",
+      "Rashi on Nazir 43a:11:2",
+      "Rashi on Nazir 43a:11:3",
+      "Tosafot on Nazir 43a:11:2",
+      "Steinsaltz on Nazir 43a:11",
+      "Steinsaltz comment #1 on Nazir 43a:11",
+      "Steinsaltz comment #2 on Nazir 43a:11",
+      "Steinsaltz comment #3 on Nazir 43a:11"
+    ],
+    "generatedAt": "2026-10-31T12:59:13.229Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 43a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולמ\"ד מלהחלו הא קתני ואינו מטמא עד שימות</strong> - מכל מקום נדרש לאו דלא יטמא כאילו סמכו להחלו להזהירו אף גוסס משום חילול והוי מצי לשנויי דהך ברייתא כו':"
+  },
+  "Tosafot on Nazir 43a:11:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 43a:11:1",
+      "Tosafot on Nazir 43a:1:1",
+      "Tosafot on Nazir 43a:2:1",
+      "Tosafot on Nazir 43a:2:2",
+      "Tosafot on Nazir 43a:2:3",
+      "Tosafot on Nazir 43a:7:1",
+      "Tosafot on Nazir 43a:7:2",
+      "Tosafot on Nazir 43a:10:1",
+      "Nazir 43a:11"
+    ],
+    "generatedAt": "2026-10-31T13:04:12.568Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 43a:11:2"
+    ],
+    "sourceText": "ומהכא שמעינן דכהן אינו מוזהר על הגוסס דקי\"ל כר' יוחנן לגבי ר\"ל ומיהו בה\"ג גריס אביי במקום רבי יוחנן ורבא במקום ר\"ל ולפ\"ז הלכה כרבא לגבי דאביי [ולרבא] פליגי רבי ורבנן ואית לן הלכה כרבי מחבירו [ולא מחביריו נמצא] יהא כהן מוזהר על גוסס:"
+  },
+  "Tosafot on Nazir 43a:1:1": {
+    "dependsOn": [
+      "Nazir 43a:1",
+      "Tosafot on Nazir 43a:1:1",
+      "Rashi on Nazir 43a:1:1",
+      "Nazir 42b:3",
+      "Tosafot on Nazir 42b:3:1",
+      "Nazir 43a:4",
+      "Nazir 43a:5",
+      "Nazir 43a:6",
+      "Steinsaltz comment #1 on Nazir 43a:1",
+      "Steinsaltz comment #2 on Nazir 43a:1",
+      "Steinsaltz on Nazir 43a:1",
+      "Tosafot on Nazir 43a:2:1",
+      "Tosafot on Nazir 43a:2:2",
+      "Tosafot on Nazir 43a:2:3"
+    ],
+    "generatedAt": "2026-10-31T12:08:42.830Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 43a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בבית נמי כיון דאעיל ידיה אסתאב</strong> - דאהל המת כמליא טומאה דמי ומיד שהושיט ידו מבפנים כאילו נגע במת ואכתי לא קרינן לא יבא וכי עייל כולי האי טמא ומחולל ועומד הוא ואתרי לא תמצא חיוב לא יבא עם לא יטמא [כיון] שהוא מחולל ועומד לא היה לנו לרבות להחלו למעט מחולל ועומד הוא אלא לדרשה אחריתי כדבסמוך:"
+  },
+  "Tosafot on Nazir 43a:2:1": {
+    "dependsOn": [
+      "Rashi on Nazir 43a:2:1",
+      "Rashi on Nazir 43a:2:2",
+      "Tosafot on Nazir 43a:2:1",
+      "Tosafot on Nazir 43a:2:2",
+      "Tosafot on Nazir 43a:1:1",
+      "Steinsaltz on Nazir 43a:2"
+    ],
+    "generatedAt": "2026-10-31T12:14:11.527Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 43a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אמר ר\"א צירף ידו לבית</strong> - כלומר שהכניסה לבית קודם לגוף משום טומאה איכא משום ביאה ליכא דמחולל ועומד:"
+  },
+  "Tosafot on Nazir 43a:2:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 43a:2:1",
+      "Tosafot on Nazir 43a:2:2",
+      "Tosafot on Nazir 43a:2:3",
+      "Chullin 33b:7",
+      "Chullin 33b:8",
+      "Chullin 33b:9",
+      "Chullin 33b:10",
+      "Nazir 43a:2",
+      "Steinsaltz comment #1 on Nazir 43a:2",
+      "Rashi on Nazir 43a:2:2",
+      "Rosh on Nazir 43a:6:1"
+    ],
+    "generatedAt": "2026-10-31T12:17:54.463Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 43a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צירף גופו</strong> - כלומר היו ידיו צרופות ושטופו' לגופו ולא הכניסן תחילה טומאה וביאה בהדי הדדי קאתיין ואומר הר\"ם אף ע\"ג דבית המנוגע אמר בפר' השוחט <span class=\"parenthesized\">(חולין דף לג:)</span> ידיו טמאות דרבנן אף כי מצורע מטמא באהל מ\"מ אינו כ\"כ כמו. מילי טומאה שכמו כן בבית המנוגע הנכנס שם טמא אפילו לא נגע ואפ\"ה נשנית במשניות דאם יש מחיצה כל שהוא למצורע לא יטמאנו ואילו בטומאת מת אף פותח טפח מביא הטומאה:"
+  },
+  "Tosafot on Nazir 43a:2:3": {
+    "dependsOn": [
+      "Nazir 43a:2",
+      "Tosafot on Nazir 43a:2:1",
+      "Tosafot on Nazir 43a:2:2",
+      "Tosafot on Nazir 43a:2:3",
+      "Rashi on Nazir 43a:2:1",
+      "Rashi on Nazir 43a:2:2",
+      "Rashi on Nazir 43a:2:3",
+      "Rashi on Nazir 43a:2:4",
+      "Tosafot on Nazir 43a:3:1",
+      "Tosafot on Nazir 43a:3:2",
+      "Steinsaltz comment #1 on Nazir 43a:2",
+      "Steinsaltz on Nazir 43a:2",
+      "Steinsaltz on Nazir 43a:3",
+      "Maharsha on Nazir 43a:4:1"
+    ],
+    "generatedAt": "2026-10-31T12:20:46.850Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 43a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא א\"א שלא עייל חוטמו ברישא ונחת ליה טומאה אלא אמר רבא הכניס ידו משום טומאה איכא</strong> - פירוש משום דחוטמו עייל ברישא:"
+  },
+  "Tosafot on Nazir 43a:3:1": {
+    "dependsOn": [
+      "Rashi on Nazir 43a:3:1",
+      "Rashi on Nazir 43a:3:2",
+      "Tosafot on Nazir 43a:3:2",
+      "Nazir 43a:2"
+    ],
+    "generatedAt": "2026-10-31T12:23:23.152Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 43a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכניס גופו טומאה וביאה בהדי הדדי קאתיין</strong> - כלומר שהיה כופה ראשו חוץ לבית כמו הלכוף כאגמון ראשו <span class=\"parenthesized\">(ישעיהו נ״ח:ה׳)</span>:"
+  },
+  "Tosafot on Nazir 43a:3:2": {
+    "dependsOn": [
+      "Shevuot 17b:1",
+      "Shevuot 17b:2",
+      "Chullin 10a:11",
+      "Chullin 10a:12",
+      "Tosafot on Nazir 43a:3:1",
+      "Nazir 43a:2"
+    ],
+    "generatedAt": "2026-10-31T12:25:15.652Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 43a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא לא אפשר דלא עייל אצבעא דכרעיה תחלה</strong> - ולא מצי לאוקמי [בבואו לבית אחורנית דלא שמיה] ביאה כדאמר בפרק ב' דשבועות <span class=\"parenthesized\">(דף יז:)</span> ובפ\"ק דחולין <span class=\"parenthesized\">(דף י:)</span> ולכולהו מצי למיפרך הא לא אפשר דלא עייל מיעוטא ברישא ומטמא ליה בטרם יכנס כדרכו:"
+  },
+  "Tosafot on Nazir 43a:4:1": {
+    "dependsOn": [
+      "Nazir 43a:4",
+      "Rashi on Nazir 43a:4:1"
+    ],
+    "generatedAt": "2026-10-31T12:27:41.467Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 43a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כגון שנכנס בשידה תיבה ומגדל ובא אחר ופרע עליו המעזיבה דטומאה וביאה בהדי הדדי קא אתיא</strong> - וצ\"ל [דהוא] מסייע להסיר המעזיבה דהא בהתרו בו למלקות איירי:"
+  },
+  "Tosafot on Nazir 43a:4:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 43a:4:2",
+      "Tosafot on Nazir 43a:4:1",
+      "Tosafot on Nazir 43a:4:3",
+      "Tosafot on Nazir 43a:1:1",
+      "Tosafot on Nazir 43a:2:1",
+      "Tosafot on Nazir 43a:2:2",
+      "Tosafot on Nazir 43a:2:3",
+      "Tosafot on Nazir 43a:3:1",
+      "Tosafot on Nazir 43a:3:2",
+      "Tosafot on Nazir 43a:5:1",
+      "Tosafot on Nazir 43a:5:2",
+      "Tosafot on Nazir 43a:6:1",
+      "Tosafot on Nazir 43a:7:1",
+      "Tosafot on Nazir 43a:7:2",
+      "Tosafot on Nazir 42b:1:1",
+      "Tosafot on Nazir 42b:2:1"
+    ],
+    "generatedAt": "2026-10-31T12:29:41.456Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 43a:4:2"
+    ],
+    "sourceText": "מר בר רב אשי אמר כגון דעייל [כשהוא גוסס] ונפק נשמתא אדיתיב התם דטומאה וביאה בהדי הדדי קאתיא:"
+  },
+  "Tosafot on Nazir 43a:4:3": {
+    "dependsOn": [
+      "Tosafot on Nazir 43a:4:1",
+      "Tosafot on Nazir 43a:4:2",
+      "Tosafot on Nazir 43a:4:3",
+      "Nazir 43a:4",
+      "Nazir 43a:1",
+      "Nazir 42b:6",
+      "Versions on Nazir 43a:4",
+      "Steinsaltz comment #1 on Nazir 43a:4",
+      "Steinsaltz comment #2 on Nazir 43a:4",
+      "Tosafot on Nazir 43a:2:1",
+      "Tosafot on Nazir 43a:2:2",
+      "Tosafot on Nazir 43a:2:3",
+      "Tosafot on Nazir 43a:3:1",
+      "Tosafot on Nazir 43a:3:2",
+      "Tosafot on Nazir 42b:1:1",
+      "Kessef Mishneh on Mishneh Torah, Mourning 3:6:1",
+      "Rosh on Nazir 43a:6:1",
+      "Steinsaltz on Nazir 43a:4",
+      "Rashi on Nazir 43a:4:1",
+      "Rashi on Nazir 43a:5:1",
+      "Rashi on Nazir 43a:5:2"
+    ],
+    "generatedAt": "2026-10-31T12:33:39.155Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 43a:4:3"
+    ],
+    "sourceText": "מהכא משמע דכהן אסור [ליטמא לאחרים אף כשהוא מטומא כבר] לקרוביו ואף כי מחולל ועומד הוא דאף לפי דברי רבה אם פירש אסור ליטמא שהרי אחר שיפרוש ממתו ילקה על שאר מתים [אם] מאהיל עליהן וכן שמעתי מאשלי רברבי לשון ר\"י שהנזיר יושב בבית והוא עת כזאת מת בבית שהוא שם:"
+  },
+  "Tosafot on Nazir 43a:5:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 43a:5:2",
+      "Rashi on Nazir 43a:5:1"
+    ],
+    "generatedAt": "2026-10-31T12:35:45.018Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 43a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להחלו</strong> - בכהן הדיוט כתיב:"
+  },
+  "Tosafot on Nazir 43a:5:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 43a:5:1",
+      "Rashi on Nazir 43a:5:1",
+      "Rashi on Nazir 43a:5:2",
+      "Nazir 43a:6",
+      "Tosafot on Nazir 43a:6:1",
+      "Torah Temimah on Torah, Leviticus 21:4:2",
+      "Steinsaltz on Nazir 43a:5",
+      "Rosh on Nazir 43a:6:1",
+      "Steinsaltz comment #1 on Nazir 43a:6",
+      "Steinsaltz comment #2 on Nazir 43a:6"
+    ],
+    "generatedAt": "2026-10-31T12:37:22.499Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 43a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד שעה [שימות]</strong> - ולאפוקי מגוייד דלהחלו משמע לאחר שנעשה חלל:"
+  },
+  "Tosafot on Nazir 43a:6:1": {
+    "dependsOn": [
+      "Nazir 43a:6",
+      "Rashi on Nazir 43a:6:1",
+      "Rashi on Nazir 43a:6:2",
+      "Steinsaltz comment #1 on Nazir 43a:6",
+      "Steinsaltz comment #2 on Nazir 43a:6",
+      "Steinsaltz on Nazir 43a:6"
+    ],
+    "generatedAt": "2026-10-31T12:42:17.270Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 43a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רבי יוחנן משמעות [דורשין] איכא בינייהו</strong> - דהאי ממעט מגוייד וגוסס מלהחלו והאי מבמותם:"
+  },
+  "Tosafot on Nazir 43a:7:1": {
+    "dependsOn": [
+      "Nazir 43a:7",
+      "Tosafot on Nazir 43a:7:1",
+      "Tosafot on Nazir 43a:7:2",
+      "Tosafot on Nazir 43a:5:1",
+      "Tosafot on Nazir 43a:5:2"
+    ],
+    "generatedAt": "2026-10-31T12:44:25.950Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 43a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי אומר במותם</strong> - בנזיר כתיב לאביו ולאמו לא יטמא להם במותם:"
+  },
+  "Tosafot on Nazir 43a:7:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 43a:7:1",
+      "Tosafot on Nazir 43a:7:2",
+      "Rashi on Nazir 43a:7:1",
+      "Steinsaltz on Nazir 43a:7",
+      "Steinsaltz comment #1 on Nazir 43a:7",
+      "Steinsaltz comment #2 on Nazir 43a:7"
+    ],
+    "generatedAt": "2026-10-31T12:45:52.804Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 43a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במותם אין מטמא אבל מטמא בנגעם</strong> - אפילו באחריני אינו מוזהר כ\"א בטומאת מת שכתוב על כל נפשות מת לא יבא [גליון. בת\"כ] [כתב] במותם לא יטמא אבל יושב הוא בהספד ובשורה:"
+  }
+}

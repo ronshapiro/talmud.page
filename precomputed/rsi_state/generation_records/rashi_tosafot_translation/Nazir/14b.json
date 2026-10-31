@@ -1,0 +1,385 @@
+{
+  "Rashi on Nazir 14b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T23:21:53.347Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 14b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נטמא בימי צרעתו</strong> - היה נזיר ונצטרע ובימי צרעתו נטמא למתים:"
+  },
+  "Rashi on Nazir 14b:1:2": {
+    "dependsOn": [
+      "Rashi on Nazir 14b:1:1",
+      "Rashi on Nazir 14b:1:3",
+      "Rashi on Nazir 14a:5:2",
+      "Tosafot on Nazir 2a:2:3",
+      "Rashi on Nazir 13b:1:1",
+      "Rashi on Nazir 14a:1:1"
+    ],
+    "generatedAt": "2026-10-29T23:23:46.229Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 14b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר' יוחנן אמר סותר</strong> - את הקודמין דהא אכתי קאי בנזירות הואיל דכי נתרפא מצרעתו משלים מה שכבר מנה קודם שנצטרע:"
+  },
+  "Rashi on Nazir 14b:1:3": {
+    "dependsOn": [
+      "Rashi on Nazir 14b:1:1",
+      "Rashi on Nazir 14b:1:2",
+      "Nazir 14b:1",
+      "Rashi on Nazir 14a:5:1",
+      "Rashi on Nazir 14a:5:2",
+      "Rashi on Nazir 14a:5:3",
+      "Steinsaltz comment #1 on Nazir 14b:1",
+      "Steinsaltz comment #2 on Nazir 14b:1",
+      "Versions on Nazir 14b:1",
+      "Steinsaltz on Nazir 14b:1",
+      "Tosafot on Nazir 14b:1:1"
+    ],
+    "generatedAt": "2026-10-29T23:26:36.860Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 14b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ריש לקיש אמר אינו סותר</strong> - דימי צרעת לחוד הואיל ואין עולין לו למנין ימי נזרו והימ\"ן שונה להני תרתי דרבי יוחנן וריש לקיש בטעמא אחרינא ואף המור\"ה חז\"ר להיו\"ת כדבר\"י הימ\"ן דבין כי נטמא בצרעתו ובין בנזירות בנו דההוא אידך נזירות נזיר מאה מיירי לפי שלא מצינו גידול פחות משלשים והואיל ובתרוייהו צריך לגלח דלכי נתרפא מצרעתו נמי צריך לגלח הילכך לא מיתוקם אלא בנזירות מאה:"
+  },
+  "Rashi on Nazir 14b:5:1": {
+    "dependsOn": [
+      "Rashi on Nazir 14b:5:2"
+    ],
+    "generatedAt": "2026-10-29T23:29:48.456Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 14b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נטמא ביום גידול שער</strong> - כגון שקיבל עליו נזירות מאה יום וכי מנה שבעים נצטרע וכי נטהר גילח תגלחת לצרעת ואכתי פשו מן המאה שלשים יום דאית בהו גידול שיער ונטמא ביום גידול שער היינו ביום מאה שבו שלם גידול שיער שלו דברי הכל סותר השלשים שאחר הצרעת אבל באם סותר שבעים שלפני הצרעת פליגי:"
+  },
+  "Rashi on Nazir 14b:5:2": {
+    "dependsOn": [
+      "Rashi on Nazir 14b:5:1"
+    ],
+    "generatedAt": "2026-10-29T23:30:29.832Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 14b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב אומר אינו סותר</strong> - דאפי' לרבי יוחנן דאמר נטמא בימי בנו דסותר כל נזירות התם בנזירות קאי להכי מצי סתר לנזירות נמי אבל הכא כיון דנטמא ביום מישלם גידול שיער כבר שילם נזירותו ולית ליה כח למסתר דלפני צרעת:"
+  },
+  "Rashi on Nazir 14b:6:1": {
+    "dependsOn": [
+      "Nazir 14b:6",
+      "Rashi on Nazir 14b:5:1",
+      "Rashi on Nazir 14b:5:2"
+    ],
+    "generatedAt": "2026-10-29T23:32:06.855Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 14b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושמואל אמר סותר</strong> - את הכל אפי' ע' קמאי:"
+  },
+  "Rashi on Nazir 14b:6:2": {
+    "dependsOn": [
+      "Rashi on Nazir 14b:6:1",
+      "Rashi on Nazir 14b:6:2",
+      "Rashi on Nazir 14b:6:3",
+      "Rashi on Nazir 14b:6:4",
+      "Nazir 14b:6",
+      "Rashi on Nazir 14b:5:1",
+      "Rashi on Nazir 14b:5:2"
+    ],
+    "generatedAt": "2026-10-29T23:33:20.091Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 14b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שם נזירות אחת היא</strong> - [אבל] מנין שלו ומנין של בנו תרי נזירות מיתקרו ל\"א נטמא ביום גידול כגון דאמר הריני נזיר והתחיל ומנה עד עשרים יום ונטמא וסתר את הכל והתחיל למנות נזירות אחרת ומנה עשרה ימים בטהרה ואח\"כ נטמא באחד מכל עשרים יום הנותרין להשלים לנזירות:"
+  },
+  "Rashi on Nazir 14b:6:3": {
+    "dependsOn": [
+      "Nazir 14b:6",
+      "Rashi on Nazir 14b:6:1",
+      "Rashi on Nazir 14b:6:2",
+      "Rashi on Nazir 14b:6:3",
+      "Rashi on Nazir 14b:6:4",
+      "Rashi on Nazir 14b:5:1",
+      "Rashi on Nazir 14b:5:2"
+    ],
+    "generatedAt": "2026-10-29T23:34:56.432Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 14b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב אמר אינו סותר</strong> - הללו עשרה דאפילו לרבי יוחנן דאמר סותר הני מילי היכא דקאי בנזירות גמור אבל האי דלא איטמי אלא בימי גידול שיער דמשלם נזירות הוא דלכי מצרפי הני עשרה לעשרים קמאי הוו להו שלשים והלכך האי דאהדר איטמי מעשרה ואילך לא הוי אלא תשלומי נזירות ואפי' ר' יוחנן מודה דאינו סותר להנך עשרה אלא כיון דהזה שלישי ושביעי מתחיל למנות מעשרה ואילך עד שלשים:"
+  },
+  "Rashi on Nazir 14b:6:4": {
+    "dependsOn": [
+      "Rashi on Nazir 14b:6:1",
+      "Rashi on Nazir 14b:6:2",
+      "Rashi on Nazir 14b:6:3"
+    ],
+    "generatedAt": "2026-10-29T23:35:38.299Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 14b:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושמואל אמר סותר אפילו לר\"ל כו'</strong> - אבל הכא חדא נזירות והא דאמרינן מישלם נזירות הוא לא איריא דכיון דסתרו הראשונים שוב אי אתה יכול לצרף עמהן הללו ולומר שלשים הן:"
+  },
+  "Rashi on Nazir 14b:7:1": {
+    "dependsOn": [
+      "Nazir 14b:7",
+      "Rashi on Nazir 14b:8:1",
+      "Tosafot on Nazir 14b:7:1"
+    ],
+    "generatedAt": "2026-10-29T23:39:01.156Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 14b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכל מודים שאם קידש שיער בדם</strong> - ביום ל\"א צריך להביא קרבנותיו ולהתגלח אחר קרבנותיו אם כבר נזרק הדם כשנטמא ועדיין לא גילח שאין לו תקנה להתירו כיון דלמנות פעם אחרת ולהביא קרבן אחר אי אפשר דקרבן אחד הוא מביא ולא שני קרבנות וכבר הביא קרבן אחד ואין עולה לו דהא כבר נטמא לפיכך אין לו תקנה והא דקתני קידש לישנא דקרא נקיט דכתיב וקדש את ראשו <span class=\"parenthesized\">(במדבר ו׳:י״א)</span>:"
+  },
+  "Rashi on Nazir 14b:8:1": {
+    "dependsOn": [
+      "Nazir 14b:8",
+      "Rashi on Nazir 14b:8:1",
+      "Rashi on Nazir 14b:8:2",
+      "Rashi on Nazir 14b:8:3"
+    ],
+    "generatedAt": "2026-10-29T23:41:59.632Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 14b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיון דאמר תגלחת מעכבת</strong> - לשתות ביין בתוך מלאת קרינא ביה לסתור מה שמנה ולייתי קרבן אחר:"
+  },
+  "Rashi on Nazir 14b:8:2": {
+    "dependsOn": [
+      "Nazir 45a:6",
+      "Nazir 47a:1",
+      "Rashi on Nazir 14b:8:1",
+      "Rashi on Nazir 14b:8:3",
+      "Rashi on Nazir 47a:1:2",
+      "Rashi on Nazir 47a:1:1"
+    ],
+    "generatedAt": "2026-10-29T23:44:00.808Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 14b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אליבא דרבנן</strong> - דפליגי עליה בפרק ג' מינין <span class=\"parenthesized\">(לקמן נזיר דף מז.)</span> ואמרי כיון שזרק עליו אחד מן הדמים נטהר:"
+  },
+  "Rashi on Nazir 14b:8:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T23:44:40.919Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 14b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למצות גילוח</strong> - דלא יהא תגלחת בטהרה כמצותו לעולם שהרי אינו יכול לסתור ולמנות נזירות אחרת שהרי לאחר מלאת נטמא הילכך אין לו תקנה לגלח בטהרה אלא מגלח בטומאה:"
+  },
+  "Rashi on Nazir 14b:9:1": {
+    "dependsOn": [
+      "Rashi on Nazir 14b:9:2"
+    ],
+    "generatedAt": "2026-10-29T23:49:20.925Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 14b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נזיר שכלו לו</strong> - ימי שלשים נזירות סתם ולנזירות מרובה כל ימים שהזיר ולאחר מלאת שצריך להביא קרבנותיו נטמא לוקה על הטומאה ואינו לוקה על התגלחת אבל אינו לוקה אם גלח קודם שהביא קרבנותיו או שתה יין קודם שהביא קרבנותיו:"
+  },
+  "Rashi on Nazir 14b:9:2": {
+    "dependsOn": [
+      "Nazir 14b:9",
+      "Rashi on Nazir 14b:9:1",
+      "Tosafot on Nazir 14b:9:1",
+      "Tosafot on Nazir 14b:9:2",
+      "Rashi on Nazir 15a:1:1",
+      "Rashi on Nazir 15a:1:2"
+    ],
+    "generatedAt": "2026-10-29T23:51:32.549Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 14b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאמר קרא כל ימי הזירו לה'</strong> - דכתיב כל דלא צריך וכתביה ואמר כל ימי הזירו לה' על נפש מת לא יבא לרבות ימים כו': כל ימי נדר נזרו תער וגו' כל ימי נזרו מכל אשר יעשה מגפן היין וגו'. ולילקי נמי אתרוייהו:"
+  },
+  "Tosafot on Nazir 14b:1:1": {
+    "dependsOn": [
+      "Nazir 14b:1",
+      "Rashi on Nazir 14b:1:1",
+      "Rashi on Nazir 14b:1:2",
+      "Rashi on Nazir 14b:1:3"
+    ],
+    "generatedAt": "2026-10-29T23:28:02.716Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 14b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נטמא בימי צרעתו</strong> - אמר הריני נזיר מהיום והתחיל למנות נזירות [שימי] חלוטו אינו עולה לנזירות וגם אינו סותר כדלקמן בפרק מי שאמר <span class=\"parenthesized\">(נזיר דף יז:)</span> ונטמא במת בימי חלוטו לר\"ל אינו סותר הימים הראשונים שמנה לנזירותו קודם ימי צרעתו וכשיטהר מצרעתו יגלח ויביא קרבנות מצורע ויחזור וישלים מנין נזירות כמו שפסק ור' יוחנן אומר סותר דהא בנזירות קאי ועדיין לא מנה המאה ולכשיטהר מצרעתו צריך למנות כל ימי נזירותו:"
+  },
+  "Tosafot on Nazir 14b:3:1": {
+    "dependsOn": [
+      "Nazir 14b:3",
+      "Nazir 14b:1",
+      "Tosafot on Nazir 14b:3:1"
+    ],
+    "generatedAt": "2026-10-29T23:28:54.094Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 14b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וצריכא</strong> - לאשמועינן פלוגתייהו בבנו ובצרעתו:"
+  },
+  "Tosafot on Nazir 14b:5:1": {
+    "dependsOn": [
+      "Rashi on Nazir 14b:5:1"
+    ],
+    "generatedAt": "2026-10-29T23:31:25.363Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 14b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נטמא ביום גידול שיער</strong> - פי' אמר הריני נזיר שלשים יום וכשמנה כ' מנזירותו גילחוהו ליסטים על כרחו דהשתא לא יוכל לגלח ביום שלשים לנזירות ולהביא קרבנותיו עד אחר שלשים יום מיום שגילחוהו הליסטים דאין גידול פחות משלשים יום והתחיל הל' וכשמנה עשרה סיים נזירותו שהרי תחילה מנה עשרים טרם שגילחוהו הליסטים ואלו העשרים יום האחרונים אינם רק לגדל שיער שיוכל לגלח אחר נזירותו ולהביא קרבנותיו ובהם נטמא והאי דנקט ביום גידול שיער ולא נקט בימי כדנקט לעיל בימי צרעתו לפי [שאי] אפשר שלא יהו נמשכים ימי צרעתו טפי מיום אחד אבל גידול שיער אפשר שלא יאריך עליו אלא יום אחד כגון שגילחוהו ליסטים יום שני לנזירותו דהשתא אינו מוסיף על שלשים אלא יום שלבסוף בעבור גידול שיער:"
+  },
+  "Tosafot on Nazir 14b:6:1": {
+    "dependsOn": [
+      "Nazir 14b:6",
+      "Nazir 14b:4",
+      "Nazir 14b:1",
+      "Rashi on Nazir 14b:6:1",
+      "Rashi on Nazir 14b:6:2",
+      "Rashi on Nazir 14b:6:3",
+      "Rashi on Nazir 14b:6:4",
+      "Tosafot on Nazir 14b:5:1"
+    ],
+    "generatedAt": "2026-10-29T23:37:54.496Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 14b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם שני נזירות</strong> - של בנו ושלו וכן נטמא בימי צרעתו נזירות לחוד וצרעת לחוד הכא חדא נזירות הוא וכן נטמא ביום שהוא טהור חד נזירות הוא:"
+  },
+  "Tosafot on Nazir 14b:7:1": {
+    "dependsOn": [
+      "Rashi on Nazir 14b:7:1",
+      "Tosafot on Nazir 14b:7:2",
+      "Steinsaltz on Nazir 14b:7",
+      "Steinsaltz comment #1 on Nazir 14b:7"
+    ],
+    "generatedAt": "2026-10-29T23:40:13.695Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 14b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רב חסדא הכל מודים שאם קידש שיער בדם</strong> - פירוש אם לאחר שנזרק הדם נטמא קודם שגילח וקורא קידוש שיער שלא גילח כדכתיב וקידש ראשו שפירושו יתחיל לגדל ראשו:"
+  },
+  "Tosafot on Nazir 14b:7:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 14b:7:1",
+      "Tosafot on Nazir 14b:7:2",
+      "Nazir 14b:7"
+    ],
+    "generatedAt": "2026-10-29T23:41:11.772Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 14b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין לו תקנה</strong> - קס\"ד שלא יוכל עולמית לשתות ביין ולגלח כיון שהביא כבר קרבנותיו וכיון דנטמא קודם שגילח ובלא הבאת קרבן לא יוכל לגלח:"
+  },
+  "Tosafot on Nazir 14b:8:1": {
+    "dependsOn": [
+      "Nazir 14b:8",
+      "Rashi on Nazir 14b:8:1",
+      "Rashi on Nazir 14b:8:2",
+      "Rashi on Nazir 14b:8:3",
+      "Nazir 16b:1",
+      "Nazir 47a:1",
+      "Nazir 47a:2"
+    ],
+    "generatedAt": "2026-10-29T23:46:41.692Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 14b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אליבא [דמאן] אי אליבא דר' אליעזר כיון דאמר תגלחת מעכבו</strong> - לשתות יין תוך מלאת הוא כלומר הרי הוא כאילו נטמא קודם הבאת קרבנותיו שהוא בתוך מלאת ולסתור כלומר יחזור ויביא קרבנות כדתנן פרק ג' מינין <span class=\"parenthesized\">(לקמן נזיר דף מז.)</span> מי שנזרק עליו אחד מן הדמים ונטמא ר' אליעזר אומר סותר את הכל ופריך בגמרא והאמר ר' אליעזר כל אחר מלאת [שבעה] סותר ומשני מאי סותר קרבנותיו ולאחר [שיטהר] יביא קרבנותיו והאי יסתור דהכא ע\"כ לאו דווקא דנטמא ביום שלשים דהא א\"ר אליעזר בפירקין לקמן <span class=\"parenthesized\">(נזיר דף טז:)</span> דאינו סותר [אלא שבעה]:"
+  },
+  "Tosafot on Nazir 14b:8:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 14b:8:1",
+      "Tosafot on Nazir 14b:8:2",
+      "Tosafot on Nazir 14b:8:3"
+    ],
+    "generatedAt": "2026-10-29T23:47:16.908Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 14b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אליבא דרבנן האמרי דתגלחת לא מיעכבא</strong> - לשתות ביין וכיון שהביא קרבנות מותר לטמאות ולשתות בלא תגלחת כלל:"
+  },
+  "Tosafot on Nazir 14b:8:3": {
+    "dependsOn": [
+      "Nazir 14b:8",
+      "Tosafot on Nazir 14b:8:1",
+      "Tosafot on Nazir 14b:8:2"
+    ],
+    "generatedAt": "2026-10-29T23:48:18.867Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 14b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעולם אליבא דרבנן ומאי אין לו תקנה למצות גילוח</strong> - דכיון שהביא כבר קרבנותיו שוב לא יביא ונסתלק ומיד מותר לשתות ביין בלא תגלחת כלל והכל מודים דקאמר רב חסדא קאי אפלוגתא דרב ושמואל דפליגי דנטמא ביום גידול שער אם סותר והכא דנטמא קודם תגלחת מודים דאינו סותר דהוי כמי שגילח כבר:"
+  },
+  "Tosafot on Nazir 14b:9:1": {
+    "dependsOn": [
+      "Rashi on Nazir 14b:9:1",
+      "Tosafot on Nazir 14b:9:2"
+    ],
+    "generatedAt": "2026-10-29T23:52:33.043Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 14b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נזיר שכלו לו ימיו</strong> - שמנה כל ימי נזירות ועומד ביום הבאת קרבנותיו:"
+  },
+  "Tosafot on Nazir 14b:9:2": {
+    "dependsOn": [
+      "Nazir 14b:9",
+      "Tosafot on Nazir 14b:9:1"
+    ],
+    "generatedAt": "2026-10-29T23:53:28.868Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 14b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לוקה על הטומאה</strong> - אם נטמא קודם הבאת קרבנותיו אבל אינו סותר נזירות שמנה אחר שכלו ימיו כבר ונהי דאשכחן בפירקא דלקמן <span class=\"parenthesized\">(נזיר דף טז.)</span> ואייתי לעיל נטמא יום מאה ואחד סותר שלשים היינו דוקא יום ק\"א וגזרינן אטו יום שלשים דהוי יום תגלחת דאורייתא כדתנן פרק קמא <span class=\"parenthesized\">(לעיל נזיר דף ה:)</span> אבל ביום מאה ושנים אינו סותר או ביום שלשים ואחד אינו סותר:"
+  }
+}
