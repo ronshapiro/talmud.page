@@ -1,0 +1,451 @@
+{
+  "Rashi on Nazir 37a:10:1": {
+    "dependsOn": [
+      "Rashi on Nazir 37a:10:2",
+      "Rashi on Nazir 37a:7:1",
+      "Rashi on Nazir 37a:8:1",
+      "Rashi on Nazir 37a:9:1"
+    ],
+    "generatedAt": "2026-10-31T04:29:47.330Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 37a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי תימא אי איכא כזית מיין מאי למימרא</strong> - פשיטא דמיחייב:"
+  },
+  "Rashi on Nazir 37a:10:2": {
+    "dependsOn": [
+      "Rashi on Nazir 37a:10:1",
+      "Rashi on Nazir 37a:10:2",
+      "Nazir 37a:9"
+    ],
+    "generatedAt": "2026-10-31T04:31:11.424Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 37a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאפוקי מדת\"ק</strong> - דאמר אינו חייב עד שישתה רביעית יין אתא ר' עקיבא:"
+  },
+  "Rashi on Nazir 37a:11:1": {
+    "dependsOn": [
+      "Rashi on Nazir 37a:10:1",
+      "Rashi on Nazir 37a:10:2",
+      "Nazir 37a:11",
+      "Tosafot on Nazir 37a:11:1"
+    ],
+    "generatedAt": "2026-10-31T04:35:25.383Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 37a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא</strong> - ר' עקיבא דברייתא דתניא כו':"
+  },
+  "Rashi on Nazir 37a:1:1": {
+    "dependsOn": [
+      "Nazir 37a:1",
+      "Rashi on Nazir 37a:1:2"
+    ],
+    "generatedAt": "2026-10-31T03:48:43.819Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 37a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשלמא לדידי דאמינא</strong> - דבכל איסורין שבתורה נמי היתר מצטרף לאיסור הכא ליכא למימר הכי דמשום דנפישי חולין ואנן לא אמרינן דהיתר מצטרף לאיסור אלא היכא דנפישא מידי דאיסורא וקא משלים ליה היתרא והא דפרכינן לעיל ממקפה ומדוכה אף על גב דנפישי חולין תבלין שאני הואיל ותבלין לטעמא וריחא הוא דעבידי חשיבי להו ולא בטלי והוי כמאן דנפישי:"
+  },
+  "Rashi on Nazir 37a:1:2": {
+    "dependsOn": [
+      "Rashi on Nazir 37a:1:1"
+    ],
+    "generatedAt": "2026-10-31T03:49:30.594Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 37a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לדידך כו' כי נפישי חולין מאי הוי</strong> - הא איכא למיחש דאיכא כזית בכדי אכילת פרס דאורייתא:"
+  },
+  "Rashi on Nazir 37a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T03:57:22.095Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 37a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הנח לתרומה בזמן הזה דרבנן</strong> - דלא חיישינן ליה לכזית בכדי אכילת פרס:"
+  },
+  "Rashi on Nazir 37a:3:1": {
+    "dependsOn": [
+      "Rashi on Nazir 37a:3:2",
+      "Nazir 37a:3",
+      "Rashi on Nazir 37a:4:1",
+      "Nazir 37a:6",
+      "Nazir 37a:7"
+    ],
+    "generatedAt": "2026-10-31T03:59:46.779Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 37a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דילמא ליתן טעם כעיקר הוא דאתא</strong> - שאם שרה ענבים במים ויש בו טעם יין יהא חייב על הטעם כמו על עיקר הפרי של ענבים ומקמי דמסיים אביי למילתי' מקדים ליה הש\"ס לפרוכי:"
+  },
+  "Rashi on Nazir 37a:3:2": {
+    "dependsOn": [
+      "Rashi on Nazir 37a:3:1",
+      "Nazir 37a:3",
+      "Nazir 37a:4",
+      "Rashi on Nazir 37a:4:1",
+      "Rashi on Nazir 37a:5:1",
+      "Nazir 35b:12",
+      "Tosafot on Nazir 37a:3:1",
+      "Steinsaltz comment #1 on Nazir 37a:3",
+      "Nazir 37a:9",
+      "Nazir 37a:10",
+      "Nazir 37a:11",
+      "Nazir 37a:12",
+      "Rashi on Nazir 37a:9:1",
+      "Rashi on Nazir 37a:9:2"
+    ],
+    "generatedAt": "2026-10-31T04:02:55.122Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 37a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודילמא</strong> - מיין לחודיה הוא דקא בעי דליהוי ביה מובלע בפת כזית:"
+  },
+  "Rashi on Nazir 37a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T04:06:04.824Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 37a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולאביי מעיקרא קשיא ליה מאי דקאמר רב דימי</strong> - דבנזיר בלחוד הוא דאמרי דהיתר מצטרף לאיסור וקא מותיב ליה אביי דבשאר איסורין שבתורה נמי אמרינן הכי והדר אמר ליה דהכא לאו להיתר מצטרף לאיסור הוא דאתא אלא ליתן טעם כעיקר:"
+  },
+  "Rashi on Nazir 37a:5:1": {
+    "dependsOn": [
+      "Nazir 37a:5"
+    ],
+    "generatedAt": "2026-10-31T04:07:03.785Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 37a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתר דשני ליה</strong> - רב דימי דבשאר איסורין לא אמרינן היתר מצטרף לאיסור אלא באיסור נזיר בלבד אמר ליה אביי דילמא אפילו לגבי נזיר לא אתא אלא כדי ליתן טעם כעיקר שאם שרה ענבים במים כו':"
+  },
+  "Rashi on Nazir 37a:7:1": {
+    "dependsOn": [
+      "Rashi on Nazir 37a:7:2",
+      "Rashi on Nazir 37a:7:3",
+      "Rashi on Nazir 37a:7:4",
+      "Rashi on Nazir 37a:7:5",
+      "Rashi on Nazir 37a:7:6",
+      "Tosafot on Nazir 37a:7:1"
+    ],
+    "generatedAt": "2026-10-31T04:09:13.759Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 37a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומה נזיר שאין איסורו איסור עולם</strong> - שיש היתר לאיסורו לאחר שלשים:"
+  },
+  "Rashi on Nazir 37a:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T04:09:41.752Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 37a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין איסורו איסור הנאה</strong> - שמערבין לנזיר ביין:"
+  },
+  "Rashi on Nazir 37a:7:3": {
+    "dependsOn": [
+      "Rashi on Nazir 37a:7:1",
+      "Rashi on Nazir 37a:7:2",
+      "Rashi on Nazir 37a:7:3",
+      "Rashi on Nazir 37a:7:4",
+      "Nazir 37a:7",
+      "Rashi on Nazir 37a:7:5",
+      "Rashi on Nazir 37a:7:6"
+    ],
+    "generatedAt": "2026-10-31T04:11:54.714Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 37a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויש היתר לאיסורו</strong> - שהיין שנאסר לו עכשיו הותר לאחר ל':"
+  },
+  "Rashi on Nazir 37a:7:4": {
+    "dependsOn": [
+      "Rashi on Nazir 37a:7:3",
+      "Rashi on Nazir 37a:7:4",
+      "Rashi on Nazir 37a:7:5",
+      "Rashi on Nazir 37a:7:6",
+      "Rashi on Nazir 35b:1:1"
+    ],
+    "generatedAt": "2026-10-31T04:14:12.242Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 37a:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כלאי הכרם</strong> - שעורה וחרצן שאיסורן איסור עולם ואיסור הנאה דכתיב <span class=\"parenthesized\">(דברים כ״ב:ט׳)</span> פן תקדש ואמרינן <span class=\"parenthesized\">(חולין דף קטו.)</span> פן תוקד אש:"
+  },
+  "Rashi on Nazir 37a:7:5": {
+    "dependsOn": [
+      "Rashi on Nazir 37a:7:1",
+      "Rashi on Nazir 37a:7:2",
+      "Rashi on Nazir 37a:7:3",
+      "Rashi on Nazir 37a:7:4",
+      "Rashi on Nazir 37a:7:5",
+      "Rashi on Nazir 37a:7:6",
+      "Tosafot on Nazir 37a:7:1",
+      "Steinsaltz on Nazir 37a:7",
+      "Steinsaltz comment #1 on Nazir 37a:7",
+      "Steinsaltz comment #2 on Nazir 37a:7",
+      "Steinsaltz comment #3 on Nazir 37a:7",
+      "Tosafot on Kiddushin 38a:9:1"
+    ],
+    "generatedAt": "2026-10-31T04:16:17.334Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 37a:7:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאין איסורו איסור עולם</strong> - אלא עד ל' היינו יש היתר לאיסורו אלא שאין איסורו איסור עולם מיירי בגופו ויש היתר לאיסורו שיין זה שאסור לו עכשיו מותר לו לאחר זמן:"
+  },
+  "Rashi on Nazir 37a:7:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T04:16:56.820Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 37a:7:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כלאי הכרם</strong> - שעורה וחרצן שאיסורן איסור עולם ואיסור הנאה דכתיב <span class=\"parenthesized\">(דברים כ״ב:ט׳)</span> פן תקדש ואמרינן <span class=\"parenthesized\">(חולין דף קטו.)</span> פן תוקד אש:"
+  },
+  "Rashi on Nazir 37a:8:1": {
+    "dependsOn": [
+      "Nazir 37a:8"
+    ],
+    "generatedAt": "2026-10-31T04:22:42.466Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 37a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וה\"ה לערלה בשתים</strong> - שאיסורו איסור הנאה ואין היתר לאיסורו אבל אין לומר בה דאיסורו איסור עולם שהרי לאחר ג' שנים הותרה:"
+  },
+  "Rashi on Nazir 37a:9:1": {
+    "dependsOn": [
+      "Nazir 37a:9"
+    ],
+    "generatedAt": "2026-10-31T04:25:53.035Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 37a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ליה ההוא מדרבנן</strong> - אין ה\"נ דמשרת כי אתא ליתן טעם כעיקר ואליבא דרבנן ורבי אבהו כי קאמר אליבא דרבי עקיבא דאמר היתר מצטרף:"
+  },
+  "Rashi on Nazir 37a:9:2": {
+    "dependsOn": [
+      "Rashi on Nazir 37a:9:1"
+    ],
+    "generatedAt": "2026-10-31T04:26:23.727Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 37a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודילמא</strong> - מיין לחודיה הוא דקא בעי דליהוי ביה מובלע בפת כזית:"
+  },
+  "Tosafot on Nazir 37a:10:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 37a:10:2",
+      "Tosafot on Nazir 37a:9:1",
+      "Tosafot on Nazir 37a:9:2",
+      "Nazir 37a:10",
+      "Rashi on Nazir 37a:10:1",
+      "Rashi on Nazir 37a:10:2"
+    ],
+    "generatedAt": "2026-10-31T04:32:47.111Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 37a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי תימא מאי למימרא</strong> - פירוש דאי טעם כעיקר אתא לאשמועינן בשאר איסור נמי:"
+  },
+  "Tosafot on Nazir 37a:10:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 37a:10:1",
+      "Tosafot on Nazir 37a:10:2",
+      "Rashi on Nazir 37a:10:1",
+      "Rashi on Nazir 37a:10:2"
+    ],
+    "generatedAt": "2026-10-31T04:33:51.700Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 37a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאפוקי מת\"ק דאמר עד שישתה רביעית יין</strong> - ור' עקיבא אשמועי' בנזיר לומר דחייב בכזית:"
+  },
+  "Tosafot on Nazir 37a:11:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 37a:9:1",
+      "Tosafot on Nazir 37a:10:1",
+      "Tosafot on Nazir 37a:10:2",
+      "Nazir 37a:11"
+    ],
+    "generatedAt": "2026-10-31T04:37:19.103Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 37a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא ר\"ע דברייתא</strong> - דמפרש בה בהדיא מפת ומיין מעתה גם במתני' פי' הכי:"
+  },
+  "Tosafot on Nazir 37a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T04:38:07.132Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 37a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טעם כעיקר מנליה</strong> - ואם תאמר ודילמא לית ליה ויש לומר דודאי אי לא דשמעינן מקרא אחרינא טעם כעיקר לא הוה מוקי משרת להיתר מצטרף לאיסור דטפי הוה מסתבר לאוקמי משרת ליתן טעם כעיקר [כיון] דיש באיסור עצמו כזית אלא שאינו בעין אלא טעמו משום הכי בעי מאיזה קרא נפקא ליה:"
+  },
+  "Tosafot on Nazir 37a:1:1": {
+    "dependsOn": [
+      "Nazir 37a:1",
+      "Nazir 36b:4",
+      "Nazir 36b:5",
+      "Rashi on Nazir 36b:5:1",
+      "Rashi on Nazir 37a:1:1",
+      "Rashi on Nazir 37a:1:2",
+      "Tosafot on Nazir 35a:4:1",
+      "Steinsaltz comment #1 on Nazir 37a:1",
+      "Chidushei Halachot on Pesachim 44a:5",
+      "Tosafot on Pesachim 44a:12:1"
+    ],
+    "generatedAt": "2026-10-31T03:56:50.720Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 37a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לדידך דאמרת משום דאיכא כזית בכדי אכילת פרס כי נפישי חולין מאי הוי</strong> - [תימה] למאי דאוקמת לפרש דמיירי מין במינו ואין בו נותן טעם מאי קשיא ליה והא מין במינו דאורייתא ברובא בטיל ושפיר איכא תרי טעמי להיתירא רבייה ושאני אומר [ותירץ] דאם איתא דכזית בכדי אכילת פרס דאורייתא במין בשאינו מינו גם מין במינו אין לתלות להקל על ידי סמך רבייה דדין הוא שיחמירו בו חכמים כעין חומרא מין בשאינו מינו והיה קשה לר\"י נמי דהיתר מצטרף לאיסור כשאינו מינו שיש להן לחכמים להחמיר ואומר הרמ\"ר דלא דמי דחיוב כזית בכדי אכילת פרס שייך קצת גם מין במינו כיון שהוא אוכל קצת מן האיסור דאם היה ניכר היה חייב עליו מן התורה כיון דכזית בכדי אכילת פרס דאורייתא אבל היתר מצטרף לאיסור דלא שייך לעולם בנפישי חולין שאפילו אם היה ניכר לא היה חייב מן התורה:"
+  },
+  "Tosafot on Nazir 37a:3:1": {
+    "dependsOn": [
+      "Nazir 37a:3",
+      "Tosafot on Nazir 37a:1:1",
+      "Rashi on Nazir 37a:3:1",
+      "Rashi on Nazir 37a:3:2",
+      "Steinsaltz comment #1 on Nazir 37a:3",
+      "Versions on Nazir 37a:3",
+      "Nazir 37a:5",
+      "Nazir 37a:6"
+    ],
+    "generatedAt": "2026-10-31T04:05:27.439Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 37a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא הנח לתרומה בזמן הזה דרבנן</strong> - [אלא] ממאי דהאי משרת להיתר מצטרף לאיסור דילמא ליתן טעם כעיקר [אבל] הש\"ס הפסיק להקשות ולאביי מעיקרא קשה ליה האי דרב דימי ואותיב ליה כל הנך תיובתא כלומר דאפילו בשאר איסורי בעינן למימר דהיתר מצטרף לאיסור [והדר] אמר ליה ליתן טעם כעיקר כלומר ועתה ר\"ל דבשום מקום לא נאמר דהיתר מצטרף לאיסור ומשני לבתר דשני ליה [ומייתי] ליה רב דימי ראיותיו [אז] הודה לו ומקשה לו [מנא] ליה מנין לרב דימי לשום תנא דאתי משרת להיתר מצטרף לאיסור דילמא ליתן טעם כעיקר:"
+  },
+  "Tosafot on Nazir 37a:6:1": {
+    "dependsOn": [
+      "Nazir 37a:6",
+      "Tosafot on Nazir 37a:1:1",
+      "Tosafot on Nazir 37a:3:1",
+      "Nazir 37a:1"
+    ],
+    "generatedAt": "2026-10-31T04:08:26.547Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 37a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שרה ענבים כו'</strong> - כאן אין כתובה בספרים דתניא אלא נראה שכל זה מדברי אביי שלא היה יודע הברייתא כיון דקא מתמה לעיל וכזית בכדי אכילת פרס דאורייתא משמע דלדידיה הוי כזית בכדי אכילת פרס דרבנן וכ\"ש טעם כעיקר דרבנן ומיהו לפי מאי דפרישית ניחא:"
+  },
+  "Tosafot on Nazir 37a:7:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 37a:7:1",
+      "Rashi on Nazir 37a:7:1",
+      "Rashi on Nazir 37a:7:2",
+      "Rashi on Nazir 37a:7:3",
+      "Tosafot on Nazir 37a:8:1",
+      "Steinsaltz comment #1 on Nazir 37a:7",
+      "Steinsaltz comment #2 on Nazir 37a:7",
+      "Steinsaltz comment #3 on Nazir 37a:7",
+      "Rosh on Nazir 37a:6:1",
+      "Rashi on Pesachim 44b:2:3",
+      "Rashi on Pesachim 44b:2:4",
+      "Tosafot on Pesachim 44b:3:1"
+    ],
+    "generatedAt": "2026-10-31T04:21:45.963Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 37a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאין איסורו איסור עולם</strong> - דסתם נזירות ל' יום ואין איסורו איסור הנאה דתניא <span class=\"parenthesized\">(עירובין דף כו:)</span> מערבין לנזיר ביין ויש היתר:"
+  },
+  "Tosafot on Nazir 37a:8:1": {
+    "dependsOn": [
+      "Rashi on Nazir 37a:8:1",
+      "Nazir 37a:7",
+      "Tosafot on Pesachim 44b:3:1"
+    ],
+    "generatedAt": "2026-10-31T04:25:11.691Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 37a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והוא הדין לערלה בשתים</strong> - <span class=\"rashi-quotation\">פי' הקונטרס</span> שאיסורו איסור הנאה ואין היתר לאיסורו תוך שלש של ערלה לא יותרו לעולם ונ\"ל דודאי איסורו איסור עולם אבל יש היתר לאיסורו כמו בשנה הרביעית דאחליה והדר אכליה שיש לו תקנה לפירות ע\"י פדיון כמעשר שני שאע\"פ שבאו מכרם ערלה וה\"ר יום טוב בן הרב ר' יהודה פירש שיש היתר לאיסורו שמותר לגרום איסורו כגון לנטוע אילן אף אם יהיה ערלה משא\"כ בכלאי הכרם וכן מותר לאדם לידור בנזיר:"
+  },
+  "Tosafot on Nazir 37a:9:1": {
+    "dependsOn": [
+      "Nazir 37a:9",
+      "Rashi on Nazir 37a:9:1",
+      "Tosafot on Nazir 37a:9:2"
+    ],
+    "generatedAt": "2026-10-31T04:27:42.235Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 37a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוא דאמר כר' עקיבא</strong> - דאית ליה היתר מצטרף לאיסור לנזיר ממשרת וההיא דדריש ממשרת ליתן טעם כעיקר רבנן היא:"
+  },
+  "Tosafot on Nazir 37a:9:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 37a:9:1",
+      "Rashi on Nazir 37a:9:1",
+      "Rashi on Nazir 37a:9:2"
+    ],
+    "generatedAt": "2026-10-31T04:28:39.391Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 37a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויש בו כדי לצרף כזית חייב</strong> - היה סבור הפירוש לצרף מפת ומיין דילמא מיין לחודיה ודוקא שיש בו כזית יין בלוע בתוך הפת וצריך צירוף לאוספו יחד לפי שהוא בלוע:"
+  }
+}

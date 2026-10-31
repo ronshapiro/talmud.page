@@ -1,0 +1,243 @@
+{
+  "Rashi on Nazir 20b:1:1": {
+    "dependsOn": [
+      "Nazir 20b:1",
+      "Rashi on Nazir 20b:1:1",
+      "Rashi on Nazir 20b:1:2",
+      "Rashi on Nazir 20b:1:3"
+    ],
+    "generatedAt": "2026-10-30T07:32:41.334Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 20b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא ל\"ל</strong> - למיהדר ולמיתני:"
+  },
+  "Rashi on Nazir 20b:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T07:37:58.632Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 20b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השתא י\"ל חמירתא אמר רב</strong> - היכא דהוו ב' כתי עדים ואחת אומרת אחת שתים ושניה אומרת ג' ד' ה' שמעינן ליה לרב נחלקה עדותן בקילתא דלא הוו אלא חד וחד לא אמר דנחלקה עדותן פשיטא דודאי אמר והיכא שמעינן ליה לרב דאמר הכי במס' סנהדרין ירושלמית <span class=\"parenthesized\">(פ\"ה)</span> דקתני התם להך מתני' דהכא וכתיבא תמן הכי תנינן תמן מי שהיו שתי כתי עדים מעידים אותו אלו מעידים שנזר שתים ואלו מעידים שנזר חמש ב\"ש אומרים נחלקה עדותן ואין כאן נזירות כלל וב\"ה אומרים יש בכלל חמש ב' שיהא נזיר שתים ואמר רב בכלל נחלקו אבל בפרט דברי הכל נחלקה העדות ור' יוחנן אומר בפרט נחלקו אבל בכלל יש בכלל חמש שתים יהא נזיר שתים פרט כגון שהאחת אומרת אחת שתים והשניה אומרת ג' ד' ה' כלל שהאחת אומרת שתים והשניה אומרת ה':"
+  },
+  "Rashi on Nazir 20b:1:3": {
+    "dependsOn": [
+      "Rashi on Nazir 20b:1:1",
+      "Rashi on Nazir 20b:1:2",
+      "Rashi on Nazir 20a:7:3",
+      "Nazir 20b:1",
+      "Rashi on Nazir 20a:6:1",
+      "Rashi on Nazir 20a:6:2",
+      "Rashi on Nazir 20a:6:3",
+      "Rashi on Nazir 20a:7:2"
+    ],
+    "generatedAt": "2026-10-30T07:40:37.322Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 20b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרי במערבא אין הכחשה במונה</strong> - שאם אחד אומר אחת שתים ואחד אומר שלש ארבע חמש אין זו הכחשה ויש בכלל חמש שתים ויהא נזיר שתים:"
+  },
+  "Rashi on Nazir 20b:3:1": {
+    "dependsOn": [
+      "Rashi on Nazir 20b:3:2",
+      "Nazir 20b:4",
+      "Rosh on Nazir 20b:3:1",
+      "Tosafot on Nazir 20b:3:1"
+    ],
+    "generatedAt": "2026-10-30T07:45:05.331Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 20b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי שאמר הריני נזיר ושמע חבירו ואמר ואני כו'</strong> - וכן חבירו אמר ואני:"
+  },
+  "Rashi on Nazir 20b:3:2": {
+    "dependsOn": [
+      "Rashi on Nazir 20b:3:1",
+      "Rashi on Nazir 20b:3:2",
+      "Tosafot on Nazir 20b:3:1",
+      "Nazir 20b:4"
+    ],
+    "generatedAt": "2026-10-30T07:46:24.367Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 20b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הותר ראשון שנשאל על נזירותו הותרו כולן</strong> - שכולן תלו נזירותן בראשון:"
+  },
+  "Rashi on Nazir 20b:5:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 20b:5:1",
+      "Nazir 20b:5",
+      "Nazir 20b:3"
+    ],
+    "generatedAt": "2026-10-30T07:56:12.925Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 20b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יתיב ר\"ל קמיה דר' יהודה נשיאה ויתיב וקאמר</strong> - כי תנן במתני' וכולן נזירים כגון שהתפיסו כולן בתוך כדי דבור של ראשון דבכדי שאילת תלמיד לרב דאית ביה שלש תיבות שלום עליך רבי התפיסו כולן ומתניתין דקתני ואני ואני דלא תני אלא תרין דוקא קתני דכי שקלת לחדא תיבה מקמא דאמר הריני נזיר ומצרפת ליה להנך דאמרי ואני ואני שכולן שלשה נדרו בתוך כדי שאילת שלום תלמיד לרב דהוויין נמי שלשה תיבות:"
+  },
+  "Rashi on Nazir 20b:6:1": {
+    "dependsOn": [
+      "Nazir 20b:6",
+      "Rashi on Nazir 20b:5:1",
+      "Tosafot on Nazir 20b:6:1"
+    ],
+    "generatedAt": "2026-10-30T07:59:57.991Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 20b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תוב לא שבקת רווחא לתלמידא</strong> - דלימא ליה אלא הנך תלת מילי ולאו משום דאית ליה לרבי יהודה נשיאה דלימא ליה טפי אלא מילתא בעלמא קמ\"ל ומסייע ליה לריש לקיש:"
+  },
+  "Tosafot on Nazir 20b:1:1": {
+    "dependsOn": [
+      "Nazir 20b:1",
+      "Rashi on Nazir 20b:1:1",
+      "Rashi on Nazir 20b:1:2",
+      "Tosafot on Nazir 20b:1:2"
+    ],
+    "generatedAt": "2026-10-30T07:42:55.419Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 20b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג תו ל\"ל השתא י\"ל חמירתא אמר קילתא לא כ\"ש</strong> - ולא גרסינן אמר רב וה\"פ דפריך [אמאי] קאמר דהוי הכחשה משום דאמרינן כיון דזה [אמר] שלש ארבע חמש ולא אמר גם אחת ושתים הוי כאילו אומר בפירוש ולא אחת ושתים נזר אמאי נימא דלא הוי הכחשה ומה שלא הזכיר אחת ושתים דמה לו להזכיר חמירתא דהיינו שלש וארבע וחמש אמר קילתא לא אמר הא מצינו למימר דאחת ושתים בכלל דבריו ומוסיף הוא על האחד אלא ודאי לא הוי הכחשה:"
+  },
+  "Tosafot on Nazir 20b:1:2": {
+    "dependsOn": [
+      "Nazir 20b:1",
+      "Tosafot on Nazir 20b:1:1"
+    ],
+    "generatedAt": "2026-10-30T07:43:56.311Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 20b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרי במערבא אין הכחשה במונה</strong> - דודאי כי אמר אידך שלש וארבע וחמש לא מיעט שלא אמר הנודר אחת ושתים ובירושלמי דסנהדרין משמע דמונה הוי הכחשה אפילו טפי כאילו אמר [לא] אחת ושתים [אלא] שלש וארבע דקאמר התם אמר רב מחלוקת בכלל אבל בפרט לכ\"ע נחלקה עדותן ואין כאן נזירות ורבי יוחנן אומר בפרט נחלקו אבל בכלל לכ\"ע יש בכלל חמש שתים:"
+  },
+  "Tosafot on Nazir 20b:3:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 20b:3:1",
+      "Tosafot on Nazir 20b:3:2"
+    ],
+    "generatedAt": "2026-10-30T07:47:17.664Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 20b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי שאמר הריני נזיר ושמע חבירו ואמר ואני ואני</strong> - כלומר שנים שמעו לראשון שקבל נזירות והאחד אומר ואני וכן השני אומר ואני כולם נזירים הותר הראשון אם הראשון בא לחכם והתיר לו נדרו גם האחרונים הותרו לפי שאמרו ואני כמוהו ותלו נדריהם בנדרו הותר האחרון ע\"י חכם הוא מותר וכולן אסורים אם לא יתירו גם הם נדריהם ע\"י חכם אבל בלא התרה לא שלא תלו נדריהם בנדר האחרון:"
+  },
+  "Tosafot on Nazir 20b:3:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 20b:3:2"
+    ],
+    "generatedAt": "2026-10-30T07:48:20.176Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 20b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פי כפיו שערי כשערו ה\"ז נזיר</strong> - בגמרא מפרש:"
+  },
+  "Tosafot on Nazir 20b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T07:48:52.803Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 20b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הריני נזיר ושמעה אשתו ואמרה ואני מיפר את שלה ושלו קיים</strong> - דלא תלה כלל נדרו בנדרה אלא אדרבה היא אמרה ואני נזירה כמוך אחר שהוא כבר נדר בנזיר:"
+  },
+  "Tosafot on Nazir 20b:4:2": {
+    "dependsOn": [
+      "Nazir 20b:4",
+      "Nazir 21b:5",
+      "Nazir 21b:6",
+      "Tosafot on Nazir 20b:4:1",
+      "Tosafot on Nazir 21b:5:1",
+      "Tosafot on Nazir 20b:4:3",
+      "Tosafot on Nazir 20b:4:4"
+    ],
+    "generatedAt": "2026-10-30T07:51:54.486Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 20b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הריני נזירה ושמע בעלה ואמר ואני אינו יכול להפר</strong> - בגמרא בעי לאכוחי מינה דבעל מיעקר קא עקר נדר אשתו מעיקרו ולכך אינו יכול להפר שאם מיפר לה א\"כ יתבטל גם את שלו שנדרו תלוי בנדרה וכדתנן לעיל הותר הראשון הותרו כולן שבאו מחמתיה דראשון ואינו רשאי לגרום דבר להיות נדרו מבוטל כדכתיב לא יחל דברו ודרשינן הוא אינו מיחל אבל אחרים מוחלין לו ודחי בגמרא דלעולם מיגז גייז מהפרה ואילך מהשתא אבל כי נמי מיפר את שלה ושלו קיים מ\"מ חל נדרה עד עתה ונזירותיה אינו יכול להפר דכיון דאמר ואני קיים לה נדרה:"
+  },
+  "Tosafot on Nazir 20b:4:3": {
+    "dependsOn": [
+      "Tosafot on Nazir 20b:4:2",
+      "Tosafot on Nazir 20b:4:4",
+      "Steinsaltz on Nazir 20b:4:1"
+    ],
+    "generatedAt": "2026-10-30T07:53:31.785Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 20b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הריני נזיר ואת</strong> - כלומר וכי גם את רוצה לידור בנזיר ואמרה אמן פי' קבלה עליה נזירות מיפר את שלה ושלו קיים דלא תלה נדרו בנדרה אבל אם לא אמרה אמן היא מותרת שאינו יכול להדירה בע\"כ ודאי מה דאמר לה ואת לא הוי קיום שאין הנדר חל עליה אלא כשאמרה אמן ועדיין אינו יודע אם תקבלנו אם לאו ולכך לא הוי קיום:"
+  },
+  "Tosafot on Nazir 20b:4:4": {
+    "dependsOn": [
+      "Tosafot on Nazir 20b:4:1",
+      "Tosafot on Nazir 20b:4:2",
+      "Tosafot on Nazir 20b:4:3",
+      "Nazir 20b:4"
+    ],
+    "generatedAt": "2026-10-30T07:54:41.432Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 20b:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הריני נזירה ואתה</strong> - הכי גרס ר\"ת ושמע בעלה ואמר אמן אינו יכול להפר אי מיעקר [קא עקר] ניחא משום דא\"כ יתבטל נזירותו ואי מיגז גייז משום דהוי קיום כי אמר אמן כמו ואני כדלעיל:"
+  },
+  "Tosafot on Nazir 20b:5:1": {
+    "dependsOn": [
+      "Rashi on Nazir 20b:5:1",
+      "Nazir 20b:5"
+    ],
+    "generatedAt": "2026-10-30T07:58:34.683Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 20b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הג\"ה גמ' יתיב ר\"ש בן לקיש קמיה דר' יהודה נשיאה ויתיב וקאמר והוא שהתפיסו כולם בתוך כדי דיבור</strong> - כדמפרש והולך כדי שאילת שלום תלמיד לרב דהיינו שלום עליך רבי ג' תיבות ה\"נ יכולין שלשה אנשים להתפיס עצמן בראשון שנדר בנזיר שכל אחד אמר ואני הם שלש תיבות דאפילו האחרון תוך כדי דיבור מן הראשון אבל הרביעי אינו יכול להתפיס עצמו בראשון אפילו אמר ואני שכבר שהו כדי דיבור מן הראשון ולכך לא חייל נזירות ארביעי:"
+  },
+  "Tosafot on Nazir 20b:6:1": {
+    "dependsOn": [
+      "Nazir 20b:6",
+      "Rashi on Nazir 20b:6:1",
+      "Tosafot on Nazir 20b:5:1",
+      "Steinsaltz comment #1 on Nazir 20b:6",
+      "Steinsaltz on Nazir 20b:6"
+    ],
+    "generatedAt": "2026-10-30T08:01:58.496Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 20b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ליה תו לא שבקת רווחא לתלמידא</strong> - כלומר תלמיד ששמע לאחד שנדר בנזיר ובקש לומר ואני ובתוך כך עובר רבו לפניו והוא חייב להקדים לו שלום ולומר שלום עליך רבי [והם שלש תיבות] שוב לא יועיל להתפיס בנזיר אם יאמר ואני שכבר שהה כדי דיבור ואין זו סברא אלא ודאי גם הרביעי נתפס הואיל ולא שהה כלל לאחר כדי דבור אלא לאלתר אחר כדי דבור אמר ואני אבל החמישי ודאי אינו נתפס ששהה קצת אחר כדי דיבור:"
+  }
+}

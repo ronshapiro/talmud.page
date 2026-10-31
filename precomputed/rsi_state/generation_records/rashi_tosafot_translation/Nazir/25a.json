@@ -1,0 +1,332 @@
+{
+  "Rashi on Nazir 25a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T12:57:37.875Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 25a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ר יוחנן הלכה היא בנזיר</strong> - כך דהואיל וסתומין הן אע\"פ שמעורבין הן יפלו לנדבה:"
+  },
+  "Rashi on Nazir 25a:1:2": {
+    "dependsOn": [
+      "Rashi on Nazir 25a:1:2",
+      "Rashi on Nazir 25a:1:1"
+    ],
+    "generatedAt": "2026-10-30T12:58:20.868Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 25a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מותר נדר יהא לנדבה</strong> - והכא נמי כיון דהני מעות לא צריכי שכבר מת הוו להו מותר ויפלו לנדבה ואין חוששין לדמי חטאת שבהן:"
+  },
+  "Rashi on Nazir 25a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T13:00:31.767Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 25a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמטו להכי סתומין</strong> - תנן דיפלו לנדבה דאין הלכה בידינו אלא מסתומין:"
+  },
+  "Rashi on Nazir 25a:2:2": {
+    "dependsOn": [
+      "Nazir 25a:2",
+      "Rashi on Nazir 25a:2:1"
+    ],
+    "generatedAt": "2026-10-30T13:01:38.022Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 25a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לר\"ל</strong> - דמפיק ליה מן קרא מאי איריא סתומין אפילו מפורשין כיון דמת הוה ליה מותר ואמאי תני דמי חטאת ילכו לים המלח:"
+  },
+  "Rashi on Nazir 25a:3:1": {
+    "dependsOn": [
+      "Rashi on Nazir 25a:3:2",
+      "Nazir 25a:3"
+    ],
+    "generatedAt": "2026-10-30T13:04:25.637Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 25a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כבר פסקה תנא דבי ר\"י</strong> - דלמיתה אזלא:"
+  },
+  "Rashi on Nazir 25a:3:2": {
+    "dependsOn": [
+      "Rashi on Nazir 25a:3:1",
+      "Nazir 25a:4"
+    ],
+    "generatedAt": "2026-10-30T13:05:36.676Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 25a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רק קדשיך אשר יהיו לך וגו'</strong> - מי הן אותן קדשים שהן עכשיו ועתידים להעמיד אחרים תחתיהם שריבה הכתוב אשר יהיו לך הוי אומר ולדי קדשים ותמורתן ומה הן תקנתן כמו שנאמר לאחריו:"
+  },
+  "Rashi on Nazir 25a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T13:09:05.647Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 25a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תשא ובאת אל המקום</strong> - שלא שינה בהן הכתוב משאר קדשים שעולים אל המקום כדכתיב בפרשת ויקרא אם עולה קרבנו מן הבקר זכר תמים יקריבנו אל פתח אהל מועד וכך כתוב בזבחי שלמים:"
+  },
+  "Rashi on Nazir 25a:4:2": {
+    "dependsOn": [
+      "Rashi on Nazir 25a:4:1"
+    ],
+    "generatedAt": "2026-10-30T13:10:06.227Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 25a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יכול יעלם לבית הבחירה וימנע מהם מים ומזון</strong> - שיכניסם לכיפה בשביל שימותו ת\"ל לאחריו ועשית עולותיך הבשר והדם על מזבח וגו' ודם זבחיך ישפך על מזבח ה' אלהיך והבשר תאכל לומר לך כשם שאתה נוהג בעולה נהוג בתמורתה כדרך שנוהג בשלמים נהוג בולדותיהם ולדותיהן לגבי עולה לא חשיב דאין עולה באה אלא זכר אבל שלמים אם זכר אם נקבה כתיב וכן נמי באשם ליכא ולד דאינו בא אלא זכר:"
+  },
+  "Rashi on Nazir 25a:5:1": {
+    "dependsOn": [
+      "Nazir 25a:5"
+    ],
+    "generatedAt": "2026-10-30T13:13:04.728Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 25a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ל רק</strong> - שאין הכתוב מדבר אלא בתמורת עולה ולדות שלמים ולא בולד חטאת ותמורת אשם ודם זבחיך ישפך דכתיב בקרא היינו שלמים:"
+  },
+  "Rashi on Nazir 25a:6:1": {
+    "dependsOn": [
+      "Nazir 25a:6"
+    ],
+    "generatedAt": "2026-10-30T13:14:38.620Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 25a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר\"ע אומר אינו צריך</strong> - למעט אשם שהרי הוא אומר אשם הוא בהוייתו ולקמן מפרש מאי קאמר:"
+  },
+  "Rashi on Nazir 25a:7:1": {
+    "dependsOn": [
+      "Nazir 25a:7",
+      "Nazir 25a:4",
+      "Rashi on Nazir 25a:7:2",
+      "Rashi on Nazir 25a:7:3"
+    ],
+    "generatedAt": "2026-10-30T13:17:01.074Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 25a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קתני יכול יעלם</strong> - כמו אמר מר יכול יעלם ת\"ל ועשית עולותיך הבשר והדם טעמא דכתב רחמנא ועשית עולותיך משום הכי לא יומתו ולדי שלמים ותמורת עולה הא אי לא כתב קרא אזלי למיתה:"
+  },
+  "Rashi on Nazir 25a:7:2": {
+    "dependsOn": [
+      "Rashi on Nazir 25a:7:1",
+      "Rashi on Nazir 25a:7:2",
+      "Rashi on Nazir 25a:7:3"
+    ],
+    "generatedAt": "2026-10-30T13:18:15.655Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 25a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמאי הא גבי ולדות חטאת הוא דגמרי מיתה</strong> - בלבד במס' תמורה <span class=\"parenthesized\">(דף כא:)</span> ולא גבי שאר ולדות קדשים ותמורותיהם:"
+  },
+  "Rashi on Nazir 25a:7:3": {
+    "dependsOn": [
+      "Rashi on Nazir 25a:7:1",
+      "Rashi on Nazir 25a:7:2",
+      "Rashi on Nazir 25a:7:3",
+      "Nazir 25a:7"
+    ],
+    "generatedAt": "2026-10-30T13:19:30.386Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 25a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי לאו קרא</strong> - ועשית עולותיך הוה אמינא ולדי חטאת מתים בכל מקום שהן:"
+  },
+  "Tosafot on Nazir 25a:1:1": {
+    "dependsOn": [
+      "Nazir 25a:1"
+    ],
+    "generatedAt": "2026-10-30T12:59:14.515Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 25a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלכה היא בנזיר</strong> - הלכה למשה מסיני הוא [דסתומין] יפלו לנדבה אע\"פ שדמי חטאת מעורבין בהן ואדרבה לקמן מוכחא כשדמי חטאת דוקא מעורב בהן [אז] <span class=\"parenthesized\">(נדר)</span> נתקבלה הלכה שיפלו לנדבה אבל אם דמי עולה ושלמים לבד מעורבין יחד לא נאמר בהן שיפלו לנדבה אלא יביא חציין עולה וחציין שלמים:"
+  },
+  "Tosafot on Nazir 25a:1:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 25a:1:1"
+    ],
+    "generatedAt": "2026-10-30T13:00:07.604Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 25a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי שמעון בן לקיש אומר לכל נדריהם ולכל נדבותם התורה אמרה מותר נדר יהיה לנדבה</strong> - וכל קרבנות נזיר בנדר הם באין ע\"י שנדר בנדור ואפילו החטאת וסברא הוא לאוקומי במותר כי האי דבשאר מותר לא משכחת לה דאם הפריש [מעות] לעולה ונתותרו שהוזלו הבהמות יכול להקריב מהם עולה וכן שלמים כמו שהפריש מתחילה וסברא להעמידם במותר סתום כי האי חטאת עולה ושלמים מעורבין יחד:"
+  },
+  "Tosafot on Nazir 25a:2:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 25a:2:1",
+      "Rashi on Nazir 25a:2:1",
+      "Rashi on Nazir 25a:2:2"
+    ],
+    "generatedAt": "2026-10-30T13:03:17.216Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 25a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשלמא לר' יוחנן דאמר הלכה היא בנזיר אמטו להכי סתומין אין מפורשין לא</strong> - שכן נשנית הלכה למשה מסיני אלא לרבי שמעון בן לקיש אפילו מפורשין דנימא מקרא מלא דבר הכתוב ואמאי תני במתניתין מפורשין לא:"
+  },
+  "Tosafot on Nazir 25a:3:1": {
+    "dependsOn": [
+      "Nazir 25a:3",
+      "Nazir 25a:5"
+    ],
+    "generatedAt": "2026-10-30T13:07:16.524Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 25a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפורשין לא מצית אמרת</strong> - דיפלו לנדבה דכבר פסקה תנא דבי רבי ישמעאל דולד חטאת מתה ולא לנדבה וה\"נ נימא במותר שלה דלאיבוד אזיל ולא לנדבה דהכל נקרא מותר חטאת בין ולד חטאת בין תמורת חטאת כי הכא דמפריש מפורשין והיפר לה בעלה או ההיא דתנן במסכת מעילה <span class=\"parenthesized\">(דף יא.)</span> היכא דהפריש מעות לנזירותו ומת והיו לו מעות מפורשין כל אלה שאינן חטאת עצמן שם מותרות עליהם וה\"ה דמצי למימר דהלכה גמירי לה חטאת מתה אלא ניחא ליה לאתויי תנא דבי רבי ישמעאל [דתנא] חטאת מתה עולה ושלמים יקריבו שלמים כל אחד כדיניה כמו במשנתינו דקאמר עולה תיקרב עולה:"
+  },
+  "Tosafot on Nazir 25a:3:2": {
+    "dependsOn": [
+      "Temurah 17b:15",
+      "Temurah 17b:16"
+    ],
+    "generatedAt": "2026-10-30T13:08:14.428Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 25a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רק קדשיך אשר יהיו לך</strong> - בתמורה בריש פ' אלו קדשים דריש רק קדשיך אלו התמורות אשר יהיו לך אלו הוולדות דלעולה ושלמים גופייהו לא איצטריך שהרי כבר מפורש בויקרא זאת תורת עולה ותורת שלמים:"
+  },
+  "Tosafot on Nazir 25a:4:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 25a:4:1",
+      "Nazir 25a:4",
+      "Rashi on Nazir 25a:4:1",
+      "Rashi on Nazir 25a:4:2",
+      "Tosafot on Nazir 25a:4:2",
+      "Tosafot on Nazir 25a:1:1",
+      "Tosafot on Nazir 25a:3:1"
+    ],
+    "generatedAt": "2026-10-30T13:11:27.388Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 25a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומאי תקנתן תשא ובאת בירושלים יכול יעלם לבית הבחירה וימנע מהם מים ומזון כדי שימותו</strong> - כלומר יכניסם כדרך שעושין בולד חטאת ובתמורת חטאת דאזלו למיתה:"
+  },
+  "Tosafot on Nazir 25a:4:2": {
+    "dependsOn": [
+      "Nazir 25a:4",
+      "Tosafot on Nazir 25a:4:1"
+    ],
+    "generatedAt": "2026-10-30T13:12:25.147Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 25a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ל ועשית עולותיך הבשר והדם</strong> - סיפא דהאי קרא ודם זבחיך ישפך והבשר תאכל והיינו שלמים וסמיך ליה האי קרא רק קדשיך לומר לך כדרך שאתה נוהג בעולה כלומר שקריבין למזבח נהוג בתמורתן וכדרך שאתה נוהג בשלמים דסיפיה דקרא איירי בשלמים דכתיב והבשר תאכל נהוג בולדה ונקט תמורה לגבי עולה דזכר לא שייך ביה ולד וגבי שלמים דנקבה נקט ולד:"
+  },
+  "Tosafot on Nazir 25a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T13:13:51.993Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 25a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יכול אף ולד חטאת ותמורת אשם וכו'</strong> - גבי חטאת נקט ולד שהיא באה נקבה וגבי אשם תמורה שהוא בא זכר והכי קאמר יכול אף בולד חטאת תנהוג בו דין חטאת ובתמורת אשם דין אשם כלומר שיקרב לשם חטאת ולשם אשם תלמוד לומר רק למעוטי ולד חטאת ותמורת אשם דאכין ורקין מיעוטין:"
+  },
+  "Tosafot on Nazir 25a:6:1": {
+    "dependsOn": [
+      "Nazir 25a:6",
+      "Rashi on Nazir 25a:6:1"
+    ],
+    "generatedAt": "2026-10-30T13:15:49.788Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 25a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר\"ע אומר [אינו צריך]</strong> - דאינו מביא לאשם אלא אשם עצמו:"
+  },
+  "Tosafot on Nazir 25a:7:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 25a:7:1",
+      "Tosafot on Nazir 25a:7:2"
+    ],
+    "generatedAt": "2026-10-30T13:20:59.838Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 25a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קתני יכול יעלם</strong> - כמו אמר מר:"
+  },
+  "Tosafot on Nazir 25a:7:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 25a:7:1",
+      "Tosafot on Nazir 25a:7:3"
+    ],
+    "generatedAt": "2026-10-30T13:21:51.666Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 25a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמאי הא גבי ולד חטאת הוא דגמירי מיתה</strong> - דהילכתא גמירי לה דחמש חטאות מתות ואלו הן [ולד] חטאת ותמורת חטאת וחטאת שמתו בעליה ושנתכפרו בעליה באחר ושעברה שנתה והואיל ולא איירי בשלמים ועולה מהיכא תיתי שימותו:"
+  },
+  "Tosafot on Nazir 25a:7:3": {
+    "dependsOn": [
+      "Nazir 25a:7",
+      "Nazir 25a:4",
+      "Rashi on Nazir 25a:7:1",
+      "Rashi on Nazir 25a:7:2",
+      "Rashi on Nazir 25a:7:3",
+      "Tosafot on Nazir 25a:7:1",
+      "Tosafot on Nazir 25a:7:2",
+      "Steinsaltz on Nazir 25a:7",
+      "Steinsaltz on Nazir 25b:1",
+      "Steinsaltz comment #3 on Nazir 25a:7",
+      "Steinsaltz comment #4 on Nazir 25a:7",
+      "Rashi on Nazir 25b:1:1",
+      "Rashi on Nazir 25b:1:2"
+    ],
+    "generatedAt": "2026-10-30T13:25:49.858Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 25a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי לאו קרא הוה אמינא ולד חטאת בכ\"מ</strong> - שירצה בגבולין שימותו אבל מעולה ומשלמים יביאם לבית הבחירה:"
+  }
+}

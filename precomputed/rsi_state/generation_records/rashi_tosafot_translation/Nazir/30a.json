@@ -1,0 +1,360 @@
+{
+  "Rashi on Nazir 30a:1:1": {
+    "dependsOn": [
+      "Nazir 30a:1",
+      "Rashi on Nazir 29b:11:1",
+      "Rashi on Nazir 30a:2:1"
+    ],
+    "generatedAt": "2026-10-30T19:06:17.703Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 30a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא</strong> - אליבא דרבי כגון דאמר אהא בשביל אבא אהא בשביל עצמי:"
+  },
+  "Rashi on Nazir 30a:2:1": {
+    "dependsOn": [
+      "Nazir 30a:2",
+      "Rashi on Nazir 30a:2:2",
+      "Rashi on Nazir 30a:2:3",
+      "Rashi on Nazir 30a:1:1"
+    ],
+    "generatedAt": "2026-10-30T19:11:09.119Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 30a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי אייתי ב' שערות מעיקרא</strong> - כלומר הניחא דמתרצת מתני' כוותיה דרבי דלא מיחייב אלא בחדא נזירות אילו אייתי ב' שערות מקמי הזירו אבוה:"
+  },
+  "Rashi on Nazir 30a:2:2": {
+    "dependsOn": [
+      "Nazir 30a:2",
+      "Rashi on Nazir 30a:2:1",
+      "Rashi on Nazir 30a:2:2",
+      "Rashi on Nazir 30a:2:3"
+    ],
+    "generatedAt": "2026-10-30T19:12:02.660Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 30a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קאים בנזירות דידיה</strong> - כדקאמר איהו אם אני גדול שהבאתי שתי שערות שאיני נתפס בשל אבא אהא בשביל עצמי ואי אייתי שתי שערות לבסוף דהדירו אביו קאי בנזירות דאבוה ולא חייל עליה נזירות דידיה כלל דהא לא קביל עליה נזירות אלא אם אינו נתפס בשביל אביו וכיון דעדיין לא הביא ב' שערות חל עליה נזירות דאבוה ולא חייל עליה נזירות דידיה כלל:"
+  },
+  "Rashi on Nazir 30a:2:3": {
+    "dependsOn": [
+      "Rashi on Nazir 30a:2:1",
+      "Rashi on Nazir 30a:2:2",
+      "Nazir 30a:2",
+      "Rashi on Nazir 30a:3:1",
+      "Rashi on Nazir 30a:3:2",
+      "Tosafot on Nazir 30a:2:1",
+      "Steinsaltz on Nazir 30a:2:1",
+      "Steinsaltz comment #1 on Nazir 30a:2",
+      "Steinsaltz comment #2 on Nazir 30a:2"
+    ],
+    "generatedAt": "2026-10-30T19:14:25.088Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 30a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי אייתי באמצע</strong> - לא ידעינן אי בההיא שעתא דהדירו אביו אייתי ב' שערות אי לא מי ניחא והא כיון דאמר אהא בשביל אבא אהא בשביל עצמי אם אינו נתפס בשביל אביו ואפשר דקאים בשתים עשרה והגיע לעונת נדרים ועדיין לא הביא ב' שערות וחל עליו נזירות שלו ונזירות של אביו כיצד אתה פוטרו בנזירות אחת והא מיחייב למיקם בנזירות על שלו ועל של אביו:"
+  },
+  "Rashi on Nazir 30a:3:1": {
+    "dependsOn": [
+      "Nazir 30a:2",
+      "Nazir 30a:3",
+      "Nazir 30a:4",
+      "Rashi on Nazir 30a:3:1",
+      "Rashi on Nazir 30a:3:2",
+      "Nazir 30a:1",
+      "Rashi on Nazir 30a:1:1",
+      "Rashi on Nazir 30a:2:1",
+      "Rashi on Nazir 30a:2:2",
+      "Rashi on Nazir 30a:2:3",
+      "Rashi on Nazir 29b:1:1",
+      "Rashi on Nazir 29b:2:1",
+      "Rashi on Nazir 29b:3:1",
+      "Rashi on Nazir 29b:4:1",
+      "Rashi on Nazir 29b:5:1",
+      "Rashi on Nazir 2a:1:1",
+      "Rashi on Nazir 2a:2:1",
+      "Rashi on Nazir 2b:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2"
+    ],
+    "generatedAt": "2026-10-30T19:20:23.885Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 30a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג הניחא לרבי יוסי ברבי יהודה דאמר עד שיגיע לעונת נדרים אלא לרבי דאמר עד שיביא ב' שערות מאי איכא למימר אמרי לרבי ליכא תקנתא עד דיתיב דידיה ויתיב דאבוה</strong> - כלומר לר' יוסי דאמר דאין האב מדירו אלא עד שמגיע לעונת נדרים ניחא דלא חייל עליה אלא נזירות אחת אלא לרבי דאמר עד שיביא ב' שערות כיון דאמר אהא בשביל אבא אהא בשביל עצמי ושניהם יכולין להזיר אמאי לא מיחייב בשתי נזירות אמרי לרבי לית ליה תקנתא עד דעביד דיליה ודאבוה: [לישנא אחרינא] אלא לרבי דאמר כו' הא ברשותיה דאבוה קאים כל זמן שלא הביא שתי שערות וב' נזירות קביל עילויה דאפילו רבי מודה דלכשהגיע לעונת נדרים מצי מזיר עצמו ואפי' לא הביא שתי שערות ואהדירו אבוה הוא דפליגי:"
+  },
+  "Rashi on Nazir 30a:3:2": {
+    "dependsOn": [
+      "Nazir 30a:3",
+      "Rashi on Nazir 30a:3:1",
+      "Rashi on Nazir 30a:3:2",
+      "Rashi on Nazir 30a:3:3"
+    ],
+    "generatedAt": "2026-10-30T19:21:21.984Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 30a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומשני אלא דאמר בלשון זה אהא בשביל אבא כו'</strong> - כלומר אי אבא מצי להדירני אהא נזיר בנדר אבא ואם לאו אהא נזיר בשביל עצמי וכיון דאביו יכול להדירו חד נזירות קביל לחודיה:"
+  },
+  "Rashi on Nazir 30a:3:3": {
+    "dependsOn": [
+      "Rashi on Nazir 30a:3:1",
+      "Rashi on Nazir 30a:3:2",
+      "Rashi on Nazir 30a:3:3",
+      "Rashi on Nazir 30a:3:4",
+      "Rashi on Nazir 30a:3:5",
+      "Nazir 30a:3"
+    ],
+    "generatedAt": "2026-10-30T19:22:12.384Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 30a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי אייתי ב' שערות מעיקרא</strong> - קודם שהדירו אביו קאים בנזירות דיליה ולא בנזירות דאביו דיצא מרשות אביו:"
+  },
+  "Rashi on Nazir 30a:3:4": {
+    "dependsOn": [
+      "Rashi on Nazir 30a:3:1",
+      "Rashi on Nazir 30a:3:2",
+      "Rashi on Nazir 30a:3:3",
+      "Rashi on Nazir 30a:3:4",
+      "Rashi on Nazir 30a:3:5",
+      "Nazir 30a:3",
+      "Nazir 30a:4",
+      "Nazir 30a:5",
+      "Nazir 30a:1"
+    ],
+    "generatedAt": "2026-10-30T19:24:44.379Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 30a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולבסוף</strong> - לאחר שבא לב\"ד קאים בנזירות דאבוה דהא יש לאביו רשות בו וכיון דמצי אביו להדירו לא קביל עליה נזירות דיליה:"
+  },
+  "Rashi on Nazir 30a:3:5": {
+    "dependsOn": [
+      "Nazir 30a:2",
+      "Nazir 30a:3",
+      "Rashi on Nazir 30a:3:1",
+      "Rashi on Nazir 30a:3:2",
+      "Rashi on Nazir 30a:3:3",
+      "Rashi on Nazir 30a:3:4",
+      "Nazir 30a:4",
+      "Tosafot on Nazir 30a:2:1",
+      "Tosafot on Nazir 30a:3:1",
+      "Tosafot on Nazir 30a:4:1",
+      "Rashi on Nazir 30a:2:1",
+      "Rashi on Nazir 30a:2:2",
+      "Rashi on Nazir 30a:2:3"
+    ],
+    "generatedAt": "2026-10-30T19:27:03.956Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 30a:3:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי דאייתי במצעי</strong> - אחר שהדירו אביו קודם שבא לב\"ד ולא ידעינן אי הני ב' שערות הוו ביה כשהדירו אביו אי לא הוו ביה עד השתא הא השתא על כרחיך ימנה ב' נזירות מספיקא דדילמא לא הוו ביה שתי שערות מעיקרא עד השתא ונמצא נדור בשביל אביו וכשבא לפני ב\"ד ואמר אהא בשביל עצמי ויהא נזיר נמי בשביל עצמו דהא הביא ב' שערות במיצעי ואי מייתי במיצעי מאי דודאי השתא אייתי ב' שערות ונמצא דנדר אביו נדר וכשבא לב\"ד ואמר נמי אהא בשביל עצמי הוי נזיר בנדר דידיה וימנה ב' נזירות:"
+  },
+  "Rashi on Nazir 30a:5:1": {
+    "dependsOn": [
+      "Nazir 30a:5",
+      "Rashi on Nazir 30a:5:1",
+      "Rashi on Nazir 30a:7:1",
+      "Rashi on Nazir 30a:3:1",
+      "Rashi on Nazir 30a:3:2",
+      "Rashi on Nazir 30a:3:3",
+      "Rashi on Nazir 29b:1:1",
+      "Rashi on Nazir 28a:1:1",
+      "Steinsaltz on Nazir 30a:7:1",
+      "Steinsaltz on Nazir 30a:7"
+    ],
+    "generatedAt": "2026-10-30T19:35:05.356Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 30a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג במתניתין האיש מגלח על נזירות אביו כו' כיצד מי שהיה אביו נזיר והפריש מעות על נזירותו ומת ואמר הריני נזיר ע\"מ שאגלח על מעות אבא אמר רבי יוסי הרי אלו יפלו לנדבה ואינו מגלח על נזירות אביו מי שהיה הוא ואביו נזירים והפריש מעות סתומין לנזירותו ומת זהו שמגלח כו': גמ' מ\"ט</strong> - אין האשה מגלחת על נזירות אביה:"
+  },
+  "Rashi on Nazir 30a:7:1": {
+    "dependsOn": [
+      "Rashi on Nazir 30a:7:2"
+    ],
+    "generatedAt": "2026-10-30T19:39:29.244Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 30a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלכה היא בנזיר</strong> - שהבן מגלח ואין לנו ללמוד הימנו אלא מה שמסורת הוא בידינו בן ולא בת:"
+  },
+  "Rashi on Nazir 30a:7:2": {
+    "dependsOn": [
+      "Rashi on Nazir 30a:7:1"
+    ],
+    "generatedAt": "2026-10-30T19:40:17.911Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 30a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פשיטא</strong> - שהבן מגלח ולא הבת דאין לבת במקום הבן כלום והלכה למה לי:"
+  },
+  "Rashi on Nazir 30a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T19:46:42.397Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 30a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהו דתימא יורשין גמירי לה</strong> - שמגלחין על נזירות האב ולא שנא בן לא שנא בת במקום שאין בן:"
+  },
+  "Tosafot on Nazir 30a:1:1": {
+    "dependsOn": [
+      "Nazir 29b:13",
+      "Nazir 30a:1"
+    ],
+    "generatedAt": "2026-10-30T19:09:27.662Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 30a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמאי הא ברשותיה דאב קאים</strong> - [ואפי'] הוי גדול דקס\"ד דגדול אני היינו גדול לענין דנדרו נדר דהיינו <span class=\"parenthesized\">(לענין)</span> משהגיע לעונת נדרים עד שיביא ב' שערות מצי מדיר ליה ותנא קמא אמר [לידע אם הביא] ב' שערות אלא דאמר אהא בשביל אבא אהא בשביל עצמי כלומר לא קאמר דאם קטן שאין נדרו נדר ואם גדול שנדרו נדר אלא אם קטן אני שרשות אבי עלי דהיינו עד הבאת שתי שערות והאי דקאמר אם גדול י\"א דלא גרסינן ליה או שמא ר\"ל ואם גדול שהביא שתי שערות וכרבי דאמר דמדיר בנו עד הבאת שתי שערות:"
+  },
+  "Tosafot on Nazir 30a:2:1": {
+    "dependsOn": [
+      "Nazir 30a:2",
+      "Nazir 29b:11",
+      "Rashi on Nazir 30a:2:1",
+      "Rashi on Nazir 30a:2:2",
+      "Rashi on Nazir 30a:2:3",
+      "Steinsaltz comment #1 on Nazir 30a:2",
+      "Steinsaltz comment #2 on Nazir 30a:2"
+    ],
+    "generatedAt": "2026-10-30T19:16:56.756Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 30a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג אי אייתי ב' שערות מעיקרא קאי <span class=\"parenthesized\">(ברשותיה)</span> בנזירות דידיה ואי בסוף קאי בנזירות דאבוה כי אייתי במיצעי מאי הניחא לרבי יוסי בר' יהודה דאמר לעונת נדרים אלא לרבי מאי ליכא תקנתא עד דיתיב דיליה ויתיב דאבוה</strong> - וכן הגיהו בפי' קדמונים וה\"פ רבינו חננאל אי אייתי מעיקרא כלומר אם בדקוהו באותה שעה שבא לפני רבן גמליאל ביום שהדירו אביו ומצאו לו ב' שערות קאי בנדרים דידיה ונדרו בשביל עצמו ואי לבסוף כלומר עכשיו שלא נבדק באותו היום אם לא יביא שתי שערות עד לבסוף ל' יום דאישתכח דודאי אלו ל' יום היו בשביל נדר אביו אלא אייתי במיצעי כלומר נראו בו סימנים תוך ל' היאך יצא ידי נזירות באותן שלשים יום שהרי נזירות אביו מתבטל <span class=\"parenthesized\">(עד)</span> אחר הבאת סימנים ואיך יביא קרבנותיו לסוף שלשים יום שהדירו אביו וליכא למימר דדעתו היה שאפי' יביא סימנים שלא יפסיק נזירות אביו מכל מקום אינו ראוי להביא קרבן בשביל נזירות אביו לבד וגם בשביל עצמו כיון שלא פירש וא\"ת ואמאי לא פריך הכי [למתניתין] דהיאך מדיר בנו בנזיר כי מייתי במיצעי מאי וי\"ל דמתני' איכא לאוקמי בעודו בשנת י\"ב דאף אם מביא הם שומא אבל אהא קא קשיא ליה דקאי ליה אחר שנת י\"ג שנה מדקמייתי לת\"ק למיבדקיה אם הביא אם לאו דקודם לכן שומא אינון אי נמי יש לפרש דאמתני' ליכא למיפרך דודאי בדקינן במלאת ימי נזירותו ואי מספקינן אי אייתי סימנים במיצעי לא <span class=\"parenthesized\">(נבדיקיה)</span> אבל אהא קשיא ליה דקאמר דלא תצטער לבדקני דבלא בדיקה תיקן הכל בתנאו דאם קטן אני כאילו [לא] היה שם בדיקה צורך ולכך פריך דהא ודאי אי אייתי במיצעי אינו מתוקן כלל:"
+  },
+  "Tosafot on Nazir 30a:3:1": {
+    "dependsOn": [
+      "Nazir 30a:3",
+      "Rashi on Nazir 30a:2:1",
+      "Rashi on Nazir 30a:2:2",
+      "Rashi on Nazir 30a:2:3",
+      "Rashi on Nazir 30a:3:1",
+      "Rashi on Nazir 30a:3:2",
+      "Rashi on Nazir 30a:3:3",
+      "Rashi on Nazir 30a:3:4",
+      "Rashi on Nazir 30a:3:5",
+      "Tosafot on Nazir 30a:1:1",
+      "Tosafot on Nazir 30a:2:1",
+      "Tosafot on Nazir 30a:4:1"
+    ],
+    "generatedAt": "2026-10-30T19:29:42.120Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 30a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הניחא לר' יוסי בר' יהודה דאמר עד שיגיע לעונת נדרים</strong> - והוא עומד בשנת י\"ב ליכא למיחש דהוי שומא וא\"ת ניחוש שמא בא לעונת נדרים במיצעי וא\"כ איך יצא בנזירות אביו לבד ל' יום ופר\"ת דעונת נדרים אינה סותרת דנהי דהאב אינו יכול להדירו מכאן ואילך מכל מקום היכא דהדירו קודם לכן משום עונת נדרים לא פקע כיון דלא הוי כ\"א דרבנן אבל שערות דאיש דאורייתא פקע דאביו וא\"כ ניחוש לשערות במיצעי י\"ל דמיירי תחילת י\"ג דאכתי אי הוה ליה במיצעי ה\"ל שומא בעלמא ואף אם בא לכלל עונת נדרים באמצע נזירות אין להקפיד לפירוש רבינו תם דעונת נדרים אינה סותרת דנהי נמי דאין מדירו <span class=\"parenthesized\">(אלא)</span> כשהגיע לעונת נדרים אכתי קאי בקטנותו וכל כמה דלא הדר ביה הוה בנדר אביו וגם שמא לא יוכל למחות באמצע אלא לרבי דאמר עד שיביא שתי שערות והביאו לבדקו בשנת י\"ד לידע אם הביא במיצעי מאי:"
+  },
+  "Tosafot on Nazir 30a:4:1": {
+    "dependsOn": [
+      "Nazir 30a:4",
+      "Tosafot on Nazir 30a:3:1",
+      "Steinsaltz on Nazir 30a:4",
+      "Rashi on Nazir 30a:3:1",
+      "Rashi on Nazir 30a:3:2",
+      "Rashi on Nazir 30a:3:3",
+      "Rashi on Nazir 30a:3:4",
+      "Rashi on Nazir 30a:3:5",
+      "Nazir 29b:9",
+      "Nazir 29b:10",
+      "Nazir 29b:11"
+    ],
+    "generatedAt": "2026-10-30T19:32:34.686Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 30a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לרבי ליכא תקנתא עד דיתיב דידיה</strong> - פירוש שצריך שימתין ר' חנינא <span class=\"parenthesized\">(ל')</span> יום אחר שהדירו אביו דאז ממה נפשך איכא [שלשים] או לפני הבאת סימנים או אחר הבאת סימנים ועלתה לו נזירות אביו:"
+  },
+  "Tosafot on Nazir 30a:5:1": {
+    "dependsOn": [
+      "Nazir 30a:5",
+      "Tosafot on Nazir 30a:7:1",
+      "Tosafot on Nazir 30a:7:2",
+      "Versions on Nazir 30a:5",
+      "Steinsaltz comment #1 on Nazir 30a:5",
+      "Rashi on Nazir 30a:5:1",
+      "Nazir 30b:2",
+      "Rashi on Nazir 30b:2:3",
+      "Tosafot on Nazir 30b:2:1",
+      "Tosefta on Nazir 30a:6:1",
+      "Tosefta on Nazir 30a:6:2",
+      "Tosefta Nazir 3:9-10",
+      "Tosefta Kifshutah on Nazir 3:17:1",
+      "Steinsaltz comment #2 on Nazir 30a:5",
+      "Steinsaltz comment #3 on Nazir 30a:5",
+      "Steinsaltz on Nazir 30a:5",
+      "Steinsaltz on Nazir 30a:6"
+    ],
+    "generatedAt": "2026-10-30T19:38:50.308Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 30a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האיש מגלח על נזירות אביו ואין אשה מגלחת</strong> - כיצד מי שהיה הוא ואביו נזירים והפריש אביו מעות לנזירותו ומת ר' יוסי אומר הרי אלו יפלו לנדבה ואיזהו שמגלח על נזירות אביו הרי שהיה אביו נזיר והיו לו מעות סתומין ומת ואמר הריני נזיר ע\"מ שאגלח על מעות אבא זהו שמגלח על נזירות אביו ה\"ג בפירוש קדמונים ובפירוש רבינו ברוך ובהרבה ספרים היא דהוא ואביו נזיר מגלח על מעות אביו ואם בחיי אביו אינו מגלח:"
+  },
+  "Tosafot on Nazir 30a:7:1": {
+    "dependsOn": [
+      "Rashi on Nazir 30a:7:1",
+      "Rashi on Nazir 30a:7:2",
+      "Tosafot on Nazir 30a:7:2",
+      "Nazir 30a:5"
+    ],
+    "generatedAt": "2026-10-30T19:41:27.084Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 30a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי טעמא</strong> - אין אשה מגלחת על מעות אביה:"
+  },
+  "Tosafot on Nazir 30a:7:2": {
+    "dependsOn": [
+      "Bava Metzia 21a:5-7",
+      "Tosafot on Bava Metzia 21a:11:1"
+    ],
+    "generatedAt": "2026-10-30T19:46:08.840Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 30a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פשיטא</strong> - בלא הלכה ידעינן דאין בת מגלחת ולמאי הוצרך מילתא דר' יוחנן וא\"כ הא דקאמר הש\"ס מ\"ט מאי קושיא דהכא פשוט לן דבן ולא בת וצ\"ל דר' יוחנן גופיה אמרה כי הך דבפ' אלו מציאות <span class=\"parenthesized\">(ב\"מ דף כא.)</span> וכמה אמר ר' יצחק קב בארבע אמות: <span class=\"parenthesized\">(וע\"ע תוספות פסחים לג: ד\"ה תתן וכו' ומה שנרשם שם)</span>:"
+  }
+}

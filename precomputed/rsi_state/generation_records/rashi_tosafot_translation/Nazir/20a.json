@@ -1,0 +1,266 @@
+{
+  "Rashi on Nazir 20a:1:1": {
+    "dependsOn": [
+      "Nazir 20a:1"
+    ],
+    "generatedAt": "2026-10-30T07:05:16.616Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 20a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וב\"ה סברי משום אוירא גזרו</strong> - וחמירא טומאתה ומשום הכי צריכה דתיהוי כבתחלה:"
+  },
+  "Rashi on Nazir 20a:1:2": {
+    "dependsOn": [
+      "Rashi on Nazir 20a:1:1"
+    ],
+    "generatedAt": "2026-10-30T07:06:10.767Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 20a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא דכ\"ע משום גושה גזרו</strong> - דקילא טומאה והאי דאמרו לה דתיהדר לנזירותה קנסא בעלמא הוא דקנסוה:"
+  },
+  "Rashi on Nazir 20a:2:1": {
+    "dependsOn": [
+      "Nazir 20a:2",
+      "Referenced Mishna on Nazir 20a:2",
+      "Rashi on Nazir 20a:2:2",
+      "Rashi on Nazir 20a:2:3"
+    ],
+    "generatedAt": "2026-10-30T07:12:18.667Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 20a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איבעיא להו</strong> - הא דא\"ר יהודה דלא היתה נזירה אלא י\"ד בשנטמאת קאמר:"
+  },
+  "Rashi on Nazir 20a:2:2": {
+    "dependsOn": [
+      "Rashi on Nazir 20a:2:1",
+      "Rashi on Nazir 20a:2:3"
+    ],
+    "generatedAt": "2026-10-30T07:13:29.951Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 20a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואליבא דב\"ש</strong> - דכשעלתה לארץ והיתה עושה ל' יום כב\"ש נטמאת בטומאת מת וסתרה את הכל ועשתה ז' שנים אחרים כבתחלה:"
+  },
+  "Rashi on Nazir 20a:2:3": {
+    "dependsOn": [
+      "Rashi on Nazir 20a:2:1",
+      "Rashi on Nazir 20a:2:2"
+    ],
+    "generatedAt": "2026-10-30T07:14:18.115Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 20a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או דלמא שלא נטמאת</strong> - אלא בשביל שבאת בארץ העמים ועלתה לא\"י עשתה ז' שנים כבתחלה ואליבא דב\"ה:"
+  },
+  "Rashi on Nazir 20a:3:1": {
+    "dependsOn": [
+      "Nazir 20a:3",
+      "Rashi on Nazir 20a:2:1",
+      "Rashi on Nazir 20a:2:2",
+      "Rashi on Nazir 20a:2:3"
+    ],
+    "generatedAt": "2026-10-30T07:19:05.632Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 20a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ש עלתה לארץ ואי ס\"ד כו'</strong> - ואי ס\"ד כשנטמאת ואליבא דב\"ש אי הכי י\"ד שנה ול' יום מיבעיא ליה שהרי בתוך ל' נטמאת וסתרה כל שלמפרע ז' שנה ול' יום א\"כ ז' שנים ול' יום היה לה למנות תחתיהן אלא מדלא תני הכי אלא י\"ד שנה ש\"מ דבלא נטמאת מיירי ר' יהודה ואליבא דב\"ה. ע\"א איבעיא להו הא דא\"ר יהודה לא היתה נזירה אלא י\"ד שנה כשנטמאת עוד טומאה אחרת בסוף שבעה ראשונים אבל לא יום מלאת ועדיין יש לה יום אחד או ב' מן הז' שנים ולבסוף ז' שנים עלתה לארץ ומנתה ז' שנים אחרות שהרי סותרת ז' שנים ראשונים לד\"ה דהא נטמאת הרי י\"ד שנה ולהכי לא אמרי ב\"ש דצריכה למנות ל' יום בארץ דהא סגי לה באותן ז' שנים שהיא מונה בארץ תא שמע עלתה לארץ כו' ואי ס\"ד כשנטמאת ואליבא דב\"ש דנטמאת בסוף ז' ראשונים וחזרה ונטמאת בסוף י\"ד כדאמר ת\"ק אי הכי י\"ד שנה ול' יום איבעי ליה לרבי יהודה למימר דכיון שנטמאת בסוף י\"ד דיום מלאת היתה צריכה למנות עוד ל' דהא ס\"ל דכי נטמאת ביום מלאת מונה ל' תניא נמי הכי דלר' יהודה אית ליה דכי נטמאת ביום מלאת מונה ל' וכיון דס\"ל הכי ודאי הא דא\"ר יהודה לא היתה נזירה אלא י\"ד שנה בשלא נטמאת וקא פליג אתנא קמא דסבירא ליה לרבי יהודה דלא נטמאת כלל אלא לסוף שבע שנים עלתה לארץ והורוה שתהא נזירה עוד שבע שנים. ובלשון הזה דן ר\"א ב\"ר יצחק הלוי לפני רבינו וקבלה <span class=\"parenthesized\">(כ\"ל ז\"ה גליו\"ן)</span>:"
+  },
+  "Rashi on Nazir 20a:6:1": {
+    "dependsOn": [
+      "Rashi on Nazir 20a:6:2",
+      "Rashi on Nazir 20a:6:3"
+    ],
+    "generatedAt": "2026-10-30T07:23:29.604Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 20a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כת אחת</strong> - אחד אומר שתי שנים קיבל עליו נזירות ואחד אומר חמש שנים:"
+  },
+  "Rashi on Nazir 20a:6:2": {
+    "dependsOn": [
+      "Rashi on Nazir 20a:6:1",
+      "Rashi on Nazir 20a:6:3"
+    ],
+    "generatedAt": "2026-10-30T07:24:16.366Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 20a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שב\"ש אומרים נחלקה העדות</strong> - הואיל ואין שם ב' עדים על ב' שנים:"
+  },
+  "Rashi on Nazir 20a:6:3": {
+    "dependsOn": [
+      "Rashi on Nazir 20a:6:1",
+      "Rashi on Nazir 20a:6:2"
+    ],
+    "generatedAt": "2026-10-30T07:25:03.165Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 20a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וב\"ה אומרים</strong> - מ\"מ שניהם מעידים על ב' שנים ויש בכלל חמש שתים ולא נחלקה עדותן אבל בשני כיתי עדים אחת אומרת שתים ואחת אומרת חמש דברי הכל יש בכלל חמש שתים:"
+  },
+  "Rashi on Nazir 20a:7:1": {
+    "dependsOn": [
+      "Nazir 20a:7",
+      "Rashi on Nazir 20a:7:2",
+      "Rashi on Nazir 20a:7:3"
+    ],
+    "generatedAt": "2026-10-30T07:26:34.277Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 20a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רב הכל מודים במונה</strong> - שנחלקה עדותן:"
+  },
+  "Rashi on Nazir 20a:7:2": {
+    "dependsOn": [
+      "Rashi on Nazir 20a:7:1",
+      "Rashi on Nazir 20a:7:3",
+      "Nazir 20a:6"
+    ],
+    "generatedAt": "2026-10-30T07:27:16.307Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 20a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי קאמר אילימא באחד אומר חמש ולא שתים ואחד אומר שתים ולא חמש</strong> - פשיטא דנחלקה עדותן דהא קא מכחשי אהדדי:"
+  },
+  "Rashi on Nazir 20a:7:3": {
+    "dependsOn": [
+      "Rashi on Nazir 20a:7:1",
+      "Rashi on Nazir 20a:7:2",
+      "Rashi on Nazir 20a:6:1",
+      "Rashi on Nazir 20a:6:2",
+      "Rashi on Nazir 20a:6:3",
+      "Rashi on Nazir 19b:7:1",
+      "Rashi on Nazir 19b:7:2"
+    ],
+    "generatedAt": "2026-10-30T07:28:20.766Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 20a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא</strong> - כגון שהאחד אומר אחת שתים והאחד אומר שלש ארבע חמש:"
+  },
+  "Tosafot on Nazir 20a:1:1": {
+    "dependsOn": [
+      "Nazir 20a:1",
+      "Rashi on Nazir 20a:1:1",
+      "Rashi on Nazir 20a:1:2"
+    ],
+    "generatedAt": "2026-10-30T07:09:20.379Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 20a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לימא בהא קמיפלגי דב\"ש סברי ארץ העמים משום גושא גזרו וב\"ה סברי משום אוירא גזרו</strong> - אית ספרים דגרסי הכי דב\"ש סברי ארץ העמים משום גושא גזרו עליה ולא על אוירא ומותר ליכנס בה בשידה תיבה ומגדל וב\"ה סברי אפילו על אוירא גזרו ומש\"ה החמירו לסתור הכל וקשה לגירסא זו דמאי טעמא דב\"ש דנהי דלא גזרו כי אם משום גושא מ\"מ לסתור הכל מידי דהוה אבית הקברות דאינו מטמא באויר ואפ\"ה סותר הכל לכן נראה דגרסינן איפכא ב\"ש סברי משום אוירא גזרו והחמירו בארץ העמים וב\"ה סברי משום גושא גזרו וא\"ת והשתא נמי מאי טעמא דב\"ש אטו משום דהחמירו בה יותר מקבר לא יסתור אלא ל' וי\"ל דאין הכי נמי דכיון דהחמירו בה לגזור על אוירא גלוי לכל דאותה טומאה אינה אלא מדרבנן ולכך סגי לן דיסתור שלשים יום דלא מיחלפא בטומאה דאורייתא וב\"ה סברי משום גושא גזרו וכיון דדינה כקבר צריך שיסתור הכל ומשום דמיחלפא ארץ העמים בקברות וכענין סברא זו איכא בפ' כהן גדול <span class=\"parenthesized\">(לקמן נזיר דף נד:)</span> דקאמר אי משום אוירא ל\"ל הזאה אבל אי משום גושא ניחא דטעמא דהזאה כשאר טומאות ולפ\"ז ה\"ג לא דכ\"ע משום אוירא גזרו ולכך ניחא לב\"ש דלא קניס אלא ל' יום וב\"ה סברי אע\"ג דגלוי לכל דטומאה דרבנן הוא ואינה כשאר אהל קנסינן ליה בתחילת נזירות ובקנסא הוא דפליגי:"
+  },
+  "Tosafot on Nazir 20a:2:1": {
+    "dependsOn": [
+      "Nazir 20a:2",
+      "Tosafot on Nazir 20a:1:1",
+      "Tosafot on Nazir 20a:3:1",
+      "Rashi on Nazir 19b:9:1",
+      "Rashi on Nazir 20a:2:1",
+      "Rashi on Nazir 2a:1:1"
+    ],
+    "generatedAt": "2026-10-30T07:16:28.946Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 20a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשנטמאת ואליבא דב\"ש</strong> - [אמר] רבי יהודה דהוצרכה למנות ל' יום בא\"י ונטמאה בסוף ל' יום בא\"י ומנתה עוד ז' שנים שהרי הוצרכה לסתור כל נזירות ונמצא דלר' יהודה היתה י\"ד שנים ול' יום והיינו דוקא לב\"ש דאין צריך למנות בא\"י רק ל' יום לבד דאי לב\"ה זקוקה לחזור ולמנות בא\"י ז' שנים אחרים אי נטמאת בסוף מנין כנטמאת דלעיל היה כך שנטמאה בסוף מנין של הארץ וא\"כ היתה צריכה להא נזירות כ\"א שנה או דלמא בשלא נטמאת ודר' יהודה אליבא דב\"ה דוקא דלב\"ש לא הוצרכה לי\"ד שנים ובז' שנים ול' יום סגי:"
+  },
+  "Tosafot on Nazir 20a:3:1": {
+    "dependsOn": [
+      "Nazir 20a:3",
+      "Nazir 20a:1",
+      "Rashi on Nazir 20a:3:1",
+      "Tosafot on Nazir 20a:1:1",
+      "Tosafot on Nazir 20a:2:1",
+      "Tosafot on Nazir 19b:7:1",
+      "Tosafot on Nazir 19b:8:1",
+      "Tosafot on Nazir 18a:1:1",
+      "Tosafot on Nazir 19a:1:1"
+    ],
+    "generatedAt": "2026-10-30T07:21:32.606Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 20a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תא שמע עלתה לא\"י וכו' ואי ס\"ד בנטמאת ואליבא דב\"ש אי הכי ר' יהודה אומר לא היתה נזירה אלא י\"ד שנה י\"ד שנה ול' יום מיבעי ליה</strong> - ולא גרסינן מה שכתוב בספרים ועוד מתניתין וא\"ת ודלמא ל' יום היו מובלעים בז' שנים הראשונים כגון שעשתה בחו\"ל ז' שנים חסר חדש ושלשים יום דקנסא בארץ [הרי] ז' שנים ולא יותר ונטמאה בסוף ל' יום של הקנס ועשתה עוד ז' שנים הרי י\"ד בין הכל ועוד קשה למה לו להאריך דברי ת\"ק לא יביא אלא דברי ר' יהודה לדקדק מהם וי\"ל דמש\"ה מייתי דברי ת\"ק לאוכוחי דלת\"ק לא מיירי בהבלעה דקתני ולבסוף שבע שנים נטמאת ונמצאת נזירה כ\"א שנה <span class=\"parenthesized\">(ול' יום)</span> [א\"כ] גם דברי ר' יהודה לא מיירי בהבלעה וא\"כ י\"ד שנים ושלשים יום מיבעי ליה:"
+  },
+  "Tosafot on Nazir 20a:5:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 20a:5:1"
+    ],
+    "generatedAt": "2026-10-30T07:22:48.932Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 20a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי שהיו שתי כתי עדים מעידות אותו אלו מעידין שנדר שני נזירות ואלו מעידין שנדר חמש נחלקה עדותן</strong> - ואין כאן נזירות כלל וא\"ת היכי דמי אם שתק הנודר שתיקה כהודאה דמיא וי\"ל שהנודר מכחיש כל אחת ואחת דאי מודה לאחת למה לא יהיה כהודאתו א\"נ באומר איני יודע והשתא צריך לידון לפי העדות א\"נ כששותק ובאו שתי הכיתות יחד דלא הוי שתיקותיה כהודאה דלאו מודה הוא דאמר מה לי להכחישן הא שתיהן מכחישין זה את זה וב\"ה אומרים יש בכלל חמש שתים [ומונה] ב' דהוי כאילו אמרו שתיהן שתים נדרת:"
+  },
+  "Tosafot on Nazir 20a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T07:25:41.096Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 20a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתניתין</strong> - דקתני דפליגי ב\"ש וב\"ה בשתי כתי עדות [דלא כהאי] תנא דר' ישמעאל:"
+  },
+  "Tosafot on Nazir 20a:7:1": {
+    "dependsOn": [
+      "Nazir 20a:7",
+      "Rashi on Nazir 20a:7:1",
+      "Rashi on Nazir 20a:7:2",
+      "Rashi on Nazir 20a:7:3",
+      "Tosafot on Nazir 20a:7:2"
+    ],
+    "generatedAt": "2026-10-30T07:29:32.181Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 20a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רב הכל מודים במונה</strong> - שנחלקה העדות לרבי ישמעאל דאמר דפליגי בית שמאי ובית הלל בכת אחת היינו כשאומר אחד שתים ואחד אומר חמש אבל אם מונה כדמסיק ואזיל נחלקה העדות:"
+  },
+  "Tosafot on Nazir 20a:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T07:31:27.149Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 20a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי קאמר</strong> - כלומר והיכי דמי מונה דקאמר אילימא דקא מכחשי אהדדי להדיא כדקאמר חמש ולא שתים כו' פשיטא דנחלקה עדותן ומאי קא משמע לן רב אלא אחד אומר אחת ושתים ואחד אומר שלש וארבע וחמש ואינם מכחישים בפירוש זה את זה וקמ\"ל רב דכיון דכל חד וחד נחת למניינא שזה אינו אומר שתים בבת אחת אלא אומר אחת ושתים וזה ג' וארבע וה' ולא אחת ושתים כאילו אמר לא אחת ושתים נדר אלא של שלש וארבע וה' וזה שאמר אחת ושתים כאילו אומר ולא נדר שלש וארבע וחמש:"
+  }
+}

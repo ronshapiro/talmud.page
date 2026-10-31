@@ -1,4 +1,49 @@
 {
+  "Rashi on Nazir 11b:10:1": {
+    "dependsOn": [
+      "Rashi on Nazir 11b:10:2",
+      "Rashi on Nazir 11b:8:1",
+      "Rashi on Nazir 11b:8:2",
+      "Rashi on Nazir 11a:1:1",
+      "Rashi on Nazir 11b:4:1",
+      "Rashi on Nazir 11b:4:2"
+    ],
+    "generatedAt": "2026-10-29T20:21:28.317Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 11b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וממאי דהכי הוא</strong> - כדקאמרת דואני אפלגא דדיבוריה קאי דלמא אכוליה דיבוריה קאי ואי אמרת לי כיון דאני אכוליה דיבוריה משמע עלי למה לי איהו ודאי לא מיצטריך אלא פירושי קמפרש למילתא דמשמע כמו דאמר עלי בהא מילתא:"
+  },
+  "Rashi on Nazir 11b:10:2": {
+    "dependsOn": [
+      "Rashi on Nazir 11b:10:1"
+    ],
+    "generatedAt": "2026-10-29T20:22:14.621Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 11b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאי לא תימא הכי</strong> - דפירושי קא מפרש לה אלא דואני קאי אדיבורא דרישא ועלי אדיבורא דסיפא סיפא דמתניתין דקתני הרי עלי לגלח כו' התם למה לי כו':"
+  },
+  "Rashi on Nazir 11b:11:1": {
+    "dependsOn": [
+      "Nazir 11b:11",
+      "Rashi on Nazir 11b:10:1",
+      "Rashi on Nazir 11b:10:2",
+      "Steinsaltz on Nazir 11b:11",
+      "Tosafot on Nazir 11b:11:1"
+    ],
+    "generatedAt": "2026-10-29T20:26:20.059Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 11b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי אמרת בשלמא רישא</strong> - דתני ועלי צריכא לך למימר משום דקא מקבל בה בדיבורה <span class=\"parenthesized\">(דסיפא)</span> אהכי תנא בסיפא אידך מתניתין עלי דלא צריך אלא אי אמרת דעלי דרישא לא צריכא דהא קאי ואני אכוליה דיבוריה השתא איכא למימר מי עבידת כי הא מילתא למיתני תנא עלי ברישא דלא צריכא וסיפא דלא צריכא אלא לאו שמע מינה ואני אפלגא דדיבוריה קאי שמע מינה:"
+  },
   "Rashi on Nazir 11b:1:1": {
     "dependsOn": [
       "Nazir 11b:1",
@@ -122,6 +167,91 @@
       "Rashi on Nazir 11b:8:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">איבעיא להו</strong> - אמר הריני נזיר ועלי לגלח נזיר ושמע חבירו ואמר ואני ולא אמר תו מידי:"
+  },
+  "Rashi on Nazir 11b:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T20:15:16.315Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 11b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהו</strong> - מי אמרי' האי דאמר ואני אכוליה דיבורא משמע והוי נזיר ומיחייב לגלח נזיר אחר:"
+  },
+  "Rashi on Nazir 11b:8:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T20:15:45.799Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 11b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או דלמא הא דאמר ואני אפלגא דדיבוריה משמע</strong> - דחדא מינייהו הוא דקביל עילויה או נזירות או לגלח אבל אתרוייהו לא משמע:"
+  },
+  "Rashi on Nazir 11b:8:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T20:16:18.711Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 11b:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ארישא או אסיפא</strong> - ארישא משמע ואני בנזירות כמותך או אסיפא משמע ואני אגלח נזיר כמותך:"
+  },
+  "Rashi on Nazir 11b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T20:18:01.794Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 11b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדאמר ואני ועלי</strong> - מדקתני לתרוייהו ש\"מ דהאי דאמר ואני לא קאי אלא אפלגא דיבוריה ומינה מדקאמר עלי לגלח ש\"מ ואני אתחלת דיבוריה קאי והכי משמע ואני בנזירות כמותך ועלי לגלח נזיר כמותך:"
+  },
+  "Tosafot on Nazir 11b:10:1": {
+    "dependsOn": [
+      "Nazir 11b:10",
+      "Rashi on Nazir 11b:10:1",
+      "Rashi on Nazir 11b:10:2",
+      "Tosafot on Nazir 11b:10:2",
+      "Tosafot on Nazir 11b:8:1",
+      "Nazir 11b:4",
+      "Mishnah Nazir 2:5",
+      "Mishnah Nazir 2:6"
+    ],
+    "generatedAt": "2026-10-29T20:24:13.269Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 11b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעולם ואני אכוליה דיבוריה משמע ואי משום ועלי מאי קאמר ועלי בהך מילתא</strong> - כלומר ומה שקבלתי כבר נזירות תגלחת לאחר כמו דרך בני אדם לכפול <span class=\"parenthesized\">(על)</span> לשונן והוא הדין דאם לא אמר ועלי דמחייב בנזיר ותגלחת אדיבור קמא:"
+  },
+  "Tosafot on Nazir 11b:10:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 11b:10:1",
+      "Tosafot on Nazir 11b:10:2"
+    ],
+    "generatedAt": "2026-10-29T20:24:48.172Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 11b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושמע חבירו ואמר ואני ועלי לגלח חצי נזיר מי איכא תרתי מילי</strong> - והרי הראשון לא קבל עליו אלא דבר אחד:"
+  },
+  "Tosafot on Nazir 11b:11:1": {
+    "dependsOn": [
+      "Rashi on Nazir 11b:11:1",
+      "Nazir 11b:11"
+    ],
+    "generatedAt": "2026-10-29T20:27:17.195Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 11b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום רישא דצריכא</strong> - דאיצטריך למיתני ועלי לאשמועינן דואני לא קאי אלא אפלגא דדיבוריה ותנא סיפא דעלי אע\"ג דלא צריכא אטו רישא:"
   },
   "Tosafot on Nazir 11b:2:1": {
     "dependsOn": [
@@ -341,5 +471,48 @@
       "Tosafot on Nazir 11b:7:3"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">ואם לאו</strong> - שאין להם פקחות זה אלא כל אחד הביא קרבן לעצמו צריך לגלח לנזיר אחר ולהביא קרבנותיו תחתיו:"
+  },
+  "Tosafot on Nazir 11b:8:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 11b:8:1",
+      "Nazir 11b:7",
+      "Rashi on Nazir 11b:8:1",
+      "Rashi on Nazir 11b:8:2"
+    ],
+    "generatedAt": "2026-10-29T20:17:30.932Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 11b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושמע חבירו ואמר ואני</strong> - ולא [אמר] עוד [מהו] על כוליה דיבור של הראשון משמע וחייב השני להיות נזיר ולגלח או דלמא על פלגיה דיבורא משמע ולא קבל עליו השני אלא או נזירות או תגלחת לאחר:"
+  },
+  "Tosafot on Nazir 11b:9:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 11b:9:1",
+      "Tosafot on Nazir 11b:9:2",
+      "Nazir 11b:9",
+      "Rashi on Nazir 11b:9:1"
+    ],
+    "generatedAt": "2026-10-29T20:19:20.236Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 11b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדקאמר ואני ועלי ש\"מ</strong> - אם לא אמר שני הדבורים דפלגא דדיבור' משמע:"
+  },
+  "Tosafot on Nazir 11b:9:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 11b:9:1",
+      "Nazir 11b:9"
+    ],
+    "generatedAt": "2026-10-29T20:20:12.627Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 11b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומינה</strong> - כלומר גם זה תיפשוט ממתניתין מדקאמר ועלי לגלח ש\"מ ואני על תחילת דיבורו משמע:"
   }
 }

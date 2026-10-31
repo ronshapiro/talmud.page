@@ -1,0 +1,365 @@
+{
+  "Rashi on Nazir 16a:1:1": {
+    "dependsOn": [
+      "Nazir 16a:1",
+      "Rashi on Nazir 16a:1:1",
+      "Tosafot on Nazir 16a:1:1"
+    ],
+    "generatedAt": "2026-10-30T01:45:56.307Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 16a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמר ליה</strong> - רבי יוחנן רבי יוסי קאי כוותיך:"
+  },
+  "Rashi on Nazir 16a:2:1": {
+    "dependsOn": [
+      "Nazir 16a:2",
+      "Rashi on Nazir 16a:1:1",
+      "Rashi on Nazir 16a:2:2",
+      "Rashi on Nazir 16a:2:3",
+      "Rashi on Nazir 16a:2:4",
+      "Rashi on Nazir 16a:2:5"
+    ],
+    "generatedAt": "2026-10-30T01:48:15.788Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 16a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי יוסי מכדי סבר מקצת היום ככולו</strong> - דכל האי דקא משנינן לעיל דמכאן ולהבא מטמא שינויי דחיקי נינהו ומיהו שמעתין איתא כרב:"
+  },
+  "Rashi on Nazir 16a:2:2": {
+    "dependsOn": [
+      "Rashi on Nazir 16a:2:1",
+      "Rashi on Nazir 16a:2:2",
+      "Rashi on Nazir 16a:2:3",
+      "Rashi on Nazir 16a:2:4",
+      "Rashi on Nazir 16a:2:5",
+      "Versions on Nazir 16a:2:1",
+      "Maharsha on Nazir 16a:2:1",
+      "Steinsaltz on Nazir 16a:2",
+      "Tosafot on Nazir 16a:2:1",
+      "Rashi on Pesachim 81a:12:1"
+    ],
+    "generatedAt": "2026-10-30T01:51:48.967Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 16a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זבה גמורה</strong> - דבעינן ג' ימים רצופים כדאמר מי תלה הכתוב את הזבה בימים היכי משכחת לה:"
+  },
+  "Rashi on Nazir 16a:2:3": {
+    "dependsOn": [
+      "Rashi on Nazir 16a:2:1",
+      "Rashi on Nazir 16a:2:2",
+      "Rashi on Nazir 16a:2:4",
+      "Rashi on Nazir 16a:2:5",
+      "Tosafot on Nazir 16a:2:1",
+      "Rashi on Pesachim 81a:12:1"
+    ],
+    "generatedAt": "2026-10-30T01:56:00.431Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 16a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא כיון דחזיא בפלגיה דיומא</strong> - ביום שני מחצות ואילך אידך פלגא דמבקר עד חצות עולה לה לשימור כאילו נשמר יום אחד בטהרה והוה לה הפסק: ע\"א ור' יוסי מכדי שומרת יום כנגד יום כיון דקאמר דטעמא הוי משום דמקצת היום ככולו וכך שמענו כאן מפ\"י המור\"ה אבל בכיצד צולין במסכת פסחים שמעינן דמכאן ולהבא קמיבעיא לן דלר' יוסי זבה גמורה היכי משכחת לה ולא מפ\"י המור\"ה:"
+  },
+  "Rashi on Nazir 16a:2:4": {
+    "dependsOn": [
+      "Rashi on Nazir 16a:2:3",
+      "Rashi on Nazir 16a:2:5",
+      "Rashi on Nazir 16a:2:4"
+    ],
+    "generatedAt": "2026-10-30T01:57:08.587Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 16a:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איבעית אימא בשופעת</strong> - כל היום [תלתא יומי] בהדי הדדי:"
+  },
+  "Rashi on Nazir 16a:2:5": {
+    "dependsOn": [
+      "Rashi on Nazir 16a:2:1",
+      "Rashi on Nazir 16a:2:2",
+      "Rashi on Nazir 16a:2:3",
+      "Rashi on Nazir 16a:2:4",
+      "Tosafot on Nazir 16a:2:1",
+      "Tosafot on Nazir 16a:2:2",
+      "Steinsaltz on Nazir 16a:2"
+    ],
+    "generatedAt": "2026-10-30T01:58:10.799Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 16a:2:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיבעית אימא</strong> - שלשה יומי בין השמשות סמוך לשקיעת החמה דכי ראתה בשבת אחר שקיעת החמה הוי טמאה כל יום ראשון וכי חזרה וראתה ביום ראשון שנית סמוך לשקיעת החמה הויא טמאה כל יום שני וכן שלישי דלא הויא שהות דטהרה ביני וביני כלל ולא הוי סליק למניינא דשומרת יום כנגד יום דהא לא הואי שהות:"
+  },
+  "Rashi on Nazir 16a:4:1": {
+    "dependsOn": [
+      "Rashi on Nazir 5b:5:4"
+    ],
+    "generatedAt": "2026-10-30T02:04:44.484Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 16a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי שאמר הריני נזיר מגלח יום שלשים ואחד</strong> - לרב מתנא כדאית ליה דאנזירות סתם קאי ואין נזירות פחות מל' יום ולבר פדא כדאית ליה דמוקי לה כגון דנעשה כאומר שלימים וכולה מתני' הכי מפורש בפ\"ק לרב מתנא כדאית ליה ולבר פדא כדאית ליה:"
+  },
+  "Rashi on Nazir 16a:7:1": {
+    "dependsOn": [
+      "Nazir 6a:6",
+      "Nazir 6a:7",
+      "Rashi on Nazir 6a:7:1",
+      "Nazir 6a:8",
+      "Nazir 6a:9",
+      "Nazir 6a:10",
+      "Nazir 6a:11",
+      "Nazir 6a:12",
+      "Nazir 6b:1",
+      "Nazir 6b:2",
+      "Nazir 6b:3",
+      "Nazir 6b:4",
+      "Nazir 6b:5",
+      "Nazir 6b:6",
+      "Nazir 6b:7",
+      "Nazir 6b:8",
+      "Rashi on Nazir 6b:1:1",
+      "Rashi on Nazir 6b:1:2",
+      "Rashi on Nazir 6b:1:3"
+    ],
+    "generatedAt": "2026-10-30T02:14:05.148Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 16a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר\"א אומר אינו סותר אלא שבעה</strong> - כדי שיביא קרבנו בטהרה וכדפרשינן בפרק קמא לבר פדא כדאית ליה דקסבר ר' אליעזר אחר מלאת הוא שאין נזירות אלא כ\"ט ולכך אינו צריך לסתור אלא ז' וכדאמרינן נמי קים להו לרבנן דאין תגלחת כדי לכוף ראשו לעיקרו בפחות מז' יום ולרב מתנא כדאית ליה דטעמא דר' אליעזר משום דמקצת היום ככולו:"
+  },
+  "Tosafot on Nazir 16a:1:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 16a:1:1"
+    ],
+    "generatedAt": "2026-10-30T01:46:45.423Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 16a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמר ליה</strong> - פי' ר' אושעיא לר'יוחנן רבי יוסי סבר כוותך השתא מסיק דרבי אושעיא ס\"ל אליבא דר' יוסי דמטמא למפרע היינו מדרבנן."
+  },
+  "Tosafot on Nazir 16a:2:1": {
+    "dependsOn": [
+      "Rashi on Nazir 16a:2:1",
+      "Rashi on Nazir 16a:2:2",
+      "Rashi on Nazir 16a:2:3",
+      "Rashi on Nazir 16a:2:4",
+      "Rashi on Nazir 16a:2:5",
+      "Tosafot on Pesachim 81a:13:1",
+      "Rashi on Pesachim 81a:12:1",
+      "Rosh Hashanah 10a:7",
+      "Rashi on Rosh Hashanah 10a:7:1",
+      "Tosafot on Nazir 16a:2:2",
+      "Maharsha on Nazir 16a:2:1",
+      "Chidushei Halachot on Pesachim 81a:1"
+    ],
+    "generatedAt": "2026-10-30T02:02:41.448Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 16a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זבה גמורה היכי משכחת לה</strong> - דמכאן ולהבא מטמינן לה וכל יומא טומאה באפי נפשה היא וכיון דחזיא היא בפלגא דיומא אידך פלגא דיומא הוא קא סליק לה לשימור ואע\"פ שלא טבלה בינתים מכי ראתה ביום י\"א וביום י\"ג וביום ט\"ו דלא הויא זבה ואע\"ג שלא טבלה בינתים דבעינן שתראה ג' ימים רצופים: הלשון ק\"ק אמאי קאמר אידך פלגא דיומא דבקיצור הוה מצי למימר אידך יומא סליק ליה שימור ובדוחק יש לפרש ראתה י\"א דכיון דחזיא ביום ב' בפלגא דיומא אידך פלגא דיומא שהיה לפני שראתה סליק ליה שימור וקשה ואמאי לא משכחת לה דרואה שלשה לילות דהשתא היא טמאה בתחילת היום ו<span class=\"rashi-quotation\">פי' בקונטרס</span> בכיצד צולין <span class=\"parenthesized\">(פסחים דף פא.)</span> לפי הדברים למ\"ד מקצת היום ככולו ותחילת הלילה תהא נמי ככולה לספירה ובתחילת הלילה סליק לה שימור ואין צריך עלות השחר: ולי נראה דמשנה שלימה היא בפרק תינוקת <span class=\"parenthesized\">(נדה דף עב.)</span> ושוין ברואה יום י\"א וטבלה לערב [ושמשה] שמטמאין משכב ומושב למפרע ומוכח התם דתחילת הלילה לא הוי שימור ונראה לר\"ת דכי היכי דלר' יוסי תחילת יום הוי שימור ה\"נ ראתה בלילה סוף היום דלמחר שאינה רואה עולה לשימור דכך לי סוף היום כתחילת היום ובהכי ניחא לישנא כיון דחזאי בפלגא דיומא אידך פלגא דאותו יום עצמו בסופו הוה ליה שימור וצ\"ל דודאי בזבה גדולה לא אמר ר' יוסי דיום שלישי יהיה ממנין של ז' של טהרה דהא בפרק תינוקת <span class=\"parenthesized\">(נדה ד' סט. ושם)</span> קאמר דכותאי יום שפוסקת בו מונה אותו למנין ז' והטעם דמצינו דבסוף הספירה מקצת היום ככולו דזב וזבה טובלין ביום הילכך בזבה קטנה דתחילת הספירה מקצת היום ככולו אבל בתחילת ספירת זבה גדולה שזקוקה לספור ז' אז לא אמרי'בתחילת ספירת' ז' נקיים מקצת היום ככולו: והא דעביד ק\"ו <span class=\"parenthesized\">(ר\"ה דף י.)</span> ומה נדה שאין תחילת יום כסופו דטבלה בלילה מהני סוף יום כתחילתו דלא בעיא כ\"א ז' ימים ויום שפוסקת בו [שנה] שתחילתו עולה בסופו אינו דין שסופו עולה בתחילתו לימא זבה גדולה תוכיח דתחילת יום כסופו דטובלת ביום וסופו לאו כתחילתו אלא ודאי רבא לא עביד הקל וחומר אליבא דר' יוסי ומיהו לפירוש רש\"י ניחא דלא מצי למימר זבה תוכיח:"
+  },
+  "Tosafot on Nazir 16a:2:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 16a:2:1",
+      "Rashi on Nazir 16a:2:1",
+      "Rashi on Nazir 16a:2:2",
+      "Rashi on Nazir 16a:2:3",
+      "Rashi on Nazir 16a:2:4",
+      "Rashi on Nazir 16a:2:5"
+    ],
+    "generatedAt": "2026-10-30T02:03:40.595Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 16a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומשני דחזיא שלשה יומין סמוך לשקיעת החמה דלא הוי שהות דסליק לה למניינא</strong> - לפי [שהם] מסובבין בטומאה בתחילת היום ובסופו וליכא בהם שימור כלל וכן יום שלישי טמא בתחילתו והרי שלשה ימים רצופין טמאין דמקצת יום שלישי ככולו ואין בהן שימור בינתים:"
+  },
+  "Tosafot on Nazir 16a:4:1": {
+    "dependsOn": [
+      "Nazir 5b:11",
+      "Nazir 5b:12",
+      "Nazir 5b:13",
+      "Nazir 5a:15",
+      "Nazir 5a:16",
+      "Nazir 5a:17",
+      "Nazir 5a:18",
+      "Nazir 5a:19",
+      "Tosafot on Nazir 5a:17:1",
+      "Nazir 5b:4",
+      "Nazir 5b:5",
+      "Rashi on Nazir 16a:4:1"
+    ],
+    "generatedAt": "2026-10-30T02:08:21.084Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 16a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי שאמר הריני נזיר מגלח יום שלשים ואחד</strong> - בפרק קמא <span class=\"parenthesized\">(לעיל נזיר דף ה:)</span> מייתינן ליה ופי' רב מתנא ובר פדא כדאית להו:"
+  },
+  "Tosafot on Nazir 16a:6:1": {
+    "dependsOn": [
+      "Nazir 16a:6",
+      "Tosafot on Nazir 16a:4:1",
+      "Nazir 5b:8",
+      "Nazir 5b:9",
+      "Nazir 5b:10",
+      "Nazir 6a:5"
+    ],
+    "generatedAt": "2026-10-30T02:11:10.168Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 16a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיום ל' עולה לו מן המנין</strong> - לרב מתנא עולין למנין ימי נזירות דראשון דמדאורייתא ל' וכן למנין שני עולה לו מדאורייתא דבעינן שלשים דאורייתא ולבר פדא אין צריך למנות נזירות ראשון שכבר נשלם מיום כ\"ט ותגלחת ראשונה נעשית ביום ל' כדין תורה ודקאמר במתניתין דיום ל' עולה לו מן המנין היינו לענין נזירות שני כדי שגם תגלחת שניה תהיה ביום ל' שהרי גילח ביום [ששים] חסר אחד:"
+  },
+  "Tosafot on Nazir 16a:7:1": {
+    "dependsOn": [
+      "Nazir 16a:7"
+    ],
+    "generatedAt": "2026-10-30T02:15:11.107Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 16a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הריני נזיר נטמא יום ל' סותר הכל</strong> - לרב מתנא סותר מן התורה ומביא קרבן טומאה וחוזר ומונה שלשים יום נזירות טהרה ולבר פדא סותר הכל מדרבנן דיום כ\"ט נשלם הנזירות וסותר מדרבנן גזירה להיכא דאמר הריני נזיר ל' יום ואינו מביא קרבנות נזיר טמא:"
+  },
+  "Tosafot on Nazir 16a:7:2": {
+    "dependsOn": [
+      "Nazir 16a:7",
+      "Tosafot on Nazir 16a:7:1",
+      "Rashi on Nazir 16a:7:1",
+      "Nazir 6a:7",
+      "Nazir 6a:8",
+      "Nazir 6a:9",
+      "Nazir 6b:2"
+    ],
+    "generatedAt": "2026-10-30T02:17:12.303Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 16a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי אליעזר אומר אינו סותר אלא שבעה</strong> - לבר פדא לא גזרינן ולרב מתנא אליבא דר\"א ס\"ל מקצת היום ככולו ואפילו נטמא קודם הבאת קרבנותיו ורבנן אית להו דלא אמרי' מקצת היום ככולו אלא היכא דהביא קרבנותיו בטהרה ביום ל' דיצא כאילו הביאם ביום ל' ואחד:"
+  },
+  "Tosafot on Nazir 16a:7:3": {
+    "dependsOn": [
+      "Nazir 5b:14",
+      "Nazir 6a:1",
+      "Nazir 6a:2",
+      "Nazir 6a:3",
+      "Tosafot on Nazir 6a:7:1",
+      "Nazir 6a:8",
+      "Nazir 6b:1",
+      "Nazir 6b:2",
+      "Nazir 6b:3",
+      "Nazir 6b:4",
+      "Nazir 6b:5"
+    ],
+    "generatedAt": "2026-10-30T02:23:36.343Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 16a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הריני נזיר ל' יום נטמא יום ל' סותר את הכל</strong> - ולא פליג ר\"א לרב מתנא דאמר דסתם נזירות ל' יום והכא מיתורא דלישנא דקאמר ל' הוי כאילו אמר שלימים הילכך אפי' לר\"א דאמר דמקצת היום ככולו סותר הכל <span class=\"parenthesized\">(ולבר פדא דלית ליה מקצת היום ככולו)</span> דהכא אמר ל' הוי ממנין הנזירות כיון שפירש ל' יום וא\"ת מ\"מ אמאי סותר הכל לר\"א הא לר\"א דריש לקמן בברייתא דהריני נזיר מאה יום ונטמא יום מאה יכול יסתור הכל ת\"ל והימים הראשונים יפלו מכלל דאיכא אחרונים וזה אין לו אחרונים וה\"נ כי נטמא ביום ל' אין לו אחרונים והל\"ל דלא סתר הכל ונ\"ל דכיון דאמר ל' א\"כ יום ל' הוי יום מלאת ודרשינן וזאת תורת הנזיר ביום מלאת נטמא ביום מלאת תן לו תורת נזיר ולקמן נמי בברייתא גבי נטמא בסוף מאה לא קממעיט להו מוהימים יפלו אלא דאינו סותר כל מאה אבל שלשים יום ודאי סותר כדקתני בסמוך במתני' נטמא יום מאה דלר\"א סותר שלשים אבל ברישא כי אמר הריני נזיר סתמא דקאמר ר\"א אינו סותר אלא שבעה כי נטמא ביום שלשים לבר פדא ניחא משום דמיום כ\"ט פסק מנין נזירותו ויום שלשים אינו יום מלאת כיון דלא אמר שלשים בפירוש וגם לת\"ק דסותר אינו אלא מדרבנן לבר פדא ולא מייתי קרבן טומאה ולרב מתנא נמי דקאמר מקצת היום ככולו הילכך יום ל' אינו יום מלאת דהוי כאילו כלה כל אותו יום [כיון] דעשה מקצת בנזירות אבל בסיפא מחשב כאילו אמר שלימים לרב מתנא לא אמרינן מקצת היום ככולו הילכך הוי שפיר יום שלשים מלאת דלכך סותר לר' אליעזר מדרשא דזאת תהיה תורת הנזיר ולתנא קמא דאמר הכל סותר בנזיר סתמא לרב מתנא הוי מן התורה דהוי ממנין הנזירות ומקצת היום ככולו דאמרי רבנן היכא [דלא] נטמא: הגה\"ה ובסיפא דהריני נזיר מאה יום ונטמא יום מאה סותר [שלשים] לרבי אליעזר מדרשא דזאת תהיה וגו' וצ\"ל לרב מתנא מאי שנא מרישא כי נדר סתם ונטמא יום שלשים דחשבינן ליה לרבי אליעזר אליבא דרב מתנא כנטמא אחר מלאת ומשום מקצת היום ככולו הכי נמי כי נדר מאה יום נחשביה ליום מאה כאחר מלאת דנימא מקצת היום ככולו <span class=\"parenthesized\">(הריני נזיר מאה דליכא יתור)</span> ותירצו התוספות לעיל <span class=\"parenthesized\">(נזיר דף ו:)</span> דמיירי דאמר הריני נזיר מאה יום שלימים ובזה ניחא דהשתא ליכא למימר מקצת היום ככולו בסיפא והסוגיא מתיישבת בפ\"ק <span class=\"parenthesized\">(שם)</span> דמייתי הך דנזיר שלשים ונטמא יום שלשים כו' סותר הכל בשלמא לרב מתנא אלא כו' א\"ל בר פדא אימא סיפא ר' אליעזר אומר אינו סותר כי אם ז' והשתא היכי מוכח לעולם אימא לך משך נזירות ל' והא דאינו סותר כי אם ז' לר\"א [משום] דאין כאן ימים אחרונים ולרב מתנא נמי מאי דוחקיה דסבר דמקצת היום ככולו לימא טעמא דר\"א משום דליכא ימים אחרונים ולמאי דפרישי' ניחא דאם היה יום שלשים ממנין הנזירות לבר פדא ולרב מתנא נמי אי לאו דאמרינן מקצת היום ככולו היה סותר הכל מדרשא דזאת תורת הנזיר ע\"ד כא\"ן הגה\"ה: זאת הגה\"ה ממורי רבינו יצחק בהר' יצחק זצ\"ל. נראה דלכ\"ע בין לרב מתנא ולבר פדא קרא דזאת תורת הנזיר וקרא דימים הראשוני' איירי במאה שלימים. נראה דלפי הגה\"ה זאת ר\"ל דלא בנזירות מועטת דרשא דזאת כדפרישי' בפ\"ק <span class=\"parenthesized\">(גם זה שם)</span> בשם מהר\"ף נ\"ע וכן דרשא דקרא דמן הימים הראשונים מכלל דאיכא אחרונים [לא] דרשינן בנזירות מועטת אלא בנזירות ארוך דלמאה יום ובהכי נמי מתיישב הסוגיא:"
+  },
+  "Tosafot on Nazir 16a:7:4": {
+    "dependsOn": [
+      "Tosafot on Nazir 16a:7:1",
+      "Tosafot on Nazir 16a:7:2",
+      "Tosafot on Nazir 16a:7:3"
+    ],
+    "generatedAt": "2026-10-30T02:24:30.620Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 16a:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הריני נזיר מאה יום נטמא יום מאה סותר הכל</strong> - שהוא אחרון של נזירותו ולרבנן לא אמרינן מקצת היום ככולו היכא דנטמא ולא הביא קרבנותיו:"
+  },
+  "Tosafot on Nazir 16a:7:5": {
+    "dependsOn": [
+      "Tosafot on Nazir 16a:7:4",
+      "Tosafot on Nazir 16a:7:5",
+      "Tosafot on Nazir 16a:7:6"
+    ],
+    "generatedAt": "2026-10-30T02:25:33.291Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 16a:7:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולרבי אליעזר אינו [סותר] אלא שלשים</strong> - מן הדין היה לו לסתור הכל לבר פדא דלא אמרינן מקצת היום ככולו ולרב מתנא נמי פרשינן בפ\"ק דאמר שלימים והיה לו לסתור את הכל אלא מדרשא דזאת תורת הנזיר גזירת הכתוב הוא דאינו סותר אלא ל' יום:"
+  },
+  "Tosafot on Nazir 16a:7:6": {
+    "dependsOn": [
+      "Nazir 16a:7",
+      "Tosafot on Nazir 16a:7:1",
+      "Tosafot on Nazir 16a:7:2",
+      "Tosafot on Nazir 16a:7:3",
+      "Tosafot on Nazir 16a:7:4",
+      "Tosafot on Nazir 16a:7:5",
+      "Tosafot on Nazir 16a:7:6",
+      "Tosafot on Nazir 16a:7:7",
+      "Tosafot on Nazir 16a:1:1",
+      "Tosafot on Nazir 16a:2:1",
+      "Tosafot on Nazir 16a:2:2",
+      "Tosafot on Nazir 15b:1:1",
+      "Tosafot on Nazir 15b:2:1",
+      "Tosafot on Nazir 15a:1:1"
+    ],
+    "generatedAt": "2026-10-30T02:27:31.547Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 16a:7:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נטמא ביום ק\"א סותר שלשים</strong> - מדרבנן בעלמא הוא ולכך אינו סותר אלא שלשים דהואיל ויום ק\"א יום תגלחת ויום הבאת קרבנותיו גזרי' אטו היכא דנטמא ביום שלשים היכא דאמר הריני נזיר סתמא והוי <span class=\"parenthesized\">(כמו)</span> יום שלשים יום תגלחת מה\"ת לרב מתנא משום דאמר מקצת היום ככולו ולבר פדא שמיום כ\"ט נשלם הנזירות וביום שלשים מגלח מה\"ת ואם נטמא ביום שלשים סותר לרב מתנא מה\"ת וגזרי' יום ק\"א אטו יום שלשים ולבר פדא ביום שלשים סותר מדרבנן אטו היכא דאמר הריני נזיר שלשים וכן נטמא ביום אחד ומאה שהוא יום תגלחת גזרו אטו יום ל' דאי לא הא לא קיימא הא שגם יום ל' הוא יום תגלחת וה\"ה לעיל הוה מצי למיתני הכי גבי הריני נזיר נטמא יום ל\"א דסותר הכל מדרבנן [אבל] ודאי נטמא יום ק\"ב אינו סותר שלשים רק [שבעה] שיטהר ויביא קרבנותיו:"
+  },
+  "Tosafot on Nazir 16a:7:7": {
+    "dependsOn": [
+      "Tosafot on Nazir 16a:7:5",
+      "Tosafot on Nazir 16a:7:6",
+      "Tosafot on Nazir 16a:7:7",
+      "Tosafot on Nazir 16a:2:1",
+      "Tosafot on Nazir 16a:2:2",
+      "Tosafot on Nazir 16a:4:1",
+      "Tosafot on Nazir 16a:6:1",
+      "Tosafot on Nazir 16a:7:1",
+      "Tosafot on Nazir 16a:7:2",
+      "Tosafot on Nazir 2a:1:1",
+      "Tosafot on Nazir 2a:1:2",
+      "Tosafot on Nazir 2a:1:3"
+    ],
+    "generatedAt": "2026-10-30T02:32:53.895Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 16a:7:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור\"א אומר אינו סותר אלא ז'</strong> - דלא גזר יום ק\"א אטו יום ל' דביום ל' גופיה לא סתר לר' אליעזר ואע\"ג דלבר פדא דאמר הריני נזיר סתמא ונטמא יום אחד דנזירותו פסק כבר מיום כ\"ט ויום ל' הוי תגלחת מה\"ת אבל יום ל' ואחד הוי יום דבתר תגלחת והוי [כמו] ק\"ב:"
+  }
+}

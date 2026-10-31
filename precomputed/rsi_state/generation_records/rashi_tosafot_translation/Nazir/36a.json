@@ -1,0 +1,256 @@
+{
+  "Rashi on Nazir 36a:1:1": {
+    "dependsOn": [
+      "Rashi on Nazir 36a:1:2"
+    ],
+    "generatedAt": "2026-10-31T02:31:13.943Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 36a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זעירי אמר אף שאור בבל תקטירו</strong> - שאילו אין בשאור כזית ועיסה משלימו לכזית שהוא חייב ועובר משום שנאמר כל שאור וכל דבש לא תקטירו <span class=\"parenthesized\">(ויקרא ב׳:י״א)</span>:"
+  },
+  "Rashi on Nazir 36a:1:2": {
+    "dependsOn": [
+      "Pesachim 42a:1",
+      "Pesachim 43a:1",
+      "Nazir 36a:1",
+      "Rashi on Nazir 36a:1:1",
+      "Rashi on Nazir 36a:1:2",
+      "Rashi on Nazir 36a:2:1",
+      "Rashi on Nazir 36a:3:1"
+    ],
+    "generatedAt": "2026-10-31T02:34:13.071Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 36a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כמאן כר\"א דדריש כל</strong> - לגבי חמץ בפ' אלו עוברין בפסח דקתני ועל עירובו בלאו דברי ר' אלעזר דכתיב כל מחמצת לא תאכלו <span class=\"parenthesized\">(שמות י״ב:כ׳)</span>:"
+  },
+  "Rashi on Nazir 36a:2:1": {
+    "dependsOn": [
+      "Rashi on Nazir 36a:1:1",
+      "Rashi on Nazir 36a:1:2",
+      "Rashi on Nazir 36a:2:2"
+    ],
+    "generatedAt": "2026-10-31T02:39:01.360Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 36a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הכי</strong> - לימא זעירי וכן נמי לענין חמץ בפסח יהא חייב על עירובו משום דכתיב ביה כל:"
+  },
+  "Rashi on Nazir 36a:2:2": {
+    "dependsOn": [
+      "Rashi on Nazir 36a:2:1"
+    ],
+    "generatedAt": "2026-10-31T02:40:47.771Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 36a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין הכי נמי</strong> - דלענין חמץ בפסח היתר מצטרף לאיסור וכר\"א והאי דקאמר גבי שאור משום לאפוקי דאביי דאמר במסכת מנחות יש הקטרה בפחות מכזית קמ\"ל מדבעינן צירוף דאין הקטרה בפחות מכזית ואין חייב עליה אלא א\"כ יהא בו כזית או שיהא היתר משלימו לכזית:"
+  },
+  "Rashi on Nazir 36a:3:1": {
+    "dependsOn": [
+      "Rashi on Nazir 36a:3:2",
+      "Rashi on Nazir 36a:3:3",
+      "Steinsaltz on Nazir 36a:3"
+    ],
+    "generatedAt": "2026-10-31T02:48:41.279Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 36a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקפה של תרומה</strong> - העשויה מיין של תרומה מקפה רוטב:"
+  },
+  "Rashi on Nazir 36a:3:2": {
+    "dependsOn": [
+      "Rashi on Nazir 36a:3:1",
+      "Rashi on Nazir 36a:3:3"
+    ],
+    "generatedAt": "2026-10-31T02:49:15.708Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 36a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והשום והשמן</strong> - שנותנין לתוכו משום תבלין הן של חולין:"
+  },
+  "Rashi on Nazir 36a:3:3": {
+    "dependsOn": [
+      "Rashi on Nazir 36a:3:1",
+      "Rashi on Nazir 36a:3:2",
+      "Nazir 36a:4",
+      "Versions on Nazir 36a:3",
+      "Tosafot on Nazir 36a:3:1",
+      "Tosafot on Nazir 36a:3:2",
+      "Mishnah Tevul Yom 2:3"
+    ],
+    "generatedAt": "2026-10-31T02:50:42.296Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 36a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונגע טבול יום במקצתן</strong> - איכא דאמרי משום ושמן של תרומה אבל לא במקפה <span class=\"parenthesized\">(דחולין)</span> דטבול יום שויוהו רבנן שני ואין שני עושה שלישי אלא בתרומה ואית דאמרי מאי במקצתן אפילו במקפה של חולין דכיון דעריבי בחד מנא דמי ליה כמאן דנגע בתרומה עצמה:"
+  },
+  "Rashi on Nazir 36a:4:1": {
+    "dependsOn": [
+      "Rashi on Nazir 36a:4:1",
+      "Rashi on Nazir 36a:4:2",
+      "Nazir 36a:3"
+    ],
+    "generatedAt": "2026-10-31T02:54:52.047Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 36a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והוינן בה אמאי פסל במקום מגעו</strong> - דאין טומאת אוכלין בפחות מכביצה:"
+  },
+  "Rashi on Nazir 36a:4:2": {
+    "dependsOn": [
+      "Rashi on Nazir 36a:4:1",
+      "Nazir 36a:4",
+      "Steinsaltz on Nazir 36a:4",
+      "Nazir 36a:5",
+      "Rashi on Nazir 36b:1:1",
+      "Tosafot on Nazir 36a:4:1",
+      "Versions on Nazir 36a:4"
+    ],
+    "generatedAt": "2026-10-31T02:57:32.035Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 36a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומה טעם</strong> - לוקה עליו בכזית והא ליכא שיעורא אלא משום דאמרינן היתר מצטרף לאיסור:"
+  },
+  "Tosafot on Nazir 36a:1:1": {
+    "dependsOn": [
+      "Nazir 36a:1",
+      "Rashi on Nazir 36a:1:1",
+      "Tosafot on Nazir 36a:1:2"
+    ],
+    "generatedAt": "2026-10-31T02:35:15.844Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 36a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זעירי אמר אף שאור בבל [תקטירו]</strong> - שאם הקטיר חצי זית משאור וחצי זית ממצה מצטרף משום כל שאור לא תקטירו:"
+  },
+  "Tosafot on Nazir 36a:1:2": {
+    "dependsOn": [
+      "Menachot 58a:15",
+      "Menachot 58a:16",
+      "Tosafot on Menachot 58a:16:1",
+      "Rashi on Pesachim 43b:13:1",
+      "Nazir 36a:1",
+      "Menachot 58a:17",
+      "Menachot 58a:18"
+    ],
+    "generatedAt": "2026-10-31T02:38:23.283Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 36a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כמאן כרבי אלעזר דדריש כל</strong> - בפ' אלו עוברין <span class=\"parenthesized\">(פסחים מב.)</span> כל מחמצת לא תאכלו לרבות כותח הבבלי ושכר המדי ופליגי רבנן עליו ופי' רש\"י בפ' אלו עוברין דזעירי מפרש הברייתא דפרק כל המנחות באות מצה כי כל שאור וכל דבש לא תקטירו [דתניא] התם אין לי אלא כולו מקצתו מניין ת\"ל כל עירובו מניין ת\"ל כי כל פי' אין לי אלא כל זית מקצתו מניין חצי זית מניין ת\"ל כל והיינו היתר מצטרף לאיסור ור\"ל חצי זית משאור וחצי זית ממצה וקשה לפירושו דא\"כ מפרש זעירי לברייתא כמו שמפרש אביי <span class=\"parenthesized\">(דבסתמא)</span> בפ' כל המנחות <span class=\"parenthesized\">(מנחות נח.)</span> וה\"ק לאפוקי מדאביי ועוד קשה מאי פריך כמאן כר\"א גם לרבנן יכול להיות דנהי דרבנן לא דרשי כל כי כל דרשי והכי אמר באלו עוברין <span class=\"parenthesized\">(פסחים מג:)</span> וא\"כ רבנן נמי ידרשו דרשא ראשונה במקצתו מניין דהוי פי' חצי זית שאור וחצי זית מצה מכי כל שאור דנהי דרבנן דרשא [אחרונה] לא דרשי [מכי] כל כר\"א מ\"מ דרשא [ראשונה] הפשוטה יותר דדריש ר\"א מכל רבנן דרשי לה מכי כל לכך נראה דזעירי מפרש הברייתא בפרק כל המנחות כדפירש [רבא] התם אין לי אלא כולו פירוש כל הקומץ דהיינו שני זיתים דקסבר אין קומץ פחות משני זיתים מקצתו מניין פירוש חצי הקומץ שהוא כזית ת\"ל כל עירובו מניין דהיינו חצי זית דשאור וחצי זית דמצה דהיינו היתר מצטרף לאיסור ת\"ל כי כל והשתא אתי שפיר דאמר כמאן כר\"א דדריש כל אמרי' שפיר דכל אתא לחצי הקומץ דמייתי ליה כי כל לעירובו דהיינו היתר מצטרף לאיסור כדפרישית אבל לרבנן דלא דרשי כל [רק כי כל] למקצתו דהיינו לחצי הקומץ שהוא זית שלם אבל עירובו דהיינו היתר מצטרף לאיסור צירוף לא שמעי' כלל וא\"ת לאביי דדריש מקצתו מנין היינו חצי זית וס\"ל הקטרה בפחות מכזית מאי קאמר עירובו מנין והא לאביי א\"צ עירובו לצרף היתר <span class=\"parenthesized\">(מצטרף)</span> לאיסור. דבאיסור לחודיה מחייב כדפרישית וי\"ל דהוא יפרש עירובו מניין דהיינו מחוי דברישא דברייתא מרבה חצי זית בעיניה ובסיפא אפי' אינו בעיניה אלא [מחוי] שאינו ניכר וכן פה\"ק במנחות:"
+  },
+  "Tosafot on Nazir 36a:2:1": {
+    "dependsOn": [
+      "Nazir 36a:2",
+      "Tosafot on Nazir 36a:1:1",
+      "Tosafot on Nazir 36a:1:2",
+      "Tosafot on Nazir 36a:2:2",
+      "Tosafot on Nazir 35b:12:1"
+    ],
+    "generatedAt": "2026-10-31T02:43:59.036Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 36a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הכי לענין חמץ בפסח</strong> - דלר\"א נמי היתר מצטרף לאיסור דהתם נמי כתיב כל מחמצת לא תאכלו:"
+  },
+  "Tosafot on Nazir 36a:2:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 36a:2:1",
+      "Tosafot on Nazir 36a:1:1",
+      "Tosafot on Nazir 36a:1:2"
+    ],
+    "generatedAt": "2026-10-31T02:47:31.135Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 36a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אה\"נ אלא לאפוקי מדאביי</strong> - ה\"ק דשאור עדיפא לאשמועינן דלא כאביי והא קמ\"ל דאין הקטרה כו' ואי איכא צירוף אין ואי לא לא והכי מפרש ליה לברייתא דפרק כל המנחות אין לי אלא כולו פי' כזית מקצתו פי' חצי זית דהכי אית ליה עירובו מניין דהיינו מועט שאור מעורב דס\"ד אמינא הואיל ומעורב בהיתר יתבטל ת\"ל כי כל ולדידיה אין שייך צירוף דאף בפחות מכזית שאור חייב וא\"ת לאביי דדריש מכל שאור לפחות מכזית אמאי לא דריש נמי חמץ לחייב עליו בפחות מכזית לר' אלעזר וי\"ל דשאני גבי חמץ דכתיב ביה אכילה ואין אכילה בפחות מכזית:"
+  },
+  "Tosafot on Nazir 36a:3:1": {
+    "dependsOn": [
+      "Nazir 36a:3",
+      "Rashi on Nazir 36a:3:1",
+      "Tosafot on Nazir 36a:3:2",
+      "Tosafot on Nazir 35b:12:2",
+      "Tosafot on Nazir 35a:1:1"
+    ],
+    "generatedAt": "2026-10-31T02:52:31.444Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 36a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להא שמעתא</strong> - דר' אבהו דבשאר איסורין אין היתר מצטרף לאיסור:"
+  },
+  "Tosafot on Nazir 36a:3:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 36a:3:1",
+      "Rashi on Nazir 36a:3:1",
+      "Rashi on Nazir 36a:3:2",
+      "Rashi on Nazir 36a:3:3"
+    ],
+    "generatedAt": "2026-10-31T02:54:02.570Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 36a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המקפה של תרומה</strong> - תבשיל עב וקפוי כעין דייסא והשמן שנתון בו תבלין הוי חולין שנגע טבול יום במקצת פסל את כולו דהוא עיקר והיא של תרומה וטבול יום פוסל התרומה המקפה של חולין והשום והשמן של תרומה ונגע טבול יום במקצתו לא פסל אלא מקום מגעו בלבד:"
+  },
+  "Tosafot on Nazir 36a:4:1": {
+    "dependsOn": [
+      "Rashi on Nazir 36a:4:1",
+      "Rashi on Nazir 36a:4:2",
+      "Nazir 36a:3",
+      "Tosafot on Nazir 36a:2:1",
+      "Tosafot on Nazir 36a:3:1"
+    ],
+    "generatedAt": "2026-10-31T02:59:18.784Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 36a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג רש\"י מקום מגעו אמאי פוסל</strong> - הא בטילתו תבלין דקסבר דימוע מדרבנן הוא דאסור כלומר דמדאורייתא חד בתרי בטיל והא דתרומה בחד ומאה דרבנן הוא:"
+  },
+  "Tosafot on Nazir 36a:5:1": {
+    "dependsOn": [
+      "Nazir 36a:5"
+    ],
+    "generatedAt": "2026-10-31T03:08:12.764Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 36a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רבה בר בר חנה מדאורייתא הוא הואיל וזר לוקה עליו בכזית</strong> - משום דשם תרומה עליה [הלכך לגבי טומאה נמי שם תרומה עלה] ומיהו לא חמירא כתרומה עצמה ליפסול כולן לשון רש\"י [בפסחים] וקשה לרבינו תם דמדפריך ולבטיל ברובא משמע שהשום והשמן אינו בעין דדבר. שהוא בעין אין מתבטל ולא משמע הכי [דקתני] ונגע טבול יום במקצתו משמע דאשום והשמן קאי ולא אמקפה מדלא קתני במקצתה אם כן משמע דמיירי שהשום והשמן בעין ותו דסיפא דהך משנה במסכת טבול יום <span class=\"parenthesized\">(פ\"ב מ\"ג)</span> א\"ר יהודה אימתי בזמן שהם גוש בקערה משמע דאיירי שהוא בעין וע\"ק לריב\"א דתנן התם עיסה שנדמעת בתרומה אינו נפסל בטבול יום ר' יוסי ור\"ש אומרים נפסלת אלמא בדמע המעורב ואינו ניכר לא מפליג בין מקום מגעו לשלא מקום מגעו אלא מאן דאסר אסר בכולה ומאן דשרי בכולה שרי לכך פי' רבינו תם דאיירי שהשום והשמן מפוזרין על המקפה ונכרין ורישא במקפה של תרומה ושום ושמן כוליה חולין י\"ל דהשום והשמן הוי כידות לטומאה דבידות אוכלין אמרינן בעלמא <span class=\"parenthesized\">(חולין דף קיח.)</span> שהן מביאות את הטומאה אבל מקפה של חולין ושום ושמן של תרומה לא פסל אלא שום ושמן שנגע בו וה\"ג והוינן בה מקום. מגעו אמאי פסל הא לא הוי כביצה ובעיני רש\"י לא ישרה זאת הגירסא שבכמה מקומות פי' שאוכל מקבל טומאה אפי' בכל שהוא כדדרשי' בת\"כ אוכל יטמא מלמד שמטמא בכל שהוא יכול אף לאחרים בכל שהוא ת\"ל אשר יאכל אוכל הנאכל בבת אחת והיינו כביצה ור\"ת אומר דאסמכתא בעלמא הוא דבמס' אהלות <span class=\"parenthesized\">(פי\"ג מ\"ה)</span> תנן פחות מכביצה אוכלין וקתני סיפא זה הכלל הטמא אינו ממעט והא דדייק והא [לא] הוי כביצה צ\"ל דלאו אשמן דייק דמשקין מטמאין בפחות מרביעית אלא אשום פריך וא\"ת ומאי פריך והרי שום ושמן אחת הוא שאין מקבלין טומאה פחות מכביצה מדאורייתא מ\"מ פסלי שפיר ואע\"ג דאין מקבלין טומאה מדאורייתא מ\"מ מדרבנן מטמאי ומאי פריך הא דפסיל ר\"ל מדרבנן וי\"ל דלישנא דפסל משמע מדאורייתא: ומשני הואיל דזר לוקה עליו בכזית ולאו דוקא נקט לוקה דהא תרומת שום מדרבנן אלא הכי קאמר הואיל וזר לוקה עליו בכזית אילו היתה תרומה דאורייתא דין הוא להחשיבה ולא יתבטל אגב המקפה:"
+  }
+}

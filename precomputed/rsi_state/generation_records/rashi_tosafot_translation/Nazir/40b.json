@@ -1,0 +1,390 @@
+{
+  "Rashi on Nazir 40b:2:1": {
+    "dependsOn": [
+      "Rashi on Nazir 40b:2:2"
+    ],
+    "generatedAt": "2026-10-31T09:15:29.435Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 40b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האי תנא מעיקרא אמר ללמוד נזיר ממצורע אי אפשר שאין דנין כו'</strong> - אלמא דפשיטא ליה מילתא דמצורע הוי בתער:"
+  },
+  "Rashi on Nazir 40b:2:2": {
+    "dependsOn": [
+      "Rashi on Nazir 40b:2:1"
+    ],
+    "generatedAt": "2026-10-31T09:16:09.715Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 40b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והדר אמר ניליף מדינא</strong> - מנזיר ומלוים בהצד השוה שבהן ומדינא נמי לא מצי למילף משום דאית בה פירכא דרבא מברניש שכן אין קרבנו בדלות תאמר במצורע שכן קרבנו בדלות בעולה ויורד דכתיב ביה ואם דל הוא:"
+  },
+  "Rashi on Nazir 40b:3:1": {
+    "dependsOn": [
+      "Nazir 40b:3",
+      "Rashi on Nazir 40b:2:1",
+      "Rashi on Nazir 40b:2:2",
+      "Nazir 40a:15",
+      "Nazir 40a:11",
+      "Nazir 39b:8",
+      "Rashi on Nazir 39b:8:2",
+      "Rashi on Nazir 40b:3:2",
+      "Rashi on Nazir 40b:3:3",
+      "Rashi on Nazir 40b:3:4"
+    ],
+    "generatedAt": "2026-10-31T09:27:06.768Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 40b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ל ההיא</strong> - דקתני דללמדו ממצורע אי אפשר דמשמע דפשיטא ליה דמצורע הוי בתער אליבא דרבנן היא דגמרי לה מזקנו ופאת כדמסיק והאי דקא בעי מדינא לא אפשר משום דאית ביה למפרך כדפריכנא אליבא דר' אליעזר דגמיר לה מנזיר דלקמן:"
+  },
+  "Rashi on Nazir 40b:3:2": {
+    "dependsOn": [
+      "Rashi on Nazir 40b:3:1",
+      "Rashi on Nazir 40b:3:3"
+    ],
+    "generatedAt": "2026-10-31T09:28:05.546Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 40b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דתנן</strong> - במסכת מכות:"
+  },
+  "Rashi on Nazir 40b:3:3": {
+    "dependsOn": [
+      "Rashi on Nazir 40b:3:1",
+      "Rashi on Nazir 40b:3:2",
+      "Rashi on Nazir 40b:3:3",
+      "Rashi on Nazir 40b:3:4",
+      "Makkot 20a:11",
+      "Rashi on Makkot 20a:11:1",
+      "Makkot 20a:9",
+      "Makkot 20a:10",
+      "Nazir 40b:4",
+      "Rashi on Nazir 40b:4:1",
+      "Rashi on Nazir 40b:4:2"
+    ],
+    "generatedAt": "2026-10-31T09:29:54.055Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 40b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואינו חייב</strong> - על הקפת הראש עד שילקטנו בתער:"
+  },
+  "Rashi on Nazir 40b:3:4": {
+    "dependsOn": [
+      "Rashi on Nazir 40b:3:1",
+      "Rashi on Nazir 40b:3:2",
+      "Rashi on Nazir 40b:3:3",
+      "Rashi on Nazir 40a:2:1",
+      "Rashi on Nazir 40a:2:2",
+      "Mishnah Makkot 3:5",
+      "Nazir 40b:4",
+      "Rashi on Nazir 40b:4:1",
+      "Rashi on Nazir 40b:4:2"
+    ],
+    "generatedAt": "2026-10-31T09:31:35.368Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 40b:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר' אליעזר אומר</strong> - אפי' במלקט וברהיטני:"
+  },
+  "Rashi on Nazir 40b:4:1": {
+    "dependsOn": [
+      "Nazir 40b:4",
+      "Rashi on Nazir 40b:4:2",
+      "Rashi on Nazir 40b:3:4",
+      "Rashi on Nazir 40b:3:3"
+    ],
+    "generatedAt": "2026-10-31T09:32:48.322Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 40b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמרינן מ\"ט דרבנן</strong> - דלא מחייבי בהקפה אלא בתער:"
+  },
+  "Rashi on Nazir 40b:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T09:33:37.958Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 40b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דתניא זקנו</strong> - האמור לגבי מצורע מה ת\"ל והלא כל שערו במשמע וזקנו בכלל שערו אלא לפי שנאמר לגבי כהנים ופאת זקנם לא יגלחו יכול אפי' כהן מצורע המתגלח לא יגלח פאת זקנו ת\"ל וגילח זקנו:"
+  },
+  "Rashi on Nazir 40b:5:1": {
+    "dependsOn": [
+      "Nazir 40b:5",
+      "Rashi on Nazir 40b:5:2",
+      "Rashi on Nazir 40b:4:1",
+      "Rashi on Nazir 40b:4:2"
+    ],
+    "generatedAt": "2026-10-31T09:37:04.998Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 40b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומנלן</strong> - דהך גילוח בתער קאי דתניא ופאת זקנם:"
+  },
+  "Rashi on Nazir 40b:5:2": {
+    "dependsOn": [
+      "Rashi on Nazir 40b:5:1",
+      "Rashi on Nazir 40b:5:2",
+      "Nazir 40b:5"
+    ],
+    "generatedAt": "2026-10-31T09:40:31.240Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 40b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ל</strong> - גבי ישראל לא תשחית פאת זקנך אי לא תשחית יכול ליקטו במלקט וברהיטני יהא חייב ת\"ל ופאת זקנם לא יגלחו הא כיצד גילוח שיש בו השחתה דיבר הכתוב ואיזו הוי אומר בתער מהו גילוח דקאסר ליה רחמנא גבי הקפת הראש והשחתת פאת זקן ואישתרי ליה גבי מצורע דמותר הוא בו היינו תער: מאי משמע לן מהכא דמצורע לא הוי אלא בתער דלמא לעולם אימא לך דאפי' ליקטו במלקט וברהיטני שפיר דמי והאי דקתני זקנו מה ת\"ל דאתא לאשמועי' דאפי' גילחו בתער לא מיחייב עליה משום פאת זקנם לא יגלחו:"
+  },
+  "Rashi on Nazir 40b:8:1": {
+    "dependsOn": [
+      "Rashi on Nazir 40b:8:2",
+      "Rashi on Nazir 40b:4:1",
+      "Rashi on Nazir 40b:5:1",
+      "Nazir 40b:8",
+      "Nazir 40b:5",
+      "Rashi on Nazir 40b:8:1",
+      "Rashi on Nazir 40b:8:3",
+      "Rashi on Nazir 40b:8:4",
+      "Rashi on Nazir 40b:8:5"
+    ],
+    "generatedAt": "2026-10-31T09:46:45.603Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 40b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי ס\"ד דכי ליקטו במלקט וברהיטני שפיר דמי</strong> - ומצוה קעביד לישתוק קרא מיניה ולא ליכתוב זקנו ואמינא ליקטו במלקט וברהיטני שפיר דמי דמייתינן לה מדינא:"
+  },
+  "Rashi on Nazir 40b:8:2": {
+    "dependsOn": [
+      "Rashi on Nazir 40b:8:1",
+      "Rashi on Nazir 40b:8:2",
+      "Rashi on Nazir 40b:8:3",
+      "Rashi on Nazir 40b:8:4",
+      "Rashi on Nazir 40b:8:5"
+    ],
+    "generatedAt": "2026-10-31T09:47:24.164Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 40b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומה גבי נזיר דאיסורא קעביד</strong> - כי מגלח בתער בתוך ימי נזירות:"
+  },
+  "Rashi on Nazir 40b:8:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T09:47:55.276Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 40b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפילו הכי מיחייב</strong> - כי ליקטן במלקט וברהיטני כדאמרינן לעיל לרבות כל המעבירין:"
+  },
+  "Rashi on Nazir 40b:8:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T09:48:13.410Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 40b:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא</strong> - דכי מגלח מצוה קעביד כדכתיב וגילח את כל שערו:"
+  },
+  "Rashi on Nazir 40b:8:5": {
+    "dependsOn": [
+      "Rashi on Nazir 40b:8:1",
+      "Rashi on Nazir 40b:8:2",
+      "Rashi on Nazir 40b:8:3",
+      "Rashi on Nazir 40b:8:4",
+      "Rashi on Nazir 40b:8:5",
+      "Nazir 40b:8"
+    ],
+    "generatedAt": "2026-10-31T09:49:18.026Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 40b:8:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא כל שכן</strong> - שבכל דבר מותר לגלח ואפילו בתער:"
+  },
+  "Tosafot on Nazir 40b:1:1": {
+    "dependsOn": [
+      "Nazir 40b:1",
+      "Tosafot on Nazir 40b:2:1",
+      "Tosafot on Nazir 40b:2:2",
+      "Nazir 40a:14",
+      "Nazir 40b:3",
+      "Nazir 40b:6",
+      "Nazir 39b:7",
+      "Nazir 39b:8",
+      "Tosafot on Nazir 39b:8:1",
+      "Steinsaltz on Nazir 40b:1"
+    ],
+    "generatedAt": "2026-10-31T09:14:45.252Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 40b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין קרבנו בדלות</strong> - אלא קרבן קבוע בין עניים בין עשירים תאמר במצורע שאם עני הוא מביא צפורים וא\"כ גם לא נחמיר עליו להטעינו תער ואין להקשות לפי מה שמסקינן דיליף מצורע מקרא אחרינא שלא בנזיר דהיינו בנזיר דבסמוך ולייתי נזיר במה הצד דאיכא למיפרך שכן אינו בשאלה או שכן שכל גופו טעון תגלחת:"
+  },
+  "Tosafot on Nazir 40b:2:1": {
+    "dependsOn": [
+      "Nazir 40b:2",
+      "Tosafot on Nazir 40b:2:2",
+      "Rashi on Nazir 40b:2:1",
+      "Rashi on Nazir 40b:2:2"
+    ],
+    "generatedAt": "2026-10-31T09:17:45.918Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 40b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והאי תנא מעיקרא</strong> - בברייתא דלעיל קאמר ללמדו ממצורע אי אפשר כו' אלמא דקים ליה לתנא [תער] במצורע בלא נזיר שהרי בא נזיר ממצורע ובהך ברייתא בעי למילף מצורע דבעי תער מדינא דנזיר ולוים אלמא מצורע גופיה לא יליף אלא מנזיר ומדינא נמי לא אייתי [דקאמר] מה להצד כו' וסוף לומדו מראשו דכתיב בנזיר ומ\"מ רבי אליעזר לא ידע תער במצורע אלא מנזיר כדמפרש והולך:"
+  },
+  "Tosafot on Nazir 40b:2:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 40b:2:1",
+      "Nazir 40b:3",
+      "Tosafot on Nazir 40b:4:1",
+      "Tosafot on Nazir 40b:2:2",
+      "Rashi on Nazir 40b:3:2",
+      "Rashi on Nazir 40b:3:1",
+      "Rashi on Nazir 40b:3:3",
+      "Rashi on Nazir 40b:3:4",
+      "Tosafot on Nazir 40a:2:1",
+      "Tosafot on Nazir 40a:3:1",
+      "Tosafot on Nazir 40a:4:1"
+    ],
+    "generatedAt": "2026-10-31T09:21:04.450Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 40b:2:2"
+    ],
+    "sourceText": "דתנן בפרק בתרא דמכות <span class=\"parenthesized\">(דף כ.)</span> אינו חייב כו' לגבי פיאות דזקן תניא דאין חייבין בהשחתת פאת זקן בין כהנים בין ישראלים עד שיטלנו בתער ור\"א אמר אפי' ליקטו במלקט ורהיטני מיחייב:"
+  },
+  "Tosafot on Nazir 40b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T09:35:57.783Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 40b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומאי טעמייהו דרבנן</strong> - כלומר מהיכא נפקא לן דפשיטא להו דמצורע בתער אפילו בלא נזיר כדס\"ל דתניא זקנו מה ת\"ל במצורע כתיב והיה ביום השביעי יגלח את כל שערו את ראשו ואת זקנו וכו' והלא בכלל כל שערו הוא ולמה פרט זקנו לפי שנא' גבי כהנים ופאת זקנם לא יגלחו יכול אף מצורע כלומר כהן והוא מצורע כן שלא יכול לגלח זקנו והא דכתיב וגלח את כל שערו ע\"כ לבר מזקנו א\"נ בנמרט זקנו שאין עשה דגילוח דוחה לאו דהשחתת זקן הכהנים ועשה דקדושים דכהנים ת\"ל זקנו מיותר שנכתב במצורע לאשמועינן עשה דזקנו דחי לאו דלא יגלחו בכהנים ועשה דקדושים יהיו ואע\"פ שאין עשה . דוחה לא תעשה ועשה בעלמא הכא דחי כדאמר בריש יבמות <span class=\"parenthesized\">(דף ה.)</span> דהאי לאו ועשה שאינו שוה [בכל] הוא דהשחתת זקן אינו בנשים כדאמר פ\"ק דקדושין <span class=\"parenthesized\">(דף לה:)</span> וא\"ת ודלמא אתי למישרי לאו גרידא דלא תשחית פאת זקנך וי\"ל <span class=\"parenthesized\">(דמשער)</span> דאיכא למימר קרא סתמא כתיב בה בישראל ככהנים ועי\"ל והוא העיקר דע\"כ לרבנן ללאו גרידא דישראל לא איצטריך קרא דנפקא להו מראשו מקרא קמא דדחי עשה דמצורע לאו דהקפה דסבירא להו דהקפת כל הראש שמה הקפה כדאיתא בסמוך א\"כ זקנו לא איצטריך קרא אלא לכהנים ולאשמועינן דעשה דמצורע דחי לאו ועשה דהשחתת זקן הכהנים <span class=\"parenthesized\">(גרידא)</span> ומדאתא קרא דזקנו למישרי לו לאו דהשחתת זקן והשחתת זקן לא מחייב אלא בתער מכלל דמצורע תגלחתו אינו אלא בתער דאם לא כן זקנו למה לי:"
+  },
+  "Tosafot on Nazir 40b:5:1": {
+    "dependsOn": [
+      "Nazir 40b:5"
+    ],
+    "generatedAt": "2026-10-31T09:41:15.192Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 40b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דבתער</strong> - כלומר חיוב השחתת זקן מנא להו לרבנן דלא הוי אלא בתער דמינה ילפינן תער למצורע:"
+  },
+  "Tosafot on Nazir 40b:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T09:41:47.927Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 40b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דתניא ופאת זקנם לא יגלחו</strong> - בכהנים כתיב יכול אפי' במספרים יהא חייב ת\"ל ולא תשחית פאת זקנך בישראל כתיב ובמספרים ליכא השחתה שאינו נוטל השער מעיקרו ושרשו:"
+  },
+  "Tosafot on Nazir 40b:5:3": {
+    "dependsOn": [
+      "Tosafot on Nazir 40b:5:1",
+      "Tosafot on Nazir 40b:5:2",
+      "Nazir 40b:5"
+    ],
+    "generatedAt": "2026-10-31T09:42:41.437Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 40b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי לא תשחית יכול אפי' במלקט ורהיטני יהא חייב</strong> - שאף הם משחיתים השער מעיקרו ת\"ל ופאת זקנם לא יגלחו והם אינם קרויים גילוח שאינם רגילים לגלח בהם:"
+  },
+  "Tosafot on Nazir 40b:6:1": {
+    "dependsOn": [
+      "Nazir 40b:6"
+    ],
+    "generatedAt": "2026-10-31T09:45:28.067Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 40b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא כיצד גילוח שיש בו השחתה הוי אומר זה תער</strong> - והאי שרא רחמנא במצורע אי נמי בקידושין גמרינן פאה פאה כהנים מישראלים. ופריך ממאי דתגלחת מצורע ליכא אלא בתער דילמא אפי' במלקט ורהיטני קיים המצורע מצות גילוח וקרא דזקנו אתא לאשמועינן דאם בא לגלח [בתער] הרשות בידו שהוא [מוזהר] עליו בעלמא בפאה דזקן הכא שרי ולא מיחייב. ומשני אמרי כלומר [על כרחך] זקנו דכתיב שזקוק לגלח ולעשות בתער ולא בדבר אחר דאי ס\"ד כי עביד נמי במלקט ורהיטני שפיר דמי לשתוק קרא מיניה דאם בא [למימר] שהרשות בידו לגלח בתער פאת זקנו להא לא בעי קרא דזקנו דרשות ידעינן מק\"ו:"
+  },
+  "Tosafot on Nazir 40b:8:1": {
+    "dependsOn": [
+      "Nazir 40b:8",
+      "Rashi on Nazir 40b:8:1",
+      "Tosafot on Nazir 40b:8:1",
+      "Tosafot on Nazir 40b:8:2",
+      "Tosafot on Nazir 40b:8:3"
+    ],
+    "generatedAt": "2026-10-31T09:51:30.756Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 40b:8:1"
+    ],
+    "sourceText": "ה\"ג ומה נזיר כו' הוה מצי למפרך דכהן מצורע לא אתי שכן ריבה הכתוב [בהן] מצות יתירות וכה\"ג פריך בכל דוכתי ולכך לא לידחי עשה דמצורע לאו דכהנים ועוד מה לנזיר שכן לאו גרידא דדחי לאו דהקפה תאמר בכהנים דאיכא לאו ועשה לאו דהשחתת זקן ועשה לכ\"נ דעיקר אפירכא אחרונה סמיך דפריך מרשב\"ל:"
+  },
+  "Tosafot on Nazir 40b:8:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 40b:8:1",
+      "Tosafot on Nazir 40b:8:3",
+      "Rashi on Nazir 40b:8:1",
+      "Rashi on Nazir 40b:8:2",
+      "Tosafot on Nazir 40b:4:1"
+    ],
+    "generatedAt": "2026-10-31T09:54:08.818Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 40b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג ומה נזיר דאיסורא קעביד</strong> - ואפילו נזיר טהור חוטא קצת כדאיתא פ\"ק דנדרים <span class=\"parenthesized\">(דף י.)</span> ולעיל בפ' שלישי <span class=\"parenthesized\">(נזיר דף יט.)</span> ועוד דמנזיר טמא קא יליף שגם הוא תגלחתו כתוב בתער כדמשמע בסמוך דגמרינן טהור מטמא וטמא מטהור ואפ\"ה תגלחת מצוה דידיה דחי לאו דהקפה דסבירא ליה דהקפת כל הראש שמה הקפה ולעולם מיחייב פי' מיחייב לגלח כל ראשו ולדחות לאו דהקפת מצורע דמצוה לא כל שכן:"
+  },
+  "Tosafot on Nazir 40b:8:3": {
+    "dependsOn": [
+      "Tosafot on Nazir 40b:8:1",
+      "Tosafot on Nazir 40b:8:2"
+    ],
+    "generatedAt": "2026-10-31T09:56:51.563Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 40b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמצוה</strong> - מצות המקרא תגלחת ולא באה לו ע\"י שום איסור לכ\"ש שתגלחתו דמצוה תדחה לאו דהשחתה ואי קשה מה לנזיר שכן קרבנו טעון לחם כדפ\"ל וי\"ל דלא דמי דודאי לעיל דבעינן להטעין תער למצורע ולא שאר משחיתים פריך שפיר דמ\"ה בנזיר דין הוא שיהא טעון תער לתגלחתו שכמו כן חומרא אחרת בו שקרבנו טעון לחם אבל הכא דלא בעינן למילף להטעין תער במצורע מתגלחת דנזיר רק שהרשות יהיה בידו להעבירו בתער כמו בשאר משחיתין ולא שייכא כלל ההיא פירכא דלא בעינן למילף חומרא מנזיר אלא מכל מקום תימה הוא והא הך סוגיא לרבנן [והרי] מוכח דלרבנן פשיטא להו תער מתגלחת דמצורע מקמי דידעינן ליה בנזיר דקאמר בברייתא דלעיל ללמדו ממצורע אי אפשר כו' אלמא במצורע פשיטא להו לרבנן דטעון תער לתגלחתו <span class=\"parenthesized\">(נזיר)</span> והכא אי לאו ק\"ו דמנזיר לא אתי [להו] תער במצורע וי\"ל דאפילו לא קים לו דמצות נזיר בתער מ\"מ שפיר ילפינן ק\"ו מנזיר דדחי תגלחת דידיה פיאות דהקפת הראש דאיכא בהו לאו במקיף במספרים כדמשמע בסמוך מצורע לא כל שכן שיהא מותר לגלח אף בתער וידחה לאו דהשחתת זקן אלא ע\"כ קרא דזקנו אתא להטעינו תער ולא משחיתים אחרים:"
+  }
+}

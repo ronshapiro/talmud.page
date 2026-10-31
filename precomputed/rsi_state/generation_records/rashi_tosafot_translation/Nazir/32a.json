@@ -1,0 +1,472 @@
+{
+  "Rashi on Nazir 32a:10:1": {
+    "dependsOn": [
+      "Nazir 32a:10",
+      "Rashi on Nazir 32a:9:1",
+      "Rashi on Nazir 32a:10:2"
+    ],
+    "generatedAt": "2026-10-30T22:43:50.125Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 32a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טעותו ולא כוונתו</strong> - כשטעה וקרא לתשיעי עשירי ולעשירי תשיעי הוי הקדש אבל אם נתכוין לכך לא הוי הקדש <span class=\"parenthesized\">(אבל מעשר דבחושבנא תליא מילתא בין בטעות בין בכוונה הוי קדוש)</span>:"
+  },
+  "Rashi on Nazir 32a:10:2": {
+    "dependsOn": [
+      "Rashi on Nazir 32a:10:1",
+      "Nazir 32a:10",
+      "Rashi on Nazir 32a:11:1",
+      "Rashi on Nazir 32a:13:2"
+    ],
+    "generatedAt": "2026-10-30T22:45:17.871Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 32a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואישתיקו בית הלל</strong> - דלא מהדרי להו מגופיה דמילתא דלימרו להו מה למעשר לכך הקדישו בטעות דהוי הקדש:"
+  },
+  "Rashi on Nazir 32a:11:1": {
+    "dependsOn": [
+      "Nazir 32a:11",
+      "Rashi on Nazir 32a:10:1",
+      "Rashi on Nazir 32a:10:2"
+    ],
+    "generatedAt": "2026-10-30T22:48:26.986Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 32a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שכן אינו קדוש בכוונה</strong> - שאם נתכוין על שלשתן להחליף ולקרותן בכך אינו הקדש תאמר בהקדש שיהא טעות הקדש שכן עיקר מעשה שלו אינו אלא בכוונה הואיל וכל מעשה שלו אינו אלא בכוונה לכך אין טעותו הקדש אלא מדלא קמהדרי להו הכי ש\"מ דאית להו לב\"ה דטעותו וכ\"ש כוונתו וקשיא לרב נחמן:"
+  },
+  "Rashi on Nazir 32a:12:1": {
+    "dependsOn": [
+      "Nazir 32a:12",
+      "Rashi on Nazir 32a:10:1",
+      "Rashi on Nazir 32a:10:2",
+      "Rashi on Nazir 32a:11:1"
+    ],
+    "generatedAt": "2026-10-30T22:51:02.930Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 32a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רב שימי</strong> - לעולם טעותו ולא כוונתו והאי דלא אמרו להון הכי דא\"כ יפה כח לב\"ש דקאמרי להו מה מעשר שאינו קדוש בכוונה קדוש בטעות הקדש כו' לא כ\"ש:"
+  },
+  "Rashi on Nazir 32a:13:1": {
+    "dependsOn": [
+      "Nazir 32a:13",
+      "Rashi on Nazir 32a:13:1",
+      "Rashi on Nazir 32a:13:2"
+    ],
+    "generatedAt": "2026-10-30T22:56:51.719Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 32a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא היא</strong> - דהאי ק\"ו לא מצי למיהדר להו ב\"ש:"
+  },
+  "Rashi on Nazir 32a:13:2": {
+    "dependsOn": [
+      "Nazir 32a:13",
+      "Rashi on Nazir 32a:13:1",
+      "Nazir 32a:10"
+    ],
+    "generatedAt": "2026-10-30T22:58:05.543Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 32a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דהקדש בדעתיה דמריה תלי</strong> - שאינו קדוש אלא בכוונה לדעת בעלים ולא בטעות בעלים אבל מעשר בחושבנא תלי קדוש אפי' בטעות ולעולם אימא לך מדלא מהדרי להו ב\"ה לב\"ש מה למעשר שכן אינו בכוונה דאית להו לב\"ה דטעותו וכ\"ש כוונתו וקשיא לרב נחמן:"
+  },
+  "Rashi on Nazir 32a:14:1": {
+    "dependsOn": [
+      "Rashi on Nazir 32a:14:2"
+    ],
+    "generatedAt": "2026-10-30T22:58:48.828Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 32a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והלך להביא את בהמתו</strong> - שהפריש לנזירותו ומצאה שנגנבה:"
+  },
+  "Rashi on Nazir 32a:14:2": {
+    "dependsOn": [
+      "Rashi on Nazir 32a:14:1",
+      "Rashi on Nazir 31b:3:3"
+    ],
+    "generatedAt": "2026-10-30T23:00:28.513Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 32a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם עד שלא נגנבה בהמה נזר</strong> - אע\"פ שעכשיו נגנבה ובא לפני חכם לפתוח לו ולומר אילו היית יודע שתגנב בהמתך מי היית נוזר ואמר לאו ה\"ז נזיר שאין פותחין לאדם בנולד:"
+  },
+  "Rashi on Nazir 32a:3:1": {
+    "dependsOn": [
+      "Rashi on Nazir 32a:3:2",
+      "Tosafot on Nazir 32a:3:1",
+      "Nazir 32a:3",
+      "Nazir 32a:2",
+      "Nazir 32a:1",
+      "Nazir 30b:11",
+      "Nazir 30b:12",
+      "Steinsaltz comment #1 on Nazir 32a:3",
+      "Steinsaltz comment #2 on Nazir 32a:3",
+      "Steinsaltz on Nazir 32a:3"
+    ],
+    "generatedAt": "2026-10-30T22:12:24.912Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 32a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אא\"כ נוהג בהן איסור כימים שנהג בהן היתר</strong> - שאם קיבל נזירותו סתם ועשה מהן בטהרה עשרה ימים ונטמא למתים ושתה יין עשרה ימים אחרים ואח\"כ נשאל לחכם אין אומרים שאותן ימי איסור עולין לו מן המנין אלא עושה עוד כ' ימים בטהרה וכן נמי בנזירות מרובה:"
+  },
+  "Rashi on Nazir 32a:3:2": {
+    "dependsOn": [
+      "Rashi on Nazir 32a:3:1",
+      "Rashi on Nazir 32a:3:2",
+      "Steinsaltz on Nazir 32a:3",
+      "Tosafot on Nazir 32a:3:1",
+      "Nedarim 20a:6",
+      "Nedarim 20a:7",
+      "Nedarim 20a:8",
+      "Nedarim 20a:9",
+      "Rashi on Nedarim 20a:8:1",
+      "Rashi on Nedarim 20a:8:2",
+      "Rashi on Nedarim 20a:8:3",
+      "Nazir 32a:4",
+      "Versions on Nazir 32a:3",
+      "Rashi on Nazir 32a:4:1",
+      "Rashi on Nazir 32a:4:2",
+      "Rashi on Nazir 32a:5:1",
+      "Rashi on Nazir 32a:5:2"
+    ],
+    "generatedAt": "2026-10-30T22:14:49.822Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 32a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי יוסי אומר</strong> - דין שלשים יום:"
+  },
+  "Rashi on Nazir 32a:4:1": {
+    "dependsOn": [
+      "Nazir 32a:4",
+      "Nazir 32a:2",
+      "Rashi on Nazir 32a:3:1",
+      "Rashi on Nazir 32a:3:2"
+    ],
+    "generatedAt": "2026-10-30T22:17:21.827Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 32a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מני מתניתין אי רבנן קשיא נזירות מועטת</strong> - דאילו במתני' תנן שימי איסור עולין לו מן המנין והכא תנינא דלא והאי דקאמר נזירות מועטת לאו דוקא דה\"ה נמי לנזירות מרובה אלא איידי דלא מצי למיפרך מדרבי יוסי אלא מנזירות מרובה נקיט נמי לגבי רבנן נזירות מועטת:"
+  },
+  "Rashi on Nazir 32a:4:2": {
+    "dependsOn": [
+      "Rashi on Nazir 32a:4:1",
+      "Nazir 32a:1",
+      "Nazir 32a:2",
+      "Nazir 32a:3",
+      "Rashi on Nazir 32a:3:1",
+      "Rashi on Nazir 32a:3:2",
+      "Nazir 32a:5",
+      "Rashi on Nazir 32a:5:1"
+    ],
+    "generatedAt": "2026-10-30T22:19:02.683Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 32a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי רבי יוסי קשיא נזירות מרובה</strong> - דאילו במתני' תנן דאפי' קיבל עליו נזירות מרובה של מאה יום ועשה מהן . <span class=\"parenthesized\">(עשרה)</span> בטהרה <span class=\"parenthesized\">(ועשרה)</span> באיסור ואח\"כ נשאל צריך להשלים לה עד מאה ואילו ר' יוסי אומר הכא דדיו ל' יום:"
+  },
+  "Rashi on Nazir 32a:5:1": {
+    "dependsOn": [
+      "Nazir 32a:5",
+      "Rashi on Nazir 32a:4:1",
+      "Rashi on Nazir 32a:4:2",
+      "Rashi on Nazir 32a:5:2",
+      "Nazir 32a:1",
+      "Nazir 32a:2",
+      "Nazir 31a:2",
+      "Nazir 30b:10",
+      "Nazir 30b:11",
+      "Rashi on Nazir 32a:3:1",
+      "Rashi on Nazir 32a:3:2",
+      "Steinsaltz on Nazir 32a:2"
+    ],
+    "generatedAt": "2026-10-30T22:22:06.351Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 32a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איבעית תימא רבי יוסי</strong> - מתניתין בנזירות מרובה וברייתא בנזירות מועטת והכי קא\"ל ר' יוסי לת\"ק את אמרת דמונה בהן איסור כימים שנהג בהן היתר וימי איסור אין עולין לו מן המנין אומר אני דיו שלשים יום דימי איסור עולין לו מן המנין ואינו צריך למנות אלא משעה שנזר דאית ליה כתנא דמתני':"
+  },
+  "Rashi on Nazir 32a:5:2": {
+    "dependsOn": [
+      "Rashi on Nazir 32a:5:1",
+      "Nazir 32a:3",
+      "Nazir 32a:4",
+      "Nazir 32a:6",
+      "Tosefta Nedarim 1:11",
+      "Tosefta Nedarim (Lieberman) 1:6"
+    ],
+    "generatedAt": "2026-10-30T22:24:42.037Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 32a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיבעית תימא כרבנן</strong> - ותתרגם מתניתין כעין ברייתא ואימא הכי מאי. משעה שנזר דקתני כמשעה שנזר יעשה בטהרה דימי איסור אין עולין לו מן המנין. [לישנא אחרינא] והכי תניא בתוספתא ר' יוסי אומר בד\"א דינהוג איסור כימים שנהג בהן היתר בנזירות מועטת מיירי אבל בנזירות מרובה אם נזר מאה יום וזלזל נ' יום דיו שינהוג איסור שלשים וקיי\"ל דכל בד\"א אינו אלא לפרש כלומר דת\"ק נמי דהיינו רבנן בנזירות מועטת קמיירי דינהוג איסור ומשום הכי קשיא להו נזירות מועטת דמתני' מיירי בין בנזירות מרובה בין בנזירות מועטת וקתני משעה שנזר ואי רבי יוסי כו' כדמפרש:"
+  },
+  "Rashi on Nazir 32a:7:1": {
+    "dependsOn": [
+      "Nazir 32a:7"
+    ],
+    "generatedAt": "2026-10-30T22:30:51.863Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 32a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ר ירמיה מדבית שמאי נשמע לבית הלל</strong> - דכי היכי דאמרי בית שמאי דהקדש בטעות הוי הקדש ה\"נ אמרי בית הלל דתמורה בטעות דהויא תמורה דאף על גב דאמרי בית שמאי דהקדש בטעות הוי הקדש קאמרי נמי דהיכא דאיגלאי מילתא דלאו שפיר נדר ונשאל על נזירותו והותר ההיא בהמה שהפריש על אותו נזירות תצא ותרעה בעדר הואיל דמיתעקר עיקר נזירות:"
+  },
+  "Rashi on Nazir 32a:8:1": {
+    "dependsOn": [
+      "Nazir 32a:8",
+      "Rashi on Nazir 32a:7:1",
+      "Tosafot on Nazir 32a:8:1",
+      "Steinsaltz on Nazir 32a:8:1"
+    ],
+    "generatedAt": "2026-10-30T22:35:48.075Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 32a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הני מילי</strong> - דסבר לומר תמורת עולה ואמר תמורת שלמים אבל אם הפריש בהמה לצורך תמורת עולה וחזר ואמר הרי זו תמורת שלמים כיון דהפרישה ושוב טעה אגלאי מילתא דלאו שפיר המיר ולא הויא תמורה:"
+  },
+  "Rashi on Nazir 32a:9:1": {
+    "dependsOn": [
+      "Nazir 32a:9",
+      "Tosafot on Nazir 32a:9:1",
+      "Steinsaltz on Nazir 32a:9",
+      "Steinsaltz comment #1 on Nazir 32a:9"
+    ],
+    "generatedAt": "2026-10-30T22:39:10.648Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 32a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר מר אי אתם מודים כו'</strong> - מתני' היא אבל לשון ירושלמי כך הוא:"
+  },
+  "Tosafot on Nazir 32a:10:1": {
+    "dependsOn": [
+      "Nazir 32a:10",
+      "Nazir 31a:1",
+      "Nazir 31a:2",
+      "Nazir 30b:11",
+      "Nazir 32a:3",
+      "Rashi on Nazir 32a:10:1",
+      "Rashi on Nazir 32a:10:2"
+    ],
+    "generatedAt": "2026-10-30T22:47:31.179Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 32a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואשתיקו להו ב\"ה</strong> - לאו דוקא אשתיקו דהא השיבו להם גזירת הכתוב הוא אלא כלומר אשתיקו שלא השיבו להו סברא מיניה וביה אלא הביאו משנים עשר ושמיני לימא להו מהכא שאינו קדוש בכוונה כשאר הקדשות ולכך על כרחיה גזירת הכתוב היא:"
+  },
+  "Tosafot on Nazir 32a:12:1": {
+    "dependsOn": [
+      "Nazir 32a:12",
+      "Rashi on Nazir 32a:12:1",
+      "Steinsaltz on Nazir 32a:12",
+      "Steinsaltz comment #1 on Nazir 32a:12",
+      "Rashi on Nazir 32a:13:1",
+      "Rashi on Nazir 32a:13:2",
+      "Nazir 32a:1",
+      "Nazir 30b:15",
+      "Nazir 31a:1",
+      "Nazir 31a:2",
+      "Nazir 30b:11",
+      "Nazir 30b:12",
+      "Nazir 30b:13",
+      "Nazir 30b:14",
+      "Tosafot on Nazir 30b:11:1",
+      "Nazir 31b:11",
+      "Nazir 31b:12",
+      "Tosafot on Nazir 31b:11:2",
+      "Tosafot on Nazir 32a:3:1",
+      "Tosafot on Nazir 32a:5:1",
+      "Tosafot on Nazir 32a:6:1"
+    ],
+    "generatedAt": "2026-10-30T22:56:06.754Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 32a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רב שימי בר אשי מה דלא אמרי להון ב\"ה אותה תשובה דא\"כ הוו אמרי להון ב\"ש לב\"ה ומה מעשר שאינו קדוש <span class=\"parenthesized\">(בהן)</span> כמו הקדש להיות קדוש בכוונה אפ\"ה חל בטעות הקדש לא כ\"ש ולא היא הקדש בדעתיה דמריה תליא</strong> - כל זה מדברי רב שימי כלומר אין זה ק\"ו טוב לקפח ב\"ה דודאי הקדש בדעת ובכוונת הבעלים דאיש אשר יקדיש את ביתו אמר רחמנא מדעת ובכוונתו הלכך בטעות לא הוי הקדש [ומעשר] מגזירת הכתוב כמו שמראים ב\"ה פנים במשנתנו מי\"ב ושמיני ולא קשה לרב נחמן אמאי לא השיבו ב\"ה מיניה וביה דאיכא למימר דב\"ה חד מתרי טעמי נקט:"
+  },
+  "Tosafot on Nazir 32a:14:1": {
+    "dependsOn": [
+      "Nedarim 23a:4",
+      "Nedarim 23a:5"
+    ],
+    "generatedAt": "2026-10-30T23:03:36.285Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 32a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי שנדר בנזיר והלך להביא בהמתו</strong> - פירוש לקרבנותיו ומצא שנגנבה בהמתו ובא לחכם לשאול על נזירותו על ידי חרטה זו שאמר אילו הייתי יודע שבהמה עתידה ליגנב לא הייתי נודר שאין לי במה לקנות קרבנות אחרים אם עד שלא נגנבה הבהמה נדר בנזיר אע\"פ שלסוף נגנבה לא יתירנו החכם ע\"י חרטה זו לומר לו אילו היית יודע שסוף בהמתך ליגנב מי היית נודר שזהו נולד שנגנבה אחר קבלת הנדר ותנן בנדרים <span class=\"parenthesized\">(דף סד.)</span> [או] שהיה [משיא כו'] וכן ההוא דחורבן בהמ\"ק בסמוך דהוי נולד ואם תאמר והא מדחשבינן בכל דוכתי פתח כי אמר ליה אדעת מה שנדר ואמאי והא נולד הוא שהרי לא היה בשעת נדר אותו פתח כמו גבי נגנבה ויש לומר בענינים שרגילין לבא אח\"כ שפיר מסיק ליה אדעתיה בשעת הנדר וכי נדר דעתו היה שאם יבא עליו אחד מאלו הדברים שיתבטל נדרו וכדאמרינן בנדרים <span class=\"parenthesized\">(דף כג.)</span> רגילין אפיקורסים לצער רבנן אבל בנגנבה וכן חורבן נולד דלא שכיח ולא איבעי לאסוקי אדעתיה בשעת נדרו פן יחרב הבית ולכך גמר ונדר בלבו בכל ענין שיהיה נזיר ואפילו תגנב בהמתו לפי שסבור בלבו שלא תגנב ולכך אין פותחין לו בנולד זה:"
+  },
+  "Tosafot on Nazir 32a:3:1": {
+    "dependsOn": [
+      "Nazir 32a:3",
+      "Nazir 32a:1"
+    ],
+    "generatedAt": "2026-10-30T22:16:16.698Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 32a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דתניא מי שעבר על נזירותו כו'</strong> - כגון קיבל עליו נזירות מאה יום ושתה ביין [ס'] ימים ובא להביא קרבנותיו אין נזקקין לו להביא קרבנות נזירותו אלא א\"כ מונה איסורן כלומר [ס'] יום כימים שנהג בהן היתר ששתה יין רבי יוסי אומר דיו בשלשים יום פר\"י דהא דדיו [אם קנסי ליה] שלשים יום שאם נדר ק' יום ועבר [ס'] ימים לא קנסינן ליה לסתור הכל רק ל' יום ושלשים ימים יעלה למנין נזירות אע\"פ ששתה בהן יין וה\"ה בנזירות מועטת לרבי יוסי כגון אם נדר ל' ושתה בכולן יין יסתור הכל ואם שותה שני ימים יין צריך שימנה ימים אחרים בלא שתיית יין וה\"ג אי רבנן קשיא נזירות מרובה פירוש אפי' מרובה [דבין] נזירות מרובה כמו ק' ימים ושתה [בהם] יין סותר הכל [ובין] נזירות מועטת כגון ל' יום ושתה ב' ימים צריך למנות ב' ימים אחרים ומתני' משמע דמונה [משעה] שנדר כלומר מקצת ימים שנדר שאינו סותר הכל אלא רק ל' יום ול' יום האחרים יעלו לו והיינו נמי כר' יוסי אבל בנזירות מועטת קשיא שאפי' לר' יוסי סותר כולו ובמתני' משמע שעולה לו למנין:"
+  },
+  "Tosafot on Nazir 32a:5:1": {
+    "dependsOn": [
+      "Nazir 32a:5",
+      "Nazir 32a:3",
+      "Rashi on Nazir 32a:5:1",
+      "Rashi on Nazir 32a:5:2",
+      "Tosafot on Nazir 32a:4:1",
+      "Tosafot on Nazir 32a:3:1",
+      "Tosafot on Nazir 32a:6:1"
+    ],
+    "generatedAt": "2026-10-30T22:28:04.574Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 32a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איבעית אימא ר' יוסי בנזירות מרובה</strong> - מתני' בנזירות מרובה ושלשים יום סותר ול' יום יעלו לו למנין כמו בנזירות מועטת והא דקאמר ר' יוסי שיסתור הכל בנזירות מועטת ושתה בכולן יין דאז סותר כל שלשים יום אבל בנזירות מרובה מודה ר' יוסי דאין סותר הכל מדקאמר ר' יוסי דיו:"
+  },
+  "Tosafot on Nazir 32a:6:1": {
+    "dependsOn": [
+      "Nazir 32a:6",
+      "Nazir 32a:1",
+      "Tosafot on Nazir 32a:6:1",
+      "Rashi on Nazir 32a:3:1",
+      "Rashi on Nazir 32a:3:2",
+      "Rashi on Nazir 32a:5:1",
+      "Tosafot on Nazir 32a:3:1",
+      "Tosafot on Nazir 32a:5:1"
+    ],
+    "generatedAt": "2026-10-30T22:30:05.323Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 32a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי בעית אימא רבנן מאי [משעה] שנדר כמשעה שנדר ה\"פ</strong> - מונה ימים של איסור דהיינו מאה ימים והוא שתה בכולן יין [וכן] בנזירות מועטת והכי משמע לישנא דמתני' מונה משעה שנדר חוזר ומונה כך וכך ימים שהיו משעה שנדר ועבר עליהן עתה [מונה] פעם אחרת משבא לפני חכמים וינהוג בהן איסור שתיית יין אבל ודאי אם קודם ששתה יין מנה מקצת נזירות אותם ימים אינו סותר אפי' לרבנן דשתיית יין מדרבנן בעלמא:"
+  },
+  "Tosafot on Nazir 32a:7:1": {
+    "dependsOn": [
+      "Nazir 32a:7",
+      "Nazir 31b:7",
+      "Nazir 31b:8",
+      "Nazir 32a:1",
+      "Nazir 30b:11",
+      "Tosafot on Nazir 32a:7:2"
+    ],
+    "generatedAt": "2026-10-30T22:32:54.283Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 32a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נשאל עליה</strong> - מתני' פירשתי לעיל:"
+  },
+  "Tosafot on Nazir 32a:7:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 32a:7:1",
+      "Rashi on Nazir 32a:7:1",
+      "Nazir 32a:8",
+      "Tosafot on Nazir 32a:5:1",
+      "Tosafot on Nazir 32a:6:1",
+      "Tosafot on Nazir 31b:7:1",
+      "Tosafot on Nazir 31b:8:1",
+      "Steinsaltz on Nazir 32a:7"
+    ],
+    "generatedAt": "2026-10-30T22:34:49.715Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 32a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ר ירמיה מדב\"ש נשמע לב\"ה</strong> - דקאמרי ב\"ש הקדש [טעות הקדש וכיון] דמגליא מלתא דלאו שפיר נדר תצא ותרעה בעדר כדתנן במתניתין בהדיא א\"ל ב\"ה לב\"ש אי אתם מודים בזה שהוא הקדש בטעות ותצא ותרעה בעדר לפי שנשאל לחכמים והתירו דלא הוי קבלה הלכך הקרבנות שהפריש לנזירות חולין הן כאדם שאומר זו לחטאת והוא אינו בר חטאת הכי נמי לב\"ה אע\"פ דאמרי דתמורה בטעות הוי תמורה בהא מודו ב\"ה כדדרשינן מיהיה לרבות שוגג כמזיד:"
+  },
+  "Tosafot on Nazir 32a:8:1": {
+    "dependsOn": [
+      "Rashi on Nazir 32a:8:1"
+    ],
+    "generatedAt": "2026-10-30T22:36:56.162Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 32a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג ה\"מ כדאיתיה לעיקר אבל כי איתעקר לעיקר הקדש אתעקר נמי לתמורה ותצא התמורה לעדר</strong> - וה\"פ כגון אם הקדיש בהמה לעולה והביא בהמה אחרת ואומר זו תמורת זו ונשאל לחכם על הראשונה והתירו החכם לומר שאינו עולה תצא גם התמורה לעדר והוי כאילו אומר זו תמורת זו על בהמת חולין:"
+  },
+  "Tosafot on Nazir 32a:9:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 32a:9:2"
+    ],
+    "generatedAt": "2026-10-30T22:39:39.199Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 32a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טעותו ולא כוונתו</strong> - דאי במתכוון קרא לתשיעי עשירי אינו מקודש:"
+  },
+  "Tosafot on Nazir 32a:9:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 32a:9:1",
+      "Tosafot on Nazir 32a:9:2",
+      "Tosafot on Nazir 32a:3:1",
+      "Nazir 32a:9",
+      "Nazir 31b:7",
+      "Nazir 31b:8",
+      "Nazir 31b:9",
+      "Nazir 30b:11",
+      "Nazir 31a:1",
+      "Rashi on Nazir 32a:9:1"
+    ],
+    "generatedAt": "2026-10-30T22:42:48.189Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 32a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב חסדא אמר טעותו וכ\"ש כוונתו</strong> - ומתני' דקתני מי שטעה כו' רבותא קאמר כ\"ש כוונתו:"
+  }
+}

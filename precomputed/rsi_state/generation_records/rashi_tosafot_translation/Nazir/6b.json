@@ -1,0 +1,316 @@
+{
+  "Rashi on Nazir 6b:10:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Nazir 6b:10:1",
+      "Rashi on Nazir 6b:10:2",
+      "Rashi on Nazir 6b:10:3"
+    ],
+    "generatedAt": "2026-10-29T16:54:36.502Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 6b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר מר אי אלו הן ימים שצריכים למלאות הוי אומר שלשים</strong> - דמשמע דתהוי נזירות סתם שלשים יום:"
+  },
+  "Rashi on Nazir 6b:10:2": {
+    "dependsOn": [
+      "Rashi on Nazir 6b:10:1",
+      "Rashi on Nazir 6b:10:2",
+      "Rashi on Nazir 6b:10:3",
+      "Translation on Rashi on Nazir 6b:10:2"
+    ],
+    "generatedAt": "2026-10-29T16:55:49.920Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 6b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואימא שבת</strong> - כדי שבוע הוי סתם נזירות דהוי ששה ימים אתי יום שביעי וממלא לה לשבוע ואימא דעד מלאת הימים עד מלאת שבוע קאמר:"
+  },
+  "Rashi on Nazir 6b:10:3": {
+    "dependsOn": [
+      "Translation on Rashi on Nazir 6b:10:3",
+      "Rashi on Nazir 6b:10:1",
+      "Rashi on Nazir 6b:10:2"
+    ],
+    "generatedAt": "2026-10-29T16:56:41.860Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 6b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי חסירותא איכא</strong> - דבעי השלמה כולהי שבועי כי הדדי נינהו ומשום הכי ליכא למימר דאיירי בהו קרא אבל חדש דאיכא חסירותא דאיכא חסר ואיכא מלא איכא לך למימר האי לחדש הוא דאתא קרא:"
+  },
+  "Rashi on Nazir 6b:1:1": {
+    "dependsOn": [
+      "Rashi on Nazir 6b:1:1",
+      "Nazir 6b:1",
+      "Rashi on Nazir 6b:1:2",
+      "Rashi on Nazir 6b:1:3"
+    ],
+    "generatedAt": "2026-10-29T16:27:31.712Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 6b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר לך בר פדא אימא סיפא ר' אליעזר אומר אינו סותר אלא ז'</strong> - כנגד אותן ימים שמונה בהן שלישי ושביעי מחמת טומאה:"
+  },
+  "Rashi on Nazir 6b:1:2": {
+    "dependsOn": [
+      "Translation on Rashi on Nazir 6b:1:2",
+      "Tosafot on Nazir 6b:2:1",
+      "Nazir 6b:1"
+    ],
+    "generatedAt": "2026-10-29T16:29:01.435Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 6b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי ס\"ד דבעינן שלשים ניסתור כולהו</strong> - אלא לאו דאין עיקר נזירות [לר\"א] אלא כ\"ט יום ומאי טעמא דר' אליעזר דאמר דסותר ז' משום דצריך לגלח לאחר שהזה עליו שלישי ושביעי מחמת טומאה כדמפרש ביה קרא ביום השביעי יגלחנו ובדין הוא דאינו צריך לסתור מהן כלום שהרי עברו עליו כ\"ט יום בטהרה אלא משום דהשתא נתגלח על הטומאה וקים להו לרבנן דאין שיער מתגדל כדי לכוף ראשו של זה בצד עיקרו של זה בפחות מז' ימים ולהכי אמר רבי אליעזר דצריך שיהא סותר ז' ומונה ז' אחרים כנגדן והכי נמי מפרש טעמא דרבי אליעזר לקמן ואי קשיא אמאי לא מתרץ בר פדא הכי כרישא מאי טעמא סותר את הכל משום דנעשה כאומר שלמין היינו טעמא דלא מתרץ לה הכי דקסבר דכיון דנטמא לאחר כ\"ט יום לא מדחינן ליה מקרבן כולי האי עד שלשים אחריני דילמא אתי למיעבר על נזריה ואתי לידי תקלה:"
+  },
+  "Rashi on Nazir 6b:1:3": {
+    "dependsOn": [
+      "Rashi on Nazir 6b:1:1",
+      "Rashi on Nazir 6b:1:2",
+      "Rashi on Nazir 6b:3:1",
+      "Rashi on Nazir 6b:4:1",
+      "Rashi on Nazir 6b:7:1"
+    ],
+    "generatedAt": "2026-10-29T16:31:12.088Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 6b:1:3"
+    ],
+    "sourceText": "ל\"א רבי אליעזר אומר אינו סותר אלא ז' דבעי הזאה שלישי ושביעי ואח\"כ יביא קרבן נזיר בטהרה אלמא קסבר דעיקר נזירות שלשים חסר א' ובדין הוא דאינו סותר כלל והאי דסותר ז' כדי שיביא קרבנו בטהרה:"
+  },
+  "Rashi on Nazir 6b:3:1": {
+    "dependsOn": [
+      "Community Translation on Rashi on Nazir 6b:3:1",
+      "Nazir 6b:3",
+      "Rashi on Nazir 6b:3:2",
+      "Tosafot on Nazir 6b:3:1",
+      "Steinsaltz on Nazir 6b:3",
+      "Rashi on Nazir 5b:7:1"
+    ],
+    "generatedAt": "2026-10-29T16:36:26.572Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 6b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנן הריני נזיר מאה יום נטמא יום מאה סותר את הכל</strong> - ואפי' לבר פדא הואיל דקאמר מאה יום שלמים משמע:"
+  },
+  "Rashi on Nazir 6b:3:2": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Nazir 6b:3:2",
+      "Rashi on Nazir 6b:3:1",
+      "Nazir 6b:3"
+    ],
+    "generatedAt": "2026-10-29T16:37:53.793Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 6b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי ס\"ד דסבר ר' אליעזר מקצת היום ככולו לסתור ז'</strong> - ותו לא כי נטמא ביום ק' שהרי כבר עבר נזירותו כשנטמא ולדבריך אי לא סבר מקצת היום ככולו ליסתור להו לכולהו ואמאי קאמר אינו סותר אלא שלשים:"
+  },
+  "Rashi on Nazir 6b:4:1": {
+    "dependsOn": [
+      "Rashi on Nazir 6b:4:1",
+      "Nazir 6b:4",
+      "Rashi on Nazir 6b:3:1",
+      "Rashi on Nazir 6b:3:2",
+      "Rashi on Nazir 6b:4:2",
+      "Nazir 6b:1",
+      "Tosafot on Nazir 6b:4:1",
+      "Steinsaltz on Nazir 6b:4",
+      "Nazir 5a:17",
+      "Tosafot on Nazir 5a:17:1"
+    ],
+    "generatedAt": "2026-10-29T16:41:47.459Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 6b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעולם לא סבר מקצת היום ככולו</strong> - והאי דקאמר אינו סותר אלא שלשים יום מסייע ליה לבר פדא והאי דקאמר אי לא סבירא ליה דמקצת היום ככולו ואכתי לא שלימין אמאי לא סתר לכולהו אמר ריש לקיש היינו טעמא דרבי אליעזר כו':"
+  },
+  "Rashi on Nazir 6b:4:2": {
+    "dependsOn": [
+      "Rashi on Nazir 6b:4:2",
+      "Rashi on Nazir 6b:4:1"
+    ],
+    "generatedAt": "2026-10-29T16:42:44.179Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 6b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זאת תורת הנזיר ביום מלאת ימי נזרו</strong> - בין לנזירות שלשים בין לנזירות מאה תן לו תורת נזיר דהיינו שלשים והיינו דקאמר אינו סותר אלא שלשים:"
+  },
+  "Rashi on Nazir 6b:7:1": {
+    "dependsOn": [
+      "Rashi on Nazir 6b:7:1",
+      "Tosafot on Nazir 6b:7:1",
+      "Nazir 6b:8",
+      "Nazir 6b:7",
+      "Rashi on Nazir 6b:8:1",
+      "Rashi on Nazir 6b:9:1",
+      "Rashi on Nazir 6b:9:2"
+    ],
+    "generatedAt": "2026-10-29T16:48:18.073Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 6b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלו הן ימים שצריכין למלאות הוי אומר ל'</strong> - דחדשה של לבנה אינו אלא כ\"ט וחצי ופעמים שהוא צריך להשלים למנין שלשים לאפוקי שאר ימים של עשרים ושל ארבעים שאינן צריכין למלאת דמשמע דתיהוי נזירות באותן ימים שצריכין למלאות כמה הן <span class=\"parenthesized\">(הרי)</span> כ\"ט:"
+  },
+  "Rashi on Nazir 6b:9:1": {
+    "dependsOn": [
+      "Translation on Rashi on Nazir 6b:9:1",
+      "Rashi on Nazir 6b:9:2",
+      "Rashi on Nazir 6b:10:1"
+    ],
+    "generatedAt": "2026-10-29T16:52:30.703Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 6b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי יאשיה סבר</strong> - דהאי דכתיב עד מלאת עד ל' משמע ולא שלשים בכלל להכי איצטריך גדל פרע שאין גידול שיער פחות משלשים:"
+  },
+  "Rashi on Nazir 6b:9:2": {
+    "dependsOn": [
+      "Rashi on Nazir 6b:9:2",
+      "Rashi on Nazir 6b:9:1"
+    ],
+    "generatedAt": "2026-10-29T16:53:17.840Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 6b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי יונתן סבר עד ועד בכלל</strong> - ולא איצטריך לן מגדל פרע דאלו מעד מלאת הימים נפקא:"
+  },
+  "Tosafot on Nazir 6b:10:1": {
+    "dependsOn": [
+      "Rashi on Nazir 6b:10:1",
+      "Rashi on Nazir 6b:10:2",
+      "Tosafot on Nazir 6b:10:2"
+    ],
+    "generatedAt": "2026-10-29T16:57:35.566Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 6b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואימא שבת</strong> - שהשבת ממלא השבוע:"
+  },
+  "Tosafot on Nazir 6b:10:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 6b:10:1"
+    ],
+    "generatedAt": "2026-10-29T16:58:42.767Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 6b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי איכא חסירותא</strong> - הא כל ימי השבועות שלמים בשבת אבל החדשים יש מלאים ויש חסרים:"
+  },
+  "Tosafot on Nazir 6b:2:1": {
+    "dependsOn": [
+      "Nazir 6b:2",
+      "Nazir 16a:6",
+      "Nazir 16a:7",
+      "Tosafot on Nazir 16a:7:3",
+      "Nazir 6b:5",
+      "Nazir 6b:6",
+      "Nazir 6b:7",
+      "Tosafot on Nazir 6b:3:1",
+      "Tosafot on Nazir 6b:4:1"
+    ],
+    "generatedAt": "2026-10-29T16:34:37.240Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 6b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קסבר רבי אליעזר מקצת היום ככולו</strong> - השתא חוזר לרב מתנה וליישב דברי רבי אליעזר אליבא דתנא קמא כי היכי דלרבנן משך נזירות שלשים יום ה\"נ לרבי אליעזר דאדרבה מדרבנן [נשמע] לר' אליעזר דבמשך נזירות לא פליגי וכ\"ת א\"כ לר' אליעזר נסתור כל שלשים יום קסבר רבי אליעזר מקצת היום ככולו ואפילו נטמא קודם הבאת קרבנותיו דאחרי שעשה מקצת נזירות ביום שלשים ואח\"כ נטמא חשיב כנטמא ביום שלשים ואחד על כן אינו סותר אלא ז' תימה דאמרינן לקמן והימים הראשונים יפלו מכלל דאיכא אחרונים וזה אין לו אחרונים וי\"ל דהאי סברא לא מהניא אלא דלא סתר מאה אבל שלשים מיהא סותר ורבנן סברי לא אמרינן מקצת היום ככולו היכא דנטמא קודם הבאת קרבנותיו ולהכי סותר כל שלשים יום ובהא פליגי רבנן ור' אליעזר אליבא דרב מתנא:"
+  },
+  "Tosafot on Nazir 6b:3:1": {
+    "dependsOn": [
+      "Nazir 6b:3",
+      "Tosafot on Nazir 6b:2:1",
+      "Tosafot on Nazir 6b:4:1",
+      "Tosafot on Nazir 6b:6:1"
+    ],
+    "generatedAt": "2026-10-29T16:39:08.152Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 6b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנן הריני נזיר מאה יום נטמא יום מאה סותר את הכל רבי אליעזר אומר אינו סותר אלא שלשים ואי ס\"ד סבר ר' אליעזר מקצת היום ככולו לסתור ז'</strong> - לרב מתנא פריך ואי ס\"ד [לאו] מקצת היום ככולו כלומר לבר פדא ליסתור כולהו כל ק' יום:"
+  },
+  "Tosafot on Nazir 6b:4:1": {
+    "dependsOn": [
+      "Nazir 6b:4",
+      "Nazir 6b:1"
+    ],
+    "generatedAt": "2026-10-29T16:45:20.148Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 6b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ריש לקיש</strong> - כבר פדא ולא אמרינן מקצת היום ככולו וכ\"ת אמאי אינו סותר כולהו אמר ר\"ל כו' אמרה תורה נטמא ביום מלאת דהיינו ביום ק' שהוא יום מלאת נזרו תן לו תורת נזרו כלומר שיעשה עוד תורת סתם נזירות שלשים יום וגזירת הכתוב שלא יסתור כולו וא\"ת לבר פדא לרבי אליעזר כי נטמא יום ל' אמאי אינו סותר אלא ז' נסתור שלשים כדריש לקיש תן לו תורת נזיר וי\"ל דהתם אחר מלאת הוה לבר פדא שהרי סתם נזירות הוי כ\"ט לבר פדא ואם תאמר התינח לבר פדא אלא לרב מתנא דקאמר לרבי אליעזר מקצת היום ככולו אף בנטמא קודם הבאת קרבנותיו ביום ק' לא נסתור אלא ז' וצריך לדחות ולומר דעתה איירי בשאמר הריני נזיר מאה יום שלמים דהשתא ליכא למימר מקצת היום ככולו כיון דאמר שלמים ומ\"מ אינו סותר כולם מדרשא דריש לקיש דכי נטמא ביום מלאת גזירת הכתוב שלא יסתור אלא שלשים וקשה דבמתני' סתמא קתני ק' יום ולא קתני שלמים ועוד אדמפלגי לר' אליעזר בין נטמא ביום שלשים דאינו סותר אלא ז' לנטמא ביום ק' דסותר שלשים ליפלוג לעולם בנטמא ביום ק' עצמו במה דברים אמורים כשאמר שלמים שלשים אבל לא אמר שלמים לא סתר אלא ז' דמקצת היום ככולו ונראה למהר\"ף דמתניתין איירי דאמר מאה יום ולא אמר שלמים ודקשיא לך לרב מתנא אליבא דר' אליעזר כיון דאמרינן דמקצת היום ככולו אף בנטמא ביום ק' לא נסתור אלא ז' לא תיקשי דאמר ר\"ל ותירוץ זה מסיק לשניהם דגזירת הכתוב הוא לסתור שלשים דע\"כ ביום מלאת קאי כי נטמא ביום ק' אע\"ג דמקצת היום ככולו לא נימא כאילו נטמא יום ק\"א אחר מלאת דאינו סותר אלא ז' דהא אם לא נטמא היה צריך להשלים נמי כל יום ק' אם כן יום מלאת הוא וגזירת הכתוב כי נטמא ביום מלאת שיסתור ל' יום ואם תאמר ברישא נמי כי נטמא ביום ל' לר' אליעזר אמאי אינו סותר אלא ז' יסתור כל שלשים שהרי נטמא ביום מלאת ויש לומר דמשמעות דקרא משמע דאיירי בדמפרש נזירותו ולא בסתם נזיר מדקאמר נטמא ביום מלאת תן לו תורת נזיר פירוש סתם נזירות מכלל דעד השתא לאו בסתם נזירות קיימא אבל כי נדר נזירות סתם בהא לא איירי כלל שאם נטמא ביום מלאת שנתן לו עוד תורת סתם נזיר דודאי לא יהבינן ליה שלשים כיון דאיתא לרב מתנא ולבר פדא דנזירות הוי כ\"ט להכי אינו סותר אלא ז' <span class=\"parenthesized\">(בו)</span> לר' אליעזר אבל בסיפא איירי כשנדר בפירוש שלשים אז לא הוי נמי סתם נזיר דהא פירש שלשים יום ובההיא מודה רבי אליעזר כי נטמא ביום שלשים דסותר שלשים דבדידיה נמי איירי קרא דזאת תורת הנזיר:"
+  },
+  "Tosafot on Nazir 6b:6:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 6b:6:1",
+      "Nazir 6b:6",
+      "Tosafot on Nazir 6b:7:1",
+      "Tosafot on Nazir 6b:8:1"
+    ],
+    "generatedAt": "2026-10-29T16:46:37.268Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 6b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שומע אני מיעוט ימים שנים</strong> - ויהיה סתם נזירות ב' ימים תלמוד לומר קדוש יהיה גדל פרע ואין גידול פחות משלשים יום כמנין [יהיה]:"
+  },
+  "Tosafot on Nazir 6b:7:1": {
+    "dependsOn": [
+      "Rashi on Nazir 6b:7:1"
+    ],
+    "generatedAt": "2026-10-29T16:49:07.852Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 6b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהן צריכין למלאות הוי אומר [שלשים]</strong> - כלומר חדש שפעמים משלשים יום ופעמים חסר א':"
+  },
+  "Tosafot on Nazir 6b:8:1": {
+    "dependsOn": [
+      "Nazir 6b:8",
+      "Rashi on Nazir 6b:9:1",
+      "Rashi on Nazir 6b:9:2",
+      "Tosafot on Nazir 6b:7:1"
+    ],
+    "generatedAt": "2026-10-29T16:51:22.133Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 6b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי לאו רב מתנא כרבי יאשיה</strong> - דדריש יהיה ובר פדא כר' יונתן דדריש מעד מלאת ולא עד בכלל דהיינו כ\"ט יום אמר לך רב מתנא דכו\"ע שלשים כוותיה דרבי יאשיה סבר בכל דוכתין עד ולא עד בכלל הילכך [יהיה] איבעי למימר ורבי יונתן סבר בכל דוכתין עד ועד בכלל ולא איצטריך דרשא דיהיה אלא מעד מלאת נפקא ולבר פדא צריך לומר תנאי היא:"
+  }
+}

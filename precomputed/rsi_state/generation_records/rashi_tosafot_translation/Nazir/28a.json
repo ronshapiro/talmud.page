@@ -1,0 +1,345 @@
+{
+  "Rashi on Nazir 28a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T16:34:12.104Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 28a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באשה מנוולת</strong> - שאינה שותה יין:"
+  },
+  "Rashi on Nazir 28a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T16:39:37.635Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 28a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאי ר\"א</strong> - כיון דתגלחת מעכבתה שלא לשתות יין כדאמרינן בפרק ג' מינין <span class=\"parenthesized\">(לקמן נזיר דף מו.)</span> ואחר ישתה הנזיר יין אחר מעשים כולן דברי ר\"א הילכך כיון דלא גילחה אסורה ביין והוה לה ניוול כדכתיב <span class=\"parenthesized\">(זכריה ט׳:י״ז)</span> ותירוש ינובב בתולות הילכך מצי מפר אע\"פ שנזרקו עליה כל הדמים:"
+  },
+  "Rashi on Nazir 28a:1:1": {
+    "dependsOn": [
+      "Nazir 28a:1",
+      "Rashi on Nazir 28a:1:2"
+    ],
+    "generatedAt": "2026-10-30T15:59:48.527Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 28a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בזמן שהן סתומין</strong> - כדתנן בשילהי מתני':"
+  },
+  "Rashi on Nazir 28a:1:2": {
+    "dependsOn": [
+      "Rashi on Nazir 28a:1:1"
+    ],
+    "generatedAt": "2026-10-30T16:00:36.079Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 28a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ל</strong> - ואם כבש יביא קרבנו בקרבנו יוצא כו' ואית דדרשי ליה מקרבנו קמא:"
+  },
+  "Rashi on Nazir 28a:2:1": {
+    "dependsOn": [
+      "Rashi on Nazir 28a:2:2"
+    ],
+    "generatedAt": "2026-10-30T16:01:39.360Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 28a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מן הקלה על הקלה</strong> - משבועת העדות לשבועת הפקדון או לשבועת ביטוי:"
+  },
+  "Rashi on Nazir 28a:2:2": {
+    "dependsOn": [
+      "Rashi on Nazir 28a:2:1",
+      "Steinsaltz on Nazir 28a:2",
+      "Nazir 28a:1",
+      "Rashi on Nazir 28a:1:1",
+      "Rashi on Nazir 28a:1:2",
+      "Nazir 28a:3",
+      "Tosafot on Nazir 28a:2:1",
+      "Steinsaltz comment #1 on Nazir 28a:2",
+      "Versions on Nazir 28a:2"
+    ],
+    "generatedAt": "2026-10-30T16:06:30.472Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 28a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מן החמורה על החמורה</strong> - מחלב לדם מחייבי מיתות לחייבי כריתות בשוגג:"
+  },
+  "Rashi on Nazir 28a:4:1": {
+    "dependsOn": [
+      "Rashi on Nazir 28a:4:1",
+      "Rashi on Nazir 28a:4:2",
+      "Rashi on Nazir 28a:4:3",
+      "Steinsaltz on Nazir 28a:4:1"
+    ],
+    "generatedAt": "2026-10-30T16:08:57.021Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 28a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שכן אם הפריש בהמה על</strong> - החלב. שאכל בשוגג והביאה על הדם שאכל בשוגג:"
+  },
+  "Rashi on Nazir 28a:4:2": {
+    "dependsOn": [
+      "Nazir 28a:4",
+      "Rashi on Nazir 28a:4:1",
+      "Rashi on Nazir 28a:4:2",
+      "Rashi on Nazir 28a:4:3",
+      "Keritot 27b:10"
+    ],
+    "generatedAt": "2026-10-30T16:10:31.331Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 28a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהרי לא מעל</strong> - לפי שהוא קדושת הגוף ואי אפשר לו להוציאה לחולין לפיכך לא כיפר וכדאמרי' בפרק [בתרא] דכריתות דכיון דלא מצי מעיל כפורי נמי לא מכפר:"
+  },
+  "Rashi on Nazir 28a:4:3": {
+    "dependsOn": [
+      "Nazir 28a:3",
+      "Nazir 28a:4",
+      "Nazir 28a:5",
+      "Rashi on Nazir 28a:4:1",
+      "Rashi on Nazir 28a:4:2",
+      "Rashi on Nazir 28a:4:3",
+      "Nazir 28a:6",
+      "Nazir 28a:7"
+    ],
+    "generatedAt": "2026-10-30T16:11:24.088Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 28a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהרי מעל וכפר</strong> - דכיון דלקח בהן חטאת אחר שלא הופרש לשמן הוה ליה כמפיק להו לחולין ומעל וכיון דמעל בו אמרי' וכפר דהוא קרבן מעליא:"
+  },
+  "Rashi on Nazir 28a:7:1": {
+    "dependsOn": [
+      "Nazir 28a:7",
+      "Rashi on Nazir 28a:4:1",
+      "Rashi on Nazir 28a:4:2",
+      "Rashi on Nazir 28a:4:3",
+      "Tosafot on Nazir 28a:7:1",
+      "Steinsaltz on Nazir 28a:7",
+      "Steinsaltz comment #1 on Nazir 28a:7",
+      "Mishneh Torah, Trespass 4:5",
+      "Rashi on Nazir 28a:1:2"
+    ],
+    "generatedAt": "2026-10-30T16:18:05.619Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 28a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ל</strong> - וכפר עליו הכהן על חטאתו דלעולם לא כפר עד שיהא קרבנו לשום חטאו שאע\"פ שמעל לא כיפר שהרי מעל במעות כל דבר שיוצא לחולין אית ביה מעילה והואיל דאית ביה מעילה כיפר:"
+  },
+  "Rashi on Nazir 28a:8:1": {
+    "dependsOn": [
+      "Nazir 28a:7",
+      "Rashi on Nazir 28a:7:1",
+      "Nazir 28a:4",
+      "Rashi on Nazir 28a:2:1",
+      "Rashi on Nazir 27b:3:2",
+      "Tosafot on Nazir 27b:3:1",
+      "Tosafot on Nazir 28a:8:1"
+    ],
+    "generatedAt": "2026-10-30T16:23:25.250Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 28a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קתני מיהת בהמה</strong> - שהרי אין אדם מגלח על בהמת אביו מאי טעמא לאו משום דכמפורשת דמיא מאי לאו אפי' בעלת מום:"
+  },
+  "Rashi on Nazir 28a:9:1": {
+    "dependsOn": [
+      "Nazir 28a:9",
+      "Rashi on Nazir 28a:8:1",
+      "Nazir 28a:4",
+      "Nazir 27b:8"
+    ],
+    "generatedAt": "2026-10-30T16:28:27.000Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 28a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי איריא דתני</strong> - אבל יוצא במעות שהפריש כו':"
+  },
+  "Tosafot on Nazir 28a:10:1": {
+    "dependsOn": [
+      "Nazir 28a:10",
+      "Nazir 28a:12",
+      "Nazir 28b:6",
+      "Nazir 28b:7"
+    ],
+    "generatedAt": "2026-10-30T16:30:07.254Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 28a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נזרק עליה אחד מן הדמים</strong> - כגון שגמרה נזירות בטהרה והביאה קרבנות נזירות טהרה שהן ג' בהמות כבשה לחטאת וכבש לעולה ואיל לשלמים ונזרק עליה אחד מן הדמים חטאת או עולה או שלמים אינו יכול להפר נדרה לענין שלא תצטרך לגלח ולהביא שאר קרבנות דלפי שאין כאן עוד עינוי נפש דביין מותרת ואי משום שצריכה לגלח ומטו עליה אשה מתגלחת אפשר לה בפאה נכרית הכי מפרש בגמרא אבל אי לא נזרק הדם עדיין דאסורה [ביין] מיקרי שפיר עינוי נפש אע\"ג דלא מיתסרא אלא שעתא פורתא:"
+  },
+  "Tosafot on Nazir 28a:10:2": {
+    "dependsOn": [
+      "Nazir 28a:10",
+      "Nazir 28b:1"
+    ],
+    "generatedAt": "2026-10-30T16:31:27.699Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 28a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי עקיבא אומר אפילו נשחט</strong> - ולא נזרק הדם אינו יכול להפר בגמרא מפרש משום הפסד קדשים ומסיק בגמרא כשנשחטה החטאת שאם יפר לה נמצאת בהמה זו תצא לבית השריפה שהיא אינה צריכה לחטאת וגם לא יוכל לזרוק דמה לשם שלמים דחטאת שלא לשמה פסולה יש להסתפק אם היפר לה אם מופר או שמא יש כח ביד חכמים לעקור דבר מן התורה בשב ואל תעשה:"
+  },
+  "Tosafot on Nazir 28a:11:1": {
+    "dependsOn": [
+      "Nazir 28a:10",
+      "Tosafot on Nazir 28a:8:1",
+      "Tosafot on Nazir 28a:8:2",
+      "Rashi on Nazir 28a:11:1"
+    ],
+    "generatedAt": "2026-10-30T16:37:19.465Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 28a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בד\"א</strong> - שאינו יכול להפר אחר שנזרק אחד מן הדמים בתגלחת טהרה כדפי' שגמרה נזירות בטהרה אבל בתגלחת טומאה כגון שנטמאת בנזירותה והביאה קרבנותיה בטומאה אע\"פ שנזרקו דמים יכול להפר מפני שאפשר לומר לה אי אפשי באשה מנוולת כלומר שהיא צריכה למנות מעתה נזירות טהרה ותאסר ביין ויש כאן עינוי נפש וה\"נ בגמרא מצינו לשון ניוול שר\"ל עינוי וקשה לישנא <span class=\"parenthesized\">(דעינוי)</span> דאי אפשי דהוי ליה למימר משום עינוי וצ\"ל דקאי אדר\"ע דקאמר שנשחטה אחת מן הבהמות אינו יכול להפר מפני שאפשר [לבוא] להפסד קדשים אע\"ג דאסורה ביין עד שישחטו שאר הבהמות ויזרוק דמן ויש כאן ענוי נפש פורתא בשביל ההוא פורתא אינו יכול להפר בשביל הפסד קדשים אבל בתגלחת דטומאה דאיכא עינוי נפש גדול שסותרת ובעי למימני נזירות אחרת [מודה] שיכול לומר לה אי אפשי [בעינוי] גדול א\"נ משום דר\"מ קאמר האי לישנא אי איפשי קאמר ת\"ק נמי אי אפשי:"
+  },
+  "Tosafot on Nazir 28a:11:2": {
+    "dependsOn": [
+      "Nazir 28a:11",
+      "Tosafot on Nazir 28a:11:1",
+      "Tosafot on Nazir 28a:7:1"
+    ],
+    "generatedAt": "2026-10-30T16:38:51.170Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 28a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג אי אפשי באשה מגלחת</strong> - שצריכה לגלח בסוף נזירות טהרה כדכתיב בהדיא ולת\"ק אפשר בפאה נכרית הכי מפרש בגמרא:"
+  },
+  "Tosafot on Nazir 28a:12:1": {
+    "dependsOn": [
+      "Rashi on Nazir 28a:12:1"
+    ],
+    "generatedAt": "2026-10-30T16:40:23.411Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 28a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תגלחת מעכבת</strong> - מלשתות ביין וכיון דאי לא גילחה אסורה ואית לה ניוול. פי' צער עינוי נפש שצריכה להיות מעונה מן היין עד שתגלח מצי מיפר בעבור ההיא שעתא פורתא דאסירה ביין:"
+  },
+  "Tosafot on Nazir 28a:2:1": {
+    "dependsOn": [
+      "Rashi on Nazir 28a:2:1",
+      "Rashi on Nazir 28a:2:2",
+      "Nazir 28a:1",
+      "Steinsaltz on Nazir 28a:2"
+    ],
+    "generatedAt": "2026-10-30T16:07:50.983Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 28a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל יוצא בקרבן שהפריש לעצמו</strong> - לעבירה זו ויביאנו לעבירה אחרת:"
+  },
+  "Tosafot on Nazir 28a:4:1": {
+    "dependsOn": [
+      "Keritot 27b:10",
+      "Keritot 27b:11",
+      "Rashi on Nazir 28a:4:1",
+      "Rashi on Nazir 28a:4:2",
+      "Rashi on Nazir 28a:4:3",
+      "Rashi on Keritot 27b:10:1",
+      "Nazir 28a:2",
+      "Nazir 28a:3",
+      "Nazir 28a:4",
+      "Nazir 28a:5",
+      "Steinsaltz comment #1 on Nazir 28a:4",
+      "Steinsaltz comment #2 on Nazir 28a:4",
+      "Steinsaltz comment #3 on Nazir 28a:4"
+    ],
+    "generatedAt": "2026-10-30T16:13:57.876Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 28a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהרי לא מעל</strong> - בשוגג אם שגג והקריב קרבן על הדם קרבן של חלב דאכתי בקדושתייהו קאי כיון דבהמה קדושה קדושת הגוף ולא נפק לחולין בהכי כיון שלא נהנה ממנה לא כיפר במזיד דלא עשה כלום שאינו יכול להתכפר בקרבן של דם כלל לא מעל אם עשה <span class=\"parenthesized\">(בו)</span> בשוגג הואיל ואינו מוציאו מרשות הקדש אלא מהקדש זה להקדש אחר ומתוך שלא מעל לא כיפר והכי מפרש ליה בפרק בתרא דכריתות <span class=\"parenthesized\">(דף כז:)</span> ואחרי שאנו רואין בשוגג דלא כיפר דין הוא כשנתכוון לעקר חטאת חלב ולעשות חטאת דם דלא כיפר:"
+  },
+  "Tosafot on Nazir 28a:7:1": {
+    "dependsOn": [
+      "Nazir 28a:7",
+      "Rashi on Nazir 28a:7:1",
+      "Tosefta Keritot 4:6",
+      "Tosafot on Nazir 28a:4:1"
+    ],
+    "generatedAt": "2026-10-30T16:21:06.485Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 28a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על חטאתו</strong> - וכפר הכהן על חטאתו בכבשה דיחיד כתיב אלמא דבמזיד אינו יכול לשנות אפי' במעות וכן תניא בתוספתא דכריתות [פ\"ד] הפריש מעות לחטאת חלב והביאום על חטאת דם לחטאת דם והביאום לחטאת חלב בשוגג מעל לפיכך כיפר במזיד לא מעל לפיכך לא כיפר [אלמא] במזיד אף במעות לא כיפר וכ\"ש בהמה דלא מצי משנה ולפי' זו התוספתא משמע דנסיבא קרא אחרינא על חטאתו ולא פסוק ראשון שדרש כבר: ה\"ג שהרי מעל וכפר שהמעות אין בהם קדושת הגוף ויוצאין מקדושתן בקל וכשמשנה אותו לקרבן אחר נפקי המעות לחולין והרי הן חולין ביד מוכר הבהמה דאי לא נפקא לחולין לא מעל ולכך נמי כפר בשוגג ולכך במזיד נמי נימא דכפר הואיל ושייך בהו שנוי בשוגג אמר ומעל וכיפר ולא במזיד ומיהו אי לא הוה ילפי' [קרא ה\"א] מזיד וכפר אע\"ג שדרשנו וכפר על חטאתו עד שיהא קרבנו לשם חטאתו תרתי שמעינן מיניה כדאמרינן בעלמא <span class=\"parenthesized\">(גיטין דף נב.)</span> אתם ולא שותפין אתם ולא אפוטרופסים אתם ולא התורם את שאינו שלו וכולהון דרשינן מחד אתם:"
+  },
+  "Tosafot on Nazir 28a:8:1": {
+    "dependsOn": [
+      "Nazir 28a:8",
+      "Nazir 28a:1",
+      "Nazir 28a:2",
+      "Nazir 28a:3",
+      "Nazir 27b:8",
+      "Rashi on Nazir 28a:8:1",
+      "Tosafot on Nazir 28a:8:2",
+      "Tosafot on Nazir 27b:8:1",
+      "Rashi on Nazir 27b:8:2",
+      "Nazir 27b:6",
+      "Nazir 27b:7",
+      "Nazir 27b:1",
+      "Nazir 27b:2",
+      "Nazir 27b:3",
+      "Nazir 27b:4",
+      "Nazir 27b:5"
+    ],
+    "generatedAt": "2026-10-30T16:26:12.087Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 28a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קתני מיהא</strong> - לעיל דאינו מגלח על בהמת אביו מאי לאו אפילו בעלת מום אלמא כמפורשין דמיין דאי כסתומין לגלח כמו על מעות סתומין ומדמי הילכתא דה\"ה דלענין אותה ההלכה נתקבלה דמעות סתומין יפלו לנדבה נימא דוקא מעות ולא בהמה ואפילו בעלת מום וליכא למידחי דהא דקתני לעיל דאינו מגלח על בהמת אביו היינו במפורשין דאם כן היכי מסיק אבל יוצא במעות אביו שהרי מגלח על מעות אביו והא אין מגלח אלא על מעות סתומין של אביו כדקתני בהדיא במתניתין <span class=\"parenthesized\">(לקמן נזיר דף ל.)</span>:"
+  },
+  "Tosafot on Nazir 28a:8:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 28a:8:1",
+      "Tosafot on Nazir 28a:8:2"
+    ],
+    "generatedAt": "2026-10-30T16:27:07.172Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 28a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא תמימים</strong> - עליהם אינו מגלח דהויא כמפורשים:"
+  }
+}

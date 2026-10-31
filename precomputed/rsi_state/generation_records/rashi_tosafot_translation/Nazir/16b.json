@@ -1,0 +1,383 @@
+{
+  "Rashi on Nazir 16b:1:1": {
+    "dependsOn": [
+      "Nazir 16b:1",
+      "Rashi on Nazir 16b:2:1",
+      "Rashi on Nazir 16b:2:2",
+      "Rashi on Nazir 16a:7:1",
+      "Rashi on Nazir 15b:1:1",
+      "Rashi on Nazir 15b:2:1",
+      "Rashi on Nazir 16a:1:1",
+      "Rashi on Nazir 16a:2:1"
+    ],
+    "generatedAt": "2026-10-30T02:34:35.401Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 16b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נטמא יום שלשים סותר את הכל ולא פליג ר' אליעזר דהא קאמר שלימין</strong> - ואפילו לבר פדא דאכתי תוך מלאת קרינא ביה:"
+  },
+  "Rashi on Nazir 16b:2:1": {
+    "dependsOn": [
+      "Nazir 16b:2",
+      "Rashi on Nazir 16b:1:1",
+      "Rashi on Nazir 16b:2:2",
+      "Rashi on Nazir 16b:2:3"
+    ],
+    "generatedAt": "2026-10-30T02:39:05.945Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 16b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נטמא ביום מאה סותר את הכל</strong> - דתוך מלאת קרינא ביה:"
+  },
+  "Rashi on Nazir 16b:2:2": {
+    "dependsOn": [
+      "Rashi on Nazir 16b:1:1",
+      "Rashi on Nazir 16b:2:1",
+      "Rashi on Nazir 16b:2:3",
+      "Nazir 6b:4"
+    ],
+    "generatedAt": "2026-10-30T02:40:40.035Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 16b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי אליעזר אומר לא סותר אלא שלשים</strong> - כדאמר ר\"ל בפ\"ק <span class=\"parenthesized\">(לעיל נזיר ד' ו:)</span> דטעמא דר' אליעזר משום דקאמר קרא זאת תורת הנזיר ביום מלאת התורה אמרה נטמא ביום מלאת תן לו תורת נזיר ואפי' בנזירות מרובה:"
+  },
+  "Rashi on Nazir 16b:2:3": {
+    "dependsOn": [
+      "Nazir 16b:2"
+    ],
+    "generatedAt": "2026-10-30T02:41:22.414Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 16b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכולה</strong> - טעמא דמתניתין עד השתא כדהוינן בה אליבא דבר פדא ורב מתנא בפ\"ק <span class=\"parenthesized\">(ד' ה וד' ו)</span>:"
+  },
+  "Rashi on Nazir 16b:3:1": {
+    "dependsOn": [
+      "Rashi on Nazir 16b:3:2",
+      "Tosafot on Nazir 16b:3:1",
+      "Nazir 16b:4",
+      "Nazir 16b:5",
+      "Rashi on Nazir 16b:5:1",
+      "Rashi on Nazir 16b:5:2",
+      "Steinsaltz on Nazir 16b:3",
+      "Nazir 16b:6",
+      "Nazir 16b:7",
+      "Rashi on Nazir 16b:6:1"
+    ],
+    "generatedAt": "2026-10-30T02:43:44.207Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 16b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי שנזר והוא בבית הקברות אפי' הוא עומד שם שלשים יום אינן עולין לו מן המנין</strong> - כלומר אין עולין לכך שתהא חלה עליו אותו נזירות שקיבל כשנטמא ואין מביא קרבן טומאה:"
+  },
+  "Rashi on Nazir 16b:3:2": {
+    "dependsOn": [
+      "Nazir 16b:3",
+      "Nazir 16b:5",
+      "Tosafot on Nazir 16b:3:3"
+    ],
+    "generatedAt": "2026-10-30T02:47:08.019Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 16b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יצא ונכנס</strong> - כגון שהזה ושנה וטבל כדמפרש בגמרא ואח\"כ נכנס עולים לו למנין נזירות דכיון [שהזה] ושנה וטבל ביום שביעי שלו מביא קרבן על הטומאה:"
+  },
+  "Rashi on Nazir 16b:4:1": {
+    "dependsOn": [
+      "Nazir 16b:4",
+      "Rashi on Nazir 16b:3:1",
+      "Rashi on Nazir 16b:3:2"
+    ],
+    "generatedAt": "2026-10-30T02:54:03.436Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 16b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי אליעזר אומר לא בו ביום</strong> - כשהזה ושנה וטבל אם נכנס אינו מביא קרבן טומאה עד שיעבור עליו ב' ימים בטהרה שנאמר והימים הראשונים יפלו אימתי לכשאני קורא מקרא זה שיהיו לו ימים הראשוני' דטהרה ואין ימים פחותים משנים:"
+  },
+  "Rashi on Nazir 16b:5:1": {
+    "dependsOn": [
+      "Rashi on Nazir 16b:5:1",
+      "Rashi on Nazir 16b:5:2"
+    ],
+    "generatedAt": "2026-10-30T03:00:58.076Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 16b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איתמר מי שנזר והוא בבית הקברות ר' יוחנן אמר נזירות חל עליו</strong> - דקסבר דהאי מאן דמקבל נזירות בבית הקברות מיתלא תליא וקיימא וכיון דמשכחת טהרה דהיינו לאחר שיצא והזה ושנה וטבל חיילא עליה אע\"ג דלא הדר אמר אני אקבל עלי מה שאמרתי כשהייתי עומד בבית הקברות:"
+  },
+  "Rashi on Nazir 16b:5:2": {
+    "dependsOn": [
+      "Rashi on Nazir 16b:5:1"
+    ],
+    "generatedAt": "2026-10-30T03:01:50.639Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 16b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור\"ל אמר</strong> - אי הדר אמר אהא כמו שקבלתי בבית הקברות חייל עליה ואע\"ג דלא מפרש אהא נזיר ואי לא לא שאם נטמא למתים ושותה יין אין בכך כלום:"
+  },
+  "Rashi on Nazir 16b:6:1": {
+    "dependsOn": [
+      "Nazir 16b:6",
+      "Rashi on Nazir 16b:5:1",
+      "Rashi on Nazir 16b:5:2",
+      "Tosafot on Nazir 16b:6:1",
+      "Tosafot on Nazir 16b:6:2",
+      "Steinsaltz on Nazir 16b:6",
+      "Nazir 16b",
+      "Nazir 16b:3",
+      "Nazir 16b:4",
+      "Rashi on Nazir 16b:3:1",
+      "Rashi on Nazir 16b:3:2"
+    ],
+    "generatedAt": "2026-10-30T03:10:37.607Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 16b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ל</strong> - מסקנא דמתניתין בהכי הוי דמי שנזר בבית הקברות אינו בתורת טומאה ואינו בתורת קרבן טהרה ליסתור ולהביא קרבן טהרה לפי שאין נזירות חל עליו כלל:"
+  },
+  "Rashi on Nazir 16b:7:1": {
+    "dependsOn": [
+      "Nazir 16b:7"
+    ],
+    "generatedAt": "2026-10-30T03:12:53.021Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 16b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי שהיה טמא ונזר</strong> - דהיינו נמי מי שעומד בבית הקברות:"
+  },
+  "Tosafot on Nazir 16b:1:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 16a:13:1",
+      "Tosafot on Nazir 16b:1:2",
+      "Nazir 16b:1",
+      "Tosafot on Nazir 2a:1:1",
+      "Tosafot on Nazir 2a:2:1",
+      "Tosafot on Nazir 5a:1:1",
+      "Rashi on Nazir 16b:1:1"
+    ],
+    "generatedAt": "2026-10-30T02:36:32.279Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 16b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קסבר ר\"א כל אחר מלאת ז' סותר</strong> - ולכך אומר דהריני נזיר סתם ונטמא יום שלשים [דאינו] סותר דלאחר מלאת הוא לרב מתנא משום דאמר מקצת היום ככולו ולבר פדא מיום כ\"ט נשלם נזירותו:"
+  },
+  "Tosafot on Nazir 16b:1:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 16b:1:1",
+      "Tosafot on Nazir 16a:5:1",
+      "Tosafot on Nazir 16a:5:2",
+      "Tosafot on Nazir 15b:1:1"
+    ],
+    "generatedAt": "2026-10-30T02:37:43.139Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 16b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא פליג ר\"א דאמר שלימים</strong> - לרב מתנא חשיב ליה כאילו אמר שלימים ולא אמר מקצת היום ככולו הילכך סותר הכל ולבר פדא נמי כי אמר שלשים בפירוש חשיב כאילו אמר שלימים דלא אמר מקצת היום ככולו הילכך לא פליג ר\"א כלל:"
+  },
+  "Tosafot on Nazir 16b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T02:47:29.586Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 16b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי שנדר והוא בבית הקברות</strong> - וה\"ה אם היה טמא ונדר ובגמ' מדמה להו:"
+  },
+  "Tosafot on Nazir 16b:3:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 16b:3:1",
+      "Tosafot on Nazir 16b:3:3",
+      "Nazir 16b:4",
+      "Nazir 16b:5",
+      "Nazir 16b:6",
+      "Nazir 16b:7",
+      "Nazir 17a:1",
+      "Nazir 17a:2",
+      "Nazir 17a:3",
+      "Nazir 17a:4",
+      "Nazir 17a:5",
+      "Nazir 17a:6",
+      "Nazir 17a:7",
+      "Nazir 17a:8",
+      "Nazir 18b:1",
+      "Nazir 18b:2",
+      "Nazir 18b:3",
+      "Nazir 18a:3",
+      "Nazir 18a:4",
+      "Nazir 18a:5"
+    ],
+    "generatedAt": "2026-10-30T02:49:56.407Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 16b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואפי' היה שם ל' אין עולין לו מן המנין</strong> - לענין דמונה והולך דאינו מביא קרבן טומאה דרחמנא מיעטיה מקרבן [כדמפרש] בגמרא אבל הא פשיטא דהימים אינן עולין דאפי' מנה בטהרה ונטמא סותר את הראשונים וכ\"ש שאין עולין לו כי טמא מעיקרא:"
+  },
+  "Tosafot on Nazir 16b:3:3": {
+    "dependsOn": [
+      "Nazir 16b:3",
+      "Tosafot on Nazir 16b:3:1",
+      "Tosafot on Nazir 16b:3:2",
+      "Tosafot on Nazir 16b:3:3",
+      "Nazir 17a:5",
+      "Nazir 18b:8",
+      "Nazir 19a:10",
+      "Nazir 19a:5"
+    ],
+    "generatedAt": "2026-10-30T02:53:03.426Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 16b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יצא ונכנס עולה לו מן המנין</strong> - מפרש בגמ' יצא ונכנס והזה ושנה ונכנס בו ביום שטבל בשביעי עולין מן המנין לענין זה כשנטמא סותר אותו מנין ומתחייב <span class=\"parenthesized\">(אותו)</span> קרבן טומאה דבאותו יום עצמו מתחיל נזירות טהרה ובגמרא פליגי ר' יוחנן ור\"ל כשנטהר אם צריך לחזור ולקבל נזירות או סגי ליה במה שקיבל בימי טומאתו:"
+  },
+  "Tosafot on Nazir 16b:4:1": {
+    "dependsOn": [
+      "Nazir 16b:4",
+      "Rashi on Nazir 16b:4:1",
+      "Nazir 19a:10",
+      "Nazir 19b:1",
+      "Nazir 19b:2",
+      "Steinsaltz on Nazir 16b:4",
+      "Steinsaltz comment #1 on Nazir 16b:4",
+      "Steinsaltz comment #2 on Nazir 16b:4"
+    ],
+    "generatedAt": "2026-10-30T02:59:31.612Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 16b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר\"א אומר לא בו ביום</strong> - כלומר אם נכנס בו ביום שנטהר אין מביא קרבן טומאה עד יום שני שהתחיל הטהרה שנאמר והימים הראשונים יפלו דבעינן בסותר שיסתור ב' ימים דאז מביא קרבן טומאה וה\"ה דמצי למיתני פלוגתייהו בנזיר טהור שנטמא ביום ראשון של קבלת נזירותו וביום נטמא בתחילה דלרבנן מביא קרבן טומאה ולר\"א אינו מביא קרבן טומאה אלא מונה ז' ימי טומאה ומזה ושונה וטובל ומונה כ\"ט יום ליום הראשון שמנה ומגלח ביום ל' שהוא ל' ואחד לנזירותו:"
+  },
+  "Tosafot on Nazir 16b:5:1": {
+    "dependsOn": [
+      "Rashi on Nazir 16b:5:1",
+      "Rashi on Nazir 16b:5:2",
+      "Tosafot on Nazir 16b:5:1",
+      "Tosafot on Nazir 16b:5:2",
+      "Steinsaltz comment #1 on Nazir 16b:5",
+      "Steinsaltz comment #2 on Nazir 16b:5",
+      "Nazir 16b:5",
+      "Nazir 16b:7",
+      "Tosafot on Nazir 16b:5:3",
+      "Tosafot on Nazir 16b:5:4",
+      "Versions on Nazir 16b:5"
+    ],
+    "generatedAt": "2026-10-30T03:03:49.848Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 16b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי יוחנן אמר נזירות חלה עליו</strong> - לכל מילי ולוקה בעודו שם אטומאה אם התרו בו לצאת ממנו <span class=\"parenthesized\">(יוצא)</span> ואתגלחת ואשתיית יין וכשיטהר אין צריך לחזור ולקבל עליו נזירות:"
+  },
+  "Tosafot on Nazir 16b:5:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 16b:5:1",
+      "Tosafot on Nazir 16b:5:2",
+      "Tosafot on Nazir 16b:5:3",
+      "Rashi on Nazir 16b:5:1",
+      "Rashi on Nazir 16b:5:2"
+    ],
+    "generatedAt": "2026-10-30T03:05:06.464Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 16b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיתלא תליא וקאי</strong> - ומ\"מ נ\"ל דאסור:"
+  },
+  "Tosafot on Nazir 16b:5:3": {
+    "dependsOn": [
+      "Tosafot on Nazir 16b:5:1",
+      "Tosafot on Nazir 16b:5:2",
+      "Tosafot on Nazir 16b:5:4",
+      "Rashi on Nazir 16b:5:1",
+      "Rashi on Nazir 16b:5:2"
+    ],
+    "generatedAt": "2026-10-30T03:06:24.105Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 16b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי משכחת טהרה חייל</strong> - פירוש דין נזירות טהרה לענין הבאת קרבן מיתלא תליא וקאי עד שיצא משם ויטהר וכי יטהר חייל ממילא עליה לענין הבאת קרבן ובקיצור הוה מצי למימר דחייל עליה נזירות מהשתא ולקי על תגלחת ויין וטומאה:"
+  },
+  "Tosafot on Nazir 16b:5:4": {
+    "dependsOn": [
+      "Rashi on Nazir 16b:5:1",
+      "Rashi on Nazir 16b:5:2",
+      "Tosafot on Nedarim 4a:2:1",
+      "Nedarim 4a:1",
+      "Nedarim 4a:2",
+      "Nedarim 4a:3",
+      "Tosafot on Nazir 16b:5:1",
+      "Tosafot on Nazir 16b:5:2",
+      "Tosafot on Nazir 16b:5:3",
+      "Tosafot on Nazir 16b:5:4"
+    ],
+    "generatedAt": "2026-10-30T03:08:28.231Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 16b:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וריש לקיש אמר אין נזירות חייל עליה</strong> - בעודו טמא עד שיטהר ואז יצטרך לחזור ולקבל עליו הנזירות ו<span class=\"rashi-quotation\">בקונטרס</span> פי' דבקבלה מועטת סגי לומר יחול עליו הנזירות אומר הריני כמו שנדרתי ובפ\"ק דנדרים <span class=\"parenthesized\">(דף ד.)</span> אמרי' לר\"ל דעובר בבל תאחר אם אינו מקבל נזירות עליו מיד כשיטהר:"
+  },
+  "Tosafot on Nazir 16b:6:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 16b:6:2",
+      "Rashi on Nazir 16b:6:1"
+    ],
+    "generatedAt": "2026-10-30T03:11:33.220Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 16b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קרבן טומאה הוא דלא מייתי</strong> - דמעטיה קרא לקמן הא מיחל חייל עליה נזירות לענין דלקי אטומאה אתגלחת ואיין:"
+  },
+  "Tosafot on Nazir 16b:6:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 16b:6:1"
+    ],
+    "generatedAt": "2026-10-30T03:12:13.100Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 16b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ל אינו בתורת טומאה</strong> - דלא חייל נזירות כלל:"
+  }
+}

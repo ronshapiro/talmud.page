@@ -1,0 +1,392 @@
+{
+  "Rashi on Nazir 19a:1:1": {
+    "dependsOn": [
+      "Rashi on Nazir 19a:1:2"
+    ],
+    "generatedAt": "2026-10-30T05:44:27.903Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 19a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ל והזיר</strong> - לה' את ימי נזרו והביא [כבש בן שנתו לאשם] לפיכך הקדים הכתוב והזיר להבאת אשמו לומר לך אע\"פ שלא הביא הזיר:"
+  },
+  "Rashi on Nazir 19a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T05:44:55.607Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 19a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אימתי הזיר</strong> - אימתי מתחיל למנות ימי נזירות בזמן שהביא:"
+  },
+  "Rashi on Nazir 19a:2:1": {
+    "dependsOn": [
+      "Nazir 19a:2",
+      "Rashi on Nazir 19a:3:1",
+      "Rashi on Nazir 19a:3:2"
+    ],
+    "generatedAt": "2026-10-30T05:49:42.795Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 19a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאן תנא להא דת\"ר האשה שנדרה כו' ואינה מביאה עולת העוף</strong> - למאן איצטריך למיתני דאינה מביאה עולת העוף:"
+  },
+  "Rashi on Nazir 19a:3:1": {
+    "dependsOn": [
+      "Nazir 19a:3",
+      "Rashi on Nazir 19a:3:1",
+      "Rashi on Nazir 19a:3:2",
+      "Rashi on Nazir 19a:4:3",
+      "Rashi on Nazir 2a:1:1"
+    ],
+    "generatedAt": "2026-10-30T05:53:08.548Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 19a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רב חסדא ר' ישמעאל היא</strong> - דלדידיה חשיב ליה עולת העוף דאי לרבנן לא איצטריכא ליה למיתני שאינה מביאה עולת העוף דהא אמרינן עולת העוף לא מיעכבא דלא אתיא אלא משום דורון בעלמא ופשיטא שאינה צריכה להביא:"
+  },
+  "Rashi on Nazir 19a:3:2": {
+    "dependsOn": [
+      "Rashi on Nazir 19a:3:1",
+      "Rashi on Nazir 19a:4:1",
+      "Nazir 19a:4",
+      "Rashi on Nazir 19a:4:2",
+      "Rashi on Nazir 19a:4:3",
+      "Steinsaltz on Nazir 19a:3:1"
+    ],
+    "generatedAt": "2026-10-30T05:54:43.263Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 19a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשון אחר אמר לנו המורה</strong> - אמר רב חסדא ר' ישמעאל היא ומאי קסבר כו':"
+  },
+  "Rashi on Nazir 19a:4:1": {
+    "dependsOn": [
+      "Rashi on Nazir 19a:4:1",
+      "Rashi on Nazir 19a:4:2",
+      "Rashi on Nazir 19a:4:3",
+      "Nazir 19a:4"
+    ],
+    "generatedAt": "2026-10-30T05:57:41.427Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 19a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיגז גייז</strong> - דמהשתא ואילך לא מיחייבא בנזירות עולת העוף נמי לייתי:"
+  },
+  "Rashi on Nazir 19a:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T05:58:06.367Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 19a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעולם מעיקר עקר</strong> - והאי דמביאה חטאת העוף לא משום נזירות אלא משום שנזרה עצמה מן היין:"
+  },
+  "Rashi on Nazir 19a:4:3": {
+    "dependsOn": [
+      "Rashi on Nazir 19a:4:1",
+      "Rashi on Nazir 19a:4:2",
+      "Nazir 19a:3",
+      "Rashi on Nazir 19a:2:1",
+      "Rashi on Nazir 19a:3:1",
+      "Rashi on Nazir 19a:3:2"
+    ],
+    "generatedAt": "2026-10-30T05:59:19.380Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 19a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וסבר לה כרבי אלעזר הקפר</strong> - אבל עולת העוף לא אתיא ליה אלא משום נזירות והילכך מיתוקמא לה כר' ישמעאל ולא כרבנן דאי רבנן כיון דאמרי משום דורון בעלמא קמייתי ליה ולא משום נזירות הכא נמי מצי מייתי ליה ולית ביה משום הבאת חולין לעזרה אבל לרבי ישמעאל כיון דמשום חובה קמייתי ליה ובעל מיעקר עקר ליה אי אפשר ליה להביא עולת העוף דאי מייתי ליה נמצא שמביא חולין לעזרה:"
+  },
+  "Rashi on Nazir 19a:6:1": {
+    "dependsOn": [
+      "Nazir 19a:6",
+      "Rashi on Nazir 19a:6:2",
+      "Rashi on Nazir 19a:1:1",
+      "Rashi on Nazir 19a:1:2",
+      "Rashi on Nazir 19a:4:1",
+      "Rashi on Nazir 2a:1:1"
+    ],
+    "generatedAt": "2026-10-30T06:06:29.001Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 19a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא האי קרא בנזיר טמא כתיב ואנן אפילו נזיר טהור קאמרינן</strong> - דקרי חוטא משום שציער עצמו מן היין:"
+  },
+  "Rashi on Nazir 19a:6:2": {
+    "dependsOn": [
+      "Rashi on Nazir 19a:6:1",
+      "Rashi on Nazir 19a:5:1",
+      "Rashi on Nazir 19a:4:1",
+      "Rashi on Nazir 19a:4:2",
+      "Rashi on Nazir 19a:4:3"
+    ],
+    "generatedAt": "2026-10-30T06:07:33.147Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 19a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לר\"א הקפר נזיר טהור נמי הוי חוטא</strong> - ודין הוא דהוה ליה למיכתביה להאי וכפר עליו מאשר חטא על הנפש בנזיר טהור והאי דכתביה בנזיר טמא הואיל ושנה בחטא שכבר הזיר עצמו מן היין ועכשיו שונה בחטא שהיה לו להזהר מן הטומאה ונטמא:"
+  },
+  "Rashi on Nazir 19a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T06:10:00.221Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 19a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום דיצא</strong> - בתמיה חל עליו נזירות והא הוי טמא בזמן שעמד בבית הקברות:"
+  },
+  "Rashi on Nazir 19a:7:2": {
+    "dependsOn": [
+      "Nazir 19a:7",
+      "Rashi on Nazir 19a:7:1"
+    ],
+    "generatedAt": "2026-10-30T06:10:48.316Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 19a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר שמואל כגון שיצא והזה כו'</strong> - כדמפרש לעיל:"
+  },
+  "Rashi on Nazir 19a:8:1": {
+    "dependsOn": [
+      "Rashi on Nazir 19a:8:2"
+    ],
+    "generatedAt": "2026-10-30T06:14:42.095Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 19a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואלא כי נכנס</strong> - ונטמא אמרינן דעולין לו מן המנין וחל עליה נזירות דטהרה הא לא נכנס והוי טהור אין עולין לו מן המנין ולא חיילא עליה נזירות דטהרה אדרבה כי לא נכנס והוי טהור כ\"ש דחל עליה נזירות דטהרה:"
+  },
+  "Rashi on Nazir 19a:8:2": {
+    "dependsOn": [
+      "Rashi on Nazir 19a:8:1"
+    ],
+    "generatedAt": "2026-10-30T06:16:03.083Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 19a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אפילו נכנס</strong> - דס\"ד דכיון דנכנס הו\"ל כמעיקרו שנזר והוא בבית הקברות ולא יהו עולין לו מן המנין ולא חיילא עליה נזירות דטהרה קמשמע לן כיון שיצא והזה ושנה וטבל דהו\"ל נזיר טהור וחיילא עליה נזירות דטהרה ואי הדר איטמי מביא קרבן טומאה:"
+  },
+  "Tosafot on Nazir 19a:10:1": {
+    "dependsOn": [
+      "Nazir 19a:10",
+      "Tosafot on Nazir 16b:4:1",
+      "Rashi on Nazir 19b:1:1",
+      "Rashi on Nazir 19b:1:2",
+      "Steinsaltz on Nazir 19a:10"
+    ],
+    "generatedAt": "2026-10-30T06:25:30.212Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 19a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא אמר רבי אליעזר</strong> - דבעינן שמנה ימים שנים אלא בטמא שנדר כלפי דאמר קרא כי טמא נזרו משמע דבטומאה נדר ואהא קאמר והימים הראשונים יפלו דבעינן ימים שנים צריך עיון מנלן למידרש הכי אליבא דר\"א דהא דרבנן דלא דרשינן ימים שנים לא מיפלג קרא בין טמא שנדר לטהור שנדר:"
+  },
+  "Tosafot on Nazir 19a:1:1": {
+    "dependsOn": [
+      "Nazir 19a:1"
+    ],
+    "generatedAt": "2026-10-30T05:48:45.900Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 19a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ל והזיר והביא אשמו אע\"פ שלא הביא אשמו והזיר</strong> - פירוש חייל עליה נזירות טהרה דבהכי מישתעי קרא וא\"ת אם כן לרבנן ההוא למה לי תיפוק ליה מוהזיר ברישא והדר והביא וי\"ל אי לאו ההוא הוה דרשינן [והזיר] לרבות אע\"פ שלא הביא עולתו ולעולם אשם מעכב כתב רחמנא ההוא ומגלי דאית לן למדרש והזיר אע\"פ שלא הביא ומש\"ה צריכי למיכתב תרתי:"
+  },
+  "Tosafot on Nazir 19a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T05:50:17.540Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 19a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונטמאה</strong> - והפרישה שתי תורים אחד לעולה ואחד לחטאת ואשם בהמה להביא קרבנות נזיר טמא ואח\"כ היפר לה בעלה ונמצא שהנדר נעקר למפרע וכאילו לא היתה נזירה כלל מביאה חטאת העוף [ואינה מביאה] עולת העוף כדמפרש ואזיל:"
+  },
+  "Tosafot on Nazir 19a:3:1": {
+    "dependsOn": [
+      "Nazir 19a:3",
+      "Nazir 18b:8",
+      "Nazir 18b:9",
+      "Tosafot on Nazir 19a:4:1",
+      "Tosafot on Nazir 19a:4:2",
+      "Tosafot on Nazir 19a:4:3",
+      "Tosafot on Nazir 19a:4:4",
+      "Tosafot on Nazir 18b:9:1"
+    ],
+    "generatedAt": "2026-10-30T05:56:51.578Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 19a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רב חסדא ר' ישמעאל היא</strong> - דמרבה לעיל מההוא אע\"פ שלא הביא עולתו אלמא עולת נזיר לאו דורון הוא וכפרה תלויה בה דאי כרבנן דאמרי לעיל עולה דורון הוא אמאי לא תביא עולת העוף אע\"פ דהפר לה בעלה ואינה נזירה אין כאן חולין דכל אימת מצי לאיתויי מייתי דורון [אלא] ודאי רבי ישמעאל היא דסבירא ליה עולה דנזיר לאו דורון הוא ואם תאמר כ\"ש דחטאת נמי לאו דורון הוא והיכי מייתי חטאת כי הפר לה ואין כאן נזירות למפרע וי\"ל משום דבסמוך מוקמינן לה כר\"א הקפר דצריכה כפרה על שהפרישה עצמה מן היין ואע\"ג שהפר לה הילכך חטאת מייתי לפי שמצינו בעלמא חטאת באה על הספק גם כאן בעלילה כל דהוא מביאה חטאת העוף אבל עולת העוף כיון דלאו דורון הוא לא מציא לאתויי כיון דהיפר לה בעלה:"
+  },
+  "Tosafot on Nazir 19a:4:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 19a:4:1",
+      "Tosafot on Nazir 19a:4:2",
+      "Rashi on Nazir 19a:4:1"
+    ],
+    "generatedAt": "2026-10-30T06:00:02.179Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 19a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[אי קסבר בעל] מיעקר קעקר</strong> - [נמצא] שלא חל עליה נזירות מעולם חטאת העוף נמי לא תייתי:"
+  },
+  "Tosafot on Nazir 19a:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-30T06:00:54.339Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 19a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי בעל מיגז גייז</strong> - פירוש מכאן ולהבא עולת העוף נמי תייתי דהא אתמול כי נטמא נזירה היתה ולקמן מיבעיא לן באידך פירקין <span class=\"parenthesized\">(דף כא:)</span> אי מיעקר קא עקר אי מיגז גייז:"
+  },
+  "Tosafot on Nazir 19a:4:3": {
+    "dependsOn": [
+      "Tosafot on Nazir 19a:4:1",
+      "Tosafot on Nazir 19a:4:2",
+      "Tosafot on Nazir 19a:4:3",
+      "Tosafot on Nazir 19a:4:4",
+      "Nazir 19a:4"
+    ],
+    "generatedAt": "2026-10-30T06:01:42.397Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 19a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעולם קסבר מיעקר קא עקר</strong> - דאי מיגז גייז עולת העוף ואשם בעי איתויי:"
+  },
+  "Tosafot on Nazir 19a:4:4": {
+    "dependsOn": [
+      "Tosafot on Nazir 19a:4:1",
+      "Tosafot on Nazir 19a:4:2",
+      "Tosafot on Nazir 19a:4:3",
+      "Tosafot on Nazir 19a:4:4",
+      "Nazir 19a:4"
+    ],
+    "generatedAt": "2026-10-30T06:04:21.821Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 19a:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סבר כר\"א הקפר</strong> - דאף נזיר טהור חוטא הוי הלכך זאת שנטמאה כמו כן בעיא כפרה דמצינו חטאת העוף באה על הספק אם כן עולה לא מייתי:"
+  },
+  "Tosafot on Nazir 19a:5:1": {
+    "dependsOn": [
+      "Nazir 19a:5"
+    ],
+    "generatedAt": "2026-10-30T06:05:15.832Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 19a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המצער עצמו מכל דבר על אחת כמה וכמה</strong> - אלמא חוטא הוא לכך מייתי חטאת העוף ודוקא אם נטמאה אבל אם לא נטמאה והפר לה בעלה נהי נמי דבעיא כפרה על שציערה עצמה לא תביא כלום משום שאם לא היפר [לה] מביאה חטאת בהמה שאינו בא על הספק ואם כן עתה כשהיפר לה לא תביאנו וחטאת העוף לא מציא לאתויי כיון דמעיקרא אי לא היפר לה לא היתה מביאתו א\"כ כשהיפר לה לא ניתן לה דין חדש:"
+  },
+  "Tosafot on Nazir 19a:6:1": {
+    "dependsOn": [
+      "Nazir 19a:6",
+      "Tosafot on Nazir 19a:6:2",
+      "Rashi on Nazir 19a:6:1"
+    ],
+    "generatedAt": "2026-10-30T06:08:40.641Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 19a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואנן אפילו נזיר טהור קאמרינן</strong> - כלומר אית ליה לר\"א הקפר בעלמא דאפילו נזיר טהור חוטא דבעלמא מייתי ליה אנזיר טהור וגם הק\"ו שלו שייך גם בנזיר טהור:"
+  },
+  "Tosafot on Nazir 19a:6:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 19a:6:1",
+      "Rashi on Nazir 19a:6:1",
+      "Rashi on Nazir 19a:6:2"
+    ],
+    "generatedAt": "2026-10-30T06:09:21.329Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 19a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והיינו טעמא דכתיב קרא בנזיר טמא הואיל ושנה בחטא</strong> - שלא נזהר מטומאה והאריך צער על צערו מלהנות מיין:"
+  },
+  "Tosafot on Nazir 19a:7:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 19a:7:1",
+      "Rashi on Nazir 19a:7:1",
+      "Rashi on Nazir 19a:7:2",
+      "Tosafot on Nazir 19a:6:1",
+      "Tosafot on Nazir 19a:8:1",
+      "Steinsaltz on Nazir 19a:7",
+      "Steinsaltz comment #1 on Nazir 19a:7",
+      "Nazir 19a:7"
+    ],
+    "generatedAt": "2026-10-30T06:13:35.176Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 19a:7:1"
+    ],
+    "sourceText": "קתני יוצא ונכנס וקס\"ד אפילו תוך שבעה משום הכי פריך משום דיצא חייל עליה נזירות ומשני כגון שיצא והזה ושנה וטבל ואיירי אפילו בשביעי דחייל עליה בשביעי טהרה משום דנדר בטומאה ולא בעי איתויי קרבן טומאה בשמיני:"
+  },
+  "Tosafot on Nazir 19a:8:1": {
+    "dependsOn": [
+      "Nazir 19a:8",
+      "Tosafot on Nazir 19a:8:2"
+    ],
+    "generatedAt": "2026-10-30T06:20:40.716Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 19a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא נכנס אין עולין</strong> - בתמיה אדרבה כי לא נכנס טפי סלקי ליה ממניינא וצ\"ע דלא סגי למיתני ונכנס משום דפליג ר\"א ואמר לא בו ביום וי\"ל מכל מקום לא הוה צריך למיתני <span class=\"parenthesized\">(אינו)</span> עולה מן המנין לאפוקי וה\"ל למיתני יצא [ונכנס] מביא קרבן טומאה:"
+  },
+  "Tosafot on Nazir 19a:8:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 19a:8:1",
+      "Rashi on Nazir 19a:8:1",
+      "Rashi on Nazir 19a:8:2"
+    ],
+    "generatedAt": "2026-10-30T06:21:50.996Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 19a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכי גרסינן לא מבעיא יצא כל אותו היום אלא אפילו נכנס בו ביום</strong> - דסד\"א לא סליק ליה <span class=\"parenthesized\">(חד)</span> מקצת טהרה משהזה עד שנטמא:"
+  }
+}

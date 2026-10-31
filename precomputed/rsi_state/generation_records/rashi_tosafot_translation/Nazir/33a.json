@@ -1,0 +1,61 @@
+{
+  "Rashi on Nazir 33a:1:1": {
+    "dependsOn": [
+      "Nazir 33a:1",
+      "Rashi on Nazir 32b:10:1",
+      "Rashi on Nazir 33a:1:2",
+      "Nazir 32b:1",
+      "Nazir 32b:2",
+      "Nazir 32b:3",
+      "Nazir 32b:6",
+      "Nazir 32b:7",
+      "Nazir 32b:8",
+      "Steinsaltz on Nazir 33a:1",
+      "Versions on Nazir 33a:1",
+      "Tosafot on Nazir 33a:2:1",
+      "Tosafot on Nazir 32b:10:1",
+      "Steinsaltz comment #1 on Nazir 33a:1",
+      "Steinsaltz comment #1 on Nazir 32b:10"
+    ],
+    "generatedAt": "2026-10-30T23:42:07.610Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 33a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אביי אמר</strong> - כגון דאמר אי נמי לאו פלוני הוא וחבריה אמר הריני נזיר שזה פלוני אי נמי לאו פלוני הוא אי הוי נמי נזיר:"
+  },
+  "Rashi on Nazir 33a:1:2": {
+    "dependsOn": [
+      "Nazir 33a:1",
+      "Rashi on Nazir 33a:1:1",
+      "Nazir 32b:9"
+    ],
+    "generatedAt": "2026-10-30T23:43:01.394Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 33a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומאי לא נתקיימו דבריו</strong> - דקאמרי ב\"ה הכי קאמרי לא מיבעיא כי נתקיימו דבריו הראשונים הוי נזיר אלא אפילו לא נתקיימו דבריו הראשונים הרי זה נזיר משום דבריו האחרונים:"
+  },
+  "Tosafot on Nazir 33a:2:1": {
+    "dependsOn": [
+      "Nazir 33a:2",
+      "Steinsaltz on Nazir 33a:2",
+      "Steinsaltz comment #1 on Nazir 33a:2",
+      "Nazir 32b:7",
+      "Nazir 32b:8",
+      "Nazir 32b:9",
+      "Rashi on Nazir 34a:8:2",
+      "Tosafot on Nazir 34a:4:1"
+    ],
+    "generatedAt": "2026-10-30T23:46:17.167Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 33a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרתיע לאחוריו אינו נזיר</strong> - הא אתא לקמן הוי נזיר מני אי כב\"ש אפי' בהרתיע לאחוריו הוי נזיר וכב\"ה נמי לא דלב\"ה כיון דאילו אתא לקמן הוי נזיר אותו שנתקיימו דבריו כי נמי הרתיע הוי ספק נזיר אילימא ר' טרפון מי הוי ספק נזיר כיון דבשעה שנדר לא ידע אם פלוני או לא:"
+  }
+}

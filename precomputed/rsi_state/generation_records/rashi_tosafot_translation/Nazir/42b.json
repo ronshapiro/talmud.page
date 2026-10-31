@@ -1,0 +1,393 @@
+{
+  "Rashi on Nazir 42b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T11:28:02.626Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 42b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקרא מלא דבר הכתוב</strong> - בנזיר לא יטמא להם במותם להזהירו על הטומאה וכשחזר ואמר כל ימי הזירו לה' על כל נפשות מת לא יבא חזר והזהירו על ביאת אהל שבו מת לומר לך שאם ניטמא במת וחזר ונכנס באהל שיש בו מת חייב שתים:"
+  },
+  "Rashi on Nazir 42b:1:2": {
+    "dependsOn": [
+      "Rashi on Nazir 42b:1:1",
+      "Steinsaltz on Nazir 42b:1"
+    ],
+    "generatedAt": "2026-10-31T11:28:35.509Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 42b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל טומאה וטומאה</strong> - אבל אם נטמא במת וחזר ונגע במת אחר בעוד שהוא נוגע במת ראשון אע\"פ שהתרו בו אינו חייב אלא אחת דהא מיטמא וקאי:"
+  },
+  "Rashi on Nazir 42b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T11:30:11.550Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 42b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאמר רב הונא נזיר שהיה עומד בבית הקברות והושיטו לו מתו ומת אחר</strong> - כלומר או מתו או מת אחר והאי דקאמר מתו לאו דוקא שהוא אינו מותר ליטמא בשום קרוב שלו לא באביו ולא באמו:"
+  },
+  "Rashi on Nazir 42b:2:2": {
+    "dependsOn": [
+      "Rashi on Nazir 42b:2:1",
+      "Nazir 42b:1",
+      "Tosafot on Nazir 42b:2:1",
+      "Rashi on Nazir 42b:3:1"
+    ],
+    "generatedAt": "2026-10-31T11:31:18.526Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 42b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חייב</strong> - מלקות אף על טומאות שניהן:"
+  },
+  "Rashi on Nazir 42b:3:1": {
+    "dependsOn": [
+      "Rashi on Nazir 42b:3:2"
+    ],
+    "generatedAt": "2026-10-31T11:34:25.426Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 42b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איתיביה אביי כהן שהיה לו מת מונח על כתיפו כו' יכול יהא חייב ת\"ל ומן המקדש לא יצא ולא יחלל</strong> - וה\"ה לכהן הדיוט ונזיר נמי:"
+  },
+  "Rashi on Nazir 42b:3:2": {
+    "dependsOn": [
+      "Rashi on Nazir 42b:3:1",
+      "Nazir 42b:3"
+    ],
+    "generatedAt": "2026-10-31T11:35:21.275Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 42b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאינו מחולל</strong> - שעדיין לא נטמא בו דיבר הכתוב לא יטמא ואם נטמא לוקה יצא זה שנוגע במת אחר שכבר הוא מחולל באותו מת שמונח על כתיפו וש\"מ דאילו בטומאה וטומאה אינו חייב וקשיא לרב יוסף דאחד נזיר ואחד כהן הדיוט ואחד כהן גדול כולן הוקשו לענין טומאה שלא ליטמא במת:"
+  },
+  "Rashi on Nazir 42b:4:1": {
+    "dependsOn": [
+      "Nazir 42b:4"
+    ],
+    "generatedAt": "2026-10-31T11:39:48.911Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 42b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ל ותיקשי לך מתניתין</strong> - אברייתא דהא תנן דאפילו בטומאה וטומאה חייב על כל אחת ואחת:"
+  },
+  "Rashi on Nazir 42b:5:1": {
+    "dependsOn": [
+      "Nazir 42b:5"
+    ],
+    "generatedAt": "2026-10-31T11:42:21.835Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 42b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא בחיבורין</strong> - דנגע במת זה והלך ונטמא במת אחר ודכוותה נמי במתני' דמיחייב על כל אחת ואחת כגון שנטמא בזה והלך ונגע במת אחר וכי תניא הכא דאינו חייב אלא אחת בטומאת חיבורין שבעוד שמונח לו מת על כתיפו נגע במת אחר וכדתני לה בהדיא דהכא הוא דאינו חייב אלא אחת דכטומאה אחת דמי הואיל ולא נסתלק מטומאה ראשונה:"
+  },
+  "Rashi on Nazir 42b:6:1": {
+    "dependsOn": [
+      "Nazir 42b:6",
+      "Rashi on Nazir 42b:5:1",
+      "Rashi on Nazir 42b:6:1",
+      "Rashi on Nazir 42b:6:2",
+      "Rashi on Nazir 42b:6:3",
+      "Rashi on Nazir 42b:6:4"
+    ],
+    "generatedAt": "2026-10-31T11:47:55.847Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 42b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וטומאת חיבורין</strong> - מי הויא לה דאורייתא כחדא טומאה משום דהוי מחובר עדיין במת ראשון קאמרת לה דכי הדר נגע במת זה הויא לה לכולה חדא טומאה מדאורייתא:"
+  },
+  "Rashi on Nazir 42b:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T11:48:53.751Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 42b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא אמר רב יצחק בר יוסף לא אמרו טומאה בחיבורין</strong> - אם אדם נוגע ידו במת ואוחז בו וידו אחרת נתונה ביד חבירו לא אמרת שיהא גם אותו חבירו כמי שהוא מחובר ונוגע בטומאה זו אלא לענין קדשים ותרומה שאינו יכול לאכול בהן עד שבעה אבל לענין נזיר לסתור נזירותו ולהביא קרבן על הטומאה ולעושה פסח שלא לעשותו בשביל שהוא טמא לא אמרינן שתהא טומאה בחיבורין:"
+  },
+  "Rashi on Nazir 42b:6:3": {
+    "dependsOn": [
+      "Rashi on Nazir 42b:6:1",
+      "Rashi on Nazir 42b:6:2",
+      "Rashi on Nazir 42b:6:4",
+      "Nazir 42b:5",
+      "Rashi on Nazir 42b:5:1"
+    ],
+    "generatedAt": "2026-10-31T11:49:40.627Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 42b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי אמרת דמדאורייתא</strong> - הוי חשוב טומאת חיבורין כטומאה אריכתא:"
+  },
+  "Rashi on Nazir 42b:6:4": {
+    "dependsOn": [
+      "Rashi on Nazir 42b:6:1",
+      "Rashi on Nazir 42b:6:2",
+      "Rashi on Nazir 42b:6:3"
+    ],
+    "generatedAt": "2026-10-31T11:50:29.315Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 42b:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי שנא</strong> - נזיר ועושה פסח מקדשים ותרומה:"
+  },
+  "Rashi on Nazir 42b:7:1": {
+    "dependsOn": [
+      "Nazir 42b:7",
+      "Rashi on Nazir 42b:6:1",
+      "Rashi on Nazir 42b:6:2",
+      "Rashi on Nazir 42b:6:3",
+      "Rashi on Nazir 42b:6:4",
+      "Nazir 42b:3",
+      "Rashi on Nazir 42b:3:2"
+    ],
+    "generatedAt": "2026-10-31T11:53:35.956Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 42b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג כאן בחיבורי אדם באדם כאן בחיבורי אדם במת</strong> - כלומר מי דמי ההוא בחיבורי אדם באדם שזה נוגע במת והוא בחבירו ומש\"ה לא חשיבא ליה טומאת חיבורין לענין נזיר ועושה פסח אבל הכא טומאת חיבורי [אדם] במת הויא ומשום הכי הויא לה טומאת חיבור חשיבא כחדא ואינו חייב אלא אחת דהא מיטמא וקאי ואמר מר שמי שאינו מחולל יצא זה שהוא מחולל והוקשו נזיר וכהנים כאחת לענין הפרשת טומאה:"
+  },
+  "Rashi on Nazir 42b:9:1": {
+    "dependsOn": [
+      "Nazir 42b:9",
+      "Rashi on Nazir 42b:9:1",
+      "Rashi on Nazir 42b:9:2"
+    ],
+    "generatedAt": "2026-10-31T11:59:31.109Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 42b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טומאה וביאה נמי הא מיטמא ליה</strong> - קודם שנאהל באהל ואמאי מיחייב ואי נמי מכיון דנכנס באהל שהמת שם הוה ליה טמא וכי הדר נגע אמאי חייב:"
+  },
+  "Rashi on Nazir 42b:9:2": {
+    "dependsOn": [
+      "Nazir 42b:9",
+      "Rashi on Nazir 42b:9:1",
+      "Nazir 42b:3"
+    ],
+    "generatedAt": "2026-10-31T12:00:38.083Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 42b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כאן בבית כאן בשדה</strong> - כי אמרינן אנן דחייב על הביאה ועל הטומאה כגון דנכנס בבית שהמת לתוכו דטומאה וביאה בהדי הדדי אתיין ואידך דאמרן יצא זה שמחולל ועומד כגון שנגע במת שבשדה והדר נכנס באהל שמת תחתיו דפטור לפי שכבר הוא מחולל ועומד:"
+  },
+  "Tosafot on Nazir 42b:10:1": {
+    "dependsOn": [
+      "Nazir 42b:10",
+      "Rashi on Nazir 42b:9:1",
+      "Rashi on Nazir 42b:9:2",
+      "Tosafot on Nazir 42b:9:1"
+    ],
+    "generatedAt": "2026-10-31T12:04:08.874Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 42b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כאן בשדה</strong> - כלומר כל טומאה וטומאה בלא אהל לא משכחת שיתחייב שתים בבת אחת שהרי אם נגע בב' מתים בבת אחת כולה חדא התראה היא דהתראה דלאו דטומאה דידיה היא ואם היה טעון מת על כתיפו והתרו בו על הטומאה והושיטו לו מת אחר מחולל ועומד הוא ואין כאן תוספת טומאה מן השני. מהר\"ם ופ\"ה קשה להבין:"
+  },
+  "Tosafot on Nazir 42b:1:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 42b:1:1",
+      "Tosafot on Nazir 42b:5:1",
+      "Tosafot on Nazir 42b:5:2"
+    ],
+    "generatedAt": "2026-10-31T11:29:43.254Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 42b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רבה בר רב כהנא מקרא מלא דבד הכתוב לא יטמא כשהוא אומר לא יבא</strong> - גבי נזיר כתיבי הני קראי להזהירו על הטומאה להזהירו על הביאה כדמפרש בסמוך כשנכנס לאהל המת אם [התרו] בו משום לא יטמא ומשום לא יבא לוקה שתים ושתיהם היו בבת אחת אבל טומאה לא משכחת לה שיתחייב שתים אם התרו בו אל תטמא ובסמוך מייתי מתני' לאותובי:"
+  },
+  "Tosafot on Nazir 42b:2:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 42b:2:1",
+      "Rashi on Nazir 42b:2:1",
+      "Rashi on Nazir 42b:2:2",
+      "Nazir 42b:2",
+      "Tosafot on Nazir 42b:1:1",
+      "Tosafot on Nazir 42b:3:1",
+      "Tosafot on Nazir 42b:4:1",
+      "Steinsaltz comment #1 on Nazir 42b:2",
+      "Steinsaltz on Nazir 42b:2"
+    ],
+    "generatedAt": "2026-10-31T11:33:47.602Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 42b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאמר רב הונא נזיר שעומד בבית הקברות והושיטו לו מתו</strong> - דעל הקברות הוא מוזהר ככ\"ג או מת אחר ונגע בו חייב ואמאי הא מיטמא וקיימא ש\"מ אפילו טומאה וטומאה:"
+  },
+  "Tosafot on Nazir 42b:3:1": {
+    "dependsOn": [
+      "Rashi on Nazir 42b:3:1",
+      "Rashi on Nazir 42b:3:2",
+      "Versions on Nazir 42b:3",
+      "Steinsaltz comment #1 on Nazir 42b:3",
+      "Torah Temimah on Torah, Leviticus 21:12:4",
+      "Steinsaltz on Nazir 42b:3",
+      "Nazir 42b:3",
+      "Tosafot on Nazir 43a:1:1",
+      "Tosafot on Nazir 42b:1:1",
+      "Tosafot on Nazir 42b:2:1"
+    ],
+    "generatedAt": "2026-10-31T11:39:04.887Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 42b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איתיביה אביי נזיר שהיה מת מונח לו על כתיפיו וכו' יכול יהא חייב ת\"ל להחלו</strong> - בספרי כתוב ת\"ל לא יחלל וי\"א דהא לא כתב גבי אזהרת טומאה וגם בסמוך אמר בהדיא דלהחלו אתא לדרשא ולהחלו בכהן כתיב ומדמי נזיר לכ\"ג דלקמן פרק כהן גדול <span class=\"parenthesized\">(נזיר דף מח.)</span> למידין מהדדי לג\"ש מאמו אמו:"
+  },
+  "Tosafot on Nazir 42b:4:1": {
+    "dependsOn": [
+      "Nazir 42b:4",
+      "Tosafot on Nazir 42b:4:1",
+      "Tosafot on Nazir 42b:2:1",
+      "Tosafot on Nazir 42b:3:1"
+    ],
+    "generatedAt": "2026-10-31T11:40:50.555Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 42b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ל</strong> - רב יוסף ותקשה לך מתניתין דתנן היה מטמא כל היום אינו חייב אלא אחת אמרו לו אל תטמא אל תטמא חייב על כל אחת ואחת אע\"ג דמחולל ועומד:"
+  },
+  "Tosafot on Nazir 42b:5:1": {
+    "dependsOn": [
+      "Nazir 42b:5",
+      "Tosafot on Nazir 42b:5:2",
+      "Rashi on Nazir 42b:5:1"
+    ],
+    "generatedAt": "2026-10-31T11:43:40.790Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 42b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא קשיא</strong> - אלא ע\"כ סמי הך ברייתא מקמי מתני':"
+  },
+  "Tosafot on Nazir 42b:5:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 42b:5:1",
+      "Nazir 42b:5",
+      "Rashi on Nazir 42b:5:1",
+      "Avodah Zarah 37b:7",
+      "Avodah Zarah 37b:8",
+      "Avodah Zarah 37b:9",
+      "Avodah Zarah 37b:10",
+      "Steinsaltz comment #1 on Nazir 42b:5",
+      "Steinsaltz comment #2 on Nazir 42b:5",
+      "Steinsaltz comment #3 on Nazir 42b:5",
+      "Steinsaltz on Nazir 42b:5",
+      "Gilyon HaShas on Nazir 42b:1",
+      "Tosafot on Niddah 57a:4:1",
+      "Nazir 42b:1",
+      "Nazir 42b:2"
+    ],
+    "generatedAt": "2026-10-31T11:46:55.579Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 42b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא קשיא</strong> - אביי בא לתרץ מתני' וברייתא כאן שהוא מחובר למת [והתרו בו] ומושיטים לו מת אחר לא מיחייב דה\"ל [מחולל] ועומד כאן שלא בחבורים שפירש כבר מהמת והושיטו לו מת אחר שפירש מן הראשון ואמרו לו אל תטמא אין כאן מחולל ועומד ותוספת אף בו ביום <span class=\"parenthesized\">(בשעה)</span> שנוגע במת הנוגע [בו] יטמא שבעת ימים כדדרשינן בפרק אין מעמידין <span class=\"parenthesized\">(ע' ז דף לז:)</span> כל אשר יגע בו הטמא יטמא שבעה ודיקרב מיסאב ואחרי שפירש תוספת טומאה:"
+  },
+  "Tosafot on Nazir 42b:6:1": {
+    "dependsOn": [
+      "Nazir 42b:6",
+      "Rashi on Nazir 42b:6:1",
+      "Rashi on Nazir 42b:6:2",
+      "Rashi on Nazir 42b:6:3",
+      "Rashi on Nazir 42b:6:4"
+    ],
+    "generatedAt": "2026-10-31T11:52:02.846Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 42b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וטומאה בחיבורין דאורייתא</strong> - כלומר וכי בעלמא שאר נוגע וכי יהיה הנוגע טמא משום דיקרב בדיקרב דאורייתא והאמר ר' יצחק בר יוסי [לא] אמרו טומאה בחיבורין פירוש דיקרב בדיקרב אלא לענין תרומה וקדשים בזה אמרינן טומאה שיהיה כנוגע במת לטמא תרומה וקדשים אבל לנזיר לסתור ולהביא קרבן טומאה וכן לענין להמנע מעשות פסח לא העמידו דבריהן ואי דאורייתא מאי שנא:"
+  },
+  "Tosafot on Nazir 42b:7:1": {
+    "dependsOn": [
+      "Tosafot on Avodah Zarah 37b:8:1",
+      "Avodah Zarah 37b:7",
+      "Avodah Zarah 37b:8",
+      "Rashi on Avodah Zarah 37b:8:1",
+      "Rashi on Avodah Zarah 37b:8:2",
+      "Nazir 42b:6",
+      "Rashi on Nazir 42b:7:1",
+      "Steinsaltz comment #1 on Nazir 42b:7",
+      "Steinsaltz comment #2 on Nazir 42b:7",
+      "Kessef Mishneh on Mishneh Torah, Defilement by a Corpse 5:2:1"
+    ],
+    "generatedAt": "2026-10-31T11:56:31.947Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 42b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בחבורי אדם באדם</strong> - פי' ר\"י שהשלישי הנוגע בנוגע במת דההוא ודאי מדרבנן טמא שבעה דכי אמר דיקרב בדיקרב דאורייתא דוקא דנגע בנוגע במת ובפ' אין מעמידין <span class=\"parenthesized\">(גז\"ש)</span> אמר העיד יוסף בן יועזר דיקרב בדיקרב מסאב ופריך דאורייתא הוא כל אשר יגע בו הטמא יטמא ומסיק דאורייתא בחיבורין טמא שבעה שלא בחיבורין טומאת ערב ואתו אינהו וגזור אף שלא בחיבורין טמא שבעה ואתא יוסף בן יועזר ושרא ולפירוש ר\"י [נפרש] דאורייתא בחיבורין היינו נגע בנוגע במת אבל רש\"י פירש התם ואתו אינהו וגזרו שלא בחיבורין אף אם פירש לגמרי:"
+  },
+  "Tosafot on Nazir 42b:8:1": {
+    "dependsOn": [
+      "Nazir 42b:8",
+      "Nazir 42b:1",
+      "Nazir 42b:2"
+    ],
+    "generatedAt": "2026-10-31T11:58:48.668Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 42b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי שנא טומאה וטומאה דלא דהא מיטמא וקאי</strong> - ואין כאן תוספת [טומאה] קרינא ביה <span class=\"parenthesized\">(טומאה)</span> הא מיטמא וקאי ודומיא דטומאה וטומאה דלא לקי כגון מת על כתיפו והושיטו לו מת אחר קודם שפירש מן הראשון טומאה [וביאה] נמי היכא דמת על כתיפו והלך לאהל המת והתרו בו משום לא יבא ומשום לא יטמא הא מיטמא וקאי ואמאי לקי על הביאה ואי בנוגע במת ופירש ונכנס לאהל המת הא אפילו טומאה וטומאה לוקה שתים שהרי אין כאן מחולל ועומד:"
+  },
+  "Tosafot on Nazir 42b:9:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 42b:9:1",
+      "Nazir 42b:10",
+      "Rashi on Nazir 42b:9:1",
+      "Rashi on Nazir 42b:9:2"
+    ],
+    "generatedAt": "2026-10-31T12:01:58.225Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 42b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[כאן בבית]</strong> - נכנס בבית שבתוכו מת ולא נטמא קודם לכן אז לקי שתים על לא יטמא ועל לא יבא שבביאה אל הבית באו שתים עליו:"
+  }
+}

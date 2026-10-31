@@ -1,0 +1,459 @@
+{
+  "Rashi on Nazir 13a:10:1": {
+    "dependsOn": [
+      "Nazir 13a:10",
+      "Rashi on Nazir 13a:9:1",
+      "Rashi on Nazir 13a:10:2",
+      "Tosafot on Nazir 13a:10:1",
+      "Tosafot on Nazir 13a:10:2",
+      "Steinsaltz on Nazir 13a:9",
+      "Steinsaltz on Nazir 13a:10",
+      "Nazir 12a:9",
+      "Nazir 12a:10",
+      "Nazir 12a:11"
+    ],
+    "generatedAt": "2026-10-29T22:12:29.634Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 13a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או דילמא</strong> - אדיבורא דחבריה קאי ומשמע כאילו אמר ואני רחימנא ליה לאותו בן כוותיך ואהא נזיר לכשיהא לך בן ואהא לעיל נמי כי קא מיבעיא ליה ועלי מאי טעמא לא מיבעיא ליה בהאי לישנא הא לא אפשר דלאו לישנא מתרצתא היא דלימא ועלי לאוהבו כמותך:"
+  },
+  "Rashi on Nazir 13a:10:2": {
+    "dependsOn": [
+      "Nazir 13a:10",
+      "Rashi on Nazir 13a:10:2",
+      "Rashi on Nazir 13a:10:1",
+      "Rashi on Nazir 13a:1:1",
+      "Rashi on Nazir 13a:1:2",
+      "Rashi on Nazir 13a:2:1"
+    ],
+    "generatedAt": "2026-10-29T22:14:04.776Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 13a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם תימצי לומר כל באנפיה</strong> - בין אמר ועלי בין אמר ואני כסיפא ליה מילתא להדורי ליה למימר לכשיהא לי בן אהא נזיר דאי אדעתא לקבל עליו נזירות כשיהא לו בן למה לו להזיר בפני זה יזיר בינו לבין עצמו אלא מדקאמר ליה באנפיה איכא למימר דהכי אמר ליה אף אני אהא נמי נזיר כשיהא לך בן:"
+  },
+  "Rashi on Nazir 13a:1:1": {
+    "dependsOn": [
+      "Community Translation on Rashi on Nazir 13a:1:1"
+    ],
+    "generatedAt": "2026-10-29T21:25:11.723Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 13a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הפילה אשתו אינו נזיר</strong> - דדילמא האי דהפילה לא הוה בן קיימא שלא כלו לו חדשיו ולא ולד הוי וספק נזירות להקל:"
+  },
+  "Rashi on Nazir 13a:1:2": {
+    "dependsOn": [
+      "Translation on Rashi on Nazir 13a:1:2"
+    ],
+    "generatedAt": "2026-10-29T21:25:54.719Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 13a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר' שמעון אומר</strong> - אין דרך זו מוציאתו מידי נזירות:"
+  },
+  "Rashi on Nazir 13a:1:3": {
+    "dependsOn": [
+      "Rashi on Nazir 13a:1:3",
+      "Rashi on Nazir 13a:1:1",
+      "Rashi on Nazir 13a:1:2"
+    ],
+    "generatedAt": "2026-10-29T21:26:37.427Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 13a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אם היה בן קיימא הריני נזיר חובה ואם לאו הריני נזיר נדבה</strong> - דקסבר ספק נזירות להחמיר:"
+  },
+  "Rashi on Nazir 13a:2:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Nazir 13a:2:1",
+      "Nazir 13a:2"
+    ],
+    "generatedAt": "2026-10-29T21:31:06.179Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 13a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חזרה וילדה</strong> - לאחר שהפילה:"
+  },
+  "Rashi on Nazir 13a:2:2": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Nazir 13a:2:2",
+      "Rashi on Nazir 13a:2:1",
+      "Rashi on Nazir 13a:2:3",
+      "Nazir 13a:2"
+    ],
+    "generatedAt": "2026-10-29T21:32:04.572Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 13a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי זה נזיר</strong> - דהשתא מיהא ולד הוא דאית ליה וחיילא עליה נזירות:"
+  },
+  "Rashi on Nazir 13a:2:3": {
+    "dependsOn": [
+      "Rashi on Nazir 13a:2:3",
+      "Rashi on Nazir 13a:2:1",
+      "Rashi on Nazir 13a:2:2"
+    ],
+    "generatedAt": "2026-10-29T21:33:28.981Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 13a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר\"ש אומר</strong> - שמא הראשון הוה בן קיימא וחל עליו נזירות והשתא כי ילדה לא חייל נזירות ואם כדבריך יעשה נמצא זה מביא חולין לעזרה אלא יחזיר וימנה נזירות שנייה ויאמר אם הראשון שהפילה היה בן קיימא נזירות הראשונה חובה וזו נדבה ואם לא היה בן קיימא נזירות הראשונה נדבה וזו חובה:"
+  },
+  "Rashi on Nazir 13a:3:1": {
+    "dependsOn": [
+      "Translation on Rashi on Nazir 13a:3:1"
+    ],
+    "generatedAt": "2026-10-29T21:36:27.955Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 13a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האי מאי למימרא</strong> - דכי נולד לו בן הרי זה נזיר:"
+  },
+  "Rashi on Nazir 13a:3:2": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Nazir 13a:3:2",
+      "Rashi on Nazir 13a:3:1"
+    ],
+    "generatedAt": "2026-10-29T21:37:25.387Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 13a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהו דתימא</strong> - האי דקאמר לאו משום בן דוקא והאי דאמר בן לכשאבנה ממנה הוא דמשמע כגון ואבנה גם אנכי ממנה <span class=\"parenthesized\">(בראשית ל)</span> וכי נולד בת או טומטום ואנדרוגינוס נמי ליהוי נזיר קמ\"ל דלא:"
+  },
+  "Rashi on Nazir 13a:4:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Nazir 13a:4:1",
+      "Rashi on Nazir 12b:10:1",
+      "Nazir 12b:10"
+    ],
+    "generatedAt": "2026-10-29T21:39:18.035Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 13a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולד דמיחשב ביני אינשי קאמינא</strong> - דהיינו בן ותו לא קמ\"ל דבת וטומטום ואנדרוגינוס נמי איקרו ולד:"
+  },
+  "Rashi on Nazir 13a:5:1": {
+    "dependsOn": [
+      "Rashi on Nazir 13a:5:1",
+      "Nazir 8a:1",
+      "Nazir 8a:2",
+      "Rashi on Nazir 13a:1:1",
+      "Rashi on Nazir 13a:2:1",
+      "Rashi on Nazir 13a:2:2",
+      "Translation on Rashi on Nazir 13a:5:1"
+    ],
+    "generatedAt": "2026-10-29T21:42:40.480Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 13a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר' יהודה</strong> - דאמר לעיל דספק נזירות להקל כדאמרי' בפ\"ק <span class=\"parenthesized\">(לעיל נזיר ד' ח.)</span> דתניא הריני נזיר ע\"מ שיש בכרי זה ק' כור והלך כו' ר' יהודה מתיר דספק נזירות להקל:"
+  },
+  "Rashi on Nazir 13a:6:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Nazir 13a:6:1",
+      "Nazir 13a:6"
+    ],
+    "generatedAt": "2026-10-29T21:47:28.241Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 13a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והפריש קרבן וחזרה וילדה מהו</strong> - מי הוי קדוש או לא:"
+  },
+  "Rashi on Nazir 13a:7:1": {
+    "dependsOn": [
+      "Nazir 13a:7",
+      "Rashi on Nazir 13a:7:2"
+    ],
+    "generatedAt": "2026-10-29T21:55:46.160Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 13a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אליבא דמאן</strong> - קמיבעיא לך אי אליבא דר\"ש פשיטא דהוי קדוש דהאמר ספק נזירות להחמיר וקודם שילדה אשתו נמי הוי נזיר:"
+  },
+  "Rashi on Nazir 13a:7:2": {
+    "dependsOn": [
+      "Translation on Rashi on Nazir 13a:7:2",
+      "Rashi on Nazir 13a:7:1",
+      "Rashi on Nazir 12b:1:1",
+      "Rashi on Nazir 12b:2:1",
+      "Rashi on Nazir 13a:6:1",
+      "Rashi on Nazir 13a:5:1",
+      "Rashi on Nazir 13a:1:1",
+      "Rashi on Nazir 13a:2:1",
+      "Rashi on Nazir 13a:3:1",
+      "Rashi on Nazir 13a:4:1"
+    ],
+    "generatedAt": "2026-10-29T21:58:15.612Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 13a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אליבא דר' יהודה דאמר ספק נזירות להקל מאי</strong> - מי אמרינן כיון שהפרישו בשעה שהפילה ולא חיילא עליה נזירות כלל לא הוי קדוש כלל ומיבעי ליה למיהדר ולקדושי:"
+  },
+  "Rashi on Nazir 13a:8:1": {
+    "dependsOn": [
+      "Rashi on Nazir 13a:8:1",
+      "Nazir 13a:8"
+    ],
+    "generatedAt": "2026-10-29T21:59:03.121Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 13a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי נפקא לך מינה</strong> - אי הוה קדוש או לא דהא ילדה וחיילא עליה נזירות:"
+  },
+  "Rashi on Nazir 13a:8:2": {
+    "dependsOn": [
+      "Rashi on Nazir 13a:8:2",
+      "Rashi on Nazir 13a:8:1",
+      "Nazir 13a:8"
+    ],
+    "generatedAt": "2026-10-29T22:00:12.988Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 13a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נפקא מינה לגיזתו ולעבוד בו</strong> - והכי קא מיבעיא ליה אי אמרת משעה שהפריש תחילה כשהפילה הוה ליה קדוש הוה ליה אסור בגיזה ועבודה אלא אי אמרת דלא חיילא עליה נזירות אלא משעה שחזרה וילדה הוה ליה מותר בגיזה ובעבודה מאי תיקו:"
+  },
+  "Rashi on Nazir 13a:9:1": {
+    "dependsOn": [
+      "Translation on Rashi on Nazir 13a:9:1",
+      "Rashi on Nazir 13a:1:1",
+      "Rashi on Nazir 13a:10:1",
+      "Rashi on Nazir 12b:1:1",
+      "Rashi on Nazir 12b:2:1"
+    ],
+    "generatedAt": "2026-10-29T22:03:47.048Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 13a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושמע חבירו ואמר ועלי מהו אדיבוריה</strong> - דההוא גברא קאי ומשמע ועלי להיות נזיר כשיהיה לך בן או דילמא אגופיה משמע אנפשיה דהכי משמע ועלי נמי להיות נזיר כשיהי' לי בן:"
+  },
+  "Tosafot on Nazir 13a:10:1": {
+    "dependsOn": [
+      "Nazir 13a:10",
+      "Tosafot on Nazir 13a:9:1",
+      "Tosafot on Nazir 13a:10:2",
+      "Rashi on Nazir 13a:9:1",
+      "Rashi on Nazir 13a:10:1",
+      "Rashi on Nazir 13a:10:2",
+      "Steinsaltz on Nazir 13a:10",
+      "Steinsaltz comment #1 on Nazir 13a:9",
+      "Steinsaltz comment #2 on Nazir 13a:9",
+      "Steinsaltz comment #3 on Nazir 13a:9",
+      "Steinsaltz comment #4 on Nazir 13a:9"
+    ],
+    "generatedAt": "2026-10-29T22:16:38.726Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 13a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">את\"ל הך אגופיה משתמע</strong> - ואיל ואמר עלי היכא דאמר ואני מהו אנפשיה קאמר כלומר אפי' בשאמר ואני אגופיה מישתמע או דילמא רחימנא לך כוותך לכשיהיה בן קיימא:"
+  },
+  "Tosafot on Nazir 13a:10:2": {
+    "dependsOn": [
+      "Nazir 13a:10",
+      "Tosafot on Nazir 13a:10:1",
+      "Tosafot on Nazir 13a:10:2",
+      "Rashi on Nazir 13a:10:1",
+      "Rashi on Nazir 13a:10:2",
+      "Steinsaltz on Nazir 13a:10:1"
+    ],
+    "generatedAt": "2026-10-29T22:18:28.349Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 13a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">את\"ל כל באנפיה כסיפא ליה מילתא</strong> - דילמא מסתמא ה\"ק דרחימנא לך כוותך:"
+  },
+  "Tosafot on Nazir 13a:1:1": {
+    "dependsOn": [
+      "Rashi on Nazir 13a:1:1",
+      "Rashi on Nazir 13a:1:2",
+      "Rashi on Nazir 13a:1:3",
+      "Nazir 13a:1",
+      "Nazir 13a:5",
+      "Nazir 13a:6"
+    ],
+    "generatedAt": "2026-10-29T21:30:24.520Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 13a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הפילה אשתו</strong> - ולא ידעינן אי נפל הוא או בן קיימא הוא וכלו לו חדשיו או שמת במעי אמו אינו נזיר ובגמ' מוקי לה כר' יהודה דסבר לא מחית איניש נפשיה לספיקא וספק נזיר הוי דלמא בן קיימא מה שהפילה הלכך טוב להתנות ולומר אם בן קיימא הריני נזיר חובה מדבורי הראשון ואם אינו בר קיימא כגון דלא כלו לו חדשיו ולא היה בדיבורי הראשון כלום הריני נזיר נדבה כלומר מעתה הריני מקבל עלי נזירות [ומונה] נזירות ומביא קרבנותיו ומותר ביין ומגלח שאם לא התנה כן כל ימיו היה מקולקל לר\"ש דמספיקא לא מצי לגלח ויאסר כל ימיו ביין ובתגלחת ובטומאה ור\"ש לא פליג אהא דנולד לו בן טומטום וכו' דליכא לספוקי דכשאמר כשיהיה לי בן ודאי לא היה דעתו אלא לבן ודאי ולא לטומטום ולא פליג ר\"ש אלא היכא דהפילה בן זכר דמספקא ליה דשמא הוה בן קיימא והוי בן גמור והוא הדין דמילתיה דר\"ש קאי ארישא היכא דאמר הריני נזיר כשיהיה לי בן והפילה כו':"
+  },
+  "Tosafot on Nazir 13a:2:1": {
+    "dependsOn": [
+      "Nazir 13a:2",
+      "Tosafot on Nazir 13a:1:1",
+      "Tosafot on Nazir 13a:2:1",
+      "Tosafot on Nazir 13a:2:2",
+      "Rashi on Nazir 13a:2:1"
+    ],
+    "generatedAt": "2026-10-29T21:34:44.920Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 13a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חזרה וילדה</strong> - פי' מהריון אחר ולד קיימא הרי זה נזיר ודאי לרבי יהודה וילדה זו ולד קיימא דממה שהפילה תחילה אפי' ספק נזיר לא וכאילו לא הפילה כלל:"
+  },
+  "Tosafot on Nazir 13a:2:2": {
+    "dependsOn": [
+      "Nazir 12b:11",
+      "Tosafot on Nazir 13a:2:1",
+      "Nazir 13a:1"
+    ],
+    "generatedAt": "2026-10-29T21:35:43.119Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 13a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי שמעון אומר יאמר וכו'</strong> - דלר\"ש מעת שהפילה הוי ספק נזיר הילכך יתנה עתה בלידה זו ויאמר אם היה הראשון בן קיימא נמצא שיצא נדרו מנזירות ראשון ונזירות של לידה אחרונה נדבה או שמא הראשון נפל היה והנזירות הראשון נדבה היתה ועכשיו בלידה זו מוטלת עליו נזירות של חובה שנדר בנזיר שיהיה לו ולד לכך צריך להתנות דלא סגי ליה בנזירות הראשון דשמא נדבה היתה:"
+  },
+  "Tosafot on Nazir 13a:3:1": {
+    "dependsOn": [
+      "Rashi on Nazir 13a:3:1",
+      "Rashi on Nazir 13a:3:2"
+    ],
+    "generatedAt": "2026-10-29T21:38:09.119Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 13a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לכשאבנה הוא דקאמר</strong> - ולא בן ממש קאמר אלא ל' בנין כמו ואבנה גם אנכי ובכה\"ג בנוי:"
+  },
+  "Tosafot on Nazir 13a:4:1": {
+    "dependsOn": [
+      "Rashi on Nazir 13a:4:1"
+    ],
+    "generatedAt": "2026-10-29T21:40:13.103Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 13a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולד דחשיב ביני אינשי</strong> - דבת נמי לא מיחשבא וכל שכן טומטום ואנדרוגינוס קמשמע לן:"
+  },
+  "Tosafot on Nazir 13a:5:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 13a:5:1",
+      "Nazir 13a:5",
+      "Rashi on Nazir 13a:5:1",
+      "Nazir 8a:8",
+      "Tosafot on Nazir 8a:8:1",
+      "Nazir 13a:1",
+      "Gilyon HaShas on Nazir 13a:1",
+      "Steinsaltz on Nazir 13a:5",
+      "Steinsaltz comment #1 on Nazir 13a:5",
+      "Tosafot on Nazir 34a:2:1",
+      "Tosafot on Nazir 13a:4:1",
+      "Tosafot on Nazir 13a:6:1",
+      "Tosafot on Nazir 2a:2:3"
+    ],
+    "generatedAt": "2026-10-29T21:46:04.480Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 13a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לר' יהודה</strong> - בברייתא דאיתניא לעיל פ\"ק <span class=\"parenthesized\">(נזיר דף ח.)</span> דקאמר נגנב אינו נזיר הוא דקאמר לעיל דנזיר דכרי דלא הוי נזיר כלל לר' יהודה אבל לא רצה לומר ר' יהודה דהפלאה הוא דאם כן אפילו היה הולד בן קיימא אינו נזיר כיון דבשעת הנדר לא היה הולד בעולם כנ\"ל:"
+  },
+  "Tosafot on Nazir 13a:6:1": {
+    "dependsOn": [
+      "Nazir 13a:6",
+      "Rashi on Nazir 13a:6:1",
+      "Rashi on Nazir 13a:7:1",
+      "Rashi on Nazir 13a:7:2",
+      "Tosafot on Nazir 13a:8:1",
+      "Tosafot on Nazir 13a:6:1"
+    ],
+    "generatedAt": "2026-10-29T21:52:43.784Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 13a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והפילה אשתו והפריש קרבן</strong> - פי' לנזירותו וילדה פירוש מאותו הריון עצמו ולד קיימא דהשתא יש הוכחה גדולה מדהאי בר קיימא הנפל [הוה] נמי בר קיימא וכלו לו חדשיו דטיפה היא נחלקת לשתים הילכך חלה קדושה על קרבן שהפריש כשהפילה ששוב לא הקדיש אותם הבהמות דאפילו לר' יהודה דאמר לא מחית איניש נפשיה לספיקא הכא דאיכא הוכחה גדולה קדוש הקרבן ליאסר בגיזה ובעבודה או דילמא כי ה\"ג דאיכא הוכחה לר' יהודה דלא מחית איניש לספיקא לא חלה הקדושה על הקרבן כלל מכח הפרשה ראשונה דשמא מקצת הטיפה נקלטה מיד ומקצת הטיפה השניה לא נקלטה עד אחר שני ימים או ביום ג' וההוא נפל <span class=\"parenthesized\">(כך מסיק הש\"ס ואזיל דלר\"י קמבעיא ליה דאי אליבא דר' שמעון הא אמר ספק נזירות להחמיר דבלא ילדה נמי הוי קדוש מספק והשתא נמי כי ילדה אינו אלא ספק אלא אליבא דר' יהודה דאי לא ילדה חולין הוא והשתא כי ילדה ליה מי הוי קדוש מספק וכדפי':"
+  },
+  "Tosafot on Nazir 13a:8:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 13a:8:1",
+      "Nazir 13a:8",
+      "Rashi on Nazir 13a:8:1",
+      "Rashi on Nazir 13a:8:2",
+      "Tosafot on Nazir 13a:6:1",
+      "Tosafot on Nazir 2a:1:1"
+    ],
+    "generatedAt": "2026-10-29T22:02:27.844Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 13a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונפקא מינה לגיזתו ועבודתו</strong> - [ולא] דלילקי אהאי משום דליכא כי הך סברא דולד אחרון משוי ליה בספק דאי מספקא ליה להש\"ס דשמא לילקו בודאי מדשני בר קיימא הראשון אינו נפל א\"כ לר' שמעון נמי מצי למיבעי למלקות דאי לא ילדה ליכא קדושה ודאית אלא הוי ספק לר' שמעון והשתא דילדה יקדש בודאי אלא ש\"מ דלא משמע ליה להש\"ס דלקי דקדושה ודאית אין בו כי נמי ילדה אפי' לר\"ש. ע\"כ הגה\"ה)</span>:"
+  },
+  "Tosafot on Nazir 13a:9:1": {
+    "dependsOn": [
+      "Rashi on Nazir 13a:9:1",
+      "Nazir 13a:9",
+      "Tosafot on Nazir 13a:10:1",
+      "Tosafot on Nazir 13a:10:2",
+      "Versions on Nazir 13a:9",
+      "Steinsaltz comment #1 on Nazir 13a:9",
+      "Steinsaltz comment #2 on Nazir 13a:9",
+      "Steinsaltz comment #3 on Nazir 13a:9",
+      "Steinsaltz comment #4 on Nazir 13a:9",
+      "Tosafot on Nazir 11b:9:1",
+      "Tosafot on Nazir 11b:9:2",
+      "Tosafot on Nazir 11b:10:1"
+    ],
+    "generatedAt": "2026-10-29T22:07:20.256Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 13a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושמע חבירו ואמר ועלי</strong> - היכא דאמר ואני ועלי מדבוריה משתמע כלומר גם אני נודר בנזיר כשיהיה לי בן:"
+  }
+}

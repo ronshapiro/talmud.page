@@ -1,0 +1,581 @@
+{
+  "Rashi on Nazir 39a:1:1": {
+    "dependsOn": [
+      "Rashi on Nazir 39a:1:2"
+    ],
+    "generatedAt": "2026-10-31T06:55:25.690Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 39a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ר פפא אנא סברי</strong> - סברא הוא בידיה דכי אכיל חרצן חייב שתים על חרצן ועל מכל אשר יעשה וסברי אותיב ליה תיובתא משום דלא נהירא ליה מילתא וליהדר ביה:"
+  },
+  "Rashi on Nazir 39a:1:2": {
+    "dependsOn": [
+      "Rashi on Nazir 39a:1:1"
+    ],
+    "generatedAt": "2026-10-31T06:55:55.913Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 39a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא ידענא דגמרא היא בידיה</strong> - מרביה ומש\"ה לא הדר ביה:"
+  },
+  "Rashi on Nazir 39a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T06:59:42.583Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 39a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי אלעזר בן עזריה</strong> - אית ליה כרבי יוסי מדקאמר שני חרצנים וזג משמע דלזג א' איכא ב' חרצנים:"
+  },
+  "Rashi on Nazir 39a:2:2": {
+    "dependsOn": [
+      "Rashi on Nazir 39a:2:1",
+      "Rashi on Nazir 39a:2:3",
+      "Tosafot on Nazir 38b:7:1",
+      "Rashi on Nazir 39a:3:1",
+      "Rashi on Nazir 39a:3:2"
+    ],
+    "generatedAt": "2026-10-31T07:02:18.710Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 39a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פורצנין</strong> - דמשמע פנימי כגון אפי' פרצידא דתותי קלא דאמר בריש פ\"ק דמס' תענית <span class=\"parenthesized\">(ד' ד.)</span> דהיינו גרעינין:"
+  },
+  "Rashi on Nazir 39a:2:3": {
+    "dependsOn": [
+      "Rashi on Nazir 39a:2:1",
+      "Rashi on Nazir 39a:2:2",
+      "Rashi on Nazir 39a:1:1",
+      "Rashi on Nazir 39a:1:2"
+    ],
+    "generatedAt": "2026-10-31T07:03:21.447Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 39a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עיצורין</strong> - משמע חיצונים שסוחט מהמשקה כדכתיב <span class=\"parenthesized\">(בראשית מ׳:י״א)</span> ואשחט אותם ומתרגמינן ועצרית יתהון:"
+  },
+  "Rashi on Nazir 39a:3:1": {
+    "dependsOn": [
+      "Rashi on Nazir 39a:3:2",
+      "Rashi on Nazir 39a:3:3",
+      "Nazir 39a:3"
+    ],
+    "generatedAt": "2026-10-31T07:05:48.195Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 39a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גילח או שגילחוהו ליסטין</strong> - משמע בין באונס בין ברצון בתוך ימי נזירותו בין בנזירות מרובה בין בנזירות מועטת:"
+  },
+  "Rashi on Nazir 39a:3:2": {
+    "dependsOn": [
+      "Nazir 39a:3",
+      "Rashi on Nazir 39a:3:1",
+      "Rashi on Nazir 39a:3:3"
+    ],
+    "generatedAt": "2026-10-31T07:07:04.294Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 39a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סותר ל' יום</strong> - לפי שאין גידול שיער בפחות מל' יום:"
+  },
+  "Rashi on Nazir 39a:3:3": {
+    "dependsOn": [
+      "Sefer HeArukh, Letter Samekh 323",
+      "Steinsaltz on Nazir 39a:3",
+      "Rashi on Nazir 39b:6:1",
+      "Tosafot on Nazir 39b:6:1"
+    ],
+    "generatedAt": "2026-10-31T07:08:03.803Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 39a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או שסיפסף כל שהוא</strong> - שתלש קצת בראש השיער:"
+  },
+  "Rashi on Nazir 39a:4:1": {
+    "dependsOn": [
+      "Rashi on Nazir 39a:4:2",
+      "Rashi on Nazir 39a:4:3"
+    ],
+    "generatedAt": "2026-10-31T07:16:30.775Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 39a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איבעיא להו בינתא מלתחת רבי</strong> - האי שיער מלתחת רבי בסמוך לבשר יוצא מן הראש וגדל וראשו כדקאי קאי:"
+  },
+  "Rashi on Nazir 39a:4:2": {
+    "dependsOn": [
+      "Rashi on Nazir 39a:4:1"
+    ],
+    "generatedAt": "2026-10-31T07:17:01.411Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 39a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או מלעיל רבי</strong> - שראש השער מתגדל ויוצא מאיליו ומתגדל ועיקרו כדקאי קאי:"
+  },
+  "Rashi on Nazir 39a:4:3": {
+    "dependsOn": [
+      "Rashi on Nazir 39a:4:1",
+      "Rashi on Nazir 39a:4:2",
+      "Rashi on Nazir 39a:4:3",
+      "Nazir 39a:4",
+      "Rashi on Nazir 39a:5:1"
+    ],
+    "generatedAt": "2026-10-31T07:17:57.501Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 39a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למאי נפקא מינה לנזיר שגילחוהו ליסטים ושיירו בו כדי לכוף ראשו לעיקרו</strong> - א\"א דהאי בינתא מלתחת רבי הילכך למאי דאקדיש שקליה וסותר נזירותו:"
+  },
+  "Rashi on Nazir 39a:5:1": {
+    "dependsOn": [
+      "Nazir 39a:5"
+    ],
+    "generatedAt": "2026-10-31T07:24:23.414Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 39a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי אמרת מלעיל רבי</strong> - הואיל ושיירו בו כדי לכוף בו ראשו לעיקרו דאיכא למימר דמאי דאקדיש קאי אכתי אית ליה למיעבד תגלחת מצוה ואינו סותר:"
+  },
+  "Rashi on Nazir 39a:6:1": {
+    "dependsOn": [
+      "[",
+      "Rashi on Nazir 39a:6:2",
+      "Rashi on Nazir 39a:6:3",
+      "Rashi on Nazir 39a:6:4",
+      "Rashi on Nazir 39a:6:5",
+      "Rashi on Nazir 39a:6:6",
+      "Jastrow, אִנְבָּא II 1"
+    ],
+    "generatedAt": "2026-10-31T07:26:52.031Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 39a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ש מהאי אינבא חיה</strong> - לינטרי\"ש בלע\"ז דהוא מביצי כינים:"
+  },
+  "Rashi on Nazir 39a:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T07:27:09.426Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 39a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דקיימא בעיקבא דבינתא</strong> - בעיקר השיער סמוך לבשר:"
+  },
+  "Rashi on Nazir 39a:6:3": {
+    "dependsOn": [
+      "Rashi on Nazir 39a:6:1",
+      "Rashi on Nazir 39a:6:2",
+      "Rashi on Nazir 39a:6:3",
+      "Rashi on Nazir 39a:6:4"
+    ],
+    "generatedAt": "2026-10-31T07:27:41.250Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 39a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי ס\"ד</strong> - דהאי בינתא מלתחת רבי אישתכח דכי נפיק שערא נפיק אינבא לבר:"
+  },
+  "Rashi on Nazir 39a:6:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T07:28:11.116Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 39a:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ברישא דבינתא איבעי ליה למיקם</strong> - אינבא אלא לאו ש\"מ מדקיימא אינבא בהדי בישרא דמלעיל רבי ואינבא בבינתא כדקאי קאי:"
+  },
+  "Rashi on Nazir 39a:6:5": {
+    "dependsOn": [
+      "Rashi on Nazir 39a:6:4",
+      "Rashi on Nazir 39a:6:5",
+      "Rashi on Nazir 39a:6:6"
+    ],
+    "generatedAt": "2026-10-31T07:28:40.662Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 39a:6:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעולם מלתחת רבי</strong> - והא דלא קיימא ברישא דבינתא:"
+  },
+  "Rashi on Nazir 39a:6:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T07:29:01.002Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 39a:6:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואגב חיותא</strong> - דאית בה נחתא ואזלה לתחת לבהדי בישרא:"
+  },
+  "Rashi on Nazir 39a:7:1": {
+    "dependsOn": [
+      "Nazir 39a:7"
+    ],
+    "generatedAt": "2026-10-31T07:34:20.671Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 39a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ש מדהאי אינבא מתה קיימא ברישא דבינתא</strong> - ואי ס\"ד דהאי בינתא מלעיל רבי אישתכח דכי היכי דמעיקרא קיימא בעיקרא דבינתא הכי נמי איבעי לה למיקם השתא בעיקרא דבינתא:"
+  },
+  "Rashi on Nazir 39a:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T07:34:36.294Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 39a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם נמי משום דלית בה חילא</strong> - שאין בה כח דהא הויא מתה:"
+  },
+  "Rashi on Nazir 39a:7:3": {
+    "dependsOn": [
+      "Rashi on Nazir 39a:7:1",
+      "Rashi on Nazir 39a:7:2",
+      "Rashi on Nazir 39a:7:3"
+    ],
+    "generatedAt": "2026-10-31T07:35:14.399Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 39a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שרוגי קא משתרגא</strong> - משתמטא ואזלה כלפי רישא דבינתא מש\"ה קיימא לה התם ולעולם מלעיל רבי:"
+  },
+  "Rashi on Nazir 39a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T07:38:36.395Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 39a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ש מבלורית של כושיים דבתר דגדלין לה</strong> - שמקלעין את השיער זה בזה:"
+  },
+  "Rashi on Nazir 39a:8:2": {
+    "dependsOn": [
+      "Rashi on Nazir 39a:8:1",
+      "Rashi on Nazir 39a:8:2",
+      "Rashi on Nazir 39a:8:3",
+      "Nazir 39a:8"
+    ],
+    "generatedAt": "2026-10-31T07:39:37.348Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 39a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רפיא מלתחת</strong> - סמוך לבשר ומדרפיא לתחת לבהדי בישרא ולא מלעיל ש\"מ דמלתחת הנץ השיער ויצא מש\"ה מרפו להני שערי מלתחת ולא מקלעי באידך בינתא: לעולם מלעיל רבי והתם נמי איידי דקמטא שמהדק בלורית ודוחק מעצמו למטה מחמת הגדל כששוכב עליה:"
+  },
+  "Rashi on Nazir 39a:8:3": {
+    "dependsOn": [
+      "Rashi on Nazir 39a:8:1",
+      "Rashi on Nazir 39a:8:2",
+      "Rashi on Nazir 39a:8:3"
+    ],
+    "generatedAt": "2026-10-31T07:40:29.271Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 39a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומשיכבא הוא דרפיא</strong> - מחמת שכיבה הוא ששוכב על הבלורית רפיא לה מלתחת:"
+  },
+  "Rashi on Nazir 39a:9:1": {
+    "dependsOn": [
+      "Nazir 39a:9"
+    ],
+    "generatedAt": "2026-10-31T07:42:52.807Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 39a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מסקרתא דרפי עמרא מלתחת ותניא</strong> - כלומר עד השתא בעינן לפרושי לך ממידי דסברא דלא תליא במידי דתניא אלא השתא איכא למישמע מהא דסוקרין על העשירי לשום מעשר דמתקשר כל השיער ביחד מחמת הצבע של סיקרא ולבתר הכי רפיא עמרא מלתחת ומאי טעמא לאו משום דההוא דרפי רבי ליה לבתר הכי וש\"מ מלתחת רבי והא סברא הויא במידי דתניא:"
+  },
+  "Rashi on Nazir 39a:9:2": {
+    "dependsOn": [
+      "Nazir 39a:9",
+      "Nazir 39a:3",
+      "Nazir 39a:4",
+      "Nazir 39a:5",
+      "Nazir 39a:6"
+    ],
+    "generatedAt": "2026-10-31T07:43:42.014Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 39a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותו מדצבעי סביא דיקניהון</strong> - כי היכי דליתחזו דרדקיא ובתר הכי חיורי דיקניהון מתלבנים עיקרי שערי זקנם ש\"מ דמלתחת רבי ומאי דקא קדיש האי נזיר שקלוה מיניה ואיבעי ליה למיסתר ולמימני נזירות אחרת כי היכי דליקדוש שיער:"
+  },
+  "Tosafot on Nazir 39a:1:1": {
+    "dependsOn": [
+      "Nazir 39a:1",
+      "Tosafot on Nazir 39a:1:2",
+      "Rashi on Nazir 39a:1:1",
+      "Rashi on Nazir 39a:1:2"
+    ],
+    "generatedAt": "2026-10-31T06:57:45.087Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 39a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא אותביה חמש ומאחר דלא תניא מ\"ט אותביה</strong> - כלומר והלא רב פפא עצמו היה מקשה מיניה לאביי ואי תנא לא תני ה' מ\"ט אותביה הוא:"
+  },
+  "Tosafot on Nazir 39a:1:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 39a:1:1",
+      "Rashi on Nazir 39a:1:1",
+      "Rashi on Nazir 39a:1:2",
+      "Steinsaltz comment #1 on Nazir 39a:1"
+    ],
+    "generatedAt": "2026-10-31T06:59:11.442Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 39a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ר פפא אנא סברי לאו גמרא הוה בידיה</strong> - לכך בדיתי מלבי והוספתי על לשון הברייתא חמש ולהקשות לאביי לראות אם מדעתו אמרה למימרא דידיה דאז בקל יחזור מדבריו ולא ידחוק לתרץ הברייתא לדבריו ולא ידענא דגמרא הוה בידיה ואותבינן ולא הדר ביה ולכך בחנתי דגמרא הוה בידיה:"
+  },
+  "Tosafot on Nazir 39a:2:1": {
+    "dependsOn": [
+      "Avodah Zarah 34b:13",
+      "Avodah Zarah 34b:14",
+      "Tosafot on Avodah Zarah 34a:6:1"
+    ],
+    "generatedAt": "2026-10-31T07:05:04.151Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 39a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחרצנים מפורצנים</strong> - דהיינו הגרעינין וכן במס' ע\"ז <span class=\"parenthesized\">(דף לד:)</span> פורצנים דיין נסך ועצורין היינו הקליפה ואשחט מתרגמי' ועצרית וסחיטה היינו בקליפה שיסחוט הקליפה החיצונה שיש בה לחלוחית קצת ולא בגרעיניה:"
+  },
+  "Tosafot on Nazir 39a:3:1": {
+    "dependsOn": [
+      "Nazir 39a:3",
+      "Tosafot on Nazir 39a:3:2",
+      "Rashi on Nazir 39a:3:1",
+      "Rashi on Nazir 39a:3:2",
+      "Rashi on Nazir 39a:3:3",
+      "Steinsaltz on Nazir 39a:3:1",
+      "Steinsaltz comment #1 on Nazir 39a:3",
+      "Steinsaltz comment #2 on Nazir 39a:3",
+      "Steinsaltz on Nazir 39a:3",
+      "Mishneh Torah, Nazariteship 6:1",
+      "Nazir 44a:6",
+      "Tosafot on Nazir 44a:6:1",
+      "Tosafot on Nazir 44a:6:2",
+      "Nazir 39b:4",
+      "Nazir 39b:1",
+      "Nazir 39b:2",
+      "Nazir 39b:3"
+    ],
+    "generatedAt": "2026-10-31T07:14:12.763Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 39a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סתם נזירות ל' יום</strong> - כבר שנינו זה בפ\"ק <span class=\"parenthesized\">(דף ה.)</span> ואיידי דבעי למתני גילח או שגלחוהו לסטים סותר ל' יום תני נמי סתם [נזירות] שלשים יום וטעמא דסותר ל' יום משום דבעיא נזירות שיעלה לו תגלחת של מצוה כדי שיהא שערו גדל כפי שראוי לגדל כסתם נזירות דהיינו שלשים יום ומיירי שגלחוהו ביום מלאת שהרי אם גלחוהו <span class=\"parenthesized\">(בשנים)</span> או יותר למה יסתור את הכל איך יחזור וימנה מה שמנה כבר ואולי הכי נמי קאמר סותר עד שיהו שערותיו כדי שלשים יום כך נמצא בפירוש ה\"ר יצחק והלכך בנזירות של [ס'] אם גלחוהו ביום שלשים אינו סותר כלום דאיכא עדיין גידול שער קודם יום תגלחת ואם גלחוהו אחר שכלו ימיו [ואין] גידול שער סותר [ל'] לרבנן כדמוכח בגמרא:"
+  },
+  "Tosafot on Nazir 39a:3:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 39a:3:1",
+      "Rashi on Nazir 39a:3:3",
+      "Nazir 39a:3",
+      "Tosafot on Nazir 39b:6:1"
+    ],
+    "generatedAt": "2026-10-31T07:15:50.814Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 39a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נזיר שגילח בין במספרים או שסיפסף</strong> - פירוש תלש כל שהוא אפי' שער אחד לוקה עליו מיירי שעוקר השיער מעיקרו ומשחית מן השורש כעין תער דלוקה מקרא דתער לא יעבור על ראשו דמרבינן בגמרא שאר המעבירין:"
+  },
+  "Tosafot on Nazir 39a:4:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 39a:4:1",
+      "Tosafot on Nazir 39a:4:2",
+      "Rashi on Nazir 39a:4:1",
+      "Tosafot on Nazir 39a:1:1",
+      "Tosafot on Nazir 39a:2:1",
+      "Tosafot on Nazir 39a:3:1"
+    ],
+    "generatedAt": "2026-10-31T07:19:12.954Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 39a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שער מלתחת רבי</strong> - משרשו מעיקרו הוא מגביה וגדל מה שהשער גדל מתמר ועולה הסמוך לראש אחר ימים יהיה ברחוק או מלעיל רבי מראש השער הולך וגדל אבל סמוך לראש אין [זז] ממקומו:"
+  },
+  "Tosafot on Nazir 39a:4:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 39a:4:1",
+      "Rashi on Nazir 39a:4:1",
+      "Rashi on Nazir 39a:4:2",
+      "Rashi on Nazir 39a:4:3",
+      "Nazir 39a:5",
+      "Steinsaltz on Nazir 39a:4",
+      "Steinsaltz In-Depth on Nazir 39a:4:1",
+      "Steinsaltz In-Depth on Nazir 39a:4:2",
+      "Tosafot on Nazir 39b:2:1",
+      "Tosafot on Nazir 39b:4:1"
+    ],
+    "generatedAt": "2026-10-31T07:23:41.903Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 39a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושיירו בו כדי לכוף ראשו לעיקרו</strong> - בכל שער ושער [שיעורא] בעלמא הוא ובסמוך אמר שבו ליגדל השער בז' ימים ובכך יש חשיבות שער:"
+  },
+  "Tosafot on Nazir 39a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-31T07:25:26.338Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 39a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי אמרת מלתחת רבי נזירותו הא שקליה</strong> - כלומר השיער שהקדיש ביום נזרו זה נטלו וגלחו וזה ששיירו בו כדי לכוף אין זה משער שהיה לו משעת קבלת נזרו אלא צמח בו אחר כן וסותר אחרי שלא נשתייר מאותו שער שהיה בקבלת נזרו ואי אמרת מלעיל רבי מאי דאקדיש קאי דאותו ששיירו ודאי מאותו שיער שהקדיש ובכך הוי שיעור חשוב ואינו סותר כלום:"
+  },
+  "Tosafot on Nazir 39a:6:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 39a:6:2",
+      "Tosafot on Nazir 39a:1:1",
+      "Tosafot on Nazir 39a:1:2",
+      "Tosafot on Nazir 38b:6:1",
+      "Rashi on Nazir 39a:6:1",
+      "Rashi on Nazir 39a:6:2",
+      "Tosafot on Nazir 32a:1:1",
+      "Tosafot on Nazir 39a:4:1",
+      "Tosafot on Nazir 39a:7:1"
+    ],
+    "generatedAt": "2026-10-31T07:31:57.727Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 39a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ש מהאי אינבא</strong> - פירוש ביצי כינים דקאי בעיקרא פירוש בעיקר השיער סמוך לראש ולא תצא משם בגידול שער ש\"מ דמלעיל רבי ומש\"ה השער שסמוך לראש כדקאי קאי דאי מלתחת רבי ברישא דבינתא בעי למיקם האינבא והשער הולך וגדל מעיקרו ולמעלה:"
+  },
+  "Tosafot on Nazir 39a:6:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 39a:6:1",
+      "Rashi on Nazir 39a:6:4",
+      "Rashi on Nazir 39a:6:5",
+      "Rashi on Nazir 39a:6:6"
+    ],
+    "generatedAt": "2026-10-31T07:33:42.086Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 39a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אגב חיותא נחת ואזיל</strong> - אינבא הוא יורד למטה כשהשער גדל מלמעלה מרום הראש:"
+  },
+  "Tosafot on Nazir 39a:7:1": {
+    "dependsOn": [
+      "Rashi on Nazir 39a:7:1",
+      "Tosafot on Nazir 39a:7:2",
+      "Nazir 39a:6",
+      "Tosafot on Nazir 39a:6:1",
+      "Tosafot on Nazir 39a:6:2"
+    ],
+    "generatedAt": "2026-10-31T07:36:20.444Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 39a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ברישא דבינתא</strong> - לאו ברישא אלא ברחוק מן הראש קאמר:"
+  },
+  "Tosafot on Nazir 39a:7:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 39a:7:1",
+      "Tosafot on Nazir 39a:7:2",
+      "Tosafot on Nazir 39a:7:3",
+      "Rashi on Nazir 39a:7:1",
+      "Rashi on Nazir 39a:7:2",
+      "Rashi on Nazir 39a:7:3"
+    ],
+    "generatedAt": "2026-10-31T07:37:27.551Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 39a:7:2"
+    ],
+    "sourceText": "ואי ס\"ד מלעיל רבי בעיקרא דבינתא בעי למיקם [במקום] שעמדה כשהיתה חיה שהרי שם מתה:"
+  },
+  "Tosafot on Nazir 39a:7:3": {
+    "dependsOn": [
+      "Tosafot on Nazir 39a:7:1",
+      "Tosafot on Nazir 39a:7:2",
+      "Rashi on Nazir 39a:7:1",
+      "Rashi on Nazir 39a:7:2",
+      "Rashi on Nazir 39a:7:3",
+      "Nazir 39a:6"
+    ],
+    "generatedAt": "2026-10-31T07:38:10.888Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 39a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם נמי משום דלית בה חילא</strong> - כלומר בזו שהרי מתה שמטה ואזלה מחוברת ויורדת לראש השער שהוא תלוי למטה לצד הארץ ואין לה כח להאחז למעלה לצד הראש:"
+  },
+  "Tosafot on Nazir 39a:8:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 39a:7:1",
+      "Tosafot on Nazir 39a:7:2",
+      "Tosafot on Nazir 39a:1:1",
+      "Tosafot on Nazir 39a:3:1",
+      "Rashi on Nazir 39a:8:1",
+      "Rashi on Nazir 39a:8:2",
+      "Rashi on Nazir 39a:8:3"
+    ],
+    "generatedAt": "2026-10-31T07:42:08.972Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 39a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ש מבלורית של כושיים</strong> - שמניחים בלוריות [בראשיהם] לשם ע\"ז ובשער אין מגלחין כל סביב ראשו ומה שהיו מניחין הן גידלו אותה כקליעה סמוך לראש ואינו מהודק כבראשונה ואי מלעיל רבי אמאי אלא ודאי מלתחת רבי ונדחית הקליעה לפנים והלאה מן הראש ונמצא כי בשער שסמוך לראש אינו קלוע ולכך הוי כפרוש ומשני איידי דקמטא היא משיכבא רפיא ממה שהוא שוכב עליה נוסעת ממקומה ונרפית סמוך לראש:"
+  }
+}

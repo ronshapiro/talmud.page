@@ -136,6 +136,26 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">דילמא אתי למיעבר על נזירותיה</strong> - כדאמר בפרק קמא דנדרים <span class=\"parenthesized\">(דף ט:)</span> כשהן מטמאין ורבין עליהם ימי טומאה מתחרטין בהן ונמצאו מביאין חולין לעזרה:"
   },
+  "Rashi on Nazir 3a:1:4": {
+    "dependsOn": [
+      "Nazir 3a:1",
+      "Rashi on Nazir 3a:1:1",
+      "Rashi on Nazir 3a:1:2",
+      "Rashi on Nazir 3a:1:3",
+      "Rashi on Nazir 3a:1:4",
+      "Rashi on Nazir 2b:10:1",
+      "Steinsaltz on Nazir 2b:10",
+      "Steinsaltz on Nazir 3a:1",
+      "Rashi on Nazir 2b:8:1"
+    ],
+    "generatedAt": "2026-10-29T14:39:51.956Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 3a:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל נזיר טהור לאו חוטא קרינא ביה</strong> - ואמרי' זיל ותיהוי נזיר והנאה:"
+  },
   "Rashi on Nazir 3a:2:1": {
     "dependsOn": [
       "Nazir 3a:2",

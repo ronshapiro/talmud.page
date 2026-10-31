@@ -1,0 +1,378 @@
+{
+  "Rashi on Nazir 8a:10:1": {
+    "dependsOn": [
+      "Rashi on Nazir 8a:10:2",
+      "Rashi on Nazir 8a:3:1",
+      "Rashi on Nazir 8a:2:1",
+      "Rashi on Nazir 2a:1:1",
+      "Rashi on Nazir 2a:2:1",
+      "Rashi on Nazir 2a:3:1"
+    ],
+    "generatedAt": "2026-10-29T18:33:05.868Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 8a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר' יוחנן אמר אפילו תימא כר' יהודה</strong> - דהתם טעמא מאי אמר ר' יהודה דספק נזירות להקל דדלמא לא הוו ביה מאה כורין ולא נחית ליה לנזירות כלל ומספיקא לא אמרינן ליה דליהוי נזיר כי היכי דלא לייתי חולין לעזרה לכי משלים נזירותו:"
+  },
+  "Rashi on Nazir 8a:10:2": {
+    "dependsOn": [
+      "Rashi on Nazir 8a:10:1",
+      "Nazir 8a:10"
+    ],
+    "generatedAt": "2026-10-29T18:34:01.741Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 8a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא הכא כיון דנחית ליה לנזירות</strong> - אי משום מלאה קישואין אי משום מלאה חרדל נזירות חיילא עליה ממה נפשך וכיון דנחית לנזירות במאי לסלקיה מש\"ה אית לן למימר דנזירות כמנין גרעיני חרדל קיבל עליו ולעולם כל ימיו יהא אסור ביין:"
+  },
+  "Rashi on Nazir 8a:11:1": {
+    "dependsOn": [
+      "Nazir 8a:11",
+      "Rashi on Nazir 8a:11:1",
+      "Rashi on Nazir 8a:11:2"
+    ],
+    "generatedAt": "2026-10-29T18:37:39.366Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 8a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמאי לא ליסלקיה נימא דליחזיה כאילו מלאה קישואין</strong> - ולכי משלים ליה נזירות כמנין קישואין שיכולין ליכנס בתוך הקופה ומייתי ליה קרבן הוי כמסולק ועומד דכלא נחית ליה לנזירות דמי ותיהוי ליה תקנתא:"
+  },
+  "Rashi on Nazir 8a:11:2": {
+    "dependsOn": [
+      "Rashi on Nazir 8a:11:1",
+      "Nazir 8a:11",
+      "Steinsaltz on Nazir 8a:11:1",
+      "Steinsaltz on Nazir 8a:11",
+      "Versions on Nazir 8a:11",
+      "Rashi on Nazir 8a:10:1",
+      "Rashi on Nazir 8a:10:2",
+      "Steinsaltz comment #1 on Nazir 8a:11",
+      "Rashi on Nazir 8b:1:1",
+      "Tosafot on Nazir 8a:10:2",
+      "Rashi on Nazir 8a:6:1",
+      "Lechem Mishneh on Mishneh Torah, Nazariteship 5:14:1",
+      "Tosefta Kifshutah on Nazir 1:3:6"
+    ],
+    "generatedAt": "2026-10-29T18:42:37.181Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 8a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא</strong> - לא מצית אמרת דנזירות קבל עליו:"
+  },
+  "Rashi on Nazir 8a:1:1": {
+    "dependsOn": [
+      "Nazir 8a:1",
+      "Rashi on Nazir 8a:2:1",
+      "Rashi on Nazir 8a:2:2"
+    ],
+    "generatedAt": "2026-10-29T18:00:30.636Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 8a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האומר הריני נזיר כשער כו'</strong> - [דאמרינן] נזירות כשער ראשו קבל עליו והרי זה נזיר עולם לפי ששערות ראשו מרובין משני חייו ויהא מגלח כל ימיו אחת בסוף שלשים ויביא קרבן:"
+  },
+  "Rashi on Nazir 8a:2:1": {
+    "dependsOn": [
+      "Nazir 8a:2",
+      "Rashi on Nazir 8a:2:2"
+    ],
+    "generatedAt": "2026-10-29T18:03:11.576Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 8a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי אומר אין זה מגלח אחת לשלשים</strong> - והאי דקאמר כשער ראשי חדא נזירות אריכא קבל עליו כשיעור שער ראשו ואינו יכול להשלימה ואינו מגלח לעולם:"
+  },
+  "Rashi on Nazir 8a:2:2": {
+    "dependsOn": [
+      "Rashi on Nazir 8a:2:1",
+      "Nazir 8a:1",
+      "Nazir 8a:3"
+    ],
+    "generatedAt": "2026-10-29T18:04:37.403Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 8a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא איזהו שמגלח אחת לשלשים יום זה שאמר הרי עלי נזירות כשער ראשי</strong> - דהואיל ואמר עלי נזירות משמע דקא מפליג בין נזירות לנזירות ויהא מגלח בסוף כל שלשים ומביא קרבן:"
+  },
+  "Rashi on Nazir 8a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T18:06:57.763Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 8a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בודקין אותו אם אמר אחת גדולה נזרתי הרי זה נזיר שלשים יום</strong> - ותו לא והא דאמר מלא הבית משמע כאילו אמר אריכא לי מילתא כמלא הבית או כמלא קופה:"
+  },
+  "Rashi on Nazir 8a:3:2": {
+    "dependsOn": [
+      "Rashi on Nazir 8a:3:1"
+    ],
+    "generatedAt": "2026-10-29T18:07:33.436Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 8a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם אמר סתם נדרתי</strong> - נעשה כאילו אמר מלא חרדל ונעשה כל ימיו נזיר דאמרינן נזירות כמנין גרעיני חרדל שבו קבל עליו ואין להם הפסקה כל ימיו:"
+  },
+  "Rashi on Nazir 8a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T18:19:14.372Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 8a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמאי וליחזייה</strong> - לההיא קופה כאילו מלאה קישואין ואי מחזקא מינייהו י' נימא די' נזירות של שלשים שלשים קבל עליו:"
+  },
+  "Rashi on Nazir 8a:6:2": {
+    "dependsOn": [
+      "Rashi on Nazir 8a:6:1"
+    ],
+    "generatedAt": "2026-10-29T18:19:47.612Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 8a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותיהוי ליה תקנתא</strong> - אחר אותם עשרה נזירות לשתות ביין:"
+  },
+  "Rashi on Nazir 8a:7:1": {
+    "dependsOn": [
+      "Nazir 8a:7",
+      "Rashi on Nazir 8a:6:1",
+      "Rashi on Nazir 8a:6:2",
+      "Rashi on Nazir 8a:7:1",
+      "Rashi on Nazir 8a:7:2",
+      "Steinsaltz on Nazir 8a:7"
+    ],
+    "generatedAt": "2026-10-29T18:23:04.633Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 8a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר חזקיה במחלוקת שנויה</strong> - דאיכא מאן דסבירא ליה כוותיה ומתני' לא תני הכי:"
+  },
+  "Rashi on Nazir 8a:7:2": {
+    "dependsOn": [
+      "Rashi on Nazir 8a:7:1",
+      "Nazir 8a:7",
+      "Nedarim 18b:9",
+      "Nedarim 19a:1",
+      "Nedarim 19a:2",
+      "Nedarim 19a:3",
+      "Nedarim 19a:4",
+      "Nedarim 19b:2",
+      "Rashi on Nedarim 19b:2:1",
+      "Rashi on Nedarim 19b:2:2"
+    ],
+    "generatedAt": "2026-10-29T18:25:29.596Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 8a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר\"ש היא דאמר אדם מכניס עצמו לדבר שספקו חמור מודאי</strong> - דאילו נזיר ודאי מגלח ומביא קרבן ונאכל ואילו על ספיקו לא מצי מגלח דהכי מפרש באלו מותרים במסכת נדרים:"
+  },
+  "Rashi on Nazir 8a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T18:26:44.020Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nazir 8a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הריני נזיר כו' ר\"ש אוסר</strong> - שחייב בנזירות דהואיל דהוי ספק אי הוו ביה מאה כור אמרינן דהוי ביה ודאי מאה כור וליהוי נזיר שכל ספק נזירות להחמיר דספיקו בנזיר חמור מודאו דאילו ודאי שלא היו בו מאה כור לא הוי נזיר השתא דהוי ספק אמרינן דנזיר הוא הכי נמי במתניתין דהואיל דספקא הוא דלא ידעינן אי אדעתא דמלאה קשואין אי בחרדל קאמר אמרינן ביה ספק נזירות להחמיר וכמאן דמלאה חרדל קאמר ואין לו תקנה אבל אליבא דמ\"ד שכל ספק נזירות להקל לדידיה אמרינן רואין אותה כאילו מלאה קשואין:"
+  },
+  "Tosafot on Nazir 8a:10:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 8a:10:2"
+    ],
+    "generatedAt": "2026-10-29T18:35:00.028Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 8a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפי' תימא רבי יהודה התם לא נחית לנזירות כלל</strong> - כלומר אין להטיל עליו נזירות דשמא לא היו בו מאה כור:"
+  },
+  "Tosafot on Nazir 8a:10:2": {
+    "dependsOn": [
+      "Nazir 8a:10",
+      "Nazir 8a:1",
+      "Nazir 8a:3",
+      "Nazir 8a:4",
+      "Nazir 8a:5",
+      "Nazir 8a:8",
+      "Nazir 8a:9",
+      "Nazir 8a:11",
+      "Tosafot on Nazir 8a:10:1",
+      "Rashi on Nazir 8a:10:1",
+      "Rashi on Nazir 8a:10:2",
+      "Rashi on Nazir 8a:11:1"
+    ],
+    "generatedAt": "2026-10-29T18:36:54.865Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 8a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא נחית לנזירות במאי לסלוקיה מיניה</strong> - כלומר במתניתין על כרחין חייב לנזירות אחת ואפילו אי בצק אמר וכיון שירד לנזירות אינו יכול להסתלק כמו שמפרש והולך ופריך אמאי אינו יכול להסתלק ליחזי כאילו היא מלאה קישואין או מלאה בצק ותיהוי ליה תקנתא דסלקא דעתך דנזירות קביל עליה כלומר יגלח ממה נפשך לסוף שלשים יום ויביא קרבן דאי חדא נזירות קביל עליה שפיר קמגלח ואי נמי חרדל קביל עילויה מצי לגלוחי אחר שלשים יום דקא סלקא דעתך אי אמר חרדל לנזירות קביל עליה כלומר הרבה נזירות ולא נזירות אחת ארוך וכיון שיגלח לסוף שלשים שוב לא תטיל עליה נזירות לרבי יהודה דמאן לימא לן דחרדל קביל דלמא בצק והשלים נדרו והשתא דמי לההיא דכרי דאמר רבי יהודה מתיר ואמאי אינו יכול להסתלק ומשני רבי יהודה סבר לה כרבי דהאמר חרדל הך נזירות ארוך קביל עליה ועד יום מותו לא מצי לגלח הלכך הכא ע\"כ נחית לחד נזירות אפילו אי בצק קביל וכיון שאתה מורידו לנזירות אפילו לרבי יהודה תו לא מצי להסתלק דשמא חרדל קביל עליה ונדון עד יום מותו נזירות חד וארוך ולא דמי לההיא כלל דאינו יורד לנזירות לרבי יהודה:"
+  },
+  "Tosafot on Nazir 8a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-10-29T18:01:49.532Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 8a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הריני נזיר כשער ראשי וכעפר הארץ וכחול הים הרי זה נזיר לעולם ומגלח אחת לשלשים יום</strong> - פירוש נזירות הרבה קיבל עליו כעפר הארץ וכחול הים ומגלח ביום שלשים ומביא קרבנותיו:"
+  },
+  "Tosafot on Nazir 8a:2:1": {
+    "dependsOn": [
+      "Nazir 8a:1",
+      "Rashi on Nazir 8a:2:1",
+      "Rashi on Nazir 8a:2:2",
+      "Tosafot on Nazir 8a:4:1",
+      "Tosafot on Nazir 8a:5:1",
+      "Nazir 8a:3"
+    ],
+    "generatedAt": "2026-10-29T18:06:12.131Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 8a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין זה מגלח אחת לשלשים יום</strong> - פירוש רבי סבירא ליה דנזירות מרובה קביל עליו עד יום מותו עד שיאמר בפירוש נזירות כדמסיק ואי זהו מגלח אחת לשלשים יום האומר הרי עלי נזירות כשער ראשי וכעפר הארץ וכחול הים:"
+  },
+  "Tosafot on Nazir 8a:3:1": {
+    "dependsOn": [
+      "Rashi on Nazir 8a:3:1",
+      "Rashi on Nazir 8a:3:2",
+      "Nazir 8a:3",
+      "Tosafot on Nazir 8a:1:1",
+      "Tosafot on Nazir 8a:2:1",
+      "Steinsaltz comment #1 on Nazir 8a:3",
+      "Steinsaltz comment #2 on Nazir 8a:3",
+      "Steinsaltz comment #3 on Nazir 8a:3",
+      "Steinsaltz comment #4 on Nazir 8a:3",
+      "Versions on Nazir 8a:3",
+      "Mishnah Nazir 1:5",
+      "Tosafot on Nazir 8a:4:1",
+      "Tosafot on Nazir 8a:5:1",
+      "Tosafot on Nazir 8a:6:1"
+    ],
+    "generatedAt": "2026-10-29T18:10:21.732Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 8a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הריני נזיר מלא הבית מלא הקופה</strong> - פירוש בית ריקנית או קופה ריקנית לפנים בודקין אותו אם אמר אחת גדולה נדרתי נזיר שלשים יום פי' נזירות אחת נדרתי והא דקאמר מלא הבית דאריכא ליה מילתא [כו'] ואינו נזיר אלא שלשים יום [ואם אמר סתם] נדרתי רואין הקופה כאילו מלאה חרדל ונזיר כל ימיו לרבנן דלעיל נזירות אחר נזירות ולרבי נזירות ארוך:"
+  },
+  "Tosafot on Nazir 8a:4:1": {
+    "dependsOn": [
+      "Nazir 8a:4",
+      "Tosafot on Nazir 8a:3:1"
+    ],
+    "generatedAt": "2026-10-29T18:15:55.036Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 8a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכאן ועד מקום פלוני פחות מל' יום נזיר שלשים יום</strong> - מידי דהוה אאומר הריני נזיר יום אחד דהוי נזיר ל' יום ואם לאו נזיר כמנין הימים וכדפרישי' לעיל דמיירי כשהחזיק בדרך:"
+  },
+  "Tosafot on Nazir 8a:5:1": {
+    "dependsOn": [
+      "Tosafot on Nazir 8a:5:1",
+      "Tosafot on Nazir 8a:5:2",
+      "Nazir 8a:1",
+      "Nazir 8a:4"
+    ],
+    "generatedAt": "2026-10-29T18:17:05.368Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 8a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כמנין ימות השנה מונה נזירות כמנין ימות השנה</strong> - דהיינו שס\"ה חדשים יהיה נזיר נזירות אחר נזירות ומגלח בינתיים ומביא קרבן כיון דקאמר כמנין משמע נזירות ולא נזירות ארוך:"
+  },
+  "Tosafot on Nazir 8a:5:2": {
+    "dependsOn": [
+      "Tosafot on Nazir 8a:5:1"
+    ],
+    "generatedAt": "2026-10-29T18:18:31.201Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 8a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רבי יהודה מעשה היה וכיון שהשלים מת</strong> - רבי יהודה לסיועי' לתנא קמא קאתי וקאמר מעשה היה וחייבוהו חכמים נזירות הרבה וכיון שהשלים כולו מת:"
+  },
+  "Tosafot on Nazir 8a:6:1": {
+    "dependsOn": [
+      "Nazir 8a:6",
+      "Nazir 8a:1",
+      "Nazir 8a:2",
+      "Nazir 8a:3"
+    ],
+    "generatedAt": "2026-10-29T18:21:53.276Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 8a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וליחזייה כאילו היא מלאה קישואין ודילועין ותהוי ליה תקנתא</strong> - אמתני' קא פריך דקאמר רואין כאילו היא מלאה חרדל ואין לו תקנה והוא הדין דמצי למיפרך וליחזי כמאן דמלי בצק ולא נתכוון זה אלא לנזירות אחד [וניקל] עליה וקצת קשה דהיאך ניקל עליה מספק ויש לומר דהתם תנן במסכת טהרות <span class=\"parenthesized\">(פ\"ד מ\"ז)</span> ספק נזירות להקל וא\"ת והא לעיל גבי מכאן ועד סוף העולם פריך לחומרא ויש לומר דהתם לא ידע שום צד דמצי למימר לקולא בלישנא דמכאן עד סוף העולם ולפום ריהטא משמע דנזירות קבל עליה מכאן ועד סוף העולם ולכך פריך לחומרא ממשמעות לשונו אבל הכא קס\"ד דאין אדם מכניס עצמו לדבר דספקו חמור מודאי שעל ידי ספק יהיה חמור לו מאילו קבל עליו נזירות ודאי כמו שאם בבירור לחרדל נתכוין מונה נזירות אחר נזירות לעולם ומגלח בין כל אחת ואחת ומביא קרבן והשתא דאיכא לספוקי [דלקישואין או] לבצק נתכוין משיגלח פעם אחת שוב לא יחול עד שיביא קרבן וקרבן אינו יכול להביא דשמא לבצק נתכוין לחד נזירות וקמייתי חולין בעזרה:"
+  },
+  "Tosafot on Nazir 8a:8:1": {
+    "dependsOn": [
+      "Nazir 8a:8",
+      "Gilyon HaShas on Nazir 8a:1",
+      "Nazir 32b:9",
+      "Tosafot on Nazir 32b:9:2"
+    ],
+    "generatedAt": "2026-10-29T18:29:19.148Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 8a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיהא בכרי זה מאה כור ומצאו שנגנב</strong> - ואין אנו יודעין אם היו בו מאה כור אם לאו ר\"ש אוסר דספק נזירות להחמיר דחיישינן דלמא היו בו מאה כור ולקמן מפרש תקנתא לר\"ש דאומר קודם שיתחיל למנות ימי נזירותו אם היו בו מאה כור והריני נזיר מדבורי הראשון הנה אשלים נדרי ומביא קרבנותיו ואם לא היו בו מאה כור ואם כן בדבורי לא היה בו ממש הריני נודר בנזיר מעכשיו ויהיה נזיר שלשים יום ויביא קרבנותיו ואין כאן חולין בעזרה כי הוא נזיר שלשים או מכח דיבור הראשון או מכח דיבור השני ואם תאמר ומאי ספקו חמור מודאי הרי הוא נפטר בנזירות אחת ובקרבן אחד כאילו בודאי היו בו מאה כור ויש לומר דיכול לבא לידי חומרא כגון אם נטמא קודם שהתנה דהשתא הוי ספק נזיר טמא ואין לו תקנה דלא יוכל להביא אשם טמא על הספק שלא היו בו מאה כור וקא מייתי חולין בעזרה ואסור ביין ובתגלחת לעולם [דשמא] נזיר הוא ואינו יכול לפטור מנזירותו אם לא בהבאת אשם טומאה וזה אין בא על התנאי אבל נטמא אחר שהתנה אז הוה ודאי נזיר טמא ומייתי אשם טומאה והדר משלים נזירותו:"
+  },
+  "Tosafot on Nazir 8a:9:1": {
+    "dependsOn": [
+      "Nazir 8a:9",
+      "Nazir 8a:1",
+      "Tosafot on Nazir 8a:6:1",
+      "Tosafot on Nazir 8a:8:1",
+      "Tosafot on Nazir 8a:9:1",
+      "Tosafot on Nazir 8a:10:1",
+      "Tosafot on Nazir 8a:10:2"
+    ],
+    "generatedAt": "2026-10-29T18:31:01.788Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nazir 8a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי יהודה מתיר שספק נזירות להקל</strong> - דהוא לא קיבל עליו אא\"כ ימצא בו מאה כור וכן במתני' רואין אותה כאילו מלאה בצק ויפטר בנזירות אחת:"
+  }
+}
