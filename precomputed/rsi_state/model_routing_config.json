@@ -8,6 +8,10 @@
       "generateModel": "gemini-3.8-flash-medium",
       "critiqueModel": "gemini-4-argon-medium"
     },
+    "argon": {
+      "generateModel": "gemini-4-argon-medium",
+      "critiqueModel": "gemini-4-argon-medium"
+    },
     "sonnet": {
       "generateModel": "claude-sonnet-5-5-medium",
       "critiqueModel": "gemini-3.8-flash-medium"
