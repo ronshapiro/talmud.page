@@ -955,6 +955,18 @@ describe("parseJsonResponse", () => {
       valid: true,
     });
   });
+
+  test("repairs and parses JSON with unescaped quotes in HTML attributes and Hebrew abbreviations", () => {
+    const raw = "{\n"
+      + '  "hebrew": "<strong class="dibur-hamatchil">מתני\'</strong> - '
+      + '<abbr title="עשרים ואחת">כ"א</abbr> תקיעות:",\n'
+      + '  "english": "<strong class="dibur-hamatchil">The Mishnah:</strong> Twenty-one blasts"\n'
+      + "}";
+    expect(parseJsonResponse<{hebrew: string; english: string}>(raw)).toEqual({
+      hebrew: '<strong class="dibur-hamatchil">מתני\'</strong> - <abbr title="עשרים ואחת">כ"א</abbr> תקיעות:',
+      english: '<strong class="dibur-hamatchil">The Mishnah:</strong> Twenty-one blasts',
+    });
+  });
 });
 
 describe("critiquePrompt", () => {

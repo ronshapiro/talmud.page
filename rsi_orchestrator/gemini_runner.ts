@@ -391,6 +391,7 @@ export const runGeminiApi: AgentRunner = async (
             thinkingLevel: "MEDIUM",
           },
           responseMimeType: "application/json",
+          ...(options.responseSchema ? {responseSchema: options.responseSchema} : {}),
           abortSignal: options.signal,
         },
       });

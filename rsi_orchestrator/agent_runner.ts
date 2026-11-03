@@ -28,6 +28,7 @@ export interface AgentOptions {
   signal?: AbortSignal;
   onChild?: (child: ChildProcess) => void;
   images?: DecodedImage[];
+  responseSchema?: Record<string, unknown>;
 }
 
 export interface AgentResult {
