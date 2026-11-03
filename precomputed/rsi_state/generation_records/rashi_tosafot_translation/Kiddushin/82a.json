@@ -1,4 +1,236 @@
 {
+  "Rashi on Kiddushin 82a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T19:56:56.723Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סורו רע</strong> - מנהגו רעה קרבותו רע להשתדל עמו שיהא סר אליו ובא לביתו:"
+  },
+  "Rashi on Kiddushin 82a:11:10": {
+    "dependsOn": [
+      "Rashi on Kiddushin 82a:11:8",
+      "Rashi on Kiddushin 82a:11:9"
+    ],
+    "generatedAt": "2026-11-03T20:06:52.321Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:11:10"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והבלן</strong> - מחמם מרחצאות:"
+  },
+  "Rashi on Kiddushin 82a:11:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 82a:11:1",
+      "Rashi on Kiddushin 82a:11:2",
+      "Rashi on Kiddushin 82a:11:3"
+    ],
+    "generatedAt": "2026-11-03T19:58:12.899Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סורו רע</strong> - מנהגו רעה קרבותו רע להשתדל עמו שיהא סר אליו ובא לביתו:"
+  },
+  "Rashi on Kiddushin 82a:11:3": {
+    "dependsOn": [
+      "Jastrow, צוֹרֵף 1"
+    ],
+    "generatedAt": "2026-11-03T19:59:06.795Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הצורפין</strong> - צורפי זהב העושין לנשים שירין נזמים וטבעות:"
+  },
+  "Rashi on Kiddushin 82a:11:4": {
+    "dependsOn": [
+      "[",
+      "Rashi on Kiddushin 82a:11:1",
+      "Rashi on Kiddushin 82a:11:2",
+      "Rashi on Kiddushin 82a:11:3",
+      "Rashi on Kiddushin 82a:11:5"
+    ],
+    "generatedAt": "2026-11-03T20:02:34.166Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הסריקים</strong> - סורק בגדים לנשים פלוקיירד\"א <span class=\"parenthesized\">(פלוקיידרי\"ש: סורקי צמר)</span> :"
+  },
+  "Rashi on Kiddushin 82a:11:5": {
+    "dependsOn": [
+      "Rashi on Kiddushin 82a:11:1",
+      "Rashi on Kiddushin 82a:11:2",
+      "Rashi on Kiddushin 82a:11:3",
+      "Rashi on Kiddushin 82a:11:4",
+      "Rashi on Kiddushin 82a:8:1",
+      "Rashi on Kiddushin 82a:8:2",
+      "Rashi on Kiddushin 82a:6:1"
+    ],
+    "generatedAt": "2026-11-03T20:03:37.219Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:11:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הנקורות</strong> - מנקרי ריחים של יד שנשים טוחנות בהם כדתנן בכתובות <span class=\"parenthesized\">(דף נט:)</span> אלו מלאכות שהאשה עושה לבעלה טוחנת ואופה ואמרינן <span class=\"parenthesized\">(שם)</span> בריחיא דידא:"
+  },
+  "Rashi on Kiddushin 82a:11:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T20:04:03.305Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:11:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והרוכלין</strong> - מוכרין קישוטי בשמים לנשים:"
+  },
+  "Rashi on Kiddushin 82a:11:7": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T20:04:20.699Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:11:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והספרין</strong> - הנשים צריכות להן בשביל בניהם:"
+  },
+  "Rashi on Kiddushin 82a:11:8": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T20:04:40.624Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:11:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והגרע</strong> - אומן המקיז דם על שם שמגרע את הדם:"
+  },
+  "Rashi on Kiddushin 82a:11:9": {
+    "dependsOn": [
+      "Rashi on Kiddushin 82a:11:7",
+      "Rashi on Kiddushin 82a:11:8",
+      "Rashi on Kiddushin 82a:11:9",
+      "Rashi on Kiddushin 82a:11:10"
+    ],
+    "generatedAt": "2026-11-03T20:06:20.217Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:11:9"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הבורסקי</strong> - מעבד להם עורות ללבוש ולנעול:"
+  },
+  "Rashi on Kiddushin 82a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T20:07:45.264Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהלך על צידו ורוחו גסה ונתלה ויושב</strong> - שלשתן סימני גאוה אבל אין זו דומה לזו ובכולן הוא חלוק ממדת הכשרים נתלה ויושב אינו יושב אלא אם כן נסמך או לאחוריו או על צידו דרך גאוה ובשביל שהבריות מוסרין נפשן לידו הוא מתגאה:"
+  },
+  "Rashi on Kiddushin 82a:12:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 82a:12:1",
+      "Rashi on Kiddushin 82a:12:3"
+    ],
+    "generatedAt": "2026-11-03T20:09:01.217Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועינו צרה</strong> - בממונו להוציא כלום מפני שהוא מלומד לאכול אצל המקיזין ואינו מלומד להוציא:"
+  },
+  "Rashi on Kiddushin 82a:12:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 82a:12:2"
+    ],
+    "generatedAt": "2026-11-03T20:09:45.400Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועינו רעה</strong> - נותן עיניו בבריאים שיחלו ויהיו צריכין לו:"
+  },
+  "Rashi on Kiddushin 82a:12:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T20:10:10.016Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:12:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אוכל הרבה</strong> - שמלומד לאכול עם כמה אנשים בכל יום:"
+  },
+  "Rashi on Kiddushin 82a:12:5": {
+    "dependsOn": [
+      "Rashi on Kiddushin 82a:12:4"
+    ],
+    "generatedAt": "2026-11-03T20:10:55.770Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:12:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומוציא קימעא</strong> - מתוך שמאכלו יפה בלחם נקי ובשר שמן שממעטים את הזבל שכל אדם מכין לסעודת הקזה מאכל בריאה:"
+  },
+  "Rashi on Kiddushin 82a:12:6": {
+    "dependsOn": [
+      "Rashi on Kiddushin 82a:12:5",
+      "Rashi on Kiddushin 82a:12:7",
+      "Rashi on Kiddushin 82a:12:1",
+      "Rashi on Kiddushin 82a:2:1",
+      "Rashi on Kiddushin 82a:8:1"
+    ],
+    "generatedAt": "2026-11-03T20:12:36.009Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:12:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחשוד על העריות</strong> - מתוך שהנשים צריכות לו ועסקו עמהן:"
+  },
+  "Rashi on Kiddushin 82a:12:7": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T20:13:06.154Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:12:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועל הגזל</strong> - שהנשים גוזלות מבעליהן ונותנות לו:"
+  },
+  "Rashi on Kiddushin 82a:12:8": {
+    "dependsOn": [
+      "Steinsaltz on Kiddushin 82a:12",
+      "Rashi on Kiddushin 82a:12:1",
+      "Rashi on Kiddushin 82a:12:2",
+      "Rashi on Kiddushin 82a:12:3",
+      "Rashi on Kiddushin 82a:12:4",
+      "Rashi on Kiddushin 82a:12:5",
+      "Rashi on Kiddushin 82a:12:6",
+      "Rashi on Kiddushin 82a:12:7",
+      "Rashi on Chullin 72a:8:1",
+      "Chullin 72a:8"
+    ],
+    "generatedAt": "2026-11-03T20:15:12.472Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:12:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועל שפיכות דמים</strong> - זימנין דשפי ליה לדמא לפחות מרביעית:"
+  },
   "Rashi on Kiddushin 82a:1:1": {
     "dependsOn": [],
     "generatedAt": "2026-11-03T19:11:36.668Z",
@@ -305,6 +537,43 @@
       "Rashi on Kiddushin 82a:8:7"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">הספנין רובן חסידים</strong> - שפורשין למקום הסכנה ותמיד הם ברעדה יותר מן הגמלין:"
+  },
+  "Rashi on Kiddushin 82a:8:8": {
+    "dependsOn": [
+      "Rashi on Kiddushin 82a:8:8",
+      "Chidushei Agadot on Kiddushin 82a:5",
+      "Chidushei Agadot on Kiddushin 82a:6"
+    ],
+    "generatedAt": "2026-11-03T19:52:39.094Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:8:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טוב שברופאים לגיהנם</strong> - אינו ירא מן החולי ומאכלו מאכל בריאים ואינו משבר לבו למקום ופעמים שהורג נפשות ויש בידו לרפאות העני ואינו מרפא:"
+  },
+  "Rashi on Kiddushin 82a:8:9": {
+    "dependsOn": [
+      "Rashi on Kiddushin 82a:8:8",
+      "Rashi on Kiddushin 82a:8:9"
+    ],
+    "generatedAt": "2026-11-03T19:53:12.641Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:8:9"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טוב שבטבחים</strong> - ספיקי טריפות באות לידו וחס על ממונו ומאכילן:"
+  },
+  "Rashi on Kiddushin 82a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T19:53:48.919Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל התורה אינה כן</strong> - שאף הבא לידי זקנה או ייסורין ואינו יכול לעסוק בה הוא אוכל ממתן שכרה דכתיב עוד ינובון בשיבה:"
   },
   "Tosafot on Kiddushin 82a:1:1": {
     "dependsOn": [
