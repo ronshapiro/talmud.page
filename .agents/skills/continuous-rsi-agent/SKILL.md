@@ -16,7 +16,7 @@ Use this skill when asked to run continuous translation for Rashi and Tosafot in
 
 ```bash
 npx ts-node rsi_orchestrator/rashi_tosafot_translation_cli.ts <BookName> \
-  --backend <claude|agyollama|gemini-api> \
+  --backend <claude|agy|ollama|gemini-api> \
   [--model-config <ConfigPreset>] \
   --continuous \
   --duration-hours <Hours>
