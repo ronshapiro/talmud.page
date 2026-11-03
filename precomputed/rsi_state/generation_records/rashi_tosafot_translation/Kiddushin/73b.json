@@ -1,0 +1,427 @@
+{
+  "Rashi on Kiddushin 73b:10:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 73b:10:2",
+      "Rashi on Kiddushin 73b:10:3"
+    ],
+    "generatedAt": "2026-11-03T05:23:16.507Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זה יצא ראשון</strong> - ובכור הוא:"
+  },
+  "Rashi on Kiddushin 73b:10:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 73b:10:1",
+      "Rashi on Kiddushin 73b:10:2",
+      "Rashi on Kiddushin 73b:10:3"
+    ],
+    "generatedAt": "2026-11-03T05:24:09.027Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם הוחזקה על עומדה</strong> - כדמפרש דלא אהדרא אפה נאמנת:"
+  },
+  "Rashi on Kiddushin 73b:10:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 73b:10:1",
+      "Rashi on Kiddushin 73b:10:2"
+    ],
+    "generatedAt": "2026-11-03T05:24:52.311Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם לאו</strong> - דאהדרא אפה אינה נאמנת:"
+  },
+  "Rashi on Kiddushin 73b:11:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 73b:11:1",
+      "Rashi on Kiddushin 73b:11:2",
+      "Niddah 61a:1",
+      "Niddah 61a:2",
+      "Niddah 61a:3",
+      "Niddah 61a:4",
+      "Niddah 61a:5",
+      "Niddah 61a:6",
+      "Niddah 60b:13",
+      "Niddah 60b:14",
+      "Niddah 60b:15"
+    ],
+    "generatedAt": "2026-11-03T05:27:01.964Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהיו ישינות</strong> - במסכת נדה <span class=\"parenthesized\">(דף סא.)</span> מוקי לה במשולבות ודבוקות זו בזו:"
+  },
+  "Rashi on Kiddushin 73b:11:2": {
+    "dependsOn": [
+      "Niddah 14b:14"
+    ],
+    "generatedAt": "2026-11-03T05:27:52.412Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשיעור ווסת</strong> - לאחר מציאה מיד ובמסכת נדה <span class=\"parenthesized\">(דף יד:)</span> מפרש שיעור ווסת שעומד העד הוא הקינוח בצד המשקוף ואינו מחוסר אלא לקנח מיד:"
+  },
+  "Rashi on Kiddushin 73b:12:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 73b:12:2"
+    ],
+    "generatedAt": "2026-11-03T05:28:27.763Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זה כהן וזה לוי</strong> - נשים שילדו בבית אחת אשת כהן ולוי נתין וממזר:"
+  },
+  "Rashi on Kiddushin 73b:12:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 73b:12:1",
+      "Kiddushin 73b:13"
+    ],
+    "generatedAt": "2026-11-03T05:29:31.436Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא קרא עליה ערער</strong> - שלא יצא מעורר על הולד לומר זה בנה של אשת ממזר:"
+  },
+  "Rashi on Kiddushin 73b:14:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 73b:14:1",
+      "Rashi on Kiddushin 73b:14:2"
+    ],
+    "generatedAt": "2026-11-03T05:30:13.043Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היכא דאית ליה חזקה דכשרות</strong> - שהיו מוחזקין בו בחזקת כשר:"
+  },
+  "Rashi on Kiddushin 73b:14:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 73b:14:2",
+      "Rashi on Kiddushin 73b:14:1",
+      "Kiddushin 73b:14"
+    ],
+    "generatedAt": "2026-11-03T05:31:23.094Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל היכא דלית ליה חזקה דכשרות</strong> - שלא נודע לבריות מי הוא הכשר ולא יצא אחד מהם ידי ספק:"
+  },
+  "Rashi on Kiddushin 73b:15:1": {
+    "dependsOn": [
+      "Kiddushin 73b:15"
+    ],
+    "generatedAt": "2026-11-03T05:33:25.591Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נאמן בעל המקח</strong> - סיפא דברייתא דלעיל:"
+  },
+  "Rashi on Kiddushin 73b:15:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T05:34:01.480Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לזה מכרתי כו'</strong> - אם שנים מעוררין על המקח זה אומר מכרת לי וזה אומר לי מכרת ושלי המקח לקמן מוקי ליה ששניהם נתנו לו דמים כל אחד ואחד דמים שלמים אחד מדעתו ואחד בעל כרחו:"
+  },
+  "Rashi on Kiddushin 73b:15:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 73b:15:2",
+      "Rashi on Kiddushin 73b:15:4"
+    ],
+    "generatedAt": "2026-11-03T05:35:14.168Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בזמן שמקחו בידו</strong> - דרמיא עליה למידק שלא לחזור לו מזה ולהחזיר לו דמיו ויתן המקח למי שלא נמכר לו דקם ליה במי שפרע הילכך מידק דייק:"
+  },
+  "Rashi on Kiddushin 73b:15:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T05:35:41.970Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:15:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל בזמן שאין מקחו בידו</strong> - ושניהם אוחזין בו אינו נאמן דכיון דלאו עליה רמיא תו לא דייק לזכור למי הוא:"
+  },
+  "Rashi on Kiddushin 73b:1:1": {
+    "dependsOn": [
+      "Kiddushin 73b:1"
+    ],
+    "generatedAt": "2026-11-03T05:06:16.208Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין בו משום אסופי</strong> - דאי לאו דכשר הוא לא הוה טרחא ביה למימהל ליה:"
+  },
+  "Rashi on Kiddushin 73b:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T05:06:38.230Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משלטי הדמיה</strong> - איבריו מתוקנים ומיושרים:"
+  },
+  "Rashi on Kiddushin 73b:1:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 73b:1:1",
+      "Rashi on Kiddushin 73b:1:2",
+      "Rashi on Kiddushin 73b:1:3",
+      "Steinsaltz on Kiddushin 73b:1",
+      "Steinsaltz comment #2 on Kiddushin 73b:1",
+      "Jastrow, שְׁלַט 1"
+    ],
+    "generatedAt": "2026-11-03T05:08:21.301Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין בו משום אסופי</strong> - דאי פסול הוא לא הוה מתקנא ליה הואיל ודעתה להשליכו אלא מחמת רעבון הושלך ל\"א משלטי הדמיה איבריו גדולים ומלובן ומזורז אין זה מזנה אלא מבעלה שמתוך תשמיש תדיר הולד מלובן ומזורז כדאמר במסכת נדה <span class=\"parenthesized\">(דף לא.)</span> ג' חדשים אחרונים תשמיש יפה לאשה ויפה לולד שמתוך כך הולד מזורז ומלובן:"
+  },
+  "Rashi on Kiddushin 73b:1:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 73b:1:3",
+      "Rashi on Kiddushin 73b:1:5"
+    ],
+    "generatedAt": "2026-11-03T05:11:09.591Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הדמיה</strong> - איבריו כמו הדומי ניהדמיה דעירובין <span class=\"parenthesized\">(דף ל.)</span> והדמין תתעבדון דדניאל:"
+  },
+  "Rashi on Kiddushin 73b:1:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T05:11:31.069Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:1:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מלי כוחלא</strong> - סביבות עיניו ליפותו:"
+  },
+  "Rashi on Kiddushin 73b:1:6": {
+    "dependsOn": [
+      "Jastrow, חוּמְרָא II 1",
+      "Rashi on Kiddushin 73b:1:4",
+      "Rashi on Kiddushin 73b:1:5"
+    ],
+    "generatedAt": "2026-11-03T05:12:59.987Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:1:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רמי חומרי</strong> - קשרים שעושים לרפואה ותולין לתינוק דאמרינן במסכת שבת <span class=\"parenthesized\">(דף סו:)</span> הבנים יוצאים בקשרים:"
+  },
+  "Rashi on Kiddushin 73b:1:7": {
+    "dependsOn": [
+      "Rashi on Kiddushin 73b:1:8"
+    ],
+    "generatedAt": "2026-11-03T05:13:34.054Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:1:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תלי פיתקא</strong> - קמיע של כתב:"
+  },
+  "Rashi on Kiddushin 73b:1:8": {
+    "dependsOn": [
+      "Rashi on Kiddushin 73b:1:7",
+      "Rashi on Kiddushin 73b:1:8",
+      "Rashi on Kiddushin 73b:1:9"
+    ],
+    "generatedAt": "2026-11-03T05:14:18.564Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:1:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תלי קמיע</strong> - של עיקרין:"
+  },
+  "Rashi on Kiddushin 73b:1:9": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T05:14:44.858Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:1:9"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין בו משום אסופי</strong> - דהא חסה על חייו והוכיח תחילתה שאוהבתו ולא השליכתו למות:"
+  },
+  "Rashi on Kiddushin 73b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T05:15:06.362Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תלי בדיקלא אי מטיא ליה חיה רעה</strong> - ויכולה לטורפו משם יש בו משום אסופי כללו של דבר כל מקום שיש להבין דלדעת מיתה השליכתהו ולא חסה עליו יש בו משום אסופי:"
+  },
+  "Rashi on Kiddushin 73b:3:1": {
+    "dependsOn": [
+      "[",
+      "Rashi on Kiddushin 73b:3:2",
+      "Kiddushin 73b:3",
+      "Rashi on Kiddushin 73b:1:1",
+      "Rashi on Kiddushin 73b:4:1"
+    ],
+    "generatedAt": "2026-11-03T05:16:58.383Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זרדתא דסמיכא למתא</strong> - אי תלי באילן ששמו זרדתא שלרי\"ר <span class=\"parenthesized\">(שורביי\"ר: חוזרר <span class=\"parenthesized\">(אילן)</span>)</span> בלע\"ז אי סמיכא למתא אע\"ג דלא מטיא ליה חיה יש בו משום אסופי דאמר בערבי פסחים <span class=\"parenthesized\">(פסחים דף קיא:)</span> זרדתא דסמיכא למתא לא פחיתא משתין שידי:"
+  },
+  "Rashi on Kiddushin 73b:3:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 73b:3:1"
+    ],
+    "generatedAt": "2026-11-03T05:17:31.582Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בי כנישתא</strong> - בתי כנסיות שלהם חוץ לעיר הוו ואי לא שכיחי בה רבים כגון אורחים יש לדאג ממזיקים:"
+  },
+  "Rashi on Kiddushin 73b:4:1": {
+    "dependsOn": [
+      "Kiddushin 73b:3",
+      "Rashi on Kiddushin 73b:4:2",
+      "Rashi on Kiddushin 73b:4:3",
+      "Steinsaltz on Kiddushin 73b:4:1"
+    ],
+    "generatedAt": "2026-11-03T05:18:51.235Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פירא דסופלי</strong> - נמצא בחפירה העשויה להטיל שם גרעיני תמרים למאכל בהמות יש בו משום אסופי דחוץ לעיר עבדי ליה ושכיחי בהו מזיקין:"
+  },
+  "Rashi on Kiddushin 73b:4:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 73b:4:1",
+      "Rashi on Kiddushin 73b:4:3"
+    ],
+    "generatedAt": "2026-11-03T05:19:54.832Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חריפתא דנהרא</strong> - נתנוהו בעריבה והשליכתהו לאמצעית הנהר מקום שהספינות עוברות תמיד אין בו משום אסופי דלכך טרחה להוליכו עד חריפות הנהר שיעברו ספינות שם וימצאוהו:"
+  },
+  "Rashi on Kiddushin 73b:4:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 73b:4:1",
+      "Rashi on Kiddushin 73b:4:2",
+      "Rashi on Kiddushin 73b:4:3"
+    ],
+    "generatedAt": "2026-11-03T05:20:34.250Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פישרא</strong> - מקום שיפוע הנהר ע\"י הפשרת שלגים שאין דרך ספינות לעבור שם יש בו משום אסופי:"
+  },
+  "Rashi on Kiddushin 73b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T05:20:57.752Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נאמנין עליו</strong> - לומר בנינו הוא:"
+  },
+  "Rashi on Kiddushin 73b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T05:21:27.447Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשני רעבון</strong> - שהרבה נשלכין לא רצו חכמים לפוסלם מחמת יציאת קול:"
+  },
+  "Rashi on Kiddushin 73b:8:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 73b:8:2"
+    ],
+    "generatedAt": "2026-11-03T05:22:05.571Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נאמנים לאלתר</strong> - ולא לאחר זמן אבל כל שאר הנאמנין נאמנים נמי לאחר זמן:"
+  },
+  "Rashi on Kiddushin 73b:8:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 73b:8:1",
+      "Kiddushin 73b:8"
+    ],
+    "generatedAt": "2026-11-03T05:22:45.790Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ופוטרת חברותיה</strong> - מן הטומאה כדמפרש:"
+  },
+  "Tosafot on Kiddushin 73b:15:1": {
+    "dependsOn": [
+      "Kiddushin 73b:15",
+      "Rashi on Kiddushin 73b:15:1",
+      "Rashi on Kiddushin 73b:15:2",
+      "Rashi on Kiddushin 73b:15:3",
+      "Rashi on Kiddushin 73b:15:4",
+      "Maharshal on Kiddushin 73b:2"
+    ],
+    "generatedAt": "2026-11-03T05:46:18.743Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 73b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בד\"א בזמן שמקחו בידו</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> דרמי עליה למידק לפי שהוא במי שפרע אם יחזור במי שנתן המעות ויחזיר לו דמיו אבל בזמן שאין מקחו בידו אלא שניהם אוחזים בו אינו נאמן דכיון דלא עליה רמיא לא דייק לזכור מי הוה ופריך וניחזי זוזי ממאן נקיט אאין מקחו בידו פריך לפירוש <span class=\"rashi-quotation\">הקונטרס</span> דפי' שלא קבל המעות אלא מאחד מהם והא ודאי מידכר דכיר ממאן קביל זוזי ומשני אלא דנקיט זוזי מתרוייהו ולא ידיע כו' ולפי זה אמרינן דאפילו אמר שידע לא להימני משום דלא רמי עליה למידק כך שיטת <span class=\"rashi-quotation\">הקונטרס</span> ומה שפי' דפריך אאין מקחו בידו דקאמר דאינו נאמן ופריך וניחזי זוזי ממאן נקט פירוש ולאותו שנתן לו המעות ודאי נתרצה קשה דמאי יש לנו להאמינו טפי מעד אחד דעלמא דכיון שאין מקחו בידו לא שייך לומר מיגו כדי להאמינו לכן פי' ר\"ת בזמן שמקחו בידו ואז הוא נאמן מטעם מיגו דמצי אמר לא מכרתי או חזרתי וקניתיו אבל אין מקחו בידו אינו נאמן דאז לא שייך מיגו ופריך וליחזי זוזי ממאן נקט נהי נמי דמקחו בידו אמאי נאמן אם יאמר אמי שלא קבל המעות לזה נתרציתי דמשמע דנאמן בכל ענין ואמאי נאמן הוה מיגו במקום עדים דאנן סהדי דלאותו שנתן המעות נתרצה ומשני דנקיט זוזי כו' ולפי זה גרסי' ולא ידיע ולא גר' ולא ידע דמשמע שאין אנו חוששין לידיעתו דודאי חיישינן לידיעתו אי הוה ידע ולפי זה צ\"ל שלא ידע שאם ידע הוה אמרי' נתרצה לזה אך בריש בבא מציעא <span class=\"parenthesized\">(דף ב:)</span> גבי שנים אוחזים בטלית דמוקי לה בגמרא במקח וממכר ופריך מקח וממכר ניחזי זוזי ממאן נקט ופירש התם רש\"י כפי שיטתו דהכא ועוד פירש התם אע\"ג דאמר בפ' בתרא דקידושין דבזמן שאין מקחו בידו אינו נאמן והכא הוי כאין מקחו בידו דתרוייהו אדוקין בטלית ואמאי פריך שיהא המוכר נאמן הא מוקמינן התם בדנקט זוזי מתרוייהו והשתא ס\"ד דלא נקט זוזי אלא מחד אך לפר\"ת קשה דמאי פריך התם וניחזי זוזי ממאן נקיט והא לפירושו אע\"ג דלא נקיט זוזי אלא מחד אין לנו להאמינו כדפרישית לכך צ\"ל התם וניחזי זוזי ממאן נקט כלומר היכי קתני במתני' זה ישבע שאין לו בה פחות מחציה כו' נשאל למוכר ממאן קבל המעות וליהוי כעד אחד לפטור את מי שמסייע אפי' משבועת היסת ולחייב את שכנגדו שבועה דאורייתא אבל להוציא ממון מזה ולמסור לזה פשיטא דאינו נאמן רק כדפרישית ומשני דנקיט זוזי מתרוייהו וגם לפירוש זה גרסי' לא ידע אך אם הוא ידע פשיטא שאנו חוששין לידיעתו לחייב לזה שבועה דאורייתא כדפירשתי:"
+  }
+}

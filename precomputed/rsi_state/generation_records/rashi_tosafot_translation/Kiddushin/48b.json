@@ -1,4 +1,98 @@
 {
+  "Rashi on Kiddushin 48b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T01:29:41.407Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 48b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא במאי עסקינן כו'</strong> - כלומר אי טעות גבי דידה הוי לא הוה פליג ר\"ש אלא כגון דהוה טעות גבי דידיה דאמר לשליח כו':"
+  },
+  "Rashi on Kiddushin 48b:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T01:30:20.097Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 48b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ק סבר קפידא היא</strong> - ולא ניחא ליה לתת לה זהב ואין זה שלוחו בזאת ורבי שמעון סבר מינח ניחא ליה דחשיבותא היא גביה והאי דקאמר ליה דינר כסף מראה מקום הוא לו להקל עליו ולומר אם אינך יכול להלוות לי דינר זהב תלוה לי דינר כסף:"
+  },
+  "Rashi on Kiddushin 48b:11:1": {
+    "dependsOn": [
+      "Kiddushin 48b:11",
+      "Kiddushin 48b:7"
+    ],
+    "generatedAt": "2026-11-02T01:31:14.041Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 48b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הכי</strong> - דשליח קדשה לו התקדשי לו מיבעי ליה ועוד אם טעות גביה הוא אם הטעהו מבעי ליה ועוד נמצא של זהב דקתני מאי היא מעיקרא כי יהביה בחזקת זהב יהביה:"
+  },
+  "Rashi on Kiddushin 48b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T01:31:34.356Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 48b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קפידא</strong> - לא היתה חפיצה אלא בשל כסף דאיכא דניחא ליה בכספא:"
+  },
+  "Rashi on Kiddushin 48b:12:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 48b:12:1",
+      "Rashi on Kiddushin 48b:12:3",
+      "Rashi on Kiddushin 48b:12:4"
+    ],
+    "generatedAt": "2026-11-02T01:33:03.612Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 48b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומר סבר מראה מקום היא לו</strong> - אף אם לא יתן אלא כסף קבלהו ומיהו היכא דטעאי איהי גופה לא פליג ר\"ש:"
+  },
+  "Rashi on Kiddushin 48b:12:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T01:33:37.457Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 48b:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומאי נמצא</strong> - הא מעיקרא הכי הוה:"
+  },
+  "Rashi on Kiddushin 48b:12:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 48b:12:1",
+      "Rashi on Kiddushin 48b:12:2",
+      "Rashi on Kiddushin 48b:12:3",
+      "Rashi on Kiddushin 48b:12:4"
+    ],
+    "generatedAt": "2026-11-02T01:34:17.304Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 48b:12:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דהוה צייר בבליתא</strong> - כשנתנו לשליח היה צרור בסמרטוט ומצאתו של זהב:"
+  },
+  "Rashi on Kiddushin 48b:13:1": {
+    "dependsOn": [
+      "Kiddushin 48b:13"
+    ],
+    "generatedAt": "2026-11-02T01:36:41.308Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 48b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כולהו סבירא להו מראה מקום הוא לו</strong> - האומר לשלוחו לעשות לו בדבר הקל ועשה לו בדבר כבד דאין זו שינוי ולא א\"ל דבר הקל אלא להראות לו מקום להקל בשליחותו אם כבד עליו בענין אחר:"
+  },
   "Rashi on Kiddushin 48b:1:1": {
     "dependsOn": [
       "Kiddushin 48b:1",
@@ -183,6 +277,134 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ק סבר קפידא היא</strong> - ולא ניחא ליה לתת לה זהב ואין זה שלוחו בזאת ורבי שמעון סבר מינח ניחא ליה דחשיבותא היא גביה והאי דקאמר ליה דינר כסף מראה מקום הוא לו להקל עליו ולומר אם אינך יכול להלוות לי דינר זהב תלוה לי דינר כסף:"
   },
+  "Rashi on Kiddushin 48b:8:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 48b:8:1",
+      "Rashi on Kiddushin 48b:8:2",
+      "Rashi on Kiddushin 48b:8:3"
+    ],
+    "generatedAt": "2026-11-02T01:19:15.411Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 48b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בו ובמה שבתוכו</strong> - בשניהם זכתה <span class=\"parenthesized\">(דמצטרפי)</span> לשוה פרוטה:"
+  },
+  "Rashi on Kiddushin 48b:8:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 48b:8:1",
+      "Rashi on Kiddushin 48b:8:2",
+      "Rashi on Kiddushin 48b:8:3",
+      "Rashi on Kiddushin 48b:8:4",
+      "Rashi on Kiddushin 48b:8:5",
+      "Rashi on Kiddushin 48b:8:6",
+      "Rashi on Kiddushin 48b:8:7"
+    ],
+    "generatedAt": "2026-11-02T01:21:09.700Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 48b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בו</strong> - קדשה ולא במה שבתוכו אינה זוכה בו ואינו מצטרף לש\"פ:"
+  },
+  "Rashi on Kiddushin 48b:8:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 48b:8:1",
+      "Rashi on Kiddushin 48b:8:2",
+      "Rashi on Kiddushin 48b:8:3",
+      "Rashi on Kiddushin 48b:8:4",
+      "Rashi on Kiddushin 48b:8:5",
+      "Rashi on Kiddushin 48b:8:6",
+      "Rashi on Kiddushin 48b:8:7"
+    ],
+    "generatedAt": "2026-11-02T01:21:51.168Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 48b:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בו</strong> - קדשה ולא במה שבתוכו אינה זוכה בו ואינו מצטרף לש\"פ:"
+  },
+  "Rashi on Kiddushin 48b:8:5": {
+    "dependsOn": [
+      "Rashi on Kiddushin 48b:8:4",
+      "Rashi on Kiddushin 48b:8:5",
+      "Rashi on Kiddushin 48b:8:6",
+      "Rashi on Kiddushin 48b:8:7"
+    ],
+    "generatedAt": "2026-11-02T01:22:52.414Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 48b:8:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במיא</strong> - דלא חשיבא <span class=\"parenthesized\">(היא)</span> ולא היתה דעתה אלא בכלי:"
+  },
+  "Rashi on Kiddushin 48b:8:6": {
+    "dependsOn": [
+      "Rashi on Kiddushin 48b:8:5",
+      "Rashi on Kiddushin 48b:8:7"
+    ],
+    "generatedAt": "2026-11-02T01:23:42.728Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 48b:8:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בחמרא</strong> - במה שבתוכו ולא בו דעבידי למשתייא ומהדרי כוס למריה:"
+  },
+  "Rashi on Kiddushin 48b:8:7": {
+    "dependsOn": [
+      "Rashi on Kiddushin 48b:8:4",
+      "Rashi on Kiddushin 48b:8:5",
+      "Rashi on Kiddushin 48b:8:6"
+    ],
+    "generatedAt": "2026-11-02T01:24:29.059Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 48b:8:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בציהרא</strong> - ציר דגים שעשוי לימים רבים לטבל בו והכוס צריך לשומרו בו ובמה שבתוכו וי\"א ציהרא שמן לשון יצהר <span class=\"parenthesized\">(במדבר יח)</span>:"
+  },
+  "Rashi on Kiddushin 48b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T01:27:24.275Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 48b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שניהם</strong> - הלוקח ומוכר ומשנה בבבא בתרא היא:"
+  },
+  "Rashi on Kiddushin 48b:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T01:27:43.786Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 48b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איכא דניחא ליה בחלא</strong> - ואף על גב דחמרא עדיף פעמים שזה צריך לחומץ:"
+  },
+  "Tosafot on Kiddushin 48b:12:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 48b:12:1",
+      "Rashi on Kiddushin 48b:12:2",
+      "Rashi on Kiddushin 48b:12:3",
+      "Rashi on Kiddushin 48b:12:4",
+      "Kiddushin 48b:12"
+    ],
+    "generatedAt": "2026-11-02T01:36:02.135Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 48b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דהוה צייר בבליתא</strong> - <span class=\"rashi-quotation\">פי' בקונט'</span> כשנתנו לשליח היה צרור בסמרטוט וכשהגיע ליד האשה מצאתו של זהב ולעיל כי פריך נמצא מעיקרא נמי זהב היה לא מצי לשנויי מאי נמצא דהוה צייר בבליתא דהא האשה עצמה מקבלת קידושין א\"כ יודעת היא שהוא של זהב שאם היא סבורה שהוא של כסף הוי קשיא ליה אמאי מקודשת והא איכא דניחא ליה בכספא ולא ניחא ליה בדהבא וכ\"ש שהשליח יודע כך דאל\"כ טועה הוא ואין הקידושין כלום ולא שייך התם טעמא דמראה מקום היא לו אבל הכא שעשאתו שליח לקבל קידושין שייך טעמא דמראה מקום היא לו:"
+  },
   "Tosafot on Kiddushin 48b:2:1": {
     "dependsOn": [
       "Tosafot on Kiddushin 48b:8:1",
@@ -206,5 +428,44 @@
       "Tosafot on Kiddushin 48b:2:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">דכ\"ע ישנה לשכירות מתחלה ועד סוף</strong> - אין לדקדק מכאן דהלכה דישנה לשכירות מתחלה ועד סוף דהא לא הוה מצי למימר דכ\"ע אינה לשכירות דא\"כ מ\"ט דמ\"ד אינה מקודשת אך יש להביא ראיה דהלכה דישנה לשכירות מתחלה ועד סוף מההיא דפ\"ק דמסכת ע\"ז <span class=\"parenthesized\">(דף יט:)</span> תנן הגיע לכיפה שמעמידים בה עבודת כוכבים אסור לבנותה וקאמר ר\"א בגמ' דאם בנה שכרו מותר ומפרש התם טעמא משום דישנה לשכירות מתחילה ועד סוף ואימת קמיתסר במכוש אחרון ובמכוש אחרון לית בה שוה פרוטה ש\"מ דהכי הילכתא דליכא מאן דפליג ואין נפקותא לענין חזרה דהא דאמר רב <span class=\"parenthesized\">(ב\"מ דף עז.)</span> פועל יכול לחזור בו אפי' בחצי היום היינו אפי' למ\"ד אינה לשכירות אלא לבסוף אבל איכא נפקותא לענין קידושין דאי ישנה לשכירות מתחילה ועד סוף חשיב האי שכירות מלוה ואינה מקודשת ולענין עבודת כוכבים אם בנה שכרו מותר ואע\"ג דישנה לשכירות מתחילה ועד סוף מ\"מ אינה משתלמת אלא לבסוף כדאמרי' בפרק איזהו נשך <span class=\"parenthesized\">(ב\"מ דף סה.)</span> כשכיר שנה בשנה שכירות של שנה זו אינה משתלמת אלא בשנה אחרת:"
+  },
+  "Tosafot on Kiddushin 48b:8:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 48b:8:1",
+      "Rashi on Kiddushin 48b:8:2",
+      "Rashi on Kiddushin 48b:8:3",
+      "Rashi on Kiddushin 48b:8:4",
+      "Rashi on Kiddushin 48b:8:5",
+      "Rashi on Kiddushin 48b:8:6",
+      "Rashi on Kiddushin 48b:8:7",
+      "Tosafot on Kiddushin 48b:2:1",
+      "Tosafot on Kiddushin 48b:9:1",
+      "Tosafot on Kiddushin 48b:12:1"
+    ],
+    "generatedAt": "2026-11-02T01:27:05.935Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 48b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא במיא</strong> - <span class=\"rashi-quotation\">פי' הקונטרס</span> במיא שאינם חשובים אמרי' בו ולא במה שבתוכו בחמרא דחשוב במה שבתוכו ולא בו ובציהרא פירש ציר דגים שעשוי לימים רבים לטבל והכוס צריך לו לשומרו לשון אחר ציהרא שמן כמו יצהר שצריך לכלי שמשהין אותו לזמן גדול בו ובמה שבתוכו וקשה לר\"ת דאין זה סדר הברייתא שהביא לכן פר\"ת במיא בו ובמה שבתוכו שהמים בטלים לגבי הכוס בחמרא בו ולא במה שבתוכו שהיין חשוב ואינו בטל לגבי הכוס ומ\"מ אינו חשוב כ\"כ שנאמר דדעתה תהא על היין אבל בציהרא במה שבתוכו דחשוב יותר מן הכוס אבל לא בו דהכוס אינו בטל לגבי ציהרא ומיהו קושיא דר\"ת לאו קושיא היא שהרי מצינו בגמרא דאינו חושש לסדר הברייתא כדאמר בפ' הישן <span class=\"parenthesized\">(סוכה כו.)</span> גבי לא יישן אדם בתפילין לא שינת קבע ולא עראי כו' ודוק ותשכח:"
+  },
+  "Tosafot on Kiddushin 48b:9:1": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 48b:9:1",
+      "Kiddushin 48b:9",
+      "Rashi on Kiddushin 48b:9:1",
+      "Rashi on Kiddushin 48b:9:2",
+      "Rashba on Kiddushin 48b:3",
+      "Chidushei Halachot on Kiddushin 48b:2",
+      "Chokhmat Shlomo on Kiddushin 48b:2"
+    ],
+    "generatedAt": "2026-11-02T01:29:13.019Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 48b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איכא דניחא ליה בכספא ולא ניחא ליה בדהבא</strong> - פי' כגון שצריכה כסף להשלים תכשיט של כסף שעושה ומיהו היכא שהטעה האשה בממון לא פליג. רבי שמעון:"
   }
 }

@@ -1,0 +1,360 @@
+{
+  "Rashi on Kiddushin 58a:11:1": {
+    "dependsOn": [
+      "Kiddushin 58a:8",
+      "Kiddushin 58a:9",
+      "Kiddushin 58a:10",
+      "Rashi on Kiddushin 58a:11:2"
+    ],
+    "generatedAt": "2026-11-02T11:36:41.463Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 58a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יצא בשר</strong> - מקדושת שביעית דבפירות גופייהו כתיב בו תהיה בהווייתו תהא אבל חילופיהם הן יוצאין לחולין:"
+  },
+  "Rashi on Kiddushin 58a:11:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 58a:11:1"
+    ],
+    "generatedAt": "2026-11-02T11:37:10.456Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 58a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ופירי עצמו</strong> - הפירי הראשון אסור לאחר הביעור שלא יצא מקדושתו:"
+  },
+  "Rashi on Kiddushin 58a:13:1": {
+    "dependsOn": [
+      "Deuteronomy 18:3"
+    ],
+    "generatedAt": "2026-11-02T11:37:48.617Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 58a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובמתנות</strong> - הזרוע והלחיים והקיבה:"
+  },
+  "Rashi on Kiddushin 58a:13:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 58a:13:1",
+      "Kiddushin 58a:14"
+    ],
+    "generatedAt": "2026-11-02T11:38:49.689Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 58a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואפילו הוא ישראל</strong> - וקא ס\"ד אע\"פ שאין לו בכל אלו אלא טובת הנאה שבידו לתתם לכל מי שירצה וגם היא לא זכתה אלא בטובת הנאה זו שהיא צריכה ליתנם לכהן והמעשר ללוי ומיקדשה בטובת הנאה זו דקסבר טובת הנאה ממון:"
+  },
+  "Rashi on Kiddushin 58a:14:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 58a:14:1",
+      "Rashi on Kiddushin 58a:14:2",
+      "Rashi on Kiddushin 58a:13:1",
+      "Rashi on Kiddushin 58a:13:2",
+      "Rashi on Kiddushin 58a:15:1",
+      "Rashi on Kiddushin 58a:1:1",
+      "Rashi on Kiddushin 58a:2:1",
+      "Rashi on Kiddushin 58a:3:1",
+      "Rashi on Kiddushin 2a:1:1"
+    ],
+    "generatedAt": "2026-11-02T11:40:08.599Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 58a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינו ממון</strong> - לקדש בו האשה:"
+  },
+  "Rashi on Kiddushin 58a:14:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 58a:14:1",
+      "Rashi on Kiddushin 58a:14:2",
+      "Rashi on Kiddushin 58a:13:1",
+      "Rashi on Kiddushin 58a:13:2",
+      "Rashi on Kiddushin 58a:15:1"
+    ],
+    "generatedAt": "2026-11-02T11:41:18.096Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 58a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינו ממון</strong> - לקדש בו האשה:"
+  },
+  "Rashi on Kiddushin 58a:15:1": {
+    "dependsOn": [
+      "Kiddushin 58a:15",
+      "Rashi on Kiddushin 58a:14:1",
+      "Rashi on Kiddushin 58a:14:2",
+      "Rashi on Kiddushin 58a:13:1",
+      "Rashi on Kiddushin 58a:13:2"
+    ],
+    "generatedAt": "2026-11-02T11:42:54.980Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 58a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כמי שהורמו דמיין</strong> - הואיל ועומדת לתרום ונגמרה מלאכתו לכך וזכה הכהן בחייו בתרומה שבו שלא הוטל עליו אלא להפרישה ולקיימה לעצמו אף יורש זה יפרישנה וימכרנה לכהנים וכן היא תמכרנה והוא הדין נמי דמצי לאוקמה בתרומה שנפלה לו מבית אבי אמו כהן אלא הא קשיא ליה א\"כ מאי קמ\"ל מתניתין פשיטא דמקודשת:"
+  },
+  "Rashi on Kiddushin 58a:1:1": {
+    "dependsOn": [
+      "Kiddushin 58a:1",
+      "Rashi on Kiddushin 58a:3:1",
+      "Rashi on Kiddushin 58a:3:2",
+      "Rashi on Kiddushin 57b:16:4",
+      "Rashi on Kiddushin 57a:3:1",
+      "Rashi on Kiddushin 56b:1:1",
+      "Rashi on Kiddushin 56b:2:1"
+    ],
+    "generatedAt": "2026-11-02T11:13:08.215Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 58a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ל כו'</strong> - כיון דאיתרבו הנך מינייהו לענין איסור שחיטה איתרבו נמי לענין אכילה כתמימים:"
+  },
+  "Rashi on Kiddushin 58a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T11:14:15.803Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 58a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי אתה משליך לכלב וכו'</strong> - והכי משתמעי חולין מיניה דאילו האי קרא מיירי בבשר היוצא חוץ ממחיצתו כגון עובר שהוציא את ידו בשחיטת אמו ילפינן לה <span class=\"parenthesized\">(חולין דף סח.)</span> מהאי קרא לאיסורא ובשר בשדה כגון שיצא בשר חוץ למחיצתו בגלוי כשדה שאין לו מחיצה הרי הוא כטרפה ולא תאכלו ומיעט בסיפיה לכלב תשליכון אותו למעוטי חולין שנשחטו בעזרה ודריש הכי אותו הוא דנאסר ביציאת מחיצה ולכלב תשליכון אותו דמותר בהנאה ולא חולין שנשחטו בעזרה הנאסרין ע\"י כניסת מחיצה דאסורין אף בהנאה:"
+  },
+  "Rashi on Kiddushin 58a:3:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 58a:3:1",
+      "Rashi on Kiddushin 58a:3:2",
+      "Rashi on Kiddushin 57b:8:1"
+    ],
+    "generatedAt": "2026-11-02T11:15:40.818Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 58a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תניא המקדש בפטר חמור כו'</strong> - ברייתא היא:"
+  },
+  "Rashi on Kiddushin 58a:3:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 58a:3:1",
+      "Rashi on Kiddushin 58a:3:3",
+      "Rashi on Kiddushin 58a:5:2"
+    ],
+    "generatedAt": "2026-11-02T11:16:57.567Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 58a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי שמעון אומר מקודשת</strong> - בפטר חמור מחיים ר' שמעון לטעמיה דאמר לעיל <span class=\"parenthesized\">(קידושין דף נז:)</span> מותר בהנאה:"
+  },
+  "Rashi on Kiddushin 58a:3:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 58a:3:1",
+      "Rashi on Kiddushin 58a:3:2",
+      "Rashi on Kiddushin 58a:3:3",
+      "Rashi on Kiddushin 58a:3:4",
+      "Rashi on Kiddushin 58a:3:5",
+      "Kiddushin 57b:10",
+      "Kiddushin 58a:5",
+      "Rashi on Kiddushin 57a:2:1",
+      "Rashi on Kiddushin 57b:10:1"
+    ],
+    "generatedAt": "2026-11-02T11:18:53.675Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 58a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובבשר בחלב</strong> - רבי שמעון לטעמיה דאמר לעיל <span class=\"parenthesized\">(שם)</span> ומותר בהנאה:"
+  },
+  "Rashi on Kiddushin 58a:3:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 58a:3:1",
+      "Rashi on Kiddushin 58a:3:2",
+      "Rashi on Kiddushin 58a:3:3",
+      "Rashi on Kiddushin 58a:3:4",
+      "Rashi on Kiddushin 58a:3:5",
+      "Rashi on Kiddushin 58a:5:2"
+    ],
+    "generatedAt": "2026-11-02T11:19:58.643Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 58a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי שמעון אומר מקודשת</strong> - בפטר חמור מחיים ר' שמעון לטעמיה דאמר לעיל <span class=\"parenthesized\">(קידושין דף נז:)</span> מותר בהנאה:"
+  },
+  "Rashi on Kiddushin 58a:3:5": {
+    "dependsOn": [
+      "Rashi on Kiddushin 58a:3:1",
+      "Rashi on Kiddushin 58a:3:2",
+      "Rashi on Kiddushin 58a:3:3",
+      "Rashi on Kiddushin 58a:3:4"
+    ],
+    "generatedAt": "2026-11-02T11:20:44.854Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 58a:3:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובחולין בעזרה</strong> - קסבר איסורו לאו דאורייתא לא איסור שחיטתו ולא איסור הנאתו ולא דריש בריחוק מקום הכי אלא מדרבנן דילמא אתי למימר קדשים שנפסלו לאחר שחיטה הן שלא נזרק דמן וקא מתהני מינייהו ואתי ליהנות מקדשים שלא נזרק דמן:"
+  },
+  "Rashi on Kiddushin 58a:4:1": {
+    "dependsOn": [
+      "Steinsaltz on Kiddushin 58a:4",
+      "Kiddushin 58a:4"
+    ],
+    "generatedAt": "2026-11-02T11:25:06.636Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 58a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ישרפו</strong> - ולא סגי להו בקבורה אלמא איסורו מן התורה דאי מדרבנן מי מחמרינן כולי האי נהי דבבהמה גזור אטו פסולי המוקדשין דלא נימרו קדשים פסולין נקברים אלא חיה אי עיקר איסור דידה לאו דאורייתא מהיכא תיתי הא ליכא למיגזר אטו קדשים ולמה היא בשריפה ואפילו בקבורה אלא ודאי איסורן מן התורה ושריפתן מדברי סופרים בבהמה גזור דילמא אתי למימר קדשים פסולין לקבורה והתורה אמרה ישרפו ובחיה נמי גזרו שלא תחלוק בדין חולין שנשחטו בעזרה שהשוו חכמים דבריהן בכל מקום שלא יפקפקו בהם:"
+  },
+  "Rashi on Kiddushin 58a:5:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 58a:5:1",
+      "Rashi on Kiddushin 58a:5:2",
+      "Jastrow, פַּלְגָּאָה 1"
+    ],
+    "generatedAt": "2026-11-02T11:28:07.984Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 58a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פלגא</strong> - קנטרן רגיל לחלוק על חביריו:"
+  },
+  "Rashi on Kiddushin 58a:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T11:29:34.759Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 58a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא במאי עסקינן</strong> - דאמר רבי שמעון מקודשת שנמצאת טריפה ור' שמעון לטעמיה דאמר לענין כיסוי הדם <span class=\"parenthesized\">(חולין דף פה.)</span> ואותו ואת בנו <span class=\"parenthesized\">(שם דף פ.)</span> ותשלומי ארבעה וחמשה <span class=\"parenthesized\">(ב\"ק דף עא.)</span> שחיטה שאינה ראויה לאכילה לא שמיה שחיטה וכל חיוב ואיסור הבא ע\"י שחיטה אינו חל עליה הילכך איסור חולין הללו ע\"י שחיטה בא עליה והא לאו שחיטה היא:"
+  },
+  "Rashi on Kiddushin 58a:6:1": {
+    "dependsOn": [
+      "Kiddushin 58a:6",
+      "Rashi on Kiddushin 58a:6:1",
+      "Rashi on Kiddushin 58a:6:2",
+      "Rashi on Kiddushin 58a:4:1",
+      "Kiddushin 58a:3"
+    ],
+    "generatedAt": "2026-11-02T11:30:35.799Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 58a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובחולין בעזרה</strong> - קסבר איסורו לאו דאורייתא לא איסור שחיטתו ולא איסור הנאתו ולא דריש בריחוק מקום הכי אלא מדרבנן דילמא אתי למימר קדשים שנפסלו לאחר שחיטה הן שלא נזרק דמן וקא מתהני מינייהו ואתי ליהנות מקדשים שלא נזרק דמן:"
+  },
+  "Rashi on Kiddushin 58a:6:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 58a:6:1"
+    ],
+    "generatedAt": "2026-11-02T11:31:08.027Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 58a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">את הטריפה</strong> - טריפה הניכרת:"
+  },
+  "Rashi on Kiddushin 58a:7:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 58a:7:2",
+      "Rashi on Kiddushin 58a:3:1",
+      "Rashi on Kiddushin 58a:3:2"
+    ],
+    "generatedAt": "2026-11-02T11:32:25.019Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 58a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנלן</strong> - דלא תפסי דמייהו:"
+  },
+  "Rashi on Kiddushin 58a:7:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 58a:7:1",
+      "Rashi on Kiddushin 58a:7:2",
+      "Steinsaltz comment #1 on Kiddushin 58a:7",
+      "Steinsaltz comment #2 on Kiddushin 58a:7",
+      "Steinsaltz comment #3 on Kiddushin 58a:7",
+      "Steinsaltz on Kiddushin 58a:7",
+      "Jastrow, הוי 1",
+      "Rashi on Kiddushin 58a:3:1",
+      "Rashi on Kiddushin 58a:3:2"
+    ],
+    "generatedAt": "2026-11-02T11:34:17.271Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 58a:7:2"
+    ],
+    "sourceText": "שאתה מהייה גרסינן:"
+  },
+  "Tosafot on Kiddushin 58a:3:1": {
+    "dependsOn": [
+      "Tosafot on Pesachim 7a:1",
+      "Rashi on Kiddushin 58a:3:1",
+      "Rashi on Kiddushin 58a:3:2",
+      "Rashi on Kiddushin 58a:3:3",
+      "Rashi on Kiddushin 58a:3:4",
+      "Rashi on Kiddushin 58a:3:5",
+      "Kiddushin 58a:3",
+      "Kiddushin 58a:4",
+      "Tosafot on Kiddushin 58a:8:1",
+      "Tosafot on Kiddushin 57b:2:1"
+    ],
+    "generatedAt": "2026-11-02T11:23:58.083Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 58a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלמא חולין שנשחטו בעזרה לאו דאורייתא</strong> - וא\"ת הא משמע דאיכא איסורא דרבנן דהכי משמע לישנא וא\"כ היאך מקדש בהן והאמר רב בפ\"ק דפסחים <span class=\"parenthesized\">(דף ז.)</span> דהמקדש מו' שעות ולמעלה ואפילו בחיטי קרדנייתא דאינם אסורים אלא מדרבנן אין חוששין לקדושין וי\"ל דהתם איכא מיהא שעות דאורייתא לפי מה שפי' ר\"ת התם אבל הכא ליכא אלא איסורא דרבנן ול<span class=\"rashi-quotation\">פי' הקונטרס</span> נמי לא קשה מידי למסקנא דהא אפילו לר\"ש אינה מקודשת:"
+  },
+  "Tosafot on Kiddushin 58a:4:1": {
+    "dependsOn": [
+      "Chullin 85b:10"
+    ],
+    "generatedAt": "2026-11-02T11:26:36.212Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 58a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן חיה שנשחטה בעזרה</strong> - וע\"כ דאורייתא נשרפים כדמוכח פרק כיסוי הדם <span class=\"parenthesized\">(חולין דף פה:)</span> דקאמר התם אא\"ב דחולין שנשחטו בעזרה דאורייתא היינו דגזרינן חיה אטו בהמה וניחא מה דקאמר וכן חיה אלא אי אמרת לאו דאורייתא מאי וכן חיה היא גופה אינה אלא דרבנן ואנן נגזור:"
+  },
+  "Tosafot on Kiddushin 58a:8:1": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Kiddushin 58a:5",
+      "Tosafot on Avodah Zarah 54b:7:1",
+      "Avodah Zarah 54b:5-6"
+    ],
+    "generatedAt": "2026-11-02T11:35:54.919Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 58a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושני כתובים הבאים כאחד אין מלמדין</strong> - תימה היכי הוו ב' כתובים הבאים כאחד הא לא אתי שביעית מעבודת כוכבים דאיכא למיפרך מה לעבודת כוכבים שכן אסורה בהנאה וי\"ל מ\"מ נכתוב שביעית וניתי עבודת כוכבים מינה וכהאי גוונא מיקרי שפיר ב' כתובים הבאין כאחד בכמה דוכתי ולא בעינן שיהא כל אחד יכול ללמוד וא\"ת אכתי אי לא כתיב עבודת כוכבים לא הוה ידעינן דינא דעבודת כוכבים משביעית שהרי אינם שוים דשביעית אחרון אחרון נתפס והראשונים יוצאים לחולין ובעבודת כוכבים <span class=\"parenthesized\">(ע\"ז דף נד:)</span> איכא למאן דאמר חליפין וחליפי חליפין אסורין ואפילו למאן דאמר חליפי חליפין מותרים אכתי לא הוי כשביעית שהאחרון נתפס וי\"ל מדכתיב <span class=\"parenthesized\">(דברים ז)</span> כי חרם הוא דמשמע מינה דלדרשא אתא לומר דעבודת כוכבים ושביעית הוו ב' כתובים הבאים כאחד דליכא למימר דאיצטריך לגופיה לאשמועינן דחליפי חליפין מותרים דהא ידעינן מדכתיב <span class=\"parenthesized\">(שם)</span> כמוהו דמשמע שאינו עושה כיוצא בו אלא פעם אחת:"
+  }
+}

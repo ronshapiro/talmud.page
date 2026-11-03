@@ -1,0 +1,416 @@
+{
+  "Rashi on Kiddushin 62a:11:1": {
+    "dependsOn": [
+      "Kiddushin 62a:11",
+      "Kiddushin 62a:5"
+    ],
+    "generatedAt": "2026-11-02T15:45:23.598Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 62a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סד\"א מצות הזאה בג' ובז' ואי עבד בחד מנייהו עבד</strong> - דרישא דקרא לאו בלישנא דתנאה כתיב דלא כתיב אם יתחטא בו למשמע מיניה הא אם לא יתחטא לא יטהר אלא הוא יתחטא בו ואיכא למימר לשון ציווי בעלמא הוא:"
+  },
+  "Rashi on Kiddushin 62a:11:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 62a:11:1",
+      "Rashi on Kiddushin 62a:11:3",
+      "Steinsaltz on Kiddushin 62a:11",
+      "Kiddushin 62a:12"
+    ],
+    "generatedAt": "2026-11-02T15:47:00.231Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 62a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחובר</strong> - אינו חייב בתרומה דראשית דגנך כתיב <span class=\"parenthesized\">(דברים יח)</span> מידי דמידגן שנאסף בכרי הלכך לא חל שם תרומה על התלוש שהופרש עליו וטבל הוא ביד כהן ויכול לתרום עליה ממקום אחר וכולה חולין והמחובר שהופרש עליו לא נתקן ולכשיתלוש צריך לתרום:"
+  },
+  "Rashi on Kiddushin 62a:11:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 62a:11:1",
+      "Rashi on Kiddushin 62a:11:2",
+      "Rashi on Kiddushin 62a:11:3",
+      "Kiddushin 62a:11",
+      "Rashi on Kiddushin 61b:1:1",
+      "Rashi on Kiddushin 61b:2:1"
+    ],
+    "generatedAt": "2026-11-02T15:48:57.450Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 62a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחובר</strong> - אינו חייב בתרומה דראשית דגנך כתיב <span class=\"parenthesized\">(דברים יח)</span> מידי דמידגן שנאסף בכרי הלכך לא חל שם תרומה על התלוש שהופרש עליו וטבל הוא ביד כהן ויכול לתרום עליה ממקום אחר וכולה חולין והמחובר שהופרש עליו לא נתקן ולכשיתלוש צריך לתרום:"
+  },
+  "Rashi on Kiddushin 62a:12:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 62a:12:1",
+      "Rashi on Kiddushin 62a:12:2",
+      "Rashi on Kiddushin 62a:12:3",
+      "Rashi on Kiddushin 62a:1:1",
+      "Rashi on Kiddushin 62a:2:1"
+    ],
+    "generatedAt": "2026-11-02T15:56:21.584Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 62a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פירות ערוגה זו מחוברים</strong> - כלומר או שאמר פירות ערוגה זו מחוברים יהיו תרומה כו':"
+  },
+  "Rashi on Kiddushin 62a:12:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 62a:12:1",
+      "Rashi on Kiddushin 62a:12:3"
+    ],
+    "generatedAt": "2026-11-02T15:58:38.598Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 62a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונתלשו מהו</strong> - שתהא תרומה למפרע מי הוי כמקדיש דבר שלא בא לעולם או לא:"
+  },
+  "Rashi on Kiddushin 62a:12:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 62a:12:1",
+      "Rashi on Kiddushin 62a:12:2"
+    ],
+    "generatedAt": "2026-11-02T15:59:19.907Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 62a:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל שבידו</strong> - כי האי שבידו לתלוש ולהפריש מיד:"
+  },
+  "Rashi on Kiddushin 62a:1:1": {
+    "dependsOn": [
+      "[",
+      "Kiddushin 62a:1",
+      "Rashi on Kiddushin 62a:1:2",
+      "Chokhmat Shlomo on Kiddushin 62a:1",
+      "Steinsaltz on Kiddushin 62a:1"
+    ],
+    "generatedAt": "2026-11-02T15:18:58.796Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 62a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חרב תאכלו</strong> - משמע אכילתכם הוא חרב תהיו נשבעים:"
+  },
+  "Rashi on Kiddushin 62a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T15:19:48.443Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 62a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גללניתא</strong> - גסה:"
+  },
+  "Rashi on Kiddushin 62a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T15:20:29.563Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 62a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היינו דכתיב אם לא שכב הנקי</strong> - לא כפל ואם שכב לא הנקי אלא מכלל ברכה אתה שומע קללה דאי משום דסמיך ליה ואת כי שטית וגו' ההוא לא מפרש ביה קללה אשבועה קמייתא אלא אשבועה דבתריה קאי דסמיך ליה והשביע הכהן את האשה בשבועת האלה וקמייתא שבועה שאין בה אלה דהכי כתיב והשביע אותה הכהן וגו' ולא פי' קללה אלא מכלל ברכה:"
+  },
+  "Rashi on Kiddushin 62a:2:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 62a:2:1",
+      "Rashi on Kiddushin 62a:2:3",
+      "Rashi on Kiddushin 62a:2:4",
+      "Steinsaltz on Kiddushin 62a:2"
+    ],
+    "generatedAt": "2026-11-02T15:21:40.682Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 62a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לרבי מאיר</strong> - ואם שכב חנקי מיבעי ליה:"
+  },
+  "Rashi on Kiddushin 62a:2:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T15:22:25.102Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 62a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היינו דכתיב אם לא שכב הנקי</strong> - לא כפל ואם שכב לא הנקי אלא מכלל ברכה אתה שומע קללה דאי משום דסמיך ליה ואת כי שטית וגו' ההוא לא מפרש ביה קללה אשבועה קמייתא אלא אשבועה דבתריה קאי דסמיך ליה והשביע הכהן את האשה בשבועת האלה וקמייתא שבועה שאין בה אלה דהכי כתיב והשביע אותה הכהן וגו' ולא פי' קללה אלא מכלל ברכה:"
+  },
+  "Rashi on Kiddushin 62a:2:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 62a:2:1",
+      "Rashi on Kiddushin 62a:2:2",
+      "Rashi on Kiddushin 62a:2:3",
+      "Steinsaltz on Kiddushin 62a:2",
+      "Rashi on Kiddushin 62a:6:1",
+      "Rashi on Kiddushin 62a:8:1",
+      "Rashi on Kiddushin 61b:1:1",
+      "Rashi on Kiddushin 61a:1:1"
+    ],
+    "generatedAt": "2026-11-02T15:24:23.066Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 62a:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הנקי כתיב</strong> - בלא יוד למידרשיה כמקראו לשבועה ראשונה אם לא שכב תהא נקייה ובמסורת נמי מידריש אשבועה קמייתא למישדייה אקרא דבתריה ולמימר חנקי ואת כי שטית כלומר אם שטית תתחנקי:"
+  },
+  "Rashi on Kiddushin 62a:3:1": {
+    "dependsOn": [
+      "Kiddushin 62a:3"
+    ],
+    "generatedAt": "2026-11-02T15:34:26.220Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 62a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לרבי חנינא</strong> - דלא בעי כפילה למה לי למיכתב כי האי לישנא ואיכא למידרשיה הכי והכי נכתוב תחיה או לשון אחר:"
+  },
+  "Rashi on Kiddushin 62a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T15:35:55.915Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 62a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סד\"א מצות הזאה בג' ובז' ואי עבד בחד מנייהו עבד</strong> - דרישא דקרא לאו בלישנא דתנאה כתיב דלא כתיב אם יתחטא בו למשמע מיניה הא אם לא יתחטא לא יטהר אלא הוא יתחטא בו ואיכא למימר לשון ציווי בעלמא הוא:"
+  },
+  "Rashi on Kiddushin 62a:6:1": {
+    "dependsOn": [
+      "Kiddushin 62a:6",
+      "Rashi on Kiddushin 62a:2:1",
+      "Rashi on Kiddushin 62a:4:1",
+      "Rashi on Kiddushin 62a:5:1"
+    ],
+    "generatedAt": "2026-11-02T15:36:57.500Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 62a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והזה הטהור על הטמא וגו' למה לי</strong> - לאו לרבי חנינא פריך אלא לדברי הכל בעי לה:"
+  },
+  "Rashi on Kiddushin 62a:6:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 62a:6:1",
+      "Rashi on Kiddushin 62a:6:2",
+      "Rashi on Kiddushin 62a:6:3",
+      "Rashi on Kiddushin 62a:6:4",
+      "Steinsaltz on Kiddushin 62a:6"
+    ],
+    "generatedAt": "2026-11-02T15:37:57.079Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 62a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למעוטי ששי</strong> - שלא ריחק הזאה מטומאתו:"
+  },
+  "Rashi on Kiddushin 62a:6:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 62a:6:1",
+      "Rashi on Kiddushin 62a:6:2",
+      "Rashi on Kiddushin 62a:6:3",
+      "Rashi on Kiddushin 62a:6:4",
+      "Rashi on Kiddushin 61b:5:2"
+    ],
+    "generatedAt": "2026-11-02T15:41:06.895Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 62a:6:3"
+    ],
+    "sourceText": "ה\"ג אבל היכא דעבד בשלישי ובשמיני דקא מפיש בימי טהרה אימא שפיר דמי. ולא גריס ברביעי ובשמיני דהא ודאי שפיר דמי דכל מה שמשהה הזאה ראשונה אין בכך כלום ובלבד שלא ירבה ושלא ימעט בימים שבין הזאה להזאה כדאמר גבי כהן הפורש שבעה לפני יום הכפורים <span class=\"parenthesized\">(יומא דף ח:)</span> בשלמא ראשון שמא שלישי שני שמא שלישי ואע\"ג דאיכא לספוקי נמי שמא עשירי או יותר הוא ואי גרסי' הכי לענין מצות הזאה בזמנה הוא דגרסינן:"
+  },
+  "Rashi on Kiddushin 62a:6:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T15:41:35.687Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 62a:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דקא מפיש בימי טהרה</strong> - מרחיק והולך מיום מגע הטומאה:"
+  },
+  "Rashi on Kiddushin 62a:8:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 62a:8:2",
+      "Rashi on Kiddushin 62a:8:1"
+    ],
+    "generatedAt": "2026-11-02T15:42:23.346Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 62a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא הטעתו</strong> - אלא הוא הטעה את עצמו וכיון דלא פירש לאו כל כמיניה דהוו להו דברים שבלב:"
+  },
+  "Rashi on Kiddushin 62a:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T15:42:48.109Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 62a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא הטעתו</strong> - אלא הוא הטעה את עצמו וכיון דלא פירש לאו כל כמיניה דהוו להו דברים שבלב:"
+  },
+  "Rashi on Kiddushin 62a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T15:43:18.028Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 62a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאחר שיחלוץ ליך יבמיך</strong> - קסבר האי תנא אין קידושין תופסין ביבמה לשוק:"
+  },
+  "Rashi on Kiddushin 62a:9:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 62a:9:1"
+    ],
+    "generatedAt": "2026-11-02T15:44:12.734Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 62a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינה מקודשת</strong> - דהוה ליה דברים שלא באו לעולם ועכשיו אין בידו לקדשה:"
+  },
+  "Tosafot on Kiddushin 62a:11:1": {
+    "dependsOn": [
+      "Kiddushin 62a:11",
+      "Tosafot on Kiddushin 62a:11:1",
+      "Tosafot on Kiddushin 62a:11:2",
+      "Kiddushin 61b:15",
+      "Kiddushin 61b:16",
+      "Kiddushin 61b:17",
+      "Kiddushin 62a:1",
+      "Kiddushin 62a:2",
+      "Kiddushin 62a:3",
+      "Kiddushin 62a:4",
+      "Kiddushin 62a:5",
+      "Kiddushin 62a:6",
+      "Kiddushin 62a:7",
+      "Tosafot on Kiddushin 62a:2:4",
+      "Tosafot on Kiddushin 62a:4:1"
+    ],
+    "generatedAt": "2026-11-02T15:53:01.991Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 62a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"י בשלמא לר\"מ היינו דכתיב הוא יתחטא וגו' ואם לא יתחטא</strong> - תימה מה ענין זה למחלוקת אפילו לר\"מ למה לי והלא בהרבה מקומות כתיב <span class=\"parenthesized\">(ויקרא יד)</span> ורחץ במים וטהר ולא הוצרך לומר ואם לא ירחץ לא יטהר וי\"ל דלא דמי דהתם מילתא דפשיטא כיון דמצוה הוא שצוה הקב\"ה אם לא עשה לא יצא אבל הכא משמע קצת שהוא לשון תנאי מדכתיב הוא יתחטא והוי כאילו כתיב אם יתחטא בו יטהר ולא . כתיב ויתחטא ויטהר ואז הוי ציווי כמו ורחץ וטהר:"
+  },
+  "Tosafot on Kiddushin 62a:11:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 62a:11:1",
+      "Rashi on Kiddushin 62a:11:2",
+      "Rashi on Kiddushin 62a:11:3"
+    ],
+    "generatedAt": "2026-11-02T15:54:37.724Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 62a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין תורמין מן התלוש על המחובר</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> המחובר אינו חייב בתרומה דכתיב <span class=\"parenthesized\">(דברים יח)</span> ראשית דגנך דבעינן מידי דמידגן וא\"כ הוי מן החיוב על הפטור וקשה דאם כן לדבריו בתלוש נמי קודם שנתמרח לא הוי תרומה שהרי לא מידגן וליתא דהא אמר בעלמא <span class=\"parenthesized\">(עירובין דף לא:)</span> מעשר ראשון שהקדימו בשבולים פטור מתרומה גדולה דמשמע דמהני וע\"ק מההיא דאמר <span class=\"parenthesized\">(תרומות פ\"א מ\"י)</span> התורם מדבר שנגמר מלאכתו דהיינו אחר מירוח על דבר שלא נגמרה מלאכתו והיינו קודם מירוח תרומתו תרומה לכ\"נ לר\"י הא דמחובר פטור נפקא לן מדכתיב ממנו דדריש בספרי ממנו ולא מן המחובר דהא קרא בתלוש מיירי וע\"כ אתא למימר ממנו אפילו בדיעבד נמי אסור דאי משום לכתחילה אתא תיפוק לי משום דכתיב דגנך ומחובר לאו מידגן הוא אלא שמע מינה דפסול אפילו בדיעבד במחובר וההיא דמעשר שהקדימו בשבולים דמהני בדיעבד מיירי בתלוש וקודם מירוח:"
+  },
+  "Tosafot on Kiddushin 62a:2:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 62a:2:1",
+      "Rashi on Kiddushin 62a:2:2",
+      "Rashba on Kiddushin 62a:2",
+      "Steinsaltz comment #1 on Kiddushin 62a:2",
+      "Tosafot on Kiddushin 61a:1:2",
+      "Tosafot on Kiddushin 61a:9:1"
+    ],
+    "generatedAt": "2026-11-02T15:26:29.958Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 62a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשלמא לרבי חנינא בן גמליאל היינו דכתיב אם לא שכב הנקי</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> שלא כפל אם שכב לא הנקי אלא מכלל ברכה אתה שומע קללה דאי משום דסמיך ליה ואת כי שטית וגו' ההיא לא מפרש ביה קללה אשבועה קמייתא אלא אשבועה בתרייתא קאי דסמיך ליה והשביע הכהן את האשה בשבועת האלה וגו' ושבועה קמייתא אין בה אלה דהכי כתיב והשביע אותה הכהן ולא פירש בה קללה אלא מכלל ברכה וקשה דהא כל תנאי מבני גד ומבני ראובן גמרי' וא\"כ בעינן הן קודם ללאו והכא הוה לאו קודם להן דהא אם לא שכב כתיב ברישא וי\"ל דאם לא שכב חשוב הן שמה שאנו רוצים שתעשה חשוב הן דומיא דאם יעברו שאנו רוצים שיעברו ואם לא יעברו יפסידו כך אנו רוצים שתתקיים דברים שלא שכב איש אותה וזהו הן ואם שכב תפסיד וזהו לאו:"
+  },
+  "Tosafot on Kiddushin 62a:2:2": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 62a:2:1",
+      "Tosafot on Kiddushin 62a:2:2",
+      "Tosafot on Kiddushin 62a:2:3",
+      "Tosafot on Kiddushin 62a:2:4",
+      "Versions on Kiddushin 62a:2",
+      "Rashi on Kiddushin 62a:2:1",
+      "Rashi on Kiddushin 62a:2:2",
+      "Rashi on Kiddushin 62a:2:3",
+      "Rashi on Kiddushin 62a:2:4",
+      "Tosafot on Kiddushin 62a:4:1",
+      "Tosafot on Kiddushin 62a:11:1"
+    ],
+    "generatedAt": "2026-11-02T15:28:24.330Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 62a:2:2"
+    ],
+    "sourceText": "הנקי -"
+  },
+  "Tosafot on Kiddushin 62a:2:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 62a:2:3",
+      "Rashi on Kiddushin 62a:2:4",
+      "Tosafot on Kiddushin 62a:2:1",
+      "Tosafot on Kiddushin 62a:2:2"
+    ],
+    "generatedAt": "2026-11-02T15:30:48.552Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 62a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הנקי</strong> - כתיב. <span class=\"rashi-quotation\">פירש בקונטרס</span> והכי כופל ואם לא שכב הנקי ואם שכב חנקי ואת כי שטית דקאי חנקי אואת כי שטית דכתיב בתריה וקשה דא\"כ הוה ליה מעשה קודם לתנאי ואנן אמרינן במתני' דר\"מ בעי תנאי קודם למעשה לכן פר\"י דלא קאי כלל אואת כי שטית דכתיב בתריה אלא כתיב הנקי והוי כאילו היה כתיב חנקי והכהן היה חוזר וכופל אם שכב חנקי והשתא הוי תנאי קודם למעשה:"
+  },
+  "Tosafot on Kiddushin 62a:2:4": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 62a:2:1",
+      "Tosafot on Kiddushin 62a:2:2",
+      "Tosafot on Kiddushin 62a:2:3",
+      "Tosafot on Kiddushin 62a:2:4",
+      "Tosafot on Kiddushin 62a:11:1",
+      "Sanhedrin 33a:1",
+      "Sanhedrin 33a:2",
+      "Sanhedrin 33a:3"
+    ],
+    "generatedAt": "2026-11-02T15:33:45.692Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 62a:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[חנקי כתיב</strong> - פי' ר\"ח דה\"ק אם לא שכב וגו' תחת אישך כלומר תשאר תחת אישך ואת כי שטית וגו' מבלעדי אישך כלומר תלכי ממנו והוי תנאי קודם למעשה ואע\"ג דהוי לאו קודם להן הא אמרינן מהכא <span class=\"parenthesized\">(סנהדרין לב: לג.)</span> פותחין בזכות תחילה]: ת\"י"
+  },
+  "Tosafot on Kiddushin 62a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T15:35:10.290Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 62a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשלמא לר\"מ היינו דכתיב הוא יתחטא וגו' ואם לא יתחטא</strong> - תימה מה ענין זה למחלוקת אפילו לר\"מ למה לי והלא בהרבה מקומות כתיב <span class=\"parenthesized\">(ויקרא י״ד:ח׳)</span> ורחץ במים וטהר ולא הוצרך לומר ואם לא ירחץ לא יטהר וי\"ל דלא דמי דהתם מילתא דפשיטא כיון דמצוה הוא שצוה הקב\"ה אם לא עשה לא יצא אבל הכא משמע קצת שהוא לשון תנאי מדכתיב הוא יתחטא והוי כאילו כתיב אם יתחטא בו יטהר ולא כתיב ויתחטא ויטהר ואז הוי ציווי כמו ורחץ וטהר:"
+  }
+}

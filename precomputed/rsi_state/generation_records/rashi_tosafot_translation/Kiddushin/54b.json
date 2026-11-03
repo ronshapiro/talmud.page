@@ -1,0 +1,518 @@
+{
+  "Rashi on Kiddushin 54b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T07:40:48.246Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משלו</strong> - שהפריש מכריו:"
+  },
+  "Rashi on Kiddushin 54b:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T07:41:16.023Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בין שניתן לו במתנה</strong> - קס\"ד לאחר שהפריש ניתן לו וקתני מוסיף חומש דשלו הוא וקרינן ביה אם גאל יגאל איש ממעשרו <span class=\"parenthesized\">(ויקרא כז)</span>:"
+  },
+  "Rashi on Kiddushin 54b:10:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 54b:10:1",
+      "Rashi on Kiddushin 54b:10:2"
+    ],
+    "generatedAt": "2026-11-02T07:41:59.250Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ממון גבוה הוא</strong> - ולא מצי יהיב ליה והוה ליה זה שניתן לו כאילו אינו שלו ואין מוסיף חומש אלא בעלים דלא קרינא ביה ממעשרו:"
+  },
+  "Rashi on Kiddushin 54b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T07:42:38.552Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקסבר כו'</strong> - דאיכא למ\"ד בעלמא כמי שהורמו דמיין ואיהו ס\"ל כל זמן שלא הורם לאו ממון גבוה הוא דאין שם מעשר עליו לכלום:"
+  },
+  "Rashi on Kiddushin 54b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T07:44:03.224Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא גמר קדש קדש</strong> - האי תנא גמר ממעשר דאי לא גמיר חומש בנטע רבעי מנ\"ל אלמא מעשר נמי ניתן במתנה ור' יהודה היא:"
+  },
+  "Rashi on Kiddushin 54b:13:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 54b:12:1",
+      "["
+    ],
+    "generatedAt": "2026-11-02T07:45:19.129Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשהוא סמדר</strong> - כשהענבים ניכרים לאחר שנפל הפרח וקמ\"ל דכל זמן שהוא סמדר יכול לתתן במתנה שאין שם רבעי עליו ודלא כר' יוסי דאמר במסכת ערלה סמדר ערלה אסור מפני שהוא פרי וקרינא ביה ערלתו את פריו:"
+  },
+  "Rashi on Kiddushin 54b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T07:45:40.267Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משך הימנו</strong> - איש מחבירו:"
+  },
+  "Rashi on Kiddushin 54b:14:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 54b:14:1",
+      "Rashi on Kiddushin 54b:14:2",
+      "Rashi on Kiddushin 54b:14:3",
+      "Rashi on Kiddushin 54b:14:4",
+      "Steinsaltz on Kiddushin 54b:14:1"
+    ],
+    "generatedAt": "2026-11-02T07:46:34.536Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נותן סלע</strong> - וקנה את המעשר שמשעה שמשכו קנאו ולא אמרינן ברשות בעליו מעשר אייקר וצריך לחללו בשנים:"
+  },
+  "Rashi on Kiddushin 54b:14:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 54b:14:1",
+      "Rashi on Kiddushin 54b:14:2",
+      "Rashi on Kiddushin 54b:14:3",
+      "Rashi on Kiddushin 54b:14:4"
+    ],
+    "generatedAt": "2026-11-02T07:47:13.814Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני שמעשר שני שלו</strong> - שהמעשר ממון הדיוט ונקנה במשיכה:"
+  },
+  "Rashi on Kiddushin 54b:14:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 54b:14:1",
+      "Rashi on Kiddushin 54b:14:2",
+      "Rashi on Kiddushin 54b:14:3",
+      "Rashi on Kiddushin 54b:14:4",
+      "Rashi on Kiddushin 54b:6:1",
+      "Rashi on Kiddushin 54b:7:1"
+    ],
+    "generatedAt": "2026-11-02T07:48:28.044Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:14:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונתן הכסף וקם לו</strong> - אין הקדש נקנה במשיכה דכתיב ביה ויסף חמישית כסף ערכך עליו וקם לו ואין שטר וחזקה קונין קרקעותיו ולא משיכה את מטלטלין:"
+  },
+  "Rashi on Kiddushin 54b:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T07:48:59.226Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכי גרסינן לעולם ר' יהודה והכא חד סתמא והתם תרי סתמי</strong> - כר\"מ סתם לן תרי זמני בשתי מקומות תנא רבי משנה זו דכרם רבעי חדא בסדר זרעים <span class=\"parenthesized\">(מעשר שני פ\"ה מ\"ג)</span> וחדא בעדיות <span class=\"parenthesized\">(פ\"ד מ\"ה)</span>:"
+  },
+  "Rashi on Kiddushin 54b:16:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 54b:16:1",
+      "Rashi on Kiddushin 54b:16:2",
+      "Kiddushin 54b:16",
+      "Rashi on Kiddushin 54b:15:1"
+    ],
+    "generatedAt": "2026-11-02T07:51:35.299Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:16:1"
+    ],
+    "sourceText": "הכי גרסינן ואי סתמא דוקא מה לי חד סתמא כו':"
+  },
+  "Rashi on Kiddushin 54b:16:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 54b:16:1"
+    ],
+    "generatedAt": "2026-11-02T07:52:12.430Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:16:2"
+    ],
+    "sourceText": "הואיל ותנן בבחירתא כוותיה מסכת עדיות קרי בחירתא שכל דבריהם העידו מפי הגדולים והלכה כמותן:"
+  },
+  "Rashi on Kiddushin 54b:1:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 54b:1:1",
+      "Rashi on Kiddushin 54b:2:1",
+      "Kiddushin 54b:1",
+      "Kiddushin 54b:2"
+    ],
+    "generatedAt": "2026-11-02T07:10:54.954Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרי תנאי ואליבא דר' יהודה</strong> - איכא למ\"ד ירושלים מקדשא כהקדש שאם יטול מאבני החומה לבנות בביתו מעל ואיכא למ\"ד לא מקדשא: בר פדא פליג אדרב וס\"ל כר' יוחנן דטעמא דר\"מ במתני' משום דקסבר אין הקדש מתחלל בשוגג דמקח טעות הוא דלא ניחא ליה דנתחלל הקדש על ידיה:"
+  },
+  "Rashi on Kiddushin 54b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T07:15:11.582Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא אמרו בשוגג מתחלל</strong> - כלומר לא כתיב בתורה מתחלל אלא שצריך קרבן מעילה אבל המעות כל מקום שהולכות הקדש הם:"
+  },
+  "Rashi on Kiddushin 54b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T07:16:36.646Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לענין אכילה</strong> - האוכל ככר של הקדש דאזל ליה הקדש וה\"ה להדלקת נר ולכל הנאה אבל הוצאת מעות הקדש אין בהם מעילה דלא נפקי מרשות הקדש:"
+  },
+  "Rashi on Kiddushin 54b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T07:18:05.270Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במעשר</strong> - דממון גבוה הוא:"
+  },
+  "Rashi on Kiddushin 54b:4:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 54b:4:1",
+      "Rashi on Kiddushin 54b:4:2",
+      "Rashi on Kiddushin 54a:1:1",
+      "Rashi on Kiddushin 54a:2:1",
+      "Rashi on Kiddushin 53b:4:1",
+      "Rashi on Kiddushin 53b:5:1",
+      "Kiddushin 54a:1",
+      "Kiddushin 54a:2",
+      "Kiddushin 54b:3",
+      "Kiddushin 54b:5",
+      "Kiddushin 54b:10",
+      "Kiddushin 54b:12",
+      "Kiddushin 54b:13",
+      "Kiddushin 54b:14",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:9:1"
+    ],
+    "generatedAt": "2026-11-02T07:21:06.430Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כר' יהודה בהקדש</strong> - דשוגג מתחלל ולא מזיד:"
+  },
+  "Rashi on Kiddushin 54b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T07:21:29.518Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין לו חומש</strong> - המחלל פירותיו להעלות הדמים לירושלים אין צריך להוסיף חומש ואפי' בעליו:"
+  },
+  "Rashi on Kiddushin 54b:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T07:22:01.666Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין לו ביעור</strong> - בשנה שלישית וששית של שמיטה שהמעשרות מתבערים מן הבית שאסור להשהותן יותר כדכתיב כי תכלה לעשר וגו':"
+  },
+  "Rashi on Kiddushin 54b:5:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 54b:5:1",
+      "Rashi on Kiddushin 54b:5:2",
+      "Rashi on Kiddushin 54b:5:3"
+    ],
+    "generatedAt": "2026-11-02T07:22:32.639Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יש לו</strong> - כדיליף לקמן:"
+  },
+  "Rashi on Kiddushin 54b:6:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 54b:6:2",
+      "Rashi on Kiddushin 54b:6:3",
+      "Rashi on Kiddushin 54b:6:4"
+    ],
+    "generatedAt": "2026-11-02T07:23:17.258Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יש לו דין פרט ויש לו דין עוללות</strong> - דכרמך קרינא ביה והעניים אוכלין אותן בירושלים או פודין אותן ומעלין דמיהן:"
+  },
+  "Rashi on Kiddushin 54b:6:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 54b:6:1",
+      "Rashi on Kiddushin 54b:6:3",
+      "Rashi on Kiddushin 54b:6:4"
+    ],
+    "generatedAt": "2026-11-02T07:24:43.579Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פרט</strong> - הנושר בשעת בצירה וכתיב <span class=\"parenthesized\">(ויקרא י״ט:י׳)</span> ופרט כרמך לא תלקט:"
+  },
+  "Rashi on Kiddushin 54b:6:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 54b:6:2",
+      "Rashi on Kiddushin 54b:6:3",
+      "Rashi on Kiddushin 54b:6:4",
+      "Steinsaltz on Kiddushin 54b:6"
+    ],
+    "generatedAt": "2026-11-02T07:26:06.276Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עוללות</strong> - אשכול שאין לו פסיגין אלא אחת היא כולה:"
+  },
+  "Rashi on Kiddushin 54b:6:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 54b:6:4",
+      "Rashi on Kiddushin 54b:6:1",
+      "Rashi on Kiddushin 54b:6:2",
+      "Rashi on Kiddushin 54b:6:3",
+      "Rashi on Kiddushin 54b:13:1",
+      "Steinsaltz on Kiddushin 54b:6:1"
+    ],
+    "generatedAt": "2026-11-02T07:27:20.554Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כולו לגת</strong> - דקסברי כולו ממון גבוה הוא כמעשר שני דיליף מיניה כדמפרש ואזיל ולא קרינא ביה כרמך:"
+  },
+  "Rashi on Kiddushin 54b:7:1": {
+    "dependsOn": [
+      "Kiddushin 54b:7",
+      "Rashi on Kiddushin 54b:6:1",
+      "Rashi on Kiddushin 54b:6:2",
+      "Rashi on Kiddushin 54b:6:3",
+      "Rashi on Kiddushin 54b:6:4",
+      "Kiddushin 54b:12",
+      "Rashi on Kiddushin 54b:12:1",
+      "Rashi on Kiddushin 54b:8:1",
+      "Rashi on Kiddushin 54b:13:1",
+      "Rashi on Kiddushin 54a:1:1",
+      "Rashi on Kiddushin 54a:2:1"
+    ],
+    "generatedAt": "2026-11-02T07:30:45.432Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא גמר קדש קדש</strong> - האי תנא גמר ממעשר דאי לא גמיר חומש בנטע רבעי מנ\"ל אלמא מעשר נמי ניתן במתנה ור' יהודה היא:"
+  },
+  "Rashi on Kiddushin 54b:8:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 54b:8:1",
+      "Rashi on Kiddushin 54b:8:2",
+      "Rashi on Kiddushin 54b:4:1",
+      "Rashi on Kiddushin 54b:6:4"
+    ],
+    "generatedAt": "2026-11-02T07:33:28.592Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וב\"ה</strong> - דמדמו כרם רבעי למעשר כמאן סבירא להו במעשר לענין ממון גבוה או ממון הדיוט:"
+  },
+  "Rashi on Kiddushin 54b:8:2": {
+    "dependsOn": [
+      "Kiddushin 54b:8",
+      "Rashi on Kiddushin 54b:8:1"
+    ],
+    "generatedAt": "2026-11-02T07:34:16.582Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לאו כר\"מ</strong> - וב\"ה כסתם משנה חשיב להו דהלכה כמותן:"
+  },
+  "Rashi on Kiddushin 54b:9:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 54b:8:1",
+      "Rashi on Kiddushin 54b:8:2",
+      "Rashi on Kiddushin 54b:9:2",
+      "Rashi on Kiddushin 54b:9:3",
+      "Rashi on Kiddushin 54a:1:1",
+      "Rashi on Kiddushin 54a:2:1",
+      "Rashi on Kiddushin 54a:3:1",
+      "Rashi on Kiddushin 54a:4:1",
+      "Rashi on Kiddushin 54a:5:1",
+      "Rashi on Kiddushin 2a:1:1",
+      "Rashi on Kiddushin 48a:1:1",
+      "Kiddushin 54b:9",
+      "Kiddushin 54b:1",
+      "Kiddushin 54b:3"
+    ],
+    "generatedAt": "2026-11-02T07:37:49.839Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכר' יהודה בהקדש מאי היא</strong> - היכן תנן בשוגג מתחלל במזיד אין מתחלל:"
+  },
+  "Rashi on Kiddushin 54b:9:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 54b:9:1",
+      "Rashi on Kiddushin 54b:9:2",
+      "Rashi on Kiddushin 54b:9:3"
+    ],
+    "generatedAt": "2026-11-02T07:38:41.239Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שילח ביד פיקח</strong> - רישא הכי תנן שלח ביד חרש שוטה וקטן עשו שליחותן גזבר מעל לא עשו שליחותן לא מעל שלח ביד פיקח ונזכר עד שלא הגיע אצל חנוני ואוקמינן התם כשהוזכרו שניהם גיזבר ושליח:"
+  },
+  "Rashi on Kiddushin 54b:9:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 54b:9:1",
+      "Rashi on Kiddushin 54b:9:2"
+    ],
+    "generatedAt": "2026-11-02T07:39:19.843Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 54b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חנוני מעל כשיוציא</strong> - דשגגה גביה איתיה אבל הני מזידין נינהו ולא מחייבי מעילה אלמא שוגג מתחלל מזיד אין מתחלל:"
+  },
+  "Tosafot on Kiddushin 54b:1:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 54b:1:1",
+      "Tosafot on Kiddushin 54b:1:1"
+    ],
+    "generatedAt": "2026-11-02T07:14:33.622Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 54b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרי תנאי ואליבא דר' יהודה</strong> - פ\"ה איכא למ\"ד ירושלים מקדשא שאם יטול מאבני החומה לבנותם בביתו מעל ואיכא למ\"ד לא מקדשא מיהו קשה דבפ' שני דייני גזירות <span class=\"parenthesized\">(כתובות דף קו:)</span> תני אבני מזבח וההיכל והעזרה באין מבדק הבית חוץ לחומת העזרה כגון חומת העיר באין משירי לשכה ובמסכת שקלים <span class=\"parenthesized\">(דף ז.)</span> תניא אבני מזבח וההיכל והעזרות משירי הלשכה חוץ לחומת העזרה כגון חומת העיר באים מלשכת בדק הבית וי\"ל דבהא פליגי דההיא דשני דייני גזירות ס\"ל אין מועלין בשירים וכמאן דאמר ירושלים אינה קדושה והכי קאמר דאבני מזבח וההיכל והעזרות דקדושים באין מבדק הבית דקדוש כמו כן וחומת העיר דאינו קדוש בא משירי הלשכה וההיא דמסכת שקלים דקאמר אבני מזבח וההיכל והעזרה באין משירי לשכה סבר דמועלין בשירי הלשכה ולכך עושין מהן דבר קדושה וכ\"ש מבדק הבית דקדיש טפי חוץ לחומת העזרה כגון חומות העיר ומגדלותיה באין מבדק הבית כלומר אף מבדק הבית דקדוש קדושה גדולה דקסבר ירושלים קדשה:"
+  },
+  "Tosafot on Kiddushin 54b:2:1": {
+    "dependsOn": [
+      "Kiddushin 54b:2",
+      "Rashi on Kiddushin 54b:2:1"
+    ],
+    "generatedAt": "2026-11-02T07:16:05.374Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 54b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קרבן מי מחייב</strong> - דלא היה חייב בהוצאה אלא באכילה או בהנאת הגוף:"
+  },
+  "Tosafot on Kiddushin 54b:3:1": {
+    "dependsOn": [
+      "Kiddushin 54b:3",
+      "Rashi on Kiddushin 54b:3:1"
+    ],
+    "generatedAt": "2026-11-02T07:17:42.286Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 54b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא אמרו אלא לענין אכילה</strong> - הא דנקט אכילה לאו דוקא דה\"ה אם היה שמן דהקדש והדליק בו הנר דמעל שהרי כילה אותם מן העולם וא\"ת א\"כ אמאי מועלין בחדתין וי\"ל דהתם נמי איירי ששקל כנגדן משקולות שנהנה מגוף השקלים והוי כמו אכילה ולא אתא אלא למעוטי הוצאה:"
+  },
+  "Tosafot on Kiddushin 54b:7:1": {
+    "dependsOn": [
+      "Berakhot 35a:3",
+      "Tosafot on Berakhot 35a:3:1"
+    ],
+    "generatedAt": "2026-11-02T07:32:06.499Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 54b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גמר קדש קדש ממעשר</strong> - וא\"ת א\"כ ל\"ל הלולים דדריש מיניה בפ ' כיצד מברכין <span class=\"parenthesized\">(ברכות דף לה.)</span> אחליה והדר אכליה תיפוק ליה מהך ג\"ש וי\"ל דאי מג\"ש לא הוה ידעינן דפדיון רבעי נוהג אלא בזמן שמעשר שני נוהג ולא בשנה שלישית אי נמי ה\"א מאי חזית דגמר ממעשר נילף משביעית שתופס דמיו ואינו יוצא לחולין <span class=\"parenthesized\">(אבל מאחר דגמרי מהלולים שאינו תופש דמיו גמר ממעשר)</span>:"
+  },
+  "Tosafot on Kiddushin 54b:8:1": {
+    "dependsOn": [
+      "Kiddushin 54b:8",
+      "Kiddushin 54a:4",
+      "Tosafot on Kiddushin 54a:4:1",
+      "Kiddushin 54a:2",
+      "Kiddushin 54a:3",
+      "Kiddushin 54b:1",
+      "Kiddushin 54b:2",
+      "Rashi on Kiddushin 54b:3:1"
+    ],
+    "generatedAt": "2026-11-02T07:35:58.643Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 54b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעיל לא אמרו אלא לענין אכילה</strong> - הא דנקט אכילה לאו דוקא דה\"ה אם היה שמן דהקדש והדליק בו הנר דמעל שהרי כילה אותם מן העולם וא\"ת א\"כ אמאי מועלין בחדתין וי\"ל דהתם נמי איירי ששקל כנגדן משקולות שנהנה מגוף השקלים והוי כמו אכילה ולא אתא אלא למעוטי הוצאה:"
+  },
+  "Tosafot on Kiddushin 54b:9:1": {
+    "dependsOn": [
+      "Kiddushin 54b:9",
+      "Kiddushin 54b:7",
+      "Rashi on Kiddushin 54b:9:1",
+      "Rashi on Kiddushin 54b:9:2",
+      "Rashi on Kiddushin 54b:9:3"
+    ],
+    "generatedAt": "2026-11-02T07:40:29.331Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 54b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שילח ביד פיקח ונזכר כו'</strong> - וא\"ת אמאי לא מייתי מרישא דקאמר שילח ביד חרש שוטה וקטן עשו שליחותו גזבר מעל לא עשו שליחותו חנוני מעל אלמא היכא דהוי שוגג חייב קרבן מעילה וי\"ל דמההיא לא מוכח אלא דבשוגג מתחלל אבל דבמזיד לא מתחלל לא שמעינן ומהך דהכא שמעינן תרי מדקאמר נזכר עד שלא הגיע אצל חנוני חנוני מעל ולא בעל הבית אלמא משמע דבמזיד אינו מתחלל ומדקאמר חנוני מעל לכשיוציא מכלל דבשוגג מתחלל:"
+  }
+}

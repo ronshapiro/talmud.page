@@ -1,0 +1,345 @@
+{
+  "Rashi on Kiddushin 55b:1:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 55b:1:1",
+      "Rashi on Kiddushin 55a:4:1"
+    ],
+    "generatedAt": "2026-11-02T08:20:22.630Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 55b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תהי בה ר' יוחנן</strong> - בהא דרבי אושעיא:"
+  },
+  "Rashi on Kiddushin 55b:1:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 55b:1:1",
+      "Kiddushin 55b:1",
+      "Rashi on Kiddushin 55b:1:3"
+    ],
+    "generatedAt": "2026-11-02T08:22:41.625Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 55b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי אומרים לו לאדם כו'</strong> - דכל בהמות מזבח אסור לחללה תמימה שנאמר אם בבהמה הטמאה ופדה בערכך ואמר מר <span class=\"parenthesized\">(מנחות דף קא.)</span> בבעלי מומין שנפדו הכתוב מדבר יכול יופדו על מום עובר כו' וזה שבא לימלך ולחוב בדמיה נאמר לו עמוד וחטא לחללה מזיד בשביל שתזכה לתקן הקרבתה של בהמה זו:"
+  },
+  "Rashi on Kiddushin 55b:1:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T08:23:17.154Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 55b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אמר רבי יוחנן</strong> - הא דקתני זכרים עולות לא היא ולא דמיה קריבין בעודה תמימה אלא ממתין לה עד שתומם מום קבוע ויהא מותר לחללה ומייתי שתי בהמות חדא לעולה וחדא לשלמים ומתנה אם זו עולה תהא זו עולה תחתיה וחבירתה שלמי נדבה ואם זו שלמים תהא זו שלמים תחתיה וחבירתה עולת נדבה:"
+  },
+  "Rashi on Kiddushin 55b:2:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 55b:1:1",
+      "Rashi on Kiddushin 55b:1:2",
+      "Rashi on Kiddushin 55b:1:3"
+    ],
+    "generatedAt": "2026-11-02T08:23:49.859Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 55b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמייתי נמי תודה</strong> - ומתנה:"
+  },
+  "Rashi on Kiddushin 55b:3:1": {
+    "dependsOn": [
+      "Kiddushin 55b:3",
+      "Rashi on Kiddushin 55b:3:1",
+      "Rashi on Kiddushin 55b:3:2",
+      "Rashi on Kiddushin 55b:3:3"
+    ],
+    "generatedAt": "2026-11-02T08:26:12.507Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 55b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודילמא אשם הוא</strong> - וליכא למימר דנייתי נמי אשם דאין אשם בא נדבה:"
+  },
+  "Rashi on Kiddushin 55b:3:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 55b:3:1",
+      "Rashi on Kiddushin 55b:3:2",
+      "Rashi on Kiddushin 55b:3:3",
+      "Rashi on Kiddushin 55b:1:1",
+      "Rashi on Kiddushin 55b:1:2",
+      "Rashi on Kiddushin 55b:1:3",
+      "Rashi on Kiddushin 55a:5:4"
+    ],
+    "generatedAt": "2026-11-02T08:27:37.107Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 55b:3:2"
+    ],
+    "sourceText": "ומשני אשם בן שתי שנים דאשם גזילות ומעילות ושפחה חרופה כתיב בהן איל והאי מתני' דאשתכח בן שנה וליכא לספוקי באשם:"
+  },
+  "Rashi on Kiddushin 55b:3:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T08:28:03.142Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 55b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודילמא אשם נזיר או אשם מצורע</strong> - דכתיב בהו כבש:"
+  },
+  "Rashi on Kiddushin 55b:4:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 55b:4:2",
+      "Rashi on Kiddushin 55b:4:3"
+    ],
+    "generatedAt": "2026-11-02T08:33:48.750Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 55b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בזמנו</strong> - כל זמן שהוא ראוי לפסח:"
+  },
+  "Rashi on Kiddushin 55b:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T08:34:05.739Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 55b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא בזמנו</strong> - עבר זמנו:"
+  },
+  "Rashi on Kiddushin 55b:4:3": {
+    "dependsOn": [
+      "Kiddushin 55b:4",
+      "Rashi on Kiddushin 55b:4:1",
+      "Rashi on Kiddushin 55b:4:2",
+      "Rashi on Kiddushin 55b:4:3",
+      "Rashi on Kiddushin 55b:2:1",
+      "Kiddushin 55b:2",
+      "Rashi on Kiddushin 55b:1:1",
+      "Rashi on Kiddushin 55b:1:2",
+      "Rashi on Kiddushin 55b:1:3"
+    ],
+    "generatedAt": "2026-11-02T08:35:23.780Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 55b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלמים הוא</strong> - והא מייתי שלמים:"
+  },
+  "Rashi on Kiddushin 55b:5:1": {
+    "dependsOn": [
+      "Kiddushin 55b:5",
+      "Rashi on Kiddushin 55b:1:1",
+      "Rashi on Kiddushin 55b:1:2",
+      "Rashi on Kiddushin 55b:1:3",
+      "Steinsaltz on Kiddushin 55b:5"
+    ],
+    "generatedAt": "2026-11-02T08:37:33.881Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 55b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למאי הלכתא</strong> - תירוצא הוא כלומר למאי הילכתא אתית לספוקינהו בבכור ומעשר למיכלינהו במומו שספק בכור וספק מעשר נאכלין במומן לבעלים שהרי אין להם פדיון והני נמי לכשנפדו נאכלין במומן ואוכלן בתורת בכור ומעשר שאין נשחטין באיטליז ואין נשקלין בליטרא:"
+  },
+  "Rashi on Kiddushin 55b:7:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 55b:7:2",
+      "Rashi on Kiddushin 55b:1:1",
+      "Rashi on Kiddushin 55b:1:2",
+      "Rashi on Kiddushin 55b:1:3",
+      "Leviticus 5:6",
+      "Rashi on Kiddushin 54b:1:1",
+      "Rashi on Kiddushin 55a:1:1",
+      "Rashi on Kiddushin 55b:9:1"
+    ],
+    "generatedAt": "2026-11-02T08:39:36.898Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 55b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חטאת בת שנתה</strong> - היא דכתיב <span class=\"parenthesized\">(ויקרא ה׳:ו׳)</span> נקבה מן הצאן כשבה וכל כשבה <span class=\"parenthesized\">(בן שנה)</span> [בת שנתה] היא:"
+  },
+  "Rashi on Kiddushin 55b:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T08:39:56.432Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 55b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואישתכח בת שתי שנים</strong> - ובהמה דמתניתין בבת שתי שנים עסקינן:"
+  },
+  "Rashi on Kiddushin 55b:8:1": {
+    "dependsOn": [
+      "Kiddushin 55b:8",
+      "Rashi on Kiddushin 55b:8:2",
+      "Rashi on Kiddushin 55b:8:3"
+    ],
+    "generatedAt": "2026-11-02T08:41:02.582Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 55b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עז בת שנתה לחטאת</strong> - לישנא דקרא <span class=\"parenthesized\">(במדבר ט״ו:כ״ז)</span> לסימנא בעלמא נקט כלומר אם בת שנתה היא מקריבה חטאת:"
+  },
+  "Rashi on Kiddushin 55b:8:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 55b:8:1"
+    ],
+    "generatedAt": "2026-11-02T08:41:34.819Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 55b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חטאת סלקא דעתך</strong> - דילמא לאו חטאת היא והיכי קריבה ותנאי נמי ליכא דחטאת לא קרבה נדבה:"
+  },
+  "Rashi on Kiddushin 55b:8:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T08:42:09.739Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 55b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כחטאת כונסה לכיפה והיא מתה מאיליה</strong> - כדין חטאת שאינה ראויה ליקרב כגון חמש חטאות דאזלי למיתה <span class=\"parenthesized\">(תמורה דף טז.)</span>:"
+  },
+  "Rashi on Kiddushin 55b:8:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 55b:8:1",
+      "Rashi on Kiddushin 55b:8:2",
+      "Rashi on Kiddushin 55b:8:3",
+      "Rashi on Kiddushin 55b:8:4",
+      "Rashi on Kiddushin 55b:8:5"
+    ],
+    "generatedAt": "2026-11-02T08:42:39.438Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 55b:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לכיפה</strong> - לאו דוקא או שמא כיפה היתה מתוקנת לכך:"
+  },
+  "Rashi on Kiddushin 55b:8:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T08:42:55.855Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 55b:8:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והיא מתה</strong> - שאין נותנין לה מזונות:"
+  },
+  "Rashi on Kiddushin 55b:9:1": {
+    "dependsOn": [
+      "Kiddushin 55b:9",
+      "Rashi on Kiddushin 55b:1:1",
+      "Rashi on Kiddushin 55b:4:1"
+    ],
+    "generatedAt": "2026-11-02T08:45:48.305Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 55b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין לוקחין בהמות במעות מעשר שני</strong> - חוץ לירושלים דכתיב <span class=\"parenthesized\">(דברים י״ד:כ״ה)</span> וצרת הכסף בידך ועוד שמא תכחיש בטורח הדרך:"
+  },
+  "Tosafot on Kiddushin 55b:2:1": {
+    "dependsOn": [
+      "Kiddushin 55b:2"
+    ],
+    "generatedAt": "2026-11-02T08:25:24.719Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 55b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמייתי נמי תודה</strong> - וא\"ת ואמאי צריך להביא בהמה אחרת לתודה באותה עצמה שיעשה זבחי שלמים יתנה ויאמר אם אינה שלמים תהא תודה ואי משום המתנות הוו שוין ואי משום דלא שוו באכילתן דשלמים נאכלים לשני ימים ולילה אחד ותודה ליום ולילה ואין מביאין קדשים לבית הפסול ע\"כ האי תנא קסבר דמביאין מדקתני בסמוך פסח שלא בזמנו שלמים ואע\"ג דפסח אינו נאכל אלא ליום ולילה ושלמים נאכלים לב' ימים ולילה אלמא לא חייש מן האכילה וי\"ל משום דתודה בעי לחם וא\"ת לייתי לחם ויתנה אם היא תודה הרי לחמה ואם היא שלמים תהא הלחם נדבה הא אין לחם בא נדבה וחולין בעזרה הוא כדאמרינן בפרק התודה <span class=\"parenthesized\">(מנחות דף פ:)</span>:"
+  },
+  "Tosafot on Kiddushin 55b:3:1": {
+    "dependsOn": [
+      "Kiddushin 55b:3",
+      "Tosafot on Kiddushin 55b:2:1",
+      "Zevachim 91b:1",
+      "Zevachim 91b:2",
+      "Zevachim 91b:3",
+      "Zevachim 91b:4",
+      "Zevachim 91b:5",
+      "Zevachim 91b:6",
+      "Ritva on Kiddushin 55b:3:1",
+      "Tosafot on Kiddushin 55b:3:2",
+      "Steinsaltz on Kiddushin 55b:3"
+    ],
+    "generatedAt": "2026-11-02T08:31:07.369Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 55b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודילמא אשם הוא</strong> - ואם תאמר ויתנה באותן של שלמים דהא שוו במתנות ואי משום סמיכה דשלמים טעונין סמיכה ואשם אין טעון סמיכה הא סמיכה לא מעכבא ואי משום אכילה הא קסבר דמביאים קדשים לבית הפסול ויש לומר דאין להתנות אשם בשלמים שהרי שלמים טעונין נסכים ואשם אין טעון נסכים ואין לומר שיתנה לנסכים ויאמר אם היא שלמים מוטב ואם לאו יהו נסכי נדבה שהרי אין נסכי חובה ונסכי נדבה שוין שנסכי חובה לספלים ונסכי נדבה מזלפן על גבי אישים:"
+  },
+  "Tosafot on Kiddushin 55b:3:2": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 55b:2:1",
+      "Tosafot on Kiddushin 55b:3:1"
+    ],
+    "generatedAt": "2026-11-02T08:33:20.444Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 55b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודילמא אשם נזיר ואשם מצורע הוא</strong> - ואם תאמר אשם מצורע מיהא יתנה בשלמים שהרי שוין הן בנסכים ויש לומר דעיקר קושיא מאשם נזיר ואשם מצורע נקט אגב אשם נזיר עוד י\"ל דבאשם מצורע איכא חששא אחרינא שצריך ליתן מדמו על בהונות מצורע והכא ליכא מצורע עוד אמר ה\"ר שמשון מקוצי דאין לומר שיתנה אשם בשלמים דשמא היום או למחר ידע בעל האשם שנאבד האשם ויביא אחר תחתיו ולא ידע שנמצא ויהיה אותו שיביא חולין לעזרה משום דהוי אשם שנתכפרו בעליו באחר <span class=\"parenthesized\">(ולמיתה)</span> [ולרעייה] אזלא והשתא ניחא דלא מצי להקשות מידי אבל בעולה ליכא למיחש להא אם יביא עולה אחרת שהרי עולה בא נדבה:"
+  },
+  "Tosafot on Kiddushin 55b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T08:35:52.825Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 55b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא בזמנו הוי שלמים</strong> - וא\"ת כיון דמזהר זהירי בפסח איך יבא לידי פסח שלא בזמנו וי\"ל דלפעמים הפסח חולה ומפריש אחר או שמא מיירי בפסח שנטמאו בעליו אי נמי כגון שהפריש שני פסחים לאחריות שעכשיו לא נקרב אלא אחד מהן ונשאר אחר זמנו:"
+  },
+  "Tosafot on Kiddushin 55b:8:1": {
+    "dependsOn": [
+      "Kiddushin 55b:8",
+      "Kiddushin 55b:2",
+      "Kiddushin 55b:3",
+      "Kiddushin 55b:4"
+    ],
+    "generatedAt": "2026-11-02T08:44:31.020Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 55b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אשתכח בת שנתה מאי</strong> - אבל לעיל גבי אשם לא מצי למיבעי אשתכח בת שתי שנים מאי לפי שנוכל לומר שיהיה תקנה ברעייה דכל שבחטאת מתה באשם רועה ואם כן תרעה עד שתסתאב והדמים יהיו לקייץ המזבח אבל בחטאת אין בה תקנה כלל ומשום הכי בעי גמרא ומאי תקנתיה וא\"ת לעיל דקאמר זכרים עולות ליחוש דילמא שעירי רגלים וראשי חדשים שהם חטאות צבור והם זכרים וא\"כ אמאי לא בעי גמרא לעיל כי הכא דילמא חטאות צ\"ל דלהא ליכא למיחש דהא לב ב\"ד מתנה עליהם שאם נאבדו יהיו חולין:"
+  },
+  "Tosafot on Kiddushin 55b:9:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 55b:9:1",
+      "Kiddushin 55b:9"
+    ],
+    "generatedAt": "2026-11-02T08:47:24.010Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 55b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין לוקחין בהמה במעשר שני</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> חוץ לירושלים משום דכתיב <span class=\"parenthesized\">(דברים יד)</span> וצרת הכסף בידך דהתורה הקפידה בכסף צורה ועוד שמא תכחש בטורח הדרך ולא נהירא דהא דבעינן כסף צורה היינו דוקא דרך חילול כגון לקנות דבר שאינו אוכל שאז צריך לחזור ולמכור אבל במקח להוליך בהמה ולאוכלה בירושלים שרי ולא בעינא כסף צורה והכי נמי אמר בהגוזל קמא <span class=\"parenthesized\">(ב\"ק דף צז:)</span> מי שיש לו מעות בבבל שאינם יוצאין בירושלים זבין בהמה בבבל וממטי לה בירושלים אלמא לא בעינן כסף צורה מיהו ללישנא דשמא תכחיש לא קשה כולי האי דאיכא למימר דיותר טוב לקנות בהמה ולהעלותה לירושלים ואע\"ג שמתכחשת מטורח הדרך מלהביא המעות של בבל שאינם יוצאים בירושלים אבל ללישנא דכסף צורה קשה טובא כדפרישית לכך נראה לר\"י לפרש דהיינו טעמא דאין לוקחין בהמות כו' גזירה שמא יגדל עדרים עדרים והכי נמי אמרינן בפרק לולב הגזול <span class=\"parenthesized\">(סוכה דף מ:)</span> דקאמר התם מעות מעשר שני מתחללין על בהמה חיה ועוף בין חיים בין שחוטים דברי ר' מאיר וחכמים אומרים על שחוטים מתחללין על חיין אין מתחללין ומסיק מחלוקת בזכרים אבל בנקבות דברי הכל אין מתחללין על חיין שמא יגדל מהם עדרים ובזכרים פליגי אי גזרינן זכרים אטו נקבות אי לא דרבי מאיר לא גזר ורבנן גזרי והכא דקאמר אין לוקחין גזירה זכרים אטו נקבות ואם תאמר כיון דטעמא הוי משום גזירה אמאי קאמר התם לשון מתחללין דמשמע אפילו דיעבד לא מהני והא אמר בכל דוכתי דכל דבר שהוא דרבנן בדיעבד מהני ואם כן מחללין מיבעי ליה דכוותיה אמרינן בפרק הזהב <span class=\"parenthesized\">(ב\"מ דף מה:)</span> דקאמר התם אלא מאי דרבנן אין מתחללין אין מחללין מיבעי ליה ויש לומר כיון דבההיא דלולב הגזול יש תקנה לעשות לומר יחזרו דמים למקומן כדקאמר הכא משום הכי קאמר דאפילו דיעבד לא מהני דאי אמרינן מהני כך לי דיעבד כמו שהיה עושה אותו בתחלה:"
+  }
+}

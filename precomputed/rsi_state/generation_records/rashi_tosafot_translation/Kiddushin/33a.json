@@ -1,0 +1,460 @@
+{
+  "Rashi on Kiddushin 33a:10:1": {
+    "dependsOn": [
+      "Kiddushin 33a:10",
+      "Kiddushin 33a:8",
+      "Rashi on Kiddushin 33a:10:2",
+      "Rashi on Kiddushin 33a:2:1",
+      "Rashi on Kiddushin 33a:3:1",
+      "Rashi on Kiddushin 33a:6:1",
+      "Rashi on Kiddushin 32b:1:1"
+    ],
+    "generatedAt": "2026-11-01T19:16:03.780Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"נ מסתברא</strong> - דר' שמעון ברבי בבתי בראי מדקאמר ליה בהן יושב ומהרהר:"
+  },
+  "Rashi on Kiddushin 33a:10:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 33a:10:1",
+      "Steinsaltz on Kiddushin 33a:10"
+    ],
+    "generatedAt": "2026-11-01T19:18:57.142Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאונסיה שאני</strong> - פעמים שהוא טרוד ומעיין בשמועתיה לפני כניסתו למרחץ וע\"כ היא שגורה בפיו ולבו ומעיין בה בבית המרחץ:"
+  },
+  "Rashi on Kiddushin 33a:11:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 32b:1:1"
+    ],
+    "generatedAt": "2026-11-01T19:19:46.534Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ברשיעי עסקינן</strong> - בתמיה למה לי קרא אם ראה ועצם עיניו הרי עבר על תקום והדרת:"
+  },
+  "Rashi on Kiddushin 33a:12:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 33a:10:1",
+      "Rashi on Kiddushin 33a:10:2",
+      "Rashi on Kiddushin 33a:11:1",
+      "Rashi on Kiddushin 33a:12:2"
+    ],
+    "generatedAt": "2026-11-01T19:21:08.593Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זמן חיוביה</strong> - בארבע אמותיו כדלקמן <span class=\"parenthesized\">(עמוד ב)</span>:"
+  },
+  "Rashi on Kiddushin 33a:12:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 33a:12:1",
+      "Rashi on Kiddushin 33a:15:3"
+    ],
+    "generatedAt": "2026-11-01T19:22:16.826Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ל ויראת</strong> - יש לך לירא מן היוצר היודע מחשבותיך שאתה מבקש תחבולות להפטר ממצותו:"
+  },
+  "Rashi on Kiddushin 33a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T19:22:43.231Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיש בה הידור</strong> - כבוד ונשיאות פנים שדבר הניכר הוא שבשבילו עמד:"
+  },
+  "Rashi on Kiddushin 33a:14:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 33a:14:1",
+      "Rashi on Kiddushin 33a:14:2",
+      "Rashi on Kiddushin 33a:14:3"
+    ],
+    "generatedAt": "2026-11-01T19:23:16.791Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באידך גיסא</strong> - הנהר מפסיק ביניהם:"
+  },
+  "Rashi on Kiddushin 33a:14:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T19:23:35.706Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולאו רב מובהק אנא</strong> - ואף על פי שאתם רחוקים יותר מד' אמות איבעי לכו למיקם:"
+  },
+  "Rashi on Kiddushin 33a:14:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T19:23:54.710Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאו אדעתין</strong> - לא נזכרנו לעמוד שהיינו טרודים:"
+  },
+  "Rashi on Kiddushin 33a:15:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 33a:15:1",
+      "Rashi on Kiddushin 33a:15:2",
+      "Rashi on Kiddushin 33a:15:3"
+    ],
+    "generatedAt": "2026-11-01T19:24:35.057Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי מקיף</strong> - מסבב דרך אחרת שלא לעבור לפני הצבור:"
+  },
+  "Rashi on Kiddushin 33a:15:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T19:25:12.435Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חיי</strong> - מאריך ימים:"
+  },
+  "Rashi on Kiddushin 33a:15:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 33a:15:1",
+      "Rashi on Kiddushin 33a:15:2",
+      "Rashi on Kiddushin 33a:15:3",
+      "Kiddushin 33a:15",
+      "Rashi on Kiddushin 33a:12:2",
+      "Kiddushin 33a:11",
+      "Kiddushin 33a:12",
+      "Rashi on Kiddushin 32b:11:2",
+      "Rashi on Kiddushin 32b:12:2"
+    ],
+    "generatedAt": "2026-11-01T19:26:55.491Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ל ויראת</strong> - יש לך לירא מן היוצר היודע מחשבותיך שאתה מבקש תחבולות להפטר ממצותו:"
+  },
+  "Rashi on Kiddushin 33a:16:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 33a:16:1",
+      "Rashi on Kiddushin 33a:16:2"
+    ],
+    "generatedAt": "2026-11-01T19:27:30.787Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דגיסי בהו ברבנן</strong> - תמיד רגילים אצלם ולבם גס בחכמים כאילו הם מהם:"
+  },
+  "Rashi on Kiddushin 33a:16:2": {
+    "dependsOn": [
+      "[",
+      "[\\"
+    ],
+    "generatedAt": "2026-11-01T19:28:47.589Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גיסי</strong> - בלע\"ז פריבי\"ץ:"
+  },
+  "Rashi on Kiddushin 33a:17:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 33a:17:1"
+    ],
+    "generatedAt": "2026-11-01T19:29:50.837Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרפתקי</strong> - מקראות וצרות וראו נסים הרבה ומופתים:"
+  },
+  "Rashi on Kiddushin 33a:17:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 33a:17:1",
+      "Rashi on Kiddushin 33a:16:1",
+      "Rashi on Kiddushin 33a:16:2",
+      "Rashi on Kiddushin 32b:1:1",
+      "Rashi on Kiddushin 32b:2:1"
+    ],
+    "generatedAt": "2026-11-01T19:32:54.364Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עדו עליהן</strong> - עברו עליהם:"
+  },
+  "Rashi on Kiddushin 33a:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T19:33:12.760Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אביי יהיב ידא לסבי</strong> - פושט ידו לזקנים כל כמה שעוברים אצלו ונשענין עליו:"
+  },
+  "Rashi on Kiddushin 33a:18:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 33a:18:1",
+      "Rashi on Kiddushin 33a:18:2",
+      "Rashi on Kiddushin 33a:18:3"
+    ],
+    "generatedAt": "2026-11-01T19:33:49.463Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבא</strong> - היה שולח שלוחיו לפשוט להן יד אבל הוא עצמו לא:"
+  },
+  "Rashi on Kiddushin 33a:18:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T19:34:23.178Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:18:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב נחמן משדר גוזאי</strong> - סריסים שהיו תמיד לפניו לפי שהיה שר חתן הנשיא ואב ב\"ד היו רגילין לעמוד לפניו משרתים להכות ולכוף מאן דלא ציית דינא וכשהיו זקנים עוברים לפניו היה שולח הנך סריסים להחזיק בידם אבל הוא עצמו לא שלא לזלזל בתורתו דאמר אי לאו תורה כמה נחמן איכא בשוקא הלכך אין חשיבותי בשביל עצמי אלא בשביל תורה ואית דמפרשי אביי יהיב ידא לסבי מכבד עצמו בזקנים ופושט להם ידו שישען הוא עליהם רבא משדר שלוחיה שיצאו לקראתו לכבודו וכן רב נחמן וליתא דכל היכא דגרסי' יהיב ידא להשען אחרים עליו קאמר ולא להשען הוא על אחרים כדאמר בפרק קמא דיומא <span class=\"parenthesized\">(דף ט:)</span> ריש לקיש הוה סחי בירדנא אתא רבה בר בר חנה יהיב ליה ידא שישען ר' שמעון בן לקיש עליו ויצא לשפת הנהר:"
+  },
+  "Rashi on Kiddushin 33a:2:1": {
+    "dependsOn": [
+      "Kiddushin 33a:2"
+    ],
+    "generatedAt": "2026-11-01T18:55:32.018Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יכול יהדרנו בממון</strong> - כדכתיב <span class=\"parenthesized\">(ויקרא י״ט:ט״ו)</span> לא תהדר פני גדול דמשמע בממון וכגון ודל לא תהדר בריבו <span class=\"parenthesized\">(שמות כ״ג:ג׳)</span>:"
+  },
+  "Rashi on Kiddushin 33a:2:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 33a:2:1",
+      "Rashi on Kiddushin 32b:2:1",
+      "Rashi on Kiddushin 32b:3:1",
+      "Rashi on Kiddushin 33a:11:1"
+    ],
+    "generatedAt": "2026-11-01T18:56:58.346Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי לא עסקינן</strong> - כלומר מי לא משמע נמי אפילו נוקב מרגניתא שאומנות יקרה היא ומצריך ליה למיקם ואע\"ג דבטל ממלאכתו ואיכא חסרון כיס:"
+  },
+  "Rashi on Kiddushin 33a:3:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 33a:3:2",
+      "Rashi on Kiddushin 33a:3:3",
+      "Kiddushin 33a:2"
+    ],
+    "generatedAt": "2026-11-01T18:57:47.666Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה הידור שאין בו ביטול מלאכה</strong> - דאין לשון הידור אלא נשיאות פנים או בממון או בכיבוד דברים ואין במשמעו ביטול מלאכה:"
+  },
+  "Rashi on Kiddushin 33a:3:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 33a:3:1",
+      "Rashi on Kiddushin 33a:3:3"
+    ],
+    "generatedAt": "2026-11-01T18:58:20.242Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה קימה שאין בה חסרון כיס</strong> - דהא אוקימנא דבשאין בה ביטול מלאכה עסקינן ותו לא שייך בה חסרון כיס:"
+  },
+  "Rashi on Kiddushin 33a:3:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 33a:3:1",
+      "Rashi on Kiddushin 33a:3:2",
+      "Kiddushin 33a:3",
+      "Kiddushin 32b:10",
+      "Rashi on Kiddushin 32b:10:1",
+      "Rashi on Kiddushin 32b:10:2"
+    ],
+    "generatedAt": "2026-11-01T18:59:39.682Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף הידור שאין בו חסרון כיס</strong> - ועל כרחיך לא נכתב הידור אלא לדרוש כדאמרן למעוטי עמידה מרחוק ולמעוטי בית המרחץ כדאמרן:"
+  },
+  "Rashi on Kiddushin 33a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T19:00:35.183Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עומדין מפניהם</strong> - במביאי בכורים קאי כשעוברים בתוך ירושלים:"
+  },
+  "Rashi on Kiddushin 33a:5:1": {
+    "dependsOn": [
+      "Kiddushin 33a:5",
+      "Rashi on Kiddushin 33a:4:1"
+    ],
+    "generatedAt": "2026-11-01T19:01:31.491Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נמצאת מכשילן</strong> - שלא יביאו עוד שיאמרו נבזים אנו בעיניהם ולאו משום חיבוב מצוה הוה ואילו בני אדם הניכרים חשובים בעיר ועסוקים במצות לא הוה למיקם מקמייהו:"
+  },
+  "Rashi on Kiddushin 33a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T19:02:25.700Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מסחותא</strong> - מרחץ כדמתרגמי' <span class=\"parenthesized\">(בראשית מג)</span> וירחץ ואסחי:"
+  },
+  "Rashi on Kiddushin 33a:6:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 33a:6:1",
+      "Rashi on Kiddushin 33a:6:2",
+      "Steinsaltz on Kiddushin 33a:6:1",
+      "Steinsaltz on Kiddushin 33a:6",
+      "Tosafot on Kiddushin 33a:6:1"
+    ],
+    "generatedAt": "2026-11-01T19:03:40.930Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שני חומשים</strong> - שני חמישיות של ספר שניתי לו מדרש אגדותיו:"
+  },
+  "Rashi on Kiddushin 33a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T19:05:33.166Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שני שלישי שליש</strong> - שני חלקים של שליש הספר:"
+  },
+  "Rashi on Kiddushin 33a:7:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 33a:7:1",
+      "Rashi on Kiddushin 33a:7:3",
+      "Rashi on Kiddushin 33a:6:1",
+      "Rashi on Kiddushin 33a:6:2",
+      "Kiddushin 33a:6"
+    ],
+    "generatedAt": "2026-11-01T19:06:45.843Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תורת כהנים</strong> - ספר ויקרא שניתי לו ברייתא של מדרש הספר:"
+  },
+  "Rashi on Kiddushin 33a:7:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T19:07:14.442Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בהן היה מהרהר</strong> - וטרוד היה ולא הבין בעברך לפניו:"
+  },
+  "Rashi on Kiddushin 33a:9:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 33a:9:1",
+      "Kiddushin 33a:9",
+      "Rashi on Kiddushin 33a:6:1",
+      "Rashi on Kiddushin 33a:7:1",
+      "Rashi on Kiddushin 33a:7:2",
+      "Rashi on Kiddushin 33a:7:3",
+      "Rashi on Kiddushin 33a:10:1",
+      "Rashi on Kiddushin 33a:10:2"
+    ],
+    "generatedAt": "2026-11-01T19:13:24.970Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 33a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתי גואי</strong> - מקום שבני אדם עומדים ערומים והא דר' שמעון ברבי בבתי בראי מקום שעומדים לבושים דהתם מקום הידור הוא:"
+  },
+  "Tosafot on Kiddushin 33a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T19:00:17.998Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 33a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין בעלי אומניות רשאין לעמוד כו'</strong> - תימה מה לשון רשאי שייך דמשמע דאיכא איסורא וי\"ל דמיירי בעוסקין במלאכת אחרים. והשתא שייך לשון רשאים ומיהו י\"ל רשאים כמו חייבין כי ההיא דתנן בערכין פרק המקדיש שדהו <span class=\"parenthesized\">(ערכין דף כח:)</span> כמה רוצה אדם ליתן בשור זה לעולה אע\"פ שאינו רשאי פי' אע\"פ שאינו חייב והשתא ניחא דמיירי שפיר בעוסקין במלאכת עצמן.:"
+  },
+  "Tosafot on Kiddushin 33a:6:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 33a:6:1",
+      "Rashi on Kiddushin 33a:6:2",
+      "Tosafot on Kiddushin 33a:3:1",
+      "Tosafot on Kiddushin 33a:7:1",
+      "Tosafot on Kiddushin 32b:8:1"
+    ],
+    "generatedAt": "2026-11-01T19:05:13.631Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 33a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שני חומשין</strong> - <span class=\"rashi-quotation\">פי' בקונט'</span> לשון חומש הספר וי\"מ חמשה חומשין יש בו כמו בשל תורה אשרי האיש <span class=\"parenthesized\">(תהלים א)</span> כאיל תערוג על אפיקי מים <span class=\"parenthesized\">(שם מב)</span> אך טוב לישראל <span class=\"parenthesized\">(שם עג)</span> תפלה למשה <span class=\"parenthesized\">(שם צ)</span> יאמרו גאולי <span class=\"parenthesized\">(שם קז)</span> לכל אחד מן הספרים אלו מסיים באמן לבד מן האחרון שהוא סוף תהלים:"
+  },
+  "Tosafot on Kiddushin 33a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T19:11:50.474Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 33a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[שמא בהן יושב ומהרהר כו'</strong> - לא היה צריך לומר בהן דה\"ה בשאר ד\"ת אלא הא דקאמר הכי סוד ה' ליראיו כדאיתא בב\"ר דאמר ר' חייא יבא עלי אם לא הייתי מסתכל בספר תהלים כו'. ת\"י:]"
+  }
+}

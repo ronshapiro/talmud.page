@@ -1,0 +1,333 @@
+{
+  "Rashi on Kiddushin 74a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T06:09:46.291Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 74a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל האסורין לבא בקהל מותרין לבא זה בזה</strong> - כגון ממזרי בשתוקי ואע\"ג שזה ודאי וזה ספק ואיכא למימר שמא כשר הוא אפ\"ה שרי כדילפינן לעיל <span class=\"parenthesized\">(קידושין דף עג.)</span> בקהל ודאי לא יבא אבל בקהל ספק יבא ובגמרא פריך הא תנא ליה רישא:"
+  },
+  "Rashi on Kiddushin 74a:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T06:10:34.123Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 74a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי יהודה אוסר</strong> - בגמרא מפרש לה:"
+  },
+  "Rashi on Kiddushin 74a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T06:11:01.263Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 74a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודאן בודאן מותר</strong> - כגון ממזרים בנתינים:"
+  },
+  "Rashi on Kiddushin 74a:11:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 74a:11:1",
+      "Rashi on Kiddushin 74a:11:2",
+      "Rashi on Kiddushin 74a:11:3"
+    ],
+    "generatedAt": "2026-11-03T06:11:48.364Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 74a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודאן בספיקן</strong> - כגון ממזרי ונתיני בשתוקי ואסופי:"
+  },
+  "Rashi on Kiddushin 74a:11:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 74a:11:1",
+      "Rashi on Kiddushin 74a:11:2",
+      "Rashi on Kiddushin 74a:11:3",
+      "Rashi on Kiddushin 74a:11:4",
+      "Rashi on Kiddushin 74a:6:1",
+      "Rashi on Kiddushin 74a:7:1"
+    ],
+    "generatedAt": "2026-11-03T06:14:02.625Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 74a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ספיקן בודאן</strong> - שתוקי ואסופי בממזרי ונתיני:"
+  },
+  "Rashi on Kiddushin 74a:11:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 74a:11:1",
+      "Rashi on Kiddushin 74a:11:2",
+      "Rashi on Kiddushin 74a:11:3",
+      "Rashi on Kiddushin 74a:11:4",
+      "Rashi on Kiddushin 74a:11:5"
+    ],
+    "generatedAt": "2026-11-03T06:14:35.472Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 74a:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ספיקן בספיקן</strong> - שתוקי בשתוקית אסופי באסופית אסופי בשתוקית:"
+  },
+  "Rashi on Kiddushin 74a:11:5": {
+    "dependsOn": [
+      "Rashi on Kiddushin 74a:11:4",
+      "Rashi on Kiddushin 74a:11:5",
+      "Rashi on Kiddushin 74a:11:1",
+      "Rashi on Kiddushin 74a:11:2",
+      "Rashi on Kiddushin 74a:11:3",
+      "Rashi on Kiddushin 74a:11:6",
+      "Rashi on Kiddushin 74a:10:1"
+    ],
+    "generatedAt": "2026-11-03T06:16:15.259Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 74a:11:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסור</strong> - שמא זה כשר וזה פסול:"
+  },
+  "Rashi on Kiddushin 74a:11:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T06:17:10.818Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 74a:11:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכותי</strong> - בגמ' מפרש מאי ספיקייהו וכותים אותם שהושיב סנחריב בערי שומרון כדכתיב <span class=\"parenthesized\">(מלכים ב י״ז:כ״ד)</span> ויבא מלך אשור <span class=\"parenthesized\">(אנשים מספרויים)</span> ומכותה וגו' ועל שם שהביאם מכותה נקראו כותים ונתגיירו מאימת האריות כדכתיב <span class=\"parenthesized\">(שם)</span> וישלח <span class=\"parenthesized\">(בם את)</span> האריות וגו' וכולה עניניה במלכים:"
+  },
+  "Rashi on Kiddushin 74a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T06:17:54.117Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 74a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי תימא ר' יהודה אוסר אגר בממזרת</strong> - דשמעינן ליה דאמר הכי לעיל <span class=\"parenthesized\">(קידושין דף עב.)</span> רבי יהודה אומר גר לא ישא ממזרת ובמידי אחרינא לא שמעינן דפליג לענין יוחסין:"
+  },
+  "Rashi on Kiddushin 74a:14:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 74a:14:1",
+      "Rashi on Kiddushin 74a:14:3"
+    ],
+    "generatedAt": "2026-11-03T06:18:43.000Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 74a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מידי גר בממזרת קתני</strong> - לעיל דאתי רבי יהודה לאפלוגי עליה:"
+  },
+  "Rashi on Kiddushin 74a:14:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T06:19:22.847Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 74a:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל האסורין לבא בקהל</strong> - וגר לאו מן האסורין הוא:"
+  },
+  "Rashi on Kiddushin 74a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T05:47:11.023Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 74a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וניחזי זוזי ממאן נקט</strong> - קא ס\"ד שלא קיבל מעות אלא מאחד מהם הא ודאי מדכיר דכיר זוזי דמאן קביל:"
+  },
+  "Rashi on Kiddushin 74a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T05:47:28.418Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 74a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא ידיע</strong> - אין ידוע לנו:"
+  },
+  "Rashi on Kiddushin 74a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T05:48:01.503Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 74a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בזמן שבעלי דינין עומדין לפניו</strong> - רמיא עליה למדכר שעדיין לא יצאו משם משגמרו את דינם ואומר איש פלוני זכאי איש פלוני חייב שאין בעלי דינין עומדין לפניו תו לא רמיא עליה למידכר:"
+  },
+  "Rashi on Kiddushin 74a:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T05:48:31.321Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 74a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וניחזי זכותא מאן נקט</strong> - ביד איזהו מהם פסק דין של זכות:"
+  },
+  "Rashi on Kiddushin 74a:3:1": {
+    "dependsOn": [
+      "Kiddushin 74a:3"
+    ],
+    "generatedAt": "2026-11-03T05:50:01.612Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 74a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וניהדר ונידיינינהו</strong> - למה לי כולי האי למימר אינו נאמן מה לנו ולאמונתו נהדר הוא עצמו או אחר וידונם לפי טענותם:"
+  },
+  "Rashi on Kiddushin 74a:3:2": {
+    "dependsOn": [
+      "[",
+      "Kiddushin 74a:3"
+    ],
+    "generatedAt": "2026-11-03T05:51:19.829Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 74a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשודא דדייני</strong> - בדין שאינו תלוי בטעם אלא הכל בפיו של דיין כי ההיא דכתובות <span class=\"parenthesized\">(דף פה:)</span> דאמר נכסי לטוביה ואתו שני טוביה שניהם קרובים שניהם שכנים ואמרינן שודא דדייני למי שיתנדב לב הדיין לומר נראה לי שזה היה רגיל אצלו יותר לזה נתן וכיון שפסק כן אם בא לחזור אינו חוזר ולפיכך אין רוצין לחזור מדין שמא יטנו לבו לצד השני:"
+  },
+  "Rashi on Kiddushin 74a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T05:58:17.316Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 74a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל שבעה</strong> - שעדיין אין אביו מכיר בו שלא יצא מתחת ידי אמו ליכנס לברית מכאן ואילך מוטל על אביו להכירו כדכתיב יכיר:"
+  },
+  "Rashi on Kiddushin 74a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T06:00:03.572Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 74a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחכמים אומרים אינו נאמן</strong> - אבן גרושה וחלוצה הוא דפליגי:"
+  },
+  "Rashi on Kiddushin 74a:6:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 74a:6:2"
+    ],
+    "generatedAt": "2026-11-03T06:02:24.235Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 74a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שבודקין את אמו ונאמנת כמאן כרבן גמליאל</strong> - בתמיה למה ליה לרבי למיתנייה לפלוגתא בתרי דוכתי ליתני הא דאבא שאול התם וכן היה אבא שאול אומר כדבריו:"
+  },
+  "Rashi on Kiddushin 74a:6:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 74a:6:1",
+      "Rashi on Kiddushin 74a:7:1",
+      "Rashi on Kiddushin 74a:7:2"
+    ],
+    "generatedAt": "2026-11-03T06:03:57.140Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 74a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכהן הוא</strong> - כלומר מיוחס הוא:"
+  },
+  "Rashi on Kiddushin 74a:7:1": {
+    "dependsOn": [
+      "Kiddushin 74a:7",
+      "Rashi on Kiddushin 74a:7:2"
+    ],
+    "generatedAt": "2026-11-03T06:04:52.634Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 74a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חדא להכשיר בה</strong> - ר\"ג דלא האמינה אלא לעצמה שלא נתחללה מן התרומה אבל לא להכשיר אותו עובר שאם בת היא לא תינשא לכהן אבא שאול מכשיר אף בבתה דהא מתניתין אף בולד קאי שהוא שתוקי:"
+  },
+  "Rashi on Kiddushin 74a:7:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 74a:7:1",
+      "Rashi on Kiddushin 74a:7:2",
+      "Rashi on Kiddushin 74a:6:1",
+      "Rashi on Kiddushin 74a:6:2"
+    ],
+    "generatedAt": "2026-11-03T06:05:44.895Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 74a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הניחא למאן דאמר כו'</strong> - בפ\"ק דכתובות <span class=\"parenthesized\">(דף יג:)</span>:"
+  },
+  "Rashi on Kiddushin 74a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T06:06:22.455Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 74a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאי מהתם ה\"א הני מילי היכא דרוב כשרים אצלה</strong> - כגון פנויה ורוב העיר משיאין לכהונה אבל היכא דרוב פסולין אצלה כגון ארוסה והיא אומרת מן הארוס הוא או פנויה ואין רוב העיר משיאין לכהונה:"
+  },
+  "Tosafot on Kiddushin 74a:3:1": {
+    "dependsOn": [
+      "Ketubot 94b:8",
+      "Ketubot 94b:9",
+      "Ketubot 94b:10"
+    ],
+    "generatedAt": "2026-11-03T05:57:33.755Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 74a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שודא דדייני</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> בדין שאין תלוי בטעם אלא הכל לפי ראות עיני הדיינין כי ההיא דכתובות <span class=\"parenthesized\">(דף פה:)</span> דההוא דאמר נכסיי לטוביה ואתו תרי טוביה שניהם קרובים שניהם שכנים ואמר שודא דדייני פירוש למי שמתנדב לב הדיין לומר שזה היה אוהבו יותר מזה לזה נתן וקשה לר\"ת דאי בסברא תליא מילתא <span class=\"rashi-quotation\">כדפי' בקונטרס</span> אמאי לא אמרינן דנהדר ונידייניה דמסתמא לא יהפוך סברתו ראשונה ועוד פ\"ק דגיטין <span class=\"parenthesized\">(דף יד:)</span> אמרינן הילך מנה לפלוני כו' תני חדא הלך ומצאו שמת יחזרו ליורשי המשלח ותניא אידך ליורשי מי שנשתלחו לו ומסיק כאן אמרו שודא עדיף והתם אי אפשר לפרש <span class=\"rashi-quotation\">פי' הקונטרס</span> לכך פר\"ת שודא דדייני דכל מה שירצה הדיין לעשות יעשה דהפקר ב\"ד היה הפקר ושודא לשון השלכה כמו רמה בים דמתרגמינן שדי בימא <span class=\"parenthesized\">(שמות ט״ו:א׳)</span> וראיה לפר\"ת מההיא דפ' מי שהיה נשוי <span class=\"parenthesized\">(כתובות דף צד:)</span> גבי שני שטרות שהיו ביום אחד אתו תרוייהו קמיה דרב ששת ואגבי רב ששת לחד מנייהו הדר אתו לקמיה דרב נחמן ואגבייה לאידך אתא קמיה דרב ששת אמר ליה מ\"ט עבד מר הכי אמר ליה משום דקדים פי' שאחד מן השטרות נכתב בבקר והאחד בערב ואמר ליה אטו בירושלים יתבינן דכתבי שעי ואמר ליה ואת מאי דעתך אמר ליה שודא דדייני אמר ליה אנא נמי שודא דדייני אמר ליה אנא דיינא ומר לאו דיינא והשתא לפר\"ת ניחא הא דקאמר אנא דיינא ומר לאו דיינא דצריך דיין קבוע לומר דהפקר ב\"ד היה הפקר ורב נחמן היה דיין קבוע אבל ל<span class=\"rashi-quotation\">פי' הקונטרס</span> דפי' דבסברא תליא מילתא מה לנו דיין קבוע פשיטא דסברת רב נחמן לא הוה עדיפא מסברת רב ששת:"
+  },
+  "Tosafot on Kiddushin 74a:5:1": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 74a:5:1"
+    ],
+    "generatedAt": "2026-11-03T06:01:19.286Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 74a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשם שאדם נאמן לומר זה בני בכור כך נאמן לומר זה בני בן גרושה וחלוצה</strong> - וא\"ת מנ\"ל לר' יהודה הא דנאמן לומר זה בני בן גרושה וחלוצה בשלמא זה בני בכור דין הוא שיהא נאמן עליו משום דהוי טוב לולד שע\"י כן יטול פי שנים אבל לפוסלו אמאי נאמן וי\"ל דהא דנאמן לומר זה בני בכור מיירי בתינוק בין הבנים דאומר על קטן שבבניו שזה בכור ואפ\"ה נאמן ואע\"ג שע\"י שהוא מעיד על זה שהוא בכור מחזיק את הגדולים לממזרים ורבינו אליהו מפרש דהיינו טעמא דנאמן משום דכתיב כי את הבכור בן השנואה יכיר ואמרינן לעיל <span class=\"parenthesized\">(קידושין דף סח.)</span> שנואה בנישואיה כלומר שהיא בלאו וקאי יכיר אתרוייהו יכיר שהוא בכור ויכיר שהוא בן גרושה וחלוצה דשנואה בנישואיה וכן מצאתי בירושלמי [והא דקאמר כשם כו' משום דפשטיה דקרא משמע דקאי טפי אהכרת בכור. ת\"י]:"
+  },
+  "Tosafot on Kiddushin 74a:9:1": {
+    "dependsOn": [
+      "Kiddushin 74a:9",
+      "Rashi on Kiddushin 74a:9:1",
+      "Maharsha: Chidushei Halachot on Kiddushin 74a:2",
+      "Ketubot 13b:4",
+      "Ketubot 13b:5",
+      "Ketubot 13b:6",
+      "Tosafot on Ketubot 13b:11:2"
+    ],
+    "generatedAt": "2026-11-03T06:09:12.499Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 74a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי מהתם ה\"א ה\"מ היכא דרוב כשרים אצלה</strong> - כגון פנויה ורוב העיר משיאין לכהונה וא\"ת אמאי לא פריך למאן דאמר <span class=\"parenthesized\">(כתובות דף יג:)</span> דמאן דמכשיר מכשיר אפי' ברוב פסולין אצלה מאי אתא אבא שאול לאשמועינן הוה ליה למיתני מילתא דאבא שאול גבי האי מילתא דרבן גמליאל דכתובות <span class=\"parenthesized\">(שם.)</span> כדפריך בסמוך למ\"ד לדברי המכשיר בה מכשיר בבתה וי\"ל דמתני' דהתם לא אשמעינן רבן גמליאל מידי אפי' ברוב פסולין כי אם מברייתא דמייתי התם זו עדות שהאשה כשירה לה כו' ולכך איצטריך לאשמועינן הכא מילתא דאבא שאול אלא לדברי המכשיר בה מכשיר בבתה שמעינן שפיר ממשנה דהתם מדקתני ראוה מדברת והיתה מעוברת חד להכשיר בה וחד להכשיר בבתה כדאיתא התם:"
+  }
+}

@@ -1,0 +1,570 @@
+{
+  "Rashi on Kiddushin 57a:11:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 57a:11:2",
+      "Kiddushin 57a:11",
+      "Rashi on Kiddushin 57a:1:1",
+      "Rashi on Kiddushin 57a:1:2",
+      "Rashi on Kiddushin 57a:3:1"
+    ],
+    "generatedAt": "2026-11-02T10:26:27.771Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר' יעקב סבר שחיטה שאינה ראויה</strong> - למצותה שמה שחיטה לאוסרה:"
+  },
+  "Rashi on Kiddushin 57a:11:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 57a:11:1",
+      "Rashi on Kiddushin 57a:1:1",
+      "Rashi on Kiddushin 57a:1:2"
+    ],
+    "generatedAt": "2026-11-02T10:27:35.932Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחיים לא מיתסרא</strong> - דאי איתסרא במאי פקע איסורה:"
+  },
+  "Rashi on Kiddushin 57a:12:1": {
+    "dependsOn": [
+      "Kiddushin 57a:12"
+    ],
+    "generatedAt": "2026-11-02T10:28:07.148Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנאי היא</strong> - הני תנאי סבירא להו כדקאמרת דלא מיתסרא ותנא דבי רבי ישמעאל דיליף מכשיר ממכפר סבירא ליה דמיתסרא מחיים כמכפר:"
+  },
+  "Rashi on Kiddushin 57a:12:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 57a:4:4",
+      "Rashi on Kiddushin 57a:12:1"
+    ],
+    "generatedAt": "2026-11-02T10:28:59.782Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכפר בחוץ</strong> - עגלה ערופה:"
+  },
+  "Rashi on Kiddushin 57a:13:1": {
+    "dependsOn": [
+      "Kiddushin 57a:13",
+      "Rashi on Kiddushin 57a:12:1",
+      "Rashi on Kiddushin 57a:12:2"
+    ],
+    "generatedAt": "2026-11-02T10:30:54.801Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה בפנים עשה מכשיר כמכפר</strong> - לא חלק בין אשם מצורע לשאר אשמות:"
+  },
+  "Rashi on Kiddushin 57a:15:1": {
+    "dependsOn": [
+      "Kiddushin 57a:15",
+      "Rashi on Kiddushin 57a:14:1",
+      "Rashi on Kiddushin 57a:15:2"
+    ],
+    "generatedAt": "2026-11-02T10:31:46.517Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיפוך אנא</strong> - וזה אשר לא תאכלו לרבות את המשולחת:"
+  },
+  "Rashi on Kiddushin 57a:15:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 57a:15:1"
+    ],
+    "generatedAt": "2026-11-02T10:32:14.976Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא מצינו בעלי חיים שאסורין</strong> - איסור עולם:"
+  },
+  "Rashi on Kiddushin 57a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T09:51:52.249Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">את לא דריש</strong> - לריבויא:"
+  },
+  "Rashi on Kiddushin 57a:1:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 57a:1:1",
+      "Rashi on Kiddushin 57a:1:2",
+      "Rashi on Kiddushin 57a:1:3",
+      "Rashi on Kiddushin 57a:1:4",
+      "Kiddushin 57a:1"
+    ],
+    "generatedAt": "2026-11-02T09:52:32.185Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי האי תנא</strong> - שפירש מלדורשן:"
+  },
+  "Rashi on Kiddushin 57a:1:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 57a:1:1",
+      "Rashi on Kiddushin 57a:1:2",
+      "Rashi on Kiddushin 57a:1:3",
+      "Rashi on Kiddushin 57a:1:4"
+    ],
+    "generatedAt": "2026-11-02T09:53:23.069Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היה דורש כל אתין שבתורה</strong> - לריבויא:"
+  },
+  "Rashi on Kiddushin 57a:1:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T09:53:55.075Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פירש</strong> - שירא לרבות שום דבר להשוותו למורא המקום:"
+  },
+  "Rashi on Kiddushin 57a:3:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 57a:3:1",
+      "Rashi on Kiddushin 57a:3:2",
+      "Rashi on Kiddushin 57a:3:3",
+      "Versions on Kiddushin 57a:3",
+      "Kiddushin 57a:3",
+      "Tosafot on Kiddushin 57a:3:1"
+    ],
+    "generatedAt": "2026-11-02T09:55:22.465Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג ועגלה ערופה מאימתי אמר רבי ינאי כו'</strong> - מאימתי נאסרת הואיל ואין דמיה קדושין לא קדושת מזבח ולא קדושת בדק הבית אלא היא עצמה לעריפה:"
+  },
+  "Rashi on Kiddushin 57a:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T09:56:01.132Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כפרה כתיב בה</strong> - כפר לעמך ישראל <span class=\"parenthesized\">(דברים כ״א:ח׳)</span>:"
+  },
+  "Rashi on Kiddushin 57a:3:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 57a:3:1",
+      "Rashi on Kiddushin 57a:3:2",
+      "Rashi on Kiddushin 57a:3:3",
+      "Rashi on Kiddushin 57a:4:1",
+      "Rashi on Kiddushin 57a:4:2",
+      "Rashi on Kiddushin 57a:4:3",
+      "Rashi on Kiddushin 57a:4:4"
+    ],
+    "generatedAt": "2026-11-02T09:57:19.434Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כקדשים</strong> - וקדשים אסורין בהנאה שהרי מועלין בהן <span class=\"parenthesized\">(ולא פרכינן אי מה קדש כו' דאין משיבין על ההיקש)</span>:"
+  },
+  "Rashi on Kiddushin 57a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T09:59:30.102Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צפורי מצורע</strong> - מכשירי בחוץ הן שהרי חוץ לעיר נעשית מצותה ולהכשיר את המצורע לבא במחנה:"
+  },
+  "Rashi on Kiddushin 57a:4:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 57a:4:1",
+      "Rashi on Kiddushin 57a:4:2",
+      "Rashi on Kiddushin 57a:4:3",
+      "Rashi on Kiddushin 57a:4:4"
+    ],
+    "generatedAt": "2026-11-02T09:59:57.604Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכשיר בפנים</strong> - אשם מצורע:"
+  },
+  "Rashi on Kiddushin 57a:4:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T10:00:50.242Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכפר בפנים</strong> - כל הקרבנות:"
+  },
+  "Rashi on Kiddushin 57a:4:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T10:01:11.743Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכפר בחוץ</strong> - עגלה ערופה:"
+  },
+  "Rashi on Kiddushin 57a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T10:01:38.216Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה בפנים עשה מכשיר כמכפר</strong> - לא חלק בין אשם מצורע לשאר אשמות:"
+  },
+  "Rashi on Kiddushin 57a:6:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 57a:6:2",
+      "Rashi on Kiddushin 57a:6:3"
+    ],
+    "generatedAt": "2026-11-02T10:02:29.430Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משעת שחיטה</strong> - נאסרת השחוטה והמשולחת מותרת כדלקמן:"
+  },
+  "Rashi on Kiddushin 57a:6:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 57a:6:1",
+      "Rashi on Kiddushin 57a:6:3"
+    ],
+    "generatedAt": "2026-11-02T10:03:03.626Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משעת לקיחה</strong> - נאסרות שתיהן עד שישלח המשולחת וניתרת בשילוחה:"
+  },
+  "Rashi on Kiddushin 57a:6:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 57a:6:1",
+      "Rashi on Kiddushin 57a:6:2"
+    ],
+    "generatedAt": "2026-11-02T10:03:39.360Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעגלה ערופה</strong> - מה התם מיתסרא מחיים כקדשים אף כאן מחיים:"
+  },
+  "Rashi on Kiddushin 57a:7:1": {
+    "dependsOn": [
+      "Kiddushin 57a:7"
+    ],
+    "generatedAt": "2026-11-02T10:05:38.753Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג ועגלה ערופה מאימתי אמר רבי ינאי כו'</strong> - מאימתי נאסרת הואיל ואין דמיה קדושין לא קדושת מזבח ולא קדושת בדק הבית אלא היא עצמה לעריפה:"
+  },
+  "Rashi on Kiddushin 57a:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T10:05:58.756Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גבול שמעתי בה ושכחתי</strong> - מאימת נאסרת:"
+  },
+  "Rashi on Kiddushin 57a:7:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 57a:7:1",
+      "Rashi on Kiddushin 57a:7:2",
+      "Rashi on Kiddushin 57a:7:3",
+      "Rashi on Kiddushin 57a:7:4",
+      "Tosafot on Kiddushin 57a:7:1"
+    ],
+    "generatedAt": "2026-11-02T10:06:58.591Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ירידתה לנחל איתן</strong> - היא הגורמת לה שם עריפה ואוסרתה:"
+  },
+  "Rashi on Kiddushin 57a:7:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 57a:7:1",
+      "Rashi on Kiddushin 57a:7:2",
+      "Rashi on Kiddushin 57a:7:3",
+      "Rashi on Kiddushin 57a:4:1",
+      "Rashi on Kiddushin 57a:6:1"
+    ],
+    "generatedAt": "2026-11-02T10:07:49.089Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא מי אית לה גבול אחרינא</strong> - וכיון דילפינן לה איסור מחיים ע\"כ קיחה היא דגרמא:"
+  },
+  "Rashi on Kiddushin 57a:8:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Kiddushin 57a:8:2",
+      "Rashi on Kiddushin 57a:1:1",
+      "Rashi on Kiddushin 57a:1:2"
+    ],
+    "generatedAt": "2026-11-02T10:10:07.459Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל</strong> - רבויא הוא:"
+  },
+  "Rashi on Kiddushin 57a:8:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 57a:8:1",
+      "Rashi on Kiddushin 57a:8:2",
+      "Rashi on Kiddushin 57a:8:3",
+      "Steinsaltz on Kiddushin 57a:8",
+      "Rashi on Kiddushin 57a:1:1",
+      "Rashi on Kiddushin 57a:1:2",
+      "Rashi on Kiddushin 57a:3:1",
+      "Rashi on Kiddushin 57a:4:1",
+      "Rashi on Kiddushin 57a:6:1"
+    ],
+    "generatedAt": "2026-11-02T10:11:43.727Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אשר</strong> - רבויא הוא:"
+  },
+  "Rashi on Kiddushin 57a:8:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 57a:8:1",
+      "Rashi on Kiddushin 57a:8:2",
+      "Rashi on Kiddushin 57a:8:4",
+      "Rashi on Kiddushin 56b:12:1"
+    ],
+    "generatedAt": "2026-11-02T10:13:19.366Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאחר שחיטה מיבעיא</strong> - ולמה לי קרא למיסרה בשלמא להיתרא דמשולחת איצטריך קרא אלא איסורא דשחוטה למה לי:"
+  },
+  "Rashi on Kiddushin 57a:8:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 57a:8:1",
+      "Rashi on Kiddushin 57a:8:2",
+      "Rashi on Kiddushin 57a:8:3",
+      "Rashi on Kiddushin 57a:8:4"
+    ],
+    "generatedAt": "2026-11-02T10:13:52.420Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואתיא שחיטה ומכשרה לה</strong> - עם שאר עבודות והא נמי תתכשר לאחר גמר מצותה:"
+  },
+  "Rashi on Kiddushin 57a:9:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 57a:8:1",
+      "Rashi on Kiddushin 57a:8:2",
+      "Rashi on Kiddushin 57a:7:1",
+      "Rashi on Kiddushin 57a:7:2",
+      "Rashi on Kiddushin 57a:7:3"
+    ],
+    "generatedAt": "2026-11-02T10:17:40.402Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טריפה</strong> - פסולה לטהרת מצורע דכתיב חיות <span class=\"parenthesized\">(ויקרא יד)</span>:"
+  },
+  "Rashi on Kiddushin 57a:9:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 57a:9:1",
+      "Kiddushin 57a:9",
+      "Rashi on Kiddushin 57a:9:3",
+      "Rashi on Kiddushin 57a:9:4",
+      "Rashi on Kiddushin 57a:9:5",
+      "Rashi on Kiddushin 57a:9:6",
+      "Tosafot on Kiddushin 57a:9:1"
+    ],
+    "generatedAt": "2026-11-02T10:19:26.008Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונמצאת טריפה</strong> - קס\"ד כשבדק בסימנים נמצאת שנטרפה בשחיטתה דאי נטרפה מעיקרא כגון ניקב קרום של מוח או שנחתכו רגליה לא שייך למיתני ונמצאת:"
+  },
+  "Rashi on Kiddushin 57a:9:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T10:19:53.699Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יקח זוג לשניה</strong> - אין צריך להביא שתים אחרות:"
+  },
+  "Rashi on Kiddushin 57a:9:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T10:20:28.737Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והראשונה מותרת בהנאה</strong> - דקס\"ד שחיטה היא דאסרה לה והא לאו שחיטה היא:"
+  },
+  "Rashi on Kiddushin 57a:9:5": {
+    "dependsOn": [
+      "Rashi on Kiddushin 57a:9:1",
+      "Rashi on Kiddushin 57a:9:2",
+      "Rashi on Kiddushin 57a:9:3",
+      "Rashi on Kiddushin 57a:9:4",
+      "Rashi on Kiddushin 57a:9:5",
+      "Rashi on Kiddushin 57a:9:6"
+    ],
+    "generatedAt": "2026-11-02T10:21:08.379Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:9:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמאי מותרת בהנאה</strong> - דילמא בשעת קיחה ראויה היתה והיכן הותר איסורה:"
+  },
+  "Rashi on Kiddushin 57a:9:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T10:21:29.838Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 57a:9:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנמצאת טריפה בבני מעים</strong> - דבשעת קיחה לא הויא חזיא ולא חל עלה איסור:"
+  },
+  "Tosafot on Kiddushin 57a:12:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 57a:12:1",
+      "Rashi on Kiddushin 57a:12:2",
+      "Tosafot on Keritot 25a:11:1"
+    ],
+    "generatedAt": "2026-11-02T10:30:10.333Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 57a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנאי היא נאמר מכשיר כו' אף מכשיר האמור בחוץ עשה בו מכשיר כמכפר</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> מכשיר היינו ציפורי מצורע ומכפר עגלה ערופה תימה דהכא משמע דילפינן ציפורים דאסורים בהנאה מעגלה ערופה ובכריתות <span class=\"parenthesized\">(דף כה.)</span> משמע דילפינן עגלה ערופה מציפורים ויש לומר דמעיקרא צריך למילף ציפורים מעגלה ערופה דמה עגלה ערופה אסורה לכל הפחות משעת עריפה אף ציפור דמשולחת אסורה לכל הפחות איסור דשייך בה והיינו על כרחך מחיים קודם שנשתלחה וכיון דאשכחן איסור מחיים במשולחת אם כן שפיר יליף התם עגלה ערופה דנאסרת מחיים מציפור המשולחת ואחר כך ילפינן ציפור השחוטה דנאסרה אף מחיים דהיינו משעת לקיחה מעגלה ערופה:"
+  },
+  "Tosafot on Kiddushin 57a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T09:58:44.170Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 57a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כפרה כתיב בה כקדשים</strong> - דכתיב <span class=\"parenthesized\">(דברים כא)</span> כפר לעמך ישראל וקדשים אסורין בהנאה שהרי מועלין בהן תימה דבכריתות <span class=\"parenthesized\">(דף ו.)</span> מפיק ליה מוערפו שם שם תהא קבורתה וי\"ל דתרוייהו צריכי דאי משום כפרה ה\"א דוקא מחיים אסורה בהנאה כמו קדשים אבל לאחר עריפה מותרת כיון שנעשית מצותה להכי אצטריך וערפו שם ואי מוערפו שם לחוד ה\"א דוקא לאחר עריפה אסורה בהנאה אבל מחיים לא להכי אצטריך כפרה אי נמי יש לומר דהא דקאמר הכא כפרה כתיב בה לא עיקר דרשא היא דהא איצטריך לדרשה אחריתי כדאמרינן בפ' קמא דחולין <span class=\"parenthesized\">(דף יא.)</span> דילמא טריפה היא וכי תימא מאי נפקא לן מינה כפרה כתיב בה כקדשים אלא עיקר דרשה דהכא הוי מוערפו שם.:"
+  },
+  "Tosafot on Kiddushin 57a:6:1": {
+    "dependsOn": [
+      "Kiddushin 57a:7",
+      "Kiddushin 57a:8"
+    ],
+    "generatedAt": "2026-11-02T10:04:49.936Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 57a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משעת שחיטה</strong> - פי' ומשולחת נמי תיאסר משחיטת חבירתה עד השילוח ואין לפרש משעת שחיטה בשחוטה ובמשולחת ליכא איסור כלל דהא תנא צפורי מצורע דמשמע תרוייהו:"
+  },
+  "Tosafot on Kiddushin 57a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T10:08:22.439Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 57a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי אית ליה גבול אחרינא</strong> - דאין לומר הבאת ציפורים כמו הורדת עגלה ערופה דהא הורדת עגלה ערופה כתיב בפרשה <span class=\"parenthesized\">(דברים כ״א:ג׳)</span> והורידו זקני העיר את העגלה אבל הבאת ציפורים לא כתיב אבל לקיחה כתיבה דכתיב <span class=\"parenthesized\">(ויקרא יד)</span> ולקח למטהר:"
+  },
+  "Tosafot on Kiddushin 57a:8:1": {
+    "dependsOn": [
+      "Kiddushin 57a:6",
+      "Kiddushin 57a:7",
+      "Tosafot on Kiddushin 57a:6:1",
+      "Tosafot on Kiddushin 57a:7:1",
+      "Kiddushin 57a:9",
+      "Rashi on Kiddushin 57a:8:1",
+      "Rashi on Kiddushin 57a:8:2",
+      "Rashi on Kiddushin 57a:8:3",
+      "Rashi on Kiddushin 57a:8:4"
+    ],
+    "generatedAt": "2026-11-02T10:15:54.643Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 57a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וזה אשר לא תאכלו לרבות השחוטה</strong> - וא\"ת להך תנא איסור הנאה מנא ליה אליבא דחזקיה דאמר לא תאכלו לא משמע איסור הנאה וי\"ל דגמרי איסור משולחת משחוטה מה שחוטה אסורה אף משולחת אסורה ואיסור דמשולחת הנאה הוא דמחיים לא שייך אכילה:"
+  },
+  "Tosafot on Kiddushin 57a:9:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 57a:9:1",
+      "Rashi on Kiddushin 57a:9:2",
+      "Rashi on Kiddushin 57a:9:3",
+      "Rashi on Kiddushin 57a:9:4",
+      "Maharshal on Kiddushin 57a:5"
+    ],
+    "generatedAt": "2026-11-02T10:24:56.811Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 57a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שחטה ונמצאת טריפה</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> דקס\"ד כשבדק בסימנין נמצאת שנטרפה בשחיטה כגון שנקב הוושט דאי נטרפה מעיקרא כגון ניקב קרום או נחתכו רגליה לא שייך למיתני נמצאת והיינו דקאמר גמרא אמאי מותרת בהנאה כלומר איסור שבה היכן הלך ומשני שנמצאת טריפה בבני מעים ולא חל בשעת שחיטה אלא מקודם שחיטה ולהכי מוקי לה בטרפות דבני מעיים דאי הוה מוקי לה בטרפות שבחוץ וקודם שחיטה לא הוה קרי ליה נמצאת אלא השוחט טריפה אבל בטרפות דבני מעיים נקרא שפיר נמצאת שהרי אינו נראה וקשה כי נמי נמצאת טריפה שנקבו הדקין שמא הטרפות בא אחר הלקיחה וא\"כ אמאי מותרת תאסר מספק לכנ\"ל דמעיקרא ס\"ד שוחט ונמצאת טריפה כגון שנקבו הדקין ופריך אמאי מותרת שמא אחר לקיחה היה ומשני שנמצאת טריפה בבני מעיים כגון שניטל הכבד או טרפות אחרת שודאי היה משנולד:"
+  }
+}

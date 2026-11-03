@@ -1,0 +1,413 @@
+{
+  "Rashi on Kiddushin 29a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T15:35:19.007Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 29a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף להשיטו בנהר</strong> - שמא יפרוש בספינה ותטבע ויסתכן אם אין יודע לשוט:"
+  },
+  "Rashi on Kiddushin 29a:10:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 29a:10:1",
+      "Rashi on Kiddushin 29a:10:3"
+    ],
+    "generatedAt": "2026-11-01T15:36:29.098Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 29a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליסטות ס\"ד</strong> - והלא ישב ולא למדו כלום:"
+  },
+  "Rashi on Kiddushin 29a:10:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T15:36:47.828Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 29a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כאילו מלמדו ליסטות</strong> - דכיון דאין לו אומנות ויחסר לחמו ילך בפרשת דרכים וילסטם את הבריות:"
+  },
+  "Rashi on Kiddushin 29a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T15:37:05.652Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 29a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיחייב איהו</strong> - כשיגדל:"
+  },
+  "Rashi on Kiddushin 29a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T15:37:27.471Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 29a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כאשר צוה אותו</strong> - ולא את שרה:"
+  },
+  "Rashi on Kiddushin 29a:13:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 29a:13:2",
+      "Kiddushin 29a:12"
+    ],
+    "generatedAt": "2026-11-01T15:38:53.027Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 29a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אשכחן מיד</strong> - לאברהם נאמר כן:"
+  },
+  "Rashi on Kiddushin 29a:13:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 29a:13:1"
+    ],
+    "generatedAt": "2026-11-01T15:39:31.806Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 29a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינו אלא לשון זירוז</strong> - שיהא מהיר וזריז בדבר ונוהג מיד ונוהג לדורות:"
+  },
+  "Rashi on Kiddushin 29a:16:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 29a:16:2",
+      "Rashi on Kiddushin 29a:6:1",
+      "Rashi on Kiddushin 29a:7:1",
+      "Kiddushin 29a:6"
+    ],
+    "generatedAt": "2026-11-01T15:40:55.975Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 29a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיהי מנלן דלא מיפקדא</strong> - איהי אמו מנין שאינה מצווה לפדות את בנה דכיון דמצות עשה שלא הזמן גרמא הוא בעי קרא למעוטה:"
+  },
+  "Rashi on Kiddushin 29a:16:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T15:41:14.415Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 29a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לפדות את עצמו</strong> - כשהוא בכור ולא פדאו אביו:"
+  },
+  "Rashi on Kiddushin 29a:17:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 29a:16:1",
+      "Rashi on Kiddushin 29a:16:2",
+      "Rashi on Kiddushin 29a:17:2",
+      "Rashi on Kiddushin 29a:17:3",
+      "Chokhmat Shlomo on Kiddushin 29a:3",
+      "Tosafot on Kiddushin 29a:17:1"
+    ],
+    "generatedAt": "2026-11-01T15:42:04.142Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 29a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיהי מנלן דלא מיחייבה</strong> - נהי דאביה אינו מצווה לפדותה דכתיב בכור בניך אימא איהי תפדה נפשה לכשתגדל דהא קרינן ביה תפדה אלמא מצוה אברא נמי רמיא והך מצות עשה שאין הזמן גרמא היא:"
+  },
+  "Rashi on Kiddushin 29a:17:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 29a:17:1",
+      "Rashi on Kiddushin 29a:17:2",
+      "Rashi on Kiddushin 29a:17:3",
+      "Kiddushin 29a:7",
+      "Kiddushin 29a:8",
+      "Kiddushin 29a:15",
+      "Kiddushin 29a:16",
+      "Rashi on Kiddushin 29a:16:1",
+      "Rashi on Kiddushin 29a:16:2",
+      "Maharsha: Chidushei Halachot on Kiddushin 29a:1",
+      "Tosafot on Kiddushin 29a:17:1"
+    ],
+    "generatedAt": "2026-11-01T15:44:12.323Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 29a:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תיפדה תפדה כו'</strong> - כלומר קרי ביה תפדה:"
+  },
+  "Rashi on Kiddushin 29a:17:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 29a:17:1",
+      "Rashi on Kiddushin 29a:17:2"
+    ],
+    "generatedAt": "2026-11-01T15:44:57.148Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 29a:17:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל שאחרים כו'</strong> - האב:"
+  },
+  "Rashi on Kiddushin 29a:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T15:47:09.562Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 29a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוא לפדות</strong> - שלא פדאו אביו:"
+  },
+  "Rashi on Kiddushin 29a:1:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 29a:1:1",
+      "Rashi on Kiddushin 29a:1:2",
+      "Kiddushin 29a:1"
+    ],
+    "generatedAt": "2026-11-01T15:18:57.871Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 29a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד שימשוך</strong> - בשור:"
+  },
+  "Rashi on Kiddushin 29a:1:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 29a:1:1",
+      "Rashi on Kiddushin 29a:1:2",
+      "Rashi on Kiddushin 29a:1:3"
+    ],
+    "generatedAt": "2026-11-01T15:19:37.462Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 29a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויחזיק</strong> - בבית:"
+  },
+  "Rashi on Kiddushin 29a:1:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T15:20:07.409Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 29a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משכו</strong> - הדיוט חפץ של הקדש מיד הגזבר במנה:"
+  },
+  "Rashi on Kiddushin 29a:1:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T15:20:25.693Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 29a:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא הספיק לפדותו</strong> - כלומר לתת דמיו לגזבר:"
+  },
+  "Rashi on Kiddushin 29a:1:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T15:20:46.106Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 29a:1:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נותן מאתים</strong> - דכי אייקר ברשות הקדש אייקר הואיל ולא נתן המעות:"
+  },
+  "Rashi on Kiddushin 29a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T15:21:13.262Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 29a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא יהא כח הדיוט כו'</strong> - שאם משכו מיד הדיוט ישלם כל מעותיו דקנאו במשיכה וברשותו הוא דזל:"
+  },
+  "Rashi on Kiddushin 29a:3:1": {
+    "dependsOn": [
+      "Kiddushin 29a:3",
+      "Rashi on Kiddushin 28b:13:1",
+      "Rashi on Kiddushin 28b:14:1",
+      "Rashi on Kiddushin 29a:1:1",
+      "Rashi on Kiddushin 29a:2:1",
+      "Rashi on Kiddushin 29a:3:1",
+      "Kiddushin 29a:1",
+      "Rashi on Kiddushin 28a:1:1",
+      "Rashi on Kiddushin 28a:2:1",
+      "Rashi on Kiddushin 28a:3:1"
+    ],
+    "generatedAt": "2026-11-01T15:24:03.090Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 29a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פדאו</strong> - נתן את המעות:"
+  },
+  "Rashi on Kiddushin 29a:6:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 29a:6:1",
+      "Rashi on Kiddushin 29a:6:2"
+    ],
+    "generatedAt": "2026-11-01T15:27:28.252Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 29a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל מצות האב כו'</strong> - בגמ' מפרש לכולה מתני':"
+  },
+  "Rashi on Kiddushin 29a:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T15:27:58.978Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 29a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהזמן גרמא</strong> - שהזמן גורם לה שתבא:"
+  },
+  "Rashi on Kiddushin 29a:7:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 29a:7:2",
+      "Rashi on Kiddushin 29a:7:3"
+    ],
+    "generatedAt": "2026-11-01T15:28:37.138Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 29a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חוץ מבל תקיף</strong> - פאת הראש:"
+  },
+  "Rashi on Kiddushin 29a:7:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 29a:7:1",
+      "Rashi on Kiddushin 29a:7:3"
+    ],
+    "generatedAt": "2026-11-01T15:29:19.170Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 29a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובל תשחית</strong> - פאת זקן:"
+  },
+  "Rashi on Kiddushin 29a:7:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 29a:7:1",
+      "Rashi on Kiddushin 29a:7:2"
+    ],
+    "generatedAt": "2026-11-01T15:30:11.452Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 29a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובל תטמא</strong> - דכהנים:"
+  },
+  "Rashi on Kiddushin 29a:8:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 29a:8:2"
+    ],
+    "generatedAt": "2026-11-01T15:31:34.629Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 29a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי נימא דמיחייב ברא למיעבד לאבא</strong> - והכי משמע כל מצות שהבן מצווה על אביו נשים פטורות בתמיה:"
+  },
+  "Rashi on Kiddushin 29a:8:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 29a:8:1"
+    ],
+    "generatedAt": "2026-11-01T15:32:12.535Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 29a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איש אמו ואביו תיראו הרי כאן שנים</strong> - לשנים הוא אומר:"
+  },
+  "Rashi on Kiddushin 29a:9:1": {
+    "dependsOn": [
+      "Kiddushin 29a:9"
+    ],
+    "generatedAt": "2026-11-01T15:34:53.127Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 29a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המוטלות <span class=\"parenthesized\">(עליו)</span> על האב</strong> - כגון הנך דמפרש בברייתא ללמדו תורה ולמולו ולפדותו בה' סלעים אם בכור הוא ולהשיאו אשה וכולה יליף ואזיל מקראי:"
+  },
+  "Tosafot on Kiddushin 29a:12:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Tosafot on Kiddushin 29a:12:1"
+    ],
+    "generatedAt": "2026-11-01T15:38:14.135Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 29a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אותו ולא אותה</strong> - וא\"ת למ\"ל קרא תיפוק ליה דמצות עשה שהזמן גרמא הוא שנימול בשמיני ללידתו ונשים פטורות וי\"ל כיון דמיום השמיני והלאה אין לה הפסק לאו זמן גרמא הוא וא\"ת אכתי מ\"ע שהזמן גרמא הוא דאין מלין אלא ביום כדאיתא בפרק הערל <span class=\"parenthesized\">(יבמות דף עב.)</span> וי\"ל דאתיא כמ\"ד התם דמילה שלא בזמנה נוהגת בין ביום בין בלילה:"
+  },
+  "Tosafot on Kiddushin 29a:17:1": {
+    "dependsOn": [
+      "Kiddushin 29a:17",
+      "Rashi on Kiddushin 29a:17:1",
+      "Rashi on Kiddushin 29a:17:2",
+      "Rashi on Kiddushin 29a:17:3",
+      "Torah Temimah on Torah, Exodus 34:20:5",
+      "Maharsha on Kiddushin 29a:16:1"
+    ],
+    "generatedAt": "2026-11-01T15:46:45.250Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 29a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיהי מנא לן דלא מיחייבה למיפרק נפשה דכתיב תפדה תיפדה</strong> - ואם תאמר תיפוק ליה משום דכתיב כל בכור בניך תפדה דמשמע בניך ולא בנותיך ויש לומר דס\"ד בכור בניך אב חייב לפדות ולא נקבה אבל הנקבה תפדה עצמה להכי איצטריך להאי קרא:"
+  },
+  "Tosafot on Kiddushin 29a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T15:22:07.095Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 29a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משכו במאתים ולא הספיק וכו' נותן מאתים מ\"ט לא יהא כח הדיוט חמור מהקדש</strong> - וא\"ת תיפוק ליה מטעם דאמירתו לגבוה כמסירתו להדיוט וכיון דמשכו במאתים אינו יכול לחזור בו וי\"ל כיון דבטעות היה כמו הכא שלא היה סבור שישתנה השער לא הוי כמסירה להדיוט וקשה דאמר בפרק יש נוחלין <span class=\"parenthesized\">(ב\"ב דף קלג:)</span> גבי בנו של יוסף בן יועזר דאשכח מרגניתא אמרה ליה דביתהו זיל מוכרה לגזבר דהקדש ולא תשיימא את דאמירה לגבוה כמסירה להדיוט ואמאי הא שומא בטעות הוא אם יאמר לתתה פחותה משויה וי\"ל בדבר שאין שומתו ידועה כגון מרגניתא גומר בדעתו אפי' תשווה יותר שהרי כמו כן מסופק שמא שוה פחות א\"נ י\"ל דהתם כששם אותה בפחות משוויה מתכווין לוותר להקדש א\"כ שייך לומר אמירתו לגבוה כמסירתו להדיוט אבל הכא לא נתכוין לוותר כלל כשמשכו במאתים שכך היה שוה באותה שעה ולא שייך אמירתו לגבוה כמסירה להדיוט:"
+  },
+  "Tosafot on Kiddushin 29a:5:1": {
+    "dependsOn": [
+      "Kiddushin 29a:5",
+      "Gittin 52a:18",
+      "Gittin 52a:19",
+      "Gittin 52a:20",
+      "Gittin 52a:21",
+      "Rashi on Gittin 52a:20:1",
+      "Gittin 52a:22",
+      "Gittin 52a:23",
+      "Gittin 52a:24"
+    ],
+    "generatedAt": "2026-11-01T15:26:39.287Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 29a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אטו הדיוט לאו במי שפרע קאי</strong> - וכיון דהדיוט אינו יכול לחזור בו בלא מי שפרע היכא דיהיב לו דמי כמו כן הקדש לא יחזור בו וקשה דאמר פרק הניזקין <span class=\"parenthesized\">(גיטין ד' נב.)</span> דיתמי הרי הן כהקדש ולא מיקנו אלא בכספים דקא יהיב דמי ליתמי אפירי וזל אין לוקח יכול לחזור בו אייקור יתמי יכלו לחזור בהם שלא יהא כח הדיוט חמור מכח הקדש ואמאי והא בהדיוט נמי איכא במי שפרע וי\"ל דלא דמי דהתם גבי יתמי מדאורייתא דינם כהדיוט וא\"כ אינם קונים בלא משיכה אלא שייפו חכמים כחם לעשות כהקדש שיהו קונים בכסף הילכך במקום הפסדם של יתומים אוקימנא אדינא אע\"ג דהדיוט קאי במי שפרע כדי שלא יהיה כח הדיוט מרובה משלהן ולא יבואו לידי הפסד ע\"י תקנת חכמים כי לולי התקנה היו חוזרים בהם אפי' קבלו המעות כיון שלא משך אבל הקדש דמדאורייתא הוא דמקני בכספא אבל רבנן תקנו משיכה להרויחן שלא יהא כח הדיוט חמור מכח הקדש וכיון דהדיוט אינו יכול לחזור בו אלא א\"כ מקבל עליו מי שפרע נוקמיה אדיניה בכסף ולא יוכל הקדש לחזור בו כלל כיון שקיבל הכסף:"
+  }
+}

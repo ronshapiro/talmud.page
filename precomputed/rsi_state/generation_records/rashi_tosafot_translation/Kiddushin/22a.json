@@ -1,4 +1,34 @@
 {
+  "Rashi on Kiddushin 22a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T08:33:30.229Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוא ובניו עמו</strong> - על כרחיך בבני ישראלית דאי בבני כנענית האשה וילדיה כתיב <span class=\"parenthesized\">(שמות כ״א:ד׳)</span>:"
+  },
+  "Rashi on Kiddushin 22a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T08:33:51.532Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלאו בני מיעבד ומיכל נינהו</strong> - שקטנים הם:"
+  },
+  "Rashi on Kiddushin 22a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T08:34:08.686Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאהדורי</strong> - לחזר על הפתחים לפי שהיא בושה:"
+  },
   "Rashi on Kiddushin 22a:1:1": {
     "costUsd": 0.0550064,
     "dependsOn": [],
@@ -64,5 +94,134 @@
       "Rashi on Kiddushin 22a:2:3"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">שלא ילחצנה במלחמה</strong> - לבא עליה:"
+  },
+  "Rashi on Kiddushin 22a:3:1": {
+    "dependsOn": [
+      "Translation on Rashi on Kiddushin 22a:3:1",
+      "Rashi on Kiddushin 22a:1:1",
+      "Rashi on Kiddushin 22a:1:2",
+      "Rashi on Kiddushin 22a:1:3",
+      "Rashi on Kiddushin 22a:2:1",
+      "Rashi on Kiddushin 22a:2:2",
+      "Rashi on Kiddushin 22a:2:3",
+      "Rashi on Kiddushin 22a:5:1"
+    ],
+    "generatedAt": "2026-11-01T08:26:11.858Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22a:3:1"
+    ],
+    "sourceText": "ה\"ג להאי ברייתא בספרי בפ' ראה אנכי ואם אמר יאמר עד שיאמר וישנה אמר בתחילת שש ולא אמר בסוף שש אינו נרצע שנאמר לא אצא חפשי עד שיאמר בשעת יציאה אמר בסוף שש ולא אמר בתחילת שש אינו נרצע שנאמר אם אמר יאמר העבד עד שיאמר כשהוא עבד. והכי פירושה אמר ושנה שתי האמירות בתחילת שש ולא אמר בסוף שש אינו נרצע שנאמר לא אצא משמע סמוך ליציאה אמר שתי פעמים בסוף שש כו' עד שיאמר כשהוא עבד:"
+  },
+  "Rashi on Kiddushin 22a:5:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Kiddushin 22a:5:1",
+      "Kiddushin 22a:5",
+      "Rashi on Kiddushin 22a:6:1",
+      "Rashi on Kiddushin 22a:6:2",
+      "Rashi on Kiddushin 22a:1:1",
+      "Rashi on Kiddushin 22a:3:1"
+    ],
+    "generatedAt": "2026-11-01T08:28:34.427Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22a:5:1"
+    ],
+    "sourceText": "ה\"ג אמר מר אמר בתחילת שש כו' מאי איריא מלא אצא חפשי תיפוק ליה דבעינן כו' ותו אמר בסוף ולא אמר בתחילת שש אינו נרצע שנא' העבד אטו סוף שש לאו עבד הוא. והכי פירושה אמר בתחילת שש כו' קס\"ד תחילת שש ממש תיפוק ליה דבעינן אהבתי את אשתי ואת בני ועדיין בתחילת שש אין לו אשה ובנים שלא מסרו לו עדיין שפחה כנענית:"
+  },
+  "Rashi on Kiddushin 22a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T08:28:54.019Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אטו סוף שש לאו עבד הוא</strong> - יום אחרון נקרא סוף שש וכל היום הוא עבד:"
+  },
+  "Rashi on Kiddushin 22a:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T08:31:20.008Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג אמר רבא בתחילת פרוטה אחרונה בסוף פרוטה אחרונה</strong> - ול\"ג לא קשיא ול\"ג כאן. והכי פירושו כל תחילת שש דקתני כשמגיע להתחיל לסוף פרוטה אחרונה לפי חשבון גרעונה שעדיין עליו שוה פרוטה דהוי דמי עבד וכל סוף שש <span class=\"parenthesized\">(פרוטה אחרונה)</span> מאחר שהתחיל בה נקרא סוף דלאו עבד הוא דאין עליו שוה פרוטה וה\"ק אמר בתחילת שש קודם פרוטה אחרונה דכבר יש לו אשה ובנים ולא בסוף שש לאחר שהתחיל פרוטה אחרונה אינו נרצע ואפי' אמר ושנה דכתיב לא אצא חפשי סמוך ליציאה וכל זמן שיש עליו פרוטה שלימה לאו סמוך ליציאה הוא אי אמר ושנה בסוף פרוטה אחרונה ולא אמר בתחילת פרוטה אחרונה אינו נרצע שנאמר אם יאמר העבד עד שיאמר כשהוא עבד ובלשון אחרת גירסא זו בפי כל ואיני יכול להעמידה שהרבה תשובות בה וזה הלשון אמר יאמר עד שיאמר וישנה העבד עד שיאמר כשהוא עבד אמר בתחילת שש ולא אמר בסוף שש אינו נרצע שנאמר אם אמר יאמר אמר בסוף שש ולא אמר בתחילת שש אינו נרצע שנאמר לא אצא חפשי והכי פירושו אמר בתחילת שש פעם אחת ולא חזר ואמר בסוף שש אינו נרצע דבעינן אמר יאמר שתי אמירות אמר בסוף שש ולא אמר בתחילת שש אינו נרצע שנאמר לא אצא חפשי וזה כבר יצא השתא קשיא לי טובא הא נמי תיפוק לי מאמר יאמר דהא לא אמר ושנה ואם באת לפרש אמר בסוף שש שתי פעמים א\"כ לא דמיא לרישא דאי אומר בתחילת שש שתי פעמים מנא ליה דאינו נרצע ועוד מה לי דשבקיה לדרשה קמייתא דדריש העבד עד שיאמר כשהוא עבד ונקיט ליה קרא אחרינא מלא אצא והרי כבר יצא תיפוק ליה מהעבד:"
+  },
+  "Rashi on Kiddushin 22a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T08:31:42.079Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לו אשה ובנים</strong> - שפחה כנענית שנמסרה לו וילדה לו:"
+  },
+  "Rashi on Kiddushin 22a:8:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 22a:8:2",
+      "Rashi on Kiddushin 22a:7:1"
+    ],
+    "generatedAt": "2026-11-01T08:32:21.699Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי טוב לו</strong> - פרט לחולה:"
+  },
+  "Rashi on Kiddushin 22a:8:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 22a:8:1",
+      "Rashi on Kiddushin 22a:8:2"
+    ],
+    "generatedAt": "2026-11-01T08:33:06.415Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי טוב לו</strong> - פרט לחולה:"
+  },
+  "Tosafot on Kiddushin 22a:2:1": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 22a:2:1",
+      "Tosafot on Kiddushin 22a:2:2"
+    ],
+    "generatedAt": "2026-11-01T08:20:23.763Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 22a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג שלא יקחנה לאביו ולא לבנו</strong> - ול\"ג שתים אחת לו ואחת לאביו או אחת לו ואחת לבנו דמאי איריא שתים אפילו אחת לאביו נמי הוי איסור דהא לך דרשינן:"
+  },
+  "Tosafot on Kiddushin 22a:2:2": {
+    "dependsOn": [
+      "Translation on Tosafot on Kiddushin 22a:2:2",
+      "Kiddushin 21b:8-22a:3",
+      "Kiddushin 21b:11",
+      "Kiddushin 21b:12",
+      "Kiddushin 22a:1",
+      "Kiddushin 22a:2",
+      "Kiddushin 21b:13",
+      "Kiddushin 21b:14",
+      "Kiddushin 21b:17",
+      "Kiddushin 21b:18",
+      "Rashi on Kiddushin 22a:2:1",
+      "Rashi on Kiddushin 22a:2:2",
+      "Rashi on Kiddushin 22a:2:3"
+    ],
+    "generatedAt": "2026-11-01T08:23:42.171Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 22a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא ילחצנה במלחמה</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> לבוא עליה משמע מתוך פירושו דבמלחמה אסור לבוא עליה כל עיקר ואפילו ביאה ראשונה אינו מותר עד לאחר כל המעשים ותימה א\"כ מאי קאמר לא דברה תורה אלא כנגד יצר הרע כיון דבמלחמה אסור עד שיבא לביתו ולאחר כל המעשים היאך נתפייס יצרו בכך אכתי איכא יצר הרע במלחמה ובביתו עד ירח ימים ועוד קשה אמאי קרי לה בשר תמותות כיון שנתגיירה ועוד קשה מהא דאמר בפ' ב' דסנהדרין <span class=\"parenthesized\">(דף כא.)</span> תמר בת יפת תואר היתה ולפיכך היתה מותרת לאמנון כדכתיב דבר עלי אל המלך כי לא ימנעני ממך ואם לא בא דוד על מעכה אם תמר עד לאחר כל המעשים היאך היתה מותרת לאמנון והרי אחותו מאביו היתה שהרי אם תמר לאחר כל המעשים חשובה גיורת וליקוחין יש לו בה דבשלמא אם נפרש דיפת תואר מותרת מיד שפיר <span class=\"parenthesized\">(דמי)</span> מאי דקאמרה תמר כי לא ימנעני ממך לפי שהיתה מותרת לו דאיכא למימר שנתעברה אמה במלחמה שעדיין היתה אמה עובדת כוכבים וזו אינה חשובה כבתו של דוד דאין בן הבא מן העובדת כוכבים קרוי בנך אלא בנה דולד עובדת כוכבים כמותה אבל לפירוש <span class=\"rashi-quotation\">הקונטרס</span> שלא בא עליה עד לאחר כל המעשים קשה כדפירשתי ונראה לר\"ת דביאה ראשונה מותרת במלחמה אבל ביאה שניה אסורה עד שתהא בביתו גיורת [והא דקאמר שלא ילחצנה כו' היינו להתחיל למנות ירח ימים דאין יכול לדוחקה לעשות סדר הפרשה עד שתהיה בביתו] ויש מיישבים פירוש <span class=\"rashi-quotation\">הקונטרס</span> ולא קשה מידי מה שהקשה איך נתפייס יצרו דאיכא למימר דבטל הימנו יצר הרע כיון שיש לו פת בסלו שסופה להיות מותרת לו לאחר כל המעשים ומה שהקשה אמאי קרי לה בשר תמותות כיון שנתגיירה הא נמי לא קשה דאיכא למימר לפי שמגיירה בע\"כ ואינה גיורת גמורה קרי לה בשר תמותות ומה שהקשה מתמר לא קשה דאיכא למימר דתמר לא היתה בת דוד אלא מקודם לכן היתה אמה מעוברת והא דכתיב <span class=\"parenthesized\">(שמואל ב י״ג:י״ח)</span> כן תלבשנה בנות המלך מעילים לא משום שהיתה בתו אלא לפי שגדלה בביתו של דוד עם בנות המלך אך אין לתרץ שפיר לפירוש <span class=\"rashi-quotation\">הקונטרס</span> מה חילוק בין ביאה ראשונה לשניה דמחלק גמרא לעיל ומיהו אומר ר\"י דבירושלמי מצינו מחלוקת אמוראים בדבר זה והכי איתא התם רב אמר לא התיר אלא ביאה ראשונה ואני אומר לא ביאה שניה ולא ראשונה הותרה אלא לאחר כל המעשים כדכתיב ואחר כן תבא אליה ובעלתה:"
   }
 }

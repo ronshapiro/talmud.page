@@ -1,0 +1,417 @@
+{
+  "Rashi on Kiddushin 67a:10:1": {
+    "dependsOn": [
+      "Kiddushin 67a:10",
+      "Rashi on Kiddushin 67a:10:1",
+      "Rashi on Kiddushin 67a:10:2",
+      "Rashi on Kiddushin 67a:10:3"
+    ],
+    "generatedAt": "2026-11-02T21:14:31.619Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 67a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתגיירו</strong> - דיש קידושין ואין עבירה:"
+  },
+  "Rashi on Kiddushin 67a:10:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 67a:10:1",
+      "Rashi on Kiddushin 67a:10:2",
+      "Rashi on Kiddushin 67a:10:3",
+      "Kiddushin 67a:10",
+      "Rashi on Kiddushin 67a:7:1",
+      "Rashi on Kiddushin 67a:7:2"
+    ],
+    "generatedAt": "2026-11-02T21:16:01.167Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 67a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הולד הולך אחר הפגום</strong> - כדלקמן בשמעתין ומתניתין תני הולד הולך אחר הזכר:"
+  },
+  "Rashi on Kiddushin 67a:10:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 67a:10:1",
+      "Rashi on Kiddushin 67a:10:2",
+      "Kiddushin 67a:9",
+      "Kiddushin 67a:10"
+    ],
+    "generatedAt": "2026-11-02T21:17:15.387Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 67a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנא איזו זו</strong> - דרישא למעוטי ולאשמועינן דמתני' לא כללא כייל ומרישא דמילתיה דרבין ליכא לאקשויי למימר ונתנייה במתניתין גבי הולד הולך אחר הזכר דמתניתין ביש קידושין מיירי והני דלא נתגיירו אין כאן קידושין:"
+  },
+  "Rashi on Kiddushin 67a:11:1": {
+    "dependsOn": [
+      "Kiddushin 67a:11",
+      "Rashi on Kiddushin 67a:11:2",
+      "Rashi on Kiddushin 67a:11:3"
+    ],
+    "generatedAt": "2026-11-02T21:18:11.536Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 67a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האי מאי</strong> - אסוגיא דשמעתין פריך דשנינן לעיל ואי בעית אימא רבי יוסי היא אי אמרת בשלמא רבי יהודה היא דאמר גר אסור בממזרת לפיכך בנו הולך אחר הפגום כדין כל מקום שיש קידושין ויש עבירה איכא לתרוצי כל מקום דמתניתין לאתויי מאי ואיזו זו למעוטי מאי כל מקום דרישא לאתויי ישראל שנשא חללה דבתו כשרה דהולד הולך אחר הזכר:"
+  },
+  "Rashi on Kiddushin 67a:11:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 67a:11:1",
+      "Rashi on Kiddushin 67a:11:2",
+      "Rashi on Kiddushin 67a:11:3"
+    ],
+    "generatedAt": "2026-11-02T21:18:59.553Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 67a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודרבה בר בר חנה</strong> - מצרי שני שנשא מצרית ראשונה דיש קידושין ואין עבירה לפיכך הולד שלישי:"
+  },
+  "Rashi on Kiddushin 67a:11:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 67a:11:1",
+      "Rashi on Kiddushin 67a:11:2"
+    ],
+    "generatedAt": "2026-11-02T21:19:47.296Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 67a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיזו זו למעוטי דרב דימי ודרבין</strong> - כלומר ואיזו זו דרישא דמשמע אבל בעלמא לא אזיל אחר הזכר אי ס\"ל כרב דימי דאף מצרי שני שנשא מצרית ראשונה בנה שני אשמועינן איזו זו דמתניתין למעוטי הא דלא אזיל בתר זכר וכל מקום דרישא לא תיתי אלא ישראל שנשא חללה וכדרבין דאמר נתגיירו הלך אחר הפגום ולא אזיל אחר זכר ואף על גב דאין עבירה ואי ס\"ל כרבה בר בר חנה מייתינן ליה מכל מקום דרישא ואיזו זו למעוטי דרבין לחודא:"
+  },
+  "Rashi on Kiddushin 67a:1:1": {
+    "dependsOn": [
+      "Kiddushin 73a:1"
+    ],
+    "generatedAt": "2026-11-02T20:43:22.284Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 67a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גר שנשא ממזרת דיש קידושין ואין עבירה</strong> - דגר מותר בממזרת לר' יוסי דאמר קהל גרים לא מקרי קהל לקמן בפרק בתרא <span class=\"parenthesized\">(קידושין דף עג.)</span>:"
+  },
+  "Rashi on Kiddushin 67a:2:1": {
+    "dependsOn": [
+      "Kiddushin 67a:2",
+      "Rashi on Kiddushin 67a:2:2"
+    ],
+    "generatedAt": "2026-11-02T20:46:51.413Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 67a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונתנייה</strong> - גבי קידושין ויש עבירה במתני' בהדי אלמנה לכ\"ג:"
+  },
+  "Rashi on Kiddushin 67a:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T20:47:12.304Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 67a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל מקום דסיפא</strong> - דיש קידושין ויש עבירה כל מקום כללא משמע לאתויי הך דלא פריש לה בהדיא:"
+  },
+  "Rashi on Kiddushin 67a:3:1": {
+    "dependsOn": [
+      "Kiddushin 67a:3",
+      "Rashi on Kiddushin 67a:1:1",
+      "Rashi on Kiddushin 67a:2:1",
+      "Rashi on Kiddushin 67a:2:2",
+      "Kiddushin 67a:1",
+      "Rashi on Kiddushin 66b:17:1",
+      "Rashi on Kiddushin 66b:17:2",
+      "Rashi on Kiddushin 67a:4:1",
+      "Rashi on Kiddushin 67a:4:2",
+      "Rashi on Kiddushin 67a:4:3"
+    ],
+    "generatedAt": "2026-11-02T20:51:07.820Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 67a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיבעית אימא לעולם רבי יוסי היא</strong> - דאמר גר מותר בממזרת ודקשיא לך כללא היא מתניתין לאו כללא כייל דלהכי תנא בה ואיזו זו היא כהנת ולויה כו' למימרא דהני הוא דהולד הולך אחר הזכר אבל יש אחרים אע\"פ שיש קידושין ואין עבירה הולד הולך אחר הפגום:"
+  },
+  "Rashi on Kiddushin 67a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T20:51:45.469Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 67a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיזו זו ותו לא</strong> - כלומר אם כן דאיזו זו דוקא אבל מידי אחרינא לא אזיל אחר הזכר גבי יש קידושין ואין עבירה:"
+  },
+  "Rashi on Kiddushin 67a:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T20:52:50.765Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 67a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והרי חלל וכו'</strong> - ותנן לקמן <span class=\"parenthesized\">(קידושין דף עז.)</span> בת חלל זכר פסולה לכהונה אלמא אחר הזכר הוא ומיקרי חללה:"
+  },
+  "Rashi on Kiddushin 67a:4:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 67a:4:1",
+      "Rashi on Kiddushin 67a:4:2"
+    ],
+    "generatedAt": "2026-11-02T20:53:47.507Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 67a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרבי דוסתאי ס\"ל</strong> - לתנא דידן דאמר <span class=\"parenthesized\">(שם)</span> בנות ישראל מקוה טהרה לחללין ובתה כשרה לכהונה:"
+  },
+  "Rashi on Kiddushin 67a:5:1": {
+    "dependsOn": [
+      "Kiddushin 67a:5"
+    ],
+    "generatedAt": "2026-11-02T20:59:18.174Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 67a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והרי ישראל שנשא חללה דיש קידושין ואין עבירה</strong> - דלא אסורה אלא לכהנים והולד הולך אחר הזכר דתנן לקמן <span class=\"parenthesized\">(שם)</span> בתו כשירה לכהונה ולא אמרינן חללה היא כפגום שבשניהם:"
+  },
+  "Rashi on Kiddushin 67a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T20:59:53.480Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 67a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונתנייה בהדיא</strong> - גבי כהנת לויה וישראלית ומשני משום דלא מתני לה אינה נישנית לו לתנא עם השאר בלשון קצר דנימא ואיזו כהנת לויה וישראלית וחללה שנשאו לכהן ללוי וישראל דמשמע חללה נמי לכהן אין עבירה:"
+  },
+  "Rashi on Kiddushin 67a:7:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 67a:7:2",
+      "Rashi on Kiddushin 67a:7:3",
+      "Rashi on Kiddushin 67a:7:4"
+    ],
+    "generatedAt": "2026-11-02T21:00:42.244Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 67a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והאיכא</strong> - יש קידושין ואין עבירה דהולד הולך אחר הזכר הא דרבה בר בר חנה:"
+  },
+  "Rashi on Kiddushin 67a:7:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 67a:7:1",
+      "Rashi on Kiddushin 67a:7:3"
+    ],
+    "generatedAt": "2026-11-02T21:01:09.267Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 67a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מצרי שני</strong> - שנתגייר אביו:"
+  },
+  "Rashi on Kiddushin 67a:7:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T21:01:30.484Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 67a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מצרית ראשונה</strong> - שנתגיירה היא:"
+  },
+  "Rashi on Kiddushin 67a:7:4": {
+    "dependsOn": [
+      "Kiddushin 67a:7",
+      "Rashi on Kiddushin 67a:7:1",
+      "Rashi on Kiddushin 67a:7:2",
+      "Rashi on Kiddushin 67a:7:3",
+      "Rashi on Kiddushin 67a:4:1",
+      "Rashi on Kiddushin 67a:5:1"
+    ],
+    "generatedAt": "2026-11-02T21:02:57.049Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 67a:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בנה שלישי</strong> - ומותר לישא ישראלית כדכתיב <span class=\"parenthesized\">(דברים כ״ג:ט׳)</span> דור שלישי יבא להם דכיון דיש קידושין ואין עבירה לבית אבותם קרינא ביה כישראל והא דאמרינן ביבמות <span class=\"parenthesized\">(דף עח.)</span> להם הלך אחר פסולן היינו לענין ישראל שנשא מצרית או מצרי שנשא ישראלית דיש קידושין ויש עבירה עד שלשה דורות הולד הולך אחר המצרי דוילדו להם כתיב ואחריהם הולכים הולדות אבל לענין מצרי ומצרית לא מגמר לן האי להם מידי דהא בתרוייהו להם קרינא ביה והוא מצרי והיא מצרית:"
+  },
+  "Rashi on Kiddushin 67a:8:1": {
+    "dependsOn": [
+      "Kiddushin 67a:8",
+      "Rashi on Kiddushin 67a:7:1"
+    ],
+    "generatedAt": "2026-11-02T21:07:39.362Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 67a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולרב דימי</strong> - דאמר ביבמות בפרק הערל <span class=\"parenthesized\">(יבמות דף עח.)</span> דשני הוא ויליף לה מאשר יולדו הכתוב תלאו בלידה למימרא דבתר אימיה שדינן ליה מדלא כתיב אשר יולידו:"
+  },
+  "Rashi on Kiddushin 67a:9:1": {
+    "dependsOn": [
+      "Kiddushin 67a:9",
+      "Rashi on Kiddushin 67a:7:1",
+      "Rashi on Kiddushin 67a:8:1",
+      "Rashi on Kiddushin 67a:10:1",
+      "Rashi on Kiddushin 67a:10:2",
+      "Rashi on Kiddushin 67a:10:3"
+    ],
+    "generatedAt": "2026-11-02T21:11:09.261Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 67a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והאיכא</strong> - גבי יש קידושין ואין עבירה הולד הולך אחר הפגום הא דכי אתא רבין וכו' באומות הלך אחר הזכר איש ואשה הבאים משני אומות [כדלקמן]:"
+  },
+  "Tosafot on Kiddushin 67a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T21:20:27.667Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 67a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל מקום דרישא לאתויי ישראל שנשא חללה ודרבה בר בר חנה ואיזו זו למעוטי דרבין ורב דימי</strong> - פירוש או או קתני כלומר אי אתיא כל מקום דרישא לאתויי מילתא דרבה בר בר חנה א\"כ אתיא איזו זו למעוטי דרבין אבל לא דרב דימי משום דהא דרב דימי ליתא כיון דמילתא דרבה בר בר חנה איתא שהרי דברי זה סותרים את דברי זה דרבה בר בר חנה קאמר מצרי שני שנשא מצרית ראשונה בנה שלישי ולדברי רב דימי אינו אלא שני ואי לא אתיא כל מקום דרישא לאיתויי מילתא דרבה בר בר חנה משום דלית הילכתא כוותיה א\"כ נוכל לומר דאיזו זו דרישא אתי למעוטי ההיא דרב דימי:"
+  },
+  "Tosafot on Kiddushin 67a:1:1": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 67a:4:1",
+      "Tosafot on Kiddushin 65b:3:1",
+      "Tosafot on Kiddushin 66a:2:1",
+      "Tosafot on Kiddushin 67a:2:1"
+    ],
+    "generatedAt": "2026-11-02T20:46:05.189Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 67a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר' יהודה היא</strong> - הקשה ה\"ר יעקב מקוצי לר' יהודה נמי איכא למיפרך הרי גר מצרי שנשא ממזרת דיש קידושין ואין עבירה כדאמר לקמן <span class=\"parenthesized\">(קידושין דף עד:)</span> דמודה הוא בפסולי קהל דהיינו גר מצרי דמותר בממזרת ואפ\"ה אמר דהולד הולך אחר הפגום והוי ממזר ותירץ ר\"י בר אברהם דהגמרא לא נחית לאקשויי אא\"כ יש אחד מהם כשר כגון גר כשר הראוי לבא בקהל שנשא ממזרת דהכי משמע ליה השתא דיש קידושין ואין עבירה וגר מצרי שנשא ממזרת שניהם פסולים ולכך לא רצה להקשות מיניה מיהו בתר הכי פריך ממצרי אף על גב דאינו כשר לבא בקהל וה\"ה דהוה מצי למיפרך ממצרי שנשא ממזרת אלא דפריך ליה שפיר:"
+  },
+  "Tosafot on Kiddushin 67a:2:1": {
+    "dependsOn": [
+      "Kiddushin 67a:2",
+      "Kiddushin 67a:4",
+      "Chidushei Halachot on Kiddushin 67a:1",
+      "Kiddushin 66b:15"
+    ],
+    "generatedAt": "2026-11-02T20:49:31.823Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 67a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונתנייה</strong> - פי' בסיפא תנא כל מקום לאתויי ולא פריך ולתנייה בהדיא כדפריך בסמוך דכיון דסבר גר אסור בממזרת דאיקרו קהל הוי קצת בכלל ממזרת ונתינה לישראל דתני במתניתין ולא צריך למיתנייה במתניתין טפי כולי האי ומ\"מ איצטריך למיתני כל מקום דאי לאו הכי לא הוה מצי לאתויי <span class=\"parenthesized\">(אלא)</span> ממזרת ונתינה לישראל לבד:"
+  },
+  "Tosafot on Kiddushin 67a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T20:54:26.662Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 67a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והרי חלל שנשא בת ישראל והולד הולך אחר הזכר</strong> - פירוש שהוא חלל כמו אביו וא\"ת מאי פריך מה דהבן פסול לאו משום דאזלינן בתר הזכר לחודיה אלא משום דנקבה פגומה שהיא אמו שהזכר פוסלה בביאתו והוי חללה ויש לומר דע\"כ פסולו של בן לאו משום פסול דנקבה הוא דהא ישראל שנשא חללה יוכיח שבתו כשרה לכהונה ואף על גב שאמה פסולה אם כן משמע דאזלינן דוקא בתר הזכר לכן פריך שפיר:"
+  },
+  "Tosafot on Kiddushin 67a:4:2": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 67a:4:1",
+      "Tosafot on Kiddushin 67a:2:1",
+      "Tosafot on Kiddushin 66b:1:1",
+      "Tosafot on Kiddushin 66b:2:1",
+      "Tosafot on Kiddushin 66b:6:1",
+      "Tosafot on Kiddushin 67a:1:1",
+      "Tosafot on Kiddushin 67a:7:1",
+      "Tosafot on Kiddushin 67a:11:1",
+      "Rashi on Kiddushin 67a:4:1",
+      "Rashi on Kiddushin 67a:4:2",
+      "Rashi on Kiddushin 67a:4:3",
+      "Kiddushin 67a:4"
+    ],
+    "generatedAt": "2026-11-02T20:58:18.945Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 67a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא מני ר' דוסתאי דאמר בנות ישראל כו'</strong> - וא\"ת אמאי לא משני תנא כל מקום לאתויי כדאמרינן על ישראל שנשא חללה ויש לומר דא\"כ מצינו למיפרך ונתנייה בהדיא ולא מצי נמי לשנויי משום דלא מתני לה דהיכי נתנייה כדאמרינן בסמוך דהא ודאי מצי למיתני במתניתין כהנת שנשאת לכהן וללוי ולישראל ולחלל שהרי לא הוזהרו כשרות לינשא לפסולים:"
+  },
+  "Tosafot on Kiddushin 67a:7:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 67a:7:1",
+      "Rashi on Kiddushin 67a:7:2",
+      "Rashi on Kiddushin 67a:7:3",
+      "Rashi on Kiddushin 67a:7:4",
+      "Maharsha: Chidushei Halachot on Kiddushin 67a:5",
+      "Yevamot 78a:6",
+      "Rashi on Yevamot 78a:6:2",
+      "Tosafot on Kiddushin 67a:4:1",
+      "Tosafot on Kiddushin 67a:4:2"
+    ],
+    "generatedAt": "2026-11-02T21:06:15.683Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 67a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בנה שלישי הוי</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> ומותר לישא ישראלית כדכתיב <span class=\"parenthesized\">(דברים כ״ג:ט׳)</span> דור שלישי יבא להם דכיון דיש קידושין ואין עבירה לבית אבותם קרינא ביה כישראל והא דקאמר ביבמות <span class=\"parenthesized\">(דף עח.)</span> להם הלך אחר פסולן היינו לענין ישראל שנשא מצרית או מצרי שנשא ישראלית דיש קידושין ויש עבירה עד ג' דורות הולד הולך אחר המצרי דוילדו להם כתיב אחריהם הולכים הולדות אבל במצרי ומצרית לא מיגמר לן הא להם מידי דהתם בתרוייהו להם קרינא ביה הוא מצרי והיא מצרית עכ\"ל ודקדק הר\"ם דלא תימא דוקא ישראל שנשא מצרית שייך לומר הלך אחר פסולן לפי שאין שניהם פסולין אבל בשניהם פסולין לא שייך לומר הלך אחר פסולן דשניהם פסולים שהרי עמוני ומצרית שניהם פסולים והולכים אחר הפגום אלא הדבר תלוי בזה כשהם משני עממים שייך לומר כן דקרא בשני עממים איירי וקאמר הלך אחר הפסול שבכל עם ועם אבל כששניהם מעם אחד לא שייך לומר כן:"
+  },
+  "Tosafot on Kiddushin 67a:8:1": {
+    "dependsOn": [
+      "Kiddushin 67a:8",
+      "Tosafot on Kiddushin 67a:7:1",
+      "Tosafot on Kiddushin 67a:8:1",
+      "Tosafot on Kiddushin 67a:9:1",
+      "Tosafot on Kiddushin 67a:4:1",
+      "Tosafot on Kiddushin 67a:4:2",
+      "Kiddushin 67a:3",
+      "Kiddushin 67a:4",
+      "Kiddushin 67a:5",
+      "Kiddushin 67a:6"
+    ],
+    "generatedAt": "2026-11-02T21:09:28.684Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 67a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא מני ר' דוסתאי דאמר בנות ישראל כו'</strong> - וא\"ת אמאי לא משני תנא כל מקום לאתויי כדאמרינן על ישראל שנשא חללה ויש לומר דא\"כ מצינו למיפרך ונתנייה בהדיא ולא מצי נמי לשנויי משום דלא מתני לה דהיכי נתנייה כדאמרינן בסמוך דהא ודאי מצי למיתני במתניתין כהנת שנשאת לכהן וללוי ולישראל ולחלל שהרי לא הוזהרו כשרות לינשא לפסולים:"
+  },
+  "Tosafot on Kiddushin 67a:9:1": {
+    "dependsOn": [
+      "Kiddushin 67a:9",
+      "Kiddushin 67a:7",
+      "Tosafot on Kiddushin 67a:4:1",
+      "Tosafot on Kiddushin 67a:4:2",
+      "Tosafot on Kiddushin 67a:7:1",
+      "Tosafot on Kiddushin 67a:8:1",
+      "Tosafot on Kiddushin 67a:9:1"
+    ],
+    "generatedAt": "2026-11-02T21:13:34.713Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 67a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והרי חלל שנשא בת ישראל והולד הולך אחר הזכר</strong> - פירוש שהוא חלל כמו אביו וא\"ת מאי פריך מה דהבן פסול לאו משום דאזלינן בתר הזכר לחודיה אלא משום דנקבה פגומה שהיא אמו שהזכר פוסלה בביאתו והוי חללה ויש לומר דע\"כ פסולו של בן לאו משום פסול דנקבה הוא דהא ישראל שנשא חללה יוכיח שבתו כשרה לכהונה ואף על גב שאמה פסולה אם כן משמע דאזלינן דוקא בתר הזכר לכן פריך שפיר:"
+  }
+}

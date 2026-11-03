@@ -230,6 +230,20 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">כגון שיעדה</strong> - ותו לא נפקא בהני אלא בגט:"
   },
+  "Rashi on Kiddushin 18a:7:1": {
+    "dependsOn": [
+      "Kiddushin 18a:7",
+      "Rashi on Kiddushin 18a:5:1",
+      "Rashi on Kiddushin 18a:6:1"
+    ],
+    "generatedAt": "2026-11-01T08:16:43.768Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 18a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הילכתא</strong> - הלכות אמה העבריה ואם רצתה לצאת בא' מאלו בלא גט תצא קמ\"ל:"
+  },
   "Rashi on Kiddushin 18a:8:1": {
     "costUsd": 0.051968400000000005,
     "dependsOn": [],

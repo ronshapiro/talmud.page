@@ -1,0 +1,347 @@
+{
+  "Rashi on Kiddushin 27b:10:1": {
+    "dependsOn": [
+      "Kiddushin 27b:10",
+      "Rashi on Kiddushin 27b:10:2"
+    ],
+    "generatedAt": "2026-11-01T13:56:50.702Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 27b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג אלא לאו ע\"י גלגול</strong> - ולא גרסינן דקני לה כשהיא ארוסה ואסתתר ונכנסה לחופה כו':"
+  },
+  "Rashi on Kiddushin 27b:10:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 27b:10:1",
+      "Kiddushin 27b:10"
+    ],
+    "generatedAt": "2026-11-01T13:57:53.470Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 27b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גלגול</strong> - שקינא לה כשהיא נשואה ונסתרה ומגלגל עליה שבועה על אירוסין אע\"פ שלא היו ראוין לשבועה בפני עצמן שהרי לא קינא ואי קשיא הויא לה לאוקמא בדקני לה ארוסה ואסתתרה ומשקה לה משנכנסה לחופה וקרינא בה תחת אישך וכגון שלא בא עליה דהוה ליה מנוקה מעון הא בעי לאוקמא הכי במסכת יבמות <span class=\"parenthesized\">(דף נח.)</span> ואותיבנא עלה מבלעדי אישך שקדמה שכיבת בעל לבועל ולא שקדמה שכיבת בועל לבעל הילכך אין לך להשביעה על זנות של אירוסין בשום ענין אלא ע\"י גלגול דזנות אירוסין קדמה שכיבת בועל הוא וביבמות איכא דמוקי לה כשבא עליה ארוס בבית אביה ועולא לא סבירא ליה ההוא שינויא:"
+  },
+  "Rashi on Kiddushin 27b:1:1": {
+    "dependsOn": [
+      "Kiddushin 27b:1",
+      "Kiddushin 27a:12",
+      "Rashi on Kiddushin 27b:1:2"
+    ],
+    "generatedAt": "2026-11-01T13:35:04.323Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 27b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במה דברים אמורים</strong> - דקנה בחזקה דשדה זו את שדה אחרת שאינה סמוכה לה בזמן שנתן לו כו' ומטלטלין הנקנין עם קרקע נמי כשדה שאינה סמוכה לה דמי והיינו דרבא:"
+  },
+  "Rashi on Kiddushin 27b:1:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 27b:1:1",
+      "Kiddushin 27b:1",
+      "Rashi on Kiddushin 27b:2:1",
+      "Rashi on Kiddushin 27b:3:1",
+      "Rashi on Kiddushin 27a:13:1",
+      "Rashi on Kiddushin 27a:13:2"
+    ],
+    "generatedAt": "2026-11-01T13:36:22.853Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 27b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מסייע ליה לשמואל</strong> - הך דקתני כיון שהחזיק באחת מהן קנאן כולן:"
+  },
+  "Rashi on Kiddushin 27b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T13:38:31.411Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 27b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אגודו בידו</strong> - כולן אגודות באגד זה שבידו:"
+  },
+  "Rashi on Kiddushin 27b:3:1": {
+    "dependsOn": [
+      "Kiddushin 27b:3",
+      "Rashi on Kiddushin 27b:3:2",
+      "Rashi on Kiddushin 27b:3:3"
+    ],
+    "generatedAt": "2026-11-01T13:39:53.748Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 27b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איכא דאמרי תדע דלא קני</strong> - וליתא דשמואל:"
+  },
+  "Rashi on Kiddushin 27b:3:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 27b:3:1",
+      "Rashi on Kiddushin 27b:3:2",
+      "Rashi on Kiddushin 27b:3:3",
+      "Kiddushin 27b:3",
+      "Steinsaltz on Kiddushin 27b:3"
+    ],
+    "generatedAt": "2026-11-01T13:41:22.383Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 27b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וזו לא תיקני</strong> - ל\"ג:"
+  },
+  "Rashi on Kiddushin 27b:3:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 27b:3:1",
+      "Rashi on Kiddushin 27b:3:2",
+      "Rashi on Kiddushin 27b:1:1",
+      "Rashi on Kiddushin 27b:1:2",
+      "Rashi on Kiddushin 27b:4:1"
+    ],
+    "generatedAt": "2026-11-01T13:42:50.679Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 27b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמר ליה זו קני מי קני</strong> - לשארא הא אמר זו הכא נמי כי אחזקה בהא ואין השאר ניכרות עמה זו קני הוא:"
+  },
+  "Rashi on Kiddushin 27b:4:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 27b:4:1",
+      "Rashi on Kiddushin 27b:4:2",
+      "Rashi on Kiddushin 27b:4:3",
+      "Kiddushin 27b:4",
+      "Rashi on Kiddushin 27b:3:1",
+      "Rashi on Kiddushin 27b:3:2",
+      "Rashi on Kiddushin 27b:3:3"
+    ],
+    "generatedAt": "2026-11-01T13:43:51.046Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 27b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גופין מוחלקין</strong> - וכי אמר ליה זו קני הוא משמע ולא קנה השאר הכא לא זו קני הוא:"
+  },
+  "Rashi on Kiddushin 27b:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T13:44:11.522Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 27b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דסדנא דארעא חד הוא</strong> - דהא כולה מחוברת:"
+  },
+  "Rashi on Kiddushin 27b:4:3": {
+    "dependsOn": [
+      "[",
+      "Rashi on Kiddushin 27b:4:1",
+      "Rashi on Kiddushin 27b:4:2"
+    ],
+    "generatedAt": "2026-11-01T13:45:07.478Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 27b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סדנא</strong> - טרינ\"ק <span class=\"parenthesized\">(טרונ\"ק: גזע, גוש, יסוד)</span> כמו סדן של נפחים כלומר עשת וחיבור הקרקע חד הוא דהא כולה מחוברת:"
+  },
+  "Rashi on Kiddushin 27b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T13:45:33.163Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 27b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמן אמן</strong> - יתירא למידרש ביה גלגול כדקא מסיים ואזיל אמן שלא סטיתי ארוסה ונשואה ולא אפשר לאוקמה אלא בגלגול:"
+  },
+  "Rashi on Kiddushin 27b:6:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 27b:6:1",
+      "Rashi on Kiddushin 27b:6:3",
+      "Sotah 18a:13"
+    ],
+    "generatedAt": "2026-11-01T13:47:19.178Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 27b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על האלה</strong> - ירכך נופלת וגו':"
+  },
+  "Rashi on Kiddushin 27b:6:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T13:47:47.566Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 27b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השבועה</strong> - שהיה משביעה הכהן ואומר משביעני עליך שלא נטמאת כדכתיב <span class=\"parenthesized\">(במדבר ה)</span> והשביע אותה:"
+  },
+  "Rashi on Kiddushin 27b:6:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 27b:6:1",
+      "Rashi on Kiddushin 27b:6:2",
+      "Rashi on Kiddushin 27b:6:3",
+      "Rashi on Kiddushin 27b:6:4"
+    ],
+    "generatedAt": "2026-11-01T13:48:44.279Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 27b:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כנוסה</strong> - שייך למיתני גבי יבמה שומרת יבם ממתנת ומצפה ליבום כמו שמר את הדבר <span class=\"parenthesized\">(בראשית לז)</span> להכי שייך לשון כניסה כדכתיב <span class=\"parenthesized\">(דברים כה)</span> לא תהיה אשת המת החוצה לאיש זר אלא יבמה יקחנה לאשה בביתו:"
+  },
+  "Rashi on Kiddushin 27b:7:1": {
+    "dependsOn": [
+      "Kiddushin 27b:7"
+    ],
+    "generatedAt": "2026-11-01T13:50:21.844Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 27b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי נימא כו' ומשקה לה כשהיא ארוסה</strong> - ומילי מילי קתני ולא שתשבע על כולם כאחד וה\"ק בין שהיא ארוסה בין שהיא נשואה יכול להשביעה ולהשקותה:"
+  },
+  "Rashi on Kiddushin 27b:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T13:50:43.979Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 27b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שותות</strong> - אם נסתרו דבעינן תחת אישה:"
+  },
+  "Rashi on Kiddushin 27b:7:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 27b:7:1",
+      "Rashi on Kiddushin 27b:7:2",
+      "Rashi on Sotah 23b:14:4"
+    ],
+    "generatedAt": "2026-11-01T13:52:22.879Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 27b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא נוטלות כתובה</strong> - שהיא גרמה לעצמה ליאסר עליו:"
+  },
+  "Rashi on Kiddushin 27b:8:1": {
+    "dependsOn": [
+      "Kiddushin 27b:8"
+    ],
+    "generatedAt": "2026-11-01T13:52:52.419Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 27b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקא משקה לה כשהיא נשואה</strong> - על סתירת אירוסין:"
+  },
+  "Rashi on Kiddushin 27b:9:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 27b:8:1",
+      "Rashi on Kiddushin 27b:10:1"
+    ],
+    "generatedAt": "2026-11-01T13:55:09.768Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 27b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונקה האיש</strong> - שלא בא עליה אחר שנסתרה שנאסרה עליו בסתירה זו:"
+  },
+  "Tosafot on Kiddushin 27b:10:1": {
+    "dependsOn": [
+      "Kiddushin 27b:10",
+      "Rashi on Kiddushin 27b:10:1",
+      "Rashi on Kiddushin 27b:10:2",
+      "Maharsha: Chidushei Halachot on Kiddushin 27b:2",
+      "Maharsha: Chidushei Halachot on Kiddushin 27b:3",
+      "Tosafot on Kiddushin 27b:1:1",
+      "Tosafot on Kiddushin 27b:6:1",
+      "Tosafot on Kiddushin 27b:8:1"
+    ],
+    "generatedAt": "2026-11-01T14:00:04.427Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 27b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכי גרסי' אלא לאו ע\"י גלגול</strong> - ולא גרסי' דקני לה כשהיא ארוסה ואיסתתרה ונכנסה לחופה וכו' אלא הכי גרסינן אלא לאו על ידי גלגול שקינא לה כשהיא נשואה ונסתרה וגלגל עליה שבועה ע\"י אירוסין אע\"פ שלא היו ראוין לשבועה בפני עצמן שהרי לא קינא לה וכמו כן מגלגלין שבועה דקרקע אע\"פ שלא שייך בהו שבועה ואי קשיא הוה ליה לאוקמיה בדקני לה כשהיא ארוסה ואיסתתר ומשקי לה כשנכנסה לחופה דקרינא בה תחת אישך וכגון שלא בא עליה דהוה ליה מנוקה מעון הא בעי לאוקמי הכי במסכת יבמות <span class=\"parenthesized\">(דף נח.)</span> ואותיבנא עלה מבלעדי אישך שקדמה שכיבת בעל לבועל ולא שקדמה שכיבת בועל לבעל הילכך אין לך שבועה על זנות של אירוסין בשום ענין אלא ע\"י גלגול דזנות אירוסין קדמה שכיבת בועל הוא וביבמות <span class=\"parenthesized\">(ג\"ז שם)</span> איכא דמוקי לה כשבא עליה ארוס בבית אביה ועולא לא סבירא ליה האי שינויא דשינויא דחיקא הוא כן <span class=\"rashi-quotation\">פירש הקונטרס</span> וקשה דהא בשמעתין נמי ע\"כ סמיך אההיא שינויא דקאמר אילימא דקני לה כשהיא ארוסה ומשקי לה כשהיא ארוסה תחת אישך אמר רחמנא פרט לארוסה ולמה ליה האי קרא הוה ליה למימר מבלעדי אישך ולא שקדמה שכיבת בועל לבעל אלא ש\"מ סמיך אההוא שינויא דבא עליה ארוס בבית אביה א\"כ הדרא קושיא לדוכתיה לכן נ\"ל דהיינו טעמא דלא רצה לאוקמי בנכנסה לחופה ולא נבעלה דסבר לה כשמואל דאמר. אין חופה לפסולות וכיון שנבעלה אין חופה תופסת בה ולא קרינא בה תחת אישך וא\"ת לרב דאמר. יש חופה לפסולות א\"כ יכול לאוקמה דקני לה כשהיא ארוסה ונכנסה לחופה ולא נבעלה א\"כ גלגול שבועה מנ\"ל וי\"ל דנפקא ליה מאמן מאיש זה אמן מאיש אחר כלומר שאינה חייבת שבועה על אחר שהרי לא קינא לה ומגלגל עליה ע\"י אחר וא\"ת ועולא אמאי לא מפיק גלגול שבועה מאמן מאיש זה ומאיש אחר וי\"ל דמהא לא נפקא דמגלגלין על קרקעות דהא דמגלגלין שבועה מאיש אחר היינו משום דאותו איש אחר שייך בו שבועה אם קינא אבל קרקע דלא שייך בה שבועה כלל אימא לא מגלגלין אבל השתא דמדמינן גלגול שבועה דקרקע לגלגול דארוסה ניחא שפיר דלגבי ארוסה נמי לא שייך בה שבועה אלא ע\"י גלגול דוקא כדפרישית וא\"ת לרב היכי מפיק גלגול שבועה מאיש אחר הא לא דמי לה כדפרישית וי\"ל דסבר מאיש אחר דקאמר היינו אפי' מקטן. שאין מקנאין לה על ידו דלא שייך בו שבועה אפי' הכי מגלגלין ועולא לית ליה האי סברא:"
+  },
+  "Tosafot on Kiddushin 27b:1:1": {
+    "dependsOn": [
+      "Kiddushin 27b:1",
+      "Tosafot on Kiddushin 27b:1:1",
+      "Tosafot on Kiddushin 27a:13:1",
+      "Tosafot on Kiddushin 27b:6:1"
+    ],
+    "generatedAt": "2026-11-01T13:38:10.146Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 27b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במה דברים אמורים שנתן לו דמי כולם</strong> - ואם תאמר בלא חזקה נמי קנה מטעם כסף וי\"ל דמיירי באתרא דלא קנו בכספא וא\"ת ומאי קאמר יפה כח חזקה מכח כסף והלא חזקה אינה מועלת בלא כסף ואומר הר\"ח דבמתנה מיהא קנה כולם כשהחזיק באחת מהן בלא כסף וה\"ר שמואל מאיברא פי' שנתן דמי כולם כגון שהמוכר היה חייב ללוקח מעות כבר והשתא ניחא דבאותם מעות לא היה קונה כי היכי דלא מצי לקדושי בהן איתתא לפי שהוא מלוה ה\"נ לא מצי למיקני בהן קרקע ובהאי נמי איכא יפה כח דחזקה שקונה בלא כסף:"
+  },
+  "Tosafot on Kiddushin 27b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T13:39:12.883Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 27b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עשר בהמות באפסר אחד</strong> - נראה דאיירי שכולן קשורין באפסר אחד והוא אחז בטלפיים או בשערה של אחת מהן ועלה קאמר מי לא קני השאר וה\"ה בשדות בחזקה של אחת מהם קונה דלהא דמיא דאי החזיק באפסר ממש מאי מייתי מהא דילמא הכא שאני שהחזיק בכולן ונראה דדוקא שנתן דמי כל הבהמות כי היכי דבעינן בשדות שנתן דמי כולן ומשני התם איגודו בידו כלומר ראוי היה להיות בידו אם ירצה לאחוז באפסר שכולן קשורים באפסר אחד ויקנה כולן השתא נמי הוי כמחוברות יחד אבל שדות אינו יכול לאחוז כולן כאחד:"
+  },
+  "Tosafot on Kiddushin 27b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T13:49:39.583Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 27b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמן מאיש זה אמן מאיש אחר כו'</strong> - וא\"ת מנ\"ל כל הני הא לא כתיב אלא תרי אמן וי\"ל מחד אמן מפיק שפיר אלה ושבועה ואיש זה ואיש אחר שהרי אכל מה דכתיב בפרשה קאי ואלה ושבועה בהדיא כתיב בפרשה וכתיב נמי תחת אישך דמשמע בין מאיש זה בין מאיש אחר ואידך אמן קאי אארוסה ושומרת יבם דלא כתיבי בפרשה:"
+  },
+  "Tosafot on Kiddushin 27b:8:1": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Kiddushin 27b:1",
+      "Kiddushin 27b:7",
+      "Kiddushin 27b:8"
+    ],
+    "generatedAt": "2026-11-01T13:54:38.576Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 27b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא דקני לה כשהיא ארוסה וקא משקי לה כשהיא נשואה</strong> - ותחת אישך דקאמר רחמנא הכי משמע כלומר שאת עכשיו תחת אישך ואם תאמר מנ\"ל לפרושי קרא הכי הא טומאה תחת אישך משמע שהסתירה היתה בנישואין וי\"ל דה\"ק דכי היכי דמרבי מאיש קינוי דאירוסין בריש פרק ארוסה <span class=\"parenthesized\">(סוטה דף כד.)</span> הכי נמי נרבה סתירה:"
+  },
+  "Tosafot on Kiddushin 27b:9:1": {
+    "dependsOn": [
+      "Kiddushin 27b:9"
+    ],
+    "generatedAt": "2026-11-01T13:55:51.503Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 27b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונקה האיש מעון אמר רחמנא</strong> - וא\"ת לוקמה כגון שבא עליה בשוגג שלא ידע עד לאחר מכאן דנסתרה דכה\"ג מנוקה מעון חשיב ליה דהא כי מוקי לה ע\"י גלגול לאו מנוקה מעון הוא אם זינתה באירוסין אלא כיון דשוגג הוא מנוקה מעון קרינא ביה וי\"ל דשאני הכא כיון שבשעת השקאה יודע שבא עליה באיסור בין שבא עליה בשוגג בין שבא עליה במזיד לאו מנוקה מעון הוא אבל ע\"י גלגול שאינו יודע בשעת השקאה מנוקה מעון קרינא ביה:"
+  }
+}

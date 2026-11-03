@@ -1,0 +1,326 @@
+{
+  "Rashi on Kiddushin 36b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T22:38:47.678Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 36b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג הזאה דהיכא</strong> - ול\"ג היכא כתיבה:"
+  },
+  "Rashi on Kiddushin 36b:2:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 36b:2:1"
+    ],
+    "generatedAt": "2026-11-01T22:39:33.894Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 36b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי דפרה</strong> - הזאת דמה דפרה אדומה:"
+  },
+  "Rashi on Kiddushin 36b:2:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T22:40:08.240Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 36b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלעזר כתוב בה</strong> - ואפילו שאר כהנים פסולין וכ\"ש נשים:"
+  },
+  "Rashi on Kiddushin 36b:2:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T22:40:33.493Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 36b:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי דפנים</strong> - הזאה דפנים כגון הפרוכת ומזבח הזהב האמורין בפר כהן משיח ופר העלם דבר של ציבור:"
+  },
+  "Rashi on Kiddushin 36b:2:5": {
+    "dependsOn": [
+      "Rashi on Kiddushin 36b:2:4",
+      "Rashi on Kiddushin 36b:2:6",
+      "Rashi on Kiddushin 36b:2:1",
+      "Rashi on Kiddushin 36b:2:2",
+      "Rashi on Kiddushin 36b:2:3"
+    ],
+    "generatedAt": "2026-11-01T22:41:36.754Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 36b:2:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכהן המשיח כתיב בהן</strong> - למעוטי הדיוטים וכ\"ש נשים ומאי איצטריך ליה לתנא למיתנייה:"
+  },
+  "Rashi on Kiddushin 36b:2:6": {
+    "dependsOn": [
+      "Rashi on Kiddushin 36b:2:5",
+      "Rashi on Kiddushin 36b:2:1",
+      "Rashi on Kiddushin 36b:2:2",
+      "Rashi on Kiddushin 36b:2:3",
+      "Rashi on Kiddushin 36b:2:4",
+      "Rashi on Kiddushin 36b:2:6",
+      "Kiddushin 36b:2",
+      "Rashi on Kiddushin 36a:1:1",
+      "Rashi on Kiddushin 36a:2:1",
+      "Rashi on Kiddushin 35b:5:1"
+    ],
+    "generatedAt": "2026-11-01T22:43:08.874Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 36b:2:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הזאת דם עוף</strong> - דכתיב בחטאת העוף <span class=\"parenthesized\">(ויקרא ה׳:ט׳)</span> והזה מדם החטאת ואיצטריך לאשמועינן נשים פסולות ונפקא ליה מק\"ו מזריקת דם דעולת בן צאן דכתיב ביה <span class=\"parenthesized\">(שם א)</span> וזרקו בני אהרן:"
+  },
+  "Rashi on Kiddushin 36b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T22:50:33.438Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 36b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא קבע לו כהן לשחיטתו</strong> - שהשחיטה כשרה בזר דכתיב <span class=\"parenthesized\">(שם)</span> ושחט את בן הבקר והקריבו בני אהרן מקבלה ואילך מצות כהונה לימד על השחיטה שכשרה בזר <span class=\"parenthesized\">(ברכות דף לא:)</span>:"
+  },
+  "Rashi on Kiddushin 36b:3:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 36b:3:1",
+      "Rashi on Kiddushin 36b:3:3",
+      "Rashi on Kiddushin 36b:2:1",
+      "Rashi on Kiddushin 36b:2:2",
+      "Rashi on Kiddushin 36b:2:3",
+      "Rashi on Kiddushin 36b:2:4",
+      "Rashi on Kiddushin 36a:1:1",
+      "Rashi on Kiddushin 36a:2:1",
+      "Rashi on Kiddushin 35b:1:1"
+    ],
+    "generatedAt": "2026-11-01T22:51:29.355Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 36b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להזאתו</strong> - לזריקת דמו כדכתיב <span class=\"parenthesized\">(ויקרא א׳:י״א)</span> וזרקו בני אהרן:"
+  },
+  "Rashi on Kiddushin 36b:3:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 36b:3:1",
+      "Rashi on Kiddushin 36b:3:2",
+      "Rashi on Kiddushin 36b:2:1",
+      "Rashi on Kiddushin 36b:2:2"
+    ],
+    "generatedAt": "2026-11-01T22:52:37.099Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 36b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בן עוף שקבע לו כהן למליקתו</strong> - דכתיב <span class=\"parenthesized\">(שם)</span> והקריבו הכהן אל המזבח ומלק את ראשו:"
+  },
+  "Rashi on Kiddushin 36b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T22:55:11.799Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 36b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לרבי יאשיה דדריה</strong> - שהיה בדורו אמורא כמותו ויש להבין מכאן שעדיין בימי ר\"א היה רבי יאשיה בר פלוגתיה דר' יונתן קיים להכי איצטריך למיתני לרבי יאשיה דדריה לאפוקי ר' יאשיה קשישא:"
+  },
+  "Rashi on Kiddushin 36b:4:2": {
+    "dependsOn": [
+      "Kiddushin 36b:4",
+      "Rashi on Kiddushin 36b:4:1",
+      "Rashi on Kiddushin 36b:4:2",
+      "Rashi on Kiddushin 36b:4:3",
+      "Rashi on Kiddushin 36b:5:1",
+      "Kiddushin 36b:5",
+      "Rashi on Kiddushin 36b:2:1",
+      "Rashi on Kiddushin 36b:3:1",
+      "Rashi on Kiddushin 35b:1:1",
+      "Rashi on Kiddushin 35b:2:1"
+    ],
+    "generatedAt": "2026-11-01T22:57:32.118Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 36b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בבעלים מנלן</strong> - שתהא הסוטה עצמה מניפתה דלמא לכהן קאמר רחמנא כדכתיב <span class=\"parenthesized\">(במדבר ה׳:כ״ה)</span> ולקח הכהן מיד האשה וגו': ה\"ג מה כאן כהן אף להלן כהן מה להלן בעלים אף כאן בעלים:"
+  },
+  "Rashi on Kiddushin 36b:4:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 36b:4:1",
+      "Rashi on Kiddushin 36b:4:2",
+      "Rashi on Kiddushin 36b:4:3",
+      "Kiddushin 36a:15"
+    ],
+    "generatedAt": "2026-11-01T22:59:33.578Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 36b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בבעלים מנלן</strong> - שתהא הסוטה עצמה מניפתה דלמא לכהן קאמר רחמנא כדכתיב <span class=\"parenthesized\">(במדבר ה׳:כ״ה)</span> ולקח הכהן מיד האשה וגו':"
+  },
+  "Rashi on Kiddushin 36b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T23:04:21.257Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 36b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ידיו תביאנה</strong> - בבעלים כתיב ובתנופה משתעי:"
+  },
+  "Rashi on Kiddushin 36b:6:1": {
+    "dependsOn": [
+      "Kiddushin 36b:6",
+      "Rashi on Kiddushin 36b:5:1",
+      "Tosafot on Kiddushin 36b:6:1",
+      "Rashi on Kiddushin 2a:1:3",
+      "Rashi on Kiddushin 36b:2:1",
+      "Rashi on Kiddushin 36b:3:1",
+      "Rashi on Kiddushin 36b:4:1",
+      "Rashi on Kiddushin 36b:7:1",
+      "Rashi on Kiddushin 36b:8:1",
+      "Rashi on Kiddushin 36b:2:2",
+      "Rashi on Kiddushin 36b:2:3",
+      "Rashi on Kiddushin 36b:2:4",
+      "Rashi on Kiddushin 36b:2:5",
+      "Rashi on Kiddushin 36b:2:6",
+      "Makkot 18b:6",
+      "Steinsaltz on Kiddushin 36b:6"
+    ],
+    "generatedAt": "2026-11-01T23:08:06.659Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 36b:6:1"
+    ],
+    "sourceText": "ה\"ג מה כאן כהן אף להלן כהן מה להלן בעלים אף כאן בעלים:"
+  },
+  "Rashi on Kiddushin 36b:7:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 36b:6:1"
+    ],
+    "generatedAt": "2026-11-01T23:10:08.024Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 36b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כף כף מסוטה</strong> - בסוטה כתיב <span class=\"parenthesized\">(שם ה)</span> ונתן על כפיה ובנזיר כתיב ונתן על כפי הנזיר <span class=\"parenthesized\">(שם ו)</span>:"
+  },
+  "Rashi on Kiddushin 36b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T23:10:37.690Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 36b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תלויה ואינה תלויה</strong> - בגמ' מפרש להו:"
+  },
+  "Tosafot on Kiddushin 36b:2:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 36b:2:1",
+      "Rashi on Kiddushin 36b:2:2",
+      "Rashi on Kiddushin 36b:2:3",
+      "Rashi on Kiddushin 36b:2:4",
+      "Tosafot on Kiddushin 36b:3:1"
+    ],
+    "generatedAt": "2026-11-01T22:45:06.735Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 36b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי דפרה אלעזר כתיב בה</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> אפילו כהן הדיוט פסול וכ\"ש נשים תימה הניחא למ\"ד לדורות נמי בעי' כ\"ג דומיא דאלעזר פריך שפיר אבל למ\"ד בכהן הדיוט מרבינן ליה לדורות קשה דמאי פריך הכא גמרא דילמא מש\"ה איצטריך <span class=\"parenthesized\">(קרא)</span> הכא למעוטי נשים משום דהעבודה מותרת בכהן הדיוט לדורות וי\"ל דה\"פ מדאיצטריך התם לרבויי כהן הדיוט מכלל לגבי נשים פשיטא ליה לתנא דאין עבודה כשרה בהן וכן יש לפרש בסמוך אי דפנים וכו':"
+  },
+  "Tosafot on Kiddushin 36b:2:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 36b:2:2",
+      "Rashi on Kiddushin 36b:2:3",
+      "Rashi on Kiddushin 36b:2:4",
+      "Rashi on Kiddushin 36b:2:5",
+      "Tosafot on Kiddushin 36a:10:1",
+      "Tosafot on Kiddushin 36b:2:1"
+    ],
+    "generatedAt": "2026-11-01T22:49:49.870Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 36b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי דפנים כהן משיח כתיב</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> הזאת הפרוכת ומזבח הזהב האמורים בפר כהן משיח ופר העלם דבר של ציבור ונראה להר\"ם דאע\"ג דפר העלם דבר מרבינן התם <span class=\"parenthesized\">(ת\"כ פ' ויקרא)</span> דעבודתה כשרה אפילו בכהן הדיוט דמרבינן ליה מן ה' דהכהן המשיח אפ\"ה מדאיצטריך קרא לרבויי כהן הדיוט דכשר בה מכלל דפשיטא ליה לתנא דנשים אינן כשרות בה:"
+  },
+  "Tosafot on Kiddushin 36b:3:1": {
+    "dependsOn": [
+      "Zevachim 48b:15",
+      "Zevachim 48b:16",
+      "Tosafot on Zevachim 48b:16:1",
+      "Chidushei Halachot on Kiddushin 36b:4",
+      "Chidushei Halachot on Kiddushin 36b:5"
+    ],
+    "generatedAt": "2026-11-01T22:54:13.766Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 36b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומה בן צאן שלא קבע לו כהן לשחיטתו קבע לו כהן להזאתו בן עוף שקבע לו כהן וכו'</strong> - וא\"ת איכא למיפרך מה לבן צאן שקבע לו כלי <span class=\"parenthesized\">(עץ ארז ואזוב)</span> ומש\"ה בעי כהן להזאתו אבל בן עוף שלא קבע לו כלי להזאתו שהרי הזאה דבן עוף בעצמו של כהן הויא לא בעינן כהן דכה\"ג פריך בזבחים <span class=\"parenthesized\">(דף מח:)</span> דהתם בעי למילף מהאי ק\"ו דהכא דבן עוף טעון שחיטה בצפון אי לאו האי פירכא וי\"ל דפירכא זו דטעון כלי הוי פירכא כל דהו דאיכא למימר דהזאה מהניא טפי בעיצומו של כהן יותר מבכלי וא\"כ התם דבעי למילף בהאי ק\"ו דבן עוף תהא שחיטתו בצפון הוי מילתא רבה דבעי לאתויי צפון דאינו נוהג בכל הזבחים א\"כ יש סברא למעוטי צפון מבן עוף בפירכא כל דהו אבל כהן שצריך בכל הזבחים לא הוי מילתא רבה לרבויי בבן עוף הלכך ליכא למעוטי בפירכא כל דהו כדפרישית ועוד י\"ל דהכא עבדינן ק\"ו הכי ומה בן צאן שאינו טעון כהן בתחילה שהרי שחיטה בזר כשרה טעון כהן בסוף לקבלה ולהולכה ולזריקה בן עוף שטעון כהן בתחילה אינו דין שטעון כהן בסוף שהרי בכל מקום טעון כהן בסוף יותר מבתחילה דעיקר עבודה דקרבן הוי בסוף והשתא הוי ק\"ו מיניה וביה ואין להביא בהאי ק\"ו שום פירכא:"
+  },
+  "Tosafot on Kiddushin 36b:4:1": {
+    "dependsOn": [
+      "Kiddushin 36b:4",
+      "Kiddushin 36a:1",
+      "Kiddushin 36b:2",
+      "Kiddushin 36a:16",
+      "Kiddushin 36a:17",
+      "Kiddushin 36a:18",
+      "Kiddushin 36a:19"
+    ],
+    "generatedAt": "2026-11-01T23:01:20.329Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 36b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חוץ ממנחת סוטה ונזירה מפני שהן מניפות</strong> - וא\"ת תיפוק ליה דכל הני אינם כשרות בנשים לפי שהן מחוסרי בגדים דהא אמר בפ\"ב דזבחים <span class=\"parenthesized\">(דף יז:)</span> דאפילו כהנים בזמן שאין בגדיהם עליהם אין כהונתם עליהם וי\"ל דמיירי שלבשו את הבגדים א\"נ י\"ל כיון שלא נצטוו בבגדי כהונה לא הוו מחוסרי בגדים:"
+  },
+  "Tosafot on Kiddushin 36b:4:2": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 36b:4:2",
+      "Tosafot on Kiddushin 36b:6:1",
+      "Maharsha: Chidushei Halachot on Kiddushin 36b:7",
+      "Maharsha: Chidushei Halachot on Kiddushin 36b:8",
+      "Tosafot on Kiddushin 37a:1:1"
+    ],
+    "generatedAt": "2026-11-01T23:04:02.009Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 36b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל מצוה התלויה בארץ כו' חוץ מן הערלה והכלאים</strong> - בירושלמי פריך אמאי לא תני לה חלה ומשני לפי שאינה בעיסה של עובדי כוכבים ולא מיירי מתני' אלא בדברים הנוהגים בישראל ובעובדי כוכבים וקשה אמאי לא פריך נמי התם אמאי לא תני תרומה ומעשר כדפריך מחלה ואין לומר לפי שאינם אלא מדרבנן דהא חלה נמי אינה בח\"ל אלא מדרבנן ואפ\"ה בעי אמאי לא תני חלה ולא משני לפי שהיא מדרבנן וי\"ל דלהכי בעי מחלה לפי שגזרו על חלה בכל מקום אבל על תרומה ומעשר לא גזרו במקומות הרחוקים מא\"י אלא דוקא אעיירות הסמוכות לארץ והיינו טעמא דגזרו על החלה בכל מקום טפי מתרומה ומעשר לפי שהחלה דומה יותר לחובת הגוף שהרי החיוב בא ע\"י גלגול עיסה שהאדם עושה והלכך דין הוא שינהוג בכ\"מ אפילו בח\"ל אבל תרומה ומעשר אינן מוטלות אלא על מי שיש לו קרקע ודמי טפי לחובת הארץ עי\"ל דהיינו טעמא דלא בעי מתרומה ומעשר משום דתני בירושלמי רבותינו שבח\"ל היו מפרישין תרומה ומעשר עד שבאו הרובים וביטלום ובעי מאי רובים מתורגמניא ויש ליתן טעם דלפיכך בטלו תרומה ומעשר לפי שעכשיו בח\"ל אין הקרקעות שלנו שהרי משועבדות הן למלך ואנו נותנים מהם מס למלך אם כן אין להם דין קרקע להפריש תרומה ומעשר ואם תאמר בא\"י נמי משועבדות הן למלך ואפ\"ה מפרישין תרומה ומעשר וי\"ל דאין קנין לעובד כוכבים בא\"י להפקיע מיד מעשר ומן הירושלמי שהבאתי יש להוכיח דערלה וכלאים נוהגים בשל עובדי כוכבים וכן משמע בפרק אין מעמידין <span class=\"parenthesized\">(ע\"ז דף לה:)</span> דקאמר התם מפני מה גבינות העובדי כוכבים אסורין מפני שמעמידין אותם בשרף של ערלה ומיירי בערלה של עובדי כוכבים דדוחק הוא לומר דמיירי בערלה של ישראל וכן משמע לקמן <span class=\"parenthesized\">(קידושין דף לח:)</span> דקאמר ספק ערלה בח\"ל יורד ולוקח ובלבד שלא יראנו לוקט ועל כרחך מיירי בערלה דעובד כוכבים דאי בערלה דישראל הלא אסור למכור דדמי ערלה אסורין וקשה דהא אמרינן במסכת [ר\"ה <span class=\"parenthesized\">(דף ט:)</span> לענין] ערלה אחד הנוטע ואחד המבריך ואחד המרכיב יש בהם משום ערלה ואם כן איך אנו נהנים מן הכרמים שהעובדי כוכבים מבריכין אותן בכל שנה ואף על פי שאין אנו יודעין ודאי שמבריכין כולם הוה לנו לילך אחר הרוב ואומר רבינו שמשון ששאל בעובדי אדמה ואמרו לו שאינן חותכין הזמורה מן הסדן ואם כן הוא יונק עוד מן הזקנה ואמר התם <span class=\"parenthesized\">(ירושלמי פ\"ק דערלה)</span> המבריך בזמן שיונק מן הזקנה פטור מן הערלה ואם סיפק חייב והוא ניכר היטב כשיונק מן הזקנה וכשאינו יונק מן הזקנה כשהזמורה יונקת מן הזקנה עליהן נוטין [לצד אחר] וכשפוסק עליהן נוטין לצד [זקנה] וסימניך דהאי מאן דאכיל מחבריה בהית לאיסתכולי ביה ונראה דחדש נוהג בזמן הזה ולכך יש ליזהר שאם אדם יודע בודאי שהשעורים נזרעו אחר זמן הקרבת העומר דהיינו אחר י\"ו"
+  },
+  "Tosafot on Kiddushin 36b:6:1": {
+    "dependsOn": [
+      "Sukkah 47b:2"
+    ],
+    "generatedAt": "2026-11-01T23:09:29.491Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 36b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכניס כהן ידו תחת יד הבעלים ומניף</strong> - וא\"ת והא הוי חציצה דה\"נ אמרינן במנחות <span class=\"parenthesized\">(דף צד.)</span> אין תנופה בחוברין פי' בשותפים דהיכי ליעביד לינפו והדר לינפו כלומר דהשותפין זה אחר זה יניפו חדא תנופה אמר רחמנא ולא שתי תנופות ואי מנח חד מן השותפין ידיה תחת ידיה דחבריה א\"כ הוי חציצה אלמא דבכה\"ג הוי חציצה וי\"ל דלא דמי דהכא היינו טעמא דלא הוי חציצה בכה\"ג לפי שהוא גזירת הכתוב דבעינן כהן ובעלים אבל התם גבי שני שותפין חשיב כה\"ג חציצה אם אחד מהם מניח ידו תחת יד חבירו לפי שאינה גזירת הכתוב שיהיו שניהן מניפים עוד י\"ל דה\"נ לא מיירי שהכהן מניח את ידו תחת יד הבעלים ממש דבכה\"ג הוי חציצה אלא ר\"ל שאוחז הכלי למטה והבעלים אוחזין למעלה והשתא ליכא חציצה כלל דה\"נ אשכחן גבי ביכורים שהכהן היה אוחז בשפתיו כלומר בשפת הכלי למעלה והבעלים למטה ה\"נ גבי מנחות איפכא שיד הבעלים תהיה למעלה ויד הכהן למטה:"
+  }
+}

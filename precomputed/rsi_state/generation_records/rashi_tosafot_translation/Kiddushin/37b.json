@@ -1,0 +1,305 @@
+{
+  "Rashi on Kiddushin 37b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T00:10:06.952Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 37b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למה לי</strong> - כיון דחובת הגוף היא פשיטא דנוהגת בכל מושבות:"
+  },
+  "Rashi on Kiddushin 37b:10:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 37b:10:1"
+    ],
+    "generatedAt": "2026-11-02T00:10:55.071Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 37b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תבעי קידוש</strong> - ב\"ד ולא נהיג קידוש אלא ביהודה כדאמר בסנהדרין <span class=\"parenthesized\">(דף יא:)</span> כל דרישות שאתה דורש יהיו בשכנו של מקום:"
+  },
+  "Rashi on Kiddushin 37b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T00:11:21.341Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 37b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גבי חלב ודם</strong> - חקת עולם לדורותיכם בכל מושבותיכם כל חלב וכל דם לא תאכלו <span class=\"parenthesized\">(ויקרא ג)</span>:"
+  },
+  "Rashi on Kiddushin 37b:12:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 37b:12:2",
+      "Rashi on Kiddushin 37b:10:1",
+      "Rashi on Kiddushin 37b:11:1"
+    ],
+    "generatedAt": "2026-11-02T00:12:05.044Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 37b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גבי מצה</strong> - בכל מושבותיכם תאכלו מצות <span class=\"parenthesized\">(שמות י״ב:כ׳)</span>:"
+  },
+  "Rashi on Kiddushin 37b:12:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 37b:12:1"
+    ],
+    "generatedAt": "2026-11-02T00:12:33.337Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 37b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יאכלוהו</strong> - לפסח:"
+  },
+  "Rashi on Kiddushin 37b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T00:17:24.840Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 37b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשלמא למ\"ד כו'</strong> - ומושב דכתיב גבי חדש לאו לירושה וישיבה אתא היינו כו':"
+  },
+  "Rashi on Kiddushin 37b:1:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 37b:1:2"
+    ],
+    "generatedAt": "2026-11-01T23:44:42.210Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 37b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ביאה ומושב כתיב בהו</strong> - והיכי יליף מיניה מושב בלא ביאה דלמא האי דמפרש ביה ביאת הארץ הוא דלא בעי למימר כל מקום שאתם יושבים אבל מושב בלא ביאה אימא לך אפילו ח\"ל:"
+  },
+  "Rashi on Kiddushin 37b:1:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 37b:1:1"
+    ],
+    "generatedAt": "2026-11-01T23:46:31.086Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 37b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ק</strong> - רבי ישמעאל שכל מקום שנאמר ביאה ומושב וחדש אתא ר' ישמעאל לאשמועינן דכתיב ביה נמי ביאת הארץ ומושבות:"
+  },
+  "Rashi on Kiddushin 37b:3:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 37b:3:2",
+      "Rashi on Kiddushin 37b:3:3",
+      "Kiddushin 37b:3",
+      "Rashi on Kiddushin 37a:14:1",
+      "Rashi on Kiddushin 37b:1:1",
+      "Rashi on Kiddushin 37b:1:2"
+    ],
+    "generatedAt": "2026-11-01T23:48:04.882Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 37b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במאי קמיפלגי</strong> - מה ראה ר\"ע שלא למד כר' ישמעאל דכיון דכתיב ביאה ומושב בארץ קאמר לאחר ירושה וישיבה:"
+  },
+  "Rashi on Kiddushin 37b:3:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 37b:3:1",
+      "Rashi on Kiddushin 37b:3:3",
+      "Rashi on Kiddushin 37a:1:1",
+      "Rashi on Kiddushin 37a:2:1"
+    ],
+    "generatedAt": "2026-11-01T23:49:43.623Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 37b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר' ישמעאל סבר לא קירבו נסכים במדבר</strong> - ואע\"ג דכתיב במילואים <span class=\"parenthesized\">(שמות כ״ט:ל״ח)</span> וזה אשר תעשה על המזבח וכתיב ביה נסכים בעולת התמיד בקרבן ציבור הוא דהוו אבל היחידים לא נתחייבו בנסכים אלא מביאת הארץ ואילך לאחר ירושה וישיבה:"
+  },
+  "Rashi on Kiddushin 37b:3:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 37b:3:1",
+      "Rashi on Kiddushin 37b:3:2",
+      "Kiddushin 37b:3"
+    ],
+    "generatedAt": "2026-11-01T23:51:20.419Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 37b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור\"ע סבר קירבו נסכים</strong> - ליחיד במדבר משקרבו לרבים הלכך על כרחך אי להטעינה נסכים לבמה גדולה לא אצטריך קרא שכבר טעונה ועומדת וביאה האמורה כאן לא הוזכרה אלא מפני במת יחיד שהותרה בביאתן לגלגל כל י\"ד שנה ובא הכתוב להטעינם נסכים:"
+  },
+  "Rashi on Kiddushin 37b:4:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 37b:3:1",
+      "Rashi on Kiddushin 37b:3:2",
+      "Rashi on Kiddushin 37b:3:3",
+      "Kiddushin 37b:4"
+    ],
+    "generatedAt": "2026-11-01T23:58:04.343Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 37b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האי תנא דבי ר' ישמעאל</strong> - דלעיל דלית ליה ירושה וישיבה אלא היכא דכתיב מושב עם ביאה מפיק מאידך תנא מוצא מדעתו של תנא אחר דאפילו לא כתיב אלא ביאה לחודה אינו אלא לאחר ירושה וישיבה:"
+  },
+  "Rashi on Kiddushin 37b:5:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 37b:3:1",
+      "Rashi on Kiddushin 37b:4:1",
+      "Rashi on Kiddushin 37b:6:1",
+      "Rashi on Kiddushin 37a:2:1",
+      "Rashi on Kiddushin 37a:2:3"
+    ],
+    "generatedAt": "2026-11-01T23:59:50.084Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 37b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ופרט לך באחת מהן</strong> - גבי מלך כתיב <span class=\"parenthesized\">(דברים י״ז:י״ד)</span> כי תבא אל הארץ וגו' וירשתה וישבתה בה ואמרת אשימה עלי מלך:"
+  },
+  "Rashi on Kiddushin 37b:6:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 37b:3:1",
+      "Rashi on Kiddushin 37b:4:1",
+      "Rashi on Kiddushin 37b:5:1",
+      "Rashi on Kiddushin 37b:7:1",
+      "Rashi on Kiddushin 36b:2:6",
+      "Rashi on Kiddushin 36b:7:1",
+      "Rashi on Kiddushin 35a:1:1",
+      "Rashi on Kiddushin 35b:1:1"
+    ],
+    "generatedAt": "2026-11-02T00:05:56.203Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 37b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וביכורים</strong> - והיה כי תבוא אל הארץ <span class=\"parenthesized\">(שם כו)</span> דפריש בה נמי ירושה וישיבה:"
+  },
+  "Rashi on Kiddushin 37b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T00:06:15.414Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 37b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מלך דדרכו לכבוש</strong> - ישימו עליהם לאלתר ויצא לפניהם:"
+  },
+  "Rashi on Kiddushin 37b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T00:09:49.115Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 37b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מידי דהוה אחלה</strong> - דהכל מודים שנתחייבו בה מיד דכתיב בה <span class=\"parenthesized\">(במדבר טו)</span> בבואכם ותניא <span class=\"parenthesized\">(בספרי פ' שלח לך)</span> משונה ביאה זו מכל ביאות שבתורה שנאמר בהן כי יביאך כי תבאו וכאן נאמר בבואכם מכיון שבאו נתחייבו:"
+  },
+  "Tosafot on Kiddushin 37b:12:1": {
+    "dependsOn": [
+      "Pesachim 120a:14",
+      "Tosafot on Pesachim 120a:7:1",
+      "Chokhmat Shlomo on Kiddushin 37b:1",
+      "Chidushei Halachot on Kiddushin 37b:2",
+      "Chidushei Halachot on Kiddushin 37b:3",
+      "Tosafot on Kiddushin 37b:12:2"
+    ],
+    "generatedAt": "2026-11-02T00:14:44.127Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 37b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מושב דכתב רחמנא גבי מצה למה לי</strong> - תימה דבסוף ערבי פסחים <span class=\"parenthesized\">(פסחים דף קכ:)</span> מפיק מיניה לקובעו חובה בזמן הזה וי\"ל דשמא תנאי הוא דהאי תנא מפיק ליה מבערב תאכלו מצות:"
+  },
+  "Tosafot on Kiddushin 37b:12:2": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 37b:12:1",
+      "Kiddushin 37b:12",
+      "Tosafot on Kiddushin 37b:3:1",
+      "Tosafot on Kiddushin 37b:5:1"
+    ],
+    "generatedAt": "2026-11-02T00:16:58.007Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 37b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בזמן דאיכא פסח אין בזמן דליכא פסח לא קמ\"ל מושבותיכם</strong> - וא\"ת ביאה דכתיב גבי פסח למה לי וי\"ל דאתא לומר עשה מצוה זו שבשבילה תיכנס לארץ וא\"ת מבערב תאכלו מצות <span class=\"parenthesized\">(שמות י״ב:כ׳)</span> נפקא דהכתוב קבעו חובה ועל כרחך שלא בזמן פסח מיירי דאי בזמן פסח מעל מצות ומרורים נפקא <span class=\"parenthesized\">(פסחים דף קכ.)</span> וי\"ל דתרי קראי מושבותיכם ובערב תאכלו מצות צריכי חד לח\"ל בזמן שבית המקדש קיים וחד לחוצה לארץ בזמן שאין בית המקדש קיים:"
+  },
+  "Tosafot on Kiddushin 37b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T00:24:24.049Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 37b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ממחרת הפסח אכול מעיקרא לא אכול</strong> - הקשה ה\"ר אברהם אבן עזרא היכי אמרינן ממחרת הפסח דהכא הוי ששה עשר בניסן שנקרב העומר דלמא ממחרת הפסח ממחרת שחיטת הפסח קאמר דהיינו ט\"ו בניסן שעדיין לא נקרב העומר דהכי נמי אשכחן בפרשת מסעי דכתיב ממחרת הפסח יצאו בני ישראל והם יצאו בט\"ו ואומר ר\"ת דהאי ממחרת הפסח דהכא היינו ט\"ו בניסן נמי קאמר וה\"פ דקרא ויאכלו מעבור הארץ כלומר מן הישן ממחרת הפסח שהרי הוצרכו לאכול מצות וקלוי דהיינו חדש לא אכלו עד עצם היום הזה דהיינו ט\"ז בניסן לאחר שקרב העומר וה\"נ אשכחן ט\"ז דאיקרי בעצם היום הזה דכתיב ולחם וקלי וכרמל לא תאכלו עד עצם היום הזה ור\"י מפרש נהי דבעלמא ממחרת הפסח הוי ט\"ו הכא ר\"ל ט\"ז ולשון התורה לחוד ולשון נביאים לחוד ולשון חכמים לחוד ועל כרחך צ\"ל כן דאם לא כן אמאי איצטריך למימר מעיקרא לא אכול הא אין לחלק בין ט\"ו לקודם ט\"ו כיון דאכתי לא איקרב עומר אלא פשיטא דר\"ל ט\"ז דהיינו ממחרת אכילת הפסח וההיא דפ' מסעי ר\"ל ממחרת שחיטת הפסח כדפירשתי. [וע\"ע תוס' ר\"ה יג. ד\"ה דאקריבו]:"
+  },
+  "Tosafot on Kiddushin 37b:3:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 37b:3:1",
+      "Rashi on Kiddushin 37b:3:2",
+      "Rashi on Kiddushin 37b:3:3",
+      "Rashi on Kiddushin 37b:1:1",
+      "Rashi on Kiddushin 37b:1:2",
+      "Tosafot on Kiddushin 37b:5:1",
+      "Tosafot on Kiddushin 37b:8:1",
+      "Tosafot on Kiddushin 37a:13:1"
+    ],
+    "generatedAt": "2026-11-01T23:53:08.770Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 37b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במאי קמיפלגי</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> מה ראה ר\"ע לחלוק על ר' ישמעאל אבל לא בעי מה ראה רבי ישמעאל לחלוק על ר\"ע משום דדריש לכם במה הנוהגת בכולכם <span class=\"rashi-quotation\">כדפי' בקונטרס</span> לעיל:"
+  },
+  "Tosafot on Kiddushin 37b:3:2": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 37b:3:1"
+    ],
+    "generatedAt": "2026-11-01T23:57:05.427Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 37b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא קירבו נסכים במדבר</strong> - פי' עד שנתיישבו בא\"י משום דכתיב בכל מושבותיכם ואע\"ג דכתיב גבי מילואים וזה אשר תעשה על המזבח וכתיב בהו נסכים בעולת תמיד בקרבן ציבור הוא דהואי אבל קרבן יחיד לא נתחייב בנסכים אלא מביאת הארץ ואילך ולאחר ירושה וישיבה ועל כן לא נתחייבו בנסכים במדבר דאי נתחייבו שוב לא הפסיקו אפילו בגלגל ור\"ע סבר קירבו נסכים במדבר פי' ונסכים דכתיב בפ' שלח לך היינו נסכי יחיד אף בבמת יחיד דאי להטעין נסכים לקרבן יחיד בבמה גדולה לא איצטריך קרא שכבר טעונה ועומדת מזמן שהיו במדבר וא\"כ מושב דקאמר לא לאחר ירושה וישיבה קאמר שהרי במדבר הקריבום שהיה קודם ולא בא אלא להתיר קרבן יחיד בבמת יחיד בביאתן לגלגל כל י\"ד שנה ובא הכתוב להטעינם נסכים:"
+  },
+  "Tosafot on Kiddushin 37b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T00:04:13.471Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 37b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הואיל ונאמרה ביאה בתורה סתם</strong> - בפ' בהעלותך על בחדש הראשון פי' רש\"י דפרשה שבראש הספר לא נאמרה עד אייר למדת שאין מוקדם ומאוחר בתורה ולמה לא פתח בזו מפני שהוא גנותן של ישראל שכל ארבעים שנה שהיו ישראל במדבר לא הקריבו אלא פסח זה בלבד וא\"ת ולמה לא הקריבו וי\"ל דסבירא להו כתנא דהכא דאמר שכ\"מ שנאמר ביאה אינו אלא אחר ירושה וישיבה ובפסח נאמר ביאה וא\"ת א\"כ היאך הקריבו גם פסח זה וגם אותו פסח שעשו בימי יהושע קודם שנכבשה ונחלקה הארץ וי\"ל שעשו ע\"פ הדיבור וא\"ת כיון שמן הדין לא היה להם לעשות מה גנות היה להם וי\"ל דהיינו גנותם שנשתהו ליכנס לארץ עד מ' שנה מפני עון מרגלים ולפיכך לא נצטוו ואם היו זוכים ליכנס לארץ מיד היו מצווים מיד עוד י\"ל דס\"ל כי האי תנא דאמר דביאה הכתוב גבי תפילין משמע עשה מצוה זו שבשבילה תכנס לארץ וכן משמע ביאה דכתיב גבי פסח וא\"ת א\"כ למה לא עשו כי אם פסח אחד וי\"ל לפי שהיו רובם ערלים וכתיב <span class=\"parenthesized\">(שמות י״ב:מ״ח)</span> כל ערל לא יאכל בו והיינו גנותם ומ\"מ אינם חוטאים במה שלא עשו אותו דהא ערל אסור באכילת פסח וא\"ת למה לא מלו לפי שלא נשבה להם רוח צפונית כל ארבעים שנה שהיו במדבר לפי שהיו נזופים בעון מרגלים וכן משמע במסכת חגיגה. <span class=\"parenthesized\">(דף ו.)</span>:"
+  },
+  "Tosafot on Kiddushin 37b:8:1": {
+    "dependsOn": [
+      "Kiddushin 37b:8"
+    ],
+    "generatedAt": "2026-11-02T00:09:18.815Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 37b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[בכורים לא כ\"ש כו'</strong> - לית ליה השתא הך סברא דלעיל בכורים דמתהניא לאלתר] ת\"י:"
+  }
+}

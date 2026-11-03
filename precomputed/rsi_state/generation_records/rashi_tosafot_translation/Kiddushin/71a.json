@@ -1,0 +1,453 @@
+{
+  "Rashi on Kiddushin 71a:10:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 71a:10:2",
+      "Rashi on Kiddushin 71a:8:1",
+      "Rashi on Kiddushin 71a:8:2"
+    ],
+    "generatedAt": "2026-11-03T02:13:37.025Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שם בן ארבע אותיות</strong> - קריאתו וכתיבתו ופירושו חכמים מוסרין אותו כו':"
+  },
+  "Rashi on Kiddushin 71a:10:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 71a:10:1",
+      "Rashi on Pesachim 50a:20:2",
+      "Rashi on Kiddushin 71a:11:1"
+    ],
+    "generatedAt": "2026-11-03T02:15:02.610Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעלם</strong> - להעלים:"
+  },
+  "Rashi on Kiddushin 71a:11:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 71a:10:1",
+      "Rashi on Kiddushin 71a:10:2",
+      "Rashi on Kiddushin 71a:7:1",
+      "Rashi on Kiddushin 71a:8:1",
+      "Rashi on Kiddushin 71a:8:2"
+    ],
+    "generatedAt": "2026-11-03T02:15:53.980Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כתיב זה שמי וכתיב וזה זכרי</strong> - מדלא כתיב שמי וזכרי משמע שלמדו שני שמות ואמר לו זה שמי מיוחד ובזה השני אני נזכר:"
+  },
+  "Rashi on Kiddushin 71a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T02:16:26.550Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משרבו הפריצין</strong> - המשתמשין בו:"
+  },
+  "Rashi on Kiddushin 71a:12:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T02:17:52.114Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לצנועים שבכהונה</strong> - לברך בו העם במקדש לאחר עבודת ציבור של תמיד של שחר:"
+  },
+  "Rashi on Kiddushin 71a:12:3": {
+    "dependsOn": [
+      "[",
+      "Rashi on Kiddushin 71a:12:2",
+      "Rashi on Kiddushin 71a:12:4"
+    ],
+    "generatedAt": "2026-11-03T02:19:06.479Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מבליעים אותו בנעימת אחיהם הכהנים</strong> - אותן שלא היו בקיאין בו ומברכין בשם בן ארבע אותיות כשהיו מושכין את קולם בנעימה היו אלו ממהרים להבליע את השם בן י\"ב ולא היה נשמע לרבים מקול נעימות חביריהם בנעימת ביסום קול שקורין טרוף:"
+  },
+  "Rashi on Kiddushin 71a:12:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 71a:12:4",
+      "Rashi on Kiddushin 71a:12:1",
+      "Rashi on Kiddushin 71a:12:2",
+      "Rashi on Kiddushin 71a:12:3",
+      "Rashi on Kiddushin 71a:12:5",
+      "Rashi on Kiddushin 71a:12:6"
+    ],
+    "generatedAt": "2026-11-03T02:20:03.401Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:12:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שם</strong> - בן שתים עשרה ובן ארבעים ושתים לא פירשו לנו:"
+  },
+  "Rashi on Kiddushin 71a:12:5": {
+    "dependsOn": [
+      "Rashi on Kiddushin 71a:12:1",
+      "Rashi on Kiddushin 71a:12:2",
+      "Rashi on Kiddushin 71a:12:3",
+      "Rashi on Kiddushin 71a:12:4",
+      "Rashi on Kiddushin 71a:12:6",
+      "Rashi on Kiddushin 71a:12:5"
+    ],
+    "generatedAt": "2026-11-03T02:25:03.744Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:12:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחר אחי אמי</strong> - שהיה כהן ור' טרפון היה כהן בתוספתא דכתובות <span class=\"parenthesized\">(פ\"ה)</span> מעשה בר' טרפון שקדש שלש מאות נשים בשני בצורת כדי להאכילם תרומה:"
+  },
+  "Rashi on Kiddushin 71a:12:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T02:25:19.711Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:12:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לדוכן</strong> - לברך ברכת כהנים:"
+  },
+  "Rashi on Kiddushin 71a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T02:25:53.983Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואינו מעמיד על מדותיו</strong> - לנטור איבה שמא ישתמש בו להנקם:"
+  },
+  "Rashi on Kiddushin 71a:14:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 71a:14:2"
+    ],
+    "generatedAt": "2026-11-03T02:26:23.932Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד שיודע לך</strong> - במשפחה שאתה בא ליבדק בה במה נפסלה:"
+  },
+  "Rashi on Kiddushin 71a:14:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 71a:14:1",
+      "Rashi on Kiddushin 71a:8:1",
+      "Rashi on Kiddushin 71a:12:1",
+      "Rashi on Kiddushin 70b:1:1",
+      "Rashi on Kiddushin 70a:1:1",
+      "Mishnah Kiddushin 4:4"
+    ],
+    "generatedAt": "2026-11-03T02:28:22.135Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד שיודע לך במה נכשרה</strong> - צריך אתה לבדוק אחר המשפחה כמו שאמרה משנתינו <span class=\"parenthesized\">(לקמן קידושין דף עו.)</span> ארבע אמהות שהן שמנה:"
+  },
+  "Rashi on Kiddushin 71a:1:1": {
+    "dependsOn": [
+      "Kiddushin 71a:1"
+    ],
+    "generatedAt": "2026-11-03T01:54:03.003Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מטהר השבטים</strong> - מיחסם:"
+  },
+  "Rashi on Kiddushin 71a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:55:02.886Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כסף מטהר ממזרים</strong> - המטומעים בישראל מחמת ממונם והוא גורם להם שיטהרו שלעתיד לבא אין הקב\"ה מבדילם מאחר שנדבקו בהם משפחות ישראל הרבה:"
+  },
+  "Rashi on Kiddushin 71a:2:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 71a:2:1"
+    ],
+    "generatedAt": "2026-11-03T01:55:57.746Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנאמר וישב מצרף ומטהר כסף</strong> - אותם שנטמעו מחמת עשרם וסיפיה דקרא והיו לה' מגישי מנחה בצדקה צדקתו של הקב\"ה היא שאינו מבדילם אלא הואיל שנטמעו נטמעו ורבי יהושע בן לוי סבירא ליה האי מטהר לאו מבדיל פסוליהן קאמר אלא מטהרם ומכשירם כולם:"
+  },
+  "Rashi on Kiddushin 71a:3:1": {
+    "dependsOn": [
+      "[",
+      "Rashi on Kiddushin 71a:3:2",
+      "Rashi on Kiddushin 71a:3:3",
+      "Rashi on Kiddushin 71a:3:4",
+      "Rashi on Kiddushin 71a:3:5",
+      "Rashi on Kiddushin 71a:1:1",
+      "Rashi on Kiddushin 71a:2:1",
+      "Rashi on Kiddushin 71a:2:2"
+    ],
+    "generatedAt": "2026-11-03T01:57:36.780Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עיסה</strong> - כעיסה שהיא מעורבת ובשם ר' משה מרומא\"ט <span class=\"parenthesized\">(רומ\"א: רומא <span class=\"parenthesized\">(בירת איטליה)</span>)</span> שמעתי עיסה כפסולת ענבים שנסחט משקה שלהם:"
+  },
+  "Rashi on Kiddushin 71a:3:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 71a:3:1",
+      "Rashi on Kiddushin 71a:3:3"
+    ],
+    "generatedAt": "2026-11-03T01:58:30.648Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בקשו לעשות בבל עיסה</strong> - להחזיק משפחות ארץ ישראל מיוחסות ולבדוק אחר משפחות בבל כל הבאים לישא משם אשה:"
+  },
+  "Rashi on Kiddushin 71a:3:3": {
+    "dependsOn": [
+      "Kiddushin 71a:3"
+    ],
+    "generatedAt": "2026-11-03T01:59:33.930Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר להם אין שחיטה לעוף</strong> - דבר שהוא תימה להם ולא גלה להם טעמו כדי שיהו טרודים בסברא הראשונה ולא יחזרו אחר טעם השניה עד שיפטר מהם וטעם דאין שחיטה לעוף מן התורה בשחיטת חולין <span class=\"parenthesized\">(דף כז:)</span> יליף מושפך את דמו בשפיכה בעלמא:"
+  },
+  "Rashi on Kiddushin 71a:3:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 71a:3:4",
+      "Rashi on Kiddushin 71a:3:1",
+      "Rashi on Kiddushin 71a:3:2",
+      "Rashi on Kiddushin 71a:3:3",
+      "Rashi on Kiddushin 71a:3:5"
+    ],
+    "generatedAt": "2026-11-03T02:00:28.675Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קוצים אתם משימים בין עיני</strong> - משום דרבי ממשפחת בבל היה מבני בניו של הלל שעלה וקיבל נשיאותו של בני בתירא:"
+  },
+  "Rashi on Kiddushin 71a:3:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T02:00:52.382Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:3:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יטפל לכם רבי חנינא</strong> - להשיבכם דבר:"
+  },
+  "Rashi on Kiddushin 71a:5:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 71a:5:2",
+      "Kiddushin 71a:5"
+    ],
+    "generatedAt": "2026-11-03T02:01:54.275Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טלוני בעריסה ורוצו</strong> - שלא יפשפשו אחר דבריו ויהא צריך לגלות משפחות והוא היה זקן ולא היה יכול לרוץ:"
+  },
+  "Rashi on Kiddushin 71a:5:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 71a:5:1",
+      "Kiddushin 71a:6"
+    ],
+    "generatedAt": "2026-11-03T02:02:42.839Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר להם אין שחיטה לעוף</strong> - דבר שהוא תימה להם ולא גלה להם טעמו כדי שיהו טרודים בסברא הראשונה ולא יחזרו אחר טעם השניה עד שיפטר מהם וטעם דאין שחיטה לעוף מן התורה בשחיטת חולין <span class=\"parenthesized\">(דף כז:)</span> יליף מושפך את דמו בשפיכה בעלמא:"
+  },
+  "Rashi on Kiddushin 71a:6:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 71a:6:2"
+    ],
+    "generatedAt": "2026-11-03T02:03:19.570Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ישבו ובדקו</strong> - במשפחות א\"י לברר את דבריו:"
+  },
+  "Rashi on Kiddushin 71a:6:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 71a:6:1",
+      "Rashi on Kiddushin 71a:6:2"
+    ],
+    "generatedAt": "2026-11-03T02:04:04.966Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיון שהגיעו לסכנה</strong> - לפסול משפחות אנשי זרוע שיהרגום פירשו:"
+  },
+  "Rashi on Kiddushin 71a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T02:04:32.922Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היכלא</strong> - שבועה בהיכלו של מקום:"
+  },
+  "Rashi on Kiddushin 71a:7:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 71a:7:1",
+      "Rashi on Kiddushin 71a:7:2",
+      "Rashi on Kiddushin 71a:3:1",
+      "Rashi on Kiddushin 71a:3:2",
+      "Rashi on Kiddushin 71a:3:3",
+      "Rashi on Kiddushin 71a:3:4",
+      "Rashi on Kiddushin 71a:3:5",
+      "Rashi on Kiddushin 70b:1:1",
+      "Rashi on Kiddushin 70b:2:1"
+    ],
+    "generatedAt": "2026-11-03T02:05:35.881Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בידינו הוא</strong> - לגלות פסול משפחות ארץ ישראל:"
+  },
+  "Rashi on Kiddushin 71a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T02:06:01.222Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנינא</strong> - דכל משפחה שנטמעה נטמעה דאין להפרישה ולהרחיקה ולברר ספק מטמעיהם מי נטמע מי לא נטמע אלא יניחום והם ספק והם כשרים לעתיד לבא:"
+  },
+  "Rashi on Kiddushin 71a:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T02:06:24.423Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בית הצריפה</strong> - שם המשפחה:"
+  },
+  "Rashi on Kiddushin 71a:8:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T02:06:43.819Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בן ציון</strong> - אדם חשוב ואיש זרוע:"
+  },
+  "Rashi on Kiddushin 71a:8:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 71a:8:1",
+      "Rashi on Kiddushin 71a:8:2",
+      "Rashi on Kiddushin 71a:8:3",
+      "Rashi on Kiddushin 71a:8:5",
+      "Rashi on Kiddushin 70b:15:1",
+      "Rashi on Kiddushin 70b:16:1"
+    ],
+    "generatedAt": "2026-11-03T02:07:33.008Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ריחקה</strong> - הכריז שהן פסולין:"
+  },
+  "Rashi on Kiddushin 71a:8:5": {
+    "dependsOn": [
+      "Rashi on Kiddushin 71a:8:4",
+      "Rashi on Kiddushin 71a:8:5",
+      "Rashi on Kiddushin 71a:8:6",
+      "Steinsaltz on Kiddushin 71a:8",
+      "Chidushei Agadot on Kiddushin 71a:5",
+      "Rashi on Kiddushin 71a:10:1",
+      "Rashi on Kiddushin 71a:1:1",
+      "Rashi on Kiddushin 70a:5:1",
+      "Rashi on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-11-03T02:10:46.913Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:8:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אליהו בא</strong> - לעתיד לבא דכתיב <span class=\"parenthesized\">(מלאכי ג)</span> והשיב לב אבות על בנים זה מבני בניו של זה:"
+  },
+  "Rashi on Kiddushin 71a:8:6": {
+    "dependsOn": [
+      "Rashi on Kiddushin 71a:8:5",
+      "Rashi on Kiddushin 71a:8:6",
+      "Rashi on Kiddushin 71a:8:7"
+    ],
+    "generatedAt": "2026-11-03T02:11:30.874Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:8:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דיודעין</strong> - שהכל מחזיקים אותם בפסולים שנתקרבו בזרוע:"
+  },
+  "Rashi on Kiddushin 71a:8:7": {
+    "dependsOn": [
+      "Rashi on Kiddushin 71a:8:6"
+    ],
+    "generatedAt": "2026-11-03T02:12:01.035Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:8:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל משפחה שנטמעה</strong> - מחמת שלא נודע פסולה נטמעה:"
+  },
+  "Rashi on Kiddushin 71a:9:1": {
+    "dependsOn": [
+      "Kiddushin 71a:9"
+    ],
+    "generatedAt": "2026-11-03T02:12:42.568Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 71a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עוד אחרת</strong> - משפחה אחרת היתה לבד אותה שקרבה בן ציון:"
+  }
+}

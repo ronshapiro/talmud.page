@@ -1,0 +1,374 @@
+{
+  "Rashi on Kiddushin 59a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T12:23:24.495Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 59a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאו למלוה דמו</strong> - דנימא המקדש במלוה אינה מקודשת:"
+  },
+  "Rashi on Kiddushin 59a:10:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 59a:10:1"
+    ],
+    "generatedAt": "2026-11-02T12:24:27.598Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 59a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולאו לפקדון דמו</strong> - דנימא אם לא נשתייר בה שוה פרוטה אינה מקודשת כדאמר בהאיש מקדש <span class=\"parenthesized\">(לעיל קידושין דף מז.)</span> התקדשי לי בפקדון והלכה ומצאתו שנגנב או שנאבד אם נשתייר בו שוה פרוטה מקודשת כו':"
+  },
+  "Rashi on Kiddushin 59a:11:1": {
+    "dependsOn": [
+      "Kiddushin 59a:11",
+      "Rashi on Kiddushin 59a:10:1",
+      "Rashi on Kiddushin 59a:10:2",
+      "Maharshal on Kiddushin 59a:11:1",
+      "Steinsaltz on Kiddushin 59a:11"
+    ],
+    "generatedAt": "2026-11-02T12:25:55.603Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 59a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להוצאה ניתנה</strong> - מקמי דניתחלי קידושין וכי אמר לה התקדשי לי בה לאו דידיה היא ולאו מידי יהיב לה אבל אלו לא ניתנו לה להוציאן אלא ע\"מ שתתקדש בהן ולהכי כי אכלה דידה אכלה ולכי מטא זמנא מקדש:"
+  },
+  "Rashi on Kiddushin 59a:12:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 59a:12:1"
+    ],
+    "generatedAt": "2026-11-02T12:26:48.067Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 59a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחזרה בה</strong> - בתוך ל' אמרה אי אפשי בהן:"
+  },
+  "Rashi on Kiddushin 59a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T12:27:13.216Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 59a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ביטל אם עד שלא תרם ביטל</strong> - האומר לשלוחו צא ותרום וחזר ובטלו מלהיות שלוחו או בפניו או שלא בפניו:"
+  },
+  "Rashi on Kiddushin 59a:13:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 59a:13:1",
+      "Kiddushin 59a:13"
+    ],
+    "generatedAt": "2026-11-02T12:27:53.364Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 59a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכי מעשה דמו</strong> - ואע\"פ שלא חלו מיד הוי מעשה מיהא לחול אחר שלשים והא דקרי ליה דיבור משום דלאו מעשה ממש הוא:"
+  },
+  "Rashi on Kiddushin 59a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T12:28:23.783Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 59a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והגיע בשליח</strong> - רבותא אשמועינן אע\"פ שלא יצא אחריו לשם כך אלא שפגע בו ואמר לו הרי בטל ולא אמרינן לצעורי בעלמא קא מכוין והכי מפורשת בפ' השולח:"
+  },
+  "Rashi on Kiddushin 59a:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T12:28:48.356Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 59a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל כמה דלא מטא גיטא</strong> - ליד האשה לאו מידי הוא:"
+  },
+  "Rashi on Kiddushin 59a:16:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 59a:16:2",
+      "Rashi on Kiddushin 59a:16:3",
+      "Rashi on Chullin 25a:13:1",
+      "Rashi on Chullin 25a:13:2",
+      "Rashi on Chullin 25a:13:3",
+      "Chullin 25a:13",
+      "Chullin 25a:14",
+      "Chullin 25b:1",
+      "Chullin 25b:2",
+      "Chullin 25b:3",
+      "Chullin 25b:4",
+      "Chullin 25b:5"
+    ],
+    "generatedAt": "2026-11-02T12:30:52.635Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 59a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יורדין לידי טומאה במחשבה</strong> - כגון גולמי כלים דאמר בהכל שוחטין <span class=\"parenthesized\">(חולין דף כה.)</span> כל שעתיד לשוף לשבץ ולגרר ואמר התם דאכתי חסרון מלאכה הוא וטהורים ואם חישב עליה שלא לשוף ושלא לשבץ הביאתו מחשבה זו לידי גמר מלאכה מכאן ולהבא:"
+  },
+  "Rashi on Kiddushin 59a:16:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 59a:16:1",
+      "Rashi on Kiddushin 59a:16:2",
+      "Rashi on Kiddushin 59a:16:3"
+    ],
+    "generatedAt": "2026-11-02T12:31:26.739Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 59a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין עולין מטומאתן</strong> - משקבלוה:"
+  },
+  "Rashi on Kiddushin 59a:16:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 59a:16:1",
+      "Rashi on Kiddushin 59a:16:2"
+    ],
+    "generatedAt": "2026-11-02T12:32:16.456Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 59a:16:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא בשינוי מעשה</strong> - שיעשה בה מעשה לקלקלם שישברם או ינקבם וכן עד שלא יקבלו טומאה אין עולין מתורת קבלת טומאה שירדו במחשבה זו אלא בשינוי מעשה עד שיתחיל לשוף לשבץ ולגרר:"
+  },
+  "Rashi on Kiddushin 59a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T12:06:18.475Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 59a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומאי שנא התם</strong> - בפ' האיש מקדש:"
+  },
+  "Rashi on Kiddushin 59a:1:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 59a:1:1",
+      "Kiddushin 59a:2"
+    ],
+    "generatedAt": "2026-11-02T12:07:47.243Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 59a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דקתני האומר לשלוחו</strong> - צא וקדש לי אשה פלונית במקום פלוני והלך וקדשה במקום אחר אינה מקודשת מאי שנא התם דנקט לשון שליחות ששלחו לשם כך והכא נקט חברו שלא שלחו לשם כך אלא אם יזדמן לו במקום פלוני דרך אצלה:"
+  },
+  "Rashi on Kiddushin 59a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T12:08:14.914Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 59a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דסבר</strong> - האי משלח לא טרח האי שליח לבקשה לי במקום אחר ולא סמכה דעתיה לשוויה שליח אלא באותו מקום:"
+  },
+  "Rashi on Kiddushin 59a:3:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 59a:3:1",
+      "Rashi on Kiddushin 59a:3:2"
+    ],
+    "generatedAt": "2026-11-02T12:09:20.483Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 59a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מראה מקום הוא לו</strong> - אם תמצאנה שם קדשנה לי שם ואיני מטריחך למקום אחר ומיהו אם עבד עבד:"
+  },
+  "Rashi on Kiddushin 59a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T12:09:40.486Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 59a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא יהבוה ניהליה</strong> - לא רצו ליתנה לצורך בנו:"
+  },
+  "Rashi on Kiddushin 59a:4:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 59a:4:1",
+      "Rashi on Kiddushin 59a:4:2"
+    ],
+    "generatedAt": "2026-11-02T12:11:58.487Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 59a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומקשינן איבעי ליה לאודועיה</strong> - להוציא עצמו מן מנהג רמאות:"
+  },
+  "Rashi on Kiddushin 59a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T12:14:23.063Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 59a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באגא דאלימי</strong> - בקעה של בעלי זרוע היתה ולא יניחו לכל אדם לקנות קרקע אצלם:"
+  },
+  "Rashi on Kiddushin 59a:6:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 59a:6:2",
+      "Rashi on Kiddushin 59a:6:3",
+      "Rashi on Kiddushin 59a:6:4"
+    ],
+    "generatedAt": "2026-11-02T12:15:08.934Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 59a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהפך בההיא ארעא</strong> - מחזר עליה לקנותה:"
+  },
+  "Rashi on Kiddushin 59a:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T12:15:39.802Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 59a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קבליה</strong> - קבל עליה סיפר דברי צעקתו לר' זירא:"
+  },
+  "Rashi on Kiddushin 59a:6:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 59a:6:1",
+      "Rashi on Kiddushin 59a:6:2",
+      "Rashi on Kiddushin 59a:6:4"
+    ],
+    "generatedAt": "2026-11-02T12:16:18.697Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 59a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לרגל</strong> - כשדורשין בהלכות הרגל היו מקבלין פני הרב:"
+  },
+  "Rashi on Kiddushin 59a:6:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 59a:6:1",
+      "Rashi on Kiddushin 59a:6:2",
+      "Rashi on Kiddushin 59a:6:3",
+      "Rashi on Kiddushin 59a:6:4"
+    ],
+    "generatedAt": "2026-11-02T12:16:52.047Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 59a:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עני המהפך בחררה</strong> - מחזר אחריה לזכות בה מן ההפקר או שיתננה לו בעל הבית:"
+  },
+  "Rashi on Kiddushin 59a:7:1": {
+    "dependsOn": [
+      "Steinsaltz on Kiddushin 59a:7"
+    ],
+    "generatedAt": "2026-11-02T12:20:15.065Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 59a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נקרא רשע</strong> - שיורד לחיי חבירו:"
+  },
+  "Rashi on Kiddushin 59a:7:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 59a:7:1"
+    ],
+    "generatedAt": "2026-11-02T12:20:47.950Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 59a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא הוה ידענא</strong> - שרב גידל מתעסק בה:"
+  },
+  "Rashi on Kiddushin 59a:7:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T12:21:10.937Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 59a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דארעא קמייתא</strong> - זו היא לי ראשונה שלקחתי מעולם:"
+  },
+  "Rashi on Kiddushin 59a:7:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T12:21:39.734Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 59a:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא מסמנא מילתא</strong> - אינה סימן טוב שימכור אדם מקחו הראשון:"
+  },
+  "Rashi on Kiddushin 59a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T12:22:03.981Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 59a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ארעא דרבנן</strong> - הפקר לתלמידים:"
+  },
+  "Rashi on Kiddushin 59a:9:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 59a:10:1",
+      "Rashi on Kiddushin 59a:10:2",
+      "Rashi on Kiddushin 59a:7:1",
+      "Rashi on Kiddushin 59a:8:1"
+    ],
+    "generatedAt": "2026-11-02T12:22:55.991Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 59a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואע\"פ שנתאכלו המעות</strong> - בתוך ל' יום דכי בעו קידושין למיחל ליתנייהו למעות אפ\"ה חיילי:"
+  },
+  "Tosafot on Kiddushin 59a:4:1": {
+    "dependsOn": [
+      "Kiddushin 45b:1",
+      "Rashi on Kiddushin 45b:1:2",
+      "Rashi on Kiddushin 59a:4:1",
+      "Rashi on Kiddushin 59a:4:2",
+      "Chokhmat Shlomo on Kiddushin 59a:1"
+    ],
+    "generatedAt": "2026-11-02T12:14:01.754Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 59a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לקדושי איתתא לבריה</strong> - ומיירי דארצויי ארצי קמיה ושתיק דלשוייה שליח אמר לעיל <span class=\"parenthesized\">(קידושין דף מה:)</span> דלא חציף איניש דמשוי אביו שליח אבל הכא דארצויי ארצי ושתיק איכא למימר דסמיך עליו:"
+  },
+  "Tosafot on Kiddushin 59a:6:1": {
+    "dependsOn": [
+      "Chidushei Halachot on Kiddushin 59a:2"
+    ],
+    "generatedAt": "2026-11-02T12:19:06.595Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 59a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עני המהפך בחררה ובא אחר ונטלה כו'</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> דמיירי בחררה של הפקר וקשה מהא דתנן בשנים אוחזין <span class=\"parenthesized\">(ב\"מ דף י.)</span> ראה את המציאה ונפל לו עליה או שפירש טליתו עליה ובא אחר ונטלה הרי היא שלו וכן הא דקאמר התם <span class=\"parenthesized\">(שם)</span> מי שליקט מקצת הפאה ופירש טליתו עליה מעבירים אותו הימנה ואמאי עני מהפך בחררה הוא ואומר ר\"ת דאיסור דמהפך דנקט הכא לא שייך אלא דוקא כשרוצה העני להרויח בשכירות או כשרוצה לקנות דבר אחד וחבירו מקדים וקונה והוי דומיא דרב גידל ומש\"ה קאמר דנקרא רשע כי למה מחזר על זאת שטרח בה חבירו ילך וישתכר במקום אחר אבל אם היתה החררה דהפקר ליכא איסור שאם לא זכה בזאת לא ימצא אחרת ומיהו קשה מההיא דפרק לא יחפור <span class=\"parenthesized\">(ב\"ב דף כא:)</span> דקאמר התם מרחיקין מן הדג כמלא ריצת הדג אע\"פ שהוא של הפקר ונראה דהתם היינו טעמא מפני שהוא יורד לאומנתו כי ההיא דקאמר התם <span class=\"parenthesized\">(שם)</span> האי בר מבואה דאוקי ריחיא ואתא בר מבואה ואוקי בהדיה מצי לעכובי עליה דקאמר ליה דקא פסקת לחיותאי ועוד אומר רבינו מאיר אביו של ר\"ת דמיירי בדג מת שכן דרך הדייגים להשים במצודות דג מת והדגים מתאספים שם סביב אותו הדג וכיון שזה פירש מצודתו תחילה וע\"י מעשה שעשה זה מתאספים שם סביב ודאי אם היה חבירו פורש הוה כאילו גוזל לו ויכול לומר לו תוכל לעשות כן במקום אחר ומכאן נראה למהר\"ר יצחק שאסור למלמד להשכיר עצמו לבעל הבית שיש לו מלמד אחר בביתו כל זמן שהמלמד בביתו שמאחר שהוא שכיר שם ילך המלמד במקום אחר להשתכר שם אם לא שיאמר בעה\"ב דאין רצונו לעכב המלמד שלו אבל אם שכר בעה\"ב מלמד אחד יכול בע\"ה אחר לשכור אותו מלמד עצמו ואינו יכול לומר לו הבעה\"ב לך ושכור מלמד אחר דנימא ליה אין רצוני אלא לזה שהרי כמדומה לי שזה ילמוד בני יפה ממלמד אחר:"
+  }
+}

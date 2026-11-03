@@ -1,0 +1,484 @@
+{
+  "Rashi on Kiddushin 22b:10:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 22b:10:2"
+    ],
+    "generatedAt": "2026-11-01T08:49:56.711Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תקפו</strong> - בחזקה:"
+  },
+  "Rashi on Kiddushin 22b:10:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 22b:10:1"
+    ],
+    "generatedAt": "2026-11-01T08:50:24.503Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא קנאו</strong> - דמדעתיה אזל ואין זו משיכה:"
+  },
+  "Rashi on Kiddushin 22b:11:1": {
+    "dependsOn": [
+      "Kiddushin 22b:11"
+    ],
+    "generatedAt": "2026-11-01T08:51:06.667Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשלמא לתנא דידן</strong> - לא תיקשי לשמואל אמאי לא תני משיכה במתניתין דאיכא לתרוצי כדאוקמינן דמילתא דאיתא במטלטלין לא קתני אלא תנא ברא דתנא חליפין בהדייהו תיקשי לשמואל אי איתיה דנקנה במשיכה ליתנייה נמי במתניתין:"
+  },
+  "Rashi on Kiddushin 22b:11:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 22b:11:1"
+    ],
+    "generatedAt": "2026-11-01T08:51:41.751Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מילתא דאיתא בין במקרקעי בין במטלטלי</strong> - כגון חליפין צירף ושנה עם השאר דאיתנהו במקרקעי אבל משיכה דליתא במקרקעי לא תנא בהדייהו:"
+  },
+  "Rashi on Kiddushin 22b:12:1": {
+    "dependsOn": [
+      "Kiddushin 22b:12",
+      "Rashi on Kiddushin 22b:12:1",
+      "Rashi on Kiddushin 22b:12:2",
+      "Rashi on Kiddushin 22b:12:3"
+    ],
+    "generatedAt": "2026-11-01T08:52:26.370Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיצד במסירה</strong> - גבי בהמה קאי דקתני מתני' <span class=\"parenthesized\">(לקמן קידושין דף כה:)</span> בהמה גסה נקנית במסירה:"
+  },
+  "Rashi on Kiddushin 22b:12:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T08:52:41.638Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשערה</strong> - כגון שיער שבראש הסוס:"
+  },
+  "Rashi on Kiddushin 22b:12:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 22b:12:1",
+      "Rashi on Kiddushin 22b:12:2",
+      "Jastrow, טֶלֶף 1",
+      "Rashi on Kiddushin 22b:1:1",
+      "Rashi on Kiddushin 22b:6:1"
+    ],
+    "generatedAt": "2026-11-01T08:54:12.802Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שליף</strong> - משאוי:"
+  },
+  "Rashi on Kiddushin 22b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T08:54:40.450Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אדעתא דמרה אזלא</strong> - על דעת הקורא אותה לפי שאין לה דעת:"
+  },
+  "Rashi on Kiddushin 22b:14:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T08:54:56.547Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אדעתיה דנפשיה</strong> - מדעת עצמו:"
+  },
+  "Rashi on Kiddushin 22b:14:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T08:55:21.820Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קטן</strong> - דלית ליה דעת כבהמה דמי ואם קראו לשם קניה ובא אצלו קנאו:"
+  },
+  "Rashi on Kiddushin 22b:15:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 22b:15:2",
+      "Rashi on Kiddushin 22b:15:3",
+      "Rashi on Kiddushin 22b:15:4"
+    ],
+    "generatedAt": "2026-11-01T08:56:06.787Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התיר לו מנעלו</strong> - העבד ללוקח:"
+  },
+  "Rashi on Kiddushin 22b:15:2": {
+    "dependsOn": [
+      "["
+    ],
+    "generatedAt": "2026-11-01T08:57:20.859Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גרדו</strong> - גראט\"ר <span class=\"parenthesized\">(גרטי\"ר: לגרד)</span> בלע\"ז:"
+  },
+  "Rashi on Kiddushin 22b:15:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 22b:15:1",
+      "Rashi on Kiddushin 22b:15:2",
+      "Rashi on Kiddushin 22b:15:4"
+    ],
+    "generatedAt": "2026-11-01T08:58:03.946Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הגביהו</strong> - העבד את הלוקח:"
+  },
+  "Rashi on Kiddushin 22b:15:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T08:58:29.078Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:15:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי קאמר</strong> - מה ענין הגבהה דעלמא להגבהה דהכא הגבהה דעלמא לוקח מגביה החפץ והכא אמרינן שהעבד מגביהו משום עבודה שהלוקח משעבד בו לקנותו בחזקה:"
+  },
+  "Rashi on Kiddushin 22b:17:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 22b:17:2",
+      "Kiddushin 22b:17"
+    ],
+    "generatedAt": "2026-11-01T08:59:17.164Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא מעתה</strong> - דהגביהו הוא לרבו קנאו:"
+  },
+  "Rashi on Kiddushin 22b:17:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 22b:17:1",
+      "Rashi on Kiddushin 22b:17:2",
+      "Kiddushin 22b:17"
+    ],
+    "generatedAt": "2026-11-01T09:02:21.816Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שפחה כנענית תקנה בביאה</strong> - דהא אגבהה ליה:"
+  },
+  "Rashi on Kiddushin 22b:19:1": {
+    "dependsOn": [
+      "Steinsaltz on Kiddushin 22b:19",
+      "Versions on Kiddushin 22b:19",
+      "Kiddushin 22b:19",
+      "Rashi on Kiddushin 22b:19:2",
+      "Rashi on Kiddushin 22b:1:1"
+    ],
+    "generatedAt": "2026-11-01T09:05:04.291Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הנדואה</strong> - מארץ כושי כוש מתרגמינן הינדואה:"
+  },
+  "Rashi on Kiddushin 22b:19:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 22b:19:1",
+      "Rashi on Kiddushin 22b:19:2",
+      "Rashi on Kiddushin 22b:19:3"
+    ],
+    "generatedAt": "2026-11-01T09:05:44.310Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דתקיף ליה עלמא</strong> - גוסס ונוטה למות:"
+  },
+  "Rashi on Kiddushin 22b:19:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T09:06:05.731Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:19:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ליה</strong> - מר זוטרא לעבדיה דגר:"
+  },
+  "Rashi on Kiddushin 22b:19:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T09:06:24.131Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:19:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלוף לי מסנאי</strong> - לקנותו בחזקה היה מתכוון שיהא בעבודתו כשימות אדונו:"
+  },
+  "Rashi on Kiddushin 22b:19:5": {
+    "dependsOn": [
+      "Rashi on Kiddushin 22b:19:1",
+      "Rashi on Kiddushin 22b:19:2",
+      "Rashi on Kiddushin 22b:19:3",
+      "Rashi on Kiddushin 22b:19:4",
+      "Kiddushin 22b:19"
+    ],
+    "generatedAt": "2026-11-01T09:07:09.844Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:19:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איכא דאמרי גדול היה</strong> - העבד ונזהר בו שלא יזכה הוא עצמו מן ההפקר לפיכך קדם לפני המיתה וזכה בו והגר פירש למיתה ומר זוטרא פירש לחיים תחתיו שלא יהא העבד בלא אדון רגע אחד:"
+  },
+  "Rashi on Kiddushin 22b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T08:34:38.107Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אילו נאמר ונתת אזנו בדלת הייתי אומר ידקור כנגד אזנו בדלת</strong> - אבל אזן לא ירצענה:"
+  },
+  "Rashi on Kiddushin 22b:2:1": {
+    "dependsOn": [
+      "Kiddushin 22b:2",
+      "Rashi on Kiddushin 22b:1:1",
+      "Rashi on Kiddushin 22b:2:2",
+      "Rashi on Kiddushin 22a:1:1",
+      "Rashi on Kiddushin 22a:2:1",
+      "Rashi on Kiddushin 22a:3:1"
+    ],
+    "generatedAt": "2026-11-01T08:35:56.575Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאזן מאבראי</strong> - כלומר רחוק מן הדלת כדכתיב את אזנו והדר יתן אזנו בדלת ויקח את המרצע וידקור בדלת מעבר השני כנגד אזנו לקיים ולקחת המרצע ונתת באזנו בדלת:"
+  },
+  "Rashi on Kiddushin 22b:2:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 22b:2:1"
+    ],
+    "generatedAt": "2026-11-01T08:36:32.394Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דוקר ויורד</strong> - אזנו כשנותנה על הדלת עד שמגיע לדלת:"
+  },
+  "Rashi on Kiddushin 22b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T08:36:49.103Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עקורה</strong> - מן המזוזה ומוטלת לארץ:"
+  },
+  "Rashi on Kiddushin 22b:3:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 22b:3:1"
+    ],
+    "generatedAt": "2026-11-01T08:37:20.430Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה מזוזה מעומד</strong> - דבלאו הכי לא מקרי מזוזה:"
+  },
+  "Rashi on Kiddushin 22b:4:1": {
+    "dependsOn": [
+      "Jastrow, חוֹמֶר II 1",
+      "Tosafot on Kiddushin 22b:4:1"
+    ],
+    "generatedAt": "2026-11-01T08:40:49.179Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חומר</strong> - צרור המרגליות וצרור הבושם תלוי בצואר לתכשיט:"
+  },
+  "Rashi on Kiddushin 22b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T08:44:06.362Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקונה את עצמו</strong> - מיד רבו:"
+  },
+  "Rashi on Kiddushin 22b:6:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 22b:6:1",
+      "Rashi on Kiddushin 22b:6:3",
+      "Rashi on Kiddushin 22b:6:4"
+    ],
+    "generatedAt": "2026-11-01T08:44:54.118Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכסף ע\"י אחרים</strong> - שיתנוהו לרבו ע\"מ שיהא זה בן חורין אבל הוא עצמו לא יקבל מהם ואפילו ע\"מ שאין לרבו רשות בו דקסבר אין קנין לעבד בלא רבו:"
+  },
+  "Rashi on Kiddushin 22b:6:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 22b:6:1",
+      "Rashi on Kiddushin 22b:6:2",
+      "Rashi on Kiddushin 22b:6:4",
+      "Rashi on Kiddushin 22b:1:1",
+      "Rashi on Kiddushin 22b:2:1",
+      "Rashi on Kiddushin 22b:3:1",
+      "Rashi on Kiddushin 22b:4:1"
+    ],
+    "generatedAt": "2026-11-01T08:45:42.013Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובשטר ע\"י עצמו</strong> - שיקבלנו הוא ובגמרא מפרש לכולה דרבי מאיר ורבנן:"
+  },
+  "Rashi on Kiddushin 22b:6:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 22b:6:1",
+      "Rashi on Kiddushin 22b:6:2",
+      "Rashi on Kiddushin 22b:6:3",
+      "Rashi on Kiddushin 22b:6:4"
+    ],
+    "generatedAt": "2026-11-01T08:46:15.726Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובלבד שיהא הכסף משל אחרים</strong> - דעבד אין לו כלום דאם מצא מציאה או קבל מתנה הכל לרבו ואם בא לפדות ע\"י עצמו צריך להיות משל אחרים ויתנוהו לו ע\"מ שאין לרבו רשות בו:"
+  },
+  "Rashi on Kiddushin 22b:7:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 22b:6:1"
+    ],
+    "generatedAt": "2026-11-01T08:46:56.830Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שדה נקנית בכל הני</strong> - ולקמן יליף בפירקין <span class=\"parenthesized\">(דף כו.)</span> וכל עובדי כוכבים ככנענים משנמכר לעבד אלא שכל עבדים נקראין על שם כנען משום דכתיב ביה <span class=\"parenthesized\">(בראשית ט)</span> עבד עבדים:"
+  },
+  "Rashi on Kiddushin 22b:9:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 22b:9:1"
+    ],
+    "generatedAt": "2026-11-01T08:49:30.706Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 22b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מילתא</strong> - דאיתיה בעבד וליתא בשאר מטלטלין קתני אבל חליפין דאיתנהו נמי בשאר מטלטלין שהמטלטלין גם הם נקנין בחליפין לא איצטריך ליה למיתני:"
+  },
+  "Tosafot on Kiddushin 22b:19:1": {
+    "dependsOn": [
+      "Kiddushin 22b:19",
+      "Tosafot on Kiddushin 22b:4:1",
+      "Tosafot on Kiddushin 22b:8:1",
+      "Rashi on Kiddushin 22b:19:1",
+      "Rashi on Kiddushin 22b:19:2",
+      "Rashi on Kiddushin 22b:19:3",
+      "Rashi on Kiddushin 22b:19:4",
+      "Rashi on Kiddushin 22b:19:5",
+      "Maharsha on Kiddushin 22b:19:1",
+      "Maharsha: Chidushei Halachot on Kiddushin 22b:4"
+    ],
+    "generatedAt": "2026-11-01T09:08:51.347Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 22b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איכא דאמרי גדול היה</strong> - העבד ונזהר בו שלא יזכה הוא בעצמו מן ההפקר לפיכך קדם לפני המיתה וזכה בו זה פירש למיתה יהודה הינדואה וזה פירש לחיים מר זוטרא תחתיו במקומו שלא יהיה העבד רגע אחד בלא אדון:"
+  },
+  "Tosafot on Kiddushin 22b:4:1": {
+    "dependsOn": [
+      "Community Translation on Tosafot on Kiddushin 22b:4:1",
+      "Sefer HeArukh, Letter Ayin 7",
+      "Rashi on Kiddushin 22b:4:1",
+      "Steinsaltz comment #1 on Kiddushin 22b:4"
+    ],
+    "generatedAt": "2026-11-01T08:42:44.055Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 22b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כמין חומר</strong> - <span class=\"rashi-quotation\">פירש הקונטרס</span> צרור מרגליות או בשמים שתלוי בצואר נשים לתכשיט ור\"ת פירש חומר מעשה וכן פירש הערוך בלשון ערבי כשאומר לחבירו מה מעשיך אומר לו מה חמרך:"
+  },
+  "Tosafot on Kiddushin 22b:4:2": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 22b:4:2",
+      "Tosafot on Kiddushin 22b:4:1",
+      "Tosafot on Kiddushin 22b:4:3",
+      "Kiddushin 22b:4"
+    ],
+    "generatedAt": "2026-11-01T08:43:48.770Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 22b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה נשתנה אזן</strong> - יש במדרש דמרצ\"ע בגימטריא ד' מאות <span class=\"parenthesized\">(שנה)</span> ולפי שהיו ישראל עבדים ארבע מאות שנה וגאלם הקב\"ה והלך זה וקנה אדון לעצמו לפיכך ירצע במרצע העולה כך:"
+  },
+  "Tosafot on Kiddushin 22b:8:1": {
+    "dependsOn": [
+      "Translation on Tosafot on Kiddushin 22b:8:1",
+      "Tosafot on Kiddushin 22b:4:1",
+      "Tosafot on Kiddushin 22b:19:1"
+    ],
+    "generatedAt": "2026-11-01T08:48:55.614Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 22b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[ת\"ל לעולם כו'</strong> - ואין לומר לעולמו של יובל דא\"כ לשתוק קרא מיניה ונילף משדה אחוזה. ת\"י]:"
+  }
+}

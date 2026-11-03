@@ -1,0 +1,468 @@
+{
+  "Rashi on Kiddushin 28a:10:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 28a:10:1",
+      "Community Translation: Translation on Rashi on Kiddushin 28a:10:1"
+    ],
+    "generatedAt": "2026-11-01T14:33:09.239Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 28a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי ניהו מטבע</strong> - שהוא הניתן דמים באחר בכל מקום ואשמועינן מתני' דאע\"ג דבתורת דמים קיימא לן דלא קני כי יהביה ליה בתורת חליפין קני:"
+  },
+  "Rashi on Kiddushin 28a:10:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 28a:10:2",
+      "Rashi on Kiddushin 28a:10:1",
+      "Rashi on Kiddushin 28a:10:3",
+      "Rashi on Kiddushin 27b:1:1",
+      "Rashi on Kiddushin 27b:2:1"
+    ],
+    "generatedAt": "2026-11-01T14:34:44.266Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 28a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמע מינה כו'</strong> - ואנן קיימא לן בפרק הזהב <span class=\"parenthesized\">(ב\"מ דף מו.)</span> דאין מטבע נעשה חליפין:"
+  },
+  "Rashi on Kiddushin 28a:10:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T14:35:20.105Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 28a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רב יהודה הכי קאמר כל הנישום דמים באחר</strong> - כל דבר שאם בא לתתו דמים באחר צריך לשומו בדמים דהיינו כל המטלטלין בר ממטבע:"
+  },
+  "Rashi on Kiddushin 28a:1:1": {
+    "dependsOn": [
+      "Translation on Rashi on Kiddushin 28a:1:1"
+    ],
+    "generatedAt": "2026-11-01T14:00:53.472Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 28a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא ניתנה ליתבע</strong> - שבועה שלה בעד אחד כדאמרינן התם <span class=\"parenthesized\">(ריש סוטה)</span> דצריך שני עדים שראוה שנסתרה דיליף דבר דבר מממון:"
+  },
+  "Rashi on Kiddushin 28a:1:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 28a:1:2",
+      "Rashi on Kiddushin 27b:13:1",
+      "Rashi on Kiddushin 28a:1:1"
+    ],
+    "generatedAt": "2026-11-01T14:01:49.838Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 28a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ממון שניתן ליתבע</strong> - להשביע בעד אחד אם טענו מנה וכפר לו בכולו ועד אחד מעידו שהוא חייב לו נשבע שנאמר לא יקום עד אחד באיש לכל עון ולכל חטאת לכל עון ולכל חטאת אינו קם אבל קם הוא לשבועה <span class=\"parenthesized\">(שבועות דף מ.)</span>:"
+  },
+  "Rashi on Kiddushin 28a:1:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 28a:1:3",
+      "Rashi on Kiddushin 28a:1:1",
+      "Rashi on Kiddushin 28a:1:2",
+      "Kiddushin 27b:13",
+      "Kiddushin 27b:14",
+      "Kiddushin 28a:1"
+    ],
+    "generatedAt": "2026-11-01T14:02:44.976Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 28a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינו דין שמגלגלין</strong> - את שבועתו להשביע בגלגול:"
+  },
+  "Rashi on Kiddushin 28a:2:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 28a:2:1",
+      "Rashi on Kiddushin 28a:2:2",
+      "Rashi on Kiddushin 28a:2:3",
+      "Kiddushin 28a:1"
+    ],
+    "generatedAt": "2026-11-01T14:03:58.799Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 28a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אשכחן ודאי</strong> - שמגלגלין שבועה טענת ברי בדבר שאין חייבין עליו שבועה כגון קרקעות או שלא הודה במקצת שמגלגלין אותו אם נתחייב לו שבועה ממקום אחר:"
+  },
+  "Rashi on Kiddushin 28a:2:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 28a:2:2",
+      "Rashi on Kiddushin 28a:2:1",
+      "Rashi on Kiddushin 28a:2:3"
+    ],
+    "generatedAt": "2026-11-01T14:04:50.634Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 28a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ספק מנין</strong> - טענת שמא כגון שבועת השותפין והאריסין שחלקו דתנן בשבועות <span class=\"parenthesized\">(דף מה.)</span> חלקו השותפין והאריסין אינו יכול להשביעו וקתני נתחייב לו שבועה ממקום אחר מגלגלין עליו את הכל אלמא ספק נמי מגלגלין:"
+  },
+  "Rashi on Kiddushin 28a:2:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 28a:2:1",
+      "Rashi on Kiddushin 28a:2:2",
+      "Translation on Rashi on Kiddushin 28a:2:3"
+    ],
+    "generatedAt": "2026-11-01T14:05:52.502Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 28a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנלן</strong> - אי מק\"ו לא דמי דסוטה כל שבועתה ספק וגלגול נמי ספק ממון עיקר שבועתו אינו באה אלא בטענת ודאי דכתיב <span class=\"parenthesized\">(שמות כ״ב:ו׳)</span> כי יתן איש ושבועת השותפין תקנתא דרבנן היא משום דמורו בה היתירא כדאמר התם <span class=\"parenthesized\">(שבועות דף מח:)</span> וכיון דעיקר שבועת ממון ליתא אלא בטענת ודאי גלגול דידיה נמי בטענת ודאי ולא בטענת ספק:"
+  },
+  "Rashi on Kiddushin 28a:3:1": {
+    "dependsOn": [
+      "Translation on Rashi on Kiddushin 28a:3:1"
+    ],
+    "generatedAt": "2026-11-01T14:07:52.926Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 28a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שבועה בפנים</strong> - דסוטה שמשביעין אותה בעזרה:"
+  },
+  "Rashi on Kiddushin 28a:4:1": {
+    "dependsOn": [
+      "Community Translation on Rashi on Kiddushin 28a:4:1",
+      "Rashi on Kiddushin 28a:4:2"
+    ],
+    "generatedAt": "2026-11-01T14:09:26.279Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 28a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד היכן</strong> - כחה של גלגול לגלגל דבר שאין נשבעין עליו:"
+  },
+  "Rashi on Kiddushin 28a:4:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 28a:4:2",
+      "Kiddushin 28a:5",
+      "Rashi on Kiddushin 28a:4:1"
+    ],
+    "generatedAt": "2026-11-01T14:10:28.254Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 28a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאמר ליה עבדי אתה</strong> - אפי' זו מגלגלין אם יתחייב לו שבועה ממקום אחר ובמסקנא מפרש מאי רבותא מקרקע דאמר עד היכן:"
+  },
+  "Rashi on Kiddushin 28a:5:1": {
+    "dependsOn": [
+      "Translation on Rashi on Kiddushin 28a:5:1",
+      "Rashi on Kiddushin 28a:4:1",
+      "Rashi on Kiddushin 28a:4:2",
+      "Rashi on Kiddushin 28a:5:2"
+    ],
+    "generatedAt": "2026-11-01T14:11:08.733Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 28a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הקורא לחבירו עבד</strong> - עבד כנעני:"
+  },
+  "Rashi on Kiddushin 28a:5:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 28a:5:2",
+      "Translation on Rashi on Kiddushin 28a:5:2",
+      "Rashi on Kiddushin 28a:5:1",
+      "Rashi on Kiddushin 28a:5:3",
+      "Rashi on Kiddushin 28a:5:4"
+    ],
+    "generatedAt": "2026-11-01T14:12:02.782Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 28a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יהא בנידוי</strong> - היו מנדין אותו שמזלזל בישראל כל כך אף הם יזלזלו בו:"
+  },
+  "Rashi on Kiddushin 28a:5:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 28a:5:3",
+      "Rashi on Kiddushin 28a:5:1",
+      "Rashi on Kiddushin 28a:5:2",
+      "Rashi on Kiddushin 28a:5:4",
+      "Tosafot on Kiddushin 28a:5:1",
+      "Steinsaltz on Kiddushin 28a:5",
+      "Steinsaltz comment #1 on Kiddushin 28a:5",
+      "Steinsaltz comment #2 on Kiddushin 28a:5",
+      "Steinsaltz comment #3 on Kiddushin 28a:5",
+      "Steinsaltz comment #4 on Kiddushin 28a:5",
+      "Steinsaltz comment #5 on Kiddushin 28a:5",
+      "Steinsaltz comment #6 on Kiddushin 28a:5",
+      "Mishneh Torah, Torah Study 6:14",
+      "Kessef Mishneh on Mishneh Torah, Torah Study 6:14:5",
+      "Lechem Mishneh on Mishneh Torah, Torah Study 6:14:3",
+      "[",
+      "Kiddushin 28a:5"
+    ],
+    "generatedAt": "2026-11-01T14:14:35.690Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 28a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סופג את הארבעים</strong> - היו קונסין מכות מרדות וניחא ליה הא מנידוי:"
+  },
+  "Rashi on Kiddushin 28a:5:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 28a:5:4",
+      "Translation on Rashi on Kiddushin 28a:5:4",
+      "Rashi on Kiddushin 28a:5:1",
+      "Rashi on Kiddushin 28a:5:2",
+      "Rashi on Kiddushin 28a:5:3",
+      "Steinsaltz on Kiddushin 28a:5"
+    ],
+    "generatedAt": "2026-11-01T14:16:25.058Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 28a:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רשע יורד עמו לחייו</strong> - כלומר לזו אין ב\"ד נזקקים אבל הוא מותר לשנאתו ואף למעט פרנסתו ולירד לאומנתו:"
+  },
+  "Rashi on Kiddushin 28a:6:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 28a:6:1",
+      "Kiddushin 28a:6",
+      "Rashi on Kiddushin 28a:6:2"
+    ],
+    "generatedAt": "2026-11-01T14:20:17.850Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 28a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טענה מעלייתא היא</strong> - ובלא גלגול נמי אי הוה מודה במקצת או היה לו עד אחד היה חייב שבועה דטענת מטלטלין היא זו שתובעו פעולתו או גרעונו ומאי רבותא דהאי משאר גלגול שבועה:"
+  },
+  "Rashi on Kiddushin 28a:6:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 28a:6:1",
+      "Rashi on Kiddushin 28a:6:2",
+      "Community Translation: Translation on Rashi on Kiddushin 28a:6:2",
+      "Rashi on Kiddushin 16a:13:3"
+    ],
+    "generatedAt": "2026-11-01T14:22:01.143Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 28a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גופו קנוי</strong> - ואינה טענת מטלטלין:"
+  },
+  "Rashi on Kiddushin 28a:7:1": {
+    "dependsOn": [
+      "Translation on Rashi on Kiddushin 28a:7:1",
+      "Rashi on Kiddushin 28a:5:1",
+      "Rashi on Kiddushin 28a:5:2",
+      "Rashi on Kiddushin 28a:6:1",
+      "Rashi on Kiddushin 28a:7:2",
+      "Translation on Rashi on Kiddushin 28a:6:1"
+    ],
+    "generatedAt": "2026-11-01T14:23:32.267Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 28a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היינו קרקע</strong> - והא תנינן לה במתני' דמגלגלין ומאי רבותא דרב יהודה לאשמועינן גלגול עבדי אתה:"
+  },
+  "Rashi on Kiddushin 28a:7:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 28a:7:1",
+      "Rashi on Kiddushin 28a:7:2",
+      "Kiddushin 28a:7"
+    ],
+    "generatedAt": "2026-11-01T14:24:14.185Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 28a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לית ליה קלא</strong> - מש\"ה תנן בה גלגול:"
+  },
+  "Rashi on Kiddushin 28a:9:1": {
+    "dependsOn": [
+      "Translation on Rashi on Kiddushin 28a:9:1",
+      "Kiddushin 28a:10"
+    ],
+    "generatedAt": "2026-11-01T14:25:16.442Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 28a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל הנעשה דמים באחר</strong> - שדרכו לתתו בדמים כשקונין חפץ אחד והשתא ס\"ד דמטבע אתא לאשמועינן כיון שזכה זה נתחייב זה בחליפיו היכא דנתנו בתורת חליפין ולא בתורת דמים אלא כעין שקונין בסודר כעין שלף איש נעלו:"
+  },
+  "Rashi on Kiddushin 28a:9:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 28a:9:1",
+      "Rashi on Kiddushin 28a:9:2",
+      "Rashi on Kiddushin 28a:9:3",
+      "Translation on Rashi on Kiddushin 28a:9:2",
+      "Kiddushin 28a:9"
+    ],
+    "generatedAt": "2026-11-01T14:26:21.387Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 28a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיון שזכה</strong> - בו המקנה ומשך זוז אחד מן הקונה בתורת קנין חליפין נתחייב הקונה באונסי חליפין בכל מקום שהם אם מתו או אם נאבדו עליו לשלם המעות שפוסק לתת לו לפי שכשמושך המוכר את הסודר או את הזוז בתורת חליפין נקנה המקח ללוקח בכל מקום שהוא:"
+  },
+  "Rashi on Kiddushin 28a:9:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 28a:9:3",
+      "Rashi on Kiddushin 28a:9:1",
+      "Rashi on Kiddushin 28a:9:2",
+      "Kiddushin 28a:10",
+      "Kiddushin 28b:1"
+    ],
+    "generatedAt": "2026-11-01T14:28:04.848Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 28a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">החליף שור בפרה</strong> - כיון שמשך בעל הפרה את השור נקנית פרה ללוקח בכל מקום שהיא ואונסיה עליו ובגמרא פריך מאי כיצד הואיל והוא אתי לאשמועינן דמטבע נעשה חליפין שאע\"פ שבתורת דמים קיימא לן <span class=\"parenthesized\">(בב\"מ דף מד.)</span> דמעות אינן קונות אלא משיכת המקח כי יהבינהו ניהליה בתורת קנין סודר קני כי סודר הוה ליה למיתני כיצד החליף מעות בפרה:"
+  },
+  "Tosafot on Kiddushin 28a:10:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 28a:10:1",
+      "Rashi on Kiddushin 28a:10:2"
+    ],
+    "generatedAt": "2026-11-01T14:36:35.822Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 28a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ש\"מ מטבע נעשה חליפין</strong> - ואע\"פ שבתורת דמים קי\"ל <span class=\"parenthesized\">(ב\"מ דף מד.)</span> דמעות אינן קונות אלא משיכת המקח אבל מעות אינן קונות אלא למיקם במי שפרע כי יהבינהו מיהא ניהליה בתורת קנין סודר נעשו חליפין וקנו כי סודר <span class=\"rashi-quotation\">כדפירש בקונטרס</span> ואם תאמר ומה טעם שמטבע נעשה חליפין למאן דאמר פירי לא עבדי חליפין אלא נעל דוקא דהא מטבע לאו כלי הוא ואומר רבינו תם דמטבע כעין כלי שראוי לתלותו בצואר בתו ועוד אומר ר\"י משום שראוי לשקול בו משקלות ועוד יש לומר דמה שראוי להוציא ולקנות בו כל דבר מחשבינן ליה כלי:"
+  },
+  "Tosafot on Kiddushin 28a:10:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 28a:10:1",
+      "Rashi on Kiddushin 28a:10:2",
+      "Rashi on Kiddushin 28a:10:3",
+      "Kiddushin 28a:10",
+      "Rashi on Kiddushin 28b:2:1",
+      "Rashi on Kiddushin 28b:2:2",
+      "Rashi on Kiddushin 28b:2:3",
+      "Rashi on Kiddushin 28b:2:4",
+      "Rashi on Kiddushin 28b:2:5",
+      "Rashi on Kiddushin 28b:3:1",
+      "Rashi on Kiddushin 28b:3:2",
+      "Rashi on Kiddushin 28b:3:3",
+      "Kiddushin 28b:3",
+      "Rashi on Kiddushin 28b:4:1",
+      "Rashi on Kiddushin 28b:4:2"
+    ],
+    "generatedAt": "2026-11-01T14:50:49.418Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 28a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכי קאמר כל הנישום דמים באחר</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> כל דבר שאם בא לתתו דמים באחר צריך לשומו היינו כל מטלטלין בר ממטבע כיון שזכה זה כו' ואם נתנו בתורת חליפין נקנו חליפין ללוקח במשיכה שמשך בעל המקח את זה ואשמועינן תורת חליפין במטלטלין ולמימר דאע\"ג דליתנהו כלי אלא מטלטלין בעלמא הוו חליפין ולא מטבע אתא לאשמועינן דיקא נמי דלאו מטבע אתא לאשמועינן כו' מאי כיצד ה\"ל למיתני כיצד החליף מעות בפרה ומשני ה\"ק וכו' ותרתי אתא לאשמועינן נקט ברישא מטבע והדר אשמועינן שאר מטלטלי ופירי נמי כו' כל מידי דלא הוי כלי פירי קרי ליה לענין חליפין ומשום דפירי שכיחי נקט פירי ולא אמרינן נעל דוקא כיצד החליף שור בפרה פי' בשר שור בפרה וכ\"ש שור חי דחשיב טפי ודמי לכלי שמשתמשים בו הניחא לרב ששת דאמר פירי עבדי חליפין איכא לתרוצי כולה מתניתין בין למאי דסליק אדעתין מעיקרא בין למאי דתרצינן כל הנישום אלא לר\"נ מאי כיצד למאי דס\"ד מעיקרא ואף למאי דאוקימנא השתא ומשני ה\"ק יש דמים שהם כחליפין וכולה מתניתין חדא הוא ובמטבע עסקינן וה\"ק כל הנעשה דמים באחר דהיינו מטבע פעמים שדמים קונות כמו חליפין דנעל ואף כשנתנוהו בתורת דמים כיצד החליף דמי שור בפרה כלומר מכר לו שור במנה ומשכו ונתחייב לו המנה אמר לו המוכר יש לך פרה ליתן בדמיו אמר לו הן שמאה לו במנה אמר לו מוכר השור המעות שאתה חייב לי נתונים לך בדמיה מעות הללו קונים בלא משיכת הפרה כחליפין עכ\"ל ויש משנין סוגיא של שמועה זו בשיטה אחרת ומפרשי דר\"נ ורב ששת פליגי בפירי דוקא כגון פירות ממש או בשר שור ולא בשאר מטלטלין ומוליכין הסוגיא בתר מאי דס\"ד מעיקרא דלמאי דאוקמינן השתא מיתוקמא כר\"נ שפיר דמודה הוא בשאר מטלטלין דעבדי חליפין א\"כ בשור חי קאמר ר\"נ דעבדי חליפין ולאו מילתא היא דטעמא דר\"נ מפורש בפרק הזהב <span class=\"parenthesized\">(ב\"מ דף מז.)</span> דאמר קרא נעל נעל אין מידי אחרינא לא משמע דבעינא דוקא נעל אבל כל דבר אחר אפילו שור חי לא עביד חליפין ור\"ח ור\"י מקיימי פי' זה וההיא דפרק הזהב דקאמר ר\"נ נעל אין ר\"ל כל דדמי לנעל דהיינו כלים שמשתמשים בהם ושור וחמור גופייהו כנעל דמו ונעשין חליפין אפי' למ\"ד פירי לא עבדי חליפין ומטעם <span class=\"rashi-quotation\">שפי' בקונטרס</span> דדמו לכלים הואיל שמשתמשין בו והוי חזי למלאכה והשתא הא דפריך לר\"נ דאמר פירי לא עבדי חליפין כולה סוגיא קאי למאי דס\"ד מעיקרא <span class=\"rashi-quotation\">כמו שפי' בקונטרס</span> אבל לרב יהודה דאמר כל הנישום אתי שפיר אפילו לר\"נ דאמר כיצד החליף שור בפרה ולא בשר שור ומשני ה\"ק ר\"נ דיש דמים שהן כחליפין והשתא ניחא ליה למאי דס\"ד מעיקרא ולמאי דאוקימנא השתא אבל ל<span class=\"rashi-quotation\">פי' הקונטרס</span> קשה דמשמע מתוך פירושו דגוף השור וגוף הפרה היינו פירות ועלייהו קאמר ר\"נ דפירי לא עבדי חליפין א\"כ קשה דהא תנן בפרק השואל <span class=\"parenthesized\">(שם דף ק.)</span> המחליף פרה בחמור וילדה וכו' אלמא קונה האחד במשיכת חבירו ושייך שפיר חליפין בחמור ופרה ומיהו מצינו למידחי למ\"ד פירי לא עבדי חליפין מפרש דמי פרה בחמור וקאי וילדה אחמור אבל עוד קשה דתנן פרק הזהב <span class=\"parenthesized\">(בבא מציעא דף מז.)</span> פרתך בכמה בכך וכך וחמורך בכמה בכך וכך וקתני דקני לה לחמור במשיכת הפרה לכך נראה דדוקא בשר שור הוא דחשבינן פירי אבל שור וחמור גופייהו כנעל דמו כדפירשתי לעיל:"
+  },
+  "Tosafot on Kiddushin 28a:2:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 28a:2:1",
+      "Rashi on Kiddushin 28a:2:2",
+      "Rashi on Kiddushin 28a:2:3",
+      "Kiddushin 28a:2",
+      "Tosafot on Kiddushin 27b:9:1",
+      "Tosafot on Kiddushin 28a:3:1"
+    ],
+    "generatedAt": "2026-11-01T14:07:26.863Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 28a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ספק מנלן</strong> - פי' בקונטר' טענת שמא כגון שבועת השותפין והאריסין שחלקו דתנן בפרק הנשבעין <span class=\"parenthesized\">(שבועות דף מה. ושם)</span> חלקו האריסין והשותפין אינו יכול להשביעו וקתני נתחייב לו שבועה ממקום אחר מגלגלין עליו את הכל אלמא ספק נמי מגלגלין וא\"ת מאי בעי לן מנ\"ל נילף ק\"ו מסוטה שהיא ספק ומגלגלין עליה אע\"ג דלא ניתנה ליתבע בעד אחד א\"כ ילפינן ספק מספק וי\"ל דלא דמי דהתם כל שבועות שלה ספק ולכך מגלגלין עליה ספק אבל ממון דעיקר שבועה דידיה אינו בטענת ספק אימא דלא מגלגלין עליה ספק:"
+  },
+  "Tosafot on Kiddushin 28a:3:1": {
+    "dependsOn": [
+      "Kiddushin 28a:3"
+    ],
+    "generatedAt": "2026-11-01T14:08:42.371Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 28a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נאמרה שבועה בפנים</strong> - וא\"ת למה לי ק\"ו דלעיל לומר שמגלגלין נילף מהא דרשה גופיה שמגלגלין בממון משום דנאמרה שבועה בפנים ונאמרה שבועה בחוץ במה מצינו וי\"ל דאי לאו ק\"ו בהאי מה מצינו דהכא לא מצינו למילף דממונא מאיסורא לא ילפינן אבל בתר דגלי לן האי ק\"ו דילפינן ממונא מאיסורא א\"כ מהשתא מפקינן שפיר בהא מה מצינו לעשות ספק כודאי ואומר רבי שלא על כל ספיקות מגלגלין שאם נתחייב אדם לחבירו שבועה אינו יכול לגלגל לו ולומר הישבע לי שלא גנבת לי שום דבר מעולם אלא דוקא בספק שיש לנו לחוש קצת כגון נעשה לו שותף או אריס דכה\"ג אמרינן בסוף כל הנשבעים <span class=\"parenthesized\">(שבועות דף מח:)</span> דמגלגלים:"
+  },
+  "Tosafot on Kiddushin 28a:5:1": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 28a:3:1",
+      "Tosafot on Kiddushin 28a:2:1",
+      "Tosafot on Kiddushin 28a:9:1",
+      "Tosafot on Kiddushin 28a:9:2",
+      "Tosafot on Kiddushin 2a:1:6",
+      "Nedarim 7b:1",
+      "Nedarim 7b:2",
+      "Nedarim 7b:3",
+      "Nedarim 7b:4",
+      "Rashi on Kiddushin 28a:5:1",
+      "Rashi on Kiddushin 28a:5:2",
+      "Rashi on Kiddushin 28a:5:3",
+      "Rashi on Kiddushin 28a:5:4"
+    ],
+    "generatedAt": "2026-11-01T14:19:23.183Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 28a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הקורא לחבירו עבד יהא בנידוי</strong> - מכאן מדקדק ר\"ת דכל היכא דאמר כה\"ג כי ההיא דנדרים <span class=\"parenthesized\">(דף ז:)</span> בשומע אזכרה מפי חבירו היה חייב לנדותו ואם לא נידהו הוא עצמו יהא בנידוי לא שיהא ממילא אלא ב\"ד היו חייבין לנדותו כדאמר הכא שמותי משמתינן ליה והיינו מדה כנגד מדה כלומר הוא קרא לחבירו עבד דהוא ארור כך מקללין אותו בארור דהיינו נידוי וכן הקורא לחבירו ממזר הוא אומר שחבירו עבר בלאו לפיכך סופג את הארבעים כדין עובר בלאו:"
+  },
+  "Tosafot on Kiddushin 28a:9:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 28a:9:1"
+    ],
+    "generatedAt": "2026-11-01T14:29:27.069Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 28a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל הנעשה דמים באחר</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> כל שדרכו לתתו בדמים כשקונין חפץ דהיינו מטבע וקס\"ד דמטבע נעשה חליפין אתא לאשמועינן דמיירי שנתן בתורת חליפין ולא בתורת דמים אלא כעין שקונין בסודר כדכתיב <span class=\"parenthesized\">(רות ד׳:ז׳)</span> שלף איש נעלו כיון שזכה זה נתחייב זה בחליפיו רב ולוי פליגי פרק הזהב <span class=\"parenthesized\">(ב\"מ דף מז.)</span> אי חליפין בכליו של קונה או בכליו של מקנה דרב סובר בכליו של קונה ולוי סובר בכליו של מקנה לרב ניחא שפיר אי גרסינן כיון שזכה זה נתחייב זה הקונה והכי נפרש כיון שזכה זה דהיינו המקנה שזוכה במטבע של קונה נתחייב זה הקונה באונסי חליפין שהם ברשות המקנה בכל מקום שהם ואם נאבדו יאבדו לו ואי ל\"ג זה פי' הכי כיון שזכה זה קנה בחליפין כלומר כיון שזכה המקנה במטבע או בסודר של קונה נתחייב המקנה להשיב לקונה חליפיו ולא מצי הדר ביה וללוי דאמר בכליו של מקנה כלומר שיתן המקנה פרוטה לקונה אי גרס נתחייב זה צריך לומר כיון שזכה זה הקונה נתחייב זה דהיינו המקנה להשיב לו חליפיו שאינו יכול לחזור בו ואי לא גרסינן זה הכי נפרש כיון שזכה זה דהיינו הקונה נתחייב הוא עצמו באונסי חליפין כדפרישית:"
+  },
+  "Tosafot on Kiddushin 28a:9:2": {
+    "dependsOn": [
+      "Kiddushin 28a:10",
+      "Tosafot on Kiddushin 28a:9:1",
+      "Tosafot on Kiddushin 28a:2:1",
+      "Tosafot on Kiddushin 28a:3:1",
+      "Tosafot on Kiddushin 28a:5:1",
+      "Maharsha: Chidushei Halachot on Kiddushin 28a:1"
+    ],
+    "generatedAt": "2026-11-01T14:31:27.987Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 28a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיצד החליף שור בפרה או חמור כו'</strong> - לרב ניחא שפיר והכי פירושא החליף הקונה שורו בעבור הפרה כדי לקנות הפרה בכ\"מ שהיא אבל ללוי קשה היאך יפרש לוי החליף שור בפרה והלא גם השור וגם הפרה נותן המקנה לקונה דתרוייהו של מקנה ואומר ר\"י שיש לפרש החליף המקנה את השור בהנאת קבלת הפרה שהקונה מקבלה הימנו בעבור דבר שהוא נותן לו:"
+  }
+}
