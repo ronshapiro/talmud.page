@@ -1,0 +1,431 @@
+{
+  "Rashi on Kiddushin 26a:10:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 26a:10:1",
+      "Rashi on Kiddushin 26a:10:2",
+      "Steinsaltz on Kiddushin 26a:10"
+    ],
+    "generatedAt": "2026-11-01T12:22:38.740Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 26a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושבו בעריכם</strong> - גדליה בן אחיקם קאמר ליה:"
+  },
+  "Rashi on Kiddushin 26a:10:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 26a:10:1"
+    ],
+    "generatedAt": "2026-11-01T12:23:22.618Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 26a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בישיבה</strong> - דתפשתם אשבו קאי:"
+  },
+  "Rashi on Kiddushin 26a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T12:23:38.478Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 26a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיד ליד</strong> - דהיינו משיכה:"
+  },
+  "Rashi on Kiddushin 26a:12:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Kiddushin 26a:12:1",
+      "Rashi on Kiddushin 26a:12:2",
+      "Rashi on Kiddushin 26a:12:3",
+      "Rashi on Kiddushin 26a:12:1"
+    ],
+    "generatedAt": "2026-11-01T12:24:52.284Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 26a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולר' יוחנן דאמר</strong> - בפרק הזהב:"
+  },
+  "Rashi on Kiddushin 26a:12:2": {
+    "dependsOn": [
+      "Translation on Rashi on Kiddushin 26a:12:2"
+    ],
+    "generatedAt": "2026-11-01T12:25:39.334Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 26a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דבר תורה מעות קונות</strong> - כדאשכחן גבי הקדש ונתן הכסף וקם לו:"
+  },
+  "Rashi on Kiddushin 26a:12:3": {
+    "dependsOn": [
+      "Translation on Rashi on Kiddushin 26a:12:3",
+      "Rashi on Kiddushin 26a:12:1",
+      "Rashi on Kiddushin 26a:12:2",
+      "Rashi on Kiddushin 26a:12:3",
+      "Rashi on Kiddushin 26a:7:1",
+      "Rashi on Kiddushin 26a:8:1"
+    ],
+    "generatedAt": "2026-11-01T12:26:59.715Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 26a:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר לך</strong> - מתני' לא תקשי לי דתקנתא דרבנן קתני תנא דמתני' שעקרו חכמים קנין המעות ואמרו לא תקנה אלא משיכה גזירה שמא יאמר לו נשרפו חיטיך בעלייה:"
+  },
+  "Rashi on Kiddushin 26a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T12:27:21.807Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 26a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויתן להם אביהם</strong> - בבני יהושפט כתיב וסיפיה דקרא עם ערי מצורות ביהודה:"
+  },
+  "Rashi on Kiddushin 26a:14:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 26a:14:1",
+      "Community Translation: Translation on Rashi on Kiddushin 26a:14:1"
+    ],
+    "generatedAt": "2026-11-01T12:28:00.324Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 26a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צבורין בו</strong> - שיהו אותן מטלטלין מונחין באותו קרקע:"
+  },
+  "Rashi on Kiddushin 26a:14:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 26a:14:1",
+      "Community Translation: Translation on Rashi on Kiddushin 26a:14:2",
+      "Kiddushin 26a:14",
+      "Tosafot on Kiddushin 26a:14:2",
+      "Rashi on Kiddushin 26a:10:1",
+      "Rashi on Kiddushin 26a:10:2"
+    ],
+    "generatedAt": "2026-11-01T12:29:33.140Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 26a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובוידוי</strong> - ל\"ג דאף מי שאין לו קרקע מתוודה על המעשרות ויכול לומר וברך את עמך את ישראל ואת האדמה אשר נתתה לנו ולא דמי לבכורים דבעי למימר אשר נתת לי:"
+  },
+  "Rashi on Kiddushin 26a:1:1": {
+    "dependsOn": [
+      "Community Translation on Rashi on Kiddushin 26a:1:1",
+      "Rashi on Kiddushin 26a:1:2",
+      "Kiddushin 26a:1",
+      "Steinsaltz on Kiddushin 26a:1"
+    ],
+    "generatedAt": "2026-11-01T11:56:19.342Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 26a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי נמי</strong> - משכחת לה הגבהה אצל פיל:"
+  },
+  "Rashi on Kiddushin 26a:1:2": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Kiddushin 26a:1:2",
+      "Rashi on Kiddushin 26a:1:1",
+      "Rosh on Eruvin 7:8:2"
+    ],
+    "generatedAt": "2026-11-01T11:57:17.674Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 26a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בחבילי זמורות</strong> - הגבוהים מן הארץ שלשה טפחים ומוליכין עליהם דהגבהת שלשה טפחים הגבהה היא דנפקא ליה מתורת לבוד:"
+  },
+  "Rashi on Kiddushin 26a:2:1": {
+    "dependsOn": [
+      "Translation on Rashi on Kiddushin 26a:2:1"
+    ],
+    "generatedAt": "2026-11-01T11:59:51.956Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 26a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיש להם אחריות</strong> - היינו קרקעות שאחריות כל אדם הלוה והנושה בחבירו עליהן לפי שקיימין ועומדין לפיכך נסמכין עליהן:"
+  },
+  "Rashi on Kiddushin 26a:2:2": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Kiddushin 26a:2:2"
+    ],
+    "generatedAt": "2026-11-01T12:00:32.505Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 26a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בחזקה</strong> - רפק ביה פורתא או דיש אמצרי או נעל או פרץ כל שהוא:"
+  },
+  "Rashi on Kiddushin 26a:2:3": {
+    "dependsOn": [
+      "Translation on Rashi on Kiddushin 26a:2:3"
+    ],
+    "generatedAt": "2026-11-01T12:01:02.146Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 26a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נקנין עם נכסים כו'</strong> - אם מכר מטלטלין עם קרקע כיון שקנה לוקח את הקרקע באחד משלשה קנינים נקנים מטלטלין עמה:"
+  },
+  "Rashi on Kiddushin 26a:3:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Kiddushin 26a:3:1"
+    ],
+    "generatedAt": "2026-11-01T12:01:44.698Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 26a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וזוקקים</strong> - נכסים הללו שאין להם אחריות דקמיירי בהו תנא את הנכסים שיש להן כו'. אע\"ג דאין נשבעין על הקרקעות לבדן כדנפקא לן בשבועות <span class=\"parenthesized\">(דף מב:)</span> היכא דטענו כלים וקרקעות ונתחייב לישבע על המטלטלין זוקקין המטלטלין את הקרקעות לישבע עליהן האי זוקקין אנכסים קאי שאין להם אחריות ולאו אבית דין:"
+  },
+  "Rashi on Kiddushin 26a:4:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 26a:4:1",
+      "Rashi on Kiddushin 26a:1:1",
+      "Rashi on Kiddushin 26a:2:1",
+      "Rashi on Kiddushin 26a:5:1"
+    ],
+    "generatedAt": "2026-11-01T12:02:41.563Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 26a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואימא עד דאיכא שטר</strong> - בהדי כסף דכתיב קרא <span class=\"parenthesized\">(ירמיהו ל״ב:מ״ד)</span> וכתוב בספר וחתום:"
+  },
+  "Rashi on Kiddushin 26a:5:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 26a:5:1"
+    ],
+    "generatedAt": "2026-11-01T12:04:05.235Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 26a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שנו</strong> - דקני בכספא לחודיה אלא במקום שאין רגילין לכתוב שטר מכירה:"
+  },
+  "Rashi on Kiddushin 26a:5:2": {
+    "dependsOn": [
+      "Translation on Rashi on Kiddushin 26a:5:2"
+    ],
+    "generatedAt": "2026-11-01T12:05:14.856Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 26a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא קנה</strong> - דכיון דרגילין בהכי לא סמכא דעתיה דלוקח עד דנקיט שטרא ועיקר דעתו לקנות על השטר הוא:"
+  },
+  "Rashi on Kiddushin 26a:5:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 26a:5:3",
+      "Rashi on Kiddushin 26a:5:1",
+      "Rashi on Kiddushin 26a:5:2",
+      "Steinsaltz on Kiddushin 26a:5",
+      "Steinsaltz comment #2 on Kiddushin 26a:5",
+      "Mishneh Torah, Sales 1:5",
+      "Shulchan Arukh, Choshen Mishpat 190:8"
+    ],
+    "generatedAt": "2026-11-01T12:06:52.738Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 26a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם פריש</strong> - אם רצוני יקנה לי כספי או יקנה שטרי:"
+  },
+  "Rashi on Kiddushin 26a:6:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Kiddushin 26a:6:1",
+      "Rashi on Kiddushin 26a:5:1",
+      "Rashi on Kiddushin 26a:5:2",
+      "Rashi on Kiddushin 26a:7:1"
+    ],
+    "generatedAt": "2026-11-01T12:07:51.540Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 26a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי בעינא כו'</strong> - להכי אמר תרוייהו שיהא הוא יכול לחזור בו אבל המוכר לא יחזור כדמפרש ואזיל שאם בא המוכר לחזור יאמר לו אני רוצה שיקנה לי כספי ואם הוא בא לחזור יאמר לו איני רוצה שיהא כספי קונה עד שיבא השטר וכל זמן שלא קבלתי השטר אחזור בי:"
+  },
+  "Rashi on Kiddushin 26a:7:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 26a:7:1",
+      "Translation on Rashi on Kiddushin 26a:7:1",
+      "Rashi on Kiddushin 26a:6:1",
+      "Rashi on Kiddushin 26a:7:2",
+      "Rashi on Kiddushin 26a:1:1",
+      "Rashi on Kiddushin 26a:2:1"
+    ],
+    "generatedAt": "2026-11-01T12:09:16.012Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 26a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">את ספר המקנה</strong> - אלמא יש קנין אף בספר לבדו:"
+  },
+  "Rashi on Kiddushin 26a:7:2": {
+    "dependsOn": [
+      "Translation on Rashi on Kiddushin 26a:7:2",
+      "Rashi on Kiddushin 26a:7:1",
+      "Rashi on Kiddushin 26a:1:1",
+      "Rashi on Kiddushin 26a:1:2",
+      "Rashi on Kiddushin 26a:2:1",
+      "Rashi on Kiddushin 26a:2:2",
+      "Rashi on Kiddushin 26a:2:3",
+      "Rashi on Kiddushin 26a:5:1",
+      "Rashi on Kiddushin 26a:5:2",
+      "Rashi on Kiddushin 26a:5:3"
+    ],
+    "generatedAt": "2026-11-01T12:10:48.505Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 26a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד שיתן דמים</strong> - דלא גמר מוכר ומקנה עד דקביל דמים ואע\"ג דקביל דמים בעי שטרא אלא היכא דפריש וכדאמרינן לעיל:"
+  },
+  "Rashi on Kiddushin 26a:8:1": {
+    "dependsOn": [
+      "Community Translation on Rashi on Kiddushin 26a:8:1"
+    ],
+    "generatedAt": "2026-11-01T12:14:03.698Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 26a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי זו מכורה ונתונה</strong> - קא סלקא דעתך או או קתני:"
+  },
+  "Rashi on Kiddushin 26a:8:2": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Kiddushin 26a:8:2",
+      "Rashi on Kiddushin 26a:8:1",
+      "Steinsaltz on Kiddushin 26a:8"
+    ],
+    "generatedAt": "2026-11-01T12:15:04.558Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 26a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני רעתה</strong> - דניחא ליה דלקנייה ליה שטרא ללוקח כי היכי דלא מצי למיהדר ביה:"
+  },
+  "Rashi on Kiddushin 26a:9:1": {
+    "dependsOn": [
+      "Translation on Rashi on Kiddushin 26a:9:1",
+      "Kiddushin 26a:9",
+      "Rashi on Kiddushin 26a:8:1",
+      "Rashi on Kiddushin 26a:8:2",
+      "Rashi on Kiddushin 26a:7:1",
+      "Rashi on Kiddushin 26a:7:2"
+    ],
+    "generatedAt": "2026-11-01T12:19:03.322Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 26a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב אשי אמר</strong> - הך מתני' בנותן מתנה מיירי וכולה חדא היא ולאו או או קתני אלא כך וכך כתב לו שדי מכורה ונתונה לך לייפות את כחו שאם יגבנה בעל חוב של נותן ממנו ישוב עליו לתבוע ממנו דמים המפורשים:"
+  },
+  "Tosafot on Kiddushin 26a:14:1": {
+    "dependsOn": [
+      "Kiddushin 26a:14"
+    ],
+    "generatedAt": "2026-11-01T12:30:39.639Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 26a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קרקע כל שהוא חייבת בפאה</strong> - בירושלמי דמסכת פאה פריך על הך משנה עד שלא קצרה אינה חייבת בפאה ומשקצרה אין כאן שיור ומשני תפתר שהיה שם קנה א' ובו חמשה שיבולות מדדחיק לומר כן משמע דבכל שהוא חייבת בפיאה וכן משמע בסמוך דדחיק לאוקמא במחט ותלה בה מרגליות ובפרק לא יחפור <span class=\"parenthesized\">(ב\"ב דף כז:)</span> מוקי לה בחטה דאי באילן לא מיחייב בבכורים אא\"כ היה לו י\"ו אמה לכל רוח כשיעור יניקה ותימה דהא חטה נמי יונקת שלשה טפחים כדמוכח בשמעתא דערוגה בפרק ר' עקיבא <span class=\"parenthesized\">(שבת דף פה.)</span> וי\"ל אע\"ג דיניקה עד שלשה טפחים מ\"מ אין עיקר יניקתה אלא כנגדו וכה\"ג אשכחן גבי אילן גופיה אע\"ג שהשרשים מתפשטים חוץ לי\"ו אמה כדמוכח בלא יחפור <span class=\"parenthesized\">(ב\"ב שם)</span> אפ\"ה לא בעי אלא י\"ו אמה דכך הוא עיקר יניקתו:"
+  },
+  "Tosafot on Kiddushin 26a:14:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 26a:14:1",
+      "Rashi on Kiddushin 26a:14:2",
+      "Tosafot on Kiddushin 26a:14:1",
+      "Maharsha: Chidushei Halachot on Kiddushin 26a:3"
+    ],
+    "generatedAt": "2026-11-01T12:32:09.375Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 26a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובוידוי</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> דל\"ג בוידוי דאף מי שאין לו קרקע מתודה על המעשר ויכול לומר וברך את עמך את ישראל ואת האדמה אשר נתת לנו ולא דמי לבכורים דבעי למימר אשר נתת לי וכן פר\"י דל\"ג ובוידוי ולא מטעם דרש\"י אלא משום דבירושלמי <span class=\"parenthesized\">(דפאה פ\"ג)</span> פריך אהא מילתא גופא אמאי לא תני ובוידוי אלמא משמע דלא גרסינן ליה וגם משמע מי שאין לו קרקע מתודה כגון פירות לקוחין:"
+  },
+  "Tosafot on Kiddushin 26a:1:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 26a:1:1",
+      "Rashi on Kiddushin 26a:1:2",
+      "Kiddushin 26a:1",
+      "Chullin 141b:22"
+    ],
+    "generatedAt": "2026-11-01T11:59:11.622Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 26a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי נמי בחבילי זמורות</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> משכחת לה להגבהת פיל בחבילי זמורות הגבוהים מן הארץ שלשה ומעלהו עליהן דהגבהת ג' הגבהה היא דנפיק לה מתורת לבוד ולפירושו בכלים לא מצי למימר דליקני מדין הגבהה שיניח כלים תחת רגליו דסתמייהו אין בעוביין שלשה טפחים ולפי' ר\"ת דמפרש דהגבהה בטפח קני. צ\"ל סתם כלים אין בעוביין טפח וקשה אמאי נקט חבילי זמורות לנקוט אבנים או עצים ומפרש הרב משולם דלהכי נקט חבילי זמורות לפי שהן מאכל פיל כדאמרינן פרק מפנין <span class=\"parenthesized\">(שבת דף קכח.)</span> מטלטלין חבילי זמורות בשבת מפני שהן מאכל לפילין ומגביהין לפיל חבילי זמורות למעלה והוא קופץ ומגביה את עצמו מן הארץ ואוכלן ואין לתמוה אי חשיבא הגבהה בהכי דכה\"ג אשכחן בפרק שילוח הקן <span class=\"parenthesized\">(חולין דף קמב.)</span> כי היכי דליגבינהו ולקנינהו:"
+  },
+  "Tosafot on Kiddushin 26a:4:1": {
+    "dependsOn": [
+      "Maharsha: Chidushei Halachot on Kiddushin 26a:1"
+    ],
+    "generatedAt": "2026-11-01T12:03:22.655Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 26a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר קרא שדות בכסף יקנו</strong> - הא דלא אייתי מקרא דכתיב גבי עפרון <span class=\"parenthesized\">(בראשית כג)</span> משום דדילמא ה\"מ מנכרי שכל קנינו בכסף:"
+  },
+  "Tosafot on Kiddushin 26a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T12:16:57.923Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 26a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על הנייר או על החרס</strong> - פי' לעיל <span class=\"parenthesized\">(קידושין דף ט:)</span>:"
+  },
+  "Tosafot on Kiddushin 26a:9:1": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 26a:4:1",
+      "Tosafot on Kiddushin 26a:8:1",
+      "Tosafot on Kiddushin 25b:3:1",
+      "Maharsha: Chidushei Halachot on Kiddushin 26a:2"
+    ],
+    "generatedAt": "2026-11-01T12:21:05.362Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 26a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולמה כתב בלשון מכר כדי לייפות כחו</strong> - וא\"ת ולמה כתב לו בלשון מתנה בשלמא מכר משום אחריות אלא מה יפוי כח יש במתנה אי משום דבמתנה לית ביה משום דינא דבר מצרא הא אמר בפרק המקבל <span class=\"parenthesized\">(ב\"מ דף קח:)</span> דמתנה דאית בה אחריות אית בה משום דינא דבר מצרא וי\"ל דשני שטרות כותב לו אם צריך לאחריות מראה של מכר ואם צריך לדינא דבר מצרא מראה של מתנה ומצניע של מכר [ועוד נראה דמיירי שפיר בשטר אחד והא דכתב ליה בלשון מתנה לפי שהאמת הוא כך וכו'] ובירושלמי בפירקין מפרש דיפוי כח של מתנה היינו לגבי בור ודות דמוכר שדה בסתם לא מכר בור ודות אבל מתנה בעין יפה נותן הכל:"
+  }
+}

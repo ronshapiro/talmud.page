@@ -1,0 +1,456 @@
+{
+  "Rashi on Kiddushin 69a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T23:41:28.452Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כולד במעי בהמה דמי</strong> - שאין מתייחס אחר אביו כלל:"
+  },
+  "Rashi on Kiddushin 69a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T23:41:53.119Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עשרה יוחסין עלו מבבל</strong> - כשעלו בני הגולה ובגמרא מפרש לה דאשמועינן שמשפחות שבבבל מיוחסות הן שהפריש עזרא כל הפסולין משם והוליכן עמו:"
+  },
+  "Rashi on Kiddushin 69a:12:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69a:12:1",
+      "Rashi on Kiddushin 69a:12:3"
+    ],
+    "generatedAt": "2026-11-02T23:44:37.281Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חללין</strong> - כהנים חללין שנולדו מפסולי כהונה:"
+  },
+  "Rashi on Kiddushin 69a:12:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T23:45:31.237Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחרורי</strong> - משוחררי:"
+  },
+  "Rashi on Kiddushin 69a:12:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69a:12:4",
+      "Rashi on Kiddushin 69a:12:1",
+      "Rashi on Kiddushin 69a:12:2",
+      "Rashi on Kiddushin 69a:12:3",
+      "Rashi on Kiddushin 69a:12:5",
+      "Rashi on Kiddushin 69a:13:1",
+      "Rashi on Kiddushin 69a:14:1",
+      "Rashi on Kiddushin 69a:15:1",
+      "Rashi on Kiddushin 68a:1:1",
+      "Rashi on Kiddushin 68b:1:1"
+    ],
+    "generatedAt": "2026-11-02T23:47:37.228Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:12:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתיני</strong> - גבעונים שמלו בימי יהושע ואמרינן ביבמות <span class=\"parenthesized\">(דף עח:)</span> דוד גזר עליהם:"
+  },
+  "Rashi on Kiddushin 69a:12:5": {
+    "dependsOn": [
+      "Kiddushin 69a:12",
+      "Rashi on Kiddushin 69a:12:1",
+      "Rashi on Kiddushin 69a:12:2",
+      "Rashi on Kiddushin 69a:12:3",
+      "Rashi on Kiddushin 69a:12:4"
+    ],
+    "generatedAt": "2026-11-02T23:48:36.199Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:12:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתוקי ואסופי</strong> - מפרש להו ואזיל איזוהי שתוקי כו':"
+  },
+  "Rashi on Kiddushin 69a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T23:49:06.422Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לויי וישראלי חללי גירי וחרורי מותרים לבא זה בזה</strong> - אבל כהנים בחללי גירי וחרורי לא שחללה בלאו וגיורת ומשוחררת בחזקת זונה:"
+  },
+  "Rashi on Kiddushin 69a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T23:49:45.709Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גירי וחרורי ממזרים כו' מותרים לבא זה בזה</strong> - דקסבר קהל גרים לא איקרי קהל ולא הוזהרו ממזרים לבא בקהל גרים אבל לויים ישראלים בממזרי לא ושתוקי ואסופי ספק ממזרים הם ומותרים להתערב בממזרים כדאמר בגמרא <span class=\"parenthesized\">(לקמן קידושין דף עג.)</span> בקהל ודאי הוא דלא יבא בקהל ספק יבא:"
+  },
+  "Rashi on Kiddushin 69a:14:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69a:14:1",
+      "Rashi on Kiddushin 69a:14:3"
+    ],
+    "generatedAt": "2026-11-02T23:52:29.484Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואינו מכיר את אביו</strong> - וכשקורא פלוני אבא אמו משתקתו:"
+  },
+  "Rashi on Kiddushin 69a:14:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T23:52:53.036Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בדוקי</strong> - בגמרא מפרש ליה:"
+  },
+  "Rashi on Kiddushin 69a:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T23:53:36.141Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מילתא אגב אורחיה קא משמע לן</strong> - על פי דרכו שהיה הולך ומדבר דבריו ליוחסין השמיענו ולמדנו דבר חדש בלישנא דנקט ולמדנו עוד ממנו דא\"י גבוה מבבל:"
+  },
+  "Rashi on Kiddushin 69a:16:1": {
+    "dependsOn": [
+      "Kiddushin 69a:16"
+    ],
+    "generatedAt": "2026-11-02T23:54:10.496Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשלמא בית המקדש גבוה</strong> - דשמעת מינה דהא בארץ ישראל משתעי קרא:"
+  },
+  "Rashi on Kiddushin 69a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T23:16:55.400Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האומר לשפחתו</strong> - מעוברת:"
+  },
+  "Rashi on Kiddushin 69a:1:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69a:1:1",
+      "Rashi on Kiddushin 69a:1:2",
+      "Rashi on Kiddushin 69a:1:3",
+      "Steinsaltz on Kiddushin 69a:1"
+    ],
+    "generatedAt": "2026-11-02T23:17:41.300Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי את בת חורין</strong> - בגט שחרור זה וולדך עבד:"
+  },
+  "Rashi on Kiddushin 69a:1:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69a:1:1",
+      "Rashi on Kiddushin 69a:1:2",
+      "Rashi on Kiddushin 69a:1:3",
+      "Kiddushin 69a:1",
+      "Rashi on Kiddushin 69a:2:1",
+      "Rashi on Kiddushin 69a:2:2"
+    ],
+    "generatedAt": "2026-11-02T23:18:37.578Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולדה כמוה</strong> - משוחרר כדיליף בסיפא שנאמר האשה וילדיה תהיה לאדוניה בזמן שהאשה לאדוניה הולד שתלד לאדוניה אין האשה לאדוניה אין הולד לאדוניה:"
+  },
+  "Rashi on Kiddushin 69a:2:1": {
+    "dependsOn": [
+      "Kiddushin 69a:2",
+      "Rashi on Kiddushin 69a:2:2",
+      "Rashi on Kiddushin 69a:1:1",
+      "Rashi on Kiddushin 69a:1:2",
+      "Rashi on Kiddushin 69a:1:3"
+    ],
+    "generatedAt": "2026-11-02T23:20:02.253Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי תלמודא</strong> - היכא שמעינן מהאי קרא דבריו קיימין:"
+  },
+  "Rashi on Kiddushin 69a:2:2": {
+    "dependsOn": [
+      "Kiddushin 69a:2",
+      "Rashi on Kiddushin 69a:2:1"
+    ],
+    "generatedAt": "2026-11-02T23:20:47.666Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רבא אדרבי יוסי הגלילי</strong> - האי קרא אדרבי יוסי קאי ולדה כמוה משום שנא' כו':"
+  },
+  "Rashi on Kiddushin 69a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T23:21:14.210Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יכולין ממזרין ליטהר</strong> - מפסול זרעם שלא יהו בניהם ממזרים:"
+  },
+  "Rashi on Kiddushin 69a:3:2": {
+    "dependsOn": [
+      "Kiddushin 69a:3",
+      "Rashi on Kiddushin 69a:3:1",
+      "Rashi on Kiddushin 69a:3:2",
+      "Rashi on Kiddushin 69a:3:3",
+      "Kiddushin 69a:12"
+    ],
+    "generatedAt": "2026-11-02T23:22:19.127Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עשרה יוחסין עלו מבבל</strong> - כשעלו בני הגולה ובגמרא מפרש לה דאשמועינן שמשפחות שבבבל מיוחסות הן שהפריש עזרא כל הפסולין משם והוליכן עמו:"
+  },
+  "Rashi on Kiddushin 69a:3:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69a:3:1",
+      "Rashi on Kiddushin 69a:3:2",
+      "Rashi on Kiddushin 69a:3:3",
+      "Rashi on Kiddushin 69a:3:4",
+      "Rashi on Kiddushin 69a:3:5"
+    ],
+    "generatedAt": "2026-11-02T23:22:55.803Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בנה עבד</strong> - ואין ממזר דהא ולדה כמוה:"
+  },
+  "Rashi on Kiddushin 69a:3:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T23:24:32.159Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בן חורין</strong> - ומותר בישראלית:"
+  },
+  "Rashi on Kiddushin 69a:3:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T23:25:17.256Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:3:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי זה עבד ממזר</strong> - בגמרא יליף לה טעמא:"
+  },
+  "Rashi on Kiddushin 69a:4:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69a:4:1",
+      "Rashi on Kiddushin 69a:4:2",
+      "Rashi on Kiddushin 69a:4:3",
+      "Rashi on Kiddushin 69a:4:4"
+    ],
+    "generatedAt": "2026-11-02T23:26:10.231Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לכתחילה קאמר</strong> - ממזר נושא שפחה דקסבר דכי כתיב לא יהיה קדש בישראל כשר כתיב ולא בממזר:"
+  },
+  "Rashi on Kiddushin 69a:4:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69a:4:1",
+      "Rashi on Kiddushin 69a:4:3",
+      "Rashi on Kiddushin 69a:4:4"
+    ],
+    "generatedAt": "2026-11-02T23:27:12.282Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או דיעבד קאמר</strong> - ממזר שנשא שפחה אבל לכתחילה לא ישא דהא ישראל הוא וקרינא ביה לא יהיה קדש <span class=\"parenthesized\">(דברים כ״ג:י״ח)</span> דמתרגמינן לא יסב גברא וגו' דשפחה הרי היא כבהמה וביאותיה הפקר וקדישות:"
+  },
+  "Rashi on Kiddushin 69a:4:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69a:4:1",
+      "Rashi on Kiddushin 69a:4:2",
+      "Rashi on Kiddushin 69a:4:4"
+    ],
+    "generatedAt": "2026-11-02T23:29:04.230Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טיהרת את הזכרים</strong> - שילכו למקום שאין מכירין ויאמר עבד אני ונושא שפחה ואין מוחה בידו:"
+  },
+  "Rashi on Kiddushin 69a:4:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69a:4:1",
+      "Rashi on Kiddushin 69a:4:2",
+      "Rashi on Kiddushin 69a:4:3"
+    ],
+    "generatedAt": "2026-11-02T23:29:45.095Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואת הנקבות לא טיהרת</strong> - אין דרך אשה לגלות ממקומה ולבקש תחבולות לינשא בסתר מאחר שיש מוחין בידה אלמא ר' טרפון דיעבד קאמר דאי לכתחילה כיון דאין מוחין בידה ממזרת נמי תנסיב לעבד:"
+  },
+  "Rashi on Kiddushin 69a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T23:30:38.067Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עבד כנעני אין לו חייס</strong> - אינו מתיחס אחר אביו דכתיב <span class=\"parenthesized\">(בראשית כ״ב:ה׳)</span> עם החמור עם הדומה לחמור כבהמה שאין הולד כרוך אחרי האב הילכך אי מינסבא לעבדא לא מהני מידי:"
+  },
+  "Rashi on Kiddushin 69a:6:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69a:6:1",
+      "Rashi on Kiddushin 69a:6:2",
+      "Rashi on Kiddushin 69a:6:3"
+    ],
+    "generatedAt": "2026-11-02T23:31:11.611Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי אקדמתיך אטהרתיך לבנך</strong> - אם הייתי מכירך קודם שנשאת אשה הייתי משיאך עצה לטהר בניך:"
+  },
+  "Rashi on Kiddushin 69a:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T23:31:34.754Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שפיר</strong> - שהיה אומר לו ליקח שפחה:"
+  },
+  "Rashi on Kiddushin 69a:6:3": {
+    "dependsOn": [
+      "Kiddushin 69a:6",
+      "Rashi on Kiddushin 69a:6:1",
+      "Rashi on Kiddushin 69a:6:2",
+      "Rashi on Kiddushin 69a:6:3",
+      "Rashi on Kiddushin 69a:7:1",
+      "Rashi on Kiddushin 69a:7:2",
+      "Maharsha on Kiddushin 69a:1"
+    ],
+    "generatedAt": "2026-11-02T23:33:01.918Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי ניהו</strong> - מאי הוה אמר ליה איסורא לא היה מינסיב עצה למיעבד ומשני דמינסיב לו עצה ואמר ליה זיל גנוב ותיזדבן לעבד עברי ותהא שפחה מותרת לך דמכרוהו בית דין רבו מוסר לו שפחה כנענית ולא מוכר עצמו ולהכי נקט זיל גנוב והוא הדין נמי מצי לאקשויי מי שרי לאנסובי עצה למיגנב אלא מקשיא אחרת סלקיה דאי הוה מקשי ליה הא הוה מצי ליה לשנויי אלא דאמר ליה מכור עצמך לעבד עברי וכרבי אליעזר דאמר בפרק קמא <span class=\"parenthesized\">(לעיל קידושין דף יד:)</span> זה וזה רבו מוסר לו שפחה כנענית:"
+  },
+  "Rashi on Kiddushin 69a:7:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69a:7:2",
+      "Rashi on Kiddushin 69a:7:1"
+    ],
+    "generatedAt": "2026-11-02T23:37:09.082Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והאמר מר</strong> - במסכת ערכין:"
+  },
+  "Rashi on Kiddushin 69a:7:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69a:7:1",
+      "Rashi on Kiddushin 69a:1:3"
+    ],
+    "generatedAt": "2026-11-02T23:38:23.547Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא בזמן שהיובל נוהג</strong> - דמצי למקרי ביה עד שנת היובל יעבוד עמך:"
+  },
+  "Rashi on Kiddushin 69a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T23:39:53.874Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא יבא לו</strong> - דור אחריו הוא מושך דהכי משמע דור עשירי לא יבא אפילו אין בו צד ממזרות אלא מאותו:"
+  },
+  "Rashi on Kiddushin 69a:9:1": {
+    "dependsOn": [
+      "Kiddushin 69a:9",
+      "Rashi on Kiddushin 69a:8:1",
+      "Rashi on Kiddushin 69a:10:1"
+    ],
+    "generatedAt": "2026-11-02T23:41:09.348Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא יבא לו</strong> - דור אחריו הוא מושך דהכי משמע דור עשירי לא יבא אפילו אין בו צד ממזרות אלא מאותו:"
+  },
+  "Tosafot on Kiddushin 69a:6:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69a:6:1",
+      "Rashi on Kiddushin 69a:6:2",
+      "Rashi on Kiddushin 69a:6:3",
+      "Kiddushin 69a:7",
+      "Kiddushin 14b:10",
+      "Kiddushin 14b:11"
+    ],
+    "generatedAt": "2026-11-02T23:36:04.428Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 69a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אי אמרת דיעבד מאי נינהו</strong> - <span class=\"rashi-quotation\">פי' הקונטרס</span> מאי האי דקאמר ליה איסורא לא הוה מנסיב ליה עצה למיעבד וה\"ה נמי כשא\"ל זיל גנוב ואיזדבן בעבד עברי דהוה מצי לאקשויי ומי שרי להשיאו עצה לגנוב ולעשות איסורא אלא גמרא פריך שפיר עוי\"ל דאי הוה מקשה ליה הכי הוה ליה לשנויי דאמר ליה זיל ומכור עצמך וכר' אליעזר דאמר <span class=\"parenthesized\">(לעיל קידושין דף יד:)</span> אחד זה ואחד זה רבו מוסר לו שפחה כנענית:"
+  }
+}

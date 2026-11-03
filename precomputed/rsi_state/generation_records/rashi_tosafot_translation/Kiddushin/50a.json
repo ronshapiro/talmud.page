@@ -1,0 +1,479 @@
+{
+  "Rashi on Kiddushin 50a:10:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50a:10:2",
+      "Rashi on Kiddushin 50a:10:3"
+    ],
+    "generatedAt": "2026-11-02T03:02:23.559Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דזבין לניכסיה אדעתא למיסק</strong> - ופריש ליה דאדעתא דהכי עביד:"
+  },
+  "Rashi on Kiddushin 50a:10:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50a:10:1",
+      "Rashi on Kiddushin 50a:10:3"
+    ],
+    "generatedAt": "2026-11-02T03:03:10.352Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא איתדר</strong> - ולא יכול לדור או משום חיסור מזונות או לא מצא דירה:"
+  },
+  "Rashi on Kiddushin 50a:10:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50a:10:1",
+      "Rashi on Kiddushin 50a:10:2",
+      "Rashi on Kiddushin 50a:10:3"
+    ],
+    "generatedAt": "2026-11-02T03:03:46.742Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא לא מיתדר ליה</strong> - והוה ליה כמאן דלא מצי למיסק והדר זביני:"
+  },
+  "Rashi on Kiddushin 50a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T03:04:04.531Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי בעי הוה סליק</strong> - ובדידיה קיימא מילתא ולא בטלה זביניה:"
+  },
+  "Rashi on Kiddushin 50a:11:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50a:11:1",
+      "Rashi on Kiddushin 50a:11:3"
+    ],
+    "generatedAt": "2026-11-02T03:05:56.216Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי בעי לא סליק</strong> - בתמיה מי אנסו:"
+  },
+  "Rashi on Kiddushin 50a:11:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50a:11:1",
+      "Rashi on Kiddushin 50a:11:2"
+    ],
+    "generatedAt": "2026-11-02T03:06:47.938Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאיתיליד ליה אונסא באורחא</strong> - שמע שהיו ליסטים בדרך ללישנא קמא לא הדרינן זביני דהכי קאמר דאי בעי למטרח ולאהדורי בתר שיירתא הוה סליק וללישנא בתרא דקא מתמה אתמוהי ומשמע שלא היה לו שום עיכוב אבל אם היה לו צד עיכוב הדרי זביני:"
+  },
+  "Rashi on Kiddushin 50a:12:1": {
+    "dependsOn": [
+      "Kiddushin 50a:12",
+      "Rashi on Kiddushin 50a:12:2"
+    ],
+    "generatedAt": "2026-11-02T03:10:54.835Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינה מקודשת</strong> - דדוקא קאמר ליה מקום פלוני שיש לי שם אוהבים ואם בא אדם לומר דברים עלי בפניהם ימחו בידו:"
+  },
+  "Rashi on Kiddushin 50a:12:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50a:12:1",
+      "Rashi on Kiddushin 50a:1:1"
+    ],
+    "generatedAt": "2026-11-02T03:11:42.763Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי היא</strong> - שם תמצאנה ואין זו קפידא:"
+  },
+  "Rashi on Kiddushin 50a:14:1": {
+    "dependsOn": [
+      "Kiddushin 50a:14",
+      "Rashi on Kiddushin 50a:14:1",
+      "Rashi on Kiddushin 50a:14:2",
+      "Kiddushin 50a:16",
+      "Kiddushin 50a:17",
+      "Kiddushin 50a:18",
+      "Rashi on Kiddushin 50a:18:1",
+      "Rashi on Kiddushin 50a:18:2",
+      "Rashi on Kiddushin 50a:18:3"
+    ],
+    "generatedAt": "2026-11-02T03:12:58.127Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא לאשמועינן קידושין איצטריכא ליה</strong> - תנא דין כתובה אטו דין קידושין:"
+  },
+  "Rashi on Kiddushin 50a:14:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T03:13:21.591Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא ממלי מילי עלי</strong> - לא יאמרו לה דבר גנאי עלי:"
+  },
+  "Rashi on Kiddushin 50a:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T03:13:45.861Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא ניחא ליה דליבזי</strong> - שהמגרש את אשתו גנאי הוא לו:"
+  },
+  "Rashi on Kiddushin 50a:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T03:14:20.182Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תצא שלא בכתובה</strong> - דאמר אי אפשי באשה נדרנית אבל גיטא בעיא מדבריהם מספיקא כיון דלא פריש דלמא דעתיה נמי אנדרנית:"
+  },
+  "Rashi on Kiddushin 50a:17:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50a:17:1",
+      "Rashi on Kiddushin 50a:1:1",
+      "Rashi on Kiddushin 50a:3:1",
+      "Rashi on Kiddushin 50a:6:1"
+    ],
+    "generatedAt": "2026-11-02T03:15:34.311Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הפוסלין בכהנים</strong> - מפורשים בבכורות <span class=\"parenthesized\">(פרק מומין אלו)</span>:"
+  },
+  "Rashi on Kiddushin 50a:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T03:15:56.872Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כהאי גוונא</strong> - משנה שנויה שם בהמדיר:"
+  },
+  "Rashi on Kiddushin 50a:18:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T03:16:21.671Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא לאשמועינן קידושין איצטריכא ליה</strong> - תנא דין כתובה אטו דין קידושין:"
+  },
+  "Rashi on Kiddushin 50a:18:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50a:18:1",
+      "Rashi on Kiddushin 50a:18:2"
+    ],
+    "generatedAt": "2026-11-02T03:17:02.701Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:18:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והתם</strong> - דקאי בדיני כתובות איצטריכא ליה משום כתובה ותנא המקדש אינה מקודשת אטו כתובה דבעי למיתני בסיפא כנסה סתם תצא בלא כתובה:"
+  },
+  "Rashi on Kiddushin 50a:19:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50a:18:1",
+      "Rashi on Kiddushin 50a:18:2",
+      "Rashi on Kiddushin 50a:18:3"
+    ],
+    "generatedAt": "2026-11-02T03:17:45.395Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סבלונות</strong> - דורונות שדרך חתן לשלוח לארוסתו:"
+  },
+  "Rashi on Kiddushin 50a:1:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50a:1:2",
+      "Rashi on Kiddushin 50a:3:1",
+      "Rashi on Kiddushin 50a:4:1",
+      "Rashi on Kiddushin 50a:5:1"
+    ],
+    "generatedAt": "2026-11-02T02:42:14.698Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יקריב אותו</strong> - קרא יתירא הוא דהא כתיב ברישא דקרא זכר תמים יקריבנו:"
+  },
+  "Rashi on Kiddushin 50a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T02:42:34.293Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שכופין אותו</strong> - לקיים דברי נדרו:"
+  },
+  "Rashi on Kiddushin 50a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T02:42:57.826Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמצוה לשמוע דברי חכמים</strong> - ואית לן לאחזוקיה בחזקת מקיים מצוה וגמר בלבו לקיים דברי בית דין:"
+  },
+  "Rashi on Kiddushin 50a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T02:43:34.509Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאני התם דלחומרא</strong> - כלומר איכא למימר דהא דתני מקודשת לחומרא קאמר שאינה מותרת לאחר בלא גט אבל קידושין גמורים לא הוו לבטל קידושין אחרים שלא יתפס בה שאם בא אחר וקדשה צריכה גט אף משני:"
+  },
+  "Rashi on Kiddushin 50a:5:1": {
+    "dependsOn": [
+      "Kiddushin 50a:5",
+      "Rashi on Kiddushin 50a:5:2",
+      "Rashi on Kiddushin 50a:4:1"
+    ],
+    "generatedAt": "2026-11-02T02:44:29.950Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינה מקודשת</strong> - והיינו קולא:"
+  },
+  "Rashi on Kiddushin 50a:5:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50a:5:1",
+      "Rashi on Kiddushin 50a:4:1",
+      "Rashi on Kiddushin 50a:6:1",
+      "Rashi on Kiddushin 50a:6:2",
+      "Rashi on Kiddushin 50a:6:3",
+      "Rashi on Kiddushin 50a:6:4",
+      "Rashi on Kiddushin 50a:6:5",
+      "Rashi on Kiddushin 50a:6:6",
+      "Rashi on Kiddushin 50a:6:7",
+      "Rashi on Kiddushin 48b:8:1"
+    ],
+    "generatedAt": "2026-11-02T02:47:38.201Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיון דאתניה</strong> - שפירש תנאו בפיו לאו כל כמינה למיעקר תנאו בדברים שבלב הואיל ושמעה ולא מיחתה לומר אעפ\"כ אני חפיצה בך קדש אותי בלא תנאי:"
+  },
+  "Rashi on Kiddushin 50a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T02:48:00.114Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורב חסדא הוה בי רב הונא</strong> - כלומר הלך לבי מדרשו של רב הונא לעיין בדבר:"
+  },
+  "Rashi on Kiddushin 50a:6:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50a:6:1",
+      "Rashi on Kiddushin 50a:6:2",
+      "Rashi on Kiddushin 50a:6:3"
+    ],
+    "generatedAt": "2026-11-02T02:48:40.118Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הבא לי מן החלון</strong> - מעות והיו שם מעות של הקדש ושגג בעל הבית כסבור שהן חולין:"
+  },
+  "Rashi on Kiddushin 50a:6:3": {
+    "dependsOn": [
+      "["
+    ],
+    "generatedAt": "2026-11-02T02:49:21.786Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלוסקמא</strong> - טסקא <span class=\"parenthesized\">(טשק\"א: שק)</span> :"
+  },
+  "Rashi on Kiddushin 50a:6:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50a:6:1",
+      "Rashi on Kiddushin 50a:6:2",
+      "Rashi on Kiddushin 50a:6:3",
+      "Rashi on Kiddushin 50a:6:5"
+    ],
+    "generatedAt": "2026-11-02T02:49:50.120Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והביא לו</strong> - מאותו חלון:"
+  },
+  "Rashi on Kiddushin 50a:6:5": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50a:6:1",
+      "Rashi on Kiddushin 50a:6:2",
+      "Rashi on Kiddushin 50a:6:3",
+      "Rashi on Kiddushin 50a:6:4",
+      "Rashi on Kiddushin 50a:6:5",
+      "Rashi on Kiddushin 50a:6:6",
+      "Rashi on Kiddushin 50a:6:7",
+      "Meilah 21a:2",
+      "Rashi on Meilah 21a:2:1",
+      "Rashi on Meilah 21a:2:2"
+    ],
+    "generatedAt": "2026-11-02T02:51:08.023Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:6:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא היה בלבי</strong> - מכיס זה אלא מכיס זה:"
+  },
+  "Rashi on Kiddushin 50a:6:6": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50a:6:5"
+    ],
+    "generatedAt": "2026-11-02T02:52:17.514Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:6:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעה\"ב מעל</strong> - שהרי עשה שליח שליחותו ותנן <span class=\"parenthesized\">(מעילה דף כ.)</span> השליח שעשה שליחותו הבעה\"ב מעל:"
+  },
+  "Rashi on Kiddushin 50a:6:7": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T02:52:49.771Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:6:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא לא היה בלבי קאמר</strong> - והוה ליה לא עשה שליחותו:"
+  },
+  "Rashi on Kiddushin 50a:7:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50a:7:1",
+      "Kiddushin 50a:7"
+    ],
+    "generatedAt": "2026-11-02T02:53:35.105Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למיפטר נפשיה מקרבן קאמר</strong> - ושקורי קא משקר אבל האי גברא חזינן דטרח לעלות לארץ ישראל ונאנס:"
+  },
+  "Rashi on Kiddushin 50a:8:1": {
+    "dependsOn": [
+      "Kiddushin 50a:8",
+      "Rashi on Kiddushin 50a:7:1",
+      "Rashi on Kiddushin 50a:6:1",
+      "Rashi on Kiddushin 50a:6:2",
+      "Rashi on Kiddushin 50a:9:1",
+      "Tosafot on Kiddushin 48a:8:1"
+    ],
+    "generatedAt": "2026-11-02T02:55:23.214Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא עביד איניש כו'</strong> - קושיא היא כלומר דילמא האי דלא מיפטר משום דלא מהימן הוא ודקאמרת היה לו לפטור עצמו בענין אחר ולומר מזיד הייתי הא לא ניחא ליה למימר דמשוי נפשיה רשע:"
+  },
+  "Rashi on Kiddushin 50a:9:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50a:9:2"
+    ],
+    "generatedAt": "2026-11-02T03:01:16.046Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נזכרתי</strong> - לאחר <span class=\"parenthesized\">(שהלכתי)</span> להוציאה בשוק בשליחותי נזכרתי שהם של הקדש קודם שהוצאת:"
+  },
+  "Rashi on Kiddushin 50a:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T03:01:49.375Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שליח מעל</strong> - ובעל הבית פטור דכיון שנזכר לא שגגה היא גביה ושליח חייב שהוציא מעות הקדש לחולין ואילו לא נזכר בעל הבית הוה רמיא מעילה עליה דאיתרבי שליח למעול שולחו על ידו בריש פירקין <span class=\"parenthesized\">(לעיל קידושין דף מב:)</span> אבל השתא דאיפטר בע\"ה רמיא מעילה אשליח ככל התורה כולה דאין שליח לדבר עבירה והעושה הוא מתחייב:"
+  },
+  "Tosafot on Kiddushin 50a:11:1": {
+    "dependsOn": [
+      "Kiddushin 50a:11",
+      "Kiddushin 50a:6",
+      "Tosafot on Kiddushin 50a:8:1",
+      "Kiddushin 49b:13",
+      "Tosafot on Kiddushin 49b:13:1",
+      "Rashi on Kiddushin 50a:11:1",
+      "Rashi on Kiddushin 50a:11:2",
+      "Rashi on Kiddushin 50a:11:3",
+      "Maharsha: Chidushei Halachot on Kiddushin 50a:2",
+      "Ritva on Kiddushin 50a:11",
+      "Steinsaltz on Kiddushin 50a:11",
+      "Steinsaltz comment #1 on Kiddushin 50a:11",
+      "Steinsaltz comment #2 on Kiddushin 50a:11"
+    ],
+    "generatedAt": "2026-11-02T03:10:09.370Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 50a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאיתיליד ליה אונסא באורחא</strong> - ולעיל שהוצרך לומר דברים שבלב אינן דברים צריך לומר דללישנא דאי בעי לא סליק אתיליד ליה אונסא באורחא וללישנא דאי בעי סליק צריך לומר דאיתיליד אונס שאפילו ע\"י תיור לא היה יכול לעלות:"
+  },
+  "Tosafot on Kiddushin 50a:8:1": {
+    "dependsOn": [
+      "Maharsha: Chidushei Halachot on Kiddushin 50a:1",
+      "Tosafot on Bava Metzia 3b:9:1"
+    ],
+    "generatedAt": "2026-11-02T03:00:26.928Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 50a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היה לו לומר מזיד הייתי</strong> - דנהי דאין אנו מאמינים אותו לומר בלבי היה כך מכל מקום מזיד הייתי הוי טענה מקובלת יותר ואין נראה כל כך רמאות והר\"ם פי' ודאי מזיד הייתי אנו מאמינים לו יותר כי הא דאמרי' בפ\"ק דב\"מ <span class=\"parenthesized\">(דף ג:)</span> גבי אמרו לו שנים אכלת חלב והוא אומר לא אכלתי דחכמים פוטרים מטעם דאם ירצה לומר מזיד הייתי:"
+  }
+}

@@ -1,0 +1,508 @@
+{
+  "Rashi on Kiddushin 70b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:42:59.156Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכריז רב יהודה בפומבדיתא</strong> - שם היה יושב:"
+  },
+  "Rashi on Kiddushin 70b:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:43:16.321Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בלאי דנאי טלאי מלאי זגאי</strong> - שמות מקומות או משפחות:"
+  },
+  "Rashi on Kiddushin 70b:10:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70b:10:1",
+      "Rashi on Kiddushin 70b:10:2",
+      "Rashi on Kiddushin 70b:10:4"
+    ],
+    "generatedAt": "2026-11-03T01:43:55.181Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גובאי</strong> - גבעוני כלומר על שם שהיו גבעונים נקראו בבבל גובאי קרוב לגבעונים בשמן:"
+  },
+  "Rashi on Kiddushin 70b:10:4": {
+    "dependsOn": [
+      "Pesachim 25b:4",
+      "Rashi on Kiddushin 70b:10:1",
+      "Rashi on Kiddushin 70b:10:2",
+      "Rashi on Kiddushin 70b:10:3",
+      "Rashi on Kiddushin 70b:10:4",
+      "Rashi on Kiddushin 70b:10:5"
+    ],
+    "generatedAt": "2026-11-03T01:45:05.367Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דורנונית דרא דנתינאי</strong> - כפר נתינים היה דורא כפר כדאמר <span class=\"parenthesized\">(עירובין דף ז:)</span> דורא דרעותא א\"ל מרי דוראי <span class=\"parenthesized\">(פסחים דף כה:)</span> ועל שם שהוא כפר נתיני נקרא דורנינות:"
+  },
+  "Rashi on Kiddushin 70b:10:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:45:22.691Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:10:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בי כובי דפומבדיתא</strong> - כפר הסמוך אל פומבדיתא דמקרי בי כובי:"
+  },
+  "Rashi on Kiddushin 70b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:45:40.454Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פשחור בן אימר</strong> - בימי ירמיה היה:"
+  },
+  "Rashi on Kiddushin 70b:11:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70b:11:1",
+      "Rashi on Kiddushin 70b:11:3",
+      "Rashi on Kiddushin 70b:11:4"
+    ],
+    "generatedAt": "2026-11-03T01:46:30.063Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכולן נטמעו בכהונה</strong> - ול\"ג גדולה:"
+  },
+  "Rashi on Kiddushin 70b:11:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70b:11:1",
+      "Rashi on Kiddushin 70b:11:2",
+      "Rashi on Kiddushin 70b:11:4"
+    ],
+    "generatedAt": "2026-11-03T01:47:22.399Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נטמעו</strong> - נדמעו נשאו בנות כהנים שהיו מחזיקין עצמן בכהנים מתוך שהיו אוכלים תרומה מחמת [שהיו] עבדי כהנים:"
+  },
+  "Rashi on Kiddushin 70b:11:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70b:11:1",
+      "Rashi on Kiddushin 70b:11:2",
+      "Rashi on Kiddushin 70b:11:3",
+      "Rashi on Kiddushin 70b:11:4"
+    ],
+    "generatedAt": "2026-11-03T01:47:59.066Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אל תהרהר אחריו</strong> - אחר משפחתם שהם בני מריבה כדכתיב כמריבי כהן:"
+  },
+  "Rashi on Kiddushin 70b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:48:19.694Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עדות לישראל</strong> - אותן שהן ישראל הוא מעיד עליהן שהן משלו:"
+  },
+  "Rashi on Kiddushin 70b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:48:41.667Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משפחות ישראל</strong> - משפחות שהם ישראל גמורים:"
+  },
+  "Rashi on Kiddushin 70b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:49:22.823Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בישראל כתיב</strong> - והייתי להם לאלהים אע\"פ שאינם לי לעם ומתוך שאני מקרבן הם יהיו לי לעם אבל גרים אין מקרבין אותן מן השמים אלא אם כן הן מקרבין עצמם תחילה להיות טובים:"
+  },
+  "Rashi on Kiddushin 70b:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:49:41.944Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קשין גרים</strong> - שאינם זהירים במצות והרגילים אצלם נמשכים אצלם ולומדים מן מעשיהם:"
+  },
+  "Rashi on Kiddushin 70b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:12:17.639Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין שואלין בשלום אשה</strong> - שמא מתוך שאילת שלום יהיו רגילים זה עם זה ע\"י שלוחם ויבואו לידי חיבה:"
+  },
+  "Rashi on Kiddushin 70b:1:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70b:1:1",
+      "Rashi on Kiddushin 70b:1:2",
+      "Rashi on Kiddushin 70b:1:3"
+    ],
+    "generatedAt": "2026-11-03T01:12:53.390Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ליה רב נחמן ע\"י בעלה</strong> - אהיה אני שליח לדבר:"
+  },
+  "Rashi on Kiddushin 70b:1:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70b:1:1",
+      "Rashi on Kiddushin 70b:1:2",
+      "Rashi on Kiddushin 70b:1:3",
+      "Rashi on Kiddushin 70b:1:4",
+      "Rashi on Kiddushin 70b:1:5"
+    ],
+    "generatedAt": "2026-11-03T01:13:36.405Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין שואלין בשלום אשה כלל</strong> - שמרגיל לבה ודעתה אצלו:"
+  },
+  "Rashi on Kiddushin 70b:1:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70b:1:1",
+      "Rashi on Kiddushin 70b:1:2",
+      "Rashi on Kiddushin 70b:1:3",
+      "Rashi on Kiddushin 70b:1:5"
+    ],
+    "generatedAt": "2026-11-03T01:14:13.315Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלחה ליה</strong> - ילתא לרב נחמן:"
+  },
+  "Rashi on Kiddushin 70b:1:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:14:44.646Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:1:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שרי ליה תיגריה</strong> - פטור אותו מלפניך זה לשון הגמרא לומר מישרי ליה תיגריה כשממהר לעשות בקשת האיש או דינו כדי להפטר ממנו:"
+  },
+  "Rashi on Kiddushin 70b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:20:49.883Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי שיאטיה דמר הכא</strong> - מה דרכו של אדוני לשוט הלום כלומר למה בא אדוני הנה:"
+  },
+  "Rashi on Kiddushin 70b:2:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70b:2:1",
+      "Rashi on Kiddushin 70b:2:2",
+      "Rashi on Kiddushin 70b:2:3"
+    ],
+    "generatedAt": "2026-11-03T01:21:52.902Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שותא דמר לא ידענא</strong> - שיחתו של אדוני איני מבין לדבר בצחות לשונו:"
+  },
+  "Rashi on Kiddushin 70b:2:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70b:2:1",
+      "Rashi on Kiddushin 70b:2:2",
+      "Rashi on Kiddushin 70b:2:3",
+      "Rashi on Kiddushin 70b:2:4"
+    ],
+    "generatedAt": "2026-11-03T01:23:06.355Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לדינא מזמינא ליה</strong> - בתמיה:"
+  },
+  "Rashi on Kiddushin 70b:2:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:23:33.182Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפיק דיסקא דאזמנותא</strong> - הוציא שטר הזמנה מחיקו ששלח לו רב נחמן שיבא לפניו:"
+  },
+  "Rashi on Kiddushin 70b:2:5": {
+    "dependsOn": [
+      "Jastrow, חַדְיָא ² 1",
+      "Rashi on Kiddushin 70b:2:1",
+      "Rashi on Kiddushin 70b:2:2",
+      "Rashi on Kiddushin 70b:2:3",
+      "Rashi on Kiddushin 70b:2:4",
+      "Rashi on Kiddushin 70b:2:6",
+      "Shabbat 13a:10"
+    ],
+    "generatedAt": "2026-11-03T01:24:59.295Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:2:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מבי חדיה</strong> - מתוך חיקו:"
+  },
+  "Rashi on Kiddushin 70b:2:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:25:27.447Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:2:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לימא מר מיליה</strong> - ידבר דבר זכותו על ריבו של אותו האיש:"
+  },
+  "Rashi on Kiddushin 70b:3:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70b:3:1",
+      "Rashi on Kiddushin 70b:3:2",
+      "Rashi on Kiddushin 70b:3:3",
+      "Kiddushin 70b:1",
+      "Kiddushin 70a:13",
+      "Chokhmat Shlomo on Kiddushin 70b:2"
+    ],
+    "generatedAt": "2026-11-03T01:26:46.862Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ציער שליחא דרבנן</strong> - ביזה את שלוחו לפניו וחייב מלקות:"
+  },
+  "Rashi on Kiddushin 70b:3:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70b:3:1",
+      "Rashi on Kiddushin 70b:3:3",
+      "Rashi on Kiddushin 70a:12:2",
+      "Rashi on Kiddushin 70a:13:2"
+    ],
+    "generatedAt": "2026-11-03T01:28:34.184Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דרב מנגיד אמאן דמצער שליח דרבנן</strong> - כדאמר בפ' קמא <span class=\"parenthesized\">(לעיל קידושין דף יב:)</span>:"
+  },
+  "Rashi on Kiddushin 70b:3:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:30:44.408Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דעדיפא מיניה</strong> - חמורה ממנה עשיתי לו לקנסו:"
+  },
+  "Rashi on Kiddushin 70b:5:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70b:5:1",
+      "Rashi on Kiddushin 70b:5:2"
+    ],
+    "generatedAt": "2026-11-03T01:31:38.039Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אדהכי אמר ההוא בר דיניה לרב יהודה לדידי</strong> - דאתינא מבית חשמונאי קרית לי עבד:"
+  },
+  "Rashi on Kiddushin 70b:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:33:44.961Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל דאמר מבית חשמונאי אנא עבד הוא</strong> - שכל זרעו הרגם הורדוס ועבד היה ומלך תחתיהן וקרא בניו על שם בית חשמונאי ומסתמא לאו בנות ישראל נסיב דנזהרים הם להשיא בנותם לעבדים והוו להו כולם עבדים:"
+  },
+  "Rashi on Kiddushin 70b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:34:14.199Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם קודם שבא מעשה לידו אמרה</strong> - להאי שמועה לתלמידיו בשם רבו נאמן לאומרה בשעת מעשה ואם לאו אינו נאמן להעיד בשם רבו שמא מחמת מעשה הבא לידו הוא אמר כן:"
+  },
+  "Rashi on Kiddushin 70b:7:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70b:7:1"
+    ],
+    "generatedAt": "2026-11-03T01:34:43.608Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אגודא</strong> - שפת הנהר:"
+  },
+  "Rashi on Kiddushin 70b:7:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70b:7:1",
+      "Rashi on Kiddushin 70b:7:2",
+      "Rashi on Kiddushin 70b:7:3"
+    ],
+    "generatedAt": "2026-11-03T01:36:16.428Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמברא</strong> - על הגשר אי נמי בתוך הספינה לעבור הנהר:"
+  },
+  "Rashi on Kiddushin 70b:7:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70b:7:1",
+      "Rashi on Kiddushin 70b:7:2"
+    ],
+    "generatedAt": "2026-11-03T01:37:03.931Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל דאמר מבית חשמונאי אנא עבד הוא</strong> - שכל זרעו הרגם הורדוס ועבד היה ומלך תחתיהן וקרא בניו על שם בית חשמונאי ומסתמא לאו בנות ישראל נסיב דנזהרים הם להשיא בנותם לעבדים והוו להו כולם עבדים:"
+  },
+  "Rashi on Kiddushin 70b:9:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70b:9:1",
+      "Rashi on Kiddushin 70b:9:2",
+      "Rashi on Kiddushin 70b:9:3",
+      "Rashi on Kiddushin 70b:9:4",
+      "Rashi on Kiddushin 70b:9:5",
+      "Rashi on Kiddushin 70b:9:6",
+      "Steinsaltz on Kiddushin 70b:9"
+    ],
+    "generatedAt": "2026-11-03T01:40:07.266Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איקרע' כמה כתובתא</strong> - מנשי אותה המשפחה:"
+  },
+  "Rashi on Kiddushin 70b:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:40:24.743Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי קא נפיק</strong> - רב יהודה:"
+  },
+  "Rashi on Kiddushin 70b:9:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:40:45.430Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למירגמיה</strong> - לפי שגילה את פסולם:"
+  },
+  "Rashi on Kiddushin 70b:9:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:41:07.323Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זרעייתא</strong> - משפחות:"
+  },
+  "Rashi on Kiddushin 70b:9:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:41:31.590Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:9:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקם אטמא בנהר מלכא</strong> - באותן האבנים שהשליכום בנהר עמד מכשול סתימה במי הנהר ומנע את מהלך המים:"
+  },
+  "Rashi on Kiddushin 70b:9:6": {
+    "dependsOn": [
+      "Jastrow, אִיטְמָא 1",
+      "Steinsaltz on Kiddushin 70b:9:1"
+    ],
+    "generatedAt": "2026-11-03T01:42:44.031Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70b:9:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אטמא</strong> - סתימה כדמתרגם סתמום טמונון <span class=\"parenthesized\">(בראשית כו)</span>:"
+  },
+  "Tosafot on Kiddushin 70b:15:1": {
+    "dependsOn": [
+      "Translation on Tosafot on Kiddushin 70b:15:1"
+    ],
+    "generatedAt": "2026-11-03T01:53:27.457Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 70b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קשים גרים</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> לפי שאינם בקיאים במצות ומביאים פורענות ועוד שמלמדים את ישראל ממעשיהם וכו' וי\"מ לפי שכל ישראל ערבין זה בזה ולאו מילתא היא דהא לא נתערבו בשביל הגרים כשקבלו התורה כדאמרינן בסוטה <span class=\"parenthesized\">(דף לז:)</span> נמצא לכל אחד מישראל שש מאות אלף וג' אלפים [ותק\"ן בריתות] שכולן נתערבו זה בזה אלמא לא נתערבו מן הגרים שהרי הרבה ערב רב עלה אתם ויש מפרשים דקשין גרים לישראל כספחת לפי שהזהיר הקב\"ה עליהם בכ\"ד מקומות שלא להונות אותם ואי אפשר שלא יצערום ויש מפרשים לפי שע\"י הגרים ישראל בגלות כדאמר <span class=\"parenthesized\">(פסחים דף פז:)</span> מפני מה ישראל מפוזרים בכל ארצות יותר משאר עובדי כוכבים כדי שיתוספו עליהם גרים ולא נהירא דהא אמר ביבמות <span class=\"parenthesized\">(דף מז.)</span> עובד כוכבים הבא להתגייר אומרים לו מה ראית שבאת להתגייר תדע שישראל דווים דחופים ואמרי' התם משום דיפרוש הוא דאמר מר קשין גרים לישראל כספחת אלמא דבתר שיתגיירו קשים הם וה\"ר אברהם גר פירש לפי שהגרין בקיאין במצות ומדקדקין בהם קשים הם לישראל כספחת דמתוך כן הקב\"ה מזכיר עונותיהם של ישראל כשאין עושין רצונו וכה\"ג מצינו גבי הצרפית <span class=\"parenthesized\">(מלכים א יז)</span> שאמרה מה לי ולך איש האלהים <span class=\"parenthesized\">(כי)</span> באת אלי להזכיר [את] עוני שמתוך שהוא צדיק גמור היה נראה לה שמזכיר השם עונה ור\"י פירש דלפיכך קשים שנטמעו בישראל ואין השכינה שורה אלא על משפחה מיוחסת וכן נראה דמשום הכי מייתי הא דרבי חלבו על הא מילתא דר' חמא בר חנינא:"
+  },
+  "Tosafot on Kiddushin 70b:1:1": {
+    "dependsOn": [
+      "Bava Metzia 87a:7",
+      "Kiddushin 70b:1"
+    ],
+    "generatedAt": "2026-11-03T01:20:15.051Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 70b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין שואלין בשלום אשה כלל</strong> - והא דאמר בהשוכר את הפועלים <span class=\"parenthesized\">(ב\"מ דף פז.)</span> איה שרה אשתך ששואלין בשלום האשה על ידי בעלה היינו דוקא בשאילת שלום אבל לשלוח לה בשלום אפילו ע\"י בעלה אסור:"
+  }
+}

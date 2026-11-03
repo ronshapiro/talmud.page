@@ -1,0 +1,295 @@
+{
+  "Rashi on Kiddushin 25b:1:1": {
+    "dependsOn": [
+      "Kiddushin 25b:1",
+      "Kiddushin 25a:10",
+      "Kiddushin 25a:11",
+      "Kiddushin 25a:12",
+      "Kiddushin 25a:13"
+    ],
+    "generatedAt": "2026-11-01T11:34:43.962Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 25b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כתנאי</strong> - סירוס דביצים אי הוי מום גלוי:"
+  },
+  "Rashi on Kiddushin 25b:2:1": {
+    "dependsOn": [
+      "Kiddushin 25b:2",
+      "Rashi on Kiddushin 25b:1:1"
+    ],
+    "generatedAt": "2026-11-01T11:35:59.290Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 25b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בביצים ולא בגיד</strong> - בתמיה גיד ודאי גלוי הוא:"
+  },
+  "Rashi on Kiddushin 25b:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T11:36:17.050Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 25b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף בביצים</strong> - ולא תימא מום טמון הוא דודאי מינכר:"
+  },
+  "Rashi on Kiddushin 25b:2:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 25b:2:1",
+      "Rashi on Kiddushin 25b:2:2",
+      "Rashi on Kiddushin 25b:2:3",
+      "Rashi on Kiddushin 25b:2:4"
+    ],
+    "generatedAt": "2026-11-01T11:36:45.806Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 25b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעוך וכתות אף בביצים</strong> - דמינכר טפי:"
+  },
+  "Rashi on Kiddushin 25b:2:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 25b:2:3",
+      "Rashi on Kiddushin 25b:2:4",
+      "Rashi on Kiddushin 25b:2:5"
+    ],
+    "generatedAt": "2026-11-01T11:37:18.751Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 25b:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בגיד ולא בביצים</strong> - דודאי מום טמון הוא ולא מום גלוי הוא:"
+  },
+  "Rashi on Kiddushin 25b:2:5": {
+    "dependsOn": [
+      "Rashi on Kiddushin 25b:2:1",
+      "Rashi on Kiddushin 25b:2:2",
+      "Rashi on Kiddushin 25b:2:3",
+      "Rashi on Kiddushin 25b:2:4",
+      "Rashi on Kiddushin 25b:2:5",
+      "Rashi on Kiddushin 25b:2:6",
+      "Rashi on Bekhorot 39b:7:3",
+      "Rashi on Bekhorot 39b:7:4"
+    ],
+    "generatedAt": "2026-11-01T11:38:11.523Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 25b:2:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרות</strong> - כרותין החוטין שהביצים תלויין בהן בכיסן ומעורים במקצת ואינן נתוקין לגמרי:"
+  },
+  "Rashi on Kiddushin 25b:2:6": {
+    "dependsOn": [
+      "Rashi on Kiddushin 25b:2:1",
+      "Rashi on Kiddushin 25b:2:2",
+      "Rashi on Kiddushin 25b:2:3",
+      "Rashi on Kiddushin 25b:2:4",
+      "Rashi on Kiddushin 25b:2:5",
+      "Menachot 56b:3",
+      "Rashi on Menachot 56b:3:1",
+      "Tosafot on Menachot 56b:3:1",
+      "Rashi on Bekhorot 39b:7:3",
+      "Rashi on Bekhorot 39b:7:4"
+    ],
+    "generatedAt": "2026-11-01T11:39:41.726Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 25b:2:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתוק</strong> - ביד לגמרי ועדיין תלויין בכיס נתוק הוי טפי מכרות כדאמרינן במנחות <span class=\"parenthesized\">(דף נו:)</span> להביא נותק אחר כורת שחייב אלמא נתוק הוי טפי מכרות:"
+  },
+  "Rashi on Kiddushin 25b:3:1": {
+    "dependsOn": [
+      "Kiddushin 22b:11",
+      "Kiddushin 22b:12",
+      "Kiddushin 25b:3",
+      "Rashi on Kiddushin 25b:3:2",
+      "Rashi on Kiddushin 25b:3:3",
+      "Tosafot on Kiddushin 25b:3:2"
+    ],
+    "generatedAt": "2026-11-01T11:41:50.031Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 25b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נקנית במסירה</strong> - בעליה מוסרים אותה ללוקח באפסר או בשערה כדתניא לעיל <span class=\"parenthesized\">(קידושין דף כב:)</span> כיצד במסירה כו' אבל משיכה לא מקניא דאין דרכה בכך להוליכה לפניו:"
+  },
+  "Rashi on Kiddushin 25b:3:2": {
+    "dependsOn": [
+      "Kiddushin 25b:3",
+      "Rashi on Kiddushin 22b:12:1",
+      "Rashi on Kiddushin 25b:3:1",
+      "Rashi on Kiddushin 25b:3:3",
+      "Rashi on Kiddushin 25b:3:2",
+      "Tosafot on Kiddushin 25b:3:2",
+      "Kiddushin 22b:13"
+    ],
+    "generatedAt": "2026-11-01T11:44:32.090Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 25b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נקנית במסירה</strong> - בעליה מוסרים אותה ללוקח באפסר או בשערה כדתניא לעיל <span class=\"parenthesized\">(קידושין דף כב:)</span> כיצד במסירה כו' אבל משיכה לא מקניא דאין דרכה בכך להוליכה לפניו:"
+  },
+  "Rashi on Kiddushin 25b:3:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T11:44:59.755Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 25b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בהגבהה</strong> - ולא במשיכה:"
+  },
+  "Rashi on Kiddushin 25b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T11:49:28.590Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 25b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא אנן תנן במסירה ורב נמי במסירה אמר</strong> - היה רגיל לומר:"
+  },
+  "Rashi on Kiddushin 25b:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T11:49:55.347Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 25b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא אנן תנן במסירה ורב נמי במסירה אמר</strong> - היה רגיל לומר:"
+  },
+  "Rashi on Kiddushin 25b:4:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 25b:4:1",
+      "Rashi on Kiddushin 25b:4:2",
+      "Rashi on Kiddushin 25b:4:3",
+      "Rashi on Kiddushin 25b:4:4",
+      "Rashi on Kiddushin 25b:4:5"
+    ],
+    "generatedAt": "2026-11-01T11:50:46.183Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 25b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הדר ביה כו'</strong> - בתמיה עד הכא שמואל קאמר לה:"
+  },
+  "Rashi on Kiddushin 25b:4:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T11:51:07.007Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 25b:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זו וזו</strong> - הדקה והגסה וכי האי תנא סבירא ליה לרב:"
+  },
+  "Rashi on Kiddushin 25b:4:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T11:51:28.184Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 25b:4:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זו וזו בהגבהה</strong> - ולא במסירה ולא במשיכה:"
+  },
+  "Rashi on Kiddushin 25b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T11:51:45.699Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 25b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במה יקנה</strong> - שאי אפשר להגביהו:"
+  },
+  "Rashi on Kiddushin 25b:6:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 25b:6:1",
+      "Rashi on Kiddushin 25b:6:2",
+      "Rashi on Kiddushin 25b:6:3"
+    ],
+    "generatedAt": "2026-11-01T11:52:38.954Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 25b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מביא ארבעה כלים</strong> - דקני ליה כליו כו':"
+  },
+  "Rashi on Kiddushin 25b:6:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 25b:6:1",
+      "Rashi on Kiddushin 25b:6:3",
+      "Rashi on Kiddushin 25a:20:1"
+    ],
+    "generatedAt": "2026-11-01T11:54:11.987Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 25b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ש\"מ כו'</strong> - ופלוגתא היא בב\"ב <span class=\"parenthesized\">(דף פה.)</span>:"
+  },
+  "Rashi on Kiddushin 25b:6:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T11:54:31.864Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 25b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בסימטא</strong> - זוית שהיא אצל רשות הרבים ואינה לא רה\"ר ולא רה\"י:"
+  },
+  "Tosafot on Kiddushin 25b:3:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 25b:3:1",
+      "Tosafot on Kiddushin 2a:1:1"
+    ],
+    "generatedAt": "2026-11-01T11:47:02.367Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 25b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בהמה גסה נקנית במסירה</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> בעליה מוסרים אותה ללוקח באפסר כדתניא לעיל כיצד במסירה אוחזה בטלפיה כו' משמע מתוך לשונו דמסירה בעינן מיד ליד וכן פירש ריב\"ם ומייתי ראיה מהא דאמר בפ\"ק דב\"מ <span class=\"parenthesized\">(דף ח:)</span> מאי לשון מסירה כאדם המוסר דבר לחבירו וכן ההיא דאמר במציאה ובנכסי הגר מאן מסר ליה דליקני דמשמע דמסירה הוי מיד ליד וקשה לר\"י דהא אמרינן לעיל כיצד במסירה אחזה בטלפיה כו' דלשון אחיזה בטלפי' משמע שמעצמו אוחזה ולא מסרה לו אדם לכן נראה לרבי דלא בעינן מיד ליד אלא כיון דאמר לך חזק וקני קנה והא דקאמר התם במציאה ובנכסי הגר מאן קמסר ליה דליקני היינו מי אמר לו לך חזק וקני ורשב\"ם פי' אחז בטלפיה אחז במצות המוכר דמשמע נמי מתוך לשונו דלא בעינן מסירה מיד ליד ועוד ראיה מפרק המוכר את הספינה <span class=\"parenthesized\">(ב\"ב דף עו:)</span> דפליגי התם תנאי חד אמר ספינה נקנית במסירה וחד אמר עד שימשוך ומסיק דכל היכא דאמר ליה לך חזק וקני כ\"ע לא פליגי דקני כי פליגי כגון דאמר ליה לך משוך וקני מר סבר קפיד ומר סבר מראה מקום הוא לו מדאמר קפיד אלמא אינו מוסרה מיד ליד דאי מסר ליה אמאי לא קני הא בטלה הקפדתו אלא ש\"מ דמסירה לא הוי מיד ליד ועוד אי מסירה מיד ליד בעינן לא ה\"ל למימר לך חזק וקני אלא תא חזק וקני:"
+  },
+  "Tosafot on Kiddushin 25b:3:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 25b:3:1",
+      "Tosafot on Kiddushin 25b:3:1"
+    ],
+    "generatedAt": "2026-11-01T11:49:06.699Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 25b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בהמה גסה נקנית במסירה</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> דוקא במסירה אבל במשיכה לא מיקניא דאין דרכה בכך להוליכה לפניו משמע לפירושו דמסירה עדיפא ממשיכה והא דקאמר בגמרא דרש רב בקימחוניא בהמה גסה נקנית במשיכה וכל שכן במסירה ופריך שמואל לתלמידי דרב והאנן במסירה תנן פי' במסירה דוקא ולא במשיכה וקשה לר\"י מאי פריך שמואל והאנן במסירה תנן ולא במשיכה הא תנן בפ\"ק דב\"מ <span class=\"parenthesized\">(דף ב.)</span> היו שנים רוכבים על גבי בהמה או שהיה אחד רוכב ואחד מנהיג וכו' שהשנים יחלוקו משום דכל אחד קנה מחצה ומנהיג היינו משיכה ועוד דאמר התם <span class=\"parenthesized\">(דף ח:)</span> שמעת מיניה דמר שמואל תרתי רוכב ומנהיג חד קני וחד לא קני ולא ידענא הי מינייהו היכי דמי אילימא רוכב לחוד ומנהיג לחוד מנהיג מי איכא למ\"ד דלא קני משמע דשמואל גופיה דקאמר הכא במסירה דוקא תנן קאמר התם דמנהיג קני דהיינו משיכה ועוד קשה דבגמרא בעו פיל לר' שמעון במה יקנה תבעי ליה נמי בהמה גסה במציאה ובנכסי הגר במה יקנה אליבא דרבי מאיר ורבי אליעזר במסירה לא אפשר דמאן מסר ליה דליקני ומשיכה לא קניא בבהמה גסה לדידהו ומיהו הך פירכא איכא לשנויי ולחלק בין מקח וממכר למציאה ונכסי הגר דמקח וממכר דאפשר במסירה לא מיקני במשיכה אבל במציאה ונכסי הגר דלא אפשר במסירה מקניא במשיכה אבל אכתי קשה מרבי אליעזר דאית ליה הכא במסירה דוקא כדקתני במתניתין דברי רבי מאיר ורבי אליעזר והתם קתני רבי אליעזר אומר רוכב בשדה ומנהיג בעיר קני ומוקי לה במקח וממכר אלמא משיכה קני אף לרבי אליעזר לכך פי' ר\"י בהמה גסה נקנית במסירה היינו אף במסירה וכל שכן במשיכה דעדיפא והשתא ניחא דפריך שמואל והאנן במסירה תנן כלומר אף במסירה ועוד יש לדקדק דמשיכה עדיפא ממסירה מהא דקתני בהמוכר את הספינה <span class=\"parenthesized\">(ב\"ב דף עו.)</span> ספינה נקנית במסירה דברי רבי וחכמים אומרים לא קנה עד שימשכנה משמע דלא קני במסירה לרבנן אלא במשיכה אלמא דרבי דאמר במסירה לא למעוטי משיכה אתא אבל למאן דאמר במשיכה למעוטי מסירה אתא והלשון נמי משמע דקאמר התם ספינה נמי תקני במסירה משמע עם המשיכה וכן סובר רשב\"ם דמשיכה חשיבה מן המסירה דפירש בפרק המוכר את הספינה <span class=\"parenthesized\">(בבא בתרא דף עו:)</span> עלה דההיא דאביי ורבא דאמרי תרוייהו מסירה קונה ברשות הרבים ובחצר שאינו של שניהם משיכה קונה בסימטא [ובחצר שהיא של שניהן] ופירש רשב\"ם התם מסירה קונה ברשות הרבים משום דלא אפשר למיקנייה התם במשיכה דאין משיכה אלא כשמושך ברשותו והאי לאו רשותיה היא משיכה קונה בסימטא דשפיר הוי רשותו להניח שם מה שהוא צריך משא\"כ ברשות הרבים וכיון דאפשר במשיכה שהוא קנין חשוב לאו אורחא דארעא למיקנייה במסירה שהוא קנין גרוע ור\"ת הקשה על פירוש רשב\"ם וכי מצות הן משיכה ומסירה שמבטלות זו את זו שאין לעשות אלא מן המובחר ופירש רבינו תם לשם משיכה קונה בסימטא כל שכן מסירה דעדיפא ממשיכה וכן פירש רש\"י ומיהו שיטה דשמעתא קשה לפירושו כדפירשתי וה\"ר חיים כהן מיישב פירוש רשב\"ם ומפרש דמסירה אינה קונה בסימטא לא מטעמא דרשב\"ם אלא נראה לו הטעם שהסימטא רשות של יחיד הוא והקודם בו זכה וסתמא דמילתא המוכר קדם והביא בהמתו לשם קודם שבא הלוקח ואם כן הוי מקום בהמתו כחצרו ואין מסירה ולא שום קנין מהני ברשות מוכר אע\"ג דמשיכה קניא שם היינו משום שעקר הדבר ממקומו הראשון ור\"י הקשה על מה שפירש רבינו תם דמסירה קונה אף בסימטא מההיא דפרק הספינה <span class=\"parenthesized\">(בבא בתרא דף עו:)</span> דקאמר התם ספינה נקנית במסירה דברי רבי וחכמים אומרים במשיכה ופריך היכי דמי אילימא ברשות הרבים וכו' עד דקאמר לימא אביי ורבא דאמרי מסירה קונה ברשות הרבים אמרי כרבי כו' משמע דאי הוה מוקי לה בסימטא לא הוי קשה מידי ואי מסירה קונה בסימטא אפי' אם מיירי פלוגתא דרבי וחכמים בסימטא הוה ליה למיפרך הכי לימא אביי ורבא דאמרי כרבי לכך נראה לר\"י הא דאמרי אביי ורבא מסירה קונה ברה\"ר היינו דוקא ברה\"ר אבל לא בסימטא כמו שפירש רשב\"ם [וע' היטב תוס' בבא בתרא עו. ד\"ה ספינה]:"
+  },
+  "Tosafot on Kiddushin 25b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T11:55:10.579Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 25b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמעת מינה כליו של לוקח ברשות מוכר קנה לוקח</strong> - וא\"ת דילמא לא מיירי ברשות מוכר וי\"ל סתמא דמילתא ברשות מוכר מיירי ששם הבהמה עומדת והוי מצי למידחי דאמר ליה מוכר יקנה לך כליך דבהא לכ\"ע קנה לוקח כדאיתא בפרק הספינה <span class=\"parenthesized\">(ב\"ב דף פו.)</span>:"
+  }
+}

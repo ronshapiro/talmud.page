@@ -1,0 +1,50 @@
+{
+  "Rashi on Kiddushin 76a:1:1": {
+    "dependsOn": [
+      "Kiddushin 76a:1",
+      "Rashi on Kiddushin 76a:1:2",
+      "Rashi on Kiddushin 75b:8:1",
+      "Rashi on Kiddushin 75b:8:2",
+      "Rashi on Kiddushin 76a:2:1",
+      "Rashi on Kiddushin 75a:1:1",
+      "Rashi on Kiddushin 75a:1:2"
+    ],
+    "generatedAt": "2026-11-03T08:08:09.850Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 76a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ופוטרין את הנשואות</strong> - מן החליצה ולרבי עקיבא בני חייבי לאוין ממזרים הם:"
+  },
+  "Rashi on Kiddushin 76a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T08:08:35.870Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 76a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">החוצה</strong> - החיצונה שלא נכנסה עדיין לרשות הבעל לנשואין:"
+  },
+  "Rashi on Kiddushin 76a:2:1": {
+    "dependsOn": [
+      "Kiddushin 76a:2",
+      "Kiddushin 76a:1",
+      "Kiddushin 75b:8",
+      "Rashi on Kiddushin 76a:1:1",
+      "Rashi on Kiddushin 76a:1:2",
+      "Rashi on Kiddushin 75b:6:1",
+      "Rashi on Kiddushin 75b:6:2",
+      "Versions on Kiddushin 76a:2",
+      "Steinsaltz on Kiddushin 76a:2"
+    ],
+    "generatedAt": "2026-11-03T08:11:33.165Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 76a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומשני יש ממזר מחייבי כריתות קא משמע לן</strong> - ולאפוקי ממאן דאמר <span class=\"parenthesized\">(יבמות דף מט.)</span> אין ממזר אלא מחייבי מיתות בית דין:"
+  }
+}

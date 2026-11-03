@@ -1,0 +1,304 @@
+{
+  "Rashi on Kiddushin 23b:10:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 23b:10:1",
+      "Rashi on Kiddushin 23b:10:2",
+      "Rashi on Kiddushin 23b:10:3",
+      "Rashi on Kiddushin 23b:10:4",
+      "Kiddushin 23b:10",
+      "Rashi on Kiddushin 23b:8:1"
+    ],
+    "generatedAt": "2026-11-01T10:02:25.875Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דר\"מ</strong> - דאמר בכסף ע\"י אחרים סבר אין קנין לעבד בלא רבו אם נתנו לו במתנה זכה בו רבו הילכך אע\"ג דהוי כסף משל אחרים אי אפשר שיקבלנו הוא ויתן לרבו:"
+  },
+  "Rashi on Kiddushin 23b:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T10:02:43.755Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא כלום אמר ליה</strong> - דכיון דקנה עבד קנה רבו:"
+  },
+  "Rashi on Kiddushin 23b:10:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 23b:10:1",
+      "Rashi on Kiddushin 23b:10:2",
+      "Rashi on Kiddushin 23b:10:3",
+      "Rashi on Kiddushin 23b:10:4"
+    ],
+    "generatedAt": "2026-11-01T10:03:26.320Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבנן סברי יש קנין</strong> - אם נתנו לו מתנה הואיל ודעת אחרת מקנהו ונותן זה לא גמר בלבו שיזכה בו הרב הויא דעבד ומיפריק ביה על ידי עצמו:"
+  },
+  "Rashi on Kiddushin 23b:10:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 23b:10:1",
+      "Rashi on Kiddushin 23b:10:2",
+      "Rashi on Kiddushin 23b:10:3",
+      "Rashi on Kiddushin 23b:10:4"
+    ],
+    "generatedAt": "2026-11-01T10:03:56.972Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23b:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתצא בו לחירות</strong> - שתתנהו לרבך בפדיונך:"
+  },
+  "Rashi on Kiddushin 23b:1:1": {
+    "dependsOn": [
+      "Kiddushin 23b:1",
+      "Rashi on Kiddushin 23b:1:1",
+      "Rashi on Kiddushin 23b:1:2",
+      "Rashi on Kiddushin 23b:1:3",
+      "Rashi on Kiddushin 23a:13:1"
+    ],
+    "generatedAt": "2026-11-01T09:38:38.046Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לר' שמעון בן אלעזר</strong> - דאמר עבד אינו מקבל גיטו עבד מהו שיעשה שליח לקבל גיטו:"
+  },
+  "Rashi on Kiddushin 23b:1:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 23b:1:1",
+      "Rashi on Kiddushin 23b:1:3"
+    ],
+    "generatedAt": "2026-11-01T09:39:21.826Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גמר לה לה מאשה</strong> - ועושה שליח:"
+  },
+  "Rashi on Kiddushin 23b:1:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 23b:1:1",
+      "Rashi on Kiddushin 23b:1:2",
+      "Kiddushin 23b:1"
+    ],
+    "generatedAt": "2026-11-01T09:40:20.761Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כאשה דמי</strong> - ועושה שליח לקבלה כאשה דנפקא לן <span class=\"parenthesized\">(לקמן קידושין דף מא.)</span> מושלחה מביתו מלמד שהאשה עושה שליח והיינו דקאמר על ידי אחרים:"
+  },
+  "Rashi on Kiddushin 23b:2:1": {
+    "dependsOn": [
+      "Kiddushin 23b:2",
+      "Rashi on Kiddushin 23b:1:1",
+      "Rashi on Kiddushin 23b:1:2",
+      "Rashi on Kiddushin 23b:1:3",
+      "Rashi on Kiddushin 23b:2:1",
+      "Rashi on Kiddushin 23b:2:2"
+    ],
+    "generatedAt": "2026-11-01T09:44:44.130Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או דילמא כו'</strong> - וע\"י אחרים דקאמר שיזכה לו רבו גיטו על ידי אחרים או הם עושים שלא מדעתו:"
+  },
+  "Rashi on Kiddushin 23b:2:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 23b:2:1"
+    ],
+    "generatedAt": "2026-11-01T09:45:19.015Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גמר לה לה מאשה</strong> - ועושה שליח:"
+  },
+  "Rashi on Kiddushin 23b:3:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 23b:3:1",
+      "Rashi on Kiddushin 23b:3:2",
+      "Rashi on Kiddushin 23b:1:1",
+      "Rashi on Kiddushin 23b:2:1",
+      "Rashi on Kiddushin 23a:1:1",
+      "Rashi on Kiddushin 23a:2:1"
+    ],
+    "generatedAt": "2026-11-01T09:46:02.979Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הני כהני</strong> - לענין הקרבת קרבנות:"
+  },
+  "Rashi on Kiddushin 23b:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T09:46:45.863Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלוחי דרחמנא נינהו</strong> - ולא שלוחי דידן ונפקא מינה למודר הנאה מכהן שהכהן מותר להקריב קרבנותיו והא מילתא איבעיא לן בנדרים בפרק אין בין המודר <span class=\"parenthesized\">(נדרים דף לה:)</span>:"
+  },
+  "Rashi on Kiddushin 23b:4:1": {
+    "dependsOn": [
+      "Kiddushin 23b:4",
+      "Rashi on Kiddushin 23b:3:1",
+      "Rashi on Kiddushin 23b:3:2"
+    ],
+    "generatedAt": "2026-11-01T09:48:57.333Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא עבד כו'</strong> - והיכי יליף רב הונא מהאי טעמא היתר בהקרבה למודר הנאה:"
+  },
+  "Rashi on Kiddushin 23b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T09:49:20.042Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתורת קרבנות</strong> - שיהיו הן עובדים את העבודה:"
+  },
+  "Rashi on Kiddushin 23b:5:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 23b:5:1",
+      "Rashi on Kiddushin 23b:5:3",
+      "Kiddushin 23b:5"
+    ],
+    "generatedAt": "2026-11-01T09:50:25.201Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שייך בגיטין</strong> - אם אינו מקבל גיטו משום דלא יצא הגט מרשות רבו מקבל הוא גט לחברו שאינו עבדו של רבו אלא של איש אחר דהא יצא הגט לרשות שאינו שלו:"
+  },
+  "Rashi on Kiddushin 23b:5:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T09:50:41.767Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל לא מיד רבו שלו</strong> - אם היו שניהם של איש אחד:"
+  },
+  "Rashi on Kiddushin 23b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T09:51:13.563Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דר\"מ</strong> - דאמר בכסף ע\"י אחרים סבר אין קנין לעבד בלא רבו אם נתנו לו במתנה זכה בו רבו הילכך אע\"ג דהוי כסף משל אחרים אי אפשר שיקבלנו הוא ויתן לרבו:"
+  },
+  "Rashi on Kiddushin 23b:6:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 23b:6:1",
+      "Rashi on Kiddushin 23b:6:3"
+    ],
+    "generatedAt": "2026-11-01T09:51:49.978Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבנן סברי יש קנין</strong> - אם נתנו לו מתנה הואיל ודעת אחרת מקנהו ונותן זה לא גמר בלבו שיזכה בו הרב הויא דעבד ומיפריק ביה על ידי עצמו:"
+  },
+  "Rashi on Kiddushin 23b:6:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 23b:6:3",
+      "Rashi on Kiddushin 23b:6:1",
+      "Rashi on Kiddushin 23b:6:2"
+    ],
+    "generatedAt": "2026-11-01T09:52:54.711Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קנין דאשה ובעלה</strong> - בעלמא איצטריכא לן ואשה כי עבד הואיל ובעלה זכאי במעשה ידיה ובמציאתה וכי היכי דפליגי לענין מתנה בעבד איכא למשמע דה\"ה באשה:"
+  },
+  "Rashi on Kiddushin 23b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T09:53:14.854Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכ\"ע אין קנין</strong> - אי יהבי ליה סתמא:"
+  },
+  "Rashi on Kiddushin 23b:8:1": {
+    "dependsOn": [
+      "Kiddushin 23b:8",
+      "Rashi on Kiddushin 23b:7:1"
+    ],
+    "generatedAt": "2026-11-01T09:54:02.252Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אהני ליה תנאה</strong> - דמעיקרא אדעתה דתנאה אקניה:"
+  },
+  "Tosafot on Kiddushin 23b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T09:43:50.282Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 23b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהו שיעשה שליח לקבל גיטו מיד רבו</strong> - יש מפרשים דהכי קמיבעיא ליה היכא דאמר העבד לאחר לקבל ליה גיטו מיד רבו מהני קבלתו או לא דכי לא א\"ל לקבל גיטו ובא ומקבלו פשיטא לן דמהני דאמרינן במתניתין <span class=\"parenthesized\">(לעיל קידושין דף כב:)</span> ובשטר ע\"י אחרים אבל אמירתו שאמר לו לך וקבל גיטי שמא מיגרע גרע לפי שבא מטעם שליחות או לא ויש מפרשים דהכי קמיבעיא ליה מהו שיעשה שליח הא דאמר ר' שמעון בן אלעזר בשטר ע\"י אחרים בתורת שליחות קאמר כלומר צריך שהעבד יעשה שליח לקבל גיטו משום דגמר לה לה מאשה ולמ\"ד זכות הוא לו יכול לקבל גיטו שלא מדעתו כל זמן שאינו מוחה ולמ\"ד חוב הוא לו צריך לעשות מדעתו שיתרצה וא\"כ אם הוא עומד וצווח לא מהני קבלתו או דילמא לאו בתורת שליחות קאמר דלא דמי לאשה דדוקא אשה דאיהי מקבלת גיטה שליח נמי מצי משויא אבל עבד לר' שמעון בן אלעזר כיון דאיהו לא מצי מקבלו שליח נמי לא מצי לשוויי ואם כן בשטר על ידי אחרים דקאמר היינו אפילו עומד וצווח כיון דאינו מטעם שליחות:"
+  },
+  "Tosafot on Kiddushin 23b:3:1": {
+    "dependsOn": [
+      "Nedarim 35b:2",
+      "Tosafot on Nedarim 35b:2:1",
+      "Rashi on Kiddushin 23b:3:1",
+      "Rashi on Kiddushin 23b:3:2",
+      "Chidushei Halachot on Kiddushin 23b:1"
+    ],
+    "generatedAt": "2026-11-01T09:48:10.783Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 23b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאמר רב הונא הני כהני שלוחי דרחמנא נינהו</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> דמיירי לענין הקרבת קרבנות ונפקא מינה לענין מודר הנאה מן הכהן שהכהן מותר להקריב קרבנותיו תימה דמשמע הכא דפשיטא ליה ובמסכת נדרים בפרק אין בין המודר <span class=\"parenthesized\">(נדרים דף לה:)</span> בעי הני כהני שלוחי דרחמנא הוו או שלוחי דידן ולא איפשיטא ואמאי לא מייתי התם הך מילתא דרב הונא בריה דרב יהושע למיפשטא ויש לומר דאורחיה דגמרא הוא בכמה דוכתי דלא מיפשטא אלא ממשנה או מברייתא אע\"ג דמצי למיפשט מדברי אמוראי אי נמי יש לומר דהתם הכי קמיבעיא ליה הני כהני שלוחי דרחמנא דוקא נינהו ולא שלוחי דידן כלל או דילמא הוו נמי שלוחי דידן ונפקא מינה שאם היה כהן מקריב שלא לדעת הבעלים אי שלוחי דרחמנא [נמי] נינהו הוי קרבן כשר ואי הוו [דוקא] שלוחי דידן אינו כשר כיון שהקריב שלא מדעת הבעלים:"
+  },
+  "Tosafot on Kiddushin 23b:9:1": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 23b:1:1"
+    ],
+    "generatedAt": "2026-11-01T10:01:16.994Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 23b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי אלעזר אומר כל כי האי גוונא כו'</strong> - אומר רבינו תם דהלכה כר' מאיר דאין קנין לעבד בלא רבו ואין קנין לאשה בלא בעלה ואליבא דרב ששת דמוקי פלוגתא כי מקני ליה אחר ואמר ליה על מנת שאין לרבך רשות בו דמשמע אבל אי אמר ליה על מנת שתצא בו לחירות אפילו ר\"מ מודה דאהני ליה תנאיה וכן משמע פרק בתרא דנדרים <span class=\"parenthesized\">(דף פח.)</span> דתנן התם המדיר חתנו הנאה ממנו והוא רוצה לתת מעות לבתו אומר לה הרי מעות האלו נתונים לך במתנה ובלבד שלא יהא לבעלך רשות בהן אלא מה שאת נושאת ונותנת לפיך וקאמר עלה בגמרא אמר רב לא שנו אלא דאמר לה מה שאת נושאת ונותנת לתוך פיך אבל אי אמר לה מה שתרצי תעשי קני יתהון בעל ושמואל אמר אפילו אמר לה מה שתרצי עשי לא קני יתהון בעל ומסיק כמאן אזלא הא שמעתא דרב כר\"מ וקיימא לן <span class=\"parenthesized\">(בכורות דף מט:)</span> הילכתא כוותיה דרב באיסורי ואע\"ג דפליגי נמי לענין ממון מכל מקום לענין איסורא איתשיל משמע דהלכה כרבי מאיר דהא רב קאי כוותיה והיינו ע\"כ אליבא דרב ששת דאילו לר\"א אליבא דר\"מ אפי' מה שאת נותנת לפיך קנה יתהון בעל כמו שאין מועיל ע\"מ שתצא לחירות אלא ע\"כ כרב ששת ולא כר\"א סבירא להו לרב ושמואל ש\"מ דלרב ששת ע\"מ שתצא בו לחירות מועיל לכ\"ע כמה שאת נותנת לפיך דמועיל אפילו לר\"מ ואומר ר\"ת דמשמע מהתם דהלכה כרב ששת ולא כר\"א ועוד מייתי ראיה דהלכה כרב ששת מפרק בן סורר ומורה <span class=\"parenthesized\">(סנהדרין דף עא.)</span> דאמרינן התם בן סורר ומורה אינו חייב עד שיאכל משל אביו ומשל אמו ופריך בגמרא אמו מנא לה מה שקנתה אשה קנה בעלה ומשני כשנתנו לה אחרים ע\"מ שאין לבעלה רשות בהן והשתא בשלמא לרב ששת מכל מקום אתי לכל הפחות מיהא כרבנן אלא לר' אלעזר לא אתיא דהתם לא כר' מאיר ולא כרבנן עוד מייתי ראיה מההיא דפסחים פרק האשה <span class=\"parenthesized\">(דף פח:)</span> גבי האומר לעבדו שחוט עלי פסח ושכח מה אמר לו רבו כו' ופריך בגמרא מה שקנה עבד קנה רבו ומשני כגון דאקני ליה ע\"מ שאין לרבו רשות בו והיינו כרב ששת אבל לר\"א הוה צריך לאוקמי שאמר לו ע\"מ שתצא ידי פסח אך ר\"י אומר דאין ראיה לומר דהלכה כרב ששת מההיא דנדרים ומפרק בן סורר דהתם מיתוקמא שפיר אפי' לר\"א דיש לחלק בין אשה לעבד ומצינו למימר אפילו לר\"א דאמר לר\"מ אפילו אמר לו ע\"מ שתצא בו לחירות קנה רבו יכול להיות דבאשה לא קנה הבעל שהרי אינם שוים שאין יד האשה כיד הבעל כמו שיד העבד כיד רבו ותדע דאילו אם נתן הבעל מתנה לאשתו קנתה לגמרי ואין הבעל אוכל פירות כדאיתא פרק חזקת הבתים <span class=\"parenthesized\">(ב\"ב דף נא:)</span> ואילו אם נתן מתנה לעבדו לא קנה העבד כלל ועוד תדע שאינן שוים שהרי אם נתנו אחרים מתנה לעבד סתמא זכה הרב בין בגוף בין בפירות דאין קנין לעבד בלא רבו היינו שאין קנין לעבד כלל ויש לרב גוף ופירות ואם נתנו אחרים מתנה לאשה אין לבעלה כי אם פירות אבל הגוף שלה דהא דאין קנין לאשה בלא בעלה היינו שהבעל אוכל פירות אבל הגוף לאשה וילקח בהן קרקע והוא אוכל פירות דאע\"ג דמציאת האשה לבעלה לגמרי אין לדמות מציאה למתנה וכן משמע בירושלמי דכתובות פ' מציאת האשה דקאמר התם מפני מה מציאת האשה לבעלה שמא תגנוב זהובים ותאמר מציאה מצאתי ופריך הגע עצמך מתנה כלומר במתנה עצמה ניחוש להא שמא תגנוב ותאמר נתנו לי מתנה ומשני מתנה יש לה קול ואי במתנה הוי הגוף נמי לבעל מה היתה מרווחת לומר ניתנו לי במתנה אלא ש\"מ דבמתנה שנתנו לה אחרים אין לבעל אלא פירות אבל הגוף לאשה ואילו בעבד אם נתן לו אחד מתנה קנה האדון הפירות והגוף וא\"ת לפר\"ת דלרב ששת מועיל ע\"מ שתצא בו לחירות אפילו לר\"מ א\"כ אמאי קאמר ר\"מ במתני' בכסף ע\"י עצמו לא הא ע\"י עצמו נמי משכחת לה באומר ע\"מ שתצא בו לחירות וי\"ל דכה\"ג ע\"י אחרים מקרי ולא על ידי עצמו כיון דלא קנה אותם העבד לגמרי ולא נתנו לו אלא ע\"מ שיצא בו לחירות ואע\"ג דלר' אלעזר דמוקי פלוגתייהו בע\"מ שתצא בו לחירות מיקרי ע\"י עצמו היינו משום דלר' אלעזר אית ליה דקניה עבד וקנה רביה אבל לרב ששת דאית ליה לא קניה רביה מיקרי ע\"י אחרים דמחמת שאין העבד קונהו אלא לצאת בו לא קניה ליה רביה וע\"י אחרים מיקרי ומיהו קשה אליבא דר\"א דמוקי פלוגתייהו באומר ע\"מ שתצא בו לחירות אם כן היאך מצינו לרבנן דר' מאיר בכסף ע\"י עצמו הואיל ולא הקנו לו אלא ע\"מ שיצא בהם לחירות ע\"י אחרים הוא כדבעינן למימר לר' מאיר אליבא דרב ששת וי\"ל דרבנן ע\"י עצמו דר' מאיר קיימי דאמר בכסף ע\"י אחרים אין ע\"י עצמו לא ולר' אלעזר אליבא דר' מאיר אפילו הקנו לו ע\"מ שיצא בהם לחירות קנה עבד קנה רבו ואין יוצא בו לחירות ומקרי שפיר ע\"י עצמו ואהא קיימי רבנן ואהכי קאמר וחכ\"א בכסף במה שאתה קורא ע\"י עצמו דקאמרת דאינו יוצא אפילו אם נתנו לו ע\"מ שיצא בו לחירות אנו אומרים שיצא בו לחירות דכה\"ג אשכחן בהנזקין <span class=\"parenthesized\">(גיטין דף נא:)</span> ובשבועות <span class=\"parenthesized\">(דף מב.)</span> ובפ\"ב דכתובות <span class=\"parenthesized\">(דף יח.)</span> דאמר ר' אליעזר בן יעקב פעמים שאדם נשבע על טענת עצמו דהיינו מה שאתם קורין טענת עצמו:"
+  }
+}

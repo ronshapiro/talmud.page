@@ -1,0 +1,390 @@
+{
+  "Rashi on Kiddushin 75a:10:1": {
+    "dependsOn": [
+      "Steinsaltz on Kiddushin 75a:10",
+      "Tosafot on Kiddushin 75a:10:1"
+    ],
+    "generatedAt": "2026-11-03T07:09:49.654Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלל שונה</strong> - משנה אחת בברייתא עשרה יוחסין כו' וכל האסורין שבהם מותרין לבא זה בזה:"
+  },
+  "Rashi on Kiddushin 75a:11:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 75a:11:2"
+    ],
+    "generatedAt": "2026-11-03T07:13:48.086Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ארוסה שעיברה</strong> - ואין ידוע אם מארוס אם מאיש אחר:"
+  },
+  "Rashi on Kiddushin 75a:11:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 75a:11:1"
+    ],
+    "generatedAt": "2026-11-03T07:14:21.991Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הולד שתוקי</strong> - שמא מארוס וכשר שמא מאחר ופסול:"
+  },
+  "Rashi on Kiddushin 75a:12:1": {
+    "dependsOn": [
+      "Kiddushin 75a:12",
+      "Rashi on Kiddushin 75a:11:1",
+      "Rashi on Kiddushin 75a:11:2",
+      "Steinsaltz on Kiddushin 75a:12",
+      "Chokhmat Shlomo on Kiddushin 75a:3",
+      "Ritva on Kiddushin 75a:6"
+    ],
+    "generatedAt": "2026-11-03T07:17:13.534Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורב אמר הולד ממזר</strong> - ודאי דאמרינן מרובא דעלמא הוא והכל פסולין אצלה אלמא לרב ספק כודאי משוי ליה כתנא קמא דאמר ספיקן בודאן מותר:"
+  },
+  "Rashi on Kiddushin 75a:13:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 75a:13:2"
+    ],
+    "generatedAt": "2026-11-03T07:17:51.191Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאי איתמר בהא</strong> - גבי שתוקי דמתניתין הבא מן הפנויה:"
+  },
+  "Rashi on Kiddushin 75a:13:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 75a:13:1"
+    ],
+    "generatedAt": "2026-11-03T07:18:28.290Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בההוא קאמר רב</strong> - הלכה כרבי אליעזר דאסור בממזרת משום דרובא הוי כשרים אצלה והא דאסור בבת ישראל משום דשתוקי הוא:"
+  },
+  "Rashi on Kiddushin 75a:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T07:18:51.636Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדין כהונה</strong> - אם היה הארוס כהן:"
+  },
+  "Rashi on Kiddushin 75a:16:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 75a:16:2"
+    ],
+    "generatedAt": "2026-11-03T07:19:37.746Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי ידעינן אבוה מנו</strong> - דניפוק נכסי משאר יורשי של הארוס וניתיב להאי:"
+  },
+  "Rashi on Kiddushin 75a:16:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 75a:16:1",
+      "Steinsaltz on Kiddushin 75a:16"
+    ],
+    "generatedAt": "2026-11-03T07:21:05.959Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דתפיס</strong> - נכסי הארוס משמת ואמר אבי היה ואשמעינן שמואל דמפקינן להו מיניה:"
+  },
+  "Rashi on Kiddushin 75a:19:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 75a:19:1",
+      "Rashi on Kiddushin 75a:19:2",
+      "Kiddushin 75a:19",
+      "Rashi on Kiddushin 75a:1:1",
+      "Rashi on Kiddushin 75a:2:1",
+      "Rashi on Kiddushin 75a:2:2"
+    ],
+    "generatedAt": "2026-11-03T07:28:05.052Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75a:19:1"
+    ],
+    "sourceText": "הכי גרסינן תניא וכן רבי אלעזר אומר כו':"
+  },
+  "Rashi on Kiddushin 75a:19:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 75a:19:1"
+    ],
+    "generatedAt": "2026-11-03T07:28:40.351Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75a:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עשאוהו כגר לאחר עשרה דורות</strong> - לפי שנתיישנו בישראל ונראין כישראל ואסור בפסולות לקהל שמא יאמרו ישראל נשא פסולה:"
+  },
+  "Rashi on Kiddushin 75a:1:1": {
+    "dependsOn": [
+      "Kiddushin 75a:1"
+    ],
+    "generatedAt": "2026-11-03T06:58:14.669Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל שאתה נושא בתו</strong> - לכהן קאמר ולקמן מפרש:"
+  },
+  "Rashi on Kiddushin 75a:21:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 75a:21:1",
+      "Rashi on Kiddushin 75a:21:2",
+      "Rashi on Kiddushin 75a:21:3",
+      "Kiddushin 75a:21",
+      "Rashi on Kiddushin 74b:10:1"
+    ],
+    "generatedAt": "2026-11-03T07:34:21.439Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75a:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם</strong> - גבי גר וממזרת:"
+  },
+  "Rashi on Kiddushin 75a:21:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 75a:21:1",
+      "Rashi on Kiddushin 75a:21:3"
+    ],
+    "generatedAt": "2026-11-03T07:34:51.311Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75a:21:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גר ישן</strong> - והרואה אינו מכירו לפנים דסבור שהוא ישראל הבא מישראלית:"
+  },
+  "Rashi on Kiddushin 75a:21:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 75a:21:2"
+    ],
+    "generatedAt": "2026-11-03T07:35:22.395Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75a:21:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והממזרת חדשה</strong> - כלומר ידועה וניכרת לממזרת:"
+  },
+  "Rashi on Kiddushin 75a:21:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T07:36:04.227Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75a:21:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרי ישראל נסיב ממזרת</strong> - הרואה אומר ישראל נושא ממזרת:"
+  },
+  "Rashi on Kiddushin 75a:21:5": {
+    "dependsOn": [
+      "Rashi on Kiddushin 75a:21:1",
+      "Rashi on Kiddushin 75a:21:2",
+      "Rashi on Kiddushin 75a:21:3",
+      "Rashi on Kiddushin 75a:21:4"
+    ],
+    "generatedAt": "2026-11-03T07:36:39.743Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75a:21:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אידי ואידי כהדדי הוא</strong> - ואי גרים ישנים הם המחזיקין את זה בכשרות מחזיקין גם את זו בכשרות:"
+  },
+  "Rashi on Kiddushin 75a:2:1": {
+    "dependsOn": [
+      "Kiddushin 75a:2",
+      "Rashi on Kiddushin 75a:2:2",
+      "Kiddushin 75a:1"
+    ],
+    "generatedAt": "2026-11-03T06:59:06.269Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מצרי שני איכא בינייהו</strong> - לתנא קמא כל מצרי סתם האסור בקהל קאמר ואפילו שני ומיהו שלישי לאו מצרי קרי ליה דישראל מעליא הוא:"
+  },
+  "Rashi on Kiddushin 75a:2:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 75a:2:1",
+      "Kiddushin 75a:3",
+      "Rashi on Kiddushin 75a:6:1",
+      "Rashi on Kiddushin 75a:8:1"
+    ],
+    "generatedAt": "2026-11-03T07:00:19.374Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכהן גדול באלמנה</strong> - שמצינו שמחללה בביאתו כדילפינן לה לקמן <span class=\"parenthesized\">(קידושין דף עז.)</span> מלא יחלל שני חילולין במשמע מדלא כתיב לא יחל אחד לה ואחד לזרעו ופוסל את אשה בביאתו:"
+  },
+  "Rashi on Kiddushin 75a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T07:01:45.222Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף כל כו'</strong> - ומצרי שני ביאתו בעבירה הוי:"
+  },
+  "Rashi on Kiddushin 75a:5:1": {
+    "dependsOn": [
+      "Kiddushin 75a:5",
+      "Kiddushin 75a:1",
+      "Rashi on Kiddushin 75a:1:1"
+    ],
+    "generatedAt": "2026-11-03T07:03:02.099Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גר עמוני ומואבי איכא בינייהו</strong> - לרבי יוסי פוסל דהא יש מזרעו שהוא פסול שהזכרים אסורים איסור עולם ולרבי שמעון הואיל ובתו כשרה דעמוני ולא עמונית אלמנתו נמי כשרה:"
+  },
+  "Rashi on Kiddushin 75a:6:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 75a:6:1",
+      "Rashi on Kiddushin 75a:2:2"
+    ],
+    "generatedAt": "2026-11-03T07:04:46.655Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה כהן גדול באלמנה שזרעו ממנה פסול</strong> - חלל:"
+  },
+  "Rashi on Kiddushin 75a:8:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 75a:8:2",
+      "Steinsaltz on Kiddushin 75a:8"
+    ],
+    "generatedAt": "2026-11-03T07:06:07.458Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלמנת עיסה</strong> - בכתובות <span class=\"parenthesized\">(דף יד.)</span> מפרש אלמנת ספק חלל שהיתה מעורבת בספקות בעלה היה ספק והיא באה מכחו דהויא לה ספק ספיקא:"
+  },
+  "Rashi on Kiddushin 75a:8:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 75a:8:1",
+      "Rashi on Kiddushin 75a:8:2",
+      "Rashi on Kiddushin 75a:2:1",
+      "Rashi on Kiddushin 74b:1:1"
+    ],
+    "generatedAt": "2026-11-03T07:07:52.079Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למעוטי אלמנת עיסה</strong> - דהואיל דאי אתה נושא בתו שמא חלל היה ותנן <span class=\"parenthesized\">(לקמן קידושין עז.)</span> בת חלל זכר פסולה מן הכהונה לעולם אי אתה נושא אלמנתו:"
+  },
+  "Rashi on Kiddushin 75a:9:1": {
+    "dependsOn": [
+      "Kiddushin 75a:9",
+      "Rashi on Kiddushin 75a:8:1",
+      "Rashi on Kiddushin 75a:8:2"
+    ],
+    "generatedAt": "2026-11-03T07:08:54.942Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ספק ספיקא</strong> - בעלה היה ספק והיא באה מכחו להיפסל:"
+  },
+  "Tosafot on Kiddushin 75a:10:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 75a:10:1",
+      "Tosafot on Kiddushin 75a:2:1"
+    ],
+    "generatedAt": "2026-11-03T07:13:19.694Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 75a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכולן מותרין לבא זה בזה</strong> - וא\"ת מאי וכולן ו<span class=\"rashi-quotation\">פי' בקונטרס</span> כל האסורין מותרין לבא זה בזה קשה לר\"י דמידי כל האסורין קתני ונראה לר\"י לפרש דכל אחד ואחד מותר במינו והיינו דלא כרבי אלעזר דמתניתין דלדידיה ספיקן בספיקן אסור עוד יש לומר ומותרין לבא זה בזה כסדר דמתני' ונראה דהלכה כרבי אלעזר דהא רב פסיק כוותיה והלכה כרב באיסורי לגבי שמואל ועוד דרבא נמי סבר דהלכה כרבי אלעזר בפרק החולץ <span class=\"parenthesized\">(יבמות דף לז.)</span> גבי ספק בן ט' לראשון ובן ז' לאחרון והלכה כרבא:"
+  },
+  "Tosafot on Kiddushin 75a:16:1": {
+    "dependsOn": [
+      "Kiddushin 75a:16",
+      "Tosafot on Kiddushin 75a:2:1",
+      "Tosafot on Kiddushin 75a:16:1",
+      "Kiddushin 75a:2",
+      "Tosafot on Kiddushin 75a:10:1",
+      "Tosafot on Kiddushin 75a:19:1",
+      "Tosafot on Kiddushin 74b:6:1",
+      "Tosafot on Kiddushin 74b:7:1",
+      "Kiddushin 75a:3",
+      "Kiddushin 75a:4",
+      "Kiddushin 75a:5",
+      "Tosafot on Niddah 3a:1:1"
+    ],
+    "generatedAt": "2026-11-03T07:24:25.381Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 75a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושניהם לא למדוה אלא מכ\"ג באלמנה</strong> - וא\"ת מאי קאמר דלמדוה מכ\"ג והא עיקר דרשה נפקא לן בפ' אלמנה לכה\"ג <span class=\"parenthesized\">(יבמות דף סח.)</span> מכי תהיה לאיש זר דכיון שנבעלה לפסול לה פסלה וי\"ל דה\"ק דלא תיקשי להו מכה\"ג באלמנה דמצינו למילף מיניה למר כדאית ליה ולמר כדאית ליה כדמפרש גמרא בסמוך וכן צריך לומר בריש מסכת נדה <span class=\"parenthesized\">(דף ג.)</span> גבי שניהם לא למדוה אלא מסוטה:"
+  },
+  "Tosafot on Kiddushin 75a:19:1": {
+    "dependsOn": [
+      "Maharsha: Chidushei Halachot on Kiddushin 75a:5"
+    ],
+    "generatedAt": "2026-11-03T07:32:43.059Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 75a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כותי לא ישא כותית</strong> - וא\"ת היאך מסופק מ\"ט והא רבי אליעזר גופיה קאמר במתניתין <span class=\"parenthesized\">(לעיל קידושין דף עד.)</span> דספיקן בספיקן אסור וכותי הוא מן הספיקות כדתנן במתניתין ונראה להר\"מ דהכי פירושו שהרי אם שניהם ממזרים היתר גמור הוא ואפילו אם אחד ממזר והאחד אינו ממזר מכל מקום גר הוא ומותר בממזרת ולא דמי לשאר ספיקות דמתניתין דשתוקי ואסופי:"
+  },
+  "Tosafot on Kiddushin 75a:2:1": {
+    "dependsOn": [
+      "Kiddushin 75a:2"
+    ],
+    "generatedAt": "2026-11-03T07:01:20.746Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 75a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושניהם לא למדוה אלא מכ\"ג באלמנה</strong> - וא\"ת מאי קאמר דלמדוה מכ\"ג והא עיקר דרשה נפקא לן בפ' אלמנה לכה\"ג <span class=\"parenthesized\">(יבמות דף סח.)</span> מכי תהיה לאיש זר דכיון שנבעלה לפסול לה פסלה וי\"ל דה\"ק דלא תיקשי להו מכה\"ג באלמנה דמצינו למילף מיניה למר כדאית ליה ולמר כדאית ליה כדמפרש גמרא בסמוך וכן צריך לומר בריש מסכת נדה <span class=\"parenthesized\">(דף ג.)</span> גבי שניהם לא למדוה אלא מסוטה:"
+  }
+}

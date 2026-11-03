@@ -1,0 +1,492 @@
+{
+  "Rashi on Kiddushin 64a:10:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64a:10:2"
+    ],
+    "generatedAt": "2026-11-02T18:18:37.616Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותסברא</strong> - דהאי שינויא דלעיל שינויא הוא וטעמא דרישא משום דבידו הוא נהי דבידו לקבל קידושין מאיש שבא לקדשה:"
+  },
+  "Rashi on Kiddushin 64a:10:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64a:10:1"
+    ],
+    "generatedAt": "2026-11-02T18:19:30.814Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אילו אמר האי גברא לא ניחא לי</strong> - לקדשה מי מצי וכו':"
+  },
+  "Rashi on Kiddushin 64a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T18:19:59.362Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאיש אסרה</strong> - על הכל שאין אנו יודעים למי וכי אמר הזה התירה לזה:"
+  },
+  "Rashi on Kiddushin 64a:12:1": {
+    "dependsOn": [
+      "Kiddushin 64a:12",
+      "Rashi on Kiddushin 64a:12:2",
+      "Kiddushin 64a:1",
+      "Rashi on Kiddushin 64a:11:1",
+      "Rashi on Kiddushin 64a:7:1"
+    ],
+    "generatedAt": "2026-11-02T18:21:48.674Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לנישואין הימניה</strong> - אם נערה אם קטנה אבל בבוגרת לא מישתעי קרא דנערה כתיב הלכך לא מהימן משגדלה:"
+  },
+  "Rashi on Kiddushin 64a:12:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64a:12:1"
+    ],
+    "generatedAt": "2026-11-02T18:22:22.137Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשבויה</strong> - לא הימנוהו כלל:"
+  },
+  "Rashi on Kiddushin 64a:13:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64a:13:2",
+      "Kiddushin 64b:1"
+    ],
+    "generatedAt": "2026-11-02T18:23:24.601Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יש לי בנים</strong> - ואין אשתו זקוקה ליבם:"
+  },
+  "Rashi on Kiddushin 64a:13:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64a:13:1"
+    ],
+    "generatedAt": "2026-11-02T18:23:57.468Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יש לי אחים</strong> - זקוקה ליבם והיא היתה עד הנה בחזקת שאינה זקוקה:"
+  },
+  "Rashi on Kiddushin 64a:14:1": {
+    "dependsOn": [
+      "Kiddushin 64a:13",
+      "Kiddushin 64a:14"
+    ],
+    "generatedAt": "2026-11-02T18:24:43.307Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשעת קידושין אמר יש לי בנים</strong> - כדי שלא תדאג מן הייבום ותתרצה לו ומיהו כשקידשה לא אמר על מנת:"
+  },
+  "Rashi on Kiddushin 64a:15:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64a:15:2",
+      "Rashi on Kiddushin 64a:15:3"
+    ],
+    "generatedAt": "2026-11-02T18:25:56.028Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשעת קידושין אמר יש לי בנים</strong> - כדי שלא תדאג מן הייבום ותתרצה לו ומיהו כשקידשה לא אמר על מנת:"
+  },
+  "Rashi on Kiddushin 64a:15:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64a:15:1"
+    ],
+    "generatedAt": "2026-11-02T18:26:29.107Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשעת קידושין אמר שאין לו אחים</strong> - ואין לדאג מן הייבום:"
+  },
+  "Rashi on Kiddushin 64a:15:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T18:26:51.212Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נאמן להתיר כו'</strong> - כלומר נאמן במה שאמר בשעת קידושין ואין נאמן במה שאמר בשעת מיתה:"
+  },
+  "Rashi on Kiddushin 64a:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T18:27:26.429Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאני התם</strong> - בברייתא כיון דהדר ביה מדיבורא קמא בשעת מיתה קושטא קאמר שלא יהא עון תלוי בו אבל מתני' שלא אמר בשעת קידושין אין לי אחים כי אמר השתא יש לי אינו נאמן דלצעורה קא מכוין:"
+  },
+  "Rashi on Kiddushin 64a:16:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64a:16:1"
+    ],
+    "generatedAt": "2026-11-02T18:28:29.278Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דקא מרע לדיבוריה</strong> - בשעת קידושין:"
+  },
+  "Rashi on Kiddushin 64a:17:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64a:17:1",
+      "Rashi on Kiddushin 64a:17:2",
+      "Rashi on Kiddushin 64a:17:3",
+      "Kiddushin 64a:17"
+    ],
+    "generatedAt": "2026-11-02T18:30:15.623Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלא מוחזק לן</strong> - האי גברא בשעת מיתה לא באחי ולא בבני וקיימא הך איתתא בחזקת שאינה זקוקה לייבום הלכך אמר יש לי בנים אחזקה קמייתא הוא דקא מוקים לה הלכך נאמן ואי אתי אח לאחר מכאן ואמר אחוה דמיתנא אנא לאו כל כמיניה דאהני דיבור לחזקה:"
+  },
+  "Rashi on Kiddushin 64a:17:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64a:17:1",
+      "Rashi on Kiddushin 64a:17:2",
+      "Rashi on Kiddushin 64a:17:3"
+    ],
+    "generatedAt": "2026-11-02T18:31:35.749Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר יש לי אחים</strong> - ואין לי בנים לאו כל כמיניה דמפקינן לה מחזקה:"
+  },
+  "Rashi on Kiddushin 64a:17:3": {
+    "dependsOn": [
+      "Kiddushin 64a:17",
+      "Rashi on Kiddushin 64a:17:1",
+      "Rashi on Kiddushin 64a:17:2",
+      "Rashi on Kiddushin 64a:17:3",
+      "Rashi on Kiddushin 64a:16:1",
+      "Rashi on Kiddushin 64a:16:2"
+    ],
+    "generatedAt": "2026-11-02T18:33:08.645Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:17:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ברייתא</strong> - דקא\"ר נתן נאמן לאסור:"
+  },
+  "Rashi on Kiddushin 64a:1:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64a:1:2",
+      "Kiddushin 64a:1",
+      "Versions on Kiddushin 64a:1",
+      "Steinsaltz on Kiddushin 64a:1"
+    ],
+    "generatedAt": "2026-11-02T17:53:34.114Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולחרמים</strong> - אם החרימו מנכסיהם הוי חרם לבדק הבית וקדשים וכן אם אמר ערכי עלי נערך:"
+  },
+  "Rashi on Kiddushin 64a:1:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64a:1:1"
+    ],
+    "generatedAt": "2026-11-02T17:54:21.179Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל לא למכות</strong> - להחזיק שערותיהן בחזקת סימן ללקות ולהעניש:"
+  },
+  "Rashi on Kiddushin 64a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T17:55:55.601Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גירשתיה</strong> - קבלתי את גיטה:"
+  },
+  "Rashi on Kiddushin 64a:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T17:56:17.859Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והרי היא קטנה</strong> - עכשיו כשאמר עליה כך:"
+  },
+  "Rashi on Kiddushin 64a:2:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64a:2:1",
+      "Rashi on Kiddushin 64a:2:2",
+      "Rashi on Kiddushin 64a:2:4",
+      "Rashi on Kiddushin 64a:2:5"
+    ],
+    "generatedAt": "2026-11-02T17:57:08.101Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נאמן</strong> - לפוסלה מן הכהונה:"
+  },
+  "Rashi on Kiddushin 64a:2:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64a:2:1",
+      "Rashi on Kiddushin 64a:2:2",
+      "Rashi on Kiddushin 64a:2:3",
+      "Rashi on Kiddushin 64a:2:4",
+      "Rashi on Kiddushin 64a:2:5"
+    ],
+    "generatedAt": "2026-11-02T17:57:43.174Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והרי היא גדולה</strong> - משגדלה אמר כן ובקטנותה לא אמר אינו נאמן ומותרת לכהן:"
+  },
+  "Rashi on Kiddushin 64a:2:5": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64a:2:1",
+      "Rashi on Kiddushin 64a:2:2",
+      "Rashi on Kiddushin 64a:2:3",
+      "Rashi on Kiddushin 64a:2:4"
+    ],
+    "generatedAt": "2026-11-02T17:58:22.025Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:2:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נשבית</strong> - הרי היא פסולה לכהונה משום ספק זונה ובגמרא מפרש טעמא:"
+  },
+  "Rashi on Kiddushin 64a:3:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64a:3:2"
+    ],
+    "generatedAt": "2026-11-02T17:59:04.006Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רישא בידו</strong> - בעודנה קטנה בידו לקדשה לאחר ולחזור ולקבל גט הימנו הלכך נאמן דמה לו לשקר אי בעי פסיל לה:"
+  },
+  "Rashi on Kiddushin 64a:3:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64a:3:1"
+    ],
+    "generatedAt": "2026-11-02T17:59:41.634Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סיפא לאו בידו</strong> - לקדשה משגדלה ולא למוסרה ביד עובד כוכבים לא גדולה ולא קטנה:"
+  },
+  "Rashi on Kiddushin 64a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T18:00:06.149Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והרי בידו</strong> - כשהיא קטנה:"
+  },
+  "Rashi on Kiddushin 64a:4:2": {
+    "dependsOn": [
+      "Kiddushin 77a:1",
+      "Kiddushin 74b:1",
+      "Kiddushin 74b:14"
+    ],
+    "generatedAt": "2026-11-02T18:02:16.939Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להשיאה לחלל</strong> - לנולד מאלמנה לכ\"ג דאמר לקמן בפרק בתרא <span class=\"parenthesized\">(קידושין דף עד:)</span> עמוני ומואבי כותי נתין חלל וממזר מצרי ואדומי שבאו על כהנת לוייה וישראלית פסלוה:"
+  },
+  "Rashi on Kiddushin 64a:5:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64a:4:1",
+      "Rashi on Kiddushin 64a:4:2",
+      "Rashi on Kiddushin 64a:6:1",
+      "Rashi on Kiddushin 64a:8:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:3",
+      "Rashi on Kiddushin 64a:1:1",
+      "Rashi on Kiddushin 64a:2:1",
+      "Rashi on Kiddushin 64a:3:1"
+    ],
+    "generatedAt": "2026-11-02T18:05:08.067Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כר' דוסתאי בן יהודה</strong> - ס\"ל לתנא דידן דאמר לקמן <span class=\"parenthesized\">(קידושין דף עז.)</span> בנות ישראל מקוה טהרה לחללים דבת חלל זכר כשרה לכהונה שאשתו טהרה את זרעו וכיון דבתו כשרה אלמנתו כשרה דכל שאתה נושא בתו אתה נושא אלמנתו הלכך אין בידו לפסול בתו קטנה מן הכהונה וא\"ת הרי בידו לפסלה בקידושין וגירושין התם מכהונה פסיל לה מתרומה לא פסיל לה אם בת כהן היא אבל נשבית פסולה אף מן התרומה:"
+  },
+  "Rashi on Kiddushin 64a:6:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64a:6:1",
+      "Rashi on Kiddushin 64a:6:2",
+      "Kiddushin 64a:6",
+      "Rashi on Kiddushin 64a:4:2",
+      "Rashi on Kiddushin 64a:5:1"
+    ],
+    "generatedAt": "2026-11-02T18:08:37.265Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והרי בידו להשיאה לממזר</strong> - דקיימא לן <span class=\"parenthesized\">(לקמן קידושין דף סח.)</span> קידושין תופסין בחייבי לאוין וביד האב להשיאה לו בעבירה ותפסל מן התרומה:"
+  },
+  "Rashi on Kiddushin 64a:6:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64a:6:1"
+    ],
+    "generatedAt": "2026-11-02T18:09:25.135Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין קידושין תופסין בחייבי לאוין</strong> - דאין ביד האב להשיאה אלא למי שקידושין תופסין בה והא דר\"ע לקמן בפרקין <span class=\"parenthesized\">(שם)</span>:"
+  },
+  "Rashi on Kiddushin 64a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T18:10:46.360Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג הרי בידו להשיאה אלמנה לכ\"ג וכר' סימאי</strong> - כלומר אם אלמנה היא הרי בידו להשיאה לכ\"ג ואפי' לר\"ע דאע\"ג דחייבי לאוין היא מודה ר' עקיבא דקידושין תופסין לו בה:"
+  },
+  "Rashi on Kiddushin 64a:7:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64a:7:1",
+      "Rashi on Kiddushin 64a:7:3",
+      "Rashi on Kiddushin 64a:7:2"
+    ],
+    "generatedAt": "2026-11-02T18:12:30.746Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכדרבי סימאי</strong> - דאמר מן הכל שהן חייבי לאוין עושה ר' עקיבא הוולד ממזר דקסבר אין קידושין תופסין בחייבי לאוין חוץ מאלמנה לכ\"ג:"
+  },
+  "Rashi on Kiddushin 64a:7:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T18:13:14.695Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהרי אמרה תורה אלמנה לא יקח</strong> - וסמיך ליה ולא יחלל זרעו בעמיו דמשמע חללין הוא עושה זרעו שמחוללין מן הכהונה ואינו עושה ממזרין וכיון דאין הולד ממזר ש\"מ ס\"ל קידושין תופסין בחייבי לאוין דכהונה דאי אין קידושין תופסין הוי הולד ממזר כדתנן בפרקין <span class=\"parenthesized\">(לעיל קידושין סו:)</span> כל שאין לה קידושין עליו הולד ממזר:"
+  },
+  "Rashi on Kiddushin 64a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T18:14:30.338Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרבי ישבב</strong> - מתני' כרבי ישבב אליבא דרבי עקיבא ס\"ל דאמר בואו ונצווח על עקיבא בן יוסף שמרבה פסולין בישראל שהיה אומר כל שאין לו ביאה בישראל הולד ממזר כל איש בישראל שאין ביאתו מותרת באשה שיבא עליה הולד שנולד מאותה ביאה ממזר:"
+  },
+  "Rashi on Kiddushin 64a:9:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64a:9:2",
+      "Rashi on Kiddushin 64a:7:1",
+      "Rashi on Kiddushin 64a:7:2"
+    ],
+    "generatedAt": "2026-11-02T18:16:18.052Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הניחא אי טעמא דנפשיה קאמר</strong> - ולאו לאפוקי מדר' סימאי לחודיה אתי לאיפלוגי אחייבי לאוין דכהונה לחודייהו אלא כלל הוא בידו שכל ביאה שהיא בעבירה הולד ממזר ושפיר מתרצינן למתני' דאין קידושי עבירה קידושין ואין ביד האב להשיא בתו למי שמחללה בביאתו:"
+  },
+  "Rashi on Kiddushin 64a:9:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64a:9:1",
+      "Rashi on Kiddushin 63b:1:1"
+    ],
+    "generatedAt": "2026-11-02T18:17:44.667Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אי לאפוקי מדר' סימאי אתי</strong> - ולא להוסיף אלא אחייבי לאוין דכהונה אבל במצרי ואדומי תוך ג' דורות שהן חייבי עשה מודה דקידושין תופסין לו בה הרי בידו להשיאה להן והן מחללין אותה מתרומה ומן הכהונה כדלקמן <span class=\"parenthesized\">(קידושין דף עד:)</span>:"
+  },
+  "Tosafot on Kiddushin 64a:1:1": {
+    "dependsOn": [
+      "Kiddushin 64a:1",
+      "Rashi on Kiddushin 64a:1:1",
+      "Rashi on Kiddushin 64a:1:2"
+    ],
+    "generatedAt": "2026-11-02T17:55:23.554Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 64a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נאמן לנדרים</strong> - דעד אחד נאמן באיסורין תימה הא אין נאמן אלא בדבר שבידו וי\"ל כיון דסופו ליגדל עשאוהו כדבר שבידו מיהו קשה מאי איריא אב אפי' אחר נמי וי\"ל דאב דייק טפי לדעת שניו לפי שעליו מוטל להודיעו לאחרים ולכך לאב עשאוהו כבידו ולא לאחרים:"
+  },
+  "Tosafot on Kiddushin 64a:5:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64a:5:1",
+      "Tosafot on Kiddushin 64a:1:1"
+    ],
+    "generatedAt": "2026-11-02T18:07:12.727Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 64a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[כר' דוסתאי וכו'</strong> - פרש\"י כיון שבתו כשרה אלמנתו כשרה וכו' ור\"י אומר טעם אחר דאם היה פוסלה בביאתו לא היו הבנים כשרים דה\"ל כחלל שנשא חללה דלכ\"ע הולד חלל. ת\"י]:"
+  }
+}

@@ -1,0 +1,602 @@
+{
+  "Rashi on Kiddushin 70a:10:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70a:10:2",
+      "Rashi on Kiddushin 70a:10:3",
+      "Rashi on Kiddushin 70a:10:4",
+      "Rashi on Kiddushin 70a:10:5"
+    ],
+    "generatedAt": "2026-11-03T00:48:43.697Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאינה הוגנת</strong> - פסולה לו:"
+  },
+  "Rashi on Kiddushin 70a:10:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70a:10:2",
+      "Rashi on Kiddushin 70a:10:1",
+      "Rashi on Kiddushin 70a:10:3"
+    ],
+    "generatedAt": "2026-11-03T00:49:30.679Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כופתו</strong> - הלוקה בב\"ד כופתין שתי ידיו על העמוד במסכת מכות <span class=\"parenthesized\">(דף כב:)</span> כופתו קושרו:"
+  },
+  "Rashi on Kiddushin 70a:10:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T00:49:53.638Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רוצעו</strong> - מלקיהו ברצועה:"
+  },
+  "Rashi on Kiddushin 70a:10:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70a:10:1",
+      "Rashi on Kiddushin 70a:10:2",
+      "Rashi on Kiddushin 70a:10:3",
+      "Rashi on Kiddushin 70a:10:5"
+    ],
+    "generatedAt": "2026-11-03T00:50:37.971Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועל כלם</strong> - כהנים לויים וישראלים:"
+  },
+  "Rashi on Kiddushin 70a:10:5": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70a:10:1",
+      "Rashi on Kiddushin 70a:10:2",
+      "Rashi on Kiddushin 70a:10:3",
+      "Rashi on Kiddushin 70a:10:4",
+      "Rashi on Kiddushin 70a:10:5"
+    ],
+    "generatedAt": "2026-11-03T00:51:33.533Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:10:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אליהו כותב</strong> - מאי דקאמר ואזיל אוי לו לפוסל זרעו ולפוגם את משפחתו כגון שנשא אשה שאינה הוגנת לו: <span class=\"parenthesized\">(האי אליהו לאו אליהו דכתיב במקרא הוא דא\"כ מקמי דהוה אתי מאן כפתיה אלא שם מלאך הוא שהוא סופר למעלה)</span>:"
+  },
+  "Rashi on Kiddushin 70a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T00:52:01.927Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל הפוסל</strong> - מגדף תמיד את המשפחות הוא עצמו פסול ואינו מדבר בשבחה לעולם אין דרכו של פסול לדבר בשבח הבריות לעולם:"
+  },
+  "Rashi on Kiddushin 70a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T00:52:24.448Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נטר עד דשקיל שמעיה דרב יהודה</strong> - המתן עד שיטול שלוחו של רב יהודה שעומד כאן ליטול:"
+  },
+  "Rashi on Kiddushin 70a:12:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70a:12:1",
+      "Rashi on Kiddushin 70a:12:3",
+      "Rashi on Kiddushin 70a:12:4",
+      "Rashi on Kiddushin 70a:14:1",
+      "Rashi on Kiddushin 70a:14:2",
+      "Rashi on Kiddushin 70a:6:1",
+      "Rashi on Kiddushin 70a:6:2",
+      "Rashi on Kiddushin 70a:6:3",
+      "Rashi on Kiddushin 70a:12:2",
+      "Rashi on Kiddushin 69b:1:1",
+      "Rashi on Kiddushin 69b:2:1",
+      "Rashi on Kiddushin 2a:1:1"
+    ],
+    "generatedAt": "2026-11-03T00:54:49.449Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בר שויסקל</strong> - לשון גנאי גרגרן אוכל שויסק צלי כדאמר בפסחים <span class=\"parenthesized\">(דף צו.)</span> באימורי פסח מצרים מאן לימא לן דלא שויסקי עבדינהו בשם רבינו הלוי:"
+  },
+  "Rashi on Kiddushin 70a:12:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T00:56:13.377Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמתיה</strong> - כדאשכחן דמנדים לכבוד הרב במועד קטן <span class=\"parenthesized\">(דף טז.)</span>:"
+  },
+  "Rashi on Kiddushin 70a:12:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70a:12:1",
+      "Rashi on Kiddushin 70a:12:2",
+      "Rashi on Kiddushin 70a:12:3"
+    ],
+    "generatedAt": "2026-11-03T00:57:35.877Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:12:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרו ליה</strong> - לרב יהודה רגיל ההוא גברא דקרי לאינשי עבדי:"
+  },
+  "Rashi on Kiddushin 70a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T00:57:56.455Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לקמיה דרב הונא</strong> - לימלך בו אם יש לו לילך לפני רב נחמן:"
+  },
+  "Rashi on Kiddushin 70a:13:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70a:13:1",
+      "Rashi on Kiddushin 70a:13:3",
+      "Rashi on Kiddushin 70a:4:1",
+      "Rashi on Kiddushin 70a:4:2",
+      "Rashi on Kiddushin 70a:6:1",
+      "Rashi on Kiddushin 70a:6:2",
+      "Chullin 124a:22"
+    ],
+    "generatedAt": "2026-11-03T00:59:44.571Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא מיבעי לך למיזל</strong> - לפני רב נחמן שאתה גדול ממנו ואתה ראש בפומבדיתא ורב נחמן ראש בנהרדעא ודיין לראש גלותא וחתניה דבי נשיאה כדאמרינן בהעור והרוטב <span class=\"parenthesized\">(חולין דף קכד.)</span> משום דרב נחמן חתני' דבי נשיאה הוא מזלזל בשמעתיה דר' יוחנן:"
+  },
+  "Rashi on Kiddushin 70a:13:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70a:13:1",
+      "Rashi on Kiddushin 70a:13:2"
+    ],
+    "generatedAt": "2026-11-03T01:00:26.441Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יקרא דבי נשיאה</strong> - שהוא חתן הנשיא:"
+  },
+  "Rashi on Kiddushin 70a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:01:36.557Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסור לעשות מלאכה בפני שלשה</strong> - שגנאי הוא ושפלות לדור שכפופים לזה שאין לו מי שיעשה מלאכתו:"
+  },
+  "Rashi on Kiddushin 70a:14:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70a:14:1",
+      "Rashi on Kiddushin 70a:14:3",
+      "Rashi on Kiddushin 70a:4:3"
+    ],
+    "generatedAt": "2026-11-03T01:02:59.164Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דגונדריתא</strong> - היינו מעקה באחד הלשונות:"
+  },
+  "Rashi on Kiddushin 70a:14:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:04:18.815Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי סני</strong> - כלומר מכוער ושנוי לשון תורה ולשון שאר בני אדם שאתה מדבר בעמקי שפה ומתכוין היה רב יהודה לתופסו בדבריו לקנטרו להודיעו שלא היה לו להנשא עליו להזמינו לפניו:"
+  },
+  "Rashi on Kiddushin 70a:15:1": {
+    "dependsOn": [
+      "Jastrow, אַקְרַפְטָא 1",
+      "Rashi on Kiddushin 70a:15:2",
+      "Rashi on Kiddushin 70a:15:3",
+      "Rashi on Kiddushin 70a:15:4"
+    ],
+    "generatedAt": "2026-11-03T01:05:35.811Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אקרפיטא</strong> - ספסל:"
+  },
+  "Rashi on Kiddushin 70a:15:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70a:15:1",
+      "Rashi on Kiddushin 70a:15:2",
+      "Rashi on Kiddushin 70a:15:3",
+      "Rashi on Kiddushin 70a:15:4"
+    ],
+    "generatedAt": "2026-11-03T01:06:08.438Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תילתא ברמות רוחא</strong> - מתוך ששליש רוחו גסה הוא משנה בדיבורו:"
+  },
+  "Rashi on Kiddushin 70a:15:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70a:15:1",
+      "Rashi on Kiddushin 70a:15:2",
+      "Rashi on Kiddushin 70a:15:4"
+    ],
+    "generatedAt": "2026-11-03T01:06:47.880Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אנבגא</strong> - כוס שהוא רביעית והיו רגילין לשתות כוס אחד ממשקה העשוי לשתותו שחרית וקוריהו אספרגוס במסכת ברכות <span class=\"parenthesized\">(דף נא.)</span>:"
+  },
+  "Rashi on Kiddushin 70a:15:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70a:15:1",
+      "Rashi on Kiddushin 70a:15:2",
+      "Rashi on Kiddushin 70a:15:3",
+      "Rashi on Kiddushin 70a:15:4"
+    ],
+    "generatedAt": "2026-11-03T01:07:25.536Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:15:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אנפק</strong> - כוס של רביעית ולשון אנפק היה שגור בפיהם:"
+  },
+  "Rashi on Kiddushin 70a:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:07:44.783Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תיתי דונג</strong> - תבא בתי שכך שמה:"
+  },
+  "Rashi on Kiddushin 70a:16:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70a:16:2"
+    ],
+    "generatedAt": "2026-11-03T01:08:16.323Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין משתמשין באשה</strong> - שלא ילמדנה להיות רגילה בין האנשים:"
+  },
+  "Rashi on Kiddushin 70a:16:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:08:38.595Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:16:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קטנה היא</strong> - רב נחמן קאמר לה:"
+  },
+  "Rashi on Kiddushin 70a:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:09:02.434Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לילתא</strong> - שם אשתו:"
+  },
+  "Rashi on Kiddushin 70a:17:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70a:17:1",
+      "Rashi on Kiddushin 70a:17:2",
+      "Rashi on Kiddushin 70a:17:3",
+      "Rashi on Kiddushin 70a:3:1",
+      "Rashi on Kiddushin 70a:5:1",
+      "Rashi on Kiddushin 70a:6:1",
+      "Rashi on Kiddushin 70a:9:1"
+    ],
+    "generatedAt": "2026-11-03T01:11:13.439Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קול באשה ערוה</strong> - שנאמר השמיעני את קולך ואם אשאל בשלומה תשיבני:"
+  },
+  "Rashi on Kiddushin 70a:17:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70a:17:1",
+      "Rashi on Kiddushin 70a:17:2",
+      "Rashi on Kiddushin 70a:17:3"
+    ],
+    "generatedAt": "2026-11-03T01:11:50.113Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:17:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ליה רב נחמן</strong> - אפשר לשלוח לה שאילת שלום ע\"י שליח:"
+  },
+  "Rashi on Kiddushin 70a:1:1": {
+    "dependsOn": [
+      "Kiddushin 70a:1",
+      "Rashi on Kiddushin 69b:16:1",
+      "Rashi on Kiddushin 69b:16:2",
+      "Rashi on Kiddushin 69b:16:3",
+      "Yevamot 68b:3",
+      "Rashi on Kiddushin 69a:1:1",
+      "Rashi on Kiddushin 69a:2:1"
+    ],
+    "generatedAt": "2026-11-03T00:27:10.906Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא תאכל</strong> - ואפילו זרע אין לה ושבה אל בית אביה חוזרת לתרומה ואינה חוזרת לחזה ושוק:"
+  },
+  "Rashi on Kiddushin 70a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T00:27:28.006Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשכניה בן ארח</strong> - ישראל היה:"
+  },
+  "Rashi on Kiddushin 70a:4:1": {
+    "dependsOn": [
+      "Kiddushin 70a:4"
+    ],
+    "generatedAt": "2026-11-03T00:27:58.626Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותו ממאי דהוו להו בני</strong> - לטוביה ולבנו מנשים הללו מבת שכניה ומבת משלם:"
+  },
+  "Rashi on Kiddushin 70a:4:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70a:4:1",
+      "Rashi on Kiddushin 70a:4:2",
+      "Rashi on Kiddushin 70a:4:3",
+      "Kiddushin 70a:3",
+      "Rashi on Kiddushin 70a:3:1"
+    ],
+    "generatedAt": "2026-11-03T00:28:51.811Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותו ממאי דהוו להו בני</strong> - לטוביה ולבנו מנשים הללו מבת שכניה ומבת משלם:"
+  },
+  "Rashi on Kiddushin 70a:4:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70a:4:1",
+      "Rashi on Kiddushin 70a:4:2"
+    ],
+    "generatedAt": "2026-11-03T00:29:39.578Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותו</strong> - אפי' היו להם ממאי דמבבל עלו אותם נשים ובניהם דילמא בארץ ישראל נותרו בימי גדליה אותם שכניה ומשלם ושם נשאו טוביה ובנו את בנותיהם <span class=\"parenthesized\">(ולא יכלו להגיד בית אבותם וזרעם אם מישראל הם היינו שתוקי ואסופי)</span>:"
+  },
+  "Rashi on Kiddushin 70a:5:1": {
+    "dependsOn": [
+      "Sanhedrin 109b:3",
+      "Rashi on Sanhedrin 109b:3:1",
+      "Rashi on Sanhedrin 109b:3:2",
+      "Rashi on Kiddushin 70a:4:1",
+      "Rashi on Kiddushin 70a:3:1"
+    ],
+    "generatedAt": "2026-11-03T00:32:32.967Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למעשה סדום</strong> - שהיו מגלי עריות דכתיב <span class=\"parenthesized\">(בראשית י״ג:י״ג)</span> רעים וחטאים רעים בגופם וחטאים בממונם ואמרינן בחלק <span class=\"parenthesized\">(סנהדרין דף קט:)</span> דמחי לאתתא דחבריה ומפילה א\"ל תהוי גבך עד דמעברא הרי ממזרים לגבי ישראל:"
+  },
+  "Rashi on Kiddushin 70a:5:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70a:5:1"
+    ],
+    "generatedAt": "2026-11-03T00:33:18.403Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חרשא</strong> - לשון מחרישה:"
+  },
+  "Rashi on Kiddushin 70a:6:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70a:6:2",
+      "Rashi on Kiddushin 70a:4:1",
+      "Rashi on Kiddushin 70a:5:1"
+    ],
+    "generatedAt": "2026-11-03T00:34:11.754Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בית אבותם</strong> - אביו:"
+  },
+  "Rashi on Kiddushin 70a:6:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70a:6:1",
+      "Rashi on Kiddushin 70a:6:2",
+      "Rashi on Kiddushin 70a:6:3",
+      "Rashi on Kiddushin 70a:4:1",
+      "Rashi on Kiddushin 70a:4:2",
+      "Rashi on Kiddushin 70a:4:3",
+      "Rashi on Kiddushin 70a:5:1",
+      "Rashi on Kiddushin 70a:5:2",
+      "Rashi on Kiddushin 69b:1:1",
+      "Rashi on Kiddushin 69b:2:1",
+      "Rashi on Kiddushin 69b:3:1",
+      "Rashi on Kiddushin 69b:4:1",
+      "Rashi on Kiddushin 69b:5:1"
+    ],
+    "generatedAt": "2026-11-03T00:35:44.166Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וזרעם</strong> - אמו:"
+  },
+  "Rashi on Kiddushin 70a:6:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70a:6:1",
+      "Rashi on Kiddushin 70a:6:2",
+      "Rashi on Kiddushin 70a:6:3"
+    ],
+    "generatedAt": "2026-11-03T00:36:25.611Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זה אסופי</strong> - דאילו שתוקי מכיר להודיע אמו שהיא מישראל והכא לא ידעו אם מישראל הם:"
+  },
+  "Rashi on Kiddushin 70a:6:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70a:6:2",
+      "Rashi on Kiddushin 70a:6:3",
+      "Rashi on Kiddushin 70a:6:4",
+      "Rashi on Kiddushin 70a:6:5",
+      "Rashi on Kiddushin 70a:6:6",
+      "Rashi on Kiddushin 70a:6:7"
+    ],
+    "generatedAt": "2026-11-03T00:37:21.047Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר אדון</strong> - מסרס המקרא ודריש אדון כמו אדון אימר כמו אמר:"
+  },
+  "Rashi on Kiddushin 70a:6:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T00:37:49.308Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:6:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אדון</strong> - הקב\"ה:"
+  },
+  "Rashi on Kiddushin 70a:6:6": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70a:6:5",
+      "Rashi on Kiddushin 70a:6:6",
+      "Rashi on Kiddushin 70a:6:7",
+      "Rashi on Kiddushin 70a:4:1",
+      "Rashi on Kiddushin 70a:5:1"
+    ],
+    "generatedAt": "2026-11-03T00:38:39.021Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:6:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ככרוב</strong> - קדושים ככרובי הקדש כחיות הקדש דכתיב ביה <span class=\"parenthesized\">(יחזקאל י)</span> פני הכרוב:"
+  },
+  "Rashi on Kiddushin 70a:6:7": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70a:6:5",
+      "Rashi on Kiddushin 70a:6:6",
+      "Steinsaltz on Kiddushin 70a:6",
+      "Maharsha on Kiddushin 70a:6",
+      "Chidushei Agadot on Kiddushin 70a:6",
+      "Steinsaltz comment #1 on Kiddushin 70a:6"
+    ],
+    "generatedAt": "2026-11-03T00:40:05.663Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:6:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כנמר</strong> - כחיה זו שאינה מקפדת בזוג חבירתה:"
+  },
+  "Rashi on Kiddushin 70a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T00:40:47.923Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כאילו חרשו כו'</strong> - משום דלא יכלו להגיד יחוסם קרי להו תל מלח חרשא לשון חורש:"
+  },
+  "Rashi on Kiddushin 70a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T00:43:39.919Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בנים זרים</strong> - מאשה פסולה לו ולשם ממון נסבה כדמסיים קרא יאכלם חדש את חלקיהם ממון שנשאה לשמו יאכלם בחדש אחד:"
+  },
+  "Rashi on Kiddushin 70a:9:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 70a:9:2"
+    ],
+    "generatedAt": "2026-11-03T00:44:22.427Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושמא תאמר חלקו</strong> - כגון נכסי צאן ברזל:"
+  },
+  "Rashi on Kiddushin 70a:9:2": {
+    "dependsOn": [
+      "Kiddushin 70a:9",
+      "Rashi on Kiddushin 70a:9:1",
+      "Rashi on Kiddushin 70a:9:2"
+    ],
+    "generatedAt": "2026-11-03T00:48:02.654Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 70a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא חלקה</strong> - כגון נכסי מלוג דהיא לאו איסורא עבדא שחזרה לינשא למיוחס:"
+  }
+}

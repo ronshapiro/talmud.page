@@ -1,0 +1,452 @@
+{
+  "Rashi on Kiddushin 69b:10:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69b:10:2",
+      "Rashi on Kiddushin 69b:9:1",
+      "Rashi on Kiddushin 69b:9:2"
+    ],
+    "generatedAt": "2026-11-03T00:08:26.308Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמר להם כו'</strong> - מדכתיב מקדש הקדשים שמעינן דלא אסירי בתרומה אלא מקדשי המקדש:"
+  },
+  "Rashi on Kiddushin 69b:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T00:09:50.631Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר להם</strong> - תרומה איני יכול לאסור עליכם מפני חזקתכם שהוחזקתם בבבל לאכלה:"
+  },
+  "Rashi on Kiddushin 69b:10:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69b:10:1",
+      "Rashi on Kiddushin 69b:10:2",
+      "Rashi on Kiddushin 69b:10:4"
+    ],
+    "generatedAt": "2026-11-03T00:10:32.307Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קדשי הגבול</strong> - תרומה הנאכלת בכל מקום:"
+  },
+  "Rashi on Kiddushin 69b:10:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69b:10:1",
+      "Rashi on Kiddushin 69b:10:2",
+      "Rashi on Kiddushin 69b:10:3",
+      "Rashi on Kiddushin 69b:9:1"
+    ],
+    "generatedAt": "2026-11-03T00:11:27.839Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף כאן כו'</strong> - אלמא מדכתיב ויגואלו שמע מינה נתחללו מן הכהונה והיינו חללים:"
+  },
+  "Rashi on Kiddushin 69b:11:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69b:10:1",
+      "Rashi on Kiddushin 69b:10:2",
+      "Rashi on Kiddushin 69b:11:2",
+      "Rashi on Kiddushin 69b:11:3",
+      "Rashi on Kiddushin 69a:7:1"
+    ],
+    "generatedAt": "2026-11-03T00:13:14.407Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולמ\"ד</strong> - במסכת כתובות <span class=\"parenthesized\">(דף כד:)</span>:"
+  },
+  "Rashi on Kiddushin 69b:11:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69b:11:1",
+      "Rashi on Kiddushin 69b:11:3"
+    ],
+    "generatedAt": "2026-11-03T00:13:48.665Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעלין מתרומה ליוחסין</strong> - הרואה כהן אוכל בתרומה במקומו אין צריך לבדוק אחריו ביוחסין ונושא כהן בתו הני כיון דאכלי בתרומה אתי לאסוקינהו ואמאי לא חש לה נחמיה דלא לאסוקינהו:"
+  },
+  "Rashi on Kiddushin 69b:11:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T00:14:12.830Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאני התם דריע חזקתייהו</strong> - לא איצטריך למיחש להאי דכיון דשאר כהנים אוכלים בקדשי המקדש והם נגואלו מהם הורע חזקתם ויש בהם היכר ולא אתי לאסוקינהו:"
+  },
+  "Rashi on Kiddushin 69b:12:1": {
+    "dependsOn": [
+      "Kiddushin 69b:12"
+    ],
+    "generatedAt": "2026-11-03T00:17:32.627Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואלא</strong> - כיון דליכא למגזר מידי מאי גדולה חזקה דאמר רבי יוסי מאי רבותא לא היה לו לומר אלא מנין לחזקה כו' מדקאמר גדולה רבותא אשמועינן דאע\"ג דאיכא צד איסור השתא טפי מעיקרא סמכינן עלה:"
+  },
+  "Rashi on Kiddushin 69b:12:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T00:17:55.227Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתרומה דרבנן</strong> - תרומת חוץ לארץ:"
+  },
+  "Rashi on Kiddushin 69b:12:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69b:12:1",
+      "Rashi on Kiddushin 69b:12:2"
+    ],
+    "generatedAt": "2026-11-03T00:18:33.679Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרומה דאורייתא</strong> - משבאו לארץ:"
+  },
+  "Rashi on Kiddushin 69b:13:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69b:13:2"
+    ],
+    "generatedAt": "2026-11-03T00:21:59.368Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השתא נמי תרומה דרבנן היא</strong> - דאכול כדמעיקרא ומאי נינהו תרומת פירות וירק:"
+  },
+  "Rashi on Kiddushin 69b:13:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69b:13:1",
+      "Rashi on Kiddushin 69b:13:2"
+    ],
+    "generatedAt": "2026-11-03T00:22:43.051Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתרומה דאורייתא</strong> - דגן ותירוש ויצהר לא אכול:"
+  },
+  "Rashi on Kiddushin 69b:14:1": {
+    "dependsOn": [
+      "Kiddushin 69b:14",
+      "Rashi on Kiddushin 69b:12:1",
+      "Rashi on Kiddushin 69b:12:2",
+      "Rashi on Kiddushin 69b:12:3"
+    ],
+    "generatedAt": "2026-11-03T00:23:29.712Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליכא למיגזר משום תרומת הארץ</strong> - דלא הואי גבייהו:"
+  },
+  "Rashi on Kiddushin 69b:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T00:23:58.317Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכל זר לא יאכל קדש</strong> - כל אותו הענין מדבר בתרומה ולא בקדשים דכתיב ובא השמש וטהר ואחר יאכל מן הקדשים וליכא לאוקמי אלא בתרומה שמחוסר כפורים מותר בה:"
+  },
+  "Rashi on Kiddushin 69b:16:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69b:16:1",
+      "Rashi on Kiddushin 69b:16:2",
+      "Rashi on Kiddushin 69b:16:3"
+    ],
+    "generatedAt": "2026-11-03T00:24:30.948Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא מידי דאיקרי קדשים</strong> - חזה ושוק של שלמים דאשכחן דאיקרי קדשים:"
+  },
+  "Rashi on Kiddushin 69b:16:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T00:25:22.545Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:16:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במורם מן הקדשים</strong> - חזה ושוק:"
+  },
+  "Rashi on Kiddushin 69b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T23:54:38.386Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דברי ריבות בשעריך וקמת ועלית וגו'</strong> - מכאן שהמקדש גבוה מכל ארץ ישראל דכל צדדיה סתם וכתב ועלית:"
+  },
+  "Rashi on Kiddushin 69b:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T23:55:12.507Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אשר העלה ואשר הביא את בני ישראל מארץ צפון</strong> - דהיינו בבל ומכל הארצות אשר הדחתים שם וכתיב אשר העלה:"
+  },
+  "Rashi on Kiddushin 69b:2:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69b:2:1"
+    ],
+    "generatedAt": "2026-11-02T23:56:02.370Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מסייע ליה לרבי אלעזר</strong> - דנקט תנא דידן לישנא יתירא לאשמועינן שכל עצמו של עזרא לנקות את בבל נתכוון לפי שראה אותם שנתערבו בהן וראה שהיו חכמי הדור עולין עמו ואין עוד בבבל שיתעסק לבדוק בהן לייחסן עמד והפריש פסוליהן והוליכן עמו והדור שראו הפרשתם הכירו בהם ולא חשש שיתערבו בהן אלו הפסולין העולים ולדורות הבאים נמי כיון דאמר מר <span class=\"parenthesized\">(לקמן קידושין דף עו:)</span> לשכת הגזית היתה שם ששם היו יושבים מייחסי כהונה ולויה בכל יום מיזהר זהירי בפסולי:"
+  },
+  "Rashi on Kiddushin 69b:3:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69b:3:1"
+    ],
+    "generatedAt": "2026-11-02T23:56:47.751Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">העלום</strong> - על כרחם:"
+  },
+  "Rashi on Kiddushin 69b:4:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69b:4:2"
+    ],
+    "generatedAt": "2026-11-02T23:57:20.507Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפרושי אפרושינהו</strong> - ומתוך שהופרשו הכירו בהם אנשי מקומם וידעו שלא יתערבו עוד בהם:"
+  },
+  "Rashi on Kiddushin 69b:4:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69b:4:1"
+    ],
+    "generatedAt": "2026-11-02T23:57:53.586Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומנפשייהו סליקו</strong> - לארץ ישראל שלא יכירו בהם:"
+  },
+  "Rashi on Kiddushin 69b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T23:58:46.511Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשלמא למ\"ד</strong> - שעלו מאיליהם ולא הכירו בהם העולים עמהם כל כך היינו דארץ ישראל עיסה לבבל ספק יחוס הוא אצל בבל שנעשית בבל כסולת נקיה ובני ארץ ישראל לא הכירום כל כך ויש שנדבקו עמהם:"
+  },
+  "Rashi on Kiddushin 69b:5:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69b:5:1",
+      "Rashi on Kiddushin 69b:5:2",
+      "Rashi on Kiddushin 69b:5:3"
+    ],
+    "generatedAt": "2026-11-02T23:59:21.696Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עיסה</strong> - ספק עירובין כעיסה זו שמערבין בה שאור מים וקמח מלח וסובין:"
+  },
+  "Rashi on Kiddushin 69b:5:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69b:5:1",
+      "Rashi on Kiddushin 69b:5:2",
+      "Rashi on Kiddushin 69b:5:4",
+      "Rashi on Kiddushin 69b:5:5",
+      "Steinsaltz on Kiddushin 69b:5:1"
+    ],
+    "generatedAt": "2026-11-03T00:00:15.720Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל הארצות עיסה</strong> - פסולת אצל ארץ ישראל לפי שבני ארץ ישראל עסוקין לבדוק ביוחסים לפי שהכהנים מצויים שם:"
+  },
+  "Rashi on Kiddushin 69b:5:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69b:5:1",
+      "Rashi on Kiddushin 69b:5:2",
+      "Rashi on Kiddushin 69b:5:3",
+      "Rashi on Kiddushin 69b:5:4",
+      "Rashi on Kiddushin 69b:5:5"
+    ],
+    "generatedAt": "2026-11-03T00:01:04.799Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וארץ ישראל עיסה לבבל</strong> - שעזרא הפרישם ויצא משם:"
+  },
+  "Rashi on Kiddushin 69b:5:5": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69b:5:1",
+      "Rashi on Kiddushin 69b:5:2",
+      "Rashi on Kiddushin 69b:5:3",
+      "Rashi on Kiddushin 69b:5:4"
+    ],
+    "generatedAt": "2026-11-03T00:01:55.468Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:5:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא למ\"ד העלום תנן</strong> - הואיל ובעל כרחם העלום עם אלו יצא קול פסול עליהם והכל ידעו בפסולן ונזהרו בהם כל העולים:"
+  },
+  "Rashi on Kiddushin 69b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T00:02:46.490Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואבינה בעם</strong> - מי היה ומי לא היה ש\"מ לא ידע עזרא מי עלה עמו ומי לא עלה עמו וסבור שהיו שם לוים כשרים ולא מצא ראויים לעבודה אלא מאותן שקצצו בהונות ידיהם בשיניהם ואמרו איך נשיר את שיר ה' וגו' במזמור על נהרות בבל <span class=\"parenthesized\">(תהלים קלז)</span> שאמר להם נבוכדנצר שירו לנו משיר ציון עמדו וקצצו בהונות ידיהם בשיניהם ואמרו לו איך נשיר את שיר ה' על אדמת נכר לא נשיר לא נאמר אלא איך נשיר אין לנו במה למשמש בנימי הכנורות מאותן עלו ומן הכשרים לא מצא לפי שהיו יושבים בבבל בשלוה והעולים בירושלים היו בעוני ובטורח המלאכה ובאימת כל סביבותיה והנך לויי דקתני מתניתין מהנך דלא חזו לעבודה היו:"
+  },
+  "Rashi on Kiddushin 69b:7:1": {
+    "dependsOn": [
+      "Kiddushin 69b:7"
+    ],
+    "generatedAt": "2026-11-03T00:04:36.683Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מזהר זהירי בהו</strong> - יודע היה מי עלה ומי לא עלה:"
+  },
+  "Rashi on Kiddushin 69b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T00:04:57.152Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גדולה חזקה</strong> - יש לסמוך עליה יפה:"
+  },
+  "Rashi on Kiddushin 69b:9:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69b:9:1",
+      "Rashi on Kiddushin 69b:9:2",
+      "Rashi on Kiddushin 69b:9:3",
+      "Rashi on Kiddushin 69b:9:4"
+    ],
+    "generatedAt": "2026-11-03T00:06:19.556Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בקשו כתבם המתייחשים</strong> - כתב יחוסם:"
+  },
+  "Rashi on Kiddushin 69b:9:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T00:06:59.968Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התרשתא</strong> - נחמיה בן חכליה קרוי כן בספר עזרא ובגמרת ירושלמי נמצא שעל שם שהיה משקה למלך היה צריך לשתות קודם שלא יחשדוהו שמא הטיל סם המות במשקה המלך התירו לו יין של עובדי כוכבים לשתות לכך נקרא התרשתא:"
+  },
+  "Rashi on Kiddushin 69b:9:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T00:07:29.303Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד עמוד הכהן לאורים ותומים</strong> - כאדם שאומר לחבירו עד שיבא משיח דאורים ותומים לא היו בבית שני:"
+  },
+  "Tosafot on Kiddushin 69b:11:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 69b:11:3",
+      "Tosafot on Kiddushin 69b:6:1"
+    ],
+    "generatedAt": "2026-11-03T00:16:51.028Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 69b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאני התם דריע חזקתייהו</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> במה שאין אוכלין בקדשים ולא נהירא דמכל מקום איכא למיחש דילמא אתו לאסוקינהו מתרומה לקדשים ומקדשים ליוחסין ונראה לפרש דריע חזקתייהו לפי שבקשו כתב יחוסם ולא מצאו:"
+  },
+  "Tosafot on Kiddushin 69b:12:1": {
+    "dependsOn": [
+      "Kiddushin 69b:12",
+      "Tosafot on Kiddushin 69b:11:1",
+      "Rashi on Kiddushin 69b:12:1",
+      "Rashi on Kiddushin 69b:12:2",
+      "Rashi on Kiddushin 69b:12:3",
+      "Tosafot on Kiddushin 69b:6:1"
+    ],
+    "generatedAt": "2026-11-03T00:21:06.735Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 69b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[ואלא מאי גדולה חזקה</strong> - בשלמא למ\"ד אין מעלין היינו גדולה חזקה דאף ע\"ג דהוי לן למיגזר דילמא אתי לאסוקינהו ליוחסין דהא לית ליה ריע חזקתייהו אפ\"ה לא גזרי' אלא למ\"ד מעלין דאית ליה סברא דריע חזקתייהו מאי גדולה חזקה הא דלא גזרינן הכא משום דריע חזקתייהו. ת\"י]:"
+  },
+  "Tosafot on Kiddushin 69b:6:1": {
+    "dependsOn": [
+      "Chidushei Agadot on Kiddushin 69b:2",
+      "Rashi on Kiddushin 69b:6:1"
+    ],
+    "generatedAt": "2026-11-03T00:04:03.282Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 69b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומבני לוי לא מצאתי שם</strong> - וא\"ת והא אמרי' במתניתין עשרה יוחסין עלו מבבל וקא חשיב לוים ויש לומר דכל הלוים שעלו עמו היו קצוצי בהונות ואינם ראויים לשורר שירה של דוכן:"
+  }
+}

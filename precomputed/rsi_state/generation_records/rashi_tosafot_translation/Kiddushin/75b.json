@@ -1,0 +1,177 @@
+{
+  "Rashi on Kiddushin 75b:1:1": {
+    "dependsOn": [
+      "Kiddushin 75b:1",
+      "Rashi on Kiddushin 75b:1:2",
+      "Rashi on Kiddushin 75b:1:3",
+      "Kiddushin 75b:6",
+      "Kiddushin 75b:7",
+      "Kiddushin 75b:8",
+      "Rashi on Kiddushin 75a:19:1",
+      "Rashi on Kiddushin 75a:21:1",
+      "Rashi on Kiddushin 74b:10:1"
+    ],
+    "generatedAt": "2026-11-03T07:38:36.295Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר' אלעזר</strong> - דאמר כותי לא ישא כותית סבר לה כר' ישמעאל כו' לא איתפרש היכא איתמר לא במשנה ולא בברייתא אלא משמעתא דר' יוחנן ור' יהושע בן לוי דאמרי לקמן שלש מחלוקות בדבר:"
+  },
+  "Rashi on Kiddushin 75b:1:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 75b:1:1",
+      "Rashi on Kiddushin 75b:1:3"
+    ],
+    "generatedAt": "2026-11-03T07:39:09.122Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גירי אריות הן</strong> - והרי הן כשאר עובדי כוכבים שנשאו בנות ישראל:"
+  },
+  "Rashi on Kiddushin 75b:1:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T07:40:02.158Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור' ישמעאל סבר לה כר' עקיבא כו'</strong> - דהא חייבי לאוין הן הילכך כותי לא ישא כותית דתרוייהו ספיקי ממזרים הם דיש לומר בכל אחד מהם הוא בא מישראלית הנישאת לעובד כוכבים והרי הוא ממזר וזו באה מכותי וכותית מעולם אי נמי איפכא:"
+  },
+  "Rashi on Kiddushin 75b:2:1": {
+    "dependsOn": [
+      "Kiddushin 75b:2"
+    ],
+    "generatedAt": "2026-11-03T07:51:19.032Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלמנה וגרושה</strong> - ושבה אל בית אביה מי שיש לו אלמנות וגירושין בה שיש לו קידושין הוא דאינו פוסלה בביאתו מלשוב:"
+  },
+  "Rashi on Kiddushin 75b:4:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 75b:4:2"
+    ],
+    "generatedAt": "2026-11-03T07:51:56.462Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השתא ממזר הוי</strong> - הולד:"
+  },
+  "Rashi on Kiddushin 75b:4:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 75b:4:1",
+      "Rashi on Kiddushin 75b:1:1",
+      "Rashi on Kiddushin 75b:2:1"
+    ],
+    "generatedAt": "2026-11-03T07:53:20.899Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיפסיל בביאה מיבעיא</strong> - ולמה לי האי קרא אלא אין הולד ממזר ס\"ל ואע\"ג דלא תפסי ליה בה קידושין והא דתנן <span class=\"parenthesized\">(לעיל קידושין דף סו:)</span> כל שאין לה עליו קידושין הולד ממזר דוקא ביש לה ולו קידושין ע\"י אחרים דומיא דאשת אב דכתיב לא יבא ממזר גביה:"
+  },
+  "Rashi on Kiddushin 75b:6:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 75b:4:1",
+      "Rashi on Kiddushin 75b:6:2",
+      "Rashi on Kiddushin 75b:1:1",
+      "Rashi on Kiddushin 75b:2:1"
+    ],
+    "generatedAt": "2026-11-03T08:00:07.815Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אע\"פ שנחלקו ב\"ש וב\"ה בצרות</strong> - שב\"ש אומרים צרת ערוה מתיבמת וב\"ה אוסרים ליבם אלא תינשא לשוק בלא חליצה בפ\"ק דיבמות <span class=\"parenthesized\">(דף יג.)</span>:"
+  },
+  "Rashi on Kiddushin 75b:6:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 75b:6:1"
+    ],
+    "generatedAt": "2026-11-03T08:00:51.508Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מודים זה לזה שאין ממזר כו'</strong> - ובני העושים כב\"ש ממזרים לב\"ה הן דהוו להו בני אשת אח שלא במקום מצוה שהיא בכרת אבל בני העושים כבית הלל לב\"ש אין ממזרים לפי שהן בני חייבי לאוין שנשאת יבמה לשוק בלא חליצה:"
+  },
+  "Rashi on Kiddushin 75b:7:1": {
+    "dependsOn": [
+      "Kiddushin 75b:7"
+    ],
+    "generatedAt": "2026-11-03T08:03:25.855Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלש מחלוקות בדבר</strong> - בכותים וכהנים האמורים בקרא שנטמעו בהם:"
+  },
+  "Rashi on Kiddushin 75b:8:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 75b:8:1",
+      "Rashi on Kiddushin 75b:8:2"
+    ],
+    "generatedAt": "2026-11-03T08:04:06.169Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדכתיב ויעשו להם מקצותם כהני במות</strong> - בספר מלכים <span class=\"parenthesized\">(ב יז)</span> גבי כותיים בגלות סנחריב שהגלה השבטים בימי הושע בן אלה:"
+  },
+  "Rashi on Kiddushin 75b:8:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 75b:8:1",
+      "Jastrow, קוֹץ I 1",
+      "Chokhmat Shlomo on Kiddushin 75b:1",
+      "Steinsaltz on Kiddushin 75b:8"
+    ],
+    "generatedAt": "2026-11-03T08:06:42.491Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מן הקוצים</strong> - לשון קוץ שהיא פסולה. ל\"א מוקצין הן מן העם לפסול:"
+  },
+  "Tosafot on Kiddushin 75b:4:1": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 75b:1:1",
+      "Tosafot on Kiddushin 75b:6:1"
+    ],
+    "generatedAt": "2026-11-03T07:59:01.981Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 75b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השתא ממזר הוי מיפסיל בביאתו מיבעיא</strong> - ואם תאמר תקשה דר' יוחנן אדר' יוחנן דהא שמעינן לר' יוחנן דאמר בפרק החולץ <span class=\"parenthesized\">(יבמות דף מד:)</span> עובד כוכבים ועבד הבא על בת ישראל הולד ממזר וא\"כ אלמנה וגרושה ל\"ל השתא ממזר הוי מיפסיל בביאתו מיבעיא ואר\"י הא דמצריך ר' יוחנן משום ר' ישמעאל אלמנה וגרושה היינו אליבא דר' ישמעאל רביה וליה לא ס\"ל ורבינו שמשון מקוצי פירש דלאו הא בהא תליא ואפשר דליהוי ממזר ואפ\"ה אינו פוסל בביאתו דאל\"כ בפרק אלמנה לכ\"ג <span class=\"parenthesized\">(יבמות דף סט.)</span> דך לר\"ע דאמר אין קידושין תופסין בחייבי לאוין ומאי כי תהיה לאיש זר כי תבעל אלמנה וגרושה ל\"ל פירוש בשלמא לשאר תנאים דאמרי דקידושין תופסין בחייבי לאוין ודרשי כי תהיה הכי אמר רחמנא הנך דאית בהו הויה ומפקי מהאי קרא דנבעלה לפסול לה שפסלה מן הכהונה אבל עובד כוכבים ועבד דלית בהו הויה לא אתו מהאי קרא ולדידהו איצטריך שפיר אלמנה וגרושה לעובד כוכבים ועבד כדפרשי' הכא משום ר' ישמעאל אלא לר' עקיבא דאמר אין קידושין תופסין בחייבי לאוין ודריש כי תהיה לאיש זר כי תבעל לאיש זר כמו שאר פסולים וא\"כ אלמנה וגרושה ל\"ל והשתא לא קשה מידי דר' יוחנן אדר' יוחנן דאע\"ג דאית ליה כר' עקיבא בעובד כוכבים ועבד דהוי הולד ממזר מיהו לא סבר כוותיה בשאר חייבי לאוין ודריש שפיר כי תהיה דאית בהו הויה כמו רבנן דר' עקיבא וא\"כ איצטריך אלמנה וגרושה לעובד כוכבים ועבד מיהו הלשון ק\"ק דקאמר השתא ממזר הוי כו' הוה ליה למימר אלמנה וגרושה למה לי כדאמר בפרק אלמנה <span class=\"parenthesized\">(שם דף סט.)</span> ונראה ליישב הכי השתא ממזר הוי בעובד כוכבים ועבד כמו שאר פסולין שיפסול בביאתו מיבעיא כמו בשאר פסולים דכי תבעל וא\"כ אלמנה וגרושה ל\"ל מכי תבעל נפקא והר\"ר שלמה מטריווא\"ש מיישב הכי השתא ממזר הוי בעובד כוכבים וא\"כ ביאתו ביאה ולא הוי כביאת בהמה דהולד אין ממזר מיפסיל בביאתו מיבעיא כמו שאר פסולין:"
+  },
+  "Tosafot on Kiddushin 75b:6:1": {
+    "dependsOn": [
+      "Kiddushin 75b:6",
+      "Tosafot on Kiddushin 75b:1:1",
+      "Tosafot on Kiddushin 75b:4:1"
+    ],
+    "generatedAt": "2026-11-03T08:02:42.803Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 75b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאין ממזר אלא מאיסור ערוה וענוש כרת</strong> - פירוש א\"כ לא סבר ר' אלעזר כר\"ע ואע\"ג דיש תנא התם <span class=\"parenthesized\">(דף מד:)</span> דסבר עובד כוכבים ועבד הבא על בת ישראל הולד ממזר ולא סבר כר\"ע דאמר אין קידושין תופסין בחייבי לאוין מיהו הלשון דקאמר הכא שאין ממזר אלא מאיסור ערוה וכו' משמע דוקא מהני אבל עובד כוכבים ועבד הבא על בת ישראל אין הולד ממזר ולעיל כי פריך ומי סבר ליה כר\"ע והאמר ר' יוחנן משום ר' ישמעאל כו' הוי מצי לשנויי דאע\"ג דר' ישמעאל לא ס\"ל כר\"ע דאמר יש ממזר מחייבי לאוין אפ\"ה מצי סבר דעובד כוכבים ועבד הבא על בת ישראל הולד ממזר והא דלא תריץ ליה הכי משום דאשכחן דר' אלעזר לית ליה עובד כוכבים ועבד הבא על בת ישראל הולד ממזר לא חש לתרץ דברי ר' ישמעאל דהא לא מייתי ר' ישמעאל אלא משום דבריו של רבי אלעזר:"
+  }
+}

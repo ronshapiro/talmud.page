@@ -1,0 +1,239 @@
+{
+  "Rashi on Kiddushin 38b:10:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 38b:10:2",
+      "Rashi on Kiddushin 38b:1:1",
+      "Rashi on Kiddushin 38b:3:1",
+      "Rashi on Kiddushin 38a:1:1"
+    ],
+    "generatedAt": "2026-11-02T01:10:13.228Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 38b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרם הנטוע ירק</strong> - שזרע ירק בין הגפנים דה\"ל כלאי הכרם:"
+  },
+  "Rashi on Kiddushin 38b:10:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 38b:10:1"
+    ],
+    "generatedAt": "2026-11-02T01:10:46.346Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 38b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וירק נמכר חוצה לו</strong> - ויש לחוש שמא מירק שגדל בכרם הוא וה\"ל ספק כלאים:"
+  },
+  "Rashi on Kiddushin 38b:11:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 38b:11:2"
+    ],
+    "generatedAt": "2026-11-02T01:11:50.798Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 38b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יורד</strong> - עובד כוכבים ולוקט מן הכלאים ממש ומוכר לחבר:"
+  },
+  "Rashi on Kiddushin 38b:11:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 38b:11:1",
+      "Kiddushin 38b:10",
+      "Kiddushin 38b:11",
+      "Kiddushin 38b:12",
+      "Kiddushin 38b:9"
+    ],
+    "generatedAt": "2026-11-02T01:12:41.080Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 38b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובלבד שלא ילקוט</strong> - החבר עצמו ביד ואם איתא דערלה בחוצה לארץ דברי סופרים ולא הלכה למשה מאי שנא דאחמיר בספק ערלה מספק כלאים:"
+  },
+  "Rashi on Kiddushin 38b:1:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 38b:1:2"
+    ],
+    "generatedAt": "2026-11-02T00:54:15.322Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 38b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל מצוה שנצטוו ישראל</strong> - להנהיגה קודם שיכנסו לארץ דהיינו חובת הגוף נוהגת בין בארץ בין בחוצה לארץ:"
+  },
+  "Rashi on Kiddushin 38b:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T00:54:47.674Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 38b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חוץ מהשמטת כספים</strong> - ולקמיה פריך הא נמי נצטוו עליה קודם לכן דהא חובת הגוף היא ומאי חוץ:"
+  },
+  "Rashi on Kiddushin 38b:3:1": {
+    "dependsOn": [
+      "Kiddushin 38b:3",
+      "Rashi on Kiddushin 38b:3:1",
+      "Rashi on Kiddushin 38b:3:2",
+      "Rashi on Kiddushin 38b:1:1",
+      "Rashi on Kiddushin 38b:1:2"
+    ],
+    "generatedAt": "2026-11-02T01:00:13.630Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 38b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא נצרכא אלא לכדתניא</strong> - דלא נצטוו עליה קודם לכן:"
+  },
+  "Rashi on Kiddushin 38b:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T01:00:36.524Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 38b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בזמן שאין אתה משמט קרקע</strong> - כגון במדבר ולאחר שגלו:"
+  },
+  "Rashi on Kiddushin 38b:4:1": {
+    "dependsOn": [
+      "Kiddushin 38b:4",
+      "Rashi on Kiddushin 38b:3:1",
+      "Rashi on Kiddushin 38b:3:2",
+      "Tosafot on Kiddushin 38a:3:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2"
+    ],
+    "generatedAt": "2026-11-02T01:02:21.346Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 38b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואימא במקום כו'</strong> - ולמעוטי חוצה לארץ אף בזמן הארץ:"
+  },
+  "Rashi on Kiddushin 38b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T01:02:43.267Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 38b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסור מן התורה בכ\"מ</strong> - קסבר מושב כל מקום שאתם יושבים משמע:"
+  },
+  "Rashi on Kiddushin 38b:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T01:03:06.206Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 38b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלכתא מדינה</strong> - הנהיגוהו הם עליהם בחוצה לארץ:"
+  },
+  "Rashi on Kiddushin 38b:8:1": {
+    "dependsOn": [
+      "Kiddushin 38b:8",
+      "Rashi on Kiddushin 38b:7:1",
+      "Rashi on Kiddushin 38b:7:2",
+      "Rashi on Kiddushin 38b:9:1"
+    ],
+    "generatedAt": "2026-11-02T01:05:20.334Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 38b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היינו דשני לן</strong> - חמור ספק ערלה מספק כלאים ספק ערלה ספק עברו עליה שלש שנים אי נמי פרדס שיש בו נטיעות ערלה ושאר נטיעות ולקט עובד כוכבים מן הפירות ואין ידוע מהיכן:"
+  },
+  "Rashi on Kiddushin 38b:9:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 38b:9:1"
+    ],
+    "generatedAt": "2026-11-02T01:06:02.376Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 38b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בסוריא</strong> - היא ארם צובה שכבש דוד וסנפה עם ארץ ישראל וקסבר כיבוש יחיד לא שמיה כיבוש הלכך ספיקו מותר ולקמן <span class=\"parenthesized\">(קידושין דף לט.)</span> פרכינן ואי הלכה למשה מסיני היא בחוצה לארץ היאך מיקל בספיקה ומשנינן אימא כך נאמרה הלכה ספיקה מותר בחוצה לארץ ודאה אסור:"
+  },
+  "Rashi on Kiddushin 38b:9:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 38b:9:1",
+      "Rashi on Kiddushin 38b:9:3",
+      "Rashi on Kiddushin 38b:9:4"
+    ],
+    "generatedAt": "2026-11-02T01:06:55.847Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 38b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובחוצה לארץ</strong> - דרחיק טפי ולא מיחליף:"
+  },
+  "Rashi on Kiddushin 38b:9:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 38b:9:1",
+      "Rashi on Kiddushin 38b:9:2",
+      "Rashi on Kiddushin 38b:9:3",
+      "Rashi on Kiddushin 38b:9:4"
+    ],
+    "generatedAt": "2026-11-02T01:07:44.655Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 38b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יורד</strong> - ישראל ולוקח מן העובד כוכבים הלוקט מפרדס שיש בו נטיעות ילדות וזקנות וישראל יודע שהוא נכנס שם ולוקט לכתחלה:"
+  },
+  "Rashi on Kiddushin 38b:9:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 38b:9:1",
+      "Rashi on Kiddushin 38b:9:2",
+      "Rashi on Kiddushin 38b:9:3"
+    ],
+    "generatedAt": "2026-11-02T01:08:34.279Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 38b:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובלבד שלא יראנו</strong> - ישראל כשהוא לוקט מן הערלה והא דתניא לעיל בסוריא מותר כשנלקט כבר אבל לכתחלה אינו אומר לו לך רד ולקוט:"
+  },
+  "Tosafot on Kiddushin 38b:2:1": {
+    "dependsOn": [
+      "Kiddushin 38b:2",
+      "Rashi on Kiddushin 38b:1:2",
+      "Rashi on Kiddushin 38b:3:1"
+    ],
+    "generatedAt": "2026-11-02T00:59:07.595Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 38b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השמטת כספים חובת הגוף היא</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> ולמה אתה אומר שהיא מצוה שנצטוו עליה אחר כניסתן לארץ כיון דחובת הגוף נצטוו עליה אף במדבר ומשני בזמן שאי אתה משמט קרקע כגון במדבר דליכא חרישה וזריעה אי אתה וכו' ופריך ואימא במקום שאתה משמט כלומר אף בזמן שבית המקדש קיים לא תנהג השמטת כספים אלא בארץ ומשני הכא רבייה קרא ת\"ל כי קרא שמיטה דמשמע מ\"מ וקשה דא\"כ לא היה לו לומר ת\"ל כי קרא שמיטה כיון דהתירוץ של קושיא הוא אלא הוה ליה למימר <span class=\"parenthesized\">(אלא)</span> אמר קרא כי קרא שמיטה ועוד קשה דהיאך נוכל לפרש לעיל שתנהוג שמיטת כספים במדבר והלא דין שמיטות אינו אלא לאחר ירושה וישיבה כדאמרינן בסוף פירקין <span class=\"parenthesized\">(לקמן קידושין דף מ:)</span> גדול תלמוד תורה שקדם לשמיטה ס\"א שנה ונראה לי השמטת כספים חובת הגוף הוא וא\"כ פשיטא דנוהג אפילו בחוצה לארץ ומאי אתא ר\"א בר' שמעון לאשמועינן ומשני לא צריכא לכדרבי כלומר משום הקישא דמקשי כספים לקרקעות איצטריך למימר וגרסי' מהו דתימא במקום שאתה משמט קרקע דהיינו בארץ ישראל שהרי חובת קרקע היא אתה משמט כספים ובמקום שאי אתה משמט קרקע אי אתה משמט כספים וכיון דאין שמיטת קרקע בחוצה לארץ השמטת כספים לא תנהוג בחוצה לארץ תלמוד לומר כי קרא שמיטה מ\"מ וממקרא זה מפיק ליה ר\"א בר\"ש דנוהג אף בח\"ל ולפי גירסא זו ואימא במקום שאתה משמט כו' הוא סיום התירוץ ולאו בלשון קושיא הוא כמו לפירוש <span class=\"rashi-quotation\">הקונטרס</span> ואית ספרים דגרסי נמי במקום כו' וכן בסמוך דפריך שילוח עבדים חובת הגוף היא כו' כדפרישית גבי השמטת כספים צריך לפרש גבי שילוח עבדים ולא ניחא לפרש <span class=\"rashi-quotation\">כמו שפירש בקונטרס</span> בהשמטת כספים ורש\"י פירש בפרק השולח <span class=\"parenthesized\">(גיטין דף לו.)</span> גבי הא דאמר אביי בשביעית בזמן הזה דלא משמט מדאורייתא ורבי היא דתניא רבי אומר וזה דבר השמיטה שמוט כו' דקרקע אינה נשמטת מחרישה וזריעה אלא דוקא בזמן הבית מהאי קרא גופיה ופירש אחד שמיטת קרקע דחרישה וזריעה ואחד שמיטת כספים דהשמטת מלוה אידי ואידי שביעית כשאין היובל נוהג שמיטין נמי לא היו נוהגין כדדריש בירושלמי וזה דבר השמיטה שמוט בשתי שמיטות הכתוב מדבר אחת שמיטת יובל ואחת שמיטת שביעית בזמן שיובל נוהג שביעית נוהג אין היובל נוהג כו' ובזמן הזה אין היובל נוהג דגבי יובל כתיב בארץ לכל יושביה בזמן שכל יושביה עליה יובל נוהג כו' ובזמן הזה אין יושביה עליה והואיל ויובל אינו נוהג שביעית נמי אינה נוהגת וקשה מה שפירש דשמיטת קרקע היינו מחרישה וזריעה בשביעית והוצרך להביא רש\"י ההיא דרשה דירושלמי דא\"כ היה לו לאביי להביא אותה כיון שהיא עיקר דמשם מוכיח דשמיטה אינה נוהגת שהרי לא ידעינן כלום אלא מההוא לכך פירש רבינו תם כי זאת הדרשה דהכא היינו ההיא דירושלמי דהא רבי נמי אמרה התם ושמיטת קרקע קרי יובל שחוזרת לבעלים ביובל מה שאין כן בשביעית ושמיטת כספים קרי שביעית שאין השמטת כספים ביובל כדרשינן בספרי בפרשת ראה וזה דבר השמיטה שמיטה משמטת כספים ולא יובל וה\"פ בזמן שאתה משמט קרקע ביובל שהיא חוזרת לבעלים אתה משמט כספים היינו שביעית שכספים נוהגים וה\"ה דמיירי בשמיטת חרישה וזריעה דשמיטת שביעית לגמרי ילפינן לה משמיטת יובל והא דנקט שמיטת כספים משום דנקט קרקע לפי שהיה רוצה להזכיר מה היא שמיטת יובל נקט נמי שמיטת כספים דדמיא להו שמיטת יובל שביובל חוזרות השדות מלוקח למוכר ושמיטת כספים כמו כן מופקעים ממלוה ללוה אי נמי משום דבשביעית נוהגת שמיטת כספים מה שאין כן ביובל ומשום הכי נקט לה:"
+  },
+  "Tosafot on Kiddushin 38b:7:1": {
+    "dependsOn": [
+      "Kiddushin 38a:9",
+      "Kiddushin 38a:10"
+    ],
+    "generatedAt": "2026-11-02T01:04:24.711Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 38b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הערלה הלכה והכלאים מדברי סופרים</strong> - וא\"ת אמאי לא ילפינן כלאים מקל וחומר דחדש דנוהג אף בח\"ל דאורייתא ומה חדש שאין איסורו איסור עולם כו' וי\"ל דקסבר האי תנא דכתיב גבי כלאים שדך למעוטי זרעים שבח\"ל כדאמר לקמן <span class=\"parenthesized\">(קידושין דף לט.)</span> ואין לומר דערלה מיהא נייתי בקל וחומר דחדש דאיכא למימר כלאים יוכיחו:"
+  }
+}

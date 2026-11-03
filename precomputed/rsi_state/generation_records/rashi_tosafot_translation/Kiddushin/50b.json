@@ -1,0 +1,345 @@
+{
+  "Rashi on Kiddushin 50b:10:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50b:10:2"
+    ],
+    "generatedAt": "2026-11-02T03:32:24.874Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלא שכיח ספרא</strong> - אין הסופר מצוי בעיר תמיד:"
+  },
+  "Rashi on Kiddushin 50b:10:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50b:10:1"
+    ],
+    "generatedAt": "2026-11-02T03:32:59.906Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ספרא הוא דאתרמי ליה</strong> - וקדם לכתוב קודם קידושין:"
+  },
+  "Rashi on Kiddushin 50b:11:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50b:11:1",
+      "Rashi on Kiddushin 50b:11:2",
+      "Rashi on Kiddushin 50b:11:3",
+      "Rashi on Kiddushin 50b:10:1",
+      "Rashi on Kiddushin 50b:10:2",
+      "Kiddushin 50a:4"
+    ],
+    "generatedAt": "2026-11-02T03:35:39.789Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כאחת</strong> - אמר הרי שתיכם מקודשות לי:"
+  },
+  "Rashi on Kiddushin 50b:11:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50b:11:1",
+      "Rashi on Kiddushin 50b:11:3"
+    ],
+    "generatedAt": "2026-11-02T03:36:14.973Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינן מקודשות</strong> - ואין אחת מהן צריכה גט ובגמרא מפרש טעמא:"
+  },
+  "Rashi on Kiddushin 50b:11:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T03:36:50.842Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50b:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושל שביעית היתה</strong> - בגמרא מפרש מאי אתא לאשמועינן:"
+  },
+  "Rashi on Kiddushin 50b:12:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50b:12:2"
+    ],
+    "generatedAt": "2026-11-02T03:37:35.626Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשעה שנעשו צרות זו לזו</strong> - כגון שקדשן כאחת קס\"ד דקרא בהכי כתיב וקאמר לא תקח אין לך בהן לקוחין:"
+  },
+  "Rashi on Kiddushin 50b:12:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50b:12:1"
+    ],
+    "generatedAt": "2026-11-02T03:38:10.199Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הכי</strong> - דקרא בבת אחת כתיב היכי מיחייב כרת אם בא עליהן הרי אין כאן איסור אחות אשה:"
+  },
+  "Rashi on Kiddushin 50b:13:1": {
+    "dependsOn": [
+      "Kiddushin 50b:13",
+      "Rashi on Kiddushin 50b:13:1",
+      "Rashi on Kiddushin 50b:13:2"
+    ],
+    "generatedAt": "2026-11-02T03:41:06.328Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא בזה אחר זה</strong> - שבקידושין הראשונה היא אשתו וקאמר אין קידושין תופסין באחותה ואם בא עליה ענוש כרת:"
+  },
+  "Rashi on Kiddushin 50b:13:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50b:13:1",
+      "Rashi on Kiddushin 50b:13:2"
+    ],
+    "generatedAt": "2026-11-02T03:41:44.351Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומתניתין</strong> - כי היו נמי בבת אחת מהאי קרא נפקי וכדרבה וסברא בעלמא הוא כל שאינו בזה אחר זה אפילו בבת אחת אינו הלכך כיון דבאחות אשה לא תפסי קידושין כי קדשינהו בב\"א נמי לא הוו קידושין:"
+  },
+  "Rashi on Kiddushin 50b:1:1": {
+    "dependsOn": [
+      "Kiddushin 50b:1"
+    ],
+    "generatedAt": "2026-11-02T03:18:22.930Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינה מקודשת</strong> - ולא אמרינן יודע היה שאין קידושיו קידושין וגמר ושלח סבלונות לשם קידושין אלא אמרינן מחמת קידושין הראשונים שלח:"
+  },
+  "Rashi on Kiddushin 50b:1:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50b:1:1"
+    ],
+    "generatedAt": "2026-11-02T03:19:06.294Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן קטן שקידש</strong> - ושלח סבלונות משהגדיל:"
+  },
+  "Rashi on Kiddushin 50b:2:1": {
+    "dependsOn": [
+      "Kiddushin 50b:2"
+    ],
+    "generatedAt": "2026-11-02T03:19:38.738Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וצריכא</strong> - למיתני שתי נשים בפרוטה ולמיתני או אחת בפחות משוה פרוטה וקטן שקידש לאשמועינן בכולהו דסבלונות דבתר הכי לאו לקידושין ניתנו:"
+  },
+  "Rashi on Kiddushin 50b:2:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50b:2:1"
+    ],
+    "generatedAt": "2026-11-02T03:20:19.134Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טעי</strong> - וסבר דקידושין נינהו ולא מסיק אדעתיה דסבלונות לשם קידושין:"
+  },
+  "Rashi on Kiddushin 50b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T03:20:50.199Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חוששין לסבלונות</strong> - מי ששידך באשה ונתרצה וקדם ושלח סבלונות בעדים חוששין שמא קידושין הן ואם נתקדשה לאחר צריכה גט מן הראשון:"
+  },
+  "Rashi on Kiddushin 50b:4:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50b:4:1",
+      "Rashi on Kiddushin 50b:4:2",
+      "Rashi on Kiddushin 50b:4:3",
+      "Rashi on Kiddushin 50b:4:4",
+      "Kiddushin 50b:4",
+      "Tosafot on Kiddushin 50b:4:1",
+      "Steinsaltz on Kiddushin 50b:4"
+    ],
+    "generatedAt": "2026-11-02T03:23:08.702Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50b:4:2"
+    ],
+    "sourceText": "וכן אמר רבה גרס:"
+  },
+  "Rashi on Kiddushin 50b:4:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T03:23:31.282Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומותבינן אשמעתין</strong> - יש לי להשיב על דברי:"
+  },
+  "Rashi on Kiddushin 50b:4:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50b:4:1",
+      "Rashi on Kiddushin 50b:4:2",
+      "Rashi on Kiddushin 50b:4:3",
+      "Kiddushin 50a:19",
+      "Kiddushin 50b:1",
+      "Rashi on Kiddushin 50b:1:1",
+      "Rashi on Kiddushin 50b:1:2"
+    ],
+    "generatedAt": "2026-11-02T03:24:44.546Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50b:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם כדקתני טעמא דטעי כו'</strong> - בקידושי קמאי וסמיך עלייהו אבל האי דלא קידש איכא למיחש להכי:"
+  },
+  "Rashi on Kiddushin 50b:5:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50b:5:2"
+    ],
+    "generatedAt": "2026-11-02T03:26:47.082Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם כדקתני טעמא דטעי כו'</strong> - בקידושי קמאי וסמיך עלייהו אבל האי דלא קידש איכא למיחש להכי:"
+  },
+  "Rashi on Kiddushin 50b:5:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50b:5:1"
+    ],
+    "generatedAt": "2026-11-02T03:27:18.949Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעלמא</strong> - היכא דשלח בלא קידושין:"
+  },
+  "Rashi on Kiddushin 50b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T03:27:53.559Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלא נחית לתורת קידושין כלל</strong> - ולא העלה קידושין על לבו:"
+  },
+  "Rashi on Kiddushin 50b:6:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50b:6:1"
+    ],
+    "generatedAt": "2026-11-02T03:28:28.450Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל הכא דנחית להכי</strong> - ומתוך שעלה על לבו ונזכר שאין קידושיו כלום ושלח סבלונות אימא לשם קידושין:"
+  },
+  "Rashi on Kiddushin 50b:7:1": {
+    "dependsOn": [
+      "Kiddushin 50b:7"
+    ],
+    "generatedAt": "2026-11-02T03:29:04.154Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חיישינן</strong> - דכיון דאורחייהו לקדושי ברישא חיישינן דשדר הני לשם קידושין:"
+  },
+  "Rashi on Kiddushin 50b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T03:31:13.430Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוחזק שטר כתובה בשוק</strong> - שראו שטר כתובה:"
+  },
+  "Rashi on Kiddushin 50b:9:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50b:9:1"
+    ],
+    "generatedAt": "2026-11-02T03:31:58.363Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 50b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהו</strong> - אם נתקדשה לאחר מהו להחזיקה כמקודשת לראשון:"
+  },
+  "Tosafot on Kiddushin 50b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T03:38:47.266Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 50b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא תקח</strong> - פי' לא יהא לך ליקוחין בה תימה אם לא תקח משמע שאין ליקוחים תופסים בה א\"כ אמאי תפסי קידושין בחייבי לאוין כגון אלמנה לכ\"ג וגרושה וחלוצה לכהן הדיוט הא כתיב בהן לא תקח וי\"ל דלא ממשמעות דלא תקח דרשי' אלא משמע ליה דה\"פ דקרא ואשה אל אחותה לא תקח בבת אחת פירוש לכל אחת ואחת יש דין אחות אשה ואסורה ואחות אשה נפקא לן בפרק האומר <span class=\"parenthesized\">(קדושין דף סז:)</span> דאין קידושין תופסין בה דחייבי כריתות היא:"
+  },
+  "Tosafot on Kiddushin 50b:12:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T03:40:17.590Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 50b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הכי היינו דכתיב ונכרתו הנפשות העושות ואי קידושין לא תפסי כרת מי מחייב</strong> - וקשה דאמרינן ביבמות פרק ארבעה אחין <span class=\"parenthesized\">(יבמות דף כח:)</span> גבי שלשה אחים שנים מהם נשואים לב' אחיות דרבי שמעון פוטר בשתיהן מן החליצה ומן הייבום שנאמר אשה אל אחותה לא תקח לצרור בשעה שנעשו צרות זו לזו אלמא משמע אע\"ג דקידושין לא תפסי יש בהם כרת כיון שפוטר אותם מן החליצה ומן הייבום וי\"ל דשאני התם דליכא למיפרך כדפריך הכא כרת מי מחייב דבלא הקידושין נמי איכא כרת דקא פגע באשת אחיו שלא במקום מצוה:"
+  },
+  "Tosafot on Kiddushin 50b:4:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 50b:4:1"
+    ],
+    "generatedAt": "2026-11-02T03:26:08.526Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 50b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חוששין לסבלונות</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> ששידך האשה ונתרצית וקדם קודם הקידושין ושלח סבלונות בעדים חוששין שמא לשם קידושין שלח משמע מתוך פירושו דחיישינן שמא מחמת קידושין הם ולכך נקט בלשונו שידך דאל\"כ לא הוו קידושין דמנא ידעה כדאמר בפ\"ק <span class=\"parenthesized\">(לעיל קידושין דף ו.)</span> גבי נתן לה קידושין ולא פירש וקשה להר\"ם וכי שידך מאי הוי והא בעינן שידבר מענין לענין ובאותו ענין לכך נראה לפרש חוששין כלומר כיון ששלח לה סבלונות חיישינן שמא קידשה כבר וכן משמע בסמוך דקאמר באתרא דמקדשי והדר כתבי כתובה חיישינן והתם על כרחך צריך לומר דחיישינן שמא קידש כבר דלשון חיישינן שמא לשם קידושין שלח לא שייך דהא פשיטא דלא שילח לה הכתובה לשם קידושין:"
+  },
+  "Tosafot on Kiddushin 50b:8:1": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 50b:4:1"
+    ],
+    "generatedAt": "2026-11-02T03:30:52.384Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 50b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג מקדשי והדר מסבלי פשיטא</strong> - דמקודשת כלומר היכא דשלח סבלונות קודם הקידושין דמקודשת דדלמא לשם קידושין שלח וי\"מ פשיטא דמקודשת דאמרי' דקידשה כבר והוי כמו שפירשתי ומשני לא צריכא דרובא מקדשי והדר מסבלי ומיעוטא מסבלי והדר מקדשי מהו דתימא ניחוש למיעוטא פי' ולא תהא מקודשת קמ\"ל דאזלינן בתר רובא ותהא מקודשת וקשה דהיכי קאמר ניחוש למיעוטא והוי להקל מיהו אין זו קושיא דה\"נ אשכחן בכמה דוכתין <span class=\"parenthesized\">(גיטין דף יט:)</span> חיישינן שמא במי מילין כתבו והוי חששא להקל והוי גיטא מכל וכל וכן בריש פ' אחד דיני ממונות <span class=\"parenthesized\">(סנהדרין דף לב.)</span> שטר שכתוב בו זמנו בשבת או בעשרה בתשרי כשר חיישי' שמא אחרוהו וכתבוהו. ור\"ח גרס איפכא לא צריכא דרובא מסבלי והדר מקדשי ומיעוט מקדשי והדר מסבלי מהו דתימא לא ניחוש למיעוטא פירוש שלא תהא מקודשת קמ\"ל דחיישי' למיעוטא ותהא מקודשת והשתא ניחא דחיישינן למיעוטא משום חומר דאיסור אשת איש. והשתא הא דקאמר רב פפא באתרא דמקדשי והדר מסבלי היינו שמיעוטם מקדשי והדר מסבלי ואפ\"ה חיישי' למיעוטא מסבלי והדר מקדשי היינו שכולם מסבלי והדר מקדשי אך ר\"י מצא כתוב גירסא אחרת מסבלי והדר מקדשי פשיטא דלא חיישינן ואינה מקודשת לא צריכא דרובא מסבלי והדר מקדשי ומיעוט מקדשי והדר מסבלי מהו דתימא ניחוש למיעוטא ותהא מקודשת קמ\"ל:"
+  }
+}

@@ -1,0 +1,398 @@
+{
+  "Rashi on Kiddushin 23a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T09:28:16.855Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כסף קבלת רבו</strong> - שמקבל רבו הכסף גרמו לו להשתחרר מאליו ואין אחרים הללו חבין אלא קבלת הרב והרב אין נעשה שלוחו אלא לצורך עצמו ומקנהו מאליו אבל חירות השטר קבלת אחרים גרמה לו וכיון דחוב הוא לו אין חבין לאדם שלא מדעתו:"
+  },
+  "Rashi on Kiddushin 23a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T09:28:39.223Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמענא להו כו'</strong> - במסכת גיטין <span class=\"parenthesized\">(דף יא:)</span>:"
+  },
+  "Rashi on Kiddushin 23a:11:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 23a:11:1"
+    ],
+    "generatedAt": "2026-11-01T09:29:10.998Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנינא</strong> - כמו התנן:"
+  },
+  "Rashi on Kiddushin 23a:12:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 23a:11:1",
+      "Rashi on Kiddushin 23a:11:2",
+      "Rashi on Kiddushin 23a:12:2"
+    ],
+    "generatedAt": "2026-11-01T09:29:39.711Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דיש קנין</strong> - כי יהבי ליה ע\"מ שאין לרבו רשות בו:"
+  },
+  "Rashi on Kiddushin 23a:12:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 23a:12:1",
+      "Kiddushin 23a:12",
+      "Kiddushin 22b:7",
+      "Kiddushin 22b:6",
+      "Rashi on Kiddushin 23a:11:1",
+      "Rashi on Kiddushin 23a:11:2",
+      "Rashi on Kiddushin 23a:9:1",
+      "Rashi on Kiddushin 23a:9:2",
+      "Rashi on Kiddushin 23a:10:1"
+    ],
+    "generatedAt": "2026-11-01T09:31:20.799Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא קי\"ל</strong> - כלומר והא מעשים בכל יום שהעבד מקבל את גיטו ואי רבנן פליגי עלה דמילתא מי שבקינן רבנן ועבדינן כר\"מ:"
+  },
+  "Rashi on Kiddushin 23a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T09:31:39.356Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף ע\"י אחרים</strong> - ואפי' שלא מדעתו דזכות הוא לעבד כו':"
+  },
+  "Rashi on Kiddushin 23a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T09:32:00.631Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי שמעון בן אלעזר היא</strong> - הך סיפא דשטר דלית ליה גיטו וידו באין כאחד:"
+  },
+  "Rashi on Kiddushin 23a:14:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 23a:14:1",
+      "Kiddushin 23a:14",
+      "Rashi on Kiddushin 23a:12:1",
+      "Rashi on Kiddushin 23a:12:2",
+      "Rashi on Kiddushin 23a:13:1"
+    ],
+    "generatedAt": "2026-11-01T09:34:03.976Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושלש מחלוקות בדבר</strong> - רבי מאיר אית ליה בכסף על ידי אחרים ואפי' שלא מדעתו ולא ע\"י עצמו דאין קנין לעבד בלא רבו ובשטר ע\"י עצמו ולא ע\"י אחרים שלא מדעתו דחוב הוא לו וכסף אע\"ג דחוב הוא לו קבלת רבו גרמה לו ור\"ש בן אלעזר אית ליה בין בכסף בין בשטר ע\"י אחרים דקסבר זכות הוא לו ולא ע\"י עצמו דגבי כסף אית ליה אין קנין לעבד בלא רבו וגבי שטר לית ליה גיטו וידו באין כאחד כדקתני אף בשטר כו' וכ\"ש בכסף אלמא בתרוייהו אית ליה ע\"י עצמו לא ורבנן דמתני' אית להו בכסף בין ע\"י אחרים בין ע\"י עצמו דיש קנין אחרים דזכות הוא לו וכן בשטר בין ע\"י אחרים בין ע\"י עצמו ודקיימא לן גיטו וידו באין כאחד כרבנן עבדינן ליה והאי דלא ערבינהו ותנינהו משום דסיפא ר\"ש בן אלעזר היא אבל רישא ה\"ק ליה רבנן לר\"מ אף בכסף ע\"י עצמו דיש קנין וכ\"ש ע\"י אחרים דזכות לו וכ\"ש שטר דזכות ואם באנו לפרש שלש מחלוקות ולומר דרבנן אית להו בכסף בין ע\"י עצמו בין ע\"י אחרים ובשטר ע\"י אחרים ולא ע\"י עצמו ורבי שמעון בן אלעזר סבר כר' מאיר בכסף דע\"י עצמו לא ואין קנין וכרבנן בשטר דאין גיטו וידו באין כאחד א\"כ הא דקי\"ל גיטו וידו באין כאחד יחידאה היא וכר' מאיר עבדינן ליה הילכך ליכא לפרושי אלא כדפרישית דרישא דמילתא אמרוה רבנן וסיפא אתאן לר' שמעון בן אלעזר:"
+  },
+  "Rashi on Kiddushin 23a:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T09:36:13.111Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאינה שלו</strong> - דכתיב <span class=\"parenthesized\">(דברים כ״ד:א׳)</span> ונתן בידה ואיהי לא אקניה לבעל לגופה:"
+  },
+  "Rashi on Kiddushin 23a:15:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 23a:15:1"
+    ],
+    "generatedAt": "2026-11-01T09:36:46.381Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאינה שלו</strong> - של רבו ורבנן גמרי הכי מה אשה מקבלת גיטה אף עבד מקבל גט:"
+  },
+  "Rashi on Kiddushin 23a:2:1": {
+    "dependsOn": [
+      "Kiddushin 23a:2",
+      "Rashi on Kiddushin 23a:2:2",
+      "Rashi on Kiddushin 23a:2:3"
+    ],
+    "generatedAt": "2026-11-01T09:09:36.163Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיכא דאמרי קטן הוה</strong> - ואעפ\"כ הוצרך לכל זאת:"
+  },
+  "Rashi on Kiddushin 23a:2:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 23a:2:1",
+      "Rashi on Kiddushin 23a:2:3",
+      "Rashi on Kiddushin 23a:4:1",
+      "Rashi on Kiddushin 23a:6:1"
+    ],
+    "generatedAt": "2026-11-01T09:10:28.177Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודלא כאבא שאול</strong> - דאמר כל המחזיק בהן זכה אפי' לאחר זמן זכה בהן:"
+  },
+  "Rashi on Kiddushin 23a:2:3": {
+    "dependsOn": [
+      "Kiddushin 23a:2",
+      "Rashi on Kiddushin 23a:2:1",
+      "Rashi on Kiddushin 23a:2:2",
+      "Rashi on Kiddushin 23a:2:3",
+      "Rashi on Kiddushin 23a:3:1",
+      "Rashi on Kiddushin 23a:3:2",
+      "Rashi on Kiddushin 23a:3:3",
+      "Rashi on Kiddushin 23a:3:4",
+      "Rashi on Kiddushin 23a:3:5",
+      "Rashi on Kiddushin 22b:19:1",
+      "Rashi on Kiddushin 22b:19:2"
+    ],
+    "generatedAt": "2026-11-01T09:12:18.182Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותנינא אין חבין לאדם כו'</strong> - אין אדם יכול ליעשות שלוחו שלא מדעתו לדבר שהוא חובה או הפסד והיכי תני מתניתין דנפדה על ידי אחרים שלא מדעתו:"
+  },
+  "Rashi on Kiddushin 23a:3:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 23a:3:1",
+      "Rashi on Kiddushin 23a:3:2"
+    ],
+    "generatedAt": "2026-11-01T09:15:08.203Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ע\"י עצמו לא</strong> - שאם נתן לו כסף לפדות את עצמו אינו פדוי דמה שקנה עבד קנה רבו:"
+  },
+  "Rashi on Kiddushin 23a:3:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 23a:3:1",
+      "Rashi on Kiddushin 23a:3:2",
+      "Rashi on Kiddushin 23a:3:3"
+    ],
+    "generatedAt": "2026-11-01T09:15:41.626Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במאי עסקינן</strong> - האי קנה עצמו ע\"י אחרים:"
+  },
+  "Rashi on Kiddushin 23a:3:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 23a:3:1",
+      "Rashi on Kiddushin 23a:3:2"
+    ],
+    "generatedAt": "2026-11-01T09:16:15.419Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אילימא שלא מדעתו</strong> - של עבד:"
+  },
+  "Rashi on Kiddushin 23a:3:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 23a:3:4",
+      "Rashi on Kiddushin 23a:3:1",
+      "Rashi on Kiddushin 23a:3:2",
+      "Rashi on Kiddushin 23a:3:3",
+      "Rashi on Kiddushin 23a:3:5",
+      "Rashi on Kiddushin 23a:3:6",
+      "Rashi on Kiddushin 23a:2:1",
+      "Rashi on Kiddushin 23a:2:2",
+      "Rashi on Kiddushin 23a:2:3"
+    ],
+    "generatedAt": "2026-11-01T09:18:12.311Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמעינן ליה לרבי מאיר</strong> - בפ\"ק דגיטין חוב הוא לעבד שיוצא כו' שאם היה עבד כהן פוסלו מן התרומה ואי עבד ישראל אוסרו בשפחה דשכיחא ליה פריצא ליה:"
+  },
+  "Rashi on Kiddushin 23a:3:5": {
+    "dependsOn": [
+      "Rashi on Kiddushin 23a:3:5",
+      "Rashi on Kiddushin 23a:3:6"
+    ],
+    "generatedAt": "2026-11-01T09:19:14.579Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23a:3:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנינא</strong> - כמו התנן:"
+  },
+  "Rashi on Kiddushin 23a:3:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T09:19:41.838Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23a:3:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותנינא אין חבין לאדם כו'</strong> - אין אדם יכול ליעשות שלוחו שלא מדעתו לדבר שהוא חובה או הפסד והיכי תני מתניתין דנפדה על ידי אחרים שלא מדעתו:"
+  },
+  "Rashi on Kiddushin 23a:4:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 23a:3:1",
+      "Rashi on Kiddushin 23a:3:2",
+      "Rashi on Kiddushin 23a:4:2"
+    ],
+    "generatedAt": "2026-11-01T09:21:01.195Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא מדעתו</strong> - ואם תאמר פשיטא הא איצטריך לאשמועינן דע\"י עצמו לא דאין קנין לעבד בלא רבו בשום צד:"
+  },
+  "Rashi on Kiddushin 23a:4:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 23a:4:1"
+    ],
+    "generatedAt": "2026-11-01T09:21:40.506Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ע\"י עצמו לא</strong> - שאם נתן לו כסף לפדות את עצמו אינו פדוי דמה שקנה עבד קנה רבו:"
+  },
+  "Rashi on Kiddushin 23a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T09:22:08.050Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי מדעתו</strong> - שאמר לו קבל גטי:"
+  },
+  "Rashi on Kiddushin 23a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T09:25:39.624Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באין כאחד</strong> - ולא אמרינן לא הוציא רבו את הגט מרשותו ואין זו קבלה:"
+  },
+  "Rashi on Kiddushin 23a:6:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 23a:6:1"
+    ],
+    "generatedAt": "2026-11-01T09:26:27.739Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא לא תני</strong> - בברייתא הכי:"
+  },
+  "Rashi on Kiddushin 23a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-01T09:26:49.894Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האי שטרא לחוד כו'</strong> - זה לשון קניה וזה לשון שחרור:"
+  },
+  "Rashi on Kiddushin 23a:9:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 23a:9:2"
+    ],
+    "generatedAt": "2026-11-01T09:27:18.866Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האי כספא לחוד והאי כספא לחוד</strong> - זה ניתן לקניה וזה ניתן לשחרור:"
+  },
+  "Rashi on Kiddushin 23a:9:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 23a:9:1"
+    ],
+    "generatedAt": "2026-11-01T09:27:46.306Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 23a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טיבעא מיהא חד הוא</strong> - ואין ניכר הפרש ביניהם:"
+  },
+  "Tosafot on Kiddushin 23a:14:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 23a:14:1",
+      "Rashi on Kiddushin 23a:14:2"
+    ],
+    "generatedAt": "2026-11-01T09:35:44.405Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 23a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי שמעון בן אלעזר אומר אף שטר ע\"י אחרים ולא ע\"י עצמו ושלש מחלוקות בדבר</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> ר' מאיר אית ליה בכסף על ידי אחרים ואפי' שלא מדעתו ולא על ידי עצמו דאין קנין לעבד בלא רבו ובשטר על ידי עצמו ולא על ידי אחרים שלא מדעתו דחוב הוא לו וכסף אע\"ג דחוב הוא לו קבלת רבו גרמה לו ולר' שמעון בן אלעזר אית ליה בין כסף בין שטר על ידי אחרים דקסבר זכות הוא לו ולא ע\"י עצמו דגבי כסף אין קנין לעבד וגבי שטר לית ליה גיטו וידו באין כאחד כדקתני אף שטר כו' וכל שכן כסף אלמא בתרוייהו אית ליה ע\"י עצמו לא ורבנן דמתני' אית להו בכסף בין ע\"י עצמו בין ע\"י אחרים ע\"י עצמו דיש קנין לעבד ע\"י אחרים דזכות הוא לו וכן שטר בין ע\"י עצמו בין ע\"י אחרים ודקי\"ל דגיטו וידו באין כאחד כרבנן עבידנא ליה והאי דלא ערבינהו ותנינהו משום דסיפא רבי שמעון בן אלעזר היא אבל רישא הכי קאמרי ליה רבנן לר' מאיר אף בכסף ע\"י עצמו דיש קנין לעבד וכ\"ש ע\"י אחרים דזכות הוא לו וכל שכן שטר ואם באנו לפרש שלש מחלוקות ולומר לרבנן אית להו בכסף בין ע\"י אחרים בין על ידי עצמו ובשטר ע\"י אחרים ולא על ידי עצמו ורבי שמעון סבר לה כר\"מ דבכסף ע\"י עצמו לא דאין קנין וכרבנן בשטר דאין גיטו וידו באין כאחד א\"כ הא דקיימא לן דגיטו וידו באים כאחד יחידאה היא וכר' מאיר עבדינן הילכך ליכא לפרושי אלא כדפרישית דרישא דמילתא רבנן אמרוה וסיפא אתאן לר' שמעון בן אלעזר עכ\"ל וא\"ת מנא ליה הך שלש מחלוקות דילמא כולה מילתא דרבנן דמתניתין רשב\"א ובכסף ע\"י עצמו היינו אף ע\"י עצמו ובשטר על ידי אחרים דוקא והא דקיימא לן דגיטו וידו באים כאחד משום דסבירא לן כרבי מאיר ולא כר\"ש בן אלעזר ויש לומר אי גרסינן בברייתא דר' שמעון בן אלעזר אף בשטר ע\"י אחרים ולא ע\"י עצמו על כרחך יש שלש מחלוקות בדבר דע\"כ לאו היינו רבנן דמתני' דהא אמרי בהדיא בכסף על ידי עצמו ולספרים דלא גרסינן אף צ\"ל כיון דאשכחן דרבנן פליגי עליה דרשב\"א כדאיתא בסוף פ\"ק דגיטין <span class=\"parenthesized\">(דף יב:)</span> דאמרי אי בעי זריק ליה גיטא ופסיל ליה אלמא אית להו דגיטו וידו באין כאחד וכיון דהכי הוא לא קרי ליחיד חכמים במתניתין כיון דרבנן פליגי עליה ולכך צריך לומר שיש שלש מחלוקות בדבר:"
+  },
+  "Tosafot on Kiddushin 23a:2:1": {
+    "dependsOn": [
+      "Kiddushin 23a:2",
+      "Rashi on Kiddushin 23a:2:1",
+      "Rashi on Kiddushin 23a:2:2",
+      "Chokhmat Shlomo on Kiddushin 23a:1"
+    ],
+    "generatedAt": "2026-11-01T09:14:23.959Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 23a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיכא דאמרי קטן היה</strong> - ואעפ\"כ הוצרך לזכות בו כדי שלא יקנה עצמו מן ההפקר אחר מיתת האדון ודלא כאבא שאול דלאבא שאול היה יכול לזכות בו ואפי' לאחר מיתה כפ\"ה וקשה לר\"ת מנא ליה דלא כאבא שאול דילמא לעולם אימא לך דכאבא שאול סבירא ליה ומה שהחזיק בו מחיים לפי שהיה ירא שמא יקדמנו אחר ויזכה בו ועוד ה\"ל למימר וכדרבנן ועוד קשה דבפרק השולח <span class=\"parenthesized\">(גיטין דף לט.)</span> פסיק רבי יהושע בן לוי הלכה כאבא שאול ואע\"ג דרבי יוחנן סבר דאין הלכה כאבא שאול מ\"מ קי\"ל דבכל מקום הלכה כריב\"ל לגבי דרבי יוחנן כדמוכח בריש פ\"ד דמגילה <span class=\"parenthesized\">(דף כז.)</span> דמשמע שדברי רבי יהושע בן לוי הם עיקר . מדברי ר' יוחנן גבי בית הכנסת מותר לעשותו בית המדרש וא\"כ היכי עבוד הכא דלא כהילכתא ונראה לר\"ת דגרס הכא וכאבא שאול כלומר אפילו לאבא שאול דאמר כל המחזיק בהן זכה בהן הוצרך לעשות כן שלא יקדמנו אחר ועוד מפרש ר\"ת בענין אחר איכא דאמרי קטן הוה שאם היה גדול לא היה מועיל בו זה פירש למיתה וזה פירש לחיים ואע\"פ שעבדות אחרים עליו קודם הוא לזכות בעצמו כיון שיש לו יד אבל קטן שאין לו יד כל הקודם זכה בהן כאבא שאול ולא אמר לו שלוף מסנאי מחיים אלא לאחר מיתת יהודה הנדואה עשה כך והיינו כאבא שאול דאמר קטן אין לו יד לזכות בעצמו ומשום הכי זכה בו מר זוטרא אפילו לאחר מיתה אבל לרבנן בין גדול ובין קטן ואפילו עבדות אחרים עליו קנה עצמו בן חורין ור\"י מפרש דהא דקאמר וכאבא שאול דאמילתא קמא נמי קאי ואפי' ללישנא קמא דגדול הוה לא היתה חזקה מועלת כלום אלא דוקא לאבא שאול דלרבנן דאמרי בין גדולים ובין קטנים קנו עצמן בני חורין לא היה מר זוטרא יכול לזכות בו דטעמייהו דרבנן מפרש בפרק השולח <span class=\"parenthesized\">(גיטין דף לט:)</span> דגמר לה לה מאשה דמה אשה מיתת בעל מתירה בלא גט אף עבד משתלח בלא גט והוי השתא מיתת הבעל כגט ואם היה נותן לו גט מי היה אחר יכול לזכות בו אבל לאבא שאול ניחא דהא יליף מה אשה איסורה מפקעת במיתת הבעל ולא ממונא אף עבד כו' וכיון שהיה משעבד עצמו למר זוטרא לא היה חפץ לזכות בעצמו והוי כמו קטן לאבא שאול:"
+  },
+  "Tosafot on Kiddushin 23a:5:1": {
+    "dependsOn": [
+      "Kiddushin 23a:5",
+      "Tosafot on Kiddushin 23a:2:1",
+      "Tosafot on Kiddushin 23a:5:1",
+      "Tosafot on Kiddushin 23a:14:1",
+      "Tosafot on Kiddushin 22b:8:1",
+      "Tosafot on Kiddushin 2a:1:1",
+      "Tosafot on Kiddushin 2a:2:1"
+    ],
+    "generatedAt": "2026-11-01T09:25:17.322Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 23a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[והא קמ\"ל ע\"י אחרים אין כו'</strong> - וא\"ת מעיקרא נמי ידע תלמודא דהכי הוא חידוש דמתניתין כדאמר בכסף ע\"י אחרים אין ע\"י עצמו כו' ויש לומר דהוי סבר מעיקרא דהוי חידוש דמתני' מתרוייהו ממה שהוא ע\"י אחרים ומן דיוקא דע\"י עצמו לא ומסיק דלא איצטריך מתני' אלא מן הדיוק. ת\"י]:"
+  }
+}
