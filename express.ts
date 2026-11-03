@@ -31,6 +31,7 @@ import {jsonSize} from "./util/json_size";
 import {writeJson} from "./util/json_files";
 import {getWeekdayReading} from "./weekday_parshiot";
 import {registerCalendarRoutes} from "./calendars";
+import {registerPrintRoutes} from "./print/server/routes";
 import {formatListEnglish, formatListHebrew} from "./util/formatting";
 import {openReviewDecisionPr} from "./rsi_review_pr";
 import {getTranslationProgress} from "./precomputed/translation_progress_data";
@@ -261,6 +262,7 @@ app.get("/:title/notes", (req, res) => {
 app.get("/browse", (req, res) => res.render("browse.html"));
 app.get("/browse/*", (req, res) => res.render("browse.html"));
 registerCalendarRoutes(app);
+registerPrintRoutes(app, res => res.render("print.html"));
 for (const alias of ["/mishna-yomi", "/mishnah-yomi", "/mishnah-yomit"]) {
   app.get(alias, (req, res) => res.redirectWithQueryParameters("/mishna-yomit"));
 }

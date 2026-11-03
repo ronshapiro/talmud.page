@@ -1,0 +1,58 @@
+{
+  "id": "siddur-hebrew-only-pocket",
+  "name": "Hebrew-only pocket siddur",
+  "kind": "siddur",
+  "schemaVersion": 1,
+  "createdAt": 1790812800000,
+  "updatedAt": 1790812800000,
+  "page": {
+    "preset": "pocket",
+    "unit": "in",
+    "width": 4.25,
+    "height": 6.875,
+    "margins": {
+      "top": 0.5,
+      "bottom": 0.55,
+      "inner": 0.55,
+      "outer": 0.45
+    },
+    "binding": "rtl"
+  },
+  "edition": "ashkenaz",
+  "sections": [
+    "SiddurAshkenaz/Birchot Kriat Shema",
+    "Siddur Ashkenaz, Shabbat, Kabbalat Shabbat, Lekha Dodi"
+  ],
+  "typography": {
+    "hebrewFont": "frank-ruehl-clm",
+    "englishFont": "eb-garamond",
+    "hebrewSizePt": 13,
+    "englishSizePt": 10.5,
+    "lineHeight": 1.55,
+    "englishLineHeight": 1.42,
+    "notesLineHeight": 1.32,
+    "titleLineHeight": 1.5,
+    "instructionColor": "#8a6d3b",
+    "accentColor": "#7a1f1f"
+  },
+  "defaults": {
+    "translation": "hebrew-only",
+    "lineMode": "prose",
+    "align": "justify"
+  },
+  "sectionOverrides": {
+    "Siddur Ashkenaz, Shabbat, Kabbalat Shabbat, Lekha Dodi": {
+      "hebrewBreaks": "sentence",
+      "align": "center"
+    }
+  },
+  "paragraphOverrides": {},
+  "segmentOverrides": {},
+  "commentary": {},
+  "showCommentary": [
+    "Koren Sacks Commentary"
+  ],
+  "sectionPageBreaks": true,
+  "spread": "single",
+  "facingHebrewSide": "left"
+}

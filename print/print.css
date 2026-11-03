@@ -1,0 +1,1183 @@
+/* Print layouts. Dimensions that the pagination code needs to know (font sizes, gaps) are set as
+   CSS variables on .print-root from JS; everything else is static here. Anything that changes the
+   height of text MUST be applied identically to the measurement root (see layout/measure.ts),
+   which carries the same classes and variables. */
+
+@font-face { font-family: "Frank Ruehl CLM"; src: url("../fonts/print/FrankRuehlCLM-Medium.ttf"); font-weight: 400; }
+@font-face { font-family: "Frank Ruehl CLM"; src: url("../fonts/print/FrankRuehlCLM-Bold.ttf"); font-weight: 700; }
+@font-face { font-family: "Keter YG"; src: url("../fonts/print/KeterYG-Medium.ttf"); font-weight: 400; }
+@font-face { font-family: "Keter YG"; src: url("../fonts/print/KeterYG-Bold.ttf"); font-weight: 700; }
+@font-face { font-family: "Frank Ruhl Libre"; src: url("../fonts/print/FrankRuhlLibre.ttf"); font-weight: 300 900; }
+@font-face { font-family: "Noto Serif Hebrew"; src: url("../fonts/print/NotoSerifHebrew.ttf"); font-weight: 100 900; }
+@font-face { font-family: "Noto Sans Hebrew"; src: url("../fonts/print/NotoSansHebrew.ttf"); font-weight: 100 900; }
+@font-face { font-family: "Noto Rashi Hebrew"; src: url("../fonts/print/NotoRashiHebrew.ttf"); font-weight: 100 900; }
+@font-face { font-family: "David Libre"; src: url("../fonts/print/DavidLibre-Regular.ttf"); font-weight: 400; }
+@font-face { font-family: "David Libre"; src: url("../fonts/print/DavidLibre-Bold.ttf"); font-weight: 700; }
+@font-face { font-family: "Taamey David CLM"; src: url("../fonts/TaameyDavidCLM-Medium.ttf"); font-weight: 400; }
+@font-face { font-family: "Taamey David CLM"; src: url("../fonts/TaameyDavidCLM-Bold.ttf"); font-weight: 700; }
+@font-face { font-family: "Ezra SIL"; src: url("../fonts/print/EzraSIL.ttf"); }
+@font-face { font-family: "Cardo"; src: url("../fonts/print/Cardo-Regular.ttf"); font-weight: 400; }
+@font-face { font-family: "Cardo"; src: url("../fonts/print/Cardo-Bold.ttf"); font-weight: 700; }
+@font-face { font-family: "Cardo"; src: url("../fonts/print/Cardo-Italic.ttf"); font-style: italic; }
+@font-face { font-family: "Shofar"; src: url("../fonts/print/Shofar-Regular.ttf"); font-weight: 400; }
+@font-face { font-family: "Shofar"; src: url("../fonts/print/Shofar-Bold.ttf"); font-weight: 700; }
+@font-face { font-family: "Hadasim CLM"; src: url("../fonts/print/HadasimCLM-Regular.ttf"); font-weight: 400; }
+@font-face { font-family: "Hadasim CLM"; src: url("../fonts/print/HadasimCLM-Bold.ttf"); font-weight: 700; }
+@font-face { font-family: "Miriam Libre"; src: url("../fonts/print/MiriamLibre.ttf"); font-weight: 400 700; }
+@font-face { font-family: "Bellefair"; src: url("../fonts/print/Bellefair-Regular.ttf"); }
+@font-face { font-family: "Alef"; src: url("../fonts/print/Alef-Regular.ttf"); font-weight: 400; }
+@font-face { font-family: "Alef"; src: url("../fonts/print/Alef-Bold.ttf"); font-weight: 700; }
+@font-face { font-family: "Assistant"; src: url("../fonts/print/Assistant.ttf"); font-weight: 200 800; }
+@font-face { font-family: "Heebo"; src: url("../fonts/print/Heebo.ttf"); font-weight: 100 900; }
+@font-face { font-family: "Secular One"; src: url("../fonts/print/SecularOne-Regular.ttf"); }
+@font-face { font-family: "Suez One"; src: url("../fonts/print/SuezOne-Regular.ttf"); }
+@font-face { font-family: "Crimson Pro"; src: url("../fonts/print/CrimsonPro.ttf"); font-weight: 200 900; }
+@font-face { font-family: "Crimson Pro"; src: url("../fonts/print/CrimsonPro-Italic.ttf"); font-weight: 200 900; font-style: italic; }
+@font-face { font-family: "Libre Baskerville"; src: url("../fonts/print/LibreBaskerville.ttf"); font-weight: 400 700; }
+@font-face { font-family: "Libre Baskerville"; src: url("../fonts/print/LibreBaskerville-Italic.ttf"); font-weight: 400 700; font-style: italic; }
+@font-face { font-family: "Libre Caslon Text"; src: url("../fonts/print/LibreCaslonText.ttf"); font-weight: 400 700; }
+@font-face { font-family: "Libre Caslon Text"; src: url("../fonts/print/LibreCaslonText-Italic.ttf"); font-weight: 400 700; font-style: italic; }
+@font-face { font-family: "Lora"; src: url("../fonts/print/Lora.ttf"); font-weight: 400 700; }
+@font-face { font-family: "Lora"; src: url("../fonts/print/Lora-Italic.ttf"); font-weight: 400 700; font-style: italic; }
+@font-face { font-family: "Source Serif 4"; src: url("../fonts/print/SourceSerif4.ttf"); font-weight: 200 900; }
+@font-face { font-family: "Source Serif 4"; src: url("../fonts/print/SourceSerif4-Italic.ttf"); font-weight: 200 900; font-style: italic; }
+@font-face { font-family: "Spectral"; src: url("../fonts/print/Spectral-Regular.ttf"); font-weight: 400; }
+@font-face { font-family: "Spectral"; src: url("../fonts/print/Spectral-SemiBold.ttf"); font-weight: 600 700; }
+@font-face { font-family: "Spectral"; src: url("../fonts/print/Spectral-Italic.ttf"); font-style: italic; }
+@font-face { font-family: "EB Garamond"; src: url("../fonts/print/EBGaramond.ttf"); font-weight: 400 800; font-style: normal; }
+@font-face { font-family: "EB Garamond"; src: url("../fonts/print/EBGaramond-Italic.ttf"); font-weight: 400 800; font-style: italic; }
+
+/* ------------------------------------------------------------------------------------------ */
+/* App chrome (never printed) */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body.print-app {
+  background: #e9e6e0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #222;
+}
+
+.print-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+  padding: 8px 14px;
+  background: #fbfaf7;
+  border-bottom: 1px solid #d6d1c7;
+  font-size: 13px;
+}
+
+.print-toolbar .title {
+  font-weight: 600;
+  margin-inline-end: 8px;
+}
+
+.print-toolbar .spacer {
+  flex: 1;
+}
+
+.print-toolbar select, .print-toolbar input, .print-toolbar button,
+.print-panel select, .print-panel input, .print-panel button, .print-panel textarea {
+  font: inherit;
+}
+
+.print-toolbar button, .print-panel button {
+  border: 1px solid #c8c1b4;
+  background: white;
+  border-radius: 4px;
+  padding: 3px 9px;
+  cursor: pointer;
+}
+
+.print-toolbar button.primary, .print-panel button.primary {
+  background: #3d3a35;
+  color: white;
+  border-color: #3d3a35;
+}
+
+.print-toolbar button:disabled, .print-panel button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.print-toolbar button.active, .print-panel button.active {
+  background: #efe7d6;
+  border-color: #a8916a;
+}
+
+.print-workspace {
+  display: flex;
+  align-items: flex-start;
+}
+
+.print-pages {
+  flex: 1;
+  min-width: 0;
+  padding: 24px;
+  overflow-x: auto;
+}
+
+.print-panel {
+  position: sticky;
+  top: 45px;
+  width: 340px;
+  flex-shrink: 0;
+  max-height: calc(100vh - 45px);
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 12px 14px 40px;
+  background: #fbfaf7;
+  border-inline-start: 1px solid #d6d1c7;
+  font-size: 13px;
+}
+
+.print-panel h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #6b6458;
+  margin: 18px 0 6px;
+}
+
+.print-panel .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 5px 0;
+}
+
+.print-panel .row > span:first-child {
+  color: #444;
+}
+
+.print-panel input[type=number] {
+  width: 64px;
+}
+
+.print-panel .hint {
+  color: #7a7469;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.print-status {
+  padding: 40px;
+  text-align: center;
+  color: #6b6458;
+}
+
+.print-error {
+  color: #a12;
+  white-space: pre-wrap;
+}
+
+.spread {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  margin: 0 auto 28px;
+  width: max-content;
+}
+
+.spread.rtl {
+  flex-direction: row-reverse;
+}
+
+.spread .page {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18), 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.single-pages .page {
+  margin: 0 auto 28px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18), 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.page-wrapper {
+  position: relative;
+}
+
+.page-label {
+  position: absolute;
+  bottom: -18px;
+  width: 100%;
+  text-align: center;
+  font-size: 11px;
+  color: #8a8478;
+}
+
+.zoom-container {
+  transform-origin: top center;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* Pages */
+
+.print-root {
+  color: #1a1a1a;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-kerning: normal;
+}
+
+.page {
+  position: relative;
+  background: white;
+  overflow: hidden;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.page-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.blk {
+  margin: 0;
+  padding: 0;
+}
+
+.blk.cont {
+  text-indent: 0 !important;
+}
+
+/* The last line of a paragraph that continues in the next column stays justified. */
+.blk .last-line {
+  display: block;
+  text-indent: 0;
+  text-align-last: justify;
+}
+
+.region {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.region.rtl {
+  flex-direction: row-reverse;
+}
+
+.region .col {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.region.rules .col + .col::before {
+  content: "";
+  position: absolute;
+  top: 0.2em;
+  bottom: 0.2em;
+  inset-inline-start: calc(var(--col-gap) / -2);
+  border-left: 0.5pt solid #b9b2a5;
+}
+
+.region.rtl.rules .col + .col::before {
+  inset-inline-start: auto;
+  inset-inline-end: calc(var(--col-gap) / -2);
+}
+
+@media print {
+  body.print-app {
+    background: white;
+  }
+
+  .print-toolbar, .print-panel, .page-label, .no-print {
+    display: none !important;
+  }
+
+  .print-pages {
+    padding: 0;
+    overflow: visible;
+  }
+
+  .spread, .single-pages {
+    display: block;
+    width: auto;
+    margin: 0;
+  }
+
+  .spread .page, .single-pages .page {
+    box-shadow: none;
+    margin: 0;
+  }
+
+  .page-wrapper {
+    break-after: page;
+  }
+
+  .zoom-container {
+    transform: none !important;
+  }
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* Mikraot Gedolot */
+
+.mikraot {
+  --main-font: "Keter YG", serif;
+  --commentary-font: "Noto Rashi Hebrew", serif;
+  --notes-font: "EB Garamond", serif;
+  --main-size: 15pt;
+  --tier1-size: 9.6pt;
+  --tier2-size: 8.6pt;
+  --targum-size: 10pt;
+  --notes-size: 7.6pt;
+  --lh: 1.45;
+  --col-gap: 14pt;
+}
+
+.mikraot .mg-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: var(--notes-font);
+  font-size: 8pt;
+  letter-spacing: 0.08em;
+  color: #6f685c;
+  border-bottom: 0.5pt solid #c9c2b5;
+  padding-bottom: 3pt;
+}
+
+.mikraot .mg-head .he {
+  font-family: var(--main-font);
+  font-size: 10.5pt;
+  letter-spacing: 0;
+  color: #3b352c;
+}
+
+.mikraot .mg-head .en {
+  text-transform: uppercase;
+}
+
+.mikraot .mg-foot {
+  font-family: var(--notes-font);
+  font-size: 8pt;
+  color: #6f685c;
+  text-align: center;
+}
+
+.mikraot .mg-main-area {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: var(--col-gap);
+  flex-shrink: 0;
+}
+
+.mikraot .mg-main {
+  font-family: var(--main-font);
+  font-size: var(--main-size);
+  line-height: var(--main-lh, 1.62);
+  text-align: justify;
+  direction: rtl;
+}
+
+.mikraot .mg-targum {
+  font-family: var(--main-font);
+  font-size: var(--targum-size);
+  line-height: var(--targum-lh, 1.5);
+  text-align: justify;
+  direction: rtl;
+  color: #2d2a25;
+}
+
+.mikraot .mg-para + .mg-para {
+  margin-top: 0.35em;
+}
+
+.mikraot .mg-chapter {
+  text-align: center;
+  font-size: 0.82em;
+  letter-spacing: 0.1em;
+  color: #7a1f1f;
+  margin: 0;
+}
+
+.mikraot .mg-vnum {
+  font-size: 0.56em;
+  color: #7a1f1f;
+  font-weight: 700;
+  margin-inline-end: 0.2em;
+  vertical-align: 0.35em;
+  line-height: 0;
+}
+
+.mikraot .mg-setuma {
+  display: inline-block;
+  width: 2.5em;
+}
+
+.mikraot .mg-comment, .mikraot .mg-chead {
+  font-family: var(--commentary-font);
+  line-height: var(--lh);
+  text-align: justify;
+  direction: rtl;
+}
+
+.mikraot .tier-1 {
+  font-size: var(--tier1-size);
+}
+
+.mikraot .tier-2 {
+  font-size: var(--tier2-size);
+}
+
+.mikraot .mg-comment b, .mikraot .mg-comment strong {
+  font-family: var(--main-font);
+  font-weight: 700;
+}
+
+.mikraot .mg-chead {
+  text-align: center;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 1.12em;
+  letter-spacing: 0.04em;
+  color: #3b352c;
+  line-height: var(--heading-lh, 1.6);
+}
+
+.mikraot .mg-chead.tier-1 { font-size: calc(var(--tier1-size) * 1.15); }
+.mikraot .mg-chead.tier-2 { font-size: calc(var(--tier2-size) * 1.15); }
+
+.mikraot .mg-chead .cont {
+  font-weight: 400;
+  font-size: 0.75em;
+  color: #8a8478;
+}
+
+.mikraot .mg-vlabel {
+  font-family: var(--main-font);
+  font-weight: 700;
+  color: #7a1f1f;
+  font-size: 0.92em;
+}
+
+.mikraot .mg-notes-rule {
+  border-top: 0.5pt solid #c9c2b5;
+  width: 28%;
+}
+
+.mikraot .mg-note, .mikraot .mg-note-head {
+  font-family: var(--notes-font);
+  font-size: var(--notes-size);
+  line-height: var(--notes-lh, 1.3);
+  text-align: justify;
+  hyphens: auto;
+  direction: ltr;
+  color: #2b2925;
+}
+
+.mikraot .mg-note-head {
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: #6f685c;
+  font-size: calc(var(--notes-size) * 1.05);
+}
+
+.mikraot .mg-note .ref {
+  font-weight: 600;
+  color: #7a1f1f;
+  margin-inline-end: 0.25em;
+}
+
+.mikraot .mg-note .vnum {
+  font-weight: 600;
+  color: #7a1f1f;
+  font-size: 0.85em;
+  vertical-align: 0.15em;
+  margin-inline-end: 0.15em;
+}
+
+.mikraot .mg-note .label {
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+  color: #6f685c;
+  margin-inline-end: 0.3em;
+}
+
+.mikraot .mg-note [dir=rtl], .mikraot .mg-note span:lang(he) {
+  font-family: var(--main-font);
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* Home */
+
+.print-home {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.5;
+}
+
+.print-home a {
+  color: #7a1f1f;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* Siddur */
+
+.siddur {
+  --he-font: "Frank Ruehl CLM", serif;
+  --en-font: "EB Garamond", serif;
+  --he-size: 14pt;
+  --en-size: 10.5pt;
+  --lh: 1.55;
+  --instruction-color: #8a6d3b;
+  --accent: #7a1f1f;
+}
+
+.siddur .sd-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: #8a8275;
+}
+
+.siddur .sd-head .he {
+  font-family: var(--he-font);
+  font-size: 9.5pt;
+  order: 2;
+}
+
+.siddur .sd-head .en {
+  font-family: var(--en-font);
+  font-size: 7.5pt;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  order: 1;
+}
+
+.siddur .sd-foot {
+  text-align: center;
+  font-family: var(--en-font);
+  font-size: 8.5pt;
+  color: #8a8275;
+}
+
+.siddur .sd-he {
+  font-family: var(--he-font);
+  font-size: var(--he-size);
+  line-height: var(--lh);
+  direction: rtl;
+}
+
+.siddur .sd-en {
+  font-family: var(--en-font);
+  font-size: var(--en-size);
+  line-height: var(--en-lh, 1.42);
+  direction: ltr;
+  hyphens: auto;
+  color: #26231f;
+}
+
+.siddur .sd-en.stacked {
+  color: #4a453d;
+  font-size: calc(var(--en-size) * 0.95);
+}
+
+.siddur .align-start { text-align: start; }
+.siddur .align-end { text-align: end; }
+.siddur .align-center { text-align: center; }
+.siddur .align-justify { text-align: justify; }
+
+.siddur .sd-he.align-center.lines, .siddur .sd-he.align-start.lines {
+  text-align-last: auto;
+}
+
+/* Instructions (rubrics) */
+.siddur .sd-he small {
+  font-family: "Noto Sans Hebrew", sans-serif;
+  font-size: 0.62em;
+  font-weight: 500;
+  color: var(--instruction-color);
+}
+
+.siddur .sd-en i {
+  font-style: italic;
+  color: var(--instruction-color);
+  font-size: 0.92em;
+}
+
+.siddur .sd-he b, .siddur .sd-he strong {
+  font-weight: 700;
+}
+
+.siddur .really-big-text {
+  font-size: 1.3em;
+}
+
+.siddur .sd-title {
+  text-align: center;
+  line-height: var(--sd-title-lh, 1.5);
+}
+
+.siddur .sd-title .he {
+  font-family: var(--he-font);
+  font-size: calc(var(--he-size) * 1.45);
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+}
+
+.siddur .sd-title .en {
+  font-family: var(--en-font);
+  font-size: calc(var(--en-size) * 0.95);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #8a8275;
+}
+
+.siddur .sd-fn {
+  font-family: var(--en-font);
+  font-size: 0.5em;
+  color: var(--accent);
+  vertical-align: 0.9em;
+  line-height: 0;
+  margin-inline-start: 0.1em;
+}
+
+.siddur .sd-note {
+  font-family: var(--en-font);
+  font-size: calc(var(--en-size) * 0.82);
+  line-height: var(--sd-notes-lh, 1.32);
+  text-align: justify;
+  hyphens: auto;
+  color: #3a362f;
+  direction: ltr;
+}
+
+.siddur .sd-note sup {
+  color: var(--accent);
+  font-weight: 600;
+  margin-inline-end: 0.2em;
+}
+
+.siddur .sd-note .sd-note-type {
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  margin-inline-end: 0.3em;
+}
+
+.siddur .sd-notes-rule {
+  border-top: 0.5pt solid #c9c2b5;
+  width: 30%;
+}
+
+.siddur .sd-row {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+
+.siddur .sd-row.pair {
+  flex-direction: row-reverse;
+}
+
+/* Editor affordances (never printed) */
+.siddur.editing .sd-piece {
+  cursor: pointer;
+}
+
+.siddur.editing .sd-piece:hover {
+  background: rgba(214, 192, 140, 0.25);
+}
+
+@media print {
+  .siddur .sd-piece.selected, .siddur .sd-piece:hover {
+    background: none !important;
+  }
+}
+
+.word-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px 2px;
+  padding: 6px;
+  background: white;
+  border: 1px solid #ddd6c8;
+  border-radius: 4px;
+  max-height: 220px;
+  overflow-y: auto;
+  line-height: 1.2;
+}
+
+.word-chips.rtl {
+  direction: rtl;
+  font-family: "Frank Ruehl CLM", serif;
+  font-size: 16px;
+}
+
+.word-chips .chip {
+  padding: 1px 3px;
+  border-radius: 3px;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid transparent;
+}
+
+.word-chips .chip.selected {
+  background: #f1dfb5;
+  border-color: #c9a85e;
+}
+
+.word-chips .chip.styled {
+  text-decoration: underline dotted #a8916a;
+}
+
+.word-chips .marker {
+  color: #7a1f1f;
+  font-weight: 700;
+  padding: 0 1px;
+  font-family: sans-serif;
+  font-size: 12px;
+  align-self: center;
+}
+
+.word-chips .marker.split {
+  color: #1f5a7a;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 6px 0;
+}
+
+.scope-tabs {
+  display: flex;
+  gap: 2px;
+  margin: 6px 0;
+}
+
+.scope-tabs button {
+  flex: 1;
+  font-size: 11px !important;
+  padding: 3px 2px !important;
+}
+
+.print-panel textarea {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 70px;
+}
+
+.section-list {
+  max-height: 260px;
+  overflow-y: auto;
+  border: 1px solid #ddd6c8;
+  border-radius: 4px;
+  background: white;
+  padding: 4px 6px;
+}
+
+.section-list .group {
+  font-weight: 600;
+  margin-top: 6px;
+  color: #6b6458;
+}
+
+
+
+.siddur .sd-title-page {
+  margin: auto;
+  text-align: center;
+}
+
+.siddur .sd-title-page .he {
+  font-family: var(--he-font);
+  font-size: calc(var(--he-size) * 2);
+  color: var(--accent);
+  margin-bottom: 0.6em;
+}
+
+.siddur .sd-title-page .en {
+  font-family: var(--en-font);
+  font-size: calc(var(--en-size) * 1.2);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #8a8275;
+}
+
+/* Facing pages: the English title stands alone on its page. */
+.siddur .sd-title .en:only-child {
+  font-size: calc(var(--en-size) * 1.6);
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  text-transform: none;
+  font-variant: small-caps;
+}
+
+.flip-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  font-size: 13px;
+}
+
+@media screen {
+  .flip-hidden {
+    display: none !important;
+  }
+}
+
+.print-panel select {
+  max-width: 190px;
+}
+
+/* Koren marks rubrics as <i class="instruction"> in both languages. */
+.siddur .sd-he i.instruction {
+  font-family: "Noto Sans Hebrew", sans-serif;
+  font-style: normal;
+  font-size: 0.62em;
+  font-weight: 500;
+  color: var(--instruction-color);
+}
+
+.siddur .sd-en i.instruction {
+  font-size: 0.88em;
+}
+
+.siddur .sd-en small {
+  font-size: 0.78em;
+  letter-spacing: 0.04em;
+}
+
+@media print {
+  /* One printed page per spread. */
+  .print-spreads .spread {
+    display: flex !important;
+    break-after: page;
+    margin: 0;
+  }
+
+  .print-spreads .page-wrapper {
+    break-after: auto;
+  }
+}
+
+@media print {
+  /* No page break after the last page (it would add a blank page). */
+  .single-pages .page-wrapper:last-child,
+  .spread:last-child .page-wrapper:last-child,
+  .print-spreads .spread:last-child {
+    break-after: auto;
+  }
+}
+
+/* Sense lines (lines mode): each line is a block with its own hanging indent. */
+.siddur .sd-line {
+  display: block;
+  padding-inline-start: var(--hang, 0);
+  text-indent: calc(-1 * var(--hang, 0));
+}
+
+.siddur .blk.cont-mid .sd-line:first-of-type {
+  text-indent: 0;
+}
+
+.siddur .sd-en.solo {
+  line-height: var(--en-solo-lh, 1.42);
+}
+
+/* Mikraot: English set with commentary (stacked / side by side) and with the verses. */
+.mikraot .mg-comment-en {
+  font-family: var(--english-font);
+  font-size: var(--english-size);
+  line-height: var(--comment-en-lh, 1.32);
+  text-align: justify;
+  hyphens: auto;
+  direction: ltr;
+  color: #34302a;
+}
+
+.mikraot .mg-main-en {
+  font-family: var(--english-font);
+  font-size: calc(var(--english-size) * 1.25);
+  line-height: var(--main-en-lh, 1.45);
+  text-align: justify;
+  hyphens: auto;
+  direction: ltr;
+  color: #2b2925;
+}
+
+.mikraot .mg-main-en .mg-para + .mg-para {
+  margin-top: 0.35em;
+}
+
+.mikraot .mg-envnum {
+  font-size: 0.7em;
+  font-weight: 600;
+  color: #7a1f1f;
+  vertical-align: 0.3em;
+  line-height: 0;
+  margin-inline-end: 0.2em;
+}
+
+.mikraot .mg-chapter-en {
+  text-align: center;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+  color: #7a1f1f;
+  margin: 0;
+}
+
+.mikraot .mg-chapter .mg-chapter-label {
+  letter-spacing: 0.1em;
+}
+
+.mikraot .mg-chapter {
+  font-size: 1em;
+  color: inherit;
+}
+
+.mikraot .mg-main-area.below {
+  flex-direction: column;
+  gap: 0;
+}
+
+.mikraot .pair-row {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+/* Mikraot settings: commentary list */
+.commentator-row {
+  border: 1px solid #e3ddd0;
+  border-radius: 4px;
+  background: white;
+  padding: 4px 6px;
+  margin: 4px 0;
+}
+
+.commentator-head {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.commentator-head .name {
+  flex: 1;
+}
+
+.commentator-controls {
+  display: flex;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.commentator-controls select {
+  flex: 1;
+  min-width: 0;
+}
+
+.commentator-details {
+  margin-top: 4px;
+  padding-top: 4px;
+  border-top: 1px dashed #e3ddd0;
+}
+
+.print-panel button.link {
+  border: none;
+  background: none;
+  padding: 2px 4px;
+  text-align: start;
+  cursor: pointer;
+}
+
+.add-commentary input {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 6px;
+}
+
+.add-list {
+  display: flex;
+  flex-direction: column;
+  max-height: 260px;
+  overflow-y: auto;
+  border: 1px solid #e3ddd0;
+  border-top: none;
+  background: white;
+}
+
+.add-list button.link:hover {
+  background: #f4efe4;
+}
+
+.label-style {
+  margin: 4px 0;
+}
+
+.label-style summary {
+  cursor: pointer;
+  color: #444;
+}
+
+.mikraot .mg-envlabel {
+  font-weight: 600;
+  color: #7a1f1f;
+  font-size: 0.9em;
+}
+
+/* Mikraot: line-limited comments and the addenda */
+.mikraot .mg-addendum-ref {
+  font-family: var(--main-font);
+  font-size: 0.85em;
+  color: #7a1f1f;
+  white-space: nowrap;
+}
+
+.mikraot .mg-addenda-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4pt 0 6pt;
+  border-bottom: 0.5pt solid #c9c2b5;
+}
+
+.mikraot .mg-addenda-title .he {
+  font-family: var(--main-font);
+  font-size: 18pt;
+  color: #7a1f1f;
+}
+
+.mikraot .mg-addenda-title .en {
+  font-family: var(--notes-font);
+  font-size: 8pt;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #6f685c;
+}
+
+.mikraot .mg-addendum-head {
+  text-align: start;
+}
+
+.section-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.section-tabs button {
+  text-align: start;
+}
+
+.section-box {
+  border-inline-start: 3px solid #e3d6b8;
+  padding-inline-start: 8px;
+  margin: 6px 0;
+}
+
+/* Side-by-side verse translation on the Hebrew's line grid: equal line pitch, paragraph gaps and
+   heading heights, so lines on both sides stay level. */
+.mikraot .mg-main.aligned, .mikraot .mg-main-en.aligned {
+  line-height: var(--main-pitch);
+}
+
+.mikraot .aligned .mg-para + .mg-para {
+  margin-top: calc(var(--main-pitch) * 0.35);
+}
+
+.mikraot .aligned .mg-chapter, .mikraot .aligned .mg-chapter-en,
+.mikraot .aligned .mg-parsha {
+  height: var(--main-pitch);
+  line-height: var(--main-pitch);
+  margin: 0;
+  overflow: hidden;
+}
+
+.mikraot .mg-chapter-en:empty {
+  display: none;
+}
+
+.mikraot .aligned .mg-chapter-en:empty {
+  display: block;
+}
+
+/* Aliyot and parsha starts */
+.mikraot .mg-aliyah {
+  font-family: var(--main-font);
+  font-size: 0.5em;
+  font-weight: 700;
+  color: #7a1f1f;
+  border: 0.5pt solid #c9a9a0;
+  border-radius: 2pt;
+  padding: 0 0.3em;
+  vertical-align: 0.4em;
+  line-height: 0;
+  white-space: nowrap;
+}
+
+.mikraot .mg-aliyah .combined {
+  font-weight: 400;
+  color: #8a6d63;
+}
+
+.mikraot .mg-parsha {
+  text-align: center;
+  font-size: 0.85em;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #7a1f1f;
+  margin: 0.2em 0;
+}
+
+.mikraot .mg-parsha-en {
+  visibility: hidden;
+}
+
+/* Section titles */
+.mikraot .mg-section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.mikraot .mg-section-title .he {
+  font-family: var(--main-font);
+  font-size: 20pt;
+  font-weight: 700;
+  color: #7a1f1f;
+}
+
+.mikraot .mg-section-title .en {
+  font-family: var(--notes-font);
+  font-size: 8.5pt;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #6f685c;
+}
+
+.mikraot .mg-note-head.hebrew {
+  font-family: var(--main-font);
+  font-variant: normal;
+  direction: rtl;
+  text-align: right;
+}
+
+.mikraot .mg-addendum-ref.compact {
+  font-size: 0.6em;
+  vertical-align: 0.5em;
+  line-height: 0;
+  margin-inline-start: 0.15em;
+}
