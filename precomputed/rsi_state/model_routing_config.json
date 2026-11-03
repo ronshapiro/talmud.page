@@ -62,5 +62,11 @@
       "generateModel": "claude-haiku-5-5",
       "critiqueModel": "claude-sonnet-5-5"
     }
+  },
+  "gemini-api": {
+    "default": {
+      "generateModel": "gemini-3.8-flash",
+      "critiqueModel": "gemini-3.8-flash"
+    }
   }
 }

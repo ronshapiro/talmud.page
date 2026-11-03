@@ -183,3 +183,23 @@ test("getTaskModelConfig preserves critiqueBackend when defined in preset", () =
   expect(resolved.critiqueModel).toBe("gemini-3.8-flash-medium");
   expect(resolved.critiqueBackend).toBe("agy");
 });
+
+test("getTaskModelConfig resolves gemini-api backend with default config", () => {
+  const geminiConfig = {
+    "gemini-api": {
+      default: {
+        generateModel: "gemini-3.8-flash",
+        critiqueModel: "gemini-3.8-flash",
+      },
+    },
+  };
+  writeJson(CONFIG_PATH, geminiConfig);
+
+  const resolved = getTaskModelConfig("any_task", {
+    configPath: CONFIG_PATH,
+    backend: "gemini-api",
+  });
+  expect(resolved.backend).toBe("gemini-api");
+  expect(resolved.generateModel).toBe("gemini-3.8-flash");
+  expect(resolved.critiqueModel).toBe("gemini-3.8-flash");
+});

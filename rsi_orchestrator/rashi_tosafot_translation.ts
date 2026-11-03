@@ -824,7 +824,7 @@ export async function generateViaAgent(
       : generationPrompt(candidate, priorFeedback);
   }
 
-  if (backend === "ollama") {
+  if (backend === "ollama" || backend === "gemini-api") {
     promptText += "\n\nNo tools or lookups are available in this environment — ignore the tool "
       + "instructions above and translate from the provided text and your own knowledge.";
   }
@@ -912,6 +912,11 @@ export async function critiqueViaAgent(
     promptText = resumeSession
       ? continuationCritiquePrompt(candidate, edit)
       : critiquePrompt(candidate, edit);
+  }
+
+  if (critiqueBackend === "ollama" || critiqueBackend === "gemini-api") {
+    promptText += "\n\nNo tools or lookups are available in this environment — ignore the tool "
+      + "instructions above and critique based on the provided text and your own knowledge.";
   }
 
   const result = await runner(

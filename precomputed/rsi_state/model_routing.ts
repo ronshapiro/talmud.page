@@ -93,7 +93,7 @@ export function getTaskModelConfig(
   let backends: Record<string, BackendConfigs> | undefined;
   if (rawObj[taskType] && typeof rawObj[taskType] === "object") {
     backends = rawObj[taskType] as Record<string, BackendConfigs>;
-  } else if ("agy" in raw || "claude" in raw || "ollama" in raw) {
+  } else if ("agy" in raw || "claude" in raw || "ollama" in raw || "gemini-api" in raw) {
     backends = raw;
   } else {
     throw new Error(`No model routing config for task type "${taskType}" in ${configPath}`);
