@@ -3,10 +3,11 @@ import * as fs from "fs";
 import * as os from "os";
 import * as path from "path";
 import {appendImageAttachmentsToPrompt, DecodedImage} from "./base64_images";
+import {runGeminiApi} from "./gemini_runner";
 
 export {appendImageAttachmentsToPrompt};
 
-export type AgentBackend = "claude" | "agy" | "claude-long-thread" | "agy-long-thread" | "ollama";
+export type AgentBackend = "claude" | "agy" | "claude-long-thread" | "agy-long-thread" | "ollama" | "gemini-api";
 
 export interface ToolUseRecord {
   name: string;
@@ -1078,6 +1079,8 @@ export const runOllama: AgentRunner = async (prompt, options = {}) => {
  */
 export function getAgentRunner(backend: AgentBackend = "claude"): AgentRunner {
   switch (backend) {
+    case "gemini-api":
+      return runGeminiApi;
     case "ollama":
       return runOllama;
     case "agy":

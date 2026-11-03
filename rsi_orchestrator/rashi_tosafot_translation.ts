@@ -914,6 +914,11 @@ export async function critiqueViaAgent(
       : critiquePrompt(candidate, edit);
   }
 
+  if (critiqueBackend === "ollama") {
+    promptText += "\n\nNo tools or lookups are available in this environment — ignore the tool "
+      + "instructions above and critique based on the provided text and your own knowledge.";
+  }
+
   const result = await runner(
     promptText,
     {

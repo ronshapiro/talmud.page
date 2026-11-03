@@ -39,11 +39,11 @@ async function main(): Promise<void> {
       },
       limit: {type: "number", describe: "cap the number of candidates processed"},
       backend: {
-        choices: ["claude", "agy", "claude-long-thread", "agy-long-thread", "ollama"] as const,
-        describe: 'agent backend to use ("claude", "agy", "claude-long-thread", "agy-long-thread", or "ollama")',
+        choices: ["claude", "agy", "claude-long-thread", "agy-long-thread", "ollama", "gemini-api"] as const,
+        describe: 'agent backend to use ("claude", "agy", "claude-long-thread", "agy-long-thread", "ollama", or "gemini-api")',
       },
       critiqueBackend: {
-        choices: ["claude", "agy", "ollama"] as const,
+        choices: ["claude", "agy", "ollama", "gemini-api"] as const,
         alias: ["critique-backend"],
         describe: "backend to use for critique if different from --backend (e.g. agy to judge ollama)",
       },

@@ -1,0 +1,155 @@
+{
+  "Rashi on Zevachim 3a:1:1": {
+    "costUsd": 0.00704325,
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T14:06:14.297Z",
+    "model": "gemini-3.8-flash",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 3a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונמלך</strong> - שלא יגרשנה:"
+  },
+  "Rashi on Zevachim 3a:2:1": {
+    "costUsd": 0.010992675,
+    "dependsOn": [
+      "Zevachim 3a:1",
+      "Rashi on Zevachim 3a:2:2"
+    ],
+    "generatedAt": "2026-11-03T14:08:11.884Z",
+    "model": "gemini-3.8-flash",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 3a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דילמא שאני התם</strong> - דלאו סתמא הוא אלא שלא לשמה ממש:"
+  },
+  "Rashi on Zevachim 3a:2:2": {
+    "costUsd": 0.013576425,
+    "dependsOn": [
+      "Rashi on Zevachim 3a:2:1",
+      "Zevachim 3a:1",
+      "Zevachim 3a:2"
+    ],
+    "generatedAt": "2026-11-03T14:08:48.096Z",
+    "model": "gemini-3.8-flash",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 3a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאינתיק</strong> - משאר כל האנשים והנשים [לשם] גירושין של זה ושל זו:"
+  },
+  "Rashi on Zevachim 3a:5:1": {
+    "costUsd": 0.025121625,
+    "dependsOn": [
+      "Zevachim 3a:5",
+      "Zevachim 3a:3",
+      "Rashi on Zevachim 3a:2:1",
+      "Rashi on Zevachim 3a:2:2"
+    ],
+    "generatedAt": "2026-11-03T14:09:38.822Z",
+    "model": "gemini-3.8-flash",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 3a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא מהא</strong> - דעדיפא מקמייתא דהכא חד גברא הוא:"
+  },
+  "Rashi on Zevachim 3a:6:1": {
+    "costUsd": 0.011387625,
+    "dependsOn": [
+      "Zevachim 3a:6"
+    ],
+    "generatedAt": "2026-11-03T14:10:07.292Z",
+    "model": "gemini-3.8-flash",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 3a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאין ברירה</strong> - וגריעה מסתמא דשמא בשעה שנכתב לא היה בדעתו של בעל לזו ואינתק לשם האחרת:"
+  },
+  "Rashi on Zevachim 3a:7:1": {
+    "costUsd": 0.018781199999999998,
+    "dependsOn": [
+      "Rashi on Gittin 26a:4:1"
+    ],
+    "generatedAt": "2026-11-03T14:10:47.100Z",
+    "model": "gemini-3.8-flash",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 3a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכותב טופסי גיטין</strong> - שיהו מזומנין לו טופס לשון טפוס מול\"ל בלע\"ז:"
+  },
+  "Rashi on Zevachim 3a:7:2": {
+    "costUsd": 0.0282282,
+    "dependsOn": [
+      "Rashi on Zevachim 3a:7:1",
+      "Zevachim 3a:7",
+      "Zevachim 2b:17",
+      "Zevachim 3a:1",
+      "Zevachim 2b:14",
+      "Zevachim 2b:16"
+    ],
+    "generatedAt": "2026-11-03T14:11:52.069Z",
+    "model": "gemini-3.8-flash",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 3a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקום הרי את כו'</strong> - דזהו עיקר גופו אלמא סתמא פסול ואף על גב דאיכתב לשם כריתות לכשיזדמן לו:"
+  },
+  "Rashi on Zevachim 3a:8:1": {
+    "costUsd": 0.012294,
+    "dependsOn": [
+      "Zevachim 3a:8"
+    ],
+    "generatedAt": "2026-11-03T14:15:26.677Z",
+    "model": "gemini-3.8-flash",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 3a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תו רמי מילתא אחריתי</strong> - אדרבינא ורב פפא קאי דקאמר דרמי רבא אהדדי ושנינהו:"
+  },
+  "Tosafot on Zevachim 3a:1:1": {
+    "costUsd": 0.025555124999999998,
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T14:07:42.877Z",
+    "model": "gemini-3.8-flash",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Zevachim 3a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כתב לגרש את אשתו ונמלך כו'</strong> - תימה מה ענין זה אצל סתם ויש לומר דס\"ד כיון דנמלך אם כן מסתמא כתבו מתחילה שאם יחזור בו יגרש מי שירצה:"
+  },
+  "Tosafot on Zevachim 3a:7:1": {
+    "costUsd": 0.042409575,
+    "dependsOn": [
+      "Gilyon HaShas on Zevachim 3a:1"
+    ],
+    "generatedAt": "2026-11-03T14:13:50.184Z",
+    "model": "gemini-3.8-flash",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Zevachim 3a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכותב טופסי גיטין כו'</strong> - כל הנך משניות בפ' כל הגט <span class=\"parenthesized\">(גיטין דף כו.)</span> ותימה דלא קתני בהך יתר על כן דעל כרחין יתר הוא דמכל הנך קמייתא לא מצי למידק סתמא פסול אלא מהך ויש לומר דמשום דאמר ללבלר דקתני ברישא דהך יתר כמו כן דדייקינן מזאת [סתמא] ודייקינן מינה אין ברירה וקשה לה\"ר יצחק דפ\"ק דפסחים <span class=\"parenthesized\">(דף יד.)</span> תנן הוסיף ר\"ע אף ע\"ג דלמאן דמוקי מילתא דר' חנינא בולד [וולד] הטומאה דרבנן לא שמעינן לה ממילתיה דר' עקיבא דמיירי בפסולא [דאורייתא] מיהו יש לומר אע\"ג דקתני הוסיף אי לא הוה תני ליה לא הוה [קמשמע לן] מידי:"
+  },
+  "Tosafot on Zevachim 3a:7:2": {
+    "costUsd": 0.025230825000000002,
+    "dependsOn": [
+      "Gittin 26b:1",
+      "Gittin 26b:2",
+      "Gittin 26b:3",
+      "Gittin 26b:4"
+    ],
+    "generatedAt": "2026-11-03T14:15:00.276Z",
+    "model": "gemini-3.8-flash",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Zevachim 3a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמר רב יהודה אמר שמואל אף צריך שיניח כו'</strong> - איצטריך לאיתויי דרב יהודה משום דמינה דייקינן בגיטין דאתיא כרבי אלעזר דאמר עדי מסירה כרתי דקי\"ל כוותיה ואיכא דמוקי לה התם כר\"מ ומפרש מפני התקנה משום קטטה ולדידיה ליכא למידק מינה סתמא פסול:"
+  }
+}
