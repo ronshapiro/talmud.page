@@ -494,6 +494,25 @@ export function getPriorSugyaSkeleton(ref: string, count = 2): PriorSugyaResult 
 export function extractRequestedRefs(toolUses: ToolUseRecord[]): string[] {
   const refs = new Set<string>();
   for (const use of toolUses) {
+    if (use.name === "get_refs" || use.name === "get-refs") {
+      const input = use.input as {refs?: string[]} | undefined;
+      if (input && Array.isArray(input.refs)) {
+        input.refs.forEach(ref => refs.add(ref));
+        continue;
+      }
+    }
+    if (
+      use.name === "get_neighbors"
+      || use.name === "get-neighbors"
+      || use.name === "get_prior_sugyot"
+      || use.name === "get-prior-sugyot"
+    ) {
+      const input = use.input as {ref?: string} | undefined;
+      if (input && input.ref) {
+        refs.add(input.ref);
+        continue;
+      }
+    }
     if (use.name !== "Bash" && use.name !== "run_command") continue;
     const input = use.input as {command?: string; CommandLine?: string} | undefined;
     const command = input?.command ?? input?.CommandLine;

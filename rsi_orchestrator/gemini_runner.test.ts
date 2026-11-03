@@ -156,4 +156,86 @@ describe("gemini_runner", () => {
       expect((error as AgentError).backend).toBe("gemini-api");
     }
   });
+
+  test("executes native tool calls and returns final answer after tool response", async () => {
+    process.env.GEMINI_API_KEY = "test-api-key";
+
+    let invocationCount = 0;
+    const capturedContents: Array<unknown> = [];
+
+    setGenAiClientFactoryForTesting(() => ({
+      models: {
+        generateContent: async (parameters: any) => {
+          invocationCount += 1;
+          capturedContents.push(JSON.parse(JSON.stringify(parameters.contents)));
+
+          if (invocationCount === 1) {
+            // First turn: model requests a tool call
+            return {
+              candidates: [
+                {
+                  content: {
+                    parts: [
+                      {
+                        functionCall: {
+                          name: "get_refs",
+                          id: "call_abc",
+                          args: {refs: ["Zevachim 2a:1"]},
+                        },
+                      },
+                    ],
+                  },
+                },
+              ],
+              functionCalls: [
+                {
+                  name: "get_refs",
+                  id: "call_abc",
+                  args: {refs: ["Zevachim 2a:1"]},
+                },
+              ],
+              usageMetadata: {
+                promptTokenCount: 1000,
+                candidatesTokenCount: 20,
+                totalTokenCount: 1020,
+              },
+            };
+          }
+
+          // Second turn: model returns final translation
+          return {
+            text: '{"english": "final translated commentary"}',
+            usageMetadata: {
+              promptTokenCount: 1200,
+              candidatesTokenCount: 50,
+              totalTokenCount: 1250,
+            },
+          };
+        },
+      },
+    }));
+
+    const toolUseRecords: Array<unknown> = [];
+    const result = await runGeminiApi("Translate this comment", {
+      model: "gemini-3.8-flash",
+      onToolUse: (toolUse) => {
+        toolUseRecords.push(toolUse);
+      },
+    });
+
+    expect(invocationCount).toBe(2);
+    expect(result.text).toBe('{"english": "final translated commentary"}');
+    expect(result.toolUses).toHaveLength(1);
+    expect(toolUseRecords).toHaveLength(1);
+    expect((result.toolUses[0].input as any).command).toContain("get-refs");
+    expect((result.toolUses[0].input as any).command).toContain("Zevachim 2a:1");
+
+    // Verify tool response was delivered to Gemini in turn 2
+    const secondTurnContents = capturedContents[1] as Array<{role: string; parts: Array<any>}>;
+    expect(secondTurnContents).toHaveLength(3);
+    expect(secondTurnContents[1].role).toBe("model");
+    expect(secondTurnContents[2].role).toBe("user");
+    expect(secondTurnContents[2].parts[0].functionResponse.name).toBe("get_refs");
+    expect(secondTurnContents[2].parts[0].functionResponse.id).toBe("call_abc");
+  });
 });
