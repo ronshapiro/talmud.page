@@ -220,7 +220,7 @@ export async function executeContextTool(
       const lang = parameters.lang as "he" | "en" | "both" | undefined;
       const on = parameters.on as string | undefined;
       const commandLine = "npx ts-node rsi_orchestrator/context_fetch_cli.ts get-refs "
-        + `${JSON.stringify(JSON.stringify(refs))}${lang ? ` --lang ${lang}` : ""}`
+        + `'${JSON.stringify(refs)}'${lang ? ` --lang ${lang}` : ""}`
         + `${on ? ` --on "${on}"` : ""}`;
       try {
         return {result: getRefs(refs, lang, on), commandLine};
