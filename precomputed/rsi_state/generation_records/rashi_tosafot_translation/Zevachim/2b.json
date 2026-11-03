@@ -1,4 +1,124 @@
 {
+  "Rashi on Zevachim 2b:10:1": {
+    "costUsd": 0.00325875,
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T11:50:41.751Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 2b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא סתמא [ולשם] פסח</strong> - תחילה שחטה סתם וסופה לשם פסח כשר ולא מיפסיל משום תחילתה אלמא סתמא כלשמן:"
+  },
+  "Rashi on Zevachim 2b:12:1": {
+    "costUsd": 0.00445575,
+    "dependsOn": [
+      "Zevachim 2b:12",
+      "Rashi on Zevachim 2b:10:1",
+      "Rashi on Zevachim 2b:1:1",
+      "Rashi on Zevachim 2b:3:1",
+      "Rashi on Zevachim 2b:7:1",
+      "Rashi on Zevachim 2b:8:1",
+      "Rashi on Zevachim 2b:8:2",
+      "Rashi on Zevachim 2b:8:3",
+      "Rashi on Zevachim 2b:8:4"
+    ],
+    "generatedAt": "2026-11-03T11:52:31.902Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 2b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"נ איידי כו'</strong> - כלומר לעולם לא תידוק מיניה הא סתמא ולשם פסח כשר דלעולם אימא לך פסול דסתמא כשלא לשמו והאי דקתני לשם שלמים איידי דפריש בלשמן ולא לשמן לשם שלמים דהתם דווקא הוא דאילו סתמא הוי כשר דעל דעת ראשונה הוא עושה פריש נמי תנא דמתני' בשלא לשמו ולשמו לשם שלמים ולשם פסח ולאו דווקא דה\"ה לסתמא ולשם פסח דמיפסל בתחילת שחיטה:"
+  },
+  "Rashi on Zevachim 2b:13:1": {
+    "costUsd": 0.00353925,
+    "dependsOn": [
+      "Zevachim 46b:1",
+      "Zevachim 46b:11",
+      "Zevachim 46b:12",
+      "Zevachim 46b:13"
+    ],
+    "generatedAt": "2026-11-03T11:53:37.824Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 2b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשם ששה דברים</strong> - משנה בפרק ב\"ש ומקראי יליף להו:"
+  },
+  "Rashi on Zevachim 2b:13:2": {
+    "costUsd": 0.007446000000000001,
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T11:54:50.502Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 2b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשם זבח</strong> - לשם מה שהוקדש:"
+  },
+  "Rashi on Zevachim 2b:13:3": {
+    "costUsd": 0.0017009999999999998,
+    "dependsOn": [
+      "Rashi on Zevachim 2b:13:1",
+      "Rashi on Zevachim 2b:13:2",
+      "Rashi on Zevachim 2b:13:4"
+    ],
+    "generatedAt": "2026-11-03T11:55:17.915Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 2b:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשם זובח</strong> - שיתכפר בו בעליו ולא שיתכפר בו אחר:"
+  },
+  "Rashi on Zevachim 2b:13:4": {
+    "costUsd": 0.0025065,
+    "dependsOn": [
+      "Rashi on Zevachim 2b:13:4",
+      "Rashi on Zevachim 2b:13:1",
+      "Rashi on Zevachim 2b:13:2",
+      "Rashi on Zevachim 2b:13:3",
+      "Rashi on Zevachim 2b:13:5",
+      "Rashi on Zevachim 2b:13:6",
+      "Rashi on Zevachim 2b:13:7",
+      "Steinsaltz on Zevachim 2b:13",
+      "Rashi on Zevachim 46b:12:1"
+    ],
+    "generatedAt": "2026-11-03T11:57:05.413Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 2b:13:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשם שם</strong> - <span class=\"parenthesized\">(לנחת רוח)</span> להקב\"ה שאמר <span class=\"parenthesized\">(ונעשה רצונו)</span>:"
+  },
+  "Rashi on Zevachim 2b:13:5": {
+    "costUsd": 0.002112,
+    "dependsOn": [
+      "Rashi on Zevachim 46b:12:2",
+      "Rashi on Zevachim 3a:7:1"
+    ],
+    "generatedAt": "2026-11-03T11:58:51.388Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 2b:13:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשם אשים</strong> - להקטירם ולא לעשותם צלי על המזבח קרבוניי\"ש בלע\"ז:"
+  },
+  "Rashi on Zevachim 2b:13:6": {
+    "costUsd": 0.00187875,
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T11:59:53.977Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 2b:13:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשם ריח</strong> - לאפוקי איברים שצלאן והעלן דשוב אין בהן ריח והכי מפרש להו התם:"
+  },
   "Rashi on Zevachim 2b:1:1": {
     "costUsd": 0.0027322500000000003,
     "dependsOn": [
@@ -182,6 +302,133 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">בסתמן לשמן עומדין</strong> - הילכך כל כמה דלא עקר שמייהו בהדיא הוו לשמן:"
   },
+  "Rashi on Zevachim 2b:7:1": {
+    "costUsd": 0.0029242499999999998,
+    "dependsOn": [
+      "Zevachim 2b:7",
+      "Rashi on Zevachim 2b:7:2",
+      "Rashi on Zevachim 2b:7:3",
+      "Rashi on Zevachim 2b:7:4"
+    ],
+    "generatedAt": "2026-11-03T11:41:25.605Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 2b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנלן</strong> - ממתני' היכי שמע ליה רבא דתיקשה ליה:"
+  },
+  "Rashi on Zevachim 2b:7:2": {
+    "costUsd": 0.0039375,
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T11:41:58.101Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 2b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנזבחו שלא לשמן</strong> - משמע דעקר שמן מהן:"
+  },
+  "Rashi on Zevachim 2b:7:3": {
+    "costUsd": 0.002202,
+    "dependsOn": [
+      "Rashi on Zevachim 2b:7:1",
+      "Rashi on Zevachim 2b:7:2",
+      "Rashi on Zevachim 2b:7:3",
+      "Rashi on Zevachim 2b:7:4"
+    ],
+    "generatedAt": "2026-11-03T11:42:38.208Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 2b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא נזבחו לשמן</strong> - משמע שלא הזכיר שמן עלייהו דהיינו סתמא:"
+  },
+  "Rashi on Zevachim 2b:7:4": {
+    "costUsd": 0.00518325,
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T11:43:17.668Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 2b:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנכתב שלא לשם אשה זו</strong> - משמע שנכתב לשם אחרת בפירוש:"
+  },
+  "Rashi on Zevachim 2b:8:1": {
+    "costUsd": 0.005583,
+    "dependsOn": [
+      "Rashi on Zevachim 2b:8:1",
+      "Rashi on Zevachim 2b:8:2",
+      "Rashi on Zevachim 2b:8:3",
+      "Rashi on Zevachim 2b:8:4",
+      "Steinsaltz on Zevachim 2b:8"
+    ],
+    "generatedAt": "2026-11-03T11:45:33.631Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 2b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיצד לשמן כו'</strong> - מתני' היא:"
+  },
+  "Rashi on Zevachim 2b:8:2": {
+    "costUsd": 0.00216225,
+    "dependsOn": [
+      "Rashi on Zevachim 2b:8:1",
+      "Rashi on Zevachim 2b:8:2",
+      "Rashi on Zevachim 2b:8:3",
+      "Rashi on Zevachim 2b:8:4"
+    ],
+    "generatedAt": "2026-11-03T11:46:06.122Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 2b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשם פסח ולשם שלמים</strong> - כך חישב עליו:"
+  },
+  "Rashi on Zevachim 2b:8:3": {
+    "costUsd": 0.002163,
+    "dependsOn": [
+      "Rashi on Zevachim 2b:8:1",
+      "Rashi on Zevachim 2b:8:2",
+      "Rashi on Zevachim 2b:8:3",
+      "Rashi on Zevachim 2b:8:4"
+    ],
+    "generatedAt": "2026-11-03T11:46:52.566Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 2b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא לשם פסח וסתמא</strong> - שלא חישב אחריו לשם שלמים כשר ואע\"ג דסוף שחיטה סתמא אישתחיט:"
+  },
+  "Rashi on Zevachim 2b:8:4": {
+    "costUsd": 0.00242625,
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T11:47:28.600Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 2b:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלמא סתמן כלשמן דמי</strong> - דאי כשלא לשמן דמי הויא ליה כאילו אמר לשם פסח ולשם שלמים:"
+  },
+  "Rashi on Zevachim 2b:9:1": {
+    "costUsd": 0.00766875,
+    "dependsOn": [
+      "Zevachim 2b:9"
+    ],
+    "generatedAt": "2026-11-03T11:50:00.358Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 2b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על דעת [ראשונה</strong> - אבל] היכא דשחטיה כוליה סתמא אימא לך דפסול:"
+  },
   "Tosafot on Zevachim 2b:1:1": {
     "costUsd": 0.014947499999999999,
     "dependsOn": [],
@@ -192,5 +439,59 @@
       "Tosafot on Zevachim 2b:1:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">ואם לאו יהא נדבה</strong> - אע\"ג דבפ\"ק דר\"ה <span class=\"parenthesized\">(דף ו.)</span> דריש ליה לענין בל תאחר דלא שייך לאחר שחיטה הכא דריש מפשטיה דקרא דמשמע דקרי ליה לנדר נדבה:"
+  },
+  "Tosafot on Zevachim 2b:6:1": {
+    "costUsd": 0.01719675,
+    "dependsOn": [
+      "Chullin 12b:1",
+      "Chullin 12b:2",
+      "Chullin 12b:3",
+      "Chullin 12b:4",
+      "Chullin 12b:5",
+      "Tosafot on Chullin 12b:6:1",
+      "Rashi on Chullin 12b:6:1",
+      "Tosafot on Zevachim 2b:1:1",
+      "Tosafot on Zevachim 2b:6:2",
+      "Chullin 12b:16",
+      "Chullin 12b:17",
+      "Chullin 12b:18"
+    ],
+    "generatedAt": "2026-11-03T11:38:35.490Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Zevachim 2b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זבחים בסתם לשמן הן עומדין</strong> - ואינו פסול עד שיכוין שלא לשמן [וא\"ת בפ\"ק דחולין <span class=\"parenthesized\">(דף יב:)</span> בעי ר\"י אי קטן יש לו מחשבה וכו' ו<span class=\"rashi-quotation\">פי' בקונטרס</span> כגון בשחיטת קדשים דיליף בריש זבחים דבעי לשמה ושחט קטן עולה לשמה מי הוי כוונה או לא הא משמע הכא דמסתמא נמי כשר ואינו פסול עד שיכוין שלא לשמן] וי\"ל דסתמא דקטן גרע דאין לו דעת להבין שהן קדשים וסבור שהן חולין והוה ליה מתעסק ופסול כדאמר בפרק בית שמאי <span class=\"parenthesized\">(לקמן זבחים דף מו:)</span> לשם חולין כשירין משום חולין פסולה והאי קטן אפילו אומר יודע אני שהן קדשים ולשמן אני מתכוין מיבעיא לן אי כוונתו כוונה או דילמא לא מהני אם אין מעשיו מוכיחין:"
+  },
+  "Tosafot on Zevachim 2b:6:2": {
+    "costUsd": 0.006108,
+    "dependsOn": [
+      "Gilyon HaShas on Zevachim 2b:2",
+      "Tosafot on Gittin 23a:4:1"
+    ],
+    "generatedAt": "2026-11-03T11:40:28.452Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Zevachim 2b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סתם אשה לאו לגירושין עומדת</strong> - ואפי' זינתה תחת בעלה מכל מקום לאו להתגרש בגט זה עומדת וגם אם לא ירצה הבעל לא יגרשנה אלא שלא תשמשנו ומתוך הא מילתא מיתרצא מה שמקשים בסוף פרק שני דגיטין <span class=\"parenthesized\">(דף כג.)</span> דאמר עובד כוכבים אדעתא דנפשיה עביד ואינו כשר לכתוב את הגט ובפ' שני דעבודה זרה <span class=\"parenthesized\">(דף כו:)</span> אמרי' ימול ארמאי ואל ימול כותי משום דכותי מתכוין לשם הר גריזים [והתם נמי] בעינן לשמה כדדרשינן <span class=\"parenthesized\">(שם דף כז.)</span> מלה' המול <span class=\"parenthesized\">(ימול)</span> ואפי' הכי מכשרינן ארמאי דיש לחלק בין גט למילה כמו שמחלק כאן בין זבחים לגט הא סתמא פסול משום דסתם אשה לאו לגירושין קיימא ולכך נמי [בעובד כוכבים] פסול אע\"ג דעביד סתם אבל מילה סתמא לשמה קיימא כמו זבחים הילכך עובד כוכבים כשר אע\"ג דעביד סתם:"
+  },
+  "Tosafot on Zevachim 2b:8:1": {
+    "costUsd": 0.012800249999999999,
+    "dependsOn": [
+      "Rashi on Zevachim 2b:8:1",
+      "Rashi on Zevachim 2b:8:2",
+      "Rashi on Zevachim 2b:8:3",
+      "Rashi on Zevachim 2b:8:4"
+    ],
+    "generatedAt": "2026-11-03T11:48:58.147Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Zevachim 2b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא לשם פסח וסתמא כשר</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> דסוף שחיטה סתמא אישתחיט ותימה כיון דאמר בתחילת שחיטה לשם פסח וכי כל שעה יש לו לדבר עד שיגמר שחיטתו ונראה לפרש דבשתי עבודות איירי כגון דשחיט לשם פסח וקיבל סתם ומיהו בפרק תמיד נשחט <span class=\"parenthesized\">(פסחים דף נט:)</span> מיבעי לן אי בעבודה אחת תנן או בשתי עבודות ועבודה אחת היינו <span class=\"rashi-quotation\">כדפירש הקונטרס</span> ויש ליישב דאפילו אם תימצי לומר לשם פסח וסתמא פסול [אפ\"ה] אין צריך לדבר כל שעה אלא שבתחילת שחיטה יאמר שעושה כל השחיטה לשם שחיטת פסח:"
   }
 }
