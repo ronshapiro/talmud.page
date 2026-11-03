@@ -24,7 +24,7 @@ npx ts-node rsi_orchestrator/rashi_tosafot_translation_cli.ts <BookName> \
 
 ### Key Parameters:
 - **`<BookName>`**: Tractate name or alias (e.g. `Chullin`, `Chulin`, `Menachot`, `all`). The CLI looks up book names by alias automatically, so you can pass names directly without looking them up.
-- **`--backend`**: `claude` (default for Claude Code CLI), `agy` (Antigravity CLI), `claude-long-thread` (Claude with multi-turn session persistence), `agy-long-thread` (Antigravity with multi-turn session persistence), `ollama` (local Ollama server), or `gemini-api` (Google Gemini Developer API via `@google/genai`).
+- **`--backend`**: `claude` (default for Claude Code CLI), `agy` (Antigravity CLI), `claude-long-thread` (Claude with multi-turn session persistence), `agy-long-thread` (Antigravity with multi-turn session persistence), `ollama` (local Ollama server), or `gemini-api` (Google Gemini Developer API).
 - **`--model-config`**: Named model preset defined in `model_routing_config.json` under the backend. Specifies the generator and critique model pairing.
 - **`--continuous`**: Runs continuously for the duration, automatically pausing on quota limits and checking hourly until quota recovers.
 - **`--duration-hours`**: Duration for the run.
