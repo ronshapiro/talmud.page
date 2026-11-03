@@ -5,7 +5,7 @@ import * as path from "path";
 import {appendImageAttachmentsToPrompt, DecodedImage} from "./base64_images";
 import {runGeminiApi} from "./gemini_runner";
 
-export {appendImageAttachmentsToPrompt, runGeminiApi};
+export {appendImageAttachmentsToPrompt};
 
 export type AgentBackend = "claude" | "agy" | "claude-long-thread" | "agy-long-thread" | "ollama" | "gemini-api";
 
