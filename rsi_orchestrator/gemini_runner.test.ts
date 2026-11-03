@@ -83,40 +83,6 @@ describe("gemini_runner", () => {
     ]);
   });
 
-  test("passes responseSchema to generateContent config when provided", async () => {
-    process.env.GEMINI_API_KEY = "test-api-key";
-
-    let capturedParameters: any;
-    setGenAiClientFactoryForTesting(() => ({
-      models: {
-        generateContent: async (parameters: unknown) => {
-          capturedParameters = parameters;
-          return {
-            text: '{"english": "test"}',
-            usageMetadata: {
-              promptTokenCount: 10,
-              candidatesTokenCount: 10,
-              totalTokenCount: 20,
-            },
-          };
-        },
-      },
-    }));
-
-    const responseSchema = {
-      type: "OBJECT",
-      properties: {
-        english: {type: "STRING"},
-      },
-    };
-
-    await runGeminiApi("Translate this comment", {
-      responseSchema,
-    });
-
-    expect(capturedParameters.config.responseSchema).toEqual(responseSchema);
-  });
-
   test("attaches inlineData parts when images are provided", async () => {
     process.env.GEMINI_API_KEY = "test-api-key";
 

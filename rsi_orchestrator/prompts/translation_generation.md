@@ -68,8 +68,6 @@ npx ts-node rsi_orchestrator/context_fetch_cli.ts wikipedia "<topic>" [--lang en
 
 Respond with ONLY a JSON object matching {"hebrew"?: string, "english"?: string} — include a key only if you're proposing a change to it. No other text before or after the JSON.
 
-Ensure any double quotes inside JSON string values (such as HTML attribute values like class="..." or title="...", or quotes in English) are escaped with a backslash (\") so the output is strictly valid JSON.
-
 ### Hebrew markup and formatting example
 
 - Source Hebrew: `מתני' כ"א תקיעות מפרש להו בפ' החליל`

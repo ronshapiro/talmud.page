@@ -756,38 +756,19 @@ export function critiquePrompt(candidate: TranslationCandidate, edit: Edit): str
   });
 }
 
-export function repairJsonString(text: string): string {
-  let repaired = text;
-  // Repair unescaped quotes in HTML attributes: e.g. class="foo" or title="bar"
-  repaired = repaired.replace(
-    /(<[A-Za-z]+[^>]*?\s+[A-Za-z-]+)=(")(.*?)\2([^>]*?>)/g,
-    (match, prefix, quote, value, suffix) => `${prefix}=\\"${value}\\"${suffix}`,
-  );
-  // Repair unescaped quotes between Hebrew letters (gershayim in abbreviations, e.g. כ"א -> כ\"א)
-  repaired = repaired.replace(/([\u0590-\u05FF])"([\u0590-\u05FF])/g, '$1\\"$2');
-  return repaired;
-}
-
 export function parseJsonResponse<T>(text: string): T {
   const trimmed = text.trim();
   // Defensive against an occasional markdown code fence around the JSON.
   const stripped = trimmed.replace(/^```(?:json)?\n?/, "").replace(/\n?```$/, "").trim();
   try {
     return JSON.parse(stripped) as T;
-  } catch {
+  } catch (e) {
     // If there is preamble or postamble, extract the first outermost {...} block.
     const match = stripped.match(/{[\S\s]*}/);
     if (match) {
-      try {
-        return JSON.parse(match[0]) as T;
-      } catch {
-        // Attempt self-healing repair on unescaped HTML quotes or abbreviations
-        const repaired = repairJsonString(match[0]);
-        return JSON.parse(repaired) as T;
-      }
+      return JSON.parse(match[0]) as T;
     }
-    const repaired = repairJsonString(stripped);
-    return JSON.parse(repaired) as T;
+    throw e;
   }
 }
 
@@ -858,13 +839,6 @@ export async function generateViaAgent(
       resumeSession,
       signal: options?.signal,
       images: images.length > 0 ? images : undefined,
-      responseSchema: {
-        type: "OBJECT",
-        properties: {
-          hebrew: {type: "STRING"},
-          english: {type: "STRING"},
-        },
-      },
       onToolUse: (toolUse) => {
         const command = (toolUse.input as {command?: string; CommandLine?: string})?.command
           ?? (toolUse.input as {command?: string; CommandLine?: string})?.CommandLine;
@@ -955,14 +929,6 @@ export async function critiqueViaAgent(
       resumeSession,
       signal: options?.signal,
       images: images.length > 0 ? images : undefined,
-      responseSchema: {
-        type: "OBJECT",
-        properties: {
-          valid: {type: "BOOLEAN"},
-          reason: {type: "STRING"},
-        },
-        required: ["valid"],
-      },
       onToolUse: (toolUse) => {
         const command = (toolUse.input as {command?: string; CommandLine?: string})?.command
           ?? (toolUse.input as {command?: string; CommandLine?: string})?.CommandLine;
