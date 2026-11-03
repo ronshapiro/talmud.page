@@ -1,4 +1,40 @@
 {
+  "Rashi on Kiddushin 65a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T09:19:54.470Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וצריכא</strong> - לאשמעינן בכולהו דמי שאסר עצמו בדיבורו נאסר ומי שלא אסר עצמו אינו נאסר:"
+  },
+  "Rashi on Kiddushin 65a:10:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 65a:10:1",
+      "Rashi on Kiddushin 65a:10:3"
+    ],
+    "generatedAt": "2026-11-03T09:20:39.099Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גבי דידיה</strong> - כי אמר קידשתיך לא מיתסרא איהי בקרוביו משום דאיהו שקורי משקר וגברא לא איכפת ליה אם אוסר עצמו בקרובותיה חנם:"
+  },
+  "Rashi on Kiddushin 65a:10:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 65a:10:1",
+      "Rashi on Kiddushin 65a:10:2"
+    ],
+    "generatedAt": "2026-11-03T09:21:10.348Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומקרי ואמר</strong> - קדשתיה ואע\"ג דלא קדשה:"
+  },
   "Rashi on Kiddushin 65a:11:1": {
     "dependsOn": [
       "Community Translation: Translation on Rashi on Kiddushin 65a:11:1"
@@ -226,6 +262,35 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">אלא לאו בעד אחד</strong> - וקתני הוא אסור בקרובותיה אלמא זה שמודה לו נאסר דחשיב לאיתפוסי קדושין קמיה:"
   },
+  "Rashi on Kiddushin 65a:1:1": {
+    "dependsOn": [
+      "Kiddushin 65a:1",
+      "Rashi on Kiddushin 65a:1:1",
+      "Rashi on Kiddushin 65a:1:2",
+      "Kiddushin 64b:3",
+      "Rashi on Kiddushin 64b:15:1",
+      "Kiddushin 64b:4"
+    ],
+    "generatedAt": "2026-11-03T09:03:46.138Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמצעית שבכת שניה תשתרי</strong> - ארישא קאי דמספקא לכל כת שניה בגדולה אמצעית לגבי מאן קרי לה גדולה אי לא לגבי קטנה דההיא כת אלמא בכת אחת פליגי:"
+  },
+  "Rashi on Kiddushin 65a:1:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 65a:1:1"
+    ],
+    "generatedAt": "2026-11-03T09:04:37.276Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשאין שם</strong> - בכת שניה שום אמצעית להכי תני אסורות כולן אבל אי הוי התם אמצעית הוי תני מתניתין חוץ מן הקטנות שבקטנות ולא הוה תני חוץ מן הקטנה:"
+  },
   "Rashi on Kiddushin 65a:20:1": {
     "dependsOn": [],
     "generatedAt": "2026-11-02T19:26:40.879Z",
@@ -235,6 +300,266 @@
       "Rashi on Kiddushin 65a:20:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">קידשתיה בפני פלוני ופלוני</strong> - דהוו להו קידושין גמורין לכל דבריו ונאמן הוא לאסור את עצמו:"
+  },
+  "Rashi on Kiddushin 65a:21:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T09:22:04.315Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65a:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולנה עמו בפונדקי</strong> - ואפי' לאחר זמן:"
+  },
+  "Rashi on Kiddushin 65a:21:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T09:22:24.143Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65a:21:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי דאיכא עדים</strong> - דנתקדשה בביאה:"
+  },
+  "Rashi on Kiddushin 65a:21:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T09:24:58.507Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65a:21:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לאו בעד אחד</strong> - ושניהם מודים:"
+  },
+  "Rashi on Kiddushin 65a:22:1": {
+    "dependsOn": [
+      "Kiddushin 65a:22",
+      "Rashi on Kiddushin 65a:18:1",
+      "Rashi on Kiddushin 65a:18:2",
+      "Rashi on Kiddushin 65a:18:3",
+      "Rashi on Kiddushin 65a:18:4",
+      "Rashi on Kiddushin 65a:19:1",
+      "Rashi on Kiddushin 65a:19:2",
+      "Rashi on Kiddushin 65a:21:1",
+      "Rashi on Kiddushin 65a:21:2",
+      "Rashi on Kiddushin 65a:21:3",
+      "Kiddushin 65a:15",
+      "Kiddushin 65a:16",
+      "Kiddushin 65a:17",
+      "Kiddushin 64b:16",
+      "Kiddushin 64b:17",
+      "Kiddushin 64b:18",
+      "Kiddushin 64b:19",
+      "Kiddushin 65a:1",
+      "Kiddushin 65a:2",
+      "Kiddushin 65a:3",
+      "Kiddushin 65a:4",
+      "Rashi on Kiddushin 65a:2:1",
+      "Rashi on Kiddushin 65a:2:2",
+      "Rashi on Kiddushin 65a:2:3",
+      "Rashi on Kiddushin 65a:2:4",
+      "Rashi on Kiddushin 64b:3:6",
+      "Rashi on Kiddushin 64b:15:3"
+    ],
+    "generatedAt": "2026-11-03T09:28:33.359Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65a:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וליטעמיך</strong> - דאמרת דאי ס\"ל דאסורות אאמצעית נמי קאי הוה מפרש לה:"
+  },
+  "Rashi on Kiddushin 65a:23:1": {
+    "dependsOn": [
+      "Kiddushin 65a:23",
+      "Rashi on Kiddushin 65a:23:1",
+      "Rashi on Kiddushin 65a:23:2",
+      "Kiddushin 65a:21",
+      "Kiddushin 65a:14",
+      "Rashi on Kiddushin 65a:14:1",
+      "Rashi on Kiddushin 65a:14:2",
+      "Rashi on Kiddushin 65a:14:3"
+    ],
+    "generatedAt": "2026-11-03T09:31:38.783Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65a:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא כופין איכא כו'</strong> - דאין צריכה ממנו גט דהא קתני מותרת בקרוביו ואי בעיא גט הוה מיתסרא באחיו דהויא לה גרושת אחיו:"
+  },
+  "Rashi on Kiddushin 65a:23:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 65a:23:1",
+      "Kiddushin 65a:23",
+      "Kiddushin 65b:1",
+      "Kiddushin 65a:21",
+      "Kiddushin 65a:22",
+      "Rashi on Kiddushin 65a:22:1",
+      "Rashi on Kiddushin 65a:21:1",
+      "Rashi on Kiddushin 65a:21:2",
+      "Rashi on Kiddushin 65a:21:3",
+      "Kiddushin 65a:18",
+      "Rashi on Kiddushin 65a:18:1",
+      "Rashi on Kiddushin 65a:18:2",
+      "Rashi on Kiddushin 65a:18:3",
+      "Rashi on Kiddushin 65a:18:4",
+      "Kiddushin 65a:19",
+      "Kiddushin 65a:20",
+      "Rashi on Kiddushin 65a:19:1",
+      "Rashi on Kiddushin 65a:19:2",
+      "Rashi on Kiddushin 65a:20:1",
+      "Kiddushin 65a:14",
+      "Rashi on Kiddushin 65a:14:1",
+      "Rashi on Kiddushin 65a:14:2",
+      "Rashi on Kiddushin 65a:14:3"
+    ],
+    "generatedAt": "2026-11-03T09:33:29.027Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65a:23:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואלא אסיפא</strong> - דאמרה קדשתני דבעיא גט:"
+  },
+  "Rashi on Kiddushin 65a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T09:05:03.843Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והכי נמי מסתברא</strong> - דבדליכא אמצעית עסקינן:"
+  },
+  "Rashi on Kiddushin 65a:2:2": {
+    "dependsOn": [
+      "Kiddushin 65a:2",
+      "Rashi on Kiddushin 65a:2:1"
+    ],
+    "generatedAt": "2026-11-03T09:06:03.399Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאם איתא דאיכא</strong> - אמצעית וכולהו בעי לאשמועינן דאסירן נתנייה גבי אינו יודע ונימא הכי ואינו יודע אם גדולה שבגדולות אם גדולה שבקטנות או אמצעית שבקטנות כולן אסורות אלא מדלא תנייה לאשמעינן בה איסורא שמע מינה סבירא ליה דלא אסירא וכי קתני כולן אסורות בדליכא אמצעית:"
+  },
+  "Rashi on Kiddushin 65a:2:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 65a:2:1",
+      "Rashi on Kiddushin 65a:2:2",
+      "Rashi on Kiddushin 65a:2:4"
+    ],
+    "generatedAt": "2026-11-03T09:06:49.136Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וליטעמיך</strong> - דאמרת דאי ס\"ל דאסורות אאמצעית נמי קאי הוה מפרש לה:"
+  },
+  "Rashi on Kiddushin 65a:2:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 65a:2:1",
+      "Rashi on Kiddushin 65a:2:2",
+      "Rashi on Kiddushin 65a:2:3"
+    ],
+    "generatedAt": "2026-11-03T09:07:38.723Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65a:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמצעית שבכת ראשונה</strong> - דודאי אסירא אם ישנה שם דהא מודים דכל כת ראשונה לגבי כת שניה גדולה קרי לה ואסורה ניתנייה ברישא כי היכי דנשמע מינה דאסורות עלה קאי ולא תיסק אדעתין למישרי ולומר דכי קתני כולן אסורות כשאין שם אמצעית:"
+  },
+  "Rashi on Kiddushin 65a:3:1": {
+    "dependsOn": [
+      "Kiddushin 65a:3",
+      "Rashi on Kiddushin 65a:2:1",
+      "Rashi on Kiddushin 65a:2:2",
+      "Rashi on Kiddushin 65a:2:3",
+      "Rashi on Kiddushin 65a:2:4"
+    ],
+    "generatedAt": "2026-11-03T09:08:54.792Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכי השתא</strong> - בההיא לא איצטריך ליה לפרושי דאף ע\"ג דמתניתין כולה בשאין שם אלא שתים בכל כת לא תיסק אדעתין דאי הוה שם אמצעית לא הוה תני כולן אסורות דכיון דתנא קטנה דידיה לאיסורא ואשמעינן דקרי לה גדולה כ\"ש אמצעית דקשישא מינה אלא כת שניה דכי לא תנא לה איכא למימר דמתניתין בשאין שם אלא גדולה וקטנה אבל אמצעית לא הוה קרי לה גדולה אם איתא דאיכא אמצעית ואכולהו קאי אסורות ליתנייה בהדיא ונשמע דאף היא אסורה דלא נטעי לאוקמא בשאין שם אמצעית:"
+  },
+  "Rashi on Kiddushin 65a:5:1": {
+    "dependsOn": [
+      "Kiddushin 65a:5"
+    ],
+    "generatedAt": "2026-11-03T09:09:50.151Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והרי פסח וכו' ופליגי</strong> - דאיכא למ\"ד לימים אמצעיים נמי קרי פני הואיל ויש מאוחר ממנו:"
+  },
+  "Rashi on Kiddushin 65a:6:1": {
+    "dependsOn": [
+      "Kiddushin 65a:6",
+      "Rashi on Kiddushin 65a:5:1"
+    ],
+    "generatedAt": "2026-11-03T09:10:48.188Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם בלישנא דעלמא פליגי</strong> - דמאן דאסר לאו משום דסבירא ליה דכל שיש מאוחר ממנו קרי פני אלא משום דמשמע ליה בלשון בני אדם מיפני פיסחא קאמר שיהא הפסח פנוי פונה ועובר:"
+  },
+  "Rashi on Kiddushin 65a:7:1": {
+    "dependsOn": [
+      "Translation on Rashi on Kiddushin 65a:7:1"
+    ],
+    "generatedAt": "2026-11-03T09:11:47.307Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוא אסור בקרובותיה</strong> - דשוינהו עליה חתיכה דאיסורא בהודאתו:"
+  },
+  "Rashi on Kiddushin 65a:8:1": {
+    "dependsOn": [
+      "Translation on Rashi on Kiddushin 65a:8:1"
+    ],
+    "generatedAt": "2026-11-03T09:12:50.200Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומותר בקרובות קטנה וכו'</strong> - שאין אמה נאמנת עליה ואף היא אינה צריכה גט דאי בעיא גט הויא לה גרושתו ונאסר בקרובותיה:"
+  },
+  "Rashi on Kiddushin 65a:9:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 65a:9:1",
+      "Rashi on Kiddushin 65a:9:2"
+    ],
+    "generatedAt": "2026-11-03T19:51:40.161Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קטנה</strong> - הבת:"
+  },
+  "Rashi on Kiddushin 65a:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T09:19:34.176Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גדולה</strong> - האם:"
   },
   "Tosafot on Kiddushin 65a:16:1": {
     "dependsOn": [],

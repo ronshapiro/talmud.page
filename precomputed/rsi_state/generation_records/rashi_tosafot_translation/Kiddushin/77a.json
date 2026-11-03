@@ -1,0 +1,559 @@
+{
+  "Rashi on Kiddushin 77a:10:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 77a:10:2",
+      "Steinsaltz on Kiddushin 77a:10",
+      "Rashi on Kiddushin 77a:9:1",
+      "Rashi on Kiddushin 77a:9:2"
+    ],
+    "generatedAt": "2026-11-03T12:14:49.347Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין מתחלל</strong> - דהא לא יחלל זרעו כתיב ולא את עצמו דתנן <span class=\"parenthesized\">(בכורות דף מה:)</span> הנושא נשים בעבירה פסול עד שידור הנאה וכי הדירה ממנו עובד עבודה:"
+  },
+  "Rashi on Kiddushin 77a:10:2": {
+    "dependsOn": [
+      "Kiddushin 77a:10",
+      "Rashi on Kiddushin 77a:10:1"
+    ],
+    "generatedAt": "2026-11-03T12:16:31.166Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה להוא שאין מתחלל בכ\"מ</strong> - אפילו בא על השפחה ועל הזונה תאמר באשה שנפסלת בכ\"מ שאם בא עליה כותי חלל נתין ממזר פסולה כדאמרינן לעיל <span class=\"parenthesized\">(קידושין דף עד:)</span> ונפקא לן ביבמות <span class=\"parenthesized\">(דף סח.)</span> מן ובת כהן כי תהיה לאיש זר כיון שנבעלה לפסול לה פסלה והואיל ונפסלת בשאר ביאות איסור תיפסל אף כאן:"
+  },
+  "Rashi on Kiddushin 77a:11:1": {
+    "dependsOn": [
+      "Kiddushin 77a:11",
+      "Rashi on Kiddushin 77a:12:1",
+      "Rashi on Kiddushin 77a:12:2"
+    ],
+    "generatedAt": "2026-11-03T12:17:34.531Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם נפשך לומר</strong> - שום תשובה על ק\"ו זה ותבא להכשירה הרי לך מקרא מן התורה שהיא מתחללת דכתיב ולא יחלל עיקר חילול האמור כאן משמע ביאת עצמה שהיתה כשרה ונתחללה אבל זרעו מעיקרו הוא נפסל ואין זה לשון חילול:"
+  },
+  "Rashi on Kiddushin 77a:12:1": {
+    "dependsOn": [
+      "Kiddushin 77a:12",
+      "Rashi on Kiddushin 77a:12:2",
+      "Rashi on Kiddushin 77a:1:1",
+      "Rashi on Kiddushin 77a:1:2"
+    ],
+    "generatedAt": "2026-11-03T12:18:28.672Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי ואם נפשך לומר</strong> - מה היה לנו להשיב על ק\"ו דאיצטריך לפרושי קראי:"
+  },
+  "Rashi on Kiddushin 77a:12:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 77a:12:1",
+      "Kiddushin 77a:12",
+      "Kiddushin 77a:9"
+    ],
+    "generatedAt": "2026-11-03T12:19:35.943Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכי קא קשיא ליה</strong> - וכי תימא מעיקרא דדינא דמייתית היא עצמה מק\"ו מזרעו שלא עבר עבירה ונתחללה איכא למיפרך מה לזרעו כו':"
+  },
+  "Rashi on Kiddushin 77a:13:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 77a:13:1",
+      "Rashi on Kiddushin 77a:13:2",
+      "Rashi on Kiddushin 77a:13:3",
+      "Rashi on Kiddushin 77a:13:4",
+      "Kiddushin 77a:13"
+    ],
+    "generatedAt": "2026-11-03T12:22:23.223Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי נימא פסולה לו</strong> - ואפי' הוא ישראל אם ביאתו בעבירה שאינו של ממזרת הוי הולד חלל:"
+  },
+  "Rashi on Kiddushin 77a:13:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T12:23:06.339Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והרי מחזיר גרושתו</strong> - כשנישאת לאחר דפסולה דכתיב <span class=\"parenthesized\">(דברים כ״ד:ד׳)</span> לא יוכל בעלה וגו':"
+  },
+  "Rashi on Kiddushin 77a:13:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T12:23:50.307Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובניה כשרים</strong> - בתו כשרה לכהונה אם ישראל הוא:"
+  },
+  "Rashi on Kiddushin 77a:13:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 77a:13:1",
+      "Rashi on Kiddushin 77a:13:2",
+      "Rashi on Kiddushin 77a:13:3",
+      "Rashi on Kiddushin 77a:13:4",
+      "Kiddushin 77a:13"
+    ],
+    "generatedAt": "2026-11-03T12:25:14.664Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:13:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היא תועבה</strong> - כלומר בעונש עבירה:"
+  },
+  "Rashi on Kiddushin 77a:14:1": {
+    "dependsOn": [
+      "Kiddushin 77a:14",
+      "Rashi on Kiddushin 77a:13:3",
+      "Rashi on Kiddushin 77a:13:4",
+      "Rashi on Kiddushin 77a:14:1",
+      "Rashi on Kiddushin 77a:14:2",
+      "Rashi on Kiddushin 77a:12:1",
+      "Rashi on Kiddushin 77a:12:2",
+      "Kiddushin 77a:12",
+      "Kiddushin 77a:8",
+      "Kiddushin 77a:9"
+    ],
+    "generatedAt": "2026-11-03T12:26:41.148Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכי קא קשיא ליה</strong> - וכי תימא מעיקרא דדינא דמייתית היא עצמה מק\"ו מזרעו שלא עבר עבירה ונתחללה איכא למיפרך מה לזרעו כו':"
+  },
+  "Rashi on Kiddushin 77a:14:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 77a:14:1",
+      "Rashi on Kiddushin 77a:13:1",
+      "Rashi on Kiddushin 77a:13:2"
+    ],
+    "generatedAt": "2026-11-03T12:28:35.069Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והרי אלמנה</strong> - לכ\"ג וגרושה לכהן הדיוט שמתחללת בביאתו וכן זונה מביאת פסולין שבא עליה כהן הדיוט נקראת חללה ללקות עליה משום חללה דכל איסור כהונה עושה אותה חללה בביאתו:"
+  },
+  "Rashi on Kiddushin 77a:15:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 77a:15:1",
+      "Rashi on Kiddushin 77a:15:2",
+      "Rashi on Kiddushin 77a:15:3"
+    ],
+    "generatedAt": "2026-11-03T12:29:20.056Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מוזכרת</strong> - מפרש לקמן:"
+  },
+  "Rashi on Kiddushin 77a:15:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 77a:15:1",
+      "Rashi on Kiddushin 77a:15:3"
+    ],
+    "generatedAt": "2026-11-03T12:30:14.711Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ק איזו היא חללה</strong> - המוזכרת בתורה שעיקרה ממשמעות המקרא שכתב חללה לא יקחו ואין צריכין לפרש מידי סופרים דמקרא נפקא בהדיא:"
+  },
+  "Rashi on Kiddushin 77a:15:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 77a:15:1",
+      "Rashi on Kiddushin 77a:15:2"
+    ],
+    "generatedAt": "2026-11-03T12:30:53.693Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל שנולדה מאיסור כהונה</strong> - דסתם חלל היינו ולד פסול לכהונה מדכתיב ולא יחלל זרעו אבל חללה הנעשית חללה ע\"י ביאה הוצרכו לדרוש בה מקראות כגון זו שהיתה כשרה ונתחללה:"
+  },
+  "Rashi on Kiddushin 77a:16:1": {
+    "dependsOn": [
+      "Kiddushin 77a:16"
+    ],
+    "generatedAt": "2026-11-03T12:31:39.782Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלמנה אלמנה אלמנה</strong> - בא על אלמנה שיש בה שלש שמות של אלמנות:"
+  },
+  "Rashi on Kiddushin 77a:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T12:32:54.242Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינו חייב אלא אחת</strong> - לקמן מפרש לה:"
+  },
+  "Rashi on Kiddushin 77a:17:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 77a:17:1",
+      "Rashi on Kiddushin 77a:17:3",
+      "Rashi on Kiddushin 77a:17:4",
+      "Rashi on Kiddushin 77a:17:5"
+    ],
+    "generatedAt": "2026-11-03T12:34:05.464Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כסדר</strong> - כסדר הזה שנתאלמנה תחילה ונשאת לשני וגירשה ונשאת לכהן ונתחללה ואח\"כ נבעלה לאחד מן הפסולים או לקרובים בעילת זנות ונעשית זונה דמפסולי כהונה חללה איכא זונה ליכא ומשאר איסורים זונה הויא חללה לא הויא כדלקמן:"
+  },
+  "Rashi on Kiddushin 77a:17:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 77a:17:1",
+      "Rashi on Kiddushin 77a:17:2",
+      "Rashi on Kiddushin 77a:17:3",
+      "Rashi on Kiddushin 77a:17:4",
+      "Rashi on Kiddushin 77a:17:5"
+    ],
+    "generatedAt": "2026-11-03T12:35:00.034Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:17:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זינתה</strong> - מקרובים או מממזר:"
+  },
+  "Rashi on Kiddushin 77a:17:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 77a:17:1",
+      "Rashi on Kiddushin 77a:17:2",
+      "Rashi on Kiddushin 77a:17:3",
+      "Rashi on Kiddushin 77a:17:4",
+      "Rashi on Kiddushin 77a:17:5"
+    ],
+    "generatedAt": "2026-11-03T12:35:33.095Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:17:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונתחללה</strong> - שבא עליה כהן ועשאה חללה שהיתה אסורה עליו משום זונה:"
+  },
+  "Rashi on Kiddushin 77a:17:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T12:35:57.436Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:17:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינו חייב אלא אחת</strong> - לקמן מפרש טעמא:"
+  },
+  "Rashi on Kiddushin 77a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T11:53:08.928Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בת חלל זכר</strong> - ודוקא נקט כדקתני ואזיל דבת חללה שנשאת לישראל כשירה לכהונה:"
+  },
+  "Rashi on Kiddushin 77a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T11:53:37.299Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעולם</strong> - בת בנו ובת בן בנו עד סוף כל הדורות של חללים זכר בן זכר בת האחרון פסולה כבת הראשון אבל בת בתו מישראל כשרה דלא חמירא בת חלל מחללה דאמרי' בתה של חללה מישראל כשירה לכהונה:"
+  },
+  "Rashi on Kiddushin 77a:1:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T11:54:05.121Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ישראל שנשא חללה בתו כשירה לכהונה</strong> - וטעמא יליף בגמרא ודוקא ישראל אבל כהן שנשא חללה בתו חללה דכל ולד הנולד בביאת איסור כהונה הוי חלל:"
+  },
+  "Rashi on Kiddushin 77a:1:4": {
+    "dependsOn": [
+      "Kiddushin 77a:1",
+      "Kiddushin 77a:5",
+      "Kiddushin 77a:6",
+      "Kiddushin 77a:8",
+      "Kiddushin 77a:7"
+    ],
+    "generatedAt": "2026-11-03T11:55:29.427Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חלל שנשא בת ישראל בתו פסולה</strong> - בגמ' פריך הא תנא ליה רישא:"
+  },
+  "Rashi on Kiddushin 77a:1:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T11:55:59.476Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:1:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בת גר זכר</strong> - ואפילו מישראלית כבת חלל זכר ופסולה לכהונה אבל בת גיורת מישראל כשירה וטעמא דכולהו הני תנאי דפליגי בגיורת מפרש בגמ':"
+  },
+  "Rashi on Kiddushin 77a:2:1": {
+    "dependsOn": [
+      "Kiddushin 77a:2",
+      "Rashi on Kiddushin 77a:1:4",
+      "Rashi on Kiddushin 77a:1:5",
+      "Kiddushin 78a:12",
+      "Kiddushin 78a:13",
+      "Kiddushin 78a:17",
+      "Kiddushin 78b:3",
+      "Kiddushin 78b:1",
+      "Kiddushin 78b:2",
+      "Kiddushin 78a:18",
+      "Kiddushin 78a:19",
+      "Kiddushin 78a:20",
+      "Kiddushin 78a:21",
+      "Kiddushin 78a:22",
+      "Makkot 4b:6",
+      "Makkot 4b:7",
+      "Makkot 4b:8",
+      "Rashi on Makkot 4b:8:1",
+      "Rashi on Makkot 4b:8:2"
+    ],
+    "generatedAt": "2026-11-03T11:59:40.598Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר' אליעזר בן יעקב אומר כו'</strong> - לית ליה האי דינא דלקמן <span class=\"parenthesized\">(קידושין דף עח.)</span> צד השוה דשאינו ברוב קהל לא פריך דהיינו דומיא דשיש בהן צד חמור ואין חומר שלהם שוה ואיכא למ\"ד בעלמא <span class=\"parenthesized\">(מכות דף ד:)</span> צד חמור לא פריך ומיהו גר שנשא גיורת בתו פסולה דבעי' מזרע בית ישראל כדמפרש בגמרא:"
+  },
+  "Rashi on Kiddushin 77a:3:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 77a:3:1",
+      "Rashi on Kiddushin 77a:3:2",
+      "Kiddushin 77a:2",
+      "Kiddushin 77a:4"
+    ],
+    "generatedAt": "2026-11-03T12:00:37.331Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה להלן</strong> - לענין טומאה הזכרים הוזהרו עליה ולא נקבות דכתיב בני אהרן ולא בנות אהרן:"
+  },
+  "Rashi on Kiddushin 77a:3:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 77a:3:1",
+      "Rashi on Kiddushin 77a:3:2",
+      "Kiddushin 77a:3",
+      "Rashi on Kiddushin 77a:4:1",
+      "Rashi on Kiddushin 77a:4:2",
+      "Rashi on Kiddushin 77a:5:1",
+      "Rashi on Kiddushin 77a:5:2"
+    ],
+    "generatedAt": "2026-11-03T12:01:53.184Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף</strong> - בפסולי חללות זכרים נפסלו ולא נקבות:"
+  },
+  "Rashi on Kiddushin 77a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T12:02:16.987Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה להלן</strong> - לענין טומאה הזכרים הוזהרו עליה ולא נקבות דכתיב בני אהרן ולא בנות אהרן:"
+  },
+  "Rashi on Kiddushin 77a:4:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 77a:4:1",
+      "Kiddushin 77a:4",
+      "Rashi on Kiddushin 77a:5:1",
+      "Rashi on Kiddushin 77a:5:2"
+    ],
+    "generatedAt": "2026-11-03T12:03:36.003Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף</strong> - בפסולי חללות זכרים נפסלו ולא נקבות:"
+  },
+  "Rashi on Kiddushin 77a:5:1": {
+    "dependsOn": [
+      "Kiddushin 77a:5",
+      "Rashi on Kiddushin 77a:5:1",
+      "Rashi on Kiddushin 77a:5:2"
+    ],
+    "generatedAt": "2026-11-03T12:04:28.016Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתו של כ\"ג</strong> - מן האלמנה תישתרי דהא אמרי' נקבות מותרות:"
+  },
+  "Rashi on Kiddushin 77a:5:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 77a:5:1"
+    ],
+    "generatedAt": "2026-11-03T12:05:55.916Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זרעו כתיב</strong> - ואפי' נקבות וכי אהני גזירה שוה לבת בתו אהני:"
+  },
+  "Rashi on Kiddushin 77a:6:1": {
+    "dependsOn": [
+      "Kiddushin 77a:6",
+      "Rashi on Kiddushin 77a:6:2",
+      "Rashi on Kiddushin 77a:6:3"
+    ],
+    "generatedAt": "2026-11-03T12:07:22.723Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בת בנו</strong> - חלל תישתרי דתהני ליה גזירה שוה ולא אפיק קרא אלא זרעו אבל זרע זרעו תכשר בנקבות מג\"ש:"
+  },
+  "Rashi on Kiddushin 77a:6:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 77a:6:1",
+      "Rashi on Kiddushin 77a:6:2",
+      "Rashi on Kiddushin 77a:6:3"
+    ],
+    "generatedAt": "2026-11-03T12:07:54.579Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זרעו</strong> - האב והזרע הוזכרו בתיבה זו והיינו הקישא:"
+  },
+  "Rashi on Kiddushin 77a:6:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 77a:6:1",
+      "Rashi on Kiddushin 77a:6:2",
+      "Rashi on Kiddushin 77a:6:3",
+      "Kiddushin 77a:6"
+    ],
+    "generatedAt": "2026-11-03T12:09:52.444Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בת בתו</strong> - חללה תיתסר מהך הקישא:"
+  },
+  "Rashi on Kiddushin 77a:8:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 77a:8:2"
+    ],
+    "generatedAt": "2026-11-03T12:11:06.409Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשם שבני ישראל מקוה טהרה לחללות</strong> - להכשיר את בתה ממנו לכהונה כך בנות ישראל מקוה טהרה לחללים להכשיר את בתו ממנו לכהונה:"
+  },
+  "Rashi on Kiddushin 77a:8:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 77a:8:1"
+    ],
+    "generatedAt": "2026-11-03T12:11:46.447Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעמיו</strong> - מדלא כתיב בעממיו משמע שאין זרעו מחלל את בתו אלא כשהוא ואשתו מעם אחד ששניהם חללים:"
+  },
+  "Rashi on Kiddushin 77a:9:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 77a:8:1",
+      "Rashi on Kiddushin 77a:8:2"
+    ],
+    "generatedAt": "2026-11-03T12:12:25.988Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היא עצמה מנין</strong> - שהאלמנה מתחללת בביאתו מן התרומה ומן הכהונה ללקות כהן הדיוט הבא עליה אחריו משום חללה:"
+  },
+  "Rashi on Kiddushin 77a:9:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 77a:9:1"
+    ],
+    "generatedAt": "2026-11-03T12:13:08.612Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 77a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היא שעברה עבירה</strong> - דכתיב לא יקחו להזהיר אשה על ידי האיש ביבמות בפ' יש מותרות <span class=\"parenthesized\">(יבמות דף פד:)</span>:"
+  },
+  "Tosafot on Kiddushin 77a:12:1": {
+    "dependsOn": [
+      "Kiddushin 77a:12",
+      "Rashi on Kiddushin 77a:12:1",
+      "Rashi on Kiddushin 77a:12:2",
+      "Kiddushin 77a:8",
+      "Kiddushin 77a:9",
+      "Rashi on Kiddushin 77a:10:1",
+      "Rashi on Kiddushin 77a:10:2"
+    ],
+    "generatedAt": "2026-11-03T12:21:11.152Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 77a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[וכ\"ת איכא למיפרך מה לזרעו שכן יצירתו בעבירה כו'</strong> - תימה אמאי לא אמרינן נבעלה לפסול לה יוכיח שאין יצירתה בעבירה ופסול ואי פרכת מה לנבעלה לפסול לה שכן זר אצלה מעיקרא זרעו יוכיח וחזר הדין וכו' ושמא אין כאן צד השוה או יש שום פירכא. ת\"י]:"
+  }
+}

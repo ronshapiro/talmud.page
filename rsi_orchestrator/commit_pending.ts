@@ -448,7 +448,7 @@ async function updatePrTitleViaGh(
   prNumber: number, title: string, debug = false,
 ): Promise<void> {
   await runSubcommand("gh", [
-    "pr", "edit", String(prNumber), "--repo", REPO, "--title", title,
+    "api", `repos/${REPO}/pulls/${prNumber}`, "-X", "PATCH", "-f", `title=${title}`,
   ], debug);
 }
 
