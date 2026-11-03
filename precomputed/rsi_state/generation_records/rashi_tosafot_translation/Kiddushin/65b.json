@@ -1,4 +1,287 @@
 {
+  "Rashi on Kiddushin 65b:10:1": {
+    "dependsOn": [
+      "Kiddushin 65b:10",
+      "Rashi on Kiddushin 65b:10:2"
+    ],
+    "generatedAt": "2026-11-03T09:56:40.513Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או דלמא</strong> - שאפילו הם מודים אין דבריהם קיימים אלא בעדים ונמצא אני מחזיק בשלו והוא בשלי שאין חלוקתנו כלום:"
+  },
+  "Rashi on Kiddushin 65b:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T09:57:03.155Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשקרי</strong> - הכופרים בדברים לומר לא כן הוא:"
+  },
+  "Rashi on Kiddushin 65b:11:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 65b:11:2"
+    ],
+    "generatedAt": "2026-11-03T09:58:12.569Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אכלת חלב</strong> - בשוגג וחייב אתה קרבן:"
+  },
+  "Rashi on Kiddushin 65b:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T09:59:17.564Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נאמן</strong> - העד וכשר הקרבן ואין כאן משום או הודע אליו חטאתו <span class=\"parenthesized\">(ויקרא ד)</span> ולא שיודיעוהו אחרים והכי דרשינן לה בשמעתא קמייתא דהאשה רבה <span class=\"parenthesized\">(ד' פז:)</span> ולא שיודיעוהו אחרים והוא מכחיש:"
+  },
+  "Rashi on Kiddushin 65b:1:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Kiddushin 65b:1:1"
+    ],
+    "generatedAt": "2026-11-03T09:33:59.477Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרינן הן הן עדי יחוד כו'</strong> - משראוה שנתייחדה עמו אין צריך להעיד על הביאה דכיון דלבו גס בה מחזקינן אותו בחזקת שבא עליה לשם קידושין:"
+  },
+  "Rashi on Kiddushin 65b:2:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 65b:1:1",
+      "Rashi on Kiddushin 65b:3:1",
+      "Rashi on Kiddushin 65b:4:1",
+      "Rashi on Kiddushin 65b:6:1"
+    ],
+    "generatedAt": "2026-11-03T09:34:58.484Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיכא דאמרי</strong> - דרבה משמיה דרב אמר ומאן קרי רב בי דינא רבה רבי:"
+  },
+  "Rashi on Kiddushin 65b:3:1": {
+    "dependsOn": [
+      "Kiddushin 65b:3",
+      "Rashi on Kiddushin 65b:3:2",
+      "Rashi on Kiddushin 65b:4:1",
+      "Rashi on Kiddushin 65b:4:2",
+      "Rashi on Kiddushin 65b:4:3",
+      "Kiddushin 65b:4"
+    ],
+    "generatedAt": "2026-11-03T09:36:22.468Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צריכה שני גיטין</strong> - קס\"ד כדי להתירה לינשא:"
+  },
+  "Rashi on Kiddushin 65b:3:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 65b:3:1"
+    ],
+    "generatedAt": "2026-11-03T09:36:54.385Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וגובה כתובתה מן החבילה</strong> - ממה נפשך והמותר מוטל בספק עד יבא אליהו:"
+  },
+  "Rashi on Kiddushin 65b:4:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 65b:4:1",
+      "Rashi on Kiddushin 65b:4:2",
+      "Rashi on Kiddushin 65b:4:3",
+      "Kiddushin 65b:3",
+      "Rashi on Kiddushin 65a:18:3",
+      "Rashi on Kiddushin 65b:3:1",
+      "Rashi on Kiddushin 65b:3:2"
+    ],
+    "generatedAt": "2026-11-03T09:38:30.066Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי דאית ליה סהדי להאי</strong> - שאמר בפנינו קדשה ואית ליה סהדי נמי להאי:"
+  },
+  "Rashi on Kiddushin 65b:4:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 65b:4:1",
+      "Rashi on Kiddushin 65b:4:2",
+      "Rashi on Kiddushin 65b:4:3",
+      "Kiddushin 65b:3",
+      "Rashi on Kiddushin 65b:3:1",
+      "Rashi on Kiddushin 65b:3:2",
+      "Rashi on Kiddushin 65a:1:1",
+      "Rashi on Kiddushin 65a:1:2",
+      "Rashi on Kiddushin 65a:2:1"
+    ],
+    "generatedAt": "2026-11-03T09:43:04.856Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי מצי אמרה וכו'</strong> - דתיהוי מותר הכתובה שלה ושלהן בספק:"
+  },
+  "Rashi on Kiddushin 65b:4:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 65b:4:1",
+      "Rashi on Kiddushin 65b:4:2",
+      "Kiddushin 65b:4"
+    ],
+    "generatedAt": "2026-11-03T09:44:09.653Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לאו בעד אחד</strong> - לכל אחד וש\"מ דאפי' אינה מודה צריכה גט:"
+  },
+  "Rashi on Kiddushin 65b:5:1": {
+    "dependsOn": [
+      "Kiddushin 65b:5",
+      "Chokhmat Shlomo on Kiddushin 65b:1"
+    ],
+    "generatedAt": "2026-11-03T09:45:18.379Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד אחד בהכחשה</strong> - דאיכא חד סהדא דמכחיש ליה מי מהימן אפי' לא מכחשא ליה איהי ליכא למאן דאמר דאין האחד בא אלא לשבועה והכא שבועה לא שייכא:"
+  },
+  "Rashi on Kiddushin 65b:6:1": {
+    "dependsOn": [
+      "Kiddushin 65b:6",
+      "Kiddushin 65b:4",
+      "Rashi on Kiddushin 65b:6:2"
+    ],
+    "generatedAt": "2026-11-03T09:46:29.420Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צריכה שני גיטין</strong> - כדי לגבות כתובתה מן החבילה כלומר לעולם החבילה מונחת עד שיבא אליהו אלא א\"כ נתנו לה שניהם גט מעצמן והגט מביאה לידי גיבוי כתובה מן החבילה ממה נפשך אם של זה הוא הרי מיחייב לה כתובה על פיו וכן זה וכ\"ש אם כולה שלה:"
+  },
+  "Rashi on Kiddushin 65b:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T09:48:53.686Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור\"מ היא וכו'</strong> - כלומר וכולה לא אשמועינן אלא דמטלטלין משתעבדי לכתובה ור\"מ היא דאמר במס' כתובות בהאשה שנפלו לה נכסים <span class=\"parenthesized\">(דף פ:)</span> גבי שומרת יבם שכתובתה על נכסי בעלה הראשון הניח אחיו מעות ילקח בהם קרקע והוא אוכל פירות אלמא מעות משתעבדי לכתובה:"
+  },
+  "Rashi on Kiddushin 65b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T09:51:07.271Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הודאת בעל דין כמאה עדים</strong> - דכתיב <span class=\"parenthesized\">(שמות כב)</span> אשר יאמר כי הוא זה הרי שסמך על מקצת הודאתו:"
+  },
+  "Rashi on Kiddushin 65b:8:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 65b:8:1",
+      "Rashi on Kiddushin 65b:8:2",
+      "Rashi on Kiddushin 65b:8:3"
+    ],
+    "generatedAt": "2026-11-03T09:51:40.142Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא קא חייב לאחריני</strong> - אינו חב לאחרים בהודאתו זו שאין נפסד אלא הוא:"
+  },
+  "Rashi on Kiddushin 65b:8:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 65b:8:1",
+      "Rashi on Kiddushin 65b:8:2",
+      "Rashi on Kiddushin 65b:6:1",
+      "Rashi on Kiddushin 65b:6:2"
+    ],
+    "generatedAt": "2026-11-03T09:53:26.131Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא קא חייבה לאחריני</strong> - שקרובותיה נאסרו בו וקרוביו נאסרין בה:"
+  },
+  "Rashi on Kiddushin 65b:9:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 65b:9:2",
+      "Steinsaltz on Kiddushin 65b:9"
+    ],
+    "generatedAt": "2026-11-03T09:54:51.803Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65b:9:1"
+    ],
+    "sourceText": "בני רב מרי גרס אחים הוו:"
+  },
+  "Rashi on Kiddushin 65b:9:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 65b:9:1",
+      "Kiddushin 65b:10",
+      "Rashi on Kiddushin 65b:10:1",
+      "Rashi on Kiddushin 65b:10:2"
+    ],
+    "generatedAt": "2026-11-03T09:55:55.873Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 65b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על פי שנים</strong> - שהצריכה תורה למאי הלכתא הצריך עדים משום דאי בעי למיהדר ולומר לא כך היה לא יוכל לומר כן שאלו יעידום הוא שהצריכם הכתוב עדים ואנו אין אנו שקרנים ולא הדרינן בן ואין אנו צריכין עדים:"
+  },
+  "Tosafot on Kiddushin 65b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T09:57:42.087Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 65b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא איברו סהדי אלא לשקרי</strong> - מכאן אמר ר\"ת דאין צריך עדים לעשות קנין והא דאמר פרק חזקת הבתים <span class=\"parenthesized\">(ב\"ב דף מ.)</span> קנין בפני שנים ואין צריך לומר כתובו לאו משום דלא מהני בלא שנים דודאי מהני אפי' בלא שנים אלא ה\"ק קנין הרגיל בפני שנים אין צריך לומר כתובו אבל ודאי אין צריך שנים וכן משמע בפרק הזהב <span class=\"parenthesized\">(ב\"מ דף מה:)</span> דקאמר התם היה עומד בגורן ואין בידו מעות כו' ופריך עלה וניקנינהו ניהליה אגב סודר ומשני דלית ליה סודר ואמאי לא משני דלא היו שם עדים אלא ש\"מ דקנין מהני בלא עדים וכן משמע בפ\"ק דסנהדרין <span class=\"parenthesized\">(דף ו.)</span> דקאמר התם פשרה ביחיד וקי\"ל <span class=\"parenthesized\">(שם)</span> דפשרה צריכה קנין:"
+  },
+  "Tosafot on Kiddushin 65b:11:1": {
+    "dependsOn": [
+      "Maharsha: Chidushei Halachot on Kiddushin 65b:2",
+      "Rashi on Kiddushin 65b:11:1",
+      "Rashi on Kiddushin 65b:11:2",
+      "Tosafot on Yevamot 87b:22:1",
+      "Tosafot on Kiddushin 65b:11:2"
+    ],
+    "generatedAt": "2026-11-03T10:02:15.681Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 65b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר לו עד אחד אכלת חלב והלה שותק נאמן</strong> - פירוש דשתיקה כהודאה דמי והוי נודע לו מעצמו אבל אמר לו איני יודע אינו נאמן לחייבו קרבן דכתיב <span class=\"parenthesized\">(ויקרא ד׳:כ״ג)</span> או הודע אליו ולא שיודיעוהו אחרים ודווקא אחד אבל שנים נאמנים ומביא קרבן על ידם כדאמר התם <span class=\"parenthesized\">(כריתות דף יא:)</span> אם הביאוהו שנים לידי מיתה חמורה לא יביאוהו לידי קרבן הקל וצריך נמי לפרש והלה שותק דאמר לו העד אכלת חלב והיה לך לידע והוא שותק:"
+  },
   "Tosafot on Kiddushin 65b:11:2": {
     "dependsOn": [],
     "generatedAt": "2026-11-02T19:28:40.203Z",

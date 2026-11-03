@@ -1,0 +1,387 @@
+{
+  "Rashi on Kiddushin 82a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T19:11:36.668Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכל לשם שמים</strong> - ואין דעתי אחריה לחיבת אישות אלא לחיבת קורבה ולעשות קורת רוח לאמה כשאני מחבב את בתה:"
+  },
+  "Rashi on Kiddushin 82a:2:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 82a:2:2",
+      "Rashi on Kiddushin 82a:2:3",
+      "Rashi on Kiddushin 82a:2:4"
+    ],
+    "generatedAt": "2026-11-03T19:13:48.837Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא ילמד רווק סופרים</strong> - רווק פנוי בלא אשה:"
+  },
+  "Rashi on Kiddushin 82a:2:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 82a:2:1",
+      "Rashi on Kiddushin 82a:2:3"
+    ],
+    "generatedAt": "2026-11-03T19:14:47.618Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סופרים</strong> - מלמדי תינוקות כלומר לא ירגיל רווק עצמו להיות מן הסופרים ובגמר' מפרש טעמא וכן לא תלמד אשה סופרים לא תרגיל עצמה להיות ממלמדי תינוקות:"
+  },
+  "Rashi on Kiddushin 82a:2:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T19:15:18.615Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף מי שאין לו אשה</strong> - בגמרא מפרש מאי היא:"
+  },
+  "Rashi on Kiddushin 82a:2:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 82a:2:3",
+      "Rashi on Kiddushin 82a:2:4",
+      "Rashi on Kiddushin 82a:2:5",
+      "Kiddushin 82a:2",
+      "Rashi on Kiddushin 82a:2:6"
+    ],
+    "generatedAt": "2026-11-03T19:16:46.092Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא ירעה רווק את הבהמות</strong> - שלא יתאוה לה:"
+  },
+  "Rashi on Kiddushin 82a:2:5": {
+    "dependsOn": [
+      "Rashi on Kiddushin 82a:2:5",
+      "Rashi on Kiddushin 82a:2:1",
+      "Rashi on Kiddushin 82a:2:2",
+      "Rashi on Kiddushin 82a:2:3",
+      "Rashi on Kiddushin 82a:2:4",
+      "Rashi on Kiddushin 82a:2:6",
+      "Rashi on Kiddushin 82a:3:2",
+      "Kiddushin 82a:3",
+      "Kiddushin 82a:5"
+    ],
+    "generatedAt": "2026-11-03T19:18:31.236Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:2:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא יישנו שני רווקים בטלית אחת</strong> - שלא יבואו לידי משכב זכור:"
+  },
+  "Rashi on Kiddushin 82a:2:6": {
+    "dependsOn": [
+      "Rashi on Kiddushin 82a:2:4",
+      "Rashi on Kiddushin 82a:2:5"
+    ],
+    "generatedAt": "2026-11-03T19:19:10.615Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:2:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחכמים מתירין</strong> - שלא נחשדו במשכב זכור ובהמה:"
+  },
+  "Rashi on Kiddushin 82a:3:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 82a:3:1",
+      "Rashi on Kiddushin 82a:3:2",
+      "Rashi on Kiddushin 82a:3:3",
+      "Kiddushin 82a:3",
+      "Rashi on Kiddushin 82a:2:1",
+      "Rashi on Kiddushin 82a:2:2",
+      "Rashi on Kiddushin 82a:2:3",
+      "Rashi on Kiddushin 82a:2:4",
+      "Rashi on Kiddushin 82a:2:5",
+      "Rashi on Kiddushin 82a:2:6",
+      "Rashi on Kiddushin 81b:1:1",
+      "Rashi on Kiddushin 81b:2:1"
+    ],
+    "generatedAt": "2026-11-03T19:23:05.831Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מ\"ט</strong> - לא ילמד רווק סופרים אי נימא משום דחשידי רווקים אמשכב זכור דתינוקות:"
+  },
+  "Rashi on Kiddushin 82a:3:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 82a:3:1",
+      "Rashi on Kiddushin 82a:3:3"
+    ],
+    "generatedAt": "2026-11-03T19:24:32.101Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרו לו לר' יהודה</strong> - דמתניתין דאמר לא יישנו שני רווקין בטלית אחת:"
+  },
+  "Rashi on Kiddushin 82a:3:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T19:24:54.467Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום אמהתא דינוקי</strong> - אמותיהם של תינוקות שמצויות אצלו להביא את בניהן לבית הספר:"
+  },
+  "Rashi on Kiddushin 82a:4:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 82a:2:1",
+      "Rashi on Kiddushin 82a:2:2",
+      "Kiddushin 82a:2",
+      "Rashi on Kiddushin 81b:6:1",
+      "Rashi on Kiddushin 81a:1:1",
+      "Rashi on Kiddushin 81a:1:2"
+    ],
+    "generatedAt": "2026-11-03T19:26:55.711Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי שאין לו אשה כלל</strong> - ומוסיף אדתנא קמא דקאמר רווק שלא נשא אשה מימיו ואתא ר' אלעזר למימר אפילו היתה לו ומתה אבל יש לו ואינה שרויה אצלו מותר או דלמא כו':"
+  },
+  "Rashi on Kiddushin 82a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T19:27:51.964Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל שעסקיו עם הנשים</strong> - שמלאכת אומנותו נעשית לנשים והנשים צריכות לו:"
+  },
+  "Rashi on Kiddushin 82a:6:2": {
+    "dependsOn": [
+      "Kiddushin 80b:1",
+      "Kiddushin 80b:2"
+    ],
+    "generatedAt": "2026-11-03T19:28:49.783Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא יתייחד עם הנשים</strong> - אפילו עם הרבה נשים לפי שלבו גס בהו וכולן מחפות עליו ואילו איש אחרינא בין שתי נשים תנן <span class=\"parenthesized\">(לעיל קידושין דף פ:)</span> אבל עם שלש או ארבע שפיר דמי:"
+  },
+  "Rashi on Kiddushin 82a:6:3": {
+    "dependsOn": [
+      "Kiddushin 82a:6"
+    ],
+    "generatedAt": "2026-11-03T19:29:24.774Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נקיה וקלה</strong> - מפרש בגמ' שפיר:"
+  },
+  "Rashi on Kiddushin 82a:6:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 82a:6:1",
+      "Rashi on Kiddushin 82a:6:2",
+      "Rashi on Kiddushin 82a:6:3",
+      "Rashi on Kiddushin 82a:6:4",
+      "Kiddushin 82a:6",
+      "Rashi on Kiddushin 82a:2:1",
+      "Rashi on Kiddushin 82a:2:2",
+      "Rashi on Kiddushin 82a:8:1"
+    ],
+    "generatedAt": "2026-11-03T19:31:14.826Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:6:4"
+    ],
+    "sourceText": "ואל יאמר בלבו אומנות זו אינה מעשרת אלא יבקש רחמים למי שהעושר שלו:"
+  },
+  "Rashi on Kiddushin 82a:8:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 82a:8:2",
+      "Rashi on Kiddushin 82a:8:3",
+      "Steinsaltz on Kiddushin 82a:8:1",
+      "Steinsaltz on Kiddushin 82a:8",
+      "Chidushei Agadot on Kiddushin 82a:5",
+      "Steinsaltz comment #1 on Kiddushin 82a:8",
+      "Steinsaltz comment #2 on Kiddushin 82a:8"
+    ],
+    "generatedAt": "2026-11-03T19:38:29.590Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חמר גמל ספן קדר</strong> - בעלי קרנות כל אלו אומנות ליסטיות כשלנים בדרכים הם נכנסים ולוקטים עצים מן הכרמים ופירות ועוד שנשכרים לאדם ומעבירין על תנאם:"
+  },
+  "Rashi on Kiddushin 82a:8:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 82a:8:1",
+      "Rashi on Kiddushin 82a:8:2",
+      "Rashi on Kiddushin 82a:8:3"
+    ],
+    "generatedAt": "2026-11-03T19:39:27.563Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רועה</strong> - בהמות שלו שמעבירן לרעות בשדה אחרים:"
+  },
+  "Rashi on Kiddushin 82a:8:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T19:39:50.960Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חנוני</strong> - מלומד באונאה להטיל מים ביין צרורות בחטין:"
+  },
+  "Rashi on Kiddushin 82a:8:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 82a:8:3",
+      "Rashi on Kiddushin 82a:8:5"
+    ],
+    "generatedAt": "2026-11-03T19:40:19.770Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משמו</strong> - של אבא גוריא:"
+  },
+  "Rashi on Kiddushin 82a:8:5": {
+    "dependsOn": [
+      "Rashi on Kiddushin 82a:8:1",
+      "Rashi on Kiddushin 82a:8:2",
+      "Rashi on Kiddushin 82a:8:3",
+      "Rashi on Kiddushin 82a:8:4",
+      "Rashi on Kiddushin 82a:8:5",
+      "Rashi on Kiddushin 82a:8:6"
+    ],
+    "generatedAt": "2026-11-03T19:41:53.864Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:8:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">החמרים רובן רשעים</strong> - מפני ליסטיות:"
+  },
+  "Rashi on Kiddushin 82a:8:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T19:42:17.333Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:8:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הגמלין רובן כשרים</strong> - שפורשין למדברות למקום גדודי חיות וליסטין ויראים לנפשם ומשברים לבם למקום:"
+  },
+  "Rashi on Kiddushin 82a:8:7": {
+    "dependsOn": [
+      "Rashi on Kiddushin 82a:8:6"
+    ],
+    "generatedAt": "2026-11-03T19:42:47.320Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82a:8:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הספנין רובן חסידים</strong> - שפורשין למקום הסכנה ותמיד הם ברעדה יותר מן הגמלין:"
+  },
+  "Tosafot on Kiddushin 82a:1:1": {
+    "dependsOn": [
+      "Kiddushin 82a:1",
+      "Shulchan Arukh, Even HaEzer 21:5"
+    ],
+    "generatedAt": "2026-11-03T19:12:41.070Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 82a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכל לשם שמים</strong> - ועל זו אנו סומכין השתא שאנו משתמשים בנשים:"
+  },
+  "Tosafot on Kiddushin 82a:2:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 82a:2:1",
+      "Rashi on Kiddushin 82a:2:2"
+    ],
+    "generatedAt": "2026-11-03T19:20:30.712Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 82a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא ילמד רווק סופרים</strong> - פי' תלמידים רווק הוא אדם פנוי שלא נשא אשה מעולם ותרגום של ובחורים כשול יכשלו הוא רווקים <span class=\"parenthesized\">(ישעיהו מ׳:ל׳)</span>:"
+  },
+  "Tosafot on Kiddushin 82a:2:2": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 82a:2:1"
+    ],
+    "generatedAt": "2026-11-03T19:21:06.827Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 82a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא ירעה בהמה</strong> - מפני שיש לו תאוה יותר מאיש אחר שנשא אשה:"
+  },
+  "Tosafot on Kiddushin 82a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T19:27:23.635Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 82a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא ירעה בהמה</strong> - מפני שיש לו תאוה יותר מאיש אחר שנשא אשה:"
+  },
+  "Tosafot on Kiddushin 82a:6:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 82a:6:1",
+      "Rashi on Kiddushin 82a:6:2",
+      "Rashi on Kiddushin 82a:6:3",
+      "Rashi on Kiddushin 82a:6:4",
+      "Rosh on Kiddushin 4:26:1"
+    ],
+    "generatedAt": "2026-11-03T19:33:11.933Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 82a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא יתייחד עם הנשים</strong> - <span class=\"rashi-quotation\">פי' בקונט'</span> ואפילו עם נשים הרבה ודווקא רוכל אבל איש אחר מותר וקשה להר\"ם דאמר לעיל <span class=\"parenthesized\">(קידושין דף פא.)</span> אנשים מבפנים ונשים מבחוץ חוששין משום יחוד משמע דאסור להתייחד עם נשים הרבה לכ\"ע לכן נ\"ל לא יתייחד עם הנשים אפילו אשתו עמו דשרינן לעיל <span class=\"parenthesized\">(קידושין דף פ:)</span> דכיון דהוי רוכל איכא חששא טפי:"
+  },
+  "Tosafot on Kiddushin 82a:6:2": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 82a:6:1",
+      "Moed Katan 28a:13",
+      "Rashi on Kiddushin 82a:6:4"
+    ],
+    "generatedAt": "2026-11-03T19:35:25.108Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 82a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא הכל לפי זכותו</strong> - פירוש לפי מזלו דבני וחיי ומזוני לאו בזכותא תליא מילתא אלא במזלא תליא מילתא:"
+  }
+}

@@ -1,0 +1,466 @@
+{
+  "Rashi on Kiddushin 79b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T15:55:34.643Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 79b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינו צריך להביא ראיה לא על האשה</strong> - שהיא מיוחסת שכבר בדקוה כשנשאה:"
+  },
+  "Rashi on Kiddushin 79b:10:2": {
+    "dependsOn": [
+      "Kiddushin 79b:10"
+    ],
+    "generatedAt": "2026-11-03T15:56:05.977Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 79b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא על הבנים</strong> - כדמוקי בגמרא בקטנים וכרוכים אחריה דבחזקת אמן הן ואין צריכים לייחס ע\"י עדים:"
+  },
+  "Rashi on Kiddushin 79b:10:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 79b:10:1",
+      "Rashi on Kiddushin 79b:10:2",
+      "Rashi on Kiddushin 79b:10:3",
+      "Rashi on Kiddushin 79b:10:4",
+      "Steinsaltz comment #1 on Kiddushin 79b:10",
+      "Steinsaltz comment #2 on Kiddushin 79b:10",
+      "Steinsaltz comment #3 on Kiddushin 79b:10",
+      "Kiddushin 79b:11",
+      "Kiddushin 79b:12",
+      "Rashi on Kiddushin 79b:11:1",
+      "Maharshal on Kiddushin 79b:7:1",
+      "Tosafot on Kiddushin 79b:10:1",
+      "Rashi on Kiddushin 79b:1:1",
+      "Rashi on Kiddushin 79b:2:1",
+      "Rashi on Kiddushin 79b:3:1"
+    ],
+    "generatedAt": "2026-11-03T16:02:46.977Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 79b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מביא ראיה על הבנים</strong> - שהיא מיוחסת ואינו מביא ראיה על הבנים שהרי כרוכין אחריה:"
+  },
+  "Rashi on Kiddushin 79b:10:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 79b:10:1",
+      "Rashi on Kiddushin 79b:10:2",
+      "Rashi on Kiddushin 79b:10:3",
+      "Rashi on Kiddushin 79b:10:4"
+    ],
+    "generatedAt": "2026-11-03T16:03:20.189Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 79b:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין צריך להביא ראיה על האשה</strong> - שהיתה מיוחסת לפי שכבר בדקו אחריה כשנשאה כאן:"
+  },
+  "Rashi on Kiddushin 79b:11:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 79b:11:1",
+      "Rashi on Kiddushin 79b:11:2",
+      "Rashi on Kiddushin 79b:10:1",
+      "Rashi on Kiddushin 79b:10:2",
+      "Rashi on Kiddushin 79b:10:3",
+      "Rashi on Kiddushin 79b:10:4",
+      "Kiddushin 79b:10",
+      "Kiddushin 79b:11",
+      "Steinsaltz on Kiddushin 79b:11",
+      "Steinsaltz comment #1 on Kiddushin 79b:11",
+      "Rashi on Kiddushin 79b:6:1",
+      "Rashi on Kiddushin 79b:7:1"
+    ],
+    "generatedAt": "2026-11-03T16:07:50.117Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 79b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מביא ראיה על האשה</strong> - שהיו בני אותה אשה:"
+  },
+  "Rashi on Kiddushin 79b:11:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 79b:11:1",
+      "Rashi on Kiddushin 79b:10:1",
+      "Rashi on Kiddushin 79b:10:2",
+      "Rashi on Kiddushin 79b:10:3",
+      "Rashi on Kiddushin 79b:10:4",
+      "Steinsaltz on Kiddushin 79b:11",
+      "Rosh on Kiddushin 4:20:1"
+    ],
+    "generatedAt": "2026-11-03T16:09:15.112Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 79b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתה ואלו בניה</strong> - שאין כאן שום הוכחה מביא ראיה על האשה שהיא מיוחסת ועל הבנים שמאותה אשה היו:"
+  },
+  "Rashi on Kiddushin 79b:12:1": {
+    "dependsOn": [
+      "Kiddushin 79b:10",
+      "Kiddushin 79b:11",
+      "Rashi on Kiddushin 79b:12:2"
+    ],
+    "generatedAt": "2026-11-03T16:10:25.021Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 79b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכולן</strong> - דקתני מתניתין א\"צ להביא ראיה על הבנים:"
+  },
+  "Rashi on Kiddushin 79b:12:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 79b:12:1",
+      "Steinsaltz on Kiddushin 79b:12"
+    ],
+    "generatedAt": "2026-11-03T16:11:19.483Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 79b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכרוכין אחריה</strong> - נדבקין אצלה:"
+  },
+  "Rashi on Kiddushin 79b:13:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 79b:13:1",
+      "Rashi on Kiddushin 79b:13:2",
+      "Steinsaltz on Kiddushin 79b:13",
+      "Steinsaltz comment #1 on Kiddushin 79b:13",
+      "Tosefta Kifshutah on Kiddushin 5:4:13",
+      "Kiddushin 79b:10",
+      "Kiddushin 79b:11",
+      "Kiddushin 79b:12"
+    ],
+    "generatedAt": "2026-11-03T16:13:33.516Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 79b:13:1"
+    ],
+    "sourceText": "ת\"ר נשאתי אשה במדינת הים מביא ראיה על האשה וא\"צ להביא ראיה על הבנים. ומסיים ואזיל באלו בנים אמרו בקטנים ולא בגדולים דאם הביא ראיה על הגדולים שאין כרוכין אחר האם אין מביא ראיה על הקטנים:"
+  },
+  "Rashi on Kiddushin 79b:13:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 79b:13:1"
+    ],
+    "generatedAt": "2026-11-03T16:14:19.620Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 79b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באשה אחת</strong> - שאמר אשה אחת נשאתי אבל אמר שתי נשים היו ומתה האחת ואלו בניה של זו מביא ראיה עליה שהיא מיוחסת ועל הבנים שהם בניה על הגדולים ועל הקטנים ואפילו כרוכין אחריה דשמא בניה של חברתה היו וגדלתן:"
+  },
+  "Rashi on Kiddushin 79b:1:1": {
+    "dependsOn": [
+      "Kiddushin 79b:1"
+    ],
+    "generatedAt": "2026-11-03T15:25:01.615Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 79b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי מוציא מיד מי</strong> - הכותב נכסיו לאחרים ולא שייר כלום דקי\"ל <span class=\"parenthesized\">(ב\"ב דף קמו:)</span> בשכיב מרע שאין מתנתו מתנה אם עמד דגלי דעתיה מדלא שייר מידי דמצוה מחמת מיתה היה ואם בריא היה מתנתו מתנה ועכשיו הוא אומר שכיב מרע הייתי והן אומרים בריא היה מי מוציא נכסים מיד מי:"
+  },
+  "Rashi on Kiddushin 79b:2:1": {
+    "dependsOn": [
+      "Kiddushin 79b:2"
+    ],
+    "generatedAt": "2026-11-03T15:25:55.358Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 79b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוא מוציא מידם</strong> - אם עמדו והחזיקו בנכסים ואין צריך להביא ראיה שהיה שכ\"מ ואפילו הוא בריא עכשיו בשעת חזרה לא אמרינן מדהשתא בריא מעיקרא בשעת מתנה נמי בריא:"
+  },
+  "Rashi on Kiddushin 79b:2:2": {
+    "dependsOn": [
+      "Kiddushin 79b:2"
+    ],
+    "generatedAt": "2026-11-03T15:26:37.746Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 79b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי נתן אומר אם בריא הוא</strong> - עכשיו בשעת חזרה עליו להביא ראיה ואי לא מייתי מחזקינן ליה כי השתא והיינו כרב:"
+  },
+  "Rashi on Kiddushin 79b:2:3": {
+    "dependsOn": [
+      "Kiddushin 79b:2",
+      "Rashi on Kiddushin 79b:2:1",
+      "Rashi on Kiddushin 79b:2:2",
+      "Rashi on Kiddushin 79b:2:3"
+    ],
+    "generatedAt": "2026-11-03T15:27:32.002Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 79b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי נתן אומר אם בריא הוא</strong> - עכשיו בשעת חזרה עליו להביא ראיה ואי לא מייתי מחזקינן ליה כי השתא והיינו כרב:"
+  },
+  "Rashi on Kiddushin 79b:3:1": {
+    "dependsOn": [
+      "Kiddushin 79b:3"
+    ],
+    "generatedAt": "2026-11-03T15:29:34.819Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 79b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושמואל דאמר כרבי יעקב</strong> - דלא אזיל בתר השתא אלא אמרינן שמא בשעת מתנה שכיב מרע היה:"
+  },
+  "Rashi on Kiddushin 79b:3:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 79b:3:1",
+      "Rashi on Kiddushin 79b:3:2",
+      "Rashi on Kiddushin 79b:3:3",
+      "Kiddushin 79b:3"
+    ],
+    "generatedAt": "2026-11-03T15:30:21.130Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 79b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם כו'</strong> - וכיון דספיקא הוא אמרינן העמד ממון על חזקה שהיה מוחזק בה קודם מתנה זו שהיה ספק:"
+  },
+  "Rashi on Kiddushin 79b:3:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 79b:3:1",
+      "Rashi on Kiddushin 79b:3:2",
+      "Kiddushin 79b:3"
+    ],
+    "generatedAt": "2026-11-03T15:31:59.939Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 79b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי איכא למימר העמד הגוף על חזקתו</strong> - ותהוי נערה יומא דמשלם שית אין בה לא חזקת נערות ולא חזקת בגרות שהיום היא עומדת להשתנות:"
+  },
+  "Rashi on Kiddushin 79b:4:1": {
+    "dependsOn": [
+      "Kiddushin 79b:4",
+      "Rashi on Kiddushin 79b:3:1",
+      "Rashi on Kiddushin 79b:3:2",
+      "Rashi on Kiddushin 79b:3:3",
+      "Rashi on Kiddushin 79a:11:2",
+      "Tosafot on Kiddushin 79b:4:1",
+      "Steinsaltz on Kiddushin 79b:4",
+      "Rashi on Kiddushin 79a:6:2"
+    ],
+    "generatedAt": "2026-11-03T15:38:18.923Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 79b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי מפקא נפשה מחזקה</strong> - כלומר כי מספקינן לה בנערה מי מפקינן לה מחזקת הרבה נערות ביום משלם שית:"
+  },
+  "Rashi on Kiddushin 79b:6:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 79b:2:1",
+      "Rashi on Kiddushin 79b:3:1",
+      "Kiddushin 79b:4",
+      "Kiddushin 79b:5",
+      "Rashi on Kiddushin 79b:7:1",
+      "Rashi on Kiddushin 79b:7:2",
+      "Rashi on Kiddushin 79b:7:3"
+    ],
+    "generatedAt": "2026-11-03T15:41:02.148Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 79b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במכחשתו</strong> - והא דקתני הרי היא בוגרת לפנינו במכחשתו לאביה לומר כבר בגרתי מאתמול:"
+  },
+  "Rashi on Kiddushin 79b:7:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 79b:7:1",
+      "Rashi on Kiddushin 79b:7:2",
+      "Rashi on Kiddushin 79b:7:3",
+      "Chokhmat Shlomo on Kiddushin 79b:2"
+    ],
+    "generatedAt": "2026-11-03T15:48:34.528Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 79b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כולי עלמא כיילי לה</strong> - קפידא הוא דקפיד עליה ואמר לכל תלמידים נמדדה חכמה בקב קטן שיראים לסמוך על חכמתם ולהתיר ספק אשת איש:"
+  },
+  "Rashi on Kiddushin 79b:7:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 79b:7:1",
+      "Rashi on Kiddushin 79b:7:3",
+      "Rashi on Kiddushin 79b:2:1",
+      "Rashi on Kiddushin 79b:3:1",
+      "Steinsaltz on Kiddushin 79b:7"
+    ],
+    "generatedAt": "2026-11-03T15:50:25.083Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 79b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והאי מדרבנן כיילי ליה</strong> - חכמה בקבא רבה שפכו לו חכמה יתירה וסומך על בינתו להתיר ספק ולומר מדהשתא בוגרת בצפרא נמי בוגרת:"
+  },
+  "Rashi on Kiddushin 79b:7:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 79b:7:1",
+      "Rashi on Kiddushin 79b:7:2"
+    ],
+    "generatedAt": "2026-11-03T15:51:03.978Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 79b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמאי קפיד</strong> - הא רב במכחשתו קאמר והאי דעבד עובדא כוותיה במכחשתו עבד אלא ודאי באין מכחשתו פליגי והאי בשאין מכחשתו עבד עובדא:"
+  },
+  "Tosafot on Kiddushin 79b:10:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 79b:10:1",
+      "Rashi on Kiddushin 79b:10:2",
+      "Rashi on Kiddushin 79b:10:3",
+      "Rashi on Kiddushin 79b:10:4",
+      "Kiddushin 79b:10",
+      "Tosafot on Kiddushin 79b:6:1",
+      "Tosafot on Kiddushin 79b:6:2",
+      "Tosafot on Kiddushin 75a:10:1"
+    ],
+    "generatedAt": "2026-11-03T16:06:01.821Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 79b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מביא ראיה על הבנים ואינו מביא ראיה על האשה</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> שהאשה היתה נבדקת כבר בד' אמהות קודם שהוליכה למדינת הים ובגמ' מוקי בכרוכין אחריה וא\"ת מאי קמ\"ל מתני' דאין צריך להביא ראיה על האשה פשיטא דכיון דנבדקת כבר דשוב אין צריך להביא ראיה ועוד קשה אמאי איצטריך לחזור ולמיתני הא תני ליה ברישא לכן פר\"י אין צריך להביא ראיה על הבנים שהן שלו דלא אמרינן שלקחה האשה איש אחר במדינת הים ולא על האשה שיהיו בניה דכיון דכרוכין אחריה מתה מביא ראיה על הבנים פי' שהבנים שלו מן האשה שמתה אבל אינו מביא ראיה שהם מן האשה שהלכה עמו למדינת הים דידעינן בה שהיא מיוחסת שהרי כבר בדקנוה אלא מאחר שהביא ראיה שהבנים הם מאשתו שמתה במדינת הים אין צריך תו להביא ראיה שאותה אשה היתה מיוחסת דאין לחוש שלקח אשה אחרת שם והוליד ממנה אלו בנים דמסתמא מאשתו שהוציא מכאן הם מאחר שלא שמענו שנשא שם אשה אחרת והאשה שהוציא מכאן כבר בדקנוה קודם שהלכה למדינת הים:"
+  },
+  "Tosafot on Kiddushin 79b:2:1": {
+    "dependsOn": [
+      "Kiddushin 79b:2",
+      "Maharsha on Kiddushin 79b:1"
+    ],
+    "generatedAt": "2026-11-03T15:28:59.799Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 79b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[והן אין מוציאין מידו בלא ראיה</strong> - וא\"ת כיון דתנא דהוא מוציא מידם אפילו הוחזקו בהם בלא ראיה כ\"ש דאין מוציאין מידו וי\"ל דהא קמ\"ל דבראיה מיהא מוציאין דה\"א כיון דלא כתב כדמהלך על רגלוהי כו' אפילו בראיה לא מפקי כו'. ת\"י]:"
+  },
+  "Tosafot on Kiddushin 79b:3:1": {
+    "dependsOn": [
+      "Kiddushin 79b:3",
+      "Rashi on Kiddushin 79b:3:1",
+      "Rashi on Kiddushin 79b:3:2",
+      "Rashi on Kiddushin 79b:3:3",
+      "Tosafot on Kiddushin 79b:2:1",
+      "Tosafot on Kiddushin 79a:8:1"
+    ],
+    "generatedAt": "2026-11-03T15:34:40.258Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 79b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי איכא למימר העמד הגוף על חזקתו</strong> - פי' ותיהוי נערה יומא דמשלים שית הרי היום עשויה להשתנות וא\"כ אין בה חזקה דנערות ולא חזקה דבגרות ור\"י פי' דרגילות הן לבא בבקר ואין שייך חזקה דנערות:"
+  },
+  "Tosafot on Kiddushin 79b:4:1": {
+    "dependsOn": [
+      "Kiddushin 79b:4",
+      "Tosafot on Kiddushin 79b:3:1",
+      "Rashi on Kiddushin 79b:4:1"
+    ],
+    "generatedAt": "2026-11-03T15:39:19.958Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 79b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא הכא מי מפקא נפשה מחזקה</strong> - אי מספקינן לה בנערות הרי היום אין לה חזקה משום דבר לא מנערות ולא מבגרות שהרי היום עשויה להשתנות:"
+  },
+  "Tosafot on Kiddushin 79b:6:1": {
+    "dependsOn": [
+      "Tosafot on Kiddushin 79b:6:1",
+      "Tosafot on Kiddushin 79b:6:2",
+      "Tosafot on Kiddushin 79b:4:1",
+      "Tosafot on Kiddushin 79b:2:1",
+      "Tosafot on Kiddushin 79b:3:1",
+      "Tosafot on Kiddushin 79b:7:1",
+      "Rashi on Kiddushin 79b:6:1"
+    ],
+    "generatedAt": "2026-11-03T15:43:20.107Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 79b:6:1"
+    ],
+    "sourceText": "במכחשתו -"
+  },
+  "Tosafot on Kiddushin 79b:6:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 79b:6:1",
+      "Tosafot on Kiddushin 79b:6:1",
+      "Kiddushin 79b:6",
+      "Tosafot on Kiddushin 79b:10:1",
+      "Tosafot on Kiddushin 79b:4:1"
+    ],
+    "generatedAt": "2026-11-03T15:47:27.544Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 79b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במכחשתו</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> שמכחשת אביה ואומרת בגרתי מאתמול ולא דק דהא ביומא דמשלים שית איירי:"
+  },
+  "Tosafot on Kiddushin 79b:7:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 79b:7:1",
+      "Rashi on Kiddushin 79b:7:2",
+      "Rashi on Kiddushin 79b:7:3",
+      "Maharsha: Chidushei Halachot on Kiddushin 79b:2",
+      "Chokhmat Shlomo on Kiddushin 79b:1",
+      "Steinsaltz comment #1 on Kiddushin 79b:7",
+      "Kiddushin 79b:7",
+      "Kiddushin 79b:8",
+      "Tosafot on Kiddushin 79b:6:1",
+      "Tosafot on Kiddushin 79b:6:2",
+      "Steinsaltz on Kiddushin 79b:8"
+    ],
+    "generatedAt": "2026-11-03T15:54:15.847Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 79b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי ס\"ד לא פליגי אמאי קפיד</strong> - כי עביד רב יוסף בר מנשיא עובדא במכחשתו דהא שמואל נמי מודה לרב דאינה מקודשת אלא ש\"מ דפליגי מיהא באין מכחשתו דרב נמי דקאמר מילתיה דאינה מקודשת באין מכחשתו ורב יוסף עבד עובדא כוותיה ואית ספרים דגרסי ודלמא כי עבד רב יוסף באין מכחשתו ולפיכך כעס שמואל דאפילו רב נמי מודה לשמואל דחיישינן וצריך גט מספק ורב יוסף עבד עובדא דלא כחד ולא נהירא דהא מתוך לישנא דגמרא משמע דלכל הפחות כרב עביד כדקאמר עבד עובדא כרב:"
+  },
+  "Tosafot on Kiddushin 79b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T15:55:11.795Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 79b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והילכתא כוותיה דרב</strong> - ואף על גב דבכולי גמרא קי\"ל <span class=\"parenthesized\">(בכורות דף מט:)</span> דהילכתא כוותיה דרב באיסורי הוצרך לפסוק כאן הלכה כמותו משום דאיכא אמוראי דפסקי כשמואל:"
+  }
+}

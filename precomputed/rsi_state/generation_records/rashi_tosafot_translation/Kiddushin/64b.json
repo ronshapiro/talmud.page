@@ -23,6 +23,167 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">בההיא קאמר ר\"מ</strong> - כולן בספק דשבח הוא לאדם לקרות בתו בלשון גדולה אם יש קטנה ממנה:"
   },
+  "Rashi on Kiddushin 64b:11:1": {
+    "dependsOn": [
+      "Kiddushin 64b:11",
+      "Rashi on Kiddushin 64b:10:1",
+      "Rashi on Kiddushin 64b:10:2",
+      "Rashi on Kiddushin 64b:11:1",
+      "Rashi on Kiddushin 64b:11:2"
+    ],
+    "generatedAt": "2026-11-03T08:50:52.072Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל קטנה אימא מודה לר' יוסי</strong> - דכל שהוא יכול לקרות בתו גדולה אין קורא אותה קטנה:"
+  },
+  "Rashi on Kiddushin 64b:11:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64b:11:1",
+      "Rashi on Kiddushin 64b:10:1",
+      "Rashi on Kiddushin 64b:10:2",
+      "Kiddushin 64b:9",
+      "Rashi on Kiddushin 64b:9:1",
+      "Rashi on Kiddushin 64b:9:2",
+      "Rashi on Kiddushin 64b:9:3"
+    ],
+    "generatedAt": "2026-11-03T08:52:15.648Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בההיא קאמר ר\"מ</strong> - כולן בספק דשבח הוא לאדם לקרות בתו בלשון גדולה אם יש קטנה ממנה:"
+  },
+  "Rashi on Kiddushin 64b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T08:52:47.617Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד הפסח</strong> - לענין נדרים קונם שאיני נהנה לך עד הפסח אסור עד שיגיע ומשנכנס ליל ראשון מותר ואם אמר עד שיהא פסח אסור עד שיצא פסח דכיון דאמר לישנא יתירא בעוד שיהא פסח קאמר:"
+  },
+  "Rashi on Kiddushin 64b:13:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64b:13:2",
+      "Rashi on Kiddushin 64b:11:1",
+      "Rashi on Kiddushin 64b:12:1"
+    ],
+    "generatedAt": "2026-11-03T08:53:59.415Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נדר עד פני הפסח ר\"מ אומר עד שיגיע</strong> - ומשיגיע אין כאן פני פסח ואע\"פ שכל יום ויום של פסח פני הוא לחבירו לא מחית איניש נפשיה לספיקא שיהא צריך לשאול איזה הוא וכי קאמר פני קמא דכולה קאמר שהוא פני שבכולן:"
+  },
+  "Rashi on Kiddushin 64b:13:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64b:13:1"
+    ],
+    "generatedAt": "2026-11-03T08:54:57.320Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור' יוסי אומר עד שיצא</strong> - דכל חד וחד הוי פני לחבירו ולא ידעי הי נינהו אפי' אחרון הוי תחלתו פני לסופו:"
+  },
+  "Rashi on Kiddushin 64b:14:1": {
+    "dependsOn": [
+      "Kiddushin 64b:14"
+    ],
+    "generatedAt": "2026-11-03T08:55:38.768Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מוחלפת השיטה</strong> - הך דנדרים:"
+  },
+  "Rashi on Kiddushin 64b:14:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64b:14:1",
+      "Rashi on Kiddushin 64b:14:2"
+    ],
+    "generatedAt": "2026-11-03T08:56:32.304Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והתניא</strong> - בניחותא:"
+  },
+  "Rashi on Kiddushin 64b:14:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T08:58:13.647Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64b:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל שזמנו קבוע</strong> - מספר ימי משך זמנו קבועים כגון פסח וי\"ט למעוטי קיץ וקציר ובציר דאם אמר עד פני או אפילו עד שיהא אינו אסור אלא עד שיגיע דכיון דאין משך זמנו קבוע שזה ממהר לכלות קייצו וקצירו וזה מאחר לא נתכוין זה אלא לתחילתו משיתחילו העם לקצור:"
+  },
+  "Rashi on Kiddushin 64b:14:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64b:14:1",
+      "Rashi on Kiddushin 64b:14:2",
+      "Rashi on Kiddushin 64b:14:3",
+      "Kiddushin 64b:14",
+      "Rashi on Kiddushin 64b:12:1",
+      "Rashi on Kiddushin 64b:13:1",
+      "Rashi on Kiddushin 64b:13:2",
+      "Rashi on Kiddushin 64b:14:4",
+      "Jastrow, פָּנִים 1"
+    ],
+    "generatedAt": "2026-11-03T09:00:06.564Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64b:14:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נדר עד פני הפסח ר\"מ אומר עד שיגיע</strong> - ומשיגיע אין כאן פני פסח ואע\"פ שכל יום ויום של פסח פני הוא לחבירו לא מחית איניש נפשיה לספיקא שיהא צריך לשאול איזה הוא וכי קאמר פני קמא דכולה קאמר שהוא פני שבכולן:"
+  },
+  "Rashi on Kiddushin 64b:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T09:00:42.260Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחלוקת בשתי כיתי בנות</strong> - התם הוא דאיכא למימר כל כת ראשונה עביד איניש דקרי גדולה לגבי כת שניה וכל כת שניה עביד איניש דקרי קטנה לגבי כת ראשונה:"
+  },
+  "Rashi on Kiddushin 64b:15:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T09:00:59.920Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל כת אחת</strong> - שנולדו מאשה אחת:"
+  },
+  "Rashi on Kiddushin 64b:15:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 64b:15:1",
+      "Rashi on Kiddushin 64b:15:2",
+      "Rashi on Kiddushin 64b:3:1",
+      "Rashi on Kiddushin 64b:3:2",
+      "Rashi on Kiddushin 64b:8:1"
+    ],
+    "generatedAt": "2026-11-03T09:01:48.566Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 64b:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמצעית בשמה קרי לה</strong> - פלונית בתי הוא אומר ואין קורא לה לא גדולה ולא קטנה:"
+  },
   "Rashi on Kiddushin 64b:1:1": {
     "dependsOn": [],
     "generatedAt": "2026-11-02T18:36:37.871Z",

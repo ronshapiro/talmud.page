@@ -1,0 +1,401 @@
+{
+  "Rashi on Kiddushin 80a:10:1": {
+    "dependsOn": [
+      "Kiddushin 80a:10",
+      "Rashi on Kiddushin 80a:8:1",
+      "Rashi on Kiddushin 80a:8:2",
+      "Rashi on Kiddushin 80a:8:3",
+      "Rashi on Kiddushin 80a:10:1",
+      "Rashi on Kiddushin 80a:10:2",
+      "Kiddushin 80a:6",
+      "Steinsaltz on Kiddushin 80a:10",
+      "Rashi on Kiddushin 80a:1:1",
+      "Rashi on Kiddushin 80a:1:2",
+      "Rashi on Kiddushin 80a:3:1"
+    ],
+    "generatedAt": "2026-11-03T16:54:26.864Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 80a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כותיה דר' יוחנן</strong> - דאמר מטמאין דרבנן לתלות:"
+  },
+  "Rashi on Kiddushin 80a:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T16:55:01.097Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 80a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כמי שיש דעת לישאל</strong> - וקי\"ל <span class=\"parenthesized\">(נדה דף ד:)</span> ברה\"י ספיקו טמא דבדבר שאין בו דעת לישאל קי\"ל <span class=\"parenthesized\">(שם)</span> דאפילו ברה\"י ספיקו טהור:"
+  },
+  "Rashi on Kiddushin 80a:1:1": {
+    "dependsOn": [
+      "Kiddushin 80a:1",
+      "Rashi on Kiddushin 80a:1:2",
+      "Rashi on Kiddushin 80a:1:3",
+      "Tosafot on Kiddushin 80a:1:1"
+    ],
+    "generatedAt": "2026-11-03T16:16:43.520Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 80a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שנו</strong> - דסמכינן אכרוכין אלא לקדשי הגבול אם כהן הוא אוכלים בקדשי הגבול משהביא ראיה על אשה זו שהיא כשירה לכהונה סומכין על הבנים הכרוכין אחריה לומר בניה הן ואינן חללין:"
+  },
+  "Rashi on Kiddushin 80a:1:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 80a:1:1",
+      "Rashi on Kiddushin 80a:1:3"
+    ],
+    "generatedAt": "2026-11-03T16:18:20.067Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 80a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל ליוחסין</strong> - אם יש בהן בנות אינן נישאות לכהנים עד שיביאו ראיה שהן בנותיה של זו:"
+  },
+  "Rashi on Kiddushin 80a:1:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 80a:1:1",
+      "Rashi on Kiddushin 80a:1:2"
+    ],
+    "generatedAt": "2026-11-03T16:19:57.323Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 80a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור' יוחנן אמר אפילו ליוחסין</strong> - סמכינן אחזקה שהן כרוכין אחריה:"
+  },
+  "Rashi on Kiddushin 80a:2:1": {
+    "dependsOn": [
+      "Kiddushin 80a:2"
+    ],
+    "generatedAt": "2026-11-03T16:22:37.496Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 80a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואזדא רבי יוחנן לטעמיה</strong> - דאמר סמכינן אחזקה שהוחזקו ליכרך אצלה בחזקת שהיא אמו אפילו לענין דיני נפשות ליסקל ולישרף זה על זה כדלקמן וכ\"ש ליוחסין להכשר כהונה:"
+  },
+  "Rashi on Kiddushin 80a:2:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 80a:2:1",
+      "Rashi on Kiddushin 80a:2:2",
+      "Rashi on Kiddushin 80a:2:3",
+      "Rashi on Kiddushin 80a:2:4"
+    ],
+    "generatedAt": "2026-11-03T16:23:15.615Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 80a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מלקין על החזקות</strong> - על דבר שאנו מחזיקים כן ואפילו אין עדות בדבר:"
+  },
+  "Rashi on Kiddushin 80a:2:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 80a:2:1",
+      "Rashi on Kiddushin 80a:2:2",
+      "Rashi on Kiddushin 80a:2:4"
+    ],
+    "generatedAt": "2026-11-03T16:23:53.403Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 80a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שורפים וסוקלין כו'</strong> - כדמפרש להו ואזיל:"
+  },
+  "Rashi on Kiddushin 80a:2:4": {
+    "dependsOn": [
+      "Kiddushin 80a:2",
+      "Kiddushin 80a:4",
+      "Rashi on Kiddushin 80a:2:1",
+      "Rashi on Kiddushin 80a:2:2",
+      "Rashi on Kiddushin 80a:2:3"
+    ],
+    "generatedAt": "2026-11-03T16:26:52.864Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 80a:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין שורפין תרומה על החזקות</strong> - דבר שהוא טמא מתוך חזקה ולא מתוך שהוא ראיה ונגע בתרומה כגון תינוק שהוא סתמא מוחזק טמא שמחפש באשפה שיש שם נבילות ושרצים ונגע בתרומה אין שורפין אלא תולין כדמפרש טעמא כדאמרינן העמד עיסה על חזקת טהרה ואלו הוא ממיעוט תינוקות <span class=\"parenthesized\">(הוא)</span> שלא טיפח:"
+  },
+  "Rashi on Kiddushin 80a:3:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 80a:3:1"
+    ],
+    "generatedAt": "2026-11-03T16:27:30.060Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 80a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוחזקה נדה בשכינותיה</strong> - שראו שכינותיה שהיא היום היתה מלובשת בגדי נדותה:"
+  },
+  "Rashi on Kiddushin 80a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T16:27:51.864Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 80a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איש ואשה תינוק ותינוקת שהגדילו בתוך הבית</strong> - בחזקת שהיא אשתו ואלו בניהם ואין אנו מכירין בהם בעדות גמור:"
+  },
+  "Rashi on Kiddushin 80a:4:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 80a:4:1",
+      "Rashi on Kiddushin 80a:4:3"
+    ],
+    "generatedAt": "2026-11-03T16:28:21.847Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 80a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נסקלין זה על זה</strong> - אם בא הבן על האשה נסקל הבן עליה משום בא על אמו והיא עליו:"
+  },
+  "Rashi on Kiddushin 80a:4:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 80a:4:1",
+      "Rashi on Kiddushin 80a:4:2"
+    ],
+    "generatedAt": "2026-11-03T16:28:52.951Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 80a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונשרפין זה על זה</strong> - אם בא האיש על הבת דבתו בשריפה:"
+  },
+  "Rashi on Kiddushin 80a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T16:29:34.907Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 80a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותינוק מורכב על כתיפה והגדילתו</strong> - בחזקת בנה:"
+  },
+  "Rashi on Kiddushin 80a:6:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 80a:6:2"
+    ],
+    "generatedAt": "2026-11-03T16:30:58.407Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 80a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובצק בידו</strong> - בידוע שנטל מן העיסה:"
+  },
+  "Rashi on Kiddushin 80a:6:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 80a:6:1"
+    ],
+    "generatedAt": "2026-11-03T16:32:16.216Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 80a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לטפח</strong> - בשרצים ונבלות שבאשפה:"
+  },
+  "Rashi on Kiddushin 80a:7:1": {
+    "dependsOn": [
+      "Kiddushin 80a:7"
+    ],
+    "generatedAt": "2026-11-03T16:36:24.046Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 80a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סמוך מיעוטא</strong> - דאין מטפחים לחזקה דעיסה ואיתרע רובא דמטפחין דלר' מאיר לא בטיל מעוטא לגמרי דשמעינן ליה <span class=\"parenthesized\">(נדה דף לב.)</span> דחייש למיעוטא הילכך במקומו עומד וכי משכח מידי לאיצטרופי בהדיה מצטרף:"
+  },
+  "Rashi on Kiddushin 80a:7:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 80a:7:1"
+    ],
+    "generatedAt": "2026-11-03T16:37:00.323Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 80a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיעוטא כמאן דליתיה דמי</strong> - דבטיל ליה לגבי רובא ורבנן לטעמייהו דלא חיישי למיעוט <span class=\"parenthesized\">(שם)</span>:"
+  },
+  "Rashi on Kiddushin 80a:8:1": {
+    "dependsOn": [
+      "Kiddushin 80a:8",
+      "Rashi on Kiddushin 80a:8:2",
+      "Rashi on Kiddushin 80a:8:3"
+    ],
+    "generatedAt": "2026-11-03T16:40:05.756Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 80a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זו היא ששורפין עליה את התרומה</strong> - חזקה ששורפין עליה את התרומה חזקת תינוקות שמחזיקין לטפח שורפין עליה תרומה דהאי מטמאין דקאמרי רבנן לשרוף קאמרי:"
+  },
+  "Rashi on Kiddushin 80a:8:2": {
+    "dependsOn": [
+      "Rashi on Kiddushin 80a:8:1",
+      "Rashi on Kiddushin 80a:8:2",
+      "Rashi on Kiddushin 80a:8:3",
+      "Kiddushin 80a:7",
+      "Kiddushin 80a:8",
+      "Kiddushin 80a:9",
+      "Rashi on Kiddushin 80a:2:1",
+      "Rashi on Kiddushin 80a:2:2",
+      "Rashi on Kiddushin 80a:2:3",
+      "Rashi on Kiddushin 80a:2:4",
+      "Kiddushin 80a:3",
+      "Kiddushin 80a:4",
+      "Rashi on Kiddushin 80a:4:1",
+      "Rashi on Kiddushin 80a:4:2",
+      "Rashi on Kiddushin 80a:4:3",
+      "Kiddushin 80a:5",
+      "Kiddushin 80a:6",
+      "Rashi on Kiddushin 80a:6:1",
+      "Rashi on Kiddushin 80a:6:2"
+    ],
+    "generatedAt": "2026-11-03T16:42:03.367Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 80a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שורפים וסוקלין כו'</strong> - כדמפרש להו ואזיל:"
+  },
+  "Rashi on Kiddushin 80a:8:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 80a:8:1",
+      "Rashi on Kiddushin 80a:8:2",
+      "Kiddushin 80a:6"
+    ],
+    "generatedAt": "2026-11-03T16:42:52.267Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 80a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין זו חזקה ששורפין כו'</strong> - וכי אמרי רבנן לתלות קאמרי:"
+  },
+  "Rashi on Kiddushin 80a:9:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 80a:9:2",
+      "Rashi on Kiddushin 80a:9:3",
+      "Rashi on Kiddushin 80a:9:4",
+      "Steinsaltz on Kiddushin 80a:9",
+      "Mishneh Torah, Other Sources of Defilement 16:5",
+      "Jastrow, טָפַל 1"
+    ],
+    "generatedAt": "2026-11-03T16:44:31.715Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 80a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שרצים</strong> - צב הדומה לצפרדע הצב טמא והצפרדע טהור:"
+  },
+  "Rashi on Kiddushin 80a:9:2": {
+    "dependsOn": [
+      "Jastrow, טָפַל 1",
+      "Rashi on Kiddushin 80a:9:1",
+      "Rashi on Kiddushin 80a:9:2",
+      "Rashi on Kiddushin 80a:9:3",
+      "Steinsaltz on Kiddushin 80a:9"
+    ],
+    "generatedAt": "2026-11-03T16:49:19.329Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 80a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מטפלים שם</strong> - עושים נפולין נפולין חתיכות חתיכות:"
+  },
+  "Rashi on Kiddushin 80a:9:3": {
+    "dependsOn": [
+      "Rashi on Kiddushin 80a:9:3"
+    ],
+    "generatedAt": "2026-11-03T16:49:50.319Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 80a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונמצאו חתיכות בעיסה</strong> - ואין ידוע אם של שרצים או של צפרדעים:"
+  },
+  "Rashi on Kiddushin 80a:9:4": {
+    "dependsOn": [
+      "Rashi on Kiddushin 80a:9:1",
+      "Rashi on Kiddushin 80a:9:2",
+      "Rashi on Kiddushin 80a:9:3",
+      "Kiddushin 80a:9"
+    ],
+    "generatedAt": "2026-11-03T16:50:36.575Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 80a:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם רוב שרצים</strong> - אם הבית מוחזקת להיות שרצים מצוים שם יותר מצפרדעים טמא אף לישרף דחזקה ורובא דאיתיה קמן הוא אבל ההיא דתינוק רובא דליתיה קמן הוא:"
+  },
+  "Tosafot on Kiddushin 80a:1:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 80a:1:1",
+      "Rashi on Kiddushin 80a:1:2",
+      "Rashi on Kiddushin 80a:1:3",
+      "Kiddushin 80a:1",
+      "Maharsha on Kiddushin 80a:1"
+    ],
+    "generatedAt": "2026-11-03T16:21:46.622Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 80a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שנו אלא בקדשי הגבול</strong> - לפי' רש\"י הא דאמרינן דמהני כרוכין היינו דוקא לתרומה שאם הוא כהן והביא ראיה על האשה אין צריך להביא ראיה על הבנים להאכילן בתרומה וקשה דמשמע דמכל מקום צריך שיהו כרוכין להאכילן בתרומה ובפרק האשה שנתארמלה <span class=\"parenthesized\">(כתובות דף כה:)</span> אמרינן האומר בני זה וכהן הוא נאמן להאכילו בתרומה ואינו נאמן להשיאו אשה אלמא לא בעינן שיהו כרוכין אחריה ויש לומר דרב תנא הוא ופליג ורבינו תם פירש דרב סבר כמאן דאמר <span class=\"parenthesized\">(שם כד:)</span> אין מעלין מתרומה ליוחסין ולכך נאמן להאכילו תרומה כיון דבידו הוא ומתני' דהכא סברה כמאן דאמר <span class=\"parenthesized\">(שם)</span> מעלין מתרומה ליוחסין והכא הכי פירושו לא שנו אלא בקדשי הגבול פירוש בכל דבר קדושה כגון לתרומה ולנשיאת כפים ולהשיאו אשה אבל ליוחסין לא כלומר לסקול על ידו דקאמר זה הבן וזו אמו והבן בא עליה לא מהימן והיינו דקאמר ואזדא רבי יוחנן לטעמיה דאמר סוקלין ושורפים על החזקות ולפירוש <span class=\"rashi-quotation\">הקונטרס</span> אבל ליוחסין כגון להיות משמש בנו על גבי המזבח לא מהימן צריך לומר דהכי מייתי ראיה סוקלין ושורפין על החזקות וכל שכן דנאמן ליוחסין:"
+  },
+  "Tosafot on Kiddushin 80a:6:1": {
+    "dependsOn": [
+      "Rashi on Kiddushin 80a:6:1",
+      "Rashi on Kiddushin 80a:6:2",
+      "Tosafot on Kiddushin 80a:1:1",
+      "Tosafot on Kiddushin 80a:7:1"
+    ],
+    "generatedAt": "2026-11-03T16:33:45.418Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 80a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שדרכו של תינוק לטפח</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> לטפח באשפה וא\"ת כיון שהתינוק אינו ודאי טמא אם כן אמאי נקט תינוק שנמצא בצד העיסה לינקוט שנגע בעיסה ועוד קשה דאמרינן בתוספתא <span class=\"parenthesized\">(דטהרות פ\"ג ע\"ש)</span> מפני מה אמרו שהתינוק טמא משום דנשים נדות מגפפות ומנשקות אותו והכא מפרש משום דמטפחין באשפה לכך פירש ר\"ת שהתינוק ודאי טמא כדמפרש בתוספתא ולכך נקט שנמצא בצד העיסה ובצק בידו דהשתא ספק הוא אם נטלה מן העיסה וטימא את העיסה או שמא אדם טהור נכנס לשם ונטל את העיסה ונתן לתינוק ובהא פליגי ר' מאיר ורבנן דר' מאיר מטהר דתלינן באדם טהור וחכמים מטמאין מפני שדרכו של תינוק לטפח פי' בעיסה ויש לנו לומר שנטלה ובכי האי גוונא פליגי בתוספתא גבי תינוק שנמצא בצד הקבר ושושנים בידו ואינו יודע אם התינוק נטלן או אדם טהור נתנן לו ר' מאיר מטהר וחכמים מטמאין:"
+  },
+  "Tosafot on Kiddushin 80a:7:1": {
+    "dependsOn": [
+      "Kiddushin 80a:7",
+      "Tosafot on Kiddushin 80a:6:1",
+      "Kiddushin 80a:10"
+    ],
+    "generatedAt": "2026-11-03T16:39:06.242Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Kiddushin 80a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סמוך מיעוטא לחזקה ואיתרע ליה רובא</strong> - פירוש והוי רוב כמאן דליתיה וקשה דבריש פרק בתרא דיבמות <span class=\"parenthesized\">(דף קיט.)</span> אמרינן גבי האשה שהלך בעלה למדינת הים וצרתה עמו ושמעה האשה שמת בעלה ר' מאיר אומר לא תנשא ולא מתיבמת לפי דרוב נשים מתעברות ויולדות ואיכא למימר שהצרה שהלכה עמו ילדה והויא האשה שנשארה פטורה מן היבום ומיעוט מפילות ילדיהן וקאמר ר\"מ דאמרינן סמוך מיעוטא לחזקה שהרי היתה בחזקת זקוקה ליבום כשהלך בעלה למדינת הים ולא היה לו בנים והוה ליה פלגא ופלגא כלומר דמיעוטא וחזקה חשובין כנגד אותן רוב דנשים מתעברות ויולדות והוה פלגא ופלגא ולא תנשא ולא תתייבם וכמו כן אית לן למימר הכא וכי תימא דאין הכי נמי והא דמטהר רבי מאיר היינו משום דתינוק אין בו דעת לישאל וכל ספק שאין בו דעת לישאל אף ברשות היחיד ספיקו טהור דהא בהדיא אמרינן בסמוך בשמעתין דעשאוהו חכמים כמי שיש בו דעת לישאל וי\"ל שאין זה רוב חשוב אלא רוב גרוע לכך מרעי ליה מיעוטא וחזקה ותדע שאין חשוב מדאמרינן בסמוך עשאוהו חכמים כמי שיש בו דעת לישאל ולכך מטמאין את העיסה ואי הוה רוב חשוב אפילו אין בו דעת לישאל הוה לן לטמויי וע\"כ צריך לומר כן דאם לא כן קשה אליבא דרבנן דהא רבנן קאמרי התם גבי הלך בעלה למדינת הים ושמעה שמת תנשא דקסברי דמיעוט כמאן דליתיה דמי ורובא וחזקה רובא עדיף ואם כן אמאי קאמר הכא רבי יוחנן אליבא דרבנן אין זו חזקה ששורפין עליה תרומה אלא שמע מינה שאין זה רוב חשוב ולפיכך התם דרוב חשוב תנשא <span class=\"parenthesized\">(ולפי זה ניחא מה שמקשים העולם דקשה להו גבי שני דברים אין בו דעת לישאל ועשאוהו כמי שיש בו דעת לישאל וקא חשיב דתינוק ומקשין מאי איריא שיש בו דעת לישאל תיפוק ליה משום דסבירא להו לרבנן במיעוטא כמאן דליתיה ורובא וחזקה רובא עדיף וא\"כ אפילו אין בו דעת לישאל טמא דהא אין זה ספק טומאה אלא ודאי טומאה ש\"מ שאין זה רוב חשוב ואי לאו דעשאוהו חכמים כמי שיש בו דעת לישאל לא היו מטמאים)</span>:"
+  }
+}
