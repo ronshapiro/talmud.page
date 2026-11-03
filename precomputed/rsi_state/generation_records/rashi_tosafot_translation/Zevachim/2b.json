@@ -119,6 +119,80 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">לשם ריח</strong> - לאפוקי איברים שצלאן והעלן דשוב אין בהן ריח והכי מפרש להו התם:"
   },
+  "Rashi on Zevachim 2b:13:7": {
+    "costUsd": 0.008847,
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T13:57:59.750Z",
+    "model": "gemini-3.8-flash",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 2b:13:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשם ניחוח</strong> - לשם הנחת רוח להקב\"ה שאמר ונעשה רצונו:"
+  },
+  "Rashi on Zevachim 2b:14:1": {
+    "costUsd": 0.011813925,
+    "dependsOn": [
+      "Rashi on Zevachim 2b:14:2"
+    ],
+    "generatedAt": "2026-11-03T13:58:29.768Z",
+    "model": "gemini-3.8-flash",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 2b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא היה בלבו</strong> - לשמו אלא סתם ולא הזכיר אחד מאלה:"
+  },
+  "Rashi on Zevachim 2b:14:2": {
+    "costUsd": 0.00880425,
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T13:59:55.239Z",
+    "model": "gemini-3.8-flash",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 2b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתנאי בית דין הוא</strong> - שישחטו סתם ולא יזכירו בשחיטתן לשמו כדמפרש טעמא ואזיל אתנו ב\"ד דלא לימא לשמן כו':"
+  },
+  "Rashi on Zevachim 2b:16:1": {
+    "costUsd": 0.02983755,
+    "dependsOn": [
+      "Zevachim 2b:16",
+      "Zevachim 2b:14",
+      "Zevachim 2b:8",
+      "Zevachim 2b:6",
+      "Zevachim 2b:5"
+    ],
+    "generatedAt": "2026-11-03T14:03:30.026Z",
+    "model": "gemini-3.8-flash",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 2b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וגבי גט דסתמא פסול מנא ליה</strong> - כלומר היכי שמע ליה רבא ממתני' דגיטין דפסול דתיקשה ליה ורמינהי אהדדי:"
+  },
+  "Rashi on Zevachim 2b:17:1": {
+    "costUsd": 0.00792075,
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T14:03:49.329Z",
+    "model": "gemini-3.8-flash",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 2b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקרין</strong> - את התלמידין שמלמדין אותן לכתוב טופסי גיטין:"
+  },
+  "Rashi on Zevachim 2b:18:1": {
+    "costUsd": 0.0077625,
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T14:04:51.334Z",
+    "model": "gemini-3.8-flash",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Zevachim 2b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלא איכתוב לשם כריתות כלל</strong> - אבל היכא דאיכתב לשם כריתות שיהא מזומן לו לכשיזדמן לו מגרש ששמו ושם אשתו שוין בו כשר:"
+  },
   "Rashi on Zevachim 2b:1:1": {
     "costUsd": 0.0027322500000000003,
     "dependsOn": [
@@ -428,6 +502,42 @@
       "Rashi on Zevachim 2b:9:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">על דעת [ראשונה</strong> - אבל] היכא דשחטיה כוליה סתמא אימא לך דפסול:"
+  },
+  "Tosafot on Zevachim 2b:14:1": {
+    "costUsd": 0.0149715,
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T14:00:41.143Z",
+    "model": "gemini-3.8-flash",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Zevachim 2b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אתנו בית דין דלא לימא לשמה דילמא אתי למימר שלא לשמה</strong> - בשמעתא קמייתא דגיטין <span class=\"parenthesized\">(דף ג.)</span> דמפרש דלכך לא תיקנו לומר בפני נכתב לשמה למ\"ד לפי שאין בקיאין לשמה משום דאי מפשת ליה לדיבורא אתי למיגזייה לא הוי מצי למימר דילמא אתי למימר שלא לשמה דמי הוא שוטה כל כך שנותן גט לאשה זו שנכתב לשמה והוא אומר שלשם אחרת נכתב אבל אדם השוחט קרבן פעמים שטועה וסבור שהוא קרבן אחר וכן המקבל ומוליך וזורק:"
+  },
+  "Tosafot on Zevachim 2b:15:1": {
+    "costUsd": 0.023736375,
+    "dependsOn": [
+      "Zevachim 2b:13",
+      "Zevachim 2b:14"
+    ],
+    "generatedAt": "2026-11-03T14:02:38.416Z",
+    "model": "gemini-3.8-flash",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Zevachim 2b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קיימי בית דין ומתני כו'</strong> - יש תימה למה לו להאריך כל זה הא בהדיא אמר סתמא כשר ונראה לפרש דמי שלא היה בלבו היינו שלא אמר בהדיא לשם אחד מכל אלו אבל חישב בלבו למה שדינו להיות הא סתמא פסול להכי [דייק] מתנאי בית דין וכי מתנו בית דין דלא לימא בהדיא ובמחשבה סגי ושמא אתי לידי פסול שלא יחשב כלל וישחוט סתמא ויפסל:"
+  },
+  "Tosafot on Zevachim 2b:18:1": {
+    "costUsd": 0.0186615,
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T14:05:41.291Z",
+    "model": "gemini-3.8-flash",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Zevachim 2b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בסופרים העשויין להתלמד עסקינן</strong> - ואפילו למאן דאמר בפרק קמא דעירובין <span class=\"parenthesized\">(דף יג.)</span> גבי מגילת סוטה דמוחקין אותה מן התורה אף על גב דבעינן לשמה ואף על גב דתורה להתלמד עבידא כדקאמר התם לענין גט מודה כדפרישית שם ובפ\"ב דגיטין <span class=\"parenthesized\">(דף כ.)</span> וס\"ת נמי פסלינן [בגט] בפ\"ב דגיטין <span class=\"parenthesized\">(דף יט:)</span> כדמוכח בעובדא דההוא גברא דעל לבי כנישתא שקל ספר תורה ויהב לדביתהו:"
   },
   "Tosafot on Zevachim 2b:1:1": {
     "costUsd": 0.014947499999999999,
