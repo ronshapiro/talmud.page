@@ -13,6 +13,7 @@ const MANAGED_PATHS = [
   "precomputed/ai_additions",
   "precomputed/rsi_state/generation_records",
   "precomputed/rsi_state/context_usage_log",
+  "test_data/api_request_handler",
 ];
 
 export interface CommitPendingDeps {
@@ -389,14 +390,35 @@ async function findOpenPrViaGh(
   return prs[0];
 }
 
-async function commitPendingStateViaCli(message: string, debug = false): Promise<boolean> {
+export async function updateApiRequestHandlerTestsViaCli(debug = false): Promise<void> {
+  const tsNodeBinary = fs.existsSync("./node_modules/.bin/ts-node")
+    ? "./node_modules/.bin/ts-node"
+    : "ts-node";
+  const runnerArguments = [
+    "__tests__/api_request_handler_runner.ts",
+    "--use_cached_inputs",
+    "true",
+  ];
+  try {
+    await runSubcommand(tsNodeBinary, runnerArguments, debug);
+  } catch {
+    await runSubcommand("npx", ["ts-node", ...runnerArguments], debug);
+  }
+}
+
+export async function commitPendingStateViaCli(
+  message: string,
+  debug = false,
+  updateTests: (debug?: boolean) => Promise<void> = updateApiRequestHandlerTestsViaCli,
+): Promise<boolean> {
+  await updateTests(debug);
   const existingManagedPaths = MANAGED_PATHS.filter(managedPath => fs.existsSync(managedPath));
   if (existingManagedPaths.length > 0) {
     await runSubcommand("git", ["add", ...existingManagedPaths], debug);
   }
-  const {stdout: statusOut} = await runSubcommand(
+  const {stdout: statusOutput} = await runSubcommand(
     "git", ["status", "--porcelain", "--", ...MANAGED_PATHS], debug);
-  if (!statusOut.trim()) {
+  if (!statusOutput.trim()) {
     if (debug) {
       // eslint-disable-next-line no-console
       console.log("  [commit] nothing to commit, working tree clean.");
@@ -463,13 +485,18 @@ async function getBranchChangedPathsViaCli(
   return stdout.split("\n").map(l => l.trim()).filter(Boolean);
 }
 
-export function makeRealCommitPendingDeps(options?: {debug?: boolean}): CommitPendingDeps {
+export function makeRealCommitPendingDeps(options?: {
+  debug?: boolean;
+  updateApiRequestHandlerTests?: (debug?: boolean) => Promise<void>;
+}): CommitPendingDeps {
   const debug = options?.debug ?? false;
+  const updateTestsFunction = options?.updateApiRequestHandlerTests
+    ?? updateApiRequestHandlerTestsViaCli;
   return {
     gitStatusPorcelain: () => gitStatusPorcelainViaCli(debug),
     currentBranch: () => currentBranchViaCli(debug),
     findOpenPr: branch => findOpenPrViaGh(branch, debug),
-    commitPendingState: message => commitPendingStateViaCli(message, debug),
+    commitPendingState: message => commitPendingStateViaCli(message, debug, updateTestsFunction),
     push: () => pushViaCli(debug),
     openPr: (branch, title, body) => openPrViaGh(branch, title, body, debug),
     updatePrTitle: (prNumber, title) => updatePrTitleViaGh(prNumber, title, debug),

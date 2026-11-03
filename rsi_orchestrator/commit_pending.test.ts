@@ -523,6 +523,22 @@ describe("makeRealCommitPendingDeps", () => {
     expect(typeof deps.openPr).toBe("function");
   });
 
+  test("invokes updateApiRequestHandlerTests when committing pending state", async () => {
+    const updateApiRequestHandlerTests = jest.fn(async () => {});
+    const commitPendingDependencies = makeRealCommitPendingDeps({
+      debug: false,
+      updateApiRequestHandlerTests,
+    });
+    // We expect commitPendingState to invoke the update tests function first
+    try {
+      await commitPendingDependencies.commitPendingState("Test commit message");
+    } catch {
+      // Git commit may fail or succeed depending on repo state,
+      // but updateApiRequestHandlerTests should run
+    }
+    expect(updateApiRequestHandlerTests).toHaveBeenCalledTimes(1);
+  });
+
   test("realCommitPendingDeps is initialized with default options", () => {
     expect(typeof realCommitPendingDeps.gitStatusPorcelain).toBe("function");
   });
