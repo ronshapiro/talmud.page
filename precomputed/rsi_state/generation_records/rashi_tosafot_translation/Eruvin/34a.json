@@ -1,0 +1,259 @@
+{
+  "Rashi on Eruvin 34a:2:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 34a:2:1",
+      "Rashi on Eruvin 33b:9:1",
+      "Rashi on Eruvin 33b:9:3"
+    ],
+    "generatedAt": "2026-11-02T23:37:55.222Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 34a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ר זירא</strong> - הא דאצרכו רבנן לכל המערבין להוליך עירובן למקום שביתתן גזירה משום יו\"ט אחר השבת דאי בעי לאמטוייה בשבת לערב ליום המחרת לא מצי ממטי ליה וצריך להוליכו מערב שבת ואי אמרת בעלמא נשבקיה בביתיה משום הואיל הכי נמי אתי למיסמך עליה ונפיק על עירוב שביתתו ביו\"ט אחר השבת והתם אפילו הואיל ליכא:"
+  },
+  "Rashi on Eruvin 34a:3:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 32b:10:1"
+    ],
+    "generatedAt": "2026-11-02T23:41:05.936Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 34a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והניח עירובו בכותל</strong> - סמוך למקום שביתתו חוץ לארבע אמות קאמר וכדאוקימנא באילן דאי תוך ארבע אמות. אפילו למעלה מי' נמי עירובו עירוב דהנותן את עירובו יש לו ארבע אמות:"
+  },
+  "Rashi on Eruvin 34a:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T23:42:17.329Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 34a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למטה מעשרה עירובו עירוב</strong> - ואע\"ג דעירובו חוץ לארבע אמותיו מצי שקיל ליה ואיתויי פחות פחות מארבע אמות דהא אפילו בשבת לא אסיר כי האי גוונא אלא משום שבות דרבנן והכא דבין השמשות הוא לא גזור:"
+  },
+  "Rashi on Eruvin 34a:3:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 34a:3:1",
+      "Rashi on Eruvin 34a:3:2",
+      "Rashi on Eruvin 34a:3:4",
+      "Eruvin 34a:3"
+    ],
+    "generatedAt": "2026-11-02T23:46:15.718Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 34a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למעלה מעשרה אינו עירוב</strong> - דאי נפיק חוץ לארבע אמותיו קאי ברה\"ר ולא מצי למשקליה מרה\"י דהוא ברה\"ר ועירובו ברה\"י והכא ליכא למימר כמאן דמלי דהוא חוץ לארבע אמותיו הוא:"
+  },
+  "Rashi on Eruvin 34a:3:4": {
+    "dependsOn": [
+      "[",
+      "Rashi on Eruvin 34a:3:1",
+      "Rashi on Eruvin 34a:3:2",
+      "Rashi on Eruvin 34a:3:3",
+      "Rashi on Eruvin 34a:3:5"
+    ],
+    "generatedAt": "2026-11-02T23:47:30.518Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 34a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתכוון לשבות שביתתו בראש המגדל</strong> - והוא גבוה הרבה והניח עירובו לתוכו:"
+  },
+  "Rashi on Eruvin 34a:3:5": {
+    "dependsOn": [
+      "Rashi on Eruvin 34a:3:3",
+      "Rashi on Eruvin 34a:3:4",
+      "Rashi on Eruvin 34a:3:5",
+      "Rashi on Eruvin 34a:3:6"
+    ],
+    "generatedAt": "2026-11-02T23:48:25.129Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 34a:3:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם למעלה מעשרה הניחו עירובו עירוב</strong> - ואע\"פ שאינו יכול ליטלו משם ולהביאו למקום שביתתו דהא ממטי ליה מרה\"י לרה\"י דרך אויר רה\"ר וקיימא לן במושיט דאפילו למעלה מי' חייב הרי יכול לירד ולאוכלו במקום שהוא מונח שם דכיון דלמעלה מעשרה הוא הוי כבמקום שביתתו ממש דכל למעלה מעשרה עד לרקיע חדא רשותא היא:"
+  },
+  "Rashi on Eruvin 34a:3:6": {
+    "dependsOn": [
+      "Rashi on Eruvin 34a:3:1",
+      "Rashi on Eruvin 34a:3:2",
+      "Rashi on Eruvin 34a:3:3",
+      "Rashi on Eruvin 34a:3:4",
+      "Rashi on Eruvin 34a:3:5",
+      "Rashi on Eruvin 34a:3:7"
+    ],
+    "generatedAt": "2026-11-02T23:53:16.950Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 34a:3:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למטה מי'</strong> - כגון שיש עליות למגדל זו למעלה מזו והניחו בעליה שלמטה מי' דהויא כרמלית:"
+  },
+  "Rashi on Eruvin 34a:3:7": {
+    "dependsOn": [
+      "Rashi on Eruvin 34a:3:5",
+      "Rashi on Eruvin 34a:3:6",
+      "Rashi on Eruvin 34a:3:7"
+    ],
+    "generatedAt": "2026-11-02T23:54:03.223Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 34a:3:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין עירובו עירוב</strong> - דהא לא מצי למישקלי מההוא כרמלית ואיתויי לראש המגדל ששובת שם משום אויר רה\"ר דממטי ליה דרך אויר רה\"ר לרשות היחיד ואי נחית ואכל ליה התם נפיק ליה ממקום שביתתו ואנן סעודה הראויה מבעוד יום במקומו בעינן:"
+  },
+  "Rashi on Eruvin 34a:4:1": {
+    "dependsOn": [
+      "Eruvin 34a:4",
+      "Rashi on Eruvin 34a:3:1",
+      "Rashi on Eruvin 34a:4:2",
+      "Tosafot on Eruvin 34a:4:1"
+    ],
+    "generatedAt": "2026-11-03T00:01:14.494Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 34a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמאי</strong> - למטה מי' אינו עירוב נימא הואיל ויכול לנטות המגדל ולהשליכו למטה ונמצא מקום שביתתו מוטל לארץ ברשות הרבים ושקיל ליה מכרמלית ואכיל ליה במקום שביתתו דהא לא גזרו על השבות דהא על כרחך רבי היא מדתני רישא הניח עירובו בכותל למטה מעשרה עירובו עירוב ואע\"ג דהוא ברה\"ר ועירובו בכרמלית:"
+  },
+  "Rashi on Eruvin 34a:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T00:01:39.100Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 34a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במגדל המסומר</strong> - תקוע במסמרות בכותל ואינו יכול לנטות:"
+  },
+  "Rashi on Eruvin 34a:5:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 34a:5:2"
+    ],
+    "generatedAt": "2026-11-03T00:06:21.155Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 34a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במגדל ארוך</strong> - הרבה יותר מארבע אמות:"
+  },
+  "Rashi on Eruvin 34a:5:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 34a:5:1",
+      "Tosafot on Eruvin 34a:4:1",
+      "Rashi on Eruvin 34a:2:1",
+      "Eruvin 34a:5"
+    ],
+    "generatedAt": "2026-11-03T00:08:32.987Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 34a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכי ממטי ליה</strong> - למגדל עד דהוי ראשו למטה מי' נפיק ליה ראשו חוץ לד' אמות ממקום שהיה המגדל יושב בתחילה וכי שקיל ליה ואמטי ליה עד ראש המגדל ואכיל ליה אישתכח דלא קאי בד' אמות שנתכוון לשבות בהן:"
+  },
+  "Rashi on Eruvin 34a:6:1": {
+    "dependsOn": [
+      "Eruvin 34a:6",
+      "Eruvin 34a:4",
+      "Rashi on Eruvin 34a:3:1",
+      "Rashi on Eruvin 34a:3:2",
+      "Rashi on Eruvin 34a:3:3",
+      "Rashi on Eruvin 34a:4:1",
+      "Rashi on Eruvin 34a:5:1",
+      "Rashi on Eruvin 34a:5:2"
+    ],
+    "generatedAt": "2026-11-03T00:11:34.571Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 34a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי איכא כוותא ומיתנא כו'</strong> - כוותא חלון מיתנא חבל אם ארובה בראש המגדל ויש חבל בידו וקשור בעירוב ואפילו כשהוא בכרמלית למטה מי' יביאנו אצלו דרך תוכו של מגדל דהא מכרמלית לרשות היחיד הוא: ל\"א שמעתי ועיקר נתכוון לשבות בראש המגדל או בראש השובך אהניח עירובו בכותל קאי וקתני דהשתא הוי איפכא דאי למעלה מי' הניחו בכותל עירובו עירוב שהמגדל אצל הכותל ויכול להביאו אצלו ואין הפסק ביניהן למטה מי' כגון בטפח תשיעי ורבים מכתפין עליו והוי רה\"ר אין עירובו עירוב דלא מצי מייתי ליה מרה\"ר לרה\"י ואמאי לימא הואיל ויכול לנטות המגדל של מקום שביתה ולהביאו לתוך רה\"ר דניהוי ראש המגדל כרמלית דרחב ד' ואינו גבוה י' נפק ליה מחוץ לד' אמות מרחיק ראש המגדל מן העירוב ארבע אמות ולא מצי למשקליה ולאיתויי לראש המגדל ונמצא מעבירו ד' אמות ברה\"ר אי נמי נמצאת שביתתו מתרחקת ארבע אמותיו הראשונות ואין זה מקומו. מתנא חבל כוותא חלון אם יש חלון במגדל כנגד מקום שהעירוב שם ויש חבל קטן בידו וקשור חבל בעירוב מבעוד יום אפילו כשהוא ברה\"ר למטה מי' וראש השני יהא במגדל יביאנו אצלו דכיון דאיגודו בידו אינו אלא משום שבות כי מייתי ליה מרה\"ר לרה\"י כדתנן בריש המוצא תפילין היה קורא בראש הגג ונתגלגל הספר מידו אפילו בארץ עצמו גוללו אצלו שאין לך דבר שהוא משום שבות עומד בפני כתבי הקודש אלמא היכא דאיגודו בידו שבות בעלמא הוא ואתי אליבא דרבי דאמר לא גזרו על השבות בין השמשות:"
+  },
+  "Tosafot on Eruvin 34a:1:1": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Eruvin 34a:3"
+    ],
+    "generatedAt": "2026-11-02T23:34:47.856Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 34a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמאי נימא כיון דאי בעי לאמטויי מצי ממטי ליה כו'</strong> - פ\"ה הא דנקט לאותוביה ממתניתין דיו\"ט ושבת משום דלא תנא במשנה אחריתי הולכת עירוב בהדיא כדהכא ולר\"י נראה דדוקא מי\"ט פריך אבל מהא דבעיר הולכת עירוב להבא לערב בערב שבת לא מצי למיפרך דהא בין השמשות שהוא שעת קניית עירוב לא מצי לאמטויי התם משום איסור הוצאה ואין ליישב דברי רש\"י דודאי מהולכת עירוב של כל השנה [לא] היה יכול להקשות למה היה צריך להוליכו עד מקום השביתה לא היה צריך רק להוציאו מביתו ולהניחו ברשות הרבים במקום קרוב כשיעור שני תילתי מיל או שלשה רביעי מיל או חצי מיל שהם שיעורי בין השמשות למר כדאית ליה ולמר כדאית ליה דאי בעי ממטי ליה פחות פחות מד' עד מקום השביתה דהא לרבנן דר' לא מצי לאמטויי פחות פחות מד' אמות הלכך צריך להוליכו עד מקום השביתה ולרבי נמי איכא למימר דהא דצריך להוליכו עד מקום השביתה היינו כששביתתו ברה\"י הוא ויש רה\"ר בין ביתו למקום שביתתו. ועוד נראה לר\"י דאף כששביתתו ברה\"ר צריך להוליכו גם לרבי עד מקום שביתתו דמודה רבי שיש להחמיר בשבות בפחות מארבע אמותיו כמו שמודה בקנה דגזר שמא יקטום משום דבקל יבא לידי איסור שבת דאורייתא וה\"ה דבהאי שבות נמי יש להחמיר וכי משני גזירה משום יו\"ט אחר שבת כו' הוה מצי לשנויי גזרינן אטו כל שבת דעלמא דבכמה דוכתין אמר גזירה יו\"ט אטו שבת אלא דעדיפא למגזר יו\"ט אטו יו\"ט א\"נ אע\"ג דבעלמא גזרינן בעירוב דמקילינן טפי לא הוה גזרינן יו\"ט אטו שבת:"
+  },
+  "Tosafot on Eruvin 34a:2:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 34a:1:1",
+      "Rashi on Eruvin 33b:9:1",
+      "Rashi on Eruvin 34a:2:1"
+    ],
+    "generatedAt": "2026-11-02T23:39:50.435Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 34a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גזירה אטו יו\"ט שחל להיות אחר השבת</strong> - והא דאמר לעיל גבי אילן כל דבר שהוא משום שבות לא גזרו עליו בין השמשות ולא גזרינן משום יו\"ט שחל להיות אחר השבת או לפני השבת דאז ממה נפשך אסור להשתמש באילן היינו משום דהתם היא גופא לא הויא אלא משום שבות ואינו אסור ליטלו אלא מדרבנן אבל הכא דביו\"ט שחל להיות אחר השבת אי אפשר להוליכו משום איסור הוצאה דאורייתא גזרי' שאר יו\"ט אטו הא:"
+  },
+  "Tosafot on Eruvin 34a:3:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 34a:3:5",
+      "Rashi on Eruvin 34a:3:6",
+      "Rashi on Eruvin 34a:3:7",
+      "Eruvin 34a:4",
+      "Eruvin 34a:6"
+    ],
+    "generatedAt": "2026-11-02T23:59:31.927Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 34a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או בראש המגדל למטה מעשרה אין עירובו עירוב</strong> - <span class=\"rashi-quotation\">פי' בקונט'</span> בלשון ראשון דלא מצי למשקלי' מכרמלית ולאיתויי לראש המגדל ששובת שם דממטי ליה דרך אויר רה\"ר לרה\"י וקשה דאמאי אינו עירוב הא ליכא איסורא דאורייתא וכרבי אתיא מדפריך בתר הכי אי איכא כוותא ומתנא ה\"נ ואע\"ג דבאגודו בידו איכא נמי איסורא דרבנן לכך נראה דלא הוי כרמלית אלא רה\"ר כגון שהוא בטפח תשיעי ורבים מכתפין עליו או בחורי רה\"ר דהוי כרה\"ר וצ\"ע דכי נמי הוי רה\"ר אם בכה\"ג הוי מושיט הואיל ואינו מושיט דרך קרקע רה\"ר ואי לא הוי מושיט צ\"ל דמיירי שאי אפשר להושיט מראש המגדל וליטול אלא דרך כוותא שכנגד העירוב צריך להביאו לתוך המגדל ומשם יביאנו למקום שביתתו:"
+  },
+  "Tosafot on Eruvin 34a:4:1": {
+    "dependsOn": [
+      "Eruvin 34a:4",
+      "Tosafot on Eruvin 34a:3:1",
+      "Rashi on Eruvin 34a:4:1",
+      "Rashi on Eruvin 34a:5:1",
+      "Rashi on Eruvin 34a:4:2",
+      "Rashi on Eruvin 34a:5:2",
+      "Maharsha: Chidushei Halachot on Eruvin 34a:4",
+      "Meir Lublin: Maharam on Eruvin 34a:4"
+    ],
+    "generatedAt": "2026-11-03T00:04:49.304Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 34a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכי נמי נימא הואיל ויכול לנטותו</strong> - נראה לר\"י דקסבר הש\"ס דכי נמי יטה ראש המגדל הוי שביתתו בראש המגדל כ\"ז שאין ראש התחתון זז ממקומו דאם בשמטה ראש המגדל שביתתו לעולם במקום שהיה ראשו בתחילה כשהיה זקוף דהיינו כנגד הראש התחתון א\"כ מאי משני הכא במגדל ארוך עסקינן דאי ממטי ליה קא נפיק חוץ לד' אמות מה לנו במה שיצא ראש העליון חוץ לד' אמות כיון שאין שביתתו שם אלא ודאי שביתתו לעולם בראש המגדל ולהכי במגדל ארוך אי אפשר לנטותו דאי ממטי ליה נפיק ליה חוץ לד' אמות ונמצא מרוחק מעירובו ארבע אמות ולא יוכל להביא עירובו לראש המגדל אפילו לרבי כדפי' לעיל דמודה בשבות בפחות פחות מד' אמות דאסור אי נמי אינו עירוב כדפ\"ה משום שנמצא שביתתו מתרחקת מד' אמות הראשונות ואין זה מקומו והוי כאלו מסיר כל המגדל ממקומו הראשון ומעמידו חוץ לד' אמות דהשתא שביתתו בקרקעית המגדל שהיה בתחילה והואיל ושקיל ליה כוליה האי ודאי לא אמרו:"
+  },
+  "Tosafot on Eruvin 34a:6:1": {
+    "dependsOn": [
+      "Eruvin 34a:6"
+    ],
+    "generatedAt": "2026-11-03T00:12:09.192Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 34a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי איכא כוותא ומתנא</strong> - הא דלא פריך לעיל נמי הכי גבי אילן משום דאין דרך מתנא להיות גבי אילן ואין לומר דנייתי דכולי האי ודאי לא אמרינן הואיל אי נמי יש לומר דהשתא דוקא פריך מכיון דאמר הואיל ויכול לנטותו:"
+  }
+}

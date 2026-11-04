@@ -1,0 +1,247 @@
+{
+  "Rashi on Eruvin 40a:10:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 40a:10:2",
+      "Rashi on Eruvin 40a:10:3"
+    ],
+    "generatedAt": "2026-11-03T07:37:21.151Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיון דחלוקין במוספין</strong> - שמקריבין מוספי ראש חדש ומוספי ראש השנה כדכתיב <span class=\"parenthesized\">(במדבר כ״ט:ו׳)</span> מלבד עולת החדש:"
+  },
+  "Rashi on Eruvin 40a:10:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 40a:10:1",
+      "Rashi on Eruvin 40a:10:3"
+    ],
+    "generatedAt": "2026-11-03T07:38:02.118Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרינן</strong> - בתפלה נמי את יום ראש החדש הזה ואת יום הזכרון הזה:"
+  },
+  "Rashi on Eruvin 40a:10:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 40a:10:3",
+      "Rashi on Eruvin 40a:10:1",
+      "Rashi on Eruvin 40a:10:2",
+      "Rashi on Eruvin 40a:7:1",
+      "Rashi on Eruvin 40a:7:2",
+      "Rashi on Eruvin 40a:6:1"
+    ],
+    "generatedAt": "2026-11-03T07:39:31.603Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זכרון אחד</strong> - את יום הזכרון הזה דרחמנא קרייה זכרון דכתיב זכרון תרועה [ובר\"ח נמי כתיב והיו לכם לזכרון]:"
+  },
+  "Rashi on Eruvin 40a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T07:44:05.422Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי לאו</strong> - לא הודו אלהזכיר קאי דלא הודו לו להזכיר של ר\"ח בראש השנה:"
+  },
+  "Rashi on Eruvin 40a:12:1": {
+    "dependsOn": [
+      "Eruvin 40a:12",
+      "Rashi on Eruvin 40a:11:1",
+      "Eruvin 40a:9",
+      "Eruvin 39a:10",
+      "Eruvin 39a:11"
+    ],
+    "generatedAt": "2026-11-03T07:45:39.188Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להתנות</strong> - אם היום אם למחר אלא סתמא לימא וכן יום המחרת:"
+  },
+  "Rashi on Eruvin 40a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T07:46:10.758Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בראשי חדשים של כל השנה</strong> - שהוא ספק אם עיברוה בית דין:"
+  },
+  "Rashi on Eruvin 40a:15:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 40a:15:1",
+      "Rashi on Eruvin 40a:15:2"
+    ],
+    "generatedAt": "2026-11-03T07:47:13.512Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לזלזולי</strong> - אי מחזקינן ליה ספק אתו לזלזולי בשני אבל כי אמרינן סתמא מחזקינן להו בקדושה אחת:"
+  },
+  "Rashi on Eruvin 40a:15:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 40a:15:1"
+    ],
+    "generatedAt": "2026-11-03T07:47:59.871Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל בשאר חדשים</strong> - דשרו במלאכה וליכא למיחש לזלזולי אימא מודו ליה:"
+  },
+  "Rashi on Eruvin 40a:17:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 40a:17:2",
+      "Rashi on Eruvin 40a:17:3"
+    ],
+    "generatedAt": "2026-11-03T07:48:45.538Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתפלל עשר</strong> - שלש ראשונות וג' אחרונות ושל שבת בפני עצמה הרי שבע וקדושת היום וכולל עמה מלכיות הרי שמונה וזכרונות ושופרות:"
+  },
+  "Rashi on Eruvin 40a:17:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 40a:17:1",
+      "Rashi on Eruvin 40a:17:3",
+      "Rashi on Eruvin 40a:7:1",
+      "Rashi on Eruvin 40a:7:2",
+      "Rashi on Eruvin 40a:10:1",
+      "Rashi on Eruvin 40a:10:2",
+      "Eruvin 40a:16"
+    ],
+    "generatedAt": "2026-11-03T07:49:50.639Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40a:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובית הלל אומרים מתפלל תשע</strong> - דכולל שבת ויום טוב בברכה אחת וחותם מקדש השבת וישראל ויום הזכרון:"
+  },
+  "Rashi on Eruvin 40a:17:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 40a:17:1",
+      "Rashi on Eruvin 40a:17:2"
+    ],
+    "generatedAt": "2026-11-03T07:50:49.879Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40a:17:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם איתא</strong> - דמזכיר של ראש חדש לבית שמאי דבעי לכל חד ברכה בפני עצמה י\"א מבעי ליה:"
+  },
+  "Rashi on Eruvin 40a:1:1": {
+    "dependsOn": [
+      "Eruvin 40a:1"
+    ],
+    "generatedAt": "2026-11-03T07:27:31.399Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא מחוץ לתחום קאתא</strong> - ובו ביום:"
+  },
+  "Rashi on Eruvin 40a:3:1": {
+    "dependsOn": [
+      "Eruvin 40a:3",
+      "Eruvin 39b:11"
+    ],
+    "generatedAt": "2026-11-03T07:31:30.226Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא אשכחיה רב ששת כו'</strong> - ואי בו ביום אמאי משייל ליה אי קדושה אחת או ב' קדושות:"
+  },
+  "Rashi on Eruvin 40a:6:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 40a:6:1",
+      "Eruvin 40a:5"
+    ],
+    "generatedAt": "2026-11-03T07:34:51.631Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דקא מפשי</strong> - נכרים ואייתי אמר הני ודאי אדעתא דישראל מפשי ואייתו ואסר להו:"
+  },
+  "Rashi on Eruvin 40a:7:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 40a:7:1",
+      "Rashi on Eruvin 40a:7:2"
+    ],
+    "generatedAt": "2026-11-03T07:35:26.028Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בני גננא</strong> - קושרי כילות לחתנים ונותנים שם הדס:"
+  },
+  "Rashi on Eruvin 40a:7:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 40a:7:1"
+    ],
+    "generatedAt": "2026-11-03T07:35:54.645Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לפי שאינן בני תורה</strong> - ואתו לזלזולי ביום טוב שני:"
+  },
+  "Tosafot on Eruvin 40a:10:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 40a:10:1"
+    ],
+    "generatedAt": "2026-11-03T07:43:31.089Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 40a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זכרון אחד עולה</strong> - דבראש השנה כתיב זכרון תרועה ובראש חדש כתיב בפרשת בהעלותך גבי חצוצרות והיו לכם לזכרון פי' רשב\"ם דאין צריך להזכיר מקראות של מוסף לא די\"ט ולא דר\"ח כדאמר רב חיננא א\"ר בשילהי ר\"ה <span class=\"parenthesized\">(ד' לה.)</span> כיון שאמר ובתורתך כתוב לאמר שוב אינו צריך גבי מלכיות זכרונות ושופרות ואם התחיל צריך לסיים והא דתנן הפוחת לא יפחות משלש היינו בהתחיל והוא הדין נמי במקראות דקרבנות ואם בא להזכיר מזכיר אף של ר\"ח ור\"ת מפרש דההיא דרב חיננא דווקא במלכיות זכרונות ושופרות אבל דמוסף צריך להזכיר לעולם אבל דר\"ח אין צריך כלל להזכיר דנפטר במה שאמר מלבד עולת החדש ומנחתה והגיה במחזורו ושני שעירים לכפר ושני תמידים כהלכתם ולר' יצחק אין נראה לחלק בין מלכיות זכרונות ושופרות למקראות דמוסף ויש גאונים קדמונים שאין מניחין לומר ובראשי חדשיכם דלא ליתי לזלזולי במועדות ויו\"ט ראשון של ר\"ה דיאמרו יום שני עיקר כמו בראשי חדשים של כל השנה ואתי לממני מועדות מיום שני ואין נראה לר\"י דבכולהו שמעתא ליכא דחש להאי זלזולא ובערוך בערך חדש איזה הוא חג שהחדש מתכסה בו הוי אומר זה ר\"ה פי' שאין אומר ובראשי חדשיכם לא בתפלה ולא בזולתה:[וע\"ע תוס' ביצה טז. ד\"ה איזהו ותוס' ר\"ה חד\"ה שהחדש ועוד שם בתו' לה.]"
+  },
+  "Tosafot on Eruvin 40a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T07:30:35.281Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 40a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אדעתא דכולהו רבנן קאתו</strong> - נראה לריצב\"א דהכי הלכתא דקיימא לן כרב ששת כלפי רב נחמן באיסורי וכלפי רב חסדא נמי הלכתא כוותיה שהיה גדול ממנו כדאשכחן בכמה דוכתי בעי רב חסדא מרב ששת ובפ' הדר <span class=\"parenthesized\">(לקמן עירובין ד' סז.)</span> נמי אמר רב חסדא ורב ששת כי הוו פגעו אהדדי . רב חסדא מירתע שפוותיה ממתני' דרב ששת ורב ששת מירתע כוליה גופיה מפלפוליה דרב חסדא ואמר בסוף הוריות <span class=\"parenthesized\">(ד' יד.)</span> סיני ועוקר הרים סיני עדיף דהכל צריכין למרי חיטיא הלכך דבר הבא מחוץ לתחום בשביל ישראל אסור לכל בני ביתו לאכול דאדעתא דכולהו קאתי:"
+  },
+  "Tosafot on Eruvin 40a:4:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 40a:2:1"
+    ],
+    "generatedAt": "2026-11-03T07:34:03.434Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 40a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא ודאי מאתמול נעקרה</strong> - אבל אי היום נעקרה אסור אע\"ג דאדעתא דנכרים אתו וטעמא משום מוקצה ואפילו לר\"ש דלית ליה מוקצה הכא מודה כיון דלא לקטן מאתמול אקצינהו ודמי לגרוגרות וצמוקין וכן משמע בריש המביא בביצה <span class=\"parenthesized\">(ד' ל:)</span> דכל היכא דאין יושב ומצפה אית ליה לר\"ש מוקצה וכן <span class=\"rashi-quotation\">פירש הקונטרס</span> בריש אין צדין <span class=\"parenthesized\">(ביצה ד' כד:)</span> גבי נכרי שהביא דורון לישראל וא\"ת דבפ\"ק דחולין <span class=\"parenthesized\">(ד' יד.)</span> גבי השוחט בשבת משמע דלא הוי מוקצה לר\"ש ואפילו לר' יהודה בעי למימר מעיקרא דלא הוי מוקצה וצ\"ל דמיירי ביושב ומצפה שמא ישחטנו חרש שוטה וקטן ואחרים רואין אותו וא\"ת למה ליה טעמא בריש ביצה <span class=\"parenthesized\">(ד' ג.)</span> גבי פירות הנושרין שמא יעלה ויתלוש תיפוק ליה משום מוקצה וי\"ל כגון דאית ליה עורבים דהוי מוכן לעורבים והא דאמרינן בפ' כל כתבי <span class=\"parenthesized\">(שבת ד' קכב.)</span> דאין מעמידין בהמה על גבי מוקצה בשבת פירוש עשבים שנתלשו בשבת הא פרשינן התם כגון שהיו עומדין בשעת חיבורן במקום שהבהמה לא היתה יכולה לבא שם אי נמי דצריך טעמא שמא יעלה ויתלוש לר\"ש ביושב ומצפה וא\"ת טעמא דמוקצה למה ליה תיפוק ליה משום שמא יעלה ויתלוש וי\"ל דשמא יעלה ויתלוש לא הוי אלא בפירות האילן שקלים ליתלוש אבל לפתות דבעי מרא וחצינא לא וכן במשקין דגזרינן שמא יסחוט לפי שקלים ליסחוט ודגים שנצודו בי\"ט אסורין משום מוקצה כגרוגרות וצמוקין ולא משום דגזרינן שמא יצוד ותדע דבסוף כל כתבי <span class=\"parenthesized\">(שבת ד' קכב.)</span> גבי מילא מים לבהמתו ונכרי שהדליק הנר ועשה כבש לא אסרינן לישראל לירד אחריו גזירה שמא יעשנו והא דמדמי בפ\"ק דחולין <span class=\"parenthesized\">(ד' יד:)</span> שמא ישחוט לשמא יסחוט הוה מצי למידחי דלא דמו כדפי' אלא דבלאו הכי דחי ליה שפיר:"
+  }
+}

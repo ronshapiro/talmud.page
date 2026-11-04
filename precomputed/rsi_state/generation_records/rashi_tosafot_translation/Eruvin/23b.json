@@ -1,4 +1,118 @@
 {
+  "Rashi on Eruvin 23b:10:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 23b:10:2",
+      "Eruvin 23a:1",
+      "Eruvin 23b:10"
+    ],
+    "generatedAt": "2026-11-02T13:22:41.448Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 23b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלכה כרבי יוסי</strong> - דלא בעי מרובעת:"
+  },
+  "Rashi on Eruvin 23b:10:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 23b:10:1"
+    ],
+    "generatedAt": "2026-11-02T13:24:03.008Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 23b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והלכה כר' עקיבא</strong> - דלא בעי מוקפת לדירה:"
+  },
+  "Rashi on Eruvin 23b:11:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 23b:11:1",
+      "Rashi on Eruvin 23b:11:2"
+    ],
+    "generatedAt": "2026-11-02T13:24:31.606Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 23b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותרווייהו</strong> - הנך שמעתתא דשמואל לקולא:"
+  },
+  "Rashi on Eruvin 23b:11:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 23b:11:1",
+      "Eruvin 23b:10",
+      "Eruvin 23a:5",
+      "Eruvin 23a:6",
+      "Eruvin 23a:7",
+      "Eruvin 23a:8",
+      "Eruvin 23a:9",
+      "Eruvin 23a:10"
+    ],
+    "generatedAt": "2026-11-02T13:26:05.696Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 23b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוה אמינא</strong> - דשמואל דירה בעי כר\"י בן בבא ובארכה יותר על רחבה כרבי יוסי סבר לה:"
+  },
+  "Rashi on Eruvin 23b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T13:26:26.647Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 23b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אריך וקטין לא</strong> - דהא ר\"ע מרובע בעי:"
+  },
+  "Rashi on Eruvin 23b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T13:26:55.720Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 23b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נזרע רובו</strong> - בזרעונים ביטל דירתו דבזרעונים לא דיירי אינשי והוה ליה גינה ואסור לטלטל אף בשאינו נזרע דבטיל ליה לגבי רובא אבל בנוטע אילנות לא ביטל דירתו דאורחא להסתופף בצל אילנות תמיד:"
+  },
+  "Rashi on Eruvin 23b:15:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 23b:15:2"
+    ],
+    "generatedAt": "2026-11-02T13:27:39.928Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 23b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא</strong> - שיש באותו מקום זריעה יותר מבית סאתים דנעשה כרמלית דקרפף יותר מבית סאתים שלא הוקף לדירה כרמלית היא ושאינו נזרע הוי חצר פרוצה במלואה לכרמלית לפיכך כולו אסור:"
+  },
+  "Rashi on Eruvin 23b:15:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 23b:15:1",
+      "Rashi on Eruvin 23b:15:2",
+      "Maharsha, Chiddushei Halachot on Eruvin 23b:5"
+    ],
+    "generatedAt": "2026-11-02T13:28:34.667Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 23b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל בית סאתים</strong> - דבלאו דירה שרי באנפי נפשיה הכא נמי שרי ואף על גב דמקום זריעה הוי קרוי קרפף ושאינו נזרע הוי חצר ופרוצין זה לזה שאין מחיצה ביניהן אפילו הכי לא אסרי אהדדי הואיל ודחד גברא הוא ורבי שמעון היא דאמר רשות קרפף וחצר לא אסרי אהדדי אפילו היא של ב' בעלי בתים:"
+  },
+  "Rashi on Eruvin 23b:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T13:29:03.945Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 23b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדתנן רבי שמעון אומר אחד חצרות ואחד קרפיפות ואחד גגות רשות אחד הן</strong> - לטלטל מזה לזה לכלים ששבתו בתוכן ואפילו הן של בעלים הרבה אבל לא לכלים ששבתו בתוך הבית והוציאן לחצר אסור להוציאן מחצר לקרפף או לגג דבית וקרפף שתי רשויות הן ואפילו דחד גברא:"
+  },
   "Rashi on Eruvin 23b:1:1": {
     "dependsOn": [
       "Eruvin 23b:1",
@@ -18,6 +132,18 @@
       "Rashi on Eruvin 23b:1:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">רבי עקיבא היינו ת\"ק</strong> - דאמרו לו לא אמרו בית סאתים אלא לגינה ולקרפף אבל אם היה כו' אלמא היכא דאיכא בית דירה אפי' טובא ובשלא הוקף לדירה בית סאתים כר\"ע:"
+  },
+  "Rashi on Eruvin 23b:2:1": {
+    "dependsOn": [
+      "Eruvin 23b:2"
+    ],
+    "generatedAt": "2026-11-02T13:08:37.465Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 23b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איכא בינייהו דבר מועט</strong> - שבית סאתים יתר על שבעים אמה ושיריים רבועים כדתני לקמן לתנא קמא שרי בבית סאתים שלימים ולר' עקיבא שבעים ושיריים על שבעים ושיריים ותו לא כדקא אמרי' בהדיא וכמה הן סאתים כחצר המשכן:"
   },
   "Rashi on Eruvin 23b:2:2": {
     "dependsOn": [
@@ -100,6 +226,114 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">במאי כתיב</strong> - בחמשים דקרא מאי היא:"
   },
+  "Rashi on Eruvin 23b:6:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 23b:6:3",
+      "Rashi on Eruvin 23b:6:4",
+      "Rashi on Eruvin 23b:6:5"
+    ],
+    "generatedAt": "2026-11-02T13:09:31.547Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 23b:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">העמד משכן על שפת</strong> - שכלין שם החמשים של חצר משנכנסים לה בפתחה של מזרח:"
+  },
+  "Rashi on Eruvin 23b:6:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T13:09:55.314Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 23b:6:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדי שיהו חמשים אמה</strong> - של חצר לפני המשכן:"
+  },
+  "Rashi on Eruvin 23b:6:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T13:10:54.205Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 23b:6:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועשרים לכל רוח</strong> - שהמשכן ארכו ל' כדכתיב <span class=\"parenthesized\">(שמות כ״ו:ט״ז)</span> עשרים קרשים ורוחב הקרש אמה וחצי ורחבו של משכן תופש עשר אמות כדכתיב ששה קרשים שהן תשע אמות ושני קרשים למקוצעות שהן ג' אמות רוחב והאמה מכאן והאמה מכאן לכסות עוביין של קרשים של צלע ארכו אמה וחצי אמה מכאן וחצי אמה מכאן להשלים ולמלא החלל לעשר וכשאתה מעמידו לסוף חמשים ובאמצע רחבה של חצר נשארו מהחמשים על חמשים של חצר עשרים אמות לשלש הרוחות אלא שעובי הקרשים ממעט מהן אמה לכל צד והכא חללה חשיב ועובי הכתלים בכלל העשרים של כל רוח ולפניו למזרחו לא היו קרשים אלא מסך והיינו וילון:"
+  },
+  "Rashi on Eruvin 23b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T13:13:22.295Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 23b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ארכה יתר משנים ברחבה</strong> - כחצר המשכן הוא דשרי ואע\"ג דלא מרבעה והיינו אורך כשנים ברוחב אבל טפי משנים ברוחב לא מישתרי:"
+  },
+  "Rashi on Eruvin 23b:8:1": {
+    "dependsOn": [
+      "Eruvin 23b:8"
+    ],
+    "generatedAt": "2026-11-02T13:16:21.530Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 23b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היינו רבי יוסי</strong> - דאמר ארכה אפילו פי שנים ברחבה:"
+  },
+  "Rashi on Eruvin 23b:9:1": {
+    "dependsOn": [
+      "Eruvin 23b:9"
+    ],
+    "generatedAt": "2026-11-02T13:19:18.278Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 23b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איכא בינייהו ריבועא דריבעוה רבנן</strong> - ר\"א סבר ארכה יותר משנים ברחבה אין מטלטלין ומיהו עיקרה ארכה פי שנים ברחבה כדכתיב ולית ליה ריבועא ומיהו אי מרבעא לא מיתסרא בהכי כדקתני אם היה ארכה יותר משנים ברחבה אין מטלטלין הא בציר מפי שנים מטלטלין ורבי יוסי סבר מרובעת עיקר ולכתחילה אורויי מורינן הכי ומיהו אפילו ארכה פי שנים ברחבה שריא ומדקאמר אפי' מכלל דמעיקרא לאו הכי הוא:"
+  },
+  "Tosafot on Eruvin 23b:17:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 23b:17:1",
+      "Tosafot on Eruvin 23b:17:2",
+      "Eruvin 23b:17",
+      "Rashi on Eruvin 23b:15:1",
+      "Rashi on Eruvin 23b:15:2",
+      "Rashi on Eruvin 23b:16:1",
+      "Rabbeinu Chananel on Eruvin 23b:7",
+      "Rabbeinu Chananel on Eruvin 23b:10",
+      "Rabbeinu Chananel on Eruvin 23b:3",
+      "Steinsaltz on Eruvin 23b:17",
+      "Steinsaltz comment #1 on Eruvin 23b:16",
+      "Maharam on Eruvin 23b:2",
+      "Ritva on Eruvin 23b:6",
+      "Tosafot on Eruvin 23a:5:2"
+    ],
+    "generatedAt": "2026-11-02T13:32:21.875Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 23b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[נזרע רובו</strong> - ונראה לר\"ח דדוקא קרקע יותר מבית סאתים אבל בבית סאתים אפילו נזרע כולו לא בטלי דירתו דהא לר' יהודה בן בבא דמחמיר בנזרע כולו מודה דמהני לגינה שומירה אע\"ג דסתם גינה היא כולה זרועה ומיהא מיבעיא ליה ביתר מבית סאתים אם ביטל דירתו אף בדיר וסהר ומוקצה דשמא לפי שתשמישו רב אינו מתבטל משום זריעה כי גם לרש\"י צריך לחלק בין דיר וסהר ומוקצה וחצר לקרפף]:"
+  },
+  "Tosafot on Eruvin 23b:17:2": {
+    "dependsOn": [
+      "Eruvin 23b:16",
+      "Eruvin 23b:17",
+      "Tosafot on Eruvin 23b:17:1",
+      "Maharsha: Chidushei Halachot on Eruvin 23b:3"
+    ],
+    "generatedAt": "2026-11-02T13:34:05.927Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 23b:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לרבי שמעון כיון דנזרע רובו ה\"ל מיעוט בטל</strong> - נראה דמכ\"ש פריך לגבי רוב דמדקאמר נזרע רובו והיינו ביתר מבית סאתים משמע הא מיעוטו שרי אפילו ביתר מבית סאתים היינו משום דבטל לגבי רובו אפילו לקולא כל שכן היכא דרובא נזרע אפילו בית סאתים דנימא דבטל לגבי רובא לחומרא:"
+  },
   "Tosafot on Eruvin 23b:1:1": {
     "dependsOn": [
       "Eruvin 23b:1",
@@ -137,5 +371,70 @@
       "Tosafot on Eruvin 23b:2:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">דבר מועט יש</strong> - והא דלא חשיב ליה בכיצד מעברין <span class=\"parenthesized\">(לקמן עירובין ד' נז.)</span> דקתני גבי ג' כפרים אם יש בין החיצונות מאה וארבעים אמה ואמה אחת ושליש לא חש לצמצם אי נמי אתיא כר\"ע דלית ליה דבר מועט:"
+  },
+  "Tosafot on Eruvin 23b:6:1": {
+    "dependsOn": [
+      "Eruvin 23b:6",
+      "Eruvin 58a:4"
+    ],
+    "generatedAt": "2026-11-02T13:12:56.159Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 23b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פשטיה דקרא במאי כתיב</strong> - משמע דטול חמשים וסבב חמשים הוי אסמכתא בעלמא ומיהו בכיצד מעברין <span class=\"parenthesized\">(לקמן עירובין ד' נח.)</span> פריך והא מבעי ליה דיטול חמשים כו':"
+  },
+  "Tosafot on Eruvin 23b:7:1": {
+    "dependsOn": [
+      "Eruvin 23b:7",
+      "Eruvin 23a:7",
+      "Tosafot on Eruvin 23b:8:1",
+      "Gilyon HaShas on Eruvin 23b:1",
+      "Eruvin 23a:6"
+    ],
+    "generatedAt": "2026-11-02T13:15:35.791Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 23b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והתניא רבי אליעזר אומר</strong> - והוא הדין דהוה מצי למיפרך דאם כן היינו רבי עקיבא אלא דניחא ליה למיפרך דרבי אליעזר אדרבי אליעזר:"
+  },
+  "Tosafot on Eruvin 23b:8:1": {
+    "dependsOn": [
+      "Eruvin 23b:8",
+      "Eruvin 23a:6",
+      "Eruvin 23a:7",
+      "Eruvin 23a:8",
+      "Rashi on Eruvin 23b:8:1",
+      "Tosafot on Eruvin 23b:7:1"
+    ],
+    "generatedAt": "2026-11-02T13:18:18.355Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 23b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הכי היינו ר' יוסי</strong> - אף על גב דמעיקרא איכא למיפרך נמי היינו ר\"ע מ\"מ היינו רבי יוסי ליכא למיפרך:"
+  },
+  "Tosafot on Eruvin 23b:9:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 23b:9:1",
+      "Rabbeinu Chananel on Eruvin 23b:2",
+      "Rabbeinu Chananel on Eruvin 23b:10:1",
+      "Chokhmat Shlomo on Eruvin 23b:1",
+      "Steinsaltz on Eruvin 23b:9:1",
+      "Ritva on Eruvin 23b:9:1",
+      "Steinsaltz on Eruvin 23b:9",
+      "Steinsaltz comment #1 on Eruvin 23b:9"
+    ],
+    "generatedAt": "2026-11-02T13:21:50.449Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 23b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איכא בינייהו רבועא דרבעוה רבנן</strong> - פ\"ה דרבי אליעזר בעי לכתחילה אורכה פי שנים ברחבה ורבי יוסי בעי לכתחילה מרובעת וקשיא דאין שייך כאן לכתחילה ודיעבד דאי כבר הוקף לכתחילה לכ\"ע שרי ואם בא להקיף וכי נאמר לו שלא יקיף אלא למר כדאית ליה ולמר כדאית ליה ונראה כפירוש רבינו חננאל דפירש דרבעוה דרבנן היינו פלוגתא דמי שהוציאוהו <span class=\"parenthesized\">(לקמן עירובין ד' מט:)</span> דר' חנינא בן אנטיגנוס ורבנן גבי האומר שביתתי במקומי יש לו אלפים אמה לכל רוח עגולות דברי ר' חנינא בן אנטיגנוס וחכ\"א מרובעות כטבלא מרובעת כדי שיהא נשכר לזויות והשתא לר\"א אי ארכה יתר ע\"פ שנים ברחבה אפילו באלכסון אין מטלטלין כרבי חנינא ורבי יוסי לטפויי קאתי וקאמר דמטלטלין:"
   }
 }

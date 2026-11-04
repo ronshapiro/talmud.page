@@ -1,0 +1,296 @@
+{
+  "Rashi on Eruvin 27b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T18:27:10.220Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 27b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאם כן</strong> - דצאן לאו למישרי גיזות הוא דאתא אלא עור לא הוה כתיב קרא צאן אלא בקר דלית ליה גיזות:"
+  },
+  "Rashi on Eruvin 27b:13:1": {
+    "dependsOn": [
+      "Eruvin 27b:13",
+      "Rashi on Eruvin 27b:13:2"
+    ],
+    "generatedAt": "2026-11-02T18:28:37.402Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 27b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במאי קא מיפלגי רבי יהודה ורבי אליעזר</strong> - דאמרי תרוייהו דגים ניקחין ובציר הוא דפליגי:"
+  },
+  "Rashi on Eruvin 27b:13:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 27b:13:1",
+      "Eruvin 27b:14",
+      "Eruvin 27b:15",
+      "Eruvin 27b:17",
+      "Rashi on Eruvin 27b:17:1",
+      "Eruvin 27b:18",
+      "Rashi on Eruvin 27b:18:1",
+      "Eruvin 28a:1",
+      "Eruvin 28a:2",
+      "Eruvin 28a:3"
+    ],
+    "generatedAt": "2026-11-02T18:30:26.023Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 27b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והני תנאי דלקמן</strong> - דדרשי פרי מפרי וגידולי קרקע וולד ולדות הארץ ותרוייהו ממעטי דגים וכ\"ש ציר:"
+  },
+  "Rashi on Eruvin 27b:14:1": {
+    "dependsOn": [
+      "Eruvin 27b:14",
+      "Rashi on Eruvin 27b:13:1",
+      "Rashi on Eruvin 27b:13:2",
+      "Versions on Eruvin 27b:14",
+      "Steinsaltz on Eruvin 27b:14"
+    ],
+    "generatedAt": "2026-11-02T18:33:43.119Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 27b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג לר\"א מיעט ציר ולרבי יהודה מיעט מים ומלח</strong> - דלאו ציר:"
+  },
+  "Rashi on Eruvin 27b:15:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 27b:15:1",
+      "Rashi on Eruvin 27b:15:2",
+      "Rashi on Eruvin 27b:15:3",
+      "Eruvin 27b:15",
+      "Rashi on Eruvin 27b:14:1"
+    ],
+    "generatedAt": "2026-11-02T18:36:18.303Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 27b:15:1"
+    ],
+    "sourceText": "ה\"ג דתניא ונתתה הכסף וגו':"
+  },
+  "Rashi on Eruvin 27b:15:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T18:37:18.411Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 27b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פרי מפרי</strong> - עגל נולד מאמו וכן שה וענבים מחרצנים שזורעין החרצנים:"
+  },
+  "Rashi on Eruvin 27b:15:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T18:37:36.865Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 27b:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וגידולי קרקע</strong> - שכולן ניזונין וגדילין מן הקרקע:"
+  },
+  "Rashi on Eruvin 27b:16:1": {
+    "dependsOn": [
+      "Eruvin 27b:16",
+      "Rashi on Eruvin 27b:15:1",
+      "Rashi on Eruvin 27b:15:2",
+      "Rashi on Eruvin 27b:15:3"
+    ],
+    "generatedAt": "2026-11-02T18:38:22.271Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 27b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולד ולדות הארץ</strong> - שנבראו מן הארץ במעשה בראשית:"
+  },
+  "Rashi on Eruvin 27b:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T18:38:48.416Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 27b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דגים</strong> - גידולי קרקע נינהו קסבר שהדגים ניזונין מן הקרקע:"
+  },
+  "Rashi on Eruvin 27b:1:1": {
+    "dependsOn": [
+      "Eruvin 27b:1",
+      "Rashi on Eruvin 27a:14:1"
+    ],
+    "generatedAt": "2026-11-02T18:15:59.907Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 27b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא נצרכה</strong> - הא דמתני ר' יצחק מים ומלח המעורבין ניקחין אלא כשנתן לתוכן שמן:"
+  },
+  "Rashi on Eruvin 27b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T18:16:22.000Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 27b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בהבלעה</strong> - בשביל המים והמלח קנה השמן ביוקר והבליע בו דמיהן וכי האי גוונא שרי רבי יצחק:"
+  },
+  "Rashi on Eruvin 27b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T18:16:47.766Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 27b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והתניא</strong> - בניחותא:"
+  },
+  "Rashi on Eruvin 27b:3:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 27b:3:1",
+      "Rashi on Eruvin 27b:1:1",
+      "Rashi on Eruvin 27b:2:1",
+      "Rashi on Eruvin 26a:1:1"
+    ],
+    "generatedAt": "2026-11-02T18:18:01.579Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 27b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בבקר</strong> - הואיל וכתיב בכל אשר תאוה נפשך למה לי למיכתב בבקר ובצאן וביין ובשכר אלא לדרשות בבקר ללמדך שלוקחים בקר אגב עורו ויצא העור לחולין ואין צריך למוכרו ולחזור ולאכלו בירושלים:"
+  },
+  "Rashi on Eruvin 27b:3:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 27b:3:1",
+      "Rashi on Eruvin 27b:3:2",
+      "Rashi on Eruvin 27b:3:4",
+      "Rashi on Eruvin 27b:3:5"
+    ],
+    "generatedAt": "2026-11-02T18:18:42.663Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 27b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אגב גיזותיה</strong> - אע\"ג דאיכא תרתי עור וגיזה דנפקי לחולין:"
+  },
+  "Rashi on Eruvin 27b:3:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 27b:3:1",
+      "Rashi on Eruvin 27b:3:2",
+      "Rashi on Eruvin 27b:3:3",
+      "Rashi on Eruvin 27b:3:5"
+    ],
+    "generatedAt": "2026-11-02T18:19:13.937Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 27b:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אגב קנקן</strong> - חבית של חרס שהיין שמור בתוכו ויצא הקנקן לחולין:"
+  },
+  "Rashi on Eruvin 27b:3:5": {
+    "dependsOn": [
+      "Rashi on Eruvin 27b:3:1",
+      "Rashi on Eruvin 27b:3:2",
+      "Rashi on Eruvin 27b:3:3",
+      "Rashi on Eruvin 27b:3:4"
+    ],
+    "generatedAt": "2026-11-02T18:19:55.907Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 27b:3:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תמד</strong> - שנותנים מים בחרצנים ולכשהחמיץ שנגמרה תסיסתו הוי כיין אלמא מדקתני בבקר אגב עורו אלמא בהבלעה שרי ואע\"ג דעור באנפי נפשיה לא חזי דמידי דמאכל בעינן כדכתיב ואכלת:"
+  },
+  "Rashi on Eruvin 27b:4:1": {
+    "dependsOn": [
+      "Eruvin 27b:3",
+      "Eruvin 27b:5",
+      "Rashi on Eruvin 27b:5:1",
+      "Rashi on Eruvin 27b:5:2",
+      "Steinsaltz on Eruvin 27b:4:1"
+    ],
+    "generatedAt": "2026-11-02T18:21:13.202Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 27b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאן דמתרגם בקר</strong> - דליצטריך למיכתביה אליבא דבן בג בג כו':"
+  },
+  "Rashi on Eruvin 27b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T18:21:32.107Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 27b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עורו</strong> - המחובר לבשר ואינו יכול להפשיטו מחיים:"
+  },
+  "Rashi on Eruvin 27b:5:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 27b:5:1"
+    ],
+    "generatedAt": "2026-11-02T18:22:01.927Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 27b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל גיזה</strong> - יכול לגוזזה מחיים והוה אמינא דליתסר דלא גופא דפירא הוא:"
+  },
+  "Rashi on Eruvin 27b:7:1": {
+    "dependsOn": [
+      "["
+    ],
+    "generatedAt": "2026-11-02T18:23:18.138Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 27b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קיוהא</strong> - כמו תקהינה שיניו <span class=\"parenthesized\">(ירמיהו ל״א:ל׳)</span> כלומר: לאו פירא ממש הוא אלא מים בעלמא שנכנס בהן קיוהא של חרצנים איגרו\"ס בלע\"ז:"
+  },
+  "Rashi on Eruvin 27b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T18:23:58.575Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 27b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי כתב שכר הוה אמינא</strong> - הבלעה לעולם אסירא והאי שכר לאו תמד הוא דנילף מיניה דיהיב דמים של מים בהבלעה אלא האי שכר דבילה קעילית היא מאותו מקום דמשכרא כדאמרינן בכריתות <span class=\"parenthesized\">(דף יג:)</span> אכל דבילה קעילית ונכנס למקדש חייב:"
+  },
+  "Tosafot on Eruvin 27b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T18:26:36.983Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 27b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוה אמינא צאן על גב עורו אין</strong> - ואם תאמר והא נפקא לן מיין אגב קנקן דעור נמי חשיב שומר כדאמרי' בהעור והרוטב <span class=\"parenthesized\">(חולין דף קיח.)</span> וי\"ל דעור לא הוי כל כך שומר לבשר דמשהופשט לא הוי שומר אבל יין אי אפשר בלא קנקן:"
+  },
+  "Tosafot on Eruvin 27b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T18:25:24.959Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 27b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוה אמינא מאי שכר דבילה קעילית</strong> - כל הני דרשות מיתורא דביתי\"ן דריש דפרטי צריכי לפרט וכלל דממה נפשך צריכי תרי מינייהו כדאמר בפרק קמא דקדושין <span class=\"parenthesized\">(דף יז.)</span> גבי הענקה דאי כתיב צאן הוה אמינא גידולי קרקע לא ואי כתיב גורן הוה אמינא בעלי חיים לא ושאר פרטי נמי שמא צריכי לשום דרשה ועוד דבשבועות פ\"ג <span class=\"parenthesized\">(דף כג.)</span> ובפרק בתרא דיומא <span class=\"parenthesized\">(דף עו.)</span> פריך ואימא דבילה קעילית ומשני גמר שכר שכר מנזיר והכא נפקא לן מדמרבינן יין אגב קנקן אלא התם אצטריך שכר שכר דלא נימא שכר גופיה דבילה קעילית היא והכא אבי\"ת דבשכר קאי וקשה דהיכי קאמר הכא דה\"א דבי\"ת דבשכר לדבילה קעילית אתא הא מכלל ופרט נפקא דהוו פירי מפירי ועוד הקשה מה\"ר שמואל דהיכי בעי למימר התם דשכר גופיה לדבילה קעילית והאמר הכא דאי לאו יתור דיין אגב קנקן ה\"א דבי\"ת דבשכר לדבילה קעילית ויש לומר דשכר גופיה בעי למימר לדבילה קעילית בעינן והכא בדבילה מעורבת עם המים שכך רגילים לתקנם וחשיב טפי מתמד ואם תאמר אמאי לא מוכח התם דשתיה בכלל אכילה מדמרבינן תמד ואמר רחמנא ואכלת וליכא למימר ע\"י אניגרון כדאמרינן התם דמידי דמשכר בעינן הואיל ואתי מריבויא דבשכר וי\"ל דואכלת לא קאי אביתי\"ן אלא אגופיה דקרא דהא עור וגיזה וקנקן לאו בני אכילה נינהו:"
+  }
+}

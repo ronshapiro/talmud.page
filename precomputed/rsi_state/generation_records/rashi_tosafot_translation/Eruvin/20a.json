@@ -1,0 +1,384 @@
+{
+  "Rashi on Eruvin 20a:10:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 20a:10:2",
+      "Rashi on Eruvin 20a:10:3"
+    ],
+    "generatedAt": "2026-11-02T11:16:24.843Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 20a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שנו</strong> - דשמה מחיצה:"
+  },
+  "Rashi on Eruvin 20a:10:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 20a:10:1",
+      "Rashi on Eruvin 20a:10:3"
+    ],
+    "generatedAt": "2026-11-02T11:17:02.744Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 20a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לזרוק</strong> - שהזורק מרה\"ר לתוכה חייב דמדאורייתא ודאי מחיצה היא:"
+  },
+  "Rashi on Eruvin 20a:10:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 20a:10:3",
+      "Rashi on Eruvin 20a:10:1",
+      "Rashi on Eruvin 20a:10:2"
+    ],
+    "generatedAt": "2026-11-02T11:17:48.399Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 20a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל לטלטל אסור</strong> - דרבנן גזור עליה:"
+  },
+  "Rashi on Eruvin 20a:11:1": {
+    "dependsOn": [
+      "Eruvin 20a:11"
+    ],
+    "generatedAt": "2026-11-02T11:18:19.256Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 20a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמזיד איתמר</strong> - וקנסא קנסוה אבל שוגג מותר והא דנעשית מאליה כל שכן דמותר:"
+  },
+  "Rashi on Eruvin 20a:12:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 20a:12:1",
+      "Rashi on Eruvin 20a:12:2",
+      "Rashi on Eruvin 20a:10:1",
+      "Rashi on Eruvin 20a:10:2",
+      "Rashi on Eruvin 20a:11:1"
+    ],
+    "generatedAt": "2026-11-02T11:20:20.683Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 20a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הזורק</strong> - מרשות הרבים לבין הפסין של ביראות:"
+  },
+  "Rashi on Eruvin 20a:12:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T11:20:39.650Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 20a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חייב</strong> - חטאת דרשות היחיד מעלייתא הוא:"
+  },
+  "Rashi on Eruvin 20a:12:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 20a:12:1",
+      "Rashi on Eruvin 20a:12:2",
+      "Rashi on Eruvin 20a:12:3",
+      "Rashi on Eruvin 20a:12:4"
+    ],
+    "generatedAt": "2026-11-02T11:21:14.525Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 20a:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי לאו מחיצה</strong> - מדאורייתא היא לשוויה מיהא רשות היחיד לזריקה:"
+  },
+  "Rashi on Eruvin 20a:12:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 20a:12:1",
+      "Rashi on Eruvin 20a:12:2",
+      "Rashi on Eruvin 20a:12:3",
+      "Rashi on Eruvin 20a:12:4"
+    ],
+    "generatedAt": "2026-11-02T11:22:36.077Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 20a:12:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היכי שרו רבנן למלאות</strong> - ולהוציא מרה\"י לרה\"ר משום דוחק:"
+  },
+  "Rashi on Eruvin 20a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T11:22:57.475Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 20a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כעין פסי ביראות</strong> - ואין שם בור:"
+  },
+  "Rashi on Eruvin 20a:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T11:23:32.372Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 20a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפסקתן</strong> - שאין שם דרך אלא בין הפסין:"
+  },
+  "Rashi on Eruvin 20a:16:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 20a:16:1",
+      "Rashi on Eruvin 20a:16:2",
+      "Rashi on Eruvin 20a:16:3"
+    ],
+    "generatedAt": "2026-11-02T11:24:09.420Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 20a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יסלקנה לצדדין</strong> - דאתי דריסת רבים ומבטלי מחיצות:"
+  },
+  "Rashi on Eruvin 20a:16:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T11:25:05.726Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 20a:16:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כאן הודיעוך</strong> - חכמים כמה גדול כחן של מחיצות דלא מיבטלי משום בקיעת רבים:"
+  },
+  "Rashi on Eruvin 20a:19:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T11:26:55.425Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 20a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מותר להקריב כו'</strong> - פרישנא לה לכולה מתניתין בריש פירקין:"
+  },
+  "Rashi on Eruvin 20a:19:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T11:27:43.207Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 20a:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא א\"כ הכניס ראשו ורובו</strong> - דחיישינן שמא ימשך גופו למקום רגליו ויוציא הכלי עמו:"
+  },
+  "Rashi on Eruvin 20a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T11:03:48.702Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 20a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ליה מותר</strong> - דהא ליכא דיורין בין הפסין דליסרו עלייהו דליהוי מוציא מרשותו לרשות חבירו:"
+  },
+  "Rashi on Eruvin 20a:3:1": {
+    "dependsOn": [
+      "Eruvin 20a:3",
+      "Rashi on Eruvin 20a:3:1",
+      "Rashi on Eruvin 20a:3:2",
+      "Rashi on Eruvin 20a:2:1",
+      "Rashi on Eruvin 20a:4:1"
+    ],
+    "generatedAt": "2026-11-02T11:04:42.942Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 20a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתים מאי</strong> - שתים זו אצל זו ומחיצה ביניהן ושתיהן ראשן בין הפסין:"
+  },
+  "Rashi on Eruvin 20a:3:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 20a:3:1",
+      "Rashi on Eruvin 20a:3:2",
+      "Eruvin 20a:3"
+    ],
+    "generatedAt": "2026-11-02T11:05:32.362Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 20a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסור</strong> - לטלטל מתוכן לבין הפסין כדמפרש טעמא רב הונא:"
+  },
+  "Rashi on Eruvin 20a:4:1": {
+    "dependsOn": [
+      "Eruvin 20a:4",
+      "Rashi on Eruvin 20a:3:1",
+      "Rashi on Eruvin 20a:3:2",
+      "Rashi on Eruvin 20a:6:1"
+    ],
+    "generatedAt": "2026-11-02T11:06:32.605Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 20a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואפילו עירבו</strong> - דרך הפתח שבמחיצה שביניהן דהשתא חדא נינהו ולא אסרן אהדדי אסורות לטלטל מתוכן לבין הפסין גזירה שמא יאמרו עירוב מועיל בין הפסין לשתף חצירות יחד שהרואה אותן מטלטלין מתוכן לבין הפסין לא ידע דיש פתח ביניהן וסבר האי דלא אסרן אהדדי בתוך בין הפסין כשאר שתי חצירות הפתוחות למבוי אחד שאסור להוציא למבוי אלא א\"כ נשתתפו ה\"נ משום דנתנו עירובן בין הפסין לשתף כשיתוף שאר מבוי ואתו למשרי נמי להכניס ולהוציא מבין הפסין לחצירות כי ליכא פתח ביניהן ויהבי עירוב באחת החצירות דרך בין הפסין וההוא ודאי לא מהני דכי תקינו רבנן שיתופי מבואות במבוי סתום תקון ואורכו יותר על רחבו וזה מפולש לארבעה צדדין:"
+  },
+  "Rashi on Eruvin 20a:5:1": {
+    "dependsOn": [
+      "Eruvin 20a:5",
+      "Rashi on Eruvin 20a:4:1"
+    ],
+    "generatedAt": "2026-11-02T11:07:16.582Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 20a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עירבו מותרין</strong> - דכיון דעירבו דרך פתח שביניהן וחד רשותא הוא דלא אסרן אהדדי להך גזירה לא חיישינן:"
+  },
+  "Rashi on Eruvin 20a:6:1": {
+    "dependsOn": [
+      "Eruvin 20a:6",
+      "Rashi on Eruvin 20a:3:1",
+      "Rashi on Eruvin 20a:3:2",
+      "Rashi on Eruvin 20a:4:1",
+      "Tosafot on Eruvin 20a:6:1",
+      "Chokhmat Shlomo on Eruvin 20a:3",
+      "Steinsaltz on Eruvin 20a:6"
+    ],
+    "generatedAt": "2026-11-02T11:09:18.987Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 20a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דהדרן וערבן</strong> - שנפרצה ביניהן פירצה גדולה בסופה שגלוי לכל שרשות אחת היא: <span class=\"image-ref-container\"><span class=\"image-ref-text\">(*):</span><span class=\"image-ref\"><img src=\"data:image/png;base64,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\"></span></span><span class=\"image-pointer\">(*)</span>"
+  },
+  "Rashi on Eruvin 20a:7:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 20a:7:2",
+      "Eruvin 20a:7"
+    ],
+    "generatedAt": "2026-11-02T11:11:33.998Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 20a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יבשו מים בשבת מהו</strong> - לטלטל בין הפסין מי אמרינן שבת הואיל והותרה הותרה או דילמא כיון דהיתר פסין אינו אלא משום מים והרי יבשו ואסור ואכל פסי ביראות קאי:"
+  },
+  "Rashi on Eruvin 20a:7:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 20a:7:2",
+      "Rashi on Eruvin 20a:7:1"
+    ],
+    "generatedAt": "2026-11-02T11:12:28.674Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 20a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כלום נעשית מחיצה</strong> - כלומר כלום הותרה מחיצה כזו אלא משום מים:"
+  },
+  "Rashi on Eruvin 20a:8:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 20a:8:1"
+    ],
+    "generatedAt": "2026-11-02T11:14:02.755Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 20a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יבשו מים בשבת</strong> - וחזרו ובאו גשמים בו ביום מאי מי אמרינן חזרו פסין להיתרן הראשון לטלטל בתוכן:"
+  },
+  "Rashi on Eruvin 20a:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T11:14:28.811Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 20a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיניה דמר</strong> - רבה שהיה רבו:"
+  },
+  "Rashi on Eruvin 20a:9:1": {
+    "dependsOn": [
+      "Eruvin 20a:9",
+      "Chokhmat Shlomo on Eruvin 20a:4",
+      "Rashi on Eruvin 20a:8:1",
+      "Rashi on Eruvin 20a:8:2",
+      "Rashi on Eruvin 20a:10:1",
+      "Rashi on Eruvin 20a:10:2",
+      "Rashi on Eruvin 20a:10:3",
+      "Steinsaltz on Eruvin 20a:9"
+    ],
+    "generatedAt": "2026-11-02T11:15:50.678Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 20a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובאו מים בשבת לא קמבעיא לי</strong> - דמותר דהא קיימא לן כל מחיצה הנעשית בשבת שמה מחיצה:"
+  },
+  "Tosafot on Eruvin 20a:11:1": {
+    "dependsOn": [
+      "Eruvin 20a:6",
+      "Eruvin 20a:7",
+      "Eruvin 20a:8",
+      "Eruvin 20a:9",
+      "Eruvin 20a:10",
+      "Eruvin 20a:11",
+      "Maharsha: Chidushei Halachot on Eruvin 20a:1"
+    ],
+    "generatedAt": "2026-11-02T11:19:38.610Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 20a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי איתמר דרב נחמן אמזיד איתמר</strong> - והא דאמרינן בשבת בפרק הזורק <span class=\"parenthesized\">(שבת ד' קא:)</span> ספינות שנתקשרו מערב שבת והותרו וחזרו ונתקשרו בין שוגגין ובין מזידין ובין מוטעין ובין אנוסין חזרו להיתרן הראשון במזיד לא חזרו לגמרי להיתרן הראשון לטלטל אלא דהוו רשות היחיד דאורייתא אי נמי לא קאי אמזיד:"
+  },
+  "Tosafot on Eruvin 20a:17:1": {
+    "dependsOn": [
+      "Eruvin 20a:17"
+    ],
+    "generatedAt": "2026-11-02T11:26:30.598Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 20a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קמ\"ל כאן וסבירא ליה</strong> - ומיהו לר' יוחנן ודאי כאן ולא ס\"ל כדאמרי' לקמן:"
+  },
+  "Tosafot on Eruvin 20a:6:1": {
+    "dependsOn": [
+      "Eruvin 20a:6",
+      "Rashi on Eruvin 20a:6:1",
+      "Steinsaltz on Eruvin 20a:6:1",
+      "Steinsaltz on Eruvin 20a:6"
+    ],
+    "generatedAt": "2026-11-02T11:10:43.924Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 20a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דהדרן וערבן</strong> - והכי פירושו שתים אסורות אפי' עירבו ואם עירבו כו' דהיינו כלומר דהדרן וערבן מותרות כשעירבו:"
+  },
+  "Tosafot on Eruvin 20a:7:1": {
+    "dependsOn": [
+      "Eruvin 17a:7"
+    ],
+    "generatedAt": "2026-11-02T11:13:22.304Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 20a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחיצה אין כאן</strong> - אע\"ג דאביי אית ליה שבת הואיל והותרה הותרה מודה הכא משום דליכא מחיצות:"
+  }
+}

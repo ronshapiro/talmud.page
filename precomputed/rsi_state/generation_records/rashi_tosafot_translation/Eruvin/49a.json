@@ -1,0 +1,170 @@
+{
+  "Rashi on Eruvin 49a:1:1": {
+    "dependsOn": [
+      "Eruvin 49a:1",
+      "Rashi on Eruvin 48b:8:1",
+      "Rashi on Eruvin 49a:2:1",
+      "Rashi on Eruvin 49a:4:1",
+      "Tosafot on Eruvin 48b:8:1"
+    ],
+    "generatedAt": "2026-11-03T19:26:29.608Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף זו דברי ר' שמעון</strong> - אפילו להשתמש שתיהן עמה ר' שמעון הוא דשרי דהא אפילו אמצעית בשתיהן נמי שרי אבל לרבנן פליגי בכולה ואמרו שלשתן אסורין זו עם זו ל\"א אף זו דברי ר\"ש ר' שמעון גופיה לא שרי אלא חיצונות באמצעית וקשיא לי הא תנן במתניתין היא מותרת עמהן ועוד מאי אף הכי איבעי ליה למימר זו דברי ר\"ש אף משמע דבתרוייהו שרי ולשון אחרון זה שמעתי וכן עיקר והיא מותרת עמהן דמתניתין מתרץ לך שמואל דבהיתר שימוש שבאמצעית קאמר דומיא דהוא מותר עמהן דרישא ואיידי דתנא רישא הוא מותר עמהן תני נמי סיפא ואף זו הכי משמע אף ר' שמעון המיקל אוסר בזו דאין אמצעית מותרת בחיצונות אף איסור זה ר\"ש נמי אמרו כרבנן ואלישנא קמא קשיא מאי ואזדא שמואל לטעמיה אי נמי הוה אמר כרב הוה מצי נמי למימר לרבנן עירבה עם שתיהן אסורה עם שתיהן דאין ב' רשויות משתמשות לרשות אחת:"
+  },
+  "Rashi on Eruvin 49a:2:1": {
+    "dependsOn": [
+      "Eruvin 49a:2",
+      "Eruvin 49a:1",
+      "Rashi on Eruvin 49a:1:1"
+    ],
+    "generatedAt": "2026-11-03T19:27:36.598Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תניא כוותיה דשמואל</strong> - דאפילו ר\"ש לא התיר אמצעית בחיצונות כדקתני זו מביאה מתוך ביתה כו' ואילו אמצעית בחיצונות לא קאמר:"
+  },
+  "Rashi on Eruvin 49a:2:2": {
+    "dependsOn": [
+      "Eruvin 49a:2",
+      "Rashi on Eruvin 49a:2:1"
+    ],
+    "generatedAt": "2026-11-03T19:28:33.712Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למה הדבר דומה</strong> - אשלשה ששבתו בדרך קאי:"
+  },
+  "Rashi on Eruvin 49a:2:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 49a:2:1",
+      "Rashi on Eruvin 49a:2:2"
+    ],
+    "generatedAt": "2026-11-03T19:29:09.614Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זו מביאה</strong> - באמצעית ואוכלת וזו מביאה באמצעית ואוכלת:"
+  },
+  "Rashi on Eruvin 49a:4:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 49a:4:1",
+      "Rashi on Eruvin 49a:4:2",
+      "Rashi on Eruvin 49a:4:3",
+      "Eruvin 49a:4",
+      "Eruvin 48b:8",
+      "Rashi on Eruvin 48b:8:3"
+    ],
+    "generatedAt": "2026-11-03T19:36:30.192Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואזדא שמואל לטעמיה</strong> - דאמר אף לר\"ש אין שתי רשויות משתמשות לרשות אחת:"
+  },
+  "Rashi on Eruvin 49a:4:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 49a:4:1",
+      "Rashi on Eruvin 49a:4:2",
+      "Rashi on Eruvin 49a:4:3"
+    ],
+    "generatedAt": "2026-11-03T19:37:06.058Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חצר שבין שני מבואות</strong> - פתוחה לשניהן:"
+  },
+  "Rashi on Eruvin 49a:4:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 49a:4:1",
+      "Rashi on Eruvin 49a:4:2",
+      "Eruvin 49a:4"
+    ],
+    "generatedAt": "2026-11-03T19:38:12.320Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג עירבה עם שניהן אסורה עם שניהן</strong> - אפילו לרבי שמעון והיינו שמואל לטעמיה דאמר שמואל הלכה כדברי המיקל בעירוב ואי הוה שרי ר\"ש בהא לא הוה אמר שמואל אסורה עם שניהן:"
+  },
+  "Rashi on Eruvin 49a:5:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 49a:5:2",
+      "Rashi on Eruvin 49a:2:1",
+      "Rashi on Eruvin 49a:4:1"
+    ],
+    "generatedAt": "2026-11-03T19:39:05.622Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא עירבה עם שניהן</strong> - לא עירבה לא עם זו ולא עם זו:"
+  },
+  "Rashi on Eruvin 49a:5:2": {
+    "dependsOn": [
+      "Eruvin 49a:2",
+      "Eruvin 49a:3",
+      "Eruvin 49a:4",
+      "Eruvin 49a:5"
+    ],
+    "generatedAt": "2026-11-03T19:41:07.172Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אוסרת על שניהן</strong> - מלהוציא מחצרותיהן למבוי וכגון שרגילה כל ימות החול לצאת ולבא בשניהן דרך פתחים דריסת הרגל שיש לה אוסרתן כדמפרש דאי לא הויא רגילה אלא בחד לא אסרה אאידך ואע\"ג דרגילה עם שניהן זו היא תקנתה מערבת עם האחד וגליא דעתה שנסתלקה מן האחר ומותר האחד לעצמו:"
+  },
+  "Rashi on Eruvin 49a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T19:42:06.312Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היתה באחד רגילה</strong> - לצאת ולבא כל שעה ובאחד אינה רגילה ולא עירבה לא עם זו ולא עם זו זה שרגילה בו אסור שחצר זו אוסרת עליו דמיניה הוא והרי לא עירבה והאחר מותר שאינה הימנו:"
+  },
+  "Rashi on Eruvin 49a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T19:43:02.738Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הותר רגילה לעצמו</strong> - דהא סלקא נפשה מיניה:"
+  },
+  "Tosafot on Eruvin 49a:2:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 49a:2:1",
+      "Rashi on Eruvin 49a:2:2",
+      "Rashi on Eruvin 49a:2:3",
+      "Maharsha on Eruvin 49a:3",
+      "Tosafot on Eruvin 2a:1:1",
+      "Eruvin 49a:2",
+      "Eruvin 48b:9"
+    ],
+    "generatedAt": "2026-11-03T19:34:22.027Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 49a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זו מביאה מתוך ביתה ואוכלת לפ\"ה דווקא נקט אבל אמצעית</strong> - בחיצונות לא ולר\"ת איכא למימר דלרבותא נקט דכ\"ש אמצעית בחיצונות דליכא למגזר כולי האי ולפי' מהר\"י נקט הא משום דמהא פריך לרבנן מאי שנא התם דפליגיתו וגזריתו והכא לא גזריתו מכדי למה הדבר דומה כו':"
+  }
+}

@@ -1,0 +1,389 @@
+{
+  "Rashi on Eruvin 26b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T17:02:45.968Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 26b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ביתא בלא חצר</strong> - כיון דאסר עצמו בחצרו שביטל להם:"
+  },
+  "Rashi on Eruvin 26b:11:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 26b:11:1"
+    ],
+    "generatedAt": "2026-11-02T17:03:22.618Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 26b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאו כל כמיניה</strong> - דכיון דלית ליה חצר דירת בית לא כלום היא לדידיה:"
+  },
+  "Rashi on Eruvin 26b:13:1": {
+    "dependsOn": [
+      "Eruvin 26b:13",
+      "Rashi on Eruvin 26b:11:1",
+      "Rashi on Eruvin 26b:11:2"
+    ],
+    "generatedAt": "2026-11-02T17:04:24.902Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 26b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והאי כי אמר מבטילנא</strong> - בטלה דעתו אצל כל אדם ולא ביטל אלא חצר:"
+  },
+  "Rashi on Eruvin 26b:15:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 39a:3:4",
+      "Rashi on Pesachim 39a:7:1"
+    ],
+    "generatedAt": "2026-11-02T17:07:07.563Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 26b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אצוותא חרזייתא</strong> - סיב עבה הגדל סביב הדקל ונכרך ועולה בו כלולבי גפנים. חרזייתא תכופות הרבה יחד כמחרוזות וטעם מרור בו:"
+  },
+  "Rashi on Eruvin 26b:17:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 26b:17:2",
+      "Rashi on Eruvin 26b:17:3",
+      "Rashi on Eruvin 26b:4:1",
+      "Rashi on Eruvin 26b:8:1"
+    ],
+    "generatedAt": "2026-11-02T17:18:38.662Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 26b:17:1"
+    ],
+    "sourceText": "בכל מערבין עירובי חצירות ותחומין:"
+  },
+  "Rashi on Eruvin 26b:17:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 26b:17:1",
+      "Rashi on Eruvin 26b:17:2"
+    ],
+    "generatedAt": "2026-11-02T17:19:21.584Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 26b:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומשתתפין</strong> - במבוי:"
+  },
+  "Rashi on Eruvin 26b:17:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T17:19:57.144Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 26b:17:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חוץ מן המים ומן המלח</strong> - דלאו מידי דמזון הן וטעמא דעירוב משום דדעתו ודירתו במקום מזונותיו הוא וכיון שנתנו כל בני החצר כדי מזונן בבית אחד נעשה כאילו כולן דרים בתוכו ונמצאו כולן רשות אחת וכו' וכן בעירובי תחומין נעשה כמי ששכב שם ומשם יש לו אלפים אמה לכל רוח הלכך דבר מזון בעינן:"
+  },
+  "Rashi on Eruvin 26b:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T17:22:16.301Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 26b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכסף מעשר</strong> - בתוך ירושלים כשהוא מוציאו [לצורך מאכלו] כדכתיב <span class=\"parenthesized\">(דברים י״ד:כ״ו)</span> ונתתה הכסף בכל אשר תאוה נפשך:"
+  },
+  "Rashi on Eruvin 26b:18:2": {
+    "dependsOn": [
+      "Eruvin 26b:18",
+      "Eruvin 27a:10",
+      "Eruvin 27a:11",
+      "Eruvin 27a:12",
+      "Eruvin 27b:15",
+      "Eruvin 27b:16"
+    ],
+    "generatedAt": "2026-11-02T17:23:48.605Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 26b:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חוץ מן המים ומלח</strong> - בגמרא מפרש טעמא דלאו פרי מפרי הוא:"
+  },
+  "Rashi on Eruvin 26b:19:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 26b:19:1",
+      "Rashi on Eruvin 26b:19:2",
+      "Rashi on Eruvin 26b:17:1",
+      "Rashi on Eruvin 26b:18:1",
+      "Rashi on Eruvin 26b:20:1"
+    ],
+    "generatedAt": "2026-11-02T17:24:34.863Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 26b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מערבין לנזיר</strong> - עירובי תחומין:"
+  },
+  "Rashi on Eruvin 26b:19:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T17:25:04.480Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 26b:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ביין</strong> - ואף על גב דלא חזי לדידיה חזי לאחריני וכיון דמזונא הוא גבי אחריני שרו ליה רבנן:"
+  },
+  "Rashi on Eruvin 26b:19:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 26b:19:1",
+      "Rashi on Eruvin 26b:19:2",
+      "Rashi on Eruvin 26b:19:4"
+    ],
+    "generatedAt": "2026-11-02T17:25:31.520Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 26b:19:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולישראל בתרומה</strong> - דהא חזיא לכהן:"
+  },
+  "Rashi on Eruvin 26b:19:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T17:25:52.552Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 26b:19:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סומכוס אומר בחולין</strong> - אבל לא בתרומה דמידי דחזי ליה בעינן ובגמרא מפרש מאי טעמא לא פליג סומכוס איין לנזיר:"
+  },
+  "Rashi on Eruvin 26b:1:1": {
+    "dependsOn": [
+      "Eruvin 26b:1",
+      "Rashi on Eruvin 26a:13:1",
+      "Rashi on Eruvin 26b:4:1"
+    ],
+    "generatedAt": "2026-11-02T16:46:52.128Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 26b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר\"א</strong> - כדאמר רבי אלעאי שמעתי מר\"א:"
+  },
+  "Rashi on Eruvin 26b:20:1": {
+    "dependsOn": [
+      "Eruvin 26b:20",
+      "Eruvin 30b:15",
+      "Rashi on Eruvin 30b:15:1",
+      "Rashi on Eruvin 26b:19:1",
+      "Rashi on Eruvin 26b:19:2",
+      "Rashi on Eruvin 26b:19:3",
+      "Rashi on Eruvin 26b:19:4"
+    ],
+    "generatedAt": "2026-11-02T17:27:32.780Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 26b:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולכהן בבית הפרס</strong> - סתמא היא ולאו סומכוס קאמר לה מניחין עירוב לכהן בבית הפרס אע\"ג דבעינן דמצי למיזל ולמישקליה ומיכליה התם דאי לא מצי אזיל התם היכי קני שביתה בההוא דוכתא למהוי כאילו שבת שם בבית הפרס שפיר דמי דספיקא דרבנן הוא ומותר ליכנס ע\"י נפוח:"
+  },
+  "Rashi on Eruvin 26b:2:1": {
+    "dependsOn": [
+      "Eruvin 26b:2",
+      "Eruvin 26a:14",
+      "Eruvin 25b:10",
+      "Rashi on Eruvin 26a:13:1",
+      "Rashi on Eruvin 26b:1:1"
+    ],
+    "generatedAt": "2026-11-02T16:48:32.174Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 26b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רשות ביתו ביטל</strong> - ואע\"ג דלא פריש בהדיא רשות ביתו דהא ודאי מתני' בדלא פירש דאי פירש לא מצי למימר ר' אלעאי בקשתי לי חבר ולא מצאתי דהא כ\"ע מודו דשרי:"
+  },
+  "Rashi on Eruvin 26b:3:1": {
+    "dependsOn": [
+      "Eruvin 26b:3",
+      "Rashi on Eruvin 26b:4:1"
+    ],
+    "generatedAt": "2026-11-02T16:49:21.774Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 26b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פשיטא</strong> - דבהכי פליגי ולמה ליה לרב ששת לומר כשתימצי לומר:"
+  },
+  "Rashi on Eruvin 26b:4:1": {
+    "dependsOn": [
+      "Eruvin 26b:4",
+      "Rashi on Eruvin 26b:4:2"
+    ],
+    "generatedAt": "2026-11-02T16:50:12.174Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 26b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רחבה אנא ורב הונא בר חיננא תרגימנא</strong> - להאי כשתימצי לומר דרב ששת למאי איצטריך:"
+  },
+  "Rashi on Eruvin 26b:4:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 26b:4:1",
+      "Rashi on Eruvin 26b:8:1",
+      "Eruvin 26b:4"
+    ],
+    "generatedAt": "2026-11-02T16:53:13.323Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 26b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג לא נצרכה אלא לחמשה ששרוין בחצר כו'</strong> - דאשמעינן רב ששת לשום לב להבין טעם מחלוקתן וללמוד הימנו דבר אחר דלר' אליעזר מבטל בעין יפה מבטל ולא אמרינן חצר דגלי גלי בית דלא גלי לא גלי ונילף מינה דהיכא דבטיל לחד מינייהו בטיל לכולהו ולא אמרינן למאן דגלי גלי למאן דלא גלי לא גלי ולרבנן צריך לבטל לכל אחד ואחד כי היכי דלגבי בית סבירא להו דמאי דלא פריש לא בטיל הכא נמי למאן דלא פריש לא בטיל וכולן אסורין דאע\"ג דהאי דבטיל ליה עירב עם חבירו כי עירב מאתמול אדעתא דההיא חולקא לא עירב דההיא שעתא לאו דידיה הוא ודכוותיה תניא בהדר <span class=\"parenthesized\">(לקמן עירובין דף ע:)</span> אחד מן השוק שמת והיה לו בית בחצר והניח רשותו לאחד מבני החצר מבעוד יום דהיינו קודם שעירבו דכי עירב אדעתא דההיא חולקא נמי עירב אינו אוסר משחשיכה הרי זה אוסר:"
+  },
+  "Rashi on Eruvin 26b:8:1": {
+    "dependsOn": [
+      "Eruvin 26b:8",
+      "Rashi on Eruvin 26b:8:1",
+      "Rashi on Eruvin 26b:8:2",
+      "Rashi on Eruvin 26b:8:3",
+      "Eruvin 26b:4",
+      "Rashi on Eruvin 26b:2:1",
+      "Rashi on Eruvin 26b:4:1"
+    ],
+    "generatedAt": "2026-11-02T16:54:52.019Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 26b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב כהנא מתני הכי</strong> - להאי כשתימצי לומר דרב ששת אמתניתין ורחבה ורב הונא הוא דתרגמוה לאגמורינן מינה אחמשה שעירבו בחצר כו' הוא דאתא:"
+  },
+  "Rashi on Eruvin 26b:8:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 26b:8:1",
+      "Rashi on Eruvin 26b:8:2",
+      "Rashi on Eruvin 26b:8:3"
+    ],
+    "generatedAt": "2026-11-02T16:55:31.691Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 26b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורב טביומי מתני</strong> - דרב ששת בהדיא אמרה עלה:"
+  },
+  "Rashi on Eruvin 26b:8:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 26b:8:1",
+      "Rashi on Eruvin 26b:8:2",
+      "Eruvin 26b:8",
+      "Rashi on Eruvin 26b:4:1",
+      "Rashi on Eruvin 26b:4:2"
+    ],
+    "generatedAt": "2026-11-02T16:58:50.742Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 26b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כר' אליעזר</strong> - דאמר מבטל בעין יפה מבטל:"
+  },
+  "Rashi on Eruvin 26b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T16:59:17.453Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 26b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לרבי אליעזר</strong> - דאמר מסתמא ביטל רשות ביתו:"
+  },
+  "Rashi on Eruvin 26b:9:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 26b:9:1",
+      "Rashi on Eruvin 26b:9:2",
+      "Rashi on Eruvin 26b:9:3",
+      "Steinsaltz on Eruvin 26b:9",
+      "Rashi on Eruvin 26b:1:1",
+      "Rashi on Eruvin 26b:2:1",
+      "Rashi on Eruvin 26b:3:1",
+      "Rashi on Eruvin 26b:4:1",
+      "Rashi on Eruvin 26b:4:2",
+      "Rashi on Eruvin 26b:8:1",
+      "Rashi on Eruvin 26a:1:1",
+      "Rashi on Eruvin 26a:2:1"
+    ],
+    "generatedAt": "2026-11-02T17:01:02.395Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 26b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם אמר</strong> - בהדיא לא בטילנא רשות ביתו מי הוי ביתו מותר להן או לא:"
+  },
+  "Rashi on Eruvin 26b:9:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 26b:9:1",
+      "Rashi on Eruvin 26b:9:2",
+      "Rashi on Eruvin 26b:9:3"
+    ],
+    "generatedAt": "2026-11-02T17:02:01.130Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 26b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולרבנן</strong> - דאמרי מסתמא לא ביטל רשות ביתו אמר בהדיא מבטילנא לכו אף רשות ביתו מבטיל אי לא:"
+  },
+  "Tosafot on Eruvin 26b:15:1": {
+    "dependsOn": [
+      "Eruvin 26b:15",
+      "Eruvin 26a:8"
+    ],
+    "generatedAt": "2026-11-02T17:09:09.715Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 26b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא מצאתי לי חבר</strong> - היינו דוקא בתלמידיו דתניא בכל שעה <span class=\"parenthesized\">(פסחים דף לט.)</span> עד שבאתי אצל ר\"א בן יעקב והודה לדברי אי נמי לא מצא חבר ששמע מר\"א קאמר:"
+  },
+  "Tosafot on Eruvin 26b:15:2": {
+    "dependsOn": [
+      "Tosafot on Eruvin 26b:15:1",
+      "Tosafot on Pesachim 39a:3:1",
+      "Rashi on Eruvin 26b:15:1"
+    ],
+    "generatedAt": "2026-11-02T17:17:46.587Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 26b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אצוותא חרוזייתא</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> סיב עבה הגדל סביב הדקל ונכרך ועולה כלולבי גפנים ואין נראה לר\"י דבפ' כל שעה <span class=\"parenthesized\">(פסחים דף לט.)</span> אמרי' מה מצה מין זרעים אף מרור מין זרעים והתם אמרינן דחרחבינא אצוותא דדיקלא ואפשר דהן ב' מינין ושניהן נכרכין סביב הדקל:"
+  },
+  "Tosafot on Eruvin 26b:17:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 26b:17:1",
+      "Tosafot on Eruvin 26b:15:2"
+    ],
+    "generatedAt": "2026-11-02T17:21:43.699Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 26b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכל מערבין</strong> - <span class=\"rashi-quotation\">פי' בקונט'</span> עירובי חצירות ותחומין ואין נראה דבעירובי חצירות בעינן פת לכולי עלמא בפרק הדר <span class=\"parenthesized\">(לקמן עירובין דף עא:)</span> וכל האי פירקא מוכח דאיירי בתחומין:"
+  }
+}

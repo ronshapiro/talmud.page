@@ -1,0 +1,403 @@
+{
+  "Rashi on Eruvin 19a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T09:57:29.482Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא מבשקר</strong> - איננו מכירו שהוא יהודי דמשכה ערלתו ודומה לו כמי שאינו נימול:"
+  },
+  "Rashi on Eruvin 19a:11:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 19a:11:2"
+    ],
+    "generatedAt": "2026-11-02T09:58:19.231Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המוציא והמעלה</strong> - המוציא אתכם מארץ מצרים <span class=\"parenthesized\">(ויקרא כ״ב:ל״ג)</span> וכן המעלה אתכם מארץ מצרים <span class=\"parenthesized\">(שם יא)</span>:"
+  },
+  "Rashi on Eruvin 19a:11:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 19a:11:1",
+      "Rashi on Eruvin 19a:10:1"
+    ],
+    "generatedAt": "2026-11-02T09:59:01.879Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דפשעי</strong> - בחייהם:"
+  },
+  "Rashi on Eruvin 19a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T09:59:23.811Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מבטן שאול</strong> - יונה בן אמתי קאמר ליה:"
+  },
+  "Rashi on Eruvin 19a:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T09:59:54.932Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בדבי רבן יוחנן בן זכאי</strong> - ברייתא שנסדרה בבית מדרשו כעין תוספתא שסידר ר' חייא ור' אושעיא:"
+  },
+  "Rashi on Eruvin 19a:15:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 19a:15:1",
+      "Rashi on Eruvin 19a:15:3",
+      "Rashi on Sukkah 32a:13:1",
+      "Rashi on Eruvin 18b:24:1",
+      "Rashi on Eruvin 18b:24:2",
+      "Rashi on Eruvin 19a:2:1",
+      "Rashi on Eruvin 19a:3:1",
+      "Rashi on Eruvin 19a:3:2",
+      "Rashi on Eruvin 19a:3:3"
+    ],
+    "generatedAt": "2026-11-02T10:01:44.458Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ציני</strong> - דקלים:"
+  },
+  "Rashi on Eruvin 19a:15:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 19a:15:1",
+      "Rashi on Eruvin 19a:15:2",
+      "Sukkah 32a:1",
+      "Rashi on Eruvin 19a:16:1",
+      "Rashi on Eruvin 19a:16:2"
+    ],
+    "generatedAt": "2026-11-02T10:02:44.498Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19a:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשרין</strong> - ללולב:"
+  },
+  "Rashi on Eruvin 19a:16:1": {
+    "dependsOn": [
+      "[",
+      "Rashi on Eruvin 19a:15:1",
+      "Rashi on Eruvin 19a:16:2",
+      "Rashi on Eruvin 19a:18:1",
+      "Eruvin 19a:17"
+    ],
+    "generatedAt": "2026-11-02T10:08:29.027Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טיט היון</strong> - הוא רפש לטבוע בו ובלע\"ז פנ\"ק וסתם טיט היינו שראוי לבנין:"
+  },
+  "Rashi on Eruvin 19a:16:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 19a:16:1",
+      "Eruvin 19a:16",
+      "Rashi on Eruvin 19a:15:1",
+      "Rashi on Eruvin 19a:15:2",
+      "Rashi on Eruvin 19a:13:1"
+    ],
+    "generatedAt": "2026-11-02T10:09:33.547Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שחת ובאר שחת</strong> - חדא מילתא היא:"
+  },
+  "Rashi on Eruvin 19a:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T10:12:10.255Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על עסקי הנם</strong> - עריות:"
+  },
+  "Rashi on Eruvin 19a:19:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T10:12:33.598Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תפתה</strong> - גיהנם דכתיב בההוא קרא מדורתה אש ועצים הרבה:"
+  },
+  "Rashi on Eruvin 19a:1:1": {
+    "dependsOn": [
+      "Eruvin 19a:1",
+      "Rashi on Eruvin 18b:18:1",
+      "Rashi on Eruvin 18b:18:2"
+    ],
+    "generatedAt": "2026-11-02T09:45:23.351Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למטעי כרם</strong> - ויהנו שכיניה ושבח הוא לה שנזכרת לטובה:"
+  },
+  "Rashi on Eruvin 19a:20:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T10:15:00.887Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בית שאן פיתחו</strong> - שפירותיו מתוקין מכל ארץ ישראל:"
+  },
+  "Rashi on Eruvin 19a:20:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T10:16:08.839Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19a:20:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משתבח בפירות דעבר ימינא</strong> - משתבח בפירות של עבר הנהר פרת בדרומו:"
+  },
+  "Rashi on Eruvin 19a:23:1": {
+    "dependsOn": [
+      "Eruvin 19a:23"
+    ],
+    "generatedAt": "2026-11-02T10:23:35.619Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19a:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבקה נכנסת ורבקה יוצאת</strong> - ולא פרה נכנסת ופרה יוצאת דא\"כ לא הוו להו קשורות:"
+  },
+  "Rashi on Eruvin 19a:23:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T10:24:46.061Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19a:23:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כמה ראשה ורובה של פרה</strong> - שנתנו חכמים שיעור להרחקת פסין מן הבור שיהו רחוקין כדי ראשה ורובה כדתנן במתני':"
+  },
+  "Rashi on Eruvin 19a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T09:45:42.789Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חכה</strong> - עץ שפותח פיו שלא יכול לדבר:"
+  },
+  "Rashi on Eruvin 19a:3:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 19a:3:1",
+      "Rashi on Eruvin 19a:3:2",
+      "Rashi on Eruvin 19a:3:3",
+      "Steinsaltz on Eruvin 19a:3",
+      "Eruvin 19a:3"
+    ],
+    "generatedAt": "2026-11-02T09:47:42.197Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לך דומיה</strong> - הכל שותקין כנגדך: שדומה עליו כו' נוחין לו יסורין שמקבלן מאהבה:"
+  },
+  "Rashi on Eruvin 19a:3:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 19a:3:1",
+      "Rashi on Eruvin 19a:3:2",
+      "Rashi on Eruvin 19a:3:3"
+    ],
+    "generatedAt": "2026-11-02T09:48:16.078Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19a:3:2"
+    ],
+    "sourceText": "שדומה עליו כו' נוחין לו יסורין שמקבלן מאהבה:"
+  },
+  "Rashi on Eruvin 19a:3:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 19a:3:1",
+      "Rashi on Eruvin 19a:3:2",
+      "Rashi on Eruvin 19a:3:3",
+      "Torah Temimah on Psalms 65:2:1",
+      "Steinsaltz on Eruvin 19a:3",
+      "Steinsaltz comment #1 on Eruvin 19a:3",
+      "Steinsaltz comment #2 on Eruvin 19a:3"
+    ],
+    "generatedAt": "2026-11-02T09:50:31.883Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולך ישולם נדר</strong> - אותה דומיה שהוא דומה ביסורין דומה לו כשילום נדר:"
+  },
+  "Rashi on Eruvin 19a:4:1": {
+    "dependsOn": [
+      "Eruvin 19a:4",
+      "Rashi on Eruvin 19a:3:1"
+    ],
+    "generatedAt": "2026-11-02T09:51:30.435Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעין ישיתוהו</strong> - כמעין של שיתין נקב שבבנין המזבח שניסוך היין של ספלים יורד לתוכו כל השנה כדאמרי' בלולב וערבה <span class=\"parenthesized\">(סוכה מט.)</span>:"
+  },
+  "Rashi on Eruvin 19a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T09:51:54.660Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הפושעי' בי</strong> - עדיין ואפי' בשעת תולעתם ואשם:"
+  },
+  "Rashi on Eruvin 19a:8:1": {
+    "dependsOn": [
+      "Eruvin 19a:8",
+      "Tosafot on Eruvin 19a:8:1",
+      "Rashi on Eruvin 19a:6:1",
+      "Rashi on Eruvin 19a:10:1"
+    ],
+    "generatedAt": "2026-11-02T09:54:31.395Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דא\"כ</strong> - דהא דר\"ל בפושעי ישראל מוקי לה להאי קרא דכתיב ואשם לא תכבה קשיא דידיה אדידיה:"
+  },
+  "Tosafot on Eruvin 19a:15:1": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Eruvin 19a:4",
+      "Eruvin 19a:15",
+      "Eruvin 19a:20",
+      "Eruvin 19a:10",
+      "Tosafot on Bava Metzia 58b:13:1",
+      "Bava Metzia 58b:13-14"
+    ],
+    "generatedAt": "2026-11-02T10:05:28.423Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 19a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בר מבא וכו'</strong> - לא שייך למחשביה בהזהב <span class=\"parenthesized\">(ב\"מ דף נח:)</span> גבי שלשה יורדין לגיהנם ואינן עולין דזה עולה כשקיבל דינו והא דלא חשיב התם פושעי ישראל בגופן והצדוקין כו' דאין עולין לפי ששנויים בברייתא ואע\"ג דמלבין פני חבירו חשיב ליה ותני ליה במס' אבות מ\"מ אשמעינן דמכנה שם הוי מלבין אע\"ג דדש ביה בשמיה:"
+  },
+  "Tosafot on Eruvin 19a:15:2": {
+    "dependsOn": [
+      "Tosafot on Eruvin 19a:15:1"
+    ],
+    "generatedAt": "2026-11-02T10:06:06.191Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 19a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דילמא היינו דירושלים</strong> - כדכתיב <span class=\"parenthesized\">(יהושע טו)</span> גיא בן הנם וגו' ירושלים ולא גרסינן היינו דמדבר:"
+  },
+  "Tosafot on Eruvin 19a:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T10:10:12.563Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 19a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באר שחת כדכתיב כי לא תעזוב נפשי לשאול לא תתן חסידך לראות שחת</strong> - [והיינו באר שחת] ומהאי קרא הוה מצי לאתויי דשמו שאול והא דלא מייתי קרא ואתה אלהים תורידם לבאר שחת דהאי קרא בקבר כתיב כדמוכח סיפא דקרא אנשי דמים ומרמה לא יחצו ימיהם:"
+  },
+  "Tosafot on Eruvin 19a:17:2": {
+    "dependsOn": [
+      "Tosafot on Eruvin 19a:17:1"
+    ],
+    "generatedAt": "2026-11-02T10:11:13.320Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 19a:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וצלמות דכתיב יושבי חשך וצלמות</strong> - האי קרא בתהלים כתיב גבי ארבעה צריכין להודות ונראה כספרים דגרסי בטרם אלך ולא אשוב אל ארץ חשך וצלמות <span class=\"parenthesized\">(איוב י׳:כ״א)</span>: [חיתית גרס דתחתית כתיב ביחזקאל <span class=\"parenthesized\">(ל\"א)</span> כשהראה הקב\"ה שכל הגוים יורדים לגיהנם כתיב שם אל ארץ תחתית]:"
+  },
+  "Tosafot on Eruvin 19a:19:1": {
+    "dependsOn": [
+      "Tosafot on Avodah Zarah 17a:7:1",
+      "Tosafot on Eruvin 19a:8:1",
+      "Tosafot on Eruvin 19a:15:1",
+      "Tosafot on Eruvin 19a:15:2",
+      "Tosafot on Eruvin 19a:17:1",
+      "Tosafot on Eruvin 19a:17:2"
+    ],
+    "generatedAt": "2026-11-02T10:14:40.040Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 19a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והאיכא תפתה</strong> - תימה דלא חשיב עלוקה ור\"ת מפרש דעלוקה שם חכם כמו לאיתיאל והא דמוקי ליה במסכת עבודה זרה <span class=\"parenthesized\">(דף יז.)</span> בגיהנם היינו משום דכתיב בתריה שאול ועוצר רחם ומיהו קשה דבפסיקתא לא חשיב להם בשמות שלמה וגם בג' דברי' וד' דברים הכתובים באותו ספר לא חשיב עלוקה ואע\"ג דלא חשיב נמי יקא היינו משום דשמא הוי בכלל אגור והפייט נמי יסדו בשם גיהנם בזולת אין צור חלף יקדו בהבהבי עלק:"
+  },
+  "Tosafot on Eruvin 19a:20:1": {
+    "dependsOn": [
+      "Kiddushin 72a:10",
+      "Kiddushin 72a:11",
+      "Rashi on Kiddushin 72a:10:1",
+      "Rashi on Kiddushin 72a:11:1",
+      "Eruvin 22b:1",
+      "Tosafot on Eruvin 22b:1:2",
+      "Tosafot on Kiddushin 71b:13:1",
+      "Rashi on Kiddushin 71b:13:2"
+    ],
+    "generatedAt": "2026-11-02T10:21:47.844Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 19a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם בין הנהרות הוא</strong> - משמע דבין הנהרו' לאו היינו בבל ודלא כפ\"ה שפי' בי' יוחסין <span class=\"parenthesized\">(קדושין דף עב.)</span> גבי בין הנהרות הרי הוא כגולה ליוחסין ובפירקין <span class=\"parenthesized\">(דף כב:)</span> נמי אמרי' בבל נמי מקיף לה פרת מחד גיסא ודגלת מחד גיסא:"
+  },
+  "Tosafot on Eruvin 19a:8:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 19a:8:1",
+      "Chagigah 27a:6",
+      "Chagigah 27a:7",
+      "Chagigah 27a:8",
+      "Eruvin 19a:8",
+      "Rashi on Eruvin 19a:10:1",
+      "Rashi on Eruvin 19a:8:1",
+      "Tosafot on Chagigah 27a:7:1"
+    ],
+    "generatedAt": "2026-11-02T09:57:07.695Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 19a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[פושעי ישראל אין אור שולטת בהן ק\"ו ממזבח הזהב</strong> - תימה דבמס' חגיגה <span class=\"parenthesized\">(דף כז.)</span> עביד ק\"ו מסלמנדרא דתלמידי חכמים אין אור שולטת בהן מק\"ו וי\"ל דפושעי ישראל פניהם משחירי' ואלו תלמידי חכמי' כלל וכלל לא]:"
+  }
+}

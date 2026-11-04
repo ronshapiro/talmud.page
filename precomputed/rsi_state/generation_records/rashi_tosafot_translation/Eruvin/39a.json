@@ -1,0 +1,312 @@
+{
+  "Rashi on Eruvin 39a:10:1": {
+    "dependsOn": [
+      "Eruvin 39a:10",
+      "Rashi on Eruvin 39a:9:1",
+      "Rashi on Eruvin 39a:8:1",
+      "Rashi on Eruvin 38b:1:1",
+      "Rashi on Eruvin 38b:2:1"
+    ],
+    "generatedAt": "2026-11-03T06:33:50.670Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 39a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא הודו לו חכמים</strong> - דסברי דתרוייהו קדושה אחת היא ואין מגביהין בהן תרומה:"
+  },
+  "Rashi on Eruvin 39a:11:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 39a:11:1"
+    ],
+    "generatedAt": "2026-11-03T06:36:10.969Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 39a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">החליצנו</strong> - זרזנו והחליצנו כמו נחלץ חושים <span class=\"parenthesized\">(במדבר לב)</span>:"
+  },
+  "Rashi on Eruvin 39a:11:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 39a:11:1",
+      "Rashi on Eruvin 39a:11:2",
+      "Rashi on Eruvin 39a:11:3"
+    ],
+    "generatedAt": "2026-11-03T06:36:48.763Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 39a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם היום אם מחר</strong> - אם היום הוא החליצנו היום ואם מחר מחר:"
+  },
+  "Rashi on Eruvin 39a:11:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T06:37:25.107Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 39a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא הודו לו חכמים</strong> - בגמ' מפרש אי אתנאה קאי וקא סברי לאו ספק הוא אלא יום ראשון הוא ראש חדש או אזכרון קאי וקסברי דאין מזכירין של ר\"ח בראש השנה:"
+  },
+  "Rashi on Eruvin 39a:12:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 39a:11:1",
+      "Rashi on Eruvin 39a:11:2",
+      "Rashi on Eruvin 39a:12:2"
+    ],
+    "generatedAt": "2026-11-03T06:39:30.021Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 39a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מודים חכמים</strong> - אע\"ג דפליגי עליה דר\"א בשבת ויו\"ט הכא מודו דב' ימים טובים של ר\"ה ב' קדושות הן דחד מינייהו חול ומשום ספיקא דלא ידעינן אי עברוהו ב\"ד וקדשו ירחא ביום ל\"א והוה ליה ראשון חול או ביום ל' נקבע והוי שני חול הוא דעבדי להו:"
+  },
+  "Rashi on Eruvin 39a:12:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T06:41:32.713Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 39a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור' יוסי אוסר</strong> - דקסבר לאו משום ספיקא דשמא באו עדים ביום ל' ספק ביום ל\"א לחודיה איתקון אלא אף משום שמא באו עדים מן המנחה ולמעלה איתקון דתרוייהו קדישי דאמור רבנן שהיו מצפין ביום ל' של אלול שמא יבאו עדים שנראית הלבנה בו ויקדשו ב\"ד את החדש היום ונוהגין אותו היום קדש שמא י\"ט הוא ותניא תמיד של ר\"ה שחרית קרב כהלכתו תמיד של חול ושיר של חול המתוקן ליום בהשיר שהיו הלוים אומרים במקדש ביום הראשון כו' [תמיד פ\"ז מ\"ד] בתמיד של בין הערבים אומר שיר אחר הסירותי מסבל שכמו כדאמרינן בפרק בתרא של ר\"ה <span class=\"parenthesized\">(ד' ל:)</span> ואם באו עדים אחר תמיד של בין הערבים שכבר קרב בשיר של חול תיקנו שיהיו מקדשין החדש מחר ומיום המחרת מונין קביעתו כדי לומר שיר הראוי לי\"ט ומ\"מ גמר יום שלשים נוהגין קדש כתחלתו שכך תקנו שיהו נוהגין אותו היום קדש ואפילו גמרו של יום ואע\"פ שיודעין שידחה ליום המחרת ולמחר קדש והרחוקים מב\"ד נוהגין שני ימים טובים לאו משום ספק נראית לבנה ביום ל' והוי שני חול ספק ביום ל\"א והוי ראשון חול קא עבדי אלא משום שמא באו עדים אחר תמיד של בין הערבים ונהגו ב\"ד שניהן קדש קא עבדי אלמא שניהן קדש:"
+  },
+  "Rashi on Eruvin 39a:13:1": {
+    "dependsOn": [
+      "Eruvin 39a:13",
+      "Rashi on Eruvin 39a:8:1",
+      "Rashi on Eruvin 39a:8:2",
+      "Rashi on Eruvin 39a:8:3",
+      "Rashi on Eruvin 39a:12:1",
+      "Rashi on Eruvin 39a:12:2"
+    ],
+    "generatedAt": "2026-11-03T06:44:00.860Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 39a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי אתם מודים כו'</strong> - כדפרישית אלמא אנן דרחקינן מב\"ד מספקא לן דילמא הכי הוה ותרוייהו קדש:"
+  },
+  "Rashi on Eruvin 39a:1:1": {
+    "dependsOn": [
+      "Eruvin 39a:1"
+    ],
+    "generatedAt": "2026-11-03T06:18:45.454Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 39a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא יטייל אדם</strong> - בשבת או ביו\"ט סמוך לחשיכה עד פתח מדינה כדי להתקרב למרחץ להיות מזומן ליכנס כשתחשך מיד אלמא אף על גב דהילוך גרידא עביד ולא אמר מידי אסור וגבי עירוב אי בדיבורא הוה אסור משום הכנה בשתיקותא נמי הוה אסור:"
+  },
+  "Rashi on Eruvin 39a:2:1": {
+    "dependsOn": [
+      "Eruvin 39a:2"
+    ],
+    "generatedAt": "2026-11-03T06:19:42.642Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 39a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מוכחא מילתא</strong> - מאי בעי בשדהו אם לא לידע מה היא צריכה ורחמנא אמר ממצוא חפצך וגו' <span class=\"parenthesized\">(ישעיהו נ״ח:י״ג)</span> וכן בפתח המדינה אבל חוץ לעיר עד התחום לא מוכחא מילתא דלערובי לצורך מחר קאזיל ולא מסקי אינשי אדעתייהו אלא אי צורבא מרבנן הוא אמרינן שמעתא משכתיה שמהרהר בה ואין דעתו עליו:"
+  },
+  "Rashi on Eruvin 39a:3:1": {
+    "dependsOn": [
+      "Eruvin 39a:3",
+      "Eruvin 39a:1",
+      "Rashi on Eruvin 39a:3:2",
+      "Rashi on Eruvin 38b:18:2",
+      "Rashi on Eruvin 38b:18:3",
+      "Eruvin 38b:16",
+      "Eruvin 38b:17",
+      "Eruvin 38b:18",
+      "Eruvin 38b:19",
+      "Rashi on Eruvin 38b:18:1",
+      "Eruvin 39a:4",
+      "Eruvin 39a:5",
+      "Eruvin 39a:6",
+      "Eruvin 39a:7",
+      "Rashi on Eruvin 39a:7:1",
+      "Rashi on Eruvin 39a:7:2"
+    ],
+    "generatedAt": "2026-11-03T06:22:38.954Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 39a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרי לך</strong> - דילמא מתני' עצה טובה קמ\"ל הא דקתני נוטלו ובא לו שלא יאבד ויפסיד פתו ויטרח באחרת ולעולם אי בעי מערב באחרת ודקתני אין עירוב לשני בקנייה קמייתא קאמר אי לא הדר מערב:"
+  },
+  "Rashi on Eruvin 39a:3:2": {
+    "dependsOn": [
+      "Eruvin 39a:3",
+      "Rashi on Eruvin 39a:3:1"
+    ],
+    "generatedAt": "2026-11-03T06:23:27.310Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 39a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חמרא אירכס ליה</strong> - ואזיל לעיוני דאפילו בשבת מותר להשיבו מתוך התחום לביתו אבל מידי דאסיר ליה למיעבד בשבת אסיר ליה לזמוני נפשיה לההוא מידי:"
+  },
+  "Rashi on Eruvin 39a:5:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 39a:5:1",
+      "Rashi on Eruvin 39a:5:2"
+    ],
+    "generatedAt": "2026-11-03T06:24:00.894Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 39a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עירב בפת בראשון</strong> - ונאכל עירובו מערב ברגליו בשני:"
+  },
+  "Rashi on Eruvin 39a:5:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 39a:5:1",
+      "Steinsaltz on Eruvin 39a:5:1",
+      "Steinsaltz on Eruvin 39a:5",
+      "Rashi on Eruvin 39a:1:1",
+      "Rashi on Eruvin 39a:2:1"
+    ],
+    "generatedAt": "2026-11-03T06:25:22.826Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 39a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאין מערבין בתחילה בפת</strong> - מי\"ט לשבת משום הכנה דקרי ליה השתא שם עירוב:"
+  },
+  "Rashi on Eruvin 39a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T06:25:49.946Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 39a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דיקא נמי</strong> - באותה פת דקרא עליה שם מאתמול והשתא קא שתיק אבל לא בפת אחרת דבעי למיקרי שם עירוב השתא:"
+  },
+  "Rashi on Eruvin 39a:7:1": {
+    "dependsOn": [
+      "Eruvin 39a:7",
+      "Eruvin 39a:3"
+    ],
+    "generatedAt": "2026-11-03T06:27:43.599Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 39a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבנן</strong> - אביי ורבה בר חנן דקא מתמהי לעיל אהכנה דרבה ולא ילפי מהא מתני' דדיקא כוותיה דמשמע בפת אחרת לא אלמא הכנה היא:"
+  },
+  "Rashi on Eruvin 39a:7:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 39a:7:1",
+      "Rashi on Eruvin 39a:3:1"
+    ],
+    "generatedAt": "2026-11-03T06:29:24.986Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 39a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרי לך</strong> - דילמא מתני' עצה טובה קמ\"ל הא דקתני נוטלו ובא לו שלא יאבד ויפסיד פתו ויטרח באחרת ולעולם אי בעי מערב באחרת ודקתני אין עירוב לשני בקנייה קמייתא קאמר אי לא הדר מערב:"
+  },
+  "Rashi on Eruvin 39a:8:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 39a:8:2",
+      "Rashi on Eruvin 39a:8:3"
+    ],
+    "generatedAt": "2026-11-03T06:30:00.795Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 39a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמא תתעבר</strong> - בגולה קמיירי שמא יעשו ב\"ד הגדול אלול מעובר ויהיו שני ימים טובים והוא צריך לילך בראשון לצד אחד ובשני לצד אחר:"
+  },
+  "Rashi on Eruvin 39a:8:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 39a:8:1",
+      "Rashi on Eruvin 39a:8:3",
+      "Rashi on Eruvin 39a:8:2"
+    ],
+    "generatedAt": "2026-11-03T06:31:07.823Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 39a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מערב שני עירובין</strong> - ומניחן בעי\"ט זה לכאן וזה לכאן ואומר כו' כדלעיל:"
+  },
+  "Rashi on Eruvin 39a:8:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T06:31:54.655Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 39a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא הודו לו חכמים</strong> - דקסברי קדושה אחת הן:"
+  },
+  "Rashi on Eruvin 39a:9:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 39a:8:1",
+      "Rashi on Eruvin 39a:8:2",
+      "Rashi on Eruvin 38a:8:1",
+      "Rashi on Eruvin 38a:8:2"
+    ],
+    "generatedAt": "2026-11-03T06:32:47.797Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 39a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתנה אדם על הכלכלה</strong> - של טבל בי\"ט ראשון של ר\"ה ואומר אם היום חול תהא זו תרומה על אלו ואם היום קדש אין בדברי כלום דאין מגביהין תרומה בי\"ט דשבות דרבנן היא במסכת ביצה ולמחר אומר אם אתמול קדש והיום חול תהא זו שאמרתי אתמול תרומה על אלו ואם היום קדש ואתמול חול כבר היא תרומה מאתמול ואוכל כלכלה המתוקנת ומשייר התרומה:"
+  },
+  "Tosafot on Eruvin 39a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T06:34:52.592Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 39a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן ביצה שנולדה ביום ראשון</strong> - פי' לא הודו לו שתאכל אפילו בשני דקדושה אחת היא ובריש ביצה <span class=\"parenthesized\">(דף ג.)</span> דפריך למאן דגזר ביצה משום משקין שזבו קשה דר' יהודה דהכא אדרבי יהודה דפ' חבית <span class=\"parenthesized\">(שבת קמג.)</span> דתנן ר' יהודה אומר אם לאוכלין היוצא מהן מותר ומשני אמר ר' יוחנן מוחלפת השיטה צריך לומר ההיא דחבית מחליף דהך דהכא אם היה מחליף לא היה מרויח כלום דרבנן מחמירי טפי והא דאמר רבי יוחנן בפ' חבית <span class=\"parenthesized\">(שבת דף קמג:)</span> הלכה כר' יהודה היינו לפי מה שהיתה המשנה שנויה כדאמר בהגוזל עצים <span class=\"parenthesized\">(ב\"ק ד' צו:)</span> ולמאי דאפכיתו ותניתו הלכה כר\"מ ובלאו הכי אין סברא להפוך כאן כל הבבות ואין להאריך:"
+  },
+  "Tosafot on Eruvin 39a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T06:43:11.791Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 39a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מודים חכמים לר' אליעזר</strong> - תימה דסברת חכמים הפוכה ממה דקי\"ל כרב דפסיק לעיל כד' זקנים דשבת וי\"ט ב' קדושות הן ובב' ימים טובים של ר\"ה קי\"ל נמי כוותיה דנולדה בזה אסורה בזה והיינו אפכא מסברת חכמים:"
+  },
+  "Tosafot on Eruvin 39a:13:1": {
+    "dependsOn": [
+      "Eruvin 39a:13",
+      "Tosafot on Beitzah 5b:12:1",
+      "Chidushei Halachot on Eruvin 39a:3",
+      "Rashi on Beitzah 5b:12:1",
+      "Rashi on Eruvin 36a:3:2"
+    ],
+    "generatedAt": "2026-11-03T06:48:33.471Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 39a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי אתם מודים לי שאם באו עדים כו'</strong> - תימה לרבה דאמר בפ\"ק דביצה <span class=\"parenthesized\">(דף ה.)</span> מתקנת רבי יוחנן בן זכאי שהתקין שיהו מקבלין עדות החדש כל היום כולו ביצה שרי וכי לא נחלקו ר' יוסי ור' יהודה אלא בזמן שבהמ\"ק קיים ולא לדורות וי\"ל דנפקא מינה אף על גב דפליגי בא\"י בזמן שבהמ\"ק קיים כדמשמע לישנא דקתני שהיה ירא שמא תתעבר מ\"מ נפקא מינה פלוגתייהו גבי לאחר חורבן לבני בבל דהא דקאמר רבה מתקנת ריב\"ז ביצה שריא היינו דוקא לבני א\"י כדקתני התם בהדיא הא לן והא להו לפי שיש להם היכירא שנשתנה להן המנהג אחר חורבן שהיו מקבלים עדות כל היום אבל לבני בבל שלא נשתנה להם המנהג דלעולם עושין ב' ימים ביצה אסורה דכמו שבזמן שבהמ\"ק קיים היה נחשב להם ב' ימים קדושה אחת הוא הדין לאחר חורבן דאין ניכר להם שום שינוי בין קודם חורבן בין לאחר חורבן והא דקאמר לקמן וכן היה רבי יוסי אוסר בשני ימים טובים של גליות ומפרש רבא דה\"ק וכן היה רבי יוסי אוסר בשני ימים טובים של ר\"ה בגולה לאו היינו אליבא דרבה דלדידיה עיקר פלוגתייהו בהכי אלא רבא לטעמיה דאמר פ\"ק דביצה <span class=\"parenthesized\">(דף ה:)</span> אף מתקנת ריב\"ז ואילך ביצה אסורה דמי לא מודה ריב\"ז שאם באו עדים מן המנחה ולמעלה פירוש סמוך לחשיכה כל כך שאין שהות ביום כדי לקבל עדות שנוהגין היום קדש ולמחר קדש שאע\"פ שיודעין שלא יקדשוהו היום אלמא קדושה אחת היא שאע\"פ שבטלה תקנתא ראשונה אחר חורבן שהיו מקבלין עדות החדש כל היום מסתמא לא בטלה לגמרי דבסמוך לחשיכה אין פנאי לקבל עדות ונוהגין אותו היום קדש כו' ורש\"י ורבינו חננאל פירשו שם כל אחד ואחד לפי שיטת גירסתו ול\"נ וא\"ת נהרדעי דאמרי התם ביצה מותרת דלא חיישינן דילמא עברוה לאלול כמאן סברוה דלר' יהודה אפילו אי עברוה לא הוי קדושה אחת ואי כרבי יוסי הא קאסר הכא וי\"ל דנהרדעי סברי דלעולם בבבל ביצה שריא אפילו בתקנה ראשונה דדוקא במקום ב\"ד אי עברוה לאלול חשיב קדושה אחת אבל שלא במקום ב\"ד דעבדי לעולם שני ימים הוו שתי קדושות דאזלינן בתר רוב שנים שאינן מעוברות כדאמרינן במס ר\"ה <span class=\"parenthesized\">(דף כא.)</span> לענין יום הכפורים שאין עושין אלא יום אחד ואף על גב דרבי יוסי סבר אפילו בבבל קדושה אחת הוו כדאמר ומודה רבי יוסי בשני ימים טובים של גליות משמע דבשני ימים טובים של ר\"ה הוו קדושה אחת נהרדעי לא סבירא להו בהא כרבי יוסי:"
+  }
+}

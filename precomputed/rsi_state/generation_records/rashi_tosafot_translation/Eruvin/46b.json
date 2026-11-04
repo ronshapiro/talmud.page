@@ -1,0 +1,375 @@
+{
+  "Rashi on Eruvin 46b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T16:35:19.989Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להני כללי</strong> - דכללינן לעיל פלוני ופלוני הלכה כפלוני בכל מקום אלא היכא דמסתבר כמר הלכתא כוותיה והיכא דמסתבר בדוכתא אחריתי כאידך עבדינן כוותיה:"
+  },
+  "Rashi on Eruvin 46b:12:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 46b:12:1",
+      "Rashi on Eruvin 46b:12:2"
+    ],
+    "generatedAt": "2026-11-03T16:35:54.606Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למה הדבר דומה</strong> - מתניתין היא <span class=\"parenthesized\">(לעיל עירובין דף מה:)</span>:"
+  },
+  "Rashi on Eruvin 46b:12:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 46b:12:1"
+    ],
+    "generatedAt": "2026-11-03T16:36:35.406Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היא מותרת עמהן</strong> - ופליגי רבנן עליה בברייתא ואמרי שלשתן אסורות:"
+  },
+  "Rashi on Eruvin 46b:13:1": {
+    "dependsOn": [
+      "Eruvin 46b:13",
+      "Eruvin 45a:26",
+      "Eruvin 45a:27",
+      "Eruvin 45b:1",
+      "Eruvin 45b:2",
+      "Eruvin 45b:3",
+      "Eruvin 45b:4",
+      "Eruvin 46b:1",
+      "Eruvin 46b:2",
+      "Eruvin 46b:3",
+      "Eruvin 46b:4",
+      "Rashi on Eruvin 46b:12:1",
+      "Eruvin 48b:8",
+      "Eruvin 48b:9"
+    ],
+    "generatedAt": "2026-11-03T16:41:05.316Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאן פליג עליה רבי יהודה</strong> - דהוא הוי סתם בר פלוגתיה ל\"א מאן פליג עליה רבי יהודה דהוא איירי לעיל מינה רבי יהודה אומר לאיזה רוח שירצה ועלה תני היום שנים מקצת כו' אמר ר\"ש למה הדבר דומה ואמרינן דהכי קאמר להו רבי שמעון לרבנן מכדי למה הדבר דומה כו' מאי שנא התם דפליגיתו עליה אלמא הנך רבנן דאיירי לעיל מינה בד' אמות דשביתה איפלוג נמי בחצירות:"
+  },
+  "Rashi on Eruvin 46b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T16:41:49.710Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היכא דאיתמר</strong> - בהדיא הלכה כרבי שמעון איתמר וכי כיילינן רבי יהודה ור\"ש הלכה כרבי יהודה להיכא דלא איתמר הלכתא לא כמר ולא כמר:"
+  },
+  "Rashi on Eruvin 46b:1:1": {
+    "dependsOn": [
+      "Eruvin 46b:1"
+    ],
+    "generatedAt": "2026-11-03T16:02:04.406Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג רב פפא אמר איצטריך</strong> - ולעיל קאי אדרבי יהושע בן לוי איצטריך ליה למימר הלכה כרבי יוחנן ואע\"ג דאמר הלכה כדברי המיקל בעירוב:"
+  },
+  "Rashi on Eruvin 46b:1:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 46b:1:1"
+    ],
+    "generatedAt": "2026-11-03T16:02:54.211Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל בעירובי תחומין לא כו'</strong> - והא דרבי יוחנן בן נורי באיסור תחומין קאי:"
+  },
+  "Rashi on Eruvin 46b:2:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 46b:2:2",
+      "Rashi on Eruvin 46b:2:3",
+      "Rashi on Eruvin 46b:2:4",
+      "Tosafot on Eruvin 46b:2:1"
+    ],
+    "generatedAt": "2026-11-03T16:04:14.525Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ר יהודה כו'</strong> - לקמן בפרק חלון <span class=\"parenthesized\">(עירובין פא:)</span>:"
+  },
+  "Rashi on Eruvin 46b:2:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 46b:2:1",
+      "Rashi on Eruvin 46b:2:3",
+      "Rashi on Eruvin 46b:2:4"
+    ],
+    "generatedAt": "2026-11-03T16:05:00.987Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בד\"א</strong> - דאין מערבין לו לאדם אלא לדעתו שנתרצה:"
+  },
+  "Rashi on Eruvin 46b:2:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 46b:2:3",
+      "Rashi on Eruvin 46b:2:1",
+      "Rashi on Eruvin 46b:2:2",
+      "Rashi on Eruvin 46b:2:4",
+      "Rashi on Eruvin 46a:1:1",
+      "Rashi on Eruvin 46a:2:1"
+    ],
+    "generatedAt": "2026-11-03T16:06:29.322Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעירובי תחומין</strong> - דשמא חוב לו להפסיד אלפים למזרח על מנת להשתכר באלפים למערב:"
+  },
+  "Rashi on Eruvin 46b:2:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 46b:2:1",
+      "Rashi on Eruvin 46b:2:2",
+      "Rashi on Eruvin 46b:2:3",
+      "Rashi on Eruvin 46a:4:2"
+    ],
+    "generatedAt": "2026-11-03T16:08:02.023Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46b:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עירובי חצירות</strong> - אין שם הפסד אלא ריוח:"
+  },
+  "Rashi on Eruvin 46b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T16:12:13.515Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הני מילי</strong> - דהלכה כמיקל בעירובי חצירות:"
+  },
+  "Rashi on Eruvin 46b:3:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 46b:3:1",
+      "Rashi on Eruvin 46b:3:3"
+    ],
+    "generatedAt": "2026-11-03T16:13:01.711Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשיורי עירוב</strong> - שהניח עירוב במקום המשתמר לכמה שבתות ונתמעט האוכל משיעור ב' סעודות מקילין ביה לאכשורי:"
+  },
+  "Rashi on Eruvin 46b:3:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 46b:3:1",
+      "Rashi on Eruvin 46b:3:2"
+    ],
+    "generatedAt": "2026-11-03T16:13:41.106Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל</strong> - במחלוקת של תחילת עירוב לא ניזיל בתר מיקל והא דרבי יוחנן בן נורי כתחילת עירוב דמי:"
+  },
+  "Rashi on Eruvin 46b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T16:14:24.807Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בד\"א</strong> - דצריך שיעור לעירובי חצירות או מזון שתי סעודות בין כולן או כגרוגרת לכל אחד בתחילת עירוב:"
+  },
+  "Rashi on Eruvin 46b:4:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 46b:4:1",
+      "Mishnah Eruvin 7:9"
+    ],
+    "generatedAt": "2026-11-03T16:15:19.023Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל שהוא</strong> - לכל אחד:"
+  },
+  "Rashi on Eruvin 46b:5:1": {
+    "dependsOn": [
+      "Eruvin 46b:5",
+      "Tosafot on Eruvin 46b:5:1"
+    ],
+    "generatedAt": "2026-11-03T16:16:14.945Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא אמרו לערב בחצירות אלא שלא לשכח את התינוקות</strong> - שלא לשכח תורת עירוב מדורות הבאין אבל עיקר עירוב בתחומין הוא:"
+  },
+  "Rashi on Eruvin 46b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T16:18:59.467Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלכה כרבי עקיבא מחברו</strong> - בכל דוכתא:"
+  },
+  "Rashi on Eruvin 46b:7:1": {
+    "dependsOn": [
+      "Eruvin 46b:7",
+      "Rashi on Eruvin 46b:7:2",
+      "Rashi on Eruvin 46b:7:3",
+      "Rashi on Eruvin 46b:7:4",
+      "Steinsaltz on Eruvin 46b:7"
+    ],
+    "generatedAt": "2026-11-03T16:23:17.856Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למאי הלכתא</strong> - לענין מה נאמרה שמועה זו שפסקו הלכה סתם בכל מקומות יש לסמוך עליה להורות הלכה למעשה כן או דלמא מסברא בעלמא קאמרי כן אבל הלכתא מכללא לא סמכינן עליה למילף:"
+  },
+  "Rashi on Eruvin 46b:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T16:24:52.685Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי אסי אמר הלכה</strong> - ממש קאמרי רבי יעקב ורבי זריקא למיגמר מעשה מיניה ומיעבד כר' עקיבא היכא דיחיד פליג עליה וכר' יוסי אפי' במקום רבים:"
+  },
+  "Rashi on Eruvin 46b:7:3": {
+    "dependsOn": [
+      "Eruvin 46b:7",
+      "Rashi on Eruvin 46b:7:1",
+      "Rashi on Eruvin 46b:7:2",
+      "Rashi on Eruvin 46b:7:3",
+      "Rashi on Eruvin 46b:7:4"
+    ],
+    "generatedAt": "2026-11-03T16:27:30.259Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מטין</strong> - רבי יעקב ור' זריקא לאו הלכה ממש פסקי אלא מטין ההוראה אחר רבי יוסי ואפילו במקום רבים דאורויי מורינן לאדם יחיד לעשות כרבי יוסי אבל מדרש בפירקי ברבים לא דרשינן:"
+  },
+  "Rashi on Eruvin 46b:7:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 46b:7:1",
+      "Rashi on Eruvin 46b:7:2",
+      "Rashi on Eruvin 46b:7:3",
+      "Rashi on Eruvin 46b:7:4",
+      "Eruvin 46b:7"
+    ],
+    "generatedAt": "2026-11-03T16:28:53.117Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46b:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נראין</strong> - אורויי לא מורינן ואם עשה כרבי יוסי לא מהדרינן עובדא:"
+  },
+  "Rashi on Eruvin 46b:8:1": {
+    "dependsOn": [
+      "Eruvin 46b:8",
+      "Rashi on Eruvin 46b:7:1",
+      "Rashi on Eruvin 46b:7:2",
+      "Rashi on Eruvin 46b:7:3",
+      "Rashi on Eruvin 46b:7:4",
+      "Rashi on Eruvin 46b:2:1",
+      "Rashi on Eruvin 46b:4:1"
+    ],
+    "generatedAt": "2026-11-03T16:34:55.597Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כלשון הזה אמר ר' יעקב בר אידי</strong> - כי האי לישנא דאיתמר הך דרבי יעקב ורבי זריקא איתמר נמי הך דר' יעקב בר אידי למר הלכה ולמר מטין ולמר נראין:"
+  },
+  "Tosafot on Eruvin 46b:2:1": {
+    "dependsOn": [
+      "Eruvin 46b:2",
+      "Eruvin 68a:4"
+    ],
+    "generatedAt": "2026-11-03T16:11:16.687Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 46b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין חבין לאדם שלא בפניו</strong> - וא\"ת והיכי מוכח מהכא דעירובי תחומין חמירי הלא אין הטעם תלוי בחומר אלא משום דאין חבין לאדם שלא בפניו ויש לומר מ\"מ מוכח שפיר דחמירי טפי דאפילו ידעינן גבי עירובי תחומין דלמחר דעתו לילך באותו צד אפי' הכי כיון דאיכא קצת חוב שמפסיד במה שאינו יכול לילך לצד אחר אם ירצה לא הוי עירוב ובעירובי חצירות אע\"ג דאיכא קצת נמי חובה שמערבין בפת שלו שלא מדעתו כדאמר בפ' חלון <span class=\"parenthesized\">(לקמן עירובין דף פ.)</span> אחד מבני מבוי שרגיל להשתתף באין בני אדם ונוטלין הימנו שיתופו בע\"כ וצריך שימחול להם פתן אם ירצו לצאת כדאמר בהדר <span class=\"parenthesized\">(לקמן עירובין ד' סח.)</span> כיון דאי בעי ליה מינאי ולא יהיבנא בטל שיתוף והיינו משום דחמירי טפי:"
+  },
+  "Tosafot on Eruvin 46b:5:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 46b:5:1",
+      "Mishnah Eruvin 7:11",
+      "Mishnah Eruvin 8:1"
+    ],
+    "generatedAt": "2026-11-03T16:18:37.055Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 46b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא לשכח תורת עירוב מן התינוקות</strong> - פ\"ה אבל עיקר עירוב בתחומין הוא ומשנה היא זו לקמן בפרק חלון <span class=\"parenthesized\">(עירובין דף פ:)</span> ושם <span class=\"rashi-quotation\">פירש הקונט'</span> בענין אחר ולא אמרו לערב בחצירות לאחר שנשתתפו אלא שלא לשכח תורת עירובי חצירות מן התינוקות מדורות הבאין הלכך מקילין ביה בשיורי עירוב והכי משמע דתניא לקמן בפרק הדר <span class=\"parenthesized\">(עירובין דף עא:)</span> מערבין בחצירות ומשתתפין במבוי שלא לשכח תורת עירוב מן התינוקות ולר\"י נראה דפי' דהכא עיקר דההיא דפרק חלון לא איירי כלל בעירובי חצירות אלא אשיתופי מבואות קאי דקתני רישא כיצד משתתפין כו' ולמה אמרו לערב בחצירות היינו פירוש אשיתופי מבואות וקרי שיתוף מבוי עירובי חצירות בכמה דוכתי:"
+  },
+  "Tosafot on Eruvin 46b:6:1": {
+    "dependsOn": [
+      "Eruvin 46b:7",
+      "Eruvin 46b:8",
+      "Eruvin 47a:19",
+      "Eruvin 47a:20",
+      "Eruvin 47a:21",
+      "Eruvin 47a:22",
+      "Eruvin 47a:17"
+    ],
+    "generatedAt": "2026-11-03T16:21:01.477Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 46b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרבי יוסי מחביריו</strong> - והא דאמר לקמן <span class=\"parenthesized\">(עירובין דף מז.)</span> אמר ר' יוחנן הלכה כר' יוסי מכלל דיחידאה פליג עליה אתיא כר' יעקב בר אידי:"
+  },
+  "Tosafot on Eruvin 46b:7:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 46b:6:1",
+      "Tosafot on Eruvin 46b:5:1",
+      "Tosafot on Eruvin 46b:2:1",
+      "Tosafot on Eruvin 46a:8:1"
+    ],
+    "generatedAt": "2026-11-03T16:33:15.996Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 46b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי אסי אמר הלכה</strong> - פ\"ה ודרשינן בפירקא ומ\"ד מטין מורינן ולא דרשינן בפירקא ונראין היינו דאי עביד הכי לא מהדרינן עובדא אבל לא מורינן וקשה לפירושו דאפי' לא איתמר נראין לא מהדרינן עובדא כיון דלא איתמר הלכתא לא כמר ולא כמר לכן נראה לי דהלכה דאי עביד כאידך מהדרינן ומטין אורויי נמי אורינן ואם בא למיעבד עובדא כאידך מחינן בידיה ומיהו אי עביד עובדא לא מהדרינן ונראין מורין ואי בעי למעבד כאידך לא מחינן בידיה וכן משמע בפרק הכותב <span class=\"parenthesized\">(כתובות פד.)</span> גבי דנו דייני כר' טרפון וא\"ת אדרבה ביש נוחלין <span class=\"parenthesized\">(ב\"ב דף קכד:)</span> משמע דלמ\"ד מטין היינו דיעבד מטין כהני תנאי אבל לכתחלה עבדינן כאידך גבי בכור נוטל פי שנים בשבח ששבחו נכסים לאחר מיתת אביו דאמר רבא הלכתא אסור לעשות כדברי רבי ואם עשה עשוי קסבר מטין איתמר וי\"ל דמטין דהתם היינו לענין חבריו דפליגי התם רבנן עליה ויש סובר הלכה כרבי מחברו ולא מחבריו דאתמר הלכה כחבריו ורבא סבר מטין כחבריו אתמר ולא הלכה כחבריו:"
+  }
+}

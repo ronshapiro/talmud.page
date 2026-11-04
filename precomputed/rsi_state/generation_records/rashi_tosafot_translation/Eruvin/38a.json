@@ -1,0 +1,496 @@
+{
+  "Rashi on Eruvin 38a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T05:24:12.340Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 38a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאם עירב ברגליו</strong> - שלא היה לו פת לשגר ע\"י שליח ולערב והלך הוא בעצמו וישב לסוף אלפים אמה עד שקדש עליו היום וקנה שביתה וחזר ולן בביתו:"
+  },
+  "Rashi on Eruvin 38a:10:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 38a:10:1",
+      "Rashi on Eruvin 38a:2:1"
+    ],
+    "generatedAt": "2026-11-03T05:25:07.329Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 38a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מערב ברגליו בשני</strong> - צריך לערב ברגליו אף בשני ואינו יכול לצאת בשני חוץ לתחום על ידי קנייה הראשונה או אם נאכל עירובו המערב בפת ונאכל עירובו ביום ראשון לאחר שקנה העירוב אי אתם מודים לי שאינו יוצא עליו בשני ע\"י אותה קנייה:"
+  },
+  "Rashi on Eruvin 38a:11:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 38a:11:2",
+      "Tosafot on Eruvin 38a:11:1",
+      "Steinsaltz on Eruvin 38a:11",
+      "Versions on Eruvin 38a:11",
+      "Rashi on Eruvin 38a:2:1",
+      "Rashi on Eruvin 38a:4:1",
+      "Rashi on Eruvin 38a:7:1",
+      "Rashi on Eruvin 38a:10:1"
+    ],
+    "generatedAt": "2026-11-03T05:27:16.548Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 38a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא לאיי</strong> - ר' אליעזר קמהדר לה וקאמר ודאי אף לדבריכם שתי קדושות הן ולא גרסינן לאיי אפנויי מופני דאינו דורש לא פסוק ולא ג\"ש דבכולי הש\"ס הן תרגום של לאיי:"
+  },
+  "Rashi on Eruvin 38a:11:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 38a:11:1",
+      "Rashi on Eruvin 38a:11:2",
+      "Rashi on Eruvin 38a:11:3",
+      "Rashi on Eruvin 38a:11:4"
+    ],
+    "generatedAt": "2026-11-03T05:28:00.051Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 38a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבנן מספקא להו</strong> - בשבת ויו\"ט אי קדושה אחת נינהו אי שתי קדושות:"
+  },
+  "Rashi on Eruvin 38a:11:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 38a:11:1",
+      "Rashi on Eruvin 38a:11:2",
+      "Rashi on Eruvin 38a:11:4"
+    ],
+    "generatedAt": "2026-11-03T05:28:33.723Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 38a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועבדי הכא לחומרא</strong> - דאין יכול לערב לשני רוחות דלמא חדא קדושה היא:"
+  },
+  "Rashi on Eruvin 38a:11:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 38a:11:1",
+      "Rashi on Eruvin 38a:11:2",
+      "Rashi on Eruvin 38a:11:3",
+      "Rashi on Eruvin 38a:11:4"
+    ],
+    "generatedAt": "2026-11-03T05:30:12.077Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 38a:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והכא לחומרא</strong> - דאי נאכל בראשון דאין עירוב לשני דלמא ב' קדושות הן:"
+  },
+  "Rashi on Eruvin 38a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T05:33:21.060Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 38a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי אתה מודה שאין מערבין בתחילה מיו\"ט לשבת</strong> - אם לא עירב בין השמשות של ערב יו\"ט והוצרך לצאת בשבת אי אתה מודה שאינו יכול לערב מיו\"ט לשבת אלמא קדושה אחת היא והרי הוא כיום אחד שאינו יכול לערב בחצי היום אם לא עירב בין השמשות:"
+  },
+  "Rashi on Eruvin 38a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T05:34:28.233Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 38a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום הכנה</strong> - שמכין מיו\"ט לשבת ולא משום טעמא דחד יומא הוא:"
+  },
+  "Rashi on Eruvin 38a:14:1": {
+    "dependsOn": [
+      "Eruvin 38a:14"
+    ],
+    "generatedAt": "2026-11-03T05:39:28.068Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 38a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין יוצא עליו בשני</strong> - והרי הוא כבני עירו דודאי שתי קדושות הן ואין עליו חשש ספק:"
+  },
+  "Rashi on Eruvin 38a:2:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 38a:2:2",
+      "Rashi on Eruvin 38a:2:3"
+    ],
+    "generatedAt": "2026-11-03T05:00:56.463Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 38a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מערב אדם שני עירובין</strong> - אם היה צריך יום ראשון לילך לכאן ויום שני לילך לכאן יכול לערב למזרח ולמערב ערב יו\"ט הראשון:"
+  },
+  "Rashi on Eruvin 38a:2:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 38a:2:1",
+      "Rashi on Eruvin 38a:2:3",
+      "Rashi on Eruvin 38a:4:1",
+      "Rashi on Eruvin 38a:4:2",
+      "Rashi on Eruvin 38a:4:3"
+    ],
+    "generatedAt": "2026-11-03T05:02:25.262Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 38a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואומר עירובי</strong> - של מזרח יקנה לי היום לצורך מחר ועירובי של מערב יקנה לי בבין השמשות דלמחר לצורך יום שני דקסבר רבי אליעזר שבת ויו\"ט לאו כחד יומא אריכא נינהו אלא שתי קדושות ולכל חד יומא אית ליה חדא שביתה ובכל חדא מיקניא ליה שביתה לאיזה צד שירצה וביה\"ש דקמא לדידיה הוא דקני ולא ליום ב':"
+  },
+  "Rashi on Eruvin 38a:2:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 38a:2:1",
+      "Rashi on Eruvin 38a:2:2"
+    ],
+    "generatedAt": "2026-11-03T05:03:48.750Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 38a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עירובי בראשון ובשני כבני עירי כו'</strong> - כלומר ואם לא היה רוצה לילך אלא באחד מן הצדדין ביום ראשון ובשני אין צריך לזוז מתחומו לא לכאן ולא לכאן ואינו רוצה להפסיד לא אלפים של תחומו מכאן ולא אלפים של תחומו מכאן יערב עירוב אחד לצד שהוא רוצה לילך בו ביום ראשון ויאמר עירובי זה יקנה לי לצורך מחר ובשני הריני כבני עירי שלא עירבו או אם היה צריך לילך בשני ולא בראשון יאמר עירובי זה יקנה לי ביה\"ש של מחר ובראשון אהיה כבני עירי:"
+  },
+  "Rashi on Eruvin 38a:3:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 38a:3:1",
+      "Rashi on Eruvin 38a:3:2",
+      "Rashi on Eruvin 38a:3:3"
+    ],
+    "generatedAt": "2026-11-03T05:04:23.731Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 38a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או מערב לרוח אחת</strong> - לצורך שני ימים:"
+  },
+  "Rashi on Eruvin 38a:3:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 38a:3:1",
+      "Rashi on Eruvin 38a:3:2",
+      "Rashi on Eruvin 38a:3:3",
+      "Eruvin 38a:3",
+      "Rashi on Eruvin 38a:2:1",
+      "Rashi on Eruvin 38a:2:2",
+      "Rashi on Eruvin 38a:2:3"
+    ],
+    "generatedAt": "2026-11-03T05:05:31.866Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 38a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או אינו מערב כל עיקר</strong> - אפילו לצד אחד להיות באחד מן הימים כבני עירו:"
+  },
+  "Rashi on Eruvin 38a:3:3": {
+    "dependsOn": [
+      "Eruvin 38a:3"
+    ],
+    "generatedAt": "2026-11-03T05:06:35.527Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 38a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או מערב לב' ימים</strong> - ובגמרא פריך היינו לרוח אחת:"
+  },
+  "Rashi on Eruvin 38a:4:1": {
+    "dependsOn": [
+      "Eruvin 38a:4",
+      "Rashi on Eruvin 38a:4:1",
+      "Rashi on Eruvin 38a:4:2",
+      "Rashi on Eruvin 38a:4:3"
+    ],
+    "generatedAt": "2026-11-03T05:07:16.794Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 38a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מוליכו</strong> - השליח:"
+  },
+  "Rashi on Eruvin 38a:4:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 38a:4:1",
+      "Rashi on Eruvin 38a:4:3"
+    ],
+    "generatedAt": "2026-11-03T05:07:45.834Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 38a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בראשון</strong> - ערב יו\"ט שלפני השבת:"
+  },
+  "Rashi on Eruvin 38a:4:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T05:08:08.786Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 38a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומחשיך עליו</strong> - עד שיקנה העירוב:"
+  },
+  "Rashi on Eruvin 38a:4:4": {
+    "dependsOn": [
+      "Eruvin 38a:4",
+      "Rashi on Eruvin 38a:4:1",
+      "Rashi on Eruvin 38a:4:2",
+      "Rashi on Eruvin 38a:4:3",
+      "Rashi on Eruvin 38a:4:4",
+      "Rashi on Eruvin 38a:4:5",
+      "Rashi on Eruvin 38a:4:6"
+    ],
+    "generatedAt": "2026-11-03T05:08:55.413Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 38a:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונוטלו ובא לו</strong> - שמא יאבד ושוב אין לו עירוב בשני כדקתני נאכל עירובו בראשון וכו' וחוזר ומוליכו בשני כו':"
+  },
+  "Rashi on Eruvin 38a:4:5": {
+    "dependsOn": [
+      "Rashi on Eruvin 38a:4:6"
+    ],
+    "generatedAt": "2026-11-03T05:09:32.651Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 38a:4:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משתכר בהליכתו</strong> - כלומר קנה לו הליכה ליום מחר:"
+  },
+  "Rashi on Eruvin 38a:4:6": {
+    "dependsOn": [
+      "Rashi on Eruvin 38a:4:2",
+      "Rashi on Eruvin 38a:2:2",
+      "Tosafot on Eruvin 38a:13:1",
+      "Rashi on Eruvin 38a:4:1",
+      "Rashi on Eruvin 38a:4:3",
+      "Rashi on Eruvin 38a:4:4",
+      "Rashi on Eruvin 38a:4:5"
+    ],
+    "generatedAt": "2026-11-03T05:11:37.923Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 38a:4:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומשתכר בעירובו</strong> - שאוכלו וביו\"ט אחר שבת דלא אפשר בהכי מוליכו בראשון וחוזר והולך שם בשני לראות אם קיים עירובו ומחשיך עליו ואם רצה יאכלנו אחרי כן:"
+  },
+  "Rashi on Eruvin 38a:6:1": {
+    "dependsOn": [
+      "Eruvin 38a:6"
+    ],
+    "generatedAt": "2026-11-03T05:14:06.555Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 38a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מודים אתם לי שהן ב' קדושות</strong> - דקאמריתו אין עירוב לשני דאי קדושה אחת ה\"ל כחד יומא אריכא ויקנה בין השמשות של ראשון לשניהן וכיון דשתי קדושות הן יכול לערב נמי לב' רוחות:"
+  },
+  "Rashi on Eruvin 38a:7:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 38a:7:1",
+      "Rashi on Eruvin 38a:7:2",
+      "Rashi on Eruvin 38a:7:3",
+      "Rashi on Eruvin 38a:7:4",
+      "Eruvin 38a:7",
+      "Rashi on Eruvin 37b:6:1"
+    ],
+    "generatedAt": "2026-11-03T05:15:39.591Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 38a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לרוח אחת</strong> - דקתני מתני':"
+  },
+  "Rashi on Eruvin 38a:7:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 38a:7:1",
+      "Rashi on Eruvin 38a:7:2",
+      "Rashi on Eruvin 38a:7:3",
+      "Rashi on Eruvin 38a:7:4",
+      "Rashi on Eruvin 38a:2:1",
+      "Rashi on Eruvin 38a:2:2",
+      "Rashi on Eruvin 38a:2:3",
+      "Eruvin 38a:2",
+      "Eruvin 38a:3",
+      "Eruvin 38a:4",
+      "Rashi on Eruvin 37b:1:1",
+      "Rashi on Eruvin 37b:2:1",
+      "Rashi on Eruvin 37b:3:1",
+      "Rashi on Eruvin 2a:1:1",
+      "Rashi on Eruvin 2a:1:2"
+    ],
+    "generatedAt": "2026-11-03T05:17:24.418Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 38a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי ניהו</strong> - פשיטא דלשני ימים קאמר בניחותא:"
+  },
+  "Rashi on Eruvin 38a:7:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 38a:7:1",
+      "Rashi on Eruvin 38a:7:2",
+      "Rashi on Eruvin 38a:7:3",
+      "Rashi on Eruvin 38a:7:4",
+      "Eruvin 38a:7"
+    ],
+    "generatedAt": "2026-11-03T05:20:07.920Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 38a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולשני הימים</strong> - דקתני:"
+  },
+  "Rashi on Eruvin 38a:7:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 38a:7:1",
+      "Rashi on Eruvin 38a:7:2",
+      "Rashi on Eruvin 38a:7:3",
+      "Rashi on Eruvin 38a:7:4"
+    ],
+    "generatedAt": "2026-11-03T05:20:41.751Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 38a:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי ניהו</strong> - פשיטא לי דלרוח אחת קאמר וא\"כ תרתי למה לי היינו קמייתא:"
+  },
+  "Rashi on Eruvin 38a:8:1": {
+    "dependsOn": [
+      "Eruvin 38a:8",
+      "Rashi on Eruvin 38a:7:1",
+      "Rashi on Eruvin 38a:7:2",
+      "Rashi on Eruvin 38a:7:3",
+      "Rashi on Eruvin 38a:7:4",
+      "Rashi on Eruvin 38a:8:1",
+      "Rashi on Eruvin 38a:8:2",
+      "Eruvin 38a:2",
+      "Eruvin 38a:3",
+      "Eruvin 38a:4",
+      "Eruvin 38a:5",
+      "Eruvin 38a:6",
+      "Chokhmat Shlomo on Eruvin 38a:1",
+      "Chokhmat Shlomo on Eruvin 38a:2"
+    ],
+    "generatedAt": "2026-11-03T05:22:03.950Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 38a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי אתה מודה ביום אחד</strong> - דמערב לרוח אחת או אינו מערב כל עיקר לב' ימים נמי או מערב כמו ליום אחד או אינו מערב כל עיקר:"
+  },
+  "Rashi on Eruvin 38a:8:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 38a:8:1",
+      "Rashi on Eruvin 38a:4:1",
+      "Rashi on Eruvin 38a:4:2",
+      "Rashi on Eruvin 37b:1:1",
+      "Rashi on Eruvin 36b:1:1"
+    ],
+    "generatedAt": "2026-11-03T05:23:33.747Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 38a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל</strong> - אמת כמו אבל שרה ומתרגם קושטא <span class=\"parenthesized\">(בראשית יז)</span>:"
+  },
+  "Tosafot on Eruvin 38a:11:1": {
+    "dependsOn": [
+      "Eruvin 38a:11",
+      "Rashi on Eruvin 38a:11:1",
+      "Rashi on Eruvin 38a:11:2",
+      "Rashi on Eruvin 38a:11:3",
+      "Rashi on Eruvin 38a:11:4",
+      "Eruvin 35a:12",
+      "Rashi on Eruvin 35a:12:2"
+    ],
+    "generatedAt": "2026-11-03T05:31:51.404Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 38a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרו לו אבל</strong> - לא לגמרי מודו לו לר' אליעזר דלר' אליעזר הוי כבני עירו ולרבנן כיון דמספקא להו הוי כחמר גמל:"
+  },
+  "Tosafot on Eruvin 38a:13:1": {
+    "dependsOn": [
+      "Eruvin 38a:13",
+      "Maharsha on Eruvin 38a:3",
+      "Beitzah 17a:8",
+      "Rashi on Beitzah 17a:8:1",
+      "Tosafot on Beitzah 17a:8:1",
+      "Beitzah 16b:10",
+      "Beitzah 16b:11",
+      "Beitzah 16b:12",
+      "Beitzah 16b:13",
+      "Beitzah 16b:7",
+      "Beitzah 16b:8",
+      "Beitzah 16b:9"
+    ],
+    "generatedAt": "2026-11-03T05:36:52.525Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 38a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי אליעזר התם משום הכנה</strong> - וא\"ת ולמה לי טעמא משום הכנה תיפוק לי' דאסור למיקני שביתה בשבת פי' ביו\"ט כיון דביו\"ט אסור לצאת חוץ לתחום כדאמר פרק ב' דביצה <span class=\"parenthesized\">(דף יז.)</span> דאין מניחין עירובי תחומין מיו\"ט לחבירו ואע\"ג דהתם לא שייך ביה הכנה דהא נולדה בזה מותרת בזה ואור\"י דאצטריך לטעמא דהכנה משום דמאן דשרי התם למיקני שביתה בשבתא א\"נ משום דרבנן הקשו לר' אליעזר גם מעירובי חצירות ולכך צריך לתרץ משום הכנה תדע דהכנה נמי שייך בעירובי חצירות דהא רב פוסק בשמעתין כר' אליעזר דשתי קדושות הן ורב גופיה פסיק בריש פרק ב' דביצה <span class=\"parenthesized\">(דף טז:)</span> דהלכה כת\"ק דאמר יו\"ט שחל להיות בע\"ש אין מערבין לא עירובי תחומין ולא עירובי חצירות וכיון דשתי קדושות הן אמאי אין מערבין ע\"כ משום הכנה ומיהו התם דקאמר רבי מערבין עירובי חצירות אבל לא עירובי תחומין מ\"ט דמדשרי עירובי חצירות משמע דלית ליה הכנה וא\"כ למה אין מערבין עירובי תחומין ולמאן דאסר למקני שביתה בשבתא ניחא אבל למאן דשרי קשה ושמא י\"ל דבהכי פליגי רבי ורבנן דרבי סבר לא שייך איסור הכנה בעירובי חצירות כיון דביום טוב שרי להוציא מחצר לחצר:"
+  },
+  "Tosafot on Eruvin 38a:13:2": {
+    "dependsOn": [
+      "Tosafot on Eruvin 38a:13:1",
+      "Tosafot on Eruvin 38a:1:1",
+      "Tosafot on Eruvin 38a:11:1",
+      "Tosafot on Eruvin 37b:1:1",
+      "Rashi on Eruvin 38a:2:1",
+      "Rashi on Eruvin 38a:2:2"
+    ],
+    "generatedAt": "2026-11-03T05:38:52.860Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 38a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום הכנה</strong> - איסור הכנה דאורייתא היא כדילפינן לקמן בשמעתין ומה שאופין מיו\"ט לשבת משום עירובי תבשילין מפרש רבה בפרק אלו עוברין <span class=\"parenthesized\">(פסחים דף מו:)</span> משום הואיל ומקלעי ליה אורחין וא\"ת והיכי בעי באלו עוברין <span class=\"parenthesized\">(שם)</span> למימר דר' אליעזר לית ליה הואיל א\"כ לדידיה איך אופין מיו\"ט לשבת הא אית ליה איסור הכנה הכא בשמעתין וי\"ל דההיא דאלו עוברין סבר דאסור למיקני שביתה בשבתא ואז לא צריכין לטעמא דהכנה כדפי' ועירובי חצירות נמי סבר ההיא דאלו עוברין דמערבין לר' אליעזר מיו\"ט לשבת כיון דלית ליה הכנה וא\"ת הא אכתי מוכח בפ\"ק דביצה <span class=\"parenthesized\">(דף ד)</span> דאית ליה לר' אליעזר הכנה גבי ביצה שנולדה בשבת דקאמר רבי אליעזר עדיין היא מחלוקת ב\"ש אומרים תיאכל ביו\"ט וב\"ה אומרים לא תיאכל וי\"ל דרבי אליעזר סבר כב\"ש דשמותי הוא ועוד דתניא בפ\"ק דביצה <span class=\"parenthesized\">(שם)</span> דר' אליעזר אומר תיאכל היא ואמה וריצב\"א אומר דלא שייך הכנה באפיה ובישול דאין זה אלא תיקון בעלמא שמתקן המאכל ולא שייך הכנה אלא לענין ביצה ועירוב שהוא דבר חדש:"
+  },
+  "Tosafot on Eruvin 38a:1:1": {
+    "dependsOn": [
+      "Eruvin 38a:1",
+      "Zevachim 77a:13",
+      "Zevachim 77b:1",
+      "Zevachim 77b:2",
+      "Zevachim 77b:3",
+      "Zevachim 77b:4",
+      "Zevachim 77b:5",
+      "Zevachim 77b:6"
+    ],
+    "generatedAt": "2026-11-03T04:59:55.954Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 38a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי אתה מודה שמא יבקע הנוד</strong> - תימה להנהו דמפרשי טעמייהו משום דאין ברירה או משום ראשית כו' כיון דקתני סיפא אי אתה מודה שמא יבקע הנוד מנא להו דלא הוה טעמא מש\"ה וי\"ל דידע הש\"ס שאין זה עיקר טעם ואע\"פ שהן עצמן לא היו חושבים זה הטעם עיקר מ\"מ היו שואלין אותו לדעת מה ישיב וכענין זה יש בזבחים <span class=\"parenthesized\">(דף עז:)</span> גבי איברים תמימים שנתערבו באיברים בעלי מומין דרבי אליעזר אומר יקרב ורואה אני את בשר של בעל מום כאילו הן עצים ואין זה עיקר טעמו דבנרבע ורובע מודה רבי אליעזר וטעם בעל מום משום דכתיב מום בם לא ירצו הא על ידי תערובות ירצו ור' אליעזר דקאמר רואה אני כאילו הן עצים היה שואל לחכמים למה לא יכשירו מאותו טעם אע\"פ שהוא בעצמו לא היה חושש לאותו טעם וכהנה רבות בש\"ס:"
+  }
+}

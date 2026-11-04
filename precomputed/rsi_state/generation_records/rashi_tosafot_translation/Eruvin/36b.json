@@ -1,0 +1,387 @@
+{
+  "Rashi on Eruvin 36b:10:1": {
+    "dependsOn": [
+      "Eruvin 36b:10",
+      "Rashi on Eruvin 36b:10:1",
+      "Rashi on Eruvin 36b:10:2",
+      "Rashi on Eruvin 36b:10:3",
+      "Rashi on Eruvin 36a:1:1",
+      "Rashi on Eruvin 36b:9:1"
+    ],
+    "generatedAt": "2026-11-03T03:28:15.471Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 36b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי שנא לכאן ולכאן</strong> - דתלה עצמו לומר באיזה שארצה אלך דלא שרי רבי יהודה:"
+  },
+  "Rashi on Eruvin 36b:10:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 36b:10:1",
+      "Rashi on Eruvin 36b:10:2",
+      "Rashi on Eruvin 36b:10:3"
+    ],
+    "generatedAt": "2026-11-03T03:28:48.543Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 36b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאין ברירה</strong> - דכי בריר למחר אמרינן שמא אתמול כי קנה עירוב לאו דעתיה אהך הוה אלא אאידך:"
+  },
+  "Rashi on Eruvin 36b:10:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 36b:10:1",
+      "Rashi on Eruvin 36b:10:2"
+    ],
+    "generatedAt": "2026-11-03T03:32:25.540Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 36b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מזרח ומערב נמי</strong> - בשלא בא אלא אחד וקא סלקא דעתך השתא דבין השמשות עדיין לא בא חכם למזרח שעדיין היה רחוק מן העירוב ששה אלפים פחות שתי אמות ומשחשיכה הלך אלפים ונכנס לתוך ארבעה אלפים של עיר וזה שהניח עירובו ותלה בדעת החכם ואמר אם יבוא למזרח עירובי למזרח ואם לא יבא לא לכאן ולא לכאן הריני כבני עירי ולא יהא עירוב ולמחר שמע שבא למזרח מי יאמר דבשעת קניית עירוב היה דעת החכם ליכנס לתוך ד' אלפים של עיר דילמא לא היה בדעתו לזוז ולא קנה עירובו של זה ור' יהודה קאמר דקני דאמרינן הוברר הדבר דסופו הוכיח שבין השמשות היה דעתו לכאן:"
+  },
+  "Rashi on Eruvin 36b:11:1": {
+    "dependsOn": [
+      "Eruvin 36b:11",
+      "Rashi on Eruvin 36b:10:1",
+      "Rashi on Eruvin 36b:10:2",
+      "Rashi on Eruvin 36b:9:1",
+      "Rashi on Eruvin 36b:4:1",
+      "Rashi on Eruvin 36b:3:1"
+    ],
+    "generatedAt": "2026-11-03T03:33:31.297Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 36b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ר יוחנן וכבר בא חכם</strong> - מתניתין בהכי עסקינן שבא חכם כבר קודם בין השמשות אבל זה לא היה יודע להיכן בא או אם בא או לא ולמחר כשנשמע לו גלויי מילתא בעלמא הוא ואיגלאי מילתא דההוא עירוב קנה ואין זו סמך על ברירת ספק אלא קנייה ודאית שהרי אמר לצד החכם יקנה לי העירוב והחכם כבר בא קודם קניית העירוב וקנה:"
+  },
+  "Rashi on Eruvin 36b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T03:33:51.608Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 36b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אדרבה ליתא לדאיו</strong> - דמתניתין עיקר וההיא ברייתא היא:"
+  },
+  "Rashi on Eruvin 36b:13:1": {
+    "dependsOn": [
+      "Eruvin 36b:13",
+      "Rashi on Eruvin 36b:12:1"
+    ],
+    "generatedAt": "2026-11-03T03:35:20.492Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 36b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא סלקא דעתך</strong> - לאפוקי לההיא דאיו:"
+  },
+  "Rashi on Eruvin 36b:13:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 36b:13:1",
+      "Eruvin 36b:13"
+    ],
+    "generatedAt": "2026-11-03T03:36:18.817Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 36b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלוקח יין מבין הכותים</strong> - קודם שגזרו על יינם כדמפרש בשחיטת חולין וסתם כותים לא מפרשי תרומה ואין לזה כלים להפריש לתוכן תרומה ומעשר:"
+  },
+  "Rashi on Eruvin 36b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T03:04:22.478Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 36b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאי אמרת תחילת היום</strong> - של שבת קונה עירוב דהיינו סוף בין השמשות קונה עירוב אמאי לא אמר כלום:"
+  },
+  "Rashi on Eruvin 36b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T03:06:37.286Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 36b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתנה אדם על עירובו</strong> - מניח אדם שני עירובין אחד לסוף אלפים למזרח ביתו ואחד לסוף אלפים אמה למערב ביתו:"
+  },
+  "Rashi on Eruvin 36b:3:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 36b:3:1",
+      "Rashi on Eruvin 36b:3:3"
+    ],
+    "generatedAt": "2026-11-03T03:07:54.124Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 36b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואומר אם באו נכרים מן המזרח</strong> - וצריך אני לברוח מפניהם יקנה לי עירובי שבמערב ויהיו לי במערב ביתי ד' אלפים אמה אע\"ג דלא אתו עד למחר אמרינן יש ברירה דבין השמשות קנה לו עירובו דאידך גיסא:"
+  },
+  "Rashi on Eruvin 36b:3:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 36b:3:1",
+      "Rashi on Eruvin 36b:3:2"
+    ],
+    "generatedAt": "2026-11-03T03:08:31.466Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 36b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הריני כבני עירי</strong> - אלפים מעירי לכל רוח ואין צריך להשתכר כאן ולהפסיד כאן:"
+  },
+  "Rashi on Eruvin 36b:4:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 36b:4:2"
+    ],
+    "generatedAt": "2026-11-03T03:09:04.226Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 36b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בא חכם למזרח</strong> - חוץ לתחום עירי ורוצה אני ללמוד תורה מפיו ועכשיו איני יודע לאיזה צד יבא ולמחר אשמע מבני אדם הבאים משם לכאן על ידי עירוב:"
+  },
+  "Rashi on Eruvin 36b:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T03:09:30.859Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 36b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי יהודה אומר</strong> - אם באו לכאן ולכאן ואחד מהן רבו ילך אצל רבו ולא אצל חכם דקים לן בגוויה דבשעת קניית עירוב דעתיה למקני ליה ההוא עירוב דלצד רבו ומיהו איהו הוא דלא ידע לאיזה מן הצדדין יבא והשתא דידע להתם ליזיל:"
+  },
+  "Rashi on Eruvin 36b:5:1": {
+    "dependsOn": [
+      "Eruvin 36b:5",
+      "Rashi on Eruvin 36b:5:1",
+      "Rashi on Eruvin 36b:6:1",
+      "Rashi on Eruvin 36b:6:2"
+    ],
+    "generatedAt": "2026-11-03T03:11:41.051Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 36b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תני איפכא</strong> - אייתי מתניתא בידיה דתני איפכא בורח מן החכם ומתנה אם בא חכם למזרח עירובו למערב כו' ולגבי נכרים תני דלההוא צד דליתו נכרי' לקני עירוביה:"
+  },
+  "Rashi on Eruvin 36b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T03:12:26.246Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 36b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פרהגבני</strong> - גבאי המס ובורח מפניהם:"
+  },
+  "Rashi on Eruvin 36b:6:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 36b:6:1"
+    ],
+    "generatedAt": "2026-11-03T03:12:53.552Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 36b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מרי דמתא</strong> - צריך הוא לפייס או לצעוק:"
+  },
+  "Rashi on Eruvin 36b:7:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 36b:7:2"
+    ],
+    "generatedAt": "2026-11-03T03:13:38.938Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 36b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מותיב פירקי</strong> - לדרוש ברבים דעת האדם לילך ולשמוע:"
+  },
+  "Rashi on Eruvin 36b:7:2": {
+    "dependsOn": [
+      "Eruvin 36b:7",
+      "Rashi on Eruvin 36b:7:1",
+      "Eruvin 36b:3",
+      "Eruvin 36b:4"
+    ],
+    "generatedAt": "2026-11-03T03:17:21.550Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 36b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקרי שמע</strong> - כלומר מלמדי תינוקות להתפלל ומתני' דר' יצחק בדאתו בי תרי חד להאי גיסא וחד להאי גיסא ומתניתין אדמותיב פירקי קאי והכי קאמר בא מותיב פירקי למזרח או בא לכאן ולכאן דתרווייהו מותיבי פירקי למקום שארצה אלך ולכשיברור לו למחר אמרינן הוברר הדבר דבשעת קניית עירוב דעתיה אההוא חכם הוה ודר' יצחק קאי אמקרי שמע והכי קאמר בא מקרי שמע למזרח עירובי אדמותיב פירקי למערב בא מקרי שמע למערב עירובי אדמותיב פירקי למזרח בא לכאן ולכאן תרוויהו מותיבי פירקי או שניהן שוין למקום שארצה אלך. כך שמעתי:"
+  },
+  "Rashi on Eruvin 36b:8:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 36b:9:1",
+      "Rashi on Eruvin 36b:4:2",
+      "Rashi on Eruvin 36b:8:2",
+      "Rashi on Eruvin 35b:5:1",
+      "Rashi on Eruvin 2b:6:1",
+      "Tosafot on Eruvin 2b:4:1"
+    ],
+    "generatedAt": "2026-11-03T03:19:08.446Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 36b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבנן</strong> - דפליגי אדר' יהודה דאפילו אחד מהן רבו ילך לאיזה שירצה:"
+  },
+  "Rashi on Eruvin 36b:8:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 36b:8:1",
+      "Rashi on Eruvin 36b:8:2",
+      "Rashi on Eruvin 36b:9:1",
+      "Eruvin 36b:8",
+      "Rashi on Eruvin 37b:3:1",
+      "Eruvin 36b:10"
+    ],
+    "generatedAt": "2026-11-03T03:21:49.983Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 36b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דזמנין דניחא ליה לאיניש בחבריה טפי מרביה</strong> - וי\"ל ברירה אף כאן:"
+  },
+  "Rashi on Eruvin 36b:9:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 36b:9:1",
+      "Rashi on Eruvin 36b:9:2",
+      "Rashi on Eruvin 36b:9:3",
+      "Rashi on Eruvin 36b:9:4",
+      "Eruvin 36b:3",
+      "Eruvin 36b:4",
+      "Rashi on Eruvin 36b:3:1",
+      "Rashi on Eruvin 36b:3:2",
+      "Rashi on Eruvin 36b:3:3",
+      "Rashi on Eruvin 36a:1:1"
+    ],
+    "generatedAt": "2026-11-03T03:24:07.848Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 36b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליתא למתני'</strong> - דקתני לר' יהודה היו שניהן רבותיו למקום שירצה ילך אלמא אית ליה לר' יהודה ברירה דהא עירוב מאתמול קנה ואיהו השתא הוא דקא בריר ליה ואמרינן הוברר הדבר דמאתמול נמי דעתיה להאי הוה:"
+  },
+  "Rashi on Eruvin 36b:9:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 36b:9:1",
+      "Rashi on Eruvin 36b:9:2",
+      "Rashi on Eruvin 36b:9:3",
+      "Rashi on Eruvin 36b:9:4",
+      "Rashi on Eruvin 36b:8:1",
+      "Rashi on Eruvin 36b:8:2"
+    ],
+    "generatedAt": "2026-11-03T03:25:09.590Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 36b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליתא למתניתין</strong> - אינה עיקר מדתני איו הואיל ואשכחן מתניתין דתני איו דלאו הכי הוא:"
+  },
+  "Rashi on Eruvin 36b:9:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T03:25:24.638Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 36b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איו</strong> - שם חכם:"
+  },
+  "Rashi on Eruvin 36b:9:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 36b:9:1",
+      "Rashi on Eruvin 36b:9:2",
+      "Rashi on Eruvin 36b:9:3"
+    ],
+    "generatedAt": "2026-11-03T03:26:23.091Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 36b:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על שני דברים</strong> - לומר בא לכאן ולכאן למקום שארצה אלך דאין ברירה אלא על אחד ואינו יודע להיכן יבא יכול להתנות ולומר בא חכם למזרח כו':"
+  },
+  "Tosafot on Eruvin 36b:13:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 36b:4:1",
+      "Tosafot on Eruvin 36b:13:2",
+      "Tosafot on Eruvin 35b:1:1",
+      "Tosafot on Eruvin 36a:1:1",
+      "Maharsha on Eruvin 36b:13:1",
+      "Chokhmat Shlomo on Eruvin 36b:13:1"
+    ],
+    "generatedAt": "2026-11-03T03:39:07.239Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 36b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא ס\"ד דשמעינן ליה לר' יהודה דלית ליה ברירה דתנן כו'</strong> - ואם תאמר אכתי ליתא לדאיו ולההיא דהלוקח מקמי מתניתין דהכא ומתני' דמי שאחזו <span class=\"parenthesized\">(גיטין דף עג.)</span> דמה היא באותן הימים דדייקינן מינה בריש כל הגט <span class=\"parenthesized\">(גיטין דף כה:)</span> דאית ליה לרבי יהודה ברירה ומקמי ברייתא דמרובה <span class=\"parenthesized\">(ב\"ק דף סט.)</span> דקאמר רבי יהודה שחרית אומר בעל הבית כל מה שילקטו כו' דבכל הני אית ליה לרבי יהודה ברירה ויש לומר דרב מחלק בין תולה בדעת אחרים בין תולה בדעת עצמו כמו שמחלק אביי בריש כל הגט וההיא דגיטין ודמרובה הוי תולה בדעת אחרים והתם אית ליה ברירה אבל תולה בדעת עצמו לית ליה ברירה ולהכי קאמר דליתא למתניתין דקתני דאית לרבי יהודה ברירה אפילו בתולה בדעת עצמו מקמי דאיו ומקמי ההיא דהלוקח והאי דפריך אההיא דאיו מאי שנא דלכאן ולכאן דאין ברירה לא לרב פריך דלדידיה דמחלק בין תולה בדעת עצמו בין תולה בדעת אחרים אתי שפיר אלא למי שאינו מחלק פריך ור' יוחנן דמשני וכבר בא חכם נמי אין מחלק ולדידיה ודאי ליתא לדאיו מקמי כל הנהו ומיהו קשה דבסוף ביצה <span class=\"parenthesized\">(דף לז:)</span> גבי ב' שלקחו בהמה וחבית בשותפות מדקדק דרבי יוחנן לית ליה ברירה מדמפרש מלתיה דאיו והא ע\"כ לרבי יוחנן ליתא לדאיו כדפי' וי\"ל דודאי הוה מצי לשנויי הכי אלא ניחא ליה לשנויי לעולם לא תיפוך אי נמי נהי דלר' יוחנן ליתא לדאיו דאמר דלר' יהודה אין ברירה מכל מקום מוכח שפיר דר' יוחנן לית ליה ברירה מדמשני ליה אבל קשה דאפילו בתולה בדעת אחרים נמי שמעינן לרבי יהודה דלית ליה ברירה דתנן בשקלים ומייתי לה בהוציאו לו <span class=\"parenthesized\">(יומא דף נה.)</span> דקאמר ר' יהודה לא היו שופרות לקיני חובה מפני התערובות ומפרש התם טעמא משום חטאת שמתו בעליה ומשום דלית ליה ברירה כדמוכח בההיא דאיו והשתא הא לר' יוחנן ליתא לדאיו ולרב אית ליה ברירה לרבי יהודה בתולה בדעת אחרים וי\"ל דהא דאית ליה ברירה לרבי יהודה בתולה בדעת אחרים ה\"מ כשמתנה אבל בלא תנאי אינו מועיל:"
+  },
+  "Tosafot on Eruvin 36b:13:2": {
+    "dependsOn": [
+      "Tosafot on Eruvin 36b:13:1",
+      "Eruvin 36b:13"
+    ],
+    "generatedAt": "2026-11-03T03:41:01.364Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 36b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דתנן הלוקח יין מבין הכותים</strong> - דתניא גרסינן דבמשנה בדמאי פ\"ז <span class=\"parenthesized\">(משנה ד)</span> ליכא אלא מלתיה דר\"מ לחוד ואע\"ג דר' מאיר גזר על יינן כדאמר פ\"ק דחולין <span class=\"parenthesized\">(דף ו.)</span> זאת נשנית קודם גזירה ואף על גב דרבי יוסי ור\"ש סבירא להו כותים גירי אריות הם כדאמר במנחות פרק ר' ישמעאל <span class=\"parenthesized\">(מנחות דף סו.)</span> תורמין משל נכרים על של כותים מ\"מ כיון דפרשי מע\"ז הם טפי משאר אומות ומחזיקים בתורה שבכתב ולא היו עובדין אלהיהם כמו שעשו בבית ראשון לא גזרו על יינן ואע\"ג שגזרו על פתן כמו לרבי מאיר קודם גזירה שהיה פתן אסור ויינן מותר אי נמי הכא איירי כשטיהר ישראל יינו של כותי:"
+  },
+  "Tosafot on Eruvin 36b:1:1": {
+    "dependsOn": [
+      "Eruvin 36b:1",
+      "Rashi on Eruvin 36b:1:1",
+      "Rabbeinu Chananel on Eruvin 36b:1"
+    ],
+    "generatedAt": "2026-11-03T03:06:12.647Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 36b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאי סלקא דעתך תחילת היום קונה עירוב</strong> - ואם תאמר נימא משום דמספיקא לא פקע טבל ומספיקא לא נחתא תרומה כדאמר לעיל ואור\"י דלא דמי דודאי כי אמר היום חול ולמחר קדש מקפיד שלא תחול על העירוב קדושת היום אבל הכא רוצה הוא שתחול עליו שם תרומה מיד אם היה יכול ואינו אומר לכשתחשך אלא שתצא לגין מתורת טבול יום:"
+  },
+  "Tosafot on Eruvin 36b:4:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 36b:4:1",
+      "Rashi on Eruvin 36b:4:2",
+      "Tosefta Kifshutah on Eruvin 3:1:4",
+      "Rabbeinu Chananel on Eruvin 36b:4",
+      "Steinsaltz comment #1 on Eruvin 36b:4"
+    ],
+    "generatedAt": "2026-11-03T03:10:45.488Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 36b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם היו שניהן רבותיו</strong> - אצטריך לאשמועינן אפילו אחד רבו מובהק:"
+  }
+}

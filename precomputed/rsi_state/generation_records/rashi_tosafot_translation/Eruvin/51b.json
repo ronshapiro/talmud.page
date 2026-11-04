@@ -1,0 +1,147 @@
+{
+  "Rashi on Eruvin 51b:1:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 51b:1:2"
+    ],
+    "generatedAt": "2026-11-03T21:45:59.332Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 51b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עני הוא דאקילו רבנן גביה</strong> - הבא בדרך ואין עמו פת הוא דאקילו רבנן גביה לומר שביתתי במקומי כשאינו מכיר אילן או גדר או למכיר לומר שביתתי במקום פלוני:"
+  },
+  "Rashi on Eruvin 51b:1:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 51b:1:1"
+    ],
+    "generatedAt": "2026-11-03T21:46:33.231Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 51b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל עשיר</strong> - כגון יושב בביתו לא זו ולא זו:"
+  },
+  "Rashi on Eruvin 51b:2:1": {
+    "dependsOn": [
+      "Eruvin 51b:2",
+      "Rashi on Eruvin 51b:1:1",
+      "Rashi on Eruvin 51b:1:2"
+    ],
+    "generatedAt": "2026-11-03T21:47:37.541Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 51b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עיקר עירוב ברגל</strong> - שביתתי תחתי אפילו לעשיר אם יצא והחשיך זהו עיקר מצות עירוב כדתני לא אמרו לערב בפת כו' אלמא עיקר תקנת עירוב לר' יהודה ברגל היא:"
+  },
+  "Rashi on Eruvin 51b:3:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 51b:3:1",
+      "Rashi on Eruvin 51b:3:2"
+    ],
+    "generatedAt": "2026-11-03T21:48:17.562Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 51b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זהו שאמרו חכמים</strong> - דמשמע דעיקר תקנתא לאו הכי הואי אלא קולא בעלמא הוא שאמרו אצל העני לערב ברגליו:"
+  },
+  "Rashi on Eruvin 51b:3:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 51b:3:1",
+      "Rashi on Eruvin 51b:3:3",
+      "Rashi on Eruvin 51b:3:4",
+      "Rashi on Eruvin 51a:12:1",
+      "Rashi on Eruvin 51a:12:2",
+      "Rashi on Eruvin 51b:1:1",
+      "Rashi on Eruvin 51b:1:2"
+    ],
+    "generatedAt": "2026-11-03T21:49:29.974Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 51b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאן קאמר ליה ר\"מ</strong> - דאמר עיקר עירוב בפת:"
+  },
+  "Rashi on Eruvin 51b:3:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 51b:3:1",
+      "Rashi on Eruvin 51b:3:2",
+      "Rashi on Eruvin 51b:3:3",
+      "Rashi on Eruvin 51b:3:4",
+      "Eruvin 51b:1"
+    ],
+    "generatedAt": "2026-11-03T21:50:42.247Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 51b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואהיכא קאי אאינו מכיר או שאינו בקי בהלכה</strong> - ואמר שביתתי תחתי עלה קאמר ר\"מ וזהו שאמרו כלומר דאפילו להאי דאמר במקומי קולא הוא דאקילו רבנן גביה אבל לא זהו עיקר תקנת עירוב:"
+  },
+  "Rashi on Eruvin 51b:3:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 51b:3:1",
+      "Rashi on Eruvin 51b:3:2",
+      "Rashi on Eruvin 51b:3:3"
+    ],
+    "generatedAt": "2026-11-03T21:51:19.647Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 51b:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא אמרו לערב בפת</strong> - דמשמע דעיקר עירוב כי איתקן ברגל איתקן ולא אמרו בפת אלא להקל על העשיר:"
+  },
+  "Rashi on Eruvin 51b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T21:53:10.340Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 51b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחלוקת במקום פלוני</strong> - דאין כאן לא עירוב בפת ולא עירוב ברגל אלא אמירה בעלמא עלה קאמר ר\"מ עני אין עשיר לא:"
+  },
+  "Rashi on Eruvin 51b:4:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 51b:4:1",
+      "Rashi on Eruvin 51b:4:2"
+    ],
+    "generatedAt": "2026-11-03T21:53:51.174Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 51b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל במקומי דברי הכל אחד עני ואחד עשיר</strong> - דעיקר עירוב ברגל:"
+  },
+  "Rashi on Eruvin 51b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T21:54:24.243Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 51b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זהו שאמרו חכמים</strong> - דמשמע דעיקר תקנתא לאו הכי הואי אלא קולא בעלמא הוא שאמרו אצל העני לערב ברגליו:"
+  },
+  "Tosafot on Eruvin 51b:3:1": {
+    "dependsOn": [
+      "Eruvin 51b:3",
+      "Eruvin 49b:5"
+    ],
+    "generatedAt": "2026-11-03T21:52:28.014Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 51b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואהיכא קאי אאינו מכיר</strong> - ולא בעי למימר דקאי אמי שבא בדרך וחשכה לו ודברי הכל דמוכחא מתני' דבמאי דפליגי ר\"מ ורבי יהודה איירי:"
+  }
+}

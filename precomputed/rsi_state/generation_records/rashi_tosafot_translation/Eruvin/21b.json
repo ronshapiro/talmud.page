@@ -1,4 +1,152 @@
 {
+  "Rashi on Eruvin 21b:10:1": {
+    "dependsOn": [
+      "Steinsaltz on Eruvin 21b:10",
+      "Rashi on Eruvin 21b:4:1",
+      "Rashi on Eruvin 21b:5:1",
+      "Rashi on Eruvin 21b:11:1",
+      "Rashi on Eruvin 21b:12:1",
+      "Rashi on Eruvin 21a:1:1"
+    ],
+    "generatedAt": "2026-11-02T12:52:50.510Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 21b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולהג הרבה</strong> - המלעיג עליהן ביגיעות בשר נידון:"
+  },
+  "Rashi on Eruvin 21b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T12:53:26.301Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 21b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל ההוגה בהן</strong> - בכל שעה שאדם מחזר בדברי תורה מוצא בהן טעם:"
+  },
+  "Rashi on Eruvin 21b:12:1": {
+    "dependsOn": [
+      "Jastrow, גַּרְסִי 1"
+    ],
+    "generatedAt": "2026-11-02T12:54:33.454Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 21b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הגרסי</strong> - שם מקום ל\"א שהיה טוחן גריסים:"
+  },
+  "Rashi on Eruvin 21b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T12:54:49.115Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 21b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחיי תלויין בחייך</strong> - שאין לי אלא מה שאתה נותן ומזמן לי:"
+  },
+  "Rashi on Eruvin 21b:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T12:58:39.516Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 21b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בילדותו</strong> - שהיה יכול לקבל טורח ועינוי:"
+  },
+  "Rashi on Eruvin 21b:16:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 21b:16:1",
+      "Rashi on Eruvin 21b:16:2",
+      "Eruvin 21b:16"
+    ],
+    "generatedAt": "2026-11-02T12:59:35.910Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 21b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלמה תיקן עירובי חצירות</strong> - וגזר שלא להוציא מרשות היחיד לרשות היחיד חבירו לעשות סייג והרחקה לאיסור תורה שלא יבוא להתיר מרשות הרבים לרשות היחיד והיינו דכתיב ואיזן וחקר תיקן משלים שעשה אזנים לתורה כאזני כלי שאוחזין אותו בם:"
+  },
+  "Rashi on Eruvin 21b:16:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 21b:16:1"
+    ],
+    "generatedAt": "2026-11-02T13:00:06.911Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 21b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וידים</strong> - נטילת ידים לעשות סייג לטהרות:"
+  },
+  "Rashi on Eruvin 21b:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T13:01:52.817Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 21b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרכים</strong> - מקום שווקים הן וישוב גדול ורגל רוכלין וסוחרין מצויה שם לפיכך גזל ועריות נוהג בהן:"
+  },
+  "Rashi on Eruvin 21b:18:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 21b:18:1",
+      "Rashi on Eruvin 21b:18:2"
+    ],
+    "generatedAt": "2026-11-02T13:02:48.416Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 21b:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השדה</strong> - בני בגא ועובד אדמה ועוסקין בתורה מתוך דוחק:"
+  },
+  "Rashi on Eruvin 21b:1:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 21b:1:1"
+    ],
+    "generatedAt": "2026-11-02T12:41:32.353Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 21b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הבכורות</strong> - תאנים חשובות הממהרות להתבשל:"
+  },
+  "Rashi on Eruvin 21b:20:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 21b:20:2",
+      "Rashi on Eruvin 21b:18:1",
+      "Rashi on Eruvin 21b:18:2",
+      "Rashi on Eruvin 21a:1:1",
+      "Rashi on Berakhot 36b:8:2"
+    ],
+    "generatedAt": "2026-11-02T13:04:41.198Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 21b:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סמדר</strong> - גדול מפרח כך משנה מפורשת יותר מן המקרא:"
+  },
+  "Rashi on Eruvin 21b:20:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 21b:20:1"
+    ],
+    "generatedAt": "2026-11-02T13:05:36.968Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 21b:20:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הנצו הרמונים</strong> - גדלו כל צרכן וכבר הנץ גדל סביבותיו כעין שומר שיש לאגוזים קטנים:"
+  },
   "Rashi on Eruvin 21b:21:1": {
     "dependsOn": [
       "Rashi on Eruvin 21b:21:1",
@@ -39,5 +187,146 @@
       "Rashi on Eruvin 21b:23:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">ועשה לה אזנים</strong> - שתיקן עירובין וידים וגזר על השניות לעריות כדמפרש ביבמות <span class=\"parenthesized\">(כא.)</span> וע\"י כך אוחזין ישראל במצות שנתרחקו מן העבירה כדרך שנוח לאחוז בכלי שיש לו בית יד משאין לו:"
+  },
+  "Rashi on Eruvin 21b:4:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 21b:4:1"
+    ],
+    "generatedAt": "2026-11-02T12:42:07.990Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 21b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאוגדות</strong> - קושרות פתחן לצורך בעליהן שאינן נבעלות לאחרים אוגדות לשון אגודה ל\"א שמגידות פתחיהן כשרואה דם אומרת לבעלה ויפרוש הימנה:"
+  },
+  "Rashi on Eruvin 21b:5:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 21b:5:2",
+      "Rashi on Eruvin 21b:5:3"
+    ],
+    "generatedAt": "2026-11-02T12:42:39.130Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 21b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חדשים</strong> - דברי סופרים:"
+  },
+  "Rashi on Eruvin 21b:5:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 21b:5:1",
+      "Rashi on Eruvin 21b:5:2",
+      "Rashi on Eruvin 21b:5:3"
+    ],
+    "generatedAt": "2026-11-02T12:43:10.634Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 21b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גם ישנים</strong> - דברי תורה:"
+  },
+  "Rashi on Eruvin 21b:5:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 21b:5:1",
+      "Rashi on Eruvin 21b:5:2",
+      "Rashi on Eruvin 21b:5:3"
+    ],
+    "generatedAt": "2026-11-02T12:44:14.590Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 21b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דודי צפנתי</strong> - ושמרתי כל אלה לך לשמך:"
+  },
+  "Rashi on Eruvin 21b:7:1": {
+    "dependsOn": [
+      "Eruvin 21b:7"
+    ],
+    "generatedAt": "2026-11-02T12:45:01.846Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 21b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פעמים פעמים ניתנה</strong> - שתהא זו חדשה וזו ישנה:"
+  },
+  "Rashi on Eruvin 21b:7:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 21b:7:1"
+    ],
+    "generatedAt": "2026-11-02T12:45:40.886Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 21b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דברי סופרים</strong> - חדשים שנתחדשו בכל דור ודור לגדור גדר וסייג:"
+  },
+  "Rashi on Eruvin 21b:8:1": {
+    "dependsOn": [
+      "Eruvin 21b:8",
+      "Rashi on Eruvin 21b:8:1",
+      "Rashi on Eruvin 21b:8:2",
+      "Rashi on Eruvin 21b:1:1",
+      "Rashi on Eruvin 21b:4:1",
+      "Rashi on Eruvin 21b:5:1"
+    ],
+    "generatedAt": "2026-11-02T12:47:03.076Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 21b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויותר מהמה</strong> - לעיל מיניה כתיב דברי חכמים כדרבונות אלו דברי תורה שנמסרו למשה על פה שנחלקו בה חכמי ישראל לאחר שנתמעט הלב ושכחו כדכתיב בסיפיה דקרא נתנו מרועה אחד זה משה וכתיב בתריה ויותר מהמה בני הזהר ממה שניתן בסיני בכתב שהוא עיקר בני הזהר באלו שבעל פה שגם הם עיקר אלא לכך לא נכתבו שאין קץ לעשות ספרים הרבה בכל אלה:"
+  },
+  "Rashi on Eruvin 21b:8:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 21b:8:1"
+    ],
+    "generatedAt": "2026-11-02T12:48:12.794Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 21b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עשה ולא תעשה</strong> - יש בהן שאין בהם חיוב מיתה אבל דברי סופרים חייבין מיתה על כולן כדכתיב <span class=\"parenthesized\">(קהלת י׳:ח׳)</span> ופורץ גדר ישכנו נחש:"
+  },
+  "Tosafot on Eruvin 21b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T12:58:15.499Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 21b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מוטב אמות מיתת עצמי</strong> - אף על גב דבפ' קמא <span class=\"parenthesized\">(ד' יז.)</span> אמר ארבעה דברים פטורין במחנה רחיצת ידים וכל שכן במקום סכנה מחמיר על עצמו היה:"
+  },
+  "Tosafot on Eruvin 21b:16:1": {
+    "dependsOn": [
+      "Tosafot on Yevamot 21a:9:1"
+    ],
+    "generatedAt": "2026-11-02T13:01:22.996Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 21b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשעה שתיקן שלמה עירובין ונטילת ידים</strong> - אף על גב דתיקן נמי שניות כדאמר בפרק שני דיבמות <span class=\"parenthesized\">(ד' כא.)</span> הא דלא חשיב הכא משום דלאו בבת אחת תיקן ואחר בת קול תיקן ומדכתיב איזן וחקר תיקן משלים הרבה משמע נמי שהרבה תקנות עשה:"
+  },
+  "Tosafot on Eruvin 21b:9:1": {
+    "dependsOn": [
+      "Gilyon HaShas on Eruvin 21b:1",
+      "Eruvin 21b:9"
+    ],
+    "generatedAt": "2026-11-02T12:51:19.127Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 21b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני מה לא נכתבו</strong> - וגם בהלכה למשה מסיני לא נתנו כדי שלא ישתכחו:"
   }
 }

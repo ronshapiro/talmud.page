@@ -1,0 +1,442 @@
+{
+  "Rashi on Eruvin 47b:11:1": {
+    "dependsOn": [
+      "Eruvin 47b:11",
+      "Rashi on Eruvin 47b:11:1",
+      "Rashi on Eruvin 47b:11:2",
+      "Rashi on Eruvin 47b:8:1",
+      "Rashi on Eruvin 47b:8:2",
+      "Rashi on Eruvin 47b:8:3",
+      "Rashi on Eruvin 47b:8:4",
+      "Rashi on Eruvin 47b:8:5",
+      "Eruvin 47b:8",
+      "Chokhmat Shlomo on Eruvin 47b:1",
+      "Rashi on Eruvin 46b:7:2",
+      "Rashi on Eruvin 46b:7:3"
+    ],
+    "generatedAt": "2026-11-03T17:57:21.682Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 47b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעולם סבר רבי יוחנן חפצי נכרי</strong> - כחפצי הפקר והא ר' יוחנן בן נורי:"
+  },
+  "Rashi on Eruvin 47b:11:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 47b:11:1",
+      "Eruvin 47b:11",
+      "Eruvin 47b:3",
+      "Rashi on Eruvin 47b:8:1",
+      "Rashi on Eruvin 47b:8:2"
+    ],
+    "generatedAt": "2026-11-03T17:58:47.567Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 47b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושמואל דאמר</strong> - לעיל אין קונין רבנן דאמרי בחפצי הפקר דאין קונין:"
+  },
+  "Rashi on Eruvin 47b:13:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 47b:13:1"
+    ],
+    "generatedAt": "2026-11-03T17:59:13.763Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 47b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דיכרי</strong> - אילים:"
+  },
+  "Rashi on Eruvin 47b:13:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T17:59:33.792Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 47b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מברכתא</strong> - שם מקום:"
+  },
+  "Rashi on Eruvin 47b:13:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 47b:13:1",
+      "Rashi on Eruvin 47b:13:2",
+      "Rashi on Eruvin 47b:13:3",
+      "Rashi on Eruvin 47b:13:4"
+    ],
+    "generatedAt": "2026-11-03T18:00:40.147Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 47b:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחוזא</strong> - עיר הסמוכה למברכתא בתוך ד' אלפים ומערבין מזו לזו:"
+  },
+  "Rashi on Eruvin 47b:13:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 47b:13:1",
+      "Rashi on Eruvin 47b:13:2",
+      "Rashi on Eruvin 47b:13:3",
+      "Rashi on Eruvin 47b:13:4",
+      "Eruvin 47b:5"
+    ],
+    "generatedAt": "2026-11-03T18:01:45.652Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 47b:13:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למיזבן מינייהו</strong> - ואייתינהו למחוזא ואף על פי שהביאום הנכרים מחוץ לתחום דקסבר חפצי הנכרי אין קונין שביתה:"
+  },
+  "Rashi on Eruvin 47b:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T18:03:11.683Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 47b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כארבע אמות דמי</strong> - כדתנן במתניתין הוליכוהו לעיר אחרת או נתנוהו בדיר וסהר כו' ופסקינן לעיל אמר רב הלכה כרבן גמליאל בדיר וסהר וספינה והוא הדין לעיר שיש לה מחיצות:"
+  },
+  "Rashi on Eruvin 47b:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T18:13:38.473Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 47b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חרם</strong> - מצודת דגים ומפסיק במים בין ב' תחומין של ב' עיירות וחברו מצודים וחרמים <span class=\"parenthesized\">(קהלת ז׳:כ״ו)</span> וכתיב על כן יזבח לחרמו <span class=\"parenthesized\">(חבקוק א׳:ט״ז)</span> וגדר של קנים הוא:"
+  },
+  "Rashi on Eruvin 47b:17:2": {
+    "dependsOn": [
+      "Eruvin 47b:17"
+    ],
+    "generatedAt": "2026-11-03T18:14:27.843Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 47b:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צריך לעשות מחיצה של ברזל</strong> - שלא יעברו מים של תחום זה לתוך תחום זה דכל מה שבתוך תחום העיר אין קונה שביתה במקומו להיות לו ממקומו אלפים אמה לכל רוח אלא בתר העיר גריר ואם הוא בסוף התחום אין יכול לזוז משם ולחוץ ואין בני תחום זה יכולין למלאות מתוך תחום עצמו מפני עירוב מים של תחום האחר:"
+  },
+  "Rashi on Eruvin 47b:17:3": {
+    "dependsOn": [
+      "Eruvin 47b:17",
+      "Rashi on Eruvin 47b:17:1",
+      "Rashi on Eruvin 47b:17:2",
+      "Rashi on Eruvin 47b:17:3"
+    ],
+    "generatedAt": "2026-11-03T18:16:52.729Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 47b:17:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג אי נימא משום דתני לה כר' יוחנן בן נורי ולחומרא ואיהו לקולא סבר ומשום דסבירא ליה לקולא כל דתני לחומרא מחייך עליה</strong> - בתמיה אי נימא משום דרבי חייא תני למתניתין כרבי יוחנן בן נורי דאמר חפצי הפקר קונין שביתה בתוך תחומין ורבי יוסי בר חנינא סבירא ליה כרבנן לקולא דאמרי אין קונין שביתה והרי הן כרגלי כל אדם:"
+  },
+  "Rashi on Eruvin 47b:1:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 47b:1:2"
+    ],
+    "generatedAt": "2026-11-03T17:30:19.204Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 47b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא מן הכל אדם זוכה ללמוד</strong> - אין אדם זוכה ללמוד מכל מלמדיו יש רב שמשנתו סדורה בפיו ושונה לתלמידיו דרך קצרה:"
+  },
+  "Rashi on Eruvin 47b:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T17:31:14.176Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 47b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לצידן</strong> - חוצה לארץ:"
+  },
+  "Rashi on Eruvin 47b:3:1": {
+    "dependsOn": [
+      "Eruvin 47b:3",
+      "Rashi on Eruvin 47b:3:1",
+      "Rashi on Eruvin 47b:3:2",
+      "Rashi on Eruvin 47b:3:3",
+      "Rashi on Eruvin 47b:3:4"
+    ],
+    "generatedAt": "2026-11-03T17:32:11.209Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 47b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סד\"א הני מילי</strong> - דכייל רבי יוחנן הלכה כרבי יוסי:"
+  },
+  "Rashi on Eruvin 47b:3:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 47b:3:1",
+      "Rashi on Eruvin 47b:3:3"
+    ],
+    "generatedAt": "2026-11-03T17:32:48.429Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 47b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במתניתין</strong> - דדוקא היא:"
+  },
+  "Rashi on Eruvin 47b:3:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 47b:3:1",
+      "Rashi on Eruvin 47b:3:2",
+      "Rashi on Eruvin 47b:3:4"
+    ],
+    "generatedAt": "2026-11-03T17:35:22.195Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 47b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל בברייתא</strong> - דילמא איחליף דרבי יהודה לדר' יוסי ודרבי יוסי לדרבי יהודה:"
+  },
+  "Rashi on Eruvin 47b:3:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 47b:3:1",
+      "Rashi on Eruvin 47b:3:2",
+      "Rashi on Eruvin 47b:3:3"
+    ],
+    "generatedAt": "2026-11-03T17:36:07.990Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 47b:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אימא לא</strong> - לסמוך עלה להכי צריך למימר הלכה ולעולם איתנהו להני כללי:"
+  },
+  "Rashi on Eruvin 47b:4:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 47b:4:1",
+      "Rashi on Eruvin 47b:4:2",
+      "Eruvin 47b:4",
+      "Eruvin 46b:17",
+      "Eruvin 46b:11",
+      "Rashi on Eruvin 46b:2:1",
+      "Rashi on Eruvin 46b:1:2"
+    ],
+    "generatedAt": "2026-11-03T17:38:03.839Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 47b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא הכי קאמר</strong> - רב משרשיא כו':"
+  },
+  "Rashi on Eruvin 47b:4:2": {
+    "dependsOn": [
+      "Eruvin 47b:4",
+      "Rashi on Eruvin 47b:4:1",
+      "Eruvin 46b:11",
+      "Eruvin 46b:12",
+      "Eruvin 46b:13",
+      "Eruvin 46b:14",
+      "Eruvin 46b:15",
+      "Eruvin 46b:16",
+      "Eruvin 46b:17",
+      "Eruvin 47a:1",
+      "Eruvin 47a:9",
+      "Eruvin 47a:10",
+      "Eruvin 47a:11",
+      "Eruvin 47a:12",
+      "Rashi on Eruvin 47a:1:1",
+      "Rashi on Eruvin 46b:14:1",
+      "Rashi on Eruvin 47b:1:1",
+      "Rashi on Eruvin 47b:1:2",
+      "Rashi on Eruvin 47b:3:1"
+    ],
+    "generatedAt": "2026-11-03T17:41:07.203Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 47b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דהא רב לית ליה להני כללי</strong> - כדאמר לעיל מדאיצטריך ליה למימר סיים בה נמי הלכה כר' יהודה:"
+  },
+  "Rashi on Eruvin 47b:5:1": {
+    "dependsOn": [
+      "Eruvin 47b:5"
+    ],
+    "generatedAt": "2026-11-03T17:41:43.155Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 47b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין קונין שביתה</strong> - והרי הן כרגלי כל אדם ואם באו מחוץ לתחום לתוך העיר מותר להוליכן לכל רוח:"
+  },
+  "Rashi on Eruvin 47b:6:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 47b:6:2"
+    ],
+    "generatedAt": "2026-11-03T17:42:28.022Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 47b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חפצי הפקר</strong> - דאיכא למימר ליקנו מנפשייהו אמרי רבנן דאין קונין:"
+  },
+  "Rashi on Eruvin 47b:6:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 47b:6:1",
+      "Tosafot on Eruvin 47b:8:1"
+    ],
+    "generatedAt": "2026-11-03T17:43:24.383Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 47b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חפצי הנכרי דאית להו בעלים</strong> - והרי הן כמותן ובעליהן לית להו שביתה דלאו בני שביתה נינהו מיבעיא:"
+  },
+  "Rashi on Eruvin 47b:8:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 47b:8:2"
+    ],
+    "generatedAt": "2026-11-03T17:45:10.711Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 47b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השואל כלי מן הנכרי</strong> - ובן עירו הוה:"
+  },
+  "Rashi on Eruvin 47b:8:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 47b:8:1",
+      "Rashi on Eruvin 47b:8:2",
+      "Rashi on Eruvin 47b:8:3"
+    ],
+    "generatedAt": "2026-11-03T17:45:48.219Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 47b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן המשאיל לו כלי מערב יום טוב</strong> - וקנה שביתה אצל הנכרי בתוך תחום העיר:"
+  },
+  "Rashi on Eruvin 47b:8:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 47b:8:1",
+      "Rashi on Eruvin 47b:8:2",
+      "Rashi on Eruvin 47b:8:3",
+      "Rashi on Eruvin 47b:8:4",
+      "Rashi on Eruvin 47b:8:5",
+      "Steinsaltz on Eruvin 47b:8"
+    ],
+    "generatedAt": "2026-11-03T17:49:17.367Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 47b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והכלים והאוצרות</strong> - שעשאום אוצר:"
+  },
+  "Rashi on Eruvin 47b:8:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 47b:8:1",
+      "Rashi on Eruvin 47b:8:2",
+      "Rashi on Eruvin 47b:8:3",
+      "Rashi on Eruvin 47b:8:4",
+      "Rashi on Eruvin 47b:8:5",
+      "Eruvin 47b:9"
+    ],
+    "generatedAt": "2026-11-03T17:50:08.392Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 47b:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יש להן אלפים לכל רוח</strong> - ואפילו הן של הפקר וכלי שקנה שביתה אצל הנכרי והחזירו לבעלים ועירבו בעליו למזרח או למערב אין יכול להוציאו מאלפים:"
+  },
+  "Rashi on Eruvin 47b:8:5": {
+    "dependsOn": [
+      "Rashi on Eruvin 47b:8:5",
+      "Rashi on Eruvin 47b:8:1",
+      "Rashi on Eruvin 47b:8:2",
+      "Rashi on Eruvin 47b:8:3",
+      "Rashi on Eruvin 47b:8:4"
+    ],
+    "generatedAt": "2026-11-03T17:50:55.176Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 47b:8:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא יזיזם ממקומן</strong> - דקנו שביתה במקומן והרי יצאו חוץ לתחום ואין להן אלא ארבע אמות:"
+  },
+  "Rashi on Eruvin 47b:9:1": {
+    "dependsOn": [
+      "Eruvin 47b:9"
+    ],
+    "generatedAt": "2026-11-03T17:54:40.922Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 47b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא מני</strong> - דקתני חפצי הנכרי קונין שביתה ר' יוחנן בן נורי כלומר רבי שמעון בן אלעזר אליבא דרבי יוחנן בן נורי אמר:"
+  },
+  "Tosafot on Eruvin 47b:16:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 41b:1:1",
+      "Rashi on Eruvin 41b:1:2",
+      "Rashi on Eruvin 41b:2:1",
+      "Rashi on Eruvin 41b:2:2",
+      "Tosafot on Eruvin 47b:8:1",
+      "Tosafot on Eruvin 47b:17:1",
+      "Eruvin 47b:13",
+      "Eruvin 47b:14",
+      "Eruvin 47b:15",
+      "Eruvin 47b:16"
+    ],
+    "generatedAt": "2026-11-03T18:06:14.579Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 47b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכולה מברכתא כד' אמות דמיא</strong> - בריש פירקא פ\"ה והוליכו לעיר אחרת והרי מוקפת מחיצות משמע דלא חשיב כד' אמות לענין להלך את כולה אלא במוקפת מחיצות דומיא דדיר וסהר והא מברכתא צריך לומר דמוקפת מחיצות הויא ואע\"ג דגבי נותן עירובו באילן <span class=\"parenthesized\">(לעיל עירובין דף לב:)</span> פריך חוץ לעיבורה של עיר נמי כיון דאמר רבא הנותן עירובו יש לו ד' אמות וכו' משמע דתוך עיבורה של עיר נמי הוי טעמא לפי שנעשית לו כל העיר ועיבורה כארבע אמות אף על פי שאין שם מחיצה ה\"מ לשובת שם או נותן שם עירובו שיש לו אלפים אמה לכל רוח ונחשב הכל כד' אמות אפילו חוץ למחיצות כיון שהוא בעיבורה של עיר אבל בבא מחוץ לתחום אינו נחשב כד' אמות בלא היקף מחיצות ואומר ר\"י דבעי נמי דתהוי מוקפת לדירה דלא עדיף משבת באויר מחיצות שיש לו אלפים אמה לכל רוח אפילו הכי לא חשיב לגביה כארבע אמות בהיקף יותר מבית סאתים שלא הוקף לדירה כדאמר בשבת בתל ונקע וצריך ליזהר בדבר הבא מחוץ לתחום בשביל ישראל זה דשרי לישראל אחר או שבא בשביל נכרי שלא יטלטלנו חוץ לד\"א בעיר שאין לה מחיצות שמוקפת לדירה:"
+  },
+  "Tosafot on Eruvin 47b:17:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 47b:17:1",
+      "Rashi on Eruvin 47b:17:2",
+      "Rashi on Eruvin 47b:17:3",
+      "Eruvin 47b:17"
+    ],
+    "generatedAt": "2026-11-03T18:18:31.422Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 47b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חרם</strong> - לשון מצודות וחרמים שבין שני תחומי שבת צריך מחיצה של ברזל שלא יעברו מים מתחום זה לתחום זה דכל מה שבתוך תחום העיר אין לו שביתה במקומו להיות לו אלפים לכל רוח ממקומו אלא בתר קרתא גרירא <span class=\"rashi-quotation\">כך פי' הקונט'</span> וכן פר\"ת אלא דפי' חרם לשון והחרים ה' לשון ים <span class=\"parenthesized\">(ישעיהו י״א:ט״ו)</span> כשמעלה הים שרטון ומתייבש נשארים נקעים מלאים מים וחרם הוא נקע מלא מים וכן פר\"ח חרם לשון חריץ וא\"ת אמאי מוקי לה כרבי יוחנן בן נורי הא לרבנן נמי אמר לעיל <span class=\"parenthesized\">(עירובין מה:)</span> גבי גשמים הסמוכים לעיר דהוו כרגלי אנשי העיר וי\"ל דהכא דמימשכי מתחום זה לתחום זה בטלה דעתם והוי כחפצי הפקר דאין קונין שביתה לרבנן והוו כרגלי הזוכה אבל לר' יוחנן דקנו שביתה כשהן בתוך תחום העיר קונין שביתת העיר אף ע\"פ שאין דעת אדם עליהם קונה אבל אין לפרש דלר' יוחנן קונין שביתה במקומן ומה שצריך מחיצה של ברזל היינו כדי להכניסם לעיר לפי שמקצת המים רחוקים מן העיר יותר מאלפים אמה דאם כן אמאי נקט בין שני תחומין אפילו אי ליכא עיר שניה לא מצו להכניס מים לעיר שחוץ לתחום ועוד אפילו מחיצה של ברזל לא תועיל להכניסם לעיר מסוף אלפים אמה שהרי בתחלת העיר כלו האלפים של מים:"
+  },
+  "Tosafot on Eruvin 47b:8:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 47b:8:3",
+      "Rashi on Eruvin 47b:8:4"
+    ],
+    "generatedAt": "2026-11-03T17:53:54.371Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 47b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והכלים והאוצרות ששבתו בתוך התחום יש להם אלפים אמה לכל רוח</strong> - פ\"ה ואפילו הן של הפקר משמע דלא מיבעיא אם יש להם בעלים וקשה דאי יש להם בעלים הרי הן כרגלי הבעלים ואפי' אם נעמידם כגון שהבעלים בעיר אחרת דהשתא לא הוי כרגלי הבעלים ומ\"מ בני שביתה הם יותר מן ההפקר ויש להן אלפים אמה לכל רוח מ\"מ אין נראה להעמיד כלל ביש להם בעלים דביש להם בעלים מה לי תוך התחום מה לי חוץ לתחום ונראה דבשל הפקר איירי והא דנקט תוך התחום לאשמעינן דאפ\"ה לא קני שביתת העיר וא\"ת ומאי שנא דהכא יש להן אלפים אמה לכל רוח דמשמע ממקומן מדלא קתני כרגלי אנשי העיר וגבי גשמים שסמוכים לעיר הוי כרגלי אנשי העיר כדאמרינן לעיל <span class=\"parenthesized\">(עירובין דף מה:)</span> וי\"ל דהתם אנשי העיר דעתם עליהם דגשמים ידועים לכל בני העיר אבל אוצרות דהפקר אם היו ידועים כבר היו זוכין בהן ועוד שמא יש לחלק משום דהתם בסמוכין וקרובין דעתן עליהן והכא ברחוקים אלא שהן בתוך התחום ומיהו נראה דאלפים אמה לאו ממקומן קאמר אלא מן העיר כמו בגשמים דלעיל דהא מוכח גבי חרס שבין שתי תחומי שבת דלרבי יוחנן חפצי הפקר שבתוך התחום קונין שביתת העיר אפילו אין דעת אנשי העיר עליהם כמו שאפרש בסמוך וברייתא דהכא כר' יוחנן בן נורי וליכא למיפרך האי כרגלי אנשי העיר מבעי' ליה כדפריך לעיל כיון דהזכיר הכא תוך התחום משמע שפיר דאלפים אמה לכל רוח מן העיר קאמר ואף על גב דכייל להו בהדי שואל כלי מן הנכרי ונכרי אם עומד חוץ לעיר מונין לו אלפים ממקומו סתמא דמלתא נכרי בעיר עומד:"
+  }
+}

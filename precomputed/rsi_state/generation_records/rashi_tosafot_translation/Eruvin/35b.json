@@ -1,0 +1,321 @@
+{
+  "Rashi on Eruvin 35b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T02:01:17.831Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נגע באחד</strong> - באדם אחד:"
+  },
+  "Rashi on Eruvin 35b:11:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 35b:11:2",
+      "Rashi on Eruvin 35b:11:1",
+      "Rashi on Eruvin 35a:12:1",
+      "Rashi on Eruvin 35b:4:1",
+      "Rashi on Eruvin 35b:4:2"
+    ],
+    "generatedAt": "2026-11-03T02:02:37.935Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר\"מ מטהר</strong> - דאמר אוקמיה אחזקיה ואתמול חי היה אלמא בספיקא דאורייתא ואיכא חזקה לקולא אזיל ר\"מ בתר חזקה ומתני' נמי ניזיל בתר חזקה ומעיקרא כי אנח התם טהור הואי:"
+  },
+  "Rashi on Eruvin 35b:12:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 35b:12:2"
+    ],
+    "generatedAt": "2026-11-03T02:07:27.730Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל בין השמשות</strong> - מתחילתו ועד סופו דודאי איטמי מבעוד יום דתחילת בין השמשות מערב שבת הוא:"
+  },
+  "Rashi on Eruvin 35b:12:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T02:10:26.212Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בהא לימא כו'</strong> - הא ודאי מבעוד יום איטמי ומתני' קתני מבעוד יום אין עירובו עירוב דברי הכל:"
+  },
+  "Rashi on Eruvin 35b:13:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 35b:11:1",
+      "Rashi on Eruvin 35b:12:1",
+      "Eruvin 35b:13",
+      "Rashi on Eruvin 35b:12:2"
+    ],
+    "generatedAt": "2026-11-03T02:19:03.741Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחת אומרת מבעוד יום כו'</strong> - ובהא פליגי ר' יוסי סבר אוקי תרי לבהדי תרי ואוקי תרומה אחזקה קמייתא וכי אנחה טהורה הואי רבי מאיר סבר כיון דאיכא כת דמפקא ליה מחזקיה בספיקא דאורייתא לא אזלינן בתר חזקה אבל בנוגע באחד בלילה דאין כת מוציאתו מחזקתו מוקמינן ליה כל הלילה בחזקתו ובתר שעת מציאתו לא אזלינן דאיכא למימר השתא הוא דמיית:"
+  },
+  "Rashi on Eruvin 35b:1:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 35b:1:2",
+      "Rashi on Eruvin 35a:14:1",
+      "Rashi on Eruvin 34b:9:1",
+      "Rashi on Eruvin 34b:10:1",
+      "Rashi on Eruvin 34b:11:1"
+    ],
+    "generatedAt": "2026-11-03T01:39:38.569Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להודיעך כחו דר' יוסי</strong> - דאע\"ג דאינו בעולם לא מיתסר:"
+  },
+  "Rashi on Eruvin 35b:1:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 35b:1:1",
+      "Rashi on Eruvin 35a:12:1"
+    ],
+    "generatedAt": "2026-11-03T01:40:36.603Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להודיעך כחו דר\"מ</strong> - דאע\"ג דישנה בעולם וי\"ל העמידנה בבין השמשות על חזקתה וקודם לכן טהורה היתה אפ\"ה לא אמרינן חזקה לקולא:"
+  },
+  "Rashi on Eruvin 35b:3:1": {
+    "dependsOn": [
+      "Eruvin 35b:3"
+    ],
+    "generatedAt": "2026-11-03T01:41:06.843Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בטומאה חמורה</strong> - שניטמא בטומאה המטמאתו מן התורה כגון באב הטומאה:"
+  },
+  "Rashi on Eruvin 35b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:41:56.354Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל טומאה קלה</strong> - דרבנן היא ואיזו טומאת דברי סופרים לטמאות אדם כגון אכל חצי פרס אוכלין טמאין והבא ראשו ורובו כו' מי\"ח דבר הן ביציאות השבת:"
+  },
+  "Rashi on Eruvin 35b:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:42:56.627Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואפילו טבל</strong> - י\"ל בו ספק כגון ספק טבל בארבעים סאה שהיה מקוה לפנינו ונמצא חסר ואין אנו יודעים אם בשעת טבילה היה שלם ואח\"כ חיסר או לא:"
+  },
+  "Rashi on Eruvin 35b:4:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:44:00.937Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן שני מקואות</strong> - שאנו בקיאים בא' מהן שלא היו בו מ' סאה מעולם:"
+  },
+  "Rashi on Eruvin 35b:4:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 35b:4:1",
+      "Rashi on Eruvin 35b:4:2",
+      "Rashi on Eruvin 35b:4:3",
+      "Eruvin 35b:4"
+    ],
+    "generatedAt": "2026-11-03T01:44:56.629Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35b:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ספיקו טהור</strong> - וסתם משנה ר\"מ:"
+  },
+  "Rashi on Eruvin 35b:5:1": {
+    "dependsOn": [
+      "Eruvin 35b:5",
+      "Eruvin 35b:10",
+      "Eruvin 35b:13"
+    ],
+    "generatedAt": "2026-11-03T01:55:38.137Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור' יוסי מטמא</strong> - ולקמן מקשינן דרבי יוסי אדר' יוסי:"
+  },
+  "Rashi on Eruvin 35b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:55:59.229Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תחומין דאורייתא</strong> - וספיקא דאורייתא לחומרא:"
+  },
+  "Rashi on Eruvin 35b:7:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 35b:7:2",
+      "Eruvin 57b:15"
+    ],
+    "generatedAt": "2026-11-03T01:57:34.489Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם אינו יכול להבליעו</strong> - בפרק כיצד מעברין <span class=\"parenthesized\">(עירובין נז:)</span> היא היה מודד ורוצה לסיים תחומי העיר ולעשות שם סימן ותנן אין מודדין אלא בחבל של נ' אמה והגיע לגיא או לגדר משופע ויכול להבליעו בחבל של נ' אמה מבליעו ואף על פי ששפועו מרבה את הדרך ואם היה מודד שיפועו מכאן ועלייתו לעבר השני יש בו ק' או ר' אמות לא איכפת לן הואיל ומשפתו אל שפתו אין יותר מנ' אמה ואם אינו יכול להבליעו בחבל של חמשים אמה:"
+  },
+  "Rashi on Eruvin 35b:7:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 35b:7:1",
+      "Rashi on Eruvin 58a:2:2"
+    ],
+    "generatedAt": "2026-11-03T01:59:15.404Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בזו אמר רבי דוסתאי בר רבי ינאי משום ר\"מ שמעתי שמקדרין בהרים</strong> - לא מבליעו בחבל ארוך יותר מנ' דהתנן אין מודדין אלא בחבל של נ' אמה ולא מודד כל מדרונו כמות שהוא בחבל של חמישים בקרקע חלקה דאיכא חומרא טפי אלא מודדו בחבלים קטנים של ארבע אמות ואוחזין בו ב' בני אדם בב' ראשי החבל התחתון נותן ראש החבל כנגד לבו והעליון כנגד מרגלותיו ומשתכרין בכל ארבע אמות כשיעור חצי קומת אדם ולשון מקדרין כמו נוקבין דמשוה מדת ההר כאילו הוא נקוב במקום מעמד רגלי העליון ונמצא לבו במקום שרגליו עומדות עכשיו וכשנותן החבל עכשיו כנגד מרגלותיו ה\"ל כאילו נותן אותו כנגד לבו בקרקע חלקה כדרך כל המודדין:"
+  },
+  "Rashi on Eruvin 35b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:59:49.394Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מקדרין בעגלה ערופה</strong> - כשבא למדוד הערים שסביבות החלל לידע איזו היא קרובה מכולן מודד את ההרים ואת הגאיות כמות שהן ואף על פי שהמדרון מרבה את המדה ומרחיק את העיר:"
+  },
+  "Rashi on Eruvin 35b:8:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 35b:8:1"
+    ],
+    "generatedAt": "2026-11-03T02:00:23.479Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן בתחום ערי מקלט</strong> - דקי\"ל כשם שהעיר קולטת כך תחומה קולט:"
+  },
+  "Rashi on Eruvin 35b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T02:00:55.047Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמעתי</strong> - ר' מאיר קאמר ליה ושמעתי איכא למימר שמעתי מרבותי ולדידיה לא ס\"ל:"
+  },
+  "Tosafot on Eruvin 35b:11:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 35b:4:1",
+      "Tosafot on Eruvin 35b:4:2",
+      "Tosafot on Niddah 2a:2:1"
+    ],
+    "generatedAt": "2026-11-03T02:06:46.647Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 35b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל הטמאות כשעת מציאתן</strong> - תימה דבריש נדה <span class=\"parenthesized\">(ב.)</span> תנן ב\"ש אומר כל הנשים דיין שעתן ואפילו הלל וחכמים דמטמאין מעת לעת או מפקידה לפקידה היינו דווקא לתרומה וקדשים או לקדש דווקא לחד לישנא אבל לחולין טהור לכ\"ע ואמאי לא אמרינן דכל הטמאות כשעת מציאתן כי הכא ולא הוה לן לאוקמה אשה על חזקתה ועוד דהתם מטהרינן לה אפילו ברשות היחיד כדמוכח התם בשמעתא קמייתא והכא מטמאין אפילו ברה\"ר כדמוכח בתוספתא שהבאתי וכ\"ת דהכא לא מוקמינן אחזקיה משום דלא נבדק מבעוד יום אם היה חי כדקתני סיפא ומודים חכמים לר\"מ בראוהו חי מבערב וכו' דאשה נמי כיון דשכיחי בה דמים כאינה בדוקה דמיא כדאמרינן בנדה <span class=\"parenthesized\">(דף ד.)</span> ואור\"י דכל הטמאות כשעת מציאתן לא הוי אלא לתרומה וקדשים כמו מעת לעת שבנדה ולפי זה צריך ליישב סוגיא דנדה ושם פי' ושמאי נמי אית ליה דכל הטמאות כשעת מציאתן והא דמטהר מעת לעת אפילו לקדשים היינו משום דחשיב אשה כבדוקה אי נמי משום בטול פריה ורביה כדאמר התם <span class=\"parenthesized\">(דף ג:)</span> וא\"ת ולר\"מ דמטהר ברה\"ר מאי שנא דבמעת לעת דמטמא אפילו ברה\"ר כדאמר בירושלמי וי\"ל באשה דאיכא ריעותא מגופה החמירו טפי:"
+  },
+  "Tosafot on Eruvin 35b:12:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 35b:12:1",
+      "Tosafot on Eruvin 35b:4:1",
+      "Tosafot on Eruvin 35b:4:2",
+      "Tosafot on Eruvin 35b:11:1",
+      "Tosafot on Eruvin 35b:12:2",
+      "Tosafot on Eruvin 35b:13:1",
+      "Rashi on Eruvin 35b:12:1",
+      "Rashi on Eruvin 35b:12:2",
+      "Rashi on Eruvin 36a:5:1"
+    ],
+    "generatedAt": "2026-11-03T02:16:58.861Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 35b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ר' ירמיה משנתנו כשהיה עליה כו'</strong> - וא\"ת ומאי קושיא דר\"מ אדר' מאיר דבמתני' הא דלא אוקמיה תרומה אחזקה לאו משום דהשתא היא טמאה אלא משום דאיכא חזקה אחרת כנגדה דמוקמינן לגברא בחזקת שלא עירב ולקמן נמי דקאמר היינו טעמא דרבי יוסי העמד טמא על חזקתו ואימא לא טבל במתני' נמי נימא העמד אדם על חזקת תחום ביתו ואימא לא עירב ואי הוה אמרינן דחזקה שלא עירב לא חשיב ליה הש\"ס חזקה אתי שפיר ומיהו רש\"י פי' לקמן העמד טמא על חזקתו חזקה לחומרא איכא ולקולא ליכא אבל במתני' איכא חזקה לקולא דהעמד תרומה על חזקתה ואיכא נמי חזקה לחומרא דהעמד אדם על חזקת תחום ביתו ואימא לא עירב ובדרבנן אזלינן לקולא והכי נמי י\"ל דניחא ליה לשנויי אפי' סבר ר\"מ עירובי תחומין דרבנן דהשתא לא מצי לשנויי הכי משום דמתני' איכא חזקה לחומרא דכיון דאיכא נמי חזקה לקולא הוי מצי למימר דהוי עירוב דספיקא דרבנן לקולא משום הכי מוקי מתני' בשני כיתי עדים דלא שייך למימר הכי כיון דאיכא כת דמפקי ליה מחזקתה ורבה ורב יוסף אתו לפרושי דברי רבי ירמיה:"
+  },
+  "Tosafot on Eruvin 35b:12:2": {
+    "dependsOn": [
+      "Tosafot on Eruvin 35b:12:2",
+      "Eruvin 35b:12",
+      "Tosafot on Eruvin 35b:12:1"
+    ],
+    "generatedAt": "2026-11-03T02:17:56.073Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 35b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בהא לימא רבי יוסי ספק עירוב כשר</strong> - הוה מצי למיפרך בהא לימא רבי מאיר ורבי יהודה הרי זה חמר גמל אלא דעדיפא טפי פריך:"
+  },
+  "Tosafot on Eruvin 35b:13:1": {
+    "dependsOn": [
+      "Eruvin 35b:13"
+    ],
+    "generatedAt": "2026-11-03T02:23:00.587Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 35b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא בשתי כיתי עדים</strong> - דר' מאיר לית ליה אוקי תרי בהדי תרי כו' אע\"ג דבפרק שני דכתובות <span class=\"parenthesized\">(דף כ.)</span> אמרינן אוקי תרי בהדי תרי אפילו בדאורייתא הכא שאני דהשתא ודאי טמאה היא:"
+  },
+  "Tosafot on Eruvin 35b:4:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 35b:11:1"
+    ],
+    "generatedAt": "2026-11-03T01:51:46.813Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 35b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ספק לא טבל ואפילו טבל כו'</strong> - הך ספק ספיקא נקט משום רבותא דסיפא דאפ\"ה בטומאה קלה טהור וריצב\"א מפרש דאו או קתני ואפילו טבל היינו או שטבל מדפריך בתר הכי אדרבה ואימא העמד מקוה על חזקתו ואימא לא חסר והא לא שייך למיפרך אספק טבל או לא טבל אלא או או קתני ופריך אספק טבל בארבעים סאה ספק לא טבל:"
+  },
+  "Tosafot on Eruvin 35b:4:2": {
+    "dependsOn": [
+      "Tosafot on Eruvin 35b:4:1",
+      "Tosefta Tahorot 6:6",
+      "Tosefta Tahorot 5:5",
+      "Mishnah Tahorot 4:11",
+      "Mishnah Mikvaot 2:2"
+    ],
+    "generatedAt": "2026-11-03T01:54:28.685Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 35b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\"><span class=\"parenthesized\">(ספיקו טהור)</span></strong> - ר\"מ ברה\"ר איירי כדתני' בתוספתא [טהרות פ\"ו] ר\"מ מטהר שספק טומאה ברה\"ר טהור:"
+  }
+}

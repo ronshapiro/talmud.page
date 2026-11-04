@@ -1,0 +1,37 @@
+{
+  "Rashi on Eruvin 62a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-04T09:01:18.520Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שנא חד</strong> - ישראל יחידי דר עמו:"
+  },
+  "Rashi on Eruvin 62a:2:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 62a:2:1"
+    ],
+    "generatedAt": "2026-11-04T09:02:15.272Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמה דירה</strong> - ויש לו רשות בחצר ונמצא ישראל המוציא לחצר מביתו שהוא מיוחד לו מוציא מרשות לרשות ורבנן גזרו שלא להוציא מרשות לרשות בלא עירוב דלמא אתי לאפוקי מרה\"י לרה\"ר:"
+  },
+  "Rashi on Eruvin 62a:3:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 62a:6:1",
+      "Rashi on Eruvin 62a:6:2"
+    ],
+    "generatedAt": "2026-11-04T09:05:15.640Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי הוא כדיר של בהמה</strong> - ואין לו כח לאסור ור\"מ קאמר לה לקמן בברייתא בשמעתין ורמינן מתני' עלה ומוקמינן בדליתיה וישראל אפי' כי ליתיה אוסר אלמא דירת עכו\"ם לאו שמה דירה:"
+  }
+}
