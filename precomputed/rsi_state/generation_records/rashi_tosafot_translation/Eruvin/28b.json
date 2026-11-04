@@ -1,0 +1,188 @@
+{
+  "Rashi on Eruvin 28b:1:1": {
+    "dependsOn": [
+      "Eruvin 28b:1"
+    ],
+    "generatedAt": "2026-11-02T19:11:03.183Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בדגנונייתא</strong> - בחזיז שגדל בגינה דכולי עלמא אכלי להו:"
+  },
+  "Rashi on Eruvin 28b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T19:14:23.907Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשות</strong> - גדל בהיזמי ואין לו שורש בקרקע אלא מהיזמי צמח:"
+  },
+  "Rashi on Eruvin 28b:5:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 28b:5:1",
+      "Rashi on Eruvin 28b:5:2",
+      "Rashi on Eruvin 28b:5:3"
+    ],
+    "generatedAt": "2026-11-02T19:15:03.579Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשות גמר פרי</strong> - ונקרא פרי:"
+  },
+  "Rashi on Eruvin 28b:5:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 28b:5:1",
+      "Rashi on Eruvin 28b:5:2"
+    ],
+    "generatedAt": "2026-11-02T19:15:30.915Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דקטלי להיזמתא</strong> - שקוצצין ההיזמי ומייתי כשותא אלמא אי לא ינקא מארעא לא רביא:"
+  },
+  "Rashi on Eruvin 28b:6:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 28b:6:1",
+      "Rashi on Eruvin 28b:6:2",
+      "Rashi on Eruvin 28b:6:3"
+    ],
+    "generatedAt": "2026-11-02T19:17:54.123Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קור</strong> - דבר רך הנוסף על הדקל בכל שנה וקודם שיגיעו ימות הגשמים ויתקשה ויעשה עץ קרי ליה קור וטוב למאכל הוא:"
+  },
+  "Rashi on Eruvin 28b:6:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 28b:6:1",
+      "Rashi on Eruvin 28b:6:3"
+    ],
+    "generatedAt": "2026-11-02T19:18:34.258Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ניקח בכסף מעשר</strong> - דפרי מפרי וגדולי קרקע הוא:"
+  },
+  "Rashi on Eruvin 28b:6:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 28b:6:1",
+      "Rashi on Eruvin 28b:6:2",
+      "Rashi on Eruvin 28b:6:3"
+    ],
+    "generatedAt": "2026-11-02T19:19:22.537Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואינו מטמא טומאת אוכלין</strong> - ואפילו חישב. עליו להאכילו דלאו אוכל הוא:"
+  },
+  "Rashi on Eruvin 28b:7:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 28b:7:2",
+      "Rashi on Eruvin 28b:7:1",
+      "Eruvin 28b:7",
+      "Rashi on Eruvin 28b:5:1",
+      "Rashi on Eruvin 28b:5:2",
+      "Rashi on Eruvin 28a:1:1"
+    ],
+    "generatedAt": "2026-11-02T19:24:37.062Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קור הרי הוא כעץ כו'</strong> - לקמן פריך היינו ת\"ק: אלא שפטורות מן המעשר דלא נגמרה מלאכתן ולתנא קמא חייבות דלכל מילי פירות נינהו ומדקתני מטמאות טומאת אוכלים אלמא אוכל נינהו:"
+  },
+  "Rashi on Eruvin 28b:7:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 28b:7:1",
+      "Eruvin 28b:7",
+      "Rashi on Eruvin 28b:6:1",
+      "Rashi on Eruvin 28b:6:2",
+      "Rashi on Eruvin 28b:6:3"
+    ],
+    "generatedAt": "2026-11-02T19:25:42.731Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא שפטורות מן המעשר</strong> - דלא נגמרה מלאכתן ולתנא קמא חייבות דלכל מילי פירות נינהו ומדקתני מטמאות טומאת אוכלים אלמא אוכל נינהו:"
+  },
+  "Rashi on Eruvin 28b:8:1": {
+    "dependsOn": [
+      "Eruvin 28b:8",
+      "Rashi on Eruvin 28b:8:1",
+      "Rashi on Eruvin 28b:8:2",
+      "Rashi on Eruvin 28b:6:1",
+      "Rashi on Eruvin 28b:6:2",
+      "Rashi on Eruvin 28b:6:3",
+      "Rashi on Eruvin 28b:7:1",
+      "Rashi on Eruvin 28b:7:2"
+    ],
+    "generatedAt": "2026-11-02T19:27:03.838Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם</strong> - דקתני מטמאות:"
+  },
+  "Tosafot on Eruvin 28b:2:1": {
+    "dependsOn": [
+      "Tosafot on Niddah 50a:8:1",
+      "Eruvin 28b:2"
+    ],
+    "generatedAt": "2026-11-02T19:13:52.228Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 28b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ראשונים שלא היה להן פלפלין</strong> - הקשה ה\"ר שמעון א\"כ מהאי טעמא נמי פלפלין חייבין במעשר ואם כן מטמאין טומאת אוכלין דהא בהא תליא כדאמר בפ' בא סימן <span class=\"parenthesized\">(נדה דף נ:)</span> והתם בגמרא מייתי נמנו וגמרו שאין פלפלין מטמאין טומאת אוכלין וי\"ל דהא דגרגיר חייב במעשר לאו משום דמטבילין בו אלא משום כששוחקין אותו חזי למיכל בעיניה אבל אין רגילות לשוחקו כדי לאוכלו בעיניה אלא כדי לטבל בו אבל פלפלין גם כי נשחקו לא חזו בעינייהו ופטורין מן המעשר:"
+  },
+  "Tosafot on Eruvin 28b:5:1": {
+    "dependsOn": [
+      "Eruvin 28b:5",
+      "Eruvin 28a:11",
+      "Eruvin 28a:12",
+      "Eruvin 28b:1"
+    ],
+    "generatedAt": "2026-11-02T19:16:57.678Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 28b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והאי לאו גמר פירא הוא</strong> - והא דאמר רב יהודה אמר רב כשות וחזיז מברכין עליהן בפה\"א הא אוקימנא בדגנונייתא:"
+  },
+  "Tosafot on Eruvin 28b:6:1": {
+    "dependsOn": [
+      "Niddah 51b:3",
+      "Niddah 51b:4",
+      "Niddah 51b:5",
+      "Niddah 51b:6",
+      "Niddah 51b:7"
+    ],
+    "generatedAt": "2026-11-02T19:21:37.746Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 28b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קור ניקח בכסף מעשר ואין מטמא טומאת אוכלים</strong> - תימא דבפ' בא סימן <span class=\"parenthesized\">(נדה דף נא:)</span> פריך גבי קושט וחימום וראשי בשמים אי נקחין בכסף מעשר ליטמאו טומאת אוכלין ומסיק דנמנו וגמרו שאין נקחין בכסף מעשר ואין מטמאין טומאת אוכלין והכא קתני דקור ניקח בכסף מעשר ואין מטמא טומאת אוכלין וי\"ל ודאי התם אי חזי לאכילה הוי אוכל ושפיר קרינן ביה מכל האוכל אשר יאכל אבל הכא קור לא מיקרי אוכל כיון דסופו להקשות ולא נטעי דיקלא אדעתא דקורא ומכל מקום ניקח בכסף מעשר דהשתא הוא רך והוי פרי מפרי אע\"ג דלא הוי אוכל:"
+  }
+}

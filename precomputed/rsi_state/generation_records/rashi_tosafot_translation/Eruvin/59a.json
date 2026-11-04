@@ -1,0 +1,334 @@
+{
+  "Rashi on Eruvin 59a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-04T06:10:10.209Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 59a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורה\"ר עוברת בתוכה</strong> - של ט\"ז אמה רוחב:"
+  },
+  "Rashi on Eruvin 59a:10:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 59a:10:1",
+      "Rashi on Eruvin 59a:10:2",
+      "Rashi on Eruvin 59a:10:3",
+      "Rashi on Eruvin 59a:10:4",
+      "Eruvin 59a:6",
+      "Eruvin 59a:7",
+      "Eruvin 59a:8",
+      "Eruvin 59a:9"
+    ],
+    "generatedAt": "2026-11-04T06:11:12.303Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 59a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לחי מכאן ולחי מכאן</strong> - לראשי רה\"ר ובעיירות שאין להם חומה עסקינן שראשי רה\"ר מפולשין ובשל רבים והרי היא של רבים לא שרו רבנן להא תקנתא דכל מבואותיה המפולשין הוו כרה\"ר ובעו תקנתא מדרבנן דמיחלפי ברה\"ר אבל בעיר של יחיד מוכחא מילתיה:"
+  },
+  "Rashi on Eruvin 59a:10:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-04T06:11:40.687Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 59a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין מערבין אותה לחצאין</strong> - דכיון דמעיקרא חדא היא אסרי הני אהני והויא כמבוי ששכח אחד מן החצירות ולא נשתתפה בו דאסרה אכולהו:"
+  },
+  "Rashi on Eruvin 59a:10:4": {
+    "dependsOn": [
+      "Eruvin 59a:10",
+      "Eruvin 59b:8",
+      "Rashi on Eruvin 59b:8:1"
+    ],
+    "generatedAt": "2026-11-04T06:12:47.978Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 59a:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או מבוי מבוי</strong> - ולקמן פריך השתא נמי ליסרו אהדדי:"
+  },
+  "Rashi on Eruvin 59a:1:1": {
+    "dependsOn": [
+      "Eruvin 59a:1"
+    ],
+    "generatedAt": "2026-11-04T05:42:47.671Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 59a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למקום שמיעט לא</strong> - בתמיה והלא יש בכלל מאתים מנה:"
+  },
+  "Rashi on Eruvin 59a:2:1": {
+    "dependsOn": [
+      "Eruvin 59a:2",
+      "Eruvin 58b:13",
+      "Rashi on Eruvin 59a:2:2"
+    ],
+    "generatedAt": "2026-11-04T05:48:06.764Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 59a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היינו הך</strong> - דהיינו אחד היינו למקום א':"
+  },
+  "Rashi on Eruvin 59a:2:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 59a:2:1",
+      "Eruvin 59a:2"
+    ],
+    "generatedAt": "2026-11-04T05:49:10.394Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 59a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ק ריבה א' ומיעט א'</strong> - שמדדום שני בני אדם זה מיעט וזה ריבה:"
+  },
+  "Rashi on Eruvin 59a:3:1": {
+    "dependsOn": [
+      "Eruvin 59a:3"
+    ],
+    "generatedAt": "2026-11-04T05:50:02.142Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 59a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא ירבה יותר ממדת העיר באלכסונא</strong> - דאפי' ריבה שיעור גדול דליכא למיתלי במתיחת החבל תלינן ביה בטעות האלכסון דאמרינן זה היה בקי במדידה והניח טבלא של תחומין כנגד הקרן באלכסון כדאמרן <span class=\"parenthesized\">(דף נו:)</span> וזה מדד אלפים מאמצע הקרן והפסיד את הזויות כל אלכסון של אלפים אבל אם ריבה יותר מכך אין לנו במה לתלות ולבי מגמגם בלשון:"
+  },
+  "Rashi on Eruvin 59a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-04T05:50:26.563Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 59a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא להקל על דברי תורה</strong> - כל מה שגזרו חכמים בתחומין להחמיר על דברי תורה באו דמדאורייתא לא מתסרי מידי ואינהו גזור הלכך אזלינן בהו לקולא דהא תחומין עצמן מדרבנן:"
+  },
+  "Rashi on Eruvin 59a:6:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 59a:6:1",
+      "Rashi on Eruvin 59a:6:2"
+    ],
+    "generatedAt": "2026-11-04T05:53:03.513Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 59a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עיר של יחיד</strong> - שלא היו נכנסין בה תמיד ס' רבוא של בני אדם ולא חשיבא רה\"ר דלא דמיא לדגלי מדבר:"
+  },
+  "Rashi on Eruvin 59a:6:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 59a:6:1",
+      "Rashi on Eruvin 59a:6:3"
+    ],
+    "generatedAt": "2026-11-04T05:54:20.996Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 59a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונעשית של רבים</strong> - שנתוספו בה דיורין או נקבעו בה שווקים:"
+  },
+  "Rashi on Eruvin 59a:6:3": {
+    "dependsOn": [
+      "Eruvin 59a:6",
+      "Rashi on Eruvin 59a:6:1",
+      "Rashi on Eruvin 59a:6:2",
+      "Eruvin 59a:8"
+    ],
+    "generatedAt": "2026-11-04T05:55:40.192Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 59a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מערבין את כולה</strong> - כבתחלה ואין מבואותיה צריכין תיקון שהרי היא כחצר אחת וכגון שאין בה רה\"ר גמורה של ט\"ז אמה ואם יש בה מפרש בגמרא תקנתא לרה\"ר שבתוכה:"
+  },
+  "Rashi on Eruvin 59a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-04T06:00:53.993Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 59a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושל רבים שנעשית של יחיד</strong> - רבותא אשמועי' דאע\"ג דנעשית של יחיד אין מערבין את כולה הואיל ותחלתה של רבים דדילמא הדרא ומתעבדא של רבים ואתו לערובה כולה ואסור לערב עיר של רבים בלא שיור ואע\"ג דאין בה רה\"ר גמורה שלא תשתכח תורת רה\"ר וההוא שיור הוי היכרא דטעמא משום עירוב הוא:"
+  },
+  "Rashi on Eruvin 59a:7:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 59a:7:1",
+      "Rashi on Eruvin 59a:7:3"
+    ],
+    "generatedAt": "2026-11-04T06:01:29.889Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 59a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אא\"כ עשה חוצה לה</strong> - שיור שלא עירבו עם שאר העיר אלא לבדן:"
+  },
+  "Rashi on Eruvin 59a:7:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-04T06:01:49.520Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 59a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כעיר חדשה</strong> - כך שמה:"
+  },
+  "Rashi on Eruvin 59a:9:1": {
+    "dependsOn": [
+      "Eruvin 59a:9",
+      "Rashi on Eruvin 59a:9:1",
+      "Rashi on Eruvin 59a:9:2",
+      "Rashi on Eruvin 59a:9:3",
+      "Rashi on Eruvin 59a:9:4",
+      "Rashi on Eruvin 59a:9:5",
+      "Rashi on Eruvin 59a:9:6",
+      "Steinsaltz on Eruvin 59a:9",
+      "Rashi on Eruvin 59a:7:1",
+      "Rashi on Eruvin 59a:7:2",
+      "Rashi on Eruvin 59a:7:3"
+    ],
+    "generatedAt": "2026-11-04T06:03:56.228Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 59a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מ\"ט</strong> - תלו טעמא בה דלא משכחת עיר של יחיד ונעשית של רבים אחריתי:"
+  },
+  "Rashi on Eruvin 59a:9:2": {
+    "dependsOn": [
+      "Eruvin 59a:9",
+      "Tosafot on Sanhedrin 5a:8:1",
+      "Rashi on Sanhedrin 5a:10:1",
+      "Rashi on Sanhedrin 5a:10:2",
+      "Rashi on Sanhedrin 5a:10:3"
+    ],
+    "generatedAt": "2026-11-04T06:06:11.018Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 59a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום דשכיחי רבים גבי הרמנא</strong> - אצל המושל דהיינו ריש גלותא ליטול רשות לדון ולהתיר בכורות ולסמוך:"
+  },
+  "Rashi on Eruvin 59a:9:3": {
+    "dependsOn": [
+      "Eruvin 59a:9",
+      "Rashi on Eruvin 59a:9:1",
+      "Rashi on Eruvin 59a:9:2",
+      "Rashi on Eruvin 59a:9:3",
+      "Rashi on Eruvin 59a:9:4",
+      "Eruvin 59a:6"
+    ],
+    "generatedAt": "2026-11-04T06:07:11.238Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 59a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדכרי אהדדי</strong> - דלא אתו למישרי של רבים והרי היא של רבים:"
+  },
+  "Rashi on Eruvin 59a:9:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 59a:9:2",
+      "Rashi on Eruvin 59a:9:3",
+      "Rashi on Eruvin 59a:9:5"
+    ],
+    "generatedAt": "2026-11-04T06:07:56.802Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 59a:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בצפרא דשבתא שכיחי אהדדי</strong> - לשמוע דרשה:"
+  },
+  "Rashi on Eruvin 59a:9:5": {
+    "dependsOn": [
+      "Rashi on Eruvin 59a:9:1",
+      "Rashi on Eruvin 59a:9:2",
+      "Rashi on Eruvin 59a:9:3",
+      "Rashi on Eruvin 59a:9:4",
+      "Rashi on Eruvin 59a:9:6",
+      "Rashi on Eruvin 58b:1:1",
+      "Rashi on Eruvin 58b:1:2"
+    ],
+    "generatedAt": "2026-11-04T06:09:23.106Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 59a:9:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא א\"ר נחמן</strong> - כל עיר של יחיד ונעשית של רבים שריא:"
+  },
+  "Rashi on Eruvin 59a:9:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-04T06:09:43.540Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 59a:9:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כגון דיסקרתא דנתזואי</strong> - כרך של אותו האיש:"
+  },
+  "Tosafot on Eruvin 59a:1:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 59a:1:1",
+      "Rabbeinu Chananel on Eruvin 59a:1",
+      "Eruvin 59a:1",
+      "Eruvin 59a:3",
+      "Rashi on Eruvin 59a:3:1"
+    ],
+    "generatedAt": "2026-11-04T05:47:00.191Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 59a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למקום שריבה אין למקום שמיעט לא</strong> - פ\"ה והלא יש בכלל מאתים מנה ותימה דמאי קשיא דודאי אין שומעין למקום שמיעט אלא הולכין עד מקום המרובה ועוד לישנא דמשני אף למקום שריבה לא אתי שפיר דלמקום שריבה דוקא הוא ולא אף למקום שריבה ונראה לפרש דהולכין למקום שריבה משמע ליה דאף במקום שמיעט מצד שני מאותו רוח מוציאין המדה עד כנגד מקום שריבה ומתמי' נהי דאזלינן ממקום שריבה עד מקום שציין ואומר דשפיר ציין למקום שמיעט נמי אית לן למימר דשפיר ציין ויש לתלות בהבלעה ובקידורין ובמדידה יפה שמודדין בהר המתלקט י' מתוך ה' ולא נתלה בטעות ומשני אף למקום שריבה וכ\"ש דאזלינן נמי אחר מקום שמיעט להחמיר גירס' ר\"ח ובלבד שלא ירבה ממדתו ואלכסון ולא גריס באלכסון אלא גרסינן ואלכסון ומיירי שמדדו שניהן מצד אחד ולא הוי דומיא דרישא והכי פירושו דאם האחרון הרחיק ציון שלו יותר מן הראשון כמדת העיר ואלכסון אין לנו לומר שטעה אלא יש לנו לומר שהראשון קיצר ציון שלו לעיר בקרן מערבית דרומית כי באותה שעה לא היו בעיר אלא ב' וג' בתים בקרן מזרחית צפונית ומדד משם וזה מדד אחר שנתיישבה העיר ולא טעה:"
+  },
+  "Tosafot on Eruvin 59a:5:1": {
+    "dependsOn": [
+      "Eruvin 59a:5"
+    ],
+    "generatedAt": "2026-11-04T05:51:24.727Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 59a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותחומין דרבנן</strong> - משמע אי הוה דאורייתא לא מהימני ואע\"ג דמעשה בכל יום שמאמינין לנשים בשחיטה וניקור ולתרום חלה היינו משום דהוי בידה קודם שנעשית השחיטה הוי בידה לשחוט אבל תחומין לא הוי כלל בידה ולהכי נאמן קטן טפי בבדיקת חמץ מבתחומין שאינו נאמן בקוטנו לומר ע\"כ היינו מהלכין משום דבדיקת חמץ בידו והא דקאמר גבי בדיקת חמץ בנשים ועבדים דהימנוהו רבנן בדרבנן משמע דאי הוי דאורייתא לא הימנום אע\"ג דבידו היינו משום דבדיקת חמץ צריך דקדוק וטורח גדול לפיכך יש לחוש לעצלות הנשים טפי ממקום אחר וכן משמע בירושלמי דאיכא מ\"ד דנשים אינן נאמנות בבדיקת חמץ מפני שהן עצילות ובודקות כל שהוא:"
+  },
+  "Tosafot on Eruvin 59a:6:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 59a:6:1",
+      "Rashi on Eruvin 59a:6:2",
+      "Rashi on Eruvin 59a:6:3",
+      "Eruvin 59a:6",
+      "Tosafot on Eruvin 6b:1:1",
+      "Tosafot on Eruvin 6a:12:1",
+      "Tosafot on Eruvin 6b:2:1",
+      "Tosafot on Eruvin 59a:5:1"
+    ],
+    "generatedAt": "2026-11-04T05:59:28.610Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 59a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עיר של יחיד</strong> - <span class=\"rashi-quotation\">פי' בקונט'</span> שלא נכנסין בו תמיד ס' רבוא ולא חשיב רה\"ר דלא דמי לדגלי מדבר ונעשית של רבים שניתוספו בה דיורין או נקבעו שווקין אז מערבין את כולה כבתחלתה ואין מבואותיה צריכין תיקון שהרי היא כחצר אחת כגון שאין בה רה\"ר גמורה של ט\"ז אמה ואם יש בה מפרש בגמרא תקנתא לרה\"ר שבתוכה ע\"כ לשון <span class=\"rashi-quotation\">הקונטרס</span> והדין עמו דודאי מתני' לא איירי ברה\"ר גמורה מדלא קתני ורה\"ר עוברת בתוכה כדקתני בברייתא בגמרא ואתיא מתני' נמי כרבנן דלית להו תקנתא דר' יהודה לערב רה\"ר ומיהו בגמרא נמי לא איירי ברחב ט\"ז אמה דטפי מי\"ג אמה ושליש לא הוי שרי ר' יהודה בלחי וקורה כדפירשנו בפ\"ק <span class=\"parenthesized\">(דף ו:)</span> אלא י\"ל ורה\"ר עוברת בתוכה שאינו רחב ט\"ז אמה אלא יש רה\"ר רחב ט\"ז אמה מכאן ומכאן ובוקעין דרך העיר מזו לזו והוי רה\"ר אף לתוכה דליכא ט\"ז אמה כמו בין העמודין דפ\"ק דשבת <span class=\"parenthesized\">(דף ז.)</span> כדפירשנו בפ\"ק <span class=\"parenthesized\">(דף ו:)</span>:"
+  }
+}

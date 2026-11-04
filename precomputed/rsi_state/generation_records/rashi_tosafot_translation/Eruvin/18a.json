@@ -179,6 +179,100 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">ובלבד שירבה בפסין</strong> - דכל כמה דמרחיק מבור מגדיל ריוח שבין דיומד לדיומד וצריך להרבות בפסין עד שלא יהא בין פשוט לפשוט ובין פשוט לדיומד יותר מי' אמות לר' מאיר או מי\"ג אמה ושליש לרבי יהודה:"
   },
+  "Rashi on Eruvin 18a:20:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 18a:19:1",
+      "Rashi on Eruvin 18a:20:1",
+      "Rashi on Eruvin 18a:21:1"
+    ],
+    "generatedAt": "2026-11-02T09:06:14.275Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 18a:20:1"
+    ],
+    "sourceText": "ה\"ג היינו דכתיב וייצר בתרין יודין דמשמע ב' צורות:"
+  },
+  "Rashi on Eruvin 18a:21:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 18a:21:2"
+    ],
+    "generatedAt": "2026-11-02T09:06:56.537Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 18a:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אוי לי מיצרי</strong> - שמצערני אם אעשה רצון יוצרי:"
+  },
+  "Rashi on Eruvin 18a:21:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 18a:21:1"
+    ],
+    "generatedAt": "2026-11-02T09:07:31.446Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 18a:21:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אוי לי מיוצרי</strong> - אם אעשה רצון יצרי:"
+  },
+  "Rashi on Eruvin 18a:22:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T09:07:56.172Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 18a:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זכר ונקבה בראם</strong> - משמע מתחילת בריאתו היה זכר ונקבה זכר מצד זה ונקבה מצד זה:"
+  },
+  "Rashi on Eruvin 18a:23:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T09:08:14.442Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 18a:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ברא אותו</strong> - משמע חד:"
+  },
+  "Rashi on Eruvin 18a:26:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T09:08:35.395Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 18a:26:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויבן</strong> - משמע שהיתה מחוסרת בנין:"
+  },
+  "Rashi on Eruvin 18a:26:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 18a:26:1",
+      "Rashi on Eruvin 18a:26:2",
+      "Rashi on Eruvin 18a:16:1"
+    ],
+    "generatedAt": "2026-11-02T09:09:46.451Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 18a:26:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי ויבן</strong> - בנויה ועומדת היתה:"
+  },
+  "Rashi on Eruvin 18a:27:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 18a:27:1"
+    ],
+    "generatedAt": "2026-11-02T09:10:32.209Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 18a:27:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שקילעה</strong> - קליעת שיער:"
+  },
   "Rashi on Eruvin 18a:2:1": {
     "dependsOn": [
       "Rashi on Eruvin 18a:2:1",

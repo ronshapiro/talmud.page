@@ -1,0 +1,385 @@
+{
+  "Rashi on Eruvin 44a:11:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 44a:11:1",
+      "Rashi on Eruvin 44a:11:2",
+      "Rashi on Eruvin 44a:11:3"
+    ],
+    "generatedAt": "2026-11-03T13:12:04.459Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 44a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אימור דשמעת ליה לרבי מאיר</strong> - דפסיל:"
+  },
+  "Rashi on Eruvin 44a:11:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 44a:11:2",
+      "Rashi on Eruvin 44a:11:1",
+      "Rashi on Eruvin 44a:11:3"
+    ],
+    "generatedAt": "2026-11-03T13:12:45.242Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 44a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בהמה</strong> - משום שמא תברח:"
+  },
+  "Rashi on Eruvin 44a:11:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 44a:11:3",
+      "Rashi on Eruvin 44a:11:1",
+      "Rashi on Eruvin 44a:11:2",
+      "Rashi on Eruvin 44a:4:1",
+      "Rashi on Eruvin 44a:4:2",
+      "Rashi on Eruvin 44a:5:1",
+      "Eruvin 44a:11",
+      "Rashi on Eruvin 43b:10:1"
+    ],
+    "generatedAt": "2026-11-03T13:14:39.724Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 44a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אדם</strong> - שיש בו דעת לעמוד או כלים שאין זזין ממקומן מי שמעת ליה והאי תנא אדם וכלים הוא דקתני עושה את חבירו דופן ויזקוף את המטה:"
+  },
+  "Rashi on Eruvin 44a:12:1": {
+    "dependsOn": [
+      "Eruvin 44a:12",
+      "Rashi on Eruvin 44a:12:1",
+      "Rashi on Eruvin 44a:12:2",
+      "Rashi on Eruvin 44a:12:3"
+    ],
+    "generatedAt": "2026-11-03T13:15:29.944Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 44a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותו</strong> - נהי דלא מתקן לה לסוכה:"
+  },
+  "Rashi on Eruvin 44a:12:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 44a:12:1",
+      "Rashi on Eruvin 44a:12:2",
+      "Rashi on Eruvin 44a:12:3",
+      "Rashi on Eruvin 44a:11:1",
+      "Rashi on Eruvin 44a:11:2",
+      "Rashi on Eruvin 44a:11:3",
+      "Rashi on Eruvin 44a:1:1",
+      "Rashi on Eruvin 44a:3:1",
+      "Rashi on Eruvin 44a:4:1",
+      "Rashi on Eruvin 44a:4:2"
+    ],
+    "generatedAt": "2026-11-03T13:18:22.121Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 44a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר' מאיר</strong> - דמוקמת להא דשריא אליביה ומשום דלא הוי תיקון מחיצה ואהל דלאו הכשר מחיצה:"
+  },
+  "Rashi on Eruvin 44a:12:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 44a:12:1",
+      "Rashi on Eruvin 44a:12:2",
+      "Eruvin 44a:12"
+    ],
+    "generatedAt": "2026-11-03T13:19:22.498Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 44a:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אליבא דמאן</strong> - דשרי ר' מאיר לא קאמר כר\"א רביה ולא כרבנן דהא פקק החלון אין בו מצות סוכה ולא שרו רבנן אלא להוסיף:"
+  },
+  "Rashi on Eruvin 44a:14:1": {
+    "dependsOn": [
+      "Eruvin 44a:14",
+      "Rashi on Eruvin 44a:14:1",
+      "Rashi on Eruvin 44a:14:2",
+      "Eruvin 44a:6",
+      "Eruvin 44a:7",
+      "Eruvin 44a:4",
+      "Eruvin 44a:5"
+    ],
+    "generatedAt": "2026-11-03T13:23:00.800Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 44a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא הא והא רבנן</strong> - והא דקתני נפל דופנה לא יעמיד בה כו':"
+  },
+  "Rashi on Eruvin 44a:14:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 44a:14:1"
+    ],
+    "generatedAt": "2026-11-03T13:23:59.261Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 44a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בדופן שלישית</strong> - דבשתי דפנות אין קרוי אהל וכי עביד בה דופן שלישית משוי ליה אהל ומודו רבנן דאין עושין אהל עראי בתחילה והא דתני מותר בדופן רביעית דבלאו הכי הוי אהל והאי תוספת בעלמא הוא ורבנן לטעמייהו דאמרי מוסיפין אהל בשבת:"
+  },
+  "Rashi on Eruvin 44a:15:1": {
+    "dependsOn": [
+      "Eruvin 44a:15",
+      "Rashi on Eruvin 44a:14:1",
+      "Rashi on Eruvin 44a:14:2",
+      "Rashi on Eruvin 43a:1:1",
+      "Rashi on Eruvin 43b:1:1",
+      "Rashi on Eruvin 44a:4:1"
+    ],
+    "generatedAt": "2026-11-03T13:25:56.095Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 44a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דקתני נפל דופנה</strong> - דמשמע דופן שהיא מותרת בה ורביעית לא הויא תיקון סוכה דתנן <span class=\"parenthesized\">(סוכה ד' ב.)</span> ושאין לה שלש דפנות פסולה הא בג' כשירה:"
+  },
+  "Rashi on Eruvin 44a:1:1": {
+    "dependsOn": [
+      "Translation on Rashi on Eruvin 44a:1:1"
+    ],
+    "generatedAt": "2026-11-03T12:42:31.216Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 44a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקמיבעיא ליה הלכה כר\"א</strong> - דאמר במתניתין מי שיצא חוץ לתחום שתי אמות יכנס:"
+  },
+  "Rashi on Eruvin 44a:3:1": {
+    "dependsOn": [
+      "Translation on Rashi on Eruvin 44a:3:1",
+      "Eruvin 44a:3",
+      "Rashi on Eruvin 44a:3:1",
+      "Rashi on Eruvin 44a:3:2"
+    ],
+    "generatedAt": "2026-11-03T12:48:34.981Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 44a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דיקא נמי</strong> - דבדלא מלו גברי הוה:"
+  },
+  "Rashi on Eruvin 44a:3:2": {
+    "dependsOn": [
+      "Translation on Rashi on Eruvin 44a:3:2",
+      "Rashi on Eruvin 44a:3:1",
+      "Eruvin 44a:3",
+      "Chokhmat Shlomo on Eruvin 44a:1",
+      "Rashi on Eruvin 44a:1:1",
+      "Rashi on Eruvin 44a:4:1",
+      "Eruvin 43b:17"
+    ],
+    "generatedAt": "2026-11-03T12:50:50.104Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 44a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאמר ליה</strong> - רב נחמן עשה לו מחיצה של בני אדם ויכנס למה ליה למימר יכנס אלא הכי קאמר יעשה המחיצה השתים ואחר כך יכנס הוא מעצמו בלא מחיצה:"
+  },
+  "Rashi on Eruvin 44a:4:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 44a:4:1"
+    ],
+    "generatedAt": "2026-11-03T12:51:18.867Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 44a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נפל דופנה</strong> - של סוכה:"
+  },
+  "Rashi on Eruvin 44a:4:2": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Eruvin 44a:4:2",
+      "Rashi on Eruvin 44a:4:1"
+    ],
+    "generatedAt": "2026-11-03T12:52:07.246Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 44a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא יזקוף את המטה</strong> - שיש לו בסוכה כנגד הפרצה ואע\"ג דלא מיחזי כבנין דדומה כמתכוין לפנות לו מקום הסוכה אפי' הכי אסור וקשה להנך דשרו לעשות מחיצה של בני אדם בשבת:"
+  },
+  "Rashi on Eruvin 44a:5:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 44a:5:1"
+    ],
+    "generatedAt": "2026-11-03T12:52:35.065Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 44a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדי שיאכל וישתה וישן</strong> - עיקר מצותה של סוכה בג' דברים הללו:"
+  },
+  "Rashi on Eruvin 44a:5:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 44a:5:1",
+      "Rashi on Eruvin 44a:5:2",
+      "Eruvin 44a:5",
+      "Rashi on Eruvin 44a:4:1",
+      "Rashi on Eruvin 44a:4:2",
+      "Rashi on Eruvin 44a:6:1"
+    ],
+    "generatedAt": "2026-11-03T12:53:22.774Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 44a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויזקוף את המטה כו'</strong> - אלמא שרי ופרכינן קשיין אהדדי:"
+  },
+  "Rashi on Eruvin 44a:6:1": {
+    "dependsOn": [
+      "Translation on Rashi on Eruvin 44a:6:1"
+    ],
+    "generatedAt": "2026-11-03T12:57:57.775Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 44a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם לאו אין פוקקין בו</strong> - דדמי לבונה שמוסיף על סתימת הבית ואף על פי שעראי הוא שהרי יחזור ויפתחנו:"
+  },
+  "Rashi on Eruvin 44a:7:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 44a:7:1",
+      "Eruvin 44a:7",
+      "Rashi on Eruvin 44a:4:1",
+      "Rashi on Eruvin 44a:6:1",
+      "Rashi on Eruvin 44a:8:1"
+    ],
+    "generatedAt": "2026-11-03T13:01:23.435Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 44a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא אתמר עלה</strong> - דאפילו רבנן לא שרו אלא להוסיף כגון פקק חלון דתוספת בעלמא הוא וברייתא שרי למיעבד דופן לכתחילה:"
+  },
+  "Rashi on Eruvin 44a:8:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 44a:8:1",
+      "Rashi on Eruvin 44a:6:1",
+      "Rashi on Eruvin 44a:7:1"
+    ],
+    "generatedAt": "2026-11-03T13:04:15.264Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 44a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר' מאיר פוסל</strong> - מפרש במסכת סוכה [דף כא.] שמא תברח:"
+  },
+  "Rashi on Eruvin 44a:9:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 44a:9:1",
+      "Translation on Rashi on Eruvin 44a:9:1",
+      "Eruvin 44a:9",
+      "Rashi on Eruvin 44a:5:1",
+      "Rashi on Eruvin 44a:5:2",
+      "Rashi on Eruvin 44a:9:2",
+      "Eruvin 44a:4",
+      "Eruvin 44a:5"
+    ],
+    "generatedAt": "2026-11-03T13:06:09.390Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 44a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלאו מידי קא עביד</strong> - דכיון דלא מתקן לסוכה אע\"ג דעביד אהל שרי דקסבר עושין אהל עראי והואיל דלא מתקן סוכה. אינו אלא אהל עראי ושרי ואכתי טובא איכא למיפרך עלה דהא כדי שיאכל וישתה וישן קתני אלמא לתקנה לסוכה קאתי הא פרכינן עליה פירכי טובא עד דמפקינן ליה מטעמא:"
+  },
+  "Tosafot on Eruvin 44a:1:1": {
+    "dependsOn": [
+      "Eruvin 44a:1",
+      "Chidushei Halachot on Eruvin 44a:1",
+      "Translation on Tosafot on Eruvin 44a:1:1",
+      "Rashi on Eruvin 44a:1:1",
+      "Tosafot on Eruvin 44b:13:1"
+    ],
+    "generatedAt": "2026-11-03T12:45:01.902Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 44a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או דילמא בדמלו גברי עסקינן</strong> - והשתא אפי' אי אין הלכה כרבי אליעזר יכנס וא\"ת כיון דאמרי רבנן אפי' אמה אחת לא יכנס אע\"פ שד' אמות שלו מובלעות בתוך התחום ראשון ה\"נ כי מלו גברי מחיצות ומגיעות תוך התחום לא יכנס ויש לומר דלא דמי דהכא כשתסלק מחיצה דגברי וכבר יצא ע\"י מחיצה מארבע אמות שנתנו לו חכמים ומעתה היה ליתן לו ארבע אמות אחרות וכיון שהוא בתחום ראשון לא ניתן לו ד' אמות אחרות אלא חוזר לתחומו הראשון אבל בהבלעת ד' אמות שלא הפסיד בכניסתו ד' אמות לא יכנס:"
+  },
+  "Tosafot on Eruvin 44a:2:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 44a:2:1",
+      "Eruvin 44a:1",
+      "Eruvin 44a:6"
+    ],
+    "generatedAt": "2026-11-03T12:47:41.614Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 44a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאי בדמלו מאי תבעי ליה</strong> - ואף על גב דרבי מאיר פוסל לקמן בהמה לדופן סוכה פשיטא ליה דהלכה כרבי יהודה אבל אין לפרש דבאדם אפי' רבי מאיר מודה דלא שייך ביה שמא יברח דלאו היינו טעמא דר' מאיר כדמסיק פרק הישן <span class=\"parenthesized\">(סוכה ד' כג.)</span> והא דפריך לקמן אדם וכלים מי שמעינן ליה היינו למאן דמפרש בסוכה דטעמא דרבי מאיר חיישינן שמא תברח:"
+  },
+  "Tosafot on Eruvin 44a:5:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 43b:1:1",
+      "Tosafot on Eruvin 44a:1:1",
+      "Tosafot on Eruvin 44a:2:1",
+      "Tosafot on Eruvin 44a:6:1",
+      "Shabbat 43b:15",
+      "Shabbat 43b:16",
+      "Shabbat 43b:17",
+      "Tosafot on Eruvin 43b:2:1",
+      "Tosafot on Eruvin 43b:3:1",
+      "Tosafot on Eruvin 43b:8:1"
+    ],
+    "generatedAt": "2026-11-03T12:57:15.891Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 44a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדי שלא תפול חמה על המת</strong> - והא דאמרינן בפרק כירה <span class=\"parenthesized\">(שבת ד' מג:)</span> אין עושין מחיצה למת בשביל מת הא דשרי הכא היינו כדמפרש התם באין בני אדם ויושבין בצדו וכו' ור\"י מפ' דהכא הוי שפיר בשביל חי שאם יסריח המת יצטרכו לצאת מן הסוכה:"
+  },
+  "Tosafot on Eruvin 44a:6:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 44a:1:1",
+      "Tosafot on Eruvin 44a:5:1"
+    ],
+    "generatedAt": "2026-11-03T13:00:05.160Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 44a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פקק החלון</strong> - בפ' כל הכלים <span class=\"parenthesized\">(שבת דף קכה:)</span> פ\"ה דהאי חלון הוי למעלה בגג אבל מן הצד לא שייך איסור אהל והביא ראיה מפ' כל גגות <span class=\"parenthesized\">(לקמן עירובין ד' צד.)</span> גבי רב ושמואל דהוו יתבי בההוא חצר נפל גודא ביני וביני אמר שמואל נגודו ליה גלימא אהדריה רב לאפיה ופריך לשמואל למה לי למעבד הכי והאמר זה מטלטל עד עיקר מחיצה כו' ומשני דשמואל עביד לצניעות בעלמא משמע שאם היה שמואל אוסר לטלטל כרב לא הוה קשה מידי דהיכי שרי למיעבד הכי אלמא לא חשיב אהל בדפנות מן הצד והא דקפיד רב לא אעשיית מחיצות אלא משום דקסבר אסור לטלטל הסדין בתוכה ובפ\"ק דסוכה <span class=\"parenthesized\">(ד' טז:)</span> גבי עובדא דשכחו ולא הביאו ס\"ת מערב שבת למחר פרסו סדינין על גבי עמודין והביאו ס\"ת וקראו בו ופריך פרסו לכתחילה ומי שרי והאמר מר הכל מודים שאין עושין אהל עראי בתחלה בשבת רש\"י ל\"ג אלא פרסו סלקא דעתך פירוש איך הביאו דרך רשות הרבים ומשני אלא שמצאו סדינין פרוסין ואין נראה למחוק הספרים ועוד מאי קשיא ליה איך הביאום דלמא הביאום דרך מלבושים ועוד דבשמעתין מוכח דמן הצד שייך עשיית אהל דאעשיית דופן מייתי ליה ועוד דלשון חלון שייך בכותל ובגג קרי ליה ארובה כדתנן <span class=\"parenthesized\">(ביצה דף לה:)</span> משילין פירות דרך הארובה ונראה לר\"ת דמן הצד שייך עשיית אהל והיכא שהמחיצה מועלת להתיר חשוב עשיית אהל בתחלה כההיא דפירסו סדינין ולרב דאסר לטלטל בכל גגות שייך עשיית אהל לכתחילה ואעשיית מחיצות קפיד והוי כדופן ג' של סוכה דחשבינן ליה הכא אהל אבל לשמואל דשרי לטלטל לא חשיב אלא תוספת אהל כמו דופן רביעית של סוכה דחשיב ליה תוספת משום דבלאו הכי מישתרי ואי הוה אסיר שמואל כל שכן דהוה פריך ליה היכי שרי למיעבד הכי ומאן דשרי תוספת אהל למעלה נמי שרי כדמוכח בהמוצא תפילין <span class=\"parenthesized\">(לקמן עירובין דף קב.)</span> גבי הני דיכרי דביממא בעו טולא ובליליא בעו אוירא ובפ' הישן <span class=\"parenthesized\">(סוכה דף כז:)</span> גבי ר\"א ששבת בסוכתו של ר' יוחנן:"
+  },
+  "Tosafot on Eruvin 44a:9:1": {
+    "dependsOn": [
+      "Eruvin 44a:9",
+      "Rashi on Eruvin 44a:9:1",
+      "Rashi on Eruvin 44a:9:2",
+      "Eruvin 44a:4"
+    ],
+    "generatedAt": "2026-11-03T13:11:21.828Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 44a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי מאיר דקפסיל התם אלמא לאו מחיצה היא</strong> - השתא בעי למימר דאיירי בדופן שלישית אפ\"ה לא חשיב אלא תוספת בעלמא לר\"מ דקפסיל וקשה הא קתני בהדיא התם כדי שישתה ויאכל וישן ו<span class=\"rashi-quotation\">בקונטרס</span> פי' דהוה מצי למפרך אלא בלאו הכי פריך שפיר אך מ\"מ קשה דמאי פריך בסמוך אימר דאמור רבנן להוסיף לכתחילה מי אמור הא אמר דלר\"מ דקפסיל לא חשיב אלא תוספת בעלמא ע\"כ יש לומר דהיינו ודאי דפריך מדקאמר כדי שיאכל וישתה וישן אלמא מיתכשר סוכה בהכי דעיקר מצות סוכה בג' דברים הללו ואם כן הרי עשיית אהל לכתחילה הוא אך קשה להשר מקוצי דהשתא כי משני הא ר\"מ הא ר' יהודה לא תירץ כלום אמעשה דנחמיה ונראה לפרש דה\"פ כיון דפוסל ר\"מ לז' ימי סוכה שאינה יכולה לעמוד שם כל ז' גבי נחמיה שרי לכתחילה אע\"ג דמהני לא חשיב אלא תוספת בעלמא כיון שאותה מחיצה אינה ראויה לז' וכן הא דקתני כדי שיאכל וישתה וישן שרי דליכא למיחש שמא תברח לפי שעה ובתר הכי פריך אימר דאמור רבנן להוסיף לכתחילה מי אמור דכיון דמהני אפי' לשעה חשיב עשיית אהל לכתחלה כמו פקק החלון:"
+  }
+}

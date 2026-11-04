@@ -1,0 +1,333 @@
+{
+  "Rashi on Eruvin 46a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T15:43:47.010Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46a:11:1"
+    ],
+    "sourceText": "רבי אליעזר גרסינן:"
+  },
+  "Rashi on Eruvin 46a:11:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 46a:11:1"
+    ],
+    "generatedAt": "2026-11-03T15:45:01.344Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל אשה שעברו עליה שלש עונות</strong> - דהיינו צ' יום דעונה סתם לפריסת נדה משלשים יום לשלשים יום וכל אשה שעברו עליה תשעים יום ולא ראתה נסתלקו דמיה ואם ראתה אחרי כן אמרינן השתא הוא דראתה דם ולא מטמינן טהרות שנתעסק' בהן למפרע כשאר נשים שדמיהן מצויין שמטמאות טהרות למפרע מעת לעת כדאמר במס' נדה <span class=\"parenthesized\">(דף ג.)</span> דחיישינן שמא כותלי בית הרחם העמידוהו ותנן <span class=\"parenthesized\">(שם מ.)</span> כל הנשים מטמאות בבית החיצון ופליגי רבנן עליה ואמרי דאין הפסקת ג' עונות סילוק אלא לזקנה שעברו עליה ג' עונות סמוך לזקנתה אבל בילדה לא:"
+  },
+  "Rashi on Eruvin 46a:12:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 46a:12:1",
+      "Rashi on Eruvin 46a:12:2",
+      "Rashi on Eruvin 46a:12:3",
+      "Niddah 9b:8",
+      "Niddah 9b:9",
+      "Niddah 9b:10"
+    ],
+    "generatedAt": "2026-11-03T15:46:08.312Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרבי אלעזר</strong> - וטיהר אף בילדה שעברו עליה ג' עונות:"
+  },
+  "Rashi on Eruvin 46a:12:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 46a:12:1",
+      "Rashi on Eruvin 46a:12:2",
+      "Rashi on Eruvin 46a:12:3"
+    ],
+    "generatedAt": "2026-11-03T15:46:39.444Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחר שנזכר</strong> - משמע דנזכר דלאו שפיר עביד:"
+  },
+  "Rashi on Eruvin 46a:12:3": {
+    "dependsOn": [
+      "Eruvin 46a:12"
+    ],
+    "generatedAt": "2026-11-03T15:47:49.817Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46a:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שעת הדחק</strong> - שני בצורת הוו ואיכא הפסד טהרות:"
+  },
+  "Rashi on Eruvin 46a:13:1": {
+    "dependsOn": [
+      "Eruvin 46a:13",
+      "Rashi on Eruvin 46a:12:3",
+      "Maharsha on Eruvin 46a:13:1"
+    ],
+    "generatedAt": "2026-11-03T15:49:09.899Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי כשנזכר</strong> - אילימא נזכר דאיתמר בפלוגתייהו הלכה כרבנן וכשנעשה המעשה לא היה זכור ועכשיו נזכר אמאי לא אהדר עובדא:"
+  },
+  "Rashi on Eruvin 46a:14:1": {
+    "dependsOn": [
+      "Eruvin 46a:14"
+    ],
+    "generatedAt": "2026-11-03T15:49:54.536Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא</strong> - האי דלא אהדר משום דלא איתמר הלכתא לא כמר ולא כמר ומאי נזכר לאחר שנזכר דרבים פליגי עליה דהוה ליה למיעבד כרבים אמר כדי הוא רבי אליעזר לסמוך עליו בשעת הדחק ולא אהדר עובדא הא לאו בשעת הדחק לא אלמא אע\"ג דמעת לעת גזירה דרבנן היא בעי למיעבד כרבים:"
+  },
+  "Rashi on Eruvin 46a:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T15:55:32.440Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נוהגת שבעה</strong> - לרחיצה ולתכבוסת ושלשים לתספורת ולגיהוץ מיום שנשמע לו:"
+  },
+  "Rashi on Eruvin 46a:19:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T15:55:58.930Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וסבר לה</strong> - רבי יוחנן כשמואל:"
+  },
+  "Rashi on Eruvin 46a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T15:23:02.003Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל שכן דהוו להו נולד ואסירי</strong> - אפילו לטלטלן במקומן:"
+  },
+  "Rashi on Eruvin 46a:2:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 46a:2:1",
+      "Eruvin 46a:2"
+    ],
+    "generatedAt": "2026-11-03T15:25:38.322Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי הן כרגלי כל אדם</strong> - כיון דניידי לא קנו שביתה ואפילו הן של יחיד אינן כרגליו:"
+  },
+  "Rashi on Eruvin 46a:3:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 46a:3:2"
+    ],
+    "generatedAt": "2026-11-03T15:26:16.761Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בפירוש שמיע לך</strong> - מרבי יהושע בן לוי:"
+  },
+  "Rashi on Eruvin 46a:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T15:26:48.362Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או מכללא</strong> - דשמיע לך מיניה מילתא אחריתי ודייקת מינה דכר' יוחנן בן נורי סבירא ליה:"
+  },
+  "Rashi on Eruvin 46a:4:1": {
+    "dependsOn": [
+      "Eruvin 46a:4",
+      "Rashi on Eruvin 46a:4:2",
+      "Rashi on Eruvin 46a:3:1",
+      "Rashi on Eruvin 46a:3:2"
+    ],
+    "generatedAt": "2026-11-03T15:28:32.478Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומאי כללא</strong> - מאיזה כלל הוה ס\"ד מעיקרא דשמעת ליה לר' יהושע בן לוי דנימא מילתא דנידוק לה מינה:"
+  },
+  "Rashi on Eruvin 46a:4:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 46a:4:2"
+    ],
+    "generatedAt": "2026-11-03T15:29:04.418Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעירוב</strong> - בכל משפטיו ותחומין מהלכות עירובין הן:"
+  },
+  "Rashi on Eruvin 46a:6:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 45b:1:1",
+      "Rashi on Eruvin 46a:6:2",
+      "Rashi on Eruvin 46a:6:3"
+    ],
+    "generatedAt": "2026-11-03T15:30:30.670Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בין לקולא</strong> - כגון אדם ישן דאי לא קנה שביתה לא נפיק מד' אמות:"
+  },
+  "Rashi on Eruvin 46a:6:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 46a:6:1",
+      "Rashi on Eruvin 46a:6:3"
+    ],
+    "generatedAt": "2026-11-03T15:31:21.482Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לחומרא</strong> - כגון כלי הפקר אי אמרת קונין שביתה אסור להוליכן למקום שעירב זה המוצאן אלא אלפים הוא דאית להו לכל רוח:"
+  },
+  "Rashi on Eruvin 46a:6:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 46a:6:1",
+      "Rashi on Eruvin 46a:6:2"
+    ],
+    "generatedAt": "2026-11-03T15:32:18.938Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קמ\"ל כדברי המיקל</strong> - באדם הוא דהלכתא כוותיה דכיון דניעור קנה ישן נמי קנה אבל בכלים לית הלכתא כוותיה:"
+  },
+  "Rashi on Eruvin 46a:8:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 46a:6:1",
+      "Rashi on Eruvin 46a:6:2",
+      "Rashi on Eruvin 46a:6:3"
+    ],
+    "generatedAt": "2026-11-03T15:38:49.855Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 46a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל יחיד במקום רבים</strong> - כגון ר' יוחנן בן נורי דפליגי רבנן עליה אימא לית הלכתא כוותיה:"
+  },
+  "Tosafot on Eruvin 46a:14:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 46a:14:1",
+      "Niddah 9b:1",
+      "Niddah 9b:2",
+      "Niddah 9b:9",
+      "Niddah 9b:10"
+    ],
+    "generatedAt": "2026-11-03T15:54:17.263Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 46a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לסמוך עליו בשעת הדחק</strong> - <span class=\"rashi-quotation\">פי' הקונטרס</span> דשנת בצורת הוה ואיכא הפסד טהרות ואי אפשר לומר כן דבדחק כה\"ג אפי' רבנן מודים. כדאמר בפ\"ק דנדה <span class=\"parenthesized\">(ד' ט:)</span> אין שעת הדחק ראיה ומפרש התם מאי שעת הדחק שנת בצורת הוה ואיכא דאמרי דטהרות אפיש ועבוד וחשו רבנן להפסד טהרות:"
+  },
+  "Tosafot on Eruvin 46a:19:1": {
+    "dependsOn": [
+      "Eruvin 46a:19",
+      "Chidushei Halachot on Eruvin 46a:2",
+      "Chidushei Halachot on Eruvin 46a:3",
+      "Tosafot on Eruvin 46a:6:1",
+      "Tosafot on Eruvin 46a:6:2"
+    ],
+    "generatedAt": "2026-11-03T16:00:03.335Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 46a:19:1"
+    ],
+    "sourceText": "דאמר שמואל הלכה כדברי המיקל באבל אפילו ביחיד במקום רבים נראה דלעולם הלכה כדברי המיקל באבל וחוץ מזו לאו למעוטי שאר מקומות דאבל קאמר כדקאמר אבילות הוא דאקילו ביה רבנן וכן מוכיח בהדיא פרק בתרא דמו\"ק <span class=\"parenthesized\">(דף יט:)</span> גבי אבא שאול ורבנן גבי קובר את מתו ג' ימים לפני הרגל וגבי בא ממקום קרוב פלוגתא דרשב\"ג ורבנן <span class=\"parenthesized\">(דף כב.)</span> וא\"ת כיון דאפי' יחיד במקום רבים אמר שמואל הלכה כדברי המיקל באבל למה ליה לשמואל למיפסק בפרק בתרא דמו\"ק <span class=\"parenthesized\">(דף כד.)</span> כרשב\"ג דאמר ר\"ה ויום הכפורים כרגלים ויש לומר דקמ\"ל אפי' ביחיד במקום רבים כדאמר לעיל ונראה אפי' ביום ראשון של אבילות דהוי דאורייתא כדאמר בה\"ג דהלכה כדברי המיקל באבל מידי דהוי כהלכה כדברי המיקל בעירוב דמשמע לעיל דאפילו הוי דאורייתא הלכה כדברי המיקל מדקאמר מכדי עירובין דרבנן מה לי יחיד במקום וכו' משמע דאי הוה דאורייתא ניחא דצריכי וכן מוכח בפ' יש בכור <span class=\"parenthesized\">(בכורות דף מט.)</span> גבי פלוגתא דר\"ע ורבנן דאמר רב אשי הכל מודים לענין אבילות דיום ל' כשלפניו דאמר שמואל הלכה כדברי המיקל באבל ואפילו ביום ראשון אינו נוהג אבילות וזה לשון ה\"ג היכא דשכיב שכיבא ביום טוב ראשון או ביום טוב שני או בחולו של מועד או בי\"ט ראשון של יום טוב אחרון אינו נוהג אבילות עד דנפקי יומא טבא כולהו אבל יומא בתרא דרבנן מסלק סליק למנין ז' אבל אבילות לא נהיג ביה כלל אבל שכיב שכיבא בי\"ט שני של י\"ט אחרון כיון דעיקר אבילות יום ראשון נהיג ביה אבילות וסליק למנין ז' דהכי אסמכוה רבנן דעיקר אבילות יום ראשון הוא דכתיב ואכלתי חטאת היום היום אסור ולמחר מותר וכתיב ואחריתה כיום מר וכיון דיום ראשון דאבילות דאורייתא ויום טוב אחרון ספיקא דרבנן אתי עשה ודאי דאורייתא דיחיד וחייל על עשה ספק דרבים דרבנן והא דאמרינן בכתובות <span class=\"parenthesized\">(דף ד'.)</span> מכניסין את המת לחדר ונוהג ז' ימי המשתה ואחר כך נוהג ז' ימי אבילות אלמא דלא דחי יומא קמא דאבילות מועד דרבנן שמא מועד דחתן עדיף טפי:"
+  },
+  "Tosafot on Eruvin 46a:1:1": {
+    "dependsOn": [
+      "Eruvin 46a:1"
+    ],
+    "generatedAt": "2026-11-03T15:24:44.335Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 46a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל שכן דהוי ליה נולד ואסיר</strong> - ואע\"ג דמשקין בפירי נמי אמרינן בפסחים <span class=\"parenthesized\">(דף לג:)</span> דמבלע בליעי אפ\"ה לא מתסרי משום נולד אי לא גזרינן שמא יסחוט דמים בעבים בליעי טפי ואינה ניכרין כמו משקין בפירי ואפילו לא היו ניכרין משקין בפירי כלל לא חשיבי נולד כיון דמעיקרא נמי הוי אוכל אוכלא דאיפרת הוא וא\"ת ולימא הא רבי שמעון היא דלית ליה מוקצה ולית ליה נולד כדאיתא בריש ביצה <span class=\"parenthesized\">(דף ב.)</span> וי\"ל דבנולד כה\"ג דדבר חדש שלא בא לעולם כל עיקר מודה רבי שמעון וכן באפר כירה שהוסק ביום טוב נראה דמודה ר\"ש דאסור לכסות בו אא\"כ ראוי לצלות בו ביצה כדאמר בפרק קמא דביצה <span class=\"parenthesized\">(דף ח.)</span>:"
+  },
+  "Tosafot on Eruvin 46a:6:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 46a:6:1",
+      "Rashi on Eruvin 46a:6:2",
+      "Rashi on Eruvin 46a:6:3",
+      "Eruvin 46a:6",
+      "Rashi on Eruvin 46a:2:1",
+      "Tosafot on Eruvin 45b:16:1",
+      "Chokhmat Shlomo on Eruvin 46a:1"
+    ],
+    "generatedAt": "2026-11-03T15:35:41.408Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 46a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נהרות המושכין</strong> - פ\"ה אפי' הן של יחיד ונראה שדקדק דאי הוה של רבים דווקא מאי איריא נהרות אפי' מים מכונסים נמי אמרי' לעיל כרגלי הממלא והיינו כרגלי כל אדם דהכא כדפרישי' לעיל דהכל אחד וכן מוכח בפרק בתרא דביצה <span class=\"parenthesized\">(דף לט.)</span> דבשל יחיד מיירי דפריך מהך דהכא אמתני' דהתם דקתני בור של יחיד כרגלי היחיד ומיהו שם לא פירש רש\"י כרגלי הממלא וכרגלי כל אדם בענין אחד ור\"ת מפרש אפילו מיירי בשל רבים מדקדק שפיר דדווקא משום דניידי לא קנו שביתה אבל מכונסים דקנו שביתה יש להם אלפים אמה לכל רוח כרבי יוחנן בן נורי:"
+  },
+  "Tosafot on Eruvin 46a:6:2": {
+    "dependsOn": [
+      "Tosafot on Eruvin 46a:6:1",
+      "Tosafot on Eruvin 46a:6:2",
+      "Tosafot on Eruvin 46a:6:3",
+      "Eruvin 46a:6"
+    ],
+    "generatedAt": "2026-11-03T15:36:50.755Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 46a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוה אמינא בין לקולא בין לחומרא</strong> - הוה ליה למימר דאיצטריך הלכה כדברי המיקל לפסוק הלכה בכל מקומות אלא דניחא ליה למימר דאפילו להך מילתא גופה איצטריך:"
+  },
+  "Tosafot on Eruvin 46a:6:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 46a:6:1",
+      "Rashi on Eruvin 46a:6:2",
+      "Rashi on Eruvin 46a:6:3",
+      "Tosafot on Eruvin 46a:6:1",
+      "Tosafot on Eruvin 46a:6:2",
+      "Eruvin 46a:6"
+    ],
+    "generatedAt": "2026-11-03T15:37:58.200Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 46a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קמ\"ל הלכה כדברי המיקל בעירוב</strong> - דלענין אדם הלכה כרבי יוחנן בן נורי דקני שביתה ולענין כלים הלכה כרבנן דלא קנו שביתה והרי הן כרגלי כל אדם ולא הוי תרי קולי דסתרי אהדדי דקיימא לן כרבנן דאמרי אין חפצי הפקר קונין שביתה וישן היינו טעמא הואיל וניעור קני ישן נמי קני כדפ\"ה ואפילו אם לא היה משמעינן רבי יהושע בן לוי אלא הלכה כדברי המיקל בעירוב לחוד הוה משמע מדבריו דהלכתא כדברי שניהם להקל:"
+  }
+}

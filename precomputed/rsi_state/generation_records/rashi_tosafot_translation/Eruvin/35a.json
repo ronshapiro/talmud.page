@@ -1,0 +1,478 @@
+{
+  "Rashi on Eruvin 35a:10:1": {
+    "dependsOn": [
+      "Eruvin 35a:10",
+      "Rashi on Eruvin 34b:18:1",
+      "Rashi on Eruvin 34b:18:2",
+      "Rashi on Eruvin 34b:18:3"
+    ],
+    "generatedAt": "2026-11-03T01:31:31.407Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לצורך תשמישן</strong> - ועיקר תשמישו של סכין לא לחתוך חבלים הוא אלא לחם ובשר ואוכלין והכי פליגי תנא קמא לית ליה דרבי נחמיה הלכך עירובו עירוב דפסיק ליה למיתנא רבי אליעזר אומר אם בעיר אבד. הרי זה עירוב דכי מדכר ליה מייתי ליה דרך קרפיפות ואם בשדה אינו עירוב דמיפסיק מנעול לא מצי כדרבי נחמיה:"
+  },
+  "Rashi on Eruvin 35a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:32:00.460Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתגלגל חוץ לתחום אינו עירוב</strong> - הואיל ויש מביתו שהוא לן שם עד עירובו יותר מאלפים אמה דממה נפשך כל היכא דקנה שביתה אי בביתו אי בעירובו לא מצי למיזל ולמשקליה:"
+  },
+  "Rashi on Eruvin 35a:11:2": {
+    "dependsOn": [
+      "Eruvin 35a:11"
+    ],
+    "generatedAt": "2026-11-03T01:32:40.618Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נפל עליו גל</strong> - מפרש בגמ' דבעי מרא וחצינא לפנויי דהויא מלאכה ולא שבות:"
+  },
+  "Rashi on Eruvin 35a:11:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 35a:11:1",
+      "Rashi on Eruvin 35a:11:2",
+      "Rashi on Eruvin 35a:11:3",
+      "Rashi on Eruvin 35a:11:4"
+    ],
+    "generatedAt": "2026-11-03T01:33:20.120Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרומה ונטמאת</strong> - דלא חזיא לא לדידיה ולא לאחריני:"
+  },
+  "Rashi on Eruvin 35a:11:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 35a:11:1",
+      "Rashi on Eruvin 35a:11:2",
+      "Rashi on Eruvin 35a:11:3",
+      "Rashi on Eruvin 35a:11:4"
+    ],
+    "generatedAt": "2026-11-03T01:34:08.331Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35a:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משחשיכה</strong> - כבר קנה עירוב בין השמשות ושבת הואיל והותרה הותרה:"
+  },
+  "Rashi on Eruvin 35a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:36:15.926Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ספק</strong> - אם מבעוד יום אם משחשיכה:"
+  },
+  "Rashi on Eruvin 35a:12:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 35a:12:1"
+    ],
+    "generatedAt": "2026-11-03T01:37:11.067Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי זה חמר גמל</strong> - דמספקא לן אי קני ליה זה עירוב והכא הוי ביתו ומהכא יש לו אלפים אמה לכל רוח והפסיד אלפים שמעבר ביתו או שמא לא קנה עירוב ומביתו יש לו אלפים לכל רוח ולא קנה לעבר עירובו כלום ומחמת ספק זה נאסר לילך אלא אלפים אמה שבין ביתו לעירובו דממה נפשך בהנך משתרי אבל אלפים שמעירובו ואילך לא דילמא לא קנה עירוב ומביתו ואילך נמי לא דלמא קנה עירוב נמצא זה מושכו כאן לילך וזה מושכו לכאן כאדם המנהיג חמור וגמל שהחמור הולך לפניו וזה מנהיגו והגמל הוא מושך וצריך לפנות לפניו ולאחריו:"
+  },
+  "Rashi on Eruvin 35a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:37:38.899Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הנותן את עירובו</strong> - הואיל ונתכוין לקנות שם שביתה יש לו ארבע אמות דהואיל והנהו ארבע אמות מיבלען בתחומא הוו להו כתחומא והוי כנותן את עירובו בבית שבסוף התחום שאפילו הוא אלף אמה מהלך את כולה וחוצה לה אלפים אמה:"
+  },
+  "Rashi on Eruvin 35a:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:38:08.988Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאי בעי שקיל ליה</strong> - וקתני מתניתין אינו עירוב משום טלטול אבנים דשבות דרבנן הוא:"
+  },
+  "Rashi on Eruvin 35a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T00:58:29.120Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל בשבת אין עירובו עירוב</strong> - דלא שרו ליה רבנן למיסתר:"
+  },
+  "Rashi on Eruvin 35a:1:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 35a:1:1",
+      "Rashi on Eruvin 35a:1:3"
+    ],
+    "generatedAt": "2026-11-03T00:58:57.605Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נמצא המפתח</strong> - בשבת:"
+  },
+  "Rashi on Eruvin 35a:1:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 35a:1:1",
+      "Rashi on Eruvin 35a:1:2",
+      "Eruvin 35a:1",
+      "Rashi on Eruvin 34b:18:2",
+      "Rashi on Eruvin 34b:18:3"
+    ],
+    "generatedAt": "2026-11-03T01:00:17.006Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין עירובו עירוב</strong> - דלית ליה דר\"ש והא דר\"ש בפ' כל גגות:"
+  },
+  "Rashi on Eruvin 35a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:04:04.269Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין סתירה בכלים</strong> - ואי בעי סתר ליה:"
+  },
+  "Rashi on Eruvin 35a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T01:05:38.309Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הקיש</strong> - זב באגרופו על גבי שידה כו':"
+  },
+  "Rashi on Eruvin 35a:4:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 35a:4:1"
+    ],
+    "generatedAt": "2026-11-03T01:06:39.242Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טמאים</strong> - מפני שהסיטן וכגון שהיה לבוש בית יד דלא מטמא בנגיעה אי נמי שהקישו בחתיכת עץ שבידו:"
+  },
+  "Rashi on Eruvin 35a:5:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 35a:4:1",
+      "Rashi on Eruvin 35a:4:2"
+    ],
+    "generatedAt": "2026-11-03T01:07:17.402Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אהל הוא</strong> - ולא מקבל טומאה:"
+  },
+  "Rashi on Eruvin 35a:6:1": {
+    "dependsOn": [
+      "Eruvin 35a:6",
+      "Rashi on Eruvin 35a:5:1"
+    ],
+    "generatedAt": "2026-11-03T01:10:28.947Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותסברא</strong> - דטעמא משום אהל ולאו אהל הוא:"
+  },
+  "Rashi on Eruvin 35a:6:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 35a:6:1",
+      "Rashi on Eruvin 35a:6:3",
+      "Eruvin 35a:4",
+      "Eruvin 35a:5",
+      "Rashi on Eruvin 35a:4:1",
+      "Rashi on Eruvin 35a:4:2"
+    ],
+    "generatedAt": "2026-11-03T01:11:33.282Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וניסט</strong> - שאינו תקוע יפה וכשמקיש בו ניסט טמא ואם כלי הוא שמחובר ותקוע או כבד הרבה שאינו ניסט מחמתו טהור:"
+  },
+  "Rashi on Eruvin 35a:6:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 35a:6:1",
+      "Rashi on Eruvin 35a:6:2",
+      "Rashi on Eruvin 35a:6:3",
+      "Rashi on Eruvin 35a:6:4",
+      "Rashi on Eruvin 35a:6:5",
+      "Eruvin 35a:6",
+      "Maharshal on Eruvin 35a:2:1",
+      "Chokhmat Shlomo on Eruvin 35a:1",
+      "Tosafot on Eruvin 35a:6:1",
+      "Rabbeinu Chananel on Eruvin 35a:6:1",
+      "Rabbeinu Chananel on Eruvin 35a:6:2"
+    ],
+    "generatedAt": "2026-11-03T01:13:09.013Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקתני נמי סיפא</strong> - דקמייתא דהקיש ע\"ג שידה אם היו ניסטין טמאין אפילו לרבי נחמיה ור\"ש אלמא טעמייהו לאו משום אהל הוא:"
+  },
+  "Rashi on Eruvin 35a:6:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 35a:6:1",
+      "Rashi on Eruvin 35a:6:2",
+      "Rashi on Eruvin 35a:6:3",
+      "Rashi on Eruvin 35a:6:4",
+      "Rashi on Eruvin 35a:6:5"
+    ],
+    "generatedAt": "2026-11-03T01:13:54.795Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35a:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זה הכלל ניסט מחמת כחו</strong> - שהסיט את הכלי או את האהל ממש שניתקו ממושבו משהו:"
+  },
+  "Rashi on Eruvin 35a:6:5": {
+    "dependsOn": [
+      "Rashi on Eruvin 35a:6:1",
+      "Rashi on Eruvin 35a:6:2",
+      "Rashi on Eruvin 35a:6:3",
+      "Rashi on Eruvin 35a:6:4",
+      "Rashi on Eruvin 35a:6:5"
+    ],
+    "generatedAt": "2026-11-03T01:14:39.239Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35a:6:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחמת רעדה</strong> - שטפח ברגליו בקרקע ומחמת ניענוע הקרקע ניסט הכלי אף על פי שניתק מן הארץ טהור דכח כוחו הוא:"
+  },
+  "Rashi on Eruvin 35a:7:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 35a:6:1",
+      "Rashi on Eruvin 35a:6:2",
+      "Rashi on Eruvin 35a:6:3",
+      "Rashi on Eruvin 35a:7:2",
+      "Rashi on Eruvin 35a:7:1",
+      "Rashi on Eruvin 35a:7:3"
+    ],
+    "generatedAt": "2026-11-03T01:17:04.599Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכולי עלמא</strong> - אפילו לר' נחמיה הסיט ממש מחמת כחו טמא ואפילו אהל:"
+  },
+  "Rashi on Eruvin 35a:7:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 35a:7:1",
+      "Rashi on Eruvin 35a:7:2",
+      "Rashi on Eruvin 35a:7:3"
+    ],
+    "generatedAt": "2026-11-03T01:18:16.553Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחמת רעדה טהור</strong> - ואפילו הוא כלי:"
+  },
+  "Rashi on Eruvin 35a:7:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 35a:7:1",
+      "Rashi on Eruvin 35a:7:2",
+      "Rashi on Eruvin 35a:7:3",
+      "Eruvin 35a:7"
+    ],
+    "generatedAt": "2026-11-03T01:19:13.423Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והכא ברעדה מחמת כחו</strong> - שהקיש עליהן ממש ולא נתקן ולא הוסטו אלא רעדו:"
+  },
+  "Rashi on Eruvin 35a:8:1": {
+    "dependsOn": [
+      "Eruvin 35a:8",
+      "Rashi on Eruvin 34b:11:1",
+      "Rashi on Eruvin 34b:11:2",
+      "Rashi on Eruvin 35a:1:1",
+      "Rashi on Eruvin 35a:6:1",
+      "Rashi on Eruvin 35b:5:1",
+      "Tosafot on Eruvin 35a:8:2"
+    ],
+    "generatedAt": "2026-11-03T01:21:45.343Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומתני'</strong> - דעירוב במאי מוקמינן לה דהא לכ\"ע אי גדול הוא אהל הוא ואמאי עירובו עירוב אי קטן שאינו מחזיק מ' סאה בלח כלי הוא ומאי טעמא דר' אליעזר:"
+  },
+  "Rashi on Eruvin 35a:8:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 35a:8:1",
+      "Rashi on Eruvin 35a:8:2",
+      "Rashi on Eruvin 35a:8:3"
+    ],
+    "generatedAt": "2026-11-03T01:22:18.607Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קטיר במתנא</strong> - קשור המנעול בחבל:"
+  },
+  "Rashi on Eruvin 35a:8:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 35a:8:1",
+      "Rashi on Eruvin 35a:8:2",
+      "Eruvin 35a:8"
+    ],
+    "generatedAt": "2026-11-03T01:24:17.450Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 35a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובעי סכינא למיפסקיה</strong> - דאי הוה מצי למיפסקיה בידיה שפיר דמי אפי' לר' אליעזר דאין חתיכה אסורה אלא במחובר אבל הכא מקלקל הוא ושרי כדתניא במסכת ביצה <span class=\"parenthesized\">(דף לא:)</span> חותמות שבכלים מתיר ומפקיע וחותך ואע\"ג דהכא אהל הוא ואמרינן התם שבקרקע אסור לחתוך גזירה דרבנן היא דמיחזי כסותר ולא סותר בנין ממש הוא דהא פתיחת דלת בעלמא הוא כיון דשבות הוא לא גזרו עליו בין השמשות:"
+  },
+  "Tosafot on Eruvin 35a:11:1": {
+    "dependsOn": [
+      "Eruvin 35a:11",
+      "Rashi on Eruvin 35a:11:1",
+      "Maharsha on Eruvin 35a:4",
+      "Steinsaltz comment #1 on Eruvin 35a:11",
+      "Steinsaltz on Eruvin 35a:11"
+    ],
+    "generatedAt": "2026-11-03T01:35:50.898Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 35a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתגלגל חוץ לתחום</strong> - אפילו תחומין דרבנן ואפילו לרבי דאמר כל דבר שהוא משום שבות לא גזרו עליו בין השמשות מכל מקום לא הוי עירוב אף על גב דבין השמשות מצי למישקליה ואיתויי כיון דאם קנה שביתה במקום שנתגלגל העירוב היה עומד עתה חוץ לתחום ואין לו אלא ארבע אמות הילכך תקנו רבנן שלא יהיה עירוב אלא כשהוא בתוך התחום:"
+  },
+  "Tosafot on Eruvin 35a:1:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 35a:1:1",
+      "Rashi on Eruvin 35a:1:2",
+      "Rashi on Eruvin 35a:1:3",
+      "Eruvin 35a:1",
+      "Rashi on Eruvin 34b:18:1",
+      "Rashi on Eruvin 34b:18:2",
+      "Rashi on Eruvin 34b:18:3",
+      "Chidushei Halachot on Eruvin 35a:1",
+      "Tosefta Kifshutah on Eruvin 2:15:3"
+    ],
+    "generatedAt": "2026-11-03T01:02:23.198Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 35a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חסורי מיחסרא והכי קתני</strong> - פ\"ה וג' מחלוקות בדבר ולא דק דמתניתין איירי ביום טוב ופליגי אי מצי סתר ליה אי לאו וברייתא כשנמצא בשבת ופליגי בדר\"ש והא דתניא בתוספתא <span class=\"parenthesized\">(פרק שני)</span> דעירובין ומודים חכמים לרבי אליעזר בבני חצר ובני מרפסת שגבו עירובן ונתנוהו בבית אע\"פ שיודעין שאין המפתח במקומו שעירובו עירוב היינו טעמא דבעירובי חצירות הקילו ומיהו נראה דאנמצא מפתח בשבת קאי מדקאמר ומודים חכמים לרבי אליעזר וביו\"ט כי לא נמצא מפתח אדרבה חכמים הקילו טפי והוה ליה למימר איפכא ומודה רבי אליעזר לחכמים:"
+  },
+  "Tosafot on Eruvin 35a:1:2": {
+    "dependsOn": [
+      "Tosafot on Eruvin 35a:1:1",
+      "Tosafot on Eruvin 35a:1:2",
+      "Eruvin 35a:1",
+      "Rashi on Eruvin 35a:1:1",
+      "Rashi on Eruvin 35a:1:2",
+      "Rashi on Eruvin 35a:1:3"
+    ],
+    "generatedAt": "2026-11-03T01:03:40.020Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 35a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעיר עירובו עירוב</strong> - בנמצא בשבת אף על פי שהיה אבוד בין השמשות:"
+  },
+  "Tosafot on Eruvin 35a:6:1": {
+    "dependsOn": [
+      "Eruvin 35a:6",
+      "Rashi on Eruvin 35a:6:1",
+      "Rashi on Eruvin 35a:6:2",
+      "Rashi on Eruvin 35a:6:3",
+      "Rashi on Eruvin 35a:6:4",
+      "Rashi on Eruvin 35a:6:5",
+      "Maharsha on Eruvin 35a:2"
+    ],
+    "generatedAt": "2026-11-03T01:16:06.219Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 35a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקתני סיפא אם היו ניסטין טמאין</strong> - מהך סיפא לחוד לא מצי למידק דמצי למימר דמחמת רעדה הוא דפליגי דיש חלוק בין אהל לכלי אבל בהיסט אהל נמי טמא לכך מייתי ברייתא דמחמת רעדה נמי אין חילוק בין אהל לכלי וברייתא לחוד נמי לא סגיא דהוה אמינא דאתיא לא כרבי נחמיה ולא כרבי שמעון להכי אייתי סיפא דמילתייהו:"
+  },
+  "Tosafot on Eruvin 35a:8:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 35a:8:1",
+      "Tosafot on Eruvin 35a:6:1",
+      "Tosafot on Eruvin 35a:8:2",
+      "Tosafot on Eruvin 35a:11:1"
+    ],
+    "generatedAt": "2026-11-03T01:27:23.342Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 35a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומתני' במאי מוקי ליה</strong> - ולא בעי לאוקומ' בפלוגתא דאין בנין בכלים משום דפלוגתא דב\"ש וב\"ה היא בפרק ב' דביצה <span class=\"parenthesized\">(ד' כב.)</span>:"
+  },
+  "Tosafot on Eruvin 35a:8:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 35a:8:1",
+      "Rashi on Eruvin 35a:8:2",
+      "Rashi on Eruvin 35a:8:3",
+      "Tosafot on Eruvin 35a:8:1",
+      "Eruvin 35a:8",
+      "Eruvin 34b:1",
+      "Eruvin 34b:2",
+      "Rashi on Eruvin 34a:6:1",
+      "Tosafot on Eruvin 34b:14:1",
+      "Maharsha: Chidushei Halachot on Eruvin 35a:3"
+    ],
+    "generatedAt": "2026-11-03T01:30:03.986Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 35a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעי סכינא למיפסקיה</strong> - פ\"ה דאי ביד הוה שרי אפילו רבי אליעזר דמקלקל הוא דתניא במסכת ביצה <span class=\"parenthesized\">(דף לא:)</span> חותמות שבכלים מתיר ומפקיע וחותך ואף על גב דהכא אהל הוא ואמר שבקרקע אסור גזירה דרבנן הוא דמיחזי כסותר ולא סותר בנין ממש הוא דהא פתיחת דלת בעלמא הוא וכיון דשבות הוא לא גזרו עליו בה\"ש ואינו נראה דכי נמי סבר רבי אליעזר כרבי נחמיה שרי דטלטול סכין לא אסור אלא מדרבנן לכך י\"ל דהכא כלי הוא ואי הוה מצי למפסקיה ביד הוה שרי אבל בסכינא אסור כרבי נחמיה ולית ליה דרבי ומכאן מדקדק ר\"י דחותמות שבכלים מתיר ומפקיע וחותך היינו דוקא כעין קשר של מיתנא אבל פותח של עץ או של מתכת אסור לשבר דבכלי נמי יש בנין וסתירה כדפ\"ל:"
+  }
+}

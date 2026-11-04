@@ -1,0 +1,434 @@
+{
+  "Rashi on Eruvin 24b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T14:43:59.668Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 24b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טלטולי במתא גופה שרי</strong> - דהא שרינן לה בהאי לחי ואפילו היא והרחבה אסורים זה עם זה שניהן משתמשין לעצמן כשתי חצירות ופתח ביניהן וכן ברחבה גופה:"
+  },
+  "Rashi on Eruvin 24b:1:1": {
+    "dependsOn": [
+      "Eruvin 24b:1"
+    ],
+    "generatedAt": "2026-11-02T14:06:54.899Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 24b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דחזו לתשמישתא</strong> - לשתיה דאין לך דירה מעולה מזו:"
+  },
+  "Rashi on Eruvin 24b:2:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 24b:2:1",
+      "Rashi on Eruvin 24b:1:1",
+      "Rashi on Eruvin 24b:3:1"
+    ],
+    "generatedAt": "2026-11-02T14:08:12.066Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 24b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאין בעומקו יותר על בית סאתים</strong> - כלומר שאין עומקו של מים נפשט ברוחב יותר על בית סאתים ועומקו של סתם מים לבטל מקומו מדין קרקע י' טפחים כדאמרינן במסכת שבת <span class=\"parenthesized\">(דף ק:)</span> ואם היה רקק מים וכו' כמה רקק מים פחות מי' טפחים:"
+  },
+  "Rashi on Eruvin 24b:3:1": {
+    "dependsOn": [
+      "Eruvin 24b:3"
+    ],
+    "generatedAt": "2026-11-02T14:12:22.590Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 24b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כריא דפירי</strong> - כרי של פירות גבוה עשרה ורוחב כרוחב בית כור לא בטלה תורת דירה משם ומים הראוין לשתיה כפירות דמי ל\"א מידי דהוה אכריא דפירי שוחה עמוקה שמצניעין שם פירות שאע\"פ שעמוקין שם הרבה נוטלים מהן בשבת:"
+  },
+  "Rashi on Eruvin 24b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T14:12:53.202Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 24b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ההיא רחבה</strong> - יותר מבית סאתים הוה ולא הוקפה לדירה:"
+  },
+  "Rashi on Eruvin 24b:4:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 24b:4:1",
+      "Rashi on Eruvin 24b:4:3"
+    ],
+    "generatedAt": "2026-11-02T14:13:29.994Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 24b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פום נהרא</strong> - שם מקום:"
+  },
+  "Rashi on Eruvin 24b:4:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 24b:4:1",
+      "Rashi on Eruvin 24b:4:2",
+      "Rashi on Eruvin 24b:4:3",
+      "Rashi on Eruvin 24b:4:4"
+    ],
+    "generatedAt": "2026-11-02T14:13:57.243Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 24b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חד גיסא פתוח למתא</strong> - למבוי שבעיר שכלה לרחבה זו:"
+  },
+  "Rashi on Eruvin 24b:4:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 24b:4:1",
+      "Rashi on Eruvin 24b:4:2",
+      "Rashi on Eruvin 24b:4:3",
+      "Rashi on Eruvin 24b:4:4",
+      "Eruvin 24b:4"
+    ],
+    "generatedAt": "2026-11-02T14:14:38.472Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 24b:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שביל של כרמים</strong> - דיורין היו בו:"
+  },
+  "Rashi on Eruvin 24b:5:1": {
+    "dependsOn": [
+      "Eruvin 24b:5",
+      "Rashi on Eruvin 24b:4:1",
+      "Rashi on Eruvin 24b:4:2",
+      "Rashi on Eruvin 24b:4:3",
+      "Rashi on Eruvin 24b:4:4"
+    ],
+    "generatedAt": "2026-11-02T14:18:16.516Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 24b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היכי ניעביד</strong> - למשרינהו לכולהו שהרי רחבה זו כרמלית היא ואוסרת כל המבוי ואת השביל שיש לו שלש מחיצות דהא גודא דנהרא מחיצה מעלייתא היא שגובהה עשרה אבל הרחבה אוסרתן לפי שפרוצין הן במילואן לכרמלית והא דאמרינן בפ\"ק <span class=\"parenthesized\">(ד' ז.)</span> אם היה מבוי כלה לרחבה אין צריך כלום במוקפת לדירה והיו בה דיורין קאמר כדמפליג התם בין עירבו ללא עירבו אבל רחבה כרמלית אסור כדאמרינן בההיא שמעתא בקעה מכאן ובקעה מכאן כו':"
+  },
+  "Rashi on Eruvin 24b:5:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 24b:5:1",
+      "Eruvin 24b:4"
+    ],
+    "generatedAt": "2026-11-02T14:19:05.823Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 24b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היכי ניעביד</strong> - להתיר את כולם שהיו רוצין מעכשיו להשתמש בהם בני העיר ולהיותה מוקפת לדירה ושוב לא תיהוי כרמלית ותהא היא בכולן מותרת ואמרינן לעיל הוקף ולבסוף פתח לא מהני וגדר של אבנים היתה רחבה זו מוקפת וקשה להם לפרוץ פירצה יותר מעשר ולגדרה לדירה אדעתא דלישתמשו בה בני מבוי ושביל מהשתא וליהוי כפתח ולבסוף הוקף כדשמואל:"
+  },
+  "Rashi on Eruvin 24b:5:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T14:19:21.883Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 24b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ניעביד ליה מחיצה</strong> - של קנים:"
+  },
+  "Rashi on Eruvin 24b:5:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 24b:5:1",
+      "Rashi on Eruvin 24b:5:2",
+      "Rashi on Eruvin 24b:5:3",
+      "Rashi on Eruvin 24b:5:4",
+      "Rashi on Eruvin 24b:5:5",
+      "Eruvin 24b:4"
+    ],
+    "generatedAt": "2026-11-02T14:20:18.969Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 24b:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אגודא דנהרא</strong> - כלומר להו שביל כמוסף על הרחבה דניהוי רחבה ושביל חד וניהוי הך מחיצה דעבדינן בשביל אדעתא דדירה דלישתמשו מהשתא בני שביל ברחבה כאילו עבדינן לה ברחבה גופה לדירה דהוי פתח ולבסוף הוקף:"
+  },
+  "Rashi on Eruvin 24b:5:5": {
+    "dependsOn": [
+      "Rashi on Eruvin 24b:5:1",
+      "Rashi on Eruvin 24b:5:2",
+      "Rashi on Eruvin 24b:5:3",
+      "Rashi on Eruvin 24b:5:4"
+    ],
+    "generatedAt": "2026-11-02T14:20:53.099Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 24b:5:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין עושין מחיצה על גבי מחיצה</strong> - כיון דגודא גבוהה עשרה כל מה שמוסיפין עליה הגבהת אותה מחיצה עצמה הויא שהרי אם היה מגביה כל מחיצת הרחבה לדירה לא מהני עד שיפרוץ בה פירצה האוסרתה ויחזור ויגדור לדירה:"
+  },
+  "Rashi on Eruvin 24b:6:1": {
+    "dependsOn": [
+      "Eruvin 24b:6",
+      "Rashi on Eruvin 24b:5:1",
+      "Rashi on Eruvin 24b:5:2",
+      "Rashi on Eruvin 24b:5:3",
+      "Rashi on Eruvin 24b:6:2",
+      "Rashi on Eruvin 24b:6:3"
+    ],
+    "generatedAt": "2026-11-02T14:27:24.131Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 24b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליעביד ליה צורת הפתח אפומא דשביל של כרמים</strong> - דפתוח לרחבה דמגו דמהני לשביל שלא יהא פרוץ לרחבה שאפילו היה פתוח לרה\"ר מועיל לו ליהני נמי לרחבה להיות לה תוספת זה היקף לדירה:"
+  },
+  "Rashi on Eruvin 24b:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T14:27:45.435Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 24b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אתו גמלי</strong> - הבאין לשתות מן העיר דרך מבוי לרחבה ומשם לשביל ולנהר:"
+  },
+  "Rashi on Eruvin 24b:6:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 24b:6:1",
+      "Rashi on Eruvin 24b:6:2"
+    ],
+    "generatedAt": "2026-11-02T14:28:19.864Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 24b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שדיין ליה</strong> - שהיה פתח השביל צר להן ועכשיו הוא דוחקן:"
+  },
+  "Rashi on Eruvin 24b:7:1": {
+    "dependsOn": [
+      "Eruvin 24b:7",
+      "Rashi on Eruvin 24b:7:1",
+      "Rashi on Eruvin 24b:7:2",
+      "Rashi on Eruvin 24b:7:3"
+    ],
+    "generatedAt": "2026-11-02T14:34:17.999Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 24b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לחי</strong> - הנעוץ בארץ ועביו משהו ואין גמלין נוגעין בו:"
+  },
+  "Rashi on Eruvin 24b:7:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 24b:7:1",
+      "Rashi on Eruvin 24b:7:2",
+      "Rashi on Eruvin 24b:7:3"
+    ],
+    "generatedAt": "2026-11-02T14:35:00.518Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 24b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמיגו דמהני לשביל</strong> - לטלטל בו דלא הוי השתא פרוץ לכרמלית:"
+  },
+  "Rashi on Eruvin 24b:7:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 24b:7:1",
+      "Rashi on Eruvin 24b:7:2",
+      "Eruvin 24b:7",
+      "Rashi on Eruvin 24b:4:1",
+      "Rashi on Eruvin 24b:4:2",
+      "Rashi on Eruvin 24b:4:3",
+      "Rashi on Eruvin 24b:4:4"
+    ],
+    "generatedAt": "2026-11-02T14:38:05.742Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 24b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהני נמי לרחבה</strong> - להיות לה היקף לדירה ויתירנה לטלטל בה ובלאו מיגו לא מישתריא דהא פתח שבין רחבה לשביל לא היה יותר מי' וכל כמה דסתים ליה לדירה לאו כלום היא דהא כל פתח סתימה מעלייתא היא וסתום ועומד הוא:"
+  },
+  "Rashi on Eruvin 24b:8:1": {
+    "dependsOn": [
+      "Eruvin 24b:8",
+      "Eruvin 24b:6"
+    ],
+    "generatedAt": "2026-11-02T14:39:35.995Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 24b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשביל של כרמים דעלמא</strong> - דלא סליק לגודא דנהרא והוי ליה כמבוי מפולש ויאמרו שאין צריך תיקון אלא בראשו אחד כי האי:"
+  },
+  "Rashi on Eruvin 24b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T14:43:00.576Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 24b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמיגו דמהני למתא</strong> - לטלטל במבוי כדאמרינן בפרק קמא <span class=\"parenthesized\">(דף ז.)</span> סרטיא מכאן ובקעה מכאן עושה צורת הפתח מכאן ולחי או קורה מכאן והכא נמי ליעבדו בראש המבוי הפתוח לרשות הרבים צורת פתח והאי לחי דלצד הרחבה שרי ליה:"
+  },
+  "Tosafot on Eruvin 24b:10:1": {
+    "dependsOn": [
+      "Eruvin 24b:10",
+      "Eruvin 24b:8",
+      "Rashi on Eruvin 24b:10:1",
+      "Ritva on Eruvin 24b:7",
+      "Steinsaltz on Eruvin 24b:10",
+      "Eruvin 89a:5"
+    ],
+    "generatedAt": "2026-11-02T14:45:50.909Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 24b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טלטולי ברחבה גופיה שרי</strong> - פירוש הכלים ששבתו בתוכה וכן בשביל:"
+  },
+  "Tosafot on Eruvin 24b:2:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 24b:2:1"
+    ],
+    "generatedAt": "2026-11-02T14:11:26.258Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 24b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא אמרן אלא שאין בעומקו יותר מבית סאתים</strong> - פי' שאין בעומקו עשרה ביתר מבית סאתים ברוחב דהנך דעמוקין עשרה הוו כזרעים ואתיא כרבי שמעון דקיימא לן כוותיה דלרבנן אפילו בית סאתים אסור כדאמרינן לעיל ומיירי כגון דהוי מיעוט מים העמוקים י' דאי הוו רובא הנך שאין עמוקין עשרה הוי מיעוט ובטלים לגבי רוב ואסור כדאמרינן לעיל ור\"י מפרש דאפילו רוב מים עמוקין נמי שרו כיון דליכא אלא בית סאתים בין עמוקים ובין שאינם עמוקים לא חשיבי כזרעים אלא דמו לנטעים דדמו לבור ומיהו ביתר מבית סאתים אסור שאין דרך שוחה מליאה מים לעשות יותר מבית סאתים וחשיבי כזרעים אע\"ג דגבי בור אפי' רבי יהודה לא אסר ביתר מבית סאתים במחיצות גמורות אלא דווקא בפסין כדקאמר לעיל <span class=\"parenthesized\">(עירובין דף יט:)</span> זו מחיצה ואלו פסין היינו דווקא בבור המתוקן כהלכתו אבל שוחה לא:"
+  },
+  "Tosafot on Eruvin 24b:4:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 24b:4:1",
+      "Rashi on Eruvin 24b:4:2",
+      "Rashi on Eruvin 24b:4:3",
+      "Rashi on Eruvin 24b:4:4",
+      "Eruvin 24b:4",
+      "Eruvin 24b:6",
+      "Chokhmat Shlomo on Eruvin 24b:2",
+      "Eruvin 7b:2",
+      "Eruvin 7b:3",
+      "Eruvin 7b:4",
+      "Tosafot on Eruvin 7b:1:1"
+    ],
+    "generatedAt": "2026-11-02T14:17:14.850Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 24b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ההיא רחבה דהוה בפום נהרא דחד גיסא פתוח למתא וחד גיסא פתוח לשביל</strong> - <span class=\"rashi-quotation\">פירש הקונטרס</span> דרחבה זו כרמלית והיתה אוסרת המבוי ואע\"פ שבראשו האחד היה לו צורת הפתח או היה סתום וגם את השביל שהיו לו שלש מחיצות דגודא דנהרא מחיצה מעליא היא ואף ע\"ג דלרחבה היו גפופין כדמוכח הסוגיא לא מהניא למבוי ולשביל משום דנראה מבחוץ ושוה מבפנים נידון משום לחי דכיון דלא מהני לרחבה גופה כל שכן דלא מהני למבוי ולשביל ושביל <span class=\"rashi-quotation\">פירש הקונטרס</span> דאית ביה דיורין ואתי שפיר הא דקאמרינן בסמוך דמהני לחי לשביל ואי אין בתים וחצירות פתוחים לתוכו לא הוה משתרי בלחי וכאן חזר בו רש\"י ממה שפירש בפ\"ק <span class=\"parenthesized\">(דף ז:)</span> דרחבה דהתם לית בה דיורין:"
+  },
+  "Tosafot on Eruvin 24b:5:1": {
+    "dependsOn": [
+      "Eruvin 24b:5",
+      "Rashi on Eruvin 24b:5:1",
+      "Rashi on Eruvin 24b:5:2",
+      "Rashi on Eruvin 24b:5:3",
+      "Tosafot on Eruvin 24b:5:2",
+      "Rashba on Eruvin 24b:5",
+      "Ritva on Eruvin 24b:5",
+      "Maharsha: Chidushei Halachot on Eruvin 24b:3"
+    ],
+    "generatedAt": "2026-11-02T14:23:21.127Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 24b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליעביד מחיצה אגודא דנהרא</strong> - וניהוי שביל כמוסיף על הרחבה ותיהוי שביל ורחבה חד ותיהוי הך מחיצה כאילו עבדינן לה ברחבה ונראה דהיה שם רוחב יותר מעשר ולכך על ידי המחיצה נחשב מוקף לדירה דאי בעשר בלאו הכי הוי סתום ועומד אפילו אם היה פרוץ במלואו לנהרא היה די בלחי משהו אלא היה יותר מעשר ולכך לא היה מהני אפי' צורת הפתח לרב:"
+  },
+  "Tosafot on Eruvin 24b:5:2": {
+    "dependsOn": [
+      "Tosafot on Eruvin 24b:5:1",
+      "Eruvin 24b:4",
+      "Eruvin 24b:6",
+      "Rashi on Eruvin 24b:5:2",
+      "Rashi on Eruvin 24b:5:3",
+      "Rashi on Eruvin 24b:5:4",
+      "Rashi on Eruvin 24b:5:5",
+      "Tosafot on Eruvin 24b:6:1"
+    ],
+    "generatedAt": "2026-11-02T14:25:37.775Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 24b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין עושין מחיצה על גבי מחיצה</strong> - וא\"ת הא אמרי' לקמן <span class=\"parenthesized\">(עירובין דף כה.)</span> שאם עשה מחיצה ע\"ג התל הועיל שבאויר מחיצות העליונות הוא דר וי\"ל שהיה שם תל גבוה עשר מן השביל ולפי זה אתי שפיר הא דלא חיישינן שמא יעלה הנהר שרטון אפילו אם לא נחלק בין ים לשאר נהרות וא\"ת ויעשו מחיצות ברחוק ד' טפחים דאמר לקמן דמועיל וי\"ל דלא רצו לקצר השביל:"
+  },
+  "Tosafot on Eruvin 24b:6:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 24b:6:1",
+      "Eruvin 24b:6",
+      "Rashi on Eruvin 24b:6:1",
+      "Rashi on Eruvin 24b:6:2",
+      "Rashi on Eruvin 24b:6:3"
+    ],
+    "generatedAt": "2026-11-02T14:33:01.291Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 24b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליעביד צורת הפתח אפומא דשביל</strong> - פירש רש\"י דפתוח לרחבה מיגו דמהני לשביל מהני נמי לרחבה וקשה דמשמע דלא צריך למיגו עד לקמן ועוד דמה לו להזכיר צורת הפתח כלל כיון דסגי בלחי כדאמר אביי גופיה ועוד למה שינה הלשון דמעיקרא קאמר אפומא דשביל וגבי לחי קאמר אפיתחא ועוד דפריך יאמרו לחי מהני לשביל של כרמים היכא דהוי מפולש ואיך יטעו בין שביל זה דאית ליה גדודי לשביל דעלמא ועוד שצריך לפרש שיש שם תל גבוה עשרה כל שכן שלא יטעו לכך נראה לפרש דשביל של כרמים אין בו דיורין כדמוכח בהדר <span class=\"parenthesized\">(לקמן עירובין דף עד.)</span> דקאמר א\"ר יוחנן אפילו בשביל של כרמים א\"ל לא אמר ר' יוחנן אלא בחורבה דחזיא לדירה אבל בשביל של כרמים לא אמר ואפי' הכי מהניא ליה לחי דבני מבוי היו משתמשין שם ובמבוי הרבה בתים וחצירות היו וליעבד מחיצה אגודא דנהרא היינו מעבר הנהר וה\"ה צורת הפתח דהוי כמחיצה והנהר לא היה רחב יותר מעשר ומעבר הנהר היו גידודין גבוהים עשרה [ומצד השביל היה נמוך] והשתא אתי שפיר הא דקאמר אין עושין מחיצה על גבי מחיצה כו' כי מצד השביל היה נמוך והשתא נמי לא חיישינן לשרטון דלעולם יהיה מתלקט י' מתוך ד':"
+  },
+  "Tosafot on Eruvin 24b:6:2": {
+    "dependsOn": [
+      "Tosafot on Eruvin 24b:6:1"
+    ],
+    "generatedAt": "2026-11-02T14:33:36.187Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 24b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וליעביד צורת הפתח אפומא דשביל</strong> - פירוש אגודא דנהרא בנמוך ושם לא רצו לעשות מחיצה ולסתום השביל שדרך שם משקין הגמלים:"
+  },
+  "Tosafot on Eruvin 24b:7:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 24b:6:1",
+      "Tosafot on Eruvin 24b:6:2"
+    ],
+    "generatedAt": "2026-11-02T14:38:44.208Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 24b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולעביד לחי אפיתחא דשביל לצד הרחבה כו' מיגו דמהני</strong> - פירוש השתא ודאי בלא מיגו לא מהני:"
+  },
+  "Tosafot on Eruvin 24b:8:1": {
+    "dependsOn": [
+      "Eruvin 24b:8",
+      "Rashi on Eruvin 24b:8:1",
+      "Tosafot on Eruvin 24b:7:1",
+      "Eruvin 24b:4",
+      "Steinsaltz comment #1 on Eruvin 24b:8",
+      "Steinsaltz comment #2 on Eruvin 24b:8",
+      "Steinsaltz on Eruvin 24b:8",
+      "Rashba on Eruvin 24b:9"
+    ],
+    "generatedAt": "2026-11-02T14:42:01.471Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 24b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יאמרו לחי מהני בשביל של כרמים דעלמא</strong> - שאין בני מבוי משתמשין שם שלא יעלו על דעתם דהכא מהני משום מבוי אי נמי י\"ל יאמרו דלחי מהני בשביל של כרמים דעלמא שהוא מפולש דלא יסיקו אדעתייהו דגדודין שמעבר הנהר מהני:"
+  }
+}

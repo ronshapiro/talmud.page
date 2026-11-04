@@ -1,0 +1,408 @@
+{
+  "Rashi on Eruvin 40b:10:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 40b:9:1",
+      "Rashi on Eruvin 40b:9:2",
+      "Rashi on Eruvin 40b:9:3",
+      "Rashi on Eruvin 40b:12:1",
+      "Eruvin 40b:8",
+      "Eruvin 40b:9",
+      "Eruvin 40b:10",
+      "Eruvin 40b:11",
+      "Rashi on Eruvin 40b:1:1",
+      "Rashi on Eruvin 40b:1:2",
+      "Rashi on Eruvin 40b:2:1",
+      "Rashi on Eruvin 40b:3:1",
+      "Rashi on Eruvin 40b:5:1",
+      "Eruvin 40a:13",
+      "Eruvin 40b:5",
+      "Steinsaltz on Eruvin 40b:10:1"
+    ],
+    "generatedAt": "2026-11-03T08:09:19.838Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לברכה</strong> - דמברכים כל יומא מקדש ישראל והזמנים:"
+  },
+  "Rashi on Eruvin 40b:12:1": {
+    "dependsOn": [
+      "Eruvin 40b:12",
+      "Rashi on Eruvin 40b:12:2"
+    ],
+    "generatedAt": "2026-11-03T08:10:25.123Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכל מקום כוס בעינן</strong> - לעיל מהדר לאוקומי הכי נמי מסתברא דאי ס\"ד זמן זמן כל ז' מי איכא ודקאמר דאי לא אמר האידנא אומר למחר וליומא אחרינא האי נמי ליתא דהא כוס יין בעי לומר הברכה עליו וסתמא דאינשי יומא קמא אית להו כוס אבל בשאר יומא לכולי עלמא לית להו:"
+  },
+  "Rashi on Eruvin 40b:12:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 40b:12:1"
+    ],
+    "generatedAt": "2026-11-03T08:10:58.807Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא לא קשיא דמיקלעי ליה כוס</strong> - ולעולם אזמן קאי ולרב נחמן לא תסייעיה:"
+  },
+  "Rashi on Eruvin 40b:13:1": {
+    "dependsOn": [
+      "Eruvin 40b:13",
+      "Rashi on Eruvin 40b:12:1",
+      "Rashi on Eruvin 40b:12:2",
+      "Eruvin 40b:9"
+    ],
+    "generatedAt": "2026-11-03T08:12:07.839Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תינח עצרת וראש השנה</strong> - איכא למימר דזמן אכוס קאמר ליה אלא יום הכפורים אי בזמן מוקמת ליה על כרחיך סייעתא לרב נחמן היא דעל הכוס היכי ליעביד אי מברך עליה ושתי ליה וכו':"
+  },
+  "Rashi on Eruvin 40b:14:1": {
+    "dependsOn": [
+      "Eruvin 40b:14",
+      "Rashi on Eruvin 40b:13:1",
+      "Rashi on Eruvin 40b:15:1",
+      "Steinsaltz on Eruvin 40b:14"
+    ],
+    "generatedAt": "2026-11-03T08:13:49.654Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי בדלת</strong> - פעם אחת נתקשרו שמים בעבים והתפלל רב של שבת מבעוד יום ואמר ליה רב ירמיה לרב מי בדלת מן המלאכה משקבלת עליך שבת ואמר ליה אין בדילנא:"
+  },
+  "Rashi on Eruvin 40b:15:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 40b:15:1",
+      "Rashi on Eruvin 40b:1:1",
+      "Rashi on Eruvin 40b:2:1"
+    ],
+    "generatedAt": "2026-11-03T08:15:05.395Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליתביה לינוקא</strong> - לשתותו לאחר שיברך עליו דהאי שיטעום דקאמר לאו דווקא קאמר אמברך דהוא הדין כי שתי אחרינא דטעמא משום דגנאי הוא לכוס של ברכה שלא יהנה אדם ממנו לאלתר שתהא ברכת היין דבורא פרי הגפן שלא לצורך ומכי טעם ליה אחרינא שפיר דמי וכדתניא נמי בגמרא דפרק ראוהו בית דין <span class=\"parenthesized\">(ר\"ה כט:)</span> לא יפרוס אדם פרוסה לאורחין אלא אם כן אוכל עמהם שהרי הן יכולין לעשות אבל פורס הוא לבניו ולבני ביתו כדי לחנכן במצות ואף על פי שהוא לא טעם אלא בניו שפיר דמי ואף על פי שבירך עליה ברכת המוציא:"
+  },
+  "Rashi on Eruvin 40b:15:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 40b:15:1",
+      "Rashi on Eruvin 40b:15:2",
+      "Rashi on Eruvin 40b:15:3",
+      "Tosafot on Eruvin 40b:15:1",
+      "Tosafot on Eruvin 40b:15:2",
+      "Gilyon HaShas on Eruvin 40b:1",
+      "Rashba on Eruvin 40b:15:1",
+      "Rashba on Eruvin 40b:15:2",
+      "Rashba on Eruvin 40b:15:3",
+      "Ritva on Eruvin 40b:15:1",
+      "Rabbeinu Chananel on Eruvin 40b:15:1",
+      "Steinsaltz on Eruvin 40b:15",
+      "Steinsaltz comment #1 on Eruvin 40b:15",
+      "Steinsaltz comment #2 on Eruvin 40b:15"
+    ],
+    "generatedAt": "2026-11-03T08:16:59.851Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40b:15:2"
+    ],
+    "sourceText": "דרב אחא בר יעקב לא איתפרש:"
+  },
+  "Rashi on Eruvin 40b:15:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 40b:15:1",
+      "Rashi on Eruvin 40b:15:2",
+      "Rashi on Eruvin 40b:15:3",
+      "Steinsaltz on Eruvin 40b:15:1",
+      "Steinsaltz on Eruvin 40b:15"
+    ],
+    "generatedAt": "2026-11-03T08:18:17.743Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40b:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאתי למיסרך</strong> - התינוק לאחר המנהג זה ולשתות ביום הכפורים אחר שיגדיל:"
+  },
+  "Rashi on Eruvin 40b:16:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 40b:16:1",
+      "Rashi on Eruvin 40b:15:1",
+      "Rashi on Eruvin 40b:15:2",
+      "Rashi on Eruvin 40b:15:3",
+      "Rashi on Eruvin 40b:16:2",
+      "Rashi on Eruvin 40b:16:3"
+    ],
+    "generatedAt": "2026-11-03T08:24:05.495Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי הוי עלה</strong> - צריך לומר זמן בראש השנה וביום הכפורים או לא:"
+  },
+  "Rashi on Eruvin 40b:16:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 40b:16:1",
+      "Rashi on Eruvin 40b:16:2",
+      "Rashi on Eruvin 40b:16:3"
+    ],
+    "generatedAt": "2026-11-03T08:24:38.907Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כד חזייה</strong> - רב חסדא לרב ייבא:"
+  },
+  "Rashi on Eruvin 40b:16:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 40b:16:1",
+      "Rashi on Eruvin 40b:16:2",
+      "Rashi on Eruvin 40b:16:3"
+    ],
+    "generatedAt": "2026-11-03T08:25:44.575Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40b:16:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ליה דלויה לרטיבא רפסא ליה בדוכתיה</strong> - המגביה עץ לח שאינו ראוי להיסק בידוע שצריך למקומו הואיל ואליו אינו צריך שעל חנם לא הגביהו כלומר על חנם לא באת לכאן:"
+  },
+  "Rashi on Eruvin 40b:1:1": {
+    "dependsOn": [
+      "Eruvin 40b:1",
+      "Maharsha on Eruvin 40b:1",
+      "Rashi on Eruvin 40b:1:2"
+    ],
+    "generatedAt": "2026-11-03T07:52:40.750Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ר' זירא</strong> - לעולם צריך להזכיר ומיהו לבית שמאי ברכה באנפי נפשה לראש חדש לא בעי ולאו משום דזכרון דראש השנה עולה לו דמשמע דכיון דראש השנה הוא היינו ראש חדש דאי הוה נמי שבת וראש חדש ולאו ראש השנה לא בעי ליה ברכה בפני עצמה אלא חותם מקדש השבת וישראל וראשי חדשים והלכך בראש השנה נמי חותם מקדש ישראל ויום הזכרון וראשי חדשים ואע\"ג דבשבת וראש השנה בעי לכל חד ברכה בפני עצמה בראש חדש מודו דמתוך שכולל ברכתו בתוך ברכת היום שחרית וערבית ואפילו בשאר שבתות דההיא ודאי אפילו לבית שמאי פשיטא לן דלא בעי לכל חד ברכה לעצמו דהא אי הוה מיקלע בחול אין לו ברכה שחרית וערבית אלא אומר יעלה ויבא בעבודה והלכך כי מיקלע בשבת אפילו למאן דאמר לקמן דבשבת לא מדכרינן דראש חדש בעבודה אלא בברכת היום מיכלל הוא דכיילינן ולאו בפני עצמה:"
+  },
+  "Rashi on Eruvin 40b:1:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 40b:1:1",
+      "Eruvin 40b:1"
+    ],
+    "generatedAt": "2026-11-03T07:53:44.897Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כולל נמי במוספין</strong> - לבית שמאי ואע\"ג דבחול אית ליה ברכה במוספין לעצמו הכא מיכלל הוא דכיילינן הואיל וכולל שחרית וערבית אבל שאר ימים טובים דאית להו ברכה ערבית ושחרית כי מיקלעי בחול בהני פליגי בית שמאי כי מיקלעי בשבת מצרכי להו ברכה בעצמן לכל תפלותיהם:"
+  },
+  "Rashi on Eruvin 40b:2:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 40b:2:2",
+      "Rashi on Eruvin 40b:2:3",
+      "Eruvin 40b:1"
+    ],
+    "generatedAt": "2026-11-03T07:54:42.162Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומי אית להו לבית שמאי כולל</strong> - בברכת המוספין של ראש חודש דאיקלע בשבת:"
+  },
+  "Rashi on Eruvin 40b:2:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 40b:2:1",
+      "Rashi on Eruvin 40b:2:3"
+    ],
+    "generatedAt": "2026-11-03T07:55:12.279Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתפלל שמנה</strong> - של ראש חדש ושל שבת ובמוספין קאמר:"
+  },
+  "Rashi on Eruvin 40b:2:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 40b:2:1",
+      "Rashi on Eruvin 40b:2:2"
+    ],
+    "generatedAt": "2026-11-03T07:55:58.230Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קשיא</strong> - וש\"מ כיון דבשאר שבתות קא בעו ב\"ש ברכה לראש חדש ובר\"ה לא בעו דטעמא משום דזכרון דראש השנה עולה לו וש\"מ אפילו מכלליה ואדכורי נמי לא בעינן:"
+  },
+  "Rashi on Eruvin 40b:3:1": {
+    "dependsOn": [
+      "Eruvin 40b:3",
+      "Rashi on Eruvin 40b:1:1",
+      "Rashi on Eruvin 40b:1:2",
+      "Rashi on Eruvin 40b:2:1",
+      "Rashi on Eruvin 40b:2:2",
+      "Rashi on Eruvin 40b:3:2"
+    ],
+    "generatedAt": "2026-11-03T07:57:39.970Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכולל עצמו</strong> - דשחרית וערבית בראש חדש שחל להיות בשבת:"
+  },
+  "Rashi on Eruvin 40b:3:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 40b:3:1"
+    ],
+    "generatedAt": "2026-11-03T07:58:38.439Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנאי היא</strong> - דאיכא תנא דאפילו כולל לית ליה אלא אומר יעלה ויבא בעבודה כבחול אבל בברכת היום אינו נזכר כלל אפילו לכוללו:"
+  },
+  "Rashi on Eruvin 40b:4:1": {
+    "dependsOn": [
+      "Eruvin 40b:4"
+    ],
+    "generatedAt": "2026-11-03T07:59:30.696Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומתחיל בשל שבת</strong> - ותתן לנו את יום המנוח הזה ומסיים בשל שבת מקדש השבת ותו לא ומיהו במוספים באמצע ברכה הוא נכלל אבל שחרית וערבית אינו נכלל אפילו באמצע והאי תנא לית ליה כולל שחרית וערבית:"
+  },
+  "Rashi on Eruvin 40b:5:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 40b:5:1",
+      "Eruvin 40b:5"
+    ],
+    "generatedAt": "2026-11-03T08:00:20.218Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל מקום שזקוק לשבע</strong> - ואפילו שחרית וערבית:"
+  },
+  "Rashi on Eruvin 40b:5:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 40b:5:1",
+      "Beitzah 17a:2",
+      "Beitzah 17a:3",
+      "Rashi on Eruvin 40b:5:2",
+      "Eruvin 40b:5"
+    ],
+    "generatedAt": "2026-11-03T08:02:55.388Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קדושת היום</strong> - של ראש חדש עם של שבת כגון את יום המנוח הזה ואת יום ראש חדש הזה ואם מועד הוא את יום השבת הזה ואת יום חג פלוני הזה: <span class=\"parenthesized\">(פסק ובמסכת ביצה קבעינן הלכתא דלא כי הני תנאי דמסיימי בשל שבת לחודיה במוספין אלא אף קדושת היום בעי לאדכורי בחתימה מקדש השבת וישראל והזמנים ובראש חדש מקדש השבת וישראל וראשי חדשים אבל במאי דקאמר שחרית וערבית מתפלל כדרכו ואומר מעין המאורע בעבודה הלכתא כוותיה וגבי כולל דשחרית וערבית קבעינן אין הלכה כאותו הזוג דאמרי כל מקום שזקוק לשבע כולל בפרק שני דביצה)</span>:"
+  },
+  "Rashi on Eruvin 40b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T08:04:00.801Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי הוי עלה</strong> - מהו להזכיר של ראש חדש בראש השנה:"
+  },
+  "Rashi on Eruvin 40b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T08:04:23.651Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אקרא חדתא</strong> - כשאני רואה דלעת חדשה משנה לשנה אמינא זמן:"
+  },
+  "Rashi on Eruvin 40b:9:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 40b:9:1",
+      "Rashi on Eruvin 40b:9:2",
+      "Rashi on Eruvin 40b:9:3"
+    ],
+    "generatedAt": "2026-11-03T08:05:18.862Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלו שבעת ימי בראשית</strong> - השבת נבחר מתוכה:"
+  },
+  "Rashi on Eruvin 40b:9:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 40b:9:1"
+    ],
+    "generatedAt": "2026-11-03T08:06:36.819Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמונה ימי מילה</strong> - השמיני נבחר מתוכה:"
+  },
+  "Rashi on Eruvin 40b:9:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 40b:9:1",
+      "Rashi on Eruvin 40b:9:2"
+    ],
+    "generatedAt": "2026-11-03T08:07:19.052Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 40b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלו ז' ימי הפסח</strong> - שאתה צריך לתת חלק לכולם ולקמן מפרש מאי חלק:"
+  },
+  "Tosafot on Eruvin 40b:15:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 40b:15:1",
+      "Rashi on Eruvin 40b:15:2",
+      "Rashi on Eruvin 40b:15:3",
+      "Shabbat 139a:20",
+      "Tosafot on Shabbat 139a:20:1"
+    ],
+    "generatedAt": "2026-11-03T08:21:03.742Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 40b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לית הלכתא כרב אחא בר יעקב</strong> - ירש רש\"י ולא איתפרש ור\"ח פי' דבפרק תולין <span class=\"parenthesized\">(שבת ד' קלט.)</span> גבי כשות' פריך וליתיב לינוקא דישראל ומשני דילמא אתי למיסרך וקים לן דרב אחא בר יעקב הקשה אותה קושיא:"
+  },
+  "Tosafot on Eruvin 40b:15:2": {
+    "dependsOn": [
+      "Tosafot on Eruvin 40b:15:1"
+    ],
+    "generatedAt": "2026-11-03T08:23:14.082Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 40b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלמא אתי למיסרך</strong> - אומר רבינו שמואל דוקא גבי זמן שהוא קבוע חיישינן דלמא אתי למיסרך אבל אם אירע ברית מילה בט' באב. או ביו\"כ דלא הוי אלא אקראי בעלמא לא חיישינן דלמא אתי למיסרך ומעשה היה בחופה בעשרה בטבת נתנו הכוס לתינוק לשתות: [ומעשה היה בברית מילה ברבינו יעקב בר יקר שחל עשרה באב בא' בשבת והוא היה אב\"ד וצוה להתפלל מנחה גדולה ורחצו ואכלו מפני שי\"ט שלהן היה כדכתיב שש אנכי כו' והאי דלא מברכינן שהחיינו משום צערא דינוקא. תוס' שאנ\"ץ]:"
+  }
+}

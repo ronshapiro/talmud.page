@@ -1,0 +1,449 @@
+{
+  "Rashi on Eruvin 19b:14:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 19b:15:1",
+      "Rashi on Eruvin 19b:15:2",
+      "Rashi on Eruvin 19b:7:1",
+      "Rashi on Eruvin 19b:9:1",
+      "Rashi on Eruvin 19b:9:2",
+      "Rashi on Eruvin 19b:17:1",
+      "Rashi on Eruvin 19b:17:2",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1",
+      "Rashi on Berakhot 2a:4:1"
+    ],
+    "generatedAt": "2026-11-02T10:41:38.963Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לר' יהודה</strong> - דלא אדכר פשוטין הי עדיפא ליה פשוטין עדיפי ליה ומרוחקין מן הדיומדין י\"ג אמה למיהוי היכירא ביני ביני ולא סגי בהארכת דיומדין או הארכת דיומדין עדיפא דלא ליתי אוירא דהאי גיסא ודהאי גיסא ולבטלה:"
+  },
+  "Rashi on Eruvin 19b:15:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 19b:15:2"
+    ],
+    "generatedAt": "2026-11-02T10:42:10.262Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כמה הן מקורבין</strong> - לבור:"
+  },
+  "Rashi on Eruvin 19b:15:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 19b:15:1"
+    ],
+    "generatedAt": "2026-11-02T10:42:45.242Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפילו כור</strong> - ובלבד שירבה בפסין:"
+  },
+  "Rashi on Eruvin 19b:16:1": {
+    "dependsOn": [
+      "Eruvin 19b:16",
+      "Rashi on Eruvin 19b:16:2",
+      "Steinsaltz on Eruvin 19b:16:1"
+    ],
+    "generatedAt": "2026-11-02T10:43:47.152Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יותר מבית סאתים אסור</strong> - שזה שיעור היקף שלא כתיקנו:"
+  },
+  "Rashi on Eruvin 19b:16:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 19b:16:1"
+    ],
+    "generatedAt": "2026-11-02T10:44:18.101Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דיר</strong> - מוקף לדירה שהרועה דר שם בלילה:"
+  },
+  "Rashi on Eruvin 19b:17:1": {
+    "dependsOn": [
+      "Eruvin 19b:17",
+      "Rashi on Eruvin 19b:17:2"
+    ],
+    "generatedAt": "2026-11-02T10:45:01.266Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זו מחיצה</strong> - שלימה היא:"
+  },
+  "Rashi on Eruvin 19b:17:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 19b:17:1",
+      "Eruvin 19b:17"
+    ],
+    "generatedAt": "2026-11-02T10:45:47.782Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19b:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואלו פסין הן</strong> - ובין כל אחד ואחד שלש עשרה אמות ואין עומד אלא פס אמה בין כל שלש עשרה ושלש עשרה אלמא לרבי יהודה פשוטין עביד דאי בדיומדין מאריך הא מחיצה היא:"
+  },
+  "Rashi on Eruvin 19b:19:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T10:48:24.461Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ופירצתה</strong> - אוסרת ביותר מעשר:"
+  },
+  "Rashi on Eruvin 19b:19:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 19b:19:1",
+      "Eruvin 19b:19",
+      "Eruvin 19b:16",
+      "Rashi on Eruvin 19b:14:1"
+    ],
+    "generatedAt": "2026-11-02T10:49:50.830Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19b:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואלו תורת פסין עליהן</strong> - ויש י\"ג אמה בין הארכה להארכה הלכך ביותר מבית סאתים לא מיתכשר:"
+  },
+  "Rashi on Eruvin 19b:1:1": {
+    "dependsOn": [
+      "Eruvin 19b:1"
+    ],
+    "generatedAt": "2026-11-02T10:25:22.411Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהן כעשר</strong> - אמות ששה בקר ולקמן פריך מאי כעשר הא עשר מכוונות הן:"
+  },
+  "Rashi on Eruvin 19b:1:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 19b:1:1",
+      "Rashi on Eruvin 19a:1:1",
+      "Rashi on Eruvin 19a:2:1",
+      "Rashi on Eruvin 19b:4:1",
+      "Rashi on Eruvin 19b:7:1",
+      "Rashi on Eruvin 19b:9:1",
+      "Rashi on Eruvin 18b:1:1",
+      "Rashi on Eruvin 18b:2:1",
+      "Rashi on Eruvin 18b:3:1"
+    ],
+    "generatedAt": "2026-11-02T10:29:18.199Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי\"ג וי\"ד</strong> - שמונה בקר יצאו מכלל שלש עשרה ולכלל י\"ד לא באו די\"ג אמה ושליש הן:"
+  },
+  "Rashi on Eruvin 19b:20:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 19b:20:1",
+      "Rashi on Eruvin 19b:20:2"
+    ],
+    "generatedAt": "2026-11-02T10:50:24.743Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19b:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תל המתלקט י'</strong> - טפחים:"
+  },
+  "Rashi on Eruvin 19b:20:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 19b:20:1",
+      "Rashi on Eruvin 19b:4:1",
+      "Rashi on Eruvin 19b:9:1",
+      "Rashi on Eruvin 19b:15:1",
+      "Rashi on Eruvin 2a:1:1",
+      "Rashi on Eruvin 2a:2:1"
+    ],
+    "generatedAt": "2026-11-02T10:52:25.497Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19b:20:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתוך ד'</strong> - אמות תל משופע אבל מדרונו זקוף קודם שימשך ד' אמות עלה ונתלקט גובהו לי' טפחים וקי\"ל בהזורק במס' שבת <span class=\"parenthesized\">(דף ק.)</span> דלענין שבת הוי רשות היחיד הכא מאי אי קאי במקום א' מן הדיומדין מי הוי כדיומד או לא ולהכי נקט מתוך ד' שאם היה מדרונו משופע יפה ואינו מתלקט לגובה עשרה עד שימשך יותר מד' אמות ואפי' עלה גובהו לשפוע לעשר אמות ארעא סמיכתא היא:"
+  },
+  "Rashi on Eruvin 19b:21:1": {
+    "dependsOn": [
+      "Eruvin 19b:21",
+      "Rashi on Eruvin 19b:22:1"
+    ],
+    "generatedAt": "2026-11-02T10:53:23.344Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19b:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מרובעת</strong> - אמה על אמה ואינה מחוסרת אלא חליקה שינטל עובי שבינתים ותיעשה כמרזב דופן לכאן ודופן לכאן:"
+  },
+  "Rashi on Eruvin 19b:22:1": {
+    "dependsOn": [
+      "Eruvin 19b:22",
+      "Rashi on Eruvin 19b:23:1"
+    ],
+    "generatedAt": "2026-11-02T10:54:44.048Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19b:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עגולה</strong> - מחוסרת חקיקה לחקוק וליטול בליטת עיגול ולהשוות אמצעה לפיאותיה ותהא מרובעת ועדיין היא מחוסרת חליקה:"
+  },
+  "Rashi on Eruvin 19b:23:1": {
+    "dependsOn": [
+      "Eruvin 19b:23",
+      "Rashi on Eruvin 19b:22:1",
+      "Rashi on Eruvin 19b:1:1",
+      "Rashi on Eruvin 19b:1:2",
+      "Rashi on Eruvin 2a:1:1"
+    ],
+    "generatedAt": "2026-11-02T10:56:23.309Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19b:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרי' נמי תרי רואין</strong> - לר' ישמעאל ותל נמי כאבן עגולה דמי לתנא קמא לא אמרינן תרי רואין:"
+  },
+  "Rashi on Eruvin 19b:24:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-02T10:56:46.472Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19b:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חיצת קנים</strong> - שעשאה לכאן ולכאן כעין דיומד:"
+  },
+  "Rashi on Eruvin 19b:26:1": {
+    "dependsOn": [
+      "Jastrow, גּוּדְרִיתָא 1"
+    ],
+    "generatedAt": "2026-11-02T10:57:29.151Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19b:26:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גודריתא דקני</strong> - קנים מחוברים הרבה בעץ א' סמוך לארץ ומלמעלה הן מתפרשין:"
+  },
+  "Rashi on Eruvin 19b:27:1": {
+    "dependsOn": [
+      "Eruvin 19b:27",
+      "Rashi on Eruvin 19b:26:1",
+      "Eruvin 19b:21",
+      "Eruvin 19b:22",
+      "Eruvin 19b:23"
+    ],
+    "generatedAt": "2026-11-02T10:58:45.155Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19b:27:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרי גווני אילן</strong> - אשמעי' אילן שלם דאיכא למימר יחלק ויחקק ואשמעי' האי אע\"ג דליכא למימר הכי שרי הואיל ותחתיו אחד הוא כדיומד אבל קנה פחות מג' לא:"
+  },
+  "Rashi on Eruvin 19b:28:1": {
+    "dependsOn": [
+      "Eruvin 19b:28",
+      "Rashi on Eruvin 19b:22:1",
+      "Rashi on Eruvin 19b:26:1",
+      "Eruvin 19b:20",
+      "Eruvin 19b:21",
+      "Eruvin 19b:24",
+      "Eruvin 19b:25",
+      "Rashi on Eruvin 19b:27:1",
+      "Rashi on Eruvin 19b:29:1",
+      "Steinsaltz on Eruvin 19b:28"
+    ],
+    "generatedAt": "2026-11-02T11:01:09.935Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19b:28:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי לאו גודריתא דקני</strong> - וש\"מ דאע\"ג דאין עוביו ד' בגובה עשרה אמרינן רואין:"
+  },
+  "Rashi on Eruvin 19b:29:1": {
+    "dependsOn": [
+      "Eruvin 19b:29",
+      "Rashi on Eruvin 19b:28:1",
+      "Rashi on Eruvin 19b:27:1",
+      "Tosafot on Eruvin 11a:16:1"
+    ],
+    "generatedAt": "2026-11-02T11:03:25.412Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19b:29:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא קנה קנה פחות מג'</strong> - דעשוי כדיומד ממש ובלא רואין איכא תיקון מעליא:"
+  },
+  "Rashi on Eruvin 19b:4:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 19b:1:1",
+      "Rashi on Eruvin 19b:1:2",
+      "Rashi on Eruvin 2a:1:1",
+      "Rashi on Eruvin 2a:1:2"
+    ],
+    "generatedAt": "2026-11-02T10:32:05.943Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בבור רחב שמונה</strong> - אפי' לר\"מ לא בעינן פשוטין דכי מרחיק כדי ראשה ורובה דהיינו שתי אמות לכל רוח נמצא החלל שבין ב' המחיצות שתים עשרה אמה והפסין רחבן אמה לכל רוח זה כנגד זה נמצא בין פס לפס שיעור פתח עשר אמות ור' מאיר בהכי שרי:"
+  },
+  "Rashi on Eruvin 19b:5:1": {
+    "dependsOn": [
+      "Maharshal on Eruvin 19b:2"
+    ],
+    "generatedAt": "2026-11-02T10:32:53.191Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בבור שתים עשרה</strong> - דכי מרחיק שתי אמות מכאן וכנגדם מכאן יש חלל המחיצה י\"ו אמה ומהן שתי אמות עומד הרי בין זה לזה י\"ד פרוץ וכולי האי לא שרי רבי יהודה ובעינן פשוטין לכל צד דמכל צד וצד איכא י\"ד אמות ולקמן מפרש היכא משוי להו:"
+  },
+  "Rashi on Eruvin 19b:7:1": {
+    "dependsOn": [
+      "Eruvin 19b:7"
+    ],
+    "generatedAt": "2026-11-02T10:36:09.077Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנינא</strong> - לדרב פפא במתני' . דקתני לר' מאיר ששה בקר ולרבי יהודה שמונה בקר וממילא שמעינן דר\"מ שרי בהבדלת עשר ור' יהודה שרי בהבדלת שלש עשרה אמה ושליש וכי קבעי ר' מאיר פשוטין ביותר מעשר קאמר:"
+  },
+  "Rashi on Eruvin 19b:8:1": {
+    "dependsOn": [
+      "Eruvin 19b:8",
+      "Rashi on Eruvin 19b:7:1"
+    ],
+    "generatedAt": "2026-11-02T10:37:17.007Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב פפא הך ברייתא</strong> - דתנא שיעורא דעובי הפרות לא שמיע ליה ובמתני' לא פריש להו ואתא רב פפא לפרושי לך מתניתין דשיעורא דר' מאיר עשר אמות ודר' יהודה שלש עשרה אמה ושליש והסכים רב פפא מדעתו למה ששנינו בברייתא דראשה ורובה שתי אמו' ועוביה אמה ושני שלישי אמה:"
+  },
+  "Rashi on Eruvin 19b:9:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 19b:9:2"
+    ],
+    "generatedAt": "2026-11-02T10:38:38.668Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האריך בדיומדיין</strong> - יותר מאמה לכל צד עד שהעמיד ריוח שבינתים על עשר אמות:"
+  },
+  "Rashi on Eruvin 19b:9:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 19b:9:1",
+      "Rashi on Eruvin 19b:4:1",
+      "Rashi on Eruvin 19b:7:1",
+      "Rashi on Eruvin 19b:8:1"
+    ],
+    "generatedAt": "2026-11-02T10:39:34.689Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 19b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהו</strong> - דווקא פשוטין קאמר דכיון דהרחיקן יותר משיעור חכמים בעינן היכר ביני ביני ולא סגי בהארכת דיומדין אלא מרחיק פורתא מן הפס ונותן שם פשוט וכן לאידך גיסא משום דליהוי היכירא או דילמא כיון דסוף סוף עשר ריוח הוא דאיכא לא מיתסר:"
+  },
+  "Tosafot on Eruvin 19b:18:1": {
+    "dependsOn": [
+      "Eruvin 19b:18",
+      "Tosafot on Eruvin 19b:5:1",
+      "Tosafot on Eruvin 19b:8:1",
+      "Eruvin 19b:3",
+      "Eruvin 19b:4",
+      "Eruvin 19b:11",
+      "Eruvin 19b:12",
+      "Eruvin 19b:13",
+      "Eruvin 19b:9",
+      "Eruvin 19b:10"
+    ],
+    "generatedAt": "2026-11-02T10:47:59.903Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 19b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם איתא זו היא מחיצה וזו היא מחיצה מיבעי ליה</strong> - קשה דהכא פשיטא ליה דהארכת דיומדין עדיפי מפשוטין ולעיל אליבא דר\"מ משמע ליה איפכא וי\"ל דלעיל בעי היכי דכי נמי נאריך בדיומדין יהיה פרוץ מרובה דאז פשוטין עדיפי דאיכא היכר טפי אבל הכא איירי ברחב הרבה שאם נאריך הדיומדין יהיה עומד מרובה כדקתני אי אתה מודה בדיר וסהר ומוקצה שאפילו בית י' כורין או יותר מותר לכך פריך שפיר זו מחיצה וזו מחיצה מבעי ליה:"
+  },
+  "Tosafot on Eruvin 19b:2:1": {
+    "dependsOn": [
+      "Eruvin 19b:2",
+      "Eruvin 19b:1",
+      "Kiddushin 17a:1",
+      "Kiddushin 17a:2",
+      "Kiddushin 17a:3",
+      "Kiddushin 17a:4",
+      "Kiddushin 17a:5",
+      "Kiddushin 17a:6",
+      "Kiddushin 17a:7",
+      "Kiddushin 17a:8"
+    ],
+    "generatedAt": "2026-11-02T10:30:33.719Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 19b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהן כעשר אמות</strong> - לא שייך למיפרך מניינא אתא לאשמעינן כדפריך בפ\"ק דקדושין <span class=\"parenthesized\">(דף יז.)</span> כיון דלא השמיענו מנין פרות:"
+  },
+  "Tosafot on Eruvin 19b:5:1": {
+    "dependsOn": [
+      "Eruvin 19b:5"
+    ],
+    "generatedAt": "2026-11-02T10:33:38.503Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 19b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בבור שתים עשרה כ\"ע לא פליגי</strong> - הוה מצי למנקט בבור אחת עשרה ושליש ומשהו ולא דק:"
+  },
+  "Tosafot on Eruvin 19b:8:1": {
+    "dependsOn": [
+      "Eruvin 19b:8",
+      "Eruvin 19b:3"
+    ],
+    "generatedAt": "2026-11-02T10:38:00.334Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 19b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב פפא ברייתא לא שמיע ליה</strong> - והא דמשני לעיל אברייתא יתירות על שלש עשרה היינו בתר דשמעה:"
+  }
+}

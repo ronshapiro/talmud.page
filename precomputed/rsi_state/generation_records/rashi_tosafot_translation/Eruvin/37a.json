@@ -1,0 +1,274 @@
+{
+  "Rashi on Eruvin 37a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T03:41:26.154Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 37a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אומר שני לוגין שאני עתיד להפריש תרומה</strong> - מן המאה:"
+  },
+  "Rashi on Eruvin 37a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T03:42:22.446Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 37a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי הן</strong> - בתוכו:"
+  },
+  "Rashi on Eruvin 37a:1:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 37a:1:1",
+      "Rashi on Eruvin 37a:1:2",
+      "Rashi on Eruvin 37a:1:4"
+    ],
+    "generatedAt": "2026-11-03T03:43:07.563Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 37a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומיחל</strong> - מעשר שני שהוא יכול לתקן מיד בלא הפרשה לאחר שקרא עליו שם יחללנו בכל מקום שהוא על המעות ושותה מיד ולאחר זמן יפריש התרומה והמעשר ואמרינן הוברר הדבר שזהו תרומה:"
+  },
+  "Rashi on Eruvin 37a:1:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T03:44:10.682Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 37a:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אוסרין</strong> - קס\"ד השתא דטעמייהו משום דקסברי אין ברירה:"
+  },
+  "Rashi on Eruvin 37a:3:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 37a:3:1",
+      "Rashi on Eruvin 37a:1:1",
+      "Rashi on Eruvin 37a:4:1",
+      "Rashi on Eruvin 37a:5:1"
+    ],
+    "generatedAt": "2026-11-03T04:03:06.640Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 37a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[זוזי</strong> - זוגי]:"
+  },
+  "Rashi on Eruvin 37a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-03T04:08:20.659Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 37a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעירוב</strong> - בשותפות:"
+  },
+  "Rashi on Eruvin 37a:4:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 37a:4:1"
+    ],
+    "generatedAt": "2026-11-03T04:09:38.108Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 37a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאיזה</strong> - מן הקינין שירצה ב' הפרידות יקריב עולות לשתי הנשים ואת קן הא' יקריב שתיהן חטאות לשתי הנשים וכ\"ש אם בא לחלק כל קן וקן פרידה לעולה ופרידה לחטאת דשפיר דמי אלמא מדקא אמר שמותר ליקח קיניהן בעירוב מכלל דיש ברירה דאמרינן הוברר הדבר שזו הפרידה שהקריב לשמה של זו שלה היא דשם בעלים בעינן דאי אין ברירה איכא למימר חטאת ועולה שהקריב לה לא שלה היו אלא של חברתה וקרבן הקרב בשנוי בעלים קי\"ל בפסחים <span class=\"parenthesized\">(דף ס:)</span> ובזבחים <span class=\"parenthesized\">(דף ב.)</span> דאינו עולה לבעלים וכ\"ש בחטאת שלא לשמה או שלא לשם בעליה לגמרי מיפסלא וקביעות שם בעלים אינו תלוי בכהן:"
+  },
+  "Rashi on Eruvin 37a:5:1": {
+    "dependsOn": [
+      "Eruvin 37a:5"
+    ],
+    "generatedAt": "2026-11-03T04:13:25.476Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 37a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשהתנו</strong> - הנשים ביניהן שכל מי שיקריב הכהן לשמה יהא שלה:"
+  },
+  "Rashi on Eruvin 37a:6:1": {
+    "dependsOn": [
+      "Eruvin 37a:6"
+    ],
+    "generatedAt": "2026-11-03T04:15:44.975Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 37a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הכי מאי למימרא</strong> - כיון דמדעת כהן תלוי:"
+  },
+  "Rashi on Eruvin 37a:6:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 37a:6:1",
+      "Rashi on Eruvin 37a:6:3",
+      "Eruvin 37a:4",
+      "Eruvin 37a:5"
+    ],
+    "generatedAt": "2026-11-03T04:16:57.446Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 37a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קמ\"ל כדרב חסדא</strong> - שאע\"פ שהיה כל קן וקן בפני עצמו אלא שלקחום ביחד וסד\"א על כרחו מכל קן צריך לעשות חטאת ועולה ולא יוכל לעשות מן הקן הא' שתי עולות לשתי הנשים ומקן השני ב' חטאות דלאו אדעתא דהכי יהבינהו קא משמע לן כיון דלא אקבעינהו בהדיא בשעת לקיחה לאמר פרידה זו חטאת ופרידה זו עולה אפילו קבעום לאחר לקיחה יכול הכהן לעשות כמה שירצה:"
+  },
+  "Rashi on Eruvin 37a:6:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 37a:6:1",
+      "Rashi on Eruvin 37a:6:2",
+      "Rashi on Eruvin 37a:6:3"
+    ],
+    "generatedAt": "2026-11-03T04:17:48.792Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 37a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין הקינין</strong> - של כל מחוסרי כפרה מתפרשות איזו עולה ואיזו חטאת:"
+  },
+  "Tosafot on Eruvin 37a:1:1": {
+    "dependsOn": [
+      "Eruvin 37a:1"
+    ],
+    "generatedAt": "2026-11-03T03:46:24.231Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 37a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שני לוגין שאני עתיד להפריש</strong> - ואע\"ג דע\"ה לא נחשדו על תרומה גדולה כדאמרינן בסוטה <span class=\"parenthesized\">(דף מח.)</span> כותים אפילו תרומה גדולה אין מפרישין ואע\"ג דבפרק שלשה שאכלו <span class=\"parenthesized\">(ברכות דף מז:)</span> אמרינן דכותאי עשורי מעשרי כראוי דבמאי דכתיב מזהר זהירי ה\"מ לאכול לעצמן אבל למכור לאחרים לא מעשרי דלא דרשי לפני עור לא תתן מכשול אלא כפשטיה ואע\"ג דאינן חשודין על הגזל הכא לא חשיב ליה גזל דהוי ממון שאין לו תובעין ועוד דכל זמן שלא הופרש אינו דומה שיהא גזל שעדיין לא נתחייב ליתן לכהן או ללוי ותדע דע\"ה לא נחשדו על הגזל וחשידי על המעשרות ועוד דסמכי אהא דדרשינן בבבא מציעא <span class=\"parenthesized\">(דף פח:)</span> עשר תעשר ואכלת ולא מוכר:"
+  },
+  "Tosafot on Eruvin 37a:1:2": {
+    "dependsOn": [
+      "Tosafot on Eruvin 37a:1:1"
+    ],
+    "generatedAt": "2026-11-03T03:47:45.841Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 37a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עשרה מעשר ראשון ותשעה מעשר שני</strong> - לאו דוקא עשרה ותשעה דאחר שהסיר שני לוגין לתרומה גדולה פשו להו מאה נכי ב':"
+  },
+  "Tosafot on Eruvin 37a:1:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 37a:1:2",
+      "Rashi on Eruvin 37a:1:3"
+    ],
+    "generatedAt": "2026-11-03T03:51:48.287Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 37a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיחל</strong> - פ\"ה מחלל על מעות ושותה מיד בלא הפרשה ואינו נראה דאינו יכול לחלל דדוקא בסיפא דהך מתני' גבי דמאי קתני ומחלל על מעות משום דקבע לו מקום דהוי כמו הפרשה דקתני התם מעשר שני בצפונו או בדרומו ובע\"ש בין השמשות איירי כדקתני בתוספתא וקדש עליו היום ולכך בדמאי יכול לקבוע עליו מקום דספק חשיכה מעשרין את הדמאי אבל בכותים דודאי לא מעשרי הוי ודאי ולהכי לא קתני גבי כותים מעשר שני בצפונו או בדרומו כדקתני על דמאי ולא קתני נמי הכא ומחלל על מעות כדקתני גבי דמאי אלא ומיחל פירוש מתחיל או כמו שפי' רבינו תם דמיחל כמו מיהל בה\"א פירוש מזוג כמו סבאך מהול במים <span class=\"parenthesized\">(ישעיהו א׳:כ״ב)</span> ואחר השבת מפריש מעשר ראשון ושני כדקתני בתוספתא עשרה הבאין אחריהן תשעה הבאין אחריהן דכיון שאין יכול לקבוע לו מקום אם היה שותה בלא הפרשה היה שותה טבלים למפרע:"
+  },
+  "Tosafot on Eruvin 37a:1:4": {
+    "dependsOn": [
+      "Tosafot on Eruvin 37a:1:1",
+      "Tosafot on Eruvin 37a:1:2",
+      "Tosafot on Eruvin 37a:1:3",
+      "Bava Kamma 69b:4",
+      "Bava Kamma 69b:5",
+      "Bava Kamma 69b:6",
+      "Bava Kamma 69b:7",
+      "Bava Kamma 69b:8",
+      "Bava Kamma 69b:2",
+      "Bava Kamma 69b:3"
+    ],
+    "generatedAt": "2026-11-03T03:53:38.068Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 37a:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דברי ר\"מ</strong> - משמע דאית ליה לר\"מ ברירה ולר' יהודה נמי קאמר רבה במסקנא דאית ליה ברירה והכא אסר משום דחייש לבקיעת נוד ואילו בפ' יש בכור <span class=\"parenthesized\">(בכורות דף מח.)</span> גבי נתנו עד שלא חלקו מוקי רבא ר\"מ ור' יהודה כרב אסי דאמר האחין מחצה יורשין ומחצה לקוחות אלמא מספקא להו ויש לחלק בין הכא שמברר דבריו ומתנה בפירוש ואומר שאני עתיד להפריש לההיא דאחין שחלקו דאינו מברר דבריו כלום ובמרובה <span class=\"parenthesized\">(ב\"ק דף סט:)</span> דפריך דר' יוחנן אדר' יוחנן דבההיא דכל המתלקט אית ליה ברירה ובההיא דאחין שחלקו שמעינן דלית ליה ברירה וחוזר בו הש\"ס מדבריו מתוך קושיא זו הוה מצי לחלק כדפרי' אלא דניחא ליה למימר לעולם כל הנלקט כדקתני במתניתין וניחא ליה למימר לעולם לא תיפוך כדפי' לעיל ועוד דלא מצי לחלק הכי דהא ר' יוחנן לית ליה ברירה אפילו היכא דמברר בריש כל הגט:"
+  },
+  "Tosafot on Eruvin 37a:1:5": {
+    "dependsOn": [
+      "Eruvin 37a:1",
+      "Tosafot on Eruvin 37a:1:4",
+      "Tosafot on Eruvin 37a:1:1",
+      "Tosafot on Eruvin 37a:1:2",
+      "Tosafot on Eruvin 37a:1:3",
+      "Tosafot on Eruvin 36b:13:1",
+      "Tosafot on Eruvin 36b:13:2",
+      "Eruvin 37b:16",
+      "Eruvin 37b:17"
+    ],
+    "generatedAt": "2026-11-03T04:01:50.625Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 37a:1:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי יוסי ור\"ש אוסרין</strong> - משמע דר' יוסי לית ליה ברירה וכן בסמוך גבי מעשר שני שיש לי בביתי מחולל על סלע שתעלה בידי מן הכיס וקשה דשמעינן לר' יוסי דאית ליה ברירה במי שאחזו <span class=\"parenthesized\">(גיטין דף עג:)</span> דתנן ר' יוסי אומר מגורשת ואינה מגורשת ולכי מיית הוי גיטא אלמא יש ברירה דהכי דייקינן בריש כל הגט <span class=\"parenthesized\">(גיטין דף כה:)</span> לר\"י ופ\"ה התם אע\"ג דתנאי הוא צריך ברירה כיון דאין בידו ובשעת התנאי ספק הוא והתנאי מתקיים מאליו ואי לאו משום ברירה לא הוי גט והכי נמי בשמעתא חשיב ברירה אם בא חכם למזרח כו' ואע\"ג דמתנה וכן בריש כל הגט הריני בועליך ע\"מ שירצה אבא כו' והא דאמרי בשמעתין הרי זה תרומה על זה אם ירדו גשמים כו' ה\"נ לא הוי תרומה דפשיטא ליה דהויא תרומה היינו למאן דאית ליה ברירה קאמר ולמאן דמחלק בין תולה בדעת עצמו לדעת אחרים ניחא אבל למאן דלא מחלק קשה וי\"ל דהתם בגיטין עומד הדבר להתברר בודאי שהרי יחיה או ימות אבל הכא יכול להיות שלא יבא לידי הפרשה או לא יעלה סלע מן הכיס תימה למאי דסלקא דעתך דלר' יהודה לית ליה ברירה א\"כ סבר האחין שחלקו לקוחות הן ומחזירין זה לזה ביובל כר' יוחנן וא\"כ לא משכחת דמייתי בכורים אלא חד בר חד עד יהושע בן נון דאין להן אלא קנין פירות ור' יהודה אית ליה בהחובל <span class=\"parenthesized\">(ב\"ק דף צ.)</span> דלאו כקנין הגוף דמי גבי דין יום או יומים ולר' יוסי נמי לא משכחת לה דס\"ל דאין ברירה וגבי דין יום או יומים מספקא ליה אם קנין פירות כקנין הגוף דמי אם לאו וכה\"ג דייק הש\"ס בסוף השולח <span class=\"parenthesized\">(גיטין דף מח.)</span> ותירץ ר\"י דמדין יום או יומים אין ללמוד בעלמא דהתם כתב קרא כספו ותחתיו ולהכי לא מייתי בהשולח כי מייתי ההיא דשדה אחוזה:"
+  },
+  "Tosafot on Eruvin 37a:3:1": {
+    "dependsOn": [
+      "Eruvin 37a:3",
+      "Eruvin 37a:1",
+      "Tosafot on Chullin 14a:2:2",
+      "Tosafot on Eruvin 37a:1:4",
+      "Tosafot on Chullin 14b:1:1"
+    ],
+    "generatedAt": "2026-11-03T04:06:20.350Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 37a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אוסרין</strong> - הקשה השר מקוצי דהכא משמע אי טעמא דר\"י משום בקיעת הנוד ליתא לדאיו מקמי מתני' ואילו בפ\"ק דחולין <span class=\"parenthesized\">(דף יד:)</span> בשמעתין דנסבין חברייא למימר דר\"י היא מייתי דאיו בתר דמוקי טעמא דר\"י משום בקיעת הנוד ושם פירשתי מה שנ\"ל:"
+  },
+  "Tosafot on Eruvin 37a:4:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 37a:4:1",
+      "Tosafot on Eruvin 37a:4:2",
+      "Eruvin 37a:4"
+    ],
+    "generatedAt": "2026-11-03T04:10:50.243Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 37a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והתניא ר' יוסי אומר</strong> - הוה מצי לשנויי דהתם בתולה בדעת אחרים:"
+  },
+  "Tosafot on Eruvin 37a:4:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 37a:4:1",
+      "Rashi on Eruvin 37a:4:2",
+      "Tosafot on Eruvin 37a:4:1",
+      "Tosafot on Eruvin 36b:2:1",
+      "Tosafot on Eruvin 36b:3:1",
+      "Tosafot on Eruvin 37a:1:1"
+    ],
+    "generatedAt": "2026-11-03T04:12:48.826Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 37a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאיזו שירצה כהן</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> אלמא אית ליה ברירה דאי לית ליה ברירה איכא למימר חטאת שהקריב לא שלה היה אלא לחבירתה וקרבן הקרב בשנוי בעלים פסול ואין נראה להשר דהא מוכח בריש זבחים <span class=\"parenthesized\">(דף ב:)</span> דסתמא לשמה קאי א\"כ בלא ברירה אפשר להקריב לו בסתם ונראה דמוכח דאי אין ברירה איכא למימר כל קן רחל הקריב למעלה וכל קן לאה הקריב למטה והקריב עולה למטה וחטאת למעלה:"
+  },
+  "Tosafot on Eruvin 37a:5:1": {
+    "dependsOn": [
+      "Eruvin 37a:5",
+      "Rashi on Eruvin 37a:5:1"
+    ],
+    "generatedAt": "2026-11-03T04:15:08.572Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 37a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשהתנו</strong> - <span class=\"rashi-quotation\">פי' הקונטרס</span> שהתנו הנשים שכל שיקריב לשמה יהא שלה וקשה לפירושו דהיינו ברירה גמורה שתולה בדעת הכהן שאותו שיעשה יתברר שהוא שלה דכיון שנתערבו הקינין אי אפשר כלל בלא ברירה ונראה לר\"י לפרש כשהתנו הנשים בשעת לקיחה זה יהיה שלי וזה יהיה שלך וכן בנתנו דמי קיניהן לכהן בעירוב ונתנם למוכר ופירש בשעת לקיחה קן זה לזו וקן זה לזו ונמצא שלא נתערבו הקינין אלא המעות ופריך אי הכי מאי למימרא דכיון שלא נתערבו הקינין פשיטא דשריא ומשני מהו דתימא דנגזור התנו אטו לא התנו דכיון שנותנין הדמים בעירוב יקחו גם כן הקינין בעירוב ואז אי אפשר בלא ברירה קמשמע לן דלא גזרינן וכדרב חסדא גרסינן פירוש וקמ\"ל נמי כדרב חסדא ותרתי קמ\"ל מדנקט שתי נשים ולא נקט באשה אחת משמע דאתא לאשמעינן דלא גזרינן התנו אטו לא התנו ואי לא אתא לאשמעינן נמי כדרב חסדא לא הוה ליה למתני לאיזה שירצה יקריב עולה ולאיזה שירצה יקריב חטאת דלא הוה צריך להזכיר עולה וחטאת אלא יקריב של לאה ללאה ושל רחל לרחל:"
+  }
+}

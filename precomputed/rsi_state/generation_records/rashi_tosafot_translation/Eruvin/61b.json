@@ -1,0 +1,416 @@
+{
+  "Rashi on Eruvin 61b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-04T08:47:22.106Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 61b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הדר עם העכו\"ם או עם מי שאינו מודה בעירוב</strong> - כותי כדאמר בפרק בכל מערבין <span class=\"parenthesized\">(עירובין דף לא:)</span>:"
+  },
+  "Rashi on Eruvin 61b:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-04T08:47:46.619Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 61b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אוסר עליו</strong> - לטלטל מביתו לחצר עד שישכור הימנו רשות שיש לו בחצר:"
+  },
+  "Rashi on Eruvin 61b:12:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 61b:11:1",
+      "Rashi on Eruvin 61b:11:1",
+      "Rashi on Eruvin 61b:11:2"
+    ],
+    "generatedAt": "2026-11-04T08:52:50.499Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 61b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד שיהו ב' ישראלים</strong> - דרין בב' בתים ואוסרין זה על זה ובאין לערב ביניהן הנכרי אוסר עליהן אבל על היחיד אינו אוסר ובגמרא מפרש טעמא:"
+  },
+  "Rashi on Eruvin 61b:13:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 61b:11:1"
+    ],
+    "generatedAt": "2026-11-04T08:54:15.150Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 61b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעשה בצדוקי אחד</strong> - קסבר ר\"ג צדוקי אינו כעכו\"ם ולא דמי לכותי דגרי אריות הן ואינם גרים גמורים אבל צדוקי ישראל הוא ונהפך למינות ואינו מודה בתורה שבעל פה כיון דישראל הוא יכול לבטל רשותו בלא שום שכירות:"
+  },
+  "Rashi on Eruvin 61b:13:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 61b:13:1",
+      "Rashi on Eruvin 61b:13:2",
+      "Rashi on Eruvin 61b:13:3",
+      "Rashi on Eruvin 61b:13:4"
+    ],
+    "generatedAt": "2026-11-04T08:55:00.976Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 61b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעשה בצדוקי שהיה דר עמנו במבוי</strong> - וביטלנו רשותו:"
+  },
+  "Rashi on Eruvin 61b:13:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 61b:13:2",
+      "Rashi on Eruvin 61b:13:4"
+    ],
+    "generatedAt": "2026-11-04T08:55:31.973Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 61b:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמר לנו אבא מהרו והוציאו כליכם למבוי</strong> - והחזיקו בו כיון דקדש היום מיד כדי שלא יחזור בו:"
+  },
+  "Rashi on Eruvin 61b:13:4": {
+    "dependsOn": [
+      "Eruvin 61b:13",
+      "Rashi on Eruvin 61b:13:1",
+      "Rashi on Eruvin 61b:13:2",
+      "Rashi on Eruvin 61b:13:3"
+    ],
+    "generatedAt": "2026-11-04T08:56:23.573Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 61b:13:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד שלא יוציא</strong> - כליו תחילה ויחזור ויחזיק ברשותו ויאסור עליכם וש\"מ דאינו כנכרי דאי אגירו מיניה היכי מצי למהדר אע\"ג דמפיק לא אסר דהא נקיט דמי:"
+  },
+  "Rashi on Eruvin 61b:14:1": {
+    "dependsOn": [
+      "Eruvin 61b:14"
+    ],
+    "generatedAt": "2026-11-04T09:00:55.180Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 61b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהרו ועשו צרכיכם במבוי</strong> - מבעוד יום דבשבת לא מהני לכו האי ביטול שמא יוציא ויאסור עליכם דקסבר רבי יהודה אע\"ג דהחזיקו בני מבוי במבוי תחילה מצי לאהדורי ביה:"
+  },
+  "Rashi on Eruvin 61b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-04T08:23:03.399Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 61b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעיר חריבה</strong> - מדיוריה אבל מחיצותיה קיימות סביב לה:"
+  },
+  "Rashi on Eruvin 61b:1:2": {
+    "dependsOn": [
+      "Eruvin 61b:1",
+      "Rashi on Eruvin 61b:1:1",
+      "Rashi on Eruvin 61b:1:2",
+      "Rashi on Eruvin 61b:1:3"
+    ],
+    "generatedAt": "2026-11-04T08:23:51.666Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 61b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לרבנן מהלך את כולה</strong> - דהא שבת באויר מחיצות והוא הדין לר\"ע והא דנקט רבנן משום המניח עירובו דבעי למיתני חילוק בין חריבה לישיבה ולר\"ע אפי' בישיבה אין לו ממקום עירובו אלא אלפים:"
+  },
+  "Rashi on Eruvin 61b:1:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 61b:1:1",
+      "Rashi on Eruvin 61b:1:2",
+      "Eruvin 61b:1"
+    ],
+    "generatedAt": "2026-11-04T08:25:20.219Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 61b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הניח עירובו בעיר חריבה כו'</strong> - דכי אמור רבנן כל העיר לו כד' אמות במיושבת כדתנן בהדיא אימתי בזמן שאין בה דיורין אלמא בחריבה מודו:"
+  },
+  "Rashi on Eruvin 61b:2:1": {
+    "dependsOn": [
+      "Eruvin 61b:2"
+    ],
+    "generatedAt": "2026-11-04T08:27:14.079Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 61b:2:1"
+    ],
+    "sourceText": "ה\"ג הא באין בה דיורין מודין ליה:"
+  },
+  "Rashi on Eruvin 61b:3:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 61b:3:1"
+    ],
+    "generatedAt": "2026-11-04T08:27:52.816Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 61b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינה ראויה לדירה</strong> - שנפלו מחיצותיה:"
+  },
+  "Rashi on Eruvin 61b:4:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 61b:4:2",
+      "Rashi on Eruvin 61b:3:1",
+      "Rashi on Eruvin 61b:1:1"
+    ],
+    "generatedAt": "2026-11-04T08:29:14.509Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 61b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מערת צדקיהו</strong> - גדולה היתה והיא שיצא בה צדקיהו לילה מירושלים לברוח מפני הכשדים כדכתיב בירמיה <span class=\"parenthesized\">(נב)</span> ותבקע העיר וגו':"
+  },
+  "Rashi on Eruvin 61b:4:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 61b:4:1",
+      "Rashi on Eruvin 61b:4:2",
+      "Eruvin 61b:4",
+      "Chokhmat Shlomo on Eruvin 61b:1",
+      "Maharsha on Eruvin 61b:2"
+    ],
+    "generatedAt": "2026-11-04T08:30:51.107Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 61b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף עיר חריבה</strong> - ועל כרחך חריבה מדיורין ולא מחומה דאי מחומה לא הוי תני מהלך את כולה כיון דלא שבת באויר מחיצות <span class=\"parenthesized\">(וה\"ה ר' עקיבא)</span> ואע\"ג דיש חומה קתני שבת ולא קתני הניח:"
+  },
+  "Rashi on Eruvin 61b:5:1": {
+    "dependsOn": [
+      "Eruvin 61b:5",
+      "Rashi on Eruvin 61b:5:1",
+      "Rashi on Eruvin 61b:5:2",
+      "Rashi on Eruvin 61b:5:3",
+      "Rashi on Eruvin 61b:5:4"
+    ],
+    "generatedAt": "2026-11-04T08:31:46.430Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 61b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מני</strong> - הא דלא תני הניח:"
+  },
+  "Rashi on Eruvin 61b:5:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 61b:5:1",
+      "Rashi on Eruvin 61b:5:2",
+      "Rashi on Eruvin 61b:5:3",
+      "Rashi on Eruvin 61b:5:4"
+    ],
+    "generatedAt": "2026-11-04T08:32:30.476Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 61b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי נימא ר\"ע</strong> - דלית ליה בהניח מהלך את כולה אמאי תני עיר דומיא דמערה למימר דבחריבה קאי:"
+  },
+  "Rashi on Eruvin 61b:5:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 61b:5:1",
+      "Rashi on Eruvin 61b:5:2",
+      "Eruvin 61b:4",
+      "Rashi on Eruvin 61b:5:4",
+      "Rashi on Eruvin 60b:1:1",
+      "Eruvin 15a:9",
+      "Eruvin 15a:10"
+    ],
+    "generatedAt": "2026-11-04T08:35:04.998Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 61b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפי' ישיבה נמי</strong> - הניח לר\"ע לא והא ליכא למימר דהא דנקט חריבה משום שבת נקט למימר אע\"ג דהיא חריבה היכא דשבת מהלך את כולה הא מאי איריא עיר אפילו תל ונקע וקמה קצורה ושיבולין מקיפות אותה אמרן בפרקין קמא <span class=\"parenthesized\">(דף טו.)</span> מהלך את כולה:"
+  },
+  "Rashi on Eruvin 61b:5:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 61b:5:1",
+      "Rashi on Eruvin 61b:5:2",
+      "Rashi on Eruvin 61b:5:3",
+      "Eruvin 61b:4",
+      "Rashi on Eruvin 61b:4:1",
+      "Rashi on Eruvin 61b:4:2"
+    ],
+    "generatedAt": "2026-11-04T08:35:50.990Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 61b:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לאו רבנן</strong> - ושמע מינה בחריבה מודו דהא על כרחך הא דנקט חריבה משום שיורא דשייר ולא תנא הניח נקט לה:"
+  },
+  "Rashi on Eruvin 61b:6:1": {
+    "dependsOn": [
+      "Eruvin 61b:6",
+      "Rashi on Eruvin 61b:5:4"
+    ],
+    "generatedAt": "2026-11-04T08:37:36.300Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 61b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף מערה ישיבה</strong> - ולאשמועינן דאפ\"ה שבת אין הניח לא כר\"ע:"
+  },
+  "Rashi on Eruvin 61b:7:1": {
+    "dependsOn": [
+      "Eruvin 61b:7"
+    ],
+    "generatedAt": "2026-11-04T08:38:24.612Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 61b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא כמערת צדקיהו קתני</strong> - ואין שם דיורין [דרין] דהא של מלך היתה א\"נ השתא לית בה דיורין:"
+  },
+  "Rashi on Eruvin 61b:8:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 61b:8:1",
+      "Rashi on Eruvin 61b:8:2",
+      "Rashi on Eruvin 61b:8:3",
+      "Eruvin 61a:14",
+      "Eruvin 61a:15",
+      "Eruvin 61a:16",
+      "Eruvin 61b:1",
+      "Eruvin 61b:2",
+      "Eruvin 61b:3",
+      "Eruvin 61b:4",
+      "Eruvin 61b:9"
+    ],
+    "generatedAt": "2026-11-04T08:39:42.964Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 61b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בבי כנישתא דבי אגובר</strong> - בית הכנסת גדול היה וכולו מובלע באלפים של תחום מברכתא והם לא היו חוששין להוליך העירוב עד סופו ולהניחו שם דסבירא להו כרבנן דכיון מונח באויר מחיצות מהלכין את כולו וחוצה לו אלפים:"
+  },
+  "Rashi on Eruvin 61b:8:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 61b:8:1",
+      "Rashi on Eruvin 61b:8:3"
+    ],
+    "generatedAt": "2026-11-04T08:40:25.182Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 61b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גוו ביה טפי</strong> - העמיקו עוד להעמיד העירוב עד סופו ולהניחו שם:"
+  },
+  "Rashi on Eruvin 61b:8:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 61b:8:1",
+      "Rashi on Eruvin 61b:8:2",
+      "Rashi on Eruvin 61b:8:3",
+      "Rashi on Eruvin 61a:1:1",
+      "Rashi on Eruvin 61a:1:2"
+    ],
+    "generatedAt": "2026-11-04T08:41:10.414Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 61b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי היכי דלישתרו לכו טפי</strong> - דהא ממקום העירוב בעיתו למדוד:"
+  },
+  "Rashi on Eruvin 61b:9:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 61b:9:2",
+      "Jastrow, פַּלְגָּאָה 1"
+    ],
+    "generatedAt": "2026-11-04T08:42:12.112Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 61b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פלגאה</strong> - חולק על חכמים אתה:"
+  },
+  "Rashi on Eruvin 61b:9:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 61b:9:1",
+      "Rashi on Eruvin 61a:17:1"
+    ],
+    "generatedAt": "2026-11-04T08:43:28.569Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 61b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעירובין לית דחש להא דר' עקיבא</strong> - דקי\"ל הלכה כדברי המיקל בעירוב:"
+  },
+  "Tosafot on Eruvin 61b:11:1": {
+    "dependsOn": [
+      "Eruvin 61b:11",
+      "Eruvin 62a:2"
+    ],
+    "generatedAt": "2026-11-04T08:51:30.004Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 61b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הדר. ר' אליעזר בן יעקב אומר עד שיהו ב' ישראלים אוסרים כו'</strong> - משמע דאתרוייהו קאי ר\"א בן יעקב אעכו\"ם ואכותי ובגמ' מפרש דטעמא דראב\"י דכיון דעכו\"ם חשוד אשפיכות דמים בתרי דשכיחי דדיירי גזרו בהו רבנן שמא ילמד ממעשיו כו' וא\"ת והרי כותים דלא חשידי אשפיכות דמים ולא ארביעה כדמוכח פ\"ק דמס' ע\"ג <span class=\"parenthesized\">(דף טו:)</span> שמעמידין בהמה בפונדקאות של כותים ומתיחדין עמהם א\"כ שכיחי דדיירי ונגזור בחד ואין לומר דר\"א בן יעקב סבר דכותים גרי אריות הן וחשידי דהא אפילו למ\"ד גרי אריות הן לא חשידי מדפריך התם בע\"ז עלה מברייתא דאסרו למכור בהמה דקה לכותים ורוצה להוכיח מתוך כך דטעמא משום דאתי לזבוני לעכו\"ם ולא משום דחשידי ואמאי דלמא בכותים גרי אריות או גרי אמת הן פליגי ואומר ר\"י דעיקר תקנה משום עכו\"ם איתקן שמא ילמד ממעשיו ולא משום צדוקי וכותי ואגב שאסרו בעכו\"ם אסרו נמי בכותי וכיון שלא נאסר אלא ע\"י עכו\"ם לא החמיר בהן יותר מן העכו\"ם:"
+  },
+  "Tosafot on Eruvin 61b:13:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 61b:13:1",
+      "Rashi on Eruvin 61b:13:2",
+      "Rashi on Eruvin 61b:13:3",
+      "Rashi on Eruvin 61b:13:4",
+      "Eruvin 61b:13"
+    ],
+    "generatedAt": "2026-11-04T08:59:51.312Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 61b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רבן גמליאל מעשה בצדוקי א' כו'</strong> - קסבר צדוקי אינו כעכו\"ם כדמפרש בגמ' ו<span class=\"rashi-quotation\">פי' בקונטרס</span> אבל בכותי מודה דהרי הוא כעכו\"ם משום דגרי אריות הן ואע\"ג דת\"ק דאסר כותי היינו רבי מאיר כדאמר בגמ' ושמעינן ליה דקסבר גרי אמת הן בפרק ד' וה' <span class=\"parenthesized\">(ב\"ק דף לח:)</span> ואפ\"ה אסר בכותי מ\"מ הוצרך <span class=\"rashi-quotation\">בקונטרס</span> לפרש טעמא דר\"ג משום גרי אריות דת\"ק ניחא דלא מפליג בין צדוקי לכותי ואסר צדוקי אע\"ג דישראל גמור הוא וה\"ה בכותי אבל לר\"ג דמפליג בין צדוקי לכותי ע\"כ צריך לומר משום דצדוקי ישראל גמור הוא וכותי עו\"ג גמור דגרי אריות הן ומיהו קשיא לר\"י דמשמע בהדיא בפ\"ק דגיטין <span class=\"parenthesized\">(דף י.)</span> דר\"ג סבר ליה דכותים גרי אמת הן דמכשיר גט ששני עדיו כותים ואמר נמי בפ\"ק דחולין <span class=\"parenthesized\">(דף ה:)</span> דר\"ג ובית דינו נמנו אשחיטת כותים ואסרוה ומפרש התם טעמא משום דסבירא להו כר\"מ דגזר על יינם לפי שנמצא להם דמות יונה וחייש למיעוט ש\"מ דגרי אמת הן דאי גרי אריות הן לא היה צריך למיגזר עליהן ומאליהן קמיתסרי <span class=\"rashi-quotation\">ובקונטרס פירש</span> דההיא רבן גמליאל בנו של ר' יהודה הנשיא אבל תימה דבכל מקום רגיל לקרותו או רבן גמליאל בר רבי או רבן גמליאל בנו של ר\"י הנשיא ועוד דלא יתכן דר\"מ דהוה קודם רבן גמליאל בר רבי גזר על יינם דרבנן ושבק שחיטה דאורייתא שהוצרך. ר\"ג ב\"ר לגזור עליה ועוד דאין סברא כלל דאם גזר על יינם משום יין נסך שתהא שחיטתם מותרת כיון שנחשבו כמומרי' לעכו\"ם דהא אמרינן בפ\"ק דחולין <span class=\"parenthesized\">(דף ה.)</span> מומר לעכו\"ם אסור לאכול משחיטתו אלא ודאי ר\"ג דיבנה הוה ותחלה גזר על שחיטה דאורייתא ושבק סתם יינם דרבנן ואע\"ג דר\"ג קודם דר' מאיר הוה תלי אותו בדר\"מ משום דפשיטא לן בכל דוכתא דחייש ר\"מ למיעוט ולספרים נמי דגרסי הכא רשב\"ג הא שמעינן ליה בפ\"ק דחולין <span class=\"parenthesized\">(דף ד.)</span> דס\"ל כותים גירי אמת הן גבי מצת כותי מותרת דקתני רשב\"ג אומר כל מצוה שהחזיקו בה כותים יותר מדקדקין בה מישראל ועוד דאם כן מה חדשו ר' אמי ור' אסי במה שעשאום עכו\"ם גמורים לבטל רשות וליתן רשות והלא כך היו מעולם לכ\"ע דליכא למימר דמעיקרא גזור ולא קבלו מינייהו דלענין שחיטה ויין נסך הוא דקאמר התם גזור ולא קבלו מינייהו ונראה לר\"י דבין צדוקי ובין כותי לדירה אינם כעכו\"ם ומה שלא הוסיף כותי בחסורי מחסרא בגמ' ר\"ג אומר צדוקים וכותים אינם כעכו\"ם היינו משום שלא בא המתרץ אלא לתקן שלא יקשה צדוקי מאן דכר שמיה ועוד י\"ל דאפילו ר\"ג עצמו לא הזכיר בדבריו כשחלק על תנא קמא אלא צדוקי לבדו לפי שלא הביא ראייה אלא מצדוקי וא\"ת אי גרס רשב\"ג היכי פסקינן בגמרא כר\"א בן יעקב ור' יוחנן נמי דקאמר נהגו כר\"א בן יעקב הא ר' יוחנן נמי אמר הלכה כרשב\"ג במשנתינו וי\"ל דלא פסקינן בגמרא כר\"א בן יעקב אלא על עיקר דבריו דלא אסר בחד ישראל עד שיהו שנים אבל בהא דסבר ליה כת\"ק דכותים כעכו\"ם לא פסקינן כוותיה ואפשר דבהא הלכה כרשב\"ג דאינן כעכו\"ם ועוד דהאידנא לא נפקא לן מידי לענין כותים לבסוף כשעשאום עכו\"ם גמורים:"
+  },
+  "Tosafot on Eruvin 61b:9:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 61b:9:1",
+      "Rashi on Eruvin 61b:9:2",
+      "Tosafot on Eruvin 46a:6:3",
+      "Tosafot on Eruvin 46a:19:1",
+      "Eruvin 46a:4",
+      "Eruvin 46a:5",
+      "Rashi on Eruvin 46a:4:1",
+      "Rashi on Eruvin 46a:4:2",
+      "Eruvin 46a:9",
+      "Eruvin 61b:9",
+      "Tosafot on Eruvin 61b:11:1",
+      "Tosafot on Eruvin 61b:13:1"
+    ],
+    "generatedAt": "2026-11-04T08:46:26.209Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 61b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לית דחש להא דר' עקיבא</strong> - דקיימא לן כדברי המיקל בעירוב <span class=\"rashi-quotation\">כדפי' בקונט'</span> ותחומין דרבנן כדפי' בפ' מי שהוציאוהו <span class=\"parenthesized\">(לעיל עירובין דף מו.)</span>:"
+  }
+}
