@@ -235,6 +235,12 @@ app.get(
   "/dapim-left",
   (req, res) => sendLazyStaticFile(res, "static/dapim_left.html"));
 app.get(
+  "/dapim-left-service-worker.js",
+  (req, res) => {
+    res.setHeader("Service-Worker-Allowed", "/");
+    sendLazyStaticFile(res, "static/dapim_left_service_worker.js");
+  });
+app.get(
   "/scary--editor--beware",
   (req, res) => sendLazyStaticFile(res, "static/local_storage_editor.html"));
 
