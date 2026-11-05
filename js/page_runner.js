@@ -13,10 +13,12 @@ import {registerRefSelectionSnackbarListener} from "./ref_selection_snackbar.ts"
 import {serviceWorkerMain} from "./service_worker_registration.ts";
 import {initializeLocalStorage} from "./initializeLocalStorage";
 import {initializeRsiReviewKey} from "./rsiReviewKey.ts";
+import {initializeOfflineRsiRetries} from "./offlineRsiEdits.ts";
 import {disablePrecachingPreference, isSiteLanguageHebrew} from "./settings.ts";
 
 initializeLocalStorage();
 initializeRsiReviewKey();
+initializeOfflineRsiRetries();
 
 const bookTitleAndRange = () => {
   const metadata = amudMetadata();

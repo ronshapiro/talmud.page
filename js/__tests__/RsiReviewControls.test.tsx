@@ -4,6 +4,7 @@ import {
   resetSnackbarDismissTimerForTesting,
   RsiReviewControls,
 } from "../RsiReviewControls";
+import {getPendingOfflineRsiDecisions} from "../offlineRsiEdits";
 import {postWithRetry} from "../post";
 import {Button, snackbars} from "../snackbar";
 import {rsiReviewerIdentityPreference, rsiReviewKeyPreference, rsiReviewPrNumberPreference}
@@ -487,6 +488,45 @@ describe("RsiReviewControls", () => {
       expect(buttons[0].text).toBe("סגור");
 
       updateSpy.mockRestore();
+    });
+
+    describe("offline behavior", () => {
+      test("indicates saved offline in snackbar when navigator is offline and persists to queue", async () => {
+        const onLineSpy = jest.spyOn(navigator, "onLine", "get").mockReturnValue(false);
+        const showSpy = jest.spyOn(snackbars.reportedIssueSent, "show");
+        (postWithRetry as jest.Mock).mockReturnValue(new Promise(() => {}));
+
+        const root = mount(<RsiReviewControls comment={
+          comment({pendingReview: "Zevachim 2a", ref: "Zevachim 2a:1"})
+        } />);
+
+        await flushAsync(() => click(query(root, "button")));
+
+        expect(showSpy).toHaveBeenCalledWith(
+          "Submitting approve for Zevachim 2a:1… (saved offline, will retry when back online)",
+          expect.anything(),
+        );
+
+        const pendingDecisions = getPendingOfflineRsiDecisions();
+        expect(pendingDecisions.length).toBe(1);
+        expect(pendingDecisions[0].ref).toBe("Zevachim 2a:1");
+        expect(pendingDecisions[0].page).toBe("Zevachim 2a");
+        expect(pendingDecisions[0].decision).toBe("approve");
+
+        showSpy.mockRestore();
+        onLineSpy.mockRestore();
+      });
+
+      test("removes decision from offline queue upon successful completion", async () => {
+        (postWithRetry as jest.Mock).mockResolvedValue({url: "https://example.com/pull/1"});
+        const root = mount(<RsiReviewControls comment={
+          comment({pendingReview: "Zevachim 2a", ref: "Zevachim 2a:1"})
+        } />);
+
+        await flushAsync(() => click(query(root, "button")));
+
+        expect(getPendingOfflineRsiDecisions()).toEqual([]);
+      });
     });
   });
 });
