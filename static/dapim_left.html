@@ -33,6 +33,9 @@
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('/dapim-left-service-worker.js', { scope: '/dapim-left' })
+                    .then((registration) => {
+                        registration.update();
+                    })
                     .catch((error) => console.warn('Service worker registration failed:', error));
             });
         }
