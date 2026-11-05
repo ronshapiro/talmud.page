@@ -114,15 +114,22 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">בתרומה דרבנן</strong> - תרומת חוץ לארץ:"
   },
   "Rashi on Kiddushin 69b:12:3": {
-    "dependsOn": [
-      "Rashi on Kiddushin 69b:12:1",
-      "Rashi on Kiddushin 69b:12:2"
-    ],
-    "generatedAt": "2026-11-03T00:18:33.679Z",
-    "model": "gemini-3.8-flash-medium",
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:44:28.167Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 69b:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתרומה דאורייתא</strong> - דגן ותירוש ויצהר לא אכול:"
+  },
+  "Rashi on Kiddushin 69b:12:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:44:42.967Z",
+    "model": "claude-sonnet-5-5-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:12:4"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">תרומה דאורייתא</strong> - משבאו לארץ:"
   },
@@ -233,14 +240,22 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">מסייע ליה לרבי אלעזר</strong> - דנקט תנא דידן לישנא יתירא לאשמועינן שכל עצמו של עזרא לנקות את בבל נתכוון לפי שראה אותם שנתערבו בהן וראה שהיו חכמי הדור עולין עמו ואין עוד בבבל שיתעסק לבדוק בהן לייחסן עמד והפריש פסוליהן והוליכן עמו והדור שראו הפרשתם הכירו בהם ולא חשש שיתערבו בהן אלו הפסולין העולים ולדורות הבאים נמי כיון דאמר מר <span class=\"parenthesized\">(לקמן קידושין דף עו:)</span> לשכת הגזית היתה שם ששם היו יושבים מייחסי כהונה ולויה בכל יום מיזהר זהירי בפסולי:"
   },
   "Rashi on Kiddushin 69b:3:1": {
-    "dependsOn": [
-      "Rashi on Kiddushin 69b:3:1"
-    ],
-    "generatedAt": "2026-11-02T23:56:47.751Z",
-    "model": "gemini-3.8-flash-medium",
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:44:01.855Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 69b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא למ\"ד העלום תנן</strong> - הואיל ובעל כרחם העלום עם אלו יצא קול פסול עליהם והכל ידעו בפסולן ונזהרו בהם כל העולים:"
+  },
+  "Rashi on Kiddushin 69b:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:44:14.726Z",
+    "model": "claude-sonnet-5-5-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69b:3:2"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">העלום</strong> - על כרחם:"
   },

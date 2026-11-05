@@ -188,18 +188,14 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">וניתני הכא האיש קונה</strong> - כי היכי דתני בלישנא דרבנן האיש מקדש:"
   },
   "Rashi on Kiddushin 2b:4:1": {
-    "dependsOn": [
-      "Rashi on Kiddushin 2b:4:1",
-      "Rashi on Kiddushin 2b:4:2",
-      "Kiddushin 2b:4"
-    ],
-    "generatedAt": "2026-11-01T08:12:21.759Z",
-    "model": "gemini-3.8-flash-medium",
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:33:30.104Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 2b:4:1"
     ],
-    "sourceText": "<strong class=\"dibur-hamatchil\">וניתני</strong> - הכא האיש קונה בג' דרכים:"
+    "sourceText": "<strong class=\"dibur-hamatchil\">וניתני</strong> - הכא האיש קונה בג' דרכים. ומקנה אותה לעצמה בשתי דרכים. ומשני משום דאיכא בהנהו ב' דרכים מיתת הבעל."
   },
   "Rashi on Kiddushin 2b:4:2": {
     "dependsOn": [

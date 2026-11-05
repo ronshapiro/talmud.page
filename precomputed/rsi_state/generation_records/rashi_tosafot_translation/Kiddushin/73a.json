@@ -146,6 +146,16 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">בת אסופי</strong> - מן הנשואין שמא בעל האסופית הוא אביו:"
   },
+  "Rashi on Kiddushin 73a:16:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:47:42.482Z",
+    "model": "claude-sonnet-5-5-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73a:16:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בת אסופי</strong> - מן הנשואין שמא בעל האסופית הוא אביו:"
+  },
   "Rashi on Kiddushin 73a:1:1": {
     "dependsOn": [
       "Kiddushin 73a:1",
@@ -264,14 +274,22 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">ואיבעית אימא הני נמי תרי קהלי נינהו</strong> - כלומר להנך תרתי דרשות תרי קראי איצטריכו ואי לא אייתר קרא לא הוה דרשינן ממזר ודאי הוא דלא יבא הא ספק ממזר יבא אלא הוה אמרינן ככל שאר ספיקי איסור על הודאי אזהרת ודאי ללקות עליו ועל אזהרת ספק אזהרת ספק לאיסורא:"
   },
   "Rashi on Kiddushin 73a:4:2": {
-    "dependsOn": [
-      "Rashi on Kiddushin 73a:4:1"
-    ],
-    "generatedAt": "2026-11-03T04:41:07.811Z",
-    "model": "gemini-3.8-flash-medium",
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:44:58.342Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 73a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הני נמי תרי קהלי נינהו</strong> - גבי כהנים ולוים איצטריכו תרי קהלי לדרשה ואפי' הכי אייתר להו חד לקהל גרים:"
+  },
+  "Rashi on Kiddushin 73a:4:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:45:11.591Z",
+    "model": "claude-sonnet-5-5-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 73a:4:3"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">הקהל חוקה אחת לכם ולגר</strong> - למה לי למכתב קהל הכא אלא למימר דגר אקהל קאי ולאשמועינן דאיקרי קהל:"
   },

@@ -242,38 +242,42 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">עשרה יוחסין עלו מבבל</strong> - כשעלו בני הגולה ובגמרא מפרש לה דאשמועינן שמשפחות שבבבל מיוחסות הן שהפריש עזרא כל הפסולין משם והוליכן עמו:"
   },
   "Rashi on Kiddushin 69a:3:3": {
-    "dependsOn": [
-      "Rashi on Kiddushin 69a:3:1",
-      "Rashi on Kiddushin 69a:3:2",
-      "Rashi on Kiddushin 69a:3:3",
-      "Rashi on Kiddushin 69a:3:4",
-      "Rashi on Kiddushin 69a:3:5"
-    ],
-    "generatedAt": "2026-11-02T23:22:55.803Z",
-    "model": "gemini-3.8-flash-medium",
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:40:11.370Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 69a:3:3"
     ],
-    "sourceText": "<strong class=\"dibur-hamatchil\">בנה עבד</strong> - ואין ממזר דהא ולדה כמוה:"
+    "sourceText": "<strong class=\"dibur-hamatchil\">יכולין ממזרין ליטהר</strong> - מפסול זרעם שלא יהו בניהם ממזרים:"
   },
   "Rashi on Kiddushin 69a:3:4": {
     "dependsOn": [],
-    "generatedAt": "2026-11-02T23:24:32.159Z",
-    "model": "gemini-3.8-flash-medium",
+    "generatedAt": "2026-11-05T09:40:22.419Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 69a:3:4"
     ],
-    "sourceText": "<strong class=\"dibur-hamatchil\">בן חורין</strong> - ומותר בישראלית:"
+    "sourceText": "<strong class=\"dibur-hamatchil\">בנה עבד</strong> - ואין ממזר דהא ולדה כמוה:"
   },
   "Rashi on Kiddushin 69a:3:5": {
     "dependsOn": [],
-    "generatedAt": "2026-11-02T23:25:17.256Z",
-    "model": "gemini-3.8-flash-medium",
+    "generatedAt": "2026-11-05T09:40:37.028Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 69a:3:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בן חורין</strong> - ומותר בישראלית:"
+  },
+  "Rashi on Kiddushin 69a:3:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:41:21.564Z",
+    "model": "claude-sonnet-5-5-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:3:6"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">הרי זה עבד ממזר</strong> - בגמרא יליף לה טעמא:"
   },
@@ -293,44 +297,42 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">לכתחילה קאמר</strong> - ממזר נושא שפחה דקסבר דכי כתיב לא יהיה קדש בישראל כשר כתיב ולא בממזר:"
   },
   "Rashi on Kiddushin 69a:4:2": {
-    "dependsOn": [
-      "Rashi on Kiddushin 69a:4:1",
-      "Rashi on Kiddushin 69a:4:3",
-      "Rashi on Kiddushin 69a:4:4"
-    ],
-    "generatedAt": "2026-11-02T23:27:12.282Z",
-    "model": "gemini-3.8-flash-medium",
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:41:56.968Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 69a:4:2"
     ],
-    "sourceText": "<strong class=\"dibur-hamatchil\">או דיעבד קאמר</strong> - ממזר שנשא שפחה אבל לכתחילה לא ישא דהא ישראל הוא וקרינא ביה לא יהיה קדש <span class=\"parenthesized\">(דברים כ״ג:י״ח)</span> דמתרגמינן לא יסב גברא וגו' דשפחה הרי היא כבהמה וביאותיה הפקר וקדישות:"
+    "sourceText": "<strong class=\"dibur-hamatchil\">לכתחילה קאמר</strong> - ממזר נושא שפחה דקסבר דכי כתיב לא יהיה קדש בישראל כשר כתיב ולא בממזר:"
   },
   "Rashi on Kiddushin 69a:4:3": {
-    "dependsOn": [
-      "Rashi on Kiddushin 69a:4:1",
-      "Rashi on Kiddushin 69a:4:2",
-      "Rashi on Kiddushin 69a:4:4"
-    ],
-    "generatedAt": "2026-11-02T23:29:04.230Z",
-    "model": "gemini-3.8-flash-medium",
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:42:21.900Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 69a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או דיעבד קאמר</strong> - ממזר שנשא שפחה אבל לכתחילה לא ישא דהא ישראל הוא וקרינא ביה לא יהיה קדש <span class=\"parenthesized\">(דברים כ״ג:י״ח)</span> דמתרגמינן לא יסב גברא וגו' דשפחה הרי היא כבהמה וביאותיה הפקר וקדישות:"
+  },
+  "Rashi on Kiddushin 69a:4:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:42:42.291Z",
+    "model": "claude-sonnet-5-5-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 69a:4:4"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">טיהרת את הזכרים</strong> - שילכו למקום שאין מכירין ויאמר עבד אני ונושא שפחה ואין מוחה בידו:"
   },
-  "Rashi on Kiddushin 69a:4:4": {
-    "dependsOn": [
-      "Rashi on Kiddushin 69a:4:1",
-      "Rashi on Kiddushin 69a:4:2",
-      "Rashi on Kiddushin 69a:4:3"
-    ],
-    "generatedAt": "2026-11-02T23:29:45.095Z",
-    "model": "gemini-3.8-flash-medium",
+  "Rashi on Kiddushin 69a:4:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:43:39.763Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
-      "Rashi on Kiddushin 69a:4:4"
+      "Rashi on Kiddushin 69a:4:5"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">ואת הנקבות לא טיהרת</strong> - אין דרך אשה לגלות ממקומה ולבקש תחבולות לינשא בסתר מאחר שיש מוחין בידה אלמא ר' טרפון דיעבד קאמר דאי לכתחילה כיון דאין מוחין בידה ממזרת נמי תנסיב לעבד:"
   },

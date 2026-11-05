@@ -10,55 +10,42 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">אינו צריך להביא ראיה לא על האשה</strong> - שהיא מיוחסת שכבר בדקוה כשנשאה:"
   },
   "Rashi on Kiddushin 79b:10:2": {
-    "dependsOn": [
-      "Kiddushin 79b:10"
-    ],
-    "generatedAt": "2026-11-03T15:56:05.977Z",
-    "model": "gemini-3.8-flash-medium",
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:56:35.057Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 79b:10:2"
     ],
-    "sourceText": "<strong class=\"dibur-hamatchil\">ולא על הבנים</strong> - כדמוקי בגמרא בקטנים וכרוכים אחריה דבחזקת אמן הן ואין צריכים לייחס ע\"י עדים:"
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינו צריך להביא ראיה לא על האשה</strong> - שהיא מיוחסת שכבר בדקוה כשנשאה:"
   },
   "Rashi on Kiddushin 79b:10:3": {
-    "dependsOn": [
-      "Rashi on Kiddushin 79b:10:1",
-      "Rashi on Kiddushin 79b:10:2",
-      "Rashi on Kiddushin 79b:10:3",
-      "Rashi on Kiddushin 79b:10:4",
-      "Steinsaltz comment #1 on Kiddushin 79b:10",
-      "Steinsaltz comment #2 on Kiddushin 79b:10",
-      "Steinsaltz comment #3 on Kiddushin 79b:10",
-      "Kiddushin 79b:11",
-      "Kiddushin 79b:12",
-      "Rashi on Kiddushin 79b:11:1",
-      "Maharshal on Kiddushin 79b:7:1",
-      "Tosafot on Kiddushin 79b:10:1",
-      "Rashi on Kiddushin 79b:1:1",
-      "Rashi on Kiddushin 79b:2:1",
-      "Rashi on Kiddushin 79b:3:1"
-    ],
-    "generatedAt": "2026-11-03T16:02:46.977Z",
-    "model": "gemini-3.8-flash-medium",
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:57:04.486Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 79b:10:3"
     ],
-    "sourceText": "<strong class=\"dibur-hamatchil\">מביא ראיה על הבנים</strong> - שהיא מיוחסת ואינו מביא ראיה על הבנים שהרי כרוכין אחריה:"
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא על הבנים</strong> - כדמוקי בגמרא בקטנים וכרוכים אחריה דבחזקת אמן הן ואין צריכים לייחס ע\"י עדים:"
   },
   "Rashi on Kiddushin 79b:10:4": {
-    "dependsOn": [
-      "Rashi on Kiddushin 79b:10:1",
-      "Rashi on Kiddushin 79b:10:2",
-      "Rashi on Kiddushin 79b:10:3",
-      "Rashi on Kiddushin 79b:10:4"
-    ],
-    "generatedAt": "2026-11-03T16:03:20.189Z",
-    "model": "gemini-3.8-flash-medium",
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:57:26.688Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 79b:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מביא ראיה על הבנים</strong> - שהיא מיוחסת ואינו מביא ראיה על הבנים שהרי כרוכין אחריה:"
+  },
+  "Rashi on Kiddushin 79b:10:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:57:40.231Z",
+    "model": "claude-sonnet-5-5-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 79b:10:5"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">ואין צריך להביא ראיה על האשה</strong> - שהיתה מיוחסת לפי שכבר בדקו אחריה כשנשאה כאן:"
   },
@@ -118,15 +105,22 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">וכולן</strong> - דקתני מתניתין א\"צ להביא ראיה על הבנים:"
   },
   "Rashi on Kiddushin 79b:12:2": {
-    "dependsOn": [
-      "Rashi on Kiddushin 79b:12:1",
-      "Steinsaltz on Kiddushin 79b:12"
-    ],
-    "generatedAt": "2026-11-03T16:11:19.483Z",
-    "model": "gemini-3.8-flash-medium",
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:57:59.077Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 79b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכולן</strong> - דקתני מתניתין א\"צ להביא ראיה על הבנים:"
+  },
+  "Rashi on Kiddushin 79b:12:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:58:10.055Z",
+    "model": "claude-sonnet-5-5-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 79b:12:3"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">בכרוכין אחריה</strong> - נדבקין אצלה:"
   },
@@ -254,21 +248,22 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">מי איכא למימר העמד הגוף על חזקתו</strong> - ותהוי נערה יומא דמשלם שית אין בה לא חזקת נערות ולא חזקת בגרות שהיום היא עומדת להשתנות:"
   },
   "Rashi on Kiddushin 79b:4:1": {
-    "dependsOn": [
-      "Kiddushin 79b:4",
-      "Rashi on Kiddushin 79b:3:1",
-      "Rashi on Kiddushin 79b:3:2",
-      "Rashi on Kiddushin 79b:3:3",
-      "Rashi on Kiddushin 79a:11:2",
-      "Tosafot on Kiddushin 79b:4:1",
-      "Steinsaltz on Kiddushin 79b:4",
-      "Rashi on Kiddushin 79a:6:2"
-    ],
-    "generatedAt": "2026-11-03T15:38:18.923Z",
-    "model": "gemini-3.8-flash-medium",
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:55:23.310Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 79b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם כו'</strong> - וכיון דספיקא הוא אמרינן העמד ממון על חזקה שהיה מוחזק בה קודם מתנה זו שהיה ספק:"
+  },
+  "Rashi on Kiddushin 79b:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:56:21.780Z",
+    "model": "claude-sonnet-5-5-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 79b:4:2"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">מי מפקא נפשה מחזקה</strong> - כלומר כי מספקינן לה בנערה מי מפקינן לה מחזקת הרבה נערות ביום משלם שית:"
   },

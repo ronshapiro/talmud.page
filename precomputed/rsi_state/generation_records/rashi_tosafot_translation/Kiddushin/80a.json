@@ -250,46 +250,32 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">זו היא ששורפין עליה את התרומה</strong> - חזקה ששורפין עליה את התרומה חזקת תינוקות שמחזיקין לטפח שורפין עליה תרומה דהאי מטמאין דקאמרי רבנן לשרוף קאמרי:"
   },
   "Rashi on Kiddushin 80a:8:2": {
-    "dependsOn": [
-      "Rashi on Kiddushin 80a:8:1",
-      "Rashi on Kiddushin 80a:8:2",
-      "Rashi on Kiddushin 80a:8:3",
-      "Kiddushin 80a:7",
-      "Kiddushin 80a:8",
-      "Kiddushin 80a:9",
-      "Rashi on Kiddushin 80a:2:1",
-      "Rashi on Kiddushin 80a:2:2",
-      "Rashi on Kiddushin 80a:2:3",
-      "Rashi on Kiddushin 80a:2:4",
-      "Kiddushin 80a:3",
-      "Kiddushin 80a:4",
-      "Rashi on Kiddushin 80a:4:1",
-      "Rashi on Kiddushin 80a:4:2",
-      "Rashi on Kiddushin 80a:4:3",
-      "Kiddushin 80a:5",
-      "Kiddushin 80a:6",
-      "Rashi on Kiddushin 80a:6:1",
-      "Rashi on Kiddushin 80a:6:2"
-    ],
-    "generatedAt": "2026-11-03T16:42:03.367Z",
-    "model": "gemini-3.8-flash-medium",
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:58:25.467Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 80a:8:2"
     ],
-    "sourceText": "<strong class=\"dibur-hamatchil\">שורפים וסוקלין כו'</strong> - כדמפרש להו ואזיל:"
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור' יוחנן אמר אפילו ליוחסין</strong> - סמכינן אחזקה שהן כרוכין אחריה:"
   },
   "Rashi on Kiddushin 80a:8:3": {
-    "dependsOn": [
-      "Rashi on Kiddushin 80a:8:1",
-      "Rashi on Kiddushin 80a:8:2",
-      "Kiddushin 80a:6"
-    ],
-    "generatedAt": "2026-11-03T16:42:52.267Z",
-    "model": "gemini-3.8-flash-medium",
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:58:37.934Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 80a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שורפים וסוקלין כו'</strong> - כדמפרש להו ואזיל:"
+  },
+  "Rashi on Kiddushin 80a:8:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:59:17.539Z",
+    "model": "claude-sonnet-5-5-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 80a:8:4"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">אין זו חזקה ששורפין כו'</strong> - וכי אמרי רבנן לתלות קאמרי:"
   },

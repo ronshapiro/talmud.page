@@ -120,30 +120,42 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">שלש מחלוקות בדבר</strong> - בכותים וכהנים האמורים בקרא שנטמעו בהם:"
   },
   "Rashi on Kiddushin 75b:8:1": {
-    "dependsOn": [
-      "Rashi on Kiddushin 75b:8:1",
-      "Rashi on Kiddushin 75b:8:2"
-    ],
-    "generatedAt": "2026-11-03T08:04:06.169Z",
-    "model": "gemini-3.8-flash-medium",
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:52:50.185Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 75b:8:1"
     ],
-    "sourceText": "<strong class=\"dibur-hamatchil\">כדכתיב ויעשו להם מקצותם כהני במות</strong> - בספר מלכים <span class=\"parenthesized\">(ב יז)</span> גבי כותיים בגלות סנחריב שהגלה השבטים בימי הושע בן אלה:"
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור' ישמעאל סבר לה כר' עקיבא כו'</strong> - דהא חייבי לאוין הן הילכך כותי לא ישא כותית דתרוייהו ספיקי ממזרים הם דיש לומר בכל אחד מהם הוא בא מישראלית הנישאת לעובד כוכבים והרי הוא ממזר וזו באה מכותי וכותית מעולם אי נמי איפכא:"
   },
   "Rashi on Kiddushin 75b:8:2": {
-    "dependsOn": [
-      "Rashi on Kiddushin 75b:8:1",
-      "Jastrow, קוֹץ I 1",
-      "Chokhmat Shlomo on Kiddushin 75b:1",
-      "Steinsaltz on Kiddushin 75b:8"
-    ],
-    "generatedAt": "2026-11-03T08:06:42.491Z",
-    "model": "gemini-3.8-flash-medium",
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:53:01.456Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 75b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גירי אריות הן</strong> - והרי הן כשאר עובדי כוכבים שנשאו בנות ישראל:"
+  },
+  "Rashi on Kiddushin 75b:8:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:53:15.540Z",
+    "model": "claude-sonnet-5-5-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדכתיב ויעשו להם מקצותם כהני במות</strong> - בספר מלכים <span class=\"parenthesized\">(ב יז)</span> גבי כותיים בגלות סנחריב שהגלה השבטים בימי הושע בן אלה:"
+  },
+  "Rashi on Kiddushin 75b:8:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:53:31.875Z",
+    "model": "claude-sonnet-5-5-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75b:8:4"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">מן הקוצים</strong> - לשון קוץ שהיא פסולה. ל\"א מוקצין הן מן העם לפסול:"
   },

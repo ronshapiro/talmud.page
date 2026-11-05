@@ -336,31 +336,24 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">פירא דסופלי</strong> - נמצא בחפירה העשויה להטיל שם גרעיני תמרים למאכל בהמות יש בו משום אסופי דחוץ לעיר עבדי ליה ושכיחי בהו מזיקין:"
   },
   "Rashi on Kiddushin 73b:4:2": {
-    "dependsOn": [
-      "Rashi on Kiddushin 73b:4:1",
-      "Rashi on Kiddushin 73b:4:3"
-    ],
-    "generatedAt": "2026-11-03T05:19:54.832Z",
-    "model": "gemini-3.8-flash-medium",
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:48:26.228Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 73b:4:2"
     ],
-    "sourceText": "<strong class=\"dibur-hamatchil\">חריפתא דנהרא</strong> - נתנוהו בעריבה והשליכתהו לאמצעית הנהר מקום שהספינות עוברות תמיד אין בו משום אסופי דלכך טרחה להוליכו עד חריפות הנהר שיעברו ספינות שם וימצאוהו:"
+    "sourceText": "<strong class=\"dibur-hamatchil\">פישרא</strong> - מקום שיפוע הנהר ע\"י הפשרת שלגים שאין דרך ספינות לעבור שם יש בו משום אסופי:"
   },
   "Rashi on Kiddushin 73b:4:3": {
-    "dependsOn": [
-      "Rashi on Kiddushin 73b:4:1",
-      "Rashi on Kiddushin 73b:4:2",
-      "Rashi on Kiddushin 73b:4:3"
-    ],
-    "generatedAt": "2026-11-03T05:20:34.250Z",
-    "model": "gemini-3.8-flash-medium",
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:48:42.581Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 73b:4:3"
     ],
-    "sourceText": "<strong class=\"dibur-hamatchil\">פישרא</strong> - מקום שיפוע הנהר ע\"י הפשרת שלגים שאין דרך ספינות לעבור שם יש בו משום אסופי:"
+    "sourceText": "<strong class=\"dibur-hamatchil\">חריפתא דנהרא</strong> - נתנוהו בעריבה והשליכתהו לאמצעית הנהר מקום שהספינות עוברות תמיד אין בו משום אסופי דלכך טרחה להוליכו עד חריפות הנהר שיעברו ספינות שם וימצאוהו:"
   },
   "Rashi on Kiddushin 73b:6:1": {
     "dependsOn": [],
