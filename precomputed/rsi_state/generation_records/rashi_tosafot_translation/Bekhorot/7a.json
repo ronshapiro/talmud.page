@@ -50,6 +50,16 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">דא\"כ</strong> - דעבורו מן הטמא אסור לכתוב שה כשבים ועזים:"
   },
+  "Rashi on Bekhorot 7a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T14:31:27.914Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אישתני מגמל</strong> - שדומה לאמו במקצת סימנין:"
+  },
   "Rashi on Bekhorot 7a:23:1": {
     "dependsOn": [
       "Jastrow, הַבְלָא 1",
@@ -84,6 +94,19 @@
       "Rashi on Bekhorot 7a:24:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">מטמא</strong> - הוי משמע מגופיה דטמא מן הטמא משמע מינו של טמא הן דדמו לחלב:"
+  },
+  "Rashi on Bekhorot 7a:2:1": {
+    "dependsOn": [
+      "Bekhorot 7a:2",
+      "Rashi on Bekhorot 7a:1:1"
+    ],
+    "generatedAt": "2026-11-05T14:32:31.503Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 7a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסור באכילה</strong> - ומאן שמעת ליה הך סברא ר\"ש ואם ראשו ורובו כו' וקס\"ד דמדקתני להו בהדי הדדי ש\"מ דאפי' לאכילה בעי ר\"ש ראשו ורובו:"
   },
   "Tosafot on Bekhorot 7a:15:1": {
     "dependsOn": [
@@ -136,5 +159,15 @@
       "Tosafot on Bekhorot 7a:17:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">והא איפכא שמעינן להו ולד טריפה</strong> - למ\"ד טריפה יולדת ניחא דפליגי בזה וזה גורם אלא למ\"ד אינה יולדת מוקמי פלוגתא פרק אלו טריפות <span class=\"parenthesized\">(חולין נח.)</span> בעובר ירך אמו ונתעברה ולבסוף נטרפה ומיהו אשכחן בעלמא דר' אליעזר סבר זה וזה גורם אסור ורבנן סברי מותר גבי שאור חולין ותרומה ושלהי כל הצלמים <span class=\"parenthesized\">(ע\"ז מט.)</span> גבי נטל ממנה עצים אלא לרבי יהושע אייתיה ואע\"ג דלאו דברי הכל הוא ומה שמזכיר כאן זה וזה גורם ופר' אותו ואת בנו <span class=\"parenthesized\">(חולין עט:)</span> נקט לישנא דחוששין לזרע האב משום דהכא איירי בדבר הבא מהיתר ואיסור [שייך שפיר] זה וזה גורם ומיהו קשה כיון דאין חוששין לזרע האב מאיזה טעם תחשב ולד טריפה זה וזה גורם לא יחשב שאור גורם וליתסר:"
+  },
+  "Tosafot on Bekhorot 7a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T14:34:12.114Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 7a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמע מינה לאכילה נמי בעי ר\"ש ראשו ורובו</strong> - דמשמע שאין בו כי אם שני חלוקין מדלא קתני חלוק שלישי ולימא אם יש בו מקצת סימנין מותר באכילה והדר ליתני ואם ראשו ורובו דומה לאמו חייב בבכורה והשתא רישא וסיפא רבותא קמשמע לן דרישא קתני שילדה מין טמאה דאסור אף באכילה וסיפא דקתני ראשו ורובו דומים לאמו חייב אף בבכורה:"
   }
 }
