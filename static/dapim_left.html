@@ -29,6 +29,18 @@
 <body class="bg-[#f8fafc]">
     <div id="root"></div>
 
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/dapim-left-service-worker.js', { scope: '/dapim-left' })
+                    .then((registration) => {
+                        registration.update();
+                    })
+                    .catch((error) => console.warn('Service worker registration failed:', error));
+            });
+        }
+    </script>
+
     <script type="text/babel" data-presets="react-classic">
         const { useState, useEffect, useMemo } = React;
 
@@ -53,6 +65,122 @@
         const CACHE_KEY = 'daf_yomi_target_cache_v1';
         const TOTAL_DAYS = 2711;
 
+        const DEFAULT_KNOWN_PAIR = {
+            masechet: 'Bekhorot',
+            daf: 48,
+            dateStr: '2026-11-05'
+        };
+
+        function masechetMatches(firstMasechetName, secondMasechetName) {
+            if (firstMasechetName.toLowerCase() === secondMasechetName.toLowerCase()) {
+                return true;
+            }
+            const normalizedFirst = firstMasechetName.toLowerCase().replace(/[\s_-]/g, '');
+            const normalizedSecond = secondMasechetName.toLowerCase().replace(/[\s_-]/g, '');
+            if (normalizedFirst === normalizedSecond) {
+                return true;
+            }
+            if ((normalizedFirst === 'roshhashana' && normalizedSecond === 'roshhashanah')
+                || (normalizedFirst === 'roshhashanah' && normalizedSecond === 'roshhashana')) {
+                return true;
+            }
+            return false;
+        }
+
+        function getDafIndex(masechetName, daf) {
+            let currentIndex = 0;
+            for (const masechetDefinition of MASECHTOT) {
+                if (masechetMatches(masechetDefinition.name, masechetName)) {
+                    return currentIndex + (daf - masechetDefinition.start);
+                }
+                currentIndex += (masechetDefinition.end - masechetDefinition.start + 1);
+            }
+            return -1;
+        }
+
+        function getDafFromIndex(targetIndex) {
+            let normalizedIndex = ((targetIndex % TOTAL_DAYS) + TOTAL_DAYS) % TOTAL_DAYS;
+            for (const masechetDefinition of MASECHTOT) {
+                const masechetLength = masechetDefinition.end - masechetDefinition.start + 1;
+                if (normalizedIndex < masechetLength) {
+                    return {
+                        masechet: masechetDefinition.name,
+                        daf: masechetDefinition.start + normalizedIndex
+                    };
+                }
+                normalizedIndex -= masechetLength;
+            }
+            return null;
+        }
+
+        function getLocalDateString(targetDate = new Date()) {
+            const fullYear = targetDate.getFullYear();
+            const monthNumber = String(targetDate.getMonth() + 1).padStart(2, '0');
+            const dayOfMonth = String(targetDate.getDate()).padStart(2, '0');
+            return `${fullYear}-${monthNumber}-${dayOfMonth}`;
+        }
+
+        function parseDateParts(dateString) {
+            const [year, month, day] = dateString.split('-').map(Number);
+            return Date.UTC(year, month - 1, day);
+        }
+
+        function daysBetween(startDateString, endDateString) {
+            const startMilliseconds = parseDateParts(startDateString);
+            const endMilliseconds = parseDateParts(endDateString);
+            const millisecondsPerDay = 1000 * 60 * 60 * 24;
+            return Math.round((endMilliseconds - startMilliseconds) / millisecondsPerDay);
+        }
+
+        function getLastKnownPair() {
+            try {
+                const cachedItem = localStorage.getItem(CACHE_KEY);
+                if (cachedItem) {
+                    const parsedItem = JSON.parse(cachedItem);
+                    const rawDateString = parsedItem.dateStr || parsedItem.dateString;
+                    if (parsedItem.masechet && parsedItem.daf && typeof rawDateString === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(rawDateString)) {
+                        return {
+                            masechet: parsedItem.masechet,
+                            daf: parseInt(parsedItem.daf),
+                            dateStr: rawDateString
+                        };
+                    }
+                }
+            } catch (error) {
+                console.warn('Failed to parse cached date+daf pair:', error);
+            }
+            return DEFAULT_KNOWN_PAIR;
+        }
+
+        function deduceTodayTarget(targetDateString = getLocalDateString()) {
+            const lastKnownPair = getLastKnownPair();
+            const anchorIndex = getDafIndex(lastKnownPair.masechet, lastKnownPair.daf);
+            if (anchorIndex === -1) {
+                return {
+                    masechet: DEFAULT_KNOWN_PAIR.masechet,
+                    daf: DEFAULT_KNOWN_PAIR.daf,
+                    dateStr: targetDateString,
+                    isDeduced: true
+                };
+            }
+            const daysDifference = daysBetween(lastKnownPair.dateStr, targetDateString);
+            const targetDaf = getDafFromIndex(anchorIndex + daysDifference);
+            if (!targetDaf) {
+                return {
+                    masechet: lastKnownPair.masechet,
+                    daf: lastKnownPair.daf,
+                    dateStr: targetDateString,
+                    isDeduced: true
+                };
+            }
+            return {
+                masechet: targetDaf.masechet,
+                daf: targetDaf.daf,
+                dateStr: targetDateString,
+                isDeduced: true
+            };
+        }
+
         // Icon Components (Inline SVG for Zero Dependencies)
         const IconCalculator = () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg>;
         const IconSave = ({className}) => <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M15.2 3a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7"/><path d="M7 3v4a1 1 0 0 0 1 1h7"/></svg>;
@@ -69,107 +197,155 @@
                 return saved ? JSON.parse(saved) : {};
             });
 
-            // Initialize target from cache if available
+            // Initialize target from last known date+daf pair
             const [currentTarget, setCurrentTarget] = useState(() => {
-                const cached = localStorage.getItem(CACHE_KEY);
-                return cached ? JSON.parse(cached) : { masechet: "Menachot", daf: 99, dateStr: "Loading..." };
+                return deduceTodayTarget();
             });
 
             const [showAll, setShowAll] = useState(false);
-            const [isLoading, setIsLoading] = useState(true);
+            const [isLoading, setIsLoading] = useState(() => {
+                return typeof navigator !== 'undefined' ? navigator.onLine : true;
+            });
             const [focusedMasechet, setFocusedMasechet] = useState(null);
 
             useEffect(() => {
-                const cleanedDaf = { ...userDaf };
-                Object.keys(cleanedDaf).forEach(key => {
-                    if (cleanedDaf[key] === "") delete cleanedDaf[key];
+                const cleanUserDaf = { ...userDaf };
+                Object.keys(cleanUserDaf).forEach(masechetKey => {
+                    if (cleanUserDaf[masechetKey] === "") delete cleanUserDaf[masechetKey];
                 });
-                localStorage.setItem(STORAGE_KEY, JSON.stringify(cleanedDaf));
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(cleanUserDaf));
             }, [userDaf]);
 
+            // Sync with Sefaria API when available, updating the cached date+daf pair
             useEffect(() => {
+                let isCancelled = false;
+
                 const fetchDaf = async () => {
                     try {
-                        const response = await fetch('https://www.sefaria.org/api/calendars');
-                        const data = await response.json();
-                        const dafYomi = data.calendar_items.find(item => item.title.en === "Daf Yomi");
-                        const match = dafYomi?.ref.match(/(.+?)\s(\d+)/);
-                        if (match) {
-                            const newTarget = {
-                                masechet: match[1],
-                                daf: parseInt(match[2]),
-                                dateStr: data.date
+                        const calendarResponse = await fetch('https://www.sefaria.org/api/calendars');
+                        const calendarData = await calendarResponse.json();
+                        const dafYomiItem = calendarData.calendar_items.find(item => item.title && item.title.en === "Daf Yomi");
+                        const dafMatch = dafYomiItem?.ref?.match(/(.+?)\s(\d+)/);
+                        if (dafMatch && !isCancelled) {
+                            const freshTarget = {
+                                masechet: dafMatch[1],
+                                daf: parseInt(dafMatch[2]),
+                                dateStr: calendarData.date,
+                                isDeduced: false
                             };
-                            setCurrentTarget(newTarget);
-                            // Cache the fresh data
-                            localStorage.setItem(CACHE_KEY, JSON.stringify(newTarget));
+                            setCurrentTarget(freshTarget);
+                            // Cache the fresh last known date+daf pair
+                            localStorage.setItem(CACHE_KEY, JSON.stringify({
+                                masechet: freshTarget.masechet,
+                                daf: freshTarget.daf,
+                                dateStr: freshTarget.dateStr
+                            }));
                         }
-                    } catch (err) {
-                        console.error("Failed to sync with Sefaria", err);
+                    } catch (error) {
+                        console.warn("Failed to sync with Sefaria, using deduced daf calculation:", error);
                     } finally {
-                        setIsLoading(false);
+                        if (!isCancelled) {
+                            setIsLoading(false);
+                        }
                     }
                 };
+
                 fetchDaf();
+
+                return () => {
+                    isCancelled = true;
+                };
             }, []);
 
-            const { targetTotal, userTotal, activeIndices } = useMemo(() => {
-                let tTotal = 0;
-                for (const m of MASECHTOT) {
-                    const masechetLength = m.end - m.start + 1;
-                    if (m.name.toLowerCase() === currentTarget.masechet.toLowerCase() ||
-                        (m.name === "Rosh Hashanah" && currentTarget.masechet === "Rosh Hashana")) {
-                        tTotal += Math.max(0, currentTarget.daf - m.start);
+            // Check for date rollover while the tab remains open
+            useEffect(() => {
+                const checkDateChange = () => {
+                    const todayDateString = getLocalDateString();
+                    setCurrentTarget(previousTarget => {
+                        if (previousTarget.dateStr !== todayDateString) {
+                            return deduceTodayTarget(todayDateString);
+                        }
+                        return previousTarget;
+                    });
+                };
+
+                const handleVisibilityChange = () => {
+                    if (document.visibilityState === 'visible') {
+                        checkDateChange();
+                    }
+                };
+
+                document.addEventListener('visibilitychange', handleVisibilityChange);
+                const timerIdentifier = setInterval(checkDateChange, 60000);
+
+                return () => {
+                    document.removeEventListener('visibilitychange', handleVisibilityChange);
+                    clearInterval(timerIdentifier);
+                };
+            }, []);
+
+            const { targetTotalPages, userTotalPages, activeIndices } = useMemo(() => {
+                let currentTargetTotal = 0;
+                for (const masechetDefinition of MASECHTOT) {
+                    const masechetLength = masechetDefinition.end - masechetDefinition.start + 1;
+                    if (masechetMatches(masechetDefinition.name, currentTarget.masechet)) {
+                        currentTargetTotal += Math.max(0, currentTarget.daf - masechetDefinition.start);
                         break;
                     }
-                    tTotal += masechetLength;
+                    currentTargetTotal += masechetLength;
                 }
 
                 const indices = Object.keys(userDaf)
-                    .filter(name => userDaf[name] !== "")
-                    .map(name => MASECHTOT.findIndex(m => m.name === name))
-                    .filter(idx => idx !== -1);
+                    .filter(masechetName => userDaf[masechetName] !== "")
+                    .map(masechetName => MASECHTOT.findIndex(item => item.name === masechetName))
+                    .filter(indexValue => indexValue !== -1);
 
-                const min = indices.length ? Math.min(...indices) : -1;
-                const max = indices.length ? Math.max(...indices) : -1;
+                const minimumIndex = indices.length ? Math.min(...indices) : -1;
+                const maximumIndex = indices.length ? Math.max(...indices) : -1;
 
-                let uTotal = 0;
-                if (min !== -1) {
-                    MASECHTOT.forEach((m, idx) => {
-                        const masechetLength = m.end - m.start + 1;
-                        const isListed = userDaf[m.name] !== undefined;
-                        if (idx < min || (idx > min && idx < max && !isListed)) {
-                            uTotal += masechetLength;
+                let currentUserTotal = 0;
+                if (minimumIndex !== -1) {
+                    MASECHTOT.forEach((masechetDefinition, i) => {
+                        const masechetLength = masechetDefinition.end - masechetDefinition.start + 1;
+                        const isListed = userDaf[masechetDefinition.name] !== undefined;
+                        if (i < minimumIndex || (i > minimumIndex && i < maximumIndex && !isListed)) {
+                            currentUserTotal += masechetLength;
                         } else if (isListed) {
-                            const val = parseInt(userDaf[m.name]);
-                            if (!isNaN(val)) uTotal += Math.max(0, Math.min(masechetLength, val - m.start));
+                            const parsedNumber = parseInt(userDaf[masechetDefinition.name]);
+                            if (!isNaN(parsedNumber)) {
+                                currentUserTotal += Math.max(0, Math.min(masechetLength, parsedNumber - masechetDefinition.start));
+                            }
                         }
                     });
                 }
 
-                return { targetTotal: tTotal, userTotal: uTotal, activeIndices: { min, max } };
+                return {
+                    targetTotalPages: currentTargetTotal,
+                    userTotalPages: currentUserTotal,
+                    activeIndices: { minimumIndex, maximumIndex }
+                };
             }, [userDaf, currentTarget]);
 
-            const lag = targetTotal - userTotal;
+            const lag = targetTotalPages - userTotalPages;
             const hasData = Object.keys(userDaf).length > 0;
 
-            const handleInputChange = (name, val) => {
+            const handleInputChange = (masechetName, inputValue) => {
                 const newDaf = { ...userDaf };
-                if (val === "") {
-                    newDaf[name] = "";
+                if (inputValue === "") {
+                    newDaf[masechetName] = "";
                 } else {
-                    const num = parseInt(val);
-                    const masechet = MASECHTOT.find(m => m.name === name);
-                    newDaf[name] = Math.min(num, masechet.end);
+                    const parsedNumber = parseInt(inputValue);
+                    const masechetDefinition = MASECHTOT.find(item => item.name === masechetName);
+                    newDaf[masechetName] = Math.min(parsedNumber, masechetDefinition.end);
                 }
                 setUserDaf(newDaf);
             };
 
-            const handleBlur = (name) => {
+            const handleBlur = (masechetName) => {
                 setFocusedMasechet(null);
-                if (userDaf[name] === "") {
+                if (userDaf[masechetName] === "") {
                     const newDaf = { ...userDaf };
-                    delete newDaf[name];
+                    delete newDaf[masechetName];
                     setUserDaf(newDaf);
                 }
             };
@@ -177,9 +353,6 @@
             const clearData = () => {
                 if (confirm("Clear all progress?")) setUserDaf({});
             };
-
-            // Show loading shimmer only if we have NO data yet (first load ever)
-            const showShimmer = isLoading && currentTarget.dateStr === "Loading...";
 
             return (
                 <div className="min-h-screen bg-[#f8fafc] text-slate-900 antialiased p-4 md:p-8 font-sans">
@@ -193,18 +366,27 @@
                                     </div>
                                     <h1 className="text-2xl font-extrabold tracking-tight text-slate-800">Lag Calculator</h1>
                                 </div>
-                                <div className="flex items-center gap-1 text-[10px] font-bold text-slate-400 bg-slate-50 px-2 py-1 rounded-md">
-                                    <IconSave className="text-emerald-500" />
-                                    <span>AUTO-SAVING</span>
+                                <div className="flex items-center gap-2">
+                                    {currentTarget.isDeduced && !isLoading && (
+                                        <div className="flex items-center gap-1 text-[10px] font-bold text-amber-700 bg-amber-50 border border-amber-200/60 px-2 py-1 rounded-md">
+                                            <span>OFFLINE</span>
+                                        </div>
+                                    )}
+                                    <div className="flex items-center gap-1 text-[10px] font-bold text-slate-400 bg-slate-50 px-2 py-1 rounded-md">
+                                        <IconSave className="text-emerald-500" />
+                                        <span>AUTO-SAVING</span>
+                                    </div>
                                 </div>
                             </div>
                             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mt-4 pt-4 border-t border-slate-100">
                                 <div className="text-slate-500 text-sm italic">
-                                    {isLoading ? "Syncing with Sefaria..." : `Today is ${currentTarget.dateStr}`}
+                                    {isLoading
+                                        ? "Syncing with Sefaria..."
+                                        : `Today is ${currentTarget.dateStr}${currentTarget.isDeduced ? " (offline calculated)" : ""}`}
                                 </div>
                                 {currentTarget.dateStr !== "Loading..." && (
                                     <div className="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1.5 w-fit">
-                                        <div className={`w-1.5 h-1.5 rounded-full ${isLoading ? 'bg-amber-500 animate-pulse' : 'bg-indigo-500'}`}></div>
+                                        <div className={`w-1.5 h-1.5 rounded-full ${isLoading ? 'bg-amber-500 animate-pulse' : currentTarget.isDeduced ? 'bg-slate-400' : 'bg-indigo-500'}`}></div>
                                         Target: {currentTarget.masechet} {currentTarget.daf}
                                     </div>
                                 )}
@@ -231,19 +413,19 @@
                                 <div className="text-center px-2">
                                     <div className="text-[10px] uppercase font-bold text-slate-400 mb-1">Target</div>
                                     <div className={`text-lg font-bold ${hasData && lag <= 0 ? 'text-white' : 'text-slate-700'}`}>
-                                        {targetTotal} <span className="text-[10px] font-normal opacity-50">pages</span>
+                                        {targetTotalPages} <span className="text-[10px] font-normal opacity-50">pages</span>
                                     </div>
                                 </div>
                                 <div className="text-center px-2 border-l border-slate-100/50">
                                     <div className="text-[10px] uppercase font-bold text-slate-400 mb-1">Completed</div>
                                     <div className={`text-lg font-bold ${hasData && lag <= 0 ? 'text-white' : 'text-slate-700'}`}>
-                                        {userTotal} <span className="text-[10px] font-normal opacity-50">pages</span>
+                                        {userTotalPages} <span className="text-[10px] font-normal opacity-50">pages</span>
                                     </div>
                                 </div>
                                 <div className="text-center px-2 border-l border-slate-100/50">
                                     <div className="text-[10px] uppercase font-bold text-slate-400 mb-1">Days to Go</div>
                                     <div className={`text-lg font-bold ${hasData && lag <= 0 ? 'text-white' : 'text-slate-700'}`}>
-                                        {TOTAL_DAYS - targetTotal} <span className="text-[10px] font-normal opacity-50">days</span>
+                                        {TOTAL_DAYS - targetTotalPages} <span className="text-[10px] font-normal opacity-50">days</span>
                                     </div>
                                 </div>
                             </div>
@@ -269,11 +451,7 @@
                             </div>
 
                             <div className="max-h-[500px] overflow-y-auto custom-scrollbar">
-                                {showShimmer ? (
-                                    <div className="p-12 space-y-4">
-                                        {[1,2,3].map(i => <div key={i} className="h-16 bg-slate-100 rounded-2xl animate-pulse" />)}
-                                    </div>
-                                ) : !hasData && !showAll ? (
+                                {!hasData && !showAll ? (
                                     <div className="p-12 text-center">
                                         <div className="mx-auto w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-slate-400 mb-4">
                                             <IconInfo />
@@ -282,22 +460,22 @@
                                         <p className="text-xs text-slate-300 mt-1">Gaps between entries will be treated as finished.</p>
                                     </div>
                                 ) : (
-                                    MASECHTOT.map((m, idx) => {
-                                        const isListed = userDaf[m.name] !== undefined;
-                                        const isFocused = focusedMasechet === m.name;
-                                        const isFinished = hasData && ((idx < activeIndices.min) || (idx > activeIndices.min && idx < activeIndices.max && !isListed));
+                                    MASECHTOT.map((masechetDefinition, i) => {
+                                        const isListed = userDaf[masechetDefinition.name] !== undefined;
+                                        const isFocused = focusedMasechet === masechetDefinition.name;
+                                        const isFinished = hasData && ((i < activeIndices.minimumIndex) || (i > activeIndices.minimumIndex && i < activeIndices.maximumIndex && !isListed));
                                         if (!showAll && !isListed && !isFocused) return null;
 
                                         return (
-                                            <div key={m.name} className={`px-6 py-3.5 flex items-center justify-between border-b border-slate-50 last:border-0 transition-colors ${isListed || isFocused ? 'bg-indigo-50/30' : ''}`}>
+                                            <div key={masechetDefinition.name} className={`px-6 py-3.5 flex items-center justify-between border-b border-slate-50 last:border-0 transition-colors ${isListed || isFocused ? 'bg-indigo-50/30' : ''}`}>
                                                 <div className="flex items-center gap-3">
                                                     <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${isListed || isFocused ? 'bg-indigo-100 text-indigo-600' : isFinished ? 'bg-emerald-50 text-emerald-600' : 'bg-slate-100 text-slate-300'}`}>
                                                         {isFinished ? <IconCheck /> : <IconBook />}
                                                     </div>
                                                     <div>
-                                                        <div className="text-sm font-bold text-slate-700">{m.name}</div>
+                                                        <div className="text-sm font-bold text-slate-700">{masechetDefinition.name}</div>
                                                         <div className="text-[10px] text-slate-400 font-bold uppercase tracking-tighter">
-                                                            {m.end - m.start + 1} Pages {isFinished && ' • Finished'}
+                                                            {masechetDefinition.end - masechetDefinition.start + 1} Pages {isFinished && ' • Finished'}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -307,10 +485,10 @@
                                                         type="number"
                                                         placeholder="--"
                                                         className={`w-14 h-9 rounded-xl border text-center text-sm font-bold focus:ring-2 focus:ring-indigo-500 outline-none transition-all ${isListed || isFocused ? 'border-indigo-200 bg-white shadow-sm' : 'border-slate-100 bg-slate-50/50'}`}
-                                                        value={userDaf[m.name] ?? ''}
-                                                        onChange={(e) => handleInputChange(m.name, e.target.value)}
-                                                        onFocus={() => setFocusedMasechet(m.name)}
-                                                        onBlur={() => handleBlur(m.name)}
+                                                        value={userDaf[masechetDefinition.name] ?? ''}
+                                                        onChange={(event) => handleInputChange(masechetDefinition.name, event.target.value)}
+                                                        onFocus={() => setFocusedMasechet(masechetDefinition.name)}
+                                                        onBlur={() => handleBlur(masechetDefinition.name)}
                                                     />
                                                 </div>
                                             </div>

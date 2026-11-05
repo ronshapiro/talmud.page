@@ -132,6 +132,14 @@ function sendLazyStaticFile(res: express.Response, file: string) {
   });
 }
 
+function sendRevalidatingStaticFile(res: express.Response, file: string) {
+  res.sendFile(file, {
+    headers: {
+      'Cache-Control': 'no-cache',
+    },
+  });
+}
+
 app.use((req, res, next) => {
   if (req.hostname.startsWith("www.")) {
     res.redirectWithQueryParameters(req.hostname.slice(4) + req.originalUrl);
@@ -233,7 +241,13 @@ app.get(
 
 app.get(
   "/dapim-left",
-  (req, res) => sendLazyStaticFile(res, "static/dapim_left.html"));
+  (req, res) => sendRevalidatingStaticFile(res, "static/dapim_left.html"));
+app.get(
+  "/dapim-left-service-worker.js",
+  (req, res) => {
+    res.setHeader("Service-Worker-Allowed", "/");
+    sendRevalidatingStaticFile(res, "static/dapim_left_service_worker.js");
+  });
 app.get(
   "/scary--editor--beware",
   (req, res) => sendLazyStaticFile(res, "static/local_storage_editor.html"));
