@@ -79,31 +79,32 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">מה תהא עליה</strong> - שמא תשתכח אמר ליה הרי ס\"ת כרוכה ומונחת בתוכה המצות ולא ישתכחו:"
   },
   "Rashi on Kiddushin 66a:12:1": {
-    "dependsOn": [
-      "Rashi on Kiddushin 66a:8:1",
-      "Rashi on Kiddushin 66a:8:2",
-      "Rashi on Kiddushin 66a:7:1",
-      "Rashi on Kiddushin 66a:9:1",
-      "Rashi on Kiddushin 66a:11:1",
-      "Rashi on Kiddushin 66a:11:2",
-      "Rashi on Kiddushin 66a:11:3",
-      "Rashi on Kiddushin 66a:11:4"
-    ],
-    "generatedAt": "2026-11-02T20:05:24.371Z",
-    "model": "gemini-3.8-flash-medium",
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:38:23.393Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 66a:12:1"
     ],
-    "sourceText": "<strong class=\"dibur-hamatchil\">ותוצץ הרעה</strong> - לשון ויצץ ציץ ויגמול שקדים <span class=\"parenthesized\">(במדבר י״ז:כ״ג)</span> ל\"א בערה לשון נוצצים <span class=\"parenthesized\">(יחזקאל א)</span> כניצוץ המבעיר גחלת:"
+    "sourceText": "<strong class=\"dibur-hamatchil\">דרב אחא בר מניומי</strong> - בעלמא:"
   },
   "Rashi on Kiddushin 66a:12:2": {
     "dependsOn": [],
-    "generatedAt": "2026-11-02T20:05:44.996Z",
-    "model": "gemini-3.8-flash-medium",
+    "generatedAt": "2026-11-05T10:06:08.616Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 66a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותוצץ הרעה</strong> - לשון ויצץ ציץ ויגמול שקדים <span class=\"parenthesized\">(במדבר י״ז:כ״ג)</span> ל\"א בערה לשון נוצצים <span class=\"parenthesized\">(יחזקאל א)</span> כניצוץ המבעיר גחלת:"
+  },
+  "Rashi on Kiddushin 66a:12:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:39:56.738Z",
+    "model": "claude-sonnet-5-5-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 66a:12:3"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">שמעון בן שטח</strong> - אחי אשתו היה והחביאתו:"
   },

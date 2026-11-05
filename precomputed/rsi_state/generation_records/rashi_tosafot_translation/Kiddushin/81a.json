@@ -52,48 +52,51 @@
   },
   "Rashi on Kiddushin 81a:11:1": {
     "dependsOn": [],
-    "generatedAt": "2026-11-03T17:57:59.071Z",
-    "model": "gemini-3.8-flash-medium",
+    "generatedAt": "2026-11-05T10:00:02.984Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 81a:11:1"
     ],
-    "sourceText": "<strong class=\"dibur-hamatchil\">אסוקינהו</strong> - שצוה עליהם לפדותם ונתנום בעלייתו:"
+    "sourceText": "<strong class=\"dibur-hamatchil\">שקולו דרגא</strong> - שאכלו בעליה וירדו רב יוסף ואשתו והוא נשאר בעליה שקולו דרגא מתותי ביבי שלא ירד ויתיחד:"
   },
   "Rashi on Kiddushin 81a:11:2": {
     "dependsOn": [],
-    "generatedAt": "2026-11-03T17:59:34.875Z",
-    "model": "gemini-3.8-flash-medium",
+    "generatedAt": "2026-11-05T10:00:16.133Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 81a:11:2"
     ],
-    "sourceText": "<strong class=\"dibur-hamatchil\">בהדי דקא חלפא חדא מינייהו</strong> - שהיתה עוברת אצל פי ארובה שמן העלייה לבית:"
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסוקינהו</strong> - שצוה עליהם לפדותם ונתנום בעלייתו:"
   },
   "Rashi on Kiddushin 81a:11:3": {
     "dependsOn": [],
-    "generatedAt": "2026-11-03T18:00:01.581Z",
-    "model": "gemini-3.8-flash-medium",
+    "generatedAt": "2026-11-05T10:01:24.779Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 81a:11:3"
     ],
-    "sourceText": "<strong class=\"dibur-hamatchil\">נפל נהורא באיפומא</strong> - נפל אור בבית דרך פי העליה שהיו פניה מאירות:"
+    "sourceText": "<strong class=\"dibur-hamatchil\">בהדי דקא חלפא חדא מינייהו</strong> - שהיתה עוברת אצל פי ארובה שמן העלייה לבית:"
   },
   "Rashi on Kiddushin 81a:11:4": {
-    "dependsOn": [
-      "Rashi on Kiddushin 81a:11:1",
-      "Rashi on Kiddushin 81a:11:2",
-      "Rashi on Kiddushin 81a:11:3",
-      "Rashi on Kiddushin 81a:11:4",
-      "Steinsaltz on Kiddushin 81a:11",
-      "Kiddushin 81a:11"
-    ],
-    "generatedAt": "2026-11-03T18:01:15.759Z",
-    "model": "gemini-3.8-flash-medium",
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T10:01:42.373Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 81a:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נפל נהורא באיפומא</strong> - נפל אור בבית דרך פי העליה שהיו פניה מאירות:"
+  },
+  "Rashi on Kiddushin 81a:11:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T10:01:57.222Z",
+    "model": "claude-sonnet-5-5-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 81a:11:5"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">וקא סליק</strong> - לתובעה:"
   },
@@ -216,6 +219,16 @@
       "Rashi on Kiddushin 81a:13:6"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">שבקיה</strong> - היצר לרבי מאיר:"
+  },
+  "Rashi on Kiddushin 81a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T10:02:40.955Z",
+    "model": "claude-sonnet-5-5-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 81a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקא סליק</strong> - לתובעה:"
   },
   "Rashi on Kiddushin 81a:15:1": {
     "dependsOn": [],

@@ -88,27 +88,32 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">מדין כהונה</strong> - אם היה הארוס כהן:"
   },
   "Rashi on Kiddushin 75a:16:1": {
-    "dependsOn": [
-      "Rashi on Kiddushin 75a:16:2"
-    ],
-    "generatedAt": "2026-11-03T07:19:37.746Z",
-    "model": "gemini-3.8-flash-medium",
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:50:50.906Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 75a:16:1"
     ],
-    "sourceText": "<strong class=\"dibur-hamatchil\">מי ידעינן אבוה מנו</strong> - דניפוק נכסי משאר יורשי של הארוס וניתיב להאי:"
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרי ישראל נסיב ממזרת</strong> - הרואה אומר ישראל נושא ממזרת:"
   },
   "Rashi on Kiddushin 75a:16:2": {
-    "dependsOn": [
-      "Rashi on Kiddushin 75a:16:1",
-      "Steinsaltz on Kiddushin 75a:16"
-    ],
-    "generatedAt": "2026-11-03T07:21:05.959Z",
-    "model": "gemini-3.8-flash-medium",
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:51:22.394Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 75a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי ידעינן אבוה מנו</strong> - דניפוק נכסי משאר יורשי של הארוס וניתיב להאי:"
+  },
+  "Rashi on Kiddushin 75a:16:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:51:36.043Z",
+    "model": "claude-sonnet-5-5-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75a:16:3"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">דתפיס</strong> - נכסי הארוס משמת ואמר אבי היה ואשמעינן שמואל דמפקינן להו מיניה:"
   },
@@ -284,6 +289,26 @@
       "Rashi on Kiddushin 75a:6:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">מה כהן גדול באלמנה שזרעו ממנה פסול</strong> - חלל:"
+  },
+  "Rashi on Kiddushin 75a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:50:16.756Z",
+    "model": "claude-sonnet-5-5-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה כהן גדול באלמנה שזרעו ממנה פסול</strong> - חלל:"
+  },
+  "Rashi on Kiddushin 75a:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:50:38.209Z",
+    "model": "claude-sonnet-5-5-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 75a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף כל כו'</strong> - ומצרי שני ביאתו בעבירה הוי:"
   },
   "Rashi on Kiddushin 75a:8:1": {
     "dependsOn": [

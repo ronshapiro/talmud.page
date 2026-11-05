@@ -84,15 +84,22 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">כל אומניות</strong> - אין להן מתן שכר לאחר זמן אלא שכר המצוי להם בשעתן אבל תורה מתן שכרה בא מאליו לאורך ימים ואף לחולה ולזקן שאינו יכול לעסוק בה עכשיו אוכל מן הקודמות:"
   },
   "Rashi on Kiddushin 82b:5:2": {
-    "dependsOn": [
-      "Rashi on Kiddushin 82b:5:1",
-      "Rashi on Kiddushin 82b:5:2"
-    ],
-    "generatedAt": "2026-11-03T20:22:13.037Z",
-    "model": "gemini-3.8-flash-medium",
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T10:03:07.894Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 82b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל אומניות</strong> - אין להן מתן שכר לאחר זמן אלא שכר המצוי להם בשעתן אבל תורה מתן שכרה בא מאליו לאורך ימים ואף לחולה ולזקן שאינו יכול לעסוק בה עכשיו אוכל מן הקודמות:"
+  },
+  "Rashi on Kiddushin 82b:5:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T10:03:24.002Z",
+    "model": "claude-sonnet-5-5-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 82b:5:3"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">שנאמר עוד ינובון בשיבה</strong> - יצמחו צמח ויתייחד שכרן לעת שיבתן דשנים ורעננים יהיו וגו':"
   }

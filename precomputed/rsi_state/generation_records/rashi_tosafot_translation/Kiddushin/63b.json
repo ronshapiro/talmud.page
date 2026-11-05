@@ -225,14 +225,22 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">אלא ע\"מ שלא ימחה אבא</strong> - הך סיפא דקתני מלמדין לא מתוקמא כרישא בע\"מ שישתוק אלא בע\"מ שלא ימחה וכל כמה דמחי עקר להו שהרי לא קבע זמן למחאה דרישא ליכא לאוקמא בהכי דא\"כ מאי רצה האב והלא יש בידו למחות לעולם דאין כאן קידושין לעולם ועל כרחך הכי קתני על מנת שישתוק אבא שתק הרי זו מקודשת לא שתק אלא מיחה לאלתר אינה מקודשת ואם אמר ע\"מ שלא ימחה אבא מת האב עד שלא מיחה הרי זו מקודשת אבל כל ימי חייו אינם קידושין מת הבן מלמדין וכו':"
   },
   "Rashi on Kiddushin 63b:2:1": {
-    "dependsOn": [
-      "Kiddushin 63b:2"
-    ],
-    "generatedAt": "2026-11-02T17:10:29.734Z",
-    "model": "gemini-3.8-flash-medium",
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:36:21.233Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 63b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאין אדם חוטא</strong> - בדבר שאינו נהנה ממנו להתיר אשת איש חנם:"
+  },
+  "Rashi on Kiddushin 63b:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:36:57.022Z",
+    "model": "claude-sonnet-5-5-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 63b:2:2"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">ולא מוקמינן בתרי תנאי</strong> - לאוקמי באומר על מנת שירצה אבא כדקתני ומי ששנה זו לא שנה זו ובמשמעות לשון קמיפלגי תנא דרישא סבר לשון שתיקה הוא וכיון ששתק חלו קידושין מיד ותנא דסיפא סבר לשון לא ימחה הוא ואינם קידושין עד שימות:"
   },
@@ -252,24 +260,32 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">ומאי ע\"מ שירצה ע\"מ שלא ימחה</strong> - וכשקבע זמן למחאתו הלכך רצה האב שעברו שלשים ולא מיחה הרי זו מקודשת לא רצה שמיחה תוך שלשים אינה מקודשת מת האב בתוך שלשים מקודשת דאמרי' תו מאן מחי מת הבן בתוך שלשים מלמדין את האב כו':"
   },
   "Rashi on Kiddushin 63b:4:1": {
-    "dependsOn": [
-      "Rashi on Kiddushin 63b:4:2"
-    ],
-    "generatedAt": "2026-11-02T17:16:46.800Z",
-    "model": "gemini-3.8-flash-medium",
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:37:10.265Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 63b:4:1"
     ],
-    "sourceText": "<strong class=\"dibur-hamatchil\">קדשתי את בתי</strong> - קטנה והוא לא ידע למי:"
+    "sourceText": "<strong class=\"dibur-hamatchil\">שניהם נותנים גט</strong> - להתירה לאחרים:"
   },
   "Rashi on Kiddushin 63b:4:2": {
     "dependsOn": [],
-    "generatedAt": "2026-11-02T17:17:05.795Z",
-    "model": "gemini-3.8-flash-medium",
+    "generatedAt": "2026-11-05T09:37:22.283Z",
+    "model": "claude-sonnet-5-5-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Kiddushin 63b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קדשתי את בתי</strong> - קטנה והוא לא ידע למי:"
+  },
+  "Rashi on Kiddushin 63b:4:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:37:33.925Z",
+    "model": "claude-sonnet-5-5-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Kiddushin 63b:4:3"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">שניהם נותנים גט</strong> - להתירה לאחרים:"
   },
