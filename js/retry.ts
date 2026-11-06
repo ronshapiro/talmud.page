@@ -38,13 +38,15 @@ interface GeneratedRetryingMethodSignature {
   (..._params: any[]): Promise<any>;
 }
 
-type SetTimeout = BinaryFunction<() => void, number, void>;
+type SetTimeout = BinaryFunction<() => void, number, any>;
 
 export class RetryMethodFactory {
   errorsDelegate: ErrorsDelegate;
   onErrorStateChange: () => void;
   errorLogger: AnyFunction;
   setTimeout: SetTimeout;
+  private activeRetryActions: Set<() => void> = new Set();
+  private onlineEventListener?: () => void;
 
   constructor(
     errorsDelegate: ErrorsDelegate,
@@ -55,6 +57,29 @@ export class RetryMethodFactory {
     this.onErrorStateChange = onErrorStateChange;
     this.errorLogger = errorLogger;
     this.setTimeout = (callback: () => void, delay: number) => setTimeoutDelegate(callback, delay);
+
+    if (typeof window !== "undefined" && typeof window.addEventListener === "function") {
+      this.onlineEventListener = () => {
+        this.retryAllActiveImmediately();
+      };
+      window.addEventListener("online", this.onlineEventListener);
+    }
+  }
+
+  retryAllActiveImmediately(): void {
+    const actionsToExecute = Array.from(this.activeRetryActions);
+    this.activeRetryActions.clear();
+    for (const retryAction of actionsToExecute) {
+      retryAction();
+    }
+  }
+
+  destroy(): void {
+    if (this.onlineEventListener && typeof window !== "undefined" && typeof window.removeEventListener === "function") {
+      window.removeEventListener("online", this.onlineEventListener);
+      this.onlineEventListener = undefined;
+    }
+    this.activeRetryActions.clear();
   }
 
   /**
@@ -105,10 +130,32 @@ export class RetryMethodFactory {
                 this.onErrorStateChange();
               }
             }
-            this.setTimeout(() => {
+            let isRetryScheduled = true;
+            let scheduledTimer: any;
+            const executeImmediateRetry = () => {
+              if (!isRetryScheduled) {
+                return;
+              }
+              isRetryScheduled = false;
+              if (scheduledTimer !== undefined) {
+                clearTimeout(scheduledTimer);
+              }
+              this.activeRetryActions.delete(executeImmediateRetry);
+              retryState.increment();
+              doCall(...args, retryState);
+            };
+
+            scheduledTimer = this.setTimeout(() => {
+              if (!isRetryScheduled) {
+                return;
+              }
+              isRetryScheduled = false;
+              this.activeRetryActions.delete(executeImmediateRetry);
               retryState.increment();
               doCall(...args, retryState);
             }, retryState.delay);
+
+            this.activeRetryActions.add(executeImmediateRetry);
           });
       return retryState.promise;
     };
