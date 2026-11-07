@@ -1,0 +1,489 @@
+{
+  "Rashi on Bekhorot 28b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T21:28:09.059Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 28b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשלמא חייב את הזכאי משכחת נשא ונתן ביד</strong> - שנטל הוא המעות ממנו בידו ופרעו לבעל דין:"
+  },
+  "Rashi on Bekhorot 28b:10:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 28b:10:1",
+      "Rashi on Bekhorot 28b:10:3"
+    ],
+    "generatedAt": "2026-11-06T21:28:46.901Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 28b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא זיכה את החייב היכי דמי</strong> - בעל כרחך לא משכחת לה דעביד מידי אלא פטור אתה קאמר ליה:"
+  },
+  "Rashi on Bekhorot 28b:10:3": {
+    "dependsOn": [
+      "Rashi on Bekhorot 28b:10:1",
+      "Rashi on Bekhorot 28b:10:2"
+    ],
+    "generatedAt": "2026-11-06T21:29:23.133Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 28b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהיה לו משכון</strong> - למלוה וזה פטר את הלוה ונטל את המשכון מיד המלוה והחזירו ללוה:"
+  },
+  "Rashi on Bekhorot 28b:11:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 28b:10:1",
+      "Rashi on Bekhorot 28b:10:2",
+      "Rashi on Bekhorot 28b:11:2",
+      "Rashi on Bekhorot 28b:3:1",
+      "Rashi on Bekhorot 28b:3:2",
+      "Rashi on Bekhorot 28b:6:1",
+      "Rashi on Bekhorot 28b:8:1",
+      "Rashi on Bekhorot 28b:9:1",
+      "Rashi on Sanhedrin 33b:4:1",
+      "Berakhot 10a:27",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2"
+    ],
+    "generatedAt": "2026-11-06T21:32:05.750Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 28b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאגע בהו שרץ</strong> - הביאו טהרות לפניו לישאל עליהן ואמר טמאות הן ונטל שרץ אחד ונגע בהן כדי שלא יהא עוד ספק בהן ויעמיד דבריו:"
+  },
+  "Rashi on Bekhorot 28b:11:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 28b:11:1",
+      "Rashi on Bekhorot 28b:11:2",
+      "Bekhorot 28b:11",
+      "Steinsaltz on Bekhorot 28b:11",
+      "Rashi on Sanhedrin 33b:4:2",
+      "Tosafot on Sanhedrin 33b:4:1",
+      "Rashi on Bekhorot 28b:1:1",
+      "Rashi on Bekhorot 28b:3:1",
+      "Rashi on Bekhorot 28b:10:1"
+    ],
+    "generatedAt": "2026-11-06T21:36:54.119Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 28b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שעירבן עם פירותיו</strong> - שהביא טהרות לפניו לישאל עליהן ואמר טהורות ונטלן הוא עצמו ועירבן עם פירותיו של נשאל לסוף אמר חכם מומחה טמאות הן וטימאו את השאר שנתערבו בהן:"
+  },
+  "Rashi on Bekhorot 28b:12:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 28b:12:1",
+      "Chullin 54a:14",
+      "Rashi on Chullin 54a:14:3",
+      "Rashi on Bekhorot 28b:12:2",
+      "Rashi on Bekhorot 28b:1:1",
+      "Rashi on Bekhorot 28b:2:1"
+    ],
+    "generatedAt": "2026-11-06T21:38:29.470Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 28b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האם שלה</strong> - רחם שלה:"
+  },
+  "Rashi on Bekhorot 28b:12:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 28b:12:1",
+      "Bekhorot 28b:12",
+      "Bekhorot 28b:13",
+      "Rashi on Bekhorot 28b:15:1",
+      "Sanhedrin 33a:8",
+      "Sanhedrin 33a:9",
+      "Sanhedrin 33a:10",
+      "Sanhedrin 33a:11",
+      "Rashi on Sanhedrin 33a:8:1",
+      "Rashi on Sanhedrin 33a:8:2",
+      "Rashi on Bekhorot 28b:10:1"
+    ],
+    "generatedAt": "2026-11-06T21:40:38.892Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 28b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והאכילה ר\"ט לכלבים</strong> - ששאלו לו עליה אם טריפה היא והאכילה לכלבים:"
+  },
+  "Rashi on Bekhorot 28b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T21:41:08.485Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 28b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא תלד</strong> - מפני שפרות וחזירות שלהן מעולין מאד ומוכרין אותן ביוקר ורוצין שלא ילדו במלכות אחרת כדי שיהו צריכין להם וחותכין האם שלה ואינה מתה הילכך לאו טריפה היא:"
+  },
+  "Rashi on Bekhorot 28b:14:1": {
+    "dependsOn": [
+      "Bekhorot 28b:14",
+      "Rashi on Sanhedrin 33a:9:3"
+    ],
+    "generatedAt": "2026-11-06T21:41:54.387Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 28b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלכה חמורך טרפון</strong> - הפסדת חמור שתשלמנו לבעל הפרה:"
+  },
+  "Rashi on Bekhorot 28b:15:1": {
+    "dependsOn": [
+      "Bekhorot 28b:14",
+      "Bekhorot 28b:15",
+      "Rashi on Sanhedrin 33a:10:1",
+      "Rashi on Sanhedrin 33a:10:2",
+      "Rashi on Sanhedrin 33a:13:4",
+      "Rashi on Bekhorot 28b:14:1",
+      "Rashi on Bekhorot 28b:13:1",
+      "Rashi on Bekhorot 28b:12:1",
+      "Bekhorot 28b:16",
+      "Bekhorot 28b:17",
+      "Rashi on Bekhorot 28b:16:1"
+    ],
+    "generatedAt": "2026-11-06T21:44:34.939Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 28b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותיפוק ליה</strong> - דאי נמי לאו מומחה הוא פטור דטועה בדבר משנה הוא דתנן באלו טריפות <span class=\"parenthesized\">(חולין דף נד.)</span> ניטלה האם כשירה וטעה בדבר משנה חוזר בדיבורו בסנהדרין <span class=\"parenthesized\">(דף לג.)</span> וכיון דאי קיימא פרה הוה מצי למיהדר ביה ולמשרייה אישתכח דמה שאמר לאו כלום הוא זה וזה שהאכילה לכלבים איהו הוא דאפסיד אנפשיה:"
+  },
+  "Rashi on Bekhorot 28b:16:1": {
+    "dependsOn": [
+      "Bekhorot 28b:16"
+    ],
+    "generatedAt": "2026-11-06T21:46:06.162Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 28b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי נמי בשיקול הדעת טעית</strong> - דאפילו הוה קיימא לא מצי למיהדר ביה ולמישרייה ואישתכח דאיסורו איסור ואתה הפסדתו אפילו הכי פטור אתה מלשלם דמומחה אתה. שיקול הדעת מפרש בפרק קמא דסנהדרין <span class=\"parenthesized\">(דף ו.)</span> כגון תרי תנאי או תרי אמוראי דפליגי ולא איתמר הילכתא לא כמר ולא כמר וסוגייא דעלמא כחד מינייהו ואזיל האי ועבד כאידך מה שעשה עשוי ומשלם מביתו:"
+  },
+  "Rashi on Bekhorot 28b:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T21:46:34.806Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 28b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין שוחטין</strong> - דלמא משום אגרא קשרי ליה:"
+  },
+  "Rashi on Bekhorot 28b:1:1": {
+    "dependsOn": [
+      "Bekhorot 28b:1",
+      "Rashi on Bekhorot 28b:1:2"
+    ],
+    "generatedAt": "2026-11-06T20:59:05.313Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 28b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נמי דיקא</strong> - דבמומין שבגוף פליגי אבל בדוקין לא פליגי:"
+  },
+  "Rashi on Bekhorot 28b:1:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 28b:1:1",
+      "Rashi on Bekhorot 28a:12:1",
+      "Rashi on Bekhorot 28a:13:1",
+      "Rashi on Bekhorot 28b:1:2",
+      "Rashi on Bekhorot 28b:5:1",
+      "Rashi on Bekhorot 27b:1:1",
+      "Rashi on Bekhorot 27b:2:1"
+    ],
+    "generatedAt": "2026-11-06T21:02:22.045Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 28b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הואיל ונשחט שלא על פי מומחה</strong> - דלא משכח ביה ר' מאיר שום ריעותא אלא קנסו דשחטו שלא על פי מומחה ואי בדוקין שבעין הוה ליה למתני ר' מאיר אוסר הואיל ומשתנין אלא ודאי ליכא ריעותא דבמומי הגוף פליגי וקנסא קניס גזירה משום דוקין:"
+  },
+  "Rashi on Bekhorot 28b:2:1": {
+    "dependsOn": [
+      "Bekhorot 28b:2",
+      "Bekhorot 28a:13",
+      "Bekhorot 28a:14"
+    ],
+    "generatedAt": "2026-11-06T21:03:43.583Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 28b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכולהו מישתנו</strong> - כל דוקין שבעין משתנין או דלמא בדוקין גופייהו איכא דמשתני ואיכא דלא משתני ומיהו למומין שבגוף גזרינן אטו הנך דוקין משתנין:"
+  },
+  "Rashi on Bekhorot 28b:3:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 28b:3:2",
+      "Rashi on Bekhorot 28b:3:3",
+      "Rashi on Bekhorot 28b:3:4"
+    ],
+    "generatedAt": "2026-11-06T21:04:33.021Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 28b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למאי נפקא מינה</strong> - הא אפילו איכא דלא משתני הואיל ולא קים לן הי מישתני והי לא מישתני כולהו אסירי אם נשחטו בלא מומחה:"
+  },
+  "Rashi on Bekhorot 28b:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T21:05:10.338Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 28b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאכחושי סהדי</strong> - אם שחטו בלא מומחה והשתא חזינא ליה קבוע וקיימי סהדי דלא נשתנה ומראה זה היה לו מחיים:"
+  },
+  "Rashi on Bekhorot 28b:3:3": {
+    "dependsOn": [
+      "Rashi on Bekhorot 28b:3:1",
+      "Rashi on Bekhorot 28b:3:2",
+      "Rashi on Bekhorot 28b:3:3",
+      "Rashi on Bekhorot 28b:3:4"
+    ],
+    "generatedAt": "2026-11-06T21:05:50.953Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 28b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שקרי נינהו</strong> - ואסור לדברי הכל:"
+  },
+  "Rashi on Bekhorot 28b:3:4": {
+    "dependsOn": [
+      "Rashi on Bekhorot 28b:3:1",
+      "Rashi on Bekhorot 28b:3:2",
+      "Rashi on Bekhorot 28b:3:3",
+      "Rashi on Bekhorot 28a:12:1",
+      "Rashi on Bekhorot 28a:13:1",
+      "Tosafot on Bekhorot 28b:8:1",
+      "Rashi on Bekhorot 28a:1:1",
+      "Rashi on Bekhorot 28a:2:1",
+      "Rashi on Bekhorot 28a:3:1",
+      "Rashi on Bekhorot 28a:4:1",
+      "Rashi on Bekhorot 28a:5:1"
+    ],
+    "generatedAt": "2026-11-06T21:07:07.331Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 28b:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סמכינן עלייהו</strong> - ושרי לר' יהודה דלא קניס:"
+  },
+  "Rashi on Bekhorot 28b:5:1": {
+    "dependsOn": [
+      "Bekhorot 28b:5",
+      "Bekhorot 28b:1",
+      "Rashi on Bekhorot 28b:1:1",
+      "Rashi on Bekhorot 28b:1:2",
+      "Rashi on Bekhorot 28b:3:1"
+    ],
+    "generatedAt": "2026-11-06T21:08:24.198Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 28b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סתמא כר' מאיר</strong> - דאמר לעיל אחד זה ואחד זה אסור דקתני יקבר ואע\"ג דהשתא מיתחזי קבוע:"
+  },
+  "Rashi on Bekhorot 28b:5:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 28b:5:1",
+      "Rashi on Bekhorot 28a:14:1"
+    ],
+    "generatedAt": "2026-11-06T21:09:31.350Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 28b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלמא בדוקין שבעין</strong> - אמר יקבר דלדברי הכל משתנין:"
+  },
+  "Rashi on Bekhorot 28b:6:1": {
+    "dependsOn": [
+      "Bekhorot 28b:6",
+      "Rashi on Bekhorot 28b:6:1",
+      "Rashi on Bekhorot 28b:6:2",
+      "Rashi on Bekhorot 28b:6:3"
+    ],
+    "generatedAt": "2026-11-06T21:10:47.866Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 28b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשהוא משלם</strong> - לכהן נותן רביע דמיו משום בכור בהמה דקה ולבכור בהמה גסה חצי דמיו. משום הכי משלם מחצה דממון המוטל בספק הוא דאיכא למימר אפסדיה כוליה דאי לא הוה שרי ליה הכי כי הוה מייתי ליה קמי מומחה גמור ושרי ליה והוה אכיל ליה והשתא בעי קבורה ואיכא למימר דלאו מידי אפסדיה דדלמא לא הוה מומא ומומחה גמור לא הוה שרי ליה ושמא לא הוה נפיל ביה לעולם מום קבוע עד שימות:"
+  },
+  "Rashi on Bekhorot 28b:6:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 28b:6:1",
+      "Rashi on Bekhorot 28b:6:3"
+    ],
+    "generatedAt": "2026-11-06T21:11:50.615Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 28b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מ\"ט</strong> - רביע לדקה ומחצה לגסה:"
+  },
+  "Rashi on Bekhorot 28b:6:3": {
+    "dependsOn": [
+      "Rashi on Bekhorot 28b:6:1",
+      "Rashi on Bekhorot 28b:6:2",
+      "Rashi on Bekhorot 28b:6:3"
+    ],
+    "generatedAt": "2026-11-06T21:12:28.559Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 28b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גסה הפסידה מרובה</strong> - לפיכך תשלומין מרובין:"
+  },
+  "Rashi on Bekhorot 28b:7:1": {
+    "dependsOn": [
+      "Bekhorot 28b:7",
+      "Rashi on Bekhorot 28b:7:2"
+    ],
+    "generatedAt": "2026-11-06T21:15:19.089Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 28b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לפום פסידא לישלם</strong> - לזה חצי דמיו המרובין ולזה חצי דמיו המעוטין:"
+  },
+  "Rashi on Bekhorot 28b:7:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 28b:7:1"
+    ],
+    "generatedAt": "2026-11-06T21:16:48.635Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 28b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום גזירת מגדלי בהמה דקה נגעו בה</strong> - משום טורח מגדלי בהמה דקה שיש בה טורח גדול לגדלה וזה שהתיר הבכור הצילו לכהן מטורח גדול דשמא אם הראהו לאחר לא היה מתירו לו והיה לו עוד טיפול מרובה עד שיפול בו מום להכי נגעו בו דלא משלם אלא רביע. ל\"א מפני גזירת מגדלי בהמה דקה שעוברין על דברי חכמים כדתנן <span class=\"parenthesized\">(ב\"ק דף עט:)</span> אין מגדלין בהמה דקה בא\"י קנסוהו חכמים דלא לישקל אלא ריבעא. ולא מפי המורה:"
+  },
+  "Rashi on Bekhorot 28b:8:1": {
+    "dependsOn": [
+      "Bekhorot 28b:9",
+      "Bekhorot 28b:10",
+      "Bekhorot 28b:11",
+      "Bekhorot 28b:12",
+      "Rashi on Sanhedrin 33a:3:1"
+    ],
+    "generatedAt": "2026-11-06T21:20:01.307Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 28b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם היה מומחה לב\"ד פטור</strong> - דלא מצי מימר ליה אמאי דיינת ליה הואיל ולא בקי בדיני:"
+  },
+  "Rashi on Bekhorot 28b:9:1": {
+    "dependsOn": [
+      "Bava Kamma 100a:8",
+      "Bava Kamma 100a:9",
+      "Bava Kamma 100a:10",
+      "Rashi on Bekhorot 28b:8:1",
+      "Tosafot on Bekhorot 28b:9:1"
+    ],
+    "generatedAt": "2026-11-06T21:23:54.028Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 28b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר\"מ דאין דינא דגרמי</strong> - בב\"ק בפרק הגוזל עצים <span class=\"parenthesized\">(בבא קמא דף ק.)</span> מחיצת הכרם שנפרצה אומר לו גדור נתייאש הימנה ולא גדרה הרי זה קידש וחייב באחריותו. גרמי דגרם לאסור תבואתו של חבירו:"
+  },
+  "Tosafot on Bekhorot 28b:6:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 28b:6:1",
+      "Rashi on Bekhorot 28b:6:2",
+      "Rashi on Bekhorot 28b:6:3",
+      "Gilyon HaShas on Bekhorot 28b:1",
+      "Bekhorot 28b:5"
+    ],
+    "generatedAt": "2026-11-06T21:14:40.680Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 28b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רביע לדקה ומחצה לגסה</strong> - ואע\"פ <span class=\"rashi-quotation\">שפי' בקונטרס</span> משום דהוי ממון המוטל בספק שמא יתירנו חכם על מום ושמא לא יתירנו לאו משום דתיתי כסומכוס אלא תקנת חכמים בעלמא הוא ואע\"ג דאיירי בכל מום אפילו ידוע שיתירנו מומחה על ידו מ\"מ חשיב ליה ספק קצת דשמא לא מזקיק ליה מומחה וגם לא פליג בין מום ואי הוה מיירי הך ברייתא בדוקין שבעין דוקא הוה ניחא טפי דה\"נ קיימא לן כרבי יהודה כדפרישית ולדידיה אינו נקבר אלא בדוקין שבעין ועוד יש לפרש דהיינו טעמא דמשלם מחצה ששיערו חכמים דאינו שוה יותר כ\"ז שעומד בספק שעדיין לא הותר ובתרומה נמי אשכחן שאינו שוה אלא כמחצה של חולין כדאמרינן בפרק אף על פי <span class=\"parenthesized\">(כתובות דף נח.)</span> כל מקום שהוזכר תרומה נותן לה כפלים בחולין ומיהו לא דמי ממש לתרומה דאסורה לזרים ואסורה בטומאה אבל בכור מומין שרי לגמרי כצבי וכאיל:"
+  },
+  "Tosafot on Bekhorot 28b:7:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 28b:7:1",
+      "Rashi on Bekhorot 28b:7:2",
+      "Bekhorot 28b:7"
+    ],
+    "generatedAt": "2026-11-06T21:18:13.654Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 28b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום גזירת מגדלי בהמה דקה</strong> - פירוש שהחמירו עליהם חכמים שלא לגדלם כי אם בחורשין חוץ ליישוב ויש בה טורח גדול ואינו שוה אלא רביע דהיינו מחצה פחות מן הגסה וגם <span class=\"rashi-quotation\">בקונטרס</span> פירש כן מפני טורח גזרו לה אבל לא דקדק ליישב לשון גזירה:"
+  },
+  "Tosafot on Bekhorot 28b:8:1": {
+    "dependsOn": [
+      "Sanhedrin 6a:2",
+      "Rashi on Sanhedrin 6a:2:1",
+      "Rashi on Sanhedrin 6a:2:2"
+    ],
+    "generatedAt": "2026-11-06T21:21:47.284Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 28b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דן את הדין כו'</strong> - בפ\"ק דסנהדרין <span class=\"parenthesized\">(דף ו.)</span> פריך מינה לר' אבהו שאמר שנים שדנו אין דיניהן דין ותימה מנא ליה דמיירי ביחיד אי משום דקתני דן את הדין לשון יחיד הא בריש אלו טריפות <span class=\"parenthesized\">(חולין דף מד:)</span> קתני דן את הדין ולא מיירי ביחיד כדקתני וכולן רשאין ליקח ויש לומר דהתם קתני דומיא דעדים אבל מתני' דהכא מיירי כולה ביחיד דקתני סיפא ואם היה מומחה לבית דין כו' ומעשה בר' טרפון כו' ורישא נמי מי שאינו מומחה וראה את הבכור:"
+  },
+  "Tosafot on Bekhorot 28b:9:1": {
+    "dependsOn": [
+      "Tosafot on Bekhorot 28b:6:1",
+      "Tosafot on Bekhorot 28b:7:1",
+      "Tosafot on Bekhorot 28b:8:1",
+      "Bava Kamma 117a:13",
+      "Bava Kamma 117b:1",
+      "Bava Kamma 117b:2",
+      "Bava Kamma 117a:4",
+      "Bava Kamma 117a:5",
+      "Bava Kamma 117a:6",
+      "Bava Kamma 117b:4",
+      "Bava Kamma 117b:5",
+      "Bekhorot 28b:5",
+      "Tosafot on Bava Kamma 100a:9:1"
+    ],
+    "generatedAt": "2026-11-06T21:27:16.261Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 28b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לימא תנן סתמא כרבי מאיר כו'</strong> - תימה דלא דייק הכא מרישא דמי שאינו מומחה ורואה את הבכור ונשחט על פיו הרי זה יקבר וישלם מביתו דההיא מה נפשך כרבי מאיר אתיא דדאין דינא דגרמי דלא מתוקמא בנשא ונתן ביד דהא נשחט על פיו קתני ובהגוזל קמא <span class=\"parenthesized\">(ב\"ק דף ק.)</span> לא משכח התם משנה דדאין ר\"מ דינא דגרמי אלא מברייתא דמחיצת הכרם והוה ליה לאיתויי מהך ובהגוזל בתרא <span class=\"parenthesized\">(שם דף קיז:)</span> גבי ההוא דאחויי אחוי דסבר למיחייביה ממתניתין דדן את הדין וקדחי אמאי לא חייביה מהך:"
+  }
+}

@@ -1,4 +1,320 @@
 {
+  "Rashi on Bekhorot 8b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T15:28:42.564Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ינוקי מלעיל</strong> - בעלייה. ולהרע נתכוונו שהנותן שלום לעליונים תחלה הורגים אותו התחתונים ואומרים אנו הזקנים ולנו היה לך ליתן שלום תחילה והנותן שלום לזקנים הורגין אותו הבחורים ואומרים הלא אנו חשובים מהם שאנחנו למעלה והם למטה:"
+  },
+  "Rashi on Bekhorot 8b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T15:29:15.600Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי עבידתיך</strong> - מאי בעית הכא:"
+  },
+  "Rashi on Bekhorot 8b:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T15:29:42.035Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הכי</strong> - דחכימא את ניבעי אנן מינך:"
+  },
+  "Rashi on Bekhorot 8b:11:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T15:30:37.456Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי זכיתו בי</strong> - אם תנצחוני:"
+  },
+  "Rashi on Bekhorot 8b:12:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 8b:12:1",
+      "Rashi on Bekhorot 8b:12:2",
+      "Rashi on Bekhorot 8b:12:3"
+    ],
+    "generatedAt": "2026-11-05T15:31:47.141Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמידלו מינה</strong> - שמיוחסת מן הראשונה ושואל אותה הרי יש לו ללמד הואיל ולא נתנו לו את הראשונה כל שכן זו:"
+  },
+  "Rashi on Bekhorot 8b:12:2": {
+    "dependsOn": [
+      "Steinsaltz on Bekhorot 8b:12",
+      "Rashi on Bekhorot 8b:12:1",
+      "Rashi on Bekhorot 8b:12:3",
+      "Rashi on Bekhorot 8a:13:3",
+      "Rashi on Bekhorot 8a:1:2",
+      "Rashi on Bekhorot 2a:1:1",
+      "Rashi on Bekhorot 2a:1:2"
+    ],
+    "generatedAt": "2026-11-05T15:33:54.779Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סיכתא</strong> - קביליי\"א:"
+  },
+  "Rashi on Bekhorot 8b:12:3": {
+    "dependsOn": [
+      "Rashi on Bekhorot 8b:12:1",
+      "Rashi on Bekhorot 8b:12:2",
+      "Rashi on Bekhorot 8b:12:3",
+      "Steinsaltz on Bekhorot 8b:12"
+    ],
+    "generatedAt": "2026-11-05T15:35:51.599Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[דצה] לתתאי</strong> - דצה השפיל ידו ונעצה בכותל במקום שאין חור ולא על דלי דצה הגביה [ידו] ודצה במקום שיש חור ועל:"
+  },
+  "Rashi on Bekhorot 8b:13:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 8b:13:2",
+      "Rashi on Bekhorot 8b:13:3",
+      "Rashi on Bekhorot 8b:13:4",
+      "Rashi on Bekhorot 8b:13:5"
+    ],
+    "generatedAt": "2026-11-05T15:36:31.717Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גברא דאוזיף וטריף</strong> - שהלוה מעות לחבירו ולא נפרע ממנו אלא בקושי שטרף לקוחות:"
+  },
+  "Rashi on Bekhorot 8b:13:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 8b:13:1",
+      "Rashi on Bekhorot 8b:13:2",
+      "Rashi on Bekhorot 8b:13:3"
+    ],
+    "generatedAt": "2026-11-05T15:37:22.622Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי חזי דהדר אוזיף</strong> - לאחריני ולא נתייסר מן הראשון:"
+  },
+  "Rashi on Bekhorot 8b:13:3": {
+    "dependsOn": [
+      "Rashi on Bekhorot 8b:13:1",
+      "Rashi on Bekhorot 8b:13:2",
+      "Rashi on Bekhorot 8b:13:3",
+      "Rashi on Bekhorot 8b:13:4",
+      "Rashi on Bekhorot 8b:13:5"
+    ],
+    "generatedAt": "2026-11-05T15:37:59.889Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאגמא</strong> - ליער:"
+  },
+  "Rashi on Bekhorot 8b:13:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T15:38:43.131Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:13:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קטיל קמא טונא</strong> - חתך חבילה ראשונה ולא מצי ביה להרימו על שכמו:"
+  },
+  "Rashi on Bekhorot 8b:13:5": {
+    "dependsOn": [
+      "Rashi on Bekhorot 8b:13:1",
+      "Rashi on Bekhorot 8b:13:2",
+      "Rashi on Bekhorot 8b:13:3",
+      "Rashi on Bekhorot 8b:13:4",
+      "Steinsaltz on Bekhorot 8b:13"
+    ],
+    "generatedAt": "2026-11-05T15:40:01.293Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:13:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הדר קטיל ומנחה עליה</strong> - הואיל וצריך סיוע אחרים עד דמיתרמי' איניש ומדלו ליה. והאי נמי הואיל והפסיד באמנה ראשונה חוזר ומאמין לאחרים עד שמזדווג לו לאדם נאמן ומשתכר בו:"
+  },
+  "Rashi on Bekhorot 8b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T15:41:07.094Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מילי דכדי</strong> - דברי רוח. ל\"א מילי דכזיב דברי כזב:"
+  },
+  "Rashi on Bekhorot 8b:14:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 8b:14:1",
+      "Rashi on Bekhorot 8b:14:3",
+      "Jastrow, כּוּדְנָא 1"
+    ],
+    "generatedAt": "2026-11-05T15:41:43.956Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כודנתא</strong> - פרידה:"
+  },
+  "Rashi on Bekhorot 8b:14:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T15:42:03.542Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והוה תלי פיתקא</strong> - שטר בצוואר הוולד:"
+  },
+  "Rashi on Bekhorot 8b:14:4": {
+    "dependsOn": [
+      "Rashi on Bekhorot 8b:14:4",
+      "Rashi on Bekhorot 8b:14:1",
+      "Rashi on Bekhorot 8b:14:2",
+      "Rashi on Bekhorot 8b:14:3"
+    ],
+    "generatedAt": "2026-11-05T15:45:35.983Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:14:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הי נינהו מילי דכדי</strong> - אלו הן דברי רוח:"
+  },
+  "Rashi on Bekhorot 8b:15:1": {
+    "dependsOn": [
+      "Steinsaltz on Bekhorot 8b:15",
+      "Rashi on Bekhorot 8b:14:1",
+      "Rashi on Bekhorot 8b:14:2",
+      "Rashi on Bekhorot 8b:14:3",
+      "Rashi on Bekhorot 8b:14:4",
+      "Rashi on Bekhorot 8a:1:1",
+      "Rashi on Bekhorot 8a:1:2"
+    ],
+    "generatedAt": "2026-11-05T15:46:50.029Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סיליתא</strong> - שיליא:"
+  },
+  "Rashi on Bekhorot 8b:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T15:47:24.331Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפארי</strong> - עשו לי חבלים מסובין ואם אינכם עושין שאילתי אף אני לא אעשה שאילתכם:"
+  },
+  "Rashi on Bekhorot 8b:17:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T15:47:49.241Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חייטיה</strong> - תפור אותה:"
+  },
+  "Rashi on Bekhorot 8b:17:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T15:48:22.194Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:17:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרוכו לי גרדי מינה</strong> - הוציאו לי ממנה חוטין כדרך נשים שמוציאין חוטין מן הבגד ותופרין אותו בהן:"
+  },
+  "Rashi on Bekhorot 8b:17:4": {
+    "dependsOn": [
+      "Jastrow, גַּרְדָּא 1",
+      "Rashi on Bekhorot 8b:17:1",
+      "Rashi on Bekhorot 8b:17:2",
+      "Rashi on Bekhorot 8b:17:3",
+      "Rashi on Bekhorot 8a:1:2",
+      "Rashi on Bekhorot 8a:13:3",
+      "Rashi on Menachot 42b:7:3",
+      "Steinsaltz on Bekhorot 8b:17"
+    ],
+    "generatedAt": "2026-11-05T15:51:09.661Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:17:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גרדי</strong> - בלע\"ז פירנ\"ש:"
+  },
+  "Rashi on Bekhorot 8b:18:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 8b:18:1",
+      "Rashi on Bekhorot 8b:17:1",
+      "Rashi on Bekhorot 8b:17:2",
+      "Steinsaltz on Bekhorot 8b:18:1",
+      "Steinsaltz on Bekhorot 8b:18",
+      "Jastrow on Bekhorot 8b:18",
+      "Rashi on Bekhorot 8b:1:1",
+      "Rashi on Bekhorot 8b:1:2",
+      "Rashi on Bekhorot 8b:2:1",
+      "Rashi on Bekhorot 8a:1:1",
+      "Rashi on Bekhorot 8a:2:1"
+    ],
+    "generatedAt": "2026-11-05T15:53:16.501Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משרא דסכיני במאי קטלי ליה</strong> - ערוגה דסכיני במה קוצרין אותה:"
+  },
+  "Rashi on Bekhorot 8b:19:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 8b:14:1",
+      "Rashi on Bekhorot 8b:14:2",
+      "Rashi on Bekhorot 8b:14:3",
+      "Rashi on Bekhorot 8b:14:4",
+      "Rashi on Bekhorot 8b:1:1",
+      "Rashi on Bekhorot 8b:3:1",
+      "Rashi on Bekhorot 8b:7:1",
+      "Rashi on Bekhorot 8b:20:1",
+      "Rashi on Bekhorot 8b:20:2"
+    ],
+    "generatedAt": "2026-11-05T15:54:59.904Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זגתא</strong> - תרנגולת:"
+  },
   "Rashi on Bekhorot 8b:1:1": {
     "dependsOn": [
       "Bekhorot 8b:1",
@@ -18,5 +334,416 @@
       "Rashi on Bekhorot 8b:1:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">מי כתיב מכל החיה ומכל הבהמה</strong> - דנידרוש מכל החיה שנתקללה יותר מבהמה:"
+  },
+  "Rashi on Bekhorot 8b:1:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 8b:1:1",
+      "Rashi on Bekhorot 8b:1:2",
+      "Bekhorot 8b:1",
+      "Rashi on Bekhorot 2a:1:2",
+      "Bekhorot 2a:1"
+    ],
+    "generatedAt": "2026-11-05T15:05:05.264Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[מכל הבהמה כתיב</strong> - משמע מבהמה המקוללת יותר כך נתקלל ואין לך מקוללת בבהמה גסה יותר מחמור]:"
+  },
+  "Rashi on Bekhorot 8b:20:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T15:55:24.616Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורצוצא דמית</strong> - אפרוח שמת בקליפתו:"
+  },
+  "Rashi on Bekhorot 8b:20:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T15:55:56.994Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:20:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחוי לן מנא דלא שוי חבליה</strong> - הראנו כלי שאינו שוה ההפסד שהוא מפסיד:"
+  },
+  "Rashi on Bekhorot 8b:20:3": {
+    "dependsOn": [
+      "Rashi on Bekhorot 8b:20:1",
+      "Rashi on Bekhorot 8b:20:2",
+      "Rashi on Bekhorot 8b:20:4",
+      "Rashi on Bekhorot 8b:20:5"
+    ],
+    "generatedAt": "2026-11-05T15:56:41.639Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:20:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בודיא</strong> - מחצלת:"
+  },
+  "Rashi on Bekhorot 8b:20:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T15:57:29.034Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:20:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא על בתרעא</strong> - שהיה ארוך ורחב יותר מן הפתח:"
+  },
+  "Rashi on Bekhorot 8b:20:5": {
+    "dependsOn": [
+      "Rashi on Bekhorot 8b:17:4"
+    ],
+    "generatedAt": "2026-11-05T16:00:21.920Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:20:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אייתו מרי</strong> - פשויי\"ר בלע\"ז:"
+  },
+  "Rashi on Bekhorot 8b:20:6": {
+    "dependsOn": [
+      "Rashi on Bekhorot 8b:20:4",
+      "Rashi on Bekhorot 8b:20:5",
+      "Rashi on Bekhorot 8b:20:6"
+    ],
+    "generatedAt": "2026-11-05T16:01:32.018Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:20:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וסיתרו</strong> - פתח הבנין והכותל עד שיכנס:"
+  },
+  "Rashi on Bekhorot 8b:21:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T16:02:00.047Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אייתינהו</strong> - למיעל בספינתא הואיל וזכינהו. היה מביאם אחד אחד בפני עצמו ומכניסו לחדר:"
+  },
+  "Rashi on Bekhorot 8b:21:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 8b:21:1",
+      "Rashi on Bekhorot 8b:21:3",
+      "Rashi on Bekhorot 8b:21:4",
+      "Rashi on Bekhorot 8b:21:5"
+    ],
+    "generatedAt": "2026-11-05T16:02:56.918Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:21:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי חזייה שיתין ביסתרקי</strong> - סבר כל חבירי יבואו כאן:"
+  },
+  "Rashi on Bekhorot 8b:21:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T16:03:23.722Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:21:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ליה</strong> - רבי יהושע:"
+  },
+  "Rashi on Bekhorot 8b:21:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T16:04:04.261Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:21:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לספונא</strong> - רב החובל:"
+  },
+  "Rashi on Bekhorot 8b:21:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T16:04:28.936Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:21:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שרי ספינתך</strong> - התר ספינתך ולך:"
+  },
+  "Rashi on Bekhorot 8b:2:1": {
+    "dependsOn": [
+      "Bekhorot 8b:1",
+      "Bekhorot 8b:2",
+      "Rashi on Bekhorot 8b:2:1",
+      "Rashi on Bekhorot 8b:1:1",
+      "Rashi on Bekhorot 8b:1:2",
+      "Tosafot on Bekhorot 8b:2:1",
+      "Steinsaltz on Bekhorot 8b:2"
+    ],
+    "generatedAt": "2026-11-05T15:08:37.449Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כך נתקלל הוא מבהמה אחד לשלש</strong> - כגון בהמה דקה טהורה דעיבורה לה' חדשים ובג' זימני <span class=\"parenthesized\">(תלתא)</span> הוי ט\"ו:"
+  },
+  "Rashi on Bekhorot 8b:3:1": {
+    "dependsOn": [
+      "Bekhorot 8b:3"
+    ],
+    "generatedAt": "2026-11-05T15:10:42.219Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי בעית אימא מכל הבהמה</strong> - דמשמע מכל הבהמה המקוללת יותר:"
+  },
+  "Rashi on Bekhorot 8b:3:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 8b:3:1",
+      "Bekhorot 8b:3"
+    ],
+    "generatedAt": "2026-11-05T15:12:04.650Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיבעית אימא</strong> - לשם קללה נאמר הלכך קללה חמורה שתוכל לדרוש מן הפסוק שדי עילויה. והכי נמי איכא לאקשויי ואימא כשם שנתקללה בהמה מחיה אחד לשנים ומאי ניהו חמור משועל כך נתקלל הוא מחמור אחד לשנים דהוו להו ב' שנים אלא איכא לתרוצי קללה שדי עילויה ועוד מכל הבהמה ומכל החיה כתיב דמשמע דמשום בהמה שיתירה קללתה על שום חיה ומצינו חמור מקולל מחתול אחד לשבע:"
+  },
+  "Rashi on Bekhorot 8b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T15:12:40.419Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לכמה מיעבר ומוליד</strong> - כמה שוהה עיבורו במעיו:"
+  },
+  "Rashi on Bekhorot 8b:4:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 8b:4:1",
+      "Rashi on Bekhorot 8b:4:2",
+      "Rashi on Bekhorot 8b:4:3",
+      "Bekhorot 8b:4"
+    ],
+    "generatedAt": "2026-11-05T15:13:42.453Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דבי אתונא</strong> - מקום:"
+  },
+  "Rashi on Bekhorot 8b:4:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T15:14:45.729Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא משמשי שמושי</strong> - ואי הוו מעברי לא הוו משמשי שדרך חיה ובהמה מאחר שנתעברה אינה מקבלת זכר:"
+  },
+  "Rashi on Bekhorot 8b:5:1": {
+    "dependsOn": [
+      "Bekhorot 8b:5",
+      "Rashi on Bekhorot 8b:5:2",
+      "Steinsaltz on Bekhorot 8b:5:1",
+      "Steinsaltz on Bekhorot 8b:5",
+      "Steinsaltz comment #1 on Bekhorot 8b:5"
+    ],
+    "generatedAt": "2026-11-05T15:16:56.522Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא חכימי</strong> - הנהו סבי וירדו לסוף המעשה:"
+  },
+  "Rashi on Bekhorot 8b:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T15:17:18.958Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זיל זכינהו</strong> - נצחם:"
+  },
+  "Rashi on Bekhorot 8b:6:1": {
+    "dependsOn": [
+      "Jastrow, בִּיסְתַּרְקָא 1",
+      "Rashi on Bekhorot 8b:4:1",
+      "Rashi on Bekhorot 8b:4:2"
+    ],
+    "generatedAt": "2026-11-05T15:18:16.313Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ביסתרקי</strong> - כסאות:"
+  },
+  "Rashi on Bekhorot 8b:6:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 8b:6:1",
+      "Rashi on Bekhorot 8b:6:3"
+    ],
+    "generatedAt": "2026-11-05T15:18:42.783Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי מטא להתם</strong> - לכרך שלהם:"
+  },
+  "Rashi on Bekhorot 8b:6:3": {
+    "dependsOn": [
+      "Rashi on Bekhorot 8b:6:1",
+      "Rashi on Bekhorot 8b:6:2",
+      "Rashi on Bekhorot 8b:6:3",
+      "Steinsaltz on Bekhorot 8b:6",
+      "Chidushei Agadot on Bekhorot 8b:1",
+      "Bekhorot 8b:6"
+    ],
+    "generatedAt": "2026-11-05T15:19:59.776Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עביד חיותא</strong> - מחתך בהמה:"
+  },
+  "Rashi on Bekhorot 8b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T15:22:00.510Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואנא רישא דחיותא אמרי לך</strong> - בתמיה:"
+  },
+  "Rashi on Bekhorot 8b:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T15:22:26.409Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סגי</strong> - צעוד ולך לפני:"
+  },
+  "Rashi on Bekhorot 8b:7:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T15:22:54.332Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דרי כריכא דקני</strong> - טול חבילה של קנים וכי מטית התם נגד הפתח זקוף החבילה לארץ:"
+  },
+  "Rashi on Bekhorot 8b:7:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T15:23:19.390Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כמאן דמיתפח</strong> - כאדם העומד לפוש:"
+  },
+  "Rashi on Bekhorot 8b:8:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 8b:7:1",
+      "Rashi on Bekhorot 8b:7:2"
+    ],
+    "generatedAt": "2026-11-05T15:24:08.217Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אזל</strong> - ר' יהושע:"
+  },
+  "Rashi on Bekhorot 8b:8:2": {
+    "dependsOn": [
+      "Jastrow, *דָּרְבְּנָאָה 1",
+      "Rashi on Bekhorot 8b:8:1",
+      "Rashi on Bekhorot 8b:8:2",
+      "Rashi on Bekhorot 8b:8:3",
+      "Rashi on Bekhorot 8b:8:4",
+      "Rashi on Bekhorot 8b:4:1",
+      "Rashi on Bekhorot 8b:6:1"
+    ],
+    "generatedAt": "2026-11-05T15:25:12.331Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אשכח דרבנאי</strong> - אורבים:"
+  },
+  "Rashi on Bekhorot 8b:8:3": {
+    "dependsOn": [
+      "Rashi on Bekhorot 8b:8:1",
+      "Rashi on Bekhorot 8b:8:2",
+      "Rashi on Bekhorot 8b:8:4"
+    ],
+    "generatedAt": "2026-11-05T15:25:50.920Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מבראי</strong> - שלא יצא אחד מן הזקנים לחוץ:"
+  },
+  "Rashi on Bekhorot 8b:8:4": {
+    "dependsOn": [
+      "Rashi on Bekhorot 8b:8:1",
+      "Rashi on Bekhorot 8b:8:2",
+      "Rashi on Bekhorot 8b:8:3",
+      "Bekhorot 8b:8",
+      "Rashi on Bekhorot 8b:9:1"
+    ],
+    "generatedAt": "2026-11-05T15:27:29.034Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מגוואי</strong> - שלא יניחו אדם ליכנס וכי חזו הנך סבי כרעא דעיילא קטלי להו [לבראי] שהיתה אסקופת החדר עבה ושופכין סובין או עפר עליה וניכרות בה פסיעות האדם וכי חזו כרעא דעיילא קטלי לשומרי [בראי] כי הניחו לבא וכי חזו כרעא דנפקא קטלי להו [לגוואי] שהניחוהו לצאת והשומרים לא היו הורגים שום אדם אא\"כ נכנס כולו לפנים על כרחן או אחד יוצא כולו לחוץ:"
+  },
+  "Rashi on Bekhorot 8b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T15:27:59.727Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 8b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפכיה</strong> - רבי יהושע לסנדליה ועמד על האיסקופה ונראית פסיעה אחת נכנסת ופסיעה אחת יוצאה ודחפוהו השומרים ויצא וכשבאו הזקנים ראו כן ודימו ששני בני אדם הן אחד נכנס ואחד יוצא וקטלינהו לכולהו שומרים ואח\"כ נכנס רבי יהושע:"
+  },
+  "Tosafot on Bekhorot 8b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T15:09:52.346Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 8b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחד לשלש ומאי נינהו עז מחתול</strong> - הכא ניחא טפי למנקט עז מכלב למ\"ד <span class=\"parenthesized\">(כלאים פ\"ח מ\"ו)</span> מין חיה לפי שהחשבון שלהן מכוון טפי אחד לשלש אלא ניחא ליה למיפרך ככולי עלמא:"
   }
 }

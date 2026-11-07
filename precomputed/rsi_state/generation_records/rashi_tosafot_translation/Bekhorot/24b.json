@@ -1,0 +1,233 @@
+{
+  "Rashi on Bekhorot 24b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T15:05:50.979Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 24b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחאי בריבי</strong> - אדם גדול וחשוב בדורו:"
+  },
+  "Rashi on Bekhorot 24b:1:2": {
+    "dependsOn": [
+      "Bekhorot 24b:1",
+      "Rashi on Bekhorot 24b:1:1"
+    ],
+    "generatedAt": "2026-11-06T15:06:33.880Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 24b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תיבעי ליה טלה</strong> - דהא בטלה פליגי:"
+  },
+  "Rashi on Bekhorot 24b:2:1": {
+    "dependsOn": [
+      "Bekhorot 24b:2"
+    ],
+    "generatedAt": "2026-11-06T15:07:55.203Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 24b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קמיבעיא ליה לבכורה אליבא דרבנן</strong> - ואליבא דר\"ש פשיטא דפטורה דאפי' דמינה לא הוה מרחמא אא\"כ ילדה וכ\"ש דלאו מינה ולענין אכילה מבעיא ליה ואפי' לרבן שמעון וכ\"ש לרבנן:"
+  },
+  "Rashi on Bekhorot 24b:3:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 24b:3:2",
+      "Bekhorot 24b:3"
+    ],
+    "generatedAt": "2026-11-06T15:08:47.099Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 24b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלאו מינה לא</strong> - מרחמא והא ודאי דידה היא ופטורה מן הבכורה:"
+  },
+  "Rashi on Bekhorot 24b:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T15:09:20.229Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 24b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או דלמא דלאו מינה נמי מרחמא</strong> - והבא אחריו בכור מספק:"
+  },
+  "Rashi on Bekhorot 24b:4:1": {
+    "dependsOn": [
+      "Bekhorot 24b:4",
+      "Rashi on Bekhorot 24b:3:1",
+      "Rashi on Bekhorot 24b:3:2",
+      "Maharsha on Bekhorot 24b:2:1",
+      "Bekhorot 24b:1",
+      "Bekhorot 24b:2",
+      "Rashi on Bekhorot 24b:2:1",
+      "Bekhorot 24a:6",
+      "Bekhorot 24a:14"
+    ],
+    "generatedAt": "2026-11-06T15:11:21.589Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 24b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם תימצי לומר כו'</strong> - אי ס\"ל יולדת אינה מרחמא הא ודאי מותר דבנה הוא אלא א\"כ תימצי לומר יולדת מרחמ' והאי דפטר ליה מבכורה משום דאי האי [לאו] דידה אחרינא הוה ליה אבל האי דסריך בתרה לא פשיטא לן דדידה הוא ה\"מ דמינה אבל דלאו מינה לא והאי חזיר ודאי בנה הוא ומותר באכילה:"
+  },
+  "Rashi on Bekhorot 24b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T15:11:48.167Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 24b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עושה מקום בקופיץ</strong> - מפנה את השער מכאן ומכאן למקום שחיטת הסכין:"
+  },
+  "Rashi on Bekhorot 24b:5:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 24b:5:1",
+      "Rashi on Bekhorot 24b:5:3",
+      "Rashi on Bekhorot 24b:5:4"
+    ],
+    "generatedAt": "2026-11-06T15:12:39.969Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 24b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותולש את השער</strong> - לכאן ולכאן למקום חתך הסכין משום חלדה ולא אמרינן גוזז הוא את הבכור:"
+  },
+  "Rashi on Bekhorot 24b:5:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T15:13:13.684Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 24b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובלבד שלא יזיזנו</strong> - שלא יאמרו גזיזה עביד בקדשים אלא יניחנו מסובך עם הצמר מכאן ומכאן:"
+  },
+  "Rashi on Bekhorot 24b:5:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T15:13:45.527Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 24b:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לראות מום</strong> - להראותו לחכם:"
+  },
+  "Rashi on Bekhorot 24b:6:1": {
+    "dependsOn": [
+      "Bekhorot 24b:5",
+      "Rashi on Bekhorot 24b:6:1",
+      "Rashi on Bekhorot 24b:6:2",
+      "Steinsaltz on Bekhorot 24b:6",
+      "Tosafot on Bekhorot 24b:7:1",
+      "Bekhorot 24b:6"
+    ],
+    "generatedAt": "2026-11-06T15:19:00.080Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 24b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כנגדו בי\"ט</strong> - בבהמת חולין משום שחיטה בעי למיעבד או לא:"
+  },
+  "Rashi on Bekhorot 24b:6:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 24b:6:1"
+    ],
+    "generatedAt": "2026-11-06T15:19:59.675Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 24b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאו היינו גוזז</strong> - ובכור גיזה הוא דאסור דכתיב <span class=\"parenthesized\">(דברים טו)</span> ולא תגוז:"
+  },
+  "Rashi on Bekhorot 24b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T15:20:35.526Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 24b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאין מתכוין</strong> - לתלוש אלא מפנהו ומושכו אילך ואילך אם נתלש נתלש:"
+  },
+  "Rashi on Bekhorot 24b:8:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 24b:8:2"
+    ],
+    "generatedAt": "2026-11-06T15:27:10.777Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 24b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיילוה לרב חננאל</strong> - תלמידיה דרב אי אמר לכו משמיה דרב הלכה כרבי יוסי:"
+  },
+  "Rashi on Bekhorot 24b:8:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 24b:8:1",
+      "Bekhorot 24b:8",
+      "Steinsaltz on Bekhorot 24b:8",
+      "Steinsaltz comment #1 on Bekhorot 24b:8",
+      "Steinsaltz comment #2 on Bekhorot 24b:8"
+    ],
+    "generatedAt": "2026-11-06T15:28:55.124Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 24b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פשיטנא לכו</strong> - אנא טעמא:"
+  },
+  "Tosafot on Bekhorot 24b:5:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 24b:5:1",
+      "Rashi on Bekhorot 24b:5:2",
+      "Bekhorot 24b:5",
+      "Bekhorot 24b:7"
+    ],
+    "generatedAt": "2026-11-06T15:16:22.868Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 24b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השוחט את הבכור עושה מקום בקופיץ</strong> - בגמ' אמרי' תני לקופיץ כלומר לצורך קופיץ משמע דדרך לשחוט בקופיץ מדלא קתני בסכין ותימה בפסחים פרק אלו דברים <span class=\"parenthesized\">(פסחים דף ע.)</span> לא משמע כן גבי סכין שנמצא בארבעה עשר שוחט בה מיד והקופיץ שונה ומטביל משום דסכין חזי לפסח לשחוט והטבילוהו מי\"ג אבל קופיץ לא חזי לפסח דיש בו משום שבירת עצם ונראה לפרש דנקט הכא קופיץ משום דבעי עשיית מקום טפי מסכין וצריכה עשיית מקום גדול ולא <span class=\"rashi-quotation\">כמו שפירש הקונט'</span> דעשיית מקום זה משום חלדה דאם כן סכין הוה ליה למינקט הכא דאיכא למיחש טפי לחלדה ועוד דבעיא היא בפ\"ב דחולין <span class=\"parenthesized\">(דף ל:)</span> תחת צמר מסובך מהו ולא איפשיטא אלא דרך לעשות מקום לקופיץ כדי שיהא נוח יותר לחתוך ולשחוט לפי שאין קופיץ נוח לחתוך בלא עשיית מקום ומטעם זה נמי נקט בכור ולא [סתם] קדשים לפי שהקדשים נשחטין בעזרה יש שם סכינין מזומנים ואין צריכים עשיית מקום ועוד י\"ל דנקט בכור לפי שנוהג בזמן הזה וגם דרך להיות צמרו גדול מתוך שמשהא אותו עד שיפול בו מום כי ההיא דתנן בפ' כל פסולי המוקדשין <span class=\"parenthesized\">(לקמן בכורות לה.)</span> מעשה בזכר של רחלים זקן ושערו מדולדל וצריך עשיית מקום טפי מטלאים ועוד משום דלאו דולא תגוז בבכור כתיב:"
+  },
+  "Tosafot on Bekhorot 24b:7:1": {
+    "dependsOn": [
+      "Bekhorot 24b:7",
+      "Bekhorot 25a:1",
+      "Gilyon HaShas on Bekhorot 24b:1",
+      "Bekhorot 24b:1"
+    ],
+    "generatedAt": "2026-11-06T15:26:15.497Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 24b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והיינו טעמא דשרי דהוה ליה דבר שאין מתכוין</strong> - ותולש דמתני' לאו בתולש ומתכוין קאמר אלא עושה מקום אם נתלש נתלש אבל אי טעמא משום דתולש לאו היינו גוזז יכול להיות דתולש במתכוין כך נראה לפרש הסוגיא ויש לתמוה מה שייך לשאול זה על יו\"ט אי במתכוין פשיטא להו דאסור ואי בשאין מתכוין פשיטא להו דשרי ומיהו הא גופה קמיבעיא להו שאין מתכוין מהו ביו\"ט אם מותר או אסור וקשיא דבלאו יום טוב היו יכולין לשאול הא דקתני מתני' ותולש את השער במתכוין קאמר משום דתולש לאו היינו גוזז או שמא בשאין מתכוין קאמר וגם שלא יהא כפסיק רישיה משום דתולש היינו גוזז ונראה לפרש דאפילו <span class=\"parenthesized\">(תימצי לומר)</span> תולש לאו היינו גוזז מ\"מ מדרבנן אסור במתכוין או בפסיק רישיה גזירה תולש אטו גוזז ולעולם ותולש דקתני מתניתין כשאין מתכוין ואינו פסיק רישיה קאמר ולענין בכור לא מצי למיבעי מידי כפשטה דמתני' אם לא לענין מלקות וקמיבעיא להו כנגדו ביום טוב מהו דדלמא דוקא בכור דתולש לאו היינו גוזז וליכא איסורא דאורייתא הוא דשרי דבר שאין מתכוין אבל ביו\"ט דאיכא איסורא דאורייתא דעוקר דבר מגידולו לא שרינן בשאין מתכוין או דלמא בבכור נמי איכא איסורא דאורייתא דתולש היינו גוזז וכי היכי דשרי בבכור משום דאין מתכוין שרי נמי ביום טוב וכן מוכח בסמוך דקאמר רב כנגדו ביום טוב מותר ופריך מהא דאמר רב הלכה כר' יהודה דבר שאין מתכוין אסור ומשני דתולש לאו היינו גוזז וביום טוב היינו טעמא דשרי דהוה ליה עוקר דבר מגידולו כלאחר יד ואם תימצי לומר דאי תולש לאו היינו גוזז א\"כ ותולש דקתני במתני' הוי במתכוין היכי שרי כנגדו ביום טוב מתכוין משום דלאחר יד ולאידך לישנא דאמרינן רב סבר כר' יוסי בן המשולם ור' יוסי בן המשולם לא סבר כרב היינו דרב שרי בבכור באין מתכוין משום דתולש לאו היינו גוזז אבל ר' יוסי בן המשולם מתיר אפילו היינו אומרים דתולש היינו גוזז דשרי אין מתכוין בכל מקום כדאשכחן גבי פרה והא <span class=\"parenthesized\">(דלא)</span> דקאמר רב הלכה כר' יוסי בן המשולם לעיל משמע דלא הוי פלוגתא וכמה תנאי אשכחן דסברי דבר שאין מתכוין אסור לקמן במכילתין גבי בכור שאחזו דם <span class=\"parenthesized\">(בכורות דף לג:)</span> ובמתניתין דכלאים <span class=\"parenthesized\">(פ\"ט משנה ו\"ז)</span> ובביצה <span class=\"parenthesized\">(דף כג:)</span> בברייתא דגרירה ויש לומר דדלמא מטעם דפסיק רב כוותיה משום דתולש לאו היינו גוזז לא אשכחן דפליגי ועוד כדפרישית לעיל דלא קרי פלוגתא אלא א\"כ נחלקו על אותו דבר עצמו וכן צריך לומר דהא בשותף נחלקו ר' יוסי ורבנן בחולין לענין ראשית הגז <span class=\"parenthesized\">(דף קלז.)</span> דאיכא למאן דמחייב אלמא מקרי גז צאנך והוא הדין תולש דהיינו גוזז אם לא נחלק בין תולש לשותף וא\"ת לקמן דמייתי ראיה מפרה דסבר ר' יוסי בן המשולם דבר שאינו מתכוין מותר ומשני שאני פרה דקדשי בדק הבית היא ופריך והא אמר ר' אלעזר קדשי בדק הבית אסורין בגיזה ועבודה ומשני מדרבנן ופריך והא איכא איסורא דרבנן ש\"מ שרוצה לדקדק דכי היכי דשרי דאין מתכוין בדרבנן שרי נמי בדאורייתא וי\"ל דההיא דמדרבנן לא דמו כלל להני דתולש לאו היינו גוזז ולעוקר דבר מגידולו כלאחר יד דאין איסורין הללו דאורייתא בשום מקום אבל בפרה איירי בגיזה גמורה דאע\"ג דמדאורייתא אין איסור קדשי ב\"ה בגיזה ועבודה לדבריו דכל דתקון רבנן כעין דאורייתא תקון ולגמרי עשו קדשי בדק הבית כקדשי מזבח וראיה לדברי מפ\"ק דכתובות <span class=\"parenthesized\">(דף ה:)</span> דאיבעיא להו מהו לבעול בתחלה בשבת לדם הוא צריך ושרי פי' דמיפקד פקיד או לפתח הוא צריך ואסור אם תמצי לומר לדם הוא צריך ופתחא ממילא קא הוי הלכה כר' יהודה דמקלקל הוא אצל פתח אלמא שרי ר' יהודה דבר שאין מתכוין במקלקל דאע\"ג דאיכא איסורא דרבנן במקלקל לחודיה והא דאסר ר' יהודה באין מתכוין בגרירה ואע\"ג דמקלקל הוא כדמוכח בסוף פ\"ק דחגיגה <span class=\"parenthesized\">(דף י.)</span> גבי חופר גומא ואין צריך אלא לעפרה ובפרק י\"ט <span class=\"parenthesized\">(ביצה כג.)</span> אסר ר' יהודה קידור משום דדבר שאין מתכוין הוי כמקלקל בהוצאת דם יש לחלק בין במקום מצוה למקום שאין מצוה א\"נ גבי גרירה איכא לפרש שמא מתקן שמשוה גומות מצד אחר וגבי קידור נהנית הבהמה בהוצאת הדם מידי דהוה אדם הקזה וה\"ה גבי וכן תולש את השער לראות את מקום המום [דבעי] לכתחלה או דיעבד ומסיק דלכתחלה קאמר ומשמע מדתני וכן דרישא נמי לכתחלה קאמר כמו בסיפא לאו לכתחלה שיתלוש במתכוין קאמר אלא באותן שהתרנו משום שחיטה נתיר נמי לכתחלה לראות מקום המום או דיעבד כלומר דא\"נ עשה לא יזיזנו ממקומו כן נראה כמו שפירשתי ומתיישבת כל הסוגיא ואם נפרש דאם תולש לאו היינו גוזז שרי אפילו לתלוש במתכוין צ\"ל דלקמן דשרי כנגדו בי\"ט משום דהוה ליה עוקר דבר מגידולו כלאחר יד אפי' במתכוין לתלוש <span class=\"parenthesized\">(שם)</span> נמי שרי שהתירו חכמים שלא תתקלקל שחיטתו ביום טוב:"
+  },
+  "Tosafot on Bekhorot 24b:8:1": {
+    "dependsOn": [
+      "Bekhorot 24b:8"
+    ],
+    "generatedAt": "2026-11-06T15:30:15.014Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 24b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי אמר הלכה כר' יוסי בן המשולם איפשוט לכו</strong> - וא\"ת מה היה מקפיד בכך הא בכל ענין כנגדו בי\"ט מותר או משום דבר שאין מתכוין או משום עוקר דבר מגידולו כלאחר יד כדלקמן וי\"ל דאם לא היה הלכה כמותו אלא הוה אסרינן בבכור ואע\"ג דתולש לאו היינו גוזז שהחמירו חכמים ולא התירו משום צורך תיקון שחיטת בכור כמו כן לא יתירו בעוקר דבר מגידולו כלאחר יד משום צורך תיקון שחיטת יום טוב:"
+  }
+}

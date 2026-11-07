@@ -1,0 +1,561 @@
+{
+  "Rashi on Bekhorot 22a:10:1": {
+    "dependsOn": [
+      "Steinsaltz on Bekhorot 22a:10",
+      "Chullin 99b:7"
+    ],
+    "generatedAt": "2026-11-06T11:39:38.184Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ציר לאו בר קבולי טומאה</strong> - דזיעה בעלמא הוא שיוצאה מן הדגים כשמולחין אותן:"
+  },
+  "Rashi on Bekhorot 22a:10:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 22a:10:1"
+    ],
+    "generatedAt": "2026-11-06T11:40:29.281Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום הך מיעוטא דמיא</strong> - דמקבלי טומאה והשקה לא מהניא להו הואיל ורובא ציר ובאוכל לא סלקא השקה בטלי להו ברובא ולא הוי הציר טמא:"
+  },
+  "Rashi on Bekhorot 22a:11:1": {
+    "dependsOn": [
+      "Bekhorot 22a:11",
+      "Rashi on Bekhorot 22a:11:2",
+      "Tosafot on Bekhorot 22a:11:1"
+    ],
+    "generatedAt": "2026-11-06T11:44:31.487Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שנו</strong> - דבטלו ברוב ומותר הציר אלא לטבל פיתו:"
+  },
+  "Rashi on Bekhorot 22a:11:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 22a:11:1",
+      "Rashi on Bekhorot 22a:11:3",
+      "Rashi on Bekhorot 22a:11:4",
+      "Bekhorot 22a:8",
+      "Bekhorot 22a:10"
+    ],
+    "generatedAt": "2026-11-06T11:45:30.006Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל</strong> - לתקן את הקדירה אסור שהמים שבתוך הציר מוצאין מים שבקדירה ומצטרפין יחד ורבין על הציר ומטמאין אותו:"
+  },
+  "Rashi on Bekhorot 22a:11:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T11:46:17.810Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מצא מין את מינו וניעור</strong> - מתורת ביטול וחוזר לטומאה:"
+  },
+  "Rashi on Bekhorot 22a:11:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T11:46:53.069Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22a:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להאי שמעתא</strong> - דרבי ירמיה:"
+  },
+  "Rashi on Bekhorot 22a:1:1": {
+    "dependsOn": [
+      "Bekhorot 22a:1"
+    ],
+    "generatedAt": "2026-11-06T10:33:56.624Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומשני כדי לפרסמה</strong> - לאם שפטורה מן הבכורה דמדקברינן לחררה מחזקינן ליה כולד:"
+  },
+  "Rashi on Bekhorot 22a:2:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 22a:2:1",
+      "Rashi on Bekhorot 22a:2:2",
+      "Rashi on Bekhorot 22a:2:3",
+      "Bekhorot 22a:2",
+      "Rashi on Bekhorot 22a:1:1",
+      "Rashi on Bekhorot 21b:10:1"
+    ],
+    "generatedAt": "2026-11-06T10:41:30.942Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22a:2:1"
+    ],
+    "sourceText": "וקפריך כיון דפטרת ליה מבכורה <big>למימרא דולד מעליא הוא ואמאי</big> אינה מטמאה:"
+  },
+  "Rashi on Bekhorot 22a:2:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 22a:2:1",
+      "Rashi on Bekhorot 22a:2:3",
+      "Bekhorot 21b:11",
+      "Bekhorot 22a:1",
+      "Steinsaltz on Bekhorot 22a:2",
+      "Steinsaltz comment #1 on Bekhorot 22a:2",
+      "Chidushei Halachot on Bekhorot 22a:1",
+      "Niddah 27b:8",
+      "Niddah 27b:9",
+      "Rashi on Niddah 27b:9:1"
+    ],
+    "generatedAt": "2026-11-06T10:43:46.857Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ביטול ברוב</strong> - להכי אינה מטמאה שבטל הבשר ברוב דם וגנונים שיוצאין עמו:"
+  },
+  "Rashi on Bekhorot 22a:2:3": {
+    "dependsOn": [
+      "Rashi on Bekhorot 22a:2:1",
+      "Rashi on Bekhorot 22a:2:2",
+      "Bekhorot 22a:2",
+      "Steinsaltz on Bekhorot 22a:2",
+      "Chidushei Halachot on Bekhorot 22a:1",
+      "Niddah 27b:8",
+      "Niddah 27b:9",
+      "Niddah 27b:12"
+    ],
+    "generatedAt": "2026-11-06T10:45:18.097Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נגעו בה</strong> - הא דאמרן דלא מטמא במגע משום ביטול ברוב:"
+  },
+  "Rashi on Bekhorot 22a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T10:54:21.894Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השליא בבית</strong> - שהפילה האשה שליא ואין ולד ניכר בה:"
+  },
+  "Rashi on Bekhorot 22a:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T10:54:54.819Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הבית טמא</strong> - כדקתני טעמא דאין שליא בלא ולד אלא שנימוק ואעפ\"כ מטמא:"
+  },
+  "Rashi on Bekhorot 22a:4:3": {
+    "dependsOn": [
+      "Rashi on Bekhorot 22a:4:1",
+      "Rashi on Bekhorot 22a:4:2",
+      "Niddah 27a:1",
+      "Niddah 27a:2",
+      "Niddah 27a:3",
+      "Niddah 27a:4",
+      "Niddah 27a:5",
+      "Niddah 27a:12",
+      "Niddah 27a:16",
+      "Rashi on Bekhorot 22a:2:1",
+      "Rashi on Bekhorot 22a:2:2",
+      "Rashi on Bekhorot 22a:2:3",
+      "Bekhorot 22a:2",
+      "Bekhorot 22a:3",
+      "Rashi on Bekhorot 22a:5:1",
+      "Rashi on Bekhorot 22a:7:1",
+      "Rashi on Bekhorot 20a:6:1",
+      "Rashi on Bekhorot 2a:1:1",
+      "Rashi on Bekhorot 2a:1:2"
+    ],
+    "generatedAt": "2026-11-06T11:02:42.582Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי שמעון אומר הולד נימוק</strong> - ומוקמינן התם דטעמא דר' שמעון דאמר הבית טהור משום ביטול ברוב נגעו בה במסכת נדה בפרק המפלת <span class=\"parenthesized\">(נדה דף כז.)</span>:"
+  },
+  "Rashi on Bekhorot 22a:5:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 22a:5:1",
+      "Rashi on Bekhorot 22a:5:2",
+      "Rashi on Bekhorot 22a:5:3"
+    ],
+    "generatedAt": "2026-11-06T11:05:50.192Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פתיחת הקבר</strong> - אשה שמת עוברה במעיה וישבה על המשבר ונפתח קבר הרחם בבית זה ולא יצא הולד והוציאוה לבית אחר טמא הבית הראשון כאילו נולד שם דטומאה בוקעה והוא הדין פתיחת הקבר אינו לנפלים אלא לנפל שהעגיל ראשו כבר שעב ראשו:"
+  },
+  "Rashi on Bekhorot 22a:5:2": {
+    "dependsOn": [
+      "Jastrow, פִּיקָא 1",
+      "Rashi on Bekhorot 22a:5:1",
+      "Rashi on Bekhorot 22a:5:3",
+      "Rashi on Bekhorot 45a:1:2",
+      "Sefer HeArukh, Letter Peh 357",
+      "Steinsaltz on Bekhorot 22a:5",
+      "Steinsaltz comment #1 on Bekhorot 22a:5",
+      "Steinsaltz comment #2 on Bekhorot 22a:5",
+      "Steinsaltz comment #3 on Bekhorot 22a:5",
+      "Steinsaltz comment #4 on Bekhorot 22a:5",
+      "Rashi on Bekhorot 22a:8:2",
+      "Rashi on Shabbat 20b:3:5"
+    ],
+    "generatedAt": "2026-11-06T11:11:25.501Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פיקה של צמר</strong> - למושי\"ל:"
+  },
+  "Rashi on Bekhorot 22a:5:3": {
+    "dependsOn": [
+      "Bekhorot 22a:5",
+      "Rashi on Bekhorot 22a:5:1",
+      "Rashi on Bekhorot 22a:5:2",
+      "Rashi on Bekhorot 22a:5:3",
+      "Rashi on Bekhorot 22a:6:1",
+      "Rashi on Bekhorot 22a:6:2",
+      "Rashi on Bekhorot 22a:6:3",
+      "Rashi on Bekhorot 22a:6:4",
+      "Steinsaltz on Bekhorot 22a:5"
+    ],
+    "generatedAt": "2026-11-06T11:14:12.058Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי פריש</strong> - דצריך פיקה של שתי שקטנה או פיקה של ערב שגדולה:"
+  },
+  "Rashi on Bekhorot 22a:6:1": {
+    "dependsOn": [
+      "Bekhorot 22a:6",
+      "Rashi on Bekhorot 22a:6:1",
+      "Rashi on Bekhorot 22a:6:2",
+      "Rashi on Bekhorot 22a:6:3",
+      "Rashi on Bekhorot 22a:6:4"
+    ],
+    "generatedAt": "2026-11-06T11:19:15.563Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ליה תניא</strong> - דפליגי בה:"
+  },
+  "Rashi on Bekhorot 22a:6:2": {
+    "dependsOn": [
+      "Bekhorot 22a:6",
+      "Rashi on Bekhorot 22a:6:1",
+      "Rashi on Bekhorot 22a:6:2",
+      "Rashi on Bekhorot 22a:6:3",
+      "Rashi on Bekhorot 22a:6:4",
+      "Rashi on Bekhorot 22a:5:1",
+      "Rashi on Bekhorot 22a:5:2",
+      "Rashi on Bekhorot 22a:5:3",
+      "Tosafot on Bekhorot 22a:11:3",
+      "Steinsaltz on Bekhorot 22a:6",
+      "Tosefta Oholot 8:6",
+      "Jastrow, *טְפִיפִית 1"
+    ],
+    "generatedAt": "2026-11-06T11:21:25.711Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משיראו טפיפיות</strong> - ר\"א בר צדוק פליג אתנא קמא ואמר אע\"ג שלא העגילו ראש כפיקה יש פתיחת הקבר משיפתח רחמה כל כך שיראו בתוך רחמה טפיפיות:"
+  },
+  "Rashi on Bekhorot 22a:6:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T11:21:58.485Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כפרדה זו שכורעת להטיל מים</strong> - וכורעת יותר מבהמה וחיה ומתוך כריעה נפתח רחמה מאד ונראין קמטים ברחם:"
+  },
+  "Rashi on Bekhorot 22a:6:4": {
+    "dependsOn": [
+      "Rashi on Bekhorot 22a:6:1",
+      "Rashi on Bekhorot 22a:6:2",
+      "Rashi on Bekhorot 22a:6:3",
+      "Rashi on Bekhorot 22a:6:4",
+      "Steinsaltz on Bekhorot 22a:6:1",
+      "Steinsaltz on Bekhorot 22a:6",
+      "Jastrow, *טְפִיפִית 1"
+    ],
+    "generatedAt": "2026-11-06T11:23:22.215Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22a:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פיקה מתוך פיקה</strong> - והיינו טפיפיות תרי זימני פיפי היינו פיקה:"
+  },
+  "Rashi on Bekhorot 22a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T11:23:48.463Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין לי לפרש</strong> - איני יודע לפרש:"
+  },
+  "Rashi on Bekhorot 22a:7:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 22a:7:1",
+      "Rashi on Bekhorot 22a:7:2",
+      "Rashi on Bekhorot 22a:7:3",
+      "Rashi on Bekhorot 22a:7:4",
+      "Steinsaltz on Bekhorot 22a:7:1",
+      "Steinsaltz on Bekhorot 22a:7",
+      "Bekhorot 22a:5",
+      "Rashi on Bekhorot 22a:5:1",
+      "Rashi on Bekhorot 21b:1:1",
+      "Rashi on Bekhorot 21b:1:2"
+    ],
+    "generatedAt": "2026-11-06T11:25:31.260Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">של אשה</strong> - דין להיות לה פתיחת הקבר:"
+  },
+  "Rashi on Bekhorot 22a:7:3": {
+    "dependsOn": [
+      "Rashi on Bekhorot 22a:7:1",
+      "Rashi on Bekhorot 22a:7:2",
+      "Rashi on Bekhorot 22a:7:4"
+    ],
+    "generatedAt": "2026-11-06T11:26:19.676Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">של בהמה</strong> - שלא תהא כטומאה בלועה לטומאת מגע משום נבילה של נפל אם הושיט הרועה יד ונגע בו להוציאו מן הרחם:"
+  },
+  "Rashi on Bekhorot 22a:7:4": {
+    "dependsOn": [
+      "Rashi on Bekhorot 22a:7:1",
+      "Rashi on Bekhorot 22a:7:2",
+      "Rashi on Bekhorot 22a:7:3",
+      "Rashi on Bekhorot 22a:7:4",
+      "Steinsaltz on Bekhorot 22a:7",
+      "Rashi on Bekhorot 22a:2:1",
+      "Rashi on Bekhorot 22a:4:1"
+    ],
+    "generatedAt": "2026-11-06T11:30:44.919Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22a:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשל ערב</strong> - משהעגיל ראש כפיקה של ערב ואי לאו טמא בלועה היא ולא מטמיא כדתנן בהמה שמת עוברה בתוך מעיה והושיט הרועה את ידו ונגע בו טהור בפרק בהמה המקשה <span class=\"parenthesized\">(חולין דף ע:)</span>:"
+  },
+  "Rashi on Bekhorot 22a:8:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 22a:8:1",
+      "Rashi on Bekhorot 22a:8:2",
+      "Rashi on Bekhorot 22a:8:3",
+      "Rashi on Bekhorot 22a:1:1",
+      "Rashi on Bekhorot 22a:4:1"
+    ],
+    "generatedAt": "2026-11-06T11:32:19.945Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גוש</strong> - עפר שיעורו לטמא באהל ולשרוף עליו תרומה וקדשים:"
+  },
+  "Rashi on Bekhorot 22a:8:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 22a:8:1",
+      "Rashi on Bekhorot 22a:8:2",
+      "Rashi on Bekhorot 22a:8:3",
+      "Steinsaltz on Bekhorot 22a:8"
+    ],
+    "generatedAt": "2026-11-06T11:33:32.276Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כפיקה גדולה של סקאין</strong> - מרצופין סקאין גדולים של גמי וכשנועלין אותן חותמין אותן:"
+  },
+  "Rashi on Bekhorot 22a:8:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T11:34:21.510Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וישנו בצד העליון של מגופת חבית הלחמית</strong> - כלומר שישנו לאותו חותם בצד העליון של כיסוי שעושין לחביות של חרס רחב מלמטה לכסות החבית והולך ומתקצר למעלה כדי שיאחז בידים ואותו צד שהולך וכלה קרי צד העליון. הלחמית שעושין בבית לחם:"
+  },
+  "Rashi on Bekhorot 22a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T11:36:48.546Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משיקו במים</strong> - שמא נטמא מחמת מגע עם הארץ:"
+  },
+  "Rashi on Bekhorot 22a:9:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 22a:9:1",
+      "Bekhorot 22a:9",
+      "Steinsaltz comment #1 on Bekhorot 22a:9",
+      "Steinsaltz comment #2 on Bekhorot 22a:9",
+      "Rashi on Bekhorot 22a:10:1",
+      "Rashi on Bekhorot 22a:10:2"
+    ],
+    "generatedAt": "2026-11-06T11:38:44.424Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וטהור</strong> - ממה נפשך דודאי מים מעורבים בו ואי מיא רובא ובטיל הציר ברוב ומקבל טומאה מחמת המים ומיא סלקא להו טבילה בהשקה שנותן הכלי במקוה עד שעוברים מי המקוה על פיו ונושקין עם המים שבתוך הכלי ואע\"ג דאוכל ומשקה לית להו טהרה במקוה מיא סלקא להו השקה דהוי כמי שזרען וחוזר ונוטלן דזריעה מטהרה מטומאה דתנן <span class=\"parenthesized\">(תרומות פ\"ט מ\"ז)</span> שתילי תרומה שנטמאו ושתלן טהורין בתשובת רבינו גרשון מצאתי כך:"
+  },
+  "Tosafot on Bekhorot 22a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T11:41:11.511Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 22a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הנך מיעוטא דמיא בטילן להו ברובא</strong> - ולא דמי לשאר איסורין שהוא בנותן טעם דלא אתמר טעם כעיקר לענין טומאה וכן נבילה בטילה בשחוטה לענין טומאה אפי' חזר ונתבשל הכל ביחד:"
+  },
+  "Tosafot on Bekhorot 22a:10:2": {
+    "dependsOn": [
+      "Tosafot on Bekhorot 22a:10:1",
+      "Steinsaltz In-Depth comment #1 on Bekhorot 22a:10",
+      "Tosafot on Bekhorot 22a:3:1",
+      "Tosafot on Bekhorot 22a:5:1",
+      "Tosafot on Bekhorot 22a:8:1"
+    ],
+    "generatedAt": "2026-11-06T11:42:32.202Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 22a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בטילי להו ברובא</strong> - ואפי' היו מחצה על מחצה מ\"מ מטעם דלא בטל סלקא להו השקה:"
+  },
+  "Tosafot on Bekhorot 22a:11:1": {
+    "dependsOn": [
+      "Tosafot on Bekhorot 22a:11:1"
+    ],
+    "generatedAt": "2026-11-06T11:48:38.612Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 22a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל לקדירה לא מצא מין את מינו וניעור</strong> - לא דמי להא דאמרינן בפרק גיד הנשה <span class=\"parenthesized\">(חולין דף ק: ושם)</span> ובפרק הקומץ רבה <span class=\"parenthesized\">(מנחות דף כג.)</span> ובפ' בתרא דע\"ז <span class=\"parenthesized\">(דף עג.)</span> סלק את מינו כמי שאינו ושאינו מינו רבה עליו ומבטלו דהתם אין מינו נאסר אלא מכח האיסור שנתערב ואי אפשר להבדילו ובכ\"מ שישנו היתר הוא לפיכך שייך לומר סלק אבל היכא דמינו עצמו מטמא מחמת מגע מים הטמאים אין שייך לומר בו סלק:"
+  },
+  "Tosafot on Bekhorot 22a:11:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 22a:11:1",
+      "Rashi on Bekhorot 22a:11:2",
+      "Rashi on Bekhorot 22a:11:3",
+      "Rashi on Bekhorot 22a:11:4",
+      "Tosafot on Bekhorot 22a:11:1",
+      "Tosafot on Bekhorot 22a:11:3",
+      "Tosafot on Bekhorot 22a:11:2",
+      "Tosafot on Bekhorot 22a:3:1",
+      "Tosafot on Bekhorot 22a:5:1"
+    ],
+    "generatedAt": "2026-11-06T11:51:31.129Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 22a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וניעור</strong> - <span class=\"rashi-quotation\">פירש הקונט'</span> שהמים חוזרים ורבים על הציר ומטמאין אותו ולא דק דציר לאו בר קבולי טומאה הוא אלא זהו ניעור דמקמי הכי בטל הציר מן המים טומאת משקין מחמת רוב ציר ועכשיו שהמים ניעורו לכמו שהן תחלה קודם שנתערבו בציר:"
+  },
+  "Tosafot on Bekhorot 22a:11:3": {
+    "dependsOn": [
+      "Avodah Zarah 73a:4-15",
+      "Tosafot on Avodah Zarah 73a:4:1",
+      "Rashi on Avodah Zarah 73a:4:1",
+      "Rashi on Avodah Zarah 73a:8:1"
+    ],
+    "generatedAt": "2026-11-06T12:02:22.920Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 22a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יתיב רב דימי וקאמר להא שמעתא כו'</strong> - הקשה הרב רבי אפרים דהכא אית ליה לרב דימי דאפילו טהרה עוררת טומאה ובפ' בתרא דע\"ז <span class=\"parenthesized\">(דף עג.)</span> אית ליה דאפי' איסור אין עורר איסור דקאמר המערה יין נסך מחבית לבור אפי' כל היום כולו ראשון ראשון בטל וי\"ל דהכא משמיה דריש לקיש והתם משמיה דר' יוחנן ומיהו קשה לרבי יוחנן דאפי' בטומאה דחולין דקילא דדייקינן בסמוך ממתניתין וברייתא דטומאה עוררת טומאה דקאמר שמא יביא קב חולין טמאין וכו' כ\"ש דאיסור יש לו לעורר איסור ומילתא דפשיטא היא בכוליה הש\"ס דאיסור מעורר איסור ובפרק הערל <span class=\"parenthesized\">(יבמות דף פב:)</span> נמי אמרינן דנתן סאה ונטל סאה כשר עד רובו אבל יתר ממנו לא ולא אמרינן ראשון ראשון בטל ובפרק נוטל <span class=\"parenthesized\">(שבת דף קמב.)</span> סאה של תרומה שנפלה לתוך ק' של חולין ולא הספיק להעלותה עד שנפלה אחרת אסור ומיהו אין משם ראיה כל כך דהתם משום דסאה ראשון נהי דלא אסר מ\"מ לא נתבטל דצריך להרים ועוד אשכחן בפרק הנודר מן הירק <span class=\"parenthesized\">(נדרים דף נז:)</span> דר' יוחנן אית ליה אפילו גידולי היתר מעלין את האיסור ומיהו אין משם קושיא לפי מה שרגיל ר\"ת לחלק בין היתר דגדל בלא הפסק להיכא דאיכא הפסק ומעמיד ההיא דע\"ז במיפסק פסוקי כדאשכחן בפ' בתרא דנדה <span class=\"parenthesized\">(דף עא:)</span> גבי דם תבוסה דמחלק בין פסק ללא פסק ובפ' התערובות <span class=\"parenthesized\">(זבחים דף עח.)</span> דאמרינן דם לתוך המים ראשון ראשון בטל התם איירי בפסק וההוא דשמא רבו הנוטפין על הזוחלין היינו שמא ירבו בלא הפסק ומתוך כך מפרש ר\"ת בהגוזל קמא <span class=\"parenthesized\">(ב\"ק דף ק.)</span> ובריש ב\"ב <span class=\"parenthesized\">(דף ב.)</span> דנקט נפרצה אומרים לו גדור תרי זמני דאם יש תוספת מאתים בין שני הפעמים אין מצטרפין לאסור כיון שיש הפסק אבל קשה מהא דשמעתין ובפרק הערל דאפי' בלא הפסק אמרינן דחוזר וניעור ונראה לרבי דבכל דוכתא יש לו להיות ניעור אפי' בהפסק וגבי דם תבוסה בפ' בתרא דנדה <span class=\"parenthesized\">(דף עא:)</span> דבדרבנן הקילו וההיא דתערובת דם שאני התם דיש דחוי אצל קדשים דכיון שנדחית כל טיפה וטיפה כשנופלת שוב אינה חוזרת ונראית וההיא דר' יוחנן דע\"ז <span class=\"parenthesized\">(דף עג.)</span> דקאמר ראשון ראשון בטל היינו כל זמן שיש בהיתר ששים על האיסור דליכא נתינת טעם ואאיסור משהו דמתני' דהתם קאי וזה לשון ראשון בטל דיין נסך נראה עד רובו לשל היתר אבל אם רבה איסור אסור שאיסורין המתבטלים חוזרים וניעורין ונראה דמאן דאית ליה בי\"נ החמור באיסורא לגו היתרא ראשון ראשון בטל כ\"ש בשאר איסורין או שמא בדבר זה הקילו ביין נסך יותר מבשאר איסורין דבשאר איסורין חוזר וניעור כשרבה האיסור כל כך שאין בהיתר ששים ועוד נראה שגם יין נסך אינו בטל ראשון ראשון עד רובו אלא עד ששים וכן שאר איסורין ואינן חלוקין אלא היכא דנפיש עמודיה טפי מחבית כמו שאפרש או בהיתרא לגו איסורא פי' שבתחלת התערובת איסור והיתר אין ששים דהיתר לגבי איסור וביין נסך אם יוסיף היתר לתוכו עד עולם אסור ובשאר איסורין מותר כשרבה כל כך שיהא ששים של היתר ושמא אפי' בנפסק לא אמרינן ראשון ראשון בטל כמו בחתיכת בשר שבולעת טעם נבילה אפי' למאן דמפרש חתיכה עצמה נעשית נבילה בשאר איסורין כמו בבשר בחלב דלא אמרינן חתיכה עצמה נעשית נבילה אלא לענין שלא תועיל לו פליטה משום דאיפשר לסחטן אבל רביה תועיל וא\"ת כיון דלבסוף נמי איכא ששים של היתר לכך בטל היין נסך מאי איריא משום ראשון בטל כיון שגם לבסוף יש ששים י\"ל דדוקא נקט מחבית לבור דלא נפיש עמודיה כולי האי ואע\"ג דנפיש טפי מצרצור אבל היכא דנפיש עמודיה טובא לא בטל אפי' יש ששים בהיתר ולהכי קאמר ראשון ראשון בטל שאם נפל בבת אחת אינו בטל אע\"פ שיש ששים יין מן ההיתר ושמא דוקא יין נסך אבל טבל אינו בטל בשום עניין במינו או שמא יין נסך בטל ומינה שמעינן דכ\"ש ולרבותא נקטיה וכן נ\"ל עיקר ראשון ראשון בטל דדוקא עד ששים כדפרישית באיסורא לגו היתרא ובהיתרא לגו איסורא בכל שהוא אבל בשאר אסורין אפי' היתרא לגו איסורא חוזר וניעור ההיתר כשהוא רבה עד שיהא בו ששים ומי פירות במקום שמעלין בנתן סאה ונטל סאה עד רובו אין לתמוה למה בטלין מי פירות ונחשבין כמים דהכי גמירי לה דתנן מי פירות פעמים מעלין פעמים אין מעלין וכה\"ג דמעלין הרי הם כמים להעלות וכי איכא רוב חוזרין ונעורין ולמאי דפרישית מאן דשרי ע\"י ראשון ראשון בטל לא שרי אלא עד ששים ולא נפקא לן מידי אי הלכה כן אי לאו לאותן שנוהגין עכשיו היתר הנאה בשכשוך עובד כוכבים ובסתם יינם שהרי פסק ר\"ת שהיין המותר בהנאה אין לנו לומר שאוסר בכל שהוא ודבר פשוט הוא ונראה לי דבריו שלא להחמיר בו חומרא דיין נסך לאסור במשהו כיון דמותר בהנאה כאיסורין קלין ור\"ת פסק לשם קיימא לן כרבין דלית ליה ראשון ראשון בטל ולא שרי אלא בנפל שם קיתון של מים ונראין דבריו במה שאומר הלכה כרבין אם בא לחלוק על רב דימי ורב יצחק כדאמרינן בהבא על יבמתו <span class=\"parenthesized\">(יבמות דף סד:)</span> בסופו אבין בר סמכא יצחק סומקא לאו בר סמכא אבין יש לו בחזרה אבל זה אין בידי להוכיח אם רבין בא לחלוק אם לא כי י\"ל שלא בא לחלוק ומה שהצריך ביטול ע\"י מים דוקא היכא דעירה מחבית לבור לרב יצחק ולרב דימי בדנפיש עמודיה טפי מחבית ואפי' לר\"ש דלא מפרש לרב דימי חבית דוקא נוכל לומר שאין רבין חולק על רב יצחק ובמערה מחבית דבר רבא ולמאן דמתני ההיא דרב שמואל בר' יהודה דנפל שם קיתון של מים אמתנית' מצי סבר כרב דימי ויעמיד משנה כרב דימי בהיתרא לגו איסורא ולהכי לא בטל כל זמן שאין שם מים וזה שפירשתי שיסבור רב שמואל כרב דימי יכול להיות אם נפרש דרב שמואל בר' יהודה למאן דמתני ליה אמתנית' לא בעי תחלה היינו שאין להוכיח מילתיה דרב שמואל דבעי תחלה אבל מכ\"מ אמת הוא דאיהו נמי בעי תחלה כדי שלא נצטרך לומר שחולק על אותה דר' יוחנן דלקמיה דמזגן וערבם זה בזה דמשמע דבעי מזגן תחלה ואח\"כ ערבן אם נפרש כך שוב לא נוכל לומר שסובר רב שמואל ראשון ראשון בטל דכיון דבעי מים תחלה ס\"ל במשהו באיסורא לגו היתרא א\"כ לית ליה לא דרב דימי ולא דרב יצחק מיהו דאין צריך לפרש כך אלא כדמשתעי פשוטה דשמעתין דלא בעו תחלה ופליג אההיא דר' יוחנן דמזגן וערבן א\"נ לא פליג וס\"ל דהוא הדין ערבן תחלה ולא נקט מזיגה ברישא דוקא דהא לא גרסינן בפסחים מזגו ואח\"כ ערבו דלהוי משמע לגמרי דוקא אלא מזגו וערבו וכל הני ביטולי דההיא שמעתין דמזגן וערבן המערה מחבית לבור וההיא דשמעתין דשמא יביא קב ממין אחר וקב ועוד ממין זה יכולין להעמיד בשלא נתכוון לבטל ולהתיר את האיסור או לטהר את הטמא שאל\"כ לא הוי בטל ובנפל קיתון של מים תחלה אין לחלק בין נתנן במתכוין לנפל אבל לבסוף למאן דלא בעי תחלה דוקא בלא מתכוין קאמר ובההיא דציר דקיימינן דלא קאמר אמרינן סלק את מינו כמו שאינו ושאינו מינו רבה עליו ומבטלו י\"ל דההוא אמורא לית ליה:"
+  },
+  "Tosafot on Bekhorot 22a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T10:53:54.919Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 22a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי אליעזר ורבי שמעון אמרו דבר אחד</strong> - אע\"ג דרבנן מודו לר' שמעון דבטל כשהוציאוהו בספל לבית החיצון כדאמר בנדה פ' המפלת <span class=\"parenthesized\">(נדה דף כז.)</span> מ\"מ לא אשכח אמרו דבר אחד אלא מר' אליעזר בן יעקב ור' שמעון דלשניהם בטל בתחלת לידה ואע\"ג דמילתא דר' אליעזר בן יעקב לא דייקא כלל דבטל אלא דרבי חייא הוא דקאמר הכי י\"ל דתני ר' חייא דקאמר היינו שהיה שונה בו במילתיה דרבי אליעזר בן יעקב דאינה מטמאה במגע ולא במשא והכי איתא בהדיא בתוספתא:"
+  },
+  "Tosafot on Bekhorot 22a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T11:18:18.143Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 22a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד שיעגילו ראש כפיקה</strong> - הא דתנן בפ' המקשה <span class=\"parenthesized\">(חולין ד' ע:)</span> בהמה שמת עוברה במעיה והושיט הרועה ידו טהור כשלא העגיל כפיקה וכן אידך דקתני התם אשה שמת ולדה במעיה ופשטה החיה כו' האשה טהורה עד שיצא הולד ומשמע בגמ' דטהורה משום דהויא טומאה בלועה והחיה טמאה שמא יוציא ולד ראשו חוץ לפרוזדור ולאו אדעתה כשלא העגיל ראש כפיקה נמי איירי דאין לומר דלעולם הוי כפיקה וקודם פתיחת הקבר דהא לא מטמא אלא גזירה שמא יוציא ראשו חוץ לפרוזדור משמע דקודם לכן טהורה אע\"ג דפתיחת הקבר הוא קודם לכן דהא ביציאת ראש חוץ לפרוזדור הוי כילוד לגמרי:"
+  },
+  "Tosafot on Bekhorot 22a:8:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 22a:8:1",
+      "Rashi on Bekhorot 22a:8:2",
+      "Rashi on Bekhorot 22a:8:3",
+      "Steinsaltz on Bekhorot 22a:8",
+      "Steinsaltz comment #4 on Bekhorot 22a:8",
+      "Tosefta Kelim Metzia 7:1"
+    ],
+    "generatedAt": "2026-11-06T11:36:20.484Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 22a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בצד העליון של מגופת החבית</strong> - יש באותה מגופה כעין בית יד שעושין לאוחזה והוא עגול כעין אותה שקורין פיל מיי\"ל בלע\"ז:"
+  }
+}

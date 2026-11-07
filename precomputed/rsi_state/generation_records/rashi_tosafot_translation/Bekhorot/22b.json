@@ -1,0 +1,146 @@
+{
+  "Rashi on Bekhorot 22b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T12:03:07.618Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למאה חולין טהורין</strong> - שלא הוכשרו ולא טימאתן בנפילתה:"
+  },
+  "Rashi on Bekhorot 22b:1:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 22b:1:2",
+      "Rashi on Bekhorot 22b:1:1",
+      "Rashi on Bekhorot 22b:2:1",
+      "Rashi on Bekhorot 22b:2:2",
+      "Rashi on Bekhorot 22a:11:1"
+    ],
+    "generatedAt": "2026-11-06T12:04:44.961Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תירום</strong> - ירום משם סאה ותירקב כדין תרומה טמאה שאני אומר כו' ותרומה טמאה אסורה באכילה:"
+  },
+  "Rashi on Bekhorot 22b:2:1": {
+    "dependsOn": [
+      "Bekhorot 22b:1",
+      "Rashi on Bekhorot 22b:1:1",
+      "Rashi on Bekhorot 22b:1:2",
+      "Rashi on Bekhorot 22b:2:2",
+      "Rashi on Bekhorot 22b:2:3",
+      "Rashi on Bekhorot 22b:2:4",
+      "Bekhorot 22b:2",
+      "Rashi on Bekhorot 22b:3:1"
+    ],
+    "generatedAt": "2026-11-06T12:10:26.342Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תעלה</strong> - תיבטל ותיאכל עם חוליה ומשום גזירה יתן דמים לכהנים או ירים ממנה סאה ותאכל לכהנים:"
+  },
+  "Rashi on Bekhorot 22b:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T12:12:13.779Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ניקודים</strong> - ביובש כמו יבש היה נקודים <span class=\"parenthesized\">(יהושע ט׳:ה׳)</span>. דעכשיו אע\"ג שיש בה טמאה וטהורה אין מטמאה את הטהורה בלא הכשר וטמאה בטילה בטהורה ותיאכל ניקודים:"
+  },
+  "Rashi on Bekhorot 22b:2:3": {
+    "dependsOn": [
+      "Rashi on Bekhorot 22b:2:2"
+    ],
+    "generatedAt": "2026-11-06T12:13:01.240Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקליות</strong> - נמי דלא מיתכשרי ולא מקבלי טומאה:"
+  },
+  "Rashi on Bekhorot 22b:2:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T12:13:29.137Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22b:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או תילוש במי פירות</strong> - כמו מי תפוחים ותותים דמי פירות אין מכשירין:"
+  },
+  "Rashi on Bekhorot 22b:3:1": {
+    "dependsOn": [
+      "Bekhorot 22b:3",
+      "Rashi on Bekhorot 22b:2:1",
+      "Rashi on Bekhorot 22b:2:2"
+    ],
+    "generatedAt": "2026-11-06T12:24:39.862Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 22b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אותן חולין לר' אליעזר מה תהא עליהם</strong> - דלרבנן הא אמרינן בכולהו בין חולין בין תרומה יאכל נקודים או קליות:"
+  },
+  "Tosafot on Bekhorot 22b:1:1": {
+    "dependsOn": [
+      "Bekhorot 22b:1"
+    ],
+    "generatedAt": "2026-11-06T12:07:36.131Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 22b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תירום ותירקב</strong> - בירושלמי תני תשרף וקשה אטו בשופטני עסקינן שמותרין ליהנות בשריפתן ואינם חפצים ומניחים אותה לרקב ואין לנו להשמיע במה שאין בני אדם רגילים לעשות ור\"ת מפרש דתרקב ותשרף הכל אחד והגמרא שלנו מפרש ותשרף דתנן היינו בלא הנאה כעין רקבון דאי שרית בהנאה אתי למיכליה הואיל וסברא היה להתירה ע\"י בטול כדאמרי רבנן תעלה ותיאכל כו' וה\"ק או תרקב או תשרף בלא הנאה ועוד יש לפרש דמחלוקת של בני בבל ושל בני א\"י מהש\"ס שלנו והש\"ס ירושלמי וכמו כן בבבא אחרת ששנה באותו פרק דקתני אחר שהודו ר' אליעזר אומר תירום ותישרף קתני בתוספתא תירום ותרקב ואפשר דאיכא תני הכי ואיכא תני הכי וכן נמי אשכחן בפרק מצות חליצה <span class=\"parenthesized\">(יבמות דף קד:)</span> <span class=\"parenthesized\">(שפירש לעיל)</span> גבי קטנה שחלצה ובספרים שלנו גרסינן חליצתה פסולה ובירושלמי גרסינן כשירה ובריש מקום שנהגו <span class=\"parenthesized\">(פסחים דף נא:)</span> בההיא דכל הספיחים אסורין חוץ מספיחי כרוב אין הגרסא כן בירושלמי ובמשניות וא\"ת וכיון דתרקב ואסירא בהנאה אמאי תירום הא מפרש בירושלמי האי ערלה וכלאי הכרם בטלים באחד ומאתים וא\"צ להרים ותרומה באחד ומאה וצריך להרים משום גזל השבט והכא דכי מרים מתסרא ליכא גזל השבט י\"ל דלא פלוג רבנן:"
+  },
+  "Tosafot on Bekhorot 22b:2:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 22b:2:1",
+      "Rashi on Bekhorot 22b:2:2",
+      "Rashi on Bekhorot 22b:1:1",
+      "Rashi on Bekhorot 22b:1:2",
+      "Temurah 12a:13",
+      "Temurah 12b:1",
+      "Temurah 12b:2",
+      "Shabbat 142b:11",
+      "Shabbat 142b:12",
+      "Shabbat 142b:13",
+      "Tosafot on Bekhorot 2a:12:1"
+    ],
+    "generatedAt": "2026-11-06T12:18:16.978Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 22b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תעלה ותיאכל</strong> - <span class=\"rashi-quotation\">פי' בקונט'</span> תעלה לשון ביטול הוא ולא לשון הרמה כדקתני לר\"א תירום ולרבנן תעלה והא דתנן בפרק בתרא של מסכת ערלה התרומה ותרומת מעשר עולין באחד ומאה וצריך להרים התם משום הפסד דכהן ואי יהיב ליה דמי שפיר דמי ותדע דקתני סיפא ערלה וכלאי הכרם אין צריך להרים ואפ\"ה תנינן בהו לשון עלייה דתני מי שהיו לו חבילי תלתן של כלאי הכרם כו' וקתני יעלו באחד ומאתים עד כאן לשון <span class=\"rashi-quotation\">הקונטרס</span> והדין עמו שפירש הטעם משום הפסד כדמפרש נמי טעמא בירושלמי משום גזל השבט ומיהו אע\"ג דעיקר תקנה משום זה היה מסתבר דאין יכול להפטר בדמים דעד כאן לא פליגי ר\"א ורבנן בפ' נוטל <span class=\"parenthesized\">(שבת דף קמב.)</span> ובפ\"ק דתמורה <span class=\"parenthesized\">(דף יב.)</span> במדומע דלר\"א מדמע בתרומה ודאי ולרבנן לפי חשבון אבל פשיטא דקדושת תרומה יש בה:"
+  },
+  "Tosafot on Bekhorot 22b:2:2": {
+    "dependsOn": [
+      "Bekhorot 22b:2",
+      "Tosafot on Bekhorot 22b:2:1",
+      "Rashi on Bekhorot 22b:2:1",
+      "Rashi on Bekhorot 22b:2:2",
+      "Rashi on Bekhorot 22b:2:3",
+      "Rashi on Bekhorot 22b:2:4",
+      "Bekhorot 22b:3",
+      "Chidushei Halachot on Bekhorot 22b:3"
+    ],
+    "generatedAt": "2026-11-06T12:21:32.473Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 22b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובלבד שלא יהא במקום אחד כביצה</strong> - פי' כביצה מן התרומה שהתרומה היא חלק אחד ממאה ואחד צריך שלא יהיו <span class=\"parenthesized\">(שני)</span> שא\"כ היה בה כביצה מהתרומה טמאה ואין הטמאה יכול ליבטל במאה של טהורה שהוכשר שהרי מטמאה הכל ודומה כמטמא תרומה בידים שהתרומה טמאה טהרה ע\"י בטולה ומיהו מהאי טעמא לחודיה לא הוי מיתסר דכיון שכבר נתבטלה התרומה והכל חולין מותרת לזרים מה קפידא יש אם מטמא חולין אלא בעינן שלא יטעה לבטל קב חולין טמאים בקב ועוד כדמפרש עלה ומה טעם דעולא קאי בין אר\"א בין אדרבנן וא\"ת חולין טמאים נמי שנתבטלו ברוב חולין טהורין ניחוש נמי להכי וי\"ל דהתם במתבטל מיעוט חולין טמאין ברוב טהורין ליכא למיחש שמא יביא קב חולין טמאין וקב ועוד ממין הזה כי ידוע דשם טומאה לא פקע מן חולין טמאין המעורבין בטהורין אבל הכא סבור הוא דשם טומאה פקע לגמרי מאחר דשרינן לאכילה לזרים הכל לרבנן או הק' לר\"א אע\"פ שהתרומה מעורבת בהם:"
+  }
+}

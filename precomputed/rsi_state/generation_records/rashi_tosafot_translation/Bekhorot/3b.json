@@ -90,6 +90,116 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">אי הכי</strong> - דלטובה נתכוון אמאי כלאי חיותיה:"
   },
+  "Rashi on Bekhorot 3b:13:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 3b:13:2",
+      "Rashi on Bekhorot 3b:13:3",
+      "Rashi on Temurah 24b:4:1",
+      "Rashi on Bekhorot 3b:6:1",
+      "Rashi on Bekhorot 3b:6:2",
+      "Rashi on Bekhorot 3b:7:1"
+    ],
+    "generatedAt": "2026-11-05T09:42:24.801Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קודם שיצא</strong> - ועדיין לא נתקדש דבכור ברחם תליא קדושתיה דכתיב כל הבכור אשר יולד ולא הוי כמטיל מום בקדשים:"
+  },
+  "Rashi on Bekhorot 3b:13:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:43:01.877Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקדושת כהן לא מפקע ליה</strong> - דהוי כבכור בעל מום הניתן לכהן וחייב כהן לנהוג בו קדושה שלא יגוז ויעבוד בו וכשהוא שוחטו אינו שוחטו באיטליז ואינו נמכר באיטליז ואינו נשקל בליטרא כדלקמן <span class=\"parenthesized\">(בכורות דף לא.)</span>:"
+  },
+  "Rashi on Bekhorot 3b:13:3": {
+    "dependsOn": [
+      "Rashi on Bekhorot 3b:13:1",
+      "Rashi on Bekhorot 3b:13:2",
+      "Bekhorot 3b:13"
+    ],
+    "generatedAt": "2026-11-05T09:44:09.252Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3b:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא</strong> - מכי מקני לה לעובד כוכבים דלא חיילא עליה שם קדושה ואע\"ג שהוא נוהג בו קדושה הוי כנוהג קדושה בחולין גמורין:"
+  },
+  "Rashi on Bekhorot 3b:14:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 3b:13:1",
+      "Rashi on Bekhorot 3b:13:2",
+      "Rashi on Bekhorot 3b:13:3",
+      "Rashi on Bekhorot 2a:1:1",
+      "Tosafot on Bekhorot 2a:12:1"
+    ],
+    "generatedAt": "2026-11-05T09:45:19.641Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קנין גמור</strong> - ליטול מעות מן העובד כוכבים דעובד כוכבים לא קני אלא בכסף כדאמרי' לקמן בפרק שני <span class=\"parenthesized\">(בכורות דף יג.)</span>:"
+  },
+  "Rashi on Bekhorot 3b:14:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 3b:14:1"
+    ],
+    "generatedAt": "2026-11-05T09:46:06.540Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מילתא הוא דעבד</strong> - מילתא בעלמא בדיבור ואינו נוטל דמיו:"
+  },
+  "Rashi on Bekhorot 3b:15:1": {
+    "dependsOn": [
+      "Bekhorot 3b:15",
+      "Rashi on Bekhorot 3b:15:1",
+      "Rashi on Bekhorot 3b:15:2",
+      "Rashi on Bekhorot 3b:15:3",
+      "Tosafot on Bekhorot 3b:15:1"
+    ],
+    "generatedAt": "2026-11-05T09:47:20.371Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כהנים ולוים פטורין</strong> - קא סלקא דעתך אפטר חמור קאי:"
+  },
+  "Rashi on Bekhorot 3b:15:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T09:47:45.406Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם פטרו</strong> - לוים בכורי ישראל במדבר:"
+  },
+  "Rashi on Bekhorot 3b:15:3": {
+    "dependsOn": [
+      "Rashi on Bekhorot 3b:15:1",
+      "Rashi on Bekhorot 3b:15:2",
+      "Rashi on Bekhorot 3b:15:3",
+      "Bekhorot 3b:15"
+    ],
+    "generatedAt": "2026-11-05T09:49:00.047Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 3b:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דין הוא כו'</strong> - ומשמע דגוף הלוים פטרי חמורי ישראל:"
+  },
   "Rashi on Bekhorot 3b:1:1": {
     "dependsOn": [
       "Bekhorot 3b:1",
@@ -255,6 +365,43 @@
       "Rashi on Bekhorot 3b:9:2"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">תרוייהו בעו</strong> - והא ודאי משונה הוא. ואי קשיא אמאי איצטריך לר' יוחנן למימר הא אוקימנא דשינוי הוי מומא תריץ כיון דאיכא למימר נמי דלאו משום שינוי הוא אלא משום שרוע איצטריך לר' יוחנן למימר:"
+  },
+  "Tosafot on Bekhorot 3b:12:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 3b:12:1",
+      "Rashi on Bekhorot 3b:12:2",
+      "Bekhorot 3b:13",
+      "Rashi on Bekhorot 3b:13:1",
+      "Rashi on Bekhorot 3b:13:2",
+      "Rashi on Bekhorot 3b:13:3",
+      "Bekhorot 3b:14",
+      "Bekhorot 3b:15",
+      "Rashi on Bekhorot 3b:15:1",
+      "Rashi on Bekhorot 3b:15:2",
+      "Rashi on Bekhorot 3b:15:3",
+      "Rashi on Bekhorot 3b:14:1",
+      "Rashi on Bekhorot 3b:14:2"
+    ],
+    "generatedAt": "2026-11-05T09:40:51.448Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 3b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דקא מפקע להו מקדושתייהו</strong> - מה שאין נזהרין עכשיו ואע\"פ שנענש רב מרי פר\"ת רב מרי נענש לפי שהיה מקנה אזנו של עובר ואיכא הפקעה בגוף העובר אבל הקנאה באם שריא ואע\"ג דאית ספרים דגרסי לאזנה לשון נקבה היינו משום דקאי אחיותא והכי נמי אסר לה בגיזה ועבודה וא\"ת לקמן פ\"ט <span class=\"parenthesized\">(בכורות דף נג.)</span> דפריך גבי מעשר בהמה ואינו נוהג בזמן הזה דלא ליתי לידי תקלה אי הכי בכור נמי לא לנהוג בזמן הזה משום תקלה ומשני אפשר כדרב יהודה אמאי לא משכחת תקנה באמהות כדפרישית י\"ל התם כיון דאיכא חשש תקלה ויש להם לתקן בלא הפקעה מכהן שיעשה כרב יהודה לא רצו לתקן שיעשה לעולם כך ע\"י הפקעה ומיהו אי עבד עבד אי נמי בימי רב מרי היו בקיאין להטיל מום בבכור קודם שיצא לעולם אסור לעשות ע\"י הפקעה אבל אנו דלא בקיאין בכך מוטב להקנות לעובד כוכבים קודם שיבא לידי תקלה כדמשמע פ' בתרא <span class=\"parenthesized\">(לקמן בכורות דף נג.)</span> דאי לאו משום דאפשר כרב יהודה היה לנו לתקן להקנות לעובדי כוכבים ואנן דלא בקיאינן הוי כלא אפשר <span class=\"parenthesized\">(ואפי' בהא דרב יהודה בפרק אין מערימין)</span> דאסור מן הדין גזירה דלמא מפיק את ראשו קודם שיטיל בו מום אי לאו משום דרב יהודה עדיפא להטיל בו מום קודם שיצא לעולם כי היה צריך להשהותו עד שיפול מום מעצמו ונראה דבהקנאת אזן לחוד שרי דקי\"ל כרב הונא מדקאי ר' יוחנן כוותיה ואמר אפי' מום קל ורב מרי נמי דמקנה אזנייהו לא נענש אלא משום הפקעה ולקמן פ' בתרא <span class=\"parenthesized\">(ג\"ז שם)</span> פריך לקנינהו להו לאודנייהו לעובד כוכבים ולכל היותר מותר ע\"י הקנאה בדבר שעושה אותה טריפה או נבילה ולאידך לישנא מפרש שנענש רב מרי משום דידע לאקנויי וכ\"ע לא ידעי וסברי רב מרי מילתא בעלמא הוא דעבד ואתי לידי תקלה יש לפרש נמי רב מרי שהיה בקי בדרב יהודה לית ליה למיעבד בקנין דאתי למיטעי אבל לדידן לא אפשר בענין אחר עוד פר\"ת רב מרי שהיה מקנה אזן עובר לעובד כוכבים הוי דבר שלא בא לעולם אלא היה מקנה בהמה לאזני עובר כמו דקל לפירותיו וטעה אינש ואמר אזני עובר היה מקנה כמו פירות דקל ואתי לידי תקלה אבל כי מקנה אזני הבהמות שרי דלא אתי למיטעי ול<span class=\"rashi-quotation\">פי' הקונטרס</span> לא יתכן לפרש כן שפירש רב מרי היה יודע להקנות קנין גמור ליטול מעות מן העובד כוכבים דעובד כוכבים לא קני אלא בכסף כדאמר לקמן פ\"ב <span class=\"parenthesized\">(בכורות יג.)</span> וסברי מילתא בעלמא הוא דעבד ואינו נוטל דמים ומיהו לפי דבריו לא היה לו להזכיר ראיה [מלקמן] דאדרבה לר' יוחנן דאמר דבר תורה מעות קונות דריש לה לקמן <span class=\"parenthesized\">(בכורות דף יג:)</span> מיד עמיתך בכסף הא לעובד כוכבים במשיכה וכרבי יוחנן [קי\"ל]:"
+  },
+  "Tosafot on Bekhorot 3b:15:1": {
+    "dependsOn": [
+      "Bekhorot 5a:8",
+      "Bekhorot 5a:9"
+    ],
+    "generatedAt": "2026-11-05T09:51:24.826Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 3b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כהנים ולוים פטרו עצמן מק\"ו</strong> - וא\"ת בלא ק\"ו תיפוק ליה מתוך קונטרוקוס השר דמשני <span class=\"parenthesized\">(לקמן בכורות ה:)</span> אותם ג' מאות בכורים היו ואין בכור מפקיע בכור משום דדיו שיפקיע של עצמו ש\"מ דשל עצמו מיהא מפקיע י\"ל אי לאו ק\"ו מצינו לשנויי אותן ג' מאות בכורות היו והוצרכו פדיון וכי תימא א\"כ למנינהו בהדי שלשה ושבעים ומאתים העודפים מצי למימר לא הוחזק הכתוב למנות אלא דישראל לחודייהו:"
   },
   "Tosafot on Bekhorot 3b:8:1": {
     "dependsOn": [],

@@ -1,0 +1,407 @@
+{
+  "Rashi on Bekhorot 5b:10:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 5b:9:1",
+      "Rashi on Bekhorot 5b:11:1"
+    ],
+    "generatedAt": "2026-11-05T12:33:38.403Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 5b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אך בכור שור כו'</strong> - מדמצי למיכתב אך שור כשב ועז דהא עניינא בבכור קמישתעי דכתיב לעיל מיניה כל פטר רחם וגו' ונקט בכולהו בכור ש\"מ עד שיהא הבכור כאמו ולא יהא דומה לאחר:"
+  },
+  "Rashi on Bekhorot 5b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T12:34:24.263Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 5b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אך חלק</strong> - דכל אכין ורקין שבתורה למעט:"
+  },
+  "Rashi on Bekhorot 5b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T12:38:12.236Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 5b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא תנא</strong> - דמתניתין:"
+  },
+  "Rashi on Bekhorot 5b:12:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 5b:12:1",
+      "Bekhorot 5b:10",
+      "Bekhorot 5b:11",
+      "Bekhorot 5b:12"
+    ],
+    "generatedAt": "2026-11-05T12:39:19.116Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 5b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פטר פטר קנסיב לה לפרה</strong> - דקא מפיק פרה שילדה מין חמור דפטורה מן הבכורה מן פטר פטר עד שיהא היולד חמור והולד חמור ופרה נמי גמרה מחמור ורב יהודה היכי שבק קרא דמתניתין וקנסיב למודא אחרינא:"
+  },
+  "Rashi on Bekhorot 5b:13:1": {
+    "dependsOn": [
+      "Bekhorot 5b:13",
+      "Rashi on Bekhorot 5b:12:1",
+      "Rashi on Bekhorot 5b:12:2",
+      "Bekhorot 5b:11",
+      "Steinsaltz on Bekhorot 5b:13",
+      "Rashi on Bekhorot 5b:15:1",
+      "Rashi on Bekhorot 5b:18:1",
+      "Rashi on Bekhorot 5b:19:1",
+      "Tosafot on Bekhorot 5b:11:1",
+      "Tosafot on Bekhorot 5b:12:1",
+      "Maharsha on Bekhorot 5b:11:1",
+      "Maharsha on Bekhorot 5b:12:1",
+      "Rashi on Bekhorot 5b:10:1",
+      "Rashi on Bekhorot 5b:11:1",
+      "Rashi on Bekhorot 5b:23:1",
+      "Rashi on Bekhorot 5b:24:1",
+      "Rashi on Bekhorot 5b:25:1",
+      "Bekhorot 5b:23",
+      "Bekhorot 5b:24"
+    ],
+    "generatedAt": "2026-11-05T12:49:21.428Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 5b:13:1"
+    ],
+    "sourceText": "רב יהודה דאמר כרבי יוסי הגלילי:"
+  },
+  "Rashi on Bekhorot 5b:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T12:50:25.115Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 5b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גלי רחמנא</strong> - בחמור דקדושת דמים הוא שאינו קדוש [אלא] <span class=\"parenthesized\">(בלא)</span> דמיו שיפדהו בשה גלי ביה רחמנא דנדמה פטור וה\"ה לבכור בהמה טהורה דקדושת הגוף היא:"
+  },
+  "Rashi on Bekhorot 5b:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T12:51:16.345Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 5b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למה נאמרו אימורי כו'</strong> - בהאי קרא אך בכור שור או בכור כשב או בכור עז לא תפדה קדש הם ואת דמם תזרוק ואת חלבם תקטיר דכולם אימוריהם קרבים:"
+  },
+  "Rashi on Bekhorot 5b:19:1": {
+    "dependsOn": [
+      "Bekhorot 5b:19"
+    ],
+    "generatedAt": "2026-11-05T12:52:14.253Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 5b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שור</strong> - נסכיו מרובים חצי ההין וכשב ועז רביעית ההין. כשב אלייתו קריבה עם אימורים כדמפרש בויקרא מה שאין כן בשור ועז:"
+  },
+  "Rashi on Bekhorot 5b:1:1": {
+    "dependsOn": [
+      "Bekhorot 5b:1"
+    ],
+    "generatedAt": "2026-11-05T12:17:48.622Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 5b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא מאתן וארבעים דינר נינהו</strong> - אלא כפול היה ובמנה דקודש הוו מאתן והנך ארבעים דטפו עלייהו זהו שהוסיפו בימי יחזקאל והוסיפו עליהן שתות דארבעין הוו שתותא מלבר דבמאתן איכא ה' פעמים מ' והביאו פעם מ' ששית מבחוץ והוסיפו עליהן ולא אמרי' שתות מלגיו שיחלקו לששה ויוסיפו על המשקל אחד מאותן חלקים:"
+  },
+  "Rashi on Bekhorot 5b:23:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 5b:23:1",
+      "Rashi on Bekhorot 5b:19:1",
+      "Rashi on Bekhorot 5b:24:1",
+      "Rashi on Bekhorot 5b:25:1",
+      "Rashi on Bekhorot 5b:6:1",
+      "Rashi on Bekhorot 5b:6:2",
+      "Rashi on Bekhorot 5b:7:1",
+      "Rashi on Bekhorot 5b:10:1",
+      "Rashi on Bekhorot 5b:18:1",
+      "Rashi on Bekhorot 5b:29:1",
+      "Rashi on Bekhorot 5a:1:1",
+      "Rashi on Bekhorot 5a:2:1",
+      "Rashi on Bekhorot 2a:1:1",
+      "Rashi on Bekhorot 2a:2:1",
+      "Rashi on Bekhorot 4b:3:1"
+    ],
+    "generatedAt": "2026-11-05T12:55:07.221Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 5b:23:1"
+    ],
+    "sourceText": "כשב ועז פסח בא מהן דכתיב מן הכבשים ומן העזים תקחו:"
+  },
+  "Rashi on Bekhorot 5b:24:1": {
+    "dependsOn": [
+      "Bekhorot 5b:24",
+      "Rashi on Bekhorot 5b:23:1",
+      "Rashi on Bekhorot 5b:25:1"
+    ],
+    "generatedAt": "2026-11-05T12:56:08.776Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 5b:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שור ועז נתרבו אצל עבודת כוכבים בציבור</strong> - פר לעולה ושעיר לחטאת:"
+  },
+  "Rashi on Bekhorot 5b:25:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T12:56:45.374Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 5b:25:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שור וכשב יש בהן צד ריבוי אצל מזבח</strong> - דכשהן קרבים יש מהן לאשים יותר מעז שור בנסכים וכשב באליה:"
+  },
+  "Rashi on Bekhorot 5b:26:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T12:57:14.056Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 5b:26:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"כ</strong> - דלא אתיא קרא אלא להכי:"
+  },
+  "Rashi on Bekhorot 5b:29:1": {
+    "dependsOn": [
+      "Bekhorot 5b:29"
+    ],
+    "generatedAt": "2026-11-05T12:59:47.890Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 5b:29:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועדיין אני אומר פטר חמור תפדה בשה</strong> - ולא בדבר אחר ושאר בכורי טמאה בכל דבר ולעולם קדושים בבכורה:"
+  },
+  "Rashi on Bekhorot 5b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T12:18:21.079Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 5b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בבית מותבא רבא</strong> - בבית המדרש הגדול:"
+  },
+  "Rashi on Bekhorot 5b:3:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 5b:3:1",
+      "Steinsaltz on Bekhorot 5b:3",
+      "Steinsaltz comment #3 on Bekhorot 5b:3",
+      "Tosafot on Bekhorot 5b:3:1",
+      "Shabbat 51b:11",
+      "Rashi on Shabbat 51b:11:1"
+    ],
+    "generatedAt": "2026-11-05T12:20:08.771Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 5b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לובים</strong> - מעולים:"
+  },
+  "Rashi on Bekhorot 5b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T12:22:44.098Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 5b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שריפו ידיהם כו'</strong> - לפיכך בא עליהם עמלק:"
+  },
+  "Rashi on Bekhorot 5b:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T12:26:16.891Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 5b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא הפנו אבות אל בנים <span class=\"parenthesized\">(להציל)</span> מרפיון ידים</strong> - מכאן שריפו ידיהם מן התורה:"
+  },
+  "Rashi on Bekhorot 5b:5:1": {
+    "dependsOn": [
+      "Sanhedrin 106a:12"
+    ],
+    "generatedAt": "2026-11-05T12:27:03.703Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 5b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בדברי שטות</strong> - לזנות את בנות מואב:"
+  },
+  "Rashi on Bekhorot 5b:6:1": {
+    "dependsOn": [
+      "Sanhedrin 106a:13",
+      "Rashi on Sanhedrin 106a:13:1",
+      "Rashi on Bekhorot 5b:6:2",
+      "Bekhorot 5b:6",
+      "Rashi on Bekhorot 5b:3:1",
+      "Rashi on Bekhorot 5b:3:2",
+      "Rashi on Bekhorot 5b:4:1",
+      "Rashi on Bekhorot 5b:4:2"
+    ],
+    "generatedAt": "2026-11-05T12:28:39.294Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 5b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ערומות פגעו בהן</strong> - ותקראן משמע גופן היה פוגע בהן:"
+  },
+  "Rashi on Bekhorot 5b:6:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 5b:6:1"
+    ],
+    "generatedAt": "2026-11-05T12:29:17.979Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 5b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנעשו כולן בעלי קריין</strong> - ולשון מקרה הוא:"
+  },
+  "Rashi on Bekhorot 5b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T12:30:01.444Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 5b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פטר חמור פטר חמור שני פעמים</strong> - כתובים בתורה חד בקדש לי כל בכור <span class=\"parenthesized\">(שמות י״ג:ב׳)</span> וחד בראה אתה <span class=\"parenthesized\">(שם לד)</span>:"
+  },
+  "Rashi on Bekhorot 5b:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T12:30:24.840Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 5b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היולד</strong> - האם:"
+  },
+  "Rashi on Bekhorot 5b:7:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T12:30:59.471Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 5b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והנולד חמור</strong> - שהוא דומה לאמו:"
+  },
+  "Rashi on Bekhorot 5b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T12:32:02.530Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 5b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומה הן באכילה</strong> - אותן שאין דומין לאמן:"
+  },
+  "Rashi on Bekhorot 5b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T12:32:29.297Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 5b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקצת סימנין</strong> - של אמו:"
+  },
+  "Tosafot on Bekhorot 5b:11:1": {
+    "dependsOn": [
+      "Bekhorot 5b:11",
+      "Bekhorot 5b:12",
+      "Bekhorot 5b:13",
+      "Bekhorot 5b:14",
+      "Bekhorot 5b:15",
+      "Tosafot on Bekhorot 5b:12:1",
+      "Chidushei Halachot on Bekhorot 5b:3",
+      "Gilyon HaShas on Bekhorot 5b:2",
+      "Tosafot on Bekhorot 12a:19:1"
+    ],
+    "generatedAt": "2026-11-05T12:37:38.200Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 5b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תלמוד לומר אך חלק</strong> - תימה תנא דידן דלית ליה הך דרשא מקצת סימן חייב מנא ליה ומתני' היא פ\"ב <span class=\"parenthesized\">(לקמן בכורות דף טז:)</span> ולא מיסתבר דפליג אהא דפירקין ומיהו אי לא פליגי קשה דמייתי עלה דתנא כרב יהודה וכי קאמר מה\"מ הוה ליה לאיתויי קרא דמתני':"
+  },
+  "Tosafot on Bekhorot 5b:12:1": {
+    "dependsOn": [
+      "Bekhorot 5b:12",
+      "Rashi on Bekhorot 5b:12:1",
+      "Rashi on Bekhorot 5b:12:2",
+      "Bekhorot 5b:15",
+      "Bekhorot 5b:20",
+      "Bekhorot 5b:25",
+      "Bekhorot 5b:7",
+      "Chidushei Halachot on Bekhorot 5b:4",
+      "Tosafot on Bekhorot 5b:11:1",
+      "Tosafot on Bekhorot 5b:26:1"
+    ],
+    "generatedAt": "2026-11-05T12:42:00.169Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 5b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא תנא פטר פטר נסיב לה לפרה</strong> - ואין לומר מ\"מ איצטריך קרא דמתני' לפטור מקדושת פטר חמור וקרא דהכא לפטור מדין שור דפטור מן הבכורה דקתני במתני' משמע דלגמרי פטר לה לפרה מכלל דפטר פטר דילפי' מהדדי כדלקמן וא\"ת נהי דשמעינן מפטר פטר פרה שילדה מין סוס דילמא ה\"מ היכא דאשתני לדבר שאינו קדוש קדושת הגוף אבל כגון רחל שילדה מין עז דקדוש קדושת הגוף הוה אמינא דקדשא וי\"ל דמסתבר לגמרי <span class=\"parenthesized\">(משמע)</span> דילפינן מהדדי קדושת דמים מקדושת הגוף כדאמר בסמוך וקשה דהא אמר אפילו קדושת הגוף מקדושת הגוף לא ילפי' דהא לשור וכשב ועז צריך קרא לכל חד וחד:"
+  },
+  "Tosafot on Bekhorot 5b:26:1": {
+    "dependsOn": [
+      "Bekhorot 5b:26",
+      "Tosafot on Bekhorot 5b:11:1",
+      "Tosafot on Bekhorot 5b:12:1",
+      "Bekhorot 5b:17",
+      "Bekhorot 5b:18"
+    ],
+    "generatedAt": "2026-11-05T12:58:47.277Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 5b:26:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי יוסי הגלילי אם כן ליכתוב קרא אך בכור שור וכשב ועז</strong> - והא דדרשינן מינה עד שיהא שור ובכורו שור אע\"ג דאיצטריך לכדר' יוסי בר חנינא משום דכעין בכור שני ושלישי יש לנו לדרוש מן הראשון:"
+  },
+  "Tosafot on Bekhorot 5b:3:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 5b:3:1",
+      "Rashi on Bekhorot 5b:3:2",
+      "Tosafot on Shabbat 51b:10:1"
+    ],
+    "generatedAt": "2026-11-05T12:22:11.773Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 5b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תשעים חמורים לובים</strong> - ע\"ש <span class=\"parenthesized\">(נחום ג׳:ט׳)</span> פוט ולובים היו בעזרתך ולובים וכושי' במצעדיו חמרא לובאה ר\"פ במה בהמה <span class=\"parenthesized\">(שבת דף נא:)</span> פירש בערוך חמור מצרי ובירושלמי [גריס] גרים הבאים מפוט ולוב מהו להמתין ג' דורות:"
+  }
+}

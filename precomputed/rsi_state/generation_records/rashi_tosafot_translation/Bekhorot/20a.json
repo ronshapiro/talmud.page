@@ -1,0 +1,265 @@
+{
+  "Rashi on Bekhorot 20a:10:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 20a:10:2",
+      "Bekhorot 20a:10",
+      "Rashi on Bekhorot 20a:6:1",
+      "Bekhorot 20a:5",
+      "Bekhorot 20a:6",
+      "Bekhorot 20a:4",
+      "Tosefta Bekhorot 2:6",
+      "Rashi on Bekhorot 20a:11:1",
+      "Rashi on Bekhorot 20a:11:2",
+      "Bekhorot 20a:12",
+      "Rashi on Bekhorot 20a:12:1",
+      "Rashi on Bekhorot 20a:12:2"
+    ],
+    "generatedAt": "2026-11-06T07:57:32.925Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 20a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גמריה</strong> - אבל אמרו <span class=\"parenthesized\">(אית ליה דזעירי)</span>:"
+  },
+  "Rashi on Bekhorot 20a:10:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 20a:10:1",
+      "Rashi on Bekhorot 20a:8:1",
+      "Rashi on Bekhorot 19b:1:1",
+      "Rashi on Bekhorot 19b:2:1",
+      "Rashi on Bekhorot 19b:3:1"
+    ],
+    "generatedAt": "2026-11-06T07:58:51.995Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 20a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סבריה</strong> - ואני איני אומר כן כו':"
+  },
+  "Rashi on Bekhorot 20a:11:1": {
+    "dependsOn": [
+      "Bekhorot 20a:11",
+      "Rashi on Bekhorot 20a:11:2"
+    ],
+    "generatedAt": "2026-11-06T07:59:31.764Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 20a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דטינוף בסוף ששה</strong> - שראינוה שהתחילה לטנף בתחלת חדש שביעי:"
+  },
+  "Rashi on Bekhorot 20a:11:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 20a:11:1",
+      "Bekhorot 20a:11"
+    ],
+    "generatedAt": "2026-11-06T08:01:46.961Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 20a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין טינוף פחות מל' יום</strong> - דאינה מקבלת זכר עד ל' יום:"
+  },
+  "Rashi on Bekhorot 20a:12:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 20a:12:1",
+      "Rashi on Bekhorot 20a:11:1",
+      "Rashi on Bekhorot 20a:11:2",
+      "Rashi on Bekhorot 20a:12:2",
+      "Rashi on Bekhorot 20a:2:1",
+      "Rashi on Bekhorot 20a:5:1",
+      "Rashi on Bekhorot 20a:6:1",
+      "Rashi on Bekhorot 20a:6:2",
+      "Niddah 38b:1",
+      "Rashi on Niddah 38b:1:1"
+    ],
+    "generatedAt": "2026-11-06T08:09:05.772Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 20a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לגמריה</strong> - דלא ידעינן שטינפה בת ששה אדר' ישמעאל פליג דאמר בת שנתה ודאי לכהן וקא\"ל איהו אפילו ילדה בתוך שנתה ספק דלמא טניף בתוך ג' חדשים או ד' משנולדה וחזרה וילדה בתוך שנתה והיכא דחזינן דלא טניף עד סוף ששה וטינפה בסוף ששה כדאמר רבי יהושע בסבריה ההוא בכור מעליא הוא דההוא טינוף לאו טינוף גמור הוא דאם טינוף היה לא הוה ילדה בתוך שנתה עד יום אחד בשנה שניה דטינוף הוי כל חדש שביעי כזעירי וה' חדשים ימי העיבור הרי כלתה שנתה ולא תלד עד למחר דכל חדשי עיבור בעינן שלמים ואחר כך יולדת למחר כדאמרינן במסכת נדה <span class=\"parenthesized\">(דף לח:)</span> ויתן ה' לה הריון בגימט' רע\"א וט' חדשים של ל' יום הוו ר\"ע ימים וביום רע\"א כתב קרא דיולדת:"
+  },
+  "Rashi on Bekhorot 20a:12:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 20a:12:1",
+      "Rashi on Bekhorot 20a:12:2"
+    ],
+    "generatedAt": "2026-11-06T08:09:58.444Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 20a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לסבריה</strong> - ואף על גב דחזינא דלא טניף עד סוף ששה נמי ספיקא הוא דלית ליה דזעירי:"
+  },
+  "Rashi on Bekhorot 20a:2:1": {
+    "dependsOn": [
+      "Bekhorot 20a:2",
+      "Bekhorot 19b:13"
+    ],
+    "generatedAt": "2026-11-06T07:36:23.474Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 20a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רובא דתלי במעשה</strong> - כגון עיבור הבהמה דתלי בהרבעה ואיכא למיחש שמא לא עלה עליה זכר הילכך ספק:"
+  },
+  "Rashi on Bekhorot 20a:5:1": {
+    "dependsOn": [
+      "Bekhorot 20a:5",
+      "Rashi on Bekhorot 20a:6:1",
+      "Rashi on Bekhorot 20a:6:2",
+      "Rashi on Bekhorot 20a:10:1",
+      "Rashi on Bekhorot 20a:10:2",
+      "Steinsaltz on Bekhorot 20a:5"
+    ],
+    "generatedAt": "2026-11-06T07:41:10.988Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 20a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואני איני אומר כן</strong> - איני חולק עליך בלשון שמועתי אלא בלשון אחר. ולקמן מפרש מאי איכא בין סבריה לגמריה:"
+  },
+  "Rashi on Bekhorot 20a:6:1": {
+    "dependsOn": [
+      "Bekhorot 20a:6",
+      "Bekhorot 20a:4",
+      "Rashi on Bekhorot 20a:6:2",
+      "Bekhorot 19b:1",
+      "Bekhorot 19b:8",
+      "Bekhorot 19b:7",
+      "Bekhorot 19b:5",
+      "Bekhorot 19b:6",
+      "Tosafot on Bekhorot 20a:7:1",
+      "Steinsaltz on Bekhorot 20a:6",
+      "Steinsaltz comment #1 on Bekhorot 20a:6",
+      "Steinsaltz comment #2 on Bekhorot 20a:6",
+      "Bekhorot 20a:10",
+      "Rashi on Bekhorot 20a:10:1",
+      "Rashi on Bekhorot 20a:12:1"
+    ],
+    "generatedAt": "2026-11-06T07:45:28.339Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 20a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במאי קמיפלגי ר' ישמעאל</strong> - וגמריה דר' יהושע דקתני אבל אמרו:"
+  },
+  "Rashi on Bekhorot 20a:6:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 20a:6:1",
+      "Bekhorot 20a:6"
+    ],
+    "generatedAt": "2026-11-06T07:46:18.544Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 20a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בטינוף פוטר פליגי</strong> - דרבי ישמעאל דמשוי ליה ודאי בכור סבר דאי נמי טניף בתוך שנתה לא מיפטרא:"
+  },
+  "Rashi on Bekhorot 20a:8:1": {
+    "dependsOn": [
+      "Bekhorot 20a:8",
+      "Bekhorot 20a:1",
+      "Bekhorot 19b:3"
+    ],
+    "generatedAt": "2026-11-06T07:50:25.053Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 20a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לחומרא</strong> - כגון גבי רישא דשמעתא דאי הוה אזלינן בתר רובא הוה משוינן ליה פשוט ודאי <span class=\"parenthesized\">(דהא)</span> מכאן ואילך <span class=\"parenthesized\">(הוה)</span> הילכך חייש למיעוט לחומרא ומשוי ליה ספק אבל הכא אי חייש למיעוט קולא הוא דאפילו בת שנתה משוי ליה ספק:"
+  },
+  "Tosafot on Bekhorot 20a:1:1": {
+    "dependsOn": [
+      "Bekhorot 20a:1",
+      "Bekhorot 19b:10",
+      "Bekhorot 19b:6",
+      "Bekhorot 19b:7",
+      "Bekhorot 19b:8",
+      "Tosafot on Yevamot 119a:5:1",
+      "Tosafot on Yevamot 119a:8:1",
+      "Tosafot on Bekhorot 20a:2:1"
+    ],
+    "generatedAt": "2026-11-06T07:35:29.164Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 20a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחוורתא רבי ישמעאל כר\"מ ס\"ל דחייש למיעוטא</strong> - ומטעם סמוך מיעוטא דאין מתעברות לחזקה דבחזקת שלא ילדה ואיתרע ליה רובא אין לחושבו ודאי בכור דלא הוי אלא פלגא ופלגא כדאמר בר\"פ בתרא דיבמות <span class=\"parenthesized\">(דף קיט.)</span> ושם הארכתי והא דמטהרינן בספק טומאה בפרק כסוי הדם <span class=\"parenthesized\">(חולין דף פו.)</span> היינו משום דילפינן מסוטה ליטהר בדבר שאין בו דעת לישאל ולהכי קאמר התם אם אמרו ספק טומאה לטהר יאמרו ספק איסור להיתר:"
+  },
+  "Tosafot on Bekhorot 20a:2:1": {
+    "dependsOn": [
+      "Tosafot on Bekhorot 20a:1:1",
+      "Tosafot on Bekhorot 20a:7:1",
+      "Tosafot on Bekhorot 20a:9:1",
+      "Yevamot 119a:1",
+      "Yevamot 119a:2",
+      "Yevamot 119a:3",
+      "Yevamot 119a:4",
+      "Yevamot 119a:5",
+      "Bava Metzia 91a:13"
+    ],
+    "generatedAt": "2026-11-06T07:39:16.850Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 20a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבינא אמר אפילו תימא רבנן</strong> - תימה דלא משני הכי בר\"פ בתרא דיבמות <span class=\"parenthesized\">(דף קיט. ושם)</span> אמתני' דלא תנשא ולא תתייבם עד שתדע שמא [מעוברת] היא צרתה וי\"ל דתשמיש דאדם לא חשיב תלי במעשה כמו תשמיש דבהמה דפעמים דבהמה צריך להרביע כדאמר בהשוכר את הפועלים <span class=\"parenthesized\">(ב\"מ דף צא.)</span> מותר להכניס כמכחול בשפופרת:"
+  },
+  "Tosafot on Bekhorot 20a:7:1": {
+    "dependsOn": [
+      "Bekhorot 20a:7",
+      "Steinsaltz comment #1 on Bekhorot 20a:7",
+      "Steinsaltz comment #2 on Bekhorot 20a:7"
+    ],
+    "generatedAt": "2026-11-06T07:49:15.479Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 20a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי יהושע סבר חוששין לטינוף</strong> - וא\"ת הא קא מסקינן לקמן דרבי יהושע לא חייש למיעוטא כדדייק ממתני' דיצתה מלאה ר' יהושע אומר אינה חוששת וא\"כ היכי חייש הכא למיעוטא דמטנפות ועוד דבכי האי גוונא דהכא אפילו ר\"מ לא חייש כדאמר בריש פרק בתרא דיבמות <span class=\"parenthesized\">(דף קיט:)</span> דהיכא דאיכא רובא וחזקה הוי המיעוט מיעוט דמיעוטא והכא איכא רובא דאין מטנפות וחזקה שהיא בחזקת שלא ילדה וי\"ל דמ\"מ לא הוי ודאי בכור שניתן לכהן דאיכא חזקת ממונא דעדיפא והמוציא מחבירו עליו הראיה ואפילו לרב דאזיל בממונא אחר הרוב בההיא דהמוכר שור לחבירו ונמצא נגחן <span class=\"parenthesized\">(ב\"ק דף מו.)</span> היינו משום דאמר קים לי בנפשאי שאני מן הרוב א\"נ יש לחלק בין ממון שאין לו תובעין לממון שיש לו תובעין ומיהו היא קצת תימה דלענין ללקות בגיזה ועבודה ולענין ליקרב למזבח חשיב ודאי בכור דאזלינן בתר רובא וחזקה ולענין נתינתו לכהן יחשב ספק ונראה לתרץ דלהכי חיישינן למיעוט דמטנפות משום דרוב בהמות מתעברות כשמגיעות לזמן שראויות להתעבר בו <span class=\"parenthesized\">(מתעברות)</span>:"
+  },
+  "Tosafot on Bekhorot 20a:8:1": {
+    "dependsOn": [
+      "Tosafot on Bekhorot 20a:1:1",
+      "Tosafot on Bekhorot 20a:2:1",
+      "Tosafot on Bekhorot 20a:7:1",
+      "Tosafot on Bekhorot 2a:12:1"
+    ],
+    "generatedAt": "2026-11-06T07:52:17.043Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 20a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לקולא לא חייש</strong> - ואפילו לכהן ינתן כיון דקרב למזבח ומיהו גבי חמורה קשה דהוה לן להעמיד ממון ביד בעלים ולא ניזל בתר רובא דאפילו רב מודה הכא דאין הולכין בממון אחר הרוב כדפי' לעיל וי\"ל דגזר חמורה אטו בהמה טהורה:"
+  },
+  "Tosafot on Bekhorot 20a:9:1": {
+    "dependsOn": [
+      "Tosafot on Chullin 12a:1:1",
+      "Chullin 12a:1"
+    ],
+    "generatedAt": "2026-11-06T07:55:25.874Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 20a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיבעית אימא בין לקולא בין לחומרא חייש</strong> - מעיקרא נמי דהוה בעי למימר לקולא לא חייש משמע דהיינו לר' ישמעאל אבל לר\"מ בכ\"מ חייש ומכ\"מ אין לדקדק מכאן דהא דר\"מ חייש למיעוטא היינו מדאורייתא מדחייש הכא אפילו להקל דהיינו שלא נותנו לכהן דלא אזלינן בממון אחר הרוב א\"נ משום דאיכא רוב מתעברות כשמגיעות לזמן הראויות להתעבר שמסייע למיעוט ובפ' אין מעמידין <span class=\"parenthesized\">(ע\"ז דף לד:)</span> גבי גבינת בית אונייקי אמר דר\"מ חייש למיעוטא וגזר רובא אטו מיעוטא ולא גזר שאר מקומות אטו אותו מקום משמע דבאותו מקום נמי לאו מדאורייתא אלא מדרבנן מטעם גזירה אטו מיעוטא ובפ\"ק דחולין <span class=\"parenthesized\">(דף יב.)</span> נמי דפריך לר\"מ פסח וקדשים מאי איכא למימר דשרא רחמנא ולא קאמר בשר תאוה מאי איכא למימר דשרא רחמנא משמע דמדרבנן חייש למיעוטא ואפילו גזר בבשר תאוה בפסח וקדשים לא גזר דלא אפשר ואף על פי שלא יכלו להעמיד שם גזירתם העמידוה היכא דאפשר ה\"נ בדאורייתא היכא דאפשר אפשר היכא דלא אפשר לבדוק לא אפשר דאם איתא דבדאורייתא אין חילוק בין אפשר ללא אפשר לא היה לחכמים לחוש ולגזור היכא דאפשר כיון שראו שום מקום שלא חשו כגון היכא דלא אפשר ומיהו היכא דחזקה מסייעת למיעוט נראה דחייש ר\"מ למיעוט מדאורייתא מדטהר גבי תינוק ועוד רוצה להתיר בפרק כיסוי הדם <span class=\"parenthesized\">(חולין דף פו:)</span> לשחוט אותו ואת בנו אחר שחיטת חרש שוטה וקטן דאף על גב דאין רוב מעשיהן מקולקלין וא\"ת דבפרק הזהב <span class=\"parenthesized\">(ב\"מ דף נה:)</span> גבי חמשה חומשין הן משמע דדמאי הוי מדרבנן אפילו לר\"מ דקאמר עשו חיזוק לדבריהם ולמה אינו טבל דאורייתא דסמוך מיעוט דאין מעשרים לחזקת טבל וי\"ל דאין זה חזקה דדלמא כרבי אושעיא עבדה שהכניסה במוץ <span class=\"parenthesized\">(ברכות דף לא.)</span> ועוד דאין להחזיק שום אדם ברשע בשביל מיעוט שאין מעשרין:"
+  }
+}
