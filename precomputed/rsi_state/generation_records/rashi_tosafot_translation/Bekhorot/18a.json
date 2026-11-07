@@ -1,0 +1,330 @@
+{
+  "Rashi on Bekhorot 18a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T05:21:38.756Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 18a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי טעמא דר\"מ</strong> - דקתני סתמא דמתני' חייב במתנות:"
+  },
+  "Rashi on Bekhorot 18a:10:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 18a:10:1"
+    ],
+    "generatedAt": "2026-11-06T05:22:23.987Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 18a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי בכור הוא כוליה דידי</strong> - והאי דשקיל אנא הוי חולין ומהדרנא לך ניהלך ושקילנא מתנות מיניה:"
+  },
+  "Rashi on Bekhorot 18a:11:1": {
+    "dependsOn": [
+      "Bekhorot 18a:11",
+      "Rashi on Bekhorot 18a:11:2"
+    ],
+    "generatedAt": "2026-11-06T05:23:26.339Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 18a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וזבין ליה לישראל במומיה</strong> - והדר שקליה לאידך חילופיה ובכור שמכרו כהן לישראל פטור מן המתנות דאיתקש לצבי ואיל בפרקא קמא <span class=\"parenthesized\">(לעיל בכורות דף יב.)</span>:"
+  },
+  "Rashi on Bekhorot 18a:11:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 18a:11:1"
+    ],
+    "generatedAt": "2026-11-06T05:24:07.118Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 18a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עשו שאינו זוכה כזוכה</strong> - אע\"פ שלא זכה כהן בהאיך דהא לא מטא לידיה מעולם עשאוהו כאילו זכה בו הואיל ומעיקרא הוה שייכא ביה יד כהן דשמא דידיה נינהו שויוה רבנן כמאן דמטא לידיה לשום בכורה:"
+  },
+  "Rashi on Bekhorot 18a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T05:27:55.259Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 18a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בספק בכור שאין חליפין ביד כהן</strong> - שלא נטל כלום תחתיו כגון דקתני מתני' זכר ונקבה אין כאן לכהן כלום והאי זכר ספק בכור הוא שמא יצאה נקבה תחלה וירעה ויאכל במומו לבעלים:"
+  },
+  "Rashi on Bekhorot 18a:12:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 18a:12:1",
+      "Bekhorot 18a:12"
+    ],
+    "generatedAt": "2026-11-06T05:28:38.381Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 18a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שחייב במתנות</strong> - דהכא ליכא למימר עשאוהו כמי שמכרו כהן לישראל דהא לא בא בחליפין ליד כהן כלום:"
+  },
+  "Rashi on Bekhorot 18a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T05:29:19.656Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 18a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי מחייבת ליה</strong> - לספק בכור במתנות אתי למימר חולין גמור הוא ואתי למישרי בגיזה ועבודה:"
+  },
+  "Rashi on Bekhorot 18a:15:1": {
+    "dependsOn": [
+      "Bekhorot 18a:15"
+    ],
+    "generatedAt": "2026-11-06T05:29:57.109Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 18a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומי מצית אמרת</strong> - דטעמא דרבי יוסי משום גיזה ועבודה הוא:"
+  },
+  "Rashi on Bekhorot 18a:1:1": {
+    "dependsOn": [
+      "Bekhorot 18a:1",
+      "Bekhorot 17b:6",
+      "Rashi on Bekhorot 18a:8:4",
+      "Rashi on Bekhorot 17b:2:1",
+      "Rashi on Bekhorot 17b:2:2",
+      "Rashi on Bekhorot 17b:2:3",
+      "Steinsaltz on Bekhorot 18a:1"
+    ],
+    "generatedAt": "2026-11-06T05:03:20.708Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 18a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סבר לה כר' יוסי הגלילי</strong> - וקא מיבעיא לן לרבנן:"
+  },
+  "Rashi on Bekhorot 18a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T05:04:02.525Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 18a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי אפשר לצמצם</strong> - הילכך לא היו עורפין דכל אחת אומרת אני איני קרובה:"
+  },
+  "Rashi on Bekhorot 18a:2:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 18a:2:1",
+      "Sotah 45b:11",
+      "Rashi on Sotah 45b:11:2"
+    ],
+    "generatedAt": "2026-11-06T05:05:22.257Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 18a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפשר לצמצם</strong> - וקרובה אפילו קרובות:"
+  },
+  "Rashi on Bekhorot 18a:3:1": {
+    "dependsOn": [
+      "Bekhorot 18a:3",
+      "Rashi on Bekhorot 17b:7:1"
+    ],
+    "generatedAt": "2026-11-06T05:06:14.258Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 18a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויתנו</strong> - כדפרשינן לעיל:"
+  },
+  "Rashi on Bekhorot 18a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T05:06:49.474Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 18a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכולי עלמא אפשר לצמצם</strong> - דכרבי יוסי הגלילי סבירא להו:"
+  },
+  "Rashi on Bekhorot 18a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T05:08:08.555Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 18a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי הוי עלה</strong> - אליבא דרבנן:"
+  },
+  "Rashi on Bekhorot 18a:5:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 18a:5:1"
+    ],
+    "generatedAt": "2026-11-06T05:08:57.794Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 18a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתי עגלות</strong> - דאפשר לצמצם וקרובה אפי' קרובות:"
+  },
+  "Rashi on Bekhorot 18a:6:1": {
+    "dependsOn": [
+      "Bekhorot 18a:6",
+      "Rashi on Bekhorot 18a:6:2"
+    ],
+    "generatedAt": "2026-11-06T05:09:41.126Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 18a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לייתי תרתי</strong> - דהא לא מצי לאתנויי דהא שתיהן שוות:"
+  },
+  "Rashi on Bekhorot 18a:6:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 18a:6:1",
+      "Bekhorot 18a:5"
+    ],
+    "generatedAt": "2026-11-06T05:10:35.595Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 18a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"א לצמצם</strong> - הילכך מצו לאתנויי:"
+  },
+  "Rashi on Bekhorot 18a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T05:11:00.975Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 18a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ההוא דבריא נפק ברישא</strong> - דמרוב בריאותו קדם את אחיו:"
+  },
+  "Rashi on Bekhorot 18a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T05:11:37.613Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 18a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכהן נוטל כחוש</strong> - לרבי עקיבא:"
+  },
+  "Rashi on Bekhorot 18a:8:2": {
+    "dependsOn": [
+      "Bekhorot 18a:8",
+      "Rashi on Bekhorot 18a:8:1",
+      "Rashi on Bekhorot 18a:8:2",
+      "Rashi on Bekhorot 18a:8:3",
+      "Rashi on Bekhorot 18a:8:4"
+    ],
+    "generatedAt": "2026-11-06T05:12:29.875Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 18a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא משמנים תנן</strong> - דמשמע מה שיפה השור מחבירו ואותן דמים יחלוקו:"
+  },
+  "Rashi on Bekhorot 18a:8:3": {
+    "dependsOn": [
+      "Rashi on Bekhorot 18a:8:3",
+      "Jastrow, כָּפְנִיתָא 1",
+      "Rashi on Bava Batra 107b:8:1"
+    ],
+    "generatedAt": "2026-11-06T05:13:29.157Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 18a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אדאכלת כפניאתא בבבל</strong> - בעוד שהייתה אוכל תמרים בבבל ומעדן עצמך:"
+  },
+  "Rashi on Bekhorot 18a:8:4": {
+    "dependsOn": [
+      "Rashi on Bekhorot 18a:8:1",
+      "Rashi on Bekhorot 18a:8:2",
+      "Rashi on Bekhorot 18a:8:3",
+      "Rashi on Bekhorot 18a:1:1",
+      "Bekhorot 18a:9",
+      "Rashi on Bekhorot 18a:9:1",
+      "Rashi on Bekhorot 18a:9:2"
+    ],
+    "generatedAt": "2026-11-06T05:15:05.119Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 18a:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרגימנא</strong> - להאי מילתא דר' עקיבא ודייקנא לה מסיפא:"
+  },
+  "Rashi on Bekhorot 18a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T05:19:27.234Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 18a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכי הדדי פליגי</strong> - דלתרוייהו יהא חלק בשניהם ה\"נ יחלוקו את החי:"
+  },
+  "Rashi on Bekhorot 18a:9:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 18a:9:1"
+    ],
+    "generatedAt": "2026-11-06T05:20:33.202Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 18a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שומן יהא ביניהן</strong> - מה שאחד שמן יפה מחבירו יהא מוטל ביניהם ועליו יבאו לדין ויטעון ישראל לכהן אייתי ראיה כו' כי היכי דסבר ר' עקיבא בסיפא המוציא מחבירו עליו הראיה:"
+  },
+  "Tosafot on Bekhorot 18a:11:1": {
+    "dependsOn": [
+      "Bekhorot 18a:11",
+      "Tosafot on Gittin 30a:10:2",
+      "Gittin 30a:9",
+      "Gittin 30a:10",
+      "Bava Metzia 12b:1",
+      "Tosafot on Bava Metzia 12a:8:1"
+    ],
+    "generatedAt": "2026-11-06T05:26:55.293Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 18a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עשו את שאינו זוכה כזוכה</strong> - הא דאמר בסוף כל הגט <span class=\"parenthesized\">(גיטין דף ל.)</span> גבי מלוה מעות את הכהן ואת הלוי להיות מפריש עליהם מחלקם הא מני ר\"י דאמר עשו את שאינו זוכה כזוכה ארבי יוסי דהכא קאי דכולה חד טעמא הוא דהתם נמי חליפיו ביד כהן שהרי נתן לו המעות ולא קאי אדרבי יוסי בפ' שנים אוחזין <span class=\"parenthesized\">(ב\"מ דף יב.)</span> גבי השוכר את הפועל ילקט בנו אחריו דמפרש התם טעמא דר' יוסי משום דעשו שאינו זוכה כזוכה דהתם טעמא אחרינא משום תקנת עניים כדמפר' התם עניים גופייהו ניחא להו וכו' והשתא למאי דפריך לא קשה מידי בהא דפסיק שמואל כר' יוסי בההיא דשנים אוחזין ובגיטין לא בעי לאוקמי מתני' דהתם כר' יוסי אלא אמרי' לא מוקמינן לה כיחידאה שמא דלא סבר לה כר' יוסי בגיטין:"
+  },
+  "Tosafot on Bekhorot 18a:8:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 18a:8:4",
+      "Rashi on Bekhorot 18a:8:3",
+      "Rashbam on Bava Batra 107b:7:3",
+      "Tosafot on Bekhorot 18a:11:1",
+      "Tosafot on Bekhorot 17b:2:1"
+    ],
+    "generatedAt": "2026-11-06T05:18:43.435Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 18a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אדאכלת כפנייתא בבבל תרגימנא</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> בעוד שהייתה אוכל תמרים בבבל ומעדן את עצמך טרחנו ליישבה וכן פירש רבינו שמואל בפ' בית כור <span class=\"parenthesized\">(ב\"ב דף קז:)</span> וקשה דהוה ליה למנקט תמרים דכפנייתא הוא לשון גריעותא כדאמר בריש בכל מערבין <span class=\"parenthesized\">(עירובין דף כח:)</span> דכפניות אין ניקחות בכסף מעשר אלא אומר דה\"פ מוטב שיהיה לך להיות אצלי ולטרוח בהלכה ולפרשה משהייתה אוכל כפניות בבבל:"
+  }
+}

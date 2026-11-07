@@ -1,0 +1,542 @@
+{
+  "Rashi on Bekhorot 12a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:19:50.975Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכלאים</strong> - דתרי מיני הוא פרקינן דקתני במתניתין ר\"א מתיר בכלאים:"
+  },
+  "Rashi on Bekhorot 12a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:20:20.062Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פרה שילדה מין עז אין פודין</strong> - דעגל הוא:"
+  },
+  "Rashi on Bekhorot 12a:12:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 12a:12:1"
+    ],
+    "generatedAt": "2026-11-05T21:20:55.786Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכלאים פרקינן</strong> - וכ\"ש בנדמה ול\"ל למיתנייה:"
+  },
+  "Rashi on Bekhorot 12a:13:1": {
+    "dependsOn": [
+      "Bekhorot 12a:13"
+    ],
+    "generatedAt": "2026-11-05T21:21:33.163Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היא גופה איצטריכא ליה</strong> - ולא משום דוקיא אתא:"
+  },
+  "Rashi on Bekhorot 12a:14:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 12a:12:1",
+      "Rashi on Bekhorot 12a:12:2",
+      "Rashi on Bekhorot 12a:15:1",
+      "Rashi on Bekhorot 12a:1:1",
+      "Rashi on Bekhorot 12a:2:1",
+      "Rashi on Bekhorot 12a:5:1",
+      "Steinsaltz on Bekhorot 12a:14"
+    ],
+    "generatedAt": "2026-11-05T21:23:15.564Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כלאים הוא</strong> - בתמיה. הא נדמה הוא:"
+  },
+  "Rashi on Bekhorot 12a:15:1": {
+    "dependsOn": [
+      "Bekhorot 12a:15"
+    ],
+    "generatedAt": "2026-11-05T21:23:58.806Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למאי</strong> - קאמר דשוייה רבנן לנדמה כי כלאים:"
+  },
+  "Rashi on Bekhorot 12a:15:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 12a:15:1",
+      "Rashi on Bekhorot 12a:15:2"
+    ],
+    "generatedAt": "2026-11-05T21:24:37.883Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי לקדשים</strong> - שלא יקרב לגבי מזבח ל\"ל למתלייה לנדמה בכלאים כי היכי דפשיטא לן בכלאים פשיטא לן בנדמה:"
+  },
+  "Rashi on Bekhorot 12a:16:1": {
+    "dependsOn": [
+      "Bekhorot 12a:16"
+    ],
+    "generatedAt": "2026-11-05T21:25:27.958Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי לבכורה</strong> - לאשמועי' דלא קדוש בבכורה ככלאים פשיטא דאך בכור שור כתיב ובהדיא אימעוט:"
+  },
+  "Rashi on Bekhorot 12a:17:1": {
+    "dependsOn": [
+      "Bekhorot 12a:17",
+      "Rashi on Bekhorot 12a:17:1",
+      "Rashi on Bekhorot 12a:17:2",
+      "Rashi on Bekhorot 12a:17:3"
+    ],
+    "generatedAt": "2026-11-05T21:26:11.046Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי למעט ממעשר</strong> - דכי היכי דכלאים לא מעשרין אף נדמה לא:"
+  },
+  "Rashi on Bekhorot 12a:17:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 12a:17:1",
+      "Rashi on Bekhorot 12a:17:2",
+      "Rashi on Bekhorot 12a:17:3",
+      "Bekhorot 12a:17",
+      "Rashi on Bekhorot 12a:19:1",
+      "Rashi on Bekhorot 12a:15:1",
+      "Rashi on Bekhorot 12a:15:2",
+      "Rashi on Bekhorot 12a:16:1",
+      "Rashi on Bekhorot 12a:1:1",
+      "Rashi on Bekhorot 12a:1:2",
+      "Rashi on Bekhorot 12a:1:3",
+      "Rashi on Bekhorot 12a:18:1",
+      "Rashi on Bekhorot 12a:18:2"
+    ],
+    "generatedAt": "2026-11-05T21:30:59.977Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:17:2"
+    ],
+    "sourceText": "פשיטא תרווייהו מחד קרא נפקי תחת תחת כתיב הכא תחת השבט וכתיב בקדשים תחת אמו מה התם נדמה וכלאים לא כדממעטינן לעיל אף מעשר כלאים ונדמה לא:"
+  },
+  "Rashi on Bekhorot 12a:17:3": {
+    "dependsOn": [
+      "Bekhorot 12a:17",
+      "Rashi on Bekhorot 12a:17:1",
+      "Rashi on Bekhorot 12a:17:2",
+      "Rashi on Bekhorot 12a:17:3",
+      "Bekhorot 12a:15"
+    ],
+    "generatedAt": "2026-11-05T21:31:49.683Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:17:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לפטר חמור</strong> - דלא פרקינן ביה פטר חמור כי כלאים:"
+  },
+  "Rashi on Bekhorot 12a:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:32:09.218Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקצת סימנים</strong> - דאמו:"
+  },
+  "Rashi on Bekhorot 12a:18:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 12a:18:1",
+      "Bekhorot 12a:18",
+      "Rashi on Bekhorot 12a:17:1",
+      "Rashi on Bekhorot 12a:17:2",
+      "Rashi on Bekhorot 12a:17:3",
+      "Bekhorot 12a:1",
+      "Bekhorot 12a:14",
+      "Bekhorot 12a:15",
+      "Rashi on Bekhorot 12a:16:1",
+      "Rashi on Bekhorot 12a:1:1",
+      "Rashi on Bekhorot 12a:1:2"
+    ],
+    "generatedAt": "2026-11-05T21:33:58.010Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">העברה העברה</strong> - כתיב הכא יעבור תחת השבט וכתיב בבכור והעברת פטר רחם מה בבכורה חייב כדאמרן ואם יש בו מקצת סימנין חייב אף מעשר נמי ליהוי חייב:"
+  },
+  "Rashi on Bekhorot 12a:19:1": {
+    "dependsOn": [
+      "Bekhorot 12a:19",
+      "Rashi on Bekhorot 12a:18:1",
+      "Rashi on Bekhorot 12a:18:2",
+      "Rashi on Bekhorot 12a:10:1",
+      "Rashi on Bekhorot 12a:12:1",
+      "Rashi on Bekhorot 12a:15:1",
+      "Rashi on Bekhorot 12a:1:1",
+      "Rashi on Bekhorot 12a:1:2",
+      "Rashi on Bekhorot 12a:1:3",
+      "Rashi on Bekhorot 2a:1:1",
+      "Rashi on Bekhorot 2a:2:1",
+      "Rashi on Bekhorot 2b:1:1"
+    ],
+    "generatedAt": "2026-11-05T21:37:06.016Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קמ״ל</strong> - דדין כלאים אית ליה דתחת תחת גמר מקדשים כי היכי דלמזבח לא קרב כדאמר בריש פירקין <span class=\"parenthesized\">(בכורות דף ג:)</span> מום קבוע הוא לישחט עליו במעשר נמי לא קדוש:"
+  },
+  "Rashi on Bekhorot 12a:1:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 12a:1:2",
+      "Rashi on Bekhorot 12a:1:3"
+    ],
+    "generatedAt": "2026-11-05T20:56:00.683Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא בחיה</strong> - צבי ואיל:"
+  },
+  "Rashi on Bekhorot 12a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T20:56:25.396Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא בשחוטה</strong> - ואפי' שה שחוט:"
+  },
+  "Rashi on Bekhorot 12a:1:3": {
+    "dependsOn": [
+      "Rashi on Bekhorot 12a:1:1",
+      "Rashi on Bekhorot 12a:1:2",
+      "Rashi on Bekhorot 12a:1:3",
+      "Steinsaltz on Bekhorot 12a:1"
+    ],
+    "generatedAt": "2026-11-05T20:58:07.478Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טריפה</strong> - שנחתכו רגליה מן הארכובה ולמעלה:"
+  },
+  "Rashi on Bekhorot 12a:1:4": {
+    "dependsOn": [
+      "Rashi on Bekhorot 12a:1:3",
+      "Rashi on Bekhorot 12a:1:4",
+      "Rashi on Bekhorot 12a:1:5"
+    ],
+    "generatedAt": "2026-11-05T20:59:33.026Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כלאים</strong> - תייש הבא על הרחל:"
+  },
+  "Rashi on Bekhorot 12a:1:5": {
+    "dependsOn": [
+      "Rashi on Bekhorot 12a:1:4",
+      "Rashi on Bekhorot 12a:1:6",
+      "Chullin 80a:11",
+      "Rashi on Bekhorot 11a:1:1",
+      "Rashi on Bekhorot 11a:1:2",
+      "Rashi on Bekhorot 11b:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Steinsaltz on Bekhorot 12a:1"
+    ],
+    "generatedAt": "2026-11-05T21:01:18.787Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:1:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כוי</strong> - ספק חיה ספק בהמה:"
+  },
+  "Rashi on Bekhorot 12a:1:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:02:00.218Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:1:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני שהוא שה</strong> - דבין רחל ובין עז קרויין שה:"
+  },
+  "Rashi on Bekhorot 12a:1:7": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:02:29.559Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:1:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתנו לכהן</strong> - הפטר חמור:"
+  },
+  "Rashi on Bekhorot 12a:20:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:40:04.705Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פסולי המוקדשין</strong> - שנפדו ויוצאין לחולין:"
+  },
+  "Rashi on Bekhorot 12a:21:1": {
+    "dependsOn": [
+      "Bekhorot 12a:21"
+    ],
+    "generatedAt": "2026-11-05T21:40:48.624Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיון דאמר</strong> - פטר חמור מותר בהנאה קודם פדיון חולין הוא הפטר חמור ויכול לפדותו בה דליכא למימר איסור חל על איסור:"
+  },
+  "Rashi on Bekhorot 12a:22:1": {
+    "dependsOn": [
+      "Bekhorot 12a:22"
+    ],
+    "generatedAt": "2026-11-05T21:41:47.146Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין איסור</strong> - פטר חמור חל על איסור דבהמת פסולי המוקדשין אית בה קדושה אפי' לאחר פדיון דאסירי בגיזה ועבודה:"
+  },
+  "Rashi on Bekhorot 12a:23:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:42:30.327Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלא תפיס פדיונו</strong> - שהשה הניתן תחתיו אין בו משום קדושה:"
+  },
+  "Rashi on Bekhorot 12a:24:1": {
+    "dependsOn": [
+      "Bekhorot 12a:24",
+      "Rashi on Bekhorot 12a:17:1",
+      "Rashi on Bekhorot 12a:18:1"
+    ],
+    "generatedAt": "2026-11-05T21:43:44.208Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צבי ואיל</strong> - כתיב בפסולי המוקדשין דכתיב <span class=\"parenthesized\">(דברים י״ב:ט״ו)</span> רק בכל אות נפשך וגו' ובפסולי המוקדשין מדבר:"
+  },
+  "Rashi on Bekhorot 12a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:05:37.559Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להלן</strong> - בפסח:"
+  },
+  "Rashi on Bekhorot 12a:2:2": {
+    "dependsOn": [
+      "Bekhorot 12a:1",
+      "Rashi on Bekhorot 12a:2:1"
+    ],
+    "generatedAt": "2026-11-05T21:06:52.434Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לכל השמות</strong> - שבמשנתנו. הפסח אינו בא עגל וחיה דכתיב <span class=\"parenthesized\">(שמות יב)</span> שה מן הכבשים ומן העזים ולא שחוט דבעינן שחיטה לשם פסח וכלאים נמי לא דכלאים אין קריבין לגבי מזבח כדקתני לקמן שור וכשב פרט לכלאים:"
+  },
+  "Rashi on Bekhorot 12a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:07:36.592Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בן פקועה</strong> - שנמצא חי בבהמה שחוטה: פלוגתא דר\"מ ורבנן בפ' בהמה המקשה <span class=\"parenthesized\">(חולין דף עד.)</span>:"
+  },
+  "Rashi on Bekhorot 12a:6:1": {
+    "dependsOn": [
+      "Bekhorot 12a:6"
+    ],
+    "generatedAt": "2026-11-05T21:08:26.448Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בדיקולא</strong> - קלחת. כלומר כשחוטה דמי ואין פודין בשחוטה:"
+  },
+  "Rashi on Bekhorot 12a:6:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 12a:6:1",
+      "Bekhorot 12a:1",
+      "Bekhorot 12a:5",
+      "Bekhorot 12a:6",
+      "Rashi on Bekhorot 12a:1:1",
+      "Rashi on Bekhorot 12a:1:2",
+      "Rashi on Bekhorot 12a:1:3",
+      "Rashi on Bekhorot 12a:1:4",
+      "Rashi on Bekhorot 12a:1:5",
+      "Rashi on Bekhorot 12a:1:6",
+      "Rashi on Bekhorot 12a:1:7",
+      "Tosafot on Bekhorot 12a:1:1",
+      "Steinsaltz on Bekhorot 12a:6:1",
+      "Steinsaltz on Bekhorot 12a:6",
+      "Rashi on Bekhorot 12a:5:1",
+      "Mishneh Torah, First Fruits and other Gifts to Priests Outside the Sanctuary 12:1",
+      "Steinsaltz comment #2 on Bekhorot 12a:1",
+      "Steinsaltz comment #3 on Bekhorot 12a:1",
+      "Rashi on Bekhorot 12a:8:1",
+      "Rashi on Bekhorot 12a:9:1"
+    ],
+    "generatedAt": "2026-11-05T21:11:51.513Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או דלמא כו'</strong> - וכל הנך אין פודין דאמר במתניתין שלא בשויין קאמרינן דאי בשויין אפי' בשלקי שרי:"
+  },
+  "Rashi on Bekhorot 12a:8:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 12a:8:1",
+      "Bekhorot 12a:8",
+      "Rashi on Bekhorot 12a:6:1",
+      "Rashi on Bekhorot 12a:6:2",
+      "Rashi on Bekhorot 12a:9:1",
+      "Steinsaltz on Bekhorot 12a:8",
+      "Steinsaltz comment #1 on Bekhorot 12a:8",
+      "Rashi on Bekhorot 12a:1:1",
+      "Rashi on Bekhorot 12a:2:1",
+      "Rashi on Bekhorot 12a:5:1",
+      "Rashi on Bekhorot 12a:1:2",
+      "Rashi on Bekhorot 12a:1:3",
+      "Rashi on Bekhorot 12a:1:4",
+      "Rashi on Bekhorot 12a:1:5",
+      "Rashi on Bekhorot 12a:1:6",
+      "Rashi on Bekhorot 12a:1:7",
+      "Rashi on Bekhorot 12a:12:1",
+      "Rashi on Bekhorot 12a:12:2",
+      "Rashi on Bekhorot 12a:2:2",
+      "Rashi on Bekhorot 11a:1:1",
+      "Rashi on Bekhorot 11a:2:1"
+    ],
+    "generatedAt": "2026-11-05T21:15:19.598Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:8:1"
+    ],
+    "sourceText": "בן פקועה פסול לפסח דאינו קרב למזבח דתניא בפ' שני דשחיטת חולין <span class=\"parenthesized\">(דף לח:)</span> כי יולד פרט ליוצא דופן:"
+  },
+  "Rashi on Bekhorot 12a:9:1": {
+    "dependsOn": [
+      "Bekhorot 12a:9",
+      "Rashi on Bekhorot 12a:8:1",
+      "Rashi on Bekhorot 12a:5:1"
+    ],
+    "generatedAt": "2026-11-05T21:19:13.691Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 12a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שה מאי אהני ליה</strong> - ומסתברא למעוטי בן פקועה דכשחוט דמי ולא שה הוא ותפדה מרבי' בעל מום ונקבה ובן שתי שנים דשה נינהו:"
+  },
+  "Tosafot on Bekhorot 12a:19:1": {
+    "dependsOn": [
+      "Bekhorot 12a:19",
+      "Bekhorot 12a:15",
+      "Rashi on Bekhorot 12a:18:1",
+      "Rashi on Bekhorot 12a:18:2",
+      "Rashi on Bekhorot 12a:19:1",
+      "Bekhorot 12a:13",
+      "Bekhorot 12a:14",
+      "Bekhorot 5b:15",
+      "Rashi on Bekhorot 5b:15:1",
+      "Bekhorot 5b:14",
+      "Bekhorot 5b:12",
+      "Bekhorot 5b:13"
+    ],
+    "generatedAt": "2026-11-05T21:38:55.847Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 12a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קא משמע לן תחת תחת משלמים גמר</strong> - וא\"ת למה לי בבכור עד שיהא הוא שור ובכורו שור נילף העברה העברה ממעשר וי\"ל משום דכתיב אך לחייב מקצת סימנין דומין לאמו לכך צריך למעט נדמה בהאי קרא דנשמע מינה אמאי קאי אך ומיהו לההוא תנא דממעט לעיל נדמה מפטר חמור תרי זמני וגלי לן בקדושת דמים וה\"ה לקדושת הגוף לפי טעם זה לא הוה מצי למדרש מקצת סימנים מאך ושמא נפקא ליה מקרא אחרינא:"
+  },
+  "Tosafot on Bekhorot 12a:1:1": {
+    "dependsOn": [
+      "Bava Kamma 78a:1",
+      "Bava Kamma 78a:2",
+      "Bava Kamma 78a:3",
+      "Bava Kamma 78a:4",
+      "Bava Kamma 78a:5",
+      "Bava Kamma 78a:6",
+      "Bava Kamma 78a:7",
+      "Bava Kamma 78a:8",
+      "Bava Kamma 78a:9",
+      "Bava Kamma 78a:10",
+      "Bava Kamma 78a:11",
+      "Bava Kamma 78a:12"
+    ],
+    "generatedAt": "2026-11-05T21:05:17.238Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 12a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי אליעזר מתיר בכלאים</strong> - ר' אלעזר גרסינן ולא גרסינן רבי אליעזר וכן מוכח במרובה <span class=\"parenthesized\">(ב\"ק דף עח.)</span> דאמר ר' אלעזר דמתיר בכלאים מפני שהוא שה דאינו אלא להוציא כלאים למאי הלכתא ומשני לטמא שנולד מן הטהור ועיבורו מן הטמא ודלא כר' יהושע דאי כר' יהושע משה כבשים ושה עזים נפקא וכל שכן דלא כר' אליעזר דשרי לעיל בפירקין אלמא דרבי אליעזר פליג על רבי אלעזר ור' אליעזר בר פלוגתיה דרבי יהושע:"
+  },
+  "Tosafot on Bekhorot 12a:24:1": {
+    "dependsOn": [
+      "Bekhorot 33a:5",
+      "Bekhorot 12a:24"
+    ],
+    "generatedAt": "2026-11-05T21:45:17.874Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 12a:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה צבי ואיל אין פודין וכו'</strong> - עוד יש דרשא בפ' שני <span class=\"parenthesized\">(לקמן בכורות דף טו.)</span> מצבי ואיל דפטר להו ממתנות ואי לאו מיעוטא דקרא הוה שרי חלבו ופטר להו מאותו ואת בנו וא\"ת היכי עבדינן כל הנך דרשות דפרק כל פסולי <span class=\"parenthesized\">(לקמן בכורות דף לג.)</span> אמר תלתא צבי ואיל כתיבי ומייתי כל חד למילתיה ולא דרשינן מינייהו הך דרשות כלל:"
+  }
+}

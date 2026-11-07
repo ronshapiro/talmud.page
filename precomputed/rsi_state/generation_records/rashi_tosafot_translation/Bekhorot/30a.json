@@ -1,0 +1,278 @@
+{
+  "Rashi on Bekhorot 30a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T23:34:50.680Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 30a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זו דברי רבי עקיבא</strong> - דחשוד על השביעית אינו חשוד על המעשר:"
+  },
+  "Rashi on Bekhorot 30a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T23:35:14.119Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 30a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שביעית חמירא להו</strong> - וכיון דחשוד אשביעית כ\"ש אמעשרות:"
+  },
+  "Rashi on Bekhorot 30a:11:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 30a:11:1",
+      "Rashi on Bekhorot 30a:11:3"
+    ],
+    "generatedAt": "2026-11-06T23:35:56.027Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 30a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דההוא דהוה קרי לחבריה</strong> - באתריה דרבי יהודה:"
+  },
+  "Rashi on Bekhorot 30a:11:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T23:36:37.403Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 30a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דיירא בר דיירתא</strong> - גר בן גיורת:"
+  },
+  "Rashi on Bekhorot 30a:11:4": {
+    "dependsOn": [
+      "Rashi on Bekhorot 30a:11:1",
+      "Rashi on Bekhorot 30a:11:2",
+      "Rashi on Bekhorot 30a:11:3",
+      "Rashi on Bekhorot 30a:11:4",
+      "Bekhorot 30a:11",
+      "Rashi on Bekhorot 30a:10:1",
+      "Tosafot on Bekhorot 30a:11:1",
+      "Jastrow, סְתִימְתָּאָה 1",
+      "Steinsaltz on Bekhorot 30a:10",
+      "Steinsaltz comment #1 on Bekhorot 30a:11",
+      "Steinsaltz comment #2 on Bekhorot 30a:11",
+      "Steinsaltz comment #3 on Bekhorot 30a:11",
+      "Rashi on Bekhorot 30a:1:1",
+      "Rashi on Bekhorot 30a:2:1",
+      "Rashi on Bekhorot 30a:3:1",
+      "Rashi on Bekhorot 30a:7:1",
+      "Rashi on Bekhorot 30a:8:1"
+    ],
+    "generatedAt": "2026-11-06T23:39:45.775Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 30a:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תיתי לי</strong> - שכר טוב שלא אכלתי פירות שביעית כוותך. יש מפרשים רבי עקיבא סתימתאה דאמרינן בסנהדרין באלו הן הנחנקין <span class=\"parenthesized\">(סנהדרין דף פו.)</span> סתם משנה רבי מאיר סתם ברייתא רבי נתן וכולהו אליבא דרבי עקיבא ולאו מילתא היא דהא בכמה דוכתין אמרינן רבי מנחם סתימתאה רבי שמעון סתימתאה אלא רוב משניות איכא בהש\"ס סתומות אליבא דר' עקיבא:"
+  },
+  "Rashi on Bekhorot 30a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T23:10:24.849Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 30a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרבא דאטמא</strong> - חלב הכליות שעל הירך:"
+  },
+  "Rashi on Bekhorot 30a:1:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 30a:1:1",
+      "Tosafot on Bekhorot 30a:1:1",
+      "Jastrow, *מַדְכַנְתָּא 1",
+      "Jastrow, תְּרָב 1",
+      "Rashi on Chullin 48b:9:2"
+    ],
+    "generatedAt": "2026-11-06T23:13:13.009Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 30a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במר דכנתא</strong> - בחזקת חלב טהור הנקרא כנתא ובלע\"ז אנטריי\"ל כמו הדרא דכנתא דאמרינן בשחיטת חולין <span class=\"parenthesized\">(דף מח:)</span>:"
+  },
+  "Rashi on Bekhorot 30a:2:1": {
+    "dependsOn": [
+      "Bekhorot 30a:2"
+    ],
+    "generatedAt": "2026-11-06T23:16:54.424Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 30a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעולם כרבי שמעון</strong> - דלא קניס אלא במידי דדמי לאיסורא ובאיסורא גופיה במידי דעביד איסורא דהיינו אמגוזי:"
+  },
+  "Rashi on Bekhorot 30a:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T23:17:16.903Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 30a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גרו באמגוזי</strong> - גרורים ומשוכים אחר אגוזים:"
+  },
+  "Rashi on Bekhorot 30a:2:3": {
+    "dependsOn": [
+      "Rashi on Bekhorot 30a:2:1",
+      "Rashi on Bekhorot 30a:2:2",
+      "Rashi on Bekhorot 30a:2:3",
+      "Rashi on Bekhorot 30a:1:1",
+      "Rashi on Bekhorot 30a:1:2",
+      "Rashi on Bekhorot 30a:7:1"
+    ],
+    "generatedAt": "2026-11-06T23:18:06.979Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 30a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומשבש לבני טבחים</strong> - מטעה אותם באגוזים ושוכרן לבני הטבחים ומביאין לו החלב שגונבין אותו מאביהן והוא מוכרו במר דכנתא:"
+  },
+  "Rashi on Bekhorot 30a:3:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 30a:3:1",
+      "Rashi on Bekhorot 30a:1:1",
+      "Rashi on Bekhorot 30a:2:1",
+      "Rashi on Bekhorot 30a:4:1"
+    ],
+    "generatedAt": "2026-11-06T23:19:19.676Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 30a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינו חשוד על המעשרות</strong> - ולוקחין ממנו תבואה בשאר שני שבוע ואין צריכים לעשר ודאי אלא דמאי. וטעמא דכולה מתני' מפרש בגמ':"
+  },
+  "Rashi on Bekhorot 30a:4:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 30a:1:1"
+    ],
+    "generatedAt": "2026-11-06T23:20:10.803Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 30a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעי חומה</strong> - דאינו יכול לאכול מעשר שני אלא לפנים מחומת ירושלים דכתיב <span class=\"parenthesized\">(דברים י״ד:כ״ג)</span> ואכלת לפני ה' אלהיך וגו':"
+  },
+  "Rashi on Bekhorot 30a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T23:22:07.689Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 30a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הטהרות</strong> - דרבנן נינהו שיהא אדם אוכל חולין בטהרה:"
+  },
+  "Rashi on Bekhorot 30a:7:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 30a:7:1"
+    ],
+    "generatedAt": "2026-11-06T23:22:36.724Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 30a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא חשוד</strong> - על הטהרות חשוד על השביעית:"
+  },
+  "Rashi on Bekhorot 30a:8:1": {
+    "dependsOn": [
+      "Bekhorot 30a:8"
+    ],
+    "generatedAt": "2026-11-06T23:24:35.767Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 30a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתניתין</strong> - דקתני אין חשוד כגון שראינוהו שנוהג דין מעשרות ושביעית בצינעא בתוך ביתו דליכא למימר לפנים הוא עושה כיון דבצינעא קא עביד:"
+  },
+  "Rashi on Bekhorot 30a:9:1": {
+    "dependsOn": [
+      "Bekhorot 30a:9",
+      "Rashi on Bekhorot 30a:7:1",
+      "Rashi on Bekhorot 30a:7:2",
+      "Rashi on Bekhorot 30a:8:1",
+      "Rashi on Bekhorot 30a:1:1",
+      "Rashi on Bekhorot 30a:2:1"
+    ],
+    "generatedAt": "2026-11-06T23:34:01.455Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 30a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי ינאי אמר</strong> - ברייתא דדייקינן מינה הא חשוד כגון דהוה חשוד אתרוייהו אשביעית ואטהרות וקביל אתרוייהו שיזהר על שניהם:"
+  },
+  "Tosafot on Bekhorot 30a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T23:42:51.279Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 30a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באתריה דרבי יהודה חמירא להו שביעית</strong> - ולכך חשוד אמעשר ותימה דהא בפ\"ק דשבת <span class=\"parenthesized\">(דף יז:)</span> אמרינן דבתרומה כיון דאפשר למיעבד כדשמואל דחטה אחת פוטרת את הכרי לא חשידי והכי נמי גבי מעשר שני לא הוה לן למיחשדיה כיון דאפשר למעבד כדשמואל דהקדש שוה מנה שחללו על שוה פרוטה מחולל דהוא הדין מעשר שני ובשאלתות דרב אחאי הוא בהדיא על כרם רבעי שמחללין אותו על דבר מועט ומעשר שני ונטע רבעי דין אחד להם בכ\"מ דקדש קדש גמרינן להו מהדדי כדאיתא בפרק שני דקדושין <span class=\"parenthesized\">(דף נד:)</span> ואפי' לכתחלה מסתבר דשרי כמו גבי הקדש במסכת ערכין <span class=\"parenthesized\">(דף כט.)</span> דשרי בזמן הזה גבי ההוא גברא דאחרימינהו לנכסיה והא דמוקי בפרק התקבל <span class=\"parenthesized\">(גיטין דף סה.)</span> ההיא דכיצד מערימין על מעשר שני במעשר בזמן הזה דרבנן היה יכול להקשות בזמן הזה מאי הערמה צריך לפטור מחומש והלא יכול לחלל לשוה מנה על שוה פרוטה אלא מסלק ליה בפירכא אחריתי ואמה העבריה בזמן הזה מי איכא וכן מעשים בכל יום שאנו מחללין כרם רבעי שוה מנה על שוה פרוטה וי\"ל דלא דמי מעשר לתרומה דפעמים שאין לו פרוטה מזומנת לחלל עליה וגם אין לו כי אם מעט מעשר כנגד שוה פרוטה ואינו רוצה ליתן פרוטה כנגדו:"
+  },
+  "Tosafot on Bekhorot 30a:1:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 30a:1:1",
+      "Rashi on Bekhorot 30a:1:2",
+      "Rashi on Chullin 94a:7:1",
+      "Steinsaltz on Bekhorot 30a:1",
+      "Jastrow, *מַדְכַנְתָּא 1",
+      "Tosafot on Bekhorot 30a:1:1"
+    ],
+    "generatedAt": "2026-11-06T23:16:18.862Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 30a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרבא דאטמא במר דכנתא</strong> - כך גריס רבינו תם פירוש מר בחילוף של כנתא כמו במר דשחוטה דבפרק גיד הנשה <span class=\"parenthesized\">(חולין צד.)</span> וכמו במר דפרזלא דבבא קמא <span class=\"parenthesized\">(דף קיג:)</span>:"
+  },
+  "Tosafot on Bekhorot 30a:4:1": {
+    "dependsOn": [
+      "Tosafot on Chullin 6a:16:1",
+      "Bekhorot 30a:3"
+    ],
+    "generatedAt": "2026-11-06T23:21:31.602Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 30a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעשרות דבעו חומה חמיר ליה</strong> - מכאן מדקדק רבינו תם בכ\"מ שהזכיר מעשר אצל שביעית דמיירי בנותן מעשר שני לשם חולין כגון הרי אלו בחזקתן למעשר ולשביעית בפרק הנזקין <span class=\"parenthesized\">(גיטין סא:)</span> וכן אינו חושש לתבלין שבה לא משום שביעית ולא משום מעשר בפ\"ק דחולין <span class=\"parenthesized\">(דף ו.)</span> ולשון מעשר נמי מוכיח כן דהיכא דאיירי בחששא דאינו מתוקן נקיט טבל או דמאי:"
+  },
+  "Tosafot on Bekhorot 30a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T23:23:31.400Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 30a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא חשוד חשוד</strong> - דמשמע ליה דלגופה לא איצטריך דפשיטא דכי נאמן על הטהרות דנאמן על השביעית כיון דנוהג מנהג פרושים שאוכל חולין בטהרה:"
+  },
+  "Tosafot on Bekhorot 30a:8:1": {
+    "dependsOn": [
+      "Tosafot on Bekhorot 30a:7:1"
+    ],
+    "generatedAt": "2026-11-06T23:32:37.827Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 30a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשראינוהו נוהג בצנעא בתוך ביתו</strong> - שנזהר מן השביעית משמע דעם הארץ סתמא חשוד אשביעית כמו אטהרות ותימה דבסוף הניזקין <span class=\"parenthesized\">(גיטין סא.)</span> קאמר מאי שנא רישא ומאי שנא סיפא דמיקל באשת עם הארץ ומחמיר על החשודה על השביעית וקאמר רבא הכא במאי עסקינן בעם הארץ דרבי מאיר וטומאה וטהרה דרבנן ומדקתני גבי טומאה וטהרה עם הארץ סתם וגבי שביעית קתני החשודה משמע דסתם עמי הארץ חשידי אטהרות ולא חשידי אשביעית ומיהו מהא דשרי לבור ולטחון גבי עם הארץ דחשיד אטומאה וטהרה ולא אסרינן מטעם שביעית אין לדקדק כלום דדלמא בשאר שני שבוע איירי ההיא ולא בשביעית או בפירות הידועים שאינם של שביעית דה\"נ איירי בפירות הידועים שהם מתוקנים לרבא דלית ליה שינוייא דאביי דרוב עמי הארץ מעשרין ועוד קשיא מכאן לפירוש ר\"ת דמפרש בפ\"ב דכתובות <span class=\"parenthesized\">(דף כד.)</span> גבי שלי חדש ושל חברי ישן דסתם עם הארץ אע\"ג דחשידי אדמאי לא חשידי אשביעית וסותר פירוש רבינו שמואל דמפרש דחדש וישן דנקט משום שביעית וכי משני התם רוב עמי הארץ מעשרין רוצה לומר דהוא הדין בשביעית וכמה קושיות דמקשה רבינו תם על פי' רבינו שמואל כמו שפירש בכתובות ומפרש חדש וישן להשביח המקח בעלמא קאמר ולא לענין איסור והיתר והשתא לר' אילעא דחשוד אטהרות דרבנן חשוד אשביעית כל שכן סתם עמי הארץ דכי היכי דחשידי אדמאי דאורייתא חשידי נמי אשביעית ודוחק להעמיד סתם עם הארץ בכ\"מ דלא חשיד אשביעית כשראינוהו נוהג בצינעא בתוך ביתו ועוד קשיא מהא דתנן במס' דמאי <span class=\"parenthesized\">(פ\"ג מ\"ד)</span> ומייתינן לה נמי בהניזקין <span class=\"parenthesized\">(גיטין סא:)</span> המוליך חטין לטוחן כותי או לטוחן ע\"ה אינו חושש לא משום מעשר ולא משום שביעית משמע דסתם עמי הארץ חשידי אשביעית וי\"ל משום כותי נקט שביעית אי נמי בודאי חשוד איירי וכן ההיא דהלוקח לולב מחבירו בשביעית דקאמר עלה בפ' לולב הגזול <span class=\"parenthesized\">(סוכה לט.)</span> דאין מוסרין דמי פירות שביעית לעם הארץ וכן הא דמייתי פרק קמא דחולין <span class=\"parenthesized\">(דף ו.)</span> הנותן לשכנתו עיסה לאפות וקדירה לבשל אינו חושש לשאור ולתבלין שבה לא משום שביעית ולא משום מעשר ואם אמר עשה לי משליכי חושש כו' כל הני מיירי בודאי חשוד וא\"ת היכי מוכח מינה בחולין דגזרו על תערובות דמאי דלמא חשוד גרע מסתם עם הארץ לגבי מעשר ראשון כדמוכח בשילהי הנזקין <span class=\"parenthesized\">(גיטין סא.)</span> לאביי וי\"ל דלרבא פריך שפיר דלא חמיר ליה:"
+  }
+}

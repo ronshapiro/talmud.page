@@ -1,0 +1,456 @@
+{
+  "Rashi on Bekhorot 32a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T01:57:56.433Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 32a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איכא למיפרך</strong> - דאיצטריך לא יגאל דחרמים דממעשר לא גמירי דמה למעשר שכן קדש לפניו ולאחריו שאם קרא לעשירי תשיעי ולתשיעי עשירי ולאחד עשר עשירי שלשתן מקודשים:"
+  },
+  "Rashi on Bekhorot 32a:13:1": {
+    "dependsOn": [
+      "Bekhorot 32a:13",
+      "Rashi on Bekhorot 32a:11:1",
+      "Rashi on Bekhorot 32a:16:1"
+    ],
+    "generatedAt": "2026-11-07T01:59:18.425Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 32a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאיכא למיפרך</strong> - במעשר כדפרכינן גבי חרמים מה לבכור שכן קדושתו מרחם תאמר במעשר שאין קדושתו מרחם ולהכי איצטריך לא יגאל דמעשר:"
+  },
+  "Rashi on Bekhorot 32a:16:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 32a:13:1",
+      "Rashi on Bekhorot 32a:17:1",
+      "Rashi on Bekhorot 32a:3:1",
+      "Rashi on Bekhorot 32a:7:1",
+      "Rashi on Bekhorot 32a:9:1",
+      "Bekhorot 32a:16",
+      "Tosafot on Bekhorot 32a:23:1",
+      "Rashi on Bekhorot 31b:18:1"
+    ],
+    "generatedAt": "2026-11-07T02:02:18.028Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 32a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והעברת קרא יתירא הוא</strong> - ומופנה לגזירה שוה ללמד העברה העברה על מעשר שלא יגאל ואין משיבין עליה הילכך לא יגאל דמעשר מופנה הוא. ומאי טעמא האי קרא יתירא דמצי למכתב כל פטר רחם לה' כדכתיב קרא אחרינא <span class=\"parenthesized\">(שמות יג)</span> כל פטר רחם לה' והעברת למה לי ש\"מ קרא יתירא הוא:"
+  },
+  "Rashi on Bekhorot 32a:17:1": {
+    "dependsOn": [
+      "Bekhorot 32a:17",
+      "Rashi on Bekhorot 32a:17:1",
+      "Rashi on Bekhorot 32a:17:2",
+      "Rashi on Bekhorot 32a:7:1",
+      "Rashi on Bekhorot 32a:8:1",
+      "Rashi on Bekhorot 31b:1:1",
+      "Rashi on Bekhorot 31b:2:1"
+    ],
+    "generatedAt": "2026-11-07T02:06:26.458Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 32a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכור נמי נילף גאולה גאולה מחרמים</strong> - דלא ימכר דאע\"ג דלא כתב בבכור גאולה כתב ביה פדייה <span class=\"parenthesized\">(שם)</span> והיא היא:"
+  },
+  "Rashi on Bekhorot 32a:17:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 32a:17:1",
+      "Rashi on Bekhorot 32a:16:1"
+    ],
+    "generatedAt": "2026-11-07T02:07:12.986Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 32a:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גאולה דמעשר מפני</strong> - כדאמרן הלכך דיינינן ליה גזירה שוה מחרמים אבל פדייה דבכור לא מפני דאיצטריך לגופיה ולאגמורי נמי אמעשר בהעברה העברה:"
+  },
+  "Rashi on Bekhorot 32a:18:1": {
+    "dependsOn": [
+      "Bekhorot 32a:18",
+      "Rashi on Bekhorot 32a:17:1",
+      "Rashi on Bekhorot 32a:17:2",
+      "Rashi on Bekhorot 32a:16:1"
+    ],
+    "generatedAt": "2026-11-07T02:08:50.713Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 32a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומאי חזית</strong> - דפדייה דבכור לגופיה ולאגמורי אמעשר ולא יגאל דמעשר לאפנויי ולמיגמר גזירה שוה מחרמים אימא לא יגאל דמעשר לגופיה דלא יפדה ולאגמורי אבכור בהעברה העברה ודבכור לאפנויי ולמיגמר גזירה שוה מחרמים דאסור במכירה:"
+  },
+  "Rashi on Bekhorot 32a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T01:38:47.530Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 32a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושאינו נישום מחיים</strong> - כגון העור והגידין שחשיבות שום דמי הבהמה אינו בשביל העור הלכך בהבלעה שרי אפי' דגדול וביתמי משום השבת אבידה אוקמוה אדאורייתא דלאחר שחיטה מוכרו כדרכו:"
+  },
+  "Rashi on Bekhorot 32a:22:1": {
+    "dependsOn": [
+      "Bekhorot 32a:22",
+      "Rashi on Bekhorot 32a:17:1",
+      "Rashi on Bekhorot 32a:17:2",
+      "Rashi on Bekhorot 32a:18:1"
+    ],
+    "generatedAt": "2026-11-07T02:09:46.978Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 32a:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונילף בכור העברה ממעשר</strong> - שיהא אסור במכירה דהא מעשר כבר קים לן דגמרנא ליה גאולה מחרמים:"
+  },
+  "Rashi on Bekhorot 32a:23:1": {
+    "dependsOn": [
+      "Bekhorot 32a:23",
+      "Rashi on Bekhorot 32a:23:1",
+      "Steinsaltz on Bekhorot 32a:23",
+      "Rashi on Bekhorot 32a:3:1",
+      "Rashi on Bekhorot 32a:7:1",
+      "Rashi on Bekhorot 31b:1:1",
+      "Rashi on Bekhorot 31b:2:1"
+    ],
+    "generatedAt": "2026-11-07T02:10:52.087Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 32a:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מסתברא מעשר</strong> - הוה ליה לרבויי בדין חרמים דגאולה כתב ביה כמו בחרמים ולמעוטי בכור דפדייה כתב ביה:"
+  },
+  "Rashi on Bekhorot 32a:24:1": {
+    "dependsOn": [
+      "Bekhorot 32a:24"
+    ],
+    "generatedAt": "2026-11-07T02:13:11.255Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 32a:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא יגאל דחרמים לא צריך</strong> - ולא משום דגמר מבכור אלא מסברא נפקא לן דאינו בפדייה:"
+  },
+  "Rashi on Bekhorot 32a:24:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 32a:24:1",
+      "Rashi on Bekhorot 32a:24:2",
+      "Rashi on Bekhorot 32a:24:3",
+      "Bekhorot 32a:24",
+      "Tosafot on Bekhorot 32a:24:1",
+      "Chidushei Halachot on Bekhorot 32a:4",
+      "Steinsaltz comment #1 on Bekhorot 32a:24",
+      "Steinsaltz comment #2 on Bekhorot 32a:24",
+      "Steinsaltz on Bekhorot 32a:24",
+      "Rashi on Bekhorot 32b:1:2"
+    ],
+    "generatedAt": "2026-11-07T02:14:18.533Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 32a:24:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הקדש נינהו</strong> - ואינו בפדייה ולא דמי לקדשי מזבח:"
+  },
+  "Rashi on Bekhorot 32a:24:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T02:14:42.546Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 32a:24:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חולין נינהו</strong> - ויכול למוכרן כהן לכל מי שירצה:"
+  },
+  "Rashi on Bekhorot 32a:25:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 32a:25:2",
+      "Bekhorot 32a:24",
+      "Bekhorot 32a:26",
+      "Rashi on Bekhorot 32a:24:1",
+      "Rashi on Bekhorot 32a:24:2",
+      "Rashi on Bekhorot 32a:24:3",
+      "Bekhorot 32a:25",
+      "Bekhorot 32a:22",
+      "Bekhorot 32a:23",
+      "Rashi on Bekhorot 32a:23:1"
+    ],
+    "generatedAt": "2026-11-07T02:23:50.029Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 32a:25:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל חרם קדשים הוא</strong> - הוא אסור במכירה:"
+  },
+  "Rashi on Bekhorot 32a:25:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T02:24:17.067Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 32a:25:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לך יהיה</strong> - ברשות כהן הן כשאר ממונו:"
+  },
+  "Rashi on Bekhorot 32a:2:1": {
+    "dependsOn": [
+      "Bekhorot 32a:2"
+    ],
+    "generatedAt": "2026-11-07T01:39:17.064Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 32a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סבר לה להא דרבא</strong> - דמעשר לאחר שחיטה דאורייתא שרי למכור:"
+  },
+  "Rashi on Bekhorot 32a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T01:41:08.151Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 32a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רק בכל אות נפשך</strong> - מוקמינן בספרי דבפסולי המוקדשין מישתעי וכתיב תזבח ואכלת:"
+  },
+  "Rashi on Bekhorot 32a:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T01:41:44.930Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 32a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איזהו דבר שאין בו ברכה מחיים</strong> - שאין נהנין מהם מחיים דהא שאר קדשים אם נפל בהן מום פודן ויכול למוכרן מחיים לכל מי שירצה:"
+  },
+  "Rashi on Bekhorot 32a:3:3": {
+    "dependsOn": [
+      "Rashi on Bekhorot 32a:3:1",
+      "Rashi on Bekhorot 32a:3:2",
+      "Bekhorot 32a:1",
+      "Bekhorot 32a:2",
+      "Rashi on Bekhorot 31b:7:1",
+      "Rashi on Bekhorot 31b:8:1"
+    ],
+    "generatedAt": "2026-11-07T01:43:26.510Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 32a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא זה מעשר בהמה</strong> - דכתיב ביה לא יגאל דאינו נמכר מחיים וכתב דלאחר זביחה איכא ברכה וההוא ברכה מכירה היא דדומיא דברכה שאסר לך מחיים התיר לך לאחר שחיטה ומה ברכה היתה ראויה בו מחיים מכירה. אלמא לאחר שחיטה נמכר מדאורייתא והא דתני אינו נמכר שחוט דרבנן הוא הילכך ביתמי מוקמינן אדאורייתא:"
+  },
+  "Rashi on Bekhorot 32a:4:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 32a:4:1",
+      "Bekhorot 32a:4"
+    ],
+    "generatedAt": "2026-11-07T01:46:10.271Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 32a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהו להבליע</strong> - דמי בשר מעשר בהמה של גדול עם דמי העצמות:"
+  },
+  "Rashi on Bekhorot 32a:5:1": {
+    "dependsOn": [
+      "Bekhorot 32a:5",
+      "Rashi on Bekhorot 32a:5:2"
+    ],
+    "generatedAt": "2026-11-07T01:46:49.581Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 32a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דקה</strong> - אין העצמות ראויים לכלום ואין מבליעין:"
+  },
+  "Rashi on Bekhorot 32a:5:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 32a:5:1",
+      "Steinsaltz on Bekhorot 32a:5",
+      "Bekhorot 32a:4",
+      "Steinsaltz comment #1 on Bekhorot 32a:5"
+    ],
+    "generatedAt": "2026-11-07T01:49:01.242Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 32a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גסה</strong> - ראויין העצמות לקתתא דנגרי וחציני ומבליעין:"
+  },
+  "Rashi on Bekhorot 32a:6:1": {
+    "dependsOn": [
+      "Bekhorot 32a:6"
+    ],
+    "generatedAt": "2026-11-07T01:49:35.873Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 32a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באתריה דמר</strong> - עושין כלים מעצמות ובאתריה דמר אין עושין כלים מעצמות ואין מבליעין:"
+  },
+  "Rashi on Bekhorot 32a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T01:50:23.369Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 32a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנא ה\"מ</strong> - דמעשר אינו נמכר דמאי משמע מכירה מלא יגאל:"
+  },
+  "Rashi on Bekhorot 32a:8:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 32a:7:1",
+      "Rashi on Bekhorot 32a:9:1",
+      "Rashi on Bekhorot 32a:3:1",
+      "Rashi on Bekhorot 32a:3:3",
+      "Rashi on Bekhorot 31b:2:3",
+      "Rashi on Bekhorot 32a:1:1",
+      "Rashi on Bekhorot 32a:2:1",
+      "Rashi on Berakhot 2a:5:2",
+      "Rashi on Berakhot 2a:5:7",
+      "Berakhot 2a:8"
+    ],
+    "generatedAt": "2026-11-07T01:52:38.879Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 32a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בחרמים</strong> - כתיב <span class=\"parenthesized\">(ויקרא כ״ז:כ״ח)</span> לא ימכר ולא יגאל כל חרם קדשים וגו':"
+  },
+  "Rashi on Bekhorot 32a:9:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 32a:9:2",
+      "Rashi on Bekhorot 32a:8:1",
+      "Rashi on Bekhorot 32a:3:1",
+      "Rashi on Bekhorot 32a:3:2",
+      "Rashi on Bekhorot 32a:5:1",
+      "Steinsaltz on Bekhorot 32a:9",
+      "Rashi on Bekhorot 32a:7:1",
+      "Rashi on Bekhorot 32a:4:1",
+      "Rashi on Bekhorot 32a:1:1",
+      "Rashi on Bekhorot 32a:2:1",
+      "Rashi on Bekhorot 31b:1:1",
+      "Rashi on Bekhorot 31a:1:1",
+      "Rashi on Bekhorot 2a:1:1"
+    ],
+    "generatedAt": "2026-11-07T01:54:44.829Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 32a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני</strong> - שצריך שיהו תיבות הללו לא יגאל מופנין לדרשא זו:"
+  },
+  "Rashi on Bekhorot 32a:9:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 32a:9:1"
+    ],
+    "generatedAt": "2026-11-07T01:55:49.795Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 32a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שכן חלין על הכל</strong> - שאם החרים את הקדשים חל חרם עליהן ונותן לכהן כפי טובת הנאה שיש לו בהן כדאמר בערכין בפ' המקדיש שדהו <span class=\"parenthesized\">(ערכין דף כח:)</span> תאמר במעשר שאינו חל אלא על החולין ועוד חרם חל על כל העדר ומעשר אינו אלא עשירי:"
+  },
+  "Tosafot on Bekhorot 32a:10:1": {
+    "dependsOn": [
+      "Chidushei Halachot on Bekhorot 32a:3",
+      "Steinsaltz on Bekhorot 32a:10",
+      "Steinsaltz comment #1 on Bekhorot 32a:10",
+      "Bekhorot 32a:10"
+    ],
+    "generatedAt": "2026-11-07T01:56:44.623Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 32a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלא יאמר לא יגאל בחרמים וגמר ממעשר מה מעשר קדוש ואינו נגאל</strong> - וא\"ת דילמא הוה ילפינן מהקדש דתפדה וי\"ל דלחומרא ילפינן א\"נ משום דבחרמים כתיב לא ימכר ומוקמינן בהו לא יגאל:"
+  },
+  "Tosafot on Bekhorot 32a:23:1": {
+    "dependsOn": [
+      "Bekhorot 32a:23",
+      "Temurah 5b:1",
+      "Temurah 5b:21",
+      "Tosafot on Bekhorot 32a:24:1"
+    ],
+    "generatedAt": "2026-11-07T02:12:37.628Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 32a:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוא ולא בכור</strong> - רבא נמי דמשני בסמוך שלא ימכר בחרמים לא צריך אית ליה נמי הוא ולא בכור כדמוכח בפ\"ק דתמורה <span class=\"parenthesized\">(דף ה:)</span> גבי אי עביד לא מהני דאי לאו הוא הוה ילפינן בכור העברה העברה ממעשר ואביי נמי דמוקי בפ\"ק דתמורה הוא בהוייתו יהא מ\"מ הוה דריש הוא ולא בכור מדסמך ליה הוא לקדש קדשים דמשמע הוא בקדושתו יהא:"
+  },
+  "Tosafot on Bekhorot 32a:24:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 32a:24:1",
+      "Rashi on Bekhorot 32a:24:2",
+      "Rashi on Bekhorot 32a:24:3",
+      "Bekhorot 32a:24",
+      "Temurah 5b:14",
+      "Temurah 5b:15",
+      "Temurah 5b:16",
+      "Temurah 5b:12",
+      "Temurah 5b:13",
+      "Temurah 5b:1",
+      "Temurah 5b:2",
+      "Temurah 5b:3",
+      "Temurah 5a:17",
+      "Temurah 5a:18",
+      "Temurah 5a:15",
+      "Temurah 5a:16",
+      "Rashi on Bekhorot 32a:23:1",
+      "Maharsha on Bekhorot 32a:24:1",
+      "Chidushei Halachot on Bekhorot 32a:4",
+      "Steinsaltz comment #1 on Bekhorot 32a:24",
+      "Steinsaltz comment #2 on Bekhorot 32a:24",
+      "Steinsaltz comment #3 on Bekhorot 32a:24",
+      "Rashi on Bekhorot 32b:1:2"
+    ],
+    "generatedAt": "2026-11-07T02:22:16.831Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 32a:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבא אמר לא יגאל דחרמים לא צריך</strong> - כך כתוב בספרים ורש\"י גרס לא ימכר משום דדייק דאיתנהו היכא אי בי בעלים הקדש נינהו ואי בלא יגאל קאמר והא קדשי בדק הבית נגאלין ור\"ת מפ' דהקדש נינהו קאמר היינו אפי' נפדו דקדש קדשים משמע ליה קדושת הגוף עד בואו ליד כהן ומיהו קשיא לר' דבפ\"ק דתמורה <span class=\"parenthesized\">(דף ה:)</span> משמע דמוכחינן דאין מועיל פדיון מהוא בהוייתו יהא לאביי דאי עביד מהני ולרבא דאמר לא מהני נפיק מלא יגאל גופיה וא\"כ היכי הוה דייק הכא דלא יגאל לא צריך משום דאי בי בעלים הקדש נינהו אפילו נפדו הוא גופה מלא יגאל נפקא ליה לרבא ועוד קשיא אחרת שהקשה רש\"י הא דקאמר אם אינו ענין לחרמים תנהו ענין למעשר מאי צריך מעשר ללא יגאל דחרמים הא בגופה כתב ואי משום לא ימכר בקנייה הכי ה\"ל למימר ואם אינו ענין לגאולה דבגופה כתב תנהו ענין למכירה א\"נ יאמר לא יגאל דחרמים למה לי ש\"מ לאפנויי:"
+  },
+  "Tosafot on Bekhorot 32a:2:1": {
+    "dependsOn": [
+      "Bekhorot 32a:2",
+      "Rashi on Bekhorot 32a:1:1",
+      "Rashi on Bekhorot 32a:2:1",
+      "Bekhorot 31b:20"
+    ],
+    "generatedAt": "2026-11-07T01:40:17.926Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 32a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואף רב שמואל בר רב יצחק סבר לה להא דרבא</strong> - פי' מקרא אחרינא ולא מטעמיה:"
+  }
+}

@@ -1,0 +1,502 @@
+{
+  "Rashi on Bekhorot 14b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T00:57:16.376Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 14b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא ימיר אותו טוב ברע</strong> - דהיינו בעל מום אם המר ימיר יהיה קדש אפילו בעל מום:"
+  },
+  "Rashi on Bekhorot 14b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T00:58:08.098Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 14b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולדות</strong> - בעלי מומין שנולדו מקדשים תמימים:"
+  },
+  "Rashi on Bekhorot 14b:13:1": {
+    "dependsOn": [
+      "Bekhorot 14b:13"
+    ],
+    "generatedAt": "2026-11-06T00:59:41.500Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 14b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פסקה תנא דבי ר' ישמעאל</strong> - מקרא אחרינא ולא איצטריך האי להכי:"
+  },
+  "Rashi on Bekhorot 14b:13:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 14b:13:1",
+      "Rashi on Bekhorot 14b:13:3"
+    ],
+    "generatedAt": "2026-11-06T01:00:39.070Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 14b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רק קדשיך וגו' אלו התמורות</strong> - דאתא לאשמועינן שיקרבו למזבח דאי לעיקר הקדש אתא למה לי למכתב שיעלם לירושלים הא שמעינן קראי טובא השמר לך פן תעלה עולותיך וגו':"
+  },
+  "Rashi on Bekhorot 14b:13:3": {
+    "dependsOn": [
+      "Rashi on Bekhorot 14b:13:1",
+      "Rashi on Bekhorot 14b:13:2",
+      "Rashi on Bekhorot 14b:13:4"
+    ],
+    "generatedAt": "2026-11-06T01:01:05.967Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 14b:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוולדות</strong> - של קדשים:"
+  },
+  "Rashi on Bekhorot 14b:13:4": {
+    "dependsOn": [
+      "Rashi on Bekhorot 14b:13:1",
+      "Rashi on Bekhorot 14b:13:2",
+      "Rashi on Bekhorot 14b:13:3",
+      "Bekhorot 14b:13",
+      "Bekhorot 14b:10",
+      "Bekhorot 14b:9"
+    ],
+    "generatedAt": "2026-11-06T01:01:55.087Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 14b:13:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף הני בעל מום לא</strong> - הלכך כי אתא לא תזבח לבמת יחיד אתא:"
+  },
+  "Rashi on Bekhorot 14b:14:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 14b:14:2",
+      "Rashi on Bekhorot 14b:14:3"
+    ],
+    "generatedAt": "2026-11-06T01:05:07.219Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 14b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השתא רע בטוב אמרת לא</strong> - שלא יביא בהמת חולין תמימים אצל בהמת קודש בעל מום ויאמר זו תמורת זו:"
+  },
+  "Rashi on Bekhorot 14b:14:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 14b:14:1",
+      "Rashi on Bekhorot 14b:14:2",
+      "Rashi on Bekhorot 14b:14:3"
+    ],
+    "generatedAt": "2026-11-06T01:05:45.032Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 14b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא</strong> - להכי כתיב טוב ברע:"
+  },
+  "Rashi on Bekhorot 14b:14:3": {
+    "dependsOn": [
+      "Rashi on Bekhorot 14b:14:1",
+      "Rashi on Bekhorot 14b:14:2"
+    ],
+    "generatedAt": "2026-11-06T01:06:39.801Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 14b:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טוב מעיקרו</strong> - שנתפס בקדושה כשהוא תמים עושה תמורה אע\"פ שהומם כדכתיב או רע בטוב דמשמע רע של קודש בטוב של חולין דרע של קודש עושה תמורה:"
+  },
+  "Rashi on Bekhorot 14b:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T01:17:52.461Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 14b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זו דברי רבי שמעון</strong> - דאמר בפרק בתרא דתמורה <span class=\"parenthesized\">(דף לב.)</span> קדשי מזבח היו בכלל העמדה והערכה:"
+  },
+  "Rashi on Bekhorot 14b:16:1": {
+    "dependsOn": [
+      "Bekhorot 14b:16",
+      "Rashi on Bekhorot 14b:15:1",
+      "Bekhorot 14a:3",
+      "Bekhorot 14a:1",
+      "Bekhorot 14a:4",
+      "Bekhorot 14a:2",
+      "Chidushei Halachot on Bekhorot 14b:8",
+      "Steinsaltz on Bekhorot 14b:16",
+      "Tosafot on Bekhorot 14b:16:1",
+      "Tosafot on Bekhorot 14b:16:2",
+      "Rashi on Bekhorot 14b:13:1",
+      "Rashi on Bekhorot 14b:13:2",
+      "Rashi on Bekhorot 14b:13:3",
+      "Rashi on Bekhorot 14b:13:4",
+      "Rashi on Bekhorot 14b:14:1",
+      "Rashi on Bekhorot 14b:14:2",
+      "Rashi on Bekhorot 14b:14:3"
+    ],
+    "generatedAt": "2026-11-06T01:21:14.711Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 14b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דתנן ר' שמעון אומר כו'</strong> - ומדאמר רבי שמעון קדשי בדק הבית לא היו מכלל דקרא בקדשי מזבח כתיב והכא מודה בבעל מום מעיקרא דנפדה אע\"ג דקדשי מזבח וממאי דתנא דמתני' סבירא ליה קדשי מזבח היו בכלל העמדה והערכה שצריכין שיהו חיין בשעת פדייה כדכתיב והעמיד את הבהמה לפני הכהן ואח\"כ והעריך אותה מדקתני סיפא גבי קדם הקדשן את מומן דאגב שקידשן למזבח מקדישין תמימים:"
+  },
+  "Rashi on Bekhorot 14b:17:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 14b:13:1",
+      "Rashi on Bekhorot 14b:14:1",
+      "Rashi on Bekhorot 14b:15:1",
+      "Bekhorot 14b:17",
+      "Rashi on Bekhorot 14b:16:1"
+    ],
+    "generatedAt": "2026-11-06T01:27:46.189Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 14b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל חכמים</strong> - לאו הנך רבנן דפליגי עליה דר' שמעון במס' תמורה דהתם אמרינן לדברי הכל בעל מום מעיקרו לא היה בכלל העמדה והערכה אלא תנא דבי לוי הוא:"
+  },
+  "Rashi on Bekhorot 14b:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T01:28:38.564Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 14b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפי' חיה</strong> - דאינה ראויה למזבח:"
+  },
+  "Rashi on Bekhorot 14b:19:1": {
+    "dependsOn": [
+      "Bekhorot 14b:19"
+    ],
+    "generatedAt": "2026-11-06T01:31:37.292Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 14b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכי נמי דאם מתו יפדו</strong> - דבבעל מום מעיקרא מודו:"
+  },
+  "Rashi on Bekhorot 14b:1:1": {
+    "dependsOn": [
+      "Bekhorot 14b:1"
+    ],
+    "generatedAt": "2026-11-06T00:40:35.447Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 14b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נפדין תמימים</strong> - אותן וולדות שנולדו לפני פדיונן או אין נפדין תמימים:"
+  },
+  "Rashi on Bekhorot 14b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T00:40:58.088Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 14b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טפל</strong> - ולד:"
+  },
+  "Rashi on Bekhorot 14b:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T00:42:18.136Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 14b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עיקר</strong> - אם. אלמא נפדין תמימים:"
+  },
+  "Rashi on Bekhorot 14b:3:1": {
+    "dependsOn": [
+      "Bekhorot 14b:3",
+      "Rashi on Bekhorot 14b:3:1",
+      "Rashi on Bekhorot 14b:3:2",
+      "Rashi on Bekhorot 14b:3:3"
+    ],
+    "generatedAt": "2026-11-06T00:43:59.947Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 14b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקא דייק הש\"ס<big> טעמא</big></strong> - דלא בעי מום משום דלא יהא טפל חמור מן העיקר דמכח בעל מום אתו הא לא אתו מכח בעל מום אלא לדידהו מקדיש להו לדמיהן לא נפקי לחולין בלא מום דקדוש קדושת הגוף:"
+  },
+  "Rashi on Bekhorot 14b:3:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 14b:3:1",
+      "Rashi on Bekhorot 14b:3:2",
+      "Rashi on Bekhorot 14b:3:3"
+    ],
+    "generatedAt": "2026-11-06T00:44:23.149Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 14b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זכר</strong> - איל:"
+  },
+  "Rashi on Bekhorot 14b:3:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T00:44:54.284Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 14b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הקדיש זכר לדמיו</strong> - שימכרנו ויביא בדמיו עולה הוא עצמו קדוש קדושת הגוף ויקרב עולה. להכי נקט זכר דחזי לעולה משום דרובא דמייתו קרבן עולה מייתו:"
+  },
+  "Rashi on Bekhorot 14b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T00:50:59.624Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 14b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי אלעזר מתני</strong> - השוחט בחוץ חייב. לאו כרת קאמר אלא מלקות:"
+  },
+  "Rashi on Bekhorot 14b:4:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 14b:4:1",
+      "Bekhorot 14b:5"
+    ],
+    "generatedAt": "2026-11-06T00:51:44.913Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 14b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומוקי</strong> - להאי חוץ כגון ששחטו בבמת יחיד בשעת היתר הבמות:"
+  },
+  "Rashi on Bekhorot 14b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T00:52:06.948Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 14b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במת יחיד</strong> - שכל אחד ואחד בונה במה לעצמו כגון במת מנוח וגדעון ושמואל:"
+  },
+  "Rashi on Bekhorot 14b:5:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 14b:5:1",
+      "Steinsaltz on Bekhorot 14b:5:1"
+    ],
+    "generatedAt": "2026-11-06T00:52:41.106Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 14b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במה גדולה</strong> - נוב וגבעון שהן של צבור:"
+  },
+  "Rashi on Bekhorot 14b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T00:53:11.543Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 14b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הואיל וקדוש בעל מום</strong> - להיות אסור בגיזה ועבודה:"
+  },
+  "Rashi on Bekhorot 14b:8:1": {
+    "dependsOn": [
+      "Bekhorot 14b:8",
+      "Rashi on Bekhorot 14b:6:1",
+      "Rashi on Bekhorot 14b:8:1",
+      "Rashi on Bekhorot 14b:8:2"
+    ],
+    "generatedAt": "2026-11-06T00:54:17.626Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 14b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואימא אם אינו ענין כו'</strong> - ולעולם בבמה גדולה:"
+  },
+  "Rashi on Bekhorot 14b:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T00:54:49.769Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 14b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא יבקר</strong> - לא יבדוק בין תם לבעל מום דאיזה שיהא עשירי יהא קדוש:"
+  },
+  "Rashi on Bekhorot 14b:9:1": {
+    "dependsOn": [
+      "Bekhorot 14b:9"
+    ],
+    "generatedAt": "2026-11-06T00:55:33.783Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 14b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גמר העברה העברה מבכור</strong> - מה בכור בעל מום לא קרב אף מעשר בעל מום לא כי אתא קרא לבמת יחיד:"
+  },
+  "Tosafot on Bekhorot 14b:13:1": {
+    "dependsOn": [
+      "Temurah 17b:1-6",
+      "Temurah 17b:7-14",
+      "Temurah 18a:1-5",
+      "Temurah 17b:15-18",
+      "Bekhorot 15a:1-6",
+      "Rashi on Bekhorot 14b:13:1",
+      "Rashi on Bekhorot 14b:13:2",
+      "Rashi on Bekhorot 14b:13:3",
+      "Rashi on Bekhorot 14b:13:4",
+      "Rashi on Bekhorot 14b:14:1",
+      "Rashi on Bekhorot 14b:14:2",
+      "Rashi on Bekhorot 14b:14:3",
+      "Bekhorot 14b:16",
+      "Bekhorot 15b:3",
+      "Rashi on Bekhorot 15b:3:2",
+      "Bekhorot 14b:11-13"
+    ],
+    "generatedAt": "2026-11-06T01:04:21.290Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 14b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הקישן הכתוב לנדרים</strong> - אינו מן <span class=\"parenthesized\">(כן)</span> הברייתא בתמורה פרק אלו קדשים <span class=\"parenthesized\">(תמורה דף יז:)</span> ורבא מפרש כן בפני עצמו ולקמן <span class=\"parenthesized\">(בכורות דף טו:)</span> בשמעתין יש ברייתא אחרת דמפקא תמורת וולדות מזכר ונקבה ופליגא אתנא דבי רבי ישמעאל דהכא כדמפרש בתמורה <span class=\"parenthesized\">(דף יז:)</span> וכן פי' לקמן <span class=\"rashi-quotation\">בקונטרס</span> וההוא תנא נמי נפקא שפיר . שהקישה תמורות וולדות לגוף הקרבן דבגוף הקרבן איירי אם זכר ואם נקבה אלא דמיתורא דרשינן נמי תמורות וולדות ומהשתא לא צריכא להקישא דלעיל דמקיש תמורתו לו:"
+  },
+  "Tosafot on Bekhorot 14b:14:1": {
+    "dependsOn": [
+      "Temurah 9a:5",
+      "Temurah 9a:6",
+      "Temurah 9a:7",
+      "Temurah 9a:8",
+      "Temurah 9a:9",
+      "Temurah 9a:10",
+      "Sanhedrin 76a:14",
+      "Sanhedrin 76a:15",
+      "Sanhedrin 76a:16",
+      "Tosafot on Sanhedrin 53b:9:1",
+      "Chidushei Halachot on Bekhorot 14b:7",
+      "Keritot 3a:1",
+      "Tosafot on Keritot 3a:1:1"
+    ],
+    "generatedAt": "2026-11-06T01:15:57.495Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 14b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טוב ברע מיבעיא</strong> - הך סוגיא דפ\"ק דתמורה <span class=\"parenthesized\">(דף ט.)</span> ורבא סבר אין מזהירין <span class=\"parenthesized\">(עונשין)</span> מן הדין ודריש התם בע\"א ואביי לא חשיב ליה דינא דמי גרעי ונקט הכא דרשא דאביי לפי שפשוט לו יותר וכהאי גוונא איכא בסנהדרין <span class=\"parenthesized\">(דף לד:)</span> גבי אין רואין את הנגעים אלא ביום ומייתי עלה דרשה דאביי דביום ולא בלילה ושביק דרשא דרבא דמפיק ליה מלי ולא לאורי ואין לתמוה מהא דאלו נשרפין <span class=\"parenthesized\">(סנהדרין עו.)</span> איכא איפכא גבי בתו מאנוסתו דאמר ק\"ו בת בתו ענש על בתו לא כל שכן וחשיב ליה <span class=\"parenthesized\">(לו)</span> אביי גלוי מילתא טפי מרבא <span class=\"parenthesized\">(ולא)</span> גמרינן מהדדי דגבי אחותו איצטריך קרא לכולי עלמא לבת אביו ובת אמו משום דאין מזהירין מן הדין ולא חשיבא ליה גלויי מילתא בעלמא היינו משום דפשטיה דקרא משמע שבא למעט דכתיב בת אביו או בת אמו:"
+  },
+  "Tosafot on Bekhorot 14b:14:2": {
+    "dependsOn": [
+      "Tosafot on Bekhorot 14b:14:1",
+      "Tosafot on Bekhorot 14b:14:2"
+    ],
+    "generatedAt": "2026-11-06T01:16:52.107Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 14b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טוב ברע מיבעיא</strong> - ואם תאמר דלמא איצטריך משום סיפא דקרא והיה הוא ותמורתו יהיה קודש וי\"ל דהוה מצי למיכתב בסיפיה ואם המר ימיר טוב ברע או רע בטוב:"
+  },
+  "Tosafot on Bekhorot 14b:16:1": {
+    "dependsOn": [
+      "Bekhorot 14b:16",
+      "Bekhorot 14b:18",
+      "Bekhorot 15a:3"
+    ],
+    "generatedAt": "2026-11-06T01:23:09.124Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 14b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומודה ר\"ש בבעל מום מעיקרו</strong> - למאי דאמרינן בסמוך דרב סבר כר\"ל [דאמר התם] לרבנן קדשי מזבח לא היו בכלל העמדה והערכה ניחא דמודה לרבנן אבל למאי דמסקינן דסבר כר' יוחנן דלרבנן אחד זה ואחד זה היו בכלל העמדה והערכה אם כן מודה למאן ויש לפרש דנקט הכי דלא תיסק אדעתא טעמא דמתניתין משום דאין פודין לאכילה לכלבים ולא משום העמדה והערכה דלא בעינן בקדשי מזבח העמדה והערכה ולכך ברישא דקדם מומן יפדו והשתא קמ\"ל דטעמא דמתני' משום העמדה והערכה וכדדייקינן בסמוך מדלא קתני ואם נעשו טריפה וברישא דקדם מומן מודה רבי שמעון דלא בעי העמדה והערכה והשתא דנקט מודה רבי שמעון משום דאיכא למיטעי דפליג אמתני' כדפרישית איצטריך למימר דשפיר מודה בה והא דנקט רבי שמעון משום דלדידיה פשיטא ליה טפי דקדשי מזבח היו בכלל העמדה והערכה מדקאמר קדשי בדק הבית לא היו ע\"כ כי כתיבא העמדה והערכה בקדשי מזבח כתיבא אבל לרבנן לא פשיטא ליה כולי האי דמצי למימר לא היו כמו שאומר ריש לקיש:"
+  },
+  "Tosafot on Bekhorot 14b:16:2": {
+    "dependsOn": [
+      "Tosafot on Bekhorot 14b:16:1"
+    ],
+    "generatedAt": "2026-11-06T01:23:57.922Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 14b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אותה למעוטי בעל מום מעיקרו</strong> - כל קדשי בדק הבית לרבי שמעון ממעטינן מקרא אחרינא בסוף תמורה <span class=\"parenthesized\">(דף לג.)</span>:"
+  },
+  "Tosafot on Bekhorot 14b:3:1": {
+    "dependsOn": [
+      "Temurah 20a:1",
+      "Temurah 20a:2",
+      "Temurah 20a:3",
+      "Temurah 20b:1",
+      "Temurah 20b:2",
+      "Temurah 20b:3",
+      "Temurah 20b:4",
+      "Temurah 19b:20",
+      "Temurah 19b:21",
+      "Temurah 19b:22",
+      "Temurah 19b:23",
+      "Temurah 20a:14",
+      "Temurah 20a:15",
+      "Temurah 20a:16",
+      "Temurah 19b:8",
+      "Temurah 19b:9",
+      "Tosafot on Temurah 19b:8:1",
+      "Temurah 20a:13",
+      "Rashi on Bekhorot 14b:3:1",
+      "Rashi on Bekhorot 14b:3:2",
+      "Rashi on Bekhorot 14b:3:3",
+      "Steinsaltz on Bekhorot 14b:3",
+      "Steinsaltz In-Depth on Bekhorot 14b:3:1",
+      "Steinsaltz In-Depth on Bekhorot 14b:3:2",
+      "Steinsaltz comment #1 on Bekhorot 14b:3",
+      "Steinsaltz comment #2 on Bekhorot 14b:3",
+      "Tosafot on Bekhorot 14b:9:1",
+      "Tosafot on Bekhorot 14b:13:1",
+      "Tosafot on Bekhorot 12a:1:1"
+    ],
+    "generatedAt": "2026-11-06T00:50:17.194Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 14b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הקדיש זכר לדמיו קדוש קדושת הגוף</strong> - להכי נקט זכר דקרב הוא עצמו עולה ואי הוה נקט בהמה סתם הוי אמינא דנקבה קדוש קדושת הגוף וקרב שלמים ושמעינן ליה לר' יהושע במסכת שקלים <span class=\"parenthesized\">(דף ו.)</span> ומייתי לה בתמורה פרק אלו קדשים <span class=\"parenthesized\">(תמורה דף כ.)</span> במקדיש נכסיו זכרים עצמן יקרבו עולות ונקבות ימכרו לצרכי שלמים ויביא בדמיהם עולות ומיהו נראה לר' אליעזר נמי דאמר התם זכרים ימכרו לצרכי עולות ונקבות ימכרו לצרכי שלמים ודמיהם יפלו לשאר נכסים לבדק הבית לפי מה שהיה רבא ר\"ל מתחלה התם בההוא פירקין המקדיש זכר אין קדוש קדושת הגוף לא קשה ליה מידי ממתני' דשקלים דיש לחלק בין מקדיש נכסיו סתם לפירש בהדיא לדמיו:"
+  },
+  "Tosafot on Bekhorot 14b:9:1": {
+    "dependsOn": [
+      "Bekhorot 14b:9",
+      "Chidushei Halachot on Bekhorot 14b:3",
+      "Rashi on Bekhorot 14b:9:1"
+    ],
+    "generatedAt": "2026-11-06T00:56:29.333Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 14b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גמר העברה</strong> - מצי למימר תחת תחת מקדשים ולפי שהמעשר ובכור שוין בכמה עניינים נקטיה:"
+  }
+}

@@ -1,0 +1,497 @@
+{
+  "Rashi on Bekhorot 11a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T19:58:46.260Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חמור מן ההקדש</strong> - שפודהו בכסף בשויו:"
+  },
+  "Rashi on Bekhorot 11a:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T19:59:10.827Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להחמיר עליו</strong> - שלא יפדהו אלא בשה:"
+  },
+  "Rashi on Bekhorot 11a:10:3": {
+    "dependsOn": [
+      "Rashi on Bekhorot 11a:10:1",
+      "Rashi on Bekhorot 11a:10:2",
+      "Rashi on Bekhorot 11a:10:3",
+      "Rashi on Bekhorot 11a:10:4",
+      "Bekhorot 11a:2"
+    ],
+    "generatedAt": "2026-11-05T20:00:09.900Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא להקל עליו</strong> - דאם פודהו בשה יכול לפדותו בפטרוזא:"
+  },
+  "Rashi on Bekhorot 11a:10:4": {
+    "dependsOn": [
+      "Rashi on Bekhorot 11a:10:1",
+      "Rashi on Bekhorot 11a:10:2",
+      "Rashi on Bekhorot 11a:10:3",
+      "Rashi on Bekhorot 2a:1:1",
+      "Rashi on Bekhorot 2a:2:1"
+    ],
+    "generatedAt": "2026-11-05T20:01:03.320Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשלקי</strong> - עשבים שלוקות:"
+  },
+  "Rashi on Bekhorot 11a:12:1": {
+    "dependsOn": [
+      "Bekhorot 11a:12",
+      "Rashi on Bekhorot 11a:11:1"
+    ],
+    "generatedAt": "2026-11-05T20:02:53.834Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ממונא דבעלים הוא</strong> - ולא מצי כהן לזבוני להאי פודה ופדיונו פדוי לבעלים וזה הניח מעותיו על קרן הצבי:"
+  },
+  "Rashi on Bekhorot 11a:13:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 11a:13:2",
+      "Leviticus 27:19"
+    ],
+    "generatedAt": "2026-11-05T20:03:57.818Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונתן הכסף</strong> - דכתיב ואם המקדיש יגאל וגו' משמע כל מי שיתן הכסף יהא ההקדש שלו:"
+  },
+  "Rashi on Bekhorot 11a:13:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 11a:13:1",
+      "Bekhorot 11a:13"
+    ],
+    "generatedAt": "2026-11-05T20:05:14.816Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או דלמא כיון דקני</strong> - האי פטר חמור לבעלים להאי דביני וביני דיכול לפדותו בשה אע\"ג דכוליה לא קני ליה כל זמן שלא פדאו אפ\"ה ממונא דידיה הוא:"
+  },
+  "Rashi on Bekhorot 11a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T20:06:11.945Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואע\"פ שאין לו עכשיו</strong> - כלומר שאע\"פ שאין לו עכשיו רשות יש לו לאחר זמן שיפדהו הלכך הוי כאילו הוא השתא דידיה:"
+  },
+  "Rashi on Bekhorot 11a:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T20:06:47.978Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וגונב מבית האיש אמר רחמנא</strong> - ישלם שנים לא מבית הקדש דאין תשלומי כפל להקדש:"
+  },
+  "Rashi on Bekhorot 11a:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T20:09:02.394Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי אתה יכול לומר בבא ליד כהן</strong> - אם נתנו ישראל לכהן שוב אינו נכנס להתעשר לא ביד כהן ולא ביד ישראל ואפילו חזר ישראל ולקחו הימנו או הכהן נתנו לו שהרי שנינו כו':"
+  },
+  "Rashi on Bekhorot 11a:18:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 11a:18:1"
+    ],
+    "generatedAt": "2026-11-05T20:10:03.468Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ספק פטרי חמורים</strong> - כגון שהיה לו עשר חמורות וילדו כולן זכר ונקבה שמפריש עליהן עשרה שיין לאפקועי לאיסורייהו ומעשרן לשיין כשאר בהמות חולין והן שלו והמעשר קרב שלמים והוא אוכלו כדין שאר מעשר בהמה:"
+  },
+  "Rashi on Bekhorot 11a:1:1": {
+    "dependsOn": [
+      "Bekhorot 11a:1"
+    ],
+    "generatedAt": "2026-11-05T19:34:39.604Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בהשג יד כתיב</strong> - האומר ערכי עלי ואין לו כדי ערך כתיב ביה <span class=\"parenthesized\">(ויקרא כ״ז:ח׳)</span> על פי אשר תשיג יד הנודר יעריכנו הכהן וכתיב בתריה וכל ערכך וגו' דאי נמי לית ליה שוה שקל לא יעריכנו הכהן פחות משקל:"
+  },
+  "Rashi on Bekhorot 11a:20:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T20:16:18.396Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואותו אבי אמו כהן נפלו לו כו'</strong> - דאז חייבין בפדיון דברשות ישראל נולדו:"
+  },
+  "Rashi on Bekhorot 11a:21:1": {
+    "dependsOn": [
+      "Bekhorot 11a:21",
+      "Rashi on Bekhorot 11a:21:1",
+      "Rashi on Bekhorot 11a:21:2"
+    ],
+    "generatedAt": "2026-11-05T20:16:59.142Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפריש עליהן עשרה שיין</strong> - לאפקועי איסורייהו:"
+  },
+  "Rashi on Bekhorot 11a:21:2": {
+    "dependsOn": [
+      "Bekhorot 11a:20",
+      "Bekhorot 11a:21",
+      "Rashi on Bekhorot 11a:21:1"
+    ],
+    "generatedAt": "2026-11-05T20:17:57.911Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:21:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והן שלו</strong> - דמאי דמיחייב כהן המורישו לעשות מהן עושה זה מהן דלכהן המוריש היה צריך להפריש עליהן שיין להפקיע קדושה שחלה עליהן בבית ישראל ראשון ונוטל השיין לעצמו שהרי כהן הוא ואין צריך לחזר אחר כהן הכי נמי עושה ישראל זה היורשו דדמי כמי שהורישו כהן השיין:"
+  },
+  "Rashi on Bekhorot 11a:22:1": {
+    "dependsOn": [
+      "Jastrow, מָרַח 1"
+    ],
+    "generatedAt": "2026-11-05T20:18:39.348Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ממורחין</strong> - שנגמרה מלאכתן למעשר דמירוח גמר מלאכה של תבואה כשמשוה את הכרי ומחליקו ברחת:"
+  },
+  "Rashi on Bekhorot 11a:22:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T20:19:36.918Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:22:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואותו אבי אמו כהן כו'</strong> - רבותא קמ\"ל דאע\"ג דמכח ישראל קאתי דאיכא למימר ניתבינהו השתא לתרומה <span class=\"parenthesized\">(ומעשר)</span> לכהן כי היכי דהוה עביד ישראל קמא אפי' הכי כיון דיד כהן באמצע הוי כאילו הפריש הכהן האמצעי מהן התרומה והוריש לישראל זה כל אחד בפני עצמו ומעשרן והכל שלו ומוכר התרומה לכהנים והוא הדין נמי אם לא נפלו לאותו כהן מישראל דתבואת כהן חייבת בתרומה אלא שאינה נותנה לכהן אחר אלא מפרישה ואוכלה:"
+  },
+  "Rashi on Bekhorot 11a:23:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T20:20:12.842Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום דהוה מופרש וקאי</strong> - כלומר שהשה מין אחד וחמור מין אחר ואינו מחוסר מעשה הלכך הוי כאילו נפלו לו מבית כהן החמורים לעצמן והטלאים לעצמן:"
+  },
+  "Rashi on Bekhorot 11a:24:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T20:20:45.905Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל</strong> - גבי תבואה דמחוסר הפרשה אימא כמי שלא הורמו בבית כהן דמיין וחזרו לאיסורם הראשון ויתנם לכהן:"
+  },
+  "Rashi on Bekhorot 11a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T19:35:05.003Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלכה כדברי חכמים</strong> - דפדיונו בשה כל דהו:"
+  },
+  "Rashi on Bekhorot 11a:2:2": {
+    "dependsOn": [
+      "Jastrow, פַּטְרוֹזָא 1",
+      "Rashi on Bekhorot 11a:2:1",
+      "Rashi on Bekhorot 11a:2:3",
+      "Rashi on Bekhorot 11a:2:4"
+    ],
+    "generatedAt": "2026-11-05T19:35:43.687Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פטרוזא</strong> - שה כחוש:"
+  },
+  "Rashi on Bekhorot 11a:2:3": {
+    "dependsOn": [
+      "Rashi on Bekhorot 11a:2:1",
+      "Rashi on Bekhorot 11a:2:2",
+      "Rashi on Bekhorot 11a:2:3",
+      "Rashi on Bekhorot 11a:2:4",
+      "Rashi on Bekhorot 10a:1:1",
+      "Rashi on Bekhorot 10b:1:1",
+      "Rashi on Bekhorot 9a:1:1",
+      "Rashi on Bekhorot 2a:1:1",
+      "Rashi on Bekhorot 2a:2:1"
+    ],
+    "generatedAt": "2026-11-05T19:36:39.525Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בר דנקא</strong> - קטן שאינו שוה אלא מעה שהוא שתות דינר:"
+  },
+  "Rashi on Bekhorot 11a:2:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T19:37:32.326Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נמי תנינא</strong> - במתני':"
+  },
+  "Rashi on Bekhorot 11a:3:1": {
+    "dependsOn": [
+      "Bekhorot 11a:3",
+      "Rashi on Bekhorot 11a:2:1",
+      "Rashi on Bekhorot 11a:2:2",
+      "Rashi on Bekhorot 11a:2:3",
+      "Rashi on Bekhorot 11a:2:4",
+      "Rashi on Bekhorot 11a:3:1",
+      "Rashi on Bekhorot 11a:3:2"
+    ],
+    "generatedAt": "2026-11-05T19:39:42.092Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פשיטא</strong> - דאפילו פטרוזא דהא כל שהוא קאמרי רבנן לעיל:"
+  },
+  "Rashi on Bekhorot 11a:3:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 11a:3:1",
+      "Bekhorot 11a:2"
+    ],
+    "generatedAt": "2026-11-05T19:40:39.363Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כולי האי</strong> - בר דנקא אי נמי נהי דקטן יכול ליתן אבל פטרוזא שהוא כחוש לא:"
+  },
+  "Rashi on Bekhorot 11a:5:1": {
+    "dependsOn": [
+      "Jastrow, רָגִיל ² 1",
+      "Jastrow, רִגְיָא 1",
+      "Jastrow, רְגַל 1"
+    ],
+    "generatedAt": "2026-11-05T19:43:08.656Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רגיל הכא ורגיל הכא</strong> - פחות מסלע ויותר משקל:"
+  },
+  "Rashi on Bekhorot 11a:6:1": {
+    "dependsOn": [
+      "Bekhorot 11a:6",
+      "Bekhorot 11a:1",
+      "Bekhorot 11a:2",
+      "Rashi on Bekhorot 11a:2:1",
+      "Rashi on Bekhorot 11a:2:2",
+      "Rashi on Bekhorot 11a:3:1",
+      "Rashi on Bekhorot 11a:5:1",
+      "Rashi on Bekhorot 11a:4:1",
+      "Rashi on Bekhorot 10b:1:1",
+      "Rashi on Bekhorot 10b:2:1",
+      "Rashi on Bekhorot 10a:1:1"
+    ],
+    "generatedAt": "2026-11-05T19:51:54.889Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קשיא הלכתא אהלכתא</strong> - הכא אמרת הלכתא ברגיא ולעיל אמרת הלכתא כדברי חכמים דאפי' בר דנקא:"
+  },
+  "Rashi on Bekhorot 11a:6:2": {
+    "dependsOn": [
+      "Rashi on Bekhorot 11a:6:1",
+      "Rashi on Bekhorot 11a:6:2",
+      "Rashi on Bekhorot 11a:6:3",
+      "Bekhorot 11a:6"
+    ],
+    "generatedAt": "2026-11-05T19:52:45.462Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בא לימלך</strong> - מה יתן לכהן אמרינן ליה ברגיא:"
+  },
+  "Rashi on Bekhorot 11a:6:3": {
+    "dependsOn": [
+      "Rashi on Bekhorot 11a:6:1",
+      "Rashi on Bekhorot 11a:6:2"
+    ],
+    "generatedAt": "2026-11-05T19:53:25.502Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעושה מעצמו</strong> - ונותן בר דנקא לא כייפינן ליה טפי:"
+  },
+  "Rashi on Bekhorot 11a:7:1": {
+    "dependsOn": [
+      "Bekhorot 9b:5",
+      "Bekhorot 9b:6",
+      "Bekhorot 9b:7",
+      "Bekhorot 9b:8"
+    ],
+    "generatedAt": "2026-11-05T19:54:25.867Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האמר</strong> - בשמעתין לעיל <span class=\"parenthesized\">(בכורות דף ט:)</span> הקפידה תורה עליו בשה ואע\"ג דתרצינן לעיל בשויו לא קאמרינן מיהו האי מקשה מאי דסלקא דעתך מעיקרא נקט:"
+  },
+  "Rashi on Bekhorot 11a:8:1": {
+    "dependsOn": [
+      "Bekhorot 11a:8"
+    ],
+    "generatedAt": "2026-11-05T19:55:25.429Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבינא קשיא ליה</strong> - אמאי מוקמת למימרא דריש לקיש כרבי שמעון הא קיימא לן דרבי יהודה ורבי שמעון הלכה כרבי יהודה בעירובין בפרק מי שהוציאוהו <span class=\"parenthesized\">(עירובין דף מו:)</span> וסתם לן תנא דמתניתין כרבי יהודה דאסר לפטר חמור בהנאה דקתני מפריש טלה לאפקועיה לאיסוריה:"
+  },
+  "Rashi on Bekhorot 11a:9:1": {
+    "dependsOn": [
+      "Bekhorot 11a:9",
+      "Rashi on Bekhorot 11a:8:1"
+    ],
+    "generatedAt": "2026-11-05T19:56:33.646Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bekhorot 11a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואת אמרת</strong> - למילתך כר' שמעון:"
+  },
+  "Tosafot on Bekhorot 11a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T20:02:01.914Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 11a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הפודה פטר חמור של חבירו פדיונו פדוי</strong> - לא דמי לתורם משלו על חבירו דאיבעיא לן פרק אין בין המודר <span class=\"parenthesized\">(נדרים דף לו:)</span> אם צריך דעת דהתם כתיב גם אתם לרבות שלוחכם ובעינן מה אתם לדעתכם אף שלוחכם לדעתכם אבל הכא לא כתיב בעלים:"
+  },
+  "Tosafot on Bekhorot 11a:16:1": {
+    "dependsOn": [
+      "Tosafot on Bava Kamma 62b:15:3"
+    ],
+    "generatedAt": "2026-11-05T20:08:18.902Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 11a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וגונב מבית האיש ולא מבית הקדש</strong> - פרק מרובה <span class=\"parenthesized\">(ב\"ק דף סב:)</span> איתא הך דרשא דקאמר מרעהו ולא מהקדש נפקא ופירש איש לא מיותר דגזבר נמי מקרי איש ולא משתמע כלל מאיש למעוטי דבכל דבר שהוא לשון זכר שייך לשון איש ואשה על נקבה כמו <span class=\"parenthesized\">(שמות כ״ו:ג׳)</span> אשה אל אחותה והא דאמרינן הכא מבית האיש ולא מבית הקדש כדנפקא מרעהו ומשום דהא קרא וגונב מיירי בתשלומין מייתי לה:"
+  },
+  "Tosafot on Bekhorot 11a:18:1": {
+    "dependsOn": [
+      "Bekhorot 11a:18",
+      "Bekhorot 9a:6",
+      "Rashi on Bekhorot 9a:6:3"
+    ],
+    "generatedAt": "2026-11-05T20:15:54.417Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 11a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהיו לו עשרה ספק [פטרי] חמורים מפריש עשרה שיין ומעשרן והן שלו</strong> - לפר\"ת דמפרש לעיל פודה וחוזר אפילו פעמים הרבה אספיקות קאי קשה למה לי עשרה שיין בשה אחד סגי אבל לפירוש <span class=\"rashi-quotation\">הקונטרס</span> דאינו חוזר ופודה אלא אם כן נתנו לכהן וחוזר ולקחן ניחא ומיהו לפירושו נמי קשה ההיא דלקמן ישראל שהיו לו י' פטרי חמורין ודאין בתוך ביתו שנפלו לו מבית אבי אמו כהן ואותו אבי אמו כהן נפלו לו מבית אבי אמו ישראל מפריש עליהן עשרה שיין והן שלו התם למה לי עשרה בחד סגי שמן הדין הן שלו אע\"פ שהן ודאין אם כן בכל פעם ופעם חשוב כאילו נתנו לכהן וחזר ולקחן דמכח אבי אמו כהן הוא יורש ונראה דבכל הני דנקט עשר' לרבותא אע\"ג שכולן פטר חמור כולן נכנסין לדיר להתעשר:"
+  },
+  "Tosafot on Bekhorot 11a:2:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 11a:2:1",
+      "Rashi on Bekhorot 11a:2:2",
+      "Rashi on Bekhorot 11a:2:3",
+      "Rashi on Bekhorot 11a:2:4",
+      "Bekhorot 11a:2",
+      "Steinsaltz comment #1 on Bekhorot 11a:2",
+      "Steinsaltz comment #2 on Bekhorot 11a:2",
+      "Steinsaltz comment #3 on Bekhorot 11a:2"
+    ],
+    "generatedAt": "2026-11-05T19:38:46.186Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 11a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רבא אף אנן נמי תנינא גדול וקטן</strong> - יש ספרים דגרסי תנינא וקושיא היא זו:"
+  },
+  "Tosafot on Bekhorot 11a:5:1": {
+    "dependsOn": [
+      "Rashi on Bekhorot 11a:5:1",
+      "Rosh on Bekhorot 1:12:1",
+      "Jastrow, רָגִיל ² 1",
+      "Jastrow, רִגְיָא 1",
+      "Jastrow, רְגַל 1",
+      "Steinsaltz on Bekhorot 11a:5",
+      "Steinsaltz comment #1 on Bekhorot 11a:5",
+      "Bekhorot 11a:5",
+      "Rashi on Bekhorot 11a:6:1",
+      "Rashi on Bekhorot 11a:6:2",
+      "Rashi on Bekhorot 11a:6:3",
+      "Tosafot on Bekhorot 11a:2:1",
+      "Shulchan Arukh, Yoreh De'ah 321:5",
+      "Mishneh Torah, First Fruits and other Gifts to Priests Outside the Sanctuary 12:12"
+    ],
+    "generatedAt": "2026-11-05T19:50:03.957Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bekhorot 11a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והלכתא ברגיא</strong> - בבא לימלך מוקמי ליה שמורים לפדותו בשה שוה שלשה זוזים רגיל הכא אבל בעצמו אפילו בפטרוזא בת דנקא ואם אין לו שה לפדותו פודה בשויו ואפי' בשלקי וכד פריק ליה מברך על פדיון פטר חמור ולא בשעת נתינה לכהן דמעידנא דאפרשיה ברשותיה דכהן קאי כדאמר לקמן בשמעתין<span class=\"parenthesized\">(:)</span> ושה בין מכבשים בין מעזים בין זכר בין נקבה בין גדול בין קטן כדתנן במתניתין:"
+  }
+}
