@@ -254,6 +254,163 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">מאי לאו קושר</strong> - עשה הגדיל בזו ובזו ואחר כך פסק אמצעה ונעשו שתים ואע\"פ שנעשו בפסול דכולה קודם שנפסקה חוט אחד הוא:"
   },
+  "Rashi on Sukkah 11a:1:1": {
+    "dependsOn": [
+      "Sukkah 11a:1"
+    ],
+    "generatedAt": "2026-11-05T19:22:41.841Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 11a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג ובית נמי אע\"ג דלא גבוה עשרה כיון דקביע הוי אוהלא דלא גרע מקינופות</strong> - והך מלתא שמעתא באפי נפשה הוא דלא תימא בית ככילה דאי לא גבוה לישתרי להוציא ראשו חוץ לחלון:"
+  },
+  "Rashi on Sukkah 11a:2:1": {
+    "dependsOn": [
+      "Sukkah 11a:2",
+      "Rashi on Sukkah 10a:13:5",
+      "Rashi on Sukkah 10a:13:1",
+      "Rashi on Sukkah 10a:13:2",
+      "Rashi on Sukkah 10a:13:3",
+      "Rashi on Sukkah 10a:13:4"
+    ],
+    "generatedAt": "2026-11-05T19:24:12.671Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 11a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כילת חתנים</strong> - אינה כשאר כילה ואין עושין לה גג והיא סביבות המטה וגגה משופע כשל נקליטין:"
+  },
+  "Rashi on Sukkah 11a:5:1": {
+    "dependsOn": [
+      "Sukkah 11a:5",
+      "Rashi on Sukkah 11a:5:1",
+      "Rashi on Sukkah 11a:5:2",
+      "Rashi on Sukkah 11a:5:3",
+      "Sukkah 11a:1",
+      "Rashi on Sukkah 11a:1:1",
+      "Rashi on Sukkah 10a:1:1",
+      "Rashi on Sukkah 10b:1:1"
+    ],
+    "generatedAt": "2026-11-05T19:27:19.998Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 11a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליהוי כקינופות</strong> - וליפסלא אף בפחות מי':"
+  },
+  "Rashi on Sukkah 11a:5:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 11a:5:1",
+      "Rashi on Sukkah 11a:5:2",
+      "Rashi on Sukkah 11a:5:3",
+      "Sukkah 11a:5",
+      "Rashi on Sukkah 11a:1:1",
+      "Rashi on Sukkah 11a:2:1",
+      "Rashi on Sukkah 10b:11:1",
+      "Rashi on Sukkah 10b:12:1"
+    ],
+    "generatedAt": "2026-11-05T19:29:53.059Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 11a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לגבי קינופות לא קביעי</strong> - לחשוב כמותה ליפסול אף בפחות מי':"
+  },
+  "Rashi on Sukkah 11a:5:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 11a:5:1",
+      "Rashi on Sukkah 11a:5:2"
+    ],
+    "generatedAt": "2026-11-05T19:30:38.355Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 11a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לגבי כילה קביעי</strong> - הלכך אינהו פסלי בי' אפילו לית להו גג וכילה לא פסלה אפילו בי' כי לית לה גג:"
+  },
+  "Rashi on Sukkah 11a:6:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 11a:6:1",
+      "Rashi on Sukkah 11a:6:2",
+      "Rashi on Sukkah 11a:5:1",
+      "Rashi on Sukkah 11a:5:2",
+      "Rashi on Sukkah 11a:5:3",
+      "Rashi on Sukkah 10a:1:1",
+      "Rashi on Sukkah 10b:1:1",
+      "Rashi on Sukkah 2a:1:1",
+      "Tosafot on Sukkah 2a:14:1",
+      "Rashi on Sukkah 2a:5:2"
+    ],
+    "generatedAt": "2026-11-05T19:34:35.000Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 11a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כר' יהודה</strong> - לקמן מפרש בפרק הישן:"
+  },
+  "Rashi on Sukkah 11a:6:2": {
+    "dependsOn": [
+      "Translation on Rashi on Sukkah 11a:6:2"
+    ],
+    "generatedAt": "2026-11-05T19:35:10.931Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 11a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נוהגים היינו ישנים תחת המטה</strong> - דמטה לגבי סוכה אהל עראי הוא שמסלקין אותה ממקום למקום:"
+  },
+  "Rashi on Sukkah 11a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T19:38:30.103Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 11a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלגבה עשויה</strong> - לשכב על גבה ולא תחתיה להיות לו אהל הלכך לאו שם אהל עליה וטעמא לאו משום עראי הוא אלא לאו שמה אהל:"
+  },
+  "Rashi on Sukkah 11a:8:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 11a:8:1"
+    ],
+    "generatedAt": "2026-11-05T19:39:18.921Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 11a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל כילה דלתוכה עשויה</strong> - ולאהל הלכך שם אהל עליה ואע\"ג דעראי הוא לא מיפקע שמיה קמ\"ל רבה דטעמא דרבי יהודה התם כו':"
+  },
+  "Rashi on Sukkah 11a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T19:40:08.001Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 11a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הדלה</strong> - טרלי\"ד בלע\"ז:"
+  },
+  "Rashi on Sukkah 11a:9:2": {
+    "dependsOn": [
+      "Jastrow, קִיסוֹס 1"
+    ],
+    "generatedAt": "2026-11-05T19:41:55.651Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 11a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קיסוס</strong> - איר\"א בלע\"ז והוא נדלה כגפן:"
+  },
   "Rashi on Sukkah 11a:9:3": {
     "dependsOn": [
       "Rashi on Sukkah 11a:9:3",
@@ -405,5 +562,31 @@
       "Tosafot on Sukkah 11a:13:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">פסיקתן זו היא עשייתן</strong> - גרע עשאה מן הקוצים ומן הגרדין דלעיל <span class=\"parenthesized\">(סוכה דף ט.)</span> דאף על פי שעושין אחרי כן הציצית לגמרי לא חשבינן ליה עשייתן משום דבעינן תלייה לשם מצוה:"
+  },
+  "Tosafot on Sukkah 11a:5:1": {
+    "dependsOn": [
+      "Sukkah 11a:5",
+      "Chidushei Halachot on Sukkah 11a:1"
+    ],
+    "generatedAt": "2026-11-05T19:31:58.621Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 11a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי קביעי להוי כקינופות</strong> - אע\"פ שזה יש לה גג וזה אין לה גג מ\"מ לא חשיב גג כיון דאין גבוהין עשרה ובשניהם אית ביה חדא לריעותא דנקליטין אין לה גג וגבוה עשרה וקינופות יש לה גג ואין גבוהים י':"
+  },
+  "Tosafot on Sukkah 11a:6:1": {
+    "dependsOn": [
+      "Sukkah 19b:5",
+      "Sukkah 26a:8"
+    ],
+    "generatedAt": "2026-11-05T19:37:45.161Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 11a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מותר לישן בכילת חתנים בסוכה אע״פ שיש לה גג ואע״פ שגבוהה עשרה</strong> - אין הלכה כן דאמרינן בסוף פירקין <span class=\"parenthesized\">(סוכה דף יט:)</span> אביי אשכחיה לרב יוסף דגני בכילת חתנים בסוכה אמר כמאן כר״א משמע דלא שרי אלא בלא גג ואמר בפרק הישן <span class=\"parenthesized\">(לקמן סוכה דף כו.)</span> רב שרא ליה לרב אחא ברדלא למיגני בכילת חתנים בסוכה משום בקי כלומר דמצטער פטור מן הסוכה משמע דהא לאו הכי אסור בשיש לה גג או כאידך לישנא דשמואל בגבוה עשרה ואע״פ שאין לה גג:"
   }
 }

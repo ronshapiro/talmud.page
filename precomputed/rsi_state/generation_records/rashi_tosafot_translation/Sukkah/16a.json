@@ -1,0 +1,401 @@
+{
+  "Rashi on Sukkah 16a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T00:04:02.288Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 16a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בור שבין שתי חצירות</strong> - חציו בחצר זו וחציו בחצר זו ומחיצה בין החצירות ומהלכת ותלויה על פי הבור ואין פתח ביניהם לערב זו עם זו:"
+  },
+  "Rashi on Sukkah 16a:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T00:04:23.094Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 16a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין ממלאין ממנה</strong> - לא זו ולא זו לפי שמימי חצר זו מביא לזו:"
+  },
+  "Rashi on Sukkah 16a:11:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 16a:11:1",
+      "Rashi on Sukkah 16a:11:2",
+      "Rashi on Sukkah 16a:11:3",
+      "Rashi on Sukkah 16a:11:4"
+    ],
+    "generatedAt": "2026-11-06T00:04:53.304Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 16a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בין מלמטה</strong> - סמוך למים:"
+  },
+  "Rashi on Sukkah 16a:11:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 16a:11:1",
+      "Rashi on Sukkah 16a:11:2",
+      "Rashi on Sukkah 16a:11:3",
+      "Rashi on Eruvin 86a:10:4",
+      "Rashi on Eruvin 86a:11:1"
+    ],
+    "generatedAt": "2026-11-06T00:06:16.513Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 16a:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בין מתוך אוגנו</strong> - כלומר בין מלמעלה רחוק מן המים ובלבד שתהא בתוך אוגן של בור דמוכחא מילתא דבשביל אוגן המים נעשית ומפרשינן טעמא בעירובין שמחיצה תלויה מתרת במים דקל הוא שהקילו חכמים במים אבל מחיצה החוצצת את החצירות ומהלכת ע\"פ הבור שלא נעשה בשביל המים אינה מתרת דאין מחיצה תלויה מתרת במים אלא הנעשית בשביל להתיר מלוי המים כגון גזוזטרא שלמעלה מן הים דתנן בעירובין <span class=\"parenthesized\">(דף פז:)</span> דעושין לה מחיצה תלוי' וכגון זו שבתוך אוגן הבור:"
+  },
+  "Rashi on Sukkah 16a:1:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 16a:1:2"
+    ],
+    "generatedAt": "2026-11-05T23:16:47.487Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 16a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חבילה</strong> - ביחד:"
+  },
+  "Rashi on Sukkah 16a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T23:17:12.360Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 16a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומטהרת חבילה</strong> - אם טמאה היא אין טבילה עולה לה אברים אברים אלא מתקנה ומטבילה:"
+  },
+  "Rashi on Sukkah 16a:2:1": {
+    "dependsOn": [
+      "Sukkah 16a:2",
+      "Rashi on Sukkah 16a:2:2"
+    ],
+    "generatedAt": "2026-11-05T23:33:06.892Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 16a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למסמכינהו אגודא</strong> - לקרבן אצל הכותל הרחב כמלא רוחב מטה ונותן עצים מן הכרעים ולכותל למראשותיה ולמרגלותיה:"
+  },
+  "Rashi on Sukkah 16a:2:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 16a:2:1"
+    ],
+    "generatedAt": "2026-11-05T23:33:51.967Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 16a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומשדא אשלי</strong> - ונותן חבלים ומסרג וראויה למשכב ומטמא מדרס:"
+  },
+  "Rashi on Sukkah 16a:4:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 16a:4:2",
+      "Rashi on Sukkah 16a:4:3",
+      "Sukkah 16a:4",
+      "Rashi on Sukkah 16a:2:1",
+      "Rashi on Sukkah 16a:2:2"
+    ],
+    "generatedAt": "2026-11-05T23:41:21.079Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 16a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיפא</strong> - לישק\"א:"
+  },
+  "Rashi on Sukkah 16a:4:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 16a:4:1",
+      "Steinsaltz on Sukkah 16a:4",
+      "Rashi on Sukkah 16a:4:3",
+      "Rashi on Sukkah 16a:4:4",
+      "Rashi on Sukkah 16a:4:5"
+    ],
+    "generatedAt": "2026-11-05T23:44:55.414Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 16a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושל גמי</strong> - יונ\"ק:"
+  },
+  "Rashi on Sukkah 16a:4:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 16a:4:1",
+      "Rashi on Sukkah 16a:4:2",
+      "Rashi on Sukkah 16a:4:3",
+      "Rashi on Sukkah 16a:4:4",
+      "Rashi on Sukkah 16a:4:5",
+      "Steinsaltz on Sukkah 16a:4"
+    ],
+    "generatedAt": "2026-11-05T23:45:53.481Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 16a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיריה</strong> - כגון נפחתה ונשתייר בה:"
+  },
+  "Rashi on Sukkah 16a:4:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 16a:4:1",
+      "Rashi on Sukkah 16a:4:2",
+      "Rashi on Sukkah 16a:4:3",
+      "Rashi on Sukkah 16a:4:4",
+      "Rashi on Sukkah 16a:4:5",
+      "Tosafot on Sukkah 15b:4:1",
+      "Tosafot on Sukkah 16a:1:1",
+      "Tosafot on Sukkah 2a:4:1",
+      "Mishnah Kelim 27:2",
+      "Rashi on Sukkah 2a:1:1",
+      "Rashi on Sukkah 2a:1:2",
+      "Rashi on Sukkah 2a:1:3"
+    ],
+    "generatedAt": "2026-11-05T23:49:27.411Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 16a:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אע\"פ</strong> - שפחותה עכשיו מכשיעור לטומאה דתנן <span class=\"parenthesized\">(כלים פ' כ\"ז מ\"ב)</span> מפץ ששה על ששה:"
+  },
+  "Rashi on Sukkah 16a:4:5": {
+    "dependsOn": [
+      "Rashi on Sukkah 16a:4:1",
+      "Rashi on Sukkah 16a:4:2",
+      "Rashi on Sukkah 16a:4:3",
+      "Rashi on Sukkah 16a:4:4",
+      "Steinsaltz on Sukkah 16a:4:1",
+      "Steinsaltz on Sukkah 16a:4"
+    ],
+    "generatedAt": "2026-11-05T23:50:27.120Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 16a:4:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מסככין</strong> - הואיל ומכלי קאתו ותחלתה היתה מקבלת טומאת משכב הזב והנדה:"
+  },
+  "Rashi on Sukkah 16a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T23:50:48.597Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 16a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גדולה מסככין בה</strong> - דלאו כלי הוא דסתמא לסיכוך:"
+  },
+  "Rashi on Sukkah 16a:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T23:51:19.270Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 16a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף היא מקבלת טומאה</strong> - קסבר סתמא לשכיבה וכלי היא:"
+  },
+  "Rashi on Sukkah 16a:6:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 16a:6:2"
+    ],
+    "generatedAt": "2026-11-05T23:52:22.205Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 16a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא שאין שם חלל טפח</strong> - גובה במשך אורך ורחב שבעה טפחים כשיעור סוכה ואח\"כ הגדיש כל הגדיש על אותו חלל דעכשיו נעשה שם סכך מאליו ולא היה עליו שם סכך מתחילה:"
+  },
+  "Rashi on Sukkah 16a:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T23:53:25.880Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 16a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל אם יש שם כו'</strong> - חלל טפח אהל הוא נמצא שם סכך על אותו גדיש וכשחוטט בו מלמטה למעלה עד שמגביה את החלל לשיעור גובה עשרה אין זו עשייתו שהרי אינו מתקן אלא הדפנות ובדפנות לא אמרינן תעשה ולא מן העשוי והרי היא כסוכה שפחותה מעשרה וחקק בה והשלימה לעשרה:"
+  },
+  "Rashi on Sukkah 16a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T23:57:36.157Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 16a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איכא דרמי לה מירמא</strong> - לא מתני להא דרב הונא בלשון לא שנו ולפרושי מתני' אלא רמי מתני' מירמ' אברייתא ודרב הונא אשנויא אתמר:"
+  },
+  "Rashi on Sukkah 16a:9:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 16a:9:1"
+    ],
+    "generatedAt": "2026-11-05T23:58:15.224Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 16a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המשלשל</strong> - כל מלמעלה למטה קרי שלשול:"
+  },
+  "Rashi on Sukkah 16a:9:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 16a:9:1",
+      "Rashi on Sukkah 16a:4:1",
+      "Rashi on Sukkah 16a:4:2"
+    ],
+    "generatedAt": "2026-11-05T23:59:03.742Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 16a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מלמעלה למטה</strong> - שהתחיל לארוג המחיצה אצל הסכך ואורג ובא כלפי מטה:"
+  },
+  "Rashi on Sukkah 16a:9:3": {
+    "dependsOn": [
+      "Sukkah 16a:9",
+      "Rashi on Sukkah 16a:9:1",
+      "Rashi on Sukkah 16a:9:2",
+      "Rashi on Sukkah 16a:9:4",
+      "Rashi on Shabbat 97a:18:2",
+      "Rashi on Shabbat 97a:18:3",
+      "Shabbat 97a:18",
+      "Shabbat 97a:19",
+      "Rashi on Eruvin 16a:3:3",
+      "Eruvin 16a:3"
+    ],
+    "generatedAt": "2026-11-06T00:02:03.334Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 16a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלשה טפחים פסולה</strong> - דהיינו כדי שיזדקר הגדי בבת ראש דאמרן פסולה:"
+  },
+  "Rashi on Sukkah 16a:9:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T00:02:33.126Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 16a:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מלמטה למעלה</strong> - שהתחיל לארוג מלמטה סמוך לקרקע ומגביה ועולה כיון שהגביה עשרה כשרה ואף על פי שלא הגיע לסכך:"
+  },
+  "Rashi on Sukkah 16a:9:5": {
+    "dependsOn": [
+      "Rashi on Sukkah 16a:9:1",
+      "Rashi on Sukkah 16a:9:2",
+      "Rashi on Sukkah 16a:9:3",
+      "Rashi on Sukkah 16a:9:4",
+      "Rashi on Sukkah 16a:9:5",
+      "Rashi on Sukkah 16a:9:6"
+    ],
+    "generatedAt": "2026-11-06T00:03:06.582Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 16a:9:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי יוסי אומר כשם שמלמטה למעלה</strong> - דיו באריגת י':"
+  },
+  "Rashi on Sukkah 16a:9:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T00:03:34.727Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 16a:9:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כך מלמעלה למטה</strong> - דיו באריגת עשרה ואפילו גבוהה הרבה מן הארץ כשרה וקסבר מחיצה תלויה עשרה מתרת:"
+  },
+  "Tosafot on Sukkah 16a:11:1": {
+    "dependsOn": [
+      "Sukkah 16a:11",
+      "Maharsha: Chidushei Halachot on Sukkah 16a:2",
+      "Rashi on Sukkah 16a:11:1",
+      "Rashi on Sukkah 16a:11:2",
+      "Rashi on Sukkah 16a:11:3",
+      "Rashi on Sukkah 16a:11:4",
+      "Eruvin 86a:1-5",
+      "Eruvin 86a:12",
+      "Mishnah Eruvin 8:6",
+      "Eruvin 86a:10"
+    ],
+    "generatedAt": "2026-11-06T00:09:19.892Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 16a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בין מלמטה בין מתוך אוגנו</strong> - ויש ספרים שכתוב בהן בין מלמטה מתוך אוגנו ולא יתכן דאם כן מלמעלה היינו חוץ לבור דאי בתוך הבור סמוך לשפתו היינו מתוך אוגנו ואם כן היינו כותל שביניהן דקאמר ר\"י שמפסיקין בין שתי החצרות ומהלכת על פי הבור ועוד דאם כן לא הוי למעלה דת\"ק כגון למעלה דרבן שמעון בן גמליאל דפליגי אמוראי פרק כיצד משתתפין <span class=\"parenthesized\">(עירובין דף פו.)</span> דרב הונא אמר למטה למטה ממש למעלה למעלה ממש וזה וזה בבור ורב יהודה אומר למטה למטה מן המים [למעלה למעלה מן המים]:"
+  },
+  "Tosafot on Sukkah 16a:1:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 16a:1:1",
+      "Rashi on Sukkah 16a:1:2"
+    ],
+    "generatedAt": "2026-11-05T23:23:08.905Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 16a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מטה מטמאת חבילה</strong> - משנה היא פרק י\"ח דכלים ומטמאת חבילה כשהיא מחוברת יחד אבל נתפרקה אבר אבר אינה מקבלת טומאה אפילו בקצרה ושתי כרעים ומכל מקום מודה רבי אליעזר שאם נתפרקה וחזר וחיברה חוזרת לטומאתה כדקאמר ומטהרת חבילה אם טמאה היא אין טבילה עולה לה אברים אברים אלא מתקנה ומטבילה וחכמים אומרים מטמאת אברים כדמסיק בארוכה ושתי כרעים כן ריהטא דמתני' דכלים לכאורה אבל בתוספתא דכלים לא משמע הכי דתניא כיצד כרע שפירשה מן הארוכה עם הקצרה רבי אליעזר אומר הרי זה חיבור ואם הטבילה אינה חוצצת וחכמים אומרים אינו חיבור ואם הטבילה חוצצת ולפי שיטת התוספ' הכי פירושא דמתני' ומטמאת חבילה דכשם כשכולה שלימה אם נטמא אחד מאבריה נטמאת כולה כך נמי כשפירש הכרע מן הארוכה ועומדת עם הקצרה חיבור הוא ואם נטמאת הכרע נטמאת הקצרה והיינו דקתני בתוספתא רבי אליעזר אומר הרי זה חיבור ומטהרת חבילה אם הטביל הכרע והקצרה ביחד אין הקצרה חוצצת עליה כי היכא דלא חייצא במטביל את השלימה וחכמים אומרים מיטמאת אברים ולא חבילה ואם נטמאת הכרע היא טמאה ולא קצרה ואינה חיבור כשלימה והיינו זה דקתני בתוספתא וחכ\"א אינה חיבור ומטהרת אברים מטביל הכרע בפני עצמה ולא חבילה הכרע עם הקצרה שהקצרה חוצצת עליה ואינה כשלימה דהמטביל מטה שלימה אע\"פ שלא פירקה טהורה:"
+  },
+  "Tosafot on Sukkah 16a:1:2": {
+    "dependsOn": [
+      "Tosafot on Sukkah 16a:1:2"
+    ],
+    "generatedAt": "2026-11-05T23:31:29.225Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 16a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומטהרת חבילה</strong> - משמע דפשוטי כלי עץ טמאין כגון מטה דחזיא למדרסות ואית להו טהרה במקוה והא דמשמע פרק רבי עקיבא <span class=\"parenthesized\">(שבת דף פד. ושם)</span> דמפץ אין לה טהרה במקוה אומר ר\"ת דהתם בשל שיפא ושל גמי והא דאמרינן פ' כיצד הרגל <span class=\"parenthesized\">(ב\"ק דף כה: ושם)</span> גבי מפץ וקמייתי לה בין לטומאת ערב בין לטומאת שבעה דמשמע שיש לו טהרה לאחר שבעה דאפילו באנו לפרש דלדין טומאת שבעה קאמר כלומר להיות אב הטומאה משום דאין לך דבר הטמא טומאת שבעה אלא אם כן הוא אב הטומאה מכל מקום אי לית ליה טהרה במקוה אין יכול ליעשות אב הטומאה כדמוכח בשילהי עירובין <span class=\"parenthesized\">(דף קד:)</span> אלא צריך לומר דההיא ברייתא דמפץ במת מנין משמע דמיירי ליה בכל מפץ בין בשל עץ כגון מחצלת של קנים בין בשל שיפא וגמי ודייקינן פרק אמר רבי עקיבא <span class=\"parenthesized\">(שבת דף פד.)</span> ממפץ של שיפא וגמי ובפרק כיצד הרגל <span class=\"parenthesized\">(ב\"ק דף כה:)</span> דייקינן ממפץ של עץ והא דאית להו לפשוטי כלי עץ טהרה במקוה אף על גב דקרא דבמים יובא דבסוף פרשת שמיני כתיב גבי מקבלי כלי עץ דכתיב מכל כלי עץ או בגד או עור או שק מכל מקום נפקא לן מאידך קרא דכתיב בפרשת מדין כל מעשה עזים וכל כלי עץ תתחטאו דליכא למימר מה מעשה עזים מטלטל מלא וריקן דלא שייך למדרש הכי אלא גבי שק שאין דרך לעשותו אלא מלא וריקן שעשוי לשאת בו משאות כדכתיב <span class=\"parenthesized\">(בראשית מ״ב:כ״ה)</span> ולהשיב כספיהם איש אל שקו:"
+  },
+  "Tosafot on Sukkah 16a:3:1": {
+    "dependsOn": [
+      "Steinsaltz on Sukkah 16a:3",
+      "Sukkah 16a:1",
+      "Sukkah 16a:3",
+      "Rashi on Sukkah 16a:4:1",
+      "Zevachim 94a:2",
+      "Tosafot on Sukkah 16a:1:1"
+    ],
+    "generatedAt": "2026-11-05T23:36:22.466Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 16a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלא חזי' לא לעניים ולא לעשירים</strong> - ואפילו חישב עליהן בטלה דעתו והא דמשמע בזבחים פרק דם חטאת <span class=\"parenthesized\">(זבחים דף צד.)</span> דמטלית פחותה משלש על שלש מהניא ביה מחשבה דלא דמי דהתם מחשבתו ניכרת מתוך מעשיו כדפרישית פרק כ\"ח דכלים:"
+  },
+  "Tosafot on Sukkah 16a:6:1": {
+    "dependsOn": [
+      "Sukkah 10a:4",
+      "Sukkah 10a:5"
+    ],
+    "generatedAt": "2026-11-05T23:54:28.811Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 16a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל אם יש שם חלל טפח</strong> - מצינן למימר רב הונא לטעמיה דאמר לעיל <span class=\"parenthesized\">(סוכה דף י.)</span> גבי בין סוכה לסוכה טפח ושמא מאן דאמר התם ארבעה הכא מודה דהא לשמואל דאמר התם עשרה הכא לא שייך:"
+  }
+}

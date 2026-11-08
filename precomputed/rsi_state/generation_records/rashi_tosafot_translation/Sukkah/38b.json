@@ -1,0 +1,276 @@
+{
+  "Rashi on Sukkah 38b:1:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 38b:1:1"
+    ],
+    "generatedAt": "2026-11-07T11:32:42.942Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 38b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלכתא גיברתא</strong> - הלכות גדולות:"
+  },
+  "Rashi on Sukkah 38b:1:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 38b:1:1",
+      "Rashi on Sukkah 38b:1:3",
+      "Rashi on Sukkah 38b:2:1",
+      "Rashi on Sukkah 38b:4:1",
+      "Sukkah 38b:2"
+    ],
+    "generatedAt": "2026-11-07T11:34:39.185Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 38b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ממנהגא דהלילא</strong> - ממה שאנו רואים שנוהגין עכשיו בימינו בבתי כנסיות כדמפרש ואזיל שהיו נוהגין לענות הללויה שתי פעמים ולא יותר ואומרים כל ההלל עם המקרא עד הודו ועונין הודו אחריו וחוזרין וקורין עמו עד אנא ועונין אנא הושיעה נא ואנא הצליחה נא אחריו כמו שאנו עושין ואין זו כקריאת הראשונים שהיו עונים הללויה על כל דבר כדאמרינן במתניתין דהכא ובסוטה <span class=\"parenthesized\">(דף ל:)</span> ואמר רבא ממנהג של עכשיו אנו למדים מהו עיקר קריאת הלל כשתיקנוהו תחילה לפי שהכל חייבין בקריאתו ואין הכל בקיאין בו תקנו אחד קורא ואחרים שומעים והכל עונים מקצת ועכשיו שכל בני כנסיותינו בקיאין וקורין אותו כולו ואעפ\"כ עונין שתי פעמים הללויה והודו לה' ואנא מכאן אנו יכולים ללמוד מה תקנו הראשונים לענות למי שאין בקיאין ולבקיאין:"
+  },
+  "Rashi on Sukkah 38b:1:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 38b:1:1",
+      "Rashi on Sukkah 38b:1:2"
+    ],
+    "generatedAt": "2026-11-07T11:35:56.906Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 38b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוא אומר הללויה והן אומרים הללויה מכאן שמצוה לענות הללויה</strong> - ממה שאנו נוהגין שהמקרא פותח בהללויה ואנו שותקין ועונין אחריו הללויה והוא שותק ואין אנו מתחילין לקרות עמו כסדר שאנו גומרים עמו שאר ההלל למדין אנו מכאן שמצוה לענות הללויה בפתיחתו ואפילו לבקיאין:"
+  },
+  "Rashi on Sukkah 38b:2:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 38b:2:2",
+      "Rashi on Sukkah 38b:2:3",
+      "Sukkah 38b:2",
+      "Rashi on Sukkah 38b:1:1",
+      "Rashi on Sukkah 38b:1:2",
+      "Rashi on Sukkah 38b:1:3"
+    ],
+    "generatedAt": "2026-11-07T11:39:57.712Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 38b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוא אומר הללו עבדי ה' והם אומרים הללויה מכאן למי שגדול מקרא שעונה אחריו הללויה</strong> - ממה שנוהגין עכשיו לענות עוד הללויה פעם שניה ושאר הלל קורין כולן עמו אנו למידין תקנה הראשונה מי שאינו בקי או בקי ואינו גומרו אלא סומך על המקרא דיו לענות הללויה על כל דבר ודבר ולפיכך החזיקו עכשיו במנהג הזה לסמוך בהללו עבדי ה' על המקרא ולענות הללויה לדעת תקנה ראשונה ולא תשתכח שמותר בכל הלל לסמוך עליו ולענות הללויה למי שאינו בקי:"
+  },
+  "Rashi on Sukkah 38b:2:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 38b:2:1",
+      "Rashi on Sukkah 38b:2:3"
+    ],
+    "generatedAt": "2026-11-07T11:40:52.846Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 38b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוא אומר הודו</strong> - והן שותקין ואחר כך עונין:"
+  },
+  "Rashi on Sukkah 38b:2:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T11:43:07.929Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 38b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכאן</strong> - שבראשי פרקים צריכין לענות ראשי פרקים עצמן ולא סגי ליה בהללויה ומיהו אנן דגמרינן כוליה לא צריכינן אלא שבזה החזיקו שלא תשתכח תקנה הראשונה למי שאינו גומר:"
+  },
+  "Rashi on Sukkah 38b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T11:48:51.678Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 38b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוא אומר אנא והם אומרין אחריו אנא</strong> - ואין זה מראשי פרקים בזה החזיקו להיות סימן לעיקר תקנה למי שסומך על המקרא שפעמים שצריך לענות אחריו כל דבר ודבר שהוא אומר והיכי דמי כגון מי שהיה קטן מקרא אותו כדתנן במתניתין:"
+  },
+  "Rashi on Sukkah 38b:4:1": {
+    "dependsOn": [
+      "Sukkah 38b:4",
+      "Rashi on Sukkah 38b:3:1",
+      "Rashi on Sukkah 38b:4:1",
+      "Rashi on Sukkah 38b:4:2"
+    ],
+    "generatedAt": "2026-11-07T11:51:17.920Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 38b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוא אומר אנא ה' הצליחה נא</strong> - והן שומעין ואחר כך עונין סימן זה החזיקו לדעת שהרוצה לכפול את ההלל כופל כמו שזה נכפל שהרי שומע כעונה כדלקמן ואלו שומעין ועונין הרי זו כפילה וכל הני מכאן דקאמר רבא מכאן לקטן המקרא כו' מכאן שאם בא לכפול לאו דווקא דהוא הדין נמי מצי למילף איפכא מאנא הושיעה נא שאם בא לכפול ומאנא הצליחה נא לקטן המקרא אלא אשמעינן שלא על חנם החזיקו אלו שגומרין את ההלל לענות דברים הללו אלא כדי ללמוד מהם תקנות הללו שתקנו נביאים לישראל:"
+  },
+  "Rashi on Sukkah 38b:4:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 38b:4:1"
+    ],
+    "generatedAt": "2026-11-07T11:52:18.817Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 38b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוא אומר ברוך הבא והם אומרים בשם ה'</strong> - וברוך הבא סומכין עליו ואין עונין לא התיבות עצמן ולא הללויה מכאן נלמד לשאינו יודע לא לקרות ולא לענות אם שמע וכיון לבו לשמוע אף על פי שלא ענה יצא וכן למתפללין בצבור ושליח צבור אומר קדיש או יהא שמיה רבא ישתקו בתפלתן וישמעו בכוונה והרי הן כעונין וכשיגמור הקדושה יחזרו לתפלתן וכן יסד רב יהודאי גאון בעל הלכות גדולות:"
+  },
+  "Rashi on Sukkah 38b:5:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 38b:5:2"
+    ],
+    "generatedAt": "2026-11-07T11:52:51.340Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 38b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חכימיא</strong> - כמשמעו:"
+  },
+  "Rashi on Sukkah 38b:5:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 38b:5:1",
+      "Rashi on Sukkah 38b:2:1",
+      "Rashi on Sukkah 38b:2:2",
+      "Rashi on Sukkah 38b:4:1"
+    ],
+    "generatedAt": "2026-11-07T11:53:49.370Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 38b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וספריא</strong> - מלמדי תינוקות:"
+  },
+  "Rashi on Sukkah 38b:6:1": {
+    "dependsOn": [
+      "II Kings 22:16",
+      "Rashi on Sukkah 38b:2:1"
+    ],
+    "generatedAt": "2026-11-07T12:00:00.919Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 38b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אשר קרא המלך וגו'</strong> - בספר שמצא חלקיה הכהן משתעי קרא בספר מלכים <span class=\"parenthesized\">(ב כב)</span>:"
+  },
+  "Rashi on Sukkah 38b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T12:00:47.224Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 38b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא לימא איניש</strong> - מי שאין אחר מקרא אותו לא לימא ברוך הבא וינשים בינתים והדר בשם ה' דלא קיימא אזכרה אמילתא דלעיל ומיחזי כמוציאו לבטלה:"
+  },
+  "Tosafot on Sukkah 38b:1:1": {
+    "dependsOn": [
+      "Tosafot on Sukkah 38b:1:1",
+      "Community Translation on Tosafot on Sukkah 38b:1:1",
+      "Rashi on Sukkah 38b:1:1",
+      "Rashi on Sukkah 38b:1:2",
+      "Rashi on Sukkah 38b:1:3"
+    ],
+    "generatedAt": "2026-11-07T11:37:26.486Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 38b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלכתא גיברתא איכא למשמע ממנהגא דהלילא</strong> - במקום של רבא היו כולם בקיאים בהלל והיו כולם קוראים את ההלל עם שליח צבור כמו שאנו קוראים עכשיו ולא היו סומכים עליו כלל <span class=\"rashi-quotation\">כדפירש בקונטרס</span> אלא שנהגו לשנות בהנך דוכתי דמפרש והולך כדי ללמוד מהן הלכה למעשה לבקי ולמי שאינו בקי וגדול מקרא אותו או קטן ומה שאין אנו נוהגין עכשיו לעשות כן משום דמנהגא קרי ליה <span class=\"parenthesized\">(והיכא דנהוג נהוג)</span> והיכא דלא נהוג לא נהוג:"
+  },
+  "Tosafot on Sukkah 38b:1:2": {
+    "dependsOn": [
+      "Tosafot on Sukkah 38b:1:1"
+    ],
+    "generatedAt": "2026-11-07T11:38:29.813Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 38b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוא אומר הללויה</strong> - שליח צבור והצבור עונין אחריו הללויה והוא שותק עד שיענו והשתא אינו מפרש היאך מברכין שגם הצבור חייבין לברך קודם שיתחילו ושמא כולם מברכין יחד ואף על פי שהצבור שותקין עד שיפתח שליח צבור הללויה אין לחוש בכך:"
+  },
+  "Tosafot on Sukkah 38b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T11:43:49.716Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 38b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכאן שאם היה גדול מקרא אותו עונין אחריו הללויה</strong> - ממתני' שמעינן לה אלא מפרש והולך כל הלכתא דאיכא למשמע ממנהגא:"
+  },
+  "Tosafot on Sukkah 38b:2:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 38b:2:1",
+      "Rashi on Sukkah 38b:2:2",
+      "Rashi on Sukkah 38b:2:3",
+      "Tosafot on Sukkah 38b:2:1",
+      "Sotah 30b:15",
+      "Sotah 30b:16",
+      "Sotah 30b:11",
+      "Rashi on Sotah 30b:11:1",
+      "Sukkah 38b:1",
+      "Sukkah 38b:3",
+      "Sukkah 38b:4",
+      "Tosafot on Sukkah 38b:5:1",
+      "Sukkah 38a:4",
+      "Sukkah 38a:8",
+      "Rashi on Sukkah 38a:8:2",
+      "Rashi on Sukkah 38a:8:3"
+    ],
+    "generatedAt": "2026-11-07T11:48:00.786Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 38b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכאן שמצוה לענות בראשי הפרקים</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> מכאן שבראשי הפרקים צריכין לענות ראשי הפרקים ולא סגי להו בהללויה משמע מתוך פירוש <span class=\"rashi-quotation\">הקונטרס</span> שבראשי פרקים עונין ראשי פרקים ולא יותר ועל כל דבר חוץ מראשי פרקים עונין הללויה עד שיגמור את ההלל וכן פירש במתניתין ובסוף פרק כשם <span class=\"parenthesized\">(סוטה דף ל: ושם)</span> לא משמע הכי דתניא בגמרא כיצד אמרו ישראל שירה כגדול מקרא את ההלל והן עונין אחריו ראשי פרקים משמע שמתחילת הפרק עד סופו עונה ראש <span class=\"parenthesized\">(ראש)</span> פרק על כל דבר ודבר עד סופו וכן פרק שני עונה ראש פרק שני ועל כל דבר ודבר עד סופו וכן כולם כגון הללויה בצאת ישראל ממצרים לא לנו ה' לא לנו אהבתי כי ישמע ה' הללו את ה' כל גוים הודו לה' כי טוב ושמא מתחלת הלל עד הודו פרק אחד מדלא עשה במנהגא דהלילא סימן לדבר עד הודו דבפרק ראשון הבא אחריו היה להם לעשות סימן זה ומה שנוהגין עכשיו ששליח צבור אומר שלשה יאמרו נא והצבור עונין על כל אחד ואחד הודו ולא מצינו מנהג זה בש\"ס מ\"מ נפקי מהנך קראי דשומע כעונה:"
+  },
+  "Tosafot on Sukkah 38b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T11:49:51.599Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 38b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוא אומר אנא ה' הושיעה נא והם אומרים אנא ה' הושיעה נא הוא אומר אנא ה' הצליחה נא וכו'</strong> - ואע\"ג דאמרינן במגילה <span class=\"parenthesized\">(דף כב.)</span> אין מפסיקין בפסוק אלא לתינוקות הכא שאני שאמרוהו שני בני אדם כדאיתא בערבי פסחים <span class=\"parenthesized\">(דף קיט.)</span>:"
+  },
+  "Tosafot on Sukkah 38b:5:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 38b:5:1",
+      "Rashi on Sukkah 38b:5:2",
+      "Tosafot on Berakhot 21b:2:1",
+      "Rashi on Sukkah 38b:3:1",
+      "Rashi on Sukkah 38b:4:1",
+      "Rashi on Sukkah 38b:4:2"
+    ],
+    "generatedAt": "2026-11-07T11:58:34.552Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 38b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמע ולא ענה יצא</strong> - מי שאינו יודע לקרות ולא לענות אם שמע וכיון את לבו לשמוע אף על פי שלא ענה יצא וכן למתפללין בצבור ושליח צבור אומר קדושה או יהא שמיה רבא מברך ישתקו מתפלתן וישמעו והרי הן כעונין ולכשיגמור קדושה יחזרו לתפלתן וכן יסד רב יהודאי גאון בה\"ג <span class=\"rashi-quotation\">כדפירש בקונטרס</span> וקשה מהא דאמרינן פרק מי שמתו <span class=\"parenthesized\">(ברכות דף כא:)</span> אם יכול להתחיל ולגמור עד שלא יגיע שליח צבור לקדושה יתפלל ואם לאו לא יתפלל וי\"א שם כן במודים ולמה לן כולי האי יתפלל כדרכו ולכשיגיע שם ישתוק אלא ודאי אם היה שותק היתה שמיעתו הפסקת תפלתו ומיהו שמא אע\"ג דשומע כעונה מ\"מ עונה עדיף ומצוה מן המובחר:"
+  },
+  "Tosafot on Sukkah 38b:8:1": {
+    "dependsOn": [
+      "Sukkah 38b:8",
+      "Yevamot 106b:6",
+      "Chokhmat Shlomo on Sukkah 38b:6"
+    ],
+    "generatedAt": "2026-11-07T12:03:17.533Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 38b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רבא לא לימא איניש ברוך הבא והדר בשם ה'</strong> - תימה דבסוף מצות חליצה <span class=\"parenthesized\">(יבמות דף קו: ושם)</span> אמר אביי האי מאן דמקרי חליצה לא ליקרי לדידה לא לחודי' ואבה [יבמי] לחודיה דמשמע אבה יבמי אלא לא אבה יבמי בבת אחת ולא ליקרי לדידיה לא לחודיה וחפצתי [לקחתה] לחודיה דמשמע חפצתי לקחתה אלא לא חפצתי לקחתה בפעם אחת אמר רבא אפסוקי מלתא לית לן בה ויש לומר דלבתר דשמע הכי מרב ספרא סברה:"
+  }
+}

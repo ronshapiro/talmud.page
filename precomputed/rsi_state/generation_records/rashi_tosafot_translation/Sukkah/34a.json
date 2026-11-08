@@ -1,0 +1,370 @@
+{
+  "Rashi on Sukkah 34a:10:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 34a:10:1",
+      "Rashi on Sukkah 34a:10:2",
+      "Sukkah 34a:10",
+      "Rashi on Sukkah 34a:9:1",
+      "Steinsaltz on Sukkah 34a:10",
+      "Jastrow, שִׁיפוֹרָא 1",
+      "Jastrow, חֲצוֹצַרְתָּא 1",
+      "Rashi on Shabbat 36a:2:1",
+      "Rashi on Shabbat 36a:2:2",
+      "Rashi on Sukkah 34a:2:1",
+      "Rashi on Sukkah 34a:3:1",
+      "Rashi on Sukkah 34a:6:1"
+    ],
+    "generatedAt": "2026-11-07T04:50:14.073Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 34a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיפורא</strong> - כפוף:"
+  },
+  "Rashi on Sukkah 34a:10:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 34a:10:1",
+      "Steinsaltz on Sukkah 34a:10",
+      "Rashi on Sukkah 34a:9:1",
+      "Rashi on Sukkah 34a:11:1"
+    ],
+    "generatedAt": "2026-11-07T04:51:23.935Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 34a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חצוצרתא</strong> - פשוטה ואינה של איל:"
+  },
+  "Rashi on Sukkah 34a:11:1": {
+    "dependsOn": [
+      "Sukkah 34a:11",
+      "Rashi on Sukkah 34a:9:1",
+      "Rashi on Sukkah 34a:10:1",
+      "Rashi on Sukkah 34a:10:2",
+      "Steinsaltz on Sukkah 34a:11",
+      "Rashi on Sukkah 33b:1:1",
+      "Rashi on Sukkah 33b:2:1"
+    ],
+    "generatedAt": "2026-11-07T04:53:15.174Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 34a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פתורתא פתורא</strong> - האחת גדולה והאחת קטנה ושם היו רגילין לקרות לגדולה חלף קטנה ושל קטנה לגדולה:"
+  },
+  "Rashi on Sukkah 34a:12:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 34a:12:1",
+      "Rashi on Sukkah 34a:12:2",
+      "Sukkah 34a:12"
+    ],
+    "generatedAt": "2026-11-07T04:56:06.523Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 34a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף אני אומר</strong> - אף אני יש בידי עוד אחד שנתחלף שמה:"
+  },
+  "Rashi on Sukkah 34a:12:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 34a:12:1",
+      "Jastrow, הַבְלִילָא 1",
+      "Tosafot on Chullin 50b:11:1",
+      "Rashi on Shabbat 36a:5:2",
+      "Rashi on Shabbat 36a:5:3",
+      "Rashi on Sukkah 34a:6:1",
+      "Rashi on Sukkah 34a:10:1",
+      "Steinsaltz on Sukkah 34a:12",
+      "Rashi on Sukkah 32b:3:1",
+      "Rashi on Sukkah 32b:3:2",
+      "Rashi on Sukkah 32b:3:3"
+    ],
+    "generatedAt": "2026-11-07T04:58:23.182Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 34a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הובלילא</strong> - צנפיי\"ל:"
+  },
+  "Rashi on Sukkah 34a:13:1": {
+    "dependsOn": [
+      "Sukkah 34a:13",
+      "Chullin 50b:2",
+      "Chullin 50b:11",
+      "Rashi on Sukkah 34a:12:1",
+      "Rashi on Sukkah 34a:12:2"
+    ],
+    "generatedAt": "2026-11-07T05:00:17.516Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 34a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בית הכוסות</strong> - סוף הכרס שקורין פנצ\"ה והוא עשוי ככובע וככוס ודופנו סביב <span class=\"parenthesized\">(שפה)</span> לו עבה כשתי דפנות ותניא חולין <span class=\"parenthesized\">(דף נ:)</span> מחט שנמצאת בעובי בית הכוסות מצד אחד תחובה בעוביו ולא ניקב נקב מפולש כשר שהעובי סותמו ומגין משני צדדין שהנקב מפולש טריפה ובאותו שקורין עכשיו בית הכוסות אין חילוק להכשיר מפני שדופנו דק והוא היה רגיל לקרות הובלילא:"
+  },
+  "Rashi on Sukkah 34a:1:1": {
+    "dependsOn": [
+      "Sukkah 34a:1"
+    ],
+    "generatedAt": "2026-11-07T04:09:44.806Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 34a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבא שאול אומר</strong> - ערבי דאמר קרא לא להכשיר של בעל בא אלא ללמדך שצריך שתי מצות של ערבה אחת לאגדה בלולב ואחת למקדש להקיף את המזבח כדאמרינן לקמן בפרק לולב וערבה <span class=\"parenthesized\">(סוכה דף מה.)</span>:"
+  },
+  "Rashi on Sukkah 34a:2:1": {
+    "dependsOn": [
+      "Sukkah 33b:17",
+      "Rashi on Sukkah 33b:15:5"
+    ],
+    "generatedAt": "2026-11-07T04:12:19.689Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 34a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבנן</strong> - דדרשי ערבי להכשיר של בעל ושל הרים למקדש מנא להו:"
+  },
+  "Rashi on Sukkah 34a:2:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 34a:2:1",
+      "Rashi on Sukkah 34a:2:3",
+      "Rashi on Sukkah 34a:2:4",
+      "Tosafot on Sukkah 33b:11:1"
+    ],
+    "generatedAt": "2026-11-07T04:15:11.845Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 34a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עשר נטיעות ערבה ונסוך המים הלכה למשה מסיני</strong> - אלו שלשה נשאלו בבית המדרש מנין להם מן התורה והשיבו שהלכה למשה מסיני הם ושמע השומע וגרסם כסדר ששמעם וכן שיעורים וחציצין ומחיצין <span class=\"parenthesized\">(לעיל סוכה דף ה:)</span> שמען השומע וסדרן כסדר ששמען וכן בכל מקום עשר נטיעות משנה היא בסדר זרעים <span class=\"parenthesized\">(שביעית פ\"א מ\"ו)</span> עשר נטיעות המפוזרות בתוך בית סאה שאין בין זו לזו אלא כמה שיש בין זו לחברתה ותפסו בית סאה שהוא נ' אמה על נ' אמה מפוזרות לאורך ורוחב בשוה חורשין כל בית סאה בשבילן ערב שביעית עד ר\"ה אע\"פ שמצוה מן התורה להוסיף מחול על הקדש כדנפקא לן מבחריש ובקציר תשבות חריש של ערב שביעית הנכנס לשביעית ואסור לחרוש שלשים יום לפני ר\"ה כדאמרי' בשמעתא קמייתא דמועד קטן <span class=\"parenthesized\">(דף ג.)</span> מקראי בנטיעות נאמר למשה מסיני שמותר לחרוש תחתיהם עד ר\"ה כדי שלא יבשו ואם עשר הן ומפוזרות כהלכתן בתוך בית סאה נאמר למשה שיונקות בבית סאה כולה ומותר לחרוש את כולן בשבילן אבל אם אינם עשר או שאינן מפוזרות כהלכתן חורש תחת כל אחת ואחת כשיעור יניקתה לפי חשבון עשר לבית סאה ובאילנות זקנים נאסר ל' יום לפני ר\"ה כדאמרינן במועד קטן <span class=\"parenthesized\">(שם)</span> לר' ישמעאל מהלכתא ולר\"ע מקראי וחכמים עשו סייג לתורה ואסרו בשדה הלבן מפסח ואילך ובשדה האילן בזקנים מעצרת ואילך ואמרו בזקנים מפני שיונקים הרבה שלש אילנות <span class=\"parenthesized\">(ממטע עשרה)</span> לבית סאה הרי אלו מצטרפים וחורשים כל בית סאה בשבילן עד עצרת לפי שכולו צריך להן ויצתה מתורת שדה לבן ונעשית שדה אילן ואם אינם שלש חורש לכל אחד תחתיו לפי חשבון עד עצרת והשאר אסור מפסח ואילך:"
+  },
+  "Rashi on Sukkah 34a:2:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T04:15:50.239Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 34a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ערבה</strong> - למקדש דאילו ערבה ללולב מקרא נפקא:"
+  },
+  "Rashi on Sukkah 34a:2:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T04:17:18.244Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 34a:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וניסוך המים</strong> - לתמידין של שחר שבעת ימי החג כדאמרינן לקמן בפרק לולב וערבה <span class=\"parenthesized\">(סוכה דף מח.)</span> והתם מפרש כיצד מנסכין בין מים בין יין וכל קרבנות כל ימות השנה אין נסכיהם אלא יין חוץ מן החג בתמיד של שחר שצריך שני ניסוכין:"
+  },
+  "Rashi on Sukkah 34a:3:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 34a:3:2",
+      "Sukkah 34a:3",
+      "Sukkah 33b:17"
+    ],
+    "generatedAt": "2026-11-07T04:20:44.358Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 34a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי קראה</strong> - דצפצפה לגריעותא ולא מינא דערבה היא דנרבייה מערבי מכל מקום:"
+  },
+  "Rashi on Sukkah 34a:3:2": {
+    "dependsOn": [
+      "Sukkah 34a:3"
+    ],
+    "generatedAt": "2026-11-07T04:21:50.674Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 34a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קח על מים רבים צפצפה שמו</strong> - כדמפרש ליה ר' אבהו אותו שנשרש ואחוז על מים רבים נעשה צפצפה אלמא גריעותא היא דבתוכחה נאמר ביחזקאל:"
+  },
+  "Rashi on Sukkah 34a:4:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 34a:2:1",
+      "Rashi on Sukkah 34a:3:1",
+      "Rashi on Sukkah 34a:6:1",
+      "Rashi on Sukkah 33b:5:1",
+      "Rashi on Sukkah 30a:4:1",
+      "Maharam on Sukkah 34a:1",
+      "Sukkah 34a:1"
+    ],
+    "generatedAt": "2026-11-07T04:25:06.479Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 34a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ר אבהו</strong> - גרסינן ולא גרסינן אלא ולאו לפרושי טעמא דמתני' אלא מלתא באפי נפשה היא הואיל ואיירי בקרא פרשיה:"
+  },
+  "Rashi on Sukkah 34a:5:1": {
+    "dependsOn": [
+      "Sukkah 34a:5"
+    ],
+    "generatedAt": "2026-11-07T04:38:37.265Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 34a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיכא דמתני להאי קרא אמתני'</strong> - דתנא דמתני' גופיה אייתיה במתני' ולאו ר' זירא והך אתקפתא דאביי מתני לה בר' זירא ותירוצא דא\"כ מאי שמו מתנו לה בלא גברא:"
+  },
+  "Rashi on Sukkah 34a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T04:38:56.550Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 34a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קנה שלה</strong> - עץ שלה:"
+  },
+  "Rashi on Sukkah 34a:6:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 34a:6:1",
+      "Rashi on Sukkah 34a:6:3"
+    ],
+    "generatedAt": "2026-11-07T04:40:03.643Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 34a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ופיה חלק</strong> - חודן של עלין חלק ואינו עשוי פגימות פגימות:"
+  },
+  "Rashi on Sukkah 34a:6:3": {
+    "dependsOn": [
+      "Jastrow, מַגָּל 1",
+      "Jastrow, מַסָּר 1",
+      "Rashi on Sukkah 34a:6:1",
+      "Rashi on Sukkah 34a:6:2",
+      "Rashi on Sukkah 34a:6:4",
+      "Steinsaltz on Sukkah 34a:6",
+      "Steinsaltz comment #1 on Sukkah 34a:6"
+    ],
+    "generatedAt": "2026-11-07T04:42:00.477Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 34a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והתניא דומה למגל כשר</strong> - מגל קציר פגימותיה כולן נוטות לצד אחד עקומות כלפי בית יד שלה. מסר היא מגירה שקורין שיג\"ה ופגימותיה הולכות נוכחו ולהם שני עוקצין אחד מכאן ואחד מכאן כפגימות סכין:"
+  },
+  "Rashi on Sukkah 34a:6:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 34a:6:1",
+      "Rashi on Sukkah 34a:6:2",
+      "Rashi on Sukkah 34a:6:3",
+      "Tosafot on Sukkah 34a:6:1",
+      "Steinsaltz on Sukkah 34a:6",
+      "Sefer HeArukh, Letter Chet 176",
+      "Sukkah 34a:6",
+      "Maharsha on Sukkah 34a:7:1",
+      "Chidushei Halachot on Sukkah 34a:3"
+    ],
+    "generatedAt": "2026-11-07T04:45:31.374Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 34a:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג משכחת לה בחילפא גילא</strong> - ולא גרס ומשכחת לה חילפא גילא מין ערבה כשרה היא ופיה דומה למגל אבל שאר ערבה פיה חלק:"
+  },
+  "Rashi on Sukkah 34a:9:1": {
+    "dependsOn": [
+      "Sukkah 34a:9",
+      "Rashi on Sukkah 34a:6:1",
+      "Rashi on Sukkah 34a:6:2",
+      "Rashi on Sukkah 34a:6:3",
+      "Rashi on Sukkah 34a:6:4"
+    ],
+    "generatedAt": "2026-11-07T04:47:57.307Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 34a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חילפא ערבתא</strong> - לאו היינו חילפא גילא אלא צפצפה ועכשיו נשתנית משמה וקורין לה ערבה:"
+  },
+  "Tosafot on Sukkah 34a:13:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 34a:13:1",
+      "Maharam on Sukkah 34a:5",
+      "Maharam on Sukkah 34a:6",
+      "Chokhmat Shlomo on Sukkah 34a:2",
+      "Chidushei Halachot on Sukkah 34a:2"
+    ],
+    "generatedAt": "2026-11-07T05:06:26.214Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 34a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בית הכוסות</strong> - סוף הכרס שקורין פנצא והוא עשוי ככובע וככוס ותניא מחט שנמצאת בעובי בית הכוסות מצד אחד ולא ניקב נקב מפולש כשרה שהעור סותמו ומגין משני צדדין שהנקב מפולש טרפה ובאותו שקורין עכשיו בית הכוסות אין חילוק להכשיר מפני שדופנו דק והוא היה רגיל לקרות הובלילא <span class=\"rashi-quotation\">כך פי' בקונט'</span> ואם תמצא לומר דאין סברא שיהא טרפה הואיל ולא ניקב אלא חצי העור מצינן למימר דכולו ניקב וחיישינן שמא הבריא כי היכי דחייש בריש אלו טרפות <span class=\"parenthesized\">(חולין דף מג:)</span> גבי ישב לו קוץ בושט למאן דחייש לספק דרוסה והא דתנא התם המסס ובית הכוסות שניקבו לחוץ דמשמע דבעינן נקב מפולש לאו דוקא לחוץ מפולש אלא כלומר כלפי חוץ לאפוקי נקבו זה לתוך זה והא דקא אמרי' בעובי בית הכוסות מצד אחד כשרה צריך לפרש אותו צד מבפנים כלפי הרעי דאי צד חיצון שכלפי חלל הגוף אפי' לא ניקב כלל אלא שנמצאת מחט בחלל הגוף טרפה דאמרינן נקובי נקב ואתאי ואין נראה לר\"ת לומר שתהא טרפה בלא נקב אלא חצי העובי של המסס נמי מצד אחד כשרה והא דנקט עובי בית הכוסות רבותא קמ\"ל אע\"פ שניקב עור אחד שלם אפ\"ה כשרה עד שינקבו שניהם ואיידי דנקט מצד אחד כשרה נקט נמי משני צדדין טריפה אף על פי דמילתא דפשיטא היא אי נמי ס\"ד משני צדדין דניקבו שתי העורות כשרה לפי ששוכב ע\"ג המסס ומדובק שם בשומן ומגין שלא יצא הרעי מידי דהוה אחלחולת שניקבה וירכים מעמידות אותה והא דנפקא מינה הכא במאי דאישתני שמייהו היינו נפקותא דלא תטעה מה שאמר מצד אחד כשרה היינו בהובלילא דהיינו המסס שקורין עכשיו בית הכוסות אבל מה שקורין הובלילא דהיינו מה שהיו רגילין לקרות בית הכוסות אפי' מצד אחד טרפה הואיל וניקב עור שלם וכן שלא נטעה נמי במשני צדדין טרפה דהוי במה שקורין עכשיו בית הכוסות דהוא המסס אבל מה שקורין עכשיו הובלילא דהוא מה שהיו קוראין תחלה בית הכוסות אפי' משני צדדין כשרה כחלחולת שניקבה וירכים מעמידות אותה:"
+  },
+  "Tosafot on Sukkah 34a:1:1": {
+    "dependsOn": [
+      "Tosafot on Sukkah 34a:2:1",
+      "Tosafot on Sukkah 34a:6:1",
+      "Tosafot on Sukkah 34a:13:1",
+      "Tosafot on Sukkah 33b:7:1",
+      "Tosafot on Sukkah 33b:8:1",
+      "Tosafot on Sukkah 32a:4:1",
+      "Rashi on Sukkah 34a:1:1",
+      "Rashi on Sukkah 34a:2:1",
+      "Rashi on Sukkah 34a:2:2",
+      "Gilyon HaShas on Sukkah 34a:1"
+    ],
+    "generatedAt": "2026-11-07T04:11:34.581Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 34a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואחת למקדש</strong> - תימה דכיון דלית ליה הלכתא אימא אף בגבולין דמידי מקדש כתיב בקרא:"
+  },
+  "Tosafot on Sukkah 34a:2:1": {
+    "dependsOn": [
+      "Sukkah 34a:2",
+      "Sukkah 34a:3",
+      "Sukkah 34a:7",
+      "Sukkah 34a:12",
+      "Sukkah 33b:17",
+      "Sukkah 34b:2-3",
+      "Rosh on Sukkah 3:13:2"
+    ],
+    "generatedAt": "2026-11-07T04:19:27.947Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 34a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבנן למקדש מנא להו</strong> - הכי נמי מצי למיבעי לאבא שאול של בעל ושל הרים מנא ליה ושמא לית ליה ולית ליה נמי הא דדרשי רבנן לקמן ערבי נחל שתים אלא סבר ליה כרבי עקיבא דאמר הדס אחד וערבה אחת ואין הלכה כר\"ע כדמוכח לקמן ולפי זה צריך ליזהר שלא ליטול ערבה ללולב אא\"כ גדילה על הנחל דשתי דרשות לא דרשינן מערבי כדדרשינן לקמן וכדדרשינן הכא וכל הני תנאי דהכא ודלקמן מתניא גבי הדדי בתורת כהנים משמע דמר דריש ליה הכי ומר דריש ליה הכי:"
+  },
+  "Tosafot on Sukkah 34a:6:1": {
+    "dependsOn": [
+      "Tosafot on Sukkah 34a:6:1"
+    ],
+    "generatedAt": "2026-11-07T04:46:33.183Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 34a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קנה שלה כו'</strong> - כיון דפירש סימני ערבה הוי סגי אלא להכשיר אף שאין בו ג' סימנים אלו כגון חילפא גילא לפיכך קתני סימני צפצפה למימר דוקא הני:"
+  }
+}

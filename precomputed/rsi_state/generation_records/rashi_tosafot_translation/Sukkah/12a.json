@@ -1,0 +1,476 @@
+{
+  "Rashi on Sukkah 12a:10:1": {
+    "dependsOn": [
+      "Sukkah 12a:10"
+    ],
+    "generatedAt": "2026-11-05T20:18:08.827Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא ידענא הי מינייהו</strong> - פירש לי ר' יוחנן משום גזירת אוצר והי מינייהו משום תעשה ולא מן העשוי:"
+  },
+  "Rashi on Sukkah 12a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T20:18:46.762Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נחזי אנן</strong> - ונשמעה ממה דאמר ר' יוחנן בדוכתא אחריתי:"
+  },
+  "Rashi on Sukkah 12a:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T20:19:22.250Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פעמים שאדם בא מן השדה</strong> - כל ימות החמה:"
+  },
+  "Rashi on Sukkah 12a:11:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 12a:11:1",
+      "Rashi on Sukkah 12a:11:2",
+      "Rashi on Sukkah 12a:11:4",
+      "Rashi on Sukkah 12a:11:5"
+    ],
+    "generatedAt": "2026-11-05T20:21:03.373Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומניחה ע\"ג סוכה</strong> - שיש לו כל ימות השנה למקנהו ומניח החבילין שם לייבשן ולא לסכך וכשמגיע החג נמלך עליהם לסכך:"
+  },
+  "Rashi on Sukkah 12a:11:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 12a:11:1",
+      "Rashi on Sukkah 12a:11:2",
+      "Rashi on Sukkah 12a:11:3",
+      "Rashi on Sukkah 12a:11:5"
+    ],
+    "generatedAt": "2026-11-05T20:22:27.746Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והתורה אמרה תעשה ולא מן העשוי</strong> - בפסול וזה שנסכך שם שלא לשם סכך אפילו לצל אלא לייבש אין שם סוכה חל עליו והלכך גזור רבנן שלא יסככו בחבילין אפילו הוא מטילן עליה לשם סוכת החג גזירה משום חבילין דכל השנה דאיכא פסול דאורייתא אלמא טעמא דמתניתין דהכא משום גזירת אוצר היא ומדרבנן כל דבר שאדם מקצה ומכניס לקיום קרי אוצר וחבילין שאדם מכניס כל ימות הקיץ לימות חורף קרי אוצר:"
+  },
+  "Rashi on Sukkah 12a:11:5": {
+    "dependsOn": [
+      "Sukkah 12a:11",
+      "Rashi on Sukkah 12a:11:1",
+      "Rashi on Sukkah 12a:11:2",
+      "Rashi on Sukkah 12a:11:3",
+      "Rashi on Sukkah 12a:11:4",
+      "Rashi on Sukkah 12a:11:5",
+      "Rashi on Sukkah 12a:9:2",
+      "Rashi on Sukkah 12a:10:1",
+      "Rashi on Sukkah 2a:9:2"
+    ],
+    "generatedAt": "2026-11-05T20:24:30.132Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:11:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומדהא משום גזרת אוצר</strong> - שמע מינה הך דחוטט בגדיש פסולה מדאורייתא משום תעשה ולא מן העשוי היא דהא שמעיה ר' יעקב לר' יוחנן בחדא מינייהו פסולה דאורייתא:"
+  },
+  "Rashi on Sukkah 12a:12:1": {
+    "dependsOn": [
+      "Sukkah 12a:12",
+      "Sukkah 12a:11",
+      "Rashi on Sukkah 12a:12:1",
+      "Rashi on Sukkah 12a:12:2"
+    ],
+    "generatedAt": "2026-11-05T20:26:40.429Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי יעקב</strong> - דלא ידע לפרושי הי מינייהו פסולה דאורייתא והי מדרבנן:"
+  },
+  "Rashi on Sukkah 12a:12:2": {
+    "dependsOn": [
+      "Sukkah 12a:12",
+      "Rashi on Sukkah 12a:12:1"
+    ],
+    "generatedAt": "2026-11-05T20:27:17.599Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הך דרבי חייא</strong> - דמפרש בהדיא לא הוה שמיע ליה:"
+  },
+  "Rashi on Sukkah 12a:13:1": {
+    "dependsOn": [
+      "Sukkah 12a:13",
+      "Sukkah 12a:9",
+      "Rashi on Sukkah 12a:9:1",
+      "Rashi on Sukkah 12a:9:2",
+      "Rashi on Sukkah 12a:10:1",
+      "Rashi on Sukkah 12a:13:1",
+      "Rashi on Sukkah 12a:13:2",
+      "Rashi on Sukkah 12a:13:3"
+    ],
+    "generatedAt": "2026-11-05T20:31:58.745Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רב אשי</strong> - מקשי אדרבי יעקב:"
+  },
+  "Rashi on Sukkah 12a:13:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 12a:13:1",
+      "Rashi on Sukkah 12a:13:3",
+      "Rashi on Sukkah 12a:11:1",
+      "Rashi on Sukkah 12a:11:2",
+      "Rashi on Sukkah 11b:1:1",
+      "Rashi on Sukkah 11b:1:2"
+    ],
+    "generatedAt": "2026-11-05T20:33:10.296Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אטו</strong> - תרוייהו טעמי מי ליכא למימרינהו בשתי המשניות:"
+  },
+  "Rashi on Sukkah 12a:13:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 12a:13:1",
+      "Rashi on Sukkah 12a:13:2",
+      "Rashi on Sukkah 12a:13:3",
+      "Rashi on Sukkah 12a:13:4",
+      "Rashi on Sukkah 12a:13:5"
+    ],
+    "generatedAt": "2026-11-05T20:33:59.460Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חבילי קש משום גזירת אוצר איכא</strong> - מדרבנן:"
+  },
+  "Rashi on Sukkah 12a:13:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 12a:13:1",
+      "Rashi on Sukkah 12a:13:2",
+      "Rashi on Sukkah 12a:13:3",
+      "Rashi on Sukkah 12a:13:5"
+    ],
+    "generatedAt": "2026-11-05T20:37:32.479Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:13:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום תעשה ולא מן העשוי</strong> - דאורייתא ליכא בתמיהה מי לא משתמע נמי מתניתין דבאותם שניתנו שם כל ימות החמה קאמר דלא נמלך עליהם לסיכוך דהויא לה היא גופה פסולה דאורייתא ומהיכא שמע ר' יוחנן דמתניתין דהכא לאו מדאורייתא קאמר:"
+  },
+  "Rashi on Sukkah 12a:13:5": {
+    "dependsOn": [
+      "Rashi on Sukkah 12a:13:1",
+      "Rashi on Sukkah 12a:13:2",
+      "Rashi on Sukkah 12a:13:3",
+      "Rashi on Sukkah 12a:13:4",
+      "Chokhmat Shlomo on Sukkah 12a:3",
+      "Rashi on Sukkah 12a:2:1",
+      "Rashi on Sukkah 12a:2:2",
+      "Rashi on Sukkah 3a:1:1",
+      "Rashi on Sukkah 3a:2:1",
+      "Rashi on Sukkah 12b:1:1",
+      "Rashi on Sukkah 12b:2:1"
+    ],
+    "generatedAt": "2026-11-05T20:39:47.892Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:13:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחוטט בגדיש נמי משום תעשה ולא מן העשוי איכא משום גזירת אוצר ליכא</strong> - מי לא מצינן למימר נמי דאפילו סתר הכל כלפי מעלה ונענע עומרין שעל הסכך וחזר והניחן לשם סוכה קא פסיל ליה מתניתין מדרבנן משום גזירת אוצר דזימנין דלא מנענע ונעשין מאיליהן כדאמרת גבי חבילים דפסלת להו אפילו מניחן שם לשם סכך מדרבנן משום גזרה דכל ימות השנה לאוצר ומהיכא דייק רבי יוחנן הנך טעמי דמוקי להך מדאורייתא והך מדרבנן:"
+  },
+  "Rashi on Sukkah 12a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T20:40:53.396Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר לך</strong> - ר' יוחנן מתניתין גופייהו דייקי כוותאי מתניתין דהכא קתני אין מסככין בהן ולא קתני אינה סוכה משמע מדאורייתא סוכה היא הלכך על כרחך במניחן עכשיו לשם סכך קאמר ומדרבנן ולא בנמלך על המונחין ועומדין דפסולה מדאורייתא וגבי חוטט בגדיש קתני אינה סוכה משמע לגמרי אינה סוכה דפסולה מדאורייתא אלמא בשלא נענע הסכך לשם סוכה קאמר אבל נענע כשר דהא אסיק אדעתיה ותיקן וליכא למיגזר בה משום זימנא אחריתי שהרי המעוות תיקן וכל שכן שלא יעוות:"
+  },
+  "Rashi on Sukkah 12a:2:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 12a:2:2"
+    ],
+    "generatedAt": "2026-11-05T19:43:32.315Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פסולת גורן</strong> - קשין:"
+  },
+  "Rashi on Sukkah 12a:2:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 12a:2:1"
+    ],
+    "generatedAt": "2026-11-05T19:44:09.773Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פסולת יקב</strong> - זמורות ואשכולות ריקנים:"
+  },
+  "Rashi on Sukkah 12a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T19:46:25.977Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גורן עצמו ויקב עצמו</strong> - הקשין עם התבואה ואשכולות עם הענבים דהוה ליה דבר המקבל טומאה האוכל:"
+  },
+  "Rashi on Sukkah 12a:3:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 12a:3:1"
+    ],
+    "generatedAt": "2026-11-05T19:47:04.499Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יקב כתיב</strong> - דמשמע לאחר שנעשה יין:"
+  },
+  "Rashi on Sukkah 12a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T19:47:28.015Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קרוש</strong> - קפוי:"
+  },
+  "Rashi on Sukkah 12a:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T19:47:56.378Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא מילתא הוה בידן</strong> - עד השתא היינו סבורין לידע טעם משנתנו מן המקרא הזה דבפסולת הכתוב מדבר דאי אפשר לסכך ביין:"
+  },
+  "Rashi on Sukkah 12a:4:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T19:48:23.640Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואתא רבי ירמיה</strong> - שהזכיר לנו יין קרוש הבא משניר:"
+  },
+  "Rashi on Sukkah 12a:4:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 12a:4:1",
+      "Rashi on Sukkah 12a:4:2",
+      "Rashi on Sukkah 12a:4:3",
+      "Rashi on Sukkah 12a:4:4"
+    ],
+    "generatedAt": "2026-11-05T19:49:06.948Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושדא ביה נרגא</strong> - קצצה בגרזן כלומר השיב תשובה ניצחת:"
+  },
+  "Rashi on Sukkah 12a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T19:55:02.862Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב אשי אמר</strong> - שפיר משמע פסולת מקרא דכתיב באספך מגרנך משמע שאתה אוספו ונוטלו מן הגורן וגורן הוא האוכל ומה שאתה אוסף ובורר מתוכו הוא הפסולת:"
+  },
+  "Rashi on Sukkah 12a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T19:55:52.256Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צאו ההר</strong> - פסוק הוא בספר עזרא לעשות סוכות ולא הזכיר כאן אלא דבר שאינו מקבל טומאה וגידולו מן הארץ:"
+  },
+  "Rashi on Sukkah 12a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T19:56:42.522Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היינו עלי הדס היינו עץ עבות</strong> - מהו זה ומהו זה להזכיר שניהם במקרא הלא אחד הם דההדס הוא עץ עבות על שם שהעלין מורכבין זה על זה כמין עבותות ושרשרות:"
+  },
+  "Rashi on Sukkah 12a:7:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 12a:7:1"
+    ],
+    "generatedAt": "2026-11-05T19:57:27.852Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הדס שוטה</strong> - שאינו כשר ללולב לפי שאין עבותו עשויה של שלש שלש עלין:"
+  },
+  "Rashi on Sukkah 12a:8:1": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Sukkah 12a:1",
+      "Steinsaltz on Sukkah 12a:8"
+    ],
+    "generatedAt": "2026-11-05T20:05:58.596Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחבילי זרדין</strong> - מין קנים הם שעושין זרדין טוייל\"ש בלע\"ז ואוגדין אותם ובעודן לחין בהמה אוכלתן ולכי יבשי עומדים להיסק:"
+  },
+  "Rashi on Sukkah 12a:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T20:06:21.305Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מסככין בהן</strong> - כשהן קשורין ובגמרא מפרש טעמא:"
+  },
+  "Rashi on Sukkah 12a:8:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 12a:8:1",
+      "Rashi on Sukkah 12a:8:2",
+      "Rashi on Sukkah 12a:8:3",
+      "Rashi on Sukkah 12a:8:4",
+      "Sukkah 12a:8",
+      "Rashi on Sukkah 11b:1:1",
+      "Rashi on Sukkah 11b:2:1",
+      "Rashi on Sukkah 12a:2:1",
+      "Rashi on Sukkah 2a:1:1",
+      "Rashi on Sukkah 2a:1:2"
+    ],
+    "generatedAt": "2026-11-05T20:07:50.102Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכולן</strong> - הפסולין ששנינו בסכך:"
+  },
+  "Rashi on Sukkah 12a:8:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 12a:8:3",
+      "Rashi on Sukkah 12a:8:1",
+      "Rashi on Sukkah 12a:8:2",
+      "Rashi on Sukkah 12a:2:1"
+    ],
+    "generatedAt": "2026-11-05T20:10:07.912Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשרין לדפנות</strong> - דכל סוכה הכתוב סכך משמע דדופן לא איקרי סוכה ודנפקא לן <span class=\"parenthesized\">(לעיל סוכה ד' ו:)</span> דפנות מבסכת בסכת בסכות מייתורא דקראי ילפינן ולא ממשמעותא הלכך סוכות תעשה באספך מגרנך אסככה הוא דקאי:"
+  },
+  "Rashi on Sukkah 12a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T20:12:45.880Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמעית מר' יוחנן תרתי</strong> - פי' טעם שני דברים האמורים במשנתנו שמעתי ממנו:"
+  },
+  "Rashi on Sukkah 12a:9:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 12a:9:1",
+      "Sukkah 12a:9",
+      "Rashi on Sukkah 12a:8:1",
+      "Rashi on Sukkah 12a:8:2",
+      "Rashi on Sukkah 12a:10:1",
+      "Rashi on Sukkah 12a:11:1"
+    ],
+    "generatedAt": "2026-11-05T20:15:13.157Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 12a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חדא הא</strong> - דחבילין מ\"ט לא מסככי בהו וחדא הא דתנן במתניתין החוטט בגדיש לעשות לו סוכה נוטל מן העומרים למטה סמוך לארץ ונכנס לתוכו ועושה חלל כשיעור סוכה וסכך עשוי ועומד מאליו אינו סוכה ופירש לי ר' יוחנן טעמיה בחדא מינייהו אמר טעמא משום גזרת אוצר דמדאורייתא כשרה הוא ורבנן הוא דגזור שאם אתה אומר כן אין אדם עושה סוכה אלא הולך ואוכל וישן באוצרו במקום שלא נשתמש שם כל ימות השנה והוא עשוי ועומד ולא לשם סכך של צל דנהוי שם סוכה עליה ואפילו שם סוכה שאינה של חג אלא כבית בעלמא ובחדא מינייהו פירש טעמא דפסולה מדאורייתא משום תעשה ולא מן העשוי:"
+  },
+  "Tosafot on Sukkah 12a:1:1": {
+    "dependsOn": [
+      "Sukkah 9a:1",
+      "Sukkah 9a:2",
+      "Sukkah 9a:3",
+      "Sukkah 9a:4",
+      "Sukkah 12a:1"
+    ],
+    "generatedAt": "2026-11-05T19:43:03.775Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 12a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי מה חגיגה בעלי חיים</strong> - לעיל <span class=\"parenthesized\">(סוכה דף ט.)</span> גבי הא דילפינן איסור הנאה לא שייך לאקשויי הכי:"
+  },
+  "Tosafot on Sukkah 12a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T19:45:52.719Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 12a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בפסולת גורן ויקב הכתוב מדבר</strong> - רבי יוחנן לא יליף מענני כבוד מפרש בירושלמי דין כדעתיה ודין כדעתיה רבי יוחנן אמר עננים למעלה היו כלומר מן השמים הן באין ואין זה גידולו מן הארץ דקתני מתניתין ור\"ל אמר למטה היו ר' יוחנן מדמי להו כאדם המשלח לחברו חבית וקנקנים וריש לקיש מדמי ליה כמאן דאמר לחבריה שלח קופתך וסב לך חיטין והכי נמי איתא בבראשית רבה <span class=\"parenthesized\">(פרשה יג)</span> ר' יוחנן אמר אין עננים אלא למעלה שנאמר וארו עם ענני שמיא ריש לקיש אמר אין עננים אלא מלמטה שנאמר מעלה נשיאים מקצה הארץ על דעתיה דרבי יוחנן לאחד שכיבד את חבירו בחבית של יין וקנקנים על דעתיה דר\"ל לאחד שאמר לחבירו תן לי סאה חיטין אמר לו הבא לי קופתך ובא מדוד כך אמר הקב\"ה לארץ אייתי ענני וקביל מיטרא:"
+  },
+  "Tosafot on Sukkah 12a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T19:54:20.202Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 12a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רבי זירא הא מלתא הוה וכו' ואתא רבי ירמיה שדא ביה נרגא</strong> - משמע דרבי זירא לא מוקי ליה לקרא בפסולת גורן ותימה דבפ\"ק דר\"ה <span class=\"parenthesized\">(דף יג.)</span> דריש חג האסיף מאי אסיף קציר ופריך רבי חנינא מי מצית אמרת מאי אסיף קציר והכתיב מגרנך ומיקבך בפסולת גורן ויקב הכתוב מדבר אמר רבי זירא הא מלתא הוה בידן ואתא רבי חנינא ושדא ביה נרגא אלמא מודה ר' זירא דבפסולת גורן ויקב הכתוב מדבר וי\"ל דהכא נמי מודה בה רבי זירא ולא קאמר אלא דלא ידע לשנויי קושיא דר' ירמיה:"
+  },
+  "Tosafot on Sukkah 12a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T20:10:59.517Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 12a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חבילי זרדין</strong> - מפרש בירושלמי דאין חבילה פחותה מעשרים וחמשה קנים:"
+  }
+}

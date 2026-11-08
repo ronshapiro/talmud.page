@@ -1,0 +1,415 @@
+{
+  "Rashi on Sukkah 42b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T18:53:22.161Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טלטול בעלמא</strong> - אין בו צד איסור אלא כמטלטל עצים וכיון דמן התורה הוא במקדש כל שבעה למה אסרוהו מה סייג לתורה מצאו בו:"
+  },
+  "Rashi on Sukkah 42b:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T18:53:48.486Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ללמוד</strong> - נענועו או ברכתו:"
+  },
+  "Rashi on Sukkah 42b:1:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 42b:1:1",
+      "Translation on Rashi on Sukkah 42b:1:1",
+      "Rashi on Sukkah 42b:1:2"
+    ],
+    "generatedAt": "2026-11-07T18:07:16.747Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היודע לשחוט</strong> - לאמן ידיו לשחיטה אף על פי שאינו בקי בהלכות שחיטה:"
+  },
+  "Rashi on Sukkah 42b:1:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 42b:1:1"
+    ],
+    "generatedAt": "2026-11-07T18:08:17.891Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מותר לאכול משחיטתו</strong> - כדאמר רב הונא והוא שגדול עומד על גביו וראה שלא שהה ולא דרס:"
+  },
+  "Rashi on Sukkah 42b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T18:10:31.916Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כזית דגן</strong> - כל חמשת המינין קרי דגן חטין ושעורים וכוסמין ושבולת שועל ושיפון:"
+  },
+  "Rashi on Sukkah 42b:2:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 42b:2:1",
+      "Rashi on Sukkah 42b:2:3",
+      "Steinsaltz on Sukkah 42b:2"
+    ],
+    "generatedAt": "2026-11-07T18:11:32.553Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מרחיקין מצואתו</strong> - משאכל כזית מאלו בכל ענין אכילה שצואת מינים הללו מסרחת:"
+  },
+  "Rashi on Sukkah 42b:2:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T18:12:16.902Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ד' אמות</strong> - לענין קריאת שמע ותפלה:"
+  },
+  "Rashi on Sukkah 42b:2:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T18:13:05.751Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42b:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והוא שיכול לאכול כזית זה בכדי אכילת פרס</strong> - לבינוני אבל אם צריך זה הקטן לשהות יותר מכאן הרי הוא כאוכל עכשיו חצי זית ולמחר חצי זית שכן הלכה למשה מסיני שאין אכילה מצטרפת לשהייה ארוכה מזו:"
+  },
+  "Rashi on Sukkah 42b:2:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T18:15:03.924Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42b:2:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פרס</strong> - חצי ככר ששיערו בו חכמים מזון שתי סעודות לעירוב ולשון פרס פלגא כדתנן בעירובין <span class=\"parenthesized\">(דף פב:)</span> חציה לבית המנוגע לבא בבית המנוגע ליטעון כיבוס בגדים שתלאן הכתוב בשהיית שיעור אכילה דכתיב <span class=\"parenthesized\">(ויקרא יד)</span> והאוכל בבית יכבס בגדיו:"
+  },
+  "Rashi on Sukkah 42b:2:6": {
+    "dependsOn": [
+      "Rashi on Sukkah 42b:2:1",
+      "Rashi on Sukkah 42b:2:2",
+      "Rashi on Sukkah 42b:2:3",
+      "Rashi on Sukkah 42b:2:4",
+      "Rashi on Sukkah 42b:2:5",
+      "Rashi on Sukkah 42b:3:1",
+      "Rashi on Sukkah 42b:5:1",
+      "Steinsaltz on Sukkah 42b:2"
+    ],
+    "generatedAt": "2026-11-07T18:24:38.060Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42b:2:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכאוב</strong> - מסריח:"
+  },
+  "Rashi on Sukkah 42b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T18:25:31.638Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שוחטין עליו את הפסח</strong> - ממנין אותו על בני החבורה ואי לא לא דכתיב <span class=\"parenthesized\">(שמות י״ב:ד׳)</span> איש לפי אכלו תכסו הראוי לאכילה:"
+  },
+  "Rashi on Sukkah 42b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T18:27:03.251Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לולב וערבה</strong> - שהן במקדש כל שבעה לולב לנטילה וערבה להקיף מזבח כדלקמן בפירקין <span class=\"parenthesized\">(סוכה דף מה.)</span>:"
+  },
+  "Rashi on Sukkah 42b:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T18:27:43.121Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ששה ושבעה</strong> - פעמים שדוחין שבת והן כל שבעה ופעמים שאין דוחין והוו להו ששה ימים ולקמיה מפרש ואזיל לה:"
+  },
+  "Rashi on Sukkah 42b:5:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T18:28:57.558Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ההלל</strong> - לגמור כל שמונה כן תקנו נביאים הראשונים ובערכין <span class=\"parenthesized\">(דף י.)</span> מפרש מאי שנא מפסח מפני שימי החג חלוקים בקרבנותיהן:"
+  },
+  "Rashi on Sukkah 42b:5:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 42b:5:1",
+      "Rashi on Sukkah 42b:5:2",
+      "Rashi on Sukkah 42b:5:3"
+    ],
+    "generatedAt": "2026-11-07T18:30:45.968Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42b:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והשמחה</strong> - לאכול בשר שלמים דקיימא לן בפסחים <span class=\"parenthesized\">(דף קט.)</span> בזמן שבית המקדש קיים אין שמחה אלא בבשר שנאמר וזבחת שלמים ואכלת שם ושמחת ואף על גב דהאי קרא לאו ברגלים כתיב דהאי קרא בהר גרזים ובהר עיבל כתיב מיהו ברגלים שמחה כתיבא ושמחת בחגך:"
+  },
+  "Rashi on Sukkah 42b:5:5": {
+    "dependsOn": [
+      "Rashi on Sukkah 42b:5:5",
+      "Rashi on Sukkah 42b:5:1",
+      "Rashi on Sukkah 42b:5:2",
+      "Rashi on Sukkah 42b:5:3",
+      "Rashi on Sukkah 42b:5:4",
+      "Rashi on Sukkah 42b:5:6",
+      "Translation on Rashi on Sukkah 42b:5:5",
+      "Rashi on Sukkah 42b:1:1",
+      "Rashi on Sukkah 42b:2:1"
+    ],
+    "generatedAt": "2026-11-07T18:31:50.199Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42b:5:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סוכה</strong> - לישב בסוכה:"
+  },
+  "Rashi on Sukkah 42b:5:6": {
+    "dependsOn": [
+      "Rashi on Sukkah 42b:5:1",
+      "Rashi on Sukkah 42b:5:2",
+      "Rashi on Sukkah 42b:5:3",
+      "Rashi on Sukkah 42b:5:4",
+      "Rashi on Sukkah 42b:5:5",
+      "Rashi on Sukkah 42b:5:7",
+      "Yoma 26b:13",
+      "Yoma 26b:14",
+      "Yoma 26b:15",
+      "Yoma 26b:1",
+      "Yoma 26b:2",
+      "Yoma 26b:3",
+      "Yoma 26b:4"
+    ],
+    "generatedAt": "2026-11-07T18:34:00.827Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42b:5:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ניסוך המים</strong> - בתמידי החג שחרית ולא ערבית כדאמרינן בסדר יומא בפ' שני <span class=\"parenthesized\">(דף כו:)</span>:"
+  },
+  "Rashi on Sukkah 42b:5:7": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T18:34:58.719Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42b:5:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">החליל</strong> - שמחת בית השואבה היו שמחים בחג לכבוד שאיבת ניסוך המים ומחללים בחלילים ובכנורות ואותו חליל אינו דוחה יום טוב הלכך פעמים שהוא חמשה ימים בחג כגון שלא חל יום טוב הראשון בשבת דכיון דלא דחי יום טוב וכל שכן שבת שבחולו של מועד פשו להו חמשה ופעמים שהוא ששה כגון שחל יום טוב ראשון בשבת דפשו להו ששה של חול המועד דבזמן מקדש אין עושין יום טוב שני:"
+  },
+  "Rashi on Sukkah 42b:6:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Sukkah 42b:6:1",
+      "Rashi on Sukkah 42b:6:2",
+      "Rashi on Sukkah 42b:5:1",
+      "Rashi on Sukkah 42b:5:2",
+      "Rashi on Sukkah 42b:1:1",
+      "Rashi on Sukkah 42b:2:1",
+      "Sukkah 43a:7"
+    ],
+    "generatedAt": "2026-11-07T18:39:08.666Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לולב שבעה</strong> - דיום טוב ראשון דחי שבת:"
+  },
+  "Rashi on Sukkah 42b:6:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 42b:6:1",
+      "Rashi on Sukkah 42b:5:7"
+    ],
+    "generatedAt": "2026-11-07T18:40:13.204Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושאר כל הימים</strong> - שחל בהן יום טוב ראשון ונמצאת שבת בחולו של מועד לא דחי ואע\"ג דכל שבעה הוא מן התורה במקדש לא דחי כדאמרינן טעמא בגמרא וכן ערבה בשביעי ובגמרא מפרש מאי שנא שביעי:"
+  },
+  "Rashi on Sukkah 42b:8:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 42b:8:2",
+      "Rashi on Sukkah 42b:8:3"
+    ],
+    "generatedAt": "2026-11-07T18:40:59.451Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מצות לולב</strong> - ביום טוב הראשון שחל להיות בשבת כיצד:"
+  },
+  "Rashi on Sukkah 42b:8:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 42b:8:1",
+      "Rashi on Sukkah 42b:8:2",
+      "Rashi on Sukkah 42b:8:3",
+      "Rashi on Sukkah 42a:1:2",
+      "Rashi on Sukkah 42b:8:4",
+      "Rashi on Sukkah 42b:8:5",
+      "Rashi on Sukkah 42b:8:6",
+      "Rashi on Pesachim 2a:2:1",
+      "Mishnah Sukkah 4:4",
+      "Steinsaltz on Sukkah 42b:8",
+      "Steinsaltz comment #1 on Sukkah 42b:8",
+      "Tosafot on Bava Kamma 2a:9:2",
+      "Rashi on Bava Kamma 30a:24:2",
+      "Rashi on Megillah 2a:5:1",
+      "Rashi on Sukkah 42b:5:1",
+      "Rashi on Sukkah 42b:5:2",
+      "Rashi on Sukkah 2a:1:1",
+      "Rashi on Sukkah 2a:1:2"
+    ],
+    "generatedAt": "2026-11-07T18:48:00.445Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42b:8:2"
+    ],
+    "sourceText": "ה\"ג י\"ט הראשון של חג שחל להיות בשבת כל העם מוליכין את לולביהן להר הבית מערב שבת:"
+  },
+  "Rashi on Sukkah 42b:8:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T18:48:27.581Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">החזנין</strong> - שמשין שהיו שם לצורכי צבור:"
+  },
+  "Rashi on Sukkah 42b:8:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 42b:8:3",
+      "Rashi on Sukkah 42b:8:5",
+      "Steinsaltz on Sukkah 42b:8:1",
+      "Steinsaltz on Sukkah 42b:8",
+      "Steinsaltz comment #1 on Sukkah 42b:8"
+    ],
+    "generatedAt": "2026-11-07T18:50:41.907Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42b:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ע\"ג האיצטבא</strong> - רחבה של הר הבית היתה מוקפת איצטבאות לישב שם ומסוככת למעלה מפני הגשמים. על גב האיצטבא גר' במתני' דהיינו על גבי הספסלים:"
+  },
+  "Rashi on Sukkah 42b:8:5": {
+    "dependsOn": [
+      "Rashi on Sukkah 42b:8:5",
+      "Rashi on Sukkah 42b:8:1",
+      "Rashi on Sukkah 42b:8:2",
+      "Rashi on Sukkah 42b:8:3",
+      "Rashi on Sukkah 42b:8:4",
+      "Rashi on Sukkah 42b:8:6",
+      "Sukkah 42b:8",
+      "Steinsaltz on Sukkah 42b:8"
+    ],
+    "generatedAt": "2026-11-07T18:52:02.981Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42b:8:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והזקנים</strong> - שדואגין שלא ידחפום למחר ויתמעכו בהקהל הכל לקחת איש לולבו:"
+  },
+  "Rashi on Sukkah 42b:8:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T18:52:43.130Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42b:8:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומלמדין</strong> - ב\"ד את כולם לומר אם יבא לולבו לידי חבירו הרי הוא שלו במתנה כדי שלא יהא אצלו לא גזול ולא שאול:"
+  },
+  "Tosafot on Sukkah 42b:10:1": {
+    "dependsOn": [
+      "Yevamot 33b:5",
+      "Rashi on Yevamot 33b:5:2",
+      "Tosafot on Menachot 97a:7:1",
+      "Rashi on Sukkah 42b:10:1",
+      "Rashi on Sukkah 42b:10:2"
+    ],
+    "generatedAt": "2026-11-07T18:56:06.258Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 42b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טלטול בעלמא הוא</strong> - אע\"ג דחזי למצוה שייך ביה איסור מוקצה לטלטול מאחר דאין עשוי כלי כדאשכחן גבי קנים דלחם הפנים דכתיבי כדתניא במנחות פרק שתי הלחם <span class=\"parenthesized\">(מנחות דף צז.)</span> ומנקיותיו אלו קנים ותנן התם לא סידור הקנים ולא נטילתן דוחה את השבת אלא נכנס מע\"ש אלמא חשיב להו מוקצה אע\"ג דחזו ללחם ובפ' ארבעה אחין <span class=\"parenthesized\">(יבמות דף לג:)</span> גבי זר ששימש דקאמר אי בקבלה והולכה טלטול בעלמא הוא ומיהו התם ניחא טפי כיון דזר הוא:"
+  },
+  "Tosafot on Sukkah 42b:1:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 42b:1:1",
+      "Rashi on Sukkah 42b:1:2",
+      "Sukkah 42b:1"
+    ],
+    "generatedAt": "2026-11-07T18:09:59.251Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 42b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והיודע לשחוט</strong> - לאמן ידיו לשחיטה אע\"פ שאינו בקי בהלכות שחיטה מותר לאכול משחיטתו כדמפרש רב הונא והוא שגדול עומד על גביו וראה שלא שהה ולא דרס <span class=\"rashi-quotation\">כך פירש בקונטרס</span> משמע דאם אין יודע לאמן ידיו לשחיטה אע\"פ שראהו גדול מתחילה ועד סוף שלא שהה ולא דרס אסור לאכול משחיטתו:"
+  },
+  "Tosafot on Sukkah 42b:3:1": {
+    "dependsOn": [
+      "Tosafot on Sukkah 42b:3:1"
+    ],
+    "generatedAt": "2026-11-07T18:26:21.387Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 42b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יכול לאכול כזית צלי</strong> - יש שיכול לאכול כזית מבושל ואינו יכול לאכול כזית צלי ומשערין בצלי לפי שדינו של פסח צלי:"
+  },
+  "Tosafot on Sukkah 42b:5:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 42b:5:1",
+      "Rashi on Sukkah 42b:5:2",
+      "Rashi on Sukkah 42b:5:3",
+      "Rashi on Sukkah 42b:5:4",
+      "Rashi on Sukkah 42b:5:5"
+    ],
+    "generatedAt": "2026-11-07T18:37:35.448Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 42b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לולב וערבה</strong> - והשמחה. לאכול בשר שלמים דקאמר בע\"פ <span class=\"parenthesized\">(פסחים דף קט.)</span> בזמן שבהמ\"ק קיים אין שמחה אלא בבשר שנאמר וזבחת שלמים ואכלת שם ושמחת ואע\"ג דהאי קרא לאו ברגלים כתיב אלא בהר גרזים ובהר עיבל מיהו ברגלים שמחה כתיב דכתיב ושמחת בחגך <span class=\"rashi-quotation\">כך פירש בקונטרס</span> וא\"ת זימנין דאינם נאכלין כל ח' כגון שחל י\"ט ראשון דסוכות באחד בשבת ויום שמיני בא' בשבת דאי אפשר לומר כל ח' שלמים דליל מוצאי שביעי לא ישחטו דבעינן יום הקרבה ויום השביעי נמי לא דאין חגיגת שמחה דוחה שבת וע\"כ מהני דנשחטו ביום [ששי] אכיל בשביעי ואין שלמים נאכלין לשני ימים ושני לילות נמצא דבליל מוצאי שבת שהוא ליל שמיני עצרת לא יאכל שלמים ויש לומר כדאמר רב פפא פרק אלו דברים <span class=\"parenthesized\">(פסחים דף עא.)</span> על קושיא אחרת משמחו בכסות נקיה וביין ישן ה\"נ נימא הכי:"
+  }
+}

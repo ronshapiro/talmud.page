@@ -1,0 +1,379 @@
+{
+  "Rashi on Sukkah 23a:10:1": {
+    "dependsOn": [
+      "Sukkah 23a:10",
+      "Rashi on Sukkah 23a:8:1",
+      "Rashi on Sukkah 23a:8:2",
+      "Rashi on Sukkah 23a:8:3",
+      "Rashi on Sukkah 23a:9:1"
+    ],
+    "generatedAt": "2026-11-06T10:09:04.859Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 23a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיתה לא שכיחא</strong> - ואפילו רבי מאיר לא פסיל:"
+  },
+  "Rashi on Sukkah 23a:10:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 23a:10:1",
+      "Rashi on Sukkah 23a:10:2",
+      "Rashi on Sukkah 23a:10:3"
+    ],
+    "generatedAt": "2026-11-06T10:09:46.571Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 23a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והאיכא רווחא</strong> - דביני כרעי שהיא פירצה ואפי' כשהיא חיה:"
+  },
+  "Rashi on Sukkah 23a:10:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 23a:10:1",
+      "Rashi on Sukkah 23a:10:2",
+      "Rashi on Sukkah 23a:10:3",
+      "Rashi on Sukkah 23a:10:4"
+    ],
+    "generatedAt": "2026-11-06T10:10:27.475Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 23a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דעביד ליה</strong> - גדר בין רגליה:"
+  },
+  "Rashi on Sukkah 23a:10:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 23a:10:1",
+      "Rashi on Sukkah 23a:10:2",
+      "Rashi on Sukkah 23a:10:3",
+      "Rashi on Sukkah 23a:4:1",
+      "Rashi on Sukkah 23a:4:2",
+      "Rashi on Sukkah 2a:1:1",
+      "Rashi on Sukkah 2b:1:1",
+      "Rashi on Sukkah 2b:2:1",
+      "Steinsaltz on Sukkah 23a:10",
+      "Rashi on Sukkah 23a:4:3",
+      "Rashi on Sukkah 23a:5:1",
+      "Rashi on Sukkah 23a:5:2",
+      "Rashi on Sukkah 23a:7:1",
+      "Rashi on Sukkah 23a:7:2",
+      "Rashi on Sukkah 23a:7:3"
+    ],
+    "generatedAt": "2026-11-06T10:12:53.880Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 23a:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בהוצא ודפנא</strong> - הוצא לולבי דקל דפנא ענפי עץ שקורין לורי\"ר וגדל בו פרי שקורין באיי\"ש:"
+  },
+  "Rashi on Sukkah 23a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T10:13:49.825Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 23a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבעה</strong> - רובצת:"
+  },
+  "Rashi on Sukkah 23a:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T10:14:10.208Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 23a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אשלי</strong> - חבלים:"
+  },
+  "Rashi on Sukkah 23a:11:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 23a:11:1",
+      "Rashi on Sukkah 23a:11:2",
+      "Rashi on Sukkah 23a:11:3",
+      "Rashi on Sukkah 23a:11:4"
+    ],
+    "generatedAt": "2026-11-06T10:14:56.898Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 23a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא מתיחה באשלי מלעיל</strong> - ואם תמות אינה נופלת:"
+  },
+  "Rashi on Sukkah 23a:11:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 23a:11:4"
+    ],
+    "generatedAt": "2026-11-06T10:21:20.539Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 23a:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זימנא דמוקי לה פחות מג' כו'</strong> - פעמים שאין בגובהה של בהמה אלא שבעה ומשהו וסוכה עשרה דקאי לה בפחות משלשה סמוך לסכך ואמרינן לבוד:"
+  },
+  "Rashi on Sukkah 23a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T09:29:17.743Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 23a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא כלום היא</strong> - דאפי' דירת עראי לא הויא:"
+  },
+  "Rashi on Sukkah 23a:4:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 23a:4:1",
+      "Rashi on Sukkah 23a:4:3"
+    ],
+    "generatedAt": "2026-11-06T09:30:14.330Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 23a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאינה מצויה דיבשה</strong> - הוי כרוח מצויה דים:"
+  },
+  "Rashi on Sukkah 23a:4:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 23a:4:1",
+      "Rashi on Sukkah 23a:4:2",
+      "Rashi on Sukkah 2a:8:1"
+    ],
+    "generatedAt": "2026-11-06T09:32:01.815Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 23a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יכולה לעמוד ברוח שאינה מצויה דיבשה</strong> - דהיינו רוח מצויה דים דכולי עלמא כו' אף ע\"ג דאינה עומדת ברוח שאינה מצויה דים דאפי' למאן דבעי סוכה דירת קבע איכא:"
+  },
+  "Rashi on Sukkah 23a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T09:32:35.798Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 23a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על גבי בהמה</strong> - כגון נתן דלתות על שני סוסים והם קרקעית הסוכה ועשה למעלה מחיצות וסכך:"
+  },
+  "Rashi on Sukkah 23a:5:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 23a:5:1"
+    ],
+    "generatedAt": "2026-11-06T09:33:38.449Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 23a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הראוי' לשבעה</strong> - והשתא דגזור רבנן אין עולין לה נמצאת שאינה ראויה ליום ראשון:"
+  },
+  "Rashi on Sukkah 23a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T09:38:56.277Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 23a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא פסין לביראות</strong> - דתנן בעירובין <span class=\"parenthesized\">(דף יז:)</span> עושין פסין לביראות ארבע' דיומדין לבור שברשות הרבים והבור עמוק עשרה דהוא רה\"י ואין יכול למלאות ממנה אלא אם כן מוקף מחיצות ומפני בהמות עולי רגלים התירו המחיצות בארבעה דיומדין לארבע פיאות ואמר ר' מאיר דלא עבדין חדא מהנך בבעלי חיים וטעמא מפרש לקמן:"
+  },
+  "Rashi on Sukkah 23a:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T09:46:15.249Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 23a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא גולל לקבר</strong> - כלומר אם עשאוהו כיסוי לארונו של מת אין שם גולל עליו לטמא דאמרי' בבהמה המקשה דגולל מטמא במגע ובמשא ובאהל דתניא <span class=\"parenthesized\">(חולין דף עב.)</span> על פני השדה לרבות גולל ודופק:"
+  },
+  "Rashi on Sukkah 23a:7:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 23a:7:1",
+      "Rashi on Sukkah 23a:7:2",
+      "Rashi on Sukkah 23a:8:1",
+      "Rashi on Sukkah 23a:8:2",
+      "Tosafot on Sukkah 23b:5:1",
+      "Rashi on Sukkah 22b:1:1",
+      "Rashi on Sukkah 22b:2:1",
+      "Rashi on Sukkah 2a:1:1",
+      "Tosafot on Sukkah 2a:1:1"
+    ],
+    "generatedAt": "2026-11-06T09:49:09.375Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 23a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור' יוסי הגלילי</strong> - מפרש לקמיה טעמא:"
+  },
+  "Rashi on Sukkah 23a:8:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 23a:8:1",
+      "Rashi on Sukkah 23a:8:2",
+      "Rashi on Sukkah 23a:8:3",
+      "Rashi on Sukkah 23a:8:4",
+      "Sukkah 23a:8",
+      "Rashi on Sukkah 22b:6:1",
+      "Rashi on Sukkah 22b:6:2",
+      "Rashi on Sukkah 23a:4:1",
+      "Rashi on Sukkah 23a:7:1",
+      "Sukkah 23a:1"
+    ],
+    "generatedAt": "2026-11-06T10:00:36.020Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 23a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גזרה שמא תמות</strong> - הבהמה ביום טוב ותפול ואין כאן דופן ונמצא בטל ממצות סוכה ולקמיה פריך ובגולל דקולא היא מאי טעמיה:"
+  },
+  "Rashi on Sukkah 23a:8:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 23a:8:1",
+      "Rashi on Sukkah 23a:8:2",
+      "Rashi on Sukkah 23a:8:3",
+      "Rashi on Sukkah 23a:7:1",
+      "Rashi on Sukkah 23a:7:2"
+    ],
+    "generatedAt": "2026-11-06T10:01:26.915Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 23a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קשור</strong> - דליכא למיחש שמא תברח:"
+  },
+  "Rashi on Sukkah 23a:8:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 23a:8:1",
+      "Rashi on Sukkah 23a:8:2",
+      "Rashi on Sukkah 23a:8:3",
+      "Rashi on Sukkah 23a:8:4"
+    ],
+    "generatedAt": "2026-11-06T10:02:08.077Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 23a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכולי עלמא</strong> - בין לאביי בין לרבי זירא מכשיר רבי מאיר:"
+  },
+  "Rashi on Sukkah 23a:8:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T10:02:42.609Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 23a:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאי נמי מיית</strong> - ויפול יש בנבלתו עשרה:"
+  },
+  "Tosafot on Sukkah 23a:2:1": {
+    "dependsOn": [
+      "Tosafot on Sukkah 21b:8:1",
+      "Tosafot on Sukkah 7b:11:1",
+      "Tosafot on Sukkah 21b:11:1",
+      "Tosafot on Sukkah 7b:15:1",
+      "Sukkah 7b:15"
+    ],
+    "generatedAt": "2026-11-06T09:28:52.215Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 23a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דתניא העושה סוכתו בראש הספינה</strong> - שפיר גריס בברייתא בראש העגלה דפליגי נמי בראש העגלה כדפרישי' לעיל <span class=\"parenthesized\">(סוכה דף כא: בד\"ה שאין)</span> ולא כמו שפי' ר\"ת בפ\"ק <span class=\"parenthesized\">(דף ז: ושם בד\"ה העושה)</span>:"
+  },
+  "Tosafot on Sukkah 23a:5:1": {
+    "dependsOn": [
+      "Tosafot on Sukkah 21b:11:1",
+      "Rashi on Sukkah 23a:5:1",
+      "Rashi on Sukkah 23a:5:2",
+      "Chokhmat Shlomo on Sukkah 23a:1"
+    ],
+    "generatedAt": "2026-11-06T09:36:20.432Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 23a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על גבי בהמה</strong> - פ\"ה נתן דלתות על ב' סוסים להיותם קרקעית הסוכה ועשה למעלה מחיצות וסיכך רבי יהודה פוסל ומכאן קשה לפ\"ה דמתניתין דלעיל <span class=\"parenthesized\">(סוכה דף כא:)</span> גבי סמך סוכתו בכרעי המטה כדפי' לעיל וי\"מ דהכא לאו במיטלטל הסכך על גבי הבהמה דא\"כ למה לי קרא לר' יהודה תיפוק ליה משום דאין לה קבע כדפרישית לעיל אלא העמיד סוכה על ד' קונדסים וסמך עליהן הסכך והכניס שם הבהמה ועשה עליה קרקעיתה ומחיצותיה עד לסכך דלא חזיא לשבעה דאין עולין על גבי בהמה ביום טוב:"
+  },
+  "Tosafot on Sukkah 23a:5:2": {
+    "dependsOn": [
+      "Tosafot on Sukkah 23a:5:1"
+    ],
+    "generatedAt": "2026-11-06T09:37:20.209Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 23a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סוכה הראויה לשבעה</strong> - מהאי טעמא נמי היה פוסל בסוכה על גבי אילן:"
+  },
+  "Tosafot on Sukkah 23a:7:1": {
+    "dependsOn": [
+      "Sukkah 23a:7",
+      "Sukkah 21b:8",
+      "Sukkah 21b:5"
+    ],
+    "generatedAt": "2026-11-06T09:51:45.994Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 23a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי יהודה מכשיר</strong> - בשלא סמך הסוכה על גבה איירי דא\"כ הויא לה כסמכה בכרעי המטה:"
+  },
+  "Tosafot on Sukkah 23a:7:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 23a:7:2"
+    ],
+    "generatedAt": "2026-11-06T09:58:25.688Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 23a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא גולל לקבר</strong> - כשהמת מונח בקבר מניחין על הקבר אבן גדולה לסתום את חללה והוא נקרא גולל כדמוכח במסכת אהלות פרק ט\"ו [מ\"ח] דתנן קורה שעשאה גולל לקבר בין מוטה על צידה בין עומדת אין טמא אלא כנגד הפתח ועוד תניא בתוספתא דאהלות [פט\"ו ע\"ש] גל של צרורות גולל לקבר הנוגע בתוכו עד ארבעה טפחים טמא דברי רבי יהודה וחכמים אומרים אינו טמא אלא סדר הפנימי צורכו של קבר משמע דנקרא גולל מה שסותם החלל ועוד תניא בתוספתא דאהלות סוף פרק <span class=\"parenthesized\">(שני)</span> שתי אבנים גדולות של ארבעה טפחים שעשאן גולל לקבר המאהיל על גבי שתיהן טמא ניטלה אחת מהן המאהיל על גבי שניה טהור מפני שיש לטומאה דרך שתצא מכל הני משמע שתחת הגולל כולו חלל ואע\"ג דבפ' בהמה המקשה <span class=\"parenthesized\">(חולין דף עב.)</span> נפקא טומאת הגולל מדכתיב על פני השדה דמשמע דאין דבר על גבי הגולל ועומד מגולה על פני השדה זימנין דאינו מגולה כי ההיא דגל של צרורות דאינו טמא אלא סדר הפנימי ודופק הנזכר בכל מקום עם הגולל הם אבנים שהגולל נשען עליהם כדתנן פרק ב' דאהלות [מ\"ד] ואיזהו דופק את שהגולל נשען עליו אבל דופק דפקין טהור דפעמים מניחין אבן לסמוך אותה שהגולל נשען עליה והיא נקראת דופק דפקין וצריך לדקדק הא דאמר פ' העור והרוטב <span class=\"parenthesized\">(חולין דף קכו:)</span> דגולל מטמא במגע ובאהל היכי דמי בשלמא מגע אפשר מן הצד אלא באהל מאי אריא משום גולל תיפוק ליה משום שהקבר סתום ותניא בנזיר פ' כהן גדול <span class=\"parenthesized\">(נזיר דף נג:)</span> או בקבר זו קבר סתום דאמרי' טומאה בוקעת ועולה בוקעת ויורדת ואין לומר דאיצטריך היכא דאין המת בקבר דאי ליתיה אם כן לא מטמא משום גולל דאפי' כי איתיה ויש מקום לטומאה לצאת לא מטמא ואין לומר נמי כגון דבולט חוץ לקבר דהא מה שחוץ לקבר טהור כדקאמרינן אין טמא אלא כנגד הפתח דהא דקתני סיפא עשה ראשה גולל לקבר אין טמא אלא עד ארבעה טפחים ההיא כשנתנה על הקבר מעומד איירי דכולה כנגד הפתח ועד ארבעה דקתני היינו בגובהה דומיא דההיא דגל של צרורות לרבי יהודה ומיהו מצינן למימר דאיצטריך למאהיל על הגולל כנגד מחיצות הקבר שהגולל מונח עליהם דאע\"פ שאין מאהיל כנגד חלל הקבר טמא משום דמאהיל על הגולל דאם אין שם גולל טהור:"
+  },
+  "Tosafot on Sukkah 23a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T10:04:30.116Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 23a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בפיל קשור כולי עלמא לא פליגי</strong> - לשון הש\"ס משונה כאן משאר מקומות דרבי זירא ואביי תרוייהו מפרשי טעמא דרבי מאיר והוה ליה למימר מאי בינייהו והוא מפרש והולך בלשון פליגי:"
+  },
+  "Tosafot on Sukkah 23a:9:1": {
+    "dependsOn": [
+      "Tosafot on Sukkah 23a:8:1",
+      "Tosafot on Sukkah 23a:5:1",
+      "Tosafot on Sukkah 23a:5:2",
+      "Tosafot on Sukkah 23a:7:1",
+      "Tosafot on Sukkah 23a:7:2",
+      "Tosafot on Sukkah 2b:1:1",
+      "Sukkah 23a:7",
+      "Sukkah 23a:8"
+    ],
+    "generatedAt": "2026-11-06T10:08:15.978Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 23a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולמאן דאמר שמא תמות ניחוש שמא תברח</strong> - דאע\"ג דלמאן דאמר שמא תברח נמי על כרחך ר' יהודה דמכשר לא חייש מ\"מ אביי אליבא דר\"מ דחייש למיתה דלא שכיחא כ\"ש דיש לו לחוש לשמא תברח דשכיחא:"
+  }
+}

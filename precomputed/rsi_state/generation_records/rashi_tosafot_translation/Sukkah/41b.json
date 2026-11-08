@@ -1,0 +1,402 @@
+{
+  "Rashi on Sukkah 41b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T16:43:20.783Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 41b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוה מצלי ביה</strong> - כשהיה מתפלל היה לולבו בידו מרוב חיבתו עליו היה מתפלל בו:"
+  },
+  "Rashi on Sukkah 41b:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T16:43:56.285Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 41b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא יאחז אדם כו' ויתפלל</strong> - מפני שטרוד הוא במחשבתו שלא יפלו מידו ויתבזו ואין דעתו מיושבת עליו בתפלתו:"
+  },
+  "Rashi on Sukkah 41b:10:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 41b:10:1",
+      "Rashi on Sukkah 41b:10:2"
+    ],
+    "generatedAt": "2026-11-07T16:44:56.022Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 41b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא יישן בהם לא שינת קבע ולא שינת עראי</strong> - שמא יפלו מידו והכי אוקימנא ליה בהישן <span class=\"parenthesized\">(לעיל סוכה דף כו.)</span> דהא דקתני לא קבע ולא עראי בדנקיט ליה בידיה:"
+  },
+  "Rashi on Sukkah 41b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T16:45:26.471Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 41b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סכין</strong> - מתיירא שמא יפול ויתקע לו ברגלו:"
+  },
+  "Rashi on Sukkah 41b:11:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 41b:11:1",
+      "Rashi on Sukkah 41b:11:2",
+      "Rashi on Sukkah 41b:11:3"
+    ],
+    "generatedAt": "2026-11-07T16:46:35.541Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 41b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקערה</strong> - מליאה:"
+  },
+  "Rashi on Sukkah 41b:11:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 41b:11:1",
+      "Rashi on Sukkah 41b:11:2",
+      "Rashi on Sukkah 41b:4:1",
+      "Rashi on Sukkah 41b:4:2",
+      "Rashi on Sukkah 41b:10:1",
+      "Shulchan Arukh, Orach Chayim 96:1",
+      "Steinsaltz on Sukkah 41b:11"
+    ],
+    "generatedAt": "2026-11-07T16:48:05.734Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 41b:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומעות</strong> - שלא יתפזרו:"
+  },
+  "Rashi on Sukkah 41b:11:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 41b:11:1",
+      "Rashi on Sukkah 41b:11:2",
+      "Rashi on Sukkah 41b:11:3",
+      "Rashi on Sukkah 41b:11:4",
+      "Rashi on Sukkah 41b:11:5"
+    ],
+    "generatedAt": "2026-11-07T16:48:42.637Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 41b:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וככר</strong> - שאם יפול יהא נמאס:"
+  },
+  "Rashi on Sukkah 41b:11:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T16:50:13.281Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 41b:11:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאו מצוה נינהו</strong> - לאוחזן והויין עליו למשא לפיכך טרוד במשאם וכבד עליו משאם ושמירתם:"
+  },
+  "Rashi on Sukkah 41b:11:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T16:50:44.595Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 41b:11:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא</strong> - נטילתה ולקיחתה מצוה היא ומתוך שחביבה מצוה עליו אין משאה ושימורה כבד עליו ולא טריד:"
+  },
+  "Rashi on Sukkah 41b:12:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 41b:12:2",
+      "Rashi on Sukkah 41b:11:1",
+      "Rashi on Sukkah 41b:11:2"
+    ],
+    "generatedAt": "2026-11-07T16:53:55.971Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 41b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קורא בתורה</strong> - צריך להניח הלולב לפי שגולל ס\"ת ופותחו:"
+  },
+  "Rashi on Sukkah 41b:12:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 41b:12:1"
+    ],
+    "generatedAt": "2026-11-07T16:54:44.621Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 41b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נכנס לבית המדרש</strong> - טריד בשמעתא ויפול מידיו:"
+  },
+  "Rashi on Sukkah 41b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T16:01:35.609Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 41b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד עצם עד עצמו של יום</strong> - כל היום קרוי עצם היום:"
+  },
+  "Rashi on Sukkah 41b:1:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 41b:1:1",
+      "Sukkah 41b:1",
+      "Rashi on Sukkah 41b:4:1",
+      "Rashi on Sukkah 41b:5:1"
+    ],
+    "generatedAt": "2026-11-07T16:03:00.115Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 41b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקסבר עד ועד בכלל</strong> - ולא דריש עד ולא עד בכלל להתירו בהאיר מזרח כי ליכא עומר והכי מתוקמא קראי אין עומר עד עצם ועד בכלל יש עומר עד הביאכם:"
+  },
+  "Rashi on Sukkah 41b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T16:05:13.088Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 41b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא מיפלג פליג</strong> - רבי יהודה עליה שמצינו שתמה רבי יהודה בדורו על תקנת ריב\"ז למה תלה הדבר בעצמו דמשמע לעשות סייג בא והלא מן התורה הוא אסור:"
+  },
+  "Rashi on Sukkah 41b:3:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 41b:3:2",
+      "Rashi on Sukkah 41b:1:2",
+      "Sukkah 41b:1"
+    ],
+    "generatedAt": "2026-11-07T16:06:29.879Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 41b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דרש</strong> - המקרא עד ועד בכלל:"
+  },
+  "Rashi on Sukkah 41b:3:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 41b:3:1",
+      "Sukkah 41b:3",
+      "Rashi on Rosh Hashanah 30b:4:1",
+      "Rashi on Sukkah 41b:3:2"
+    ],
+    "generatedAt": "2026-11-07T16:15:57.988Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 41b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והתקין</strong> - לפי שהיו רגילים לאכול חדש מחצות ולהלן כשהיה הבית קיים עד עכשיו הוצרך לתקן:"
+  },
+  "Rashi on Sukkah 41b:4:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 41b:4:2",
+      "Rashi on Sukkah 41b:4:3",
+      "Rashi on Sukkah 41b:1:1",
+      "Rashi on Sukkah 41b:1:2",
+      "Rashi on Sukkah 41b:3:1",
+      "Rashi on Sukkah 41b:3:2",
+      "Rashi on Sukkah 40a:1:1",
+      "Rashi on Sukkah 42a:1:1"
+    ],
+    "generatedAt": "2026-11-07T16:17:44.498Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 41b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">י\"ט הראשון כו'</strong> - דאמרינן לקמן <span class=\"parenthesized\">(סוכה דף מג.)</span> דדוחה מצות לולב שבת בי\"ט הראשון לבדו:"
+  },
+  "Rashi on Sukkah 41b:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T16:18:14.080Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 41b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מוליכין את לולביהן</strong> - מערב שבת:"
+  },
+  "Rashi on Sukkah 41b:4:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T16:18:55.962Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 41b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהוציאו ברשות</strong> - ברשות מצוה שהיה טרוד במצוה ומחשב ועסוק וממהר לעשותה ומתוך כך טעה ושכח שהוא שבת וקסבר רבי יוסי טעה בדבר מצוה ושגג בדבר כרת פטור מקרבן:"
+  },
+  "Rashi on Sukkah 41b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T16:19:31.708Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 41b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנא הני מילי</strong> - דאין אדם יוצא בלולבו של חבירו:"
+  },
+  "Rashi on Sukkah 41b:5:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 41b:5:1"
+    ],
+    "generatedAt": "2026-11-07T16:20:11.235Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 41b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לכם משלכם</strong> - משמע:"
+  },
+  "Rashi on Sukkah 41b:7:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 41b:4:1",
+      "Rashi on Sukkah 41b:4:2",
+      "Rashi on Sukkah 41b:4:3",
+      "Rashi on Sukkah 41b:7:2",
+      "Rashi on Sukkah 41b:1:1",
+      "Rashi on Sukkah 41b:5:1",
+      "Rashi on Sukkah 41a:1:1"
+    ],
+    "generatedAt": "2026-11-07T16:28:07.978Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 41b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למה לי למימר החזירו</strong> - מה אנו למידין מחזרה זו דאצטריך תנא למיתנייה במתני':"
+  },
+  "Rashi on Sukkah 41b:7:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 41b:7:1",
+      "Sukkah 41b:7"
+    ],
+    "generatedAt": "2026-11-07T16:32:08.625Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 41b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא קמ\"ל</strong> - דר\"ג ע\"מ שיחזירוהו לו נתנו להם ואפ\"ה הויא מתנה עד שיצאו בו:"
+  },
+  "Rashi on Sukkah 41b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T16:32:53.914Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 41b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">החזירו לו יצא</strong> - דמתנה על מנת להחזיר מתנה היא והרי החזירו לו אבל אם לא החזירו אגלאי מלתא דמעיקרא גזול הוא בידו:"
+  },
+  "Rashi on Sukkah 41b:9:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 41b:9:1",
+      "Sukkah 41b:9",
+      "Gilyon HaShas on Sukkah 41b:1",
+      "Steinsaltz on Sukkah 41b:9",
+      "Rashi on Sukkah 41b:7:1",
+      "Rashi on Sukkah 40a:7:1",
+      "Tosafot on Bava Kamma 2a:9:2",
+      "Rashi on Pesachim 2a:2:1",
+      "Steinsaltz comment #1 on Sukkah 41b:9",
+      "Rashi on Bava Kamma 20a:18:1",
+      "Rashi on Sukkah 41b:1:1",
+      "Rashi on Sukkah 41b:2:1",
+      "Rashi on Sukkah 41b:3:1",
+      "Rashi on Sukkah 41b:4:1",
+      "Rashi on Sukkah 41b:5:1"
+    ],
+    "generatedAt": "2026-11-07T16:42:47.012Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 41b:9:1"
+    ],
+    "sourceText": "ה\"ג למה ליה למימר שלקחו באלף זוז להודיעך כמה מצות חביבות עליהם:"
+  },
+  "Tosafot on Sukkah 41b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T16:52:36.010Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 41b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמר שמואל סכין וקערה וככר ומעות הרי אלו כיוצא בהן</strong> - אצטריך ליה לשמואל למימר דלא תימא דווקא תפילין וס\"ת דאיכא בזיון כתבי הקודש בנפילתו טריד בהו טפי ואין דעתו מתיישבת בתפלתו:"
+  },
+  "Tosafot on Sukkah 41b:5:1": {
+    "dependsOn": [
+      "Tosafot on Sukkah 41b:5:2",
+      "Tosafot on Sukkah 27b:5:1",
+      "Rashi on Sukkah 41b:5:1",
+      "Rashi on Sukkah 41b:5:2",
+      "Ritva on Sukkah 41b:1",
+      "Steinsaltz comment #1 on Sukkah 41b:5",
+      "Steinsaltz comment #2 on Sukkah 41b:5",
+      "Tosafot on Sukkah 41a:2:1",
+      "Tosafot on Sukkah 41a:3:1",
+      "Tosafot on Sukkah 41b:8:1",
+      "Tosafot on Sukkah 41b:8:2",
+      "Tosafot on Sukkah 41b:11:1"
+    ],
+    "generatedAt": "2026-11-07T16:23:15.460Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 41b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולקחתם שתהא לקיחה לכל א' וא'</strong> - מדלא כתיב ולקחת לשון יחיד וגבי סוכה לא צריך קרא דהא כתיב כל האזרח:"
+  },
+  "Tosafot on Sukkah 41b:5:2": {
+    "dependsOn": [
+      "Tosafot on Sukkah 41b:5:1"
+    ],
+    "generatedAt": "2026-11-07T16:26:18.864Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 41b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא א\"כ נתן לו במתנה</strong> - ובאתרוג השותפין נמי לא נפיק כדמוכח בשילהי יש נוחלין <span class=\"parenthesized\">(ב\"ב דף קלז: ושם)</span> גבי אחין שקנו אתרוג בתפיסת הבית ולא חשיב שלו כיון דאין מיוחד שלו אלא כשאול הוי ואינו יוצא בו ומה שנהגו הקהל לקנות אתרוג בשותפות מלמדין אותן שיהו כולם נותן כל אחד ואחד חלקו לחבירו על מנת להחזיר ויש לסמוך דכיון דקנאוהו על מנת לצאת בו ואע\"ג שלא פירשו סתמא דמלתא כאילו פרשו דמי כיון דבענין אחר אין יכולין לצאת בו:"
+  },
+  "Tosafot on Sukkah 41b:8:1": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Sukkah 41b:3",
+      "Maharam on Sukkah 41b:2"
+    ],
+    "generatedAt": "2026-11-07T16:36:17.113Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 41b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הילך אתרוג זה במתנה על מנת שתחזירהו לי</strong> - בשום מקום אין מדקדק הש\"ס בלשונו להקדים תנאי למעשה ותנאי כפול והן קודם ללאו אע\"ג דבהכי מיירי אלא שמקצר לשונו לפי שלא על חידוש זה בא להשמיענו ולא דמי לתנאי ומעשה בדבר אחד דהיינו כששניהם סותרים זה את זה כי ההיא דעל מנת שתחזיר לי את הנייר בפרק מי שאחזו <span class=\"parenthesized\">(גיטין דף עה. ושם)</span> וא\"ת כיון דאמר ע\"מ שתחזירו לי א\"כ אם הקדישו אינו מקודש כדמוכח בסוף יש נוחלין <span class=\"parenthesized\">(ב\"ב דף קלז:)</span> גבי שור זה נתון לך במתנה ע\"מ שתחזירהו לי דכיון דקאמר לי מידי דחזי לי קאמר וא\"כ היאך יצא והא אנן תנן בנדרים פרק השותפין <span class=\"parenthesized\">(נדרים דף מח.)</span> גבי מתנה דבית חורון דכל מתנה שאינה שאם הקדישה לא תהא מקודשת לא שמיה מתנה וי\"ל דה\"נ הוי בידו להקדיש להיות קדוש כל זמן שהוא בידו עד שיחזיר ועוד דהתם נמי לא בהקדש תלוי טעם המתנה כדמוכח בנדרים ירושלמי דאמר עלה רבי ירמיה רבי יהודה בעי מעתה מתנה אין אדם נותן מתנה לחבירו ע\"מ שלא יקדשנה לשמים ומשני מתני' כל מתנה שהיא כמתנת בית חורון שהיתה בערמה שאם הקדישה אינה מוקדשת אינה מתנה כלומר שלא נתנה לו שיהנה המקבל שום הנאה שבעולם אלא שיהא מותר לאביו של נותן זה ודאי הערמה בעלמא ולא שמיה מתנה שהרי לא זכה בה לענין עצמו לשום דבר וא\"כ מה הקנה לו אבל הכא דמזכה ליה שיהנה בו שמיה מתנה ולא הזכיר שם הקדש אלא משום שעל הקדש היה מעשה ולשון כל מתנה שאינה וכו' מוכיח כן דמשמע שאינה מתנה לשום דבר גם סעודתו היתה מוכחת עליו שלא היה דעתו ליתן כלל לענין שום דבר רק שיבא אביו ויאכל כמו שמפרש שם בגמרא או משום דויתור אסור במודר הנאה אבל בעלמא מתנה היא אע\"פ שאין יכול להקדישה כדתנן פרק בתרא דנדרים <span class=\"parenthesized\">(דף פח.)</span> שנותן לבתו מה שנושאת ונותנת לפיה ובפ\"ק דקדושין <span class=\"parenthesized\">(דף כג: ושם)</span> שנותן לעבד ע\"מ שיצא בו לחירות:"
+  },
+  "Tosafot on Sukkah 41b:8:2": {
+    "dependsOn": [
+      "Tosafot on Sukkah 41b:8:2",
+      "Tosafot on Sukkah 41b:8:1"
+    ],
+    "generatedAt": "2026-11-07T16:37:26.612Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 41b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם לאו לא יצא</strong> - ומה שלא החזירו רבי יהושע לרבן גמליאל אלא נתנו לרבי אלעזר בן עזריה ורבי אלעזר בן עזריה לרבי עקיבא דעתו של רבן גמליאל היה שיצאו כולם ואח\"כ יחזירוהו:"
+  }
+}

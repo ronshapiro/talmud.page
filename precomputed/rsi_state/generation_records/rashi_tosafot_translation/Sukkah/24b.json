@@ -1,0 +1,487 @@
+{
+  "Rashi on Sukkah 24b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T12:19:26.916Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאינה יכולה לעמוד ברוח מצויה</strong> - שהרוח מוליכה ומביאה:"
+  },
+  "Rashi on Sukkah 24b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T12:20:01.224Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בקשין</strong> - אילנות זקנים ועבים:"
+  },
+  "Rashi on Sukkah 24b:12:1": {
+    "dependsOn": [
+      "Sukkah 24b:12",
+      "Rashi on Sukkah 24b:11:1",
+      "Rashi on Sukkah 24b:12:1",
+      "Rashi on Sukkah 24b:12:2",
+      "Rashi on Sukkah 24b:12:3",
+      "Chokhmat Shlomo on Sukkah 24b:1"
+    ],
+    "generatedAt": "2026-11-06T12:20:57.218Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא איכא נופו</strong> - שהולך ובא ופעמים שאף הנוף מן הדופן:"
+  },
+  "Rashi on Sukkah 24b:12:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 24b:12:1",
+      "Rashi on Sukkah 24b:12:3"
+    ],
+    "generatedAt": "2026-11-06T12:21:37.904Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דעביד ליה</strong> - אורג הנוף כמין מחיצה שלא יניענו הרוח:"
+  },
+  "Rashi on Sukkah 24b:12:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 24b:12:1",
+      "Rashi on Sukkah 24b:12:2",
+      "Rashi on Sukkah 24b:12:3",
+      "Rashi on Sukkah 24b:10:1",
+      "Rashi on Sukkah 24b:11:1"
+    ],
+    "generatedAt": "2026-11-06T12:22:30.122Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24b:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאשתמושי באילן</strong> - להניח עליו כליו:"
+  },
+  "Rashi on Sukkah 24b:13:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 24b:13:2",
+      "Rashi on Sukkah 24b:13:3",
+      "Steinsaltz on Sukkah 24b:13"
+    ],
+    "generatedAt": "2026-11-06T12:26:16.183Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היה שם</strong> - בפסי ביראות קאי היה באחת הפיאות אילן שעוביו אמה לכל צד:"
+  },
+  "Rashi on Sukkah 24b:13:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 24b:13:1",
+      "Rashi on Sukkah 24b:13:3"
+    ],
+    "generatedAt": "2026-11-06T12:26:58.852Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או גדר</strong> - מרובע אמה על אמה כל גדר סתם של אבנים הוא וצריך שיהא אמה על אמה כדי לחלקו לשתי מחיצות אמה למזרח ואמה לצפון או לדרום:"
+  },
+  "Rashi on Sukkah 24b:13:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 24b:13:1",
+      "Rashi on Sukkah 24b:13:2"
+    ],
+    "generatedAt": "2026-11-06T12:29:11.733Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24b:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דיומד</strong> - ב' עמודים שהיו מחיצה לכאן ולכאן שבכך הקילו חכמים עליהם:"
+  },
+  "Rashi on Sukkah 24b:14:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 24b:14:2"
+    ],
+    "generatedAt": "2026-11-06T12:29:52.791Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המיסך על הארץ</strong> - נופו גדול מאד וראשי הנוף כפופין סביב על הארץ:"
+  },
+  "Rashi on Sukkah 24b:14:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 24b:14:1",
+      "Rashi on Eruvin 99b:21:2"
+    ],
+    "generatedAt": "2026-11-06T12:30:59.573Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מטלטלין תחתיו</strong> - דאמרינן לבוד ומחיצה זו גבוהה עשרה מבפנים שהנוף ארוך הוא ובגובה האילן הוא:"
+  },
+  "Rashi on Sukkah 24b:15:1": {
+    "dependsOn": [
+      "Sukkah 24b:15",
+      "Rashi on Sukkah 24b:15:2"
+    ],
+    "generatedAt": "2026-11-06T12:31:55.246Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הכי</strong> - דעשויה בידים היא וראוי לדור תחתיה ולשמור שדה עשאה וכיון דמוקף לדירה הוא:"
+  },
+  "Rashi on Sukkah 24b:15:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 24b:15:1",
+      "Sukkah 25a:1",
+      "Rashi on Sukkah 25a:3:2"
+    ],
+    "generatedAt": "2026-11-06T12:33:36.055Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליטלטל בכוליה</strong> - כלומר יטלטל בו כל כמה שהוא גדול אלמה אמר רב הונא אין מטלטלין בו כלל אלא אם כן אינו הוה אלא כשיעור בית סאתים כחצר המשכן ששיעור זה נתנו חכמים לכל היקף שאינו לדירה ואם גדול הוא מכאן הוי כרמלית ואין מטלטלין בו אלא בתוך ארבע אמותיו של אדם והאי כיון דבידים הוקף ולדירה אפילו הוא יותר מבית סאתים ליטלטל ביה:"
+  },
+  "Rashi on Sukkah 24b:1:1": {
+    "dependsOn": [
+      "Sukkah 24b:1"
+    ],
+    "generatedAt": "2026-11-06T11:36:45.404Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי עשויה בידי אדם</strong> - דרוח זה בידי אדם בא:"
+  },
+  "Rashi on Sukkah 24b:2:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 24b:2:1",
+      "Rashi on Sukkah 24b:2:2",
+      "Rashi on Sukkah 24b:2:3",
+      "Rashi on Sukkah 24b:2:4",
+      "Rashi on Sukkah 24b:4:1",
+      "Rashi on Sukkah 24b:5:1",
+      "Rashi on Sukkah 24b:7:1",
+      "Sukkah 24b:2",
+      "Rashi on Sukkah 2b:3:1",
+      "Rashi on Sukkah 2b:17:1",
+      "Rashi on Sukkah 2a:1:1",
+      "Rashi on Sukkah 2a:1:2",
+      "Rashi on Sukkah 2a:1:3"
+    ],
+    "generatedAt": "2026-11-06T11:38:15.090Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ספר</strong> - וכתב לה ספר כריתות:"
+  },
+  "Rashi on Sukkah 24b:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T11:38:41.493Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין לי אלא ספר</strong> - קלף:"
+  },
+  "Rashi on Sukkah 24b:2:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T11:39:14.869Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מניין לרבות כל דבר</strong> - לכותבו עליו כגון לוח עץ ועלה זית:"
+  },
+  "Rashi on Sukkah 24b:2:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 24b:2:1",
+      "Rashi on Sukkah 24b:2:2",
+      "Rashi on Sukkah 24b:2:3",
+      "Rashi on Sukkah 24b:1:1",
+      "Rashi on Sukkah 24b:4:1",
+      "Rashi on Sukkah 24b:5:1",
+      "Rashi on Sukkah 24a:9:1",
+      "Rashi on Sukkah 2b:1:1",
+      "Rashi on Sukkah 2b:2:1"
+    ],
+    "generatedAt": "2026-11-06T11:40:51.330Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24b:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכתב מכל מקום</strong> - דמצי למיכתב ונתן בידה ספר כריתות:"
+  },
+  "Rashi on Sukkah 24b:4:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 24b:4:1",
+      "Rashi on Sukkah 24b:4:2"
+    ],
+    "generatedAt": "2026-11-06T11:51:02.268Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הוה כתב וכתב לה כריתות בספר כדקאמרת</strong> - דהאי ספר קלף הוא:"
+  },
+  "Rashi on Sukkah 24b:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T11:51:51.407Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השתא דכתב ספר</strong> - אין זה קלף ואין הכתוב מדבר שיהא נכתב עליו אלא דברי הגט קרוי ספר ספירת דברים כריתות דברים שיהו כורתין ומפרידין ביניהן:"
+  },
+  "Rashi on Sukkah 24b:5:1": {
+    "dependsOn": [
+      "Sukkah 24b:5",
+      "Sukkah 24b:2"
+    ],
+    "generatedAt": "2026-11-06T11:53:10.190Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבנן</strong> - כיון דספר לאו קלף הוא האי וכתב לה לא אצטריך לרבות כל דבר דמהיכא תיתי לך לייחד דבר לכתיבתו דאיצטריך לאשמועינן שכל דבר כשר לך:"
+  },
+  "Rashi on Sukkah 24b:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T11:53:41.580Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואינה מתגרשת בכסף</strong> - ליתן לה כסף לשם גירושין ולומר הרי את מגורשת בו כדרך שנתן בקידושין ואמר הרי את מקודשת בו:"
+  },
+  "Rashi on Sukkah 24b:5:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 24b:5:1",
+      "Rashi on Sukkah 24b:5:2",
+      "Rashi on Sukkah 24b:5:4",
+      "Deuteronomy 24:2"
+    ],
+    "generatedAt": "2026-11-06T11:55:19.992Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיתקש יציאה להויי'</strong> - ויצאה מביתו והלכה והיתה לאיש אחר <span class=\"parenthesized\">(דברים כ״ד:ב׳)</span>:"
+  },
+  "Rashi on Sukkah 24b:5:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T11:56:36.925Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24b:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה הוייה</strong> - כשמהווה עצמה לאיש אפשר בכסף כדנפקא לן בקידושין <span class=\"parenthesized\">(דף ב.)</span> קיחה קיחה משדה עפרון:"
+  },
+  "Rashi on Sukkah 24b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T12:07:06.451Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מספר כריתות</strong> - מדסמך כריתות לספר:"
+  },
+  "Rashi on Sukkah 24b:7:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 24b:7:1"
+    ],
+    "generatedAt": "2026-11-06T12:07:59.217Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לדבר הכורת</strong> - שתהא ספירת דברים כורתת ביניהם ולא יהא תנאי האוגדם יחד:"
+  },
+  "Rashi on Sukkah 24b:7:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 24b:7:1",
+      "Rashi on Sukkah 24b:7:2",
+      "Rashi on Sukkah 24b:7:3"
+    ],
+    "generatedAt": "2026-11-06T12:08:31.977Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין זה כריתות</strong> - דכל ימיה קשורה בו שמחמתו צריכה לעמוד שלא לילך:"
+  },
+  "Rashi on Sukkah 24b:7:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 24b:7:1",
+      "Rashi on Sukkah 24b:7:2"
+    ],
+    "generatedAt": "2026-11-06T12:09:20.024Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי זה כריתות</strong> - דיכול לבא לידי הפרדה לסוף שלשים הלכך מעכשיו מותרת לינשא מן התורה:"
+  },
+  "Rashi on Sukkah 24b:8:1": {
+    "dependsOn": [
+      "Sukkah 24b:8",
+      "Rashi on Sukkah 24b:7:1",
+      "Rashi on Sukkah 24b:7:2",
+      "Rashi on Sukkah 24b:7:3"
+    ],
+    "generatedAt": "2026-11-06T12:13:08.952Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכרת כריתות</strong> - דמצי למיכתב ספר כרת:"
+  },
+  "Rashi on Sukkah 24b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T12:18:51.905Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בין אילנות</strong> - בארץ ולא סמכה עליהן אבל הן דופנותיה:"
+  },
+  "Tosafot on Sukkah 24b:12:1": {
+    "dependsOn": [
+      "Eruvin 15a:9",
+      "Eruvin 15a:10",
+      "Eruvin 15b:1",
+      "Tosafot on Eruvin 15a:4:1",
+      "Eruvin 15a:4"
+    ],
+    "generatedAt": "2026-11-06T12:24:58.800Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 24b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא איכא נופו דעביד לה בהוצא ודפנא</strong> - תימה דבפרק קמא דעירובין <span class=\"parenthesized\">(דף טו.)</span> דאמר רבא מחיצה העומדת מאליה לא שמה מחיצה ופריך מהכא ומשני בשנטעו מתחלה לכך הא על כרחך מוקמי לה הכא דעביד ליה בהוצא ודפנא ותו לא צריכין לנוטעו מתחלה לכך וי\"ל דבין הכא בין התם דייק משום דמשמע ליה דאיירי בכל ענין בין היכא דהוי רוב הדופן מעץ האילן הקשה שאין הולך ובא ברוח בין הוי רוב הדופן מן הנוף ופריך התם מן הקשה והכא פריך מן הנוף והא דפריך הכא אי הכי מאי למימרא ולא משני דאשמעינן מחיצה העומדת מאליה שמה מחיצה ולא נטעו מתחלה לכך דכך הוא מסקנא דהתם דכולהו מודו במחיצה לא חשיב זה חידוש משום דקיימא לן כאביי בלחי העומד מאיליו דשמיה לחי וכל שכן מחיצה:"
+  },
+  "Tosafot on Sukkah 24b:2:1": {
+    "dependsOn": [
+      "Sukkah 24b:2",
+      "Tosafot on Sukkah 24b:5:1",
+      "Tosafot on Sukkah 24b:5:2",
+      "Tosafot on Sukkah 24b:3:1",
+      "Tosafot on Sukkah 23b:5:4",
+      "Kiddushin 21b:6",
+      "Kiddushin 21b:5"
+    ],
+    "generatedAt": "2026-11-06T11:45:41.096Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 24b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תלמוד לומר וכתב לה מכל מקום</strong> - וא\"ת אימא וכתב כלל ספר פרט כלל ופרט אין בכלל אלא מה שבפרט ועוד האמר בסוטה בפרק היה מביא <span class=\"parenthesized\">(סוטה ד' יז.)</span> אין כותבין לא על הלוח ולא על הנייר ולא על הדיפתרא אלא על המגילה שנאמר בספר והכא נמי כתיב ספר והכא נמי הוה ליה למיפסל כל דבר חוץ ממגילה ואין לחלק בין ספר לבספר ועוד דהכא נמי אמרינן ורבנן נמי אי כתב בספר כדקאמרת משמע שאז היה לו לרבות כל דבר שאין בו רוח חיים וי\"ל דגבי סוטה דכתיב <span class=\"parenthesized\">(במדבר ה)</span> וכתב את האלות בספר הוה כלל ופרט אבל הכא ונתן בידה חזר וכלל אע\"ג דבברייתא לא מייתי כללא בתרא דכוותה אשכחן בפ\"ק דקדושין <span class=\"parenthesized\">(ד' כא:)</span> דקתני בברייתא אין לי אלא מרצע מניין לרבות הסול והסירה והמקדח והמכתב ת\"ל ולקחת לרבות כל דבר הניקח ביד ומוכחא הסוגיא דמכלל ופרט וכלל דריש דונתת באזנו ובדלת חזר וכלל:"
+  },
+  "Tosafot on Sukkah 24b:3:1": {
+    "dependsOn": [
+      "Tosafot on Sukkah 24b:3:1"
+    ],
+    "generatedAt": "2026-11-06T11:50:04.737Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 24b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה ספר שאין בו רוח חיים</strong> - בפ' בכל מערבין <span class=\"parenthesized\">(עירובין דף כז:)</span> גבי מעשר שני דכתיב בבקר ובצאן נקט צד של פרי מפרי וגדולי קרקע ולעיל בפ\"ק <span class=\"parenthesized\">(סוכה ד' יא:)</span> נקט מה חגיגה דבר שאין מקבל טומאה וגידולו מן הארץ בכל אחד כפי מה שדומה לחכמים ענין הראוי לו:"
+  },
+  "Tosafot on Sukkah 24b:5:1": {
+    "dependsOn": [
+      "Sukkah 24b:5",
+      "Maharsha: Chidushei Halachot on Sukkah 24b:1"
+    ],
+    "generatedAt": "2026-11-06T11:59:55.450Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 24b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבנן האי וכתב מאי עביד ליה</strong> - אף ע\"ג דאיצטריך לשמה תרי קראי כתיבי וא\"ת ולרבי יוסי הגלילי אמאי צריכי תרוייהו דמההיא דלשמה דרשינן שפיר כלל ופרט ויש לומר דבפ' המגרש <span class=\"parenthesized\">(גיטין ד' פז.)</span> דרשי' וכתב לה ולא לה ולחברתה:"
+  },
+  "Tosafot on Sukkah 24b:5:2": {
+    "dependsOn": [
+      "Tosafot on Sukkah 24b:5:2"
+    ],
+    "generatedAt": "2026-11-06T12:06:28.985Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 24b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכתיבה מתגרשת ואינה מתגרשת בכסף</strong> - הך דרשה לרבא אבל לאביי נפקא ליה מסברא בריש קדושין <span class=\"parenthesized\">(ד' ה.)</span> יאמרו כסף מכניס כסף מוציא יאמרו סניגור יעשה קטיגור ומ\"מ לאביי נמי איצטריך וכתב לה שבכתיבה מתגרשת ולא בחליצה דבריש מסכת קדושין <span class=\"parenthesized\">(ד' ג:)</span> דריש לה מספר כורתה ואין דבר אחר כורתה וההיא דרשה כרבי יוסי הגלילי היא כדמשמע הכא וקצת תימה דלא נקיט התם לענין חליצה הך דרשא דכתב דהויא כרבנן וי\"ל דאורחא דהש\"ס הכי בכל דוכתא להביא דרשה הפשוטה לכאורה כדאשכחן פרק החובל <span class=\"parenthesized\">(ב\"ק דף פז.)</span> דמייתי שבח נעורים לאביה גבי חבלה ובריש קדושין <span class=\"parenthesized\">(דף ג:)</span> משמע דבנעוריה בית אביה בהפרת נדרים כתיב וכן בפרק אחד דיני ממונות <span class=\"parenthesized\">(סנהדרין דף לד:)</span> ובפרק בא סימן <span class=\"parenthesized\">(נדה דף נ. ושם)</span> דדריש נגעים אין רואין אותן אלא ביום מביום הראות בו בשר חי יטמא כדאביי דפרק קמא דמועד קטן <span class=\"parenthesized\">(דף ח. ושם)</span> ושביק דרשה דרבא דדריש דכתיב לי ולא לאורי וכן פרק הקורא את המגילה למפרע <span class=\"parenthesized\">(מגילה דף כ.)</span> דדריש ולא מוהלין אלא ביום מדכתיב וביום השמיני ימול ובפרק ר\"א אם לא הביא <span class=\"parenthesized\">(שבת דף קלב. ושם)</span> מפיק ליה מבן שמונת ימים ולא לילות וביום מוקי לה ביום אפילו בשבת:"
+  },
+  "Tosafot on Sukkah 24b:7:1": {
+    "dependsOn": [
+      "Tosafot on Sukkah 24b:7:1",
+      "Tosafot on Sukkah 24b:2:1",
+      "Tosafot on Sukkah 24b:3:1",
+      "Tosafot on Sukkah 24b:5:1",
+      "Maharsha on Sukkah 24b:2",
+      "Maharshal on Sukkah 24b:3",
+      "Rashi on Sukkah 24b:7:1",
+      "Rashi on Sukkah 24b:7:2",
+      "Rashi on Sukkah 24b:7:3",
+      "Tosafot on Sukkah 24b:12:1",
+      "Tosafot on Sukkah 23b:5:4"
+    ],
+    "generatedAt": "2026-11-06T12:12:08.449Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 24b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על מנת שלא תלכי לבית אביך לעולם אין זה כריתות</strong> - תימה והא אם מת <span class=\"parenthesized\">(אביו)</span> לא חשיבה תו בית <span class=\"parenthesized\">(אביו)</span> כדתנן בנדרים פרק השותפין <span class=\"parenthesized\">(נדרים ד' מו.)</span> קונם לביתך שאיני נכנס שדך שאיני לוקח מת או שמכרו לאחר מותר וי\"ל דבית אביו קרויין כל יוצאי חלציו של אביו ואע\"פ שמת כדאשכחן גבי תמר שהיתה בתו של שם וכתיב <span class=\"parenthesized\">(בראשית ל״ח:י״א)</span> שבי אלמנה בית אביך וכבר מת אביה כדמוכחי קראי:"
+  },
+  "Tosafot on Sukkah 24b:8:1": {
+    "dependsOn": [
+      "Tosafot on Sukkah 24b:5:1",
+      "Tosafot on Gittin 83b:17:1"
+    ],
+    "generatedAt": "2026-11-06T12:18:20.219Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 24b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואידך מכרת כריתות נפקא</strong> - קשיא לרבינו תם דבפ' המגרש <span class=\"parenthesized\">(גיטין דף פג:)</span> קאמר על רבנן דרבי אליעזר כרת כריתות לא דרשי ור' יוסי הגלילי בכלל דרבנן ויש לומר דלא קאמר לא משמע ליה אלא לא דריש לההיא דרשה:"
+  }
+}

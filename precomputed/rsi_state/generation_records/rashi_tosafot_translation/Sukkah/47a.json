@@ -1,0 +1,465 @@
+{
+  "Rashi on Sukkah 47a:10:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 47a:8:1",
+      "Rashi on Sukkah 47a:9:1",
+      "Rashi on Sukkah 47a:11:1",
+      "Rashi on Sukkah 47a:12:1"
+    ],
+    "generatedAt": "2026-11-08T02:16:15.258Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב אשי אמר</strong> - בשביעי כתיב במספרם כמשפטם משמע כמשפט כל קרבנות שאר הימים ובקרבנות שמיני כתיב במספרם כמשפט עשאן משפט חלוק לעצמו:"
+  },
+  "Rashi on Sukkah 47a:11:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 47a:10:1",
+      "Rashi on Sukkah 47a:11:2",
+      "Rashi on Sukkah 47a:11:3",
+      "Rashi on Sukkah 47a:11:4",
+      "Rashi on Sukkah 46b:14:4",
+      "Rashi on Sukkah 2a:1:1",
+      "Rashi on Sukkah 2a:1:2",
+      "Rashi on Sukkah 2a:1:3",
+      "Sukkah 47a:4",
+      "Rashi on Sukkah 47a:1:1",
+      "Rashi on Sukkah 47a:1:2",
+      "Rashi on Sukkah 47a:1:3",
+      "Rashi on Sukkah 46b:1:1"
+    ],
+    "generatedAt": "2026-11-08T02:20:42.032Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לימא מסייע ליה</strong> - לר' יוחנן דאמר זמן בשמיני:"
+  },
+  "Rashi on Sukkah 47a:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T02:21:08.535Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הפרים האילים הכבשים</strong> - האמורים בקרבנות החג לכל יום:"
+  },
+  "Rashi on Sukkah 47a:11:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 47a:11:1",
+      "Rashi on Sukkah 47a:11:2",
+      "Rashi on Sukkah 47a:11:3",
+      "Rashi on Sukkah 47a:11:4"
+    ],
+    "generatedAt": "2026-11-08T02:22:11.478Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעכבין זה את זה</strong> - אם חסר אחד מן הראוין ליום אין מקריבין:"
+  },
+  "Rashi on Sukkah 47a:11:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 47a:11:1",
+      "Rashi on Sukkah 47a:11:2",
+      "Rashi on Sukkah 47a:11:3",
+      "Sukkah 47a:11",
+      "Rashi on Sukkah 47a:12:1"
+    ],
+    "generatedAt": "2026-11-08T02:23:02.478Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47a:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהרי מתמעטין</strong> - מיום אל יום אלמא לא קפיד עליה רחמנא הלכך אף האמורין ליום אין מעכבין:"
+  },
+  "Rashi on Sukkah 47a:12:1": {
+    "dependsOn": [
+      "Sukkah 47a:12"
+    ],
+    "generatedAt": "2026-11-08T02:23:50.705Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרו לו</strong> - אם מכאן אתה למד אף האילים והכבשים לא יעכבו שהרי כולן מתמעטין בשמיני דכל ימי החג אילים שנים וכבשים י\"ד ובשמיני איל אחד ושבעה כבשים:"
+  },
+  "Rashi on Sukkah 47a:12:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 47a:12:1",
+      "Rashi on Sukkah 47a:12:3"
+    ],
+    "generatedAt": "2026-11-08T02:24:25.318Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רגל בפני עצמו הוא</strong> - ואין קרבנותיו בכלל שאר קרבנות החג ואין למידין הימנו לקרבנות החג:"
+  },
+  "Rashi on Sukkah 47a:12:3": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Sukkah 47a:1",
+      "Rashi on Sukkah 47a:12:1",
+      "Rashi on Sukkah 47a:12:2",
+      "Rashi on Sukkah 47a:12:4",
+      "Rashi on Sukkah 47a:12:5",
+      "Rashi on Sukkah 47a:12:6"
+    ],
+    "generatedAt": "2026-11-08T02:25:19.921Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47a:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טעונין קרבנות</strong> - לעצמן אף זה קרבן לעצמו ואינו מסדר האחרים:"
+  },
+  "Rashi on Sukkah 47a:12:4": {
+    "dependsOn": [
+      "Sukkah 55a:4",
+      "Sukkah 55a:5",
+      "Sukkah 55a:6",
+      "Rashi on Sukkah 55a:4:1",
+      "Rashi on Sukkah 55a:4:2",
+      "Rashi on Sukkah 55a:4:3",
+      "Rashi on Sukkah 55a:4:6",
+      "Rashi on Sukkah 47a:12:1",
+      "Rashi on Sukkah 47a:12:2",
+      "Rashi on Sukkah 47a:12:3",
+      "Rashi on Sukkah 47a:12:5",
+      "Rashi on Sukkah 47a:12:6"
+    ],
+    "generatedAt": "2026-11-08T02:27:33.895Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47a:12:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיר</strong> - שהלוים אומרים בקרבנות שמיני אינו מסדר שיר החג ולא פירש לי שיר של שמיני אבל שיר של חג מפורש בהחליל <span class=\"parenthesized\">(לקמן סוכה דף נה.)</span> בינו בוערים בעם כו' הבו לה' כולן רמוזים על עסקי מתנות עניים מפני שזמן אסיפה הוא ועת ליתן לקט שכחה ופאה ומעשרות שישמעו מפרישים ויפרישו בעין יפה:"
+  },
+  "Rashi on Sukkah 47a:12:5": {
+    "dependsOn": [
+      "Sukkah 47a:12",
+      "Rashi on Sukkah 47a:12:1",
+      "Rashi on Sukkah 47a:12:2",
+      "Rashi on Sukkah 47a:12:3",
+      "Rashi on Sukkah 47a:12:4",
+      "Rashi on Sukkah 47a:12:5",
+      "Rashi on Sukkah 47a:12:6"
+    ],
+    "generatedAt": "2026-11-08T02:28:24.420Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47a:12:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וברכה</strong> - מפרש ואזיל מאי היא:"
+  },
+  "Rashi on Sukkah 47a:12:6": {
+    "dependsOn": [
+      "Rashi on Rosh Hashanah 5a:2:1",
+      "Rosh Hashanah 5a:2"
+    ],
+    "generatedAt": "2026-11-08T02:30:50.128Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47a:12:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולינה</strong> - ללון לילה של מוצאי י\"ט הראשון בירושלים דגמרי' מפסח דכתיב <span class=\"parenthesized\">(דברים ט״ז:ז׳)</span> ופנית בבקר והלכת לאהליך בי\"ט לא קאמר קרא שהרי הוא יום שחייבו חכמים ליראות בעזרה כך פי' בפ\"ק דר\"ה <span class=\"parenthesized\">(דף ה.)</span> ליראות בעזרה כדי להביא עולת ראייה ואי אפשר לומר והלכת לאהליך אלא בחולו של מועד וקאמרינן בבקר אלמא חייב ללון מוצאי י\"ט בתוך העיר ומי שלא הביא חגיגתו ביום ראשון והביא באחד מן הימים צריך ללון לילה שלאחריו:"
+  },
+  "Rashi on Sukkah 47a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T01:46:50.300Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לברוכי</strong> - לישב בסוכה:"
+  },
+  "Rashi on Sukkah 47a:1:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 47a:1:1",
+      "Rashi on Sukkah 47a:1:2",
+      "Rashi on Sukkah 47a:1:3",
+      "Sukkah 47a:1",
+      "Rashi on Sukkah 47a:5:1",
+      "Rashi on Sukkah 47a:5:2"
+    ],
+    "generatedAt": "2026-11-08T01:48:03.750Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ברוכי לא מברכינן</strong> - דשמיני הוא ואין שם סוכות עליו והיינו לזה ולזה לסוכה דלא מברכינן לברכה את יום שמיני חג עצרת הזה:"
+  },
+  "Rashi on Sukkah 47a:1:3": {
+    "dependsOn": [
+      "Community Translation on Rashi on Sukkah 47a:1:3",
+      "Rashi on Sukkah 47a:1:1",
+      "Rashi on Sukkah 47a:1:2",
+      "Sukkah 47a:3"
+    ],
+    "generatedAt": "2026-11-08T01:51:38.634Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נקוט דר' יוחנן בידך</strong> - דאמר לא מברכינן לישב בסוכה:"
+  },
+  "Rashi on Sukkah 47a:2:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Sukkah 47a:2:1",
+      "Sukkah 47a:2",
+      "Tosafot on Sukkah 47a:2:1"
+    ],
+    "generatedAt": "2026-11-08T01:52:34.494Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גמירי דמאפר קאתו</strong> - למדתי מרבותי שהן באו מן האפר שבהמותיהן רועות שם ולא ישבו בסוכה כל ימי החג:"
+  },
+  "Rashi on Sukkah 47a:3:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 47a:3:2",
+      "Sukkah 47a:2"
+    ],
+    "generatedAt": "2026-11-08T01:54:46.527Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלא מברכינן</strong> - ואפילו לרב יהודה דאמר שביעי לסוכה:"
+  },
+  "Rashi on Sukkah 47a:3:2": {
+    "dependsOn": [
+      "Sukkah 47a:3",
+      "Sukkah 47a:1",
+      "Rashi on Sukkah 47a:3:1"
+    ],
+    "generatedAt": "2026-11-08T01:55:42.142Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמרא דשמעתא מני רב יהודה בריה דרב שמואל</strong> - דאיהו אמר משמיה דרב וחזינא ליה דלא עביד כשמעתיה:"
+  },
+  "Rashi on Sukkah 47a:5:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Sukkah 47a:5:1",
+      "Rashi on Sukkah 47a:4:1",
+      "Rashi on Sukkah 47a:3:1",
+      "Rashi on Sukkah 47a:3:2",
+      "Sukkah 47a:1",
+      "Sukkah 47a:2",
+      "Sukkah 47a:3",
+      "Sukkah 47a:4",
+      "Rashi on Sukkah 47a:5:2",
+      "Rashi on Sukkah 47a:5:3",
+      "Rashi on Sukkah 46a:11:1",
+      "Sukkah 46a:10"
+    ],
+    "generatedAt": "2026-11-08T01:56:54.415Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תדע</strong> - דאומר בו זמן לפי שרגל בפני עצמו הוא:"
+  },
+  "Rashi on Sukkah 47a:5:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 47a:5:2",
+      "Translation on Rashi on Sukkah 47a:5:2",
+      "Rashi on Sukkah 47a:5:1",
+      "Rashi on Sukkah 47a:5:3"
+    ],
+    "generatedAt": "2026-11-08T01:57:42.361Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהרי חלוק</strong> - משאר הימים:"
+  },
+  "Rashi on Sukkah 47a:5:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 47a:5:1",
+      "Rashi on Sukkah 47a:5:2",
+      "Rashi on Sukkah 47a:5:4",
+      "Translation on Rashi on Sukkah 47a:5:3",
+      "Mishnah Sukkah 4:1"
+    ],
+    "generatedAt": "2026-11-08T02:05:22.448Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בג' דברים</strong> - אין יושבין בסוכה ואין נוטלין בו לולב ואין מנסכין בו מים כדתנן במתני' <span class=\"parenthesized\">(לעיל סוכה דף מב:)</span> סוכה וניסוך המים שבעה:"
+  },
+  "Rashi on Sukkah 47a:5:4": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Sukkah 47a:5:4",
+      "Rashi on Sukkah 47a:5:1",
+      "Rashi on Sukkah 47a:5:2",
+      "Rashi on Sukkah 47a:5:3",
+      "Rashi on Sukkah 47a:5:5",
+      "Rashi on Sukkah 46b:14:4",
+      "Rashi on Sukkah 45b:9:1",
+      "Rashi on Sukkah 45b:12:2",
+      "Rashi on Sukkah 2a:1:1",
+      "Rashi on Sukkah 2a:1:2"
+    ],
+    "generatedAt": "2026-11-08T02:07:48.314Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47a:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולר' יהודה נמי</strong> - דפליג בניסוך ואמר כל שמונה הרי חלוק מיהא בשני דברים:"
+  },
+  "Rashi on Sukkah 47a:5:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T02:08:33.823Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47a:5:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בלוג היה מנסך כל שמונה</strong> - בתרתי פליג דקאמר ת\"ק שלשה לוגין בכל יום ואיהו אמר בכל יום לוג וקאמר ת\"ק שבעה ולא שמיני והוא אומר כל ח':"
+  },
+  "Rashi on Sukkah 47a:6:1": {
+    "dependsOn": [
+      "Sukkah 47a:6",
+      "Rashi on Sukkah 47a:5:1",
+      "Rashi on Sukkah 47a:5:2",
+      "Rashi on Sukkah 47a:5:3",
+      "Rashi on Sukkah 47a:5:4",
+      "Rashi on Sukkah 47a:5:5",
+      "Steinsaltz on Sukkah 47a:6",
+      "Rashi on Sukkah 47a:6:1",
+      "Sukkah 47a:12",
+      "Rashi on Sukkah 47a:12:1",
+      "Rashi on Sukkah 47a:12:2",
+      "Rashi on Sukkah 47a:12:3",
+      "Rashi on Sukkah 47a:12:4",
+      "Rashi on Sukkah 47a:12:5",
+      "Rashi on Sukkah 47a:12:6"
+    ],
+    "generatedAt": "2026-11-08T02:12:56.723Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיום אינו חלוק</strong> - דאף י\"ט ראשון רשות:"
+  },
+  "Rashi on Sukkah 47a:7:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Sukkah 47a:7:1"
+    ],
+    "generatedAt": "2026-11-08T02:13:43.110Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זה חלוק משלפניו</strong> - שמיני חלוק מיום אתמול שביעי אינו חלוק אלא מן הראשון:"
+  },
+  "Rashi on Sukkah 47a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T02:14:28.877Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא כתיב פר והתם כתיב פרים</strong> - כל ימי החג קריבים פרים הרבה ומתמעטין והולכין אחד ליום עד יום שביעי שקריבין פרים שבעה ובשמיני פר אחד לבדו נמצא שאינו מסדר שאר הימים שהיה [לו] להקריב בו ששה:"
+  },
+  "Rashi on Sukkah 47a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T02:15:23.235Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם כתיב וביום והכא כתיב ביום</strong> - כל ימות החג כתיב בהו וביום השני וביום השלישי אבל בשמיני כתיב ביום השמיני חלקו מהן ולא עשאו מוסיף על הראשונים:"
+  },
+  "Tosafot on Sukkah 47a:10:1": {
+    "dependsOn": [
+      "Sukkah 47a:10",
+      "Rashi on Sukkah 47a:10:1",
+      "Chokhmat Shlomo on Sukkah 47a:2",
+      "Steinsaltz comment #1 on Sukkah 47a:10",
+      "Ritva on Sukkah 47a:4"
+    ],
+    "generatedAt": "2026-11-08T02:18:36.014Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 47a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא כתיב כמשפט</strong> - בכולהו כתיב כמשפט והאי בתרא כתיב כמשפטם ואין זה כענין האחרים דרב פפא דאמר בכולהו כתיב פרים ובהאי כתיב פר דקאי אשמיני וכן אההיא דר\"נ בר יצחק אבל לרב אשי אשביעי קאי דכתיב ביה כמשפטם לפי שהוא סוף הרגל וגמר החג כתב רחמנא כמשפטם לומר לך זהו משפטם של ששה ואין שמיני הבא אחריו כמשפט זה לומר לך כמשפטם:"
+  },
+  "Tosafot on Sukkah 47a:12:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 47a:12:1",
+      "Rashi on Sukkah 47a:12:2",
+      "Rashi on Sukkah 47a:12:3",
+      "Rashi on Sukkah 47a:12:4",
+      "Rashi on Sukkah 47a:12:5",
+      "Rashi on Sukkah 47a:12:6",
+      "Tosafot on Sukkah 47a:12:2",
+      "Tosafot on Sukkah 45a:3:1",
+      "Tosafot on Sukkah 45a:6:1"
+    ],
+    "generatedAt": "2026-11-08T02:33:18.646Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 47a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיר</strong> - <span class=\"rashi-quotation\">פירש בקונט'</span> לא פי' מהו שיר של שמיני ובמסכת סופרים משמע שהיו אומרים בבית הכנסת למנצח על השמינית ושמא כמו כן היו אומרים הלוים בבית המקדש וכן משמע בירושלמי:"
+  },
+  "Tosafot on Sukkah 47a:12:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T02:40:09.449Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 47a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לינה</strong> - ללון לילה של מוצאי י\"ט ראשון דגמרינן מפסח דכתיב <span class=\"parenthesized\">(דברים ט״ז:ז׳)</span> ופנית בבוקר והלכת לאהליך ואי אפשר לומר והלכת לאהליך אלא בחולו של מועד דביום טוב חייב בראיית פנים בעזרה אלא לבוקרו של מוצאי י\"ט קאמר והא לא קשיא ליה לינה כל שבעה מי איכא דפשיטא ליה דאיכא דמי שלא הביא חגיגה יום ראשון והביא באחד הימים צריך ללון לילה שאחריו אבל אזמן קשיא ליה דלא אסיק אדעתיה אם לא אמרו בראשונה שיאמרו בשני ועוד משום כוס וא\"ת ותיפוק ליה משום דטעון לינה משום שלמי שמחה דאיכא כל שמנה דתנן <span class=\"parenthesized\">(לעיל סוכה דף מב:)</span> ההלל והשמחה כל שמנה ואפי' בשאר ימות השנה אם הביא קרבן טעון לינת לילה כדתני' בספרי <span class=\"parenthesized\">(פרשת ראה)</span> ופנית בבקר והלכת לאהליך מלמד שטעונין לינה כלומר כל הזבחים דומיא דפסח אין לי אלא אלו בלבד מנין לרבות עופות ומנחות ועצים ולבונה שנאמר ופנית כל פינות שאתה פונה מן הבקר ואילך [ובפסח] שני פליגי תנאי בשמעתין ובפרק מי שהיה טמא <span class=\"parenthesized\">(פסחים צה: ושם)</span> ובספרי מפרש טעמא דמ\"ד טעון לינה דהרי הוא כעצים ולבונה וי\"ל דמשכחת דלא מייתי קרבן ביום שבא לירושלים כגון דשלח שלמיו מאתמול דנאכלין לשני ימים ועוד דבפ\"ק דחגיגה <span class=\"parenthesized\">(דף ח. ושם)</span> תניא ושמחת בחגך לרבות כל מיני שמחות לשמחה ואמרי' בפסחים פרק אלו דברים <span class=\"parenthesized\">(פסחים דף עא.)</span> אפי' בכסות נקיה ויין ישן ובענין אחר לא משכחת לה שמחת שמנה כשחל יום ראשון להיות בשבת משום דבעינן זביחה בשעת שמחה וכי האי גוונא אשכחן בירושלמי בפרק שני דביכורים דתנן וטעונין לינה א\"ר יונתן בשאין עמהן קרבן אבל יש עמהן קרבן בלא כך טעונין לינה מחמת הקרבן ובפ' דם חטאת <span class=\"parenthesized\">(זבחים דף צז. ושם)</span> משמע קצת דטעונין לינה כל שבעת ימי הפסח שכולן חשובין כלילה אחת גבי הא דתנן ר\"ט אומר אם בישל בכלי מתחילת הרגל יבשל בו כל הרגל ואמרי' בגמרא מ\"ט דר\"ט א\"ר יצחק דאמר קרא ופנית בבקר והלכת לאהליך הכתוב עשאן כולן בקר אחד ואע\"ג דלא קיימא מסקנא הכי דפריך עלה וכי אין פיגול ברגל וכי אין נותר ברגל מ\"מ לענין לינה יתכן דעשאן בקר אחד כפשטיה דקרא שאחר הרגל ישוב לביתו וניחא השתא דשמיני עצרת וביכורים דטעונין לינה מיתרבו מדכתיב ופנית ולחג הסוכות בעינן היקישא מחג המצות ולא מיתרבי מדכתיב ופנית כדאמרינן פ\"ק דר\"ה <span class=\"parenthesized\">(דף ה. ושם)</span> למאי הלכתא כתב רחמנא לחג הסוכות לאקושי לחג המצות מה חג המצות טעון לינה אף חג הסוכות טעון לינה דאי משום דכתיב ופנית הוה אמינא לילה אחד ואתיא היקישא לאשמועינן דאסור לצאת מירושלים כל ז' ימי החג שכל הרגל חשוב בקר אחד כחג המצות וניחא נמי הא דקאמרי' הכא שכשם ששבעת ימי החג טעון לינה:"
+  },
+  "Tosafot on Sukkah 47a:2:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 47a:2:1",
+      "Rashi on Sukkah 47a:1:1",
+      "Rashi on Sukkah 47a:1:2",
+      "Rashi on Sukkah 47a:1:3"
+    ],
+    "generatedAt": "2026-11-08T01:54:00.551Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 47a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גמירי דמאפר קאתו</strong> - באין מן האפר שבהמותיהן רועות שם ולא ישבו בסוכה כל ימי החג ואע\"ג דאמרי' סוכת רועים לא היה להם:"
+  }
+}

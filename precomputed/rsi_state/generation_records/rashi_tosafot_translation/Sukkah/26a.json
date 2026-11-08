@@ -1,0 +1,484 @@
+{
+  "Rashi on Sukkah 26a:10:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 26a:10:2",
+      "Jastrow, בִּיצּוּעָא 1",
+      "Rashi on Sukkah 26a:3:1",
+      "Rashi on Sukkah 26a:3:2",
+      "Rashi on Sukkah 26a:3:3",
+      "Rashi on Sukkah 26a:8:1"
+    ],
+    "generatedAt": "2026-11-06T14:46:07.361Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 26a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרתי או תלת</strong> - שתים או שלש פעמים יתן לתוך פיו מורשייל\"ש:"
+  },
+  "Rashi on Sukkah 26a:10:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 26a:10:1"
+    ],
+    "generatedAt": "2026-11-06T14:46:59.874Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 26a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדטעים בר בי רב ועייל לכלה</strong> - בבוקר כשהולכין לבית המדרש ודואג שמא ימשכו השמועות וטועם מלא פיו ושותה:"
+  },
+  "Rashi on Sukkah 26a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T14:51:15.848Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 26a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ירדם</strong> - שמא תחטפנו שינה וישן קבע:"
+  },
+  "Rashi on Sukkah 26a:12:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 26a:14:2",
+      "Tosafot on Sukkah 26a:12:1",
+      "Rashi on Sukkah 26a:1:1",
+      "Rashi on Sukkah 26a:12:1",
+      "Steinsaltz on Sukkah 26a:12:1",
+      "Steinsaltz on Sukkah 26a:12",
+      "Rashi on Sukkah 26a:12:2"
+    ],
+    "generatedAt": "2026-11-06T14:52:27.242Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 26a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל לא שינת קבע</strong> - שמא יפיח בהן:"
+  },
+  "Rashi on Sukkah 26a:12:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 26a:12:1"
+    ],
+    "generatedAt": "2026-11-06T14:53:24.407Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 26a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מוסר שינתו לאחר</strong> - אומר לחברו אם ארדם העירני:"
+  },
+  "Rashi on Sukkah 26a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T14:58:06.230Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 26a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ערביך ערבא צריך</strong> - שמא אף הוא ישכב וישן:"
+  },
+  "Rashi on Sukkah 26a:13:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 26a:13:1",
+      "Rashi on Sukkah 26a:13:2",
+      "Rashi on Sukkah 26a:13:3",
+      "Rashi on Sukkah 26a:11:1"
+    ],
+    "generatedAt": "2026-11-06T14:59:00.264Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 26a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בין ברכיו</strong> - דודאי לא ירדם:"
+  },
+  "Rashi on Sukkah 26a:13:3": {
+    "dependsOn": [
+      "Sukkah 26a:12",
+      "Rashi on Sukkah 26a:13:1",
+      "Rashi on Sukkah 26a:13:2"
+    ],
+    "generatedAt": "2026-11-06T15:00:20.440Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 26a:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבא אמר</strong> - לשמא ירדם לא חיישינן הלכך בתפילין שרי וסוכה היינו טעמא דאסור שינת עראי לפי שאין קבע לשינה ואין בה חילוק בין קבע לעראי לענין סוכה שאין אדם קובע עצמו לשינה שפעמים שאינו אלא מנמנם מעט ודיו בכך הלכך זו היא שינתו וגבי תפילין דטעמא שמא יפיח בהם ולאו משום איסור שינה בניים פורתא לא אתי לידי הפחה:"
+  },
+  "Rashi on Sukkah 26a:14:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 26a:14:2",
+      "Rashi on Sukkah 26a:14:3"
+    ],
+    "generatedAt": "2026-11-06T15:01:15.209Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 26a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דנקיט להו בידיה</strong> - לא קבע ולא עראי שמא יפלו מידו:"
+  },
+  "Rashi on Sukkah 26a:14:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T15:01:58.314Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 26a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמנחי ברישיה</strong> - עראי מותר וקבע אסור שמא יפיח:"
+  },
+  "Rashi on Sukkah 26a:14:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 26a:14:1",
+      "Rashi on Sukkah 26a:14:2",
+      "Rashi on Sukkah 26a:14:3",
+      "Sukkah 26a:14"
+    ],
+    "generatedAt": "2026-11-06T15:03:55.466Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 26a:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דפריס סודרא עלייהו</strong> - הניחם אצל מראשותיו בין קבע בין עראי דלא נתנה תורה למלאכי השרת:"
+  },
+  "Rashi on Sukkah 26a:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T15:04:29.772Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 26a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וראה קרי</strong> - צריך לסלקן מראשו בעוד הקרי עליו:"
+  },
+  "Rashi on Sukkah 26a:1:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Sukkah 26a:1:1",
+      "Sukkah 26a:1",
+      "Rashi on Sukkah 25b:10:1",
+      "Rashi on Sukkah 25b:10:2",
+      "Rashi on Sukkah 25b:10:3"
+    ],
+    "generatedAt": "2026-11-06T14:11:10.057Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 26a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום ר' שילא אמרו חתן פטור</strong> - מקריאת שמע דטריד ושאר בני חופה חייבין ולית להו להני תנאי העוסק במצוה פטור מן המצוה:"
+  },
+  "Rashi on Sukkah 26a:2:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 26a:2:2"
+    ],
+    "generatedAt": "2026-11-06T14:19:01.745Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 26a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תגריהן</strong> - הלוקחין מהן כדי למכור ולהמציאן לצריך להם:"
+  },
+  "Rashi on Sukkah 26a:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T14:20:15.351Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 26a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מוכרי תכלת</strong> - לציצית:"
+  },
+  "Rashi on Sukkah 26a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T14:22:27.441Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 26a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הולכי דרכים ביום פטורין מן הסוכה ביום</strong> - דכתיב בסוכות תשבו כעין ישיבת ביתו כשם שכל השנה אינו נמנע מלכת בדרך בסחורה כך כל ימות החג שאינו יום טוב לא הצריכו הכתוב למנוע:"
+  },
+  "Rashi on Sukkah 26a:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T14:23:11.467Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 26a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הולכים לדבר מצוה פטורין ביום ובלילה</strong> - אף על פי שאין הולכין אלא ביום ומשום דטרידים ודואגים במחשבת המצוה ובתיקוניה פטורין מן המצוה:"
+  },
+  "Rashi on Sukkah 26a:3:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T14:23:38.273Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 26a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ארקתא</strong> - על שפת הנהר:"
+  },
+  "Rashi on Sukkah 26a:3:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T14:24:17.209Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 26a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלוחי מצוה אנן</strong> - שבאנו לשמוע הדרשה ולהקביל פני ריש גלותא:"
+  },
+  "Rashi on Sukkah 26a:5:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 26a:5:2"
+    ],
+    "generatedAt": "2026-11-06T14:26:27.768Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 26a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שומרי גנות ופרדסין</strong> - אין זזין משם:"
+  },
+  "Rashi on Sukkah 26a:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T14:27:05.160Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 26a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כעין תדורו</strong> - כדרך שהוא דר כל השנה בביתו הזקיקתו תורה להניח דירתו ולדור כאן בסוכה עם מטותיו וכלי תשמישו ומצעותיו וזה אינו יכול להביאן שם מפני הטורח:"
+  },
+  "Rashi on Sukkah 26a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T14:27:47.143Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 26a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פרצה קוראה לגנב</strong> - משל הדיוט הוא ואף כאן הגנב רואה אותו יושב בסוכה בלילה והוא נכנס וגונב הפירות לרוח אחרת:"
+  },
+  "Rashi on Sukkah 26a:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T14:28:21.191Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 26a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כריא דפירי</strong> - כרי של פירות שהוא תמיד לפניו ויכול לשומרן ואין כאן פרצה קוראה לגנב:"
+  },
+  "Rashi on Sukkah 26a:7:1": {
+    "dependsOn": [
+      "Steinsaltz on Sukkah 26a:7:1",
+      "Steinsaltz on Sukkah 26a:7",
+      "Steinsaltz comment #1 on Sukkah 26a:7"
+    ],
+    "generatedAt": "2026-11-06T14:32:16.160Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 26a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי יוסי בריבי</strong> - יוסי החכם חריף שבדורו והוא ר' יוסי בן חלפתא:"
+  },
+  "Rashi on Sukkah 26a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T14:33:56.577Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 26a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למגנא בכילתא</strong> - ואע\"פ שיש לה גג וגבוהה עשרה והוי כאילו חוץ לסוכה:"
+  },
+  "Rashi on Sukkah 26a:8:2": {
+    "dependsOn": [
+      "Jastrow, בַּקָּא 1",
+      "Rashi on Sukkah 26a:8:1",
+      "Rashi on Sukkah 26a:8:3",
+      "Steinsaltz on Sukkah 26a:8"
+    ],
+    "generatedAt": "2026-11-06T14:36:17.499Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 26a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום בקי</strong> - צינצל\"ש:"
+  },
+  "Rashi on Sukkah 26a:8:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T14:38:27.393Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 26a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סרחא דגרגישתא</strong> - קרקע לבנה שהיו טחין בה קרקעית הסוכה:"
+  },
+  "Rashi on Sukkah 26a:9:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Sukkah 26a:9:1",
+      "Rashi on Sukkah 26a:3:1",
+      "Rashi on Sukkah 26a:8:1"
+    ],
+    "generatedAt": "2026-11-06T14:44:02.567Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 26a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מצטער</strong> - שהסוכה מצערתו:"
+  },
+  "Tosafot on Sukkah 26a:10:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 26a:10:1",
+      "Rashi on Sukkah 26a:10:2",
+      "Sukkah 26a:10",
+      "Sukkah 27a:2",
+      "Rashi on Sukkah 27a:2:1"
+    ],
+    "generatedAt": "2026-11-06T14:49:45.840Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 26a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרתי <span class=\"parenthesized\">(או)</span> תלת</strong> - <span class=\"rashi-quotation\">פירש בקונט'</span> שתים או שלש פעמים יתן לתוך פיו מורשי\"ל בלע\"ז ויש ספרים שכתוב בהן תרתי תלת ביעי והכל אחד כדמוכח לקמן גבי לימא תיהוי תיובתיה דרב יוסף ואביי דשיעור בית הבליעה כביצה ולבסוף מסיק כדטעים צורבא מדרבנן ואזיל לכלה שזה מלא פיו דהיינו כביצה ושיעור זה דוקא בפת דפירי לאו בעו סוכה כדמסיק פרק בתרא דיומא <span class=\"parenthesized\">(דף עט: ושם)</span> דקבע דידהו כאכילת עראי דפת:"
+  },
+  "Tosafot on Sukkah 26a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T14:57:39.675Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 26a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל שינת קבע לא</strong> - והא דאמרי' פרק במה טומנין <span class=\"parenthesized\">(שבת דף מט. ושם)</span> תפילין צריכין גוף נקי כאלישע בעל כנפים ואמר אביי שלא יפיח בהן ורבא אמר שלא ישן בהן לאו דשרי אביי לישן דהא אסר אביי גופיה הכא אלא קסבר אע\"פ שאינו זהיר בשינה כאלישע מניחן כיון דזהיר שלא יפיח דשינה גופה אינה אלא גזרה שמא יפיח:"
+  },
+  "Tosafot on Sukkah 26a:15:1": {
+    "dependsOn": [
+      "Sukkah 26a:15",
+      "Sukkah 26b:3",
+      "Chokhmat Shlomo on Sukkah 26a:2",
+      "Maharam on Sukkah 26a:3"
+    ],
+    "generatedAt": "2026-11-06T15:06:19.181Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 26a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הישן בתפילין</strong> - מתוך הלשון משמע דרבי יעקב שרי אפי' שינת קבע דאי לאו הכי במאי פליגי וי\"ל דכולהו מודו בשינת קבע דאסיר ופליגי במילתיה דרבי נתן דבסמוך דשרי. לישן בתפילין ביום שאין דרכו לישן שינת קבע ובלילה חולץ אפילו לשינת עראי דלמא ממליך וישן שינת קבע ור' יעקב לא חייש דלמא ממליך:"
+  },
+  "Tosafot on Sukkah 26a:1:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 26a:1:1",
+      "Sukkah 26a:1"
+    ],
+    "generatedAt": "2026-11-06T14:18:27.694Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 26a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חתן פטור מקריאת שמע</strong> - דטריד ושאר בני חופה חייבין לית להו להני תנאי העוסק במצוה פטור מן המצוה <span class=\"rashi-quotation\">כדפירש בקונט'</span> וקשיא דאי לית להו א\"כ יתחייב חתן בסוכה ומשמע דבחתן פוטר יותר מת\"ק לכך נראה דקסבר חתן אין יכול לכוין דעתו כלל אפי' בפסוק ראשון אבל שאר בני חופה יכולין לכוין ואקריאת שמע לחודיה קאי ובכולהו אחריני מודי לת\"ק:"
+  },
+  "Tosafot on Sukkah 26a:2:1": {
+    "dependsOn": [
+      "Sukkah 26a:2",
+      "Sukkah 26a:1"
+    ],
+    "generatedAt": "2026-11-06T14:21:27.479Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 26a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומכל מצות האמורות בתורה</strong> - מאי דאיצטריך למיחשב הני אגב דחשבינהו בברייתא קמייתא:"
+  },
+  "Tosafot on Sukkah 26a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T14:24:59.619Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 26a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הולכי דרכים ביום</strong> - כל זה נפקא מתשבו כעין תדורו שכשם שאדם בביתו אינו נמנע מלצאת לדרך וכן מצטער דפטרו לעיל מן הסוכה היינו מתשבו כעין תדורו דאין אדם דר במקום שמצטער:"
+  },
+  "Tosafot on Sukkah 26a:3:2": {
+    "dependsOn": [
+      "Tosafot on Sukkah 26a:3:1",
+      "Tosafot on Sukkah 26a:3:2",
+      "Rashi on Sukkah 26a:3:1",
+      "Rashi on Sukkah 26a:3:2",
+      "Rashi on Sukkah 26a:3:3",
+      "Rashi on Sukkah 26a:3:4"
+    ],
+    "generatedAt": "2026-11-06T14:25:58.227Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 26a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחייבין בלילה</strong> - כשאדם לן בלילה ביישוב:"
+  },
+  "Tosafot on Sukkah 26a:6:1": {
+    "dependsOn": [
+      "Tosafot on Sukkah 26a:6:1",
+      "Sukkah 26a:6",
+      "Tosafot on Sukkah 26a:3:1"
+    ],
+    "generatedAt": "2026-11-06T14:30:21.251Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 26a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פרצה קוראה לגנב</strong> - לאו משום דלית ליה לרבא דרשה דתשבו כעין תדורו דברייתא היא לקמן בפירקין <span class=\"parenthesized\">(סוכה דף כח:)</span>:"
+  },
+  "Tosafot on Sukkah 26a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T14:33:21.404Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 26a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואפילו חש בעיניו</strong> - אע\"פ שאין בו סכנת עין דסכנת אבר כסכנת נפשות אפילו לחלל עליו את השבת כדמוכח פרק אין מעמידין <span class=\"parenthesized\">(ע\"ז דף כח.)</span> גבי עין שמרדה:"
+  },
+  "Tosafot on Sukkah 26a:8:1": {
+    "dependsOn": [
+      "Tosafot on Sukkah 11a:1:1",
+      "Tosafot on Sukkah 10b:10:1",
+      "Rashi on Sukkah 26a:8:1",
+      "Rashi on Sukkah 26a:8:2",
+      "Rashi on Sukkah 26a:8:3",
+      "Tosafot on Sukkah 2a:14:1",
+      "Sukkah 10b:11",
+      "Sukkah 10b:12",
+      "Sukkah 10b:13",
+      "Sukkah 10b:14",
+      "Sukkah 10b:15",
+      "Sukkah 10b:16",
+      "Sukkah 11a:1",
+      "Tosafot on Sukkah 11a:6:1"
+    ],
+    "generatedAt": "2026-11-06T14:41:52.905Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 26a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום בקי</strong> - ואע\"פ שבפ\"ק <span class=\"parenthesized\">(דף יא.)</span> דרש רבה בר רב הונא מותר לישן בכילת חתנים אע\"פ שיש לה גג ואע\"פ שגבוהה עשרה אין הלכה <span class=\"parenthesized\">(כרבה)</span> כדפירשתי שם:"
+  }
+}

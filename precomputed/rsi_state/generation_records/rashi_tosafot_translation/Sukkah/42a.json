@@ -1,0 +1,504 @@
+{
+  "Rashi on Sukkah 42a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T17:45:29.399Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חייב בלולב</strong> - לחנכו מדבריהם:"
+  },
+  "Rashi on Sukkah 42a:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T17:46:06.979Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשמור תפילין</strong> - שלא יכנוס בהן לבית הכסא:"
+  },
+  "Rashi on Sukkah 42a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T17:46:49.856Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היודע לשמור גופו</strong> - מטומאת מגע ומשא ואהל:"
+  },
+  "Rashi on Sukkah 42a:12:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T17:47:47.301Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אוכלין על גופו טהרות</strong> - אם נגע גופו בטהרות אין חוששין להם אבל לא על ידיו אם נגע בידיו בטהרות חוששין להם שיש יודע לשמור גופו ואין יודע לשמור ידיו מתורת סתם ידים שגזרו עליהם להיות שניות אלא אם כן יודע לשומרם אבל היודע לשמור את ידיו משנטלם אינו נוגע בשום דבר ספק או בספק המטמא את הידים ואם לא נזהר ובא ליגע בטהרות נוטל ידיו:"
+  },
+  "Rashi on Sukkah 42a:12:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 42a:12:1",
+      "Rashi on Sukkah 42a:12:2",
+      "Rashi on Sukkah 42a:12:3",
+      "Rashi on Sukkah 42a:10:1",
+      "Rashi on Sukkah 42a:10:2",
+      "Rashi on Sukkah 41b:1:1",
+      "Rashi on Sukkah 41b:1:2"
+    ],
+    "generatedAt": "2026-11-07T17:49:13.064Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אוכלין על ידיו טהרות</strong> - שנגעו ידיו בהם:"
+  },
+  "Rashi on Sukkah 42a:12:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T17:50:03.007Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:12:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והיודע לישאל</strong> - שאם שואלין אותו נגעת בטומאה זו יודע להשיב הן או לאו או איני יודע:"
+  },
+  "Rashi on Sukkah 42a:12:5": {
+    "dependsOn": [
+      "Rashi on Sukkah 42a:12:3",
+      "Rashi on Sukkah 42a:12:4",
+      "Rashi on Sukkah 42a:12:5",
+      "Rashi on Sukkah 42a:12:1",
+      "Rashi on Sukkah 42a:12:2",
+      "Rashi on Sukkah 42a:12:6",
+      "Rashi on Sukkah 42a:12:7",
+      "Rashi on Sukkah 42a:12:8",
+      "Rashi on Sukkah 41b:1:1",
+      "Rashi on Sukkah 41b:1:2"
+    ],
+    "generatedAt": "2026-11-07T17:51:26.767Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:12:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ברשות הרבים ספיקו טהור</strong> - אם שאלוהו ואמר איני יודע:"
+  },
+  "Rashi on Sukkah 42a:12:6": {
+    "dependsOn": [
+      "Rashi on Sukkah 42a:12:4",
+      "Rashi on Sukkah 42a:12:5",
+      "Rashi on Sukkah 42a:12:7",
+      "Rashi on Sukkah 42a:12:6",
+      "Rashi on Sukkah 42a:12:8",
+      "Rashi on Sukkah 42a:1:1",
+      "Rashi on Sukkah 42a:2:1",
+      "Rashi on Sukkah 42a:3:1",
+      "Rashi on Sukkah 41b:1:1",
+      "Sotah 28a:15",
+      "Sotah 28a:16",
+      "Sotah 28b:1",
+      "Sotah 28b:2",
+      "Sotah 28b:3"
+    ],
+    "generatedAt": "2026-11-07T17:54:42.589Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:12:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ברשות היחיד ספיקו טמא</strong> - הכי גמירי לה הלכתא מסוטה כדאמרינן במסכת סוטה <span class=\"parenthesized\">(דף כח.)</span> ומכאן אתה דן לשרץ כו':"
+  },
+  "Rashi on Sukkah 42a:12:7": {
+    "dependsOn": [
+      "Rashi on Sukkah 42a:12:1",
+      "Rashi on Sukkah 42a:12:8"
+    ],
+    "generatedAt": "2026-11-07T17:55:19.964Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:12:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היודע לפרוס כפיו</strong> - כשהוא כהן:"
+  },
+  "Rashi on Sukkah 42a:12:8": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T17:56:36.440Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:12:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חולקין לו תרומה בבית הגרנות</strong> - ומקמי הכי אין חולקין לו בגורן אבל משגרין לו לביתו אם יודע לשומרה בטהרה דהכי תניא בגמרא דנושאין על האנוסה ביבמות <span class=\"parenthesized\">(דף צט:)</span> עשרה אין חולקין להם תרומה בבית הגרנות חרש שוטה וקטן כו' וכולן משגרין להם לבתיהם בבית הגרנות אין חולקין להם שבזיון תרומה הוא שאין כל רואיו יודעים בו שהוא בקי לשומרה אבל לביתן משגרין להם הבקיאים ומכירין בהם ומשיודע לפרוס כפיו ופורס בצבור הכל יודעים שהביא שתי שערות שאין קטן פורס כפיו כדאמרינן במגילה <span class=\"parenthesized\">(דף כד.)</span> הלכך חולקין לו:"
+  },
+  "Rashi on Sukkah 42a:1:1": {
+    "dependsOn": [
+      "Sukkah 42a:1"
+    ],
+    "generatedAt": "2026-11-07T16:55:34.257Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שנו</strong> - דפטור אלא שלא יצא ידי חובת נטילה קודם שהוציאו דהשתא טרוד במצוה וטעה בדבר מצוה אבל יצא בו קודם שהוציאו תו לא טעה בדבר מצוה הוא ולא טרוד מהשתא במצוה לעשותה:"
+  },
+  "Rashi on Sukkah 42a:1:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 42a:1:1",
+      "Rashi on Sukkah 41b:16:1",
+      "Rashi on Sukkah 41b:16:2",
+      "Rashi on Sukkah 42a:2:1",
+      "Rashi on Sukkah 42a:3:1",
+      "Rashi on Sukkah 42a:4:1"
+    ],
+    "generatedAt": "2026-11-07T16:58:03.910Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג הא מדאגבהיה נפיק ביה אמר אביי כשהפכו</strong> - הכי קשיא ליה ה\"ד לא יצא בו הא לא הוציאו אא\"כ הגביהו ומדאגבהיה נפק ביה ידי חובת לקיחה וקתני פטור אמר אביי כשהפכו כשהגביהו הפך העליון למטה והאגד למעלה ואמרינן לקמן אין יוצאין בהן אלא דרך גדילתן:"
+  },
+  "Rashi on Sukkah 42a:2:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 37a:7:1",
+      "Sukkah 37a:7",
+      "Rashi on Sukkah 42a:2:2",
+      "Tosafot on Sukkah 30a:2:2"
+    ],
+    "generatedAt": "2026-11-07T17:04:07.490Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דרך כבוד</strong> - כגון בסודר שכורך ידיו בסודר כדאמרן לעיל <span class=\"parenthesized\">(סוכה ד' לז.)</span>:"
+  },
+  "Rashi on Sukkah 42a:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T17:04:40.914Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודרך בזיון</strong> - כגון בקערה:"
+  },
+  "Rashi on Sukkah 42a:3:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 42a:3:1"
+    ],
+    "generatedAt": "2026-11-07T17:13:55.632Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אומר היה רבי יוסי עולת העוף שנמצאת בין אגפיים</strong> - נראה בעיני דהאי בין אגפיים אינו אלא לשון עופות עולת העוף שנמצאת בין עופות המלוקים לחטאת המפרכסין אצל המזבח שפעמים שהן נעשין על קרן אחת כדתנן בשחיטת קדשים <span class=\"parenthesized\">(זבחים ד' סג.)</span> חטאת העוף היתה נעשית על קרן מערבית דרומית ושלשה דברים היתה אותה הקרן משמשת מלמטה וג' מלמעלה מלמטה חטאת העוף והגשות ושירי הדם ומלמעלה ניסוך המים והיין ועולת העוף כשהיא רבה במזרח שעיקר מקום עולת העוף בקרן דרומית מזרחית וכשהיו כהנים רבים עומדים ומולקים עולת העוף במזרח באים למערב ונעשית שם בקרן חטאת העוף אלא שהעולה למעלה מחוט הסקרא והחטאת למטה:"
+  },
+  "Rashi on Sukkah 42a:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T17:16:17.454Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכסבור</strong> - הכהן חטאת העוף היא:"
+  },
+  "Rashi on Sukkah 42a:3:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 42a:3:1",
+      "Rashi on Sukkah 42a:3:2",
+      "Rashi on Sukkah 42a:3:4",
+      "Rashi on Sukkah 42a:3:5"
+    ],
+    "generatedAt": "2026-11-07T17:17:05.370Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואכלה</strong> - ונמצא שמעל בקדשי שמים בשוגג:"
+  },
+  "Rashi on Sukkah 42a:3:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 42a:3:4",
+      "Rashi on Sukkah 42a:3:1",
+      "Rashi on Sukkah 42a:3:2",
+      "Rashi on Sukkah 42a:3:3",
+      "Rashi on Sukkah 42a:3:5",
+      "Sukkah 42a:3",
+      "Rashi on Sukkah 41b:4:1",
+      "Rashi on Sukkah 41b:4:2",
+      "Sukkah 42a:11",
+      "Rashi on Sukkah 42a:12:1"
+    ],
+    "generatedAt": "2026-11-07T17:19:21.609Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פטור</strong> - מקרבן מעילה הואיל דעם החטאת נמצאת ואכילתה מצוה דכתיב <span class=\"parenthesized\">(שמות כ״ט:ל״ג)</span> ואכלו אותם אשר כפר בהם הוה ליה טועה בדבר מצוה ופטור:"
+  },
+  "Rashi on Sukkah 42a:3:5": {
+    "dependsOn": [
+      "Rashi on Sukkah 42a:3:1",
+      "Rashi on Sukkah 42a:3:2",
+      "Rashi on Sukkah 42a:3:3",
+      "Rashi on Sukkah 42a:3:4",
+      "Sukkah 42a:3"
+    ],
+    "generatedAt": "2026-11-07T17:20:37.032Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:3:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היינו הך</strong> - למה ליה לרב הונא למימר פשיטא דממתני' שמעי' ליה:"
+  },
+  "Rashi on Sukkah 42a:4:1": {
+    "dependsOn": [
+      "Sukkah 42a:4",
+      "Rashi on Sukkah 42a:4:2",
+      "Rashi on Sukkah 42a:1:1",
+      "Rashi on Sukkah 42a:3:1"
+    ],
+    "generatedAt": "2026-11-07T17:25:20.478Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהו דתימא</strong> - במתני' הוא דפטור משום דטעה בדבר מצוה וסוף סוף עשה מצוה שנטל הלולב בהוצאה זו אבל הכא לא עשה מצוה באכילתה אם עולת העוף היא:"
+  },
+  "Rashi on Sukkah 42a:4:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 42a:4:1",
+      "Sukkah 42a:4"
+    ],
+    "generatedAt": "2026-11-07T17:26:34.046Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קא משמע לן</strong> - רב הונא דשמיע ליה מרביה דלא שני לרבי יוסי בין טעה בדבר מצוה ועשה מצוה לטעה בדבר מצוה ולא עשה מצוה:"
+  },
+  "Rashi on Sukkah 42a:5:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 42a:5:1",
+      "Rashi on Sukkah 42a:5:2",
+      "Sukkah 42a:5",
+      "Rashi on Sukkah 42a:3:1",
+      "Rashi on Sukkah 42a:4:1",
+      "Rashi on Sukkah 42a:2:1",
+      "Rashi on Sukkah 42a:2:2",
+      "Tosafot on Sukkah 42a:5:1",
+      "Rashi on Sukkah 34a:4:1",
+      "Rashi on Sukkah 33a:16:3"
+    ],
+    "generatedAt": "2026-11-07T17:32:31.194Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:5:1"
+    ],
+    "sourceText": "הכי גרסינן רבי יוסי אומר השוחט את התמיד שאינו מבוקר כהלכתו מן המומין בשבת חייב חטאת משום שחיטה בשבת שאינה של מצוה ואינה דוחה אלמא טעה בדבר מצוה ולא עשה מצוה חייב שהרי טרוד זה במצוה שהיה רוצה לשחוט תמיד של שבת וכסבור שהוא מבוקר:"
+  },
+  "Rashi on Sukkah 42a:5:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 42a:5:1",
+      "Rashi on Sukkah 42a:5:2",
+      "Sukkah 42a:5",
+      "Rashi on Sukkah 42a:3:1",
+      "Rashi on Sukkah 42a:4:1",
+      "Rashi on Sukkah 42a:2:1",
+      "Rashi on Sukkah 42a:2:2"
+    ],
+    "generatedAt": "2026-11-07T17:34:24.035Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:5:2"
+    ],
+    "sourceText": "להכשירן לא גרסינן:"
+  },
+  "Rashi on Sukkah 42a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T17:36:37.224Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מלשכה שאינן מבוקרין</strong> - דאין זה טועה בדבר מצוה שבטלאים שבלשכה זו אינו טרוד שאינן עומדין להקרבה להיות חרד עליהם מתי יקרבו ואף חרדת זמן התמיד לא שייכא הכא שקרוב למזיד הוא ולא דק בלשכות להבחין מאיזו יביא:"
+  },
+  "Rashi on Sukkah 42a:7:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 42a:7:1",
+      "Rashi on Sukkah 42a:7:2",
+      "Rashi on Sukkah 42a:7:3",
+      "Rashi on Sukkah 42a:7:4"
+    ],
+    "generatedAt": "2026-11-07T17:38:25.259Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקבלת אשה מיד בנה ובעלה</strong> - את לולביהן ולא אמרינן קמטלטלא מידי דלא חזי:"
+  },
+  "Rashi on Sukkah 42a:7:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 42a:7:1",
+      "Rashi on Sukkah 42a:7:3",
+      "Rashi on Sukkah 42a:7:4"
+    ],
+    "generatedAt": "2026-11-07T17:39:19.261Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחזירין למים</strong> - שלא יכמוש:"
+  },
+  "Rashi on Sukkah 42a:7:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 42a:7:1",
+      "Rashi on Sukkah 42a:7:2",
+      "Rashi on Sukkah 42a:7:3",
+      "Rashi on Sukkah 42a:7:4",
+      "Sukkah 42a:7",
+      "Mishneh Torah, Shofar, Sukkah and Lulav 7:25",
+      "Shulchan Arukh, Orach Chayim 654:1",
+      "Steinsaltz comment #1 on Sukkah 42a:7",
+      "Steinsaltz on Sukkah 42a:7",
+      "Steinsaltz comment #2 on Sukkah 42a:7",
+      "Jastrow on Sukkah 42a:3:1"
+    ],
+    "generatedAt": "2026-11-07T17:42:41.880Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשבת מחזירין</strong> - שהרי מכאן נטלום היום אבל לא מוסיפין מים כ\"ש שאין מחליפין המים לשפוך את אלו ולתת אחרים צונן מהני דטרח לתקוני מנא:"
+  },
+  "Rashi on Sukkah 42a:7:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 42a:7:1",
+      "Rashi on Sukkah 42a:7:2",
+      "Rashi on Sukkah 42a:7:3"
+    ],
+    "generatedAt": "2026-11-07T17:43:32.861Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במועד מחליפין</strong> - בחולו של מועד מצוה להחליף:"
+  },
+  "Rashi on Sukkah 42a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T17:44:15.587Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אימא לא</strong> - דלגבה איכא איסור טלטול:"
+  },
+  "Rashi on Sukkah 42a:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T17:44:49.560Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 42a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קא משמע לן</strong> - כיון דראוי לנטילת אנשים תורת כלי עליו ומותר בטלטול לכל:"
+  },
+  "Tosafot on Sukkah 42a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T18:03:26.175Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 42a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היודע לישאל ברשות היחיד ספקו טמא</strong> - אבל אינו יודע לישאל אפילו ברשות היחיד ספקו טהור כדדרשינן בסוטה פרק כשם <span class=\"parenthesized\">(ד' כח:)</span>:"
+  },
+  "Tosafot on Sukkah 42a:12:2": {
+    "dependsOn": [
+      "Chullin 24b:5",
+      "Tosafot on Chullin 24b:5:1"
+    ],
+    "generatedAt": "2026-11-07T18:06:03.332Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 42a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היודע לפרוס כפיו חולקין לו תרומה בבית הגרנות</strong> - מקמי הכא אין חולקין לו בגורן אבל משגרין לו לביתו אם יודע לשומרה בטהרה והכי תניא בגמרא דנושאין על האנוסה ביבמות <span class=\"parenthesized\">(ד' צט: ושם)</span> עשרה אין חולקין להן תרומה בבית הגרנות וקא חשיב חרש שוטה וקטן וקתני סיפא משגרין להן בבתיהן ובבית הגרנות אין חולקין לו שבזיון תרומה היא שאין כל רואיו בקיאין בו שיודע לשומרה בטהרה אבל לביתו משגרין לו הבקיאין בו ומי שיודע לפרוס כפיו ופורס בצבור הכל יודעין שהביא שתי שערות שאין קטן פורס את כפיו כדתנן במגילה <span class=\"parenthesized\">(דף כד.)</span> <span class=\"rashi-quotation\">כך פי' בקונט'</span> ולא משמע הכי אלא בקטן ממש איירי דומיא דהיודע לדבר אביו מלמדו תורה והיודע לשחוט וכן כולהו אחריני והא דאמר בנושאין על האנוסה <span class=\"parenthesized\">(יבמות דף צט: ושם)</span> דאין חולקין תרומה לקטן בבית הגרנות היינו כשאינו יודע לישא את כפיו והא דתנן בפרק הקורא את המגילה עומד <span class=\"parenthesized\">(מגילה דף כד. ושם)</span> דקטן אינו נושא את כפיו היינו בפני עצמו אבל עם הגדולים נושא כדאשכחן גבי שיר של מקדש פרק אין נערכין <span class=\"parenthesized\">(ערכין דף יג:)</span> דתנן בין רגלי [הלוים] היו עומדים וצעירי הלוים היו נקראים והא דאמרינן בשילהי פרק קמא דחולין <span class=\"parenthesized\">(ד' כד: ושם)</span> נתמלא זקנו ראוי ליעשות שליח צבור ולירד לפני התיבה ולישא את כפיו עד שיתמלא זקנו איכא לאוקומה ביחידי שאין עמו אחר אי נמי לישא את כפיו בקביעות ובשעה שמרבים ברחמים כגון ביום הכפורים ובתעניו' ובמעמדות וכן צריך לחלק נמי משום לירד לפני התיבה דבהקורא את המגילה עומד <span class=\"parenthesized\">(מגילה ד' כד.)</span> תנן קטן קורא בתורה אבל לא פורס על שמע ולא יורד לפני התיבה ולא נושא את כפיו משמע הא גדול יורד לפני התיבה ואף על פי שלא נתמלא זקנו אלא על כרחך צריך לאוקומה ההיא דחולין כגון ליעשות שליח צבור קבוע ולירד לפני התיבה ביום הכפורים ובתעניות ובמעמדות:"
+  },
+  "Tosafot on Sukkah 42a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T17:01:19.619Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 42a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר אביי כשהפכו</strong> - מדאיצטריך לשנויי הכי משמע דסבירא ליה דמצות אינן צריכות כוונה דהא קאי אמוציא לרשות הרבים והתם אין שייך מתכוין לצאת כל כמה דלא בירך ועוד דאיירי בהולך אצל בקי ללמוד ותימה דבסוף ראוהו ב\"ד <span class=\"parenthesized\">(ר\"ה ד' כח:)</span> דאמר רבא מצות אינן צריכות כוונה קא מותיב ליה אביי טובא ושמא אביי קיבלה מיניה:"
+  },
+  "Tosafot on Sukkah 42a:3:1": {
+    "dependsOn": [
+      "Pesachim 72b:1",
+      "Pesachim 72b:2",
+      "Pesachim 72b:3",
+      "Pesachim 72b:19",
+      "Pesachim 72b:20",
+      "Rashi on Sukkah 42a:3:1",
+      "Rashi on Sukkah 42a:3:2",
+      "Jastrow, אֲגַף 1"
+    ],
+    "generatedAt": "2026-11-07T17:23:36.016Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 42a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עולת העוף שנמצאת בין אגפיים</strong> - למאי דאמרי' בשילהי אלו דברים <span class=\"parenthesized\">(פסחים ד' עב:)</span> דלא פטר רבי יוסי בלולב אלא משום דזמנו בהול צריך לומר דהאי נמי זמנו בהול כדי שלא תבא חטאת לידי נותר:"
+  },
+  "Tosafot on Sukkah 42a:4:1": {
+    "dependsOn": [
+      "Pesachim 72b:11",
+      "Sukkah 42a:4"
+    ],
+    "generatedAt": "2026-11-07T17:28:29.644Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 42a:4:1"
+    ],
+    "sourceText": "מהו דתימא התם הוא דטעה בדבר מצוה ועבד מצוה אבל הכא טעה בדבר מצוה ולא עשה מצוה אימא לא קא משמע לן. פלוגתא היא בפסחים פרק אלו דברים <span class=\"parenthesized\">(שם)</span> דמחייב התם בנתחלף לו שפוד של נותר בשפוד של צלי ואכלו ואית ספרים דגרסי מהו דתימא הני מילי מצוה דרמי עליה אבל מצוה דלא רמי עליה אימא לא כלומר לולב דלא סגי ליה דלא שקיל דאי אפשר על ידי אחרים אבל חטאת אפשר שיאכלנה אחר:"
+  },
+  "Tosafot on Sukkah 42a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T17:36:01.903Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 42a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאינו מבוקר כהלכתו</strong> - ואפי' נמצא תם משום דטעון ביקור ד' ימים קודם שחיטה דבפרק מי שהיה טמא <span class=\"parenthesized\">(פסחים דף צו.)</span> יליף לה מפסח בגזרה שוה:"
+  }
+}

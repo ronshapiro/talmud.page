@@ -1,0 +1,452 @@
+{
+  "Rashi on Sukkah 28a:10:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 28a:10:1",
+      "Rashi on Sukkah 28a:10:2",
+      "Rashi on Sukkah 28a:10:3",
+      "Rashi on Sukkah 28a:10:4"
+    ],
+    "generatedAt": "2026-11-06T18:35:34.042Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האזרח</strong> - בבני ישראל ישבו בסוכות:"
+  },
+  "Rashi on Sukkah 28a:10:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 28a:10:1",
+      "Rashi on Sukkah 28a:10:3"
+    ],
+    "generatedAt": "2026-11-06T18:36:22.306Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אזרח זה אזרח</strong> - אי הוה כתיב אזרח הוי משמע כל תולדות ישראל אנשים ונשים:"
+  },
+  "Rashi on Sukkah 28a:10:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 28a:10:1",
+      "Rashi on Sukkah 28a:10:2",
+      "Rashi on Sukkah 28a:10:3",
+      "Rashi on Sukkah 28a:10:4",
+      "Jastrow, אֶזְרָח 1",
+      "Steinsaltz on Sukkah 28a:10"
+    ],
+    "generatedAt": "2026-11-06T18:38:16.129Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כתיב האזרח</strong> - מיומן שבאזרחים להוציא את הנשים:"
+  },
+  "Rashi on Sukkah 28a:10:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T18:38:43.638Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לרבות את הקטנים</strong> - לקמן רמינן מתניתא עלה:"
+  },
+  "Rashi on Sukkah 28a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T18:39:59.050Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעינוי</strong> - יום הכפורים דכתיב תענו את נפשותיכם וכל מלאכה לא תעשו האזרח והגר אלמא ה' לרבויי אתא:"
+  },
+  "Rashi on Sukkah 28a:11:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 28a:11:1",
+      "Sukkah 28a:11",
+      "Rashi on Sukkah 28a:12:1"
+    ],
+    "generatedAt": "2026-11-06T18:41:56.933Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רבה הלכתא נינהו ואסמכינהו רבנן אקראי</strong> - הנך תרי מילי ליכא למידרשינהו לתרוייהו מקראי דאם זו ה' לרבות אף זו ה' לרבות ואם זו למעט אף זו למעט אלא על פי הלכה שנאמרה למשה מסיני באחד מהן לחילוף נאמרו שני דברים הללו זו לחיוב וזו לפטור וחדא מינייהו לאו ממשמעותא אלא רבנן אסמכינהו אקראי חדא ממשמעותא וחדא אסמכתא בעלמא דאלו קרא חילופא משמע ולמילתא אחריתי אתא:"
+  },
+  "Rashi on Sukkah 28a:12:1": {
+    "dependsOn": [
+      "Sukkah 28a:12",
+      "Rashi on Sukkah 28a:12:2",
+      "Rashi on Sukkah 28a:6:1",
+      "Rashi on Sukkah 28a:6:2",
+      "Rashi on Sukkah 28a:10:1",
+      "Rashi on Sukkah 28a:11:1",
+      "Rashi on Sukkah 28a:3:1",
+      "Rashi on Sukkah 28a:3:2",
+      "Rashi on Sukkah 28a:3:3",
+      "Rashi on Sukkah 28a:4:1"
+    ],
+    "generatedAt": "2026-11-06T18:46:25.768Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג הי קרא והי הלכתא ותו למה לי קרא למה לי הלכתא</strong> - הי קרא הי מינייהו ממשמעותא והי לאו ממשמעותא דקרא דאלו קרא חילופא משמע אלא מהלכתא הוא דאתמר ותו למה לי קרא למה לי הלכתא לא בסוכה לפטור ולא בעינוי לחיוב:"
+  },
+  "Rashi on Sukkah 28a:12:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 28a:12:1",
+      "Rashi on Sukkah 28a:9:1",
+      "Rashi on Sukkah 2a:1:1",
+      "Rashi on Sukkah 2a:3:3",
+      "Rashi on Sukkah 28a:13:1",
+      "Rashi on Sukkah 28a:6:5",
+      "Rashi on Sukkah 28a:4:2"
+    ],
+    "generatedAt": "2026-11-06T18:55:12.586Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נשים פטורות</strong> - בפ\"ק דקדושין <span class=\"parenthesized\">(ד' לד.)</span> מפרש:"
+  },
+  "Rashi on Sukkah 28a:13:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 28a:12:2",
+      "Sukkah 28a:13"
+    ],
+    "generatedAt": "2026-11-06T18:57:53.344Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויום הכפורים</strong> - לא תעשה הוא וכרת הוא וכל מצות לא תעשה בין זמן גרמא בין לא זמן גרמא נפקא לן בקדושין <span class=\"parenthesized\">(ד' לה.)</span> מדרב יהודה דחייבות:"
+  },
+  "Rashi on Sukkah 28a:1:1": {
+    "dependsOn": [
+      "Sukkah 28a:1"
+    ],
+    "generatedAt": "2026-11-06T17:54:38.059Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם מבטל ליה</strong> - להאי פקק לגבי חלון וחשיב ליה מכותל עצמו הלכך הוי מוסיף אבל סדין אנן סהדי דלא מבטיל ליה לגבי סוכה וסופו ליטלו הלכך לא פשיטא לרבי אליעזר דליהוי מוסיף:"
+  },
+  "Rashi on Sukkah 28a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T17:55:23.565Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינן אלא מפי השמועה</strong> - בתמיה:"
+  },
+  "Rashi on Sukkah 28a:3:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 28a:3:1",
+      "Rashi on Sukkah 28a:3:2",
+      "Rashi on Sukkah 28a:3:3",
+      "Chidushei Agadot on Sukkah 28a:1"
+    ],
+    "generatedAt": "2026-11-06T17:56:56.743Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הזקקתוני</strong> - כלומר תזקיקוני לומר דבר כו' אגיד לכם את מדותי וזו אחת מהן:"
+  },
+  "Rashi on Sukkah 28a:3:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 28a:3:1",
+      "Rashi on Sukkah 28a:3:2",
+      "Rashi on Sukkah 28a:3:3",
+      "Chidushei Agadot on Sukkah 28a:1",
+      "Chidushei Agadot on Sukkah 28a:5",
+      "Sukkah 28a:3",
+      "Steinsaltz on Sukkah 28a:3",
+      "Steinsaltz In-Depth on Sukkah 28a:3:1",
+      "Steinsaltz In-Depth on Sukkah 28a:3:2"
+    ],
+    "generatedAt": "2026-11-06T17:59:42.479Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיחת חולין</strong> - דברי הבאי ושחוק כלומר מה שספק בידי לא מפני <span class=\"parenthesized\">(שטרחתי)</span> בכל אלה ואי אפשר שאמרו רבותי דבר בבית המדרש ולא שמעתיו ומה שלא שמעתי לא אומר שכך היא מדתי:"
+  },
+  "Rashi on Sukkah 28a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T18:00:50.628Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בלא תורה</strong> - בלא גירסא שהיה הולך ושונה תמיד:"
+  },
+  "Rashi on Sukkah 28a:4:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 28a:4:1",
+      "Rashi on Sukkah 28a:4:3"
+    ],
+    "generatedAt": "2026-11-06T18:01:36.259Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חוץ מערבי פסחים</strong> - מפני עשיית פסחיהם ומפני התינוקות שלא ישנו כך מפורש בפסחים <span class=\"parenthesized\">(דף קט.)</span>:"
+  },
+  "Rashi on Sukkah 28a:4:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 28a:4:1",
+      "Rashi on Sukkah 28a:4:2"
+    ],
+    "generatedAt": "2026-11-06T18:02:10.486Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וערב יום הכפורים</strong> - שצריך לאכול מבעוד יום:"
+  },
+  "Rashi on Sukkah 28a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T18:02:36.203Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משנה</strong> - כגון משנה וברייתא של ששה סדרים:"
+  },
+  "Rashi on Sukkah 28a:6:10": {
+    "dependsOn": [
+      "Rashi on Sukkah 28a:6:9",
+      "Rashi on Sukkah 28a:6:11"
+    ],
+    "generatedAt": "2026-11-06T18:25:22.448Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:6:10"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיחת מלאכי השרת שיחת שדים שיחת דקלים</strong> - לא ידענא מאי היא:"
+  },
+  "Rashi on Sukkah 28a:6:11": {
+    "dependsOn": [
+      "Sanhedrin 39a:1",
+      "Rashi on Sanhedrin 39a:1:1",
+      "Jastrow, מָשָׁל 1",
+      "Jastrow, שׁוּעָל 1",
+      "Rashi on Sukkah 28a:6:9",
+      "Rashi on Sukkah 28a:6:10"
+    ],
+    "generatedAt": "2026-11-06T18:27:06.694Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:6:11"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משלות כובסין ומשלות שועלים</strong> - שיסדו קדמונים לתת אמתלא לתוכחתם ותולין אותן בכובסים ובשועלים כגון <span class=\"parenthesized\">(סנהדרין לט.)</span> מאזני צדק אבות אכלו בוסר:"
+  },
+  "Rashi on Sukkah 28a:6:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 28a:6:2",
+      "Rashi on Sukkah 28a:6:1",
+      "Rashi on Sukkah 28a:6:3"
+    ],
+    "generatedAt": "2026-11-06T18:09:11.376Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גמרא</strong> - זו היא סברא שהיו התנאים אחרונים מדקדקים בדברי הראשונים הסתומים לפרשם וליתן בהן טעם כמו שעשו האמוראים אחר התנאים שפירשו דברי התנאים שלפניהן וקבעו בהן גמרא ואותו דיוק שבימי התנאי' נקרא הש\"ס:"
+  },
+  "Rashi on Sukkah 28a:6:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 28a:6:1",
+      "Rashi on Sukkah 28a:6:2",
+      "Rashi on Sukkah 28a:6:4",
+      "Rashi on Sukkah 28a:3:1",
+      "Rashi on Sukkah 28a:4:1"
+    ],
+    "generatedAt": "2026-11-06T18:10:19.742Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלכות</strong> - הלכה למשה מסיני כגון גוד ולבוד ודופן עקומה שיעורין חציצין מחיצין עשר נטיעות ערבה וניסוך המים:"
+  },
+  "Rashi on Sukkah 28a:6:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 28a:6:3",
+      "Rashi on Sukkah 28a:6:5"
+    ],
+    "generatedAt": "2026-11-06T18:11:28.832Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דקדוקי תורה</strong> - ריבויי אותיות שבאין לדרוש בהן ריבוים ומעוטים כגון האזרח להוציא הנשים שדקדקה התורה בלשונה לכתוב אות יתירה ללמד:"
+  },
+  "Rashi on Sukkah 28a:6:5": {
+    "dependsOn": [
+      "Rashi on Sukkah 28a:6:4",
+      "Rashi on Sukkah 28a:6:1",
+      "Rashi on Sukkah 28a:6:2",
+      "Rashi on Sukkah 28a:6:3",
+      "Rashi on Sukkah 28a:6:5",
+      "Rashi on Sukkah 28a:3:1",
+      "Rashi on Sukkah 28a:3:2",
+      "Rashi on Sukkah 28a:3:3",
+      "Rashi on Sukkah 26a:7:1"
+    ],
+    "generatedAt": "2026-11-06T18:17:56.985Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:6:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דקדוקי סופרים</strong> - שהוסיפו לדקדק אחר מעשה הבריות ולהחמיר ולעשות סייג ואזנים לתורה וגזרו גזרות להרחיק את האדם מן העבירה ודכוותה בבכורות <span class=\"parenthesized\">(ד' ל:)</span> גר הבא לקבל תורה עליו חוץ מדבר אחד אין מקבלין אותו ר' יוסי אומר אפילו דקדוק אחד מדקדוקי סופרים:"
+  },
+  "Rashi on Sukkah 28a:6:6": {
+    "dependsOn": [
+      "Rashi on Sukkah 28a:6:5",
+      "Rashi on Sukkah 28a:6:7"
+    ],
+    "generatedAt": "2026-11-06T18:18:32.823Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:6:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קלים וחמורים</strong> - דברים הלמדין בק\"ו שניתנו לדון מעצמן לכל אדם ולא פירשו כלום בסיני:"
+  },
+  "Rashi on Sukkah 28a:6:7": {
+    "dependsOn": [
+      "Rashi on Sukkah 28a:6:6",
+      "Steinsaltz on Sukkah 28a:6:1",
+      "Rashi on Sukkah 28a:6:1",
+      "Rashi on Sukkah 28a:6:2",
+      "Rashi on Sukkah 28a:6:3",
+      "Rashi on Sukkah 2a:1:1"
+    ],
+    "generatedAt": "2026-11-06T18:20:24.450Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:6:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וגזרות שוות</strong> - דברים הלמדין בג\"ש:"
+  },
+  "Rashi on Sukkah 28a:6:8": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T18:20:57.098Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:6:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תקופות</strong> - חשבון הילוך חמה ולבנה:"
+  },
+  "Rashi on Sukkah 28a:6:9": {
+    "dependsOn": [
+      "Rashi on Sukkah 28a:6:9",
+      "Rashi on Sukkah 52b:3:2"
+    ],
+    "generatedAt": "2026-11-06T18:24:41.865Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:6:9"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וגימטריאות</strong> - דברים הלמדין בלשון גימטריא כגון <span class=\"parenthesized\">(ירמיהו כה)</span> שש\"ך בבל בא\"ת ב\"ש כשדים <span class=\"parenthesized\">(שם נא)</span> לב קמי בא\"ת ב\"ש סהדה מנון <span class=\"parenthesized\">(לקמן סוכה ד' נב:)</span> בא\"ט ב\"ח וכן לפי מנין האותיות כגון סתם נזירות שלשים יום <span class=\"parenthesized\">(נזיר ד' ה.)</span> מקדוש יהיה יהי\"ה בגימטריא שלשים הוו:"
+  },
+  "Rashi on Sukkah 28a:7:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 28a:7:1",
+      "Rashi on Sukkah 28a:7:2",
+      "Tosafot on Sukkah 28a:7:1",
+      "Rashbam on Bava Batra 134a:8:2",
+      "Steinsaltz on Sukkah 28a:7",
+      "Jastrow, הֲוָיָה 1",
+      "Sefer HeArukh, Letter Heh 52"
+    ],
+    "generatedAt": "2026-11-06T18:30:42.677Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הויות דאביי ורבא</strong> - כל איבעי' להו לאביי ורבא הוה מספקא להו ובכולן נתן את לבו ונתן בהן טעם ובימי אמוראים נשתכחו:"
+  },
+  "Rashi on Sukkah 28a:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T18:31:10.821Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נשרף</strong> - שהיו מלאכי השרת מתקבצין סביביו לשמוע דברי תורה מפיו:"
+  },
+  "Rashi on Sukkah 28a:8:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 28a:3:1"
+    ],
+    "generatedAt": "2026-11-06T18:33:55.149Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משם ראיה</strong> - בתמיה:"
+  },
+  "Rashi on Sukkah 28a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T18:34:24.968Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 28a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נשים ועבדים</strong> - מפרש בגמרא:"
+  },
+  "Tosafot on Sukkah 28a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T18:43:02.997Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 28a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלכתא נינהו</strong> - הלכתא היא גרסינן לשון יחיד דחדא מינייהו הלכתא ותו לא ובריש בנות כותים <span class=\"parenthesized\">(נדה דף לב.)</span> גבי אין לי אלא אשה נקט לשון רבים לפי שמסופק על שניהם הי מינייהו הלכתא:"
+  },
+  "Tosafot on Sukkah 28a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T18:32:47.858Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 28a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל עוף שפורח עליו מיד נשרף</strong> - שהדברים שמחים כנתינתם בסיני שנתנה תורה באש וכענין זה מצינו במדרש בעובדא דרבי אליעזר ורבי יהושע שהיו מסובין בסעודה וליהטה האש סביבם:"
+  }
+}

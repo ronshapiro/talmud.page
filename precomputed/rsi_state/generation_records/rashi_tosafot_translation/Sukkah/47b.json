@@ -1,0 +1,368 @@
+{
+  "Rashi on Sukkah 47b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T03:18:19.230Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי הוי עלה</strong> - דזמן בשמיני:"
+  },
+  "Rashi on Sukkah 47b:1:1": {
+    "dependsOn": [
+      "Sukkah 47b:1",
+      "Rashi on Sukkah 47b:1:2",
+      "Rashi on Sukkah 47b:3:1",
+      "Rashi on Sukkah 47a:11:1",
+      "Rashi on Sukkah 46b:11:1"
+    ],
+    "generatedAt": "2026-11-08T02:42:47.498Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי לאו זמן</strong> - הך ברכה דקאמר ר' יהודה מאי היא לאו היינו זמן לעצמו:"
+  },
+  "Rashi on Sukkah 47b:1:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 47b:1:1"
+    ],
+    "generatedAt": "2026-11-08T02:43:38.129Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ברכת המזון</strong> - דעד השתא אמרי' את יום חג הסוכות הזה וכאן את יום שמיני חג עצרת הזה:"
+  },
+  "Rashi on Sukkah 47b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T02:44:41.141Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מ\"מ</strong> - היכי משכחת לה זמן בחולו של מועד ואפי' לא בריך יומא קמא הא בעינא כוס של יין ואין יין מצוי לכל אדם בחולו של מועד:"
+  },
+  "Rashi on Sukkah 47b:3:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 47b:3:1",
+      "Rashi on Sukkah 47b:3:2",
+      "Rashi on Sukkah 47b:3:3",
+      "Sukkah 47b:3",
+      "Sukkah 47b:1"
+    ],
+    "generatedAt": "2026-11-08T02:47:33.260Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לימא</strong> - הא דקתני ברכה כל ז' ומפרש' דהיינו זמן:"
+  },
+  "Rashi on Sukkah 47b:3:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T02:48:08.705Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מסייע לר\"נ</strong> - דאמר אומרו בשוק בלא כוס:"
+  },
+  "Rashi on Sukkah 47b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T02:48:41.995Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנין לפסח שני</strong> - האמור לטמאים לעשותו בחדש השני שאינו טעון לינה בירושלים:"
+  },
+  "Rashi on Sukkah 47b:4:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 47b:4:1",
+      "Rashi on Sukkah 47b:4:2",
+      "Rashi on Sukkah 47b:4:3"
+    ],
+    "generatedAt": "2026-11-08T02:49:49.140Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ופנית בבקר</strong> - וסמיך ליה ששת ימים וגו' פסח שני אינו אסור בחמץ אלא שטעון מצה למצוה ואוכל חמץ מיד:"
+  },
+  "Rashi on Sukkah 47b:4:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 47b:4:1",
+      "Rashi on Sukkah 47b:4:2",
+      "Rashi on Sukkah 47b:4:3",
+      "Rashi on Sukkah 47b:5:1",
+      "Steinsaltz on Sukkah 47b:4:1",
+      "Steinsaltz on Sukkah 47b:4",
+      "Steinsaltz comment #1 on Sukkah 47b:4"
+    ],
+    "generatedAt": "2026-11-08T02:51:25.495Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג מאי לאו למעוטי נמי שמיני</strong> - דכיון דאינו אלא י\"ט יחיד אינו טעון לינה:"
+  },
+  "Rashi on Sukkah 47b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T02:52:07.821Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא למעוטי פסח שני דכוותיה</strong> - אינו ממעט אלא פסח שני לבדו דבפסח קאי ופסח קממעט אבל שבועות ושמיני עצרת אע\"ג דלא איתנהו ז' ימים טעון לינה:"
+  },
+  "Rashi on Sukkah 47b:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T02:52:48.759Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"נ מסתברא</strong> - דלא ממעיט ר' יהודה אלא פסח שני לחוד:"
+  },
+  "Rashi on Sukkah 47b:5:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 47b:5:2",
+      "Rashi on Sukkah 47b:5:3",
+      "Rashi on Sukkah 47b:5:4",
+      "Maharsha: Chidushei Halachot on Sukkah 47b:1",
+      "Mishnah Bikkurim 2:4",
+      "Rashi on Sukkah 47b:4:1",
+      "Rashi on Sukkah 47b:4:2",
+      "Rashi on Sukkah 47b:4:3"
+    ],
+    "generatedAt": "2026-11-08T02:55:01.449Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טעונין קרבן</strong> - להביא עמהם שלמים ובהש\"ס ירושלמי יליף מושמחת בכל הטוב <span class=\"parenthesized\">(דברים כ״ו:י״א)</span> ואין שמחה אלא שלמים דכתיב <span class=\"parenthesized\">(שם כז)</span> וזבחת שלמים ואכלת ושמחת ושיר נמי יליף לה מבכל הטוב ואין טוב אלא שיר והלוים היו אומרים אותו ומהו שיר ארוממך ה' כי דליתני <span class=\"parenthesized\">(תהילים ל׳:ב׳)</span> דכתיב <span class=\"parenthesized\">(יחזקאל ל״ג:ל״ב)</span> יפה קול ומטיב נגן ובספרי <span class=\"parenthesized\">(פרשת ראה)</span> נמי תניא בכל הטוב זה השיר:"
+  },
+  "Rashi on Sukkah 47b:5:4": {
+    "dependsOn": [
+      "Sukkah 47b:5",
+      "Rashi on Sukkah 47b:5:1",
+      "Rashi on Sukkah 47b:5:2",
+      "Rashi on Sukkah 47b:5:3",
+      "Rashi on Sukkah 47b:5:5",
+      "Rashi on Sukkah 47b:3:1",
+      "Rashi on Sukkah 47b:4:1"
+    ],
+    "generatedAt": "2026-11-08T02:56:01.636Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47b:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותנופה</strong> - לקמיה יליף לה:"
+  },
+  "Rashi on Sukkah 47b:5:5": {
+    "dependsOn": [
+      "Rashi on Sukkah 47b:5:4",
+      "Rashi on Sukkah 47b:5:5",
+      "Rashi on Sukkah 47b:5:6",
+      "Steinsaltz on Sukkah 47b:5",
+      "Rashi on Sukkah 47b:3:1",
+      "Rashi on Sukkah 47b:3:2",
+      "Rashi on Sukkah 47b:4:1",
+      "Rashi on Sukkah 47b:4:2",
+      "Rashi on Sukkah 47b:4:3",
+      "Sukkah 47b:4",
+      "Rosh Hashanah 5a:2",
+      "Rosh Hashanah 5a:3"
+    ],
+    "generatedAt": "2026-11-08T02:57:38.550Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47b:5:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולינה</strong> - התם יליף לה ופנית בבקר הא למדת שכל הפינות שאתה פונה לא יהו אלא בבקר:"
+  },
+  "Rashi on Sukkah 47b:5:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T02:58:03.419Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47b:5:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאן שמעת ליה דאמר תנופה</strong> - לביכורים:"
+  },
+  "Rashi on Sukkah 47b:5:7": {
+    "dependsOn": [
+      "Rashi on Sukkah 47b:5:6",
+      "Rashi on Sukkah 47b:5:8",
+      "Sukkah 47b:6",
+      "Rashi on Sukkah 47b:5:2"
+    ],
+    "generatedAt": "2026-11-08T02:59:11.226Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47b:5:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר' יהודה</strong> - כדלקמן:"
+  },
+  "Rashi on Sukkah 47b:5:8": {
+    "dependsOn": [
+      "Rashi on Sukkah 47b:5:1",
+      "Rashi on Sukkah 47b:5:2",
+      "Rashi on Sukkah 47b:5:3",
+      "Rashi on Sukkah 47b:5:4",
+      "Rashi on Sukkah 47b:5:5",
+      "Rashi on Sukkah 47b:5:6",
+      "Rashi on Sukkah 47b:5:7",
+      "Sukkah 47b:5",
+      "Rashi on Sukkah 47b:1:1",
+      "Rashi on Sukkah 47b:3:1",
+      "Rashi on Sukkah 47a:1:1",
+      "Rashi on Sukkah 47a:2:1"
+    ],
+    "generatedAt": "2026-11-08T03:00:22.958Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47b:5:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקאמר הכא טעונין לינה</strong> - ואע\"ג דאין טעונין ששה:"
+  },
+  "Rashi on Sukkah 47b:6:1": {
+    "dependsOn": [
+      "Sukkah 47b:6"
+    ],
+    "generatedAt": "2026-11-08T03:09:48.989Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דתניא</strong> - דאית ליה לרבי יהודה תנופה בביכורים:"
+  },
+  "Rashi on Sukkah 47b:6:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 47b:6:1",
+      "Rashi on Sukkah 47b:6:3",
+      "Rashi on Sukkah 47b:5:1",
+      "Rashi on Sukkah 47b:5:2",
+      "Rashi on Sukkah 46b:1:1",
+      "Rashi on Sukkah 46b:1:2",
+      "Rashi on Sukkah 2a:1:1",
+      "Rashi on Sukkah 2a:1:2"
+    ],
+    "generatedAt": "2026-11-08T03:11:21.612Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והנחתו זו תנופה</strong> - דבראש הפרשה נאמר ולקח הכהן הטנא מידך והניחו לפני ה' וגו' ובסיפיה נאמר והנחתו מכלל שחזר ונטלו ולמה נטלו לתנופה:"
+  },
+  "Rashi on Sukkah 47b:6:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 47b:6:1",
+      "Rashi on Sukkah 47b:6:2",
+      "Rashi on Sukkah 47b:6:3"
+    ],
+    "generatedAt": "2026-11-08T03:12:09.642Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זו הנחה</strong> - שמגיד לך שמצוה להניחו לפני המזבח ואח\"כ יטלוהו הכהנים ויאכלוהו:"
+  },
+  "Rashi on Sukkah 47b:7:1": {
+    "dependsOn": [
+      "Sukkah 47b:7",
+      "Sukkah 47b:3",
+      "Sukkah 47b:4",
+      "Rashi on Sukkah 47b:5:1",
+      "Rashi on Sukkah 47b:5:2"
+    ],
+    "generatedAt": "2026-11-08T03:13:39.976Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודלמא</strong> - ההיא דקתני תנופה ולינה ר\"א בן יעקב הוא דשמעי' ליה נמי דאמר טעונין תנופה אבל כרבי יהודה לא מתוקמא דאית ליה לר' יהודה כל שאין טעון ששה אין טעון לינה ולא תילף מהכא סברא דידך:"
+  },
+  "Rashi on Sukkah 47b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T03:14:19.022Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ידיו תביאינה</strong> - בבעלים דשלמים כתיב גבי תנופה דכתיב בסיפיה להניף אותו תנופה וגו':"
+  },
+  "Rashi on Sukkah 47b:9:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 47b:9:2"
+    ],
+    "generatedAt": "2026-11-08T03:14:59.696Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה כאן</strong> - בביכורים כהן דכתיב ולקח הכהן:"
+  },
+  "Rashi on Sukkah 47b:9:2": {
+    "dependsOn": [
+      "Bikkurim 3:6",
+      "Rashi on Sukkah 47b:9:1",
+      "Rashi on Sukkah 47b:5:1",
+      "Rashi on Sukkah 47b:5:2"
+    ],
+    "generatedAt": "2026-11-08T03:16:00.101Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 47b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תחת יד הבעלים</strong> - בעלים אוחזים בשפת הטנא וכהן מניח ידיו תחת שוליו וכן מפרש במסכת ביכורים <span class=\"parenthesized\">(פ\"ג מ\"ו)</span>:"
+  },
+  "Tosafot on Sukkah 47b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T03:09:06.172Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 47b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הביכורים טעונים קרבן שיר תנופה ולינה</strong> - בפ' ג' דביכורים <span class=\"parenthesized\">(מ\"ו)</span> מפרש דבאמצע הקריאה היתה תנופה דתנן הגיע לארמי אובד אבי מוריד הסל מכתפו ואוחזו בשפתותיו וכהן מניח ידו תחתיו ומניפו וקורא מארמי אובד אבי עד שגומר כל הפרשה כולה ומניחו בצד המזבח ומשתחוה ויוצא משמע שלא היה מניף אלא בשעת הקריאה אבל בספרי <span class=\"parenthesized\">(פרשת ראה)</span> משמע דאיכא שתי תנופות דקתני והנחתו לפני ה' אלהיך מלמד שטעונין תנופה ב' פעמים אחת בשעת קריאה ואחת בשעת השתחויה והתם בספרי דרש ב' תנופות מדכתיב ולקח הכהן הטנא מידך כר' אליעזר בן יעקב ושמא סבר לה נמי כרבי יהודה דדריש הכא והנחתו זו תנופה ולהכי בעי ב' תנופות דולקח הכהן באמצע קריאה כתיב וכי כתיב והנחתו גבי השתחויה כתיב ומשמע ליה לשון תנופה מלשון לך נחה את העם <span class=\"parenthesized\">(שמות לב)</span> מנא\"ר בלע\"ז ומוליך ומביא א\"נ מדאחר הנחת כהן כתיב' עוד הנחה אחריתא לאחר קריא' ש\"מ דלאחר הנחת כהן חזר ונטלו כדי לחזור ולהניף אחר קריאה דהיינו בשעת השתחויה אבל קשה דבפרק בתרא דמכות <span class=\"parenthesized\">(דף יח:)</span> אמרינן מאן תנא דפליג עליה דרבי יהודה ר\"א בן יעקב מנא ליה דפליגי דלמא דרשי תרוייהו כמו תנא דספרי והתם משמע דר\"א מייתי ליה והנחתו לומר דהנחה מעכבת בהן ושמא מדלא מייתי כל חד דרש' דחבריה מכלל דלא ס\"ל ומיהו קשה דרבי יהודה דריש תנופה מוהנחתו ואפ\"ה מוקי לה בשעת קריאה כדתנן פרק ג' דביכורים <span class=\"parenthesized\">(מ\"ו)</span> משום דוהניחו [קמא] גבי קריאה כתיב לכך נראה דבספרי דריש תנופה להשתחויה מדאיתקש להנחה ועוד תנא שלישי דלית ליה תנופה כלל כדמשמע הכא מאן שמעת דאמר תנופה רבי יהודה מכלל דרבנן לא בעו תנופה כלל והוא תנא פרק כל המנחות באות מצה <span class=\"parenthesized\">(מנחית דף סא.)</span> דתנן התם גבי ואלו טעונות תנופות הביכורים כדברי ר\"א בן יעקב שמע מינה דלרבנן לא בעו תנופה וכי קאמר במכות מאן תנא דפליג עליה דרבי יהודה ר\"א בן יעקב ניחא ליה לאתויי תנא דמשכח בהדיא ועוד י\"ל דב' תנופות לאו דוקא אלא לפי שיש ביכורים שאין טעונין קריאה כגון מן החג ועד החנוכה כדתנן פ\"ק דביכורים <span class=\"parenthesized\">(מ\"ו)</span> וקאמר דהטעונין קריאה מניף בשעת קריאה ושאין בהן קריאה מניף בשעת השתחואה:"
+  },
+  "Tosafot on Sukkah 47b:9:1": {
+    "dependsOn": [
+      "Tosafot on Menachot 61b:4:1",
+      "Tosafot on Menachot 62a:2:1",
+      "Tosafot on Menachot 61b:1:1"
+    ],
+    "generatedAt": "2026-11-08T03:17:51.459Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 47b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כהן מניח ידו תחת יד הבעלים ומניף</strong> - לאו דוקא קאמר תחת יד הבעלים ממש דא\"כ הויא חציצה בין הכלי ובין הכהן ובסוף שתי מדות מסקינן גבי בעלים חברים לנפו כולהו בהדי הדדי קא הויא חציצה אלא כדתנן פרק ג' דביכורים <span class=\"parenthesized\">(מ\"ו)</span> גבי סל של ביכורים אוחזו בשפתותיו וכהן מניח ידו תחתיו ומניפו והיינו תחת יד הבעלים ומיהו בההיא דבעלים חברים פי' שם <span class=\"rashi-quotation\">בקונט'</span> דבתנופת הכהן לא איכפת לן אם יש בה חציצה דעיקר תנופה בבעלים היא ותימה היא מנא ליה הא דתרוייהו כתיבי והתם <span class=\"parenthesized\">(מנחות דף סא:)</span> תניא גבי תנופה דשלמים הא כיצד כהן מניח ידו תחת יד הבעלים ומניף כיצד עושה מניח אימורין על פיסת היד וחזה ושוק עליהם והתם מצינו למימר שאוחז הכהן באימורים היוצאין חוץ לפיסת היד ולפי שהבעלים למעלה קאמר תחת יד הבעלים ובירושלמי דסוטה משמע קצת דהוי בנגיעה ממש גבי תנופת מנחת סוטה דפריך בירושלמי ואין הדבר כעור מביא מפה ואינו חוצץ מביא כהן זקן ואפילו תימא ילד אין יצר הרע מצוי לאותה שעה מיהו מצינו למימר דאף על פי שזה למטה מן הכלי וזה למעלה מן הכלי פעמים שנוגעין ידו בידה על ידי שמתעסקין בתנופה:"
+  }
+}

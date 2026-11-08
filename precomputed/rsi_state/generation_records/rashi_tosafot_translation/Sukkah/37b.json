@@ -1,0 +1,381 @@
+{
+  "Rashi on Sukkah 37b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T10:36:32.266Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 37b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למי שארבע רוחות שלו</strong> - מצוה זו אנו עושין לשמו כן מראה בהנפתו:"
+  },
+  "Rashi on Sukkah 37b:10:2": {
+    "dependsOn": [
+      "Sukkah 37b:10",
+      "Rashi on Sukkah 37b:10:1"
+    ],
+    "generatedAt": "2026-11-07T10:37:31.765Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 37b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זאת אומרת</strong> - הא דרבי יוסי דקאמר תנופה עוצרת רוחות רעות וטללים רעים:"
+  },
+  "Rashi on Sukkah 37b:1:1": {
+    "dependsOn": [
+      "Sukkah 37b:1",
+      "Rashi on Sukkah 37b:1:2"
+    ],
+    "generatedAt": "2026-11-07T10:01:34.932Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 37b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא הפילו הוא</strong> - במתכוין דומיא דנפל מאליו שלא אחז באפר עצמו אלא אחז בשפופרת ונערה לתוך שוקת כשר:"
+  },
+  "Rashi on Sukkah 37b:1:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 37b:1:1",
+      "Tosafot on Sukkah 37b:1:1",
+      "Steinsaltz on Sukkah 37b:1",
+      "Rashi on Sukkah 37b:2:1",
+      "Rashi on Sukkah 37b:2:2",
+      "Rashi on Sukkah 37b:3:1",
+      "Rashi on Sukkah 37a:1:1",
+      "Rashi on Sukkah 37a:2:1"
+    ],
+    "generatedAt": "2026-11-07T10:07:05.982Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 37b:1:2"
+    ],
+    "sourceText": "ה\"ג אמאי ולקחו ונתן אמר רחמנא אלא ש\"מ לקיחה על ידי דבר אחר שמה לקיחה:"
+  },
+  "Rashi on Sukkah 37b:2:1": {
+    "dependsOn": [
+      "Sukkah 37b:2",
+      "Rashi on Sukkah 37b:2:1",
+      "Rashi on Sukkah 37b:2:2",
+      "Rashi on Sukkah 37b:2:3"
+    ],
+    "generatedAt": "2026-11-07T10:11:09.764Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 37b:2:1"
+    ],
+    "sourceText": "ואמר רבה גרס בכולהו:"
+  },
+  "Rashi on Sukkah 37b:2:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 37b:2:1",
+      "Rashi on Sukkah 37b:2:3",
+      "Rashi on Sukkah 37b:1:1",
+      "Rashi on Sukkah 37b:1:2",
+      "Jastrow, דּוּץ II 1"
+    ],
+    "generatedAt": "2026-11-07T10:12:08.647Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 37b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא לידוץ איניש לוליבא בהושענא</strong> - לאחר שאגד הערבה וההדס יחד לא יתחוב הלולב מלמעלה בתוך האגד:"
+  },
+  "Rashi on Sukkah 37b:2:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T10:12:39.966Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 37b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלמא נתרי טרפי</strong> - הלולב משיר עלי ההדס והערבה ומשתיירין באגד וחוצצין בין מין למין ואינם אגודים יחד להיות לקיחה אחת:"
+  },
+  "Rashi on Sukkah 37b:3:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 37b:3:1",
+      "Rashi on Sukkah 37b:3:2",
+      "Rashi on Sukkah 37b:2:1",
+      "Rashi on Sukkah 37b:2:2",
+      "Rashi on Sukkah 37b:2:3",
+      "Rashi on Sukkah 37b:4:1",
+      "Rashi on Sukkah 37b:4:2",
+      "Rashi on Sukkah 37a:6:2",
+      "Rashi on Sukkah 37a:6:3",
+      "Rashi on Sukkah 37a:7:1",
+      "Rashi on Sukkah 36a:1:1",
+      "Rashi on Sukkah 36a:1:2"
+    ],
+    "generatedAt": "2026-11-07T10:14:41.612Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 37b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא <span class=\"parenthesized\">(ליגוד)</span> איניש לוליבא בהושענא</strong> - אם הוא ארוך יותר מדאי מן הערבה ובא לקצצו מתחת לא יקצצנו בעודו באגודה אלא יוציאנו ויגוז מתחת ויחזור ויאגוד:"
+  },
+  "Rashi on Sukkah 37b:3:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 37b:3:1",
+      "Steinsaltz on Sukkah 37b:3:1",
+      "Steinsaltz on Sukkah 37b:3"
+    ],
+    "generatedAt": "2026-11-07T10:16:19.840Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 37b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמשתיירי הוצא</strong> - של לולב תלושין מן השדרה בתוך האגד לפי שעלי הלולב ארוכים ומחוברים מתחת השדרה ונמשכין ועולין כנגד גובהו של לולב וכשקוצצן מתחת נמצאו חתוכין מן השדרה ונשארין באגודה:"
+  },
+  "Rashi on Sukkah 37b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T10:17:01.397Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 37b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסור להריח בו</strong> - דגמרינן מסוכה דילפינן בפרק קמא <span class=\"parenthesized\">(דף ט.)</span> דחל שם שמים על עצי סוכה ליאסר בהנאה כל שבעה הואיל והוקצו למצוה:"
+  },
+  "Rashi on Sukkah 37b:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T10:17:29.342Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 37b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מריחא</strong> - שהוא דרך הנאתו אקציה:"
+  },
+  "Rashi on Sukkah 37b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T10:17:54.741Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 37b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הדס במחובר</strong> - לענין שבת נקט לה כל ימות השנה:"
+  },
+  "Rashi on Sukkah 37b:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T10:19:32.386Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 37b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי שרית ליה</strong> - כלומר אע\"ג דשרית ליה להריח לא אתי למיתלש דהא במחובר נמי מריח ליה שפיר ואינו טרוד בקציצתו שישכח ויתלשנו:"
+  },
+  "Rashi on Sukkah 37b:5:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 37b:5:1",
+      "Rashi on Sukkah 37b:5:2"
+    ],
+    "generatedAt": "2026-11-07T10:20:09.920Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 37b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל אתרוג דלאכילה קאי</strong> - כי מורח ליה מינשי ותליש ואכיל ליה ואף אם אוכלו במחובר אין לך תולש גדול מזה:"
+  },
+  "Rashi on Sukkah 37b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T10:20:34.093Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 37b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הואיל וגבוה מכולן</strong> - חשוב הוא ונקרא האגד על שמו:"
+  },
+  "Rashi on Sukkah 37b:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T10:21:43.425Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 37b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולגבהיה לאתרוג</strong> - קא סלקא דעתיה דהואיל דגבוה דקאמ' היינו הא דאמרן לעיל <span class=\"parenthesized\">(סוכה לב:)</span> שדרו של לולב צריך שיצא למעלה מן ההדס טפח:"
+  },
+  "Rashi on Sukkah 37b:6:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T10:22:46.081Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 37b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובמינו</strong> - גבוה משלשתן:"
+  },
+  "Rashi on Sukkah 37b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T10:26:14.554Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 37b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תחלה וסוף</strong> - הודו שבתחלת הפרק והודו שבסוף הפרק בסוף ההלל מן הודו עד סוף ההלל חדא פרשתא במנין פרשיות של ספר תהלים:"
+  },
+  "Rashi on Sukkah 37b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T10:29:31.906Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 37b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נענוע מאן דכר שמיה</strong> - שיהא אדם חייב לנענע דפשיטא ליה לתנא וקבעי היכן היו מנענעים:"
+  },
+  "Rashi on Sukkah 37b:8:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 37b:8:1",
+      "Rashi on Sukkah 37a:2:1",
+      "Sukkah 37b:10"
+    ],
+    "generatedAt": "2026-11-07T10:30:31.803Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 37b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדי לנענע בו</strong> - אלמא מצוה לנענע כדלקמן לעצור רוחות רעות וטללים רעים:"
+  },
+  "Rashi on Sukkah 37b:9:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 37b:9:2",
+      "Rashi on Sukkah 37b:9:3",
+      "Menachot 62a:1",
+      "Menachot 62a:2",
+      "Menachot 61a:5",
+      "Menachot 61a:6",
+      "Menachot 61a:7",
+      "Menachot 62a:7",
+      "Menachot 62a:8",
+      "Menachot 62a:9",
+      "Menachot 62a:10",
+      "Rashi on Sukkah 37b:1:1",
+      "Rashi on Sukkah 37b:2:1",
+      "Rashi on Sukkah 37b:7:1",
+      "Rashi on Sukkah 37b:10:1",
+      "Rashi on Sukkah 37b:10:2"
+    ],
+    "generatedAt": "2026-11-07T10:32:51.791Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 37b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיצד עושה</strong> - אותם שהוא צריך להניפם יחד חיים כדכתיב <span class=\"parenthesized\">(ויקרא כ״ג:כ׳)</span> והניף הכהן אותם על לחם וגו' על שני כבשים וגו' הכבשים חיים ומניח שתי הלחם על שני הכבשים כדכתיב על לחם הבכורים תנופה על שני כבשים ואף על גב דרישיה דקרא משמע אותם על לחם ילפינן לה במנחות מלחם המלואים דלחם למעלה:"
+  },
+  "Rashi on Sukkah 37b:9:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 37b:9:1",
+      "Rashi on Sukkah 37b:9:2",
+      "Rashi on Sukkah 37b:9:3",
+      "Rashi on Sukkah 36a:7:2",
+      "Rashi on Sukkah 37b:1:1",
+      "Rashi on Sukkah 37b:2:1",
+      "Rashi on Sukkah 37b:3:1",
+      "Rashi on Sukkah 37b:4:1",
+      "Rashi on Sukkah 37b:6:1",
+      "Rashi on Sukkah 37b:7:1"
+    ],
+    "generatedAt": "2026-11-07T10:34:59.586Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 37b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הונף</strong> - היינו מוליך ומביא ונטלי\"ר בלע\"ז:"
+  },
+  "Rashi on Sukkah 37b:9:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 37b:9:1",
+      "Rashi on Sukkah 37b:9:2"
+    ],
+    "generatedAt": "2026-11-07T10:36:00.698Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 37b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הורם</strong> - מעלה ואין עלייה בלא הורדה והאי קרא לאו בכבשי עצרת כתיב אלא במלואים ומיהו כל תנופות ילפינן מינה:"
+  },
+  "Tosafot on Sukkah 37b:10:1": {
+    "dependsOn": [
+      "Tosafot on Sukkah 37b:1:1",
+      "Tosafot on Sukkah 37b:6:1",
+      "Tosafot on Sukkah 37b:7:1",
+      "Tosafot on Menachot 62a:15:1"
+    ],
+    "generatedAt": "2026-11-07T10:40:42.710Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 37b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדי לעצור רוחות רעות</strong> - בפרק כל המנחות באות מצה <span class=\"parenthesized\">(מנחות סב. ושם)</span> חשיב כל הטעונין תנופה ושמא לא בכל תנופות עושין כן אלא דוקא בתנופת שתי הלחם דעצרת וכן ללולב משום דאמרינן פ\"ק דר\"ה <span class=\"parenthesized\">(דף טז.)</span> דגזר דין נחתם בפסח על התבואה בעצרת על פירות האילן בחג על המים ולכך הנענוע שבלולב יש בו הולכה והבאה ובערוך פירש בערך נע [דאיתא בירושלמי תנא] צריך לנענע ג' פעמים על כל דבר ודבר בעי ר' זירא הכין חד והכין חד או דלמא הכין והכין חד פי' כבר אמרת צריך נענוע ג' פעמים ובעי ר' זירא הולכה פעם אחת והבאה פעם אחת או הולכה והבאה פעם אחת נחשבים וצריך להוליך ולהביא שלשה פעמים תמן תנינן בנדה פרק האשה <span class=\"parenthesized\">(דף סב.)</span> גבי שבעה סמנין מעבירין על הכתם וצריך לכסכס שלש פעמים על כל אחד רבי זעירא בעי הכין חד והכין חד או הכין והכין חד ולא אפשיט וכיון דלא אפשיט עבדינן לחומרא שלש פעמים לכל אחד ואחד ע\"כ לשונו וההיא בעיא דהתם איתא נמי בש\"ס דידן בנדה פ' האשה <span class=\"parenthesized\">(דף סג.)</span> דבעי ר' ירמיה אמטויי ואתויי חד או דלמא אמטויי חד ואתויי חד ודכוותה פ' ואלו מנחות <span class=\"parenthesized\">(דף עו.)</span> גבי שלש מאות שיפה וחמש מאות בעיטה דבעי ר' ירמיה אמטויי ואתויי חד או דלמא אמטויי חד ואתויי חד:"
+  },
+  "Tosafot on Sukkah 37b:1:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 37b:1:1",
+      "Rashi on Sukkah 37b:1:2",
+      "Sukkah 37b:1",
+      "Yevamot 72b:19",
+      "Chokhmat Shlomo on Sukkah 37b:1"
+    ],
+    "generatedAt": "2026-11-07T10:10:11.509Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 37b:1:1"
+    ],
+    "sourceText": "אמאי ונתן אמר רחמנא אלא שמע מינה נתינה על ידי דבר אחר שמה נתינה הכא נמי לקיחה על ידי דבר אחר שמה לקיחה. כך כתוב בכל הספרים וקשה חדא דמה לו לדקדק מנתינה הא גבי פרה כתיב לשון לקיחה ולקחו לטמא מעפר שרפת החטאת השתא קנסיב על ידי שפופרת דהיינו על ידי דבר אחר ועוד ונתן קאי אמים ולא אאפר כדמוכח בהדיא פרק כל שעה <span class=\"parenthesized\">(פסחים דף לד: ושם)</span> דפריך ונתן אלמא תלושין נינהו והא מחוברין נינהו כלומר דבעינן מים חיים אל כלי ובפרק שני דסוטה <span class=\"parenthesized\">(דף טז: ושם)</span> ובפרק קמא דתמורה <span class=\"parenthesized\">(דף יב: ושם)</span> נמי קאמר תרי קראי כתיבי ונתן עליו אלמא אפר ברישא דפשטיה דקרא משמע דעליו אאפר קאי שנותן המים עליו וכתיב מים חיים אל כלי דמשמע שלא יהא הפסק בין מים לכלי ופרק הערל <span class=\"parenthesized\">(יבמות עב: ושם)</span> קאמר כתב רחמנא ולקחו ונתן דאפילו שקלי תרי ויהיב חד היינו שקלי תרי מאפר ויהיב חד במים ומיהו יתכן דנתן אתרוייהו קאי אמים ואפר ו<span class=\"rashi-quotation\">בקונטרס</span> גריס הכי ואמאי ולקחו ונתן אמר רחמנא אלא שמע מינה לקיחה על ידי דבר אחר שמה לקיחה:"
+  },
+  "Tosafot on Sukkah 37b:6:1": {
+    "dependsOn": [
+      "Tosafot on Sukkah 37b:6:1",
+      "Rashi on Sukkah 37b:6:1",
+      "Rashi on Sukkah 37b:6:2",
+      "Rashi on Sukkah 37b:6:3",
+      "Steinsaltz comment #1 on Sukkah 37b:6",
+      "Ritva on Sukkah 37b:4",
+      "Ritva on Sukkah 37b:5",
+      "Maharsha on Sukkah 37b:9",
+      "Tosafot on Sukkah 37b:1:1",
+      "Tosafot on Sukkah 37b:7:1",
+      "Tosafot on Sukkah 37b:10:1"
+    ],
+    "generatedAt": "2026-11-07T10:25:22.134Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 37b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולגבהיה לאתרוג ולבריך</strong> - קשה דהוה ליה למימר הואיל ובשיעור' גבוה מכולן:"
+  },
+  "Tosafot on Sukkah 37b:7:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 37b:7:1",
+      "Tosafot on Sukkah 37b:1:1",
+      "Tosafot on Sukkah 36b:6:1",
+      "Tosafot on Sukkah 36b:6:2"
+    ],
+    "generatedAt": "2026-11-07T10:28:51.920Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 37b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בהודו להשם תחלה וסוף</strong> - הודו שבתחלת הפרק והודו בסוף הלל מן הודו עד סוף ההלל חדא פרשה היא במנין פרשיות של ספר תהלים <span class=\"rashi-quotation\">כך פירש בקונטרס</span> ויש מפרשים תחלת הפסוק וסוף הפסוק ולאו מילתא היא אלא בהודו מנענע פעם אחד וכן באנא ה' הושיעה נא כבית הלל ולא באנא ה' הצליחה נא כבית שמאי וטעמא דבית הלל אע\"פ שאין אנא ה' הושיעה נא תחלת הפרק ולא סוף הפרק מנענעים משום דכתיב <span class=\"parenthesized\">(דברי הימים א טז)</span> אז ירננו עצי היער מלפני ה' כי בא לשפוט את הארץ וכתיב בתריה הודו לה' כי טוב כי לעולם חסדו וכתיב נמי בתריה ואמרו הושיענו אלהי ישענו והיינו ירננו שמנענעים את הלולב ומשבחין בהודו ובאנא ה' הושיעה נא ועכשיו שנהגו ששליח צבור אומר יאמר נא ישראל והצבור עונין הודו וכן ביאמרו נא יראי ה' הצבור מנענעים על כל הודו והודו שעונין אבל שליח צבור לא ינענע וי\"מ דאף שליח צבור מנענע אגב ציבורא שעונין בכל פעם ופעם הודו ומנענעין מנענע נמי שליח צבור ביאמר נא וביאמרו נא ובשעת ברכה לא מצינו אם חייב לנענע בתחלת נטילה אלא מדאמרינן בפירקין <span class=\"parenthesized\">(דף מב.)</span> קטן היודע לנענע חייב בלולב משמע דמנענע בתחלת הברכה אע\"פ שאינו יודע לקרות הלל ועוד מדתניא במסכת ברכות בסוף תפלת השחר <span class=\"parenthesized\">(ברכות דף ל. ושם)</span> הקדים לצאת לדרך מביאין לו שופר ותוקע לולב ומנענע מגילה וקורא בה משמע דמנענע בלא הלל:"
+  }
+}

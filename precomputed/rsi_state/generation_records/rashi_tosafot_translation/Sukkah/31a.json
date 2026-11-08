@@ -1,0 +1,513 @@
+{
+  "Rashi on Sukkah 31a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T23:26:31.730Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פשיטא מאי שנא מעצים</strong> - דאמרן לעיל גזל עצים וסיכך בהן אין לו אלא דמים:"
+  },
+  "Rashi on Sukkah 31a:10:2": {
+    "dependsOn": [
+      "Sukkah 31a:10",
+      "Rashi on Sukkah 31a:10:1"
+    ],
+    "generatedAt": "2026-11-06T23:27:15.136Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עצים שכיחי</strong> - לקנות בדמים שיתן לו זה הלכך משום תקנת השבים לא אטרחוהו לגוזל דהא נגזל מצי מיטרח ומזבן:"
+  },
+  "Rashi on Sukkah 31a:11:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 31a:11:1"
+    ],
+    "generatedAt": "2026-11-06T23:27:52.018Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי חברה בטינא</strong> - הוה ליה כשאר בנין קבוע:"
+  },
+  "Rashi on Sukkah 31a:12:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 31a:12:1",
+      "Rashi on Sukkah 31a:12:2",
+      "Rashi on Sukkah 31a:12:3",
+      "Rashi on Sukkah 31a:10:1",
+      "Rashi on Sukkah 31a:14:1",
+      "Rashi on Sukkah 30a:1:1",
+      "Rashi on Sukkah 30b:1:1",
+      "Rashi on Sukkah 30b:3:1"
+    ],
+    "generatedAt": "2026-11-06T23:28:48.244Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה אתרוג בעי הדר</strong> - כדכתיב ביה:"
+  },
+  "Rashi on Sukkah 31a:12:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 31a:12:1",
+      "Rashi on Sukkah 31a:12:2",
+      "Rashi on Sukkah 31a:12:3"
+    ],
+    "generatedAt": "2026-11-06T23:29:54.368Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא מקשינן</strong> - לא הוקשו ללמוד זה מזה ולא ניתן לדרוש מעצמו מכל י\"ג מדות שהתורה נדרשת בהן אלא ק\"ו:"
+  },
+  "Rashi on Sukkah 31a:12:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 31a:12:1",
+      "Rashi on Sukkah 31a:12:2",
+      "Tosafot on Sukkah 30a:1:1",
+      "Sukkah 35a:5",
+      "Rashi on Sukkah 31a:10:1",
+      "Rashi on Sukkah 31a:10:2",
+      "Rashi on Sukkah 31a:3:1",
+      "Rashi on Sukkah 31a:3:2",
+      "Rashi on Sukkah 31a:3:3",
+      "Rashi on Sukkah 31a:3:4",
+      "Rashi on Sukkah 31a:3:5",
+      "Rashi on Sukkah 2a:1:1",
+      "Rashi on Sukkah 2a:1:2"
+    ],
+    "generatedAt": "2026-11-06T23:32:51.947Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל אתרוג דברי הכל בעי הדר</strong> - דהדר כתיב ביה ולא דרשינן ליה לרבי יהודה אידור לשון יווני כדדריש ליה בן עזאי לקמן <span class=\"parenthesized\">(סוכה ד' לה.)</span>:"
+  },
+  "Rashi on Sukkah 31a:14:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 31a:14:1",
+      "Rashi on Sukkah 31a:8:5",
+      "Rashi on Sukkah 31a:12:3",
+      "Rashi on Sukkah 31a:10:1",
+      "Rashi on Sukkah 31a:10:2",
+      "Rashi on Sukkah 31a:12:1",
+      "Rashi on Sukkah 30b:1:1",
+      "Rashi on Sukkah 30b:2:1"
+    ],
+    "generatedAt": "2026-11-06T23:42:05.574Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כפות</strong> - לשון אסירה כדתנן <span class=\"parenthesized\">(מכות ד' כב:)</span> כופת שתי ידיו על העמוד:"
+  },
+  "Rashi on Sukkah 31a:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T23:43:13.070Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין אוגדין את הלולב</strong> - האי לולב היינו הושענא כולהו שלשה המינים יחד:"
+  },
+  "Rashi on Sukkah 31a:16:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 31a:16:2",
+      "Rashi on Sukkah 31a:16:3",
+      "Rashi on Sukkah 36b:9:1"
+    ],
+    "generatedAt": "2026-11-06T23:46:41.076Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפילו בסיב</strong> - הגדל סביבות הדקל ונכרך סביביו כעין לולבי גפנים:"
+  },
+  "Rashi on Sukkah 31a:16:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 31a:16:1",
+      "Rashi on Sukkah 31a:16:3",
+      "Rashi on Sukkah 31a:10:1",
+      "Rashi on Sukkah 31a:10:2",
+      "Rashi on Sukkah 31a:12:1",
+      "Rashi on Sukkah 31a:12:2",
+      "Tosafot on Sukkah 31b:3:1"
+    ],
+    "generatedAt": "2026-11-06T23:49:09.783Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואפילו בעיקרא דדיקלא</strong> - מן הקליפה ואע\"פ שאין מראיהן דומה למראה הלולב ובלבד שיהא מאותו המין דטעמא דר' יהודה התם לאו משום הדר הוא:"
+  },
+  "Rashi on Sukkah 31a:16:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 31a:16:1",
+      "Rashi on Sukkah 31a:16:2",
+      "Tosafot on Sukkah 31b:3:1"
+    ],
+    "generatedAt": "2026-11-06T23:50:08.015Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:16:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא משום דקסבר לולב צריך אגד</strong> - הלכך כל הנאגד עמו הוי מן המצוה ונמצא עובר בבל תוסיף אם יאגד מין חמישי:"
+  },
+  "Rashi on Sukkah 31a:17:1": {
+    "dependsOn": [
+      "Jastrow, פָּרִישׁ I 1",
+      "Rashi on Sukkah 31a:8:1",
+      "Rashi on Sukkah 31a:8:2",
+      "Steinsaltz on Sukkah 31a:17"
+    ],
+    "generatedAt": "2026-11-06T23:54:30.712Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פריש</strong> - קורוני\"א:"
+  },
+  "Rashi on Sukkah 31a:17:2": {
+    "dependsOn": [
+      "Jastrow, כָּמַשׁ 1",
+      "Rashi on Sukkah 31a:17:1",
+      "Rashi on Sukkah 31a:16:1",
+      "Rashi on Sukkah 31a:16:2",
+      "Rashi on Sukkah 31a:16:3"
+    ],
+    "generatedAt": "2026-11-06T23:56:37.360Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כמושים</strong> - פלצידי\"ש:"
+  },
+  "Rashi on Sukkah 31a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T22:53:44.021Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הושענא קרו לה</strong> - על שם שרגילין לאוגדן להושענא בחג:"
+  },
+  "Rashi on Sukkah 31a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T22:54:11.459Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והמסכך ברשות הרבים</strong> - הא נמי גזל הרבים:"
+  },
+  "Rashi on Sukkah 31a:3:1": {
+    "dependsOn": [
+      "Sukkah 31a:3",
+      "Rashi on Sukkah 31a:3:1",
+      "Rashi on Sukkah 31a:3:2"
+    ],
+    "generatedAt": "2026-11-06T22:55:51.067Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחלוקת</strong> - הא דפסיל ר' אליעזר כגון שתקף את חבירו בחזקה והוציאו מסוכתו הבנויה בקרקעו של נגזל וכל המחובר לקרקע הרי הוא כקרקע:"
+  },
+  "Rashi on Sukkah 31a:3:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 31a:3:1",
+      "Rashi on Sukkah 31a:3:3",
+      "Sukkah 27b:8",
+      "Sukkah 27b:9",
+      "Sukkah 27b:10",
+      "Sukkah 27b:11",
+      "Sukkah 27b:12",
+      "Sukkah 27b:13",
+      "Sukkah 27b:14",
+      "Sukkah 27b:1",
+      "Sukkah 27b:2",
+      "Sukkah 27b:3",
+      "Sukkah 27b:4",
+      "Sukkah 27b:5",
+      "Rashi on Sukkah 2a:1:1",
+      "Rashi on Sukkah 2a:1:2",
+      "Rashi on Sukkah 2a:1:3"
+    ],
+    "generatedAt": "2026-11-06T23:03:24.299Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור' אליעזר לטעמיה</strong> - דאמר סוכה שאולה אין יוצאין בה בפ' הישן <span class=\"parenthesized\">(לעיל סוכה כז:)</span> הלכך ממה נפשך זו פסולה:"
+  },
+  "Rashi on Sukkah 31a:3:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T23:03:55.825Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי קרקע נגזלת</strong> - כלומר אם יש על הקרקע תורת גזל כשאר מטלטלין לעמוד בחזקת הגזלן:"
+  },
+  "Rashi on Sukkah 31a:3:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T23:06:26.751Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סוכה גזולה היא</strong> - ור' אליעזר דריש תעשה לך משלך ולא גזולה ולא שאולה:"
+  },
+  "Rashi on Sukkah 31a:3:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T23:07:51.246Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:3:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי אינה נגזלת</strong> - וכל הימים ברשות בעליה היא הויא לה שאולה ופלוגתא היא בהגוזל <span class=\"parenthesized\">(ב\"ק דף קיז:)</span> איכא למ\"ד קרקע נגזלת דדריש ריבוי ומיעוט ואיכא למ\"ד קרקע אינה נגזלת דדריש כללי ופרטי:"
+  },
+  "Rashi on Sukkah 31a:4:1": {
+    "dependsOn": [
+      "Sukkah 31a:4",
+      "Rashi on Sukkah 31a:3:1",
+      "Rashi on Sukkah 31a:3:2",
+      "Rashi on Sukkah 31a:3:3",
+      "Rashi on Sukkah 31a:3:4",
+      "Rashi on Sukkah 31a:3:5",
+      "Tosafot on Sukkah 30b:1:1"
+    ],
+    "generatedAt": "2026-11-06T23:13:22.105Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבנן לטעמייהו</strong> - דאמרי יוצא אדם בסוכה שאינו שלו בשאולה וס\"ל דקרקע אינה נגזלת דרבנן היא דאמרי בפ' הגוזל <span class=\"parenthesized\">(שם)</span> דקרקע אינה נגזלת ופליגי עליה דר\"א נמי בהא דגזילת קרקע הלכך שאולה היא וה\"ה נמי דה\"ל לר\"נ למימר דר\"א לטעמיה דאמר בהגוזל <span class=\"parenthesized\">(שם)</span> קרקע נגזלת וסוכה גזולה היא דמייאשי בעלים מינה כשאר מטלטלין דה\"ל קרקע בחזקת גזלן ורבנן לטעמייהו דאמרי קרקע אינה נגזלת ושאולה היא אלא אי אמר הכי הוי משמע דמודי ר' אליעזר בשאולה ואנן קים לן בהישן <span class=\"parenthesized\">(לעיל סוכה דף כז:)</span> דאף בשאולה פסיל הלכך אמר לה רב נחמן ממה נפשך כלומר א\"נ הוה סבירא ליה לר' אליעזר קרקע אינה נגזלת כרבנן אפ\"ה פסיל לה משום שאולה:"
+  },
+  "Rashi on Sukkah 31a:5:1": {
+    "dependsOn": [
+      "Sukkah 31a:5"
+    ],
+    "generatedAt": "2026-11-06T23:14:32.583Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל גזל עצים וסיכך בהן</strong> - אין זו לא גזולה ולא שאולה דקננהו בשינוי מעשה ושינוי השם ועוד משום תקנת השבים אינו צריך לסתור בנינו אלא יחזור דמים ודאמרינן בפ' הישן <span class=\"parenthesized\">(שם)</span> דמודו רבנן בגזולה לאו בגוזל סוכה המחוברת לקרקע ולא בגוזל עצים ומסכך בהן אלא בגוזל סוכה העשויה בראש העגלה ובראש הספינה דהיא עצמה נגזלת שאינה מחוברת לקרקע ואין עליו להחזיר דמים אלא כמו שהיא בנויה דאין כאן משום תקנת השבים שהרי לא טרח עליה לבנותה ולא הוציא עליה יציאות הלכך גזולה היא:"
+  },
+  "Rashi on Sukkah 31a:6:1": {
+    "dependsOn": [
+      "Sukkah 31a:6"
+    ],
+    "generatedAt": "2026-11-06T23:17:41.795Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ממאי</strong> - דבגזילת קרקע פליגי ובטעמא דשאולה:"
+  },
+  "Rashi on Sukkah 31a:8:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 31a:8:2",
+      "Rashi on Sukkah 31a:8:3",
+      "Rashi on Sukkah 31a:8:4",
+      "Rashi on Sukkah 31a:8:5",
+      "Rashi on Sukkah 31a:1:1",
+      "Rashi on Sukkah 31a:2:1"
+    ],
+    "generatedAt": "2026-11-06T23:18:44.778Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ההיא סבתא</strong> - דגזלו ממנה עבדי ריש גלותא עצים וסככו בהן:"
+  },
+  "Rashi on Sukkah 31a:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T23:19:15.389Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צווחה</strong> - צווחה להחזיר לה עצים עצמן:"
+  },
+  "Rashi on Sukkah 31a:8:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 31a:8:1",
+      "Rashi on Sukkah 31a:8:2",
+      "Rashi on Sukkah 31a:8:4",
+      "Rashi on Sukkah 31a:8:5",
+      "Rashi on Sukkah 31a:12:1",
+      "Rashi on Sukkah 31a:12:2",
+      "Rashi on Sukkah 31a:12:3",
+      "Rashi on Sukkah 30b:1:1",
+      "Rashi on Sukkah 30b:2:1"
+    ],
+    "generatedAt": "2026-11-06T23:21:23.897Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאבוהא</strong> - לאברהם אבינו ילידי ביתו שמנה עשר ושלש מאות:"
+  },
+  "Rashi on Sukkah 31a:8:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T23:21:50.111Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פעיתא</strong> - קולנית היא זו:"
+  },
+  "Rashi on Sukkah 31a:8:5": {
+    "dependsOn": [
+      "Rashi on Sukkah 31a:14:1",
+      "Tosafot on Sukkah 31a:15:1",
+      "Tosafot on Sukkah 30a:1:1"
+    ],
+    "generatedAt": "2026-11-06T23:23:54.350Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:8:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא דמי עצים</strong> - דתקנת חכמים היא זו על המריש הגזול שבנאו בבירה שיטול הנגזל את דמיו ולא חייבוהו לקעקע את בנינו מפני תקנת השבים במס' גיטין <span class=\"parenthesized\">(ד' נה.)</span>:"
+  },
+  "Rashi on Sukkah 31a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T23:25:05.867Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עבדו רבנן תקנתא</strong> - לטול דמיו:"
+  },
+  "Rashi on Sukkah 31a:9:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 31a:9:1"
+    ],
+    "generatedAt": "2026-11-06T23:25:51.775Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 31a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני תקנת מריש</strong> - ולא אמרינן אין כאן הפסד מרובה ויסתיר סוכתו דמצוה משוי ליה כל שבעה כבנין קבע:"
+  },
+  "Tosafot on Sukkah 31a:12:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 31a:12:1",
+      "Rashi on Sukkah 31a:12:2",
+      "Rashi on Sukkah 31a:12:3",
+      "Tosafot on Sukkah 31a:12:1",
+      "Gilyon HaShas on Sukkah 31a:4",
+      "Yevamot 4a:4"
+    ],
+    "generatedAt": "2026-11-06T23:35:12.856Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 31a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור\"י סבר לא מקשינן לולב לאתרוג</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> לא הוקשו ללמוד זה מזה ולא ניתן לידרוש מעצמו מכל י\"ג מדות שהתורה נדרשת בהן אלא קל וחומר ותימה גדולה פי' דאפילו סמוכין דהיינו שני מקראות הסמוכין זה לזה ניתנו לידרש מן התורה כדאמרן בריש יבמות <span class=\"parenthesized\">(דף ד.)</span> סמוכין מן התורה מנין שנאמר סמוכים לעד לעולם עשוים באמת וישר כל שכן היקישא דהיינו שני דברים המוקשים בפסוק אחד ואפילו לר' יהודה דלא דריש סמוכין אלא היכא דמוכח ומופנה כדאמרינן התם מ\"מ בהיקישא מודה אלא כל המדות אדם דן מעצמו חוץ מגזרה שוה דאין דן אלא אם כן למדה מרבו והכא בסברא פליגי דיש דברים שאין להקישם לאותו דבר ושמא קסבר לא שייך לשון הדר אלא בפירות:"
+  },
+  "Tosafot on Sukkah 31a:15:1": {
+    "dependsOn": [
+      "Sukkah 31a:15",
+      "Sukkah 36b:12",
+      "Sukkah 36b:13",
+      "Sukkah 36b:14",
+      "Sukkah 36b:8",
+      "Rashi on Sukkah 31a:14:1",
+      "Rashi on Sukkah 31a:12:3",
+      "Tosafot on Sukkah 31a:3:1",
+      "Tosafot on Sukkah 31a:5:1",
+      "Tosafot on Sukkah 31a:12:1"
+    ],
+    "generatedAt": "2026-11-06T23:45:43.871Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 31a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין אוגדין את הלולב אלא במינו</strong> - תימה היכי בעי למימר משום דבעי הדר והא פסל במתניתין <span class=\"parenthesized\">(ד' לו:)</span> בגימוניות של זהב שהיו עושין משום נוי ושמא הוי מצי למימר וליטעמיך:"
+  },
+  "Tosafot on Sukkah 31a:17:1": {
+    "dependsOn": [
+      "Maharam on Sukkah 31a:6",
+      "Tosafot on Sukkah 31a:3:1",
+      "Tosafot on Sukkah 31a:12:1",
+      "Tosafot on Sukkah 31a:15:1",
+      "Ritva on Sukkah 31a:17:1",
+      "Gilyon HaShas on Sukkah 31a:1",
+      "Steinsaltz comment #1 on Sukkah 31a:17"
+    ],
+    "generatedAt": "2026-11-06T23:58:07.976Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 31a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא מצא אתרוג לא יביא לא רמון ולא פריש</strong> - יש לדקדק מכאן דאם לא מצא כשר מברך בפסול מדנקט פריש או רמון ויש לדחות אבל יש לדקדק דשרי כמו לולב פסול לרבנן בשעת הדחק:"
+  },
+  "Tosafot on Sukkah 31a:3:1": {
+    "dependsOn": [
+      "Tosafot on Sukkah 31a:3:1",
+      "Steinsaltz comment #1 on Sukkah 31a:3",
+      "Rashi on Sukkah 31a:3:3",
+      "Rashi on Sukkah 31a:3:4",
+      "Rashi on Sukkah 31a:3:5"
+    ],
+    "generatedAt": "2026-11-06T23:09:37.246Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 31a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי קרקע נגזלת</strong> - אמת הוא דר' אליעזר סבר כן דשמעינן ליה הכי בהגוזל בתרא <span class=\"parenthesized\">(ב\"ק דף קיז:)</span> אלא רוצה ליישב דבריו בכל ענין:"
+  },
+  "Tosafot on Sukkah 31a:5:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 31a:5:1",
+      "Chokhmat Shlomo on Sukkah 31a:2",
+      "Chidushei Halachot on Sukkah 31a:1"
+    ],
+    "generatedAt": "2026-11-06T23:16:37.789Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 31a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל גזל עצים וסיכך בהן</strong> - אין זה לא גזולה ולא שאולה דקננהו בשינוי מעשה ושינוי השם ועוד משום תקנת השבים אין לו עליו לסתור את בנינו אלא יחזיר דמים והא דאמרינן בפרק הישן <span class=\"parenthesized\">(לעיל סוכה דף כז:)</span> דמודו רבנן בגזולה לאו בגוזל סוכה המחוברת לקרקע ולא בגוזל עצים וסיכך בהן אלא בגוזל סוכה העשויה בראש העגלה או בראש הספינה והיא עצמה נגזלת שאינה מחוברת לקרקע ואין עליו להחזיר דמים אלא כמו שהיא בנויה דאין בה משום תקנת השבים שהרי לא טרח לבנותו ולא הוציא עליו יציאות הלכך גזולה היא <span class=\"rashi-quotation\">כך פי' בקונטרס</span> ועל חנם דחק דמדכתיב לך דממעטינן גזולה בפרק הישן <span class=\"parenthesized\">(לעיל סוכה דף כז:)</span> וגזל עצים וסיכך בהן שינוי החוזר לברייתו הוא ומדאורייתא לא קני ומשום תקנת מריש היינו מדרבנן וקרא מיתוקם מדאורייתא ואפילו [מדרבנן] בלא עגלה וספינה איכא לאוקומיה קרא כגון בראובן שבנה סוכה בחצרו של שמעון מדעתו ובא שמעון ותקף את ראובן והוציאו מסוכתו דאין עליה תורת שאולה כיון דלא קיימא ברשותו של ראובן ולא דמיא לקרקע דבחזקת הבעלים עומדת ולכך אין קרקע נגזלת:"
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "Rashi on Sukkah 18b:1:1": {
+    "dependsOn": [
+      "Sukkah 18b:1",
+      "Rashi on Sukkah 18b:1:2",
+      "Rashi on Sukkah 18a:16:1"
+    ],
+    "generatedAt": "2026-11-06T02:45:47.485Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 18b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרינן פי תקרה יורד וסותם</strong> - מכל צד:"
+  },
+  "Rashi on Sukkah 18b:1:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 18b:1:1",
+      "Sukkah 18b:1",
+      "Sukkah 18b:2",
+      "Sukkah 18b:4",
+      "Rashi on Sukkah 19a:1:1",
+      "Rashi on Sukkah 19a:1:2",
+      "Rashi on Sukkah 19a:1:3",
+      "Rashi on Sukkah 18b:2:1"
+    ],
+    "generatedAt": "2026-11-06T02:47:21.716Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 18b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבא אמר פסולה לא אמרינן פי תקרה יורד וסותם</strong> - כדמפרש טעמא לקמן פי תקרה עוביין של נסרים בחודן וכן עובי ראשיהן הכלה לצד סוכה:"
+  },
+  "Rashi on Sukkah 18b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T02:48:58.295Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 18b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לדידך דאמרת פי תקרת אכסדרה יורד וסותם</strong> - תימא הכי נמי בסוכה העשויה באמצע חצר ומסוכך בנסרים עבים שאין רחבים ד' ונפחת דופן האמצעי ושנים מכאן ומכאן קיימין מכשרת לה נמי על ידי פי תקרה שלה ותימא בה פי תקרה יורד וסותם:"
+  },
+  "Rashi on Sukkah 18b:2:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 18b:2:1",
+      "Steinsaltz on Sukkah 18b:2",
+      "Ritva on Sukkah 18b:2"
+    ],
+    "generatedAt": "2026-11-06T02:50:07.726Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 18b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מודינא לך בההיא</strong> - דכיון דאויר פתוח לנגדו דומיא דמבוי מפולש ועשוי לקפנדריא לבקיעת רבים:"
+  },
+  "Rashi on Sukkah 18b:3:1": {
+    "dependsOn": [
+      "Sukkah 18b:3",
+      "Rashi on Sukkah 18b:3:1",
+      "Rashi on Sukkah 18b:3:2",
+      "Rashi on Sukkah 18b:3:3",
+      "Sukkah 18b:1",
+      "Tosafot on Sukkah 18b:3:1",
+      "Rashi on Sukkah 18a:16:1",
+      "Rashi on Sukkah 18b:2:1",
+      "Rashi on Sukkah 18b:2:2"
+    ],
+    "generatedAt": "2026-11-06T02:51:51.533Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 18b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לימא אביי ורבא</strong> - קא סלקא דעתיה טעמא דרבא משום דקסבר בחד דופן או בשנים אמרינן יורד וסותם אבל בכל צד לא אמרינן:"
+  },
+  "Rashi on Sukkah 18b:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T02:52:16.462Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 18b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בבקעה</strong> - להכי נקט בבקעה דמתוך שאינה סמוכה לבית אין לה דפנות שאין עושין דפנות לשם אכסדרה אבל פעמים שעושין אותה לפני הבית ודופן הבית סותמה מאחריה:"
+  },
+  "Rashi on Sukkah 18b:3:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 18b:3:1",
+      "Rashi on Sukkah 18b:3:2",
+      "Rashi on Sukkah 18b:3:3",
+      "Sukkah 18b:3",
+      "Rashi on Sukkah 18a:1:1",
+      "Rashi on Sukkah 18a:2:1",
+      "Rashi on Sukkah 18b:1:1",
+      "Eruvin 94b:8",
+      "Rashi on Eruvin 94b:8:1"
+    ],
+    "generatedAt": "2026-11-06T02:54:04.127Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 18b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא אמרינן פי תקרה יורד וסותם</strong> - וטעמא מפרש בעירובין <span class=\"parenthesized\">(דף צד:)</span> בארבע דפנות לית ליה אבל אם היתה שם דופן שלימה אית ליה יורד וסותם באחרנייתא לימא כו' אביי כרב ורבא כשמואל:"
+  },
+  "Rashi on Sukkah 18b:4:1": {
+    "dependsOn": [
+      "Sukkah 18b:4",
+      "Rashi on Sukkah 18b:3:1",
+      "Rashi on Sukkah 18b:3:2",
+      "Rashi on Sukkah 18b:3:3",
+      "Sukkah 18b:2",
+      "Rashi on Sukkah 18a:16:1"
+    ],
+    "generatedAt": "2026-11-06T03:04:47.568Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 18b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אליבא דשמואל כולי עלמא לא פליגי</strong> - כך פירש סוגיא זו בכל מקום שיכול להעמיד דברי אחד מהן שלא במחלוקתן של אחרים ודברי השני אינו יכול להעמיד אלא במחלוקת אומר כן אליבא דשמואל ודאי כדקאמרת הוא דרבא לחודיה הוא דאמר כשמואל ואביי אינו יכול להעמיד דבריו כשמואל ואליבא דשמואל לא פליג אביי למימר כשרה דמה לענין שבת דמחיצות פי תקרה לחלל אכסדרה עבידי שהתקרה לצורך אכסדרה נעשית לא שרי להו שמואל בסתימת פי תקרה כל שכן לענין סוכה שלא לשם סוכה נעשה שהרי חוץ לחללה של אכסדרה היא נעשית ומחיצות לצורך תוכן עשויות ולא לצורך חוצה להן:"
+  },
+  "Tosafot on Sukkah 18b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T03:02:33.615Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 18b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אכסדרה בבקעה</strong> - בפרק כל גגות <span class=\"parenthesized\">(עירובין דף צד:)</span> <span class=\"rashi-quotation\">פירש בקונטרס</span> דנקט בבקעה משום דבבקעה הויא אכסדרה פרוצה מארבע רוחותיה ועומדת קירויה על ד' יתידות אבל בעיר סתם אכסדראות סמוכות לבית או לחצר ודופן הבית סותמה מאחריה ומודה שמואל התם דיורד וסותם וזהו כפי גרסתו דגריס בשילהי. כל גגות <span class=\"parenthesized\">(שם דף צד:)</span> ומי אית ליה לשמואל פי תקרה יורד וסותם ומשני כי לית ליה בד' אבל בג' אית ליה ופירש שם <span class=\"rashi-quotation\">בקונטרס</span> כי לית ליה בד' במקום שצריך לעשות ארבע מחיצות בסתימת פי תקרה כגון אכסדרה אבל בג' אם היתה בה מחיצה אחת כהלכתה ופי תקרה לשלש מחיצות מכשר וקשיא דהא מוקמינן הכא אביי כרב ולעיל קאמר אביי בההיא מודינא לך משום דהוה כמבוי מפולש אלמא דאפילו בשתי מחיצות לית ליה פי תקרה כ\"ש היכא דליכא כלל ואם באנו לחלק משום דאיסור בקעה דהתם כרמלית דרבנן אם כן לרבא נמי נימא הכי ועוד פליגי ר' יהודה ורבנן בסוף כל גגות <span class=\"parenthesized\">(עירובין דף צה.)</span> גבי שתי מחיצות ברה\"ר אי אמרינן פי תקרה או לא וגבי בקעה אמר רב פי תקרה אפילו בלא מחיצות אם לא משום דזה מדאורייתא וזה מדרבנן ור\"ת גריס איפכא וכן ר\"ח כי לית ליה בשלש כלומר כשאין בו כי אם שלש מחיצות והרביעית פרוצה במלואה דסתם אכסדרה כך היא כדאמרינן בשלהי לא יחפור <span class=\"parenthesized\">(ב\"ב דף כה:)</span> עולם לאכסדרה הוא דומה ורוח צפונית אינה מסובבת ואמר בהקומץ רבה <span class=\"parenthesized\">(מנחות דף כט:)</span> מפני מה נברא העולם בה\"א מפני שדומה לאכסדרה שכל הרוצה לצאת יצא אבל בארבע כשיש שם ארבע מחיצות כגון שיש ברביעית שני לחיים ומשהו דאיכא שם מחיצה אע\"פ שפרוצה ביתר מעשר אית ליה פי תקרה ורב אפילו פרוצה במלואה ואפי' בשתי מחיצות אית ליה פי תקרה ובלבד שלא יהא מפולש מדקפריך בשלהי כל גגות <span class=\"parenthesized\">(עירובין דף צד:)</span> גבי וכן בית שנפרץ משתי רוחות מאי שנא מרוח אחת דאמרינן פי תקרה יורד וסותם משתי רוחות נמי אמרינן פי תקרה יורד וסותם ומשני רב כגון שנפרץ בקרן זוית דקירויו באלכסון והדתניא התם לעיל בההוא פירקא <span class=\"parenthesized\">(דף צג.)</span> בית שחציו מקורה וחציו אינו מקורה גפנים כאן מותר לזרוע כאן דאמרי' פי תקרה יורד וסותם אע\"ג דליכא התם שם ד' מחיצות אין לדמות כלאים לשבת דאפילו פאות מותר לכלאים כדאמרינן פ\"ק דעירובין <span class=\"parenthesized\">(דף יא.)</span> והאי דנקט הכא בבקעה לפי' ר\"ת יש לפרש דנקט בקעה שהוא מקום איסור טלטול דבקעה שהיא כרמלית א\"נ משום דאיירי נמי באכסדרה שיש לה שתי מחיצות דהתם נמי אית ליה לרב פי תקרה ובלבד שלא תהא מפולשת כדפרישית ואי הוה נקיט אכסדרה שבחצר הוה משמע דווקא כשיש לה שלש מחיצות דסתם אכסדרה שבחצר מושכת בכל אורך שבחצר או ברוחב אלא שהיא עד אמצע החצר ופרוצה במלואה לפנים:"
+  }
+}

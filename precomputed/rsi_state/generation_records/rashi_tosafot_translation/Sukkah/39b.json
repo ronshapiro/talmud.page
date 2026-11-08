@@ -1,0 +1,346 @@
+{
+  "Rashi on Sukkah 39b:1:1": {
+    "dependsOn": [
+      "Sukkah 39b:1",
+      "Rashi on Sukkah 39b:2:1",
+      "Rashi on Sukkah 39b:3:1",
+      "Rashi on Sukkah 39a:4:2",
+      "Rashi on Sukkah 39a:6:1",
+      "Rashi on Sukkah 39a:6:5"
+    ],
+    "generatedAt": "2026-11-07T12:50:19.388Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובא</strong> - חבר זה ואוכל אותם הפירות בקדושת שביעית אכילה ושתיה וסיכה והדלקת הנר שהן הנאות המותרות בהן כדמפרש במס' שביעית <span class=\"parenthesized\">(פ\"ח מ\"ב)</span>:"
+  },
+  "Rashi on Sukkah 39b:2:1": {
+    "dependsOn": [
+      "Sukkah 39b:2",
+      "Rashi on Sukkah 39b:1:1",
+      "Rashi on Sukkah 39b:2:2",
+      "Rashi on Sukkah 39a:7:1",
+      "Rashi on Sukkah 39a:8:1",
+      "Rashi on Sukkah 39b:4:1",
+      "Rashi on Sukkah 39b:4:2",
+      "Rashi on Sukkah 39b:5:1",
+      "Tosafot on Sukkah 39b:2:1",
+      "Steinsaltz on Sukkah 39b:2"
+    ],
+    "generatedAt": "2026-11-07T12:56:16.569Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בד\"א</strong> - דמזון ג' סעודות מיהא מוסרים בלוקח מן המופקר שראה חבר זה שנתלקטו פירות הללו בשדה המופקר שאין ע\"ה זה שומרו הואיל ולא ראינוהו חשוד מותר למסור לו מעט אבל לא הרבה שלא תהא עינו צרה להצניען:"
+  },
+  "Rashi on Sukkah 39b:2:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 39b:2:1",
+      "Sukkah 39b:2",
+      "Tosafot on Sukkah 39b:2:1",
+      "Steinsaltz on Sukkah 39b:2",
+      "Rashi on Sukkah 38a:9:2"
+    ],
+    "generatedAt": "2026-11-07T12:58:15.916Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל בלוקח מן המשומר</strong> - ששדה זו היתה משומרת בגדר ופתח נעול זה נחשד לענין שאינו מפקיר לעניים דכתיב <span class=\"parenthesized\">(שמות כ״ג:י״א)</span> ואכלו אביוני עמך וגו' והערמה היא שמוכרן על יד על יד:"
+  },
+  "Rashi on Sukkah 39b:3:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 39b:3:2",
+      "Rashi on Sukkah 39b:3:3",
+      "Sukkah 39b:3",
+      "Rashi on Sukkah 39b:2:1",
+      "Rashi on Sukkah 39b:2:2",
+      "Rashi on Sukkah 39a:1:1",
+      "Rashi on Sukkah 38b:1:1"
+    ],
+    "generatedAt": "2026-11-07T13:15:36.574Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הפיגם</strong> - עשב שקורין רוד\"א:"
+  },
+  "Rashi on Sukkah 39b:3:2": {
+    "dependsOn": [
+      "Steinsaltz on Sukkah 39b:3",
+      "Rashi on Sukkah 39b:3:1",
+      "Rashi on Sukkah 39b:3:3",
+      "Sefer HeArukh, Letter Kaf 375",
+      "Rashi on Sukkah 39b:2:1"
+    ],
+    "generatedAt": "2026-11-07T13:17:15.476Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הירבוזין</strong> - הנפל\"ש בלשון אשכנז וכאן קורין לו אוידל\"ש והן עשבים וטעמם קרוב ללולבי גפנים:"
+  },
+  "Rashi on Sukkah 39b:3:3": {
+    "dependsOn": [
+      "Steinsaltz on Sukkah 39b:3",
+      "Rashi on Sukkah 39b:3:1",
+      "Rashi on Sukkah 39b:3:2",
+      "Rashi on Sukkah 39b:3:4",
+      "Rashi on Sukkah 39a:1:1",
+      "Rashi on Sukkah 39a:2:1",
+      "Sefer HeArukh, Letter Kaf 375",
+      "Mishnah Sheviit 8:11-9:1"
+    ],
+    "generatedAt": "2026-11-07T13:19:13.846Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והשיטין</strong> - אישפרו\"ש ומין ירק הוא:"
+  },
+  "Rashi on Sukkah 39b:3:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 39b:3:1",
+      "Rashi on Sukkah 39b:3:2",
+      "Rashi on Sukkah 39b:3:3",
+      "Rashi on Sukkah 39b:3:4",
+      "Rashi on Sukkah 39b:3:5",
+      "Steinsaltz on Sukkah 39b:3"
+    ],
+    "generatedAt": "2026-11-07T13:21:05.922Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39b:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחלגלוגות</strong> - פולפי\"ד:"
+  },
+  "Rashi on Sukkah 39b:3:5": {
+    "dependsOn": [
+      "Rashi on Sukkah 39b:3:1",
+      "Rashi on Sukkah 39b:3:2",
+      "Rashi on Sukkah 39b:3:3",
+      "Rashi on Sukkah 39b:3:4",
+      "Rashi on Sukkah 39b:3:6",
+      "Rashi on Sukkah 39b:3:7",
+      "Rashi on Sukkah 39b:3:8",
+      "Rashi on Sukkah 39b:3:9"
+    ],
+    "generatedAt": "2026-11-07T13:22:56.306Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39b:3:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והכוסבר של הרים</strong> - אליינדר\"א והוא גדל בהרים אבל כוסבר של גנה חשוב הוא:"
+  },
+  "Rashi on Sukkah 39b:3:6": {
+    "dependsOn": [
+      "Rashi on Sukkah 39b:3:4",
+      "Rashi on Sukkah 39b:3:5",
+      "Steinsaltz on Sukkah 39b:3",
+      "Sefer HeArukh, Letter Kaf 375",
+      "Rashi on Sukkah 39b:3:1",
+      "Rashi on Sukkah 39b:3:2",
+      "Rashi on Sukkah 39b:3:3",
+      "Rashi on Sukkah 39b:3:7"
+    ],
+    "generatedAt": "2026-11-07T13:24:49.757Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39b:3:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והכרפס של נהרות</strong> - שקורין בלע\"ז קירשו\"ן אבל של גנה חשוב הוא וי\"א כרפס אפי\"א וכן שמעתי אבל נראה שאינה גדילה בנהרות:"
+  },
+  "Rashi on Sukkah 39b:3:7": {
+    "dependsOn": [
+      "Rashi on Sukkah 39b:3:6",
+      "Rashi on Sukkah 39b:3:7",
+      "Rashi on Sukkah 39b:3:8",
+      "Mishnah Sheviit 9:1",
+      "Rashi on Sukkah 39b:1:1",
+      "Rashi on Sukkah 39b:2:1",
+      "Rashi on Sukkah 39b:2:2"
+    ],
+    "generatedAt": "2026-11-07T13:26:27.640Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39b:3:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והגרגיר של אפר</strong> - אורוג\"א הגדילה באחו אבל של גנה חשוב הוא:"
+  },
+  "Rashi on Sukkah 39b:3:8": {
+    "dependsOn": [
+      "Rashi on Sukkah 39b:3:7",
+      "Rashi on Sukkah 39b:3:9",
+      "Rashi on Sukkah 39b:4:1",
+      "Rashi on Sukkah 39b:4:2"
+    ],
+    "generatedAt": "2026-11-07T13:28:37.740Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39b:3:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פטורין מן המעשר</strong> - בכל השנים כדמפרש טעמא שאין כיוצא בהן נשמר שאין חשובין על הבריות ומפקירין אותן לכל והפקר פטור מן המעשר דכתיב <span class=\"parenthesized\">(דברים י״ד:כ״ט)</span> ובא הלוי כי אין לו חלק ונחלה עמך בדבר שאין לו חלק ונחלה עמך יטול מעשרותיו יצא הפקר לקט שכחה ופאה שיש לו חלק עמך:"
+  },
+  "Rashi on Sukkah 39b:3:9": {
+    "dependsOn": [
+      "Rashi on Sukkah 39b:3:8",
+      "Sukkah 39b:3"
+    ],
+    "generatedAt": "2026-11-07T13:29:46.141Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39b:3:9"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וניקחין מכל אדם בשביעית</strong> - ואף על גב דשביעית נהגא במופקרים מפני שאין כיוצא בהן נשמר והוה ליה לוקח מן המופקר ואף על גב דלא ידעינן ביה בהאי דודאי הפקיר מחזקינא ליה בהכי דאין דרך לשומרן לפיכך מוסרין לו דמיהן ולא חשדינן ליה שיצניעם לסחורה אלמא בלוקח מן המופקר מסרינן טובא דהא ונקחין קתני משמע אפי' טובא:"
+  },
+  "Rashi on Sukkah 39b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T13:30:30.185Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכדי מן</strong> - בכדי מזונותיו שנו דנקחין והיינו שלש סעודות:"
+  },
+  "Rashi on Sukkah 39b:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T13:31:33.166Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וימן להם המלך</strong> - בצרכי סעודה משתעי קרא בדניאל <span class=\"parenthesized\">(א')</span> וימן המלך ויפרנס המלך:"
+  },
+  "Rashi on Sukkah 39b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T13:32:14.100Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הכי</strong> - דאין מוסרין דמי שביעית לעם הארץ לולב נמי לא נזבין מיניה שאף בו נוהג שביעית וטעמא מפרש לקמן:"
+  },
+  "Rashi on Sukkah 39b:5:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 39b:5:2",
+      "Rashi on Sukkah 39b:5:1",
+      "Rashi on Sukkah 39b:5:3"
+    ],
+    "generatedAt": "2026-11-07T13:33:16.134Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומשני לולב בר ששית הנכנס לשביעית הוא</strong> - דעל כרחך בחמשה עשר יום שמראש השנה עד החג לא גדל וקיימא לן אילן בתר חנטה אזלינן ביה במסכת ראש השנה <span class=\"parenthesized\">(דף יג:)</span>:"
+  },
+  "Rashi on Sukkah 39b:5:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T13:34:15.944Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אתרוג בתר לקיטה אזלינן</strong> - דחלוק משאר אילנות ודינו כירק שהלכו בו בתר לקיטה משום דגדל על כל מים כדאמרינן בר\"ה <span class=\"parenthesized\">(דף יד:)</span> ותבואה ואילנות גדילין על מי גשמים ואתרוג גדל על כל מים שמשקין אותו תמיד כירק כדאמרינן בפ\"ק דקדושין <span class=\"parenthesized\">(דף ג.)</span>:"
+  },
+  "Rashi on Sukkah 39b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T13:35:07.079Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בין לר\"א בין לר\"ג</strong> - דאפליגו באתרוג לענין מעשר מודו לענין שביעית דבתר חנטה אזלינן ביה:"
+  },
+  "Rashi on Sukkah 39b:7:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 39b:7:2"
+    ],
+    "generatedAt": "2026-11-07T13:35:47.294Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לערלה</strong> - שנוהג בו כאילן וכן רבעי נוהג בו:"
+  },
+  "Rashi on Sukkah 39b:7:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 39b:7:1"
+    ],
+    "generatedAt": "2026-11-07T13:36:38.877Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולשביעית</strong> - דאזלינן ביה לענין שביעית בתר חנטה:"
+  },
+  "Tosafot on Sukkah 39b:2:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 39b:2:1",
+      "Rashi on Sukkah 39b:2:2"
+    ],
+    "generatedAt": "2026-11-07T13:12:52.069Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 39b:2:1"
+    ],
+    "sourceText": "בד\"א דמזון שלש מיהא מוסרין בלוקח מן ההפקר שראה חבר זה שנתלקטו פירות הללו בשדה המופקר שאין ע\"ה זה שומרן הואיל ולא ראינוהו חשוד מותר למסור לו מעט אבל לא הרבה שלא תהא עינו צרה להצניען אבל בלוקח מן המשומר שהשדה זו מקום משומר בגדר ופתח נעל זה נחשד לענין שאינו מפקירן שאמרה תורה תשמטנה ונטשתה ואכלו אביוני עמך והערמה היא שמוכרן על יד <span class=\"rashi-quotation\">כך פי' בקונט'</span> ולא יתכן פי' זה לפי מה שפירשנו בשם ר\"ת פ\"ב דכתובות <span class=\"parenthesized\">(דף כד. ושם)</span> גבי שלי חדש ושל חברי ישן דסתם ע\"ה אינו חשוד אא\"כ יודע ביה שהוא חשוד ואי בודאי חשוד מיירי הכא א\"כ מן המופקר נמי ליתסר הפיגם וכו' וכל הני דחשיב התם ואומר ר\"ת דפירות מן המשומר אסורין כדדרשי' בת\"כ ואת ענבי נזיריך לא תבצור מן המופקר אתה בוצר ואי אתה בוצר מן המשומר דנזיריך משמע דנזר מהן בני אדם וכן <span class=\"rashi-quotation\">פי' בקונט'</span> בשם רבותיו בסוף יבמות <span class=\"parenthesized\">(דף קכב.)</span> גבי נכרי שהיה מוכר פירות בשוק ואמר פירות הללו של ערלה הם של נטע רבעי הם של עזקה הם לא אמר ולא כלום לא נתכוין זה אלא להשביח מקחו כלומר של עזקה מפרדס מעוזק וגדר סביב לו והיא שביעית והקשה שם <span class=\"rashi-quotation\">בקונטרס</span> על פירושם מה איסור יש כאן אם עבר זמן הביעור לא שנא מן המשומר ולא שנא מן המופקר אסור וקודם הזמן אלו ואלו מותרין ופירש שם דעזקה עיר שבארץ ישראל ופירותיה משובחים ואם היה עובד כוכבים זה בחוצה לארץ ומשבחן ואומר מעזקה הן אין חוששין לדבריו לענין שביעית דאין נוהגין בחו\"ל דאמרינן עמון ומואב מעשרים מעשר עני בשביעית ולענין שלא לעשר עליהן מפירות חו\"ל משום מן הפטור על החיוב ופירוש ראשון נראה לר\"ת דמן המשומר אסורים כדפרישית ועזקה לשון ויעזקהו ויסקלהו <span class=\"parenthesized\">(ישעיהו ה׳:ב׳)</span> כמו בית יעזק היתה נקראת דתנן פרק ב' דר\"ה <span class=\"parenthesized\">(דף כג:)</span> ולהשביח מקחו אומר כל זה דפירות של ילדה טובים משל זקנה ופירות הפרדס השמור טובים משל הפקר שיד הכל ממשמשים בהן וקשו להו ידים וגם ממהרים ללקטם קודם בישולם והא דקאמר הכא אפי' כחצי איסר אסור היינו משום דאסירי באכילה ושומרי ספיחים בשביעית דפ' הבית והעלייה <span class=\"parenthesized\">(ב\"מ דף קיח.)</span> לא שומרים מן האכילה דלא היו צריכין לשומרם מבני אדם דמאיליהם היו פורשים כשהיו יודעין שהן לצורך העומר ולא היו שומרין אותם אלא מבהמה חיה ועוף ומיהו קשה לר\"ת דלא אסר בת\"כ מן המשומר אלא בבצירה כדרך הבוצרים אבל ע\"י שינוי שרי כדקתני סיפא מכאן אמרו תאנה של שביעית אין קוצצין אותה במוקצה אבל קוצה בחרבה אין דורכין ענבים בגת אבל דורך הוא בעריבה אין עושין זיתים בבד ובקוטב אבל כותש הוא ומכניס לבדידה ואמן המשומר קאי ועוד דמשמעתין משמע דלא אסר מן המשומר אפילו כחצי איסר אלא לפי שמוסר דמי שביעית לחשוד אבל פירות מיהא לאכילה שרי דאי אסירי וכי דרך לקנות דבר האסור ומיהו קשה דרישא דקרא דריש ליה התם לאיסור אכילה דקתני רישא את ספיח קצירך לא תקצור מכאן סמכינן על הספיחים שהן אסורין ועוד דכולה סיפא דתאינה של שביעית סתם משנה היא פרק ח' <span class=\"parenthesized\">(מ\"ו)</span> משמע דבסתם שביעית איירי שדרך להפקיר אע\"ג דבגמרא דירושלמי מייתי עלה כולה דרשא דתורת כהנים:"
+  },
+  "Tosafot on Sukkah 39b:7:1": {
+    "dependsOn": [
+      "Tosafot on Sukkah 39b:7:1",
+      "Tosafot on Sukkah 39b:7:2",
+      "Tosafot on Sukkah 39a:6:1",
+      "Tosafot on Sukkah 39b:2:1"
+    ],
+    "generatedAt": "2026-11-07T13:38:43.420Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 39b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לרבעי</strong> - הך משנה אתיא כמאן דאמר נטע רבעי בפרק כיצד מברכין. <span class=\"parenthesized\">(ברכות דף לה.)</span>:"
+  },
+  "Tosafot on Sukkah 39b:7:2": {
+    "dependsOn": [
+      "Rosh Hashanah 14b:1",
+      "Rosh Hashanah 14a:1",
+      "Rosh Hashanah 15b:1",
+      "Chokhmat Shlomo on Sukkah 39b:7",
+      "Chokhmat Shlomo on Sukkah 39b:8",
+      "Chokhmat Shlomo on Sukkah 39b:9",
+      "Maharam on Sukkah 39b:9",
+      "Maharam on Sukkah 39b:10",
+      "Maharam on Sukkah 39b:11"
+    ],
+    "generatedAt": "2026-11-07T13:42:33.596Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 39b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולשביעית</strong> - ירק נמי אית ביה שביעית אלא מפרש בירושלמי פרק ב' דביכורים כגון אתרוג בת ששית הנכנסת לשביעית הרי היא לבעלים כאילן דבתר חנטה ולא כירק דבתר לקיטה והא דלא תנא שוה לאילן לענין כלאים <span class=\"parenthesized\">(ולא)</span> הוי כלאי הכרם מה שאין כן בירק ולענין דר\"ה שלו שבט כאילן אע\"ג דלאחר לקיטתו עישורו כירק ומ\"מ ר\"ה שלו שבט כאילן כדאמרינן פ\"ק דר\"ה <span class=\"parenthesized\">(דף יד: ושם)</span> דלא תנא אלא מידי דבהא אזלינן בתר חנטה ובהא אזלינן בתר לקיטה וא\"ת ואמאי לא אזלינן באתרוג בתר לקיטה לכל דבר כיון דגדל על כל מים כירק דהכי משמע פ\"ק דר\"ה <span class=\"parenthesized\">(ג\"ז שם)</span> באספך מגרנך ומיקבך מה גורן ויקב שהן גדילין על רוב מים ומתעשרין על שנה שעברה יצאו ירקות שגדילים על כל מים מתעשרין לשנה הבאה ואע\"ג דמעשר ירק דרבנן מ\"מ לענין שביעית דאורייתא דרשא גמורה היא וי\"ל משום דדרשינן פ\"ק דר\"ה <span class=\"parenthesized\">(דף י.)</span> גבי ערלה פעמים שברביעית ואסורים משום ערלה וא\"ת דהכא משמע דאזלינן בירק בתר לקיטה לענין שביעית ובמסכת שביעית <span class=\"parenthesized\">(פ\"ט מ\"א)</span> תנן כל הספיחים מותרין חוץ מספיחי כרוב ופירשנו שם ע\"פ הירושלמי דאיירי בספיחי ששית הנכנסין לשביעית ומיתרצא בהכי ההיא דפ' מקום שנהגו <span class=\"parenthesized\">(פסחים דף נא: ושם)</span> דתניא איפכא אסורין חוץ מספיחי כרוב ונראה לפרש דהא דאזלינן בירק בתר לקיטה היינו בשלא נגמר גידולם בששית אבל נגמר גידולם בששית שרו בין לר\"ע דדריש שגדילים על רוב מים בין לר' יוסי הגלילי דדריש שגדילים על מי שנה שעברה פ\"ק דר\"ה <span class=\"parenthesized\">(דף יד.)</span> מידי דהוה אבצלים הסריסים דהתם שמנע מהם מים ל' יום לפני ראש השנה דאפילו מאן דפליג התם הכא מודה דלר\"י הגלילי כיון דנגמר גידולם נמצאו גדילים על מי שנה שעברה ותו לא גדלי על מי שנה הבאה ולר\"ע נמי כיון דתו לא גדלי על כל מים יצאו מתורת ירקות הגדלים על כל מים כדקאמרינן בירושלמי גבי בצלים הסריסים פ\"ב דשביעית אמר ר' מנא מכיון שמנע מהן מים שלשים יום לפני ר\"ה נעשו כבעל שמספקת במי גשמים ומתעשרין לשעבר וכן נראה לגבי אורז ודוחן בר\"ה פ\"ק <span class=\"parenthesized\">(דף יג:)</span> דיהב להו שמואל דין ירק דבתר לקיטה וקאמר הכל הולך אחר גמר פרי אלמא גמר פרי עיקר אלא דנקט בכל דוכתי לקיטה משום דדרך ללקט בגמר פרי והנהו גמר פריים ביחד אלא שאין מתייבשין ביחד כדקאמרינן דעשויה פרכים פרכים ומיהו קשה מאתרוג דאמרינן פרק קמא דר\"ה <span class=\"parenthesized\">(דף יד:)</span> באתרוג שחנטו פירותיה קודם חמשה עשר דאידך שבט ונלקט באחד בשבט ומשמע משום דמספקא ליה אי אזלינן באתרוג בתר חנטה כר' אליעזר אי בתר לקיטה כרבן גמליאל נהג בו שני עישורין אלמא דמאן דאמר בתר לקיטה אע\"ג דנגמר פרי [כבר] דהרי חנט בשבט של שנה שעברה ולא נלקט עד שבט אחר ושמא אתרוג חלוק משאר פירות לפי שדרכו לעמוד באילן שתים ושלש שנים וכל זמן שמתקיים באילן גדל בכל שנה ושנה אי נמי אע\"פ שחנט בשבט של שנה שעברה זימנין דאין נגמר גידולו עד שבט אחר וניחא השתא דנקט רבי יוחנן פ\"ק דר\"ה <span class=\"parenthesized\">(דף טו:)</span> גבי אתרוג אפילו כזית ונעשה ככר כלומר דע\"י מי שנה הבאה גדילה ומיהו כזית לאו דווקא בעינן דהא רבי יוחנן בתר חנטה אזיל ושמא לא חשיבא חנטה באתרוג פחות מכזית:"
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "Rashi on Sukkah 21a:1:1": {
+    "dependsOn": [
+      "Sukkah 21a:1"
+    ],
+    "generatedAt": "2026-11-06T06:29:36.599Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אהל אהל ריבה</strong> - אהלים טובא כתיבי בפרשת פרה לרבות אף העשוי מאליו:"
+  },
+  "Rashi on Sukkah 21a:2:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 2a:8:1",
+      "Rashi on Sukkah 21a:1:1"
+    ],
+    "generatedAt": "2026-11-06T06:36:44.939Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני קבר התהום</strong> - כל שם קבר התהום וטומאת התהום שבש\"ס לשון ספק הוא כתהום שאינו גלוי מפני קבר התהום שכל העיר היו מסופקין שמא יש שם קבר ואין לו למת חלל טפח וטומאה שהיא רצוצה בוקעת ועולה לרקיע לכך היו בונין אותה ע\"ג כיפין שאפי' יש שם קבר מתחת הרי חלל מפסיק:"
+  },
+  "Rashi on Sukkah 21a:2:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 21a:2:1",
+      "Rashi on Sukkah 21a:1:1"
+    ],
+    "generatedAt": "2026-11-06T06:39:04.455Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומביאין נשים עוברות כו'</strong> - משום ההיא דתנן <span class=\"parenthesized\">(פרה פ\"ג מ\"ז)</span> מטמאין היו את הכהן השורף את הפרה ומטבילין אותו מיד להוציא מלבן של צדוקין שהיו אומרים במעורבי השמש היתה נעשית וכיון דטבול יום כשר בפרה עשו בה מעלות הרבה כדי שלא יזלזלו בה תקנו כל מעשה פרה בכלי גללים וכלי אבנים וכלי אדמה שאין מקבלין טומאה והכהן השורפה הזקיקוהו לפרישת שבעת ימים ואין אחיו הכהנים נוגעין בו כדאמרינן בפ' קמא דיומא <span class=\"parenthesized\">(דף ב.)</span> ואמר מר מזין עליו כל שבעה ותקנו שיהו תינוקות הללו ממלאין לו מים לקדש בהן מי חטאת ומשום מעלה תקנו שיהו טהורים מכל טומאה ובתוספתא שנינו עד שיהו בני שבעה ובני שמנה שנים מגדלין אותן ולא יותר שלא ראו קרי:"
+  },
+  "Rashi on Sukkah 21a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T06:40:45.078Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומביאין שוורים</strong> - כשהיו רוצים לילך ולמלאות מים חיים מן השילוח:"
+  },
+  "Rashi on Sukkah 21a:3:2": {
+    "dependsOn": [
+      "Sukkah 21a:3",
+      "Rashi on Sukkah 21a:2:1",
+      "Rashi on Sukkah 21a:2:2"
+    ],
+    "generatedAt": "2026-11-06T06:41:20.819Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכוסות של אבן בידיהם</strong> - שכל מעשיה היו בכלי אבנים כדפרישית:"
+  },
+  "Rashi on Sukkah 21a:3:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 21a:3:2",
+      "Rashi on Sukkah 21a:3:4",
+      "Sukkah 21a:3"
+    ],
+    "generatedAt": "2026-11-06T06:42:06.872Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ירדו לתוך המים ומלאום</strong> - קסבר האי תנא מילוי בעינן ולא שישלשל בחבל:"
+  },
+  "Rashi on Sukkah 21a:3:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 21a:3:1",
+      "Rashi on Sukkah 21a:3:2",
+      "Rashi on Sukkah 21a:3:3",
+      "Rashi on Sukkah 21a:3:4"
+    ],
+    "generatedAt": "2026-11-06T06:42:33.884Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני קבר התהום</strong> - שמא יש כאן טומאה:"
+  },
+  "Rashi on Sukkah 21a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T06:53:38.908Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא שוורים</strong> - שכריסם רחבות ותינוקות יושבין עליהם וכריסן מפסיק שאין התינוקות מאהילין על הארץ ולקמן מפרש טעמא אמאי לא היו מביאין דלתות אלמא אשמעינן רבי יהודה דשדרתן של שוורים שהיא כעין גג וחלל של בהמה הוא האהל המפסיק ואע\"ג דאינו עשוי בידי אדם:"
+  },
+  "Rashi on Sukkah 21a:5:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 21a:5:2",
+      "Rashi on Sukkah 21a:5:3",
+      "Tosafot on Sukkah 2a:14:1",
+      "Mishnah Kelim 17:2",
+      "Mishnah Kelim 17:12",
+      "Mishnah Oholot 13:1",
+      "Bekhorot 37b:20"
+    ],
+    "generatedAt": "2026-11-06T06:56:02.181Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כמלא אגרוף</strong> - אהל שרחב כמלא אגרוף שהוא יותר מטפח מודה רבי יהודה שאע\"פ שאינו עשוי בידי אדם חשוב להיות אהל דבמלא אגרוף מצינו חשוב למאור שאינו עשוי בידי אדם כדתנן באהלות <span class=\"parenthesized\">(פי\"ג מ\"א וכלים פי\"ז מ\"ב)</span> ובמס' בכורות מייתינן לה בפרק על אלו מומין <span class=\"parenthesized\">(בכורות דף לז:)</span> מאור שלא נעשה בידי אדם שיעורו להוציא את הטומאה לאויר כמלא אגרוף וזהו אגרופו של בן אבטיח וישנו גדול כראש כל אדם וכי אר\"י דאינו אהל היכא דאין עשוי בידי אדם בטפח קאמר:"
+  },
+  "Rashi on Sukkah 21a:5:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 21a:5:1",
+      "Rashi on Sukkah 21a:5:3",
+      "Steinsaltz on Sukkah 21a:5",
+      "Sukkah 21a:5",
+      "Rashi on Sukkah 20b:14:1",
+      "Rashi on Sukkah 20b:14:2",
+      "Rashi on Sukkah 2a:1:1",
+      "Rashi on Sukkah 2a:1:2"
+    ],
+    "generatedAt": "2026-11-06T06:58:35.523Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשקיפין</strong> - סלעים הנופלים ומתפרקין ברוח ויש חור גדול במקום עקירתן:"
+  },
+  "Rashi on Sukkah 21a:5:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T06:59:19.264Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נקיקי</strong> - ביקועין:"
+  },
+  "Rashi on Sukkah 21a:6:1": {
+    "dependsOn": [
+      "Sukkah 21a:6",
+      "Rashi on Sukkah 21a:5:1",
+      "Rashi on Sukkah 21a:5:2",
+      "Rashi on Sukkah 21a:5:3",
+      "Rashi on Sukkah 21a:3:1",
+      "Rashi on Sukkah 21a:4:1"
+    ],
+    "generatedAt": "2026-11-06T07:02:24.698Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והרי דלת דיש בה כמה אגרופים</strong> - מן הקרקע עד הדלת וקא א\"ר יהודה לא היו מביאים דלתות קא סלקא דעתיה משום דאין דרך אהל בכך וכל שכן שוורים:"
+  },
+  "Rashi on Sukkah 21a:7:1": {
+    "dependsOn": [
+      "Sukkah 21a:7",
+      "Tosafot on Sukkah 21a:7:1",
+      "Rashi on Sukkah 21a:2:1"
+    ],
+    "generatedAt": "2026-11-06T07:09:06.152Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל עיקר</strong> - לא משום דאינו אהל אלא שלא תהא דעתו של תינוק גסה עליו פריוו\"י בלע\"ז שמתוך שאינו ירא ליפול והרי הוא בטוח כאילו הוא בעלייה רחבה ויוציא ראשו חוץ לדלת ומאהיל לפיכך מביאין שוורים בלי דלתות ומתוך שהוא ירא ליפול אינו מוציא ראשו להלן מן רחב השור:"
+  },
+  "Tosafot on Sukkah 21a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T06:33:34.796Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 21a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יליף אהל אהל ממשכן</strong> - וא\"ת אי ממשכן יליף אפילו עשוי בידי אדם נמי לא יביא את הטומאה אלא פשתן כדאשכחן פרק במה מדליקין <span class=\"parenthesized\">(שבת דף כז: ושם)</span> דתנן כל היוצא מן העץ אינו מטמא טומאת אהלים אלא פשתן ויליף בגמרא אהל אהל ממשכן וי\"ל דכל המאהילים דמטמאים ילפינן בספרי בפרשה פרה בקל וחומר ממצורע דתניא מנין לעשות שאר המאהילים כאהל המת אמרת מה מצורע הקל עשה בו כל המאהילים כאהל מת החמור לא כל שכן דלגבי מצורע כתיב מושבו ודרשינן בתורת כהנים מושבו טמא מכאן אמרו הטמא יושב תחת האילן וטהור עובר טמא וא\"ת אם כן כי לא עביד נמי בידי אדם נילף בקל וחומר ממצורע וכי תימא אם כן ג\"ש מאי אהניא הא איצטריכא ליה לדרשה דפרק במה מדליקין דכל היוצא מן העץ אינו מטמא טומאת אהלים ויש לומר דמושבו לא משמע לא ריבוי ולא מיעוט לענין שאינו עשוי בידי אדם ולרבי יהודה דמעטיה רחמנא גבי מת ילפינן מצורע הקל בקל וחומר ממת דלא מטמא ולרבנן לא מחלק לא הכא ולא הכא ואף על גב דסתם סיפרא רבי יהודה אתיא שפיר ההיא דאילן כרבי יהודה דאמר בשמעתין מודה היה רבי יהודה כמלא אגרוף וא\"ת וכיון דשאר המאהילים ילפינן ממת ק\"ו ממצורע אם כן נימא דיו ולא מטמא עוברים כמו קוברי המת שהיו עוברים באכסדרה ויש שם כלים דמצורע עובר אינו מטמא באהל כדתניא בתורת כהנים וכדתנן במסכת נגעים פ' י\"ג <span class=\"parenthesized\">(מ\"ז)</span> ומייתי לה פ\"ק דקדושין <span class=\"parenthesized\">(לג:)</span> ויש לומר דק\"ו זה אינו אלא גלויי מילתא בעלמא הוא דלא ילפינן ממשכן למעוטי שאר המאהילים:"
+  },
+  "Tosafot on Sukkah 21a:2:1": {
+    "dependsOn": [
+      "Maharam on Sukkah 21a:3"
+    ],
+    "generatedAt": "2026-11-06T06:40:16.125Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 21a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומביאין נשים עוברות ויולדות</strong> - אע\"פ שהיו התינוקות טמאים בנדה ויולדות לא היו חוששין אלא לשומרן מטומאת מת דבעיא הזאה ומטומאה היוצא מגופו כגון בעל קרי כדתניא בתוספתא שהיו מגדלין אותן עד שיהו בני שבע שנים או שמנה ולא יותר שלא יראו קרי וקצת תימה מה מועיל מילוי זה שהיו ממלאין בתינוקות סוף סוף בעינן איש בשעת קידוש שנותנין האפר במים או בשעת הזאה לרבי יהודה או לרבנן כדמוכח פרק טרף בקלפי <span class=\"parenthesized\">(יומא דף מג:)</span> ויש לומר דמה שהיה יכול לתקן מתקנין משום מעלה דכולה מילתא מעלה בעלמא כדאיתא בריש <span class=\"parenthesized\">(יומא)</span> <span class=\"parenthesized\">(דף ג:)</span>:"
+  },
+  "Tosafot on Sukkah 21a:3:1": {
+    "dependsOn": [
+      "Sukkah 21a:3",
+      "Sukkah 21a:6",
+      "Sukkah 21b:2",
+      "Sukkah 21b:5"
+    ],
+    "generatedAt": "2026-11-06T06:46:55.326Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 21a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועל גביהן דלתות</strong> - מאן דאמר בגיטין <span class=\"parenthesized\">(דף ח:)</span> ובנזיר פרק כהן גדול <span class=\"parenthesized\">(נזיר דף נה.)</span> ובפ' בכל מערבין <span class=\"parenthesized\">(עירובין דף ל:)</span> ובפרק בתרא דחגיגה <span class=\"parenthesized\">(דף כה.)</span> דאהל זרוק לא שמיה אהל לחוץ בפני הטומאה מצי למימר דסבר לה כרבי יהודה דאמר בשמעתין לא היו מביאין דלתות אלא שוורים שכריסותיהן רחבות ואע\"פ שגם הם אהל זרוק מ\"מ בדידהו גלי רחמנא דחשיבי אהל כדדרשינן מדכתיב <span class=\"parenthesized\">(איוב י)</span> ובעצמות וגידים תסוככני ומיהו לר' אליעזר דלקמן ודאי קשה דמפרש טעמא דשוורים משום דמגינים על הרועה שלהם וקושיא דמטה משני משום דהויא אהל עראי ולהאי טעמא קשה היכי עבדינן למ\"ד אהל זרוק לא שמיה אהל דאפי' שידה תיבה ומגדל לא חייצי:"
+  },
+  "Tosafot on Sukkah 21a:3:2": {
+    "dependsOn": [
+      "Tosefta Parah 3:2",
+      "Mishnah Parah 3:4",
+      "Maharsha on Sukkah 21a:1"
+    ],
+    "generatedAt": "2026-11-06T06:49:10.007Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 21a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והתינוקות יושבין</strong> - בתוספתא דפרה [פ\"ב] קתני דהכל שוין שהתינוקות צריכין טבילה כלומר הכל שוין בין ר' עקיבא בין ר' יוסי הגלילי שנחלקו לענין הזאה כדתנן במסכת פרה פ\"ג [מ\"ד] צריכין היו התינוקות להזות דברי ר' יוסי הגלילי ר\"ע אומר לא היו צריכין להזות:"
+  },
+  "Tosafot on Sukkah 21a:3:3": {
+    "dependsOn": [
+      "Tosafot on Sukkah 21a:3:3",
+      "Rashi on Sukkah 21a:3:3",
+      "Rashi on Sukkah 21a:3:4",
+      "Tosafot on Sukkah 21a:1:1",
+      "Tosafot on Sukkah 21a:2:1",
+      "Tosafot on Sukkah 21a:3:1",
+      "Tosafot on Sukkah 21a:3:2",
+      "Tosafot on Sukkah 21a:5:1",
+      "Tosefta Parah 3:2",
+      "Steinsaltz on Sukkah 21a:3",
+      "Steinsaltz comment #1 on Sukkah 21a:3"
+    ],
+    "generatedAt": "2026-11-06T06:52:17.898Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 21a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ירדו לתוך המים ומלאום</strong> - קסבר האי תנא מילוי ידים בעינן ולא שישלשל בחבל <span class=\"rashi-quotation\">כך פירש בקונטרס</span> ותימה גדולה פירש דבכולהו סתמי מוכחי במסכת פרה <span class=\"parenthesized\">(פ\"ז משנה ו ז)</span> שהיו מוליכין חבל כדי למלאות ואפילו נתמלא הכלי מאליו משמע דכשר במילוי דתנן במס' פרה פ\"ה <span class=\"parenthesized\">(מ\"ז)</span> השוקת שבסלע אין ממלאין בה היתה כלי וחברה בסיד ממלאין עוד תניא בתוספתא דפרה אמר לפני רבי עקיבא משום רבי ישמעאל כוסות של אבן היו תלויין בקרני שוורים כיון ששחו שוורים לשתות נתמלאו הכוסות אמר להם אל תתנו מקום לצדוקים לרדות <span class=\"parenthesized\">(אחריו)</span> ונראה לפרש דבהכי פליגי רבי יוסי ורבנן דרבנן סברי משום ההוא פורתא לא חיישינן לקבר התהום ורבי יוסי חייש:"
+  },
+  "Tosafot on Sukkah 21a:5:1": {
+    "dependsOn": [
+      "Sukkah 21a:5"
+    ],
+    "generatedAt": "2026-11-06T07:00:56.929Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 21a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תניא נמי הכי</strong> - משמע לכאורה שהיא ברייתא והיא משנה שלימה במסכת אהלות <span class=\"parenthesized\">(פ\"ג מ\"ז)</span> סיפא דההיא דלעיל דהכי תנן התם רבי יהודה אומר כל אהל שאינו עשוי בידי אדם אינו אהל ומודה בשקיפים וסלעים:"
+  },
+  "Tosafot on Sukkah 21a:6:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 21a:6:1",
+      "Sukkah 21a:5",
+      "Tosafot on Sukkah 21a:5:1",
+      "Sukkah 21a:1",
+      "Maharsha: Chidushei Halachot on Sukkah 21a:2"
+    ],
+    "generatedAt": "2026-11-06T07:04:41.311Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 21a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והרי דלת דיש לה כמה אגרופין</strong> - תימה היכי סלקא דעתא דמקשה שלא יועילו דלתות והלא בידי אדם הוא דמדעת הונחו לשם אהל ועוד מאיזה טעם יש לשוורים להועיל יותר מן הדלתות <span class=\"rashi-quotation\">ובקונטרס פירש</span> קא סלקא דעתיה משום דאין דרך אהל בכך וכל שכן שוורים ולפי זה תיקשי ליה היא גופא וצ\"ל דקא סלקא דעתיה דבעלי חיים חשיבי להציל טפי מדלתות ליחשב אהל אף על פי שאין דרך אהל בכך ולא שייך טעם זה אלא בדבר התלוי בסברא ולא למאי דילפינן ממשכן:"
+  },
+  "Tosafot on Sukkah 21a:7:1": {
+    "dependsOn": [
+      "Sukkah 21a:7",
+      "Tosafot on Sukkah 21a:1:1",
+      "Tosafot on Sukkah 21a:2:1",
+      "Tosafot on Sukkah 21a:6:1",
+      "Maharsha: Chidushei Halachot on Sukkah 21a:3",
+      "Tosafot on Sukkah 21a:3:1",
+      "Sukkah 21a:3"
+    ],
+    "generatedAt": "2026-11-06T07:10:44.797Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 21a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שדעתו של תינוק גסה עליו</strong> - קסבר רבי יהודה אהל זרוק שמיה אהל דמשמע הא לא מפני שדעתו גסה היו מביאין דלתות:"
+  }
+}

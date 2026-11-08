@@ -1,0 +1,439 @@
+{
+  "Rashi on Sukkah 10a:10:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 10a:5:1",
+      "Rashi on Sukkah 10a:9:1",
+      "Sukkah 10a:10",
+      "Rashi on Sukkah 10a:9:2",
+      "Rashi on Sukkah 10a:9:3",
+      "Rashi on Sukkah 10a:11:1",
+      "Rashi on Sukkah 2a:9:2",
+      "Sukkah 10a:8"
+    ],
+    "generatedAt": "2026-11-05T18:20:28.249Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 10a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי אתא רב דימי אמר אמרי במערבא</strong> - האי אין ראויה לדירה דקאמר ר' יהודה לאו בשאין גבוה קאמר דא\"כ לת\"ק נמי כשרה אלא כשאין בריאה וחזקה לקבל כסתות וכרים של עליונה ולישן תחתונה כשרה מהאי טעמא דשמואל דכהכשרה כך פסולה וכיון דעליונה לא חזיא למידר בה שהרי אין תחתונה מקבלתה לא פסלה:"
+  },
+  "Rashi on Sukkah 10a:11:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 10a:11:1",
+      "Rashi on Sukkah 10a:9:3",
+      "Sukkah 10a:11"
+    ],
+    "generatedAt": "2026-11-05T18:26:37.790Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 10a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ופרכינן מכלל דת\"ק סבר כו'</strong> - סוף סוף שמע מינה דרבנן לית להו דשמואל והוא הדין לשאינה גבוהה כו':"
+  },
+  "Rashi on Sukkah 10a:12:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 10a:12:1",
+      "Sukkah 10a:12",
+      "Rashi on Sukkah 10a:11:1"
+    ],
+    "generatedAt": "2026-11-05T18:28:24.731Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 10a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומשני איכא בינייהו כו'</strong> - דרבנן סברי כיון דיכולה לקבל בדוחק שם סוכה על העליונה ומיפסלא התחתונה ורבי יהודה סבר כיון דליכא תשמישא להדיא לאו שם סוכה עלה דעליונה:"
+  },
+  "Rashi on Sukkah 10a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T18:29:13.858Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 10a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הנשר</strong> - שלא יהו עלין וקיסמין נושרין על שולחנו וסדין דבר המקבל טומאה הוא ופסול לסכך כדלקמן <span class=\"parenthesized\">(סוכה דף יא.)</span>:"
+  },
+  "Rashi on Sukkah 10a:13:2": {
+    "dependsOn": [
+      "Translation on Rashi on Sukkah 10a:13:2",
+      "Rashi on Sukkah 10a:13:1",
+      "Rashi on Sukkah 10a:13:3",
+      "Rashi on Sukkah 10a:2:1",
+      "Rashi on Sukkah 10a:3:1",
+      "Rashi on Sukkah 10a:5:1",
+      "Jastrow, קִינוֹף 1"
+    ],
+    "generatedAt": "2026-11-05T18:31:08.710Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 10a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או שפירס על גבי קינוף</strong> - כלומר או אפילו לא פירסו מפני הנשר אלא לנוי על מטתו:"
+  },
+  "Rashi on Sukkah 10a:13:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 10a:13:1",
+      "Rashi on Sukkah 10a:13:2",
+      "Rashi on Sukkah 10a:13:4",
+      "Rashi on Sukkah 10a:13:5",
+      "Jastrow, קִינוֹף 1",
+      "Steinsaltz on Sukkah 10a:13:1",
+      "Steinsaltz on Sukkah 10a:13"
+    ],
+    "generatedAt": "2026-11-05T18:33:22.396Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 10a:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על גבי קינוף</strong> - הן ד' קונדיסין לד' רגלי המטה וגבוהין ומניח כלונסות מזה לזה על גביהן ופורס עליהן סדין ומרחיקן מן הסכך דהשתא לא משום מסכך בדבר המקבל טומאה מיפסלא דהא לאו לסכוכי שטחם התם:"
+  },
+  "Rashi on Sukkah 10a:13:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 10a:13:4",
+      "Rashi on Sukkah 10a:13:1",
+      "Rashi on Sukkah 10a:13:2",
+      "Rashi on Sukkah 10a:13:3",
+      "Rashi on Sukkah 10a:13:5"
+    ],
+    "generatedAt": "2026-11-05T18:34:04.912Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 10a:13:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פסולה</strong> - משום דאינו יושב בסוכה דאהל מפסיק ביניהם:"
+  },
+  "Rashi on Sukkah 10a:13:5": {
+    "dependsOn": [
+      "Rashi on Sukkah 10a:13:5",
+      "Rashi on Sukkah 10a:13:3",
+      "Rashi on Sukkah 10a:13:4"
+    ],
+    "generatedAt": "2026-11-05T18:35:01.660Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 10a:13:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל פורס הוא על גבי נקליטי המטה</strong> - שאינן אלא שנים והן יוצאין באמצע מטה אחד למראשותיה ואחד לרגליה ונותנין כלונסא מזה לזה ופורסין עליו סדין והוא משפע לכאן ולכאן ומשום דאין לה גג טפח רחב למעלה לא מיקרי אהל:"
+  },
+  "Rashi on Sukkah 10a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T18:37:47.776Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 10a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ל\"ש אלא מפני הנשר</strong> - דשויה סכך להגין הלכך מפסיל משום מקבל טומאה:"
+  },
+  "Rashi on Sukkah 10a:14:2": {
+    "dependsOn": [
+      "Sukkah 10a:14",
+      "Rashi on Sukkah 10a:14:1",
+      "Rashi on Sukkah 10a:5:1",
+      "Rashi on Sukkah 10a:1:1"
+    ],
+    "generatedAt": "2026-11-05T18:39:37.993Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 10a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל לנאותה</strong> - אין שם סכך עליה וכשירה וי\"מ טעמא דפסולה משום שני סככים ואי אפשר דא\"כ לרב חסדא לא מפסיל אלא אם כן מופלג ד' דהא איהו אמר לעיל ארבעה וכיון דמיפלגי ד' תו לא מצי למימר אבל לנאותה כשרה דהא איהו פסיל לקמן בנויי סוכה המופלגין ד' מן הסכך משום שני סככין:"
+  },
+  "Rashi on Sukkah 10a:15:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 22a:3:1",
+      "Rashi on Shabbat 22a:3:2",
+      "Rashi on Beitzah 30b:8:1",
+      "Rashi on Beitzah 30b:11:1",
+      "Chokhmat Shlomo on Beitzah 30b:3",
+      "Steinsaltz on Sukkah 10a:15"
+    ],
+    "generatedAt": "2026-11-05T18:41:16.925Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 10a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בקרמין המצויירין</strong> - מעשה אורג כגון בגדי צבעונין שקורין אובריי\"ן:"
+  },
+  "Rashi on Sukkah 10a:15:2": {
+    "dependsOn": [
+      "Steinsaltz on Sukkah 10a:15",
+      "Steinsaltz comment #1 on Sukkah 10a:15",
+      "Rashi on Sukkah 10a:15:1",
+      "Rashi on Sukkah 10a:15:3",
+      "Rashi on Shabbat 22a:4:1",
+      "Rashi on Shabbat 22a:4:2",
+      "Rashi on Shabbat 22a:4:3",
+      "Rashi on Shabbat 22a:4:4",
+      "Rashi on Shabbat 22a:4:5",
+      "Rashi on Shabbat 22a:4:6",
+      "Rashi on Shabbat 22a:4:7",
+      "Rashi on Shabbat 22a:4:8",
+      "Rashi on Beitzah 30b:11:1",
+      "Rashi on Yoma 72b:18:1"
+    ],
+    "generatedAt": "2026-11-05T18:45:11.018Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 10a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובסדינים המצויירין</strong> - שצורתן בולטת כגון מעשה רוקם או מעשה אורג שקורין גלינשק\"ש:"
+  },
+  "Rashi on Sukkah 10a:15:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T18:45:51.470Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 10a:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יינות שמנים</strong> - נותנין בכוסות של זכוכית לנוי:"
+  },
+  "Rashi on Sukkah 10a:1:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 10a:2:1",
+      "Rashi on Sukkah 10a:2:2",
+      "Rashi on Sukkah 9b:18:1",
+      "Rashi on Sukkah 9b:18:2",
+      "Rashi on Sukkah 10a:3:1",
+      "Rashi on Sukkah 10a:5:1",
+      "Sukkah 10a:1"
+    ],
+    "generatedAt": "2026-11-05T17:56:26.130Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 10a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תחתונה כשרה ועליונה פסולה ה\"ד כגון שהתחתונה צלתה מרובה כו'</strong> - דסכך של עליונה לאו סכך הוא ולא מיפסלה תחתונה משום סוכה תחת סוכה ועליונה פסולה משום דחמתה מרובה מצלתה וכגון דקיימי תרוייהו בתוך כ' לארץ דאי עליונה למעלה מעשרים אף תחתונה פסולה משום דמצטרף סכך פסול בהדי כשר משום דסכך למעלה מעשרים פסולה אבל כי קאי בתוך כ' לצטרף ובלבד שלא יהא צלתה מרובה מחמתה דתפסיל תחתונה משום סוכה תחת סוכה:"
+  },
+  "Rashi on Sukkah 10a:2:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 10a:2:1",
+      "Rashi on Sukkah 10a:2:2",
+      "Rashi on Sukkah 10a:5:1",
+      "Rashi on Sukkah 9b:18:1"
+    ],
+    "generatedAt": "2026-11-05T17:57:48.729Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 10a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ד דתחתונה פסולה</strong> - משום סוכה תחת סוכה:"
+  },
+  "Rashi on Sukkah 10a:2:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 10a:2:2",
+      "Translation on Rashi on Sukkah 10a:2:2",
+      "Rashi on Sukkah 10a:2:1"
+    ],
+    "generatedAt": "2026-11-05T17:59:08.952Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 10a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקיימא עליונה בתוך כ'</strong> - לגגה של תחתונה דהוא קרקעיתה דעליונה:"
+  },
+  "Rashi on Sukkah 10a:3:1": {
+    "dependsOn": [
+      "Sukkah 10a:3",
+      "Sukkah 10a:1",
+      "Rashi on Sukkah 10a:3:2",
+      "Rashi on Sukkah 10a:3:3",
+      "Rashi on Sukkah 9b:7:1",
+      "Rashi on Sukkah 9b:5:1"
+    ],
+    "generatedAt": "2026-11-05T18:00:39.535Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 10a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פשיטא</strong> - דכי חד מנייהו חמתה מרובה לאו סוכה תחת סוכה היא ומאי אשמעינן רבי ירמיה:"
+  },
+  "Rashi on Sukkah 10a:3:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 10a:3:1",
+      "Rashi on Sukkah 10a:3:3",
+      "Sukkah 10a:2"
+    ],
+    "generatedAt": "2026-11-05T18:01:21.559Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 10a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תחתונה כשרה ועליונה פסולה איצטריכא ליה</strong> - כדקיימא עליונה בתוך כ':"
+  },
+  "Rashi on Sukkah 10a:3:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 10a:3:1",
+      "Rashi on Sukkah 10a:3:2",
+      "Sukkah 10a:3",
+      "Sukkah 10a:1"
+    ],
+    "generatedAt": "2026-11-05T18:02:52.265Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 10a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מ\"ד ניגזר</strong> - למיפסל תחתונה משום זמנין דקיימא עליונה למעלה דלא מסיק אדעתיה למיחש אתחתונה משום צירוף פסול עם כשר ומדחזי לעליון חמתה מרובה סבר כמאן דליתיה הוא ולא פסיל לתחתונה קמ\"ל דלא גזרינן הא אטו הא:"
+  },
+  "Rashi on Sukkah 10a:4:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 10a:3:1",
+      "Rashi on Sukkah 10a:5:1"
+    ],
+    "generatedAt": "2026-11-05T18:04:04.880Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 10a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכמה יהא</strong> - הפסק בין סכך לסכך ותפסול תחתונה משום סוכה תחת סוכה דלא נימא חד סוכה הוא:"
+  },
+  "Rashi on Sukkah 10a:5:1": {
+    "dependsOn": [
+      "Sukkah 10a:5",
+      "Rashi on Sukkah 10a:5:2"
+    ],
+    "generatedAt": "2026-11-05T18:04:46.134Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 10a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טפח</strong> - אבל בציר מטפח חד סככה הוא:"
+  },
+  "Rashi on Sukkah 10a:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T18:06:17.830Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 10a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טפח על טפח ברום טפח מביא את הטומאה וחוצץ בפני הטומאה</strong> - הלכה למשה מסיני הוא אבל פחות מטפח לא מביא ולא חוצץ לא מביא את הטומאה [אם] טומאה תחת ראשו אחד וכלים תחת ראשו שני והיא קורה ארוכה ורחבה טפח וראויה להביא טומאה לא מייתי משום דליכא רום הפסק טפח ממנו ולקרקע ולא חוצץ אם יש כלי על גבה כנגד הטומאה אפילו עד לרקיע טמא דטומאה רצוצה שאין לה אהל טפח בוקעת ועולה:"
+  },
+  "Rashi on Sukkah 10a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T18:08:19.110Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 10a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא מצינו מקום חשוב</strong> - להיות רשות לעצמו לא כרמלית ולא רה\"י פחות מארבעה כדאמר ביציאות השבת <span class=\"parenthesized\">(דף ז.)</span> והכא נמי לאו רשות לעצמו היא לאקרויי סוכה תחת סוכה:"
+  },
+  "Rashi on Sukkah 10a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T18:10:48.168Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 10a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כהכשרה כך פסולה</strong> - משום שתי סוכות פסלה קרא וכי לית בה בעליונה הכשר סוכה לאו סוכה היא ולא פסלה:"
+  },
+  "Rashi on Sukkah 10a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T18:11:23.324Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 10a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי נימא דיורין ממש</strong> - שאין בה אדם:"
+  },
+  "Rashi on Sukkah 10a:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T18:11:56.509Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 10a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אטו דיורין גרמי</strong> - מכל מקום סוכה תחת סוכה היא:"
+  },
+  "Rashi on Sukkah 10a:9:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 10a:9:1",
+      "Rashi on Sukkah 10a:9:2",
+      "Sukkah 10a:9",
+      "Rashi on Sukkah 10a:2:1",
+      "Rashi on Sukkah 10a:3:1",
+      "Rashi on Sukkah 10a:5:1",
+      "Rashi on Sukkah 10a:13:1",
+      "Rashi on Sukkah 10a:4:1",
+      "Rashi on Sukkah 10a:5:2",
+      "Rashi on Sukkah 10a:7:1",
+      "Rashi on Sukkah 2a:1:1",
+      "Rashi on Sukkah 2a:1:2"
+    ],
+    "generatedAt": "2026-11-05T18:14:03.547Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 10a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לאו שאינה ראויה לדירה והיכי דמי דלא גבוה י' מכלל דת\"ק כו'</strong> - וקשיא לשמואל מדרבנן:"
+  },
+  "Tosafot on Sukkah 10a:13:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 10a:13:1",
+      "Rashi on Sukkah 10a:13:2",
+      "Rashi on Sukkah 10a:13:3",
+      "Sukkah 27b:13",
+      "Sukkah 27b:14",
+      "Sukkah 27b:12",
+      "Maharsha: Chidushei Halachot on Sukkah 10a:2"
+    ],
+    "generatedAt": "2026-11-05T18:37:05.461Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 10a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פירס עליה סדין מפני החמה</strong> - כתוב בתשובת הגאונים הא דקתני פירס עליה סדין מפני החמה או תחתיה מפני הנשר פסולה היכא דחמתה מרובה מצלתה בלא סדין אבל אם יש צלתה מרובה מחמתה כשרה ואין הסדין פוסלתה והיינו כמו שפירשתי לעיל דאין מצטרף סכך פסול בהדי סכך כשר כיון דבלא פסול צלתה מרובה וכענין זה מפר\"ת מפני החמה שמייבשת את הסכך ומתוך כך היה נעשה חמתה מרובה וכן תחתיה מפני הנשר ואם היו עלין נושרין היה חמתו מרובה והסדין מונען מליפול וכיון שהסדין גורם שעל ידו צלתו מרובה מחמתו פסול אבל לפירוש <span class=\"rashi-quotation\">הקונטרס</span> קשה דלמה יפסל מפני שמגין על האדם מפני החמה ומן הקיסמין מאי שנא מלנאותה ועוד מצינו לקמן פרק הישן <span class=\"parenthesized\">(סוכה דף כז:)</span> בר' יוחנן ברבי אילעי כשהגיעה חמה למרגלותיו עמד ופרס עליו סדין:"
+  },
+  "Tosafot on Sukkah 10a:5:1": {
+    "dependsOn": [
+      "Sukkah 10a:5",
+      "Sukkah 22b:4",
+      "Tosafot on Sukkah 22b:5:1",
+      "Tosafot on Sukkah 10a:6:1"
+    ],
+    "generatedAt": "2026-11-05T18:07:31.506Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 10a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רב הונא טפח</strong> - אע\"ג דלקמן פרק הישן <span class=\"parenthesized\">(סוכה דף כב:)</span> אמרינן חבוט רמי הכא לא שייך:"
+  },
+  "Tosafot on Sukkah 10a:6:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 10a:6:1"
+    ],
+    "generatedAt": "2026-11-05T18:10:15.172Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 10a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא מצינו מקום פחות מד'</strong> - היינו לענין רשות היחיד וכרמלית <span class=\"rashi-quotation\">כדפירש בקונטרס</span> ולענין גובה נמי אשכחן בריש חלון <span class=\"parenthesized\">(עירובין דף עו.)</span> ליחשב כפתח:"
+  }
+}

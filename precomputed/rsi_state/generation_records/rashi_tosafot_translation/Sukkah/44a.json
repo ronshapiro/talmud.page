@@ -1,0 +1,277 @@
+{
+  "Rashi on Sukkah 44a:10:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 44a:10:2",
+      "Rashi on Sukkah 44a:10:3",
+      "Rashi on Sukkah 44a:10:4",
+      "Rashi on Sukkah 44a:8:1",
+      "Rashi on Sukkah 44a:8:2",
+      "Rashi on Sukkah 44a:9:1",
+      "Rashi on Sukkah 44a:9:2",
+      "Rashi on Sukkah 44a:10:1"
+    ],
+    "generatedAt": "2026-11-07T21:08:25.673Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 44a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומי א\"ר יוחנן</strong> - יסוד נביאים היא והא הלכה למשה מסיני היא:"
+  },
+  "Rashi on Sukkah 44a:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T21:08:51.359Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 44a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שכחום</strong> - בגלות בבל שכחו את התורה והמצות במקצת וזו נשכחה לגמרי:"
+  },
+  "Rashi on Sukkah 44a:10:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 44a:10:1",
+      "Rashi on Sukkah 44a:10:2",
+      "Rashi on Sukkah 44a:10:3",
+      "Rashi on Sukkah 44a:10:4"
+    ],
+    "generatedAt": "2026-11-07T21:09:36.820Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 44a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחזרו</strong> - נביאים אחרונים:"
+  },
+  "Rashi on Sukkah 44a:10:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 44a:10:1",
+      "Rashi on Sukkah 44a:10:2",
+      "Rashi on Sukkah 44a:10:3"
+    ],
+    "generatedAt": "2026-11-07T21:10:13.966Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 44a:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויסדום</strong> - ע\"פ הדבור:"
+  },
+  "Rashi on Sukkah 44a:11:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 44a:10:1",
+      "Rashi on Sukkah 44a:10:2",
+      "Rashi on Sukkah 43b:3:1",
+      "Rashi on Sukkah 43b:4:1"
+    ],
+    "generatedAt": "2026-11-07T21:16:50.901Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 44a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא\"ר יוחנן דלכון אמרי דלהון היא</strong> - רב כהנא היה מתלמידי רב והיה חריף מאד וברח לא\"י לפני ר' יוחנן מחמת מרדין [שהרג לאדם אחד] כדאמרינן בפרק בתרא דב\"ק <span class=\"parenthesized\">(ד' קיז.)</span> והוצרך לו ר' יוחנן לכמה ספיקות והיה אומר ר' יוחנן לבני א\"י סבור הייתי שתורה שלכם שלא גליתם מארצכם ולא היה לכם טירוף הדעת אבל ראיתי שהיא של בני בבל שאע\"פ שגלו עמדה להם חכמת החרש והמסגר שגלו עם יכניה כדכתיב <span class=\"parenthesized\">(מלכים ב כ״ד:ט״ז)</span> הכל גבורים עושי מלחמה ותניא בסדר עולם וכי מה גבורה עושין בני אדם הנתונין בשלשלאות של ברזל אלא שגבורים היו במלחמתה של תורה אלמא ס\"ל לר' יוחנן דלא נשתכחה תורה בגלות בבל:"
+  },
+  "Rashi on Sukkah 44a:1:1": {
+    "dependsOn": [
+      "Sukkah 44a:1",
+      "Rashi on Sukkah 43b:15:1",
+      "Rashi on Sukkah 44a:3:1",
+      "Rashi on Sukkah 44a:5:1",
+      "Rashi on Sukkah 43b:1:1",
+      "Rashi on Sukkah 43b:2:1"
+    ],
+    "generatedAt": "2026-11-07T20:40:55.702Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 44a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לדידהו נמי לא דחי</strong> - שלא לעשות ישראל אגודות אגודות ונראה כשתי תורות דלדידן לא דחי לולב שבת:"
+  },
+  "Rashi on Sukkah 44a:2:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 44a:2:1",
+      "Sukkah 44a:1",
+      "Rashi on Sukkah 44a:1:1",
+      "Meir Lublin: Maharam on Sukkah 44a:1"
+    ],
+    "generatedAt": "2026-11-07T20:44:11.283Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 44a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בגבולין</strong> - מוליכין לבית הכנסת וכולהו בזמן הבית דהוו כולהו בארץ וסמוכים להיות ב\"ד ויודעים אימת הוקבע החדש אבל עתה משחרב בית המקדש אין לולב דוחה שבת אפי' לבני א\"י:"
+  },
+  "Rashi on Sukkah 44a:3:1": {
+    "dependsOn": [
+      "Sukkah 44a:3",
+      "Bekhorot 36a:11",
+      "Bekhorot 36a:12",
+      "Bekhorot 36a:13",
+      "Rashi on Sukkah 44a:1:1",
+      "Rashi on Sukkah 44a:2:1",
+      "Rashi on Sukkah 43b:1:1",
+      "Rashi on Sukkah 43b:2:1"
+    ],
+    "generatedAt": "2026-11-07T20:48:25.685Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 44a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלא עבדינן לה שבעה</strong> - אבל יום אחד מיהא עבדינן כדאמרינן לקמן <span class=\"parenthesized\">(עמוד ב)</span> בר\"א בר צדוק והוא היה לאחר חורבן שהיה ר' צדוק אביו בימי ר' יוחנן בן זכאי ובימי ר\"א ור' יהושע ור\"ג היה כדאמרינן בבכורות <span class=\"parenthesized\">(ד' לו.)</span> כלום חלקנו בין חבר לעם הארץ והוא היה השואל:"
+  },
+  "Rashi on Sukkah 44a:5:1": {
+    "dependsOn": [
+      "Sukkah 44a:5",
+      "Rashi on Sukkah 44a:1:1",
+      "Rashi on Sukkah 44a:3:1"
+    ],
+    "generatedAt": "2026-11-07T20:49:15.583Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 44a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למאן</strong> - אליבא דמאן קאמר ערבה דרבנן:"
+  },
+  "Rashi on Sukkah 44a:6:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 44a:6:1"
+    ],
+    "generatedAt": "2026-11-07T20:49:53.132Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 44a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עיקר</strong> - יום אחד מיהא יש לו שורש אבל ערבה אין לה שום שורש מן התורה בגבולין:"
+  },
+  "Rashi on Sukkah 44a:7:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 44a:7:2"
+    ],
+    "generatedAt": "2026-11-07T20:50:49.022Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 44a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כהנים בעלי מומין</strong> - אף הם דוחקים ונכנסין להקיף ברגליהם וערבה בידם וא\"א להקיף שלא יכנסו בין האולם למזבח וכל השנה אסורים ליכנס שם כדאמרינן במסכת כלים בפרק ראשון:"
+  },
+  "Rashi on Sukkah 44a:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T20:56:39.250Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 44a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי אמרה</strong> - השתא ס\"ד דה\"ק מי אמרה שהיא חובה וקאמר לצאת בה ידי חובה ולהכי פריך מאן אמרה בתמיה:"
+  },
+  "Rashi on Sukkah 44a:8:1": {
+    "dependsOn": [
+      "Sukkah 44a:8",
+      "Rashi on Sukkah 44a:7:1",
+      "Rashi on Sukkah 44a:7:2",
+      "Rashi on Sukkah 44a:8:1",
+      "Rashi on Sukkah 44a:8:2"
+    ],
+    "generatedAt": "2026-11-07T21:02:22.503Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 44a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי אמרה בנטילה</strong> - ותהא חובת כהנים דקאמר לצאת:"
+  },
+  "Rashi on Sukkah 44a:8:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 44a:8:1"
+    ],
+    "generatedAt": "2026-11-07T21:02:55.222Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 44a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלמא בזקיפה</strong> - וכהן אחד זוקפה ע\"י הכל ואין חובה על כולם:"
+  },
+  "Rashi on Sukkah 44a:9:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 44a:9:2"
+    ],
+    "generatedAt": "2026-11-07T21:03:41.004Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 44a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יסוד נביאים הוא</strong> - תקנת נביאים אחרונים חגי זכריה ומלאכי שהיו ממתקני תקנות ישראל באנשי כנסת הגדולה:"
+  },
+  "Rashi on Sukkah 44a:9:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 44a:9:1",
+      "Rashi on Sukkah 44a:8:1",
+      "Rashi on Sukkah 44a:8:2",
+      "Rashi on Sukkah 44a:10:1",
+      "Rashi on Sukkah 43b:2:1",
+      "Rashi on Sukkah 43b:3:1"
+    ],
+    "generatedAt": "2026-11-07T21:05:20.216Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 44a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנהג</strong> - הנהיגו את העם ולא תקנו להם ונפקא מינה דלא בעיא ברכה דליכא למימר וצונו דאפילו בכלל לא תסור ליתא:"
+  },
+  "Tosafot on Sukkah 44a:1:1": {
+    "dependsOn": [
+      "Sukkah 44a:1",
+      "Tosafot on Sukkah 42b:10:1",
+      "Tosafot on Sukkah 43a:1:1",
+      "Rashi on Sukkah 43b:15:1",
+      "Rashi on Sukkah 43b:15:2",
+      "Steinsaltz In-Depth on Sukkah 44a:1",
+      "Rashi on Sukkah 44a:1:1",
+      "Steinsaltz comment #1 on Sukkah 44a:1"
+    ],
+    "generatedAt": "2026-11-07T20:42:55.431Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 44a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרי לדידהו נמי לא דחי</strong> - ל\"ק מידי משופר כדפרישנא לעיל:"
+  },
+  "Tosafot on Sukkah 44a:7:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 44a:7:1",
+      "Tosafot on Sukkah 44a:7:2",
+      "Tosafot on Sukkah 44a:11:1"
+    ],
+    "generatedAt": "2026-11-07T20:59:12.210Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 44a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כהנים בעלי מומים</strong> - ה\"ה דהוה מצי למימר ופרועי ראש דתרוייהו אסירי אי לאו משום ערבה כדתנן פ\"ק דכלים <span class=\"parenthesized\">(מ\"ט)</span> בין האולם ולמזבח מקודש הימנו שאין בעלי מומין ופרועי ראש נכנסים לשם:"
+  },
+  "Tosafot on Sukkah 44a:7:2": {
+    "dependsOn": [
+      "Tosafot on Sukkah 44a:7:1",
+      "Sukkah 44a:8"
+    ],
+    "generatedAt": "2026-11-07T21:01:23.777Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 44a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ליה ר' יוחנן מי אמרה</strong> - סלקא דעתיה דה\"ק מי אמרה שהיא חובה דאורייתא ואתיא ודחיא מעלות דרבנן דלמא רבנן היא דלא דחינן מעלות דרבנן משום תקנתא דרבנן ולכך פריך הא איהו אמרה ומשני מי אמרה שהיא בנטילה דלמא בזקיפה וכיון דאין מקיפין את המזבח ולא בעי אלא זקיפה בעלמא אחד זוקף ע\"י כולן א\"נ בעלי מומין אפשר להו לזקוף בשאר רוחות ולא יכנסו בין האולם ולמזבח ואפי' תימצי לומר בנטילה כדאסקינן לעיל דאיתותב מ\"ד בזקיפה מי אמרה בבעלי מומין דלמא אין הלכה למשה מסיני אלא בתמימין הראוין לעבודה כמו שאין הלכה למשה מסיני בזרים אלא בכהנים דבהא מודית מדלא אמרת זרים נכנסין ולפי שיטה זו דפרי' דמעלה דרבנן היא קשה לאבא שאול דיליף <span class=\"parenthesized\">(לעיל סוכה דף לד.)</span> ערבה של מזבח מדכתיב ערבי אמאי בכהנים דלמא אפי' בישראל כמו ערבה דלולב וי\"ל דשמא הקפת מזבח בכהנים ושאר ישראל בעזרה בלא הקפה:"
+  }
+}
